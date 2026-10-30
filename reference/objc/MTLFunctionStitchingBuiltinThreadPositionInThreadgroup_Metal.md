@@ -1,0 +1,25 @@
+# `MTLFunctionStitchingBuiltinThreadPositionInThreadgroup`
+
+- Image: [`/System/Library/Frameworks/Metal.framework/Metal`](../userland/System__Library__Frameworks__Metal.framework__Metal.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `MTLFunctionStitchingInputBuiltin`
+- 0 instance variables, 4 properties, 5 instance methods, 0 class methods
+
+## Properties
+
+```
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[MTLFunctionStitchingBuiltinThreadPositionInThreadgroup formattedDescription:];
+-[MTLFunctionStitchingBuiltinThreadPositionInThreadgroup hash];
+-[MTLFunctionStitchingBuiltinThreadPositionInThreadgroup description];
+-[MTLFunctionStitchingBuiltinThreadPositionInThreadgroup copyWithZone:];
+-[MTLFunctionStitchingBuiltinThreadPositionInThreadgroup isEqual:];
+```

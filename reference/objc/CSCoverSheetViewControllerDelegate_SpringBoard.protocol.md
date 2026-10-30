@@ -1,0 +1,34 @@
+# `CSCoverSheetViewControllerDelegate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 24 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[CSCoverSheetViewControllerDelegate coverSheetViewControllerTraitsArbiterOrientationActuationEnabled:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewController:requestsTransientOverlaysDismissedAnimated:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewControllerDidDismissInlinePasscode:];
+-[CSCoverSheetViewControllerDelegate coverSheetWindowedAccessoryViewControllerDidPresent:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewController:unlockWithRequest:completion:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewControllerDidCancelInlinePasscode:];
+-[CSCoverSheetViewControllerDelegate coverSheetWindowedAccessoryViewControllerDidDismiss:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewController:requestsTouchIDDisabled:forReason:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewControllerIsShowingSecureApp:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewControllerWillPresentInlinePasscode:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewControllerHasBeenDismissedSinceKeybagLock:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewControllerHasSecureApp:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewControllerIrisPlayingDidFinish:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewControllerShouldDismissContextMenu:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewControllerIsPasscodeVisible:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewControllerShouldPreserveOrientationForExternalTransition:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewController:startSpotlightInteractiveGestureTransactionForGesture:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewControllerRequestsTranslationToPresentedForExternalLockProvider:animated:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewController:requestsPreArmDisabled:forReason:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewControllerHandleUnlockAttemptSucceeded:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewControllerIsTransitioningToSecureApp:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewController:requestsExternalPasscodeDismissal:animated:completion:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewController:requestsExternalPasscodePresentation:animated:completion:];
+-[CSCoverSheetViewControllerDelegate coverSheetViewController:requestsStrictTouchIDCoverage:forReason:];
+```

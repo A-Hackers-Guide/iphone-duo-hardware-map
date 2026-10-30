@@ -1,0 +1,1207 @@
+# `/System/Library/PrivateFrameworks/MediaCoreUI.framework/MediaCoreUI`
+
+iOS 27.2 dyld shared cache image. Version `4026.210.1.0.0`. **[DSC]**
+
+## Linked libraries (71)
+
+- `/usr/lib/libAccessibility.dylib`
+- `/System/Library/Frameworks/QuartzCore.framework/QuartzCore`
+- `/System/Library/Frameworks/MetalKit.framework/MetalKit`
+- `/System/Library/Frameworks/UIKit.framework/UIKit`
+- `/System/Library/Frameworks/SwiftUI.framework/SwiftUI`
+- `/System/Library/PrivateFrameworks/TextInput.framework/TextInput`
+- `/System/Library/Frameworks/AVFoundation.framework/AVFoundation`
+- `/System/Library/PrivateFrameworks/AXRuntime.framework/AXRuntime`
+- `/System/Library/PrivateFrameworks/MediaPlaybackCore.framework/MediaPlaybackCore`
+- `/System/Library/Frameworks/Foundation.framework/Foundation`
+- `/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics`
+- `/System/Library/PrivateFrameworks/PowerLog.framework/PowerLog`
+- `/System/Library/Frameworks/Combine.framework/Combine`
+- `/System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders`
+- `/usr/lib/libobjc.A.dylib`
+- `/usr/lib/libSystem.B.dylib`
+- `/System/Library/Frameworks/AVFAudio.framework/AVFAudio`
+- `/System/Library/Frameworks/AVKit.framework/AVKit`
+- `/System/Library/Frameworks/Accelerate.framework/Accelerate`
+- `/System/Library/Frameworks/Accessibility.framework/Accessibility`
+- `/System/Library/Frameworks/AppIntents.framework/AppIntents`
+- `/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox`
+- `/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation`
+- `/System/Library/Frameworks/CoreImage.framework/CoreImage`
+- `/System/Library/Frameworks/CoreMedia.framework/CoreMedia`
+- `/System/Library/Frameworks/CoreVideo.framework/CoreVideo`
+- `/System/Library/Frameworks/CryptoKit.framework/CryptoKit`
+- `/System/Library/Frameworks/ImageIO.framework/ImageIO`
+- `/System/Library/Frameworks/LinkPresentation.framework/LinkPresentation`
+- `/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer`
+- `/System/Library/Frameworks/Metal.framework/Metal`
+- `/System/Library/Frameworks/Symbols.framework/Symbols`
+- `/System/Library/Frameworks/_AppIntents_SwiftUI.framework/_AppIntents_SwiftUI`
+- `/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities`
+- `/System/Library/PrivateFrameworks/AsyncAlgorithmsInternal.framework/AsyncAlgorithmsInternal`
+- `/System/Library/PrivateFrameworks/CollectionsInternal.framework/CollectionsInternal`
+- `/System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags`
+- `/System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote`
+- `/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation`
+- `/System/Library/PrivateFrameworks/_SwiftMedia_SwiftUI.framework/_SwiftMedia_SwiftUI`
+- `/System/Library/PrivateFrameworks/iTunesCloud.framework/iTunesCloud`
+- `/usr/lib/libMobileGestalt.dylib`
+- `/usr/lib/swift/libswiftAVFoundation.dylib`
+- `/usr/lib/swift/libswiftAccelerate.dylib`
+- `/usr/lib/swift/libswiftCompression.dylib`
+- `/usr/lib/swift/libswiftCore.dylib`
+- `/usr/lib/swift/libswiftCoreAudio.dylib`
+- `/usr/lib/swift/libswiftCoreAudio_Private.dylib`
+- `/usr/lib/swift/libswiftCoreFoundation.dylib`
+- `/usr/lib/swift/libswiftCoreImage.dylib`
+- `/usr/lib/swift/libswiftCoreLocation.dylib`
+- `/usr/lib/swift/libswiftCoreMIDI.dylib`
+- `/usr/lib/swift/libswiftDispatch.dylib`
+- `/usr/lib/swift/libswiftIntents.dylib`
+- `/usr/lib/swift/libswiftMLCompute.dylib`
+- `/usr/lib/swift/libswiftMetal.dylib`
+- `/usr/lib/swift/libswiftMetalKit.dylib`
+- `/usr/lib/swift/libswiftModelIO.dylib`
+- `/usr/lib/swift/libswiftNaturalLanguage.dylib`
+- `/usr/lib/swift/libswiftOSLog.dylib`
+- `/usr/lib/swift/libswiftObjectiveC.dylib`
+- `/usr/lib/swift/libswiftObservation.dylib`
+- `/usr/lib/swift/libswiftQuartzCore.dylib`
+- `/usr/lib/swift/libswiftSpatial.dylib`
+- `/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib`
+- `/usr/lib/swift/libswiftXPC.dylib`
+- `/usr/lib/swift/libswift_Builtin_float.dylib`
+- `/usr/lib/swift/libswift_Concurrency.dylib`
+- `/usr/lib/swift/libswift_DarwinFoundation1.dylib`
+- `/usr/lib/swift/libswiftos.dylib`
+- `/usr/lib/swift/libswiftsimd.dylib`
+
+## Objective-C: 169 classes, 33 protocols, 765 methods, 174 properties
+
+### Class pages
+
+Every class and protocol, with its methods: [`AVAssetDownloadDelegate`](../objc/AVAssetDownloadDelegate_MediaCoreUI.protocol.md), [`AVMediaTimelineControlDelegate`](../objc/AVMediaTimelineControlDelegate_MediaCoreUI.protocol.md), [`AVMediaTimelineControlSource`](../objc/AVMediaTimelineControlSource_MediaCoreUI.protocol.md), [`AVPlayerItemOutputPullDelegate`](../objc/AVPlayerItemOutputPullDelegate_MediaCoreUI.protocol.md), [`AVTimeRangeMarkUIProvider`](../objc/AVTimeRangeMarkUIProvider_MediaCoreUI.protocol.md), [`CAAction`](../objc/CAAction_MediaCoreUI.protocol.md), [`CALayerDelegate`](../objc/CALayerDelegate_MediaCoreUI.protocol.md), [`ICEnvironmentMonitorObserver`](../objc/ICEnvironmentMonitorObserver_MediaCoreUI.protocol.md), [`MPCVideoOutput`](../objc/MPCVideoOutput_MediaCoreUI.protocol.md), [`MPCVideoOutputDelegate`](../objc/MPCVideoOutputDelegate_MediaCoreUI.protocol.md), [`MTKViewDelegate`](../objc/MTKViewDelegate_MediaCoreUI.protocol.md), [`MTLAllocation`](../objc/MTLAllocation_MediaCoreUI.protocol.md), [`MTLBuffer`](../objc/MTLBuffer_MediaCoreUI.protocol.md), [`MTLCommandBuffer`](../objc/MTLCommandBuffer_MediaCoreUI.protocol.md), [`MTLCommandQueue`](../objc/MTLCommandQueue_MediaCoreUI.protocol.md), [`MTLCommandQueueSPI`](../objc/MTLCommandQueueSPI_MediaCoreUI.protocol.md), [`MTLDevice`](../objc/MTLDevice_MediaCoreUI.protocol.md), [`MTLLibrary`](../objc/MTLLibrary_MediaCoreUI.protocol.md), [`MTLRenderPipelineState`](../objc/MTLRenderPipelineState_MediaCoreUI.protocol.md), [`MTLResource`](../objc/MTLResource_MediaCoreUI.protocol.md), [`MTLTexture`](../objc/MTLTexture_MediaCoreUI.protocol.md), [`NSObject`](../objc/NSObject_MediaCoreUI.protocol.md), [`NSURLSessionDelegate`](../objc/NSURLSessionDelegate_MediaCoreUI.protocol.md), [`NSURLSessionTaskDelegate`](../objc/NSURLSessionTaskDelegate_MediaCoreUI.protocol.md), [`UIActivityItemSource`](../objc/UIActivityItemSource_MediaCoreUI.protocol.md), [`UIAdaptivePresentationControllerDelegate`](../objc/UIAdaptivePresentationControllerDelegate_MediaCoreUI.protocol.md), [`UIContextMenuInteractionDelegate`](../objc/UIContextMenuInteractionDelegate_MediaCoreUI.protocol.md), [`UIGestureRecognizerDelegate`](../objc/UIGestureRecognizerDelegate_MediaCoreUI.protocol.md), [`UIPointerInteractionDelegate`](../objc/UIPointerInteractionDelegate_MediaCoreUI.protocol.md), [`UIPopoverPresentationControllerDelegate`](../objc/UIPopoverPresentationControllerDelegate_MediaCoreUI.protocol.md), [`UISheetPresentationControllerDelegate`](../objc/UISheetPresentationControllerDelegate_MediaCoreUI.protocol.md), [`UIViewControllerContextTransitioning`](../objc/UIViewControllerContextTransitioning_MediaCoreUI.protocol.md), [`UIViewControllerTransitioningDelegate`](../objc/UIViewControllerTransitioningDelegate_MediaCoreUI.protocol.md), [`_TtC11MediaCoreUI11MotionCache`](../objc/_TtC11MediaCoreUI11MotionCache_MediaCoreUI.md), [`_TtC11MediaCoreUI12FFTProcessor`](../objc/_TtC11MediaCoreUI12FFTProcessor_MediaCoreUI.md), [`_TtC11MediaCoreUI13ScrubberProxy`](../objc/_TtC11MediaCoreUI13ScrubberProxy_MediaCoreUI.md), [`_TtC11MediaCoreUI13WaveformLayer`](../objc/_TtC11MediaCoreUI13WaveformLayer_MediaCoreUI.md), [`_TtC11MediaCoreUI15BouncyBarsAsset`](../objc/_TtC11MediaCoreUI15BouncyBarsAsset_MediaCoreUI.md), [`_TtC11MediaCoreUI15MotionSignposts`](../objc/_TtC11MediaCoreUI15MotionSignposts_MediaCoreUI.md), [`_TtC11MediaCoreUI15PagedFrameProxy`](../objc/_TtC11MediaCoreUI15PagedFrameProxy_MediaCoreUI.md), [`_TtC11MediaCoreUI15ParallaxContext`](../objc/_TtC11MediaCoreUI15ParallaxContext_MediaCoreUI.md), [`_TtC11MediaCoreUI16BackdropHostView`](../objc/_TtC11MediaCoreUI16BackdropHostView_MediaCoreUI.md), [`_TtC11MediaCoreUI16MaterialRenderer`](../objc/_TtC11MediaCoreUI16MaterialRenderer_MediaCoreUI.md), [`_TtC11MediaCoreUI16MotionCacheActor`](../objc/_TtC11MediaCoreUI16MotionCacheActor_MediaCoreUI.md), [`_TtC11MediaCoreUI16PowerLogReporter`](../objc/_TtC11MediaCoreUI16PowerLogReporter_MediaCoreUI.md), [`_TtC11MediaCoreUI16ProcessIDManager`](../objc/_TtC11MediaCoreUI16ProcessIDManager_MediaCoreUI.md), [`_TtC11MediaCoreUI16ScrubberSections`](../objc/_TtC11MediaCoreUI16ScrubberSections_MediaCoreUI.md), [`_TtC11MediaCoreUI16SpectrumAnalysis`](../objc/_TtC11MediaCoreUI16SpectrumAnalysis_MediaCoreUI.md), [`_TtC11MediaCoreUI16WindowProperties`](../objc/_TtC11MediaCoreUI16WindowProperties_MediaCoreUI.md), [`_TtC11MediaCoreUI17ScrubberViewModel`](../objc/_TtC11MediaCoreUI17ScrubberViewModel_MediaCoreUI.md), [`_TtC11MediaCoreUI18EnvironmentMonitor`](../objc/_TtC11MediaCoreUI18EnvironmentMonitor_MediaCoreUI.md), [`_TtC11MediaCoreUI18LooperConfigurator`](../objc/_TtC11MediaCoreUI18LooperConfigurator_MediaCoreUI.md), [`_TtC11MediaCoreUI18MetalRenderContext`](../objc/_TtC11MediaCoreUI18MetalRenderContext_MediaCoreUI.md), [`_TtC11MediaCoreUI18MotionEnabledState`](../objc/_TtC11MediaCoreUI18MotionEnabledState_MediaCoreUI.md), [`_TtC11MediaCoreUI18MotionViewDeferral`](../objc/_TtC11MediaCoreUI18MotionViewDeferral_MediaCoreUI.md), [`_TtC11MediaCoreUI19NowPlayingViewModel`](../objc/_TtC11MediaCoreUI19NowPlayingViewModel_MediaCoreUI.md), [`_TtC11MediaCoreUI20MinimumLayoutMargins`](../objc/_TtC11MediaCoreUI20MinimumLayoutMargins_MediaCoreUI.md), [`_TtC11MediaCoreUI20WaveformAudioSampler`](../objc/_TtC11MediaCoreUI20WaveformAudioSampler_MediaCoreUI.md), [`_TtC11MediaCoreUI21BackdropLayerHostView`](../objc/_TtC11MediaCoreUI21BackdropLayerHostView_MediaCoreUI.md), [`_TtC11MediaCoreUI21NowPlayingSpeedPicker`](../objc/_TtC11MediaCoreUI21NowPlayingSpeedPicker_MediaCoreUI.md), [`_TtC11MediaCoreUI21TapExcludedGeometries`](../objc/_TtC11MediaCoreUI21TapExcludedGeometries_MediaCoreUI.md), [`_TtC11MediaCoreUI22AudioTapQueueProcessor`](../objc/_TtC11MediaCoreUI22AudioTapQueueProcessor_MediaCoreUI.md), [`_TtC11MediaCoreUI22MotionCacheDiskStorage`](../objc/_TtC11MediaCoreUI22MotionCacheDiskStorage_MediaCoreUI.md), [`_TtC11MediaCoreUI22MotionViewDisplayState`](../objc/_TtC11MediaCoreUI22MotionViewDisplayState_MediaCoreUI.md), [`_TtC11MediaCoreUI22PagedShareGalleryState`](../objc/_TtC11MediaCoreUI22PagedShareGalleryState_MediaCoreUI.md), [`_TtC11MediaCoreUI22WaveformDataController`](../objc/_TtC11MediaCoreUI22WaveformDataController_MediaCoreUI.md), [`_TtC11MediaCoreUI23AudioTapCallbackWrapper`](../objc/_TtC11MediaCoreUI23AudioTapCallbackWrapper_MediaCoreUI.md), [`_TtC11MediaCoreUI23MotionViewStateObserver`](../objc/_TtC11MediaCoreUI23MotionViewStateObserver_MediaCoreUI.md), [`_TtC11MediaCoreUI23NowPlayingRouteObserver`](../objc/_TtC11MediaCoreUI23NowPlayingRouteObserver_MediaCoreUI.md), [`_TtC11MediaCoreUI23PreciseSpeedPickerModel`](../objc/_TtC11MediaCoreUI23PreciseSpeedPickerModel_MediaCoreUI.md), [`_TtC11MediaCoreUI24TransportButtonViewModel`](../objc/_TtC11MediaCoreUI24TransportButtonViewModel_MediaCoreUI.md), [`_TtC11MediaCoreUI25AudioTapSampleTransformer`](../objc/_TtC11MediaCoreUI25AudioTapSampleTransformer_MediaCoreUI.md), [`_TtC11MediaCoreUI25MetalImageTextureProvider`](../objc/_TtC11MediaCoreUI25MetalImageTextureProvider_MediaCoreUI.md), [`_TtC11MediaCoreUI25MetalVideoTextureProvider`](../objc/_TtC11MediaCoreUI25MetalVideoTextureProvider_MediaCoreUI.md), [`_TtC11MediaCoreUI26NowPlayingTimeControlState`](../objc/_TtC11MediaCoreUI26NowPlayingTimeControlState_MediaCoreUI.md), [`_TtC11MediaCoreUI27ParallaxNavigationTitleView`](../objc/_TtC11MediaCoreUI27ParallaxNavigationTitleView_MediaCoreUI.md), [`_TtC11MediaCoreUI28ScrubberInteractionViewModel`](../objc/_TtC11MediaCoreUI28ScrubberInteractionViewModel_MediaCoreUI.md), [`_TtC11MediaCoreUI29MaterialMotionContentObserver`](../objc/_TtC11MediaCoreUI29MaterialMotionContentObserver_MediaCoreUI.md), [`_TtC11MediaCoreUI29NowPlayingMacExpansionContext`](../objc/_TtC11MediaCoreUI29NowPlayingMacExpansionContext_MediaCoreUI.md), [`_TtC11MediaCoreUI29NowPlayingVideoPlayerDelegate`](../objc/_TtC11MediaCoreUI29NowPlayingVideoPlayerDelegate_MediaCoreUI.md), [`_TtC11MediaCoreUI30NowPlayingHostedContentSession`](../objc/_TtC11MediaCoreUI30NowPlayingHostedContentSession_MediaCoreUI.md), [`_TtC11MediaCoreUI31LockScreenMotionReplicatorLayer`](../objc/_TtC11MediaCoreUI31LockScreenMotionReplicatorLayer_MediaCoreUI.md), [`_TtC11MediaCoreUI36NowPlayingArtworkRestrictionsMonitor`](../objc/_TtC11MediaCoreUI36NowPlayingArtworkRestrictionsMonitor_MediaCoreUI.md), [`_TtC11MediaCoreUI36WindowPropertiesReaderViewController`](../objc/_TtC11MediaCoreUI36WindowPropertiesReaderViewController_MediaCoreUI.md), [`_TtC11MediaCoreUI37NowPlayingCustomArtworkBackgroundView`](../objc/_TtC11MediaCoreUI37NowPlayingCustomArtworkBackgroundView_MediaCoreUI.md), [`_TtC11MediaCoreUI37TransportButtonPackageStateController`](../objc/_TtC11MediaCoreUI37TransportButtonPackageStateController_MediaCoreUI.md), [`_TtC11MediaCoreUI38NowPlayingArtworkMirrorReplicatorLayer`](../objc/_TtC11MediaCoreUI38NowPlayingArtworkMirrorReplicatorLayer_MediaCoreUI.md), [`_TtC11MediaCoreUI38NowPlayingArtworkMotionReplicatorLayer`](../objc/_TtC11MediaCoreUI38NowPlayingArtworkMotionReplicatorLayer_MediaCoreUI.md), [`_TtC11MediaCoreUI38NowPlayingCustomArtworkBackgroundLayer`](../objc/_TtC11MediaCoreUI38NowPlayingCustomArtworkBackgroundLayer_MediaCoreUI.md), [`_TtC11MediaCoreUI41ParallaxHeaderAlignedScrollTargetBehavior`](../objc/_TtC11MediaCoreUI41ParallaxHeaderAlignedScrollTargetBehavior_MediaCoreUI.md), [`_TtC11MediaCoreUI44NowPlayingCustomArtworkBackgroundEffectLayer`](../objc/_TtC11MediaCoreUI44NowPlayingCustomArtworkBackgroundEffectLayer_MediaCoreUI.md), [`_TtC11MediaCoreUI48NowPlayingCustomArtworkBackgroundReplicatorLayer`](../objc/_TtC11MediaCoreUI48NowPlayingCustomArtworkBackgroundReplicatorLayer_MediaCoreUI.md), [`_TtC11MediaCoreUI8Geometry`](../objc/_TtC11MediaCoreUI8Geometry_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC15PassthroughView`](../objc/_TtC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC15PassthroughView_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC20GeometryTrackingView`](../objc/_TtC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC20GeometryTrackingView_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC21ContentViewController`](../objc/_TtC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC21ContentViewController_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC22ExpandedViewController`](../objc/_TtC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC22ExpandedViewController_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC35CollapsedTabAccessoryViewController`](../objc/_TtC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC35CollapsedTabAccessoryViewController_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_269E8A2553F691DD0D96A2E732A5863B13ContainerView`](../objc/_TtC11MediaCoreUIP33_269E8A2553F691DD0D96A2E732A5863B13ContainerView_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_28B805B7ABBD8163ADF264F064CDAB2817ScrubberExpansion`](../objc/_TtC11MediaCoreUIP33_28B805B7ABBD8163ADF264F064CDAB2817ScrubberExpansion_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_5C0FCAEC7E121FD01840555B36210BDC10PlayerView`](../objc/_TtC11MediaCoreUIP33_5C0FCAEC7E121FD01840555B36210BDC10PlayerView_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_5C0FCAEC7E121FD01840555B36210BDC20GeometryTrackingView`](../objc/_TtC11MediaCoreUIP33_5C0FCAEC7E121FD01840555B36210BDC20GeometryTrackingView_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_683D27D5EA5FC88F5EC872E839F708489BlurLayer`](../objc/_TtC11MediaCoreUIP33_683D27D5EA5FC88F5EC872E839F708489BlurLayer_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_6A4B5F54341486E9BAD2FFF757A8587427PagedFrameShareActivityItem`](../objc/_TtC11MediaCoreUIP33_6A4B5F54341486E9BAD2FFF757A8587427PagedFrameShareActivityItem_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_6CBD87A2320B99A868A4969384204E9624FittedTextHeightResolver`](../objc/_TtC11MediaCoreUIP33_6CBD87A2320B99A868A4969384204E9624FittedTextHeightResolver_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_7E157EA4C6EF7AA60D360FCDCEB8EEC230WindowSizeReaderViewController`](../objc/_TtC11MediaCoreUIP33_7E157EA4C6EF7AA60D360FCDCEB8EEC230WindowSizeReaderViewController_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_8A49DC2FB69555F909B7715363263FF722VideoPlayerCoordinator`](../objc/_TtC11MediaCoreUIP33_8A49DC2FB69555F909B7715363263FF722VideoPlayerCoordinator_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_8B5FAED8DE080D34DF68BF28A36B87C521HostedScenePhaseModel`](../objc/_TtC11MediaCoreUIP33_8B5FAED8DE080D34DF68BF28A36B87C521HostedScenePhaseModel_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_98519F523B8515A67EEFBCB0824D82807Counter`](../objc/_TtC11MediaCoreUIP33_98519F523B8515A67EEFBCB0824D82807Counter_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_BEBD78153FB188591AFA1998BBE7CAE710ScrimLayer`](../objc/_TtC11MediaCoreUIP33_BEBD78153FB188591AFA1998BBE7CAE710ScrimLayer_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_BEBD78153FB188591AFA1998BBE7CAE713EdgeRampField`](../objc/_TtC11MediaCoreUIP33_BEBD78153FB188591AFA1998BBE7CAE713EdgeRampField_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_BEBD78153FB188591AFA1998BBE7CAE79BlurLayer`](../objc/_TtC11MediaCoreUIP33_BEBD78153FB188591AFA1998BBE7CAE79BlurLayer_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_C115977D147F687007A7A078C341437619ResourceBundleClass`](../objc/_TtC11MediaCoreUIP33_C115977D147F687007A7A078C341437619ResourceBundleClass_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_E7BB3E41A3A3BDE888B2FF9B48F3AC4F19ResourceBundleClass`](../objc/_TtC11MediaCoreUIP33_E7BB3E41A3A3BDE888B2FF9B48F3AC4F19ResourceBundleClass_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_E92D59AEB5FF02FAFDF5606CD409BD2A16ScrubberPlayhead`](../objc/_TtC11MediaCoreUIP33_E92D59AEB5FF02FAFDF5606CD409BD2A16ScrubberPlayhead_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_F4C8615D44A19A30266CA641FD3263FC17AnimatedViewState`](../objc/_TtC11MediaCoreUIP33_F4C8615D44A19A30266CA641FD3263FC17AnimatedViewState_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_F4C8615D44A19A30266CA641FD3263FC18CAPackageViewLayer`](../objc/_TtC11MediaCoreUIP33_F4C8615D44A19A30266CA641FD3263FC18CAPackageViewLayer_MediaCoreUI.md), [`_TtC11MediaCoreUIP33_F4C8615D44A19A30266CA641FD3263FC9ViewState`](../objc/_TtC11MediaCoreUIP33_F4C8615D44A19A30266CA641FD3263FC9ViewState_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel10AppIntents`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel10AppIntents_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel11ContextMenu`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel11ContextMenu_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel11CurrentItem`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel11CurrentItem_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel11TimeControl`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel11TimeControl_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel12Presentation`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel12Presentation_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel13HostedContent`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel13HostedContent_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel13TrackSections`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel13TrackSections_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel13VolumeControl`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel13VolumeControl_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel15PrimaryMetadata`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel15PrimaryMetadata_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel16MiniPlayerNotice`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel16MiniPlayerNotice_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel16PlaybackPosition`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel16PlaybackPosition_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel17BackgroundArtwork`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel17BackgroundArtwork_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel17TransportControls`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel17TransportControls_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel18MiniPlayerMetadata`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel18MiniPlayerMetadata_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel27TransportInteractionMonitor`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel27TransportInteractionMonitor_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel5Debug`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel5Debug_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel6Banner`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel6Banner_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel7Artwork`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel7Artwork_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel7Markers`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel7Markers_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel7Metrics`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel7Metrics_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel8Backdrop`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel8Backdrop_MediaCoreUI.md), [`_TtCC11MediaCoreUI19NowPlayingViewModel9Lifecycle`](../objc/_TtCC11MediaCoreUI19NowPlayingViewModel9Lifecycle_MediaCoreUI.md), [`_TtCC11MediaCoreUI23PreciseSpeedPickerModel11Interaction`](../objc/_TtCC11MediaCoreUI23PreciseSpeedPickerModel11Interaction_MediaCoreUI.md), [`_TtCC11MediaCoreUI25MetalVideoTextureProviderP33_2925FC67195227C5017294884B212F2E14OutputObserver`](../objc/_TtCC11MediaCoreUI25MetalVideoTextureProviderP33_2925FC67195227C5017294884B212F2E14OutputObserver_MediaCoreUI.md), [`_TtCC11MediaCoreUI25MetalVideoTextureProviderP33_2925FC67195227C5017294884B212F2E18FrameStatsRecorder`](../objc/_TtCC11MediaCoreUI25MetalVideoTextureProviderP33_2925FC67195227C5017294884B212F2E18FrameStatsRecorder_MediaCoreUI.md), [`_TtCC11MediaCoreUI26NowPlayingTimeControlState5Clock`](../objc/_TtCC11MediaCoreUI26NowPlayingTimeControlState5Clock_MediaCoreUI.md), [`_TtCC11MediaCoreUI29NowPlayingVideoPlayerDelegate15ObservableState`](../objc/_TtCC11MediaCoreUI29NowPlayingVideoPlayerDelegate15ObservableState_MediaCoreUI.md), [`_TtCC11MediaCoreUI37NowPlayingCustomArtworkBackgroundViewP33_EB9D86487D81B0D8D4809AD70FF69AFE12ArtworkLayer`](../objc/_TtCC11MediaCoreUI37NowPlayingCustomArtworkBackgroundViewP33_EB9D86487D81B0D8D4809AD70FF69AFE12ArtworkLayer_MediaCoreUI.md), [`_TtCC11MediaCoreUI37NowPlayingCustomArtworkBackgroundViewP33_EB9D86487D81B0D8D4809AD70FF69AFE15MotionViewState`](../objc/_TtCC11MediaCoreUI37NowPlayingCustomArtworkBackgroundViewP33_EB9D86487D81B0D8D4809AD70FF69AFE15MotionViewState_MediaCoreUI.md), [`_TtCC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC35CollapsedTabAccessoryViewController19MiniPlayerContainer`](../objc/_TtCC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC35CollapsedTabAccessoryViewController19MiniPlayerContainer_MediaCoreUI.md), [`_TtCCC11MediaCoreUI19NowPlayingViewModel11TimeControl7Strings`](../objc/_TtCCC11MediaCoreUI19NowPlayingViewModel11TimeControl7Strings_MediaCoreUI.md), [`_TtCCC11MediaCoreUI19NowPlayingViewModel13TrackSections4Cell`](../objc/_TtCCC11MediaCoreUI19NowPlayingViewModel13TrackSections4Cell_MediaCoreUI.md), [`_TtCCC11MediaCoreUI19NowPlayingViewModel13VolumeControlP33_F913C71E0C68724A4AEE47C526AAF02510MiniPlayer`](../objc/_TtCCC11MediaCoreUI19NowPlayingViewModel13VolumeControlP33_F913C71E0C68724A4AEE47C526AAF02510MiniPlayer_MediaCoreUI.md), [`_TtCCC11MediaCoreUI19NowPlayingViewModel7Artwork10Transition`](../objc/_TtCCC11MediaCoreUI19NowPlayingViewModel7Artwork10Transition_MediaCoreUI.md), [`_TtCCC11MediaCoreUI19NowPlayingViewModel7Artwork14DefaultArtwork`](../objc/_TtCCC11MediaCoreUI19NowPlayingViewModel7Artwork14DefaultArtwork_MediaCoreUI.md), [`_TtCCC11MediaCoreUI19NowPlayingViewModel7Artwork20MiniPlayerAppearance`](../objc/_TtCCC11MediaCoreUI19NowPlayingViewModel7Artwork20MiniPlayerAppearance_MediaCoreUI.md), [`_TtCCC11MediaCoreUI19NowPlayingViewModel7Artwork5Video`](../objc/_TtCCC11MediaCoreUI19NowPlayingViewModel7Artwork5Video_MediaCoreUI.md), [`_TtCCC11MediaCoreUI19NowPlayingViewModel7Metrics32HostedContentToggleButtonMetrics`](../objc/_TtCCC11MediaCoreUI19NowPlayingViewModel7Metrics32HostedContentToggleButtonMetrics_MediaCoreUI.md), [`_TtCCCC11MediaCoreUI19NowPlayingViewModel11TimeControl7Strings14TimestampCache`](../objc/_TtCCCC11MediaCoreUI19NowPlayingViewModel11TimeControl7Strings14TimestampCache_MediaCoreUI.md), [`_TtCCO11MediaCoreUI19MotionAssetDownload7ManagerP33_532E68B5ED3905708A49CC1F6A63ACB812DownloadTask`](../objc/_TtCCO11MediaCoreUI19MotionAssetDownload7ManagerP33_532E68B5ED3905708A49CC1F6A63ACB812DownloadTask_MediaCoreUI.md), [`_TtCCOO11MediaCoreUI13WaveformState12SamplingMode13ValueProvider6SixBar`](../objc/_TtCCOO11MediaCoreUI13WaveformState12SamplingMode13ValueProvider6SixBar_MediaCoreUI.md), [`_TtCCOO11MediaCoreUI13WaveformState12SamplingMode13ValueProvider7FiveBar`](../objc/_TtCCOO11MediaCoreUI13WaveformState12SamplingMode13ValueProvider7FiveBar_MediaCoreUI.md), [`_TtCO11MediaCoreUI19MotionAssetDownload10Downloader`](../objc/_TtCO11MediaCoreUI19MotionAssetDownload10Downloader_MediaCoreUI.md), [`_TtCO11MediaCoreUI19MotionAssetDownload7Manager`](../objc/_TtCO11MediaCoreUI19MotionAssetDownload7Manager_MediaCoreUI.md), [`_TtCO11MediaCoreUI22FullBleedArtworkEffect20BlurOpacityAxialMask`](../objc/_TtCO11MediaCoreUI22FullBleedArtworkEffect20BlurOpacityAxialMask_MediaCoreUI.md), [`_TtCO11MediaCoreUI22FullBleedArtworkEffect21BlurOpacityRadialMask`](../objc/_TtCO11MediaCoreUI22FullBleedArtworkEffect21BlurOpacityRadialMask_MediaCoreUI.md), [`_TtCO11MediaCoreUI22FullBleedArtworkEffect21ColorAdjustmentsLayer`](../objc/_TtCO11MediaCoreUI22FullBleedArtworkEffect21ColorAdjustmentsLayer_MediaCoreUI.md), [`_TtCO11MediaCoreUI22FullBleedArtworkEffect9BlurLayer`](../objc/_TtCO11MediaCoreUI22FullBleedArtworkEffect9BlurLayer_MediaCoreUI.md), [`_TtCO11MediaCoreUI8Backdrop13PinchRenderer`](../objc/_TtCO11MediaCoreUI8Backdrop13PinchRenderer_MediaCoreUI.md), [`_TtCO11MediaCoreUI8Backdrop14TextureBlender`](../objc/_TtCO11MediaCoreUI8Backdrop14TextureBlender_MediaCoreUI.md), [`_TtCO11MediaCoreUI8Backdrop17CompositeRenderer`](../objc/_TtCO11MediaCoreUI8Backdrop17CompositeRenderer_MediaCoreUI.md), [`_TtCO11MediaCoreUI8Backdrop23RotatingArtworkRenderer`](../objc/_TtCO11MediaCoreUI8Backdrop23RotatingArtworkRenderer_MediaCoreUI.md), [`_TtCO11MediaCoreUI8Backdrop8Recorder`](../objc/_TtCO11MediaCoreUI8Backdrop8Recorder_MediaCoreUI.md), [`_TtCOO11MediaCoreUI13WaveformState12SamplingMode13ValueProvider`](../objc/_TtCOO11MediaCoreUI13WaveformState12SamplingMode13ValueProvider_MediaCoreUI.md), [`_TtCV11MediaCoreUI16MetalTextureView11Coordinator`](../objc/_TtCV11MediaCoreUI16MetalTextureView11Coordinator_MediaCoreUI.md), [`_TtCV11MediaCoreUI26MinimumLayoutMarginsReader29MarginsTrackingViewController`](../objc/_TtCV11MediaCoreUI26MinimumLayoutMarginsReader29MarginsTrackingViewController_MediaCoreUI.md), [`_TtCV11MediaCoreUI27DivisionRegionAwareModifierP33_E3ED2FB116AD2BC1BFA4010397F44A8212LatestRegion`](../objc/_TtCV11MediaCoreUI27DivisionRegionAwareModifierP33_E3ED2FB116AD2BC1BFA4010397F44A8212LatestRegion_MediaCoreUI.md), [`_TtCV11MediaCoreUI33NowPlayingArtworkBackgroundEffect11EffectLayer`](../objc/_TtCV11MediaCoreUI33NowPlayingArtworkBackgroundEffect11EffectLayer_MediaCoreUI.md), [`_TtCV11MediaCoreUI33NowPlayingArtworkBackgroundEffectP33_0BADDE1E8FA0478530CC88B691A6D29121ColorAdjustmentsLayer`](../objc/_TtCV11MediaCoreUI33NowPlayingArtworkBackgroundEffectP33_0BADDE1E8FA0478530CC88B691A6D29121ColorAdjustmentsLayer_MediaCoreUI.md), [`_TtCV11MediaCoreUI33NowPlayingArtworkBackgroundEffectP33_0BADDE1E8FA0478530CC88B691A6D2919BlurLayer`](../objc/_TtCV11MediaCoreUI33NowPlayingArtworkBackgroundEffectP33_0BADDE1E8FA0478530CC88B691A6D2919BlurLayer_MediaCoreUI.md), [`_TtCV11MediaCoreUIP33_269E8A2553F691DD0D96A2E732A5863B11RouteButton11Coordinator`](../objc/_TtCV11MediaCoreUIP33_269E8A2553F691DD0D96A2E732A5863B11RouteButton11Coordinator_MediaCoreUI.md), [`_TtCV11MediaCoreUIP33_269E8A2553F691DD0D96A2E732A5863B30NowPlayingRouteButton_Catalyst14ClickSimulator`](../objc/_TtCV11MediaCoreUIP33_269E8A2553F691DD0D96A2E732A5863B30NowPlayingRouteButton_Catalyst14ClickSimulator_MediaCoreUI.md), [`_TtCV11MediaCoreUIP33_5C0FCAEC7E121FD01840555B36210BDC29MotionPlayerViewRepresentable11Coordinator`](../objc/_TtCV11MediaCoreUIP33_5C0FCAEC7E121FD01840555B36210BDC29MotionPlayerViewRepresentable11Coordinator_MediaCoreUI.md), [`_TtCV11MediaCoreUIP33_616BCB0E7B20D844FFEBF0D3ED4FB1B815DisableDragView17DisableDragUIView`](../objc/_TtCV11MediaCoreUIP33_616BCB0E7B20D844FFEBF0D3ED4FB1B815DisableDragView17DisableDragUIView_MediaCoreUI.md), [`_TtCV11MediaCoreUIP33_7D7F54989E0BD2C2C05089BF2F1B885F20BackdropMaskModifier13BackdropGroup`](../objc/_TtCV11MediaCoreUIP33_7D7F54989E0BD2C2C05089BF2F1B885F20BackdropMaskModifier13BackdropGroup_MediaCoreUI.md), [`_TtCV11MediaCoreUIP33_C6C2762BD64E1F1C383A97C988662FA119VolumeSliderWrapper11Coordinator`](../objc/_TtCV11MediaCoreUIP33_C6C2762BD64E1F1C383A97C988662FA119VolumeSliderWrapper11Coordinator_MediaCoreUI.md), [`_TtCV11MediaCoreUIP33_E92D59AEB5FF02FAFDF5606CD409BD2A20MediaTimelineControl11Coordinator`](../objc/_TtCV11MediaCoreUIP33_E92D59AEB5FF02FAFDF5606CD409BD2A20MediaTimelineControl11Coordinator_MediaCoreUI.md), [`_TtCV11MediaCoreUIP33_E92D59AEB5FF02FAFDF5606CD409BD2A20MediaTimelineControl26MarkerTapGestureRecognizer`](../objc/_TtCV11MediaCoreUIP33_E92D59AEB5FF02FAFDF5606CD409BD2A20MediaTimelineControl26MarkerTapGestureRecognizer_MediaCoreUI.md), [`_TtCV11MediaCoreUIP33_F9332246B6179A9B3C5B9D04F10106EF22TouchDownDetectionView15PassthroughView`](../objc/_TtCV11MediaCoreUIP33_F9332246B6179A9B3C5B9D04F10106EF22TouchDownDetectionView15PassthroughView_MediaCoreUI.md), [`_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffect11EffectLayer`](../objc/_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffect11EffectLayer_MediaCoreUI.md), [`_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffectP33_566CEA15F61A74F1525E2EE33F9A28BC14FirstBlurLayer`](../objc/_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffectP33_566CEA15F61A74F1525E2EE33F9A28BC14FirstBlurLayer_MediaCoreUI.md), [`_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffectP33_566CEA15F61A74F1525E2EE33F9A28BC15SecondBlurLayer`](../objc/_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffectP33_566CEA15F61A74F1525E2EE33F9A28BC15SecondBlurLayer_MediaCoreUI.md), [`_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffectP33_566CEA15F61A74F1525E2EE33F9A28BC20FirstBlurOpacityMask`](../objc/_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffectP33_566CEA15F61A74F1525E2EE33F9A28BC20FirstBlurOpacityMask_MediaCoreUI.md), [`_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffectP33_566CEA15F61A74F1525E2EE33F9A28BC21SecondBlurOpacityMask`](../objc/_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffectP33_566CEA15F61A74F1525E2EE33F9A28BC21SecondBlurOpacityMask_MediaCoreUI.md), [`_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffectP33_566CEA15F61A74F1525E2EE33F9A28BC34DoubleOverlayColorAdjustmentsLayer`](../objc/_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffectP33_566CEA15F61A74F1525E2EE33F9A28BC34DoubleOverlayColorAdjustmentsLayer_MediaCoreUI.md), [`_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034011EffectLayer`](../objc/_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034011EffectLayer_MediaCoreUI.md), [`_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034012TopBlurLayer`](../objc/_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034012TopBlurLayer_MediaCoreUI.md), [`_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034015BottomBlurLayer`](../objc/_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034015BottomBlurLayer_MediaCoreUI.md), [`_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034018TopBlurOpacityMask`](../objc/_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034018TopBlurOpacityMask_MediaCoreUI.md), [`_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034021BottomBlurOpacityMask`](../objc/_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034021BottomBlurOpacityMask_MediaCoreUI.md), [`_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034034SingleOverlayColorAdjustmentsLayer`](../objc/_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034034SingleOverlayColorAdjustmentsLayer_MediaCoreUI.md)
+
+### Classes
+
+`AVURLAsset`, `NSUserDefaults`, `UINavigationItem`, `_TtC11MediaCoreUI11MotionCache`, `_TtC11MediaCoreUI12FFTProcessor`, `_TtC11MediaCoreUI13ScrubberProxy`, `_TtC11MediaCoreUI13WaveformLayer`, `_TtC11MediaCoreUI15BouncyBarsAsset`, `_TtC11MediaCoreUI15MotionSignposts`, `_TtC11MediaCoreUI15PagedFrameProxy`, `_TtC11MediaCoreUI15ParallaxContext`, `_TtC11MediaCoreUI16BackdropHostView`, `_TtC11MediaCoreUI16MaterialRenderer`, `_TtC11MediaCoreUI16MotionCacheActor`, `_TtC11MediaCoreUI16PowerLogReporter`, `_TtC11MediaCoreUI16ProcessIDManager`, `_TtC11MediaCoreUI16ScrubberSections`, `_TtC11MediaCoreUI16SpectrumAnalysis`, `_TtC11MediaCoreUI16WindowProperties`, `_TtC11MediaCoreUI17ScrubberViewModel`, `_TtC11MediaCoreUI18EnvironmentMonitor`, `_TtC11MediaCoreUI18LooperConfigurator`, `_TtC11MediaCoreUI18MetalRenderContext`, `_TtC11MediaCoreUI18MotionEnabledState`, `_TtC11MediaCoreUI18MotionViewDeferral`, `_TtC11MediaCoreUI19NowPlayingViewModel`, `_TtC11MediaCoreUI20MinimumLayoutMargins`, `_TtC11MediaCoreUI20WaveformAudioSampler`, `_TtC11MediaCoreUI21BackdropLayerHostView`, `_TtC11MediaCoreUI21NowPlayingSpeedPicker`, `_TtC11MediaCoreUI21TapExcludedGeometries`, `_TtC11MediaCoreUI22AudioTapQueueProcessor`, `_TtC11MediaCoreUI22MotionCacheDiskStorage`, `_TtC11MediaCoreUI22MotionViewDisplayState`, `_TtC11MediaCoreUI22PagedShareGalleryState`, `_TtC11MediaCoreUI22WaveformDataController`, `_TtC11MediaCoreUI23AudioTapCallbackWrapper`, `_TtC11MediaCoreUI23MotionViewStateObserver`, `_TtC11MediaCoreUI23NowPlayingRouteObserver`, `_TtC11MediaCoreUI23PreciseSpeedPickerModel`, `_TtC11MediaCoreUI24TransportButtonViewModel`, `_TtC11MediaCoreUI25AudioTapSampleTransformer`, `_TtC11MediaCoreUI25MetalImageTextureProvider`, `_TtC11MediaCoreUI25MetalVideoTextureProvider`, `_TtC11MediaCoreUI26NowPlayingTimeControlState`, `_TtC11MediaCoreUI27ParallaxNavigationTitleView`, `_TtC11MediaCoreUI28ScrubberInteractionViewModel`, `_TtC11MediaCoreUI29MaterialMotionContentObserver`, `_TtC11MediaCoreUI29NowPlayingMacExpansionContext`, `_TtC11MediaCoreUI29NowPlayingVideoPlayerDelegate`, `_TtC11MediaCoreUI30NowPlayingHostedContentSession`, `_TtC11MediaCoreUI31LockScreenMotionReplicatorLayer`, `_TtC11MediaCoreUI36NowPlayingArtworkRestrictionsMonitor`, `_TtC11MediaCoreUI36WindowPropertiesReaderViewController`, `_TtC11MediaCoreUI37NowPlayingCustomArtworkBackgroundView`, `_TtC11MediaCoreUI37TransportButtonPackageStateController`, `_TtC11MediaCoreUI38NowPlayingArtworkMirrorReplicatorLayer`, `_TtC11MediaCoreUI38NowPlayingArtworkMotionReplicatorLayer`, `_TtC11MediaCoreUI38NowPlayingCustomArtworkBackgroundLayer`, `_TtC11MediaCoreUI41ParallaxHeaderAlignedScrollTargetBehavior`, `_TtC11MediaCoreUI44NowPlayingCustomArtworkBackgroundEffectLayer`, `_TtC11MediaCoreUI48NowPlayingCustomArtworkBackgroundReplicatorLayer`, `_TtC11MediaCoreUI8Geometry`, `_TtC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC15PassthroughView`, `_TtC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC20GeometryTrackingView`, `_TtC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC21ContentViewController`, `_TtC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC22ExpandedViewController`, `_TtC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC35CollapsedTabAccessoryViewController`, `_TtC11MediaCoreUIP33_269E8A2553F691DD0D96A2E732A5863B13ContainerView`, `_TtC11MediaCoreUIP33_28B805B7ABBD8163ADF264F064CDAB2817ScrubberExpansion`, `_TtC11MediaCoreUIP33_5C0FCAEC7E121FD01840555B36210BDC10PlayerView`, `_TtC11MediaCoreUIP33_5C0FCAEC7E121FD01840555B36210BDC20GeometryTrackingView`, `_TtC11MediaCoreUIP33_683D27D5EA5FC88F5EC872E839F708489BlurLayer`, `_TtC11MediaCoreUIP33_6A4B5F54341486E9BAD2FFF757A8587427PagedFrameShareActivityItem`, `_TtC11MediaCoreUIP33_6CBD87A2320B99A868A4969384204E9624FittedTextHeightResolver`, `_TtC11MediaCoreUIP33_7E157EA4C6EF7AA60D360FCDCEB8EEC230WindowSizeReaderViewController`, `_TtC11MediaCoreUIP33_8A49DC2FB69555F909B7715363263FF722VideoPlayerCoordinator`, `_TtC11MediaCoreUIP33_8B5FAED8DE080D34DF68BF28A36B87C521HostedScenePhaseModel`, `_TtC11MediaCoreUIP33_98519F523B8515A67EEFBCB0824D82807Counter`, `_TtC11MediaCoreUIP33_BEBD78153FB188591AFA1998BBE7CAE710ScrimLayer`, `_TtC11MediaCoreUIP33_BEBD78153FB188591AFA1998BBE7CAE713EdgeRampField`, `_TtC11MediaCoreUIP33_BEBD78153FB188591AFA1998BBE7CAE79BlurLayer`, `_TtC11MediaCoreUIP33_C115977D147F687007A7A078C341437619ResourceBundleClass`, `_TtC11MediaCoreUIP33_E7BB3E41A3A3BDE888B2FF9B48F3AC4F19ResourceBundleClass`, `_TtC11MediaCoreUIP33_E92D59AEB5FF02FAFDF5606CD409BD2A16ScrubberPlayhead`, `_TtC11MediaCoreUIP33_F4C8615D44A19A30266CA641FD3263FC17AnimatedViewState`, `_TtC11MediaCoreUIP33_F4C8615D44A19A30266CA641FD3263FC18CAPackageViewLayer`, `_TtC11MediaCoreUIP33_F4C8615D44A19A30266CA641FD3263FC9ViewState`, `_TtCC11MediaCoreUI19NowPlayingViewModel10AppIntents`, `_TtCC11MediaCoreUI19NowPlayingViewModel11ContextMenu`, `_TtCC11MediaCoreUI19NowPlayingViewModel11CurrentItem`, `_TtCC11MediaCoreUI19NowPlayingViewModel11TimeControl`, `_TtCC11MediaCoreUI19NowPlayingViewModel12Presentation`, `_TtCC11MediaCoreUI19NowPlayingViewModel13HostedContent`, `_TtCC11MediaCoreUI19NowPlayingViewModel13TrackSections`, `_TtCC11MediaCoreUI19NowPlayingViewModel13VolumeControl`, `_TtCC11MediaCoreUI19NowPlayingViewModel15PrimaryMetadata`, `_TtCC11MediaCoreUI19NowPlayingViewModel16MiniPlayerNotice`, `_TtCC11MediaCoreUI19NowPlayingViewModel16PlaybackPosition`, `_TtCC11MediaCoreUI19NowPlayingViewModel17BackgroundArtwork`, `_TtCC11MediaCoreUI19NowPlayingViewModel17TransportControls`, `_TtCC11MediaCoreUI19NowPlayingViewModel18MiniPlayerMetadata`, `_TtCC11MediaCoreUI19NowPlayingViewModel27TransportInteractionMonitor`, `_TtCC11MediaCoreUI19NowPlayingViewModel5Debug`, `_TtCC11MediaCoreUI19NowPlayingViewModel6Banner`, `_TtCC11MediaCoreUI19NowPlayingViewModel7Artwork`, `_TtCC11MediaCoreUI19NowPlayingViewModel7Markers`, `_TtCC11MediaCoreUI19NowPlayingViewModel7Metrics`, `_TtCC11MediaCoreUI19NowPlayingViewModel8Backdrop`, `_TtCC11MediaCoreUI19NowPlayingViewModel9Lifecycle`, `_TtCC11MediaCoreUI23PreciseSpeedPickerModel11Interaction`, `_TtCC11MediaCoreUI25MetalVideoTextureProviderP33_2925FC67195227C5017294884B212F2E14OutputObserver`, `_TtCC11MediaCoreUI25MetalVideoTextureProviderP33_2925FC67195227C5017294884B212F2E18FrameStatsRecorder`, `_TtCC11MediaCoreUI26NowPlayingTimeControlState5Clock`, `_TtCC11MediaCoreUI29NowPlayingVideoPlayerDelegate15ObservableState`, `_TtCC11MediaCoreUI37NowPlayingCustomArtworkBackgroundViewP33_EB9D86487D81B0D8D4809AD70FF69AFE12ArtworkLayer`, `_TtCC11MediaCoreUI37NowPlayingCustomArtworkBackgroundViewP33_EB9D86487D81B0D8D4809AD70FF69AFE15MotionViewState`, `_TtCC11MediaCoreUIP33_0349A88C813783B152676260F9284CCC35CollapsedTabAccessoryViewController19MiniPlayerContainer`, `_TtCCC11MediaCoreUI19NowPlayingViewModel11TimeControl7Strings`, `_TtCCC11MediaCoreUI19NowPlayingViewModel13TrackSections4Cell`, `_TtCCC11MediaCoreUI19NowPlayingViewModel13VolumeControlP33_F913C71E0C68724A4AEE47C526AAF02510MiniPlayer`, `_TtCCC11MediaCoreUI19NowPlayingViewModel7Artwork10Transition`, `_TtCCC11MediaCoreUI19NowPlayingViewModel7Artwork14DefaultArtwork`, `_TtCCC11MediaCoreUI19NowPlayingViewModel7Artwork20MiniPlayerAppearance`, `_TtCCC11MediaCoreUI19NowPlayingViewModel7Artwork5Video`, `_TtCCC11MediaCoreUI19NowPlayingViewModel7Metrics32HostedContentToggleButtonMetrics`, `_TtCCCC11MediaCoreUI19NowPlayingViewModel11TimeControl7Strings14TimestampCache`, `_TtCCO11MediaCoreUI19MotionAssetDownload7ManagerP33_532E68B5ED3905708A49CC1F6A63ACB812DownloadTask`, `_TtCCOO11MediaCoreUI13WaveformState12SamplingMode13ValueProvider6SixBar`, `_TtCCOO11MediaCoreUI13WaveformState12SamplingMode13ValueProvider7FiveBar`, `_TtCO11MediaCoreUI19MotionAssetDownload10Downloader`, `_TtCO11MediaCoreUI19MotionAssetDownload7Manager`, `_TtCO11MediaCoreUI22FullBleedArtworkEffect20BlurOpacityAxialMask`, `_TtCO11MediaCoreUI22FullBleedArtworkEffect21BlurOpacityRadialMask`, `_TtCO11MediaCoreUI22FullBleedArtworkEffect21ColorAdjustmentsLayer`, `_TtCO11MediaCoreUI22FullBleedArtworkEffect9BlurLayer`, `_TtCO11MediaCoreUI8Backdrop13PinchRenderer`, `_TtCO11MediaCoreUI8Backdrop14TextureBlender`, `_TtCO11MediaCoreUI8Backdrop17CompositeRenderer`, `_TtCO11MediaCoreUI8Backdrop23RotatingArtworkRenderer`, `_TtCO11MediaCoreUI8Backdrop8Recorder`, `_TtCOO11MediaCoreUI13WaveformState12SamplingMode13ValueProvider`, `_TtCV11MediaCoreUI16MetalTextureView11Coordinator`, `_TtCV11MediaCoreUI26MinimumLayoutMarginsReader29MarginsTrackingViewController`, `_TtCV11MediaCoreUI27DivisionRegionAwareModifierP33_E3ED2FB116AD2BC1BFA4010397F44A8212LatestRegion`, `_TtCV11MediaCoreUI33NowPlayingArtworkBackgroundEffect11EffectLayer`, `_TtCV11MediaCoreUI33NowPlayingArtworkBackgroundEffectP33_0BADDE1E8FA0478530CC88B691A6D29121ColorAdjustmentsLayer`, `_TtCV11MediaCoreUI33NowPlayingArtworkBackgroundEffectP33_0BADDE1E8FA0478530CC88B691A6D2919BlurLayer`, `_TtCV11MediaCoreUIP33_269E8A2553F691DD0D96A2E732A5863B11RouteButton11Coordinator`, `_TtCV11MediaCoreUIP33_269E8A2553F691DD0D96A2E732A5863B30NowPlayingRouteButton_Catalyst14ClickSimulator`, `_TtCV11MediaCoreUIP33_5C0FCAEC7E121FD01840555B36210BDC29MotionPlayerViewRepresentable11Coordinator`, `_TtCV11MediaCoreUIP33_616BCB0E7B20D844FFEBF0D3ED4FB1B815DisableDragView17DisableDragUIView`, `_TtCV11MediaCoreUIP33_7D7F54989E0BD2C2C05089BF2F1B885F20BackdropMaskModifier13BackdropGroup`, `_TtCV11MediaCoreUIP33_C6C2762BD64E1F1C383A97C988662FA119VolumeSliderWrapper11Coordinator`, `_TtCV11MediaCoreUIP33_E92D59AEB5FF02FAFDF5606CD409BD2A20MediaTimelineControl11Coordinator`, `_TtCV11MediaCoreUIP33_E92D59AEB5FF02FAFDF5606CD409BD2A20MediaTimelineControl26MarkerTapGestureRecognizer`, `_TtCV11MediaCoreUIP33_F9332246B6179A9B3C5B9D04F10106EF22TouchDownDetectionView15PassthroughView`, `_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffect11EffectLayer`, `_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffectP33_566CEA15F61A74F1525E2EE33F9A28BC14FirstBlurLayer`, `_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffectP33_566CEA15F61A74F1525E2EE33F9A28BC15SecondBlurLayer`, `_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffectP33_566CEA15F61A74F1525E2EE33F9A28BC20FirstBlurOpacityMask`, `_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffectP33_566CEA15F61A74F1525E2EE33F9A28BC21SecondBlurOpacityMask`, `_TtCVO11MediaCoreUI22FullBleedArtworkEffect19DoubleOverlayEffectP33_566CEA15F61A74F1525E2EE33F9A28BC34DoubleOverlayColorAdjustmentsLayer`, `_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034011EffectLayer`, `_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034012TopBlurLayer`, `_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034015BottomBlurLayer`, `_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034018TopBlurOpacityMask`, `_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034021BottomBlurOpacityMask`, `_TtCVO11MediaCoreUI22FullBleedArtworkEffect19SingleOverlayEffectP33_B4A62B4BA58937A9E72FF39A3F1F034034SingleOverlayColorAdjustmentsLayer`
+
+### Protocols
+
+`AVAssetDownloadDelegate`, `AVMediaTimelineControlDelegate`, `AVMediaTimelineControlSource`, `AVPlayerItemOutputPullDelegate`, `AVTimeRangeMarkUIProvider`, `CAAction`, `CALayerDelegate`, `ICEnvironmentMonitorObserver`, `MPCVideoOutput`, `MPCVideoOutputDelegate`, `MTKViewDelegate`, `MTLAllocation`, `MTLBuffer`, `MTLCommandBuffer`, `MTLCommandQueue`, `MTLCommandQueueSPI`, `MTLDevice`, `MTLLibrary`, `MTLRenderPipelineState`, `MTLResource`, `MTLTexture`, `NSObject`, `NSURLSessionDelegate`, `NSURLSessionTaskDelegate`, `UIActivityItemSource`, `UIAdaptivePresentationControllerDelegate`, `UIContextMenuInteractionDelegate`, `UIGestureRecognizerDelegate`, `UIPointerInteractionDelegate`, `UIPopoverPresentationControllerDelegate`, `UISheetPresentationControllerDelegate`, `UIViewControllerContextTransitioning`, `UIViewControllerTransitioningDelegate`
+
+### Properties
+
+```
+@property (Tf,R,N) minValue;
+@property (Tf,R,N) maxValue;
+@property (Tf,R,N) currentValue;
+@property (TB,R,N,GisPlaying) playing;
+@property (TB,R,N,GisLoading) loading;
+@property (T@"NSString",R,N) currentValueText;
+@property (T@"NSString",R,N) maxValueText;
+@property (T@"NSArray",C,N) timeRangeMarks;
+@property (T@"<MPCVideoOutputDelegate>",W,N) videoOutputDelegate;
+@property (T@"UIViewController",R,N) playerViewController;
+@property (T@"AVPlayerLayer",R,N) playerLayer;
+@property (TB,N) showsPlaybackControls;
+@property (T{CGSize=dd},R,N) presentationSize;
+@property (T@"NSString",C,N) videoGravity;
+@property (T{CGRect={CGPoint=dd}{CGSize=dd}},R,N) videoBounds;
+@property (TB,R,N,GisReadyForDisplay) readyForDisplay;
+@property (TB,N) videoEnabled;
+@property (TB,R,N,GisExternalPlaybackActive) externalPlaybackActive;
+@property (TB,R,N,GisPictureInPictureActive) pictureInPictureActive;
+@property (TB,N) allowsPictureInPicturePlayback;
+@property (TB,N) canStartPictureInPictureAutomaticallyFromInline;
+@property (T@"NSArray",C,N) customControlItems;
+@property (TB,N) allowsVideoFrameAnalysis;
+@property (TB,N) hidesVideoPlayerBackground;
+@property (TB,N) exitsFullScreenWhenPlaybackEnds;
+@property (TQ,R) allocatedSize;
+@property (TQ,R) length;
+@property (TQ,R) gpuAddress;
+@property (Tq,R) sparseBufferTier;
+@property (T@"<MTLDevice>",R) device;
+@property (T@"<MTLCommandQueue>",R) commandQueue;
+@property (TB,R) retainedReferences;
+@property (TQ,R) errorOptions;
+@property (T@"NSString",C) label;
+@property (Td,R) kernelStartTime;
+@property (Td,R) kernelEndTime;
+@property (T@"<MTLLogContainer>",R) logs;
+@property (Td,R) GPUStartTime;
+@property (Td,R) GPUEndTime;
+@property (TQ,R) status;
+@property (T@"NSError",R) error;
+@property (T@"NSString",C) label;
+@property (T@"<MTLDevice>",R) device;
+@property (Ti) backgroundTrackingPID;
+@property (TQ,R) maxCommandBufferCount;
+@property (TQ,R) qosLevel;
+@property (T@"OS_dispatch_queue",R) commitQueue;
+@property (TB,R) commitSynchronously;
+@property (T@"OS_dispatch_queue",R) completionQueue;
+@property (TB,R) disableCrossQueueHazardTracking;
+@property (TB) skipRender;
+@property (TB) executionEnabled;
+@property (TB,R) isOpenGLQueue;
+@property (TB,R) commitsWithQoS;
+@property (TB,GisProfilingEnabled) profilingEnabled;
+@property (TB,?,N,GisStatEnabled) StatEnabled;
+@property (TQ,?,N,GgetStatOptions) StatOptions;
+@property (TQ,?,N,GgetStatLocations) StatLocations;
+@property (T@"NSString",R) name;
+@property (TQ,R) registryID;
+@property (T@"MTLArchitecture",R) architecture;
+@property (T{?=QQQ},R) maxThreadsPerThreadgroup;
+@property (TB,R,GisLowPower) lowPower;
+@property (TB,R,GisHeadless) headless;
+@property (TB,R,GisRemovable) removable;
+@property (TB,R) hasUnifiedMemory;
+@property (TQ,R) recommendedMaxWorkingSetSize;
+@property (TB,R,GisDepth24Stencil8PixelFormatSupported) depth24Stencil8PixelFormatSupported;
+@property (TQ,R) readWriteTextureSupport;
+@property (TQ,R) argumentBuffersSupport;
+@property (TB,R,GareRasterOrderGroupsSupported) rasterOrderGroupsSupported;
+@property (TB,R) supports32BitFloatFiltering;
+@property (TB,R) supports32BitMSAA;
+@property (TB,R) supportsQueryTextureLOD;
+@property (TB,R) supportsBCTextureCompression;
+@property (TB,R) supportsPullModelInterpolation;
+@property (TB,R,GareBarycentricCoordsSupported) barycentricCoordsSupported;
+@property (TB,R) supportsShaderBarycentricCoordinates;
+@property (TQ,R) currentAllocatedSize;
+@property (TQ,R) maxThreadgroupMemoryLength;
+@property (TQ,R) maxArgumentBufferSamplerCount;
+@property (TB,R,GareProgrammableSamplePositionsSupported) programmableSamplePositionsSupported;
+@property (TQ,R) sparseTileSizeInBytes;
+@property (TQ,R) maxBufferLength;
+@property (T@"NSArray",R) counterSets;
+@property (TB,R) supportsDynamicLibraries;
+@property (TB,R) supportsRenderDynamicLibraries;
+@property (TB,R) supportsPlacementSparse;
+@property (TB,R) supportsRaytracing;
+@property (TB,R) supportsFunctionPointers;
+@property (TB,R) supportsFunctionPointersFromRender;
+@property (TB,R) supportsRaytracingFromRender;
+@property (TB,R) supportsPrimitiveMotionBlur;
+@property (TQ,R) maximumConcurrentCompilationTaskCount;
+@property (T@"NSString",C) label;
+@property (T@"<MTLDevice>",R) device;
+@property (T@"NSArray",R) functionNames;
+@property (Tq,R) type;
+@property (T@"NSString",R) installName;
+@property (T@"NSString",R) label;
+@property (T@"<MTLDevice>",R) device;
+@property (T@"MTLRenderPipelineReflection",R) reflection;
+@property (TQ,R) maxTotalThreadsPerThreadgroup;
+@property (TB,R) threadgroupSizeMatchesTileSize;
+@property (TQ,R) imageblockSampleLength;
+@property (TB,R) supportIndirectCommandBuffers;
+@property (TQ,R) maxTotalThreadsPerObjectThreadgroup;
+@property (TQ,R) maxTotalThreadsPerMeshThreadgroup;
+@property (TQ,R) objectThreadExecutionWidth;
+@property (TQ,R) meshThreadExecutionWidth;
+@property (TQ,R) maxTotalThreadgroupsPerMeshGrid;
+@property (T{MTLResourceID=Q},R) gpuResourceID;
+@property (Tq,R,N) shaderValidation;
+@property (T{?=QQQ},R) requiredThreadsPerTileThreadgroup;
+@property (T{?=QQQ},R) requiredThreadsPerObjectThreadgroup;
+@property (T{?=QQQ},R) requiredThreadsPerMeshThreadgroup;
+@property (T@"NSString",C) label;
+@property (T@"<MTLDevice>",R) device;
+@property (TQ,R) cpuCacheMode;
+@property (TQ,R) storageMode;
+@property (TQ,R) hazardTrackingMode;
+@property (TQ,R) resourceOptions;
+@property (T@"<MTLHeap>",R) heap;
+@property (TQ,R) heapOffset;
+@property (TQ,R) allocatedSize;
+@property (T@"<MTLResource>",R) rootResource;
+@property (T@"<MTLTexture>",R) parentTexture;
+@property (TQ,R) parentRelativeLevel;
+@property (TQ,R) parentRelativeSlice;
+@property (T@"<MTLBuffer>",R) buffer;
+@property (TQ,R) bufferOffset;
+@property (TQ,R) bufferBytesPerRow;
+@property (T^{__IOSurface=},R) iosurface;
+@property (TQ,R) iosurfacePlane;
+@property (TQ,R) textureType;
+@property (TQ,R) pixelFormat;
+@property (TQ,R) width;
+@property (TQ,R) height;
+@property (TQ,R) depth;
+@property (TQ,R) mipmapLevelCount;
+@property (TQ,R) sampleCount;
+@property (TQ,R) arrayLength;
+@property (TQ,R) usage;
+@property (TB,R,GisShareable) shareable;
+@property (TB,R,GisFramebufferOnly) framebufferOnly;
+@property (TQ,R) firstMipmapInTail;
+@property (TQ,R) tailSizeInBytes;
+@property (TB,R) isSparse;
+@property (TB,R) allowGPUOptimizedContents;
+@property (Tq,R) compressionType;
+@property (T{MTLResourceID=Q},R) gpuResourceID;
+@property (T{?=CCCC},R,N) swizzle;
+@property (Tq,R) sparseTextureTier;
+@property (Tf,R) minLOD;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+@property (T@"UIView",R,N) containerView;
+@property (TB,R,N,GisAnimated) animated;
+@property (TB,R,N,GisInteractive) interactive;
+@property (TB,R,N) transitionWasCancelled;
+@property (Tq,R,N) presentationStyle;
+@property (T{CGAffineTransform=dddddd},R,N) targetTransform;
+@property (TB,N) accessibilityIgnoresInvertColors;
+@property (Tq,N,R) preferredStatusBarStyle;
+@property (Tf,N,R) minValue;
+@property (Tf,N,VmaxValue) maxValue;
+@property (Tf,N,VcurrentValue) currentValue;
+@property (TB,N,R) playing;
+@property (TB,N,R) loading;
+@property (T@"NSString",N,R) currentValueText;
+@property (T@"NSString",N,R) maxValueText;
+@property (T@"NSArray",N,C) timeRangeMarks;
+```
+
+## Swift types (1107)
+
+`BackgroundArtwork.Snapshotter`, `Manager.Delegate`, `MediaCoreUI.AXPopoverContainer<A:`, `MediaCoreUI.AccessibilityRepresentation`, `MediaCoreUI.AccessoryButtonShape`, `MediaCoreUI.AccessoryButtonShape.ButtonShapeStyle`, `MediaCoreUI.AccessoryStyle`, `MediaCoreUI.ActiveArtworkPlacementKey`, `MediaCoreUI.ActiveTrackSectionTimeRemainingText`, `MediaCoreUI.AnchorKey`, `MediaCoreUI.AnimatableArtworkBackground`, `MediaCoreUI.AnimatedCount`, `MediaCoreUI.AnimatedViewState:`, `MediaCoreUI.ApplyingWidthConstraints`, `MediaCoreUI.ApproximatelyComparable`, `MediaCoreUI.ApproximatelyEquatable`, `MediaCoreUI.ArrowStyleKey`, `MediaCoreUI.ArtworkBackdropView`, `MediaCoreUI.ArtworkClipShape`, `MediaCoreUI.ArtworkCornerModifier`, `MediaCoreUI.ArtworkCornerStyleKey`, `MediaCoreUI.ArtworkGeometryID`, `MediaCoreUI.ArtworkInnerStrokeModifier<A:`, `MediaCoreUI.ArtworkMacHoverEffect`, `MediaCoreUI.ArtworkPaddingModifier`, `MediaCoreUI.ArtworkShadow`, `MediaCoreUI.ArtworkShadowModifier`, `MediaCoreUI.ArtworkStyleModifier`, `MediaCoreUI.ArtworkStyleModifier.AppliedArtworkStyle<A:`, `MediaCoreUI.ArtworkStyleModifier.StrokeStyle`, `MediaCoreUI.AspectFillCircle`, `MediaCoreUI.AudioTap`, `MediaCoreUI.AudioTap.Error`, `MediaCoreUI.AudioTapCallbackWrapper`, `MediaCoreUI.AudioTapQueueProcessor`, `MediaCoreUI.AudioTapSampleTransformer`, `MediaCoreUI.AutomationModifier`, `MediaCoreUI.Backdrop`, `MediaCoreUI.Backdrop.CompositeRenderer:`, `MediaCoreUI.Backdrop.Error`, `MediaCoreUI.Backdrop.PinchRenderer`, `MediaCoreUI.Backdrop.PinchRenderer.MeshModel`, `MediaCoreUI.Backdrop.Recorder`, `MediaCoreUI.Backdrop.RecordingConfiguration`, `MediaCoreUI.Backdrop.RotatingArtworkRenderer`, `MediaCoreUI.Backdrop.SnapshotConfiguration`, `MediaCoreUI.Backdrop.Specs`, `MediaCoreUI.Backdrop.Specs.Environment`, `MediaCoreUI.Backdrop.State`, `MediaCoreUI.Backdrop.TextureBlender`, `MediaCoreUI.Backdrop.ViewConfiguration`, `MediaCoreUI.BackdropHostView.Error`, `MediaCoreUI.BackdropHostView:`, `MediaCoreUI.BackdropLayerHostView:`, `MediaCoreUI.BackdropLayerView`, `MediaCoreUI.BackdropMarqueeMaskStyle`, `MediaCoreUI.BackdropMaskModifier`, `MediaCoreUI.BackdropMaskModifier.BackdropGroup`, `MediaCoreUI.BackdropMaskModifier.ClipShape`, `MediaCoreUI.BackdropObserver`, `MediaCoreUI.BackdropView`, `MediaCoreUI.BackdropViewHosting`, `MediaCoreUI.BackdropViewRepresentable`, `MediaCoreUI.BackgroundCapsule`, `MediaCoreUI.BackgroundPlatter<A:`, `MediaCoreUI.BadgeConfiguration`, `MediaCoreUI.BadgeConfiguration.Display`, `MediaCoreUI.BadgeConfiguration.Placement`, `MediaCoreUI.BadgeView`, `MediaCoreUI.BlurEdgeInputs`, `MediaCoreUI.BlurLayer:`, `MediaCoreUI.BorderColorKey`, `MediaCoreUI.BouncyBarsAsset`, `MediaCoreUI.BubbleAction`, `MediaCoreUI.BubbleBackground`, `MediaCoreUI.BubbleImage`, `MediaCoreUI.BubbleTip<A:`, `MediaCoreUI.BubbleTipAccessoryModifier`, `MediaCoreUI.BubbleTipAccessoryModifier.Preset`, `MediaCoreUI.BubbleTipBackgroundKey`, `MediaCoreUI.BubbleTipSubtitleViewModifier`, `MediaCoreUI.BubbleTipTitleViewModifier`, `MediaCoreUI.CALayerSnapshotError`, `MediaCoreUI.CAPackageView`, `MediaCoreUI.CAPackageViewForegroundColorKey`, `MediaCoreUI.CAPackageViewLayer:`, `MediaCoreUI.CenterView`, `MediaCoreUI.CheckmarkToggleStyle`, `MediaCoreUI.CircularProgressView`, `MediaCoreUI.CircularProgressView.CircleView`, `MediaCoreUI.CircularProgressView.LineStyle`, `MediaCoreUI.CircularProgressView.ProgressCircleView`, `MediaCoreUI.ClientDefinedMotionCacheIndices`, `MediaCoreUI.ClientDefinedMotionCacheIndices.CodingKeys`, `MediaCoreUI.CodingKeys<A:`, `MediaCoreUI.CollapsedPlatterPositionModifier`, `MediaCoreUI.CollapsedTabAccessoryViewController.MiniPlayerContainer:`, `MediaCoreUI.CollapsedTabAccessoryViewController:`, `MediaCoreUI.ColorBackdrop`, `MediaCoreUI.CombinedScrollTargetBehavior`, `MediaCoreUI.CompanionSubviews`, `MediaCoreUI.ContainerView:`, `MediaCoreUI.ContentActiveTransitionKey`, `MediaCoreUI.ContentLookup1<A:`, `MediaCoreUI.ContentLookup2<A:`, `MediaCoreUI.ContentLookup3<A:`, `MediaCoreUI.ContentLookup4<A:`, `MediaCoreUI.ContentLookup<A:`, `MediaCoreUI.ContentLookupItem<A:`, `MediaCoreUI.ContentView`, `MediaCoreUI.ContentViewController:`, `MediaCoreUI.ContrastSensitiveShapeStyle`, `MediaCoreUI.CoordinatedMarquees`, `MediaCoreUI.Corner`, `MediaCoreUI.Corner.Radius`, `MediaCoreUI.CountUpTitleView`, `MediaCoreUI.Counter`, `MediaCoreUI.CurrentItemIDKey`, `MediaCoreUI.DebugDimensionArrowStyle`, `MediaCoreUI.DebugDimensionLabelPosition`, `MediaCoreUI.DebugDimensionText`, `MediaCoreUI.DebugDimensionText.ArrowLine`, `MediaCoreUI.DebugDimensionsModifier`, `MediaCoreUI.DebugPaddingModifier`, `MediaCoreUI.DefaultMarqueeMaskStyle`, `MediaCoreUI.DeviceMetrics`, `MediaCoreUI.DeviceMetrics.Layout`, `MediaCoreUI.DeviceMetrics.Padding`, `MediaCoreUI.DeviceMetrics.SizeClass`, `MediaCoreUI.DeviceMetricsKey`, `MediaCoreUI.DisableDragView.DisableDragUIView:`, `MediaCoreUI.DivisionRegion`, `MediaCoreUI.DivisionRegionAwareModifier`, `MediaCoreUI.DivisionRegionAwareModifier.LatestRegion`, `MediaCoreUI.DivisionRegionKey`, `MediaCoreUI.DivisionRelativeLayout`, `MediaCoreUI.DivisionRelativeLayout.Option`, `MediaCoreUI.DragPreviewShape`, `MediaCoreUI.EdgeRampField:`, `MediaCoreUI.EdgeRampInputs`, `MediaCoreUI.EnabledAdjustmentGestures`, `MediaCoreUI.EnvironmentMonitor:`, `MediaCoreUI.ExpandTrackSectionsWhenEmpty<A:`, `MediaCoreUI.ExpandedPlatterPositionModifier`, `MediaCoreUI.ExpandedViewController:`, `MediaCoreUI.FFTProcessor`, `MediaCoreUI.Fade`, `MediaCoreUI.Features`, `MediaCoreUI.FittedText`, `MediaCoreUI.FittedTextContentBuilder`, `MediaCoreUI.FittedTextHeightResolver`, `MediaCoreUI.FittedTextStack`, `MediaCoreUI.FittedTextVStack<A:`, `MediaCoreUI.FittedTextVStackLayout`, `MediaCoreUI.FullBleedArtworkEffect`, `MediaCoreUI.FullBleedArtworkEffect.BlurLayer:`, `MediaCoreUI.FullBleedArtworkEffect.BlurOpacityAxialMask:`, `MediaCoreUI.FullBleedArtworkEffect.BlurOpacityRadialMask:`, `MediaCoreUI.FullBleedArtworkEffect.ColorAdjustmentsLayer:`, `MediaCoreUI.FullBleedArtworkEffect.DoubleOverlayEffect`, `MediaCoreUI.FullBleedArtworkEffect.DoubleOverlayEffect.DoubleOverlayColorAdjustmentsLayer:`, `MediaCoreUI.FullBleedArtworkEffect.DoubleOverlayEffect.EffectLayer:`, `MediaCoreUI.FullBleedArtworkEffect.DoubleOverlayEffect.FirstBlurLayer:`, `MediaCoreUI.FullBleedArtworkEffect.DoubleOverlayEffect.FirstBlurOpacityMask:`, `MediaCoreUI.FullBleedArtworkEffect.DoubleOverlayEffect.SecondBlurLayer:`, `MediaCoreUI.FullBleedArtworkEffect.DoubleOverlayEffect.SecondBlurOpacityMask:`, `MediaCoreUI.FullBleedArtworkEffect.SingleOverlayEffect`, `MediaCoreUI.FullBleedArtworkEffect.SingleOverlayEffect.BottomBlurLayer:`, `MediaCoreUI.FullBleedArtworkEffect.SingleOverlayEffect.BottomBlurOpacityMask:`, `MediaCoreUI.FullBleedArtworkEffect.SingleOverlayEffect.EffectLayer:`, `MediaCoreUI.FullBleedArtworkEffect.SingleOverlayEffect.SingleOverlayColorAdjustmentsLayer:`, `MediaCoreUI.FullBleedArtworkEffect.SingleOverlayEffect.TopBlurLayer:`, `MediaCoreUI.FullBleedArtworkEffect.SingleOverlayEffect.TopBlurOpacityMask:`, `MediaCoreUI.FullWidthRectShape`, `MediaCoreUI.Geometry`, `MediaCoreUI.GeometryTrackingView:`, `MediaCoreUI.GlowEffectForegroundColorKey`, `MediaCoreUI.GlowModifier`, `MediaCoreUI.GradientBottomMask`, `MediaCoreUI.GravityKey`, `MediaCoreUI.HorizontalMargins`, `MediaCoreUI.HostedContentClipShape`, `MediaCoreUI.HostedContentToggleConfigurationKey`, `MediaCoreUI.HostedContentTransition`, `MediaCoreUI.HostedScenePhaseModel`, `MediaCoreUI.HostedScenePhaseSupport`, `MediaCoreUI.HugScrollContentLayout`, `MediaCoreUI.ImageTreatment`, `MediaCoreUI.InactiveTrackSectionTimeRemainingText`, `MediaCoreUI.IsMotionPlaybackAllowedKey`, `MediaCoreUI.IsMotionPlaybackAllowedTrait`, `MediaCoreUI.LRUCache.Container<A:`, `MediaCoreUI.LRUCache<A:`, `MediaCoreUI.LabelColorKey`, `MediaCoreUI.LabelInteractionModifier`, `MediaCoreUI.LabelInteractionModifier.Interaction`, `MediaCoreUI.LargeAdjustmentBackground`, `MediaCoreUI.LargeSpeedAdjustmentControl`, `MediaCoreUI.LargeSpeedAdjustmentControl.StepperButtonStyle`, `MediaCoreUI.LibraryButton`, `MediaCoreUI.LibraryButtonLabel`, `MediaCoreUI.LibraryButtonState`, `MediaCoreUI.LibraryButtonState.Add`, `MediaCoreUI.LibraryButtonState.Checkmark`, `MediaCoreUI.LibraryButtonState.Download`, `MediaCoreUI.LibraryButtonState.Paused`, `MediaCoreUI.LibraryButtonState.Progress`, `MediaCoreUI.LibraryButtonState.Waiting`, `MediaCoreUI.LibraryButtonStateProtocol`, `MediaCoreUI.LibraryStandardButtonStyle`, `MediaCoreUI.LineColor`, `MediaCoreUI.LineLimit`, `MediaCoreUI.ListRowStyleModifier`, `MediaCoreUI.LockScreenArtworkBackground<A:`, `MediaCoreUI.LockScreenArtworkBackgroundTreatment`, `MediaCoreUI.LockScreenBackgroundColorAdjustmentEnabledKey`, `MediaCoreUI.LockScreenBackgroundEffectBlurEnabledKey`, `MediaCoreUI.LockScreenMotionReplicatorLayer.MirroringBehavior`, `MediaCoreUI.LockScreenMotionReplicatorLayer:`, `MediaCoreUI.LoggingContextKey`, `MediaCoreUI.LooperConfigurator`, `MediaCoreUI.LooperConfigurator.CommandExecution`, `MediaCoreUI.LooperConfigurator.LooperError`, `MediaCoreUI.MCUILoggingContext`, `MediaCoreUI.MCUINamespace`, `MediaCoreUI.MCUIText`, `MediaCoreUI.MacSpecs`, `MediaCoreUI.MarkersModifier`, `MediaCoreUI.MarkersModifier.Marker`, `MediaCoreUI.MarkersModifier.MarkerLayout`, `MediaCoreUI.MarkersModifier.MarkerPositionLayoutKey`, `MediaCoreUI.MarkersModifier.MarkerTransition`, `MediaCoreUI.MarkupParser.Element<A:`, `MediaCoreUI.MarkupParser.EntityDecoder<A:`, `MediaCoreUI.MarkupParser.Parser.State<A:`, `MediaCoreUI.MarkupParser.Parser<A:`, `MediaCoreUI.MarkupParser<A:`, `MediaCoreUI.MarkupRenderer<A:`, `MediaCoreUI.Marquee.AnimatingContent.AnimatingContentView.AnimationInput<A:`, `MediaCoreUI.Marquee.AnimatingContent.AnimatingContentView.Configuration<A:`, `MediaCoreUI.Marquee.AnimatingContent.AnimatingContentView:`, `MediaCoreUI.Marquee.AnimatingContent<A:`, `MediaCoreUI.Marquee.ContentWithBadge<A:`, `MediaCoreUI.Marquee.MarqueeingContent<A:`, `MediaCoreUI.Marquee<A:`, `MediaCoreUI.MarqueeAnimationDirection`, `MediaCoreUI.MarqueeAnimationDurationKey`, `MediaCoreUI.MarqueeConfiguration`, `MediaCoreUI.MarqueeDefaults`, `MediaCoreUI.MarqueeFeatheringModifier`, `MediaCoreUI.MarqueeMaskModifier`, `MediaCoreUI.MarqueeMaskStyle`, `MediaCoreUI.MarqueeMaskStyleKey`, `MediaCoreUI.MaskView`, `MediaCoreUI.MatchGeometryModifier`, `MediaCoreUI.MaterialChinLayout`, `MediaCoreUI.MaterialChinModifier<A:`, `MediaCoreUI.MaterialContentModeKey`, `MediaCoreUI.MaterialMotionContentObserver`, `MediaCoreUI.MaterialRenderer:`, `MediaCoreUI.MaterialView<A:`, `MediaCoreUI.MediaTimelineControl`, `MediaCoreUI.MediaTimelineControl.Coordinator:`, `MediaCoreUI.MediaTimelineControl.MarkerTapGestureRecognizer:`, `MediaCoreUI.MetadataAccessoryButtonStyle`, `MediaCoreUI.MetadataAutomaticStyle`, `MediaCoreUI.MetadataButtonStyle`, `MediaCoreUI.MetadataStyle`, `MediaCoreUI.MetalContext`, `MediaCoreUI.MetalImageTextureProvider.Error`, `MediaCoreUI.MetalImageTextureProvider:`, `MediaCoreUI.MetalRenderContext`, `MediaCoreUI.MetalRenderContextKey`, `MediaCoreUI.MetalRenderer`, `MediaCoreUI.MetalTextureProvider`, `MediaCoreUI.MetalTextureProviderDisplayMode`, `MediaCoreUI.MetalTextureSource`, `MediaCoreUI.MetalTextureView`, `MediaCoreUI.MetalTextureView.Coordinator:`, `MediaCoreUI.MetalVideoTextureProvider.FrameStatsRecorder`, `MediaCoreUI.MetalVideoTextureProvider.OutputObserver:`, `MediaCoreUI.MetalVideoTextureProvider:`, `MediaCoreUI.MicaBundle`, `MediaCoreUI.MicaBundle.Error`, `MediaCoreUI.MiniPlayerArtworkOpacityAnimation`, `MediaCoreUI.MiniPlayerPositionKey`, `MediaCoreUI.MiniPlayerVibrantStyle`, `MediaCoreUI.MinimumLayoutMargins`, `MediaCoreUI.MinimumLayoutMarginsReader`, `MediaCoreUI.MinimumLayoutMarginsReader.MarginsTrackingViewController:`, `MediaCoreUI.MirroredVideoView`, `MediaCoreUI.MotionAsset`, `MediaCoreUI.MotionAssetDownload`, `MediaCoreUI.MotionAssetDownload.AssetKey`, `MediaCoreUI.MotionAssetDownload.DownloadContainer`, `MediaCoreUI.MotionAssetDownload.Downloader:`, `MediaCoreUI.MotionAssetDownload.Error`, `MediaCoreUI.MotionAssetDownload.Manager`, `MediaCoreUI.MotionAssetDownload.Manager.DownloadTask`, `MediaCoreUI.MotionAssetDownload.Request`, `MediaCoreUI.MotionAssetDownload.Result`, `MediaCoreUI.MotionAssetDownload.Result.IncompleteDownloadReason`, `MediaCoreUI.MotionCache`, `MediaCoreUI.MotionCacheActor`, `MediaCoreUI.MotionCacheAssetsDirectoryError`, `MediaCoreUI.MotionCacheBucketKey`, `MediaCoreUI.MotionCacheClientBucketError`, `MediaCoreUI.MotionCacheDiskStorage`, `MediaCoreUI.MotionCacheDiskStorage.DiskCacheStorageError`, `MediaCoreUI.MotionCacheDownloadPolicy`, `MediaCoreUI.MotionCacheDownloadPolicyEnvironmentKey`, `MediaCoreUI.MotionCacheEntry`, `MediaCoreUI.MotionCacheEntry.CodingKeys`, `MediaCoreUI.MotionCacheEntryLookupError`, `MediaCoreUI.MotionCacheIndexDestination`, `MediaCoreUI.MotionCacheInfoDictError`, `MediaCoreUI.MotionCacheSetupError`, `MediaCoreUI.MotionEnabledState`, `MediaCoreUI.MotionMode`, `MediaCoreUI.MotionPlacementContext`, `MediaCoreUI.MotionPlacementContextKey`, `MediaCoreUI.MotionPlaybackCommand`, `MediaCoreUI.MotionPlaybackPolicy`, `MediaCoreUI.MotionPlaybackPolicyEnvironmentKey`, `MediaCoreUI.MotionPlayerError`, `MediaCoreUI.MotionPlayerView`, `MediaCoreUI.MotionPlayerViewRepresentable`, `MediaCoreUI.MotionPlayerViewRepresentable.Coordinator`, `MediaCoreUI.MotionSignposts`, `MediaCoreUI.MotionView<A:`, `MediaCoreUI.MotionViewContent`, `MediaCoreUI.MotionViewContentChangeModifier`, `MediaCoreUI.MotionViewContentKey`, `MediaCoreUI.MotionViewDeferral`, `MediaCoreUI.MotionViewDisplayState`, `MediaCoreUI.MotionViewStateObserver`, `MediaCoreUI.MotionViewStateObserver.State`, `MediaCoreUI.MotionViewV2<A:`, `MediaCoreUI.NowPlayingArtwork`, `MediaCoreUI.NowPlayingArtwork.Placement`, `MediaCoreUI.NowPlayingArtworkBackground.ArtworkAspectRatio<A:`, `MediaCoreUI.NowPlayingArtworkBackground<A:`, `MediaCoreUI.NowPlayingArtworkBackgroundAspectRatio`, `MediaCoreUI.NowPlayingArtworkBackgroundEffect`, `MediaCoreUI.NowPlayingArtworkBackgroundEffect.BlurLayer:`, `MediaCoreUI.NowPlayingArtworkBackgroundEffect.ColorAdjustmentsLayer:`, `MediaCoreUI.NowPlayingArtworkBackgroundEffect.EffectLayer:`, `MediaCoreUI.NowPlayingArtworkBackgroundTreatment`, `MediaCoreUI.NowPlayingArtworkMirrorReplicatorLayer:`, `MediaCoreUI.NowPlayingArtworkMotionReplicatorLayer:`, `MediaCoreUI.NowPlayingArtworkRestrictionsMonitor:`, `MediaCoreUI.NowPlayingArtworkTreatment`, `MediaCoreUI.NowPlayingBackgroundColorAdjustmentEnabledKey`, `MediaCoreUI.NowPlayingBackgroundEffectBlurEnabledKey`, `MediaCoreUI.NowPlayingBackgroundStaticArtworkTreatment`, `MediaCoreUI.NowPlayingButton:`, `MediaCoreUI.NowPlayingButtonID`, `MediaCoreUI.NowPlayingButtonID.Value`, `MediaCoreUI.NowPlayingColorSchemeModifier`, `MediaCoreUI.NowPlayingContrastSensitiveBackdrop`, `MediaCoreUI.NowPlayingContrastSensitiveBackdrop.HighContrastBackground`, `MediaCoreUI.NowPlayingController:`, `MediaCoreUI.NowPlayingControllerContainer<A:`, `MediaCoreUI.NowPlayingControlsVisibilityAnimationModifier`, `MediaCoreUI.NowPlayingControlsVisibilityModifier`, `MediaCoreUI.NowPlayingCurrentItem`, `MediaCoreUI.NowPlayingCustomArtworkBackground.ArtworkAspectRatio<A:`, `MediaCoreUI.NowPlayingCustomArtworkBackground.ArtworkContent<A:`, `MediaCoreUI.NowPlayingCustomArtworkBackground.ScrimColor<A:`, `MediaCoreUI.NowPlayingCustomArtworkBackground.VideoBackground<A:`, `MediaCoreUI.NowPlayingCustomArtworkBackground<A:`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundEffectConfiguration`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundEffectConfiguration.Blur`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundEffectConfiguration.Blur.Edge`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundEffectConfiguration.EffectLength`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundEffectConfiguration.EffectLength.Value`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundEffectConfiguration.Replica`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundEffectConfiguration.Replica.AxisConfiguration`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundEffectConfiguration.Scrim`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundEffectConfiguration.Scrim.Edge`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundEffectLayer:`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundLayer:`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundReplicatorLayer:`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundView.Animation`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundView.Animation.Kind`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundView.ArtworkLayer:`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundView.MotionViewContainer`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundView.MotionViewState`, `MediaCoreUI.NowPlayingCustomArtworkBackgroundView:`, `MediaCoreUI.NowPlayingCustomButton<A:`, `MediaCoreUI.NowPlayingDeprecatedLayoutBuilder`, `MediaCoreUI.NowPlayingDivisionAwareLayout`, `MediaCoreUI.NowPlayingEnvironmentModifier<A:`, `MediaCoreUI.NowPlayingExpansionGlyph`, `MediaCoreUI.NowPlayingFooterConfiguration<A:`, `MediaCoreUI.NowPlayingFooterContent<A:`, `MediaCoreUI.NowPlayingFooterLayout`, `MediaCoreUI.NowPlayingFooterLayout.Large`, `MediaCoreUI.NowPlayingFooterLayout.Layout`, `MediaCoreUI.NowPlayingFooterLayout.Standard`, `MediaCoreUI.NowPlayingFooterView<A:`, `MediaCoreUI.NowPlayingFullWindowPlayerConfiguration`, `MediaCoreUI.NowPlayingGeometryIdentifier`, `MediaCoreUI.NowPlayingGrabberAligningLayout`, `MediaCoreUI.NowPlayingHeaderItemID`, `MediaCoreUI.NowPlayingHeaderItemID.Value`, `MediaCoreUI.NowPlayingHeaderLayout`, `MediaCoreUI.NowPlayingHorizontalPaddingKey`, `MediaCoreUI.NowPlayingHostedContentID`, `MediaCoreUI.NowPlayingHostedContentOption`, `MediaCoreUI.NowPlayingHostedContentOption.Value`, `MediaCoreUI.NowPlayingHostedContentResolvedOptions`, `MediaCoreUI.NowPlayingHostedContentSession`, `MediaCoreUI.NowPlayingHostedContentToggleButton<A:`, `MediaCoreUI.NowPlayingHostedContentToggleButtonStyle`, `MediaCoreUI.NowPlayingHostedContentToggleButtonStyle.DefaultLabel`, `MediaCoreUI.NowPlayingHostedViewController`, `MediaCoreUI.NowPlayingHostedViewControllerContainer<A:`, `MediaCoreUI.NowPlayingHostedViewControllerRepresentable.Coordinator<A:`, `MediaCoreUI.NowPlayingHostedViewControllerRepresentable<A:`, `MediaCoreUI.NowPlayingInstallation.DelegateAdapter<A:`, `MediaCoreUI.NowPlayingInstallation.FullWindowPlayerState.ShownState<A:`, `MediaCoreUI.NowPlayingInstallation.FullWindowPlayerState<A:`, `MediaCoreUI.NowPlayingInstallation<A:`, `MediaCoreUI.NowPlayingInstallationConfiguration`, `MediaCoreUI.NowPlayingInstallationConfiguration.Lifecycle`, `MediaCoreUI.NowPlayingLayoutBuilder`, `MediaCoreUI.NowPlayingLayoutBuilder.Component`, `MediaCoreUI.NowPlayingLayoutBuilder.Component.Value`, `MediaCoreUI.NowPlayingLayoutBuilder.Group`, `MediaCoreUI.NowPlayingLookupArtworkTreatment`, `MediaCoreUI.NowPlayingLookupID`, `MediaCoreUI.NowPlayingLookupID.ID`, `MediaCoreUI.NowPlayingMacExpansionContext`, `MediaCoreUI.NowPlayingMetadataAccessoryID`, `MediaCoreUI.NowPlayingMetadataAccessoryID.SizingBehavior`, `MediaCoreUI.NowPlayingMetadataAccessoryID.SizingBehavior.Value`, `MediaCoreUI.NowPlayingMetadataAccessoryLayout`, `MediaCoreUI.NowPlayingMetadataConfiguration`, `MediaCoreUI.NowPlayingMetadataConfiguration.Interaction`, `MediaCoreUI.NowPlayingMetadataConfiguration.Interaction.Button`, `MediaCoreUI.NowPlayingMetadataConfiguration.Interaction.Button.Value`, `MediaCoreUI.NowPlayingMetadataConfiguration.Interaction.Value`, `MediaCoreUI.NowPlayingMetadataViewSpecs`, `MediaCoreUI.NowPlayingMetadataViewSpecs.FullScreen`, `MediaCoreUI.NowPlayingMetadataViewSpecs.FullScreen.Fonts`, `MediaCoreUI.NowPlayingMetadataViewSpecs.MiniPlayer`, `MediaCoreUI.NowPlayingMetadataViewSpecs.MiniPlayer.TextSpec`, `MediaCoreUI.NowPlayingMiniPlayerAccessoryForegroundStyle`, `MediaCoreUI.NowPlayingMiniPlayerAccessoryForegroundStyle.Primary`, `MediaCoreUI.NowPlayingMiniPlayerAccessoryForegroundStyle.SecondaryMobile`, `MediaCoreUI.NowPlayingMiniPlayerAccessoryID`, `MediaCoreUI.NowPlayingMiniPlayerAccessoryID.SizingBehavior`, `MediaCoreUI.NowPlayingMiniPlayerAccessoryID.SizingBehavior.Value`, `MediaCoreUI.NowPlayingMiniPlayerAccessoryID.Value`, `MediaCoreUI.NowPlayingMiniPlayerAccessoryLayout`, `MediaCoreUI.NowPlayingMiniPlayerAccessoryLayout.Large`, `MediaCoreUI.NowPlayingMiniPlayerAccessoryLayout.Large.Metadata`, `MediaCoreUI.NowPlayingMiniPlayerAccessoryLayout.Standard`, `MediaCoreUI.NowPlayingMiniPlayerAccessoryLayout.WidthConstraint`, `MediaCoreUI.NowPlayingMiniPlayerAccessoryLayout.WidthConstraint.Value`, `MediaCoreUI.NowPlayingMiniPlayerMacButtonStyle`, `MediaCoreUI.NowPlayingMiniPlayerPosition`, `MediaCoreUI.NowPlayingMiniPlayerRegionHoverStateKey`, `MediaCoreUI.NowPlayingMiniPlayerSpecs`, `MediaCoreUI.NowPlayingMiniPlayerWidthConstraintKey`, `MediaCoreUI.NowPlayingPlatformSpec`, `MediaCoreUI.NowPlayingPlaybackSourceVideoArtworkTreatment`, `MediaCoreUI.NowPlayingQueue<A:`, `MediaCoreUI.NowPlayingQueueRow<A:`, `MediaCoreUI.NowPlayingQueueSection.TopFadeView<A:`, `MediaCoreUI.NowPlayingQueueSection<A:`, `MediaCoreUI.NowPlayingRouteButton`, `MediaCoreUI.NowPlayingRouteButton_Catalyst`, `MediaCoreUI.NowPlayingRouteButton_Catalyst.ClickSimulator`, `MediaCoreUI.NowPlayingRouteObserver`, `MediaCoreUI.NowPlayingSpeedPicker`, `MediaCoreUI.NowPlayingSpeedPicker.ActiveIndicator`, `MediaCoreUI.NowPlayingSpeedPicker.ActiveIndicator.Value`, `MediaCoreUI.NowPlayingSpeedPickerContentView`, `MediaCoreUI.NowPlayingSpeedPickerContentView.TextLabel`, `MediaCoreUI.NowPlayingStandaloneFullWindowPlayerConfiguration`, `MediaCoreUI.NowPlayingStandaloneMiniPlayerConfiguration`, `MediaCoreUI.NowPlayingStandardArtworkTreatment`, `MediaCoreUI.NowPlayingTimeControlAccessory`, `MediaCoreUI.NowPlayingTimeControlAccessory.Position`, `MediaCoreUI.NowPlayingTimeControlAccessory.Position.Value`, `MediaCoreUI.NowPlayingTimeControlAccessory.Value`, `MediaCoreUI.NowPlayingTimeControlMarkerBehavior`, `MediaCoreUI.NowPlayingTimeControlMarkerKind`, `MediaCoreUI.NowPlayingTimeControlSegment`, `MediaCoreUI.NowPlayingTimeControlState`, `MediaCoreUI.NowPlayingTimeControlState.Clock`, `MediaCoreUI.NowPlayingTrackSection`, `MediaCoreUI.NowPlayingTrackSectionKey`, `MediaCoreUI.NowPlayingTrackSectionRowForegroundStyle`, `MediaCoreUI.NowPlayingTrackSectionRowForegroundStyle.Position`, `MediaCoreUI.NowPlayingTrackSectionsAnnotationView`, `MediaCoreUI.NowPlayingTransportButtonSpec`, `MediaCoreUI.NowPlayingTransportButtonSpec.Value`, `MediaCoreUI.NowPlayingTransportButtonSpec.Value.FontSpec`, `MediaCoreUI.NowPlayingTransportButtonSpec.Value.FontSpec.Modifier`, `MediaCoreUI.NowPlayingTransportButtonSpec.Value.Group`, `MediaCoreUI.NowPlayingVideoArtworkTreatment`, `MediaCoreUI.NowPlayingVideoArtworkTreatment.VideoOffArtworkTreatment`, `MediaCoreUI.NowPlayingVideoArtworkTreatment.VideoSource`, `MediaCoreUI.NowPlayingVideoArtworkTreatment.VideoState`, `MediaCoreUI.NowPlayingVideoArtworkTreatment.VideoState.Value`, `MediaCoreUI.NowPlayingVideoEnablementChangeReason`, `MediaCoreUI.NowPlayingVideoMediaItem`, `MediaCoreUI.NowPlayingVideoPlayerDelegate.ObservableState`, `MediaCoreUI.NowPlayingVideoPlayerDelegate:`, `MediaCoreUI.NowPlayingView.ArtworkContainerView.Layout<A:`, `MediaCoreUI.NowPlayingView.ArtworkContainerView<A:`, `MediaCoreUI.NowPlayingView.ArtworkPlaceholder<A:`, `MediaCoreUI.NowPlayingView.ArtworkView<A:`, `MediaCoreUI.NowPlayingView.BackdropConditionObserver<A:`, `MediaCoreUI.NowPlayingView.BackgroundArtwork<A:`, `MediaCoreUI.NowPlayingView.BackwardsTransportButton<A:`, `MediaCoreUI.NowPlayingView.BannerView<A:`, `MediaCoreUI.NowPlayingView.CompactLandscapeLayout<A:`, `MediaCoreUI.NowPlayingView.ContentAndHeaderView<A:`, `MediaCoreUI.NowPlayingView.ContentView<A:`, `MediaCoreUI.NowPlayingView.ContextMenuStyle<A:`, `MediaCoreUI.NowPlayingView.ContextMenuView<A:`, `MediaCoreUI.NowPlayingView.ControlsAndFooterButtonsView<A:`, `MediaCoreUI.NowPlayingView.ControlsView<A:`, `MediaCoreUI.NowPlayingView.CustomAccessoriesStyleModifier<A:`, `MediaCoreUI.NowPlayingView.CustomAccessoryView<A:`, `MediaCoreUI.NowPlayingView.DefaultContentView<A:`, `MediaCoreUI.NowPlayingView.DefaultMetadataAndContextMenuView<A:`, `MediaCoreUI.NowPlayingView.DefaultMetadataView<A:`, `MediaCoreUI.NowPlayingView.EdgeTransportButton<A:`, `MediaCoreUI.NowPlayingView.EscapeHandlingModifier<A:`, `MediaCoreUI.NowPlayingView.ExpandedTrackSectionsContent<A:`, `MediaCoreUI.NowPlayingView.ExpandsNowPlayingModifier<A:`, `MediaCoreUI.NowPlayingView.FluidTimeControlView.SegmentPresentationMonitor<A:`, `MediaCoreUI.NowPlayingView.FluidTimeControlView<A:`, `MediaCoreUI.NowPlayingView.FooterButtons.ButtonsView<A:`, `MediaCoreUI.NowPlayingView.FooterButtons.FooterButtonView<A:`, `MediaCoreUI.NowPlayingView.FooterButtons<A:`, `MediaCoreUI.NowPlayingView.ForwardsTransportButton<A:`, `MediaCoreUI.NowPlayingView.FullScreenContentView<A:`, `MediaCoreUI.NowPlayingView.FullScreenContentView_CompactLandscape<A:`, `MediaCoreUI.NowPlayingView.FullScreenContentView_CompactRegular<A:`, `MediaCoreUI.NowPlayingView.FullScreenContentView_RegularExtended<A:`, `MediaCoreUI.NowPlayingView.FullWindowHostedContentLayout<A:`, `MediaCoreUI.NowPlayingView.FullWindowHostedContentView.CloseButton<A:`, `MediaCoreUI.NowPlayingView.FullWindowHostedContentView.CloseButtonStyle<A:`, `MediaCoreUI.NowPlayingView.FullWindowHostedContentView<A:`, `MediaCoreUI.NowPlayingView.FullWindowTransportButtons<A:`, `MediaCoreUI.NowPlayingView.HeaderArtworkPlaceholder<A:`, `MediaCoreUI.NowPlayingView.HeaderDismissButton<A:`, `MediaCoreUI.NowPlayingView.HeaderMetadataAndContextMenuView<A:`, `MediaCoreUI.NowPlayingView.HeaderMetadataView<A:`, `MediaCoreUI.NowPlayingView.HostedContentView<A:`, `MediaCoreUI.NowPlayingView.HoveringHeaderView<A:`, `MediaCoreUI.NowPlayingView.HoveringTrackSectionsButton<A:`, `MediaCoreUI.NowPlayingView.LeadingAccessory<A:`, `MediaCoreUI.NowPlayingView.LeadingView<A:`, `MediaCoreUI.NowPlayingView.LiveBadge<A:`, `MediaCoreUI.NowPlayingView.LookupItem<A:`, `MediaCoreUI.NowPlayingView.LookupView<A:`, `MediaCoreUI.NowPlayingView.MPCVideoOutputView<A:`, `MediaCoreUI.NowPlayingView.MediaItemView<A:`, `MediaCoreUI.NowPlayingView.MetadataAccessoryItemView<A:`, `MediaCoreUI.NowPlayingView.MetadataAccessoryLayoutView<A:`, `MediaCoreUI.NowPlayingView.MetadataAccessoryView<A:`, `MediaCoreUI.NowPlayingView.MetadataAndControlsView<A:`, `MediaCoreUI.NowPlayingView.MetadataInteractionModifier.ButtonModifier.FrameContainer<A:`, `MediaCoreUI.NowPlayingView.MetadataInteractionModifier.ButtonModifier<A:`, `MediaCoreUI.NowPlayingView.MetadataInteractionModifier.Transform<A:`, `MediaCoreUI.NowPlayingView.MetadataInteractionModifier<A:`, `MediaCoreUI.NowPlayingView.MetadataLabels<A:`, `MediaCoreUI.NowPlayingView.MetadataView<A:`, `MediaCoreUI.NowPlayingView.MiniPlayerAccessoryView<A:`, `MediaCoreUI.NowPlayingView.MiniPlayerContentView.Artwork<A:`, `MediaCoreUI.NowPlayingView.MiniPlayerContentView.CenterView.CenterAccessories<A:`, `MediaCoreUI.NowPlayingView.MiniPlayerContentView.CenterView<A:`, `MediaCoreUI.NowPlayingView.MiniPlayerContentView.TrackingHoverState<A:`, `MediaCoreUI.NowPlayingView.MiniPlayerContentView<A:`, `MediaCoreUI.NowPlayingView.MiniPlayerDeviceMetricsModifier<A:`, `MediaCoreUI.NowPlayingView.MiniPlayerMetadataView.Subtitle<A:`, `MediaCoreUI.NowPlayingView.MiniPlayerMetadataView.Title<A:`, `MediaCoreUI.NowPlayingView.MiniPlayerMetadataView<A:`, `MediaCoreUI.NowPlayingView.MiniPlayerNoticeView<A:`, `MediaCoreUI.NowPlayingView.MiniPlayerSnapshotView<A:`, `MediaCoreUI.NowPlayingView.MiniPlayerView<A:`, `MediaCoreUI.NowPlayingView.NowPlayingBackgroundStaticArtworkTreatmentView.Configuration<A:`, `MediaCoreUI.NowPlayingView.NowPlayingBackgroundStaticArtworkTreatmentView<A:`, `MediaCoreUI.NowPlayingView.OverlayView<A:`, `MediaCoreUI.NowPlayingView.PlayPauseTransportButton<A:`, `MediaCoreUI.NowPlayingView.PlayerControlsView.AccessoryButton<A:`, `MediaCoreUI.NowPlayingView.PlayerControlsView.FlexibleSpacer<A:`, `MediaCoreUI.NowPlayingView.PlayerControlsView<A:`, `MediaCoreUI.NowPlayingView.PrimaryArtworkView<A:`, `MediaCoreUI.NowPlayingView.TimeControlAccessoryView.ClockTimeText<A:`, `MediaCoreUI.NowPlayingView.TimeControlAccessoryView.CurrentTimeOfDayView<A:`, `MediaCoreUI.NowPlayingView.TimeControlAccessoryView.LookupItem<A:`, `MediaCoreUI.NowPlayingView.TimeControlAccessoryView.TimeAtEndView<A:`, `MediaCoreUI.NowPlayingView.TimeControlAccessoryView.TrackDurationView<A:`, `MediaCoreUI.NowPlayingView.TimeControlAccessoryView<A:`, `MediaCoreUI.NowPlayingView.TimeControlView<A:`, `MediaCoreUI.NowPlayingView.TimedView<A:`, `MediaCoreUI.NowPlayingView.TrackSectionsButton.TitleView<A:`, `MediaCoreUI.NowPlayingView.TrackSectionsButton<A:`, `MediaCoreUI.NowPlayingView.TrackSectionsContainer.FadeBackdrop<A:`, `MediaCoreUI.NowPlayingView.TrackSectionsContainer<A:`, `MediaCoreUI.NowPlayingView.TrackSectionsPicker.RowLabel<A:`, `MediaCoreUI.NowPlayingView.TrackSectionsPicker<A:`, `MediaCoreUI.NowPlayingView.TrackSectionsPlatterModifier<A:`, `MediaCoreUI.NowPlayingView.TrackSectionsTouchDetectionView<A:`, `MediaCoreUI.NowPlayingView.TrailingAccessory<A:`, `MediaCoreUI.NowPlayingView.TrailingView.ApplyAccessibilitySortPriority<A:`, `MediaCoreUI.NowPlayingView.TrailingView<A:`, `MediaCoreUI.NowPlayingView.VideoArtworkView<A:`, `MediaCoreUI.NowPlayingView.VideoOutputViewController<A:`, `MediaCoreUI.NowPlayingView.VideoView<A:`, `MediaCoreUI.NowPlayingView.VolumeControlView<A:`, `MediaCoreUI.NowPlayingView<A:`, `MediaCoreUI.NowPlayingViewController.AnimationController:`, `MediaCoreUI.NowPlayingViewController.ArtworkMetadataView.ViewModel<A:`, `MediaCoreUI.NowPlayingViewController.ArtworkMetadataView<A:`, `MediaCoreUI.NowPlayingViewController.BackdropView.VideoOverlayView:`, `MediaCoreUI.NowPlayingViewController.BackdropView:`, `MediaCoreUI.NowPlayingViewController.DeferredMiniPlayerChange.Kind<A:`, `MediaCoreUI.NowPlayingViewController.DeferredMiniPlayerChange<A:`, `MediaCoreUI.NowPlayingViewController.GradientView:`, `MediaCoreUI.NowPlayingViewController.SheetUIStyle<A:`, `MediaCoreUI.NowPlayingViewController:`, `MediaCoreUI.NowPlayingViewControllerDelegate`, `MediaCoreUI.NowPlayingViewControllerProxy<A:`, `MediaCoreUI.NowPlayingViewModel`, `MediaCoreUI.NowPlayingViewModel.AppIntents`, `MediaCoreUI.NowPlayingViewModel.Artwork`, `MediaCoreUI.NowPlayingViewModel.Artwork.DefaultArtwork`, `MediaCoreUI.NowPlayingViewModel.Artwork.MiniPlayerAppearance`, `MediaCoreUI.NowPlayingViewModel.Artwork.Transition`, `MediaCoreUI.NowPlayingViewModel.Artwork.Transition.Context`, `MediaCoreUI.NowPlayingViewModel.Artwork.Video`, `MediaCoreUI.NowPlayingViewModel.Backdrop`, `MediaCoreUI.NowPlayingViewModel.BackgroundArtwork`, `MediaCoreUI.NowPlayingViewModel.BackgroundArtwork.SnapshotInputs`, `MediaCoreUI.NowPlayingViewModel.BackgroundArtwork.Variant`, `MediaCoreUI.NowPlayingViewModel.BackgroundArtwork.ViewGeometry`, `MediaCoreUI.NowPlayingViewModel.Banner`, `MediaCoreUI.NowPlayingViewModel.CenterTransportButtonState`, `MediaCoreUI.NowPlayingViewModel.ContextMenu`, `MediaCoreUI.NowPlayingViewModel.CurrentItem`, `MediaCoreUI.NowPlayingViewModel.Debug`, `MediaCoreUI.NowPlayingViewModel.DurationSnapshot`, `MediaCoreUI.NowPlayingViewModel.EyebrowConfiguration`, `MediaCoreUI.NowPlayingViewModel.EyebrowConfiguration.Value`, `MediaCoreUI.NowPlayingViewModel.HostedContent`, `MediaCoreUI.NowPlayingViewModel.HostedContent.ContentSelectionReason`, `MediaCoreUI.NowPlayingViewModel.HostedContent.Transition`, `MediaCoreUI.NowPlayingViewModel.LeadingTransportButtonConfiguration`, `MediaCoreUI.NowPlayingViewModel.Lifecycle`, `MediaCoreUI.NowPlayingViewModel.Lifecycle.TransitionPhase`, `MediaCoreUI.NowPlayingViewModel.Markers`, `MediaCoreUI.NowPlayingViewModel.Markers.ActiveScrub`, `MediaCoreUI.NowPlayingViewModel.MetadataButtonAction`, `MediaCoreUI.NowPlayingViewModel.MetadataButtonAction.Source`, `MediaCoreUI.NowPlayingViewModel.Metrics`, `MediaCoreUI.NowPlayingViewModel.Metrics.Event`, `MediaCoreUI.NowPlayingViewModel.Metrics.HostedContentToggleButtonMetrics`, `MediaCoreUI.NowPlayingViewModel.MiniPlayerMetadata`, `MediaCoreUI.NowPlayingViewModel.MiniPlayerMetadata.ContentState`, `MediaCoreUI.NowPlayingViewModel.MiniPlayerNotice`, `MediaCoreUI.NowPlayingViewModel.MiniPlayerNotice.MiniPlayerContentPosition`, `MediaCoreUI.NowPlayingViewModel.MiniPlayerNotice.NoticeSession`, `MediaCoreUI.NowPlayingViewModel.MiniPlayerSubtitle`, `MediaCoreUI.NowPlayingViewModel.MiniPlayerSubtitle.CopyField`, `MediaCoreUI.NowPlayingViewModel.MiniPlayerSubtitle.Value`, `MediaCoreUI.NowPlayingViewModel.MiniPlayerSubtitle.Value.Resolved`, `MediaCoreUI.NowPlayingViewModel.MiniPlayerTitle`, `MediaCoreUI.NowPlayingViewModel.MiniPlayerTitle.CopyField`, `MediaCoreUI.NowPlayingViewModel.MiniPlayerTitle.CopyField.Value`, `MediaCoreUI.NowPlayingViewModel.MiniPlayerTitle.Value`, `MediaCoreUI.NowPlayingViewModel.PlaybackPosition`, `MediaCoreUI.NowPlayingViewModel.PlayerStyle`, `MediaCoreUI.NowPlayingViewModel.PlayheadControlAction`, `MediaCoreUI.NowPlayingViewModel.Presentation`, `MediaCoreUI.NowPlayingViewModel.PresentationStyle`, `MediaCoreUI.NowPlayingViewModel.PrimaryMetadata`, `MediaCoreUI.NowPlayingViewModel.SubtitleStyle`, `MediaCoreUI.NowPlayingViewModel.TimeControl`, `MediaCoreUI.NowPlayingViewModel.TimeControl.Strings`, `MediaCoreUI.NowPlayingViewModel.TimeControl.Strings.TimestampCache`, `MediaCoreUI.NowPlayingViewModel.TimeControlAction`, `MediaCoreUI.NowPlayingViewModel.TrackSections`, `MediaCoreUI.NowPlayingViewModel.TrackSections.Cell`, `MediaCoreUI.NowPlayingViewModel.TrackSections.RelativePlayheadPosition`, `MediaCoreUI.NowPlayingViewModel.TrailingTransportButtonConfiguration`, `MediaCoreUI.NowPlayingViewModel.TransitionDestination`, `MediaCoreUI.NowPlayingViewModel.TransportButtonAction`, `MediaCoreUI.NowPlayingViewModel.TransportControls`, `MediaCoreUI.NowPlayingViewModel.TransportControls.Availability`, `MediaCoreUI.NowPlayingViewModel.TransportControls.IsHidden`, `MediaCoreUI.NowPlayingViewModel.TransportControlsAvailability`, `MediaCoreUI.NowPlayingViewModel.TransportInteractionMonitor`, `MediaCoreUI.NowPlayingViewModel.VolumeControl`, `MediaCoreUI.NowPlayingViewModel.VolumeControl.Action`, `MediaCoreUI.NowPlayingViewModel.VolumeControl.Action.VolumeValue`, `MediaCoreUI.NowPlayingViewModel.VolumeControl.MiniPlayer`, `MediaCoreUI.NowPlayingViewProviderProxy<A:`, `MediaCoreUI.NowPlayingViews<A:`, `MediaCoreUI.OSStatusCheck<A:`, `MediaCoreUI.OffsetEffect`, `MediaCoreUI.OnPackageLayerAttached`, `MediaCoreUI.OnWindowGeometryChangeModifier`, `MediaCoreUI.OnWindowGeometryChangeModifier.WindowSpy`, `MediaCoreUI.OpacityModifier`, `MediaCoreUI.OptionalNamespaceKey`, `MediaCoreUI.OverlayColorKey`, `MediaCoreUI.OverlayStyleModifier`, `MediaCoreUI.PPTRunnerModifier<A:`, `MediaCoreUI.PackageSource`, `MediaCoreUI.PagedFrameChevron`, `MediaCoreUI.PagedFrameContainer.ResolvedFrames<A:`, `MediaCoreUI.PagedFrameContainer<A:`, `MediaCoreUI.PagedFrameContentScaleModifier`, `MediaCoreUI.PagedFrameGalleryShareCallbacks`, `MediaCoreUI.PagedFrameLargeBodyText`, `MediaCoreUI.PagedFrameLayoutModifier`, `MediaCoreUI.PagedFramePageControl`, `MediaCoreUI.PagedFramePhase`, `MediaCoreUI.PagedFramePrimaryContentTransitionModifier`, `MediaCoreUI.PagedFrameProxy`, `MediaCoreUI.PagedFrameReader<A:`, `MediaCoreUI.PagedFrameSecondaryCaptionText`, `MediaCoreUI.PagedFrameSecondaryContentTransitionModifier`, `MediaCoreUI.PagedFrameShareActivityItem:`, `MediaCoreUI.PagedFrameShareBrandingModifier<A:`, `MediaCoreUI.PagedFrameShareEvent`, `MediaCoreUI.PagedFrameShareEvent.Source`, `MediaCoreUI.PagedFrameSharePayload`, `MediaCoreUI.PagedFrameShareResult`, `MediaCoreUI.PagedFrameShareSheet`, `MediaCoreUI.PagedFrameShareSheetConfiguration<A:`, `MediaCoreUI.PagedFrameShortWindowMessageView`, `MediaCoreUI.PagedFrameShortWindowModifier`, `MediaCoreUI.PagedFrameSizeModifier`, `MediaCoreUI.PagedFrameSizeSpecs`, `MediaCoreUI.PagedFrameTapToAdvanceModifier`, `MediaCoreUI.PagedFrameTransition<A:`, `MediaCoreUI.PagedFrameTransitionContext`, `MediaCoreUI.PagedFrameUIPageControl`, `MediaCoreUI.PagedImageHighlightFrame<A:`, `MediaCoreUI.PagedLargeTextFrame`, `MediaCoreUI.PagedListFrame<A:`, `MediaCoreUI.PagedListRow<A:`, `MediaCoreUI.PagedScrollView.FrameMetadata<A:`, `MediaCoreUI.PagedScrollView<A:`, `MediaCoreUI.PagedShareCardCarousel`, `MediaCoreUI.PagedShareGalleryButton`, `MediaCoreUI.PagedShareGalleryButtonStyle`, `MediaCoreUI.PagedShareGalleryButtons`, `MediaCoreUI.PagedShareGalleryCard`, `MediaCoreUI.PagedShareGalleryConfiguration`, `MediaCoreUI.PagedShareGalleryContent`, `MediaCoreUI.PagedShareGalleryFrame`, `MediaCoreUI.PagedShareGalleryLabelStyle`, `MediaCoreUI.PagedShareGalleryState`, `MediaCoreUI.PagedShareGalleryState.ShareImageState`, `MediaCoreUI.PagedTextHighlightFrame`, `MediaCoreUI.PagedTextHighlightFrame.TitleSource`, `MediaCoreUI.PagedTitleLockupFrame<A:`, `MediaCoreUI.ParallaxAnimationProgressPreferenceKey`, `MediaCoreUI.ParallaxBackButtonLabel`, `MediaCoreUI.ParallaxButtonStyle`, `MediaCoreUI.ParallaxContext`, `MediaCoreUI.ParallaxEffectViewModifier`, `MediaCoreUI.ParallaxHeader<A:`, `MediaCoreUI.ParallaxHeaderAlignedScrollTargetBehavior`, `MediaCoreUI.ParallaxHeaderHeightKey`, `MediaCoreUI.ParallaxHeaderIsInViewHierarchyKey`, `MediaCoreUI.ParallaxHeaderMinYPreferenceKey`, `MediaCoreUI.ParallaxNavigationItemAdaptor`, `MediaCoreUI.ParallaxNavigationTitleView:`, `MediaCoreUI.ParallaxScrollTargetOffsetRangeKey`, `MediaCoreUI.PassthroughView:`, `MediaCoreUI.PendingShare`, `MediaCoreUI.PinScrubberTooltip`, `MediaCoreUI.PlatformImageView`, `MediaCoreUI.PlatterShadow`, `MediaCoreUI.PlatterSpacer`, `MediaCoreUI.PlayerView:`, `MediaCoreUI.PointContainable`, `MediaCoreUI.PopScaleEffect`, `MediaCoreUI.Popover.Coordinator:`, `MediaCoreUI.Popover<A:`, `MediaCoreUI.PopoverHostingControllerModifier`, `MediaCoreUI.PopoverViewControllerUIHostingControllerSwiftUI.UIHostingController<A:`, `MediaCoreUI.PopoverViewModifier<A:`, `MediaCoreUI.PowerLogReporter`, `MediaCoreUI.PreciseSpeedPicker.ContentView<A:`, `MediaCoreUI.PreciseSpeedPicker.CustomContent<A:`, `MediaCoreUI.PreciseSpeedPicker.PopoverContent<A:`, `MediaCoreUI.PreciseSpeedPicker.RegularSpeedAdjustmentControl<A:`, `MediaCoreUI.PreciseSpeedPicker<A:`, `MediaCoreUI.PreciseSpeedPickerContext`, `MediaCoreUI.PreciseSpeedPickerInputs`, `MediaCoreUI.PreciseSpeedPickerLabel`, `MediaCoreUI.PreciseSpeedPickerLabelActiveIndicator`, `MediaCoreUI.PreciseSpeedPickerLabelActiveIndicator.Value`, `MediaCoreUI.PreciseSpeedPickerModel`, `MediaCoreUI.PreciseSpeedPickerModel.Interaction`, `MediaCoreUI.PreciseSpeedPickerModelConfigurator`, `MediaCoreUI.PreciseSpeedSlider`, `MediaCoreUI.PreciseSpeedSlider.SliderRevealModifier`, `MediaCoreUI.PresentedViewState`, `MediaCoreUI.PresetBackground`, `MediaCoreUI.PresetText`, `MediaCoreUI.PresetView`, `MediaCoreUI.ProcessIDManager`, `MediaCoreUI.PublishGeometryModifier`, `MediaCoreUI.PublishedOnChange<A:`, `MediaCoreUI.RadialGradientMetrics`, `MediaCoreUI.RegisterExcludedGeometryModifier`, `MediaCoreUI.ResourceBundleClass`, `MediaCoreUI.RootController<A:`, `MediaCoreUI.RotationEffect`, `MediaCoreUI.RotationEffectModifier`, `MediaCoreUI.RouteButton`, `MediaCoreUI.RouteButton.Coordinator:`, `MediaCoreUI.SafeAreaBarRegions`, `MediaCoreUI.ScopeBar.ContentInsetMode<A:`, `MediaCoreUI.ScopeBar.ContentLayoutMode<A:`, `MediaCoreUI.ScopeBar.Specs<A:`, `MediaCoreUI.ScopeBar:`, `MediaCoreUI.ScopeBarItemRepresentable`, `MediaCoreUI.ScopePicker.AnchorPreference<A:`, `MediaCoreUI.ScopePicker.ButtonLabel<A:`, `MediaCoreUI.ScopePicker.FadingView<A:`, `MediaCoreUI.ScopePicker.ScopeButtonHighlight<A:`, `MediaCoreUI.ScopePicker.ScopeButtonHighlightCapsule<A:`, `MediaCoreUI.ScopePicker.ScopeButtons<A:`, `MediaCoreUI.ScopePicker.ScopeButtonsWithHighlight<A:`, `MediaCoreUI.ScopePicker<A:`, `MediaCoreUI.ScopePickerCustomMarginsKey`, `MediaCoreUI.ScopePickerItem`, `MediaCoreUI.ScrimLayer:`, `MediaCoreUI.ScrubContext`, `MediaCoreUI.ScrubEvent`, `MediaCoreUI.ScrubSensitivity`, `MediaCoreUI.ScrubState`, `MediaCoreUI.Scrubber.CompanionViews.AccessoryButton<A:`, `MediaCoreUI.Scrubber.CompanionViews.AccessoryViewsPriorityPool.Position<A:`, `MediaCoreUI.Scrubber.CompanionViews.AccessoryViewsPriorityPool<A:`, `MediaCoreUI.Scrubber.CompanionViews.CenterCompanionView<A:`, `MediaCoreUI.Scrubber.CompanionViews.CustomAccessoriesStyle<A:`, `MediaCoreUI.Scrubber.CompanionViews.SensitivityLabel<A:`, `MediaCoreUI.Scrubber.CompanionViews.ViewThatExists<A:`, `MediaCoreUI.Scrubber.CompanionViews<A:`, `MediaCoreUI.Scrubber<A:`, `MediaCoreUI.ScrubberAccessibilityModifier`, `MediaCoreUI.ScrubberBlendModeModifier`, `MediaCoreUI.ScrubberBufferingMask`, `MediaCoreUI.ScrubberCompanionViewLayout`, `MediaCoreUI.ScrubberExpansion`, `MediaCoreUI.ScrubberExpansion.CursorPosition`, `MediaCoreUI.ScrubberHoverEffectModifier`, `MediaCoreUI.ScrubberInteractionViewModel`, `MediaCoreUI.ScrubberInteractionViewModel.TooltipSessionKind`, `MediaCoreUI.ScrubberLoadingConfiguration`, `MediaCoreUI.ScrubberMarker`, `MediaCoreUI.ScrubberMarker.Value`, `MediaCoreUI.ScrubberOverlayTextModifier`, `MediaCoreUI.ScrubberPlayhead`, `MediaCoreUI.ScrubberProxy`, `MediaCoreUI.ScrubberProxy.Action`, `MediaCoreUI.ScrubberProxy.SeekRequest`, `MediaCoreUI.ScrubberReader<A:`, `MediaCoreUI.ScrubberSection`, `MediaCoreUI.ScrubberSections`, `MediaCoreUI.ScrubberSensitivityInteractionDirection`, `MediaCoreUI.ScrubberStateChangeModifier`, `MediaCoreUI.ScrubberTapAction`, `MediaCoreUI.ScrubberTooltipContent`, `MediaCoreUI.ScrubberTooltipModifier`, `MediaCoreUI.ScrubberTooltipModifier.ContentView`, `MediaCoreUI.ScrubberTooltipModifier.NonAnimatingOffset`, `MediaCoreUI.ScrubberTooltipShape`, `MediaCoreUI.ScrubberViewModel`, `MediaCoreUI.ScrubberWindowPropertiesModifier`, `MediaCoreUI.SectionDelimiterModifier`, `MediaCoreUI.SectionDelimiterModifier.DelimiterShape`, `MediaCoreUI.SeekBarPunchOutFade`, `MediaCoreUI.ShouldRenderMotionPlayerLayerKey`, `MediaCoreUI.ShouldResetOnSizeChange`, `MediaCoreUI.ShownWhenAppeared<A:`, `MediaCoreUI.SingleFireSignpost`, `MediaCoreUI.Specs`, `MediaCoreUI.SpectrumAnalysis`, `MediaCoreUI.SpectrumAnalysis.Intensity`, `MediaCoreUI.SplitPercentageLayout`, `MediaCoreUI.SquareAssetArtworkBackground<A:`, `MediaCoreUI.StateOrBinding`, `MediaCoreUI.StaticArt.VerticalStack<A:`, `MediaCoreUI.StaticArt<A:`, `MediaCoreUI.StrokeFillRectangle`, `MediaCoreUI.TallAssetArtworkBackground<A:`, `MediaCoreUI.TapExcludedGeometries`, `MediaCoreUI.TappableButtonStyle`, `MediaCoreUI.TickCarouselView<A:`, `MediaCoreUI.TickerSliderStyle.LabelStyle<A:`, `MediaCoreUI.TickerSliderStyle<A:`, `MediaCoreUI.TickerSliderTapAction`, `MediaCoreUI.TimedView`, `MediaCoreUI.ToastManager<A:`, `MediaCoreUI.ToastView.Specs<A:`, `MediaCoreUI.ToastView<A:`, `MediaCoreUI.ToastViewLabelContent<A:`, `MediaCoreUI.ToastViewLabelStyle`, `MediaCoreUI.ToastViewLabelStyle.Specs`, `MediaCoreUI.ToastViewModifier<A:`, `MediaCoreUI.ToggleButton<A:`, `MediaCoreUI.TouchDownDetectionView`, `MediaCoreUI.TouchDownDetectionView.PassthroughView:`, `MediaCoreUI.TrackSectionText.AccessibleContentLayout<A:`, `MediaCoreUI.TrackSectionText.DefaultContentLayout<A:`, `MediaCoreUI.TrackSectionText.OrdinalView<A:`, `MediaCoreUI.TrackSectionText.TitleView<A:`, `MediaCoreUI.TrackSectionText<A:`, `MediaCoreUI.TrackSectionsWaveform`, `MediaCoreUI.TrailingBadge`, `MediaCoreUI.TrailingBadgesView`, `MediaCoreUI.TransportButton`, `MediaCoreUI.TransportButton.LongPressButton<A:`, `MediaCoreUI.TransportButtonAction`, `MediaCoreUI.TransportButtonContent`, `MediaCoreUI.TransportButtonDefaultStyle`, `MediaCoreUI.TransportButtonDefaultStyle.InteractionModifier`, `MediaCoreUI.TransportButtonForegroundStyle`, `MediaCoreUI.TransportButtonKind`, `MediaCoreUI.TransportButtonKind.Value`, `MediaCoreUI.TransportButtonLabel`, `MediaCoreUI.TransportButtonModifier`, `MediaCoreUI.TransportButtonPackageAsset`, `MediaCoreUI.TransportButtonPackageAsset.ConfigurationMarker`, `MediaCoreUI.TransportButtonPackageAsset.File`, `MediaCoreUI.TransportButtonPackageAsset.SkipInterval`, `MediaCoreUI.TransportButtonPackageAsset.SkipInterval.GlyphLayerProperties`, `MediaCoreUI.TransportButtonPackageAsset.State`, `MediaCoreUI.TransportButtonPackageAsset.StateControl`, `MediaCoreUI.TransportButtonPackageAsset.StateEntry`, `MediaCoreUI.TransportButtonPackageStateController`, `MediaCoreUI.TransportButtonPackageView`, `MediaCoreUI.TransportButtonStyle`, `MediaCoreUI.TransportButtonViewModel`, `MediaCoreUI.TransportInteractionObserver`, `MediaCoreUI.UIWindowSceneProviding`, `MediaCoreUI.UnselectedPreset`, `MediaCoreUI.UpdatableLayer`, `MediaCoreUI.Vertex`, `MediaCoreUI.VibrancyModifier`, `MediaCoreUI.VideoEnablementContext`, `MediaCoreUI.VideoGravity`, `MediaCoreUI.VideoPlayerCoordinator:`, `MediaCoreUI.VideoPlayerStyleModifier`, `MediaCoreUI.ViewLookup:`, `MediaCoreUI.ViewProvider<A:`, `MediaCoreUI.ViewState`, `MediaCoreUI.VolumeSliderWrapper`, `MediaCoreUI.VolumeSliderWrapper.Coordinator`, `MediaCoreUI.WaveformAudioSampler`, `MediaCoreUI.WaveformAudioSamplerProtocol`, `MediaCoreUI.WaveformBarLayout`, `MediaCoreUI.WaveformBinnedFFT.Band<A:`, `MediaCoreUI.WaveformBinnedFFT.Bin<A:`, `MediaCoreUI.WaveformBinnedFFT.Iterator<A:`, `MediaCoreUI.WaveformBinnedFFT<A:`, `MediaCoreUI.WaveformColorPalette`, `MediaCoreUI.WaveformColorPaletteKey`, `MediaCoreUI.WaveformColorPaletteModifier`, `MediaCoreUI.WaveformData`, `MediaCoreUI.WaveformData.Kind`, `MediaCoreUI.WaveformData.Kind.UnexpectedValueCountError`, `MediaCoreUI.WaveformDataController`, `MediaCoreUI.WaveformFramerateSettings`, `MediaCoreUI.WaveformFramerateSettingsKey`, `MediaCoreUI.WaveformLayer.ColorPalette`, `MediaCoreUI.WaveformLayer:`, `MediaCoreUI.WaveformLayerView`, `MediaCoreUI.WaveformSize`, `MediaCoreUI.WaveformState`, `MediaCoreUI.WaveformState.SamplingMode`, `MediaCoreUI.WaveformState.SamplingMode.ValueProvider`, `MediaCoreUI.WaveformState.SamplingMode.ValueProvider.FiveBar`, `MediaCoreUI.WaveformState.SamplingMode.ValueProvider.SixBar`, `MediaCoreUI.WaveformTheme`, `MediaCoreUI.WaveformTheme.ArtworkTreatment`, `MediaCoreUI.WaveformTheme.ArtworkTreatment.CalculationError`, `MediaCoreUI.WaveformTheme.Theme`, `MediaCoreUI.WaveformView`, `MediaCoreUI.WaveformView.ProcessID`, `MediaCoreUI.WindowAspectRatio`, `MediaCoreUI.WindowProperties`, `MediaCoreUI.WindowPropertiesReader`, `MediaCoreUI.WindowPropertiesReaderViewController:`, `MediaCoreUI.WindowSizeReader`, `MediaCoreUI.WindowSizeReaderViewController:`, `MediaCoreUI._CAPackageView`, `MediaCoreUI._NowPlayingFooterActiveIndicatingView.MaximalContentShapeButtonStyle<A:`, `MediaCoreUI._NowPlayingFooterActiveIndicatingView<A:`, `MediaCoreUI._NowPlayingHostedContentToggleButtonTitleIconContent<A:`, `MediaCoreUI._PagedFrameToolbarTextView`, `MediaCoreUI._ViewLookupNode.OutputGroup<A:`, `MediaCoreUI._ViewLookupNode<A:`, `MediaCoreUI._ViewLookupTail`, `MediaCoreUI.__Key_backdropAllowsDisplayCompositing`, `MediaCoreUI.__Key_backdropCrossfadeDuration`, `MediaCoreUI.__Key_backdropIntensity`, `MediaCoreUI.__Key_backdropIsPaused`, `MediaCoreUI.__Key_badge`, `MediaCoreUI.__Key_baseArtworkTreatment`, `MediaCoreUI.__Key_displayedArtworkTreatment`, `MediaCoreUI.__Key_displayedHostedContent`, `MediaCoreUI.__Key_hasGlassGroupSiblings`, `MediaCoreUI.__Key_isInNowPlaying`, `MediaCoreUI.__Key_marqueeAnimationDirection`, `MediaCoreUI.__Key_marqueeAnimationDurationMax`, `MediaCoreUI.__Key_marqueeBoundsRestrictedEdges`, `MediaCoreUI.__Key_marqueeCanExtendContentBeyondFrame`, `MediaCoreUI.__Key_marqueeFeathering`, `MediaCoreUI.__Key_motionAsset`, `MediaCoreUI.__Key_nowPlayingPlacement`, `MediaCoreUI.__Key_onPackageLayerAttached`, `MediaCoreUI.__Key_pagedFrameDismissAXLabel`, `MediaCoreUI.__Key_pagedFrameGalleryShareCallbacks`, `MediaCoreUI.__Key_pagedFrameIsGallery`, `MediaCoreUI.__Key_pagedFrameIsShareable`, `MediaCoreUI.__Key_pagedFrameIsSnapshotting`, `MediaCoreUI.__Key_pagedFrameShareAXLabel`, `MediaCoreUI.__Key_pagedFrameShareCardAXLabel`, `MediaCoreUI.__Key_pagedFrameShareGalleryConfiguration`, `MediaCoreUI.__Key_pagedFrameShortWindowMessage`, `MediaCoreUI.__Key_preciseSpeedPickerLabelActiveIndicator`, `MediaCoreUI.__Key_scrubberCanDisplaySensitivityOnMultipleLines`, `MediaCoreUI.__Key_scrubberLeadingAccessoryAction`, `MediaCoreUI.__Key_scrubberOverlayText`, `MediaCoreUI.__Key_scrubberSensitivityInteractionDirection`, `MediaCoreUI.__Key_scrubberTimeLabelsVisible`, `MediaCoreUI.__Key_scrubberTooltipEnabled`, `MediaCoreUI.__Key_scrubberTooltipMeasuresInterval`, `MediaCoreUI.__Key_scrubberTooltipPinsToWindow`, `MediaCoreUI.__Key_scrubberTrailingAccessoryAction`, `MediaCoreUI.__Key_styleHostedContentToggleButtonAsToggle`, `MediaCoreUI.__Key_tapAction`, `MediaCoreUI.__Key_waveformBarLayout`, `MediaCoreUI.__Key_waveformSize`, `MediaCoreUI.__Key_waveformTheme`, `__C.AVError`, `__C.AVPlayerLooperStatus`, `__C.AVPlayerStatus`, `__C.AVPlayerTimeControlStatus`, `__C.AudioQueueBuffer`, `__C.AudioStreamPacketDescription`, `__C.CAColorMatrix`, `__C.CACornerMask`, `__C.CAFrameRateRange`, `__C.CAGradientLayerType`, `__C.CAMediaTimingFunctionName`, `__C.CAMeshFace`, `__C.CAMeshVertex`, `__C.CAPoint3D`, `__C.CATransform3D`, `__C.CFStringRef`, `__C.CGColorRef`, `__C.CGColorSpaceRef`, `__C.CGImageRef`, `__C.CGPoint`, `__C.CGRect`, `__C.CGSize`, `__C.CIImageOption`, `__C.CMTime`, `__C.CMTimeFlags`, `__C.CVBufferRef`, `__C.CVMetalTextureCacheRef`, `__C.DSPComplex`, `__C.DSPSplitComplex`, `__C.IOSurfaceRef`, `__C.MPCScriptedLooperStatus`, `__C.MTKTextureLoaderOption`, `__C.MTLPixelFormat`, `__C.Model`, `__C.NSAttributedStringKey`, `__C.NSKeyValueChangeKey`, `__C.NSNotificationName`, `__C.OSThermalPressureLevel`, `__C.UIAccessibilityContrast`, `__C.UIActivityType`, `__C.UIAxis`, `__C.UIEdgeInsets`, `__C.UIFontDescriptorAttributeName`, `__C.UIFontDescriptorTraitKey`, `__C.UIFontWeight`, `__C.UIOffset`, `__C.UIPageControlDirection`, `__C.UIPopoverArrowDirection`, `__C.UIUserInterfaceIdiom`, `__C.UIUserInterfaceLayoutDirection`, `__C.Uniforms`, `__C.simd_float4x4`, `__C_Synthesized.AVError`, `conformance`
+
+## Strings (928)
+
+```
+Accessibility label for a transport button that skips backwards by a known number of seconds.
+Navigation.
+MediaCoreUI.MaterialRenderer
+MediaCoreUI/NowPlayingBackdropView.swift
+A label that describes the current page and the total number of pages.
+Skipped marking asset as purgeable. Motion url is a for a local file.
+Configuration task complete
+r
+ value cannot be converted to 
+Backdrop: could not create pipeline for rotation. Missing color attachments
+CFDictionaryGetValue
+ because it is outside the representable range
+Double-tap to expand the mini player
+MediaCoreUI/NowPlayingArtworkBackground.swift
+CFPropertyListCreateWithData
+ColorSchemeContrast
+Fine-Speed Scrubbing
+Indicates that an action was completed.
+WindowProperties
+NowPlayingTrackChangeDuringTabSelect
+transform.translation.x
+Accessibility label for stop button
+NowPlayingTrackChangeRapid
+Quarter-Speed Scrubbing
+MediaCoreUI.ContainerView
+Motion.Cache.Downloader
+MediaCoreUI.Coordinator
+[DeviceMetrics] uninitialized
+playbackSlider.leadingTimestamp
+ isAnimatedImagesEnabled=
+MediaCoreUI/FullBleedArtworkEffect+BlurLayer.swift
+CFGetTypeID
+inputColorMatrix
+MediaCoreUI/NowPlayingMacTimeControlModifier.swift
+Metadata label indicating the current player item is loading.
+Optional<DivisionRegion>
+video
+Unhandled case for AVPlayerLooperStatus: 
+Backdrop Snapshot Generation
+could not set input tap on queue
+MediaCoreUI.PopoverViewController
+Optional<UserInterfaceSizeClass>
+Starting new download for 
+MediaCoreUI.VideoOverlayView
+cannedWidthAnimation
+ForwardBackward
+MediaCoreUI/NowPlayingHoveringHeaderView.swift
+Shuffle.
+trackSectionsPlatterButton
+MediaCoreUI/HostedScenePhaseSupport.swift
+MediaCoreUI/NowPlayingController+Installation.swift
+Playback Speed Slider
+inputNormalizeEdges
+An accessibility hint that media playback speed can be changed by these gestures.
+com.apple.MediaCoreUI.backdrop
+Double-tap to cycle through preset values.
+. It may have already been cancelled (e.g. due to timeout).
+Download action.
+Optional<MaterialMotionContentObserver>
+MediaCoreUI/NowPlayingArtworkMotionReplicatorLayer.swift
+Accessibility value for a waveform view that is paused.
+Cached asset resolution is too low - requested 
+Dictionary<HorizontalEdge, CGFloat>
+Request already in progress for 
+, however no task for associated key: 
+plus.arrow.trianglehead.clockwise
+A control that decreases the media playback rate.
+Mesh display buffer draw
+Accessibility label for a transport button that skips backwards by an unspecified interval.
+Optional<Layout>
+could not enqueue audio buffer
+Error while marking asset as purgeable for CacheDelete. Make sure your process is allowed to call fsctl by sandbox. No asset will be returned. 
+trackSectionButtonIndex
+PresentationKind
+ (transformed from original value: 
+sceneBackgrounded
+Expected cached asset not found on disk
+com.apple.amp.MediaCoreUI.nowPlayingLastSelectedContentID
+, bufferedDuration=
+Motion.Cache.Storage
+Indicates the media player should change to the next track.
+Accessibility label for Mini Player
+trailingAccessory
+can not subdivide a grid by numbers < 1
+ immediately as it was previously cancelled
+Add action.
+MediaCoreUI.NowPlaying.MiniPlayer.TapExcludedGeometries
+tv-artwork-blur-mask
+Shows all chapters when clicked.
+ChinLayout is misconfigured: 
+MotionDisplayState.size changed: 
+nowPlayingButton.
+MediaCoreUI/NowPlayingCustomArtworkBackgroundView.swift
+MiniPlayer-Subtitle
+WaveformBarLayout
+Accessibility value for 3x media playback.
+ does not match number of locations (
+MCUILoggingContext
+Optional<(TickerSliderTapAction in _C22BEA78B40F7BE3A12A8A875F5D7564)>
+MediaCoreUI/NowPlayingAppWindow.swift
+MediaCoreUI/BackdropView.swift
+, however request is not currently registered for task. Key: 
+SplitPercentageLayout is misconfigured: Number of subviews (
+observeOutput(for:)
+South Korea age restricted content.
+expanding
+MediaCoreUI.VideoPlayerCoordinator
+LeadingAccessoryButton
+MCUIWaveformAllowsBackgroundLiveSampling
+Metadata label indicating no current playing item.
+Backdrop.CompositeRenderer
+expanded
+; isExternalPlaybackActive: 
+MotionDisplayState.isInViewHierarchy changed: 
+Optional<MetalRenderContext>
+NowPlayingTrackChangeQueue
+View.task @ MediaCoreUI/TransportButtonPackageView.swift:
+CFStringCreateWithCStringNoCopy
+com.apple.amp.MediaCoreUI
+trackSectionsPlatter.collapsed
+isPlatterExpanded=
+Less than one minute
+LockScreenArtwork
+FittedTextVStack
+Using client-defined default cache bucket with ID: 
+Updated looper item resolution: 
+Configuration task was cancelled before configuring looper.
+Motion view url is for a local file. Will play asset directly.
+Optional<Material>
+Optional<MotionAsset>
+trackSectionsPlatterButtonTitle
+Accessibility label for the media scrubber's remaining time label.
+material_sampled_fragment
+MediaCoreUI/FullBleedArtworkEffect+BlurOpacityAxialMask.swift
+Low resolution asset
+kCFAllocatorNull
+Accessibility label for a share gallery card whose client supplied no label.
+Geometry Computation
+MediaCoreUI.NowPlayingView.TrackSectionsScrollableContentFade
+Using client-defined cache bucket with ID: 
+CFStringGetTypeID
+filters.variableBlur.inputRadius
+Default call-to-action label on the introductory frame of a paged content review flow, prompting the user to advance to the next frame.
+Encountered error configuring looper: 
+com.apple.amp.mediacoreui
+init(coder:) has not been implemented
+reason incompleteAssetURL 
+com.apple.MediaCoreUI.motion.cache
+nowPlaying.volumeSlider
+PlaceholderArtwork
+Configuration task was cancelled after configuring, but before setting looper.
+com.apple.Music.Backdrop
+MiniPlayerAppearance
+TransportInteractionMonitor
+Explicit content.
+TransportControls
+CFRelease
+\nviewGeometry: \n    size: 
+MediaCoreUI/RotationEffect.swift
+NowPlayingScrubberTooltipPresentation
+MediaCoreUI/Scrubber.swift
+Reflect, saturate + scrim treatment
+MediaCoreUI/NowPlayingViewController.swift
+MCUIDefaultCacheBucketID
+isCurrentSection=
+no colorAttachments on a new renderPassDescriptor
+bounds.size.height
+Optional<Lifecycle>
+Scrubbing through media at one quarter sensitivity
+MediaCoreUI/LockScreenMotionReplicatorLayer.swift
+AlbumMotionDownload
+Accessibility value for a waveform view that is playing.
+MediaCoreUI/FullBleedArtworkEffect+SingleOverlayEffect.swift
+cannedCornerAnimation
+sceneForegrounded
+trackSectionButtonValue
+currentTimeOfDay
+.arrow.trianglehead.clockwise
+A playback rate label, indicating the rate that playback is progressing. The parameter is a formatted playback rate, such as '1.25'.
+ContentSizeCategory
+Media services were reset. Resetting and creating a new looper.
+Accessibility value for 1.5x media playback.
+MediaCoreUI/ParallaxNavigationTitleView.swift
+expandingAfterCancelledDismissal
+chevron.backward
+Could not cancel download: 
+Fullscreen-Title
+BackgroundArtwork
+NowPlayingTabSelect
+Dismiss Now Playing Screen
+Deleting incomplete data left by previous download
+Starting download 
+Unhandled case for ScenePhase: 
+init MotionPlayerViewRepresentable.Coordinator(
+MotionDisplayState.isInScrollView changed: 
+MediaCoreUI/WaveformLayer.swift
+com.apple.amp.MediaCoreUI.nowPlayingSelectedContentID
+Accessibility Label for artwork
+Looper encountered error because media services were reset
+trackSectionButton
+NowPlayingPresentation
+Scrubbing through media at a very low sensitivity
+PreciseSpeedPicker
+MediaCoreUI/MinimumLayoutMargins.swift
+leading
+minus.arrow.trianglehead.counterclockwise
+EnhancedFullBleed
+Accessibility label for the control beside the playback scrubber that shows the wall-clock time at which the current item will finish playing.
+Optional<(OnPackageLayerAttached in _F4C8615D44A19A30266CA641FD3263FC)>
+Adjust Playback Speed
+(lighteningScrimOpacity: 
+ as cancelled prior to starting (or after stopping)
+Error while storing cache index: 
+center
+\n    safeAreaInsets: 
+collapsing
+MediaCoreUI/NowPlayingRouteButton.swift
+NowPlayingArtworkTreatment
+Looper items changed, updating item resolution to 
+Accessibility value for 1x media playback.
+could not start audio queue
+A slider that controls the media playback speed.
+Favorite.
+trailingTransportControl
+Reusing existing task for 
+.arrow.trianglehead.counterclockwise
+MediaCoreUI.WindowPropertiesReaderViewController
+could not allocate audio buffer
+MediaCoreUI/SplitPercentageLayout.swift
+Starting looper configuration task
+custom(leadingButtonEnabled: 
+material_vertex_passthrough
+blended_fragment
+DebugDimensionArrowStyle
+Configuration task was cancelled before creating looper.
+play
+init()
+Downloaded asset no longer required, suitable asset became available
+ContextMenuButton
+Expand Now Playing
+TimeControlAccessory
+MediaCoreUI.AnimatingContentView
+Suitable asset became available in cache
+MediaCoreUI.GeometryTrackingView
+LooperConfigurator.player changed: 
+NowPlayingScrubberProgressAnimation
+Indicates a control that lets the user adjust the media playback speed.
+Cancelling asset download for ID: 
+Unhandled case for scenePhase ScenePhase: 
+Indicates a button that closes a modal.
+PreciseSpeedPickerLabelActiveIndicator
+MediaCoreUI/CAPackageView.swift
+Optional<PagedFrameProxy>
+video is full-screen
+dismissingInteractively
+WaveformColorPalette
+Executing command: 
+file:///private/var/mobile/Media/MotionAssets
+trailingAccessoryButton
+Fatal error
+playbackTransportControl
+NowPlayingTrackChangeQueueRapid
+A control that increases the media playback rate.
+Error while marking asset to maintain disk stats for CacheDelete. 
+Using default cache bucket.
+Expected cached asset location: 
+Updated playback command from 
+animating
+AXHitTestShouldFallbackToNearestChild
+offset element 
+MCUIMotionCacheBuckets
+Unexpected error updating item resolution: 
+Display Buffer Pinch Mesh Pipeline
+could not create audio queue (AudioQueueNewInput). On iOS/tvOS, ensure com.apple.coreaudio.app-tap entitlement is set. On macOS, requires com.apple.private.audio.interprocess-tap entitlement or Screen Recording permission.
+MediaCoreUI.PagedFrameShareActivityItem
+Accessibility label representing missing time value.
+Accessibility Value to indicate how much time has elapsed out of the total time.
+Scrubbing through media at half sensitivity
+Optional<ContentMode>
+MediaCoreUI.CompositeRenderer
+Indicates the media player should change to the previous track.
+chevron.compact.down
+Double-tap to hide all chapters
+additivePosition-
+MarqueeMaskStyle
+MediaCoreUI.NowPlayingViewController
+Double-tap to show all chapters
+MediaCoreUI/NowPlayingArtworkBackgroundEffect.swift
+header
+Looper cancelled
+variable-blur-mask
+ isNetworkConstrained=
+arrow.down.backward.and.arrow.up.forward
+`isMotionPlaybackAllowed` environment value has changed to: 
+ScrubberSensitivityInteractionDirection
+Resolution was updated from a non-zero value: 
+medium
+View.task @ MediaCoreUI/PagedFrameContainer.swift:
+Unknown error occurred: 
+init(coder:rootView:)
+Contradictory frame constraints specified.
+square.and.arrow.up
+Looper Begin Playback
+xmark.circle.fill
+com.apple.MediaCoreUI
+stop
+Deleting data for cancelled download
+Error creating pipeline state: 
+Accessibility value for a waveform view that is buffering.
+MediaCoreUI.AnimationController
+PlayPauseStop
+MotionCacheDownloadPolicy
+could not create AVAudioFormat
+Asset download no longer required
+increased contrast mode enabled
+ isVideoVisibilityChangeAnimating: 
+trailing
+AVPlayer.status readyToPlay: 
+An accessibility hint that media playback speed can be changed by tap-and-dragging vertically.
+nowPlaying.route
+Accessibility label for a transport button that skips forwards by a known number of seconds.
+Can't create FFT Setup.
+, however continuing task since other requests are still active
+MediaCoreUI/FullBleedArtworkEffect+ColorAdjustmentsLayer.swift
+Fullscreen-Subtitle
+MediaCoreUI/MotionPlayerView.swift
+TrackSectionMenuItems
+Looper encountered error: 
+AlbumAnimationDuration
+<FittedTextVStackLayout(lineLimit: 
+MediaCoreUI/VertexMap.swift
+Optional<(BadgeConfiguration in _7D7F54989E0BD2C2C05089BF2F1B885F)>
+WaveformFramerateSettings
+unconstrained
+leadingAccessoryButton
+com.apple.amp.MediaCoreUI.nowPlayingSelectedFooterButton
+NowPlayingPresentationQueueOpen
+Serving cached asset for 
+TrailingAccessoryButton
+Supports Dolby Atmos.
+active hosted content transition
+. Resetting and creating a new looper
+NowPlayingTrackChange
+could not stop audio queue
+could not dispose audio queue
+Accessibility label for Mini Player artwork
+MediaCoreUI.ScopeBar
+Existing request for asset is cancelled, waiting until cancellation is handled. request: 
+Presents the Now Playing sheet when clicked.
+Optional<Transition>
+Rotating texture + blur offscreen draw
+Search Categories
+MotionPlayerViewRepresentable.makeUIView
+publishedObjects
+ isLowPowerEnabled=
+MediaCoreUI.MetalImageTextureProvider
+thermal pressure: 
+MediaCoreUI.ContentViewController
+ cancelled for key: 
+MediaCoreUI/MaterialRenderer.swift
+Requested cancellation for 
+Indicates that an action is being performed.
+trackSectionsPlatter.expanded
+Failed marking asset as purgeable: 
+Accessibility label for the search scope picker categories.
+EnvironmentValues
+leadingTransportControl
+MediaCoreUI.WindowSizeReaderViewController
+init(nibName:bundle:)
+Accessibility value for 0.5x media playback.
+com.apple.MediaCoreUI/motion
+cannedHeightAnimation
+Label allowing the user to adjust playback speed
+Double-tap and hold to show more options
+MediaCoreUI/BackdropRenderer.swift
+Cleanup after error
+NowPlayingBackgroundView
+Cancelling download 
+MiniPlayerNotice
+primary
+material_treated_fragment
+HorizontalAlignment
+snapshot(screen:preserveWideGamutColors:)
+Swipe for More Speeds
+DispatchTimeInterval
+Make the window taller to continue.
+waitForInactive()
+material_vertex_scale
+mask_pinch_fragment
+MediaCoreUI/ScopeBar.swift
+CFStringGetCString
+MediaCoreUI/MaterialView.swift
+Reloading for current asset and presentation size
+, trailingAccessories: 
+MiniPlayer-Title
+decelerating
+ subviews (2 expected), topView: 
+leadingAccessory
+rotation_fragment
+Artwork Luminance Analysis
+View.task @ MediaCoreUI/WaveformView.swift:
+Indicates that an action was paused.
+MediaCoreUI.MarginsTrackingViewController
+inputSourceSublayerName
+_setImageAsync(_:animated:)
+MediaCoreUI/PublishedOnChange.swift
+Loading indicator.
+/System/Library/CoreServices/SystemVersion.plist
+MediaCoreUI/FullBleedArtworkEffect+DoubleOverlayEffect.swift
+idle
+MediaCoreUI/View+MaterialChin.swift
+ProductVersion
+Scrubbing through media at the normal sensitivity
+SBUIBackgroundContentSceneSessionRole
+No color attachments for MTLRenderPassDescriptor: 
+MediaCoreUI.NowPlayingCustomArtworkBackgroundView
+CFPropertyListCreateFromXMLData
+Video
+Motion asset retrieval was cancelled.
+Accessibility label for sheet grabber to dismiss now playing screen
+bounds.size.width
+LooperConfigurator.error changed: 
+MotionPlaybackPolicy
+ sections and annotation=
+colorRange not yet defined for MTLPixelFormat 
+orderedContainers
+Indicates that the currently playing item is being live-streamed.
+MediaCoreUI/AudioTapSampleTransformer.swift
+pause
+player not expanded
+collapsed
+MediaCoreUI.MiniPlayerContainer
+MediaCoreUI.DisableDragUIView
+A hint that more media playback speeds are available by swiping.
+Offscreen Rotation and Blur Pipeline
+(elapsedDuration=
+. Note: also make sure your process is allowed to call fsctl by sandbox. No asset will be returned. 
+%d.%d.%d
+Accessibility label for the control beside the playback scrubber that shows the current time of day.
+Accessibility label for the media scrubber's elapsed time label.
+Treatment Pipeline
+compactLandscape
+instanceTransform
+Motion asset retrieval failed.
+Tap and drag up or down to change speed.
+Cache bucket with ID 
+Accessibility label for the scroll-to-next chevron indicator in a paged frame container.
+, however the URL where the file was downloaded to is not available.
+Chapters button label
+small
+transition phase: 
+ without previously defining any cache bucket.
+CFDataCreateWithBytesNoCopy
+MediaCoreUI/Popover.swift
+background
+Timed out waiting for download of 
+Optional<(HorizontalMargins in _0BCF18B95B1E73BE818B5F5763793690)>
+MediaCoreUI/FullBleedArtworkEffect+BlurOpacityRadialMask.swift
+Incorrect actor executor assumption; Expected same executor as 
+url maximumSize staticArt 
+deinit MotionPlayerViewRepresentable.Coordinator(
+This is a very loooooooong title
+[Error] Interval already ended
+MediaCoreUI.ParallaxNavigationTitleView
+Optional<ScrubberProxy>
+Looper status was updated from 
+A hint for a control that can adjust the media playback rate.
+MediaCoreUI/AudioTapQueueProcessor.swift
+Accessibility Label for track position slider.
+MediaCoreUI.BackdropView
+Tried to access client-defined cache bucket with ID 
+MotionCache.setUp complete
+Accessibility label for play button
+\n    layoutMargins: 
+One and a half speed
+Mini Player Artwork
+; isSceneBackgrounded: 
+unknown video output
+MediaCoreUI.NowPlayingVideoPlayerDelegate
+ finished with error for key: 
+Hides all chapters when clicked.
+MediaCoreUI.BackdropHostView
+Shown when a window is too short to display a paged frame experience.
+View.task @ MediaCoreUI/WaveformLayerView.swift:
+MotionDisplayState.isOnScreen changed: 
+MediaCoreUI.MetalVideoTextureProvider
+Accessibility hint informing the user they can tap the mini player to expand it into the full Now Playing sheet.
+Set<HorizontalEdge>
+TapExcludedGeometries
+trackSectionsCustomAnnotation
+Backdrop: Could not create default device, Metal rendering unavailable
+; isPlayerCollapsed: 
+Supports lossless audio.
+Optional<AnyHashable>
+Navigation button used to go to the previous page.
+toBufferingHeight
+downloadAsset(key:shouldReportPowerLog:loggingContext:)
+Regular-Speed Scrubbing
+Artwork treatment has video explicitly disabled, 
+MetadataMenuContent
+init(rootView:)
+Swift/Integers.swift
+Looper Configuration
+(leadingAccessories: 
+Failed to copy asset: 
+MediaCoreUI/PPT+Scrubber.swift
+Accessibility hint informing the user they can long-press the mini player to reveal a context menu of more options.
+makeFullWindowPlayer(configuration:) is not available on this platform.
+[DeviceMetrics (PLACEHOLDER)]
+No color attachments for MTLRenderPipelineDescriptor: 
+Take Background Snapshot
+Default client-defined cache bucket with ID 
+ completed for key: 
+TrackSections updated with 
+Duration for an audio or video chapter of less than one minute.
+unexpected case: 
+tracking
+Accessibility label for a transport button that skips forwards by an unspecified interval.
+Skip
+NowPlayingCustomArtworkBackgroundRadiusMap
+, trailingButtonEnabled: 
+Spoken when scrubbing through media with VoiceOver active. Format: \"<Chapter Title>: <Time Elapsed> of <Total Duration>\"
+, however no task exists
+Optional<PagedShareGalleryState>
+Tap and hold to reset the speed to default. Tap and drag up or down to change speed.
+ isReduceMotionEnabled=
+No longer referenced
+Optional<ScrubberTapAction>
+dismissalGrabber
+could not free audio buffer
+interactive resize
+Attempting to retrieve MotionCache.cacheAsset for 
+Motion.Cache.InfoDict
+trackSectionButtonLabel
+Optional<NowPlayingHostedContentID>
+MediaCoreUI.PassthroughView
+Motion.Cache.DownloadManager
+full bleed artwork obscuring backdrop
+, darkeningScrimOpacity: 
+MediaCoreUI/Marquee.swift
+No motion view (including the fallback) should be displayed on client's now playing screen.
+toBufferingColor
+Existing indices
+PagedFrameGalleryShareCallbacks
+Motion Cache is disabled. Motion will stream assets.
+, centerButtonEnabled: 
+playbackSlider.trailingTimestamp
+HasExtendedColorDisplay
+isPictureInPictureEngaged: 
+Accessibility label for pause button
+MotionPlayerViewRepresentable.updateUIView
+Immersive.
+Half-Speed Scrubbing
+Accessibility value for 2x media playback.
+Could not create AVAssetDownloadTask for key: 
+init(frame:)
+%{public}s\n\n%{public}s
+ScrubberViewModel seeking to time %f, animated: %{bool}d requested by proxy %{public}s
+Mini player received tap at %{public}s. Will expand = %{bool}d based on excluded tap areas: %{public}s.
+PagedFrameProxy: currentFrameIndex set to %ld, isShareable: %{bool}d
+WaveformLayer canned animations removed
+Did end long press [%{public}s]
+Configuring for %ld: Locale %{public}s does not use any supported numbering systems. Available numbering systems: %{public}s. Defaulting to latin numerals.
+Download %ld completed, but no container found. Task may be from a previous execution. Error: %s
+WaveformDataController cleanup
+Presenting toast with id=%s
+NowPlayingInstallation: deinit. hiding mini player as it's currently shown.
+No cache index file found on device. Cache will be empty.
+Handling escape keypress, moving to embedded viewing experience
+Fullscreen now playing finished presentation but is missing its content. Installing now.
+AudioTapSetup frameCount: %{public}ld
+Unexpected item count while shaping waveform. Expected %ld, received %ld, dataKind=%{public}s
+WaveformLayer bar count mismatch: bars=%ld values=%ld
+Transport controls availability updated to %{public}s
+Couldn't make command buffer
+No share card for frame %ld: render failed
+configureCacheIndices: Maintained default cacheIndex.
+Updated selected content. %{public}s -> %{public}s. reason: %{public}s
+Couldn't create command queue
+NowPlayingController requested transition to player style %{public}s. Animated = %{bool}d, current style = %s\"
+Try to create cache index folder on disk at: %s
+WaveformLayer pulse loop stopped
+NowPlayingViewModel.Presentation setting overrideIcon to %{public}s.
+MPCVideoOutput.videoEnabled is already %{bool,public}d. %{public}s
+Starting transition from full screen video
+Scrubber.Markers: Ignoring new significant playback position as a significant position is already indicated. existing: %f. proposed: %f.
+ScrubberViewModel.showPlaceholderLabels changed to %{bool}d
+Unsupported userInterfaceIdiom=%s. Defaulting to iOS specs
+Updated isMotionEnabled from %{bool}d to %{bool}d: attributesDescription=(%{public}s)
+NowPlayingRestrictionsMonitor: isMotionDisabled updated from %{bool}d to %{bool}d: motionMode=%{public}s isNetworkConstrained=%{bool}d. %s
+Failed to create rendering buffer
+ScrubberSections.duration changed from %{public}s to %{public}s
+Ignoring seek request to %f as already animating to that position
+NowPlayingInstallation: handling didUpdateSelectedContent(from: %{public}s to: %{public}s
+Hiding mini player notice following timeout: %{public}s. animated: %{bool}d
+WaveformLayer canned animations attached
+End advancing task for %{public}s
+Selecting default content (%{public}s) upon switch to regular extended.
+Displayed content changing from %{public}s to %{public}s, animated=%{bool}d
+ScrubberInteractionViewModel ignoring request to show section delimiters because the scrubber is tracking.
+%{public}s Popover presented.
+Dismantling wrapped MPCVideoOutput.playerViewController.\nplayerViewController: %{public}@. parent: %{public}@
+Could not perform disk cleanup on cache eviction event. %s
+beginning loading texture CGImage: %s, async: %{bool}d using MTKTextureLoader
+Will report subsystem=%{public}s category=%{public}s payload=%{public}s
+Unknown case AccessibilityAdjustmentDirection.%s
+AudioTapSetup actual refresh rate: %{public}.*fHz
+WaveformAudioSampler cancelled sampling task
+Created new mtkView: %{private}s
+%{public}s Performing decrement action.
+%{public}s Preset %f tapped.
+Render server sync not reported before the deadline; probing anyway
+WaveformAudioSampler subscribers count: %{public}ld
+WaveformAudioSampler updateSamplingTask: subscribers:%ld, allowsBackgroundLiveSampling:%{bool}d, isBackground:%{bool}d, shouldStop:%{bool}d
+Updated device metrics: %{public}s
+AudioTapQueueProcessor error during audio tap setup destruction: %@
+MediaTimelineControl.Coordinator: will begin changing (min=%f, max=%f)
+Tried to resize with non-finite size, falling back to 1x1 size
+Ignoring request to show mini player notice as mini player is not visible. lookupID: %{public}s. duration: %s. animated: %{bool}d
+WaveformDataController subscribeToLiveValues: dataKind=%s
+WaveformDataController subscribed to custom provider
+Updating mini player container size: %{public}s. animated: %{bool,public}d.
+ArtworkTreatment [%{public}s] cancelled
+MPCVideoOutput value does not conform to NSObject. Presentation size observation will fail. %{public}s.
+configureCacheIndices: Client-defined indices changed structure.
+Loaded package with name %{public}s
+TransportControls.center button changed from %{public}s to %{public}s
+[%{public}s] %{public}s button tapped.
+%{public}s %{public}s changed to %{public}s.
+%{public}s Performing increment action.
+NowPlayingViewModel clearing current item
+Set NowPlayingVideoMediaItem.videoEnabled = %{bool,public}d. Context: %{public}s. Media ID: %{public}s. Reason: %{public}s.
+Shared motion folder's number of assets on disk: %ld
+Taking snapshot of layer %@
+No settle probe buffer; falling back to a fixed wait
+NowPlayingInstallation: hideMiniPlayer. animated: %{bool}d
+Could not create pipeline for pinch. Missing color attachments
+NowPlayingViewController setting system glass to dark=%{bool}d because expanded=%{bool}d and highContrast=%{bool}d
+Deferring mini player uninstall until full window player transition completes
+Failed to load file %{public}s, error: %{public}s
+Download %ld will download to %s, but no container found.
+TimeControlView displaying track sections because sections changed
+[Context: %{public}s] Marquee did appear as RegularContent
+Not installing mini player as it is already installed
+MotionCache.setUpEvictionObservation failed because `storage` is nil.
+Scrubber.Markers: Marking new significant playback position for scrub. playback position: %f
+Will update player style from %{public}s to %{public}s
+Failed to build image from snapshot surface
+TrackSections playhead position moved into section \"%{public}s\".
+ScrubberReader proxy %{public}s changing interaction state to %s
+HostedContentSession client requested setting controls hidden to %{bool}d. Current value: %{bool}d
+Unable set up AX invert colors suppression because no window was found.
+Running advancing task for %{public}s
+OpacityModifier for %{public}s. Updated player style: %{public}s -> %{public}s
+CARenderServerSnapshot failed
+%{public}s: %{public}s CAPackageView _CALayerView update closure called with state %{public}s
+NowPlayingViewModel received current item with id=%{public}s
+Ignoring didEnterBackgroundNotification. notification: %{public}s. currentWindowScene: %{public}@
+Handling viewing experience transition: %s. %s -> %s
+Indices Structure: %s. Default index - maxSize: %ld.
+ScrubberInteractionViewModel dismissing section delimiters because %f seconds elapsed.
+ScrubberInteractionViewModel.currentSection changed to %{public}s
+[BackgroundArtwork] taking new snapshot for inputs: \n%s  
+WindowProperties.toolbarHeight updated to %f
+ScrubberInteractionViewModel ignoring section delimiter dismissal because the scrubber is tracking.
+Couldn't load LUT image
+%{public}s: %{public}s CAPackageView appeared, updating state to %{public}s
+No layer context ID, couldn't snapshot layer %@
+WaveformDataController state: %s → %s
+Not updating selected playback speed as it is not supported. Proposed selectedPlaybackSpeed: %{public}f. supported: %{public}s
+Hosted content received .fadeOutBottom option with invalid height %f. This option will be ignored.
+Accessing Environment<%s>'s value outside of being installed on a View. This will always read the default value and will not update.
+Could not create command Encoder
+Suppressing enterFullScreen call since a view controller is already being presented (for example, a popover in the process of being dismissed). See rdar://176905045
+Indices Structure: %s. Client-defined indices: %s. Default index: %s.
+AudioTapSetup sampleRate: %{public}.*fHz
+[BackgroundArtwork] clearing existing snapshot image
+Setting up video frame stats timer
+ScrubberReader proxy %{public}s showing section delimiters for %{public}s seconds, delay: %f
+ScrubberViewModel scrubState changed to %s requested by proxy %{public}s
+Unhandled case for %s: %s
+Removing MPCVideoOutput.playerViewController from existing hierarchy. playerViewController: %{public}@. existing parent: %{public}@
+ScrubberInteractionViewModel.scrubState underwent illegal transition from %{public}s to %{public}s. This could cause animation and behavioural issues.
+Could not encode texture blender, missing required value
+ScrubberInteractionViewModel.scrubState changed from %{public}s to %{public}s
+Ignoring request to show mini player notice as duration is negative. lookupID: %{public}s. duration: %s. animated: %{bool}d
+Updated isSceneBackgrounded: %{bool,public}d -> %{bool,public}d. ObservableState instance: %{public}s
+WaveformAudioSampler received mediaServicesWereLostNotification
+Snapshot succeeded, %slayer %@
+Mini player subtitle unable to copy field %{public}s because its corresponding value could not be found.
+Mini player marquee %{public}s
+TrackSections current section cleared.
+TimeControlView enabling interval measurement mode because transport button held
+Invalid LUT data
+%s selected content (id=%{public}s) because its toggle button was tapped
+WaveformLayer transition: %s → %s
+Returning wrapped MPCVideoOutput.playerViewController. playerViewController: %{public}@. parent: %{public}@
+OpacityModifier for %{public}s. Initial player style: %{public}s
+No value publisher found for %s, expected exactly one publisher per dataKind.
+Failed to format track section duration for section with title: \n%s and duration: %f
+Couldn't configure slider gesture, no UISlider found
+configureCacheIndices: Changed from client-defined buckets to default cacheIndex.
+BouncyBarsAsset: unable to decode mica asset %{public}s
+Dismantle mtkView: %{private}s
+[Context: %{public}s] Updating AnimatingContentView
+[Context: %{public}s] AnimatingContentView set hosting view frame to %{public}s
+ViewModel.isPlaying was changed from %{bool}d to %{bool}d
+Snapshot retry attempt: %ld, layer %@
+MediaTimelineControl.Coordinator: ignoring value %f (min=%f, max=%f) since scrub state is idle
+ScrubberInteractionViewModel interval measurement mode %{public}s
+NowPlayingInstallation: showFullWindowPlayer. animated: %{bool}d
+finished loading texture CGImage %s using MTKTextureLoader
+[NowPlayingView] changed player style: %{public}s
+Will present fullscreen with presentation style %{public}s
+WaveformDataController: re-subscribing to live values with new dataKind
+WaveformAudioSampler init: appIsInBackground:%{bool}d, allowsBackgroundLiveSampling:%{bool}d
+Ignoring seek request while user is actively scrubbing
+NowPlayingInstallation: hideFullWindowPlayer. animated: %{bool}d
+Could not encode rotating artwork, missing required value
+Dismantling MPCVideoOutput.playerViewController wrapper: %{public}@. No player view controller found.
+Mini player requested to show context menu preview for touch at %{public}s. Will expand = %{bool}d based on excluded tap areas: %{public}s.
+Client defined cache buckets (IDs and maxSizes): %s.
+ScrubberSections.scrubberWidth changed from %{public}s to %{public}s
+%{public}s: %{public}s CAPackageView selected state changed from %{public}s to %{public}s
+Scrubber trailing accessory tapped
+NowPlayingViewController detected collapse ended
+Unable to suppress AX window-level inversion because no window was found.
+Unable to suppress AX window-level inversion because window does not respond to suppression selector.
+NowPlayingViewModel.Presentation set primaryActionHandler to nil=%{bool}d.
+Failed to encode snapshot as JPEG
+TrackSections playhead position moved into invalid section index %ld for sections count %ld.
+ScrubberViewModel.showSpinner changed to %{bool}d
+ScrubberViewModel showing section delimiters for %{public}s seconds requested by proxy %{public}s
+Nil current drawable
+TimeControlView received changed interaction state, updating scrubber via proxy %{public}s
+[Context: %{public}s] Marquee did appear as MarqueeingContent
+HostedContentSession client set controls hidden to %{bool}d
+Redrawing incompatible image: %s
+Running MotionCache.configureCacheIndices.
+MediaTimelineControl.Coordinator: finished decelerating
+ScrubberInteractionViewModel showing section delimiters for %f seconds with %f secs delay.
+Set MPCVideoOutput.videoEnabled = %{bool,public}d. %{public}s. Reason: %{public}s.
+Motion cache is disabled.
+No layer context
+ScrubberSections.visibleSections changed from %s to %{public}s
+ScrubberInteractionViewModel.hasPausedMidScrub changed from %{bool}d to %{bool}d
+TimeControlView disabling interval measurement mode because transport button released
+No texture provider
+Telemetry identifier for power log is not available. Reporting is not possible.
+Requested volume change to %f, current volume = %f (diff=%f)
+SingleOverlayEffect: `topMaskLocation` is greater or equal than `bottomMaskLocation`. topBlurHeight: %s, bottomBlurHeight: %s, viewHeight %s.\"
+NowPlayingViewModel.Presentation setting isEnabled to %{bool}d.
+BouncyBarsAsset: asset does not have expected layers/animations
+WaveformAudioSampler received UIApplication.didEnterBackgroundNotification
+Completing transition from full screen video
+Scrubber.Markers: Clearing significant position after timeout: %f
+WaveformDataController subscribed to live audio tap
+TransportControls.isHidden changed from %{bool}d to %{bool}d.
+ScrubberViewModel.isInteractionEnabled changed to %{bool}d
+Skipped frame because gaussian blur wasn't ready
+NowPlayingHostedContentSession active sessions changed to %{public}s
+TimeControlView finished scrubbing with time: %f
+Ignoring willEnterForegroundNotification. notification: %{public}s. currentWindowScene: %{public}@
+No window scene available
+Updating mini player position: %{public}s. animated: %{bool,public}d
+Error loading texture: %s
+Couldn't build LUT texture
+Starting transition to full screen video
+[BackgroundArtwork] cancelling in-progress snapshot task
+Volume controller became available after a cold slider creation
+AudioTapQueueProcessor deinitialized, will destroy audio tap setup
+NowPlayingInstallation: showMiniPlayer. animated: %{bool}d
+Player transitioned to %{public}s
+Skipping video enablement call as enablement state didn't change
+Unhandled case for %s: falling back to .center
+%{public}s selectedPlaybackSpeed changed to %f.
+%{public}s%{public}s
+Unpausing backdrop after %{public}s
+NowPlayingViewController triggering collapse
+Scrubber.Markers: Scrubber visible, cancelling significant position timeout.
+Setting a new state: %{public}s for package: %{public}s
+ArtworkTreatment [%{public}s] failed to update treatment: image has invalid size %s
+Clearing selected content (%{public}s) upon switch away from regular extended, as user didn't adjust content selection.
+ScrubberViewModel.availableDuration changed to %{public}s
+ScrubberViewModel notifying jumped by %f requested by proxy %{public}s
+TimeControlView displaying time control segments because player expanded
+PagedFrameProxy: currentFrameIndex changed from %ld to %ld, isShareable: %{bool}d
+ScrubberInteractionViewModel.tooltipSession changed to %{public}s
+TimeControlView received snapshot %{public}s, setting playhead to %f via ScrubberProxy %{public}s
+Pausing backdrop. reason: %{public}s
+NowPlayingViewController detected collapse began
+NowPlayingViewController continuing collapse after video exited fullscreen.
+Did tap [%{public}s]
+No active update links, cancelling frame stats timer
+Skipping texture because it was loaded from a stale image.
+Couldn't build context for reading LUT image data
+Creating folder on disk at: %s
+Freezing safe area insets. Frozen=%{bool,public}d
+Failed to create buffer, couldn't snapshot layer %@
+MediaTimelineControl.Coordinator: did end tracking
+[Context: %{public}s] AnimatingContentView layoutSubviews with frame: %{public}s
+Deferring mini player install until full window player transition completes
+WindowProperties.isFullscreen updated to %{bool}d
+%{public}s
+NowPlayingInstallation: handling didTransition(from: %{public}s to: %{public}s animated: %{bool}d
+Couldn't init MetalRenderContext, device was nil
+NowPlayingController.togglePlayback() called, old value = %{bool}d
+VideoPlayerCoordinator found pending collapse transition, exiting fullscreen if necessary.
+Did not retrieve cache indices from disk.
+Scrubber.Markers: Scrubber not visible, starting significant position timeout
+ArtworkTreatment [%{public}s] failed to update treatment: no CGImage available
+ArtworkTreatment [%{public}s] derived treatment %{public}s
+WaveformLayer canned animations skipped: asset not loaded
+Scheduling to advance to %{public}s in %{public}s
+Could not observe render server sync; probing immediately
+Updated safe area insets: %{public}s
+Content availability changing from %{public}s to %{public}s
+ScrubberInteractionViewModel.showSectionDelimiters changed to %{bool}d
+ScrubberInteractionViewModel.isTooltipPresented changed to %{bool}d
+Couldn't make treatment render encoder
+%{public}s: %{public}s CAPackageView scene phase changed to %{public}s, updating state to %{public}s
+Couldn't create default library: %{public}@
+WaveformDataController unsubscribed from custom provider
+Could not create command encoder
+%{public}s: %{public}s ViewState ignoring update to %{public}s: state already set
+%{public}s: %{public}s ViewState loaded package 
+Mini player width constraint changed to %{public}s (layout=%{public}s, regularConstraint=%{public}s, miniPlayerPosition=%{public}s)
+Could not delete an evicted cache asset from disk. %{public}s
+Built VideoEnablementContext: %{public}s. ObservableState instance: %{public}s
+configureCacheIndices: Client-defined buckets did not change.
+Client did not define cache buckets. Will use default indices with capacity = %ld.
+Expected pixel buffer for item time: %s but got none
+TrackSections playhead position moved out of section, playedSectionCount=%ld.
+Received scene notification %{public}s.
+Currently selected playback speed (%{public}f) is no longer supported. Resetting to %{public}f.
+Discarding frozen safe area insets because the window was resized (so they may\nno longer be valid). Frozen size: %{public}s. New size: %{public}s.
+Snapshot retry attempts exceeded, layer %@
+Failed to create packageURL with name:%{public}s
+%{public}s Ignoring update of %{public}s to %{public}s because the transformed value is invalid.
+Couldn't make resize render encoder
+Scrubber leading accessory tapped
+Initialized BadgeConfiguration.Display with an empty badge list; this configuration is unsupported.
+Asset requested after setup failure. Ignoring.
+TimeControl set accessory to %{public}s at position=%{public}s.
+MetalVideoTextureProvider.OutputObserver.%s: AVPlayerItemVideoOutput failed to initialize
+Postponing update of displayed content to %{public}s since a transition is in process
+MediaTimelineControl.Coordinator: received value %f (min=%f, max=%f)
+%{public}s Popover dismissed.
+NowPlayingViewController received request to collapse while video is fullscreen. Holding collapse until video exits fullscreen.
+NowPlayingViewController expanding
+Client-defined cache buckets and number of assets on disk: %s
+Error while initializing cache. Further calls to MotionCache will be ignored. %{public}s
+WaveformDataController unsubscribed from live audio tap
+[%{public}s] %{public}s button sending trailing transport action: .%{public}s.
+Couldn't create CVMetalTextureCache: %d
+Not hiding mini player notice, timeout cancelled: %{public}s
+Video texture generation rate: %{public}s%%, %ld providers, running display links: %ld
+Updated scenePhase to %{public}s.
+Skipping frame, draw was called without necessary textures, textureProvider=%{public}s
+Incorrect dimension for LUT image. Provided: %ldx%ld. Expected: %ldx(%ldx%ld)
+ArtworkTreatment [%{public}s] failed to update treatment: calculated impossible luminance of %f
+Error creating metal view: %{public}@
+Hiding mini player notice: %{public}s. animated: %{bool}d
+Dismissing toast with id=%s
+ScrubberInteractionViewModel.isMarqueeAnimating changed from %{bool}d to %{bool}d
+NowPlayingInstallation: handling willTransition(from: %{public}s to: %{public}s animated: %{bool}d
+Showing mini player notice: %{public}s. animated: %{bool}d
+%s
+CARenderServerSnapshot failed to create snapshot for layer %@
+configureCacheIndices: Changed from default cacheIndex to client-defined indices.
+[BackgroundArtwork] updating new snapshot image (%@) for inputs:\n%s
+%{public}s %{public}s initialized to %{public}s.
+%{public}s Performing cycle action.
+Failed to create render pipeline state (%s, privacy: .public). error=%{public}@
+ArtworkTreatment [%{public}s] encountered unhandled error: %{public}s
+Dismissing popover because window geometry changed.
+Completing transition to full screen video
+Error piping waveform data to view. %{public}s
+WaveformAudioSampler received UIApplication.willEnterForegroundNotification
+VolumeControl.volume set to %f
+Deleting cached asset at %s. Reason: %s.
+Failed to create image for layer %@
+Got transparent background snapshot for layer %@
+ScrubberReader proxy %{public}s seeking to time %f, animated: %{bool}d
+BouncyBarsAsset: animation values have unexpected type
+NowPlayingInstallation: deinit. hiding full window player as it's currently shown.
+NowPlayingVideoPlayerDelegate fullscreen video changed to %{bool,public}d
+configureCacheIndices: Updated default cacheIndex size to %ld.
+AudioTapQueueProcessor initialization failed: %@
+WaveformAudioSampler received mediaServicesWereResetNotification
+Dismissing selected content because artwork was tapped
+[%{public}s] %{public}s button sending leading transport action: .%{public}s.
+Pipeline states weren't ready - resize: %{public}s, treatment: %{public}s
+LUT image data not available
+Not showing video asset. Expected aspect ratio: %f. Current aspect ratio: %s, current frame rate: %s
+Not hiding mini player notice as no notice is shown.
+WaveformDataController updateDataKind: %s → %s
+MetalImageTextureProvider failed to load texture: %{public}@
+%{public}s: %{public}s ViewState updating stateController to %{public}s
+Video output presentationSize changed to %{public}s. Video output: %{public}s.
+Not uninstalling mini player as it is not currently installed
+No window scene, couldn't snapshot layer %@
+ScrubberReader proxy %{public}s notifying jumped by interval %f
+AudioTapCallbackWrapper's wrappedCallback object is nil. Did not forward the call to callback wrapper
+MPCVideoOutput value does not conform to NSObject. External playback observation will fail. %{public}s.
+Retrieved cache indices from disk.
+Advancing %{public}s
+Snapshot content still changing at the settle budget
+AudioTapQueueProcessor initialized, will enqueue buffer
+Deriving ArtworkTreatment from image %{public}s
+Dismissing selected content because video thumbnail was tapped
+Did begin long press [%{public}s]
+WaveformAudioSampler created sampling task
+ScrubberViewModel.playbackRate changed from %f to %f
+isMotionEnabled was initialized to %{bool}d by default. attributesDescription=(%{public}s)
+TimeControlView began scrubbing with time: %f
+AudioTapSetup FFT info: dt=%{public}f, df=%{public}f
+TimeControlView displaying track sections because transport button tapped
+NowPlayingInstallation: deinit. Uninstalling NowPlayingViewController from its parent
+[Context: %{public}s] Creating AnimatingContentView
+WaveformLayer pulse loop started
+Video aspectRatio %{public}s: %{public}s. videoOutput: %{public}s.
+NowPlayingViewController received request to collapse without a hosting view controller. Ignoring.
+AudioTapSetup initialized for pid: %{public}ld, framing: %{public}s
+Client defined default cache bucket: %s.
+Updated mini player horizontal size class: %{public}s
+Unpausing backdrop
+Snapshot failed: %{public}@, layer %@
+```

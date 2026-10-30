@@ -1,0 +1,309 @@
+# `Firmware/WirelessPower/WirelessPower.v68.im4p`
+
+- File size: 360,903 bytes
+- IM4P: Tag: IM4P  Type: wchf  Version: 1.0
+- BuildManifest components that use it: `WCHFirmwareUpdater`
+
+## IM4P header [FW]
+
+```
+IM4P (Payload):
+  Tag:          IM4P
+  Type:         wchf
+  Version:      1.0
+  Data:         361 kB (360876 bytes)
+```
+
+## Payload [FW]
+
+- Size after IM4P unwrap / decompression: 360,876 bytes
+- Format: raw binary
+
+## Identity strings (versions, build tags) [FW]
+
+- `0123456789abcdef0123456789ABCDEFRTKit_armv7em_Oz_floatabihard-3514.40.18.release`
+- `AppleWirelessPower-756.52.1~3`
+- `RTKSTACKRTKit_armv7em_Oz_floatabihard-3514.40.18.release`
+- `RTKit: %s - Client: %s`
+
+## Strings (275) [FW]
+
+Printable runs of 6+ characters with at least three letters, in file order, with payload offset. For RTKit co-processor firmware these are the log formats, task names, endpoint names and assertions that describe what the processor does.
+
+```
+00000020  rkosftab
+00000464  (FQF"F
+00000c7a  @F)FZF
+00000c88   F1FJF
+00000c98   F1FZF
+00001ad6  4IHqpG1H
+00001aee  .IHppG+H
+00001afa  +IHrpG+H
+00001b2d  IHtpG@x
+00002c76  XDqAPD
+000033c5   "hch@
+0000478e  :0"FLF
+00005a37  }IhHCO
+000069de  zqHCpI
+000079af  cpd0d%Mh
+00007ab0  cbd#ZCA
+00007ad8  fFBD5D
+000083e0  7L jaj
+00008b79  mQmP00cA
+0000a02b  cta4a0gA
+0000a2cb  apb0bPf
+0000a2f7  bpg0gpf0fpc0c
+0000a474  a` ` hah
+0000a4a3  %0hqh3hth
+0000a4c6  0h-Jqh
+0000b584  IFRFPD
+0000b70a  nHnLoI!P
+0000baf2    )F2FCF
+0000e088  ?HnJP!
+0000e0ac  6HiJj!
+0000e0b6  4HgJL!
+0000e0d0  -HdJQ!
+0000ec29  hLl<+Px
+0000ee21  B4j2arj$
+0000f67e  YHYKZNF
+00010a93  N)FtwDa
+0001211e  ~PmF&c&d
+000128eb  a&IIz&J
+00013391  -X**'FHO
+00013a77  !FJR\FKY\
+00013bcb  #AnBn@n
+0001444e  BX"CBP
+00014cdd  @K|IiB
+000159db  HF"Ahb
+000165d2  XFQFJF
+00017f43  G*jkjP
+000181a0   kbkalAE
+00018305    aHCe`
+000184c4  JhH`B`
+0001862c  TACKRTKS
+00018b4c  hfpGkh
+00018c3d  nin20(f
+0001905d  #JhK`Q
+000190f7  u hah"}
+00019109    `HhL```
+00019154  0hqhZF
+0001966e  AppleWirelessPower-756.52.1~3
+00019a70  RTKSTACK
+00019c70  0123456789abcdef0123456789ABCDEFRTKit_armv7em_Oz_floatabihard-3514.40.18.release
+00019df4  stk_fail
+00019e02  adc_driver.c
+00019e0f  NULL != results_ptr
+00019e23  ASSERTION FAILED
+00019e3a  ASSERTION FAILED: 
+00019e4d   %llx, %llx
+00019e5a  CSP_ASKD
+00019e63  CSP_ASKM
+00019e6c  CSP_DMA
+00019e74  CSP_FADC
+00019e7d  CSP_FSKD
+00019e86  CSP_GPIO
+00019e8f  CSP_HKADC
+00019e99  CSP_HKADC_CMP
+00019ea7  CSP_ILOAD
+00019eb1  CSP_INT
+00019eb9  RTK_device_methods.h
+00019ed7  CSP_ISNS
+00019ee0  CSP_LFOD
+00019ee9  CSP_MVR
+00019ef1  CSP_OTP
+00019ef9  CSP_PCAL
+00019f02  CSP_RECT
+00019f0b  CSP_SPMI
+00019f14  CSP_SYS
+00019f1c  CSP_TMR
+00019f24  ASSERTION FAILED: line %d, module %s
+00019f4e  RTKit: %s - Client: %s
+00019f65  ASSERTION FAILED: %s:%d
+00019f82  <null>
+00019f8c  !Mthd:%p
+00019f95  ThIntr:%u,%u,%u,%u
+00019fa8  ThStovfl:%u
+00019fb4  ThLock:%p
+00019fbe  !Heapblk:%p
+0001a219  not set
+0001a7ac  (FQF"F
+0001b0e2  @F)FZF
+0001b0f0   F1FJF
+0001b100   F1FZF
+0001c97d  }IhHCO
+0001d240  lHmIPD
+0001d57e  ZIJhP@
+0001f44c  `M(jij
+00021491  "eFCh%
+0002238f   "kck@
+000225f5  iIiH@@
+00022a26  &t(kik
+00022c22    )F2FKF
+00023dc9  cic*b!
+000250e0  DHmJj!
+000250ea  BHkJL!
+00025108  :HgJe!
+00025112  8HeJQ!
+00025422   Fad!d@!
+0002568c  PFIIx(
+00025d69  hLl<+Px
+0002660e  cMnjhj
+00027579  0Jr0rIF 
+00028280  ~PmF&c&d
+000295b6   nbnA!
+0002b79e   FIFBF
+0002bd2c  lJoKlN$g
+0002bd4d  Zfgcdfe
+0002bdec  8NBI6J
+0002cf4d  -X**'FHO
+0002dfe1  DBhIy"
+0002e59a  BX"CBP
+0002f1c3  `HppGo
+00030791  HF"Ahb
+00031c56  XFQFJF
+0003363b  G*jkjP
+00033898   kbkalAE
+000339fd    aHCe`
+00033bb8  JhH`B`
+00033d20  TACKRTKS
+00034803  u hah"}
+00034815    `HhL```
+00034860  0hqhZF
+00034f8a  AppleWirelessPower-756.52.1~3
+00035790  RTKSTACK
+00035a40  0123456789abcdef0123456789ABCDEFRTKit_armv7em_Oz_floatabihard-3514.40.18.release
+00035fac  +F%FDF2F
+000364c3  .BFKFQF@
+00036592  4F*NKFBF
+0003666c  4FBFKF
+000369df  %4FBFKF
+00036e9f  %)NBFKF
+00037244  3FaN*F
+000378f6   a#FJF
+0003790c  !a#FJF
+00038320  stk_fail
+0003832e  adc_driver.c
+0003833b  NULL != results_ptr
+0003834f  ASSERTION FAILED
+00038366  ASSERTION FAILED: 
+00038379   %llx, %llx
+00038386  CSP_ASKD
+0003838f  CSP_ASKM
+00038398  CSP_BOOST
+000383a2  CSP_DMA
+000383aa  CSP_FADC
+000383b3  CSP_FSKM
+000383bc  CSP_PWRAC
+000383c6  CSP_FSKD
+000383cf  CSP_GPIO
+000383d8  CSP_HKADC
+000383e2  CSP_HKADC_CMP
+000383f0  CSP_ILOAD
+000383fa  CSP_INT
+00038402  RTK_device_methods.h
+00038420  CSP_ISNS
+00038429  CSP_LFOD
+00038432  CSP_MVR
+0003843a  CSP_OTP
+00038442  CSP_PCAL
+0003844b  CSP_PWM
+00038453  CSP_RECT
+0003845c  CSP_SPMI
+00038465  CSP_SYS
+0003846d  CSP_TMR
+00038475  ASSERTION FAILED: line %d, module %s
+0003849f  RTKit: %s - Client: %s
+000384b6  ASSERTION FAILED: %s:%d
+000384d3  <null>
+000384dd  !Mthd:%p
+000384e6  ThIntr:%u,%u,%u,%u
+000384f9  ThStovfl:%u
+00038505  ThLock:%p
+0003850f  !Heapblk:%p
+000389d9  not set
+00039058  AppleWirelessPower-756.52.1~3
+00039080  RTKSTACKRTKit_armv7em_Oz_floatabihard-3514.40.18.release
+0003910e  stk_fail
+00039124  not set
+00039880  (FQF"F
+0003a1ae  @F)FZF
+0003a1bc   F1FJF
+0003a1cc   F1FZF
+0003b6c5  /Z,,'GHO
+0003b86a  oFAJSj
+0003bd28  JhH`B`
+0003be8c  TACKRTKS
+0003bf49  !SFq`F
+0003c15e   aHCe`
+0003ca63  gsg4gP`
+0003d606  9L"lcl
+0003dd72  xIxJQX
+0003e9dd  cht(k@
+0003efc2  LILJQX
+00041bf6  PbpHPd
+00041cae  KHKIPD
+00041d33   !J&N"LXP*IQ`
+00043427  `HppGo
+0004542a  "jaj@ 
+000455aa   lalq@h@
+000459d6  0FAF"F
+00046a1c  ASHDpo
+00047e5b  @09eeee
+0004801a  HpANBH
+000480e4   FIFBF
+00048c16  KFUHVI
+0004a309  `(hih*}
+0004a317   (`HhM`h`
+0004a362  0hqhZF
+0004b818  HFZFSF
+0004bf5c  HFZFSF
+0004c090  HFZFSF
+0004c338  HFZFSF
+0004ce1f  +(knN_p
+00050070  5L6MNF
+000503ce  lIl"HF
+00052415  H "AhA
+000542d0  AIl" F
+00055442  W`HHHC]
+00055d07  0(knNO
+00056454  __TEXT
+000564bc  RTKSTACKRTKit_armv7em_Oz_floatabihard-3514.40.18.release
+00056e37  $EFGH 
+000572c4  HIDWirelessPower_Barista-33~2689
+00057520  stk_fail
+00057536  ADC_CAL
+0005753e  CMP_MOD
+0005754b  POLYCAL
+0005756a  CSP_ASKD
+00057573  CSP_BOOST
+0005757d  CSP_DMA
+00057585  CSP_FADC
+0005758e  CSP_FSKM
+00057597  CSP_GPIO
+000575a0  CSP_HKADC
+000575aa  CSP_HKADC_CMP
+000575b8  CSP_INT
+000575c0  CSP_ISNS
+000575c9  CSP_LFOD
+000575d2  CSP_MVR
+000575da  CSP_PCAL
+000575e3  CSP_PWM
+000575eb  CSP_PWRAC
+000575f5  CSP_RECT
+000575fe  CSP_SPI
+00057606  CSP_SPMI
+0005760f  CSP_SYS
+00057617  CSP_TMR
+0005761f  CSP_UART
+00057628  CSP_WDG
+00057649  HANDOFF
+00057656  LFOD_ACR
+0005765f  LFOD_FACTORY
+0005766c  LFOD_SIG
+00057679  NCN_PRIV
+00057686  NPG_PV
+000576a0  RTK_device_methods.h
+000576e0  not set
+00058164  __TEXT
+00058184  __DATA
+```

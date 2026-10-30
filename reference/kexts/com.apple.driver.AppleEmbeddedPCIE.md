@@ -1,0 +1,932 @@
+# `com.apple.driver.AppleEmbeddedPCIE`
+
+- Name: AppleEmbeddedPCIE
+- Version: `1`
+- UUID: `244AEFB3-5E42-3EEC-9367-C5E9C0F091AB`
+- Source version: `1042.40.10.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.ApplePIODMA`](com.apple.driver.ApplePIODMA.md) 1.0, [`com.apple.driver.IODARTFamily`](com.apple.driver.IODARTFamily.md) 1.0, [`com.apple.iokit.IOAccessoryManager`](com.apple.iokit.IOAccessoryManager.md) 1.0, [`com.apple.iokit.IOPCIFamily`](com.apple.iokit.IOPCIFamily.md) 2.7, [`com.apple.iokit.IOPortFamily`](com.apple.iokit.IOPortFamily.md) 1.0, [`com.apple.iokit.IOReportFamily`](com.apple.iokit.IOReportFamily.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (0) [KC]
+
+
+## C++ classes (8) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `APCIEPortControl` | 0x30 | AppleEmbeddedPCIEPortControlFunction → AppleARMFunction |
+| `AppleEmbeddedPCIE` | 0x228 | IOPCIHostBridge → IOPCIBridge → IOService → IORegistryEntry |
+| `AppleEmbeddedPCIEBarrier` | 0x20 |  |
+| `AppleEmbeddedPCIEPort` | 0x1e48 | IOInterruptController → IOService → IORegistryEntry |
+| `AppleEmbeddedPCIEPortControlFunction` | 0x28 | AppleARMFunction |
+| `AppleEmbeddedPCIEUserClient` | 0xe0 | IOUserClient → IOService → IORegistryEntry |
+| `ApplePCIEHostBridge` | 0x168 | IOPCI2PCIBridge → IOPCIBridge → IOService → IORegistryEntry |
+| `ApplePCIEMSIController` | 0xe0 | IOPCIMessagedInterruptController → IOInterruptController → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0000ade8 off=0x0044f310-0x0045a0f8 addr=0xfffffe0007453310-0xfffffe000745e0f8 r--/r--   __TEXT            
+	sz=0x00007277 off=0x0044fa28-0x00456c9f addr=0xfffffe0007453a28-0xfffffe000745ac9f               __TEXT.__cstring          (CstringLiterals)
+	sz=0x000032dd off=0x00456c9f-0x00459f7c addr=0xfffffe000745ac9f-0xfffffe000745df7c               __TEXT.__os_log           
+	sz=0x00000178 off=0x00459f80-0x0045a0f8 addr=0xfffffe000745df80-0xfffffe000745e0f8               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x0003458c off=0x01c435a0-0x01c77b2c addr=0xfffffe0008c475a0-0xfffffe0008c7bb2c r-x/r-x   __TEXT_EXEC       
+	sz=0x00033c5c off=0x01c435a0-0x01c771fc addr=0xfffffe0008c475a0-0xfffffe0008c7b1fc          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000930 off=0x01c771fc-0x01c77b2c addr=0xfffffe0008c7b1fc-0xfffffe0008c7bb2c          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00000568 off=0x0493f3f0-0x0493f958 addr=0xfffffe000b9433f0-0xfffffe000b943958 rw-/rw-   __DATA            
+	sz=0x000003d8 off=0x0493f3f0-0x0493f7c8 addr=0xfffffe000b9433f0-0xfffffe000b9437c8               __DATA.__data             
+	sz=0x00000188 off=0x00000000-0x00000188 addr=0xfffffe000b9437c8-0xfffffe000b943950               __DATA.__common           (Zerofill)
+	sz=0x00000008 off=0x00000000-0x00000008 addr=0xfffffe000b943950-0xfffffe000b943958               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x000037a0 off=0x01083530-0x01086cd0 addr=0xfffffe0008087530-0xfffffe000808acd0 rw-/rw-   __DATA_CONST      
+	sz=0x00000040 off=0x01083530-0x01083570 addr=0xfffffe0008087530-0xfffffe0008087570         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000040 off=0x01083570-0x010835b0 addr=0xfffffe0008087570-0xfffffe00080875b0         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00002cb8 off=0x010835b0-0x01086268 addr=0xfffffe00080875b0-0xfffffe000808a268         __DATA_CONST.__const            
+	sz=0x00000300 off=0x01086268-0x01086568 addr=0xfffffe000808a268-0xfffffe000808a568         __DATA_CONST.__kalloc_type      
+	sz=0x00000140 off=0x01086568-0x010866a8 addr=0xfffffe000808a568-0xfffffe000808a6a8         __DATA_CONST.__kalloc_var       
+	sz=0x00000498 off=0x010866a8-0x01086b40 addr=0xfffffe000808a6a8-0xfffffe000808ab40         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000190 off=0x01086b40-0x01086cd0 addr=0xfffffe000808ab40-0xfffffe000808acd0         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 344 at 0x04ad89d0
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     244AEFB3-5E42-3EEC-9367-C5E9C0F091AB
+008: LC_SOURCE_VERSION           1042.40.10.0.0
+009: LC_FUNCTION_STARTS          offset=0x004a9f108 size=0x2e8
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleEmbeddedPCIE`
+- `CFBundleIdentifier`: `com.apple.driver.AppleEmbeddedPCIE`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleEmbeddedPCIE`
+- `CFBundleNumericVersion`: `16809984`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2014-2021 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.0`
+- `OSBundleRequired`: `Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleEmbeddedPCIE.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198901279984`
+- `_PrelinkExecutableRelativePath`: `AppleEmbeddedPCIE`
+- `_PrelinkExecutableSize`: `274556`
+- `_PrelinkExecutableSourceAddr`: `-2198901279984`
+- `_PrelinkKmodInfo`: `-2198828993552`
+
+## Strings (811) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `_dartLock != nullptr`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s disabling with flags 0x%08x\n`
+- `_captureLinkSpeedDebugTracer`
+- `init`
+- `_portCount >= 0 && _portCount <= (sizeof(_ports) / sizeof(_ports[0]))`
+- `Port %u AER EP Unc Completer Abort         `
+- `entered`
+- `exitDeepSleep`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s %s %d tunable: offset/mask/value=0x%08x/0x%08x/0x%08x, 0x%08x -> 0x%08x\n`
+- `DETECT_QUIET`
+- `LPBK_ACTIVE`
+- `allocateInterruptVectors`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s output buffer must be %ld bytes long (recvd %d)\n`
+- `void AppleEmbeddedPCIE::_buildPortProperties(IOService *)`
+- `function-dart_self`
+- `apcie-piodma`
+- `handleLinkTrainingTimer`
+- `virtual void AppleEmbeddedPCIEPort::_applyTunablesFromData(const OSData *, regRead_t, regWrite_t, const char *)`
+- `CFG_COMPLETE`
+- `AppleEmbeddedPCIE[%u]::start this = %p, _debugFlags = 0x%x\n`
+- `Link States`
+- `Link Events`
+- `apcie-piodma-disable`
+- `virtual bool AppleEmbeddedPCIE::start(IOService *)`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s Terminating port's link partner nub\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %02x:%02x:%02x[%04x] (0x%llx/0x%llx) -> 0x%08x%s\n`
+- `Port %u AER RC Cor Corrected Internal Error`
+- `virtual void ApplePCIEMSIController::deallocateInterrupt(UInt32)`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %p has no APCIe port property\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %02x:%02x:%02x[%04x] (0x%llx/0x%llx) -> 0x%04x%s\n`
+- `Port %u AER RC Cor REPLAY_NUM Rollover     `
+- ` and waiting`
+- `mapper-protection-granularity`
+- `getLinkSpeedDebugTracer`
+- `POLL_ACTIVE`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s probe\n\n`
+- `Port %u AER RC Unc Poisoned TLP            `
+- `Port %u AER RC Unc ECRC Error              `
+- `vectors[idx].interruptLock != nullptr`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s EP PERST = %d\n`
+- `1212`
+- `\"apcie[%u:%s] Refclk gating should only be enabled when the link is active (state: %u)\\n\" @%s:%d`
+- `threadData->lock`
+- `_aerEventSource != nullptr`
+- `\"apcie[%d:%s] %s for device %p failed: 0x%08x\" @%s:%d`
+- `\"apcie[%u:%s] Attempt to %s port while in deep sleep\" @%s:%d`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s %s: failed to set hot-plug property %p in property table %p\n`
+- `IOUserClientClass`
+- `tunable->size == sizeof(uint32_t)`
+- `Port %u AER EP Unc Poisoned TLP            `
+- `pcie-rc-gen4-shadow-tunables`
+- `_piodma != nullptr`
+- `size >= numVectors`
+- `configWrite8`
+- `_dartForceActiveFunction != nullptr`
+- `_dartReleaseSIDFunction != nullptr`
+- `vm-force`
+- `waitForLinkUpGated`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s timeout waiting for PME_To_ACK, continuing: pmeto=0x%x\n`
+- `callPlatformFunction`
+- `Port %u Disable Complete                `
+- `Port %u Deep Sleep Exit                 `
+- `disable-perst-to-config`
+- `no-refclk-gating`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Reached max allowed timeouts\n`
+- `AppleEmbeddedPCIE::configure: No ranges defined\n`
+- `configWrite32`
+- `\"apcie[%d:%s] %s trying to enable the port that is already enabled (_state = %d)\" @%s:%d`
+- `\"apcie[%u:%s] unexpected deep sleep exit notification in state %d\" @%s:%d`
+- `DETECT_WAIT`
+- `CFG_LANENUM_WAIT`
+- `RCVRY_LOCK`
+- `apcie-common-tunables`
+- `_applyTunablesFromData`
+- `succeeded`
+- `IOReportLegendPublic`
+- `Port %u AER EP Unc Uncorrected Internal Err`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s found DART %p with %u SIDs\n`
+- `!(flags & ridMappingFlag_StaticDevice)`
+- `exited`
+- `configRead32`
+- `device-protection-granularity`
+- `phandleDictionary != nullptr`
+- `\"apcie[%d:%s] failed to train link to desired speed: expected %d actual %d\" @%s:%d`
+- `corr-err-period-us`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s config: 0x%llx = 0x%x\n`
+- `HOT_RESET_ENTRY`
+- `AppleEmbeddedPCIEPortControlPrivate.cpp`
+- `AppleEmbeddedPCIE`
+- `#ports`
+- `Port %u AER RC Unc Atomic OP Egress Blocked`
+- `site.AppleEmbeddedPCIEBarrier`
+- `thing%d`
+- `apcie-config-tunables`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s GetMessagedInterruptAddress for %s, vector %d\n`
+- `l2-entry-timeout`
+- `msi-vector-base`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Link Speed Debug Tracer not supported\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s failed to find %s device for RID 0:%d:%d\n`
+- `\"%s Invalid disable flags 0x%x\" @%s:%d`
+- `void AppleEmbeddedPCIEPort::disableGatedWrapper(uint32_t *)`
+- `1`
+- `site.AppleEmbeddedPCIEPortControlFunction`
+- `\"Invalid timeout config offs (0x%x, 0x%x)\\n\" @%s:%d`
+- `disableGated`
+- `LPBK_ENTRY`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s [%s()] RX payload counter saturated; use a smaller measurement interval.\n`
+- `manual-enable-defer-scan`
+- `enable-missing-endpoint-port`
+- `_lbmnTimerEventSource != nullptr`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Releasing dummy sid %d for Marvel WA allocated.\n`
+- `vendor-id`
+- `_writeCommonReg`
+- `Port %u AER EP Cor REPLAY_NUM Rollover     `
+- `function-device_wake`
+- `pcie-rc-gen5-shadow-tunables`
+- `(_ridMapping[sid].rid.id == 0) && (_ridMapping[sid].useCount == 0) && (_ridMapping[sid].flags == 0) && (_ridMapping[sid].device == nullptr)`
+- `ApplePCIEHostBridge`
+- `fuses`
+- `Port %u Suspend LTSSM Off               `
+- `virtual uint32_t AppleEmbeddedPCIEPort::_findSIDForRID(rid_t, IOPCIDevice *)`
+- `_ridMapping[_ridMapping[sid].marvelWA_sid].flags & ridMappingFlag_MarvelWA_UsedAsDummy`
+- `completion timeout`
+- `CFG_IDLE`
+- `L2_WAKE`
+- `failed`
+- `ignore-mem-io-timeout`
+- `AppleEmbeddedPCIEPort *AppleEmbeddedPCIE::getPort(uint32_t) const`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s GTB-to-PTM circuitry not supported on this platform\n`
+- `apcie-plce-sid`
+- `_dtMaxLinkSpeed == 0 || speed <= _dtMaxLinkSpeed`
+- `_dart != nullptr`
+- `resolvePCIInterrupt`
+- `\"Disabling PHY power gating not supported\" @%s:%d`
+- `vectors != nullptr`
+- `IOPCIDevice *AppleEmbeddedPCIEPort::_findDeviceForRID(rid_t)`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to set kIODARTVMForceKey in mapperDict\n`
+- `AER interrupt`
+- `POLL_COMPLIANCE`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s numVectors=%u, firstVector=%u, parentController=%p\n`
+- `early-end-point-perst-ctrl`
+- `reenable-gtb-to-ptm`
+- `_applyTunablesFromDataWithIndex`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s Attempted unaligned 4B read from %02x:%02x:%02x[%04x], returning all Fs\n`
+- `121111121222121211111121111221111111111111111111111112122222222111211222221111111222222222222222222222222222222222212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212212`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Device %s is a device with known RID/FN issue, applying WA.\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s device deep sleep notification ignored: link down\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s resetting probe timeout\n\n`
+- `pioDmaMatchingDictionary != nullptr`
+- `virtual void AppleEmbeddedPCIEPort::_findDART()`
+- `virtual IOReturn AppleEmbeddedPCIEPort::_mapRIDToSID(IOPCIDevice *)`
+- `void AppleEmbeddedPCIEPort::unlockStateLock()`
+- `writeConfigReg`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s [%s()] RX payload counter saturated; use a smaller measurement interval.\n`
+- `\"disable-after-boot-scan is only valid for manual-enable ports\" @%s:%d`
+- `Port %u Unexpected Link Down            `
+- `\"apcie[%u:%s]: unexpected port state %u\" @%s:%d`
+- `_resetLinkSpeedDebugTracer`
+- `#msi-vectors`
+- `site.mmioDelayRange_t`
+- `apcie-piodma-sid`
+- `1211111212221212111122121221`
+- `pcie-rc-tunables`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s _subordinateBus = %u\n`
+- `_resumePorts`
+- `_linkTrainingTimerEventSource != nullptr`
+- `setState`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s trying to enable the port that is already enabled (_state = %d)\n`
+- `\"PCIe config space access to %02x:%02x:%x while port %d device is in deep sleep\" @%s:%d`
+- `function-dart_release_sid`
+- `(_ridMapping[_ridMapping[sid].marvelWA_sid].rid.id == 0) && (_ridMapping[_ridMapping[sid].marvelWA_sid].sid == 0)`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s unable to destroy mapper %p for device %p RID=0x%04x(%d:%d:%d) DART %p SID %d\n`
+- `RCVRY_SPEED`
+- `msi-parent-controller`
+- `((_deviceProtectionGranularity->getLength() / sizeof(uint32_t)) % 2) == 0`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Manually enabling the port during power transitions is not allowed\n`
+- `(sid != 0) && (useCount > 0)`
+- `disable`
+- `Unexpected link down`
+- `setDeviceWake`
+- `site.APCIEPortControl`
+- `addDeviceInterruptProperties`
+- `portIndex < _portCount`
+- `armioProvider != nullptr`
+- `handleLinkUp`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s [%s()] Failed to get device memory for nub %s, skipping mmio timeout increase\n\n`
+- `virtual IOReturn AppleEmbeddedPCIE::busProbe(IOPCIDevice *, uint32_t)`
+- `(iommuParent != nullptr) && (mapper == OSDynamicCast(IOMapper, iommuParent))`
+- `useCount > _ridMapping[sid].useCount`
+- `_configMemoryMap`
+- `Port %u AER RC Cor Bad TLP                 `
+- `dbi-overrides`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s child %s attached without AppleEmbeddedPCIEPort property\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s Scanning children\n`
+- `_dartErrorHandler`
+- `L123_SEND_EIDLE`
+- `[PCIe:%u %llu ns] APCIEHostBridge[%u:%s]::%s Requested speed: Gen%d, actual speed: Gen%d\n`
+- `ApplePCIEDTHelpers.h`
+- `Port %u Fatal Error Interrupt Error     `
+- `timed out waiting for LinkUp`
+- `Port %u AER RC Unc Completer Abort         `
+- `Port %u AER RC Cor Advisory Non-Fatal Error`
+- `void AppleEmbeddedPCIEPort::waitForLinkUpGated(AbsoluteTime *, bool *)`
+- `\"PCIe MMU not supported\" @%s:%d`
+- `portData != nullptr`
+- `Read BW`
+- `Port %u AER EP Cor Bad TLP                 `
+- `disableRootPort`
+- `link down while in deep sleep`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s vectorNumber=%d, vector=%p\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s [%s()] TX payload counter saturated; use a smaller measurement interval.\n`
+- `msi-vector-offset`
+- `_clkreqWaitTime == 0 || _clkreqFunction != NULL`
+- ` _filterIntSave=0x%x`
+- `setEndpointReset`
+- `no-l1-config-access`
+- `(numTunables * sizeof(spdsTunable)) == data->getLength()`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s phy: 0x%llx = 0x%x\n`
+- `waitForPMETOAck`
+- `virtual void AppleEmbeddedPCIEPort::setNub(IOPCIDevice *)`
+- `MSIFree`
+- `AppleEmbeddedPCIE.cpp`
+- `i < getPortCount()`
+- `\"unsupported\" @%s:%d`
+- `powerStateWillChangeTo_block_invoke`
+- `resetEndpoint`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %s tunables being applied\n`
+- `enableGated`
+- `_findDART`
+- `*`
+- `ApplePCIEMSIController`
+- `virtual bool ApplePCIEMSIController::allocateInterruptVectors(IOService *, uint32_t, IORangeScalar *)`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s auto-enabling port %u\n`
+- `Port %u AER EP Unc Unexpected Completion   `
+- `_captureLinkRcvryDebugHist`
+- `vector < _numVectors`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s state %d\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Device %s will use dummy SID %d.\n`
+- `Port %u AER EP Unc Data Link Protocol Error`
+- `Port %u AER EP Unc ECRC Error              `
+- `_configRegistersMemoryMap != nullptr`
+- `handleRootTimeout`
+- `APCIEPortControl`
+- `Port %u PMETO Timeout                   `
+- `L0`
+- `registerInterrupt`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s resumed port %u\n`
+- `configRead8`
+- `baseband-pcie`
+- `extMeasureBW`
+- `Port %u AER EP Unc Unsupported Request     `
+- `built-in`
+- `virtual IOReturn AppleEmbeddedPCIEPort::_unmapRIDFromSID(IOPCIDevice *)`
+- ` addr=0x%016llx`
+- `unknown`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %02x:%02x:%02x[%04x] (0x%llx/0x%llx) <- 0x%02x%s\n`
+- `_enableGTBToPTM`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s device %p DART %p RID 0x%04x(%d:%d:%d)\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to release DART %p SID %d for device %p RID=0x%04x(%d:%d:%d)\n`
+- `Completion error interrupt`
+- `AppleEmbeddedPCIEBarrier`
+- `msi-reservation-size`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %s tunable: offset/mask/value=0x%08x/0x%08x/0x%08x, 0x%08x -> 0x%08x\n`
+- `cfg-io-timeout`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s no PIODMA engine associated with this port\n`
+- `IOPCIDevice`
+- `setDeviceInterrupt`
+- `keep-root-port-on`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s reporter %s (%p) type %d, status 0x%x header {%08x %08x %08x %08x}\n`
+- `ltssm-timeout`
+- `Port %u Deep Sleep Entry                `
+- `device-id`
+- `initVector`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s %s: failed to initialize IOPCIDevice\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s _secondaryBus = %u\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s Adding range %016llx len %016llx\n`
+- `mapper-apcie-%d-%d-%d`
+- `111112`
+- `pcie-rc-gen3-shadow-tunables`
+- ` manual enable`
+- `_createReporters()`
+- `void AppleEmbeddedPCIE::_handleAEREvent(IOPCIEventSource *, const IOPCIEvent *)`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s Attempted unaligned 4B write to %02x:%02x:%02x[%04x]\n`
+- `Port %u Link Up                         `
+- `Port %u AER EP Unc TLP Prefix Blocked Error`
+- `pci-deferred-registration`
+- `apcie[%u:%s]::%s() %s caused by %s address 0x%llx by SID %u (RID %u:%u:%u/useCount %u/device %p)\n`
+- `destroyMapper`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s Simulated %splug for %s: 0x%08x\n`
+- `121111121222121211111212122222211222112211111112112221111111221122122`
+- `no-phy-power-gating`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Device %s is PI7C9X442SL USB OHCI controller, which will be pinned to shared SID 0\n`
+- `apcie%d+`
+- `\"IOPCIProxyMessagedInterruptController::handleInterrupt should not be called\" @%s:%d`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s %s: failed to create IOPCIDevice name object\n`
+- `iommu-parent`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %02x:%02x:%02x[%04x] (0x%llx/0x%llx) <- 0x%08x%s\n`
+- `21121111`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s device exited deep sleep: link down\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Link Recovery Debug Tracer not supported\n`
+- `virtual uint32_t AppleEmbeddedPCIEPort::_numTxNPRequests()`
+- `ApplePCIEMSIController.cpp`
+- `Port %u Disable LTSSM Off               `
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Added port \"%s\", registers %p%s\n`
+- `prop != nullptr`
+- `Energy Model`
+- `Completion timeout count`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Skipping elided %s %d tunable: offset/mask/value=0x%08x/0x%08x/0x%08x\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s [%s()] TX payload counter saturated; use a smaller measurement interval.\n`
+- `site.ApplePCIEHostBridge`
+- `AppleEmbeddedPCIEUserClient.cpp`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s _configBaseAddress = %p _configBaseAddressPhys = %p\n`
+- `PCIe Port %u %s`
+- `maximum-link-speed`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s %s[%d:%d:%d] : vector %d.\n`
+- `DISABLED_ENTRY`
+- `site.AppleEmbeddedPCIEUserClient`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s Invalid error injection type %llu\n`
+- `\"Invalid timeout mem offs (0x%x, 0x%x)\\n\" @%s:%d`
+- `Link Bandwidth Managment Notification interrupt`
+- `RCVRY_EQ3`
+- `_mapRIDToSID`
+- `enableVector`
+- `1121`
+- `ignore-missing-endpoint`
+- `errata-98353451`
+- `_ridMapping[sid].device == device`
+- `_linkDownInterrupt`
+- `timeout waiting for port to enable, disabling`
+- `apcie[%u:%s]::%s port is in state %u during IOPM transition\n`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s Attempting to allocate %u reserved MSI vector(s), starting at vector %u, for port %d\n`
+- `configRead16`
+- `Port %u Root Port Error Interrupt       `
+- `_msiAllocator != nullptr`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s _configRegistersBase[%d] = %p _configRegistersBasePhys[%d] = %p\n`
+- `virtual IOService *ApplePCIEHostBridge::probe(IOService *, SInt32 *)`
+- `apcie[%u:%s]::%s port did not enable within %u ms (state: %u)\n`
+- `Vector Count`
+- `Port %u AER EP Cor Retry Timer Timeout     `
+- `Port %u AER RC Unc Unexpected Completion   `
+- `limitedSpeed > 0`
+- `virtual void AppleEmbeddedPCIE::_applyTunablesFromDataWithIndex(const OSData *, regReadIndex_t, regWriteIndex_t, const char *, uint32_t)`
+- `Port %u AER EP Cor Bad DLLP                `
+- `LPBK_EXIT_TIMEOUT`
+- `_interruptControllerName != nullptr`
+- `virtual IOReturn AppleEmbeddedPCIEPort::setDesiredLinkSpeed(uint32_t)`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s Skipping elided %s tunable: offset/mask/value=0x%08x/0x%08x/0x%08x\n`
+- `extHotPlug`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s %s: failed to create IOPCIDevice dictonary object\n`
+- `configWrite16`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s %s: failed to create IOPCIDevice hot-plug property\n`
+- `site.AERLogEvent`
+- `function-clkreq`
+- `_busProbeTimer != nullptr`
+- `((reg = OSDynamicCast(OSData, mapperNub->getProperty(\"reg\"))) != nullptr) && (reg->getLength() == sizeof(uint32_t)) && ((*static_cast<const uint32_t *>(reg->getBytesNoCopy())) == sid)`
+- `getLinkRcvryDebugTracer`
+- `apcie%d-corr-err-period-us`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s %s: failed to set APCIe port property %p in device %p\n`
+- `apcie-`
+- `link-state-power`
+- `busProbe_block_invoke`
+- `result != kIOReturnNotPermitted`
+- `ignoreCorrectableError`
+- `RCVRY_IDLE`
+- `disableVectorHard`
+- `manual-enable`
+- `121111`
+- `_vectorPorts[firstVector] != nullptr`
+- `122222`
+- `Port %u Suspend Hardware Off            `
+- `_enableLinkRcvryDebugTracer`
+- `[PCIe:%u %llu ns] APCIEHostBridge[%u:%s]::%s warning %d exceeds %d\n`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s failed to register interrupt: device=%p, source=%d\n`
+- `no-l2-config-access`
+- `t-refclk-to-perst`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to set kIODARTMapperProtectionGranularityKey in mapperDict\n`
+- `handleLBMNTimer`
+- `ApplePIODMA`
+- `void AppleEmbeddedPCIEPort::setMaximumLinkSpeed(uint32_t)`
+- `POLL_CONFIG`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s Warning: the EP driver requested fewer MSIs (%u) than were reserved (%u)\n`
+- `extInjectError`
+- `msi-crypto-address`
+- `function-debug_gpio`
+- `\"[%s()] Internal error: invalid size %u\" @%s:%d`
+- `perst-to-config`
+- `_ridMapping[sid].useCount > 0`
+- `_captureLinkRcvryDebugTracer`
+- `_readPhyReg`
+- `site.AppleEmbeddedPCIEPort`
+- `Bandwidth`
+- `DISABLED`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s _vectorPorts[%d]=%p\n`
+- `_aerEvents != nullptr`
+- `\"lookupDTProperty: missing property %s on node %s\" @%s:%d`
+- `first-bypass-sid`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to assign an extra dummy SID for device %p RID 0x%04x(%d:%d:%d) DART %p. Device won't work.\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s device %s deep sleep\n`
+- `L2_IDLE`
+- `\"apcie[%u:%s]::enableHardware() called in state %d\" @%s:%d`
+- `enableRootPort`
+- `_dartSelfFunction != nullptr`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s device=%p, controllerIndex=%u, interruptFlags=0x%x, deviceIndex=%p\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s waiting for linkup on port mask 0x%x\n`
+- `_handleAEREvent`
+- `Port %u AER EP Cor Advisory Non-Fatal Error`
+- `enable-refclk-gating`
+- `virtual bool APCIEPortControl::initWithTargetDataAndSymbol(IOService *, const OSData *, const OSSymbol *)`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s port %d LinkUp\n`
+- `mem-io-timeout`
+- `IOByteCount AppleEmbeddedPCIE::_getConfigSpacePhysLen()`
+- `Port %u AER EP Unc Flow Ctrl Protocol Error`
+- `\"apcie[%u::%s] link width is %u, expected %u\" @%s:%d`
+- `LPBK_EXIT`
+- `AppleEmbeddedPCIeUtils.cpp`
+- `_vectorPorts[vector] != nullptr`
+- `apcie-aer-cap`
+- `ranges`
+- `terminate-missing-endpoint`
+- `reg`
+- `function-perst`
+- `L0S`
+- `apcie-port`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s _commonRegistersBaseAddress = %p _commonRegistersBaseAddressPhys = %p\n`
+- `linkDownRecovery`
+- `\"NVMe not supported\" @%s:%d`
+- `RCVRY_EQ1`
+- `[%s()] duration argument must not exceed %u seconds\n`
+- `Port %u AER EP Unc Completion Timeout      `
+- `Port %u AER EP Cor Corrected Internal Error`
+- `Port %u AER RC Unc Unsupported Request     `
+- `clkreq-wait-time`
+- `%s-%d`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s %s 0x%08x%s linkcdmsts=0x%08x\n`
+- `apcie%d`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s Failed to allocate %d MSI vector(s) for port %d\n`
+- `unregisterInterrupt`
+- `_waitForLinkUp`
+- `Port %u AER RC Unc Malformed TLP           `
+- `void AppleEmbeddedPCIEPort::exitDeepSleep()`
+- `Link timeout`
+- `DISABLED_IDLE`
+- `attachToChild`
+- `function-dart_force_active`
+- `_bwTimerEventSource`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to allocate mapper for device %p RID 0x%04x(%d:%d:%d) DART %p SID %d\n`
+- `ApplePCIEHostBridge.cpp`
+- `manual-enable-s2r`
+- `function-dart_request_sid`
+- `waitForL2Entry`
+- `specData != nullptr`
+- `\"Can't assert NVMe reset while port is enabled\" @%s:%d`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s simulating hot plug for %s device %p @ 0:%d:%d\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s Invalid timeout injection subtype %llu\n`
+- `site.struct lockPortData`
+- `thread_call_enter1(threadCall, threadData) != TRUE`
+- `_parentInterruptController != nullptr`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to assign SID for device %p RID 0x%04x(%d:%d:%d) DART %p\n`
+- `suspend`
+- `setDeviceInDeepSleepGated`
+- `msi-reservation-start`
+- `portIndex %d provided is out of range.\n`
+- `void AppleEmbeddedPCIE::_waitForLinkUp(uint32_t, uint32_t, bool)`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s invalid state change %p for device %p\n`
+- `Port %u Enable Complete                 `
+- `use-dynamic-mappers`
+- `IOReturn AppleEmbeddedPCIEPort::enableGated(uint32_t *)`
+- `Unexpected link up`
+- `%s-%s`
+- `apcie`
+- `_buildPortProperties`
+- `Port %u AER RC Unc Flow Ctrl Protocol Error`
+- `Port %u AER RC Unc Uncorrected Internal Err`
+- `_mmioDelayRangesLock != nullptr`
+- `(status == kIOReturnSuccess) && (dart != nullptr) && (_maxSIDs > 1) && (_maxSIDs <= _maxRIDs)`
+- `handleCompleterAbortInterrupt`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s failed to initialize\n`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s device=%p, numVectors=%u, firstVector=%d\n`
+- `_configMemoryMap != nullptr`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Using static SID for device %p RID 0x%04x(%d:%d:%d) DART %p\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to set mapper 'reg' property for device %p RID 0x%04x(%d:%d:%d) DART %p SID %d\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s timeout waiting for L2, continuing: linksts=0x%x\n`
+- `deallocateInterrupt`
+- `apcie[%u:%s]::%s _portDebugFlags = 0x%x\n`
+- `_configBaseDescriptor != nullptr`
+- `_unmapRIDFromSID`
+- `\"apcie[%u:%s] unhandled interrupts (0x%x out of 0x%x)\" @%s:%d`
+- `Port %u Suspend Complete                `
+- `(sid != 0) && (sid < _maxSIDs)`
+- `apcie%d-`
+- `IOHibernateState`
+- `Port %u AER RC Cor Retry Timer Timeout     `
+- `device != nullptr`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s DEVICE_WAKE = %d\n`
+- `CFG_LINKWD_ACEPT`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s %s: failed to set IOPCIDevice name object %p in property table %p\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s quiescing port %u\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Invalid parameters.\n`
+- `invalid parameters: clientHandler=%p clientObject%p\n`
+- `IOReportLegend`
+- `Port %u AER EP Cor Receiver Error          `
+- `ignore-link-speed-mismatch`
+- `write to`
+- `HOT_RESET`
+- `RCVRY_EQ2`
+- `apcie[%u:%s]::%s root state On\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s common: 0x%llx = 0x%x\n`
+- `class-code`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Panic for width missmatch suppressed, link width is %u, expected %u\n`
+- `\"apcie[%u::%s]::setDeviceWake() not supported for port\" @%s:%d`
+- `\"function not implemented\" @%s:%d`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %p is not a IOPCIDevice\n`
+- `AppleEmbeddedPCIEPortControlFunction`
+- `12111`
+- `msi-address`
+- `_readCommonReg`
+- `Port %u Link Up Timeout                 `
+- `ignore-link-width-mismatch`
+- `iommu-dart-dynamic`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s %s: failed to create IOPCIDevice\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s child %s attached for port %u\n`
+- `Energy`
+- `Port %u AER EP Unc Receiver Overflow       `
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to create OSData for mapper protection granularity\n`
+- `handleInterrupt`
+- `PRE_DETECT_QUIET`
+- `_commandGate != nullptr`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s device %p DART %p mapper %p RID 0x%04x(%d:%d:%d) SID %d useCount %d status 0x%08x\n`
+- ` root_err_status=0x%08x err_src_id: 0x%08x`
+- `Port %u AER RC Cor Bad DLLP                `
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to create OSDictionary for mapper creation\n`
+- `specifiers != nullptr`
+- ` root_err_status=0x%08x COR source: %u:%u:%u, UNC source: %u:%u:%u`
+- `\"%s:%u: REQUIRE failed: %s\" @%s:%d`
+- `name`
+- `configure`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s ml_io_increase_timeouts_phys(0x%lx, %u, %u, %u) %s\n\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s Attempted unaligned 2B write to %02x:%02x:%02x[%04x]\n`
+- `Port %u Disable Request                 `
+- `apcie-config-log-entries`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s device %p DART %p RID=0x%04x(%d:%d:%d)\n`
+- `extLockPort`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s Attempted unaligned 2B read from %02x:%02x:%02x[%04x], returning all Fs\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %02x:%02x:%02x[%04x] (0x%llx/0x%llx) <- 0x%04x%s\n`
+- `Port %u AER EP Unc Surprise Down Error     `
+- `\"%s is not implemented\" @%s:%d`
+- `DETECT_ACT`
+- `CFG_LANENUM_ACEPT`
+- `\"APCIEPortControl[%u:%s]::%s endpoint reset not supported\" @%s:%d`
+- `Base Vector Number`
+- `_vectorPorts[vector] == nullptr`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s simulating hot unplug for %s device %p @ 0:%d:%d\n`
+- `Port %u Disable Hardware Off            `
+- `Port %u Suspend Request                 `
+- `Port %u AER RC Unc Surprise Down Error     `
+- `apcie[%u:%s] timed out waiting for endpoint to assert CLKREQ#\n`
+- `*UNKNOWN*`
+- `InterruptControllerName`
+- `bus-range`
+- `start`
+- `initWithAPCIeAndRegistryEntry`
+- `\"manual-enable-defer-scan is only supported on manual-enable links\" @%s:%d`
+- `marvel-wa-viddids`
+- `_configSpaceLog != NULL`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s %s added new legacy interrupt controller=%s (%s) vector=%d\n`
+- `site.ApplePCIEMSIController`
+- `link training timeout`
+- `_expressCapOffset != 0`
+- `parentPCIDevice != nullptr`
+- `\"apcie[%d:%s] unexpected state transition (%d->%d) while in deep sleep\" @%s:%d`
+- `sid == i`
+- `controllers != nullptr`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s LTSSM Debug Tracer not supported\n`
+- `disable-after-boot-scan`
+- `_commonRegistersMemoryMap != 0`
+- `virtual void AppleEmbeddedPCIE::_applyTunablesFromData(const OSData *, regRead_t, regWrite_t, const char *)`
+- `cacheBusAperture`
+- `Port %u AER EP Unc Malformed TLP           `
+- `CFG_LINKWD_START`
+- ` root_err_status=0x%08x UNC source: %u:%u:%u`
+- `\"Invalid timeout BAR (%u)\\n\" @%s:%d`
+- `Port %u Correctable Error Interrupt     `
+- `_stateLocked`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s created mapper %p for device %p RID 0x%04x(%d:%d:%d) DART %p SID %d\n`
+- `spurious interrupt`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s [%s()] Elapsed time (ms) since filter interrupt: %llu\n`
+- `RCVRY_EQ0`
+- `AppleEmbeddedPCIEPort.cpp`
+- `IOReturn AppleEmbeddedPCIEPort::reenableThreadCall(thread_call_t)_block_invoke`
+- `AppleEmbeddedPCIEPort`
+- `crypto-queue-msi`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %02x:%02x:%02x[%04x] (0x%llx/0x%llx) -> 0x%02x%s\n`
+- `_writePhyReg`
+- `Port %u AER RC Cor Receiver Error          `
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s initialization failed\n`
+- `bool AppleEmbeddedPCIEPort::initWithAPCIeAndRegistryEntry(AppleEmbeddedPCIE *, IORegistryEntry *)`
+- `default-apcie-options`
+- `virtual bool AppleEmbeddedPCIE::configure(IOService *)`
+- `_quiescePorts`
+- `\"Malformed mem-io-timeout property\\n\" @%s:%d`
+- `strnlen(_apcie->getProvider()->getName(), sizeof(interruptControllerName) - 4) < sizeof(interruptControllerName) - 4`
+- `firstVector < _numVectors`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s device=%p, source=%d, target=%p, handler=%p, refCon=%p\n`
+- `1211111212221212111111111111`
+- `apcie+`
+- `_interruptEventSource != nullptr`
+- `_state != AppleEmbeddedPCIEPortEnabling`
+- `[%s()] NULL errorInfo pointer\n`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s device=%p, source=%d\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s device %s: vendorProd=0x%X   %d:%d:%d is using legacy interrupt line %d.\n`
+- `!_stateLocked`
+- `i8@?0`
+- `site.AppleEmbeddedPCIE`
+- ` (via PIODMA)`
+- `Port %u Non-fatal Error Interrupt       `
+- `\"apcie: can't wait with resume or noLTSSM\" @%s:%d`
+- `AppleEmbeddedPCIEUserClient`
+- `IOReturn AppleEmbeddedPCIEUserClient::extLockPort(IOExternalMethodArguments *)`
+- `\"device %s requesting crpto msi, but _msiCryptoAddress is 0\" @%s:%d`
+- `Port %u AER RC Unc Data Link Protocol Error`
+- `Port %u AER RC Unc TLP Prefix Blocked Error`
+- `AppleEmbeddedPCIE::configure: Invalid device tree cells, %u + %u)\n`
+- `index < numMemSpaces`
+- `Port %u Enable Request                  `
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s %p has no iommu-parent\n`
+- `getLTSSMDebugTracer`
+- `\"apcie[%u:%s] unexpected deep sleep entry notification in state %d\" @%s:%d`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s %llu microseconds elapsed between correctable errors\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s base 0x%llx = 0x%x\n`
+- ` root_err_status=0x%08x COR source: %u:%u:%u`
+- `_increaseMMIOTimeouts`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s [%s()] Failed to map IODeviceMemory, skipping mmio timeout increase\n\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Device %s is a PCI-PCI bridge, which will be using shared SID 0\n`
+- `registerErrorHandler`
+- `MMU router error`
+- `121111121222121211111111112112222222222211122`
+- `Port %u AER EP Unc Atomic OP Egress Blocked`
+- `mapperNub != nullptr`
+- `L1_IDLE`
+- `\"Malformed cfg-io-timeout property\\n\" @%s:%d`
+- `_portIndex < kAppleEmbeddedPCIEMaxPorts`
+- `setActive`
+- `_stateLock != nullptr`
+- `_configSpaceLogLock != nullptr`
+- `void AppleEmbeddedPCIEPort::setStateLocked(enum AppleEmbeddedPCIEPortState, const char *)`
+- `root`
+- `Write BW`
+- `\"PCIe config space access to %02x:%02x:%x while port is disabling\" @%s:%d`
+- `virtual void AppleEmbeddedPCIEPort::_registerAsInterruptController()`
+- `void AppleEmbeddedPCIEPort::lockStateLock()`
+- `readConfigReg`
+- `_updateBWReport`
+- `extGetStatus`
+- `_commandGate->commandSleep(&shouldWake, deadline, THREAD_UNINT) == THREAD_TIMED_OUT`
+- `result == kIOReturnSuccess`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s AER interrupt 0x%08x, linkcdmsts=0x%08x\n`
+- `Link timeout count`
+- `RCVRY_RCVRCFG`
+- `setLinkSpeed`
+- `site.IOInterruptVector`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s enabling%s with flags 0x%08x\n`
+- `\n\n\nWARNING: apcie=0x%x flags are deprecated/unused.\n\n\n`
+- `portIter != nullptr`
+- `nvme-mode`
+- `site.AppleEmbeddedPCIEPort *`
+- `port != nullptr`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s aicVector=%u, _vectorPorts[%d]=%p\n`
+- `un`
+- `threadData != NULL`
+- `registry entry %s does not have an apcie-port property`
+- `_enableLinkSpeedDebugTracer`
+- `\"APCIe MMU not supported\" @%s:%d`
+- `Port %u AER RC Unc Receiver Overflow       `
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s no mapper defined and device %p (%d:%d:%d) does not support hot-plug\n`
+- `allow-endpoint-reset`
+- `provider != nullptr`
+- `read from`
+- `void AppleEmbeddedPCIE::_applyFuses(const fuse_mapping_t *, size_t, regRead_t, regRead_t, regWrite_t)`
+- `!_noL1ConfigAccess || _noL2ConfigAccess`
+- `_messagedInterruptController != nullptr`
+- `Port %u AER RC Unc Completion Timeout      `
+
+**[__TEXT.__os_log]**
+
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s aicVector=%u, _vectorPorts[%d]=%p\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s %s: failed to set hot-plug property %p in property table %p\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s %s: failed to create IOPCIDevice hot-plug property\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s Attempted unaligned 4B read from %02x:%02x:%02x[%04x], returning all Fs\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to set kIODARTVMForceKey in mapperDict\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s auto-enabling port %u\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s quiescing port %u\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s waiting for linkup on port mask 0x%x\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to assign an extra dummy SID for device %p RID 0x%04x(%d:%d:%d) DART %p. Device won't work.\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s %s 0x%08x%s linkcdmsts=0x%08x\n`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s device=%p, source=%d\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s _commonRegistersBaseAddress = %p _commonRegistersBaseAddressPhys = %p\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s [%s()] Elapsed time (ms) since filter interrupt: %llu\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s resetting probe timeout\n\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s trying to enable the port that is already enabled (_state = %d)\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s enabling%s with flags 0x%08x\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Device %s is a device with known RID/FN issue, applying WA.\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to create OSData for mapper protection granularity\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to allocate mapper for device %p RID 0x%04x(%d:%d:%d) DART %p SID %d\n`
+- `[PCIe:%u %llu ns] APCIEHostBridge[%u:%s]::%s Requested speed: Gen%d, actual speed: Gen%d\n`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s device=%p, controllerIndex=%u, interruptFlags=0x%x, deviceIndex=%p\n`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s vectorNumber=%d, vector=%p\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %02x:%02x:%02x[%04x] (0x%llx/0x%llx) <- 0x%04x%s\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s common: 0x%llx = 0x%x\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s timeout waiting for L2, continuing: linksts=0x%x\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Link Speed Debug Tracer not supported\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Link Recovery Debug Tracer not supported\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s _secondaryBus = %u\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %02x:%02x:%02x[%04x] (0x%llx/0x%llx) -> 0x%04x%s\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s state %d\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s device %p DART %p RID 0x%04x(%d:%d:%d)\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s LTSSM Debug Tracer not supported\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s simulating hot plug for %s device %p @ 0:%d:%d\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s device deep sleep notification ignored: link down\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s AER interrupt 0x%08x, linkcdmsts=0x%08x\n`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s device=%p, numVectors=%u, firstVector=%d\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Manually enabling the port during power transitions is not allowed\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Device %s is PI7C9X442SL USB OHCI controller, which will be pinned to shared SID 0\n`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s failed to initialize\n`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s Warning: the EP driver requested fewer MSIs (%u) than were reserved (%u)\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %02x:%02x:%02x[%04x] (0x%llx/0x%llx) -> 0x%08x%s\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s no PIODMA engine associated with this port\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s %p has no iommu-parent\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s EP PERST = %d\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s probe\n\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %p is not a IOPCIDevice\n`
+- `[PCIe:%u %llu ns] APCIEHostBridge[%u:%s]::%s warning %d exceeds %d\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s [%s()] Failed to get device memory for nub %s, skipping mmio timeout increase\n\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s Skipping elided %s tunable: offset/mask/value=0x%08x/0x%08x/0x%08x\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %02x:%02x:%02x[%04x] (0x%llx/0x%llx) -> 0x%02x%s\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to create OSDictionary for mapper creation\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s created mapper %p for device %p RID 0x%04x(%d:%d:%d) DART %p SID %d\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s %s[%d:%d:%d] : vector %d.\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s ml_io_increase_timeouts_phys(0x%lx, %u, %u, %u) %s\n\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s phy: 0x%llx = 0x%x\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s found DART %p with %u SIDs\n`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s _vectorPorts[%d]=%p\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Skipping elided %s %d tunable: offset/mask/value=0x%08x/0x%08x/0x%08x\n`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s failed to register interrupt: device=%p, source=%d\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s _subordinateBus = %u\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Panic for width missmatch suppressed, link width is %u, expected %u\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s config: 0x%llx = 0x%x\n`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s Failed to allocate %d MSI vector(s) for port %d\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s device exited deep sleep: link down\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s failed to find %s device for RID 0:%d:%d\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s initialization failed\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s Adding range %016llx len %016llx\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to release DART %p SID %d for device %p RID=0x%04x(%d:%d:%d)\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s disabling with flags 0x%08x\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %02x:%02x:%02x[%04x] (0x%llx/0x%llx) <- 0x%08x%s\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s child %s attached for port %u\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %s tunables being applied\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s invalid state change %p for device %p\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Device %s is a PCI-PCI bridge, which will be using shared SID 0\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s device %p DART %p RID=0x%04x(%d:%d:%d)\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s %s: failed to initialize IOPCIDevice\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s _configBaseAddress = %p _configBaseAddressPhys = %p\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s [%s()] Failed to map IODeviceMemory, skipping mmio timeout increase\n\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to set mapper 'reg' property for device %p RID 0x%04x(%d:%d:%d) DART %p SID %d\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s simulating hot unplug for %s device %p @ 0:%d:%d\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s Invalid timeout injection subtype %llu\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s Scanning children\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s Attempted unaligned 2B write to %02x:%02x:%02x[%04x]\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s unable to destroy mapper %p for device %p RID=0x%04x(%d:%d:%d) DART %p SID %d\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Reached max allowed timeouts\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s %s: failed to create IOPCIDevice name object\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s reporter %s (%p) type %d, status 0x%x header {%08x %08x %08x %08x}\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s base 0x%llx = 0x%x\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s %s: failed to create IOPCIDevice dictonary object\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s %s: failed to set APCIe port property %p in device %p\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s [%s()] TX payload counter saturated; use a smaller measurement interval.\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s Terminating port's link partner nub\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s resumed port %u\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s GTB-to-PTM circuitry not supported on this platform\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s Invalid error injection type %llu\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s %llu microseconds elapsed between correctable errors\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %p has no APCIe port property\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s Attempted unaligned 2B read from %02x:%02x:%02x[%04x], returning all Fs\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to set kIODARTMapperProtectionGranularityKey in mapperDict\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s timeout waiting for PME_To_ACK, continuing: pmeto=0x%x\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s %s: failed to set IOPCIDevice name object %p in property table %p\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s [%s()] RX payload counter saturated; use a smaller measurement interval.\n`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s Attempting to allocate %u reserved MSI vector(s), starting at vector %u, for port %d\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s Simulated %splug for %s: 0x%08x\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s child %s attached without AppleEmbeddedPCIEPort property\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s Attempted unaligned 4B write to %02x:%02x:%02x[%04x]\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s no mapper defined and device %p (%d:%d:%d) does not support hot-plug\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s device %p DART %p mapper %p RID 0x%04x(%d:%d:%d) SID %d useCount %d status 0x%08x\n`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s numVectors=%u, firstVector=%u, parentController=%p\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s output buffer must be %ld bytes long (recvd %d)\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %02x:%02x:%02x[%04x] (0x%llx/0x%llx) <- 0x%02x%s\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Added port \"%s\", registers %p%s\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Device %s will use dummy SID %d.\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Invalid parameters.\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s [%s()] TX payload counter saturated; use a smaller measurement interval.\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIEUserClient::%s %s: failed to create IOPCIDevice\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s %s tunable: offset/mask/value=0x%08x/0x%08x/0x%08x, 0x%08x -> 0x%08x\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s GetMessagedInterruptAddress for %s, vector %d\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s [%s()] RX payload counter saturated; use a smaller measurement interval.\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Using static SID for device %p RID 0x%04x(%d:%d:%d) DART %p\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s failed to assign SID for device %p RID 0x%04x(%d:%d:%d) DART %p\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s device %s deep sleep\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s %s added new legacy interrupt controller=%s (%s) vector=%d\n`
+- `[PCIe:%u %llu ns] ApplePCIEMSIController::%s device=%p, source=%d, target=%p, handler=%p, refCon=%p\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s _configRegistersBase[%d] = %p _configRegistersBasePhys[%d] = %p\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s Releasing dummy sid %d for Marvel WA allocated.\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s device %s: vendorProd=0x%X   %d:%d:%d is using legacy interrupt line %d.\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s %s %d tunable: offset/mask/value=0x%08x/0x%08x/0x%08x, 0x%08x -> 0x%08x\n`
+- `[PCIe:%u %llu ns] AppleEmbeddedPCIE::%s port %d LinkUp\n`
+- `[PCIe:%u %llu ns] apcie[%u:%s]::%s DEVICE_WAKE = %d\n`

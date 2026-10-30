@@ -1,0 +1,195 @@
+# `FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration`
+
+- Image: [`/System/Library/PrivateFrameworks/CMCapture.framework/CMCapture`](../userland/System__Library__PrivateFrameworks__CMCapture.framework__CMCapture.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `FigCaptureBaseStillImageSinkPipelineConfiguration`
+- Protocols: `NSSecureCoding`
+- 41 instance variables, 41 properties, 86 instance methods, 1 class methods
+
+## Instance variables
+
+```
+i _stillImageSinkPipelineProcessingMode;
+I _pipelineStagePriority;
+I _inferencePriority;
+i _deviceType;
+B _deviceHasFlash;
+{?="width"i"height"i} _rawSensorDimensions;
+{?="width"i"height"i} _outputStillImageDimensions;
+@"NSDictionary" _sensorIDStringsByPortType;
+@"NSDictionary" _baseZoomFactorsByPortType;
+i _redEyeReductionVersion;
+i _semanticRenderingVersion;
+i _semanticDevelopmentVersion;
+B _semanticStyleRenderingEnabled;
+i _dcProcessorVersion;
+@"NSArray" _portTypesWithGeometricDistortionCorrectionEnabled;
+@"NSArray" _portTypesWithIntelligentDistortionCorrectionEnabled;
+B _gdcInDCProcessorSupported;
+{?="width"i"height"i} _gdcInDCProcessorOutputCropDimensions;
+i _greenGhostMitigationVersion;
+i _deepZoomVersion;
+I _demosaicedRawPixelFormat;
+@"NSDictionary" _rawColorCalibrationsByPortType;
+@"NSDictionary" _rawLensShadingCorrectionCoefficientsByPortType;
+B _deferredProcessingSupported;
+B _adjustablePortraitLightingEffectStrengthSupported;
+B _deepFusionSupported;
+B _learnedNRSupported;
+B _responsiveShutterSupported;
+B _responsiveShutterEnabled;
+B _fastCapturePrioritizationEnabled;
+B _captureTimePhotosCurationSupported;
+i _depthDataType;
+i _pearlModuleType;
+B _sifrStillImageCaptureEnabledIfAvailable;
+f _gainMapMainImageDownscalingFactor;
+f _ubInferenceMainImageDownscalingFactor;
+@"NSArray" _enabledSemanticSegmentationMatteURNs;
+@"NSArray" _supportedSemanticSegmentationMatteURNs;
+i _maxLossyCompressionLevel;
+@"NSDictionary" _cameraInfoByPortType;
+B _highQualityPhotoCaptureForVideoFormatEnabled;
+```
+
+## Properties
+
+```
+@property (Ti,N,V_stillImageSinkPipelineProcessingMode) stillImageSinkPipelineProcessingMode;
+@property (TI,N,V_pipelineStagePriority) pipelineStagePriority;
+@property (TI,N,V_inferencePriority) inferencePriority;
+@property (Ti,N,V_deviceType) deviceType;
+@property (TB,N,V_deviceHasFlash) deviceHasFlash;
+@property (T{?=ii},N,V_rawSensorDimensions) rawSensorDimensions;
+@property (T{?=ii},N,V_outputStillImageDimensions) outputStillImageDimensions;
+@property (T@"NSDictionary",&,N,V_sensorIDStringsByPortType) sensorIDStringsByPortType;
+@property (T@"NSDictionary",&,N,V_baseZoomFactorsByPortType) baseZoomFactorsByPortType;
+@property (Ti,N,V_redEyeReductionVersion) redEyeReductionVersion;
+@property (Ti,N,V_semanticRenderingVersion) semanticRenderingVersion;
+@property (Ti,N,V_semanticDevelopmentVersion) semanticDevelopmentVersion;
+@property (TB,N,V_semanticStyleRenderingEnabled) semanticStyleRenderingEnabled;
+@property (Ti,N,V_dcProcessorVersion) dcProcessorVersion;
+@property (T@"NSArray",&,N,V_portTypesWithGeometricDistortionCorrectionEnabled) portTypesWithGeometricDistortionCorrectionEnabled;
+@property (T@"NSArray",&,N,V_portTypesWithIntelligentDistortionCorrectionEnabled) portTypesWithIntelligentDistortionCorrectionEnabled;
+@property (TB,N,V_gdcInDCProcessorSupported) gdcInDCProcessorSupported;
+@property (T{?=ii},N,V_gdcInDCProcessorOutputCropDimensions) gdcInDCProcessorOutputCropDimensions;
+@property (Ti,N,V_greenGhostMitigationVersion) greenGhostMitigationVersion;
+@property (Ti,N,V_deepZoomVersion) deepZoomVersion;
+@property (TI,N,V_demosaicedRawPixelFormat) demosaicedRawPixelFormat;
+@property (T@"NSDictionary",&,N,V_rawColorCalibrationsByPortType) rawColorCalibrationsByPortType;
+@property (T@"NSDictionary",&,N,V_rawLensShadingCorrectionCoefficientsByPortType) rawLensShadingCorrectionCoefficientsByPortType;
+@property (TB,N,V_deferredProcessingSupported) deferredProcessingSupported;
+@property (TB,N,V_adjustablePortraitLightingEffectStrengthSupported) adjustablePortraitLightingEffectStrengthSupported;
+@property (TB,N,V_deepFusionSupported) deepFusionSupported;
+@property (TB,N,V_learnedNRSupported) learnedNRSupported;
+@property (TB,N,V_responsiveShutterSupported) responsiveShutterSupported;
+@property (TB,N,V_responsiveShutterEnabled) responsiveShutterEnabled;
+@property (TB,N,V_fastCapturePrioritizationEnabled) fastCapturePrioritizationEnabled;
+@property (TB,N,V_captureTimePhotosCurationSupported) captureTimePhotosCurationSupported;
+@property (Ti,N,V_depthDataType) depthDataType;
+@property (Ti,N,V_pearlModuleType) pearlModuleType;
+@property (TB,N,V_sifrStillImageCaptureEnabledIfAvailable) sifrStillImageCaptureEnabledIfAvailable;
+@property (Tf,N,V_gainMapMainImageDownscalingFactor) gainMapMainImageDownscalingFactor;
+@property (Tf,N,V_ubInferenceMainImageDownscalingFactor) ubInferenceMainImageDownscalingFactor;
+@property (T@"NSArray",&,N,V_enabledSemanticSegmentationMatteURNs) enabledSemanticSegmentationMatteURNs;
+@property (T@"NSArray",&,N,V_supportedSemanticSegmentationMatteURNs) supportedSemanticSegmentationMatteURNs;
+@property (Ti,N,V_maxLossyCompressionLevel) maxLossyCompressionLevel;
+@property (T@"NSDictionary",&,N,V_cameraInfoByPortType) cameraInfoByPortType;
+@property (TB,N,V_highQualityPhotoCaptureForVideoFormatEnabled) highQualityPhotoCaptureForVideoFormatEnabled;
+```
+
+## Class methods
+
+```
++[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration supportsSecureCoding];
+```
+
+## Instance methods
+
+```
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration sifrStillImageCaptureEnabledIfAvailable];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration pearlModuleType];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration demosaicedRawPixelFormat];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration portTypesWithIntelligentDistortionCorrectionEnabled];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setGreenGhostMitigationVersion:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration gainMapMainImageDownscalingFactor];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setResponsiveShutterEnabled:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration semanticStyleRenderingEnabled];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setDeviceType:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setSemanticDevelopmentVersion:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setDemosaicedRawPixelFormat:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration rawSensorDimensions];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setGainMapMainImageDownscalingFactor:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setBaseZoomFactorsByPortType:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration responsiveShutterSupported];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration greenGhostMitigationVersion];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setLearnedNRSupported:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setCameraInfoByPortType:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setRawColorCalibrationsByPortType:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setRawSensorDimensions:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration depthDataType];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration responsiveShutterEnabled];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration rawLensShadingCorrectionCoefficientsByPortType];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration portTypesWithGeometricDistortionCorrectionEnabled];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setFastCapturePrioritizationEnabled:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration captureTimePhotosCurationSupported];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setPortTypesWithGeometricDistortionCorrectionEnabled:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration semanticRenderingVersion];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration fastCapturePrioritizationEnabled];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setPortTypesWithIntelligentDistortionCorrectionEnabled:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration cameraInfoByPortType];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setPearlModuleType:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setDeepZoomVersion:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration deepFusionSupported];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setSemanticRenderingVersion:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration rawColorCalibrationsByPortType];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration gdcInDCProcessorSupported];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration pipelineStagePriority];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setSensorIDStringsByPortType:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration inferencePriority];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration deepZoomVersion];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setDepthDataType:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration learnedNRSupported];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setSemanticStyleRenderingEnabled:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration semanticDevelopmentVersion];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setGdcInDCProcessorOutputCropDimensions:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setPipelineStagePriority:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setMaxLossyCompressionLevel:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration sensorIDStringsByPortType];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration dcProcessorVersion];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration deviceType];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration maxLossyCompressionLevel];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setEnabledSemanticSegmentationMatteURNs:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setRawLensShadingCorrectionCoefficientsByPortType:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setDeviceHasFlash:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration ubInferenceMainImageDownscalingFactor];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration dealloc];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setUbInferenceMainImageDownscalingFactor:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration redEyeReductionVersion];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setGdcInDCProcessorSupported:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setCaptureTimePhotosCurationSupported:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setInferencePriority:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setHighQualityPhotoCaptureForVideoFormatEnabled:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration encodeWithCoder:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setResponsiveShutterSupported:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setDeferredProcessingSupported:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration deferredProcessingSupported];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setRedEyeReductionVersion:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration outputStillImageDimensions];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration adjustablePortraitLightingEffectStrengthSupported];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setDcProcessorVersion:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration supportedSemanticSegmentationMatteURNs];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setStillImageSinkPipelineProcessingMode:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration initWithCoder:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration highQualityPhotoCaptureForVideoFormatEnabled];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration deviceHasFlash];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setOutputStillImageDimensions:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setSupportedSemanticSegmentationMatteURNs:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration baseZoomFactorsByPortType];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration isEqual:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration enabledSemanticSegmentationMatteURNs];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration stillImageSinkPipelineProcessingMode];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration gdcInDCProcessorOutputCropDimensions];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setAdjustablePortraitLightingEffectStrengthSupported:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setSifrStillImageCaptureEnabledIfAvailable:];
+-[FigCaptureStillImageUnifiedBracketingSinkPipelineConfiguration setDeepFusionSupported:];
+```

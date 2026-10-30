@@ -1,0 +1,50 @@
+# `CTCSXPCServiceProtocol` (protocol)
+
+- Image: [`/System/Library/Frameworks/ThreadNetwork.framework/ThreadNetwork`](../userland/System__Library__Frameworks__ThreadNetwork.framework__ThreadNetwork.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- 0 instance variables, 0 properties, 41 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[CTCSXPCServiceProtocol ping:];
+-[CTCSXPCServiceProtocol retrieveNetworkSignatureWithCompletion:];
+-[CTCSXPCServiceProtocol BackingStoreDS];
+-[CTCSXPCServiceProtocol ctcsServerRapportSendForPreferredNetworkWithMessage:completion:];
+-[CTCSXPCServiceProtocol ctcsIsPreferredNetworkForActiveOperationalDataset:completion:];
+-[CTCSXPCServiceProtocol ctcsServerAddPreferredNetworkWithCompletionInternally:extendedPANId:borderAgentID:ipV4NwSignature:ipv6NwSignature:wifiSSID:wifiPassword:completion:];
+-[CTCSXPCServiceProtocol ctcsServerCleanKeychainThreadNetworksWithCompletion:];
+-[CTCSXPCServiceProtocol ctcsServerCleanPreferredAndFrozenThreadNetworksWithCompletion:];
+-[CTCSXPCServiceProtocol ctcsServerCountNonAppleRecordsWithCompletion:];
+-[CTCSXPCServiceProtocol ctcsServerCountPreferredFrozenRecordsWithCompletion:];
+-[CTCSXPCServiceProtocol ctcsServerDeleteActiveDataSetRecordForThreadBorderAgent:completion:];
+-[CTCSXPCServiceProtocol ctcsServerDeleteActiveDataSetRecordWithUniqueIdentifier:completion:];
+-[CTCSXPCServiceProtocol ctcsServerDeletePreferredNetworkForNetworkSignatureInternallyWithCompletion:extendedPANId:ipV4NwSignature:ipv6NwSignature:wifiSSID:completion:];
+-[CTCSXPCServiceProtocol ctcsServerDeletePreferredNetworkWithCompletion:];
+-[CTCSXPCServiceProtocol ctcsServerEnableCredentialSharingModeForExtendedPANID:completion:];
+-[CTCSXPCServiceProtocol ctcsServerEnableCredentialSharingModeInternallyForExtendedPANID:completion:];
+-[CTCSXPCServiceProtocol ctcsServerRapportBrowseForPreferredNetworkWithCompletion:];
+-[CTCSXPCServiceProtocol ctcsServerRapportConnectForPreferredNetworkWithCompletion:];
+-[CTCSXPCServiceProtocol ctcsServerRetrieveActiveCredentialsForNearbyNetworksInternallyWithCompletion:];
+-[CTCSXPCServiceProtocol ctcsServerRetrieveActiveCredentialsForNearbyNetworksWithCompletion:];
+-[CTCSXPCServiceProtocol ctcsServerRetrieveActiveDataSetRecordForThreadBorderAgent:completion:];
+-[CTCSXPCServiceProtocol ctcsServerRetrieveActiveDataSetRecordInternallyWithXPANId:completion:];
+-[CTCSXPCServiceProtocol ctcsServerRetrieveActiveDataSetRecordWithUniqueIdentifier:completion:];
+-[CTCSXPCServiceProtocol ctcsServerRetrieveActiveDataSetRecordWithXPANId:completion:];
+-[CTCSXPCServiceProtocol ctcsServerRetrieveAllActiveDataSetRecordsWithActiveFlag:completion:];
+-[CTCSXPCServiceProtocol ctcsServerRetrieveIsPreferredNetworkAvailable:];
+-[CTCSXPCServiceProtocol ctcsServerRetrieveListOfPreferredNetworkEntriesInternallyWithCompletion:ipV4NwSignature:ipv6NwSignature:wifiSSID:showCurrentEntry:completion:];
+-[CTCSXPCServiceProtocol ctcsServerRetrieveOrGeneratePreferredNetworkInternallyWithCompletion:];
+-[CTCSXPCServiceProtocol ctcsServerRetrievePreferredNetworkInternallyOnMdnsAndSigWithCompletion:];
+-[CTCSXPCServiceProtocol ctcsServerRetrievePreferredNetworkInternallyWithCompletion:];
+-[CTCSXPCServiceProtocol ctcsServerRetrievePreferredNetworkWithCompletion:];
+-[CTCSXPCServiceProtocol ctcsServerRetrievePreferredNetworkWithNoScanWithCompletion:];
+-[CTCSXPCServiceProtocol ctcsServerStartThreadBRScanInternallyWithCompletion:];
+-[CTCSXPCServiceProtocol ctcsServerStoreCachedAODasPreferredNetwork:completion:];
+-[CTCSXPCServiceProtocol ctcsServerStoreThreadNetworkCredentialActiveDataSet:credentialsDataSet:completion:];
+-[CTCSXPCServiceProtocol ctcsServerStoreThreadNetworkCredentialActiveDataSetInternally:network:credentialsDataSet:teamID:waitForSync:completion:];
+-[CTCSXPCServiceProtocol ctcsServerStoreThreadNetworkCredentialActiveDataSetInternally:network:credentialsDataSet:waitForSync:completion:];
+-[CTCSXPCServiceProtocol ctcsUpdatePreferredNetworkInternallyWithCompletion:];
+-[CTCSXPCServiceProtocol ctcsValidateAODInternally:completion:];
+-[CTCSXPCServiceProtocol isConnectionValid:];
+-[CTCSXPCServiceProtocol isConnectionValid:completion:];
+```

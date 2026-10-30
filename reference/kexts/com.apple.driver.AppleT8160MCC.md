@@ -1,0 +1,1122 @@
+# `com.apple.driver.AppleT8160MCC`
+
+- Name: AppleT8160MCC
+- Version: `1`
+- UUID: `221259CE-B95B-307F-BA94-F1E259244FB1`
+- Source version: `127.40.5.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleEverestErrorHandler`](com.apple.driver.AppleEverestErrorHandler.md) 1.0, [`com.apple.iokit.IOReportFamily`](com.apple.iokit.IOReportFamily.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (1) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/mcc`](../devicetree/root__arm-io__mcc.md) | `AppleT8160MemCacheController` | `mcc,t8160` |
+
+## IOKit personalities (1) [KC]
+
+### AppleMemCacheController
+- `CFBundleIdentifier`: `com.apple.driver.AppleT8160MCC`
+- `IOClass`: `AppleT8160MemCacheController`
+- `IONameMatch`: `mcc,t8160`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleT8160MCC`
+- `IOPlatformActiveAction`: `89000`
+- `IOPlatformPanicAction`: `89000`
+- `IOPlatformQuiesceAction`: `89000`
+- `IOPlatformSleepAction`: `89000`
+- `IOPlatformWakeAction`: `89000`
+- `IOProviderClass`: `AppleARMIODevice`
+
+
+## C++ classes (12) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleAMCPerfFunction` | 0x30 | AppleARMFunction |
+| `AppleMCCUserClientV2` | 0xe0 | IOUserClient → IOService → IORegistryEntry |
+| `AppleMemCacheControllerV2` | 0x460 | IOService → IORegistryEntry |
+| `AppleMemCacheDataSetsFunctionV2` | 0x30 | AppleARMFunction |
+| `AppleMemCacheFlushFunction` | 0x30 | AppleARMFunction |
+| `AppleMemCacheModeFunction` | 0x30 | AppleARMFunction |
+| `AppleMemCachePanicFunction` | 0x30 | AppleARMFunction |
+| `AppleT8160MemCacheController` | 0x5d0 | MemCacheCIP → AppleMemCacheControllerV2 → IOService → IORegistryEntry |
+| `MemCacheCIP` | 0x5d0 | AppleMemCacheControllerV2 → IOService → IORegistryEntry |
+| `MemCacheCommand` | 0x38 | IOCommand |
+| `MemCacheCommandQueue` | 0x78 | IOEventSource |
+| `MemCacheEvent` | 0x30 | IOCommand |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x00008ec6 off=0x007c0c80-0x007c9b46 addr=0xfffffe00077c4c80-0xfffffe00077cdb46 r--/r--   __TEXT            
+	sz=0x00000050 off=0x007c13a0-0x007c13f0 addr=0xfffffe00077c53a0-0xfffffe00077c53f0               __TEXT.__const            
+	sz=0x00005ffb off=0x007c13f0-0x007c73eb addr=0xfffffe00077c53f0-0xfffffe00077cb3eb               __TEXT.__cstring          (CstringLiterals)
+	sz=0x0000275b off=0x007c73eb-0x007c9b46 addr=0xfffffe00077cb3eb-0xfffffe00077cdb46               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x00016fc8 off=0x028708d0-0x02887898 addr=0xfffffe00098748d0-0xfffffe000988b898 r-x/r-x   __TEXT_EXEC       
+	sz=0x00016a18 off=0x028708d0-0x028872e8 addr=0xfffffe00098748d0-0xfffffe000988b2e8          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000005b0 off=0x028872e8-0x02887898 addr=0xfffffe000988b2e8-0xfffffe000988b898          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x0000b444 off=0x049c1680-0x049ccac4 addr=0xfffffe000b9c5680-0xfffffe000b9d0ac4 rw-/rw-   __DATA            
+	sz=0x0000b200 off=0x049c1680-0x049cc880 addr=0xfffffe000b9c5680-0xfffffe000b9d0880               __DATA.__data             
+	sz=0x000001f0 off=0x00000000-0x000001f0 addr=0xfffffe000b9d0880-0xfffffe000b9d0a70               __DATA.__common           (Zerofill)
+	sz=0x00000054 off=0x00000000-0x00000054 addr=0xfffffe000b9d0a70-0xfffffe000b9d0ac4               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00003d18 off=0x0125c040-0x0125fd58 addr=0xfffffe0008260040-0xfffffe0008263d58 rw-/rw-   __DATA_CONST      
+	sz=0x00000020 off=0x0125c040-0x0125c060 addr=0xfffffe0008260040-0xfffffe0008260060         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000020 off=0x0125c060-0x0125c080 addr=0xfffffe0008260060-0xfffffe0008260080         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x000033c0 off=0x0125c080-0x0125f440 addr=0xfffffe0008260080-0xfffffe0008263440         __DATA_CONST.__const            
+	sz=0x00000440 off=0x0125f440-0x0125f880 addr=0xfffffe0008263440-0xfffffe0008263880         __DATA_CONST.__kalloc_type      
+	sz=0x00000140 off=0x0125f880-0x0125f9c0 addr=0xfffffe0008263880-0xfffffe00082639c0         __DATA_CONST.__kalloc_var       
+	sz=0x000002d8 off=0x0125f9c0-0x0125fc98 addr=0xfffffe00082639c0-0xfffffe0008263c98         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000c0 off=0x0125fc98-0x0125fd58 addr=0xfffffe0008263c98-0xfffffe0008263d58         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 206 at 0x04ae882c
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     221259CE-B95B-307F-BA94-F1E259244FB1
+008: LC_SOURCE_VERSION           127.40.5.0.0
+009: LC_FUNCTION_STARTS          offset=0x004ab46b0 size=0x2e8
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleExecutable`: `AppleT8160MCC`
+- `CFBundleIdentifier`: `com.apple.driver.AppleT8160MCC`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleT8160MCC`
+- `CFBundleNumericVersion`: `16809984`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `AppleT8160MCC`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2022 Apple Inc. All rights reserved.`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleT8160MCC.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198897668992`
+- `_PrelinkExecutableRelativePath`: `AppleT8160MCC`
+- `_PrelinkExecutableSize`: `192490`
+- `_PrelinkExecutableSourceAddr`: `-2198897668992`
+- `_PrelinkKmodInfo`: `-2198828460416`
+
+## Strings (985) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `\"Invalid datastream configuration parameters. _dsConfigArray:%s configEntryCount%d\\n\" @%s:%d`
+- `copyDataStreamInfo`
+- `%s:%d: DRAMECC: bank-group-drop-mask0 is missing in mcc node in EDT\n\n`
+- `%s:%d: Invalid arguments. param1:%p param2:%p\n\n`
+- `\"%s: \" \"Invalid AMCC %d. AMCCEnableMask:0x%x\" @%s:%d`
+- `MemCacheDataStream.cpp`
+- `ANE0 AF WR`
+- `ptd-range-drv2ctrl`
+- `bank-drop-mask0`
+- `%s:%d: _dcsNumChannels = %d _dcsEnableMask = 0x%llx\n`
+- `mapByRegIdxProperty`
+- `kANE_ThirdPartyVictims`
+- `FABRIC VMIN WR`
+- `DISP DCS RT WR`
+- `%s:%d: DRAMECC: row-drop-mask is missing in mcc node in EDT\n\n`
+- `mccSelectDynamicCacheMode_block_invoke`
+- `%s:%d: Setting quota for DSID group %d(offset:0x%x) to 0x%llx\n\n`
+- `clientMemoryForType`
+- `AFI DCS RD`
+- `FABRIC VOVD RD`
+- `DISP AF GRT WR`
+- `ANEXL0 DCS RD`
+- `%s:%d: Failed to find config entry for DataStream %s\n\n`
+- `deprioritizeDSID`
+- `JPEG AF WR`
+- `DCS F1 RD`
+- `AppleMemCacheControllerV2`
+- `%s:%d: Unsupported streamId value %u\n\n`
+- `%s:%d: mccSelectDCSDynamicClockGateMode: unsupported mode %u\n\n`
+- `mccSelectDCSDynamicClockGateMode`
+- `%s:%d: ReadReg Instance %u offset %#x @ %p -> %#x\n\n`
+- `%s:%d: Setting config params for cntr %d in array %d. Name:%s\n\n`
+- `kANE_BondedIntermediateSpillsHi`
+- `1211111212221212111111111112`
+- `\"%s: \" \"Per-die DCS channel count %u exceeds 32 bits\" @%s:%d`
+- `\"%s: \" \"Register read failure. aperture not initialized\\n\" @%s:%d`
+- `kGPU_FBToDisplay`
+- `kMSR_Stats_ContextSwitch`
+- `ACCP AF WR`
+- `ACCP DCS RD`
+- `FABRIC WR`
+- `FABRIC VMIN RD`
+- `site.MemCacheEvent`
+- `v16@?0I8I12`
+- `%s:%d: mccSelectDynamicDRAMCFGMode requested mode %u\n\n`
+- `memWriteReg64`
+- `%s:%d: EndingDSIDGroup value %d are invalid\n\n`
+- `kANE_FrameCriticalVictims`
+- `PCIE DCS WR`
+- `\"%s: \" \"Failed to add timer event source to workloop\" @%s:%d`
+- `getDataCollectionMemDescriptor_block_invoke`
+- `\"Starting Quota group is greater than Ending Quota Group. configEntryCount: %d, startingQuotaGroup: %d, endingQuotaGroup: %d\\n\" @%s:%d`
+- `%s:%d: Deprioritize on stream %s on request from client\n\n`
+- `%s:%d: DRAMECC: Not able to get dcs hashing result. Aborting error injection\n\n`
+- `%s:%d: AMCCPlaneOffset = %x\n`
+- `%s:%d: SoCNI does not exist for this SoC. Setting _socniApertureCnt to 0x0\n`
+- `com.apple.private.mcc.bwstats-access`
+- `%s:%d: WriteReg32 Instance %u offset %#x @ %p <- %#x\n\n`
+- `%s:%d: DSID group %d(offset:0x%x) quota is 0x%llx\n\n`
+- `site.AppleMemCachePanicFunction`
+- `kGPU_ASC`
+- `ACCE DCS RD`
+- `AVD AF WR`
+- `AVE AF RD`
+- `GFXC AF WR`
+- `disable-mcc`
+- `getMCCProperty`
+- `mccWaitForWaysPwrOn`
+- `%s:%d: Way count clamped to %d ways\n\n`
+- `kSIODMA_ASC`
+- `JPEG AF RD`
+- `%s:%d: Datastreams are not configured yet\n\n`
+- `setSRAMBufferSize`
+- `%s:%d: Disable all data streams\n\n`
+- `MemCacheCommandQueue`
+- `\"%s: \" \"Failed to allocate DCS aperture array (count: %d)\" @%s:%d`
+- `%s:%d: mccSelectMCCDynamicPowerGateMode: unsupported mode %u\n\n`
+- `%s:%d: WriteReg64 Instance %u offset %#x @ %p <- %#llx\n\n`
+- `DISP AF NON-RT WR`
+- `setInitialQuotaConfig`
+- `%s:%d: AMCC %d Plane %d vDSID Profile counter %d cfg1(offset: 0x%x) set to 0x%llx\n\n`
+- `%s:%d: AMCC %d vDSID Profile counter(offset: 0x%x) sampling interval set to 0x%x\n\n`
+- `kANE_SelfNRIntermediateSpillsSet2`
+- `FABRIC VMAX RD`
+- `SBR DCS WR`
+- `DCS F8 WR`
+- `mcache-stream`
+- `mc_quota_rsp_ptd_count`
+- `%s:%d: Updating assigned size for stream %s to 0x%x -> 0x%x bytes\n`
+- `kAVE_LoRes`
+- `\"Assert failed: %s\" @%s:%d`
+- `\"StreamId %d is beyond allowed limit of %d\\n\" @%s:%d`
+- `readCacheSize`
+- `DCS F1 WR`
+- `v16@?0^{IOTimerEventSource=^^?i^{IOEventSource}^{OSObject}^?B^{IOWorkLoop}^v^{ExpansionData}^vQ^{ExpansionData}}8`
+- `getStreamDefaultSize`
+- `site.MemCacheCommand`
+- `%s:%d: MemCache Policy management is disabled\n\n`
+- `chip-revision`
+- `%s:%d: Failed to get quota for group %d. rc:0x%x\n\n`
+- `kDisplay_BICReads`
+- `%s:%d: Sending command to PMP\n\n`
+- `site.AppleMemCacheDataSetsFunctionV2`
+- `getQuotaGrpRequestedSize`
+- `site.MemCacheCIP`
+- `%s:%d: amcc %d plane %d\n`
+- `mccSelectDCSDynamicPowerGateMode`
+- `%s:%d: Invalid DSID group %d\n\n`
+- `GFXC DCS WR`
+- `NULL`
+- `enableDataStreamForTest`
+- `getDSIDGroupQuotaUseCount`
+- `ACCE DCS WR`
+- `%s:%d: registerForPeriodicCall registered\n\n`
+- `%s:%d: DSID management is disabled\n\n`
+- `\"%s: \" \"SRAM buffer size(%u) is greater than total cache size(%u)\" @%s:%d`
+- `%s:%d: enableDataStreamForTest for stream %s size %d from driverInstance %d\n\n`
+- `kANE_SelfNRIntermediateSpillsSet1`
+- `\"%s: \" \"Failed to read amcc-count property\" @%s:%d`
+- `AppleMemCacheModeFunction`
+- `ANEXL1 AF WR`
+- `ANS AF RD`
+- `DCS F2 CAS`
+- `dcs-enable-thermal-loop`
+- `copyMCStreams`
+- `%s:%d: SRAM buffer allocated when part of the cache is disabled. clamped way count:%d\n\n`
+- `%s:%d: registerForPeriodicCall timer set to %d us. _timerInterval:%d ms\n\n`
+- `%s:%d: Received ack for cmd id:%d\n\n`
+- `getDataStreamObject`
+- `%s:%d: Setting MCC clock gate mode to %d\n\n`
+- `kISP_MsBeProcFar`
+- `%s:%d: There is no shared data queue\n\n`
+- `%s:%d: Blocking on for command completion\n\n`
+- `%s:%d: Request on stream %s for size 0x%x bytes. Current stream size: 0x%x\n\n`
+- `\"%s: \" \"Cache Policy Manager is missing!\\n\" @%s:%d`
+- `kISP_PyramidNoiseReduction`
+- `DCS F4 WR`
+- `DCS CAS`
+- `DCS F3 CAS`
+- `getAmccInstance`
+- `\"%s: \" \"Failed to allocate SoCNI aperture array (count: %d)\" @%s:%d`
+- `%s:%d: ReadReg64 Instance %u offset %#x @ %p -> %#llx\n\n`
+- `%s:%d: Enabling cntr %d in array %d. Name:%s\n\n`
+- `FABRIC RD`
+- `setWayClampCountGated_block_invoke`
+- `getDSIDQuotaUseCount`
+- `DCS F7 CAS`
+- `%s:%d: Invalid arguments to registerForPeriodicCall()\n\n`
+- `kMSR_NeighborData`
+- `kReserved5`
+- `SBR AF RD`
+- `12111112122212121111111111111111111111111111112111111111111111111111111111111111111111111111111111111111111111111111111111211111112121111121`
+- `%s:%d: Found mcc_clampwaycount in boot-args. Way count clamped to %d ways\n\n`
+- `mccFlush`
+- `setPersistenceLevel`
+- `\"Failed to clear DCS perf counter '%s' clear bit\\n\" @%s:%d`
+- `kDisplay1_PDCData`
+- `DCS F4 SR duration(usec)`
+- `%s:%d: DeQueued event\n\n`
+- `readPerfCounterByID`
+- `kDisplay_NonAllocating`
+- `GFX DCS WR`
+- `%s:%d: MemCache Policy Management is disabled\n\n`
+- `getDataStreamCacheUsage`
+- `%s:%d: Could not alloc _mccPerfCountersLock\n`
+- `%s:%d: Failed to allocate DataStream object for stream %s\n\n`
+- `%s:%d: enableDataStream Writing to MCache-PMP for quota group %d, Requested Size :%d, Flags: 0x%x\n\n`
+- `sendQuotaRequestToPMP`
+- `rank-drop-mask0`
+- `\"%s: \" \"Total AMCC Count %d exceeds the max value that the _amccEnableMask can represent\" @%s:%d`
+- `kReserved6`
+- `DCS F3 WR`
+- `DCS F2 SR duration(usec)`
+- `bank-group-drop-mask0`
+- `kISP_ASC`
+- `kANE_EventLogging`
+- `kSC_ASC`
+- `%s:%d: Invalid timer argument\n\n`
+- `%s:%d: DSID group %d(offset:0x%x) quota use count is 0x%llx\n\n`
+- `DISPEXT DCS NON-RT RD`
+- `chip-id`
+- `%s:%d: amcc-enable-mask is not set in EDT. Setting it to 0x%x\n\n`
+- `\"%s: \" \"Unexpected _amccEnableMask\" @%s:%d`
+- `%s:%d: Changing way count to %d\n\n`
+- `ISP DCS RT WR`
+- `DCS PD ENTRIES`
+- `site.AppleMemCacheControllerV2`
+- `MCPolicyMgr`
+- `disableAllDataStreams`
+- `%s:%d: gIOPlatformActiveActionKey\n`
+- `%s:%d: Mapped address space for property %s\n\n`
+- `site.AppleAMCPerfFunction`
+- `DISPEXT AF RT RD`
+- `mc_quota_req_ptd_count`
+- `kISP_NonAllocating`
+- `DISPSEC AF GRT RD`
+- `ANE1 AF RD`
+- `AppleT8160MemCacheController.cpp`
+- `clientNotifyThread`
+- `\"%s: \" \"Register write failure. offset:0x%x aperture length:0x%llx\\n\" @%s:%d`
+- `%s:%d:   Counter[%d]: type=%d, idx=%d, blkNum=%d, valOffset=0x%x, totalValue=0x%llx\n\n`
+- `DCS F7 WR`
+- `DCS RAS`
+- `registerClient`
+- `setDataStreamConfig`
+- `%s:%d: cacheFlush: Waiting for plane %d cache flush to complete\n\n`
+- `DSID Group Stats`
+- `kAVD_InfoSamples`
+- `FABRIC VMID RD`
+- `DISPSEC AF RT WR`
+- `SEP DCS WR`
+- `AppleMCCUserClientV2`
+- `%s:%d: Failed to setup initial quota config\n`
+- `%s:%d: socni-enable-mask: 0x%x\n\n`
+- `%s:%d: Error in arguments to getDSIDGroupQuotaUseCount\n\n`
+- `DISPSEC DCS GRT RD`
+- `AVD DCS RD`
+- `DCS F5 RAS`
+- `\"%s: \" \"Null Policy Manager\" @%s:%d`
+- `kReserved4`
+- `ATC DCS WR`
+- `DCS F1 CAS`
+- `getMCCConfigData`
+- `site.AppleMemCacheModeFunction`
+- `kACC_SuperDuperCritical`
+- `ANE0 DCS WR`
+- `DISPEXT DCS RT WR`
+- `DCS F6 SR duration(usec)`
+- `%s:%d: Invalid client id %d\n\n`
+- `getDataStreamConfigEntryCount`
+- `socni-enable-mask`
+- `mcw-reg-idx`
+- `initDsidProfileConfig`
+- `DCS F9 CAS`
+- `\"%s: \" \"PTD Update space  is not mapped\" @%s:%d`
+- `printDSConfigArray`
+- `%s:%d: M$PMP %x, %x, %llx \n\n`
+- `dcs-reg-idx`
+- `kMTP_ASC`
+- `MSR DCS RD`
+- `ISP AF RT RD`
+- `JPEG DCS RD`
+- `%s:%d: Failed to alloc/initialize client object\n\n`
+- `\"%s: \" \"AMCC count %d is greater than number of AMCC apertures(%d)\" @%s:%d`
+- `%s:%d: Disabling DRAM access...\n\n`
+- `DISP AF RT RD`
+- `DCS RD`
+- `DCS F4 CAS`
+- `DCS F2 RAS`
+- `DCS F8 RAS`
+- `\"%s: \" \"Both PTD Dashboard reg index and PTD Update reg index should be set\" @%s:%d`
+- `121112111121111`
+- `kANS_ASC`
+- `SIO DCS RD`
+- `writePTD`
+- `%s:%d: Failed to setup timer for data collection\n\n`
+- `MemCacheCommand`
+- `%s:%d: AppleMemCacheDataSetsFunctionV2::callFunction action:%ld\n\n`
+- `DCS F8 SR duration(usec)`
+- `DCS F8 PD duration(usec)`
+- `mcc_cntr_cfg`
+- `AFI AF RD`
+- `ANE0 DCS RD`
+- `dcs-channel-enable-mask`
+- `%s:%d: Received unsupported type %d\n\n`
+- `ACCP AF RD`
+- `DISP AF NON-RT RD`
+- `ANEXL0 AF RD`
+- `AVE DCS WR`
+- `%s:%d: %s: EDT blob too small (%u bytes, need %zu)\n`
+- `%s:%d: EnQueued event \n\n`
+- `cacheFlush_block_invoke`
+- `%s:%d: Flushing Mem Cache ...\n`
+- `dcs_error_inject`
+- `DISPSEC DCS NON-RT WR`
+- `DCS F9 RD`
+- `\"Register write failure. Instance: %u, offest:%#x\" @%s:%d`
+- `site.AppleMemCacheFlushFunction`
+- `setAvailableCacheSize`
+- `Valid`
+- `v20@?0I8I12I16`
+- `%s:%d: Setting DCS clock gate mode to %d\n\n`
+- `kACC_NonCritical`
+- `kACC_SuperCriticalLLC`
+- `DCS F6 RD`
+- `\"%s: \" \"NULL PTD range property\" @%s:%d`
+- `AppleAMCPerfFunction`
+- `DISP DCS GRT WR`
+- `DCS F4 PD duration(usec)`
+- `ackCommand`
+- `getDataStreamConfigEntry`
+- `%s:%d: Ignoring invalid stream id %d\n\n`
+- `kDisplay_ASC`
+- `kAOP_ASC`
+- `DCS F3 PD duration(usec)`
+- `AppleT8160MemCacheController`
+- `%s:%d: Failed to find handle %d for property %s\n`
+- `%s:%d: SRAM Buffer size changed to %d bytes\n\n`
+- `%s:%d: M$PMP CMD %x, %d \n\n`
+- `\"%s: \" \"Failed to allocate AMCC aperture array (count: %d)\" @%s:%d`
+- `\"%s: \" \"Per-die dcs-channel-enable-mask 0x%llx has bits beyond dcsPerDie=%u\" @%s:%d`
+- `mccSelectDynamicDRAMCFGMode`
+- `mccSelectMCCDynamicPowerGateMode`
+- `%s:%d: Previous deprioritize request on dsid %d failed. status:0x%x\n\n`
+- `%s:%d: Failed to get property %s\n`
+- `\"%s: \" \"Failed to read dcs-count-per-amcc property\" @%s:%d`
+- `kACC_Critical`
+- `%s:%d: This process didn't enable data collection\n\n`
+- `ANS AF WR`
+- `ANEXL0 DCS WR`
+- `ISP AF NON-RT RD`
+- `JPEG DCS WR`
+- `deRegisterPeriodicCall`
+- `\"%s: \" \"Unexpected input parameters\" @%s:%d`
+- `%s:%d: Failed to add timer to workloop\n\n`
+- `\"%s: \" \"dcsPerDie %u * _dieNum %u overflows uint32_t\" @%s:%d`
+- `\"%s: \" \"Failed to allocate memory for DRAM config. Channel count: %d\\n\" @%s:%d`
+- `%s:%d: StaringDSIDGroup(%d) is greater than EndingDSIDGroup(%d)\n\n`
+- `%s:%d: AMCC %d Plane %d single vDSID Profile counter(offset: 0x%x) set to 0x%llx\n\n`
+- `%s:%d: Could not allocation reporter set\n`
+- `%s:%d: Failed to to find data stream object for stream %d\n\n`
+- `callFunction`
+- `%s:%d: User Client only mode: %d\n\n`
+- `\"%s: \" \"Unexpected _planeEnableMaskPerAMCC\" @%s:%d`
+- `%s:%d: mccSelectDynamicCacheMode() called with mode=%d\n\n`
+- `memReadReg64`
+- `kANE_ASC`
+- `memProtectedWriteReg32`
+- `enableDataCollection_block_invoke`
+- `socni-count`
+- `\"%s: \" \"Failed to allocate memory for dsid counter config. Cfg count:%d\\n\" @%s:%d`
+- `SEP AF WR`
+- `ANE1 DCS RD`
+- `DCS F3 SR duration(usec)`
+- `mc_cmd_ptd_count`
+- `%s:%d: Unexpected arguments\n\n`
+- `kAVE_LumaRefs`
+- `setPeriodicCallInterval`
+- `%s:%d: Command completed\n\n`
+- `%s:%d: Failed to copy mcache streams data\n`
+- `setDSIDGroupQuota`
+- `AppleMemCachePanicFunction`
+- `ANS DCS RD`
+- `SEP DCS RD`
+- `DCS WR`
+- `testMode`
+- `%s:%d: mccSelectDynamicDRAMCFGMode() called with mode=%d\n\n`
+- `%s:%d: No data collection buffer available\n\n`
+- `PCIE AF WR`
+- `%s:%d: Failed to setup timer for periodic tracing\n\n`
+- `%s:%d: dcs-channel-enable-mask (per-die from EDT): 0x%llx\n\n`
+- `kANE_Kernel`
+- `kANE_BondedKernelReads`
+- `%s:%d: Memory descriptor prepare failure. rc:0x%x\n\n`
+- `%s:%d: Wokeup on on event cmdId %d\n\n`
+- `evaluateDataStream`
+- `die-enable-mask`
+- `%s:%d: die-enable-mask is not set in EDT. Setting it to 0x%x\n\n`
+- `%s:%d: Failed to usage count for DSID group %d\n\n`
+- `readPerfValue`
+- `%s:%d: Request for size on stream %s instance %d is invalid\n`
+- `kGPU_SeivedRenderTargetND`
+- `%s:%d: Found -disable_mcc in boot-args, will skip switching to M$ into cache mode\n`
+- `readPTDMsg`
+- `%s:%d: _quotaReqPtdIdx:0x%x _quotaRspPtdIdx:0x%x _cmdPtdIdx:0x%x _cmdAckPtdIdx:0x%x\n\n`
+- `%s:%d: DRAMECC: PA received is 0x%lx\n\n`
+- `%s:%d: DSID Profile counters are not enabled for this config\n`
+- `MSR DCS WR`
+- `AVE AF WR`
+- `DCS F8 RD`
+- `%s:%d: Way count cannot be clamped when SRAM buffer is allocated\n\n`
+- `%s:%d: Periodic tracer is disabled\n\n`
+- `122222112122211111111111111111111111111111111111111111111111111111111111111111111111111211122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `kISP_PyramidFusion`
+- `kISP_TemporalFiltering`
+- `kGPU_RenderTargetND`
+- `%s:%d: Unsupported streamId %u.\n\n`
+- `DCS F6 WR`
+- `pmp_ptd_update_reg_idx`
+- `getAllDSIDQuota`
+- `%s:%d: Invalid persistence value %d. Only 'Replaceable' and 'NonReplaceable' are supported\n\n`
+- `kGPU_ParameterBufferWrite`
+- `ANE0 AF RD`
+- `ATC AF WR`
+- `AppleMemCacheController.cpp`
+- `%s:%d: Force updating ds %s to size %d\n\n`
+- `_initMemHashParam`
+- `%s:%d: Quota usage for DSID group %d(offset:0x%x) is 0x%llx\n\n`
+- `kAVE_ASC`
+- `DCS F3 RD`
+- `DCS F9 SR duration(usec)`
+- `DataStream Cache Usage`
+- `bank-drop-mask1`
+- `MSR AF WR`
+- `DISPSEC AF NON-RT RD`
+- `DCS F1 SR duration(usec)`
+- `%s:%d: dcs-channel-enable-mask not in EDT; defaulting to 0x%llx\n`
+- `memWriteReg32`
+- `\"%s: \" \"Null workloop\" @%s:%d`
+- `\"%s: \" \"Unexpected number of entries(%d) for responses from control\" @%s:%d`
+- `amcc-enable-mask`
+- `%s:%d: gIOPlatformSleepActionKey\n`
+- `%s:%d: Stream %s instance %d is greater than max supported instances(%d)\n\n`
+- `kANE_ANE1_IntermediateSpillsHi`
+- `kReserved8`
+- `SEP AF RD`
+- `\"%s: \" \"_socniApertureCnt %d exceeds the max value _socniEnableMask can represent\" @%s:%d`
+- `112`
+- `%s:%d: failed to create commandgate\n`
+- `\"Unexpected Cntr type %d\\n\" @%s:%d`
+- `AFI DCS WR`
+- `DCS F4 RAS`
+- `121121`
+- `%s:%d: Stream:%s startingQuotaGroup:%d endingQuotaGroup:%d priority:%d DSID:[%d-%d] Policy:%d Size:%d Persistence:%d\n\n`
+- `max-way-count`
+- `callPlatformFunction`
+- `ATC DCS RD`
+- `DISPSEC AF RT RD`
+- `GFXC AF RD`
+- `IODeviceTree:/arm-io/pmp/iop-pmp-nub`
+- `%s:%d: Limiting data collection counters to %d\n\n`
+- `%s:%d: Invalid arguments\n\n`
+- `%s:%d: enableDataStream: Invalid data stream id: %d\n\n`
+- `%s:%d: Failed to get DS configuration\n\n`
+- `getDSIDGroupQuota`
+- `%s:%d: Invalid perfCounterId: %d (max: %d)\n\n`
+- `DCS F3 RAS`
+- `IOUserClientClass`
+- `%s:%d: mccWaitForWaysPwrOn() called with tgt_way_cnt = %d\n`
+- `mccEnableCacheMode`
+- `kISP_Stats`
+- `kGPU_USCDataReads`
+- `DISPEXT AF RT WR`
+- `DISPEXT DCS NON-RT WR`
+- `DCS F2 WR`
+- `%s:%d: Enabling DCS thermal control loop \n\n`
+- `%s:%d: Failed to allocate memory for data packet(size: %u)\n\n`
+- `\"%s: \" \"Unexpected CmdQueue value\" @%s:%d`
+- `%s:%d: amcc-enable-mask: 0x%x\n\n`
+- `\"%s: \" \"Register read failure. offset:0x%x aperture length:0x%llx\\n\" @%s:%d`
+- `%s:%d: Failed to create mem descriptor for shared data queue\n\n`
+- `\"%s: \" \"Failed to get the data stream for grp %d streamId %d\" @%s:%d`
+- `%s:%d: DRAMECC: Invalid register table for memory hashing\n\n`
+- `\"%s: \" \"Register write failure. aperture not initialized\\n\" @%s:%d`
+- `initWithInfo`
+- `ACCE AF WR`
+- `MSR AF RD`
+- `ANS DCS WR`
+- `getWorkLoop()->inGate()`
+- `AppleMemCacheDataSetsFunctionV2`
+- `\"Data streams per group exceeded the limit\\n\" @%s:%d`
+- `%s:%d: disableDataStream: Invalid arguments\n\n`
+- `\"%s has not been implemented by platform.\" @%s:%d`
+- `%s:%d: Each AMCC cache size: %d bytes\n\n`
+- `%s:%d: mccSelectDCSDynamicPowerGateMode: unsupported mode %u\n\n`
+- `dumpDataStream`
+- `\"%s: \" \"CmdQueue crete failure\" @%s:%d`
+- `%s:%d: Periodic tracer interval set to %dms\n\n`
+- `%s:%d: Notifying client '%s' on stream '%s'. Size: 0x%x\n\n`
+- `\"%s: \" \"Unexpected number of entries(%d) for requests to control\" @%s:%d`
+- `updateStreamEntry`
+- `%s:%d: AMCCPlaneStride = %x\n`
+- `getDCSPMConfig`
+- `kANE_IntermediateSpillsLo`
+- `queueEvent`
+- `%s:%d: socni-enable-mask is not set in EDT. Setting it to 0x%x\n\n`
+- `%s:%d: regIdx = %d _apertureNum = %d _apertureEnableMask = 0x%llx\n`
+- `%s:%d: Waiting for Data Ways:   target = %d cur_data_way_count = %d     reg = %x\n`
+- `AFI AF WR`
+- `ANEXL1 AF RD`
+- `DCS F2 RD`
+- `DCS F5 RD`
+- `%s:%d: enableDataStream for stream %s size %d from driverInstance %d\n\n`
+- `%s:%d: DRAMECC: bank-drop-mask1 is missing in mcc node in EDT\n\n`
+- `%s:%d: De-prioritize request on dsid %u is invalid\n`
+- `\"%s: \" \"Failed to initialize simple reporters\" @%s:%d`
+- `%s:%d: Received request with selector %d\n\n`
+- `DISPEXT AF NON-RT WR`
+- `ANE1 AF WR`
+- `DCS F6 PD duration(usec)`
+- `start`
+- `%s:%d: getMCCConfigData:MCC max configs = %u\n`
+- `mccWaitForWaysPwrOn_block_invoke`
+- `%s:%d: mccSelectMCCDynamicClockGateMode: unsupported mode %u\n\n`
+- `%s:%d: Setting MCC power gate mode to %d\n\n`
+- `DCS F7 RD`
+- `DCS F1 PD duration(usec)`
+- `\"%s: \" \"Failed to read cache size from AMCC\" @%s:%d`
+- `\"%s: \" \"mccSelectDynamicCacheMode:requested mode %u but max config count is %u!\" @%s:%d`
+- `%s:%d: AMCC %d Plane %d vDSID Profile counter Enable(offset: 0x%x) set to 0x%llx\n\n`
+- `setInstanceRequestedSize`
+- `SIO DCS WR`
+- `DCS SR ENTRIES`
+- `DCS F2 PD duration(usec)`
+- `getPMPProperty`
+- `\"%s: \" \"Failed to add CmdQueue event source to WorkLoop\" @%s:%d`
+- `\"%s: \" \"NULL ptdIdx pointer\" @%s:%d`
+- `site.MCPolicyMgr`
+- `%s:%d: _socniNum = %d _socniEnableMask = 0x%x\n`
+- `mcc-cntr-cfg`
+- `kReserved0`
+- `ISP AF RT WR`
+- `site.struct MCDataStreamConfig`
+- `checkForWork`
+- `MemCacheCIP`
+- `kISP_WarperHDR`
+- `GFX AF RD`
+- `DCS F9 WR`
+- `DCS F9 PD duration(usec)`
+- `%s:%d: StreamID: %x, ClientID: %x, Size: %x\n\n`
+- `%s:%d: Setting persistence level of DSID Group %d(Offset:0x%x) to %d\n\n`
+- `mccRestoreAMCPerfCounterConfig`
+- `AVE DCS RD`
+- `DCS F7 SR duration(usec)`
+- `%s:%d: Failed to initialize shared data queue\n`
+- `\"%s: \" \"Zero AMCC count\" @%s:%d`
+- `skip-mcc-off-to-s2r`
+- `DISPEXT AF NON-RT RD`
+- `i8@?0`
+- `IODeviceTree:/chosen`
+- `getDcsInstanceFromHashBitVal`
+- `dramcfg-data`
+- `%s:%d: AMCC %d Plane %d vDSID Profile counter cfg0(offset: 0x%x) set to 0x%llx\n\n`
+- `%s:%d: Initialized data stream object. Stream: %s, dsConfigIndex: %d\n\n`
+- `kGPU_Reads`
+- `\"%s: \" \"Unexpected provider\" @%s:%d`
+- `SBR AF WR`
+- `DSID 0 Hits`
+- `AMC Stats`
+- `%s:%d: dsidArray list is null\n\n`
+- `getWorkLoop()->inGate() == false`
+- `%s:%d: Error in arguments to getAllDSIDQuota\n\n`
+- `FABRIC VMID WR`
+- `copyDSIDs_block_invoke`
+- `mcc_debug`
+- `\"%s: \" \"Missing pointer to controller\" @%s:%d`
+- `\"%s: \" \"Total DCS channel count %u exceeds width of _dcsChannelEnableMask\" @%s:%d`
+- `PCIE AF RD`
+- `1211222`
+- `%s:%d: Invalid index %d into config array(max index: %d)\n\n`
+- `site.mem_aperture_t`
+- `kReserved3`
+- `ACCP DCS WR`
+- `PCIE DCS RD`
+- `DCS F6 RAS`
+- `site.AppleT8160MemCacheController`
+- `mcc_clampwaycount`
+- `%s:%d: Failed to setup PTD access\n`
+- `%s:%d: Stream:%s priority:%d DSID:[%d-%d] Policy:%d Size:%d Persistence:%d\n\n`
+- `memReadReg32`
+- `%s:%d: DSID Stats configuration entry count: %d\n\n`
+- `AVD AF RD`
+- `sendCommandToPMP`
+- `\"%s: \" \"Failed to create timer event source\" @%s:%d`
+- `\"%s: \" \"Call from outside workloop lock\" @%s:%d`
+- `%s:%d: mccSelectDynamicCacheMode: Ignoring request. MCC Way count is clamped to %d ways\n\n`
+- `kMSR_OverlappingRegions`
+- `kGPU_USCDataWrites`
+- `kDisplay1_FBReplay`
+- `DCS F4 RD`
+- `mcc_analyze`
+- `%s:%d: Failed to find pmp ptd-range property\n`
+- `%s:%d: Failed to create timer\n\n`
+- `Perf Counters`
+- `IODeviceTree:/arm-io/pmp0/iop-pmp0-nub`
+- `ptd-range`
+- `\"%s: \" \"PTD Dashboard space is not mapped\" @%s:%d`
+- `%s:%d: Client for id %d is already registered. Name: %s callbackOption: %d \n\n`
+- `%s:%d: Failed to alloc DataStream object\n\n`
+- `BWPerfCounters.cpp`
+- `GFX DCS RD`
+- `PRORES AF WR`
+- `registerForPeriodicCall`
+- `dsid_mgmt`
+- `kReserved2`
+- `\"Unexpected allocation policy(%d)\\n\" @%s:%d`
+- `getAmccInstanceLp6`
+- `%s:%d: DRAMECC: register error injection for ecc\n`
+- `%s:%d: Received unsupported selector %d\n\n`
+- `DISP DCS RT RD`
+- `DISPSEC AF GRT WR`
+- `PRORES AF RD`
+- `enableDataStream`
+- `%s:%d: Invalid arguments. Request ptr is null\n\n`
+- `%s:%d: Deprioritize on dsid %u. Offset(0x%x) <-- Value(0x%x)\n`
+- `%s:%d: Configuring cntr %d in array %d. Name:%s\n\n`
+- `%s:%d: Cntr: '%s' RegValue: %lld  RetValue:%lld\n`
+- `MemCacheEvent`
+- `dcs-count-per-amcc`
+- `%s:%d: failed to add commandgate to workloop event source\n`
+- `%s:%d: Unexpected data stream argument\n\n`
+- `enableDsidProfileCounters`
+- `%s:%d: Invalid counter type: %d for perfCounterId: %d\n\n`
+- `%s:%d: readPerfCounterByID: perfCounterId=%d, type=%d, aggregateCount=%d, finalValue=0x%llx\n\n`
+- `kMMU_DART`
+- `222222212`
+- `updateQuota`
+- `kDisplay_FBReplay`
+- `kDisplay_PDCData`
+- `kANE_IntermediateSpillsHi`
+- `kReserved7`
+- `ANEXL1 DCS RD`
+- `ATC AF RD`
+- `dsConfigEntry != NULL`
+- `fTarget`
+- `row-drop-mask`
+- `\"%s: \" \"Countrs for bld %d already set\" @%s:%d`
+- `kSC_Streams`
+- `ANE1 DCS WR`
+- `ISP DCS NON-RT WR`
+- `copyDataStreamInfo_block_invoke`
+- `%s:%d: deRegisterPeriodicCall\n\n`
+- `%s:%d: _chipId = 0x%x _chipRevision = 0x%x\n`
+- `%s:%d: _dieNum = %d _amccNum = %d _planeNumPerAMCC = %d _maxWayCount = %d\n`
+- `%s:%d: Waiting for Tag Ways:  cur_tag_way_count = %d\n`
+- `SBR DCS RD`
+- `SIO AF WR`
+- `pmp_ptd_db_reg_idx`
+- `getPTDIdx`
+- `%s:%d: enableDataStream: Failed to allocate DataStream object for stream %s\n\n`
+- `\"%s: \" \"Failed to map memory aperture %u\" @%s:%d`
+- `%s:%d: die-enable-mask: 0x%x\n\n`
+- `\"%s: \" \"SoCNI count %d is greater than number of SoCNI apertures(%d)\" @%s:%d`
+- `\"%s: \" \"dcs-count-per-amcc %u * amccsPerDie %u overflows uint32_t\" @%s:%d`
+- `\"Unknown counter type %d\\n\" @%s:%d`
+- `kSEP_ASC`
+- `ANEXL0 AF WR`
+- `DCS F7 PD duration(usec)`
+- `me != NULL`
+- `dataCollector`
+- `\"%s: \" \"Null event parameter\" @%s:%d`
+- `\"%s: \" \"Unexpected PTD Request entry count(%d)\" @%s:%d`
+- `mccSelectMCCDynamicClockGateMode`
+- `kISP_ClrProcTSegDmaDstWSeg`
+- `DISP AF GRT RD`
+- `DISPEXT DCS RT RD`
+- `initDCSThermalLoop`
+- `configurePeriodicTracer_block_invoke`
+- `flush-cache-on-panic`
+- `DISP DCS GRT RD`
+- `DCS F5 WR`
+- `setPTDAccess`
+- `disablePolicyManagement`
+- `\"%s has not been implemented by platform\" @%s:%d`
+- `%s:%d: DRAMECC: bank-group-drop-mask1 is missing in mcc node in EDT\n\n`
+- `amcc-reg-idx`
+- `DISPSEC AF NON-RT WR`
+- `DCS F9 RAS`
+- `%s:%d: Cache way count change not permitted when device is going to sleep or not completed wake\n\n`
+- `%s:%d: No device\n\n`
+- `GFXC DCS RD`
+- `ptd-ranges-smc`
+- `\"%s: \" \"Failed to create Cmd object\" @%s:%d`
+- `MemCachePolicyManager.cpp`
+- `AVD DCS WR`
+- `DCS F1 RAS`
+- `\"%s: \" \"NULL property string\" @%s:%d`
+- `\"%s: \" \"Unexpected null parameter for SetSRAMBufCacheSize\" @%s:%d`
+- `%s:%d: _quotaReqPtdEntryCount: %d _quotaRspPtdEntryCount:%d _cmdPtdEntryCount:%d _cmdAckPtdEntryCount:%d\n\n`
+- `\"%s: \" \"Failed to read ptd-range-ctrl2drv property\" @%s:%d`
+- `getDcsScFromHashBitVal`
+- `%s:%d: Way count changed to %d\n\n`
+- `%s:%d: Setting DCS power gate mode to %d\n\n`
+- `GFX AF WR`
+- `%s:%d: Failed to allocate memory of size %lu bytes\n\n`
+- `ptd-range-ctrl2drv`
+- `%s:%d: DRAMECC: Starting init mem hash param\n\n`
+- `amcc-count`
+- `\"%s: \" \"Failed to get register map for property %s\\n\" @%s:%d`
+- `com.apple.private.mcc.datacollection-access`
+- `DCS F8 CAS`
+- `setSRAMBufferSize_block_invoke`
+- `-disable_mcc`
+- `%s:%d: Failed to add timer event source\n\n`
+- `\"%s: \" \"Failed to get quota for the group %d\" @%s:%d`
+- `%s:%d: DRAMECC: bank-drop-mask0 is missing in mcc node in EDT\n\n`
+- `%s:%d: amcc-plane-enable-mask: 0x%x\n\n`
+- `setCounterConfigArray`
+- `getRequestedSize`
+- `\"%s: \" \"Failed to read ptd-range-drv2ctrl property\" @%s:%d`
+- `bank-group-drop-mask1`
+- `kGPU_RenderTarget`
+- `kDisplay1_BICReads`
+- `externalMethod`
+- `DISP AF RT WR`
+- `DISPSEC DCS NON-RT RD`
+- `SIO AF RD`
+- `AppleMemCacheFlushFunction`
+- `\"QuotaGroup %d is not supported\\n\" @%s:%d`
+- `dram-ecc`
+- `%s:%d: amcc-plane-enable-mask is not set in EDT. Setting default mask 0x%x\n`
+- `v12@?0I8`
+- `ISP DCS RT RD`
+- `DCS`
+- `121111121222121211111111111111111111111111111121111111111111111111111111111111111111111111111111111111111111111111111111112111111121211111212221122222222222211111112111121211121212121212`
+- `amcc-plane-enable-mask`
+- `ACCE AF RD`
+- `ANEXL1 DCS WR`
+- `mccDramAccessDisable`
+- `DISP DCS NON-RT WR`
+- `PRORES DCS WR`
+- `panic-save-reg-idx`
+- `kANE_Victims`
+- `%s:%d: readPTD: index: 0x%x msg: 0x%08llx\n\n`
+- `registerClient_block_invoke`
+- `\"%s: \" \"Unexpected input parameter\" @%s:%d`
+- `%s:%d: Invalid arguments.\n\n`
+- `MemCacheCIP.cpp`
+- `kReserved1`
+- `site.AppleMCCUserClientV2`
+- `%s:%d: disableDataStream for stream %s\n\n`
+- `\"%s: \" \"AMCC aperture 0 not mapped correctly\" @%s:%d`
+- `%s:%d: finished\n`
+- `DISPSEC DCS RT RD`
+- `PRORES DCS RD`
+- `ISP DCS NON-RT RD`
+- `disableDataStream`
+- `%s:%d: Failed to map memory descriptor to copy data stream info\n\n`
+- `%s:%d: Policy manager not available to clamp way count\n\n`
+- `%s:%d: DSID management is disabled, but streams are loaded for enumeration\n`
+- `\"Quota Group %d allocation policy conflict: stream '%s' has policy %d, but quota group already assigned policy %d\\n\" @%s:%d`
+- `%s:%d: enableDataStream: Ignoring request from non-user client\n\n`
+- `%s:%d: Invalid data stream id: %d\n\n`
+- `mapApertures`
+- `getAllDSIDQuotaUseCount`
+- `kCompressedMetaData`
+- `\"%s: \" \"Failed to get PTD index for property ptd-ranges-smc\" @%s:%d`
+- `%s:%d: super start failed\n`
+- `%s:%d: No EDT entry for property %s\n\n`
+- `\"%s: \" \"Invalid Plane %d. PlaneEnableMask:0x%x\" @%s:%d`
+- `FABRIC VOVD WR`
+- `DSID 0 Misses`
+- `%s:%d: Available cache size changed to %d bytes\n\n`
+- `config-data`
+- `mccInitPerfCounters`
+- `kPMP_ASC`
+- `0x%x (UNDEFINED)`
+- `DCS F5 PD duration(usec)`
+- `%s:%d: Sleeping on event cmdId %d\n\n`
+- `site.MCDataStream`
+- `%s:%d: %s aperture %u map %p base %p length %p physical address %p\n`
+- `restoreDefaultQuotas`
+- `kDSID0`
+- `kPCIe_Link`
+- `DCS F5 CAS`
+- `I`
+- `socni-reg-idx`
+- `\"%s: \" \"way_count %d greater than %d\\n\" @%s:%d`
+- `kANE_Prefetch`
+- `DCS F7 RAS`
+- `periodicTracer`
+- `121111`
+- `%s:%d: DRAMECC: amccInstance %u dcsNumber %u\n\n`
+- `\"%s: \" \"DCS aperture 0 not mapped correctly\" @%s:%d`
+- `%s:%d: gIOPlatformWakeActionKey\n`
+- `kGPU_SparseTranslationReads`
+- `root`
+- `DISPSEC DCS RT WR`
+- `%s:%d: registerForPeriodicCall: timer already registered\n\n`
+- `FABRIC VMAX WR`
+- `DISP DCS NON-RT RD`
+- `ISP AF NON-RT WR`
+- `DCS F6 CAS`
+- `%s:%d: Failed to read required PMP properties\n`
+- `ds != NULL`
+- `\"%s: \" \"Failed to read %s property\" @%s:%d`
+- `kSMC_ASC`
+- `%s:%d: Failed to get info about streamId %d. rc:0x%x\n\n`
+- `%s:%d: Instance %u offset %#x @ %p <- %#x\n`
+- `%s:%d: writePTD: index: 0x%x msg:0x%08llx\n\n`
+- `site.MemCacheCommandQueue`
+- `%s:%d: DRAMECC: rank-drop-mask0 is missing in mcc node in EDT\n\n`
+- `%s:%d: Mem descriptor pointer is null\n\n`
+- `DISPSEC DCS GRT WR`
+- `DCS F5 SR duration(usec)`
+- `mc_cmd_ack_ptd_count`
+
+**[__TEXT.__os_log]**
+
+- `Failed to setup timer for data collection\n`
+- `Policy manager not available to clamp way count\n`
+- `Found -disable_mcc in boot-args, will skip switching to M$ into cache mode`
+- `Limiting data collection counters to %d\n`
+- `Failed to find handle %d for property %s`
+- `registerForPeriodicCall: timer already registered\n`
+- `Each AMCC cache size: %d bytes\n`
+- `Setting quota for DSID group %d(offset:0x%x) to 0x%llx\n`
+- `Request on stream %s for size 0x%x bytes. Current stream size: 0x%x\n`
+- `amcc-enable-mask is not set in EDT. Setting it to 0x%x\n`
+- `Error in arguments to getAllDSIDQuota\n`
+- `AMCC %d Plane %d vDSID Profile counter %d cfg1(offset: 0x%x) set to 0x%llx\n`
+- `Setting config params for cntr %d in array %d. Name:%s\n`
+- `  Counter[%d]: type=%d, idx=%d, blkNum=%d, valOffset=0x%x, totalValue=0x%llx\n`
+- `Failed to create mem descriptor for shared data queue\n`
+- `DRAMECC: bank-group-drop-mask0 is missing in mcc node in EDT\n`
+- `mccSelectDCSDynamicClockGateMode: unsupported mode %u\n`
+- `Setting MCC clock gate mode to %d\n`
+- `Quota usage for DSID group %d(offset:0x%x) is 0x%llx\n`
+- `AMCC %d Plane %d vDSID Profile counter Enable(offset: 0x%x) set to 0x%llx\n`
+- `Enabling cntr %d in array %d. Name:%s\n`
+- `Client for id %d is already registered. Name: %s callbackOption: %d \n`
+- `Waiting for Data Ways:   target = %d cur_data_way_count = %d     reg = %x`
+- `cacheFlush: Waiting for plane %d cache flush to complete\n`
+- `Enabling DCS thermal control loop \n`
+- `_quotaReqPtdIdx:0x%x _quotaRspPtdIdx:0x%x _cmdPtdIdx:0x%x _cmdAckPtdIdx:0x%x\n`
+- `Datastreams are not configured yet\n`
+- `disableDataStream for stream %s\n`
+- `User Client only mode: %d\n`
+- `ReadReg64 Instance %u offset %#x @ %p -> %#llx\n`
+- `Previous deprioritize request on dsid %d failed. status:0x%x\n`
+- `Deprioritize on dsid %u. Offset(0x%x) <-- Value(0x%x)`
+- `Failed to add timer event source\n`
+- `EnQueued event \n`
+- `Sleeping on event cmdId %d\n`
+- `die-enable-mask: 0x%x\n`
+- `finished`
+- `AMCC %d vDSID Profile counter(offset: 0x%x) sampling interval set to 0x%x\n`
+- `Could not alloc _mccPerfCountersLock`
+- `SoCNI does not exist for this SoC. Setting _socniApertureCnt to 0x0`
+- `deRegisterPeriodicCall\n`
+- `SRAM buffer allocated when part of the cache is disabled. clamped way count:%d\n`
+- `MemCache Policy Management is disabled\n`
+- `enableDataStream: Ignoring request from non-user client\n`
+- `disableDataStream: Invalid arguments\n`
+- `Failed to find config entry for DataStream %s\n`
+- `M$PMP %x, %x, %llx \n`
+- `Failed to allocate memory for data packet(size: %u)\n`
+- `Invalid timer argument\n`
+- `AppleMemCacheDataSetsFunctionV2::callFunction action:%ld\n`
+- `_chipId = 0x%x _chipRevision = 0x%x`
+- `dcs-channel-enable-mask (per-die from EDT): 0x%llx\n`
+- `gIOPlatformWakeActionKey`
+- `Way count clamped to %d ways\n`
+- `mccSelectMCCDynamicClockGateMode: unsupported mode %u\n`
+- `writePTD: index: 0x%x msg:0x%08llx\n`
+- `Invalid client id %d\n`
+- `Stream:%s priority:%d DSID:[%d-%d] Policy:%d Size:%d Persistence:%d\n`
+- `M$PMP CMD %x, %d \n`
+- `Setting MCC power gate mode to %d\n`
+- `DRAMECC: PA received is 0x%lx\n`
+- `No data collection buffer available\n`
+- `There is no shared data queue\n`
+- `Failed to copy mcache streams data`
+- `enableDataStream: Failed to allocate DataStream object for stream %s\n`
+- `DRAMECC: Not able to get dcs hashing result. Aborting error injection\n`
+- `Setting persistence level of DSID Group %d(Offset:0x%x) to %d\n`
+- `DSID Stats configuration entry count: %d\n`
+- `Stream %s instance %d is greater than max supported instances(%d)\n`
+- `Request for size on stream %s instance %d is invalid`
+- `amcc %d plane %d`
+- `WriteReg32 Instance %u offset %#x @ %p <- %#x\n`
+- `EndingDSIDGroup value %d are invalid\n`
+- `Found mcc_clampwaycount in boot-args. Way count clamped to %d ways\n`
+- `DSID management is disabled\n`
+- `MemCache Policy management is disabled\n`
+- `DRAMECC: amccInstance %u dcsNumber %u\n`
+- `socni-enable-mask is not set in EDT. Setting it to 0x%x\n`
+- `Cache way count change not permitted when device is going to sleep or not completed wake\n`
+- `mccSelectDCSDynamicPowerGateMode: unsupported mode %u\n`
+- `Setting DCS power gate mode to %d\n`
+- `Failed to find pmp ptd-range property`
+- `Failed to to find data stream object for stream %d\n`
+- `Failed to alloc/initialize client object\n`
+- `DRAMECC: bank-drop-mask0 is missing in mcc node in EDT\n`
+- `Changing way count to %d\n`
+- `mccSelectDynamicCacheMode() called with mode=%d\n`
+- `ReadReg Instance %u offset %#x @ %p -> %#x\n`
+- `WriteReg64 Instance %u offset %#x @ %p <- %#llx\n`
+- `Blocking on for command completion\n`
+- `Failed to alloc DataStream object\n`
+- `Disabling DRAM access...\n`
+- `StaringDSIDGroup(%d) is greater than EndingDSIDGroup(%d)\n`
+- `AMCC %d Plane %d vDSID Profile counter cfg0(offset: 0x%x) set to 0x%llx\n`
+- `Could not allocation reporter set`
+- `Wokeup on on event cmdId %d\n`
+- `Failed to allocate DataStream object for stream %s\n`
+- `DRAMECC: Starting init mem hash param\n`
+- `gIOPlatformSleepActionKey`
+- `Mapped address space for property %s\n`
+- `DSID group %d(offset:0x%x) quota is 0x%llx\n`
+- `De-prioritize request on dsid %u is invalid`
+- `Cntr: '%s' RegValue: %lld  RetValue:%lld`
+- `Updating assigned size for stream %s to 0x%x -> 0x%x bytes`
+- `Received unsupported type %d\n`
+- `Periodic tracer interval set to %dms\n`
+- `Failed to setup initial quota config`
+- `DRAMECC: rank-drop-mask0 is missing in mcc node in EDT\n`
+- `Invalid persistence value %d. Only 'Replaceable' and 'NonReplaceable' are supported\n`
+- `Failed to get property %s`
+- `DSID management is disabled, but streams are loaded for enumeration`
+- `failed to create commandgate`
+- `readPerfCounterByID: perfCounterId=%d, type=%d, aggregateCount=%d, finalValue=0x%llx\n`
+- `Unsupported streamId %u.\n`
+- `This process didn't enable data collection\n`
+- `Instance %u offset %#x @ %p <- %#x`
+- `Failed to setup timer for periodic tracing\n`
+- `Notifying client '%s' on stream '%s'. Size: 0x%x\n`
+- `Invalid arguments.\n`
+- `DRAMECC: bank-group-drop-mask1 is missing in mcc node in EDT\n`
+- `DRAMECC: row-drop-mask is missing in mcc node in EDT\n`
+- `AMCCPlaneOffset = %x`
+- `regIdx = %d _apertureNum = %d _apertureEnableMask = 0x%llx`
+- `Received request with selector %d\n`
+- `Failed to read required PMP properties`
+- `Ignoring invalid stream id %d\n`
+- `Waiting for Tag Ways:  cur_tag_way_count = %d`
+- `Failed to add timer to workloop\n`
+- `Sending command to PMP\n`
+- `Received ack for cmd id:%d\n`
+- `_socniNum = %d _socniEnableMask = 0x%x`
+- `Invalid counter type: %d for perfCounterId: %d\n`
+- `Invalid arguments\n`
+- `Invalid arguments to registerForPeriodicCall()\n`
+- `enableDataStream for stream %s size %d from driverInstance %d\n`
+- `_dcsNumChannels = %d _dcsEnableMask = 0x%llx`
+- `mccSelectDynamicDRAMCFGMode requested mode %u\n`
+- `Configuring cntr %d in array %d. Name:%s\n`
+- `Received unsupported selector %d\n`
+- `Failed to allocate memory of size %lu bytes\n`
+- `StreamID: %x, ClientID: %x, Size: %x\n`
+- `Stream:%s startingQuotaGroup:%d endingQuotaGroup:%d priority:%d DSID:[%d-%d] Policy:%d Size:%d Persistence:%d\n`
+- `Disable all data streams\n`
+- `Deprioritize on stream %s on request from client\n`
+- `failed to add commandgate to workloop event source`
+- `Way count changed to %d\n`
+- `Failed to usage count for DSID group %d\n`
+- `registerForPeriodicCall registered\n`
+- `_quotaReqPtdEntryCount: %d _quotaRspPtdEntryCount:%d _cmdPtdEntryCount:%d _cmdAckPtdEntryCount:%d\n`
+- `Invalid data stream id: %d\n`
+- `amcc-plane-enable-mask is not set in EDT. Setting default mask 0x%x`
+- `DRAMECC: register error injection for ecc`
+- `getMCCConfigData:MCC max configs = %u`
+- `mccSelectDynamicDRAMCFGMode() called with mode=%d\n`
+- `mccSelectMCCDynamicPowerGateMode: unsupported mode %u\n`
+- `Force updating ds %s to size %d\n`
+- `enableDataStream Writing to MCache-PMP for quota group %d, Requested Size :%d, Flags: 0x%x\n`
+- `DRAMECC: bank-drop-mask1 is missing in mcc node in EDT\n`
+- `%s aperture %u map %p base %p length %p physical address %p`
+- `Flushing Mem Cache ...`
+- `DSID group %d(offset:0x%x) quota use count is 0x%llx\n`
+- `Unexpected data stream argument\n`
+- `DSID Profile counters are not enabled for this config`
+- `Failed to setup PTD access`
+- `Unsupported streamId value %u\n`
+- `Failed to get DS configuration\n`
+- `DRAMECC: Invalid register table for memory hashing\n`
+- `mccWaitForWaysPwrOn() called with tgt_way_cnt = %d`
+- `Error in arguments to getDSIDGroupQuotaUseCount\n`
+- `Invalid DSID group %d\n`
+- `Initialized data stream object. Stream: %s, dsConfigIndex: %d\n`
+- `readPTD: index: 0x%x msg: 0x%08llx\n`
+- `Way count cannot be clamped when SRAM buffer is allocated\n`
+- `Periodic tracer is disabled\n`
+- `Invalid index %d into config array(max index: %d)\n`
+- `socni-enable-mask: 0x%x\n`
+- `AMCC %d Plane %d single vDSID Profile counter(offset: 0x%x) set to 0x%llx\n`
+- `Memory descriptor prepare failure. rc:0x%x\n`
+- `Mem descriptor pointer is null\n`
+- `DeQueued event\n`
+- `Available cache size changed to %d bytes\n`
+- `SRAM Buffer size changed to %d bytes\n`
+- `enableDataStream: Invalid data stream id: %d\n`
+- `Invalid arguments. Request ptr is null\n`
+- `AMCCPlaneStride = %x`
+- `gIOPlatformActiveActionKey`
+- `mccSelectDynamicCacheMode: Ignoring request. MCC Way count is clamped to %d ways\n`
+- `dsidArray list is null\n`
+- `Setting DCS clock gate mode to %d\n`
+- `Failed to get info about streamId %d. rc:0x%x\n`
+- `No device\n`
+- `%s: EDT blob too small (%u bytes, need %zu)`
+- `Failed to initialize shared data queue`
+- `registerForPeriodicCall timer set to %d us. _timerInterval:%d ms\n`
+- `Command completed\n`
+- `enableDataStreamForTest for stream %s size %d from driverInstance %d\n`
+- `die-enable-mask is not set in EDT. Setting it to 0x%x\n`
+- `amcc-enable-mask: 0x%x\n`
+- `Unexpected arguments\n`
+- `Failed to create timer\n`
+- `dcs-channel-enable-mask not in EDT; defaulting to 0x%llx`
+- `No EDT entry for property %s\n`
+- `Failed to get quota for group %d. rc:0x%x\n`
+- `Invalid arguments. param1:%p param2:%p\n`
+- `Invalid perfCounterId: %d (max: %d)\n`
+- `Failed to map memory descriptor to copy data stream info\n`
+- `amcc-plane-enable-mask: 0x%x\n`
+- `_dieNum = %d _amccNum = %d _planeNumPerAMCC = %d _maxWayCount = %d`
+- `super start failed`

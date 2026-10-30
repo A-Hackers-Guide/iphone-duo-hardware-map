@@ -1,0 +1,71 @@
+# `MTLLegacySVAccelerationStructureCommandEncoder`
+
+- Image: [`/System/Library/PrivateFrameworks/MetalTools.framework/MetalTools`](../userland/System__Library__PrivateFrameworks__MetalTools.framework__MetalTools.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `MTLToolsAccelerationStructureCommandEncoder`
+- 5 instance variables, 0 properties, 51 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"MTLLegacySVCommandBuffer" _commandBuffer;
+{list<LegacySVResourceAndUsage, std::allocator<LegacySVResourceAndUsage>>="__end_"{__list_node_base<LegacySVResourceAndUsage, void *>="__prev_"^v"__next_"^v}""{?="__size_"Q}} _LegacySVResourceAndUsageList;
+{list<id<MTLHeap>, std::allocator<id<MTLHeap>>>="__end_"{__list_node_base<id<MTLHeap>, void *>="__prev_"^v"__next_"^v}""{?="__size_"Q}} _heapList;
+@"MTLAccelerationStructurePassDescriptor" _accelerationStructurePassDescriptor;
+@"<MTLLibrary>" _accelerationStructureSupportLibrary;
+```
+
+## Instance methods
+
+```
+-[MTLLegacySVAccelerationStructureCommandEncoder waitForFence:];
+-[MTLLegacySVAccelerationStructureCommandEncoder useResources:count:usage:];
+-[MTLLegacySVAccelerationStructureCommandEncoder useResource:usage:];
+-[MTLLegacySVAccelerationStructureCommandEncoder updateFence:];
+-[MTLLegacySVAccelerationStructureCommandEncoder useHeap:];
+-[MTLLegacySVAccelerationStructureCommandEncoder useHeaps:count:];
+-[MTLLegacySVAccelerationStructureCommandEncoder sampleCountersInBuffer:atSampleIndex:withBarrier:];
+-[MTLLegacySVAccelerationStructureCommandEncoder endEncoding];
+-[MTLLegacySVAccelerationStructureCommandEncoder dealloc];
+-[MTLLegacySVAccelerationStructureCommandEncoder serializeAccelerationStructure:toBuffer:serializedBufferOffset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder buildAccelerationStructure:descriptor:scratchBuffer:scratchBufferOffset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder copyAccelerationStructure:toAccelerationStructure:];
+-[MTLLegacySVAccelerationStructureCommandEncoder copyAndCompactAccelerationStructure:toAccelerationStructure:];
+-[MTLLegacySVAccelerationStructureCommandEncoder deserializeAccelerationStructure:fromBuffer:serializedBufferOffset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder deserializeAccelerationStructure:primitiveAccelerationStructures:fromBuffer:serializedBufferOffset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder deserializeInstanceAccelerationStructure:primitiveAccelerationStructures:fromBuffer:serializedBufferOffset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder deserializeInstanceAccelerationStructure:primitiveAccelerationStructures:fromBuffer:serializedBufferOffset:withDescriptor:];
+-[MTLLegacySVAccelerationStructureCommandEncoder deserializePrimitiveAccelerationStructure:fromBuffer:serializedBufferOffset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder deserializePrimitiveAccelerationStructure:fromBuffer:serializedBufferOffset:withDescriptor:];
+-[MTLLegacySVAccelerationStructureCommandEncoder refitAccelerationStructure:descriptor:destination:scratchBuffer:scratchBufferOffset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder refitAccelerationStructure:descriptor:destination:scratchBuffer:scratchBufferOffset:options:];
+-[MTLLegacySVAccelerationStructureCommandEncoder serializeInstanceAccelerationStructure:primitiveAccelerationStructures:toBuffer:serializedBufferOffset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder serializePrimitiveAccelerationStructure:toBuffer:serializedBufferOffset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder writeAccelerationStructureSerializationData:toBuffer:offset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder writeCompactedAccelerationStructureSize:toBuffer:offset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder writeCompactedAccelerationStructureSize:toBuffer:offset:sizeDataType:];
+-[MTLLegacySVAccelerationStructureCommandEncoder writeDeserializedAccelerationStructureSize:serializedOffset:toBuffer:sizeBufferOffset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder writeDeserializedPrimitiveAccelerationStructureSizes:serializedOffset:toBuffer:sizesBufferOffset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder writeGenericBVHStructureOfAccelerationStructure:headerBuffer:headerBufferOffset:innerNodeBuffer:innerNodeBufferOffset:leafNodeBuffer:leafNodeBufferOffset:primitiveBuffer:primitiveBufferOffset:geometryBuffer:geometryOffset:instanceTransformBuffer:instanceTransformOffset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder writeGenericBVHStructureOfAccelerationStructure:into:];
+-[MTLLegacySVAccelerationStructureCommandEncoder writeGenericBVHStructureSizesOfAccelerationStructure:into:];
+-[MTLLegacySVAccelerationStructureCommandEncoder writeGenericBVHStructureSizesOfAccelerationStructure:toBuffer:sizesBufferOffset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder writeGeometryOfAccelerationStructure:toBuffer:geometryBufferOffset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder writeGeometrySizeOfAccelerationStructure:toBuffer:sizeBufferOffset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder writeSerializedAccelerationStructureSize:toBuffer:sizeBufferOffset:];
+-[MTLLegacySVAccelerationStructureCommandEncoder blitAccelerationStructureType:toAccelerationStructure:];
+-[MTLLegacySVAccelerationStructureCommandEncoder blitChildrenWrappersBufferAddress:toAccelerationStructure:];
+-[MTLLegacySVAccelerationStructureCommandEncoder blitChildrenWrappersBufferFromAcceleratrionStructure:toAccelerationStructure:];
+-[MTLLegacySVAccelerationStructureCommandEncoder blitInstanceTypetoAccelerationStructure:];
+-[MTLLegacySVAccelerationStructureCommandEncoder blitPrimitiveTypetoAccelerationStructure:];
+-[MTLLegacySVAccelerationStructureCommandEncoder blitTypeFromAccelerationStructure:toAccelerationStructure:];
+-[MTLLegacySVAccelerationStructureCommandEncoder blitTypeFromAccelerationStructureDescriptor:toAccelerationStructure:];
+-[MTLLegacySVAccelerationStructureCommandEncoder createChildrenWrappersBufferWithASDescriptor:];
+-[MTLLegacySVAccelerationStructureCommandEncoder createChildrenWrappersBufferWithIASDescriptor:];
+-[MTLLegacySVAccelerationStructureCommandEncoder createChildrenWrappersBufferWithIndirectIASDescriptor:];
+-[MTLLegacySVAccelerationStructureCommandEncoder createChildrenWrappersBufferWithInstanceDescriptorBuffer:maxInstanceCount:instanceCountBuffer:instanceCountBufferOffset:instanceDescriptorStride:instanceDescriptorBufferOffset:instanceDescriptorType:accelerationStructureIDs:];
+-[MTLLegacySVAccelerationStructureCommandEncoder destroyBaseAccelerationStructureCommandEncoder];
+-[MTLLegacySVAccelerationStructureCommandEncoder encodeUnwrapAccelerationStructureDescriptor:];
+-[MTLLegacySVAccelerationStructureCommandEncoder initWithAccelerationStructureCommandEncoder:parent:accelerationStructurePassDescriptor:];
+-[MTLLegacySVAccelerationStructureCommandEncoder newBaseAccelerationStructureCommandEncoder];
+-[MTLLegacySVAccelerationStructureCommandEncoder psoWithFunctionName:];
+```

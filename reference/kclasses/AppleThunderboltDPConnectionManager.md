@@ -1,0 +1,72 @@
+# `AppleThunderboltDPConnectionManager`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.driver.AppleThunderboltDPAdapterFamily`](../kexts/com.apple.driver.AppleThunderboltDPAdapterFamily.md)
+- Object size: `0xe8` (232 bytes)
+- Metaclass: `0xfffffe000b9d15b8`; metaclass vtable `0xfffffe0008279420`; class vtable `0xfffffe0008278e68`
+- Registration (init): `0xfffffe0009912848`
+- Superclasses: [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## Strings in its kext that name it (60)
+
+- `%lldus AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - TBT depth = %u < TBT depth %u, prioritizing [%u:0x%08llx:0x%x] over [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - port number = %u < port number %u, prioritizing [%u:0x%08llx:0x%x] over [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager(%u)::broadcastUpdateEstimatedBandwidth - an adapter requested broadcast estimated bandwidth update\n`
+- `AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - ERROR: couldn't cast objects to DP adapters!, obj1 = %p, obj2 = %p\n`
+- `%lldus AppleThunderboltDPConnectionManager(%u)::evaluateGroupIDForRouteString - route = 0x%llx\n`
+- `\"AppleThunderboltDPConnectionManager(%u)::evaluateGroupIDForRouteString - UNEXPECTED ERROR: Out of Group IDs! group_id = %u route = 0x%08llx\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - Adapter wants to deactivate = %u > Adapter wants to deactivate = %u, prioritizing [%u:0x%08llx:0x%x] over [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager(%u)::broadcastUpdateEstimatedBandwidth - requesting update estimated bandwidth for adapter at [%u:0x%llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::dispatchEvaluateConnections - evaluateConnections() is already running, request re-evaluation and exit\n`
+- `%lldus AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - Adapter wants to deactivate = %u < Adapter wants to deactivate = %u, prioritizing [%u:0x%08llx:0x%x] over [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - Adapter has HPD deassert = %u < Adapter has HPD deassert = %u, prioritizing [%u:0x%08llx:0x%x] over [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - Adapter has bandwidth allocation request = %u < Adapter has bandwidth allocation request = %u, prioritizing [%u:0x%08llx:0x%x] over [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::free\n`
+- `%lldus AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - Adapter failed to light = %u < Adapter failed to light = %u, prioritizing [%u:0x%08llx:0x%x] over [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::evaluateConnections - found %d DPI ports @ route 0x%llx\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::evaluateConnections - There are DP ports without registered adapters, wait until all adapters are registered. (%d registered adapters, %d registered ports, %d ports in topology)\n`
+- `AppleThunderboltDPConnectionManager(%u)::compareByDefaultActivationOrder - ERROR: Found 2 port objects with the same depth (%u), route string (0x%08llx), and port number (%u), adapter1<%p>, adapter2<%p>!\n`
+- `%lldus AppleThunderboltDPConnectionManager(%u)::evaluateGroupIDForRouteString - found adapter [%u:0x%llx:0x%x] for current group\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::checkForAdapterFailedToLight - An activated DP adapter that failed to light exists [%u:0x%llx:0x%x], adapter failed to light exists = %u\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::evaluateConnections - found %u switches at depth %u\n`
+- `AppleThunderboltDPConnectionManager`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::evaluateConnections - Registered DP adapter count exceeds DP port count.. there are likely terminating adapters (%d registered adapters, %d registered ports, %d ports in topology)\n`
+- `%lldus AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - Adapter failed to light = %u > Adapter failed to light = %u, prioritizing [%u:0x%08llx:0x%x] over [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::notifyNeedEvaluation - DP adapter at [%u:0x%llx:0x%x] requested evaluation\n`
+- `%lldus AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - Adapter has bandwidth allocation request = %u > Adapter has bandwidth allocation request = %u, prioritizing [%u:0x%08llx:0x%x] over [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::checkForHigherPriorityPendingEvaluations - DP adapter at [%u:0x%llx:0x%x] checking for higher priority pending evaluations\n`
+- `%lldus AppleThunderboltDPConnectionManager(%u)::evaluateGroupIDForRouteString - found existing Group ID %u for route 0x%llx\n`
+- `%lldus AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - Adapter has desired state = %u > Adapter has desired state = %u, prioritizing [%u:0x%08llx:0x%x] over [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - Adapter has HPD assert = %u < Adapter has HPD assert = %u, prioritizing [%u:0x%08llx:0x%x] over [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::checkForHigherPriorityPendingEvaluations - Highest priority DP adapter is [%u:0x%llx:0x%x], higher priority evaluation exists = %u\n`
+- `%lldus AppleThunderboltDPConnectionManager(%u)::evaluateGroupIDForRouteString - freed existing Group ID %u for route 0x%llx\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::evaluateConnections - found %d DPO ports @ route 0x%llx\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::evaluateConnections - re-evaluation requested, dispatching evaluation\n`
+- `%lldus AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - Adapter waiting to terminate = %u > Adapter waiting to terminate = %u, prioritizing [%u:0x%08llx:0x%x] over [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - route string = 0x%08llx < route string 0x%08llx, prioritizing [%u:0x%08llx:0x%x] over [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - TBT depth = %u > TBT depth %u, prioritizing [%u:0x%08llx:0x%x] over [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager(%u)::evaluateGroupIDForRouteString - allocated Group ID %u for route 0x%llx\n`
+- `\"AppleThunderboltDPConnectionManager(%u)::evaluateGroupIDForRouteString - UNEXPECTED ERROR: Tried to free an invalid Group ID! old_group_id = %u route = 0x%08llx\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPConnectionManager(%u)::evaluateGroupIDForRouteString - allocated Group ID %u (=%u) for adapter at [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager(%u)::evaluateGroupIDForRouteString - done, status = 0x%08x\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::evaluateConnections - checking for DP ports at depth %u\n`
+- `%lldus AppleThunderboltDPConnectionManager(%u)::evaluateGroupIDForRouteString - UNEXPECTED ERROR: Tried to free an invalid Group ID! old_group_id = %u route = 0x%08llx\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::evaluateConnections - done with iteration, fReevaluationRequested = %d\n`
+- `%lldus AppleThunderboltDPConnectionManager(%u)::evaluateGroupIDForRouteString - using Group ID %u for route 0x%llx\n`
+- `%lldus AppleThunderboltDPConnectionManager(%u)::broadcastUpdateEstimatedBandwidth - done, status = 0x%08x\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::evaluateConnections - start\n`
+- `%lldus AppleThunderboltDPConnectionManager(%u)::evaluateGroupIDForRouteString - assigning Group ID %u to adapter [%u:0x%llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::evaluateConnections - All ports in the topology have a registered DP adapter!\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::evaluateConnections - found %d DP ports in the topology\n`
+- `%lldus AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - Adapter waiting to terminate = %u < Adapter waiting to terminate = %u, prioritizing [%u:0x%08llx:0x%x] over [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::registerDPAdapter - %s DP adapter at [%u:0x%llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager(%u)::evaluateGroupIDForRouteString - UNEXPECTED ERROR: Out of Group IDs! group_id = %u route = 0x%08llx\n`
+- `AppleThunderboltDPConnectionManager(%u)::evaluateGroupIDForRouteString - WARNING: failed to assign Group ID for adapter at [%u:0x%08llx:0x%x], tmp_status = 0x%08x, continuing\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::evaluateConnections - Registered DP adapter count matches DP port count! (%d registered adapters, %d registered ports, %d ports in topology)\n`
+- `\"AppleThunderboltDPConnectionManager(%u)::evaluateGroupIDForRouteString - UNEXPECTED ERROR: Two or more adapters in the same group have different Group IDs! (%u != %u) [%u:0x%llx:0x%x]\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - route string = 0x%08llx > route string 0x%08llx, prioritizing [%u:0x%08llx:0x%x] over [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager<%p>(%u)::dispatchEvaluateConnections - dispatching evaluateConnections()\n`
+- `%lldus AppleThunderboltDPConnectionManager::compareByDefaultActivationOrder - upstream cio port number is %u and the other adapter's port number is %u, prioritizing [%u:0x%08llx:0x%x] over [%u:0x%08llx:0x%x]\n`
+- `%lldus AppleThunderboltDPConnectionManager(%u)::evaluateGroupIDForRouteString - found just one active adapter for route 0x%llx\n`
+- `%lldus AppleThunderboltDPConnectionManager(%u)::evaluateGroupIDForRouteString - UNEXPECTED ERROR: Two or more adapters in the same group have different Group IDs! (%u != %u) [%u:0x%llx:0x%x]\n`

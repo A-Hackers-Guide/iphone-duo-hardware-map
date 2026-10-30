@@ -1,0 +1,351 @@
+# `/System/Library/DriverExtensions/AppleCentauriAlpha.dext/Info.plist`
+
+From the erase/recovery restore ramdisk (141-28940-105.dmg, runs restored_external). 5,870 bytes.
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleDisplayName`: `AppleCentauriAlpha`
+- `CFBundleExecutable`: `AppleCentauriAlpha`
+- `CFBundleIdentifier`: `com.apple.driver.AppleCentauriAlpha`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleCentauriAlpha`
+- `CFBundlePackageType`: `DEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSupportedPlatforms`:
+  - `DriverKit`
+- `CFBundleVersion`: `1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `driverkit`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: ``
+- `DTSDKName`: `driverkit.iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `EnableCoreDumps`: `True`
+- `IOKitPersonalities`:
+  - `AirshipDriverAlpha`:
+    - `AirshipDeviceClass`: `CentauriSubsystemPCI`
+    - `AirshipDriverName`: `AirshipDriverDKAlpha`
+    - `CFBundleIdentifier`: `com.apple.driver.AppleCentauriAlpha`
+    - `CFBundleIdentifierKernel`: `com.apple.kpi.iokit`
+    - `CentauriHelperInterfaceUserClient`:
+      - `IOClass`: `IOUserUserClient`
+      - `IOPMAOTAllow`: `128`
+      - `IOUserClass`: `AirshipCentauriHelperInterfaceUserClient`
+    - `CentauriHelperMemregionUserClient`:
+      - `IOClass`: `IOUserUserClient`
+      - `IOPMAOTAllow`: `128`
+      - `IOUserClass`: `AirshipCentauriHelperMemregionUserClient`
+    - `CentauriHelperTimesyncUserClient`:
+      - `IOClass`: `IOUserUserClient`
+      - `IOPMAOTAllow`: `128`
+      - `IOUserClass`: `AirshipCentauriHelperTimesyncUserClient`
+    - `IOClass`: `IOUserService`
+    - `IOMatchCategory`: `AirshipDriverDK`
+    - `IONameMatch`: `CentauriAlpha`
+    - `IOProviderClass`: `IOUserService`
+    - `IOUserClass`: `AirshipDriverDK`
+    - `IOUserServerName`: `com.apple.driver.AppleCentauriAlpha`
+    - `IOUserServerOneProcess`: `True`
+  - `AppleWLANDriver`:
+    - `AirshipDeviceCriteria`:
+      - `Category`: `CentauriAlpha`
+      - `Chipset`: `proxima`
+      - `Vendor`: `Centauri`
+    - `AppleWLANCLIUserClientProperties`:
+      - `IOClass`: `IOUserUserClient`
+      - `IOUserClass`: `AppleWLANCLIUserClient`
+    - `AppleWLANVendorUserClientProperties`:
+      - `IOClass`: `IOUserUserClient`
+      - `IOUserClass`: `AppleWLANVendorUserClient`
+    - `AppleWLANWDUserClientProperties`:
+      - `IOClass`: `IOUserUserClient`
+      - `IOUserClass`: `AppleWLANWDUserClient`
+    - `CFBundleIdentifier`: `com.apple.driver.AppleCentauriAlpha`
+    - `CFBundleIdentifierKernel`: `com.apple.kpi.iokit`
+    - `CoreCaptureIOServiceProperties`:
+      - `CCCaptureIOServiceProperties`:
+        - `IOClass`: `CCIOService`
+        - `IOUserClass`: `CCIOService`
+      - `CoreCaptureDataPipeUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `CCDataPipeUserClient`
+      - `CoreCaptureLogPipeUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `CCLogPipeUserClient`
+      - `CoreCaptureStreamProperties`:
+        - `IOClass`: `CCIOService`
+        - `IOUserClass`: `CCIOService`
+      - `IOClass`: `CCIOService`
+      - `IOUserClass`: `CCIOService`
+    - `IOClass`: `IOUserService`
+    - `IOMatchCategory`: `AppleWLANDriver`
+    - `IONameMatch`: `AirshipDriverDKAlpha`
+    - `IOProviderClass`: `IOUserService`
+    - `IOUserClass`: `AppleWLANDriver`
+    - `IOUserServerName`: `com.apple.driver.AppleCentauriAlpha`
+    - `IOUserServerOneProcess`: `True`
+    - `Interface_IO80211AwdlInterface`:
+      - `CFBundleIdentifier`: `com.apple.driver.AppleCentauriAlpha`
+      - `CFBundleIdentifierKernel`: `com.apple.iokit.IOSkywalkFamily`
+      - `IO80211APIUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `IO80211APIUserClient`
+      - `IO80211VirtualInterfaceRole`: `AirLink`
+      - `IOClass`: `IOUserNetworkWLAN`
+      - `IOInterfaceUnit`: `0`
+      - `IOProviderClass`: `IOUserService`
+      - `IOUserClass`: `AppleWLANInterfaceAWDL`
+      - `Interface_IO80211AWDLLLWInterface`:
+        - `CFBundleIdentifier`: `com.apple.driver.AppleCentauriAlpha`
+        - `CFBundleIdentifierKernel`: `com.apple.iokit.IOSkywalkFamily`
+        - `IO80211APIUserClientProperties`:
+          - `IOClass`: `IOUserUserClient`
+          - `IOUserClass`: `IO80211APIUserClient`
+        - `IO80211InterfaceRole`: `LowLatency`
+        - `IOClass`: `IOUserNetworkWLAN`
+        - `IOInterfaceUnit`: `0`
+        - `IOProviderClass`: `IOUserService`
+        - `IOUserClass`: `AppleWLANLowLatencyInterface`
+    - `Interface_IO80211HotspotInterface`:
+      - `CFBundleIdentifier`: `com.apple.driver.AppleCentauriAlpha`
+      - `CFBundleIdentifierKernel`: `com.apple.iokit.IOSkywalkFamily`
+      - `IO80211APIUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `IO80211APIUserClient`
+      - `IO80211VirtualInterfaceRole`: `SoftAP`
+      - `IOClass`: `IOUserNetworkWLAN`
+      - `IOInterfaceUnit`: `1`
+      - `IOProviderClass`: `IOUserService`
+      - `IOUserClass`: `AppleWLANInterfaceHotspot`
+    - `Interface_IO80211InfraInterface`:
+      - `CFBundleIdentifier`: `com.apple.driver.AppleCentauriAlpha`
+      - `CFBundleIdentifierKernel`: `com.apple.iokit.IOSkywalkFamily`
+      - `IO80211APIUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `IO80211APIUserClient`
+      - `IO80211InterfaceRole`: `Infrastructure`
+      - `IOClass`: `IOUserNetworkWLAN`
+      - `IOPMAOTAllow`: `128`
+      - `IOProviderClass`: `IOUserService`
+      - `IOUserClass`: `AppleWLANInterfaceSTA`
+    - `Interface_IO80211NANDataInterface`:
+      - `CFBundleIdentifier`: `com.apple.driver.AppleCentauriAlpha`
+      - `CFBundleIdentifierKernel`: `com.apple.iokit.IOSkywalkFamily`
+      - `IO80211APIUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `IO80211APIUserClient`
+      - `IO80211VirtualInterfaceRole`: `WiFi-Aware Data`
+      - `IOClass`: `IOUserNetworkWLAN`
+      - `IOInterfaceUnit`: `0`
+      - `IOProviderClass`: `IOUserService`
+      - `IOUserClass`: `AppleWLANInterfaceNANData`
+    - `Interface_IO80211NANInterface`:
+      - `CFBundleIdentifier`: `com.apple.driver.AppleCentauriAlpha`
+      - `CFBundleIdentifierKernel`: `com.apple.iokit.IOSkywalkFamily`
+      - `IO80211APIUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `IO80211APIUserClient`
+      - `IO80211VirtualInterfaceRole`: `WiFi-Aware Discovery`
+      - `IOClass`: `IOUserNetworkWLAN`
+      - `IOInterfaceUnit`: `0`
+      - `IOProviderClass`: `IOUserService`
+      - `IOUserClass`: `AppleWLANInterfaceNAN`
+      - `Interface_IO80211NANLLWInterface`:
+        - `CFBundleIdentifier`: `com.apple.driver.AppleCentauriAlpha`
+        - `CFBundleIdentifierKernel`: `com.apple.iokit.IOSkywalkFamily`
+        - `IO80211APIUserClientProperties`:
+          - `IOClass`: `IOUserUserClient`
+          - `IOUserClass`: `IO80211APIUserClient`
+        - `IO80211InterfaceRole`: `LowLatency`
+        - `IOClass`: `IOUserNetworkWLAN`
+        - `IOInterfaceUnit`: `1`
+        - `IOProviderClass`: `IOUserService`
+        - `IOUserClass`: `AppleWLANLowLatencyInterface`
+    - `ReporterProxy`:
+      - `CFBundleIdentifierKernel`: `com.apple.kpi.iokit`
+      - `IOClass`: `IOUserService`
+      - `IOProviderClass`: `IOUserService`
+      - `IOUserClass`: `IO80211ReporterProxy`
+    - `SkywalkPoolProperties`:
+      - `PacketsPerBuffer`: `1`
+      - `PoolSize`: `4096`
+      - `packetBufferSize`: `4096`
+    - `SkywalkQueueProperties`:
+      - `RxCompletionQueueSize`: `1024`
+      - `RxSubmissionQueueSize`: `1024`
+      - `TxCompletionQueueSize`: `4096`
+      - `TxSubmissionQueueSize`: `1536`
+  - `CentauriAlpha`:
+    - `CFBundleIdentifierKernel`: `com.apple.kpi.iokit`
+    - `CentauriUserClientProperties`:
+      - `IOClass`: `IOUserUserClient`
+      - `IOUserClass`: `CentauriAlphaUserClient`
+    - `CoreCaptureIOServiceProperties`:
+      - `CCCaptureIOServiceProperties`:
+        - `IOClass`: `CCIOService`
+        - `IOUserClass`: `CCIOService`
+      - `CCFaultReporterUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `CCFaultReporterUserClient`
+      - `CoreCaptureDataPipeUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `CCDataPipeUserClient`
+      - `CoreCaptureLogPipeUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `CCLogPipeUserClient`
+      - `CoreCaptureStreamProperties`:
+        - `IOClass`: `CCIOService`
+        - `IOUserClass`: `CCIOService`
+      - `IOClass`: `CCIOService`
+      - `IOUserClass`: `CCIOService`
+    - `IOClass`: `IOUserService`
+    - `IOMatchCategory`: `com.apple.driver.AppleCentauriAlpha`
+    - `IOPCIMatch`: `0x1902106b`
+    - `IOPCITunnelCompatible`: `True`
+    - `IOPMSystemOffPhase2Allow`: `True`
+    - `IOProviderClass`: `IOPCIDevice`
+    - `IOUserClass`: `CentauriAlpha`
+    - `IOUserServerName`: `com.apple.driver.AppleCentauriAlpha`
+    - `IOUserServerOneProcess`: `True`
+    - `LoggingProperties`:
+      - `DirectoryName`: `WiFi`
+      - `LogFileName`: `CentauriAlphaLogs`
+      - `LogIdentifier`: `CentauriAlpha`
+      - `Owner`: `com.apple.driver.AppleCentauriAlpha`
+    - `NumMSIs`: `10`
+  - `CentauriAlphaCCPlugin`:
+    - `CFBundleIdentifierKernel`: `com.apple.kpi.iokit`
+    - `CoreCaptureIOServiceProperties`:
+      - `CCCaptureIOServiceProperties`:
+        - `IOClass`: `CCIOService`
+        - `IOUserClass`: `CCIOService`
+      - `CoreCaptureDataPipeUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `CCDataPipeUserClient`
+      - `CoreCaptureLogPipeUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `CCLogPipeUserClient`
+      - `CoreCaptureStreamProperties`:
+        - `IOClass`: `CCIOService`
+        - `IOUserClass`: `CCIOService`
+      - `IOClass`: `CCIOService`
+      - `IOUserClass`: `CCIOService`
+    - `IOClass`: `IOUserService`
+    - `IOMatchCategory`: `CentauriAlphaCCPlugin`
+    - `IONameMatch`: `CCPluginNubAlpha`
+    - `IOProviderClass`: `IOUserService`
+    - `IOUserClass`: `CentauriDebugPluginCC`
+    - `IOUserServerName`: `com.apple.driver.AppleCentauriAlpha`
+    - `IOUserServerOneProcess`: `True`
+    - `PipeConfig`:
+      - `AlphaDebugRing0`:
+        - `CompressionDisabled`: `True`
+        - `DirectoryName`: `WiFi`
+        - `FileSize`: `10485760`
+        - `FileSize_ModuleFactory`: `83886080`
+        - `Filename`: `CentauriAlphaFwLogs`
+        - `LogDataTypePcap`: `True`
+        - `LogIdentifier`: `Alpha`
+        - `LogPolicyCapture`: `False`
+        - `LogTypeCircular`: `True`
+        - `Name`: `AlphaFirmwareLogs`
+        - `NotifyThreshold`: `1000`
+        - `NumFiles_ModuleFactory`: `10`
+        - `NumberOfFiles`: `90`
+        - `Owner`: `com.apple.driver.AppleCentauriAlpha`
+        - `PipeSize`: `1048576`
+        - `StreamConfig`:
+          - `CCLogLevel`: `5`
+          - `Name`: `hfevents`
+      - `AlphaDebugRing1`:
+        - `CompressionDisabled`: `True`
+        - `DirectoryName`: `WiFi`
+        - `FileSize`: `10485760`
+        - `FileSize_ModuleFactory`: `83886080`
+        - `Filename`: `CentauriAlphaFwLogsHp`
+        - `LogDataTypePcap`: `True`
+        - `LogIdentifier`: `Alpha`
+        - `LogPolicyCapture`: `False`
+        - `LogTypeCircular`: `True`
+        - `Name`: `AlphaFirmwareLogsHp`
+        - `NotifyThreshold`: `1000`
+        - `NumFiles_ModuleFactory`: `5`
+        - `NumberOfFiles`: `10`
+        - `Owner`: `com.apple.driver.AppleCentauriAlpha`
+        - `PipeSize`: `262144`
+        - `StreamConfig`:
+          - `CCLogLevel`: `5`
+          - `Name`: `lfevents`
+  - `CentauriAlphaPCI`:
+    - `CFBundleIdentifierKernel`: `com.apple.kpi.iokit`
+    - `IOClass`: `IOUserService`
+    - `IOMatchCategory`: `CentauriSubsystemPCI`
+    - `IONameMatch`: `CentauriAlpha`
+    - `IOPMAOTAllow`: `128`
+    - `IOProviderClass`: `IOUserService`
+    - `IOUserClass`: `CentauriSubsystemPCI`
+    - `IOUserServerName`: `com.apple.driver.AppleCentauriAlpha`
+    - `IOUserServerOneProcess`: `True`
+  - `CentauriDebugAlpha`:
+    - `CFBundleIdentifierKernel`: `com.apple.kpi.iokit`
+    - `CoreCaptureIOServiceProperties`:
+      - `CCCaptureIOServiceProperties`:
+        - `IOClass`: `CCIOService`
+        - `IOUserClass`: `CCIOService`
+      - `CoreCaptureDataPipeUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `CCDataPipeUserClient`
+      - `CoreCaptureLogPipeUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `CCLogPipeUserClient`
+      - `CoreCaptureStreamProperties`:
+        - `IOClass`: `CCIOService`
+        - `IOUserClass`: `CCIOService`
+      - `IOClass`: `CCIOService`
+      - `IOUserClass`: `CCIOService`
+    - `DebugNubs`:
+      - `CCPluginNubAlpha`:
+        - `AlphaDebugRing0`:
+          - `CRBufSize`: `8192`
+          - `CRName`: `fw_debug`
+          - `CRSize`: `128`
+          - `InPlaceCompletion`: `False`
+          - `TRBufSize`: `8192`
+          - `TRName`: `fw_debug`
+          - `TRSize`: `32`
+          - `bufferTypeFooter`: `False`
+          - `isEnabled`: `True`
+        - `AlphaDebugRing1`:
+          - `CRBufSize`: `2048`
+          - `CRName`: `hw_debug`
+          - `CRSize`: `32`
+          - `InPlaceCompletion`: `False`
+          - `TRBufSize`: `2048`
+          - `TRName`: `hw_debug`
+          - `TRSize`: `8`
+          - `bufferTypeFooter`: `False`
+          - `isEnabled`: `True`
+    - `IOClass`: `IOUserService`
+    - `IOMatchCategory`: `CentauriDebugAlpha`
+    - `IONameMatch`: `AirshipDriverDKAlpha`
+    - `IOProviderClass`: `IOUserService`
+    - `IOUserClass`: `CentauriDebug`
+    - `IOUserServerName`: `com.apple.driver.AppleCentauriAlpha`
+    - `IOUserServerOneProcess`: `True`
+    - `LoggingProperties`:
+      - `DirectoryName`: `WiFi`
+      - `LogFileName`: `CentauriAlphaDebugLogs`
+      - `LogIdentifier`: `CentauriDebugAlpha`
+      - `Owner`: `com.apple.driver.AppleCentauriAlpha`
+    - `NubProperties`:
+      - `IOClass`: `IOUserService`
+      - `IOUserClass`: `CentauriDebugNub`
+    - `TransportResources`:
+      - `AirshipResources`:
+        - `debug`
+- `OSBundleLibraries`:
+  - `com.apple.iokit.IOSkywalkFamily`: `1.0`
+- `OSBundleUsageDescription`: ``
+- `OSMinimumDriverKitVersion`: `27.2`

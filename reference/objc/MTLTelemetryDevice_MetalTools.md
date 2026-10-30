@@ -1,0 +1,113 @@
+# `MTLTelemetryDevice`
+
+- Image: [`/System/Library/PrivateFrameworks/MetalTools.framework/MetalTools`](../userland/System__Library__PrivateFrameworks__MetalTools.framework__MetalTools.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `MTLToolsDevice`
+- 45 instance variables, 2 properties, 46 instance methods, 0 class methods
+
+## Instance variables
+
+```
+^{MTLTelemetryCommandBufferCounttRec=II} commandBufferDistribution;
+^{MTLTelemetryEncoderDistributionRec={MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}} encoderDistribution;
+^{MTLTelemetryStatisticUIRec=IIQI} parallellRenderEncoderDistribution;
+^{MTLTelemetryStatisticUIRec=IIQI} attachmentCount;
+^{MTLTelemetryStatisticUIRec=IIQI} textureBindCount;
+^{MTLTelemetryStatisticUIRec=IIQI} renderTargetArrayLengthDistribution;
+^{MTLTelemetryViewportDistributionRec={MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticFRec=fffI}{MTLTelemetryStatisticFRec=fffI}{MTLTelemetryStatisticFRec=fffI}{MTLTelemetryStatisticFRec=fffI}} viewportDistribution;
+^{MTLTelemetryScissorRectDistributionRec={MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticFRec=fffI}{MTLTelemetryStatisticFRec=fffI}} scissorRectDistribution;
+{unordered_map<MTLPixelFormat, MTLTelemetryRenderTargetDistribution, std::hash<unsigned long long>, std::equal_to<MTLPixelFormat>, std::allocator<std::pair<const MTLPixelFormat, MTLTelemetryRenderTargetDistribution>>>="__table_"{__hash_table<std::__hash_value_type<MTLPixelFormat, MTLTelemetryRenderTargetDistribution>, std::__unordered_map_hasher<MTLPixelFormat, std::pair<const MTLPixelFormat, MTLTelemetryRenderTargetDistribution>, std::hash<unsigned long long>, std::equal_to<MTLPixelFormat>>, std::__unordered_map_equal<MTLPixelFormat, std::pair<const MTLPixelFormat, MTLTelemetryRenderTargetDistribution>, std::equal_to<MTLPixelFormat>, std::hash<unsigned long long>>, std::allocator<std::pair<const MTLPixelFormat, MTLTelemetryRenderTargetDistribution>>>="__bucket_list_"{unique_ptr<std::__hash_node_base<std::__hash_node<std::__hash_value_type<MTLPixelFormat, MTLTelemetryRenderTargetDistribution>, void *> *> *[], std::__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<MTLPixelFormat, MTLTelemetryRenderTargetDistribution>, void *> *> *>>>=""{?="__ptr_"^^v"__deleter_"{__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<MTLPixelFormat, MTLTelemetryRenderTargetDistribution>, void *> *> *>>=""{?="__size_"Q}}}}""{?="__first_node_"{__hash_node_base<std::__hash_node<std::__hash_value_type<MTLPixelFormat, MTLTelemetryRenderTargetDistribution>, void *> *>="__next_"^v}}""{?="__size_"Q}""{?="__max_load_factor_"f}}} renderTargetMap;
+^{MTLTelemetryBufferDistributionRec={MTLTelemetryBufferStatRec={MTLTelemetryStatisticUIRec=IIQI}}} bufferDistribution;
+{unordered_map<MTLPixelFormat, MTLTelemetryTextureDistribution, std::hash<unsigned long long>, std::equal_to<MTLPixelFormat>, std::allocator<std::pair<const MTLPixelFormat, MTLTelemetryTextureDistribution>>>="__table_"{__hash_table<std::__hash_value_type<MTLPixelFormat, MTLTelemetryTextureDistribution>, std::__unordered_map_hasher<MTLPixelFormat, std::pair<const MTLPixelFormat, MTLTelemetryTextureDistribution>, std::hash<unsigned long long>, std::equal_to<MTLPixelFormat>>, std::__unordered_map_equal<MTLPixelFormat, std::pair<const MTLPixelFormat, MTLTelemetryTextureDistribution>, std::equal_to<MTLPixelFormat>, std::hash<unsigned long long>>, std::allocator<std::pair<const MTLPixelFormat, MTLTelemetryTextureDistribution>>>="__bucket_list_"{unique_ptr<std::__hash_node_base<std::__hash_node<std::__hash_value_type<MTLPixelFormat, MTLTelemetryTextureDistribution>, void *> *> *[], std::__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<MTLPixelFormat, MTLTelemetryTextureDistribution>, void *> *> *>>>=""{?="__ptr_"^^v"__deleter_"{__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<MTLPixelFormat, MTLTelemetryTextureDistribution>, void *> *> *>>=""{?="__size_"Q}}}}""{?="__first_node_"{__hash_node_base<std::__hash_node<std::__hash_value_type<MTLPixelFormat, MTLTelemetryTextureDistribution>, void *> *>="__next_"^v}}""{?="__size_"Q}""{?="__max_load_factor_"f}}} textureMap;
+^{MTLTelemetrySamplerDistributionRec=I[7[8{MTLTelemetrySamplerStatRec=I{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticFRec=fffI}{MTLTelemetryStatisticFRec=fffI}{MTLTelemetryStatisticUIRec=IIQI}}]]} samplerDistribution;
+{unordered_map<unsigned int, MTLTelemetryRenderPipelineUsageRec, std::hash<unsigned int>, std::equal_to<unsigned int>, std::allocator<std::pair<const unsigned int, MTLTelemetryRenderPipelineUsageRec>>>="__table_"{__hash_table<std::__hash_value_type<unsigned int, MTLTelemetryRenderPipelineUsageRec>, std::__unordered_map_hasher<unsigned int, std::pair<const unsigned int, MTLTelemetryRenderPipelineUsageRec>, std::hash<unsigned int>, std::equal_to<unsigned int>>, std::__unordered_map_equal<unsigned int, std::pair<const unsigned int, MTLTelemetryRenderPipelineUsageRec>, std::equal_to<unsigned int>, std::hash<unsigned int>>, std::allocator<std::pair<const unsigned int, MTLTelemetryRenderPipelineUsageRec>>>="__bucket_list_"{unique_ptr<std::__hash_node_base<std::__hash_node<std::__hash_value_type<unsigned int, MTLTelemetryRenderPipelineUsageRec>, void *> *> *[], std::__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<unsigned int, MTLTelemetryRenderPipelineUsageRec>, void *> *> *>>>=""{?="__ptr_"^^v"__deleter_"{__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<unsigned int, MTLTelemetryRenderPipelineUsageRec>, void *> *> *>>=""{?="__size_"Q}}}}""{?="__first_node_"{__hash_node_base<std::__hash_node<std::__hash_value_type<unsigned int, MTLTelemetryRenderPipelineUsageRec>, void *> *>="__next_"^v}}""{?="__size_"Q}""{?="__max_load_factor_"f}}} renderPipeUsageMap;
+{unordered_map<unsigned int, MTLTelemetryRenderFuncUsageRec, std::hash<unsigned int>, std::equal_to<unsigned int>, std::allocator<std::pair<const unsigned int, MTLTelemetryRenderFuncUsageRec>>>="__table_"{__hash_table<std::__hash_value_type<unsigned int, MTLTelemetryRenderFuncUsageRec>, std::__unordered_map_hasher<unsigned int, std::pair<const unsigned int, MTLTelemetryRenderFuncUsageRec>, std::hash<unsigned int>, std::equal_to<unsigned int>>, std::__unordered_map_equal<unsigned int, std::pair<const unsigned int, MTLTelemetryRenderFuncUsageRec>, std::equal_to<unsigned int>, std::hash<unsigned int>>, std::allocator<std::pair<const unsigned int, MTLTelemetryRenderFuncUsageRec>>>="__bucket_list_"{unique_ptr<std::__hash_node_base<std::__hash_node<std::__hash_value_type<unsigned int, MTLTelemetryRenderFuncUsageRec>, void *> *> *[], std::__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<unsigned int, MTLTelemetryRenderFuncUsageRec>, void *> *> *>>>=""{?="__ptr_"^^v"__deleter_"{__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<unsigned int, MTLTelemetryRenderFuncUsageRec>, void *> *> *>>=""{?="__size_"Q}}}}""{?="__first_node_"{__hash_node_base<std::__hash_node<std::__hash_value_type<unsigned int, MTLTelemetryRenderFuncUsageRec>, void *> *>="__next_"^v}}""{?="__size_"Q}""{?="__max_load_factor_"f}}} renderFuncUsageMap;
+^{MTLTelemetryRenderPipelineDistributionRec=[8I]III{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}IIIIIII} renderPipelineDistribution;
+{unordered_map<std::string, MTLTelemetryStatisticUIRec, std::hash<std::string>, std::equal_to<std::string>, std::allocator<std::pair<const std::string, MTLTelemetryStatisticUIRec>>>="__table_"{__hash_table<std::__hash_value_type<std::string, MTLTelemetryStatisticUIRec>, std::__unordered_map_hasher<std::string, std::pair<const std::string, MTLTelemetryStatisticUIRec>, std::hash<std::string>, std::equal_to<std::string>>, std::__unordered_map_equal<std::string, std::pair<const std::string, MTLTelemetryStatisticUIRec>, std::equal_to<std::string>, std::hash<std::string>>, std::allocator<std::pair<const std::string, MTLTelemetryStatisticUIRec>>>="__bucket_list_"{unique_ptr<std::__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, MTLTelemetryStatisticUIRec>, void *> *> *[], std::__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, MTLTelemetryStatisticUIRec>, void *> *> *>>>=""{?="__ptr_"^^v"__deleter_"{__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, MTLTelemetryStatisticUIRec>, void *> *> *>>=""{?="__size_"Q}}}}""{?="__first_node_"{__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, MTLTelemetryStatisticUIRec>, void *> *>="__next_"^v}}""{?="__size_"Q}""{?="__max_load_factor_"f}}} vtxStatDistributionMap;
+{unordered_map<std::string, MTLTelemetryStatisticUIRec, std::hash<std::string>, std::equal_to<std::string>, std::allocator<std::pair<const std::string, MTLTelemetryStatisticUIRec>>>="__table_"{__hash_table<std::__hash_value_type<std::string, MTLTelemetryStatisticUIRec>, std::__unordered_map_hasher<std::string, std::pair<const std::string, MTLTelemetryStatisticUIRec>, std::hash<std::string>, std::equal_to<std::string>>, std::__unordered_map_equal<std::string, std::pair<const std::string, MTLTelemetryStatisticUIRec>, std::equal_to<std::string>, std::hash<std::string>>, std::allocator<std::pair<const std::string, MTLTelemetryStatisticUIRec>>>="__bucket_list_"{unique_ptr<std::__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, MTLTelemetryStatisticUIRec>, void *> *> *[], std::__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, MTLTelemetryStatisticUIRec>, void *> *> *>>>=""{?="__ptr_"^^v"__deleter_"{__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, MTLTelemetryStatisticUIRec>, void *> *> *>>=""{?="__size_"Q}}}}""{?="__first_node_"{__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, MTLTelemetryStatisticUIRec>, void *> *>="__next_"^v}}""{?="__size_"Q}""{?="__max_load_factor_"f}}} fragStatDistributionMap;
+^{MTLTelemetryDepthStateDistributionRec=I[8I]} depthStateDistribution;
+^{MTLTelemetryStencilStateDistributionRec=[8[8I]][8[8I]][8[8I]]} frontFaceStencilStateDistribution;
+^{MTLTelemetryStencilStateDistributionRec=[8[8I]][8[8I]][8[8I]]} backFaceStencilStateDistribution;
+^{MTLTelemetryStatisticUIRec=IIQI} depthClipModeClampDistribution;
+{unordered_map<unsigned int, MTLTelemetryComputePipelineUsageRec, std::hash<unsigned int>, std::equal_to<unsigned int>, std::allocator<std::pair<const unsigned int, MTLTelemetryComputePipelineUsageRec>>>="__table_"{__hash_table<std::__hash_value_type<unsigned int, MTLTelemetryComputePipelineUsageRec>, std::__unordered_map_hasher<unsigned int, std::pair<const unsigned int, MTLTelemetryComputePipelineUsageRec>, std::hash<unsigned int>, std::equal_to<unsigned int>>, std::__unordered_map_equal<unsigned int, std::pair<const unsigned int, MTLTelemetryComputePipelineUsageRec>, std::equal_to<unsigned int>, std::hash<unsigned int>>, std::allocator<std::pair<const unsigned int, MTLTelemetryComputePipelineUsageRec>>>="__bucket_list_"{unique_ptr<std::__hash_node_base<std::__hash_node<std::__hash_value_type<unsigned int, MTLTelemetryComputePipelineUsageRec>, void *> *> *[], std::__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<unsigned int, MTLTelemetryComputePipelineUsageRec>, void *> *> *>>>=""{?="__ptr_"^^v"__deleter_"{__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<unsigned int, MTLTelemetryComputePipelineUsageRec>, void *> *> *>>=""{?="__size_"Q}}}}""{?="__first_node_"{__hash_node_base<std::__hash_node<std::__hash_value_type<unsigned int, MTLTelemetryComputePipelineUsageRec>, void *> *>="__next_"^v}}""{?="__size_"Q}""{?="__max_load_factor_"f}}} computePipeUsageMap;
+{unordered_map<unsigned int, MTLTelemetryKernelUsageRec, std::hash<unsigned int>, std::equal_to<unsigned int>, std::allocator<std::pair<const unsigned int, MTLTelemetryKernelUsageRec>>>="__table_"{__hash_table<std::__hash_value_type<unsigned int, MTLTelemetryKernelUsageRec>, std::__unordered_map_hasher<unsigned int, std::pair<const unsigned int, MTLTelemetryKernelUsageRec>, std::hash<unsigned int>, std::equal_to<unsigned int>>, std::__unordered_map_equal<unsigned int, std::pair<const unsigned int, MTLTelemetryKernelUsageRec>, std::equal_to<unsigned int>, std::hash<unsigned int>>, std::allocator<std::pair<const unsigned int, MTLTelemetryKernelUsageRec>>>="__bucket_list_"{unique_ptr<std::__hash_node_base<std::__hash_node<std::__hash_value_type<unsigned int, MTLTelemetryKernelUsageRec>, void *> *> *[], std::__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<unsigned int, MTLTelemetryKernelUsageRec>, void *> *> *>>>=""{?="__ptr_"^^v"__deleter_"{__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<unsigned int, MTLTelemetryKernelUsageRec>, void *> *> *>>=""{?="__size_"Q}}}}""{?="__first_node_"{__hash_node_base<std::__hash_node<std::__hash_value_type<unsigned int, MTLTelemetryKernelUsageRec>, void *> *>="__next_"^v}}""{?="__size_"Q}""{?="__max_load_factor_"f}}} kernelUsageMap;
+^{MTLTelemetryComputePipelineDistributionRec=IIIIIII} computePipelineDistribution;
+{unordered_map<std::string, MTLTelemetryStatisticUIRec, std::hash<std::string>, std::equal_to<std::string>, std::allocator<std::pair<const std::string, MTLTelemetryStatisticUIRec>>>="__table_"{__hash_table<std::__hash_value_type<std::string, MTLTelemetryStatisticUIRec>, std::__unordered_map_hasher<std::string, std::pair<const std::string, MTLTelemetryStatisticUIRec>, std::hash<std::string>, std::equal_to<std::string>>, std::__unordered_map_equal<std::string, std::pair<const std::string, MTLTelemetryStatisticUIRec>, std::equal_to<std::string>, std::hash<std::string>>, std::allocator<std::pair<const std::string, MTLTelemetryStatisticUIRec>>>="__bucket_list_"{unique_ptr<std::__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, MTLTelemetryStatisticUIRec>, void *> *> *[], std::__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, MTLTelemetryStatisticUIRec>, void *> *> *>>>=""{?="__ptr_"^^v"__deleter_"{__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, MTLTelemetryStatisticUIRec>, void *> *> *>>=""{?="__size_"Q}}}}""{?="__first_node_"{__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, MTLTelemetryStatisticUIRec>, void *> *>="__next_"^v}}""{?="__size_"Q}""{?="__max_load_factor_"f}}} computeStatDistributionMap;
+^{MTLTelemetryStatisticUIRec=IIQI} commandBufferDispatchDistribution;
+^{MTLTelemetryStatisticUIRec=IIQI} computeEncoderDispatchDistribution;
+^{MTLTelemetryStatisticUIRec=IIQI} commandBufferDrawCallDistribution;
+^{MTLTelemetryStatisticUIRec=IIQI} renderEncoderDrawCallDistribution;
+^{MTLTelemetryDrawDistributionRec=[5[3[3{MTLTelemetryDrawStatRec=I{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}}]]]} drawDistribution;
+^{MTLTelemetryDispatchDistributionRec=I{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}{MTLTelemetryStatisticUIRec=IIQI}} dispatchDistribution;
+{unordered_map<MTLPixelFormat, MTLTelemetryBlitDistribution, std::hash<unsigned long long>, std::equal_to<MTLPixelFormat>, std::allocator<std::pair<const MTLPixelFormat, MTLTelemetryBlitDistribution>>>="__table_"{__hash_table<std::__hash_value_type<MTLPixelFormat, MTLTelemetryBlitDistribution>, std::__unordered_map_hasher<MTLPixelFormat, std::pair<const MTLPixelFormat, MTLTelemetryBlitDistribution>, std::hash<unsigned long long>, std::equal_to<MTLPixelFormat>>, std::__unordered_map_equal<MTLPixelFormat, std::pair<const MTLPixelFormat, MTLTelemetryBlitDistribution>, std::equal_to<MTLPixelFormat>, std::hash<unsigned long long>>, std::allocator<std::pair<const MTLPixelFormat, MTLTelemetryBlitDistribution>>>="__bucket_list_"{unique_ptr<std::__hash_node_base<std::__hash_node<std::__hash_value_type<MTLPixelFormat, MTLTelemetryBlitDistribution>, void *> *> *[], std::__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<MTLPixelFormat, MTLTelemetryBlitDistribution>, void *> *> *>>>=""{?="__ptr_"^^v"__deleter_"{__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<MTLPixelFormat, MTLTelemetryBlitDistribution>, void *> *> *>>=""{?="__size_"Q}}}}""{?="__first_node_"{__hash_node_base<std::__hash_node<std::__hash_value_type<MTLPixelFormat, MTLTelemetryBlitDistribution>, void *> *>="__next_"^v}}""{?="__size_"Q}""{?="__max_load_factor_"f}}} blitMap;
+^{MTLTelemetryStatisticUIRec=IIQI} commandBufferBlitDistribution;
+^{MTLTelemetryStatisticUIRec=IIQI} blitEncoderBlitDistribution;
+^{MTLTelemetryStatisticUIRec=IIQI} commandBufferMemoryBarrierDistribution;
+^{MTLTelemetryKernelDistributionRec={MTLTelemetryStatisticIRec=iiqi}{MTLTelemetryStatisticIRec=iiqi}{MTLTelemetryStatisticIRec=iiqi}{MTLTelemetryStatisticIRec=iiqi}} kernelDistribution;
+^{MTLTelemetryAnisoClippedCountsRec=[4I]} anisoClippedCounts;
+@"NSObject<OS_dispatch_queue>" queue;
+{mach_timebase_info="numer"I"denom"I} timebase;
+d _timerScale;
+@"NSObject<OS_dispatch_source>" _timer;
+B _isGLMTL;
+{MTLTelemetrySupportQueryStatRec="featureSetCount"{unordered_map<std::string, unsigned int, std::hash<std::string>, std::equal_to<std::string>, std::allocator<std::pair<const std::string, unsigned int>>>="__table_"{__hash_table<std::__hash_value_type<std::string, unsigned int>, std::__unordered_map_hasher<std::string, std::pair<const std::string, unsigned int>, std::hash<std::string>, std::equal_to<std::string>>, std::__unordered_map_equal<std::string, std::pair<const std::string, unsigned int>, std::equal_to<std::string>, std::hash<std::string>>, std::allocator<std::pair<const std::string, unsigned int>>>="__bucket_list_"{unique_ptr<std::__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, unsigned int>, void *> *> *[], std::__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, unsigned int>, void *> *> *>>>=""{?="__ptr_"^^v"__deleter_"{__bucket_list_deallocator<std::allocator<std::__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, unsigned int>, void *> *> *>>=""{?="__size_"Q}}}}""{?="__first_node_"{__hash_node_base<std::__hash_node<std::__hash_value_type<std::string, unsigned int>, void *> *>="__next_"^v}}""{?="__size_"Q}""{?="__max_load_factor_"f}}}"texSampleCount"{MTLTelemetryStatisticUIRec="min"I"max"I"total"Q"count"I}} supportQuery;
+@"NSObject<OS_os_log>" _telemetryLog;
+Q _startTime;
+```
+
+## Properties
+
+```
+@property (T@"NSObject<OS_os_log>",R,N,V_telemetryLog) telemetryLog;
+@property (TQ,N,V_startTime) startTime;
+```
+
+## Instance methods
+
+```
+-[MTLTelemetryDevice newComputePipelineStateWithFunction:completionHandler:];
+-[MTLTelemetryDevice newRenderPipelineStateWithDescriptor:options:completionHandler:];
+-[MTLTelemetryDevice supportsFeatureSet:];
+-[MTLTelemetryDevice newCommandQueueWithDescriptor:];
+-[MTLTelemetryDevice newComputePipelineStateWithFunction:options:completionHandler:];
+-[MTLTelemetryDevice newRenderPipelineStateWithDescriptor:completionHandler:];
+-[MTLTelemetryDevice newComputePipelineStateWithDescriptor:completionHandler:];
+-[MTLTelemetryDevice newComputePipelineStateWithDescriptor:options:completionHandler:];
+-[MTLTelemetryDevice newComputePipelineStateWithDescriptor:error:];
+-[MTLTelemetryDevice newComputePipelineStateWithFunction:options:reflection:error:];
+-[MTLTelemetryDevice newCommandQueueWithMaxCommandBufferCount:];
+-[MTLTelemetryDevice supportsTextureSampleCount:];
+-[MTLTelemetryDevice newRenderPipelineStateWithDescriptor:options:reflection:error:];
+-[MTLTelemetryDevice newRenderPipelineStateWithDescriptor:error:];
+-[MTLTelemetryDevice newComputePipelineStateWithFunction:error:];
+-[MTLTelemetryDevice newComputePipelineStateWithDescriptor:options:reflection:error:];
+-[MTLTelemetryDevice newCommandQueue];
+-[MTLTelemetryDevice newBufferWithDescriptor:];
+-[MTLTelemetryDevice startTime];
+-[MTLTelemetryDevice telemetryLog];
+-[MTLTelemetryDevice dealloc];
+-[MTLTelemetryDevice newTextureWithDescriptor:];
+-[MTLTelemetryDevice setStartTime:];
+-[MTLTelemetryDevice newBufferWithBytesNoCopy:length:options:deallocator:];
+-[MTLTelemetryDevice newBufferWithLength:options:];
+-[MTLTelemetryDevice newDepthStencilStateWithDescriptor:];
+-[MTLTelemetryDevice newHeapWithDescriptor:];
+-[MTLTelemetryDevice newSamplerStateWithDescriptor:];
+-[MTLTelemetryDevice newTextureWithDescriptor:iosurface:plane:];
+-[MTLTelemetryDevice heapBufferSizeAndAlignWithLength:options:];
+-[MTLTelemetryDevice heapTextureSizeAndAlignWithDescriptor:];
+-[MTLTelemetryDevice newBufferWithBytes:length:options:];
+-[MTLTelemetryDevice initWithBaseObject:parent:];
+-[MTLTelemetryDevice _newComputePipelineStateWithFunction:options:completionHandler:];
+-[MTLTelemetryDevice _newRenderPipelineStateWithDescriptor:options:reflection:error:];
+-[MTLTelemetryDevice enableTelemetry];
+-[MTLTelemetryDevice _newComputePipelineStateWithDescriptor:options:completionHandler:];
+-[MTLTelemetryDevice _newComputePipelineStateWithDescriptor:options:reflection:error:];
+-[MTLTelemetryDevice _newComputePipelineStateWithFunction:options:reflection:error:];
+-[MTLTelemetryDevice _newRenderPipelineStateWithDescriptor:options:completionHandler:];
+-[MTLTelemetryDevice emitFeatureQueryUsage];
+-[MTLTelemetryDevice emitTelemetry];
+-[MTLTelemetryDevice initDistributions];
+-[MTLTelemetryDevice setGLMode:];
+-[MTLTelemetryDevice setTimerInterval:];
+-[MTLTelemetryDevice startTimerWithInterval:];
+```

@@ -1,0 +1,40 @@
+# `_TtP13CampoServices24CampoTestServiceProtocol_` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/CampoServices.framework/CampoServices`](../userland/System__Library__PrivateFrameworks__CampoServices.framework__CampoServices.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- 0 instance variables, 0 properties, 31 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[_TtP13CampoServices24CampoTestServiceProtocol_ showSettings];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ listChatsWithCompletionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ resolveAttachmentIdentifierFromData:filename:completionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ startNewChat:completionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ agentMediaCaptureInfoWithChatID:completionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ captureFullConversationWithChatID:completionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ closeAllScenesWithCompletionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ currentChatIDWithCompletionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ deleteChats:completionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ getChatContentsWithIdentifier:completionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ getChatServiceType];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ getMontaraProviderWithChatID:completionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ injectResponseWithChatID:text:sender:streaming:reply:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ injectSnippetByTypeWithChatID:snippetType:dialogText:reply:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ invokeIslandWithCompletionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ listAllChatsWithCompletionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ listMontaraProvidersWithCompletionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ listScenesWithCompletionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ performScriptedTyping:completionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ pinChatWithIdentifier:isPinned:completionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ renameChatWithIdentifier:newTitle:completionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ renderMarkdown:completionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ resetChatServiceType];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ resolveAttachmentIdentifier:completionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ resumeChat:completionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ setChatServiceType:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ setMontaraProviderWithBundleID:chatID:completionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ startListeningWithTimeoutSeconds:completionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ startVoiceChatWithTimeoutSeconds:completionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ stopListeningWithCompletionHandler:];
+-[_TtP13CampoServices24CampoTestServiceProtocol_ submitIslandPrompt:completionHandler:];
+```

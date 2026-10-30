@@ -1,0 +1,106 @@
+== device-tree/arm-io/smc
+    AAPL,phandle = 0x9d
+    aot-power = 0x1
+    clock-gates = <empty>
+    clock-ids = <empty>
+    compatible = "iop,ascwrap-v8"
+    device_type = "smc"
+    interrupt-parent = "-"
+    interrupts = u32[c4 9c 74]
+    iop-version = 0x1
+    msgbox-mailbox-num = 0x2
+    msgbox-using-alias = "true"
+    msgbox-using-postoffice = "true"
+    name = "smc"
+    power-gates = <empty>
+    reg = u32[8c600000 0 74000 0 8c050000 0 4000 0 96020000 0 10000 0 8c810000 0 100 0]
+    role = "SMC"
+    timers-reg-index = 0x3
+== device-tree/arm-io/smc/iop-smc-nub
+    AAPL,phandle = 0x9e
+    cold-boot-after-hibernate = <empty>
+    compatible = "iop-nub,rtbuddy-v2"
+    continuous-time = <empty>
+    coredump-active-only = <empty>
+    coredump-enable = "@"
+    firmware-name = "t8160smc"
+    name = "iop-smc-nub"
+    no-hibernate-sleep = <empty>
+    no-shutdown = 0x1
+    pre-loaded = 0x0
+    quiesced = <empty>
+    region-base = u64=0x28de00000 u32[8de00000 2] ascii=b'\x00\x00\xe0\x8d\x02\x00\x00\x00'
+    region-size = u64=0x140000 u32[140000 0] ascii=b'\x00\x00\x14\x00\x00\x00\x00\x00'
+    sptm-allow-reg = u32[8de00000 2 140000 0]
+    user-power-managed = 0x1
+    watchdog-enable = <empty>
+== device-tree/arm-io/smc/iop-smc-nub/smc-pmu
+    #address-cells = 0x0
+    #interrupt-cells = 0x1
+    AAPL,phandle = 0x9f
+    compatible = "smc-pmu"
+    device_type = "interrupt-controller"
+    event_name-btn1 = "hold"
+    event_name-btn3 = "action"
+    event_name-btn4 = "capture"
+    event_name-gpio11 = "charger"
+    event_name-gpio16 = "wifibt"
+    event_name-gpio6 = "baseband"
+    function-pmu_button = u64=0x42757444000001c4 u32[1c4 42757444] ascii=b'\xc4\x01\x00\x00DtuB'
+    interrupt-controller = <empty>
+    name = "smc-pmu"
+== device-tree/arm-io/smc/iop-smc-nub/smc-charger
+    AAPL,phandle = 0xa0
+    battery-id = u32[0 0 0 0 0 0 0 0]
+    boot-adapter-id = 0x0
+    boot-voltage = 0x0
+    device_type = "smc-charger"
+    dock-num = 0x1
+    function-dock_parent = u64=0x61636350000001c5 u32[1c5 61636350] ascii=b'\xc5\x01\x00\x00Pcca'
+    name = "smc-charger"
+    port-number = 0x1
+    port-type = 0x2
+== device-tree/arm-io/smc/iop-smc-nub/smc-ext-charger
+    AAPL,phandle = 0xa1
+    audio-driver = "AppleCS42L79Audio"
+    backlight-detection = 0x0
+    camera-driver = "AppleCamera"
+    device_type = "smc-ext-charger"
+    extended-otp-cal = 0x1
+    function-dock_parent = u64=0x61636350000001c6 u32[1c6 61636350] ascii=b'\xc6\x01\x00\x00Pcca'
+    function-dock_wired = u64=0x61636350000001c5 u32[1c5 61636350] ascii=b'\xc5\x01\x00\x00Pcca'
+    has-espresso = 0x1
+    has-ironbull-camera-cloak = 0x1
+    has-ironman-camera-cloak = 0x1
+    has-ironman-charging = 0x1
+    has-peripheral-logs = 0x4
+    hd-mic-coex = 0x1
+    name = "smc-ext-charger"
+    port-number = 0x1
+    port-type = 0x9
+== device-tree/arm-io/smc/iop-smc-nub/smc-aop
+    AAPL,phandle = 0xa2
+    device_type = "smc-aop"
+    function-link-data_enable = u64=0x656e626c00000063 u32[63 656e626c] ascii=b'c\x00\x00\x00lbne'
+    function-link-data_param_get = u64=0x6461744700000063 u32[63 64617447] ascii=b'c\x00\x00\x00Gtad'
+    function-link-data_param_set = u64=0x6461745300000063 u32[63 64617453] ascii=b'c\x00\x00\x00Stad'
+    link-tx_config = u32[c640000 3 20 2d 1000]
+    name = "smc-aop"
+== device-tree/arm-io/smc/iop-smc-nub/smc-power-out
+    AAPL,phandle = 0xa3
+    device_type = "smc-power-out"
+    ioport-client = 0x1
+    name = "smc-power-out"
+== device-tree/arm-io/smc/iop-smc-nub/smc-acam
+    AAPL,phandle = 0xa4
+    compatible = "smc-acam"
+    device_type = "smc-acam"
+    name = "smc-acam"
+== device-tree/arm-io/smc/iop-smc-nub/smc-charger-util
+    AAPL,phandle = 0xa5
+    device_type = "smc-charger-util"
+    dock-num = 0x1
+    name = "smc-charger-util"
+    port-number = 0x1
+    port-type = 0x2
+    report-port-event = 0x1

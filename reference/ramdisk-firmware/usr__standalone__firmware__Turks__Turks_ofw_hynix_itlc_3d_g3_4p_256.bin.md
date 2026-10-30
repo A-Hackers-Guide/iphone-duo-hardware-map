@@ -1,0 +1,309 @@
+# `usr/standalone/firmware/Turks/Turks_ofw_hynix_itlc_3d_g3_4p_256.bin`
+
+- File size: 401,408 bytes
+
+## Payload [FW]
+
+- Size after IM4P unwrap / decompression: 401,408 bytes
+- Format: raw binary
+
+## Identity strings (versions, build tags) [FW]
+
+- `AppleMSPS4-82.3~1`
+
+## Strings (290) [FW]
+
+Printable runs of 6+ characters with at least three letters, in file order, with payload offset. For RTKit co-processor firmware these are the log formats, task names, endpoint names and assertions that describe what the processor does.
+
+```
+00000670  Turks_msp_core_hynix_itlc_3d_g3_4p_256-82.3.0
+000014bd  F60AFZFSF
+000014d0   F2FSF
+00001530  BToCFWLDETOC@
+000017f3  fhFAFO
+000018a4  Turks_msp_rom_extension-82.3.0
+00001908  app_main
+000025d0  Undefined
+000025e0  Software Int
+000025f0  Prefetch Abort
+00002600  Data Abort
+00002610  Reserved Exception
+00002682  hFqFzF
+00003d6b   1F*FCF
+00004077   1F*FCF
+000040bb   1F*FCF
+0000457f  ` FAF*F+
+00004a29  A(L(MBX"
+00006d1b  tDPtL\e
+00006dda  ,`OLt`
+00006e1b  3kPCK3c
+00006e2b  #kP@Ksc
+00007251  11apaqK
+00007285  00aqa#
+00007428  OFWBT\
+00007b83  LEF)Nv
+00007e4b  CJr3CK`
+000082f0  QIZH 0
+00008671   {KBF,
+00008700  1FYKRF,
+0000896f  |3a1a5a2apa
+00008c0f  0(ala!
+00008f9b  pHb)ihk
+000090f2  XDQFBF
+0000914a  (DAFRF
+00009410  DaXF1hrh
+000094b9  `sHpI)0
+0000953e   FAFOM
+00009830  /HAoqEqF(
+00009858  %HAnqEqF(
+000099ef  09CCN:H
+00009c2a  SHD]D,
+0000a08b  FpS FJF
+0000a09d  h`haiC
+0000a50c  XqBFSF
+0000a548  XqBFSF
+0000a86b  rIhA`pG
+0000ac7a  &u Fix
+0000adbe   FQFuF
+0000adca   FAFZF
+0000aff5  @"qLJ"
+0000bd1e  30LFmh4`
+0000c78e  HF)FZF3F
+0000cc07  g FYF2F
+0000dfc1  F hEhGH
+0000e14e  fh "5MPF)F
+0000eec4  @FYFdF"
+0000fb14  0F)FBF
+0001086b  FPF1F#F
+00011802  0F)FBF
+000118d6  YF"FCF
+00011e92  WJU\NIo
+0001200d  FMN"hMI
+000125b0  `B)hhhB
+000133e9  RLJ+hnh
+00013558  FHENCI
+00013e42  PFYF.F
+00014d6d  a1arxO
+00015365  2*a(aia
+00015537   (bxH0aO
+00015549   patHAh!
+00015767  0`E.F!FJF
+0001596b  kAF+F@
+0001599e  d kIPC
+00016a06  J`fIgJ
+00017618  qJ3FuI
+00018746   hVMah(C
+00018757  C``THTI
+00019267  BBBBBBBB
+000192b5  F(FQFBF
+00019ab9  6bLkKo
+0001a6cd  9^qFF16[y&`
+0001a705    ```MHAhA
+0001b3c1  FPLMHNI
+0001b94d  (,ana!
+0001c29a   FQFBF
+0001c40b  rpp0F0
+0001d849  h!xbxo
+0001d874  @hAFbx
+0001dc4f  GEIs1#h`h)`O
+0001dfc5  p$HAhA
+0001e24f  L\mGGGGGG
+0001f1fc  EBTCBToC
+0001fbff  Fhh1IO
+00020349  h!`Aha`
+00020359  i!aAiaa
+00020710   FQF*F3F
+0002111b  GmJlKu2
+000211ec  Rhqy+`O
+00021ab4  J`[FBh
+0002204b   (tjF(F
+00022274   FQF*F[F
+00022568  PFBF3F
+000229a4  (F1F"FCF
+000233c6  :M.ala
+00023448  (F!FZFCF
+0002345d  `(FZFCF
+000234f6   F1F*FCF
+000235c2  *ahaPF
+00023965  `0`qhp`
+000243ac  AHM0 `
+000245a0  rKqJv2
+000250e0  (FYF%F
+000251f1   AFSFO
+00025261  F'H'LYhJh
+000255fc  )FBmCn
+0002560e  1}DJs}
+00026a81  Pqh.3#`!`
+00026aa6  phcI!`
+00026cc8  dDe]5T
+00027135  Be`OME
+00027290  'M%I%Jhh
+0002736d   pe0fud
+000274bd  22M2Kah h
+0002786f  `M`cm%nbl+C
+0002794f   putcrb1
+00027aef  1)`h`ahA
+00027e50  PF1F*FCF
+0002818b  2BafFO
+0002858a  +j0Fjj
+00028904   F1FRFCF
+00028d3c  ETOCP\
+000294c6  - AppG
+0002969c  YLUI h
+00029c4a  )oho!D
+00029da4  X` FAF]
+0002aef5  F hbhO
+0002b5e7  F^aVho
+0002b92e  X"!iPCO
+0002ba99  D `)hnh
+0002beaa  RHJMLN
+0002c706   FYF0D*F
+0002cf82  1h Frh
+0002d386  (yiy*zmi
+0002d3c8  0yqy2zvi
+0002d5eb  b,c3Mmh
+0002d607  <^`VFP
+0002e6c7  eae$"!b
+0002eb9a  QHOINJ
+0002ebbe  HHEIFJ
+0002ec28  -H+J)IDb
+0002ec58  !HDe F
+0002ef90  pMnI(h
+0002f337  h1F(hZF$
+0002fb46  AFmLdN h
+0002fb64  ^HEFfJ
+0002fbe6  AHCF;I
+0002ff1d  C*`lhY
+00030370  CHSF;I4J
+00030704  PF!FBF
+00030746  PF!FBF
+00030de2  50(cjb
+000311d4  TUUU0333
+00031718  RIVFRJ
+000318f7  MvF(xc@
+00032347  dCdVHVIj
+000323ed  dCd4H5I
+000338d0  (xkxjj
+000339ea   x*Fax
+000339f4   x*Fax
+00033dba  PFC!F"CF
+00034267  FmF`x)
+000345ed  HAF*F#F
+000345f7  HAF*F#F
+0003479a  4IAg4N
+00034d86   i!Fbi
+00034da4   i!Fbi
+00034e0e  p`"xax
+0003556d  !P`ic*jkj
+000358fc  CJH`1j
+00035e95  !)p,yni
+00035fce  XF1FBF
+0003608a   i!Fbj
+00036176   i!Fbj
+00036504  Xtjj(x
+000367e1  Fhx(N0D
+00036f48   xaxBF
+00036fe5  `H` xax
+000370c4  Xr xax-N
+00037374  Xs xax
+000377d4  XvKxTJ
+00037b16  Xq(xkx
+00037b94  Xr xax$N
+00037cb0   xax*F
+00037cba   x*Fax
+0003843c  pGpGpGpG
+00038a8c  pGpGpG
+00038cf9  hRhX@Q@
+0003961a  2FVF,`
+000397f4  SHTJUI
+0003a2ca  JJJK h
+0003a49c  QFBF3F
+0003a5f6  )FRF3F
+0003a7a8  )FBF3F
+0003c194  5FPhVF
+0003cccb  "PFAF#F
+0003d8cf  m0F)FRF
+0003dd61  H!FBmPF
+0003de75   HKAMCL
+0003e6d7  `sLlH%hjL `%`
+0003e86f  dXF)F2F#F
+0003e942  JxBqIyAr
+0003ea1f  h>iAF*F3F
+0003ea2c  xiAF*F3F
+0003eb36  C$ZFxi
+0003eb4c  xiAFZFSF
+0003f2e3  0LMIJ.hGM*`.`
+0003fbbe  bl hah;K
+000414e9  FPF2F#F
+0004198c  @FTxVF
+0004215a  uHrJqI
+00042196  fHdEcJaI
+000421d4  VHTJRI
+000421f6  NH\EKJII
+000424d2  r]XFQF
+00042749  +iMiH4h
+00043940   hSFah
+00044140  #$%&'DEF()*+,-./0123456789:;<=>?@AGBC
+000441ef   $(,048<@DHLP`lpt
+00044398  REXTFWLDR5FWXTRAPTSDHBTCPBBT$4BDBToC
+00044968  AppleMspAsiDriver-1.85
+000452d3  KLMNOPQSU
+00045333  012ABC
+00047478  c.'>*GAq{g
+000474a7  lEq0E"
+000474f0  ffffffff
+00047578  UUUUUUUU
+00047590  Turks_msp_core_hynix_itlc_3d_g3_4p_256-82.3.0
+00047a70  TURKS_MSP_A0
+00047ae0  app_main
+00047af0  ASI Device Info
+00047b08  itlc_3d_v4_4p_256
+00047b30  AppleMSPS4-82.3~1
+0004ea5b   !"0@PRTXYZ`p
+0004eaf8  APJ;AxJkA
+0004eb06  J3B(JCB
+0004f458  DCCBCCC
+0004f491  DDD$"""
+0004f519  DDDD"""
+000530c5  a(j D(bhF
+0005336d  !1dqdo
+00053e2b   2D<HSF
+00053f70  :Nqm:J
+00054cb9  DKk)Fpm
+00055410  def_appl_ext
+000563b8  pts_update_ext
+000569a3  `PDBh F1F
+000569bc  (h!FPDBh0F
+00056d60  TLVU}`
+00056dd0  tlv_utils_ext
+00057464   FZF+F
+0005765c  cpc_ut_ext
+00058680  pG`GpG
+00058e31  F^Heh "
+00059660  ";DNNXCH
+0005a326  1h Frh
+0005ad20  5`jMe`
+0005ad71  #sPZKcc
+0005bc68  +a*a)aha"
+0005bc8f  !ON1qOL x
+0005bf3b  "2boJvK
+0005c2a1  a[ISal1
+0005c5bf  !``pHpM
+0005c5e3  QD`ZPO
+0005c8ba  (eheHj
+0005cb5d  iiqQI(q
+0005cca4  OFWB@ 
+0005d04b  rhp(F0
+0005f7fe  XpZFCF
+0005fc64  pGpGpG
+0005fed1  hRhX@Q@
+00060155  !4"ClPF
+0006095c  Turks_msp_fw_loader_hynix_itlc_3d_g3_4p_256-82.3.0
+00060aa8  #$%&'DEF()*+,-./0123456789:;<=>?@AGBC
+00060b20  REXTFWLDR5FWXTRAPTSDHBTCPBBT$4BDBToC
+00060c10  AppleMspAsiDriver-1.85
+00060e28  app_main
+00061050  DCCBCCC
+00061089  DDD$"""
+00061111  DDDD"""
+```

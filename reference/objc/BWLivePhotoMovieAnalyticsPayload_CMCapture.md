@@ -1,0 +1,206 @@
+# `BWLivePhotoMovieAnalyticsPayload`
+
+- Image: [`/System/Library/PrivateFrameworks/CMCapture.framework/CMCapture`](../userland/System__Library__PrivateFrameworks__CMCapture.framework__CMCapture.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `BWCoreAnalyticsPayload`
+- 44 instance variables, 48 properties, 93 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"NSString" _clientApplicationID;
+B _recordingSucceeded;
+i _errorStatus;
+i _sessionStatus;
+B _longPressMovie;
+B _originalRecording;
+B _hasStillImagePTS;
+d _movieDurationInSeconds;
+d _stillTimeOffsetInSeconds;
+d _stillTimeOffsetToVideoPrerollStartInMilliseconds;
+d _stillTimeOffsetToVideoPrerollStopInMilliseconds;
+d _stillTimeOffsetToAudioPrerollStartInMilliseconds;
+d _stillTimeOffsetToAudioPrerollStopInMilliseconds;
+B _overlappingCapture;
+q _stagingNodeOverallNumberOfVideoFramesReceived;
+d _stagingNodeOverallAverageTimeBetweenVideoFramesInMilliseconds;
+d _stagingNodeOverallStandardDeviationOfTimeBetweenVideoFramesInMilliseconds;
+d _stagingNodeOverallMinimumTimeBetweenVideoFramesInMilliseconds;
+d _stagingNodeOverallMaximumTimeBetweenVideoFramesInMilliseconds;
+q _stagingNodeValveActiveNumberOfVideoFramesReceived;
+d _stagingNodeValveActiveAverageTimeBetweenVideoFramesInMilliseconds;
+d _stagingNodeValveActiveStandardDeviationOfTimeBetweenVideoFramesInMilliseconds;
+d _stagingNodeValveActiveMinimumTimeBetweenVideoFramesInMilliseconds;
+d _stagingNodeValveActiveMaximumTimeBetweenVideoFramesInMilliseconds;
+q _fileCoordinatorToWriterMovingWindowLatencyNumberOfSamples;
+d _fileCoordinatorToWriterMovingWindowLatencyAverageInMilliseconds;
+d _fileCoordinatorToWriterMovingWindowLatencyStandardDeviationInMilliseconds;
+d _fileCoordinatorToWriterMovingWindowLatencyMinimumInMilliseconds;
+d _fileCoordinatorToWriterMovingWindowLatencyMaximumInMilliseconds;
+d _transitionVitalityScoreV1;
+@"NSDictionary" _transitionVitalityFeatures;
+I _stillCaptureLuxLevel;
+@"NSString" _stillCapturePortType;
+i _stillCaptureType;
+i _stillCaptureResolutionFlavor;
+i _maxSystemPressureLevel;
+d _targetFrameRate;
+I _numberOfFramesDropped;
+@"NSNumber" _retimingRecipeIdentifier;
+d _minVideoFrameDurationInMilliseconds;
+d _maxVideoFrameDurationInMilliseconds;
+d _averageVideoFrameDurationInMilliseconds;
+d _medianVideoFrameDurationInMilliseconds;
+d _videoFrameDurationStandardDeviationInMilliseconds;
+```
+
+## Properties
+
+```
+@property (T@"NSString",C,N,V_clientApplicationID) clientApplicationID;
+@property (TB,N,V_recordingSucceeded) recordingSucceeded;
+@property (Ti,N,V_errorStatus) errorStatus;
+@property (Ti,N,V_sessionStatus) sessionStatus;
+@property (TB,N,V_longPressMovie) longPressMovie;
+@property (TB,N,V_originalRecording) originalRecording;
+@property (TB,N,V_hasStillImagePTS) hasStillImagePTS;
+@property (Td,N,V_movieDurationInSeconds) movieDurationInSeconds;
+@property (Td,N,V_stillTimeOffsetInSeconds) stillTimeOffsetInSeconds;
+@property (Td,N,V_stillTimeOffsetToVideoPrerollStartInMilliseconds) stillTimeOffsetToVideoPrerollStartInMilliseconds;
+@property (Td,N,V_stillTimeOffsetToVideoPrerollStopInMilliseconds) stillTimeOffsetToVideoPrerollStopInMilliseconds;
+@property (Td,N,V_stillTimeOffsetToAudioPrerollStartInMilliseconds) stillTimeOffsetToAudioPrerollStartInMilliseconds;
+@property (Td,N,V_stillTimeOffsetToAudioPrerollStopInMilliseconds) stillTimeOffsetToAudioPrerollStopInMilliseconds;
+@property (TB,N,V_overlappingCapture) overlappingCapture;
+@property (Tq,N,V_stagingNodeOverallNumberOfVideoFramesReceived) stagingNodeOverallNumberOfVideoFramesReceived;
+@property (Td,N,V_stagingNodeOverallAverageTimeBetweenVideoFramesInMilliseconds) stagingNodeOverallAverageTimeBetweenVideoFramesInMilliseconds;
+@property (Td,N,V_stagingNodeOverallStandardDeviationOfTimeBetweenVideoFramesInMilliseconds) stagingNodeOverallStandardDeviationOfTimeBetweenVideoFramesInMilliseconds;
+@property (Td,N,V_stagingNodeOverallMinimumTimeBetweenVideoFramesInMilliseconds) stagingNodeOverallMinimumTimeBetweenVideoFramesInMilliseconds;
+@property (Td,N,V_stagingNodeOverallMaximumTimeBetweenVideoFramesInMilliseconds) stagingNodeOverallMaximumTimeBetweenVideoFramesInMilliseconds;
+@property (Tq,N,V_stagingNodeValveActiveNumberOfVideoFramesReceived) stagingNodeValveActiveNumberOfVideoFramesReceived;
+@property (Td,N,V_stagingNodeValveActiveAverageTimeBetweenVideoFramesInMilliseconds) stagingNodeValveActiveAverageTimeBetweenVideoFramesInMilliseconds;
+@property (Td,N,V_stagingNodeValveActiveStandardDeviationOfTimeBetweenVideoFramesInMilliseconds) stagingNodeValveActiveStandardDeviationOfTimeBetweenVideoFramesInMilliseconds;
+@property (Td,N,V_stagingNodeValveActiveMinimumTimeBetweenVideoFramesInMilliseconds) stagingNodeValveActiveMinimumTimeBetweenVideoFramesInMilliseconds;
+@property (Td,N,V_stagingNodeValveActiveMaximumTimeBetweenVideoFramesInMilliseconds) stagingNodeValveActiveMaximumTimeBetweenVideoFramesInMilliseconds;
+@property (Tq,N,V_fileCoordinatorToWriterMovingWindowLatencyNumberOfSamples) fileCoordinatorToWriterMovingWindowLatencyNumberOfSamples;
+@property (Td,N,V_fileCoordinatorToWriterMovingWindowLatencyAverageInMilliseconds) fileCoordinatorToWriterMovingWindowLatencyAverageInMilliseconds;
+@property (Td,N,V_fileCoordinatorToWriterMovingWindowLatencyStandardDeviationInMilliseconds) fileCoordinatorToWriterMovingWindowLatencyStandardDeviationInMilliseconds;
+@property (Td,N,V_fileCoordinatorToWriterMovingWindowLatencyMinimumInMilliseconds) fileCoordinatorToWriterMovingWindowLatencyMinimumInMilliseconds;
+@property (Td,N,V_fileCoordinatorToWriterMovingWindowLatencyMaximumInMilliseconds) fileCoordinatorToWriterMovingWindowLatencyMaximumInMilliseconds;
+@property (Td,N,V_transitionVitalityScoreV1) transitionVitalityScoreV1;
+@property (T@"NSDictionary",&,N,V_transitionVitalityFeatures) transitionVitalityFeatures;
+@property (TI,N,V_stillCaptureLuxLevel) stillCaptureLuxLevel;
+@property (T@"NSString",C,N,V_stillCapturePortType) stillCapturePortType;
+@property (Ti,N,V_stillCaptureType) stillCaptureType;
+@property (Ti,N,V_stillCaptureResolutionFlavor) stillCaptureResolutionFlavor;
+@property (Ti,N,V_maxSystemPressureLevel) maxSystemPressureLevel;
+@property (Td,N,V_targetFrameRate) targetFrameRate;
+@property (TI,N,V_numberOfFramesDropped) numberOfFramesDropped;
+@property (T@"NSNumber",C,N,V_retimingRecipeIdentifier) retimingRecipeIdentifier;
+@property (Td,N,V_minVideoFrameDurationInMilliseconds) minVideoFrameDurationInMilliseconds;
+@property (Td,N,V_maxVideoFrameDurationInMilliseconds) maxVideoFrameDurationInMilliseconds;
+@property (Td,N,V_averageVideoFrameDurationInMilliseconds) averageVideoFrameDurationInMilliseconds;
+@property (Td,N,V_medianVideoFrameDurationInMilliseconds) medianVideoFrameDurationInMilliseconds;
+@property (Td,N,V_videoFrameDurationStandardDeviationInMilliseconds) videoFrameDurationStandardDeviationInMilliseconds;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[BWLivePhotoMovieAnalyticsPayload stagingNodeValveActiveStandardDeviationOfTimeBetweenVideoFramesInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload recordingSucceeded];
+-[BWLivePhotoMovieAnalyticsPayload stagingNodeValveActiveNumberOfVideoFramesReceived];
+-[BWLivePhotoMovieAnalyticsPayload stagingNodeValveActiveAverageTimeBetweenVideoFramesInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload eventDictionary];
+-[BWLivePhotoMovieAnalyticsPayload setErrorStatus:];
+-[BWLivePhotoMovieAnalyticsPayload setTargetFrameRate:];
+-[BWLivePhotoMovieAnalyticsPayload overlappingCapture];
+-[BWLivePhotoMovieAnalyticsPayload setStagingNodeOverallAverageTimeBetweenVideoFramesInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload videoFrameDurationStandardDeviationInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload setMaxSystemPressureLevel:];
+-[BWLivePhotoMovieAnalyticsPayload init];
+-[BWLivePhotoMovieAnalyticsPayload setStagingNodeValveActiveMinimumTimeBetweenVideoFramesInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload setFileCoordinatorToWriterMovingWindowLatencyMaximumInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload setStagingNodeValveActiveNumberOfVideoFramesReceived:];
+-[BWLivePhotoMovieAnalyticsPayload setSessionStatus:];
+-[BWLivePhotoMovieAnalyticsPayload maxSystemPressureLevel];
+-[BWLivePhotoMovieAnalyticsPayload retimingRecipeIdentifier];
+-[BWLivePhotoMovieAnalyticsPayload dealloc];
+-[BWLivePhotoMovieAnalyticsPayload setStillCaptureLuxLevel:];
+-[BWLivePhotoMovieAnalyticsPayload setFileCoordinatorToWriterMovingWindowLatencyAverageInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload setFileCoordinatorToWriterMovingWindowLatencyMinimumInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload reset];
+-[BWLivePhotoMovieAnalyticsPayload transitionVitalityScoreV1];
+-[BWLivePhotoMovieAnalyticsPayload longPressMovie];
+-[BWLivePhotoMovieAnalyticsPayload setNumberOfFramesDropped:];
+-[BWLivePhotoMovieAnalyticsPayload stillCaptureType];
+-[BWLivePhotoMovieAnalyticsPayload setTransitionVitalityScoreV1:];
+-[BWLivePhotoMovieAnalyticsPayload stagingNodeValveActiveMinimumTimeBetweenVideoFramesInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload originalRecording];
+-[BWLivePhotoMovieAnalyticsPayload setStagingNodeValveActiveStandardDeviationOfTimeBetweenVideoFramesInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload stillTimeOffsetToVideoPrerollStopInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload setClientApplicationID:];
+-[BWLivePhotoMovieAnalyticsPayload transitionVitalityFeatures];
+-[BWLivePhotoMovieAnalyticsPayload stagingNodeOverallNumberOfVideoFramesReceived];
+-[BWLivePhotoMovieAnalyticsPayload setStagingNodeOverallNumberOfVideoFramesReceived:];
+-[BWLivePhotoMovieAnalyticsPayload stagingNodeValveActiveMaximumTimeBetweenVideoFramesInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload stillCapturePortType];
+-[BWLivePhotoMovieAnalyticsPayload setOriginalRecording:];
+-[BWLivePhotoMovieAnalyticsPayload eventName];
+-[BWLivePhotoMovieAnalyticsPayload setMovieDurationInSeconds:];
+-[BWLivePhotoMovieAnalyticsPayload setLongPressMovie:];
+-[BWLivePhotoMovieAnalyticsPayload fileCoordinatorToWriterMovingWindowLatencyMaximumInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload movieDurationInSeconds];
+-[BWLivePhotoMovieAnalyticsPayload stillTimeOffsetInSeconds];
+-[BWLivePhotoMovieAnalyticsPayload setFileCoordinatorToWriterMovingWindowLatencyStandardDeviationInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload setStagingNodeOverallMaximumTimeBetweenVideoFramesInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload setStillCaptureType:];
+-[BWLivePhotoMovieAnalyticsPayload setStillTimeOffsetToVideoPrerollStopInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload setAverageVideoFrameDurationInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload setStillCaptureResolutionFlavor:];
+-[BWLivePhotoMovieAnalyticsPayload maxVideoFrameDurationInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload setStagingNodeOverallMinimumTimeBetweenVideoFramesInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload setHasStillImagePTS:];
+-[BWLivePhotoMovieAnalyticsPayload stillTimeOffsetToAudioPrerollStartInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload setRecordingSucceeded:];
+-[BWLivePhotoMovieAnalyticsPayload fileCoordinatorToWriterMovingWindowLatencyStandardDeviationInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload sessionStatus];
+-[BWLivePhotoMovieAnalyticsPayload setStillTimeOffsetToAudioPrerollStartInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload stagingNodeOverallMinimumTimeBetweenVideoFramesInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload setStillTimeOffsetInSeconds:];
+-[BWLivePhotoMovieAnalyticsPayload setTransitionVitalityFeatures:];
+-[BWLivePhotoMovieAnalyticsPayload averageVideoFrameDurationInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload fileCoordinatorToWriterMovingWindowLatencyNumberOfSamples];
+-[BWLivePhotoMovieAnalyticsPayload stagingNodeOverallStandardDeviationOfTimeBetweenVideoFramesInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload setMedianVideoFrameDurationInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload setMinVideoFrameDurationInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload stagingNodeOverallAverageTimeBetweenVideoFramesInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload stillCaptureLuxLevel];
+-[BWLivePhotoMovieAnalyticsPayload setStillTimeOffsetToVideoPrerollStartInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload fileCoordinatorToWriterMovingWindowLatencyMinimumInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload setStagingNodeOverallStandardDeviationOfTimeBetweenVideoFramesInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload errorStatus];
+-[BWLivePhotoMovieAnalyticsPayload setStagingNodeValveActiveMaximumTimeBetweenVideoFramesInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload medianVideoFrameDurationInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload stillTimeOffsetToVideoPrerollStartInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload fileCoordinatorToWriterMovingWindowLatencyAverageInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload setOverlappingCapture:];
+-[BWLivePhotoMovieAnalyticsPayload stagingNodeOverallMaximumTimeBetweenVideoFramesInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload targetFrameRate];
+-[BWLivePhotoMovieAnalyticsPayload hasStillImagePTS];
+-[BWLivePhotoMovieAnalyticsPayload setVideoFrameDurationStandardDeviationInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload minVideoFrameDurationInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload setFileCoordinatorToWriterMovingWindowLatencyNumberOfSamples:];
+-[BWLivePhotoMovieAnalyticsPayload numberOfFramesDropped];
+-[BWLivePhotoMovieAnalyticsPayload stillTimeOffsetToAudioPrerollStopInMilliseconds];
+-[BWLivePhotoMovieAnalyticsPayload setStillTimeOffsetToAudioPrerollStopInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload setStillCapturePortType:];
+-[BWLivePhotoMovieAnalyticsPayload stillCaptureResolutionFlavor];
+-[BWLivePhotoMovieAnalyticsPayload setStagingNodeValveActiveAverageTimeBetweenVideoFramesInMilliseconds:];
+-[BWLivePhotoMovieAnalyticsPayload clientApplicationID];
+-[BWLivePhotoMovieAnalyticsPayload setRetimingRecipeIdentifier:];
+-[BWLivePhotoMovieAnalyticsPayload setMaxVideoFrameDurationInMilliseconds:];
+```

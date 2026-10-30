@@ -1,0 +1,272 @@
+# `CAMViewfinderView`
+
+- Image: [`/System/Library/PrivateFrameworks/CameraUI.framework/CameraUI`](../userland/System__Library__PrivateFrameworks__CameraUI.framework__CameraUI.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `UIView`
+- Protocols: `CEKBadgeViewDelegate`, `CAMInstructionLabelDelegate`, `CAMViewfinderTransitionable`
+- 44 instance variables, 48 properties, 153 instance methods, 1 class methods
+
+## Instance variables
+
+```
+B _useMessagesLayout;
+B _previewAlignmentGuideVisible;
+B _showingStandardControls;
+q _layoutStyle;
+@"<CAMControlVisibilityDelegate>" _visibilityDelegate;
+@"<CAMPanoramaChromeLayoutDelegate>" _chromePanoramaLayoutDelegate;
+@"CAMPreviewView" _previewView;
+q _externalDisplayPreviewOrientation;
+@"NSArray" _visibleTopBadges;
+@"CAMFocusLockBadge" _focusAndExposureLockBadge;
+@"CAMLivePhotoBadge" _livePhotoBadge;
+@"CAMShallowDepthOfFieldBadge" _shallowDepthOfFieldBadge;
+@"CAMPortraitModeInstructionLabel" _portraitModeInstructionLabel;
+@"CAMCleanLensesInstructionLabel" _cleanLensesInstructionLabel;
+@"CAMNightModeInstructionLabel" _nightModeInstructionLabel;
+@"CAMPreviewAlignmentGuide" _previewAlignmentGuide;
+@"CAMSharedLibraryBadge" _sharedLibraryBadge;
+@"CAMShutterIndicatorView" _shutterIndicatorView;
+@"CAMElapsedTimeView" _elapsedTimeView;
+@"CAMBurstIndicatorView" _burstIndicatorView;
+@"CAMTimerIndicatorView" _timerIndicatorView;
+@"CAMPanoramaView" _panoramaView;
+q _previewViewOrientation;
+@"CAMZoomSlider" _zoomSlider;
+@"CAMZoomControl" _zoomControl;
+@"CEKLightingControl" _lightingControl;
+@"CEKLightingNameBadge" _lightingNameBadge;
+@"CAMDisabledModeOverlayView" _disabledModeOverlayView;
+q _desiredAspectRatio;
+q _maskingAspectRatio;
+@"VKTextLiftingView" _textInteractionInsert;
+@"CAMImageAnalysisInstructionLabel" _imageAnalysisInstructionLabel;
+@"CAMMachineReadableCodeButton" _machineReadableCodeButton;
+q _orientation;
+@"UIView" _chromeView;
+@"CAMPreviewContainerMaskingView" __previewContainerMaskingView;
+@"UIView" __previewContainerView;
+@"CAMViewfinderOpenAndCloseTransition" __openAndCloseTransition;
+@"CAMViewfinderFlipTransition" __flipTransition;
+@"UIView" __topBarExtensionView;
+@"UIView" __bottomBarExtensionView;
+@"CAMFullscreenViewfinderLayout" __modernLayout;
+@"NSMutableDictionary" __descriptionOverlayViewByKey;
+{CGRect="origin"{CGPoint="x"d"y"d}"size"{CGSize="width"d"height"d}} _externalChromeShutterButtonFrame;
+```
+
+## Properties
+
+```
+@property (T@"CAMPreviewContainerMaskingView",R,N,V__previewContainerMaskingView) _previewContainerMaskingView;
+@property (T@"UIView",R,N,V__previewContainerView) _previewContainerView;
+@property (T@"CAMPreviewAlignmentGuide",&,N,S_setPreviewAlignmentGuide:,V_previewAlignmentGuide) previewAlignmentGuide;
+@property (T@"CAMViewfinderOpenAndCloseTransition",&,N,S_setOpenAndCloseTransition:,V__openAndCloseTransition) _openAndCloseTransition;
+@property (T@"CAMViewfinderFlipTransition",&,N,S_setFlipTransition:,V__flipTransition) _flipTransition;
+@property (T@"UIView",&,N,S_setTopBarExtensionView:,V__topBarExtensionView) _topBarExtensionView;
+@property (T@"UIView",&,N,S_setBottomBarExtensionView:,V__bottomBarExtensionView) _bottomBarExtensionView;
+@property (T@"CAMFullscreenViewfinderLayout",&,N,S_setModernLayout:,V__modernLayout) _modernLayout;
+@property (T@"NSMutableDictionary",R,N,V__descriptionOverlayViewByKey) _descriptionOverlayViewByKey;
+@property (T@"CAMMachineReadableCodeButton",&,N,V_machineReadableCodeButton) machineReadableCodeButton;
+@property (Tq,N,V_layoutStyle) layoutStyle;
+@property (TB,N,V_useMessagesLayout) useMessagesLayout;
+@property (T@"<CAMControlVisibilityDelegate>",W,N,V_visibilityDelegate) visibilityDelegate;
+@property (T@"<CAMPanoramaChromeLayoutDelegate>",W,N,V_chromePanoramaLayoutDelegate) chromePanoramaLayoutDelegate;
+@property (T@"CAMPreviewView",&,N,V_previewView) previewView;
+@property (Tq,N,V_externalDisplayPreviewOrientation) externalDisplayPreviewOrientation;
+@property (T@"NSArray",&,N,V_visibleTopBadges) visibleTopBadges;
+@property (T@"CAMFocusLockBadge",&,N,V_focusAndExposureLockBadge) focusAndExposureLockBadge;
+@property (T@"CAMLivePhotoBadge",&,N,V_livePhotoBadge) livePhotoBadge;
+@property (T@"CAMShallowDepthOfFieldBadge",&,N,V_shallowDepthOfFieldBadge) shallowDepthOfFieldBadge;
+@property (T@"CAMPortraitModeInstructionLabel",&,N,V_portraitModeInstructionLabel) portraitModeInstructionLabel;
+@property (T@"CAMCleanLensesInstructionLabel",&,N,V_cleanLensesInstructionLabel) cleanLensesInstructionLabel;
+@property (T@"CAMNightModeInstructionLabel",&,N,V_nightModeInstructionLabel) nightModeInstructionLabel;
+@property (TB,N,GisPreviewAlignmentGuideVisible,V_previewAlignmentGuideVisible) previewAlignmentGuideVisible;
+@property (T@"CAMSharedLibraryBadge",&,N,V_sharedLibraryBadge) sharedLibraryBadge;
+@property (T@"CAMShutterIndicatorView",&,N,V_shutterIndicatorView) shutterIndicatorView;
+@property (T@"CAMElapsedTimeView",&,N,V_elapsedTimeView) elapsedTimeView;
+@property (T@"CAMBurstIndicatorView",&,N,V_burstIndicatorView) burstIndicatorView;
+@property (T@"CAMTimerIndicatorView",&,N,V_timerIndicatorView) timerIndicatorView;
+@property (T@"CAMPanoramaView",&,N,V_panoramaView) panoramaView;
+@property (Tq,N,V_previewViewOrientation) previewViewOrientation;
+@property (T@"CAMZoomSlider",&,N,V_zoomSlider) zoomSlider;
+@property (T@"CAMZoomControl",&,N,V_zoomControl) zoomControl;
+@property (T@"CEKLightingControl",&,N,V_lightingControl) lightingControl;
+@property (T@"CEKLightingNameBadge",&,N,V_lightingNameBadge) lightingNameBadge;
+@property (TB,N,GisShowingStandardControls,V_showingStandardControls) showingStandardControls;
+@property (T@"CAMDisabledModeOverlayView",&,N,V_disabledModeOverlayView) disabledModeOverlayView;
+@property (Tq,N,V_desiredAspectRatio) desiredAspectRatio;
+@property (Tq,N,V_maskingAspectRatio) maskingAspectRatio;
+@property (T@"VKTextLiftingView",N,V_textInteractionInsert) textInteractionInsert;
+@property (T@"CAMImageAnalysisInstructionLabel",&,N,V_imageAnalysisInstructionLabel) imageAnalysisInstructionLabel;
+@property (Tq,N,V_orientation) orientation;
+@property (T@"UIView",&,N,V_chromeView) chromeView;
+@property (T{CGRect={CGPoint=dd}{CGSize=dd}},N,V_externalChromeShutterButtonFrame) externalChromeShutterButtonFrame;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Class methods
+
+```
++[CAMViewfinderView layerClass];
+```
+
+## Instance methods
+
+```
+-[CAMViewfinderView setLayoutStyle:];
+-[CAMViewfinderView setOrientation:animated:];
+-[CAMViewfinderView setOrientation:];
+-[CAMViewfinderView isShowingStandardControls];
+-[CAMViewfinderView layoutStyle];
+-[CAMViewfinderView setShowingStandardControls:];
+-[CAMViewfinderView zoomSlider];
+-[CAMViewfinderView previewView];
+-[CAMViewfinderView zoomControl];
+-[CAMViewfinderView systemLayoutSizeFittingSize:];
+-[CAMViewfinderView descriptionOverlayViewForKey:];
+-[CAMViewfinderView setDescriptionOverlayView:forKey:];
+-[CAMViewfinderView setDisabledModeOverlayView:];
+-[CAMViewfinderView setPreviewViewOrientation:];
+-[CAMViewfinderView externalChromeShutterButtonFrame];
+-[CAMViewfinderView initWithLayoutStyle:];
+-[CAMViewfinderView orientation];
+-[CAMViewfinderView previewViewOrientation];
+-[CAMViewfinderView badgeViewDidChangeIntrinsicContentSize:];
+-[CAMViewfinderView setChromeView:];
+-[CAMViewfinderView elapsedTimeView];
+-[CAMViewfinderView instructionLabelDidChangeIntrinsicContentSize:];
+-[CAMViewfinderView setPreviewView:];
+-[CAMViewfinderView layoutSubviews];
+-[CAMViewfinderView hitTest:withEvent:];
+-[CAMViewfinderView lightingControl];
+-[CAMViewfinderView setExternalChromeShutterButtonFrame:];
+-[CAMViewfinderView setPreviewAlignmentGuideVisible:];
+-[CAMViewfinderView setPreviewAlignmentGuideVisible:animated:];
+-[CAMViewfinderView prepareForResumingUsingCrossfade];
+-[CAMViewfinderView _setPreviewAlignmentGuide:];
+-[CAMViewfinderView setPanoramaView:];
+-[CAMViewfinderView chromeView];
+-[CAMViewfinderView setTextInteractionInsert:];
+-[CAMViewfinderView imageAnalysisInstructionLabel];
+-[CAMViewfinderView cleanLensesInstructionLabel];
+-[CAMViewfinderView isPreviewAlignmentGuideVisible];
+-[CAMViewfinderView removeInflightBlurAnimations];
+-[CAMViewfinderView _previewContainerView];
+-[CAMViewfinderView _wantsPreviewOnlyLayout];
+-[CAMViewfinderView _descriptionOverlayViewByKey];
+-[CAMViewfinderView panoramaView];
+-[CAMViewfinderView lightingNameBadge];
+-[CAMViewfinderView disabledModeOverlayView];
+-[CAMViewfinderView initWithCoder:];
+-[CAMViewfinderView dismissMachineReadableCodeButtonAnimated:];
+-[CAMViewfinderView textInteractionInsert];
+-[CAMViewfinderView machineReadableCodeButton];
+-[CAMViewfinderView initWithFrame:];
+-[CAMViewfinderView nightModeInstructionLabel];
+-[CAMViewfinderView desiredAspectRatio];
+-[CAMViewfinderView previewAlignmentGuide];
+-[CAMViewfinderView setVisibilityDelegate:];
+-[CAMViewfinderView visibilityDelegate];
+-[CAMViewfinderView _badgeTrayHeightForLayoutStyle:];
+-[CAMViewfinderView setCleanLensesInstructionLabel:];
+-[CAMViewfinderView _flipTransition];
+-[CAMViewfinderView setMaskingAspectRatio:animated:];
+-[CAMViewfinderView setZoomControl:];
+-[CAMViewfinderView _bottomBarExtensionView];
+-[CAMViewfinderView _cameraAppPreviewLayoutForAspectRatio:outPreviewBounds:outPreviewCenter:outFourThreeTopBarFrame:outBottomBarFrame:];
+-[CAMViewfinderView _cameraPreviewFrameForAspectRatio:topBarFrame:bottomBarFrame:];
+-[CAMViewfinderView _commonCAMViewfinderViewInitializationWithLayoutStyle:];
+-[CAMViewfinderView _createPlaceholderSnapshotAndPerformDoubleSidedFadeForView:fadeOutDuration:fadeOutDelay:fadeInDuration:fadeInDelay:];
+-[CAMViewfinderView _createPlaceholderSnapshotAndPerformSingleSidedFadeForView:fadeOutDuration:fadeOutDelay:];
+-[CAMViewfinderView _enforceBadgeSubviewOrderingWithAppearingBadges:];
+-[CAMViewfinderView _frameForBadgeTrayForLayoutStyle:orientation:];
+-[CAMViewfinderView _interpolatedVerticalOffsetForShutterIndicator];
+-[CAMViewfinderView _layoutBadgeTrayForLayoutStyle:appearingBadges:disappearingBadges:animated:];
+-[CAMViewfinderView _layoutBadgeTrayWithBadges:layoutStyle:];
+-[CAMViewfinderView _layoutBarExtensionViews];
+-[CAMViewfinderView _layoutBottomBadgesForLayoutStyle:];
+-[CAMViewfinderView _layoutBottomCenteredView:aboveView:aboveViewSpacing:forLayoutStyle:];
+-[CAMViewfinderView _layoutBurstIndicatorForLayoutStyle:];
+-[CAMViewfinderView _layoutCleanLensInstructionLabelForLayoutStyle:];
+-[CAMViewfinderView _layoutDescriptionOverlayView:];
+-[CAMViewfinderView _layoutElapsedTimeViewForLayoutStyle:];
+-[CAMViewfinderView _layoutImageAnalysisInstructionLabelForLayoutStyle:];
+-[CAMViewfinderView _layoutInstructionLabelOnTop:forLayoutStyle:];
+-[CAMViewfinderView _layoutLightingControlForLayoutStyle:];
+-[CAMViewfinderView _layoutMachineReadableCodeButton];
+-[CAMViewfinderView _layoutMarginInsetsForLayoutStyle:];
+-[CAMViewfinderView _layoutNightModeInstructionLabelForLayoutStyle:];
+-[CAMViewfinderView _layoutPanoramaViewForLayoutStyle:];
+-[CAMViewfinderView _layoutPortraitModeInstructionLabelForLayoutStyle:];
+-[CAMViewfinderView _layoutPreviewAlignmentGuide];
+-[CAMViewfinderView _layoutShutterIndicatorForLayoutStyle:];
+-[CAMViewfinderView _layoutSnapshotsOfPreviewView];
+-[CAMViewfinderView _layoutTextInteractionInsertAndActionInfoView];
+-[CAMViewfinderView _layoutTimerIndicatorViewForLayoutStyle:];
+-[CAMViewfinderView _layoutTopBadgesForLayoutStyle:animated:];
+-[CAMViewfinderView _layoutTopBadgesForLayoutStyle:appearingBadges:disappearingBadges:animated:];
+-[CAMViewfinderView _layoutZoomControlForLayoutStyle:];
+-[CAMViewfinderView _layoutZoomSliderForLayoutStyle:];
+-[CAMViewfinderView _modernLayout];
+-[CAMViewfinderView _multiplierForAspectRatio:];
+-[CAMViewfinderView _openAndCloseTransition];
+-[CAMViewfinderView _previewContainerMaskingView];
+-[CAMViewfinderView _previewFrameForAspectRatio:topBarFrame:bottomBarFrame:];
+-[CAMViewfinderView _previewLayoutForAspectRatio:outPreviewBounds:outPreviewCenter:outFourThreeTopBarFrame:outBottomBarFrame:];
+-[CAMViewfinderView _previewOffset];
+-[CAMViewfinderView _previewSizeForAspectRatio:];
+-[CAMViewfinderView _setBottomBarExtensionView:];
+-[CAMViewfinderView _setFlipTransition:];
+-[CAMViewfinderView _setModernLayout:];
+-[CAMViewfinderView _setOpenAndCloseTransition:];
+-[CAMViewfinderView _setTopBarExtensionView:];
+-[CAMViewfinderView _shouldLayoutPortraitInstructionsAtTop];
+-[CAMViewfinderView _topBarExtensionView];
+-[CAMViewfinderView _updateBarExtensionViewsIfNecessary];
+-[CAMViewfinderView _updateModernLayout];
+-[CAMViewfinderView _updatePreviewAlignmentGuideVisibilityAnimated:];
+-[CAMViewfinderView _viewToLayoutBadgesBelowForLayoutStyle:orientation:];
+-[CAMViewfinderView _wantsFullScreenPreviewRegardlessOfLayoutForLayoutStyle:];
+-[CAMViewfinderView _wantsInterfaceOrientedPreviewForLayoutStyle:];
+-[CAMViewfinderView adoptMachineReadableCodeButton:animated:];
+-[CAMViewfinderView burstIndicatorView];
+-[CAMViewfinderView chromePanoramaLayoutDelegate];
+-[CAMViewfinderView externalDisplayPreviewOrientation];
+-[CAMViewfinderView focusAndExposureLockBadge];
+-[CAMViewfinderView livePhotoBadge];
+-[CAMViewfinderView maskingAspectRatio];
+-[CAMViewfinderView portraitModeInstructionLabel];
+-[CAMViewfinderView prepareForAutorotation];
+-[CAMViewfinderView setBurstIndicatorView:];
+-[CAMViewfinderView setChromePanoramaLayoutDelegate:];
+-[CAMViewfinderView setDesiredAspectRatio:];
+-[CAMViewfinderView setElapsedTimeView:];
+-[CAMViewfinderView setExternalDisplayPreviewOrientation:];
+-[CAMViewfinderView setFocusAndExposureLockBadge:];
+-[CAMViewfinderView setImageAnalysisInstructionLabel:];
+-[CAMViewfinderView setLightingControl:];
+-[CAMViewfinderView setLightingNameBadge:];
+-[CAMViewfinderView setLivePhotoBadge:];
+-[CAMViewfinderView setMachineReadableCodeButton:];
+-[CAMViewfinderView setMaskingAspectRatio:];
+-[CAMViewfinderView setNightModeInstructionLabel:];
+-[CAMViewfinderView setPortraitModeInstructionLabel:];
+-[CAMViewfinderView setShallowDepthOfFieldBadge:];
+-[CAMViewfinderView setSharedLibraryBadge:];
+-[CAMViewfinderView setShutterIndicatorView:];
+-[CAMViewfinderView setTimerIndicatorView:];
+-[CAMViewfinderView setUseMessagesLayout:];
+-[CAMViewfinderView setVisibleTopBadges:];
+-[CAMViewfinderView setVisibleTopBadges:animated:];
+-[CAMViewfinderView setZoomSlider:];
+-[CAMViewfinderView shallowDepthOfFieldBadge];
+-[CAMViewfinderView sharedLibraryBadge];
+-[CAMViewfinderView shutterIndicatorView];
+-[CAMViewfinderView systemLayoutSizeFittingSize:forAspectRatio:];
+-[CAMViewfinderView timerIndicatorView];
+-[CAMViewfinderView useMessagesLayout];
+-[CAMViewfinderView visibleTopBadges];
+```

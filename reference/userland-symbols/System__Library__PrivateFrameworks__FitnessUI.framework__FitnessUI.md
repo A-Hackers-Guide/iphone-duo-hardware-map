@@ -1,0 +1,1615 @@
+# Symbols: `/System/Library/PrivateFrameworks/FitnessUI.framework/FitnessUI`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__PrivateFrameworks__FitnessUI.framework__FitnessUI.md). **[DSC]**
+
+598 public symbols, 2,238 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x193e05244  __TEXT,__text  _FIMindfulnessLocalizedDay
+0x1e0b41370  __DATA_CONST,__const  _FIUIActivityContinuityKey
+0x193e32344  __TEXT,__text  _FIUIActivityLevelsForBMR
+0x193e323bc  __TEXT,__text  _FIUIActivityLevelsForBMRAndIsStandalonePhoneFitnessMode
+0x193e3258c  __TEXT,__text  _FIUIActivityLevelsForFitnessJr
+0x193e32634  __TEXT,__text  _FIUIActivityLevelsForFitnessJrAndIsStandalonePhoneFitnessMode
+0x1e0b41a70  __DATA_CONST,__const  _FIUIAddPregnancyAccessibilityIdentifier
+0x193e15e28  __TEXT,__text  _FIUIApplicationIconForBundleIDAndVariant
+0x193e13c0c  __TEXT,__text  _FIUIAssetsBundle
+0x193e076b4  __TEXT,__text  _FIUIBiologicalSexDisplayString
+0x193dfa8b8  __TEXT,__text  _FIUIBundle
+0x193e32210  __TEXT,__text  _FIUICalculateBMR
+0x193e2a218  __TEXT,__text  _FIUIChartAbsolutePositionForXPlaneValue
+0x193e2a160  __TEXT,__text  _FIUIChartAbsolutePositionForYPlaneValue
+0x193e2a120  __TEXT,__text  _FIUIChartRelativePosition
+0x193e2a1f8  __TEXT,__text  _FIUIChartRelativePositionForXPlaneValue
+0x193e2a140  __TEXT,__text  _FIUIChartRelativePositionForYPlaneValue
+0x193e2a1f4  __TEXT,__text  _FIUIChartXAxisFloatValue
+0x193e15f7c  __TEXT,__text  _FIUICircularGradientImage
+0x193e15ef4  __TEXT,__text  _FIUICircularImage
+0x193e161c0  __TEXT,__text  _FIUICircularWorkoutGradientImage
+0x193e161c8  __TEXT,__text  _FIUICircularWorkoutGradientImageWithGoal
+0x193e14b80  __TEXT,__text  _FIUIClearWorkoutPowerMode
+0x193e1647c  __TEXT,__text  _FIUIColorForCurrentContrastMode
+0x193e33418  __TEXT,__text  _FIUIComputeAttributesToFitStringsInRectangle
+0x193e33098  __TEXT,__text  _FIUIComputeAttributesToFitStringsOnSingleLineWithMaximumWidth
+0x193e333f4  __TEXT,__text  _FIUIComputeAttributesToFitStringsOnSingleLineWithMaximumWidthAndMinimumFontSize
+0x193dfd42c  __TEXT,__text  _FIUIComputeFontToFit
+0x193e14668  __TEXT,__text  _FIUICopyUserFirstNameFromAddressBook
+0x193e146d0  __TEXT,__text  _FIUICopyUserFullNameFromAddressBook
+0x193e14744  __TEXT,__text  _FIUICopyUserIdentifierFromAddressBook
+0x193e043e8  __TEXT,__text  _FIUICurrentLanguageNeedsExtendedLineSpacing
+0x193dfab3c  __TEXT,__text  _FIUICurrentLanguageRequiresTallScript
+0x193e04544  __TEXT,__text  _FIUICurrentLanguageSupportsTightLineSpacing
+0x193e1f0d0  __TEXT,__text  _FIUICurrentLocaleUsesMetricSystem
+0x193e33080  __TEXT,__text  _FIUICustomSplits
+0x193e075c0  __TEXT,__text  _FIUIDateOfBirthDisplayString
+0x193e1c420  __TEXT,__text  _FIUIDeepBreathingBreathsPerMinute
+0x193ea83a0  __TEXT,__const  _FIUIDeepBreathingConfigurationWindAnimationDuration
+0x193ea8388  __TEXT,__const  _FIUIDeepBreathingCongratulationsAnimationDuration
+0x193ea8390  __TEXT,__const  _FIUIDeepBreathingCongratulationsUnwindAnimationDuration
+0x193ea8398  __TEXT,__const  _FIUIDeepBreathingCongratulationsUnwindSpinInPlaceFraction
+0x1e0b418b8  __DATA_CONST,__const  _FIUIDeepBreathingDefaultSessionMinutesKey
+0x193e1c638  __TEXT,__text  _FIUIDeepBreathingExhaleDuration
+0x193e1c5ac  __TEXT,__text  _FIUIDeepBreathingFullBreathDuration
+0x193e1ce00  __TEXT,__text  _FIUIDeepBreathingGradientImageDataForPetalColor
+0x193e1c548  __TEXT,__text  _FIUIDeepBreathingInhaleBreathFraction
+0x193e1c5bc  __TEXT,__text  _FIUIDeepBreathingInhaleDuration
+0x193e1c4f4  __TEXT,__text  _FIUIDeepBreathingInhaleExhaleRatio
+0x193e1c738  __TEXT,__text  _FIUIDeepBreathingOnRampExhaleDuration
+0x193e1c6c4  __TEXT,__text  _FIUIDeepBreathingOnRampFullBreathDuration
+0x193e1c6cc  __TEXT,__text  _FIUIDeepBreathingOnRampInhaleDuration
+0x193e1c6bc  __TEXT,__text  _FIUIDeepBreathingOnRampNumberOfBreaths
+0x193e1c7c0  __TEXT,__text  _FIUIDeepBreathingPetalCenter
+0x193e1c7ac  __TEXT,__text  _FIUIDeepBreathingPetalCountForMinutesRemaining
+0x193e1514c  __TEXT,__text  _FIUIDeepBreathingReminderFrequencyOptions
+0x193e15140  __TEXT,__text  _FIUIDeepBreathingRemindersPerDayOptions
+0x193e1c3d4  __TEXT,__text  _FIUIDeepBreathingSelectedHapticLevel
+0x193e1c470  __TEXT,__text  _FIUIDeepBreathingSessionMinutesDefault
+0x193ea8380  __TEXT,__const  _FIUIDeepBreathingSessionMinutesMax
+0x193ea8378  __TEXT,__const  _FIUIDeepBreathingSessionMinutesMin
+0x193e1c374  __TEXT,__text  _FIUIDeepBreathingShouldOptimizePetalCount
+0x1e0b418c0  __DATA_CONST,__const  _FIUIDeepBreathingUseLastDurationKey
+0x193e1513c  __TEXT,__text  _FIUIDeviceMeetsMinimumOSVersionGlory
+0x193dfe6d4  __TEXT,__text  _FIUIDeviceScale
+0x193e148dc  __TEXT,__text  _FIUIDeviceSupportsAutoPlay
+0x193e15134  __TEXT,__text  _FIUIDeviceSupportsElevationGain
+0x193e15138  __TEXT,__text  _FIUIDeviceSupportsGroundElevation
+0x193e150a8  __TEXT,__text  _FIUIDeviceSupportsNavigation
+0x193dfaa0c  __TEXT,__text  _FIUIDeviceSupportsSwimming
+0x193dfcec8  __TEXT,__text  _FIUIDistanceTypeForActivityType
+0x193dfcf20  __TEXT,__text  _FIUIDistanceUnitForHKUnit
+0x193e1f0d4  __TEXT,__text  _FIUIDistanceUnitIsMetric
+0x193dfe788  __TEXT,__text  _FIUIDistanceUnitIsValid
+0x193e144e8  __TEXT,__text  _FIUIEdgeInsetsForDesiredButtonFrame
+0x1e0b41a68  __DATA_CONST,__const  _FIUIEditPregnancyAccessibilityIdentifier
+0x193e165f4  __TEXT,__text  _FIUIEffectiveGoalTypeForWorkout
+0x193e0cb60  __TEXT,__text  _FIUIFitnessJuniorDefaultActivityTypes
+0x193e33454  __TEXT,__text  _FIUIFlightsShortDescriptionWithFlightsCount
+0x193dfb7b8  __TEXT,__text  _FIUIFlipFrameRightToLeftIfNeeded
+0x193dfb738  __TEXT,__text  _FIUIFlipViewRightToLeftIfNeeded
+0x193e14d40  __TEXT,__text  _FIUIGymKitAcceptedUserConsent
+0x193e14d78  __TEXT,__text  _FIUIGymKitUserConsentVersion
+0x193e1ef08  __TEXT,__text  _FIUIHKQuantityForDistanceUnitAndType
+0x193dfe754  __TEXT,__text  _FIUIHKUnitForDistanceUnit
+0x193e1f0d8  __TEXT,__text  _FIUIHKUnitIsCalorieUnit
+0x193e1f298  __TEXT,__text  _FIUIHKWorkoutGoalTypeDescription
+0x193e15dc0  __TEXT,__text  _FIUIHasPresentedRingExplanation
+0x193e15924  __TEXT,__text  _FIUIHealthStoreForDevice
+0x193e07160  __TEXT,__text  _FIUIHeightDisplayString
+0x193dfadf8  __TEXT,__text  _FIUIIconSize
+0x193dfdd9c  __TEXT,__text  _FIUIImageInBundle
+0x193e08b48  __TEXT,__text  _FIUIInsetRect
+0x193e3348c  __TEXT,__text  _FIUIInterpolatedPoint
+0x193e334d4  __TEXT,__text  _FIUIInterpolatedRect
+0x193e334b0  __TEXT,__text  _FIUIInterpolatedSize
+0x193dfb6ac  __TEXT,__text  _FIUIInterpolatedValue
+0x193e14830  __TEXT,__text  _FIUIIsActivePairedDeviceSatellitePaired
+0x193dfe6a8  __TEXT,__text  _FIUIIsAutoPauseEnabled
+0x193e16444  __TEXT,__text  _FIUIIsBacktrackIntegrationEnabled
+0x193e0c644  __TEXT,__text  _FIUIIsCategorizedOtherActivityType
+0x193e14cc8  __TEXT,__text  _FIUIIsCyclingAutoPauseEnabled
+0x193e14d24  __TEXT,__text  _FIUIIsDoubleTapToScrollWorkoutViewsEnabled
+0x193e14d00  __TEXT,__text  _FIUIIsEndRemindersEnabled
+0x193e163c4  __TEXT,__text  _FIUIIsEqual
+0x193dfa700  __TEXT,__text  _FIUIIsFitnessTrackingEnabled
+0x193e15d54  __TEXT,__text  _FIUIIsGuidedMeditationPrefetchEnabled
+0x193e15d38  __TEXT,__text  _FIUIIsGuidedRunMediaMomentsEnabled
+0x193e15d00  __TEXT,__text  _FIUIIsGuidedRunPrefetchEnabled
+0x193e15ce4  __TEXT,__text  _FIUIIsGuidedWorkoutMediaMomentsEnabled
+0x193e15cac  __TEXT,__text  _FIUIIsGuidedWorkoutPrefetchEnabled
+0x193e14838  __TEXT,__text  _FIUIIsHeartRateEnabled
+0x193e14ef0  __TEXT,__text  _FIUIIsNextWorkoutSafetyCheckInEnabled
+0x193dfcca0  __TEXT,__text  _FIUIIsPowerSavingModeEnabled
+0x193e14ecc  __TEXT,__text  _FIUIIsPrecisionStartEnabled
+0x193e14968  __TEXT,__text  _FIUIIsProSettingEnabled
+0x193e14c90  __TEXT,__text  _FIUIIsRunningAutoPauseEnabled
+0x193e14d04  __TEXT,__text  _FIUIIsStartRemindersEnabled
+0x193e15dec  __TEXT,__text  _FIUIIsWheelchairUserForWheelchairUse
+0x193e14fe4  __TEXT,__text  _FIUIIsWorkoutConfigurationsMigrated
+0x193e15038  __TEXT,__text  _FIUIIsWorkoutEllipticalLocationConfigurationMigrated
+0x193e14ab4  __TEXT,__text  _FIUIIsWorkoutExtendedModeEnabled
+0x193e14a30  __TEXT,__text  _FIUIIsWorkoutExtendedModeSupported
+0x193e15000  __TEXT,__text  _FIUIIsWorkoutKickboxingConfigurationMigrated
+0x193e15ca8  __TEXT,__text  _FIUIIsWorkoutNFCAllDayDefaultEnabled
+0x193e15d8c  __TEXT,__text  _FIUIIsWorkoutNFCAllDayEnabled
+0x193e14d08  __TEXT,__text  _FIUIIsWorkoutPauseByChordPressEnabled
+0x193e15070  __TEXT,__text  _FIUIIsWorkoutPoolSwimmingConfigurationMigrated
+0x193e1508c  __TEXT,__text  _FIUIIsWorkoutRowingConfigurationMigrated
+0x193e1501c  __TEXT,__text  _FIUIIsWorkoutRowingLocationConfigurationMigrated
+0x193e14ee8  __TEXT,__text  _FIUIIsWorkoutSafetyCheckInEnabled
+0x193e14e4c  __TEXT,__text  _FIUIIsWorkoutSiriAnnounceEnabled
+0x193e15054  __TEXT,__text  _FIUIIsWorkoutStairClimbingLocationConfigurationMigrated
+0x193e1f2f0  __TEXT,__text  _FIUIIsWorkoutTypePedestrianActivity
+0x193e14dac  __TEXT,__text  _FIUIIsWorkoutVoiceFeedbackEnabled
+0x193e14ef8  __TEXT,__text  _FIUIIsWorkoutVoiceFeedbackSupportedForLanguage
+0x193e163ac  __TEXT,__text  _FIUIIsZero
+0x193e33450  __TEXT,__text  _FIUILapsShortDescriptionWithLapCount
+0x193e13c10  __TEXT,__text  _FIUILastFourCharactersOfUUID
+0x193dfe89c  __TEXT,__text  _FIUILeftOffsetForFontAndString
+0x193dfe870  __TEXT,__text  _FIUILocaleIsRightToLeft
+0x193e33460  __TEXT,__text  _FIUILocalizedActivityNameComponentsWithFormatting
+0x193dfadf4  __TEXT,__text  _FIUILocalizedActivityNameWithFormatting
+0x193e3344c  __TEXT,__text  _FIUILocalizedActivityNameWithFormattingPrefix
+0x193e33448  __TEXT,__text  _FIUILocalizedActivityNameWithWorkout
+0x193e33464  __TEXT,__text  _FIUILocalizedMachineName
+0x193dfadf0  __TEXT,__text  _FIUILocalizedNameForActivityType
+0x193e33444  __TEXT,__text  _FIUILocalizedNameForIndoorAgnosticActivityType
+0x193e3345c  __TEXT,__text  _FIUILocalizedStrokeStyleName
+0x193e32924  __TEXT,__text  _FIUIMaximumMoveGoalInUserUnit
+0x193e329e0  __TEXT,__text  _FIUIMaximumMoveMinutesGoal
+0x1e0b41378  __DATA_CONST,__const  _FIUIMetadataKeyBackdatedStartDate
+0x1e0b41380  __DATA_CONST,__const  _FIUIMetadataKeyPredictionSessionUUID
+0x193e16428  __TEXT,__text  _FIUIMidpointOfBounds
+0x193e04d9c  __TEXT,__text  _FIUIMindfulnessLocalizedWeekdaySelection
+0x193e328b8  __TEXT,__text  _FIUIMininumMoveGoalInUserUnit
+0x193e329d8  __TEXT,__text  _FIUIMininumMoveMinutesGoal
+0x193e32984  __TEXT,__text  _FIUIMoveGoalValueIncrementInUserUnit
+0x193e329ec  __TEXT,__text  _FIUIMoveMinutesGoalValueIncrement
+0x193e148a8  __TEXT,__text  _FIUIMusicAutoStartEnabled
+0x193e148c0  __TEXT,__text  _FIUIMusicIsPlaybackModeShuffle
+0x193e15d94  __TEXT,__text  _FIUINeedsActivityRingExplanation
+0x193e052bc  __TEXT,__text  _FIUINumberOfUnitsInPaceForPaceFormat
+0x193dfe758  __TEXT,__text  _FIUINumberOfUserUnitsInPaceForDistanceType
+0x193e04cc8  __TEXT,__text  _FIUIOrderedWeekdays
+0x193e052c0  __TEXT,__text  _FIUIPace
+0x193dfe750  __TEXT,__text  _FIUIPaceFormatForDistanceType
+0x193e1ef0c  __TEXT,__text  _FIUIPaceFormatForWorkoutActivityType
+0x193e052c4  __TEXT,__text  _FIUIPaceInMetersPerSecond
+0x193e33478  __TEXT,__text  _FIUIPinnedProgressValue
+0x193e33458  __TEXT,__text  _FIUIPowerShortDescriptionWithPower
+0x1e0b41c08  __DATA_CONST,__const  _FIUIPrivateMetadataKeyAlertType
+0x1e0b41c10  __DATA_CONST,__const  _FIUIPrivateMetadataKeyAlertZoneValue
+0x1e0b41c58  __DATA_CONST,__const  _FIUIPrivateMetadataKeyIsPartialSplit
+0x1e0b41bf8  __DATA_CONST,__const  _FIUIPrivateMetadataKeyMarkerEventSubtype
+0x1e0b41c20  __DATA_CONST,__const  _FIUIPrivateMetadataKeySegmentActiveEnergyBurn
+0x1e0b41c40  __DATA_CONST,__const  _FIUIPrivateMetadataKeySegmentAveragePower
+0x1e0b41c30  __DATA_CONST,__const  _FIUIPrivateMetadataKeySegmentDistance
+0x1e0b41c38  __DATA_CONST,__const  _FIUIPrivateMetadataKeySegmentDuration
+0x1e0b41c00  __DATA_CONST,__const  _FIUIPrivateMetadataKeySegmentEventSubtype
+0x1e0b41c18  __DATA_CONST,__const  _FIUIPrivateMetadataKeySegmentIndex
+0x1e0b41c28  __DATA_CONST,__const  _FIUIPrivateMetadataKeySegmentTotalEnergyBurn
+0x1e0b41c60  __DATA_CONST,__const  _FIUIPrivateMetadataKeySplitActiveDurationQuantity
+0x1e0b41c70  __DATA_CONST,__const  _FIUIPrivateMetadataKeySplitAveragePowerQuantity
+0x1e0b41c48  __DATA_CONST,__const  _FIUIPrivateMetadataKeySplitDistanceQuantity
+0x1e0b41c68  __DATA_CONST,__const  _FIUIPrivateMetadataKeySplitMeasuringSystem
+0x1e0b41c50  __DATA_CONST,__const  _FIUIPrivateMetadataKeyTotalDistanceQuantity
+0x1e0b41388  __DATA_CONST,__const  _FIUIPrivateSeymourMediaTypeMetadataKey
+0x193e2e358  __TEXT,__text  _FIUIProcessHasHealthKitEntitlement
+0x193e163dc  __TEXT,__text  _FIUIRandomInteger
+0x193dfe9a4  __TEXT,__text  _FIUIReloadUsesIndicDigits
+0x1e0b414e8  __DATA_CONST,__const  _FIUIResumeAnimationsNotification
+0x193e145d4  __TEXT,__text  _FIUIRoundFrameToViewScale
+0x193e16418  __TEXT,__text  _FIUIRoundToNearest
+0x193e1f2f4  __TEXT,__text  _FIUISelectedPaceMetricType
+0x193e14c74  __TEXT,__text  _FIUISetAutoPauseEnabled
+0x193e16460  __TEXT,__text  _FIUISetBacktrackIntegrationEnabled
+0x193e14ce4  __TEXT,__text  _FIUISetCyclingAutoPauseEnabled
+0x193e14834  __TEXT,__text  _FIUISetFitnessTrackingEnabled
+0x193e15d70  __TEXT,__text  _FIUISetGuidedMeditationPrefetchEnabled
+0x193e15d1c  __TEXT,__text  _FIUISetGuidedRunPrefetchEnabled
+0x193e15cc8  __TEXT,__text  _FIUISetGuidedWorkoutPrefetchEnabled
+0x193e14d5c  __TEXT,__text  _FIUISetGymKitAcceptedUserConsent
+0x193e14d90  __TEXT,__text  _FIUISetGymKitUserConsentVersion
+0x193e15dd4  __TEXT,__text  _FIUISetHasPresentedRingExplanation
+0x193e14888  __TEXT,__text  _FIUISetHeartRateEnabled
+0x193e14980  __TEXT,__text  _FIUISetIsPowerSavingModeEnabled
+0x193e15c8c  __TEXT,__text  _FIUISetMusicPlaybackModeShuffle
+0x193e15da8  __TEXT,__text  _FIUISetNeedsActivityRingExplanation
+0x193e14ef4  __TEXT,__text  _FIUISetNextWorkoutSafetyCheckInEnabled
+0x193e14cac  __TEXT,__text  _FIUISetRunningAutoPauseEnabled
+0x193e14c58  __TEXT,__text  _FIUISetShouldConfirmEndingWorkout
+0x193e15e10  __TEXT,__text  _FIUISetUserHasAcceptedSpartanConsent
+0x193e14f20  __TEXT,__text  _FIUISetWorkoutConfigurationsMigrated
+0x193e14f74  __TEXT,__text  _FIUISetWorkoutEllipticalLocationConfigurationMigrated
+0x193e14ad0  __TEXT,__text  _FIUISetWorkoutExtendedModeEnabled
+0x193e14f3c  __TEXT,__text  _FIUISetWorkoutKickboxingConfigurationMigrated
+0x193e15d90  __TEXT,__text  _FIUISetWorkoutNFCAllDayEnabled
+0x193e14fac  __TEXT,__text  _FIUISetWorkoutPoolSwimmingConfigurationMigrated
+0x193e14fc8  __TEXT,__text  _FIUISetWorkoutRowingConfigurationMigrated
+0x193e14f58  __TEXT,__text  _FIUISetWorkoutRowingLocationConfigurationMigrated
+0x193e14eec  __TEXT,__text  _FIUISetWorkoutSafetyCheckInEnabled
+0x193e14e68  __TEXT,__text  _FIUISetWorkoutSiriAnnounceEnabled
+0x193e14f90  __TEXT,__text  _FIUISetWorkoutStairClimbingLocationConfigurationMigrated
+0x193e14e30  __TEXT,__text  _FIUISetWorkoutVoiceFeedbackEnabled
+0x193e14c3c  __TEXT,__text  _FIUIShouldConfirmEndingWorkout
+0x193e14c24  __TEXT,__text  _FIUIShowAveragePace
+0x193e1aacc  __TEXT,__text  _FIUISizeForIconSize
+0x193e1ef44  __TEXT,__text  _FIUISpeedForDurationOverDistance
+0x193e3307c  __TEXT,__text  _FIUISplitsForMeasuringSystemIdentifier
+0x193dfcf4c  __TEXT,__text  _FIUISpriteSheetNumberOfFrames
+0x193dfd1ec  __TEXT,__text  _FIUISpriteSheetWorkoutIconImage
+0x193e0cacc  __TEXT,__text  _FIUIStandardFitnessDefaultActivityTypes
+0x193e36344  __TEXT,__text  _FIUIStateMachineLabel
+0x193e35f84  __TEXT,__text  _FIUIStateMachineSetDiagnosticAndErrorHandler
+0x193e1ab88  __TEXT,__text  _FIUIStaticScalableWorkoutIconImage
+0x193e1aa18  __TEXT,__text  _FIUIStaticScalableWorkoutIconImageWithPadding
+0x193dfaee4  __TEXT,__text  _FIUIStaticWorkoutIconImage
+0x193e08b58  __TEXT,__text  _FIUISubpixelAlignedCenter
+0x193e08b8c  __TEXT,__text  _FIUISubpixelAlignedOrigin
+0x1e0b414e0  __DATA_CONST,__const  _FIUISuspendAnimationsNotification
+0x1e0b41a78  __DATA_CONST,__const  _FIUITabBarFitnessPlusAccessibilityIdentifier
+0x1e0b41a80  __DATA_CONST,__const  _FIUITabBarSharingAccessibilityIdentifier
+0x1e0b41a88  __DATA_CONST,__const  _FIUITabBarSummaryAccessibilityIdentifier
+0x1e0b41a90  __DATA_CONST,__const  _FIUITabBarWorkoutAccessibilityIdentifier
+0x193e16438  __TEXT,__text  _FIUITimeLabelCorner
+0x193e15df8  __TEXT,__text  _FIUIUserHasAcceptedSpartanConsent
+0x193e15518  __TEXT,__text  _FIUIUserHasExistingExerciseAndStandGoals
+0x193e1542c  __TEXT,__text  _FIUIUserHasExistingMoveGoal
+0x193e15740  __TEXT,__text  _FIUIUserHasExistingPreKincaidMoveGoal
+0x193e15414  __TEXT,__text  _FIUIUserHasExistingSampleOfTypes
+0x193e15250  __TEXT,__text  _FIUIUserHasExistingSampleOfTypesPassingFilter
+0x193dfe968  __TEXT,__text  _FIUIUsesIndicDigits
+0x193e19fdc  __TEXT,__text  _FIUIValidActivityTypesForPaceAlarms
+0x193e073a4  __TEXT,__text  _FIUIWeightDisplayString
+0x193e07550  __TEXT,__text  _FIUIWheelchairUseDisplayString
+0x193ea8448  __TEXT,__const  _FIUIWorkoutDefaultRingDiameter
+0x193ea83a8  __TEXT,__const  _FIUIWorkoutDefaultRingThickness
+0x193e1ab90  __TEXT,__text  _FIUIWorkoutIconSizeDescription
+0x193e1a8d0  __TEXT,__text  _FIUIWorkoutImageOnPill
+0x1e0b41a98  __DATA_CONST,__const  _FIUIWorkoutReminderAlertAccessibilityIdentifier
+0x1e0b41ac8  __DATA_CONST,__const  _FIUIWorkoutReminderAlertChangeWorkoutAccessibilityIdentifier
+0x1e0b41aa0  __DATA_CONST,__const  _FIUIWorkoutReminderAlertDismissAccessibilityIdentifier
+0x1e0b41aa8  __DATA_CONST,__const  _FIUIWorkoutReminderAlertEndAccessibilityIdentifier
+0x1e0b41ab8  __DATA_CONST,__const  _FIUIWorkoutReminderAlertMuteAccessibilityIdentifier
+0x1e0b41ad0  __DATA_CONST,__const  _FIUIWorkoutReminderAlertMuteForTodayAccessibilityIdentifier
+0x1e0b41ab0  __DATA_CONST,__const  _FIUIWorkoutReminderAlertPauseAccessibilityIdentifier
+0x1e0b41ac0  __DATA_CONST,__const  _FIUIWorkoutReminderAlertRecordAccessibilityIdentifier
+0x1e0b41ad8  __DATA_CONST,__const  _FIUIWorkoutReminderAlertResumeAccessibilityIdentifier
+0x193ea8538  __TEXT,__const  _FIUIWorkoutRingHorizontalOffset
+0x193ea84e8  __TEXT,__const  _FIUIWorkoutRingMinOffsetFromTopOfView
+0x193e14e84  __TEXT,__text  _FIUIWorkoutSiriAnnounceEnabledExists
+0x193ea8498  __TEXT,__const  _FIUIWorkoutSmallRingDiameter
+0x193ea83f8  __TEXT,__const  _FIUIWorkoutSmallRingThickness
+0x193e2922c  __TEXT,__text  _FIUIWorkoutSplitMeasurementSystemDescription
+0x193dfcf24  __TEXT,__text  _FIUIWorkoutSupportsAnimatedIcon
+0x193e16594  __TEXT,__text  _FIUIWorkoutSupportsDistanceMetricForGoalDisplay
+0x193e19f44  __TEXT,__text  _FIUIZoneDefaultPaceForDistanceUnit
+0x193e19f94  __TEXT,__text  _FIUIZoneMaxPaceForDistanceUnit
+0x193e19f6c  __TEXT,__text  _FIUIZoneMinPaceForDistanceUnit
+0x193e19fbc  __TEXT,__text  _FIUIZoneMinPaceRangeForDistanceUnit
+0x193e13c08  __TEXT,__text  _FUBundle
+0x193e33600  __TEXT,__text  _FUInterpolateQuantitySamplesOverDateIntervals
+0x193e1da8c  __TEXT,__text  _GetFormatAndDateFieldRangesFor_yMMMMd
+0x193e1d7d4  __TEXT,__text  _GetFormatAndHourFieldRangesFor_ha
+0x193e1f264  __TEXT,__text  _HKWorkoutMetricTypeAccessibilityLocalizedName
+0x193e1f260  __TEXT,__text  _HKWorkoutMetricTypeDescription
+0x193e058d4  __TEXT,__text  _KeyForWorkoutActivityType
+0x193e0c640  __TEXT,__text  _NLActivityTypeIsSupported
+0x193e02848  __TEXT,__text  _NLDoubleValueForQuantityAndGoalType
+0x193e0c638  __TEXT,__text  _NLGeneralizedActivityTypeKey
+0x1e0b41a60  __DATA_CONST,__const  _NLPrivateMetadataKeyAirQualityIndex
+0x1e0b41a58  __DATA_CONST,__const  _NLPrivateMetadataKeyAverageWaterTemperature
+0x193e0c63c  __TEXT,__text  _NLQuantityForGoalTypeAndValue
+0x1e0b420c8  __DATA_CONST,__const  _NLSessionActivityGoalGoalTypeIdentifierKey
+0x1e0b420d8  __DATA_CONST,__const  _NLSessionActivityGoalQuantityKey
+0x1e0b420e0  __DATA_CONST,__const  _NLSessionActivityGoalRequiredDistanceKey
+0x1e0b420d0  __DATA_CONST,__const  _NLSessionActivityGoalValueKey
+0x193e012ac  __TEXT,__text  _NLSessionFormatDetailLabel
+0x1e0b41a38  __DATA_CONST,__const  _NLWorkoutMetadataKeyActivityMode
+0x1e0b41a10  __DATA_CONST,__const  _NLWorkoutMetadataKeyAverageHeartRate
+0x1e0b41a48  __DATA_CONST,__const  _NLWorkoutMetadataKeyLastEditDate
+0x1e0b41a30  __DATA_CONST,__const  _NLWorkoutMetadataKeyMaxGroundElevation
+0x1e0b41a20  __DATA_CONST,__const  _NLWorkoutMetadataKeyMaxHeartRate
+0x1e0b41a28  __DATA_CONST,__const  _NLWorkoutMetadataKeyMinGroundElevation
+0x1e0b41a18  __DATA_CONST,__const  _NLWorkoutMetadataKeyMinHeartRate
+0x1e0b41a40  __DATA_CONST,__const  _NLWorkoutMetadataKeyPredictedEndDate
+0x1e0b41a50  __DATA_CONST,__const  _NLWorkoutMetadataKeyVideoPlaybackTime
+0x1e0b41d40  __DATA_CONST,__const  _NLWorkoutSplitStorageSaved
+0x193e2d5a0  __TEXT,__text  _NLWorkoutSplitStorageTypeString
+0x193e37858  __TEXT,__text  _NLWorkoutTargetZoneMasterTypeString
+0x193e37b38  __TEXT,__text  _NLWorkoutTargetZoneStateString
+0x193e36b34  __TEXT,__text  _NLWorkoutTargetZoneTypeString
+0x1ee3b5e68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FIUIActionButton
+0x1ef627218  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIActivityComplicationFormatter
+0x1ef6260f0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIActivityDataModel
+0x1ef626f50  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIActivityDataProvider
+0x1ef6274c8  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIActivitySummaryTextProvider
+0x1ef625d30  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIAnimatingSpriteImageView
+0x1ef625dd0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIAnimatingTwoLabelView
+0x1ef626000  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIAppDisabledViewController
+0x1ef626078  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIBluetoothSensorLookup
+0x1ef6267d0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIBreathingPetalRingMetalRenderer
+0x1ef6259c0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIBreathingPetalRingMetalView
+0x1ef626488  __AUTH,__objc_data  _OBJC_CLASS_$_FIUICelebrationAssetLoader
+0x1ef626938  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIChartAxisLabel
+0x1ef626190  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIChartBackgroundView
+0x1ee3b5cd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FIUIChartBarSeries
+0x1ef6264b0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIChartColor
+0x1ef625e20  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIChartDashedBackgroundView
+0x1ef6265c8  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIChartDataGroup
+0x1ef625ee8  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIChartDataSet
+0x1ef626d48  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIChartDateAnchorRule
+0x1ef6270e0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIChartFloatingBarSeries
+0x1ef6261e0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIChartHorizontalLineSeries
+0x1ef627018  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIChartMinMaxValueAxisDescriptor
+0x1ef625e70  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIChartMultiDashedBackgroundView
+0x1ee3b5d50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FIUIChartNumericSeries
+0x1ef626e60  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIChartPointMultiple
+0x1ef626ac8  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIChartPointNumeric
+0x1ee3b5f08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FIUIChartSeries
+0x1ef626870  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIChartTimeAxisDescriptor
+0x1ee3b5b98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FIUIChartUniformBarSeries
+0x1ee3b5b48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FIUIChartView
+0x1ef626cd0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIClientToken
+0x1ef626320  __AUTH,__objc_data  _OBJC_CLASS_$_FIUICompetitionLearnMoreExampleView
+0x1ef6266b8  __AUTH,__objc_data  _OBJC_CLASS_$_FIUICrossFadeZoomTransitionAnimator
+0x1ef626398  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIDateFormattingUtilities
+0x1ef625d80  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIDeepBreathingFlowerView
+0x1ef626258  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIDefaultSecondPlatterMetrics
+0x1ef627a88  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIDepthFormatter
+0x1ef626168  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIDeviceTypeResolver
+0x1ef626820  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIDiscreteSizingLabel
+0x1ef625a60  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIDividerView
+0x1ef627a18  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIFormattedDepthStringComponents
+0x1ef627040  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIFormattingManager
+0x1ef6262d0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIGradientView
+0x1ef625ba0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIHealthSettingsBirthDatePickerController
+0x1ef626730  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIHealthSettingsDataSource
+0x1ef625ab0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIHealthSettingsDatePicker
+0x1ef625c18  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIHealthSettingsHeightPickerController
+0x1ef625b50  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIHealthSettingsPickerController
+0x1ef625cb8  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIHealthSettingsSexPickerController
+0x1ee3b5d78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FIUIHealthSettingsTableViewCell
+0x1ef625c68  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIHealthSettingsWeightPickerController
+0x1ee3b5a58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FIUIHeartRateStatusView
+0x1ef625f10  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIHostingAreaLayoutView
+0x1ee3b5eb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FIUIMetricIconStatusView
+0x1ef625ce0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIModel
+0x1ef626af0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUINavigationController
+0x1ef625998  __AUTH,__objc_data  _OBJC_CLASS_$_FIUINumberFormatter
+0x1ee3b5dc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FIUIPageViewController
+0x1ef626b68  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIPageViewControllerCell
+0x1ef6276d0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIPedometerTextProvider
+0x1ef627350  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIPregnancyStateProvider
+0x1ef625f88  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIPushyLabelCharacter
+0x1ee3b5c38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FIUIPushyLabelView
+0x1ef6260a0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIShapeView
+0x1ef626280  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIState
+0x1ef626e10  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIStateMachine
+0x1ef6269d8  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIStateMachineExporter
+0x1ef627648  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIStepsComplicationFormatter
+0x1ef626c30  __AUTH,__objc_data  _OBJC_CLASS_$_FIUITextProvider
+0x1ef626be0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUITextProviderStyleBox
+0x1ef626bb8  __AUTH,__objc_data  _OBJC_CLASS_$_FIUITextView
+0x1ef626d98  __AUTH,__objc_data  _OBJC_CLASS_$_FIUITransition
+0x1ef626500  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIUnitManager
+0x1ef625fd8  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIValueAdjustmentButtonController
+0x1ef626c80  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIWeeklyGoalModel
+0x1ef626a78  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIWorkoutActivityDefaultPaceMigrator
+0x1ee3b5aa8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FIUIWorkoutActivityType
+0x1ee3b5c88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FIUIWorkoutCompletionPercentageRingViewCell
+0x1ef626780  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIWorkoutDataProvider
+0x1ef627090  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIWorkoutDefaultMetricsProvider
+0x1ef626a00  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIWorkoutFootnoteTableViewCell
+0x1ef626fa0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIWorkoutLapLengthIndexTranslator
+0x1ef6266e0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIWorkoutSegment
+0x1ef625a10  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIWorkoutSettingsManager
+0x1ef6265f0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIWorkoutSimpleCompletionRingCell
+0x1ef626550  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIWorkoutSplit
+0x1ef626410  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIWorkoutStatistics
+0x1ee3b5be8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FIUIWorkoutSummaryColoredDetailTableViewCell
+0x1ef6268c0  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIWorkoutSwimmingSet
+0x1ef626640  __AUTH,__objc_data  _OBJC_CLASS_$_FIUIWorkoutSwimmingSplit
+0x1ee3b5af8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FUDatePicker
+0x1ee3b5e18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FUScrollWheel
+0x1ef626dc0  __AUTH,__objc_data  _OBJC_CLASS_$_FUScrollWheelScrollView
+0x1ef6263c0  __AUTH,__objc_data  _OBJC_CLASS_$_NLPredictedWorkoutActivityType
+0x1ef626f00  __AUTH,__objc_data  _OBJC_CLASS_$_NLSessionActivityGoal
+0x1ef626960  __AUTH,__objc_data  _OBJC_CLASS_$_NLWorkoutSplitStorage
+0x1ef626eb0  __AUTH,__objc_data  _OBJC_CLASS_$_NLWorkoutTargetZone
+0x1ef625b00  __AUTH,__objc_data  _OBJC_CLASS_$__FIUIHealthSettingsPickerView
+0x1ef627938  __AUTH,__objc_data  _OBJC_CLASS_$__TtC9FitnessUI27MindfulnessSessionViewModel
+0x1ee3b5e90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FIUIActionButton
+0x1ef627d48  __AUTH,__data  _OBJC_METACLASS_$_FIUIActivityComplicationFormatter
+0x1ef626118  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIActivityDataModel
+0x1ef626f78  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIActivityDataProvider
+0x1ef6284b0  __AUTH,__data  _OBJC_METACLASS_$_FIUIActivitySummaryTextProvider
+0x1ef625d58  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIAnimatingSpriteImageView
+0x1ef625df8  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIAnimatingTwoLabelView
+0x1ef626028  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIAppDisabledViewController
+0x1ef626050  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIBluetoothSensorLookup
+0x1ef6267f8  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIBreathingPetalRingMetalRenderer
+0x1ef6259e8  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIBreathingPetalRingMetalView
+0x1ef626460  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUICelebrationAssetLoader
+0x1ef626910  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIChartAxisLabel
+0x1ef6261b8  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIChartBackgroundView
+0x1ee3b5d00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FIUIChartBarSeries
+0x1ef6264d8  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIChartColor
+0x1ef625e48  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIChartDashedBackgroundView
+0x1ef6265a0  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIChartDataGroup
+0x1ef625ec0  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIChartDataSet
+0x1ef626d20  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIChartDateAnchorRule
+0x1ef627108  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIChartFloatingBarSeries
+0x1ef626208  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIChartHorizontalLineSeries
+0x1ef626ff0  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIChartMinMaxValueAxisDescriptor
+0x1ef625e98  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIChartMultiDashedBackgroundView
+0x1ee3b5d28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FIUIChartNumericSeries
+0x1ef626e88  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIChartPointMultiple
+0x1ef626aa0  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIChartPointNumeric
+0x1ee3b5f30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FIUIChartSeries
+0x1ef626898  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIChartTimeAxisDescriptor
+0x1ee3b5bc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FIUIChartUniformBarSeries
+0x1ee3b5b70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FIUIChartView
+0x1ef626cf8  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIClientToken
+0x1ef626348  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUICompetitionLearnMoreExampleView
+0x1ef626690  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUICrossFadeZoomTransitionAnimator
+0x1ef626370  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIDateFormattingUtilities
+0x1ef625da8  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIDeepBreathingFlowerView
+0x1ef626230  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIDefaultSecondPlatterMetrics
+0x1ef628940  __AUTH,__data  _OBJC_METACLASS_$_FIUIDepthFormatter
+0x1ef626140  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIDeviceTypeResolver
+0x1ef626848  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIDiscreteSizingLabel
+0x1ef625a88  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIDividerView
+0x1ef628918  __AUTH,__data  _OBJC_METACLASS_$_FIUIFormattedDepthStringComponents
+0x1ef627068  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIFormattingManager
+0x1ef6262f8  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIGradientView
+0x1ef625bc8  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIHealthSettingsBirthDatePickerController
+0x1ef626758  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIHealthSettingsDataSource
+0x1ef625ad8  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIHealthSettingsDatePicker
+0x1ef625bf0  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIHealthSettingsHeightPickerController
+0x1ef625b78  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIHealthSettingsPickerController
+0x1ef625c90  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIHealthSettingsSexPickerController
+0x1ee3b5da0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FIUIHealthSettingsTableViewCell
+0x1ef625c40  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIHealthSettingsWeightPickerController
+0x1ee3b5a80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FIUIHeartRateStatusView
+0x1ef625f38  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIHostingAreaLayoutView
+0x1ee3b5ee0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FIUIMetricIconStatusView
+0x1ef625d08  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIModel
+0x1ef626b18  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUINavigationController
+0x1ef625970  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUINumberFormatter
+0x1ee3b5df0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FIUIPageViewController
+0x1ef626b40  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIPageViewControllerCell
+0x1ef6287d0  __AUTH,__data  _OBJC_METACLASS_$_FIUIPedometerTextProvider
+0x1ef627eb0  __AUTH,__data  _OBJC_METACLASS_$_FIUIPregnancyStateProvider
+0x1ef625f60  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIPushyLabelCharacter
+0x1ee3b5c60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FIUIPushyLabelView
+0x1ef6260c8  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIShapeView
+0x1ef6262a8  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIState
+0x1ef626e38  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIStateMachine
+0x1ef6269b0  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIStateMachineExporter
+0x1ef6287a8  __AUTH,__data  _OBJC_METACLASS_$_FIUIStepsComplicationFormatter
+0x1ef626c58  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUITextProvider
+0x1ef626c08  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUITextProviderStyleBox
+0x1ef626b90  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUITextView
+0x1ef626d70  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUITransition
+0x1ef626528  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIUnitManager
+0x1ef625fb0  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIValueAdjustmentButtonController
+0x1ef626ca8  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIWeeklyGoalModel
+0x1ef626a50  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIWorkoutActivityDefaultPaceMigrator
+0x1ee3b5ad0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FIUIWorkoutActivityType
+0x1ee3b5cb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FIUIWorkoutCompletionPercentageRingViewCell
+0x1ef6267a8  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIWorkoutDataProvider
+0x1ef6270b8  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIWorkoutDefaultMetricsProvider
+0x1ef626a28  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIWorkoutFootnoteTableViewCell
+0x1ef626fc8  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIWorkoutLapLengthIndexTranslator
+0x1ef626708  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIWorkoutSegment
+0x1ef625a38  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIWorkoutSettingsManager
+0x1ef626618  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIWorkoutSimpleCompletionRingCell
+0x1ef626578  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIWorkoutSplit
+0x1ef626438  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIWorkoutStatistics
+0x1ee3b5c10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FIUIWorkoutSummaryColoredDetailTableViewCell
+0x1ef6268e8  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIWorkoutSwimmingSet
+0x1ef626668  __AUTH,__objc_data  _OBJC_METACLASS_$_FIUIWorkoutSwimmingSplit
+0x1ee3b5b20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FUDatePicker
+0x1ee3b5e40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FUScrollWheel
+0x1ef626de8  __AUTH,__objc_data  _OBJC_METACLASS_$_FUScrollWheelScrollView
+0x1ef6263e8  __AUTH,__objc_data  _OBJC_METACLASS_$_NLPredictedWorkoutActivityType
+0x1ef626f28  __AUTH,__objc_data  _OBJC_METACLASS_$_NLSessionActivityGoal
+0x1ef626988  __AUTH,__objc_data  _OBJC_METACLASS_$_NLWorkoutSplitStorage
+0x1ef626ed8  __AUTH,__objc_data  _OBJC_METACLASS_$_NLWorkoutTargetZone
+0x1ef625b28  __AUTH,__objc_data  _OBJC_METACLASS_$__FIUIHealthSettingsPickerView
+0x1ef6288f0  __AUTH,__data  _OBJC_METACLASS_$__TtC9FitnessUI27MindfulnessSessionViewModel
+0x193e13c98  __TEXT,__text  __FIUICalculateBMR
+0x193e330c0  __TEXT,__text  __FIUIComputeAttributesToFitStrings
+0x193e1c810  __TEXT,__text  __FIUIImageForPetalColor
+0x193dfac90  __TEXT,__text  __FIUILocalesRequiringTallScript
+0x193e2ecb8  __TEXT,__text  __FIUIMigratedPaceSettingForActivityIfNeeded
+0x193e2edb8  __TEXT,__text  __FIUIMigratedPaceSettings
+0x193e2eb8c  __TEXT,__text  __FIUIOutdoorRunningAveragePaceSettings
+0x193e13f54  __TEXT,__text  __FIUIUserContactFromAddressBook
+0x193e3350c  __TEXT,__text  __FUFractionOfSampleInInterval
+0x193e17884  __TEXT,__text  __NoDataLabel
+0x193ea7ed8  __TEXT,__const  _kDefaultEnabledMetricsCountAfterPaceMigration
+0x1e0b41938  __DATA_CONST,__const  _kFIUIFitnessUnitPreferencesDidChangeNotification
+0x193ea7eb0  __TEXT,__const  _kFIUISlowPaceDisplayLimit
+0x1e0b410e8  __DATA_CONST,__const  _kHPRFWorkoutMetricsActivityMoveMode
+0x193ea85b8  __TEXT,__const  _kLearnMoreExerciseRingPercentage
+0x193ea85b0  __TEXT,__const  _kLearnMoreMoveRingPercentage
+0x193ea85c0  __TEXT,__const  _kLearnMoreStandRingPercentage
+0x1e0b414b0  __DATA_CONST,__const  _kNLDeepBreathingPreferencesChangedNotification
+0x1e0b414a8  __DATA_CONST,__const  _kNLDeepBreathingPreferencesDomain
+0x1e0b414c0  __DATA_CONST,__const  _kNLHeartRateKeyEnableStationaryDiscordanceDetection
+0x1e0b414c8  __DATA_CONST,__const  _kNLHeartRateKeyStationaryDiscordanceMinimumBPM
+0x1e0b414b8  __DATA_CONST,__const  _kNLHeartRateNotificationsPreferencesDomain
+0x1e0b414d8  __DATA_CONST,__const  _kNLMindPreferencesChangedNotification
+0x1e0b414d0  __DATA_CONST,__const  _kNLMindPreferencesDomain
+0x1e0b414a0  __DATA_CONST,__const  _kNLSessionTrackerAppForegroundedForMachinePairingNotification
+0x1e0b41498  __DATA_CONST,__const  _kNLSessionTrackerAppForegroundedNotification
+0x1e0b41490  __DATA_CONST,__const  _kNLSessionTrackerAppInternalPreferencesDidChangeNotification
+0x1e0b41420  __DATA_CONST,__const  _kNLSessionTrackerAppKeyCadenceTargetZonesByActivityType
+0x1e0b413f0  __DATA_CONST,__const  _kNLSessionTrackerAppKeyConfirmEndingWorkout
+0x1e0b415a0  __DATA_CONST,__const  _kNLSessionTrackerAppKeyDistanceSplitsByActivityType
+0x1e0b413f8  __DATA_CONST,__const  _kNLSessionTrackerAppKeyEnableAutoPause
+0x1e0b41408  __DATA_CONST,__const  _kNLSessionTrackerAppKeyEnableAutoPauseCycling
+0x1e0b41400  __DATA_CONST,__const  _kNLSessionTrackerAppKeyEnableAutoPauseRunning
+0x1e0b416b0  __DATA_CONST,__const  _kNLSessionTrackerAppKeyEnableBacktrackIntegration
+0x1e0b41448  __DATA_CONST,__const  _kNLSessionTrackerAppKeyEnableDoubleTapToScrollWorkoutViews
+0x1e0b413d0  __DATA_CONST,__const  _kNLSessionTrackerAppKeyEnableMusicAutoStart
+0x1e0b413d8  __DATA_CONST,__const  _kNLSessionTrackerAppKeyEnablePowerSavingMode
+0x1e0b413c8  __DATA_CONST,__const  _kNLSessionTrackerAppKeyEnableProSetting
+0x1e0b41440  __DATA_CONST,__const  _kNLSessionTrackerAppKeyEnableWorkoutPauseWithChordPress
+0x1e0b41558  __DATA_CONST,__const  _kNLSessionTrackerAppKeyGuidedMeditationPrefetchEnabled
+0x1e0b41550  __DATA_CONST,__const  _kNLSessionTrackerAppKeyGuidedRunMediaMomentsEnabled
+0x1e0b41548  __DATA_CONST,__const  _kNLSessionTrackerAppKeyGuidedRunPrefetchEnabled
+0x1e0b41540  __DATA_CONST,__const  _kNLSessionTrackerAppKeyGuidedWorkoutMediaMomentsEnabled
+0x1e0b41538  __DATA_CONST,__const  _kNLSessionTrackerAppKeyGuidedWorkoutPrefetchEnabled
+0x1e0b41598  __DATA_CONST,__const  _kNLSessionTrackerAppKeyNextWorkoutSafetyCheckInEnabled
+0x1e0b41418  __DATA_CONST,__const  _kNLSessionTrackerAppKeyPaceTargetZonesByActivityType
+0x1e0b41428  __DATA_CONST,__const  _kNLSessionTrackerAppKeyPowerTargetZonesByActivityType
+0x1e0b41588  __DATA_CONST,__const  _kNLSessionTrackerAppKeyPrecisionStartEnabled
+0x1e0b41410  __DATA_CONST,__const  _kNLSessionTrackerAppKeyShowAveragePace
+0x1e0b41580  __DATA_CONST,__const  _kNLSessionTrackerAppKeySiriAnnounceEnabled
+0x1e0b415a8  __DATA_CONST,__const  _kNLSessionTrackerAppKeyTimeSplitsByActivityType
+0x1e0b41578  __DATA_CONST,__const  _kNLSessionTrackerAppKeyVoiceFeedbackEnabled
+0x1e0b41458  __DATA_CONST,__const  _kNLSessionTrackerAppKeyWorkoutConfigurationsMigrated
+0x1e0b41470  __DATA_CONST,__const  _kNLSessionTrackerAppKeyWorkoutEllipticalLocationConfigurationMigrated
+0x1e0b413e0  __DATA_CONST,__const  _kNLSessionTrackerAppKeyWorkoutExtendedModeEnabled
+0x1e0b413e8  __DATA_CONST,__const  _kNLSessionTrackerAppKeyWorkoutExtendedModeForceHardwareSupportEnabled
+0x1e0b41460  __DATA_CONST,__const  _kNLSessionTrackerAppKeyWorkoutKickboxingConfigurationMigrated
+0x1e0b41450  __DATA_CONST,__const  _kNLSessionTrackerAppKeyWorkoutMusicPlaybackModeShuffle
+0x1e0b41480  __DATA_CONST,__const  _kNLSessionTrackerAppKeyWorkoutPoolSwimmingConfigurationMigrated
+0x1e0b41488  __DATA_CONST,__const  _kNLSessionTrackerAppKeyWorkoutRowingConfigurationMigrated
+0x1e0b41468  __DATA_CONST,__const  _kNLSessionTrackerAppKeyWorkoutRowingLocationConfigurationMigrated
+0x1e0b41590  __DATA_CONST,__const  _kNLSessionTrackerAppKeyWorkoutSafetyCheckInEnabled
+0x1e0b41478  __DATA_CONST,__const  _kNLSessionTrackerAppKeyWorkoutStairClimbingLocationConfigurationMigrated
+0x1e0b414f0  __DATA_CONST,__const  _kNLSiriActivityType
+0x1e0b414f8  __DATA_CONST,__const  _kNLSiriGoalType
+0x1e0b41500  __DATA_CONST,__const  _kNLSiriGoalUnitString
+0x1e0b41508  __DATA_CONST,__const  _kNLSiriGoalValue
+0x1e0b41510  __DATA_CONST,__const  _kNLSiriLocationType
+0x1e0b41528  __DATA_CONST,__const  _kNLSiriSeymourCandidates
+0x1e0b41518  __DATA_CONST,__const  _kNLSiriSkipActivitySetup
+0x1e0b41520  __DATA_CONST,__const  _kNLSiriSwimmingLocationType
+0x1e0b41530  __DATA_CONST,__const  _kNLSiriUtteranceTargetsSeymour
+0x1e0b41430  __DATA_CONST,__const  _kNLUserConsentGrantedDefaultsKey
+0x1e0b41438  __DATA_CONST,__const  _kNLUserConsentVersionKey
+0x1e0b41e50  __DATA_CONST,__const  _kNLWorkoutMetadataKeyAverageHeartRate
+0x1e0b41e48  __DATA_CONST,__const  _kNLWorkoutMetadataKeyLostGPSAtSomePoint
+0x1e0b41e58  __DATA_CONST,__const  _kNLWorkoutMetadataKeySplits
+0x1e0b41568  __DATA_CONST,__const  _kNLWorkoutMetadataKeyTargetZoneMax
+0x1e0b41560  __DATA_CONST,__const  _kNLWorkoutMetadataKeyTargetZoneMin
+0x1e0b41570  __DATA_CONST,__const  _kNLWorkoutMetadataKeyTargetZoneType
+0x193ea85a8  __TEXT,__const  _kSeparatorViewCornerRadius
+0x193ea85a0  __TEXT,__const  _kSeparatorViewHeight
+0x193ea7db0  __TEXT,__const  _kWorkoutTableViewCellContentPadding
+0x193ea7e50  __TEXT,__const  _kWorkoutTableViewCellSeparatorHeight
+0x193ea7e00  __TEXT,__const  _kWorkoutTableViewCellSeparatorInset
+```
+
+## Private
+
+```
+0x193dfa704  __TEXT,__text  -[FIUIWorkoutActivityType initWithCoder:]
+0x193dfa780  __TEXT,__text  -[FIUIUnitManager initWithHealthStore:]
+0x193dfa7e8  __TEXT,__text  -[FIUIFormattingManager initWithUnitManager:]
+0x193dfa8bc  __TEXT,__text  +[FIUIWorkoutActivityType activityTypeWithHKWorkoutActivityTypeIdentifier:isIndoor:]
+0x193dfa904  __TEXT,__text  -[FIUIWorkoutActivityType initWithActivityTypeIdentifier:isIndoor:metadata:]
+0x193dfa984  __TEXT,__text  -[FIUIWorkoutActivityType initWithActivityTypeIdentifier:isIndoor:metadata:auxiliaryTypeIdentifier:]
+0x193dfaa10  __TEXT,__text  +[FIUIWorkoutActivityType activityTypeWithHKWorkoutActivityTypeIdentifier:isIndoor:metadata:]
+0x193dfaa74  __TEXT,__text  -[FIUIWorkoutActivityType hash]
+0x193dfaa7c  __TEXT,__text  -[FIUIWorkoutActivityType isEqual:]
+0x193dfaac4  __TEXT,__text  -[FIUIWorkoutActivityType identifier]
+0x193dfaacc  __TEXT,__text  -[FIUIWorkoutActivityType auxiliaryTypeIdentifier]
+0x193dfaad4  __TEXT,__text  -[FIUIWorkoutActivityType isIndoor]
+0x193dfaadc  __TEXT,__text  -[FIUIWorkoutActivityType swimmingLocationType]
+0x193dfaae4  __TEXT,__text  -[FIUIWorkoutActivityType metadata]
+0x193dfaaec  __TEXT,__text  +[FIUIWorkoutActivityType wheelchairActivityTypes]
+0x193dfade0  __TEXT,__text  -[FIUIWorkoutActivityType localizedName]
+0x193dfade8  __TEXT,__text  -[FIUIWorkoutActivityType effectiveTypeIdentifier]
+0x193dfafdc  __TEXT,__text  __activityTypePrefix
+0x193dfb610  __TEXT,__text  __fitnessUIBundle
+0x193dfb648  __TEXT,__text  ____fitnessUIBundle_block_invoke
+0x193dfb698  __TEXT,__text  -[FIUIWorkoutActivityType hasLocationTypePool]
+0x193dfb6a0  __TEXT,__text  -[FIUIWorkoutActivityType .cxx_destruct]
+0x193dfb6c8  __TEXT,__text  -[FIUIFormattingManager localizedGoalDescriptionForGoalType:goalValue:activityType:]
+0x193dfb860  __TEXT,__text  -[FIUIUnitManager _notifyUnitPreferencesChanged]
+0x193dfb874  __TEXT,__text  -[FIUIStateMachine initWithLabel:queue:]
+0x193dfb954  __TEXT,__text  -[FIUIStateMachine setDiagnosticHandler:]
+0x193dfb95c  __TEXT,__text  -[FIUIStateMachine setErrorHandler:]
+0x193dfb964  __TEXT,__text  -[FIUIState initWithLabel:]
+0x193dfba24  __TEXT,__text  -[FIUIStateMachine addState:]
+0x193dfba80  __TEXT,__text  -[FIUIStateMachine _queue_setInitialStateIfNeeded:]
+0x193dfbae4  __TEXT,__text  -[FIUIState registerTransition:label:toState:]
+0x193dfbaf0  __TEXT,__text  -[FIUIState registerTransition:label:toState:handler:gate:]
+0x193dfbc54  __TEXT,__text  -[FIUITransition setToState:]
+0x193dfbc60  __TEXT,__text  -[FIUITransition setHandler:]
+0x193dfbc68  __TEXT,__text  -[FIUITransition setGate:]
+0x193dfbc70  __TEXT,__text  -[FIUITransition setEvent:]
+0x193dfbc78  __TEXT,__text  -[FIUITransition setLabel:]
+0x193dfbc80  __TEXT,__text  -[FIUIStateMachine graphDescription]
+0x193dfc2a0  __TEXT,__text  ___36-[FIUIStateMachine graphDescription]_block_invoke
+0x193dfc310  __TEXT,__text  -[FIUIState label]
+0x193dfc31c  __TEXT,__text  -[FIUIStateMachine label]
+0x193dfc324  __TEXT,__text  -[FIUIState allTransitions]
+0x193dfc32c  __TEXT,__text  ___36-[FIUIStateMachine graphDescription]_block_invoke_2
+0x193dfc39c  __TEXT,__text  -[FIUITransition label]
+0x193dfc3a4  __TEXT,__text  -[FIUITransition toState]
+0x193dfc3c4  __TEXT,__text  -[FIUITransition event]
+0x193dfc3cc  __TEXT,__text  -[FIUIState setEntry:]
+0x193dfc3d4  __TEXT,__text  -[FIUIState setExit:]
+0x193dfc3dc  __TEXT,__text  ___48-[FIUIUnitManager _notifyUnitPreferencesChanged]_block_invoke
+0x193dfc424  __TEXT,__text  -[FIUIWorkoutSettingsManager _readFromDomain]
+0x193dfc794  __TEXT,__text  -[FIUIWorkoutSettingsManager isMetricEnabled:]
+0x193dfc860  __TEXT,__text  -[FIUIWorkoutSettingsManager _migratePaceViewSettingIfNeeded]
+0x193dfc9b8  __TEXT,__text  -[FIUIWorkoutSettingsManager orderedSupportedMetrics]
+0x193dfcb58  __TEXT,__text  -[FIUIWorkoutSettingsManager supportedMetrics]
+0x193dfcc40  __TEXT,__text  +[HKWorkout(FitnessUI) fiui_isHeartRateSupportedForActivityType:isIndoor:]
+0x193dfcc98  __TEXT,__text  +[HKWorkout(FitnessUI) _isHeartRateSupportedInPowerSettingsForActivityType:]
+0x193dfccb8  __TEXT,__text  +[HKWorkout(FitnessUI) _isHeartRateSupportedInPrivacySettings]
+0x193dfcd4c  __TEXT,__text  __SortMetricBySortIndex
+0x193dfcdf0  __TEXT,__text  -[FIUIWorkoutSettingsManager .cxx_destruct]
+0x193dfce64  __TEXT,__text  -[FIUIWorkoutActivityType description]
+0x193dfcf00  __TEXT,__text  -[FIUIFormattingManager unitManager]
+0x193dfcf08  __TEXT,__text  -[FIUIUnitManager userDistanceUnitForDistanceType:]
+0x193dfcf10  __TEXT,__text  -[FIUIUnitManager userDistanceHKUnitForDistanceType:]
+0x193dfcf18  __TEXT,__text  -[FIUIUnitManager userDistanceWalkingRunningHKUnit]
+0x193dfd128  __TEXT,__text  -[FIUIAnimatingSpriteImageView initWithFrame:]
+0x193dfd2ac  __TEXT,__text  -[FIUIAnimatingSpriteImageView setSpriteImage:]
+0x193dfd338  __TEXT,__text  -[FIUIAnimatingSpriteImageView setSpriteFrameCount:]
+0x193dfd34c  __TEXT,__text  -[FIUIAnimatingSpriteImageView setSpriteColumnCount:]
+0x193dfd360  __TEXT,__text  -[FIUIAnimatingSpriteImageView setFramesPerSecond:]
+0x193dfd374  __TEXT,__text  +[UIFont(FUSausageFontSupport) fu_sausageFontOfSize:]
+0x193dfd388  __TEXT,__text  +[UIFont(FUSausageFontSupport) _fu_sausageFontOfSize:fontWeight:centeredColons:]
+0x193dfd5b0  __TEXT,__text  +[FIUIFormattingManager stringWithNumber:decimalPrecision:]
+0x193dfd5bc  __TEXT,__text  +[FIUIFormattingManager stringWithNumber:decimalPrecision:roundingMode:]
+0x193dfd5c8  __TEXT,__text  -[FIUIWorkoutSettingsManager orderedEnabledAndSupportedMetrics]
+0x193dfd708  __TEXT,__text  +[UIFont(FIUINonBoldingFonts) fiui_nonBoldingRoundedSystemFontOfSize:weight:]
+0x193dfd778  __TEXT,__text  +[UIFont(FIUINonBoldingFonts) _fiui_nonBoldedVersionOfFont:size:]
+0x193dfd858  __TEXT,__text  -[UIFont(FUSausageFontSupport) fu_fontWithCenteredColons]
+0x193dfd910  __TEXT,__text  +[UIFont(FUSausageFontSupport) fu_alternateColonsFeatureSetting]
+0x193dfd9a8  __TEXT,__text  +[UIFont(FUSausageFontSupport) fu_fontByApplyingFeatureSettings:toFont:]
+0x193dfda94  __TEXT,__text  +[FIUIState transitionalStateFromState:toState:entryEvent:exitEvent:]
+0x193dfdc24  __TEXT,__text  -[FIUIState setTransitional:]
+0x193dfdc2c  __TEXT,__text  -[FIUITransition .cxx_destruct]
+0x193dfdc78  __TEXT,__text  -[FIUIStateMachine addStates:]
+0x193dfddb4  __TEXT,__text  -[FIUIHeartRateStatusView setState:]
+0x193dfddf8  __TEXT,__text  -[FIUIAnimatingSpriteImageView spriteImage]
+0x193dfde0c  __TEXT,__text  -[FIUIAnimatingSpriteImageView startAnimating]
+0x193dfe03c  __TEXT,__text  -[FIUIStateMachine state]
+0x193dfe044  __TEXT,__text  -[FIUIStateMachine event:]
+0x193dfe0ac  __TEXT,__text  -[FIUIStateMachine _queue_handleEvents]
+0x193dfe134  __TEXT,__text  -[FIUIStateMachine _queue_processEvent:]
+0x193dfe540  __TEXT,__text  -[FIUIState transitionForEvent:]
+0x193dfe5d8  __TEXT,__text  -[FIUIStateMachine diagnosticHandler]
+0x193dfe5e4  __TEXT,__text  -[FIUIStateMachine errorHandler]
+0x193dfe5f0  __TEXT,__text  -[FIUIState exit]
+0x193dfe5fc  __TEXT,__text  -[FIUIStateMachine transitionalEventFilter]
+0x193dfe608  __TEXT,__text  -[FIUIState isTransitional]
+0x193dfe614  __TEXT,__text  -[FIUIState description]
+0x193dfe688  __TEXT,__text  -[FIUIFormattingManager localizedPaceUnitStringWithDistanceType:distanceUnit:]
+0x193dfe690  __TEXT,__text  -[FIUIFormattingManager localizedShortUnitStringForDistanceUnit:]
+0x193dfe698  __TEXT,__text  -[FIUIFormattingManager localizedShortUnitStringForDistanceUnit:textCase:]
+0x193dfe6a0  __TEXT,__text  -[FIUIFormattingManager applyTextCase:toString:]
+0x193dfe6c4  __TEXT,__text  -[FIUIFormattingManager decimalSeparator]
+0x193dfe6cc  __TEXT,__text  -[FIUIFormattingManager stringWithDuration:durationFormat:]
+0x193dfe70c  __TEXT,__text  ___FIUIDeviceScale_block_invoke
+0x193dfe778  __TEXT,__text  -[FIUIFormattingManager localizedNaturalScaleStringWithDistanceInMeters:distanceType:unitStyle:usedUnit:]
+0x193dfe780  __TEXT,__text  -[FIUIFormattingManager localizedStringWithDistanceInMeters:distanceUnit:unitStyle:decimalPrecision:]
+0x193dfe78c  __TEXT,__text  -[FIUIAnimatingSpriteImageView .cxx_destruct]
+0x193dfe7d4  __TEXT,__text  -[FIUIAnimatingSpriteImageView layoutSubviews]
+0x193dfe9a0  __TEXT,__text  ___FIUIUsesIndicDigits_block_invoke
+0x193dfead0  __TEXT,__text  -[FIUIAnimatingSpriteImageView isAnimating]
+0x193dfeb1c  __TEXT,__text  -[FIUIAnimatingSpriteImageView _spriteFrameSize]
+0x193dfebc4  __TEXT,__text  -[FIUIWorkoutActivityType lapLength]
+0x193dfebcc  __TEXT,__text  +[NSUserDefaults(FIUIBackupSupport) fu_backupStandardUserDefaultsKey:]
+0x193dfebd0  __TEXT,__text  -[FIUIWorkoutActivityType encodeWithCoder:]
+0x193dfebd8  __TEXT,__text  +[UIColor(FUSystemColorExtensions) fu_systemRedColor]
+0x193dfebf4  __TEXT,__text  +[FIUIActionButton buttonWithTitle:color:icon:]
+0x193dfecf4  __TEXT,__text  -[FIUIActionButton initWithFrame:]
+0x193dfee7c  __TEXT,__text  -[FIUIActionButton titleRectForContentRect:]
+0x193dfefd8  __TEXT,__text  -[FIUIActionButton _setupInternalTouchActions]
+0x193dff054  __TEXT,__text  -[FIUIActionButton imageRectForContentRect:]
+0x193dff0f4  __TEXT,__text  -[FIUIActionButton layoutSubviews]
+0x193dff268  __TEXT,__text  -[FIUIActionButton transformingImageView]
+0x193dff27c  __TEXT,__text  -[FIUIActionButton setImage:forState:]
+0x193dff300  __TEXT,__text  -[FIUIActionButton setBackgroundImageColor:]
+0x193dff408  __TEXT,__text  -[FIUIActionButton setImageViewTintColor:]
+0x193dff490  __TEXT,__text  -[FIUIActionButton sizeThatFits:]
+0x193dff494  __TEXT,__text  -[FIUIActionButton setTouchUpAnimationCompleteHandler:]
+0x193dff4a0  __TEXT,__text  +[UIColor(FUSystemColorExtensions) fu_systemYellowColor]
+0x193dff4bc  __TEXT,__text  +[UIColor(FUSystemColorExtensions) fu_systemMintColor]
+0x193dff4d8  __TEXT,__text  -[FIUIActionButton setEnabled:]
+0x193dff5a8  __TEXT,__text  -[FIUIActionButton backgroundRectForBounds:]
+0x193dff5d4  __TEXT,__text  -[FIUIActionButton hitTest:withEvent:]
+0x193dff650  __TEXT,__text  -[FIUIActionButton _touchDown]
+0x193dff684  __TEXT,__text  -[FIUIActionButton setAnimatingTouchDown:]
+0x193dff698  __TEXT,__text  -[FIUIActionButton _animateHighlighted:]
+0x193dff778  __TEXT,__text  ___40-[FIUIActionButton _animateHighlighted:]_block_invoke
+0x193dff7dc  __TEXT,__text  -[FIUIActionButton _touchUp]
+0x193dff81c  __TEXT,__text  -[FIUIActionButton animatingTouchDown]
+0x193dff830  __TEXT,__text  -[FIUIActionButton touchUpAnimationCompleteHandler]
+0x193dff844  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_isConnectedGymWorkout]
+0x193dff848  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_activityType]
+0x193dff858  __TEXT,__text  +[FIUIWorkoutActivityType activityTypeWithWorkout:]
+0x193dff8ac  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_strokeStyle]
+0x193dffca4  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_eventsOfType:]
+0x193dffd64  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_swimmingLocationType]
+0x193dffd68  __TEXT,__text  +[FIUIWorkoutCompletionPercentageRingViewCell rowHeightForWorkout:width:]
+0x193dfff10  __TEXT,__text  +[FIUIWorkoutCompletionPercentageRingViewCell _ringTopPadding]
+0x193dfff18  __TEXT,__text  +[FIUIWorkoutCompletionPercentageRingViewCell _ringDiameter]
+0x193dfff24  __TEXT,__text  __TypeLabel
+0x193dfff5c  __TEXT,__text  ____TypeLabel_block_invoke
+0x193e00134  __TEXT,__text  __LabelFont
+0x193e0016c  __TEXT,__text  ____LabelFont_block_invoke
+0x193e001b0  __TEXT,__text  +[FIUIWorkoutCompletionPercentageRingViewCell _ringToTypeSpacing]
+0x193e001b8  __TEXT,__text  +[FIUIWorkoutSummaryColoredDetailTableViewCell rowHeightWithNoDataString:]
+0x193e0026c  __TEXT,__text  -[FIUIWorkoutCompletionPercentageRingViewCell initWithStyle:reuseIdentifier:]
+0x193e00274  __TEXT,__text  -[FIUIWorkoutCompletionPercentageRingViewCell setWorkoutWithoutFillingRing:]
+0x193e0027c  __TEXT,__text  -[FIUIWorkoutCompletionPercentageRingViewCell setWorkout:fillRing:]
+0x193e00700  __TEXT,__text  -[FIUIWorkoutCompletionPercentageRingViewCell workout]
+0x193e00714  __TEXT,__text  -[FIUIWorkoutCompletionPercentageRingViewCell ringsView]
+0x193e00728  __TEXT,__text  -[FIUIWorkoutCompletionPercentageRingViewCell typeLabel]
+0x193e0073c  __TEXT,__text  -[FIUIWorkoutCompletionPercentageRingViewCell iconImageView]
+0x193e00750  __TEXT,__text  -[FIUIWorkoutCompletionPercentageRingViewCell layoutSubviews]
+0x193e00c5c  __TEXT,__text  -[FIUIWorkoutCompletionPercentageRingViewCell separatorView]
+0x193e00c70  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell initWithStyle:reuseIdentifier:]
+0x193e00cc4  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell _setupUI]
+0x193e00f1c  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell _setDefaultValueFontSizes]
+0x193e00f94  __TEXT,__text  +[UIFont(FUSausageFontSupport) fu_mediumSausageFontOfSize:]
+0x193e00fa8  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell setShowBackgroundButton:]
+0x193e00fd0  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell setTitleString:]
+0x193e01028  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell setNoDataString:textColor:]
+0x193e01114  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell setDetailString:suffixString:textColor:shouldForceLTRForDetailString:]
+0x193e01480  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell setSecondMetricTitle:detailString:detailColor:]
+0x193e01648  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell setCustomAccessoryButton:]
+0x193e0172c  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell layoutSubviews]
+0x193e01c68  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell _resizeFontsIfNeededToFitWidth:]
+0x193e01e44  __TEXT,__text  ___FIUIOnePixel_block_invoke
+0x193e01e90  __TEXT,__text  ___FIUIOnePixel_block_invoke
+0x193e01edc  __TEXT,__text  -[FIUIWorkoutCompletionPercentageRingViewCell animateRingWithCompletion:]
+0x193e01f6c  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_completionFactor]
+0x193e02118  __TEXT,__text  -[FIUIActionButton .cxx_destruct]
+0x193e02188  __TEXT,__text  -[FIUIStateMachine dealloc]
+0x193e021e0  __TEXT,__text  -[FIUIStateMachine .cxx_destruct]
+0x193e02290  __TEXT,__text  -[FIUIState .cxx_destruct]
+0x193e022fc  __TEXT,__text  +[HKWorkout(FitnessUI) fiui_weightedAverageHeartRateWithSamples:startDate:endDate:]
+0x193e024b8  __TEXT,__text  -[NSMutableData(FIUIHeartRateData) fiui_weightedAverageHeartRateWithStartDate:endDate:]
+0x193e0284c  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell prepareForReuse]
+0x193e028e8  __TEXT,__text  -[FIUIFormattingManager localizationKeyForEnergyBaseKey:]
+0x193e028f0  __TEXT,__text  -[FIUIUnitManager userActiveEnergyBurnedUnit]
+0x193e028f8  __TEXT,__text  -[FIUIFormattingManager localizedStringWithActiveEnergy:unitStyle:]
+0x193e02900  __TEXT,__text  -[FIUIFormattingManager localizedStringWithEnergy:energyType:unitStyle:]
+0x193e02908  __TEXT,__text  -[FIUIFormattingManager localizedShortActiveEnergyUnitString]
+0x193e02910  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_hasAveragePace]
+0x193e02944  __TEXT,__text  -[HKWorkout(FitnessUI) _fiui_averagePaceQty]
+0x193e02990  __TEXT,__text  +[UIFont(FUSausageFontSupport) fu_systemFontOfSize:centeredColons:]
+0x193e029e8  __TEXT,__text  +[FIUIDateFormattingUtilities timeFormatter]
+0x193e02a20  __TEXT,__text  ___44+[FIUIDateFormattingUtilities timeFormatter]_block_invoke
+0x193e02b54  __TEXT,__text  -[NSDateFormatter(FULocaleAndTimeZoneObserving) fu_observeTimeZoneAndLocaleChanges]
+0x193e02d34  __TEXT,__text  +[FIUIDateFormattingUtilities timeRangeStringFromDateInterval:]
+0x193e02e60  __TEXT,__text  +[FIUIDateFormattingUtilities timeStringWithSpaceRemoved:date:]
+0x193e03068  __TEXT,__text  +[FIUIDateFormattingUtilities stringWithLongestStyleDate:font:maxWidth:]
+0x193e03180  __TEXT,__text  +[FIUIDateFormattingUtilities _dateFormatter]
+0x193e031b8  __TEXT,__text  ___45+[FIUIDateFormattingUtilities _dateFormatter]_block_invoke
+0x193e03204  __TEXT,__text  +[FIUIDateFormattingUtilities _dateStringFits:font:maxWidth:]
+0x193e032d4  __TEXT,__text  +[FIUIFormattingManager percentStringWithNumber:]
+0x193e032e0  __TEXT,__text  +[UIFont(FUSausageFontSupport) fu_mediumFontOfSize:]
+0x193e032e8  __TEXT,__text  +[UIFont(FUSausageFontSupport) fu_mediumFontOfSize:centeredColons:]
+0x193e046ec  __TEXT,__text  -[NSMutableData(FIUIHeartRateData) fiui_appendHeartRate:date:]
+0x193e0473c  __TEXT,__text  -[FIUIBreathingPetalRingMetalView initWithFrame:numberOfPetals:showBlurTrails:device:]
+0x193e04750  __TEXT,__text  -[FIUIBreathingPetalRingMetalView initWithFrame:petalColor:numberOfPetals:showBlurTrails:device:]
+0x193e049b8  __TEXT,__text  ___97-[FIUIBreathingPetalRingMetalView initWithFrame:petalColor:numberOfPetals:showBlurTrails:device:]_block_invoke
+0x193e04a08  __TEXT,__text  -[FIUIBreathingPetalRingMetalView layoutSubviews]
+0x193e04a9c  __TEXT,__text  -[FIUIBreathingPetalRingMetalView setRingRadius:]
+0x193e04ab0  __TEXT,__text  -[FIUIBreathingPetalRingMetalView ringRadius]
+0x193e04ac4  __TEXT,__text  -[FIUIBreathingPetalRingMetalView setRingCenter:]
+0x193e04ad8  __TEXT,__text  -[FIUIBreathingPetalRingMetalView ringCenter]
+0x193e04aec  __TEXT,__text  -[FIUIBreathingPetalRingMetalView numberOfVisiblePetals]
+0x193e04b00  __TEXT,__text  -[FIUIBreathingPetalRingMetalView setPreferredFramesPerSecond:]
+0x193e04b18  __TEXT,__text  -[FIUIBreathingPetalRingMetalView preferredFramesPerSecond]
+0x193e04b44  __TEXT,__text  -[FIUIBreathingPetalRingMetalView importDataFromPetalRing:]
+0x193e04b68  __TEXT,__text  -[FIUIBreathingPetalRingMetalView setPetalAtIndex:center:radius:alpha:]
+0x193e04b7c  __TEXT,__text  -[FIUIBreathingPetalRingMetalView setBlurTrailAtIndex:center:radius:blurriness:alpha:]
+0x193e04b90  __TEXT,__text  -[FIUIBreathingPetalRingMetalView setNumberOfVisiblePetals:showBlurTrails:]
+0x193e04ba4  __TEXT,__text  -[FIUIBreathingPetalRingMetalView setGradientRotationAngle:]
+0x193e04bb8  __TEXT,__text  -[FIUIBreathingPetalRingMetalView view]
+0x193e04bbc  __TEXT,__text  -[FIUIBreathingPetalRingMetalView petalRingDelegate]
+0x193e04be4  __TEXT,__text  -[FIUIBreathingPetalRingMetalView setPetalRingDelegate:]
+0x193e04bf8  __TEXT,__text  -[FIUIBreathingPetalRingMetalView numberOfPetals]
+0x193e04c0c  __TEXT,__text  -[FIUIBreathingPetalRingMetalView showBlurTrails]
+0x193e04c20  __TEXT,__text  -[FIUIBreathingPetalRingMetalView mtkView]
+0x193e04c34  __TEXT,__text  -[FIUIBreathingPetalRingMetalView setMtkView:]
+0x193e04c48  __TEXT,__text  -[FIUIBreathingPetalRingMetalView renderer]
+0x193e04c5c  __TEXT,__text  -[FIUIBreathingPetalRingMetalView setRenderer:]
+0x193e04c70  __TEXT,__text  -[FIUIBreathingPetalRingMetalView .cxx_destruct]
+0x193e052c8  __TEXT,__text  -[HKSample(FitnessUI) fiui_dateInterval]
+0x193e05344  __TEXT,__text  -[FIUIWorkoutSettingsManager init]
+0x193e05360  __TEXT,__text  -[FIUIWorkoutSettingsManager initWithWorkoutActivityType:activityMoveMode:]
+0x193e053f8  __TEXT,__text  +[FIUIWorkoutSettingsManager defaultMetricsVersionForDeviceType:]
+0x193e05474  __TEXT,__text  -[FIUIWorkoutSettingsManager initWithWorkoutActivityType:activityMoveMode:deviceType:]
+0x193e055b0  __TEXT,__text  -[FIUIWorkoutSettingsManager domainAccessor]
+0x193e05608  __TEXT,__text  -[FIUIWorkoutSettingsManager syncManager]
+0x193e05650  __TEXT,__text  -[FIUIWorkoutSettingsManager _clearOldMetricsIfNeeded]
+0x193e0578c  __TEXT,__text  -[FIUIWorkoutSettingsManager _shouldClearOldMetricsForSettingsByActivityType:metricFormatVersion:]
+0x193e059f4  __TEXT,__text  -[FIUIWorkoutSettingsManager orderedEnabledMetrics]
+0x193e059fc  __TEXT,__text  -[FIUIWorkoutSettingsManager orderedDisabledMetrics]
+0x193e05a70  __TEXT,__text  -[FIUIWorkoutSettingsManager setEnabled:forMetricType:didChange:]
+0x193e05b84  __TEXT,__text  -[FIUIWorkoutSettingsManager moveMetricType:toEnabledIndex:]
+0x193e05d24  __TEXT,__text  -[FIUIWorkoutSettingsManager assignMetricType:toSlotIndex:]
+0x193e05d9c  __TEXT,__text  -[FIUIWorkoutSettingsManager disabledIndexForMetricType:]
+0x193e05e64  __TEXT,__text  -[FIUIWorkoutSettingsManager reloadMetrics]
+0x193e05eec  __TEXT,__text  -[FIUIWorkoutSettingsManager _enabledMetricsAreDefaultAfterPaceMigration:workoutActivityType:]
+0x193e06008  __TEXT,__text  -[FIUIWorkoutSettingsManager _hasUserMadeMetricChangesToWorkoutType:enabledMetrics:settingOverridesByMetric:metricFormatVersion:]
+0x193e060c4  __TEXT,__text  +[FIUIWorkoutSettingsManager readWorkoutMetricsActivityMoveMode]
+0x193e06140  __TEXT,__text  -[FIUIWorkoutSettingsManager _writeToDomainWithShouldUpdateVersion:]
+0x193e063d8  __TEXT,__text  -[FIUIWorkoutSettingsManager _useUserConfiguredWorkoutMetricsForMetricsActivityMoveMode:activityMoveMode:]
+0x193e06400  __TEXT,__text  +[FIUIWorkoutSettingsManager obliterateUserConfiguredWorkoutMetrics]
+0x193e065ac  __TEXT,__text  -[FIUIWorkoutSettingsManager setDomainAccessor:]
+0x193e065b8  __TEXT,__text  -[FIUIWorkoutSettingsManager setSyncManager:]
+0x193e065c4  __TEXT,__text  -[FIUIWorkoutSettingsManager workoutActivityType]
+0x193e065cc  __TEXT,__text  -[FIUIWorkoutSettingsManager defaultMetricsProvider]
+0x193e065d4  __TEXT,__text  __SortIndexForMetricType
+0x193e065f8  __TEXT,__text  +[UIView(FIUIUtilities) fiui_animateIfNeededWithDuration:animations:]
+0x193e06600  __TEXT,__text  +[UIView(FIUIUtilities) fiui_animateIfNeededWithDuration:animations:completion:]
+0x193e066fc  __TEXT,__text  ___80+[UIView(FIUIUtilities) fiui_animateIfNeededWithDuration:animations:completion:]_block_invoke
+0x193e06714  __TEXT,__text  +[UIView(FIUIUtilities) fiui_animateIfNeededWithDuration:delay:options:animations:completion:]
+0x193e06820  __TEXT,__text  ___94+[UIView(FIUIUtilities) fiui_animateIfNeededWithDuration:delay:options:animations:completion:]_block_invoke
+0x193e06838  __TEXT,__text  -[FIUIHeartRateStatusView initWithFrame:heartFilledImageName:heartSpriteImageName:spriteFrameCount:spriteColumnCount:resourceBundle:]
+0x193e0684c  __TEXT,__text  -[FIUIHeartRateStatusView initWithFrame:heartFilledImageName:heartSpriteImageName:heartSuspendedSpriteImageName:spriteFrameCount:spriteColumnCount:resourceBundle:]
+0x193e069e4  __TEXT,__text  -[FIUIHeartRateStatusView setReloadHeartOutlineImage:]
+0x193e069e8  __TEXT,__text  -[FIUIHeartRateStatusView setBeatsPerMinute:]
+0x193e069fc  __TEXT,__text  -[FIUIHeartRateStatusView setPulseRate:]
+0x193e06a10  __TEXT,__text  -[FIUIHeartRateStatusView startValidDataIdleAnimation]
+0x193e06a68  __TEXT,__text  -[FIUIHeartRateStatusView _beatFullHeartOnce]
+0x193e06b60  __TEXT,__text  ___45-[FIUIHeartRateStatusView _beatFullHeartOnce]_block_invoke
+0x193e06c48  __TEXT,__text  ___45-[FIUIHeartRateStatusView _beatFullHeartOnce]_block_invoke_2
+0x193e06cb0  __TEXT,__text  ___45-[FIUIHeartRateStatusView _beatFullHeartOnce]_block_invoke_3
+0x193e06d08  __TEXT,__text  ___45-[FIUIHeartRateStatusView _beatFullHeartOnce]_block_invoke_4
+0x193e06d10  __TEXT,__text  -[FIUIHeartRateStatusView _finishedHeartbeat]
+0x193e06dd4  __TEXT,__text  -[FIUIDividerView initWithFrame:]
+0x193e06eb0  __TEXT,__text  -[FIUIDividerView sizeThatFits:]
+0x193e06eb8  __TEXT,__text  -[FIUIDividerView intrinsicContentSize]
+0x193e06f34  __TEXT,__text  -[FIUIDividerView layoutSubviews]
+0x193e06fc8  __TEXT,__text  -[FIUIDividerView edgeInsets]
+0x193e06fe0  __TEXT,__text  -[FIUIDividerView setEdgeInsets:]
+0x193e06ff8  __TEXT,__text  -[FIUIDividerView imageView]
+0x193e0700c  __TEXT,__text  -[FIUIDividerView setImageView:]
+0x193e07020  __TEXT,__text  -[FIUIDividerView .cxx_destruct]
+0x193e07034  __TEXT,__text  ___FIUIDividerViewRoundedCornerImage_block_invoke
+0x193e072c4  __TEXT,__text  __IsMetricLocale
+0x193e07344  __TEXT,__text  __HeightFormatterMediumStyle
+0x193e07440  __TEXT,__text  __WeightInLocaleUnit
+0x193e074a8  __TEXT,__text  __MassFormatter
+0x193e074fc  __TEXT,__text  __LocaleWeightMassFormatterUnit
+0x193e07664  __TEXT,__text  ___FIUIDateOfBirthDisplayString_block_invoke
+0x193e07730  __TEXT,__text  -[FIUIHealthSettingsDatePicker initWithFrame:]
+0x193e078dc  __TEXT,__text  -[FIUIHealthSettingsDatePicker layoutSubviews]
+0x193e07928  __TEXT,__text  __changeSeparatorLineColors
+0x193e07a70  __TEXT,__text  -[FIUIHealthSettingsDatePicker _dateDidChange:]
+0x193e07afc  __TEXT,__text  -[FIUIHealthSettingsDatePicker forceUpdate]
+0x193e07b04  __TEXT,__text  -[FIUIHealthSettingsDatePicker dateUpdateHandler]
+0x193e07b18  __TEXT,__text  -[FIUIHealthSettingsDatePicker setDateUpdateHandler:]
+0x193e07b24  __TEXT,__text  -[FIUIHealthSettingsDatePicker .cxx_destruct]
+0x193e07b38  __TEXT,__text  -[_FIUIHealthSettingsPickerView layoutSubviews]
+0x193e07b84  __TEXT,__text  -[FIUIHealthSettingsPickerController init]
+0x193e07c1c  __TEXT,__text  -[FIUIHealthSettingsPickerController numberOfComponentsInPickerView:]
+0x193e07c24  __TEXT,__text  -[FIUIHealthSettingsPickerController pickerView:numberOfRowsInComponent:]
+0x193e07c2c  __TEXT,__text  -[FIUIHealthSettingsPickerController pickerView]
+0x193e07c34  __TEXT,__text  -[FIUIHealthSettingsPickerController setPickerView:]
+0x193e07c40  __TEXT,__text  -[FIUIHealthSettingsPickerController isMetricLocale]
+0x193e07c48  __TEXT,__text  -[FIUIHealthSettingsPickerController setIsMetricLocale:]
+0x193e07c50  __TEXT,__text  -[FIUIHealthSettingsPickerController .cxx_destruct]
+0x193e07c5c  __TEXT,__text  -[FIUIHealthSettingsBirthDatePickerController init]
+0x193e07d68  __TEXT,__text  ___51-[FIUIHealthSettingsBirthDatePickerController init]_block_invoke
+0x193e07df0  __TEXT,__text  -[FIUIHealthSettingsBirthDatePickerController setDateOfBirth:]
+0x193e07e98  __TEXT,__text  -[FIUIHealthSettingsBirthDatePickerController forceUpdate]
+0x193e07ea0  __TEXT,__text  -[FIUIHealthSettingsBirthDatePickerController datePickerView]
+0x193e07ea8  __TEXT,__text  -[FIUIHealthSettingsBirthDatePickerController setDatePickerView:]
+0x193e07eb4  __TEXT,__text  -[FIUIHealthSettingsBirthDatePickerController dateOfBirthUpdateHandler]
+0x193e07ebc  __TEXT,__text  -[FIUIHealthSettingsBirthDatePickerController setDateOfBirthUpdateHandler:]
+0x193e07ec4  __TEXT,__text  -[FIUIHealthSettingsBirthDatePickerController .cxx_destruct]
+0x193e07efc  __TEXT,__text  -[FIUIHealthSettingsHeightPickerController forceUpdate]
+0x193e07f00  __TEXT,__text  -[FIUIHealthSettingsHeightPickerController numberOfComponentsInPickerView:]
+0x193e07f24  __TEXT,__text  -[FIUIHealthSettingsHeightPickerController pickerView:numberOfRowsInComponent:]
+0x193e07f64  __TEXT,__text  -[FIUIHealthSettingsHeightPickerController pickerView:didSelectRow:inComponent:]
+0x193e07f68  __TEXT,__text  -[FIUIHealthSettingsHeightPickerController pickerView:attributedTitleForRow:forComponent:]
+0x193e07fb0  __TEXT,__text  __PickerStyledAttributedString
+0x193e08094  __TEXT,__text  -[FIUIHealthSettingsHeightPickerController setHeightQuantity:]
+0x193e08204  __TEXT,__text  -[FIUIHealthSettingsHeightPickerController _heightPickerUpdated]
+0x193e08338  __TEXT,__text  -[FIUIHealthSettingsHeightPickerController _pickerDisplayStringForHeightForRow:forComponent:]
+0x193e083c4  __TEXT,__text  -[FIUIHealthSettingsHeightPickerController heightUpdateHandler]
+0x193e083cc  __TEXT,__text  -[FIUIHealthSettingsHeightPickerController setHeightUpdateHandler:]
+0x193e083d4  __TEXT,__text  -[FIUIHealthSettingsHeightPickerController .cxx_destruct]
+0x193e0840c  __TEXT,__text  -[FIUIHealthSettingsWeightPickerController forceUpdate]
+0x193e08474  __TEXT,__text  -[FIUIHealthSettingsWeightPickerController numberOfComponentsInPickerView:]
+0x193e0847c  __TEXT,__text  -[FIUIHealthSettingsWeightPickerController numberOfRows]
+0x193e08500  __TEXT,__text  __RoundedMinWeightInLocaleUnit
+0x193e08570  __TEXT,__text  -[FIUIHealthSettingsWeightPickerController pickerView:numberOfRowsInComponent:]
+0x193e08574  __TEXT,__text  -[FIUIHealthSettingsWeightPickerController _setDefaultValuesOnWeightPickerIfRequiredWithWeight:]
+0x193e08600  __TEXT,__text  -[FIUIHealthSettingsWeightPickerController pickerView:attributedTitleForRow:forComponent:]
+0x193e08644  __TEXT,__text  -[FIUIHealthSettingsWeightPickerController _weightDisplayStringForRow:]
+0x193e086bc  __TEXT,__text  -[FIUIHealthSettingsWeightPickerController _weightInLocaleUnitForRow:]
+0x193e086e4  __TEXT,__text  -[FIUIHealthSettingsWeightPickerController _weightQuantityForRow:]
+0x193e08764  __TEXT,__text  -[FIUIHealthSettingsWeightPickerController pickerView:didSelectRow:inComponent:]
+0x193e087b0  __TEXT,__text  -[FIUIHealthSettingsWeightPickerController setWeightQuantity:]
+0x193e0887c  __TEXT,__text  __AvgWeightQuantity
+0x193e088dc  __TEXT,__text  -[FIUIHealthSettingsWeightPickerController _updateWithWeightQuantity:]
+0x193e08950  __TEXT,__text  -[FIUIHealthSettingsWeightPickerController weightUpdateHandler]
+0x193e08958  __TEXT,__text  -[FIUIHealthSettingsWeightPickerController setWeightUpdateHandler:]
+0x193e08960  __TEXT,__text  -[FIUIHealthSettingsWeightPickerController .cxx_destruct]
+0x193e0896c  __TEXT,__text  -[FIUIHealthSettingsSexPickerController forceUpdate]
+0x193e089c8  __TEXT,__text  -[FIUIHealthSettingsSexPickerController numberOfComponentsInPickerView:]
+0x193e089d0  __TEXT,__text  -[FIUIHealthSettingsSexPickerController pickerView:numberOfRowsInComponent:]
+0x193e089d8  __TEXT,__text  -[FIUIHealthSettingsSexPickerController pickerView:didSelectRow:inComponent:]
+0x193e08a0c  __TEXT,__text  -[FIUIHealthSettingsSexPickerController pickerView:attributedTitleForRow:forComponent:]
+0x193e08a54  __TEXT,__text  -[FIUIHealthSettingsSexPickerController _updateWithBiologicalSex:]
+0x193e08ad8  __TEXT,__text  -[FIUIHealthSettingsSexPickerController _biologicalSexForRow:]
+0x193e08ae0  __TEXT,__text  -[FIUIHealthSettingsSexPickerController setBiologicalSex:]
+0x193e08b2c  __TEXT,__text  -[FIUIHealthSettingsSexPickerController sexUpdateHandler]
+0x193e08b34  __TEXT,__text  -[FIUIHealthSettingsSexPickerController setSexUpdateHandler:]
+0x193e08b3c  __TEXT,__text  -[FIUIHealthSettingsSexPickerController .cxx_destruct]
+0x193e08ba0  __TEXT,__text  +[FIUIModel dailyTotalQueryForDate:dataType:predicate:sendUpdates:handler:]
+0x193e08c94  __TEXT,__text  +[FIUIModel _dailyTotalsQueryFromDate:toDate:dataType:predicate:sendUpdates:handler:]
+0x193e08ee4  __TEXT,__text  ___85+[FIUIModel _dailyTotalsQueryFromDate:toDate:dataType:predicate:sendUpdates:handler:]_block_invoke
+0x193e08fdc  __TEXT,__text  ___85+[FIUIModel _dailyTotalsQueryFromDate:toDate:dataType:predicate:sendUpdates:handler:]_block_invoke_2
+0x193e09004  __TEXT,__text  ___85+[FIUIModel _dailyTotalsQueryFromDate:toDate:dataType:predicate:sendUpdates:handler:]_block_invoke_3
+0x193e09128  __TEXT,__text  ___85+[FIUIModel _dailyTotalsQueryFromDate:toDate:dataType:predicate:sendUpdates:handler:]_block_invoke_4
+0x193e0914c  __TEXT,__text  -[FIUIModel init]
+0x193e09154  __TEXT,__text  -[FIUIModel initWithHealthStore:]
+0x193e09264  __TEXT,__text  -[FIUIModel weeklyGoalModel]
+0x193e092b4  __TEXT,__text  -[FIUIModel _printStatisticsCollection:]
+0x193e094d0  __TEXT,__text  -[FIUIModel _printUpdatedStatistics:]
+0x193e09590  __TEXT,__text  -[FIUIModel addObserver:]
+0x193e09598  __TEXT,__text  -[FIUIModel removeObserver:]
+0x193e095a0  __TEXT,__text  -[FIUIModel executeQuery:]
+0x193e095a8  __TEXT,__text  -[FIUIModel stopQuery:]
+0x193e095b0  __TEXT,__text  +[FIUIModel isWheelchairUser]
+0x193e0960c  __TEXT,__text  -[FIUIModel startCurrentActivitySummaryQueryWithHandler:]
+0x193e096e4  __TEXT,__text  ___57-[FIUIModel startCurrentActivitySummaryQueryWithHandler:]_block_invoke
+0x193e09804  __TEXT,__text  ___57-[FIUIModel startCurrentActivitySummaryQueryWithHandler:]_block_invoke_2
+0x193e0981c  __TEXT,__text  -[FIUIModel stopCurrentActivitySummaryQueryForClientToken:]
+0x193e098b4  __TEXT,__text  ___59-[FIUIModel stopCurrentActivitySummaryQueryForClientToken:]_block_invoke
+0x193e09928  __TEXT,__text  -[FIUIModel _queue_restartCurrentActivitySummaryQueryAfterError]
+0x193e099d4  __TEXT,__text  ___64-[FIUIModel _queue_restartCurrentActivitySummaryQueryAfterError]_block_invoke
+0x193e09a84  __TEXT,__text  -[FIUIModel _createCurrentActivitySummaryQuery]
+0x193e09b1c  __TEXT,__text  ___47-[FIUIModel _createCurrentActivitySummaryQuery]_block_invoke
+0x193e09be8  __TEXT,__text  ___47-[FIUIModel _createCurrentActivitySummaryQuery]_block_invoke_2
+0x193e09d48  __TEXT,__text  -[FIUIModel healthStore]
+0x193e09d50  __TEXT,__text  -[FIUIModel currentActivitySummaryQueryCollectionIntervalOverrides]
+0x193e09d58  __TEXT,__text  -[FIUIModel setCurrentActivitySummaryQueryCollectionIntervalOverrides:]
+0x193e09d64  __TEXT,__text  -[FIUIModel .cxx_destruct]
+0x193e09e08  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193e09e14  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193e09e24  __TEXT,__text  +[HKQuery(FIUIQuerySupport) fiui_predicateForWorkoutsWithMetadataIndoor:]
+0x193e09e50  __TEXT,__text  +[HKQuery(FIUIQuerySupport) fiui_predicateForWorkoutsWithMetadataSwimmingLocationType:]
+0x193e09ec4  __TEXT,__text  -[FIUIAnimatingSpriteImageView sizeThatFits:]
+0x193e09ec8  __TEXT,__text  -[FIUIAnimatingSpriteImageView intrinsicContentSize]
+0x193e09ecc  __TEXT,__text  -[FIUIAnimatingSpriteImageView willMoveToWindow:]
+0x193e09ef0  __TEXT,__text  -[FIUIAnimatingSpriteImageView _centerPointValues]
+0x193e0a008  __TEXT,__text  +[FIUIAnimatingSpriteImageView _findSpriteIndex:centerPoints:]
+0x193e0a080  __TEXT,__text  +[FIUIAnimatingSpriteImageView _createNewSpriteArray:currentFrame:arraySize:interrupted:]
+0x193e0a13c  __TEXT,__text  __PositionAnimation
+0x193e0a1d8  __TEXT,__text  -[FIUIAnimatingSpriteImageView stopAnimatingFinishingCycle:]
+0x193e0a3f0  __TEXT,__text  -[FIUIAnimatingSpriteImageView animateOnce]
+0x193e0a4f8  __TEXT,__text  -[FIUIAnimatingSpriteImageView pauseAnimating]
+0x193e0a548  __TEXT,__text  -[FIUIAnimatingSpriteImageView resumeAnimating]
+0x193e0a5a0  __TEXT,__text  -[FIUIAnimatingSpriteImageView _addAnimation:forKey:]
+0x193e0a628  __TEXT,__text  +[FIUIAnimatingSpriteImageView _pauseLayer:]
+0x193e0a688  __TEXT,__text  +[FIUIAnimatingSpriteImageView _resumeLayer:]
+0x193e0a704  __TEXT,__text  +[FIUIAnimatingSpriteImageView _resetLayer:]
+0x193e0a750  __TEXT,__text  -[FIUIAnimatingSpriteImageView spriteFrameCount]
+0x193e0a764  __TEXT,__text  -[FIUIAnimatingSpriteImageView spriteColumnCount]
+0x193e0a778  __TEXT,__text  -[FIUIAnimatingSpriteImageView framesPerSecond]
+0x193e0a78c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193e0a78c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193e0a7a0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193e0a7b4  __TEXT,__text  -[FIUIDeepBreathingFlowerView initWithFrame:petalColor:congratulationsText:]
+0x193e0a8c0  __TEXT,__text  -[FIUIDeepBreathingFlowerView initWithFrame:congratulationsText:]
+0x193e0a8cc  __TEXT,__text  -[FIUIDeepBreathingFlowerView _setState:]
+0x193e0a920  __TEXT,__text  -[FIUIDeepBreathingFlowerView _currentPetalRing]
+0x193e0a934  __TEXT,__text  -[FIUIDeepBreathingFlowerView _preloadPetalRings]
+0x193e0aa08  __TEXT,__text  -[FIUIDeepBreathingFlowerView _petalRingWithNumberOfShaderPetals:showBlurTrails:]
+0x193e0ac04  __TEXT,__text  -[FIUIDeepBreathingFlowerView _setNumberOfVisiblePetals:showBlurTrails:]
+0x193e0ae10  __TEXT,__text  -[FIUIDeepBreathingFlowerView _updateShaderForNumberOfPetals:showBlurTrails:]
+0x193e0afd0  __TEXT,__text  -[FIUIDeepBreathingFlowerView petalRingViewDisplayLinkDidFire:]
+0x193e0b128  __TEXT,__text  -[FIUIDeepBreathingFlowerView setWelcomeWindFraction:]
+0x193e0b1bc  __TEXT,__text  -[FIUIDeepBreathingFlowerView transitionToConfigurationAnimated:]
+0x193e0b32c  __TEXT,__text  -[FIUIDeepBreathingFlowerView setNumberOfConfigurationPetals:]
+0x193e0b4c0  __TEXT,__text  -[FIUIDeepBreathingFlowerView startOnRampAtDate:sessionDuration:]
+0x193e0b51c  __TEXT,__text  -[FIUIDeepBreathingFlowerView _updateForShrinkToOnRampWithFractionComplete:]
+0x193e0b568  __TEXT,__text  -[FIUIDeepBreathingFlowerView _updateForOnRampWithTimeInState:]
+0x193e0b618  __TEXT,__text  -[FIUIDeepBreathingFlowerView startGuidingAtDate:breathsPerMinute:]
+0x193e0b630  __TEXT,__text  -[FIUIDeepBreathingFlowerView _updateForGuidingWithTimeInState:]
+0x193e0b6f0  __TEXT,__text  -[FIUIDeepBreathingFlowerView transitionToCongratulations]
+0x193e0b748  __TEXT,__text  -[FIUIDeepBreathingFlowerView _updateForCongratulationsWithTimeInState:fractionComplete:]
+0x193e0b7ec  __TEXT,__text  -[FIUIDeepBreathingFlowerView _createCongratulationsLabelIfNeeded]
+0x193e0b9ac  __TEXT,__text  -[FIUIDeepBreathingFlowerView transitionToCompletedWithDuration:]
+0x193e0ba04  __TEXT,__text  -[FIUIDeepBreathingFlowerView _originalRingCenterForWindType:]
+0x193e0bae8  __TEXT,__text  -[FIUIDeepBreathingFlowerView _updateForUnwindToCompletedWithFractionComplete:]
+0x193e0bb5c  __TEXT,__text  -[FIUIDeepBreathingFlowerView _updateForWindToConfigurationWithFractionComplete:]
+0x193e0bb74  __TEXT,__text  -[FIUIDeepBreathingFlowerView _curveEaseInValue:]
+0x193e0bbc0  __TEXT,__text  ___49-[FIUIDeepBreathingFlowerView _curveEaseInValue:]_block_invoke
+0x193e0bc00  __TEXT,__text  -[FIUIDeepBreathingFlowerView _setWindFraction:smallRadius:largeRadius:windType:showBlurTrails:]
+0x193e0bdd0  __TEXT,__text  -[FIUIDeepBreathingFlowerView _petalCountForMinutesRemaining:]
+0x193e0bdf4  __TEXT,__text  -[FIUIDeepBreathingFlowerView _updateForBreathWithPetalCount:petalRadius:inhaleDuration:exhaleDuration:timeInCurrentBreath:showBlurTrails:shouldSpin:]
+0x193e0c19c  __TEXT,__text  __InterpolateWithKeyFrames
+0x193e0c2e0  __TEXT,__text  -[FIUIDeepBreathingFlowerView _updatePetalsInRange:radius:radialDistance:angleOffset:clockwise:alpha:]
+0x193e0c3ec  __TEXT,__text  -[FIUIDeepBreathingFlowerView _interpolateWithKeyFrames:keyValues:value:]
+0x193e0c530  __TEXT,__text  -[FIUIDeepBreathingFlowerView _ppt_setPetalCountOverride:]
+0x193e0c548  __TEXT,__text  -[FIUIDeepBreathingFlowerView .cxx_destruct]
+0x193e0c5e0  __TEXT,__text  ____defaultMetalDevice_block_invoke
+0x193e0c608  __TEXT,__text  ____BlurrinessKeyFrames_block_invoke
+0x193e0c620  __TEXT,__text  ____BlurrinessKeyValues_block_invoke
+0x193e0c648  __TEXT,__text  +[FIUIWorkoutActivityType effectiveActivityTypeWithWorkout:]
+0x193e0c69c  __TEXT,__text  -[FIUIWorkoutActivityType initWithActivityTypeIdentifier:isIndoor:]
+0x193e0c700  __TEXT,__text  -[FIUIWorkoutActivityType initWithActivityTypeIdentifier:isIndoor:isPartOfMultiSport:metadata:]
+0x193e0c788  __TEXT,__text  -[FIUIWorkoutActivityType initWithActivityTypeIdentifier:isIndoor:isPartOfMultiSport:metadata:auxiliaryTypeIdentifier:]
+0x193e0c820  __TEXT,__text  -[FIUIWorkoutActivityType initWithActivityTypeIdentifier:location:isPartOfMultiSport:metadata:]
+0x193e0c8a8  __TEXT,__text  -[FIUIWorkoutActivityType initWithActivityTypeIdentifier:location:isPartOfMultiSport:metadata:auxiliaryTypeIdentifier:]
+0x193e0c940  __TEXT,__text  -[FIUIWorkoutActivityType initWithWorkoutActivityType:]
+0x193e0c9b4  __TEXT,__text  +[FIUIWorkoutActivityType supportsSecureCoding]
+0x193e0c9bc  __TEXT,__text  -[FIUIWorkoutActivityType location]
+0x193e0c9c4  __TEXT,__text  -[FIUIWorkoutActivityType isCategorizedOtherWorkout]
+0x193e0c9cc  __TEXT,__text  -[FIUIWorkoutActivityType localizedNameComponents]
+0x193e0c9d4  __TEXT,__text  -[FIUIWorkoutActivityType activityTypeByAddingLapLength:]
+0x193e0ca20  __TEXT,__text  -[FIUIWorkoutActivityType isWaterLockActivity]
+0x193e0ca28  __TEXT,__text  -[FIUIWorkoutActivityType isPartOfMultiSport]
+0x193e0ca30  __TEXT,__text  +[FIUIWorkoutActivityType defaultActivityTypesWithIsWheelchairUser:isSwimmingSupported:activityMoveMode:]
+0x193e0ca80  __TEXT,__text  ___105+[FIUIWorkoutActivityType defaultActivityTypesWithIsWheelchairUser:isSwimmingSupported:activityMoveMode:]_block_invoke
+0x193e0cb14  __TEXT,__text  ___FIUIStandardFitnessDefaultActivityTypes_block_invoke
+0x193e0cba8  __TEXT,__text  ___FIUIFitnessJuniorDefaultActivityTypes_block_invoke
+0x193e0cbf4  __TEXT,__text  +[FIUIWorkoutActivityType gymKitCapableActivityTypes]
+0x193e0cc44  __TEXT,__text  ___53+[FIUIWorkoutActivityType gymKitCapableActivityTypes]_block_invoke
+0x193e0cc90  __TEXT,__text  +[FIUIWorkoutActivityType optimizedActivityTypesWithIsWheelchairUser:isSwimmingSupported:]
+0x193e0cce0  __TEXT,__text  ___90+[FIUIWorkoutActivityType optimizedActivityTypesWithIsWheelchairUser:isSwimmingSupported:]_block_invoke
+0x193e0cd2c  __TEXT,__text  +[FIUIWorkoutActivityType otherWorkoutActivityTypes]
+0x193e0cd38  __TEXT,__text  +[FIUIWorkoutActivityType nonOptimizedActivityTypes]
+0x193e0cd88  __TEXT,__text  ___52+[FIUIWorkoutActivityType nonOptimizedActivityTypes]_block_invoke
+0x193e0cdd4  __TEXT,__text  +[FIUIWorkoutActivityType unsupportedActivityTypesWithIsWheelchairUser:isSwimmingSupported:]
+0x193e0ce24  __TEXT,__text  ___92+[FIUIWorkoutActivityType unsupportedActivityTypesWithIsWheelchairUser:isSwimmingSupported:]_block_invoke
+0x193e0ce70  __TEXT,__text  +[FIUIWorkoutActivityType unsupportedActivityTypesWithIsWheelchairUser:isSwimmingSupported:supportsPairedWatchFeatures:supportsExternalHeartRateSensorFeatures:]
+0x193e0cf80  __TEXT,__text  ___160+[FIUIWorkoutActivityType unsupportedActivityTypesWithIsWheelchairUser:isSwimmingSupported:supportsPairedWatchFeatures:supportsExternalHeartRateSensorFeatures:]_block_invoke
+0x193e0cfcc  __TEXT,__text  ___50+[FIUIWorkoutActivityType wheelchairActivityTypes]_block_invoke
+0x193e0d018  __TEXT,__text  +[FIUIWorkoutActivityType swimmingOptimizedActivityTypes]
+0x193e0d068  __TEXT,__text  ___57+[FIUIWorkoutActivityType swimmingOptimizedActivityTypes]_block_invoke
+0x193e0d0b4  __TEXT,__text  +[FIUIWorkoutActivityType swimmingOtherActivityTypes]
+0x193e0d104  __TEXT,__text  ___53+[FIUIWorkoutActivityType swimmingOtherActivityTypes]_block_invoke
+0x193e0d150  __TEXT,__text  +[FIUIWorkoutActivityType deprecatedActivityTypes]
+0x193e0d1a0  __TEXT,__text  ___50+[FIUIWorkoutActivityType deprecatedActivityTypes]_block_invoke
+0x193e0d1ec  __TEXT,__text  -[FIUIWorkoutActivityType uniqueIdentifier]
+0x193e0d1f4  __TEXT,__text  +[FIUIWorkoutActivityType shouldDisambiguateOnLocationType:]
+0x193e0d200  __TEXT,__text  -[FIUIWorkoutActivityType requiresDisambiguation]
+0x193e0d208  __TEXT,__text  -[FIUIWorkoutActivityType requiresLocationDisambiguation]
+0x193e0d210  __TEXT,__text  -[FIUIWorkoutActivityType requiresSwimmingLocationDisambiguation]
+0x193e0d218  __TEXT,__text  +[FIUIWorkoutActivityType possibleActivityTypesForIdentifier:locationType:swimmingLocationType:wheelchairUser:]
+0x193e0d268  __TEXT,__text  ___111+[FIUIWorkoutActivityType possibleActivityTypesForIdentifier:locationType:swimmingLocationType:wheelchairUser:]_block_invoke
+0x193e0d2b4  __TEXT,__text  +[FIUIWorkoutActivityType mapWheelchairUserActivityType:isWheelchairUser:]
+0x193e0d2c0  __TEXT,__text  -[FIUIWorkoutActivityType isPoolSwimming]
+0x193e0d2c8  __TEXT,__text  -[FIUIWorkoutActivityType workoutActivityType]
+0x193e0d2d0  __TEXT,__text  -[FIUIWorkoutActivityType(PlistSupport) activityTypePlistKey]
+0x193e0d2d8  __TEXT,__text  -[FIUIWorkoutActivityType(OpenGoalUUIDSupport) openGoalUUID]
+0x193e0d2e0  __TEXT,__text  -[FIUIWorkoutActivityType(SafetyCheckIn) supportsSafetyCheckInPrompt]
+0x193e0d2e8  __TEXT,__text  -[FUDatePicker initWithFrame:]
+0x193e0d374  __TEXT,__text  -[FUDatePicker initWithFrame:tintColor:initialWheelType:shouldEnableCrown:minimumDate:maximumDate:]
+0x193e0dfbc  __TEXT,__text  -[FUDatePicker _wheelOfType:]
+0x193e0e000  __TEXT,__text  -[FUDatePicker _enumerateDayValuesFromFormatter:]
+0x193e0e1c4  __TEXT,__text  -[FUDatePicker _enumerateDayValues]
+0x193e0e280  __TEXT,__text  -[FUDatePicker layoutSubviews]
+0x193e0e62c  __TEXT,__text  -[FUDatePicker setDate:]
+0x193e0e634  __TEXT,__text  -[FUDatePicker setDate:animated:]
+0x193e0e690  __TEXT,__text  -[FUDatePicker dateWheel]
+0x193e0e6a4  __TEXT,__text  -[FUDatePicker _updateSpinnersAnimated:]
+0x193e0e82c  __TEXT,__text  -[FUDatePicker _updateDayRangeReloadingWheel:]
+0x193e0e8d0  __TEXT,__text  -[FUDatePicker scrollWheel:titleForItemAtIndex:]
+0x193e0eae4  __TEXT,__text  -[FUDatePicker numberOfRowsInScrollWheel:]
+0x193e0eb40  __TEXT,__text  -[FUDatePicker tappedScrollWheel:]
+0x193e0ee40  __TEXT,__text  -[FUDatePicker scrollWheel:didChangeCurrentIndexTo:]
+0x193e0f11c  __TEXT,__text  -[FUDatePicker scrollWheelShouldBecomeFirstResponder:]
+0x193e0f130  __TEXT,__text  -[FUDatePicker delegate]
+0x193e0f158  __TEXT,__text  -[FUDatePicker setDelegate:]
+0x193e0f16c  __TEXT,__text  -[FUDatePicker date]
+0x193e0f180  __TEXT,__text  -[FUDatePicker monthWheel]
+0x193e0f194  __TEXT,__text  -[FUDatePicker setMonthWheel:]
+0x193e0f1a8  __TEXT,__text  -[FUDatePicker dayWheel]
+0x193e0f1bc  __TEXT,__text  -[FUDatePicker setDayWheel:]
+0x193e0f1d0  __TEXT,__text  -[FUDatePicker yearWheel]
+0x193e0f1e4  __TEXT,__text  -[FUDatePicker setYearWheel:]
+0x193e0f1f8  __TEXT,__text  -[FUDatePicker .cxx_destruct]
+0x193e0f340  __TEXT,__text  -[FIUIChartView init]
+0x193e0f348  __TEXT,__text  -[FIUIChartView initWithDateInterval:]
+0x193e0f480  __TEXT,__text  -[FIUIChartView reloadData]
+0x193e0f4dc  __TEXT,__text  -[FIUIChartView selectAxisPoint:selected:]
+0x193e0f5d0  __TEXT,__text  -[FIUIChartView setDateInterval:]
+0x193e0f698  __TEXT,__text  -[FIUIChartView setXAxisDescriptor:]
+0x193e0f74c  __TEXT,__text  -[FIUIChartView setYAxisDescriptor:]
+0x193e0f7d4  __TEXT,__text  -[FIUIChartView setBackgroundView:]
+0x193e0f850  __TEXT,__text  -[FIUIChartView _updateBackgroundView]
+0x193e0f928  __TEXT,__text  -[FIUIChartView _reloadDataSeries]
+0x193e0f9e4  __TEXT,__text  -[FIUIChartView _updateDataSeries]
+0x193e0fa90  __TEXT,__text  -[FIUIChartView _adjustMinMaxValues]
+0x193e0fd98  __TEXT,__text  -[FIUIChartView _updateHighlightedValue]
+0x193e0fe4c  __TEXT,__text  -[FIUIChartView layoutSubviews]
+0x193e0feb8  __TEXT,__text  -[FIUIChartView _layoutContainerView]
+0x193e0ff34  __TEXT,__text  -[FIUIChartView _layoutAxisLabels]
+0x193e0ff60  __TEXT,__text  -[FIUIChartView _layoutYAxisLabels]
+0x193e10384  __TEXT,__text  -[FIUIChartView _layoutXAxisLabels]
+0x193e10e34  __TEXT,__text  -[FIUIChartView _layoutChartSeries]
+0x193e11024  __TEXT,__text  -[FIUIChartView _orderSubviews]
+0x193e1116c  __TEXT,__text  -[FIUIChartView _xAxisLabelPaddingForBackground:]
+0x193e11224  __TEXT,__text  -[FIUIChartView _yAxisLabelPadding]
+0x193e11238  __TEXT,__text  -[FIUIChartView _chartRect]
+0x193e112dc  __TEXT,__text  -[FIUIChartView _insetChartRect]
+0x193e1132c  __TEXT,__text  -[FIUIChartView _absolutePositionForXPlaneValue:]
+0x193e11390  __TEXT,__text  -[FIUIChartView _relativePositionForXPlaneValue:]
+0x193e11438  __TEXT,__text  -[FIUIChartView _numberOfSeries]
+0x193e11480  __TEXT,__text  -[FIUIChartView _seriesAtIndex:]
+0x193e114e0  __TEXT,__text  -[FIUIChartView _numberOfDataPointsForSeriesAtIndex:]
+0x193e11538  __TEXT,__text  -[FIUIChartView _dataPointAtIndex:forSeriesAtIndex:]
+0x193e115a0  __TEXT,__text  -[FIUIChartView _dataPointsForSeriesAtIndex:]
+0x193e11634  __TEXT,__text  -[FIUIChartView _labelsForSeriesAtIndex:]
+0x193e116c8  __TEXT,__text  -[FIUIChartView numberOfDataSetsInGroup:]
+0x193e116cc  __TEXT,__text  -[FIUIChartView dataGroup:numberOfPointsInSetAtIndex:]
+0x193e116d4  __TEXT,__text  -[FIUIChartView dataGroup:pointForSetAtIndex:pointIndex:]
+0x193e116dc  __TEXT,__text  -[FIUIChartView dataGroup:dataPointsForSetAtIndex:]
+0x193e116e4  __TEXT,__text  -[FIUIChartView dataGroup:labelsForSetAtIndex:]
+0x193e116ec  __TEXT,__text  -[FIUIChartView minXValueForChartSeries:]
+0x193e11700  __TEXT,__text  -[FIUIChartView maxXValueForChartSeries:]
+0x193e11714  __TEXT,__text  -[FIUIChartView minYValueForChartSeries:]
+0x193e11728  __TEXT,__text  -[FIUIChartView maxYValueForChartSeries:]
+0x193e1173c  __TEXT,__text  -[FIUIChartView dataSource]
+0x193e11764  __TEXT,__text  -[FIUIChartView setDataSource:]
+0x193e11778  __TEXT,__text  -[FIUIChartView xAxisDescriptor]
+0x193e1178c  __TEXT,__text  -[FIUIChartView yAxisDescriptor]
+0x193e117a0  __TEXT,__text  -[FIUIChartView backgroundView]
+0x193e117b4  __TEXT,__text  -[FIUIChartView yAxisEdgeInset]
+0x193e117c8  __TEXT,__text  -[FIUIChartView setYAxisEdgeInset:]
+0x193e117dc  __TEXT,__text  -[FIUIChartView xAxisToLabelPadding]
+0x193e117f0  __TEXT,__text  -[FIUIChartView setXAxisToLabelPadding:]
+0x193e11804  __TEXT,__text  -[FIUIChartView labelsInsetChartBackground]
+0x193e11818  __TEXT,__text  -[FIUIChartView setLabelsInsetChartBackground:]
+0x193e1182c  __TEXT,__text  -[FIUIChartView xAxisLabelsShouldBaselineAlign]
+0x193e11840  __TEXT,__text  -[FIUIChartView setXAxisLabelsShouldBaselineAlign:]
+0x193e11854  __TEXT,__text  -[FIUIChartView seriesEdgeInsets]
+0x193e1186c  __TEXT,__text  -[FIUIChartView setSeriesEdgeInsets:]
+0x193e11884  __TEXT,__text  -[FIUIChartView contentBufferEdgeInsets]
+0x193e1189c  __TEXT,__text  -[FIUIChartView setContentBufferEdgeInsets:]
+0x193e118b4  __TEXT,__text  -[FIUIChartView animationDuration]
+0x193e118c8  __TEXT,__text  -[FIUIChartView setAnimationDuration:]
+0x193e118dc  __TEXT,__text  -[FIUIChartView dateInterval]
+0x193e118f0  __TEXT,__text  -[FIUIChartView minYValue]
+0x193e11904  __TEXT,__text  -[FIUIChartView setMinYValue:]
+0x193e11910  __TEXT,__text  -[FIUIChartView maxYValue]
+0x193e11924  __TEXT,__text  -[FIUIChartView setMaxYValue:]
+0x193e11930  __TEXT,__text  -[FIUIChartView highlightedYValue]
+0x193e11944  __TEXT,__text  -[FIUIChartView setHighlightedYValue:]
+0x193e11950  __TEXT,__text  -[FIUIChartView .cxx_destruct]
+0x193e11a84  __TEXT,__text  -[FIUIAnimatingTwoLabelView initWithFrame:]
+0x193e11b14  __TEXT,__text  -[FIUIAnimatingTwoLabelView initWithFrame:mainLabel:secondaryLabel:]
+0x193e11c50  __TEXT,__text  -[FIUIAnimatingTwoLabelView setFrame:]
+0x193e11c9c  __TEXT,__text  -[FIUIAnimatingTwoLabelView layoutSubviews]
+0x193e11d4c  __TEXT,__text  -[FIUIAnimatingTwoLabelView sizeThatFits:]
+0x193e11f48  __TEXT,__text  -[FIUIAnimatingTwoLabelView _frameAboveBounds]
+0x193e11fb4  __TEXT,__text  -[FIUIAnimatingTwoLabelView _frameBelowBounds]
+0x193e12020  __TEXT,__text  -[FIUIAnimatingTwoLabelView visibleLabel]
+0x193e12034  __TEXT,__text  -[FIUIAnimatingTwoLabelView showMainLabelAnimated:]
+0x193e12168  __TEXT,__text  ___51-[FIUIAnimatingTwoLabelView showMainLabelAnimated:]_block_invoke
+0x193e121fc  __TEXT,__text  ___51-[FIUIAnimatingTwoLabelView showMainLabelAnimated:]_block_invoke_2
+0x193e12204  __TEXT,__text  -[FIUIAnimatingTwoLabelView showSecondaryLabelAnimated:]
+0x193e12338  __TEXT,__text  ___56-[FIUIAnimatingTwoLabelView showSecondaryLabelAnimated:]_block_invoke
+0x193e123cc  __TEXT,__text  ___56-[FIUIAnimatingTwoLabelView showSecondaryLabelAnimated:]_block_invoke_2
+0x193e123d4  __TEXT,__text  -[FIUIAnimatingTwoLabelView _updateHidden]
+0x193e12458  __TEXT,__text  -[FIUIAnimatingTwoLabelView applyFont:]
+0x193e124d0  __TEXT,__text  -[FIUIAnimatingTwoLabelView mainLabel]
+0x193e124e4  __TEXT,__text  -[FIUIAnimatingTwoLabelView setMainLabel:]
+0x193e124f8  __TEXT,__text  -[FIUIAnimatingTwoLabelView secondaryLabel]
+0x193e1250c  __TEXT,__text  -[FIUIAnimatingTwoLabelView setSecondaryLabel:]
+0x193e12520  __TEXT,__text  -[FIUIAnimatingTwoLabelView .cxx_destruct]
+0x193e1257c  __TEXT,__text  -[FIUIChartDashedBackgroundView initWithFrame:]
+0x193e125c8  __TEXT,__text  -[FIUIChartDashedBackgroundView setShouldCenterLines:]
+0x193e125dc  __TEXT,__text  -[FIUIChartDashedBackgroundView setNumLines:]
+0x193e125f0  __TEXT,__text  -[FIUIChartDashedBackgroundView _updateLinePositions]
+0x193e126f0  __TEXT,__text  -[FIUIChartDashedBackgroundView setDirection:]
+0x193e12704  __TEXT,__text  -[FIUIChartDashedBackgroundView drawLine:rect:context:]
+0x193e12844  __TEXT,__text  -[FIUIChartDashedBackgroundView drawRect:]
+0x193e12b34  __TEXT,__text  -[FIUIChartDashedBackgroundView numLines]
+0x193e12b48  __TEXT,__text  -[FIUIChartDashedBackgroundView shouldCenterLines]
+0x193e12b5c  __TEXT,__text  -[FIUIChartDashedBackgroundView color]
+0x193e12b70  __TEXT,__text  -[FIUIChartDashedBackgroundView setColor:]
+0x193e12b84  __TEXT,__text  -[FIUIChartDashedBackgroundView direction]
+0x193e12b98  __TEXT,__text  -[FIUIChartDashedBackgroundView lineType]
+0x193e12bac  __TEXT,__text  -[FIUIChartDashedBackgroundView setLineType:]
+0x193e12bc0  __TEXT,__text  -[FIUIChartDashedBackgroundView .cxx_destruct]
+0x193e12c08  __TEXT,__text  -[FIUIChartMultiDashedBackgroundView initWithFrame:]
+0x193e12ce8  __TEXT,__text  -[FIUIChartMultiDashedBackgroundView layoutSubviews]
+0x193e12df0  __TEXT,__text  -[FIUIChartMultiDashedBackgroundView _setNeedsRegenerateBackgroundImage]
+0x193e12e04  __TEXT,__text  -[FIUIChartMultiDashedBackgroundView setBackgroundIsTransparent:]
+0x193e12e54  __TEXT,__text  -[FIUIChartMultiDashedBackgroundView setNumLines:]
+0x193e12e68  __TEXT,__text  -[FIUIChartMultiDashedBackgroundView setSublineInterval:]
+0x193e12e7c  __TEXT,__text  -[FIUIChartMultiDashedBackgroundView setSublineInset:]
+0x193e12e90  __TEXT,__text  -[FIUIChartMultiDashedBackgroundView _stretchableLinesPatternImage]
+0x193e130ac  __TEXT,__text  +[FIUIChartMultiDashedBackgroundView calculateRoundedLinePositionsForTotalWidth:lineWidth:numberOfLines:roundedInView:]
+0x193e1316c  __TEXT,__text  -[FIUIChartMultiDashedBackgroundView lineWidth]
+0x193e13180  __TEXT,__text  -[FIUIChartMultiDashedBackgroundView setLineWidth:]
+0x193e13194  __TEXT,__text  -[FIUIChartMultiDashedBackgroundView sublineInset]
+0x193e131a8  __TEXT,__text  -[FIUIChartMultiDashedBackgroundView numLines]
+0x193e131bc  __TEXT,__text  -[FIUIChartMultiDashedBackgroundView sublineInterval]
+0x193e131d0  __TEXT,__text  -[FIUIChartMultiDashedBackgroundView backgroundIsTransparent]
+0x193e131e4  __TEXT,__text  -[FIUIChartMultiDashedBackgroundView .cxx_destruct]
+0x193e13240  __TEXT,__text  -[FIUIChartDataSet description]
+0x193e13248  __TEXT,__text  -[FIUIChartDataSet maxYValue]
+0x193e13384  __TEXT,__text  -[FIUIChartDataSet minYValue]
+0x193e134c0  __TEXT,__text  -[FIUIChartDataSet maxXValue]
+0x193e135f8  __TEXT,__text  -[FIUIChartDataSet minXValue]
+0x193e13730  __TEXT,__text  -[FIUIChartDataSet points]
+0x193e13738  __TEXT,__text  -[FIUIChartDataSet labelsForSet]
+0x193e13740  __TEXT,__text  -[FIUIChartDataSet reloadData]
+0x193e13864  __TEXT,__text  -[FIUIChartDataSet dataSource]
+0x193e13884  __TEXT,__text  -[FIUIChartDataSet setDataSource:]
+0x193e13890  __TEXT,__text  -[FIUIChartDataSet tag]
+0x193e13898  __TEXT,__text  -[FIUIChartDataSet setTag:]
+0x193e138a0  __TEXT,__text  -[FIUIChartDataSet .cxx_destruct]
+0x193e138e0  __TEXT,__text  +[FIUIHostingAreaLayoutView viewHostingView:]
+0x193e13940  __TEXT,__text  -[FIUIHostingAreaLayoutView translatesAutoresizingMaskIntoConstraints]
+0x193e13948  __TEXT,__text  -[FIUIHostingAreaLayoutView setHostedView:]
+0x193e13b74  __TEXT,__text  -[FIUIHostingAreaLayoutView intrinsicContentSize]
+0x193e13be0  __TEXT,__text  -[FIUIHostingAreaLayoutView hostedView]
+0x193e13bf4  __TEXT,__text  -[FIUIHostingAreaLayoutView .cxx_destruct]
+0x193e14414  __TEXT,__text  _getCNContactFormatterClass
+0x193e14590  __TEXT,__text  ___FIUIEdgeInsetsForDesiredButtonFrame_block_invoke
+0x193e15384  __TEXT,__text  ___FIUIUserHasExistingSampleOfTypesPassingFilter_block_invoke
+0x193e15394  __TEXT,__text  ___FIUIUserHasExistingSampleOfTypesPassingFilter_block_invoke_2
+0x193e15424  __TEXT,__text  ___FIUIUserHasExistingSampleOfTypes_block_invoke
+0x193e15648  __TEXT,__text  ___FIUIUserHasExistingExerciseAndStandGoals_block_invoke
+0x193e158a4  __TEXT,__text  ___FIUIUserHasExistingPreKincaidMoveGoal_block_invoke
+0x193e15b84  __TEXT,__text  ___Block_byref_object_copy_
+0x193e15b94  __TEXT,__text  ___Block_byref_object_dispose_
+0x193e15b9c  __TEXT,__text  ___FIUIHealthStoreForDevice_block_invoke
+0x193e16078  __TEXT,__text  ___FIUICircularGradientImage_block_invoke
+0x193e16554  __TEXT,__text  ___FIUIColorForCurrentContrastMode_block_invoke
+0x193e1678c  __TEXT,__text  ___getCMCalorieUserInfoClass_block_invoke
+0x193e167e4  __TEXT,__text  _CoreMotionLibrary
+0x193e168e0  __TEXT,__text  ___CoreMotionLibraryCore_block_invoke
+0x193e16954  __TEXT,__text  ___getCMNatalimeterClass_block_invoke
+0x193e169ac  __TEXT,__text  ___getCNContactStoreClass_block_invoke
+0x193e16a04  __TEXT,__text  _ContactsLibrary
+0x193e16b04  __TEXT,__text  ___ContactsLibraryCore_block_invoke
+0x193e16b78  __TEXT,__text  ___getCNContactFormatterClass_block_invoke
+0x193e16bd0  __TEXT,__text  ___getCNContactNicknameKeySymbolLoc_block_invoke
+0x193e16c20  __TEXT,__text  ___getCNContactGivenNameKeySymbolLoc_block_invoke
+0x193e16c70  __TEXT,__text  ___getCNContactEmailAddressesKeySymbolLoc_block_invoke
+0x193e16cc0  __TEXT,__text  ___getCNContactPhoneNumbersKeySymbolLoc_block_invoke
+0x193e16d10  __TEXT,__text  ___getIntlUtilityClass_block_invoke
+0x193e16e54  __TEXT,__text  ___IntlPreferencesLibraryCore_block_invoke
+0x193e16ec8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193e16ed8  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193e16ee8  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193e16ee8  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193e16efc  __TEXT,__text  -[FIUIChartUniformBarSeries initWithFrame:]
+0x193e16fb0  __TEXT,__text  -[FIUIChartUniformBarSeries dealloc]
+0x193e17008  __TEXT,__text  -[FIUIChartUniformBarSeries setMinDate:]
+0x193e1701c  __TEXT,__text  -[FIUIChartUniformBarSeries setBarWidth:]
+0x193e17030  __TEXT,__text  -[FIUIChartUniformBarSeries setBarSpacing:]
+0x193e17044  __TEXT,__text  -[FIUIChartUniformBarSeries setRoundedCornerRadius:]
+0x193e17058  __TEXT,__text  -[FIUIChartUniformBarSeries setBarGradient:]
+0x193e170ac  __TEXT,__text  -[FIUIChartUniformBarSeries layoutSubviews]
+0x193e1712c  __TEXT,__text  -[FIUIChartUniformBarSeries xValueForPointFromChartPoint:]
+0x193e17290  __TEXT,__text  -[FIUIChartUniformBarSeries yValueForPointFromChartPointValue:]
+0x193e17298  __TEXT,__text  -[FIUIChartUniformBarSeries drawLayer:inContext:]
+0x193e177b0  __TEXT,__text  -[FIUIChartUniformBarSeries minDate]
+0x193e177c4  __TEXT,__text  -[FIUIChartUniformBarSeries barWidth]
+0x193e177d8  __TEXT,__text  -[FIUIChartUniformBarSeries barSpacing]
+0x193e177ec  __TEXT,__text  -[FIUIChartUniformBarSeries roundedCornerRadius]
+0x193e17800  __TEXT,__text  -[FIUIChartUniformBarSeries barGradient]
+0x193e17814  __TEXT,__text  -[FIUIChartUniformBarSeries plotPoints]
+0x193e17828  __TEXT,__text  -[FIUIChartUniformBarSeries setPlotPoints:]
+0x193e1783c  __TEXT,__text  -[FIUIChartUniformBarSeries .cxx_destruct]
+0x193e178f8  __TEXT,__text  +[FIUIWorkoutSummaryColoredDetailTableViewCell rowHeightWithSecondMetric]
+0x193e1792c  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell setLineHidden:]
+0x193e17940  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell showBackgroundButton]
+0x193e17954  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell customAccessoryButton]
+0x193e17968  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell optionalButtonView]
+0x193e1797c  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell setOptionalButtonView:]
+0x193e17990  __TEXT,__text  -[FIUIWorkoutSummaryColoredDetailTableViewCell .cxx_destruct]
+0x193e17ab4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193e17ac8  __TEXT,__text  -[FIUIPushyLabelCharacter sourceText]
+0x193e17ad4  __TEXT,__text  -[FIUIPushyLabelCharacter setSourceText:]
+0x193e17adc  __TEXT,__text  -[FIUIPushyLabelCharacter renderedView]
+0x193e17ae8  __TEXT,__text  -[FIUIPushyLabelCharacter setRenderedView:]
+0x193e17af0  __TEXT,__text  -[FIUIPushyLabelCharacter .cxx_destruct]
+0x193e17b28  __TEXT,__text  -[FIUIPushyLabelView initWithFrame:]
+0x193e17b8c  __TEXT,__text  -[FIUIPushyLabelView sizeThatFits:]
+0x193e17d18  __TEXT,__text  -[FIUIPushyLabelView setFrame:]
+0x193e17ec8  __TEXT,__text  -[FIUIPushyLabelView sizeToFitAttributedText:]
+0x193e17f3c  __TEXT,__text  -[FIUIPushyLabelView setAttributedTextUnanimated:]
+0x193e17ff8  __TEXT,__text  -[FIUIPushyLabelView pushToAttributedText:direction:perCharacter:]
+0x193e183ac  __TEXT,__text  ___66-[FIUIPushyLabelView pushToAttributedText:direction:perCharacter:]_block_invoke
+0x193e183bc  __TEXT,__text  ___66-[FIUIPushyLabelView pushToAttributedText:direction:perCharacter:]_block_invoke_2
+0x193e18538  __TEXT,__text  -[FIUIPushyLabelView _processPendingStringIfNeeded]
+0x193e18618  __TEXT,__text  -[FIUIPushyLabelView currentAttributedText]
+0x193e1862c  __TEXT,__text  -[FIUIPushyLabelView _setCurrentSnapshotCharacters:]
+0x193e18804  __TEXT,__text  -[FIUIPushyLabelView _setIncomingSnapshotCharacters:]
+0x193e189dc  __TEXT,__text  -[FIUIPushyLabelView _swapCurrentSnapshotCharacters:forIncomingCharacters:]
+0x193e18a60  __TEXT,__text  -[FIUIPushyLabelView _layoutForPushStartWithDirection:]
+0x193e18c78  __TEXT,__text  -[FIUIPushyLabelView _layoutViewsAtIndex:forPushEndWithDirection:]
+0x193e18dc4  __TEXT,__text  -[FIUIPushyLabelView _snapshotCharactersFromAttributedText:perCharacter:]
+0x193e190f0  __TEXT,__text  -[FIUIPushyLabelView .cxx_destruct]
+0x193e19160  __TEXT,__text  -[FIUIValueAdjustmentButtonController setIncrementButton:decrementButton:]
+0x193e19294  __TEXT,__text  -[FIUIValueAdjustmentButtonController _plusMinusButtonTouchDown:]
+0x193e1932c  __TEXT,__text  -[FIUIValueAdjustmentButtonController _plusMinusButtonTouchUpInside:]
+0x193e1938c  __TEXT,__text  -[FIUIValueAdjustmentButtonController _plusMinusButtonTouchCancel:]
+0x193e193c8  __TEXT,__text  -[FIUIValueAdjustmentButtonController _plusMinusActionTimerDidFire:]
+0x193e19414  __TEXT,__text  -[FIUIValueAdjustmentButtonController _performPlusMinusActionWithButton:]
+0x193e19540  __TEXT,__text  -[FIUIValueAdjustmentButtonController _performPlusMinusActionWithIndexTranslationForButton:]
+0x193e19624  __TEXT,__text  -[FIUIValueAdjustmentButtonController _incrementRepeatCount]
+0x193e196a4  __TEXT,__text  -[FIUIValueAdjustmentButtonController setValue:]
+0x193e19740  __TEXT,__text  -[FIUIValueAdjustmentButtonController _notifyValueChanged]
+0x193e197b0  __TEXT,__text  -[FIUIValueAdjustmentButtonController _updatePlusMinusButtonStates]
+0x193e19864  __TEXT,__text  -[FIUIValueAdjustmentButtonController _updateButton:forPressedState:]
+0x193e198f0  __TEXT,__text  -[FIUIValueAdjustmentButtonController value]
+0x193e198f8  __TEXT,__text  -[FIUIValueAdjustmentButtonController valueStepIncremement]
+0x193e19900  __TEXT,__text  -[FIUIValueAdjustmentButtonController setValueStepIncremement:]
+0x193e19908  __TEXT,__text  -[FIUIValueAdjustmentButtonController minumumStepValueIncrement]
+0x193e19910  __TEXT,__text  -[FIUIValueAdjustmentButtonController setMinumumStepValueIncrement:]
+0x193e19918  __TEXT,__text  -[FIUIValueAdjustmentButtonController maxValue]
+0x193e19920  __TEXT,__text  -[FIUIValueAdjustmentButtonController setMaxValue:]
+0x193e19928  __TEXT,__text  -[FIUIValueAdjustmentButtonController minValue]
+0x193e19930  __TEXT,__text  -[FIUIValueAdjustmentButtonController setMinValue:]
+0x193e19938  __TEXT,__text  -[FIUIValueAdjustmentButtonController valueUpdateHandler]
+0x193e19940  __TEXT,__text  -[FIUIValueAdjustmentButtonController setValueUpdateHandler:]
+0x193e19948  __TEXT,__text  -[FIUIValueAdjustmentButtonController lapLengthIndexTranslator]
+0x193e19950  __TEXT,__text  -[FIUIValueAdjustmentButtonController setLapLengthIndexTranslator:]
+0x193e1995c  __TEXT,__text  -[FIUIValueAdjustmentButtonController buttonStateUpdateHandler]
+0x193e19964  __TEXT,__text  -[FIUIValueAdjustmentButtonController setButtonStateUpdateHandler:]
+0x193e1996c  __TEXT,__text  -[FIUIValueAdjustmentButtonController didUserUpdatevalue]
+0x193e19974  __TEXT,__text  -[FIUIValueAdjustmentButtonController setDidUserUpdatevalue:]
+0x193e1997c  __TEXT,__text  -[FIUIValueAdjustmentButtonController incrementButton]
+0x193e1999c  __TEXT,__text  -[FIUIValueAdjustmentButtonController decrementButton]
+0x193e199bc  __TEXT,__text  -[FIUIValueAdjustmentButtonController .cxx_destruct]
+0x193e19a1c  __TEXT,__text  -[FIUIAppDisabledViewController initWithAppName:disabledReason:]
+0x193e19dc0  __TEXT,__text  -[FIUIAppDisabledViewController viewDidLoad]
+0x193e19e2c  __TEXT,__text  -[FIUIAppDisabledViewController viewWillLayoutSubviews]
+0x193e19f30  __TEXT,__text  -[FIUIAppDisabledViewController .cxx_destruct]
+0x193e1a07c  __TEXT,__text  +[FIUIBluetoothSensorLookup didUpdateBTSensorSeenStatus]
+0x193e1a088  __TEXT,__text  +[FIUIBluetoothSensorLookup hasHadPairedCyclingSpeedSensors]
+0x193e1a094  __TEXT,__text  +[FIUIBluetoothSensorLookup hasHadPairedCyclingCadenceSensors]
+0x193e1a0a0  __TEXT,__text  +[FIUIBluetoothSensorLookup hasHadPairedCyclingPowerSensors]
+0x193e1a0ac  __TEXT,__text  -[NSMutableAttributedString(FIUISizing) scaleFontSizeByAmount:minimumFontSize:]
+0x193e1a1bc  __TEXT,__text  ___79-[NSMutableAttributedString(FIUISizing) scaleFontSizeByAmount:minimumFontSize:]_block_invoke
+0x193e1a290  __TEXT,__text  -[NSMutableAttributedString(FIUISizing) scaleNumericAttribute:byAmount:]
+0x193e1a3c0  __TEXT,__text  ___72-[NSMutableAttributedString(FIUISizing) scaleNumericAttribute:byAmount:]_block_invoke
+0x193e1a47c  __TEXT,__text  -[NSMutableAttributedString(FIUISizing) scaleToFitWidth:]
+0x193e1a4f0  __TEXT,__text  -[NSMutableAttributedString(FIUISizing) scaleFontAndKerningToFitSize:minimumFontSize:minimumKerning:stillDidntFit:]
+0x193e1a640  __TEXT,__text  +[FIUIShapeView layerClass]
+0x193e1a64c  __TEXT,__text  -[FIUIShapeView initWithFrame:]
+0x193e1a684  __TEXT,__text  -[FIUIShapeView setPath:]
+0x193e1a6ec  __TEXT,__text  -[FIUIShapeView setFillColor:]
+0x193e1a754  __TEXT,__text  -[FIUIShapeView setStrokeColor:]
+0x193e1a7bc  __TEXT,__text  -[FIUIShapeView setLineWidth:]
+0x193e1a800  __TEXT,__text  -[FIUIShapeView setStrokeEnd:]
+0x193e1a844  __TEXT,__text  -[FIUIShapeView shapeLayer]
+0x193e1a848  __TEXT,__text  -[FIUIShapeView _shouldAnimatePropertyWithKey:]
+0x193e1ab70  __TEXT,__text  ___FIUIStaticWorkoutIconImage_block_invoke
+0x193e1abb8  __TEXT,__text  +[FIUIActivityDataModel lockedModel]
+0x193e1abe4  __TEXT,__text  +[FIUIActivityDataModel idealizedModel]
+0x193e1ac1c  __TEXT,__text  ___39+[FIUIActivityDataModel idealizedModel]_block_invoke
+0x193e1ad14  __TEXT,__text  -[FIUIActivityDataModel description]
+0x193e1ad18  __TEXT,__text  -[FIUIActivityDataModel debugDescription]
+0x193e1ae88  __TEXT,__text  __kilocalorieUnit
+0x193e1aec0  __TEXT,__text  -[FIUIActivityDataModel userHasDoneActivitySetup]
+0x193e1af40  __TEXT,__text  -[FIUIActivityDataModel activeEnergyCompletionPercentage]
+0x193e1b0e4  __TEXT,__text  -[FIUIActivityDataModel appleMoveTimeCompletionPercentage]
+0x193e1b240  __TEXT,__text  -[FIUIActivityDataModel appleExerciseTimeCompletionPercentage]
+0x193e1b38c  __TEXT,__text  -[FIUIActivityDataModel appleStandHourCompletionPercentage]
+0x193e1b434  __TEXT,__text  -[FIUIActivityDataModel copyWithZone:]
+0x193e1b51c  __TEXT,__text  +[FIUIActivityDataModel formattingManager]
+0x193e1b554  __TEXT,__text  ___42+[FIUIActivityDataModel formattingManager]_block_invoke
+0x193e1b5d4  __TEXT,__text  -[FIUIActivityDataModel loggingString]
+0x193e1b6cc  __TEXT,__text  -[FIUIActivityDataModel date]
+0x193e1b6d4  __TEXT,__text  -[FIUIActivityDataModel setDate:]
+0x193e1b6e0  __TEXT,__text  -[FIUIActivityDataModel activityMoveMode]
+0x193e1b6e8  __TEXT,__text  -[FIUIActivityDataModel setActivityMoveMode:]
+0x193e1b6f0  __TEXT,__text  -[FIUIActivityDataModel activeEnergyTotal]
+0x193e1b6f8  __TEXT,__text  -[FIUIActivityDataModel setActiveEnergyTotal:]
+0x193e1b704  __TEXT,__text  -[FIUIActivityDataModel activeEnergyGoal]
+0x193e1b70c  __TEXT,__text  -[FIUIActivityDataModel setActiveEnergyGoal:]
+0x193e1b718  __TEXT,__text  -[FIUIActivityDataModel appleMoveTimeTotal]
+0x193e1b720  __TEXT,__text  -[FIUIActivityDataModel setAppleMoveTimeTotal:]
+0x193e1b728  __TEXT,__text  -[FIUIActivityDataModel appleMoveTimeGoal]
+0x193e1b730  __TEXT,__text  -[FIUIActivityDataModel setAppleMoveTimeGoal:]
+0x193e1b738  __TEXT,__text  -[FIUIActivityDataModel appleExerciseTimeTotal]
+0x193e1b740  __TEXT,__text  -[FIUIActivityDataModel setAppleExerciseTimeTotal:]
+0x193e1b748  __TEXT,__text  -[FIUIActivityDataModel appleExerciseTimeGoal]
+0x193e1b750  __TEXT,__text  -[FIUIActivityDataModel setAppleExerciseTimeGoal:]
+0x193e1b758  __TEXT,__text  -[FIUIActivityDataModel wheelchairUser]
+0x193e1b760  __TEXT,__text  -[FIUIActivityDataModel setWheelchairUser:]
+0x193e1b768  __TEXT,__text  -[FIUIActivityDataModel appleStandHoursTotal]
+0x193e1b770  __TEXT,__text  -[FIUIActivityDataModel setAppleStandHoursTotal:]
+0x193e1b778  __TEXT,__text  -[FIUIActivityDataModel appleStandHoursGoal]
+0x193e1b780  __TEXT,__text  -[FIUIActivityDataModel setAppleStandHoursGoal:]
+0x193e1b788  __TEXT,__text  -[FIUIActivityDataModel paused]
+0x193e1b790  __TEXT,__text  -[FIUIActivityDataModel setPaused:]
+0x193e1b798  __TEXT,__text  -[FIUIActivityDataModel activeEnergyChartData]
+0x193e1b7a0  __TEXT,__text  -[FIUIActivityDataModel setActiveEnergyChartData:]
+0x193e1b7a8  __TEXT,__text  -[FIUIActivityDataModel appleMoveTimeChartData]
+0x193e1b7b0  __TEXT,__text  -[FIUIActivityDataModel setAppleMoveTimeChartData:]
+0x193e1b7b8  __TEXT,__text  -[FIUIActivityDataModel appleExerciseTimeChartData]
+0x193e1b7c0  __TEXT,__text  -[FIUIActivityDataModel setAppleExerciseTimeChartData:]
+0x193e1b7c8  __TEXT,__text  -[FIUIActivityDataModel appleStandHourChartData]
+0x193e1b7d0  __TEXT,__text  -[FIUIActivityDataModel setAppleStandHourChartData:]
+0x193e1b7d8  __TEXT,__text  -[FIUIActivityDataModel databaseLoading]
+0x193e1b7e0  __TEXT,__text  -[FIUIActivityDataModel setDatabaseLoading:]
+0x193e1b7e8  __TEXT,__text  -[FIUIActivityDataModel deviceLocked]
+0x193e1b7f0  __TEXT,__text  -[FIUIActivityDataModel areFitnessAppsRestricted]
+0x193e1b7f8  __TEXT,__text  -[FIUIActivityDataModel setAreFitnessAppsRestricted:]
+0x193e1b800  __TEXT,__text  -[FIUIActivityDataModel .cxx_destruct]
+0x193e1b874  __TEXT,__text  ____kilocalorieUnit_block_invoke
+0x193e1b8a8  __TEXT,__text  +[FIUIDeviceTypeResolver deviceTypeForDeviceClass:]
+0x193e1b968  __TEXT,__text  -[FIUIChartBackgroundView initWithFrame:]
+0x193e1b9e4  __TEXT,__text  -[FIUIChartBackgroundView sizeThatFits:]
+0x193e1b9e8  __TEXT,__text  -[FIUIChartBackgroundView lineInsets]
+0x193e1ba00  __TEXT,__text  -[FIUIChartBackgroundView setLineInsets:]
+0x193e1ba18  __TEXT,__text  -[FIUIChartHorizontalLineSeries layoutSubviews]
+0x193e1ba98  __TEXT,__text  -[FIUIChartHorizontalLineSeries drawLayer:inContext:]
+0x193e1bc98  __TEXT,__text  -[FIUIChartHorizontalLineSeries color]
+0x193e1bcac  __TEXT,__text  -[FIUIChartHorizontalLineSeries setColor:]
+0x193e1bcc0  __TEXT,__text  -[FIUIChartHorizontalLineSeries lineWidth]
+0x193e1bcd4  __TEXT,__text  -[FIUIChartHorizontalLineSeries setLineWidth:]
+0x193e1bce8  __TEXT,__text  -[FIUIChartHorizontalLineSeries sidePadding]
+0x193e1bcfc  __TEXT,__text  -[FIUIChartHorizontalLineSeries setSidePadding:]
+0x193e1bd10  __TEXT,__text  -[FIUIChartHorizontalLineSeries .cxx_destruct]
+0x193e1bd58  __TEXT,__text  +[FIUIDefaultSecondPlatterMetrics metricsForActivityType:metricsVersion:]
+0x193e1bdbc  __TEXT,__text  +[UIColor(FIUIMindfulnessColors) fiui_meditationTeal]
+0x193e1bdc0  __TEXT,__text  +[FIUIState stateWithLabel:]
+0x193e1be0c  __TEXT,__text  -[FIUIState enumerateEvents:]
+0x193e1bfd8  __TEXT,__text  -[FIUIState addChildStates:withEntryState:]
+0x193e1c118  __TEXT,__text  -[FIUIState entry]
+0x193e1c124  __TEXT,__text  -[FIUIState parentState]
+0x193e1c144  __TEXT,__text  -[FIUIState setParentState:]
+0x193e1c150  __TEXT,__text  -[FIUIState childStates]
+0x193e1c158  __TEXT,__text  -[FIUIState entryState]
+0x193e1c178  __TEXT,__text  -[FIUIState setEntryState:]
+0x193e1c184  __TEXT,__text  +[FIUIGradientView layerClass]
+0x193e1c190  __TEXT,__text  -[FIUIGradientView init]
+0x193e1c23c  __TEXT,__text  -[FIUIGradientView layoutSubviews]
+0x193e1c2a0  __TEXT,__text  -[FIUIGradientView setMask:]
+0x193e1c2b4  __TEXT,__text  -[FIUIGradientView setColors:]
+0x193e1c308  __TEXT,__text  -[FIUIGradientView setLocations:]
+0x193e1c35c  __TEXT,__text  -[FIUIGradientView gradientLayer]
+0x193e1c360  __TEXT,__text  -[FIUIGradientView .cxx_destruct]
+0x193e1c3ac  __TEXT,__text  ___FIUIDeepBreathingShouldOptimizePetalCount_block_invoke
+0x193e1cdcc  __TEXT,__text  ____FIUIImageForPetalColor_block_invoke
+0x193e1ce40  __TEXT,__text  -[FIUICompetitionLearnMoreExampleView init]
+0x193e1d134  __TEXT,__text  -[FIUICompetitionLearnMoreExampleView _ringViewOfType:withMetricColors:percentage:]
+0x193e1d220  __TEXT,__text  -[FIUICompetitionLearnMoreExampleView _ringPercentageLabelForPercentage:withMetricColors:]
+0x193e1d33c  __TEXT,__text  -[FIUICompetitionLearnMoreExampleView layoutSubviews]
+0x193e1d394  __TEXT,__text  -[FIUICompetitionLearnMoreExampleView sizeThatFits:]
+0x193e1d404  __TEXT,__text  -[FIUICompetitionLearnMoreExampleView layoutForWidth:]
+0x193e1d624  __TEXT,__text  -[FIUICompetitionLearnMoreExampleView setSeparatorViewColor:]
+0x193e1d638  __TEXT,__text  -[FIUICompetitionLearnMoreExampleView setTotalPointsLabelText:]
+0x193e1d674  __TEXT,__text  -[FIUICompetitionLearnMoreExampleView setTotalPointsLabelColor:]
+0x193e1d688  __TEXT,__text  -[FIUICompetitionLearnMoreExampleView separatorViewColor]
+0x193e1d69c  __TEXT,__text  -[FIUICompetitionLearnMoreExampleView totalPointsLabelColor]
+0x193e1d6b0  __TEXT,__text  -[FIUICompetitionLearnMoreExampleView totalPointsLabelText]
+0x193e1d6c4  __TEXT,__text  -[FIUICompetitionLearnMoreExampleView .cxx_destruct]
+0x193e1d968  __TEXT,__text  __GetModifiedFormatFromFormat
+0x193e1dd80  __TEXT,__text  ___83-[NSDateFormatter(FULocaleAndTimeZoneObserving) fu_observeTimeZoneAndLocaleChanges]_block_invoke
+0x193e1dddc  __TEXT,__text  ___83-[NSDateFormatter(FULocaleAndTimeZoneObserving) fu_observeTimeZoneAndLocaleChanges]_block_invoke_2
+0x193e1de38  __TEXT,__text  +[FIUIDateFormattingUtilities stringWithShortStyleDate:]
+0x193e1dea4  __TEXT,__text  +[FIUIDateFormattingUtilities _localizedTodayFormatterWithTemplate:]
+0x193e1e048  __TEXT,__text  +[FIUIDateFormattingUtilities stringWithEitherTodayOrLongStyleDateFromDate:]
+0x193e1e148  __TEXT,__text  ___76+[FIUIDateFormattingUtilities stringWithEitherTodayOrLongStyleDateFromDate:]_block_invoke
+0x193e1e1d8  __TEXT,__text  +[FIUIDateFormattingUtilities stringWithDayNameAndShortMonthFromDate:]
+0x193e1e2d8  __TEXT,__text  ___70+[FIUIDateFormattingUtilities stringWithDayNameAndShortMonthFromDate:]_block_invoke
+0x193e1e3b8  __TEXT,__text  +[FIUIDateFormattingUtilities stringWithDayNameAndShortMonthWithoutYearFromDate:]
+0x193e1e4b8  __TEXT,__text  ___81+[FIUIDateFormattingUtilities stringWithDayNameAndShortMonthWithoutYearFromDate:]_block_invoke
+0x193e1e598  __TEXT,__text  -[NLPredictedWorkoutActivityType uniqueIdentifier]
+0x193e1e600  __TEXT,__text  -[NLPredictedWorkoutActivityType baseMetadata]
+0x193e1e664  __TEXT,__text  -[FIUIWorkoutStatistics initWithWorkouts:]
+0x193e1e6e0  __TEXT,__text  -[FIUIWorkoutStatistics init]
+0x193e1e6fc  __TEXT,__text  -[FIUIWorkoutStatistics totalWorkoutDuration]
+0x193e1e704  __TEXT,__text  -[FIUIWorkoutStatistics averageWorkoutDuration]
+0x193e1e70c  __TEXT,__text  -[FIUIWorkoutStatistics totalActiveEnergyBurn]
+0x193e1e714  __TEXT,__text  -[FIUIWorkoutStatistics averageActiveEnergyBurn]
+0x193e1e71c  __TEXT,__text  -[FIUIWorkoutStatistics totalDistance]
+0x193e1e724  __TEXT,__text  -[FIUIWorkoutStatistics averageDistance]
+0x193e1e72c  __TEXT,__text  -[FIUIWorkoutStatistics workoutCount]
+0x193e1e734  __TEXT,__text  -[FIUIWorkoutStatistics workoutsWithEnergyBurned]
+0x193e1e73c  __TEXT,__text  -[FIUIWorkoutStatistics workoutsWithDistance]
+0x193e1e744  __TEXT,__text  -[FIUIWorkoutStatistics startOfMonth]
+0x193e1e74c  __TEXT,__text  -[FIUIWorkoutStatistics mostRecentWorkout]
+0x193e1e754  __TEXT,__text  -[FIUIWorkoutStatistics .cxx_destruct]
+0x193e1e760  __TEXT,__text  -[FIUIWorkoutStatistics(ViewModel) formattedMonth]
+0x193e1e768  __TEXT,__text  -[FIUIWorkoutStatistics(ViewModel) formattedWorkoutDurationWithFormattingManager:]
+0x193e1e7b8  __TEXT,__text  -[FIUIWorkoutStatistics(ViewModel) formattedActiveEnergyBurnWithFormattingManager:]
+0x193e1e808  __TEXT,__text  -[FIUIWorkoutStatistics(ViewModel) formattedPaceWithFormattingManager:distanceType:]
+0x193e1e868  __TEXT,__text  -[FIUIWorkoutStatistics(ViewModel) formattedTotalWorkoutDurationWithFormattingManager:]
+0x193e1e8b8  __TEXT,__text  -[FIUIWorkoutStatistics(ViewModel) formattedAverageWorkoutDurationWithFormattingManager:]
+0x193e1e908  __TEXT,__text  -[FIUIWorkoutStatistics(ViewModel) formattedTotalActiveEnergyBurnWithFormattingManager:]
+0x193e1e958  __TEXT,__text  -[FIUIWorkoutStatistics(ViewModel) formattedAverageActiveEnergyBurnWithFormattingManager:]
+0x193e1e9a8  __TEXT,__text  -[FIUIWorkoutStatistics(ViewModel) formattedDistanceWithFormattingManager:distanceType:amountType:]
+0x193e1ea10  __TEXT,__text  -[FIUIWorkoutStatistics(ViewModel) simpleWorkoutCount]
+0x193e1ea18  __TEXT,__text  +[FIUICelebrationAssetLoader celebrationMovieURLForGoalType:]
+0x193e1ea94  __TEXT,__text  +[FIUICelebrationAssetLoader celebrationMovieURLForAchievementIdentifer:]
+0x193e1eb20  __TEXT,__text  +[FIUICelebrationAssetLoader _variantCountForGoalType:]
+0x193e1eb28  __TEXT,__text  +[FIUICelebrationAssetLoader _movieNameForGoalType:variantNumber:]
+0x193e1eb7c  __TEXT,__text  +[FIUICelebrationAssetLoader _movieNameForAchievementIdentifier:variantNumber:]
+0x193e1ec50  __TEXT,__text  -[FIUIChartColor initWithThreshold:startColor:endColor:]
+0x193e1ed54  __TEXT,__text  -[FIUIChartColor initWithThreshold:color:]
+0x193e1edd0  __TEXT,__text  -[FIUIChartColor drawInRect:inContext:]
+0x193e1eef8  __TEXT,__text  -[FIUIChartColor threshold]
+0x193e1ef00  __TEXT,__text  -[FIUIChartColor setThreshold:]
+0x193e1ef48  __TEXT,__text  +[FIUIUnitManager sharedManager]
+0x193e1ef80  __TEXT,__text  ___32+[FIUIUnitManager sharedManager]_block_invoke
+0x193e1efdc  __TEXT,__text  -[FIUIUnitManager init]
+0x193e1f024  __TEXT,__text  -[FIUIUnitManager initWithUnitManager:]
+0x193e1f0dc  __TEXT,__text  -[FIUIUnitManager paceDistanceUnitForDistanceType:]
+0x193e1f0e4  __TEXT,__text  +[FIUIUnitManager quantityTypeForDistanceType:]
+0x193e1f0f0  __TEXT,__text  -[FIUIUnitManager userDistanceHKUnitForActivityType:]
+0x193e1f140  __TEXT,__text  -[FIUIUnitManager setUserDistanceUnit:forDistanceType:]
+0x193e1f148  __TEXT,__text  -[FIUIUnitManager userDistanceWalkingRunningUnit]
+0x193e1f150  __TEXT,__text  -[FIUIUnitManager userDistanceElevationUnit]
+0x193e1f158  __TEXT,__text  -[FIUIUnitManager userDistanceElevationHKUnit]
+0x193e1f19c  __TEXT,__text  -[FIUIUnitManager userDistanceCrossCountrySkiingHKUnit]
+0x193e1f1a4  __TEXT,__text  -[FIUIUnitManager userDistanceDownhillSnowSportsHKUnit]
+0x193e1f1ac  __TEXT,__text  -[FIUIUnitManager userDistancePaddleSportsHKUnit]
+0x193e1f1b4  __TEXT,__text  -[FIUIUnitManager userDistanceRowingHKUnit]
+0x193e1f1bc  __TEXT,__text  -[FIUIUnitManager userDistanceSkatingSportsHKUnit]
+0x193e1f1c4  __TEXT,__text  -[FIUIUnitManager userLapLengthHKUnit]
+0x193e1f1cc  __TEXT,__text  -[FIUIUnitManager userDepthHKUnit]
+0x193e1f1d4  __TEXT,__text  -[FIUIUnitManager setUserDepthHKUnit:]
+0x193e1f1dc  __TEXT,__text  -[FIUIUnitManager userWaterTemperatureHKUnit]
+0x193e1f1e4  __TEXT,__text  -[FIUIUnitManager setUserWaterTemperatureHKUnit:]
+0x193e1f1ec  __TEXT,__text  -[FIUIUnitManager setUserDistanceWalkingRunningUnit:]
+0x193e1f1f4  __TEXT,__text  -[FIUIUnitManager userDistanceCyclingUnit]
+0x193e1f1fc  __TEXT,__text  -[FIUIUnitManager userDistanceCyclingHKUnit]
+0x193e1f204  __TEXT,__text  -[FIUIUnitManager setUserDistanceCyclingUnit:]
+0x193e1f20c  __TEXT,__text  -[FIUIUnitManager paceWithDistance:overDuration:paceFormat:distanceType:]
+0x193e1f214  __TEXT,__text  -[FIUIUnitManager distanceInMetersForDistanceInUserUnit:distanceType:]
+0x193e1f21c  __TEXT,__text  -[FIUIUnitManager distanceInUserDistanceUnitForDistanceInMeters:distanceType:]
+0x193e1f224  __TEXT,__text  -[FIUIUnitManager distanceInDistanceUnit:forDistanceInMeters:]
+0x193e1f22c  __TEXT,__text  -[FIUIUnitManager setUserActiveEnergyBurnedUnit:]
+0x193e1f234  __TEXT,__text  -[FIUIUnitManager userBasalEnergyBurnedUnit]
+0x193e1f23c  __TEXT,__text  -[FIUIUnitManager setUserBasalEnergyBurnedUnit:]
+0x193e1f244  __TEXT,__text  -[FIUIUnitManager setPreferredUnitsForTesting:]
+0x193e1f24c  __TEXT,__text  -[FIUIUnitManager unitManager]
+0x193e1f254  __TEXT,__text  -[FIUIUnitManager .cxx_destruct]
+0x193e1f31c  __TEXT,__text  ___42-[HKWorkout(FitnessUI) fiui_eventsOfType:]_block_invoke
+0x193e1f350  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_numberOfEventsOfType:]
+0x193e1f388  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_keyValueSummary]
+0x193e1f740  __TEXT,__text  __KeyValueStringFromDictionary
+0x193e1f864  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_hasWeatherData]
+0x193e1f940  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_hasNonZeroElevationGain]
+0x193e1f988  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_elevationGain]
+0x193e1fa10  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_duration]
+0x193e1faac  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_totalDistance]
+0x193e1fab0  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_totalStepCount]
+0x193e1fb34  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_hasAverageCadence]
+0x193e1fc3c  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_averageCadence]
+0x193e1fdf4  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_hasAveragePower]
+0x193e1fe28  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_averagePower]
+0x193e1fecc  __TEXT,__text  -[HKWorkout(FitnessUI) _averagePowerQuantity]
+0x193e1ffec  __TEXT,__text  -[HKWorkout(FitnessUI) fiui_averagePace]
+```
+First 1,000 of 2,238.
+

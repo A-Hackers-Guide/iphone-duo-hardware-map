@@ -1,0 +1,18 @@
+# `SBMedusaDecoratedDeviceApplicationSceneViewControllerDelegate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 8 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[SBMedusaDecoratedDeviceApplicationSceneViewControllerDelegate medusaDecoratedApplicationSceneViewController:didChangePreferredStatusBarAxis:withAnimationParameters:];
+-[SBMedusaDecoratedDeviceApplicationSceneViewControllerDelegate medusaDecoratedApplicationSceneViewController:didUpdateStatusBarHidden:withAnimation:];
+-[SBMedusaDecoratedDeviceApplicationSceneViewControllerDelegate medusaDecoratedDeviceApplicationSceneViewController:statusBarDoubleTapped:];
+-[SBMedusaDecoratedDeviceApplicationSceneViewControllerDelegate medusaDecoratedDeviceApplicationSceneViewController:statusBarTapped:tapActionType:];
+-[SBMedusaDecoratedDeviceApplicationSceneViewControllerDelegate medusaDecoratedDeviceApplicationSceneViewController:topAffordanceActionPerformed:];
+-[SBMedusaDecoratedDeviceApplicationSceneViewControllerDelegate medusaDecoratedDeviceApplicationSceneViewControllerDidUpdateHomeAffordanceSupportedOrientations:];
+-[SBMedusaDecoratedDeviceApplicationSceneViewControllerDelegate windowControlsLayoutForMedusaDecoratedDeviceApplicationSceneViewController:];
+-[SBMedusaDecoratedDeviceApplicationSceneViewControllerDelegate medusaDecoratedDeviceApplicationSceneViewControllerIsInNonrotatingWindow:];
+```

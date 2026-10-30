@@ -1,0 +1,1997 @@
+# `com.apple.driver.AppleHPM`
+
+- Name: AppleHPM
+- Version: `3.4.4`
+- UUID: `128F7ADB-413C-3D6F-86AD-4415D19B9675`
+- Source version: `649.40.6.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleSMC`](com.apple.driver.AppleSMC.md) 1, [`com.apple.iokit.IOAVFamily`](com.apple.iokit.IOAVFamily.md) 1.0.0, [`com.apple.iokit.IOAccessoryManager`](com.apple.iokit.IOAccessoryManager.md) 1.0.0, [`com.apple.iokit.IODisplayPortFamily`](com.apple.iokit.IODisplayPortFamily.md) 1.0.0, [`com.apple.iokit.IOPortFamily`](com.apple.iokit.IOPortFamily.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 9.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 9.0.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 9.0.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 9.0.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0.0b1, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (1) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/nub-spmi2/spmi-hpm0`](../devicetree/root__arm-io__nub-spmi2__spmi-hpm0.md) | `AppleHPMARMSPMI` | `usbc,cbtl1702,spmi` |
+
+## IOKit personalities (23) [KC]
+
+### AppleHPMAIDType1
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleHPMAIDType1`
+- `IONameMatch`: `hpm-aid-controller`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `IOService`
+
+### AppleHPMARMSPMIType1
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleHPMARMSPMI`
+- `IONameMatch`: `usbc,spmi`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleARMSPMIDevice`
+
+### AppleHPMARMSPMIType2
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleHPMARMSPMI`
+- `IONameMatch`: `usbc,sn201202x,spmi`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleARMSPMIDevice`
+
+### AppleHPMARMSPMIType3
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleHPMARMSPMI`
+- `IONameMatch`: `usbc,cbtl1702,spmi`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleARMSPMIDevice`
+
+### AppleHPMBusController
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleHPMBusController`
+- `IONameMatch`: `usbc,manager`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleARMIICDevice`
+
+### AppleHPMBusDevice
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleHPMARMI2C`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleHPMBusDevice`
+
+### AppleHPMI2CType1
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleHPMARMI2C`
+- `IONameMatch`: `usbc,cd3215`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleARMIICDevice`
+
+### AppleHPMI2CType2
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleHPMARMI2C`
+- `IONameMatch`: `usbc,cd3217`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleARMIICDevice`
+
+### AppleHPMI2CType3
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleHPMARMI2C`
+- `IONameMatch`: `usbc,sn201202x,iic`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleARMIICDevice`
+
+### AppleHPMInterfaceType1
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleHPMInterfaceType1`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleHPMDeviceHAL`
+
+### AppleHPMInterfaceType10
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleHPMInterfaceType10`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleHPMDeviceHAL`
+
+### AppleHPMInterfaceType14
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleHPMInterfaceType14`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleHPMDeviceHAL`
+
+### AppleHPMInterfaceType15
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleHPMInterfaceType15`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleHPMDeviceHAL`
+
+### AppleHPMInterfaceType16
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleHPMInterfaceType16`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleHPMDeviceHAL`
+
+### AppleHPMInterfaceType17
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleHPMInterfaceType17`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleHPMDeviceHAL`
+
+### AppleHPMInterfaceType3
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleHPMInterfaceType3`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleHPMDeviceHAL`
+
+### AppleHPMSMCBridge
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleHPMSMCBridge`
+- `IONameMatch`: `usbc,cd3217`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleSMCInterface`
+
+### AppleTCControllerAssignableTransport
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleTCControllerAssignableTransport`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleHPMDevice`
+
+### AppleTCControllerSingleTransport
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleTCControllerSingleTransport`
+- `IONameMatch`: `hpmSingleTransport`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleARMIODevice`
+
+### AppleTCControllerType1
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleTCControllerType1`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleHPMDevice`
+
+### AppleTCControllerType10
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleTCControllerType10`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleHPMDevice`
+
+### AppleTCControllerType12
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleTCControllerType12`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleHPMDevice`
+
+### AppleTCControllerType14
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `IOClass`: `AppleTCControllerType14`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHPM`
+- `IOProviderClass`: `AppleHPMDevice`
+
+
+## C++ classes (39) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleHPM` | 0xf0 | IOService → IORegistryEntry |
+| `AppleHPMAIDType1` | 0x1c8 | IOPortAIDController → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleHPMARM` | 0x118 | AppleHPMEmbedded → AppleHPM → IOService → IORegistryEntry |
+| `AppleHPMARMI2C` | 0x140 | AppleHPMARM → AppleHPMEmbedded → AppleHPM → IOService → IORegistryEntry |
+| `AppleHPMARMSPMI` | 0x160 | AppleHPMARM → AppleHPMEmbedded → AppleHPM → IOService → IORegistryEntry |
+| `AppleHPMAsyncEventSource` | 0x58 | IOEventSource |
+| `AppleHPMBusController` | 0xb8 | IOService → IORegistryEntry |
+| `AppleHPMBusDevice` | 0x90 | IOService → IORegistryEntry |
+| `AppleHPMCommandGate` | 0x50 | IOCommandGate → IOEventSource |
+| `AppleHPMDevice` | 0x90 | IOService → IORegistryEntry |
+| `AppleHPMDeviceHAL` | 0xa0 | AppleHPMDevice → IOService → IORegistryEntry |
+| `AppleHPMDeviceHALType2` | 0xa8 | AppleHPMDeviceHAL → AppleHPMDevice → IOService → IORegistryEntry |
+| `AppleHPMDeviceHALType3` | 0xa8 | AppleHPMDeviceHAL → AppleHPMDevice → IOService → IORegistryEntry |
+| `AppleHPMDeviceHALType4` | 0xa8 | AppleHPMDeviceHAL → AppleHPMDevice → IOService → IORegistryEntry |
+| `AppleHPMDeviceHALType5` | 0xa8 | AppleHPMDeviceHALType3 → AppleHPMDeviceHAL → AppleHPMDevice → IOService → IORegistryEntry |
+| `AppleHPMEmbedded` | 0xf0 | AppleHPM → IOService → IORegistryEntry |
+| `AppleHPMInterface` | 0x1480 | AppleTCController → IOAccessoryManagerUSBC → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleHPMInterfaceType1` | 0x14a0 | AppleHPMInterface → AppleTCController → IOAccessoryManagerUSBC → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleHPMInterfaceType10` | 0x14a0 | AppleHPMInterface → AppleTCController → IOAccessoryManagerUSBC → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleHPMInterfaceType11` | 0x1498 | AppleHPMInterface → AppleTCController → IOAccessoryManagerUSBC → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleHPMInterfaceType14` | 0x14b0 | AppleHPMInterfaceType10 → AppleHPMInterface → AppleTCController → IOAccessoryManagerUSBC → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleHPMInterfaceType15` | 0x14b8 | AppleHPMInterfaceType10 → AppleHPMInterface → AppleTCController → IOAccessoryManagerUSBC → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleHPMInterfaceType16` | 0x14d0 | AppleHPMInterfaceType10 → AppleHPMInterface → AppleTCController → IOAccessoryManagerUSBC → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleHPMInterfaceType17` | 0x14c0 | AppleHPMInterfaceType10 → AppleHPMInterface → AppleTCController → IOAccessoryManagerUSBC → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleHPMInterfaceType3` | 0x14b0 | AppleHPMInterfaceType1 → AppleHPMInterface → AppleTCController → IOAccessoryManagerUSBC → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleHPMLDCM` | 0x1f8 | IOPortFeatureLDCM → IOPortFeature → IOPortFamily → IOService → IORegistryEntry |
+| `AppleHPMLDCMType2` | 0x1f8 | AppleHPMLDCM → IOPortFeatureLDCM → IOPortFeature → IOPortFamily → IOService → IORegistryEntry |
+| `AppleHPMLDCMType3` | 0x1f8 | AppleHPMLDCM → IOPortFeatureLDCM → IOPortFeature → IOPortFamily → IOService → IORegistryEntry |
+| `AppleHPMSMCBridge` | 0x110 | AppleHPMEmbedded → AppleHPM → IOService → IORegistryEntry |
+| `AppleHPMUserClient` | 0xf0 | IOUserClient → IOService → IORegistryEntry |
+| `AppleTCController` | 0x10f8 | IOAccessoryManagerUSBC → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleTCControllerAssignableTransport` | 0x10f8 | AppleTCController → IOAccessoryManagerUSBC → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleTCControllerSingleTransport` | 0x1108 | AppleTCController → IOAccessoryManagerUSBC → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleTCControllerType1` | 0x1118 | AppleTCController → IOAccessoryManagerUSBC → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleTCControllerType10` | 0x1118 | AppleTCController → IOAccessoryManagerUSBC → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleTCControllerType12` | 0x1118 | AppleTCControllerType10 → AppleTCController → IOAccessoryManagerUSBC → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleTCControllerType14` | 0x1118 | AppleTCControllerType10 → AppleTCController → IOAccessoryManagerUSBC → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleTCControllerTypeSim` | 0x10f8 | AppleTCController → IOAccessoryManagerUSBC → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleUSBCController` | 0xf10 | IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0001e858 off=0x004f1380-0x0050fbd8 addr=0xfffffe00074f5380-0xfffffe0007513bd8 r--/r--   __TEXT            
+	sz=0x0001de5d off=0x004f1a98-0x0050f8f5 addr=0xfffffe00074f5a98-0xfffffe00075138f5               __TEXT.__cstring          (CstringLiterals)
+	sz=0x000000f0 off=0x0050f900-0x0050f9f0 addr=0xfffffe0007513900-0xfffffe00075139f0               __TEXT.__const            
+	sz=0x000001e8 off=0x0050f9f0-0x0050fbd8 addr=0xfffffe00075139f0-0xfffffe0007513bd8               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x00060cac off=0x01f5cd80-0x01fbda2c addr=0xfffffe0008f60d80-0xfffffe0008fc1a2c r-x/r-x   __TEXT_EXEC       
+	sz=0x000602dc off=0x01f5cd80-0x01fbd05c addr=0xfffffe0008f60d80-0xfffffe0008fc105c          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000009d0 off=0x01fbd05c-0x01fbda2c addr=0xfffffe0008fc105c-0xfffffe0008fc1a2c          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00000fa4 off=0x0494a2b0-0x0494b254 addr=0xfffffe000b94e2b0-0xfffffe000b94f254 rw-/rw-   __DATA            
+	sz=0x00000970 off=0x0494a2b0-0x0494ac20 addr=0xfffffe000b94e2b0-0xfffffe000b94ec20               __DATA.__data             
+	sz=0x00000630 off=0x00000000-0x00000630 addr=0xfffffe000b94ec20-0xfffffe000b94f250               __DATA.__common           (Zerofill)
+	sz=0x00000004 off=0x00000000-0x00000004 addr=0xfffffe000b94f250-0xfffffe000b94f254               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00017408 off=0x010edb20-0x01104f28 addr=0xfffffe00080f1b20-0xfffffe0008108f28 rw-/rw-   __DATA_CONST      
+	sz=0x00000130 off=0x010edb20-0x010edc50 addr=0xfffffe00080f1b20-0xfffffe00080f1c50         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000130 off=0x010edc50-0x010edd80 addr=0xfffffe00080f1c50-0xfffffe00080f1d80         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00015ea8 off=0x010edd80-0x01103c28 addr=0xfffffe00080f1d80-0xfffffe0008107c28         __DATA_CONST.__const            
+	sz=0x00000cc0 off=0x01103c28-0x011048e8 addr=0xfffffe0008107c28-0xfffffe00081088e8         __DATA_CONST.__kalloc_type      
+	sz=0x000004e8 off=0x011048e8-0x01104dd0 addr=0xfffffe00081088e8-0xfffffe0008108dd0         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000140 off=0x01104dd0-0x01104f10 addr=0xfffffe0008108dd0-0xfffffe0008108f10         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000018 off=0x01104f10-0x01104f28 addr=0xfffffe0008108f10-0xfffffe0008108f28         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 354 at 0x04adc3a0
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     128F7ADB-413C-3D6F-86AD-4415D19B9675
+008: LC_SOURCE_VERSION           649.40.6.0.0
+009: LC_FUNCTION_STARTS          offset=0x004aa4230 size=0x8f0
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleHPM`
+- `CFBundleGetInfoString`: `AppleHPM version 3.4.4, Copyright © 2014-2019 Apple Inc. All rights reserved.`
+- `CFBundleIdentifier`: `com.apple.driver.AppleHPM`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleHPM`
+- `CFBundleNumericVersion`: `54820864`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `3.4.4`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `3.4.4`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2014-2019 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.8`
+- `OSBundleRequired`: `Local-Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleHPM.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198900616320`
+- `_PrelinkExecutableRelativePath`: `AppleHPM`
+- `_PrelinkExecutableSize`: `620720`
+- `_PrelinkExecutableSourceAddr`: `-2198900616320`
+- `_PrelinkKmodInfo`: `-2198828948816`
+
+## Strings (1694) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__os_log]**
+
+- `setLDCMState(%u): %d`
+- `setLDCMPin(%u): %d`
+- `Invalid LDCM test command! (testCommand: %u)`
+- `Processing LDCM test command... (testCommand: %d, value: %u)`
+- `setLDCMLiquidDetected(%u): %d`
+- `setLDCMMitigationsEnabled(%u): %d`
+- `setLDCMUserOverrideActive(%u): %d`
+
+**[__TEXT.__cstring]**
+
+- `%lldus **** AppleUSBCController<%p : %p>::updateUSB = %s\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::callPlatformFunction(0x%x) - exit called with %d\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configureUSB3PortObject(@0x%x) - USB3 added and ready\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::ldcmInterruptAction(0x%x) - Start\n\n`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `%s::%s(0x%x@0x%x): AppleTCController::initSingleHPM - Failed to get i2c provider\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::challengeCrypto(@0x%x) - HPMV1 locating function\n\n`
+- `**** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     ** requesting reprobe ** (REPROBE!)\n`
+- `%lldus DPConnection: 0x%X\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::commonStartPhase2 - Failed to create fDriverStatusInterrupt\n\n`
+- `setupDP3Client`
+- `Version`
+- `AppleTCController`
+- `iic-retry-interval-override-ms`
+- `AppleUSBCController reporting a disagreement between data role bits: status: %s vs. dataStatus: %s\n`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: requesting reprobe\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - outToken: %s\n`
+- `printConnectedTransports`
+- `setLDCMPin`
+- `AppleUSBCController reporting a USB%s connection\n`
+- `%lldus AppleUSBCController<%p>::updateCachedRegisters - BOOT mode.  Got 0x %02X %02X %02X %02X %02X %02X %02X %02X\n`
+- `AppleUSBCController::remoteWakeSafetyTimeoutGated: lock grabbed\n`
+- `createTunnelClient`
+- `hpmForcePlugUpsideDown`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::Start(@0x%x) - no interrupt source found\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setAccessoryID(@0x%x) - Start\n\n`
+- `%lldus AppleUSBCController<%p> - USB Mode: Ace is a USB Device\n`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: _powerStateACKRequested = 0x%X\n`
+- `AppleUSBCController<%p>::usbDataDetect - attempting to set orientation: 0x%X\n`
+- `AppleUSBCController<%p>::SleepThreadEntry -  ACK'ing power state change.\n`
+- `Pin Configuration`
+- `%s::%s(0x%x@0x%x): AppleTCController::start(@0x%x) - Start\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::genericStart - Failed to get dockPhandle\n\n`
+- `AppleUSBCController reporting realAccessoryID = %u\n`
+- `AppleUSBCController<%p>::challengeCrypto - wrote kIECSRegisterCommand: %s\n`
+- `%lldus !!!!! AppleUSBCController<%p>::hpmIECSCommand - had to retry as status = 0x%X (remaing retries: %u)\n`
+- `%lldus AppleUSBCController<%p>::SleepWakeThreadEntry - got lock!\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createTunnelClientCallBacks(@0x%x) - Tunnel client does not exist!\n\n`
+- `%lldus AppleUSBCController<%p : %p>::setDPConfiguration - Starting setDPConfiguration.  enabled = %s.  laneMappingIndex = %u.  laneCount = %u\n`
+- `DFUf`
+- `AppleUSBCController::configureUSBRemoteWakeup: Configuring for low speed device\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - buffer (length byte trimmed): %s\n`
+- `AppleUSBCController::challengeCrypto: function found\n`
+- `AppleHPMARM can't find AppleSMC\n`
+- `setLDCMLiquidDetected`
+- `USB Device Mode Forced`
+- `stopRoleswapTimeoutTimer`
+- `Sleeping HPM Controllers`
+- `AppleHPMDeviceHAL::setStatus - WARNING: Abnormal Status Length = 0x%x\n`
+- `AbortedSleep`
+- `** AppleUSBCController<%p> - mode = '%c%c%c%c' (looking for 'DFUf' to enable overrides)\n`
+- `-restore`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::enableOptions(0x%x) - kart already enabled\n\n`
+- `startUSBTimer`
+- `%lldus ** AppleUSBCController<%p> - mode = '%c%c%c%c' (looking for 'DFUf' to enable overrides)\n`
+- `AppleUSBCController<%p : %p>::handleAccessoryDetect - overrideDetect: %s, overrideID: %s\n`
+- `%lldus AppleUSBCController<%p> - Ace detect failure - no response\n`
+- `AppleUSBCController<%p>::PowerStateThreadEntry - done\n`
+- `function-hdmi_hpd`
+- `%s::%s(0x%x@0x%x): AppleTCController::genericStart - Failed to get interrupt provider\n\n`
+- `%lldus Port Micro UID: %s\n`
+- `**** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     status = 0x%X, updatedUSB = %s, updatedDP = %s\n`
+- `AppleUSBCController::configureUSBRemoteWakeup: enabling\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::forcePortEvaluation(@0x%x) - Start\n\n`
+- `as UFP`
+- `function-recovery_status_output`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMState(0x%x) - called with state = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::createPCIePortObject(@0x%x) - pcie is not setup\n\n`
+- `hpmOverrideRTPC`
+- `AppleHPMLDCM::start - Periodic data gathering enable = 0x%x\n`
+- `function-challenge_crypto`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType3::stopRoleswapTimeoutTimer(@0x%x) - called\n\n`
+- `AppleHPMSMCBridge<%p>::start - hpmlog boot-arg: 0x%X\n`
+- `AppleUSBCController<%p>::setPowerState -  signaling SleepWake Thread (AppleAceSystemIsSleeping) - WillAckLater\n`
+- `AppleUSBCController<%p>::challengeCrypto - wrote kAceRegisterData1: %s\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - outRspLen: %llu bytes\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setCurrentModeFlags(@0x%x) - OTA upgrade check\n\n`
+- `createDPPortObject`
+- `AppleTCControllerTypeSim`
+- `%s::%s(0x%x@0x%x): AppleTCController::genericStart(@0x%x) - IONVRAM check failed\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::initSingleHPM - interrupt-type isn't 32-byte aligned no interrupts at all.\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setPowerState(@0x%x) - Status != Success, setPowerStateHPM failed!\n\n`
+- `%lldus AppleUSBCController::challengeCrypto: CRYm took approx %u msecs to complete\n`
+- `AppleUSBCController<%p>::usbDataDetect - error writing kAceRegisterData1 (status: 0x%X)\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::processInterruptEvents(@0x%x) - Not notifying drivers of state, fRestore = 0x%x and interruptCountAppLoaded = 0x%x\n\n`
+- `execute4Cc`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType3::roleswapTimeoutCallback - swap waited, retrying\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType10::forcePortEvaluation(@0x%x) - Defer failed, interrupts and messages may not have been sent\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::stopAnalyticsTimer(@0x%x) - called\n\n`
+- `%lldus AppleUSBCController<%p> - DFUf does not claim UFP dataRole in dataStatus\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::challengeCrypto(@0x%x) - HPMV1 function located\n\n`
+- `IOTBTTunnelClientInterfaceManager`
+- `UUID`
+- `%s::%s(0x%x@0x%x): AppleTCController::execute4Cc(@0x%x) - 4cc = %s\n\n`
+- `AppleTCController::resolvePHandle - failed after service matching\n`
+- `AppleUSBCController<%p : %p>::setDPConfiguration - Starting setDPConfiguration.  enabled = %s.  laneMappingIndex = %u.  laneCount = %u\n`
+- `AppleUSBCController::configureUSBRemoteWakeup: requesting reprobe\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - got lock!\n`
+- `-hpmForceAllowUSB3`
+- `Product ID`
+- `sendDpStatusUpdates`
+- `site.AppleHPMDeviceHAL`
+- `AppleHPMSMCBridge<%p>::start - hpmI2CRetries boot-arg: %u ms\n`
+- `%lldus ** AppleUSBCController<%p> - _isRestoreOS: %s\n`
+- `%lldus AppleUSBCController<%p : %p>::setDPConfiguration - setPower got error abort: 0x%X\n`
+- `AppleUSBCController<%p> - USB Mode: Forced Disconnected (SPS != AppleAceHWMaxPowerState)\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::hpmInterruptAction(@0x%x) - Interrupt Recieved\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setPinConfiguration(@0x%x) - No pin config set, no data connection\n\n`
+- `sUFC`
+- `FALSE`
+- `AppleUSBCController<%p> - pollTimeoutGated: cancelling timeout (if it was armed)\n`
+- `Last Read Data Status Register`
+- `Ace reports an invalid combination of bits - DP pin assignment is invalid\n`
+- `AppleUSBCController<%p>::challengeCrypto - outToken: %s\n`
+- `setAccessoryID`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType10::start\n\n`
+- `AppleHPMAIDType1::getHPMCommsBus - failed to get communication bus service, no messages will be sent`
+- `%s::%s(0x%x@0x%x): AppleTCController::enableOptions(0x%x) - kart already enabled\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::challengeCrypto(@0x%x) - Start hpmv1 = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setupPCIClient(@0x%x) - Tunnel PCI client does not exist!\n\n`
+- `121111121222121211111111111111`
+- `inactive`
+- `%s::%s(0x%x@0x%x): AppleTCController::genericStart(@0x%x) - ***allow usb3 restores: %u***\n\n`
+- `%lldus **** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     PP_HVswitch is %s\n`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: ACK'ing power state change\n`
+- `AppleHPMARMSPMI::start - failed to register wake event int\n`
+- `NO`
+- `%lldus AppleUSBCController<%p>::setPowerState -  signaling SleepWake Thread (AppleAceSystemIsSleeping) - WillAckLater\n`
+- `site.AppleHPMInterface`
+- `%02X%01X.%01X%02X.%02X.%u`
+- `AppleUSBCController<%p> - DFUf does not claim DPConnection\n`
+- `%lldus **** AppleUSBCController<%p : %p>::statusReg.bits.dataRole           %s\n`
+- `%lldus AppleUSBCController<%p>::configureUSBRemoteWakeup - (2) got lock!\n`
+- `AppleUSBCController<%p>::SleepThreadEntry - delaying power state change to allow USB wake to enable (or firmware update to complete)\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::rtPanicHandler(@0x%x) - Byte 0 of register 0x5d = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::challengeCrypto(@0x%x) - Warning: CRYm timed out after ~%u, aborting\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType10::starttAMETimeoutTimer(@0x%x) - called\n\n`
+- `%lldus AppleUSBCController<%p>::hpmEnterExitFirmwareUpdateMode - BOOT mode.  Got 0x %02X %02X %02X %02X %02X %02X %02X %02X\n`
+- `Data Role Override Reason`
+- `AppleHPMCommandGate`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createTunnelClientCallBacks(@0x%x) - Tunnel client call back created successfully\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::genericStart(@0x%x) - disable USBPD SOPp nub publishing set 0x%X\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType1::configureDP(@0x%x) - failed to get interface: AV=%p DP=%p\n\n`
+- `readRegWithLength`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setupMatchingForLDCM - Failed to allocate callback, LDCM wont' work properly\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType17::start\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::processStatusRegisters(@0x%x) - advertise unplug\n\n`
+- `site.AppleHPMARMI2C`
+- `**** AppleUSBCController<%p : %p>::handleAccessoryUSBMode: !psItem\n`
+- `AppleUSBCController::challengeCrypto: function not found\n`
+- `AppleHPMLDCM::start - couldn't allocate periodic buffer, failing start\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setCurrentModeFlags(@0x%x) - Removing port forcing and clearing flags, fisOTA = 0x%x, fRestore = 0x%x\n\n`
+- `AppleUSBCController<%p> - DFUf does not claim UFP dataRole in status\n`
+- `AppleHPMARMSPMI::start - interrupt-type and interrupts not equal length, things will not work. No SPMI slee/wake support\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::start(@0x%x) - Start\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configureDPPortObject(@0x%x) - Failed to activate DP transport!\n\n`
+- `enabled (system output)`
+- `%lldus AppleUSBCController reporting a USB host\n`
+- `%lldus Ace reports an invalid combination of bits - bad DP pin assignment\n`
+- `%lldus **** AppleUSBCController<%p : %p>::dataStatusReg.bits.DPConnection    %s\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::start(@0x%x) - Enabling Debug, Flags = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::callPlatformFunction(0x%x) - exit called no valid data\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType16::processInterruptEvents(@0x%x) - RREC %x RRaDC %x\n\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - error executing 'CRYm': 0x%X\n`
+- `site.AppleHPMCommandGate`
+- `hpmAIDDis`
+- `AppleHPMAsyncEventSource`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType12::createUSB3PortObject(@0x%x) - creating usb3 port object tunnelAdapterType=%d\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::genericStart(@0x%x) - In Restore\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setPinConfiguration(@0x%x) - Could not reconfigure pin configuration dictionary\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::configureDPPortObject(@0x%x) - Failed to activate tunneled transport, no tbthandle\n\n`
+- `**** AppleUSBCController<%p>::start - parsed hpmusbcdisable boot arg: 0x%X\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configureUSB3PortObject(@0x%x) - Failed to activate USB transport!\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setCurrentModeFlags(@0x%x) - No plug detected, all flags cleared\n\n`
+- `tx1`
+- `as DFP`
+- `DP [HPD=%X,IRQ=%X]`
+- `setupMatchingForLDCM`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType14::roleswapTimeoutCallback - swap waited, retrying\n\n`
+- `Port Micro UID: %s\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType14::roleswapTimeoutCallback - swapping failed either rejected or cmd failure, status = 0x%x\n\n`
+- `Address`
+- `%s::%s(0x%x@0x%x): AppleTCController::initSingleHPM - failed to match on dock\n\n`
+- `AppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode - delaying to clear any other logging\n`
+- `USB-C interruptReg value`
+- `AppleUSBCController<%p : %p>::setSystemPowerState - AppleAceHWShutdownPowerState delay (after transition)\n`
+- `%lldus **** AppleUSBCController<%p : %p>::handleAccessoryUSBMode: !powerSource\n`
+- `%lldus AppleUSBCController::challengeCrypto: CRYm failed to complete - unsupported?\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::challengeCrypto(@0x%x) - Aborting due to previous errors\n\n`
+- `%s::%s(0x%x@0x%x): service and provider did NOT match, belongs to different node\n\n`
+- `%lldus AppleUSBCController<%p : %p>::setSystemPowerState - Being asked to do power management for unknown/recognized port micro.  Returning error\n`
+- `** AppleUSBCController<%p>::updateCachedRegisters - cached_statusReg.bits.connState: %d\n`
+- `AppleUSBCController::configureUSBRemoteWakeup: Configuring for no device\n`
+- `%lldus AppleUSBCController<%p>::SleepThreadEntry -  ACK'ing power state change.\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::exitPDMode(@0x%x) - DRST complete - status = 0x%08x\n\n`
+- `%X%02X.%02X.%02X.%u`
+- `AppleHPMLDCM::isVoltageDetected - raw 0x%x\n`
+- `AppLoaded Count`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::readReg(@0x%x) - Read completed after 0x%x retries\n\n`
+- `12111112122212121111112`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::start(@0x%x) - IONVRAM check failed\n\n`
+- `AppleHPMDevice`
+- `%s::%s(0x%x@0x%x): AppleTCController::processInterruptEvents(@0x%x) - interrupts = 0x%x 0x%x 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::createUSB3PortObject(@0x%x) - creating usb3 port object tunnelAdapterType=%d\n\n`
+- `AppleHPMLDCM::setVbusPresent - called setting %x\n`
+- `121111121222121211112112122222`
+- `AppleHPM::atomic4cc -- UBaS/SAlr/NSup detected\n`
+- `%lldus AppleUSBCController<%p>::setPowerState - got lock!\n`
+- `AppleUSBCController<%p>::hpmEnterExitFirmwareUpdateMode - BOOT mode.  Got 0x %02X %02X %02X %02X %02X %02X %02X %02X\n`
+- `deactivated`
+- `DP Lane Count`
+- `%lldus Ace reports an invalid combination of bits - DP pin assignment is invalid\n`
+- `%s: Overriding RTPC timeout, setting to 0x%d ms\n`
+- `Status Reg`
+- `12111112122212121111211212222212112`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::stopAnalyticsTimer(@0x%x) - called\n\n`
+- `AppleHPMBusController::setActiveHPMCount - Active HPM Counter Altered, new Active = 0x%x, expected = 0x%x\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::createDPPortObject(@0x%x) - dp is setup\n\n`
+- `site.AppleHPMDeviceHALType4`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - returned bufferDWords[0]: 0x%08X\n`
+- `hpmDisableAppleUVDMSOPp`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType3::startRoleswapTimeoutTimer(@0x%x) - called\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::genericStart(@0x%x) - CC transport failed!\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType11::start\n\n`
+- `AppleHPMDeviceHALType5::writeUSBConfigBuffer %02x %02x %02x %02x\n`
+- `AppleUSBCController<%p>::handleAccessoryDetect - DataStatus Register Cache Updated: 0x%02X%02X%02X%02X%02X\n`
+- `AppleUSBCController<%p>::challengeCrypto - read kAceRegisterData1: %s\n`
+- `Exit PD Mode TX Identity`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::challengeCrypto(@0x%x) - HPMV1 function handle NOT found\n\n`
+- `%s::%s(0x%x@0x%x): called with tr = 0x%x dev = 0x%x opt = 0x%x\n\n`
+- `AppleHPMSMCBridge<%p>::start - Unable to read hpmlog boot-arg\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::createTunnelClient(@0x%x) - Client already exists for type 0x%x\n\n`
+- `%lldus AppleUSBCController<%p>::hpmEnterExitFirmwareUpdateMode - unable to find reason for being stuck in BOOT\n`
+- `site.AppleHPMBusDevice`
+- `site.AppleTCControllerSingleTransport`
+- `Device ID`
+- `%s::%s(0x%x@0x%x): AppleTCController::challengeCrypto(@0x%x) - Warning: CRYm timed out after ~%u, aborting\n\n`
+- `AppleHPM.kext/PlugIns/AppleHPMLib.plugin`
+- `DPSourceSink: 0x%X\n`
+- `AppleUSBCController<%p> - USB Mode: Forced Disconnected (Not yet operating)\n`
+- `AppleUSBCController<%p> - DataConnection but no AlternateModeActive\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setPowerState(@0x%x) - Status != Success, setPowerStateHPM failed!\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::callPlatformFunction(0x%x) - prst called with 0x%x, which is unknown, not executing reset\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::configureDPPortObject(@0x%x) - Failed to activate DP transport!\n\n`
+- `AppleHPMDeviceHAL::setDataStatus - WARNING: Abnormal DataStatus Length = 0x%x\n`
+- `E`
+- `AppleUSBCController<%p> - USB Speed: %s\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - bufferDWords[0]: 0x%08X\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto\n`
+- `interrupt-type`
+- `%s::%s(0x%x@0x%x): Attaching and starting SOP\n\n`
+- `USB3`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - start.  Function locate done\n`
+- `start`
+- `AppleHPMARM`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::processInterruptEvents(@0x%x) - Adjusting HPM power state to active unplugged\n\n`
+- `RESERVED STATE`
+- `%lldus AppleUSBCController<%p>::SleepThreadEntry - delaying power state change to allow USB wake to enable (or firmware update to complete)\n`
+- `hpm,aid-controller`
+- `Revision ID`
+- `%s::%s(0x%x@0x%x): AppleTCController::processModeFlags(0x%x) - Kart mode skipping message due to forced disconnect\n\n`
+- `1211111212221212111121121222221211211122`
+- `DETECTED`
+- `AppleHPMARMSPMI::start - failed to register sleep event int\n`
+- `DP Source Configuration`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::genericStart(@0x%x) - Enabling SSAM testing, Flags = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::initSingleHPM - Missing interrupt-type property, doing legacy interrupt handling, no SPMI sleep/wake support\n\n`
+- `site.TriStarCompanionChallengeCryptoIn`
+- `AppleHPMDeviceHALType2`
+- `%s::%s(0x%x@0x%x): AppleTCController::usbChangeNotification: kIOPortTransportState_Message_DriverStatusChange\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType1::setPowerStateHPM(@0x%x) = Setting power state to 0x%x\n\n`
+- `%lldus AppleUSBCController<%p>::handleAccessoryDetect - Status Register Cache Updated: 0x%02X%02X%02X%02X\n`
+- `function-LDCM_Mux_Sel0`
+- `Actual HPM Controllers`
+- `%s::%s(0x%x@0x%x): AppleTCController::readRegWithLength(@0x%x) - Reading 0x%x with Length of 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType16::processInterruptEvents(@0x%x) - Ridge Ready\n\n`
+- `AppleUSBCController<%p>::setSystemPowerState - error executing 'SSPS': 0x%X\n`
+- `%lldus AppleUSBCController<%p>::configureUSBRemoteWakeup - got lock!\n`
+- `AppleUSBCController::configureUSBRemoteWakeup: wrote kAceRegisterData1 (USBwParams = 0x%X).  status = 0x%X\n`
+- `AppleUSBCController<%p>::configureUSBRemoteWakeup - (3) got lock!\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setUSB2PortObjectInactive(@0x%x) - usb2handle NULL!\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::callPlatformFunction(0x%x) - prst called with 255, setting it to 0\n\n`
+- `AppleHPMUserClient`
+- `AppleUSBCController<%p> - USB Mode: No USB Link\n`
+- `AppleUSBCController<%p>::challengeCrypto - returned returnedCommand: 0x%X\n`
+- `%lldus AppleUSBCController<%p>::PowerStateThreadEntry(%u)\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configureUSB2PortObject(@0x%x) - WARNING: USB2 notifier was not created\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMPin(0x%x) - ACE Debug already set, skipping\n\n`
+- `com.apple.USBCEntitlement`
+- `**** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     PP_HVswitch is %s\n`
+- `%lldus DPPinAssignment: 0x%X\n`
+- `%lldus AppleUSBCController<%p : %p>::handleAccessoryDetect - Setting DP config\n`
+- `**** AppleUSBCController<%p : %p>::statusReg.bits.dataRole           %s\n`
+- `AppleUSBCController<%p>::challengeCrypto - bufferDWords[0]: 0x%08X\n`
+- `AppleHPMARMSPMI::start - interrupt-type isn't 32-byte aligned no interrupts at all.\n`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `hpmI2CRetryInterval`
+- `%s::%s(0x%x@0x%x): AppleTCController::initSingleHPM - Missing interrupt property, Check the EDT, AppleHPM will not be fully functional\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMState(0x%x) - Could not assign power control, returning Error\n\n`
+- `AppleUSBCController<%p>::start - could not create command gate\n`
+- `\nAppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode - _isAce1:%s _isAce2: %s, buffer: %02X %02X %02X %02X\n\n`
+- `%lldus **** AppleUSBCController<%p : %p>::updateDP = %s\n`
+- `Kart Error Status`
+- `Product ID (SOP1)`
+- `%s::%s(0x%x@0x%x): AppleTCController::genericStart(@0x%x) - Enabling Debug, Flags = 0x%x\n\n`
+- `AppleUSBCController<%p : %p>::setSystemPowerState - Being asked to do power management for unknown/recognized port micro.  Returning error\n`
+- `%lldus AppleUSBCController<%p> - DFUf does not claim USB3Connection\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configureTBTPortObject(@0x%x) - CIO already provisioned\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createTunnelClient(@0x%x) - Client already exists for type 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::genericStart - HPMV1\n\n`
+- `AppleUSBCController<%p : %p>::setDPConfiguration - setMaxLaneCount got error abort: 0x%X\n`
+- `%lldus AppleUSBCController<%p>::usbDataMonitor - error writing kAceRegisterData1 (aceStatus: 0x%X)\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::processModeFlags(0x%x) - Kart mode skipping message due to forced disconnect\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::createUSB3PortObject(@0x%x) - USB3 is setup\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setupDP1Client(@0x%x) - Tunnel DP1 client does not exist!\n\n`
+- `%lldus AppleUSBCController<%p>::usbDataDetect - error writing kAceRegisterData1 (status: 0x%X)\n`
+- `%lldus AppleUSBCController<%p>::usbDataConnect - start.  type = %s, connected = %s\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMMitigationsEnabled(0x%x) - called with mitigationsEnabled = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMPin(0x%x) - already Hi-Z, skipping\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::Start(@0x%x) - no interrupt source found to add\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::genericStart(@0x%x) - disable USBPD SOPp nub publishing set 0x%X\n\n`
+- `%s::%s(0x%x@0x%x): Attaching and starting SOPp\n\n`
+- `usbDataMonitor`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType10::forcePortEvaluation(@0x%x) - Start\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::initSingleHPM - Failed to get workloop\n\n`
+- `AppleHPMARMI2C::start - no Rid found, defaulting to 0\n`
+- `AppleUSBCController<%p>::setPowerState - grabbing lock.  On thread: %s\n`
+- `%lldus AppleUSBCController<%p : %p>::handleAccessoryUSBMode - Power not yet on... enabling powerDelayTimer\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createTunnelHandles(@0x%x) - failed to create tunnel manager!\n\n`
+- `AppleHPMLDCMType2`
+- `AppleHPMInterfaceType3`
+- `AppleHPMARMI2C::start - hpmI2CRetries boot-arg: %u ms\n`
+- `AppleUSBCController<%p>::start - exiting start() - returning %s\n`
+- `%lldus **** AppleUSBCController<%p : %p>::interruptAction(%p, %d) - Ace has %s the USB billboard endpoint\n`
+- `AppleUSBCController<%p> - Ace detect failure - no response\n`
+- `AppleUSBCController<%p>::usbDataMonitor - error writing kAceRegisterData1 (status: 0x%X)\n`
+- `boot-command`
+- `IOHibernateState`
+- `%s::%s(0x%x@0x%x): AppleTCController::setUSB2PortObjectInactive(@0x%x) - usb2handle NULL!\n\n`
+- `Active`
+- `Sleeping`
+- `usbc,sn201202x,spmi`
+- `tx2`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::processModeFlags(0x%x) - Kart mode looks ok, sending message\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setPowerStateHPM(@0x%x) = Setting power state to 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createDPPortObject(@0x%x) - dp is setup\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::getSecondaryMuxConfig(@0x%x) - start\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::rtPanicHandler(@0x%x) - RT panic, incrementing count\n\n`
+- `%lldus AppleUSBCController<%p>::setPowerState - going to %u: %s\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::repeaterReset(@0x%x) - Called with target 0x%x\n\n`
+- `enabled`
+- `AppleUSBCController::configureUSBRemoteWakeup: starting... remoteWakeupMode = %u\n`
+- `site.AppleHPMLDCMType3`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::initInterruptManager - Failed to get command gate\n\n`
+- `Kart Mode Enabled`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::isCableKartCapable(0x%x) - active cable detected\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::configureUSB3PortObject(@0x%x) - USB3 already provisioned\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::getManagerType(@0x%x) - ERROR: _armHPMNub doesn't exist!\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType::processStatusRegisters(@0x%x) - exiting tametimeout early\n\n`
+- `site.AppleTCControllerAssignableTransport`
+- `HPDAsserted`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::getManagerType(@0x%x) - ERROR: _armHPMNub doesn't exist!\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPM terminating AUVDM\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType10::start\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType12::start - Overriding mux settings 0x%x\n\n`
+- `Firmware Version`
+- `%lldus AppleUSBCController<%p>::updateCachedRegisters - unable to find reason for being stuck in BOOT\n`
+- `USB Speed`
+- `TBT`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::tunnelClientChange(@0x%x) - dp2 client ping\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMPin(0x%x) - trace already set, skipping\n\n`
+- `%s::%s(0x%x@0x%x): LDCM not started, service not of AppleHPMLDCM\n\n`
+- `**** AppleUSBCController<%p : %p>::interruptAction(%p, %d) - Ace has %s the USB billboard endpoint\n`
+- `NOT PRESENT`
+- `AppleUSBCController<%p> - Connection orientation: %s\n`
+- `AppleUSBCController::challengeCrypto: CRYm failed to complete - unsupported?\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::getSecondaryMuxConfig(@0x%x) - start\n\n`
+- `%s::%s(0x%x@0x%x): %s -- SOP nub terminating\n\n`
+- `AppleTCControllerSingleTransport`
+- `%s::%s(0x%x@0x%x): AppleTCController::createTunnelClient(@0x%x) - Tunnel manager does not exist, not creating\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMState(0x%x) - Could not find iicProvider, returning Error\n\n`
+- `hpmusbcdisable`
+- `%lldus AppleUSBCController::start: SAFETY!! Was still holding gate at end of method?\n`
+- `AppleUSBCController<%p> - No connection type specified.  Assuming USB as UFP until told otherwise\n`
+- `AppleHPMBusDevice`
+- `USB PID`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMPin(0x%x) - Could not find iicProvider, returning Error\n\n`
+- `**** AppleUSBCController<%p>::start - failed to get _powerMgmtEvent\n`
+- `%lldus AppleUSBCController<%p> - USB Mode: Forced Disconnected (SPS != AppleAceHWMaxPowerState)\n`
+- `SAME`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: Configuring for low speed device\n`
+- `AppleUSBCController<%p>::configureUSBRemoteWakeup - (4) grabbing lock.  On thread: %s\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::processInterruptEvents(@0x%x) - Adjusting HPM power state to active\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::usbDataMonitor(@0x%x) - No data monitor function\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::challengeCrypto(@0x%x) - CRYm aborting after ~%u ms\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::createTunnelHandles(@0x%x) - metaCast failed!\n\n`
+- `AppleUSBCController reporting a DP connection\n`
+- `AppleUSBCController<%p> - USB Mode: Ace is a USB Device\n`
+- `AppleUSBCController<%p>::usbDataMonitor - error writing kAceRegisterData1 (aceStatus: 0x%X)\n`
+- `!!!!! AppleUSBCController<%p>::hpmIECSCommand - had to retry as status = 0x%X (remaing retries: %u)\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::processInterruptEvents(@0x%x) - Processing interrupt buffer\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::isCableKartCapable - sopp valid >=  4 actual = 0x%x cableType = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::processModeFlags(0x%x) - Kart mode looks ok, sending message\n\n`
+- `site.AppleHPMInterfaceType11`
+- `AppleHPM runtime power conservation disabled.\n`
+- `probe`
+- `%lldus AppleUSBCController<%p> - DFU work-arounds are appropriate.  Requesting conenction be latched as connected\n`
+- `AppleUSBCController<%p>::challengeCrypto - keyIndex: %llu\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::initSingleHPM - Failed to get i2c provider\n\n`
+- `hpmPowerDelaySnk`
+- `%lldus AppleUSBCController<%p>::updateCachedRegisters\n`
+- `AppleUSBCController<%p> - DFUf does not claim UFP dataRole in dataStatus\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - wrote kAceRegisterData1: %s\n`
+- `AppleHPMLDCM::start - unexpected provider\n`
+- `supports-usb-rm`
+- `AppleHPMDeviceHALType3`
+- `%s::%s(0x%x@0x%x): AppleTCController::configureUSB2PortObject(@0x%x) - WARNING: USB2 notifier was not created\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::configureUSB3PortObject(@0x%x) - USB3 added and ready\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::createTBTPortObject(@0x%x) - tbt is setup\n\n`
+- `%lldus **** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     PP_CABLEswitch is %s\n`
+- `DFP`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType10::stoptAMETimeoutTimer(@0x%x) - called\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::setAccessoryID(@0x%x) - Start\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::sendDpStatusUpdates(@0x%x) - IRQ = %i\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType1::configureDP(@0x%x) - failed to get interface: AV=%p DP=%p\n\n`
+- `AppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode - entry (_hpmCommandGate = %p) On thread: %s\n`
+- `AppleUSBCController<%p : %p>::handleAccessoryDetect - Override requested.  Reporting values as normal for now with nothing changed\n`
+- `AppleUSBCController<%p> - Checking if work-arounds are appropriate\n`
+- `AppleUSBCController<%p>::updateCachedRegisters (DEBUG DATA DUMP)\n`
+- `getManagerType`
+- `forceUSB23On`
+- `site.AppleHPMAsyncEventSource`
+- `%s::%s(0x%x@0x%x): AppleTCController::createTunnelClient(@0x%x) - Tunnel client failed for type 0x%x, index 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMPinsInternal(0x%x) - setting sel0 to 0x%x, sel1 to 0x%x\n\n`
+- `hpm-iic-addr`
+- `%lldus Ace reports an invalid combination of bits - USB3 and DP src/snk\n`
+- `**** AppleUSBCController<%p : %p>::statusReg.bits.plugOrientation    %s  ** This has no bearing on detection for USB **\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::isCableKartCapable(0x%x) - returning %x\n\n`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: enabling\n`
+- `AppleUSBCController<%p>::usbDataMonitor - not (yet) supported on this hardware (non-Ace1)\n`
+- `%lldus !!!!! AppleUSBCController<%p>::writeRegs - had to retry as status = 0x%X (remaing retries: %u)\n`
+- `AppleUSBCController<%p>::SleepThreadEntry -  *NOT* ACK'ing power state change.  _powerStateACKRequested not set\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configureDPPortObject(@0x%x) - Failed to activate tunneled transport, no tbthandle\n\n`
+- `updateSSAMConnection`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::Start(@0x%x) - Interrupt added to workloop\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMLiquidDetected(0x%x) - called with liquidDetected = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::startAnalyticsTimer(@0x%x) - NO TIMER!! ERROR\n\n`
+- `%lldus **** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     ** reprobe delayed until power state is correct ** (REPROBE!)\n`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: unknown case %u\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::Start - Failed to find Bus Controller, trying older method\n\n`
+- `ForceCIOTeardown`
+- `AppleHPMDeviceHALType5`
+- `** AppleUSBCController<%p> - _isRestoreOS: %s\n`
+- `SOP UVDM Update Count`
+- `stopAnalyticsTimer`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType10::stopUSBTimer(@0x%x) - called\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::getTransportEnabled(@0x%x) - Called for transporttype 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::readRegWithLength(@0x%x) - Timed out with retries = 0x%x\n\n`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: starting... remoteWakeupMode = %u\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::getTransportEnabled(@0x%x) - Called for transporttype 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createTBTPortObject(@0x%x) - tbt is setup\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::startAnalyticsTimer(@0x%x) - NO TIMER! ERROR\n\n`
+- `%lldus AppleUSBCController<%p : %p>::setSystemPowerState - entry (_hpmCommandGate = %p) (newState = %u)\n`
+- `%lldus **** AppleUSBCController<%p : %p>::dataStatusReg.bits.DataConnection %s\n`
+- `*** crypto function found OK\n`
+- `site.AppleHPMLDCM`
+- `%s::%s(0x%x@0x%x): AppleTCController::printConnectedTransports(@0x%x) - setting %s %s %s | %s | %s, %s | as connected\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::challengeCrypto(@0x%x) - Warning: Failed reading data with status = 0x%x, aborting\n\n`
+- `%lldus AppleUSBCController<%p>::start - registered for notifications with %p.  Notifier obj = %p.  On thread: %s\n`
+- `**** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     PP_EXTswitch is %s\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - wrote kIECSRegisterData1: %s\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - read kAceRegisterData1: %s\n`
+- `AppleUSBCController<%p>::SleepWakeThreadEntry - enabling normal operation on Ace.  _interruptSource->enable()'d\n`
+- `%lldus AppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode - disabling interrupts for firmware update\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType11::setInterruptMask(@0x%x) - start\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType1::setPowerStateHPM(@0x%x) = Setting power state to 0x%x\n\n`
+- `B`
+- `AppleUSBCController<%p> - USB Mode: UFP (connected to host)\n`
+- `Sink`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::genericStart(@0x%x) - IONVRAM check failed\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::processInterruptEvents(@0x%x) - AppLoaded, reinit OR first int process = 1\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configureUSB3PortObject(@0x%x) - Changing USB3 Datarole in IOPort to fUSBDfp = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::tunnelClientChange(@0x%x) - dp1 client ping\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::tunnelClientChange(@0x%x) - pci client ping\n\n`
+- `site.AppleHPMInterfaceType15`
+- `%s::%s(0x%x@0x%x): AppleTCController::initSingleHPM - Missing interrupt-type property, doing legacy interrupt handling, no SPMI sleep/wake support\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setAccessoryID(@0x%x) - Status = 0x%x accessoryID = 0x%x\n\n`
+- `AppleHPMARMSPMI::writeRegs - Transaction aborted due to SPMI Driver sleeping\n`
+- `isCableKartCapable`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType10::poweredStart(@0x%x) - start\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::forcePortEvaluation(@0x%x) - Start\n\n`
+- `AppleUSBCController<%p>::setPowerState - got lock!\n`
+- `IODPController not present!\n`
+- `%lldus AppleUSBCController reporting *NO* USB connection\n`
+- `AppleUSBCController<%p> - DataStatus Register Cache Updated: 0x%02X%02X%02X%02X%02X\n`
+- `Overcurrent Count`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::genericStart - Failed to get interrupt provider\n\n`
+- `triggerAnalytics`
+- `IOPortTransportProtocolAppleUVDM`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `%s::%s(0x%x@0x%x): AppleTCController::callPlatformFunction(0x%x) - prst called with 0x%x, which is unknown, not executing reset\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType1::configureDP(@0x%x) - powering on DP\n\n`
+- `%lldus AppleUSBCController<%p>::start - exiting start() - returning %s\n`
+- `site.AppleHPMARM`
+- `site.AppleTCControllerTypeSim`
+- `**** AppleUSBCController<%p>::start - failed to get dpHandle from _iicProvider\n`
+- `%lldus AppleUSBCController<%p : %p>::handleAccessoryDetect - entry (_hpmCommandGate = %p) (accessoryID = %p, *accessoryID = %u)\n`
+- `%lldus AppleUSBCController<%p> - Status Register Cache Updated: 0x%02X%02X%02X%02X\n`
+- `%lldus AppleUSBCController<%p> - DFUf does not claim DPConnection\n`
+- `%lldus AppleUSBCController<%p> - No connection type specified.  Assuming USB as UFP until told otherwise\n`
+- `AppleUSBCController::challengeCrypto: CRYm failed to complete - timed out? (time taken: approx %u msecs)\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::challengeCrypto(@0x%x) - Warning: truncating input, length is too long\n\n`
+- `processInterruptEvents`
+- `Plug Event Count`
+- `dock`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setAccessoryID(@0x%x) - Start\n\n`
+- `exitPDMode`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createTunnelHandles(@0x%x) - metaCast failed!\n\n`
+- `setupDP4Client`
+- `driverStatusInterrupt`
+- `%s::%s(0x%x@0x%x): AppleTCController::processInterruptEvents(@0x%x) - Processing interrupt buffer\n\n`
+- `AAPL,phandle`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType10::start(@0x%x) - no command gate\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::genericStart(@0x%x) - In OTA\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMUserOverrideActive(0x%x) - called with userOverrideActive = 0x%x\n\n`
+- `AppleHPMDeviceHALType4`
+- `pUFC`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::callPlatformFunction(0x%x) - exit called no valid data\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::createUSB3PortObject(@0x%x) - Error\n\n`
+- `AppleUSBCController`
+- `Current Power State`
+- `Reported Accessory ID`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - wrote kIECSRegisterCommand: %s\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - Outgoing parameters:\n`
+- `atcrt%u`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMPin(0x%x) - called with pin = 0x%x\n\n`
+- `hpmMuxSet`
+- `ForceUpdateMode`
+- `%s::%s(0x%x@0x%x): AppleTCController::setCurrentModeFlags(@0x%x) - Removing port forcing and clearing flags, fisOTA = 0x%x, fRestore = 0x%x\n\n`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `site.AppleUSBCController`
+- `AppleUSBCController<%p>::start - can't create command gate\n`
+- `AppleHPMARMSPMI::readIECSReg - 0x%X exceeding max length of 64\n`
+- `AppleHPMARMSPMI::sendHPMReset(@0x%x) - Workaround successful, out of ADFU\n`
+- `AppleHPMLDCM::disableOVPInterrupt - disabling ldcm ovp error\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::usbDataConnect(@0x%x) - No data connect function\n\n`
+- `**** AppleUSBCController<%p : %p>::interruptAction(%p, %d) - Alternate modes have been negotiated and are %s\n`
+- `%lldus **** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     statusReg.bits.plugPresent = %u, dataStatusReg.bits.DataConnection = %u, dataStatusReg.bits.DPConnection = %u, _currentPowerState = %u, _usbcEnabled = %u, _remoteWakeEnabled = %u\n`
+- `%lldus \n`
+- `AppleUSBCController<%p>::challengeCrypto - (initial) outRsp: %s\n`
+- `sbu2`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::initSingleHPM - Failed to get dockPhandle\n\n`
+- `processStatusRegisters`
+- `i2c-bus`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMPin(0x%x) - unknown pin value, returning unsupported\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::driverStatusInterrupt\n`
+- `Redriver Params`
+- `AppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode - Requesting accessory reprobe\n`
+- `%02x%01x.%02x%01x.%02x`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::callPlatformFunction(0x%x) - prst called with 1, setting it to 2\n\n`
+- ` `
+- `site.AppleTCController`
+- `%s::%s(0x%x@0x%x): AppleTCController::sendDpStatusUpdates(@0x%x) - HPD = %i\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::rtPanicHandler(@0x%x) - Byte 0 of register 0x5d = 0x%x\n\n`
+- `%lldus AppleUSBCController<%p> - stop: cancelling timeout (if it was armed)\n`
+- `setDPConfiguration(%u, %u): IODPController not present (would power ON)\n`
+- `AppleHPMLDCM::getLDCMStatusRegister - Invalid ret length of 0x%x retry = 0x%x\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMState(0x%x) - Could not assign power control, returning Error\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::configureRecoveryStatus(@0x%x) - Driving Low\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::configureUSB2PortObject(@0x%x) - WARNING: USB2 already exists\n\n`
+- `AppleUSBCController<%p>::challengeCrypto - inCmd: %s\n`
+- `%lldus AppleUSBCController<%p>::usbDataDetect - error setting orientation: 0x%X\n`
+- `%lldus AppleUSBCController<%p>::usbDataDetect - error executing 'USBd'\n`
+- `%lldus !!!!! AppleUSBCController<%p>::readRegsGated - had to retry as status = 0x%X (remaing retries: %u)\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::startAnalyticsTimer(@0x%x) - called\n\n`
+- `Vendor ID (SOP1)`
+- `12111211121`
+- `AppleUSBCController<%p>::modeCheck - BOOT mode.  Got 0x %02X %02X %02X %02X %02X %02X %02X %02X\n`
+- `NOT DETECTED`
+- `AppleUSBCController<%p> - DFUf does not claim USB3Connection\n`
+- `**** AppleUSBCController<%p : %p>::dataStatusReg.bits.DataConnection %s\n`
+- `AppleUSBCController<%p>::configureUSBRemoteWakeup - (2) got lock!\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType14::stopRoleswapTimeoutTimer(@0x%x) - called\n\n`
+- `AppleTCControllerType10::overrideHPMMode -- enforce=%d, keepRoleAndOrientation=%d, dataStatus=%u, status=%u\n`
+- `AppleTCControllerType1`
+- `%lldus AppleUSBCController<%p>::configureUSBRemoteWakeup - (4) got lock!\n`
+- `AppleUSBCController<%p>::challengeCrypto - returned returnedMValue: 0x%hhX\n`
+- `AppleUSBCController<%p>::challengeCrypto - outRspLen: %llu bytes\n`
+- `AppleUSBCController<%p>::usbDataDetect - error writing kAceRegisterData1 (aceStatus: 0x%X)\n`
+- `!!!!! AppleUSBCController<%p>::readRegsGated - had to retry as status = 0x%X (remaing retries: %u)\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::clearDpIRQ(@0x%x) - clearing DP IRQ\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::disablePort(@0x%x) - port disable aborted, length of buffers wrong\n\n`
+- `AppleHPMInterface::resolvePHandle - failed after service matching\n`
+- `stoptAMETimeoutTimer`
+- `NormalSleep`
+- `%lldus AppleUSBCController<%p> - DataStatus Register failed to read: 0x%04X\n`
+- `AppleUSBCController<%p>::updateCachedRegisters - DFU work-around mode\n`
+- `%lldus AppleUSBCController<%p> - DataConnection but no AlternateModeActive\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::configureUSB2PortObject(@0x%x) - Changing USB2 Datarole in IOPort to fUSBDfp = 0x%x\n\n`
+- `AppleHPMARMSPMI::writeIECSReg - 0x%X exceeding max length of 64\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::processInterruptEvents(@0x%x) - status or datastatus set, process registers\n\n`
+- `genericStart`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::challengeCrypto(@0x%x) - HPMV1 locating function\n\n`
+- `221`
+- `site.AppleHPMDeviceHALType3`
+- `%lldus AppleUSBCController<%p : %p>::handleAccessoryDetect - returning error as accessoryDetect isn't valid (accessoryDetect = %p)\n`
+- `i2c-addr`
+- `%s::%s(0x%x@0x%x): AppleTCController::genericStart(@0x%x) - disable USBPD SOP nub publishing set 0x%X\n\n`
+- `getAndClearInterrupt`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::genericStart - Failed to get dockPhandle\n\n`
+- `handleAppleUVDMEnumUpdated`
+- `%lldus AppleUSBCController accessoryDetect = %s\n`
+- `%lldus AppleUSBCController<%p> - DFUf does not claim UFP dataRole in status\n`
+- `%lldus **** AppleUSBCController<%p : %p>::dataStatusReg.bits.USB2Connection %s\n`
+- `handleAccessoryDetect`
+- `AppleUSBCController<%p : %p>::setSystemPowerState - invalid power state requested: %u\n`
+- `**** AppleUSBCController<%p : %p>::updateCachedRegisters - statusRegUpdated: %s, dataStatusRegUpdated: %s, _dfuWorkAroundsPending: %s, _dfuWorkAroundsActive: %s\n`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: SAFETY!! Was still holding gate at end of method?\n`
+- `%lldus *** crypto function not found\n`
+- `%lldus !!!!! AppleUSBCController<%p>::writeRegsGated - had to retry as status = 0x%X (remaing retries: %u)\n`
+- `%lldus AppleUSBCController::remoteWakeSafetyTimeoutGated: ACK'ing power state change\n`
+- `configurePCIePortObject`
+- `setLDCMState`
+- `setupMatchingForUFP`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType1::communicateDPIRQ(@0x%x) - Unused in this class\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerAssignableTransport::probe - matchingclass = 0x%x\n\n`
+- `%lldus stopping!\n`
+- `AppleUSBCController setting accessoryDetect\n`
+- `AppleUSBCController<%p>::usbDataConnect - end.  status = 0x%X\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::processInterruptEvents(@0x%x) - status or datastatus set, process registers\n\n`
+- `usbDataDetect`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMState(0x%x) - Could not find iicProvider, returning Error\n\n`
+- `Source`
+- `AppleUSBCController<%p>::challengeCrypto - Incoming parameters:\n`
+- `%lldus **** AppleUSBCController<%p : %p>::PowerStateThreadEntry -     statusReg.bits.plugPresent = %u, dataStatusReg.bits.DataConnection = %u, dataStatusReg.bits.DPConnection = %u, _currentPowerState = %u, _usbcEnabled = %u, _remoteWakeEnabled = %u\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setCurrentModeFlags(@0x%x) - forcing usb2 + ufp for debug\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configureUSB3PortObject(@0x%x) - USB3 already provisioned\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setCurrentModeFlags(@0x%x) - Process data and status register\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::readRegWithLength(@0x%x) - Read completed after 0x%x retries\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::challengeCrypto(@0x%x) - CRYm exeucted and took ~%u ms\n\n`
+- `site.AppleHPMEmbedded`
+- `%lldus AppleUSBCController reporting a disagreement between data role bits: status: %s vs. dataStatus: %s\n`
+- `AppleUSBCController reporting a USB host\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::genericStart - failed to match on dock\n\n`
+- `clearDpIRQ`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::usbDataConnect(@0x%x) - No orientation function\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::isDeviceKartCapable(0x%x) - valid sop entries %x\n\n`
+- `hpmPowerDelaySrc`
+- `AppleHPMARM::start - hpmI2CRetryInterval boot-arg: %u ms\n`
+- `%lldus AppleUSBCController<%p : %p>::setPowerState - entering.  %p = %u:%u(%u) -> %lu\n`
+- `!!!!! AppleUSBCController<%p>::writeRegs - had to retry as status = 0x%X (remaing retries: %u)\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType::processStatusRegisters(@0x%x) - exiting tametimeout early\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::initInterruptManager - Failed to get command gate\n\n`
+- `IODPController`
+- `%lldus AppleUSBCController<%p>::updateCachedRegisters - no longer in a modal task.  Latching as connected\n`
+- `%lldus ** AppleUSBCController<%p>::updateCachedRegisters - mode = '%c%c%c%c'\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::genericStart(@0x%x) - CC transport failed!\n\n`
+- `%lldus AppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode - Requesting accessory reprobe\n`
+- `AppleUSBCController<%p>::updateCachedRegisters - no longer in a modal task.  Latching as connected\n`
+- `AppleUSBCController::configureUSBRemoteWakeup: ACK'ing power state change\n`
+- `AppleUSBCController<%p>::configureUSBRemoteWakeup - (3) grabbing lock.  On thread: %s\n`
+- `!!!!! AppleUSBCController<%p>::readRegs - had to retry as status = 0x%X (remaing retries: %u)\n`
+- `HPM Mode Register on Boot`
+- `AppleHPMARMSPMI::failureRegisterDump - Mode = 0x%x 0x%x 0x%x 0x%x\n`
+- `-hpmUnplugForceUpdateMode`
+- `setUSB2PortObjectInactive`
+- `AsymmetricModeSupportedBit`
+- `%s::%s(0x%x@0x%x): cable is captive\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController:callPlatformFunction(0x%x) - setSleepState called with %d\n\n`
+- `** AppleUSBCController<%p> - mode = '%c%c%c%c'\n`
+- `function-orientation`
+- `%lldus **** AppleUSBCController<%p : %p>::interruptAction(%p, %d) - Alternate modes have been negotiated and are %s\n`
+- `%lldus AppleUSBCController<%p>::updateCachedRegisters (DEBUG DATA DUMP)\n`
+- `%lldus AppleUSBCController<%p> - BillboardActive\n`
+- `%lldus AppleUSBCController<%p>::PowerStateThreadEntry - done\n`
+- `121111121222121211111121111211221212222222212212121211111121212`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::genericStart(@0x%x) - In Restore\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::execute4Cc(@0x%x) - 4cc = %s\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::driverStatusInterrupt: turnOnVbus\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType10::tAMETimeout(@0x%x) - called\n\n`
+- `setupHAL`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType16::configureUSB2PortObject(@0x%x) - Forcing USB2 UFP data role for optical cable\n\n`
+- `hpmInterruptAction`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::genericStart(@0x%x) - Force allow USB3\n\n`
+- `ignoreVbusLoss`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType10::startUSBTimer(@0x%x) - called\n\n`
+- `PDPowerRoleSource`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType11::start(@0x%x) - no command gate\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType1::communicateDPIRQ(@0x%x) - Unused in this class\n\n`
+- `AppleUSBCController<%p : %p>::handleAccessoryDetect - _currentPowerState = %u, plugPresent: %s, _remoteWakeEnabled = %u\n`
+- `AppleHPMARMSPMI::readRegs - Transaction aborted due to SPMI Driver sleeping\n`
+- `createTunnelClientCallBacks`
+- `AppleHPMAIDType1`
+- `AppleHPMARM::start - hpmPowerDelaySrc boot-arg: %u ms\n`
+- `YES`
+- `AppleUSBCController<%p : %p>::setSystemPowerState - AppleAceHWMaxPowerState delay (before transition)\n`
+- `%lldus AppleUSBCController<%p>::configureUSBRemoteWakeup - (2) grabbing lock.  On thread: %s\n`
+- `AppleUSBCController::challengeCrypto: CRYm took approx %u msecs to complete\n`
+- `AppleHPMDeviceHAL::setPDStatus - no data, buffer or struct is null\n`
+- `AppleUSBCController<%p>::usbDataDetect - error executing 'USBd'\n`
+- `hpmDebugFlags`
+- `hpmDisableAppleUVDMSOP`
+- `getTransportEnabled`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::challengeCrypto(@0x%x) - HPMV2 buffer[0] = 0x%08x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::tunnelClientChangeWithParams(@0x%x) - usb Type2 client ping, Handle(%d)\n\n`
+- `%s::%s(0x%x@0x%x): cable is not captive\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::initSingleHPM - interrupt-type and interrupts not equal length, things will not work. No SPMI slee/wake support\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setPowerStateHPM(@0x%x) - SSPS transition to 0x%x skipped, waiting for USB\n\n`
+- `usbChangeNotification`
+- `Vendor ID (SOP)`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::Start(@0x%x) - No gpio function\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::createUSB2PortObject(@0x%x) - Setting up USB2 port object\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMPin fDebugFlags & kLDCMDebugSelectSBU:0x%x - kIOPortUSBCLDCMPinTrace case\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType16::processInterruptEvents(@0x%x) - Start\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType1::configureUSBRemoteWakeup(@0x%x) - Called with args 0x%x\n\n`
+- `AppleUSBCController<%p>::start - Ace detect failure - no response\n`
+- `AppleTCControllerType12`
+- `aUFC`
+- `AppleUSBCController<%p>::start - could not add _powerDelayTimer\n`
+- `AppleUSBCController<%p> - DFU work-arounds are appropriate.  Requesting conenction be latched as connected\n`
+- `INVALID`
+- `**** AppleUSBCController<%p : %p>::PowerStateThreadEntry -     statusReg.bits.plugPresent = %u, dataStatusReg.bits.DataConnection = %u, dataStatusReg.bits.DPConnection = %u, _currentPowerState = %u, _usbcEnabled = %u, _remoteWakeEnabled = %u\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::printConnectedTransports(@0x%x) - setting %s %s %s | %s | %s, %s | as connected\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::clearDpIRQ(@0x%x) - clearing DP IRQ\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::clearDpIRQ(@0x%x) - clearing DP IRQ failed, no memory\n`
+- `Hibernate`
+- `%lldus Port Micro Firmware Version: %s\n`
+- `disabled due to fault`
+- `%lldus AppleUSBCController<%p> - USB Mode: Ace is a USB Host\n`
+- `AppleUSBCController<%p>::challengeCrypto - start.  Function locate done\n`
+- `AppleHPMARMSPMI::readRegs - WARNING: Actual register length for addr 0x%x is shorter than expected, expected 0x%x, IECS returned 0x%x\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configurePCIePortObject(@0x%x) - Failed to activate tunneled transport, no tbthandle\n\n`
+- `configureDP`
+- `%lldus **** AppleUSBCController<%p>::start - redriver_params: 0x%04X\n`
+- `**** AppleUSBCController<%p : %p>::interruptAction(%p, %d) - Ace has detected an overcurrent situation\n`
+- `DPPinAssignment: 0x%X\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::handleAccessoryDetect(@0x%x) - Start\n\n`
+- `setPowerStateHPM`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::challengeCrypto(@0x%x) - Start hpmv1 = 0x%x\n\n`
+- `configureTBTPortObject`
+- `%s::%s(0x%x@0x%x): AppleTCController::resetDataControl(@0x%x) - clearing Data Control\n`
+- `%lldus AppleUSBCController<%p>::start - registerPowerDriver gave: 0x%X\n`
+- `%lldus AppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode - delaying to clear any other logging\n`
+- `%lldus AppleUSBCController::remoteWakeSafetyTimeoutGated: _powerStateACKRequested = 0x%X\n`
+- `HPM RTPC Enabled`
+- `site.AppleHPMInterfaceType1`
+- `%lldus AppleUSBCController<%p : %p>::handleAccessoryDetect - reporting return value: 0x%X, accessoryDetect: %s, accessoryID: %u\n`
+- `AppleUSBCController<%p>::challengeCrypto - error executing 'CRYm': 0x%X\n`
+- `AppleUSBCController::remoteWakeSafetyTimeoutGated: setSystemPowerState returned an error: 0x%X\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType14::start\n\n`
+- `usbDataConnect`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMState(0x%x) - idle state ovp - %lldns, %lldns, %lldns 0x%x 0x%x\n\n`
+- `startAnalyticsTimer`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMMitigationsEnabled(0x%x) - called with mitigationsEnabled = 0x%x\n\n`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: sent 'USBw'.  status = 0x%X\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - read kIECSRegisterCommand: %s\n`
+- `AppleUSBCController::remoteWakeSafetyTimeoutGated: ACK'ing power state change\n`
+- `SOPVID`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::tunnelClientChangeWithParams(@0x%x) with non USB Type2 object... Quiting...\n\n`
+- `site.AppleHPMDevice`
+- `AppleHPMSMCBridge<%p>::start - hpmI2CRetryInterval boot-arg: %u ms\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::usbDataDetect(@0x%x) - No orientation function\n\n`
+- `%lldus AppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode - entry (_hpmCommandGate = %p) On thread: %s\n`
+- `%lldus AppleUSBCController<%p : %p>::setSystemPowerState - AppleAceHWMaxPowerState delay (before transition)\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - returned returnedKeyID: 0x%X\n`
+- `SOPPID`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::challengeCrypto(@0x%x) - HPMV1 crypto called\n\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - Data Register failed to read: 0x%04X\n`
+- `AppleUSBCController<%p>::usbDataMonitor - _usbDataMonitorFunction->monitorData returned: 0x%X\n`
+- `%lldus !!!!! AppleUSBCController<%p>::readRegs - had to retry as status = 0x%X (remaing retries: %u)\n`
+- `upgrade`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::challengeCrypto(@0x%x) - Warning: Unexpected command retval 0x%x, returning invalid\n\n`
+- `AppleHPM::atomic4cc -- PD3 alert message WA error 0x%X\n`
+- `setupPowerManagement`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::processInterruptEvents(@0x%x) - Adjusting HPM power state to sleep\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMPin(0x%x) - ACE Debug cannot be set. Missing boot-args.\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::usbDataDetect(@0x%x) - No data monitor function\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::challengeCrypto(@0x%x) - Starting HPMV2 execution\n\n`
+- `AppleHPMUserClient::initWithTask - User client does NOT have entitlement: com.apple.USBCEntitlement\n`
+- `TRUE`
+- `%lldus **** AppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode -     statusReg.bits.plugPresent = %u, dataStatusReg.bits.DataConnection = %u, dataStatusReg.bits.DPConnection = %u, _currentPowerState = %u, _usbcEnabled = %u, _remoteWakeEnabled = %u\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::processStatusRegisters(@0x%x) - fWaitingForUSB = 0x%x, fOverrideHPMMode = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::callPlatformFunction(0x%x) - prst called with 1, setting it to 2\n\n`
+- `usbc,sn201202x,iic`
+- `None`
+- `%lldus AppleUSBCController<%p> - No connection type specified.  Assuming USB as DFP until told otherwise\n`
+- `usbc,cbtl1702,spmi`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::initSingleHPM - LDCM not started, setting up matcher\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::processInterruptEvents(@0x%x) - Not notifying drivers of state, fRestore = 0x%x and interruptCountAppLoaded = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configureUSB3PortObject(@0x%x) - Failed to activate tunneled transport, no tbthandle\n\n`
+- `%s::%s(0x%x@0x%x): Updating SSAM Connection\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::start(@0x%x) - Pins will be set in the upsidedown orientation.\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMState(0x%x) - idle state ovp - %lldns, %lldns, %lldns 0x%x 0x%x\n\n`
+- `AppleTCController::resolvePHandle - failed after trying to get key property\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setAccessoryID(@0x%x) - Status = 0x%x accessoryID = 0x%x\n\n`
+- `Revision`
+- `%s::%s(0x%x@0x%x): AppleTCController::tunnelClientChangeWithParams(@0x%x) - usb Type2 client ping, Handle(%d)\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType1::setPowerStateHPM(@0x%x) - SSPS executed, status = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerAssignableTransport::configureTBTPortObject(@0x%x) - CIO already provisioned\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType1::communicateDPHPDChange(@0x%x) - Unused in this class\n\n`
+- `AppleUSBCController<%p>::start - can't get provider\n`
+- `C`
+- `writeReg`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType15::start\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setupPowerManagement(@0x%x) - Power registration failed! with status = 0x%x\n\n`
+- `** AppleUSBCController<%p>::updateCachedRegisters - mode = '%c%c%c%c'\n`
+- `AppleUSBCController<%p> - DFUf does not claim USB2Connection\n`
+- `AppleUSBCController::configureUSBRemoteWakeup: kIOAccessoryUSBRemoteWakeupOff\n`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: called _usbWakeControlFunction.  status = 0x%X\n`
+- `%lldus AppleUSBCController<%p>::configureUSBRemoteWakeup - (3) got lock!\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::processInterruptEvents(@0x%x) - Adjusting HPM power state to active\n\n`
+- `configureRecoveryStatus`
+- `Board ID`
+- `%s::%s(0x%x@0x%x): AppleTCController::tunnelClientChange(@0x%x) - usb client ping\n\n`
+- `AppleUSBCController<%p> - handleAccessoryUSBMode: arming timer (still starting)\n`
+- `** AppleUSBCController<%p>::updateCachedRegisters - Ace detect failure - no response\n`
+- `AppleUSBCController::configureUSBRemoteWakeup: wrote kAceRegisterData1.  status = 0x%X\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::Start - Super failed to start\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::challengeCrypto(@0x%x) - Warning: Unexpected command retval 0x%x, returning invalid\n\n`
+- `Port Micro Firmware Version: %s\n`
+- `**** AppleUSBCController<%p : %p>::dataStatusReg.bits.DPPinAssignment %s\n`
+- `AppleUSBCController::configureUSBRemoteWakeup: unknown case %u\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - Incoming parameters:\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType14::hpmInterruptAction(@0x%x) - Interrupt Recieved\n\n`
+- `*** accessory TriStar orientation function not found\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::genericStart(@0x%x) - Start\n\n`
+- `IOCFPlugInTypes`
+- `AppleUSBCController<%p>::start - could not allocate _remoteWakeSafetyTimer\n`
+- `AppleUSBCController reporting a DP connection.  Pin assignment: %u.  dpSinkpinAssignment: %s.  dpSourcepinAssignment: %s\n`
+- `%lldus AppleUSBCController<%p>::updateCachedRegisters - DFU work-around mode\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - (initial) outToken: %s\n`
+- `AppleUSBCController<%p>::SleepWakeThreadEntry - got lock!\n`
+- `AppleHPMLDCM::getLDCMStatusRegister - invalid buffer length, data gathering aborted\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::usbDataMonitor(@0x%x) - No orientation function\n\n`
+- `isDeviceKartCapable`
+- `tunnelClientChange`
+- `site.AppleHPMInterfaceType10`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType12::start - Overriding USB3 settings 0x%x\n\n`
+- `%lldus updatedUSB: %s,  updatedDP: %s.  requesting reprobe\n`
+- `3`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::enableOptions(0x%x) - Kart mode looks ok, sending message\n\n`
+- `hpm-transport-type`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `%s::%s(0x%x@0x%x): AppleTCController::isCableKartCapable(0x%x) - role is wrong, issuing discovery on sop'\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::isCableKartCapable(0x%x) - passive cable detected\n\n`
+- `AppleUSBCController<%p>::start - can't get dock provider\n`
+- `disabled`
+- `%lldus AppleUSBCController reporting realAccessoryID = %u\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::genericStart(@0x%x) - Disabling AID\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType15::repeaterReset(@0x%x) - Called with target 0x%x\n\n`
+- `AppleUSBCController<%p> - Ace reports Overcurrent or PowerFault\n`
+- `%lldus **** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     PP_5V0switch is %s\n`
+- `%lldus AppleUSBCController reporting a USB%s connection\n`
+- `Ace reports an invalid combination of bits - USB3 and DP snk\n`
+- `AppleUSBCController<%p : %p>::handleAccessoryDetect - reporting return value: 0x%X, accessoryDetect: %s, accessoryID: %u\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::challengeCrypto(@0x%x) - Warning: truncating input, length is too long\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::readReg(@0x%x) - Timed out with retries = 0x%x\n\n`
+- `USBOvercurrent`
+- `**** AppleUSBCController<%p : %p>::dataStatusReg.bits.DPConnection    %s\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - returned returnedCommand: 0x%X\n`
+- `%s: default RTPC timeout, setting to 0x%d ms\n`
+- `C Count`
+- `setupDP2Client`
+- `changeSSAMTransmitReceiver`
+- `AppleUSBCController<%p> - USB Mode: Ace is a USB Host\n`
+- `AppleUSBCController<%p>::challengeCrypto\n`
+- `reconfigureSSAM`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType17::start - Failed to get spmi provider\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setPowerState(@0x%x) = Setting power state to 0x%x\n\n`
+- `AppleUSBCController<%p>::challengeCrypto - read kIECSRegisterCommand: %s\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configureTBTPortObject(@0x%x) - Failed to activate transport!\n\n`
+- `setLDCMPinsInternal`
+- `AppleTCControllerAssignableTransport`
+- `AppleUSBCController<%p : %p>::handleAccessoryDetect - entry (_hpmCommandGate = %p) (accessoryID = %p, *accessoryID = %u)\n`
+- `AppleUSBCController<%p : %p>::handleAccessoryDetect - returning error as accessoryDetect isn't valid (accessoryDetect = %p)\n`
+- `%lldus AppleUSBCController<%p> - _dfuWorkAroundsPending... Forcing registers to be updated\n`
+- `AppleUSBCController::PowerStateThreadEntry: requesting reprobe\n`
+- `sbu1`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createPCIePortObject(@0x%x) - pcie is not setup\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType15::stopRoleswapTimeoutTimer(@0x%x) - called\n\n`
+- `site.AppleHPMDeviceHALType2`
+- `%s::%s(0x%x@0x%x): AppleTCController::configureRecoveryStatus(@0x%x) - EDT entry not found\n\n`
+- `%lldus AppleUSBCController<%p : %p>::handleAccessoryUSBMode - _currentPowerState = %u, plugPresent: %s\n`
+- `%lldus AppleUSBCController<%p>::configureUSBRemoteWakeup - grabbing lock.  On thread: %s\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::initSingleHPM - Failed to get workloop\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configureRecoveryStatus(@0x%x) - EDT entry not found\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::ldcmInterruptAction(0x%x) - Start\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType16::start failed to get fHALType5\n\n`
+- `function-connect_DIG`
+- `AppleHPMEmbedded`
+- `rd`
+- `AppleUSBCController<%p>::start - got lock!\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::enableOptions(0x%x) - Kart mode skipping message due to forced disconnect\n\n`
+- `challengeCrypto`
+- `AppleUSBCController<%p>::modeCheck - unable to find reason for being stuck in BOOT\n`
+- `%lldus AppleUSBCController<%p> - Ace Application was reloaded (watchdog?)\n`
+- `AppleUSBCController reporting a USB device\n`
+- `%lldus AppleUSBCController<%p> - USB Mode: DFP (connected to device)\n`
+- `AppleUSBCController<%p> - Connection orientation: Disconnected\n`
+- `AppleUSBCController<%p>::configureUSBRemoteWakeup - grabbing lock.  On thread: %s\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::usbDataDetect(@0x%x) - No data monitor function\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType3::roleswapTimeoutCallback - swapping failed either rejected or cmd failure, status = 0x%x\n\n`
+- `stopUSBTimer`
+- `%s::%s(0x%x@0x%x): AppleTCController::configureUSB3PortObject(@0x%x) - Changing USB3 Datarole in IOPort to fUSBDfp = 0x%x\n\n`
+- `RID`
+- `**** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     PP_CABLEswitch is %s\n`
+- `AppleUSBCController<%p> - BillboardActive\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - inCmd: %s\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::callPlatformFunction(0x%x) - prst called no valid data\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::usbDataDetect(@0x%x) - No orientation function\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::challengeCrypto(@0x%x) - HPMV1 function located\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::configureUSB2PortObject(@0x%x) - USB2 added and ready\n\n`
+- `AppleUSBCController<%p>::updateCachedRegisters - unable to find reason for being stuck in BOOT\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType15::roleswapTimeoutCallback - swapping failed either rejected or cmd failure, status = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::configureUSB3PortObject(@0x%x) - Failed to activate USB transport!\n\n`
+- `AppleTCController::resolvePHandle - failed after property matching\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType10hal::forcePortEvaluation(@0x%x) - Start\n\n`
+- `Ace version check failure - no response\n`
+- `activated`
+- `Ace reports an invalid combination of bits - USB3 and DP src/snk\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setInterruptMask(@0x%x) - start\n\n`
+- `enableOptions`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configureUSB3PortObject(@0x%x) - WARNING: USB3 notifier was not created\n\n`
+- `AppleHPMInterface::resolvePHandle - failed after trying to get key property\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::Start - Warning: No I2C Interface\n\n`
+- `AppleHPMInterfaceType17`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType17::start - Failed to create interrupt source\n`
+- `AppleUSBCController<%p : %p>::setSystemPowerState - entry (_hpmCommandGate = %p) (newState = %u)\n`
+- `21`
+- `poweredStart`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMPin(0x%x) - Could not assign muxsel1, returning Error\n\n`
+- `UFP (or disabled)`
+- `AppleUSBCController::configureUSBRemoteWakeup: sent 'USBw'.  status = 0x%X\n`
+- `%lldus AppleUSBCController::remoteWakeSafetyTimeoutGated: lock grabbed\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType10::turnOnVbus(0x%x) - setting fWaitingForUSB to false\n\n`
+- `121111121222121212212`
+- `%s::%s(0x%x@0x%x): AppleTCController::configureUSB3PortObject(@0x%x) - Failed to activate tunneled transport, no tbthandle\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType16::processInterruptEvents(@0x%x) - No Data Status at UFP\n\n`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `AppleUSBCController<%p> - DP Mode: No DP Link\n`
+- `AppleHPMARMSPMI`
+- `AppleHPMLDCM::start - Failed to get command gate\n`
+- `site.AppleTCControllerType14`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::challengeCrypto(@0x%x) - Warning: CRYm returned !CMD, aborting\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createDPPortObject(@0x%x) - dp transport allocation failed\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setPowerStateHPM(@0x%x) = Setting power state to 0x%x\n\n`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `AppleHPMARMI2C::start - hpmI2CRetryInterval boot-arg: %u ms\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::isCableKartCapable(0x%x) - valid sop' entries = %x\n\n`
+- `configureUSB2PortObject`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setupDP3Client(@0x%x) - Tunnel DP3 client does not exist!\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMPin(0x%x) - ref already set, skipping\n\n`
+- `AppleHPMUserClient::initWithTask - User client does NOT have kIOClientPrivilegeAdministrator\n`
+- `%lldus ** AppleUSBCController<%p> - mode = '%c%c%c%c'\n`
+- `AppleUSBCController<%p : %p>::handleAccessoryUSBMode - Power not yet on... enabling powerDelayTimer\n`
+- `%lldus **** AppleUSBCController<%p : %p>::statusReg.bits.plugOrientation     %s\n`
+- `setInterruptMask`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createUSB3PortObject(@0x%x) - Error\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType17:setupMatchingForUFP can't find AppleHPMInterfaceType16\n\n`
+- `%lldus AppleUSBCController reporting *NO* DP connection\n`
+- `AppleUSBCController::configureUSBRemoteWakeup: _powerStateACKRequested = 0x%X\n`
+- `supports-trm`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::readRegWithLength(@0x%x) - Reading 0x%x with Length of 0x%x\n\n`
+- `function-usb_dconnect`
+- `hpmI2CNonCompliant`
+- `%lldus AppleUSBCController<%p : %p>::handleAccessoryDetect - returning error as _provider isn't valid (_provider = %p)\n`
+- `%lldus AppleUSBCController<%p>::SleepThreadEntry - operationMode: %s, usbMode: %u, _remoteWakeEnabled: %s\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType10::stopUSBTimer(@0x%x) - called\n\n`
+- `%lldus AppleUSBCController<%p>::start - got lock!\n`
+- `%lldus AppleUSBCController<%p> - Connection orientation: Disconnected\n`
+- `AppleHPMLDCM::start - couldn't get workloop failing start\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::tunnelClientChange(@0x%x) - usb client ping\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType10::tUSBTimeout(@0x%x) - Waiting for USB Timedout After 10 seconds\n\n`
+- `hpmI2CRetries`
+- `setupDPController`
+- `%lldus ** AppleUSBCController<%p>::updateCachedRegisters - cached_statusReg.bits.connState: %d\n`
+- `**** AppleUSBCController<%p : %p>::dataStatusReg.bits.DPSourceSink    %s\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::processInterruptEvents(@0x%x) - Adjusting HPM power state to sleep\n\n`
+- `setLDCMUserOverrideActive`
+- `tAMETimeout`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `setPowerState`
+- `repeaterReset`
+- `12A1DCCF-CF7A-4775-BEE5-9C4319F4CD2B`
+- `DeepIdle`
+- `AppleUSBCController<%p : %p>::setDPConfiguration - setPower got error abort: 0x%X\n`
+- `AppleUSBCController<%p : %p>::handleAccessoryDetect - returning error as _provider isn't valid (_provider = %p)\n`
+- `AppleUSBCController<%p>::challengeCrypto - buffer (length byte trimmed): %s\n`
+- `AppleUSBCController<%p>::challengeCrypto - outRsp: %s\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setCurrentModeFlags(@0x%x) - Assuming forced DFU, fRestore = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType14::start\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::commonStartPhase2 - Failed to create fDriverStatusInterrupt\n\n`
+- `**** AppleUSBCController<%p>::start - failed to get _powerStateEvent\n`
+- `%lldus *** USB wake control function not found\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::initInterruptManager - Failed to get workloop\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configureUSB2PortObject(@0x%x) - Changing USB2 Datarole in IOPort to fUSBDfp = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setUSB2PortObjectInactive(@0x%x) - usb2handle setting inactive\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::Start - Failed to get workloop\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType10::forceUSB23On(@0x%x) - advertise unplug\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMPin(0x%x) - ref already set, skipping\n\n`
+- `AppleTCController::resolvePHandle - failed after apple,phandle\n`
+- `AppleUSBCController<%p>::configureUSBRemoteWakeup - start.  Function locate done\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::isCableKartCapable(0x%x) - passive cable detected\n\n`
+- `HPM Interrupt Enabled`
+- `%s::%s(0x%x@0x%x): AppleTCController::createTunnelClientCallBacks(@0x%x) - Tunnel client call back created successfully\n\n`
+- `AppleUSBCController<%p>::usbDataMonitor - error executing 'USBd'\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::initSingleHPM - interrupt-type isn't 32-byte aligned no interrupts at all.\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMPin(0x%x) - Could not assign muxsel0, returning Error\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::hpmInterruptAction(@0x%x) - Interrupt Recieved\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::callPlatformFunction(0x%x) - exit called with %d\n\n`
+- `AppleUSBCController<%p>::start - can't create workloop\n`
+- `%lldus AppleUSBCController<%p>::configureUSBRemoteWakeup - start.  Function locate done\n`
+- `!!!!! AppleUSBCController<%p>::writeRegsGated - had to retry as status = 0x%X (remaing retries: %u)\n`
+- `HPM Mode Block Active`
+- `AppleHPMLDCM::start - couldn't allocate waveform buffer, failing start\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::genericStart - HPMV1\n\n`
+- `commonStartPhase1`
+- `%s::%s(0x%x@0x%x): AppleTCController::setupDP2Client(@0x%x) - Tunnel DP2 client does not exist!\n\n`
+- `sendDataControl2`
+- `NOT Active`
+- `%lldus AppleUSBCController<%p>::usbDataMonitor - error setting orientation: 0x%X\n`
+- `acc-hal-type`
+- `%s::%s(0x%x@0x%x): AppleTCController::driverStatusInterrupt: turnOnVbus\n`
+- `**** AppleUSBCController<%p>::start - failed to get _interruptSource from _iicProvider\n`
+- `%lldus **** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     ** requesting reprobe ** (REPROBE!)\n`
+- `AppleUSBCController<%p>::usbDataConnect - start.  type = %s, connected = %s\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::readRegWithLength(@0x%x) - Read completed after 0x%x retries\n\n`
+- `site.AppleHPMAIDType1`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType1::configureDP(@0x%x) - powering on DP\n\n`
+- `AppleUSBCController<%p>::setSystemPowerState - error writing kAceRegisterData1 - retrying (status = 0x%X)\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - (initial) outRsp: %s\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType10::startUSBTimer(@0x%x) - called\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::usbDataMonitor(@0x%x) - No orientation function\n\n`
+- `AppleUSBCController::start: SAFETY!! Was still holding gate at end of method?\n`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: wrote kAceRegisterData1.  status = 0x%X\n`
+- `AppleUSBCController<%p>::PowerStateThreadEntry(%u)\n`
+- `ldcmInterruptAction`
+- `setupUSBTunnelClient`
+- `AppleTCControllerType10`
+- `%s::%s(0x%x@0x%x): AppleTCController::getAndClearInterrupt(@0x%x) - start\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController:callPlatformFunction(0x%x) - setSleepState called with no valid data\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType16::start fHALType5 %p\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType16::processInterruptEvents(@0x%x) - Ridge Ready Event\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerAssignableTransport::createUSB3PortObject(@0x%x) - creating usb3 port object tunnelAdapterType=%d\n\n`
+- `Exit PD Mode DRST Data`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::usbChangeNotification: kIOPortTransportState_Message_DriverStatusChange\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::driverStatusInterrupt\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::Start - failed to match on dock\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::challengeCrypto(@0x%x) - HPMV1 function handle NOT found\n\n`
+- `%lldus ** AppleUSBCController<%p>::updateCachedRegisters - Ace detect failure - no response\n`
+- `USB Configuration`
+- `createPCIePortObject`
+- `createTunnelManager`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setupUSBType2TunnelClient(@0x%x) - Tunnel USB Type2 client does not exist!\n\n`
+- `assignLDCMHandle`
+- `AppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode - disabling interrupts for firmware update\n`
+- `Host (DFP)`
+- `%lldus AppleUSBCController<%p : %p>::configureUSBRemoteWakeup - error setting Ace SPS\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::initSingleHPM - Failed to get command gate\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::challengeCrypto(@0x%x) - Aborting due to previous errors\n\n`
+- `AppleHPMSMCBridge`
+- `%s::%s(0x%x@0x%x): AppleTCController::setPowerStateHPM(@0x%x) - SSPS executed, status = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::tunnelClientChange(@0x%x) - dp1 client ping\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::tunnelClientChange(@0x%x) - pci client ping\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setupMatchingForLDCM - matcher failed to setup, no LDCM\n\n`
+- `DISCONNECTED`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType10::stoptAMETimeoutTimer(@0x%x) - called\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::disablePort(@0x%x) - port disable aborted, length of buffers wrong\n\n`
+- `\nAppleUSBCController<%p : %p>::start - _isAce1:%s _isAce2: %s, buffer: %02X %02X %02X %02X\n\n`
+- `%lldus Ace version check failure - no response\n`
+- `AppleUSBCController<%p : %p>::handleAccessoryDetect - forcing disconnected as hardware not enabled (yet)\n`
+- `Disconnected`
+- `AppleUSBCController<%p> - DP Mode: %s Assignment %s\n`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: wrote kAceRegisterData1 (USBwParams = 0x%X).  status = 0x%X\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType14::processInterruptEvents(@0x%x) - interrupts = 0x%x 0x%x 0x%x\n\n`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setPowerStateHPM(@0x%x) - SSPS transition to 0x%x skipped, waiting for USB\n\n`
+- `function-LDCMpower`
+- `HPM Interrupt Disabled (Sleep)`
+- `%s::%s(0x%x@0x%x): AppleTCController::genericStart(@0x%x) - Allow unplugs when in ForceUpdateMode\n\n`
+- `ace-redriver-params`
+- `%lldus AppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode - Accessory reprobe delayed until power state has been raised to max power\n`
+- `configureUSBRemoteWakeup`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType16::start - Failed to allocate DC2 IOIES\n\n`
+- `SafeSleep`
+- `CONNECTED`
+- `%lldus AppleUSBCController<%p>::updateCachedRegisters - kAceRegisterMode read failure - no response\n`
+- `DIFFER`
+- `AppleUSBCController<%p>::challengeCrypto - wrote kIECSRegisterData1: %s\n`
+- `HChk`
+- `Forced Status Reg`
+- `%s::%s(0x%x@0x%x): AppleTCController::createDPPortObject(@0x%x) - dp is not setup\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMPin(0x%x) - Could not assign muxsel0, returning Error\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType11::poweredStart(@0x%x) - start\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerAssignableTransport::poweredStart(@0x%x) - start\n\n`
+- `%lldus AppleUSBCController<%p>::setPowerState - grabbing lock.  On thread: %s\n`
+- `%lldus AppleUSBCController<%p : %p>::handleAccessoryDetect - Power not yet on... enabling powerDelayTimer\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::callPlatformFunction(0x%x) - igvb called no valid data\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::ignoreVbusLoss(@0x%x) - Called with arg 0x%x\n\n`
+- `site.AppleHPMInterfaceType14`
+- `Mux State`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMPin(0x%x) - ACE Debug already set, skipping\n\n`
+- `active`
+- `%lldus AppleUSBCController<%p : %p>::handleAccessoryDetect - forcing disconnected as hardware not enabled (yet)\n`
+- `UFP`
+- `hpmSSAMTest`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::readReg(@0x%x) - Reading 0x%x with Length of 0x%x\n\n`
+- `root`
+- `AppleHPMARM::start - hpmPowerDelaySnk boot-arg: %u ms\n`
+- `%lldus \nAppleUSBCController<%p : %p>::start - _isAce1:%s _isAce2: %s, buffer: %02X %02X %02X %02X\n\n`
+- `AppleUSBCController<%p> - USB Mode: Disabled\n`
+- `%lldus ** AppleUSBCController<%p>::updateCachedRegisters - _isRestoreOS: %s\n`
+- `Device (UFP)`
+- `%X`
+- `hpm-exit-dfu`
+- `%s::%s(0x%x@0x%x): no sop data, can't tell if captive, setting true by default\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::repeaterReset(@0x%x) - Called with target 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::createPCIePortObject(@0x%x) - pcie transport allocation failed\n\n`
+- `%lldus AppleUSBCController::challengeCrypto: CRYm failed to complete - timed out? (time taken: approx %u msecs)\n`
+- `%lldus AppleUSBCController<%p>::SleepWakeThreadEntry(%s)\n`
+- `AppleUSBCController<%p>::SleepWakeThreadEntry - grabbing lock.  On thread: %s\n`
+- `AppleHPMLDCM`
+- `site.TriStarCompanionChallengeCryptoOut`
+- `createUSB2PortObject`
+- `createTBTPortObject`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::Start - Failed to get dockPhandle\n\n`
+- `Reported USB Options`
+- `** AppleUSBCController<%p>::updateCachedRegisters - cached_statusReg.bits.plugPresent: %s\n`
+- `AppleUSBCController<%p>::challengeCrypto - Outgoing parameters:\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType14::processInterruptEvents(@0x%x) - Start\n\n`
+- `%lldus **** AppleUSBCController<%p : %p>::statusReg.bits.plugOrientation    %s  ** This has no bearing on detection for USB **\n`
+- `%lldus AppleUSBCController<%p>::configureUSBRemoteWakeup -  USB wake should now be enabled.  ACK'ing power state change.  _interruptSource->disable()'d\n`
+- `AppleUSBCController::challengeCrypto: failed to write kAceRegisterData1.  status = 0x%X\n`
+- `AppleHPMLDCM::start - couldn't allocate status buffer, failing start\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::genericStart(@0x%x) - In OTA\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::initSingleHPM - interrupt-type and interrupts not equal length, things will not work. No SPMI slee/wake support\n\n`
+- `SOPMfgString`
+- `%s::%s(0x%x@0x%x): AppleTCController::initInterruptManager - LDCM not started, setting up matcher\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::readReg(@0x%x) - Read completed after 0x%x retries\n\n`
+- `setmitigations called with 0x%x\n`
+- `I2C Read Failed`
+- `AppleHPMInterfaceType15`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType10::configureUSBRemoteWakeup(@0x%x) - Called with args 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMPin(0x%x) - LDCM unsupported\n\n`
+- `displayport-tx`
+- `**** AppleUSBCController<%p>::start - failed to get port redriver params from _iicProvider\n`
+- `AppleHPMLDCM::getHPMCommsBus - failed to get communication bus service, no messages will be sent`
+- `acio-parent`
+- `%s::%s(0x%x@0x%x): AppleTCController::genericStart - failed to match on dock\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMPin(0x%x) - loopback already set, skipping\n\n`
+- `IOPMSystemSleepType`
+- `A`
+- `AppleUSBCController<%p> - DataStatus Register failed to read: 0x%04X\n`
+- `AppleUSBCController<%p> - DFUf does not claim DataConnection\n`
+- `AppleHPMARM::startSMCDelayUVDM -- SMC key write failed 0x%x\n`
+- `setLDCMMitigationsEnabled`
+- `AppleHPMBusController::start - being called\n`
+- `AppleHPMDeviceHALType5::getUSBConfigBuffer %02x %02x %02x %02x\n`
+- `site.AppleHPMARMSPMI`
+- `compatible`
+- `AppleHPMInterface::resolvePHandle - failed waiting for service\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::initSingleHPM - Failed to get dockPhandle\n\n`
+- `\"This Ace1 card appears to be of an old, obsolete design and is NOT compatible with this OS. (%u)\" @%s:%d`
+- `AppleUSBCController<%p>::start - could not add _remoteWakeSafetyTimer\n`
+- `AppleUSBCController<%p> - stop: cancelling timeout (if it was armed)\n`
+- `Ace reports an invalid combination of bits - bad DP pin assignment\n`
+- `site.AppleHPMDeviceHALType5`
+- `%lldus **** AppleUSBCController<%p : %p>::dataStatusReg.bits.DPPinAssignment %s\n`
+- `AppleUSBCController<%p>::SleepWakeThreadEntry(%s)\n`
+- `tunnelClientChangeWithParams`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMPin(0x%x) - unknown pin value, returning unsupported\n\n`
+- `DP Lane Mapping Index`
+- `%lldus AppleUSBCController<%p> - USB Mode: Forced Disconnected (Not yet operating)\n`
+- `%lldus AppleUSBCController<%p> - Status Register failed to read: 0x%04X\n`
+- `** AppleUSBCController<%p>::updateCachedRegisters - cached_statusReg.bits.ModalTaskActive: %s\n`
+- `AppleUSBCController<%p>::challengeCrypto - Data Register failed to read: 0x%04X\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::genericStart(@0x%x) - disable USBPD SOP nub publishing set 0x%X\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::isCableKartCapable(0x%x) - role is wrong, issuing discovery on sop'\n\n`
+- `site.AppleTCControllerType1`
+- `%lldus AppleUSBCController<%p>::setPowerState - Waking\n`
+- `%lldus AppleUSBCController reporting a DP connection.  Pin assignment: %u.  dpSinkpinAssignment: %s.  dpSourcepinAssignment: %s\n`
+- `*** USB wake control function found OK\n`
+- `AppleHPMARMSPMI::start - RTPC disabled due to missing events or timers\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setupPowerManagement(@0x%x) - Power registration failed! with status = 0x%x\n\n`
+- `primary-port-id`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::start(@0x%x) - Start\n\n`
+- `site.AppleTCControllerType10`
+- `site.AppleHPMUserClient`
+- `%lldus **** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     status = 0x%X, updatedUSB = %s, updatedDP = %s\n`
+- `AppleUSBCController<%p> - _dfuWorkAroundsPending... Forcing registers to be updated\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createDPPortObject(@0x%x) - dp is not setup\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createTunnelClient(@0x%x) - Tunnel manager does not exist, not creating\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::tunnelClientChangeWithParams(@0x%x) - dropping usb Type2 Handle(%d/%d)\n\n`
+- `AppleHPMInterfaceType10::overrideHPMMode -- enforce=%d, keepRoleAndOrientation=%d, dataStatus=%u, status=%u\n`
+- `**** AppleUSBCController<%p>::start - redriver_params: 0x%04X\n`
+- `AppleUSBCController<%p : %p>::setPowerState - entering.  %p = %u:%u(%u) -> %lu\n`
+- `%lldus AppleUSBCController<%p> - DataStatus Register Cache Updated: 0x%02X%02X%02X%02X%02X\n`
+- `**** AppleUSBCController<%p : %p>::dataStatusReg.bits.USB2Connection %s\n`
+- `configureUSB3PortObject`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::evaluateHpd(0x%x) - fhpdgpio not found\n\n`
+- `AppleHPMARMI2C`
+- `AppleUSBCController<%p>::start - could not allocate _powerDelayTimer\n`
+- `AppleUSBCController reporting *NO* DP connection\n`
+- `connState`
+- `%lldus AppleUSBCController<%p> - USB Speed: %s\n`
+- `%lldus *** USB wake control function found OK\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::initSingleHPM - failed to match on dock\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::challengeCrypto(@0x%x) - CRYm exeucted and took ~%u ms\n\n`
+- `%s::%s(0x%x@0x%x): service did NOT match, belongs to different node\n\n`
+- `site.AppleHPMLDCMType2`
+- `12111112122212121221`
+- `%lldus AppleUSBCController<%p>::usbDataMonitor - error executing 'USBd'\n`
+- `%lldus AppleUSBCController<%p>::usbDataDetect - attempting to set orientation: 0x%X\n`
+- `Waking`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setCurrentModeFlags(@0x%x) - Process data and status register\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createPCIePortObject(@0x%x) - pcie transport allocation failed\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::processInterruptEvents(@0x%x) - Start\n\n`
+- `AppleUSBCController<%p>::configureUSBRemoteWakeup - (4) got lock!\n`
+- `%lldus *** accessory TriStar orientation function not found\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::genericStart(@0x%x) - Allow unplugs when in ForceUpdateMode\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMPin(0x%x) - Could not assign muxsel1, returning Error\n\n`
+- `AppleHPMDeviceHAL::readReg - read FAILED! to ADDR = 0x%x\n`
+- `site.AppleHPMSMCBridge`
+- `Invalid`
+- `%lldus AppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode - entering. Flags = 0x%X.  onThread: %s\n`
+- `setupDPController failed, ret=0x%08x\n`
+- `DFUf Status`
+- `hpmAllowUsb3Restore`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setupDP4Client(@0x%x) - Tunnel DP4 client does not exist!\n\n`
+- `startRoleswapTimeoutTimer`
+- `%lldus ** AppleUSBCController<%p>::updateCachedRegisters - cached_statusReg.bits.plugPresent: %s\n`
+- `Mode after GAID`
+- `AppleHPMARM can't find AppleSMCFamily\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::initInterruptManager - LDCM not started, setting up matcher\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::callPlatformFunction(0x%x) - igvb called with %d\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::isDeviceKartCapable(0x%x) - returning %x\n\n`
+- `AppleUSBCController<%p>::challengeCrypto - returned bufferDWords[0]: 0x%08X\n`
+- `%lldus AppleUSBCController::challengeCrypto: function not found\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configureRecoveryStatus(@0x%x) - Driving Low\n\n`
+- `AppleTCControllerTypeSim::start\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::genericStart(@0x%x) - Force allow USB3\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setCurrentModeFlags(@0x%x) - No plug detected, all flags cleared\n\n`
+- `AppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode - exiting.  status = 0x%X\n`
+- `%lldus AppleUSBCController<%p>::SleepWakeThreadEntry - enabling normal operation on Ace.  _interruptSource->enable()'d\n`
+- `setPinConfiguration`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::tunnelClientChange(@0x%x) - dp4 client ping\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::createTunnelHandles(@0x%x) - Tunnel manager already exists\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::createTunnelHandles(@0x%x) - failed to create tunnel manager!\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setupUSBType2TunnelClient(@0x%x) - Tunnel USB Type2 client does not exist!\n\n`
+- `%lldus AppleUSBCController<%p>::usbDataMonitor - error writing kAceRegisterData1 (status: 0x%X)\n`
+- `processModeFlags`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::resetDataControl(@0x%x)\n\n`
+- `function-LDCM_Mux_Sel1`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::Start(@0x%x) - Failed to get command gate\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setCurrentModeFlags(@0x%x) - OTA upgrade check\n\n`
+- `AppleHPMARMI2C::start - hpmI2CNonCompliant boot-arg: %u\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerAssignableTransport::start(@0x%x) - Start\n\n`
+- `%lldus AppleUSBCController<%p>::setPowerState - signaling SleepWake Thread (AppleAceSystemIsWaking) - WillAckLater\n`
+- `usbc,cd3217`
+- `%s::%s(0x%x@0x%x): AppleTCController::challengeCrypto(@0x%x) - Warning: CRYm returned !CMD, aborting\n\n`
+- `%lldus AppleUSBCController<%p> - Ace reports Overcurrent or PowerFault\n`
+- `Flipped`
+- `**** AppleUSBCController<%p : %p>::updateUSB = %s\n`
+- `AppleUSBCController::configureUSBRemoteWakeup: SAFETY!! Was still holding gate at end of method?\n`
+- `getSecondaryMuxConfig`
+- `site.AppleHPMInterfaceType3`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType1::configureDP(@0x%x) - powering off DP\n\n`
+- `%lldus AppleUSBCController<%p>::setSystemPowerState - error writing kAceRegisterData1 - retrying (status = 0x%X)\n`
+- `%lldus Ace reports an invalid combination of bits - USB3 and DP snk\n`
+- `AppleUSBCController<%p>::usbDataDetect - error setting orientation: 0x%X\n`
+- `resetDataControl`
+- `%s::%s(0x%x@0x%x): SSPS blocked due to forced usb device role and UFPf\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMPin(0x%x) - Could not find iicProvider, returning Error\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::setPinConfiguration(@0x%x) - Could not reconfigure pin configuration dictionary\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setPinConfiguration(@0x%x) - No pin config set, no data connection\n\n`
+- `%lldus AppleUSBCController<%p : %p>::setDPConfiguration - setMaxLaneCount got error abort: 0x%X\n`
+- `%lldus AppleUSBCController<%p>::SleepWakeThreadEntry - grabbing lock.  On thread: %s\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::callPlatformFunction(0x%x) - prst called no valid data\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMState(0x%x) - called with state = 0x%x\n\n`
+- `AppleUSBCController<%p>::start - hpmusbcdisable has been set.  Bypassing operation\n`
+- `%lldus setupDPController failed, ret=0x%08x\n`
+- `*** crypto function not found\n`
+- `%lldus AppleUSBCController<%p>::usbDataConnect - end.  status = 0x%X\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMPinsInternal(0x%x) - setting sel0 to 0x%x, sel1 to 0x%x\n\n`
+- `121111121222121212`
+- `hpmlog`
+- `%s::%s(0x%x@0x%x): AppleTCController::tunnelClientChange(@0x%x) with USB Type2 object... Quiting...\n\n`
+- `%lldus **** AppleUSBCController<%p : %p>::interruptAction(%p, %d) - Ace has detected an overcurrent situation\n`
+- `Route String`
+- `mUFC`
+- `AppleUSBCController<%p>::start - registerPowerDriver gave: 0x%X\n`
+- `D`
+- `F`
+- `AppleUSBCController<%p> - Modal task active: %c%c%c%c\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::enableOptions(0x%x) - enabling kart\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::challengeCrypto(@0x%x) - HPMV1 crypto called\n\n`
+- `%lldus AppleUSBCController::remoteWakeSafetyTimeoutGated: setSystemPowerState returned an error: 0x%X\n`
+- `APP`
+- `readReg`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::callPlatformFunction(0x%x) - prst called with 0, setting it to 1\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::isDeviceKartCapable(0x%x) - valid sop entries %x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setupMatchingForLDCM - matcher failed to setup, no LDCM\n\n`
+- `%lldus calling super::stop()!\n`
+- `%lldus AppleUSBCController<%p>::modeCheck - BOOT mode.  Got 0x %02X %02X %02X %02X %02X %02X %02X %02X\n`
+- `AppleUSBCController<%p>::hpmEnterExitFirmwareUpdateMode - unable to find reason for being stuck in BOOT\n`
+- `AppleHPMARMSPMI::sendHPMReset(@0x%x) - Workaround entry found, resetting port\n`
+- `rx2`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::processInterruptEvents(@0x%x) - Start\n\n`
+- `LegacyTBT`
+- `%lldus AppleUSBCController<%p> - USB Mode: No USB Link\n`
+- `%lldus AppleUSBCController<%p> - DP Mode: %s Assignment %s\n`
+- `AppleUSBCController<%p>::configureUSBRemoteWakeup - (2) grabbing lock.  On thread: %s\n`
+- `%lldus *** USB data connect function not found\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::processStatusRegisters(@0x%x) - fWaitingForUSB = 0x%x, fOverrideHPMMode = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType14::startRoleswapTimeoutTimer(@0x%x) - called\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::resetDataControl(@0x%x)\n\n`
+- `stopping!\n`
+- `DP Sink Configuration`
+- `AppleSMC`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::genericStart(@0x%x) - Enabling Debug, Flags = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::genericStart(@0x%x) - ***allow usb3 restores: %u***\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType16::setInterruptMask(@0x%x) - start\n\n`
+- `AppleUSBCController<%p>::start - could not allocate accessory detection timers\n`
+- `Normal`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configureUSB2PortObject(@0x%x) - USB2 added and ready\n\n`
+- `Boot Flags`
+- `AppleHPMInterfaceType14`
+- `%s::%s(0x%x@0x%x): AppleTCController::createUSB2PortObject(@0x%x) - USB2 is setup\n\n`
+- `%s::%s(0x%x@0x%x): USB4 \n`
+- `PowerOff`
+- `AppleUSBCController<%p>::updateCachedRegisters\n`
+- `AppleUSBCController<%p>::updateCachedRegisters - BOOT mode.  Got 0x %02X %02X %02X %02X %02X %02X %02X %02X\n`
+- `AppleHPMInterfaceType10`
+- `%s::%s(0x%x@0x%x): AppleTCController::setPinConfiguration(@0x%x) - ERROR INVALID PIN CONFIG FOR DP MULTIFUNCTION\n\n`
+- `**** AppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode -     statusReg.bits.plugPresent = %u, dataStatusReg.bits.DataConnection = %u, dataStatusReg.bits.DPConnection = %u, _currentPowerState = %u, _usbcEnabled = %u, _remoteWakeEnabled = %u\n`
+- `AppleUSBCController<%p>::configureUSBRemoteWakeup - got lock!\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - returned returnedMValue: 0x%hhX\n`
+- `AppleHPMLDCMType3`
+- `AppleHPMLDCM::enableLDCMMitigation - Mitigation enable = 0x%x\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::tunnelClientChangeWithParams(@0x%x)\n\n`
+- `configureDPPortObjectStatic`
+- `Standby`
+- `AppleUSBCController<%p>::challengeCrypto - (%02X %02X %02X %02X %02X %02X %02X %02X)\n`
+- `AppleHPMARMI2C::start - i2c retry interval set to: %u ms\n`
+- `AppleUSBCController<%p>::start - failed to start provider\n`
+- `%lldus AppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode - exiting.  status = 0x%X\n`
+- `%lldus *** USB data monitor function not found\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::tunnelClientChange(@0x%x) with USB Type2 object... Quiting...\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::evaluateHpd(0x%x) - HPD = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setupMatchingForLDCM - Failed to allocate callback, LDCM wont' work properly\n\n`
+- `%lldus AppleUSBCController<%p : %p>::handleAccessoryDetect - returning error as accessoryID isn't valid (accessoryID = %p)\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - keyIndex: %llu\n`
+- `AppleHPMARMSPMI::start - Missing interrupt property, Check the EDT, AppleHPM will not be fully functional\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setPowerStateHPM(@0x%x) - SSPS executed, status = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMUserOverrideActive(0x%x) - called with userOverrideActive = 0x%x\n\n`
+- `tUSBTimeout`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType10::start(@0x%x) - no command gate\n\n`
+- `%lldus setDPConfiguration(%u, %u): IODPController not present (would power ON)\n`
+- `%lldus AppleUSBCController<%p> - DFUf does not claim DataConnection\n`
+- `*** USB data monitor function not found\n`
+- `IONVRAM`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setupPCIClient(@0x%x) - Tunnel PCI client does not exist!\n\n`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `ForceMode`
+- `%s::%s(0x%x@0x%x): AppleTCController::startAnalyticsTimer(@0x%x) - called\n\n`
+- `Port Micro UID`
+- `AppleUSBCController reporting *NO* USB connection\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::configurePCIePortObject(@0x%x) - Failed to activate tunneled transport, no tbthandle\n\n`
+- `AppleHPMDeviceHAL::setRxMIDBSOPStar - no data, buffer or struct is null\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::usbDataMonitor(@0x%x) - No data monitor function\n\n`
+- `AppleHPMDeviceHALType4::parseInterrupts - LDCM VBus event detected\n`
+- `%lldus DPSourceSink: 0x%X\n`
+- `%lldus **** AppleUSBCController<%p : %p>::dataStatusReg.bits.DPSourceSink    %s\n`
+- `AppleUSBCController::configureUSBRemoteWakeup: Configuring for full speed device\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setCurrentModeFlags(@0x%x) - ***Mode changed to UFPf, boot-arg likely, fRestore = 0x%x***\n\n`
+- `rtPanicHandler`
+- `**** AppleUSBCController<%p : %p>::updateDP = %s\n`
+- `Disabled/Firmware Update`
+- `%s::%s(0x%x@0x%x): AppleTCController::processInterruptEvents(@0x%x) - AppLoaded, reinit\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createUSB2PortObject(@0x%x) - USB2 is setup\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType10::forceUSB23On(@0x%x) - force usb23 on, setting fWaitingForUSB to true\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::tunnelClientChange(@0x%x) - dp2 client ping\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType1::communicateDPHPDChange(@0x%x) - Unused in this class\n\n`
+- `AppleUSBCController<%p>::SleepThreadEntry - operationMode: %s, usbMode: %u, _remoteWakeEnabled: %s\n`
+- `initInterruptManager`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::initSingleHPM - Missing interrupt property, Check the EDT, AppleHPM will not be fully functional\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configureUSB2PortObject(@0x%x) - WARNING: USB2 already exists\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createPCIePortObject(@0x%x) - pcie is setup\n\n`
+- `%s::%s(0x%x@0x%x): service and provider matched\n\n`
+- `%s::%s(0x%x@0x%x): DP \n`
+- `AppleHPMARM::start - hpmI2CRetries boot-arg: %u ms\n`
+- `AppleUSBCController<%p>::start - provider from wrong platform (do we care?)\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::configureUSBRemoteWakeup(@0x%x) - Called with args 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMLiquidDetected(0x%x) - called with liquidDetected = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::initInterruptManager - Failed to get workloop\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setCurrentModeFlags(@0x%x) - forcing usb2 + ufp for debug\n\n`
+- `Last`
+- `%lldus AppleUSBCController<%p> - USB Mode: Disabled\n`
+- `** AppleUSBCController<%p>::updateCachedRegisters - _isRestoreOS: %s\n`
+- `Last Read Status Register`
+- `RTPC disabled due to spmi acks`
+- `%s::%s(0x%x@0x%x): AppleTCController::processInterruptEvents(@0x%x) - Adjusting HPM power state to active unplugged\n\n`
+- `setupUSBType2TunnelClient`
+- `function-ldcmInvalid`
+- `AppleTCController::resolvePHandle - failed waiting for service\n`
+- `communicateDPHPDChange`
+- `AppleUSBCController<%p> - No connection type specified.  Assuming USB as DFP until told otherwise\n`
+- `%lldus AppleUSBCController<%p>::configureUSBRemoteWakeup - (4) grabbing lock.  On thread: %s\n`
+- `Forced Data Status Reg`
+- `%lldus AppleUSBCController<%p> - Modal task active: %c%c%c%c\n`
+- `Plug Orientation`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: no _usbWakeControlFunction.  Skipping actions\n`
+- `AppleUSBCController<%p>::challengeCrypto - Got back unexpected command state: 0x%02X\n`
+- `AppleUSBCController<%p>::PowerStateThreadEntry - setSystemPowerState(%u) returned 0x%X\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::challengeCrypto(@0x%x) - Warning: Failed reading data with status = 0x%x, aborting\n\n`
+- `AppleHPMDeviceHAL::setBRDataControl - WARNING: Abnormal Data Control Length = 0x%x\n`
+- `AppleHPMARMI2C::start - hpmlog boot-arg: 0x%X\n`
+- `AppleUSBCController<%p>::start - bypassHardwareStart!\n`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: returning status = 0x%X\n`
+- `AppleUSBCController<%p>::challengeCrypto - returned returnedKeyID: 0x%X\n`
+- `AppleUSBCController::remoteWakeSafetyTimeoutGated: _powerStateACKRequested = 0x%X\n`
+- `%s::%s(0x%x@0x%x):  <<< \n\n`
+- `setCurrentModeFlags`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::isDeviceKartCapable(0x%x) - returning %x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::genericStart(@0x%x) - Start\n\n`
+- `AppleUSBCController<%p> - Polling timer expired\n`
+- `DFP (or disabled)`
+- `*** USB data connect function not found\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType10::tUSBTimeout(@0x%x) - called\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType10::tAMETimeout(@0x%x) - called\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setInterruptMask(@0x%x) - start\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::createDPPortObject(@0x%x) - dp transport allocation failed\n\n`
+- `configureDPPortObject`
+- `%s: Disabling RTPC\n`
+- `function-usb_dmonitor`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::challengeCrypto(@0x%x) - HPMV1 function handle found, executing\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::challengeCrypto(@0x%x) - HPMV1 function handle found, executing\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMPin(0x%x) - loopback already set, skipping\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createTunnelClient(@0x%x) - Tunnel client failed for type 0x%x, index 0x%x\n\n`
+- `roleswapTimeoutCallback`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::start(@0x%x) - In Restore\n\n`
+- `site.AppleTCControllerType12`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType1::configureUSBRemoteWakeup(@0x%x) - Called with args 0x%x\n\n`
+- `DPConnection: 0x%X\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType10::poweredStart(@0x%x) - start\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::enableOptions(0x%x) - enabling kart\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType3::start\n\n`
+- `AppleHPMDeviceHAL`
+- `AppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode - entering. Flags = 0x%X.  onThread: %s\n`
+- `AppleUSBCController<%p : %p>::handleAccessoryDetect - Setting DP config\n`
+- `**** AppleUSBCController<%p : %p>::handleAccessoryUSBMode: !powerSource\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - Got back unexpected command state: 0x%02X\n`
+- `0123456789ABCDEF`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::setAccessoryID(@0x%x) - Status = 0x%x accessoryID = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::writeReg(@0x%x) - Writing to register 0x%x with Data %s\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::createTunnelClientCallBacks(@0x%x) - Tunnel client does not exist!\n\n`
+- `updatedUSB: %s,  updatedDP: %s.  requesting reprobe\n`
+- `AppleUSBCController accessoryDetect = %s\n`
+- `%lldus AppleUSBCController<%p> - DP Mode: No DP Link\n`
+- `AppleHPMIECS`
+- `setupDP1Client`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMPin(0x%x) - already Hi-Z, skipping\n\n`
+- `%lldus AppleUSBCController<%p>::configureUSBRemoteWakeup - (3) grabbing lock.  On thread: %s\n`
+- `AppleUSBCController<%p>::challengeCrypto - got lock!\n`
+- `%lldus AppleUSBCController<%p>::usbDataMonitor - not (yet) supported on this hardware (non-Ace1)\n`
+- `%lldus **** AppleUSBCController<%p : %p>::PowerStateThreadEntry - Waiting for USBw to disable before setting Ace power state - statusReg.bits.plugPresent = %u, dataStatusReg.bits.DataConnection = %u, dataStatusReg.bits.DPConnection = %u, _currentPowerState = %u, _usbcEnabled = %u, _remoteWakeEnabled`
+- `/options`
+- `0x%x`
+- `%s::%s(0x%x@0x%x): AppleTCController::isCableKartCapable(0x%x) - returning %x\n\n`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `%lldus AppleUSBCController<%p : %p>::setSystemPowerState - invalid power state requested: %u\n`
+- `**** AppleUSBCController<%p : %p>::statusReg.bits.plugOrientation     %s\n`
+- `AppleUSBCController::configureUSBRemoteWakeup: no _usbWakeControlFunction.  Skipping actions\n`
+- `12111112122212121111211212222212112111111122`
+- `Data Status Reg`
+- `%s::%s(0x%x@0x%x): Updating SSAM connection with header 0x%x and data 0x%x\n\n`
+- `121111121222121211111121111121222222221122111111121221121`
+- `%s::%s(0x%x@0x%x): AppleTCController::initSingleHPM - Failed to get command gate\n\n`
+- `%lldus AppleUSBCController<%p> - pollTimeoutGated: cancelling timeout (if it was armed)\n`
+- `enabled (system input)`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - outRsp: %s\n`
+- `disablePort`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType10::forceUSB23On(@0x%x) - advertise unplug\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::challengeCrypto(@0x%x) - HPMV1 Function NOT found, non-fatal\n\n`
+- `**** AppleUSBCController<%p : %p>::dataStatusReg.bits.USB3Connection %s\n`
+- `commonStartPhase2`
+- `%s::%s(0x%x@0x%x): AppleTCControllerAssignableTransport::configureTBTPortObject(@0x%x) - Failed to activate transport!\n\n`
+- `AppleUSBCController<%p>::start - can't get provider's provider\n`
+- `calling super::stop()!\n`
+- `**** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     ** reprobe delayed until power state is correct ** (REPROBE!)\n`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: Configuring for full speed device\n`
+- `USB2`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createTunnelHandles(@0x%x) - Tunnel manager already exists\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::start(@0x%x) - In OTA\n\n`
+- `AppleHPMDeviceHALType5::writeDataControl2 returned 0x%x\n`
+- `%lldus AppleUSBCController<%p>::modeCheck - unable to find reason for being stuck in BOOT\n`
+- `2`
+- `hpmLDCMEnableWaveAndPeriodic`
+- `LDCMTestCommand`
+- `%s::%s(0x%x@0x%x): AppleTCController::genericStart - Super failed to start\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::initSingleHPM - LDCM not started, setting up matcher\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setupUSBTunnelClient(@0x%x) - Tunnel USB client does not exist!\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType1::setPowerStateHPM(@0x%x) - SSPS executed, status = 0x%x\n\n`
+- `AppleUSBCController<%p> - Ace Application was reloaded (watchdog?)\n`
+- `%lldus **** AppleUSBCController<%p : %p>::dataStatusReg.bits.USB3Connection %s\n`
+- `virtual bool AppleHPMARMSPMI::start(IOService *)`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `1211121111`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::usbDataConnect(@0x%x) - No data connect function\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setupUSBTunnelClient(@0x%x) - Tunnel USB client does not exist!\n\n`
+- `forceUSB3`
+- `%s::%s(0x%x@0x%x): AppleTCController::callPlatformFunction(0x%x) - prst called with 0, setting it to 1\n\n`
+- `%lldus AppleUSBCController<%p>::hpmEnterExitFirmwareUpdateMode - got lock!\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::isCableKartCapable(0x%x) - valid sop' entries = %x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setUSB2PortObjectInactive(@0x%x) - usb2handle setting inactive\n\n`
+- `%lldus restoring normal operation mode\n`
+- `%lldus ** AppleUSBCController<%p>::updateCachedRegisters - cached_statusReg.bits.ModalTaskActive: %s\n`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: Configuring for no device\n`
+- `AppleTCControllerType14`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::tunnelClientChange(@0x%x) - dp3 client ping\n\n`
+- `AppleHPMInterface::powerStateWillChangeTo - Waking from hibernate\n`
+- `Expected HPM Controllers`
+- `AppleUSBCController.cpp`
+- `%lldus AppleUSBCController<%p> - Polling timer expired\n`
+- `**** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     PP_5V0switch is %s\n`
+- `%lldus **** AppleUSBCController<%p : %p>::updateCachedRegisters - statusRegUpdated: %s, dataStatusRegUpdated: %s, _dfuWorkAroundsPending: %s, _dfuWorkAroundsActive: %s\n`
+- `CF VID Status Reg`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::sendDpStatusUpdates(@0x%x) - IRQ = %i\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::challengeCrypto(@0x%x) - Starting HPMV2 execution\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType15::roleswapTimeoutCallback - swap waited, retrying\n\n`
+- `starttAMETimeoutTimer`
+- `%s::%s(0x%x@0x%x): AppleTCControllerSingleTransport::Start - Failed to get interrupt provider\n\n`
+- `AppleHPMInterfaceType11`
+- `AppleUSBCController<%p>::updateCachedRegisters - kAceRegisterMode read failure - no response\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerAssignableTransport::probe - failed!\n\n`
+- `*** USB wake control function not found\n`
+- `%lldus AppleUSBCController<%p>::usbDataDetect - error writing kAceRegisterData1 (aceStatus: 0x%X)\n`
+- `%lldus AppleUSBCController<%p>::PowerStateThreadEntry - setSystemPowerState(%u) returned 0x%X\n`
+- `forcePortEvaluation`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::rtPanicHandler(@0x%x) - RT panic, incrementing count\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType10::forceUSB23On(@0x%x) - force usb23 on, setting fWaitingForUSB to true\n\n`
+- `1211111212221212111121121222221122`
+- `%s::%s(0x%x@0x%x): AppleTCController::readReg(@0x%x) - Reading 0x%x with Length of 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::createPCIePortObject(@0x%x) - pcie is setup\n\n`
+- `site.AppleHPMInterfaceType16`
+- `AppleHPMInterfaceType1`
+- `ADFU`
+- `Kart Device`
+- `callPlatformFunction`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMPin(0x%x) - LDCM unsupported\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::configureTBTPortObject(@0x%x) - Failed to activate transport!\n\n`
+- `AppleUSBCController<%p>::hpmEnterExitFirmwareUpdateMode - got lock!\n`
+- `%lldus AppleUSBCController<%p> - handleAccessoryUSBMode: arming timer (still starting)\n`
+- `AppleUSBCController<%p : %p>::handleAccessoryUSBMode - _currentPowerState = %u, plugPresent: %s\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::challengeCrypto(@0x%x) - CRYm aborting after ~%u ms\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::challengeCrypto(@0x%x) - HPMV1 Function NOT found, non-fatal\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType10::forcePortEvaluation(@0x%x) - Start\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::enableOptions(0x%x) - Kart mode looks ok, sending message\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::configureTBTPortObject(@0x%x) - CIO already provisioned\n\n`
+- `%lldus AppleUSBCController setting accessoryDetect\n`
+- `%lldus AppleUSBCController<%p : %p>::handleAccessoryDetect - _currentPowerState = %u, plugPresent: %s, _remoteWakeEnabled = %u\n`
+- `%lldus AppleUSBCController<%p> - USB Mode: UFP (connected to host)\n`
+- `hpmLDCMMitigationsDisable`
+- `AppleHPMInterface::resolvePHandle - failed after apple,phandle\n`
+- `site.AppleHPMInterfaceType17`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType10::turnOnVbus(0x%x) - setting fWaitingForUSB to false\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::enableOptions(0x%x) - Kart mode skipping message due to forced disconnect\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType16::start\n\n`
+- `AppleUSBCController<%p>::setPowerState - going to %u: %s\n`
+- `AppleUSBCController<%p>::setPowerState - signaling SleepWake Thread (AppleAceSystemIsWaking) - WillAckLater\n`
+- `turnOnVbus`
+- `evaluateHpd`
+- `%s::%s(0x%x@0x%x): AppleTCController::usbDataConnect(@0x%x) - No orientation function\n\n`
+- `\"This Ace2 card appears to be of an old, obsolete design and is NOT compatible with this OS. (%u)\" @%s:%d`
+- `restoring normal operation mode\n`
+- `**** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     statusReg.bits.plugPresent = %u, dataStatusReg.bits.DataConnection = %u, dataStatusReg.bits.DPConnection = %u, _currentPowerState = %u, _usbcEnabled = %u, _remoteWakeEnabled = %u\n`
+- `%lldus AppleUSBCController reporting a USB device\n`
+- `PRESENT`
+- `121111121222121211`
+- `AppleUSBCController<%p>::setPowerState - Waking\n`
+- `AppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode - Accessory reprobe delayed until power state has been raised to max power\n`
+- `%lldus **** AppleUSBCController<%p : %p>::handleAccessoryUSBMode - Reporting usbMode = %u\n`
+- `AppleUSBCController<%p> - Status Register Cache Updated: 0x%02X%02X%02X%02X\n`
+- `AppleUSBCController<%p> - Status Register failed to read: 0x%04X\n`
+- `AppleUSBCController::configureUSBRemoteWakeup: returning status = 0x%X\n`
+- `%lldus AppleUSBCController::challengeCrypto: function found\n`
+- `%s::%s(0x%x@0x%x): %s -- SOPP nub terminating\n\n`
+- `AppleHPMLDCM::start - couldn't find communications bus, failing start\n`
+- `hpm-class-type`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createTunnelClientCallBacks(@0x%x) setStateChangeCallbackWithParams - Tunnel client call back created successfully\n\n`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `%lldus AppleUSBCController<%p : %p>::handleAccessoryDetect - overrideDetect: %s, overrideID: %s\n`
+- `AppleUSBCController<%p : %p>::handleAccessoryDetect - Power not yet on... enabling powerDelayTimer\n`
+- `AppleUSBCController<%p> - USB Mode: DFP (connected to device)\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::callPlatformFunction(0x%x) - prst called with 255, setting it to 0\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType10::tUSBTimeout(@0x%x) - called\n\n`
+- `%lldus AppleUSBCController<%p> - Checking if work-arounds are appropriate\n`
+- `%lldus AppleUSBCController<%p> - Connection orientation: %s\n`
+- `**** AppleUSBCController<%p : %p>::PowerStateThreadEntry - Waiting for USBw to disable before setting Ace power state - statusReg.bits.plugPresent = %u, dataStatusReg.bits.DataConnection = %u, dataStatusReg.bits.DPConnection = %u, _currentPowerState = %u, _usbcEnabled = %u, _remoteWakeEnabled = %u\n`
+- `hpmRTPCDisable`
+- `Vendor ID`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::readRegWithLength(@0x%x) - Timed out with retries = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createUSB3PortObject(@0x%x) - USB3 is setup\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::handleAccessoryDetect(@0x%x) - Start\n\n`
+- `AppleHPMARMSPMI::start - Missing interrupt-type property, doing legacy interrupt handling, no SPMI sleep/wake support\n`
+- `rid`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setPowerState(@0x%x) = Setting power state to 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setPinConfiguration(@0x%x) - ERROR INVALID PIN CONFIG FOR DP MULTIFUNCTION\n\n`
+- `AppleHPMInterface::resolvePHandle - failed after property matching\n`
+- `Pending`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: kIOAccessoryUSBRemoteWakeupOff\n`
+- `%lldus AppleUSBCController<%p>::usbDataMonitor - _usbDataMonitorFunction->monitorData returned: 0x%X\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::sendDpStatusUpdates(@0x%x) - HPD = %i\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCControllerType10::tUSBTimeout(@0x%x) - Waiting for USB Timedout After 10 seconds\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::configureUSBRemoteWakeup(@0x%x) - Called with args 0x%x\n\n`
+- `**** AppleUSBCController<%p : %p>::handleAccessoryUSBMode - Reporting usbMode = %u\n`
+- `AppleUSBCController<%p>::configureUSBRemoteWakeup -  USB wake should now be enabled.  ACK'ing power state change.  _interruptSource->disable()'d\n`
+- `interrupts`
+- `initSingleHPM`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createUSB2PortObject(@0x%x) - Setting up USB2 port object\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setupDP1Client(@0x%x) - Tunnel DP1 client does not exist!\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType10::starttAMETimeoutTimer(@0x%x) - called\n\n`
+- `AppleUSBCController<%p>::start - registered for notifications with %p.  Notifier obj = %p.  On thread: %s\n`
+- `%s - LDCM Interrupt triggered\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::genericStart - Super failed to start\n\n`
+- `iicProvider`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::processStatusRegisters(@0x%x) - advertise unplug\n\n`
+- `createUSB3PortObject`
+- `%lldus **** AppleUSBCController<%p : %p>::handleAccessoryUSBMode: !psItem\n`
+- `AppleUSBCController<%p>::usbDataMonitor - error setting orientation: 0x%X\n`
+- `AppleHPMLDCM::start - couldn't allocate temp status buffer, failing start\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterfaceType15::startRoleswapTimeoutTimer(@0x%x) - called\n\n`
+- `Product ID (SOP)`
+- `%lldus AppleUSBCController<%p : %p>::setSystemPowerState - AppleAceHWShutdownPowerState delay (after transition)\n`
+- `AppleHPMLDCM::start - Mitigations disable = 0x%x\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::readReg(@0x%x) - Timed out with retries = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setupDP2Client(@0x%x) - Tunnel DP2 client does not exist!\n\n`
+- `AppleHPMBusController`
+- `%s::%s(0x%x@0x%x): AppleTCController::configureUSB3PortObject(@0x%x) - WARNING: USB3 notifier was not created\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMPin(0x%x) - ACE Debug cannot be set. Missing boot-args.\n\n`
+- `%lldus AppleUSBCController::PowerStateThreadEntry: requesting reprobe\n`
+- `HPM In RTPC`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::createUSB3PortObject(@0x%x) - creating usb3 port object tunnelAdapterType=%d\n\n`
+- `%lldus AppleUSBCController<%p>::handleAccessoryDetect - DataStatus Register Cache Updated: 0x%02X%02X%02X%02X%02X\n`
+- `%lldus AppleUSBCController::challengeCrypto: failed to write kAceRegisterData1.  status = 0x%X\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::writeReg(@0x%x) - Writing to register 0x%x with Data %s\n\n`
+- `setupPCIClient`
+- `%s::%s(0x%x@0x%x): AppleTCController::setCurrentModeFlags(@0x%x) - Assuming forced DFU, fRestore = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::isCableKartCapable - sopp valid >=  4 actual = 0x%x cableType = 0x%x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::tunnelClientChangeWithParams(@0x%x) with non USB Type2 object... Quiting...\n\n`
+- `AppleHPMARMI2C::start - Unable to read hpmlog boot-arg\n`
+- `%lldus \nAppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode - _isAce1:%s _isAce2: %s, buffer: %02X %02X %02X %02X\n\n`
+- `FW Version`
+- `%s::%s(0x%x@0x%x): AppleTCController::challengeCrypto(@0x%x) - HPMV2 buffer[0] = 0x%08x\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMPin(0x%x) - trace already set, skipping\n\n`
+- `%lldus **** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     PP_EXTswitch is %s\n`
+- `%lldus AppleUSBCController<%p>::setSystemPowerState - error executing 'SSPS': 0x%X\n`
+- `AppleUSBCController<%p : %p>::handleAccessoryDetect - returning error as accessoryID isn't valid (accessoryID = %p)\n`
+- `AppleUSBCController::configureUSBRemoteWakeup: called _usbWakeControlFunction.  status = 0x%X\n`
+- `AppleUSBCController<%p : %p>::configureUSBRemoteWakeup - error setting Ace SPS\n`
+- `rx1`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setPinConfiguration(@0x%x) - Could not reconfigure pin configuration dictionary\n\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::isCableKartCapable(0x%x) - active cable detected\n\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - (%02X %02X %02X %02X %02X %02X %02X %02X)\n`
+- `AppleUSBCController<%p>::challengeCrypto - (initial) outToken: %s\n`
+- `%lldus AppleUSBCController<%p>::SleepThreadEntry -  *NOT* ACK'ing power state change.  _powerStateACKRequested not set\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::exitPDMode(@0x%x) - DRST complete - status = 0x%08x\n\n`
+- `%s::%s(0x%x@0x%x): AppleHPMInterface::setLDCMPin fDebugFlags & kLDCMDebugSelectSBU:0x%x - kIOPortUSBCLDCMPinTrace case\n\n`
+- `communicateDPIRQ`
+- `%lldus AppleUSBCController<%p : %p>::handleAccessoryDetect - Override requested.  Reporting values as normal for now with nothing changed\n`
+- `\n`
+- `AppleHPMLDCM::getVbusPresent - called returning false\n`
+- `AppleHPMInterfaceType16`
+- `%s::%s(0x%x@0x%x): AppleTCController::setLDCMPin(0x%x) - called with pin = 0x%x\n\n`
+- `AppleHPM`
+- `disabled because PP_CABLE input voltage is low`
+- `%lldus AppleUSBCController<%p> - DFUf does not claim USB2Connection\n`
+- `%s::%s(0x%x@0x%x): AppleTCController::setCurrentModeFlags(@0x%x) - ***Mode changed to UFPf, boot-arg likely, fRestore = 0x%x***\n\n`
+- `%s::%s(0x%x@0x%x): TBT \n`
+- `site.AppleHPM`
+- `%lldus *** crypto function found OK\n`
+- `AppleHPMARMSPMI::failureRegisterDump - [Reg 0x2d] = 0x%x 0x%x 0x%x 0x%x\n`
+- `AppleHPMInterface`
+- `site.AppleHPMBusController`
+- `function-cio_mux`
+- `AppleUSBCController<%p>::handleAccessoryDetect - Status Register Cache Updated: 0x%02X%02X%02X%02X\n`

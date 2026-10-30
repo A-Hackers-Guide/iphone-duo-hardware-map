@@ -1,0 +1,58 @@
+# `SBSystemServiceServerTestAutomationDelegate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `SBSystemServiceServerDelegate`
+- 0 instance variables, 0 properties, 48 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:deviceOrientationForSystemSpaceOrientation:withCompletion:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:getActiveDisplayWindowSceneDisplayIdentifierWithCompletion:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:getDevicePoseWithCompletion:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setDevicePoseOverride:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:systemSpaceOrientationForDeviceOrientation:withCompletion:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:togglePictureInPictureProminenceForClient:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:addWidgetsToEachPageForClient:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:availableStreamDomainsForClient:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:clearAllUserNotificationsForClient:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:addWidgetStackWithIdentifiers:toPage:withSizing:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:addWidgetWithIdentifier:toPage:withSizing:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:countScenesForBundleIdentifier:withCompletion:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:getButterflySplitViewStronglyPairedWithCompletion:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:getChamoisPrefersDockHiddenWithCompletion:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:getChamoisPrefersStripHiddenWithCompletion:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:getDeviceOrientationWithCompletion:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:getDeviceSupportsSystemAperture:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:getIsChamoisWindowingUIEnabledWithCompletion:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:loadStashedSwitcherModelFromPath:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:port:acquireAssertionForReachabilityEnabled:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:port:acquireHUDHiddenAssertionForIdentifier:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:resetToHomeScreenAnimated:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setAccessoryType:attached:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setAlertsEnabled:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setAmbientMountState:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setAmbientPresentationState:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setApplicationBundleIdentifier:blockedForScreenTime:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setChamoisPrefersDockHidden:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setChamoisPrefersStripHidden:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setChamoisWindowingUIEnabled:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setDeviceOrientation:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setHiddenFeaturesEnabled:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setIdleTimerEnabled:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setMallocStackLoggingEnabled:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setOrientationLockEnabled:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setReachabilityActive:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setSpringBoardAnimationFrameRecordingForUpdateTypes:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setSystemApertureUnderAutomationTesting:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:setTestRunnerRecoveryApplicationBundleIdentifier:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:client:stashSwitcherModelToPath:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:enterLostModeForClient:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:exitLostModeForClient:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:getAnimationFrameRecordingsForClient:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:getSystemApertureModelStateDumpForClient:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:getSystemApertureStateDumpForClient:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:getWidgetControllerStateDump:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:setUserPresenceDetectedSinceWakeForClient:];
+-[SBSystemServiceServerTestAutomationDelegate systemServiceServer:suspendAllDisplaysForClient:];
+```

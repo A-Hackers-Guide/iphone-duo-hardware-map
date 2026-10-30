@@ -1,0 +1,11 @@
+# `_UIStatusBarVisualProvider_Pad_ForcedNoCell`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `_UIStatusBarVisualProvider_Pad`
+- 0 instance variables, 0 properties, 0 instance methods, 1 class methods
+
+## Class methods
+
+```
++[_UIStatusBarVisualProvider_Pad_ForcedNoCell hasCellularCapability];
+```

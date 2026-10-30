@@ -1,0 +1,72 @@
+# `IOThunderboltIECSCommand`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.iokit.IOThunderboltFamily`](../kexts/com.apple.iokit.IOThunderboltFamily.md)
+- Object size: `0x90` (144 bytes)
+- Metaclass: `0xfffffe000ba1d720`; metaclass vtable `0xfffffe00084231c8`; class vtable `0xfffffe0008423068`
+- Registration (init): `0xfffffe000a5b46fc`
+- Superclasses: [`IOThunderboltCommand`](IOThunderboltCommand.md) → [`IOCommand`](IOCommand.md)
+
+## Strings in its kext that name it (60)
+
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigPollRead\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CPollRead\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::createResources - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::submitWorkToTransmitter - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigDataRead\n`
+- `%lldus IOThunderboltIECSCommand<%p>::complete\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::ppsAccessSync ACKS returned = 0x%x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::setLCCapability smcWriteKey returned = 0x%x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigPhyStateReadComplete - route = 0x%llx, port = %d, state = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmLocalI2CComplete - read_bytes = 0x%08x, length = %lld\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcLocalConfig - length = %lld, offset = %d, fAddress = 0x%x, command_type = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigCommandWrite - length = %lld, offset = %d, fAddress = 0x%x, command_type = %d, data=0x%08x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcLocalConfigComplete - incoming status = 0x%08x, command = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::configCommandCallback - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::ppsAccessSync READ addr=0x%02x, reg=0x%02x, length=%llu\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::setLCCapability - offset = 0x%08x length = 0x%08x count = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmLocalI2CComplete - incoming status = 0x%x, command_type = %d, desc = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteStart - length = %lld, fAddress = 0x%x, command_type = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CCommandDataWriteComplete - incoming status = 0x%x, command_type = %d, desc = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::configCommandCallback - command completion in illegal state = %d\n`
+- `%lldus IOThunderboltIECSCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::setLCCapability ACKS returned = 0x%x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigDataWrite - length = %lld, fAddress = 0x%x, command_type = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::ppsAccessSync WRITE addr=0x%02x, reg=0x%02x, length=%llu\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigPollTimer\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CCommandWrite2Complete - incoming status = 0x%x, command_type = %d, desc = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteStart - fPortSet = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigPhyStateRead\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::submitWorkToTransmitter\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CCommandWrite2\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteConfigPhyStateReadComplete - error, complete now\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::ppsAccessSync READ data =%s\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CDataRead\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteConfigPhyStateRead - route = 0x%llx, port_number = %d, offset = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::ppsAccessSync failed SMC access with code = 0x%x at step %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::setLCCapability smcReadKey returned = 0x%x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteConfigPhyStateRead\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcLocalConfigComplete - read_bytes = 0x%08x, length = %lld\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcLocalConfig - register_offset = 0x%x, register_length = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteStart - route = 0x%llx, port = %d, lane = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::ppsAccessSync WRITE data =%s\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteStart - length = %lld, fAddress = 0x%x, command_type = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CDataReadComplete - read_bytes = 0x%08x, length = %lld\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CPollReadComplete - incoming status = 0x%x, command_type = %d, desc = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigPhyStateRead - route = 0x%llx, port_number = %d, offset = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CCommandDataWrite\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CCommandWrite1Complete - incoming status = 0x%x, command_type = %d, desc = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigPollTimerComplete\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmLocalI2C - length = %lld, offset = %d, fAddress = 0x%x, command_type = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CPollTimerComplete\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::ppsAccessSync step %d smcWriteKey returned = 0x%x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::timerCommandCallback - command completion in illegal state = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::destroyResources\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcLocalConfig - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CDataReadComplete - incoming status = 0x%x, command_type = %d, desc = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CPollTimer\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CLengthReadComplete - incoming status = 0x%x, command_type = %d, desc = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteStart - route = 0x%llx, port = %d, lane = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::timerCommandCallback - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::submitWorkToTransmitter - bus = 0x%x, flags = 0x%x, IECSType = %d, fAddress = 0x%x\n`

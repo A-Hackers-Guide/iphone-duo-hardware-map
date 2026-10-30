@@ -1,0 +1,56 @@
+# `JFXEffectEditingUtilities`
+
+- Image: [`/System/Library/PrivateFrameworks/CameraEffectsKit.framework/CameraEffectsKit`](../userland/System__Library__PrivateFrameworks__CameraEffectsKit.framework__CameraEffectsKit.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- 0 instance variables, 0 properties, 0 instance methods, 46 class methods
+
+## Class methods
+
+```
++[JFXEffectEditingUtilities setStreamingMode:];
++[JFXEffectEditingUtilities canEditTextForEffect:];
++[JFXEffectEditingUtilities JFX_ApplyTextFlipIfNeeded:transform:];
++[JFXEffectEditingUtilities JFX_rectAtNormalizedPointinCenteredSquareInFaceRect:faceAnchor:atTime:scaleRelativeToCenterSquare:relativeToBounds:transformAnimation:playableMediaContentMode:playableInterfaceOrientation:playableAspectRatio:playableAspectRatioPreservationMode:];
++[JFXEffectEditingUtilities JFX_bestTrackedInsertionPointIndexForOverlay:atTime:insertionPoints:startingIndex:visibilityThreshold:scaleRelativeToCenterSquare:withARMetadata:transformAnimation:playableMediaContentMode:playableInterfaceOrientation:];
++[JFXEffectEditingUtilities JFX_closeButtonInsetForEffect:viewBounds:];
++[JFXEffectEditingUtilities JFX_compositionBounds];
++[JFXEffectEditingUtilities JFX_convertPoint:fromSize:toSize:invertY:];
++[JFXEffectEditingUtilities JFX_currentFaceRectRelativeToBounds:atTime:faceAnchor:transformAnimation:playableMediaContentMode:playableInterfaceOrientation:playableAspectRatio:playableAspectRatioPreservationMode:];
++[JFXEffectEditingUtilities JFX_hitTestOverlays:atNormalizedPoint:atTime:forcePosterFrame:adjustForMinimumSize:normalizedMinimumSize:];
++[JFXEffectEditingUtilities JFX_setTextRenderingEnabledForEffect:value:];
++[JFXEffectEditingUtilities isStreamingMode];
++[JFXEffectEditingUtilities addTransformToEffect:transform:relativeToBounds:time:restrictToBounds:];
++[JFXEffectEditingUtilities applyCameraTrackingTransformToOverlay:withARMetadata:playableInterfaceOrientation:];
++[JFXEffectEditingUtilities beginTextEditingForEffect:];
++[JFXEffectEditingUtilities configureOverlayForInsertion:atNormalizedPoint:atTime:isPositionRelativeToCenterSquare:isPositionRelativeToFace:scaleRelativeToCenterSquare:rotationAngle:applyTracking:autoDetectTrackingType:withARMetadata:previewViewCorrectionTransform:transformAnimation:playableMediaContentMode:playableInterfaceOrientation:playableAspectRatio:playableAspectRatioPreservationMode:];
++[JFXEffectEditingUtilities configureOverlayForInsertion:inRect:atTime:rotationAngle:applyTracking:autoDetectTrackingType:withARMetadata:previewViewCorrectionTransform:transformAnimation:playableMediaContentMode:playableInterfaceOrientation:playableAspectRatio:playableAspectRatioPreservationMode:];
++[JFXEffectEditingUtilities currentFaceRectRelativeToBounds:atTime:transformAnimation:playableMediaContentMode:playableInterfaceOrientation:playableAspectRatio:playableAspectRatioPreservationMode:];
++[JFXEffectEditingUtilities disableAnimationForEffects:];
++[JFXEffectEditingUtilities enableAnimationForEffects:animationStartTime:];
++[JFXEffectEditingUtilities endTextEditingForEffect:];
++[JFXEffectEditingUtilities hitTestOverlays:atPoint:relativeToBounds:atTime:adjustForMinimumSize:normalizedMinimumSize:];
++[JFXEffectEditingUtilities hitTestOverlaysAtPosterFrame:atNormalizedPoint:atTime:adjustForMinimumSize:normalizedMinimumSize:];
++[JFXEffectEditingUtilities hitTestOverlaysAtPosterFrame:atPoint:relativeToBounds:atTime:adjustForMinimumSize:normalizedMinimumSize:];
++[JFXEffectEditingUtilities insertionPointIndex];
++[JFXEffectEditingUtilities isFaceTrackingDataAvailable];
++[JFXEffectEditingUtilities makeOverlayTrackedMaintainingAppearance:atTime:newTrackingType:arMetadata:playableInterfaceOrientation:];
++[JFXEffectEditingUtilities maximumTextLengthForEffect:];
++[JFXEffectEditingUtilities newTextEditingPropertiesForEffect:relativeTo:atTime:withNewText:];
++[JFXEffectEditingUtilities newTextEditingPropertiesForEffect:relativeTo:atTime:withNewText:moveBeforeScalingToAvoidKeyboard:];
++[JFXEffectEditingUtilities nextInsertionPointIndex];
++[JFXEffectEditingUtilities nextNormalizedInsertionPointForOverlay:scaleRelativeToCenterSquare:atTime:applyTracking:withARMetadata:transformAnimation:playableMediaContentMode:playableInterfaceOrientation:];
++[JFXEffectEditingUtilities normalizedInsertionPoints];
++[JFXEffectEditingUtilities removeButtonPositionForEffect:atTime:atPosterFrameRelativeToBounds:viewCorrectionTransform:];
++[JFXEffectEditingUtilities setInsertionPointIndex:];
++[JFXEffectEditingUtilities shouldAutoEditTextForEffect:];
++[JFXEffectEditingUtilities shouldDisableTextOutlineWhileEditingTextForEffectID:];
++[JFXEffectEditingUtilities shouldRenderTextWithMotionWhileEditingTextForEffectID:];
++[JFXEffectEditingUtilities shouldUseFullTransformWhileEditingTextForEffectID:];
++[JFXEffectEditingUtilities spacingBetweenCenterPointOfEffect:point:relativeToBounds:atTime:];
++[JFXEffectEditingUtilities suspendOverlayTrackingMaintainingAppearance:forViewBounds:atTime:arMetadata:playableInterfaceOrientation:];
++[JFXEffectEditingUtilities textForEffect:];
++[JFXEffectEditingUtilities trackedNormalizedInsertionPoints];
++[JFXEffectEditingUtilities trackingTypeForOverlayPointIntersectionWithFaceRect:atTime:relativeTo:defaultTrackingType:faceAnchor:transformAnimation:playableMediaContentMode:playableInterfaceOrientation:playableAspectRatio:playableAspectRatioPreservationMode:];
++[JFXEffectEditingUtilities updateEffectText:newText:];
++[JFXEffectEditingUtilities updateEffectToDefaultTextIfEmpty:];
+```

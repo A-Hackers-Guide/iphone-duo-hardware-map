@@ -1,0 +1,32 @@
+# `_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/PencilPairing.framework/PencilPairing`](../userland/System__Library__PrivateFrameworks__PencilPairing.framework__PencilPairing.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 22 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ deviceDidUnlock];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ accessoryDidAttach];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ accessoryDidDetach];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ debug_presentBluetoothRemovalController];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ debug_presentDynamicBatteryController];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ debug_presentEducationForLoc];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ debug_presentEducationUIWithDeviceType:educationType:];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ debug_presentFirmwareUpdateCompletedNotification];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ debug_presentLedTest];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ debug_presentLowPowerBatteryPill];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ debug_presentRemoteChargeNotification];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ debug_presentSoftwareUpdateProxCard];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ debug_resetOnboarding];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ didReceiveLowPowerUpdateWithSource:];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ isPresentingEducationUI];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ isPresentingPill];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ presentEducationUIWithDeviceType:educationType:];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ presentPencilOnboarding];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ setBluetoothPowerOn:];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ showDeviceOffBoardingForUUID:];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ unpairAndResetOnboarding];
+-[_TtP13PencilPairing37PNPPencilPairingServiceServerProtocol_ unpairExistingPencils];
+```

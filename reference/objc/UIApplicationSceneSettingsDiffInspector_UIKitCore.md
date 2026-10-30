@@ -1,0 +1,43 @@
+# `UIApplicationSceneSettingsDiffInspector`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `FBSSceneSettingsDiffInspector`
+- 0 instance variables, 0 properties, 33 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[UIApplicationSceneSettingsDiffInspector observeCarPlayDisableFiveRowKeyboardsWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observePointerLockStatusWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeUnderLockWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeCarPlayBlackWallpaperModeEnabledWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeDeactivationReasonsWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeInLiveResizeWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeEnhancedWindowingEnabledWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeStatusBarPartsWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeStatusBarAvoidanceFrameWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector _observeOtherSetting:withBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeHostReferenceAngleModeWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeIdleModeEnabledWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeSafeAreaInsetsPortraitWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeForcedStatusBarStyleWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeStatusBarHeightWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeDeviceOrientationEventsEnabledWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeCornerRadiusConfigurationWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeTargetOfEventDeferringEnvironmentsWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeInterfaceOrientationModeWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeUserInterfaceStyleWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeInterfaceOrientationMapResolverWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observePersistenceIdentifierWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeScreenBoundsIgnoresSceneOrientation:];
+-[UIApplicationSceneSettingsDiffInspector observeCanShowAlertsWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeAccessibilityContrastWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeSafeAreaInsetsPortraitUpsideDownWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeSafeAreaInsetsLandscapeRightWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeStatusBarStyleOverridesToSuppressWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeSafeAreaInsetsLandscapeLeftWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeScreenReferenceDisplayModeStatus:];
+-[UIApplicationSceneSettingsDiffInspector observeDeviceOrientationWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeForcedStatusBarForegroundTransparentWithBlock:];
+-[UIApplicationSceneSettingsDiffInspector observeAngleFromHostReferenceUprightDirectionWithBlock:];
+```

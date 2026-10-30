@@ -1,0 +1,4018 @@
+# Symbols: `/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__PrivateFrameworks__PhotoLibraryServices.framework__PhotoLibraryServices.md). **[DSC]**
+
+4,549 public symbols, 27,243 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1e0c961c8  __DATA_CONST,__const  _CLOUD_COALESCED_EVENT_KEY
+0x1e0c961c0  __DATA_CONST,__const  _CLOUD_SYNC_CHANGE_KEY
+0x1995b0160  __TEXT,__text  _CPLMetricsFromPathManager
+0x1995affcc  __TEXT,__text  _CPLStatusFromPathManager
+0x1995e4e44  __TEXT,__text  _CSUSearchableKnowledgeObjectIdTypeForPLSceneClassificationType
+0x1994a786c  __TEXT,__text  _CreateCGImageFromJPEGData
+0x199332090  __TEXT,__text  _DateCreatedFromExifDictionary
+0x1e0c961b8  __DATA_CONST,__const  _Deprecated_PLLastDuplicateDetectorProcessingTokenKey
+0x1e0c961b0  __DATA_CONST,__const  _Deprecated_PLLastInitialDuplicateDetectorProcessingCompletedTokenKey
+0x1e0c961a8  __DATA_CONST,__const  _Deprecated_PLLastPersonSyncSourceLibraryPathKey
+0x1e0c961a0  __DATA_CONST,__const  _Deprecated_PLLastPersonSyncTokenKey
+0x1e0c96198  __DATA_CONST,__const  _Deprecated_PLLastSharedAssetContainerUpdateTokenKey
+0x1e0c96190  __DATA_CONST,__const  _Deprecated_PLSharedAssetContainerUpdateProcessingStatusKey
+0x1e0c96188  __DATA_CONST,__const  _DuplicateMergePropertyValidationExceptionName
+0x199331f0c  __TEXT,__text  _ExifDateStringToDate
+0x1991bac3c  __TEXT,__text  _MetadataForPreviewJPGFromOriginalMetadata
+0x19933087c  __TEXT,__text  _MetadataForSmallPreviewJPGFromOriginalMetadata
+0x19940e4c8  __TEXT,__text  _MomentsFrameworkBundle
+0x1e0c96180  __DATA_CONST,__const  _MomentsHomeLocationName
+0x199245ab0  __TEXT,__text  _NSStringFromPLCacheDeleteClientAvailableSpace
+0x19976152c  __TEXT,__text  _NSStringFromPLSearchEntityPersonRelationType
+0x199760f14  __TEXT,__text  _NSStringFromPLSearchEntityType
+0x1ef6a2470  __AUTH,__objc_data  _OBJC_CLASS_$_AssetCollectionInfo
+0x1ef69f400  __AUTH,__objc_data  _OBJC_CLASS_$_PLAVCaptureDeferredPhotoProxy
+0x1ef6a8f78  __AUTH,__objc_data  _OBJC_CLASS_$_PLAbstractLibraryServicesManagerService
+0x1ee1b6088  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLAccountStore
+0x1ee1b5f48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLAdditionalAssetAttributes
+0x1ee1b2c08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLAdjustmentVirtualResource
+0x1ef6a8f50  __AUTH,__objc_data  _OBJC_CLASS_$_PLAggdLogging
+0x1ef6a8f28  __AUTH,__objc_data  _OBJC_CLASS_$_PLAggregationProcessor
+0x1ef6a8f00  __AUTH,__objc_data  _OBJC_CLASS_$_PLAlbumJournalEntryPayload
+0x1ef6a8ed8  __AUTH,__objc_data  _OBJC_CLASS_$_PLAlbumListJournalEntryPayload
+0x1ef69f3d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLAmbientSuggestionComputeJournalEntryPayload
+0x1ef69a220  __AUTH,__objc_data  _OBJC_CLASS_$_PLAmbientSuggestionComputePayloadAdapter
+0x1ef69f3b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLAnalysisCoordinator
+0x1ef69f388  __AUTH,__objc_data  _OBJC_CLASS_$_PLAnalysisCoordinatorStep
+0x1ef69a1f8  __AUTH,__objc_data  _OBJC_CLASS_$_PLAnalysisCoordinatorStepEmpty
+0x1ef69a1d0  __AUTH,__objc_data  _OBJC_CLASS_$_PLAnalysisCoordinatorStepMediaAnalysis
+0x1ef69f360  __AUTH,__objc_data  _OBJC_CLASS_$_PLAnalysisCoordinatorStepSearchIndexing
+0x1ef69f338  __AUTH,__objc_data  _OBJC_CLASS_$_PLAnalysisCoordinatorStepSearchSuggestions
+0x1ef69f310  __AUTH,__objc_data  _OBJC_CLASS_$_PLAnalysisCoordinatorTask
+0x1ef6a8eb0  __AUTH,__objc_data  _OBJC_CLASS_$_PLAnalyticsLibraryCounters
+0x1ef6a8e88  __AUTH,__objc_data  _OBJC_CLASS_$_PLAnalyticsResourceCounters
+0x1ef6a8e60  __AUTH,__objc_data  _OBJC_CLASS_$_PLAnalyticsSyndicationLibraryCounters
+0x1ef69f2e8  __AUTH,__objc_data  _OBJC_CLASS_$_PLAppLibraryUninstallSupport
+0x1ef69f2c0  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetAdjustmentOptions
+0x1ee1b5f20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLAssetAnalysisState
+0x1ef6a2448  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetChangeNotification
+0x1ef6a8e38  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetCluster
+0x1ef6a8e10  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetCollectionGenerationResult
+0x1ef6a8de8  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetCollectionGenerator
+0x1ef69a1a8  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetComputeCacheFaceRebuildDescription
+0x1ef69a180  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetComputeSyncJournalEntryPayload
+0x1ef69a158  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetComputeSyncNodeContainerPayloadAdapter
+0x1ef69a130  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetComputeSyncPayloadAdapter
+0x1ef69a108  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetComputeSyncPayloadHelper
+0x1ef69a0e0  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetComputeSyncPayloadWrapper
+0x1ef6a2420  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetContainerChangeNotification
+0x1ef6a23f8  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetContainerListChangeNotification
+0x1ee1b4558  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLAssetContributor
+0x1ee1b5ef8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLAssetDescription
+0x1ef6a23d0  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetDownloadManager
+0x1ef6a23a8  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetFormats
+0x1ef6a8dc0  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetJournalEntryPayload
+0x1ef6a8d98  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetJournalEntryPayloadResource
+0x1ef6a2380  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetResourceDownloadManager
+0x1ef6a2358  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetResourceDownloadRequest
+0x1ee1b4148  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLAssetResourceUploadJob
+0x1ee1b4120  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLAssetResourceUploadJobConfiguration
+0x1ef69a0b8  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetResourceUploadJobConfigurationCoreAnalyticsPayload
+0x1ef69f298  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetResourceUploadJobConfigurationEntryPayload
+0x1ef69f270  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetResourceUploadJobCoreAnalytics
+0x1ee1b3fb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLAssetResourceUploadJobRequest
+0x1ef6aa828  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetSharingUtilities
+0x1ef6a8d70  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetTransactionReason
+0x1ef6a2330  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsSaver
+0x1ef6a8d48  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdCPLResourceDownloader
+0x1ef6a8d20  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdCloudInternalService
+0x1ef6a8cf8  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdCloudService
+0x1ef6a8cd0  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdConnectionAuthorization
+0x1ef6a2308  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdCrashRecoveryClientAuthorization
+0x1ef6a8ca8  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdCrashRecoverySupport
+0x1ef6a8c80  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdDebugService
+0x1ef6a22e0  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdDemoService
+0x1ef6a8c58  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdDiagnosticsService
+0x1ef6a8c30  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdInnerService
+0x1ef6a8c08  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdLibraryInternalService
+0x1ef6a8be0  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdLibraryManagementService
+0x1ef6a8bb8  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdLibraryService
+0x1ef6a22b8  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdMigrationService
+0x1ef69f248  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdNonBindingDebugService
+0x1ef69f220  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdNonBindingResourceInternalService
+0x1ef6a8b90  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdNotificationService
+0x1ef6a8b68  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdPhotoKitAddService
+0x1ef6a8b40  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdPhotoKitService
+0x1ef6a8b18  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdPrivacySupportService
+0x1ef6a8af0  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdResourceInternalService
+0x1ef6a8ac8  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdResourceService
+0x1ef6a8aa0  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdResourceWriteOnlyService
+0x1ef6aa800  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdServer
+0x1ef6a8a78  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdService
+0x1ef6a8a50  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdServicePermissions
+0x1ef6a2290  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdSyncService
+0x1ef6a2268  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdSystemLibraryURLReadOnlyService
+0x1ef6a8a28  __AUTH,__objc_data  _OBJC_CLASS_$_PLAssetsdXPCUserInfo
+0x1ef6a8a00  __AUTH,__objc_data  _OBJC_CLASS_$_PLAsynchronousPhotoLibraryExecutionContext
+0x1ef69f1f8  __AUTH,__objc_data  _OBJC_CLASS_$_PLAtomicProgressIvar
+0x1ef69f1d0  __AUTH,__objc_data  _OBJC_CLASS_$_PLAutoBugCapture
+0x1ef6a89d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLAvalanche
+0x1ef69f1a8  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundAssetResourceUploader
+0x1ef69f180  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobAssetResourceUploadJobWorker
+0x1ef69f158  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobCascadeDonationWorker
+0x1ef69f130  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobCoordinator
+0x1ef6a89b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobCriteria
+0x1ef6aa7d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobDeferredRenderDerivativesBaseWorker
+0x1ef6aa7b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobDeferredRenderDerivativesHighPriorityWorker
+0x1ef6aa788  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobDeferredRenderDerivativesLowPriorityWorker
+0x1ef6a8988  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobDuplicateDetectorWorker
+0x1ef6aa760  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobEditRenderingImageWorker
+0x1ef6aa738  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobEditRenderingVideoWorker
+0x1ef6aa710  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobEditRenderingWorker
+0x1ef69f108  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobFeatureAvailabilityWorkItem
+0x1ef69f0e0  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobFeatureAvailabilityWorker
+0x1ef69f0b8  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobGuestAssetSyncWorkItemContainer
+0x1ef6a8960  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobGuestAssetSyncWorker
+0x1ef69f090  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobHighPrioritySearchIndexingWorker
+0x1ef6ab7c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobLowPrioritySearchIndexingWorker
+0x1ef69f068  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobOptimizeTableThumbsWorker
+0x1ef6a8938  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobPersonSyncWorker
+0x1ef699140  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobProvenanceTimestampWorker
+0x1ef6aa6e8  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobResourceAvailabilityWorker
+0x1ef69f040  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobResourceUploadExtensionRunnerWorker
+0x1ef6a8910  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobSearchIndexingWorker
+0x1ef6aa6c0  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobService
+0x1ef69f018  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobSharedAssetContainerUpdateWorkItem
+0x1ef6a88e8  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobSharedAssetContainerUpdateWorker
+0x1ef69eff0  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobStableHashWorker
+0x1ef6a88c0  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobStatusCenter
+0x1ef6a8898  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobStatusEvent
+0x1ef6a8870  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobStatusFinishWorkerEvent
+0x1ef6a8848  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobStatusStartWorkerEvent
+0x1ef6a8820  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobStatusStopWorkerEvent
+0x1ef69efc8  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobStatusSubmissionEvent
+0x1ef6a87f8  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobSyndicationAssetCleanupWorker
+0x1ef6a87d0  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobSyndicationResourceDownloadWorker
+0x1ef6a87a8  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobSyndicationResourceSanitizationWorker
+0x1ef6aa698  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobSyndicationSyncWorker
+0x1ef69efa0  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobTaskMetadata
+0x1ee1b43a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLBackgroundJobWorkItem
+0x1ef6aa670  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobWorker
+0x1ef6a8780  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobWorkerPendingWorkItems
+0x1ef69ef78  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobWorkerSignalTimer
+0x1ef69ef50  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobWorkerTypes
+0x1ef69ef28  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundJobWorkerTypesBuffer
+0x1ef6a8758  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundMigrationContext
+0x1ef6a8730  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundModelMigration
+0x1ef69a090  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundResourceUploadExtensionHost
+0x1ef69ef00  __AUTH,__objc_data  _OBJC_CLASS_$_PLBackgroundUploadExtensionSupport
+0x1ef6ab908  __AUTH,__objc_data  _OBJC_CLASS_$_PLBiomeDonations
+0x1ef69a068  __AUTH,__objc_data  _OBJC_CLASS_$_PLCPLClientStatus
+0x1ef6a8708  __AUTH,__objc_data  _OBJC_CLASS_$_PLCPLFacePullSupport
+0x1ef6a86e0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCPLFacePushSupport
+0x1ef6a86b8  __AUTH,__objc_data  _OBJC_CLASS_$_PLCPLFaceRebuildSupport
+0x1ee1b2d48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLCPLSettings
+0x1ee1b4800  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLCPLSettingsObserver
+0x1ef6a2240  __AUTH,__objc_data  _OBJC_CLASS_$_PLCacheDeleteClient
+0x1ef6a8690  __AUTH,__objc_data  _OBJC_CLASS_$_PLCacheDeleteRegistration
+0x1ef6ab778  __AUTH,__objc_data  _OBJC_CLASS_$_PLCacheDeleteSupport
+0x1ee1b2e38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLCacheMetricsCollectorClient
+0x1ef6a8668  __AUTH,__objc_data  _OBJC_CLASS_$_PLCacheMetricsCollectorServer
+0x1ef6a8640  __AUTH,__objc_data  _OBJC_CLASS_$_PLCacheMetricsCollectorServerShell
+0x1ef6a8618  __AUTH,__objc_data  _OBJC_CLASS_$_PLCameraAppWatcher
+0x1ef6a85f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCameraCaptureTaskConstraintCoordinator
+0x1ef6a85c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLCameraCaptureTaskConstraints
+0x1ef69eed8  __AUTH,__objc_data  _OBJC_CLASS_$_PLCameraDeferredProcessingCoordinator
+0x1ef6aa648  __AUTH,__objc_data  _OBJC_CLASS_$_PLCameraPreviewImageWellChangeNotification
+0x1ef69eeb0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCameraPreviewWellAssetInfo
+0x1ef6a85a0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCameraPreviewWellManager
+0x1ef69ee88  __AUTH,__objc_data  _OBJC_CLASS_$_PLCaptureDeferredPhotoProcessor
+0x1ef69ee60  __AUTH,__objc_data  _OBJC_CLASS_$_PLCaptureDeferredPhotoProcessorDelegateAdapter
+0x1ef69fa40  __AUTH,__objc_data  _OBJC_CLASS_$_PLCapturePhotoSettings
+0x1ef69ee38  __AUTH,__objc_data  _OBJC_CLASS_$_PLCascadeUtilities
+0x1ee1b5ed0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLChangeHandlingContainer
+0x1ee1b41e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLChangeHandlingNotificationEvent
+0x1ee1b5ea8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLChangeHandlingNotificationObserver
+0x1ef6ab408  __AUTH,__objc_data  _OBJC_CLASS_$_PLChangeList
+0x1ee1b5e80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLChangeNode
+0x1ef6aa620  __AUTH,__objc_data  _OBJC_CLASS_$_PLChangeNotification
+0x1ef6ab3e0  __AUTH,__objc_data  _OBJC_CLASS_$_PLChangeNotificationCenter
+0x1ef69ee10  __AUTH,__objc_data  _OBJC_CLASS_$_PLChangePublisherDebugEvent
+0x1ef69ede8  __AUTH,__objc_data  _OBJC_CLASS_$_PLChangesRequestInProgressMarker
+0x1ee1b5e58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLCharacterRecognitionAttributes
+0x1ef6a2218  __AUTH,__objc_data  _OBJC_CLASS_$_PLChoosableItem
+0x1ee1b4918  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLClientChangePublisher
+0x1ee1b60d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLClientPhotoLibraryBundle
+0x1ef6a8578  __AUTH,__objc_data  _OBJC_CLASS_$_PLClientSandboxExtensionCache
+0x1ef6a9f68  __AUTH,__objc_data  _OBJC_CLASS_$_PLClientServerTransaction
+0x1ef69edc0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudAssetPayloadRestore
+0x1ef6a8550  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudBatchDownloader
+0x1ef6a8528  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudBatchUploader
+0x1ef6a8500  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudDownloadBatchDetails
+0x1ee1b5e30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLCloudFeedAssetsEntry
+0x1ee1b5e08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLCloudFeedCommentsEntry
+0x1ef6a84d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudFeedEntriesManager
+0x1ee1b5de0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLCloudFeedEntry
+0x1ef69fa18  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudFeedEntryFetch
+0x1ef6ab098  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudIdentifier
+0x1ef6a9f40  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudIdentifierLookup
+0x1ef69ed98  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudIdentifierReservationSupport
+0x1ef6a84b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudInMemoryDownloadTask
+0x1ef6a8488  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudInMemoryTaskManager
+0x1ee1b5db8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLCloudMaster
+0x1ee1b5d90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLCloudMasterMediaMetadata
+0x1ef6a8460  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudPendingResourceTask
+0x1ef6a8438  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudPersistentHistoryChangeTracker
+0x1ef6a8410  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudPersistentHistoryMigrator
+0x1ef6a83e8  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudPersistentHistoryTransactionsResult
+0x1ef6a83c0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudPhotoLibraryBatchContainer
+0x1ef6a8398  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudPhotoLibraryBatchManager
+0x1ef69ed70  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudPhotoLibraryDirectRecordsUploadResult
+0x1ef6a8370  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudPhotoLibraryError
+0x1ef6a8348  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudPhotoLibraryHelper
+0x1ef6a8320  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudPhotoLibraryManager
+0x1ef69ed48  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudPhotoLibraryUploadProgress
+0x1ef6a82f8  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudPhotoLibraryUploadTracker
+0x1ef6a21f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudPhotoLibraryUserSwitchHandler
+0x1ef6a82d0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudRecordOrganizer
+0x1ee1b5d68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLCloudResource
+0x1ef6a82a8  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudResourceManager
+0x1ef6a8280  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudResourcePrefetchManager
+0x1ef6a8258  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudResourcePrefetchPredicateOptions
+0x1ef6a8230  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudResourcePrefetchPredicates
+0x1ef6a21c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudResourcePruneManager
+0x1ee1b5d40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLCloudSharedAlbum
+0x1ee1b5d18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLCloudSharedAlbumInvitationRecord
+0x1ef6a9f18  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudSharedAssetSaveJob
+0x1ee1b5cf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLCloudSharedComment
+0x1ef6a21a0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudSharedCommentsJob
+0x1ef6a2178  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudSharedDeleteAlbumsJob
+0x1ef6a9ef0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudSharedUpdateAlbumMetadataJob
+0x1ef6a2150  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudSharingEnablingJob
+0x1ef6a2128  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudSharingInvitationChangeJob
+0x1ef6a9ec8  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudSharingJob
+0x1ef6a2100  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudSharingResetJob
+0x1ef6a20d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudSharingViewedStateChangeJob
+0x1ef6a8208  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudStorageInfo
+0x1ef6a20b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudStreamShareJob
+0x1ef6a81e0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudTaskManager
+0x1ef6a81b8  __AUTH,__objc_data  _OBJC_CLASS_$_PLCloudUploadChanges
+0x1ef6a8190  __AUTH,__objc_data  _OBJC_CLASS_$_PLClusterTimeInfo
+0x1ee1b2e10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLCodec
+0x1ee1b40f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLCollectionShare
+0x1ef69ed20  __AUTH,__objc_data  _OBJC_CLASS_$_PLCollectionShareCPLBackend
+0x1ee1b3f90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLCollectionShareMigrationAttributes
+0x1ef69ecf8  __AUTH,__objc_data  _OBJC_CLASS_$_PLCollectionShareMigrationSession
+0x1ef69ecd0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCollectionShareMigrationSessionPhaseBase
+0x1ef69eca8  __AUTH,__objc_data  _OBJC_CLASS_$_PLCollectionShareMigrationSessionPhaseCopyAssets
+0x1ef69ec80  __AUTH,__objc_data  _OBJC_CLASS_$_PLCollectionShareMigrationSessionPhaseCopyParticipants
+0x1ef69ec58  __AUTH,__objc_data  _OBJC_CLASS_$_PLCollectionShareMigrationSessionPhaseInitiateMigration
+0x1ef69ec30  __AUTH,__objc_data  _OBJC_CLASS_$_PLCollectionShareMigrationSessionPhaseSilentMigrationCleanup
+0x1ef69ec08  __AUTH,__objc_data  _OBJC_CLASS_$_PLCollectionShareMigrationSessionPhaseValidation
+0x1ef69ebe0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCollectionShareMigrationValidator
+0x1ef69ebb8  __AUTH,__objc_data  _OBJC_CLASS_$_PLCollectionShareMigrationValidatorResult
+0x1ef69eb90  __AUTH,__objc_data  _OBJC_CLASS_$_PLCollectionShareMigrator
+0x1ef69eb68  __AUTH,__objc_data  _OBJC_CLASS_$_PLCollectionShareSharedStreamBackend
+0x1ef6a2088  __AUTH,__objc_data  _OBJC_CLASS_$_PLColorSpace
+0x1ef698eb8  __AUTH,__objc_data  _OBJC_CLASS_$_PLCombinedProvenanceVirtualResource
+0x1ef6a8168  __AUTH,__objc_data  _OBJC_CLASS_$_PLCompactMomentClustering
+0x1ef6a9ea0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCompositionHelper
+0x1ef6a2060  __AUTH,__objc_data  _OBJC_CLASS_$_PLCompoundPropertyValidationRule
+0x1ef69f9f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLComputeCacheManager
+0x1ef69f9c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLComputeCachePolicy
+0x1ef69eb40  __AUTH,__objc_data  _OBJC_CLASS_$_PLComputeCachePolicyConfiguration
+0x1ef69f9a0  __AUTH,__objc_data  _OBJC_CLASS_$_PLComputeCachePolicyDataSource
+0x1ee1b41c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLComputeSyncAttributes
+0x1ee1b5cc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLComputedAssetAttributes
+0x1ee1b4490  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLConcurrencyLimiter
+0x1ef69eb18  __AUTH,__objc_data  _OBJC_CLASS_$_PLConcurrencyLimiterRecorder
+0x1ef69eaf0  __AUTH,__objc_data  _OBJC_CLASS_$_PLConcurrencyLimiterRecording
+0x1ef69a040  __AUTH,__objc_data  _OBJC_CLASS_$_PLConcurrencyLimiterRecordingAnalyzer
+0x1ef69a018  __AUTH,__objc_data  _OBJC_CLASS_$_PLConcurrencyLimiterRecordingReader
+0x1ef6aa5f8  __AUTH,__objc_data  _OBJC_CLASS_$_PLConcurrentQueue
+0x1ef698e90  __AUTH,__objc_data  _OBJC_CLASS_$_PLConfigurationCandidateResult
+0x1ef6a8140  __AUTH,__objc_data  _OBJC_CLASS_$_PLConstraintsDirector
+0x1ef6a2038  __AUTH,__objc_data  _OBJC_CLASS_$_PLContactStoreUtilitiesWorkaround
+0x1ef6a2010  __AUTH,__objc_data  _OBJC_CLASS_$_PLContainerChangeNotification
+0x1ef699ff0  __AUTH,__objc_data  _OBJC_CLASS_$_PLContentAwareCrop
+0x1ef699fc8  __AUTH,__objc_data  _OBJC_CLASS_$_PLContentAwareCropConfiguration
+0x1ef6ab3b8  __AUTH,__objc_data  _OBJC_CLASS_$_PLContentChanges
+0x1ef69eac8  __AUTH,__objc_data  _OBJC_CLASS_$_PLContentClassificationResult
+0x1ef6a9e78  __AUTH,__objc_data  _OBJC_CLASS_$_PLContextualVideoThumbnailVirtualResource
+0x1ee1b4788  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLConversation
+0x1ee1b5ca0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLCoreDataChangeMerger
+0x1ef6ab390  __AUTH,__objc_data  _OBJC_CLASS_$_PLCoreDataSqlLogBinder
+0x1ef699fa0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCropAsset
+0x1ef6a8118  __AUTH,__objc_data  _OBJC_CLASS_$_PLCrowdSourcedThemesAssetEvent
+0x1ef6a80f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLCrowdSourcedThemesPublisher
+0x1ef6ab070  __AUTH,__objc_data  _OBJC_CLASS_$_PLDBSCANClustering
+0x1ef6a80c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLDCFUtilities
+0x1ee1b3b08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLDaemonJob
+0x1ee1b3a40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLDaemonJobReply
+0x1ef6ab048  __AUTH,__objc_data  _OBJC_CLASS_$_PLDataCluster
+0x1ef6ab020  __AUTH,__objc_data  _OBJC_CLASS_$_PLDataClustering
+0x1ef6aaff8  __AUTH,__objc_data  _OBJC_CLASS_$_PLDataDensityClustering
+0x1ef6a1fe8  __AUTH,__objc_data  _OBJC_CLASS_$_PLDataMigratorSupport
+0x1ef6aafd0  __AUTH,__objc_data  _OBJC_CLASS_$_PLDatabaseContext
+0x1ef6a9e50  __AUTH,__objc_data  _OBJC_CLASS_$_PLDateIntervalFormatter
+0x1ef6ab750  __AUTH,__objc_data  _OBJC_CLASS_$_PLDateRangeFormatter
+0x1ef6aafa8  __AUTH,__objc_data  _OBJC_CLASS_$_PLDateRangeTitleGenerator
+0x1ef6a80a0  __AUTH,__objc_data  _OBJC_CLASS_$_PLDayGroupPhotosHighlightTitleGenerator
+0x1ef6a8078  __AUTH,__objc_data  _OBJC_CLASS_$_PLDayPhotosHighlightTitleGenerator
+0x1ef6a8050  __AUTH,__objc_data  _OBJC_CLASS_$_PLDefaultAssetsdServiceContext
+0x1ef69eaa0  __AUTH,__objc_data  _OBJC_CLASS_$_PLDeferredPhotoErrorAnalysis
+0x1ef69ea78  __AUTH,__objc_data  _OBJC_CLASS_$_PLDeferredPhotoErrorRecovery
+0x1ef6a8028  __AUTH,__objc_data  _OBJC_CLASS_$_PLDeferredPhotoFinalizer
+0x1ef6a8000  __AUTH,__objc_data  _OBJC_CLASS_$_PLDeferredPhotoPendingAssetRecord
+0x1ef69ea50  __AUTH,__objc_data  _OBJC_CLASS_$_PLDeferredPhotoPendingAssetRecordStore
+0x1ef69ea28  __AUTH,__objc_data  _OBJC_CLASS_$_PLDeferredProcessingServiceHandler
+0x1ee1b5c78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLDeferredRebuildFace
+0x1ef6a7fd8  __AUTH,__objc_data  _OBJC_CLASS_$_PLDeferredRebuildFaceJournalEntryPayload
+0x1ef6a7fb0  __AUTH,__objc_data  _OBJC_CLASS_$_PLDelayedFiledSystemDeletions
+0x1ef6a9e28  __AUTH,__objc_data  _OBJC_CLASS_$_PLDelayedSaveActions
+0x1ee1b3ae0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLDelayedSaveActionsDetail
+0x1ef6a7f88  __AUTH,__objc_data  _OBJC_CLASS_$_PLDelayedSaveActionsProcessor
+0x1ef69ea00  __AUTH,__objc_data  _OBJC_CLASS_$_PLDelayedSearchIndexUpdates
+0x1ef6a1fc0  __AUTH,__objc_data  _OBJC_CLASS_$_PLDemoContentResults
+0x1ef6a1f98  __AUTH,__objc_data  _OBJC_CLASS_$_PLDemoModeUtilities
+0x1ef6aa5d0  __AUTH,__objc_data  _OBJC_CLASS_$_PLDescriptionBuilder
+0x1ee1b5c50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLDetectedFace
+0x1ef6a7f60  __AUTH,__objc_data  _OBJC_CLASS_$_PLDetectedFaceComputeJournalEntryPayload
+0x1ef6a1f70  __AUTH,__objc_data  _OBJC_CLASS_$_PLDetectedFaceComputePayloadAdapter
+0x1ee1b5c28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLDetectedFaceGroup
+0x1ef6a7f38  __AUTH,__objc_data  _OBJC_CLASS_$_PLDetectedFaceJournalEntryPayload
+0x1ee1b5c00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLDetectedFaceprint
+0x1ee1b5bd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLDetectionTrait
+0x1ef6a7f10  __AUTH,__objc_data  _OBJC_CLASS_$_PLDeviceRestoreMigrationPostProcessingSupport
+0x1ef6a7ee8  __AUTH,__objc_data  _OBJC_CLASS_$_PLDeviceRestoreMigrationSupport
+0x1ef6a7ec0  __AUTH,__objc_data  _OBJC_CLASS_$_PLDiagnostics
+0x1ef69e9d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLDirectoryJournal
+0x1ef6a7e98  __AUTH,__objc_data  _OBJC_CLASS_$_PLDisconnectedManagedObjectContext
+0x1ef6a9e00  __AUTH,__objc_data  _OBJC_CLASS_$_PLDiskSpaceManagement
+0x1ef6aa5a8  __AUTH,__objc_data  _OBJC_CLASS_$_PLDistributedNotificationHandler
+0x1ee1b4760  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLDuplicateAlbum
+0x1ef6a7e70  __AUTH,__objc_data  _OBJC_CLASS_$_PLDuplicateAsset
+0x1ef6a7e48  __AUTH,__objc_data  _OBJC_CLASS_$_PLDuplicateDetector
+0x1ef6a7e20  __AUTH,__objc_data  _OBJC_CLASS_$_PLDuplicateDetectorExactPixel
+0x1ef69f978  __AUTH,__objc_data  _OBJC_CLASS_$_PLDuplicateDetectorLivePhotoContext
+0x1ef69f950  __AUTH,__objc_data  _OBJC_CLASS_$_PLDuplicateDetectorLivePhotoContextData
+0x1ef6a7df8  __AUTH,__objc_data  _OBJC_CLASS_$_PLDuplicateDetectorMetadata
+0x1ef69f928  __AUTH,__objc_data  _OBJC_CLASS_$_PLDuplicateDetectorPostProcessing
+0x1ef69f900  __AUTH,__objc_data  _OBJC_CLASS_$_PLDuplicateDetectorSortKey
+0x1ef6a7dd0  __AUTH,__objc_data  _OBJC_CLASS_$_PLDuplicateGroup
+0x1ef6a7da8  __AUTH,__objc_data  _OBJC_CLASS_$_PLDuplicateMerge
+0x1ef6a7d80  __AUTH,__objc_data  _OBJC_CLASS_$_PLDuplicateMergeCrashRecovery
+0x1ef699f78  __AUTH,__objc_data  _OBJC_CLASS_$_PLDuplicateMergeModelProperties
+0x1ef6a7d58  __AUTH,__objc_data  _OBJC_CLASS_$_PLDuplicateProcessor
+0x1ef6a9dd8  __AUTH,__objc_data  _OBJC_CLASS_$_PLEditSource
+0x1ee1b5bb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLEditedIPTCAttributes
+0x1ef6a7d30  __AUTH,__objc_data  _OBJC_CLASS_$_PLEmailAddressManager
+0x1ef6a9db0  __AUTH,__objc_data  _OBJC_CLASS_$_PLEnumerateAndSaveController
+0x1ef6a7d08  __AUTH,__objc_data  _OBJC_CLASS_$_PLExistingMomentData
+0x1ee1b5b88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLExtendedAttributes
+0x1ee1b5b60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLFaceCrop
+0x1ef6a1f48  __AUTH,__objc_data  _OBJC_CLASS_$_PLFaceDimension
+0x1ef6a7ce0  __AUTH,__objc_data  _OBJC_CLASS_$_PLFaceRebuildHelper
+0x1ef6a1f20  __AUTH,__objc_data  _OBJC_CLASS_$_PLFakeCPLLibraryManager
+0x1ef6a1ef8  __AUTH,__objc_data  _OBJC_CLASS_$_PLFakeCPLPullChangeSession
+0x1ef6a1ed0  __AUTH,__objc_data  _OBJC_CLASS_$_PLFakeCPLPushChangeSession
+0x1ef6a1ea8  __AUTH,__objc_data  _OBJC_CLASS_$_PLFeatureAvailability
+0x1ef69e9b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLFeatureAvailabilityComputer
+0x1ef6a1e80  __AUTH,__objc_data  _OBJC_CLASS_$_PLFeatureAvailabilityConfig
+0x1ef699118  __AUTH,__objc_data  _OBJC_CLASS_$_PLFeatureAvailabilityLexemeCriteria
+0x1ef69e988  __AUTH,__objc_data  _OBJC_CLASS_$_PLFeatureAvailabilityProgressDelegate
+0x1ef6a1e58  __AUTH,__objc_data  _OBJC_CLASS_$_PLFeatureAvailabilitySignalledChanges
+0x1ef69e960  __AUTH,__objc_data  _OBJC_CLASS_$_PLFeatureAvailabilityTransitionDelegate
+0x1ef69e938  __AUTH,__objc_data  _OBJC_CLASS_$_PLFeatureProcessingAlgorithmVersionProvider
+0x1ef6a1e30  __AUTH,__objc_data  _OBJC_CLASS_$_PLFeatureProcessingSnapshot
+0x1ee1b4468  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLFetchRecorder
+0x1ef6ab368  __AUTH,__objc_data  _OBJC_CLASS_$_PLFetchRecorderPredicateVisitor
+0x1ef6ab728  __AUTH,__objc_data  _OBJC_CLASS_$_PLFetchRecording
+0x1ef6ab700  __AUTH,__objc_data  _OBJC_CLASS_$_PLFetchRecordingIndexEntry
+0x1ee1b47d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLFetchRequest
+0x1ee1b5b38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLFetchingAlbum
+0x1ef6a7cb8  __AUTH,__objc_data  _OBJC_CLASS_$_PLFetchingAlbumJournalEntryPayload
+0x1ef6ab340  __AUTH,__objc_data  _OBJC_CLASS_$_PLFigPreheatItem
+0x1ee1b3270  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLFileBackedThumbnailVirtualResource
+0x1ef6a7c90  __AUTH,__objc_data  _OBJC_CLASS_$_PLFileDescriptorFuse
+0x1ef6a7c68  __AUTH,__objc_data  _OBJC_CLASS_$_PLFileSystemAssetImporter
+0x1ee1b5b10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLFileSystemBookmark
+0x1ef6a7c40  __AUTH,__objc_data  _OBJC_CLASS_$_PLFileSystemImportAsset
+0x1ee1b5ae8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLFileSystemVolume
+0x1ef6a7c18  __AUTH,__objc_data  _OBJC_CLASS_$_PLFileSystemVolumeJournalEntryPayload
+0x1ee1b3428  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLFileSystemVolumeManager
+0x1ee1b6178  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLFileSystemVolumeUnmountMonitor
+0x1ef6a7bf0  __AUTH,__objc_data  _OBJC_CLASS_$_PLFilesystemDeletionInfo
+0x1ef6a1e08  __AUTH,__objc_data  _OBJC_CLASS_$_PLFilteredAlbum
+0x1ef6a1de0  __AUTH,__objc_data  _OBJC_CLASS_$_PLFilteredAlbumChangeNotification
+0x1ef6a9d88  __AUTH,__objc_data  _OBJC_CLASS_$_PLFilteredAlbumList
+0x1ef6a1db8  __AUTH,__objc_data  _OBJC_CLASS_$_PLFilteredAlbumListChangeNotification
+0x1ef69e910  __AUTH,__objc_data  _OBJC_CLASS_$_PLFinalizedPhotoResult
+0x1ef6a7bc8  __AUTH,__objc_data  _OBJC_CLASS_$_PLFirstUnlockProtection
+0x1ef6a7ba0  __AUTH,__objc_data  _OBJC_CLASS_$_PLFolderJournalEntryPayload
+0x1ef6a7b78  __AUTH,__objc_data  _OBJC_CLASS_$_PLForegroundMonitor
+0x1ef6a9d60  __AUTH,__objc_data  _OBJC_CLASS_$_PLFrequentLocation
+0x1ef6a7b50  __AUTH,__objc_data  _OBJC_CLASS_$_PLFrequentLocationManager
+0x1ef6a9d38  __AUTH,__objc_data  _OBJC_CLASS_$_PLFrequentLocationProcessor
+0x1ef69e8e8  __AUTH,__objc_data  _OBJC_CLASS_$_PLFullSizeRenderImageVirtualResource
+0x1ef699f50  __AUTH,__objc_data  _OBJC_CLASS_$_PLFullSizeRenderVideoComplementVirtualResource
+0x1ef69e8c0  __AUTH,__objc_data  _OBJC_CLASS_$_PLFullSizeRenderVideoVirtualResource
+0x1ee1b36a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLGeneratedAssetDescription
+0x1ee1b5ac0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLGenericAlbum
+0x1ef6a7b28  __AUTH,__objc_data  _OBJC_CLASS_$_PLGenericAlbumJournalEntryPayload
+0x1ef69e898  __AUTH,__objc_data  _OBJC_CLASS_$_PLGenericLocationTuple
+0x1ee1b5a98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLGlobalKeyValue
+0x1ee1b4738  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLGlobalKeyValueAnyTransformer
+0x1ee1b3518  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLGlobalKeyValueAttributes
+0x1ef6ab6d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLGlobalValues
+0x1ef6a1d90  __AUTH,__objc_data  _OBJC_CLASS_$_PLGraphBitset
+0x1ef6a1d68  __AUTH,__objc_data  _OBJC_CLASS_$_PLGraphCache
+0x1ee1b4378  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLGraphEdge
+0x1ee1b3f68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLGraphEdgeAdditionalLabelAssignment
+0x1ee1b4440  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLGraphEdgeValue
+0x1ee1b4350  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLGraphLabel
+0x1ee1b4328  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLGraphNode
+0x1ee1b3f18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLGraphNodeAdditionalLabelAssignment
+0x1ef6ab6b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLGraphNodeContainer
+0x1ef699f28  __AUTH,__objc_data  _OBJC_CLASS_$_PLGraphNodeSocialGroupJournalEntryPayload
+0x1ee1b4300  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLGraphNodeValue
+0x1ef6a1d40  __AUTH,__objc_data  _OBJC_CLASS_$_PLGreenController
+0x1ef69e870  __AUTH,__objc_data  _OBJC_CLASS_$_PLGuestAssetSyncEngine
+0x1ef6a7b00  __AUTH,__objc_data  _OBJC_CLASS_$_PLHierarchicalClustering
+0x1ef6a7ad8  __AUTH,__objc_data  _OBJC_CLASS_$_PLHighlightHierarchy
+0x1ef6a7ab0  __AUTH,__objc_data  _OBJC_CLASS_$_PLHighlightItemClusterer
+0x1ef6a7a88  __AUTH,__objc_data  _OBJC_CLASS_$_PLHighlightItemList
+0x1ef6a7a60  __AUTH,__objc_data  _OBJC_CLASS_$_PLHighlightItemPromoter
+0x1ef6a7a38  __AUTH,__objc_data  _OBJC_CLASS_$_PLImageContainer
+0x1ef6a1d18  __AUTH,__objc_data  _OBJC_CLASS_$_PLImageGeometry
+0x1ef6aa580  __AUTH,__objc_data  _OBJC_CLASS_$_PLImageLoadingUtilities
+0x1ef6a9d10  __AUTH,__objc_data  _OBJC_CLASS_$_PLImageWriter
+0x1ef699f00  __AUTH,__objc_data  _OBJC_CLASS_$_PLImageWriterCrashRecoveryJobInProgressMarker
+0x1ee1b5a70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLImportSession
+0x1ef6a7a10  __AUTH,__objc_data  _OBJC_CLASS_$_PLImportSessionJournalEntryPayload
+0x1ef6a9ce8  __AUTH,__objc_data  _OBJC_CLASS_$_PLIndexMapper
+0x1ee1b2ca8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLIndicatorFileCoordinator
+0x1ef6a79e8  __AUTH,__objc_data  _OBJC_CLASS_$_PLIngestJobCameraMetadata
+0x1ef6a1cf0  __AUTH,__objc_data  _OBJC_CLASS_$_PLInitialSuggestionDateFilter
+0x1ef6a79c0  __AUTH,__objc_data  _OBJC_CLASS_$_PLInitialSuggestionRanker
+0x1ef6a7998  __AUTH,__objc_data  _OBJC_CLASS_$_PLInitialSuggestionsManager
+0x1ef6a7970  __AUTH,__objc_data  _OBJC_CLASS_$_PLInitialSuggestionsStorageManager
+0x1ef6a1cc8  __AUTH,__objc_data  _OBJC_CLASS_$_PLInstrumentedBlockOperation
+0x1ef6a1ca0  __AUTH,__objc_data  _OBJC_CLASS_$_PLInstrumentedOperationQueue
+0x1ef69e848  __AUTH,__objc_data  _OBJC_CLASS_$_PLIntensiveResourceTask
+0x1ef69e820  __AUTH,__objc_data  _OBJC_CLASS_$_PLIntensiveResourceTaskManager
+0x1ef69e7f8  __AUTH,__objc_data  _OBJC_CLASS_$_PLIntensiveResourceTaskResponder
+0x1ef6a7948  __AUTH,__objc_data  _OBJC_CLASS_$_PLInterLibraryTransfer
+0x1ee1b3ab8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLInterLibraryTransferOptions
+0x1ef6a1c78  __AUTH,__objc_data  _OBJC_CLASS_$_PLInterest
+0x1ee1b5a48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLInternalResource
+0x1ef6a9cc0  __AUTH,__objc_data  _OBJC_CLASS_$_PLInternalResourceSidecarRepresentation
+0x1ef699ed8  __AUTH,__objc_data  _OBJC_CLASS_$_PLIntersectedSearchIndexEntity
+0x1ef6a7920  __AUTH,__objc_data  _OBJC_CLASS_$_PLJPEGThumbnailDecode
+0x1ef6a78f8  __AUTH,__objc_data  _OBJC_CLASS_$_PLJournal
+0x1ef69e7d0  __AUTH,__objc_data  _OBJC_CLASS_$_PLJournalChecksumContext
+0x1ef6a78d0  __AUTH,__objc_data  _OBJC_CLASS_$_PLJournalEntry
+0x1ef6a78a8  __AUTH,__objc_data  _OBJC_CLASS_$_PLJournalEntryHeader
+0x1ef6a7880  __AUTH,__objc_data  _OBJC_CLASS_$_PLJournalEntryPayloadIDFactory
+0x1ef6a7858  __AUTH,__objc_data  _OBJC_CLASS_$_PLJournalEntryPayloadProperty
+0x1ef699eb0  __AUTH,__objc_data  _OBJC_CLASS_$_PLJournalEntryPayloadPropertyInfoAssetCompute
+0x1ef69f8d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLJournalEntryPayloadUpdateAdapter
+0x1ef6a7830  __AUTH,__objc_data  _OBJC_CLASS_$_PLJournalFile
+0x1ef6a7808  __AUTH,__objc_data  _OBJC_CLASS_$_PLJournalManager
+0x1ef6a77e0  __AUTH,__objc_data  _OBJC_CLASS_$_PLJournalManagerCore
+0x1ef6aa558  __AUTH,__objc_data  _OBJC_CLASS_$_PLKMeansClustering
+0x1ef6a1c50  __AUTH,__objc_data  _OBJC_CLASS_$_PLKeyFaceManager
+0x1ef6a9c98  __AUTH,__objc_data  _OBJC_CLASS_$_PLKeyedUnarchiver
+0x1ef6a77b8  __AUTH,__objc_data  _OBJC_CLASS_$_PLKeywordJournalEntryPayload
+0x1ef6a7790  __AUTH,__objc_data  _OBJC_CLASS_$_PLKeywordManager
+0x1ef6a1c28  __AUTH,__objc_data  _OBJC_CLASS_$_PLLOFOutlierDetection
+0x1ef6a7768  __AUTH,__objc_data  _OBJC_CLASS_$_PLLegacyChangeEvent
+0x1ef6a9c70  __AUTH,__objc_data  _OBJC_CLASS_$_PLLegacyChangeEventBuilder
+0x1ef69e7a8  __AUTH,__objc_data  _OBJC_CLASS_$_PLLeoDonatableItem
+0x1ef69e780  __AUTH,__objc_data  _OBJC_CLASS_$_PLLeoLexemeIDSet
+0x1ef6a9c48  __AUTH,__objc_data  _OBJC_CLASS_$_PLLeoLexiconStore
+0x1ef69e758  __AUTH,__objc_data  _OBJC_CLASS_$_PLLeoStatistics
+0x1ef69e730  __AUTH,__objc_data  _OBJC_CLASS_$_PLLexemeSpec
+0x1ef6a7740  __AUTH,__objc_data  _OBJC_CLASS_$_PLLibraryClusterer
+0x1ef6a9c20  __AUTH,__objc_data  _OBJC_CLASS_$_PLLibraryContentsEnumerator
+0x1ef69e708  __AUTH,__objc_data  _OBJC_CLASS_$_PLLibraryOpenerCreationOptions
+0x1ee1b4710  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLLibraryScope
+0x1ef6a1c00  __AUTH,__objc_data  _OBJC_CLASS_$_PLLibraryScopeChangeTracker
+0x1ef6a1bd8  __AUTH,__objc_data  _OBJC_CLASS_$_PLLibraryScopeCondition
+0x1ef6a1bb0  __AUTH,__objc_data  _OBJC_CLASS_$_PLLibraryScopeConditionDateRange
+0x1ef6a1b88  __AUTH,__objc_data  _OBJC_CLASS_$_PLLibraryScopeConditionPerson
+0x1ef6a1b60  __AUTH,__objc_data  _OBJC_CLASS_$_PLLibraryScopeConditionUnknown
+0x1ef6a1b38  __AUTH,__objc_data  _OBJC_CLASS_$_PLLibraryScopeRule
+0x1ef6a1b10  __AUTH,__objc_data  _OBJC_CLASS_$_PLLibraryScopeRuleEvaluator
+0x1ef6a1ae8  __AUTH,__objc_data  _OBJC_CLASS_$_PLLibraryScopeRuleInterpreter
+0x1ef6a1ac0  __AUTH,__objc_data  _OBJC_CLASS_$_PLLibraryScopeRuleManager
+0x1ef6a1a98  __AUTH,__objc_data  _OBJC_CLASS_$_PLLibraryScopeTransactionResult
+0x1ef6a7718  __AUTH,__objc_data  _OBJC_CLASS_$_PLLibraryServicesCPLReadiness
+0x1ee1b61f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLLibraryServicesManager
+0x1ef69e6e0  __AUTH,__objc_data  _OBJC_CLASS_$_PLLibraryServicesOperation
+0x1ef6a76f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLLibrarySyncContext
+0x1ee1b5a20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLLimitedLibraryFetchFilter
+0x1ef6a9bf8  __AUTH,__objc_data  _OBJC_CLASS_$_PLLivePhotoEditSource
+0x1ef6a76c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLLivePhotoPairingProcessor
+0x1ee1b3b58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLLocalChangeEventBuilder
+0x1ef6a76a0  __AUTH,__objc_data  _OBJC_CLASS_$_PLLocalCreationDateCreator
+0x1ef6a7678  __AUTH,__objc_data  _OBJC_CLASS_$_PLLocalVideoKeyFrameGenerationJob
+0x1ef6ab688  __AUTH,__objc_data  _OBJC_CLASS_$_PLLocalVideoKeyFrameJobQueue
+0x1ef6a7650  __AUTH,__objc_data  _OBJC_CLASS_$_PLLocalVideoKeyFrameVideoChoosingOptions
+0x1ef6a7628  __AUTH,__objc_data  _OBJC_CLASS_$_PLLocationOfInterest
+0x1ef6a7600  __AUTH,__objc_data  _OBJC_CLASS_$_PLLocationOfInterestCache
+0x1ef6a75d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLLocationOfInterestLocation
+0x1ef6a75b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLLocationOfInterestVisit
+0x1ee1b35b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLLocationUtils
+0x1ee1b59f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLMainQueuePhotoLibrary
+0x1ee1b59d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLManagedAlbum
+0x1ee1b59a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLManagedAlbumList
+0x1ee1b62b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLManagedAsset
+0x1ee1b3400  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLManagedAssetID
+0x1ef6a7588  __AUTH,__objc_data  _OBJC_CLASS_$_PLManagedAssetRecoveryManager
+0x1ef6a1a70  __AUTH,__objc_data  _OBJC_CLASS_$_PLManagedAssetRuleInterpreter
+0x1ef699e88  __AUTH,__objc_data  _OBJC_CLASS_$_PLManagedAssetShareAdjustmentBakeInOptions
+0x1ef699e60  __AUTH,__objc_data  _OBJC_CLASS_$_PLManagedAssetShareMetadataCopyOptions
+0x1ee1b5980  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLManagedFolder
+0x1ee1b5958  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLManagedKeyword
+0x1ee1b5930  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLManagedLegacyFace
+0x1ee1b5908  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLManagedLegacyFaceAlbum
+0x1ef69e6b8  __AUTH,__objc_data  _OBJC_CLASS_$_PLManagedLeoAttributeStore
+0x1ef69e690  __AUTH,__objc_data  _OBJC_CLASS_$_PLManagedLeoAttributeStoreContext
+0x1ee1b3ef0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLManagedLeoItem
+0x1ee1b3ec8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLManagedLeoLexeme
+0x1ee1b6290  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLManagedObject
+0x1ee1b58e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLManagedObjectContext
+0x1ee1b4418  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLManagedObjectContextDelegate
+0x1ee1b58b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLManagedObjectContextList
+0x1ef6a7560  __AUTH,__objc_data  _OBJC_CLASS_$_PLManagedObjectJournalEntryPayload
+0x1ef69e668  __AUTH,__objc_data  _OBJC_CLASS_$_PLManagedObjectPagingIterator
+0x1ef6a1a48  __AUTH,__objc_data  _OBJC_CLASS_$_PLManagedObjectValidationResult
+0x1ef6a1a20  __AUTH,__objc_data  _OBJC_CLASS_$_PLManagedObjectValidator
+0x1ee1b5890  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLMediaAnalysisAssetAttributes
+0x1ef69e640  __AUTH,__objc_data  _OBJC_CLASS_$_PLMediaAnalysisEmbedding
+0x1ef6a7538  __AUTH,__objc_data  _OBJC_CLASS_$_PLMediaAnalysisEmbeddingSearch
+0x1ef6a19f8  __AUTH,__objc_data  _OBJC_CLASS_$_PLMediaAnalysisEmbeddingSearchOptions
+0x1ef6a19d0  __AUTH,__objc_data  _OBJC_CLASS_$_PLMediaAnalysisEmbeddingSearchResult
+0x1ee1b2be0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLMediaAnalysisServiceRequestAdapter
+0x1ef6a7510  __AUTH,__objc_data  _OBJC_CLASS_$_PLMediaMetadataVirtualResource
+0x1ef6a9bd0  __AUTH,__objc_data  _OBJC_CLASS_$_PLMediaMiningUtilities
+0x1ef69f8b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLMediaProcessingPredicateBuilder
+0x1ee1b5868  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLMemory
+0x1ef699e38  __AUTH,__objc_data  _OBJC_CLASS_$_PLMemoryComputeJournalEntryPayload
+0x1ef699e10  __AUTH,__objc_data  _OBJC_CLASS_$_PLMemoryComputePayloadAdapter
+0x1ef6a74e8  __AUTH,__objc_data  _OBJC_CLASS_$_PLMemoryJournalEntryPayload
+0x1ee1b5840  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLMergePolicy
+0x1ef6a74c0  __AUTH,__objc_data  _OBJC_CLASS_$_PLMigrationContext
+0x1ee1b5818  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLMigrationHistory
+0x1ef6a7498  __AUTH,__objc_data  _OBJC_CLASS_$_PLMigrationHistoryJournalEntryPayload
+0x1ef6a9ba8  __AUTH,__objc_data  _OBJC_CLASS_$_PLMinMaxSettings
+0x1ee1b48c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLModelMigration
+0x1ef6a7470  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction
+0x1ef6a7448  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationActionBackground
+0x1ef6a7420  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationActionCore
+0x1ef6a73f8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationActionPostRepair
+0x1ef6a73d0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationActionPreRepair
+0x1ef69e618  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationActionPreSchema
+0x1ef6a73a8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationActionProcessor
+0x1ef6a19a8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationActionStaged
+0x1ef6a1980  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationActionStaged_FixupExistingCloudSharedAlbumInvitationRecord
+0x1ef6a1958  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationActionStaged_FixupExistingUserFeedback
+0x1ef6a1930  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationActionStaged_MoveLibraryScopeContributors
+0x1ef6a1908  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationActionStaged_MoveLibraryScopeShareState
+0x1ef6a7380  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationActionUtility
+0x1ef69e5f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_AddCloudFeedEntryUUID
+0x1ef69e5c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_AddDuplicateBackgroundJobItems
+0x1ef69e5a0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_AddMissingAdjustedMediaMetadata
+0x1ef6a7358  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_AddMissingExtendedAttributeDateTimezone
+0x1ef69e578  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_AddMissingExtendedAttributeDateTimezoneFromCloudMaster
+0x1ef6a7330  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_AddMissingExtendedAttributeDigitalZoomRatio
+0x1ef6a7308  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_AddMissingExtendedAttributeFocalLengthIn35mm
+0x1ef6a72e0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_AddMissingExtendedAttributeLocation
+0x1ef6a72b8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_AddMissingExtendedAttributeOrientation
+0x1ef69e550  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_AddMissingExtendedAttributes_2024
+0x1ef69e528  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_AddMissingExtendedAttributes_2025
+0x1ef69e500  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_AvalancheKind
+0x1ef69e4d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_BackfillSharePostShareCollectionShareKind
+0x1ef699de8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_BumpOCRVersionFrom8to9
+0x1ef6a7290  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_CPLPrompting
+0x1ef69e4b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_CPLSettings
+0x1ef6a7268  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_CinematicVideoPopulateDepthType
+0x1ef699dc0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_CleanupAssetResourceJobConfigurationStateDisable
+0x1ef69e488  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ClearBitsetData
+0x1ef6a7240  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ClearInterruptedMaintenanceTaskLibraries
+0x1ef6a18e0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ClearPurgeableIsCloneState
+0x1ef69e460  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_CopyStickerConfidenceScoreToAssetTable
+0x1ef699d98  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_DeleteAllCloudFeedAssetsEntries
+0x1ef6a7218  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_DeleteAllSharedLibraryPLSuggestions
+0x1ef69e438  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_DeleteAmbientSuggestions
+0x1ef69e410  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_DeleteCarouselCruft
+0x1ef69e3e8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_DeleteDanglingPLGraphEdges
+0x1ef69e3c0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_DeleteEmptyGraphGroups
+0x1ef69e398  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_DeleteFullSizeRenderVideosForLegacyAdjustedSlomos
+0x1ef69e370  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_DeleteInvalidSocialGroups
+0x1ef69e348  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_DeleteInvalidStateSharedStreamShareParticipants
+0x1ef69e320  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_DeleteNonCollectionShareEntries
+0x1ef6a71f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_DeleteOrphanedFaces
+0x1ef69e2f8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_DeletePLGeneratedAssetDescriptionNodesAndLabel
+0x1ef69e2d0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_DeletePetPersonsAndDetectedFaces
+0x1ef699d70  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_DeleteStaleMigrationAttributesFromServerHandlingBug
+0x1ef69e2a8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_DrawAssetPersonEdges
+0x1ef69e280  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_DropManualIndexes
+0x1ef69e258  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixAppDomainLibraryCreateOptions
+0x1ef69e230  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixAssetDeferredProcessingNeededState
+0x1ef69e208  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixAssetsWithMissingSaliencyRects
+0x1ef6a71c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixBackgroundResourceWorkerModifyingIncorrectResources
+0x1ef6a71a0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixBadExtendedAttribute
+0x1ef69e1e0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixBlankPhotosFromVideoMode
+0x1ef69e1b8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixComputeSyncResourceFileExtension
+0x1ef69e190  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixDuplicateMergeCrashRecoveryAssets
+0x1ef6a7178  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixExtendedAttributeDateCreated
+0x1ef69e168  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixMultipleCurrentUserOwnerShareParticipantsOnCollectionShares
+0x1ef699d48  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixNotificationStateForCPLCollectionShares
+0x1ef6a7150  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixPackedBadgeAttributesForRAWPlusJPEG
+0x1ef6a7128  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixResourcesIncorrectlyAssignedToSyndicationDataStore
+0x1ef69e140  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixResumeMarkerName
+0x1ef69e118  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixSignExtended32bSceneIdentifiers
+0x1ef699d20  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixUnknownKindAssetsFromOriginalResourceUTI
+0x1ef6a7100  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixUnpushedVideoComplementResourcesAfterFDR
+0x1ef69e0f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixUnseenContentStateForCollectionShares
+0x1ef698e68  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixupAssetsStuckInDeferredProcessing
+0x1ef69e0c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixupCascadeDonationWorkItems
+0x1ef69e0a0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixupDefaultStickerConfidenceScoreValues
+0x1ef69e078  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixupDefaultVideoStickerSuggestionScoreValues
+0x1ef69e050  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixupMislabeledCurrentUserParticipants
+0x1ef699cf8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixupStaleSearchEntities
+0x1ef6a70d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixupTombstonedPeople
+0x1ef6a70b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_FixupTombstonedPeopleOnSharedLibraryRules
+0x1ef69e028  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_GenerateMemoryStartAndEndDates
+0x1ef6a7088  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_GreenTeaSetDefaultContactsAuthorizationState
+0x1ef69e000  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_InstallComputeSyncResourcesIfNeeded
+0x1ef69dfd8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_LibraryScopeTrashedStateFixup
+0x1ef698e40  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_MarkOwnedCollectionShareAssetsAsCopied
+0x1ef69dfb0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_MergeDetectedFacesAndDetectedTorsos
+0x1ef69df88  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_MigrateCloudFeedAssetsEntriesToSharePosts
+0x1ef69df60  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_MigrateCloudSharedAlbumToCollectionShare
+0x1ef6a7060  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_MigrateLastGuestAssetSyncToken
+0x1ef69df38  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_MigrateMemoryPendingStateStoryToCreationType
+0x1ef69df10  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_MigrateOrphanedCloudSharedAlbumInvitationRecordsToShareParticipants
+0x1ef6a7038  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_MigrateProResPackedBadgeAttributes
+0x1ef69dee8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_MigrateSocialGroupRebuildPersistence
+0x1ef6a7010  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_MigrateSuggestedByClientTypeCameraSmartSharing
+0x1ef69dec0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_MoveVersionsToMediaAnalysisAttributes
+0x1ef698e18  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_PersistKeywordsToJournalAndFilesystem
+0x1ef6a6fe8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_PopulateBundleScopeOnAssets
+0x1ef69de98  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_PopulateCloudFeedEntryIsMine
+0x1ef69de70  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_PopulateCloudFeedEntryRelationships
+0x1ef6a6fc0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_PopulateExtendedAttributes
+0x1ef6a6f98  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_PopulateInitialActiveLibraryScopeParticipationState
+0x1ef6a6f70  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_PopulateInitialSharedAssetCollectionStats
+0x1ef69de48  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_PopulateKeyAssets
+0x1ef69de20  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_PopulatePersonCloudDetectionType
+0x1ef69ddf8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_PrepareSharedAssetContainerUpdateWorker
+0x1ef69ddd0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ProcessAlbumAssociation
+0x1ef6a6f48  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_PromoteLeftoverDeferredAssets
+0x1ef699cd0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_PromoteUnknownKindAssetsWithCloudMaster
+0x1ef69dda8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_PushAssetsWithPetSyncableFaces
+0x1ef69dd80  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ReKeyResourcesIncorrectlyStoredAsM4A
+0x1ef69f888  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RebuildHighlights
+0x1ef69dd58  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RebuildTableThumbsFromMasterThumbs
+0x1ef69dd30  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RecalculateImageRequestHintsForThumbnails
+0x1ef69dd08  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ReevaluateAllowedForAnalysisForGPAssets
+0x1ef69dce0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ReevaluateAllowedForAnalysisForMontageAssets
+0x1ef698df0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ReevaluateAllowedForAnalysisForUnknownKindAssets
+0x1ef69dcb8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ReevaluatePanoramaImageAssets
+0x1ef6a6f20  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RelocateBundleScopeData
+0x1ef69dc90  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RelocateEdgesAndNormalizeNodeValues
+0x1ef698dc8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RelocateUBFOriginalResourceTypes
+0x1ef6a6ef8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveAdjustedAssetsFromDuplicateAlbums
+0x1ef6a6ed0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveAllBlackAllWhiteAssetsFromDuplicateAlbums
+0x1ef69dc68  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveAllPurgeableClones
+0x1ef6a6ea8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveAllQuarantinedAssetsFromDuplicateAlbums
+0x1ef6a6e80  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveAnimatedAssetsFromDuplicateAlbums
+0x1ef69dc40  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveAssetResourceUploadJobConfigurations
+0x1ef69dc18  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveAssetsFromSubscribedCloudFeedEntries
+0x1ef6a6e58  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveCombinedAssetsFromDuplicateAlbums
+0x1ef69dbf0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveExcessSocialGroupKeyAssetEdges
+0x1ef6a18b8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveGuestFacesFromSPL
+0x1ef6a6e30  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveInvalidExtendedAttributesDateTimezone
+0x1ef69dbc8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveLabelsFromSyndication
+0x1ef6a6e08  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveLegacyImportedAssetsFromDuplicateAlbums
+0x1ef69dba0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveMessageProfileGraphCache
+0x1ef6a6de0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveNotUploadedAlbum
+0x1ef69db78  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveOldCameraPreviewWellImage
+0x1ef69db50  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveOrphanGeneratedAssetDescriptionNodes
+0x1ef6a6db8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveOrphanedMediaAnalysisAttributes
+0x1ef6a6d90  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveOrphanedSceneprint
+0x1ef69db28  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemovePSIDatabase
+0x1ef6a6d68  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemovePeopleMergeCandidatesForConfidenceComputation
+0x1ef6a6d40  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveReferencedAssetsFromDuplicateAlbums
+0x1ef69db00  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveRejectedMemberLabel
+0x1ef6a6d18  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveScreenshotAssetsFromDuplicateAlbums
+0x1ef6a6cf0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveSharedLibraryAlbum
+0x1ef6a6cc8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveSharedLibraryAssetsFromDuplicateAlbums
+0x1ef69dad8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveUnusedBackgroundJobWorkItems
+0x1ef69dab0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveUnverifiedSocialGroups
+0x1ef69da88  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RemoveVisionComputeResources
+0x1ef69da60  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RepairDuplicateDetectorPerceptualProcessingState
+0x1ef69da38  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RepairFinderSyncAlbumFilePersistence
+0x1ef6a6ca0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RepairMaintenanceTaskMarker
+0x1ef6a6c78  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RepairSingletons
+0x1ef6a6c50  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RepairTrashHiddenDuplicateAssetVisibilityState
+0x1ef6a6c28  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RepairUnknownAssetTypeAndUnsupportedPlaybackStyle
+0x1ef69da10  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ReprocessInvalidDuplicateHashes
+0x1ef6a6c00  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RepushAssetsWithImportedByBundleIdentifier
+0x1ef69d9e8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetAllFaceCropsToDirty
+0x1ef69d9c0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetAnalysisForFinderSyncedAssets
+0x1ef6a6bd8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetBackgroundJobServicePersistedBundleRecords
+0x1ef6a6bb0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetClusterSequenceNumberForRejectedFaces
+0x1ef6a6b88  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetCurationScoreSyndicatedAsset
+0x1ef69d998  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetCustomSocialGroupDataForRejectedGroups
+0x1ef6a6b60  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetDuplicateAlbums
+0x1ef6a6b38  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetDuplicateDetectorProcessingToken
+0x1ef6a6b10  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetDuplicateProcessingValue
+0x1ef69d970  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetExternalAssets
+0x1ef69d948  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetExternalAssetsFromCamera
+0x1ef69d920  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetFilesystemImportToken
+0x1ef69d8f8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetGraphPersons
+0x1ef699ca8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetHighlights
+0x1ef69d8d0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetLastCompletePrefetchDate
+0x1ef69d8a8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetLocalAvailabilityDeferredProcessingFinalVideo
+0x1ef6ab7f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetLocalAvailabilityRetryStateForDeferredProcessingFinalResources
+0x1ef6a6ae8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetRecentHighlightTitleUpdateDate
+0x1ef6a6ac0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetRevGeoAndShiftedLocation
+0x1ef69d880  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetSensitivityProcessingStateForAssetsContributedByCurrentUser
+0x1ef6a6a98  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetSharedLibrarySharingSuggestionsAssets
+0x1ef69d858  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetSocialGroup
+0x1ef6a6a70  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetSyndication
+0x1ef6a6a48  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetSyndicationAssetSyncToken
+0x1ef69d830  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetTripHighlightEnrichmentVersion
+0x1ef6a6a20  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResetVideoDuplicateAssetFromDuplicateAlbums
+0x1ef699c80  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_ResolveDuplicateThumbnailIndexes
+0x1ef698da0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RestoreProvenanceStateAfterRename
+0x1ef69d808  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RestoreSocialGroupUserPicks
+0x1ef6a69f8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RevalidateFaceAreaPoints
+0x1ef69d7e0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_RunSocialGroupAssetContainment
+0x1ef698d78  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SaveProvenanceStateForRename
+0x1ef699c58  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetAcceptanceDateOnCPLCollectionShares
+0x1ef69d7b8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetAddedDateFromCloudBatchPublishDateForCollectionShareAssets
+0x1ef69d790  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetCaptionForSharedStreamSharePosts
+0x1ef69d768  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetCollectionShareCurrentParticipantRole
+0x1ef6a69d0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetDefaultFaceAnalysisVersion
+0x1ef698d50  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetKeepOriginalsPrefetchModeForVisualIntelligenceLibrary
+0x1ef699c30  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetNotificationStateNoneOnSilentMigrationShares
+0x1ef69d740  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetPlatformSpecificSortAscendingForPublishDateSortedCollectionShares
+0x1ef6a69a8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetPrivacyStateOnSmartAlbums
+0x1ef6990f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetProvenanceStateFromMetadata
+0x1ef698d28  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetRunOnceFlagToLinkOrphanedCollectionShareContributors
+0x1ef69d718  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetRunOnceFlagToReconcileSharedStreamCollectionShareParticipants
+0x1ef69d6f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetRunOnceFlagToRepushExistingCrystalBPayloads
+0x1ef699c08  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetRunOnceFlagToRepushMastersAffectedByRaveSeedVidComp
+0x1ef6ab818  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetRunOnceFlagToRestoreMissingCollectionSharePosts
+0x1ef69d6c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetShareParticipantOnCloudComments
+0x1ef69d6a0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetShareParticipantOnOrphanedCollectionShareAssets
+0x1ef69d678  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetStartEndDatesOnCollectionShares
+0x1ef69d650  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SetUniqueEdgeExternalIdentifiers
+0x1ef699be0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_SplitMergedCloudFeedReactionEntries
+0x1ef6a6980  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_UnTrashSharedDuplicates
+0x1ef69d628  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_UpdateAlchemistAssetResourcesUniformTypeIdentifier
+0x1ef69d600  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_UpdateAssetAdjustmentsState
+0x1ef69d5d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_UpdateDayHighlightDateTitles
+0x1ef6a6958  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_UpdateDuplicateAssetVisibilityStateMostRelevant
+0x1ef6a6930  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_UpdateDuplicateProcessingState
+0x1ef69d5b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_UpdateDuplicateProcessingStateScreenshot
+0x1ef69d588  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_UpdateEditSuggestionImageRecipeID
+0x1ef69d560  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_UpdateGenericAlbumModificationDate
+0x1ef69d538  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_UpdateHighlightCollageAssets
+0x1ef69d510  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_UpdateImportedFileSystemAssetsGlobalKeyValue
+0x1ef69d4e8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_UpdateOutdatedPersonMetadata
+0x1ef69d4c0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_UpdatePlaybackControlBadgeAttribute
+0x1ef69d498  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_UpdateSharedAssetContainerWorkItems
+0x1ef69d470  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_UpdateSharedStreamCollectionShareTemporaryAssetDerivativesPurgeable
+0x1ef69d448  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_UpdateThumbnailIndexAndFooterFormat
+0x1ef69d420  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_UpdateTripHighlightDateTitles
+0x1ef69d3f8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_WriteEdgeExternalIdentifiers
+0x1ef6a6908  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_WriteLibraryScopeIsActiveDefaults
+0x1ef69d3d0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_WriteOutSocialGroupUserPickedKeyAssets
+0x1ef69d3a8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_dedupeResourcesWithSimilarCompactUTI
+0x1ef6a68e0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_fixLivePhotoSubtypePlaybackStyleMismatch
+0x1ef69d380  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_moveLocalVersionTokenFromPlistToGlobalValues
+0x1ef69d358  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_setInitialIsDetectedScreenshotValue
+0x1ef69d330  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_setInitialRecencyTypeValue
+0x1ef69d308  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_setInitialhasPeopleSceneMidOrGreaterConfidenceValue
+0x1ef6a68b8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_updateACVideos
+0x1ef69d2e0  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationAction_updateBrokenStyleableFromRebuild
+0x1ef699bb8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigrationHistory
+0x1ef69d2b8  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigration_SetParticipantRoleOnShareParticipants
+0x1ee1b48a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLModelMigrator
+0x1ef6a6890  __AUTH,__objc_data  _OBJC_CLASS_$_PLModelMigratorRebuildProgressFraction
+0x1ee1b57f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLMoment
+0x1ef6a6868  __AUTH,__objc_data  _OBJC_CLASS_$_PLMomentCluster
+0x1ef6aaf80  __AUTH,__objc_data  _OBJC_CLASS_$_PLMomentGeneration
+0x1ef6a6840  __AUTH,__objc_data  _OBJC_CLASS_$_PLMomentGenerationDataManager
+0x1ef6a6818  __AUTH,__objc_data  _OBJC_CLASS_$_PLMomentGenerationThrottle
+0x1ef6a67f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLMomentGenerationThrottleDefaultTimeProvider
+0x1ef6a9b80  __AUTH,__objc_data  _OBJC_CLASS_$_PLMomentGenerationUtils
+0x1ef69d290  __AUTH,__objc_data  _OBJC_CLASS_$_PLMomentProcessingData
+0x1ee1b57c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLMomentShare
+0x1ef698d00  __AUTH,__objc_data  _OBJC_CLASS_$_PLMomentSharePreviewSanitizer
+0x1ef6a1890  __AUTH,__objc_data  _OBJC_CLASS_$_PLMomentTheme
+0x1ef699b90  __AUTH,__objc_data  _OBJC_CLASS_$_PLMomentThemeAssignment
+0x1ef6a67c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLMonthGroupingRule
+0x1ef69d268  __AUTH,__objc_data  _OBJC_CLASS_$_PLMutableAssetAdjustmentOptions
+0x1ef6a9b58  __AUTH,__objc_data  _OBJC_CLASS_$_PLNLP
+0x1ef6a67a0  __AUTH,__objc_data  _OBJC_CLASS_$_PLNSStringJournalEntryPayloadID
+0x1ef6a6778  __AUTH,__objc_data  _OBJC_CLASS_$_PLNSUUIDJournalEntryPayloadID
+0x1ef6a6750  __AUTH,__objc_data  _OBJC_CLASS_$_PLNotification
+0x1ef6aa530  __AUTH,__objc_data  _OBJC_CLASS_$_PLNotificationManager
+0x1ef6a6728  __AUTH,__objc_data  _OBJC_CLASS_$_PLNotificationUNCenter
+0x1ef6a6700  __AUTH,__objc_data  _OBJC_CLASS_$_PLObjectSnapshot
+0x1ef6a66d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLPairing
+0x1ef6a66b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLPairingProcessor
+0x1ef6a6688  __AUTH,__objc_data  _OBJC_CLASS_$_PLPersistedAlbumMetadata
+0x1ef6a6660  __AUTH,__objc_data  _OBJC_CLASS_$_PLPersistedFolderMetadata
+0x1ef6a6638  __AUTH,__objc_data  _OBJC_CLASS_$_PLPersistedMemoryMetadata
+0x1ef6a6610  __AUTH,__objc_data  _OBJC_CLASS_$_PLPersistedPersonFaceMetadata
+0x1ef6a65e8  __AUTH,__objc_data  _OBJC_CLASS_$_PLPersistedPersonMetadata
+0x1ee1b57a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPersistentContainer
+0x1ee1b5778  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPersistentHistoryChangeDistributor
+0x1ee1b3f40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPersistentHistoryDistributionEvent
+0x1ee1b3ea0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPersistentHistoryMarker
+0x1ef6a1868  __AUTH,__objc_data  _OBJC_CLASS_$_PLPersistentHistoryMarkerDate
+0x1ee1b3e78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPersistentHistoryMarkerToken
+0x1ef6a1840  __AUTH,__objc_data  _OBJC_CLASS_$_PLPersistentHistoryMarkerTransaction
+0x1ef6a65c0  __AUTH,__objc_data  _OBJC_CLASS_$_PLPersistentHistoryStats
+0x1ee1b3e50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPersistentHistoryTransactionIterator
+0x1ee1b5750  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPersistentHistoryTransactionModifiers
+0x1ee1b3e28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPersistentHistoryUtilities
+0x1ee1b5728  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPerson
+0x1ef6a1818  __AUTH,__objc_data  _OBJC_CLASS_$_PLPersonContactInfoMigrator
+0x1ef6a9b30  __AUTH,__objc_data  _OBJC_CLASS_$_PLPersonInfoManager
+0x1ef6a6598  __AUTH,__objc_data  _OBJC_CLASS_$_PLPersonJournalEntryPayload
+0x1ee1b5700  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPersonReference
+0x1ee1b3e00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPersonalEnvironmentAttributes
+0x1ee1b46e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPhotoAnalysisAssetAttributes
+0x1ef69d240  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoAnalysisExecutiveService
+0x1ef6aaf58  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoAnalysisMomentGraphService
+0x1ef6a17f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoAnalysisPersonSuggestion
+0x1ef6a9b08  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoAnalysisPhotoLibraryService
+0x1ee1b2de8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPhotoAnalysisServiceClient
+0x1ef6ab318  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoAnalysisServiceClientSideService
+0x1ef6ab2f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoAnalysisServiceRemoteServiceProxy
+0x1ef6a17c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoAnalysisTestService
+0x1ef69d218  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoAnalysisWallpaperService
+0x1ef6a17a0  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoBakedThumbnails
+0x1ef6a1778  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoDerivativeUtilities
+0x1ef6aa508  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoEditExportProperties
+0x1ef6a9ae0  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoEditImportProperties
+0x1ef6aaf30  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoEditPersistenceManager
+0x1ef6a9ab8  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoEditRenderer
+0x1ef6a9a90  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoEditSource
+0x1ef6a9a68  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoEffect
+0x1ef6a9a40  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoKitVariationCache
+0x1ee1b5fe8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPhotoLibrary
+0x1ef69d1f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoLibraryAttributesChangeRequestServiceHandler
+0x1ef69f860  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoLibraryAttributesChanges
+0x1ee1b6150  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPhotoLibraryBundle
+0x1ee1b61c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPhotoLibraryBundleController
+0x1ef69d1c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoLibraryFinder
+0x1ee1b5fc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPhotoLibraryForceExitObserver
+0x1ee1b46c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPhotoLibraryIdentifier
+0x1ef6a1750  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoLibraryImportValidation
+0x1ef6a6570  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotoLibraryOpener
+0x1ee1b6038  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPhotoLibraryOptions
+0x1ee1b4530  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPhotoLibrarySearchCriteria
+0x1ee1b2d20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPhotoSharingHelper
+0x1ee1b56d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPhotoStreamAlbum
+0x1ee1b2bb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPhotoStreamsHelper
+0x1ee1b56b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPhotosHighlight
+0x1ef6a6548  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotosHighlightCluster
+0x1ef6a6520  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotosHighlightClusterGenerator
+0x1ef6a64f8  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotosHighlightGenerator
+0x1ef6a64d0  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotosHighlightTitleGenerator
+0x1ef69f838  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotosKnowledgeGraphAvailabilityStatus
+0x1ef6a1728  __AUTH,__objc_data  _OBJC_CLASS_$_PLPhotosStateLog
+0x1ef6a1700  __AUTH,__objc_data  _OBJC_CLASS_$_PLPlaceholderImage
+0x1ef6a16d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLPlaceholderThumbnailManager
+0x1ef69d1a0  __AUTH,__objc_data  _OBJC_CLASS_$_PLPositionalTableOptimizer
+0x1ef699b68  __AUTH,__objc_data  _OBJC_CLASS_$_PLPositionalTableOptimizerSwapRequest
+0x1ef699b40  __AUTH,__objc_data  _OBJC_CLASS_$_PLPositionalTableOptimizerSwapRequests
+0x1ef6a64a8  __AUTH,__objc_data  _OBJC_CLASS_$_PLPrefetchConfiguration
+0x1ef6a6480  __AUTH,__objc_data  _OBJC_CLASS_$_PLPrefetchResourceIdentifier
+0x1ef6ab2c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLPreheatItem
+0x1ee1b3928  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPrimaryResourceDataStore
+0x1ee1b2b90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPrimaryResourceDataStoreDataRecipe
+0x1ef6ab2a0  __AUTH,__objc_data  _OBJC_CLASS_$_PLPrimaryResourceDataStoreDeferredProcessingRecipe
+0x1ef6aaf08  __AUTH,__objc_data  _OBJC_CLASS_$_PLPrimaryResourceDataStoreFilePathKey
+0x1ee1b3248  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPrimaryResourceDataStoreFileThumbnailRecipe
+0x1ee1b33d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPrimaryResourceDataStoreImageRecipe
+0x1ee1b3900  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPrimaryResourceDataStoreKey
+0x1ee1b38d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPrimaryResourceDataStoreKeyHelper
+0x1ef6ab660  __AUTH,__objc_data  _OBJC_CLASS_$_PLPrimaryResourceDataStoreLocalVideoKeyFrameRecipe
+0x1ef6a6458  __AUTH,__objc_data  _OBJC_CLASS_$_PLPrimaryResourceDataStoreReferenceFileKey
+0x1ee1b38b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPrimaryResourceDataStoreUniformFileKey
+0x1ef6aa4e0  __AUTH,__objc_data  _OBJC_CLASS_$_PLPrimaryResourceDataStoreVideoRecipe
+0x1ef6a6430  __AUTH,__objc_data  _OBJC_CLASS_$_PLProcessAssertion
+0x1ee1b2c80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLProgressFollower
+0x1ee1b5688  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLProjectAlbum
+0x1ef6a6408  __AUTH,__objc_data  _OBJC_CLASS_$_PLProjectAlbumJournalEntryPayload
+0x1ee1b3590  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPropertyIndexMapping
+0x1ef6a16b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLPropertyListFilter
+0x1ee1b5660  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLPropertyListFromDataTransformer
+0x1ef6a1688  __AUTH,__objc_data  _OBJC_CLASS_$_PLPropertyValidationRule
+0x1ef6a1660  __AUTH,__objc_data  _OBJC_CLASS_$_PLPublishCloudSharedAssetsJob
+0x1ef6ab638  __AUTH,__objc_data  _OBJC_CLASS_$_PLQueryChangeDetectionCriteria
+0x1ee1b39c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLQueryHandler
+0x1ee1b5638  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLQuestion
+0x1ef6a63e0  __AUTH,__objc_data  _OBJC_CLASS_$_PLQuickActionManager
+0x1ef6a63b8  __AUTH,__objc_data  _OBJC_CLASS_$_PLQuotaRequest
+0x1ef69d178  __AUTH,__objc_data  _OBJC_CLASS_$_PLReadyForAnalysis
+0x1ef6a6390  __AUTH,__objc_data  _OBJC_CLASS_$_PLRebuildJournalManager
+0x1ef6a1638  __AUTH,__objc_data  _OBJC_CLASS_$_PLRebuildUserNotification
+0x1ef6a6368  __AUTH,__objc_data  _OBJC_CLASS_$_PLRebuildableDirectory
+0x1ee1b5610  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLRectValueFromDataTransformer
+0x1ef6a6340  __AUTH,__objc_data  _OBJC_CLASS_$_PLRegionsClustering
+0x1ef6a6318  __AUTH,__objc_data  _OBJC_CLASS_$_PLRegionsDensityClustering
+0x1ef6a62f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLRelationshipOrderKeyManager
+0x1ef6a62c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLRelationshipOrderingState
+0x1ef6a1610  __AUTH,__objc_data  _OBJC_CLASS_$_PLRemoteDiagnosticsClient
+0x1ef6a15e8  __AUTH,__objc_data  _OBJC_CLASS_$_PLReplaceAssetsWithCameraRollCopiesJob
+0x1ef6a15c0  __AUTH,__objc_data  _OBJC_CLASS_$_PLResourceChooser
+0x1ee1b3888  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLResourceDataStore
+0x1ee1b3860  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLResourceDataStoreKey
+0x1ee1b3220  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLResourceDataStoreManager
+0x1ef6a62a0  __AUTH,__objc_data  _OBJC_CLASS_$_PLResourceDataStoreOptions
+0x1ef6a6278  __AUTH,__objc_data  _OBJC_CLASS_$_PLResourceGenerator
+0x1ee1b2ed8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLResourceIdentityXPC
+0x1ef6a6250  __AUTH,__objc_data  _OBJC_CLASS_$_PLResourceInstaller
+0x1ef6a6228  __AUTH,__objc_data  _OBJC_CLASS_$_PLResourceLocalAvailabilityRequestOptions
+0x1ef6aa4b8  __AUTH,__objc_data  _OBJC_CLASS_$_PLResourceModelValidationError
+0x1ee1b33b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLResourceRecipe
+0x1ef69d150  __AUTH,__objc_data  _OBJC_CLASS_$_PLResourceRecipeGenerationOptions
+0x1ef699b18  __AUTH,__objc_data  _OBJC_CLASS_$_PLResourceUploadJobStateMachine
+0x1ef6aaee0  __AUTH,__objc_data  _OBJC_CLASS_$_PLResourceXPCMakeAvailableRequest
+0x1ef6aaeb8  __AUTH,__objc_data  _OBJC_CLASS_$_PLResourceXPCRequest
+0x1ef6aae90  __AUTH,__objc_data  _OBJC_CLASS_$_PLRevGeoCompoundNameInfo
+0x1ef6a9a18  __AUTH,__objc_data  _OBJC_CLASS_$_PLRevGeoLocationHelper
+0x1ef6ab278  __AUTH,__objc_data  _OBJC_CLASS_$_PLRevGeoLocationInfo
+0x1ef6aae68  __AUTH,__objc_data  _OBJC_CLASS_$_PLRevGeoMapItem
+0x1ef6aae40  __AUTH,__objc_data  _OBJC_CLASS_$_PLRevGeoMapItemAdditionalPlaceInfo
+0x1ef6aae18  __AUTH,__objc_data  _OBJC_CLASS_$_PLRevGeoPlace
+0x1ef6a1598  __AUTH,__objc_data  _OBJC_CLASS_$_PLRevGeoPlaceAnnotation
+0x1ef6aadf0  __AUTH,__objc_data  _OBJC_CLASS_$_PLRevGeoPlaceInfo
+0x1ef6a6200  __AUTH,__objc_data  _OBJC_CLASS_$_PLRoutineService
+0x1ef69d128  __AUTH,__objc_data  _OBJC_CLASS_$_PLRoutineServiceResult
+0x1ef6a1570  __AUTH,__objc_data  _OBJC_CLASS_$_PLSMetadataUtilities
+0x1ef6a99f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSamplingClustering
+0x1ee1b55e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLSceneClassification
+0x1ee1b55c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLSceneprint
+0x1ef699af0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSchemaUpgradeUserNotification
+0x1ef6a99c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLScopedSearchUtilities
+0x1ef69d100  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchDonationProgress
+0x1ef69d0d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchDonationProgressVersionProvider
+0x1ef6a1548  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchEntity
+0x1ef69d0b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchEntityIndexingContainer
+0x1ef69d088  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchEntityRelationToPerson
+0x1ef6aadc8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexConfiguration
+0x1ef69d060  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexContentClassificationTaxonomy
+0x1ef69d038  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexCountrySynonymProvider
+0x1ef6a61d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexDateFormatter
+0x1ef69d010  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexPendingWorkItem
+0x1ef6a99a0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexSceneTaxonomy
+0x1ef6a9978  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexSceneTaxonomyProvider
+0x1ef69cfe8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexingAccessManager
+0x1ef69cfc0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexingContext
+0x1ef69cf98  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexingEmbeddingsFetcher
+0x1ef69cf70  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexingEngine
+0x1ef69cf48  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexingEngineLibraryServicesProvider
+0x1ef69cf20  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexingEvent
+0x1ef69cef8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexingIncrementalUpdateBatch
+0x1ef69ced0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexingIncrementalUpdateEngine
+0x1ef69cea8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexingLazyFetchHelper
+0x1ef6990c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexingMessagesFetcher
+0x1ef69ce80  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexingNormalizedWorkItem
+0x1ef69ce58  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchIndexingRebuildEngine
+0x1ee1b3dd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLSearchInitialSuggestion
+0x1ef69ce30  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchManagedObjectUtilities
+0x1ef6a9950  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchOCRTextLine
+0x1ef6a9928  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchOCRTextLineCandidate
+0x1ef6a9900  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchOCRUtilities
+0x1ef699ac8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchPIRUtilities
+0x1ef69ce08  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchSpotlightSandboxExtension
+0x1ef6a98d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchStore
+0x1ef6a1520  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchSuggestion
+0x1ef6a61b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchSuggestionCandidate
+0x1ef69cde0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchSuggestionCandidateFilter
+0x1ef6a98b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchSuggestionComponent
+0x1ef6a6188  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchSuggestionDateUtility
+0x1ef6a14f8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchSuggestionMeaningUtility
+0x1ef6a14d0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchSuggestionSceneUtility
+0x1ef6a14a8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchSuggestionSeasonUtility
+0x1ef6a6160  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchSuggestionTemplate
+0x1ef6a1480  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchSuggestionTemplateGenerator
+0x1ef6a6138  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchSuggestionTemplateProvider
+0x1ef69cdb8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSearchThumbnailMap
+0x1ef6a9888  __AUTH,__objc_data  _OBJC_CLASS_$_PLSeasonsUtilities
+0x1ef6a6110  __AUTH,__objc_data  _OBJC_CLASS_$_PLServerChangePublisher
+0x1ef6a60e8  __AUTH,__objc_data  _OBJC_CLASS_$_PLServerPhotoLibraryBundle
+0x1ee1b5598  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLShare
+0x1ee1b5570  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLShareParticipant
+0x1ee1b3bd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLShareParticipantValueTransformer
+0x1ee1b3db0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLSharePost
+0x1ef6990a0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSharedAlbumsActivityKVSListener
+0x1ef6a60c0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSharedAssetsContainerIncrementalChange
+0x1ef69cd90  __AUTH,__objc_data  _OBJC_CLASS_$_PLSharedAssetsContainerIncrementalChangeContainer
+0x1ef6a6098  __AUTH,__objc_data  _OBJC_CLASS_$_PLSharedAssetsContainerIncrementalChangeHighlightContainerChange
+0x1ee1b4008  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLSharedManagedObjectContext
+0x1ee1b31f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLSharedStreamsDataStore
+0x1ef6a6070  __AUTH,__objc_data  _OBJC_CLASS_$_PLSharedStreamsDataStoreKey
+0x1ef6a1458  __AUTH,__objc_data  _OBJC_CLASS_$_PLSharedStreamsValidatedExternalResource
+0x1ef6a1430  __AUTH,__objc_data  _OBJC_CLASS_$_PLSidecarFinder
+0x1ef6a1408  __AUTH,__objc_data  _OBJC_CLASS_$_PLSimpleAlbum
+0x1ef6a13e0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSimpleAlbumList
+0x1ef6a13b8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSlalomUtilities
+0x1ef6ab610  __AUTH,__objc_data  _OBJC_CLASS_$_PLSocialGroup
+0x1ef69f810  __AUTH,__objc_data  _OBJC_CLASS_$_PLSocialGroupAssetContainment
+0x1ef69f7e8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSocialGroupAssetContainmentResult
+0x1ef69cd68  __AUTH,__objc_data  _OBJC_CLASS_$_PLSocialGroupJournalEntryPayload
+0x1ef69cd40  __AUTH,__objc_data  _OBJC_CLASS_$_PLSocialGroupPayloadAdapter
+0x1ef6a1390  __AUTH,__objc_data  _OBJC_CLASS_$_PLSortedAlbumList
+0x1ef6a1368  __AUTH,__objc_data  _OBJC_CLASS_$_PLSortedAlbumListChangeNotification
+0x1ee1b31d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLSortedChangedObjects
+0x1ef6a1340  __AUTH,__objc_data  _OBJC_CLASS_$_PLSpatialOverCaptureInformation
+0x1ef6a6048  __AUTH,__objc_data  _OBJC_CLASS_$_PLSpotlightAlbumTranslator
+0x1ef6a6020  __AUTH,__objc_data  _OBJC_CLASS_$_PLSpotlightAssetTranslator
+0x1ef699aa0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSpotlightCollectionShareTranslator
+0x1ef6ab5e8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSpotlightDonationUtilities
+0x1ef6a5ff8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSpotlightHighlightTranslator
+0x1ef6a5fd0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSpotlightMemoryTranslator
+0x1ef699a78  __AUTH,__objc_data  _OBJC_CLASS_$_PLSpotlightPersonTranslator
+0x1ef699a50  __AUTH,__objc_data  _OBJC_CLASS_$_PLSpotlightQueryUtilities
+0x1ef69cd18  __AUTH,__objc_data  _OBJC_CLASS_$_PLSpotlightReindexing
+0x1ef6a5fa8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSpotlightTranslatorUtilities
+0x1ef6a1318  __AUTH,__objc_data  _OBJC_CLASS_$_PLSqliteQueryPlan
+0x1ef6a12f0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSqliteQueryPlanNode
+0x1ef6a12c8  __AUTH,__objc_data  _OBJC_CLASS_$_PLStreamShareSource
+0x1ef6a12a0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSubstandardPhotoEditSource
+0x1ee1b5548  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLSuggestion
+0x1ef69f7c0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSuggestionComputeJournalEntryPayload
+0x1ef69ccf0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSuggestionComputePayloadAdapter
+0x1ef6a5f80  __AUTH,__objc_data  _OBJC_CLASS_$_PLSyncCancellingProgress
+0x1ef6a1278  __AUTH,__objc_data  _OBJC_CLASS_$_PLSyncSaveJob
+0x1ef6a1250  __AUTH,__objc_data  _OBJC_CLASS_$_PLSynchronousPhotoLibraryExecutionContext
+0x1ef69ccc8  __AUTH,__objc_data  _OBJC_CLASS_$_PLSyndicationDeleteEngine
+0x1ef6a5f58  __AUTH,__objc_data  _OBJC_CLASS_$_PLSyndicationIngestMutex
+0x1ee1b3388  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLSyndicationResourceDataStore
+0x1ef6ab890  __AUTH,__objc_data  _OBJC_CLASS_$_PLSyndicationResourceFileCoordinator
+0x1ef69cca0  __AUTH,__objc_data  _OBJC_CLASS_$_PLSyndicationResourcePrefetchEngine
+0x1ef6a5f30  __AUTH,__objc_data  _OBJC_CLASS_$_PLSyndicationSanitizedResourceGenerator
+0x1ef69cc78  __AUTH,__objc_data  _OBJC_CLASS_$_PLSyndicationSyncEngine
+0x1ef69cc50  __AUTH,__objc_data  _OBJC_CLASS_$_PLSyndicationSyncServiceWrapper
+0x1ef69cc28  __AUTH,__objc_data  _OBJC_CLASS_$_PLSyndicationSyncWorkItem
+0x1ef6a5f08  __AUTH,__objc_data  _OBJC_CLASS_$_PLSyndicationValidatedExternalResource
+0x1ef6aa490  __AUTH,__objc_data  _OBJC_CLASS_$_PLTCCObserver
+0x1ef6a5ee0  __AUTH,__objc_data  _OBJC_CLASS_$_PLTableThumbnailEncoder
+0x1ef6a5eb8  __AUTH,__objc_data  _OBJC_CLASS_$_PLTableThumbnailEncoderResult
+0x1ef6a5e90  __AUTH,__objc_data  _OBJC_CLASS_$_PLTableThumbnailMigrator
+0x1ee1b31a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLTableThumbnailVirtualResource
+0x1ee1b3608  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLTaggedPointerDataStoreKey
+0x1ef6a1228  __AUTH,__objc_data  _OBJC_CLASS_$_PLTemporaryImageTable
+0x1ef69f798  __AUTH,__objc_data  _OBJC_CLASS_$_PLTextEmbeddingResultWithBiasScale
+0x1ef69f770  __AUTH,__objc_data  _OBJC_CLASS_$_PLTextEmbeddingService
+0x1ef69cc00  __AUTH,__objc_data  _OBJC_CLASS_$_PLTextEmbeddingServiceOptions
+0x1ef69f748  __AUTH,__objc_data  _OBJC_CLASS_$_PLTextUnderstandingIdentificationDocument
+0x1ee1b2eb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLThumbFileManager
+0x1ee1b3180  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLThumbnailCascadingDownscaleContext
+0x1ee1b3158  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLThumbnailContextCleanupTimer
+0x1ef69cbd8  __AUTH,__objc_data  _OBJC_CLASS_$_PLThumbnailFragmentationMetrics
+0x1ef69cbb0  __AUTH,__objc_data  _OBJC_CLASS_$_PLThumbnailGenerationOptions
+0x1ef6a5e68  __AUTH,__objc_data  _OBJC_CLASS_$_PLThumbnailIndexes
+0x1ee1b3978  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLThumbnailManager
+0x1ef6a5e40  __AUTH,__objc_data  _OBJC_CLASS_$_PLThumbnailMigratorWorkItem
+0x1ef69cb88  __AUTH,__objc_data  _OBJC_CLASS_$_PLThumbnailOrderednessMetrics
+0x1ee1b3838  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLThumbnailResourceDataStore
+0x1ee1b3810  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLThumbnailResourceDataStoreKey
+0x1ee1b3130  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLThumbnailResourceDataStoreTableRecipe
+0x1ef6a5e18  __AUTH,__objc_data  _OBJC_CLASS_$_PLThumbnailUtilities
+0x1ef6a5df0  __AUTH,__objc_data  _OBJC_CLASS_$_PLTimeSpanClustering
+0x1ef6a1200  __AUTH,__objc_data  _OBJC_CLASS_$_PLTimedDispatchGroup
+0x1ef6a11d8  __AUTH,__objc_data  _OBJC_CLASS_$_PLTimedDispatchGroupEnterSession
+0x1ee1b40d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLTransientInternalResource
+0x1ee1b5520  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLTransientManagedObjectContext
+0x1ef6a5dc8  __AUTH,__objc_data  _OBJC_CLASS_$_PLTransientOrderKey
+0x1ef6a5da0  __AUTH,__objc_data  _OBJC_CLASS_$_PLTrip
+0x1ef6a5d78  __AUTH,__objc_data  _OBJC_CLASS_$_PLTripProcessor
+0x1ef6a11b0  __AUTH,__objc_data  _OBJC_CLASS_$_PLURL
+0x1ef69cb60  __AUTH,__objc_data  _OBJC_CLASS_$_PLURLSessionLaunchEventListener
+0x1ee1b54f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLUUIDStringFromUUIDDataTransformer
+0x1ee1b3658  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLUniformTypeIdentifier
+0x1ee1b34f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLUniformTypeIdentifierIntegratedLookup
+0x1ef6a9860  __AUTH,__objc_data  _OBJC_CLASS_$_PLUnintendedChangeChecker
+0x1ee1b54d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLUnmanagedAdjustment
+0x1ee1b54a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLUpdatedOrderKeys
+0x1ef6aa468  __AUTH,__objc_data  _OBJC_CLASS_$_PLUserActivityDaemonJob
+0x1ee1b5480  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLUserFeedback
+0x1ef69cb38  __AUTH,__objc_data  _OBJC_CLASS_$_PLUtilityAsset
+0x1ef69cb10  __AUTH,__objc_data  _OBJC_CLASS_$_PLUtilityAssetClassification
+0x1ef69cae8  __AUTH,__objc_data  _OBJC_CLASS_$_PLUtilityAssetPool
+0x1ef6a5d50  __AUTH,__objc_data  _OBJC_CLASS_$_PLValidatedExternalCloudResource
+0x1ee1b3108  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLValidatedExternalResource
+0x1ef6a5d28  __AUTH,__objc_data  _OBJC_CLASS_$_PLVideoChoosingAndAvailabilitySupport
+0x1ef6a9838  __AUTH,__objc_data  _OBJC_CLASS_$_PLVideoEditSource
+0x1ef6a5d00  __AUTH,__objc_data  _OBJC_CLASS_$_PLVideoInternalResource
+0x1ef6a5cd8  __AUTH,__objc_data  _OBJC_CLASS_$_PLVideoInternalResourceContext
+0x1ef6a5cb0  __AUTH,__objc_data  _OBJC_CLASS_$_PLVideoPlaybackResourceChoiceOptimizer
+0x1ef699a28  __AUTH,__objc_data  _OBJC_CLASS_$_PLVideoStreamingResourceChoiceOptimizer
+0x1ef6a1188  __AUTH,__objc_data  _OBJC_CLASS_$_PLVideoTranscoder
+0x1ee1b30e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLVirtualResource
+0x1ee1b4698  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLVisualSearchAttributes
+0x1ef6a9810  __AUTH,__objc_data  _OBJC_CLASS_$_PLWarningHelper
+0x1ef6a5c88  __AUTH,__objc_data  _OBJC_CLASS_$_PLXPCCoder
+0x1ef6a5c60  __AUTH,__objc_data  _OBJC_CLASS_$_PLXPCPhotoLibraryStoreContainer
+0x1ee1b30b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLXPCPhotoLibraryStoreEndpointFactory
+0x1ef6a1160  __AUTH,__objc_data  _OBJC_CLASS_$_PLXPCPhotoLibraryStorePolicyAlways
+0x1ee1b5458  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PLXPCPhotoLibraryStorePolicySandbox
+0x1ef6a5c38  __AUTH,__objc_data  _OBJC_CLASS_$_PLXPCPhotoLibraryStoreServerRequestHandlingPolicy
+0x1ef6a5c10  __AUTH,__objc_data  _OBJC_CLASS_$_PLYearGroupingRule
+0x1ef6a1138  __AUTH,__objc_data  _OBJC_CLASS_$_PLiCPLTransferProgress
+0x1ef6a5be8  __AUTH,__objc_data  _OBJC_CLASS_$_PSIAsset
+0x1ef6a5bc0  __AUTH,__objc_data  _OBJC_CLASS_$_PSICachedGroup
+0x1ef6a5b98  __AUTH,__objc_data  _OBJC_CLASS_$_PSICollection
+0x1ef6aada0  __AUTH,__objc_data  _OBJC_CLASS_$_PSIDatabase
+0x1ef6aad78  __AUTH,__objc_data  _OBJC_CLASS_$_PSIDate
+0x1ef6aad50  __AUTH,__objc_data  _OBJC_CLASS_$_PSIDateFilter
+0x1ef6aad28  __AUTH,__objc_data  _OBJC_CLASS_$_PSIGroup
+0x1ef6a5b70  __AUTH,__objc_data  _OBJC_CLASS_$_PSIGroupCache
+0x1ef6a5b48  __AUTH,__objc_data  _OBJC_CLASS_$_PSIIndexToken
+0x1ef6a1110  __AUTH,__objc_data  _OBJC_CLASS_$_PSIInitialSuggestion
+0x1ef6a10e8  __AUTH,__objc_data  _OBJC_CLASS_$_PSIInitialSuggestionIdentifier
+0x1ef6aad00  __AUTH,__objc_data  _OBJC_CLASS_$_PSIIntArray
+0x1ef699a00  __AUTH,__objc_data  _OBJC_CLASS_$_PSILazyIdContainer
+0x1ef6a5b20  __AUTH,__objc_data  _OBJC_CLASS_$_PSIObject
+0x1ef6aa440  __AUTH,__objc_data  _OBJC_CLASS_$_PSIQueryPlaceToken
+0x1ee1b34c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSIQueryToken
+0x1ef6a10c0  __AUTH,__objc_data  _OBJC_CLASS_$_PSIRankedGroup
+0x1ef6a5af8  __AUTH,__objc_data  _OBJC_CLASS_$_PSIRankedGroupV2
+0x1ef6aacd8  __AUTH,__objc_data  _OBJC_CLASS_$_PSIReusableObject
+0x1ef6aacb0  __AUTH,__objc_data  _OBJC_CLASS_$_PSIStatement
+0x1ef69cac0  __AUTH,__objc_data  _OBJC_CLASS_$_PSISuggestionOptions
+0x1ef69ca98  __AUTH,__objc_data  _OBJC_CLASS_$_PSISuggestionQuery
+0x1ef6999d8  __AUTH,__objc_data  _OBJC_CLASS_$_PSISuggestionQueryUtilities
+0x1ef6a1098  __AUTH,__objc_data  _OBJC_CLASS_$_PSISuggestionRanker
+0x1ef6a5ad0  __AUTH,__objc_data  _OBJC_CLASS_$_PSISynonym
+0x1ef6a5aa8  __AUTH,__objc_data  _OBJC_CLASS_$_PSISynonymRecord
+0x1ef6a97e8  __AUTH,__objc_data  _OBJC_CLASS_$_PSITable
+0x1ef6aa418  __AUTH,__objc_data  _OBJC_CLASS_$_PSIToken
+0x1ef6aac88  __AUTH,__objc_data  _OBJC_CLASS_$_PSITokenizer
+0x1ef6a1070  __AUTH,__objc_data  _OBJC_CLASS_$_PhotosControlArbitraryPersistentContainer
+0x1ef6a1048  __AUTH,__objc_data  _OBJC_CLASS_$_PhotosControlCommand
+0x1ef6a1020  __AUTH,__objc_data  _OBJC_CLASS_$_PhotosControlPhotoLibraryCommand
+0x1ef6a0ff8  __AUTH,__objc_data  _OBJC_CLASS_$_TestPLClusterable
+0x1ef6a0fd0  __AUTH,__objc_data  _OBJC_CLASS_$_TestPLClusteringDataSet
+0x1ef6a5a80  __AUTH,__objc_data  _OBJC_CLASS_$__PHVariationInMemoryCachedValue
+0x1ef6a97c0  __AUTH,__objc_data  _OBJC_CLASS_$__PLClientTransaction
+0x1ef6aa3f0  __AUTH,__objc_data  _OBJC_CLASS_$__PLDescriptionStyle
+0x1ef6a0fa8  __AUTH,__objc_data  _OBJC_CLASS_$__PLExpirableSet
+0x1ef69ca70  __AUTH,__objc_data  _OBJC_CLASS_$__PLForegroundMonitorClient
+0x1ef6a0f80  __AUTH,__objc_data  _OBJC_CLASS_$__PLLazyPreheatData
+0x1ef6a5a58  __AUTH,__objc_data  _OBJC_CLASS_$__PLPhotoLibraryFileReservation
+0x1ef6a0f58  __AUTH,__objc_data  _OBJC_CLASS_$__PLPlaceholderThumbnailCachedData
+0x1ef6a5a30  __AUTH,__objc_data  _OBJC_CLASS_$__PLServerTransaction
+0x1ef6a9798  __AUTH,__objc_data  _OBJC_CLASS_$__PLSharedStreamsEnablementStateObserver
+0x1ef698f60  __AUTH,__objc_data  _OBJC_CLASS_$__TtC20PhotoLibraryServices30PLAssetResourceUploadWorkItems
+0x1ef698ef8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC20PhotoLibraryServices30PLProvenanceTimestampAnalytics
+0x1ebb3a4c4  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.addedInLast30Days
+0x1ebb3a4c0  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.adjustedCount
+0x1ebb3a478  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.assetCount
+0x1ebb3a4cc  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.assetsWithFacesCount
+0x1ebb3a4d0  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.assetsWithOCRCount
+0x1ebb3a4d4  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.assetsWithOCROrFacesCount
+0x1ebb3a4d8  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.assetsWithTorsoOnlyFacesCount
+0x1ebb3a4a8  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.camera
+0x1ebb3a540  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.contactLinkedPersonCount
+0x1ebb3a4e0  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.duplicateAssetCount
+0x1ebb3a4e4  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.duplicateAssetGroupCount
+0x1ebb3a4ec  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.duplicateSharedLibraryAssetCount
+0x1ebb3a4dc  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.faceCount
+0x1ebb3a4b0  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.favoriteCount
+0x1ebb3a534  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.favoritedPersonCount
+0x1ebb3a508  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.finderSyncedAssetCount
+0x1ebb3a504  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.gpsLocationCount
+0x1ebb3a52c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.graphVerifiedPersonCount
+0x1ebb3a4a0  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.heifCount
+0x1ebb3a538  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.hiddenPersonCount
+0x1ebb3a4ac  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.importedByAssetCount
+0x1ebb3a4a4  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.isActive
+0x1ebb3a498  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.jpegCount
+0x1ebb3a4b4  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.junkCount
+0x1ebb3a488  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.livePhotosCount
+0x1ebb3a51c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.manualAlbumByAppleCount
+0x1ebb3a520  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.manualAlbumByThirdPartyCount
+0x1ebb3a53c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.namedPersonCount
+0x1ebb3a554  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.nonGuestSavedFromMessagesCount
+0x1ebb3a4c8  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.originalOnTopAssetCount
+0x1ebb3a494  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.otherImagesCount
+0x1ebb3a490  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.otherMediaCount
+0x1ebb3a524  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.personCount
+0x1ebb3a528  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.personPetDetectionTypeCount
+0x1ebb3a4e8  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.personalLibraryAssetCount
+0x1ebb3a484  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.photosCount
+0x1ebb3a4bc  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.portraitCount
+0x1ebb3a56c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.provenanceProcessedCount
+0x1ebb3a570  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.provenanceProcessedHeifCount
+0x1ebb3a574  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.provenanceProcessedJpegCount
+0x1ebb3a57c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.provenanceProcessedOtherImageCount
+0x1ebb3a578  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.provenanceProcessedProRawCount
+0x1ebb3a558  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.provenanceUnprocessedCount
+0x1ebb3a55c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.provenanceUnprocessedHeifCount
+0x1ebb3a560  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.provenanceUnprocessedJpegCount
+0x1ebb3a568  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.provenanceUnprocessedOtherImageCount
+0x1ebb3a564  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.provenanceUnprocessedProRawCount
+0x1ebb3a49c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.rawCount
+0x1ebb3a47c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.resourceCount
+0x1ebb3a54c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.savedFromMessagesCount
+0x1ebb3a550  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.savedFromPhotosCount
+0x1ebb3a4b8  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.screenshotCount
+0x1ebb3a4f0  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.sharedLibraryAssetCount
+0x1ebb3a4f8  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.sharedLibraryAssetsAddedInCameraCount
+0x1ebb3a500  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.sharedLibraryAssetsAddedInSuggestionsCount
+0x1ebb3a4f4  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.sharedLibraryAssetsAddedManuallyCount
+0x1ebb3a4fc  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.sharedLibraryLocalAssetsAddedInCameraCount
+0x1ebb3a510  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.spatialAlchemistAssetCount
+0x1ebb3a50c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.spatialAssetCount
+0x1ebb3a514  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.stylableAssetCount
+0x1ebb3a518  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.styledAssetCount
+0x1ebb3a544  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.tombstonePersonCount
+0x1ebb3a480  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.trashedAssetCount
+0x1ebb3a548  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.userFeedbackPersonCount
+0x1ebb3a530  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.userVerifiedPersonCount
+0x1ebb3a48c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsLibraryCounters.videosCount
+0x1ebb3a41c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfAssetsSupportingCloudUpload
+0x1ebb3a42c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfAssetsWithAllThumbs
+0x1ebb3a430  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfAssetsWithCPLMediumLocallyAvailable
+0x1ebb3a434  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfAssetsWithMediumOrOriginalLocallyAvailable
+0x1ebb3a428  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfAssetsWithOriginalResourceLocal
+0x1ebb3a420  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfImageAssetsSupportingCloudUpload
+0x1ebb3a438  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfImageAssetsWithMediumOrOriginalLocallyAvailable
+0x1ebb3a414  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfMediumOriginalLocallyAvailableCloudResources
+0x1ebb3a418  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfMediumOriginalLocallyUnavailableCloudResources
+0x1ebb3a464  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfPersonalLibraryAssets
+0x1ebb3a440  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfResourcesPurgedInTheLastDay
+0x1ebb3a448  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfResourcesPurgedInTheLastMonth
+0x1ebb3a444  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfResourcesPurgedInTheLastWeek
+0x1ebb3a458  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfResourcesPurgedWithinDayOfPrefetch
+0x1ebb3a460  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfResourcesPurgedWithinMonthOfPrefetch
+0x1ebb3a45c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfResourcesPurgedWithinWeekOfPrefetch
+0x1ebb3a468  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfSharedLibraryAssets
+0x1ebb3a474  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfSharedLibraryAssetsAddedInCamera
+0x1ebb3a470  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfSharedLibraryAssetsAddedInSuggestions
+0x1ebb3a46c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfSharedLibraryAssetsAddedManually
+0x1ebb3a424  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfVideoAssetsSupportingCloudUpload
+0x1ebb3a43c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.countOfVideoAssetsWithMediumOrOriginalLocallyAvailable
+0x1ebb3a44c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.sizeOfResourcesPurgedInTheLastDay
+0x1ebb3a454  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.sizeOfResourcesPurgedInTheLastMonth
+0x1ebb3a450  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsResourceCounters.sizeOfResourcesPurgedInTheLastWeek
+0x1ebb3a580  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsSyndicationLibraryCounters.assetInConversationCount
+0x1ebb3a584  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsSyndicationLibraryCounters.assetNotInConversationCount
+0x1ebb3a590  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsSyndicationLibraryCounters.conversationCount
+0x1ebb3a5a0  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsSyndicationLibraryCounters.filesAssetCount
+0x1ebb3a588  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsSyndicationLibraryCounters.guestAssetCount
+0x1ebb3a598  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsSyndicationLibraryCounters.messagesAssetCount
+0x1ebb3a58c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsSyndicationLibraryCounters.nonGuestAssetCount
+0x1ebb3a59c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsSyndicationLibraryCounters.notesAssetCount
+0x1ebb3a594  __DATA,__objc_ivar  OBJC_IVAR_$_PLAnalyticsSyndicationLibraryCounters.savedToLibraryCount
+0x1ebb3b5c4  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._adjustmentSecondaryDataURL
+0x1ebb3b584  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._deferred
+0x1ebb3b59c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._fileIngestionType
+0x1ebb3b5a4  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._fullSizeRenderDuration
+0x1ebb3b5a0  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._fullSizeRenderSize
+0x1ebb3b5a8  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._mainFileMetadata
+0x1ebb3b5b0  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._penultimateRenderedJPEGData
+0x1ebb3b5bc  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._penultimateRenderedVideoComplementContentURL
+0x1ebb3b5b4  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._penultimateRenderedVideoContentURL
+0x1ebb3b5ac  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._renderedContentURL
+0x1ebb3b5b8  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._renderedVideoComplementContentURL
+0x1ebb3b5c0  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._renderedVideoPosterContentURL
+0x1ebb3b590  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._shouldCheckForLegacyCameraAutoAdjustment
+0x1ebb3b58c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._shouldGenerateThumbnails
+0x1ebb3b588  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._shouldUpdateAttributes
+0x1ebb3b594  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._skipCheckCameraAutoAdjustment
+0x1ebb3b598  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._skipCheckSleetCastAdjustment
+0x1ebb3b580  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetAdjustmentOptions._substandardRender
+0x1ebb3b844  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetComputeSyncPayloadWrapper._assetPayload
+0x1ebb3b840  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetComputeSyncPayloadWrapper._assetPayloadVersion
+0x1ebb3b84c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetComputeSyncPayloadWrapper._deviceBuild
+0x1ebb3b850  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetComputeSyncPayloadWrapper._deviceHwModel
+0x1ebb3b83c  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetComputeSyncPayloadWrapper._has
+0x1ebb3b848  __DATA,__objc_ivar  OBJC_IVAR_$_PLAssetComputeSyncPayloadWrapper._mediaAnalysisPayload
+0x1ebb397cc  __DATA,__objc_ivar  OBJC_IVAR_$_PLBackgroundJobSyndicationResourceSanitizationWorker._prefetchManager
+0x1ebb37ae8  __DATA,__objc_ivar  OBJC_IVAR_$_PLCloudBatchUploader._cameraAsset
+0x1ebb37ae4  __DATA,__objc_ivar  OBJC_IVAR_$_PLCloudBatchUploader._downloadedDeleteRecords
+0x1ebb37aec  __DATA,__objc_ivar  OBJC_IVAR_$_PLCloudBatchUploader._initialUpload
+0x1ebb37af4  __DATA,__objc_ivar  OBJC_IVAR_$_PLCloudBatchUploader._recordsToDelete
+0x1ebb37af8  __DATA,__objc_ivar  OBJC_IVAR_$_PLCloudBatchUploader._recordsToDeletePlistPath
+0x1ebb37af0  __DATA,__objc_ivar  OBJC_IVAR_$_PLCloudBatchUploader._shouldGenerateDerivatives
+0x1ebb37ae0  __DATA,__objc_ivar  OBJC_IVAR_$_PLCloudBatchUploader._uploadBatchArray
+0x1ebb39b5c  __DATA,__objc_ivar  OBJC_IVAR_$_PLCloudPhotoLibraryBatchManager._batches
+0x1ebb39b60  __DATA,__objc_ivar  OBJC_IVAR_$_PLCloudPhotoLibraryBatchManager._currentBatch
+0x1ebb39b68  __DATA,__objc_ivar  OBJC_IVAR_$_PLCloudPhotoLibraryBatchManager._masterHistory
+0x1ebb39b6c  __DATA,__objc_ivar  OBJC_IVAR_$_PLCloudPhotoLibraryBatchManager._resourceBudget
+0x1ebb39b64  __DATA,__objc_ivar  OBJC_IVAR_$_PLCloudPhotoLibraryBatchManager._wasDrained
+0x1ebb3b820  __DATA,__objc_ivar  OBJC_IVAR_$_PLJournalEntryHeader._entryType
+0x1ebb3b81c  __DATA,__objc_ivar  OBJC_IVAR_$_PLJournalEntryHeader._has
+0x1ebb3b838  __DATA,__objc_ivar  OBJC_IVAR_$_PLJournalEntryHeader._nilProperties
+0x1ebb3b834  __DATA,__objc_ivar  OBJC_IVAR_$_PLJournalEntryHeader._payloadCRC
+0x1ebb3b828  __DATA,__objc_ivar  OBJC_IVAR_$_PLJournalEntryHeader._payloadID
+0x1ebb3b830  __DATA,__objc_ivar  OBJC_IVAR_$_PLJournalEntryHeader._payloadLength
+0x1ebb3b824  __DATA,__objc_ivar  OBJC_IVAR_$_PLJournalEntryHeader._payloadUUID
+0x1ebb3b82c  __DATA,__objc_ivar  OBJC_IVAR_$_PLJournalEntryHeader._payloadVersion
+0x1ebb383a0  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._avalancheUUIDsForUpdate
+0x1ebb3839c  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._backgroundWorkItemIdentifiers
+0x1ebb38384  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._changeHandlingContainer
+0x1ebb383a8  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._cplFeatureDataclasses
+0x1ebb383c8  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._delayedDeletions
+0x1ebb383c4  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._delayedSaveActions
+0x1ebb38398  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._initFinished
+0x1ebb383b8  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._invalidationReason
+0x1ebb383b4  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._invalidationStateLock
+0x1ebb383c0  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._isConnectedToChangeHandling
+0x1ebb383e8  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._isInitializingSingletons
+0x1ebb383b0  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._isObservingChangesForPTPNotificationDelegate
+0x1ebb38394  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._lastResetTimestamp
+0x1ebb383d4  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._mergingChanges
+0x1ebb38380  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._pathManager
+0x1ebb383a4  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._photoLibrary
+0x1ebb383d8  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._photosDelegate
+0x1ebb383dc  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._savingDuringMerge
+0x1ebb383cc  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._syncChangeMarker
+0x1ebb3838c  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._updatedObjectsAttributes
+0x1ebb38390  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._updatedObjectsRelationships
+0x1ebb38388  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._uuidsForCloudDeletion
+0x1ebb383bc  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectContext._workerTypesForBackgroundJobProcessing
+0x1ebb37a50  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectJournalEntryPayload._nilAttributes
+0x1ebb37a4c  __DATA,__objc_ivar  OBJC_IVAR_$_PLManagedObjectJournalEntryPayload._payloadAttributes
+0x1ebb3adb4  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoBakedThumbnails._count
+0x1ebb3adb8  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoBakedThumbnails._dataIsMutable
+0x1ebb3adac  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoBakedThumbnails._format
+0x1ebb3add0  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoBakedThumbnails._missingHeader
+0x1ebb3adc4  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoBakedThumbnails._options
+0x1ebb3adcc  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoBakedThumbnails._optionsAccessed
+0x1ebb3adc8  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoBakedThumbnails._optionsData
+0x1ebb3adb0  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoBakedThumbnails._singleThumbnailImageLength
+0x1ebb3add4  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoBakedThumbnails._size
+0x1ebb3adbc  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoBakedThumbnails._thumbnailData
+0x1ebb3adc0  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoBakedThumbnails._thumbnailImages
+0x1ebb37c98  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoLibrary._allImportedPhotosAlbum
+0x1ebb37ca8  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoLibrary._audioFileExtensions
+0x1ebb37cac  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoLibrary._extraVideoExtensions
+0x1ebb37ca0  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoLibrary._imageFileExtensions
+0x1ebb37c9c  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoLibrary._lastImportedPhotosAlbum
+0x1ebb37c90  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoLibrary._pendingTransactions
+0x1ebb37ca4  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoLibrary._rawImageFileExtensions
+0x1ebb37c94  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoLibrary._transactionCompletionHandlers
+0x1ebb3a780  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoLibraryBundle._lock
+0x1ebb3a784  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotoLibraryBundle._lock_shutdownReason
+0x1ebb3a240  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotosStateLog._group
+0x1ebb3a244  __DATA,__objc_ivar  OBJC_IVAR_$_PLPhotosStateLog._photoLibrary
+0x1ebb3afa4  __DATA,__objc_ivar  OBJC_IVAR_$_PLPreheatItem._CPLNotifyRegistrationToken
+0x1ebb3af98  __DATA,__objc_ivar  OBJC_IVAR_$_PLPreheatItem._CPLPrefetching
+0x1ebb3afa8  __DATA,__objc_ivar  OBJC_IVAR_$_PLPreheatItem._CPLPrefetchingCancelled
+0x1ebb3afa0  __DATA,__objc_ivar  OBJC_IVAR_$_PLPreheatItem._CPLPrefetchingDoneToken
+0x1ebb3af9c  __DATA,__objc_ivar  OBJC_IVAR_$_PLPreheatItem._CPLPrefetchingIsolationQueue
+0x1ebb3afac  __DATA,__objc_ivar  OBJC_IVAR_$_PLPreheatItem._CPLPrefetchingWaitGroup
+0x1ebb3af94  __DATA,__objc_ivar  OBJC_IVAR_$_PLPreheatItem._assetUUID
+0x1ebb3af88  __DATA,__objc_ivar  OBJC_IVAR_$_PLPreheatItem._format
+0x1ebb3af8c  __DATA,__objc_ivar  OBJC_IVAR_$_PLPreheatItem._imageType
+0x1ebb3af90  __DATA,__objc_ivar  OBJC_IVAR_$_PLPreheatItem._optimalSourcePixelSize
+0x1ebb37c48  __DATA,__objc_ivar  OBJC_IVAR_$_PLPrimaryResourceDataStoreKeyHelper.bundleBaseData
+0x1ebb37c3c  __DATA,__objc_ivar  OBJC_IVAR_$_PLPrimaryResourceDataStoreKeyHelper.computeBaseData
+0x1ebb37c4c  __DATA,__objc_ivar  OBJC_IVAR_$_PLPrimaryResourceDataStoreKeyHelper.cvtBaseData
+0x1ebb37c38  __DATA,__objc_ivar  OBJC_IVAR_$_PLPrimaryResourceDataStoreKeyHelper.derivativesBaseData
+0x1ebb37c44  __DATA,__objc_ivar  OBJC_IVAR_$_PLPrimaryResourceDataStoreKeyHelper.masterThumbFilenameData
+0x1ebb37c40  __DATA,__objc_ivar  OBJC_IVAR_$_PLPrimaryResourceDataStoreKeyHelper.masterThumbsBaseData
+0x1ebb37c30  __DATA,__objc_ivar  OBJC_IVAR_$_PLPrimaryResourceDataStoreKeyHelper.originalsBaseData
+0x1ebb37c34  __DATA,__objc_ivar  OBJC_IVAR_$_PLPrimaryResourceDataStoreKeyHelper.rendersBaseData
+0x1ebb37c50  __DATA,__objc_ivar  OBJC_IVAR_$_PLPrimaryResourceDataStoreKeyHelper.restrictedBaseData
+0x1ebb3b0a0  __DATA,__objc_ivar  OBJC_IVAR_$_PLResourceIdentityXPC._recipeID
+0x1ebb3b098  __DATA,__objc_ivar  OBJC_IVAR_$_PLResourceIdentityXPC._resourceType
+0x1ebb3b0a4  __DATA,__objc_ivar  OBJC_IVAR_$_PLResourceIdentityXPC._uniformTypeIdentifier
+0x1ebb3b09c  __DATA,__objc_ivar  OBJC_IVAR_$_PLResourceIdentityXPC._version
+0x1ebb39704  __DATA,__objc_ivar  OBJC_IVAR_$_PLSearchIndexingEngineLibraryServicesProvider._didLogLibraryIdentifier
+0x1ebb39700  __DATA,__objc_ivar  OBJC_IVAR_$_PLSearchIndexingEngineLibraryServicesProvider._lsm
+0x1ebb39ed0  __DATA,__objc_ivar  OBJC_IVAR_$_PLTemporaryImageTable._imageTable
+0x1ebb39ed8  __DATA,__objc_ivar  OBJC_IVAR_$_PLTemporaryImageTable._itemIndexToThumbEntryMapping
+0x1ebb39ed4  __DATA,__objc_ivar  OBJC_IVAR_$_PLTemporaryImageTable._nextTableEntryIndex
+0x1ebb39cd0  __DATA,__objc_ivar  OBJC_IVAR_$_PhotosControlPhotoLibraryCommand._libraryURL
+0x1ebb39cd8  __DATA,__objc_ivar  OBJC_IVAR_$_PhotosControlPhotoLibraryCommand._moc
+0x1ebb3b400  __DATA,__objc_ivar  OBJC_IVAR_$__PLPlaceholderThumbnailCachedData._bytesPerRow
+0x1ebb3b408  __DATA,__objc_ivar  OBJC_IVAR_$__PLPlaceholderThumbnailCachedData._dataHeight
+0x1ebb3b404  __DATA,__objc_ivar  OBJC_IVAR_$__PLPlaceholderThumbnailCachedData._dataWidth
+0x1ebb3b3fc  __DATA,__objc_ivar  OBJC_IVAR_$__PLPlaceholderThumbnailCachedData._height
+0x1ebb3b3f4  __DATA,__objc_ivar  OBJC_IVAR_$__PLPlaceholderThumbnailCachedData._imageData
+0x1ebb3b40c  __DATA,__objc_ivar  OBJC_IVAR_$__PLPlaceholderThumbnailCachedData._imageDataOffset
+0x1ebb3b3f8  __DATA,__objc_ivar  OBJC_IVAR_$__PLPlaceholderThumbnailCachedData._width
+0x1ef6a0f30  __AUTH,__objc_data  _OBJC_METACLASS_$_AssetCollectionInfo
+0x1ef69ca48  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAVCaptureDeferredPhotoProxy
+0x1ef6a5a08  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAbstractLibraryServicesManagerService
+0x1ee1b6060  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLAccountStore
+0x1ee1b5430  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLAdditionalAssetAttributes
+0x1ee1b2b68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLAdjustmentVirtualResource
+0x1ef6a59e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAggdLogging
+0x1ef6a59b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAggregationProcessor
+0x1ef6a5990  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAlbumJournalEntryPayload
+0x1ef6a5968  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAlbumListJournalEntryPayload
+0x1ef69ca20  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAmbientSuggestionComputeJournalEntryPayload
+0x1ef6999b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAmbientSuggestionComputePayloadAdapter
+0x1ef69c9f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAnalysisCoordinator
+0x1ef69c9d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAnalysisCoordinatorStep
+0x1ef699988  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAnalysisCoordinatorStepEmpty
+0x1ef699960  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAnalysisCoordinatorStepMediaAnalysis
+0x1ef69c9a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAnalysisCoordinatorStepSearchIndexing
+0x1ef69c980  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAnalysisCoordinatorStepSearchSuggestions
+0x1ef69c958  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAnalysisCoordinatorTask
+0x1ef6a5940  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAnalyticsLibraryCounters
+0x1ef6a5918  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAnalyticsResourceCounters
+0x1ef6a58f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAnalyticsSyndicationLibraryCounters
+0x1ef69c930  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAppLibraryUninstallSupport
+0x1ef69c908  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetAdjustmentOptions
+0x1ee1b5408  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLAssetAnalysisState
+0x1ef6a0f08  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetChangeNotification
+0x1ef6a58c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetCluster
+0x1ef6a58a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetCollectionGenerationResult
+0x1ef6a5878  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetCollectionGenerator
+0x1ef699938  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetComputeCacheFaceRebuildDescription
+0x1ef699910  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetComputeSyncJournalEntryPayload
+0x1ef6998e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetComputeSyncNodeContainerPayloadAdapter
+0x1ef6998c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetComputeSyncPayloadAdapter
+0x1ef699898  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetComputeSyncPayloadHelper
+0x1ef699870  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetComputeSyncPayloadWrapper
+0x1ef6a0ee0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetContainerChangeNotification
+0x1ef6a0eb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetContainerListChangeNotification
+0x1ee1b4508  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLAssetContributor
+0x1ee1b53e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLAssetDescription
+0x1ef6a0e90  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetDownloadManager
+0x1ef6a0e68  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetFormats
+0x1ef6a5850  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetJournalEntryPayload
+0x1ef6a5828  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetJournalEntryPayloadResource
+0x1ef6a0e40  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetResourceDownloadManager
+0x1ef6a0e18  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetResourceDownloadRequest
+0x1ee1b40a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLAssetResourceUploadJob
+0x1ee1b4080  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLAssetResourceUploadJobConfiguration
+0x1ef699848  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetResourceUploadJobConfigurationCoreAnalyticsPayload
+0x1ef69c8e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetResourceUploadJobConfigurationEntryPayload
+0x1ef69c8b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetResourceUploadJobCoreAnalytics
+0x1ee1b3d88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLAssetResourceUploadJobRequest
+0x1ef6aa3c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetSharingUtilities
+0x1ef6a5800  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetTransactionReason
+0x1ef6a0df0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsSaver
+0x1ef6a57d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdCPLResourceDownloader
+0x1ef6a57b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdCloudInternalService
+0x1ef6a5788  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdCloudService
+0x1ef6a5760  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdConnectionAuthorization
+0x1ef6a0dc8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdCrashRecoveryClientAuthorization
+0x1ef6a5738  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdCrashRecoverySupport
+0x1ef6a5710  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdDebugService
+0x1ef6a0da0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdDemoService
+0x1ef6a56e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdDiagnosticsService
+0x1ef6a56c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdInnerService
+0x1ef6a5698  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdLibraryInternalService
+0x1ef6a5670  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdLibraryManagementService
+0x1ef6a5648  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdLibraryService
+0x1ef6a0d78  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdMigrationService
+0x1ef69c890  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdNonBindingDebugService
+0x1ef69c868  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdNonBindingResourceInternalService
+0x1ef6a5620  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdNotificationService
+0x1ef6a55f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdPhotoKitAddService
+0x1ef6a55d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdPhotoKitService
+0x1ef6a55a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdPrivacySupportService
+0x1ef6a5580  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdResourceInternalService
+0x1ef6a5558  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdResourceService
+0x1ef6a5530  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdResourceWriteOnlyService
+0x1ef6aa3a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdServer
+0x1ef6a5508  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdService
+0x1ef6a54e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdServicePermissions
+0x1ef6a0d50  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdSyncService
+0x1ef6a0d28  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdSystemLibraryURLReadOnlyService
+0x1ef6a54b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAssetsdXPCUserInfo
+0x1ef6a5490  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAsynchronousPhotoLibraryExecutionContext
+0x1ef69c840  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAtomicProgressIvar
+0x1ef69c818  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAutoBugCapture
+0x1ef6a5468  __AUTH,__objc_data  _OBJC_METACLASS_$_PLAvalanche
+0x1ef6abc38  __AUTH,__data  _OBJC_METACLASS_$_PLBackgroundAssetResourceUploader
+0x1ef6abc08  __AUTH,__data  _OBJC_METACLASS_$_PLBackgroundJobAssetResourceUploadJobWorker
+0x1ef69c7f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobCascadeDonationWorker
+0x1ef69c7c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobCoordinator
+0x1ef6a5440  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobCriteria
+0x1ef6aa378  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobDeferredRenderDerivativesBaseWorker
+0x1ef6aa350  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobDeferredRenderDerivativesHighPriorityWorker
+0x1ef6aa328  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobDeferredRenderDerivativesLowPriorityWorker
+0x1ef6a5418  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobDuplicateDetectorWorker
+0x1ef6aa300  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobEditRenderingImageWorker
+0x1ef6aa2d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobEditRenderingVideoWorker
+0x1ef6aa2b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobEditRenderingWorker
+0x1ef69c7a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobFeatureAvailabilityWorkItem
+0x1ef69c778  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobFeatureAvailabilityWorker
+0x1ef69c750  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobGuestAssetSyncWorkItemContainer
+0x1ef6a53f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobGuestAssetSyncWorker
+0x1ef69c728  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobHighPrioritySearchIndexingWorker
+0x1ef6ab7a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobLowPrioritySearchIndexingWorker
+0x1ef69c700  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobOptimizeTableThumbsWorker
+0x1ef6a53c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobPersonSyncWorker
+0x1ef6aba70  __AUTH,__data  _OBJC_METACLASS_$_PLBackgroundJobProvenanceTimestampWorker
+0x1ef6aa288  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobResourceAvailabilityWorker
+0x1ef69c6d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobResourceUploadExtensionRunnerWorker
+0x1ef6a53a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobSearchIndexingWorker
+0x1ef6aa260  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobService
+0x1ef69c6b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobSharedAssetContainerUpdateWorkItem
+0x1ef6a5378  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobSharedAssetContainerUpdateWorker
+0x1ef69c688  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobStableHashWorker
+0x1ef6a5350  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobStatusCenter
+0x1ef6a5328  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobStatusEvent
+0x1ef6a5300  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobStatusFinishWorkerEvent
+0x1ef6a52d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobStatusStartWorkerEvent
+0x1ef6a52b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobStatusStopWorkerEvent
+0x1ef69c660  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobStatusSubmissionEvent
+0x1ef6a5288  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobSyndicationAssetCleanupWorker
+0x1ef6a5260  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobSyndicationResourceDownloadWorker
+0x1ef6a5238  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobSyndicationResourceSanitizationWorker
+0x1ef6aa238  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobSyndicationSyncWorker
+0x1ef69c638  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobTaskMetadata
+0x1ee1b42d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobWorkItem
+0x1ef6aa210  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobWorker
+0x1ef6a5210  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobWorkerPendingWorkItems
+0x1ef69c610  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobWorkerSignalTimer
+0x1ef69c5e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobWorkerTypes
+0x1ef69c5c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundJobWorkerTypesBuffer
+0x1ef6a51e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundMigrationContext
+0x1ef6a51c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundModelMigration
+0x1ef699820  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundResourceUploadExtensionHost
+0x1ef69c598  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBackgroundUploadExtensionSupport
+0x1ef6ab8e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLBiomeDonations
+0x1ef6997f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCPLClientStatus
+0x1ef6a5198  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCPLFacePullSupport
+0x1ef6a5170  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCPLFacePushSupport
+0x1ef6a5148  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCPLFaceRebuildSupport
+0x1ee1b2cf8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLCPLSettings
+0x1ee1b4828  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLCPLSettingsObserver
+0x1ef6a0d00  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCacheDeleteClient
+0x1ef6a5120  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCacheDeleteRegistration
+0x1ef6ab5c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCacheDeleteSupport
+0x1ee1b2dc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLCacheMetricsCollectorClient
+0x1ef6a50f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCacheMetricsCollectorServer
+0x1ef6a50d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCacheMetricsCollectorServerShell
+0x1ef6a50a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCameraAppWatcher
+0x1ef6a5080  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCameraCaptureTaskConstraintCoordinator
+0x1ef6a5058  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCameraCaptureTaskConstraints
+0x1ef69c570  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCameraDeferredProcessingCoordinator
+0x1ef6aa1e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCameraPreviewImageWellChangeNotification
+0x1ef69c548  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCameraPreviewWellAssetInfo
+0x1ef6a5030  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCameraPreviewWellManager
+0x1ef69c520  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCaptureDeferredPhotoProcessor
+0x1ef69c4f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCaptureDeferredPhotoProcessorDelegateAdapter
+0x1ef69f720  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCapturePhotoSettings
+0x1ef69c4d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCascadeUtilities
+0x1ee1b53b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLChangeHandlingContainer
+0x1ee1b4170  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLChangeHandlingNotificationEvent
+0x1ee1b5390  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLChangeHandlingNotificationObserver
+0x1ef6ab250  __AUTH,__objc_data  _OBJC_METACLASS_$_PLChangeList
+0x1ee1b5368  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLChangeNode
+0x1ef6aa1c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLChangeNotification
+0x1ef6ab228  __AUTH,__objc_data  _OBJC_METACLASS_$_PLChangeNotificationCenter
+0x1ef69c4a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLChangePublisherDebugEvent
+0x1ef69c480  __AUTH,__objc_data  _OBJC_METACLASS_$_PLChangesRequestInProgressMarker
+0x1ee1b5340  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLCharacterRecognitionAttributes
+0x1ef6a0cd8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLChoosableItem
+0x1ee1b48f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLClientChangePublisher
+0x1ee1b60b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLClientPhotoLibraryBundle
+0x1ef6a5008  __AUTH,__objc_data  _OBJC_METACLASS_$_PLClientSandboxExtensionCache
+0x1ef6a9770  __AUTH,__objc_data  _OBJC_METACLASS_$_PLClientServerTransaction
+0x1ef69c458  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudAssetPayloadRestore
+0x1ef6a4fe0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudBatchDownloader
+0x1ef6a4fb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudBatchUploader
+0x1ef6a4f90  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudDownloadBatchDetails
+0x1ee1b5318  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLCloudFeedAssetsEntry
+0x1ee1b52f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLCloudFeedCommentsEntry
+0x1ef6a4f68  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudFeedEntriesManager
+0x1ee1b52c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLCloudFeedEntry
+0x1ef69f6f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudFeedEntryFetch
+0x1ef6aac60  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudIdentifier
+0x1ef6a9748  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudIdentifierLookup
+0x1ef69c430  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudIdentifierReservationSupport
+0x1ef6a4f40  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudInMemoryDownloadTask
+0x1ef6a4f18  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudInMemoryTaskManager
+0x1ee1b52a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLCloudMaster
+0x1ee1b5278  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLCloudMasterMediaMetadata
+0x1ef6a4ef0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudPendingResourceTask
+0x1ef6a4ec8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudPersistentHistoryChangeTracker
+0x1ef6a4ea0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudPersistentHistoryMigrator
+0x1ef6a4e78  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudPersistentHistoryTransactionsResult
+0x1ef6a4e50  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudPhotoLibraryBatchContainer
+0x1ef6a4e28  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudPhotoLibraryBatchManager
+0x1ef69c408  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudPhotoLibraryDirectRecordsUploadResult
+0x1ef6a4e00  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudPhotoLibraryError
+0x1ef6a4dd8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudPhotoLibraryHelper
+0x1ef6a4db0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudPhotoLibraryManager
+0x1ef69c3e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudPhotoLibraryUploadProgress
+0x1ef6a4d88  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudPhotoLibraryUploadTracker
+0x1ef6a0cb0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudPhotoLibraryUserSwitchHandler
+0x1ef6a4d60  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudRecordOrganizer
+0x1ee1b5250  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLCloudResource
+0x1ef6a4d38  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudResourceManager
+0x1ef6a4d10  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudResourcePrefetchManager
+0x1ef6a4ce8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudResourcePrefetchPredicateOptions
+0x1ef6a4cc0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudResourcePrefetchPredicates
+0x1ef6a0c88  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudResourcePruneManager
+0x1ee1b5228  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLCloudSharedAlbum
+0x1ee1b5200  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLCloudSharedAlbumInvitationRecord
+0x1ef6a9720  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudSharedAssetSaveJob
+0x1ee1b51d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLCloudSharedComment
+0x1ef6a0c60  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudSharedCommentsJob
+0x1ef6a0c38  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudSharedDeleteAlbumsJob
+0x1ef6a96f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudSharedUpdateAlbumMetadataJob
+0x1ef6a0c10  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudSharingEnablingJob
+0x1ef6a0be8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudSharingInvitationChangeJob
+0x1ef6a96d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudSharingJob
+0x1ef6a0bc0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudSharingResetJob
+0x1ef6a0b98  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudSharingViewedStateChangeJob
+0x1ef6a4c98  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudStorageInfo
+0x1ef6a0b70  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudStreamShareJob
+0x1ef6a4c70  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudTaskManager
+0x1ef6a4c48  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCloudUploadChanges
+0x1ef6a4c20  __AUTH,__objc_data  _OBJC_METACLASS_$_PLClusterTimeInfo
+0x1ee1b2d98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLCodec
+0x1ee1b4058  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLCollectionShare
+0x1ef69c3b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCollectionShareCPLBackend
+0x1ee1b3d60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLCollectionShareMigrationAttributes
+0x1ef69c390  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCollectionShareMigrationSession
+0x1ef69c368  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCollectionShareMigrationSessionPhaseBase
+0x1ef69c340  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCollectionShareMigrationSessionPhaseCopyAssets
+0x1ef69c318  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCollectionShareMigrationSessionPhaseCopyParticipants
+0x1ef69c2f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCollectionShareMigrationSessionPhaseInitiateMigration
+0x1ef69c2c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCollectionShareMigrationSessionPhaseSilentMigrationCleanup
+0x1ef69c2a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCollectionShareMigrationSessionPhaseValidation
+0x1ef69c278  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCollectionShareMigrationValidator
+0x1ef69c250  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCollectionShareMigrationValidatorResult
+0x1ef69c228  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCollectionShareMigrator
+0x1ef69c200  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCollectionShareSharedStreamBackend
+0x1ef6a0b48  __AUTH,__objc_data  _OBJC_METACLASS_$_PLColorSpace
+0x1ef698cd8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCombinedProvenanceVirtualResource
+0x1ef6a4bf8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCompactMomentClustering
+0x1ef6a96a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCompositionHelper
+0x1ef6a0b20  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCompoundPropertyValidationRule
+0x1ef69f6d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLComputeCacheManager
+0x1ef69f6a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLComputeCachePolicy
+0x1ef69c1d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLComputeCachePolicyConfiguration
+0x1ef69f680  __AUTH,__objc_data  _OBJC_METACLASS_$_PLComputeCachePolicyDataSource
+0x1ee1b4198  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLComputeSyncAttributes
+0x1ee1b51b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLComputedAssetAttributes
+0x1ee1b43f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLConcurrencyLimiter
+0x1ef69c1b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLConcurrencyLimiterRecorder
+0x1ef69c188  __AUTH,__objc_data  _OBJC_METACLASS_$_PLConcurrencyLimiterRecording
+0x1ef6997d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLConcurrencyLimiterRecordingAnalyzer
+0x1ef6997a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLConcurrencyLimiterRecordingReader
+0x1ef6aa198  __AUTH,__objc_data  _OBJC_METACLASS_$_PLConcurrentQueue
+0x1ef698cb0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLConfigurationCandidateResult
+0x1ef6a4bd0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLConstraintsDirector
+0x1ef6a0af8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLContactStoreUtilitiesWorkaround
+0x1ef6a0ad0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLContainerChangeNotification
+0x1ef699780  __AUTH,__objc_data  _OBJC_METACLASS_$_PLContentAwareCrop
+0x1ef699758  __AUTH,__objc_data  _OBJC_METACLASS_$_PLContentAwareCropConfiguration
+0x1ef6ab200  __AUTH,__objc_data  _OBJC_METACLASS_$_PLContentChanges
+0x1ef69c160  __AUTH,__objc_data  _OBJC_METACLASS_$_PLContentClassificationResult
+0x1ef6a9680  __AUTH,__objc_data  _OBJC_METACLASS_$_PLContextualVideoThumbnailVirtualResource
+0x1ee1b4670  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLConversation
+0x1ee1b5188  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLCoreDataChangeMerger
+0x1ef6ab1d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCoreDataSqlLogBinder
+0x1ef699730  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCropAsset
+0x1ef6a4ba8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCrowdSourcedThemesAssetEvent
+0x1ef6a4b80  __AUTH,__objc_data  _OBJC_METACLASS_$_PLCrowdSourcedThemesPublisher
+0x1ef6aac38  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDBSCANClustering
+0x1ef6a4b58  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDCFUtilities
+0x1ee1b3a90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLDaemonJob
+0x1ee1b3a18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLDaemonJobReply
+0x1ef6aac10  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDataCluster
+0x1ef6aabe8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDataClustering
+0x1ef6aabc0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDataDensityClustering
+0x1ef6a0aa8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDataMigratorSupport
+0x1ef6aab98  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDatabaseContext
+0x1ef6a9658  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDateIntervalFormatter
+0x1ef6ab598  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDateRangeFormatter
+0x1ef6aab70  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDateRangeTitleGenerator
+0x1ef6a4b30  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDayGroupPhotosHighlightTitleGenerator
+0x1ef6a4b08  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDayPhotosHighlightTitleGenerator
+0x1ef6a4ae0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDefaultAssetsdServiceContext
+0x1ef6abbe0  __AUTH,__data  _OBJC_METACLASS_$_PLDeferredPhotoErrorAnalysis
+0x1ef6abbb8  __AUTH,__data  _OBJC_METACLASS_$_PLDeferredPhotoErrorRecovery
+0x1ef6a4ab8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDeferredPhotoFinalizer
+0x1ef6abc60  __AUTH,__data  _OBJC_METACLASS_$_PLDeferredPhotoPendingAssetRecord
+0x1ef6abb90  __AUTH,__data  _OBJC_METACLASS_$_PLDeferredPhotoPendingAssetRecordStore
+0x1ef69c138  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDeferredProcessingServiceHandler
+0x1ee1b5160  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLDeferredRebuildFace
+0x1ef6a4a90  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDeferredRebuildFaceJournalEntryPayload
+0x1ef6a4a68  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDelayedFiledSystemDeletions
+0x1ef6a9630  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDelayedSaveActions
+0x1ee1b3a68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLDelayedSaveActionsDetail
+0x1ef6a4a40  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDelayedSaveActionsProcessor
+0x1ef69c110  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDelayedSearchIndexUpdates
+0x1ef6a0a80  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDemoContentResults
+0x1ef6a0a58  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDemoModeUtilities
+0x1ef6aa170  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDescriptionBuilder
+0x1ee1b5138  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLDetectedFace
+0x1ef6a4a18  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDetectedFaceComputeJournalEntryPayload
+0x1ef6a0a30  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDetectedFaceComputePayloadAdapter
+0x1ee1b5110  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLDetectedFaceGroup
+0x1ef6a49f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDetectedFaceJournalEntryPayload
+0x1ee1b50e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLDetectedFaceprint
+0x1ee1b50c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLDetectionTrait
+0x1ef6a49c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDeviceRestoreMigrationPostProcessingSupport
+0x1ef6a49a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDeviceRestoreMigrationSupport
+0x1ef6a4978  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDiagnostics
+0x1ef69c0e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDirectoryJournal
+0x1ef6a4950  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDisconnectedManagedObjectContext
+0x1ef6a9608  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDiskSpaceManagement
+0x1ef6aa148  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDistributedNotificationHandler
+0x1ee1b4648  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLDuplicateAlbum
+0x1ef6a4928  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDuplicateAsset
+0x1ef6a4900  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDuplicateDetector
+0x1ef6a48d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDuplicateDetectorExactPixel
+0x1ef69f658  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDuplicateDetectorLivePhotoContext
+0x1ef69f630  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDuplicateDetectorLivePhotoContextData
+0x1ef6a48b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDuplicateDetectorMetadata
+0x1ef69f608  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDuplicateDetectorPostProcessing
+0x1ef69f5e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDuplicateDetectorSortKey
+0x1ef6a4888  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDuplicateGroup
+0x1ef6a4860  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDuplicateMerge
+0x1ef6a4838  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDuplicateMergeCrashRecovery
+0x1ef699708  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDuplicateMergeModelProperties
+0x1ef6a4810  __AUTH,__objc_data  _OBJC_METACLASS_$_PLDuplicateProcessor
+0x1ef6a95e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLEditSource
+0x1ee1b5098  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLEditedIPTCAttributes
+0x1ef6a47e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLEmailAddressManager
+0x1ef6a95b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLEnumerateAndSaveController
+0x1ef6a47c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLExistingMomentData
+0x1ee1b5070  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLExtendedAttributes
+0x1ee1b5048  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLFaceCrop
+0x1ef6a0a08  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFaceDimension
+0x1ef6a4798  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFaceRebuildHelper
+0x1ef6a09e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFakeCPLLibraryManager
+0x1ef6a09b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFakeCPLPullChangeSession
+0x1ef6a0990  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFakeCPLPushChangeSession
+0x1ef6a0968  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFeatureAvailability
+0x1ef69c0c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFeatureAvailabilityComputer
+0x1ef6a0940  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFeatureAvailabilityConfig
+0x1ef699078  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFeatureAvailabilityLexemeCriteria
+0x1ef69c098  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFeatureAvailabilityProgressDelegate
+0x1ef6a0918  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFeatureAvailabilitySignalledChanges
+0x1ef69c070  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFeatureAvailabilityTransitionDelegate
+0x1ef69c048  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFeatureProcessingAlgorithmVersionProvider
+0x1ef6a08f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFeatureProcessingSnapshot
+0x1ee1b44e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLFetchRecorder
+0x1ef6ab1b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFetchRecorderPredicateVisitor
+0x1ef6ab570  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFetchRecording
+0x1ef6ab548  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFetchRecordingIndexEntry
+0x1ee1b47b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLFetchRequest
+0x1ee1b5020  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLFetchingAlbum
+0x1ef6a4770  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFetchingAlbumJournalEntryPayload
+0x1ef6ab188  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFigPreheatItem
+0x1ee1b3090  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLFileBackedThumbnailVirtualResource
+0x1ef6a4748  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFileDescriptorFuse
+0x1ef6a4720  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFileSystemAssetImporter
+0x1ee1b4ff8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLFileSystemBookmark
+0x1ef6a46f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFileSystemImportAsset
+0x1ee1b4fd0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLFileSystemVolume
+0x1ef6a46d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFileSystemVolumeJournalEntryPayload
+0x1ee1b3360  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLFileSystemVolumeManager
+0x1ee1b6128  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLFileSystemVolumeUnmountMonitor
+0x1ef6a46a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFilesystemDeletionInfo
+0x1ef6a08c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFilteredAlbum
+0x1ef6a08a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFilteredAlbumChangeNotification
+0x1ef6a9590  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFilteredAlbumList
+0x1ef6a0878  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFilteredAlbumListChangeNotification
+0x1ef69c020  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFinalizedPhotoResult
+0x1ef6a4680  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFirstUnlockProtection
+0x1ef6a4658  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFolderJournalEntryPayload
+0x1ef6a4630  __AUTH,__objc_data  _OBJC_METACLASS_$_PLForegroundMonitor
+0x1ef6a9568  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFrequentLocation
+0x1ef6a4608  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFrequentLocationManager
+0x1ef6a9540  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFrequentLocationProcessor
+0x1ef69bff8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFullSizeRenderImageVirtualResource
+0x1ef6996e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFullSizeRenderVideoComplementVirtualResource
+0x1ef69bfd0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLFullSizeRenderVideoVirtualResource
+0x1ee1b3680  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLGeneratedAssetDescription
+0x1ee1b4fa8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLGenericAlbum
+0x1ef6a45e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLGenericAlbumJournalEntryPayload
+0x1ef69bfa8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLGenericLocationTuple
+0x1ee1b4f80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLGlobalKeyValue
+0x1ee1b4620  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLGlobalKeyValueAnyTransformer
+0x1ee1b34a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLGlobalKeyValueAttributes
+0x1ef6ab520  __AUTH,__objc_data  _OBJC_METACLASS_$_PLGlobalValues
+0x1ef6a0850  __AUTH,__objc_data  _OBJC_METACLASS_$_PLGraphBitset
+0x1ef6a45b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLGraphCache
+0x1ee1b42b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLGraphEdge
+0x1ee1b3d38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLGraphEdgeAdditionalLabelAssignment
+0x1ee1b4288  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLGraphEdgeValue
+0x1ee1b4260  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLGraphLabel
+0x1ee1b4238  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLGraphNode
+0x1ee1b3d10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLGraphNodeAdditionalLabelAssignment
+0x1ef6ab4f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLGraphNodeContainer
+0x1ef6996b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLGraphNodeSocialGroupJournalEntryPayload
+0x1ee1b4210  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLGraphNodeValue
+0x1ef6a0828  __AUTH,__objc_data  _OBJC_METACLASS_$_PLGreenController
+0x1ef69bf80  __AUTH,__objc_data  _OBJC_METACLASS_$_PLGuestAssetSyncEngine
+0x1ef6a4590  __AUTH,__objc_data  _OBJC_METACLASS_$_PLHierarchicalClustering
+0x1ef6a4568  __AUTH,__objc_data  _OBJC_METACLASS_$_PLHighlightHierarchy
+0x1ef6a4540  __AUTH,__objc_data  _OBJC_METACLASS_$_PLHighlightItemClusterer
+0x1ef6a4518  __AUTH,__objc_data  _OBJC_METACLASS_$_PLHighlightItemList
+0x1ef6a44f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLHighlightItemPromoter
+0x1ef6a44c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLImageContainer
+0x1ef6a44a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLImageGeometry
+0x1ef6aa120  __AUTH,__objc_data  _OBJC_METACLASS_$_PLImageLoadingUtilities
+0x1ef6a9518  __AUTH,__objc_data  _OBJC_METACLASS_$_PLImageWriter
+0x1ef699690  __AUTH,__objc_data  _OBJC_METACLASS_$_PLImageWriterCrashRecoveryJobInProgressMarker
+0x1ee1b4f58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLImportSession
+0x1ef6a4478  __AUTH,__objc_data  _OBJC_METACLASS_$_PLImportSessionJournalEntryPayload
+0x1ef6a94f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLIndexMapper
+0x1ee1b2c58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLIndicatorFileCoordinator
+0x1ef6a4450  __AUTH,__objc_data  _OBJC_METACLASS_$_PLIngestJobCameraMetadata
+0x1ef6a0800  __AUTH,__objc_data  _OBJC_METACLASS_$_PLInitialSuggestionDateFilter
+0x1ef6a4428  __AUTH,__objc_data  _OBJC_METACLASS_$_PLInitialSuggestionRanker
+0x1ef6a4400  __AUTH,__objc_data  _OBJC_METACLASS_$_PLInitialSuggestionsManager
+0x1ef6a43d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLInitialSuggestionsStorageManager
+0x1ef6a07d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLInstrumentedBlockOperation
+0x1ef6a07b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLInstrumentedOperationQueue
+0x1ef69bf58  __AUTH,__objc_data  _OBJC_METACLASS_$_PLIntensiveResourceTask
+0x1ef69bf30  __AUTH,__objc_data  _OBJC_METACLASS_$_PLIntensiveResourceTaskManager
+0x1ef69bf08  __AUTH,__objc_data  _OBJC_METACLASS_$_PLIntensiveResourceTaskResponder
+0x1ef6a43b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLInterLibraryTransfer
+0x1ee1b39f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLInterLibraryTransferOptions
+0x1ef6a0788  __AUTH,__objc_data  _OBJC_METACLASS_$_PLInterest
+0x1ee1b4f30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLInternalResource
+0x1ef6a94c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLInternalResourceSidecarRepresentation
+0x1ef699668  __AUTH,__objc_data  _OBJC_METACLASS_$_PLIntersectedSearchIndexEntity
+0x1ef6a4388  __AUTH,__objc_data  _OBJC_METACLASS_$_PLJPEGThumbnailDecode
+0x1ef6a4360  __AUTH,__objc_data  _OBJC_METACLASS_$_PLJournal
+0x1ef69bee0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLJournalChecksumContext
+0x1ef6a4338  __AUTH,__objc_data  _OBJC_METACLASS_$_PLJournalEntry
+0x1ef6a4310  __AUTH,__objc_data  _OBJC_METACLASS_$_PLJournalEntryHeader
+0x1ef6a42e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLJournalEntryPayloadIDFactory
+0x1ef6a42c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLJournalEntryPayloadProperty
+0x1ef699640  __AUTH,__objc_data  _OBJC_METACLASS_$_PLJournalEntryPayloadPropertyInfoAssetCompute
+0x1ef69f5b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLJournalEntryPayloadUpdateAdapter
+0x1ef6a4298  __AUTH,__objc_data  _OBJC_METACLASS_$_PLJournalFile
+0x1ef6a4270  __AUTH,__objc_data  _OBJC_METACLASS_$_PLJournalManager
+0x1ef6a4248  __AUTH,__objc_data  _OBJC_METACLASS_$_PLJournalManagerCore
+0x1ef6aa0f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLKMeansClustering
+0x1ef6a0760  __AUTH,__objc_data  _OBJC_METACLASS_$_PLKeyFaceManager
+0x1ef6a94a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLKeyedUnarchiver
+0x1ef6a4220  __AUTH,__objc_data  _OBJC_METACLASS_$_PLKeywordJournalEntryPayload
+0x1ef6a41f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLKeywordManager
+0x1ef6a0738  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLOFOutlierDetection
+0x1ef6a41d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLegacyChangeEvent
+0x1ef6a9478  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLegacyChangeEventBuilder
+0x1ef69beb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLeoDonatableItem
+0x1ef6abb68  __AUTH,__data  _OBJC_METACLASS_$_PLLeoLexemeIDSet
+0x1ef6a9450  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLeoLexiconStore
+0x1ef69be90  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLeoStatistics
+0x1ef6abb40  __AUTH,__data  _OBJC_METACLASS_$_PLLexemeSpec
+0x1ef6a41a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLibraryClusterer
+0x1ef6a9428  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLibraryContentsEnumerator
+0x1ef69be68  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLibraryOpenerCreationOptions
+0x1ee1b45f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLLibraryScope
+0x1ef6a0710  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLibraryScopeChangeTracker
+0x1ef6a06e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLibraryScopeCondition
+0x1ef6a06c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLibraryScopeConditionDateRange
+0x1ef6a0698  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLibraryScopeConditionPerson
+0x1ef6a0670  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLibraryScopeConditionUnknown
+0x1ef6a0648  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLibraryScopeRule
+0x1ef6a0620  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLibraryScopeRuleEvaluator
+0x1ef6a05f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLibraryScopeRuleInterpreter
+0x1ef6a05d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLibraryScopeRuleManager
+0x1ef6a05a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLibraryScopeTransactionResult
+0x1ef6a4180  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLibraryServicesCPLReadiness
+0x1ee1b61a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLLibraryServicesManager
+0x1ef69be40  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLibraryServicesOperation
+0x1ef6a4158  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLibrarySyncContext
+0x1ee1b4f08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLLimitedLibraryFetchFilter
+0x1ef6a9400  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLivePhotoEditSource
+0x1ef6a4130  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLivePhotoPairingProcessor
+0x1ee1b3b30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLLocalChangeEventBuilder
+0x1ef6a4108  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLocalCreationDateCreator
+0x1ef6a40e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLocalVideoKeyFrameGenerationJob
+0x1ef6ab4d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLocalVideoKeyFrameJobQueue
+0x1ef6a40b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLocalVideoKeyFrameVideoChoosingOptions
+0x1ef6a4090  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLocationOfInterest
+0x1ef6a4068  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLocationOfInterestCache
+0x1ef6a4040  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLocationOfInterestLocation
+0x1ef6a4018  __AUTH,__objc_data  _OBJC_METACLASS_$_PLLocationOfInterestVisit
+0x1ee1b3568  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLLocationUtils
+0x1ee1b4ee0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLMainQueuePhotoLibrary
+0x1ee1b4eb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLManagedAlbum
+0x1ee1b4e90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLManagedAlbumList
+0x1ee1b6268  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLManagedAsset
+0x1ee1b3338  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLManagedAssetID
+0x1ef6a3ff0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLManagedAssetRecoveryManager
+0x1ef6a0580  __AUTH,__objc_data  _OBJC_METACLASS_$_PLManagedAssetRuleInterpreter
+0x1ef699618  __AUTH,__objc_data  _OBJC_METACLASS_$_PLManagedAssetShareAdjustmentBakeInOptions
+0x1ef6995f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLManagedAssetShareMetadataCopyOptions
+0x1ee1b4e68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLManagedFolder
+0x1ee1b4e40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLManagedKeyword
+0x1ee1b4e18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLManagedLegacyFace
+0x1ee1b4df0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLManagedLegacyFaceAlbum
+0x1ef6abb18  __AUTH,__data  _OBJC_METACLASS_$_PLManagedLeoAttributeStore
+0x1ef6abae8  __AUTH,__data  _OBJC_METACLASS_$_PLManagedLeoAttributeStoreContext
+0x1ee1b6308  __DATA_DIRTY,__data  _OBJC_METACLASS_$_PLManagedLeoItem
+0x1ee1b62e0  __DATA_DIRTY,__data  _OBJC_METACLASS_$_PLManagedLeoLexeme
+0x1ee1b6240  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLManagedObject
+0x1ee1b4dc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLManagedObjectContext
+0x1ee1b43c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLManagedObjectContextDelegate
+0x1ee1b4da0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLManagedObjectContextList
+0x1ef6a3fc8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLManagedObjectJournalEntryPayload
+0x1ef69be18  __AUTH,__objc_data  _OBJC_METACLASS_$_PLManagedObjectPagingIterator
+0x1ef6a0558  __AUTH,__objc_data  _OBJC_METACLASS_$_PLManagedObjectValidationResult
+0x1ef6a0530  __AUTH,__objc_data  _OBJC_METACLASS_$_PLManagedObjectValidator
+0x1ee1b4d78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLMediaAnalysisAssetAttributes
+0x1ef69bdf0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMediaAnalysisEmbedding
+0x1ef6a3fa0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMediaAnalysisEmbeddingSearch
+0x1ef6a0508  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMediaAnalysisEmbeddingSearchOptions
+0x1ef6a04e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMediaAnalysisEmbeddingSearchResult
+0x1ee1b2b40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLMediaAnalysisServiceRequestAdapter
+0x1ef6a3f78  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMediaMetadataVirtualResource
+0x1ef6a93d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMediaMiningUtilities
+0x1ef69f590  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMediaProcessingPredicateBuilder
+0x1ee1b4d50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLMemory
+0x1ef6995c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMemoryComputeJournalEntryPayload
+0x1ef6995a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMemoryComputePayloadAdapter
+0x1ef6a3f50  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMemoryJournalEntryPayload
+0x1ee1b4d28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLMergePolicy
+0x1ef6a3f28  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMigrationContext
+0x1ee1b4d00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLMigrationHistory
+0x1ef6a3f00  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMigrationHistoryJournalEntryPayload
+0x1ef6a93b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMinMaxSettings
+0x1ee1b4878  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLModelMigration
+0x1ef6a3ed8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction
+0x1ef6a3eb0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationActionBackground
+0x1ef6a3e88  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationActionCore
+0x1ef6a3e60  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationActionPostRepair
+0x1ef6a3e38  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationActionPreRepair
+0x1ef69bdc8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationActionPreSchema
+0x1ef6a3e10  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationActionProcessor
+0x1ef6a04b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationActionStaged
+0x1ef6a0490  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationActionStaged_FixupExistingCloudSharedAlbumInvitationRecord
+0x1ef6a0468  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationActionStaged_FixupExistingUserFeedback
+0x1ef6a0440  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationActionStaged_MoveLibraryScopeContributors
+0x1ef6a0418  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationActionStaged_MoveLibraryScopeShareState
+0x1ef6a3de8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationActionUtility
+0x1ef69bda0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_AddCloudFeedEntryUUID
+0x1ef69bd78  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_AddDuplicateBackgroundJobItems
+0x1ef69bd50  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_AddMissingAdjustedMediaMetadata
+0x1ef6a3dc0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_AddMissingExtendedAttributeDateTimezone
+0x1ef69bd28  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_AddMissingExtendedAttributeDateTimezoneFromCloudMaster
+0x1ef6a3d98  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_AddMissingExtendedAttributeDigitalZoomRatio
+0x1ef6a3d70  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_AddMissingExtendedAttributeFocalLengthIn35mm
+0x1ef6a3d48  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_AddMissingExtendedAttributeLocation
+0x1ef6a3d20  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_AddMissingExtendedAttributeOrientation
+0x1ef69bd00  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_AddMissingExtendedAttributes_2024
+0x1ef69bcd8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_AddMissingExtendedAttributes_2025
+0x1ef69bcb0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_AvalancheKind
+0x1ef69bc88  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_BackfillSharePostShareCollectionShareKind
+0x1ef699578  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_BumpOCRVersionFrom8to9
+0x1ef6a3cf8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_CPLPrompting
+0x1ef69bc60  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_CPLSettings
+0x1ef6a3cd0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_CinematicVideoPopulateDepthType
+0x1ef699550  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_CleanupAssetResourceJobConfigurationStateDisable
+0x1ef69bc38  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ClearBitsetData
+0x1ef6a3ca8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ClearInterruptedMaintenanceTaskLibraries
+0x1ef6a03f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ClearPurgeableIsCloneState
+0x1ef69bc10  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_CopyStickerConfidenceScoreToAssetTable
+0x1ef699528  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_DeleteAllCloudFeedAssetsEntries
+0x1ef6a3c80  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_DeleteAllSharedLibraryPLSuggestions
+0x1ef69bbe8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_DeleteAmbientSuggestions
+0x1ef69bbc0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_DeleteCarouselCruft
+0x1ef69bb98  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_DeleteDanglingPLGraphEdges
+0x1ef69bb70  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_DeleteEmptyGraphGroups
+0x1ef69bb48  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_DeleteFullSizeRenderVideosForLegacyAdjustedSlomos
+0x1ef69bb20  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_DeleteInvalidSocialGroups
+0x1ef69baf8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_DeleteInvalidStateSharedStreamShareParticipants
+0x1ef69bad0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_DeleteNonCollectionShareEntries
+0x1ef6a3c58  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_DeleteOrphanedFaces
+0x1ef69baa8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_DeletePLGeneratedAssetDescriptionNodesAndLabel
+0x1ef69ba80  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_DeletePetPersonsAndDetectedFaces
+0x1ef699500  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_DeleteStaleMigrationAttributesFromServerHandlingBug
+0x1ef69ba58  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_DrawAssetPersonEdges
+0x1ef69ba30  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_DropManualIndexes
+0x1ef69ba08  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixAppDomainLibraryCreateOptions
+0x1ef69b9e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixAssetDeferredProcessingNeededState
+0x1ef69b9b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixAssetsWithMissingSaliencyRects
+0x1ef6a3c30  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixBackgroundResourceWorkerModifyingIncorrectResources
+0x1ef6a3c08  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixBadExtendedAttribute
+0x1ef69b990  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixBlankPhotosFromVideoMode
+0x1ef69b968  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixComputeSyncResourceFileExtension
+0x1ef69b940  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixDuplicateMergeCrashRecoveryAssets
+0x1ef6a3be0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixExtendedAttributeDateCreated
+0x1ef69b918  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixMultipleCurrentUserOwnerShareParticipantsOnCollectionShares
+0x1ef6994d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixNotificationStateForCPLCollectionShares
+0x1ef6a3bb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixPackedBadgeAttributesForRAWPlusJPEG
+0x1ef6a3b90  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixResourcesIncorrectlyAssignedToSyndicationDataStore
+0x1ef69b8f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixResumeMarkerName
+0x1ef69b8c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixSignExtended32bSceneIdentifiers
+0x1ef6994b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixUnknownKindAssetsFromOriginalResourceUTI
+0x1ef6a3b68  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixUnpushedVideoComplementResourcesAfterFDR
+0x1ef69b8a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixUnseenContentStateForCollectionShares
+0x1ef698c88  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixupAssetsStuckInDeferredProcessing
+0x1ef69b878  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixupCascadeDonationWorkItems
+0x1ef69b850  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixupDefaultStickerConfidenceScoreValues
+0x1ef69b828  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixupDefaultVideoStickerSuggestionScoreValues
+0x1ef69b800  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixupMislabeledCurrentUserParticipants
+0x1ef699488  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixupStaleSearchEntities
+0x1ef6a3b40  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixupTombstonedPeople
+0x1ef6a3b18  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_FixupTombstonedPeopleOnSharedLibraryRules
+0x1ef69b7d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_GenerateMemoryStartAndEndDates
+0x1ef6a3af0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_GreenTeaSetDefaultContactsAuthorizationState
+0x1ef69b7b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_InstallComputeSyncResourcesIfNeeded
+0x1ef69b788  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_LibraryScopeTrashedStateFixup
+0x1ef698c60  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_MarkOwnedCollectionShareAssetsAsCopied
+0x1ef69b760  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_MergeDetectedFacesAndDetectedTorsos
+0x1ef69b738  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_MigrateCloudFeedAssetsEntriesToSharePosts
+0x1ef69b710  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_MigrateCloudSharedAlbumToCollectionShare
+0x1ef6a3ac8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_MigrateLastGuestAssetSyncToken
+0x1ef69b6e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_MigrateMemoryPendingStateStoryToCreationType
+0x1ef69b6c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_MigrateOrphanedCloudSharedAlbumInvitationRecordsToShareParticipants
+0x1ef6a3aa0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_MigrateProResPackedBadgeAttributes
+0x1ef69b698  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_MigrateSocialGroupRebuildPersistence
+0x1ef6a3a78  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_MigrateSuggestedByClientTypeCameraSmartSharing
+0x1ef69b670  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_MoveVersionsToMediaAnalysisAttributes
+0x1ef698c38  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_PersistKeywordsToJournalAndFilesystem
+0x1ef6a3a50  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_PopulateBundleScopeOnAssets
+0x1ef69b648  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_PopulateCloudFeedEntryIsMine
+0x1ef69b620  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_PopulateCloudFeedEntryRelationships
+0x1ef6a3a28  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_PopulateExtendedAttributes
+0x1ef6a3a00  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_PopulateInitialActiveLibraryScopeParticipationState
+0x1ef6a39d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_PopulateInitialSharedAssetCollectionStats
+0x1ef69b5f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_PopulateKeyAssets
+0x1ef69b5d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_PopulatePersonCloudDetectionType
+0x1ef69b5a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_PrepareSharedAssetContainerUpdateWorker
+0x1ef69b580  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ProcessAlbumAssociation
+0x1ef6a39b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_PromoteLeftoverDeferredAssets
+0x1ef699460  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_PromoteUnknownKindAssetsWithCloudMaster
+0x1ef69b558  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_PushAssetsWithPetSyncableFaces
+0x1ef69b530  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ReKeyResourcesIncorrectlyStoredAsM4A
+0x1ef69f568  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RebuildHighlights
+0x1ef69b508  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RebuildTableThumbsFromMasterThumbs
+0x1ef69b4e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RecalculateImageRequestHintsForThumbnails
+0x1ef69b4b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ReevaluateAllowedForAnalysisForGPAssets
+0x1ef69b490  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ReevaluateAllowedForAnalysisForMontageAssets
+0x1ef698c10  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ReevaluateAllowedForAnalysisForUnknownKindAssets
+0x1ef69b468  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ReevaluatePanoramaImageAssets
+0x1ef6a3988  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RelocateBundleScopeData
+0x1ef69b440  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RelocateEdgesAndNormalizeNodeValues
+0x1ef698be8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RelocateUBFOriginalResourceTypes
+0x1ef6a3960  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveAdjustedAssetsFromDuplicateAlbums
+0x1ef6a3938  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveAllBlackAllWhiteAssetsFromDuplicateAlbums
+0x1ef69b418  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveAllPurgeableClones
+0x1ef6a3910  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveAllQuarantinedAssetsFromDuplicateAlbums
+0x1ef6a38e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveAnimatedAssetsFromDuplicateAlbums
+0x1ef69b3f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveAssetResourceUploadJobConfigurations
+0x1ef69b3c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveAssetsFromSubscribedCloudFeedEntries
+0x1ef6a38c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveCombinedAssetsFromDuplicateAlbums
+0x1ef69b3a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveExcessSocialGroupKeyAssetEdges
+0x1ef6a03c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveGuestFacesFromSPL
+0x1ef6a3898  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveInvalidExtendedAttributesDateTimezone
+0x1ef69b378  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveLabelsFromSyndication
+0x1ef6a3870  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveLegacyImportedAssetsFromDuplicateAlbums
+0x1ef69b350  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveMessageProfileGraphCache
+0x1ef6a3848  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveNotUploadedAlbum
+0x1ef69b328  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveOldCameraPreviewWellImage
+0x1ef69b300  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveOrphanGeneratedAssetDescriptionNodes
+0x1ef6a3820  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveOrphanedMediaAnalysisAttributes
+0x1ef6a37f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveOrphanedSceneprint
+0x1ef69b2d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemovePSIDatabase
+0x1ef6a37d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemovePeopleMergeCandidatesForConfidenceComputation
+0x1ef6a37a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveReferencedAssetsFromDuplicateAlbums
+0x1ef69b2b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveRejectedMemberLabel
+0x1ef6a3780  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveScreenshotAssetsFromDuplicateAlbums
+0x1ef6a3758  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveSharedLibraryAlbum
+0x1ef6a3730  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveSharedLibraryAssetsFromDuplicateAlbums
+0x1ef69b288  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveUnusedBackgroundJobWorkItems
+0x1ef69b260  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveUnverifiedSocialGroups
+0x1ef69b238  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RemoveVisionComputeResources
+0x1ef69b210  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RepairDuplicateDetectorPerceptualProcessingState
+0x1ef69b1e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RepairFinderSyncAlbumFilePersistence
+0x1ef6a3708  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RepairMaintenanceTaskMarker
+0x1ef6a36e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RepairSingletons
+0x1ef6a36b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RepairTrashHiddenDuplicateAssetVisibilityState
+0x1ef6a3690  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RepairUnknownAssetTypeAndUnsupportedPlaybackStyle
+0x1ef69b1c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ReprocessInvalidDuplicateHashes
+0x1ef6a3668  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RepushAssetsWithImportedByBundleIdentifier
+0x1ef69b198  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetAllFaceCropsToDirty
+0x1ef69b170  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetAnalysisForFinderSyncedAssets
+0x1ef6a3640  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetBackgroundJobServicePersistedBundleRecords
+0x1ef6a3618  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetClusterSequenceNumberForRejectedFaces
+0x1ef6a35f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetCurationScoreSyndicatedAsset
+0x1ef69b148  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetCustomSocialGroupDataForRejectedGroups
+0x1ef6a35c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetDuplicateAlbums
+0x1ef6a35a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetDuplicateDetectorProcessingToken
+0x1ef6a3578  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetDuplicateProcessingValue
+0x1ef69b120  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetExternalAssets
+0x1ef69b0f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetExternalAssetsFromCamera
+0x1ef69b0d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetFilesystemImportToken
+0x1ef69b0a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetGraphPersons
+0x1ef699438  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetHighlights
+0x1ef69b080  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetLastCompletePrefetchDate
+0x1ef69b058  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetLocalAvailabilityDeferredProcessingFinalVideo
+0x1ef6ab868  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetLocalAvailabilityRetryStateForDeferredProcessingFinalResources
+0x1ef6a3550  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetRecentHighlightTitleUpdateDate
+0x1ef6a3528  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetRevGeoAndShiftedLocation
+0x1ef69b030  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetSensitivityProcessingStateForAssetsContributedByCurrentUser
+0x1ef6a3500  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetSharedLibrarySharingSuggestionsAssets
+0x1ef69b008  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetSocialGroup
+0x1ef6a34d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetSyndication
+0x1ef6a34b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetSyndicationAssetSyncToken
+0x1ef69afe0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetTripHighlightEnrichmentVersion
+0x1ef6a3488  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResetVideoDuplicateAssetFromDuplicateAlbums
+0x1ef699410  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_ResolveDuplicateThumbnailIndexes
+0x1ef698bc0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RestoreProvenanceStateAfterRename
+0x1ef69afb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RestoreSocialGroupUserPicks
+0x1ef6a3460  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RevalidateFaceAreaPoints
+0x1ef69af90  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_RunSocialGroupAssetContainment
+0x1ef698b98  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SaveProvenanceStateForRename
+0x1ef6993e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetAcceptanceDateOnCPLCollectionShares
+0x1ef69af68  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetAddedDateFromCloudBatchPublishDateForCollectionShareAssets
+0x1ef69af40  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetCaptionForSharedStreamSharePosts
+0x1ef69af18  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetCollectionShareCurrentParticipantRole
+0x1ef6a3438  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetDefaultFaceAnalysisVersion
+0x1ef698b70  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetKeepOriginalsPrefetchModeForVisualIntelligenceLibrary
+0x1ef6993c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetNotificationStateNoneOnSilentMigrationShares
+0x1ef69aef0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetPlatformSpecificSortAscendingForPublishDateSortedCollectionShares
+0x1ef6a3410  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetPrivacyStateOnSmartAlbums
+0x1ef699050  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetProvenanceStateFromMetadata
+0x1ef698b48  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetRunOnceFlagToLinkOrphanedCollectionShareContributors
+0x1ef69aec8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetRunOnceFlagToReconcileSharedStreamCollectionShareParticipants
+0x1ef69aea0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetRunOnceFlagToRepushExistingCrystalBPayloads
+0x1ef699398  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetRunOnceFlagToRepushMastersAffectedByRaveSeedVidComp
+0x1ef6ab840  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetRunOnceFlagToRestoreMissingCollectionSharePosts
+0x1ef69ae78  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetShareParticipantOnCloudComments
+0x1ef69ae50  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetShareParticipantOnOrphanedCollectionShareAssets
+0x1ef69ae28  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetStartEndDatesOnCollectionShares
+0x1ef69ae00  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SetUniqueEdgeExternalIdentifiers
+0x1ef699370  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_SplitMergedCloudFeedReactionEntries
+0x1ef6a33e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_UnTrashSharedDuplicates
+0x1ef69add8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_UpdateAlchemistAssetResourcesUniformTypeIdentifier
+0x1ef69adb0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_UpdateAssetAdjustmentsState
+0x1ef69ad88  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_UpdateDayHighlightDateTitles
+0x1ef6a33c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_UpdateDuplicateAssetVisibilityStateMostRelevant
+0x1ef6a3398  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_UpdateDuplicateProcessingState
+0x1ef69ad60  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_UpdateDuplicateProcessingStateScreenshot
+0x1ef69ad38  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_UpdateEditSuggestionImageRecipeID
+0x1ef69ad10  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_UpdateGenericAlbumModificationDate
+0x1ef69ace8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_UpdateHighlightCollageAssets
+0x1ef69acc0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_UpdateImportedFileSystemAssetsGlobalKeyValue
+0x1ef69ac98  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_UpdateOutdatedPersonMetadata
+0x1ef69ac70  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_UpdatePlaybackControlBadgeAttribute
+0x1ef69ac48  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_UpdateSharedAssetContainerWorkItems
+0x1ef69ac20  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_UpdateSharedStreamCollectionShareTemporaryAssetDerivativesPurgeable
+0x1ef69abf8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_UpdateThumbnailIndexAndFooterFormat
+0x1ef69abd0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_UpdateTripHighlightDateTitles
+0x1ef69aba8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_WriteEdgeExternalIdentifiers
+0x1ef6a3370  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_WriteLibraryScopeIsActiveDefaults
+0x1ef69ab80  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_WriteOutSocialGroupUserPickedKeyAssets
+0x1ef69ab58  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_dedupeResourcesWithSimilarCompactUTI
+0x1ef6a3348  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_fixLivePhotoSubtypePlaybackStyleMismatch
+0x1ef69ab30  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_moveLocalVersionTokenFromPlistToGlobalValues
+0x1ef69ab08  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_setInitialIsDetectedScreenshotValue
+0x1ef69aae0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_setInitialRecencyTypeValue
+0x1ef69aab8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_setInitialhasPeopleSceneMidOrGreaterConfidenceValue
+0x1ef6a3320  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_updateACVideos
+0x1ef69aa90  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationAction_updateBrokenStyleableFromRebuild
+0x1ef699348  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigrationHistory
+0x1ef69aa68  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigration_SetParticipantRoleOnShareParticipants
+0x1ee1b4850  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLModelMigrator
+0x1ef6a32f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLModelMigratorRebuildProgressFraction
+0x1ee1b4cd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLMoment
+0x1ef6a32d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMomentCluster
+0x1ef6aab48  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMomentGeneration
+0x1ef6a32a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMomentGenerationDataManager
+0x1ef6a3280  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMomentGenerationThrottle
+0x1ef6a3258  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMomentGenerationThrottleDefaultTimeProvider
+0x1ef6a9388  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMomentGenerationUtils
+0x1ef69aa40  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMomentProcessingData
+0x1ee1b4cb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLMomentShare
+0x1ef698b20  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMomentSharePreviewSanitizer
+0x1ef6a03a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMomentTheme
+0x1ef699320  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMomentThemeAssignment
+0x1ef6a3230  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMonthGroupingRule
+0x1ef69aa18  __AUTH,__objc_data  _OBJC_METACLASS_$_PLMutableAssetAdjustmentOptions
+0x1ef6a9360  __AUTH,__objc_data  _OBJC_METACLASS_$_PLNLP
+0x1ef6a3208  __AUTH,__objc_data  _OBJC_METACLASS_$_PLNSStringJournalEntryPayloadID
+0x1ef6a31e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLNSUUIDJournalEntryPayloadID
+0x1ef6a31b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLNotification
+0x1ef6aa0d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLNotificationManager
+0x1ef6a3190  __AUTH,__objc_data  _OBJC_METACLASS_$_PLNotificationUNCenter
+0x1ef6a3168  __AUTH,__objc_data  _OBJC_METACLASS_$_PLObjectSnapshot
+0x1ef6a3140  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPairing
+0x1ef6a3118  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPairingProcessor
+0x1ef6a30f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPersistedAlbumMetadata
+0x1ef6a30c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPersistedFolderMetadata
+0x1ef6a30a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPersistedMemoryMetadata
+0x1ef6a3078  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPersistedPersonFaceMetadata
+0x1ef6a3050  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPersistedPersonMetadata
+0x1ee1b4c88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPersistentContainer
+0x1ee1b4c60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPersistentHistoryChangeDistributor
+0x1ee1b3ce8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPersistentHistoryDistributionEvent
+0x1ee1b3cc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPersistentHistoryMarker
+0x1ef6a0378  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPersistentHistoryMarkerDate
+0x1ee1b3c98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPersistentHistoryMarkerToken
+0x1ef6a0350  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPersistentHistoryMarkerTransaction
+0x1ef6a3028  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPersistentHistoryStats
+0x1ee1b3c70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPersistentHistoryTransactionIterator
+0x1ee1b4c38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPersistentHistoryTransactionModifiers
+0x1ee1b3c48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPersistentHistoryUtilities
+0x1ee1b4c10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPerson
+0x1ef6a0328  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPersonContactInfoMigrator
+0x1ef6a9338  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPersonInfoManager
+0x1ef6a3000  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPersonJournalEntryPayload
+0x1ee1b4be8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPersonReference
+0x1ee1b3ba8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPersonalEnvironmentAttributes
+0x1ee1b45d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPhotoAnalysisAssetAttributes
+0x1ef69a9f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoAnalysisExecutiveService
+0x1ef6aab20  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoAnalysisMomentGraphService
+0x1ef6a0300  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoAnalysisPersonSuggestion
+0x1ef6a9310  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoAnalysisPhotoLibraryService
+0x1ee1b2d70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPhotoAnalysisServiceClient
+0x1ef6ab160  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoAnalysisServiceClientSideService
+0x1ef6ab138  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoAnalysisServiceRemoteServiceProxy
+0x1ef6a02d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoAnalysisTestService
+0x1ef69a9c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoAnalysisWallpaperService
+0x1ef6a02b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoBakedThumbnails
+0x1ef6a0288  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoDerivativeUtilities
+0x1ef6aa0a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoEditExportProperties
+0x1ef6a92e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoEditImportProperties
+0x1ef6aaaf8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoEditPersistenceManager
+0x1ef6a92c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoEditRenderer
+0x1ef6a9298  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoEditSource
+0x1ef6a9270  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoEffect
+0x1ef6a9248  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoKitVariationCache
+0x1ee1b5f98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPhotoLibrary
+0x1ef69a9a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoLibraryAttributesChangeRequestServiceHandler
+0x1ef69f540  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoLibraryAttributesChanges
+0x1ee1b6100  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPhotoLibraryBundle
+0x1ee1b6218  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPhotoLibraryBundleController
+0x1ef69a978  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoLibraryFinder
+0x1ee1b5f70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPhotoLibraryForceExitObserver
+0x1ee1b45a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPhotoLibraryIdentifier
+0x1ef6a0260  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoLibraryImportValidation
+0x1ef6a2fd8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotoLibraryOpener
+0x1ee1b6010  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPhotoLibraryOptions
+0x1ee1b44b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPhotoLibrarySearchCriteria
+0x1ee1b2cd0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPhotoSharingHelper
+0x1ee1b4bc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPhotoStreamAlbum
+0x1ee1b2b18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPhotoStreamsHelper
+0x1ee1b4b98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPhotosHighlight
+0x1ef6a2fb0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotosHighlightCluster
+0x1ef6a2f88  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotosHighlightClusterGenerator
+0x1ef6a2f60  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotosHighlightGenerator
+0x1ef6a2f38  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotosHighlightTitleGenerator
+0x1ef69f518  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotosKnowledgeGraphAvailabilityStatus
+0x1ef6a0238  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPhotosStateLog
+0x1ef6a0210  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPlaceholderImage
+0x1ef6a01e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPlaceholderThumbnailManager
+0x1ef69a950  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPositionalTableOptimizer
+0x1ef6992f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPositionalTableOptimizerSwapRequest
+0x1ef6992d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPositionalTableOptimizerSwapRequests
+0x1ef6a2f10  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPrefetchConfiguration
+0x1ef6a2ee8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPrefetchResourceIdentifier
+0x1ef6ab110  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPreheatItem
+0x1ee1b37e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPrimaryResourceDataStore
+0x1ee1b2af0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPrimaryResourceDataStoreDataRecipe
+0x1ef6ab0e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPrimaryResourceDataStoreDeferredProcessingRecipe
+0x1ef6aaad0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPrimaryResourceDataStoreFilePathKey
+0x1ee1b3068  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPrimaryResourceDataStoreFileThumbnailRecipe
+0x1ee1b3310  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPrimaryResourceDataStoreImageRecipe
+0x1ee1b37c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPrimaryResourceDataStoreKey
+0x1ee1b3798  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPrimaryResourceDataStoreKeyHelper
+0x1ef6ab4a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPrimaryResourceDataStoreLocalVideoKeyFrameRecipe
+0x1ef6a2ec0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPrimaryResourceDataStoreReferenceFileKey
+0x1ee1b3770  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPrimaryResourceDataStoreUniformFileKey
+0x1ef6aa080  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPrimaryResourceDataStoreVideoRecipe
+0x1ef6a2e98  __AUTH,__objc_data  _OBJC_METACLASS_$_PLProcessAssertion
+0x1ee1b2c30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLProgressFollower
+0x1ee1b4b70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLProjectAlbum
+0x1ef6a2e70  __AUTH,__objc_data  _OBJC_METACLASS_$_PLProjectAlbumJournalEntryPayload
+0x1ee1b3540  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPropertyIndexMapping
+0x1ef6a01c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPropertyListFilter
+0x1ee1b4b48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLPropertyListFromDataTransformer
+0x1ef6a0198  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPropertyValidationRule
+0x1ef6a0170  __AUTH,__objc_data  _OBJC_METACLASS_$_PLPublishCloudSharedAssetsJob
+0x1ef6ab480  __AUTH,__objc_data  _OBJC_METACLASS_$_PLQueryChangeDetectionCriteria
+0x1ee1b39a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLQueryHandler
+0x1ee1b4b20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLQuestion
+0x1ef6a2e48  __AUTH,__objc_data  _OBJC_METACLASS_$_PLQuickActionManager
+0x1ef6a2e20  __AUTH,__objc_data  _OBJC_METACLASS_$_PLQuotaRequest
+0x1ef69a928  __AUTH,__objc_data  _OBJC_METACLASS_$_PLReadyForAnalysis
+0x1ef6a2df8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRebuildJournalManager
+0x1ef6a0148  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRebuildUserNotification
+0x1ef6a2dd0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRebuildableDirectory
+0x1ee1b4af8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLRectValueFromDataTransformer
+0x1ef6a2da8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRegionsClustering
+0x1ef6a2d80  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRegionsDensityClustering
+0x1ef6a2d58  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRelationshipOrderKeyManager
+0x1ef6a2d30  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRelationshipOrderingState
+0x1ef6a0120  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRemoteDiagnosticsClient
+0x1ef6a00f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLReplaceAssetsWithCameraRollCopiesJob
+0x1ef6a00d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLResourceChooser
+0x1ee1b3748  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLResourceDataStore
+0x1ee1b3720  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLResourceDataStoreKey
+0x1ee1b3040  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLResourceDataStoreManager
+0x1ef6a2d08  __AUTH,__objc_data  _OBJC_METACLASS_$_PLResourceDataStoreOptions
+0x1ef6a2ce0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLResourceGenerator
+0x1ee1b2e88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLResourceIdentityXPC
+0x1ef6a2cb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLResourceInstaller
+0x1ef6a2c90  __AUTH,__objc_data  _OBJC_METACLASS_$_PLResourceLocalAvailabilityRequestOptions
+0x1ef6aa058  __AUTH,__objc_data  _OBJC_METACLASS_$_PLResourceModelValidationError
+0x1ee1b32e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLResourceRecipe
+0x1ef69a900  __AUTH,__objc_data  _OBJC_METACLASS_$_PLResourceRecipeGenerationOptions
+0x1ef6992a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLResourceUploadJobStateMachine
+0x1ef6aaaa8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLResourceXPCMakeAvailableRequest
+0x1ef6aaa80  __AUTH,__objc_data  _OBJC_METACLASS_$_PLResourceXPCRequest
+0x1ef6aaa58  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRevGeoCompoundNameInfo
+0x1ef6a9220  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRevGeoLocationHelper
+0x1ef6ab0c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRevGeoLocationInfo
+0x1ef6aaa30  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRevGeoMapItem
+0x1ef6aaa08  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRevGeoMapItemAdditionalPlaceInfo
+0x1ef6aa9e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRevGeoPlace
+0x1ef6a00a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRevGeoPlaceAnnotation
+0x1ef6aa9b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRevGeoPlaceInfo
+0x1ef6a2c68  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRoutineService
+0x1ef69a8d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLRoutineServiceResult
+0x1ef6a0080  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSMetadataUtilities
+0x1ef6a91f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSamplingClustering
+0x1ee1b4ad0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLSceneClassification
+0x1ee1b4aa8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLSceneprint
+0x1ef699280  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSchemaUpgradeUserNotification
+0x1ef6a91d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLScopedSearchUtilities
+0x1ef69a8b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchDonationProgress
+0x1ef69a888  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchDonationProgressVersionProvider
+0x1ef6a0058  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchEntity
+0x1ef69a860  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchEntityIndexingContainer
+0x1ef69a838  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchEntityRelationToPerson
+0x1ef6aa990  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexConfiguration
+0x1ef69a810  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexContentClassificationTaxonomy
+0x1ef69a7e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexCountrySynonymProvider
+0x1ef6a2c40  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexDateFormatter
+0x1ef69a7c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexPendingWorkItem
+0x1ef6a91a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexSceneTaxonomy
+0x1ef6a9180  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexSceneTaxonomyProvider
+0x1ef69a798  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexingAccessManager
+0x1ef69a770  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexingContext
+0x1ef69a748  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexingEmbeddingsFetcher
+0x1ef69a720  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexingEngine
+0x1ef69a6f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexingEngineLibraryServicesProvider
+0x1ef69a6d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexingEvent
+0x1ef69a6a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexingIncrementalUpdateBatch
+0x1ef69a680  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexingIncrementalUpdateEngine
+0x1ef69a658  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexingLazyFetchHelper
+0x1ef699028  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexingMessagesFetcher
+0x1ef69a630  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexingNormalizedWorkItem
+0x1ef69a608  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchIndexingRebuildEngine
+0x1ee1b3c20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLSearchInitialSuggestion
+0x1ef69a5e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchManagedObjectUtilities
+0x1ef6a9158  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchOCRTextLine
+0x1ef6a9130  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchOCRTextLineCandidate
+0x1ef6a9108  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchOCRUtilities
+0x1ef699258  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchPIRUtilities
+0x1ef69a5b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchSpotlightSandboxExtension
+0x1ef6a90e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchStore
+0x1ef6a0030  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchSuggestion
+0x1ef6a2c18  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchSuggestionCandidate
+0x1ef69a590  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchSuggestionCandidateFilter
+0x1ef6a90b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchSuggestionComponent
+0x1ef6a2bf0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchSuggestionDateUtility
+0x1ef6a0008  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchSuggestionMeaningUtility
+0x1ef69ffe0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchSuggestionSceneUtility
+0x1ef69ffb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchSuggestionSeasonUtility
+0x1ef6a2bc8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchSuggestionTemplate
+0x1ef69ff90  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchSuggestionTemplateGenerator
+0x1ef6a2ba0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchSuggestionTemplateProvider
+0x1ef69a568  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSearchThumbnailMap
+0x1ef6a9090  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSeasonsUtilities
+0x1ef6a2b78  __AUTH,__objc_data  _OBJC_METACLASS_$_PLServerChangePublisher
+0x1ef6a2b50  __AUTH,__objc_data  _OBJC_METACLASS_$_PLServerPhotoLibraryBundle
+0x1ee1b4a80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLShare
+0x1ee1b4a58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLShareParticipant
+0x1ee1b3b80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLShareParticipantValueTransformer
+0x1ee1b3bf8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLSharePost
+0x1ef699000  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSharedAlbumsActivityKVSListener
+0x1ef6a2b28  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSharedAssetsContainerIncrementalChange
+0x1ef69a540  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSharedAssetsContainerIncrementalChangeContainer
+0x1ef6a2b00  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSharedAssetsContainerIncrementalChangeHighlightContainerChange
+0x1ee1b3fe0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLSharedManagedObjectContext
+0x1ee1b3018  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLSharedStreamsDataStore
+0x1ef6a2ad8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSharedStreamsDataStoreKey
+0x1ef69ff68  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSharedStreamsValidatedExternalResource
+0x1ef69ff40  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSidecarFinder
+0x1ef69ff18  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSimpleAlbum
+0x1ef69fef0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSimpleAlbumList
+0x1ef69fec8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSlalomUtilities
+0x1ef6ab458  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSocialGroup
+0x1ef69f4f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSocialGroupAssetContainment
+0x1ef69f4c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSocialGroupAssetContainmentResult
+0x1ef69a518  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSocialGroupJournalEntryPayload
+0x1ef69a4f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSocialGroupPayloadAdapter
+0x1ef69fea0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSortedAlbumList
+0x1ef69fe78  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSortedAlbumListChangeNotification
+0x1ee1b2ff0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLSortedChangedObjects
+0x1ef69fe50  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSpatialOverCaptureInformation
+0x1ef6a2ab0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSpotlightAlbumTranslator
+0x1ef6a2a88  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSpotlightAssetTranslator
+0x1ef699230  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSpotlightCollectionShareTranslator
+0x1ef6ab430  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSpotlightDonationUtilities
+0x1ef6a2a60  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSpotlightHighlightTranslator
+0x1ef6a2a38  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSpotlightMemoryTranslator
+0x1ef699208  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSpotlightPersonTranslator
+0x1ef6991e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSpotlightQueryUtilities
+0x1ef69a4c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSpotlightReindexing
+0x1ef6a2a10  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSpotlightTranslatorUtilities
+0x1ef69fe28  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSqliteQueryPlan
+0x1ef69fe00  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSqliteQueryPlanNode
+0x1ef69fdd8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLStreamShareSource
+0x1ef69fdb0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSubstandardPhotoEditSource
+0x1ee1b4a30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLSuggestion
+0x1ef69f4a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSuggestionComputeJournalEntryPayload
+0x1ef69a4a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSuggestionComputePayloadAdapter
+0x1ef6a29e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSyncCancellingProgress
+0x1ef69fd88  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSyncSaveJob
+0x1ef69fd60  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSynchronousPhotoLibraryExecutionContext
+0x1ef69a478  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSyndicationDeleteEngine
+0x1ef6a29c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSyndicationIngestMutex
+0x1ee1b32c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLSyndicationResourceDataStore
+0x1ef6ab8b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSyndicationResourceFileCoordinator
+0x1ef69a450  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSyndicationResourcePrefetchEngine
+0x1ef6a2998  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSyndicationSanitizedResourceGenerator
+0x1ef69a428  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSyndicationSyncEngine
+0x1ef69a400  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSyndicationSyncServiceWrapper
+0x1ef69a3d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSyndicationSyncWorkItem
+0x1ef6a2970  __AUTH,__objc_data  _OBJC_METACLASS_$_PLSyndicationValidatedExternalResource
+0x1ef6aa030  __AUTH,__objc_data  _OBJC_METACLASS_$_PLTCCObserver
+0x1ef6a2948  __AUTH,__objc_data  _OBJC_METACLASS_$_PLTableThumbnailEncoder
+0x1ef6a2920  __AUTH,__objc_data  _OBJC_METACLASS_$_PLTableThumbnailEncoderResult
+0x1ef6a28f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLTableThumbnailMigrator
+0x1ee1b2fc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLTableThumbnailVirtualResource
+0x1ee1b35e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLTaggedPointerDataStoreKey
+0x1ef69fd38  __AUTH,__objc_data  _OBJC_METACLASS_$_PLTemporaryImageTable
+0x1ef69f478  __AUTH,__objc_data  _OBJC_METACLASS_$_PLTextEmbeddingResultWithBiasScale
+0x1ef69f450  __AUTH,__objc_data  _OBJC_METACLASS_$_PLTextEmbeddingService
+0x1ef69a3b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLTextEmbeddingServiceOptions
+0x1ef69f428  __AUTH,__objc_data  _OBJC_METACLASS_$_PLTextUnderstandingIdentificationDocument
+0x1ee1b2e60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLThumbFileManager
+0x1ee1b2fa0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLThumbnailCascadingDownscaleContext
+0x1ee1b2f78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLThumbnailContextCleanupTimer
+0x1ef69a388  __AUTH,__objc_data  _OBJC_METACLASS_$_PLThumbnailFragmentationMetrics
+0x1ef69a360  __AUTH,__objc_data  _OBJC_METACLASS_$_PLThumbnailGenerationOptions
+0x1ef6a28d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLThumbnailIndexes
+0x1ee1b3950  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLThumbnailManager
+0x1ef6a28a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLThumbnailMigratorWorkItem
+0x1ef69a338  __AUTH,__objc_data  _OBJC_METACLASS_$_PLThumbnailOrderednessMetrics
+0x1ee1b36f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLThumbnailResourceDataStore
+0x1ee1b36d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLThumbnailResourceDataStoreKey
+0x1ee1b2f50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLThumbnailResourceDataStoreTableRecipe
+0x1ef6a2880  __AUTH,__objc_data  _OBJC_METACLASS_$_PLThumbnailUtilities
+0x1ef6a2858  __AUTH,__objc_data  _OBJC_METACLASS_$_PLTimeSpanClustering
+0x1ef69fd10  __AUTH,__objc_data  _OBJC_METACLASS_$_PLTimedDispatchGroup
+0x1ef69fce8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLTimedDispatchGroupEnterSession
+0x1ee1b4030  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLTransientInternalResource
+0x1ee1b4a08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLTransientManagedObjectContext
+0x1ef6a2830  __AUTH,__objc_data  _OBJC_METACLASS_$_PLTransientOrderKey
+0x1ef6a2808  __AUTH,__objc_data  _OBJC_METACLASS_$_PLTrip
+0x1ef6a27e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLTripProcessor
+0x1ef69fcc0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLURL
+0x1ef6abac0  __AUTH,__data  _OBJC_METACLASS_$_PLURLSessionLaunchEventListener
+0x1ee1b49e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLUUIDStringFromUUIDDataTransformer
+0x1ee1b3630  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLUniformTypeIdentifier
+0x1ee1b3478  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLUniformTypeIdentifierIntegratedLookup
+0x1ef6a9068  __AUTH,__objc_data  _OBJC_METACLASS_$_PLUnintendedChangeChecker
+0x1ee1b49b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLUnmanagedAdjustment
+0x1ee1b4990  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLUpdatedOrderKeys
+0x1ef6aa008  __AUTH,__objc_data  _OBJC_METACLASS_$_PLUserActivityDaemonJob
+0x1ee1b4968  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLUserFeedback
+0x1ef69a310  __AUTH,__objc_data  _OBJC_METACLASS_$_PLUtilityAsset
+0x1ef69a2e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLUtilityAssetClassification
+0x1ef69a2c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLUtilityAssetPool
+0x1ef6a27b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLValidatedExternalCloudResource
+0x1ee1b2f28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLValidatedExternalResource
+0x1ef6a2790  __AUTH,__objc_data  _OBJC_METACLASS_$_PLVideoChoosingAndAvailabilitySupport
+0x1ef6a9040  __AUTH,__objc_data  _OBJC_METACLASS_$_PLVideoEditSource
+0x1ef6a2768  __AUTH,__objc_data  _OBJC_METACLASS_$_PLVideoInternalResource
+0x1ef6a2740  __AUTH,__objc_data  _OBJC_METACLASS_$_PLVideoInternalResourceContext
+0x1ef6a2718  __AUTH,__objc_data  _OBJC_METACLASS_$_PLVideoPlaybackResourceChoiceOptimizer
+0x1ef6991b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLVideoStreamingResourceChoiceOptimizer
+0x1ef69fc98  __AUTH,__objc_data  _OBJC_METACLASS_$_PLVideoTranscoder
+0x1ee1b2f00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLVirtualResource
+0x1ee1b4580  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLVisualSearchAttributes
+0x1ef6a9018  __AUTH,__objc_data  _OBJC_METACLASS_$_PLWarningHelper
+0x1ef6a26f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLXPCCoder
+0x1ef6a26c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PLXPCPhotoLibraryStoreContainer
+0x1ee1b3298  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLXPCPhotoLibraryStoreEndpointFactory
+0x1ef69fc70  __AUTH,__objc_data  _OBJC_METACLASS_$_PLXPCPhotoLibraryStorePolicyAlways
+0x1ee1b4940  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PLXPCPhotoLibraryStorePolicySandbox
+0x1ef6a26a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PLXPCPhotoLibraryStoreServerRequestHandlingPolicy
+0x1ef6a2678  __AUTH,__objc_data  _OBJC_METACLASS_$_PLYearGroupingRule
+0x1ef69fc48  __AUTH,__objc_data  _OBJC_METACLASS_$_PLiCPLTransferProgress
+0x1ef6a2650  __AUTH,__objc_data  _OBJC_METACLASS_$_PSIAsset
+0x1ef6a2628  __AUTH,__objc_data  _OBJC_METACLASS_$_PSICachedGroup
+0x1ef6a2600  __AUTH,__objc_data  _OBJC_METACLASS_$_PSICollection
+0x1ef6aa968  __AUTH,__objc_data  _OBJC_METACLASS_$_PSIDatabase
+0x1ef6aa940  __AUTH,__objc_data  _OBJC_METACLASS_$_PSIDate
+0x1ef6aa918  __AUTH,__objc_data  _OBJC_METACLASS_$_PSIDateFilter
+0x1ef6aa8f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PSIGroup
+0x1ef6a25d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PSIGroupCache
+0x1ef6a25b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PSIIndexToken
+0x1ef69fc20  __AUTH,__objc_data  _OBJC_METACLASS_$_PSIInitialSuggestion
+0x1ef69fbf8  __AUTH,__objc_data  _OBJC_METACLASS_$_PSIInitialSuggestionIdentifier
+0x1ef6aa8c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PSIIntArray
+0x1ef699190  __AUTH,__objc_data  _OBJC_METACLASS_$_PSILazyIdContainer
+0x1ef6a2588  __AUTH,__objc_data  _OBJC_METACLASS_$_PSIObject
+0x1ef6a9fe0  __AUTH,__objc_data  _OBJC_METACLASS_$_PSIQueryPlaceToken
+0x1ee1b3450  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSIQueryToken
+0x1ef69fbd0  __AUTH,__objc_data  _OBJC_METACLASS_$_PSIRankedGroup
+0x1ef6a2560  __AUTH,__objc_data  _OBJC_METACLASS_$_PSIRankedGroupV2
+0x1ef6aa8a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PSIReusableObject
+0x1ef6aa878  __AUTH,__objc_data  _OBJC_METACLASS_$_PSIStatement
+0x1ef69a298  __AUTH,__objc_data  _OBJC_METACLASS_$_PSISuggestionOptions
+0x1ef69a270  __AUTH,__objc_data  _OBJC_METACLASS_$_PSISuggestionQuery
+0x1ef699168  __AUTH,__objc_data  _OBJC_METACLASS_$_PSISuggestionQueryUtilities
+0x1ef69fba8  __AUTH,__objc_data  _OBJC_METACLASS_$_PSISuggestionRanker
+0x1ef6a2538  __AUTH,__objc_data  _OBJC_METACLASS_$_PSISynonym
+0x1ef6a2510  __AUTH,__objc_data  _OBJC_METACLASS_$_PSISynonymRecord
+0x1ef6a8ff0  __AUTH,__objc_data  _OBJC_METACLASS_$_PSITable
+0x1ef6a9fb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PSIToken
+0x1ef6aa850  __AUTH,__objc_data  _OBJC_METACLASS_$_PSITokenizer
+0x1ef69fb80  __AUTH,__objc_data  _OBJC_METACLASS_$_PhotosControlArbitraryPersistentContainer
+0x1ef69fb58  __AUTH,__objc_data  _OBJC_METACLASS_$_PhotosControlCommand
+0x1ef69fb30  __AUTH,__objc_data  _OBJC_METACLASS_$_PhotosControlPhotoLibraryCommand
+0x1ef69fb08  __AUTH,__objc_data  _OBJC_METACLASS_$_TestPLClusterable
+0x1ef69fae0  __AUTH,__objc_data  _OBJC_METACLASS_$_TestPLClusteringDataSet
+0x1ef6a24e8  __AUTH,__objc_data  _OBJC_METACLASS_$__PHVariationInMemoryCachedValue
+0x1ef6a8fc8  __AUTH,__objc_data  _OBJC_METACLASS_$__PLClientTransaction
+0x1ef6a9f90  __AUTH,__objc_data  _OBJC_METACLASS_$__PLDescriptionStyle
+0x1ef69fab8  __AUTH,__objc_data  _OBJC_METACLASS_$__PLExpirableSet
+0x1ef69a248  __AUTH,__objc_data  _OBJC_METACLASS_$__PLForegroundMonitorClient
+0x1ef69fa90  __AUTH,__objc_data  _OBJC_METACLASS_$__PLLazyPreheatData
+0x1ef6a24c0  __AUTH,__objc_data  _OBJC_METACLASS_$__PLPhotoLibraryFileReservation
+0x1ef69fa68  __AUTH,__objc_data  _OBJC_METACLASS_$__PLPlaceholderThumbnailCachedData
+0x1ef6a2498  __AUTH,__objc_data  _OBJC_METACLASS_$__PLServerTransaction
+0x1ef6a8fa0  __AUTH,__objc_data  _OBJC_METACLASS_$__PLSharedStreamsEnablementStateObserver
+0x1ef6aba98  __AUTH,__data  _OBJC_METACLASS_$__TtC20PhotoLibraryServices30PLAssetResourceUploadWorkItems
+0x1ef6aba48  __AUTH,__data  _OBJC_METACLASS_$__TtC20PhotoLibraryServices30PLProvenanceTimestampAnalytics
+0x19927be24  __TEXT,__text  _PAConvertDGCropRectToCICropRect
+0x199263720  __TEXT,__text  _PFSemanticEnhanceSceneDescription
+0x1e0c96178  __DATA_CONST,__const  _PHQueryChangeTrackingFilteringAssetAttributesSubstituteProperty
+0x1e0c96170  __DATA_CONST,__const  _PLAccountStoreDidChangeNotification
+0x1998e7a20  __TEXT,__const  _PLAdditionalAssetAttributesPersonSceneMinConfidenceLevel
+0x1998e7538  __TEXT,__const  _PLAdjustmentFileIngestionOptions
+0x1998e7770  __TEXT,__const  _PLAdjustmentScoreWeight
+0x199709c40  __TEXT,__text  _PLAlbumImportOperationDebugDescription
+0x1992483bc  __TEXT,__text  _PLAlbumNotificationAnyPhotoWasDeleted
+0x199248214  __TEXT,__text  _PLAlbumNotificationPhotoWasAdded
+0x1992483ac  __TEXT,__text  _PLAlbumNotificationPhotoWasDeleted
+0x19924839c  __TEXT,__text  _PLAlbumNotificationPhotoWasUpdated
+0x1e0c96168  __DATA_CONST,__const  _PLAlbumSingletonHashKey
+0x19915f764  __TEXT,__text  _PLAllCloudDeletionKeys
+0x199350ed4  __TEXT,__text  _PLAllowPathInArchivalComponents
+0x1e0c96160  __DATA_CONST,__const  _PLAnalysisCoordinatorMemoriesCreationBGSystemTaskName
+0x1e0c96158  __DATA_CONST,__const  _PLAnalysisCoordinatorSearchIndexingFastPassBGSystemTaskName
+0x1e0c96150  __DATA_CONST,__const  _PLAnalysisStateUpdateLibraryName
+0x1e0c96148  __DATA_CONST,__const  _PLAppPrivateDataBackgroundActionKeyPath
+0x1e0c96140  __DATA_CONST,__const  _PLAppPrivateDataDuplicateProcessingLibraryInterruptMarkerKey
+0x1e0c96138  __DATA_CONST,__const  _PLAppPrivateDataDuplicateSharedLibraryCPLConfigurationFeatureVersionKey
+0x1e0c96130  __DATA_CONST,__const  _PLAppPrivateDataDuplicateSharedLibraryEnabledMarkerKey
+0x1e0c96128  __DATA_CONST,__const  _PLAppPrivateDataLibraryIdentifierKeyPath
+0x1992986ac  __TEXT,__text  _PLApproximateResourceSizeFromScale
+0x199693684  __TEXT,__text  _PLArrayFromEnumeration
+0x19947d124  __TEXT,__text  _PLAssertMinimumCoreDataVersion
+0x1998e7af8  __TEXT,__const  _PLAssetCollectionGeneratorMaximumMomentDuration
+0x199843a2c  __TEXT,__text  _PLAssetComputeSyncPayloadWrapperReadFrom
+0x1e0c96120  __DATA_CONST,__const  _PLAssetContainerDidChangeNotification
+0x1e0c96118  __DATA_CONST,__const  _PLAssetContainerListDidChangeNotification
+0x1e0c96110  __DATA_CONST,__const  _PLAssetCreationIndicatorFilename
+0x1997f0d44  __TEXT,__text  _PLAssetDescriptionTruncatedToMaxByteCount
+0x1998e77a0  __TEXT,__const  _PLAssetFetchBatchSize
+0x199690864  __TEXT,__text  _PLAssetKindPredicateForTaskID
+0x1e0c96108  __DATA_CONST,__const  _PLAssetLibraryGroupURLFieldFilter
+0x1e0c96100  __DATA_CONST,__const  _PLAssetLibraryGroupURLFieldID
+0x1e0c960f8  __DATA_CONST,__const  _PLAssetLibraryGroupURLHost
+0x1e0c960f0  __DATA_CONST,__const  _PLAssetLibraryGroupURLScheme
+0x1998e7772  __TEXT,__const  _PLAssetRatingScoreWeight
+0x1998e7598  __TEXT,__const  _PLAssetResourceUploadCurrentVersion
+0x1e0c960e8  __DATA_CONST,__const  _PLAssetResourceUploadJobCancelledNotification
+0x1e0c960e0  __DATA_CONST,__const  _PLAssetResourceUploadJobCancelledNotificationObjectIDKey
+0x1e0c960d8  __DATA_CONST,__const  _PLAssetResourceUploadJobCancelledNotificationUUIDKey
+0x1e0c960d0  __DATA_CONST,__const  _PLAssetResourceUploadJobConfigurationNotificationBundleIdentifierKey
+0x1e0c960c8  __DATA_CONST,__const  _PLAssetResourceUploadJobConfigurationNotificationObjectIDKey
+0x1e0c960c0  __DATA_CONST,__const  _PLAssetResourceUploadJobConfigurationNotificationUUIDKey
+0x1e0c960b8  __DATA_CONST,__const  _PLAssetResourceUploadJobConfigurationOptionsDeveloperModeEnabled
+0x1e0c960b0  __DATA_CONST,__const  _PLAssetResourceUploadJobConfigurationOptionsPreventsExpensiveNetworkAccess
+0x1e0c960a8  __DATA_CONST,__const  _PLAssetResourceUploadJobConfigurationWillBeDeletedNotification
+0x1998e75a0  __TEXT,__const  _PLAssetResourceUploadMaxAttemptCount
+0x1998e75a8  __TEXT,__const  _PLAssetResourceUploadMaxLimitedAttemptCount
+0x1998e7978  __TEXT,__const  _PLAssetStableHashFetchBatchSize
+0x1e0c960a0  __DATA_CONST,__const  _PLAssetStackProcessingStatusKey
+0x1998e7b18  __TEXT,__const  _PLAssetSyndicationEligibilityAcceptableScoreThreshold
+0x19941af98  __TEXT,__text  _PLAssetTypeForSearchableItem
+0x1e0c96098  __DATA_CONST,__const  _PLAssetsDidChangeNotification
+0x19945e260  __TEXT,__text  _PLAssetsMissingOriginals
+0x199419778  __TEXT,__text  _PLAttachmentIndexFromMessagesSyndicationID
+0x1e0c96090  __DATA_CONST,__const  _PLAutoBugCaptureErrorDomain
+0x1ebb420a0  __DATA,__data  _PLAuxiliaryResourceFilenameMarkerAdjustmentBase
+0x1ebb42098  __DATA,__data  _PLAuxiliaryResourceFilenameMarkerOriginalAdjustment
+0x1ebb42090  __DATA,__data  _PLAuxiliaryResourceFilenameMarkerRender
+0x1ebb42088  __DATA,__data  _PLAuxiliaryResourceFilenameMarkerSecondaryAdjustmentData
+0x1ebb42080  __DATA,__data  _PLAuxiliaryResourceFilenameMarkerSpatialOverCapture
+0x1995e98f8  __TEXT,__text  _PLAzimuthBetweenCoordinates
+0x1995e99b8  __TEXT,__text  _PLAzimuthDistancePairFrom
+0x1e0c96088  __DATA_CONST,__const  _PLBackgroundAssetResourceUploaderSessionPrefix
+0x1e0c96080  __DATA_CONST,__const  _PLBackgroundJobDuplicateProcessEntireLibraryInProgressKey
+0x1e0c96078  __DATA_CONST,__const  _PLBackgroundJobDuplicateProcessEntireLibraryKey
+0x1e0c96070  __DATA_CONST,__const  _PLBackgroundJobPersonSyncFaceCropsWorkItem
+0x1e0c96068  __DATA_CONST,__const  _PLBackgroundJobPersonSyncResetWorkItem
+0x1e0c96060  __DATA_CONST,__const  _PLBackgroundJobPersonSyncResumeMarkerFinished
+0x1e0c96058  __DATA_CONST,__const  _PLBackgroundJobProcessingSetFilename
+0x1e0c96050  __DATA_CONST,__const  _PLBackgroundJobRebuildReason
+0x1996610f8  __TEXT,__text  _PLBackgroundJobSearchIndexingEntitiesFromJobFlags
+0x19963b218  __TEXT,__text  _PLBackgroundJobSearchIndexingEntityIsEligibleForRebuild
+0x1e0c96048  __DATA_CONST,__const  _PLBackgroundJobServiceNeedsProcessingKey
+0x1e0c96040  __DATA_CONST,__const  _PLBackgroundJobSharedAssetContainerUpdateProcessEntireLibraryKey
+0x1e0c96038  __DATA_CONST,__const  _PLBackgroundJobStableHashProcessEntireLibraryKey
+0x1995e2560  __TEXT,__text  _PLBackgroundJobTypeDescription
+0x1998e7ae0  __TEXT,__const  _PLBackgroundJobWorkerMinSignalDelay
+0x1991bf2ec  __TEXT,__text  _PLBackgroundJobWorkerSearchJobFlagsDescription
+0x19952a10c  __TEXT,__text  _PLBackgroundJobWorkerSearchJobFlagsForInsertingAsset
+0x19983b9e0  __TEXT,__text  _PLBackgroundJobWorkerTypeDescription
+0x1994fa0f8  __TEXT,__text  _PLBackgroundMigrationActionQueue
+0x1e0c96030  __DATA_CONST,__const  _PLBackgroundUploadExtensionPointLabel
+0x199661220  __TEXT,__text  _PLBatchSizeForJobFlags
+0x1992eb114  __TEXT,__text  _PLBuildAndSendFinalizationAnalytics
+0x1ebb42078  __DATA,__data  _PLBuiltInGraphLabelCodes
+0x1e0c96028  __DATA_CONST,__const  _PLBuiltInGraphLabelNameActor
+0x1994f9ee8  __TEXT,__text  _PLBumpBackgroundMigrationLibraryURL
+0x1993028fc  __TEXT,__text  _PLCGApplyTransformForOrientation
+0x199302b18  __TEXT,__text  _PLCGDrawImage
+0x199302a7c  __TEXT,__text  _PLCGScaleContext
+0x199302af0  __TEXT,__text  _PLCGTranslateContextToPoint
+0x1995fe6f4  __TEXT,__text  _PLCMMTitleAndSubtitleForTitleAndFallbackDates
+0x1995b0be0  __TEXT,__text  _PLCPLAllowsUnlimitedSyncOverCellular
+0x1e0c96020  __DATA_CONST,__const  _PLCPLAssetAdjustmentFingerprintKey
+0x1e0c96018  __DATA_CONST,__const  _PLCPLAssetHasAdjustmentsKey
+0x1995aff94  __TEXT,__text  _PLCPLDeviceLibraryConfigurationSupportsSharing
+0x19959861c  __TEXT,__text  _PLCPLErrorDebugDescription
+0x1e0c96010  __DATA_CONST,__const  _PLCPLErrorDomain
+0x1995b2b10  __TEXT,__text  _PLCPLHasBeenEnabledForCurrentAccount
+0x1995b2b18  __TEXT,__text  _PLCPLHasBeenWelcomedForCurrentAccount
+0x1995b0324  __TEXT,__text  _PLCPLIsCellularRestricted
+0x1995b02bc  __TEXT,__text  _PLCPLIsExceedingPrimarySyncQuota
+0x1995b0378  __TEXT,__text  _PLCPLIsInAirplaneMode
+0x1995b2644  __TEXT,__text  _PLCPLLocalStorageAvailableForResources
+0x1e0c96008  __DATA_CONST,__const  _PLCPLManagerMaintenanceTaskLastRunDateKey
+0x1995b2ba4  __TEXT,__text  _PLCPLRecordDidNotifyDeleteBehaviorForCurrentAccount
+0x1995b27a8  __TEXT,__text  _PLCPLRecordEnableForCurrentAccount
+0x1995b289c  __TEXT,__text  _PLCPLRecordWelcomeForCurrentAccount
+0x1995b0b68  __TEXT,__text  _PLCPLSetAllowsUnlimitedSyncOverCellular
+0x1995afc30  __TEXT,__text  _PLCPLSetKeepOriginalsEnabled
+0x1995b2b20  __TEXT,__text  _PLCPLShouldNotifyDeleteBehaviorForCurrentAccount
+0x1995b2c70  __TEXT,__text  _PLCPLShouldRequireStorageUpgradeForError
+0x1992459dc  __TEXT,__text  _PLCacheDeleteClientError
+0x1e0c96000  __DATA_CONST,__const  _PLCacheDeleteClientErrorDomain
+0x19944819c  __TEXT,__text  _PLCalculateAreaHash
+0x1991a4cb8  __TEXT,__text  _PLCalculateAreaHashImpl
+0x1e0c95ff8  __DATA_CONST,__const  _PLCameraPreviewImageWellDidChangeNotification
+0x199191a70  __TEXT,__text  _PLCameraPreviewWellAssetUUIDFromPersistedFile
+0x1e0c95ff0  __DATA_CONST,__const  _PLCameraPreviewWellNeedsUpdateUserInfoKey
+0x19918abc4  __TEXT,__text  _PLCameraPreviewWellSupportedOnCurrentDevice
+0x1995b1480  __TEXT,__text  _PLCanEnableCloudPhotoLibrary
+0x1995b14ec  __TEXT,__text  _PLCanEnableCloudPhotoLibraryForAccount
+0x1995b1310  __TEXT,__text  _PLCanEnableSharedStreamsForAccount
+0x19919f0bc  __TEXT,__text  _PLCanIncludeResourceInHints
+0x1e0c95fe8  __DATA_CONST,__const  _PLCancelVideoRemaking
+0x199711b74  __TEXT,__text  _PLCancellableDiscreteProgress
+0x1e0c95fe0  __DATA_CONST,__const  _PLCascadeDonationLastEnabledStateKey
+0x1e0c95fd8  __DATA_CONST,__const  _PLCascadeDonationRequiredKey
+0x19919719c  __TEXT,__text  _PLCentroidForCoordinates
+0x199197964  __TEXT,__text  _PLCentroidForMoments
+0x1e0c95fd0  __DATA_CONST,__const  _PLChangeCountKey
+0x1e0c95fc8  __DATA_CONST,__const  _PLChangeHandlingHighNotification
+0x1e0c95fc0  __DATA_CONST,__const  _PLChangeHandlingLowNotification
+0x1e0c95fb8  __DATA_CONST,__const  _PLChangeHubEventChangeEventsKey
+0x1e0c95fb0  __DATA_CONST,__const  _PLChangeHubEventHistoryTooShortKey
+0x1e0c95fa8  __DATA_CONST,__const  _PLChangeHubEventIndexKey
+0x1e0c95fa0  __DATA_CONST,__const  _PLChangeHubEventKindKey
+0x1e0c95f98  __DATA_CONST,__const  _PLChangeHubEventLastKnownEventIndexKey
+0x1e0c95f90  __DATA_CONST,__const  _PLChangeHubEventSendingNodeUUIDKey
+0x1e0c95f88  __DATA_CONST,__const  _PLChangeHubSyncableEventOnlyKey
+0x1e0c95f80  __DATA_CONST,__const  _PLChangeNotificationCenterDidFinishPostingNotifications
+0x1e0c95f78  __DATA_CONST,__const  _PLChangeNotificationCenterKVOContext
+0x199692c1c  __TEXT,__text  _PLCheckForMediaAnalysisVersionBump
+0x1e0c95f70  __DATA_CONST,__const  _PLClientSideLongLivedFetchWarningsSuppressedKey
+0x1e0c95f68  __DATA_CONST,__const  _PLCloudBatchUploaderFailedToPushAssetNotification
+0x1e0c95f60  __DATA_CONST,__const  _PLCloudBatchUploaderQuarantinedAssetNotification
+0x1994b9278  __TEXT,__text  _PLCloudCopyDefaultSerialQueueAttributes
+0x1e0c95f58  __DATA_CONST,__const  _PLCloudDeletionKeyAlbumGUIDs
+0x1e0c95f50  __DATA_CONST,__const  _PLCloudDeletionKeyAssetGUIDs
+0x1e0c95f48  __DATA_CONST,__const  _PLCloudDeletionKeyFaceCropGUIDs
+0x1994b9180  __TEXT,__text  _PLCloudDeletionKeyForType
+0x1e0c95f40  __DATA_CONST,__const  _PLCloudDeletionKeyInternalResourceUUIDToResourceTypeMappings
+0x1e0c95f38  __DATA_CONST,__const  _PLCloudDeletionKeyMemoryGUIDs
+0x1e0c95f30  __DATA_CONST,__const  _PLCloudDeletionKeyOwnedCollectionShareGUIDs
+0x1e0c95f28  __DATA_CONST,__const  _PLCloudDeletionKeyOwnedLibraryScopeGUIDs
+0x1e0c95f20  __DATA_CONST,__const  _PLCloudDeletionKeyOwnedMomentShareGUIDs
+0x1e0c95f18  __DATA_CONST,__const  _PLCloudDeletionKeyPersonGUIDs
+0x1e0c95f10  __DATA_CONST,__const  _PLCloudDeletionKeyPostGUIDs
+0x1e0c95f08  __DATA_CONST,__const  _PLCloudDeletionKeyReactGUIDs
+0x1e0c95f00  __DATA_CONST,__const  _PLCloudDeletionKeySocialGroupGUIDs
+0x1e0c95ef8  __DATA_CONST,__const  _PLCloudDeletionKeySubscribedCollectionShareGUIDs
+0x1e0c95ef0  __DATA_CONST,__const  _PLCloudDeletionKeySubscribedLibraryScopeGUIDs
+0x1e0c95ee8  __DATA_CONST,__const  _PLCloudDeletionKeySubscribedMomentShareGUIDs
+0x1e0c95ee0  __DATA_CONST,__const  _PLCloudDeletionKeySuggestionGUIDs
+0x1e0c95ed8  __DATA_CONST,__const  _PLCloudDeletionKeyTextCommentGUIDs
+0x1e0c95ed0  __DATA_CONST,__const  _PLCloudDeletionKeyUnknown
+0x1e0c95ec8  __DATA_CONST,__const  _PLCloudDeletionKeyUserFeedbackGUIDs
+0x1e0c95ec0  __DATA_CONST,__const  _PLCloudDisableSyncModeKey
+0x1e0c95eb8  __DATA_CONST,__const  _PLCloudIdentifierComponentMissing
+0x1998e7568  __TEXT,__const  _PLCloudIdentifierReservationLimit
+0x1e0c95eb0  __DATA_CONST,__const  _PLCloudIdentifierSeparatorString
+0x1e0c95ea8  __DATA_CONST,__const  _PLCloudInitialUploadDateKey
+0x19945de5c  __TEXT,__text  _PLCloudLibraryResetModeForDeactivateWithResetMode
+0x1e0c95ea0  __DATA_CONST,__const  _PLCloudPhotoLibraryEnableErrorLocalLibrarySizeInBytesKey
+0x1e0c95e98  __DATA_CONST,__const  _PLCloudPhotoLibraryEnableErrorStorageInfoKey
+0x19918392c  __TEXT,__text  _PLCloudPhotoLibraryKeepOriginalsIsEnabled
+0x1995b0128  __TEXT,__text  _PLCloudPhotoLibraryLocalModeEnabled
+0x1e0c95e90  __DATA_CONST,__const  _PLCloudPhotoLibraryLocalModeEnabledChanged
+0x1995b3748  __TEXT,__text  _PLCloudPhotoLibraryMultiLibarySyncingEnabled
+0x1e0c95e88  __DATA_CONST,__const  _PLCloudPhotoLibraryMultiLibrarySyncingKey
+0x1e0c95e80  __DATA_CONST,__const  _PLCloudPhotoLibraryOriginalDidDownloadNotification
+0x1e0c95e78  __DATA_CONST,__const  _PLCloudPhotoLibraryPauseDidChangeNotification
+0x1e0c95e70  __DATA_CONST,__const  _PLCloudPhotoLibraryQuotaPhotoAndVideoUsageKey
+0x1995b37dc  __TEXT,__text  _PLCloudPhotoLibraryServerCopySupported
+0x1e0c95e68  __DATA_CONST,__const  _PLCloudPhotoLibrarySharedLibraryCPLConfigurationHideSettingKey
+0x1e0c95e60  __DATA_CONST,__const  _PLCloudPhotoLibrarySharedLibraryCPLConfigurationSkipRampCheckKey
+0x1e0c95e58  __DATA_CONST,__const  _PLCloudPhotoLibrarySharedLibraryCanEnableKey
+0x1e0c95e50  __DATA_CONST,__const  _PLCloudPhotoLibrarySharedLibraryCanEnableTimestampKey
+0x1e0c95e48  __DATA_CONST,__const  _PLCloudPhotoLibraryTransferCountsDidChangeNotification
+0x1e0c95e40  __DATA_CONST,__const  _PLCloudPhotoLibraryTransferProgressDidChangeNotification
+0x1ebb420e8  __DATA,__data  _PLCloudRecentlyDeletedDurationDaysPermanent
+0x1e0c95e38  __DATA_CONST,__const  _PLCloudTrackerLastKnownCloudVersionKey
+0x1e0c95e30  __DATA_CONST,__const  _PLCloudTrackerLastKnownTransactionNumberKey
+0x1e0c95e28  __DATA_CONST,__const  _PLCloudTrackerLastKnownTransactionStoreUUIDKey
+0x199301098  __TEXT,__text  _PLClusteringBenchmarkGetMemory
+0x1e0c95e20  __DATA_CONST,__const  _PLCoalescedEventMarker
+0x1998e74f8  __TEXT,__const  _PLCollectionShareCurrentMigrationVersion
+0x1998e7660  __TEXT,__const  _PLCollectionShareKeyAssetThumbnailMaxDataSize
+0x1994c5988  __TEXT,__text  _PLCollectionShareKindDescription
+0x1e0c95e18  __DATA_CONST,__const  _PLCollectionShareMigrationAttributesKeyAssetCount
+0x1e0c95e10  __DATA_CONST,__const  _PLCollectionShareMigrationAttributesKeyMigrationAttemptCount
+0x1e0c95e08  __DATA_CONST,__const  _PLCollectionShareMigrationAttributesKeyMigrationBuildVersion
+0x1e0c95e00  __DATA_CONST,__const  _PLCollectionShareMigrationAttributesKeyMigrationEndDate
+0x1e0c95df8  __DATA_CONST,__const  _PLCollectionShareMigrationAttributesKeyMigrationErrorCode
+0x1e0c95df0  __DATA_CONST,__const  _PLCollectionShareMigrationAttributesKeyMigrationErrorDomain
+0x1e0c95de8  __DATA_CONST,__const  _PLCollectionShareMigrationAttributesKeyMigrationOriginatingAssetCount
+0x1e0c95de0  __DATA_CONST,__const  _PLCollectionShareMigrationAttributesKeyMigrationStartDate
+0x1e0c95dd8  __DATA_CONST,__const  _PLCollectionShareMigrationAttributesKeyMigrationState
+0x1e0c95dd0  __DATA_CONST,__const  _PLCollectionShareMigrationAttributesKeyMigrationVersion
+0x1e0c95dc8  __DATA_CONST,__const  _PLCollectionShareMigrationAttributesKeyScopeIdentifier
+0x1e0c95dc0  __DATA_CONST,__const  _PLCollectionShareMigrationAttributesKeyServerMigrationState
+0x1e0c95db8  __DATA_CONST,__const  _PLCollectionShareMigrationAttributesKeyTargetScopeIdentifier
+0x1e0c95db0  __DATA_CONST,__const  _PLCollectionShareMigrationAttributesKeyTitle
+0x1e0c95da8  __DATA_CONST,__const  _PLCollectionShareMigrationAttributesKeyUUID
+0x1e0c95da0  __DATA_CONST,__const  _PLCollectionShareMigrationValidatorFailureCategoryAsset
+0x1e0c95d98  __DATA_CONST,__const  _PLCollectionShareMigrationValidatorFailureCategoryComment
+0x1e0c95d90  __DATA_CONST,__const  _PLCollectionShareMigrationValidatorFailureCategoryParticipant
+0x1e0c95d88  __DATA_CONST,__const  _PLCollectionShareMigrationValidatorFailureCategoryResource
+0x1e0c95d80  __DATA_CONST,__const  _PLCollectionShareMigrationValidatorFailureCategoryStructural
+0x1e0c95d78  __DATA_CONST,__const  _PLCollectionShareMigrationValidatorFailureDetailCategoryKey
+0x1e0c95d70  __DATA_CONST,__const  _PLCollectionShareMigrationValidatorFailureDetailIdentifierKey
+0x1e0c95d68  __DATA_CONST,__const  _PLCollectionShareMigrationValidatorFailureDetailReasonKey
+0x1e0c95d60  __DATA_CONST,__const  _PLCollectionShareMigrationValidatorFailureDetailsKey
+0x1e0c95d58  __DATA_CONST,__const  _PLCollectionShareSilentMigrationCPLConfigKey
+0x1998e7510  __TEXT,__const  _PLCollectionShareSilentMigrationFailedCleanupHoldback
+0x1998e7500  __TEXT,__const  _PLCollectionShareSilentMigrationFeatureVersion
+0x1e0c95d50  __DATA_CONST,__const  _PLCollectionShareSilentMigrationValidatorCandidateUUIDKey
+0x1e0c95d48  __DATA_CONST,__const  _PLCollectionShareSilentMigrationValidatorTargetUUIDKey
+0x1e0c95d40  __DATA_CONST,__const  _PLCollectionShareUserMigrationCPLConfigKey
+0x1998e7508  __TEXT,__const  _PLCollectionShareUserMigrationFeatureVersion
+0x199711fc4  __TEXT,__text  _PLCommitSQLTransactionAndCloseDB
+0x1998e79a8  __TEXT,__const  _PLComputeCacheBackupFeatureVersion
+0x1e0c95d38  __DATA_CONST,__const  _PLComputeCacheEncryptedArchiveFilename
+0x1998e78a8  __TEXT,__const  _PLComputeCacheInitialSyncBounds
+0x1998e78a0  __TEXT,__const  _PLComputeCacheInvalidAssetCount
+0x1e0c95d30  __DATA_CONST,__const  _PLComputeCachePathComponentBackupCreatedMarker
+0x1e0c95d28  __DATA_CONST,__const  _PLComputeCachePathComponentPrepare
+0x1e0c95d20  __DATA_CONST,__const  _PLComputeCachePathComponentRestore
+0x1998e79a0  __TEXT,__const  _PLComputeCachePolicyAmbientSuggestionSnapshotEntryLimit
+0x1e0c95d18  __DATA_CONST,__const  _PLComputeCachePolicyAmbientSuggestionSnapshotEntryLimitKey
+0x1e0c95d10  __DATA_CONST,__const  _PLComputeCachePolicyAppPrivateDataKeyPath
+0x1e0c95d08  __DATA_CONST,__const  _PLComputeCachePolicyBackupFeatureVersionKey
+0x1e0c95d00  __DATA_CONST,__const  _PLComputeCachePolicyCPLConfigurationKey
+0x1998e7980  __TEXT,__const  _PLComputeCachePolicyMinAssetCount
+0x1e0c95cf8  __DATA_CONST,__const  _PLComputeCachePolicyMinAssetCountKey
+0x1998e7988  __TEXT,__const  _PLComputeCachePolicyMinCloudStorageTier
+0x1e0c95cf0  __DATA_CONST,__const  _PLComputeCachePolicyMinCloudStorageTierKey
+0x1998e7998  __TEXT,__const  _PLComputeCachePolicyMinExpungedAssetCount
+0x1e0c95ce8  __DATA_CONST,__const  _PLComputeCachePolicyMinExpungedAssetCountKey
+0x1998e7990  __TEXT,__const  _PLComputeCachePolicyMinSnapshotTimeInterval
+0x1e0c95ce0  __DATA_CONST,__const  _PLComputeCachePolicyMinSnapshotTimeIntervalKey
+0x1e0c95cd8  __DATA_CONST,__const  _PLComputeCachePolicyRestoreFeatureVersionKey
+0x1998e7898  __TEXT,__const  _PLComputeCacheRestoreAttemptLimit
+0x1e0c95cd0  __DATA_CONST,__const  _PLComputeCacheRestoreCountKey
+0x1998e79aa  __TEXT,__const  _PLComputeCacheRestoreFeatureVersion
+0x1996a9f4c  __TEXT,__text  _PLComputeCacheSnapshotAllowPolicyReason
+0x1996a9f24  __TEXT,__text  _PLComputeCacheSnapshotDenyPolicyReason
+0x1e0c95cc8  __DATA_CONST,__const  _PLComputeSyncDownloadEnabledFeatureVersionConfigurationKey
+0x1e0c95cc0  __DATA_CONST,__const  _PLComputeSyncUploadEnabledFeatureVersionConfigurationKey
+0x1e0c95cb8  __DATA_CONST,__const  _PLComputeSyncUploadPolicyCachedResultKey
+0x1998e77d0  __TEXT,__const  _PLComputeSyncUploadPolicyDefaultMinimumAssetCount
+0x1e0c95cb0  __DATA_CONST,__const  _PLComputeSyncUploadPolicyLastCheckedDateKey
+0x1e0c95ca8  __DATA_CONST,__const  _PLComputeSyncUploadPolicyMinimumAssetCountConfigurationKey
+0x1991ba5ec  __TEXT,__text  _PLConsumeSandboxExtensionsForJobDictionary
+0x1e0c95ca0  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationStateTransitionAssetCountKey
+0x1e0c95c98  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationStateTransitionAttemptCountKey
+0x1e0c95c90  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationStateTransitionElapsedSecondsKey
+0x1e0c95c88  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationStateTransitionEvent
+0x1e0c95c80  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationStateTransitionIsSilentKey
+0x1e0c95c78  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationStateTransitionMigrationEndDateKey
+0x1e0c95c70  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationStateTransitionMigrationStartDateKey
+0x1e0c95c68  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationStateTransitionMigrationVersionKey
+0x1e0c95c60  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationStateTransitionNewStateKey
+0x1e0c95c58  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationStateTransitionOriginatingScopeIdentifierKey
+0x1e0c95c50  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationStateTransitionPartitionTypeKey
+0x1e0c95c48  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationStateTransitionPreviousStateKey
+0x1e0c95c40  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorAssetMismatchCountKey
+0x1e0c95c38  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorCommentMismatchCountKey
+0x1e0c95c30  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorEvent
+0x1e0c95c28  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorIsSilentKey
+0x1e0c95c20  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorLivePhotoFlatteningCountKey
+0x1e0c95c18  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorLivePhotoToVideoCountKey
+0x1e0c95c10  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorMigrationDurationSecondsKey
+0x1e0c95c08  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorMigrationEndDateKey
+0x1e0c95c00  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorMigrationFatalErrorCodeKey
+0x1e0c95bf8  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorMigrationFatalErrorDomainKey
+0x1e0c95bf0  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorMigrationRetryableErrorCodeKey
+0x1e0c95be8  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorMigrationRetryableErrorDomainKey
+0x1e0c95be0  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorMigrationStartDateKey
+0x1e0c95bd8  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorMigrationVersionKey
+0x1e0c95bd0  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorOriginatingMigrationStateKey
+0x1e0c95bc8  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorOriginatingSCAssetCountKey
+0x1e0c95bc0  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorOriginatingSCCommentCountKey
+0x1e0c95bb8  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorOriginatingSCCreationDateKey
+0x1e0c95bb0  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorOriginatingSCLikeCountKey
+0x1e0c95ba8  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorOriginatingSCOwnerHashedPersonIDKey
+0x1e0c95ba0  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorOriginatingSCParticipantCountKey
+0x1e0c95b98  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorOriginatingSCPostCountKey
+0x1e0c95b90  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorOriginatingSCScopeIdentifierKey
+0x1e0c95b88  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorParticipantMismatchCountKey
+0x1e0c95b80  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorPartitionTypeKey
+0x1e0c95b78  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorResourceMismatchCountKey
+0x1e0c95b70  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorStructuralMismatchCountKey
+0x1e0c95b68  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorSuccessKey
+0x1e0c95b60  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorTargetMigrationStateKey
+0x1e0c95b58  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorTargetSCAssetCountKey
+0x1e0c95b50  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorTargetSCCommentCountKey
+0x1e0c95b48  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorTargetSCCreationDateKey
+0x1e0c95b40  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorTargetSCLikeCountKey
+0x1e0c95b38  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorTargetSCParticipantCountKey
+0x1e0c95b30  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorTargetSCPostCountKey
+0x1e0c95b28  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorTargetSCScopeIdentifierKey
+0x1e0c95b20  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorTotalMismatchCountKey
+0x1e0c95b18  __DATA_CONST,__const  _PLCoreAnalyticsCollectionShareMigrationValidatorVideoDownresCountKey
+0x199419ee4  __TEXT,__text  _PLCoreSpotlightSearchableItemsFromSyndicationIdentifiers
+0x1e0c95b10  __DATA_CONST,__const  _PLCreateDefaultAlbumTitle
+0x1e0c95b08  __DATA_CONST,__const  _PLCreateDefaultAlbumUUID
+0x199184868  __TEXT,__text  _PLCreateDownscaledIOSurfaceFromIOSurface
+0x199301e30  __TEXT,__text  _PLCreateImageFromDataWithFormat
+0x1993021ec  __TEXT,__text  _PLCreateImageFromFileWithFormat
+0x199419800  __TEXT,__text  _PLCreateShortLivedSyndicationPhotoLibrary
+0x1994198a8  __TEXT,__text  _PLCreateShortLivedSystemPhotoLibrary
+0x199419810  __TEXT,__text  _PLCreateShortLivedWellKnownPhotoLibrary
+0x199302834  __TEXT,__text  _PLCreateSquareCroppedImage
+0x1993027bc  __TEXT,__text  _PLCreateSquareCroppedImageRef
+0x19977a248  __TEXT,__text  _PLCurationAlgorithmsVersionFromPhotosGraphVersion
+0x1998e75b0  __TEXT,__const  _PLDBSCANClusteringMaximumNumberOfItems
+0x1e0c95b00  __DATA_CONST,__const  _PLDataMigrationBuildVersionKey
+0x1e0c95af8  __DATA_CONST,__const  _PLDataMigrationDateKey
+0x1e0c95af0  __DATA_CONST,__const  _PLDataMigrationDidMigrateBackupFromDifferentDeviceKey
+0x1e0c95ae8  __DATA_CONST,__const  _PLDataMigrationDidRestoreFromBackupKey
+0x1e0c95ae0  __DATA_CONST,__const  _PLDataMigrationDidRestoreFromCloudBackupKey
+0x1e0c95ad8  __DATA_CONST,__const  _PLDataMigrationDidRestoreFromDeviceBackupKey
+0x1e0c95ad0  __DATA_CONST,__const  _PLDataMigrationDidRestoreFromMegaBackupKey
+0x1e0c95ac8  __DATA_CONST,__const  _PLDataMigrationDidRestoreFromiTunesBackupKey
+0x1e0c95ac0  __DATA_CONST,__const  _PLDataMigrationDidUpgradeKey
+0x19916c328  __TEXT,__text  _PLDataStoreClassForID
+0x199169cb4  __TEXT,__text  _PLDataStoreForClassIDAndLibraryID
+0x199298d18  __TEXT,__text  _PLDataStoreHasClassID
+0x1ebb42068  __DATA,__data  _PLDatabaseContextNameCPLLibrary
+0x1ebb42060  __DATA,__data  _PLDatabaseContextNameMomentLibrary
+0x19934a2d8  __TEXT,__text  _PLDateIsApproximatelyEqual
+0x19934a35c  __TEXT,__text  _PLDateIsGreaterThanOrEqual
+0x1e0c95ab8  __DATA_CONST,__const  _PLDateOfLastExternalAvailabilitySignalKey
+0x1e0c95ab0  __DATA_CONST,__const  _PLDateRangeFormatterChangedNotification
+0x1e0c95aa8  __DATA_CONST,__const  _PLDateRangeFormatterMonthDelimiter
+0x1998e776e  __TEXT,__const  _PLDateTimezoneLocationScoreWeight
+0x1991875b4  __TEXT,__text  _PLDateToISO8160StringWithLocalTimeZone
+0x19934a3d0  __TEXT,__text  _PLDateToISO8601StringWithTimeZone
+0x199254e78  __TEXT,__text  _PLDebugDescriptionForAggregateProcessedLocationType
+0x1995e4e68  __TEXT,__text  _PLDebugStringForCSSceneType
+0x19960a198  __TEXT,__text  _PLDebugStringForPLSearchSuggestionCategoriesType
+0x19940c390  __TEXT,__text  _PLDebugStringForSearchIndexCategory
+0x199771520  __TEXT,__text  _PLDebugStringForSearchSuggestionTemplateContentType
+0x19921d5bc  __TEXT,__text  _PLDebugStringForSearchSuggestionTemplateDateType
+0x1994da2ac  __TEXT,__text  _PLDebugStringForSuggestionMatchType
+0x1994da284  __TEXT,__text  _PLDebugStringForSuggestionType
+0x19960a1bc  __TEXT,__text  _PLDebugStringsForPLSearchSuggestionCategoriesTypes
+0x1998e7790  __TEXT,__const  _PLDefaultLocationValue
+0x1e0c95aa0  __DATA_CONST,__const  _PLDeferredFinalizationAffectedRecipesKey
+0x1e0c95a98  __DATA_CONST,__const  _PLDeferredFinalizationMutatedMocKey
+0x1e0c95a90  __DATA_CONST,__const  _PLDeferredFinalizationStoredRecipesKey
+0x19944d14c  __TEXT,__text  _PLDeferredPhotoFinalizerUseCaseToString
+0x19941c938  __TEXT,__text  _PLDeleteGuestAssetsInLibraryWithManagedObjectContext
+0x1e0c95a88  __DATA_CONST,__const  _PLDemoContentPhotoLibraryPrestageSuffix
+0x1e0c95a80  __DATA_CONST,__const  _PLDemoContentPhotoLibraryStagingDirectory
+0x1e0c95a78  __DATA_CONST,__const  _PLDemoContentPhotoLibraryTemplatePath
+0x1e0c95a70  __DATA_CONST,__const  _PLDemoContentStagingBasePath
+0x1994f9e04  __TEXT,__text  _PLDeregisterBackgroundMigrationLibraryURL
+0x199455880  __TEXT,__text  _PLDescriptionForBackgroundJobServiceState
+0x1994f1048  __TEXT,__text  _PLDescriptionForCSVecDataFormat
+0x1994f106c  __TEXT,__text  _PLDescriptionForCSVecDimensions
+0x19953c81c  __TEXT,__text  _PLDescriptionForCriteriaTaskPriority
+0x19953c838  __TEXT,__text  _PLDescriptionForCriteriaTaskPurpose
+0x199611420  __TEXT,__text  _PLDescriptionForLibraryCreateOptions
+0x199839350  __TEXT,__text  _PLDescriptionForLocationOfInterestType
+0x19977a130  __TEXT,__text  _PLDescriptionForMemoryMood
+0x19959061c  __TEXT,__text  _PLDescriptionForPLCPLComputeStateDirection
+0x199254df0  __TEXT,__text  _PLDescriptionForPhotosHighlightCategory
+0x199254da8  __TEXT,__text  _PLDescriptionForPhotosHighlightEnrichmentState
+0x199254d84  __TEXT,__text  _PLDescriptionForPhotosHighlightKind
+0x199254dcc  __TEXT,__text  _PLDescriptionForPhotosHighlightType
+0x199254e40  __TEXT,__text  _PLDescriptionForPhotosHighlightVisibilityState
+0x199254e1c  __TEXT,__text  _PLDescriptionForSharingComposition
+0x199670e4c  __TEXT,__text  _PLDescriptionForUpdateProperties
+0x19946a994  __TEXT,__text  _PLDetectionTraitTypeDescription
+0x1e0c95a68  __DATA_CONST,__const  _PLDeviceRestoreMigrationPostProcessingTokenBuild
+0x1e0c95a60  __DATA_CONST,__const  _PLDeviceRestoreMigrationPostProcessingTokenDate
+0x1e0c95a58  __DATA_CONST,__const  _PLDeviceRestoreMigrationPostProcessingTokenInProgressCounter
+0x1e0c95a50  __DATA_CONST,__const  _PLDeviceRestoreMigrationPostProcessingTokenInProgressHistory
+0x1e0c95a48  __DATA_CONST,__const  _PLDeviceRestoreMigrationPostProcessingTokenModelVersion
+0x1e0c95a40  __DATA_CONST,__const  _PLDeviceRestoreMigrationPostProcessingTokenPID
+0x1e0c95a38  __DATA_CONST,__const  _PLDeviceRestoreMigrationPostProcessingTokenProcess
+0x1e0c95a30  __DATA_CONST,__const  _PLDeviceRestoreMigrationPostProcessingTokenRestoreType
+0x1997bbae4  __TEXT,__text  _PLDiagnosticsEnumerateAllUIStatesUsingBlock
+0x1997bba74  __TEXT,__text  _PLDiagnosticsTitleOfUIState
+0x19916a630  __TEXT,__text  _PLDiffArrays
+0x1995b03cc  __TEXT,__text  _PLDisableCPLIfExited
+0x1998e7788  __TEXT,__const  _PLDuplicateAssetScoreTupleErrorValue
+0x1998e6ff8  __TEXT,__const  _PLDuplicateMergeAssetBatchProcessingCount
+0x1998e7000  __TEXT,__const  _PLDuplicateMergeAssetSaveCount
+0x1998e7008  __TEXT,__const  _PLDuplicateMergeCloudIdentifierBatchProcessingCount
+0x1e0c95a28  __DATA_CONST,__const  _PLDuplicateMergeMarkerSeparator
+0x1998e6ff0  __TEXT,__const  _PLDuplicateProcessingBatchSize
+0x1e0c95a20  __DATA_CONST,__const  _PLDuplicateProcessingStatusKey
+0x1998e6fea  __TEXT,__const  _PLDuplicateProcessorFeatureVersion
+0x1e0c95a18  __DATA_CONST,__const  _PLDuplicateProcessorFeatureVersionConfigurationKey
+0x1998e6fec  __TEXT,__const  _PLDuplicateProcessorSharedLibraryEnabledFeatureVersion
+0x1e0c95a10  __DATA_CONST,__const  _PLDuplicateProcessorSharedLibraryEnabledFeatureVersionConfigurationKey
+0x19945dd58  __TEXT,__text  _PLEnumerateResetCloudLibraryModeWithBlock
+0x1995e50d4  __TEXT,__text  _PLEnumerateSearchStringsForTextUnderstandingDocumentKind
+0x19945d9a4  __TEXT,__text  _PLExifPixelXDimensionFromImageProperties
+0x19945d9fc  __TEXT,__text  _PLExifPixelYDimensionFromImageProperties
+0x199691764  __TEXT,__text  _PLExtendedAssetsInHighlightPredicate
+0x1998e7580  __TEXT,__const  _PLExtensionRunningTimeInterval
+0x199723a0c  __TEXT,__text  _PLExtrinsicPhotosPathsOnThisDeviceForDemoBundle
+0x19969f814  __TEXT,__text  _PLFaceCropStateDescription
+0x19969f7e8  __TEXT,__text  _PLFaceCropTypeDescription
+0x1ebb42058  __DATA,__data  _PLFaceMetadataExtension
+0x19919dfd4  __TEXT,__text  _PLFaceRegionRequireFixup
+0x19942707c  __TEXT,__text  _PLFaceTrainingTypeDescription
+0x1998e7774  __TEXT,__const  _PLFavoriteScoreWeight
+0x1e0c95a08  __DATA_CONST,__const  _PLFeatureAvailabilityAllFeaturesEnabledDateKey
+0x1e0c95a00  __DATA_CONST,__const  _PLFeatureAvailabilityConfigFractionOfAllAssetsWithMediaAnalysisInSearchIndexThresholdKey
+0x1e0c959f8  __DATA_CONST,__const  _PLFeatureAvailabilityConfigFractionOfCuratedAssetsWithCaptionsThresholdKey
+0x1e0c959f0  __DATA_CONST,__const  _PLFeatureAvailabilityConfigFractionOfCuratedAssetsWithEmbeddingsInVectorIndexThresholdKey
+0x1e0c959e8  __DATA_CONST,__const  _PLFeatureAvailabilityConfigFractionOfCuratedAssetsWithSceneAnalysisInSearchIndexThresholdKey
+0x1e0c959e0  __DATA_CONST,__const  _PLFeatureAvailabilityConfigFractionOfHighlightsEnrichedThresholdKey
+0x1e0c959d8  __DATA_CONST,__const  _PLFeatureAvailabilityConfigMinimumNumberOfCuratedAssets
+0x1e0c959d0  __DATA_CONST,__const  _PLFeatureAvailabilityConfigNeedsPhotosKnowledgeGraphKey
+0x1e0c959c8  __DATA_CONST,__const  _PLFeatureAvailabilityJobDidFailKey
+0x1e0c959c0  __DATA_CONST,__const  _PLFeatureAvailabilityKey
+0x19981de84  __TEXT,__text  _PLFeatureAvailabilityLexemeEvaluationResultCaptionsAreCurrent
+0x1e0c959b8  __DATA_CONST,__const  _PLFeatureAvailabilityStatusAvailabilityByFeatureKey
+0x1e0c959b0  __DATA_CONST,__const  _PLFeatureAvailabilityStatusProcessingSnapshotDictionaryKey
+0x19963b42c  __TEXT,__text  _PLFeaturesEnabledForCoreAnalyticsReporting
+0x1e0c959a8  __DATA_CONST,__const  _PLFetchRecorderMocUserInfoKeyPreStats
+0x1e0c959a0  __DATA_CONST,__const  _PLFetchRecorderMocUserInfoKeyStatementStartTime
+0x1e0c95998  __DATA_CONST,__const  _PLFetchRecorderUserDefaultsAllLibrariesKey
+0x1e0c95990  __DATA_CONST,__const  _PLFetchRecorderUserDefaultsEnabledKey
+0x1e0c95988  __DATA_CONST,__const  _PLFilePathCPLMasterThumb
+0x1e0c95980  __DATA_CONST,__const  _PLFilePathCPLMed
+```
+First 3,000 of 4,549.
+
+## Private
+
+```
+0x19915ee30  __TEXT,__text  ___70-[PLAssetsdConnectionAuthorization initWithConnection:daemonServices:]_block_invoke_2
+0x19915ee80  __TEXT,__text  +[PLFileDescriptorFuse checkFileDescriptorFuse]
+0x19915ef50  __TEXT,__text  -[PLCPLSettings enabledFeatureDataclasses]
+0x19915efc0  __TEXT,__text  -[PLCPLSettings isCloudPhotoLibraryEnabled]
+0x19915f0a8  __TEXT,__text  ___72-[PLCameraCaptureTaskConstraints startConstrainingTasksWithCoordinator:]_block_invoke
+0x19915f1b8  __TEXT,__text  -[PLManagedObjectContext setPl_basename:]
+0x19915f1c4  __TEXT,__text  ___33-[PLLibraryServicesManager state]_block_invoke
+0x19915f1f8  __TEXT,__text  ___44-[PLLibraryServicesManager currentStateNode]_block_invoke
+0x19915f204  __TEXT,__text  ___89-[PLUpdatedOrderKeys registerForStoreOrderKeyUpdateNotificationFromManagedObjectContext:]_block_invoke
+0x19915f260  __TEXT,__text  -[PLLibraryServicesManager stateSerializationQueue]
+0x19915f268  __TEXT,__text  -[PLPhotoLibraryOptions init]
+0x19915f2c8  __TEXT,__text  ___65+[PLManagedObjectContext _setupInitialQueryGenerationForContext:]_block_invoke
+0x19915f37c  __TEXT,__text  ___65+[PLManagedObjectContext _setupInitialQueryGenerationForContext:]_block_invoke_2
+0x19915f3d8  __TEXT,__text  ___50-[PLManagedObjectContext setupDelegateWithBundle:]_block_invoke
+0x19915f3e4  __TEXT,__text  ___53-[PLManagedObjectContext _directPerformBlockAndWait:]_block_invoke
+0x19915f42c  __TEXT,__text  -[PLManagedObjectContext initWithConcurrencyType:libraryBundle:changeHandlingContainer:coordinator:]
+0x19915f798  __TEXT,__text  ___49-[PLManagedObjectContext updateTransactionAuthor]_block_invoke
+0x19915f894  __TEXT,__text  ___108+[PLPersistentHistoryTransactionModifiers transactionAuthorFromChangeSource:syncChangeMarker:nonCoalescing:]_block_invoke
+0x19915f9b4  __TEXT,__text  __PLIsCloudPhotoLibraryEnabledForCurrentUserWithDataclass
+0x19915fa24  __TEXT,__text  ___76+[PLCascadeUtilities registerSuggestionsPreferenceChangeNotificationHandler]_block_invoke
+0x19915fa2c  __TEXT,__text  -[PLPhotoLibraryOpener .cxx_destruct]
+0x19915fa38  __TEXT,__text  ___PLQUEUE_DISPATCH_IS_CALLING_OUT_TO_DEF_BLOCK__
+0x19915fa58  __TEXT,__text  -[PLConcurrencyLimiter _sync:identifyingBlock:libraryRole:libraryForTelemetry:]
+0x19915fc2c  __TEXT,__text  ___79-[PLConcurrencyLimiter _sync:identifyingBlock:libraryRole:libraryForTelemetry:]_block_invoke
+0x19915fd58  __TEXT,__text  +[PLManagedObjectContext _pl_megamoc_runWithPerformWarningsSuppressed:]
+0x19915fdac  __TEXT,__text  +[PLDatabaseContext newShortLivedLibraryWithName:bundle:]
+0x19915fdbc  __TEXT,__text  -[PLPhotoLibrary pathManager]
+0x19915fdc4  __TEXT,__text  +[PLManagedObject insertInManagedObjectContext:]
+0x19915fe28  __TEXT,__text  ___57-[PLManagedObjectContext pl_performWithOptions:andBlock:]_block_invoke
+0x19915fe6c  __TEXT,__text  -[PLManagedObjectContext pl_wrapperForPerformBlock:]
+0x1991601dc  __TEXT,__text  -[PLBackgroundJobWorkerTypes init]
+0x199160220  __TEXT,__text  ___80-[PLBackgroundJobService signalBackgroundProcessingNeededOnLibrary:workerTypes:]_block_invoke
+0x1991602e4  __TEXT,__text  ___80-[PLBackgroundJobService signalBackgroundProcessingNeededOnLibrary:workerTypes:]_block_invoke_2
+0x199160384  __TEXT,__text  ___74-[PLBackgroundJobService startWatchdogTimerIfNeededWithSourceDescription:]_block_invoke
+0x199160474  __TEXT,__text  +[PLPhotoLibraryBundleController sharedBundleController]
+0x1991604e8  __TEXT,__text  -[PLPhotoLibraryBundleController init]
+0x19916052c  __TEXT,__text  +[PLLibraryServicesManager libraryServicesDelegateClass]
+0x199160538  __TEXT,__text  -[PLPhotoLibraryBundle initWithLibraryURL:bundleController:]
+0x1991610c8  __TEXT,__text  ___61-[PLFileSystemVolumeUnmountMonitor addVolumeUnmountObserver:]_block_invoke
+0x1991610d4  __TEXT,__text  -[PLCPLSettingsObserver initWithLibraryBundle:]
+0x199161298  __TEXT,__text  -[PLCPLSettingsObserver setDelegate:]
+0x1991612a4  __TEXT,__text  -[PLAccountStore init]
+0x199161350  __TEXT,__text  ___60-[PLPhotoLibraryBundle initWithLibraryURL:bundleController:]_block_invoke_5
+0x19916139c  __TEXT,__text  +[PLPhotoLibraryForceExitObserver sharedInstance]
+0x1991613d0  __TEXT,__text  ___53+[PLPhotoLibrary shouldTryFastPathWithLibraryBundle:]_block_invoke
+0x19916142c  __TEXT,__text  -[PLPhotoLibraryBundleController openBundleAtLibraryURL:]
+0x199161434  __TEXT,__text  -[PLFileSystemVolumeUnmountMonitor addVolumeUnmountObserver:]
+0x1991614c8  __TEXT,__text  +[PLAccountStore pl_sharedAccountStore]
+0x1991614fc  __TEXT,__text  ___39+[PLAccountStore pl_sharedAccountStore]_block_invoke
+0x19916152c  __TEXT,__text  +[PLPhotoLibrary newPhotoLibraryWithName:loadedFromBundle:options:error:]
+0x19916174c  __TEXT,__text  +[PLFetchRecorder isCurrentProcessEnabledForRecordingBundle:]
+0x1991618bc  __TEXT,__text  -[PLUpdatedOrderKeys init]
+0x199161914  __TEXT,__text  ___49+[PLPhotoLibraryForceExitObserver sharedInstance]_block_invoke
+0x199161944  __TEXT,__text  -[PLPhotoLibraryForceExitObserver init]
+0x199161b0c  __TEXT,__text  ___47-[PLPhotoLibraryBundle registerPLPhotoLibrary:]_block_invoke
+0x199161b80  __TEXT,__text  ___51-[PLManagedObjectContextDelegate setFetchRecorder:]_block_invoke
+0x199161b8c  __TEXT,__text  ___48-[PLPhotoLibrary _internal_managedObjectContext]_block_invoke
+0x199161b98  __TEXT,__text  ___85-[PLPhotoLibraryBundleController _lookupOrCreateBundleForLibraryURL:replaceExisting:]_block_invoke
+0x199161d08  __TEXT,__text  ___43-[PLAccountStore cachedPrimaryAppleAccount]_block_invoke
+0x199162024  __TEXT,__text  ___67-[PLPersistentContainer sharedPersistentStoreCoordinatorWithError:]_block_invoke
+0x199162104  __TEXT,__text  +[PLPersistentHistoryTransactionModifiers transactionAuthorFromChangeSource:syncChangeMarker:nonCoalescing:]
+0x199162180  __TEXT,__text  -[PLPhotoLibraryPathManager(SQLError) sqliteErrorIndicatorFileExists]
+0x1991621dc  __TEXT,__text  +[PLManagedObjectContext contextForUninitializedPhotoLibrary:automaticallyMerges:automaticallyPinToFirstFetch:]
+0x199162268  __TEXT,__text  ___PLRegisterAttributeTransformers_block_invoke
+0x19916233c  __TEXT,__text  ___60-[PLPhotoLibraryBundle initWithLibraryURL:bundleController:]_block_invoke_2
+0x199162388  __TEXT,__text  ___60-[PLPhotoLibraryBundle initWithLibraryURL:bundleController:]_block_invoke_3
+0x1991623d4  __TEXT,__text  ___60-[PLPhotoLibraryBundle initWithLibraryURL:bundleController:]_block_invoke_4
+0x199162434  __TEXT,__text  ___43+[PLPersistentContainer managedObjectModel]_block_invoke
+0x19916247c  __TEXT,__text  ___46+[PLPersistentContainer managedObjectModelURL]_block_invoke
+0x19916259c  __TEXT,__text  +[PLPhotoSharingHelper sharedStreamsExplictlyDisabledForPhotoLibraryURL:]
+0x1991625e0  __TEXT,__text  +[PLAssetAnalysisState entityName]
+0x1991625ec  __TEXT,__text  +[PLMediaAnalysisAssetAttributes entityName]
+0x1991625f8  __TEXT,__text  ___62-[PLChangeNode publishChangesForDidSaveObjectIDsNotification:]_block_invoke
+0x19916263c  __TEXT,__text  ___56-[PLManagedObjectContextList allContextsNotIdenticalTo:]_block_invoke
+0x19916275c  __TEXT,__text  ___49-[_PLServerTransaction completeTransactionScope:]_block_invoke
+0x1991627ec  __TEXT,__text  -[PLPhotoLibrary setPendingTransactions:]
+0x1991627f4  __TEXT,__text  ___119-[PLCoreDataChangeMerger mergeChangesFromRemoteContextSave:intoAllContextsNotIdenticalTo:debugEvent:completionHandler:]_block_invoke
+0x199162ab4  __TEXT,__text  ___31-[_PLClientTransaction dealloc]_block_invoke
+0x199162b6c  __TEXT,__text  -[PLDelayedSaveActionsDetail .cxx_destruct]
+0x199162d30  __TEXT,__text  -[_PLServerTransaction .cxx_destruct]
+0x199162d78  __TEXT,__text  -[_PLClientTransaction .cxx_destruct]
+0x199162e0c  __TEXT,__text  -[PLClientServerTransaction .cxx_destruct]
+0x199162e5c  __TEXT,__text  -[PLPhotoLibrary .cxx_destruct]
+0x199162f40  __TEXT,__text  -[PLPhotoLibrary dealloc]
+0x19916301c  __TEXT,__text  -[PLManagedObjectContext .cxx_destruct]
+0x199163174  __TEXT,__text  -[PLManagedObjectContextDelegate .cxx_destruct]
+0x1991631ac  __TEXT,__text  -[PLManagedObjectContext dealloc]
+0x19916331c  __TEXT,__text  -[PLCameraCaptureTaskConstraintCoordinator activateCameraSessionTaskConstraints]
+0x199163390  __TEXT,__text  +[PLCameraCaptureTaskConstraints sharedTaskConstraints]
+0x1991633c4  __TEXT,__text  ___80-[PLCameraCaptureTaskConstraintCoordinator activateCameraSessionTaskConstraints]_block_invoke
+0x1991634a8  __TEXT,__text  ___43-[PLPhotoLibrary disableOpportunisticTasks]_block_invoke
+0x19916354c  __TEXT,__text  +[_PLClientTransaction _fdIsolationQueue]
+0x199163580  __TEXT,__text  -[PLBackgroundJobWorkerTypesBuffer .cxx_destruct]
+0x1991635b8  __TEXT,__text  -[_PLServerTransaction dealloc]
+0x199163728  __TEXT,__text  -[_PLClientTransaction dealloc]
+0x199163850  __TEXT,__text  ___79-[PLBackgroundJobService signalBackgroundProcessingNeededOnBundle:workerTypes:]_block_invoke
+0x19916385c  __TEXT,__text  ___48-[PLBackgroundJobWorkerTypesBuffer unionBuffer:]_block_invoke
+0x199163868  __TEXT,__text  -[NSArray(PhotoLibraryServices) _pl_filter:]
+0x19916392c  __TEXT,__text  +[PLConcurrencyLimiter sharedLimiter]
+0x199163974  __TEXT,__text  ___79-[PLChangeHandlingNotificationObserver _workloop_handleLowPriorityNotification]_block_invoke
+0x1991639cc  __TEXT,__text  ___PLQUEUE_DISPATCH_IS_CALLING_OUT_TO_BG_BLOCK__
+0x1991639ec  __TEXT,__text  ___81-[PLBackgroundJobService _inq_submitBackgroundProcessingNeededForBuffer:context:]_block_invoke
+0x1991639fc  __TEXT,__text  ___75-[NSManagedObjectContext(PLManagedObjectContext) pl_resultWithError:block:]_block_invoke
+0x199163a54  __TEXT,__text  -[PLPropertyIndexMapping updatedIndexesForChangedKeys:entityName:withAttributes:relationships:updateBlock:]
+0x199163b60  __TEXT,__text  -[PLPropertyIndexMapping _indexValueForPropertyNames:entityName:indexesByPropertyNamesByEntityNames:]
+0x199163cc4  __TEXT,__text  ___70-[PLGlobalValues _setValueUsingPerformBlockAndWait:responsibleCaller:]_block_invoke_2
+0x199163de0  __TEXT,__text  ___102+[PLPersistentHistoryUtilities fetchTransactionsSinceMarker:withFetchRequest:batchSize:context:error:]_block_invoke
+0x199163e5c  __TEXT,__text  ___81-[PLBackgroundJobService _inq_submitBackgroundProcessingNeededForBuffer:context:]_block_invoke_2
+0x199163e6c  __TEXT,__text  ___93-[PLPropertyIndexMapping recordChangedKeys:forObjectID:inAttributesByOID:relationshipsByOID:]_block_invoke
+0x199163f5c  __TEXT,__text  ___57-[PLGlobalValues setBackgroundJobServiceNeedsProcessing:]_block_invoke
+0x199163fa0  __TEXT,__text  -[PLPhotoLibraryBundle persistentContainer]
+0x199163fa8  __TEXT,__text  ___58-[PLPersistentHistoryChangeDistributor _inq_setLastToken:]_block_invoke
+0x199163ffc  __TEXT,__text  +[PLBackgroundJobWorkItem entityName]
+0x199164008  __TEXT,__text  ___60-[PLPhotoLibraryBundle initWithLibraryURL:bundleController:]_block_invoke_16
+0x199164058  __TEXT,__text  ___62-[PLPersistentHistoryChangeDistributor _advanceTokenToCurrent]_block_invoke
+0x19916414c  __TEXT,__text  +[PLModelMigration currentModelVersion]
+0x199164158  __TEXT,__text  ___73-[PLPersistentHistoryChangeDistributor startObservingRemoteNotifications]_block_invoke
+0x199164194  __TEXT,__text  +[PLModelMigrator currentModelVersion]
+0x1991641a0  __TEXT,__text  -[PLManagedObjectContextDelegate setFetchRecorder:]
+0x199164234  __TEXT,__text  -[PLChangeHandlingNotificationEvent startBeginObserving]
+0x199164264  __TEXT,__text  +[PLManagedObjectContext _pl_megamoc_contextPerformDepthPush]
+0x1991642f0  __TEXT,__text  -[PLChangeHandlingNotificationEvent setKind:]
+0x199164304  __TEXT,__text  ___47-[PLManagedObjectContextDelegate fetchRecorder]_block_invoke
+0x199164328  __TEXT,__text  ___62-[PLManagedObjectContextDelegate photoKitFetchInstrumentation]_block_invoke
+0x19916434c  __TEXT,__text  ___54-[PLManagedObjectContextDelegate photoKitStatsTracker]_block_invoke
+0x199164370  __TEXT,__text  +[PLPhotoLibrary _internalSystemPhotoLibrary]
+0x199164488  __TEXT,__text  -[PLCameraCaptureTaskConstraints startConstrainingTasksWithCoordinator:]
+0x199164550  __TEXT,__text  +[PLModelMigrator shouldPromptUserForLibrarySchemaMismatch]
+0x199164580  __TEXT,__text  -[PLPhotoLibraryBundle pathManager]
+0x19916458c  __TEXT,__text  +[PLPhotoAnalysisAssetAttributes entityName]
+0x199164598  __TEXT,__text  +[PLComputedAssetAttributes entityName]
+0x1991645a4  __TEXT,__text  +[PLSceneClassification entityName]
+0x1991645b0  __TEXT,__text  +[PLDetectedFaceGroup entityName]
+0x1991645bc  __TEXT,__text  +[PLSceneprint entityName]
+0x1991645c8  __TEXT,__text  +[PLDetectedFaceprint entityName]
+0x1991645d4  __TEXT,__text  +[PLCharacterRecognitionAttributes entityName]
+0x1991645e0  __TEXT,__text  +[PLVisualSearchAttributes entityName]
+0x1991645ec  __TEXT,__text  +[PLGlobalKeyValue entityName]
+0x1991645f8  __TEXT,__text  +[PLGraphNodeValue entityName]
+0x199164604  __TEXT,__text  +[PLGraphEdgeValue entityName]
+0x199164610  __TEXT,__text  +[PLGraphLabel entityName]
+0x19916461c  __TEXT,__text  ___75+[PLManagedObjectContext loadingPersistentStoreWithReason:error:workBlock:]_block_invoke
+0x1991646e4  __TEXT,__text  +[PLManagedObjectContext _coreDataWorkWithRetryForReason:error:retryBlock:]
+0x199164974  __TEXT,__text  ___103-[PLPersistentContainer _configurePersistentStoreCoordinator:overrideCurrentModelVersionInStore:error:]_block_invoke
+0x199164a0c  __TEXT,__text  -[PLCoreDataChangeMerger init]
+0x199164af8  __TEXT,__text  -[PLManagedObjectContextList init]
+0x199164b6c  __TEXT,__text  -[PLChangeHandlingNotificationObserver initWithLowPriorityThrottleInterval:targetWorkloop:]
+0x199164d88  __TEXT,__text  _s_dispatch_queue_create_for_notifications
+0x199164e28  __TEXT,__text  ____contextPerformDepthThreadKey_block_invoke
+0x199164e38  __TEXT,__text  ___PLAllCloudDeletionKeys_block_invoke
+0x199164f70  __TEXT,__text  +[_PLClientTransaction _fdResourceSemaphore]
+0x199164fa4  __TEXT,__text  -[PLManagedObjectContext _createDelayedSaveActionsWithTransaction:]
+0x19916500c  __TEXT,__text  -[PLManagedObject didSave]
+0x199165054  __TEXT,__text  -[PLChangeNode publishChangesForDidSaveObjectIDsNotification:]
+0x1991655d4  __TEXT,__text  -[PLDelayedSaveActionsDetail init]
+0x19916560c  __TEXT,__text  ___42-[PLUpdatedOrderKeys isObservingOrderKeys]_block_invoke
+0x199165620  __TEXT,__text  ___49-[PLUpdatedOrderKeys getAndClearUpdatedOrderKeys]_block_invoke
+0x19916568c  __TEXT,__text  +[PLLegacyChangeEventBuilder createXPCDictionaryFromChangedObjectIDs:redundantDeletes:uuidsForCloudDeletion:updatedAttributesByObjectID:updatedRelationshipsByObjectID:updatedOrderKeys:changeSource:syncChangeMarker:]
+0x19916617c  __TEXT,__text  ___215+[PLLegacyChangeEventBuilder createXPCDictionaryFromChangedObjectIDs:redundantDeletes:uuidsForCloudDeletion:updatedAttributesByObjectID:updatedRelationshipsByObjectID:updatedOrderKeys:changeSource:syncChangeMarker:]_block_invoke
+0x19916620c  __TEXT,__text  ___97+[PLClientServerTransaction beginServerTransactionWithToken:changeScopes:pathManager:identifier:]_block_invoke
+0x199166398  __TEXT,__text  -[_PLClientTransaction initWithPathManager:identifier:]
+0x19916645c  __TEXT,__text  -[PLClientServerTransaction initWithPathManager:]
+0x1991664d4  __TEXT,__text  +[PLManagedObjectContext _pl_megamoc_isInPLMocPerform]
+0x199166524  __TEXT,__text  -[PLDelayedSaveActions .cxx_destruct]
+0x199166700  __TEXT,__text  -[_PLClientTransaction setPath:]
+0x199166714  __TEXT,__text  ___45-[_PLServerTransaction _enqueueChangeScopes:]_block_invoke
+0x199166864  __TEXT,__text  ___43-[_PLClientTransaction completeTransaction]_block_invoke
+0x19916691c  __TEXT,__text  +[PLLegacyChangeEvent isEmptyEvent:]
+0x199166b5c  __TEXT,__text  -[PLManagedObjectContext pl_basename]
+0x199166b70  __TEXT,__text  ___61-[PLBackgroundJobService initWithWorkerClasses:statusCenter:]_block_invoke_2
+0x199166b78  __TEXT,__text  -[PLBackgroundJobWorkerTypesBuffer init]
+0x199166bf4  __TEXT,__text  __limiterDepthPop
+0x199166cec  __TEXT,__text  ___110-[PLPersistentHistoryChangeDistributor _inq_distributeNewTransactionsSinceLastTokenWithReason:xpcTransaction:]_block_invoke
+0x199166d8c  __TEXT,__text  ___78-[PLPersistentHistoryChangeDistributor _inq_startObservingRemoteNotifications]_block_invoke
+0x199166dec  __TEXT,__text  ___89-[PLChangeHandlingNotificationObserver _lock_startObservingRemoteNotificationsWithBlock:]_block_invoke
+0x199166e20  __TEXT,__text  ___60-[PLDistributedNotificationHandler registerForNotifications]_block_invoke_2
+0x199166e70  __TEXT,__text  ___61-[PLBackgroundJobService initWithWorkerClasses:statusCenter:]_block_invoke
+0x199166ec0  __TEXT,__text  ___57-[PLChangeHandlingNotificationObserver notificationBlock]_block_invoke
+0x199166ee4  __TEXT,__text  -[PLBackgroundJobWorkerTypesBuffer copyWithZone:]
+0x199166f40  __TEXT,__text  ___87-[PLPersistentHistoryChangeDistributor handleRemoteNotificationOfType:withTransaction:]_block_invoke
+0x199166f68  __TEXT,__text  -[PLChangeHandlingNotificationEvent setNotificationType:]
+0x199166f7c  __TEXT,__text  -[PLPhotoLibrary transactionCompletionHandlers]
+0x199166f84  __TEXT,__text  -[PLPhotoLibraryOpener openPhotoLibraryDatabaseWithAutoUpgrade:autoCreate:error:]
+0x19916783c  __TEXT,__text  -[PLLibraryServicesManager _state]
+0x199167890  __TEXT,__text  -[PLChangeNode connectManagedObjectContext:]
+0x199167914  __TEXT,__text  -[PLPhotoLibraryOptions libraryRole]
+0x19916791c  __TEXT,__text  -[PLChangeHandlingNotificationEvent setThrottleInterval:]
+0x199167930  __TEXT,__text  ___47-[PLBackgroundJobService _inq_setServiceState:]_block_invoke
+0x199167950  __TEXT,__text  -[PLGlobalValues .cxx_destruct]
+0x199167988  __TEXT,__text  -[PLManagedObjectContext photoLibrary]
+0x1991679b0  __TEXT,__text  -[PLChangeHandlingNotificationEvent startPostNotification]
+0x1991679e0  __TEXT,__text  -[PLPhotoLibrary options]
+0x1991679e8  __TEXT,__text  +[PLPhotoLibrary shouldTryFastPathWithLibraryBundle:]
+0x199167aa0  __TEXT,__text  +[PLGenericAlbum entityName]
+0x199167aac  __TEXT,__text  -[PLManagedObjectContextDelegate fetchRecorder]
+0x199167b24  __TEXT,__text  -[PLManagedObjectContextDelegate photoKitFetchInstrumentation]
+0x199167b9c  __TEXT,__text  -[PLManagedObjectContextDelegate photoKitStatsTracker]
+0x199167c14  __TEXT,__text  -[PLManagedObjectContextDelegate setPhotoKitFetchInstrumentation:]
+0x199167ca8  __TEXT,__text  +[PLManagedAlbum entityName]
+0x199167cb4  __TEXT,__text  +[PLFetchingAlbum entityName]
+0x199167cc0  __TEXT,__text  +[PLManagedLegacyFaceAlbum entityName]
+0x199167ccc  __TEXT,__text  +[PLPhotoStreamAlbum entityName]
+0x199167cd8  __TEXT,__text  +[PLDetectedFace entityName]
+0x199167ce4  __TEXT,__text  +[PLPerson entityName]
+0x199167cf0  __TEXT,__text  +[PLFaceCrop entityName]
+0x199167cfc  __TEXT,__text  +[PLPhotosHighlight entityName]
+0x199167d08  __TEXT,__text  +[PLGraphNode entityName]
+0x199167d14  __TEXT,__text  ___83-[PLChangeHandlingNotificationObserver startObservingRemoteNotificationsWithBlock:]_block_invoke
+0x199167d20  __TEXT,__text  +[PLQueryHandler constructQueryFromData:]
+0x199167d6c  __TEXT,__text  -[PLChangeHandlingNotificationEvent setNotificationBlock:]
+0x199167dec  __TEXT,__text  +[PLManagedFolder entityName]
+0x199167df8  __TEXT,__text  ___144+[PLPhotoLibrary(MegaMocAdditions) _withDispatchGroup:onContext:synchronously:shouldSave:refreshAfterSave:performTransaction:completionHandler:]_block_invoke
+0x199167e08  __TEXT,__text  +[PLFetchRequest pl_importantFetchNameForFetchRequest:]
+0x199167e94  __TEXT,__text  +[PLMoment entityName]
+0x199167ea0  __TEXT,__text  +[PLMemory entityName]
+0x199167eac  __TEXT,__text  +[PLSuggestion entityName]
+0x199167eb8  __TEXT,__text  +[PLProjectAlbum entityName]
+0x199167ec4  __TEXT,__text  +[PLLibraryScope entityName]
+0x199167ed0  __TEXT,__text  -[PLCPLSettingsObserver isCloudPhotoLibraryEnabled]
+0x199167f50  __TEXT,__text  -[PLPhotoLibraryPathManager(conveniences) cplLocalModeEnabledMarkerFilePathForReading]
+0x199167f58  __TEXT,__text  -[PLPhotoLibraryPathManager(conveniences) _cplLocalModeEnabledMarkerFilePathCreateIfNeeded:]
+0x199167fcc  __TEXT,__text  -[_PLSharedStreamsEnablementStateObserver init]
+0x19916806c  __TEXT,__text  ___61-[PLPersistentHistoryChangeDistributor beginObservingChanges]_block_invoke
+0x199168120  __TEXT,__text  +[PLGlobalKeyValue setGlobalValue:forKey:managedObjectContext:]
+0x1991681fc  __TEXT,__text  ___70-[PLGlobalValues _setValueUsingPerformBlockAndWait:responsibleCaller:]_block_invoke
+0x19916829c  __TEXT,__text  -[PLPhotoLibraryOptions setRefreshesAfterSave:]
+0x1991682a4  __TEXT,__text  -[PLManagedObjectContextDelegate managedObjectContext:willExecuteFetchRequest:]
+0x199168354  __TEXT,__text  -[PLManagedObjectContext performBlockAndWait:]
+0x199168438  __TEXT,__text  +[PLManagedAsset predicateToExcludeTrashedAssets]
+0x1991684b8  __TEXT,__text  ___49+[PLManagedAsset predicateToExcludeTrashedAssets]_block_invoke
+0x199168508  __TEXT,__text  +[PLManagedAsset predicateToExcludeTrashedAssetsWithTrashedStateKeyPath:]
+0x199168604  __TEXT,__text  ___73+[PLManagedAsset predicateToExcludeTrashedAssetsWithTrashedStateKeyPath:]_block_invoke
+0x19916865c  __TEXT,__text  +[PLGenericAlbum defaultAlbumKindsForFetching]
+0x199168668  __TEXT,__text  ___66-[PLManagedObjectContextDelegate setPhotoKitFetchInstrumentation:]_block_invoke
+0x199168674  __TEXT,__text  +[PLManagedAsset entityName]
+0x199168680  __TEXT,__text  -[PLCacheDeleteRegistration cameraWatcherDidChangeState:]
+0x199168784  __TEXT,__text  -[PLBackgroundJobService _inq_updateCameraForegroundState:]
+0x199168a58  __TEXT,__text  ___38-[PLBackgroundJobService serviceState]_block_invoke
+0x199168a6c  __TEXT,__text  -[PLAssetsdService bindToPhotoLibraryURL:sandboxExtension:clientOptions:withReply:]
+0x199168ccc  __TEXT,__text  -[PLCameraDeferredProcessingCoordinator initWithAssetdClient:]
+0x199168d48  __TEXT,__text  +[PLClientServerTransaction transactionFromUserInfo:]
+0x199168e1c  __TEXT,__text  +[PLManagedObjectContext _pl_megamoc_contextPerformDepthPop]
+0x199168efc  __TEXT,__text  -[PLBackgroundJobWorkItem validateForInsert:]
+0x199168f80  __TEXT,__text  +[PLConversation entityName]
+0x199168f8c  __TEXT,__text  +[PLCloudFeedEntry entityName]
+0x199168f98  __TEXT,__text  +[PLDuplicateAlbum entityName]
+0x199168fa4  __TEXT,__text  +[PLCloudFeedAssetsEntry entityName]
+0x199168fb0  __TEXT,__text  +[PLCloudFeedCommentsEntry entityName]
+0x199168fbc  __TEXT,__text  +[PLImportSession entityName]
+0x199168fc8  __TEXT,__text  +[PLManagedKeyword entityName]
+0x199168fd4  __TEXT,__text  +[PLQuestion entityName]
+0x199168fe0  __TEXT,__text  +[PLCollectionShare entityName]
+0x199168fec  __TEXT,__text  +[PLShareParticipant entityName]
+0x199168ff8  __TEXT,__text  +[PLSharePost entityName]
+0x199169004  __TEXT,__text  +[PLCloudSharedComment entityName]
+0x199169010  __TEXT,__text  +[PLAssetResourceUploadJobConfiguration entityName]
+0x19916901c  __TEXT,__text  +[PLAssetResourceUploadJob entityName]
+0x199169028  __TEXT,__text  -[PLManagedObjectContextDelegate managedObjectContext:didExecuteFetchRequest:withSQLString:bindVariables:rowCount:]
+0x199169130  __TEXT,__text  +[PLMomentShare entityName]
+0x19916913c  __TEXT,__text  +[PLCloudSharedAlbum entityName]
+0x199169148  __TEXT,__text  +[PLManagedObjectContext managedObjectModel]
+0x199169154  __TEXT,__text  +[PLManagedAsset predicateToExcludeHiddenAssets]
+0x199169160  __TEXT,__text  +[PLManagedAsset predicateToExcludeHiddenAssetsWithHiddenKeyPath:]
+0x19916925c  __TEXT,__text  ___66+[PLManagedAsset predicateToExcludeHiddenAssetsWithHiddenKeyPath:]_block_invoke
+0x1991692b0  __TEXT,__text  +[PLManagedAsset predicateToExcludeNonvisibleBurstAssets]
+0x199169330  __TEXT,__text  ___57+[PLManagedAsset predicateToExcludeNonvisibleBurstAssets]_block_invoke
+0x199169380  __TEXT,__text  +[PLManagedAsset predicateToExcludeNonvisibleBurstAssetsWithAvalanchePickTypeKeyPath:]
+0x19916947c  __TEXT,__text  ___86+[PLManagedAsset predicateToExcludeNonvisibleBurstAssetsWithAvalanchePickTypeKeyPath:]_block_invoke
+0x1991694e4  __TEXT,__text  -[PLChangeHandlingNotificationEvent eventDescription]
+0x1991697f0  __TEXT,__text  -[PLChangeHandlingNotificationEvent kind]
+0x199169804  __TEXT,__text  +[PLManagedAsset(RM) enumerateImageRequestHintData:assetWidth:assetHeight:libraryID:startingOffset:assetID:block:]
+0x199169f90  __TEXT,__text  -[PLTaggedPointerDataStoreKey recipeIDForAssetID:]
+0x19916a0ac  __TEXT,__text  ___114+[PLManagedAsset(RM) enumerateImageRequestHintData:assetWidth:assetHeight:libraryID:startingOffset:assetID:block:]_block_invoke
+0x19916a0ec  __TEXT,__text  +[PLPrimaryResourceDataStoreUniformFileKey _fileURLFromKeyStruct:assetID:]
+0x19916a454  __TEXT,__text  -[PLResourceDataStore pathManager]
+0x19916a45c  __TEXT,__text  __fileExtensionFromFileType
+0x19916a604  __TEXT,__text  +[PLGenericAlbum supportsCustomKeyAssetWithAlbumKind:]
+0x19916a618  __TEXT,__text  __pointerComparator
+0x19916af20  __TEXT,__text  -[PLSortedChangedObjects dealloc]
+0x19916af6c  __TEXT,__text  -[PLSortedChangedObjects .cxx_destruct]
+0x19916af78  __TEXT,__text  +[PLManagedObject objectIDDescription]
+0x19916afc0  __TEXT,__text  ___38+[PLManagedObject objectIDDescription]_block_invoke
+0x19916b038  __TEXT,__text  ___52-[PLGlobalValues _getValueUsingPerformBlockAndWait:]_block_invoke
+0x19916b0d4  __TEXT,__text  -[NSManagedObjectContext(PLManagedObjectContext) pl_performBlockAndWait:]
+0x19916b14c  __TEXT,__text  +[PLMemory isUserCreatedMemoryWithUserActionOptions:]
+0x19916b154  __TEXT,__text  ___52-[PLGlobalValues _getValueUsingPerformBlockAndWait:]_block_invoke_2
+0x19916b19c  __TEXT,__text  ___37-[PLGlobalValues featureAvailability]_block_invoke
+0x19916b1bc  __TEXT,__text  ____populateExtensionFileTypeMappings_block_invoke
+0x19916b9d0  __TEXT,__text  -[PLPhotoLibrary thumbnailManager]
+0x19916b9d8  __TEXT,__text  __addExtensionToFileTypeMappingForNonCoreIdentifier
+0x19916bdec  __TEXT,__text  __addExtensionToFileTypeMappingForCoreType
+0x19916c224  __TEXT,__text  -[PLManagedObjectContext isValidForSelector:error:]
+0x19916c410  __TEXT,__text  -[PLResourceDataStore initWithPathManager:]
+0x19916c4dc  __TEXT,__text  ____populateExtensionFileTypeMappings_block_invoke_2
+0x19916c4ec  __TEXT,__text  ___52-[PLThumbnailResourceDataStore initWithPathManager:]_block_invoke
+0x19916c53c  __TEXT,__text  +[PLResourceDataStoreKey refreshSandboxExtensionForURL:assetID:error:]
+0x19916c5d4  __TEXT,__text  -[PLThumbnailCascadingDownscaleContext init]
+0x19916c704  __TEXT,__text  +[PLImageLoadingUtilities canAccessImageForAsset:]
+0x19916c830  __TEXT,__text  +[PLResourceDataStoreKey refreshSandboxExtensionForURL:libraryID:assetUUID:error:]
+0x19916cd00  __TEXT,__text  +[PLThumbnailResourceDataStore keyLengthWithDataPreview:]
+0x19916cd08  __TEXT,__text  +[PLPrimaryResourceDataStoreUniformFileKey keyLengthWithDataPreview:]
+0x19916cd10  __TEXT,__text  +[PLTaggedPointerDataStoreKey keyWithKeyStruct:keyLength:forStoreClassID:inLibraryWithID:]
+0x19916ce6c  __TEXT,__text  ___67-[PLAssetsdInnerService getInnerServiceWithContext:validate:reply:]_block_invoke
+0x19916d0a0  __TEXT,__text  -[PLTaggedPointerDataStoreKey resourceType]
+0x19916d140  __TEXT,__text  ___84-[PLLibraryServicesManager _dispatchAwaitLibraryStateCompletionHandler:group:error:]_block_invoke
+0x19916d184  __TEXT,__text  ___37-[PLLibraryServicesManager activate:]_block_invoke
+0x19916d498  __TEXT,__text  ___70-[PLLibraryServicesManager _awaitLibraryState:sync:completionHandler:]_block_invoke_2
+0x19916d5c4  __TEXT,__text  -[PLPhotoLibrary _internal_managedObjectContext]
+0x19916d63c  __TEXT,__text  ___60-[PLServerPhotoLibraryBundle impl_bindAssetsdService:error:]_block_invoke
+0x19916d6c4  __TEXT,__text  -[PLAssetsdService getResourceAvailabilityServiceWithReply:]
+0x19916d74c  __TEXT,__text  -[PLAssetsdServicePermissions copyWithZone:]
+0x19916d780  __TEXT,__text  -[PLCacheMetricsCollectorServer initWithXPCObject:]
+0x19916d890  __TEXT,__text  -[PLManagedObjectContext _pl_checkForRetainCycleRiskWithFetchRequest:]
+0x19916d990  __TEXT,__text  -[PLCacheMetricsCollectorServerShell setCacheMetricsCollectorServer:]
+0x19916d99c  __TEXT,__text  -[PLServerPhotoLibraryBundle impl_bindAssetsdService:error:]
+0x19916db14  __TEXT,__text  -[PLPhotoLibraryBundle libraryServicesManager]
+0x19916db1c  __TEXT,__text  ___56-[PLAssetsdService makeInnerResourceAvailabilityService]_block_invoke
+0x19916db68  __TEXT,__text  ___121+[PLPhotoLibraryOpener autoCreateWellKnownPhotoLibraryIfNeededWithURL:libraryServicesManager:wellKnownLibraryIdentifier:]_block_invoke
+0x19916db78  __TEXT,__text  -[PLAssetsdServicePermissions .cxx_destruct]
+0x19916db84  __TEXT,__text  -[PLDefaultAssetsdServiceContext .cxx_destruct]
+0x19916dbc8  __TEXT,__text  ___38-[PLPhotoLibraryBundle shutdownReason]_block_invoke
+0x19916dc08  __TEXT,__text  +[PLPhotoLibraryBundleController _realPathForLibraryURL:error:]
+0x19916de7c  __TEXT,__text  ___70-[PLAssetsdConnectionAuthorization initWithConnection:daemonServices:]_block_invoke
+0x19916decc  __TEXT,__text  -[PLAssetsdService getLibraryServiceWithReply:]
+0x19916df54  __TEXT,__text  -[PLCPLSettingsObserver .cxx_destruct]
+0x19916df94  __TEXT,__text  -[PLDefaultAssetsdServiceContext initWithSelector:connection:libraryBundle:connectionAuthorization:]
+0x19916e07c  __TEXT,__text  ___43-[PLAssetsdService makeInnerLibraryService]_block_invoke
+0x19916e0c8  __TEXT,__text  -[PLAssetsdLibraryService openPhotoLibraryDatabaseWithOptions:reply:]
+0x19916e5a8  __TEXT,__text  -[PLAbstractLibraryServicesManagerService libraryServicesManager]
+0x19916e5b0  __TEXT,__text  ___70-[PLAssetsdConnectionAuthorization initWithConnection:daemonServices:]_block_invoke_7
+0x19916e600  __TEXT,__text  -[PLPhotoLibrary managedObjectContext]
+0x19916e6b8  __TEXT,__text  -[PLManagedObjectContext _directPerformBlockAndWait:]
+0x19916e764  __TEXT,__text  -[PLChangeNode initWithLibraryURL:changeMerger:changePublisher:libraryServicesManager:]
+0x19916ea08  __TEXT,__text  -[PLPhotoLibraryBundle makeChangeHandlingNotificationObserverWithLowPriorityThrottleInterval:]
+0x19916ea74  __TEXT,__text  ___60-[PLPhotoLibraryBundle initWithLibraryURL:bundleController:]_block_invoke_15
+0x19916eadc  __TEXT,__text  -[PLPersistentContainer _configurePersistentStoreCoordinator:overrideCurrentModelVersionInStore:error:]
+0x19916f03c  __TEXT,__text  -[PLPhotoLibraryBundle newChangeHandlingContainer]
+0x19916f1b4  __TEXT,__text  -[PLPhotoLibraryBundle libraryURL]
+0x19916f1c0  __TEXT,__text  -[PLChangeHandlingContainer initWithLibraryBundle:changePublisher:libraryServicesManager:persistentStoreCoordinator:]
+0x19916f3d0  __TEXT,__text  -[PLPersistentHistoryChangeDistributor initWithPersistentStoreCoordinator:bundle:changeMerger:]
+0x19916f690  __TEXT,__text  -[PLManagedObjectContext executeFetchRequest:error:]
+0x19916f768  __TEXT,__text  -[PLManagedObjectContext _pl_executeFetchRequest:error:]
+0x19916f918  __TEXT,__text  +[PLSceneClassification batchFetchScenesByAssetObjectIDWithAssetObjectIDs:library:includeTemporalClassifications:sceneClassificationTypePredicate:completion:]
+0x19916fa24  __TEXT,__text  -[PLPhotoLibrary(MegaMocAdditions) performBlockAndWait:]
+0x19916faa4  __TEXT,__text  +[PLPhotoLibrary(MegaMocAdditions) _withDispatchGroup:onContext:synchronously:shouldSave:refreshAfterSave:performTransaction:completionHandler:]
+0x19916fbb8  __TEXT,__text  ___158+[PLSceneClassification batchFetchScenesByAssetObjectIDWithAssetObjectIDs:library:includeTemporalClassifications:sceneClassificationTypePredicate:completion:]_block_invoke
+0x199170434  __TEXT,__text  +[PLAdditionalAssetAttributes entityName]
+0x199170440  __TEXT,__text  -[PLPhotoLibrary pendingTransactions]
+0x199170448  __TEXT,__text  ___74-[PLBackgroundJobService startWatchdogTimerIfNeededWithSourceDescription:]_block_invoke_2
+0x199170460  __TEXT,__text  ___105-[PLBackgroundJobService _fireWatchdogTimerWithStartTime:startingPushBackTimeInterval:sourceDescription:]_block_invoke
+0x199170474  __TEXT,__text  ___84-[PLChangeHandlingNotificationObserver _workloop_suspendIfThrottlingWithDebugEvent:]_block_invoke
+0x1991704d8  __TEXT,__text  -[PLChangeHandlingNotificationEvent reset]
+0x199170570  __TEXT,__text  -[PLBackgroundJobService _fireWatchdogTimerWithStartTime:startingPushBackTimeInterval:sourceDescription:]
+0x199170734  __TEXT,__text  -[PLChangeHandlingNotificationEvent setNotificationPostTimestamp:]
+0x199170748  __TEXT,__text  -[PLChangeHandlingNotificationEvent setDidSuspendLowPriority:]
+0x19917075c  __TEXT,__text  -[PLChangeHandlingNotificationEvent setWasObserving:]
+0x199170770  __TEXT,__text  -[PLChangeHandlingNotificationObserver notifyTokenLow]
+0x1991707a8  __TEXT,__text  -[PLChangeHandlingNotificationEvent startResumeLowPriority]
+0x1991707d8  __TEXT,__text  -[PLChangeHandlingNotificationObserver _workloop_handleThrottleTimer]
+0x1991708a8  __TEXT,__text  -[PLChangeHandlingNotificationObserver _workloop_handleLowPriorityNotification]
+0x199170a58  __TEXT,__text  -[PLConcurrencyLimiter sync:identifyingBlock:library:]
+0x199170ad8  __TEXT,__text  -[PLChangeHandlingNotificationObserver _workloop_suspendIfThrottlingWithDebugEvent:]
+0x199170c64  __TEXT,__text  +[PLConcurrencyLimiter isRunningUnderLimiter]
+0x199170cb4  __TEXT,__text  -[PLConcurrencyLimiter _nextQueueForQoS:libraryRole:]
+0x199170d58  __TEXT,__text  +[PLConcurrencyLimiter(Statistics) reportBlockEnqueued:isNotifyBlock:onQueue:forLibrary:]
+0x199170f2c  __TEXT,__text  -[PLConcurrencyLimiter _callOutForQoS:fromQueue:]
+0x199170fd4  __TEXT,__text  -[PLChangeHandlingNotificationObserver notificationBlock]
+0x19917104c  __TEXT,__text  -[PLManagedObjectContext pl_performWithOptions:andBlock:]
+0x199171170  __TEXT,__text  -[PLPersistentHistoryChangeDistributor _inq_setLastToken:]
+0x199171224  __TEXT,__text  -[PLPhotoLibrary _loadClientDatabaseContextWithOptions:error:]
+0x19917156c  __TEXT,__text  -[PLChangeHandlingNotificationObserver startObservingRemoteNotificationsWithBlock:]
+0x199171638  __TEXT,__text  -[PLChangeHandlingNotificationObserver _lock_startObservingRemoteNotificationsWithBlock:]
+0x199171964  __TEXT,__text  -[PLBackgroundJobService _noteSignalNeededForCrashRecoveryOnBundle:]
+0x199171a24  __TEXT,__text  +[PLDatabaseContext newShortLivedLibraryWithName:libraryRole:bundle:]
+0x199171a2c  __TEXT,__text  -[PLPhotoLibraryOptions setRequiredState:]
+0x199171a34  __TEXT,__text  -[PLPhotoLibrary initWithName:libraryBundle:options:]
+0x199171c84  __TEXT,__text  -[PLPhotoLibraryOptions setLibraryRole:]
+0x199171c8c  __TEXT,__text  -[PLPhotoLibrary _initWithPathManager:]
+0x199171d08  __TEXT,__text  -[PLPhotoLibrary _loadDatabaseContextWithOptions:error:]
+0x199171d94  __TEXT,__text  -[PLPhotoLibrary loadDatabaseWithOptions:error:]
+0x199172368  __TEXT,__text  -[PLPhotoLibrary _loadServerDatabaseContextWithOptions:error:]
+0x19917276c  __TEXT,__text  -[PLPhotoLibraryOptions preventsWaitingForRequiredState]
+0x199172774  __TEXT,__text  -[PLLibraryServicesManager currentStateNode]
+0x1991727ec  __TEXT,__text  -[PLPhotoLibraryOptions automaticallyMergesContext]
+0x1991727f4  __TEXT,__text  -[PLPhotoLibraryBundle registerPLPhotoLibrary:]
+0x199172a3c  __TEXT,__text  +[PLPhotoLibrary(MegaMocAdditions) reportLibraryDidInit:]
+0x199172a5c  __TEXT,__text  -[PLPhotoLibraryOptions requiredState]
+0x199172a64  __TEXT,__text  -[PLLibraryServicesManager state]
+0x199172b3c  __TEXT,__text  -[PLPhotoLibraryOptions automaticallyPinToFirstFetch]
+0x199172b44  __TEXT,__text  +[PLManagedObjectContext newContextForPhotoLibrary:automaticallyMerges:]
+0x199172c14  __TEXT,__text  -[PLPhotoLibraryBundle changeHandlingContainer]
+0x199172c1c  __TEXT,__text  -[PLPhotoLibraryBundle isSystemPhotoLibrary]
+0x199172c74  __TEXT,__text  -[PLPhotoLibrary libraryBundle]
+0x199172c80  __TEXT,__text  -[PLUpdatedOrderKeys registerForStoreOrderKeyUpdateNotificationFromManagedObjectContext:]
+0x199172d64  __TEXT,__text  -[PLLibraryServicesManager wellKnownPhotoLibraryIdentifier]
+0x199172d6c  __TEXT,__text  -[PLChangeHandlingContainer start]
+0x199172e00  __TEXT,__text  -[PLPersistentHistoryChangeDistributor startObservingRemoteNotifications]
+0x199172ee0  __TEXT,__text  -[PLManagedObjectContext initWithConcurrencyType:libraryBundle:]
+0x199173030  __TEXT,__text  -[PLManagedObjectContext updateTransactionAuthor]
+0x19917309c  __TEXT,__text  -[PLManagedObjectContext connectToChangeHandling]
+0x199173108  __TEXT,__text  +[PLTransientManagedObjectContext canMergeRemoteChanges]
+0x199173110  __TEXT,__text  -[PLChangeHandlingContainer connectManagedObjectContext:]
+0x199173118  __TEXT,__text  -[PLManagedObjectContext setupLocalChangeNotifications]
+0x19917311c  __TEXT,__text  -[PLManagedObjectContext setupDelegateWithBundle:]
+0x199173208  __TEXT,__text  -[PLPhotoLibraryBundle fetchRecorder]
+0x199173210  __TEXT,__text  -[PLPhotoLibrary role]
+0x199173248  __TEXT,__text  -[PLFetchRecorder init]
+0x1991732ec  __TEXT,__text  +[PLManagedObjectContext _setupNameForContext:withLibrary:]
+0x19917341c  __TEXT,__text  -[PLPhotoLibrary name]
+0x199173424  __TEXT,__text  -[PLPersistentHistoryChangeDistributor _inq_startObservingRemoteNotifications]
+0x1991735b0  __TEXT,__text  ___61+[PLFetchRecorder isCurrentProcessEnabledForRecordingBundle:]_block_invoke
+0x1991735f8  __TEXT,__text  ___60-[PLPhotoLibraryBundle initWithLibraryURL:bundleController:]_block_invoke_13
+0x199173648  __TEXT,__text  +[PLPhotoLibrary stringFromLibraryRole:]
+0x19917369c  __TEXT,__text  -[PLManagedObjectContext setName:]
+0x199173768  __TEXT,__text  -[PLManagedObjectContext _pl_setupStalenessInterval]
+0x19917376c  __TEXT,__text  -[PLManagedObjectContext setPhotoLibrary:]
+0x199173874  __TEXT,__text  -[NSArray(PhotoLibraryServices) _pl_map:]
+0x1991739ac  __TEXT,__text  _PLArrayMapFastPath
+0x199173b80  __TEXT,__text  +[PLPerson predicateForIncludedDetectionTypes:]
+0x199173c4c  __TEXT,__text  +[PLPerson predicateToExcludeTorsoOnlyPerson]
+0x199173c88  __TEXT,__text  +[PLPersistentContainer managedObjectModel]
+0x199173d04  __TEXT,__text  -[PLPhotoLibraryBundle endObservingChanges]
+0x199173d90  __TEXT,__text  -[PLChangeHandlingContainer endObservingChanges]
+0x199173d98  __TEXT,__text  -[PLPersistentHistoryChangeDistributor endObservingChanges]
+0x199173e08  __TEXT,__text  ___59-[PLPersistentHistoryChangeDistributor endObservingChanges]_block_invoke
+0x199173ee8  __TEXT,__text  -[PLManagedObjectContext countForFetchRequest:error:]
+0x1991740a4  __TEXT,__text  -[PLPhotoLibraryBundle beginObservingChanges]
+0x1991740d8  __TEXT,__text  -[PLChangeHandlingContainer beginObservingChanges]
+0x1991740e0  __TEXT,__text  -[PLPersistentHistoryChangeDistributor beginObservingChanges]
+0x1991741b0  __TEXT,__text  -[PLPersistentHistoryChangeDistributor _advanceTokenToCurrent]
+0x199174224  __TEXT,__text  -[PLAccountStore cachedPrimaryAppleAccount]
+0x19917432c  __TEXT,__text  +[PLManagedAsset(LocationData) newLocationFromLocationData:timestampIfMissing:]
+0x199174510  __TEXT,__text  +[PLManagedAsset(LocationData) _locationDataFormat:]
+0x199174540  __TEXT,__text  +[PLLocationUtils canUseCoordinate:]
+0x1991745b4  __TEXT,__text  -[PLPhotoLibraryBundle photoAnalysisServiceClient]
+0x1991745bc  __TEXT,__text  -[PLPhotoAnalysisServiceClient(Graph) requestPersonalTraitsForAssetsWithUUIDs:error:]
+0x199174948  __TEXT,__text  -[PLPhotoAnalysisServiceClient(PhotoAnalysis) momentGraphService]
+0x19917499c  __TEXT,__text  -[PLPhotoAnalysisServiceClient _xpcConnection]
+0x1991749f0  __TEXT,__text  -[PLPhotoAnalysisServiceClientSideService synchronousRemoteObjectProxyWithErrorHandler:]
+0x199174a54  __TEXT,__text  -[PLPhotoAnalysisServiceRemoteServiceProxy initWithServiceProvider:remoteInterface:synchronous:errorHandler:]
+0x199174b14  __TEXT,__text  -[PLPhotoAnalysisServiceRemoteServiceProxy methodSignatureForSelector:]
+0x199174bd4  __TEXT,__text  -[PLPhotoAnalysisServiceRemoteServiceProxy forwardInvocation:]
+0x199174cd4  __TEXT,__text  -[PLPhotoAnalysisServiceClientSideService synchronousRemoteServiceProxyWithErrorHandler:]
+0x199174ea0  __TEXT,__text  -[PLLibraryServicesManager isSystemPhotoLibrary]
+0x199174ec0  __TEXT,__text  +[PLManagedObjectContext _setupInitialQueryGenerationForContext:]
+0x199175124  __TEXT,__text  -[PLPhotoLibrary globalValues]
+0x199175180  __TEXT,__text  -[PLGlobalValues initWithManagedObjectContext:]
+0x19917520c  __TEXT,__text  -[PLGlobalValues setBackgroundJobServiceNeedsProcessing:]
+0x1991752e8  __TEXT,__text  -[PLGlobalValues _setValueUsingPerformBlockAndWait:responsibleCaller:]
+0x19917545c  __TEXT,__text  -[PLGlobalValues _setBackgroundJobServiceNeedsProcessing:]
+0x1991754c0  __TEXT,__text  +[PLGlobalKeyValue checkTypeForKey:andValue:]
+0x199175704  __TEXT,__text  +[PLGlobalKeyValue typeForKey:]
+0x199175770  __TEXT,__text  +[PLGlobalKeyValue attributesForKey]
+0x1991757b8  __TEXT,__text  -[PLGlobalKeyValueAttributes type]
+0x1991757c0  __TEXT,__text  +[PLGlobalKeyValue fetchGlobalKeyValueForKey:withManagedObjectContext:createIfMissing:]
+0x199175964  __TEXT,__text  -[PLFetchRecorder managedObjectContext:willExecuteFetchRequest:]
+0x199175a1c  __TEXT,__text  -[PLFetchRecorder managedObjectContext:didExecuteFetchRequest:withSQLString:bindVariables:rowCount:]
+0x199175c30  __TEXT,__text  +[PLFetchRecorder generalizedSQLFromSQL:bindVariables:fromFetchRequest:]
+0x199175dc4  __TEXT,__text  -[PLManagedObjectContext isUserInterfaceContext]
+0x199175dcc  __TEXT,__text  -[PLFetchRecorder _startRecording]
+0x199176030  __TEXT,__text  -[PLFetchRecording fileHeader]
+0x199176038  __TEXT,__text  -[PLFetchRecordingIndexEntry offset]
+0x199176040  __TEXT,__text  +[PLFetchRecording _updateRunningStatisticsForEntry:givenPageCount:]
+0x1991760bc  __TEXT,__text  -[PLFetchRecordingIndexEntry unlock]
+0x1991760c4  __TEXT,__text  +[PLGlobalKeyValue _globalValueForKeyValue:]
+0x199176218  __TEXT,__text  -[PLManagedObjectContext save:]
+0x199176718  __TEXT,__text  -[PLFetchRecordingIndexEntry lock]
+0x199176720  __TEXT,__text  +[PLFetchRecording _statsForStatementAreInteresting:totalPages:]
+0x19917677c  __TEXT,__text  +[PLFetchRecording stdDevPageCountForEntryHeader:]
+0x199176798  __TEXT,__text  +[PLFetchRecording varPageCountForEntryHeader:]
+0x1991767d4  __TEXT,__text  +[PLFetchRecording _assertAddress:isValidWithLength:buffer:bufferLength:]
+0x1991767d8  __TEXT,__text  +[PLUnintendedChangeChecker checkForUnintendedChangesDuringeSave:withBlock:]
+0x199176864  __TEXT,__text  +[PLUnintendedChangeChecker shouldCheckForUnintendedChanges]
+0x1991768b4  __TEXT,__text  +[PLManagedObjectContext shouldHavePhotoLibrary]
+0x1991768bc  __TEXT,__text  -[PLManagedObjectContext isDatabaseCreationContext]
+0x1991768c4  __TEXT,__text  -[PLManagedObjectContext pathManager]
+0x199176940  __TEXT,__text  +[PLClientServerTransaction beginClientTransactionWithChangeScopes:pathManager:identifier:]
+0x199176d28  __TEXT,__text  +[PLClientServerTransaction _filePathForTransactionWithToken:pathManager:]
+0x199176d8c  __TEXT,__text  -[_PLClientTransaction setChangeScopesDescriptionSnapshot:]
+0x199176d98  __TEXT,__text  -[PLClientServerTransaction setTransactionToken:]
+0x199176da0  __TEXT,__text  -[_PLClientTransaction setFileDescriptor:]
+0x199176db4  __TEXT,__text  -[_PLClientTransaction addChangeScopes:]
+0x199176eb4  __TEXT,__text  -[_PLClientTransaction changeScopes]
+0x199176ec8  __TEXT,__text  +[PLClientServerTransaction scopeValuesFromScopes:]
+0x199177004  __TEXT,__text  -[_PLClientTransaction persistTransactionScopes:]
+0x1991770ac  __TEXT,__text  -[_PLClientTransaction setFdResourceSemaphore:]
+0x1991770c0  __TEXT,__text  +[PLClientServerTransaction addTransaction:toUserInfo:]
+0x1991771a0  __TEXT,__text  -[PLDelayedSaveActions initWithClientTransaction:]
+0x199177214  __TEXT,__text  -[PLManagedObjectContext _setNameFromCurrentQoS]
+0x1991772a0  __TEXT,__text  -[PLManagedObject willSave]
+0x199177474  __TEXT,__text  -[PLManagedObjectContext recordManagedObjectWillSave:]
+0x199177584  __TEXT,__text  -[PLManagedObjectContext _recordChangedKeys:forObjectID:]
+0x1991775b4  __TEXT,__text  +[PLPropertyIndexMapping recordChangedKeys:forObjectID:inAttributesByOID:relationshipsByOID:]
+0x199177658  __TEXT,__text  +[PLPropertyIndexMapping defaultMapping]
+0x19917768c  __TEXT,__text  -[PLPropertyIndexMapping recordChangedKeys:forObjectID:inAttributesByOID:relationshipsByOID:]
+0x19917782c  __TEXT,__text  -[PLPropertyIndexMapping indexValueForAttributeNames:entity:]
+0x199177834  __TEXT,__text  -[PLPropertyIndexMapping indexValueForRelationshipNames:entity:]
+0x19917783c  __TEXT,__text  -[PLManagedObject isSyncableChange]
+0x199177844  __TEXT,__text  -[PLManagedObjectContext savingDuringMerge]
+0x199177858  __TEXT,__text  -[PLServerChangePublisher addEvent]
+0x199177860  __TEXT,__text  -[PLChangePublisherDebugEvent reset]
+0x1991778e0  __TEXT,__text  -[PLChangePublisherDebugEvent setKind:]
+0x1991778f4  __TEXT,__text  -[PLChangePublisherDebugEvent setHasMessage:]
+0x199177908  __TEXT,__text  -[PLChangePublisherDebugEvent setHasEmptyMessage:]
+0x19917791c  __TEXT,__text  -[PLChangePublisherDebugEvent setPostTimestamp:]
+0x199177930  __TEXT,__text  -[PLChangePublisherDebugEvent setPostCount:]
+0x199177944  __TEXT,__text  -[PLChangePublisherDebugEvent startLocalPublish]
+0x199177974  __TEXT,__text  -[PLManagedObjectContext delayedSaveActions]
+0x199177988  __TEXT,__text  -[PLDelayedSaveActions popDelayedSaveActionsDetail]
+0x199177b1c  __TEXT,__text  -[PLDelayedSaveActions _popCloudFeedChangesIntoDetail:]
+0x199177e08  __TEXT,__text  -[PLDelayedSaveActionsDetail setCloudFeedCollectionShareUpdates:]
+0x199177e10  __TEXT,__text  -[PLDelayedSaveActionsDetail setCloudFeedAssetInserts:]
+0x199177e18  __TEXT,__text  -[PLDelayedSaveActionsDetail setCloudFeedAssetUpdates:]
+0x199177e20  __TEXT,__text  -[PLDelayedSaveActionsDetail setCloudFeedCommentInserts:]
+0x199177e28  __TEXT,__text  -[PLDelayedSaveActionsDetail setCloudFeedShareParticipantUpdates:]
+0x199177e30  __TEXT,__text  -[PLDelayedSaveActionsDetail setCloudFeedDeletionEntries:]
+0x199177e38  __TEXT,__text  -[PLDelayedSaveActions _popMomentChangesIntoDetail:]
+0x199177f30  __TEXT,__text  -[PLDelayedSaveActions _popDelayedMomentInsertsAndUpdates:deletes:updatedAssetIDsForHighlights:updatedMomentIDsForHighlights:sharedAssetContainerIncrementalChanges:]
+0x199178220  __TEXT,__text  -[PLDelayedSaveActionsDetail setMomentInsertsAndUpdates:]
+0x199178228  __TEXT,__text  -[PLDelayedSaveActionsDetail setUpdatedMomentIDsForHighlights:]
+0x199178230  __TEXT,__text  -[PLDelayedSaveActions _popAlbumCountChangesIntoDetail:]
+0x199178290  __TEXT,__text  -[PLDelayedSaveActions _popDelayedAlbumCountsAndDateRangeUpdates:]
+0x1991782e0  __TEXT,__text  -[PLDelayedSaveActionsDetail setAlbumCountsAndDateRangeUpdates:]
+0x1991782e8  __TEXT,__text  -[PLDelayedSaveActions _popAlbumKeyAssetsChangesIntoDetail:]
+0x199178348  __TEXT,__text  -[PLDelayedSaveActions _popDelayedAlbumKeyAssetsUpdates:]
+0x199178398  __TEXT,__text  -[PLDelayedSaveActions _popAlbumTrashIntoDetail:]
+0x19917840c  __TEXT,__text  -[PLDelayedSaveActions _popImportSessionCountChangesIntoDetail:]
+0x19917846c  __TEXT,__text  -[PLDelayedSaveActions _popDuetDeletedAssetsIntoDetail:]
+0x1991784d4  __TEXT,__text  -[PLDelayedSaveActions _popWidgetTimelineReloadNeeded:]
+0x19917853c  __TEXT,__text  -[PLDelayedSaveActions _popWidgetUserAlbumAssetRemovalReloadNeeded:]
+0x1991785ac  __TEXT,__text  __hashForSQL
+0x199178630  __TEXT,__text  -[PLFetchRecordingIndexEntry entryLocked_statementEntryFomBuffer:]
+0x199178680  __TEXT,__text  -[PLFetchRecordingIndexEntry unavailable]
+0x199178688  __TEXT,__text  +[PLFetchRecording meanPageCountForEntryHeader:]
+0x1991786a0  __TEXT,__text  -[PLFetchRecording _recordVariationWithEntryHeader:timestamp:pagesHit:pagesMissed:rowsAffected:duration:QOS:]
+0x199178784  __TEXT,__text  -[PLDelayedSaveActionsDetail setMomentDeletes:]
+0x19917878c  __TEXT,__text  -[PLDelayedSaveActionsDetail setUpdatedAssetIDsForHighlights:]
+0x199178794  __TEXT,__text  -[PLDelayedSaveActionsDetail setSharedAssetContainerIncrementalChangesByAssetID:]
+0x19917879c  __TEXT,__text  -[PLDelayedSaveActions _popAssetsForFilesystemPersistencyChangesIntoDetail:]
+0x1991787fc  __TEXT,__text  -[PLDelayedSaveActions _popDelayedAssetsForFilesystemPersistencyUpdates:]
+0x19917884c  __TEXT,__text  -[PLDelayedSaveActionsDetail setAssetsForFilesystemPersistency:]
+0x199178854  __TEXT,__text  -[PLDelayedSaveActionsDetail setAlbumKeyAssetsUpdates:]
+0x19917885c  __TEXT,__text  -[PLDelayedSaveActions _popDelayedImportSessionCountsAndDateRangeUpdates:]
+0x1991788ac  __TEXT,__text  -[PLDelayedSaveActionsDetail setImportSessionCountsAndDateRangeUpdates:]
+0x1991788b4  __TEXT,__text  -[PLDelayedSaveActions _popDuetDeletedMemoriesIntoDetail:]
+0x19917891c  __TEXT,__text  -[PLDelayedSaveActions _popWidgetFavoriteAlbumAssetRemovalReloadNeeded:]
+0x19917898c  __TEXT,__text  -[PLPersistentHistoryChangeDistributor handleRemoteNotificationOfType:withTransaction:]
+0x199178a34  __TEXT,__text  -[PLPersistentHistoryChangeDistributor _inq_distributeNewTransactionsSinceLastTokenWithReason:xpcTransaction:]
+0x199178c24  __TEXT,__text  -[PLConcurrencyLimiter(Statistics) reportBlockDequeuedOnQueue:executionTimeNS:]
+0x199179514  __TEXT,__text  -[_PLClientTransaction _updateChangeScopesDescriptionSnapshot]
+0x199179518  __TEXT,__text  +[PLClientServerTransaction _scopeValuesByScope]
+0x19917954c  __TEXT,__text  ___49-[_PLClientTransaction persistTransactionScopes:]_block_invoke
+0x1991795ac  __TEXT,__text  -[PLDelayedSaveActions _popWallpaperFavoriteAlbumAssetRemovalReloadNeeded:]
+0x19917961c  __TEXT,__text  -[PLDelayedSaveActions _popFeaturedContentUpdateNeededForPerson:]
+0x199179684  __TEXT,__text  -[PLDelayedSaveActionsDetail setPersonsToUpdateForFeaturedContent:]
+0x19917968c  __TEXT,__text  -[PLDelayedSaveActions _popMemoryAssetUpdateIntoDetail:]
+0x1991796f4  __TEXT,__text  -[PLDelayedSaveActions _popWallpaperUserAlbumAssetRemovalReloadNeeded:]
+0x199179764  __TEXT,__text  -[PLDelayedSaveActions _popWallpaperSuggestionReloadIntoDetail:]
+0x1991797cc  __TEXT,__text  -[PLDelayedSaveActions _popLibraryScopeParticipantsUpdateIntoDetail:]
+0x199179834  __TEXT,__text  -[PLDelayedSaveActions _popLibraryScopeRulesUpdatedIntoDetail:]
+0x199179874  __TEXT,__text  -[PLDelayedSaveActions _popMemberIDsOfGroupNeedingContainmentUpdateIntoDetail:]
+0x199179908  __TEXT,__text  -[PLDelayedSaveActions _popAssetIDsNeedingSocialGroupContainmentUpdateIntoDetail:]
+0x19917999c  __TEXT,__text  -[PLDelayedSaveActions _popAssetIDsByPersonUUIDNeedingSocialGroupContainmentUpdateIntoDetail:]
+0x199179a8c  __TEXT,__text  -[PLDelayedSaveActions _popAssetIDsNeedingAssetPersonEdgeUpdateIntoDetail:]
+0x199179b20  __TEXT,__text  -[PLDelayedSaveActions _popSocialGroupNodeIDsNeedingDeduplicationIntoDetail:]
+0x199179ba0  __TEXT,__text  -[PLDelayedSaveActions _popMembersOfGroupsNeedingDeduplicationIntoDetail:]
+0x199179c20  __TEXT,__text  -[PLManagedObjectContext recordChangesFromTriggerModifiedObjectIDs:]
+0x199179ddc  __TEXT,__text  -[PLManagedObjectContext getAndClearUpdatedObjectsAttributes:relationships:]
+0x199179e6c  __TEXT,__text  -[PLUpdatedOrderKeys isObservingOrderKeys]
+0x199179f2c  __TEXT,__text  -[PLUpdatedOrderKeys getAndClearUpdatedOrderKeys]
+0x199179fb4  __TEXT,__text  -[PLManagedObjectContext getAndClearRecordedObjectsForCloudDeletion]
+0x199179ff8  __TEXT,__text  -[PLManagedObjectContext changeSource]
+0x19917a00c  __TEXT,__text  -[PLManagedObjectContext getAndClearSyncChangeMarker]
+0x19917a044  __TEXT,__text  +[PLClientServerTransaction addTransaction:toXPCDictionary:]
+0x19917a208  __TEXT,__text  -[PLClientServerTransaction transactionToken]
+0x19917a210  __TEXT,__text  -[PLClientServerTransaction pathManager]
+0x19917a218  __TEXT,__text  -[PLManagedObjectContext appendDelayedDeletionsToXPCMessage:]
+0x19917a278  __TEXT,__text  -[PLManagedObjectContext delayedDeletions]
+0x19917a28c  __TEXT,__text  -[PLManagedObjectContext setDelayedDeletions:]
+0x19917a2a0  __TEXT,__text  -[PLServerChangePublisher publishChangeEvent:delayedSaveActionsDetail:debugEvent:transaction:]
+0x19917a3ac  __TEXT,__text  +[PLClientServerTransaction beginServerTransactionWithToken:changeScopes:pathManager:identifier:]
+0x19917a6c0  __TEXT,__text  +[PLClientServerTransaction serverTransactionQueue]
+0x19917a6f4  __TEXT,__text  +[PLClientServerTransaction _serverTransactionForPathManager:isNew:identifier:]
+0x19917a840  __TEXT,__text  -[_PLServerTransaction initWithPathManager:identifier:]
+0x19917a8e0  __TEXT,__text  -[_PLServerTransaction _enqueueChangeScopes:]
+0x19917a984  __TEXT,__text  -[_PLClientTransaction completeTransaction]
+0x19917aa90  __TEXT,__text  -[PLServerChangePublisher distributeChangeEvent:debugEvent:transaction:]
+0x19917abf8  __TEXT,__text  -[PLServerChangePublisher _postChangeHubNotification]
+0x19917ad3c  __TEXT,__text  -[PLServerChangePublisher _postWatchUpdateNotificationIfNotPaused]
+0x19917ad78  __TEXT,__text  -[PLManagedObjectContext _resetName]
+0x19917adc0  __TEXT,__text  -[PLDelayedSaveActionsDetail shouldHandleMoments]
+0x19917ae30  __TEXT,__text  +[PLClientServerTransaction removeTransactionFromUserInfo:]
+0x19917aeec  __TEXT,__text  -[PLManagedObjectContext _destroyDelayedSaveActions]
+0x19917af04  __TEXT,__text  -[PLCoreDataChangeMerger allContextsNotIdenticalTo:]
+0x19917af0c  __TEXT,__text  -[PLManagedObjectContextList allContextsNotIdenticalTo:]
+0x19917afe0  __TEXT,__text  -[PLBackgroundJobService serviceState]
+0x19917b0a0  __TEXT,__text  +[PLBackgroundJobService _stateIsReadyForSubmission:]
+0x19917b0b8  __TEXT,__text  -[PLDelayedSaveActionsProcessor processDelayedSaveActionsDetail:withPhotoLibrary:transaction:]
+0x19917b658  __TEXT,__text  +[PLBackgroundJobService verifyStateTransitionFromState:toState:]
+0x19917b73c  __TEXT,__text  -[PLBackgroundJobStatusCenter backgroundJobServiceDidChangeStateFrom:to:]
+0x19917b7b4  __TEXT,__text  -[PLDelayedSaveActionsDetail cloudFeedCollectionShareUpdates]
+0x19917b7bc  __TEXT,__text  -[PLDelayedSaveActionsDetail cloudFeedAssetInserts]
+0x19917b7c4  __TEXT,__text  -[PLDelayedSaveActionsDetail cloudFeedAssetUpdates]
+0x19917b7cc  __TEXT,__text  -[PLDelayedSaveActionsDetail cloudFeedCommentInserts]
+0x19917b7d4  __TEXT,__text  -[PLLibraryServicesManager databaseContext]
+0x19917b7dc  __TEXT,__text  -[PLDatabaseContext newShortLivedLibraryWithName:]
+0x19917b838  __TEXT,__text  -[PLDelayedSaveActionsDetail cloudFeedShareParticipantUpdates]
+0x19917b840  __TEXT,__text  -[PLDelayedSaveActionsDetail cloudFeedDeletionEntries]
+0x19917b848  __TEXT,__text  -[PLDelayedSaveActionsDetail albumCountsAndDateRangeUpdates]
+0x19917b850  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processDelayedAlbumCountsAndDateRangeUpdates:library:transaction:]
+0x19917b92c  __TEXT,__text  -[PLDelayedSaveActionsDetail albumKeyAssetsUpdates]
+0x19917b934  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processDelayedAlbumKeyAssetsUpdates:library:transaction:]
+0x19917ba6c  __TEXT,__text  ___73-[PLBackgroundJobStatusCenter backgroundJobServiceDidChangeStateFrom:to:]_block_invoke
+0x19917bafc  __TEXT,__text  -[PLDelayedSaveActionsDetail albumTrashCycleUpdates]
+0x19917bb04  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processDelayedAlbumTrashUpdates:library:transaction:]
+0x19917bc3c  __TEXT,__text  -[PLDelayedSaveActionsDetail importSessionCountsAndDateRangeUpdates]
+0x19917bc44  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processDelayedImportSessionCountsAndDateRangeUpdates:library:transaction:]
+0x19917bd20  __TEXT,__text  -[PLDelayedSaveActionsDetail widgetTimelineReloadTypesNeeded]
+0x19917bd28  __TEXT,__text  -[PLDelayedSaveActionsDetail shouldUpdateFeaturedContent]
+0x19917bd30  __TEXT,__text  -[PLDelayedSaveActionsDetail personsToUpdateForFeaturedContent]
+0x19917bd38  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processDelayedFeaturedContentUpdateAndWidgetTimelineReload:withPersonUUIDs:shouldReloadWidgetTimeline:library:transaction:]
+0x19917be9c  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processDelayedForYouWidgetTimelineReload:library:transaction:]
+0x19917bf3c  __TEXT,__text  ___80-[PLCloudPersistentHistoryChangeTracker _registerForChangeHandlingNotifications]_block_invoke
+0x19917bf8c  __TEXT,__text  -[PLDelayedSaveActionsDetail assetsForWidgetUserAlbumRemoval]
+0x19917bf94  __TEXT,__text  -[PLCloudPersistentHistoryChangeTracker changeTrackerDidReceiveChangesWithTransaction:]
+0x19917c004  __TEXT,__text  -[PLCloudPhotoLibraryManager cloudChangeTrackerDidReceiveChangesWithTransaction:]
+0x19917c070  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processDelayedAssetsForWidgetUserAlbumRemoval:library:transaction:]
+0x19917c16c  __TEXT,__text  -[PLCloudPhotoLibraryManager _runAsyncOnIsolationQueueWithTransaction:block:]
+0x19917c230  __TEXT,__text  -[PLDelayedSaveActionsDetail assetsForWidgetFavoriteAlbumRemoval]
+0x19917c238  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processDelayedAssetsForWidgetFavoriteAlbumRemoval:library:transaction:]
+0x19917c334  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processDelayedAlbumWidgetTimelineReload:library:transaction:]
+0x19917c3d4  __TEXT,__text  ___77-[PLCloudPhotoLibraryManager _runAsyncOnIsolationQueueWithTransaction:block:]_block_invoke
+0x19917c40c  __TEXT,__text  ___81-[PLCloudPhotoLibraryManager cloudChangeTrackerDidReceiveChangesWithTransaction:]_block_invoke
+0x19917c4e4  __TEXT,__text  -[PLDelayedSaveActionsDetail assetsForWallpaperUserAlbumRemoval]
+0x19917c4ec  __TEXT,__text  -[PLCloudPhotoLibraryManager _canExternallyTransitionToNewLibraryStateIgnoringPause:]
+0x19917c53c  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processDelayedAssetsForWallpaperUserAlbumRemoval:library:transaction:]
+0x19917c638  __TEXT,__text  -[PLGlobalValues libraryCreateOptions]
+0x19917c6c4  __TEXT,__text  -[PLDelayedSaveActionsDetail assetsForWallpaperFavoriteAlbumRemoval]
+0x19917c6cc  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processDelayedAssetsForWallpaperFavoriteAlbumRemoval:library:transaction:]
+0x19917c7c8  __TEXT,__text  -[PLGlobalValues _getValueUsingPerformBlockAndWait:]
+0x19917c8ec  __TEXT,__text  ___38-[PLGlobalValues libraryCreateOptions]_block_invoke
+0x19917c90c  __TEXT,__text  -[PLDelayedSaveActionsDetail wallpaperSuggestionReloadUUIDs]
+0x19917c914  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processDelayedWallpaperSuggestionReload:library:transaction:]
+0x19917c9e8  __TEXT,__text  +[PLGlobalKeyValue globalValueForKey:managedObjectContext:]
+0x19917ca6c  __TEXT,__text  -[PLDelayedSaveActionsDetail assetsForDuetDelete]
+0x19917ca74  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processDelayedAssetsForDuetDelete:transaction:]
+0x19917d1a0  __TEXT,__text  -[PLLibraryServicesManager readyForAnalysis]
+0x19917d1a8  __TEXT,__text  -[PLDelayedSaveActionsDetail memoriesForDuetDelete]
+0x19917d1b0  __TEXT,__text  -[PLReadyForAnalysis isReadyForAnalysis]
+0x19917d1b8  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processDelayedMemoriesForDuetDelete:transaction:]
+0x19917d2cc  __TEXT,__text  -[PLDelayedSaveActionsDetail memoriesForAssetUpdate]
+0x19917d2d4  __TEXT,__text  -[PLReadyForAnalysis _lock_isReadyForAnalysisState:]
+0x19917d30c  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processDelayedMemoriesAssetUpdate:library:transaction:]
+0x19917d3cc  __TEXT,__text  -[PLReadyForAnalysis _lock_checkIsReadyForAnalysisForState:]
+0x19917d514  __TEXT,__text  -[PLReadyForAnalysis _lock_checkReadyForCPLStatusForState:]
+0x19917d5fc  __TEXT,__text  -[PLDelayedSaveActionsDetail libraryScopeParticipantsForUpdate]
+0x19917d604  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processDelayedLibraryScopeParticipantsUpdate:library:transaction:]
+0x19917d7ac  __TEXT,__text  -[PLLibraryServicesManager isCloudPhotoLibraryEnabled]
+0x19917d7e4  __TEXT,__text  -[PLDelayedSaveActionsDetail libraryScopeRulesUpdated]
+0x19917d7ec  __TEXT,__text  -[PLLibraryServicesManager cplSettings]
+0x19917d7f4  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processDelayedLibraryScopeRulesUpdate:library:transaction:]
+0x19917d894  __TEXT,__text  -[PLDelayedSaveActionsDetail socialGroupNodeIDsNeedingDeduplication]
+0x19917d89c  __TEXT,__text  -[PLDelayedSaveActionsDetail memberIDsOfSocialGroupsNeedingDeduplication]
+0x19917d8a4  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processMembersOfSocialGroupsNeedingDeduplication:pendingSocialGroupIDsNeedingDeduplication:library:transaction:]
+0x19917d9f4  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processSocialGroupsNeedingDeduplication:library:transaction:]
+0x19917db2c  __TEXT,__text  -[PLDelayedSaveActionsDetail assetIDsNeedingAssetPersonEdgeUpdates]
+0x19917db34  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processAssetsNeedingAssetPersonEdgeUpdates:library:transaction:]
+0x19917dc6c  __TEXT,__text  -[PLReadyForAnalysis _lock_checkCPLInitialDownloadStatusForState:]
+0x19917dd0c  __TEXT,__text  -[PLLibraryServicesManager cloudPhotoLibraryManager]
+0x19917dd14  __TEXT,__text  -[PLDelayedSaveActionsDetail memberIDsOfSocialGroupsNeedingContainmentUpdates]
+0x19917dd1c  __TEXT,__text  -[PLCloudPhotoLibraryManager isReadyForAnalysis]
+0x19917dd58  __TEXT,__text  -[PLReadyForAnalysis _lock_checkComputeCacheStatusForState:]
+0x19917de08  __TEXT,__text  -[PLDelayedSaveActionsDetail assetIDsByPersonUUIDNeedingContainmentUpdates]
+0x19917de10  __TEXT,__text  -[PLDelayedSaveActionsDetail assetIDsNeedingContainmentUpdates]
+0x19917de18  __TEXT,__text  -[PLReadyForAnalysis _lock_updateCheckLevelIfNeeded:]
+0x19917de54  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processAssetIDsByPersonUUIDNeedingContainmentUpdates:assetIDsNeedingContainmentUpdates:pendingMemberIDsOfSocialGroupsNeedingContainmentUpdates:library:transaction:]
+0x19917e03c  __TEXT,__text  -[PLReadyForAnalysis _lock_updateStateCaptureData]
+0x19917e07c  __TEXT,__text  -[PLReadyForAnalysis _lock_logIfPermittedWithString:]
+0x19917e1f0  __TEXT,__text  -[PLReadyForAnalysis _statusLogPrefix]
+0x19917e23c  __TEXT,__text  +[PLBackgroundJobResourceAvailabilityWorker supportsWellKnownPhotoLibraryIdentifier:]
+0x19917e248  __TEXT,__text  +[PLBackgroundJobResourceAvailabilityWorker allowWorkerToRunDuringCPLInitialSync]
+0x19917e250  __TEXT,__text  -[PLBackgroundJobResourceAvailabilityWorker initWithLibraryBundle:]
+0x19917e2d0  __TEXT,__text  -[PLBackgroundJobWorker initWithLibraryBundle:]
+0x19917e3f0  __TEXT,__text  +[PLBackgroundJobEditRenderingWorker supportsWellKnownPhotoLibraryIdentifier:]
+0x19917e3fc  __TEXT,__text  +[PLBackgroundJobEditRenderingWorker allowWorkerToRunDuringCPLInitialSync]
+0x19917e404  __TEXT,__text  +[PLBackgroundJobDeferredRenderDerivativesBaseWorker supportsWellKnownPhotoLibraryIdentifier:]
+0x19917e410  __TEXT,__text  +[PLBackgroundJobDeferredRenderDerivativesBaseWorker allowWorkerToRunDuringCPLInitialSync]
+0x19917e484  __TEXT,__text  +[PLBackgroundJobSyndicationSyncWorker supportsWellKnownPhotoLibraryIdentifier:]
+0x19917e518  __TEXT,__text  +[PLBackgroundJobWorker allowWorkerToRunDuringCPLInitialSync]
+0x19917e520  __TEXT,__text  +[PLBackgroundJobGuestAssetSyncWorker supportsWellKnownPhotoLibraryIdentifier:]
+0x19917e52c  __TEXT,__text  +[PLBackgroundJobPersonSyncWorker supportsWellKnownPhotoLibraryIdentifier:]
+0x19917e538  __TEXT,__text  +[PLBackgroundJobSyndicationResourceSanitizationWorker supportsWellKnownPhotoLibraryIdentifier:]
+0x19917e544  __TEXT,__text  +[PLBackgroundJobSyndicationAssetCleanupWorker supportsWellKnownPhotoLibraryIdentifier:]
+0x19917e550  __TEXT,__text  +[PLBackgroundJobDuplicateDetectorWorker supportsWellKnownPhotoLibraryIdentifier:]
+0x19917e55c  __TEXT,__text  +[PLBackgroundJobSharedAssetContainerUpdateWorker supportsWellKnownPhotoLibraryIdentifier:]
+0x19917e568  __TEXT,__text  +[PLBackgroundJobSearchIndexingWorker supportsWellKnownPhotoLibraryIdentifier:]
+0x19917e58c  __TEXT,__text  -[PLDelayedSaveActionsProcessor _processAssetContainmentUpdatesForSocialGroupsContainingMemberPersonIDs:library:transaction:]
+0x19917e6cc  __TEXT,__text  +[PLBackgroundJobStableHashWorker supportsWellKnownPhotoLibraryIdentifier:]
+0x19917e6d8  __TEXT,__text  +[PLBackgroundJobFeatureAvailabilityWorker supportsWellKnownPhotoLibraryIdentifier:]
+0x19917e6e8  __TEXT,__text  -[_PLServerTransaction completeTransactionScope:]
+0x19917e78c  __TEXT,__text  -[PLBackgroundJobWorker workerDetailedName]
+0x19917e794  __TEXT,__text  +[PLBackgroundJobWorker usesMultipleLibrariesConcurrently]
+0x19917e79c  __TEXT,__text  +[PLBackgroundJobCriteria criteriaForUrgentResourceWorker]
+0x19917e804  __TEXT,__text  -[PLConcurrencyLimiter _syncPerformBlockNotOnAnyQueue:]
+0x19917e8cc  __TEXT,__text  -[_PLClientTransaction fileDescriptor]
+0x19917e8e0  __TEXT,__text  -[_PLClientTransaction path]
+0x19917e8f4  __TEXT,__text  +[PLInternalResource entityName]
+0x19917e900  __TEXT,__text  +[PLManagedAsset(RM) predicateToFetchResourcesAwaitingLocalAvailabilityChange]
+0x19917e954  __TEXT,__text  +[PLPhotoLibrary(MegaMocAdditions) reportLibraryDidDealloc:]
+0x19917e968  __TEXT,__text  -[PLManagedObjectContext tearDownLocalChangeNotifications]
+0x19917e96c  __TEXT,__text  -[PLManagedObjectContext setPtpNotificationDelegate:]
+0x19917eae0  __TEXT,__text  -[PLManagedObjectContext disconnectFromChangeHandling]
+0x19917eb18  __TEXT,__text  -[PLChangeHandlingContainer disconnectManagedObjectContext:]
+0x19917eb20  __TEXT,__text  -[PLChangeNode disconnectManagedObjectContext:]
+0x19917eb94  __TEXT,__text  -[PLFetchRecorderPredicateVisitor examinePredicate:]
+0x19917eba8  __TEXT,__text  -[PLFetchRecorderPredicateVisitor visitPredicateOperator:]
+0x19917ebe0  __TEXT,__text  -[PLFetchRecorderPredicateVisitor visitPredicate:]
+0x19917ebe4  __TEXT,__text  -[PLFetchRecorderPredicateVisitor foundOperatorIN]
+0x19917ebec  __TEXT,__text  -[PLBackgroundJobWorkerPendingWorkItems initWithCriteria:workItemsNeedingProcessing:]
+0x19917ec88  __TEXT,__text  -[PLBackgroundJobCriteria copyWithZone:]
+0x19917ec8c  __TEXT,__text  -[PLBackgroundJobWorkerPendingWorkItems workItemsNeedingProcessing]
+0x19917ec94  __TEXT,__text  -[PLBackgroundJobWorkerPendingWorkItems .cxx_destruct]
+0x19917ecd8  __TEXT,__text  -[PLBackgroundJobCriteria .cxx_destruct]
+0x19917ed34  __TEXT,__text  -[PLBackgroundJobEditRenderingImageWorker _predicateToFetchDeferredAdjustmentNeededAssets]
+0x19917ed80  __TEXT,__text  +[PLBackgroundJobCriteria criteriaForDiscretionaryResourceWorker]
+0x19917ede4  __TEXT,__text  -[PLBackgroundJobEditRenderingVideoWorker _predicateToFetchDeferredAdjustmentNeededAssets]
+0x19917ee34  __TEXT,__text  +[PLBackgroundJobDeferredRenderDerivativesHighPriorityWorker _criteriaToUse]
+0x19917ee40  __TEXT,__text  +[PLBackgroundJobCriteria criteriaForHighPriorityRenderDerivativesWorker]
+0x19917eea4  __TEXT,__text  -[PLBackgroundJobDeferredRenderDerivativesHighPriorityWorker _predicateToFetchDeferredAssets]
+0x19917ef0c  __TEXT,__text  -[PLBackgroundJobDeferredRenderDerivativesHighPriorityWorker deferredProcessingStatesHandled]
+0x19917ef20  __TEXT,__text  +[PLBackgroundJobDeferredRenderDerivativesLowPriorityWorker _criteriaToUse]
+0x19917ef2c  __TEXT,__text  -[PLBackgroundJobDeferredRenderDerivativesLowPriorityWorker _predicateToFetchDeferredAssets]
+0x19917ef94  __TEXT,__text  -[PLBackgroundJobDeferredRenderDerivativesLowPriorityWorker deferredProcessingStatesHandled]
+0x19917efa8  __TEXT,__text  -[PLBackgroundJobResourceAvailabilityWorker .cxx_destruct]
+0x19917f018  __TEXT,__text  -[PLBackgroundJobWorker .cxx_destruct]
+0x19917f094  __TEXT,__text  -[PLBackgroundJobEditRenderingWorker dealloc]
+0x19917f0ec  __TEXT,__text  -[PLBackgroundJobEditRenderingWorker .cxx_destruct]
+0x19917f148  __TEXT,__text  -[PLBackgroundJobDeferredRenderDerivativesBaseWorker .cxx_destruct]
+0x19917f1a4  __TEXT,__text  +[PLBackgroundJobCriteria allKnownShortCodes]
+0x19917f1ec  __TEXT,__text  -[NSSet(PhotoLibraryServices) _pl_map:]
+0x19917f28c  __TEXT,__text  ___39-[NSSet(PhotoLibraryServices) _pl_map:]_block_invoke
+0x19917f300  __TEXT,__text  ___45+[PLBackgroundJobCriteria allKnownShortCodes]_block_invoke
+0x19917f308  __TEXT,__text  -[PLPhotoLibraryBundle description]
+0x19917f358  __TEXT,__text  -[PLBackgroundJobCriteria taskIdentifier]
+0x19917f364  __TEXT,__text  -[PLBackgroundJobStatusCenter recordTaskSubmittedWithCriteria:]
+0x19917f3fc  __TEXT,__text  ___63-[PLBackgroundJobStatusCenter recordTaskSubmittedWithCriteria:]_block_invoke
+0x19917f448  __TEXT,__text  -[PLBackgroundJobCriteria shortCode]
+0x19917f454  __TEXT,__text  -[PLBackgroundJobStatusCenter _recordRegistrationEventToState:]
+0x19917f620  __TEXT,__text  -[PLBackgroundJobStatusEvent setEventTimestamp:]
+0x19917f628  __TEXT,__text  -[PLBackgroundJobStatusSubmissionEvent setSubmittedTask:]
+0x19917f630  __TEXT,__text  -[PLBackgroundJobStatusSubmissionEvent setWorkersResponsible:]
+0x19917f638  __TEXT,__text  -[PLBackgroundJobStatusSubmissionEvent setSubmittedPriorities:]
+0x19917f640  __TEXT,__text  -[PLBackgroundJobStatusCenter _addRegistrationEventToQueue:]
+0x19917f6b8  __TEXT,__text  -[PLBackgroundJobStatusSubmissionEvent .cxx_destruct]
+0x19917f6f0  __TEXT,__text  -[PLBackgroundJobStatusEvent .cxx_destruct]
+0x19917f6fc  __TEXT,__text  -[PLBackgroundJobService _invalidateSignalNeededForCrashRecoveryOnBundle:]
+0x19917fcb4  __TEXT,__text  +[PLPhotoLibraryOpener runningLibraryServicesManagerForWellKnownPhotoLibraryIdentifier:error:]
+0x19917fdf8  __TEXT,__text  +[PLPhotoLibraryOpener runningLibraryServicesManagerForPhotoLibraryURL:error:]
+0x19918002c  __TEXT,__text  -[PLPhotoLibraryBundleController _lookupOrCreateBundleForLibraryURL:replaceExisting:]
+0x199180110  __TEXT,__text  -[PLPhotoLibraryBundleController _pathKeyForLibraryURL:]
+0x19918025c  __TEXT,__text  -[PLDatabaseContext syndicationIngestMutex]
+0x199180268  __TEXT,__text  -[PLSyndicationIngestMutex tryUsingSyndicationIngestLibraryWithIdentifier:forceRetry:]
+0x199180274  __TEXT,__text  -[PLSyndicationIngestMutex _obtainSyndicationIngestLibraryIfPossibleWithIdentifier:]
+0x1991804a8  __TEXT,__text  -[PLDatabaseContext wellKnownPhotoLibraryIdentifier]
+0x199180704  __TEXT,__text  -[PLSyndicationIngestMutex stopUsingSyndicationIngestLibraryWithIdentifier:]
+0x199180908  __TEXT,__text  -[PLPersistentHistoryChangeDistributor makeManagedObjectContext]
+0x1991809bc  __TEXT,__text  +[PLPersistentHistoryTransactionIterator iteratorSinceToken:withManagedObjectObjectContext:error:]
+0x199180a48  __TEXT,__text  +[PLPersistentHistoryMarker markerWithToken:]
+0x199180a94  __TEXT,__text  -[PLPersistentHistoryMarkerToken initWithToken:]
+0x199180b18  __TEXT,__text  +[PLPersistentHistoryTransactionIterator iteratorSinceMarker:withFetchRequest:managedObjectObjectContext:error:]
+0x199180cb4  __TEXT,__text  +[PLPersistentHistoryUtilities fetchTransactionsSinceMarker:withFetchRequest:batchSize:context:error:]
+0x199180e74  __TEXT,__text  -[NSManagedObjectContext(PLManagedObjectContext) pl_resultWithError:block:]
+0x199180fa0  __TEXT,__text  -[PLPersistentHistoryMarker changeRequestForFetching]
+0x199180fa4  __TEXT,__text  -[PLPersistentHistoryMarkerToken overrride_changeRequestForFetching]
+0x199180fc4  __TEXT,__text  +[PLPersistentHistoryUtilities _executePersistentHistoryChangeRequest:withContext:]
+0x199181128  __TEXT,__text  -[PLPersistentHistoryTransactionIterator initWithTransactions:managedObjectObjectContext:]
+0x199181234  __TEXT,__text  ___90-[PLPersistentHistoryTransactionIterator initWithTransactions:managedObjectObjectContext:]_block_invoke
+0x199181280  __TEXT,__text  -[PLPersistentHistoryMarkerToken .cxx_destruct]
+0x199181294  __TEXT,__text  -[PLPersistentHistoryTransactionIterator count]
+0x19918129c  __TEXT,__text  -[PLPersistentHistoryChangeDistributor localEventFromTransactions:]
+0x199181344  __TEXT,__text  +[PLLocalChangeEventBuilder localEventWithBuilderBlock:]
+0x1991813e0  __TEXT,__text  ___56+[PLLocalChangeEventBuilder localEventWithBuilderBlock:]_block_invoke
+0x199181440  __TEXT,__text  -[PLLocalChangeEventBuilder init]
+0x19918166c  __TEXT,__text  ___67-[PLPersistentHistoryChangeDistributor localEventFromTransactions:]_block_invoke
+0x1991816bc  __TEXT,__text  -[PLLocalChangeEventBuilder setUpdatedPropertyFilter:]
+0x1991816c4  __TEXT,__text  -[PLLocalChangeEventBuilder recordAllTransactionsFromIterator:]
+0x1991816d0  __TEXT,__text  -[PLLocalChangeEventBuilder recordTransactionsFromIterator:untilTest:]
+0x199181898  __TEXT,__text  -[PLPersistentHistoryTransactionIterator enumerateRemainingTransactionsWithBlock:]
+0x199181908  __TEXT,__text  -[PLPersistentHistoryTransactionIterator hasMoreTransactions]
+0x19918191c  __TEXT,__text  -[PLPersistentHistoryTransactionIterator enumerateOneTransactionWithBlock:]
+0x199181abc  __TEXT,__text  ___75-[PLPersistentHistoryTransactionIterator enumerateOneTransactionWithBlock:]_block_invoke
+0x199181b54  __TEXT,__text  -[PLPersistentHistoryTransactionIterator _safeTransactionAtIndex:]
+0x199181c30  __TEXT,__text  ___70-[PLLocalChangeEventBuilder recordTransactionsFromIterator:untilTest:]_block_invoke
+0x199181d04  __TEXT,__text  -[PLPersistentHistoryTransactionIterator context]
+0x199181d0c  __TEXT,__text  ___70-[PLLocalChangeEventBuilder recordTransactionsFromIterator:untilTest:]_block_invoke_2
+0x199181d18  __TEXT,__text  -[PLLocalChangeEventBuilder recordTransaction:]
+0x199181fc4  __TEXT,__text  -[PLLocalChangeEventBuilder _shouldRecordTransaction:]
+0x199181fe4  __TEXT,__text  -[PLLocalChangeEventBuilder recordChange:]
+0x1991820d8  __TEXT,__text  -[PLLocalChangeEventBuilder _recordUpdateChange:]
+0x199182260  __TEXT,__text  -[PLLocalChangeEventBuilder _filteredUpdatedPropertiesFromChange:]
+0x199182330  __TEXT,__text  -[NSSet(PhotoLibraryServices) _pl_filter:]
+0x1991823d4  __TEXT,__text  _PLPropertyIsIncludedInChangeHub_block_invoke
+0x199182428  __TEXT,__text  ___42-[NSSet(PhotoLibraryServices) _pl_filter:]_block_invoke
+0x199182438  __TEXT,__text  -[PLLocalChangeEventBuilder recordUpdatedObjectID:]
+0x199182584  __TEXT,__text  +[PLLimitedLibraryFetchFilter entityName]
+0x199182590  __TEXT,__text  +[PLPropertyIndexMapping recordChangedProperties:forObjectID:inAttributesByOID:relationshipsByOID:]
+0x199182634  __TEXT,__text  -[PLPropertyIndexMapping recordChangedProperties:forObjectID:inAttributesByOID:relationshipsByOID:]
+0x1991826e4  __TEXT,__text  ___99-[PLPropertyIndexMapping recordChangedProperties:forObjectID:inAttributesByOID:relationshipsByOID:]_block_invoke
+0x1991826ec  __TEXT,__text  ___63-[PLLocalChangeEventBuilder recordAllTransactionsFromIterator:]_block_invoke
+0x1991826f4  __TEXT,__text  -[PLPersistentHistoryTransactionIterator lastIteratedToken]
+0x1991826fc  __TEXT,__text  +[PLPersistentHistoryUtilities transactionNumberFromToken:]
+0x1991827e0  __TEXT,__text  -[PLLocalChangeEventBuilder buildLocalEvent]
+0x199182c90  __TEXT,__text  -[PLLocalChangeEventBuilder isEmpty]
+0x199182dd0  __TEXT,__text  -[PLLocalChangeEventBuilder .cxx_destruct]
+0x199182f28  __TEXT,__text  +[PLManagedObjectContext changeNotificationObjectIDMutationKeys]
+0x199182f5c  __TEXT,__text  -[PLPersistentHistoryTransactionIterator .cxx_destruct]
+0x199182fac  __TEXT,__text  -[PLSortedChangedObjects initWithChangedObjects:]
+0x199183084  __TEXT,__text  ___PLQUEUE_DISPATCH_IS_CALLING_OUT_TO_UT_BLOCK__
+0x1991830a4  __TEXT,__text  -[PLFetchRecording recordStatementWithNormalizedSQL:bindVariables:fetchLimit:multiInCounts:contextName:pagesHit:pagesMissed:rowCount:duration:QOS:]
+0x199183808  __TEXT,__text  -[PLAssetsdCloudService getCPLSettingsWithReply:]
+0x1991839bc  __TEXT,__text  -[PLCapturePhotoSettings description]
+0x199183a64  __TEXT,__text  -[PLCameraDeferredProcessingCoordinator prewarmWithPhotoSettings:completionHandler:]
+0x199183b3c  __TEXT,__text  +[PLCapturePhotoSettings photoSettingsWithPhotoSettings:]
+0x199183b90  __TEXT,__text  -[PLCapturePhotoSettings initWithPhotoSettings:]
+0x199183c4c  __TEXT,__text  -[PLCameraDeferredProcessingCoordinator resourceInternalClient]
+0x199183c54  __TEXT,__text  +[PLCPLSettings settingsWithLibraryBundle:]
+0x199183d58  __TEXT,__text  ___44-[NSArray(PhotoLibraryServices) _pl_filter:]_block_invoke
+0x199183d68  __TEXT,__text  ___80-[PLConcurrencyLimiter _async:identifyingBlock:libraryRole:libraryForTelemetry:]_block_invoke
+0x199183e4c  __TEXT,__text  ___32-[PLProgressFollower invalidate]_block_invoke
+0x199183e94  __TEXT,__text  +[PLPhotoLibrary cameraPhotoLibrary]
+0x199183e98  __TEXT,__text  ___54-[PLAssetsdServer listener:shouldAcceptNewConnection:]_block_invoke_2
+0x199183edc  __TEXT,__text  -[PLCacheMetricsCollectorServerShell .cxx_destruct]
+0x199183ee8  __TEXT,__text  -[PLAssetsdService .cxx_destruct]
+0x199184060  __TEXT,__text  -[PLAssetsdInnerService .cxx_destruct]
+0x199184098  __TEXT,__text  ___62-[PLAssetsdServicePermissions _verifyEntitlementsWithContext:]_block_invoke
+0x1991840bc  __TEXT,__text  ___36-[PLCloudPhotoLibraryManager _pause]_block_invoke
+0x199184288  __TEXT,__text  _PLDMIsMigrationNeeded
+0x1991843dc  __TEXT,__text  -[PLDeviceRestoreMigrationSupport hasCompletedDataMigratorPrerequisitesForTrackingRestoreFromCloud]
+0x1991844a0  __TEXT,__text  -[PLChangeHandlingNotificationEvent notificationBlock]
+0x1991844b4  __TEXT,__text  -[PLPersistentContainer sharedPersistentStoreCoordinatorWithError:]
+0x19918452c  __TEXT,__text  ___106-[PLForegroundMonitor _handleApplicationStateMonitorNotificationWithUserInfo:applicationStateMonitorUUID:]_block_invoke
+0x199184634  __TEXT,__text  ___66-[PLLibraryServicesCPLReadiness _checkIsReadyForCloudPhotoLibrary]_block_invoke
+0x199184784  __TEXT,__text  +[PLCPLSettings defaultEnabledFeatureDataclassesIsSPL:]
+0x199184794  __TEXT,__text  -[PLCameraDeferredProcessingCoordinator init]
+0x1991847dc  __TEXT,__text  -[PLPhotoLibraryBundle sqliteErrorIndicatorFileExists]
+0x199184968  __TEXT,__text  ___53-[PLCloudPhotoLibraryManager _processNextTransaction]_block_invoke
+0x199185180  __TEXT,__text  -[PLPersistentHistoryChangeDistributor stateCaptureDictionary]
+0x1991851e4  __TEXT,__text  ___29-[PLCPLSettings prefetchMode]_block_invoke
+0x1991851f0  __TEXT,__text  -[PLPhotoLibraryIdentifier .cxx_destruct]
+0x1991851fc  __TEXT,__text  -[PLCPLSettings .cxx_destruct]
+0x19918524c  __TEXT,__text  -[PLAssetsdService initWithConnection:libraryBundleController:daemonServices:]
+0x1991853f4  __TEXT,__text  ___CPLSystemLibraryOSLogDomain
+0x1991855a0  __TEXT,__text  ___57-[PLForegroundMonitor _startMonitoringBundleIdentifiers:]_block_invoke
+0x1991855f4  __TEXT,__text  ___83-[PLDeviceRestoreMigrationPostProcessingSupport needsToPrepareForBackgroundRestore]_block_invoke
+0x199185664  __TEXT,__text  -[PLCloudIdentifier initWithArchivalStringValue:]
+0x1991857b0  __TEXT,__text  -[PLCloudIdentifier stableHash]
+0x1991857b8  __TEXT,__text  -[PLCloudIdentifier .cxx_destruct]
+0x199185814  __TEXT,__text  -[PLAssetsdServer addService:]
+0x19918585c  __TEXT,__text  ___87-[PLCloudPhotoLibraryManager libraryManager:uploadDidProgress:forResourceTransferTask:]_block_invoke
+0x199185928  __TEXT,__text  ___109-[PLCloudPhotoLibraryUploadTracker updateForMasterResourceUploadWithScopedIdentifier:progress:fileSize:type:]_block_invoke
+0x199185a5c  __TEXT,__text  ___47-[PLCloudPhotoLibraryManager _setPause:reason:]_block_invoke
+0x199185aa8  __TEXT,__text  ___80-[PLLibraryServicesCPLReadiness _updateIsReady:isWaitingOnImport:statusMessage:]_block_invoke
+0x199185afc  __TEXT,__text  ___72-[PLLibraryServicesCPLReadiness _isReadyForCloudPhotoLibraryWithStatus:]_block_invoke
+0x199185b24  __TEXT,__text  -[PLIndicatorFileCoordinator _pauseDataOnPath:]
+0x199185b30  __TEXT,__text  -[PLAssetsdPhotoKitAddService initWithLibraryServicesManager:connectionAuthorization:]
+0x199185c2c  __TEXT,__text  -[PLAssetsdPhotoKitAddService applyChangesRequest:reply:]
+0x199185ff4  __TEXT,__text  -[PLPhotoLibraryIdentifier initWithIdentifierPayload:]
+0x1991860ac  __TEXT,__text  ___40-[PLCloudPhotoLibraryManager cplLibrary]_block_invoke
+0x1991860b8  __TEXT,__text  ___94-[PLCloudPhotoLibraryManager libraryManager:uploadDidFinishForResourceTransferTask:withError:]_block_invoke
+0x19918632c  __TEXT,__text  ___112-[PLCloudPhotoLibraryUploadTracker uploadFinishedForMasterResourceWithScopedIdentifier:fileSize:type:withError:]_block_invoke
+0x199186394  __TEXT,__text  ___77-[PLCloudPhotoLibraryUploadTracker resetIfNeededWithLibrary:isInitialUpload:]_block_invoke
+0x1991863e4  __TEXT,__text  -[PLManagedAsset(AdditionalAssetAttributesConvenience) setTitle:]
+0x199186438  __TEXT,__text  -[PLManagedAsset(AdditionalAssetAttributesConvenience) setLongDescription:]
+0x19918648c  __TEXT,__text  -[PLManagedAsset(AdditionalAssetAttributesConvenience) setAccessibilityDescription:]
+0x1991864e0  __TEXT,__text  -[PLAssetsdServer _collectCacheMetricsDataFromService:]
+0x199186524  __TEXT,__text  +[PLManagedObjectContext loadingPersistentStoreWithReason:error:workBlock:]
+0x1991866f0  __TEXT,__text  -[PLManagedAsset updateAssetKindFromUniformTypeIdentifier]
+0x19918674c  __TEXT,__text  ___70-[PLAssetsdConnectionAuthorization initWithConnection:daemonServices:]_block_invoke_3
+0x19918679c  __TEXT,__text  +[PLManagedAsset _isScreenshotWithType:hasScreenshotDimensions:hasScreenshotMetadata:]
+0x199186824  __TEXT,__text  -[PLAbstractLibraryServicesManagerService .cxx_destruct]
+0x19918685c  __TEXT,__text  -[PLXPCPhotoLibraryStoreContainer .cxx_destruct]
+0x199186894  __TEXT,__text  -[PLManagedAsset setTimeExifTimestampStringFromMetadata:]
+0x199186938  __TEXT,__text  -[PLCameraCaptureTaskConstraints stopConstrainingTasksWithCoordinator:]
+0x199186a00  __TEXT,__text  -[PLProgressFollower dealloc]
+0x199186aa0  __TEXT,__text  -[PLManagedAsset cachedLocation]
+0x199186ab4  __TEXT,__text  -[PLProgressFollower .cxx_destruct]
+0x199186af8  __TEXT,__text  -[PLAssetsdService cacheMetricsShellObject]
+0x199186b00  __TEXT,__text  -[PLCacheMetricsCollectorServerShell cacheMetricsCollectorServer]
+0x199186b08  __TEXT,__text  -[PLAssetsdLibraryService .cxx_destruct]
+0x199186b88  __TEXT,__text  -[PLAssetsdService collectCacheMetrics]
+0x199186ce0  __TEXT,__text  ___26-[PLManagedAsset setUuid:]_block_invoke
+0x199186de8  __TEXT,__text  ___72-[PLLibraryServicesCPLReadiness performOnceLibraryIsReadyForCPLManager:]_block_invoke
+0x199186e54  __TEXT,__text  -[PLPhotoLibrary thumbnailIndexes]
+0x199186f0c  __TEXT,__text  -[PLManagedObject pl_setValue:forKey:valueDidChangeHandler:]
+0x199187044  __TEXT,__text  ___36-[PLManagedAsset setThumbnailIndex:]_block_invoke
+0x199187060  __TEXT,__text  ___62-[PLManagedAsset _setAllowedForAnalysisDependentValue:forKey:]_block_invoke
+0x1991870e8  __TEXT,__text  ___33-[PLManagedAsset setDateCreated:]_block_invoke
+0x19918712c  __TEXT,__text  -[PLManagedAsset(PLDuplicateAsset) duplicateSortPropertyNamesSkip]
+0x19918719c  __TEXT,__text  +[PLPhotoLibraryOpener autoCreateWellKnownPhotoLibraryIfNeededWithURL:libraryServicesManager:wellKnownLibraryIdentifier:]
+0x199187274  __TEXT,__text  ___46-[PLCloudPhotoLibraryManager setPause:reason:]_block_invoke
+0x1991872bc  __TEXT,__text  -[PLLibraryServicesManager modelMigrator]
+0x1991872c4  __TEXT,__text  +[PLBackgroundJobWorkItem insertBackgroundJobWorkItemWithIdentifier:jobType:jobFlags:inManagedObjectContext:]
+0x1991873d8  __TEXT,__text  -[PLCameraCaptureTaskConstraintCoordinator initWithTaskContstraintRole:name:]
+0x199187564  __TEXT,__text  -[PLAssetsdServer removeService:]
+0x1991875ac  __TEXT,__text  -[PLPhotoLibraryBundle assetsdClient]
+0x199187628  __TEXT,__text  ___47-[PLAssetsdService makeInnerPhotoKitAddService]_block_invoke
+0x199187674  __TEXT,__text  -[PLPersistentHistoryDistributionEvent setShouldDistributeTransactions:]
+0x199187688  __TEXT,__text  -[PLPersistentHistoryDistributionEvent startDistributionWithReason:]
+0x1991876d4  __TEXT,__text  -[PLManagedAsset updatePanoramosityWithMetadata:]
+0x1991877c0  __TEXT,__text  -[PLManagedAsset _hasScreenshotMetadataWithMetadata:]
+0x1991877c8  __TEXT,__text  -[PLManagedAsset _hasPanoramaDimensions]
+0x199187848  __TEXT,__text  -[PLManagedAsset setImageInfoFromOriginalImageMetadata:]
+0x199187928  __TEXT,__text  -[PLManagedAsset setCameraCaptureDeviceFromMetadata:]
+0x1991879c4  __TEXT,__text  -[PLPersistentHistoryChangeDistributor distributeNewTransactionsSinceLastToken]
+0x199187aa4  __TEXT,__text  -[PLThumbnailGenerationOptions init]
+0x199187aec  __TEXT,__text  ___173-[PLMomentGeneration saveChangesForAssetInsertsAndUpdates:assetDeletes:assetUpdatesForHighlights:momentUpdatesForHighlights:sharedAssetContainerIncrementalChangesByAssetID:]_block_invoke
+0x199187ba8  __TEXT,__text  -[PLPersistentHistoryDistributionEvent setTransactionCount:]
+0x199187bbc  __TEXT,__text  ___79+[PLAssetsdCrashRecoverySupport trackPerformChangesRequestInProgressWithBlock:]_block_invoke
+0x199187bcc  __TEXT,__text  -[PLAssetsdService PhotoKitAddService_applyChangesRequest:libraryToken:reply:]
+0x199187d50  __TEXT,__text  -[PLManagedObject photoLibrary]
+0x199187d90  __TEXT,__text  -[PLManagedAsset _duplicateProcessingChanges:]
+0x199188064  __TEXT,__text  +[PLManagedObject entityInManagedObjectContext:]
+0x1991880d0  __TEXT,__text  -[PLPhotoLibrary isLongLivedClientSideLibrary]
+0x1991880d8  __TEXT,__text  +[PLManagedAsset pathForAdjustmentDirectoryWithMutationsDirectory:]
+0x1991880ec  __TEXT,__text  +[PLImageWriter semanticEnhanceSceneIsValid:]
+0x1991880fc  __TEXT,__text  +[PLUniformTypeIdentifier utiWithIdentifier:]
+0x199188174  __TEXT,__text  -[PLManagedAsset(RM) persistedResourcesMatching:]
+0x1991882a4  __TEXT,__text  -[PLCameraPreviewImageWellChangeNotification .cxx_destruct]
+0x1991882ec  __TEXT,__text  ___PLQUEUE_DISPATCH_IS_CALLING_OUT_TO_IN_BLOCK__
+0x19918830c  __TEXT,__text  -[PLPersistentHistoryDistributionEvent setReason:]
+0x199188318  __TEXT,__text  ___89-[PLChangeHandlingNotificationObserver _lock_startObservingRemoteNotificationsWithBlock:]_block_invoke_2
+0x19918834c  __TEXT,__text  -[PLPersistentHistoryDistributionEvent setObserverCount:]
+0x199188360  __TEXT,__text  ___80-[PLChangeHandlingNotificationObserver _workloop_handleHighPriorityNotification]_block_invoke
+0x1991883c4  __TEXT,__text  -[PLPersistentHistoryDistributionEvent setMergeTimestamp:]
+0x1991883d8  __TEXT,__text  -[PLThumbFileManager setImageForEntry:withIdentifier:photoUUID:options:]
+0x19918884c  __TEXT,__text  -[PLManagedAsset height]
+0x1991888b4  __TEXT,__text  ___67-[PLMomentGeneration generateWithIncrementalDataCompletionHandler:]_block_invoke
+0x199188910  __TEXT,__text  -[PLTableThumbnailEncoderResult .cxx_destruct]
+0x199188954  __TEXT,__text  -[PLManagedAsset .cxx_destruct]
+0x199188a3c  __TEXT,__text  ___122-[PLThumbnailManager _downscaleAndWriteTableAndFileBackedThumbnailsWithIdentifier:thumbnailIndex:image:assetUUID:version:]_block_invoke_2
+0x199188c68  __TEXT,__text  ___122-[PLThumbnailManager _downscaleAndWriteTableAndFileBackedThumbnailsWithIdentifier:thumbnailIndex:image:assetUUID:version:]_block_invoke_3
+0x199188cac  __TEXT,__text  +[PLTableThumbnailEncoder _createDownscaledImageFromSourceImage:toSize:cropped:]
+0x199188f80  __TEXT,__text  ___72-[PLMomentGeneration initWithMomentGenerationDataManager:bundle:locale:]_block_invoke_2
+0x199188fcc  __TEXT,__text  ___98-[PLPersistentHistoryChangeDistributor _inq_distributeTransactions:withXPCTransaction:debugEvent:]_block_invoke
+0x199188fd4  __TEXT,__text  -[PLCameraPreviewWellAssetInfo visibilityState]
+0x199188fdc  __TEXT,__text  -[PLCameraPreviewWellAssetInfo addedDate]
+0x199188fe4  __TEXT,__text  -[PLManagedAsset isHidden]
+0x199188fe8  __TEXT,__text  -[PLAsynchronousPhotoLibraryExecutionContext performTransactionOnLibrary:transaction:completionHandler:]
+0x199188ff8  __TEXT,__text  -[PLManagedAsset width]
+0x199189060  __TEXT,__text  ___PLQUEUE_DISPATCH_IS_CALLING_OUT_TO_HIGH_QOS_INGEST_BLOCK__
+0x199189080  __TEXT,__text  -[PLManagedObject pl_safeSetValue:forKey:valueDidChangeHandler:]
+0x199189200  __TEXT,__text  -[PLValidatedExternalResource init]
+0x199189238  __TEXT,__text  +[PLUniformTypeIdentifierIntegratedLookup conformanceHintForIdentifier:]
+0x199189400  __TEXT,__text  -[PLUniformTypeIdentifier initWithIdentifier:conformanceHint:]
+0x1991894ec  __TEXT,__text  -[PLManagedAsset(RM) firstPersistedResourceMatching:]
+0x19918966c  __TEXT,__text  ___49-[PLManagedAsset(RM) persistedProvenanceResource]_block_invoke
+0x1991896c4  __TEXT,__text  -[PLValidatedExternalResource .cxx_destruct]
+0x199189720  __TEXT,__text  -[PLVirtualResource initWithAsset:resourceType:version:recipeID:]
+0x1991898e0  __TEXT,__text  -[PLPrimaryResourceDataStoreKey _initFromExistingLocationOfExternalResource:asset:]
+0x1991899d8  __TEXT,__text  -[PLPrimaryResourceDataStoreKey _init]
+0x199189ad4  __TEXT,__text  -[PLUniformTypeIdentifier .cxx_destruct]
+0x199189ae0  __TEXT,__text  +[PLUniformTypeIdentifierIntegratedLookup identifierFromCompactRepresentation:]
+0x199189cdc  __TEXT,__text  -[PLInternalResource qualitySortValue]
+0x199189df8  __TEXT,__text  -[PLVirtualResource qualitySortValue]
+0x199189e78  __TEXT,__text  -[PLVirtualResource recipeID]
+0x199189e80  __TEXT,__text  -[PLVirtualResource .cxx_destruct]
+0x199189ee8  __TEXT,__text  -[PLInternalResource dataStore]
+0x199189f40  __TEXT,__text  -[PLImageContainer dealloc]
+0x199189fac  __TEXT,__text  +[PLCameraPreviewWellManager _asset:sortsGreaterThanAssetInfo:]
+0x19918a11c  __TEXT,__text  -[PLCameraPreviewWellAssetInfo uuid]
+0x19918a124  __TEXT,__text  -[PLManagedAsset generateAndUpdateThumbnailsWithOptions:]
+0x19918ab74  __TEXT,__text  -[PLImageContainer .cxx_destruct]
+0x19918ac04  __TEXT,__text  ___106-[PLCameraPreviewWellManager shouldReconsiderCameraPreviewWellImageForUpdatedAsset:thumbnailWasGenerated:]_block_invoke
+0x19918acc8  __TEXT,__text  ___50-[PLManagedAsset(RM) primaryStoreOriginalResource]_block_invoke
+0x19918acec  __TEXT,__text  -[PLPrimaryResourceDataStoreKey _initWithKeyStruct:]
+0x19918ad94  __TEXT,__text  ___52-[PLLibraryServicesManager awaitLibraryState:error:]_block_invoke
+0x19918adb4  __TEXT,__text  +[PLResourceRecipe recipeFromID:]
+0x19918aecc  __TEXT,__text  -[PLAdditionalAssetAttributes correctOriginalOrientationIfRequired]
+0x19918afdc  __TEXT,__text  -[PLAdditionalAssetAttributes addDuplicateDetectorPerceptualProcessingStates:removeProcessingStates:]
+0x19918b044  __TEXT,__text  -[PLManagedAsset(RM) recalculateImageRequestHints]
+0x19918b238  __TEXT,__text  -[PLManagedAsset persistedFileSystemAttributesFileURL]
+0x19918b28c  __TEXT,__text  -[PLManagedAsset hasTableThumbs]
+0x19918b290  __TEXT,__text  -[PLManagedAsset addedDateData]
+0x19918b2ec  __TEXT,__text  -[PLManagedAsset(RM) localVideoKeyFrameResource]
+0x19918b334  __TEXT,__text  ___88-[PLDeferredProcessingServiceHandler prewarmWithCapturePhotoSettings:completionHandler:]_block_invoke
+0x19918b3f8  __TEXT,__text  -[PLCaptureDeferredPhotoProcessor .cxx_destruct]
+0x19918b43c  __TEXT,__text  -[PLCaptureDeferredPhotoProcessorDelegateAdapter .cxx_destruct]
+0x19918b46c  __TEXT,__text  +[PLAdditionalAssetAttributes listOfSyncedProperties]
+0x19918b4ec  __TEXT,__text  -[PLDelayedSaveActionsProcessor processDelayedMomentGeneratorSaveActionsFromDetail:]
+0x19918b5d8  __TEXT,__text  -[PLDataDensityClustering init]
+0x19918b620  __TEXT,__text  ___84-[PLCameraDeferredProcessingCoordinator prewarmWithPhotoSettings:completionHandler:]_block_invoke
+0x19918b638  __TEXT,__text  -[PLAssetsdService handleInvalidation]
+0x19918b708  __TEXT,__text  -[PLAssetsdServer handleInvalidation:]
+0x19918b760  __TEXT,__text  -[PLInternalResource persistTrashedStateToFilesystem]
+0x19918b804  __TEXT,__text  +[PLTableThumbnailEncoder _encodeDownscaledImage:toFormat:withUUID:error:]
+0x19918bc6c  __TEXT,__text  -[PLChangeNotificationCenter backingCenter]
+0x19918bc78  __TEXT,__text  -[PLPhotoLibraryBundleController newPhotoLibraryBundleWithLibraryURL:]
+0x19918bd10  __TEXT,__text  ___73-[PLCaptureDeferredPhotoProcessor prewarmWithSettings:completionHandler:]_block_invoke
+0x19918bd4c  __TEXT,__text  -[PLCameraCaptureTaskConstraintCoordinator invalidate]
+0x19918bde4  __TEXT,__text  -[PLImageContainer initWithCGImage:ioSurface:CIImage:backingData:uniformTypeIdentifier:size:auxiliaryImageRecords:]
+```
+First 1,000 of 27,243.
+

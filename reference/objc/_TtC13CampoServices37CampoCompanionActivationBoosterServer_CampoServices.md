@@ -1,0 +1,11 @@
+# `_TtC13CampoServices37CampoCompanionActivationBoosterServer`
+
+- Image: [`/System/Library/PrivateFrameworks/CampoServices.framework/CampoServices`](../userland/System__Library__PrivateFrameworks__CampoServices.framework__CampoServices.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `_TtCs12_SwiftObject`
+- 1 instance variables, 0 properties, 0 instance methods, 0 class methods
+
+## Instance variables
+
+```
+_$sSo27BSServiceConnectionListenerCSg listener;
+```

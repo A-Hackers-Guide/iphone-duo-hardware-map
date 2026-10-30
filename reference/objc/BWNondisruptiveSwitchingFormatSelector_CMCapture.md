@@ -1,0 +1,66 @@
+# `BWNondisruptiveSwitchingFormatSelector`
+
+- Image: [`/System/Library/PrivateFrameworks/CMCapture.framework/CMCapture`](../userland/System__Library__PrivateFrameworks__CMCapture.framework__CMCapture.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- 26 instance variables, 4 properties, 10 instance methods, 1 class methods
+
+## Instance variables
+
+```
+@"NSString" _portType;
+@"NSArray" _supportedFormats;
+f _baseZoomFactor;
+@"NSDictionary" _zoomFactorToNondisruptiveSwitchingFormatIndexSIFRBinned;
+@"NSDictionary" _zoomFactorToNondisruptiveSwitchingFormatIndexMainAndSIFRBinned;
+@"NSDictionary" _zoomFactorToNondisruptiveSwitchingFormatIndexSIFRNonBinned;
+B _mainAndSIFRBinnedNondisruptiveSwitchingEnabled;
+@"NSDictionary" _zoomFactorToNondisruptiveSwitchingFormatIndexSecureSigning;
+i _ultraHighResolutionSecureSigningNondisruptiveStreamingFormatIndex;
+i _ultraHighResolutionNondisruptiveStreamingFormatIndex;
+i _mainFormatSIFRBinningFactor;
+i _videoStabilizationStrength;
+@"NSDictionary" _quadraSubPixelSwitchingParameters;
+{BWSmartCameraScene="enabled"B"confident"B"confidenceFilterRatio"f"filteredConfidence"f"confidenceThreshold"f"confidenceHysteresisValueLag"f"confidenceHysteresisTemporalLagBeforeConfident"s"confidenceHysteresisTemporalLagBeforeNotConfident"s"currentTemporalHysteresis"s"resetTemporalHysteresisAndFilteringOnNextUpdate"B"name"*} _quadraSubPixelSceneBasedOnNormalizedSNR;
+{BWSmartCameraScene="enabled"B"confident"B"confidenceFilterRatio"f"filteredConfidence"f"confidenceThreshold"f"confidenceHysteresisValueLag"f"confidenceHysteresisTemporalLagBeforeConfident"s"confidenceHysteresisTemporalLagBeforeNotConfident"s"currentTemporalHysteresis"s"resetTemporalHysteresisAndFilteringOnNextUpdate"B"name"*} _quadraSubPixelSceneBasedOnLuxLevel;
+{BWSmartCameraScene="enabled"B"confident"B"confidenceFilterRatio"f"filteredConfidence"f"confidenceThreshold"f"confidenceHysteresisValueLag"f"confidenceHysteresisTemporalLagBeforeConfident"s"confidenceHysteresisTemporalLagBeforeNotConfident"s"currentTemporalHysteresis"s"resetTemporalHysteresisAndFilteringOnNextUpdate"B"name"*} _quadraSubPixelSceneBasedOnGain;
+B _quadraSubPixelSceneMonitoringForActionCameraEnabled;
+B _quadraSubPixelSceneMonitoringForDigitalFlashEnabled;
+B _quadraSubPixelSceneMonitoringForVideoEnabled;
+B _quadraSubPixelSceneMonitoringForPhotoEnabled;
+f _lastZoomFactor;
+i _lastDigitalFlashMode;
+B _lastStationary;
+i _lastNondisruptiveSwitchingFormatIndex;
+i _lastQuadraBinningFactor;
+@"NSString" _lastQuadraSubPixelSwitchingIntent;
+```
+
+## Properties
+
+```
+@property (T@"NSDictionary",R,N,V_zoomFactorToNondisruptiveSwitchingFormatIndexSIFRBinned) zoomFactorToNondisruptiveSwitchingFormatIndexSIFRBinned;
+@property (T@"NSDictionary",R,N,V_zoomFactorToNondisruptiveSwitchingFormatIndexMainAndSIFRBinned) zoomFactorToNondisruptiveSwitchingFormatIndexMainAndSIFRBinned;
+@property (T@"NSDictionary",R,N,V_zoomFactorToNondisruptiveSwitchingFormatIndexSIFRNonBinned) zoomFactorToNondisruptiveSwitchingFormatIndexSIFRNonBinned;
+@property (Ti,R,N,V_ultraHighResolutionNondisruptiveStreamingFormatIndex) ultraHighResolutionNondisruptiveStreamingFormatIndex;
+```
+
+## Class methods
+
+```
++[BWNondisruptiveSwitchingFormatSelector initialize];
+```
+
+## Instance methods
+
+```
+-[BWNondisruptiveSwitchingFormatSelector setVideoStabilizationStrength:];
+-[BWNondisruptiveSwitchingFormatSelector dealloc];
+-[BWNondisruptiveSwitchingFormatSelector formatIndexForZoomFactor:frameStatistics:imageControlMode:stillImageDigitalFlashMode:isStationary:isSecondaryStream:binnedSIFROnSecondaryStreamAllowed:ignoreZoomFactorAndQuadraSubPixelSceneMonitoring:secureSigningMode:ultraHighResolutionZeroShutterLagEnabled:];
+-[BWNondisruptiveSwitchingFormatSelector hasSecureSigningFormats];
+-[BWNondisruptiveSwitchingFormatSelector initWithPortType:supportFormats:quadraSubPixelSwitchingParameters:baseZoomFactor:zoomFactorToNondisruptiveSwitchingFormatIndexSIFRBinned:zoomFactorToNondisruptiveSwitchingFormatIndexMainAndSIFRBinned:zoomFactorToNondisruptiveSwitchingFormatIndexSIFRNonBinned:zoomFactorToNondisruptiveSwitchingFormatIndexSecureSigning:ultraHighResolutionSecureSigningNondisruptiveStreamingFormatIndex:ultraHighResolutionNondisruptiveStreamingFormatIndex:mainFormatSIFRBinningFactor:];
+-[BWNondisruptiveSwitchingFormatSelector lastZoomFactorFormatIndexIgnoringZoomFactorAndQuadraSubPixelSceneMonitoring];
+-[BWNondisruptiveSwitchingFormatSelector ultraHighResolutionNondisruptiveStreamingFormatIndex];
+-[BWNondisruptiveSwitchingFormatSelector zoomFactorToNondisruptiveSwitchingFormatIndexMainAndSIFRBinned];
+-[BWNondisruptiveSwitchingFormatSelector zoomFactorToNondisruptiveSwitchingFormatIndexSIFRBinned];
+-[BWNondisruptiveSwitchingFormatSelector zoomFactorToNondisruptiveSwitchingFormatIndexSIFRNonBinned];
+```

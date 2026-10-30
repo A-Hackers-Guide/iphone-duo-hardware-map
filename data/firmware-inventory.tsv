@@ -1,0 +1,56 @@
+5546009	Firmware/AOP/aopfw-v68aop.RELEASE.im4p	 Tag: IM4P  Type: aopf  Version: 1 
+9650201	Firmware/AOP2/aop2fw-v68aop2.RELEASE.im4p	 Tag: IM4P  Type: aop2  Version: 1 
+1925273	Firmware/AppleLPM/AppleLPM.v68.release.im4p	 Tag: IM4P  Type: alpm  Version: 1 
+99533	Firmware/M3/bin/securem3fw-v68.im4p	 Tag: IM4P  Type: sm3f  Version: 1 
+1069300	Firmware/Rose/r2p1/ftab.bin	
+5978021	Firmware/SE/Stockholm91.RELEASE.sefw	
+1149397	Firmware/SmartIOFirmware_ASCv8.im4p	 Tag: IM4P  Type: siof  Version: 1.0.0 
+1174	Firmware/V68_HapticAssets.im4p	 Tag: IM4P  Type: hpas  Version: 1 
+283085	Firmware/V68_LeapHapticsFirmware.im4p	 Tag: IM4P  Type: lphp  Version: 1 
+84742	Firmware/V68_MandoFirmware.im4p	 Tag: IM4P  Type: mndo  Version: 1 
+2308247	Firmware/V68_MtpFirmware.im4p	 Tag: IM4P  Type: mtpf  Version: 1 
+2657500	Firmware/V68_Multitouch.im4p	 Tag: IM4P  Type: mtfw  Version: 1 
+360903	Firmware/WirelessPower/WirelessPower.v68.im4p	 Tag: IM4P  Type: wchf  Version: 1.0 
+3411889	Firmware/agx/armfw1_g19p.im4p	 Tag: IM4P  Type: gf1f  Version: 1 
+3460945	Firmware/agx/armfw_g19p.im4p	 Tag: IM4P  Type: gfxf  Version: 1 
+74512	Firmware/all_flash/DeviceTree.v68ap.im4p	 Tag: IM4P  Type: dtre  Version: EmbeddedDeviceTrees-12661.52.3 
+2354056	Firmware/all_flash/LLB.v68.RELEASE.im4p	 Tag: IM4P  Type: illb  Version: mBoot-20457.52.7 
+38343	Firmware/all_flash/applelogo@2d~iphone.im4p	 Tag: IM4P  Type: logo  Version: EmbeddedImages-184.40.2 
+2353566	Firmware/all_flash/iBoot.v68.RELEASE.im4p	 Tag: IM4P  Type: ibot  Version: mBoot-20457.52.7 
+52180	Firmware/all_flash/iBootData.v68.RELEASE.im4p	 Tag: IM4P  Type: ibdt  Version: mBoot-20457.52.7 
+2326680	Firmware/all_flash/liquiddetect@2d~iphone.im4p	 Tag: IM4P  Type: liqd  Version: EmbeddedImages-184.40.2 
+5033007	Firmware/all_flash/recoverymode@2d~iphone.im4p	 Tag: IM4P  Type: recm  Version: EmbeddedImages-184.40.2 
+7216106	Firmware/all_flash/sep-firmware.v68.RELEASE.im4p	 Tag: IM4P  Type: sepi  Version: 1 
+21137	Firmware/all_flash/sep-patches.v68.im4p	 Tag: IM4P  Type: stg1  Version: AppleSEPROM-1483.0.0.100.14 
+1556505	Firmware/ane/h19_ane0_fw_perses_v6x.im4p	 Tag: IM4P  Type: anef  Version: 1 
+1556505	Firmware/ane/h19_ane1_fw_perses_v6x.im4p	 Tag: IM4P  Type: ane1  Version: 1 
+1396223	Firmware/ansf.t8160.release.im4p	 Tag: IM4P  Type: ansf  Version: AppleStorageFirmware-3975.40.15~303 
+107464	Firmware/avd/AppleAVDFW_H19P.im4p	 Tag: IM4P  Type: avdf  Version: 280d6e11 
+2737129	Firmware/ave/AppleAVE2FW_H19.im4p	 Tag: IM4P  Type: avef  Version: 1 
+10387	Firmware/ave/AppleAVE2FW_H19_AVE0.im4p	 Tag: IM4P  Type: ave0  Version: 1 
+17563	Firmware/ave/AppleAVE2FW_H19_AVE1.im4p	 Tag: IM4P  Type: ave1  Version: 1 
+11863	Firmware/ave/AppleAVE2FW_H19_AVE2.im4p	 Tag: IM4P  Type: ave2  Version: 1 
+9975	Firmware/ave/AppleAVE2FW_H19_AVE3.im4p	 Tag: IM4P  Type: ave3  Version: 1 
+12207	Firmware/ave/AppleAVE2FW_H19_AVE4.im4p	 Tag: IM4P  Type: ave4  Version: 1 
+11911	Firmware/ave/AppleAVE2FW_H19_AVE5.im4p	 Tag: IM4P  Type: ave5  Version: 1 
+9695	Firmware/ave/AppleAVE2FW_H19_AVE6.im4p	 Tag: IM4P  Type: ave6  Version: 1 
+12915	Firmware/ave/AppleAVE2FW_H19_AVE7.im4p	 Tag: IM4P  Type: ave7  Version: 1 
+26311	Firmware/ave/AppleAVE2FW_H19_AVE8.im4p	 Tag: IM4P  Type: ave8  Version: 1 
+206061155	Firmware/c4020iphone/Release/patched/ftab.bin	
+3016187	Firmware/dcp/t8160dcp.im4p	 Tag: IM4P  Type: dcpf  Version: 1 
+3016667	Firmware/dcp/t8160dcp_restore.im4p	 Tag: IM4P  Type: dcpf  Version: 1 
+2353596	Firmware/dfu/iBEC.v68.RELEASE.im4p	 Tag: IM4P  Type: ibec  Version: mBoot-20457.52.7 
+2354056	Firmware/dfu/iBSS.v68.RELEASE.im4p	 Tag: IM4P  Type: ibss  Version: mBoot-20457.52.7 
+586503	Firmware/embeddedaudioresources/image4/v68-boot-chime.im4p	 Tag: IM4P  Type: aubt  Version: 1 
+33521898	Firmware/image4/exclavecore_bundle.v68.RELEASE.im4p	 Tag: IM4P  Type: excl  Version: 1 
+17989866	Firmware/image4/exclavecore_bundle.v68.RELEASE.restore.im4p	 Tag: IM4P  Type: excl  Version: 1 
+29851675	Firmware/isp_bni/adc-boreas-v68.im4p	 Tag: IM4P  Type: ispf  Version: 1 
+166381	Firmware/msr/t8160.msrf.im4p	 Tag: IM4P  Type: msrf  Version: 1 
+166381	Firmware/msr/t8160.rmsr.im4p	 Tag: IM4P  Type: rmsr  Version: 1 
+36419	Firmware/pmc/t8160pmcfw.im4p	 Tag: IM4P  Type: pmcf  Version: 1 
+737305	Firmware/pmp/t8160pmp.im4p	 Tag: IM4P  Type: pmpf  Version: 0 
+1396223	Firmware/rans.t8160.release.im4p	 Tag: IM4P  Type: rans  Version: AppleStorageFirmware-3975.40.15~303 
+216966	Firmware/sptm.t8160.release.im4p	 Tag: IM4P  Type: sptm  Version: 1 
+30240436	Firmware/t2026phoneG2/Release/ftab.bin	
+224171	Firmware/txm.iphoneos.release.im4p	 Tag: IM4P  Type: trxm  Version: 1 
+19633894	Firmware/vinyl_20.vnlfw	

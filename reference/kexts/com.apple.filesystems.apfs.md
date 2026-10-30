@@ -1,0 +1,3193 @@
+# `com.apple.filesystems.apfs`
+
+- Name: apfs
+- Version: `3288.52.1`
+- UUID: `2F2B51FB-27D4-38D4-86C4-163409AAE8E8`
+- Source version: `3288.52.1.0.0`
+- Depends on: [`com.apple.driver.AppleARMWatchdogTimer`](com.apple.driver.AppleARMWatchdogTimer.md) 1.0.0, [`com.apple.driver.AppleEffaceableStorage`](com.apple.driver.AppleEffaceableStorage.md) 1.0, [`com.apple.iokit.CoreAnalyticsFamily`](com.apple.iokit.CoreAnalyticsFamily.md) 1.0, [`com.apple.iokit.IOStorageFamily`](com.apple.iokit.IOStorageFamily.md) 2.1, [`com.apple.kec.corecrypto`](com.apple.kec.corecrypto.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 15.0, [`com.apple.kpi.dsep`](com.apple.kpi.dsep.md) 19.4.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 15.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 15.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 15.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 15.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 15.0, [`com.apple.security.Image4`](com.apple.security.Image4.md) 1.0.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (7) [KC]
+
+### AppleAPFSContainer
+- `CFBundleIdentifier`: `com.apple.filesystems.apfs`
+- `IOClass`: `AppleAPFSContainer`
+- `IOMatchCategory`: `IOStorage`
+- `IOPersonalityPublisher`: `com.apple.filesystems.apfs`
+- `IOProbeScore`: `1000`
+- `IOPropertyMatch`:
+  -
+    - `Content Hint`: `EF57347C-0000-11AA-AA11-00306543ECAC`
+- `IOProviderClass`: `IOMedia`
+- `IOUserClientClass`: `AppleAPFSUserClient`
+
+### AppleAPFSContainerScheme
+- `CFBundleIdentifier`: `com.apple.filesystems.apfs`
+- `IOClass`: `AppleAPFSContainerScheme`
+- `IOMatchCategory`: `IOStorage`
+- `IOPersonalityPublisher`: `com.apple.filesystems.apfs`
+- `IOProbeScore`: `2000`
+- `IOPropertyMatch`:
+  -
+    - `Content Hint`: `7C3457EF-0000-11AA-AA11-00306543ECAC`
+- `IOProviderClass`: `IOMedia`
+
+### AppleAPFSContainerSchemeWholeDisk
+- `CFBundleIdentifier`: `com.apple.filesystems.apfs`
+- `IOClass`: `AppleAPFSContainerScheme`
+- `IOMatchCategory`: `IOStorage`
+- `IOPersonalityPublisher`: `com.apple.filesystems.apfs`
+- `IOProbeScore`: `2000`
+- `IOPropertyMatch`:
+  -
+    - `Whole`: `True`
+- `IOProviderClass`: `IOMedia`
+
+### AppleAPFSMediaBSDClient
+- `CFBundleIdentifier`: `com.apple.filesystems.apfs`
+- `IOClass`: `AppleAPFSMediaBSDClient`
+- `IOMatchCategory`: `IOMediaBSDClient`
+- `IOPersonalityPublisher`: `com.apple.filesystems.apfs`
+- `IOProbeScore`: `31000`
+- `IOProviderClass`: `AppleAPFSMedia`
+- `IOResourceMatch`: `IOBSD`
+
+### AppleAPFSRecovery
+- `CFBundleIdentifier`: `com.apple.filesystems.apfs`
+- `IOClass`: `AppleAPFSContainerScheme`
+- `IOMatchCategory`: `IOStorage`
+- `IOPersonalityPublisher`: `com.apple.filesystems.apfs`
+- `IOProbeScore`: `2000`
+- `IOPropertyMatch`:
+  -
+    - `Content Hint`: `52637672-7900-11AA-AA11-00306543ECAC`
+- `IOProviderClass`: `IOMedia`
+- `IOUserClientClass`: `AppleAPFSUserClient`
+
+### AppleAPFSVolumeBSDClient
+- `CFBundleIdentifier`: `com.apple.filesystems.apfs`
+- `IOClass`: `AppleAPFSVolumeBSDClient`
+- `IOMatchCategory`: `IOMediaBSDClient`
+- `IOPersonalityPublisher`: `com.apple.filesystems.apfs`
+- `IOProbeScore`: `31000`
+- `IOProviderClass`: `AppleAPFSVolume`
+- `IOResourceMatch`: `IOBSD`
+
+### com.apple.filesystems.apfs
+- `CFBundleIdentifier`: `com.apple.filesystems.apfs`
+- `IOClass`: `com_apple_filesystems_apfs`
+- `IOMatchCategory`: `com_apple_filesystems_apfs`
+- `IOPersonalityPublisher`: `com.apple.filesystems.apfs`
+- `IOProviderClass`: `IOResources`
+- `IOResourceMatch`: `IOBSD`
+
+
+## C++ classes (11) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `APFSOSNumberAtomic` | 0x18 | OSNumber |
+| `AppleAPFSContainer` | 0x748 | IOPartitionScheme → IOStorage → IOService → IORegistryEntry |
+| `AppleAPFSContainerScheme` | 0x150 | IOStorage → IOService → IORegistryEntry |
+| `AppleAPFSGraft` | 0x5c8 | IOService → IORegistryEntry |
+| `AppleAPFSMedia` | 0xd8 | IOMedia → IOStorage → IOService → IORegistryEntry |
+| `AppleAPFSMediaBSDClient` | 0xb0 | IOMediaBSDClient → IOService → IORegistryEntry |
+| `AppleAPFSSnapshot` | 0xe0 | IOMedia → IOStorage → IOService → IORegistryEntry |
+| `AppleAPFSUserClient` | 0x110 | IOUserClient → IOService → IORegistryEntry |
+| `AppleAPFSVolume` | 0x3e8 | IOMedia → IOStorage → IOService → IORegistryEntry |
+| `AppleAPFSVolumeBSDClient` | 0xb0 | IOMediaBSDClient → IOService → IORegistryEntry |
+| `com_apple_filesystems_apfs` | 0x88 | IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x00051371 off=0x00daa2d0-0x00dfb641 addr=0xfffffe0007dae2d0-0xfffffe0007dff641 r--/r--   __TEXT            
+	sz=0x0000094c off=0x00daa9f0-0x00dab33c addr=0xfffffe0007dae9f0-0xfffffe0007daf33c               __TEXT.__const            
+	sz=0x00050305 off=0x00dab33c-0x00dfb641 addr=0xfffffe0007daf33c-0xfffffe0007dff641               __TEXT.__cstring          (CstringLiterals)
+001: LC_SEGMENT_64 sz=0x00153ba4 off=0x039ac690-0x03b00234 addr=0xfffffe000a9b0690-0xfffffe000ab04234 r-x/r-x   __TEXT_EXEC       
+	sz=0x00151844 off=0x039ac690-0x03afded4 addr=0xfffffe000a9b0690-0xfffffe000ab01ed4          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00002360 off=0x03afded4-0x03b00234 addr=0xfffffe000ab01ed4-0xfffffe000ab04234          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00001458 off=0x04a36028-0x04a37480 addr=0xfffffe000ba3a028-0xfffffe000ba3b480 rw-/rw-   __DATA            
+	sz=0x00000754 off=0x04a36028-0x04a3677c addr=0xfffffe000ba3a028-0xfffffe000ba3a77c               __DATA.__data             
+	sz=0x00000d00 off=0x00000000-0x00000d00 addr=0xfffffe000ba3a780-0xfffffe000ba3b480               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x0000fbe0 off=0x014a2b28-0x014b2708 addr=0xfffffe00084a6b28-0xfffffe00084b6708 rw-/rw-   __DATA_CONST      
+	sz=0x00000010 off=0x014a2b28-0x014a2b38 addr=0xfffffe00084a6b28-0xfffffe00084a6b38         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000010 off=0x014a2b38-0x014a2b48 addr=0xfffffe00084a6b38-0xfffffe00084a6b48         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00006898 off=0x014a2b48-0x014a93e0 addr=0xfffffe00084a6b48-0xfffffe00084ad3e0         __DATA_CONST.__const            
+	sz=0x00005440 off=0x014a93e0-0x014ae820 addr=0xfffffe00084ad3e0-0xfffffe00084b2820         __DATA_CONST.__kalloc_type      
+	sz=0x00002bc0 off=0x014ae820-0x014b13e0 addr=0xfffffe00084b2820-0xfffffe00084b53e0         __DATA_CONST.__kalloc_var       
+	sz=0x00000014 off=0x014b13e0-0x014b13f4 addr=0xfffffe00084b53e0-0xfffffe00084b53f4         __DATA_CONST.__assert           
+	sz=0x000011b0 off=0x014b13f8-0x014b25a8 addr=0xfffffe00084b53f8-0xfffffe00084b65a8         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000158 off=0x014b25a8-0x014b2700 addr=0xfffffe00084b65a8-0xfffffe00084b6700         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000008 off=0x014b2700-0x014b2708 addr=0xfffffe00084b6700-0xfffffe00084b6708         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 1175 at 0x04afe9ec
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     2F2B51FB-27D4-38D4-86C4-163409AAE8E8
+008: LC_SOURCE_VERSION           3288.52.1.0.0
+009: LC_FUNCTION_STARTS          offset=0x004acce30 size=0x1090
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleExecutable`: `apfs`
+- `CFBundleIdentifier`: `com.apple.filesystems.apfs`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `apfs`
+- `CFBundleNumericVersion`: `0`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `3288.52.1`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `3288.52.1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2015-2023 Apple Inc. All rights reserved.`
+- `OSBundleRequired`: `Local-Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/apfs.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198891470128`
+- `_PrelinkExecutableRelativePath`: `apfs`
+- `_PrelinkExecutableSize`: `1793869`
+- `_PrelinkExecutableSourceAddr`: `-2198891470128`
+- `_PrelinkKmodInfo`: `-2198827982808`
+
+## Strings (6967) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+First 3000 of 6967.
+
+**[__TEXT.__cstring]**
+
+- `com.apple.private.vfs.snapshot`
+- `%s:%d: %s failed to remove attribution tag for ino %llu, error %d\n`
+- `purgeAttempt`
+- `!\"fext range overflowed\"`
+- `get_dir_stats`
+- `xattr_tmp_ino`
+- `%s:%d: %s punch hole dstream and file size mismatch: [%llu, %llu); ino %llu, file_size %llu, dstream exists %d, size %llu, alloced_size %llu\n`
+- `(sb->new_sparse_bytes % sb->fs_bsize) == 0`
+- `%s:%d: no vnode for first mount of filesystem\n`
+- `!xf_get(&ino->extf, INO_EXT_TYPE_UNRAW_SIZE, NULL, &size, sizeof(size))`
+- `jobj_to_key_val`
+- `Main_Rev`
+- `tx_flush`
+- `nx_keybag_create_vek`
+- `apfs_clonegroup_lookup_locked`
+- `%s:%d: %s successfully loaded vek during mount\n`
+- `PFK`
+- `%s:%d: %s tx xid %lld took %lld us to flush\n`
+- `%s:%d: failed to roll ino %llu, error %d\n`
+- `%s:%d: %s can't update purgeable record of ino %llu with new dstream_id %llu, (old %llu): %d\n`
+- `%s:%d: %s Post offline-purge cleanup aborted with error %d.\n`
+- `apfs_vek_remove_aks_state`
+- `%s:%d: %s PFK transcription (keybag = %s) returned %d, took %llu us to drain in-flight ios, %llu us to transcribe, total %llu us\n`
+- `flush_dirty_data`
+- `%s:%d: %s Cannot allocate memory to verify compressed data in inode %lld\n`
+- `%s:%d: %s error unreserving space, %lld blocks: %d\n`
+- `drop`
+- `kbn_handler_thread_join`
+- `%s:%d: %s cannot cancel: thread already exited\n`
+- `%s:%d: %s %s: could not cp_create for obj-id %lld (name: %s)\n`
+- `%s:%d: cannot deref staged ek %llu, error %d\n`
+- `%s:%d: %s unable to find snapshot %lld: %d\n`
+- `%s:%d: %s invalid attribution tag id length for ino %llu, hash %llu\n`
+- `%s:%d: %s dst (ino %llu) cannot be cloned\n`
+- `apfs_sanity_check_tree_type`
+- `%s:%d: %s level %d node 0x%llx: error getting index %d child oid: %d\n`
+- `Data`
+- `%s:%d: %s failed to insert hardlink drec %lld:%s for file-id %lld (err %d)\n`
+- `%s:%d: %s Estimated minimum number of blocks to resize to is %lld, too close to (or less than) resize request of %lld blocks; re-calculating:\n`
+- `encrypted`
+- `%s:%d: %s inline cancel previous cascading un-lock request\n`
+- `%s:%d: %s ino %lld does not have a NAME!\n`
+- `handle_obj_mem_mgr_ctl_internal`
+- `%s:%d: %s %s: could not insert inode obj-id %lld (name: %s)\n`
+- `%s:%d: %s Not enough bytes are marked as unwritten to adjust byte counter by %zu when trying to %s list entry for inode %lld\n`
+- `%s:%d: Found dangling mount %s\n`
+- `Metadata: Number of omap bytes written`
+- `%s:%d: %s Failed to extract speculative download info\n`
+- `%s:%d: %s failed to increment physical range (pbn %llu) (len %llu) (err %d)\n`
+- `apfs_create_doc_id_tree_if_needed`
+- `numDirsEvicted`
+- `ckpw_thread_self(apfs)`
+- `spec_telem_info_iterate`
+- `%s:%d: %s Couldn't increment reference count on crypto ID %lld\n`
+- `%s:%d: %s omap check failed for omap %lld: %d\n`
+- `enhanced_apfs_enabled_helper`
+- `graft_blockmap_lut_metadata_mark_omap`
+- `%s:%d: %s _OP_GET_FILE_EXTS requires the get-file-exts entitlement\n`
+- `ep_cache_purge_expired`
+- `%s:%d: %s Hash chunk at offset %lld in data stream %lld is enormous - it needs %lld bytes\n`
+- `%s:%d: %s lookup returned unexpected error while iterating: %d\n`
+- `tx_mgr_free_tx`
+- `ContainerBlockSize`
+- `site.AppleAPFSContainerScheme`
+- `hcp_chclass_remap`
+- `%s:%d: %s can't revert to snapshot with different encryption state, snap xid %llu, apfs flags 0x%llx, snap flags 0x%llx\n`
+- `%s:%d: %s could not lookup file extent at %llu for ino %llu with err %d\n`
+- `handle_is_vol_locked`
+- `site.j_dir_stats_t`
+- `authapfs_hash.c`
+- `lookup_purgeable_drec_as_record`
+- `%s:%d: %s deletion threw %d for cursor %llu, oid %llu, oflags 0x%x\n`
+- `\"HW CRYPTO: [media unwrap]: CP_RAW_KEY_WRAPPEDKEY is NOT set\" @%s:%d`
+- `%s:%d: failed: cksum 0x%016llx, oid 0x%llx, type 0x%x/0x%x, size %d\n`
+- `%s:%d: %s Defrag run time %llu.%03llumSec, reallocated %llu blocks in %llu extents across %llu dstreams, finished with error %d\n`
+- `%s:%d: all done.  going home.  (numMountedAPFSVolumes %d)\n`
+- `%s:%d: %s trying to restore refcnt on dstream id %llu\n`
+- `wait_for_fixup_thread`
+- `%s:%d: %s Couldn't copy pfkur tree into new object, err %d\n`
+- `%s:%d: %s main: timed out waiting for data (paddr %llu, len %u): error %d (%s)\n`
+- `%s:%d: apfs_extract_root_hash_and_manifest failed with error: %s (%d)\n`
+- `2121222222118`
+- `nx_resize_get_new_metadata_params`
+- `%s:%d: %s Couldn't clean up crypto state: %d\n`
+- `numFilesStale`
+- `fext_get_crypto_id`
+- `%s:%d: Failed to remove sparse bytes attribute from ino %lld, but it was successfully got, errro %d\n`
+- `\"HW CRYPTO: [unwrap]: CP_RAW_KEY_WRAPPEDKEY is NOT set\" @%s:%d`
+- `FX defrag: Run4 free extents maximal size`
+- `Text file busy`
+- `!(rsrc_ino->iflags & JI_HAS_EPHEMERAL_POLICY)`
+- `aks_import_pfk`
+- `nx_check_checkpoint_map_block`
+- `%s:%d: %s tree_delete() failed: %d\n`
+- `%s:%d: %s sm_fs_reserve_block_count %lld sm_fs_reserve_alloc_count %lld\n`
+- `apfs_nstream_read`
+- `crypto_id != 5`
+- `FX defrag: Number of dstreams with at least one reallocated extent`
+- `%s:%d: %s Failed to decrement extra crypto ref (crypto ID %llu, new dstream ID %llu): %d (%s)\n`
+- `%s:%d: %s error getting bitmap object for chunk %d @ %lld: %d\n`
+- `%s:%d: %s tree_lookup_ge(volume: %s) failed with %u\n`
+- `get_new_crypto_id_if_needed`
+- `%s:%d: %s failed to update attribution tag record in the fsroot tree for signing id <%s> with <%s> <%d>\n`
+- `/filesystems`
+- `site.struct edt_fstab`
+- `%s:%d: %s xp data is fragmented, this is not supported in grafts\n`
+- `%s:%d: %s ino %lld has no name! (should be: %s)\n`
+- `%s:%d: %s found existing proposed wvek record in nx keybag (from previous failure)\n`
+- `%s:%d: %s Failed to copy supplemental tree (type %d): %d (%s)\n`
+- `%s:%d: %s graft jobj id range (%llu+%llu) overlaps existing jobj_id %llu\n`
+- `%s:%d: %s Requested block-out range [%lld,%lld] is outside device size (size=%lld)\n`
+- `allocated`
+- `%s:%d: %s don't know where the xattr data is stored for obj-id %lld!\n`
+- `ier_pick_range`
+- `%s:%d: %s Not enough bytes are reserved to adjust byte counter by %zu when trying to %s list entry for inode %lld\n`
+- `Object cache: Number of evictions`
+- `Calls to VNOP_REMOVE`
+- `apfs_mount_update_snaprevert`
+- `%s:%d: Creating an xART volume without entitlements is not allowed.\n`
+- `%s:%d: %s failed to remove dir stats key from <%llu, %llu> clone mapping, error %d\n`
+- `apfs_clonegroup_merge_share_range`
+- `lock_inode`
+- `apfs_keybag_unload_class_keys`
+- `createAPFSVolume`
+- `%s:%d: %s Zero-length range at offset %lld in inode %lld\n`
+- `iterative_ctx->xid && (iterative_ctx->xid != ((xid_t)~0ULL))`
+- `Volume statistics`
+- `Bytes (Write)`
+- `%s:%d: %s grafting a file being crypto-rolled is not allowed\n`
+- `%s:%d: %s Error! Failed to release the global extent manipulation lock! (error %d)\n`
+- `112222222222222222222222221221222222221222`
+- `obj_checkpoint_known`
+- `%s:%d: %s Unable to look up any snapshot greater than %lld ?: %d\n`
+- `tmp_ino`
+- `%s:%d: %s Failed to remove purgeable record (drec): %d (%s)\n`
+- `autodiskmount`
+- `%s:%d: %s Failed to insert %llu->(%llu, %llu) into the blockmap lut, error %d\n`
+- `apfs_set_bsd_flags`
+- `%s:%d: %s failed to get iterator next for speculative telemetry info, error %d (%s)\n`
+- `%s:%d: %s Deleted the shadow_fs_root tree %p\n`
+- `%s:%d: %s failed to update dstream on namedstream inode %llu for inode %llu\n`
+- `%s:%d: %s NOT setting the purgeable-fixup xattr on the root dir of %s because we %s\n`
+- `tmp-ino-defrag-`
+- `No route to host`
+- `%s:%d: %s failed to remove <%llu, %llu> clone mapping, error %d\n`
+- `%s:%d: %s apfs_meta_crypto_state_destroy returned %d\n`
+- `site.nx_t`
+- `%s:%d: %s no special dir-stats op flags are allowed on non-expanded volumes\n`
+- `insecure_boot_enabled`
+- `%s:%d: %s Failed to get next extent in fragmented metadata tree: %d\n`
+- `%s:%d: %s Can not start a txn to change the volume name.\n`
+- `%s:%d: %s failed to finish all transactions in sync()! (err %d)\n`
+- `%s:%d: %s failed to delete fs extentref tree after fs creation failed: %d\n`
+- `%s:%d: %s dstream id %llu refcnt %u (delta: %d) would overflow\n`
+- `%s:%d: %s fs_tx_leave failed with error %d\n`
+- `%s:%d: %s Couldn't make snap metadata dataless, err %d\n`
+- `%s:%d: Failed to start unmount dangling thread for container %s, error %d`
+- `DoNotUseSEP`
+- `%s:%d: failed to map locker data\n`
+- `/arm-io/sep`
+- `wait-for-busy-to-inode`
+- `%s:%d: %s Failed to insert src_ino %llu into group %llu (src: %llu dst: %llu) err: %s\n`
+- `%s:%d: %s metadata alloc order %lld %lld %lld %lld\n`
+- `%s:%d: %s Failed to remove snap_name record!\n`
+- `BSD Major`
+- `Offline`
+- `Statistics`
+- `%s:%d: %s lock is not exclusive\n`
+- `apfs_check_snapshots_extents`
+- `Too many references: can't splice`
+- `jobj_type_from_possibly_large_key`
+- `%s:%d: ### filtering out entry %d: 0x%llx:0x%llx\n`
+- `File defrag: Number of file extents reallocated`
+- `ungrafting`
+- `%s:%d: %s bad clonegroup_key_t, size:%u\n`
+- `%s:%d: %s *** failed to fetch the dstream pointer for %lld (ret %d)\n`
+- `\"ciphertext object @ %p can not be dirtied!! (flags: 0x%llx)\\n\" @%s:%d`
+- `\"Reserved space < reserved metadata: %llu < %llu\\n\" @%s:%d`
+- `%s:%d: failed to setup next ierco for ino %llu, %d\n`
+- `ierco->override_inode`
+- `preallocate_tempfile_allocate`
+- `prepare_write_and_lock`
+- `%s:%d: %s there should have been an entry for the name %s ret %d\n`
+- `n`
+- `%s:%d: Failed to send event [%s] to CoreAnalytics\n`
+- `%s:%d: %s failed to lookup attribution tag record in the fsroot tree for s_hash  <%llu> with <%s> <%d>\n`
+- `%s:%d: %s Unknown purgeable flags (%u) encountered for file %llu, skipping...\n`
+- `finish_purgeable_fixup`
+- `%s:%d: %s failed to delete PFKUR tree: %s (%d)\n`
+- `%s:%d: No IOKit node for %d.%d to deliver notification %08x\n`
+- `%s:%d: %s Could not acquire extent manipulation lock\n`
+- `%s:%d: %s Couldn't get apfs oid %llu, fsidx %u, err %d\n`
+- `!apfs->apfs_pfkur.override_num_fexts`
+- `%s:%d: %s about to delete %llu orphan purgeable records\n`
+- `apfs_keybag_load_class_keys`
+- `ino->vp != ((struct vnode *)((void*)0))`
+- `%s:%d: %s Cannot flush data - %s(%d)\n`
+- `%s:%d: %s failed to get apfs object oid %llu\n`
+- `%s:%d: %s did not find purgeable drec for file %lld (parent id %lld) (fsize %lld)\n`
+- `%s:%d: %s apfs_rr: cleanup first failed to decrement crypto refcount (ret %d) \n`
+- `apfs_write_drain_full`
+- `ino_poison_vnode(apfs, ino)`
+- `mark_doc_id_index_for_rebuild_if_needed`
+- `%s:%d: %s failed to enter tx on doc-id fixup completion, %d\n`
+- `%s:%d: %s omap_conversion tweak rolling failed: %s\n`
+- `apfs_clonegroup_inode_became_full_clone`
+- `handle_get_graft_info`
+- `Connection reset by peer`
+- `YES`
+- `%s:%d: %s ino %lld failed to remove purgatory entry: iflags 0x%llx internal_flags 0x%llx isdir: %d\n`
+- `%s:%d: cannot clone %llu dstream crypto, %d\n`
+- `%s:%d: %s device_handle block size %d block count %lld features %d %s %s\n`
+- `%s:%d: %s successfully recovered existing proposed vek\n`
+- `Recovery`
+- `%s:%d: %s Evicting nx keybag.\n`
+- `Can't send after socket shutdown`
+- `%s:%d: %s ***: expanded obj type %d (obj_id %llu) found on unsupported volume\n`
+- `%s:%d: %s container cleanly-unmounted flag set.\n`
+- `%s:%d: ino %llu, tmp inode %llu iterator failed %d\n`
+- `%s:%d: %s failed to enter tx to store proposed wvek record, err = %d\n`
+- `%s:%d: %s failed to RE-insert orig from_drec %lld:%s ino %lld err %d\n`
+- `nx_evict_physical_tree`
+- `%s:%d: uiomove failed %d (reclen %d, resid %lld)\n`
+- `cst->ep_retain_count > 0`
+- `%s:%d: %s Found invalid purgeable start time field (length %zu id %llu)\n`
+- `%s:%d: %s spaceman checkpoint %s traverse failed: %d\n`
+- `%s:%d: %s nx_keybag_delete failed for the target volume %s with: %s\n`
+- `%s:%d: %s failed inserting hole %lld:%lld (pos %lld, len %lld alloced_size %lld) err %d\n`
+- `ino->rsrc_ekwk == cur_ekwk`
+- `(sb->new_alloced_size % sb->fs_bsize) == 0`
+- `xattr_protected(\"com.apple.system.fs.speculative_telemetry\")`
+- `%s:%d: %s snapshot is sealed, cannot make dataless\n`
+- `\"ino %lld illogical file extent %lld:%lld != alloced_size %lld (fsize %lld)\\n\" @%s:%d`
+- `%s:%d: %s failed to retain crypto state %lld (err %d)\n`
+- `nx_mount.c`
+- `xid`
+- `sanitize_rsrcfork(rsrcfork_)`
+- `%s:%d: AKS unwrap_key failed, error = %x\n`
+- `(get_vol_crypto(apfs) != VOL_PFKEY) || (owner_ino->internal_flags & INODE_PROT_CLASS_EXPLICIT)`
+- `%s:%d: %s Combination of flags %llx and supplemental flags %llx is unsupported.\n`
+- `%s:%d: root vnode is busy\n`
+- `Connection refused`
+- `apfs_lock_phys_range`
+- `\"res->xid %lld but xid is now %lld\\n\" @%s:%d`
+- `%s:%d: %s can't enter the cleanup transaction, ret %d\n`
+- `%s:%d: %s failed to get next pfkur state object, error %s(%d)\n`
+- `ier_alloc_tmp_space`
+- `revert_extents_to_snapshot`
+- `FX defrag: Run2 alloc extents average size`
+- `%s:%d: %s ### obj-id %lld/%lld err %d offset %lld size %lld mapflags %d dstream %lld/%lld ###\n`
+- `uio`
+- `purgeable_file_is_busy`
+- `vnode_dev_encryption_type`
+- `ep_chclass`
+- `%s:%d: %s failed to allocate memory for root-snapshot-name`
+- `reference`
+- `com.apple.system.Security`
+- `site.nx_reaper_t`
+- `11212221111111222222222211`
+- `%s:%d: %s Couldn't lookup_ge (group:%llu inum:%llu priv_id:%llu): %s\n`
+- `%s:%d: %s attempting to tag sealed snap without entitlement\n`
+- `ino->iflags & JI_RAW_ENCRYPTED`
+- `%s:%d: %s tx_leave failed to cleanup metadata rolling key for volume %s, error = %d\n`
+- `apfs_jhash_try_insert_stream`
+- `Illegal byte sequence`
+- `%s:%d: %s oid 0x%llx flags 0x%llx 0x%x type 0x%x/0x%x non-virtual object missing paddr!\n`
+- `%s:%d: xattr %s, uio %lld:+%lld, %llu, failed with EINVAL\n`
+- `%s:%d: failed to notify clients that ier has completed %d\n`
+- `apfs->apfs_ier.override_inode == ino`
+- `graft_blockmap_lut_tree_create`
+- `%s:%d: %s Failed to allocate requested space: %d (%s)\n`
+- `%s:%d: %s oid 0x%llx flags 0x%llx 0x%x type 0x%x/0x%x error writing: %d\n`
+- `%s:%d: %s tree_iterator_init failed with error %d\n`
+- `(new_prot_class <= 3) || (new_prot_class == 7) || (kb_supports_class_d && (new_prot_class == 4))`
+- `fext_slide(fexts, 1, 16384) == 0`
+- `tmp-ino-purging-`
+- `\"failed to commit proposed wvek record, err = 0x%x\\n\" @%s:%d`
+- `FX defrag: Run4 free extents count`
+- `Calls to VNOP_EXCHANGE`
+- `!raw_ino_split(raw_ino)`
+- `%s:%d: %s re-flipping persistence of old spaceman free queue tree %d failed: %d\n`
+- `Couldn't find the graft APFS of the inode\n`
+- `%s:%d: %s directory has an illegal hardlinked child (dir: %lld ; child ino %lld)\n`
+- `%s:%d: %s failed to tx enter, error %d\n`
+- `%s:%d: %s No vnode for provided host graft inode!\n`
+- `%s:%d: %s Failed to allocate %llu bytes (%llu bytes allocated) on ino %llu: %d (%s)\n`
+- `%s:%d: %s failed to find root-snapshot-name <%s>: %s (%d)\n`
+- `get_clone_mapping_from_clonegroups_using_private_id`
+- `%s:%d: %s failed to get inode %d\n`
+- `%s:%d: failed to get filesystem entry at: %s\n`
+- `input arg is a NULL pointer`
+- `%s:%d: %s Graft apfs mount failed: %d\n`
+- `%s:%d: %s failed to create sibling link for orig_ino %lld (parent/name %lld:%s)\n`
+- `apfs_kext`
+- `!(src->flags & FEXT_CRYPTO_ID_IS_TWEAK)`
+- `wrapped_ek->key == skey_get_ek(key)`
+- `%s:%d: %s Supplemental flags %llx are incompatible with hardlinks.\n`
+- `\"Invalid state (on main) for I/O context: %u\" @%s:%d`
+- `%s:%d: %s couldn't get clonegroup tree err:%s\n`
+- `%s:%d: %s failed to get fsys idx=%u oid=%llu: %d\n`
+- `%s:%d: %s clonegroups enabled for this volume\n`
+- `%s:%d: %s failed to init extended fields on clone mapping <%llu/%llu> from blob\n`
+- `\"invalid offset (%llu) for last fext lookup\\n\" @%s:%d`
+- `%s:%d: %s level %d node 0x%llx: error getting index %d child 0x%llx flags 0x%x: %d\n`
+- `%s:%d: clone_mapping_add_ino failed for ino %llu: %u\n`
+- `%s:%d: %s Failed to mark mapping (%lld, %lld) in lut, error: %d\n`
+- `\"btree rightmost leaf field is set for physical tree!\\n\" @%s:%d`
+- `apfs_rr_should_defrag_phys_extents`
+- `%s:%d: %s no existing proposed vek to recover\n`
+- `vol.fs_mntopts`
+- `%s:%d: %s Error %d ungrafting at dir %llu\n`
+- `ep_reclaim`
+- `apfs_release_reserved_blocks`
+- `owner`
+- `%s:%d: %s FS will NOT have extended vek protection classes\n`
+- `old_sid == CRYPTO_ONEKEY_ID`
+- `%s:%d: malformed %s keybag%s\n`
+- `%s:%d: %s failed to enter tx to update wvek record, err = %d\n`
+- `asyncCryptoReadCallback`
+- `Overprovision`
+- `%s:%d: %s could not create UPL : ino %lld/%lld pl_offset %lld f_offset %lld size %d file size %lld error %d\n`
+- `%s:%d: %s root vnode is busy\n`
+- `%s:%d: %s nx_keybag_create secondary key failed for the source volume %s with: %s\n`
+- `%s:%d: %s Cannot construct reservation list for sparse extent for %lld bytes at offset %lld in inode %lld: %s(%d)\n`
+- `%s:%d: %s couldn't read checkpoint data block %d @ %lld: %d\n`
+- `\"unexpected storagetype: 0x%x\\n\" @%s:%d`
+- `%s:%d: AKS unwrap_media_key returned 0x%x for tag = %d\n`
+- `\"xattr changed without updating namedstream vnode\\n\" @%s:%d`
+- `%s:%d: %s Reusing existing target volume at index %d with UUID %s\n`
+- `%s:%d: failed context evaluate: %u\n`
+- `%s:%d: %s Found allocated range starting at %lld\n`
+- `%s:%d: %s Data at paddr %lld - probably not APFS object - type %x, subtype: %x is not free\n`
+- `%s:%d: %s failed to set purgatory thread policy: %d`
+- `%s:%d: %s apfs is being LOCKED!\n`
+- `!apfs->apfs_pfkur.override_fexts`
+- `%s:%d: %s failed to delete inode #%d ret=%d\n`
+- `%s:%d: %s unknown ioctl %s('%c', %lu, %lu) (0x%lx), pid = %d\n`
+- `%s:%d: %s couldn't find drec for tmp_ino %llu (%s)\n`
+- `%s:%d: conflicting mount options: probe %d temporary %d sbindex %d\n`
+- `%s:%d: %s checkpoint descriptor index %d out of range [0...%d]\n`
+- `%s:%d: %s Failed to update number of entries due to interger overflow\n`
+- `%s:%d: %s couldn't remove (group:%llu inum:%llu priv_id:%llu) err:%s\n`
+- `%s:%d: %s Cannot evict extent in range %llu->%llu as inode is marked immovable\n`
+- `%s:%d: cannot start background thread %d\n`
+- `apfs_pfk_init`
+- `vol.fs_type`
+- `%s:%d: %s Data could not be copied from original extent to new extent, error %d\n`
+- `op`
+- `%s:%d: %s Cannot create UIO for offset %lld of inode %lld\n`
+- `lrange_sanitize(&(lrange_t) {.start = start, .len = len})`
+- `%s:%d: %s error reaping object 0x%llx of type 0x%x: %d\n`
+- `\"cannot receive cx-expiry event on non-content \" \"protected volumes\" @%s:%d`
+- `%s:%d: %s grafting on a volume using software crypto/supports crypto transformation is not allowed\n`
+- `Cannot allocate memory`
+- `parent_proc_name`
+- `1111222221221`
+- `pfkur-thread-yield`
+- `%s:%d: %s ino %llu was unexpectedly tagged and maintaining SAF dir-stats\n`
+- `%s:%d: %s commit failed, err = %d (will retry on next boot)\n`
+- `container_get`
+- `%s:%d: %s fs_add_xattr failed for vol uuid, error %d\n`
+- `%s:%d: %s failed to create symlink xattr (err %d) on ino %llu\n`
+- `apfs_clonegroup_allow_share_range`
+- `spaceman internal pool bitmaps`
+- `%s:%d: %s Why did you give me extent %lld @ %lld for LBA %lld?\n`
+- `%s:%d: AKS set_last_user succeeded\n`
+- `Calls to VNOP_OPEN`
+- `%s:%d: %s Could not start apfs_transcriber thread: ret = %d\n`
+- `%s:%d: invalid mount mode\n`
+- `%s:%d: %s doc-id index is stale (apfs_doc_id_index_xid %llu, expected xid %llu), but volume is RO\n`
+- `fs_make_phys_range_writable`
+- `%s:%d: %s sfq %d error validating extent %lld %lld: %d\n`
+- `apfs->apfs_ier.thread_state != ier_state_nothing`
+- `%s:%d: %s Failed %s purgeability on directory %llu: %d (%s)\n`
+- `1111222222`
+- `pfktso_deserialize`
+- `apfs_keycache_operation`
+- `(apfs->kbn_handler.thread_state == kbnh_state_running) || (apfs->kbn_handler.thread_state == kbnh_state_sleeping)`
+- `%s:%d: %s Failed to insert extent into new file\n`
+- `%s:%d: %s failed to set XF for the attribution tag record for s_hash <%llu> with <%s> <%d>\n`
+- `ino->default_protection_class > 2`
+- `apfsctl`
+- `%s:%d: %s unknown ioctl 0x%lx pid = %d\n`
+- `object_in_jhash`
+- `fs_with_quota_tidemark`
+- `%s:%d: %s cannot assert cst %llu for bg access because we have reached asserted cst threshold\n`
+- `nx_ro_to_rw`
+- `trim_wait`
+- `%s:%d: %s Failed to extract dir-stats id for ino %llu with error %d (%s)\n`
+- `Previous owner died`
+- `change_prot_class`
+- `%s:%d: %s unknown dir-stats op flags: 0x%llx\n`
+- `apfs_scan_for_fragmentation_cb`
+- `%s:%d: Cannot grow IOMedia beyond partition: Current size %lld, requested %lld\n`
+- `com.apple.private.apfs.get-graft-info`
+- `%s:%d: %s failed to insert new physical extent addr %lld, len %lld, err = %d\n`
+- `%s:%d: %s Fixing hard links on volume: %s\n`
+- `%s:%d: failed to delete rolling key blob, err %d\n`
+- `pfk_transcription_init`
+- `nx_corruption_detected_int`
+- `container_identify_vnode_from_idx`
+- `Size`
+- `%s:%d: %s     could not locate owning file_ext for physical extent with id %lld\n`
+- `%s:%d: %s invalid ref count %d for non NULL zero ref tree\n`
+- `site.apfs_rangelist_entry_t`
+- `%s:%d: %s ino %lld fast-path inline delete failed (%d), retrying with purgatory-first\n`
+- `mount_wait_unmount`
+- `Reserved`
+- `\"crypto object retain count %d is not valid (crypto-id %lld, type %u apfs %p)\\n\" @%s:%d`
+- `nx_checkpoint_load_data`
+- `%s:%d: %s remove stale mapping oid %lld xid %lld\n`
+- `%s:%d: %s %s:%d - inode %lld: expected %lld, got %lld reserved bytes\n`
+- `%s:%d: %s Requested to stop all background work, interrupting fragmentation histogram fill iteration\n`
+- `%s:%d: %s Grafting on a PFK volume\n`
+- `%s:%d: failed to move ino %lld from dir %lld to purgatory : %d\n`
+- `/Library/Caches/com.apple.xbs/677270EA-0BB1-4A1A-AF29-00E0D7E0BED3/TemporaryDirectory.4zvD5i/Sources/apfs/nx/jobj.c`
+- `\"Unmounting in progress on %p, started by %p\" @%s:%d`
+- `(ret == UIO_READ) || (ret == UIO_WRITE)`
+- `%s:%d: %s Cannot create DevFS node for inode %lld on %s@%s\n`
+- `get_vnode_for_dev`
+- `\"invalid arguments: op_flags %#x key %p *key %p\\n\" @%s:%d`
+- `%s:%d: %s ### Found directory entry but could not get inode even after retry for (dir %lld) and %s, returning ENOENT\n`
+- `mount_point_is_unmounting`
+- `%s:%d: %s cannot deref crypto id %llu, %d\n`
+- `bt_lookup_copy_out`
+- `site.apfs_hash_records_t`
+- `ctx->xid`
+- `%s:%d: %s failed to get a super block during rolemount (oid %lld)\n`
+- `%s:%d: mapping sdv_uuid %s, udv_uuid %s, error %d\n`
+- `%s:%d: %s failed to find graft for ino %llu\n`
+- `%s:%d: %s %s : %s clearing purgeability on ino %lld (%s ; parent-id %lld)\n`
+- `%s:%d: %s Couldn't delete source extentref tree, err %d\n`
+- `\"cannot find xattr fext for %llu\" @%s:%d`
+- `ino->vp`
+- `%s:%d: %s Volume with quota %lld, calling fs_count_freeable_blocks(%lld, %lld)\n`
+- `%s:%d: %s revert to snapshot failed: %d\n`
+- `\"cannot lock inode on non-content protected volumes\" @%s:%d`
+- `nx_tx_wait_flush`
+- `%s:%d: %s Couldn't enter transaction: %s\n`
+- `com.apple.private.apfs.clonegroup`
+- `Broken pipe`
+- `rsrc_ino->iflags & JI_HAS_EPHEMERAL_POLICY`
+- `apfs->apfs_ier.override_inode`
+- `%s:%d: inode %llu bad sizes %llu, %llu\n`
+- `%s:%d: %s Couldn't move snap xid %llu to purgatory, err %d\n`
+- `%s:%d: nx_keybag_lookup %s true failed with %u\n`
+- `ino`
+- `%s:%d: %s failed to remove extent %lld %lld:%lld (ret %d) \n`
+- `ep_is_expired(apfs_ep)`
+- `%s:%d: %s Unsupported decmpfs stream xattr for inode %lld\n`
+- `ino->ekwk`
+- `%s:%d: %s overprovisioning fixup failed with error %d\n`
+- `bt.c`
+- `spaceman_free_completed`
+- `sfext_end(fs_bsize * (4), (&(j_file_extent_t) { .logical_addr = fs_bsize * (3), .len = fs_bsize * (4), .phys_block_num = (100), }), (&(brange_t) { .start = (98), .len = (4), }), fs_bsize) == (fs_bsize * (5))`
+- `apfs_transcriber.c`
+- `Metadata: Number of read errors`
+- `resize`
+- `Logical Block Size`
+- `%s:%d: %s Speculative download get info run out of time\n`
+- `purgeTime`
+- `nx`
+- `%s:%d: mediak key migration is not supported when rooted from ramdisk\n`
+- `11111221`
+- `%s:%d: %s failed to decrement refcnt on crypto-id %lld on behalf of ino %lld %lld:%lld (err %d)\n`
+- `\"btree rightmost leaf mismatch! (expected %lld found %lld)\\n\" @%s:%d`
+- `\"btree_node_child_id_update failed with error: %d\\n\" @%s:%d`
+- `site.crypto_key_pool_worker_t`
+- `%s:%d: failed to renew aks ep (ttl %llu): %s (%d)\n`
+- `%s:%d: %s checkpoint superblock index %d doesn't match index block was found at: %d\n`
+- `j_purgeable_t`
+- `apfs_iodone`
+- `%s:%d: %s object cache bootstrap failed: %d\n`
+- `%s:%d: %s failed to enter tx while %s dir-stats %llu: %s (%d)\n`
+- `%s:%d: %s Requested to stop all background work, interrupting scan for fragmentation iteration\n`
+- `%s:%d: %s cannot write drain: rolling is active, %s (%d)\n`
+- `%s:%d: %s Invalid use_state %d ino %llu\n`
+- `nx_evict_physical_tree_in_snap`
+- `apfs_vfsop_setattr`
+- `com.apple.BootInfo`
+- `handle_obj_mem_mgr_ctl`
+- `%s:%d: %s Allocated reserved space for %lld bytes at offset %lld in dstream %lld of inode %lld: extent %lld:%lld->%lld does not match range %lld:%lld,%d\n`
+- `Metadata: Number of bytes written to checkpoint area`
+- `1121222111111122222222221112`
+- `22222222111112222222222222121`
+- `apfs_transaction_flusher`
+- `%s:%d: %s obj_modify failed - %d\n`
+- `%s:%d: %s Failed to remove extents for file id %llu (dstream id %llu): %d (%s)\n`
+- `%s:%d: %s Failed to mark nx omap in the lut, error %d\n`
+- `%s:%d: %s nx_resize is not allowed in demo mode\n`
+- `%s:%d: %s Cursor did not make progress on success, skipping inode\n`
+- `%s:%d: %s wiping all (%d) APFS volume keys in the keybag\n`
+- `%s:%d: %s nx_keybag_create primary key failed for the target %s with: %s\n`
+- `%s:%d: %s Failed to get root hash: %s (%d)\n`
+- `%s`
+- `hcp_get_class_ek_uncached`
+- `!(ino->iflags & JI_NAMEDSTREAM)`
+- `%s:%d: %s Minimal free space threshold_blocks is %lld, updating max_allowed_shrink to %lld\n`
+- `error != 22`
+- `%s:%d: %s Failed to relocate data for ino %llu (xdstream id %llu): error %d\n`
+- `site.AppleAPFSSnapshot`
+- `%s:%d: Invalid IOService object (expected IOMedia with BSD major/minor, got %s), devvp %p (%s)\n`
+- `prepare_volume_keys_for_offline_purge`
+- `\"Graft of an unsealed image (volume type: %d) is not allowed\\n\" @%s:%d`
+- `\"error is 0 but drec is NULL\" @%s:%d`
+- `\"jhash_insert: apfs object with a non-null list.\\n\" @%s:%d`
+- `apfs->apfs_pfkur.override_num_fexts`
+- `%s:%d: %s processed %d extents and free'd %lld blocks\n`
+- `%s:%d: %s *** failed to set dstream as an extended field of ino %lld (ret %d)\n`
+- `apfs_new_key`
+- `spaceman_defrag_get_chunk_stats`
+- `Metadata: Number of gbitmap bytes written`
+- `%s:%d: %s failed to mount volume at fsindex = %d, role = %x\n`
+- `symptomsd`
+- `%s:%d: %s failed to commit pfktso to disk: %s (%d)\n`
+- `kbn_handler_thread_start`
+- `%s:%d: %s failed to destroy omap after fs creation failed: %d\n`
+- `apfs_find_gaps_middle_out`
+- `%s:%d: %s restarting fixup hardlink scan from obj-id %lld\n`
+- `%s:%d: %s obj_modify(fs %lld) failed: %d\n`
+- `%s:%d: %s sfq %d processing xid %lld blocked by temporary checkpoints %lld\n`
+- `121111121222121211122221222`
+- `%s:%d: %s Graft ino %llu, jobj_id range %llu+%llu\n`
+- `%s:%d: %s Failed to re-retain crypto_id %llu, ino %llu, err %d\n`
+- `nx_unblock_physical_range`
+- `%s:%d: %s invalid root_hash header - payload hash size <%ud> != on-disk hash size <%ud>\n`
+- `%s:%d: %s error getting cab %d @ %lld: %d\n`
+- `tx_unmount`
+- `%s:%d: %s failed to get attribution tag id for ino %llu, hash %llu\n`
+- `%s:%d: %s *** failed to insert clone inode %lld (dir %lld/%s, ret %d)\n`
+- `%s:%d: %s invalid op_flags for %s dir-stats: 0x%llx\n`
+- `ier_ierso_load_xattr`
+- `pfktso->version == 0`
+- `Metadata: Number of snapmeta bytes read`
+- `%s:%d: failed to init extended fields on drec %lld from blob.\n`
+- `%s:%d: %s clone mapping is enabled for this volume\n`
+- `authapfs_integrity_meta_create`
+- `apfs_rawdev_destroy`
+- `%s:%d: %s Failed to flush transaction after offline purge: %d (%s)\n`
+- `%s:%d: %s could not locate ino %lld\n`
+- `%s:%d: %s apfs_rr: cleanup 0 failed to remove extent %lld %lld:%lld (ret %d) \n`
+- `%s:%d: %s error allocating the ranges in the extents tree for new %s: %d\n`
+- `%s:%d: %s unsupported flags 0x%x\n`
+- `apfs_release_objects`
+- `%s:%d: %s num_quick underflow\n`
+- `%s:%d: %s Only %lld blocks have been reserved, not enough to account for %lld newly allocated blocks for inode %lld\n`
+- `omap_evict_range`
+- `%s:%d: %s failed to read chunk %llu bitmap: %d\n`
+- `com.apple.private.apfs.space-attribution`
+- `\"no graft state, but doing I/O to ino %llu inside graft!\\n\" @%s:%d`
+- `%s:%d: no vnode for mountroot\n`
+- `%s:%d: %s Couldn't get a transaction, error %d\n`
+- `%s:%d: %s could not clone_extents_if_needed() on dst file (ino %llu) (err %d)\n`
+- `%s:%d: %s Cannot restore unwritten status of extent at offset %lld in dstream %lld of inode %lld: %s(%d)\n`
+- `id != 4`
+- `fake-mount`
+- `\"Byte counter %lld is not block aligned for inode %p\\n\" @%s:%d`
+- `btree_node_copy`
+- `(fext->logical_addr <= start) && (end <= fext_lend(fext))`
+- `site.nx_fx_defrag_do_defrag_args_t`
+- `%s:%d: %s We have a NULL ino?\n`
+- `%s:%d: %s Too many ranges in inode %lld: cannot add %lld bytes in %d ranges in the region %lld:%lld to the list\n`
+- `%s:%d: %s nx reaper checkpoint %s traverse failed: %d\n`
+- `%s:%d: Volume role 0x%x is not allowed on this container`
+- `match_jobj_expanded_type_to_tree_type`
+- `%s:%d: %s Failed to update_jobj(ino %llu) to set INODE_WAS_PURGED: %d (%s)\n`
+- `punch trim`
+- `_get_purgeable_stats_cb`
+- `%s:%d: failed to get volume for role: %u\n`
+- `%s:%d: %s key is not pre-loaded for vol uuid = %s\n`
+- `23:20:26`
+- `%s:%d: %s intialized crypto key pool worker\n`
+- `%s:%d: %s oid %lld flags 0x%llx 0x%x type 0x%x/0x%x xid %lld (cur xid %lld) error allocating space to write %d; blkcount %d (o_size_phys %d) paddr %lld\n`
+- `%s:%d: %s ino %llu is flagged to maintain dir-stats but has no dir-stats key\n`
+- `0x%llx-0x%llx:%d`
+- `%s:%d: %s can't get block count (%s) from device\n`
+- `keybag_operation`
+- `vol.fs_passno`
+- `%s:%d: failed to create matching dictionary for %s\n`
+- `apfs_vnop_mmap`
+- `%s:%d: %s Couldn't update (group:%llu inum:%llu priv_id:%llu new_priv_id:%llu): %s\n`
+- `%s:%d: %s FATAL: couldn't return extent to original size, error %d\n`
+- `style == VOL_PFKEY`
+- `%s:%d: %s bad smeo for %llu: v: %u xid: %llu\n`
+- `%s:%d: Failed to extract purgeable flags ino %llu error %d (%s)\n`
+- `%s:%d: %s metadata_start_paddr %lld\n`
+- `%s:%d: %s unable to authorize dst file (ino %llu) (err %d)\n`
+- `obj_checksum_verify`
+- `%s:%d: %s failed to set up dir-stats for ino %llu: %s (%d);  size tracking may be out of sync\n`
+- `%s:%d: %s dirent hash chain iteration, dir_id %llu, hash 0x%x, count %d\n`
+- `pfkur_roll_all_inodes_continuation`
+- `delete_extentref_tree`
+- `%s:%d: %s found bogus extentref tree entry with len_and_kind=0x%llx owning_obj_id=%llu refcnt=%d, skipping\n`
+- `APFS_8K_OBJS`
+- `%s:%d: %s failed to start transaction: %s (%d)\n`
+- `last_clone_cb`
+- `Write burst: Total number of I/Os`
+- `reclaim`
+- `%s:%d: %s Unknown purgeable flags (%u) encountered, skipping...\n`
+- `Calls to VNOP_LINK`
+- `Calls to VNOP_ALLOCATE`
+- `%s:%d: tree_remove %u returned %d\n`
+- `will be skipped`
+- `apfs_clonegroup_find_and_demote_last_full_clone`
+- `%s:%d: %s attempting to tag sealed snap without disabling ARV\n`
+- `%s:%d: %s failed to get snapshot metadata object for %s, error = %d\n`
+- `\"Invalid state (on callback) for I/O context: %u\" @%s:%d`
+- `%s:%d: %s nx_keybag_create failed: %s\n`
+- `APFS Memory allocated`
+- `ino->ekwk == cur_ekwk`
+- `%s:%d: %s GRAFT (compiled @ %s %s)\n`
+- `%s:%d: %s failed to get omap tree: %d\n`
+- `%s:%d: %s xid %lld sync/barrier failed: %d\n`
+- `com.apple.system.apfs.ierso`
+- `%s:%d: %s Failed to get the dir-gen-count from the purgeable record (ino %llu): error %d\n`
+- `%s:%d: %s volume with role %u will be mounted until system shutdown\n`
+- `%s:%d: %s tx_finish failed: %d\n`
+- `%s:%d: %s Can't mount for invert, there are volumes still mounted (%d)\n`
+- `handle_get_file_hash_record`
+- `%s:%d: %s failed to obj_create a new spaceman structure: %d\n`
+- `%s:%d: %s failed to set fast-path SAF dir-stats %llu: %s (%d)\n`
+- `%s:%d: Failed to insert matching PurgeRec for ino %llu into %s: %u\n`
+- `block_in_dedupe(pbn, mapping)`
+- `import_iboot_forwarded_roothash`
+- `fs_reserve`
+- `%s:%d: %s ignoring root hash mismatch\n`
+- `%s:%d: %s failed to update src ino %lld after transferring doc-id %d\n`
+- `%s:%d: %s file system %lld alloc block count is not zero: %lld/%lld\n`
+- `ier_free_fake_vnode`
+- `fixup_purgeable`
+- `%s:%d: tree_insert %u->(%lld, %u, %lld) returned %d\n`
+- `%s:%d: %s volume does not support pfkur\n`
+- `%s:%d: %s bad overprovisioning volume configuration: reserve %lld quota %lld\n`
+- `nx_tx_wait_frozen`
+- `pfkur_enqueue_upgrade_prot_class`
+- `Calls to VNOP_IOCTL`
+- `apfs-lock-rw-group`
+- `%s:%d: %s failed to insert dead record in purgatory for failed clone w/ino # %lld (ret %d)\n`
+- `\"_fs_add_xattr does not support stream-based xattrs in the kernel\\n\" @%s:%d`
+- `%s:%d: %s smfree %lld/%lld table %d/%d blocks %lld %lld:%lld:%lld %d.%02d%% range %lld:%lld %d.%02d%% scans %lld\n`
+- `11212221111111222222222211111111111111222222122212222222221222222222221221121121122222222222222222112222222221222212212`
+- `%s:%d: %s overflow, result_region_len %llu fext len %llu\n`
+- `!(ier_tmp_ino->iflags & JI_CRYPTO_STATE_RETAINED)`
+- `ierso->current_offset <= ((1ULL << ((56 - 1))) - 1)`
+- `%s:%d: failed to update dstream on xdstream %llu (owner ino %llu), %d\n`
+- `%s:%d: %s Could not allocate enough space, requested %lld, got %lld\n`
+- `%s:%d: %s can't get <%llu, %llu> clone mapping, error %d\n`
+- `%s:%d: %s ino %lld has no name (parent-id %lld)!\n`
+- `perform_spec_telemetry_locked`
+- `%s:%d: %s NX already has a blocked-out range [%lld,%lld]\n`
+- `%s:%d: Found old purgeable record for ino %llu\n`
+- `%s:%d: nx_fx_defrag_identify_ranges returned non-zero: %d\n`
+- `Calls to VNOP_MMAP_CHECK`
+- `%s:%d: %s Volume is already set to root to live file system on next boot\n`
+- `com.apple.fs.graft-jobj-id-base`
+- `%s:%d: %s could not create dst dstream (ino %llu) (err %d)\n`
+- `The inode is raw encrypted, file pagein is prohibited\n`
+- `%s:%d: %s failed to mark class F file strict\n`
+- `%s:%d: %s failed to update allocate zone %llu: error %d\n`
+- `%s:%d: %s invalid requested signing id length for ino %llu\n`
+- `%s:%d: %s UUID %s is not allowed, error %d\n`
+- `%s:%d: %s cannot deref pexts %llu, %llu:+%llu, %d\n`
+- `site.ephemeral_policy_t`
+- `%s:%d: %s couldn't allocate memory for checkpoint map block\n`
+- `count_pages(178257920, 2093056, 1073741824) == 127`
+- `!apfs->apfs_ier.override_fexts`
+- `%s:%d: cannot alloc tls %d\n`
+- `%s:%d: %s No inode for purgeable record with file id %llu\n`
+- `%s:%d: %s Failed to prepare volume keys before offline purge: error %d (%s)\n`
+- `FX defrag: Numer of fexts skipped due to ENOSPC`
+- `Rapid-age all APFS metadata while iterating purgeable extents`
+- `%s:%d: %s tree_remove(%llu) failed\n`
+- `psize > new_start`
+- `fext_sanitize(fext)`
+- `%s:%d: %s Cleared purgeability on %lld files - (error %d)\n`
+- `private_id != 0xbadfa1afe1`
+- `%s:%d: %s conversion failed: %s\n`
+- `Result too large`
+- `fs_remove_xattr_with_nstream_inode`
+- `sizeOfPurgeableChildren`
+- `aks_cache_media`
+- `%s:%d: failed to create vnode for in-kernel mount, error = %d path = %s\n`
+- `%s:%d: %s error removing coalesced extent from metadata ranges tree: %d\n`
+- `%s:%d: %s apfs processed cx expiry notification!\n`
+- `%s:%d: %s grafting is disallowed on iOS if the host file is ONEKEY encrypted\n`
+- `handle_drop_extents_in_snap`
+- `apfs_collect_hash_records`
+- `obj_write_prepare`
+- `%s:%d: %s Failed to lookup purgeable drec (id %llu): error %d\n`
+- `%s:%d: AKS migrate_media_key_to_class is not supported\n`
+- `%s:%d: failed to find volume key to unload class keys, error = %d\n`
+- `%s:%d: %s using unsealed snapshot (%llu) as root filesystem is not supported\n`
+- `system-volume-auth-blob`
+- `%s:%d: %s failed to retain file dstream crypto states for %s (error %d)\n`
+- `!\"cannot convert class V\"`
+- `apfs_meta_crypto_state_destroy`
+- `apfs->apfs_pfkur.thread_state != pfkur_state_nothing`
+- `\"Cannot install APFS device switch - got %d\\n\" @%s:%d`
+- `com.apple.private.apfs.create-sealed-snapshot`
+- `apfs_lowspc_inline_unlink_min`
+- `com.apple.private.apfs.get_preallocate_min_space`
+- `%s:%d: %s failed to remove extents iteratively\n`
+- `%s:%d: CoreAnalytics service is not initialized, cannot send event [%s]\n`
+- `%s:%d: checkpoint<->container superblock mismatch on uuid\n`
+- `%s:%d: %s can't find purgeable record for ino %llu: %d\n`
+- `container_unload`
+- `%s:%d: %s passed a vnode with a NULL fs ptr! (ino %llu)\n`
+- `%s:%d: %s PFK upgrade rolling is disabled for this device.\n`
+- `omap_reap`
+- `tx_add_active`
+- `%s:%d: %s can't mark compressed inode as a purgeable fault\n`
+- `%s:%d: %s failed to get the snapshot blockref tree for delta_tree_oid %lld!\n`
+- `%s:%d: %s No graft state for graft host dir %llu!\n`
+- ` (not authenticated)`
+- `%s:%d: %s src (ino %llu) and dst (ino %llu) must be of the same protection class\n`
+- `exp_dir_stats_refcnt_merge`
+- `skey_has_ek(in)`
+- `spaceman_fq_tree_insert`
+- `%s:%d: Device %d.%d is not ready to accept IO requests - %s(%d)\n`
+- `Metadata: Number of fsroot bytes written`
+- `graft_blockmap_lut_insert_tail`
+- `ino_prepare_mod`
+- `handle_set_bootinfo`
+- `%s:%d: %s crypto_obj_insert of new crypto_id %lld should not have failed (ret %d)\n`
+- `%s:%d: %s danger: oid %lld type 0x%x/0x%x flags 0x%llx 0x%x xid %lld refs 0x%llx - is dirty\n`
+- `remove_dir_stats_key_on_ino_and_clone_mapping`
+- `%s:%d: %s Adding cancellation request...\n`
+- `%s:%d: %s couldn't delete tree, err %d\n`
+- `BSD Name`
+- `supplemental_tree_copy`
+- `cp_open`
+- `!(ino->file_info._sizechange_owner)`
+- `%s:%d: %s can't convert inode %llu to partial clone: %d\n`
+- `%s:%d: reached maximum number of mount attempts for fsid 0x%x:0x%x of device 0x%x\n`
+- `Encountered a data hash mismatch\n`
+- `%s:%d: %s Failed to insert purgeable record (record): %d (%s)\n`
+- `update_purgeable_record_time_and_flags`
+- `Graft directory inode`
+- `%s:%d: %s Found mounted volume via fsid 0x%x:0x%x of snapshot 0x%x\n`
+- `%s:%d: %s failed to move ino %lld from dir %lld to purgatory : %d\n`
+- `fext_collector`
+- `%s:%d: %s Searches: %lld success %lld fail %lld partial %lld, bm search yes:%lld (%lld/%lld/%lld) no:%lld/%lld\n`
+- `%s:%d: %s Unable to allocate memory for graft dir path\n`
+- `%s:%d: %s Failed to transfer fext (laddr %llu) to inode %llu (dstream ID %llu): %d (%s)\n`
+- `%s:%d: %s error storing metadata tree for %s: %d\n`
+- `%s:%d: %s can't decrement crypto state ino %llu, %d\n`
+- `%s:%d: %s sharing to the end of a non-block-aligned file is not allowed (dst ino %llu, size %llu, offset %llu)\n`
+- `222221121`
+- `old_id != new_id`
+- `obj_mem_mgr_register`
+- `%s:%d: can't get writable for device (%s)\n`
+- `%s:%d: %s can't revert-to-xid %llu while snapshot %s with xid %llu is mounted\n`
+- `%s:%d: %s failed to vnode_create the vnode for %lld!\n`
+- `%s:%d: %s Speculative download operation needs entitlement\n`
+- `Value too large to be stored in data type`
+- `%s:%d: %s xid %lld error preparing to flush object cache: %d\n`
+- `%s:%d: %s couldn't get dstream from tmp inode %llu, owner %llu\n`
+- `get_volume_purgeable_stats`
+- `%s:%d: %s Failed to get the node count of the fsroot tree: %d - %s\n`
+- `Calls to VNOP_GETATTRLISTBULK`
+- `%s:%d: %s Graft file %llu is already grafted\n`
+- `%s:%d: %s Failed to re-retain crypto_id %llu for ep, ino %llu, err %d\n`
+- `%s:%d: %s Failed to load pfk upgrade rolling state object for dst (ino %llu)\n`
+- `STREAM ioctl timeout`
+- `is_system_shutting_down`
+- `apfs->apfs_ier.ierso`
+- `%s:%d: %s failed to init transcription on volume with snapshots\n`
+- `%s:%d: %s snap_meta %lld is dataless, evict SB only\n`
+- `kbnh_keybag_unlock_notification`
+- `%s:%d: %s can't make snapshot w/snap_xid %lld dataless because there are %lld cow-exempt files in the live-fs\n`
+- `%s:%d: %s %s():%d: dir_nlink = %d for inum %lld, removing %lld, below zero!?!\n`
+- `%s:%d: %s scan took %lld.%06lld s, trims took %lld.%06lld s\n`
+- `\"current tx not closed/flushing?!\\n\" @%s:%d`
+- `%s:%d: %s could not create dstream for ino %lld (err %d)\n`
+- `%s:%d: %s fs_lookup_snapshot_metadata_ext %llx failed with error %d\n`
+- `%s:%d: %s failed to update dstream id %lld err %d\n`
+- `%s:%d: %s xattr %lld has 0 dstream_id\n`
+- `%s:%d: %s node 0x%llx (level %d): error getting index %d key/val: %d\n`
+- `(fext->phys_block_num <= pbn) && (pbn <= fext_pend(fext, fs_bsize))`
+- `spaceman_cib_sanity_check`
+- `split update`
+- `%s%s`
+- `spaceman_metazone_init`
+- `%s:%d: handling conversion mount (device %s)\n`
+- `%s:%d: %s This operation needs entitlement\n`
+- `update_jobj`
+- `%s:%d: %s Unexpected extent with zero crypto-id!\n`
+- `crypto_cache_destroy`
+- `apfs_graft`
+- `%s:%d: %s successfully grafted ino %llu on dir %llu, dev_name [%s]\n`
+- `(start % fs_bsize) == 0`
+- `%s:%d: %s Found no other mapping. (group:%llu inum:%llu priv_id:%llu) count=%u found_inum=%u\n`
+- `handle_set_sync_root_flag`
+- `%s:%d: %s Invalid root hash: %s\n`
+- `%s:%d: %s BUG BUG BUG: ino %lld unbacked-alloced-size %lld.  capping it to %lld\n`
+- `%s:%d: %s Failed to cache VEK crypto state\n`
+- `%s:%d: %s Failed to release %llu block reserved for inode %lld: %s(%d)\n`
+- `kbn_handler_thread_self(apfs)`
+- `pfku_enqueue_request`
+- `duplicate_jobj_op_to_shadow_fs_root`
+- `%s:%d: %s failed to increment the crypto state refcount for crypto_id %lld, ret %d\n`
+- `Product Name`
+- `gbitmap_reap`
+- `Number of times device's cache flushed`
+- `%s:%d: %s failed to cache volume key, error = %d\n`
+- `%s:%d: %s tx_freeze error: %d\n`
+- `now UN-`
+- `%s:%d: %s invalid length (0), pos %lld, filesize %lld, fext: obj_id %llu, laddr %llu, pbn %llu, len %llu\n`
+- `%s:%d: %s failed to find valid checkpoint: %d\n`
+- `%s:%d: %s failed to attach graft to object cache: %d\n`
+- `\"APFS range list verification for inode %p has failed\\n\" @%s:%d`
+- `%s:%d: %s Invalid purgeable record type %u found on volume expecting type %u\n`
+- `%s:%d: %s reached the desired amount to delete by limit; exiting...\n`
+- `%s:%d: %s fs[%d] checkpoint %s traverse failed: %d\n`
+- `%s:%d: %s spaceman_fq_tree_get(%d) failed: %d\n`
+- `handle_snapshot_mount`
+- `omap_find_next_snapshot_xid`
+- `%s:%d: %s sfq %d error inserting shortened entry %lld %lld into free queue: %d\n`
+- `%s:%d: %s failed to get doc-id tree, error %d\n`
+- `%s:%d: %s ret %d failed to insert tmp_ino %lld for ino %lld\n`
+- `%s:%d: %s Can't get tree: %d\n`
+- `_pfk_transcriber_commit_single`
+- `%s:%d: %s failed to create/store data sw crypto: %s (%d)\n`
+- `VEKSystemProtected`
+- `%s:%d: %s Persistent allocation zone at slot %llu has invalid current boundaries\n`
+- `key_rolling_start`
+- `off_in_fext(f_off, &fexts[0])`
+- `%s:%d: successfully wrapped key (uuid = %s, sec_new_tag = %d)\n`
+- `AppleAPFSUserClient`
+- `FX defrag: Run2 free extents average size`
+- `Broken`
+- `%s:%d: %s invalidating reserved ranges after deletion of ino %lld\n`
+- `make_dirent_iterator`
+- `\"cannot insert reserved, un-busy jhash object\" @%s:%d`
+- `%s:%d: Failed to lookup dstats key %llu for ino %llu : %u\n`
+- `_scalable_inode_pfk_transcribe`
+- `site.AppleAPFSVolume`
+- `apfs_vnop_link`
+- `spaceman_chunk_zone_info_cache_init`
+- `\"jhash_removevnode: apfs object with a zero devt.\\n\" @%s:%d`
+- `%s:%d: %s expanded obj type %hhu found on unsupported volume\n`
+- `set_cloneinfo_id_epoch`
+- `Insert`
+- `%s:%d: suspcious delen of zero for drec w/file-id %lld flags 0x%x name_len %d name: %s\n`
+- `%s:%d: %s getting graft info requires an entitlement\n`
+- `snk->iflags & JI_RAW_ENCRYPTED`
+- `src_class != ino_class_f`
+- `%s:%d: %s failed to remove existing file info attribution tag record for s_hash <%llu> with <%s> <%d>\n`
+- `%s:%d: %s xid %lld failed to fix up checkpoint data: %d\n`
+- `occ_tweak_roll_pause`
+- `%s:%d: cannot finalize ierso %d\n`
+- `%s:%d: %s fs_count_freeable_blocks_in_dstream(%llu) returned %d\n`
+- `%s:%d: %s Failed to decrement refcount of crypto_id %llu, ino %llu, ret %d\n`
+- `has_class && is_file`
+- `%*s%s`
+- `remove_dirty_work_item_if_present`
+- `size`
+- `%s:%d: %s get_cp_class_for_crypto_id failed (crypto id %llu, error %d)\n`
+- `and pristine-ness `
+- `%s:%d: %s failed to load fs private vnodes (err %d) for dev %s\n`
+- `%s:%d: %s failed to init ep for ino %llu: %s (%d)\n`
+- `compressed `
+- `site.snap_meta_ext_obj_t`
+- `%s:%d: 100`
+- `\"apfs_crypto_state_init: invalid key length! \" \"(%ul) \\n\" @%s:%d`
+- `%s:%d: %s crypto key pool worker started thread\n`
+- `%s:%d: %s xid %lld failed to get spaceman: %d\n`
+- `\"oid 0x%llx flags 0x%llx 0x%x type 0x%x/0x%x object not prepared before dirtying\\n\" @%s:%d`
+- `set_dir_stats_handle_origin`
+- `%s:%d: cannot roll ino %llu; iflags %llu\n`
+- `%s:%d: failed to notify clients that ier has exited with an error %d (ierso->error %d)\n`
+- `Could not get namedstream parent inode\n`
+- `%s:%d: %s cannot delete snapshot '%s' because it is the default root snapshot for volume '%s'\n`
+- `preallocate_transfer_fext`
+- `%s:%d: %s Cannot copy list of unwritten extents from inode %llu: %s(%d)\n`
+- `%s:%d: %s (oid %lld) has incompatible features: %llu\n`
+- `wait_for_snapshot_deletion`
+- `%s:%d: %s failed to retain xattr ino %llu crypto_id %llu: %s (%d)\n`
+- `spec_telemetry_iterator_init`
+- `%s:%d: %s error! inodes in different groups src_inum:%llu src_group:%llu dst_inum:%llu dst_group:%llu\n`
+- `%s:%d: %s nx_block_out_physical_range failed with error %u\n`
+- `%s:%d: %s failed to restore refcnt on dstream id %llu, err: %d\n`
+- `!(ino->iflags & (JI_NAMEDSTREAM | JI_RAW_ENCRYPTED))`
+- `icp_id_is_valid(id)`
+- `fs_insert_fext_record`
+- `%s:%d: Couldn't set sparse bytes extended attribute on ino %lld, error %d\n`
+- `read_size`
+- `sizeStale`
+- `%s:%d: %s btree_node_insert failed: %d\n`
+- `spaceman_ip_block_alloc`
+- `%s:%d: %s DS_OP_ONLY_SPACE_ATTRIBUTION can't be specified alone\n`
+- `%s:%d: %s *** reset ino %lld size back to %lld (from %lld)\n`
+- `apfs_ier_log_level`
+- `%s:%d: can't get features for device (%s)\n`
+- `%s:%d: %s Tree iteration threw %d at cursor %llu\n`
+- `%s:%d: %s retain_crypto_states failed on ino %llu with %d\n`
+- `%s:%d: %s full clone scan failed (group:%llu inum:%llu priv_id:%llu): %s\n`
+- `%s:%d: %s spaceman_unset_block_out_range failed with error %u\n`
+- `hcp_chclass_apply`
+- `com.apple.apfs.user_volume_library_chmod`
+- `%s:%d: %s minimal_size after roundup %lld\n`
+- `%s:%d: %s Need superuser to de-graft\n`
+- `Disc quota exceeded`
+- `%s:%d: %s btree_evict_range called on non-physical tree oid: %llu\n`
+- `\"apfs_unwrap: invalid iv key length! (%ul)\\n\" @%s:%d`
+- `ino_get_ep_state(apfs, ino) == INO_EP_STATE_EXPIRED`
+- `22111122112`
+- `%s:%d: %s free'ing extents in main extentref tree %lld\n`
+- `stop_watchdog_monitoring`
+- `fs_used`
+- `copy`
+- `%s:%d: %s Failed to extract dir-stats associated with directory for ino %llu with error %d (%s)\n`
+- `purgeReqType`
+- `%s:%d: %s node 0x%llx (level %d): error getting index %d child oid: %d\n`
+- `num_pages`
+- `%s:%d: %s did not find purgeable record for ino %lld (parent id %lld) (fsize %lld)\n`
+- `%s:%d: %s can't rename inode %llu - too many busy retries\n`
+- `*xid && (*xid != ((xid_t)~0ULL))`
+- `%s:%d: %s Volume role 0x%x can be assigned only at the time of volume creation`
+- `%s:%d: %s error deleting child 0x%llx type 0x%x: %d\n`
+- `\"crypto state ep retain count %d is not valid (obj-id %lld, apfs %p)\\n\" @%s:%d`
+- `site.integrity_meta_t`
+- `%s:%d: cannot make progress ino %llu > offset %llu, error %d\n`
+- `%s:%d: %s Container-wide extent manipulation is in progress, cannot add snapshot\n`
+- `%s:%d: %s Couldn't delete fsidx %u, %d\n`
+- `%s:%d: Error! tree_lookup_le of %lld:%lld returned %d!\n`
+- `apfs_fake_vnop_pageout`
+- `site.j_xattr_val_t.uint8_t`
+- `options & apfs_fv_options_secret_is_acm`
+- `%s:%d: %s trying to mount a mounted live volume for fsid 0x%x:0x%x, err = %d\n`
+- `handle_get_clone_info`
+- `%s:%d: %s Malformed arguments for raw root hash payload (without manifest)\n`
+- `make_large_jkey_header_from_jobj`
+- `%s:%d: %s Manually managed omaps don't support snapshots\n`
+- `site.pfkur_state_obj_t`
+- `%s:%d: %s Host is remote\n`
+- `%s:%d: %s apfs_update_phys_range failed, err = %d\n`
+- `com.apple.fs.symlink`
+- `%s:%d: Leaking blocks %d\n`
+- `xattr_name`
+- `apfs->kbn_handler.req != KBN_HANDLE_NONE`
+- `spaceman_cab_sanity_check`
+- `%s:%d: %s Couldn't update next snap meta, err %d\n`
+- `%s:%d: %s Failed to lookup physical extent [%llu, %llu]: err %d\n`
+- `%s:%d: %s Fext would cross APFS_MAXFSIZE (logical_addr %llu, len %llu, alloced_size %llu) - rejecting transfer.\n`
+- `is now`
+- `%s:%d: %s Cannot allocate %zu bytes\n`
+- `spaceman_unreserve`
+- `inode range base`
+- `vol.fs_file`
+- `FX defrag: Run4 chunk index`
+- `%s:%d: %s freeing old spaceman free queue tree %d failed: %d\n`
+- `%s:%d: image 4cc (%u) is invalid \n`
+- `%s:%d: %s tmp file extent removal under %llu failed with %d\n`
+- `%s:%d: %s key size (%zu) on expanded record (%llu) is too small\n`
+- `skey_has_ek(ek)`
+- `%s:%d: %s Resetting error to 0...\n`
+- `%s:%d: %s Could not get namedstream parent inode of %llu\n`
+- `%s:%d: %s Cannot make large jkey from unknown type %d (obj_id %llu)\n`
+- `%s:%d: %s Unexpected allocated/unwritten range for %lld bytes at offset %lld in inode %lld inside the sparse extent of %lld bytes at offset %lld\n`
+- `\"Not enough blocks had been reserved to account for %lld newly allocated blocks for inode %p\\n\" @%s:%d`
+- `\"o %p, failed to get ref, allow_wait %d, ref_acquired %d, reflock_out_flags 0x%x, flags 0x%llx, refs 0x%llx\\n\" @%s:%d`
+- `\"deleted object @ %p can not be dirtied!! (flags: 0x%llx)\\n\" @%s:%d`
+- `tx_checkpoint_write`
+- `fsize && (fsize <= ((1ULL << ((56 - 1))) - 1))`
+- `%s:%d: %s Volume has no system role, skipping\n`
+- `%s:%d: %s Unexpected range %lld:%lld,%d in extent %lld:%lld of inode %lld\n`
+- `sfext_end(fs_bsize * (8), (&(j_file_extent_t) { .logical_addr = fs_bsize * (3), .len = fs_bsize * (8), .phys_block_num = (123), }), (&(brange_t) { .start = (127), .len = (6), }), fs_bsize) == (fs_bsize * (11))`
+- `lookup_expanded_purgeable_record`
+- `SideCar`
+- `%s:%d: %s Graft file %llu is not a regular file\n`
+- `preallocate_preflight`
+- `222222222222222222222222222222222222222222211`
+- `%s:%d: %s Failed to update pfk upgrade rolling state object for dst (ino %llu)\n`
+- `%s:%d: %s Cannot mark space for %zu bytes at offset %lld in dstream %lld of inode %lld as writable: %s(%d)\n`
+- `!brange_intersects(src, snk)`
+- `%s:%d: %s fs %d, snap_tidemark %lld, max_tidemark %lld\n`
+- `BaseSystem`
+- `%s:%d: %s ino %lld (%s) is a graft image file, graft_state must be non NULL\n`
+- `%s:%d: %s ROSV: failed to delete shadow fs_root: %d\n`
+- `%s:%d: %s Unknown flags being used on purgeable record: %x. Truncating...\n`
+- `apfs_fragmentation_histogram_cb`
+- `%s:%d: %s Graft inode %lld has invalid length %lld\n`
+- `nx_get_evict_mapping_tree`
+- `%s:%d: %s Extent %lld at %lld is larger than the reserved region: %lld bytes left at offset %lld in inode %lld\n`
+- `%s:%d: %s Couldn't get existing fext tree, err %d\n`
+- `FX defrag: Total run attempts`
+- `(ino->file_info._sizechange_owner != current_thread())`
+- `%s:%d: %s src ino %lld is in sync root id %lld. asking for materialization\n`
+- `%s:%d: %s failed to read cab %d: %d\n`
+- `\"not handling the flushing tx!\\n\" @%s:%d`
+- `%s:%d: suspicious looking drec entry: file-id %lld, flags 0x%x name_len %d name %s\n`
+- `%s:%d: error, %d, when checking tree entry size %u, %u\n`
+- `%s:%d: %s FATAL: Couldn't move some extents back to original file, error %d\n`
+- `site.j_snap_name_t.char`
+- `apfs_ckp_worker_thread`
+- `%s:%d: %s Split context operations are not supported on compressed files\n`
+- `apfs_trim_to_prev_fsize`
+- `(ierco->type == ier_obj_main_fork) || (ierco->type == ier_obj_xattr_data)`
+- `!\"cannot create crypto for non-content \" \"protected volume\"`
+- `%s:%d: %s Yielding clear purgeables operations on ino %llu, ran too long\n`
+- `EncryptionBlockSize`
+- `%s:%d: %s op %d failed to create bitmap object %lld: %d\n`
+- `spp_get_dstream_id`
+- `%s:%d: %s *** falling back to removing extents safely\n`
+- `apfs_vnop_exchange`
+- `%s:%d: %s failed to get reap list object oid %lld: %d\n`
+- `%s:%d: %s %s: failed to finish all transactions in sync() - %s(%d)\n`
+- `%s:%d: %s failed to enter transaction sized %d (ino %llu) (err %d)\n`
+- `%s:%d: %s This operation requires a file or directory\n`
+- `%s:%d: %s Would have attempted to create an entry with kind == NEW and refcnt == %d! (flags=0x%x, existing val len_and_kind=0x%llx owning_obj_id=%llu refcnt=%d)\n`
+- `apfs_materialize_dataless_file_ext`
+- `%s:%d: %s Cannot reach %lld from %lld, gap at %lld in inode %lld\n`
+- `%s:%d: %s failed to enter a transaction to modify the ino <%lld> with <%s> <%d>\n`
+- `%s:%d: cannot join: thread is not running or under debug\n`
+- `%s:%d: %s integrity protection will be disabled (from xid: %llu)\n`
+- `%s:%d: %s name is bad, name_len=%lu name[0] = %u\n`
+- `%s:%d: %s failed to insert new ekwk+ek for dstream %llu: %s\n`
+- `site.aks_fv_blob_state_s`
+- `mount_apfs`
+- `%s:%d: %s failed to load container metadata ranges (overlap?): %d\n`
+- `%s:%d: %s tx_leave after eviction of omap mappings of fs %d failed with error %d\n`
+- `!(ino->internal_flags & INODE_PROT_CLASS_EXPLICIT)`
+- `terminate`
+- `%s:%d: %s unable to authorize src file (ino %llu) (err %d)\n`
+- `\"fext %lld (pos %lld len %lld flags %x can not have crypto-id -1\\n\" @%s:%d`
+- `%s:%d: DANGER! got the same extent for logical addr %lld twice!\n`
+- `hcp_clone_ek`
+- `\"obj_cache_unlock_by_state, invalid oc_lock_state %d\\n\" @%s:%d`
+- `\"reserved metadata space underflow: %lld (%lld)\\n\" @%s:%d`
+- `site.ier_telemetry_obj_t`
+- `free_allocated_snapshot_extents`
+- `%s:%d: %s iteration failed while on %llu:%llu, ino %llu, ret%d\n`
+- `com.apple.private.apfs.keyrolling.operation`
+- `%s:%d: %s unsupported apfs_incompatible_features (%llx): unable to mount\n`
+- `%s:%d: %s can't get attribution tag id for hash %llu\n`
+- `%s:%d: %s failed to unwrap vek during unlock, err = %d\n`
+- `apfs_crypto_check_class_availabilty`
+- `site.delta_op_authapfs_node_t.uint8_t`
+- `%s:%d: %s failed to delete volume key, error = %d, tag %d\n`
+- `%s:%d: load: %s, v%s, %s, %s\n`
+- `%s:%d: %s failed to init extended fields on dir-stats %llu from blob\n`
+- `sfext_end(fs_bsize * (7), (&(j_file_extent_t) { .logical_addr = fs_bsize * (1), .len = fs_bsize * (7), .phys_block_num = (1000), }), (&(brange_t) { .start = (1006), .len = (7), }), fs_bsize) == (fs_bsize * (8))`
+- `com.apple.apfs.private.secfsroot`
+- `%s:%d: %s Not enough blocks have been reserved to release %lld blocks\n`
+- `%s:%d: %s failed to move extents from_ino %llu, to_ino %llu, volume transcription is in progress\n`
+- `%s:%d: xattr size %u != %lu\n`
+- `cleanup_purgatory_dir`
+- `apfs_unmount_fixup_thread_exit`
+- `%s:%d: %s can't add dir %llu for recursive extent deletion\n`
+- `%s:%d: %s Failed to unwrap metadata crypto state: error %d (%s)\n`
+- `No STREAM resources`
+- `%s:%d: %s fext tree type 0x%x invalid, using physical btree instead\n`
+- `btree_node_child_id_update`
+- `wipe_volume_keys`
+- `%s:%d: %s checkpoint descriptor block %d superblock failed sanity checks: %d\n`
+- `%s:%d: %s Precomputed hashes flag needs verify with context flag to be present\n`
+- `\"obj_cache_lock_by_state, invalid oc_lock_state %d\\n\" @%s:%d`
+- `boot-uuid`
+- `%s:%d: %s This shouldn't happen: File is compressed\n`
+- `%s:%d: %s failed to get fs_private tx_active, error %d\n`
+- `ier_thread_start`
+- `%s:%d: Checksum failure\n`
+- `%s:%d: AKS unwrap_media_key_from_class returned 0x%x for tag = %d\n`
+- `\"Found directory entry but could not get inode 1024 times for dvp %p and %s\" @%s:%d`
+- `%s:%d: %s error deleting 'to' (group:%llu inum:%llu priv_id:%llu): %s\n`
+- `%s:%d: %s tx_finish failed with error %d\n`
+- `xattr.c`
+- `populate_vek_if_needed`
+- `%s:%d: %s apfs_rr: cleanup last failed to remove extent %lld %lld:%lld (ret %d) \n`
+- `%s:%d: %s Request to delete volume index %u, made by process %s (pid %d)\n`
+- `%s:%d: %s Cannot allocate %lld bytes at offset %lld in inode %lld(%s) - %s(%d), dstream size %lld alloced-size %lld offset %lld writlim %lld\n`
+- `unmount_wait_(un)mount`
+- `hfs`
+- `%s:%d: %s request to insert entry %d (%d) %d (%d) = (%d), max size is %d key %d, error %d\n`
+- `%s:%d: unmapping sdv_uuid %s, error %d\n`
+- `bm_valid_index(from, len)`
+- `%s:%d: %s find_prev_snapshot hit %d\n`
+- `%s:%d: %s free'ing allocated extents for snap_xid %llu\n`
+- `%s:%d: %s num_shared underflow\n`
+- `%s:%d: don't know how to merge refcounts on objects of file info type %llu\n`
+- `%s:%d: %s Failed to find smallest extent in paddr tree: %d\n`
+- `%s:%d: %s sanity checking all recently-changed container state... please be patient.\n`
+- `apfs_remove_volume_key`
+- `%s:%d: %s no commit pending\n`
+- `transcriber_wait`
+- `update_dir_stats_key_on_ino_and_clone_mapping`
+- `ierso->version != 2`
+- `FIXUP`
+- `%s:%d: %s failed to get attribution tag for ino %llu, error %d\n`
+- `11122222222222222222`
+- `%s:%d: Running Finish on all remaining IOs\n`
+- `fs_size`
+- `apfs_kbn_handler_start`
+- `Not a directory`
+- `numDirsStale`
+- `%s:%d: %s requested to evict %lld which is larger than max allowed eviction range %lld\n`
+- `%s:%d: %s Failed to insert dst_ino %llu into group %llu (src: %llu dst: %llu) err: %s\n`
+- `%s:%d: %s Lock is not cancellable\n`
+- `apfs_atime_mount_option`
+- `%s:%d: %s dev_unmap_flush failed with error %d\n`
+- `apfs_deletefs_ext`
+- `%s:%d: %s can't remove drec ino %llu, err %d\n`
+- `%s:%d: %s failed to dereference blocks, pbn:%llu len:%llu\n`
+- `slots`
+- `FX defrag: Run4 free extents size std-dev`
+- `com.apple.private.apfs.purgeable.extents`
+- `%s:%d: %s failed to load vek during unlock\n`
+- `%s:%d: Can't determine hash type for volume %s @ %s!\n`
+- `%s:%d: %s failed to look up shadow dir-stats %llu: %s (%d)\n`
+- `%s:%d: Failed to add PURGEABLE_EXT_TYPE_DIR_GEN_COUNT XF into PurgeRec for ino %llu into %s: %u\n`
+- `update_ino_purgeable_dstream_id`
+- `%s:%d: %s Failed to fetch/create the cpx for the target volume %s with: %s\n`
+- `%s:%d: %s failed to get next physical extent, error %s(%d)\n`
+- `spindump`
+- `attach_ep_to_ino_cleanup`
+- `nx_tx_wait_open`
+- `%s:%d: cannot resume full rolling, feature disabled\n`
+- `%s:%d: Can't find (IOMedia) object in IORegistry for devvp %p (%s)\n`
+- `%s:%d: %s failed to lookup root-snapshot-name, failing the lookup request - %s (%d)\n`
+- `%s:%d: failed to init extended fields on inode %lld from blob (xfret %d).\n`
+- `%s:%d: cannot create new ierto %d\n`
+- `%s:%d: %s Purged %llu bytes in %llu files - returning error %d (%s)\n`
+- `process_snapshot_phys_extents`
+- `remove_finfo_attr_tag_record`
+- `%s:%d: %s Couldn't get next extentref tree, oid %llu, err %d\n`
+- `handle_snapshot_lookup`
+- `sizeFreed`
+- `AppleAPFSContainerScheme`
+- `bt_update_last_leaf`
+- `%s:%d: %s xid %lld failed to write last checkpoint map block %lld: %d\n`
+- `%s:%d: %s failed to%s update the <%llu, %llu> clone mapping, error %d\n`
+- `%s:%d: Free'ing in-use iterator (index %lld ; name %s)\n`
+- `%s:%d: %d >= %lu && %d <= %lu\n`
+- `FX defrag: Run3 alloc extents maximal size`
+- `%s:%d: %s Graft file %llu is inside a graft\n`
+- `get_tweak_for_host_fs`
+- `%s:%d: %s can't get attribution with hash value %llu (%d)\n`
+- `%s:%d: !! failed cloning ino %lld into dir %lld/%s (err %d)!!\n`
+- `%s:%d: %s oid 0x%llx flags 0x%llx type 0x%x/0x%x error freeing new location %d\n`
+- `apfs_snap_check_arv_disabled`
+- `Metadata: Number of objects failed to write`
+- `jobj_validate_key_val`
+- `%s:%d: %s failed to allocate crypto key pool slots %d\n`
+- `%s:%d: %s failed to open transaction during dir-stats telemetry state update ino %llu error %d(%s)`
+- `%s:%d: %s unable to get fs[%d] oid %lld, %d\n`
+- `source`
+- `%s:%d: cannot start background thread, mach err %d\n`
+- `%s:%d: pfkur_corrupt_assert() failed: %s`
+- `%s:%d: %s Purgeable start time %llu is before current time.\n`
+- `%s:%d: check_rootmount_qualification() returned false, refusing to load the container device = %s\n`
+- `%s:%d: %s Searching for phys_ext at addr %lld, len %lld\n`
+- `%s:%d: %s volume seal is broken\n`
+- `create_snap_dir_vnode`
+- `start < fsize`
+- `%s:%d: %s could not get dstream for namedstream inode\n`
+- `%s:%d: speculative downloads telemetry xattr has bad flags %u\n`
+- `%s:%d: not allowed to do a verification mount of %s (is_suser %s ; uid %d)\n`
+- `Operation not permitted`
+- `no-name`
+- `insert_jobj`
+- `1112222222221221212212222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222221111222222222222221`
+- `%s:%d: insert_jobj for %s into 2nd tree failed: %u\n`
+- `(snk->start <= pext.hdr.obj_id) && (pext_end(&pext) <= brange_end(snk))`
+- `%s:%d: failed to allocate search_xattr\n`
+- `!ier_thread_self(apfs)`
+- `%s:%d: %s failed to mark doc-id index for rebuild (error %d)\n`
+- `%s:%d: %s partial unwritten coverage for ino %llu, page [%lld, %lld), range [%llu, %llu)\n`
+- `%s:%d: %s failed to lookup purgeable urgency for ino %llu: %s (%d)\n`
+- `%s:%d: %s copyout failed: %s\n`
+- `apfs->apfs_pfkur.override_fexts`
+- `%s:%d: %s change_xdstream_prot_class failed on ino %llu (err %d)\n`
+- `%s:%d: %s Failed to open transaction to set INODE_WAS_PURGED on ino %llu: %d (%s)\n`
+- `%s:%d: %s failed to delete ino %lld (%s) iflags 0x%llx err %d\n`
+- `%s:%d: %s Failed to insert sibling map for %lld (ino %lld) : err %d\n`
+- `site.btree_node_t *`
+- `unwrap_ek`
+- `%s:%d: %s failed to update ino %llu purgeable record flags: %s (%d)`
+- `%s:%d: failed to delete volume's primary key (uuid = %s, cur_tag = %d, cur_class = %d), error = %d\n`
+- `sendIONotification`
+- `%s:%d: cannot change role of SideCar volume\n`
+- `0`
+- `%s:%d: writing to HFS @ %lld for %lld bytes... (filesize %lld)\n`
+- `nx_dev_init`
+- `\"oid 0x%llx flags 0x%llx 0x%x type 0x%x/0x%x bad dirty xid: 0x%llx\\n\" @%s:%d`
+- `ier_ierco_init_xattr_ino`
+- `%s:%d: %s failed to get the new parent ino %lld (for cloning from %lld)\n`
+- `%s:%d: %s overflow, cfu offset %llu len %llu\n`
+- `%s:%d: %s failed to %s dir-stats %llu as purgeable: %s (%d)\n`
+- `pfkurso->current_id == ino->hdr.obj_id`
+- `_vnode_dev_read`
+- `revert_extents_iterator`
+- `graft_blockmap_lut_lookup`
+- `%s:%d: %s fs_add_xattr failed for jobj id len, error %d\n`
+- `kbn_handler_continuation`
+- `handle_seek_holedata`
+- `numFilesBusy`
+- `clone_mapping_update_attribution_tag`
+- `%s:%d: %s failed to destroy old live fs tree (type %d, oid %llu) during reversion: %d (%s)\n`
+- `%s:%d: %s Speculative telemetry iteration END - elapsed_time %llu\n`
+- `%s:%d: %s UNSET root_to_xid - on next boot, volume will root to live file system\n`
+- `%s:%d: %s reducing age_for_urgency because lowdisk_status has worsened (from %u to %u)\n`
+- `%s:%d: %s Couldn't find inode in fs_root w/obj_id %llu\n`
+- `%s:%d: %s fs_get_xattr failed for jobj id len, error %d\n`
+- `%s:%d: %s couldn't enter transaction to set apfs_fixup_flags, %d\n`
+- `%s:%d: %s failed to update attr tag <%llu> for the ino <%lld> with <%s> <%d>\n`
+- `tx_need_to_expedite_meta_io`
+- `%s:%d: %s xid %lld second sync/barrier failed: %d\n`
+- `%s:%d: %s failed to update ino %llu on-disk: %s (%d)\n`
+- `%s:%d: %s update_jobj() failed trying to increment ino %lld's link count, err %d\n`
+- `%s:%d: %s %s: failed to flush data for inode %lld - %s(%d)\n`
+- `%s:%d: %s Precomputed hashes are not supported on compressed files\n`
+- `%s:%d: %s Underflow detected in reserved ranges counter when trying to %s list entry for inode %lld\n`
+- `%s:%d: %s couldn't find snap_meta for xid %llu\n`
+- `%s:%d: Can't find a bootable volume in container: %s, devvp: %p\n`
+- `%s:%d: failed to allocate memory for I/O at [fsindex (%d), offset(%llu)]\n`
+- `sb->rsrc.new_key`
+- `%s:%d: %s waiting for available tx to open: xid %lld\n`
+- `%s:%d: failed to get wrapped media key (uuid = %s, sec_cur_tag = %d), error = %d\n`
+- `12111112122212121111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111`
+- `FX defrag: Run2 chunk index`
+- `spec_telem_deserialize`
+- `%s:%d: %s Unable to update XATTR_SPEC_TELEMETRY error=%s (%d)\n`
+- `%s:%d: truncate tmp ino %llu to 0 failed %d\n`
+- `ierco->ino`
+- `%s:%d: %s received migrated vek during unwrap\n`
+- `AuthAPFS: Number of bytes validated with precomputed hashes`
+- `ino_remove_some_fexts`
+- `%s:%d: %s spec_telem: purgeable package deletion queue full, cannot add inode %llu (capacity: %u)`
+- `%s:%d: rejecting crypto mount: OS variant is not recovery\n`
+- `handle_get_purgeable_bulk_info`
+- `%s:%d: %s apfs_do_scan_for_fragmentation for volume %s inode %llu failed: %d - %s\n`
+- `%s:%d: %s graft_blockmap_lut_mark_key %u failed with %d\n`
+- `trim tail`
+- `%s:%d: not allowed to mount as root\n`
+- `site.j_finfo_attribution_tag_t`
+- `%s:%d: %s inode %llu is already in purgatory\n`
+- `%s:%d: %s fixing DIR_STATS_IS_SHADOW flag for dir-stats %llu\n`
+- `%s:%d: %s couldn't find name from tmp ino %d\n`
+- `apfs_nstream_write`
+- `%s:%d: %s failed to notify clients that volume is no longer frozen due to zeroing out %lld unwritten bytes in inode %lld\n`
+- `apfs->kbn_handler.thread_state == kbnh_state_nothing`
+- `site.struct crypto_hash_head`
+- `%s:%d: %s started cleaning snapshots %lld-%lld\n`
+- `site.tx_t`
+- `free_all_iterators`
+- `volume_needs_post_offline_purge_fixup`
+- `apfs_snap_delete_lock`
+- `%s:%d: %s Failed to load XATTR_SPEC_TELEMETRY ino %llu error=%s (%d)\n`
+- `%s:%d: %s bulk key generation failed: %d\n`
+- `%s:%d: %s xid %lld failed to load spaceman metadata ranges (overlap?): %d\n`
+- `%s:%d: failed to update dstream on xdstream %llu\n`
+- `com.apple.system.apfs.pfktso`
+- `Calls to VNOP_CLONEFILE`
+- `%s:%d: %s proc %s (pid %d) file %s inherited class promoted %c -> %c\n`
+- `handle_apfs_file_padding`
+- `change_xdstream_prot_class`
+- `%s:%d: %s On %d iteration got extent %lld:%lld->%lld which does not start at offset %lld of inode %lld\n`
+- `%s:%d: %s Found a gap between offset %lld and range starting at %lld with %lld bytes remaining in the extent %lld at %lld in inode %lld\n`
+- `%s:%d: %s snapshot is dataless\n`
+- `%s:%d: %s Couldn't get existing pfkur tree, err %d\n`
+- `containerGetMinimalSize`
+- `e-apfs`
+- `spec_telem_xattr_data_update`
+- `lite`
+- `%s:%d: cannot enter debug call %d\n`
+- `%s:%d: %s Couldn't insert extent, err=%d\n`
+- `com.apple.apfs.expandedrecords`
+- `%s:%d: range does not overlap, %d + %d <= %lld, return EIO\n`
+- `apfs_graft_lock_host_vp_internal`
+- `%s:%d: %s mount of %s specified content-protection but volume does not support it.\n`
+- `handle_next_link`
+- `%s:%d: %s failed to delete fs snap metadata tree after fs creation failed: %d\n`
+- `ino->ekwk == ekwk`
+- `%s:%d: %s *** failed to update source %lld\n`
+- `%s:%d: %s Failed to update_jobj(ino %llu) after clearing purgeability: %d (%s); ignoring...\n`
+- `dev_init`
+- `%s:%d: %s container loaded with exclusive access%s by pid <%d> (%s)\n`
+- `%s:%d: %s failed to ungraft, busy vnode for ino %llu [%s], devt 0x%x, usecount %d\n`
+- `apfs_vnop_symlink`
+- `handle_get_dev_by_role`
+- `%s:%d: %s Container-wide extent manipulation is in progress, cannot delete volume\n`
+- `%s:%d: %s spaceman_info() shouldn't have failed, ignoring.\n`
+- `pfkur_maybe_roll_ino`
+- `ino_supports_purgeable_is_tagged(apfs, ino)`
+- `1211111212221212111222212221`
+- `%s:%d: %s Failed to create dstream for ino %llu: %d (%s)\n`
+- `%s:%d: %s could not get parent inode for namedstream %llu (%d); skipping policy detach attempt\n`
+- `%s:%d: %s can't enter transaction for %llu records, %llu blocks, err %d\n`
+- `%s:%d: %s omap checkpoint traverse (op %d) failed: %d\n`
+- `%s:%d: %s node 0x%llx (level %d) index %d: more levels than expected\n`
+- `\"private id 0 for ino %p\\n\" @%s:%d`
+- `%s:%d: %s expanded record found on unsupported volume\n`
+- `%s:%d: %s Volume has no snapshots, skipping\n`
+- `%s:%d: %s failed to mark doc-id index for rebuild, error %d\n`
+- `check_stale_doc_id_index`
+- `%s:%d: %s Error searching free extent cache: %d; Reinitializing.\n`
+- `%s:%d: %s Failed to get fsroot tree count: %d\n`
+- `%s:%d: Failed to scan sub-dirs for ino %llu: %u\n`
+- `count_pages(0, 2 * (1 << PAGE_SHIFT_CONST), bsize) == 1`
+- `%s:%d: can not find media key, error = %d\n`
+- `%s:%d: %s cannot import pfk %llu (dstream %llu): %s\n`
+- `\"Found directory entry but inode %p has has iflags 0x%llx 1024 times for dvp %p and %s\" @%s:%d`
+- `%s:%d: %s failed to get reap list tail: %d\n`
+- `%s:%d: failed to set fs_private to %llu for thread %p, error %d\n`
+- `ino->rsrc_ekwk != ekwk`
+- `pfkur_pause`
+- `%s:%d: Cannot enter tx %llu 0 ino %llu\n`
+- `%s:%d: %s Underflow detected in unwritten ranges counter when trying to %s list entry for inode %lld\n`
+- `%s:%d: %s failed to start async read (paddr %llu, len %u): %d (%s)\n`
+- `FX defrag: Number of file extents skipped during relocation`
+- `%s:%d: %s Failed to update the accumulated number of inodes for residency %d, error %d (%s)\n`
+- `nx_reaper_add_sub_object`
+- `%s:%d: %s failed to restore refcnt on cloned dstream id %llu, err: %d\n`
+- `%s:%d: %s Cannot update purgeable record (ino %llu) with zero atime.\n`
+- `container_kb_get`
+- `apfs_zerofill_chunk_cb`
+- `apfs_io_lock_exclusive_held(apfs, ino)`
+- `icp_chclass`
+- `%s:%d: %s failed to list attribution tags, %d\n`
+- `Socket is not connected`
+- `%s:%d: %s Only %lld bytes has been reserved on inode %lld, this is not enough to accomodate %lld blocks\n`
+- `Calls to VNOP_LOOKUP`
+- `%s:%d: %s new %s (%lld blocks) moved from %lld to %lld\n`
+- `%s:%d: image4 payload (size %llu) or manifest (size %llu) is too large\n`
+- `%s:%d: %s dstream_evict_range %lld failed with error %d\n`
+- `%s:%d: fail to set/wrap vek key for volume %s (E%d)\n`
+- `%s:%d: %s got %s for volume %s\n`
+- `ckpw_thread_join`
+- `obj_destroy_complete`
+- `ierco`
+- `((((apfs))->apfs_main_apfs ? ((apfs))->apfs_main_apfs : ((apfs)))->apfs_sb->apfs_fs_flags) & 0x00000100ULL`
+- `%s:%d: %s ino %llu: not authorized to purge directory hierarchy (error %d)\n`
+- `reload-change-prot-class`
+- `%s:%d: %s FATAL: Some extents couldn't be transferred, no space available\n`
+- `map->next_index <= map->capacity`
+- `%s:%d: %s oid 0x%llx flags 0x%llx 0x%x type 0x%x/0x%x error freeing old space @ 0x%llx: %d\n`
+- `(fext_valid(fext, apfs_get_block_size(apfs)))`
+- `%s:%d: Cannot increment %llu\n`
+- `upl->len >= off`
+- `apfs_rawdev_strategy`
+- `apfs_graft_get_graft_infos`
+- `%s:%d: %s graft ino %llu, vol-uuid %s, allocated jobj_id range %llu+%llu (%s mount)\n`
+- `apfs_ungraft`
+- `%s:%d: %s Couldn't get snapshot pfkur tree, oid %lld, sblock_oid %lld, name '%s', err %d\n`
+- `%s:%d: %s btree_node_child_val() failed with error: %d\n`
+- `%s:%d: failed to create temporary inode %d\n`
+- `%s:%d: %s failed to find host inode (id %llu) for purgeable rec lookup, falling back to ino %llu's atime\n`
+- `%s:%d: %s Couldn't size purgeable directory %llu, error: %d (%s).\n`
+- `clone_ea_ctx.err != (-1)`
+- `%s:%d: %s obj_modify() failed: %d\n`
+- `tx_freeze`
+- `\"%s: Both inodes are NULL\\n\" @%s:%d`
+- `%s:%d: %s unable to get omap %lld: %d\n`
+- `ts.pfktso->epoch`
+- `%s:%d: Sending notification about %08x for APFS snapshot %d.%d\n`
+- `%s:%d: %s *** to ino %lld has nlink %d!\n`
+- `nx_metadata_range_add`
+- `handle_async_keybag_lock`
+- `%s:%d: %s can't remove dstream id, %d\n`
+- `src_ino->default_protection_class == snk_ino->default_protection_class`
+- `spaceman_fxc_update_smallest_with_successor`
+- `%s:%d: %s failed to set parent chain noflush for graft file, %d\n`
+- `%s:%d: Failed to deallocate extent %llu:+%llu`
+- `apfs_vnop_lookup`
+- `%s:%d: failed to get ino %lld in dir %lld\n`
+- `%s:%d: %s failed to insert extent (ino %llu) (offset %llu) (len %llu) (err %d)\n`
+- `ekwk`
+- `%s:%d: %s Error converting oid %lld xid %lld, obj_get() returned %d\n`
+- `read`
+- `%s:%d: cannot resume background thread %d\n`
+- `dstream->alloced_size == 0`
+- `%s:%d: %s Failed to iterate purgeable records while getting purgeable extents in bulk: error %d\n`
+- `update_spec_telemetry_xattr`
+- `%s:%d: %s Graft version %u not supported.\n`
+- `\"jhash_try_insert: apfs object with a zero devt.\\n\" @%s:%d`
+- `locked`
+- `methodPerformCryptoIO`
+- `%s:%d: %s seclude rename: failed to clone %d\n`
+- `%s:%d: %s tree_iterator_init failed: %s\n`
+- `%s:%d: renewal of ep %llu is not allowed (ttl %llu): %s (%d)\n`
+- `%s:%d: %s Unknown object loaded from checkpoint: oid 0x%llx type 0x%x/0x%x\n`
+- `%s:%d: %s attempt to free extent (0x%llx:0x%llx) which should not be free: %d\n`
+- `%s:%d: %s tx xid %lld was closed for %lld us waiting to prepare to flush\n`
+- `%s:%d: %s DONE reverting to snapshot w/xid %lld\n`
+- `%s:%d: %s tree_key_count() err %d\n`
+- `%s:%d: %s Cancelled free extent defrag.\n`
+- `%s:%d: failed to migrate key (uuid = %s)  [cur_class = %d, cur_tag = %d] to [new_class = %d, new_tag = %d], error = %x\n`
+- `apfs_vnop_getnamedstream`
+- `%s:%d: %s failed to increment refcnt on dstream id %llu, err: %d\n`
+- `clear_zero_ref_mappings`
+- `%s:%d: object memory manager could not get hw.memsize, error: %d\n`
+- `proxy_ino`
+- `apfs_rawdev_tidemark`
+- `apfs-sync`
+- `nx_is_mount_valid`
+- `State not recoverable`
+- `%s:%d: %s prepare for rebuild, doc_id_index_flags 0x%x, doc_id_tree_oid %llu, prev_doc_id_tree_oid %llu, doc_id_tree_type %u, apfs_next_doc_id %d\n`
+- `%s:%d: %s oid 0x%llx flags 0x%llx type 0x%x/0x%x error destroying: %d\n`
+- `%s:%d: %s error adding omap 0x%llx type 0x%x to reap list for cleaning: %d\n`
+- `jobj`
+- `FX defrag: Run1 chunk flags`
+- `%s:%d: %s Only %lld bytes have been reserved for inode %lld, not enough to release %lld\n`
+- `%s:%d: %s document id overflow detected\n`
+- `%s:%d: %s fext_tree_update returned %d\n`
+- `%s:%d: cannot change role of system-unique volume\n`
+- `%s:%d: %s Inode has no clonegroup id! (inum:%llu priv_id:%llu new_priv_id:%llu)\n`
+- `sizeEvicted`
+- `%s:%d: %s jobj id range length 0x%llx overflows next_obj_id 0x%llx\n`
+- `spaceman_chunk_zone_info_load_recent_chunks`
+- `Physical Interconnect`
+- `%s:%d: %s Failed to delete covered node from length tree: %d\n`
+- `%s:%d: %s VEKd derived and cached after extended vek classes enablement\n`
+- `icp_attach_ep_to_ino`
+- `\"apfs_vnop_verify with split verification context is used on inode %p\\n\" @%s:%d`
+- `%s:%d: %s convert op %d, oid %lld xid %lld, ov flags 0x%x paddr 0x%llx current object: flags 0x%llx 0x%x paddr 0x%llx, waiting on write\n`
+- `ReplaceDirStats`
+- `%s:%d: ... Skipping new purgeable record on %s, ino %llu dstream %llu - fsize didn't match; new %llu != old %llu\n`
+- `Encrypted`
+- `211`
+- `%s:%d: %s failed to get next metadata range, error %s(%d)\n`
+- `%s:%d: %s could not update clone size for dir-stats %llu: %s (%d)\n`
+- `%s:%d: %s sfq %d entry %lld:%lld %lld - bad xid, current xid %lld\n`
+- `%s:%d: cannot load ierso %d\n`
+- `pfkur_thread_self(apfs)`
+- `%s:%d: %s Failed to iterate file extents for ino %llu: error %d\n`
+- `wsp->full_lock`
+- `%s:%d: %s apfs_free_data_blocks_if_needed(%llu,%llu) failed: %d %s\n`
+- `%s:%d: %s failed to set up new spaceman free extent cache: %d\n`
+- `tx_finish`
+- `%s:%d: %s xid %lld checkpoint data block count is not value tracked by cache: %d != %d\n`
+- `j_dir_rec_t`
+- `%s:%d: %s using fext tree oid %lld\n`
+- `%s:%d: %s disabling crypto-io for pid %d by pid <%d> (%s)\n`
+- `%s:%d: %s btree_evict_range called on non-physical tree oid: unknown, paddr %llu\n`
+- `%s:%d: %s fail to set/wrap metadata rolling key for volume %s, error %d\n`
+- `%s:%d: %s failed to read cib %d: %d\n`
+- `%s:%d: %s ino %llu has no name`
+- `nx_check_recent_sanity_omap`
+- `sino->default_protection_class > 2`
+- `apfs_vek_commit_enter`
+- `%s:%d: %s Resource fork is an embedded xattr, cannot be written to, returning ENOTSUP\n`
+- `%s:%d: %s Could not insert sparse extent %llu:+%llu for ino %llu, err %d\n`
+- `%s:%d: %s freeing old checkpoint data area 0x%llx:0x%x failed: %d\n`
+- `full`
+- `%s:%d: %s could not locate pfkurso for ino %llu, error %d\n`
+- `%s:%d: %s could not find volume with role 0x%x in (container/volume group) %s\n`
+- `%s:%d: %s failed to update from inode (%llu%llu) after successful exchange: %d\n`
+- `%s:%d: %s Couldn't lookup (group:%llu inum:%llu priv_id:%llu new_priv_id:%llu) : %s\n`
+- `fs_create_dstream`
+- `%s:%d: %s failed to modify the apfs_t before reaping (error %d).\n`
+- `private_id`
+- `type`
+- `btree_node_child_val`
+- `%s:%d: %s failed to get object volume at index %d\n`
+- `fs_insert_snapshot_metadata`
+- `%s:%d: %s [rate-limiting bogus extentref tree entries]`
+- `apfs_defrag.c`
+- `%s:%d: %s failed to transcribe xattrs of ino %llu: %s\n`
+- `22111212222222222222221212133223122211112211112222122`
+- `nx_tx_wait`
+- `convert_volume`
+- `%s:%d: %s failed to write data (paddr %llu, len %u): error %d (%s)\n`
+- `%s:%d: %s Index %u is bogus, max %u, fs is %snull\n`
+- `AppleAPFSMediaBSDClient`
+- `ino_is_file(ino)`
+- `ino_shrink`
+- `%s:%d: %s spaceman_get() failed: %d\n`
+- `apfs_vfsop_mount`
+- `%d`
+- `sino`
+- `%s:%d: %s vnode_ref on the container device vnode failed: %d\n`
+- `%s:%d: %s Volume is already set to root to snapshot \"%s\" w/snap xid %lld on next boot\n`
+- `rage_purgeable_extents`
+- `update_file_extent`
+- `maxAge`
+- `CoreAnalyticsHub`
+- `count_pages(0, (1 << PAGE_SHIFT_CONST), 64llu * 1024 * 1024 * 1024 * 1024) == 1`
+- `Yes`
+- `122`
+- `%s:%d: %s can't delete ino %llu clonegroup record: %d\n`
+- `handle_keybag_lock`
+- `%s:%d: %s failed to revert modifications to BSD flags with error (%d) after initial failure (%d)\n`
+- `nx_mount_initiate_free_space_trims`
+- `site.apfs_t`
+- `upl->len >= range->len`
+- `%s:%d: %s failed to load volume class keys, error = %x\n`
+- `rsb_commit`
+- `nx_global_extent_manipulation_wait_for_cancellable`
+- `is required`
+- `apfs_mount_check_inflight_mounts`
+- `%s:%d: %s set apfs_fixup_flags to %#llx\n`
+- `tmp-ino-clone-`
+- `apfs-reallocate-range-read`
+- `Number of times zero filling was skipped`
+- `TierType`
+- `graft_blockmap_lut_create`
+- `%s:%d: %s Failed to update inode : xid %llu, ino %llu, error = %d\n`
+- `fsizeBucket3Count`
+- `%s:%d: %s leaf count %d, aborting on signal\n`
+- `!(ino->iflags & JI_HAS_EPHEMERAL_POLICY)`
+- `\"failed %d: \"\"fext_iterator_next(snk_iter)\" @%s:%d`
+- `site.omap_t`
+- `site.gbitmap_t`
+- `omap_revert_to_snapshot`
+- `spaceman_modify_bits`
+- `create_empty_xattr_vnode`
+- `%s:%d: %s Failed to find regions for free extent defrag: error %d\n`
+- `FX defrag: Run2 chunk flags`
+- `%s:%d: %s tx_thaw error: %d\n`
+- `apfs_nstream_fsync`
+- `%s:%d: Invalid IORegistry object for APFS container parent (expected IOMedia with BSD major/minor, got %s), devvp %p (%s)\n`
+- `FX defrag: Run4 alloc extents size std-dev`
+- `apfs_inode_authorize_with_lock`
+- `%s:%d: %s %s encryption rolling is disabled for this device.\n`
+- `%s:%d: %s range in dest file (ino %llu) must be free of data\n`
+- `%s:%d: %s volume dev name unterminated / too long\n`
+- `insert_linkid`
+- `hcp_new_def_crypto_xattr`
+- `%s:%d: %s container-wide extent manipulation is in progress\n`
+- `%s:%d: %s could not remove xattrs for obj-id %lld: %s (%d)\n`
+- `%s:%d: unaligned write (offset=%lld size=%lld bsize=%d, ino=%lld)\n`
+- `%s:%d: ino %llu became unrollable %llu\n`
+- `count_pages(0, (1 << PAGE_SHIFT_CONST), 1 + (1 << PAGE_SHIFT_CONST)) == 1`
+- `%s:%d: failed to store volume's primary key (uuid = %s, new_tag = %d, new_class = %d), error = %d\n`
+- `%s:%d: %s Failed to get the node count of the extentref tree: %d - %s\n`
+- `apfs_flush_allocated_unwritten_ranges`
+- `handle_get_preallocate_min_space`
+- `%s:%d: %s Cannot reserve %llu blocks for inode %lld: %s(%d)\n`
+- `%s:%d: %s failed to decrement the physical extent refcount on %lld:%lld ret %d\n`
+- `%s:%d: \tOnInsertPurgeRec: removed ino %llu from purgeableInoSet\n`
+- `Network dropped connection on reset`
+- `%s:%d: %s failed to create fs: %d\n`
+- `btree_node_entry_update`
+- `!\"crypto key pool is not supported for encryption type\\n\"`
+- `(rsrc_ino->default_protection_class == 1) || (rsrc_ino->default_protection_class == 2)`
+- `%s:%d: %s failed to finalize calculation for dir-stats %llu: %s (%d)\n`
+- `%s:%d: %s failed to remove shadow dir-stats %llu when unsetting dir-stats %llu (ino %llu): %s (%d)\n`
+- `%s:%d: %s Allocated unwritten range %llu:%llu still exists before fsize (%llu) / prev_fsize (%lld) on ino %llu\n`
+- `hcp_chclass_demotes(apfs, ino_get_class_or_none(apfs, ino), new_class)`
+- `%s:%d: %s Failed to allocate vattr for host\n`
+- `RPC struct is bad`
+- `Device power is off`
+- `src->iflags & JI_HAS_RAW_ENCRYPTED`
+- `%s:%d: %s removing xattrs returned ENOENT for private-id %lld (ino %lld)\n`
+- `%s:%d: %s fail to set/wrap sec metadata rolling key for volume %s, error %d\n`
+- `new_id != 4`
+- `should_purge_file`
+- `%s:%d: %s failed to prefetch hashes for ino %llu (offset %lld+%d): %s\n`
+- `apfs_jhash_insertvnode`
+- `apfs_sdv`
+- `%s:%d: %s Allocation requested but a_buf = %p and a_bufsize = %zd\n`
+- `convert_file_into_dataless_fault`
+- `%s:%d: %s Found tombstone - returning %d for lookup of %llu\n`
+- `clone_stream_xattr`
+- `fsizeBucket2Size`
+- `%s:%d: %s Error entering tx: %d\n`
+- `%s:%d: %s failed to get next internal pool reverse mapping, error %s(%d)\n`
+- `%s:%d: %s DS_OP_ONLY_SPEC_TELEMETRY can't be specified alone\n`
+- `%s:%d: %s Too many cancellations running!\n`
+- `%s:%d: call to load volume class keys does not exist\n`
+- `apfs_free_extent_defrag`
+- `iokit_read`
+- `%s:%d: %s expanded records are now supported\n`
+- `tx_checkpoint_desc_zero`
+- `%s:%d: %s failed to set dir-stats key %llu on ino %llu: %s (%d)\n`
+- `%s:%d: ino %llu has no dstream\n`
+- `%s:%d: %s device accelerated crypto: %d (compiled @ %s %s)\n`
+- `%s:%d: %s fs_rename_snapshot('%s', %u, '%s', %u) returned %d\n`
+- `stop`
+- `%s:%d: failed to move ino %lld to purgatory from dir %lld : %d\n`
+- `handle_get_shared_extents`
+- `Q`
+- `%s:%d: %s failed to load inode %lld ret %d on volume: %s\n`
+- `expected_inum == inum`
+- `%s:%d: %s get_purgeable_dir_gencounts failed with error %d\n`
+- `ek_len <= skey_ek_len(key)`
+- `set_dir_stats`
+- `%s:%d: %s failed to set shadow dir-stats key new dir-stats: %s (%d)\n`
+- `%s:%d: %s failed to make dir-stats %llu shadow: %s (%d)\n`
+- `%s:%d: %s failed to enter tx to %s dir-stats %llu as needing reconciliation: %s (%d); size tracking may go out of sync\n`
+- `get_pfi_from_record_info`
+- `\"nx_buf_bread: write not allowed! \\n\" @%s:%d`
+- `Calls to VNOP_MAKENAMEDSTREAM`
+- `apfs_fixup_thread_exit`
+- `%s:%d: Why are we comparing a chunk to itself?\n`
+- `apfs_clonegroup_insert_inode`
+- `%s:%d: %s failed to get reap list head: %d\n`
+- `%s:%d: %s Requested zero length blocked-out range\n`
+- `\"vp %p has type %d which is NOT right (orig_vp %p crypto %p crypto->owner %p)\\n\" @%s:%d`
+- `%s:%d: failed to commit new sys bound vek, err = 0x%x\n`
+- `%s:%d: failed to store container's key (uuid = %s, new_tag = %d, new_class = %d), error = %d\n`
+- `%s:%d: %s snapshot %s is already mounted, err = %d\n`
+- `%s:%d: %s error %d updating phys block num %lld\n`
+- `%s:%d: %s failed to serialize dir-stats %lld into jval of size %u\n`
+- `%s:%d: %s minkey update traversal unexpectedly found the key (%d) or a non-zero index (%d); oid %llu subtype 0x%x level %d\n`
+- `%s:%d: %s error adding snapshot: %d\n`
+- `%s:%d: remove_jobj for %s from 1st tree failed: %u\n`
+- `%s:%d: %s searching for purgeable dups/clones/orphans on %s\n`
+- `apfs_nstream_vnop_setattr`
+- `%s:%d: failed to find container to determine volume lock status dev_path = %s\n`
+- `%s:%d: %s Container has fragmented metadata\n`
+- `%s:%d: %s Unable to remove XATTR_BOOTINFO error=%d\n`
+- `%s:%d: %s failed to remove doc-id for ino %llu, error %d\n`
+- `%s:%d: Sparse bytes removed from inode %lld internal flags: 0x%llx iflags 0x%llx, new_sparse_bytes %lld; name %s parent-id %lld), but it wasn't marked sparse.\n`
+- `dirs:     busy %llu stale %llu deleted %llu evicted %llu\n`
+- `getHiberKey`
+- `%s:%d: Failed to allocate speculative telemetry dir candidate entry\n`
+- `%s:%d: %s nx_num_vols_mounted is %d\n`
+- `handle_revert_to_snapshot`
+- `apfs_newfs`
+- `zero_ref_tree_create`
+- `%s:%d: %s Couldn't create extentref tree for demo mode: %d\n`
+- `%s:%d: %s Supplemental flags %llx are incompatible with directories.\n`
+- `%s:%d: %s tree_key_count() err %d for cur_tree, oid 0x%llx\n`
+- `%s:%d: containerDefrag\n`
+- `%s:%d: %s cannot zero out prealloc'ed region [%lld, %lld) of ino %llu; old_eof=%lld, error=%d\n`
+- `No error.`
+- `%s:%d: %s %lld blocks trimmed in %lld extents (%lld us/trim, %lld trims/s)\n`
+- `%s:%d: %s op %d error getting cib %d bitmap %d @ %lld: %d\n`
+- `%s:%d: cannot blockout, rolling is in progress: %d\n`
+- `%s:%d: no rollable fexts left in %llu >= %llu\n`
+- `fake_vnode`
+- `%s:%d: %s Couldn't lookup sme for %llu, err %d\n`
+- `%s:%d: cannot unwrap ekwk %llu, error = %d (apfs flags = 0x%llx)\n`
+- `%s:%d: cannot derement old id %llu, %d\n`
+- `fake_load_inode`
+- `%s:%d: %s Unsupported flags being used on purgeable record: %llx. Truncating...\n`
+- `%s:%d: %s Failed to get extentref tree: %d - %s\n`
+- `%s:%d: encrypted IO not supported during lightweight probe dev_name = %s\n`
+- `%s:%d: %s Failed to find tidemark, error=%d\n`
+- `xattr_cloner`
+- `%s:%d: %s btree_node_insert_internal failed: %d\n`
+- `%s:%d: Object cache override %d\n`
+- `%s:%d: %s Error leaving tx: %d\n`
+- `%s:%d: %s volume %s has unexpected purgeable-fixup xattr size %u\n`
+- `%s:%d: %s freeing new free queue tree failed: %d\n`
+- `remove_extent_of_file`
+- `apfs_ep_is_reclaimed(apfs_ep)`
+- `\"virtual object on dirty list not dirty: oid %lld flags 0x%llx 0x%x\\n\" @%s:%d`
+- `%s:%d: %s oid 0x%llx flags 0x%llx type 0x%x/0x%x error freeing space %d\n`
+- `spaceman_alloc_iterate_chunks`
+- `spaceman_set_bits_in_bm`
+- `apfs_rawdev_read_data`
+- `OSInternal`
+- `FX defrag: Number of times free extent defrag has run`
+- `apfs_vnop_reclaim`
+- `%s:%d: %s low space conditions: ino %llu inline delete %sallowed. %llu deletable blocks found\n`
+- `%s:%d: %s volume has a secondary fs_root, need to cancel any running evict/resize\n`
+- `xid %lld`
+- `%s:%d: %s fragmented checkpoint area failed sanity check: %d\n`
+- `pfkurso`
+- `site.apfs_rawdev_desc_t`
+- `%s:%d: %s failed to authorize unlink for ino %llu (parent %llu): %d (%s)\n`
+- `%s:%d: %s failed to reset dir_nlink for inode %llu: %d\n`
+- `%s:%d: %s buf_biowait() failed, error = %d, b_error = %d, buf_flags_after_io = 0x%x, crypto = [%s %s %s], get_blk_error = %d, buf_valid = %d\n`
+- `composite`
+- `containerEnableCryptoIO`
+- `conversion`
+- `%s:%d: %s failed to remove orphan purgeable record: %d (%s)\n`
+- `release`
+- `site.spec_telem_dir_list_t`
+- `%s:%d: %s     owning file_ext: id %lld, logical_addr %lld, len %lld\n`
+- `%s:%d: %s nx_find_clear_range_for_metadata() error: %d\n`
+- `%s:%d: %s FATAL: couldn't re-insert extent into old file, error %d\n`
+- `%s:%d: %s Warning: attempting to place unknown expanded type %hhu into fsroot.\n`
+- `nx_check_recent_sanity`
+- `%s:%d: %s failed to update ino %llu xf purgeable flags: %s (%d)`
+- `site.delta_create_ctx_t`
+- `%s:%d: %s failed to remove the first phys extent in delta tree oid %lld, error %d\n`
+- `apfs_clonegroup_full_clone_scan`
+- `%s:%d: %s %s, root hash authentication %s\n`
+- `removal`
+- `%s:%d: %s failed to untag ino %llu: %s (%d)\n`
+- `iterate_dirents_case_or_norm_insensitive`
+- `%s:%d: couldn't pagein ino %llu %llu:+%u, %d\n`
+- `snapxid.`
+- `%s:%d: Support for hidden keys is enabled\n`
+- `%s:%d: %s Extent %lld, %lld allocated inside the soft block-out range %lld, %lld\n`
+- `btree_evict_range`
+- `%s:%d: %s IP base %lld:%lld is not free in the bitmap! error %d isallocated %d\n`
+- `owner_ino`
+- `send_purge_fsevent`
+- `%s:%d: %s failed to find <%llu, %llu> clone mapping, error %d\n`
+- `%s:%d: failed nonce attach: %u\n`
+- `<unknown>`
+- `%s:%d: %s       failed to find the inode owning that xattr\n`
+- `get_host_low_disk_levels`
+- `%s:%d: %s Backing storage is a raw file\n`
+- `src->start && snk->start`
+- `%s:%d: %s Request to delete volume %u was denied, user not authorized to delete the volume\n`
+- `Write requests received from user`
+- `apfs_vnop_remove`
+- `ep_movedataextents`
+- `(c == ino_class_vc) || (c == ino_class_vx)`
+- `%s:%d: %s fs %llu has %llu snapshots - verifying no snapshot data is in blocked-out range\n`
+- `%s:%d: %s cannot alloc synthetic inode %d\n`
+- `count_pages(0, (1 << PAGE_SHIFT_CONST), (1 << PAGE_SHIFT_CONST)) == 1`
+- `ier_ierco_get_rsrcfork_ino`
+- `%s:%d: %s reached the desired amount to delete (%lld > %lld)\n`
+- `%s:%d: %s Minimum number of blocks to resize to is %lld blocks\n`
+- `%s:%d: %s gettin' low on space: ttype %s num_blocks %lld blocks_in_txn %lld free_blocks %lld xid %lld\n`
+- `%s:%d: %s failed to delete pfkur tree after fs creation failed: %d\n`
+- `ino->iflags & JI_NAMEDSTREAM`
+- `com.apple.private.apfs.shareddatavol.create`
+- `apfs_log_purge_stats`
+- `\"can not do encrypted i/o with a null cpx! crypto state %p\\n\" @%s:%d`
+- `kb`
+- `%s:%d: setting max link-id cache size to: %d\n`
+- `%s:%d: %s Graft lookup failed to get root vp: error %d\n`
+- `apfs_vnop_renamex`
+- `%s:%d: %s Unable to insert XATTR_BOOTINFO error=%d\n`
+- `handle_get_attribution_info`
+- `%s:%d: %s Failed to find purgeable record (ino %llu) for flags merging: %d\n`
+- `%s:%d: %s Cannot insert purgeable record with zero atime (ino %llu).\n`
+- `Calls to VNOP_LISTXATTR`
+- `handle_enable_attribution_tags`
+- `apfs: total mem allocated: %lld (%lld mb);\n`
+- `Operation canceled`
+- `is_non_iterative_extent_manipulation_faster`
+- `%s:%d: %s Error traversing current free extent cache: %d\n`
+- `post_offline_purge_mount`
+- `iterate_expanded_purgeable_records`
+- `No child processes`
+- `apfs_is_volume_fsindex_allowed`
+- `%s:%d: %s failed to restore orig_fext, ino %llu, pbn 0x%llx, laddr 0x%llx, len %llu, crypto_id %llu, error %d\n`
+- `scalable_id_is_valid(apfs, id)`
+- `commit_ino_clonesplit`
+- `paddr`
+- `mark_ino_purgeable`
+- `%s:%d: %s Couldn't delete omap snapshot, err %d\n`
+- `logging.c`
+- `%s:%d: %s failed to increment physical range pbn=%llu len=%llu for obj-id %lld\n`
+- `%s:%d: %s Can't mount a volume undergoing restore/livefs-create\n`
+- `%s:%d: %s ino %llu, xattr %s: can't get first file extent: %d\n`
+- `new_rsrc_clonesplit_src`
+- `purgeUrgency`
+- `lookup_purgeable_info`
+- `CaseSensitive`
+- `Metadata: Number of spaceman bitmap bytes read`
+- `%s:%d: %s debug_apfs_arr at %p, failed prange %lld..%lld (count %lld)\n`
+- `%s:%d: %s unable to update mount as volume is unmounting\n`
+- `%s:%d: %s xid %lld failed to write block 0 superblock: %d\n`
+- `dir_stats_move_regular_origin`
+- `update_dir_stats`
+- `%s:%d: failed to load keybag wrapping key for placeholder nx, error = %d\n`
+- `%s:%d: %s overflow, start %llu length %llu\n`
+- `spaceman_chunk_zone_info_recent_increment`
+- `%s:%d: %s minimal_size truncated to device size, %lld\n`
+- `%s:%d: failed to vnode_create the root vnode!\n`
+- `%s:%d: %s failed to remove doc-id %d from ino %lld, error %d\n`
+- `\"Number of bytes in new ranges %lld for inode %p does not match number of blocks %lld\\n\" @%s:%d`
+- `apfs_fsinfo_get_metadata_blocks`
+- `AppleAPFSSnapshot`
+- `temporary `
+- `%s:%d: %s Graft dir %llu is not a directory\n`
+- `insert`
+- `lba`
+- `%s:%d: %s apfs_realloc_range: physical space inconsistency. Data copy %d of offset 0x%llx length 0x%llx would have used too much space. Need 0x%llx have 0x%llx\n`
+- `apfs_raw_encrypted.c`
+- `ok`
+- `VolumeCreateAttachKeybag`
+- `unmounting`
+- `kind == XATTR_KIND_RSRCFORK || kind == XATTR_KIND_DECMPFS || kind == XATTR_KIND_ACL`
+- `%s:%d: %s hibernate unlock mode: r/w update not allowed\n`
+- `apfs_lock_phys_range_lot_full`
+- `%s:%d: %s overflow, fext logical_addr %llu len %llu\n`
+- `pfkur_roll_all_inodes_`
+- `asyncCryptoIOCleanup`
+- `hcp_chclass_promote2`
+- `nx_metadata_range_optimize`
+- `%s:%d: %s Failed to find smallest extent %d in length tree: %d\n`
+- `%s:%d: %s Reserved index %d for the target volume %s\n`
+- `%s:%d: %s Failed to perform speculative download telemetry update, ino %llu error = %s (%d)\n`
+- `%s:%d: %s Failed to cache VEKd crypto state\n`
+- `crypto.c`
+- `%s:%d: %s couldn't remove the last clone mapping of private_id %llu, error %d\n`
+- `Too many processes`
+- `%s:%d: %s Failed to insert drec associated with purgatory_dir and ino %llu, error = %d\n`
+- `%s:%d: %s xid %lld validation failed for checkpoint at index %d: %d\n`
+- `%s:%d: %s Error evicting oid %lld, obj_write() returned %d\n`
+- `%s:%d: %s failed to iterate vnodes to find graft vnode in use for graft [%s], devt 0x%x, %d\n`
+- `apfs_io_common`
+- `apfs_vfsops.c`
+- `%s:%d: %s couldn't read checkpoint descriptor block %d @ %lld: %d\n`
+- `%s:%d: Can't find APFS container parent in IORegistry for devvp %p (%s)\n`
+- `%s:%d: %s %s: error when flushing data for inode %lld - %s(%d)\n`
+- `com.apple.private.apfs.share-range`
+- `%s:%d: %s Missing decmpfs xattr for inode %lld\n`
+- `%s:%d: %s failed to set dir stats key for <%llu, %llu> clone mapping, error %d\n`
+- `%s:%d: %s failed to get write graft file xattrs, %d\n`
+- `N`
+- `update_dir_stats_with_spec_telemetry_state`
+- `%s:%d: %s %s device_handle block size %d block count %lld features %d %s %s\n`
+- `Write requests sent to block device`
+- `ep_get_size`
+- `%s:%d: %s nx_unblock_physical_range failed with error: %d\n`
+- `!(ino->iflags & JI_RAW_ENCRYPTED)`
+- `num_phys_cpus`
+- `apfs_vfsop_unmount`
+- `%s:%d: %s failed to enter tx to unset dir-stats for ino %llu: %s (%d)\n`
+- `%s:%d: failed to allocate bufattr object\n`
+- `com.apple.private.apfs.free-blocks-threshold`
+- `apfs_update_reserved_ranges`
+- `%s:%d: %s failed to get newnode minkey: %d\n`
+- `%s:%d: %s Verification context does not match the inode %lld: expected hashes for data stream %lld, got %lld\n`
+- `%s:%d: %s sm_free_count %lld sm_reserved_space %lld\n`
+- `%s:%d: %s dst file (ino %llu) no longer exists\n`
+- `num_invalidated == ep_cache->cache_size`
+- `%s:%d: %s failed to initialize cab %d: %d\n`
+- `%s:%d: %s Failed to update_jobj(ino %llu) after converting itinto pending-purgeable: %d (%s)\n`
+- `apfs_slurp_file_data`
+- `fs_obj_delete`
+- `%s:%d: %s fragmentation_histogram_fill for volume oid %lld (%d) failed: %d\n`
+- `%s:%d: %s Offline purge failed: error %d (%s)\n`
+- `%s:%d: invalid arguments for mounting a filesystem\n`
+- `%s:%d: *** Unknown file info type %llu\n`
+- `unmark`
+- `%s:%d: %s unable to modify the apfs object (err %d) to be able to revert the fs.\n`
+- `extent_remover_callback`
+- `authorize_purge_dir_hierarchy`
+- `%s:%d: %s max_available_space %lld currently_allocated %lld currently_allocated_in_fixed_fs %lld\n`
+- `%s:%d: %s Failed to set purgeable start time for ino %lld: error %d (%s)\n`
+- `No message available on STREAM`
+- `VM`
+- `%s:%d: %s Possible corruption - unwritten extents at offset %lld in dstream %lld on regular volume\n`
+- `%s:%d: %s failed to decrement fs_private tx_active, error %d\n`
+- `deref`
+- `%s:%d: %s failed to get doc-id tree (oid %llu, type 0x%x), error %d\n`
+- `%s:%d: %s fs_get_xattr failed for vol uuid, error %d\n`
+- `apfs_drop_rangelist_entries`
+- `remove_eof_extents`
+- `%s:%d: %s Cannot decompress data from inode %lld on a sealed volume\n`
+- `%s:%d: %s Couldn't find snapshot metadata for xid %llu\n`
+- `rsrc_ino->iflags & JI_NAMEDSTREAM`
+- `%s:%d: %s invalid graft jobj id range (%llu+%llu) for apfs_next_obj_id %llu\n`
+- `%s:%d: %s invalid fsindex: %d\n`
+- `%s:%d: %s dstream_evict_range %lld failed with ENOSPC\n`
+- `site.crypto_key_pool_stats_t`
+- `11222`
+- `AppleAPFSContainer`
+- `collectionTime`
+- `%s:%d: Warning: Can't find dstream_id for ID in fs_root %llu: %u\n`
+- `\"cannot get mapping's ek %llu, %d\\n\" @%s:%d`
+- `fexts[0].crypto_id == 0xbb`
+- `-apfs_ier_full_roll_disable`
+- `The inode's protection class does not allow pagein\n`
+- `VEKUserProtected`
+- `%s:%d: %s checkpoint search: largest xid %lld, best xid %lld @ %d\n`
+- `%s:%d: %s dir-stats key %llu is busy even though we hold the inode lock\n`
+- `%s:%d: %s Failed to perform speculative download telemetry ino %llu error=%s (%d)\n`
+- `ts->xid`
+- `%s:%d: async crypto i/o not setup for volume [fsindex (%d)]\n`
+- `need_zerofill`
+- `was already`
+- `%s:%d: %s nx_unblock_physical_range failed with error %d for range (%lld, %lld)`
+- `%s:%d: cannot clone extents ino %llu, err %d\n`
+- `revert_to_snapshot`
+- `%s:%d: %s reverted supplemental tree (type %d): %llu -> %llu\n`
+- `apfs_pack_vap`
+- `updating mounted`
+- `%s:%d: %s tree_lookup_ge() failed with error %d\n`
+- `%s:%d: %s namedstream ### obj-id %lld/%lld retval %d filesize %lld offset %lld resid %lld residual io %lld ###\n`
+- `%s:%d: failed to get/unwrap rolling-key for volume %s, error %d\n`
+- `site.lck_rw_t *`
+- `%s:%d: %s clone mapping <%llu, %llu>: failed to update attribution tag: %s (%d)\n`
+- `spaceman_fxtp_add_child`
+- `xdstream.dstream.default_crypto_id == old_id`
+- `APFS_MOUNT_FOR_VERIFICATION`
+- `%s:%d: %s unable to create/store data sw crypto (%d)\n`
+- `%s:%d: buf_biowait() failed, error = %d, b_error = %d, buf_flags_after_io = 0x%x, crypto = [%s %s %s], get_blk_error = %d, buf_valid = %d\n`
+- `%s:%d: %s     xattr for that extent: name '%s', obj_id %lld, ino_obj_id %lld\n`
+- `%s:%d: %s failed to enter a transaction to modify file attribution record for s_hash <%llu> with <%s> <%d>\n`
+- `%s:%d: %s fs creation failed: %d ... cleaning up...\n`
+- `%s:%d: %s returning EBUSY for cp_open on graft file %llu\n`
+- `apfs_vnops.c`
+- `nx_defrag`
+- `sb->ino.new_key`
+- `%s:%d: %s failed to get volume key, error = %d, tag %d\n`
+- `inode range length`
+- `checkpoint descriptor area`
+- `iterative_fext_cloner`
+- `Remove`
+- `count_pages(0, (1 << PAGE_SHIFT_CONST), 2 * (1 << PAGE_SHIFT_CONST)) == 1`
+- `thread->thread_state != pfk_transcriber_state_exited`
+- `com.apple.apfs.spec_telemetry`
+- `attr tag`
+- `clonesplit_rsrc_snk_free`
+- `%s:%d: %s bt_move_entries() failed (%d) while trying to revert changes due to error: %d\n`
+- `handle_get_spec_telemetry_info`
+- `%s:%d: %s Failed to get fsys oid %lld - %s\n`
+- `j_dir_stats_t`
+- `%s:%d: %s fs_tx_enter failed, err %d\n`
+- `%s:%d: %s error %d removing pext key 0x%llx\n`
+- `%s:%d: %s failed to set sparse byte count on inode %lld\n`
+- `%s:%d: %s Couldn't update an extent in delta_tree (oid %lld), err %d\n`
+- `%s:%d: %s nx_reaper_get failed with %u\n`
+- `cst->hdr.retain_count > 0`
+- `site.obj_init_async_args_t.uint8_t`
+- `%s:%d: %s failed to increment fs_private tx_active, error %d\n`
+- `%s:%d: %s failed to vnode_create the vnode for %lld! (err %d)\n`
+- `clear_purgeability_log`
+- `%s:%d: Failed to create filter dictionary to match system volume\n`
+- `vfs_fsprivate(vnode_mount(from_inode->vp)) == vfs_fsprivate(vnode_mount(to_inode->vp))`
+- `%s:%d: %s Trying to delete space for extent %lld %lld which has invalid owning_obj_id %lld\n`
+- `btree_node_sanity_check`
+- `key`
+- `%s:%d: %s failed to write chunk %llu bitmap: %d\n`
+- `apfs_rr_del_temp_file`
+- `clone_mapping_update_flags`
+- `IOMedia`
+- `%s:%d: failed context evaluate payload: %u\n`
+- `%s:%d: %s authenticated mount requested but volume is not sealed\n`
+- `apfs_is_task_dataless_manipulator_internal`
+- `%s:%d: %s failed to delete fs clonegroup tree after fs creation failed: %d\n`
+- `btree_check_recent_sanity`
+- `%s:%d: %s invalid attr_id length for hash %llu\n`
+- `nx_keybag_default_rollingkey`
+- `%s:%d: %s encryption rolling is disabled for this device.\n`
+- `File defrag: Number of fragmented files found during scans`
+- `%s:%d: %s Failed to perform speculative download telemetry ino on access %llu\n`
+- `%s:%d: %s failed to get reaper for checkpoint %s traverse: %d\n`
+- `get_file_id_by_doc_id`
+- `%s:%d: %s failed to start scalable pfk transcriber thread nr %u, mach err %d\n`
+- `ino->default_protection_class != 6`
+- `punch head`
+- `%s:%d: %s failed to init tree iterator: %s (%d)\n`
+- `V`
+- `site.typeof(*hashtbl)`
+- `%s:%d: %s failed to init rollable object for xattr %s on inode %llu; err %d\n`
+- `%s:%d: %s (dstream_id %lld, flags %x) throttled-pause fired %u times,number of blocks to evict %llu, number of evicted blocks till now %llu\n`
+- `%s:%d: %s failed to decrement refcnt on crypto-id %lld on behalf of ino %lld %lld:%lld (ret %d) \n`
+- `%s:%d: %s tx_leave failed trying to create new metadata rolling key for volume %s, error=%d\n`
+- `%s:%d: %s setting nx device flag nx_backingstore_is_sparse\n`
+- `%s:%d: %s Cannot write %d blocks to %lld on %s - %s(%d)\n`
+- `%s:%d: %s Failed to generate graft devt: %d\n`
+- `%s:%d: %s link count == %d for inum %lld?!\n`
+- `%s:%d: %s failed to check if doc-id index is stale (error %d)\n`
+- `apfs_io_lock_exclusive`
+- `%s:%d: %s fs_delete_inode on %lld failed with %d\n`
+- `%s:%d: %s failed to get root-snapshot-name from DT\n`
+- `%s:%d: %s Failed to examine fs_root for relocatable data: %d\n`
+- `container_load_with_callback`
+- `%s:%d: %s Protecting volume with role %u from unmount is unuspported.\n`
+- `%s:%d: %s Resize Prepare (Copy snapshots): %lld -> %lld\n`
+- `btree_node_compact`
+- `pfkur_update_pfkurso_helper`
+- `%s:%d: %s %s:%d - inode %lld: size %lld of the %d range starting at offset %lld is not aligned\n`
+- `apfs_rawdev_write_data`
+- `%s:%d: %s Couldn't find snap_meta for xid %llu: %d\n`
+- `%s:%d: %s ino %llu is marked as dir-stats origin (id %llu), but could not get its dir-stats: %s (%d)\n`
+- `len`
+- `ino_is_retained ? ino->default_protection_class == 2 : 1`
+- `FX defrag: Last run error/exit reason`
+- `Calls to VNOP_REMOVENAMEDSTREAM`
+- `.sqlite`
+- `%s:%d: Decoding of url %s failed with %d\n`
+- `%s:%d: %s bad clonegroup_mapping_key_t, klen:%u vlen:%u group_id:%llu\n`
+- `handle_sync_and_freeze`
+- `rangelist_verification_mode`
+- `jobj_merge_maybe_clamp_64`
+- `%s:%d: %s Failed to insert purgeable tombstone for file id %llu (dstream id %llu): %d (%s)\n`
+- `%s:%d: vek was cached, so keep volume bag loaded\n`
+- `image-type`
+- `Whole`
+- `%s:%d: %s gi_count %d <= gi_index %d\n`
+- `%s:%d: %s Validating the root hash for authenticated snapshot mount ...\n`
+- `%s:%d: %s setting dev block size to %d from %d\n`
+- `apfs_advisory_read`
+- `%s:%d: cannot remove src fext %llu:+%llu, %d\n`
+- `222211121`
+- `%s:%d: output buffer too small: len %zu, must be at least %d\n`
+- `jobj.c`
+- `snk.ekwk`
+- `\"flush phase checkpoint lengths (%d %d) don't match prepare phase (%d %d)\\n\" @%s:%d`
+- `\"non-virtual object on virtual object dirty list: oid %lld flags 0x%llx 0x%x\\n\" @%s:%d`
+- `%s:%d: %s omap_obj_modify(): %d\n`
+- `(start % (unsigned long long)(1 << PAGE_SHIFT_CONST)) == 0`
+- `%s:%d: %s Request to delete volume %u was denied, nx is read only\n`
+- `icp_new_crypto`
+- `%s:%d: %s oid 0x%llx flags 0x%llx 0x%x type 0x%x/0x%x object missing paddr!\n`
+- `unsetting`
+- `occ_keyroll_init`
+- `12`
+- `nx_fx_defrag_identify_ranges`
+- `gfext_check`
+- `punch out`
+- `%s:%d: %s checkpoint descriptor block %d is not a valid superblock\n`
+- `%s:%d: %s both src (ino %llu) and dst (ino %llu) files must be on the same volume\n`
+- `!ier_ierso_done(apfs->apfs_ier.ierso)`
+- `%s:%d: %s purgeable records fixup aborted\n`
+- `Too many open files in system`
+- `%s:%d: %s oid %lld flags 0x%llx 0x%x refs 0x%llx taking too long to get reference!\n`
+- `handle_transfer_extents`
+- `%s:%d: %s oid %lld xid %lld error freeing stale deletion record %d\n`
+- `%s:%d: %s failed to init transcription: %s (%d)\n`
+- `%s:%d: %s apfs_lookup_name_with_alt_name returned %d for %s\n`
+- `mount_wait_mount`
+- `com.apple.apfs.pfkurolling.internal.debug`
+- `Protocol Characteristics`
+- `The inode backing a raw device, file IO is prohibited\n`
+- `%s:%d: %s flags 0x%llx type 0x%x/0x%x error allocating new physical location %d\n`
+- `getBootContainer`
+- `get_dir_stats_purgeable_urgency`
+- `%s:%d: %s bogus phase, %u\n`
+- `ier_resume`
+- `set_decmpfs_xattr_if_needed`
+- `apfs_get_purge_id(apfs, &purge_id)`
+- `_get_bulk_purgeable_info_cb`
+- `!ret->ekwk`
+- `%s:%d: %s apfs_migrate_aks_key_class failed: %s\n`
+- `aks_fv_unwrap_vek`
+- `%s:%d: failed to open vnode for in-kernel mount, error = %d path = %s\n`
+- `%s:%d: tmp fext too long %llu:+%llu > %llu\n`
+- `pfkur_remove_stale_pfkurso`
+- `%s:%d: %s attempt to obj_get ephemeral object from graft nx after nx_mount, oid %lld, od_type 0x%x, nx %p, oc %p\n`
+- `apfs_vek_get_aks_state`
+- `create_empty_extentref_tree`
+- `get`
+- `max_fs_entries`
+- `%s:%d: %s Cancel offline purge (%llu) returned success.\n`
+- `Invalid`
+- `Number of transactions flushed`
+- `%s:%d: %s Loading fs vnodes for the graft fs failed: %d\n`
+- `fs_evict_range`
+- `tmp-ino-`
+- `%s:%d: %s Failed to set purgeable drec's dir gen-count: error %d\n`
+- `%s:%d: %s apfs_main_apfs should be %p but it's %p\n`
+- `dstreams: derefed %llu deleted %llu xattr_deleted %llu\n`
+- `!apfs->apfs_readonly`
+- `%s:%d: %s fragmentation_histogram_fill called on volume oid %lld (%d)\n`
+- `spaceman_allocation_init`
+- `%s:%d: %s couldn't insert cookie err:%s\n`
+- `pfkur_rolling_stop`
+- `%s:%d: %s failed to increment the crypto state refcount for crypto_id %lld, %s (%d)\n`
+- `%s:%d: %s failed to write superblock to block %lld: %d\n`
+- `ier_roll_data`
+- `%s:%d: %s head RMW failed (%d) for ino %llu @ [%lld, %lld)\n`
+- `%s:%d: %s tx_leave failed with error: %d\n`
+- `\"apfs_lock_io_lock_pair() was called with invalid arguments\" @%s:%d`
+- `%s:%d: %s failed to get parent %llu for authorization of ino %llu\n`
+- `parent->vp`
+- `%s:%d: %s Underflow detected in reserved ranges counter when trying to release reserved blocks for inode %lld: have %d ranges, need %d\n`
+- `!apfs_is_sealed(apfs)`
+- `%s:%d: %s sm_fs_reserve_alloc_count underflow, sm_fs_reserve_alloc_count %lld, new fs_reserve_block_count %lld, old fs_reserve_block_count %lld alloc_count %lld\n`
+- `cp_to_ino_class(ino->default_protection_class, &c)`
+- `grafting`
+- `%s:%d: %s Will cancel revert to snapshot (current revert-to xid is %lld)\n`
+- `%s:%d: %s failed to remove the remaining extents on ino %lld (rret %d; num_deleted %d)\n`
+- `\"failed to validate node %p (oid:%llu, xid:%llu) of fs %p (%llu) - %d\\n\" @%s:%d`
+- `%s:%d: %s ino %llu is compressed and this volume does not support compressed purgeable files.\n`
+- `%s:%d: invalid parameter: root_hash? %p root_hash_size? %p\n`
+- `vol.fs_ephemeral`
+- `apfs_graft.c`
+- `%s:%d: %s %s: could not insert dir rec for obj-id %lld (name: %s)\n`
+- `%s:%d: %s failed to remove temp clone name %s in private dir (err %d)\n`
+- `%s:%d: %s Missing resource fork for inode %lld\n`
+- `isb_unretain_id`
+- `%s:%d: %s pfkurso is missing for ino %llu\n`
+- `%s:%d: %s large key size (%u) on record (%llu) is too small\n`
+- `%s:%d: can't get cryptotype for device (%s)\n`
+- `%s:%d: %s failed to prefetch hashes for ino %llu: %s\n`
+- `id == id_mut`
+- `obj_delete_and_free_by_oid`
+- `%s:%d: %s failed to get omap for checkpoint %s traverse: %d\n`
+- `volume and rolling key`
+- `%s:%d: %s Cannot get data at offset %lld of compressed inode %lld - %s(%d)\n`
+- `%s:%d: %s failed to store proposed wvek record in nx keybag, err = %d\n`
+- `Calls to VNOP_OFFTOBLK`
+- `%s:%d: %s error %d while removing extents on %lld\n`
+- `%s:%d: %s Couldn't delete an extent from delta_tree (oid %lld), err %d\n`
+- `%s:%d: %s Couldn't insert extent, error %d\n`
+- `%s:%d: %s Failed to free mapping address %lld just allocated\n`
+- `%s:%d: %s Failed to find length tree predecessor for node that wasn't the smallest\n`
+- `%s:%d: %s trim distribution 1:%lld 2+:%lld 4+:%lld 16+:%lld 64+:%lld 256+:%lld\n`
+- `(len % (unsigned long long)(1 << PAGE_SHIFT_CONST)) == 0`
+- `%s:%d: cannot make pext iterator in [%llu, %llu), %d\n`
+- `%s:%d: using 16k root hash\n`
+- `(new_size % apfs_get_block_size(apfs)) == 0`
+- `site.spaceman_allocation_zone_info_phys_t`
+- `%s:%d: %s collect_extents failed (err %d)\n`
+- `%s:%d: failed get payload bytes: %u\n`
+- `_ckpw_alloc_crypto_key_icp`
+- `nx_checkpoint_find_highest_xid`
+- `nx_buf_bread`
+- `%s:%d: Cannot send notification about %08x for %d.%d - unexpected device type\n`
+- `%s:%d: crypto-io mode for container %s was enabled by pid <%d> (%s), %d encrypted fs found\n`
+- `\"Underflow detected when releasing %lld reserved blocks for inode %p\\n\" @%s:%d`
+- `%s:%d: %s could not fetch new clone %lld\n`
+- `%s:%d: pageout on the fake mount...\n`
+- `%s:%d: %s failed to get/unwrap rolling-key for volume %s (E%d)\n`
+- `%s:%d: object memory manager initialized with feature flags: 0x%x, apfs_mem_max: %lld\n`
+- `%s:%d: %s mount no firmlinks\n`
+- `%s:%d: %s purge of object %lld throttled\n`
+- `icp_create`
+- `%s:%d: %s mount finished w/apfs \n`
+- `%s:%d: %s failed to get graft infos: error %d\n`
+- `%s:%d: %s failed to create new key for ino %llu: %s (%d)\n`
+- `%s:%d: %s Can't delete snapshots as IS_SNAPDIR_VNODE() returned false\n`
+- `sb->xid`
+- `%s:%d: %s failed to get host fsroot tree, %d\n`
+- `trim_file_tail_if_needed_ext`
+- `fs_tx_enter_internal`
+- `ino_get_ekwk_id`
+- `%s:%d: %s failed to start the TRIM-issuing thread\n`
+- `%s:%d: %s src (ino %llu) and dst (ino %llu) must be different regular files\n`
+- `%s:%d: %s can't start txn to drop extents from snap (%d)\n`
+- `spaceman_free_extent_cache_reset`
+- `%s:%d: %s Failed to remove purgeable record for %lld iteratively: %d\n`
+- `%s:%d: %s failed to enter a transaction: %d (%s)`
+- `(info->xattr_fexts <= xfext) && (xfext < &info->xattr_fexts[xbm_size(info)])`
+- `fext_slide(fexts, 4, 4 * 16384) == 0`
+- `-apfs_newvf_enabled`
+- `roll_xattr_data`
+- `nx_ongoing_mounts_wait`
+- `rewrap_ek`
+- `aks_unmap_sdv_udv`
+- `apfs_inode_getxattr`
+- `ier_ierso_done(ierso)`
+- `!kbn_handler_thread_self(apfs)`
+- `com.apple.private.apfs.trim-active-file`
+- `No such file or directory`
+- `%s:%d: %s bt_shift_or_split failed with error: %d\n`
+- `%s:%d: %s ino %lld (private-id %lld) has a missing dstream_id (size %lld/%lld)\n`
+- `remove_dstream_id_and_fexts_copy`
+- `%s:%d: %s Sparse extent has non-zero crypto-id!\n`
+- `%s:%d: %s Couldn't enter TX on mount for demo mode: %d\n`
+- `apfs_reap`
+- `%s:%d: %s can not write an object for an fs that is encrypted and locked! (nx %s %d apfs flags 0x%llx 0x%llx %lld o 0x%llx 0x%x:0x%x)\n`
+- `%s:%d: cannot lookup mapping for %llu:+%llu, %d\n`
+- `ep_renew`
+- `apfs_rr_move_data`
+- `FX defrag: Run3 free extents maximal size`
+- `com.apple.rootless.storage.early_boot_mount`
+- `_fs_add_xattr`
+- `22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222111`
+- `ier_ierso_new`
+- `apfs_vnop_setattr`
+- `%s:%d: %s tree_iterator_init() for snapmeta, error=%d\n`
+- `%s:%d: %s tx_leave after eviction of nx omap mappings failed with error %d\n`
+- `Illegal seek`
+- `%s:%d: %s could not locate super block w/sblock_oid 0x%llx for snapshot w/xid %llu\n`
+- `aks_ep_release`
+- `rawenc-`
+- `%s:%d: %s tx_enter() failed: %d\n`
+- `%s:%d: failed to get/unwrap secondary key for volume %s (E%d)\n`
+- `%s:%d: %s dataless files cannot be marked as evictable\n`
+- `offset`
+- `%s:%d: %s failed to allocate vnoflush hash entry\n`
+- `%s:%d: %s apfs mount failed with error %d \n`
+- `%s:%d: %s Failed to get host space info\n`
+- `rsrc_get_ek_uncached`
+- `NONAME`
+- `%s:%d: %s failed to move all entries: %d\n`
+- `%s:%d: %s failed to allocate buffer for deferred commit\n`
+- `Inappropriate ioctl for device`
+- `remove_jobj`
+- `%s:%d: %s Adding children to an auto-mount directory is not allowed\n`
+- `%s:%d: %s found bogus 0-length extent at lba %llu, ignoring\n`
+- `%s:%d: %s secondary key is not pre-loaded for source vol uuid = %s\n`
+- `%s:%d: %s Couldn't update other (group:%llu inum:%llu priv_id:%llu): %s\n`
+- `%s:%d: %s Failed to update purgeable flags on ino %llu (new flags %u):%d (%s)\n`
+- `%s:%d: %s Couldn't lookup snap_xid %llu, err %d\n`
+- `%s:%d: %s failed to insert dest_drec %lld:%s err %d\n`
+- `%s:%d: cannot free fext %llu %llu:+%llu, %d\n`
+- `%s:%d: %s crypto state %llu has oversized payload: size %u exceeds max %zu, ino %llu\n`
+- `%s:%d: %s failed to get new crypto id for clone ino %lld (cret %d; clone prot class %d)\n`
+- `readonly`
+- `map_sdv_udv`
+- `apfs.h`
+- `get_loaded_nx`
+- `%s:%d: %s failed to syncronously roll ino %llu, error %d\n`
+- `get_fragmentation_histogram`
+- `%s:%d: %s extent removal failed ino %llu, size %llu; %d\n`
+- `apfs-unmount`
+- `%s:%d: failed to get ep size (type %u, ttl %llu, options 0x%llx): %s (%d)\n`
+- `\"can't modify o %p on encrypted and locked fs %p\\n\" @%s:%d`
+- `!(start % fs_bsize)`
+- `alloc_placeholder_nx`
+- `Bytes (Read)`
+- `%s:%d: %s could not lookup crypto-id %lld (ret %d)\n`
+- `(end - start) < ((1ULL << (56)) - 1)`
+- `is_ier_context ^ is_pfkur_context`
+- `!\"pfkur iteration returned unexpected \" \"error\"`
+- `apfs->apfs_pfkur.thread_state == pfkur_state_nothing`
+- `vnop_handle_revert_to_snapshot`
+- `/options`
+- `%s:%d: %s tx_finish() failed with %d\n`
+- `%s:%d: %s falling back to synchronous keybag un-lock handler\n`
+- `%s:%d: %s Region of %lld bytes at offset %lld of inode %lld ends before sparse extent at offset %lld\n`
+- `apfs_fext_iterator.c`
+- `%s:%d: %s Inode %lld has compressed flag but is not compressed\n`
+- `xbm_valid_index(info, xattr_fext_index(info, xfext))`
+- `%s:%d: %s Failed to lookup purgeable record (record) for time/flags modification (ino %llu): %d (%s)\n`
+- `%s:%d: %s NeRD boot from image %s, hash validation is not required\n`
+- `%s:%d: %s invalid sizes - length: %llu, src_offset: %llu, dst_offset: %llu\n`
+- `%s:%d: %s set new metadata rolling key for volume %s\n`
+- `apfs_set_file_size`
+- `%s:%d: %s failed to enter transaction for implicit revert\n`
+- `%s:%d: %s Couldn't remove extent at pbn %llu, err=%d\n`
+- `%s:%d: %s failed to attach ephemeral policy to ino %llu: %s (%d)\n`
+- `new_sid != 4`
+- `%s:%d: %s could not lookup original dir rec %lld:%s for ino %lld nlink %d iflags=0x%llx err=%d\n`
+- `apfs_fsid_to_apfs_callback`
+- `%s:%d: %s rapid-aged %llu inodes\n`
+- `%s:%d: %s stopped updating dir-stats due to chain being too long\n`
+- `%s:%d: %s Grafting on an encrypted volume with a non-default blocksize %u is not supported.\n`
+- `%s:%d: %s Cannot grow inode %lld to %lld: %s(%d)\n`
+- `%s:%d: %s how odd... there is no drec for ino %lld\n`
+- `apfs-purgatory-cleaner-finish`
+- `%s:%d: nx_keybag_lookup %s false failed with %u\n`
+- `vnoflush_take`
+- `range->start <= 9223372036854775807LL`
+- `%s:%d: src %llu:+%llu preceeds sink %llu:+%llu\n`
+- `%s:%d: cannot enter tx %llu, %llu to insert ierso, %d\n`
+- `%s:%d: cannot join: thread already exited\n`
+- `%s:%d: %s dir %s got deleted behind our feet\n`
+- `apfs_truncate_locked`
+- `%s:%d: %s pfku rolling : unknown operation: %llu`
+- `%s:%d: failed to update hole extent (ino %llu) (offset %llu) (len %llu) (err %d)\n`
+- `%s:%d: %s Unable to update XATTR_SPEC_TELEMETRY ino %llu error=%s (%d)\n`
+- `%s:%d: %s Error converting oid %lld xid %lld, omap_set() returned %d\n`
+- `%s:%d: failed to find unlock record to load class keys, error = %d\n`
+- `\"apfs_crypto_state_init: invalid iv key length! \" \"(%ul) \\n\" @%s:%d`
+- `%s:%d: %s set entitled reserve: %llu %llu %llu unentitled %llu %llu extra %llu\n`
+- `%s:%d: nx_keybag_setup_with_placeholder_nx failed with %u\n`
+- `%s:%d: %s failed to lookup attribution tag record in the fsroot tree for s_hash <%llu> with <%s> <%d>\n`
+- `obj_checkpoint_start`
+- `fs_make_hole_range_writable`
+- `%s:%d: %s error getting cib %d @ %lld: %d\n`
+- `is_image_assembly_env`
+- `%s:%d: %s apfs received cx expiry notification!\n`
+- `%s:%d: can't get non-ephemeral fs entry without the boot container\n`
+- `Calls to VNOP_PATHCONF`
+- `ier_dedupe.c`
+- `Device error, e.g. paper out`
+- `%s:%d: %s failed to update inode %llu with a new default_crypto_id (%d)\n`
+- `%s:%d: %s Couldn't get active extentref tree, err=%d\n`
+- `apfs_crypto_key_pool_worker_init_if_needed`
+- `%s:%d: %s Deleting volume %s, volume index %u\n`
+- `%s:%d: %s couldn't allocate memory for superblock of size %d\n`
+- `\"new address mismatch on redirty 0x%llx 0x%llx\\n\" @%s:%d`
+- `%s:%d: %s Error checking for solo group (group:%llu): %s\n`
+- `%s:%d: %s Used space move overhead is %lld (based on shrink_amount %lld and currently_allocated %lld), setting max_allowed_shrink to %lld\n`
+- `%s:%d: %s not enough space to enter transaction\n`
+- `PFKTResult`
+- `AuthAPFS hash validation state`
+- `%s:%d: %s unknown background operation %d\n`
+- `%s:%d: cannot lookup > %llu, %d\n`
+- `%s:%d: %s The directory hierarchy rooted at ino %llu was modified - please retry.\n`
+- `%s:%d: %s Can't delete snapshots when snap operation is not allowed\n`
+- `%s:%d: %s failed to get omap: %d\n`
+- `handle_get_purgeable_extents`
+- `%s:%d: %s invalid volume index %u \n`
+- `FX defrag: Days since boot`
+- `sr_hcp_insert_fexts`
+- `%s:%d: %s error updating chained key for calculating dir-stats %llu of ino %llu: %s (%d); size tracking may go out of sync\n`
+- `sfext_end(fs_bsize * (1), (&(j_file_extent_t) { .logical_addr = fs_bsize * (1), .len = fs_bsize * (7), .phys_block_num = (101), }), (&(brange_t) { .start = (100), .len = (9), }), fs_bsize) == (fs_bsize * (8))`
+- `%s:%d: %s keybag notification handler started\n`
+- `clear_invalid_fixups`
+- `%s:%d: %s failed to change protection class on file extent crypto_id %lld (ret %d, prot_class %d) on ino %lld\n`
+- `ep_check_policy`
+- `%s:%d: %s iterate_jobjs for private_id %llu failed, error %d\n`
+- `%s:%d: %s Mount point, \"%s\", is %lu > %d bytes long; truncating.\n`
+- `%s:%d: %s %s: marking ep %llu as expired\n`
+- `_fixup_purgeable_recs_cb`
+- `%s:%d: %s flags 0x%llx type 0x%x/0x%x error reserving %d blocks of space: %d\n`
+- `%s:%d: %s failed to enter tx to set the SAF flag on dir-stats for ino %llu: %s (%d)\n`
+- `Invalid offset\n`
+- `%s:%d: %s failed to init extended fields for dir-stats object on ino %llu: %s (%d); size tracking may go out of sync\n`
+- ` (%s)`
+- `%s:%d: %s No entry for private metadata dir!\n`
+- `handle_cas_bsdflags`
+- `%s:%d: %s object %lld / %p has bad dev\n`
+- `_graft_dev_read`
+- `len <= 2147483647`
+- `%s:%d: boot from ramdisk %s\n`
+- `%s:%d: %s error looking up 'from' (group:%llu inum:%llu priv_id:%llu): %s\n`
+- `%s:%d: %s Releasing apfs tree objects for fs index %d\n`
+- `%s:%d: %s freed != alloced (%llu freed, %llu alloced)\n`
+- `%s:%d: %s failed to get vek blob state, err = 0x%x\n`
+- `Physical Block Size`
+- `%s%s%s`
+- `\"Requested forced secondary_fs_root but the tree is missing\\n\" @%s:%d`
+- `sample`
+- `create_dir_iterator_for_name`
+- `%s:%d: %s Can't delete snapshots while volume is replicating\n`
+- `%s:%d: VEKState - fv_get_blob_state failed, error = %d\n`
+- `nx_resize_set_metadata_alloc_order`
+- `is_root_hash_authentication_required`
+- `vol_crypto != VOL_PFKEY`
+- `%ss%d`
+- `%s:%d: %s failed to fetch ino %llu for dir-stats calculation; results may be incomplete\n`
+- `(type == ier_obj_main_fork) || (type == ier_obj_xattr_data)`
+- `%s:%d: %s blockmap lut lookup(%lld, %lld) failed, error %d\n`
+- `fext_cloner`
+- `%s:%d: %s prev doc-id lookup failed, error %d\n`
+- `site.spaceman_t`
+- `main_fork_pfk_transcribe`
+- `apfs_ungraft_all`
+- `%s:%d: %s failed to jhash_insert the root inode (err %d)\n`
+- `%s:%d: %s invalid zero len, paddr %llu\n`
+- `%s:%d: %s failed to get fs_private_get_spaceman_alloc_active tx_active, error %d\n`
+- `%s:%d: %s graft_blockmap_lut_release failed with error %d\n`
+- `%s:%d: %s can't update the %s xattr of a dead inode (%llu)`
+- `%s:%d: %s failed to update ino %lld err %d\n`
+- `%s:%d: %s alloc_space_for_write failed ret %d\n`
+- `create_and_cache_keys`
+- `curr_xid && (curr_xid != ((xid_t)~0ULL))`
+- `fext_cleaner`
+- `%s:%d: object memory manager total minimum surpassed APFS maximum (mem_min: %lld, apfs_mem_max: %lld)\n`
+- `%s:%d: %s ino %llu is flagged as dir-stats origin but has no dir-stats key\n`
+- `%s:%d: ino %llu range [%llu, %llu) exceeds physical eof %llu\n`
+- `%s:%d: %s %s:%d - inode %lld: expected %d, got %d unwritten ranges\n`
+- `%s:%d: %s Failed to update extended fields when %s WANTS_TO_BE_PURGEABLE on ino %llu: %d (%s)\n`
+- `APFS/effaceable`
+- `%s:%d: %s failed to pause pfkur to syncronously roll ino %llu, error %d\n`
+- `aks_ep_release_with_type`
+- `fext_slide(fexts, 4, 65536) == 0`
+- `\"dedupe_assert() failed: %s\" @%s:%d`
+- `print_unknown_ioctl`
+- `site.spaceman_statistics_t`
+- `tx.c`
+- `spec_telemetry_dir_list_add`
+- `apfs_jhash_getvnode_internal`
+- `%s:%d: %s reference_phys_range_in_snap failed with error %d\n`
+- `crypto_id != 4`
+- `%s:%d: %s nx_check_snapshots_data_location failed with error %d\n`
+- `%s:%d: %s no pexts found for cur_pbn %lld; have they already been dropped?\n`
+- `!pext_iterator_poisoned(it)`
+- `site.delta_restore_ctx_t`
+- `Virtual Interface`
+- `%s:%d: %s failed to restore dir-stats for to_ino %llu: %s\n`
+- `%s:%d: %s range 0x%llx:%lld overlaps with recently-freed range 0x%llx:%lld\n`
+- `%s:%d: %s name must not be . or ..\n`
+- `%s:%d: vnode_close() invoked in the container unload path\n`
+- `%s:%d: %s couldn't enter transaction to set apfs_cloneinfo_id_epoch, %d\n`
+- `obj_init`
+- `%s:%d: %s refreshing (nested) dir-stats for ino %llu (dir-stats key %llu -> %llu), set_flags 0x%llx\n`
+- `apfs_graft_get_graft_info`
+- `bool_vars.full_lock`
+- `Invalid argument`
+- `%s:%d: %s Preventing %s of objects to synthetic folder (id %lld, parent %lld)\n`
+- `com.apple.fs.cow-exempt-file-count`
+- `%s:%d: failed to derive VEKd key for volume %s (E%d)\n`
+- `vnode_iocount(ino->vp) > 0`
+- `%s:%d: cloning extents failed for ino %llu, err %d\n`
+- `%s:%d: %s %s:%d - inode %lld: range %lld,%lld,%d overlaps with offset %lld\n`
+- `Max volume count`
+- `%s:%d: %s spaceman_alloc() FAILED, err: %d xid: %lld paddr: %lld blocks requested: %lld blocks allocated: %lld\n`
+- `present`
+- `%s:%d: Invalid or unknown hash type: %d\n`
+- `%s:%d: %s doc-id tree (oid %llu, flags 0x%llx) is not encrypted but volume is encrypted (fs_flags 0x%llx)\n`
+- `enable-remap-mode`
+- `FX defrag: Run4 alloc extents maximal size`
+- `%s:%d: %s IP bm base %lld:%lld is not free in the bitmap! error %d isallocated %d\n`
+- `%s:%d: ... Skipping new purgeable record on %s, ino %llu dstream %llu - owner UID didn't match\n`
+- `OnInsertPurgeRec`
+- `apfs_rawdev_overlay_unwritten_fexts`
+- `AuthAPFS: Number of times file data was validated`
+- `handle_spec_telemetry_op`
+- `%s:%d: %s Failed to find successor node from length tree while updating smallest: %d\n`
+- `aks_renew_policy`
+- `tx_add_dirty_work_item`
+- `pfkur_enqueue_upgrade_prot_class_debug`
+- `com.apple.private.storage.revoke-access`
+- `kbn_handler_thread_cancel`
+- `%s:%d: %s %s: could not remove inode obj-id %lld (name: %s)\n`
+- `sizeBusy`
+- `%s:%d: %s scan_stats[%d]: foundmax %lld extents %lld blocks %lld long %lld avg %lld %d.%02d%% range %lld:%lld %d.%02d%%\n`
+- `%s:%d: %s dst (ino %llu) is a dataless file, but the range is not properly aligned (offset %llu, length %llu)\n`
+- `jobj_to_large_key_val`
+- `%s:%d: AKS new_key failed for class = %d, error = %x\n`
+- `%s:%d: failed new crypto preflight %d\n`
+- `sfext_end(fs_bsize * (0), (&(j_file_extent_t) { .logical_addr = fs_bsize * (0), .len = fs_bsize * (6), .phys_block_num = (100), }), (&(brange_t) { .start = (103), .len = (2), }), fs_bsize) == (fs_bsize * (3))`
+- `purge_single_file`
+- `%s:%d: failed payload init: %u\n`
+- `fs_private_add_tx_active`
+- `%s:%d: %s block size %d is not an even multiple of device block size %d\n`
+- `\"bad transition tx flags 0x%x to 0x%x (expected 0x%x)\\n\" @%s:%d`
+- `START`
+- `%s:%d: %s Cannot bless non-directory file =%llu\n`
+- `%s:%d: %s failed to increment the crypto state refcount for default crypto_id %lld, %s (%d)\n`
+- `\"Requested offset %lld is not inside the sparse file extent %p (%lld, %lld) of inode %lld\\n\" @%s:%d`
+- `ep_renew_policy_with_cred`
+- `volume_needs_purgeable_fixup`
+- `fillEncryptionInfoForVolume`
+- `unencrypted`
+- `%s:%d: %s Failed to lookup physical extent starting at %llu: err %d\n`
+- `%s:%d: unable to wipe %s keybag (%d)\n`
+- `apfs_sanity_check`
+- `%s:%d: %s failed to %s SAF flag for ino %llu: %s (%d)\n`
+- `make_fext_iterator`
+- `%s:%d: %s Exclusive global_extent_manipulation lock taken after %d unsuccessful attempts\n`
+- `%s:%d: %s fs root tree creation failed: %d\n`
+- `%s:%d: %s couldn't find drec for ino %llu\n`
+- `%s:%d: cannot make sink iterator %d\n`
+- `%s:%d: %s failed to reset dstream on ino %lld: %s (%d)\n`
+- `%s:%d: %s clone mapping <%llu, %llu>: updating an already existing attribution tag\n`
+- `%s:%d: Cancel offline purge (%llu) failed (no container): error %d (%s)\n`
+- `%s:%d: %s Graft file %llu has hardlinks\n`
+- `map_oid`
+- `%s:%d: %s Failed to update pfk upgrade rolling state object for cloned inode %llu\n`
+- `%s:%d: cannot revert pext references %llu, %llu:+%llu, %d\n`
+- `%s:%d: %s failed to get tree: %s (%d)\n`
+- `Main_Vendor`
+- `%s:%d: %s Failed to start txn to insert sibling map for %lld (ino %lld) : err %d\n`
+- `%s:%d: %s Couldn't revert fsidx %u to xid %llu, %d\n`
+- `key_rolling_stop`
+- `Socket operation on non-socket`
+- `%s:%d: %s non writable nx dev: r/w update not allowed\n`
+- `site.authapfs_data_validator_t`
+- `hw.memsize`
+- `old_ekwk`
+- `%s:%d: checkpoint<->container superblock mismatch on block count: %lld %lld\n`
+- `apfs_fext.c`
+- `The inode has been deleted\n`
+- `Calls to VNOP_MNOMAP`
+- `Calls to VNOP_FSYNC`
+- `%s:%d: %s failed to increment crypto state refcnt, ino %llu, crypto_id %llu, error %d\n`
+- `hcp_get_class_ek`
+- `count_pages(0, bsize + (1 << PAGE_SHIFT_CONST), 1 + (1 << PAGE_SHIFT_CONST)) == 2`
+- `(map->next_index < map->capacity) || (map->capacity == map->max_capacity)`
+- `%s:%d: %s Failed to update_jobj(ino %llu) after clearing INODE_IS_PURGEABLE: %d (%s)\n`
+- `%s:%d: %s Failed to update pfk upgrade rolling state object for destination inode %llu\n`
+- `%s:%d: No space left in supplied buffer with size %lu\n`
+- `site.crypto_key_pool_slot_icp_t`
+- `%s:%d: %s failed to set new dstream on ino %lld ret %d\n`
+- `apfs_mount_update`
+- `%s:%d: %s unable to read cib %lld @ %lld: %d\n`
+- `%s:%d: %s No volume at index %d \n`
+- `%s:%d: %s %s only collected %d crypto states for ino %llu (op %d, err %d)\n`
+- `\"invalid crypto id\" @%s:%d`
+- `fs_is_phys_range_writable`
+- `borrowed->key == cpx_key(vek)`
+- `error ? 1 : (len == sb.bytes_moved)`
+- `%s:%d: %s did not find any matching files to purge (iteration: %d).\n`
+- `site.pfk_transcriber_thread_t`
+- `AuthAPFS: Number of times read was done synchronously`
+- `%s:%d: %s Couldn't delete apfs oid %llu, fsidx %u, err %d\n`
+- `ep_purgeable-dir-eviction`
+- `%s:%d: %s failed to set parent chain noflush for graft dir, %d\n`
+- `%s:%d: %s Failed to get crypto ID for temp file: %d (%s)\n`
+- `ino_is_raw(ino)`
+- `%s:%d: %s Couldn't get active snap meta tree, error=%d\n`
+- `%s:%d: %s omap conversion init failed: %d\n`
+- `%s:%d: \n`
+- `SYSTEM_GRAFT_4K_OBJS`
+- `%s:%d: %s ino %llu is mapped writable, report no holes\n`
+- `\"%s cannot be called for namedstream inodes\\n\" @%s:%d`
+- `%s:%d: %s can't revert because a revert is still pending to be cleaned up: %d\n`
+- `%s:%d: %s cab is dirty after cache flush, write it now\n`
+- `%s:%d: %s failed to update dir-stats %llu: %s (%d)\n`
+- `end`
+- `%s:%d: %s failed to remove doc-id for inode %llu, error %d\n`
+- `obj.c`
+- `%s:%d: %s %s: mount update in progress.  skipping sync\n`
+- `%s:%d: %s failed to get graft info from graft state: error %d\n`
+- `%s:%d: %s can't set volume name: name is too long\n`
+- `remove_dir_entry_ext`
+- `%s:%d: %s Couldn't find snap_meta for xid %llu, error %d\n`
+- `site.jhash_gate_t`
+- `clone_extents_adjust_dstream_cryptoid_if_needed`
+- `221`
+- `spaceman_ip_bm_block_free`
+- `%s:%d: %s namelen (%zu) copylen (%zu) mismatch\n`
+- `%s:%d: %s ino %lld/%lld pl_offset %lld f_offset %lld size %d file size %lld error %d (%s)\n`
+- `%s:%d: %s lookup_next_snapshot() returned %d\n`
+- `%s:%d: successfully loaded volume class keys\n`
+- `%s:%d: fake mount going away\n`
+- `%s:%d: %s unable to mount livefs as volume is restoring or mounted\n`
+- `-apfs_ier_dedupe_enable`
+- `%s:%d: %s cannot create snapshot: rolling is active, %d\n`
+- `%s:%d: %s Failed to get speculative telemetry info %d (%s)\n`
+- `%s:%d: %s checkpoint xid %lld failed to get spaceman: %d\n`
+- `%s:%d: %s checkpoint mapping (%d,%d) extends beyond checkpoint data range: %d,%d\n`
+- `%s:%d: %s Eviction is not needed, block out range is completely free\n`
+- `%s:%d: %s unable to get omap snapshot tree: %d\n`
+- `forward`
+- `%s:%d: %s cannot create alternate single xattr vnode\n`
+- `%s:%d: %s lookup_jobj failed with error %d\n`
+- `%s:%d: %s failed to update ino %llu as dir-stats origin: %s (%d)\n`
+- `%s:%d: %s Requested supplemental flags %llx are not supported on this volume.\n`
+- `ino_remove_end_fexts`
+- `site.ier_state_obj_t`
+- `%s:%d: %s Rooting from snapshot with xid %llu.\n`
+- `%s:%d: %s cloning_err %d must_join_current_txn %s xid %lld\n`
+- `len <= ekwk->capacity`
+- `obj_cache_flush_write`
+- `%s:%d: %s skipping ubc_msync on vp %p because fs is locked\n`
+- `%s:%d: %s Offline purge %llu was cancelled; exiting...\n`
+- `site.rangelist_head_t`
+- `%s:%d: %s deleting extent %lld %lld with invalid owning_obj_id %lld while apfs_num_snapshots is 0, this will cause overallocation\n`
+- `222122221`
+- `%s:%d: %s fs_tx_enter for %s failed with %d\n`
+- `%s:%d: %s device_handle block size %d real block size %d block count %lld features %d %s %s %s\n`
+- `\"obj %p oid 0x%llx flags 0x%llx 0x%x type 0x%x/0x%x dirty object on the free list?!\\n\" @%s:%d`
+- `purge_files_with_ino`
+- `%s:%d: %s Failed to enter a transaction to insert a tombstone record for file %llu: %d (%s)\n`
+- `%s:%d: %s could not update purgeable rsrc size for dir-stats %llu: %s (%d)\n`
+- `!it->mapping_valid`
+- `%s:%d: failed trust evaluation: 4cc 0x%x, type %u\n`
+- `%s:%d: %s Checking for solo group returned error: %s\n`
+- `%s:%d: %s dst (ino %llu) cannot be a non-dataless compressed file\n`
+- `%s:%d: %s iteration %d - range %lld:%lld,%d does not include offset %lld in inode %lld\n`
+- `cur_pbn`
+- `%s:%d: %s integrity_meta object of fs %llu, oid invalid\n`
+- `ino->iflags & JI_CRYPTO_STATE_RETAINED`
+- `(+1)`
+- `fixup-hardlink-progress`
+- `%s:%d: %s failed to get resource fork for inode %lld: %s (%d)\n`
+- `%s:%d: cannot %s mapping %d\n`
+- `%s:%d: %s Inode %lld on %s@%s cannot be used because it has been cloned\n`
+- `%s:%d: %s done processing snap xid %llu (err %d)\n`
+- `%s:%d: %s snapmeta tree type 0x%x invalid, using physical btree instead\n`
+- `spaceman_trim_free_blocks`
+- `2026/10/13`
+- `backupSnapshotPresent`
+- `%s:%d: %s failed to find graft state for ino %llu\n`
+- `%s:%d: %s Failed to create blockmap lut tree, error %d\n`
+- `\"invalid crypto id %llu\" @%s:%d`
+- `%s:%d: %s can't get features for device (%s)\n`
+- `%s:%d: %s Unable to update XATTR_SPEC_TELEMETRY with residency reason %s error=%s (%d)\n`
+- `((cp_key_class_t)(0x0000001f & (slot->dp_class))) == ino_to_cp_class(c)`
+- `%s:%d: %s apfs: can not determine device block size.  assuming 512.\n`
+- `Calls to VNOP_MKDIR`
+- `site.apfs_graft_state_t`
+- `Interface output queue is full`
+- `extent_refcount_fix`
+- `site.obj_list_element_t`
+- `%s:%d: Cannot update ino %llu, %d\n`
+- `1112`
+- `%s:%d: %s tree_lookup() under ino %llu, xattr '%s' failed, err %d\n`
+- `%s:%d: %s tree_insert failed: %d\n`
+- `%s:%d: %s Persistent allocation zone at slot %llu has invalid previous boundary %llu\n`
+- `move_inode_to_purgatory_ext`
+- `site.apfs_compressed_stream_info_t`
+- `%s:%d: %s snap_meta %lld is dataless\n`
+- `%s:%d: %s can't set apfs_root_to_xid to xid (%llu) > apfs_revert_to_xid (%llu)\n`
+- `update_sparse_bytes`
+- `%s:%d: cannot update pfkurso to id %llu, %d\n`
+- `handle_xdstream_obj_id`
+- `%s:%d: %s error getting mapping tree: %d\n`
+- `%s:%d: %s error getting next checkpoint data block address %d: %d\n`
+- `%s:%d: %s failed to alloc lookup buffer\n`
+- `Too many links`
+- `spaceman_decrement_free_queue_count`
+- `%s:%d: %s apfs_iokit_mount_eligibility not eligible, err: %d\n`
+- `%s:%d: %s lookup / remove of directory purgeable record (ino %llu, fsize %llu, size_delta %lld) failed: %d (%s)\n`
+- `%s:%d: %s failed to recover existing proposed vek, err = %d\n`
+- `%s:%d: %s Unwrapped metadata crypto state successfully.\n`
+- `%s:%d: Failed to get host near low disk threshold, %d\n`
+- `%s:%d: ino %llu has no ek id\n`
+- `can_modify_ino(ino)`
+- `(fext->logical_addr <= off) && (off <= fext_lend(fext))`
+- `make_fext_riterator`
+- `%s:%d: %s ino %llu, failed to update cluster range, %llu+%llu, fsize %llu, error %d\n`
+- `wait-kbn-handler-thread-start`
+- `%s:%d: %s Could not allocate argument for delta teardown thread\n`
+- `apfs_reserve_space`
+- `%s:%d: made %skey for volume %s\n`
+- `%s:%d: %s failed to update dstream on proxy xattr inode %llu for owner inode %llu, %d\n`
+- `%s:%d: %s failed to size purgeable directory %llu: %d (%s)\n`
+- `FX defrag: Run1 free extents average size`
+- `%s:%d: applying obj_mem_mgr_create_policy_adjust_proportional() after registering %s\n`
+- `%s:%d: %s unable to get snap meta tree %lld: %d\n`
+- `pfkur_maybe_roll_ino_`
+- `%s:%d: %s failed to remove purgatory entry for ino %lld after inline delete: %d\n`
+- `apfs_clonegroup_remove_attribution_tag`
+- `com.apple.fs.graft-jobj-id-len`
+- `%s:%d: %s Failed to allocate buffer for speculative telemetry info list with %d entries \n`
+- `apfs_io_lock_exclusive_to_extending_write`
+- `%s:%d: %s out of space collecting apfs volumes, fs %d, total volumes (inc. snapshots) %d\n`
+- `%s:%d: %s danger - crypto id %lld had refcnt %d\n`
+- `apfs_analytics_send`
+- `apfs_lock_inode_pair_internal`
+- `%s:%d: %s failed to fetch the fext tree (error %d)\n`
+- `\"invalid lock flags: 0x%x\\n\" @%s:%d`
+- `authapfs_select_root_hash`
+- `FX defrag: Run3 alloc extents size std-dev`
+- `apfs_graft_vnoflush_update`
+- `%s:%d: %s existing file system (slot %d)\n`
+- `%s:%d: %s fs private dir creation failed: %d\n`
+- `%s:%d: AKS check_class failed with unexpected error = %x\n`
+- `apfs_ep->rsrc_ekwk == ((void*)0)`
+- `graft`
+- `%s:%d: cannot clone split fext %llu -> %llu, %d\n`
+- `Volume count`
+- `%s:%d: %s Graft file %llu has size 0\n`
+- `nx_resize_alloc_metadata_ranges`
+- `%s:%d: stale clone mapping <%llu, %llu> had non-empty extended fields\n`
+- `%s:%d: %s Failed to get the node count of the omap tree: %d - %s\n`
+- `apfs_find_named_root_snapshot_xid`
+- `site.obj_t *`
+- `%s:%d: %s Share range operation needs an entitlement\n`
+- `%s:%d: %s btree_node_insert() failed (%d) while trying to revert changes due to error: %d\n`
+- `%s:%d: %s oid 0x%llx flags 0x%llx 0x%x type 0x%x/0x%x error reserving %d blocks of space: %d\n`
+- `%s:%d: %s Quota %llu is smaller than reserve %llu\n`
+- `tx_checkpoint_space_check`
+- `Calls to VNOP_SETATTR`
+- `%s:%d: %s Missing dstream %lld of inode %lld on a sealed volume\n`
+- `handle_spec_telemetry_mark_pristine`
+- `(((src->mode) & 0170000) == 0100000)`
+- `get_dir_stats_by_key`
+- `%s:%d: %s size (%d) of FILE_INFO_TAG_EXT_TYPE_SIGNING_ID in attribution tag record with s_hash <%llu> <= 0 \n`
+- `\"Unexpected reservation flags %d\" @%s:%d`
+- `clean_up_doc_id_trees_if_needed`
+- `aks_query_policy_ttl`
+- `!(ino->iflags & JI_IN_SIZECHANGE)`
+- `%s:%d: %s tried to increment refcount of a dead dstream id %llu\n`
+- `com.apple.apfs.purgeable.purge`
+- `%s:%d: %s cannot set dir-stats (%llu) for ino %llu because its current dir-stats has unknown flags\n`
+- `Metadata: Number of bytes written`
+- `%s:%d: %s VNODE_CREATE_EMPTY_CALL returned %d for %s\n`
+- `%s:%d: %s fs_obj_create_prepare_and_lock returned %d for %s\n`
+- `%s:%d: %s nx_keybag_lookup failed for the target volume %s with: %s\n`
+- `wait-for-busy-from-inode`
+- `%s:%d: %s Resize prepare only supported for shrinking\n`
+- `remove`
+- `%s:%d: %s returned error %d\n`
+- `%s:%d: %s Final sync/barrier failed: %d\n`
+- `%s:%d: Watchdog monitoring is disabled in VM, skipping START notification\n`
+- `bt_remove_internal`
+- `%s:%d: cannot alloc fake vnode %d\n`
+- `%s:%d: %s cannot enter debug call %d\n`
+- `find_first_overlapping_phys_extent`
+- `%s:%d: %s Volume seal is broken\n`
+- `%s:%d: cannot raw encrypted clonesplit ino %llu, err %d\n`
+- `svp != ((struct vnode *)((void*)0))`
+- `%s:%d: %s failed to fetch the pfkur tree (error %d)\n`
+- `ReportMemoryException`
+- `%s:%d: %s could not remove obj-id %lld: %s (%d)\n`
+- `%s:%d: %s failed to write cab %d: %d\n`
+- `%s:%d: %s Failed to insert fext into real inode (new logical_addr %llu, new stream ID %llu): %d (%s)\n`
+- `\"bad pext.\\n\" @%s:%d`
+- `%s:%d: %s error %d removing purgatory entry %lld/%s for ino %lld\n`
+- `apfs_rewrap_key`
+- `aks_new_ekwk_ek`
+- `%s:%d: %s failed to write internal pool bitmap block: error %d\n`
+- `%s:%d: %s dir-stats %llu maintains clone size but failed to get the xfield: %s (%d); size tracking may go out of sync\n`
+- `tail_split`
+- `%s:%d: %s failed to get next record: %s (%d)\n`
+- `%s:%d: %s Fetching the integrity object for the graft failed: %d\n`
+- `%s:%d: %s checking CZIC for zone %llu list %d traversal count exceeded table count (%u) - aborting\n`
+- `%s:%d: %s failed to get vnode for volume at fsindex = %d, role = %x\n`
+- `File defrag: Number of fragmented files found that we couldn't track`
+- `%s:%d: %s tidemark for quota volume %lld\n`
+- `site.j_finfo_data_hash_t.uint8_t`
+- `%s:%d: %s tx_flush(%lld) failed, %d, # %d\n`
+- `Metadata: Number of objects failed to read`
+- `Target Disk Mode`
+- `%s:%d: %s update_jobj() failed trying to increment ino %lld's children count, err %d\n`
+- `%s:%d: Failed to get host desired level threshold, %d\n`
+- `%s:%d: %s could not update purgeable size for dir-stats %llu: %s (%d)\n`
+- `%s:%d: failed new crypto preflight %llu, %d\n`
+- `extract_spec_telemetry_use_state_from_pfs`
+- `%s:%d: %s obj_modify failed: %s\n`
+- `Too many levels of symbolic links`
+- `!(ino->iflags & (JI_RAW_ENCRYPTED))`
+- `logd`
+- `com.apple.keystore.lockassertion.time_machine`
+- `\"virtual object dirty count underflow\\n\" @%s:%d`
+- `%s:%d: %s xid %lld failed to write checkpoint data @ 0x%llx: %d\n`
+- `j_purgeable_t.dstream_id`
+- `ier_pagein_all`
+- `Cryptex inode`
+- `apfs_is_valid_class`
+- `%s:%d: %s grafting a cloned file is not supported on an encrypted volume\n`
+- `%s:%d: %s Failed to deallocate extent %llu:+%llu, ret %d\n`
+- `\"apfs_unlock_phys_range lock %d not taken\\n\" @%s:%d`
+- `%s:%d: %s Failed to mark fext tree in the lut, error %d\n`
+- `fs_get_dstream(apfs, ino)->size <= new_size`
+- `%s:%d: %s failed to iterate vnodes to find graft vnode in use (all grafts), %d\n`
+- `%s:%d: %s couldn't insert record err:%s\n`
+- `%s:%d: %s reap list object free list erroneously empty?\n`
+- `%s:%d: %s stop background work requested, stopping doc-id fixup\n`
+- `%s:%d: failed to remove vek state, error = 0x%x\n`
+- `%s:%d: %s failed to deep copy tree (type %d, oid %llu) during reversion: %d (%s)\n`
+- `%s:%d: %s Failed to get key count from lut tree, error%d\n`
+- `%s:%d: %s ***: expanded obj type %d found on unsupported volume\n`
+- `%s:%d: *** Can't release unknown obj type %d\n`
+- `%s:%d: %s encryption type %llx unsupported\n`
+- `map->capacity <= map->max_capacity`
+- `spaceman_free_extent_cache_setup`
+- `%s:%d: %s processing snap xid %llu...\n`
+- `%s:%d: %s Failed to get extentref tree: err %d\n`
+- `aes_kb_put`
+- `com.apple.private.apfs.get-crypto-file-info`
+- `fs_private_set_lock_acquired_internal`
+- `%s:%d: %s On %d iteration got allocated extent %lld:%lld->%lld which overlaps with the reserved range %lld:%lld,%d of inode %lld\n`
+- `%s:%d: cannot deref staged ekwk %llu, %d\n`
+- `ino_bg_op_allowed`
+- `Encountered a compressed data hash mismatch\n`
+- `%s:%d: %s waiting for snapshot deletion to finish (id %lld) failed: %d\n`
+- `%s:%d: %s can't lookup pext at %llu with err %d\n`
+- `start < end`
+- `%s:%d: %s ino %llu, gap from last_fext_end %llu, cur fext %llu+%llu, pbn %llu, flags 0x%x\n`
+- `%s:%d: %s failed to add dir %llu for dir-stats calculation; results may be incomplete\n`
+- `apfs`
+- `%s:%d: ino %llu has corrupt xattr (%s) dstream cypto id\n`
+- `%s:%d: %s: failed to get uuid for fs %d\n`
+- `%s:%d: %s ungraft failed w/%d\n`
+- `Host is down`
+- `apfs_unwrap_key`
+- `%s:%d: %s remove mapping (%lld, %lld) failed: %d\n`
+- `%s:%d: %s IO failed with %d for IO %llu:+%llu to ino %llu, xattr '%s', tmp ino %llu\n`
+- `apfs-3288.52.1`
+- `%s:%d: %s Failed to cache vek: %s (%d)\n`
+- `Calls to VNOP_READLINK`
+- `%s:%d: Failed to wait for system volume\n`
+- `%s:%d: %s No fs oid at fs index 0 for graft\n`
+- `\"kind == NEW && refcnt = %d\\n\" @%s:%d`
+- `%s:%d: %s oid 0x%llx flags 0x%llx type 0x%x/0x%x error getting mapping to free %d\n`
+- `fs_utils.c`
+- `%s:%d: %s get_new_crypto_id returned  error %d\n`
+- `%s:%d: inserting bad phy ext @ %p : kind %d refcnt %d\n`
+- `obj_cache_remove_graft_persistent_ephemeral`
+- `old_crypto_id`
+- `%s:%d: %s Resource fork is an embedded xattr - cannot be written to, returning EIO\n`
+- `%s:%d: Multikey async crypto is already enabled\n`
+- `apfs_vnop_ioctl`
+- `ino_test_unwrap_if_strict_class_f`
+- `%s:%d: %s failed to allocate buffer for checkpoint superblock\n`
+- `count_pages((1 << PAGE_SHIFT_CONST), 2 * (1 << PAGE_SHIFT_CONST), 1 + (1 << PAGE_SHIFT_CONST)) == 1`
+- `FX defrag: Run1 alloc extents count`
+- `region drop`
+- `%s:%d: %s failed to get snapshot tree oid %lld : %d\n`
+- `Program version wrong`
+- `obj_cache_flush_prepare`
+- `scalable`
+- `AKSFileSystemKeyServices`
+- `new_size < old_dstream_size`
+- `Main_IcType`
+- `authapfs_integrity_meta_cache`
+- `%s:%d: %s The bulk purgeable info operation is not supported on this volume.\n`
+- `%s:%d: ================ enhanced apfs is enabled ================\n`
+- `could not materialize ino %lld\n`
+- `%s:%d: %s %s():%d: xf-nlink count = %llu for inum %lld, removing %lld?!\n`
+- `apfs_fake_vnop_ioctl`
+- `%s:%d: %s failed to get spaceman structure: %d\n`
+- `%s:%d: %s fs_update_snap_metadata() returned %d\n`
+- `%s:%d: %s cannot move extents: rolling is active, %d\n`
+- `%s:%d: %s exchange failed for (inum:%llu priv_id:%llu) -> (inum:%llu priv_id:%llu): %s\n`
+- `%s:%d: %s error finding new metadata space: %d\n`
+- `%s:%d: %s strict graft, root hash authentication failure is required\n`
+- `%s:%d: %s invalid root_hash header - payload hash type <%ud> != on-disk hash type <%ud>\n`
+- `retain_xdstream_crypto_states`
+- `OnPostMoveObj`
+- `%s:%d: failed to delete blockmap lut tree, error: %d\n`
+- `%s:%d: %s tx_enter failed with: %s\n`
+- `com.apple.apfs.unlock`
+- `ino_get_ekwk_`
+- `%s:%d: %s Making temporary checkpoint %lld permanent (start %lld).\n`
+- `%s:%d: %s Couldn't delete clone superblock, err %d\n`
+- `com.apple.private.apfs.arv.limited.snapshot`
+- `%s:%d: %s merge_holes_if_needed failed (err %d)\n`
+- `APFS file system`
+- `omap_destroy`
+- `%s:%d: %s failed to enter transaction sized %llu on ino %llu, err %d\n`
+- `%s:%d: %s found extent %lld÷%lld overlapping blocked-out range %lld÷%lld\n`
+- `%s:%d: %s FAILED TO LOAD THE ROOT INODE!\n`
+- `%s:%d: %s failed to create the system vnode for the private dir (err %d)\n`
+- `2222222211`
+- `%s:%d: %s unsupported nx_readonly_compatible_features (0x%llx): mount r/o\n`
+- `%s:%d: %s failed to initialize cib %d: %d\n`
+- `%s:%d: cannot lookup pext <= %llu, %d\n`
+- `%s:%d: %s Post offline-purge cleanup completed with error %d.\n`
+- `setup_purgeable_fixup`
+- `FX defrag: Run1 chunk index`
+- `apfs_io_lock_shared_to_exclusive`
+- `site.struct io_ctx`
+- `ino->private_id == raw_ino->private_id`
+- `apfs_jhash_removevnode`
+- `%s:%d: cannot update ino %llu for new id, %d\n`
+- `site.spec_telem_hash_t`
+- `site.j_snap_metadata_t`
+- `%s:%d: %s name <%s> is TOO LONG! (%d / max %d)`
+- `%s:%d: Eviction is taking too much time %lld, %d blocks evicted, exit transaction for extent %lld, abs start time %lld, abs time of last extent %lld, blocks evicted till last extent %lld)!!!\n`
+- `(ino->default_protection_class == 1) || (ino->default_protection_class == 2)`
+- `attach_ep_to_rsrc`
+- `(style == VOL_CPROTECTED) || (style == VOL_PFKEY)`
+- `%s:%d: %s Could not fetch purgeable file-id %lld\n`
+- `site.AppleAPFSVolumeBSDClient`
+- `%s:%d: setCrypto %s 1 failed with %u\n`
+- `%s:%d: %s failed to leave tx, error %d\n`
+- `change_dstream_prot_class`
+- `fs_evict_range_snapshot_callback`
+- `num_purge_entries <= 10`
+- `%s:%d: %s failed to grow inode %lld to %lld (new_end_size == 0): %s(%d)\n`
+- `apfs-wait-for-tweak-roll-pause`
+- `%s:%d: %s apfs is %slocked! (flags 0x%llx)\n`
+- `com.apple.fs.firmlink`
+- `Block device required`
+- `No message of desired type`
+- `\"%s : Downgrading to shared but lock not held in exclusive\" @%s:%d`
+- `%s:%d: cannot update new space to tmp ino %llu, %d\n`
+- `write_graft_file_xattrs`
+- `%s:%d: %s %s kext, booting xid: %llu\n`
+- `%s:%d: %s parent is %lld name is %s\n`
+- `%s:%d: %s Invalid reap list entry nrl_entries[%d].nrle_next = %d\n`
+- `handle_key_rolling_op`
+- `%s:%d: %s Failed to create purgeable record (drec): %d (%s)\n`
+- `xattr_pfk_transcribe`
+- `IncompatibleFeatures`
+- `%s:%d: %s Host volume is graft\n`
+- `apfs_drop_reservation`
+- `%s:%d: %s could not set dir-stats as part of recursive cloning: %s (%d); size tracking may go out of sync\n`
+- `%s:%d: %s failed to alloc temp clone drec (name %s, err %d)\n`
+- `%s:%d: %s failed to remove hash file info for id %llu @ logical offset %llu err %u\n`
+- `%s:%d: %u..`
+- `dedupe_map_lookup_range`
+- `%s:%d: %s failed to set dstream as an extended field of namedstream inode\n`
+- `%s:%d: %s source volume at index %d does not exist\n`
+- `%s:%d: %s Error finding/demoting last full clone (group:%llu inum:%llu priv_id:%llu new_priv_id:%llu): %s\n`
+- `%s:%d: %s Could not get parent inode for namedstream %llu (%d), returning EIO\n`
+- `%s:%d: %s Invalid iteration mode %u\n`
+- `jobj_validate_large_key_val`
+- `%s:%d: ino %llu has no dstreams\n`
+- `%s:%d: %s rawdev tidemark is %lld\n`
+- `%s:%d: %s clone_mapping_remove of <%llu, %llu> failed with %s (%d)\n`
+- `%s:%d: %s find_next_snap(%llu) returned %d\n`
+- `thread->thread == ((thread_t) ((void*)0))`
+- `VolGroupUUID`
+- `Locked`
+- `%s:%d: blockmap graft(off: %llu, byte len: %lu) returned %d\n`
+- `j_file_extent_t`
+- `(upl->offset % (unsigned long long)(1 << PAGE_SHIFT_CONST)) == 0`
+- `%s:%d: %s Failed to get file ID from purgeable record key/val: error %d\n`
+- `Bytes written by user`
+- `%s:%d: %s cannot update ino %llu to size %llu, err %d\n`
+- `%s:%d: %s unable to sync files (src ino %llu, dst ino %llu)\n`
+- `snk->ekwk`
+- `%s:%d: %s failed to get/unwrap key for volume %s (E%d)\n`
+- `!(owner_ino->internal_flags & INODE_PROT_CLASS_UPGRADE_ROLLIP)`
+- `containerResizePrepare`
+- `Calls to VNOP_BLKTOOFF`
+- `spec_telem_info_hash_entry_create`
+- `key_rolling_has_mediakey`
+- `%s:%d: %s failed to extend existing extent %lld:%lld of inode %lld: %s(%d)\n`
+- `%s:%d: %s fs pfkur tree creation failed: %d\n`
+- `DELETE`
+- `%s:%d: cannot insert tmp dstream-id for inode %llu, %d\n`
+- `%s:%d: %s cannot get parent of ino %lld in %d iterations (ino parent_id %lld; parent_id %lld)\n`
+- `get_nx`
+- `EncryptionType`
+- `validate_on_disk_root_hash`
+- `%s:%d: %s Could not remove extent %llu:+%llu @ %llu, for ino %llu, ret=%d\n`
+- `%s:%d: %s can't mount root filesystem writeable\n`
+- `%s:%d: %s fext_ref_extent_key for fext %llu with crid %llu failed with %d\n`
+- `supplemental_tree_destroy`
+- `\"Attempt to release %lld bytes for inode %p\\n\" @%s:%d`
+- `%s:%d: %s unexpected tree: %d\n`
+- `%s:%d: ***: unknown obj type %d\n`
+- `\"map capacity overflow %lu\" @%s:%d`
+- `clonesplit_xattr_snk_free`
+- `icp_assert_bg_access`
+- `%s:%d: %s ckpw joined thread? %u\n`
+- `%s:%d: %s %s:%d - inode %lld: expected %lld, got %lld unwritten bytes\n`
+- `Enterprise data`
+- `%s:%d: %s failed to update rightmost leaf field: %d\n`
+- `(slot->key_len != 0) && (slot->key_len <= 64)`
+- `len <= cpx_max_key_len(ek)`
+- `%s:%d: %s Cannot magic up vnode for inode %lld - %s(%d)\n`
+- `apfs_read_compressed_data`
+- `spaceman_is_allocated`
+- `%s:%d: %s fs_tx_enter failed, error %d\n`
+- `%s:%d: can't read from unknown ino num %lld\n`
+- `%s:%d: %s Failed to find dstream for inode %lld (dstream id: %lld)\n`
+- `%s:%d: %s can't get spaceman %d free queue tree %lld: %d\n`
+- `%s:%d: %s failed to enter tx to finalize calculation: %s (%d)\n`
+- `%s:%d: %s unable to get omap: %d\n`
+- `%s:%d: %s ino %llu (parent %llu) has been modified since it was marked purgeable: atime mismatch (record %llu inode %llu internal_flags %llx)\n`
+- `%s:%d: %s failed to get pfktso: %s (%d)\n`
+- `%s:%d: %s failed to write graft file xattrs, error %d\n`
+- `nx_resize`
+- `%s:%d: %s Blocked out range is not free after eviction\n`
+- `%s:%d: %s ROSV: apfs mounted RO and is the system volume of a volume group and mounted as the root fs: creating the shadow fs_root\n`
+- `collect_extents_by_range`
+- `%s:%d: %s Invalid residency reason %d ino %llu \n`
+- `111`
+- `%s:%d: failed to allocate vnoflush hash\n`
+- `apfs_clone_internal`
+- `pfku_roll_ino_data`
+- `Network is down`
+- `%s0x%llx`
+- `%s:%d: %s xattr %llu: found a sparse file extent at offset %llu\n`
+- `spaceman_free_extent_cache_insert`
+- `%s:%d: %s Disabling device %d.%d because %s@%s is unmounting\n`
+- `fs_remove_snapshot_metadata`
+- `%s:%d: %s volume has %llu snapshots - finding tidemark of all snapshots\n`
+- `sino->iflags & JI_NAMEDSTREAM`
+- `jobj_allocate`
+- `%s:%d: %s snap %llu has make_dataless, but already is dataless! (?)\n`
+- `%s:%d: %s secondary key is not pre-loaded for vol uuid = %s\n`
+- `Buffer is too small: %u while at least %llu was expected\n`
+- `apfs_jhash_swap`
+- `Permission denied`
+- `%s:%d: %s can't enter transaction to delete tmp xattr inode %llu, err %d!\n`
+- `%s:%d: %s evict_map_range failed with error %d\n`
+- `hcp_is_class_id(id)`
+- `%s:%d: %s did not find purgeable drec for dir %lld (parent id %lld) (fsize %lld)\n`
+- `%s:%d: failed to enable crypto-io mode for container %s: %d - %s\n`
+- `%s:%d: Image %s is a flat file, do not consider as sparse\n`
+- `preallocate_with_temp_file`
+- `spec_telem_info_fill_up_entry_data`
+- `<UNKNOWN>`
+- `get_dstream_id_refcnt`
+- `%s:%d: %s failed to wait on reaper: %d\n`
+- `apfs_fx_defrag_start_defrag`
+- `get_vol_crypto(apfs_from) == VOL_CPROTECTED`
+- `Readonly`
+- `%s:%d: %s Failed to start txn to decrement extra crypto ref (crypto ID %llu): %d (%s)\n`
+- `\"%s:%u: \" \"file %lld is enqueued for upgrade of data protection \" \"class but its state object is missing\\n\" @%s:%d`
+- `%s:%d: %s SET root_to_xid - on next boot, volume will root to snapshot \"%s\" w/snap xid %lld\n`
+- `handle_make_object_dataless`
+- `-`
+- `%s:%d: %s Cannot remove purgeable record with zero atime (ino %llu).\n`
+- `FX defrag: Run4 chunk flags`
+- `%s:%d: %s Cannot update inode %llu: %d (%s)\n`
+- `ino_shrink_size_tx`
+- `apfs_clonegroup_insert_cookie`
+- `%s:%d: %s Rooting from a tagged snapshot is NOT allowed\n`
+- `%s:%d: %s Found OBJID 0x%llx type %u\n`
+- `%s:%d: %s failed to persist ephemeral grafts, err %d\n`
+- `old_xdstream.dstream.default_crypto_id != 0`
+- `%s:%d: %s failed to flush tx storing proposed wvek record in nx keybag, err = %d\n`
+- `%s:%d: %s failed to restore clone attributes for ino %llu (err %d)\n`
+- `%s:%d: %s failed to add initial cow-exempt-count xattr! err %d\n`
+- `zeroes`
+- `import_pfk`
+- `%s:%d: %s unsupported nx_incompatible_features (0x%llx): unable to mount\n`
+- `%s:%d: %s Deleting incompatible volume %s\n`
+- `%s:%d: %s Flags %llx are not settable.\n`
+- `%s:%d: %s Invalid urgency filter %llu specified.\n`
+- `get_vol_crypto(ts.apfs) == VOL_PFKEY`
+- `FX defrag: All runs total time (in mSec)`
+- `!ino_class_is_vek(new_class)`
+- `%s:%d: %s couldn't get clonegroup tree: %s\n`
+- `nx_block_out_range_prepare`
+- `apfs_free_data_blocks`
+- `apfs_pfkur_rolling_thread`
+- `blocks:   removed %llu derefed %llu (in_snap %llu freed %llu)\n`
+- `%s:%d: %s Failed to load pfk upgrade rolling state object for src (ino %llu)\n`
+- `%s:%d: %s Volume is not sealed\n`
+- `%s:%d: failed to clone xattr %lld:%s (source %lld) err %d\n`
+- `!\"crypto key pool is not supported for class\\n\"`
+- `%s:%d: %s oid 0x%llx flags 0x%llx type 0x%x/0x%x error unreserving space on non-dirty release: %d\n`
+- `%s:%d: %s range failed sanity check: %d\n`
+- `pfkur_thread_start`
+- `%s:%d: %s Failed to mark the dir-stats record for ino %llu as purgeable: error %d (%s)\n`
+- `cancel_purge`
+- `needs transcription`
+- `%s:%d: AKS new_keys_bulk failed for class = %d, count = %u, error = %x\n`
+- `spaceman_checkpoint_traverse`
+- `nx_tx_finish_wait_for_dirty_data`
+- `%s:%d: %s xid %lld failed to write checkpoint superblock %lld: %d\n`
+- `apfs_vnop_makenamedstream`
+- `%s:%d: %s failed to alloc context for volume key, error = %d\n`
+- `%s:%d: %s Failed to decrement extra crypto ref (old crypto ID %llu): %d (%s)\n`
+- `(len % fs_bsize) == 0`
+- `%s:%d: Failed to allocate speculative telemetry hash table\n`
+- `checkpoint data area`
+- `%s:%d: done registering sysctls.\n`
+- `jobj_size_for_key_val`
+- `purgeable-file-eviction`
+- `%s:%d: apfs: atime mount option ENABLED by boot-arg on user volume\n`
+- `install_apfs_vfs_fs`
+- `%s:%d: %s invalid state %d for compressed file\n`
+- `%s:%d: Error! tree_lookup_ge of %lld:%lld returned %d!\n`
+- `%s:%d: %s unknown expanded type (%hhu) on record (%u)\n`
+- `apfs_fake_vnop_readdir`
+- `%s:%d: %s cannot insert new ep %llu because the policy cache is full\n`
+- `%s:%d: %s remove_jobj(old-snap-name) returned %d\n`
+- `%s:%d: %s failed to init scaleable transcription: %s (%d)\n`
+- `%s:%d: %s failed to start watchdog monitoring after transcription\n`
+- `%s:%d: failed to get valid buffer for I/O at [fsindex (%d), offset(%llu)]\n`
+- `!ino_class_is_vek(c)`
+- `com.apple.decmpfs`
+- `apfs_io_lock_exclusive_to_shared`
+- `%s:%d: %s tx_finish returned %d\n`
+- `validate_payload_and_manifest`
+- `com.apple.private.apfs.set_purgeable_notification_threshold`
+- `%s:%d: %s checkpoint xid %lld failed to load spaceman metadata ranges (overlap?): %d\n`
+- `apfs_initial_free_space_scanner`
+- `dir_stats_origin_can_be_moved`
+- `i <= num_pages`
+- `keybag_common.c`
+- `%s:%d: %s failed to look up vek, err = %d\n`
+- `fs_obj_clone_name_checked`
+- `ino_get_ek_id`
+- `recursively_remove_extents_of_dir`
+- `%s:%d: %s dstream %lld, phys_ext %lld has an update record with invalid owning_obj_i, and there are no snapshots!!!\n`
+- `xattr_get_ekwk_id`
+- `!is_graft_ino(ino)`
+- `rw`
+- `%s:%d: %s leaked %llu bytes under ino %llu\n`
+- `%s:%d: %s nx_global_extent_manipulation_unlock(%d, %x), (%d, %x, %d, %d)\n`
+- `%s:%d: %s Processed %8lld records. Fixed %lld hard links\n`
+- `%s:%d: %s vek was already loaded during previous unlock\n`
+- `%s:%d: %s superblock failed sanity checks: %d\n`

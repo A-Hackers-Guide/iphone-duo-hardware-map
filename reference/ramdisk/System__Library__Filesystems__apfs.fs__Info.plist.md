@@ -1,0 +1,83 @@
+# `/System/Library/Filesystems/apfs.fs/Info.plist`
+
+From the upgrade restore ramdisk (141-29011-104.dmg). 1,960 bytes.
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleIdentifier`: `com.apple.filesystems.fs.apfs`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `apfs`
+- `CFBundlePackageType`: `fs`
+- `CFBundleShortVersionString`: `3288.52.1`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `3288.52.1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: ``
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91004`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `FSMediaTypes`:
+  - `41504653-0000-11AA-AA11-00306543ECAC`:
+    - `FSMediaProperties`:
+      - `Content Hint`: `41504653-0000-11AA-AA11-00306543ECAC`
+      - `Leaf`: `True`
+    - `FSProbeArguments`: `-p`
+    - `FSProbeExecutable`: `apfs.util`
+    - `FSProbeOrder`: `1000`
+  - `Whole`:
+    - `FSMediaProperties`:
+      - `Leaf`: `True`
+      - `Whole`: `True`
+    - `FSProbeArguments`: `-p`
+    - `FSProbeExecutable`: `apfs.util`
+    - `FSProbeOrder`: `1000`
+- `FSPersonalities`:
+  - `APFS`:
+    - `FSEncryptionName`: `APFS (Encrypted)`
+    - `FSFormatArguments`: `-i`
+    - `FSFormatContentMask`: `7C3457EF-0000-11AA-AA11-00306543ECAC`
+    - `FSFormatExecutable`: `newfs_apfs`
+    - `FSFormatMaximumSize`: `9223372034707292160`
+    - `FSFormatMinimumSize`: `8388608`
+    - `FSLiveVerificationArguments`: `-l`
+    - `FSMountArguments`: ``
+    - `FSMountExecutable`: `mount_apfs`
+    - `FSName`: `APFS`
+    - `FSRepairArguments`: `-y`
+    - `FSRepairExecutable`: `fsck_apfs`
+    - `FSSubType`: `1`
+    - `FSVerificationArguments`: `-n`
+    - `FSVerificationExecutable`: `fsck_apfs`
+    - `FSXMLOutputArgument`: `-x`
+    - `FSfileObjectsAreCasePreserving`: `True`
+    - `FSfileObjectsAreCaseSensitive`: `False`
+    - `FSvolumeNameIsCasePreserving`: `True`
+  - `Case-sensitive APFS`:
+    - `FSEncryptionName`: `APFS (Case-sensitive, Encrypted)`
+    - `FSFormatArguments`: `-e`
+    - `FSFormatContentMask`: `7C3457EF-0000-11AA-AA11-00306543ECAC`
+    - `FSFormatExecutable`: `newfs_apfs`
+    - `FSFormatMaximumSize`: `9223372034707292160`
+    - `FSFormatMinimumSize`: `8388608`
+    - `FSLiveVerificationArguments`: `-l`
+    - `FSMountArguments`: ``
+    - `FSMountExecutable`: `mount_apfs`
+    - `FSName`: `APFS (Case-sensitive)`
+    - `FSRepairArguments`: `-y`
+    - `FSRepairExecutable`: `fsck_apfs`
+    - `FSSubType`: `0`
+    - `FSVerificationArguments`: `-n`
+    - `FSVerificationExecutable`: `fsck_apfs`
+    - `FSXMLOutputArgument`: `-x`
+    - `FSfileObjectsAreCasePreserving`: `True`
+    - `FSfileObjectsAreCaseSensitive`: `True`
+    - `FSvolumeNameIsCasePreserving`: `True`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2015-2023 Apple Inc. All rights reserved.`
+- `UIDeviceFamily`:
+  - `1`

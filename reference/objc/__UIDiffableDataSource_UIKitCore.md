@@ -1,0 +1,271 @@
+# `__UIDiffableDataSource`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `UICollectionViewDataSource`, `UITableViewDataSource`
+- 33 instance variables, 42 properties, 169 instance methods, 1 class methods
+
+## Instance variables
+
+```
+@"UITableView" _tableView;
+@"UICollectionView" _collectionView;
+@"NSMapTable" _rendererMap;
+@? _rendererIdentifierProvider;
+@"NSHashTable" _sectionControllers;
+@"NSDiffableDataSourceTransaction" _pendingReorderingTransaction;
+@"NSDiffableDataSourceTransaction" _currentTransaction;
+B _pendingReorderingTransactionShouldPerformViewAnimations;
+{os_unfair_recursive_lock_s="ourl_lock"{os_unfair_lock_s="_os_unfair_lock_opaque"I}"ourl_count"I} _sectionControllerLock;
+B _isApplyingWithoutRebasingSectionSnapshots;
+@? _tableViewCellProvider;
+@? _supplementaryViewProvider;
+@"<_UICollectionViewUpdateExpandCollapseAnimationContext>" _expandCollapseAnimationContext;
+@? _collectionViewCellProvider;
+@"<_UICollectionViewUpdateItemApplying>" _viewUpdatesSink;
+@"_UIDiffableDataSourceState" _state;
+@? _supplementaryReuseIdentifierProvider;
+@? _supplementaryViewConfigurationHandler;
+@? _cellObserver;
+@"UICollectionViewDiffableDataSourceReorderingHandlers" _reorderingHandlers;
+@? _willApplySnapshotHandler;
+@? _didApplySnapshotHandler;
+@? _canReorderItemHandler;
+@"UICollectionViewDiffableDataSourceSectionSnapshotHandlers" _sectionSnapshotHandlers;
+@? _tableViewCellConfigurationHandler;
+@? _reuseIdentifierProvider;
+@? _collectionViewCellConfigurationHandler;
+@"_UIDiffableDataSourceViewUpdater" _viewUpdater;
+@"NSObject<OS_dispatch_queue>" _applyQueue;
+Aq _outstandingApplyCount;
+@"NSObject<OS_dispatch_queue>" _snapshotQueue;
+Q _mutationQueueSource;
+@"NSMutableArray" _completionHandlersForBatchApply;
+```
+
+## Properties
+
+```
+@property (T@?,C,N,V_tableViewCellConfigurationHandler) tableViewCellConfigurationHandler;
+@property (T@?,C,N,V_reuseIdentifierProvider) reuseIdentifierProvider;
+@property (T@?,C,N,V_collectionViewCellConfigurationHandler) collectionViewCellConfigurationHandler;
+@property (T@"_UIDiffableDataSourceViewUpdater",&,N,V_viewUpdater) viewUpdater;
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_applyQueue) applyQueue;
+@property (TAq,R,N,V_outstandingApplyCount) outstandingApplyCount;
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_snapshotQueue) snapshotQueue;
+@property (TQ,V_mutationQueueSource) mutationQueueSource;
+@property (T@"_UIDiffableDataSourceState",&,N,V_state) state;
+@property (TB,N,V_isApplyingWithoutRebasingSectionSnapshots) isApplyingWithoutRebasingSectionSnapshots;
+@property (T@"NSMutableArray",&,N,V_completionHandlersForBatchApply) completionHandlersForBatchApply;
+@property (Tq,N) tableViewDefaultRowAnimation;
+@property (T@"UITableView",R,W,N) tableView;
+@property (T@?,C,N,V_tableViewCellProvider) tableViewCellProvider;
+@property (T@"UICollectionView",R,W,N) collectionView;
+@property (T@"UICollectionView",R,W,N) _collectionView;
+@property (T@?,C,N,V_supplementaryViewProvider) supplementaryViewProvider;
+@property (T@"<_UICollectionViewUpdateExpandCollapseAnimationContext>",&,N,V_expandCollapseAnimationContext) expandCollapseAnimationContext;
+@property (T@?,R,N,V_collectionViewCellProvider) collectionViewCellProvider;
+@property (T@"<_UICollectionViewUpdateItemApplying>",R,W,N,V_viewUpdatesSink) viewUpdatesSink;
+@property (T@"NSDiffableDataSourceTransaction",R,N) currentTransaction;
+@property (Tq,R,N) numberOfItems;
+@property (Tq,R,N) numberOfSections;
+@property (T@"NSArray",R,N) sectionIdentifiers;
+@property (T@"NSArray",R,N) itemIdentifiers;
+@property (T@"NSArray",R,N) reloadedSectionIdentifiers;
+@property (T@"NSArray",R,N) reloadedItemIdentifiers;
+@property (T@"NSArray",R,N) reconfiguredItemIdentifiers;
+@property (TB,R,N) isSuppressingViewUpdates;
+@property (T@?,C,N,V_supplementaryReuseIdentifierProvider) supplementaryReuseIdentifierProvider;
+@property (T@?,C,N,V_supplementaryViewConfigurationHandler) supplementaryViewConfigurationHandler;
+@property (T@?,C,N,V_cellObserver) cellObserver;
+@property (T@"NSArray",R,N) sectionControllers;
+@property (T@"UICollectionViewDiffableDataSourceReorderingHandlers",C,N,V_reorderingHandlers) reorderingHandlers;
+@property (T@?,C,N,V_willApplySnapshotHandler) willApplySnapshotHandler;
+@property (T@?,C,N,V_didApplySnapshotHandler) didApplySnapshotHandler;
+@property (T@?,C,N,V_canReorderItemHandler) canReorderItemHandler;
+@property (T@"UICollectionViewDiffableDataSourceSectionSnapshotHandlers",C,N,V_sectionSnapshotHandlers) sectionSnapshotHandlers;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Class methods
+
+```
++[__UIDiffableDataSource initialize];
+```
+
+## Instance methods
+
+```
+-[__UIDiffableDataSource setViewUpdater:];
+-[__UIDiffableDataSource sectionIdentifierForIndex:];
+-[__UIDiffableDataSource numberOfItems];
+-[__UIDiffableDataSource tableView];
+-[__UIDiffableDataSource moveSectionWithIdentifier:beforeSectionWithIdentifier:];
+-[__UIDiffableDataSource reloadSectionsWithIdentifiers:];
+-[__UIDiffableDataSource appendSectionWithIdentifier:];
+-[__UIDiffableDataSource indexForSectionIdentifier:];
+-[__UIDiffableDataSource applySnapshot:];
+-[__UIDiffableDataSource viewUpdater];
+-[__UIDiffableDataSource appendItemsWithIdentifiers:intoSectionWithIdentifier:];
+-[__UIDiffableDataSource itemIdentifiersInSectionWithIdentifier:];
+-[__UIDiffableDataSource insertItemsWithIdentifiers:afterItemWithIdentifier:];
+-[__UIDiffableDataSource tableView:numberOfRowsInSection:];
+-[__UIDiffableDataSource sectionIdentifierForSectionContainingItemIdentifier:];
+-[__UIDiffableDataSource insertSectionWithIdentifier:afterSectionWithIdentifier:];
+-[__UIDiffableDataSource _commitUpdate:snapshot:animated:animator:customAnimationsProvider:completion:];
+-[__UIDiffableDataSource deleteAllItems];
+-[__UIDiffableDataSource indexPathForItemIdentifier:];
+-[__UIDiffableDataSource numberOfSectionsInTableView:];
+-[__UIDiffableDataSource deleteSectionsWithIdentifiers:];
+-[__UIDiffableDataSource setTableViewCellConfigurationHandler:];
+-[__UIDiffableDataSource appendSectionsWithIdentifiers:];
+-[__UIDiffableDataSource deleteItemsWithIdentifiers:];
+-[__UIDiffableDataSource itemIdentifierForIndexPath:];
+-[__UIDiffableDataSource insertItemsWithIdentifiers:beforeItemWithIdentifier:];
+-[__UIDiffableDataSource insertSectionsWithIdentifiers:afterSectionWithIdentifier:];
+-[__UIDiffableDataSource appendItemsWithIdentifiers:];
+-[__UIDiffableDataSource sectionIdentifiers];
+-[__UIDiffableDataSource reloadedItemIdentifiers];
+-[__UIDiffableDataSource reloadItemsWithIdentifiers:];
+-[__UIDiffableDataSource numberOfItemsInSection:];
+-[__UIDiffableDataSource tableView:cellForRowAtIndexPath:];
+-[__UIDiffableDataSource reconfigureItemsWithIdentifiers:];
+-[__UIDiffableDataSource reconfiguredItemIdentifiers];
+-[__UIDiffableDataSource currentTransaction];
+-[__UIDiffableDataSource insertSectionsWithIdentifiers:beforeSectionWithIdentifier:];
+-[__UIDiffableDataSource applyQueue];
+-[__UIDiffableDataSource indexOfItemIdentifier:];
+-[__UIDiffableDataSource moveItemWithIdentifier:afterItemWithIdentifier:];
+-[__UIDiffableDataSource reloadedSectionIdentifiers];
+-[__UIDiffableDataSource applyDifferencesFromSnapshot:animatingDifferences:];
+-[__UIDiffableDataSource applyDifferencesFromSnapshot:animatingDifferences:completion:];
+-[__UIDiffableDataSource collectionViewCellConfigurationHandler];
+-[__UIDiffableDataSource _cellForItemAtIndexPath:collectionView:];
+-[__UIDiffableDataSource snapshotQueue];
+-[__UIDiffableDataSource _computeCurrentTransactionForFinalSnapshot:withDataSourceDiffer:];
+-[__UIDiffableDataSource _onApplyQueue_applyDifferencesFromSnapshot:animatingDifferences:completion:];
+-[__UIDiffableDataSource setState:];
+-[__UIDiffableDataSource _applyDifferencesFromSnapshot:animatingDifferences:completion:isOnApplyQueue:];
+-[__UIDiffableDataSource initWithState:];
+-[__UIDiffableDataSource setTableViewCellProvider:];
+-[__UIDiffableDataSource itemIdentifiers];
+-[__UIDiffableDataSource setSectionSnapshotHandlers:];
+-[__UIDiffableDataSource setSupplementaryViewProvider:];
+-[__UIDiffableDataSource completionHandlersForBatchApply];
+-[__UIDiffableDataSource setWillApplySnapshotHandler:];
+-[__UIDiffableDataSource collectionView:numberOfItemsInSection:];
+-[__UIDiffableDataSource setCompletionHandlersForBatchApply:];
+-[__UIDiffableDataSource _commitReorderingForItemAtIndexPath:toDestinationIndexPath:];
+-[__UIDiffableDataSource initWithCollectionView:itemRenderers:rendererIdentifierProvider:];
+-[__UIDiffableDataSource numberOfSections];
+-[__UIDiffableDataSource snapshot];
+-[__UIDiffableDataSource tableViewCellConfigurationHandler];
+-[__UIDiffableDataSource addAssociatedSectionControllerIfNeeded:];
+-[__UIDiffableDataSource _commitStateAtomically:];
+-[__UIDiffableDataSource collectionView:cellForItemAtIndexPath:];
+-[__UIDiffableDataSource _validReloadOrReconfigureViewUpdatesInSnapshot:];
+-[__UIDiffableDataSource tableViewDefaultRowAnimation];
+-[__UIDiffableDataSource numberOfSectionsInCollectionView:];
+-[__UIDiffableDataSource setExpandCollapseAnimationContext:];
+-[__UIDiffableDataSource initWithViewUpdatesSink:];
+-[__UIDiffableDataSource sectionSnapshotHandlers];
+-[__UIDiffableDataSource didApplySnapshotHandler];
+-[__UIDiffableDataSource supplementaryViewConfigurationHandler];
+-[__UIDiffableDataSource collectionView];
+-[__UIDiffableDataSource isApplyingWithoutRebasingSectionSnapshots];
+-[__UIDiffableDataSource validateIdentifiers];
+-[__UIDiffableDataSource _onApplyQueue_applyDifferencesFromSnapshot:viewPropertyAnimator:customAnimationsProvider:];
+-[__UIDiffableDataSource applySnapshot:toSection:animatingDifferences:completion:];
+-[__UIDiffableDataSource _performBatchApplyUsingReloadData:];
+-[__UIDiffableDataSource initWithTableView:cellProvider:reuseIdentifierProvider:cellConfigurationHandler:state:dataSource:];
+-[__UIDiffableDataSource _canApplySnapshotUpdateWithoutDiffing:];
+-[__UIDiffableDataSource _storeState:];
+-[__UIDiffableDataSource setSupplementaryViewConfigurationHandler:];
+-[__UIDiffableDataSource _isApplyingReorderingTransaction];
+-[__UIDiffableDataSource _notifyWillApplyForCurrentTransactionIfNeeded];
+-[__UIDiffableDataSource _numberOfRowsInSection:tableView:];
+-[__UIDiffableDataSource setMutationQueueSource:];
+-[__UIDiffableDataSource _viewForSupplementaryElementOfKind:atIndexPath:collectionView:];
+-[__UIDiffableDataSource supplementaryViewProvider];
+-[__UIDiffableDataSource setCellObserver:];
+-[__UIDiffableDataSource _numberOfSectionsForCollectionView:];
+-[__UIDiffableDataSource outstandingApplyCount];
+-[__UIDiffableDataSource moveSectionWithIdentifier:afterSectionWithIdentifier:];
+-[__UIDiffableDataSource _commitRebasedSectionSnapshotsFromCurrentTransactionIfNeeded];
+-[__UIDiffableDataSource initWithTableView:cellProvider:];
+-[__UIDiffableDataSource sectionController:willExpandItem:];
+-[__UIDiffableDataSource _onApplyQueue_reloadFromSnapshot:completion:];
+-[__UIDiffableDataSource indexOfSectionIdentifier:];
+-[__UIDiffableDataSource _commitNewDataSource:withViewUpdates:viewPropertyAnimator:customAnimationsProvider:animated:commitAlongsideHandler:completion:];
+-[__UIDiffableDataSource _transactionForFinalSnapshot:dataSourceDiffer:shouldSkipRebasingSectionSnapshots:];
+-[__UIDiffableDataSource _reorderingTransactionForReorderingUpdate:];
+-[__UIDiffableDataSource _numberOfSectionsForTableView:];
+-[__UIDiffableDataSource setTableViewDefaultRowAnimation:];
+-[__UIDiffableDataSource setCollectionViewCellConfigurationHandler:];
+-[__UIDiffableDataSource setReorderingHandlers:];
+-[__UIDiffableDataSource canReorderItemHandler];
+-[__UIDiffableDataSource _cellForRowAtIndexPath:tableView:];
+-[__UIDiffableDataSource initWithCollectionView:reuseIdentifierProvider:cellConfigurationHandler:];
+-[__UIDiffableDataSource _isDiffableDataSource];
+-[__UIDiffableDataSource _resetCurrentTransaction];
+-[__UIDiffableDataSource _applyDifferencesFromSnapshot:viewPropertyAnimator:customAnimationsProvider:];
+-[__UIDiffableDataSource setIsApplyingWithoutRebasingSectionSnapshots:];
+-[__UIDiffableDataSource viewUpdatesSink];
+-[__UIDiffableDataSource applyDifferencesFromSnapshot:];
+-[__UIDiffableDataSource supplementaryReuseIdentifierProvider];
+-[__UIDiffableDataSource _numberOfItemsInSection:collectionView:];
+-[__UIDiffableDataSource snapshotForSection:];
+-[__UIDiffableDataSource sectionController:shouldExpandItem:];
+-[__UIDiffableDataSource associatedSectionControllerForSectionIdentifier:];
+-[__UIDiffableDataSource _commitReorderingForItemAtIndexPath:toDestinationIndexPath:shouldPerformViewAnimations:];
+-[__UIDiffableDataSource initWithCollectionView:sectionControllers:rendererIdentifierProvider:];
+-[__UIDiffableDataSource sectionController:willCollapseItem:];
+-[__UIDiffableDataSource sectionController:snapshotForExpandingParentItem:currentSectionSnapshot:];
+-[__UIDiffableDataSource initWithTableView:reuseIdentifierProvider:cellConfigurationHandler:];
+-[__UIDiffableDataSource reloadFromSnapshot:];
+-[__UIDiffableDataSource initWithCollectionView:cellProvider:];
+-[__UIDiffableDataSource associatedSectionControllerForItemIdentifier:];
+-[__UIDiffableDataSource setSupplementaryReuseIdentifierProvider:];
+-[__UIDiffableDataSource _willBeginReorderingForItemAtIndexPath:];
+-[__UIDiffableDataSource _registerItemRenderers:rendererIdentifierProvider:];
+-[__UIDiffableDataSource _snapshotForSection:];
+-[__UIDiffableDataSource initWithCollectionView:cellProvider:dataSource:];
+-[__UIDiffableDataSource sectionControllers];
+-[__UIDiffableDataSource description];
+-[__UIDiffableDataSource reloadFromSnapshot:completion:];
+-[__UIDiffableDataSource sectionController:shouldCollapseItem:];
+-[__UIDiffableDataSource collectionView:viewForSupplementaryElementOfKind:atIndexPath:];
+-[__UIDiffableDataSource emptySnapshot];
+-[__UIDiffableDataSource expandCollapseAnimationContext];
+-[__UIDiffableDataSource insertSectionWithIdentifier:beforeSectionWithIdentifier:];
+-[__UIDiffableDataSource mutationQueueSource];
+-[__UIDiffableDataSource _collectionView];
+-[__UIDiffableDataSource initWithCollectionView:cellProvider:reuseIdentifierProvider:cellConfigurationHandler:state:dataSource:];
+-[__UIDiffableDataSource willApplySnapshotHandler];
+-[__UIDiffableDataSource setDidApplySnapshotHandler:];
+-[__UIDiffableDataSource _performReloadOrReconfigureUpdateWithItems:dataSourceSnapshot:animated:completion:];
+-[__UIDiffableDataSource setCanReorderItemHandler:];
+-[__UIDiffableDataSource _applyDifferencesFromSnapshot:toSection:animatingDifferences:completion:];
+-[__UIDiffableDataSource _applyDifferencesFromSnapshot:customAnimationsProvider:];
+-[__UIDiffableDataSource _onApplyQueue_applyDifferencesFromSnapshot:viewPropertyAnimator:customAnimationsProvider:animated:completion:];
+-[__UIDiffableDataSource applyDifferencesFromSnapshot:completion:];
+-[__UIDiffableDataSource moveItemWithIdentifier:beforeItemWithIdentifier:];
+-[__UIDiffableDataSource setReuseIdentifierProvider:];
+-[__UIDiffableDataSource reorderingHandlers];
+-[__UIDiffableDataSource reuseIdentifierProvider];
+-[__UIDiffableDataSource sectionController:shouldQueryForSnapshotForExpandingParentItem:];
+-[__UIDiffableDataSource _transactionForReloadUpdatesWithSnapshot:];
+-[__UIDiffableDataSource collectionViewCellProvider];
+-[__UIDiffableDataSource cellObserver];
+-[__UIDiffableDataSource _snapshotWithHandlerAtomic:];
+-[__UIDiffableDataSource tableViewCellProvider];
+-[__UIDiffableDataSource canMoveItemAtIndexPath:];
+-[__UIDiffableDataSource state];
+-[__UIDiffableDataSource isSuppressingViewUpdates];
+-[__UIDiffableDataSource _notifyDidApplyForCurrentTransactionIfNeeded];
+-[__UIDiffableDataSource _performApplyWithoutRebasingSectionSnapshots:];
+-[__UIDiffableDataSource _diffableDataSourceImpl];
+```

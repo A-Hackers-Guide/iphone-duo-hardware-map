@@ -1,0 +1,1245 @@
+# `com.apple.iokit.IOPCIFamily`
+
+- Name: I/O Kit PCI Family
+- Version: `2.9`
+- UUID: `4F78E637-ACAA-3C27-894B-32B90052425A`
+- Source version: `764.40.4.0.0`
+- Depends on: [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (3) [KC]
+
+### IOPCI2PCIBridge-Name
+- `CFBundleIdentifier`: `com.apple.iokit.IOPCIFamily`
+- `IOClass`: `IOPCI2PCIBridge`
+- `IONameMatch`: `pci-bridge`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOPCIFamily`
+- `IOProviderClass`: `IOPCIDevice`
+
+### IOPCI2PCIBridge-PCI
+- `CFBundleIdentifier`: `com.apple.iokit.IOPCIFamily`
+- `IOClass`: `IOPCI2PCIBridge`
+- `IOPCIMatch`: `0x00261011`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOPCIFamily`
+- `IOProviderClass`: `IOPCIDevice`
+
+### IOPCI2PCIBridge-i386
+- `CFBundleIdentifier`: `com.apple.iokit.IOPCIFamily`
+- `IOClass`: `IOPCI2PCIBridge`
+- `IOPCIClassMatch`: `0x06040000&0xffff0000`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOPCIFamily`
+- `IOProviderClass`: `IOPCIDevice`
+
+
+## C++ classes (9) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `IOAGPDevice` | 0xc8 | IOPCIDevice → IOService → IORegistryEntry |
+| `IOPCI2PCIBridge` | 0x148 | IOPCIBridge → IOService → IORegistryEntry |
+| `IOPCIBridge` | 0xa0 | IOService → IORegistryEntry |
+| `IOPCIConfigurator` | 0xf0 | IOService → IORegistryEntry |
+| `IOPCIDevice` | 0xb8 | IOService → IORegistryEntry |
+| `IOPCIEventSource` | 0x78 | IOEventSource |
+| `IOPCIHostBridge` | 0xb8 | IOPCIBridge → IOService → IORegistryEntry |
+| `IOPCIHostBridgeData` | 0x178 | IOService → IORegistryEntry |
+| `IOPCIMessagedInterruptController` | 0xc0 | IOInterruptController → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0000ddaa off=0x00a3f5d0-0x00a4d37a addr=0xfffffe0007a435d0-0xfffffe0007a5137a r--/r--   __TEXT            
+	sz=0x00000f18 off=0x00a3fcf0-0x00a40c08 addr=0xfffffe0007a43cf0-0xfffffe0007a44c08               __TEXT.__const            
+	sz=0x000076ed off=0x00a40c08-0x00a482f5 addr=0xfffffe0007a44c08-0xfffffe0007a4c2f5               __TEXT.__cstring          (CstringLiterals)
+	sz=0x00005085 off=0x00a482f5-0x00a4d37a addr=0xfffffe0007a4c2f5-0xfffffe0007a5137a               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x00041ba8 off=0x033137e0-0x03355388 addr=0xfffffe000a3177e0-0xfffffe000a359388 r-x/r-x   __TEXT_EXEC       
+	sz=0x00041258 off=0x033137e0-0x03354a38 addr=0xfffffe000a3177e0-0xfffffe000a358a38          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000950 off=0x03354a38-0x03355388 addr=0xfffffe000a358a38-0xfffffe000a359388          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00000500 off=0x04a14a20-0x04a14f20 addr=0xfffffe000ba18a20-0xfffffe000ba18f20 rw-/rw-   __DATA            
+	sz=0x000000cc off=0x04a14a20-0x04a14aec addr=0xfffffe000ba18a20-0xfffffe000ba18aec               __DATA.__data             
+	sz=0x00000430 off=0x00000000-0x00000430 addr=0xfffffe000ba18af0-0xfffffe000ba18f20               __DATA.__common           (Zerofill)
+003: LC_SEGMENT_64 sz=0x00004ae0 off=0x013d08a8-0x013d5388 addr=0xfffffe00083d48a8-0xfffffe00083d9388 rw-/rw-   __DATA_CONST      
+	sz=0x00000020 off=0x013d08a8-0x013d08c8 addr=0xfffffe00083d48a8-0xfffffe00083d48c8         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000020 off=0x013d08c8-0x013d08e8 addr=0xfffffe00083d48c8-0xfffffe00083d48e8         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00003d60 off=0x013d08e8-0x013d4648 addr=0xfffffe00083d48e8-0xfffffe00083d8648         __DATA_CONST.__const            
+	sz=0x00000600 off=0x013d4648-0x013d4c48 addr=0xfffffe00083d8648-0xfffffe00083d8c48         __DATA_CONST.__kalloc_type      
+	sz=0x00000190 off=0x013d4c48-0x013d4dd8 addr=0xfffffe00083d8c48-0xfffffe00083d8dd8         __DATA_CONST.__kalloc_var       
+	sz=0x000004a8 off=0x013d4dd8-0x013d5280 addr=0xfffffe00083d8dd8-0xfffffe00083d9280         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000100 off=0x013d5280-0x013d5380 addr=0xfffffe00083d9280-0xfffffe00083d9380         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000008 off=0x013d5380-0x013d5388 addr=0xfffffe00083d9380-0xfffffe00083d9388         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 330 at 0x04af614c
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     4F78E637-ACAA-3C27-894B-32B90052425A
+008: LC_SOURCE_VERSION           764.40.4.0.0
+009: LC_FUNCTION_STARTS          offset=0x004ac3fe8 size=0x418
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `IOPCIFamily`
+- `CFBundleGetInfoString`: `2.9, Copyright © 2000-2011 Apple Inc. All rights reserved.`
+- `CFBundleIdentifier`: `com.apple.iokit.IOPCIFamily`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `I/O Kit PCI Family`
+- `CFBundleNumericVersion`: `43024384`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `2.9`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `2.9`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright Apple Computer, Inc. 2000-2008`
+- `OSBundleCompatibleVersion`: `1.0.0b1`
+- `OSBundleRequired`: `Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/IOPCIFamily.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198895053360`
+- `_PrelinkExecutableRelativePath`: `IOPCIFamily`
+- `_PrelinkExecutableSize`: `346418`
+- `_PrelinkExecutableSourceAddr`: `-2198895053360`
+- `_PrelinkKmodInfo`: `-2198828119520`
+
+## Strings (1101) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `crash-terminate-self-only`
+- `IOPCICorrectableError(%d%s%s)`
+- `VitalProductDataCapability`
+- `device-id`
+- `IOPCIExpressDeviceCapabilities2`
+- `detachFromChild`
+- `AGP8Capability`
+- `DVSEC`
+- `[PCIe:%u %llu ns] bridge %p dead child at [i%x]%u:%u:%u(0x%x:0x%x) never entered service plane\n`
+- `[PCIe:%u %llu ns] Endpoint failed to respond successfully after spec mandated wait time\n`
+- `[PCIe:%u %llu ns] device [i%x]%u:%u:%u(0x%x:0x%x) Max Read Request Size set to 0x%x\n`
+- `\"Failed to initialize host bridge data structure\" @%s:%d`
+- `Adapter Type`
+- `D3cold`
+- `link-up-timeout`
+- `[PCIe:%u %llu ns] configOp:<-unpause: %s(0x%qx)\n`
+- `[PCIe:%u %llu ns] [%s()] nub %s@%u:%u:%u has link depth %u\n`
+- `[PCIe:%u %llu ns] The %s entitlements property is malformed\n`
+- `[PCIe:%u %llu ns] [%s()] resetting nub %s's software state\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryWrite8: index %u could not get mapping\n`
+- `[PCIe:%u %llu ns] %s: PCIDriverKit client %s does not have open session with device %s[%u:%u:%u], skipping recovery\n`
+- `[PCIe:%u %llu ns] [ PCI configuration begin (scanning %u:%u:XX) ]\n`
+- `pci-aer-uncorrectable`
+- `[PCIe:%u %llu ns] %s no device\n`
+- `%d %d %d: find %x %p %s 0x%qx\n`
+- `[PCIe:%u %llu ns] %s(0x%qx) power children set changed (%u->%u)\n`
+- `[PCIe:%u %llu ns] %s: no child D3\n`
+- `[PCIe:%u %llu ns] %s: reset PCIPM\n`
+- `[PCIe:%u %llu ns] offline\n`
+- `[PCIe:%u %llu ns] %s: probe\n`
+- `IOPMPCISleepReset`
+- `site.IOPCIEventSource`
+- `\"Warm reset not implemented in IOPCIBridge\" @%s:%d`
+- `built-in`
+- `RootComplexRegBlock`
+- `IOPMPCIConfigSpaceVolatile`
+- `[%s()] Timed out waiting for command completed to be set for %s\n`
+- `\"Host bridge data is not initialized for the host bridge.\" @%s:%d`
+- `[PCIe:%u %llu ns] %s waiting for downstream devices to finish terminating\n`
+- `AtomicOpEgressBlocked`
+- `IOReturn IOPCIDevice::reprobeThreadCall(thread_call_t)`
+- `[PCIe:%u %llu ns] IOPCIDevice::%s: invalid index %llu for client %s\n`
+- `IOPCIMatch`
+- `[PCIe:%u %llu ns] %s checked link no device\n`
+- `#address-cells`
+- `[PCIe:%u %llu ns]   root port's expressMaxPayload 0x%x -> 0x%x\n`
+- `[PCIe:%u %llu ns] IOPCIConfigurator::waitForLinkUp waited for %llu ms for [i%x]%u:%u:%u(%u:%u) to link up\n`
+- `(short)`
+- `MRIOV`
+- `[PCIe:%u %llu ns] setTunnelL1Enable(0x%llx) %d->%d\n`
+- `IOPCIEventSource`
+- `display`
+- `[PCIe:%u %llu ns] iterate %s: start\n`
+- `[PCIe:%u %llu ns]   %s: shortage 0x%llx -> 0x%llx, 0x%llx\n`
+- `[PCIe:%u %llu ns] [%s()] nub %s msiEnable %u\n`
+- `pci-l1ss-override`
+- `SATAConfiguration`
+- `IOPCIExpressSlotCapabilities2`
+- `PoisonedTLP`
+- `site.IOAGPDevice`
+- `site.IOPCIConfigEntry`
+- `IOPMPCISleepLinkDisable`
+- `23:20:16`
+- `pci-splay-mask`
+- `[PCIe:%u %llu ns]   BUS: reserved(%sok) 0x%llx\n`
+- `IOPCIMSIMode`
+- `\n\n\nWARNING: pci=0x%x flags are deprecated. Use pci_log= and pci_log_mode= instead.\n\n\n`
+- `PCIXCapability`
+- `MSIXCapability`
+- `IOPCIDevice requestProbe failed insufficient privileges\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::%s:%s invalid bar index %u\n`
+- `[PCIe:%u %llu ns] %s: tunnels done\n`
+- `IOPCIExpressLinkCapabilities2`
+- `IOPCIMSIXMessageControl`
+- `l1ena`
+- `pciEventSource`
+- `\"!range\" @%s:%d`
+- `finalize`
+- `IOPCIResourced`
+- `[PCIe:%u %llu ns] %s: boot probe deferred\n`
+- `121111121222121211212212122222`
+- `[PCIe:%u %llu ns]   MEM: start/size   = 0x%08llx:0x%08llx,0x%08llx\n`
+- `[PCIe:%u %llu ns]   could not set CLS from %u to %u dwords\n`
+- `pci-mps-limit`
+- `2222222222211111`
+- `RCECEndpointAssociation`
+- `[PCIe:%u %llu ns] configOp:->probe: %s(0x%qx), 0x%x\n`
+- `pci pause: %s\n`
+- `%s(%s): thunderbolt power on failed 0x%08x\n`
+- `[PCIe:%u %llu ns] wake tunnel ASPM %s -> %d\n`
+- `[PCIe:%u %llu ns] %s: resetting probe timeout due to power state transition\n`
+- `IOPCIPMCSState`
+- `Oct 13 2026`
+- `ReadinessTimeReporting`
+- `22222222222122211121221111111111111111111111111111211221222112111221`
+- `pciclass,%06x`
+- `B`
+- `[PCIe:%u %llu ns]   Bridge Control    = 0x%04x\n`
+- `BUS`
+- `IOPCIHostBridgeData`
+- `bridge`
+- `IOPCITunnelled`
+- `sleep-power-state`
+- `pci64`
+- `AMD`
+- `[PCIe:%u %llu ns] %s::configHandler(kIOMessageDeviceHasPoweredOn) %lld ms\n`
+- `\"!IOPCIRangeListDeallocateSubRange busResv\" @%s:%d`
+- `SetDeviceInterrupts`
+- `[PCIe:%u %llu ns] %s::configHandler(kIOMessageDeviceHasPoweredOff) %lld ms\n`
+- `class-code`
+- `assigned-addresses`
+- `IOPCIDevicePublishRetryTimeout`
+- `__CopyDeviceMemory`
+- `[PCIe:%u %llu ns]   I/O: start/size   = 0x%08llx:0x%08llx,0x%08llx\n`
+- `AGPCapability`
+- `[PCIe:%u %llu ns] %s: queued on %s\n`
+- `cto_mem`
+- `wait-for-link-up`
+- `[PCIe:%u %llu ns] [%s()] Not resetting nub\n`
+- `[PCIe:%u %llu ns] %s Unable to flush device %u:%u:%u\n`
+- `handleClose`
+- `CAC`
+- `l1dis`
+- `[PCIe:%u %llu ns] [%s()] Bridge %u:%u:%u's children already enabled\n`
+- `PCIEventTest %s, 0x%08qx : 0x%08x 0x%08x, 0x%08x 0x%08x 0x%08x 0x%08x\n`
+- `site.IOPCIDeviceExpansionData`
+- `ethernet`
+- `b`
+- `[PCIe:%u %llu ns]   %s: maxAddr change 0x%llx -> 0x%llx (at [i%x]%u:%u:%u(0x%x:0x%x))\n`
+- `PrecisionTimeManagementCapability`
+- `IOPCIFPBCapabilities`
+- `IOPCILinkChange`
+- `resetDeviceGated`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead32: failed to get memory for index %u\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead8: index %u is not MMIO space\n`
+- `IOPCIExpressDeviceCapabilities`
+- `[PCIe:%u %llu ns] [%s()] Calculating common mode restore time for nub %u:%u:%u\n`
+- `un`
+- `[PCIe:%u %llu ns] The %s entitlements array has matched at index %d \n`
+- `ReceiverOverflow`
+- `[PCIe:%u %llu ns] IOPCIDevice::ClientCrashed_Impl() for client %s done\n`
+- `pci-generate-name`
+- `IOPCITraceEventBuffer.cpp`
+- `IOPCIAERCapabilities`
+- `\"IOMD::initWithOptions\" @%s:%d`
+- `[PCIe:%u %llu ns] %s: hotpInt (%d), fNeedProbe %d, slotStatus %x, linkStatus %x, linkControl %x\n`
+- `IOPCISlotDevicePresent`
+- `cto_cfg`
+- `[PCIe:%u %llu ns] [%s()] Invoking %s's crash notification\n`
+- `[PCIe:%u %llu ns] No symbol found for capability 0x%x\n`
+- `\"%s waitQuiet() timed out waiting for downstream devices to finish terminating\" @%s:%d`
+- `VendorSpecificCapability`
+- `IOServiceDEXTEntitlements`
+- `[PCIe:%u %llu ns] AER %scorrectable status 0x%08x sev 0x%08x TLP 0x%08x, 0x%08x, 0x%08x, 0x%08x\n`
+- `[PCIe:%u %llu ns] %s: start AER\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead8: index %u could not get mapping\n`
+- `[PCIe:%u %llu ns] %s: PCIDriverKit client, %s, crashed for device %s[%u:%u:%u], attempting to recover\n`
+- `\"!host bridge\" @%s:%d`
+- `compatible`
+- `[PCIe:%u %llu ns] configOp:<-probe: %s(0x%qx), pm %d\n`
+- `[PCIe:%u %llu ns] [%s()] Terminating children\n`
+- `[PCIe:%u %llu ns] bridge %p scan existing child at [i%x]%u:%u:%u(0x%x:0x%x) state 0x%x\n`
+- `allocate`
+- `[PCIe:%u %llu ns]   %s: 0x%llx: size change 0x%llx -> 0x%llx\n`
+- `IOPCIRange.cpp`
+- `\"e<\" @%s:%d`
+- `site.IOInterruptVector`
+- `powerAssertionTimeout`
+- `IOPCIDeviceMemoryMapSize`
+- `[PCIe:%u %llu ns] Matching nub %u:%u:%u\n`
+- `[PCIe:%u %llu ns] %s: resetting probe timeout due to ongoing enumeration activity\n`
+- `pcicmd: %s\n`
+- `[PCIe:%u %llu ns] [%s()] %u:%u:%u (%s) linkStatus = 0x%x\n`
+- `unknown client`
+- `[PCIe:%u %llu ns] MPS override for[i%x]%u:%u:%u(0x%x:0x%x) =  %u\n`
+- `12111112122212121112111111111121111221221222121`
+- `PL32GTs`
+- `IOPCIDeviceMemoryMapBase`
+- `[PCIe:%u %llu ns] %s: now present %d\n`
+- `[PCIe:%u %llu ns] %s(0x%qx) is not busy, checking power-plane\n`
+- `SurpriseDown`
+- `[PCIe:%u %llu ns] [ PCI configuration begin ]\n`
+- `npci`
+- `AccessControlServicesCapability`
+- `com.apple.developer.driverkit.transport.pci`
+- `[PCIe:%u %llu ns] %s: AdapterNotPresent -> AdapterHotAddPending\n`
+- `[PCIe:%u %llu ns] [%s()]::%s timeout\n`
+- `reg-ltrovr`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryWrite64: index %u could not get mapping\n`
+- `pci-msi-flags`
+- `\"!IOPCIConfigurator\" @%s:%d`
+- `GetMessagedInterruptController`
+- `[PCIe:%u %llu ns] configOp:->pause: %s(0x%qx)\n`
+- `[PCIe:%u %llu ns] [%s()] local: 0x%x, remote: 0x%x\n`
+- `IOPCIPTMCapabilities`
+- `[PCIe:%u %llu ns] %s[%p]::setPCIPowerState(ON) - did move PMCSR to 0x%x\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead64: index %u could not get mapping\n`
+- `[PCIe:%u %llu ns] %s reprobing bus\n`
+- `esg`
+- `[PCIe:%u %llu ns] [%s()] %u:%u:%u (%s) does not have an express capability\n`
+- `[PCIe:%u %llu ns] [ PCI configuration end, bridges %d, devices %d, changed %d, waiting %d ]\n`
+- `[PCIe:%u %llu ns] bridge [i%x]%u:%u:%u(0x%x:0x%x) ignore link status\n`
+- `!(eventData != nullptr && dataByteCount == 0)`
+- `IOPCIMessagedInterruptController`
+- `disableDeviceMSI`
+- `VC_MFVCPresent`
+- `[PCIe:%u %llu ns] %s[%p]::setDevicePowerState(%ld, %ld, %d)\n`
+- `[PCIe:%u %llu ns] %s::restore bus(0x%x->0x%x)\n`
+- `site.IOPCIEvent`
+- `[PCIe:%u %llu ns] Unexpected error: no offset found for capability 0x%x\n`
+- `pci-aspm-supported`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryWrite32: index %u could not get mapping\n`
+- `[PCIe:%u %llu ns] bridge [i%x]%u:%u:%u(0x%x:0x%x) %s linkStatus 0x%04x, linkCaps 0x%04x\n`
+- `pci-aer-control`
+- `site.IOPCIAERRoot`
+- `[PCIe:%u %llu ns] [IOPCIDevice::%s()] client %s (isOpen(forClient) == %u)\n`
+- `[PCIe:%u %llu ns] boot reset [i%x]%u:%u:%u(%u:%u)\n`
+- `[PCIe:%u %llu ns] alloc done (bridge [i%x]%u:%u:%u(%u:%u), state 0x%x, ok %d)\n`
+- `site.IOPCIRange`
+- `site.IOPCIHostBridge`
+- `DeviceSerialNumberCapability`
+- `virtual IOReturn IOPCIBridge::getNubResources(IOService *)`
+- `link speed %d\n`
+- `[PCIe:%u %llu ns] %s[%p]::hasPCIPwrMgmt found sleep-power-state string %p\n`
+- `ReplayTimerTimeout`
+- `ranges`
+- `[PCIe:%u %llu ns] bridge [i%x]%u:%u:%u(0x%x:0x%x) supportsHotPlug %d, linkInterrupts %d\n`
+- `\"Cannot allocate _powerChildrenLock\" @%s:%d`
+- `hot reset`
+- `[PCIe:%u %llu ns] [%s()] %u:%u:%u (%s) has linkStatus 0x%x\n`
+- `[PCIe:%u %llu ns] bridge [i%x]%u:%u:%u(%u:%u) marking child %p [i%x]%u:%u:%u(0x%x:0x%x) dead\n`
+- `[PCIe:%u %llu ns] bridge [i%x]%u:%u:%u(%u:%u) removing child %p [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] [%s()] child %s(0x%qx) published\n`
+- `[PCIe:%u %llu ns] unable to allocate entitlementSubArray`
+- `[PCIe:%u %llu ns]   %s: 0x%llx reserve 0x%llx, 0x%llx\n`
+- `V`
+- `[PCIe:%u %llu ns]   changed SEC-LT %u->%u PCI clocks\n`
+- `IOPolledInterfaceActive`
+- `[PCIe:%u %llu ns] %s: adjustPowerState(%ld)\n`
+- `[PCIe:%u %llu ns] [%s()] Resetting children\n`
+- `MCBlockedTLP`
+- `scsi`
+- `[PCIe:%u %llu ns] tunnel controller [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- ` `
+- `IOPCIHostBridge`
+- `FPBCapability`
+- `IOPCIExpressSlotCapabilities`
+- `[PCIe:%u %llu ns] [%s()] Bridge %u:%u:%u does not support warm reset\n`
+- `site.IOPCIHostBridgeData`
+- `r`
+- `I/O`
+- `!(eventData == nullptr && dataByteCount != 0)`
+- `pci-wake-l1pm-disable`
+- `powerStateDidChangeTo_block_invoke`
+- `[PCIe:%u %llu ns] kConfigOpUnpaused at [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[%s()] nub %s at %u:%u:%u has L1 errata\n`
+- `11111222222111111111111222222222221111122222221112`
+- `[PCIe:%u %llu ns]   I/O: base/limit   = 0x%04x\n`
+- `PowerManagementCapability`
+- `find`
+- `com.apple.developer.driverkit.builtin`
+- `[PCIe:%u %llu ns]   [0x%x %s] 0x%llx, read 0x%x\n`
+- `[PCIe:%u %llu ns]   BUS: prim/sec/sub = 0x%02x:0x%02x:0x%02x\n`
+- `IOPCITunnelL1Enable`
+- `[PCIe:%u %llu ns] nub %s@%u:%u:%u's thunderbolt port wasn't found after %u ms\n`
+- `IOPCISlotPowerController`
+- `TLPPrefixBlocked`
+- `[PCIe:%u %llu ns] added(%s) host bridge resource %s 0x%llx len 0x%llx\n`
+- `[PCIe:%u %llu ns] bridgeConstructDeviceTree at [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `config protect fail(1) for device [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `disablePowerAssertion`
+- `VirtualChannelCapability`
+- `pci-deferred-registration`
+- `pci-aer-correctable`
+- `cto`
+- `[PCIe:%u %llu ns] [%s()] Function %u:%u:%u does not support FLR\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::relocate at [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns]   %s:    free reloc 0x%llx:0x%llx (at [i%x]%u:%u:%u(0x%x:0x%x))\n`
+- `SRIOV`
+- `IOPCISlotCommandCompleted`
+- `CLx State`
+- `[PCIe:%u %llu ns] %s disabling memory%s for device %u:%u:%u\n`
+- ` %02x`
+- `\"IOPCIRangeCollapse\" @%s:%d`
+- `virtual IOReturn IOPCIHostBridgeData::powerStateDidChangeTo(IOPMPowerFlags, unsigned long, IOService *)`
+- `pci-workloop-timeout-ms`
+- `SFI`
+- `reset`
+- `D3Hot`
+- `BadTLP`
+- `[PCIe:%u %llu ns] kConfigOpTerminated at [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `pci-bridge`
+- `[PCIe:%u %llu ns] [%s()] child %s(0x%qx) (%u:%u:%u) published\n`
+- `MFVC`
+- `IOPCIEjectable`
+- `pci-dev-aspm-default`
+- `IOPP`
+- `Internal`
+- `(%u:%u)`
+- `A`
+- `_restoreDeviceState`
+- `[PCIe:%u %llu ns] %s: disabling link\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::%s:%s unable to access device memory\n`
+- `[PCIe:%u %llu ns] [%s()] Found a match with bridge [i%x]%u:%u:%u(%u:%u)\n`
+- `pci-msi-limit`
+- `pci-uncached-link-status`
+- `[PCIe:%u %llu ns] [%s()] nub %s is not powered, retrying matching in %ums\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::%s: device not open for client %s\n`
+- `[PCIe:%u %llu ns]   bridge BAR1: start/size   = 0x%08llx:0x%08llx,0x%08llx\n`
+- `M`
+- `[PCIe:%u %llu ns] Applying config (bm 0x%x, sm 0x%x) for device [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `\"sA\" @%s:%d`
+- `IOPCIMessagedInterruptController.cpp`
+- `IOPlatformDeviceASPMEnable`
+- `IOPCIPrimaryMatch`
+- `site.IOPCIDevice`
+- `[PCIe:%u %llu ns]   fpbCaps 0x%x, fpbUp %d, fpbDown %d subDevice %d\n`
+- `scan total`
+- `IOPCITraceEventBuffer::IOPCITraceEventBuffer()`
+- `ATS`
+- `SecureCapability`
+- `LNR`
+- `L1PMSubstatesCapability`
+- `[PCIe:%u %llu ns] saveDeviceState kill device %s\n`
+- `[%s()] bridge inactive while waiting for nubs to terminate`
+- `childPublished`
+- `%X,%X`
+- `IOPCI2PCIBridge`
+- `[PCIe:%u %llu ns] [%s()] Bridge %u:%u:%u's children already disabled\n`
+- `pci-skip-rematch-reset`
+- `[PCIe:%u %llu ns]   %s: total child reqs 0x%llx of 0x%llx maxalign 0x%llx\n`
+- `[PCIe:%u %llu ns]   %s:  free 0x%llx:0x%llx\n`
+- `[PCIe:%u %llu ns]   Device Command = 0x%08x\n`
+- `12111112122212121111`
+- `ok`
+- `\"tunnel\" @%s:%d`
+- `Tunnel Endpoint Device Model ID`
+- `\"bridgeMoveChildren\" @%s:%d`
+- `[PCIe:%u %llu ns]   [0x%x] can't probe\n`
+- `PMUX`
+- `NPEM`
+- `[PCIe:%u %llu ns] %s: slotControl 0x%x->0x%x\n`
+- ` and bus leading`
+- `Link Training bit didn't reach 0 within 1s.`
+- `IOPCIConfigurator.cpp`
+- `\"getVectorType: failed to cast vector %d's nub to IOPCIDevice\\n\" @%s:%d`
+- `IOPCIExpressRootCapabilities`
+- `IOPCITunnelRootDeviceModelID`
+- `[PCIe:%u %llu ns] %s: enable link bandwidth notifications\n`
+- `root`
+- `[PCIe:%u %llu ns] %s[%p]::setPCIPowerState(OFF) - did move PMCSR to D3\n`
+- `pci (build %s %s), flags 0x%x, log mode flags 0x%x, log flags 0x%x, log RCs 0x%x\n`
+- `IOPCIDeviceChanged`
+- `PowerBudgetCapability`
+- `site.IOPCI2PCIBridge`
+- `[PCIe:%u %llu ns] %s: link bandwidth notification, linkStatus: 0x%x\n`
+- `FlowControlProtocol`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead32: index %u could not get mapping\n`
+- `[PCIe:%u %llu ns] %s setting property %s to device %u:%u:%u\n`
+- `_ManageSession_Impl`
+- `IOPCIBridge`
+- `[PCIe:%u %llu ns] IOPCIBridgeVariables::finishMachineState(%d)\n`
+- `reg`
+- `calculateL1PMParameters`
+- `[PCIe:%u %llu ns] %s[%p]::powerStateWillChangeTo(OFF) - PMCS now is(0x%x)\n`
+- `IOAGPDevice`
+- `[PCIe:%u %llu ns]   PFM: start/size   = 0x%08llx:0x%08llx,0x%08llx\n`
+- `[PCIe:%u %llu ns] iterate %s: HUNG?\n`
+- `resetDevice`
+- `GetBARInfo_Impl`
+- `name`
+- `[PCIe:%u %llu ns] Found type %u device class-code 0x%06x cmd 0x%04x at [i%x]%u:%u:%u(0x%x:0x%x) [state 0x%x]\n`
+- `[PCIe:%u %llu ns] %sok allocated%s\n`
+- `[PCIe:%u %llu ns] Request pause (due to resource limit) for [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `\"s>\" @%s:%d`
+- `save device`
+- `%s: link-up poll timed out`
+- `IOPCIDevice`
+- `ReplayNumRollover`
+- `[PCIe:%u %llu ns]   OLD: prim/sec/sub = 0x%02x:0x%02x:0x%02x\n`
+- `\"!maxSize\" @%s:%d`
+- `12111112122212121111121`
+- `slotControlWrite`
+- `terminate-on-restore-failure`
+- `[PCIe:%u %llu ns] The %s entitlement is not a dictionary, this is intended for Apple internal use only\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead16: index %u is not MMIO space\n`
+- `resetFunction`
+- `[PCIe:%u %llu ns]   %s `
+- `Endpoint failed to respond successfully after spec mandated wait time\n`
+- `[PCIe:%u %llu ns] %s: AdapterHotRemovePending -> AdapterNotPresentPending\n`
+- `es`
+- `[PCIe:%u %llu ns] Comparing address %lx to range [%lx,%lx]\n`
+- `IOPCIRetrainLinkMask`
+- `a`
+- `[PCIe:%u %llu ns] payload set 0x%08x -> 0x%08x (at [i%x]%u:%u:%u(0x%x:0x%x)), maxPayload 0x%x\n`
+- `dataByteCount <= MAX_EVENT_DATA_SIZE`
+- `IOPCIExpressLinkStatus`
+- `[PCIe:%u %llu ns] Comparing plist value & mask (0x%x & 0x%x) vs. reg 0x%x value & mask (0x%x & 0x%x)\n`
+- `[PCIe:%u %llu ns] %s: Resolved interrupt %d (%d) for %s\n`
+- `republishTimerHandler`
+- `pci-ignore-linkstatus`
+- `reset `
+- `getInterruptType: failed to cast nub to IOPCIDevice\n`
+- `IOPCIPowerOnProbe`
+- `[PCIe:%u %llu ns] [%s()] BAR%u (0x%x) does not match expected value (0x%x)\n`
+- `IOPCIUncorrectableError(%d%s%s)`
+- `nolink `
+- `[ PCI configuration begin ]\n`
+- `[PCIe:%u %llu ns]   changed CLS from %u to %u dwords\n`
+- `pci-dev-aspm-default=<vid:did>,<value>[;<vid:did>,<value>]`
+- `IOPCIExpressMaxLinkWidthOverride`
+- `retrieveVMLimits`
+- `[PCIe:%u %llu ns] %s: fPresence = %u, getBusyState() = %u, publish set count = %u, waiting pause set count = %u, paused set count = %u, system active = %u\n`
+- `attnButtonHandlerFinish`
+- `[PCIe:%u %llu ns] [%s()] Unexpected error: nub %s's pause thread is already pending execution\n`
+- `PRI`
+- `[PCIe:%u %llu ns] [%s()] waited for device %s(%u:%u:%u) for %qd ms (result: %s)\n`
+- `MSIFree`
+- `[PCIe:%u %llu ns] %s: %p %s %u:%u:%u (%s): now we have %d/%d children\n`
+- `SPCIe`
+- `[PCIe:%u %llu ns] configOp:<-probe: %s(0x%qx)\n`
+- `111111222`
+- `vendor-id`
+- `[PCIe:%u %llu ns] %s: AdapterHotAddPending -> AdapterPresent\n`
+- `[PCIe:%u %llu ns] %s: AdapterPresent -> AdapterHotRemovePending\n`
+- `pci-functions-dependent`
+- `acpi`
+- `CPCIHotswapCapability`
+- `[PCIe:%u %llu ns] [%s()] Performing %s on nub %s\n`
+- `MalformedTLP`
+- `Receiver`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryWrite16: index %u could not get mapping\n`
+- `[PCIe:%u %llu ns] scan %s[i%x]%u:%u:%u(%u:%u)\n`
+- `s`
+- `com.apple.pci.hostBridge.preventSleep`
+- `IOPCITunnelID`
+- `AF`
+- `LaneMarginingRx`
+- `[PCIe:%u %llu ns] %s::saveDeviceState(0x%x)\n`
+- `IOPCITunnelBootDefer`
+- `IOClass`
+- `psreset`
+- `IOPCIClassMatch`
+- `[PCIe:%u %llu ns] %s: @%lld -> present %d\n`
+- `IOPCIDeviceCrashResetType`
+- `[PCIe:%u %llu ns] [%s()] %s's crash notification returned %u\n`
+- `[PCIe:%u %llu ns] [%s()] Device %s is not powered, sleeping 100ms\n`
+- `Vector Count`
+- `IOReturn IOPCIHostBridgeData::removePCIEPowerChild(IOPowerConnection *)`
+- `i8@?0`
+- `IOPCITunnelControllerID`
+- `IOPCISecondaryMatch`
+- `[PCIe:%u %llu ns] %s[%p]::setPCIPowerState(ON) - PMCSR already at D0 (0x%x)\n`
+- `v`
+- `\"Cannot allocate _activePowerChildren\" @%s:%d`
+- `[PCIe:%u %llu ns] %s::protectDevice(%x, %x)\n`
+- `S`
+- `IOPMDeepIdleSupported`
+- `DebugPortCapability`
+- `[PCIe:%u %llu ns] %s: AdapterNotPresent -> AdapterPresent\n`
+- `[PCIe:%u %llu ns] %s: hotplug capable, keeping power state on to receive hotplug events\n`
+- `childClientCrashRecoveryGated`
+- `ECRC`
+- `void IOPCITraceEventBuffer::logPCITraceEvent(uint16_t, void *, size_t, bool)`
+- `IOPlatformDeviceRelocatedKey`
+- `pci`
+- `CPCIResourceControlCapability`
+- `%X`
+- `IODebugArguments`
+- `[PCIe:%u %llu ns] %s[%p] - enablePCIPwrMgmt - no sleep control bits - not enabling\n`
+- `[PCIe:%u %llu ns]   %s: optimize\n`
+- `[PCIe:%u %llu ns] config protect fail(1) for device [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] [%s()] Enabling the host bridge's PM assertion\n`
+- `RCLinkDeclaration`
+- `site.ExpansionData`
+- `Driver \"%s\" needs \"%s\" key in plist\n`
+- `[PCIe:%u %llu ns] [%s()] Done probing\n`
+- `[PCIe:%u %llu ns] %s(0x%qx) sleeping for %u ms\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead64: index %u is not MMIO space\n`
+- `boot reset`
+- `VFResizableBAR`
+- `\"end\" @%s:%d`
+- `%s(%u:%u:%u)(%u-%u)`
+- `IOReturn IOPCIBridge::childClientCrashRecoveryGated(IOPCIDevice *)`
+- `[PCIe:%u %llu ns] configOp:->deferredRequestPause: %s(0x%qx)\n`
+- `!`
+- `[PCIe:%u %llu ns]   %s: shrunk 0x%llx:0x%llx-0x%llx, 0x%llx,0x%llx\n`
+- `ResizableBAR`
+- `[PCIe:%u %llu ns] The %s entitlements property doesn't contain a matching entitlement\n`
+- `[PCIe:%u %llu ns] %s[%p] - enablePCIPwrMgmt, enabling\n`
+- `UnexpectedCompletion`
+- `kern_return_t IOPCIDevice::SetProperties_Impl(OSDictionary *)`
+- `%u:%u:%u`
+- `\"!IOPCIRangeListAllocateSubRange\" @%s:%d`
+- `[PCIe:%u %llu ns]   bridge BAR0: start/size   = 0x%08llx:0x%08llx,0x%08llx\n`
+- `\"%s(%s): thunderbolt power on failed 0x%08x\\n\" @%s:%d`
+- `[PCIe:%u %llu ns] %s: waking deps for %s\n`
+- `[PCIe:%u %llu ns] %s: @%lld link %x took %lld us link %x\n`
+- `ltr`
+- `setLatencyTolerance 0x%x\n`
+- `hasL1Errata`
+- `R`
+- `enableDeviceMSI`
+- `IOPCIConfigurator`
+- `IOPCIOnline`
+- `[PCIe:%u %llu ns] reloc at (%u:%u:%u:0x%x) 0x%qx, 0x%qx -> 0x%qx, 0x%qx\n`
+- `[PCIe:%u %llu ns] %s[%p]::powerStateWillChangeTo(ON) - ps %d lnk(0x%x) - PMCS(0x%x, 0x%x)\n`
+- `IOPCIDeviceDeviceTreeEntry`
+- `[PCIe:%u %llu ns]   BUS: start/size   = 0x%08llx:0x%08llx,0x%08llx\n`
+- `[PCIe:%u %llu ns]   FPB: control      = 0x%08x:0x%08x\n`
+- `pci_trace_event_buffer_size`
+- `DataLinkFeature`
+- `[PCIe:%u %llu ns] %s[%p]::setPCIPowerState(OFF) - writing 0x%x to PMCSR currently (0x%x)\n`
+- `[PCIe:%u %llu ns] Found PCI device for DT entry [%s] [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `MEM`
+- `_buffer`
+- `[PCIe:%u %llu ns] %s: %p %s: is not a PCIe device or bridge, so no monitoring is intended\n`
+- `[PCIe:%u %llu ns] [%s()] %s(%u:%u:%u): pci restore invalid deviceid 0x%08x\n`
+- `[PCIe:%u %llu ns] restoreTunnelState(%s, %d)\n`
+- `\"IOPCIDevice(%p) linked (linkFinish)\" @%s:%d`
+- `IOPCIPowerManagementCapabilities`
+- `IOPCIConfigured`
+- `BadDLLP`
+- `(shadowed)`
+- `pci-ep-max-read-request-size`
+- `[PCIe:%u %llu ns]   hit console\n`
+- `device`
+- `AlternativeRoutingID`
+- `capability`
+- `[PCIe:%u %llu ns] MRRS override = %u\n`
+- `\"IOPCIRangeListDeallocateSubRange\" @%s:%d`
+- `InterruptControllerName`
+- `restartPowerAssertionTimer_block_invoke`
+- `offset`
+- `kern_return_t IOPCIDevice::ClientCrashed_Impl(IOService *, uint64_t)`
+- `[PCIe:%u %llu ns] reported host bridge resource %s 0x%llx len 0x%llx\n`
+- `HeaderLogOverflow`
+- `terminate-on-crash`
+- `[PCIe:%u %llu ns] Checking device [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[IOPCIConfigurator::%s()] PCI configuration %s\n`
+- `ResolvePCIInterrupt`
+- `[PCIe:%u %llu ns] %s: pwr off\n`
+- `12`
+- `UnsupportedRequest`
+- `[PCIe:%u %llu ns] [%s()] Disabling the host bridge's PM assertion\n`
+- `Multicast`
+- `[PCIe:%u %llu ns] set tunnel ASPM %s -> %d\n`
+- `IOPCIExpressSlotStatus`
+- `IOPCIL1PMCapabilities`
+- `[PCIe:%u %llu ns] %s: enabling link\n`
+- `[PCIe:%u %llu ns] [%s()] %u:%u:%u (%s) is DSP: %u, DLLLA-reporting capable: %u\n`
+- `AdvisoryNonFatal`
+- `EnhancedAllocation`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead16: index %u could not get mapping\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::%s: no-user-memory-mapping property prevents copying device memory\n`
+- `[PCIe:%u %llu ns] Comparing address %lx to BAR%u\n`
+- `findEntryByAddress`
+- `pci%x,%x`
+- `[PCIe:%u %llu ns]   %s: 0x%llx:0x%llx,0x%llx-0x%llx,0x%llx:0x%llx (at [i%x]%u:%u:%u(0x%x:0x%x)) %s%s%s%s%s%s%c`
+- `Base Vector Number`
+- `site.IOPCIBridge`
+- `subsystem-vendor-id`
+- `PFM`
+- `[PCIe:%u %llu ns] %s%u:%u:%u::kernelRequestProbe(%x)\n`
+- `[PCIe:%u %llu ns] %s Terminating device %u:%u:%u's driver\n`
+- `\n        0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F`
+- `[PCIe:%u %llu ns] %s: tunnel sleep %d\n`
+- `IOChildIndex`
+- `[PCIe:%u %llu ns] [%s()] Clearing children in-reset\n`
+- `DataLinkProtocol`
+- `[PCIe:%u %llu ns]   expressMaxPayload Capability 0x%x\n`
+- `[PCIe:%u %llu ns] %s: tunnel stall(%d, %d)\n`
+- `domain-id`
+- `IOPCIHPType`
+- `HierarchyID`
+- `configOp`
+- `[PCIe:%u %llu ns] %s: AER root status %x\n`
+- `[PCIe:%u %llu ns] %s: sleeping with fNeedProbe\n`
+- `Malformed boot-arg, expected: %s\n`
+- `[PCIe:%u %llu ns] root id 0x%x, flags 0x%x\n`
+- `pci-mps-limit=<domain>,<value>[;<domain>,<value>]`
+- `PCIExpressCapability`
+- `IOPMResetPowerStateOnWake`
+- `IOPCITunnelLinkChange`
+- `numAllocations`
+- `222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `\"IOPCIEventSource cannot find bridge data.\" @%s:%d`
+- `21121111`
+- `FRSQueueing`
+- `site.IOPCIConfigShadow`
+- `[PCIe:%u %llu ns] [%s()] Removing slot power\n`
+- `1222`
+- `[PCIe:%u %llu ns] [%s()] Terminating service %s\n`
+- `getResources`
+- `serializeLinkStatus`
+- `[PCIe:%u %llu ns] short range: start/size   = 0x%08llx:0x%08llx,0x%08llx\n`
+- `ErrorReportingCapability`
+- `[PCIe:%u %llu ns] Looking up capability 0x%x\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead8: failed to get memory for index %u\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::%s: invalid index %u for client %s\n`
+- `[PCIe:%u %llu ns] iterate %s: end(%d)\n`
+- `[PCIe:%u %llu ns] Applying config for bridge [i%x]%u:%u:%u(%u:%u) (disabled %d)\n`
+- `IOReturn IOPCIHostBridgeData::addPCIEPowerChild(IOService *)`
+- `pci_log_mode`
+- `gen`
+- `Child %s cfg[0]: 0x%x\n`
+- `[PCIe:%u %llu ns] %s[%p]::setPCIPowerState(%d->%d,%d)\n`
+- `initiatePause`
+- `pci-aspm-default`
+- `[PCIe:%u %llu ns] %s: failed to get nub %s VM limits\n`
+- `[PCIe:%u %llu ns] %s`
+- `[PCIe:%u %llu ns] kConfigOpProtect at [i%x]%u:%u:%u(0x%x:0x%x) prot %x\n`
+- `#size-cells`
+- `[PCIe:%u %llu ns]   bad PCI header type 0x%x\n`
+- `\"setDevicePowerState\" @%s:%d`
+- `[PCIe:%u %llu ns] %s(%u:%u:%u): waiting %llu ms before first access\n`
+- `[PCIe:%u %llu ns] %s[%p]::powerStateWillChangeTo(OFF) - PMCS has PME set(0x%x) - CLEARING\n`
+- `[PCIe:%u %llu ns] [%s()] %u:%u:%u (%s) is accessible\n`
+- `pci-get-dart-error`
+- `\"!IOPCIRangeListDeallocateSubRange\" @%s:%d`
+- `[PCIe:%u %llu ns] %s::configHandler(kIOMessageDeviceWillPowerOff) %lld ms\n`
+- `Tunnel Endpoint Device Vendor ID`
+- `IOPCIACSCapabilities`
+- `cycle`
+- `[PCIe:%u %llu ns] [%s()] Marking children in-reset\n`
+- `local`
+- `[PCIe:%u %llu ns] deleted %p, bridges %d devices %d\n`
+- `[PCIe:%u %llu ns] Reserves on ([i%x]%u:%u:%u(0x%x:0x%x)) for ([i%x]%u:%u:%u(0x%x:0x%x)):\n`
+- `VSEC`
+- `TPHRequester`
+- `\"Host bridge config entry not found.\" @%s:%d`
+- `revision-id`
+- `\"did\" @%s:%d`
+- `[PCIe:%u %llu ns] waitQuiet() timed out after %llu seconds, attempting pause\n`
+- `RCInternalLinkCtrl`
+- `MPCIe`
+- `[PCIe:%u %llu ns] %s: Attn button pressed with state %u\n`
+- `[PCIe:%u %llu ns] [%s()] Done waiting for %u:%u:%u's busy count to go to zero\n`
+- `[PCIe:%u %llu ns] [%s()] Powering off child %s\n`
+- `%s : ints(%d) `
+- `isFunctionAccessible`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead32: index %u is not MMIO space\n`
+- `Thunderbolt Entry ID`
+- `_MemoryAccess_Impl`
+- `no-user-memory-mapping`
+- `[PCIe:%u %llu ns] [%s()] Found a match with [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns]   MEM: base/limit   = 0x%08x\n`
+- `[PCIe:%u %llu ns] Enabling bridge [i%x]%u:%u:%u(%u:%u)\n`
+- `\"%s:%u: REQUIRE failed: %s\" @%s:%d`
+- `[PCIe:%u %llu ns] configOp:->dead: %s(0x%qx), 0x%x\n`
+- `[PCIe:%u %llu ns] [%s()] Marking %s as needing hardware reset\n`
+- `%s child %s did not complete termination\n`
+- `Request pause to lower MPS on CIO80 host\n`
+- `IOPCIBridge.cpp`
+- `MSICapability`
+- `HotplugCapability`
+- `[PCIe:%u %llu ns] %s::configHandler(kIOMessageDeviceWillPowerOn) %lld ms\n`
+- `[PCIe:%u %llu ns] Limiting the root port's MPS to 0x%x\n`
+- `[ PCI configuration end, bridges %d, devices %d ]\n`
+- `[PCIe:%u %llu ns]   PFM: base/limit   = 0x%08x, 0x%08x, 0x%08x\n`
+- `PL16GTs`
+- `\"%s: pci restore invalid deviceid 0x%08lx\\n\" @%s:%d`
+- `slot-max-link-width`
+- `pci-max-latency`
+- `\n    %02X:`
+- `[PCIe:%u %llu ns] Device [i%x]%u:%u:%u(0x%x:0x%x) has root port [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] Probing type %u device class-code 0x%06x cmd 0x%04x at [i%x]%u:%u:%u(0x%x:0x%x) [state 0x%x]\n`
+- `pci_log`
+- `fail`
+- `IOPCIExpressCapabilities`
+- `[PCIe:%u %llu ns] %s: AdapterNotPresentPending -> AdapterNotPresent\n`
+- `config protect fail(2) for device %u:%u:%u\n`
+- `[PCIe:%u %llu ns] kConfigOpPaused%s at [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `(boot) `
+- `[PCIe:%u %llu ns] bridge [i%x]%u:%u:%u(%u:%u) child change\n`
+- `IOPlatformFreeDeviceResources`
+- `IODARTMapper`
+- `[PCIe:%u %llu ns] bridgeAllocateResources(bridge [i%x]%u:%u:%u(%u:%u), state 0x%x, type 0x%x)\n`
+- `[PCIe:%u %llu ns]   changed LT %u->%u PCI clocks\n`
+- `GetMessagedInterruptAddress`
+- `[PCIe:%u %llu ns] [%s()] Powering on child %s\n`
+- `\"IOPCIDevice(%p) linked\" @%s:%d`
+- `IOPCIDevice.cpp`
+- `[PCIe:%u %llu ns] IOPCIDevice::ClientCrashed_Impl() for client %s\n`
+- `m`
+- `\"s<\" @%s:%d`
+- `pci-device-hidden`
+- `LDTCapability`
+- `[PCIe:%u %llu ns] %s: pwr on\n`
+- `CompleterAbort`
+- `[PCIe:%u %llu ns] IOPCIDevice::%s:%s NULL config entry\n`
+- `[PCIe:%u %llu ns] shared [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] Warning: leaking device [i%x]%u:%u:%u(0x%x:0x%x)'s range #%d\n`
+- `\"!minSize\" @%s:%d`
+- `IOPCIExpressLinkCapabilities`
+- `[PCIe:%u %llu ns] unable to allocate entitlmentArray`
+- `IOPCIDeviceMapperPageSize`
+- `attnButtonTimer`
+- `[PCIe:%u %llu ns] [%s()] Requesting rescan of %u:%u:%u\n`
+- `[PCIe:%u %llu ns] %s[%p]::setPCIPowerState(ON) - moving PMCSR from 0x%x to D0\n`
+- `[PCIe:%u %llu ns] [%s()] nub %s did not power on, giving up matching\n`
+- `, `
+- `[PCIe:%u %llu ns] disable %s\n`
+- `pci-max-payload-size`
+- `IOPCIEndpointPrsnt`
+- `[PCIe:%u %llu ns]   exhausted\n`
+- `[PCIe:%u %llu ns]   Bridge Command    = 0x%08x\n`
+- `\"e>\" @%s:%d`
+- `[PCIe:%u %llu ns] [%s()] %s(%u:%u:%u): invalid deviceid 0x%08x (expected 0x%08x)\n`
+- `IOReturn IOPCIBridge::waitForTerminateThreadCall(thread_call_t)`
+- `\n`
+- `CompletionTimeout`
+- `ACSViolation`
+- `pcidebug`
+- `\"bridgeRemoveChild\" @%s:%d`
+- `[PCIe:%u %llu ns] [%s()] Using reset type 0x%x\n`
+- `[PCIe:%u %llu ns] [%s()] Restarting the host bridge's power assertion timeout\n`
+- `pci-dart-error-data`
+- `PCI-Thunderbolt`
+- `IOPCITunnelRootDeviceVendorID`
+- `IOPCIMSIMessageControl`
+- `pci-aer-uncorrectable-severity`
+- `IOPCITunnelCompatible`
+- `PASID`
+- `pci-l1ss-enable`
+- `CLx Enabled`
+- `void IOPCI2PCIBridge::handleInterrupt(IOInterruptEventSource *, int)`
+- `detectLinkPartner`
+- `121112111111121`
+- `FLR`
+- `[PCIe:%u %llu ns] [%s()] failed to create link status OSNumber for nub %s\n`
+- `[PCIe:%u %llu ns] Device %s not started, skipping probe\n`
+- `[PCIe:%u %llu ns] %s: AdapterHotRemovePending -> AdapterPresent\n`
+- `unknown`
+- `IOPCIRetrainLink`
+- `[PCIe:%u %llu ns]   expressCaps 0x%x, linkControl 0x%x, linkCaps 0x%x, slotCaps 0x%x\n`
+- `AlternateProtocol`
+- `[PCIe:%u %llu ns] restoreMachineState(%d)\n`
+- `%s waitQuiet() timed out waiting for downstream devices to finish terminating\n`
+- `[PCIe:%u %llu ns]   [0x%x %s] 0x%llx:0x%llx\n`
+- `[PCIe:%u %llu ns]   %s: new host req:\n`
+- `[PCIe:%u %llu ns] %s: %p %s: now we have %d/%d children\n`
+- `[PCIe:%u %llu ns] [%s()] device %s's PM assertion (%p) timeout fired\n`
+- `LatencyToleranceReportingCapability`
+- `DPC`
+- `[PCIe:%u %llu ns] %s(%u:%u:%u): pci restore no link\n`
+- `after restore`
+- `manual-enable-s2r-ep`
+- `[PCIe:%u %llu ns] %s[%p]::%s(0x%x, 0x%x)\n`
+- `IOPCIHotPlug`
+- `pci-l1pm-control`
+- `[PCIe:%u %llu ns] %s: DLLSC timer fired\n`
+- `pause`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead64: failed to get memory for index %u\n`
+- `Cannot override %s's MPS to %u which is higher than its MPS Capability %u\n`
+- `[PCIe:%u %llu ns] bus alloc done (bridge [i%x]%u:%u:%u(%u:%u), state 0x%x, ok %d)\n`
+- `[PCIe:%u %llu ns] bridgeTotalResources(bridge [i%x]%u:%u:%u(%u:%u), iter 0x%x, state 0x%x, type 0x%x)\n`
+- `\"Cannot allocate _powerChildren\" @%s:%d`
+- `SlotIDCapability`
+- `DPA`
+- `handleInterrupt`
+- `site.IOPCIConfigurator`
+- `configure`
+- `site.IOPCIMessagedInterruptController`
+- `121111121222121211112212`
+- `[PCIe:%u %llu ns] %s: %p %s -> state %lu: now we have %d/%d children\n`
+- `com.apple.developer.driverkit.transport.pci.bridge`
+- `Child %s mem[0]: 0x%x\n`
+- `[PCIe:%u %llu ns] host bridge acpi bus range 0x%llx len 0x%llx\n`
+- `[PCIe:%u %llu ns] [%s()] Adding %s (%u:%u:%u) to the publish set\n`
+- `IOPCIDeviceDeadOnRestore`
+- `[PCIe:%u %llu ns] AER source %d %d %d: find %x %p %s 0x%qx\n`
+- `manual-enable-s2r`
+- `1211111212221212111112112`
+- `_bufferLock`
+- `B16@?0^{OSObject=^^?i}8`
+- `subsystem-id`
+- `[PCIe:%u %llu ns] %s: Cancelling the DLLSC timeout\n`
+- `[PCIe:%u %llu ns] %s: AdapterHotAddPending -> AdapterNotPresent\n`
+- `[PCIe:%u %llu ns] %s[%p]::powerStateWillChangeTo(OFF) - PMCS has PME clear(0x%x) - not touching\n`
+- `[PCIe:%u %llu ns] NOT FOUND: PCI device for DT entry [%s] [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `IOPlatformDeviceMessage`
+- `pci_log_rc`
+- `before restore`
+- `12111112122212121111111111211222222222221`
+- `[PCIe:%u %llu ns] %s device power state is off\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead16: failed to get memory for index %u\n`
+- `[PCIe:%u %llu ns] bridge [i%x]%u:%u:%u(0x%x:0x%x) %s probe child ranges\n`
+- `Capability Offsets`
+- `IOReturn IOPCIBridge::waitForDeviceReady(IOPCIDevice *)`
+- `[PCIe:%u %llu ns] %s: link training complete, linkStatus: 0x%x\n`
+- `[PCIe:%u %llu ns] %s: tunnel wake %d\n`
+- `probeBusGated`
+- `[PCIe:%u %llu ns] [%s()]::%s success\n`
+- `[PCIe:%u %llu ns] [IOPCIDevice::%s()] disabling memory%s for client %s\n`
+- `[PCIe:%u %llu ns] bridge %p dead child at [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `PCIHotplugCapable`
+- `[PCIe:%u %llu ns] %s: start boot deferred\n`
+- `[PCIe:%u %llu ns] [%s()] Restoring MPS %u to child %s\n`
+- `unpause`
+
+**[__TEXT.__os_log]**
+
+- `[PCIe:%u %llu ns] %s: now present %d\n`
+- `[PCIe:%u %llu ns] bridgeConstructDeviceTree at [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] %s[%p]::setPCIPowerState(OFF) - did move PMCSR to D3\n`
+- `[PCIe:%u %llu ns] configOp:->deferredRequestPause: %s(0x%qx)\n`
+- `[PCIe:%u %llu ns]   bad PCI header type 0x%x\n`
+- `[PCIe:%u %llu ns] bus alloc done (bridge [i%x]%u:%u:%u(%u:%u), state 0x%x, ok %d)\n`
+- `[PCIe:%u %llu ns]   %s: maxAddr change 0x%llx -> 0x%llx (at [i%x]%u:%u:%u(0x%x:0x%x))\n`
+- `[PCIe:%u %llu ns] [%s()] device %s's PM assertion (%p) timeout fired\n`
+- `[PCIe:%u %llu ns] %s Terminating device %u:%u:%u's driver\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead16: failed to get memory for index %u\n`
+- `[PCIe:%u %llu ns] bridge [i%x]%u:%u:%u(0x%x:0x%x) %s linkStatus 0x%04x, linkCaps 0x%04x\n`
+- `[PCIe:%u %llu ns] payload set 0x%08x -> 0x%08x (at [i%x]%u:%u:%u(0x%x:0x%x)), maxPayload 0x%x\n`
+- `[PCIe:%u %llu ns] %s: Attn button pressed with state %u\n`
+- `[PCIe:%u %llu ns] [%s()] Powering on child %s\n`
+- `[PCIe:%u %llu ns] [%s()] local: 0x%x, remote: 0x%x\n`
+- `[PCIe:%u %llu ns] [%s()] Bridge %u:%u:%u does not support warm reset\n`
+- `[PCIe:%u %llu ns] %s[%p]::hasPCIPwrMgmt found sleep-power-state string %p\n`
+- `[PCIe:%u %llu ns] Checking device [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] kConfigOpProtect at [i%x]%u:%u:%u(0x%x:0x%x) prot %x\n`
+- `[PCIe:%u %llu ns]   bridge BAR1: start/size   = 0x%08llx:0x%08llx,0x%08llx\n`
+- `[PCIe:%u %llu ns]   I/O: start/size   = 0x%08llx:0x%08llx,0x%08llx\n`
+- `[PCIe:%u %llu ns]   Device Command = 0x%08x\n`
+- `[PCIe:%u %llu ns] %s: tunnel wake %d\n`
+- `[PCIe:%u %llu ns] %s(%u:%u:%u): pci restore no link\n`
+- `[PCIe:%u %llu ns] disable %s\n`
+- `[PCIe:%u %llu ns] unable to allocate entitlementSubArray`
+- `[PCIe:%u %llu ns] %s(0x%qx) power children set changed (%u->%u)\n`
+- `[PCIe:%u %llu ns]   [0x%x %s] 0x%llx:0x%llx\n`
+- `[PCIe:%u %llu ns] %sok allocated%s\n`
+- `[PCIe:%u %llu ns] %s%u:%u:%u::kernelRequestProbe(%x)\n`
+- `[PCIe:%u %llu ns] %s: AdapterHotAddPending -> AdapterPresent\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead64: failed to get memory for index %u\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::%s: device not open for client %s\n`
+- `[PCIe:%u %llu ns] The %s entitlements property is malformed\n`
+- `[PCIe:%u %llu ns]   expressCaps 0x%x, linkControl 0x%x, linkCaps 0x%x, slotCaps 0x%x\n`
+- `[PCIe:%u %llu ns]   changed SEC-LT %u->%u PCI clocks\n`
+- `[PCIe:%u %llu ns] %s::restore bus(0x%x->0x%x)\n`
+- `[PCIe:%u %llu ns] [%s()] Resetting children\n`
+- `[PCIe:%u %llu ns] bridgeTotalResources(bridge [i%x]%u:%u:%u(%u:%u), iter 0x%x, state 0x%x, type 0x%x)\n`
+- `[PCIe:%u %llu ns]   MEM: base/limit   = 0x%08x\n`
+- `[PCIe:%u %llu ns] setTunnelL1Enable(0x%llx) %d->%d\n`
+- `[PCIe:%u %llu ns] %s waiting for downstream devices to finish terminating\n`
+- `[PCIe:%u %llu ns] bridge %p dead child at [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] Endpoint failed to respond successfully after spec mandated wait time\n`
+- `[PCIe:%u %llu ns] boot reset [i%x]%u:%u:%u(%u:%u)\n`
+- `[PCIe:%u %llu ns] %s: tunnels done\n`
+- `[PCIe:%u %llu ns] %s: failed to get nub %s VM limits\n`
+- `[PCIe:%u %llu ns] Matching nub %u:%u:%u\n`
+- `[PCIe:%u %llu ns] [%s()] Done waiting for %u:%u:%u's busy count to go to zero\n`
+- `[PCIe:%u %llu ns] Unexpected error: no offset found for capability 0x%x\n`
+- `[PCIe:%u %llu ns] [%s()] failed to create link status OSNumber for nub %s\n`
+- `[PCIe:%u %llu ns] [IOPCIDevice::%s()] client %s (isOpen(forClient) == %u)\n`
+- `[PCIe:%u %llu ns] Warning: leaking device [i%x]%u:%u:%u(0x%x:0x%x)'s range #%d\n`
+- `[PCIe:%u %llu ns] [%s()] Adding %s (%u:%u:%u) to the publish set\n`
+- `[PCIe:%u %llu ns] %s: AdapterHotAddPending -> AdapterNotPresent\n`
+- `[PCIe:%u %llu ns] [%s()] Not resetting nub\n`
+- `[PCIe:%u %llu ns] [%s()] Bridge %u:%u:%u's children already disabled\n`
+- `[PCIe:%u %llu ns] [%s()] %u:%u:%u (%s) does not have an express capability\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead8: index %u is not MMIO space\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryWrite32: index %u could not get mapping\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::%s:%s invalid bar index %u\n`
+- `[PCIe:%u %llu ns] [%s()] nub %s@%u:%u:%u has link depth %u\n`
+- `[PCIe:%u %llu ns] %s device power state is off\n`
+- `[PCIe:%u %llu ns] %s: link bandwidth notification, linkStatus: 0x%x\n`
+- `[PCIe:%u %llu ns] %s: PCIDriverKit client, %s, crashed for device %s[%u:%u:%u], attempting to recover\n`
+- `[PCIe:%u %llu ns]   fpbCaps 0x%x, fpbUp %d, fpbDown %d subDevice %d\n`
+- `[PCIe:%u %llu ns] %s::configHandler(kIOMessageDeviceHasPoweredOn) %lld ms\n`
+- `[PCIe:%u %llu ns] %s disabling memory%s for device %u:%u:%u\n`
+- `[PCIe:%u %llu ns] [%s()] Disabling the host bridge's PM assertion\n`
+- `[PCIe:%u %llu ns] [%s()] Done probing\n`
+- `[PCIe:%u %llu ns] %s: link training complete, linkStatus: 0x%x\n`
+- `[PCIe:%u %llu ns] [%s()] Bridge %u:%u:%u's children already enabled\n`
+- `[PCIe:%u %llu ns]   [0x%x] can't probe\n`
+- `[PCIe:%u %llu ns] [%s()] %u:%u:%u (%s) linkStatus = 0x%x\n`
+- `[PCIe:%u %llu ns] AER %scorrectable status 0x%08x sev 0x%08x TLP 0x%08x, 0x%08x, 0x%08x, 0x%08x\n`
+- `[PCIe:%u %llu ns] %s no device\n`
+- `[PCIe:%u %llu ns] [%s()] Restoring MPS %u to child %s\n`
+- `[PCIe:%u %llu ns] [%s()] Terminating service %s\n`
+- `[PCIe:%u %llu ns] [%s()] Clearing children in-reset\n`
+- `[PCIe:%u %llu ns] [%s()] nub %s did not power on, giving up matching\n`
+- `[PCIe:%u %llu ns] bridge [i%x]%u:%u:%u(0x%x:0x%x) ignore link status\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead32: index %u is not MMIO space\n`
+- `[PCIe:%u %llu ns] kConfigOpUnpaused at [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] %s: AER root status %x\n`
+- `[PCIe:%u %llu ns] [%s()] Marking children in-reset\n`
+- `[PCIe:%u %llu ns] deleted %p, bridges %d devices %d\n`
+- `[PCIe:%u %llu ns]   %s: 0x%llx reserve 0x%llx, 0x%llx\n`
+- `[PCIe:%u %llu ns] bridge [i%x]%u:%u:%u(%u:%u) child change\n`
+- `[PCIe:%u %llu ns]   %s: total child reqs 0x%llx of 0x%llx maxalign 0x%llx\n`
+- `[PCIe:%u %llu ns] %s[%p]::powerStateWillChangeTo(ON) - ps %d lnk(0x%x) - PMCS(0x%x, 0x%x)\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::%s: no-user-memory-mapping property prevents copying device memory\n`
+- `[PCIe:%u %llu ns] [%s()] Found a match with bridge [i%x]%u:%u:%u(%u:%u)\n`
+- `[PCIe:%u %llu ns] configOp:<-probe: %s(0x%qx)\n`
+- `[PCIe:%u %llu ns] wake tunnel ASPM %s -> %d\n`
+- `[PCIe:%u %llu ns] %s: AdapterNotPresent -> AdapterPresent\n`
+- `[PCIe:%u %llu ns] %s Unable to flush device %u:%u:%u\n`
+- `[PCIe:%u %llu ns] configOp:->pause: %s(0x%qx)\n`
+- `[PCIe:%u %llu ns] %s: waking deps for %s\n`
+- `[PCIe:%u %llu ns] [%s()] Unexpected error: nub %s's pause thread is already pending execution\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryWrite64: index %u could not get mapping\n`
+- `[PCIe:%u %llu ns] nub %s@%u:%u:%u's thunderbolt port wasn't found after %u ms\n`
+- `[PCIe:%u %llu ns] [%s()] Using reset type 0x%x\n`
+- `[PCIe:%u %llu ns]   expressMaxPayload Capability 0x%x\n`
+- `[PCIe:%u %llu ns]   %s: new host req:\n`
+- `[PCIe:%u %llu ns] %s::configHandler(kIOMessageDeviceWillPowerOff) %lld ms\n`
+- `[PCIe:%u %llu ns] [%s()] %s(%u:%u:%u): pci restore invalid deviceid 0x%08x\n`
+- `[PCIe:%u %llu ns] %s: reset PCIPM\n`
+- `[PCIe:%u %llu ns] [%s()] Requesting rescan of %u:%u:%u\n`
+- `[PCIe:%u %llu ns] %s`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead64: index %u is not MMIO space\n`
+- `[PCIe:%u %llu ns]   Bridge Control    = 0x%04x\n`
+- `[PCIe:%u %llu ns] [%s()] Powering off child %s\n`
+- `[PCIe:%u %llu ns] %s[%p]::setPCIPowerState(ON) - did move PMCSR to 0x%x\n`
+- `[PCIe:%u %llu ns] The %s entitlements property doesn't contain a matching entitlement\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead8: index %u could not get mapping\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::%s: invalid index %u for client %s\n`
+- `[PCIe:%u %llu ns] added(%s) host bridge resource %s 0x%llx len 0x%llx\n`
+- `[PCIe:%u %llu ns] Found PCI device for DT entry [%s] [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] IOPCIBridgeVariables::finishMachineState(%d)\n`
+- `[PCIe:%u %llu ns] %s: @%lld link %x took %lld us link %x\n`
+- `[PCIe:%u %llu ns] %s: probe\n`
+- `[PCIe:%u %llu ns] %s: boot probe deferred\n`
+- `[PCIe:%u %llu ns] %s: PCIDriverKit client %s does not have open session with device %s[%u:%u:%u], skipping recovery\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::%s:%s unable to access device memory\n`
+- `[PCIe:%u %llu ns] [ PCI configuration end, bridges %d, devices %d, changed %d, waiting %d ]\n`
+- `[PCIe:%u %llu ns] bridgeAllocateResources(bridge [i%x]%u:%u:%u(%u:%u), state 0x%x, type 0x%x)\n`
+- `[PCIe:%u %llu ns] %s: %p %s %u:%u:%u (%s): now we have %d/%d children\n`
+- `[PCIe:%u %llu ns] [%s()] child %s(0x%qx) (%u:%u:%u) published\n`
+- `[PCIe:%u %llu ns] %s::configHandler(kIOMessageDeviceHasPoweredOff) %lld ms\n`
+- `[PCIe:%u %llu ns] %s: pwr on\n`
+- `[PCIe:%u %llu ns] %s[%p] - enablePCIPwrMgmt, enabling\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead8: failed to get memory for index %u\n`
+- `[PCIe:%u %llu ns] IOPCIConfigurator::waitForLinkUp waited for %llu ms for [i%x]%u:%u:%u(%u:%u) to link up\n`
+- `[PCIe:%u %llu ns]   Bridge Command    = 0x%08x\n`
+- `[PCIe:%u %llu ns] %s checked link no device\n`
+- `[PCIe:%u %llu ns] Looking up capability 0x%x\n`
+- `[PCIe:%u %llu ns] No symbol found for capability 0x%x\n`
+- `[PCIe:%u %llu ns] NOT FOUND: PCI device for DT entry [%s] [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] %s: tunnel sleep %d\n`
+- `[PCIe:%u %llu ns] MPS override for[i%x]%u:%u:%u(0x%x:0x%x) =  %u\n`
+- `[PCIe:%u %llu ns] bridge [i%x]%u:%u:%u(0x%x:0x%x) supportsHotPlug %d, linkInterrupts %d\n`
+- `[PCIe:%u %llu ns]   bridge BAR0: start/size   = 0x%08llx:0x%08llx,0x%08llx\n`
+- `[PCIe:%u %llu ns] device [i%x]%u:%u:%u(0x%x:0x%x) Max Read Request Size set to 0x%x\n`
+- `[PCIe:%u %llu ns] %s: start boot deferred\n`
+- `[PCIe:%u %llu ns] reloc at (%u:%u:%u:0x%x) 0x%qx, 0x%qx -> 0x%qx, 0x%qx\n`
+- `[PCIe:%u %llu ns] %s: disabling link\n`
+- `[PCIe:%u %llu ns] The %s entitlements array has matched at index %d \n`
+- `[PCIe:%u %llu ns] [%s()] resetting nub %s's software state\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead16: index %u is not MMIO space\n`
+- `[PCIe:%u %llu ns] iterate %s: start\n`
+- `[PCIe:%u %llu ns] %s[%p]::setDevicePowerState(%ld, %ld, %d)\n`
+- `[PCIe:%u %llu ns] %s: resetting probe timeout due to power state transition\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryWrite16: index %u could not get mapping\n`
+- `[PCIe:%u %llu ns]   %s:    free reloc 0x%llx:0x%llx (at [i%x]%u:%u:%u(0x%x:0x%x))\n`
+- `[PCIe:%u %llu ns] %s: AdapterNotPresent -> AdapterHotAddPending\n`
+- `[PCIe:%u %llu ns] %s: Resolved interrupt %d (%d) for %s\n`
+- `[PCIe:%u %llu ns] [%s()] %u:%u:%u (%s) is accessible\n`
+- `[PCIe:%u %llu ns]   %s: shortage 0x%llx -> 0x%llx, 0x%llx\n`
+- `[PCIe:%u %llu ns] %s: AdapterPresent -> AdapterHotRemovePending\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead32: index %u could not get mapping\n`
+- `[PCIe:%u %llu ns] %s setting property %s to device %u:%u:%u\n`
+- `[PCIe:%u %llu ns] [ PCI configuration begin ]\n`
+- `[PCIe:%u %llu ns]   PFM: start/size   = 0x%08llx:0x%08llx,0x%08llx\n`
+- `[PCIe:%u %llu ns] [%s()]::%s success\n`
+- `[PCIe:%u %llu ns] [%s()] %s's crash notification returned %u\n`
+- `[PCIe:%u %llu ns] %s: tunnel stall(%d, %d)\n`
+- `[PCIe:%u %llu ns] The %s entitlement is not a dictionary, this is intended for Apple internal use only\n`
+- `[PCIe:%u %llu ns] kConfigOpTerminated at [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns]   PFM: base/limit   = 0x%08x, 0x%08x, 0x%08x\n`
+- `[PCIe:%u %llu ns] %s: resetting probe timeout due to ongoing enumeration activity\n`
+- `[PCIe:%u %llu ns]   BUS: start/size   = 0x%08llx:0x%08llx,0x%08llx\n`
+- `[PCIe:%u %llu ns] %s: slotControl 0x%x->0x%x\n`
+- `[PCIe:%u %llu ns] kConfigOpPaused%s at [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] scan %s[i%x]%u:%u:%u(%u:%u)\n`
+- `[PCIe:%u %llu ns]   hit console\n`
+- `[PCIe:%u %llu ns]   FPB: control      = 0x%08x:0x%08x\n`
+- `[PCIe:%u %llu ns] saveDeviceState kill device %s\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryWrite8: index %u could not get mapping\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::ClientCrashed_Impl() for client %s\n`
+- `[PCIe:%u %llu ns] [%s()] Found a match with [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] Probing type %u device class-code 0x%06x cmd 0x%04x at [i%x]%u:%u:%u(0x%x:0x%x) [state 0x%x]\n`
+- `[PCIe:%u %llu ns] %s: %p %s: is not a PCIe device or bridge, so no monitoring is intended\n`
+- `[PCIe:%u %llu ns] %s: %p %s -> state %lu: now we have %d/%d children\n`
+- `[PCIe:%u %llu ns] unable to allocate entitlmentArray`
+- `[PCIe:%u %llu ns] %s: sleeping with fNeedProbe\n`
+- `[PCIe:%u %llu ns] %s[%p]::setPCIPowerState(%d->%d,%d)\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::relocate at [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] configOp:<-unpause: %s(0x%qx)\n`
+- `[PCIe:%u %llu ns] set tunnel ASPM %s -> %d\n`
+- `[PCIe:%u %llu ns] %s::protectDevice(%x, %x)\n`
+- `[PCIe:%u %llu ns] Comparing plist value & mask (0x%x & 0x%x) vs. reg 0x%x value & mask (0x%x & 0x%x)\n`
+- `[PCIe:%u %llu ns] Request pause (due to resource limit) for [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] %s: %p %s: now we have %d/%d children\n`
+- `[PCIe:%u %llu ns] [%s()]::%s timeout\n`
+- `[PCIe:%u %llu ns] Reserves on ([i%x]%u:%u:%u(0x%x:0x%x)) for ([i%x]%u:%u:%u(0x%x:0x%x)):\n`
+- `[PCIe:%u %llu ns]   %s:  free 0x%llx:0x%llx\n`
+- `[PCIe:%u %llu ns] waitQuiet() timed out after %llu seconds, attempting pause\n`
+- `[PCIe:%u %llu ns] [%s()] Device %s is not powered, sleeping 100ms\n`
+- `[PCIe:%u %llu ns]   root port's expressMaxPayload 0x%x -> 0x%x\n`
+- `[PCIe:%u %llu ns] short range: start/size   = 0x%08llx:0x%08llx,0x%08llx\n`
+- `[PCIe:%u %llu ns]   OLD: prim/sec/sub = 0x%02x:0x%02x:0x%02x\n`
+- `[PCIe:%u %llu ns] Enabling bridge [i%x]%u:%u:%u(%u:%u)\n`
+- `[PCIe:%u %llu ns] %s[%p]::powerStateWillChangeTo(OFF) - PMCS has PME set(0x%x) - CLEARING\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead64: index %u could not get mapping\n`
+- `[PCIe:%u %llu ns] Applying config (bm 0x%x, sm 0x%x) for device [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] offline\n`
+- `[PCIe:%u %llu ns] [%s()] Terminating children\n`
+- `[PCIe:%u %llu ns] [%s()] Marking %s as needing hardware reset\n`
+- `[PCIe:%u %llu ns] [%s()] Performing %s on nub %s\n`
+- `[PCIe:%u %llu ns] [%s()] %u:%u:%u (%s) has linkStatus 0x%x\n`
+- `[PCIe:%u %llu ns] bridge [i%x]%u:%u:%u(%u:%u) removing child %p [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] bridge %p scan existing child at [i%x]%u:%u:%u(0x%x:0x%x) state 0x%x\n`
+- `[PCIe:%u %llu ns] [%s()] Calculating common mode restore time for nub %u:%u:%u\n`
+- `[PCIe:%u %llu ns] %s: enabling link\n`
+- `[PCIe:%u %llu ns]   could not set CLS from %u to %u dwords\n`
+- `[PCIe:%u %llu ns] [%s()] child %s(0x%qx) published\n`
+- `[PCIe:%u %llu ns] configOp:->dead: %s(0x%qx), 0x%x\n`
+- `[PCIe:%u %llu ns] %s[%p]::powerStateWillChangeTo(OFF) - PMCS has PME clear(0x%x) - not touching\n`
+- `[PCIe:%u %llu ns] %s reprobing bus\n`
+- `[PCIe:%u %llu ns] [%s()] %s(%u:%u:%u): invalid deviceid 0x%08x (expected 0x%08x)\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::ClientCrashed_Impl() for client %s done\n`
+- `[PCIe:%u %llu ns]   BUS: reserved(%sok) 0x%llx\n`
+- `[PCIe:%u %llu ns]   BUS: prim/sec/sub = 0x%02x:0x%02x:0x%02x\n`
+- `[PCIe:%u %llu ns] [%s()] nub %s is not powered, retrying matching in %ums\n`
+- `[PCIe:%u %llu ns] %s: no child D3\n`
+- `[PCIe:%u %llu ns] [%s()] waited for device %s(%u:%u:%u) for %qd ms (result: %s)\n`
+- `[PCIe:%u %llu ns] bridge [i%x]%u:%u:%u(0x%x:0x%x) %s probe child ranges\n`
+- `[PCIe:%u %llu ns] Applying config for bridge [i%x]%u:%u:%u(%u:%u) (disabled %d)\n`
+- `[PCIe:%u %llu ns]   %s `
+- `[PCIe:%u %llu ns] [%s()] Enabling the host bridge's PM assertion\n`
+- `[PCIe:%u %llu ns] configOp:->probe: %s(0x%qx), 0x%x\n`
+- `[PCIe:%u %llu ns] %s: DLLSC timer fired\n`
+- `[PCIe:%u %llu ns] %s: start AER\n`
+- `[PCIe:%u %llu ns] %s: enable link bandwidth notifications\n`
+- `[PCIe:%u %llu ns] %s[%p]::setPCIPowerState(ON) - moving PMCSR from 0x%x to D0\n`
+- `[PCIe:%u %llu ns]   MEM: start/size   = 0x%08llx:0x%08llx,0x%08llx\n`
+- `[PCIe:%u %llu ns] %s(0x%qx) sleeping for %u ms\n`
+- `[PCIe:%u %llu ns] [%s()] BAR%u (0x%x) does not match expected value (0x%x)\n`
+- `[PCIe:%u %llu ns] %s: queued on %s\n`
+- `[PCIe:%u %llu ns] %s: hotpInt (%d), fNeedProbe %d, slotStatus %x, linkStatus %x, linkControl %x\n`
+- `[PCIe:%u %llu ns] %s: AdapterNotPresentPending -> AdapterNotPresent\n`
+- `[PCIe:%u %llu ns] iterate %s: HUNG?\n`
+- `[PCIe:%u %llu ns] [%s()] Invoking %s's crash notification\n`
+- `[PCIe:%u %llu ns] [IOPCIDevice::%s()] disabling memory%s for client %s\n`
+- `[PCIe:%u %llu ns] root id 0x%x, flags 0x%x\n`
+- `[PCIe:%u %llu ns] bridge [i%x]%u:%u:%u(%u:%u) marking child %p [i%x]%u:%u:%u(0x%x:0x%x) dead\n`
+- `[PCIe:%u %llu ns] [%s()] Removing slot power\n`
+- `[PCIe:%u %llu ns] %s[%p]::%s(0x%x, 0x%x)\n`
+- `[PCIe:%u %llu ns]   [0x%x %s] 0x%llx, read 0x%x\n`
+- `[PCIe:%u %llu ns]   I/O: base/limit   = 0x%04x\n`
+- `[PCIe:%u %llu ns] %s: AdapterHotRemovePending -> AdapterPresent\n`
+- `[PCIe:%u %llu ns] %s: AdapterHotRemovePending -> AdapterNotPresentPending\n`
+- `[PCIe:%u %llu ns] [%s()] nub %s msiEnable %u\n`
+- `[PCIe:%u %llu ns] configOp:<-probe: %s(0x%qx), pm %d\n`
+- `[PCIe:%u %llu ns] %s: Cancelling the DLLSC timeout\n`
+- `[PCIe:%u %llu ns] %s[%p]::setPCIPowerState(ON) - PMCSR already at D0 (0x%x)\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::%s:%s NULL config entry\n`
+- `[PCIe:%u %llu ns] tunnel controller [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns]   %s: optimize\n`
+- `[PCIe:%u %llu ns]   %s: shrunk 0x%llx:0x%llx-0x%llx, 0x%llx,0x%llx\n`
+- `[PCIe:%u %llu ns]   changed CLS from %u to %u dwords\n`
+- `[PCIe:%u %llu ns] %s: adjustPowerState(%ld)\n`
+- `[PCIe:%u %llu ns] Comparing address %lx to BAR%u\n`
+- `[PCIe:%u %llu ns] Found type %u device class-code 0x%06x cmd 0x%04x at [i%x]%u:%u:%u(0x%x:0x%x) [state 0x%x]\n`
+- `[PCIe:%u %llu ns] Device %s not started, skipping probe\n`
+- `[PCIe:%u %llu ns] reported host bridge resource %s 0x%llx len 0x%llx\n`
+- `[PCIe:%u %llu ns] restoreMachineState(%d)\n`
+- `[PCIe:%u %llu ns] %s[%p]::powerStateWillChangeTo(OFF) - PMCS now is(0x%x)\n`
+- `[PCIe:%u %llu ns] MRRS override = %u\n`
+- `[PCIe:%u %llu ns] bridge %p dead child at [i%x]%u:%u:%u(0x%x:0x%x) never entered service plane\n`
+- `[PCIe:%u %llu ns]   %s: 0x%llx:0x%llx,0x%llx-0x%llx,0x%llx:0x%llx (at [i%x]%u:%u:%u(0x%x:0x%x)) %s%s%s%s%s%s%c`
+- `[PCIe:%u %llu ns]   %s: 0x%llx: size change 0x%llx -> 0x%llx\n`
+- `[PCIe:%u %llu ns] %s::configHandler(kIOMessageDeviceWillPowerOn) %lld ms\n`
+- `[PCIe:%u %llu ns] %s(0x%qx) is not busy, checking power-plane\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::%s: invalid index %llu for client %s\n`
+- `[PCIe:%u %llu ns] config protect fail(1) for device [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] restoreTunnelState(%s, %d)\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead32: failed to get memory for index %u\n`
+- `[PCIe:%u %llu ns] iterate %s: end(%d)\n`
+- `[PCIe:%u %llu ns] %s: hotplug capable, keeping power state on to receive hotplug events\n`
+- `[PCIe:%u %llu ns] [%s()] %u:%u:%u (%s) is DSP: %u, DLLLA-reporting capable: %u\n`
+- `[PCIe:%u %llu ns] IOPCIDevice::deviceMemoryRead16: index %u could not get mapping\n`
+- `[PCIe:%u %llu ns] [%s()] Function %u:%u:%u does not support FLR\n`
+- `[PCIe:%u %llu ns] [ PCI configuration begin (scanning %u:%u:XX) ]\n`
+- `[PCIe:%u %llu ns] [%s()] Restarting the host bridge's power assertion timeout\n`
+- `[PCIe:%u %llu ns] %s(%u:%u:%u): waiting %llu ms before first access\n`
+- `[PCIe:%u %llu ns] Limiting the root port's MPS to 0x%x\n`
+- `[PCIe:%u %llu ns]   exhausted\n`
+- `[PCIe:%u %llu ns] AER source %d %d %d: find %x %p %s 0x%qx\n`
+- `[PCIe:%u %llu ns] Comparing address %lx to range [%lx,%lx]\n`
+- `[PCIe:%u %llu ns] host bridge acpi bus range 0x%llx len 0x%llx\n`
+- `[PCIe:%u %llu ns] shared [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] Device [i%x]%u:%u:%u(0x%x:0x%x) has root port [i%x]%u:%u:%u(0x%x:0x%x)\n`
+- `[PCIe:%u %llu ns] %s::saveDeviceState(0x%x)\n`
+- `[PCIe:%u %llu ns] %s: fPresence = %u, getBusyState() = %u, publish set count = %u, waiting pause set count = %u, paused set count = %u, system active = %u\n`
+- `[PCIe:%u %llu ns]   changed LT %u->%u PCI clocks\n`
+- `[PCIe:%u %llu ns] %s: pwr off\n`
+- `[PCIe:%u %llu ns] %s[%p]::setPCIPowerState(OFF) - writing 0x%x to PMCSR currently (0x%x)\n`
+- `[PCIe:%u %llu ns] %s[%p] - enablePCIPwrMgmt - no sleep control bits - not enabling\n`
+- `[PCIe:%u %llu ns] alloc done (bridge [i%x]%u:%u:%u(%u:%u), state 0x%x, ok %d)\n`
+- `[PCIe:%u %llu ns] %s: @%lld -> present %d\n`

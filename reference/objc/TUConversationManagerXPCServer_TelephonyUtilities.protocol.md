@@ -1,0 +1,87 @@
+# `TUConversationManagerXPCServer` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities`](../userland/System__Library__PrivateFrameworks__TelephonyUtilities.framework__TelephonyUtilities.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `TUConversationMediaControllerXPCServer`, `TUConversationMessagesGroupProviderXPCServer`
+- 0 instance variables, 0 properties, 77 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[TUConversationManagerXPCServer leaveConversationWithUUID:];
+-[TUConversationManagerXPCServer getInactiveLinkWithCompletionHandler:];
+-[TUConversationManagerXPCServer setLinkName:forConversationLink:completionHandler:];
+-[TUConversationManagerXPCServer setUsingAirplay:onActivitySession:onConversationWithUUID:];
+-[TUConversationManagerXPCServer setLocalParticipantAudioVideoMode:forConversationUUID:];
+-[TUConversationManagerXPCServer removeConversationNoticeWithUUID:];
+-[TUConversationManagerXPCServer markCollaborationWithIdentifierOpened:forConversationUUID:];
+-[TUConversationManagerXPCServer launchAppForInterpreterRequestForConversationUUID:bundleID:requestID:completionHandler:];
+-[TUConversationManagerXPCServer reportDualCaptureMetric:forConversationGroupUUID:];
+-[TUConversationManagerXPCServer getLatestRemoteScreenShareAttributesWithCompletionHandler:];
+-[TUConversationManagerXPCServer launchApplicationForActivitySessionUUID:authorizedExternally:forceBackground:completionHandler:];
+-[TUConversationManagerXPCServer updateExternalParticipants:];
+-[TUConversationManagerXPCServer startInterpreterRequestWithBundleID:conversationUUID:requestID:completionHandler:];
+-[TUConversationManagerXPCServer stopInterpreterRequestForConversationUUID:bundleID:requestID:completionHandler:];
+-[TUConversationManagerXPCServer setScreenEnabled:withScreenShareAttributes:forConversationWithUUID:];
+-[TUConversationManagerXPCServer addCollaborationDictionary:forConversationWithUUID:fromMe:];
+-[TUConversationManagerXPCServer setActivityAuthorization:forBundleIdentifier:];
+-[TUConversationManagerXPCServer linkSyncStateIncludeLinks:WithCompletion:];
+-[TUConversationManagerXPCServer renewLink:expirationDate:reason:completionHandler:];
+-[TUConversationManagerXPCServer activateConversationNoticeWithActionURL:bundleIdentifier:];
+-[TUConversationManagerXPCServer unregisterClient:];
+-[TUConversationManagerXPCServer activateLink:completionHandler:];
+-[TUConversationManagerXPCServer checkLinkValidity:completionHandler:];
+-[TUConversationManagerXPCServer addCollaborationIdentifier:collaborationURL:cloudKitAppBundleIDs:forConversationUUID:];
+-[TUConversationManagerXPCServer addDisclosedCollaborationInitiator:toConversationUUID:];
+-[TUConversationManagerXPCServer joinConversationWithRequest:];
+-[TUConversationManagerXPCServer getActiveLinksWithCreatedOnly:completionHandler:];
+-[TUConversationManagerXPCServer accessibilityLinkPseudonymsAmongPseudonyms:completionHandler:];
+-[TUConversationManagerXPCServer startTrackingCollaborationWithIdentifier:collaborationURL:cloudKitAppBundleIDs:forConversationUUID:completionHandler:];
+-[TUConversationManagerXPCServer setSharePlayHandedOff:onConversationWithUUID:];
+-[TUConversationManagerXPCServer setAutoSharePlayEnabled:];
+-[TUConversationManagerXPCServer prepareConversationWithUUID:withHandoffContext:];
+-[TUConversationManagerXPCServer refreshActiveConversations];
+-[TUConversationManagerXPCServer setLocalMemberNickname:forConversationUUID:reason:];
+-[TUConversationManagerXPCServer generateLinkWithInvitedMemberHandles:linkLifetimeScope:completionHandler:];
+-[TUConversationManagerXPCServer registerMessagesGroupUUIDForConversationUUID:];
+-[TUConversationManagerXPCServer updateLocalParticipantToAVLessWithPresentationMode:forConversationUUID:];
+-[TUConversationManagerXPCServer addInvitedMemberHandles:toConversationLink:completionHandler:];
+-[TUConversationManagerXPCServer invalidateLink:deleteReason:completionHandler:];
+-[TUConversationManagerXPCServer getNeedsDisclosureOfCollaborationInitiator:forConversationUUID:completionHandler:];
+-[TUConversationManagerXPCServer removeCollaborationIdentifier:forConversationUUID:];
+-[TUConversationManagerXPCServer fetchUpcomingNoticeWithCompletionHandler:];
+-[TUConversationManagerXPCServer scheduleConversationLinkCheckInInitial:];
+-[TUConversationManagerXPCServer registerClient:];
+-[TUConversationManagerXPCServer activatedConversationLinks:];
+-[TUConversationManagerXPCServer activityAuthorizedBundleIdentifierState:];
+-[TUConversationManagerXPCServer addRemoteMembers:otherInvitedHandles:invitationPreferences:toConversationWithUUID:];
+-[TUConversationManagerXPCServer addScreenSharingType:forConversationUUID:];
+-[TUConversationManagerXPCServer addTestActiveQRParticipant:identifier:toConversationWithUUID:];
+-[TUConversationManagerXPCServer advertisementsOnSystem:];
+-[TUConversationManagerXPCServer approvePendingMember:forConversationUUID:];
+-[TUConversationManagerXPCServer buzzMember:destinationID:invitationContext:conversationUUID:];
+-[TUConversationManagerXPCServer cancelOrDenyScreenShareRequest:forConversationUUID:];
+-[TUConversationManagerXPCServer conversationsByGroupUUID:];
+-[TUConversationManagerXPCServer createActivitySession:onConversationWithUUID:options:];
+-[TUConversationManagerXPCServer endActivitySession:onConversationWithUUID:];
+-[TUConversationManagerXPCServer generateLinkForConversationUUID:completionHandler:];
+-[TUConversationManagerXPCServer getScreenSharingAvailableWithCompletionHandler:];
+-[TUConversationManagerXPCServer getSharePlayAvailableWithCompletionHandler:];
+-[TUConversationManagerXPCServer incomingPendingConversationsByGroupUUID:];
+-[TUConversationManagerXPCServer kickMember:conversationUUID:];
+-[TUConversationManagerXPCServer leaveActivitySession:onConversationWithUUID:];
+-[TUConversationManagerXPCServer presentDismissalAlertForActivitySessionWithUUID:onConversationWithUUID:];
+-[TUConversationManagerXPCServer pseudonymsByCallUUID:];
+-[TUConversationManagerXPCServer rejectPendingMember:forConversationUUID:];
+-[TUConversationManagerXPCServer requestParticipantToShareScreen:forConversationUUID:];
+-[TUConversationManagerXPCServer setDownlinkMuted:forParticipants:inConversationWithUUID:completionHandler:];
+-[TUConversationManagerXPCServer setDownlinkMuted:forRemoteParticipantsInConversationWithUUID:];
+-[TUConversationManagerXPCServer setGridDisplayMode:forConversationWithUUID:];
+-[TUConversationManagerXPCServer setIgnoreLetMeInRequests:forConversationUUID:];
+-[TUConversationManagerXPCServer setLocalParticipantCluster:forConversationUUID:];
+-[TUConversationManagerXPCServer setPresentationAspectRatioStyle:forConversationWithUUID:];
+-[TUConversationManagerXPCServer startAlignmentTimeOutForNearbyMembers:forConversationUUID:];
+-[TUConversationManagerXPCServer startAlignmentTimeOutForNearbySessionForConversationUUID:];
+-[TUConversationManagerXPCServer updateMessagesGroupName:onConversationWithUUID:];
+-[TUConversationManagerXPCServer updateMessagesGroupPhotoOnConversationWithUUID:];
+-[TUConversationManagerXPCServer updateRemoteControlStatus:onConversationWithUUID:];
+```

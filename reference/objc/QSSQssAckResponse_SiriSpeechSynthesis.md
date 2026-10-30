@@ -1,0 +1,26 @@
+# `QSSQssAckResponse`
+
+- Image: [`/System/Library/PrivateFrameworks/SiriSpeechSynthesis.framework/SiriSpeechSynthesis`](../userland/System__Library__PrivateFrameworks__SiriSpeechSynthesis.framework__SiriSpeechSynthesis.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `FLTBFBufferAccessor`, `NSCopying`
+- 3 instance variables, 0 properties, 7 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"NSMutableDictionary" _storage;
+@"NSData" _data;
+r^{QssAckResponse=[1C]} _root;
+```
+
+## Instance methods
+
+```
+-[QSSQssAckResponse copyWithZone:];
+-[QSSQssAckResponse addObjectToBuffer:];
+-[QSSQssAckResponse flatbuffData];
+-[QSSQssAckResponse initAndVerifyWithFlatbuffData:];
+-[QSSQssAckResponse initWithFlatbuffData:];
+-[QSSQssAckResponse initWithFlatbuffData:root:];
+-[QSSQssAckResponse initWithFlatbuffData:root:verify:];
+```

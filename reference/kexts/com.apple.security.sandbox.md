@@ -1,0 +1,1421 @@
+# `com.apple.security.sandbox`
+
+- Name: Seatbelt sandbox policy
+- Version: `300.0`
+- UUID: `FF71AF3A-6B49-39B3-A6A8-D713C1A457AE`
+- Source version: `3051.40.81.0.0`
+- Depends on: [`com.apple.driver.AppleMobileFileIntegrity`](com.apple.driver.AppleMobileFileIntegrity.md) 1.0.1, [`com.apple.iokit.CoreAnalyticsFamily`](com.apple.iokit.CoreAnalyticsFamily.md) 1.0, [`com.apple.kec.corecrypto`](com.apple.kec.corecrypto.md) 1.0, [`com.apple.kext.AppleMatch`](com.apple.kext.AppleMatch.md) 1.0d1, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 10.0.0d3, [`com.apple.kpi.dsep`](com.apple.kpi.dsep.md) 10.0.0d3, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 7.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 10.0.0d3, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 10.0.0d3, [`com.apple.kpi.private`](com.apple.kpi.private.md) 10.0.0d3, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 10.0.0d3
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (0) [KC]
+
+
+## C++ classes (0) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1480)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x001fae0a off=0x00ba7d20-0x00da2b2a addr=0xfffffe0007babd20-0xfffffe0007da6b2a r--/r--   __TEXT            
+	sz=0x00001d90 off=0x00ba8348-0x00baa0d8 addr=0xfffffe0007bac348-0xfffffe0007bae0d8               __TEXT.__os_log           
+	sz=0x001f1b29 off=0x00baa0e0-0x00d9bc09 addr=0xfffffe0007bae0e0-0xfffffe0007d9fc09               __TEXT.__const            
+	sz=0x00006f21 off=0x00d9bc09-0x00da2b2a addr=0xfffffe0007d9fc09-0xfffffe0007da6b2a               __TEXT.__cstring          (CstringLiterals)
+001: LC_SEGMENT_64 sz=0x000392b4 off=0x03953e20-0x0398d0d4 addr=0xfffffe000a957e20-0xfffffe000a9910d4 r-x/r-x   __TEXT_EXEC       
+	sz=0x00038234 off=0x03953e20-0x0398c054 addr=0xfffffe000a957e20-0xfffffe000a990054          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00001080 off=0x0398c054-0x0398d0d4 addr=0xfffffe000a990054-0xfffffe000a9910d4          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00004000 off=0x04a202e0-0x04a242e0 addr=0xfffffe000ba242e0-0xfffffe000ba3981c rw-/rw-   __DATA            
+	sz=0x00000220 off=0x04a202e0-0x04a20500 addr=0xfffffe000ba242e0-0xfffffe000ba24500               __DATA.__data             
+	sz=0x0001531c off=0x00000000-0x0001531c addr=0xfffffe000ba24500-0xfffffe000ba3981c               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00005378 off=0x01498d58-0x0149e0d0 addr=0xfffffe000849cd58-0xfffffe00084a20d0 rw-/rw-   __DATA_CONST      
+	sz=0x00003928 off=0x01498d58-0x0149c680 addr=0xfffffe000849cd58-0xfffffe00084a0680         __DATA_CONST.__const            
+	sz=0x00000c00 off=0x0149c680-0x0149d280 addr=0xfffffe00084a0680-0xfffffe00084a1280         __DATA_CONST.__kalloc_type      
+	sz=0x00000550 off=0x0149d280-0x0149d7d0 addr=0xfffffe00084a1280-0xfffffe00084a17d0         __DATA_CONST.__kalloc_var       
+	sz=0x00000840 off=0x0149d7d0-0x0149e010 addr=0xfffffe00084a17d0-0xfffffe00084a2010         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000c0 off=0x0149e010-0x0149e0d0 addr=0xfffffe00084a2010-0xfffffe00084a20d0         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 552 at 0x04afd894
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     FF71AF3A-6B49-39B3-A6A8-D713C1A457AE
+008: LC_SOURCE_VERSION           3051.40.81.0.0
+009: LC_FUNCTION_STARTS          offset=0x004acc478 size=0x478
+```
+
+## Info.plist keys [KC]
+
+- `AppleSecurityExtension`: `True`
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `Sandbox`
+- `CFBundleIdentifier`: `com.apple.security.sandbox`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `Seatbelt sandbox policy`
+- `CFBundleNumericVersion`: `0`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `300.0`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `300.0`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2006-2010 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.0d1`
+- `OSBundleRequired`: `Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/Sandbox.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198893576928`
+- `_PrelinkExecutableRelativePath`: `Sandbox`
+- `_PrelinkExecutableSize`: `2419058`
+- `_PrelinkExecutableSourceAddr`: `-2198893576928`
+- `_PrelinkKmodInfo`: `-2198828072224`
+
+## Strings (1310) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__os_log]**
+
+- `invalid sandbox profile for pid %d (%s)`
+- `sandbox profile invalid: base profile \"%s\" not found`
+- `value #%u for entitlement %s is type %s, expected string`
+- `%s called`
+- `ustate: attempt to remove %s from NULL container map.`
+- `virtual machine detected`
+- `failed to allocate IOKit matching dictionary for %s`
+- `failed to convert data vault on %s: %s: %d`
+- `failed to create storage class %s of type %u: %u`
+- `failed to lookup %s: %d`
+- `unregistered disk image backing store for %s`
+- `%s[%d] ==> %s`
+- `ustate(%u): no user state`
+- `ustate(%u): invalid path type(%d) when setting a system group container path for '%s'`
+- `ustate(%u): attempted to save ustate w/o home directory`
+- `sandbox profile invalid: base profile \"%s\" not found for \"%s\"`
+- `failed to persist sync root index`
+- `%s failed for %s[%u]: %u`
+- `failed to populate syscall masks for \"%s\": %d`
+- `%s: plist isn't a dictionary`
+- `%s: failed to add task: %s`
+- `%s: overflow`
+- `Sandbox apply: %s[%d] %s`
+- `%s: unknown storage class group %llu`
+- `ustate(%u): invalid uid for setting system group container: %s => %s`
+- `PrivateCloudOS detected`
+- `sandbox profile invalid: %s depends on itself by way of %s`
+- `variable name not terminated`
+- `%s: canonical check failed for %s`
+- `ustate: failed to create key(%d)/value(%d) for %s`
+- `failed to open %s: %d`
+- `%s size %lld exceeds maximum (%zu)`
+- `successfully truncated %s to %llu bytes`
+- `failed: vm_deallocate(%p, %zu)`
+- `failed to allocate memory for operation summary`
+- `%s invalid: requires %u state flags, max is %zu`
+- `Sandbox: container_inspect_for_proc(): no user state for pid: %d.`
+- `Sandbox: no system container path found for ID \"%s\"`
+- `\"%s (%s)\" potentially leaks extensions for \"%s\"`
+- `Sandbox -- syscall_container_map when removing a container: no ustate for UID %d`
+- `Sandbox: issue_extension_for_absolute_path(): could not get home directory for front uid: %d`
+- `%s: duplicate mfop=%s`
+- `killing %d: %s`
+- `%s[%d] revoked access to %s`
+- `Sandbox: %s is using absolute path exception entitlement: mapping path %s (%lu) to %s (%lu).`
+- `identified %s (0x%x) as removable`
+- `%s: sbuf range error`
+- `%s invalid: operation count mismatch (%u vs %u)`
+- `sandbox profile invalid: not allowed to extend profile \"%s\"`
+- `sync root flag on unexpected vnode type %u for path %s`
+- `Sandbox failed to revoke host port (%d) for pid %d`
+- `%s`
+- `Sandbox: hook..execve() killing %s[pid=%d, uid=%d]: %s`
+- `sandbox profile invalid: %s depends on itself`
+- `bad variable name size`
+- `registered sync root for %s`
+- `Sandbox: no system group container path found for group \"%s\"`
+- `Sandbox: hook..execve() killing %s[pid=%d, uid=%d]: (err=%d) %s`
+- `ustate(%u): invalid uid for setting system container: %s => %s`
+- `release type: %s`
+- `sandbox profile invalid: requires %u profile flags, max is %zu`
+- `failed to register sync root for %s: %d`
+- `allocation size overflow; requested %zu bytes`
+- `failed to get role for %s: %d`
+- `failed to associate message filter %u: %d`
+- `failed to get executable path`
+- `ustate(%u): invalid path type(%d) when setting a group container path for %s`
+- `ustate(%u): invalid uid for invalidating system container %s`
+- `ignoring user-intent for non-visible storage class \"%s\"`
+- `failed to attach core analytics service`
+- `%s[%d]: renamex_np(RENAME_SWAP) denied: %d`
+- `failed to allocate %llu bytes`
+- `ustate: creation token is not zero: %u`
+- `%s failed: container already set for %s[%d]`
+- `%s invalid: requires %u profile flags, max is %zu`
+- `failed to parse %s header: %d`
+- `Sandbox: no user state for UID %d; cannot process entitlement: %s`
+- `storage class limit exceeded (%s)`
+- `%s set rootless flags on %s with flags=0x%lx`
+- `ustate(%u): need home(%p) and temp(%p)`
+- `failed to size %s`
+- `ustate: no ustate setting item type=%d`
+- `ustate(%u): failed creation`
+- `%s: allocation failed`
+- `Sandbox: issue_extension_for_absolute_path(): could not get ustate for front uid: %d`
+- `%s: sbuf overflow`
+- `Profile %s extends autobox but no autobox profile available for its executable`
+- `unregistered sync root for %s`
+- `failed to unregister sync root for %s: %d`
+- `%s: failed to derive path: %d`
+- `ustate: failed to allocate container_key for %s %u`
+- `string not NUL terminated at index %u of table at %zu`
+- `path %s should not be in sync root index, removing`
+- `%s: OSUnserializeXML(): %s`
+- `failed to truncate %s to %llu bytes: %d`
+- `ustate: already have existing ustate for uid=%u`
+- `failed to populate enabled profile flags for \"%s\": %d`
+- `failed to update sync root index for %s -> %s: %d`
+- `Applied builtin kext configuration.`
+- `userret(0x%llx): invoking callback; %u/%u remaining`
+- `ustate: invalidation token is not zero: %u`
+- `failed to populate syscall masks for profile: %d`
+- `registered disk image backing store for %s`
+- `ignoring request to send signal #%d: %s`
+- `hook..execve(): %s has an invalid %s entitlement.`
+- `ustate(%u): invalid uid for invalidating system group container %s`
+- `Sandbox: no signing id when issuing an extension for system container`
+- `ustate: attempt to set ustate for > 1 uids; current=%u <-> new=%u`
+- `failed to allocate syscall mask`
+- `failed to write %zu bytes to %s at offset %llu: %d`
+- `ustate(%u): adding to manager`
+- `%s invalid: wrong flags`
+- `ustate(%u): invalid path type(%d) setting a data container path for %s`
+- `failed to read %zu bytes from %s at offset %llu: %d`
+- `%s port mislabeled as %s (%s)`
+- `Sandbox -- syscall_container_map when setting a container mapping: no ustate for UID %d`
+- `expected %s entitlement value to be array, string, or boolean, instead got %s`
+- `%s: ignoring unknown io_filter_type=%u`
+- `%s[%d] is translated: cannot apply mach message filtering!`
+- `ustate(uid=%u): SB_USTATE_ITEM_PERSONA_ID=%d: invalid item(%d)`
+- `bad string size at index %u of table at %zu`
+- `variable name empty`
+- `failed to update sync root index for %s <-> %s: %d`
+- `Sandbox -- persona_id type mismatch`
+- `failed to register disk image backing store for %s: %d`
+- `ustate(%u): failed to unpack key with string value: %d`
+- `Sandbox: issue_extension_for_absolute_path(): memory allocation failure.`
+- `%s: rename target path %s unexpectedly exists as intermediate node; releasing subtree`
+- `failed to update disk image backing store index for %s -> %s: %d`
+- `failed to remove %s from disk image backing store index: %d`
+- `failed to get id for static storage class \"%s\": %d`
+- `ustate(%u): home directory specified without a temp directory`
+- `ustate(%u): invalid path type(%d) setting a system container path for %s`
+- `ustate: attempt to set %s for NULL container map`
+- `%s failed: %s[%d] not sandboxed`
+- `%s: called with unknown mfop=%s`
+- `failed to unregister disk image backing store for %s: %d`
+- `%s exhausted sandbox memory capacity; may be leaking extensions`
+- `failed to parse sync root index: %d`
+- `failed to remove %s from sync root index: %d`
+- `%s(0x%llx): %u/%u tasks scheduled`
+- `connection port not derived from service port for %s; rejecting`
+- `Sandbox: container_inspect_for_proc(): no signing identifier for pid: %d.`
+- `mask size (%zu) exceeds maximum (%zu)`
+- `ustate(%u): failed to create role account`
+- `ustate: no user state!`
+- `failed to update disk image backing store index for %s <-> %s: %d`
+- `identified %s (0x%x) as a disk image`
+- `ustate(%u): failed to create default front user`
+- `unsupported pattern variable \"%s\"`
+- `sandbox profile invalid: requires %u state flags, max is %zu`
+- `Sandbox: no application group container found for group \"%s\"`
+- `%s: evaluate returned error %d`
+- `userspace boot`
+
+**[__TEXT.__cstring]**
+
+- `mach_port_peek`
+- `mach_task_is_self`
+- `v32@?0r*8I16B20^B24`
+- `mach_memory_info_redacted`
+- `io_connect_map_memory_into_task`
+- `thread_convert_thread_state`
+- `user-preference-write`
+- `mach_port_get_refs`
+- `file-link`
+- `com.apple.private.sandbox.profile`
+- `.plugin`
+- `vm_wire`
+- `task_get_dyld_image_infos`
+- `site.typeof(**(&holder))`
+- `authorization-right-obtain`
+- ` %s `
+- `io_async_method_scalarI_structureO`
+- `mach_port_guard_with_flags`
+- `thread_get_state_to_user`
+- `\"invalid # of mach kobject routines from xnu\" @%s:%d`
+- `com.apple.private.security.mutable-state-flags`
+- `srealloc_data`
+- `ipc-posix-shm*`
+- `io_registry_entry_set_properties`
+- `io_connect_unmap_memory_from_task`
+- `mach-bootstrap`
+- `process-legacy-codesigning*`
+- `syscall*`
+- `system-suspend-resume`
+- `profile_retain_persistent`
+- `site.typeof(*esc)`
+- `vm_region_recurse_64`
+- `pathindex_rename`
+- `socket-option-set`
+- `Sandbox extension sentinel`
+- `com.apple.security.system-container`
+- `process-legacy-codesigning-status-set`
+- `/..`
+- `virtual_env_get_info`
+- `\"path length underflow\" @%s:%d`
+- `UNDAlertCompletedWithResult_rpc`
+- `com.apple.security.exception.iokit-user-client-class`
+- `root_translation_enabled`
+- `Physical Interconnect Location`
+- `com.apple.sandbox.reporting`
+- `site.typeof(*new_nodes)`
+- `sb`
+- `profile_retain_persistent_and_release_transient`
+- `/private/var/`
+- `Darwin`
+- `io_registry_entry_get_properties`
+- `{action=iI}16@?0^{profile=^vQ^{profile_state}^{profile}QQQQAISSSCCCCBBBB^{variable_info}^^{__matchExpr}****QQQ**^{collection}}8`
+- `lsopen`
+- `failed to set executable path`
+- `%s\n%s`
+- `/dev/ttys%03d`
+- `mach-task-special-port-get`
+- `host_get_exception_ports`
+- `vm_machine_attribute`
+- `21111121111111111111222222222133331333111111222222222222222`
+- `appleevent-send`
+- `pgrp`
+- `io_service_request_probe`
+- `io_service_add_notification_ool_64`
+- `io_device_tree_entry_exists_with_name`
+- `mach_vm_region_info_64`
+- `execve.c`
+- `mach_zone_get_btlog_records`
+- `site.typeof(*ex)`
+- `host_kernel_version`
+- `mach_memory_object_memory_entry_64`
+- `\"index overflow\" @%s:%d`
+- `file-mount`
+- `nvram-get`
+- `io_connect_set_notification_port`
+- `io_connect_set_properties`
+- `io_registry_entry_get_registry_entry_id`
+- `\"failed to initialize platform sandbox: %d\" @%s:%d`
+- `boot-arg-set`
+- `/Extensions`
+- `truncated`
+- `i24@?0r*8Q16`
+- `host_page_size`
+- `thread_info`
+- `com.apple.private.security.container-required`
+- `file-read-xattr`
+- `com.apple.security.exception.`
+- `site.struct pathindex_node`
+- `fs-quota*`
+- `com.apple.security.iokit-user-client-class`
+- `task_set_port_space`
+- `\"invalid # of syscalls from xnu\" @%s:%d`
+- `consume-extension`
+- `system-fcntl`
+- `checker not authorized`
+- `\"released collection's reference to profile\" @%s:%d`
+- `sentinel`
+- `mach_port_extract_right`
+- `B16@?0r^{pathmonitor_subscriber=^?^?^?^?^?^?}8`
+- `system-memorystatus-control`
+- `v24@?0^{proc=}8^B16`
+- `POSIX permissions prevent removal of xattr`
+- `application-identifier`
+- `autobox collection`
+- `pathmonitor_prepare_rename`
+- `file-unmount`
+- `token truncated at hmac`
+- `exception_raise_state`
+- `task_set_state`
+- `fs-snapshot-revert`
+- `process-fork`
+- ` value:\"%s\"`
+- `bad string address`
+- `mach_port_type`
+- `opendirectory-user-modify`
+- `sysctl-read`
+- `task_register_dyld_shared_cache_image_info`
+- `mach_voucher_extract_attr_content`
+- `site.typeof(**&devset->list)`
+- `1212121`
+- `exception-entitlement`
+- `container`
+- `/private/var/db/datadetectors`
+- `mach_zone_get_zlog_zones`
+- `task_generate_corpse`
+- `mach_vm_page_query`
+- `connection`
+- `forbidden-file-create-unsupported`
+- `file-search`
+- `host_processors`
+- `/private/var/tmp`
+- `Literals`
+- `\"invalid # of mach traps from xnu\" @%s:%d`
+- `system-debug`
+- `mach_port_deallocate`
+- `mach_port_move_member`
+- `bad regex index`
+- `Sandbox`
+- `/private/var/db/aonsensed`
+- ` ioctl-command:`
+- `mach_port_guard`
+- `\"failed to initialize autobox collection: %d\" @%s:%d`
+- `network-inbound`
+- `process-exec-interpreter`
+- `qtn-exec-no-quarantine`
+- `task_register_dyld_image_infos`
+- `task_set_exc_guard_behavior`
+- `mach_voucher_extract_attr_recipe`
+- `reference_add_locked`
+- `ipc-posix-sem-wait`
+- `\"profile mask count overflow\" @%s:%d`
+- `ipc*`
+- `mach-task-exception-port-set`
+- `sessions-extension`
+- `111`
+- `io_registry_entry_get_properties_bin`
+- `io_service_wait_quiet_with_options`
+- `\"index underflow\" @%s:%d`
+- `mach_port_request_notification`
+- `pid %d not found`
+- `\"invalid hex digit: %c\" @%s:%d`
+- `io_registry_iterator_enter_entry`
+- `\"profile state %p points back to %p instead of %p\" @%s:%d`
+- `<no error detail>`
+- `mach-task-special-port-set`
+- `process-legacy-codesigning-text-offset-get`
+- `system-kext-unload`
+- `mach_port_get_context_from_user`
+- `com.apple.private.security.revoke`
+- `file-clone`
+- `/private/var`
+- `process-info-listpids`
+- `%s(%d) %s`
+- `parse.h`
+- `com.apple.private.security.message-filter-manager`
+- `;%0*llx;%0*llx;%0*llx;%0*llx;%0*llx;%s`
+- `BSD Name`
+- `sandbox`
+- `process-info-dirtycontrol`
+- `mach_vm_inherit`
+- `i24@?0r^{profile=^vQ^{profile_state}^{profile}QQQQAISSSCCCCBBBB^{variable_info}^^{__matchExpr}****QQQ**^{collection}}8I16S20`
+- `quicklookd`
+- `io_registry_entry_get_name`
+- `io_object_get_retain_count`
+- `\"syscall mask mismatch: %s\" @%s:%d`
+- `builtin.c`
+- `kext_request`
+- `task_policy_set`
+- `\"%s: failed to allocating matching dict\" @%s:%d`
+- `io_connect_get_service`
+- `site.typeof(**(&new))`
+- `site.typeof(**&entries)`
+- `device*`
+- `children`
+- ` %s`
+- `violation`
+- `*:%d`
+- `site.typeof(**(&ec))`
+- `processor_set_tasks`
+- `platform`
+- `111221`
+- `ipc-posix-sem-open`
+- `process-iopolicy-get`
+- `only launchd is allowed to spawn untrusted binaries`
+- `\"platform sandbox invalid (%s)\" @%s:%d`
+- `thread_create_from_user`
+- `com.apple.rootless.restricted-block-devices`
+- `profile.c`
+- `unsupported type`
+- `pid version mismatch for pid %d (%d <> %lld)`
+- `failed to remove xattr`
+- `file-write-mode`
+- `process-legacy-codesigning-cdhash-get`
+- `process-legacy-codesigning-identity-get`
+- `syscall_sandbox_set_container`
+- `host_processor_sets`
+- `thread_abort`
+- `site.typeof(**(&pb))`
+- `\"attempt to free invalid port label\" @%s:%d`
+- `Protocol Characteristics`
+- `host_processor_info`
+- `io_connect_method`
+- `mach_vm_region_info`
+- `mach_vm_reallocate`
+- `mach_voucher_attr_command`
+- `<none>`
+- `\"delegation not supported for platform profile\" @%s:%d`
+- `platform-binary`
+- `/private/var/db/fud`
+- `Restore`
+- `io_connect_set_notification_port_64`
+- `ipc-sysv*`
+- `host_get_special_port`
+- `task_register_dyld_get_process_state`
+- `\"%s: mac_policy_register failed: %d\\n\" @%s:%d`
+- ` path:%s ioctl-command:`
+- `non-zero remaining flags`
+- `io_registry_entry_get_child_iterator`
+- `io_async_method_scalarI_scalarO`
+- `thread_set_exception_ports`
+- `IONameMatch`
+- `RoleValue`
+- `io_object_conforms_to`
+- `ANY_PATH_COMPONENT`
+- `out of memory`
+- `host_info`
+- `mach_port_assert_attributes`
+- `vm_region_recurse`
+- `BSD Names`
+- `iokit-open-user-client`
+- `failed to deconstruct path`
+- `task_info_from_user`
+- `task_test_sync_upcall`
+- `void iofilter_iokit_init(lck_grp_t *)`
+- `\"platform profile references state flags\" @%s:%d`
+- `pathmonitor_notify_rename`
+- `generic-issue-extension`
+- `%s`
+- `\"extension handle count overflow\" @%s:%d`
+- `io_registry_entry_in_plane`
+- `site.typeof(**(&pending))`
+- `coalition-info`
+- `mach_zone_info`
+- `io_service_match_property_table`
+- `Removable`
+- ` (xpc)`
+- `failed to copyin extension class`
+- `host_get_clock_service`
+- `\"failed to grow bsddev cache\" @%s:%d`
+- `\"unknown storage class type\" @%s:%d`
+- `getrdev`
+- `mach-priv-task-port`
+- `io_connect_map_memory`
+- `vm_read_list`
+- `mach-cross-domain-lookup`
+- `process-info-pidfileportinfo`
+- `bad integer object size`
+- `message_filter.c`
+- `container2`
+- `\"%s: underflow\" @%s:%d`
+- `CoreAnalyticsHub`
+- `processor_exit_from_user`
+- `mach_eventlink_associate`
+- `file-mount-update`
+- `file-revoke`
+- `file-write-setugid`
+- `user-preference-read`
+- `v16@?0r^{pathmonitor_subscriber=^?^?^?^?^?^?}8`
+- `darwin-notification-post`
+- `bad string size`
+- `invalid spawn attributes`
+- `none`
+- `#o%o`
+- `overflow`
+- `mach_vm_wire_external`
+- `nvram*`
+- `site.typeof(**(&esc))`
+- `task_resume`
+- `task_set_mach_voucher`
+- `thread_swap_mach_voucher`
+- `mach_vm_remap_external`
+- `mach_vm_purgable_control`
+- `site.typeof(*devset->list)`
+- `com.apple.private.sandbox.container-query.all-users`
+- `entitlements.cpp`
+- `io_service_add_notification_ool`
+- `mach_port_get_attributes_from_user`
+- `vm_inherit`
+- `service`
+- `bInterfaceClass`
+- `schedule_before_userret`
+- `IONVRAM-DELETEWRET-PROPERTY`
+- `com.apple.security.exception.mach-register.local-name`
+- `com.apple.security.exception.shared-preference.read-only`
+- `kern_return_t kmod_start(kmod_info_t *, void *)`
+- `nvram-delete`
+- `host_processor_set_priv`
+- `io_service_add_notification`
+- `io_service_acknowledge_notification`
+- `task_suspend`
+- `task_get_state`
+- `task_identity_token_get_task_port`
+- `com.apple.private.security.enable-state-flags`
+- `system-info`
+- ` remote:`
+- `%s\n`
+- `/private/var/db/eligibilityd`
+- `out-of-range address`
+- `thread_resume`
+- `_mach_make_memory_entry`
+- `mach-register`
+- `plugin`
+- `mach_port_construct`
+- `1111111111111111112222`
+- `\"builtin count overflow\" @%s:%d`
+- `mach_port_allocate_full`
+- `mach_port_destruct`
+- `mach_ports_lookup`
+- `kern.osreleasetype`
+- `\"%s: ref already held by process with uniqueid %llu\" @%s:%d`
+- `fs-snapshot-create`
+- `iokit-open*`
+- `system-reboot`
+- `keyboard`
+- `darwinos-security-environment`
+- `site.struct sandbox_state`
+- `com.apple.private.security.disk-image-authority`
+- `mach_port_dnrequest_info`
+- `AppleMobileFileIntegrity`
+- `task_map_corpse_info`
+- `vm_region`
+- `io_service_get_matching_services_ool`
+- `mach_vm_page_range_query`
+- `Seatbelt sandbox policy`
+- `forbidden-exec-sugid`
+- `allow`
+- `task_policy_get`
+- `vm_purgable_control`
+- `failed to apply mach trap mask`
+- `ipc-sysv-msg`
+- `quicklook-thumbnail`
+- `kextconfig_apply_xml`
+- `task_map_corpse_info_64`
+- `socket-option-get`
+- ` isp-command:-1 CISP_CMD_*:%u`
+- `host_statistics_from_user`
+- `io_registry_entry_get_properties_bin_buf`
+- `\"%s: allocation already tracked (%p)\" @%s:%d`
+- `process-legacy-codesigning-status*`
+- `;%s`
+- `io_connect_method_scalarI_scalarO`
+- `pseudo-tty`
+- `syncroot_init`
+- `site.struct sb_packbuff`
+- `(allow)`
+- `%s %s`
+- `vm_behavior_set`
+- `\"failed to initialize builtin collection: %d\" @%s:%d`
+- `site.struct sb_holder`
+- `mach-task*`
+- `managed-preference-read`
+- `UNDNotificationCreated_rpc`
+- `deviceset_enlarge_locked`
+- `file-read-metadata`
+- `vm_map_exec_lockdown`
+- `/.resolve/`
+- `/private/var/db/Sandbox`
+- `reference_remove_locked`
+- `\"%s: tracked deallocation caused sandbox size to underflow (%p)\" @%s:%d`
+- `vm_allocate_external`
+- `mach_make_memory_entry`
+- `file-map-executable`
+- `/private/var/db/mmaintenanced`
+- `sandbox_retain_persistent`
+- `syncroots.c`
+- `task_test_async_upcall_propagation`
+- `.dext`
+- `\"%s: resid (%d) > max_byte_count (%zu)\" @%s:%d`
+- `thread_suspend`
+- ` extension-class:%s`
+- ` parser-name:%s`
+- `site.typeof(**(&ex))`
+- `forbidden-release-protected-extension`
+- `mach_port_set_attributes`
+- `task_resume2`
+- `thread_adopt_exception_handler`
+- `vm_protect`
+- ` signum:`
+- `io_iterator_reset`
+- `sandbox.c`
+- `io_connect_method_structureI_structureO`
+- `mach_port_swap_guard`
+- `vm_read_overwrite`
+- `dynamic-code-generation`
+- `com.apple.security.exception.files.absolute-path.bind`
+- `network*`
+- `process-iopolicy*`
+- `syscall-mig`
+- `failed to set container`
+- `v16@?0r*8`
+- `io_service_add_notification_64`
+- `com.apple.security.exception.files.absolute-path.read-write`
+- `Exclude from data collection`
+- `task_set_special_port`
+- `site.typeof(**(&index))`
+- `process-info-pidinfo`
+- `system-package-check`
+- `12111`
+- `/.`
+- `\"unexpected destruction of builtin profile\" @%s:%d`
+- `mach_exception_raise_state`
+- `io_iterator_next`
+- `mach_memory_entry_ownership`
+- `site.typeof(*ancestors)`
+- `v24@?0^{OSObject=}8^B16`
+- `site.struct pending_update`
+- `v24@?0r^{OSObject=}8^B16`
+- `mach_memory_entry_get_page_counts`
+- `IOMatchCategory`
+- `com.apple.security.exception.files.absolute-path.connect`
+- `\"platform profile references profile flags\" @%s:%d`
+- `smalloc.c`
+- `device-camera`
+- `network-bind`
+- `message-filter`
+- `/private/var/db/com.apple.naturallanguaged`
+- `site.typeof(*ustate)`
+- `initAMFI`
+- `qtn-exec`
+- `path literal matching only supported for file extensions`
+- `site.struct userret_task_entry`
+- `host_set_atm_diagnostic_flag`
+- `io_service_match_property_table_ool`
+- `thread_policy`
+- `21`
+- `connection-port`
+- `mach*`
+- `system-set-time`
+- `copyout failed`
+- `hmac mismatch`
+- `site.typeof(**&userret_tasks)`
+- `vm_map_page_query`
+- `ANY_USER_HOME`
+- `mach_port_allocate_qos`
+- `mach_port_get_service_port_info`
+- `mach_vm_update_pointers_with_remote_tags`
+- `fs-quota-get`
+- `playground-devtools`
+- `\"initial data not in profile\" @%s:%d`
+- `/private/var/db/Sandbox/syncroots.v2`
+- `host_set_special_port`
+- `mach_port_names`
+- `mach_port_space_info_from_user`
+- `pathmonitor_prepare_unlink`
+- `\"%s: null sandbox pointer for tracked allocation (%p)\" @%s:%d`
+- `/private/var/installd`
+- `/private/var/db/gpsd`
+- `userret_task_list_enlarge`
+- `io_registry_iterator_exit_entry`
+- `mach_port_is_connection_for_service`
+- `%0llx`
+- `path not configured as static storage class`
+- `Physical Interconnect`
+- ` operation:%s`
+- `sandbox_decommit_capacity`
+- `io_registry_entry_get_property_bytes`
+- `<redacted>`
+- `io_service_get_matching_service_ool`
+- `task_unregister_dyld_image_infos`
+- `<bytes>`
+- `file_read`
+- `processor_assign`
+- `\"flag mask offset overflow\" @%s:%d`
+- `process-info-sandbox-container`
+- `system-automount`
+- `arcade_register_new_upcall`
+- `forbidden-rootless-xattr`
+- `7C436110-AB2A-4BBB-A880-FE41995C9F82:`
+- `device-microphone`
+- `file-lock`
+- `task_suspend2`
+- `task_inspect`
+- `authorize_extension_issue returned non-zero`
+- `\"in set count underflow\" @%s:%d`
+- `Prefixes`
+- `network-`
+- `site.struct bsddev_cache_entry`
+- `site.typeof(**(&new_node))`
+- `forbidden-protobox`
+- ` policy:%s `
+- `diskimage.c`
+- `process-info*`
+- `/private/var/db/knowledgegraphd`
+- `kern.hv_vmm_present`
+- `sandbox.sandboxes`
+- `B24@?0r^{OSSymbol=^^?ib14b18*{smrq_slink={?=^{smrq_slink}}}}8^{OSObject=^^?i}16`
+- `platform-application`
+- `bad regex size`
+- `host_create_mach_voucher`
+- `com.apple.rootless`
+- `i24@?0r*8r^{OSObject=}16`
+- `\"unexpected persistent refcount (%u) on profile %p\" @%s:%d`
+- `media-device-discovery-extension`
+- `io_registry_create_iterator`
+- `io_connect_method_scalarI_structureO`
+- `vm_map_external`
+- `vm_mapped_pages_info`
+- `site.typeof(*sblabel)`
+- `process-info-setcontrol`
+- `HOME`
+- `v32@?0r*8Q16^B24`
+- `host_get_boot_info`
+- `task_register_dyld_set_dyld_state`
+- `com.apple.security.exception.sysctl.read-only`
+- `autobox.c`
+- `forbidden-link-priv<%s>`
+- `file-test-existence`
+- `process-legacy-codesigning-entitlements-blob-get`
+- ` `
+- `failed to get container required entitlement`
+- `_sfree_data_track`
+- `isp-command-send`
+- `com.apple.security.exception.files.home-relative-path.read-write`
+- `com.apple.private.security.sandbox-reference`
+- `site.struct iofilter`
+- `com.apple.sandbox.executable`
+- `/private/var/db/modelmanagerd`
+- `string truncated`
+- `io_catalog_get_gen_count`
+- `\"%s: allocation header marked as not sandbox tracked (%p)\" @%s:%d`
+- `smalloc_set_tracking`
+- `%u`
+- `task_set_phys_footprint_limit`
+- `vm_reallocate`
+- `file-write*`
+- `iokit-issue-extension`
+- `task_restartable_ranges_register`
+- `fs-quota-off`
+- `mach-derive-port`
+- `system-socket`
+- `task_set_corpse_forking_behavior`
+- `com.apple.rootless.restricted-block-devices.read`
+- `xpc-message-send`
+- `/private/var/empty`
+- `DIGITS`
+- `host_request_notification`
+- `mach_port_get_srights`
+- `site.struct sb_reference`
+- `\"sfree on invalid allocation at %p\" @%s:%d`
+- `ipc-posix-shm-read-data`
+- `process-codesigning`
+- `vm_msync`
+- `com.apple.security.exception.managed-preference.read-only`
+- `true`
+- `host_set_UNDServer`
+- `io_registry_entry_get_path_ool`
+- `denying due to unresolved delegation in platform profile`
+- `.bundle`
+- `com.apple.private.amfi.can-execute-cdhash`
+- `task_get_exception_ports_from_user`
+- `iokit-set-properties`
+- `process-info-codesignature`
+- `process-legacy-codesigning-entitlements-der-blob-get`
+- `sb_serial_reporting`
+- `Autobox`
+- `kext.c`
+- `pathmonitor_prepare_swap`
+- `system-nfssvc`
+- `profile_release_persistent`
+- `site.typeof(**&_temp)`
+- `host_virtual_physical_table_info`
+- `syscallmask.c`
+- `prefix match not supported for file extensions`
+- `site.matchExpr_t`
+- ` type:`
+- `mach_voucher_debug_info`
+- `process-info-pidfdinfo`
+- `%s: %s(%d) `
+- `/private/var/db/nearbyd`
+- `/private/var/db/darwindaemon`
+- `v32@?0^{_sb_extension={?=^{_sb_extension}}q[32C]{os_refcnt=AI}ASCI(?={?=*QBCIQ{?=^{_sb_extension}^^{_sb_extension}}}{?=^{OSObject}*Q})}8r*16^B24`
+- `\"builtin %s already exists\" @%s:%d`
+- `thread_policy_get`
+- `vm_remap_external`
+- `12221`
+- ` scope:`
+- `unsupported extension type`
+- `2222211`
+- `BSD Minor`
+- `file-issue-extension`
+- `iokit-external-trap`
+- `/private/var/root`
+- `mach_port_kobject_description_from_user`
+- `thread_policy_set`
+- `I`
+- ` local:`
+- `com.apple.sandbox.container`
+- `site.typeof(**&ancestors)`
+- `iofilter_applier`
+- `fs-quota-set-usage`
+- ` path:%s xattr:%s`
+- `Users/`
+- `\"%s: failed to allocate\" @%s:%d`
+- `exception_raise`
+- `io_service_get_matching_services_bin`
+- `bInterfaceSubClass`
+- `sandbox.profiles`
+- `io_catalog_terminate`
+- `io_server_version`
+- `thread_depress_abort_from_user`
+- `site.typeof(**&nodelist->nodes)`
+- `\"reason string overflow\" @%s:%d`
+- `mach_zone_info_for_largest_zone`
+- `mach_port_insert_member`
+- `ipc-posix-shm-write*`
+- `interface.c`
+- `bad string`
+- `io_registry_entry_get_property_bin_buf`
+- `task_get_mach_voucher`
+- `mach_eventlink_create`
+- `site.typeof(**(&ref))`
+- `\"%s: overrelease\" @%s:%d`
+- `mach-priv*`
+- `io_registry_entry_get_path`
+- `BSD Major`
+- `file-write-acl`
+- `iokit-get-properties`
+- `XProtect Policy`
+- `%08x`
+- `kmod_get_info`
+- `io_async_method_structureI_structureO`
+- `site.typeof(**(&filter))`
+- `\"pending update count overflow\" @%s:%d`
+- `ipc-posix-sem-post`
+- `system*`
+- `thread_get_exception_ports_from_user`
+- `(invalid)`
+- ` task-special-port:`
+- `task_get_exc_guard_behavior`
+- `112`
+- `failed to copyin args`
+- `IORegistryEntryAllowableSetProperties`
+- `io_service_get_authorization_id`
+- `processor_get_assignment`
+- `evaluate.c`
+- `System Policy`
+- `(_IO \"%c\" %u)`
+- `stacked profiles not supported`
+- `\"unexpected persistent refcount (%u) on sandbox %p\" @%s:%d`
+- `io_registry_entry_get_name_in_plane`
+- `io_service_get_state`
+- `io_connect_method_var_output`
+- `task_terminate`
+- `semaphore_destroy`
+- `initproc`
+- `io_service_get_matching_service`
+- `\"%s called on incorrect vnode type\" @%s:%d`
+- `driver extensions must be sandboxed`
+- `failed to allocate sandbox`
+- `site.typeof(*extensions)`
+- `Protobox`
+- `thread_resume2`
+- `mach_vm_protect`
+- `fs-quota-set*`
+- `host_swap_exception_ports`
+- `io_registry_get_root_entry`
+- `thread_get_exception_ports_info`
+- `<unsigned>`
+- `hid-control`
+- `Recovery`
+- `host_get_UNDServer`
+- `io_registry_entry_create_iterator`
+- `network-outbound`
+- ` flavor:`
+- `12288222`
+- `io_registry_entry_get_property`
+- `N`
+- `iokit-external-method`
+- `mach_port_allocate_name`
+- `mach_vm_machine_attribute`
+- `forbidden-sandbox-reinit`
+- `qtn-user`
+- `/private/var/db/ondemand`
+- `thread_set_policy`
+- `com.apple.security.system-group-containers`
+- `failed to set mach filter flag`
+- `fs-snapshot*`
+- `\"failed to set syscall filter callbacks\" @%s:%d`
+- `disk_image_backing_store_init`
+- `default-message-filter`
+- ` target:%s extension-class:%s`
+- ` [%s]`
+- `v24@?0r*8^B16`
+- `io_service_get_wait_info`
+- `mach_eventlink_destroy`
+- `Virtual Interface`
+- `job-creation`
+- `\"%s: size underflow\" @%s:%d`
+- `ipc-posix-sem-create`
+- `host_lockgroup_info`
+- `system-kext*`
+- `%u duplicate report%s for `
+- `/private/var/db/diskimagesiod`
+- `invalid regex`
+- `io_connect_async_method`
+- `com.apple.security.exception.files.absolute-path.read-only`
+- `com.apple.sandbox.application-group`
+- `fs-snapshot-mount`
+- `thread_set_mach_voucher`
+- `/.nofollow`
+- `IONVRAM-DELETE-PROPERTY`
+- `/`
+- `External`
+- `process-info-ledger`
+- `22211111`
+- `forbidden-issue-extension-with-flags`
+- `clock_get_time`
+- `mach_zone_info_for_zone`
+- `io_service_get_busy_state`
+- `io_service_open_extended`
+- `mach_memory_entry_access_tracking`
+- `com.apple.security.exception.sysctl.read-write`
+- `system-sched`
+- `backward reference`
+- `host_set_multiuser_config_flags`
+- `iokit_iofilter.cpp`
+- `file-mknod`
+- `system-kext-query`
+- `storage-class-map`
+- `fseventsd`
+- `processor_set_statistics`
+- `com.apple.security.application-groups`
+- `site.struct sockaddr_storage`
+- `syscall-unix`
+- `storage_class_for_vnode failed`
+- `bad address`
+- `\"collection builtin count overflow\" @%s:%d`
+- `io_service_close`
+- `io_service_add_interest_notification_64`
+- `%s (%s)`
+- `MAX_TOKEN_SIZE too small`
+- `<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"><plist version=\"1.0\"><dict><key>Protobox</key><dict><key>Exclude from data collection</key><array><string>/AppleInternal/</string><string>/Application`
+- `system-privilege`
+- `PROCESS_TEMP_DIR`
+- `file-write-create`
+- `file-write-owner`
+- `mach-lookup`
+- `protobox`
+- `invalid sandbox profile configuration`
+- `failed to copyin extension data string`
+- `failed canonical check`
+- `task_dyld_process_info_notify_deregister`
+- `.`
+- `\"Sandbox.kext configuration: failed to apply built-in defaults: %d\" @%s:%d`
+- `io_service_match_property_table_bin`
+- `system`
+- `mach-priv-host-port`
+- `mach-task-read`
+- `process-iopolicy-set`
+- `not supported for devfs fd paths`
+- `0123456789abcdef`
+- `io_registry_entry_get_location_in_plane`
+- `\"Unable to allocate IOKit matching dictionary for %s\" @%s:%d`
+- `1`
+- `%2hhx%2hhx%2hhx%2hhx-%2hhx%2hhx-%2hhx%2hhx-%2hhx%2hhx-%2hhx%2hhx%2hhx%2hhx%2hhx%2hhx%n`
+- `site.struct profile_state`
+- `quicklook-preview`
+- `PERSONA_ID_%u:%s`
+- `\"unresolved delegation\" @%s:%d`
+- `ipc-posix-shm-write-data`
+- `same-sandbox`
+- `values missing from seatbelt entitlement`
+- `PERSONA_ID_`
+- `thread_set_special_port`
+- `amfi_copy_seatbelt_profile_names() failed`
+- `mach_vm_msync`
+- `rootless.c`
+- `fs-rename`
+- `ipc-posix-shm-write-create`
+- `system-acct`
+- `clock_get_attributes`
+- `mach_exception_raise_state_identity`
+- `task_purgable_info`
+- `virtual_env_get_current`
+- `\"unexpected port role: %u\" @%s:%d`
+- `file-write-unlink`
+- ` iokit-class:%s property:%s`
+- `mach_port_kobject_from_user`
+- `task_map_kcdata_object_64`
+- `pathmonitor.c`
+- `\"pending update count underflow\" @%s:%d`
+- `file-ioctl`
+- ` (with payload)`
+- `io_registry_entry_from_path`
+- `mach_port_destroy`
+- `mach_eventlink_disassociate`
+- `mach-host-exception-port-set`
+- `.pluginkit`
+- ` mach-exception-type:`
+- `/.nofollow/`
+- `222322222222222222221`
+- `forbidden-file-create-unknown`
+- `Internal`
+- `host_set_exception_ports`
+- `IODTNVRAMVariables`
+- `site.typeof(**(&node))`
+- `ipc-posix-sem*`
+- `mach-task-inspect`
+- `io_service_add_notification_bin_64`
+- `act_get_state_to_user`
+- `site.typeof(**(&sblabel))`
+- `ipc-posix*`
+- `\"cannot register builtin profile with no name\" @%s:%d`
+- `failed to derive storage class`
+- `task_get_special_port_from_user`
+- `\"failed to set sandbox info callbacks\" @%s:%d`
+- `file-write-flags`
+- `system-mac-syscall`
+- `com.apple.security.exception.files.home-relative-path.read-only`
+- `(unnamed)`
+- `sandbox_release_persistent`
+- `thread_create_running_from_user`
+- `vm_map_64_external`
+- `system-mac-label`
+- `task_set_exception_ports`
+- `A`
+- `io_connect_add_client`
+- `io_object_get_superclass`
+- `task_wire`
+- `Yes`
+- `iokit-open-service`
+- `/chosen`
+- `\"profile flag #%u out of range\" @%s:%d`
+- `io_catalog_reset`
+- `semaphore_create`
+- `vm_region_64`
+- `Stripping of data volume mount path enabled`
+- `sysctl*`
+- `\"%s: overflow\" @%s:%d`
+- `forbidden-extension-process-mismatch`
+- `host_statistics64_from_user`
+- `host_default_memory_manager`
+- `io_service_add_notification_bin`
+- `processor_start_from_user`
+- `io_registry_entry_from_path_ool`
+- `IOUserServiceProperties`
+- `nvram-set`
+- `io_object_get_class`
+- `io_service_get_matching_service_bin`
+- `com.apple.security.exception.mach-lookup.global-name`
+- `iofilter_resolver_block_invoke`
+- `file-ungraft`
+- `extensions.c`
+- `act_set_state_from_user`
+- `mach_vm_allocate_external`
+- `\"shenanigans!\" @%s:%d`
+- `io_iterator_is_valid`
+- `mach_vm_write`
+- `\"sandbox mask count overflow\" @%s:%d`
+- `fs-info`
+- `iokit*`
+- `\"no profile to evaluate\" @%s:%d`
+- `mach_port_space_basic_info`
+- `sandbox-check`
+- `system-mac*`
+- ` role:%s`
+- `mach-host*`
+- `com.apple.private.security.sandbox-spawnattrs`
+- `mach_port_allocate`
+- `thread_swap_exception_ports`
+- `mach_vm_region_recurse`
+- `apfs`
+- `\"sfree on freed allocation at %p\" @%s:%d`
+- `default`
+- `failed to apply spawnattrs`
+- `#x%x`
+- `forbidden-sandbox-spawnattrs`
+- `fileio.c`
+- `i16@?0^{profile=^vQ^{profile_state}^{profile}QQQQAISSSCCCCBBBB^{variable_info}^^{__matchExpr}****QQQ**^{collection}}8`
+- `sandbox.autobox.index`
+- `null`
+- `.app`
+- `network-filter`
+- `io_connect_map_shared_memory`
+- `io_catalog_get_data`
+- `io_connect_get_notification_semaphore`
+- `processor_info`
+- `task_threads_from_user`
+- `fs-quota-on`
+- `bad opcode`
+- `mobile`
+- `/private/var/db/swtransparencyd`
+- `task_set_info`
+- `exclave-assigned`
+- `bootstrap`
+- `forbidden-clone-priv<%s>`
+- `system-kext-load`
+- `bad filter type`
+- `fs-quota-sync`
+- `system-necp-client-action`
+- `rd`
+- `io_connect_unmap_memory`
+- `fs-quota-stat`
+- `socket-ioctl`
+- `derive_summary`
+- `io_service_add_interest_notification`
+- `thread_terminate`
+- `mach_make_memory_entry_64`
+- `IOClassNameOverride`
+- `pathindex.c`
+- `Sealed`
+- `builtin collection`
+- `reference.c`
+- `s`
+- `site.struct variable_info`
+- `112111111111112`
+- `.xpc`
+- `/private/var/db/rmd`
+- `12222222132211`
+- `vm_deallocate`
+- `com.apple.private.security.container-manager`
+- `process*`
+- `/private/var/networkd`
+- `vnode_getattr failed`
+- `mach_port_set_seqno`
+- `mach_ports_register`
+- `mach_vm_read_list`
+- `mach_vm_range_create`
+- `mach_memory_info`
+- `v16@?0*8`
+- `sandbox_check_storage_class_for_vnode`
+- `file-graft`
+- `ipc-sysv-shm`
+- `\"sandbox %p leaked %llu bytes\" @%s:%d`
+- `task_dyld_process_info_notify_register`
+- `forbidden-task-for-kernel`
+- `distributed-notification-post`
+- `md0`
+- `file*`
+- `mach-host-special-port-set`
+- `site.typeof(**(&state))`
+- `thread_abort_safely`
+- `processor_set_tasks_with_flavor`
+- `site.struct filter_context`
+- `system-audit`
+- `extension data is NULL`
+- `v8@?0`
+- `thread_raise_exception`
+- `check.c`
+- `file-read-data`
+- `fs-quota-set-limits`
+- `sysctl-write`
+- ` name:`
+- `mach_port_special_reply_port_reset_link`
+- `IOMedia`
+- `site.typeof(**(&fc))`
+- `system-kas-info`
+- `\"unexpected filter type\" @%s:%d`
+- `com.apple.sandbox.system-group`
+- `boot-args`
+- `deny`
+- `host_get_io_master`
+- `processor_control`
+- `hook_thread_userret`
+- `thread_get_special_port_from_user`
+- `processor_set_info`
+- `file-write-finderinfo`
+- `signal`
+- `host_reboot`
+- `mach_vm_region`
+- `_sfree_data`
+- `io_service_wait_quiet`
+- `io_service_set_authorization_id`
+- `thread_suspend2`
+- `mach_vm_deferred_reclamation_buffer_allocate`
+- `syscall_check_sandbox`
+- `\"cannot derive connection port from bootstrap port\" @%s:%d`
+- `(null)`
+- `system-swap`
+- `.appex`
+- `processor_set_default`
+- `thread_set_state_from_user`
+- `mach_vm_deferred_reclamation_buffer_resize`
+- `fs-snapshot-delete`
+- `process-info-rusage`
+- `/PlugIns`
+- ` (per-pid)`
+- `v28@?0r*8I16^B20`
+- `virtual_env_create`
+- `\"%s: failed to look up AMFI service\\n\" @%s:%d`
+- `iokit.cpp`
+- `/private/var/db/diagnostics`
+- `\"Invalid profile type %d for policy description\" @%s:%d`
+- `\"invalid builtin %s (%s)\" @%s:%d`
+- `local:`
+- `FRONT_USER_HOME`
+- `221`
+- `malformed nofollowfs prefix`
+- `/private/var/mobile`
+- `failed to apply kernel MIG routine mask`
+- `mach-task-special-port*`
+- `v36@?0i8Q12r*20Q28`
+- `exception_raise_state_identity`
+- `io_catalog_module_loaded`
+- `task_swap_exception_ports`
+- `ipc-posix-shm-write-unlink`
+- `task_restartable_ranges_synchronize`
+- `mach-task-name`
+- `\"sandbox state %p points back to %p instead of %p\" @%s:%d`
+- `mach_port_get_set_status_from_user`
+- `com.apple.security.system-groups`
+- `sandbox.syscallmasks`
+- `site.struct pathindex`
+- `necp-client-open`
+- `thread_wire`
+- `io_async_method_scalarI_structureI`
+- `task_register_hardened_exception_handler`
+- `site.typeof(**(&fc->socket.sockname))`
+- `file-write-data`
+- `mach_exception_raise`
+- `\"invalid attempt to update connection port filters\" @%s:%d`
+- `iofilter_resolver`
+- `process-exec*`
+- `process-legacy-codesigning-status-get`
+- ` [%s(%d)]`
+- `mach_vm_read`
+- `asr-parser-enter`
+- `file-chroot`
+- `site.typeof(**(&ustate))`
+- `B24@?0^{_sb_extension={?=^{_sb_extension}}q[32C]{os_refcnt=AI}ASCI(?={?=*QBCIQ{?=^{_sb_extension}^^{_sb_extension}}}{?=^{OSObject}*Q})}8r*16`
+- `.framework`
+- `/private/var/db/findmydevice`
+- `mach_zone_force_gc`
+- `io_catalog_send_data`
+- ` protocol:`
+- `clock_alarm`
+- `io_registry_entry_get_parent_iterator`
+- `io_object_get_bundle_identifier`
+- `mach_port_extract_member`
+- `mach_port_set_context`
+- `forbidden-clear-safari-container`
+- `mach_vm_deferred_reclamation_buffer_query`
+- `mach_memory_entry_purgable_control`
+- `\"profile mask count underflow\" @%s:%d`
+- `mach_port_unguard`
+- `task_swap_mach_voucher`
+- `(unknown)`
+- `others`
+- `euser`
+- `io_connect_method_scalarI_structureI`
+- `mach_port_set_mscount`
+- `thread_get_mach_voucher`
+- `mach_vm_behavior_set`
+- `mach_vm_page_info`
+- `failed to apply unix syscall mask`
+- `/private/var/wireless`
+- `mach_port_insert_right`
+- `mach_vm_deallocate_external`
+- `\"%s: IOUserClient::registerFilterCallbacks failed: %d\" @%s:%d`
+- `Audio active`
+- `ipc-sysv-sem`
+- `socket-option*`
+- `Vendor`
+- `com.apple.private.security.register-sync-root`
+- `com.apple.security.exception.mach-lookup.local-name`
+- `\"sandbox mask count underflow\" @%s:%d`
+- `mach-issue-extension`
+- `site.typeof(**(&extensions))`
+- `vm_write`
+- `audio_active`
+- `outside of container && not a driver && !i_can_has_debugger`
+- `io_registry_entry_get_property_bin`
+- `mach_vm_map_external`
+- `com.apple.sandbox.system-container`
+- ` domain:`
+- `/private/var/mobile/tmp`
+- `Carrier`
+- `io_registry_entry_get_property_recursively`
+- `mach_vm_copy`
+- `mach_vm_read_overwrite`
+- `background-assets`
+- `failed to copyin extension data path`
+- `ENTITLEMENT:`
+- `mach_vm_remap_new_external`
+- `IORegistryEntryDefaultLockingSetProperties`
+- `<unknown>`
+- `???`
+- `site.typeof(*ec)`
+- `io_service_get_matching_services`
+- `file-write-xattr`
+- `kextconfig.cpp`
+- `site.typeof(**&new_tasks)`
+- `vm_copy`
+- `mach_vm_deferred_reclamation_buffer_flush`
+- `com.apple.mobilesafari`
+- `iokit-async-external-method`
+- `mach_port_mod_refs`
+- `site.typeof(**&free_entries)`
+- `com.apple.security.exception.shared-preference.read-write`
+- `file-write-times`
+- `system-fsctl`
+- `process-exec-update-label`
+- `mach_memory_object_memory_entry`
+- `task_get_exception_ports_info`
+- `ANY_UUID`
+- `BSD Unit`
+- `\"%s: allocation header marked as sandbox tracked (%p)\" @%s:%d`
+- `process-legacy-codesigning-teamid-get`
+- `user-preference*`
+- `/private/var/db/astris`
+- `/private/var/db/analyticsd`
+- `;%0*llx;%0*llx;%0*llx;%0*llx;%s`
+- `task_create_identity_token`
+- `mach_voucher_extract_all_attr_recipes`
+- `site.typeof(**(&pending1))`
+- `com.apple.private.sandbox.profile:embedded`
+- `failed to assign builtin profile`
+- `IONVRAM-SYNCNOW-PROPERTY`
+- `/private/var/db/timed`
+- `v20@?0I8^B12`
+- `vm_read`
+- `file-read*`
+- `syscall-mach`
+- ` codesigning-operation:`
+- `mach_memory_entry_region_info`
+- `self`
+- `ipc-posix-sem-unlink`
+- `process-legacy-codesigning-blob-get`
+- ` level:`
+- `host_priv_statistics`
+- `com.apple.security.exception.mach-register.global-name`
+- ` policy:`
+- `com.apple.sandbox.pty`
+- `3211111`
+- `mach-message-send`
+- `(apply-protobox)`

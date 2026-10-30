@@ -1,0 +1,272 @@
+# `NWParameters`
+
+- Image: [`/System/Library/Frameworks/Network.framework/Network`](../userland/System__Library__Frameworks__Network.framework__Network.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `NWPrettyDescription`, `NSSecureCoding`, `NSCopying`
+- 4 instance variables, 71 properties, 168 instance methods, 3 class methods
+
+## Instance variables
+
+```
+@"NSObject<OS_nw_parameters>" _internalParameters;
+@"NSSet" _SSLCipherSuitesInternal;
+Q _minimumSSLProtocolVersionInternal;
+Q _maximumSSLProtocolVersionInternal;
+```
+
+## Properties
+
+```
+@property (T@"NSObject<OS_nw_parameters>",&,V_internalParameters) internalParameters;
+@property (TB,N) indefinite;
+@property (TB,N) noProxy;
+@property (TB,R,N,GisValid) valid;
+@property (TB,R,N,GisDryRun) dryRun;
+@property (TB,R,N) prohibitCellular;
+@property (TB,N) prohibitFallback;
+@property (TB,N,GisDiscretionary) discretionary;
+@property (TB,N) allowSocketAccess;
+@property (T@"NSUUID",&,N) parentID;
+@property (T@"NSArray",R,N) parentIDs;
+@property (T@"NSSet",&,N,V_SSLCipherSuitesInternal) SSLCipherSuitesInternal;
+@property (TQ,N,V_minimumSSLProtocolVersionInternal) minimumSSLProtocolVersionInternal;
+@property (TQ,N,V_maximumSSLProtocolVersionInternal) maximumSSLProtocolVersionInternal;
+@property (TC,R,N) transportProtocol;
+@property (TB,N) keepAlive;
+@property (TQ,N) keepAliveIdleTime;
+@property (TQ,N) keepAliveInterval;
+@property (TB,N) keepAliveOffload;
+@property (TB,N) httpsProxyIsOpaque;
+@property (TB,N) httpsProxyOverTLS;
+@property (TB,N) attachProtocolListener;
+@property (TB,N) prohibitJoiningProtocols;
+@property (TB,N) allowJoiningConnectedFd;
+@property (TB,N) allowDuplicateStateUpdates;
+@property (TB,N) trustInvalidCertificates;
+@property (T@"NSString",R,C,N) privateDescription;
+@property (TC,R,N) ipProtocol;
+@property (Ti,N) pid;
+@property (TI,N) uid;
+@property (T@"NSUUID",C,N) processUUID;
+@property (T@"NSUUID",C,N) effectiveProcessUUID;
+@property (T@"NSString",C,N) effectiveBundleID;
+@property (TB,N) useLongOutstandingQueries;
+@property (TB,N) ignoreResolverStats;
+@property (TB,N) useAWDL;
+@property (TB,N) useP2P;
+@property (TB,N) resolvePTR;
+@property (TB,N) multipath;
+@property (Ti,N) multipathService;
+@property (TB,N) multipathForceEnable;
+@property (TC,N) requiredAddressFamily;
+@property (T@"NSURL",C,N) url;
+@property (T@"NSURL",R,N) sanitizedURL;
+@property (T@"NSDictionary",C,N) proxyConfiguration;
+@property (T@"NWAddressEndpoint",&,N) localAddress;
+@property (TB,N) reuseLocalAddress;
+@property (T@"NWInterface",&,N) requiredInterface;
+@property (Tq,N) requiredInterfaceType;
+@property (Tq,N) requiredInterfaceSubtype;
+@property (Tq,N) requiredCompanionProxyInterfaceType;
+@property (TB,N) enableTFO;
+@property (TB,N) enableTFONoCookie;
+@property (TB,N) fastOpenForceEnable;
+@property (T@"NSData",&,N) metadata;
+@property (TB,N) prohibitRoaming;
+@property (T@"NSArray",C,N) protocolTransforms;
+@property (TB,N) allowUnusableAddresses;
+@property (TB,N) preferNoProxy;
+@property (T@"NSString",C,N) account;
+@property (TQ,N) dataMode;
+@property (TQ,N) trafficClass;
+@property (TB,N) prohibitExpensivePaths;
+@property (TB,N) prohibitConstrainedPaths;
+@property (TB,N) reduceBuffering;
+@property (TB,N) disableNagleAlgorithm;
+@property (TB,N) enableTLS;
+@property (T@"NSData",C,N) TLSSessionID;
+@property (T@"NSSet",C,N) SSLCipherSuites;
+@property (TQ,N) minimumSSLProtocolVersion;
+@property (TQ,N) maximumSSLProtocolVersion;
+```
+
+## Class methods
+
+```
++[NWParameters supportsSecureCoding];
++[NWParameters parametersWithProtocolBufferData:];
++[NWParameters parametersWithCParameters:];
+```
+
+## Instance methods
+
+```
+-[NWParameters sanitizedURL];
+-[NWParameters setInitialDataPayload:];
+-[NWParameters trafficClass];
+-[NWParameters setParentID:];
+-[NWParameters setDiscretionary:];
+-[NWParameters setAccount:];
+-[NWParameters setPid:];
+-[NWParameters requiredInterfaceSubtype];
+-[NWParameters setMinimumSSLProtocolVersion:];
+-[NWParameters setMultipath:];
+-[NWParameters setReduceBuffering:];
+-[NWParameters allowDuplicateStateUpdates];
+-[NWParameters ipProtocol];
+-[NWParameters processUUID];
+-[NWParameters hasDelegatedProcessUUID];
+-[NWParameters setEffectiveBundleID:];
+-[NWParameters initWithParameters:];
+-[NWParameters enableTFONoCookie];
+-[NWParameters avoidNetworkAgentWithUUID:];
+-[NWParameters account];
+-[NWParameters maximumSSLProtocolVersion];
+-[NWParameters createProtocolBufferObject];
+-[NWParameters keepAliveIdleTime];
+-[NWParameters setProxyConfiguration:];
+-[NWParameters requiredCompanionProxyInterfaceType];
+-[NWParameters setProhibitConstrainedPaths:];
+-[NWParameters useLongOutstandingQueries];
+-[NWParameters init];
+-[NWParameters parentID];
+-[NWParameters reduceBuffering];
+-[NWParameters transportProtocol];
+-[NWParameters setMaximumSSLProtocolVersion:];
+-[NWParameters setEnableTLS:];
+-[NWParameters setInternalParameters:];
+-[NWParameters hasNonEmptyProxyConfiguration];
+-[NWParameters protocolTransforms];
+-[NWParameters setKeepAliveInterval:];
+-[NWParameters setAllowSocketAccess:];
+-[NWParameters setSSLCipherSuitesInternal:];
+-[NWParameters prohibitConstrainedPaths];
+-[NWParameters setUseAWDL:];
+-[NWParameters preferNetworkAgentWithUUID:];
+-[NWParameters TLSSessionID];
+-[NWParameters setRequiredInterface:];
+-[NWParameters setSourceApplicationWithToken:];
+-[NWParameters prohibitNetworkAgentsWithDomain:type:];
+-[NWParameters isDiscretionary];
+-[NWParameters setMaximumSSLProtocolVersionInternal:];
+-[NWParameters httpsProxyOverTLS];
+-[NWParameters keepAliveOffload];
+-[NWParameters prohibitJoiningProtocols];
+-[NWParameters requiredInterfaceType];
+-[NWParameters requireNetworkAgentWithUUID:];
+-[NWParameters setHttpsProxyIsOpaque:];
+-[NWParameters setDisableNagleAlgorithm:];
+-[NWParameters setUseLongOutstandingQueries:];
+-[NWParameters useP2P];
+-[NWParameters setProtocolTransforms:];
+-[NWParameters attachProtocolListener];
+-[NWParameters setAllowUnusableAddresses:];
+-[NWParameters metadata];
+-[NWParameters setAllowDuplicateStateUpdates:];
+-[NWParameters setRequiredCompanionProxyInterfaceType:];
+-[NWParameters setUid:];
+-[NWParameters setUseP2P:];
+-[NWParameters allowSocketAccess];
+-[NWParameters privateDescription];
+-[NWParameters preferNoProxy];
+-[NWParameters trustInvalidCertificates];
+-[NWParameters allowUnusableAddresses];
+-[NWParameters hasRequiredNetworkAgents];
+-[NWParameters pid];
+-[NWParameters allowJoiningConnectedFd];
+-[NWParameters minimumSSLProtocolVersionInternal];
+-[NWParameters descriptionWithIndent:showFullContent:];
+-[NWParameters setRequiredAddressFamily:];
+-[NWParameters setNoProxy:];
+-[NWParameters setMultipathService:];
+-[NWParameters setTrafficClass:];
+-[NWParameters setTrustInvalidCertificates:];
+-[NWParameters reuseLocalAddress];
+-[NWParameters prohibitInterface:];
+-[NWParameters requireNetworkAgentWithDomain:type:];
+-[NWParameters hasDelegatedPIDForOriginatingPID:];
+-[NWParameters setHttpsProxyOverTLS:];
+-[NWParameters keepAlive];
+-[NWParameters httpsProxyIsOpaque];
+-[NWParameters multipath];
+-[NWParameters indefinite];
+-[NWParameters noProxy];
+-[NWParameters effectiveBundleID];
+-[NWParameters isDryRun];
+-[NWParameters prohibitInterfaceType:];
+-[NWParameters encodeWithCoder:];
+-[NWParameters hasProhibitedNetworkAgents];
+-[NWParameters setMultipathForceEnable:];
+-[NWParameters isValid];
+-[NWParameters setPreferNoProxy:];
+-[NWParameters setEnableTFONoCookie:];
+-[NWParameters copyEffectiveAuditToken:];
+-[NWParameters hasPreferredNetworkAgents];
+-[NWParameters setMetadata:];
+-[NWParameters setLocalAddress:];
+-[NWParameters setSourceApplicationWithBundleID:];
+-[NWParameters preferNetworkAgentWithDomain:type:];
+-[NWParameters hash];
+-[NWParameters setMinimumSSLProtocolVersionInternal:];
+-[NWParameters minimumSSLProtocolVersion];
+-[NWParameters enableTLS];
+-[NWParameters dataMode];
+-[NWParameters setRequiredInterfaceType:];
+-[NWParameters description];
+-[NWParameters parentIDs];
+-[NWParameters enableTFO];
+-[NWParameters initWithCoder:];
+-[NWParameters setEffectiveProcessUUID:];
+-[NWParameters setIndefinite:];
+-[NWParameters copyCParameters];
+-[NWParameters multipathForceEnable];
+-[NWParameters SSLCipherSuites];
+-[NWParameters prohibitInterfaceSubtype:];
+-[NWParameters internalParameters];
+-[NWParameters setProcessUUID:];
+-[NWParameters effectiveProcessUUID];
+-[NWParameters setRequiredInterfaceSubtype:];
+-[NWParameters setUrl:];
+-[NWParameters proxyConfiguration];
+-[NWParameters keepAliveInterval];
+-[NWParameters fastOpenForceEnable];
+-[NWParameters setKeepAlive:];
+-[NWParameters setFastOpenForceEnable:];
+-[NWParameters uid];
+-[NWParameters setAttachProtocolListener:];
+-[NWParameters setReuseLocalAddress:];
+-[NWParameters copyWithZone:];
+-[NWParameters setProhibitJoiningProtocols:];
+-[NWParameters setResolvePTR:];
+-[NWParameters prohibitNetworkAgentWithUUID:];
+-[NWParameters localAddress];
+-[NWParameters avoidNetworkAgentWithDomain:type:];
+-[NWParameters setDataMode:];
+-[NWParameters multipathService];
+-[NWParameters setProhibitExpensivePaths:];
+-[NWParameters prohibitExpensivePaths];
+-[NWParameters prohibitRoaming];
+-[NWParameters isEqual:];
+-[NWParameters setTLSSessionID:];
+-[NWParameters copyRequiredAgentsDescription];
+-[NWParameters useAWDL];
+-[NWParameters setKeepAliveOffload:];
+-[NWParameters requiredInterface];
+-[NWParameters setIgnoreResolverStats:];
+-[NWParameters prohibitCellular];
+-[NWParameters resolvePTR];
+-[NWParameters setProhibitRoaming:];
+-[NWParameters prohibitFallback];
+-[NWParameters requiredAddressFamily];
+-[NWParameters setProhibitFallback:];
+-[NWParameters url];
+-[NWParameters setEnableTFO:];
+-[NWParameters SSLCipherSuitesInternal];
+-[NWParameters setSSLCipherSuites:];
+-[NWParameters tlsVersionWithSSLProtocol:];
+-[NWParameters setKeepAliveIdleTime:];
+-[NWParameters disableNagleAlgorithm];
+-[NWParameters maximumSSLProtocolVersionInternal];
+-[NWParameters ignoreResolverStats];
+-[NWParameters setAllowJoiningConnectedFd:];
+```

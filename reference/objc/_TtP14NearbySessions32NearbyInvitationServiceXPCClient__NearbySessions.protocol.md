@@ -1,0 +1,29 @@
+# `_TtP14NearbySessions32NearbyInvitationServiceXPCClient_` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/NearbySessions.framework/NearbySessions`](../userland/System__Library__PrivateFrameworks__NearbySessions.framework__NearbySessions.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- 0 instance variables, 0 properties, 20 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ requestApprovalWith:completion:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ advertiseNearbyInvitation:provider:response:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ advertiseNearbySessionEndpointWithParams:response:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ approveConnectionRequest:localInvitation:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ approveWithPendingMember:response:completion:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ assertAdvertisementPublic:rotations:response:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ createGroupWith:response:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ denyConnectionRequest:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ generateNearbyInvitationWithProvider:response:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ markInvitationUsed:response:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ rejectWithPendingMember:completion:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ releaseAdvertisementPublicAssertion:assertionIdentifier:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ releaseInvitation:response:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ requestConnectionWith:localInvitation:response:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ requestEndpointConnectionWith:pseudonym:response:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ scanNearbyEndpointsWithParams:scannerID:response:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ scanNearbyInvitationsWithScannerID:response:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ stopAdvertisingNearbyInvitation:response:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ stopAdvertisingNearbySessionEndpointWithResponse:];
+-[_TtP14NearbySessions32NearbyInvitationServiceXPCClient_ stopScanningNearbyInvitationsWithProvider:response:];
+```

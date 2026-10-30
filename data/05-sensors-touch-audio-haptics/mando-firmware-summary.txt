@@ -1,0 +1,8 @@
+### personality/key: M1 list
+      1 x Type=Config Desc=Configuration parameters payloadbytes=0
+      1 x Type=FlatPackTableStart Desc=Start of the FlatPackTable entries for Mando payloadbytes=0
+      1 x Type=FlatPackTableEntry Desc=Pre FWDL processing command payloadbytes=4
+     58 x Type=FlatPackTableEntry Desc=load MTP FW image payloadbytes=55800
+      1 x Type=FlatPackTableEntry Desc=Post FWDL processing command payloadbytes=4
+      1 x Type=FlatPackTableEnd Desc=End of the FlatPackTable entries for Mando payloadbytes=0
+   Config: {"Firmware Version": ["5.E", "5.E"], "FlatPack Config": {"Bootload Timeout Ms": 5000, "Run In BootedOS": true, "Run In RestoreOS": false}}

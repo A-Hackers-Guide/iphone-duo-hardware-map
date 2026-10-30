@@ -1,0 +1,37 @@
+# `SBFloatingDockViewControllerDelegate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `SBFloatingDockViewControllerDelegate_Testing`
+- 0 instance variables, 0 properties, 27 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[SBFloatingDockViewControllerDelegate floatingDockViewController:acquireOrderFloatingDockContainerBeforeLibraryAssertionForReason:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewController:didChangeContentFrame:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewController:didChangeContentHeight:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewController:wantsToBePresented:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewController:willPerformTransitionWithFolder:presenting:withTransitionCoordinator:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewController:willUseAnimator:forTransitioningWithFolder:presenting:];
+-[SBFloatingDockViewControllerDelegate foregroundLibraryContainerViewControllerForFloatingDockViewController:];
+-[SBFloatingDockViewControllerDelegate isDefaultLibraryContainerViewControllerForegroundForFloatingDockViewController:];
+-[SBFloatingDockViewControllerDelegate isFloatingDockViewControllerPresentedOnExternalDisplay:];
+-[SBFloatingDockViewControllerDelegate isFloatingDockViewControllerPresentedOverApplication:];
+-[SBFloatingDockViewControllerDelegate isFloatingDockViewControllerPresentedOverTransitioningAppToAppContent:];
+-[SBFloatingDockViewControllerDelegate isFloatingDockViewControllerPresentedOverTransitioningSwitcherContent:];
+-[SBFloatingDockViewControllerDelegate libraryContainerViewControllerForFloatingDockViewController:];
+-[SBFloatingDockViewControllerDelegate minimumHomeScreenScaleForFloatingDockViewController:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewController:canHandleDataDropSession:inIconListView:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewController:dataDropSessionDidUpdate:inIconListView:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewController:didEndEditingWithUserIconCount:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewController:didFinishBouncingIconView:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewController:willStartBouncingIconView:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewControllerDidStartEditing:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewControllerShouldConstrainPlatterDuringEditing:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewControllerShouldHideWhenEmpty:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewDidBecomeVisible:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewDidResignVisible:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewWillBecomeVisible:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewWillResignVisible:];
+-[SBFloatingDockViewControllerDelegate floatingDockViewController:didChangeTotalIconCount:];
+```

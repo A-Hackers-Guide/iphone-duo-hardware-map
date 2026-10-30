@@ -1,0 +1,152 @@
+# `usr/standalone/firmware/t302/bfh_ofw.t302.ofw.sandisk_itlc_3d_g4_2p_512gb.bin`
+
+- File size: 688,128 bytes
+
+## Payload [FW]
+
+- Size after IM4P unwrap / decompression: 688,128 bytes
+- Format: raw binary
+
+## Identity strings (versions, build tags) [FW]
+
+- `-0123456789abcdef0123456789ABCDEFRTKit_iOS-1264.80.1.release`
+- `AppleMSP-2.8.10.2~1`
+- `RTKit: %s - Client: %s`
+- `s5e.ofw.sandisk_itlc_3d_g4_2p_512gb AppleMSP-2.8.10.2~1 2021/01/12@02:35:43 `
+
+## Strings (130) [FW]
+
+Printable runs of 6+ characters with at least three letters, in file order, with payload offset. For RTKit co-processor firmware these are the log formats, task names, endpoint names and assertions that describe what the processor does.
+
+```
+00001f91  wwwwwww<
+00016b4d  9A9lh.8lih8
+00016c67  ykjjxJ
+0001707c  *9A9)IA9jij8iii8jk(8
+0001a950  JYa9)Ea9
+0001c5b4  LIh8mA)
+0001d3c5  ZCX(L@9*D"
+0001ffd3  *Baa9jiD
+00020e49  P@9JEAP
+00025940  jij8kB
+000259e4  jij8k^
+00025a64  jij8jv
+00025a94  jij8jz
+00025ae4  jij8L`
+00026474  *khxKkhx
+00027913  K)uMJh1
+00027bd8  ,ik8Khk8
+0002a237  TTK@9@G@9
+0002a6a0  IG@9jBA
+0002a7b6  @yZG@9
+0002a8fe  @yZG@9
+0002ab2d  1W9zfF
+0002be29  jh8zkh8
+0002d3bd  ylxl!*
+0002d817  yKkw8_
+0002dd87  T`.@yaN@9a
+000300cc  ,ikxLi+xk
+00030105  zhx*i(8
+00030410  Kyhx+y(
+00030c92  E9(yhx
+00030db3  ZkJj8lG*
+00030f04  +ybxI;)
+00030fd8  iYixkyyx)
+00031934  -E@8njm8kj-8
+00032270  Bih8#=
+00032a0a  @8-ymx)
+00032b34  hzvxiz@y
+000332bc  Mil8m#
+000334f6  C9cxdxCx x
+0003357f  TJkh8+
+00033760  ,ikxLi+xk
+00034486  @ywB@9
+00035832  @ycVA9dB@9
+000359a7  ThVA9h
+00036903  TvGE9V
+000369cc  hB@yiJ4
+0003cb5b  RKi)8I
+0003cb7f  RKi)8k
+0003cb93  RIi+8K
+0003cdad  V3XjE@
+0003cfc5  E3XIE@
+0003d0b5  i,8hbh9i
+0003efcc  Kih8+i(8
+00040d18  Uii8Vih8
+000415d4  KA@yIA
+00043dc1  h88Hhx8
+0004408e  AxM1Axn
+00044573  *'h18Ghq8
+000448bf  T+yhxL
+00046334  )EIXH".
+0004b7d1   @9iKC
+0004c84d  yyxhk7xb{y
+0004ef84  ikh8Ik(8
+0005013a  @9J{uxmkx8
+000507b0  Likx+ikx
+000509a8  iii8Iu
+00051284  cY@yka@yl
+000526f6  AxM1Ax
+00052746  AxM1AxJ
+00056d16  @yiN@9h.
+00056da8  Lyixm!
+0005807f  Tlij8J
+00059ead  ZAyH/%X
+0005a902  $XaB@9
+0005ab3d  M@9Iyi
+0005e090  Lil8Mim8
+00065def  q$(Aza
+00069590  lii8-#
+0006b45c  kUl9*}_
+000716f5  !A9KmC
+00073f72  @yj-@9hyhxiy*xi-@9
+000741f3  rdb@9cf@9
+00074b4e  Byiy(x
+000757ad  zhx(%@
+00076464  *ihxJq
+00076f65  CByJr 
+0007f367  uuAOooq
+0007f778  RTKSTACK
+0007f8d1  Qkkbal
+0007fb8f  -0123456789abcdef0123456789ABCDEFRTKit_iOS-1264.80.1.release
+000800e0  dddd$ 1
+000801c8  s5e.ofw.sandisk_itlc_3d_g4_2p_512gb AppleMSP-2.8.10.2~1 2021/01/12@02:35:43 
+00080215  AppleMSP-2.8.10.2~1
+0008022a  AppleMSP-2.8.10.2.0
+0008025d  s5e.ofw.sandisk_itlc_3d_g4_2p_512gb-2.8.10.2.0
+00082385  MNOPQRSUW
+000824c0  AppleMspAsiDriver-1.87
+000828ac   ,$0(48<@LDPHT P
+000828c9   `hPp@`@`px
+00083ed8  UUUUUUUU
+00083f20  DDDDDDDD
+00086238  AppleMspFuseVersion - 1.41
+000865c4  stk_fail
+000865cd  RTKit: %s - Client: %s
+000865e4  <null>
+000865f4   Assert failed: [%u] arguments [0x%X, 0x%X, 0x%X, 0x%X]
+0008662c  itlc_3d_g4_2p_512
+00086641  ASI Device Info
+00086662  completion-read
+00086672  completion-misc
+00086682  completion-spi
+00086691  worker-0
+0008669a  worker-1
+000866a3  worker-2
+000866ac  worker-3
+0008f010  RTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACK
+0008f810  RTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACK
+00098fa8  __TEXT
+00098fc8  __DATA
+0009f368  __EXTENS
+0009f388  __EXTENS
+0009f3a8  __EXTENS
+0009f3c8  __EXTENS
+0009f3e8  __EXTENSfwsg
+000a2b58  h*@ytZ
+000a3b68  k!h9LQA
+000a50eb  Tji)8)
+000a5b9f  9ijt8@D
+000a65d8  __EXTENS
+000a65f8  __EXTENSfwsg
+```

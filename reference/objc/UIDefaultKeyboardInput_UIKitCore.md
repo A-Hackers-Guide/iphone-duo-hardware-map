@@ -1,0 +1,227 @@
+# `UIDefaultKeyboardInput`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `UIView`
+- Protocols: `UIKeyboardInput`, `UITextInputPrivate`
+- 1 instance variables, 122 properties, 83 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"UITextInputTraits" m_traits;
+```
+
+## Properties
+
+```
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+@property (T@"UITextInteractionAssistant",R,N) interactionAssistant;
+@property (TB,?,R,N) supportsEmojiImageTextAttachments;
+@property (Tq,?,N) selectionGranularity;
+@property (Tq,?,R,N) cursorBehavior;
+@property (T@"<UITextInputSuggestionDelegate>",?,R,N) textInputSuggestionDelegate;
+@property (Tq,?,N) _textInputSource;
+@property (T@"RTIInputSystemSourceSession",?,R,N) _rtiSourceSession;
+@property (TB,?,R,N) supportsImagePaste;
+@property (TB,?,N) _systemCursorAccessoriesDisabled;
+@property (TB,?,N) automaticallyAdjustsWritingDirection;
+@property (T@"UITextRange",C) selectedTextRange;
+@property (T@"UITextRange",R,N) markedTextRange;
+@property (T@"NSDictionary",C,N) markedTextStyle;
+@property (T@"UITextPosition",R,N) beginningOfDocument;
+@property (T@"UITextPosition",R,N) endOfDocument;
+@property (T@"<UITextInputDelegate>",W,N) inputDelegate;
+@property (T@"<UITextInputTokenizer>",R,N) tokenizer;
+@property (T@"UIView",?,R,N) textInputView;
+@property (Tq,?,N) selectionAffinity;
+@property (T@,?,R,N) insertDictationResultPlaceholder;
+@property (TB,?,N) supportsAdaptiveImageGlyph;
+@property (TB,?,R,N,GisEditable) editable;
+@property (T{CGRect={CGPoint=dd}{CGSize=dd}},?,R,N) unobscuredContentRect;
+@property (TB,R,N) hasText;
+@property (Tq,?,D,N) autocapitalizationType;
+@property (Tq,?,D,N) autocorrectionType;
+@property (Tq,?,D,N) spellCheckingType;
+@property (Tq,?,D,N) smartQuotesType;
+@property (Tq,?,D,N) smartDashesType;
+@property (Tq,?,D,N) smartInsertDeleteType;
+@property (Tq,?,N) inlinePredictionType;
+@property (Tq,?,N) mathExpressionCompletionType;
+@property (Tq,?,N) grammarCheckingType;
+@property (Tq,?,D,N) keyboardType;
+@property (Tq,?,D,N) keyboardAppearance;
+@property (Tq,?,D,N) returnKeyType;
+@property (TB,?,D,N) enablesReturnKeyAutomatically;
+@property (TB,?,D,N,GisSecureTextEntry) secureTextEntry;
+@property (T@"NSString",?,C,D,N) textContentType;
+@property (T@"UITextInputPasswordRules",?,C,N) passwordRules;
+@property (Tq,?) writingToolsBehavior;
+@property (TQ,?) allowedWritingToolsResultOptions;
+@property (T@"UIConversationContext",?,&,N) conversationContext;
+@property (TB,?,N) allowsNumberPadPopover;
+@property (T@"NSString",?,C,N) recentInputIdentifier;
+@property (T{_NSRange=QQ},?,N) validTextRange;
+@property (T@"NSIndexSet",?,C,N) PINEntrySeparatorIndexes;
+@property (T^{__CFCharacterSet=},?,D,N) textTrimmingSet;
+@property (T@"UIColor",?,&,D,N) insertionPointColor;
+@property (T@"UIColor",?,&,N) selectionBarColor;
+@property (T@"UIColor",?,&,N) selectionHighlightColor;
+@property (T@"UIImage",?,&,N) selectionDragDotImage;
+@property (T@"UIColor",?,&,N) selectionBorderColor;
+@property (Td,?,N) selectionBorderWidth;
+@property (Td,?,N) selectionCornerRadius;
+@property (T{UIEdgeInsets=dddd},?,N) selectionEdgeInsets;
+@property (T@"UIColor",?,&,N) matchHighlightColor;
+@property (T@"UIColor",?,&,N) underlineColorForTextAlternatives;
+@property (T@"UIColor",?,&,N) underlineColorForSpelling;
+@property (TQ,?,D,N) insertionPointWidth;
+@property (Ti,?,D,N) textLoupeVisibility;
+@property (Ti,?,D,N) textSelectionBehavior;
+@property (T@,?,D,N) textSuggestionDelegate;
+@property (TB,?,N) isSingleLineDocument;
+@property (TB,?,D,N) contentsIsSingleValue;
+@property (TB,?,N) hasDefaultContents;
+@property (TB,?,N) acceptsPayloads;
+@property (TB,?,D,N) acceptsEmoji;
+@property (TB,?,N) acceptsInitialEmojiKeyboard;
+@property (TB,?,N) acceptsDictationSearchResults;
+@property (TB,?,N) useAutomaticEndpointing;
+@property (TB,?,N) showDictationButton;
+@property (TB,?,N) forceEnableDictation;
+@property (TB,?,N) forceDisableDictation;
+@property (TB,?,N) preferKeyboardInput;
+@property (TB,?,N) forceSpellingDictation;
+@property (TB,?,N) forceDefaultDictationInfo;
+@property (Tq,?,N) forceDictationKeyboardType;
+@property (TB,?,N) preferOnlineDictation;
+@property (Ti,?,N) emptyContentReturnKeyType;
+@property (TB,?,N) returnKeyGoesToNextResponder;
+@property (TB,?,N) acceptsFloatingKeyboard;
+@property (TB,?,N) forceFloatingKeyboard;
+@property (T{UIEdgeInsets=dddd},?,N) floatingKeyboardEdgeInsets;
+@property (TB,?,N) acceptsSplitKeyboard;
+@property (TB,?,N) displaySecureTextUsingPlainText;
+@property (TB,?,N) displaySecureEditsUsingPlainText;
+@property (TB,?,N) learnsCorrections;
+@property (TB,?,N) typingAdaptationDisabled;
+@property (Ti,?,D,N) shortcutConversionType;
+@property (TB,?,N) suppressReturnKeyStyling;
+@property (TB,?,N) useInterfaceLanguageForLocalization;
+@property (TB,?,N) deferBecomingResponder;
+@property (TB,?,N) enablesReturnKeyOnNonWhiteSpaceContent;
+@property (T@"NSString",?,C,N) autocorrectionContext;
+@property (T@"NSString",?,C,N) responseContext;
+@property (T@"UIInputContextHistory",?,&,N) inputContextHistory;
+@property (TB,?,N) disableInputBars;
+@property (TB,?,N) isCarPlayIdiom;
+@property (Td,?,N) preferredInputViewHeight;
+@property (Tq,?,N) textScriptType;
+@property (TB,?,N) loadKeyboardsForSiriLanguage;
+@property (T@"_UISupplementalLexicon",?,&,N) supplementalLexicon;
+@property (T@"UIImage",?,&,N) supplementalLexiconAmbiguousItemIcon;
+@property (TB,?,N) disablePrediction;
+@property (TB,?,N) disableGenmojiCreationSuggestions;
+@property (Tq,?,N) inlineCompletionType;
+@property (Tq,?,N) allowsTextAnimationsType;
+@property (TQ,?,N) keyboardSuggestionOptions;
+@property (TB,?,N) hidePrediction;
+@property (TB,?,N) disableHandwritingKeyboard;
+@property (TB,?,N) intelligenceCursorEnabled;
+@property (TB,?,N,GisDevicePasscodeEntry) devicePasscodeEntry;
+@property (TB,?,R,N) wasEverSecureTextEntry;
+@property (Tq,?,N) preferredKeyboardStyle;
+@property (TB,?,N) prefersCompactNumberPadLayout;
+@property (T@"UITextRange",?,R,N) textRangeForServicesInteraction;
+@property (TQ,?) writingToolsAllowedInputOptions;
+```
+
+## Instance methods
+
+```
+-[UIDefaultKeyboardInput markedTextStyle];
+-[UIDefaultKeyboardInput firstRectForRange:];
+-[UIDefaultKeyboardInput offsetFromPosition:toPosition:];
+-[UIDefaultKeyboardInput endOfDocument];
+-[UIDefaultKeyboardInput tokenizer];
+-[UIDefaultKeyboardInput textInRange:];
+-[UIDefaultKeyboardInput textInputTraits];
+-[UIDefaultKeyboardInput comparePosition:toPosition:];
+-[UIDefaultKeyboardInput selectionRectsForRange:];
+-[UIDefaultKeyboardInput isEditable];
+-[UIDefaultKeyboardInput selectionRange];
+-[UIDefaultKeyboardInput baseWritingDirectionForPosition:inDirection:];
+-[UIDefaultKeyboardInput textRangeFromPosition:toPosition:];
+-[UIDefaultKeyboardInput caretRectForPosition:];
+-[UIDefaultKeyboardInput positionFromPosition:offset:];
+-[UIDefaultKeyboardInput hasText];
+-[UIDefaultKeyboardInput setBaseWritingDirection:forRange:];
+-[UIDefaultKeyboardInput beginningOfDocument];
+-[UIDefaultKeyboardInput isSecure];
+-[UIDefaultKeyboardInput selectedTextRange];
+-[UIDefaultKeyboardInput setSelectedTextRange:];
+-[UIDefaultKeyboardInput replaceRange:withText:];
+-[UIDefaultKeyboardInput markedTextRange];
+-[UIDefaultKeyboardInput interactionAssistant];
+-[UIDefaultKeyboardInput setSecure:];
+-[UIDefaultKeyboardInput setInputDelegate:];
+-[UIDefaultKeyboardInput inputDelegate];
+-[UIDefaultKeyboardInput insertText:];
+-[UIDefaultKeyboardInput text];
+-[UIDefaultKeyboardInput unmarkText];
+-[UIDefaultKeyboardInput isPosition:withinTextUnit:inDirection:];
+-[UIDefaultKeyboardInput isPosition:atBoundary:inDirection:];
+-[UIDefaultKeyboardInput forceDisableDictation];
+-[UIDefaultKeyboardInput positionFromPosition:toBoundary:inDirection:];
+-[UIDefaultKeyboardInput selectionView];
+-[UIDefaultKeyboardInput setAcceptsEmoji:];
+-[UIDefaultKeyboardInput forceEnableDictation];
+-[UIDefaultKeyboardInput textColorForCaretSelection];
+-[UIDefaultKeyboardInput visibleBounds];
+-[UIDefaultKeyboardInput confirmMarkedText:];
+-[UIDefaultKeyboardInput caretRect];
+-[UIDefaultKeyboardInput setMarkedTextStyle:];
+-[UIDefaultKeyboardInput acceptsEmoji];
+-[UIDefaultKeyboardInput setSelectionWithPoint:];
+-[UIDefaultKeyboardInput setForceEnableDictation:];
+-[UIDefaultKeyboardInput setForceDisableDictation:];
+-[UIDefaultKeyboardInput delegate];
+-[UIDefaultKeyboardInput methodSignatureForSelector:];
+-[UIDefaultKeyboardInput closestPositionToPoint:withinRange:];
+-[UIDefaultKeyboardInput characterRangeByExtendingPosition:inDirection:];
+-[UIDefaultKeyboardInput positionFromPosition:inDirection:offset:];
+-[UIDefaultKeyboardInput takeTraitsFrom:];
+-[UIDefaultKeyboardInput setText:];
+-[UIDefaultKeyboardInput positionWithinRange:farthestInDirection:];
+-[UIDefaultKeyboardInput updateSelection];
+-[UIDefaultKeyboardInput isEditing];
+-[UIDefaultKeyboardInput closestPositionToPoint:];
+-[UIDefaultKeyboardInput setMarkedText:selectedRange:];
+-[UIDefaultKeyboardInput selectAll];
+-[UIDefaultKeyboardInput characterRangeAtPoint:];
+-[UIDefaultKeyboardInput forwardInvocation:];
+-[UIDefaultKeyboardInput selectionState];
+-[UIDefaultKeyboardInput hasContent];
+-[UIDefaultKeyboardInput deleteBackward];
+-[UIDefaultKeyboardInput rangeEnclosingPosition:withGranularity:inDirection:];
+-[UIDefaultKeyboardInput setBecomesEditableWithGestures:];
+-[UIDefaultKeyboardInput becomesEditableWithGestures];
+-[UIDefaultKeyboardInput characterAfterCaretSelection];
+-[UIDefaultKeyboardInput characterBeforeCaretSelection];
+-[UIDefaultKeyboardInput characterInRelationToCaretSelection:];
+-[UIDefaultKeyboardInput convertCaretRect:];
+-[UIDefaultKeyboardInput extendCurrentSelection:];
+-[UIDefaultKeyboardInput fontForCaretSelection];
+-[UIDefaultKeyboardInput hasSelection];
+-[UIDefaultKeyboardInput isShowingPlaceholder];
+-[UIDefaultKeyboardInput rangeByExtendingCurrentSelection:];
+-[UIDefaultKeyboardInput rangeByMovingCurrentSelection:];
+-[UIDefaultKeyboardInput rectsForNSRange:];
+-[UIDefaultKeyboardInput replaceCurrentWordWithText:];
+-[UIDefaultKeyboardInput selectionAtDocumentStart];
+-[UIDefaultKeyboardInput selectionAtWordStart];
+-[UIDefaultKeyboardInput setupPlaceholderTextIfNeeded];
+-[UIDefaultKeyboardInput wordOffsetInRange:];
+```

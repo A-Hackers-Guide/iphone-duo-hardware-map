@@ -1,0 +1,2103 @@
+# Symbols: `/System/Library/PrivateFrameworks/TextInput.framework/TextInput`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__PrivateFrameworks__TextInput.framework__TextInput.md). **[DSC]**
+
+1,086 public symbols, 3,847 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1e0815478  __DATA_CONST,__const  _CIMMecabraSyllableSeparatorPinyin
+0x1e0815470  __DATA_CONST,__const  _CIMMecabraSyllableSeparatorZhuyin
+0x18a5a0658  __TEXT,__text  _IXAAdhocTestingLogFacility
+0x18a5a0294  __TEXT,__text  _IXACanLogMessageAtLevel
+0x18a5820a8  __TEXT,__text  _IXADefaultLogFacility
+0x18a5a05d8  __TEXT,__text  _IXAFeedbackLogFacility
+0x18a5a04d8  __TEXT,__text  _IXARevisionRateLogFacility
+0x18a5a0458  __TEXT,__text  _IXASessionAlignmentLogFacility
+0x18a5a03d8  __TEXT,__text  _IXASessionDetailsLogFacility
+0x18a5a0358  __TEXT,__text  _IXASessionEventsLogFacility
+0x18a5a0558  __TEXT,__text  _IXATypingEffortLogFacility
+0x1ef4ee600  __AUTH,__objc_data  _OBJC_CLASS_$_TIAccessibilityClient
+0x1ee1b9730  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIAdhocEventDispatcher
+0x1ef4ee5d8  __AUTH,__objc_data  _OBJC_CLASS_$_TIAnalyticsBooleanFieldSpec
+0x1ee1b9aa0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIAnalyticsEventSpec
+0x1ee1b9a78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIAnalyticsFieldSpec
+0x1ef4ee830  __AUTH,__objc_data  _OBJC_CLASS_$_TIAnalyticsMetricsContext
+0x1ee1b9a50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIAnalyticsNumberFieldSpec
+0x1ee1b9820  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIAnalyticsService
+0x1ee1b97d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIAnalyticsStringFieldSpec
+0x1ee1b9910  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIAnalyticsUtil
+0x1ee1b9ed8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIAssistantSettings
+0x1ef4ee880  __AUTH,__objc_data  _OBJC_CLASS_$_TIAttributedDocumentState
+0x1ee1b9cf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIAutocorrectionList
+0x1ef4eda70  __AUTH,__objc_data  _OBJC_CLASS_$_TIAutofill
+0x1ef4eda48  __AUTH,__objc_data  _OBJC_CLASS_$_TIAutoshiftController
+0x1ee1b9b90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TICandidateRequestToken
+0x1ee1b9708  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TICharacterSetDescription
+0x1ef4eda20  __AUTH,__objc_data  _OBJC_CLASS_$_TIChineseShared
+0x1ef4ed9f8  __AUTH,__objc_data  _OBJC_CLASS_$_TICompositeMecabraCandidate
+0x1ee1b9190  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TICorrectionCandidates
+0x1ee1b9960  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIDocumentState
+0x1ef4ed9d0  __AUTH,__objc_data  _OBJC_CLASS_$_TIFacemarkSorter
+0x1ef4ed9a8  __AUTH,__objc_data  _OBJC_CLASS_$_TIFeedbackUtil
+0x1ef4ed980  __AUTH,__objc_data  _OBJC_CLASS_$_TIHandwritingCandidate
+0x1ef4ee5b0  __AUTH,__objc_data  _OBJC_CLASS_$_TIHandwritingStrokes
+0x1ef4ed958  __AUTH,__objc_data  _OBJC_CLASS_$_TIHardwareKeyboardLayout
+0x1ee1b9e88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIImageCacheClient
+0x1ee1b92d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIImageCacheItem
+0x1ee1b9d70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIInputContextHistory
+0x1ef4ec508  __AUTH,__objc_data  _OBJC_CLASS_$_TIInputModeAssetStatusManager
+0x1ee1ba220  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIInputModeController
+0x1ee1b9640  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyEventMap
+0x1ef4ed930  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyEventMapTransliteration
+0x1ef4ed908  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyEventMapTransliteration_bn
+0x1ef4ed8e0  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyEventMap_ja
+0x1ef4ed8b8  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyEventMap_ja_LiveConversion
+0x1ef4ed890  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyEventMap_zh
+0x1ef4ed868  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyEventMap_zh_Hans_Pinyin
+0x1ef4ed840  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyEventMap_zh_Hans_Stroke
+0x1ef4ed818  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyEventMap_zh_Hans_Wubixing
+0x1ef4ed7f0  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyEventMap_zh_Hant_Cangjie
+0x1ef4ed7c8  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyEventMap_zh_Hant_Pinyin
+0x1ef4ed7a0  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyEventMap_zh_Hant_Stroke
+0x1ef4ed778  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyEventMap_zh_Hant_Zhuyin
+0x1ef4ed750  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyEventMap_zh_Hant_Zhuyin_LiveConversion
+0x1ef4ed728  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyEventMap_zh_Phonetic
+0x1ef4ed700  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyEventMap_zh_Stroke
+0x1ee1b9370  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardBehaviorState
+0x1ee1b9618  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardBehaviors
+0x1ef4ed6d8  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardBehaviors_Autocorrect
+0x1ef4ed6b0  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardBehaviors_Cangjie
+0x1ef4ed688  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardBehaviors_Handwriting
+0x1ef4ed660  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardBehaviors_Japanese
+0x1ef4ed638  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardBehaviors_Japanese_LiveConversion
+0x1ef4ed610  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardBehaviors_Pinyin
+0x1ef4ed5e8  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardBehaviors_ShapeBased
+0x1ef4ed5c0  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardBehaviors_Simple
+0x1ef4ed598  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardBehaviors_Thai
+0x1ef4ec4e0  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardBehaviors_Thai_24Key
+0x1ef4ed570  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardBehaviors_WaitingForCandidates
+0x1ef4ed548  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardBehaviors_Wubixing
+0x1ef4ed520  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardBehaviors_Zhuyin
+0x1ef4ed4f8  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardBehaviors_Zhuyin_LiveConversion
+0x1ee1ba270  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardCandidate
+0x1ef4ee560  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardCandidateGroup
+0x1ee1b98e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardCandidateResultSet
+0x1ef4ed4d0  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardCandidateResultSetCoder
+0x1ee1b93c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardCandidateSingle
+0x1ee1b9e10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardConfiguration
+0x1ee1b9be0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardInput
+0x1ee1b9fa0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardInputManagerClient
+0x1ee1b95f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardInputManagerClientRequest
+0x1ee1b98c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardInputManagerState
+0x1ee1ba0b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardInputManagerStub
+0x1ee1b95c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardIntermediateText
+0x1ef4ed4a8  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardKeyBehaviors
+0x1ee1ba090  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardLayout
+0x1ef4ed480  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardLayoutFactory
+0x1ee1b95a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardLayoutState
+0x1ee1b9cd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardOutput
+0x1ef4ee808  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyboardSecureCandidateLayoutTraits
+0x1ee1b9578  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardSecureCandidateRGBColor
+0x1ee1b9550  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardSecureCandidateRenderTraits
+0x1ee1b9528  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardSecureCandidateTextTraits
+0x1ee1b90f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardShortcut
+0x1ee1ba068  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardState
+0x1ee1ba040  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardTouchEvent
+0x1ef4ed458  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyedArchiver
+0x1ef4ed430  __AUTH,__objc_data  _OBJC_CLASS_$_TIKeyedUnarchiver
+0x1ef4ed408  __AUTH,__objc_data  _OBJC_CLASS_$_TILabeledKeyboardCandidate
+0x1ef4ed3e0  __AUTH,__objc_data  _OBJC_CLASS_$_TILexicon
+0x1ef4ed3b8  __AUTH,__objc_data  _OBJC_CLASS_$_TILexiconEntry
+0x1ef4ee970  __AUTH,__objc_data  _OBJC_CLASS_$_TILinguisticAssetDownloadClient
+0x1ef4ed390  __AUTH,__objc_data  _OBJC_CLASS_$_TILinguisticAssetDownloadClientMock
+0x1ef4ed368  __AUTH,__objc_data  _OBJC_CLASS_$_TILiveConversionCandidate
+0x1ef4ee538  __AUTH,__objc_data  _OBJC_CLASS_$_TIMecabraCandidate
+0x1ef4ec3f0  __AUTH,__objc_data  _OBJC_CLASS_$_TIMecabraComposedCharacterCandidate
+0x1ef4ed340  __AUTH,__objc_data  _OBJC_CLASS_$_TIMecabraFacemarkCandidate
+0x1ef4ee510  __AUTH,__objc_data  _OBJC_CLASS_$_TIMutableCharacterSetDescription
+0x1ef4ee948  __AUTH,__objc_data  _OBJC_CLASS_$_TIMutableInputContextEntry
+0x1ef4ed318  __AUTH,__objc_data  _OBJC_CLASS_$_TIPinyinDisambiguationCandidate
+0x1ee1ba388  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIPreferencesController
+0x1ee1ba1a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIPreferencesControllerClient
+0x1ef4ee4e8  __AUTH,__objc_data  _OBJC_CLASS_$_TIPreferencesControllerService
+0x1ef4ed2f0  __AUTH,__objc_data  _OBJC_CLASS_$_TIRecentInputs
+0x1ef4ec4b8  __AUTH,__objc_data  _OBJC_CLASS_$_TIRecentInputsSecureContext
+0x1ef4edbd8  __AUTH,__objc_data  _OBJC_CLASS_$_TIShortcutConversionCandidate
+0x1ef4ee920  __AUTH,__objc_data  _OBJC_CLASS_$_TISmartInsertDeleteController
+0x1ee1b9f78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TISmartPunctuationController
+0x1ee1b9e38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TISmartPunctuationOptions
+0x1ee1b9320  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIStatisticChange
+0x1ee1b99b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIStatisticChangeCache
+0x1ee1b9af0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIStatisticKey
+0x1ee1b9c30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TISticker
+0x1ee1b9ca8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIStickerRepresentation
+0x1ee1b9dc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TISupplementalItem
+0x1ee1b9168  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TISupplementalLexicon
+0x1ef4ee7e0  __AUTH,__objc_data  _OBJC_CLASS_$_TISupplementalPersonItem
+0x1ef4ee498  __AUTH,__objc_data  _OBJC_CLASS_$_TISupplementalPhraseItem
+0x1ee1b9280  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TITextAnimationCandidate
+0x1ee1ba108  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TITextInputTraits
+0x1ef4ed1d8  __AUTH,__objc_data  _OBJC_CLASS_$_TITraceLogRecordContextEntry
+0x1ef4ee470  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyLog
+0x1ef4ee420  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyRecord
+0x1ef4ed188  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyRecordAcceptedCandidate
+0x1ef4ee3f8  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyRecordAutocorrections
+0x1ef4ed160  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyRecordCandidateRejected
+0x1ef4ed138  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyRecordCandidateResultSet
+0x1ef4ee3d0  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyRecordGroupMarker
+0x1ef4ee3a8  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyRecordHitTest
+0x1ef4ee380  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyRecordKeyboardInput
+0x1ef4ee358  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyRecordKeyboardLayout
+0x1ef4ed110  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyRecordLastAcceptedCandidateCorrected
+0x1ef4ed0e8  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyRecordPhraseBoundaryAdjustment
+0x1ef4ed0c0  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyRecordRefinements
+0x1ef4edb88  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyRecordReplacements
+0x1ef4edb60  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyRecordSetOriginalInput
+0x1ef4ee330  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyRecordSkipHitTest
+0x1ef4ee308  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyRecordSync
+0x1ef4ee2e0  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyRecordTextAccepted
+0x1ef4ee2b8  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyStatistic
+0x1ef4ed098  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyStatisticAutocorrectionListUI
+0x1ef4ee290  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyStatisticBasicCounts
+0x1ef4ee268  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyStatisticComposite
+0x1ef4ee240  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyStatisticCurrentAutocorrections
+0x1ef4ed070  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyStatisticRankCandidatesAccepted
+0x1ef4ee218  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyStatisticTimeElapsed
+0x1ef4ee1f0  __AUTH,__objc_data  _OBJC_CLASS_$_TITypologyStatisticTypingSpeed
+0x1ef4ed048  __AUTH,__objc_data  _OBJC_CLASS_$_TIUserDictionaryEntryValue
+0x1ef4ed020  __AUTH,__objc_data  _OBJC_CLASS_$_TIUserDictionaryTransaction
+0x1ef4ecff8  __AUTH,__objc_data  _OBJC_CLASS_$_TIUserDictionaryWord
+0x1ef4ec3c8  __AUTH,__objc_data  _OBJC_CLASS_$_TIUserDirectoryTraderClient
+0x1ef4ee7b8  __AUTH,__objc_data  _OBJC_CLASS_$_TIUserModel
+0x1ef4ee1a0  __AUTH,__objc_data  _OBJC_CLASS_$_TIUserModelCounter
+0x1ef4ee790  __AUTH,__objc_data  _OBJC_CLASS_$_TIUserModelDataStore
+0x1ef4ee178  __AUTH,__objc_data  _OBJC_CLASS_$_TIUserModelDataStoreDurableEntry
+0x1ef4ee150  __AUTH,__objc_data  _OBJC_CLASS_$_TIUserModelDataStoreEntry
+0x1ef4ee768  __AUTH,__objc_data  _OBJC_CLASS_$_TIUserModelIndexedCounter
+0x1ef4ee740  __AUTH,__objc_data  _OBJC_CLASS_$_TIUserModelValues
+0x1ef4eea10  __AUTH,__objc_data  _OBJC_CLASS_$_TIWordTokenizer
+0x1ee1b9230  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIZephyrCandidate
+0x1ef4ee128  __AUTH,__objc_data  _OBJC_CLASS_$__TIKeyboardSecureCandidate
+0x1eb3efdb8  __DATA,__objc_ivar  OBJC_IVAR_$_TILiveConversionCandidate._candidate
+0x1eb3f0258  __DATA,__objc_ivar  OBJC_IVAR_$_TIWordTokenizer.m_bufferOffset
+0x1eb3f024c  __DATA,__objc_ivar  OBJC_IVAR_$_TIWordTokenizer.m_inlineBuffer
+0x1eb3f0254  __DATA,__objc_ivar  OBJC_IVAR_$_TIWordTokenizer.m_searchRange
+0x1eb3f0248  __DATA,__objc_ivar  OBJC_IVAR_$_TIWordTokenizer.m_string
+0x1eb3f0250  __DATA,__objc_ivar  OBJC_IVAR_$_TIWordTokenizer.m_tokenRange
+0x1ef4ee100  __AUTH,__objc_data  _OBJC_METACLASS_$_TIAccessibilityClient
+0x1ee1b96b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIAdhocEventDispatcher
+0x1ef4ee0d8  __AUTH,__objc_data  _OBJC_METACLASS_$_TIAnalyticsBooleanFieldSpec
+0x1ee1b9a28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIAnalyticsEventSpec
+0x1ee1b9a00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIAnalyticsFieldSpec
+0x1ef4ee718  __AUTH,__objc_data  _OBJC_METACLASS_$_TIAnalyticsMetricsContext
+0x1ee1b99d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIAnalyticsNumberFieldSpec
+0x1ee1b97a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIAnalyticsService
+0x1ee1b9758  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIAnalyticsStringFieldSpec
+0x1ee1b9898  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIAnalyticsUtil
+0x1ee1b9f00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIAssistantSettings
+0x1ef4ee858  __AUTH,__objc_data  _OBJC_METACLASS_$_TIAttributedDocumentState
+0x1ee1b9c80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIAutocorrectionList
+0x1ef4ecfd0  __AUTH,__objc_data  _OBJC_METACLASS_$_TIAutofill
+0x1ef4ecfa8  __AUTH,__objc_data  _OBJC_METACLASS_$_TIAutoshiftController
+0x1ee1b9b68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TICandidateRequestToken
+0x1ee1b9690  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TICharacterSetDescription
+0x1ef4ecf80  __AUTH,__objc_data  _OBJC_METACLASS_$_TIChineseShared
+0x1ef4ecf58  __AUTH,__objc_data  _OBJC_METACLASS_$_TICompositeMecabraCandidate
+0x1ee1b9140  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TICorrectionCandidates
+0x1ee1b9938  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIDocumentState
+0x1ef4ecf30  __AUTH,__objc_data  _OBJC_METACLASS_$_TIFacemarkSorter
+0x1ef4ecf08  __AUTH,__objc_data  _OBJC_METACLASS_$_TIFeedbackUtil
+0x1ef4ecee0  __AUTH,__objc_data  _OBJC_METACLASS_$_TIHandwritingCandidate
+0x1ef4ee0b0  __AUTH,__objc_data  _OBJC_METACLASS_$_TIHandwritingStrokes
+0x1ef4eceb8  __AUTH,__objc_data  _OBJC_METACLASS_$_TIHardwareKeyboardLayout
+0x1ee1b9eb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIImageCacheClient
+0x1ee1b92a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIImageCacheItem
+0x1ee1b9d48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIInputContextHistory
+0x1ef4ec468  __AUTH,__objc_data  _OBJC_METACLASS_$_TIInputModeAssetStatusManager
+0x1ee1ba1f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIInputModeController
+0x1ee1b9500  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyEventMap
+0x1ef4ece90  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyEventMapTransliteration
+0x1ef4ece68  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyEventMapTransliteration_bn
+0x1ef4ece40  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyEventMap_ja
+0x1ef4ece18  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyEventMap_ja_LiveConversion
+0x1ef4ecdf0  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyEventMap_zh
+0x1ef4ecdc8  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyEventMap_zh_Hans_Pinyin
+0x1ef4ecda0  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyEventMap_zh_Hans_Stroke
+0x1ef4ecd78  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyEventMap_zh_Hans_Wubixing
+0x1ef4ecd50  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyEventMap_zh_Hant_Cangjie
+0x1ef4ecd28  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyEventMap_zh_Hant_Pinyin
+0x1ef4ecd00  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyEventMap_zh_Hant_Stroke
+0x1ef4eccd8  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyEventMap_zh_Hant_Zhuyin
+0x1ef4eccb0  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyEventMap_zh_Hant_Zhuyin_LiveConversion
+0x1ef4ecc88  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyEventMap_zh_Phonetic
+0x1ef4ecc60  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyEventMap_zh_Stroke
+0x1ee1b9348  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardBehaviorState
+0x1ee1b94d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardBehaviors
+0x1ef4ecc38  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardBehaviors_Autocorrect
+0x1ef4ecc10  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardBehaviors_Cangjie
+0x1ef4ecbe8  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardBehaviors_Handwriting
+0x1ef4ecbc0  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardBehaviors_Japanese
+0x1ef4ecb98  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardBehaviors_Japanese_LiveConversion
+0x1ef4ecb70  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardBehaviors_Pinyin
+0x1ef4ecb48  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardBehaviors_ShapeBased
+0x1ef4ecb20  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardBehaviors_Simple
+0x1ef4ecaf8  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardBehaviors_Thai
+0x1ef4ec440  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardBehaviors_Thai_24Key
+0x1ef4ecad0  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardBehaviors_WaitingForCandidates
+0x1ef4ecaa8  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardBehaviors_Wubixing
+0x1ef4eca80  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardBehaviors_Zhuyin
+0x1ef4eca58  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardBehaviors_Zhuyin_LiveConversion
+0x1ee1ba248  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardCandidate
+0x1ef4ee060  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardCandidateGroup
+0x1ee1b9870  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardCandidateResultSet
+0x1ef4eca30  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardCandidateResultSetCoder
+0x1ee1b9398  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardCandidateSingle
+0x1ee1b9de8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardConfiguration
+0x1ee1b9bb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardInput
+0x1ee1b9f50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardInputManagerClient
+0x1ee1b94b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardInputManagerClientRequest
+0x1ee1b9848  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardInputManagerState
+0x1ee1ba018  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardInputManagerStub
+0x1ee1b9488  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardIntermediateText
+0x1ef4eca08  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardKeyBehaviors
+0x1ee1b9ff0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardLayout
+0x1ef4ec9e0  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardLayoutFactory
+0x1ee1b9460  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardLayoutState
+0x1ee1b9c58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardOutput
+0x1ef4ee6f0  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyboardSecureCandidateLayoutTraits
+0x1ee1b9438  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardSecureCandidateRGBColor
+0x1ee1b9410  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardSecureCandidateRenderTraits
+0x1ee1b93e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardSecureCandidateTextTraits
+0x1ee1b90c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardShortcut
+0x1ee1ba0e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardState
+0x1ee1b9fc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardTouchEvent
+0x1ef4ec9b8  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyedArchiver
+0x1ef4ec990  __AUTH,__objc_data  _OBJC_METACLASS_$_TIKeyedUnarchiver
+0x1ef4ec968  __AUTH,__objc_data  _OBJC_METACLASS_$_TILabeledKeyboardCandidate
+0x1ef4ec940  __AUTH,__objc_data  _OBJC_METACLASS_$_TILexicon
+0x1ef4ec918  __AUTH,__objc_data  _OBJC_METACLASS_$_TILexiconEntry
+0x1ef4ee8d0  __AUTH,__objc_data  _OBJC_METACLASS_$_TILinguisticAssetDownloadClient
+0x1ef4ec8f0  __AUTH,__objc_data  _OBJC_METACLASS_$_TILinguisticAssetDownloadClientMock
+0x1ef4ec8c8  __AUTH,__objc_data  _OBJC_METACLASS_$_TILiveConversionCandidate
+0x1ef4ee038  __AUTH,__objc_data  _OBJC_METACLASS_$_TIMecabraCandidate
+0x1ef4ec3a0  __AUTH,__objc_data  _OBJC_METACLASS_$_TIMecabraComposedCharacterCandidate
+0x1ef4ec8a0  __AUTH,__objc_data  _OBJC_METACLASS_$_TIMecabraFacemarkCandidate
+0x1ef4ee010  __AUTH,__objc_data  _OBJC_METACLASS_$_TIMutableCharacterSetDescription
+0x1ef4ee8a8  __AUTH,__objc_data  _OBJC_METACLASS_$_TIMutableInputContextEntry
+0x1ef4ec878  __AUTH,__objc_data  _OBJC_METACLASS_$_TIPinyinDisambiguationCandidate
+0x1ee1ba3b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIPreferencesController
+0x1ee1ba1d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIPreferencesControllerClient
+0x1ef4edfe8  __AUTH,__objc_data  _OBJC_METACLASS_$_TIPreferencesControllerService
+0x1ef4ec850  __AUTH,__objc_data  _OBJC_METACLASS_$_TIRecentInputs
+0x1ef4ec418  __AUTH,__objc_data  _OBJC_METACLASS_$_TIRecentInputsSecureContext
+0x1ef4edb10  __AUTH,__objc_data  _OBJC_METACLASS_$_TIShortcutConversionCandidate
+0x1ef4ee9e8  __AUTH,__objc_data  _OBJC_METACLASS_$_TISmartInsertDeleteController
+0x1ee1b9f28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TISmartPunctuationController
+0x1ee1b9e60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TISmartPunctuationOptions
+0x1ee1b92f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIStatisticChange
+0x1ee1b9988  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIStatisticChangeCache
+0x1ee1b9b40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIStatisticKey
+0x1ee1b9c08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TISticker
+0x1ee1b9d20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIStickerRepresentation
+0x1ee1b9d98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TISupplementalItem
+0x1ee1b9118  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TISupplementalLexicon
+0x1ef4ee6c8  __AUTH,__objc_data  _OBJC_METACLASS_$_TISupplementalPersonItem
+0x1ef4edf98  __AUTH,__objc_data  _OBJC_METACLASS_$_TISupplementalPhraseItem
+0x1ee1b9258  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TITextAnimationCandidate
+0x1ee1ba130  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TITextInputTraits
+0x1ef4ec738  __AUTH,__objc_data  _OBJC_METACLASS_$_TITraceLogRecordContextEntry
+0x1ef4edf70  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyLog
+0x1ef4edf20  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyRecord
+0x1ef4ec6e8  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyRecordAcceptedCandidate
+0x1ef4edef8  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyRecordAutocorrections
+0x1ef4ec6c0  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyRecordCandidateRejected
+0x1ef4ec698  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyRecordCandidateResultSet
+0x1ef4eded0  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyRecordGroupMarker
+0x1ef4edea8  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyRecordHitTest
+0x1ef4ede80  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyRecordKeyboardInput
+0x1ef4ede58  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyRecordKeyboardLayout
+0x1ef4ec670  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyRecordLastAcceptedCandidateCorrected
+0x1ef4ec648  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyRecordPhraseBoundaryAdjustment
+0x1ef4ec620  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyRecordRefinements
+0x1ef4edac0  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyRecordReplacements
+0x1ef4eda98  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyRecordSetOriginalInput
+0x1ef4ede30  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyRecordSkipHitTest
+0x1ef4ede08  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyRecordSync
+0x1ef4edde0  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyRecordTextAccepted
+0x1ef4eddb8  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyStatistic
+0x1ef4ec5f8  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyStatisticAutocorrectionListUI
+0x1ef4edd90  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyStatisticBasicCounts
+0x1ef4edd68  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyStatisticComposite
+0x1ef4edd40  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyStatisticCurrentAutocorrections
+0x1ef4ec5d0  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyStatisticRankCandidatesAccepted
+0x1ef4edd18  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyStatisticTimeElapsed
+0x1ef4edcf0  __AUTH,__objc_data  _OBJC_METACLASS_$_TITypologyStatisticTypingSpeed
+0x1ef4ec5a8  __AUTH,__objc_data  _OBJC_METACLASS_$_TIUserDictionaryEntryValue
+0x1ef4ec580  __AUTH,__objc_data  _OBJC_METACLASS_$_TIUserDictionaryTransaction
+0x1ef4ec558  __AUTH,__objc_data  _OBJC_METACLASS_$_TIUserDictionaryWord
+0x1ef4ec378  __AUTH,__objc_data  _OBJC_METACLASS_$_TIUserDirectoryTraderClient
+0x1ef4ee6a0  __AUTH,__objc_data  _OBJC_METACLASS_$_TIUserModel
+0x1ef4edca0  __AUTH,__objc_data  _OBJC_METACLASS_$_TIUserModelCounter
+0x1ef4ee678  __AUTH,__objc_data  _OBJC_METACLASS_$_TIUserModelDataStore
+0x1ef4edc78  __AUTH,__objc_data  _OBJC_METACLASS_$_TIUserModelDataStoreDurableEntry
+0x1ef4edc50  __AUTH,__objc_data  _OBJC_METACLASS_$_TIUserModelDataStoreEntry
+0x1ef4ee650  __AUTH,__objc_data  _OBJC_METACLASS_$_TIUserModelIndexedCounter
+0x1ef4ee628  __AUTH,__objc_data  _OBJC_METACLASS_$_TIUserModelValues
+0x1ef4ee9c0  __AUTH,__objc_data  _OBJC_METACLASS_$_TIWordTokenizer
+0x1ee1b9208  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIZephyrCandidate
+0x1ef4edc28  __AUTH,__objc_data  _OBJC_METACLASS_$__TIKeyboardSecureCandidate
+0x1e0815468  __DATA_CONST,__const  _TIAccessibilityServiceName
+0x1e0815460  __DATA_CONST,__const  _TIActiveMultilingualKeyboardDictationMappingsPreference
+0x1e0815458  __DATA_CONST,__const  _TIAddressBookChangedNotification
+0x1e0815450  __DATA_CONST,__const  _TIAnalyticsErrorDomain
+0x1e0815448  __DATA_CONST,__const  _TIAnalyticsFieldErrorDomain
+0x1e0815440  __DATA_CONST,__const  _TIAnalyticsInputAnalyticsDomain
+0x1e0815438  __DATA_CONST,__const  _TIAnalyticsKeyboardDomain
+0x1e0815430  __DATA_CONST,__const  _TIAppleKeyboardsExpandedPreference
+0x1e0815428  __DATA_CONST,__const  _TIAppleKeyboardsIncludeIntlPreference
+0x1e0815420  __DATA_CONST,__const  _TIAppleKeyboardsPreference
+0x1e0815418  __DATA_CONST,__const  _TIAppleLanguagesPreference
+0x1e0815410  __DATA_CONST,__const  _TIAppleLocalePreference
+0x1e0815408  __DATA_CONST,__const  _TIApplePasscodeKeyboardsPreference
+0x1e0815400  __DATA_CONST,__const  _TIArchivedInputModeConfigurationInputModesKey
+0x1e08153f8  __DATA_CONST,__const  _TIArchivedInputModeConfigurationPlatformKey
+0x1e08153f0  __DATA_CONST,__const  _TIArchivedInputModeConfigurationPlatform_iOS
+0x1e08153e8  __DATA_CONST,__const  _TIArchivedInputModeConfigurationPlatform_macOS
+0x1e08153e0  __DATA_CONST,__const  _TIArchivedInputModeConfigurationPreferredLanguagesKey
+0x1e08153d8  __DATA_CONST,__const  _TIArchivedInputModeConfigurationPreferredLocaleKey
+0x1e08153d0  __DATA_CONST,__const  _TIArchivedInputModeConfigurationVersionKey
+0x1e08153c8  __DATA_CONST,__const  _TIAssistiveTouchMouseAlwaysShowSoftwareKeyboardPreference
+0x1e08153c0  __DATA_CONST,__const  _TIAutofillServiceName
+0x1e08153b8  __DATA_CONST,__const  _TIAutomaticMinimizationEnabledPreference
+0x18a5ad9d8  __TEXT,__text  _TIBundleForInputMode
+0x18a5802e0  __TEXT,__text  _TIBundlePathForInputMode
+0x1e08153b0  __DATA_CONST,__const  _TICandidateAcceptedTriggerAutocorrectionBubble
+0x1e08153a8  __DATA_CONST,__const  _TICandidateAcceptedTriggerReversionBubble
+0x1e08153a0  __DATA_CONST,__const  _TICandidateAcceptedTriggerRevisionBubble
+0x1e0815398  __DATA_CONST,__const  _TICandidateAcceptedTriggerUnknown
+0x1e0815390  __DATA_CONST,__const  _TICandidateAcceptedTriggerUserBeganContinuousPath
+0x1e0815388  __DATA_CONST,__const  _TICandidateAcceptedTriggerUserSelectedCandidate
+0x18a580ab8  __TEXT,__text  _TICanonicalInputModeName
+0x1e0815380  __DATA_CONST,__const  _TIChaiziOnlyShowRareCharactersPreference
+0x1e0815378  __DATA_CONST,__const  _TIChaiziOnlyShowRarePronunciationsPreference
+0x18a597794  __TEXT,__text  _TICharEstablishesContextForDoubleSpacePeriod
+0x18a597440  __TEXT,__text  _TICharIsAlphaNumeric
+0x18a597478  __TEXT,__text  _TICharIsCJScript
+0x18a597814  __TEXT,__text  _TICharIsComposableAccent
+0x18a59756c  __TEXT,__text  _TICharIsDelete
+0x18a5976d8  __TEXT,__text  _TICharIsDelimitingNumber
+0x18a5974e0  __TEXT,__text  _TICharIsDevanagariPUA
+0x18a5975a0  __TEXT,__text  _TICharIsEAFullwidthOrWide
+0x18a59757c  __TEXT,__text  _TICharIsEAWidth
+0x18a5975c8  __TEXT,__text  _TICharIsIdeographic
+0x18a597740  __TEXT,__text  _TICharIsLeftAssociative
+0x18a59765c  __TEXT,__text  _TICharIsNewlineOrReturn
+0x18a59766c  __TEXT,__text  _TICharIsNumber
+0x18a5976a4  __TEXT,__text  _TICharIsNumberDelimiter
+0x18a5976c0  __TEXT,__text  _TICharIsNumberModifier
+0x18a59775c  __TEXT,__text  _TICharIsPunctuation
+0x18a5975ec  __TEXT,__text  _TICharIsSpace
+0x18a597624  __TEXT,__text  _TICharIsSpaceOrReturn
+0x1e0815370  __DATA_CONST,__const  _TICompactAssistantBarPersistentLocationPreference
+0x1e0815368  __DATA_CONST,__const  _TIContextChangeTriggerArrowKey
+0x1e0815360  __DATA_CONST,__const  _TIContextChangeTriggerCut
+0x1e0815358  __DATA_CONST,__const  _TIContextChangeTriggerGainFocus
+0x1e0815350  __DATA_CONST,__const  _TIContextChangeTriggerLoseFocus
+0x1e0815348  __DATA_CONST,__const  _TIContextChangeTriggerPaste
+0x1e0815340  __DATA_CONST,__const  _TIContextChangeTriggerRapidDeletion
+0x1e0815338  __DATA_CONST,__const  _TIContextChangeTriggerRedo
+0x1e0815330  __DATA_CONST,__const  _TIContextChangeTriggerSelectionChange
+0x1e0815328  __DATA_CONST,__const  _TIContextChangeTriggerUndo
+0x1e0815320  __DATA_CONST,__const  _TIContextChangeTriggerUnknown
+0x1e0815318  __DATA_CONST,__const  _TIContextChangeTriggerWordDeletion
+0x1e0815310  __DATA_CONST,__const  _TIConversionOnSearchFieldPreference
+0x1e0815308  __DATA_CONST,__const  _TICustomerTypologyEnabledByDiagnosticExtensionPreference
+0x18a5add8c  __TEXT,__text  _TIDeltaUnigramsFilePathForInputModeAndFileExtension
+0x1e0815300  __DATA_CONST,__const  _TIDictationAsPrimaryInputModePreference
+0x1e08152f8  __DATA_CONST,__const  _TIDictationAsPrimaryInputModeResetAtNewSessionPreference
+0x1e08152f0  __DATA_CONST,__const  _TIDictationAutoPunctuationEnabledPreference
+0x1e08152e8  __DATA_CONST,__const  _TIDictationClearAllCommandTipShownCountPreference
+0x1e08152e0  __DATA_CONST,__const  _TIDictationCommandTipsEnabledPreference
+0x1e08152d8  __DATA_CONST,__const  _TIDictationDeletionCommandTipShownCountPreference
+0x1e08152d0  __DATA_CONST,__const  _TIDictationDeletionCommandTipShownPreference
+0x1e08152c8  __DATA_CONST,__const  _TIDictationDisableInlinePopoverUIPreference
+0x1e08152c0  __DATA_CONST,__const  _TIDictationDisableTapAnywhereToDisablePreference
+0x1e08152b8  __DATA_CONST,__const  _TIDictationEmojiCommandTipShownCountPreference
+0x1e08152b0  __DATA_CONST,__const  _TIDictationEmojiCommandTipShownPreference
+0x1e08152a8  __DATA_CONST,__const  _TIDictationEnabledPreference
+0x1e08152a0  __DATA_CONST,__const  _TIDictationInsertionCommandTipShownCountPreference
+0x1e0815298  __DATA_CONST,__const  _TIDictationInsertionCommandTipShownPreference
+0x1e0815290  __DATA_CONST,__const  _TIDictationLanguagesEnabledPreference
+0x1e0815288  __DATA_CONST,__const  _TIDictationLanguagesLastUsedPreference
+0x1e0815280  __DATA_CONST,__const  _TIDictationModelessInputTipShownCountPreference
+0x1e0815278  __DATA_CONST,__const  _TIDictationOneTipPerDayEnabledPreference
+0x1e0815270  __DATA_CONST,__const  _TIDictationReplacementCommandTipShownCountPreference
+0x1e0815268  __DATA_CONST,__const  _TIDictationReplacementCommandTipShownPreference
+0x1e0815260  __DATA_CONST,__const  _TIDictationSelectionCommandTipShownCountPreference
+0x1e0815258  __DATA_CONST,__const  _TIDictationSelectionCommandTipShownPreference
+0x1e0815250  __DATA_CONST,__const  _TIDictationSendMessageCommandTipShownCountPreference
+0x1e0815248  __DATA_CONST,__const  _TIDictationStopCommandTipShownCountPreference
+0x1e0815240  __DATA_CONST,__const  _TIDictationStopCommandTipShownPreference
+0x1e0815238  __DATA_CONST,__const  _TIDictationTipContextualPreference
+0x1e0815230  __DATA_CONST,__const  _TIDictationTipLastShownDatePreference
+0x1e0815228  __DATA_CONST,__const  _TIDictationTipsDisplayCountLimitPreference
+0x1e0815220  __DATA_CONST,__const  _TIDictationWordwiseBackspaceEnabledPreference
+0x1e0815218  __DATA_CONST,__const  _TIDidShowContinuousPathIntroductionPreference
+0x1e0815210  __DATA_CONST,__const  _TIDidShowGestureKeyboardIntroductionPreference
+0x1e0815208  __DATA_CONST,__const  _TIDidShowInlineCompletionEducationTipPreference
+0x18a585c40  __TEXT,__text  _TIDispatchAsync
+0x18a5c12ac  __TEXT,__text  _TIDispatchCount
+0x18a5840c0  __TEXT,__text  _TIDispatchSync
+0x18a5c12f4  __TEXT,__text  _TIDispatchWaitForAllBlocks
+0x1e0815200  __DATA_CONST,__const  _TIEmailRecentInputIdentifier
+0x1e08151f8  __DATA_CONST,__const  _TIEmojiKeyboardAllowedPreference
+0x18a5ad854  __TEXT,__text  _TIEnabledInputModesAllowOneToManyShortcuts
+0x18a5cf864  __TEXT,__text  _TIFeatureUsageAllowedValues
+0x1e08151f0  __DATA_CONST,__const  _TIFuzzyPinyinPairsPreference
+0x1e08151e8  __DATA_CONST,__const  _TIFuzzyPinyinPreference
+0x18a5acc1c  __TEXT,__text  _TIGetAddKeyboardUsesPickerForInputMode
+0x18a5acc7c  __TEXT,__text  _TIGetAddressBookThresholdForInputMode
+0x18a5accd8  __TEXT,__text  _TIGetAllInputModeProperties
+0x18a5addb4  __TEXT,__text  _TIGetApplicableKeyboardShortcutOverrides
+0x18a57e0c0  __TEXT,__text  _TIGetDefaultDictationLanguagesForKeyboardLanguage
+0x18a5ad7a0  __TEXT,__text  _TIGetDefaultHWLayoutForKeyboardAndInputMode
+0x18a580c28  __TEXT,__text  _TIGetDefaultInputModesForLanguage
+0x18a5ad488  __TEXT,__text  _TIGetDictionaryData
+0x18a584250  __TEXT,__text  _TIGetHardwareLayoutsForInputMode
+0x18a5ad3a8  __TEXT,__text  _TIGetIndicScriptComposerRules
+0x18a57be84  __TEXT,__text  _TIGetInputModeProperties
+0x18a5ae104  __TEXT,__text  _TIGetKeyboardShortcutOverridesForKeyboardLayout
+0x18a5ad5c8  __TEXT,__text  _TIGetLanguageSupportForHardwareKeyboard
+0x18a5ad2c8  __TEXT,__text  _TIGetMacInputSourcesMap
+0x18a5ad190  __TEXT,__text  _TIGetStickerTaxonomyIdentifiers
+0x18a5ad22c  __TEXT,__text  _TIGetStickerTaxonomyIdentifiersAllowListSynonymExclusions
+0x18a5ac940  __TEXT,__text  _TIGetSuggestedDefaultInputModesByLocaleForLanguage
+0x18a5acb28  __TEXT,__text  _TIGetSuggestedDefaultInputModesForFudgeByLocaleForLanguage
+0x18a5aca34  __TEXT,__text  _TIGetSuggestedDefaultInputModesForPadByLocaleForLanguage
+0x18a5ace30  __TEXT,__text  _TIGetSuggestedDictationLanguagesForDeviceLanguage
+0x18a5ac84c  __TEXT,__text  _TIGetSuggestedInputModesByLocaleForLanguage
+0x1e08151e0  __DATA_CONST,__const  _TIHWKeyboardAutocapitalizationPreference
+0x1e08151d8  __DATA_CONST,__const  _TIHWKeyboardAutocorrectionPreference
+0x1e08151d0  __DATA_CONST,__const  _TIHWKeyboardCapsLockRomanSwitchPreference
+0x1e08151c8  __DATA_CONST,__const  _TIHWKeyboardDictationShortcutPreference
+0x1e08151c0  __DATA_CONST,__const  _TIHWKeyboardGlobeAsEmojiKeyPreference
+0x1e08151b8  __DATA_CONST,__const  _TIHWKeyboardPeriodShortcutPreference
+0x1e08151b0  __DATA_CONST,__const  _TIHardwareKeyboardLastSeenPreference
+0x1e08151a8  __DATA_CONST,__const  _TIImageCacheFormatColor
+0x18a58077c  __TEXT,__text  _TIImageCacheImagesPath
+0x18a5806f4  __TEXT,__text  _TIImageCachePath
+0x1e08151a0  __DATA_CONST,__const  _TIImageCacheServiceName
+0x18a5ee438  __TEXT,__text  _TIImageCacheSizeForItem
+0x18a5ee3f0  __TEXT,__text  _TIImageCacheVersion
+0x18a583560  __TEXT,__text  _TIImageNameForItem
+0x1e0815198  __DATA_CONST,__const  _TIInlineCompletionAcceptedBySpaceEventCountPreference
+0x18a602c30  __TEXT,__const  _TIInputContextHistoryMaxEntries
+0x18a602c28  __TEXT,__const  _TIInputContextHistoryMaxEntryLengthDefault
+0x18a5adbf8  __TEXT,__text  _TIInputManagerClassForInputMode
+0x18a5ae4f8  __TEXT,__text  _TIInputModeCanBePrimaryMultiscript
+0x1e0815190  __DATA_CONST,__const  _TIInputModeComponentsExtensionInputModeKey
+0x1e0815188  __DATA_CONST,__const  _TIInputModeDeltaResourceName
+0x18a57e5d4  __TEXT,__text  _TIInputModeGetBaseLanguage
+0x18a579e70  __TEXT,__text  _TIInputModeGetComponentsFromIdentifier
+0x18a58148c  __TEXT,__text  _TIInputModeGetFullInputModeIdentifier
+0x18a57ab70  __TEXT,__text  _TIInputModeGetLanguage
+0x18a57c6d4  __TEXT,__text  _TIInputModeGetLanguageWithRegion
+0x18a57a414  __TEXT,__text  _TIInputModeGetMultilingualID
+0x18a57a408  __TEXT,__text  _TIInputModeGetMultilingualSet
+0x18a5ac844  __TEXT,__text  _TIInputModeGetMultilingualSetFromInputModes
+0x18a57a45c  __TEXT,__text  _TIInputModeGetMultilingualSetFromInputModesWithPreferredLanguages
+0x18a57b5ac  __TEXT,__text  _TIInputModeGetNormalizedIdentifier
+0x18a57b384  __TEXT,__text  _TIInputModeGetNormalizedIdentifierFromComponents
+0x18a58fcec  __TEXT,__text  _TIInputModeGetNormalizedLevelsFromComponents
+0x18a5ae664  __TEXT,__text  _TIInputModeGetPreferredMultilingualLanguageModelLocale
+0x18a5811f0  __TEXT,__text  _TIInputModeGetRegion
+0x18a5ae5a0  __TEXT,__text  _TIInputModeGetRequiredMultilingualInputModes
+0x18a581294  __TEXT,__text  _TIInputModeGetSWLayout
+0x18a581cd4  __TEXT,__text  _TIInputModeGetVariant
+0x18a57be20  __TEXT,__text  _TIInputModeIsMultilingualOnly
+0x18a5811b0  __TEXT,__text  _TIInputModeIsTransliteration
+0x1e0815180  __DATA_CONST,__const  _TIInputModePhrasesResourceName
+0x1e0815178  __DATA_CONST,__const  _TIInputModePropertiesAccentKeyStringsKey
+0x1e0815170  __DATA_CONST,__const  _TIInputModePropertiesAlwaysShowCandidateBar
+0x1e0815168  __DATA_CONST,__const  _TIInputModePropertiesAutocorrectSpellingKey
+0x1e0815160  __DATA_CONST,__const  _TIInputModePropertiesAutocorrectionLocaleIdentifier
+0x1e0815158  __DATA_CONST,__const  _TIInputModePropertiesCPAllowsDeleteWord
+0x1e0815150  __DATA_CONST,__const  _TIInputModePropertiesCPEnabledKey
+0x1e0815148  __DATA_CONST,__const  _TIInputModePropertiesClauseDelimitingCharactersKey
+0x1e0815140  __DATA_CONST,__const  _TIInputModePropertiesComposesTextKey
+0x1e0815138  __DATA_CONST,__const  _TIInputModePropertiesCompositionMap
+0x1e0815130  __DATA_CONST,__const  _TIInputModePropertiesContinuousPathEnsembleSourceScalesKey
+0x1e0815128  __DATA_CONST,__const  _TIInputModePropertiesContinuousPathEnsembleSourceWeightsKey
+0x1e0815120  __DATA_CONST,__const  _TIInputModePropertiesContinuousPathParametersKey
+0x1e0815118  __DATA_CONST,__const  _TIInputModePropertiesCustomLexiconDelta
+0x1e0815110  __DATA_CONST,__const  _TIInputModePropertiesDefaultLayoutIsASCIICapableKey
+0x1e0815108  __DATA_CONST,__const  _TIInputModePropertiesDefaultLayoutIsSecureKey
+0x1e0815100  __DATA_CONST,__const  _TIInputModePropertiesDeleteByComposedCharacterSequence
+0x1e08150f8  __DATA_CONST,__const  _TIInputModePropertiesDisableAutocorrectionOverrideKey
+0x1e08150f0  __DATA_CONST,__const  _TIInputModePropertiesDoubleSpaceReplacementKey
+0x1e08150e8  __DATA_CONST,__const  _TIInputModePropertiesEnablePrediction
+0x1e08150e0  __DATA_CONST,__const  _TIInputModePropertiesFontFallbackLanguage
+0x1e08150d8  __DATA_CONST,__const  _TIInputModePropertiesFontFallbacksRequiredKey
+0x1e08150d0  __DATA_CONST,__const  _TIInputModePropertiesHasWordNgramModel
+0x1e08150c8  __DATA_CONST,__const  _TIInputModePropertiesIncludeLightweightLMMobileAssets
+0x1e08150c0  __DATA_CONST,__const  _TIInputModePropertiesInlineCompletionKey
+0x1e08150b8  __DATA_CONST,__const  _TIInputModePropertiesInputManagerClassKey
+0x1e08150b0  __DATA_CONST,__const  _TIInputModePropertiesKeyboardFeatureSpecializationClassKey
+0x1e08150a8  __DATA_CONST,__const  _TIInputModePropertiesLayoutTags
+0x1e08150a0  __DATA_CONST,__const  _TIInputModePropertiesMultilingualOnly
+0x1e0815098  __DATA_CONST,__const  _TIInputModePropertiesNeverShowCandidateBar
+0x1e0815090  __DATA_CONST,__const  _TIInputModePropertiesNonstopPunctuationCharactersKey
+0x1e0815088  __DATA_CONST,__const  _TIInputModePropertiesPairedMultilingualInputMode
+0x1e0815080  __DATA_CONST,__const  _TIInputModePropertiesPreferredASCIICapableInputModeKey
+0x1e0815078  __DATA_CONST,__const  _TIInputModePropertiesPreferredMultilingualLanguageModelLocale
+0x1e0815070  __DATA_CONST,__const  _TIInputModePropertiesPreferredNonASCIICapableInputModeKey
+0x1e0815068  __DATA_CONST,__const  _TIInputModePropertiesRequiredMultilingualInputModes
+0x1e0815060  __DATA_CONST,__const  _TIInputModePropertiesReverseCompositionMap
+0x1e0815058  __DATA_CONST,__const  _TIInputModePropertiesRuleBasedTransliterationMap
+0x1e0815050  __DATA_CONST,__const  _TIInputModePropertiesSentenceDelimitingCharactersKey
+0x1e0815048  __DATA_CONST,__const  _TIInputModePropertiesSentencePrefixingCharactersKey
+0x1e0815040  __DATA_CONST,__const  _TIInputModePropertiesSentenceTrailingCharactersKey
+0x1e0815038  __DATA_CONST,__const  _TIInputModePropertiesShowsTransliterationCandidates
+0x1e0815030  __DATA_CONST,__const  _TIInputModePropertiesSpaceCorrectionEnabledKey
+0x1e0815028  __DATA_CONST,__const  _TIInputModePropertiesSpaceDeletingCharactersKey
+0x1e0815020  __DATA_CONST,__const  _TIInputModePropertiesSupportedMultiscriptInputModes
+0x1e0815018  __DATA_CONST,__const  _TIInputModePropertiesSupportsASCIIToggleKeyKey
+0x1e0815010  __DATA_CONST,__const  _TIInputModePropertiesSupportsLiveConversionKey
+0x1e0815008  __DATA_CONST,__const  _TIInputModePropertiesSupportsMultilingual
+0x1e0815000  __DATA_CONST,__const  _TIInputModePropertiesTypeToSiriEnabled
+0x1e0814ff8  __DATA_CONST,__const  _TIInputModePropertiesTypeToSiriEnabledUnderDevelopment
+0x1e0814ff0  __DATA_CONST,__const  _TIInputModePropertiesTypedStringLMRankingEnabledKey
+0x1e0814fe8  __DATA_CONST,__const  _TIInputModePropertiesUseStemSuffixCorrectionFactorKey
+0x1e0814fe0  __DATA_CONST,__const  _TIInputModePropertiesWantsMultilingualUnionOVS
+0x1e0814fd8  __DATA_CONST,__const  _TIInputModePropertiesWordMedialPunctuationCharactersKey
+0x18a5ae418  __TEXT,__text  _TIInputModeSupportsMultilingual
+0x1e0814fd0  __DATA_CONST,__const  _TIInputModeUnigramsResourceName
+0x18a58ad14  __TEXT,__text  _TIInputModeUseMorphemeLevelLexicon
+0x18a5860c4  __TEXT,__text  _TIInputModeUsesOnScreenContextForCandidates
+0x18a5ae600  __TEXT,__text  _TIInputModeWantsMultilingualUnionOVS
+0x1e0814fc8  __DATA_CONST,__const  _TIInputMode_dictation
+0x1e0814fc0  __DATA_CONST,__const  _TIInputMode_emoji
+0x1e0814fb8  __DATA_CONST,__const  _TIInputMode_intl
+0x1e0814fb0  __DATA_CONST,__const  _TIInputMode_intl_HWR
+0x1e0814fa8  __DATA_CONST,__const  _TIIsMixmojiSuggestionsEnabledPreference
+0x18a5cf94c  __TEXT,__text  _TIIsRegisterLearningModeAcceptance
+0x18a5cf940  __TEXT,__text  _TIIsRegisterLearningModeRejection
+0x18a5845f4  __TEXT,__text  _TIIsTypeToSiriModeEnabled
+0x1e0814fa0  __DATA_CONST,__const  _TIJapaneseSimilarKanjiNumberOfCandidatesPreference
+0x1e0814f98  __DATA_CONST,__const  _TIKeyboardAdditionalLanguagesPreference
+0x1e0814f90  __DATA_CONST,__const  _TIKeyboardAllowPaddlePreference
+0x1e0814f88  __DATA_CONST,__const  _TIKeyboardAllowRelaxedOVSPolicyPreference
+0x1e0814f80  __DATA_CONST,__const  _TIKeyboardAssetDownloadInFivePreference
+0x1e0814f78  __DATA_CONST,__const  _TIKeyboardAssistantPreference
+0x1e0814f70  __DATA_CONST,__const  _TIKeyboardAudioPreference
+0x1e0814f68  __DATA_CONST,__const  _TIKeyboardAutocapitalizationPreference
+0x1e0814f60  __DATA_CONST,__const  _TIKeyboardAutocorrectionPreference
+0x1e0814f58  __DATA_CONST,__const  _TIKeyboardBiasPreference
+0x1e0814f50  __DATA_CONST,__const  _TIKeyboardCJContinuousPathEnabledPreference
+0x1e0814f48  __DATA_CONST,__const  _TIKeyboardCPCandidateCountPreference
+0x1e0814f40  __DATA_CONST,__const  _TIKeyboardCPConfidenceModelPreference
+0x1e0814f38  __DATA_CONST,__const  _TIKeyboardCPUIColorfulEffectPreference
+0x1e0814f30  __DATA_CONST,__const  _TIKeyboardCPUIModalPunctuationPlanePreference
+0x1e0814f28  __DATA_CONST,__const  _TIKeyboardCPUISpotlightEffectPreference
+0x1e0814f20  __DATA_CONST,__const  _TIKeyboardCandidateTypingEngineTypeCpSearchStr
+0x1e0814f18  __DATA_CONST,__const  _TIKeyboardCandidateTypingEngineTypeFavoniusStr
+0x1e0814f10  __DATA_CONST,__const  _TIKeyboardCandidateTypingEngineTypeHandwritingStr
+0x1e0814f08  __DATA_CONST,__const  _TIKeyboardCandidateTypingEngineTypeITTranscoderPathStr
+0x1e0814f00  __DATA_CONST,__const  _TIKeyboardCandidateTypingEngineTypeITTranscoderTapStr
+0x1e0814ef8  __DATA_CONST,__const  _TIKeyboardCandidateTypingEngineTypeMecabraStr
+0x1e0814ef0  __DATA_CONST,__const  _TIKeyboardCandidateTypingEngineTypeOtherStr
+0x18a5b4fe8  __TEXT,__text  _TIKeyboardCandidateTypingEngineTypeToString
+0x1e0814ee8  __DATA_CONST,__const  _TIKeyboardCapsLockPreference
+0x1e0814ee0  __DATA_CONST,__const  _TIKeyboardCheckSpellingPreference
+0x1e0814ed8  __DATA_CONST,__const  _TIKeyboardContinuousPathCompletesWordsPreference
+0x1e0814ed0  __DATA_CONST,__const  _TIKeyboardContinuousPathDeleteWholeWordPreference
+0x1e0814ec8  __DATA_CONST,__const  _TIKeyboardContinuousPathDetectPausePreference
+0x1e0814ec0  __DATA_CONST,__const  _TIKeyboardContinuousPathEnabledAlgorithmTypesPreference
+0x1e0814eb8  __DATA_CONST,__const  _TIKeyboardContinuousPathEnabledPreference
+0x1e0814eb0  __DATA_CONST,__const  _TIKeyboardContinuousPathLanguageWeightPreference
+0x1e0814ea8  __DATA_CONST,__const  _TIKeyboardContinuousPathProgressiveCandidatesEnabledPreference
+0x1e0814ea0  __DATA_CONST,__const  _TIKeyboardContinuousPathRetrocorrectionPreference
+0x1e0814e98  __DATA_CONST,__const  _TIKeyboardDODMLLoggingEnabledPreference
+0x1e0814e90  __DATA_CONST,__const  _TIKeyboardDefaultsDomain
+0x1e0814e88  __DATA_CONST,__const  _TIKeyboardDidShowGenmojiTipPreference
+0x1e0814e80  __DATA_CONST,__const  _TIKeyboardDidShowProductivityTutorialPreference
+0x1e0814e78  __DATA_CONST,__const  _TIKeyboardFeedbackIdleTimeoutPreference
+0x1e0814e70  __DATA_CONST,__const  _TIKeyboardFloatingDockedEdgePreference
+0x1e0814e68  __DATA_CONST,__const  _TIKeyboardFloatingEnabledPreference
+0x1e0814e60  __DATA_CONST,__const  _TIKeyboardFloatingPersistentHorizontalOffsetPreference
+0x1e0814e58  __DATA_CONST,__const  _TIKeyboardFloatingPersistentVerticalOffsetPreference
+0x1e0814e50  __DATA_CONST,__const  _TIKeyboardFlushDynamicCachePeriodPreference
+0x1e0814e48  __DATA_CONST,__const  _TIKeyboardGlobeKeyExperimentsPreference
+0x1e0814e40  __DATA_CONST,__const  _TIKeyboardHardwareKeyboardsSeenPreference
+0x1e0814e38  __DATA_CONST,__const  _TIKeyboardIgnoreCPConfigRequirementsPreference
+0x1e0814e30  __DATA_CONST,__const  _TIKeyboardInlineCompletionPreference
+0x1e0814e28  __DATA_CONST,__const  _TIKeyboardInlineCompletionsOpenEndedPreference
+0x1e0814e20  __DATA_CONST,__const  _TIKeyboardInlineCompletionsPrefixLengthPreference
+0x1e0814e18  __DATA_CONST,__const  _TIKeyboardInlineCompletionsProbThresholdPreference
+0x1e0814e10  __DATA_CONST,__const  _TIKeyboardInputModeUpdateDatePreference
+0x1e0814e08  __DATA_CONST,__const  _TIKeyboardInsertsSpaceAfterPredictiveInputPreference
+0x1e0814e00  __DATA_CONST,__const  _TIKeyboardIsFloatingPreference
+0x1e0814df8  __DATA_CONST,__const  _TIKeyboardLanguageIndicatorEnabledPreference
+0x1e0814df0  __DATA_CONST,__const  _TIKeyboardLastChosenPreference
+0x1e0814de8  __DATA_CONST,__const  _TIKeyboardLastUsedForLanguagePreference
+0x1e0814de0  __DATA_CONST,__const  _TIKeyboardLastUsedPreference
+0x1e0814dd8  __DATA_CONST,__const  _TIKeyboardLayoutLastUsedForKeyboardPreference
+0x1e0814dd0  __DATA_CONST,__const  _TIKeyboardMathExpressionCompletionPreference
+0x1e0814dc8  __DATA_CONST,__const  _TIKeyboardMultilingualEnabledPreference
+0x1e0814dc0  __DATA_CONST,__const  _TIKeyboardMultiscriptEnabledPreference
+0x1e0814db8  __DATA_CONST,__const  _TIKeyboardOutputInfoTypeBundleIDStr
+0x1e0814db0  __DATA_CONST,__const  _TIKeyboardOutputInfoTypeCellularEIDStr
+0x1e0814da8  __DATA_CONST,__const  _TIKeyboardOutputInfoTypeCellularIMEI1Str
+0x1e0814da0  __DATA_CONST,__const  _TIKeyboardOutputInfoTypeCellularIMEI2Str
+0x1e0814d98  __DATA_CONST,__const  _TIKeyboardOutputInfoTypeCellularIMEIStr
+0x1e0814d90  __DATA_CONST,__const  _TIKeyboardOutputInfoTypeCellularNALStr
+0x1e0814d88  __DATA_CONST,__const  _TIKeyboardOutputInfoTypeExternalCredentialData
+0x1e0814d80  __DATA_CONST,__const  _TIKeyboardOutputInfoTypeExternalProviderBundleIDStr
+0x1e0814d78  __DATA_CONST,__const  _TIKeyboardOutputInfoTypeExternalProviderExtensionBundleIDStr
+0x1e0814d70  __DATA_CONST,__const  _TIKeyboardOutputInfoTypeHostStr
+0x1e0814d68  __DATA_CONST,__const  _TIKeyboardOutputInfoTypeLocaleStr
+0x1e0814d60  __DATA_CONST,__const  _TIKeyboardOutputInfoTypeOneTimeCodeAvailableStr
+0x1e0814d58  __DATA_CONST,__const  _TIKeyboardOutputInfoTypeOneTimeCodeStr
+0x1e0814d50  __DATA_CONST,__const  _TIKeyboardOutputInfoTypePasskey
+0x1e0814d48  __DATA_CONST,__const  _TIKeyboardOutputInfoTypePasswordStr
+0x1e0814d40  __DATA_CONST,__const  _TIKeyboardOutputInfoTypeShouldSendCurrentLocationStr
+0x1e0814d38  __DATA_CONST,__const  _TIKeyboardOutputInfoTypeShouldSendRequestLocationStr
+0x1e0814d30  __DATA_CONST,__const  _TIKeyboardOutputInfoTypeSuggestedUsernameStr
+0x1e0814d28  __DATA_CONST,__const  _TIKeyboardOutputInfoTypeUsernameStr
+0x1e0814d20  __DATA_CONST,__const  _TIKeyboardPerformanceLoggingPreference
+0x1e0814d18  __DATA_CONST,__const  _TIKeyboardPeriodShortcutPreference
+0x18a5818b4  __TEXT,__text  _TIKeyboardPopupVariantsForInputMode
+0x1e0814d10  __DATA_CONST,__const  _TIKeyboardPredictionHelpMessageCountPreference
+0x1e0814d08  __DATA_CONST,__const  _TIKeyboardPredictionPreference
+0x1e0814d00  __DATA_CONST,__const  _TIKeyboardReachableFirstInteractionPreference
+0x1e0814cf8  __DATA_CONST,__const  _TIKeyboardSecondLanguagePreference
+0x1e0814cf0  __DATA_CONST,__const  _TIKeyboardSecureCandidateCellWidthOneCellAutofillExtraStr
+0x1e0814ce8  __DATA_CONST,__const  _TIKeyboardSecureCandidateCellWidthOneCellCenterStr
+0x1e0814ce0  __DATA_CONST,__const  _TIKeyboardSecureCandidateCellWidthOneCellFullWidthStr
+0x1e0814cd8  __DATA_CONST,__const  _TIKeyboardSecureCandidateCellWidthThreeCellAutofillExtraStr
+0x1e0814cd0  __DATA_CONST,__const  _TIKeyboardSecureCandidateCellWidthThreeCellEvenStr
+0x1e0814cc8  __DATA_CONST,__const  _TIKeyboardSecureCandidateCellWidthTwoCellAutofillExtraStr
+0x1e0814cc0  __DATA_CONST,__const  _TIKeyboardSecureCandidateCellWidthTwoCellEvenStr
+0x1e0814cb8  __DATA_CONST,__const  _TIKeyboardSecureCandidateCellWidthZeroCellAutofillExtraStr
+0x1e0814cb0  __DATA_CONST,__const  _TIKeyboardSecureCandidateCellularEIDStr
+0x1e0814ca8  __DATA_CONST,__const  _TIKeyboardSecureCandidateCellularIMEI1Str
+0x1e0814ca0  __DATA_CONST,__const  _TIKeyboardSecureCandidateCellularIMEI2Str
+0x1e0814c98  __DATA_CONST,__const  _TIKeyboardSecureCandidateCellularIMEIStr
+0x1e0814c90  __DATA_CONST,__const  _TIKeyboardSecureCandidateCellularNALStr
+0x1e0814c88  __DATA_CONST,__const  _TIKeyboardSecureCandidateHideMyEmailStr
+0x1e0814c80  __DATA_CONST,__const  _TIKeyboardSensorKitAggregatedWordsThresholdPreference
+0x1e0814c78  __DATA_CONST,__const  _TIKeyboardSensorKitEnabledPreference
+0x18a5ae0a0  __TEXT,__text  _TIKeyboardShouldDisableAutocorrection
+0x1e0814c70  __DATA_CONST,__const  _TIKeyboardShouldSplitInDefaultContextPreference
+0x1e0814c68  __DATA_CONST,__const  _TIKeyboardShouldSplitInSplitPreferringContextPreference
+0x1e0814c60  __DATA_CONST,__const  _TIKeyboardShowPredictionBarPreference
+0x1e0814c58  __DATA_CONST,__const  _TIKeyboardSimulateAutofillCandidatesPreference
+0x1e0814c50  __DATA_CONST,__const  _TIKeyboardSkipCandidateQualityFilterPreference
+0x1e0814c48  __DATA_CONST,__const  _TIKeyboardStateAutofillContextAppIdKey
+0x1e0814c40  __DATA_CONST,__const  _TIKeyboardStateAutofillContextAssociatedDomainsKey
+0x1e0814c38  __DATA_CONST,__const  _TIKeyboardStateAutofillContextBundleIdKey
+0x1e0814c30  __DATA_CONST,__const  _TIKeyboardStateAutofillContextCredentialTypeKey
+0x1e0814c28  __DATA_CONST,__const  _TIKeyboardStateAutofillContextFrameIdKey
+0x1e0814c20  __DATA_CONST,__const  _TIKeyboardStateAutofillContextPageIdKey
+0x1e0814c18  __DATA_CONST,__const  _TIKeyboardStateAutofillContextWebViewURLKey
+0x1e0814c10  __DATA_CONST,__const  _TIKeyboardTransformerLMForAutocorrectionPreference
+0x18a5f5d04  __TEXT,__text  _TIKeyboardTypeIsNumberPad
+0x1e0814c08  __DATA_CONST,__const  _TIKeyboardUseProLayoutPreference
+0x1e0814c00  __DATA_CONST,__const  _TIKeyboardUserModelLoggingEnabledPreference
+0x1e0814bf8  __DATA_CONST,__const  _TIKeyboardVisceralPreference
+0x1e0814bf0  __DATA_CONST,__const  _TIKeyboardsCurrentAndNextPreference
+0x1e0814be8  __DATA_CONST,__const  _TILexiconServiceName
+0x18a5ad970  __TEXT,__text  _TILinguisticDataAssetDataPathForInputMode
+0x18a5adae8  __TEXT,__text  _TILinguisticDataBundleForInputMode
+0x18a5ad870  __TEXT,__text  _TILinguisticDataBundlePathForInputMode
+0x18a5ad85c  __TEXT,__text  _TILinguisticDataRoot
+0x1e0814be0  __DATA_CONST,__const  _TILiveConversionPreference
+0x18a581724  __TEXT,__text  _TILoadMergedKeyboardPlistForInputMode
+0x18a57fd5c  __TEXT,__text  _TILoadMergedKeyboardPlistForLocale
+0x18a602be0  __TEXT,__const  _TIMaximumRecentsLimit
+0x1e0814bd8  __DATA_CONST,__const  _TIModelessInputTipShownPreference
+0x1e0814bd0  __DATA_CONST,__const  _TIMultilingualKeyboardTipPreference
+0x1e0814bc8  __DATA_CONST,__const  _TIMultilingualSettingTipPreference
+0x18a58b9e4  __TEXT,__text  _TINgramModelPathForInputMode
+0x18a57df38  __TEXT,__text  _TINumberPadGetDisplayStringForDigit
+0x18a5c240c  __TEXT,__text  _TINumberPadGetEncodedString
+0x18a5c2414  __TEXT,__text  _TINumberPadGetEncodedStringAllowingUnmappedCharacters
+0x1e0814bc0  __DATA_CONST,__const  _TIPersonaUniqueIdentifierSelfPreference
+0x18a5adda0  __TEXT,__text  _TIPhrasesFilePathForInputModeAndFileExtension
+0x1e0814bb8  __DATA_CONST,__const  _TIPinyinDialectPreference
+0x1e0814bb0  __DATA_CONST,__const  _TIPredictionTimePreference
+0x1e0814ba8  __DATA_CONST,__const  _TIPreferencesControllerChangedNotification
+0x1e0814ba0  __DATA_CONST,__const  _TIRegisterLearningModeAcceptedByAutocorrectionBubble
+0x1e0814b98  __DATA_CONST,__const  _TIRegisterLearningModeAcceptedByPredictionBar
+0x1e0814b90  __DATA_CONST,__const  _TIRegisterLearningModeAcceptedByTapOnCompletion
+0x1e0814b88  __DATA_CONST,__const  _TIRegisterLearningModeAcceptedByTyping
+0x1e0814b80  __DATA_CONST,__const  _TIRegisterLearningModeAcceptedByTypingThrough
+0x1e0814b78  __DATA_CONST,__const  _TIRegisterLearningModeRejectedByAutocorrectionBubble
+0x1e0814b70  __DATA_CONST,__const  _TIRegisterLearningModeRejectedByCalloutBar
+0x1e0814b68  __DATA_CONST,__const  _TIRegisterLearningModeRejectedByContextMenu
+0x1e0814b60  __DATA_CONST,__const  _TIRegisterLearningModeRejectedByCursorMovement
+0x1e0814b58  __DATA_CONST,__const  _TIRegisterLearningModeRejectedByImmediateDelete
+0x1e0814b50  __DATA_CONST,__const  _TIRegisterLearningModeRejectedByPredictionBar
+0x1e0814b48  __DATA_CONST,__const  _TIRegisterLearningModeRejectedByTyping
+0x1e0814b40  __DATA_CONST,__const  _TIRemoteDeviceIDSIdentifierPreference
+0x18a58b4ec  __TEXT,__text  _TIResourcePathForInputMode
+0x1e0814b38  __DATA_CONST,__const  _TIRivenKeyboardPreference
+0x1e0814b30  __DATA_CONST,__const  _TIRivenLayoutSizePreference
+0x1e0814b28  __DATA_CONST,__const  _TISearchRecentInputIdentifier
+0x1e0814b20  __DATA_CONST,__const  _TIShowMemojiPreference
+0x1e0814b18  __DATA_CONST,__const  _TIShowStickersPreference
+0x1e0814b10  __DATA_CONST,__const  _TIShuangpinTypePreference
+0x1e0814b08  __DATA_CONST,__const  _TISmartDashesEnabledPreference
+0x1e0814b00  __DATA_CONST,__const  _TISmartFullwidthSpacePreference
+0x1e0814af8  __DATA_CONST,__const  _TISmartInsertDeleteEnabledPreference
+0x1e0814af0  __DATA_CONST,__const  _TISmartQuotesEnabledPreference
+0x1e0814ae8  __DATA_CONST,__const  _TISoftwareKeyboardShownByTouchPreference
+0x1e0814ae0  __DATA_CONST,__const  _TISoftwareLiveConversionPreference
+0x18a5bad4c  __TEXT,__text  _TISolariumEnabled
+0x1e0814ad8  __DATA_CONST,__const  _TISpaceConfirmationPreference
+0x18a5add78  __TEXT,__text  _TIStaticUnigramsFilePathForInputModeAndFileExtension
+0x1e0814ad0  __DATA_CONST,__const  _TIStatistic3PKAsciiCapableOnDevice
+0x1e0814ac8  __DATA_CONST,__const  _TIStatistic3PKContainedInApp
+0x1e0814ac0  __DATA_CONST,__const  _TIStatistic3PKCrashed
+0x1e0814ab8  __DATA_CONST,__const  _TIStatistic3PKEnabledOnDevice
+0x1e0814ab0  __DATA_CONST,__const  _TIStatistic3PKGrantedOpenAccess
+0x1e0814aa8  __DATA_CONST,__const  _TIStatistic3PKInstalledOnDevice
+0x1e0814aa0  __DATA_CONST,__const  _TIStatistic3PKPrimaryLanguageChanged
+0x1e0814a98  __DATA_CONST,__const  _TIStatistic3PKRequestedOpenAccess
+0x18a602c38  __TEXT,__const  _TIStatistic3PKSamplePercent
+0x1e0814a90  __DATA_CONST,__const  _TIStatistic3PKSummoned
+0x1e0814a88  __DATA_CONST,__const  _TIStatistic3PKSwitchedBackToSystem
+0x1e0814a80  __DATA_CONST,__const  _TIStatistic3PKSwitchedToFromSystem
+0x1e0814a78  __DATA_CONST,__const  _TIStatistic3PKUsesSettings
+0x1e0814a70  __DATA_CONST,__const  _TIStatisticAutocorrectionAcceptedCount
+0x1e0814a68  __DATA_CONST,__const  _TIStatisticAutocorrectionCorrectedAwayCount
+0x1e0814a60  __DATA_CONST,__const  _TIStatisticAutocorrectionDismissedCount
+0x1e0814a58  __DATA_CONST,__const  _TIStatisticAutocorrectionEnabled
+0x1e0814a50  __DATA_CONST,__const  _TIStatisticAutocorrectionEnabledWordCount
+0x1e0814a48  __DATA_CONST,__const  _TIStatisticAutocorrectionIgnoredCount
+0x1e0814a40  __DATA_CONST,__const  _TIStatisticAutocorrectionLearnedDictionarySize
+0x1e0814a38  __DATA_CONST,__const  _TIStatisticAutocorrectionPerformedCount
+0x1e0814a30  __DATA_CONST,__const  _TIStatisticAutocorrectionRevertedCount
+0x1e0814a28  __DATA_CONST,__const  _TIStatisticAutocorrectionRevisedCount
+0x1e0814a20  __DATA_CONST,__const  _TIStatisticAutocorrectionSuggestedCount
+0x1e0814a18  __DATA_CONST,__const  _TIStatisticAutocorrectionTypeStringAll
+0x1e0814a10  __DATA_CONST,__const  _TIStatisticAutocorrectionTypeStringCapitalization
+0x1e0814a08  __DATA_CONST,__const  _TIStatisticAutocorrectionTypeStringDiacritic
+0x1e0814a00  __DATA_CONST,__const  _TIStatisticAutocorrectionTypeStringHitTest
+0x1e08149f8  __DATA_CONST,__const  _TIStatisticAutocorrectionTypeStringInsertKey
+0x1e08149f0  __DATA_CONST,__const  _TIStatisticAutocorrectionTypeStringMultiWordPrediction
+0x1e08149e8  __DATA_CONST,__const  _TIStatisticAutocorrectionTypeStringNearTouch
+0x1e08149e0  __DATA_CONST,__const  _TIStatisticAutocorrectionTypeStringPrediction
+0x1e08149d8  __DATA_CONST,__const  _TIStatisticAutocorrectionTypeStringRetroCorrection
+0x1e08149d0  __DATA_CONST,__const  _TIStatisticAutocorrectionTypeStringSkipTpouch
+0x1e08149c8  __DATA_CONST,__const  _TIStatisticAutocorrectionTypeStringSpaceCorrection
+0x1e08149c0  __DATA_CONST,__const  _TIStatisticAutocorrectionTypeStringSubstitution
+0x1e08149b8  __DATA_CONST,__const  _TIStatisticAutocorrectionTypeStringTransposition
+0x1e08149b0  __DATA_CONST,__const  _TIStatisticAutocorrectionTypeStringUserAdapted
+0x1e08149a8  __DATA_CONST,__const  _TIStatisticAutocorrectionTypeStringUserLearned
+0x1e08149a0  __DATA_CONST,__const  _TIStatisticAutocorrectionTypeStringUserRecency
+0x1e0814998  __DATA_CONST,__const  _TIStatisticAutocorrectionWordCount
+0x1e0814990  __DATA_CONST,__const  _TIStatisticBackspaceIntoAutocorrection
+0x1e0814988  __DATA_CONST,__const  _TIStatisticBackspaceIntoPredictiveInputSelection
+0x1e0814980  __DATA_CONST,__const  _TIStatisticBackspaceIntoPredictiveInputStringTyped
+0x1e0814978  __DATA_CONST,__const  _TIStatisticBackspaceIntoWordStem
+0x1e0814970  __DATA_CONST,__const  _TIStatisticBackspaceTotalCount
+0x1e0814968  __DATA_CONST,__const  _TIStatisticCalloutBarUsed
+0x1e0814960  __DATA_CONST,__const  _TIStatisticCandidateAccepted
+0x1e0814958  __DATA_CONST,__const  _TIStatisticCandidateAcceptedAfterMarkedTextEditedInExtendedView
+0x1e0814950  __DATA_CONST,__const  _TIStatisticCandidateAcceptedAutoConfirmation
+0x1e0814948  __DATA_CONST,__const  _TIStatisticCandidateAcceptedCandidateLength
+0x1e0814940  __DATA_CONST,__const  _TIStatisticCandidateAcceptedCellTapped
+0x1e0814938  __DATA_CONST,__const  _TIStatisticCandidateAcceptedCompletionCandidate
+0x1e0814930  __DATA_CONST,__const  _TIStatisticCandidateAcceptedConfirmFirstCandidateKey
+0x1e0814928  __DATA_CONST,__const  _TIStatisticCandidateAcceptedConfirmKey
+0x1e0814920  __DATA_CONST,__const  _TIStatisticCandidateAcceptedConversionCandidate
+0x1e0814918  __DATA_CONST,__const  _TIStatisticCandidateAcceptedEmoji
+0x1e0814910  __DATA_CONST,__const  _TIStatisticCandidateAcceptedExtensionCandidate
+0x1e0814908  __DATA_CONST,__const  _TIStatisticCandidateAcceptedFacemark
+0x1e0814900  __DATA_CONST,__const  _TIStatisticCandidateAcceptedFullCandidate
+0x1e08148f8  __DATA_CONST,__const  _TIStatisticCandidateAcceptedFullwidthCandidate
+0x1e08148f0  __DATA_CONST,__const  _TIStatisticCandidateAcceptedFuzzyMatchCandidate
+0x1e08148e8  __DATA_CONST,__const  _TIStatisticCandidateAcceptedHWKBConfirmFirstCandidateKey
+0x1e08148e0  __DATA_CONST,__const  _TIStatisticCandidateAcceptedHWKBConfirmKey
+0x1e08148d8  __DATA_CONST,__const  _TIStatisticCandidateAcceptedIndex
+0x1e08148d0  __DATA_CONST,__const  _TIStatisticCandidateAcceptedInlineCompletionCandidate
+0x1e08148c8  __DATA_CONST,__const  _TIStatisticCandidateAcceptedOTAWordList
+0x1e08148c0  __DATA_CONST,__const  _TIStatisticCandidateAcceptedPinyinDisambiguated
+0x1e08148b8  __DATA_CONST,__const  _TIStatisticCandidateAcceptedPunctuationCompletionCandidate
+0x1e08148b0  __DATA_CONST,__const  _TIStatisticCandidateAcceptedPunctuationKeyCandidate
+0x1e08148a8  __DATA_CONST,__const  _TIStatisticCandidateAcceptedRegional
+0x1e08148a0  __DATA_CONST,__const  _TIStatisticCandidateAcceptedRow
+0x1e0814898  __DATA_CONST,__const  _TIStatisticCandidateAcceptedSelectedSortingMethod
+0x1e0814890  __DATA_CONST,__const  _TIStatisticCandidateAcceptedShortcut
+0x1e0814888  __DATA_CONST,__const  _TIStatisticCandidateAcceptedSticker
+0x1e0814880  __DATA_CONST,__const  _TIStatisticCandidateAcceptedTopCandidate
+0x1e0814878  __DATA_CONST,__const  _TIStatisticCandidateAcceptedViewOffset
+0x1e0814870  __DATA_CONST,__const  _TIStatisticCandidateBackspaceIntoConversionCandidate
+0x1e0814868  __DATA_CONST,__const  _TIStatisticCandidateBackspaceIntoInputString
+0x1e0814860  __DATA_CONST,__const  _TIStatisticCandidateBackspaceIntoPredictionCandidate
+0x1e0814858  __DATA_CONST,__const  _TIStatisticCandidateBarExtendedView
+0x1e0814850  __DATA_CONST,__const  _TIStatisticCandidateBarView
+0x1e0814848  __DATA_CONST,__const  _TIStatisticCandidateInputStringCount
+0x1e0814840  __DATA_CONST,__const  _TIStatisticCandidateOfferedOTACandidate
+0x1e0814838  __DATA_CONST,__const  _TIStatisticCandidateOfferedPredictions
+0x1e0814830  __DATA_CONST,__const  _TIStatisticCandidateOfferedRegionalCandidate
+0x1e0814828  __DATA_CONST,__const  _TIStatisticCandidatePadHWKB
+0x1e0814820  __DATA_CONST,__const  _TIStatisticCandidatePadHWKBFloatingExtendedView
+0x1e0814818  __DATA_CONST,__const  _TIStatisticCandidatePadHWKBFloatingView
+0x1e0814810  __DATA_CONST,__const  _TIStatisticCandidatePadSplitBarExtendedView
+0x1e0814808  __DATA_CONST,__const  _TIStatisticCandidatePadSplitBarView
+0x1e0814800  __DATA_CONST,__const  _TIStatisticCandidatePadSplitInKBView
+0x1e08147f8  __DATA_CONST,__const  _TIStatisticCandidatePhoneFloatingView
+0x1e08147f0  __DATA_CONST,__const  _TIStatisticCandidatePhoneHWKB
+0x1e08147e8  __DATA_CONST,__const  _TIStatisticCandidatePhoneHWKBFloatingExtendedView
+0x1e08147e0  __DATA_CONST,__const  _TIStatisticCandidatePhoneHWKBFloatingView
+0x1e08147d8  __DATA_CONST,__const  _TIStatisticCandidatePhoneLandscapeSplitView
+0x1e08147d0  __DATA_CONST,__const  _TIStatisticCandidatePhoneLandscapeView
+0x18a5c920c  __TEXT,__text  _TIStatisticCandidateSourceAsString
+0x1e08147c8  __DATA_CONST,__const  _TIStatisticCharacterCount
+0x18a5e17f0  __TEXT,__text  _TIStatisticCounterAddValue
+0x1e08147c0  __DATA_CONST,__const  _TIStatisticDictationKeyMistakes
+0x18a587c28  __TEXT,__text  _TIStatisticDistributionPushValue
+0x1e08147b8  __DATA_CONST,__const  _TIStatisticEmojiCountFromKeyboard
+0x1e08147b0  __DATA_CONST,__const  _TIStatisticEmojiCountFromKeywordMatch
+0x1e08147a8  __DATA_CONST,__const  _TIStatisticEmojiCountFromPrediction
+0x1e08147a0  __DATA_CONST,__const  _TIStatisticFalseBackspaceIntoAutocorrection
+0x1e0814798  __DATA_CONST,__const  _TIStatisticFalseBackspaceTotalCount
+0x1e0814790  __DATA_CONST,__const  _TIStatisticFirstPartySentenceCount
+0x1e0814788  __DATA_CONST,__const  _TIStatisticFirstPartyWordCount
+0x1e0814780  __DATA_CONST,__const  _TIStatisticGestureKeyboardEnabled
+0x18a5e1bc4  __TEXT,__text  _TIStatisticGetAutocorrectionKeyForInputMode
+0x18a581b0c  __TEXT,__text  _TIStatisticGetKey
+0x18a5e2104  __TEXT,__text  _TIStatisticGetKeyForCandidateAccepted
+0x18a5e2200  __TEXT,__text  _TIStatisticGetKeyForCandidateAcceptedSelectedSortingMethod
+0x18a587170  __TEXT,__text  _TIStatisticGetKeyForInputMode
+0x18a5e1c44  __TEXT,__text  _TIStatisticGetKeyForInputStringCount
+0x18a5e2528  __TEXT,__text  _TIStatisticGetKeyForMultilingual
+0x18a5e280c  __TEXT,__text  _TIStatisticGetKeyForOTA
+0x18a5e23b0  __TEXT,__text  _TIStatisticGetKeyForTenKeyFlick
+0x18a5e246c  __TEXT,__text  _TIStatisticGetKeyForTenKeyFlickPunctuation
+0x18a5e22d4  __TEXT,__text  _TIStatisticGetKeyForTenKeyKeyTappedInKeyplane
+0x1e0814778  __DATA_CONST,__const  _TIStatisticGlobeKeyMistakes
+0x1e0814770  __DATA_CONST,__const  _TIStatisticHandwritingCandidateKeyPressed
+0x1e0814768  __DATA_CONST,__const  _TIStatisticHandwritingCompletionCandidateUsed
+0x1e0814760  __DATA_CONST,__const  _TIStatisticHandwritingDeleteKeyPressed
+0x1e0814758  __DATA_CONST,__const  _TIStatisticHandwritingPointCountDistribution
+0x1e0814750  __DATA_CONST,__const  _TIStatisticHandwritingStrokeCountDistribution
+0x1e0814748  __DATA_CONST,__const  _TIStatisticInputModeChangeCount
+0x1e0814740  __DATA_CONST,__const  _TIStatisticInputModeUsed
+0x1e0814738  __DATA_CONST,__const  _TIStatisticKeyCmdHUDDisplayed
+0x1e0814730  __DATA_CONST,__const  _TIStatisticKeyCmdShortcutUsed
+0x1e0814728  __DATA_CONST,__const  _TIStatisticKeyboardHideTransitionTime
+0x1e0814720  __DATA_CONST,__const  _TIStatisticKeyboardShowTransitionTime
+0x1e0814718  __DATA_CONST,__const  _TIStatisticKeyboardUIKeyPaddleEnabled
+0x1e0814710  __DATA_CONST,__const  _TIStatisticKeyboardUILowercaseKeyplaneEnabled
+0x1e0814708  __DATA_CONST,__const  _TIStatisticKeyboardUIPortraitOnScreenDisplayCount
+0x1e0814700  __DATA_CONST,__const  _TIStatisticKeyboardUIPortraitOnScreenTime
+0x1e08146f8  __DATA_CONST,__const  _TIStatisticKeyboardUITotalOnScreenDisplayCount
+0x1e08146f0  __DATA_CONST,__const  _TIStatisticKeyboardUITotalOnScreenTime
+0x1e08146e8  __DATA_CONST,__const  _TIStatisticKeyplaneChangeCount
+0x1e08146e0  __DATA_CONST,__const  _TIStatisticKeysTappedCount
+0x1e08146d8  __DATA_CONST,__const  _TIStatisticMailSentenceCount
+0x1e08146d0  __DATA_CONST,__const  _TIStatisticMailWordCount
+0x1e08146c8  __DATA_CONST,__const  _TIStatisticMessagesSentenceCount
+0x1e08146c0  __DATA_CONST,__const  _TIStatisticMessagesWordCount
+0x1e08146b8  __DATA_CONST,__const  _TIStatisticMultilingualKeyboardUsed
+0x1e08146b0  __DATA_CONST,__const  _TIStatisticMultilingualWordCountPrimaryLanguage
+0x1e08146a8  __DATA_CONST,__const  _TIStatisticMultilingualWordCountSecondaryLanguage
+0x1e08146a0  __DATA_CONST,__const  _TIStatisticMultilingualWordCountTertiaryLanguage
+0x1e0814698  __DATA_CONST,__const  _TIStatisticNumbersKeyMistakes
+0x1e0814690  __DATA_CONST,__const  _TIStatisticOTACompatibilityVersion
+0x1e0814688  __DATA_CONST,__const  _TIStatisticOTAContentVersion
+0x1e0814680  __DATA_CONST,__const  _TIStatisticOTADownloadAllowCellularCount
+0x1e0814678  __DATA_CONST,__const  _TIStatisticOTADownloadCompletedCount
+0x1e0814670  __DATA_CONST,__const  _TIStatisticOTADownloadFailedCount
+0x1e0814668  __DATA_CONST,__const  _TIStatisticOTADownloadNoDiskSpaceCount
+0x1e0814660  __DATA_CONST,__const  _TIStatisticOTADownloadRequestedCount
+0x1e0814658  __DATA_CONST,__const  _TIStatisticOTAInstalledAssetCount
+0x1e0814650  __DATA_CONST,__const  _TIStatisticOTAPurgeCompletedCount
+0x1e0814648  __DATA_CONST,__const  _TIStatisticOTAPurgeRequestedCount
+0x1e0814640  __DATA_CONST,__const  _TIStatisticOTARemoteQueryFailedCount
+0x1e0814638  __DATA_CONST,__const  _TIStatisticOTARemoteQueryRequestedCount
+0x1e0814630  __DATA_CONST,__const  _TIStatisticOTARemoteQueryRetryCount
+0x1e0814628  __DATA_CONST,__const  _TIStatisticOTARemoteQuerySuccessCount
+0x1e0814620  __DATA_CONST,__const  _TIStatisticOtherSentenceCount
+0x1e0814618  __DATA_CONST,__const  _TIStatisticOtherWordCount
+0x1e0814610  __DATA_CONST,__const  _TIStatisticPersistentOffset
+0x1e0814608  __DATA_CONST,__const  _TIStatisticPredictiveInputDisplayWithGesture
+0x1e0814600  __DATA_CONST,__const  _TIStatisticPredictiveInputDisplayWithSwitcher
+0x1e08145f8  __DATA_CONST,__const  _TIStatisticPredictiveInputDisplayed
+0x1e08145f0  __DATA_CONST,__const  _TIStatisticPredictiveInputEnabled
+0x1e08145e8  __DATA_CONST,__const  _TIStatisticPredictiveInputEnabledWordCount
+0x1e08145e0  __DATA_CONST,__const  _TIStatisticPredictiveInputHidden
+0x1e08145d8  __DATA_CONST,__const  _TIStatisticPredictiveInputHideWithGesture
+0x1e08145d0  __DATA_CONST,__const  _TIStatisticPredictiveInputHideWithSwitcher
+0x18a602c3c  __TEXT,__const  _TIStatisticPredictiveInputSamplePercent
+0x1e08145c8  __DATA_CONST,__const  _TIStatisticPredictiveInputSelectAutocorrection
+0x1e08145c0  __DATA_CONST,__const  _TIStatisticPredictiveInputSelectCompletion
+0x1e08145b8  __DATA_CONST,__const  _TIStatisticPredictiveInputSelectPrediction
+0x1e08145b0  __DATA_CONST,__const  _TIStatisticPredictiveInputSelectTypedString
+0x1e08145a8  __DATA_CONST,__const  _TIStatisticPredictiveInputSelectionByGesture
+0x1e08145a0  __DATA_CONST,__const  _TIStatisticRevisedToNonStaticCount
+0x1e0814598  __DATA_CONST,__const  _TIStatisticRevisedToOOVCount
+0x1e0814590  __DATA_CONST,__const  _TIStatisticRevisedTotalCount
+0x18a5e17f4  __TEXT,__text  _TIStatisticScalarAddValue
+0x18a5e1a8c  __TEXT,__text  _TIStatisticScalarDecrement
+0x18a587d68  __TEXT,__text  _TIStatisticScalarIncrement
+0x18a5e278c  __TEXT,__text  _TIStatisticScalarIncrement3PKSummoned
+0x18a5e1df4  __TEXT,__text  _TIStatisticScalarIncrementAutocorrectionKey
+0x18a5e1d44  __TEXT,__text  _TIStatisticScalarIncrementInputStringCount
+0x18a5e274c  __TEXT,__text  _TIStatisticScalarIncrementSystemKeyboardSummoned
+0x18a581f0c  __TEXT,__text  _TIStatisticScalarSetBoolean
+0x18a582284  __TEXT,__text  _TIStatisticScalarSetValue
+0x18a5e1940  __TEXT,__text  _TIStatisticScalarSubtractValue
+0x1e0814588  __DATA_CONST,__const  _TIStatisticShortcutBarHideWithSwitcher
+0x1e0814580  __DATA_CONST,__const  _TIStatisticShortcutBarUsed
+0x18a5e17c0  __TEXT,__text  _TIStatisticShouldSample
+0x1e0814578  __DATA_CONST,__const  _TIStatisticSocialNetworkingSentenceCount
+0x1e0814570  __DATA_CONST,__const  _TIStatisticSocialNetworkingWordCount
+0x1e0814568  __DATA_CONST,__const  _TIStatisticSplitInputModeUsed
+0x1e0814560  __DATA_CONST,__const  _TIStatisticSystemKeyboardSummoned
+0x1e0814558  __DATA_CONST,__const  _TIStatisticTenKeyFlick
+0x1e0814550  __DATA_CONST,__const  _TIStatisticTenKeyFlickPunctuation
+0x1e0814548  __DATA_CONST,__const  _TIStatisticTenKeyKeyTappedInKeyplane
+0x1e0814540  __DATA_CONST,__const  _TIStatisticTranslationWordCount
+0x1e0814538  __DATA_CONST,__const  _TIStatisticTypingDurationDistr
+0x1e0814530  __DATA_CONST,__const  _TIStatisticTypingSpeedDistr
+0x1e0814528  __DATA_CONST,__const  _TIStatisticUndockedInputModeUsed
+0x1e0814520  __DATA_CONST,__const  _TIStatisticUserDictionaryEntriesCount
+0x1e0814518  __DATA_CONST,__const  _TIStatisticUserDictionaryEntryPhraseLength
+0x1e0814510  __DATA_CONST,__const  _TIStatisticUserDictionaryEntryShortcutLength
+0x1e0814508  __DATA_CONST,__const  _TIStatisticsCPDiscoverability
+0x1e0814500  __DATA_CONST,__const  _TIStatisticsCPPathableWordTypedCount
+0x18a5e2ab4  __TEXT,__text  _TIStatisticsGetIsCPDiscovered
+0x18a5e2a54  __TEXT,__text  _TIStatisticsGetKeyForGesture
+0x1e08144f8  __DATA_CONST,__const  _TIStatisticsTextGesturesDoubleTap
+0x1e08144f0  __DATA_CONST,__const  _TIStatisticsTextGesturesExpandedSelection
+0x1e08144e8  __DATA_CONST,__const  _TIStatisticsTextGesturesMovedInsertionPoint
+0x1e08144e0  __DATA_CONST,__const  _TIStatisticsTextGesturesSingleTap
+0x1e08144d8  __DATA_CONST,__const  _TIStatisticsTextGesturesTripleTap
+0x1e08144d0  __DATA_CONST,__const  _TIStatisticsTextGesturesTwoFingersOnCanvas
+0x1e08144c8  __DATA_CONST,__const  _TIStatisticsTextGesturesTwoFingersOnKeyboard
+0x1e08144c0  __DATA_CONST,__const  _TISuchengCangjiePreference
+0x1e08144b8  __DATA_CONST,__const  _TITextContentTypeAddressCity
+0x1e08144b0  __DATA_CONST,__const  _TITextContentTypeAddressCityAndState
+0x1e08144a8  __DATA_CONST,__const  _TITextContentTypeAddressState
+0x1e08144a0  __DATA_CONST,__const  _TITextContentTypeCellularEID
+0x1e0814498  __DATA_CONST,__const  _TITextContentTypeCellularIMEI
+0x1e0814490  __DATA_CONST,__const  _TITextContentTypeCellularIMEI1
+0x1e0814488  __DATA_CONST,__const  _TITextContentTypeCellularIMEI2
+0x1e0814480  __DATA_CONST,__const  _TITextContentTypeCellularNAL
+0x1e0814478  __DATA_CONST,__const  _TITextContentTypeCountryName
+0x1e0814470  __DATA_CONST,__const  _TITextContentTypeEmailAddress
+0x1e0814468  __DATA_CONST,__const  _TITextContentTypeFamilyName
+0x1e0814460  __DATA_CONST,__const  _TITextContentTypeFullStreetAddress
+0x1e0814458  __DATA_CONST,__const  _TITextContentTypeGivenName
+0x1e0814450  __DATA_CONST,__const  _TITextContentTypeJobTitle
+0x1e0814448  __DATA_CONST,__const  _TITextContentTypeLocation
+0x1e0814440  __DATA_CONST,__const  _TITextContentTypeMiddleName
+0x1e0814438  __DATA_CONST,__const  _TITextContentTypeName
+0x1e0814430  __DATA_CONST,__const  _TITextContentTypeNamePrefix
+0x1e0814428  __DATA_CONST,__const  _TITextContentTypeNameSuffix
+0x1e0814420  __DATA_CONST,__const  _TITextContentTypeNickname
+0x1e0814418  __DATA_CONST,__const  _TITextContentTypeNone
+0x1e0814410  __DATA_CONST,__const  _TITextContentTypeOrganizationName
+0x1e0814408  __DATA_CONST,__const  _TITextContentTypePostalCode
+0x1e0814400  __DATA_CONST,__const  _TITextContentTypeStreetAddressLine1
+0x1e08143f8  __DATA_CONST,__const  _TITextContentTypeStreetAddressLine2
+0x1e08143f0  __DATA_CONST,__const  _TITextContentTypeSublocality
+0x1e08143e8  __DATA_CONST,__const  _TITextContentTypeTelephoneNumber
+0x1e08143e0  __DATA_CONST,__const  _TITextContentTypeURL
+0x1e08143d8  __DATA_CONST,__const  _TITextContentTypeUsername
+0x1e08143d0  __DATA_CONST,__const  _TITrialDeploymentId
+0x1e08143c8  __DATA_CONST,__const  _TITrialExperimentId
+0x1e08143c0  __DATA_CONST,__const  _TITrialTreatmentId
+0x1e08143b8  __DATA_CONST,__const  _TITypologyEnabledPreference
+0x1e08143b0  __DATA_CONST,__const  _TIUIKeyboardDidShowInternationalInfoIntroductionPreference
+0x1e08143a8  __DATA_CONST,__const  _TIUIKeyboardPersistentHorizontalOffsetPreference
+0x1e08143a0  __DATA_CONST,__const  _TIUIKeyboardPersistentSplitLockPreference
+0x1e0814398  __DATA_CONST,__const  _TIUIKeyboardPersistentSplitProgressPreference
+0x1e0814390  __DATA_CONST,__const  _TIUIKeyboardPersistentVerticalOffsetPreference
+0x1e0814388  __DATA_CONST,__const  _TIUserDictionaryStoreDidImportChangesNotification
+0x1e0814380  __DATA_CONST,__const  _TIUserDictionaryStoreURLChangedNotification
+0x1e0814378  __DATA_CONST,__const  _TIWubiStandardPreference
+0x18a584750  __TEXT,__text  _TI_DEVICE_UNLOCKED
+0x18a581b98  __TEXT,__text  _TI_DEVICE_UNLOCKED_SINCE_BOOT
+0x18a5bac98  __TEXT,__text  _TI_IS_FILE_CLASS_C
+0x18a5baba0  __TEXT,__text  _TI_SET_PROTECTION_CLASS_C
+0x18a5bab54  __TEXT,__text  _TI_SET_USER_DIRECTORY
+0x18a5baa0c  __TEXT,__text  _TI_USER_DIRECTORY
+0x18a5c10c0  __TEXT,__text  __TIQueueBackground
+0x18a5c1164  __TEXT,__text  __TIQueueLow
+0x18a5c1208  __TEXT,__text  __TIQueueUserInitiated
+0x18a59bb14  __TEXT,__text  __tiAttributedStringForString
+0x18a5a06d8  __TEXT,__text  _acute_accent_form
+0x18a5c8e30  __TEXT,__text  _autoCorrectionTypeAsString
+0x18a5c9424  __TEXT,__text  _candidateSourceAsString
+0x18a5a0be4  __TEXT,__text  _caron_form
+0x18a5a1c20  __TEXT,__text  _character_is_composable_accent
+0x18a5a1c7c  __TEXT,__text  _character_is_tamil_script
+0x18a5a09c8  __TEXT,__text  _circumflex_form
+0x18a5a19e0  __TEXT,__text  _combine_with_accent
+0x18a5a0d28  __TEXT,__text  _combines_with_selective_modifier
+0x18a5a0a88  __TEXT,__text  _diaeresis_form
+0x18a5a0bc8  __TEXT,__text  _dialytika_tonos_form
+0x18a5a0908  __TEXT,__text  _grave_accent_form
+0x18a5dee14  __TEXT,__text  _isH13ANEPresentOnIOS
+0x1eb3f1140  __DATA,__data  _kCommonMetricQueryTimeFrame
+0x18a602c54  __TEXT,__const  _kCurrentDurableVersion
+0x18a602c50  __TEXT,__const  _kCurrentPropertiesVersion
+0x18a602c58  __TEXT,__const  _kCurrentTransientVersion
+0x1eb3f04d8  __DATA,__data  _kFeatureCounterDurationTypedKey
+0x1eb3f04d0  __DATA,__data  _kFeatureCounterSquareDurationTypedKey
+0x1eb3f1148  __DATA,__data  _kFeatureUsageQueryTimeFrame
+0x1eb3f04c8  __DATA,__data  _kFeatureUsageStateActiveHigh
+0x1eb3f04c0  __DATA,__data  _kFeatureUsageStateActiveLow
+0x1eb3f04b8  __DATA,__data  _kFeatureUsageStateActiveMedium
+0x1eb3f04b0  __DATA,__data  _kFeatureUsageStateActiveUnusuallyHigh
+0x1eb3f04a8  __DATA,__data  _kFeatureUsageStateActiveVeryHigh
+0x1eb3f04a0  __DATA,__data  _kFeatureUsageStateActiveVeryLow
+0x1eb3f0498  __DATA,__data  _kFeatureUsageStateInactive
+0x1eb3f0490  __DATA,__data  _kFeatureUsageStateInsufficientData
+0x1eb3f0488  __DATA,__data  _kFeatureUsageStateRejected
+0x1eb3f0480  __DATA,__data  _kFeatureUsageStateUnaware
+0x1eb3f0478  __DATA,__data  _kFeatureUsageStateUnknown
+0x1eb3f0470  __DATA,__data  _kFeatureUsageStateUnsupported
+0x1e0813398  __DATA_CONST,__const  _kMecabraCandidatePointerValue
+0x18a602c20  __TEXT,__const  _kMinimumPersistInterval
+0x18a602c0c  __TEXT,__const  _kSecondsPerDay
+0x18a602c10  __TEXT,__const  _kTIAnalyticsCandidateLengthBucketCount
+0x18a602c18  __TEXT,__const  _kTIAnalyticsCandidateLengthReportingBucketCount
+0x18a602c00  __TEXT,__const  _kTICurrentTraceLogVersion
+0x18a602bf8  __TEXT,__const  _kTICurrentTypologyLogVersion
+0x18a602be8  __TEXT,__const  _kTIMaxContextLength
+0x18a602bf0  __TEXT,__const  _kTITrimmedContextLength
+0x1eb3f0468  __DATA,__data  _kUserModelDatabasePrefix
+0x1e0813390  __DATA_CONST,__const  _kUserModelRateLimitingDisabledKey
+0x18a58e478  __TEXT,__text  _kac_get_log
+0x18a5d80f8  __TEXT,__text  _kace_get_log
+0x18a5d8140  __TEXT,__text  _keyboardui_system_get_log
+0x18a5a0e24  __TEXT,__text  _macron_form
+0x18a5a0c08  __TEXT,__text  _ring_above_form
+0x18a5a0c70  __TEXT,__text  _small_tilde_form
+0x18a5a1b0c  __TEXT,__text  _strip_accent
+0x18a5a0ee4  __TEXT,__text  _strip_acute_accent
+0x18a5a134c  __TEXT,__text  _strip_caron
+0x18a5a1534  __TEXT,__text  _strip_circumflex
+0x18a5a15ec  __TEXT,__text  _strip_diaeresis
+0x18a5a172c  __TEXT,__text  _strip_dialytika_tonos
+0x18a5a1748  __TEXT,__text  _strip_grave_accent
+0x18a5a11bc  __TEXT,__text  _strip_greek_accent
+0x18a5a1800  __TEXT,__text  _strip_macron
+0x18a5a18b8  __TEXT,__text  _strip_ring_above
+0x18a5a1928  __TEXT,__text  _strip_small_tilde
+```
+
+## Private
+
+```
+0x18a579608  __TEXT,__text  _isManagedPreferenceKey
+0x18a57963c  __TEXT,__text  -[TIPreferencesController valueForPreferenceKey:]
+0x18a579644  __TEXT,__text  -[TIPreferencesController valueForPreferenceKey:forceUpdate:]
+0x18a579928  __TEXT,__text  _managedConfigurationFeatureForPreferenceKey
+0x18a579b8c  __TEXT,__text  -[TITextInputTraits init]
+0x18a579bd0  __TEXT,__text  -[TITextInputTraits .cxx_destruct]
+0x18a579c08  __TEXT,__text  -[TIPreferencesController MCValueForManagedPreferenceKey:]
+0x18a579d18  __TEXT,__text  _getMCFeatureSpellCheckAllowed
+0x18a579e08  __TEXT,__text  -[TISmartPunctuationOptions .cxx_destruct]
+0x18a57aca8  __TEXT,__text  _getMCFeatureSmartPunctuationAllowed
+0x18a57ad98  __TEXT,__text  _getMCFeaturePredictiveKeyboardAllowed
+0x18a57ae88  __TEXT,__text  -[_TIPreference setDomain:]
+0x18a57ae94  __TEXT,__text  -[_TIComplexPreference setFallbackKey:]
+0x18a57aea0  __TEXT,__text  +[_TIPreferenceDomain domainWithName:notification:]
+0x18a57af10  __TEXT,__text  +[_TIPreference preferenceWithDomain:defaultValue:fallbackKey:isAnalyzed:isCloudSetting:isWatchSync:]
+0x18a57b030  __TEXT,__text  -[_TIPreference setDefaultValue:]
+0x18a57b03c  __TEXT,__text  ___54+[TIPreferencesController sharedPreferencesController]_block_invoke
+0x18a57b068  __TEXT,__text  +[TIPreferencesController sharedPreferencesController]
+0x18a57b0fc  __TEXT,__text  -[_TIComplexPreference setIsAnalyzed:]
+0x18a57b104  __TEXT,__text  -[NSString(TIExtras) _containsEmoji]
+0x18a57b174  __TEXT,__text  _____TIEmojiCharacterSet_block_invoke
+0x18a57b2a0  __TEXT,__text  -[TIPreferencesController init]
+0x18a57b514  __TEXT,__text  _TIInputModeGetNormalizedVariant
+0x18a57b5f8  __TEXT,__text  -[TIPreferencesController automaticMinimizationEnabled]
+0x18a57b65c  __TEXT,__text  +[TIPreferencesControllerClient sharedPreferencesController]
+0x18a57b6f0  __TEXT,__text  ___60+[TIPreferencesControllerClient sharedPreferencesController]_block_invoke
+0x18a57b71c  __TEXT,__text  -[TIPreferencesControllerClient init]
+0x18a57b784  __TEXT,__text  -[TIKeyboardState hardwareKeyboardMode]
+0x18a57b790  __TEXT,__text  -[_TIPreference currentValue]
+0x18a57b798  __TEXT,__text  -[_TIPreference domain]
+0x18a57b7a0  __TEXT,__text  -[TIPreferencesController _configureKey:domain:defaultValue:fallbackKey:isAnalyzed:isCloudSetting:]
+0x18a57b7c4  __TEXT,__text  -[TIPreferencesController _configureKey:domain:defaultValue:]
+0x18a57b7cc  __TEXT,__text  -[TIPreferencesController _configureKey:domain:defaultValue:fallbackKey:]
+0x18a57b7d4  __TEXT,__text  -[_TIComplexPreference setIsCloudSetting:]
+0x18a57b7dc  __TEXT,__text  -[_TIComplexPreference setIsWatchSync:]
+0x18a57b7e4  __TEXT,__text  ____tiShouldSkipMCObservation_block_invoke
+0x18a57b9d0  __TEXT,__text  _SecurityLibrary
+0x18a57bae0  __TEXT,__text  +[TIActionWhenIdle actionWhenIdleWithTarget:selector:object:]
+0x18a57bb4c  __TEXT,__text  ___IsLargeIPad_block_invoke
+0x18a57bbe0  __TEXT,__text  +[TIInputModeController sharedInputModeController]
+0x18a57bc74  __TEXT,__text  ___61-[TIInputModeController supportedInputModeLanguageAndRegions]_block_invoke
+0x18a57bce0  __TEXT,__text  ___50+[TIInputModeController sharedInputModeController]_block_invoke
+0x18a57bd0c  __TEXT,__text  -[TIInputModeController identifierIsValidSystemInputMode:]
+0x18a57bdf0  __TEXT,__text  ___TIGetInputModeProperties_block_invoke
+0x18a57bff4  __TEXT,__text  -[TIPreferencesController valueForKey:]
+0x18a57c044  __TEXT,__text  _preferenceKeyForEnumKey
+0x18a57c658  __TEXT,__text  ___TIInputModeGetNormalizedVariant_block_invoke
+0x18a57c694  __TEXT,__text  -[TIPreferencesController _configureKey:domain:defaultValue:fallbackKey:isAnalyzed:]
+0x18a57c69c  __TEXT,__text  ___kac_get_log_block_invoke
+0x18a57c778  __TEXT,__text  __UIKeyboardBundleInfoWithKey
+0x18a57c9c8  __TEXT,__text  -[TITextInputTraits setTextContentType:]
+0x18a57c9d0  __TEXT,__text  -[TIKeyboardState setAutocorrectionEnabled:]
+0x18a57c9f0  __TEXT,__text  -[TITextInputTraits setSecureTextEntry:]
+0x18a57ca10  __TEXT,__text  -[TISmartPunctuationOptions setApostrophe:]
+0x18a57ca18  __TEXT,__text  -[TIKeyboardState setInputMode:]
+0x18a57ca20  __TEXT,__text  -[_TIPreferenceDomain needsGetSync]
+0x18a57ca28  __TEXT,__text  +[TIKeyboardInputManagerStub setArrayClassesForSelectorsInInterface:]
+0x18a57cbf8  __TEXT,__text  -[TIKeyboardState setWordLearningEnabled:]
+0x18a57cc18  __TEXT,__text  -[TISmartPunctuationOptions setLeftSingleQuote:]
+0x18a57cc20  __TEXT,__text  -[TIPreferencesController _buildAtLastAnalysis:]
+0x18a57cc30  __TEXT,__text  -[TIPreferencesController boolForPreferenceKey:]
+0x18a57cc68  __TEXT,__text  -[TISmartPunctuationOptions _generateDataFromLocale]
+0x18a57d090  __TEXT,__text  -[TIKeyboardState setInlineCompletionEnabled:]
+0x18a57d0b0  __TEXT,__text  -[TITextInputTraits setKeyboardType:]
+0x18a57d0c0  __TEXT,__text  -[TITextInputTraits setAutocapitalizationType:]
+0x18a57d0d0  __TEXT,__text  -[TIKeyboardState setInputContextHistory:]
+0x18a57d0dc  __TEXT,__text  -[TIKeyboardInputManagerClient initWithImplProxy:xpcConnection:]
+0x18a57d230  __TEXT,__text  -[TIPreferencesControllerClient forwardInvocation:]
+0x18a57d308  __TEXT,__text  -[NSMutableString(TIExtras) _removeCharactersFromSet:]
+0x18a57d3a4  __TEXT,__text  +[NSString(TIExtras) _stringWithUnichar:]
+0x18a57d40c  __TEXT,__text  -[TIPreferencesController _changedAtKey:]
+0x18a57d41c  __TEXT,__text  -[TIPreferencesController boolForKey:]
+0x18a57d454  __TEXT,__text  -[_TIPreferenceDomain domain]
+0x18a57d45c  __TEXT,__text  -[TIPreferencesController setActionWhenIdle:]
+0x18a57d468  __TEXT,__text  -[TIActionWhenIdle initWithInvocation:]
+0x18a57d4ec  __TEXT,__text  -[TIKeyboardState setTextInputTraits:]
+0x18a57d4f8  __TEXT,__text  +[TIKeyboardInputManagerStub serverInterface]
+0x18a57d58c  __TEXT,__text  -[TIKeyboardState longPredictionListEnabled]
+0x18a57d598  __TEXT,__text  -[TIPreferencesController _configureDomains]
+0x18a57d69c  __TEXT,__text  -[_TIPreferenceDomain notification]
+0x18a57d6a4  __TEXT,__text  -[TIPreferencesController isInternalInstall]
+0x18a57d6ac  __TEXT,__text  -[TIKeyboardState setResponseContext:]
+0x18a57d6b4  __TEXT,__text  -[TIPreferencesController _configureDomain:notification:]
+0x18a57d7c8  __TEXT,__text  -[TISmartPunctuationController reset]
+0x18a57d7d0  __TEXT,__text  -[TIPreferencesController _configureKey:domain:defaultValue:fallbackKey:isAnalyzed:isCloudSetting:isWatchSync:]
+0x18a57da2c  __TEXT,__text  -[TIKeyboardState setAutocapitalizationEnabled:]
+0x18a57da4c  __TEXT,__text  _ManagedConfigurationLibrary
+0x18a57db5c  __TEXT,__text  ___40-[TIActionWhenIdle addObserverToRunLoop]_block_invoke
+0x18a57db90  __TEXT,__text  -[TIPreferencesController idleInit]
+0x18a57dda4  __TEXT,__text  _TINumberPadDisplayMappings
+0x18a57dfa8  __TEXT,__text  _TISupportedLocaleIdentifierFromLocaleIdentifier
+0x18a57e1b0  __TEXT,__text  ___getMCProfileConnectionClass_block_invoke
+0x18a57e220  __TEXT,__text  -[TIInputModeController defaultDictationLanguagesForKeyboardLanguage:]
+0x18a57e228  __TEXT,__text  -[_TIPreference defaultValue]
+0x18a57e230  __TEXT,__text  -[TITextInputTraits setTextScriptType:]
+0x18a57e240  __TEXT,__text  _getMCProfileConnectionClass
+0x18a57e2fc  __TEXT,__text  -[NSString(TIExtras) _isNaturallyRTL]
+0x18a57e4d8  __TEXT,__text  -[_TIPreference setCurrentValue:]
+0x18a57e4e4  __TEXT,__text  -[_TIComplexPreference fallbackKey]
+0x18a57e4ec  __TEXT,__text  -[TIKeyboardState init]
+0x18a57e54c  __TEXT,__text  -[TISmartPunctuationController init]
+0x18a57e598  __TEXT,__text  -[TIPreferencesController inputModeSelectionSequence]
+0x18a57e5a4  __TEXT,__text  ___TIGetDefaultDictationLanguagesForKeyboardLanguage_block_invoke
+0x18a57e6e0  __TEXT,__text  -[TIWordTokenizer init]
+0x18a57e744  __TEXT,__text  -[TIPreferencesController _buildAtChangeKey:]
+0x18a57e754  __TEXT,__text  -[TIPreferencesController _configurePreferences]
+0x18a57f97c  __TEXT,__text  -[TIActionWhenIdle addObserverToRunLoop]
+0x18a57fa48  __TEXT,__text  ___TIDefaultKeyboardPlist_block_invoke
+0x18a57fac4  __TEXT,__text  _TIGetTextInputFrameworkPath
+0x18a57fb0c  __TEXT,__text  ___TIGetTextInputFrameworkPath_block_invoke
+0x18a57fb78  __TEXT,__text  _TILoadKeyboardPlist
+0x18a57fc1c  __TEXT,__text  _TILoadBundlePlist
+0x18a580388  __TEXT,__text  ____TextInputBundlesRootForDevelopment_block_invoke
+0x18a580414  __TEXT,__text  __TextInputBundlesRootForDevelopment
+0x18a58045c  __TEXT,__text  __GetBundlePathForInputModeWithRootDirectory
+0x18a58056c  __TEXT,__text  -[TIImageCacheClient initWithLocalAccess:]
+0x18a5807c4  __TEXT,__text  _CheckSandboxAccess
+0x18a58087c  __TEXT,__text  ___is_kbd_block_invoke
+0x18a580a68  __TEXT,__text  ___TIImageCacheVersion_block_invoke
+0x18a580f14  __TEXT,__text  ___TIGetDefaultInputModesForLanguage_block_invoke
+0x18a581168  __TEXT,__text  ___TIGetDefaultInputModesForLanguage_block_invoke_2
+0x18a5812dc  __TEXT,__text  -[TIKeyboardLayout addKeyWithString:frame:]
+0x18a581394  __TEXT,__text  -[NSString(TIExtras) _isIdeographicGlyphs]
+0x18a581484  __TEXT,__text  +[TIInputModeFunctions TIInputModeGetFullInputModeIdentifier:]
+0x18a58160c  __TEXT,__text  -[TIKeyboardLayout dealloc]
+0x18a581668  __TEXT,__text  ___TIDispatchAsync_block_invoke
+0x18a5816c4  __TEXT,__text  ___TIInputModeGetFullInputModeIdentifier_block_invoke
+0x18a5817c4  __TEXT,__text  _getMCFeatureEmojiKeyboardAllowed
+0x18a5819a4  __TEXT,__text  -[TIKeyboardLayout enumerateKeysUsingBlock:]
+0x18a581a84  __TEXT,__text  -[TIKeyboardLayoutState softwareLayout]
+0x18a581ae4  __TEXT,__text  -[NSString(TIExtras) _containsSubstring:]
+0x18a581c8c  __TEXT,__text  __GetPrefixForDomain
+0x18a581dd8  __TEXT,__text  ____GetPlatformAddition_block_invoke
+0x18a581ddc  __TEXT,__text  -[TIKeyboardState clientIdentifier]
+0x18a581de4  __TEXT,__text  -[TIKeyboardLayoutState copyWithZone:]
+0x18a581e90  __TEXT,__text  +[TIStatisticKey statisticKeyWithAggdName:andCounterName:andInputMode:]
+0x18a582034  __TEXT,__text  -[TITypologyStatisticComposite initWithArray:]
+0x18a5820f0  __TEXT,__text  -[TICharacterSetDescription copyWithZone:]
+0x18a5820f4  __TEXT,__text  ___IXADefaultLogFacility_block_invoke
+0x18a58212c  __TEXT,__text  -[TITypologyStatisticTimeElapsed init]
+0x18a5821b0  __TEXT,__text  -[TITypologyStatisticBasicCounts init]
+0x18a5823c4  __TEXT,__text  -[TIKeyboardState copyWithZone:]
+0x18a5825f0  __TEXT,__text  +[TIAggdReporter sharedAggdReporter]
+0x18a58262c  __TEXT,__text  -[TIKeyboardSecureCandidateRenderTraits init]
+0x18a582684  __TEXT,__text  ___35+[TIAggdReporter singletonInstance]_block_invoke
+0x18a5826b4  __TEXT,__text  -[TIStatisticKey .cxx_destruct]
+0x18a5826f8  __TEXT,__text  -[TIKeyboardSecureCandidateTextTraits init]
+0x18a582708  __TEXT,__text  -[TIKeyboardCandidate isSupplementalItemCandidate]
+0x18a582744  __TEXT,__text  +[NSString(TIExtras) _string:matchesString:]
+0x18a5827b4  __TEXT,__text  -[TIKeyboardCandidate supplementalItemIdentifiers]
+0x18a5827bc  __TEXT,__text  -[TICharacterSetDescription .cxx_destruct]
+0x18a582800  __TEXT,__text  -[TIKeyboardInputManagerClientRequest .cxx_destruct]
+0x18a58280c  __TEXT,__text  -[TIKeyboardCandidate customInfoType]
+0x18a582814  __TEXT,__text  -[TIKeyboardCandidateSingle candidate]
+0x18a58281c  __TEXT,__text  -[TIKeyboardState .cxx_destruct]
+0x18a58292c  __TEXT,__text  -[TIKeyboardSecureCandidateRenderTraits .cxx_destruct]
+0x18a5829c4  __TEXT,__text  -[TIKeyboardCandidate slotID]
+0x18a5829cc  __TEXT,__text  -[TIKeyboardCandidate candidateProperty]
+0x18a5829d4  __TEXT,__text  -[TIKeyboardSecureCandidateTextTraits .cxx_destruct]
+0x18a582a0c  __TEXT,__text  -[TIKeyboardCandidate label]
+0x18a582a10  __TEXT,__text  -[TIKeyboardLayoutState .cxx_destruct]
+0x18a582a48  __TEXT,__text  -[NSString(TIExtras) _containsEmojiOnly]
+0x18a582b24  __TEXT,__text  -[TITypologyStatistic prepareForComputation]
+0x18a582b28  __TEXT,__text  -[TIDocumentState contextBeforeInput]
+0x18a582b30  __TEXT,__text  -[TIKeyboardInputManagerClient respondsToSelector:]
+0x18a582b90  __TEXT,__text  -[TIKeyboardInputManagerClient forwardInvocation:]
+0x18a582c34  __TEXT,__text  -[TIDocumentState selectedText]
+0x18a582c3c  __TEXT,__text  -[TIDocumentState .cxx_destruct]
+0x18a582c8c  __TEXT,__text  +[TIKeyboardInputManagerClientRequest untargetedInvocationWithInvocation:withCompletion:]
+0x18a582df0  __TEXT,__text  -[TIDocumentState initWithContextBefore:markedText:selectedText:contextAfter:selectedRangeInMarkedText:]
+0x18a583014  __TEXT,__text  -[TIDocumentState isEqual:]
+0x18a583200  __TEXT,__text  -[TIImageCacheClient copyImageForKey:inGroup:]
+0x18a583624  __TEXT,__text  +[NSString(TIExtras) _ti_string:matchesStringIgnoringNullity:]
+0x18a5836a4  __TEXT,__text  -[TIDocumentState contextAfterInput]
+0x18a5836ac  __TEXT,__text  -[TIDocumentState markedText]
+0x18a5836b4  __TEXT,__text  -[TIDocumentState selectedRangeInMarkedText]
+0x18a5836c0  __TEXT,__text  -[TIPreferencesController predictionEnabled]
+0x18a5836cc  __TEXT,__text  +[TIKeyboardSecureCandidateRGBColor whiteColor]
+0x18a5836fc  __TEXT,__text  -[TIKeyboardSecureCandidateRenderTraits singleCellHeight]
+0x18a583704  __TEXT,__text  -[TIKeyboardSecureCandidateRenderTraits copyWithZone:]
+0x18a583838  __TEXT,__text  +[TIStatisticChangeCache sharedInstance]
+0x18a583880  __TEXT,__text  ___40+[TIStatisticChangeCache sharedInstance]_block_invoke
+0x18a5838b0  __TEXT,__text  -[TIStatisticChangeCache init]
+0x18a583928  __TEXT,__text  -[TIDocumentState encodeWithCoder:]
+0x18a583a3c  __TEXT,__text  -[TITextInputTraits copyWithZone:]
+0x18a583abc  __TEXT,__text  -[TIDocumentState initWithUnboundedContextBefore:markedText:selectedText:unboundedContextAfter:selectedRangeInMarkedText:]
+0x18a583c04  __TEXT,__text  -[NSAttributedString(TIExtras) _ti_attributedStringByKeepingAttributes:]
+0x18a583d04  __TEXT,__text  -[TIDocumentState truncatedRangeInSelectedText]
+0x18a583d10  __TEXT,__text  -[TIKeyboardSecureCandidateRenderTraits setCellRenderingStyle:]
+0x18a583d18  __TEXT,__text  -[TIKeyboardInputManagerClientRequest invocation]
+0x18a583d48  __TEXT,__text  -[TIKeyboardLayout ensureFrameCapacity:]
+0x18a583dd0  __TEXT,__text  -[TIDocumentState documentIsEmpty]
+0x18a583e8c  __TEXT,__text  ___kace_get_log_block_invoke
+0x18a583ec4  __TEXT,__text  -[TITextInputTraits setSmartQuotesEnabled:]
+0x18a583ee8  __TEXT,__text  -[TIPreferencesController synchronizeDomainIfNeedsGet:]
+0x18a583fe4  __TEXT,__text  +[TIAssistantSettings dismissDialog]
+0x18a5840bc  __TEXT,__text  +[TIAssistantSettings dismissEnableDictationPrompt]
+0x18a58417c  __TEXT,__text  __assistantInternalQueue
+0x18a5841c4  __TEXT,__text  ____assistantInternalQueue_block_invoke
+0x18a584220  __TEXT,__text  invocation function for block in _block_count()
+0x18a584230  __TEXT,__text  ___36+[TIAssistantSettings dismissDialog]_block_invoke
+0x18a584248  __TEXT,__text  -[TIKeyboardState inputMode]
+0x18a584424  __TEXT,__text  ___50-[TICharacterSetDescription awakeAfterUsingCoder:]_block_invoke
+0x18a584454  __TEXT,__text  -[TIKeyboardConfiguration .cxx_destruct]
+0x18a5844c8  __TEXT,__text  -[TIKeyboardLayout addKeyWithExactString:frame:]
+0x18a5845d4  __TEXT,__text  -[TIKeyboardState setImageSuggestionEnabled:]
+0x18a58484c  __TEXT,__text  -[TIAutocorrectionList candidates]
+0x18a584968  __TEXT,__text  -[TIAutocorrectionList corrections]
+0x18a584970  __TEXT,__text  -[TIAutocorrectionList predictions]
+0x18a584978  __TEXT,__text  -[TIAutocorrectionList containsProactiveTriggers]
+0x18a584980  __TEXT,__text  -[TIAutocorrectionList autocorrection]
+0x18a5849c0  __TEXT,__text  -[TIAutocorrectionList emojiList]
+0x18a5849c8  __TEXT,__text  -[TIAutocorrectionList proactiveTriggers]
+0x18a5849d0  __TEXT,__text  -[TIKeyboardCandidateSingle initWithUnchangedInput:]
+0x18a5849dc  __TEXT,__text  -[TIKeyboardCandidateSingle initWithCandidate:forInput:rawInput:]
+0x18a5849e4  __TEXT,__text  -[TIKeyboardCandidateSingle initWithCandidate:forInput:rawInput:extensionCandidate:]
+0x18a5849f0  __TEXT,__text  -[TIKeyboardCandidateSingle initWithCandidate:forInput:rawInput:extensionCandidate:sourceMask:learningFlagsMask:]
+0x18a584b58  __TEXT,__text  -[TIKeyboardCandidate init]
+0x18a584b9c  __TEXT,__text  -[TIKeyboardCandidateSingle setCandidate:]
+0x18a584ba4  __TEXT,__text  -[TIKeyboardCandidateSingle setInput:]
+0x18a584bac  __TEXT,__text  -[TIKeyboardCandidateSingle setRawInput:]
+0x18a584bb4  __TEXT,__text  -[TIKeyboardCandidateSingle setApplicationKey:]
+0x18a584bbc  __TEXT,__text  -[TIKeyboardCandidateSingle setApplicationBundleId:]
+0x18a584bc4  __TEXT,__text  -[TIKeyboardCandidateSingle setAltDSID:]
+0x18a584bcc  __TEXT,__text  -[TIKeyboardCandidateSingle setStickerIdentifier:]
+0x18a584bd4  __TEXT,__text  -[TIKeyboardCandidateSingle setExtensionCandidate:]
+0x18a584bdc  __TEXT,__text  -[TIKeyboardCandidate setSlotID:]
+0x18a584be4  __TEXT,__text  -[TIKeyboardCandidate setSecureCandidateWidth:]
+0x18a584bec  __TEXT,__text  -[TIKeyboardCandidate setIsSecureCandidateDoubleLines:]
+0x18a584bf4  __TEXT,__text  -[TIKeyboardCandidate setSecureCandidateHash:]
+0x18a584bfc  __TEXT,__text  -[TIKeyboardCandidate setCustomInfoType:]
+0x18a584c04  __TEXT,__text  -[TIKeyboardCandidate setTypingEngine:]
+0x18a584c0c  __TEXT,__text  -[TIKeyboardCandidateSingle setSourceMask:]
+0x18a584c14  __TEXT,__text  -[TIKeyboardCandidateSingle setLearningFlagsMask:]
+0x18a584c1c  __TEXT,__text  -[TIKeyboardCandidateSingle .cxx_destruct]
+0x18a584c90  __TEXT,__text  -[TIKeyboardCandidate .cxx_destruct]
+0x18a584d28  __TEXT,__text  -[TIImageCacheClient lockOnRead]
+0x18a584d30  __TEXT,__text  -[TIDocumentState initWithCoder:]
+0x18a584ef4  __TEXT,__text  -[TITextInputTraits secureTextEntry]
+0x18a584f00  __TEXT,__text  +[TIAnalyticsFieldSpec stringFieldSpecWithName:]
+0x18a584f50  __TEXT,__text  -[TIAnalyticsFieldSpec initWithName:]
+0x18a584fc0  __TEXT,__text  -[TIDocumentState isEqualIgnoringMarkedText:]
+0x18a5850e4  __TEXT,__text  -[TIAnalyticsMetricsContext initWithInputLanguage:inputRegion:]
+0x18a585180  __TEXT,__text  -[TIAnalyticsMetricsContext .cxx_destruct]
+0x18a5851b8  __TEXT,__text  -[TIKeyboardInputManagerState copyWithZone:]
+0x18a585364  __TEXT,__text  -[TITypologyRecord init]
+0x18a5853ec  __TEXT,__text  -[TITypologyStatisticComposite visitRecordSync:]
+0x18a5854f0  __TEXT,__text  -[TICharacterSetDescription isEqual:]
+0x18a585688  __TEXT,__text  +[TIAnalyticsEventSpec eventSpecWithName:inputModeRequired:fieldSpecs:]
+0x18a5856f8  __TEXT,__text  +[TIAnalyticsService sharedInstance]
+0x18a585750  __TEXT,__text  -[TIPreferencesController oneTimeActionCompleted:]
+0x18a5857a8  __TEXT,__text  -[TITextInputTraits setInlineCompletionType:]
+0x18a5857b8  __TEXT,__text  -[TITypologyRecordSync .cxx_destruct]
+0x18a5857f0  __TEXT,__text  -[TITypologyRecord .cxx_destruct]
+0x18a5857fc  __TEXT,__text  -[TITypologyRecordGroupMarker .cxx_destruct]
+0x18a585834  __TEXT,__text  -[TIKeyboardInputManagerState .cxx_destruct]
+0x18a585908  __TEXT,__text  -[TIAnalyticsFieldSpec name]
+0x18a585910  __TEXT,__text  ___36+[TIAnalyticsService sharedInstance]_block_invoke
+0x18a585940  __TEXT,__text  -[TIAnalyticsService init]
+0x18a585988  __TEXT,__text  -[TIAnalyticsServiceProviderImpl init]
+0x18a585aac  __TEXT,__text  _InputAnalyticsLibraryCore
+0x18a585b7c  __TEXT,__text  -[TIAnalyticsService _registerEventSpec:withCompletionHandler:]
+0x18a585d30  __TEXT,__text  ___63-[TIAnalyticsService _registerEventSpec:withCompletionHandler:]_block_invoke
+0x18a585f48  __TEXT,__text  +[TITypologyStatisticComposite statisticCompositeWithStatistics:]
+0x18a585f94  __TEXT,__text  -[TITypologyStatisticComposite aggregateReport]
+0x18a58615c  __TEXT,__text  -[TIAnalyticsService eventSpecs]
+0x18a586164  __TEXT,__text  +[TITypologyStatistic statistic]
+0x18a586180  __TEXT,__text  -[TITypologyStatisticComposite prepareForComputation]
+0x18a58626c  __TEXT,__text  -[TITypologyStatistic finalizeComputation]
+0x18a586270  __TEXT,__text  -[TITypologyStatisticComposite .cxx_destruct]
+0x18a58627c  __TEXT,__text  -[TITypologyStatisticTypingSpeed .cxx_destruct]
+0x18a5862b4  __TEXT,__text  -[TITypologyStatisticTimeElapsed .cxx_destruct]
+0x18a5862ec  __TEXT,__text  -[TITypologyStatisticBasicCounts .cxx_destruct]
+0x18a58635c  __TEXT,__text  -[TITypologyStatisticCurrentAutocorrections .cxx_destruct]
+0x18a586394  __TEXT,__text  +[TIAnalyticsUtil roundNumber:toSignificantDigits:]
+0x18a586488  __TEXT,__text  -[TIAnalyticsService _dispatchEventToDomain:withName:payload:values:inputMode:testingParameters:allowSparsePayload:withCompletionHandler:]
+0x18a586674  __TEXT,__text  ___138-[TIAnalyticsService _dispatchEventToDomain:withName:payload:values:inputMode:testingParameters:allowSparsePayload:withCompletionHandler:]_block_invoke
+0x18a586990  __TEXT,__text  +[TIInputModeParser sharedInstance]
+0x18a5869d8  __TEXT,__text  ___35+[TIInputModeParser sharedInstance]_block_invoke
+0x18a586a08  __TEXT,__text  -[TIInputModeParser init]
+0x18a586ac8  __TEXT,__text  -[TIInputModeParser parseInputMode:]
+0x18a586ca0  __TEXT,__text  ___88-[TIAnalyticsService settingsFromPayload:andValues:eventSpec:allowSparsePayload:errors:]_block_invoke
+0x18a586d20  __TEXT,__text  -[TIAnalyticsServiceProviderImpl dispatchEventWithName:payload:]
+0x18a586dec  __TEXT,__text  -[NSString(TIExtras) _contentsExclusivelyInCharacterSet:]
+0x18a586f60  __TEXT,__text  -[NSString(TIExtras) _trimmedOfLeadingNeutralCharacters]
+0x18a5870a8  __TEXT,__text  -[TIKeyboardInputManagerClient dealloc]
+0x18a587138  __TEXT,__text  -[TIKeyboardInputManagerClient .cxx_destruct]
+0x18a587144  __TEXT,__text  -[TIWordTokenizer .cxx_destruct]
+0x18a587150  __TEXT,__text  -[TIKeyboardState setEmojiSearchMode:]
+0x18a587240  __TEXT,__text  _TISGetSafeInputModeIdentifier
+0x18a5873f4  __TEXT,__text  -[TIUserModelDataStore isValid]
+0x18a5874a0  __TEXT,__text  ___31-[TIUserModelDataStore isValid]_block_invoke
+0x18a5874d4  __TEXT,__text  +[TIAnalyticsFieldSpec integerFieldSpecWithName:minValue:maxValue:significantDigits:]
+0x18a587570  __TEXT,__text  _getMCFeatureContinuousPathKeyboardAllowed
+0x18a587660  __TEXT,__text  -[TIInputModeController enabledInputModeIdentifiers]
+0x18a587904  __TEXT,__text  -[TIAnalyticsMetricsContext inputLanguage]
+0x18a58790c  __TEXT,__text  -[TIKeyboardState textInputTraits]
+0x18a587914  __TEXT,__text  -[TIAnalyticsEventSpec .cxx_destruct]
+0x18a587958  __TEXT,__text  -[TIAnalyticsStringFieldSpec .cxx_destruct]
+0x18a58796c  __TEXT,__text  -[TIKeyboardState documentState]
+0x18a587974  __TEXT,__text  -[TIAnalyticsFieldSpec .cxx_destruct]
+0x18a587980  __TEXT,__text  -[TIAnalyticsNumberFieldSpec .cxx_destruct]
+0x18a5879dc  __TEXT,__text  -[TIAnalyticsNumberFieldSpec maxValue]
+0x18a5879f0  __TEXT,__text  +[TIFeedbackUtil getSupportedFeedbackLanguages]
+0x18a5879fc  __TEXT,__text  -[TIKeyboardState setLayoutState:]
+0x18a587a04  __TEXT,__text  +[TIFeedbackUtil getSupportedFeedbackKeyboards]
+0x18a587a10  __TEXT,__text  +[TIFeedbackUtil getPreferenceKey]
+0x18a587a1c  __TEXT,__text  +[TIFeedbackUtil isFeatureEnabledForInternalBuilds]
+0x18a587a6c  __TEXT,__text  +[TIFeedbackUtil getFeedbackState]
+0x18a587adc  __TEXT,__text  -[TIKeyboardState setAutocorrectionListUIDisplayed:]
+0x18a587af0  __TEXT,__text  +[TIFeedbackUtil getStateKey]
+0x18a587b04  __TEXT,__text  +[TIFeedbackUtil getKeyNameFor:]
+0x18a587b6c  __TEXT,__text  +[TIFeedbackUtil getStudyID]
+0x18a587bc8  __TEXT,__text  +[TIFeedbackUtil getStudyEnrollment]
+0x18a587c20  __TEXT,__text  +[TIFeedbackUtil isStudyForFCS]
+0x18a587ea0  __TEXT,__text  _routeCounterChangeThroughCoreAnalytics
+0x18a5880d0  __TEXT,__text  +[TIAdhocEventDispatcher sharedInstance]
+0x18a588118  __TEXT,__text  ___40+[TIAdhocEventDispatcher sharedInstance]_block_invoke
+0x18a588270  __TEXT,__text  -[TIAdhocEventDispatcher dispatchEventForStatisticWithName:andValue:withCompletionHandler:]
+0x18a588578  __TEXT,__text  -[TIKeyboardInputManagerState setUsesPunctuationKeysForRowNavigation:]
+0x18a588598  __TEXT,__text  -[TIImageCacheClient idleAfter:]
+0x18a588698  __TEXT,__text  -[TITextInputTraits autocapitalizationType]
+0x18a5886a4  __TEXT,__text  -[TICharacterSetDescription baseIdentifier]
+0x18a5886ac  __TEXT,__text  -[TIAnalyticsEventSpec name]
+0x18a5886b4  __TEXT,__text  -[TISmartPunctuationOptions rightSingleQuote]
+0x18a5886bc  __TEXT,__text  -[TIStatisticKey initWithAggdName:andCounterName:andInputMode:]
+0x18a588778  __TEXT,__text  ___39-[TIInputContextHistory initWithCoder:]_block_invoke
+0x18a5888a0  __TEXT,__text  std::__1::set<NSHolder<TIInputContextEntry>, std::__1::less<NSHolder<TIInputContextEntry> >, std::__1::allocator<NSHolder<TIInputContextEntry> > > setFromArray<TIInputContextEntry>(NSArray const*)
+0x18a5889c8  __TEXT,__text  std::__1::__tree<NSHolder<TIInputContextEntry>, std::__1::less<NSHolder<TIInputContextEntry> >, std::__1::allocator<NSHolder<TIInputContextEntry> > >::__insert_node_at(std::__1::__tree_end_node<std::__1::__tree_node_base<void*>*>*, std::__1::__tree_node_base<void*>*&, std::__1::__tree_node_base<void
+0x18a588bbc  __TEXT,__text  -[TIInputContextEntry compare:]
+0x18a588d74  __TEXT,__text  -[TIInputContextEntry timestamp]
+0x18a588d7c  __TEXT,__text  -[TIInputContextEntry senderIdentifier]
+0x18a588d84  __TEXT,__text  -[TIInputContextEntry threadIdentifier]
+0x18a588d8c  __TEXT,__text  -[TIInputContextEntry spotlightCacheKey]
+0x18a588d94  __TEXT,__text  -[TIInputContextHistory encodeWithCoder:]
+0x18a589004  __TEXT,__text  ___41-[TIInputContextHistory encodeWithCoder:]_block_invoke
+0x18a5890bc  __TEXT,__text  NSArray* arrayFromSet<TIInputContextEntry>(std::__1::set<NSHolder<TIInputContextEntry>, std::__1::less<NSHolder<TIInputContextEntry> >, std::__1::allocator<NSHolder<TIInputContextEntry> > > const&)
+0x18a5891f8  __TEXT,__text  -[TIInputContextEntry encodeWithCoder:]
+0x18a589400  __TEXT,__text  _TI_filteredSetWithClass
+0x18a589474  __TEXT,__text  ___TI_filteredSetWithClass_block_invoke
+0x18a58949c  __TEXT,__text  +[TIInputContextHistory maxEntryLength]
+0x18a5894cc  __TEXT,__text  -[TIInputContextHistory mostRecentTextEntry]
+0x18a5895b0  __TEXT,__text  -[TIInputContextHistory recipientIdentifiers]
+0x18a5895b8  __TEXT,__text  ___TIGetHardwareLayoutGroups_block_invoke
+0x18a589650  __TEXT,__text  -[TIInputContextHistory debugDescription]
+0x18a589874  __TEXT,__text  ___44-[TIInputContextHistory mostRecentTextEntry]_block_invoke
+0x18a5899c0  __TEXT,__text  std::__1::__tree<NSHolder<TIInputContextEntry>, std::__1::less<NSHolder<TIInputContextEntry> >, std::__1::allocator<NSHolder<TIInputContextEntry> > >::__tree(std::__1::__tree<NSHolder<TIInputContextEntry>, std::__1::less<NSHolder<TIInputContextEntry> >, std::__1::allocator<NSHolder<TIInputContextEnt
+0x18a589a34  __TEXT,__text  -[TIInputContextEntry text]
+0x18a589a3c  __TEXT,__text  -[TIInputContextHistory validateForSmartReplyGeneration]
+0x18a589be8  __TEXT,__text  -[TIInputContextHistory threadIdentifier]
+0x18a589bf0  __TEXT,__text  -[TIInputContextHistory .cxx_construct]
+0x18a589c10  __TEXT,__text  -[TIInputContextHistory _withLockPerformBlock:]
+0x18a589c5c  __TEXT,__text  -[TIInputContextHistory copyWithZone:]
+0x18a589da0  __TEXT,__text  -[TIInputContextHistory initWithRecipientIdentifiers:senderIdentifiers:]
+0x18a589dbc  __TEXT,__text  -[TIInputContextHistory initWithThreadIdentifier:participantsIDtoNamesMap:firstPersonIDs:primaryRecipients:secondaryRecipients:infoDict:]
+0x18a589f54  __TEXT,__text  -[TIInputContextHistory primaryRecipientIdentifiers]
+0x18a589f5c  __TEXT,__text  -[TIInputContextHistory secondaryRecipientIdentifiers]
+0x18a589f64  __TEXT,__text  -[TIInputContextHistory assertCheckpointForCoding]
+0x18a589fd0  __TEXT,__text  -[TIKeyboardBehaviorState setShowsCandidatesInLayout:]
+0x18a589fd8  __TEXT,__text  -[TITextInputTraits allowsTextAnimationsType]
+0x18a589fe0  __TEXT,__text  -[TISupplementalLexicon identifier]
+0x18a589fe8  __TEXT,__text  ___50-[TIInputContextHistory assertCheckpointForCoding]_block_invoke
+0x18a58a10c  __TEXT,__text  -[TIInputContextEntry .cxx_destruct]
+0x18a58a198  __TEXT,__text  -[TIInputContextHistory firstPersonIdentifiers]
+0x18a58a1a0  __TEXT,__text  ___56-[TIInputContextHistory validateForSmartReplyGeneration]_block_invoke
+0x18a58a1e4  __TEXT,__text  -[TIInputContextHistory invalidReasonsForSmartReplyGeneration]
+0x18a58a418  __TEXT,__text  -[TIInputContextHistory participantsIDtoNamesMap]
+0x18a58a420  __TEXT,__text  ___62-[TIInputContextHistory invalidReasonsForSmartReplyGeneration]_block_invoke
+0x18a58a448  __TEXT,__text  ___41-[TIInputContextHistory debugDescription]_block_invoke
+0x18a58a470  __TEXT,__text  -[TIInputContextEntry entryIdentifier]
+0x18a58a478  __TEXT,__text  -[TIInputContextHistory mostRecentTextEntryIsByMe]
+0x18a58a500  __TEXT,__text  -[TIInputContextEntry isFromMe]
+0x18a58a508  __TEXT,__text  -[TIInputContextHistory allParticipantsKnown]
+0x18a58a604  __TEXT,__text  ___45-[TIInputContextHistory allParticipantsKnown]_block_invoke
+0x18a58a69c  __TEXT,__text  +[TIInputContextHistory nameComponentsAreEmpty:]
+0x18a58a864  __TEXT,__text  -[TIInputContextHistory mostRecentNonSenderTextEntry]
+0x18a58a94c  __TEXT,__text  ___53-[TIInputContextHistory mostRecentNonSenderTextEntry]_block_invoke
+0x18a58ab5c  __TEXT,__text  +[TIInputContextHistory isMail]
+0x18a58aba4  __TEXT,__text  std::__1::__tree<NSHolder<TIInputContextEntry>, std::__1::less<NSHolder<TIInputContextEntry> >, std::__1::allocator<NSHolder<TIInputContextEntry> > >::operator=(std::__1::__tree<NSHolder<TIInputContextEntry>, std::__1::less<NSHolder<TIInputContextEntry> >, std::__1::allocator<NSHolder<TIInputContext
+0x18a58ac38  __TEXT,__text  ___38-[TIInputContextHistory copyWithZone:]_block_invoke
+0x18a58ac78  __TEXT,__text  -[TIInputContextHistory .cxx_destruct]
+0x18a58ae00  __TEXT,__text  ___45+[TIKeyboardInputManagerStub serverInterface]_block_invoke
+0x18a58ae54  __TEXT,__text  ___31+[TIInputContextHistory isMail]_block_invoke
+0x18a58aeb8  __TEXT,__text  ___55-[TIPreferencesController synchronizeDomainIfNeedsGet:]_block_invoke
+0x18a58af70  __TEXT,__text  -[NSString(TIExtras) _rangeOfString:fromLocation:]
+0x18a58afe8  __TEXT,__text  ___TIKeyboardPopupVariantsForInputMode_block_invoke
+0x18a58b16c  __TEXT,__text  -[TIDocumentState(InputStringSupport) inputStringWithTerminatorPredicate:]
+0x18a58b24c  __TEXT,__text  -[TIMutableCharacterSetDescription copyWithZone:]
+0x18a58b2e8  __TEXT,__text  -[TIImageCacheClient _localStoreImageForKey:inGroup:withItem:]
+0x18a58b474  __TEXT,__text  +[TITypologyStatisticTypingSpeed statistic]
+0x18a58b704  __TEXT,__text  -[TIAutocorrectionList initWithCorrections:predictions:emojiList:proactiveTriggers:inlineCompletions:]
+0x18a58b818  __TEXT,__text  -[TITypologyStatisticComposite statistics]
+0x18a58b820  __TEXT,__text  +[TIAutocorrectionList listWithCorrections:predictions:emojiList:]
+0x18a58b8a0  __TEXT,__text  +[TIKeyboardSecureCandidateRGBColor blackColor]
+0x18a58b8d0  __TEXT,__text  -[TIKeyboardSecureCandidateTextTraits initWithFontName:fontSize:textColor:]
+0x18a58b8d8  __TEXT,__text  -[TIKeyboardInputManagerClient connection]
+0x18a58b8e0  __TEXT,__text  ___72-[NSAttributedString(TIExtras) _ti_attributedStringByKeepingAttributes:]_block_invoke
+0x18a58b98c  __TEXT,__text  ___72-[NSAttributedString(TIExtras) _ti_attributedStringByKeepingAttributes:]_block_invoke_2
+0x18a58ba44  __TEXT,__text  _TICachedResourcePathForInputMode
+0x18a58bc10  __TEXT,__text  +[TIInputModeLocaleIdentifierOverrideMapping sharedInstance]
+0x18a58bca4  __TEXT,__text  -[TISmartPunctuationController setSmartPunctuationOptions:]
+0x18a58bcb0  __TEXT,__text  -[TIImageCacheItem _callDataReleaseHandler]
+0x18a58bcfc  __TEXT,__text  ___62-[TIImageCacheClient _localStoreImageForKey:inGroup:withItem:]_block_invoke
+0x18a58c334  __TEXT,__text  -[TIImageCacheItem .cxx_destruct]
+0x18a58c36c  __TEXT,__text  -[TIImageCacheItem dealloc]
+0x18a58c3bc  __TEXT,__text  -[TIAutocorrectionList .cxx_destruct]
+0x18a58c418  __TEXT,__text  -[TIKeyboardState setClientIdentifier:]
+0x18a58c420  __TEXT,__text  _NotificationCallback
+0x18a58c4b8  __TEXT,__text  ___NotificationCallback_block_invoke
+0x18a58c550  __TEXT,__text  ___NotificationCallback_block_invoke_2
+0x18a58c5d0  __TEXT,__text  -[TIPreferencesController preferencesChangedCallback:]
+0x18a58c888  __TEXT,__text  -[_TIPreferenceDomain lastSynchronizedTime]
+0x18a58c890  __TEXT,__text  -[_TIPreferenceDomain setNeedsGetSync:]
+0x18a58c898  __TEXT,__text  -[TIPreferencesController ignoreNextSyncNotification]
+0x18a58c8a0  __TEXT,__text  -[TILinguisticAssetDownloadClient requestLinguisticAssetsForLanguage:completion:]
+0x18a58c97c  __TEXT,__text  ___81-[TILinguisticAssetDownloadClient requestLinguisticAssetsForLanguage:completion:]_block_invoke
+0x18a58cad0  __TEXT,__text  -[TILinguisticAssetDownloadClient _newXPCConnection]
+0x18a58cb68  __TEXT,__text  +[TILinguisticAssetDownloadClient _dispatchQueue]
+0x18a58cbb0  __TEXT,__text  +[TILinguisticAssetDownloadClient _internalHandlerForHandler:connection:]
+0x18a58cc8c  __TEXT,__text  -[TITextInputTraits setAutocorrectionType:]
+0x18a58cc9c  __TEXT,__text  -[TITextInputTraits setSpellCheckingType:]
+0x18a58ccac  __TEXT,__text  -[TITextInputTraits setKeyboardAppearance:]
+0x18a58ccbc  __TEXT,__text  -[TITextInputTraits setReturnKeyType:]
+0x18a58cccc  __TEXT,__text  -[TITextInputTraits setEnablesReturnKeyAutomatically:]
+0x18a58ccec  __TEXT,__text  -[TITextInputTraits setSmartInsertDeleteEnabled:]
+0x18a58cd10  __TEXT,__text  -[TITextInputTraits setSmartDashesEnabled:]
+0x18a58cd30  __TEXT,__text  -[TITextInputTraits setRecentInputIdentifier:]
+0x18a58cd38  __TEXT,__text  -[TITextInputTraits setDisablePrediction:]
+0x18a58cd58  __TEXT,__text  -[TITextInputTraits setMathExpressionCompletionType:]
+0x18a58cd70  __TEXT,__text  -[TITextInputTraits setAllowsTextAnimationsType:]
+0x18a58cd78  __TEXT,__text  -[TIKeyboardState setRecipientIdentifier:]
+0x18a58cd80  __TEXT,__text  -[TIKeyboardState inputContextHistory]
+0x18a58cd88  __TEXT,__text  -[TIKeyboardState setSupplementalLexiconIdentifier:]
+0x18a58cd90  __TEXT,__text  -[TIKeyboardState setHardwareKeyboardMode:]
+0x18a58cdb0  __TEXT,__text  -[TIInputModeController defaultEnabledInputModesForCurrentLocale]
+0x18a58cff8  __TEXT,__text  -[_TIPreferenceDomain setDomain:]
+0x18a58d004  __TEXT,__text  -[_TIPreferenceDomain setNotification:]
+0x18a58d010  __TEXT,__text  -[TIInputModeController defaultInputModes]
+0x18a58d018  __TEXT,__text  -[TIInputModeController currentLocale]
+0x18a58d020  __TEXT,__text  -[TIInputModeController preferredLanguages]
+0x18a58d028  __TEXT,__text  -[TIInputModeController setCurrentLocale:]
+0x18a58d030  __TEXT,__text  +[TIInputModeController _inputModesForLocale:language:modeFetcher:]
+0x18a58d4fc  __TEXT,__text  -[TIInputModeController supportedInputModeIdentifiers]
+0x18a58e14c  __TEXT,__text  -[_TIPreference fallbackKey]
+0x18a58e154  __TEXT,__text  ___65-[TIInputModeController defaultEnabledInputModesForCurrentLocale]_block_invoke
+0x18a58e15c  __TEXT,__text  -[TIInputModeController setDefaultInputModes:]
+0x18a58e164  __TEXT,__text  -[TIKeyboardState setAuxiliaryInputModeLanguages:]
+0x18a58e16c  __TEXT,__text  -[TIKeyboardInputManagerClient initWithImplProxy:]
+0x18a58e1e0  __TEXT,__text  -[TIActionWhenIdle invoke]
+0x18a58e230  __TEXT,__text  -[TIActionWhenIdle invocation]
+0x18a58e238  __TEXT,__text  -[TIPreferencesController _configureKey:domain:defaultValue:isCloudSetting:]
+0x18a58e248  __TEXT,__text  -[TIPreferencesController _configureKey:domain:fallbackKey:isCloudSetting:]
+0x18a58e25c  __TEXT,__text  ___TISolariumEnabled_block_invoke
+0x18a58e2a4  __TEXT,__text  -[TIPreferencesController setIsInternalInstall:]
+0x18a58e2ac  __TEXT,__text  -[TIActionWhenIdle initWithTarget:selector:object:]
+0x18a58e3e4  __TEXT,__text  -[TIKeyboardState setSplitKeyboardMode:]
+0x18a58e404  __TEXT,__text  -[TIKeyboardInputManagerClient isKindOfClass:]
+0x18a58e46c  __TEXT,__text  -[TIActionWhenIdle setInvocation:]
+0x18a58e4c0  __TEXT,__text  -[TIImageCacheClient openAndMmap:withInfo:]
+0x18a58eb0c  __TEXT,__text  +[TIAutocorrectionList supportsSecureCoding]
+0x18a58eb14  __TEXT,__text  -[TIAutocorrectionList initWithCoder:]
+0x18a58ed10  __TEXT,__text  -[TICandidateRequestToken shortIdentifier]
+0x18a58ed68  __TEXT,__text  -[TIInputModeController inputModesForTesting]
+0x18a58ed70  __TEXT,__text  -[TIInputModeController enabledInputModes]
+0x18a58ed78  __TEXT,__text  -[TICandidateRequestToken UUID]
+0x18a58ed80  __TEXT,__text  -[TIImageCacheClient imagePath]
+0x18a58ed88  __TEXT,__text  -[TISmartPunctuationOptions setLeftDoubleQuote:]
+0x18a58ed90  __TEXT,__text  -[TISmartPunctuationOptions setRightSingleQuote:]
+0x18a58ed98  __TEXT,__text  +[TISmartPunctuationOptions smartPunctuationOptionsForLocale:]
+0x18a58ede0  __TEXT,__text  -[TISmartPunctuationOptions setRightDoubleQuote:]
+0x18a58ede8  __TEXT,__text  -[TISmartPunctuationOptions initWithLocale:]
+0x18a58ee64  __TEXT,__text  -[TISmartPunctuationOptions leftSingleQuote]
+0x18a58ee6c  __TEXT,__text  -[TISmartPunctuationOptions setUsesDirectionalQuotes:]
+0x18a58ee74  __TEXT,__text  -[TISmartPunctuationController autoQuoteType]
+0x18a58ee7c  __TEXT,__text  -[TISmartPunctuationController setSmartQuotesEnabled:]
+0x18a58ee84  __TEXT,__text  -[TISmartPunctuationController setSmartDashesEnabled:]
+0x18a58ee8c  __TEXT,__text  -[TIKeyboardInputManagerState keyboardBehaviors]
+0x18a58ee94  __TEXT,__text  -[TIAutocorrectionList shouldAcceptTopCandidate]
+0x18a58eed8  __TEXT,__text  -[TIKeyboardState autocapitalizationType]
+0x18a58ef10  __TEXT,__text  -[TIKeyboardState shiftState]
+0x18a58ef18  __TEXT,__text  -[TIKeyboardState wordLearningEnabled]
+0x18a58ef24  __TEXT,__text  -[TIKeyboardState secureTextEntry]
+0x18a58ef5c  __TEXT,__text  -[TIKeyboardState autocapitalizationEnabled]
+0x18a58ef68  __TEXT,__text  -[TITextInputTraits keyboardType]
+0x18a58ef74  __TEXT,__text  +[TIKeyboardConfiguration supportsSecureCoding]
+0x18a58ef7c  __TEXT,__text  -[TIKeyboardConfiguration initWithCoder:]
+0x18a58f230  __TEXT,__text  +[TIKeyboardInputManagerState supportsSecureCoding]
+0x18a58f238  __TEXT,__text  -[TIKeyboardInputManagerState initWithCoder:]
+0x18a58f654  __TEXT,__text  +[TICharacterSetDescription supportsSecureCoding]
+0x18a58f65c  __TEXT,__text  -[TICharacterSetDescription initWithCoder:]
+0x18a58f75c  __TEXT,__text  -[TICharacterSetDescription awakeAfterUsingCoder:]
+0x18a58f828  __TEXT,__text  -[TICharacterSetDescription hash]
+0x18a58f8a8  __TEXT,__text  -[TICharacterSetDescription inverted]
+0x18a58f8b0  __TEXT,__text  -[TICharacterSetDescription charactersAddedToBase]
+0x18a58f8b8  __TEXT,__text  -[TICharacterSetDescription charactersRemovedFromBase]
+0x18a58f8c0  __TEXT,__text  +[TIAggdReporter singletonInstance]
+0x18a58f908  __TEXT,__text  -[TIAggdReporter setValue:forScalarKey:]
+0x18a58f90c  __TEXT,__text  -[TIKeyboardState recipientIdentifier]
+0x18a58f9a8  __TEXT,__text  -[TIInputContextHistory enumerateAllContextEntriesWithEntryId:]
+0x18a58fa3c  __TEXT,__text  -[TIInputContextHistory _enumerateAllEntriesAsInputContextEntries:]
+0x18a58fc98  __TEXT,__text  ___67-[TIInputContextHistory _enumerateAllEntriesAsInputContextEntries:]_block_invoke
+0x18a58fce4  __TEXT,__text  -[TIInputContextHistory recipientNames]
+0x18a58ff8c  __TEXT,__text  -[TIKeyboardState autofillMode]
+0x18a58ff94  __TEXT,__text  -[TIKeyboardBehaviorState setHardwareKeyboardMode:]
+0x18a58ff9c  __TEXT,__text  -[TIKeyboardState initWithCoder:]
+0x18a5905f0  __TEXT,__text  -[TITextInputTraits initWithCoder:]
+0x18a5907e0  __TEXT,__text  -[TIKeyboardState supplementalLexiconIdentifier]
+0x18a5907e8  __TEXT,__text  -[TIStatisticKey aggdName]
+0x18a5907f0  __TEXT,__text  -[TIImageCacheItem data]
+0x18a5907f8  __TEXT,__text  -[TIKeyboardState autocorrectionListUIDisplayed]
+0x18a590804  __TEXT,__text  -[TIAutocorrectionList setContainsProactiveTriggers:]
+0x18a59080c  __TEXT,__text  -[TIAutocorrectionList proactiveSuggestionsEmpty]
+0x18a590814  __TEXT,__text  -[TIAutocorrectionList inlineCompletions]
+0x18a59081c  __TEXT,__text  +[TIAutocorrectionList listWithCorrections:predictions:emojiList:inlineCompletionList:proactiveTriggers:]
+0x18a5908c4  __TEXT,__text  -[TIAutocorrectionList initListWithCorrections:predictions:emojiList:proactiveTriggers:inlineCompletions:]
+0x18a5909d8  __TEXT,__text  -[TITypologyStatisticBasicCounts characterCount]
+0x18a5909ec  __TEXT,__text  -[TIAutocorrectionList setProactiveSuggestionsEmpty:]
+0x18a5909f4  __TEXT,__text  -[TITypologyStatisticBasicCounts touchCount]
+0x18a590a08  __TEXT,__text  -[TICandidateRequestToken isSameRequestAs:]
+0x18a590ae4  __TEXT,__text  -[TITypologyStatisticBasicCounts predictiveSelectionCount]
+0x18a590af8  __TEXT,__text  -[TITypologyStatisticBasicCounts falseBackspaceCount]
+0x18a590b0c  __TEXT,__text  -[TICandidateRequestToken documentState]
+0x18a590b14  __TEXT,__text  -[TITypologyStatisticBasicCounts falseBackspaceIntoAutocorrectionCount]
+0x18a590b28  __TEXT,__text  -[TITypologyStatisticTypingSpeed typingSpeed]
+0x18a590bac  __TEXT,__text  -[TICandidateRequestToken shiftState]
+0x18a590bb4  __TEXT,__text  -[TIZephyrCandidate label]
+0x18a590c10  __TEXT,__text  -[TIKeyboardConfiguration inputManagerState]
+0x18a590c18  __TEXT,__text  -[TIKeyboardInputManagerState usesContinuousPath]
+0x18a590c24  __TEXT,__text  -[TIKeyboardInputManagerState supportsSetPhraseBoundary]
+0x18a590c30  __TEXT,__text  -[TIKeyboardInputManagerState usesCandidateSelection]
+0x18a590c3c  __TEXT,__text  -[TIKeyboardInputManagerState autoquoteType]
+0x18a590c48  __TEXT,__text  -[TISmartPunctuationController setAutoQuoteType:]
+0x18a590c50  __TEXT,__text  -[TIKeyboardConfiguration intermediateText]
+0x18a590c58  __TEXT,__text  -[TIKeyboardConfiguration assertDefaultKeyPlane]
+0x18a590c60  __TEXT,__text  -[TIKeyboardConfiguration layoutTag]
+0x18a590c68  __TEXT,__text  -[TIKeyboardConfiguration accentKeyString]
+0x18a590c70  __TEXT,__text  -[TIKeyboardConfiguration contextualDisplayKeys]
+0x18a590c78  __TEXT,__text  -[TIKeyboardConfiguration multilingualLanguages]
+0x18a590c80  __TEXT,__text  -[TIKeyboardConfiguration trialParameters]
+0x18a590c88  __TEXT,__text  -[TIKeyboardInputManagerState shouldExtendPriorWord]
+0x18a590c94  __TEXT,__text  -[TIKeyboardInputManagerState nextInputWouldStartSentence]
+0x18a590ca0  __TEXT,__text  -[TIKeyboardState needContactAutofill]
+0x18a590cb4  __TEXT,__text  -[TIKeyboardBehaviorState setHasInput:]
+0x18a590cbc  __TEXT,__text  -[TIKeyboardBehaviorState setHasAutocorrection:]
+0x18a590cc4  __TEXT,__text  -[TIKeyboardBehaviorState setContinuousPathUnderway:]
+0x18a590ccc  __TEXT,__text  -[TIKeyboardBehaviorState setHasCandidates:]
+0x18a590cd4  __TEXT,__text  -[TIKeyboardBehaviorState setHasCandidateSelected:]
+0x18a590cdc  __TEXT,__text  -[TIKeyboardState userSelectedCurrentCandidate]
+0x18a590ce8  __TEXT,__text  -[TIKeyboardBehaviorState setUserSelectedCurrentCandidate:]
+0x18a590cf0  __TEXT,__text  -[TIKeyboardBehaviorState setShowsExtendedList:]
+0x18a590cf8  __TEXT,__text  -[TIKeyboardState layoutState]
+0x18a590d00  __TEXT,__text  -[TIKeyboardLayoutState hasCandidateKey]
+0x18a590d08  __TEXT,__text  -[TIKeyboardBehaviorState setFollowsZhuyin:]
+0x18a590d10  __TEXT,__text  -[TIKeyboardInputManagerState shouldFixupIncompleteRomaji]
+0x18a590d1c  __TEXT,__text  -[TIKeyboardBehaviorState setFollowsIncompleteRomaji:]
+0x18a590d24  __TEXT,__text  -[TIKeyboardBehaviorState setSpaceConfirmation:]
+0x18a590d2c  __TEXT,__text  -[TIKeyboardState setNeedAutofill:]
+0x18a590d4c  __TEXT,__text  +[TIKeyboardState supportsSecureCoding]
+0x18a590d54  __TEXT,__text  +[TIInputContextHistory supportsSecureCoding]
+0x18a590d5c  __TEXT,__text  -[TIInputContextHistory initWithCoder:]
+0x18a591178  __TEXT,__text  +[TITextInputTraits supportsSecureCoding]
+0x18a591180  __TEXT,__text  -[TIKeyboardState canSuggestSupplementalItemsForCurrentSelection]
+0x18a59118c  __TEXT,__text  -[TITypologyTimer setMaxTimeIntervalBetweenInputs:]
+0x18a591194  __TEXT,__text  -[TITypologyStatisticTypingSpeed initWithTimeElapsed:basicCounts:]
+0x18a591280  __TEXT,__text  -[TITypologyStatisticComposite finalizeComputation]
+0x18a59136c  __TEXT,__text  -[TITypologyStatisticTypingSpeed aggregateReport]
+0x18a591424  __TEXT,__text  -[TITypologyStatisticTimeElapsed aggregateReport]
+0x18a5914a0  __TEXT,__text  -[TITypologyStatisticTimeElapsed adjustedElapsedTime]
+0x18a5914e0  __TEXT,__text  -[TITypologyStatisticTimeElapsed adjustedTimer]
+0x18a5914e8  __TEXT,__text  -[TITypologyTimer elapsedTime]
+0x18a5914f0  __TEXT,__text  -[TITypologyStatisticBasicCounts aggregateReport]
+0x18a591638  __TEXT,__text  -[TIAutocorrectionList encodeWithCoder:]
+0x18a591718  __TEXT,__text  -[TITypologyStatisticTypingSpeed timeElapsed]
+0x18a591720  __TEXT,__text  -[TITypologyStatisticTypingSpeed basicCounts]
+0x18a591728  __TEXT,__text  -[TICandidateRequestToken encodeWithCoder:]
+0x18a5917a8  __TEXT,__text  -[TITypologyRecordAutocorrections setAutocorrections:]
+0x18a5917b4  __TEXT,__text  -[TITypologyRecordAutocorrections setListUIDisplayed:]
+0x18a5917bc  __TEXT,__text  -[TICandidateRequestToken .cxx_destruct]
+0x18a5917f4  __TEXT,__text  -[TITypologyRecordAutocorrections setKeyboardState:]
+0x18a591800  __TEXT,__text  -[TITypologyRecordAutocorrections setRequestToken:]
+0x18a59180c  __TEXT,__text  -[TITypologyStatisticComposite visitRecordAutocorrections:]
+0x18a591910  __TEXT,__text  -[TITypologyStatistic visitRecordAutocorrections:]
+0x18a591914  __TEXT,__text  -[TITypologyStatisticCurrentAutocorrections visitRecordAutocorrections:]
+0x18a591990  __TEXT,__text  -[TITypologyStatisticCurrentAutocorrections setAutocorrections:]
+0x18a59199c  __TEXT,__text  -[TITypologyRecordAutocorrections autocorrections]
+0x18a5919a4  __TEXT,__text  -[TITypologyRecordAutocorrections requestToken]
+0x18a5919ac  __TEXT,__text  -[TITypologyStatisticCurrentAutocorrections setRequestToken:]
+0x18a5919b8  __TEXT,__text  -[TIKeyboardState documentIdentifier]
+0x18a5919c0  __TEXT,__text  -[TITypologyRecordAutocorrections .cxx_destruct]
+0x18a591a04  __TEXT,__text  -[TIInputContextHistory hasPendingEntries]
+0x18a591aa8  __TEXT,__text  ___42-[TIInputContextHistory hasPendingEntries]_block_invoke
+0x18a591ac4  __TEXT,__text  -[TIKeyboardState isScreenLocked]
+0x18a591ad0  __TEXT,__text  +[TICandidateRequestToken supportsSecureCoding]
+0x18a591ad8  __TEXT,__text  -[TICandidateRequestToken initWithCoder:]
+0x18a591ba8  __TEXT,__text  +[TIDocumentState supportsSecureCoding]
+0x18a591bb0  __TEXT,__text  -[TIZephyrCandidate initWithCandidate:forInput:rawInput:wordOriginFeedbackID:usageTrackingMask:sourceMask:learningFlagsMask:]
+0x18a591cb0  __TEXT,__text  -[TIKeyboardCandidateSingle initWithCandidate:forInput:rawInput:sourceMask:learningFlagsMask:]
+0x18a591cc0  __TEXT,__text  -[TIAutocorrectionList predictionsIfSupplemental]
+0x18a591d2c  __TEXT,__text  -[TIAutocorrectionList autocorrectionIfSupplemental]
+0x18a591dac  __TEXT,__text  -[TIKeyboardCandidate setSupplementalItemIdentifiers:]
+0x18a591db4  __TEXT,__text  -[TIZephyrCandidate setGeometryScore:]
+0x18a591dc8  __TEXT,__text  -[TIZephyrCandidate setWordScore:]
+0x18a591ddc  __TEXT,__text  -[TIKeyboardCandidate setLexiconLocale:]
+0x18a591de4  __TEXT,__text  -[TIZephyrCandidate setDynamicUsageCount:]
+0x18a591df8  __TEXT,__text  -[TIZephyrCandidate setDynamicPenaltyCount:]
+0x18a591e0c  __TEXT,__text  -[TIZephyrCandidate setStaticLinguisticLikelihood:]
+0x18a591e18  __TEXT,__text  -[TIKeyboardCandidateSingle input]
+0x18a591e20  __TEXT,__text  +[TIAutocorrectionList listWithPredictions:proactiveTriggers:]
+0x18a591e90  __TEXT,__text  -[TITextInputTraits textContentType]
+0x18a591e98  __TEXT,__text  +[TIAutocorrectionList listWithPredictions:emojiList:proactiveTriggers:]
+0x18a591f14  __TEXT,__text  -[TIAutocorrectionList initWithCorrections:predictions:emojiList:proactiveTriggers:]
+0x18a591ffc  __TEXT,__text  -[TIKeyboardState inlineCompletionEnabled]
+0x18a592008  __TEXT,__text  +[TIAutocorrectionList listWithCorrections:inlineCompletionList:]
+0x18a592078  __TEXT,__text  -[TIZephyrCandidate .cxx_destruct]
+0x18a592110  __TEXT,__text  +[TIImageCacheItem cacheItemWithSize:format:formatColor:scale:data:dataReleaseHandler:]
+0x18a5921d4  __TEXT,__text  -[TIImageCacheClient storeImageDataForKey:inGroup:item:]
+0x18a592260  __TEXT,__text  -[TIKeyboardState autofillContext]
+0x18a592268  __TEXT,__text  -[TIImageCacheItem scale]
+0x18a592270  __TEXT,__text  -[TIImageCacheClient _imgForItem:]
+0x18a5923d0  __TEXT,__text  -[TIImageCacheItem size]
+0x18a5923d8  __TEXT,__text  -[TIKeyboardState responseContext]
+0x18a59245c  __TEXT,__text  -[TIImageCacheItem format]
+0x18a592464  __TEXT,__text  -[TIImageCacheItem formatColor]
+0x18a59246c  __TEXT,__text  -[TIImageCacheClient storeImageQueue]
+0x18a5924d0  __TEXT,__text  -[TIKeyboardState supportedPayloadIds]
+0x18a5924d8  __TEXT,__text  -[TIKeyboardState canSendCurrentLocation]
+0x18a5924e4  __TEXT,__text  -[TIKeyboardState secureCandidateRenderTraits]
+0x18a5924ec  __TEXT,__text  -[TIInputContextHistory infoDict]
+0x18a5924f4  __TEXT,__text  -[TIInputContextEntry init]
+0x18a59252c  __TEXT,__text  -[TIInputContextEntry setText:]
+0x18a592538  __TEXT,__text  -[TIInputContextEntry setSenderName:]
+0x18a592544  __TEXT,__text  -[TIInputContextHistory maxContextLength]
+0x18a59254c  __TEXT,__text  -[TIInputContextEntry setSenderIdentifier:]
+0x18a592558  __TEXT,__text  -[TIInputContextEntry setTimestamp:]
+0x18a592564  __TEXT,__text  -[TIInputContextEntry setEntryIdentifier:]
+0x18a592570  __TEXT,__text  -[TIInputContextEntry setEntryType:]
+0x18a592578  __TEXT,__text  -[TIInputContextEntry setThreadIdentifier:]
+0x18a592584  __TEXT,__text  -[TIInputContextEntry setSpotlightCacheKey:]
+0x18a592590  __TEXT,__text  -[TIInputContextEntry copyWithZone:]
+0x18a592690  __TEXT,__text  -[TIInputContextHistory _addEntry:]
+0x18a5927dc  __TEXT,__text  -[NSString(TIExtras) _stringWithLongestWhitespaceDelimitedSuffixOfMaxLength:]
+0x18a5928c8  __TEXT,__text  ___35-[TIInputContextHistory _addEntry:]_block_invoke
+0x18a592998  __TEXT,__text  -[TIInputContextEntry enforceMaxContextLength:]
+0x18a592a04  __TEXT,__text  -[TIInputContextHistory setInfoDict:]
+0x18a592a10  __TEXT,__text  -[TIKeyboardState setSearchStringForMarkedText:]
+0x18a592a18  __TEXT,__text  +[NSString(TIExtras) _characterSetWithPattern:]
+0x18a592b2c  __TEXT,__text  -[NSString(TIExtras) _containsIdeographicCharacters]
+0x18a592b64  __TEXT,__text  +[NSString(TIExtras) _nonIdeographicCharacterSet]
+0x18a592bf4  __TEXT,__text  ___49+[NSString(TIExtras) _nonIdeographicCharacterSet]_block_invoke
+0x18a592c20  __TEXT,__text  -[TIKeyboardLayout encodeWithCoder:]
+0x18a592cc8  __TEXT,__text  +[TIKeyboardCandidate type]
+0x18a592cd0  __TEXT,__text  -[TIKeyboardCandidate isAlternativeInput]
+0x18a592cd8  __TEXT,__text  -[TIDocumentState(InputStringSupport) wordPrefixOfString:withTerminatorPredicate:reverse:]
+0x18a592e68  __TEXT,__text  -[TIKeyboardLayout initWithCapacity:]
+0x18a592fcc  __TEXT,__text  +[TITypologyRecord supportsSecureCoding]
+0x18a592fd4  __TEXT,__text  -[TITypologyRecord initWithCoder:]
+0x18a593074  __TEXT,__text  -[TITypologyRecord encodeWithCoder:]
+0x18a5930dc  __TEXT,__text  -[TITypologyRecord textSummary]
+0x18a5930e8  __TEXT,__text  -[TITypologyRecord shortDescription]
+0x18a5930f4  __TEXT,__text  -[TITypologyRecord changedText]
+0x18a5930fc  __TEXT,__text  -[TITypologyRecord currentKeyboardState]
+0x18a593104  __TEXT,__text  -[TITypologyRecord removeContextFromKeyboardState]
+0x18a593108  __TEXT,__text  -[TITypologyRecord replaceDocumentState:]
+0x18a59310c  __TEXT,__text  -[TITypologyRecord textSummaryForAutocorrection:]
+0x18a593200  __TEXT,__text  +[TITypologyRecord recordClasses]
+0x18a593364  __TEXT,__text  -[TITypologyRecord timestamp]
+0x18a59336c  __TEXT,__text  -[TITypologyRecord setTimestamp:]
+0x18a593374  __TEXT,__text  -[TITypologyRecord recordID]
+0x18a59337c  __TEXT,__text  -[TITypologyRecord setRecordID:]
+0x18a593388  __TEXT,__text  +[TITypologyRecordSync supportsSecureCoding]
+0x18a593390  __TEXT,__text  -[TITypologyRecordSync initWithCoder:]
+0x18a593450  __TEXT,__text  -[TITypologyRecordSync encodeWithCoder:]
+0x18a5934d8  __TEXT,__text  -[TITypologyRecordSync currentKeyboardState]
+0x18a5934dc  __TEXT,__text  -[TITypologyRecordSync removeContextFromKeyboardState]
+0x18a59353c  __TEXT,__text  -[TITypologyRecordSync textSummary]
+0x18a593758  __TEXT,__text  ___35-[TITypologyRecordSync textSummary]_block_invoke
+0x18a5937dc  __TEXT,__text  -[TITypologyRecordSync shortDescription]
+0x18a593854  __TEXT,__text  -[TITypologyRecordSync replaceDocumentState:]
+0x18a5938a8  __TEXT,__text  -[TITypologyRecordSync keyboardState]
+0x18a5938b0  __TEXT,__text  -[TITypologyRecordSync setKeyboardState:]
+0x18a5938bc  __TEXT,__text  -[TITypologyRecordSync keyboardConfig]
+0x18a5938c4  __TEXT,__text  -[TITypologyRecordSync setKeyboardConfig:]
+0x18a5938d0  __TEXT,__text  +[TITypologyRecordKeyboardInput supportsSecureCoding]
+0x18a5938d8  __TEXT,__text  -[TITypologyRecordKeyboardInput initWithCoder:]
+0x18a5939f8  __TEXT,__text  -[TITypologyRecordKeyboardInput encodeWithCoder:]
+0x18a593aa8  __TEXT,__text  -[TITypologyRecordKeyboardInput currentKeyboardState]
+0x18a593aac  __TEXT,__text  -[TITypologyRecordKeyboardInput removeContextFromKeyboardState]
+0x18a593b0c  __TEXT,__text  -[TITypologyRecordKeyboardInput textSummary]
+0x18a593ccc  __TEXT,__text  -[TITypologyRecordKeyboardInput shortDescription]
+0x18a593fec  __TEXT,__text  -[TITypologyRecordKeyboardInput changedText]
+0x18a5944a4  __TEXT,__text  -[TITypologyRecordKeyboardInput replaceDocumentState:]
+0x18a5944f8  __TEXT,__text  -[TITypologyRecordKeyboardInput input]
+0x18a594500  __TEXT,__text  -[TITypologyRecordKeyboardInput setInput:]
+0x18a59450c  __TEXT,__text  -[TITypologyRecordKeyboardInput keyboardState]
+0x18a594514  __TEXT,__text  -[TITypologyRecordKeyboardInput setKeyboardState:]
+0x18a594520  __TEXT,__text  -[TITypologyRecordKeyboardInput output]
+0x18a594528  __TEXT,__text  -[TITypologyRecordKeyboardInput setOutput:]
+0x18a594534  __TEXT,__text  -[TITypologyRecordKeyboardInput keyboardConfig]
+0x18a59453c  __TEXT,__text  -[TITypologyRecordKeyboardInput setKeyboardConfig:]
+0x18a594548  __TEXT,__text  -[TITypologyRecordKeyboardInput .cxx_destruct]
+0x18a594598  __TEXT,__text  +[TITypologyRecordAutocorrections supportsSecureCoding]
+0x18a5945a0  __TEXT,__text  -[TITypologyRecordAutocorrections initWithCoder:]
+0x18a594690  __TEXT,__text  -[TITypologyRecordAutocorrections encodeWithCoder:]
+0x18a59472c  __TEXT,__text  -[TITypologyRecordAutocorrections currentKeyboardState]
+0x18a594730  __TEXT,__text  -[TITypologyRecordAutocorrections removeContextFromKeyboardState]
+0x18a594790  __TEXT,__text  -[TITypologyRecordAutocorrections shortDescription]
+0x18a594ba4  __TEXT,__text  -[TITypologyRecordAutocorrections replaceDocumentState:]
+0x18a594bf8  __TEXT,__text  -[TITypologyRecordAutocorrections keyboardState]
+0x18a594c00  __TEXT,__text  -[TITypologyRecordAutocorrections listUIDisplayed]
+0x18a594c08  __TEXT,__text  +[TITypologyRecordCandidateResultSet supportsSecureCoding]
+0x18a594c10  __TEXT,__text  -[TITypologyRecordCandidateResultSet initWithCoder:]
+0x18a594cd0  __TEXT,__text  -[TITypologyRecordCandidateResultSet encodeWithCoder:]
+0x18a594d64  __TEXT,__text  -[TITypologyRecordCandidateResultSet currentKeyboardState]
+0x18a594d68  __TEXT,__text  -[TITypologyRecordCandidateResultSet removeContextFromKeyboardState]
+0x18a594dc8  __TEXT,__text  -[TITypologyRecordCandidateResultSet shortDescription]
+0x18a594ed4  __TEXT,__text  ___54-[TITypologyRecordCandidateResultSet shortDescription]_block_invoke
+0x18a594fb8  __TEXT,__text  -[TITypologyRecordCandidateResultSet replaceDocumentState:]
+0x18a59500c  __TEXT,__text  -[TITypologyRecordCandidateResultSet keyboardState]
+0x18a595014  __TEXT,__text  -[TITypologyRecordCandidateResultSet setKeyboardState:]
+0x18a595020  __TEXT,__text  -[TITypologyRecordCandidateResultSet resultSet]
+0x18a595028  __TEXT,__text  -[TITypologyRecordCandidateResultSet setResultSet:]
+0x18a595034  __TEXT,__text  -[TITypologyRecordCandidateResultSet requestToken]
+0x18a59503c  __TEXT,__text  -[TITypologyRecordCandidateResultSet setRequestToken:]
+0x18a595048  __TEXT,__text  -[TITypologyRecordCandidateResultSet .cxx_destruct]
+0x18a59508c  __TEXT,__text  +[TITypologyRecordAcceptedCandidate supportsSecureCoding]
+0x18a595094  __TEXT,__text  -[TITypologyRecordAcceptedCandidate initWithCoder:]
+0x18a5951c8  __TEXT,__text  -[TITypologyRecordAcceptedCandidate encodeWithCoder:]
+0x18a595278  __TEXT,__text  -[TITypologyRecordAcceptedCandidate currentKeyboardState]
+0x18a59527c  __TEXT,__text  -[TITypologyRecordAcceptedCandidate removeContextFromKeyboardState]
+0x18a5952dc  __TEXT,__text  -[TITypologyRecordAcceptedCandidate textSummary]
+0x18a59533c  __TEXT,__text  -[TITypologyRecordAcceptedCandidate shortDescription]
+0x18a595458  __TEXT,__text  -[TITypologyRecordAcceptedCandidate changedText]
+0x18a5955e8  __TEXT,__text  -[TITypologyRecordAcceptedCandidate replaceDocumentState:]
+0x18a59563c  __TEXT,__text  -[TITypologyRecordAcceptedCandidate candidate]
+0x18a595644  __TEXT,__text  -[TITypologyRecordAcceptedCandidate setCandidate:]
+0x18a595650  __TEXT,__text  -[TITypologyRecordAcceptedCandidate keyboardState]
+0x18a595658  __TEXT,__text  -[TITypologyRecordAcceptedCandidate setKeyboardState:]
+0x18a595664  __TEXT,__text  -[TITypologyRecordAcceptedCandidate keyboardConfig]
+0x18a59566c  __TEXT,__text  -[TITypologyRecordAcceptedCandidate setKeyboardConfig:]
+0x18a595678  __TEXT,__text  -[TITypologyRecordAcceptedCandidate textToCommit]
+0x18a595680  __TEXT,__text  -[TITypologyRecordAcceptedCandidate setTextToCommit:]
+0x18a595688  __TEXT,__text  -[TITypologyRecordAcceptedCandidate .cxx_destruct]
+0x18a5956d8  __TEXT,__text  +[TITypologyRecordReplacements supportsSecureCoding]
+0x18a5956e0  __TEXT,__text  -[TITypologyRecordReplacements initWithCoder:]
+0x18a595818  __TEXT,__text  -[TITypologyRecordReplacements encodeWithCoder:]
+0x18a5958b4  __TEXT,__text  -[TITypologyRecordReplacements shortDescription]
+0x18a595934  __TEXT,__text  -[TITypologyRecordReplacements string]
+0x18a59593c  __TEXT,__text  -[TITypologyRecordReplacements setString:]
+0x18a595944  __TEXT,__text  -[TITypologyRecordReplacements keyLayout]
+0x18a59594c  __TEXT,__text  -[TITypologyRecordReplacements setKeyLayout:]
+0x18a595958  __TEXT,__text  -[TITypologyRecordReplacements candidates]
+0x18a595960  __TEXT,__text  -[TITypologyRecordReplacements setCandidates:]
+0x18a59596c  __TEXT,__text  -[TITypologyRecordReplacements .cxx_destruct]
+0x18a5959b0  __TEXT,__text  +[TITypologyRecordRefinements supportsSecureCoding]
+0x18a5959b8  __TEXT,__text  -[TITypologyRecordRefinements initWithCoder:]
+0x18a595aa8  __TEXT,__text  -[TITypologyRecordRefinements encodeWithCoder:]
+0x18a595b44  __TEXT,__text  -[TITypologyRecordRefinements currentKeyboardState]
+0x18a595b48  __TEXT,__text  -[TITypologyRecordRefinements removeContextFromKeyboardState]
+0x18a595ba8  __TEXT,__text  -[TITypologyRecordRefinements shortDescription]
+0x18a595d48  __TEXT,__text  -[TITypologyRecordRefinements replaceDocumentState:]
+0x18a595d9c  __TEXT,__text  -[TITypologyRecordRefinements candidate]
+0x18a595da4  __TEXT,__text  -[TITypologyRecordRefinements setCandidate:]
+0x18a595db0  __TEXT,__text  -[TITypologyRecordRefinements keyboardState]
+0x18a595db8  __TEXT,__text  -[TITypologyRecordRefinements setKeyboardState:]
+0x18a595dc4  __TEXT,__text  -[TITypologyRecordRefinements refinements]
+0x18a595dcc  __TEXT,__text  -[TITypologyRecordRefinements setRefinements:]
+0x18a595dd8  __TEXT,__text  -[TITypologyRecordRefinements .cxx_destruct]
+0x18a595e1c  __TEXT,__text  +[TITypologyRecordHitTest supportsSecureCoding]
+0x18a595e24  __TEXT,__text  -[TITypologyRecordHitTest initWithCoder:]
+0x18a595f28  __TEXT,__text  -[TITypologyRecordHitTest encodeWithCoder:]
+0x18a595fd8  __TEXT,__text  -[TITypologyRecordHitTest currentKeyboardState]
+0x18a595fdc  __TEXT,__text  -[TITypologyRecordHitTest removeContextFromKeyboardState]
+0x18a59603c  __TEXT,__text  -[TITypologyRecordHitTest shortDescription]
+0x18a5960c0  __TEXT,__text  -[TITypologyRecordHitTest replaceDocumentState:]
+0x18a596114  __TEXT,__text  -[TITypologyRecordHitTest touchEvent]
+0x18a59611c  __TEXT,__text  -[TITypologyRecordHitTest setTouchEvent:]
+0x18a596128  __TEXT,__text  -[TITypologyRecordHitTest keyboardState]
+0x18a596130  __TEXT,__text  -[TITypologyRecordHitTest setKeyboardState:]
+0x18a59613c  __TEXT,__text  -[TITypologyRecordHitTest keyLayout]
+0x18a596144  __TEXT,__text  -[TITypologyRecordHitTest setKeyLayout:]
+0x18a596150  __TEXT,__text  -[TITypologyRecordHitTest keyCode]
+0x18a596158  __TEXT,__text  -[TITypologyRecordHitTest setKeyCode:]
+0x18a596160  __TEXT,__text  -[TITypologyRecordHitTest .cxx_destruct]
+0x18a5961a4  __TEXT,__text  +[TITypologyRecordSkipHitTest supportsSecureCoding]
+0x18a5961ac  __TEXT,__text  -[TITypologyRecordSkipHitTest initWithCoder:]
+0x18a59629c  __TEXT,__text  -[TITypologyRecordSkipHitTest encodeWithCoder:]
+0x18a596338  __TEXT,__text  -[TITypologyRecordSkipHitTest currentKeyboardState]
+0x18a59633c  __TEXT,__text  -[TITypologyRecordSkipHitTest removeContextFromKeyboardState]
+0x18a59639c  __TEXT,__text  -[TITypologyRecordSkipHitTest shortDescription]
+0x18a596414  __TEXT,__text  -[TITypologyRecordSkipHitTest replaceDocumentState:]
+0x18a596468  __TEXT,__text  -[TITypologyRecordSkipHitTest touchEvent]
+0x18a596470  __TEXT,__text  -[TITypologyRecordSkipHitTest setTouchEvent:]
+0x18a59647c  __TEXT,__text  -[TITypologyRecordSkipHitTest keyboardState]
+0x18a596484  __TEXT,__text  -[TITypologyRecordSkipHitTest setKeyboardState:]
+0x18a596490  __TEXT,__text  -[TITypologyRecordSkipHitTest keyLayout]
+0x18a596498  __TEXT,__text  -[TITypologyRecordSkipHitTest setKeyLayout:]
+0x18a5964a4  __TEXT,__text  -[TITypologyRecordSkipHitTest .cxx_destruct]
+0x18a5964e8  __TEXT,__text  +[TITypologyRecordPhraseBoundaryAdjustment supportsSecureCoding]
+0x18a5964f0  __TEXT,__text  -[TITypologyRecordPhraseBoundaryAdjustment initWithCoder:]
+0x18a5965d8  __TEXT,__text  -[TITypologyRecordPhraseBoundaryAdjustment encodeWithCoder:]
+0x18a596688  __TEXT,__text  -[TITypologyRecordPhraseBoundaryAdjustment currentKeyboardState]
+0x18a59668c  __TEXT,__text  -[TITypologyRecordPhraseBoundaryAdjustment removeContextFromKeyboardState]
+0x18a5966ec  __TEXT,__text  -[TITypologyRecordPhraseBoundaryAdjustment shortDescription]
+0x18a5967a0  __TEXT,__text  -[TITypologyRecordPhraseBoundaryAdjustment replaceDocumentState:]
+0x18a5967f4  __TEXT,__text  -[TITypologyRecordPhraseBoundaryAdjustment forwardAdjustment]
+0x18a5967fc  __TEXT,__text  -[TITypologyRecordPhraseBoundaryAdjustment setForwardAdjustment:]
+0x18a596804  __TEXT,__text  -[TITypologyRecordPhraseBoundaryAdjustment granularity]
+0x18a59680c  __TEXT,__text  -[TITypologyRecordPhraseBoundaryAdjustment setGranularity:]
+0x18a596814  __TEXT,__text  -[TITypologyRecordPhraseBoundaryAdjustment keyboardState]
+0x18a59681c  __TEXT,__text  -[TITypologyRecordPhraseBoundaryAdjustment setKeyboardState:]
+0x18a596828  __TEXT,__text  -[TITypologyRecordPhraseBoundaryAdjustment keyboardConfig]
+0x18a596830  __TEXT,__text  -[TITypologyRecordPhraseBoundaryAdjustment setKeyboardConfig:]
+0x18a59683c  __TEXT,__text  -[TITypologyRecordPhraseBoundaryAdjustment .cxx_destruct]
+0x18a596874  __TEXT,__text  +[TITypologyRecordSetOriginalInput supportsSecureCoding]
+0x18a59687c  __TEXT,__text  -[TITypologyRecordSetOriginalInput initWithCoder:]
+0x18a596920  __TEXT,__text  -[TITypologyRecordSetOriginalInput encodeWithCoder:]
+0x18a596994  __TEXT,__text  -[TITypologyRecordSetOriginalInput shortDescription]
+0x18a5969f4  __TEXT,__text  -[TITypologyRecordSetOriginalInput originalInput]
+0x18a5969fc  __TEXT,__text  -[TITypologyRecordSetOriginalInput setOriginalInput:]
+0x18a596a04  __TEXT,__text  -[TITypologyRecordSetOriginalInput .cxx_destruct]
+0x18a596a10  __TEXT,__text  +[TITypologyRecordTextAccepted supportsSecureCoding]
+0x18a596a18  __TEXT,__text  -[TITypologyRecordTextAccepted initWithCoder:]
+0x18a596aa8  __TEXT,__text  -[TITypologyRecordTextAccepted encodeWithCoder:]
+0x18a596b1c  __TEXT,__text  -[TITypologyRecordTextAccepted textSummary]
+0x18a596b9c  __TEXT,__text  -[TITypologyRecordTextAccepted shortDescription]
+0x18a596c44  __TEXT,__text  -[TITypologyRecordTextAccepted changedText]
+0x18a596d6c  __TEXT,__text  -[TITypologyRecordTextAccepted candidate]
+0x18a596d74  __TEXT,__text  -[TITypologyRecordTextAccepted setCandidate:]
+0x18a596d80  __TEXT,__text  -[TITypologyRecordTextAccepted .cxx_destruct]
+0x18a596d8c  __TEXT,__text  +[TITypologyRecordCandidateRejected supportsSecureCoding]
+0x18a596d94  __TEXT,__text  -[TITypologyRecordCandidateRejected initWithCoder:]
+0x18a596e24  __TEXT,__text  -[TITypologyRecordCandidateRejected encodeWithCoder:]
+0x18a596e98  __TEXT,__text  -[TITypologyRecordCandidateRejected shortDescription]
+0x18a596f10  __TEXT,__text  -[TITypologyRecordCandidateRejected candidate]
+0x18a596f18  __TEXT,__text  -[TITypologyRecordCandidateRejected setCandidate:]
+0x18a596f24  __TEXT,__text  -[TITypologyRecordCandidateRejected .cxx_destruct]
+0x18a596f30  __TEXT,__text  +[TITypologyRecordLastAcceptedCandidateCorrected supportsSecureCoding]
+0x18a596f38  __TEXT,__text  -[TITypologyRecordLastAcceptedCandidateCorrected initWithCoder:]
+0x18a596f70  __TEXT,__text  -[TITypologyRecordLastAcceptedCandidateCorrected encodeWithCoder:]
+0x18a596fa8  __TEXT,__text  -[TITypologyRecordLastAcceptedCandidateCorrected shortDescription]
+0x18a596fb4  __TEXT,__text  +[TITypologyRecordKeyboardLayout supportsSecureCoding]
+0x18a596fbc  __TEXT,__text  -[TITypologyRecordKeyboardLayout initWithCoder:]
+0x18a59706c  __TEXT,__text  -[TITypologyRecordKeyboardLayout encodeWithCoder:]
+0x18a5970f4  __TEXT,__text  -[TITypologyRecordKeyboardLayout shortDescription]
+0x18a597100  __TEXT,__text  -[TITypologyRecordKeyboardLayout keyboardLayout]
+0x18a597108  __TEXT,__text  -[TITypologyRecordKeyboardLayout setKeyboardLayout:]
+0x18a597114  __TEXT,__text  -[TITypologyRecordKeyboardLayout name]
+0x18a59711c  __TEXT,__text  -[TITypologyRecordKeyboardLayout setName:]
+0x18a597124  __TEXT,__text  -[TITypologyRecordKeyboardLayout .cxx_destruct]
+0x18a59715c  __TEXT,__text  +[TITypologyRecordGroupMarker supportsSecureCoding]
+0x18a597164  __TEXT,__text  -[TITypologyRecordGroupMarker initWithCoder:]
+0x18a597224  __TEXT,__text  -[TITypologyRecordGroupMarker encodeWithCoder:]
+0x18a5972ac  __TEXT,__text  -[TITypologyRecordGroupMarker currentKeyboardState]
+0x18a5972b0  __TEXT,__text  -[TITypologyRecordGroupMarker removeContextFromKeyboardState]
+0x18a597310  __TEXT,__text  -[TITypologyRecordGroupMarker shortDescription]
+0x18a5973c8  __TEXT,__text  -[TITypologyRecordGroupMarker replaceDocumentState:]
+0x18a59741c  __TEXT,__text  -[TITypologyRecordGroupMarker keyboardState]
+0x18a597424  __TEXT,__text  -[TITypologyRecordGroupMarker setKeyboardState:]
+0x18a597430  __TEXT,__text  -[TITypologyRecordGroupMarker textChange]
+0x18a597438  __TEXT,__text  -[TITypologyRecordGroupMarker setTextChange:]
+0x18a597540  __TEXT,__text  ___TICharIsDevanagariPUA_block_invoke
+0x18a597818  __TEXT,__text  -[NSString(TIExtras) _firstChar]
+0x18a597858  __TEXT,__text  -[NSString(TIExtras) _ti_supplementalPrefixOfLastToken:]
+0x18a59796c  __TEXT,__text  ___56-[NSString(TIExtras) _ti_supplementalPrefixOfLastToken:]_block_invoke
+0x18a5979c4  __TEXT,__text  -[NSString(TIExtras) _firstLongCharacter]
+0x18a597a54  __TEXT,__text  -[NSString(TIExtras) _lastLongCharacter]
+0x18a597af0  __TEXT,__text  -[NSString(TIExtras) _rangeOfLongCharacterAtIndex:]
+0x18a597b90  __TEXT,__text  -[NSString(TIExtras) _enumerateLongCharactersInRange:usingBlock:]
+0x18a597c78  __TEXT,__text  -[NSString(TIExtras) _reverseEnumerateLongCharactersInRange:usingBlock:]
+0x18a597d60  __TEXT,__text  +[NSString(TIExtras) _stringFromCharacterSet:]
+0x18a597e9c  __TEXT,__text  +[NSString(TIExtras) _nonKoreanCharacterSet]
+0x18a597f2c  __TEXT,__text  ___44+[NSString(TIExtras) _nonKoreanCharacterSet]_block_invoke
+0x18a597f58  __TEXT,__text  +[NSString(TIExtras) _nonHiraganaOrKatakanaSet]
+0x18a597fe8  __TEXT,__text  ___47+[NSString(TIExtras) _nonHiraganaOrKatakanaSet]_block_invoke
+0x18a598014  __TEXT,__text  +[NSString(TIExtras) _nonKatakanaOrKanjiSet]
+0x18a5980a4  __TEXT,__text  ___44+[NSString(TIExtras) _nonKatakanaOrKanjiSet]_block_invoke
+0x18a5980d0  __TEXT,__text  +[NSString(TIExtras) _nonHiraganaKatakanaOrBopomofoSet]
+0x18a598160  __TEXT,__text  ___55+[NSString(TIExtras) _nonHiraganaKatakanaOrBopomofoSet]_block_invoke
+0x18a59818c  __TEXT,__text  +[NSString(TIExtras) _hiraganaSet]
+0x18a59821c  __TEXT,__text  ___34+[NSString(TIExtras) _hiraganaSet]_block_invoke
+0x18a598248  __TEXT,__text  +[NSString(TIExtras) _japaneseLetterSet]
+0x18a5982d8  __TEXT,__text  ___40+[NSString(TIExtras) _japaneseLetterSet]_block_invoke
+0x18a598304  __TEXT,__text  +[NSString(TIExtras) _nonJapaneseLetterSet]
+0x18a598394  __TEXT,__text  ___43+[NSString(TIExtras) _nonJapaneseLetterSet]_block_invoke
+0x18a5983c0  __TEXT,__text  +[NSString(TIExtras) _ideographSet]
+0x18a598450  __TEXT,__text  ___35+[NSString(TIExtras) _ideographSet]_block_invoke
+0x18a59847c  __TEXT,__text  +[NSString(TIExtras) _bopomofoSet]
+0x18a59850c  __TEXT,__text  ___34+[NSString(TIExtras) _bopomofoSet]_block_invoke
+0x18a598538  __TEXT,__text  +[NSString(TIExtras) _bopomofoToneSet]
+0x18a5985c8  __TEXT,__text  ___38+[NSString(TIExtras) _bopomofoToneSet]_block_invoke
+0x18a5985f4  __TEXT,__text  +[NSString(TIExtras) _bopomofoWithoutToneSet]
+0x18a598684  __TEXT,__text  ___45+[NSString(TIExtras) _bopomofoWithoutToneSet]_block_invoke
+0x18a5986b0  __TEXT,__text  +[NSString(TIExtras) _fullwidthLettersAndNumbersSet]
+0x18a598740  __TEXT,__text  ___52+[NSString(TIExtras) _fullwidthLettersAndNumbersSet]_block_invoke
+0x18a598770  __TEXT,__text  +[NSString(TIExtras) _nonFullwidthLettersAndNumbersSet]
+0x18a598800  __TEXT,__text  ___55+[NSString(TIExtras) _nonFullwidthLettersAndNumbersSet]_block_invoke
+0x18a598870  __TEXT,__text  +[NSString(TIExtras) _fullwidthLettersAndSymbolsSet]
+0x18a598900  __TEXT,__text  ___52+[NSString(TIExtras) _fullwidthLettersAndSymbolsSet]_block_invoke
+0x18a598930  __TEXT,__text  -[NSString(TIExtras) _contentsExclusivelyInScript:]
+0x18a5989fc  __TEXT,__text  ___51-[NSString(TIExtras) _contentsExclusivelyInScript:]_block_invoke
+0x18a598a60  __TEXT,__text  -[NSString(TIExtras) _scriptCodeFromLastCharacter]
+0x18a598b28  __TEXT,__text  ___50-[NSString(TIExtras) _scriptCodeFromLastCharacter]_block_invoke
+0x18a598b7c  __TEXT,__text  -[NSString(TIExtras) _stringByTrimmingCharactersInCFCharacterSet:]
+0x18a598ba8  __TEXT,__text  -[NSString(TIExtras) _stringByTrimmingLastCharacter]
+0x18a598c48  __TEXT,__text  -[NSString(TIExtras) _stringByReplacingCharactersInSet:withString:]
+0x18a598db4  __TEXT,__text  -[NSString(TIExtras) _stringByReplacingCharactersInSet:withCharacter:]
+0x18a598e1c  __TEXT,__text  -[NSString(TIExtras) _stringByReplacingCharacter:withCharacter:]
+0x18a598eac  __TEXT,__text  -[NSString(TIExtras) _rangeOfBackwardDeletionClusterAtIndex:]
+0x18a598eb8  __TEXT,__text  -[NSString(TIExtras) _rangeOfCharacterClusterAtIndex:withClusterOffset:]
+0x18a598f88  __TEXT,__text  -[NSString(TIExtras) _UTF8SizeOfRange:]
+0x18a599060  __TEXT,__text  -[NSString(TIExtras) _endsSentence]
+0x18a5990d8  __TEXT,__text  -[NSString(TIExtras) _isModifierSymbol]
+0x18a599114  __TEXT,__text  -[NSString(TIExtras) _isLeftAssociative]
+0x18a599188  __TEXT,__text  -[NSString(TIExtras) _isTripledPunctuation]
+0x18a5991ec  __TEXT,__text  -[NSString(TIExtras) _isSpaceOrReturn]
+0x18a599248  __TEXT,__text  -[NSString(TIExtras) _isPlainSpace]
+0x18a599290  __TEXT,__text  -[NSString(TIExtras) _isSpace]
+0x18a5992ec  __TEXT,__text  -[NSString(TIExtras) _isDelete]
+0x18a599338  __TEXT,__text  -[NSString(TIExtras) _isNewlineOrReturn]
+0x18a599384  __TEXT,__text  -[NSString(TIExtras) _isBasicLatin]
+0x18a5993c0  __TEXT,__text  -[NSString(TIExtras) _looksLikeEmailAddress]
+0x18a5993f4  __TEXT,__text  -[NSString(TIExtras) _looksLikeNumberInput]
+0x18a599458  __TEXT,__text  ___43-[NSString(TIExtras) _looksLikeNumberInput]_block_invoke
+0x18a5994f8  __TEXT,__text  -[NSString(TIExtras) _looksLikeURL]
+0x18a599570  __TEXT,__text  -[NSString(TIExtras) _containsStronglyDirectionalCharacters]
+0x18a5995c8  __TEXT,__text  -[NSString(TIExtras) _containsCJScripts]
+0x18a599680  __TEXT,__text  ___40-[NSString(TIExtras) _containsCJScripts]_block_invoke
+0x18a5996c4  __TEXT,__text  -[NSString(TIExtras) _isOnlyIdeographs]
+0x18a5996f8  __TEXT,__text  -[NSString(TIExtras) _endsWithHalfwidth]
+0x18a599724  __TEXT,__text  -[NSString(TIExtras) _firstGrapheme]
+0x18a599834  __TEXT,__text  ___36-[NSString(TIExtras) _firstGrapheme]_block_invoke
+0x18a59987c  __TEXT,__text  -[NSString(TIExtras) _lastGrapheme]
+0x18a5998dc  __TEXT,__text  -[NSString(TIExtras) _graphemeAtIndex:]
+0x18a599a04  __TEXT,__text  ___39-[NSString(TIExtras) _graphemeAtIndex:]_block_invoke
+0x18a599a78  __TEXT,__text  -[NSString(TIExtras) _graphemeCount]
+0x18a599b34  __TEXT,__text  ___36-[NSString(TIExtras) _graphemeCount]_block_invoke
+0x18a599b4c  __TEXT,__text  -[NSString(TIExtras) _containsKorean]
+0x18a599b84  __TEXT,__text  -[NSString(TIExtras) _containsJapanese]
+0x18a599bbc  __TEXT,__text  -[NSString(TIExtras) _containsJapaneseOnly]
+0x18a599bf0  __TEXT,__text  -[NSString(TIExtras) _containsHiraganaOnly]
+0x18a599c24  __TEXT,__text  -[NSString(TIExtras) _containsHiraganaOrKatakana]
+0x18a599c5c  __TEXT,__text  -[NSString(TIExtras) _containsKatakanaOrKanji]
+0x18a599c94  __TEXT,__text  -[NSString(TIExtras) _containsHiraganaKatakanaOrBopomofo]
+0x18a599ccc  __TEXT,__text  -[NSString(TIExtras) _ti_isKeyEquivalentMirroringCandidate]
+0x18a599d18  __TEXT,__text  -[NSString(TIExtras) _ti_keyEquivalentMirroring]
+0x18a599d60  __TEXT,__text  ___40-[NSString(TIExtras) _containsEmojiOnly]_block_invoke
+0x18a599d8c  __TEXT,__text  -[NSString(TIExtras) _containsBopomofoOnly]
+0x18a599dc0  __TEXT,__text  -[NSString(TIExtras) _containsBopomofoToneOnly]
+0x18a599df4  __TEXT,__text  -[NSString(TIExtras) _containsBopomofoWithoutToneOnly]
+0x18a599e28  __TEXT,__text  -[NSString(TIExtras) _containsIdeographsOrBopomofoOnly]
+0x18a599ecc  __TEXT,__text  ___55-[NSString(TIExtras) _containsIdeographsOrBopomofoOnly]_block_invoke
+0x18a599efc  __TEXT,__text  -[NSString(TIExtras) _containsCJScriptsOnly]
+0x18a599fa0  __TEXT,__text  ___44-[NSString(TIExtras) _containsCJScriptsOnly]_block_invoke
+0x18a599fd0  __TEXT,__text  -[NSString(TIExtras) _containsCJKScriptsOnly]
+0x18a59a074  __TEXT,__text  ___45-[NSString(TIExtras) _containsCJKScriptsOnly]_block_invoke
+0x18a59a0a4  __TEXT,__text  -[NSString(TIExtras) _containsCJKSymbolsAndPunctuation]
+0x18a59a14c  __TEXT,__text  ___55-[NSString(TIExtras) _containsCJKSymbolsAndPunctuation]_block_invoke
+0x18a59a17c  __TEXT,__text  -[NSString(TIExtras) _containsSymbolsAndPunctuationOnly]
+0x18a59a220  __TEXT,__text  ___56-[NSString(TIExtras) _containsSymbolsAndPunctuationOnly]_block_invoke
+0x18a59a250  __TEXT,__text  -[NSString(TIExtras) _containsFullwidthLettersAndNumbersOnly]
+0x18a59a284  __TEXT,__text  -[NSString(TIExtras) _containsFullwidthLettersAndNumbers]
+0x18a59a2bc  __TEXT,__text  -[NSString(TIExtras) _containsFullwidthLettersAndSymbolsOnly]
+0x18a59a2f0  __TEXT,__text  -[NSString(TIExtras) _shouldBePaddedWithSpaces]
+0x18a59a30c  __TEXT,__text  -[NSString(TIExtras) _stringByConvertingFromHalfWidthToFullWidth]
+0x18a59a374  __TEXT,__text  -[NSString(TIExtras) _stringByConvertingFromFullWidthToHalfWidth]
+0x18a59a3dc  __TEXT,__text  -[NSString(TIExtras) _stringByTranscribingFromLanguage:]
+0x18a59a488  __TEXT,__text  -[NSString(TIExtras) _stringByTranscribingUsingTokenizer:]
+0x18a59a538  __TEXT,__text  -[NSString(TIExtras) _stringByApplyingTransform:]
+0x18a59a5d8  __TEXT,__text  -[NSString(TIExtras) _stringByTransliteratingToPinyin:]
+0x18a59a638  __TEXT,__text  -[NSString(TIExtras) _stringByTransliteratingToPinyin]
+0x18a59a640  __TEXT,__text  -[NSString(TIExtras) _stringByTransliteratingToPinyinAsFamilyName]
+0x18a59a648  __TEXT,__text  -[NSString(TIExtras) _stringByTransliteratingToZhuyin:]
+0x18a59a838  __TEXT,__text  -[NSString(TIExtras) _stringByTransliteratingToZhuyin]
+0x18a59a840  __TEXT,__text  -[NSString(TIExtras) _stringByTransliteratingToZhuyinAsFamilyName]
+0x18a59a848  __TEXT,__text  -[NSString(TIExtras) _editDistanceFrom:]
+0x18a59aa88  __TEXT,__text  -[NSString(TIExtras) _stringByComposingDiacriticsLogicalOrder:allowedCharacters:]
+0x18a59abbc  __TEXT,__text  ___81-[NSString(TIExtras) _stringByComposingDiacriticsLogicalOrder:allowedCharacters:]_block_invoke
+0x18a59aca0  __TEXT,__text  +[NSString(TIExtras) stringWithUnichar:]
+0x18a59acac  __TEXT,__text  -[NSString(TIExtras) stringByTrimmingCharactersInCFCharacterSet:]
+0x18a59acb0  __TEXT,__text  -[NSString(TIExtras) stringByTrimmingLastCharacter]
+0x18a59acb4  __TEXT,__text  -[NSString(TIExtras) stringByReplacingCharactersInSet:withCharacter:]
+0x18a59acb8  __TEXT,__text  -[NSString(TIExtras) stringByReplacingCharacter:withCharacter:]
+0x18a59acbc  __TEXT,__text  -[NSString(TIExtras) endsSentence]
+0x18a59acc0  __TEXT,__text  -[NSString(TIExtras) isLeftAssociative]
+0x18a59acc4  __TEXT,__text  -[NSString(TIExtras) isPlainSpace]
+0x18a59acc8  __TEXT,__text  -[NSString(TIExtras) isSpace]
+0x18a59accc  __TEXT,__text  -[NSString(TIExtras) isSpaceOrReturn]
+0x18a59acd0  __TEXT,__text  -[NSString(TIExtras) isNewlineOrReturn]
+0x18a59acd4  __TEXT,__text  -[NSString(TIExtras) isDelete]
+0x18a59acd8  __TEXT,__text  -[NSString(TIExtras) isTripledPunctuation]
+0x18a59acdc  __TEXT,__text  -[NSString(TIExtras) looksLikeEmailAddress]
+0x18a59ace0  __TEXT,__text  -[NSString(TIExtras) looksLikeNumberInput]
+0x18a59ace4  __TEXT,__text  -[NSString(TIExtras) looksLikeURL]
+0x18a59ace8  __TEXT,__text  -[NSString(TIExtras) isNaturallyRTL]
+0x18a59acec  __TEXT,__text  -[NSString(TIExtras) containsSubstring:]
+0x18a59acf0  __TEXT,__text  -[NSString(TIExtras) editDistanceFrom:]
+0x18a59acf4  __TEXT,__text  -[NSString(TIExtras) _indexFromStartingIndex:byIncrementingComposedCharacterSequenceCount:]
+0x18a59ae30  __TEXT,__text  ___91-[NSString(TIExtras) _indexFromStartingIndex:byIncrementingComposedCharacterSequenceCount:]_block_invoke
+0x18a59ae78  __TEXT,__text  -[NSString(TIExtras) normalizeSmartQuotedStringForLocale:]
+0x18a59b084  __TEXT,__text  ___58-[NSString(TIExtras) normalizeSmartQuotedStringForLocale:]_block_invoke
+```
+First 1,000 of 3,847.
+

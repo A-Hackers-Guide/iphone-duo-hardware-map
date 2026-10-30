@@ -1,0 +1,100 @@
+# `_ANEStrings`
+
+- Image: [`/System/Library/PrivateFrameworks/AppleNeuralEngine.framework/AppleNeuralEngine`](../userland/System__Library__PrivateFrameworks__AppleNeuralEngine.framework__AppleNeuralEngine.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- 0 instance variables, 0 properties, 0 instance methods, 90 class methods
+
+## Class methods
+
+```
++[_ANEStrings testing_cacheDirectoryWithSuffix:buildVersion:];
++[_ANEStrings errorDomainEspresso];
++[_ANEStrings pps_frameworkDir];
++[_ANEStrings testing_modelNames];
++[_ANEStrings llirBundleExtension];
++[_ANEStrings coreAnalyticsANEUsageKeyGroup];
++[_ANEStrings storageMaintainerAccessEntitlement];
++[_ANEStrings errorDomainGeneric];
++[_ANEStrings testing_inputDirectory];
++[_ANEStrings modelPurgeInAllPartitionsEntitlement];
++[_ANEStrings systemModelsCacheDirectory];
++[_ANEStrings buildSpecificUserModelDataVaultDirectory];
++[_ANEStrings largeModelCompilerServiceBundleID];
++[_ANEStrings pps_varDir];
++[_ANEStrings pps_tmpDir];
++[_ANEStrings defaultMILFileName];
++[_ANEStrings testing_dataVaultStorageClass];
++[_ANEStrings defaultMLIRFileName];
++[_ANEStrings adapterWeightsAccessEntitlementBypassBootArg];
++[_ANEStrings testing_ThreeSixtyModelName];
++[_ANEStrings dataVaultStorageClass];
++[_ANEStrings hwxExtension];
++[_ANEStrings testing_modelDirectory];
++[_ANEStrings internalLibraryPath];
++[_ANEStrings testing_modelDirectory:];
++[_ANEStrings inMemoryModelCacheName];
++[_ANEStrings tempDirectory];
++[_ANEStrings machServiceName];
++[_ANEStrings defaultANECIROptionsFileName];
++[_ANEStrings testing_external_modelPath];
++[_ANEStrings modelSourceStoreName];
++[_ANEStrings compilerServiceAccessEntitlement];
++[_ANEStrings testing_cacheDirectoryWithSuffix:];
++[_ANEStrings testing_userCacheDirectoryWithSuffix:buildVersion:];
++[_ANEStrings userMachServiceName];
++[_ANEStrings userCloneDirectory];
++[_ANEStrings errorDomainCompiler];
++[_ANEStrings pps_catalogDir];
++[_ANEStrings userTempDirectory];
++[_ANEStrings launchUserIOKitEvent];
++[_ANEStrings mutableWeightsMappingAccessEntitlement];
++[_ANEStrings pps_internalDir];
++[_ANEStrings vm_forceValidationOnGuestBootArg];
++[_ANEStrings launchIOKitEvent];
++[_ANEStrings testing_cacheDirectory];
++[_ANEStrings restrictedAccessEntitlement];
++[_ANEStrings modelBinaryName];
++[_ANEStrings coreAnalyticsANEUsageDefaultReportedClient];
++[_ANEStrings largeModelCompilerServiceAccessEntitlement];
++[_ANEStrings defaultWeightFileName];
++[_ANEStrings noSandboxExtension];
++[_ANEStrings trimmedModelPath:trimmedPathOut:];
++[_ANEStrings ppsCategoryForANE];
++[_ANEStrings vm_debugDumpBootArg];
++[_ANEStrings buildSpecificModelDataVaultDirectory];
++[_ANEStrings ppsSubsystemForANE];
++[_ANEStrings processModelShareAccessEntitlement];
++[_ANEStrings pps_applicationDir];
++[_ANEStrings testing_userCloneDirectory:];
++[_ANEStrings testing_cloneDirectory:];
++[_ANEStrings testing_tempDirectory:];
++[_ANEStrings machServiceNamePrivate];
++[_ANEStrings testing_userCacheDirectory];
++[_ANEStrings pps_defaultUserPathPrefix];
++[_ANEStrings aggressivePowerSavingEntitlement];
++[_ANEStrings secondaryANECompilerServiceAccessEntitlement];
++[_ANEStrings pps_privateFrameworkDir];
++[_ANEStrings testing_defaultMLIRModelName];
++[_ANEStrings systemLibraryPath];
++[_ANEStrings cloneDirectory];
++[_ANEStrings testing_external_precompiledModelPath];
++[_ANEStrings adapterWeightsAccessEntitlement];
++[_ANEStrings testing_encryptedModelNames];
++[_ANEStrings modelCacheRetainName];
++[_ANEStrings errorDomainVirtIO];
++[_ANEStrings defaultANECIRFileName];
++[_ANEStrings defaultCompilerOptionsFilename];
++[_ANEStrings mlirExtension];
++[_ANEStrings vm_allowPrecompiledBinaryBootArg];
++[_ANEStrings pps_defaultSystemPathDir];
++[_ANEStrings defaultLLIRBundleName];
++[_ANEStrings testing_userCacheDirectoryWithSuffix:];
++[_ANEStrings memoryUnwireAccessEntitlement];
++[_ANEStrings modelDataVaultDirectory];
++[_ANEStrings modelSourceContainerName];
++[_ANEStrings modelAssetsCacheName];
++[_ANEStrings testing_zeroModelName];
++[_ANEStrings binExtension];
++[_ANEStrings userModelDataVaultDirectory];
++[_ANEStrings testing_userTempDirectory:];
+```

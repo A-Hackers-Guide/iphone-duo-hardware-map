@@ -1,0 +1,32 @@
+# `SBFullScreenFluidSwitcherRootSwitcherModifier`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBFluidSwitcherRootSwitcherModifier`
+- 0 instance variables, 0 properties, 22 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[SBFullScreenFluidSwitcherRootSwitcherModifier shouldUseBackgroundWallpaperTreatmentForIndex:];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier appLayoutsToEnsureExistForMainTransitionEvent:];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier _effectiveEnvironmentMode];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier _newMultitaskingModifier];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier userScrollingModifierForScrollEvent:];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier multitaskingModifierForEvent:];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier reduceMotionModifierForReduceMotionChangedEvent:];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier insertionModifierForInsertionEvent:];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier _defaultMultitaskingModifierClass];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier removalModifierForRemovalEvent:];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier floorModifierForTransitionEvent:];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier focusedAppModifierForUpdateFocusedAppLayoutEvent:];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier floorModifierForContinuousFoldEvent:];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier floorModifierForGestureEvent:];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier _entityRemovalModifierForMainTransitionEvent:];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier transitionModifierForMainTransitionEvent:];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier hiddenWindowsPillModifierForTransitionEvent:];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier assistantIslandModifierForEvent:];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier lowEndHardwareModifier];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier swipeToKillModifierForSwipeToKillEvent:];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier gestureModifierForGestureEvent:];
+-[SBFullScreenFluidSwitcherRootSwitcherModifier shelfModifierForTransitionEvent:];
+```

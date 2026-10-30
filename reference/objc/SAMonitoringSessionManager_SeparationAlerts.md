@@ -1,0 +1,276 @@
+# `SAMonitoringSessionManager`
+
+- Image: [`/System/Library/PrivateFrameworks/SeparationAlerts.framework/SeparationAlerts`](../userland/System__Library__PrivateFrameworks__SeparationAlerts.framework__SeparationAlerts.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `SAMonitoringSessionManagerServiceProtocol`, `SAScenarioClassifierClientProtocol`, `SAWithYouDetectorClientProtocol`, `SATimeClientProtocol`, `SATravelTypeClassifierClientProtocol`
+- 37 instance variables, 37 properties, 175 instance methods, 1 class methods
+
+## Instance variables
+
+```
+B _enabled;
+B _standby;
+B _requestedPeriodicScan;
+B _isVehicularBTHintOn;
+B _isCompanionConnected;
+B _isInAirplaneMode;
+@"<SATimeServiceProtocol>" _clock;
+@"<SAWithYouDetectorServiceProtocol>" _withYouDetector;
+@"<SAGeoFenceRequestProtocol>" _fenceRequestServicer;
+@"<SAFenceManagerServiceProtocol><SAFenceManagerRequestProtocol>" _fenceManager;
+@"NSHashTable" _clients;
+@"NSMutableDictionary" _deviceUUIDtoMonitoringSession;
+@"TALocationLite" _lastLocation;
+@"SADeviceRecord" _deviceRecord;
+@"<SAAnalyticsServiceProtocol>" _analytics;
+@"<SATravelTypeClassifierServiceProtocol>" _travelTypeClassifier;
+@"<SASuppressionManagerProtocol>" _suppressionManager;
+@"<SAAlertFeedbackManagerProtocol>" _alertFeedbackManager;
+@"NSMutableDictionary" _devices;
+@"NSMutableDictionary" _safeLocations;
+@"NSMutableDictionary" _deviceUUIDtoSafeLocationUUIDs;
+Q _disabledReasons;
+@"NSMutableDictionary" _caLastAlertDate;
+q _caBroughtOutOnTravel;
+@"NSMutableDictionary" _deviceUUIDtoAlertContext;
+Q _currentVehicularState;
+@"SAPersistenceManager" _persistenceManager;
+@"SAAudioAccessory" _audioAccessoryManager;
+@"NSUUID" _nextScheduledAlarmForPersistenceWrite;
+@"NSUUID" _scheduledAlarmForForceUpdateWithYouStatus;
+@"NSUUID" _scheduledAlarmForFetchLastVisitTimeout;
+@"<TAEventProtocol>" _currentVisitOrLOIEvent;
+@"<TAEventProtocol>" _previousVisitOrLOIEvent;
+@"NSDate" _timeOfAttemptToLoadFromPersistence;
+@"NSMutableSet" _devicesWithToBePopulatedTrackedTravelingStartLocation;
+@"NSMutableSet" _devicesWithPendingTransition;
+@"NSDate" _lastStandbyOffDate;
+```
+
+## Properties
+
+```
+@property (T@"<SATimeServiceProtocol>",&,N,V_clock) clock;
+@property (T@"<SAWithYouDetectorServiceProtocol>",&,N,V_withYouDetector) withYouDetector;
+@property (T@"<SAGeoFenceRequestProtocol>",&,N,V_fenceRequestServicer) fenceRequestServicer;
+@property (T@"<SAFenceManagerServiceProtocol><SAFenceManagerRequestProtocol>",&,N,V_fenceManager) fenceManager;
+@property (T@"NSHashTable",&,N,V_clients) clients;
+@property (T@"NSMutableDictionary",&,N,V_deviceUUIDtoMonitoringSession) deviceUUIDtoMonitoringSession;
+@property (T@"TALocationLite",&,N,V_lastLocation) lastLocation;
+@property (T@"SADeviceRecord",&,N,V_deviceRecord) deviceRecord;
+@property (T@"<SAAnalyticsServiceProtocol>",&,N,V_analytics) analytics;
+@property (T@"<SATravelTypeClassifierServiceProtocol>",&,N,V_travelTypeClassifier) travelTypeClassifier;
+@property (T@"<SASuppressionManagerProtocol>",&,N,V_suppressionManager) suppressionManager;
+@property (T@"<SAAlertFeedbackManagerProtocol>",&,N,V_alertFeedbackManager) alertFeedbackManager;
+@property (T@"NSMutableDictionary",&,N,V_devices) devices;
+@property (T@"NSMutableDictionary",&,N,V_safeLocations) safeLocations;
+@property (T@"NSMutableDictionary",&,N,V_deviceUUIDtoSafeLocationUUIDs) deviceUUIDtoSafeLocationUUIDs;
+@property (TB,N,V_requestedPeriodicScan) requestedPeriodicScan;
+@property (TQ,N,V_disabledReasons) disabledReasons;
+@property (T@"NSMutableDictionary",&,N,V_caLastAlertDate) caLastAlertDate;
+@property (Tq,N,V_caBroughtOutOnTravel) caBroughtOutOnTravel;
+@property (T@"NSMutableDictionary",&,N,V_deviceUUIDtoAlertContext) deviceUUIDtoAlertContext;
+@property (TQ,N,V_currentVehicularState) currentVehicularState;
+@property (TB,N,V_isVehicularBTHintOn) isVehicularBTHintOn;
+@property (T@"SAPersistenceManager",&,N,V_persistenceManager) persistenceManager;
+@property (T@"SAAudioAccessory",&,N,V_audioAccessoryManager) audioAccessoryManager;
+@property (T@"NSUUID",&,N,V_nextScheduledAlarmForPersistenceWrite) nextScheduledAlarmForPersistenceWrite;
+@property (T@"NSUUID",&,N,V_scheduledAlarmForForceUpdateWithYouStatus) scheduledAlarmForForceUpdateWithYouStatus;
+@property (T@"NSUUID",&,N,V_scheduledAlarmForFetchLastVisitTimeout) scheduledAlarmForFetchLastVisitTimeout;
+@property (T@"<TAEventProtocol>",&,N,V_currentVisitOrLOIEvent) currentVisitOrLOIEvent;
+@property (T@"<TAEventProtocol>",&,N,V_previousVisitOrLOIEvent) previousVisitOrLOIEvent;
+@property (T@"NSDate",&,N,V_timeOfAttemptToLoadFromPersistence) timeOfAttemptToLoadFromPersistence;
+@property (TB,N,V_isCompanionConnected) isCompanionConnected;
+@property (T@"NSMutableSet",&,N,V_devicesWithToBePopulatedTrackedTravelingStartLocation) devicesWithToBePopulatedTrackedTravelingStartLocation;
+@property (T@"NSMutableSet",&,N,V_devicesWithPendingTransition) devicesWithPendingTransition;
+@property (TB,N,V_isInAirplaneMode) isInAirplaneMode;
+@property (T@"NSDate",&,N,V_lastStandbyOffDate) lastStandbyOffDate;
+@property (TB,N,V_enabled) enabled;
+@property (TB,N,V_standby) standby;
+```
+
+## Class methods
+
+```
++[SAMonitoringSessionManager convertSAMonitoringSessionStateToString:];
+```
+
+## Instance methods
+
+```
+-[SAMonitoringSessionManager clients];
+-[SAMonitoringSessionManager clock];
+-[SAMonitoringSessionManager persistenceManager];
+-[SAMonitoringSessionManager analytics];
+-[SAMonitoringSessionManager handleGeofenceExitedForDeviceUUID:];
+-[SAMonitoringSessionManager disabledReasons];
+-[SAMonitoringSessionManager setClock:];
+-[SAMonitoringSessionManager setDisabledReasons:];
+-[SAMonitoringSessionManager setStandby:];
+-[SAMonitoringSessionManager stopSafeLocation:forDevice:];
+-[SAMonitoringSessionManager scheduleNextPersistenceWrite];
+-[SAMonitoringSessionManager deviceUUIDtoMonitoringSession];
+-[SAMonitoringSessionManager isInAirplaneMode];
+-[SAMonitoringSessionManager deviceRecord];
+-[SAMonitoringSessionManager setDevices:];
+-[SAMonitoringSessionManager setLastLocation:];
+-[SAMonitoringSessionManager ingestTAEvent:];
+-[SAMonitoringSessionManager currentVehicularState];
+-[SAMonitoringSessionManager requestToFetchHomeLocation];
+-[SAMonitoringSessionManager setCurrentVehicularState:];
+-[SAMonitoringSessionManager setAnalytics:];
+-[SAMonitoringSessionManager previousVisitOrLOIEvent];
+-[SAMonitoringSessionManager lastLocation];
+-[SAMonitoringSessionManager setPersistenceManager:];
+-[SAMonitoringSessionManager audioAccessoryManager];
+-[SAMonitoringSessionManager changeMonitoringSessionState:toState:];
+-[SAMonitoringSessionManager computeRemovedSafeLocations:];
+-[SAMonitoringSessionManager setNextScheduledAlarmForPersistenceWrite:];
+-[SAMonitoringSessionManager setRequestedPeriodicScan:];
+-[SAMonitoringSessionManager standby];
+-[SAMonitoringSessionManager isBudPartID:inCasePartID:relationStatus:];
+-[SAMonitoringSessionManager shouldSuppressDueToHELEAdvertisingLimit:];
+-[SAMonitoringSessionManager removeClient:];
+-[SAMonitoringSessionManager withYouDetector];
+-[SAMonitoringSessionManager notifyLeftBehind:withRegion:isEarlyVehicularTrigger:];
+-[SAMonitoringSessionManager shouldIssueBookendedNotificationBasedOnTimeForDevice:];
+-[SAMonitoringSessionManager anyDeviceInUnsafeLocation];
+-[SAMonitoringSessionManager checkIfCloseToAnySafeLocations:leftBehindLocation:];
+-[SAMonitoringSessionManager shouldSuppressDueToRepeatedAlertsInOneTravelingSession:context:];
+-[SAMonitoringSessionManager enabled];
+-[SAMonitoringSessionManager monitoringSessionState:matchesWithScenarioClass:];
+-[SAMonitoringSessionManager setAlertFeedbackManager:];
+-[SAMonitoringSessionManager startPeriodicScans];
+-[SAMonitoringSessionManager stopPeriodicScansIfNotNeeded];
+-[SAMonitoringSessionManager modifyDevice:];
+-[SAMonitoringSessionManager needPeriodicScan];
+-[SAMonitoringSessionManager updateDevicesWithSafeLocations:];
+-[SAMonitoringSessionManager scheduleAlarmForFetchLastVisitTimeout];
+-[SAMonitoringSessionManager setDeviceRecord:];
+-[SAMonitoringSessionManager isCompanionConnected];
+-[SAMonitoringSessionManager createMonitoringDevice:];
+-[SAMonitoringSessionManager setIsCompanionConnected:];
+-[SAMonitoringSessionManager notifyWhenLeftBehind:];
+-[SAMonitoringSessionManager handleNewSafeLocation:];
+-[SAMonitoringSessionManager forceStandbyMode:];
+-[SAMonitoringSessionManager updatedWithYouStatusFrom:to:forDeviceWithUUID:];
+-[SAMonitoringSessionManager setClients:];
+-[SAMonitoringSessionManager scenarioClassForDeviceUUID:];
+-[SAMonitoringSessionManager setLastStandbyOffDate:];
+-[SAMonitoringSessionManager requestToStopBackgroundScanning];
+-[SAMonitoringSessionManager bootstrapMonitoringSessionRecord:];
+-[SAMonitoringSessionManager removeInvalidPersistedSessions:persistenceTimestamp:];
+-[SAMonitoringSessionManager updateSafeLocationMonitoring:forDeviceUUID:];
+-[SAMonitoringSessionManager createLocationFromCircularRegion:forDevice:withContext:];
+-[SAMonitoringSessionManager setSafeLocations:forDeviceUUID:];
+-[SAMonitoringSessionManager entryDateFromVisitOrLOIEvent:];
+-[SAMonitoringSessionManager addDevice:isLastDeviceEvent:];
+-[SAMonitoringSessionManager didChangeScenarioClassFrom:to:forDevice:];
+-[SAMonitoringSessionManager suppressionManager];
+-[SAMonitoringSessionManager scheduleNextForceUpdateWithYouStatusFromReferenceDate:forAlertForDevice:alertType:];
+-[SAMonitoringSessionManager checkIfAlertWasTriggeredAtHome:isEarlyVehicularTrigger:];
+-[SAMonitoringSessionManager setScheduledAlarmForFetchLastVisitTimeout:];
+-[SAMonitoringSessionManager _isOnlyMonitoringCompanionDevice];
+-[SAMonitoringSessionManager timeDelayForRetryScanForAlertForDeviceUUID:alertType:];
+-[SAMonitoringSessionManager travelTypeClassifier];
+-[SAMonitoringSessionManager didChangeHintsFrom:to:];
+-[SAMonitoringSessionManager isPersistedSessionStateValid:withPersistenceTimestamp:];
+-[SAMonitoringSessionManager addDevicesIfNeededPerEvent:];
+-[SAMonitoringSessionManager attemptFetchLastVisitIfReady];
+-[SAMonitoringSessionManager removeAndStopSafeLocationsForDeviceUUID:];
+-[SAMonitoringSessionManager addClient:];
+-[SAMonitoringSessionManager alertFeedbackManager];
+-[SAMonitoringSessionManager stopPeriodicScans];
+-[SAMonitoringSessionManager devicesWithToBePopulatedTrackedTravelingStartLocation];
+-[SAMonitoringSessionManager enoughTimeHasPassedBeforeSurfacingAlert:forAlertForDevice:alertType:];
+-[SAMonitoringSessionManager removeDeviceWithUUID:isLastDeviceEvent:];
+-[SAMonitoringSessionManager deviceUUIDtoSafeLocationUUIDs];
+-[SAMonitoringSessionManager getMoreSpecificSADeviceType:];
+-[SAMonitoringSessionManager setWithYouDetector:];
+-[SAMonitoringSessionManager scheduledAlarmForForceUpdateWithYouStatus];
+-[SAMonitoringSessionManager devices];
+-[SAMonitoringSessionManager allDevicesInSafeLocation];
+-[SAMonitoringSessionManager currentVisitOrLOIEvent];
+-[SAMonitoringSessionManager getLastScenarioChangeDateAmongAllDevices];
+-[SAMonitoringSessionManager setSafeLocations:];
+-[SAMonitoringSessionManager isWithinCurrentVisitOrLOI:];
+-[SAMonitoringSessionManager exitDateFromVisitOrLOIEvent:];
+-[SAMonitoringSessionManager checkInEarStatus:];
+-[SAMonitoringSessionManager caBroughtOutOnTravel];
+-[SAMonitoringSessionManager lastStandbyOffDate];
+-[SAMonitoringSessionManager shouldSuppressBudsAlertDueToCaseLeashedNotAdv:];
+-[SAMonitoringSessionManager shouldIssueBookendedNotificationBasedOnLocationForDevice:];
+-[SAMonitoringSessionManager storeSeparationLocation:];
+-[SAMonitoringSessionManager initWithWithYouDetector:fenceRequestServicer:fenceManager:travelTypeClassifier:clock:deviceRecord:analytics:persistenceManager:audioAccessoryManager:suppressionManager:alertFeedbackManager:];
+-[SAMonitoringSessionManager didForceUpdateWithYouStatus];
+-[SAMonitoringSessionManager setCaLastAlertDate:];
+-[SAMonitoringSessionManager handleModifiedSafeLocation:];
+-[SAMonitoringSessionManager timeOfAttemptToLoadFromPersistence];
+-[SAMonitoringSessionManager notifyEarlyLeftBehind:];
+-[SAMonitoringSessionManager setIsInAirplaneMode:];
+-[SAMonitoringSessionManager setDevicesWithToBePopulatedTrackedTravelingStartLocation:];
+-[SAMonitoringSessionManager setEnabled:];
+-[SAMonitoringSessionManager trackBTHintUsageDuringTravelingSessions:];
+-[SAMonitoringSessionManager handleRemovedSafeLocation:];
+-[SAMonitoringSessionManager setSuppressionManager:];
+-[SAMonitoringSessionManager devicesWithPendingTransition];
+-[SAMonitoringSessionManager handleMultiPartStatusEvent:];
+-[SAMonitoringSessionManager isAnyInTrackedInUnsafeLocation];
+-[SAMonitoringSessionManager setScheduledAlarmForForceUpdateWithYouStatus:];
+-[SAMonitoringSessionManager requestToStartBackgroundScanning];
+-[SAMonitoringSessionManager scheduledAlarmForFetchLastVisitTimeout];
+-[SAMonitoringSessionManager addDisableReason:];
+-[SAMonitoringSessionManager fenceManager];
+-[SAMonitoringSessionManager setUpTravelingGeofencesOnAirplaneModeToggleOffIfNeeded];
+-[SAMonitoringSessionManager setPreviousVisitOrLOIEvent:];
+-[SAMonitoringSessionManager setTravelTypeClassifier:];
+-[SAMonitoringSessionManager deviceUUIDtoAlertContext];
+-[SAMonitoringSessionManager updateSafeLocations:];
+-[SAMonitoringSessionManager addTravelFenceForDevice:];
+-[SAMonitoringSessionManager isVehicularBTHintOn];
+-[SAMonitoringSessionManager setFenceRequestServicer:];
+-[SAMonitoringSessionManager handleSystemStateChanged:];
+-[SAMonitoringSessionManager stateForDeviceUUID:];
+-[SAMonitoringSessionManager earlyVehicularTriggerForDeviceUUID:];
+-[SAMonitoringSessionManager setDeviceUUIDtoSafeLocationUUIDs:];
+-[SAMonitoringSessionManager requestToFetchLastVisit];
+-[SAMonitoringSessionManager removeDisableReason:];
+-[SAMonitoringSessionManager setAudioAccessoryManager:];
+-[SAMonitoringSessionManager configureBackgroundScanning];
+-[SAMonitoringSessionManager _isOnlyMonitoringDisconnectedCompanionDevice];
+-[SAMonitoringSessionManager notifyWhileTraveling:isBookendingTravel:];
+-[SAMonitoringSessionManager shouldIssueBookendedNotificationForDevice:];
+-[SAMonitoringSessionManager setDeviceUUIDtoAlertContext:];
+-[SAMonitoringSessionManager startPeriodicScansIfNeeded];
+-[SAMonitoringSessionManager setDevicesWithPendingTransition:];
+-[SAMonitoringSessionManager handleSeparationForDeviceUUID:withSafeLocationRecommendation:context:];
+-[SAMonitoringSessionManager determineTrackedTravelingCount];
+-[SAMonitoringSessionManager startSafeLocation:forDevice:];
+-[SAMonitoringSessionManager updateLocation:];
+-[SAMonitoringSessionManager removeSafeLocation:forDeviceUUID:];
+-[SAMonitoringSessionManager checkReunion:to:forDeviceWithUUID:];
+-[SAMonitoringSessionManager fenceRequestServicer];
+-[SAMonitoringSessionManager attemptToPopulateTrackedTravelingStartLocationForDevice:];
+-[SAMonitoringSessionManager removeDevicesIfNeededPerEvent:];
+-[SAMonitoringSessionManager setCurrentVisitOrLOIEvent:];
+-[SAMonitoringSessionManager nextScheduledAlarmForPersistenceWrite];
+-[SAMonitoringSessionManager safeLocations];
+-[SAMonitoringSessionManager alarmFiredForUUID:];
+-[SAMonitoringSessionManager minimumTimeSinceScenarioTransitionForAlertForDeviceUUID:alertType:];
+-[SAMonitoringSessionManager setFenceManager:];
+-[SAMonitoringSessionManager checkForDevicesNeedingTransition];
+-[SAMonitoringSessionManager requestedPeriodicScan];
+-[SAMonitoringSessionManager setTimeOfAttemptToLoadFromPersistence:];
+-[SAMonitoringSessionManager removeTravelFenceForDevice:];
+-[SAMonitoringSessionManager setCaBroughtOutOnTravel:];
+-[SAMonitoringSessionManager handleGeofenceEvent:];
+-[SAMonitoringSessionManager removeDisableReasonLastVisit];
+-[SAMonitoringSessionManager caLastAlertDate];
+-[SAMonitoringSessionManager didChangeTravelTypeFrom:to:];
+-[SAMonitoringSessionManager setIsVehicularBTHintOn:];
+-[SAMonitoringSessionManager isAnyTrackedWhileTraveling];
+-[SAMonitoringSessionManager cancelMonitoringDevice:];
+-[SAMonitoringSessionManager setDeviceUUIDtoMonitoringSession:];
+-[SAMonitoringSessionManager deviceShouldTransitionWithLastScenarioChangeDate:lastWithYouDate:];
+-[SAMonitoringSessionManager cancelFetchLastVisit];
+```

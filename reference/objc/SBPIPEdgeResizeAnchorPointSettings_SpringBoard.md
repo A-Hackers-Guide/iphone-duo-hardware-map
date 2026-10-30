@@ -1,0 +1,160 @@
+# `SBPIPEdgeResizeAnchorPointSettings`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `PTSettings`
+- 33 instance variables, 33 properties, 68 instance methods, 1 class methods
+
+## Instance variables
+
+```
+Q _anchorPointType;
+d _dockUpperLeftResizeTopEdgeAnchorPointX;
+d _dockUpperLeftResizeTopEdgeAnchorPointY;
+d _dockUpperLeftResizeBottomEdgeAnchorPointX;
+d _dockUpperLeftResizeBottomEdgeAnchorPointY;
+d _dockUpperLeftResizeLeftEdgeAnchorPointX;
+d _dockUpperLeftResizeLeftEdgeAnchorPointY;
+d _dockUpperLeftResizeRightEdgeAnchorPointX;
+d _dockUpperLeftResizeRightEdgeAnchorPointY;
+d _dockLowerLeftResizeTopEdgeAnchorPointX;
+d _dockLowerLeftResizeTopEdgeAnchorPointY;
+d _dockLowerLeftResizeBottomEdgeAnchorPointX;
+d _dockLowerLeftResizeBottomEdgeAnchorPointY;
+d _dockLowerLeftResizeLeftEdgeAnchorPointX;
+d _dockLowerLeftResizeLeftEdgeAnchorPointY;
+d _dockLowerLeftResizeRightEdgeAnchorPointX;
+d _dockLowerLeftResizeRightEdgeAnchorPointY;
+d _dockUpperRightResizeTopEdgeAnchorPointX;
+d _dockUpperRightResizeTopEdgeAnchorPointY;
+d _dockUpperRightResizeBottomEdgeAnchorPointX;
+d _dockUpperRightResizeBottomEdgeAnchorPointY;
+d _dockUpperRightResizeLeftEdgeAnchorPointX;
+d _dockUpperRightResizeLeftEdgeAnchorPointY;
+d _dockUpperRightResizeRightEdgeAnchorPointX;
+d _dockUpperRightResizeRightEdgeAnchorPointY;
+d _dockLowerRightResizeTopEdgeAnchorPointX;
+d _dockLowerRightResizeTopEdgeAnchorPointY;
+d _dockLowerRightResizeBottomEdgeAnchorPointX;
+d _dockLowerRightResizeBottomEdgeAnchorPointY;
+d _dockLowerRightResizeLeftEdgeAnchorPointX;
+d _dockLowerRightResizeLeftEdgeAnchorPointY;
+d _dockLowerRightResizeRightEdgeAnchorPointX;
+d _dockLowerRightResizeRightEdgeAnchorPointY;
+```
+
+## Properties
+
+```
+@property (TQ,N,V_anchorPointType) anchorPointType;
+@property (Td,N,V_dockUpperLeftResizeTopEdgeAnchorPointX) dockUpperLeftResizeTopEdgeAnchorPointX;
+@property (Td,N,V_dockUpperLeftResizeTopEdgeAnchorPointY) dockUpperLeftResizeTopEdgeAnchorPointY;
+@property (Td,N,V_dockUpperLeftResizeBottomEdgeAnchorPointX) dockUpperLeftResizeBottomEdgeAnchorPointX;
+@property (Td,N,V_dockUpperLeftResizeBottomEdgeAnchorPointY) dockUpperLeftResizeBottomEdgeAnchorPointY;
+@property (Td,N,V_dockUpperLeftResizeLeftEdgeAnchorPointX) dockUpperLeftResizeLeftEdgeAnchorPointX;
+@property (Td,N,V_dockUpperLeftResizeLeftEdgeAnchorPointY) dockUpperLeftResizeLeftEdgeAnchorPointY;
+@property (Td,N,V_dockUpperLeftResizeRightEdgeAnchorPointX) dockUpperLeftResizeRightEdgeAnchorPointX;
+@property (Td,N,V_dockUpperLeftResizeRightEdgeAnchorPointY) dockUpperLeftResizeRightEdgeAnchorPointY;
+@property (Td,N,V_dockLowerLeftResizeTopEdgeAnchorPointX) dockLowerLeftResizeTopEdgeAnchorPointX;
+@property (Td,N,V_dockLowerLeftResizeTopEdgeAnchorPointY) dockLowerLeftResizeTopEdgeAnchorPointY;
+@property (Td,N,V_dockLowerLeftResizeBottomEdgeAnchorPointX) dockLowerLeftResizeBottomEdgeAnchorPointX;
+@property (Td,N,V_dockLowerLeftResizeBottomEdgeAnchorPointY) dockLowerLeftResizeBottomEdgeAnchorPointY;
+@property (Td,N,V_dockLowerLeftResizeLeftEdgeAnchorPointX) dockLowerLeftResizeLeftEdgeAnchorPointX;
+@property (Td,N,V_dockLowerLeftResizeLeftEdgeAnchorPointY) dockLowerLeftResizeLeftEdgeAnchorPointY;
+@property (Td,N,V_dockLowerLeftResizeRightEdgeAnchorPointX) dockLowerLeftResizeRightEdgeAnchorPointX;
+@property (Td,N,V_dockLowerLeftResizeRightEdgeAnchorPointY) dockLowerLeftResizeRightEdgeAnchorPointY;
+@property (Td,N,V_dockUpperRightResizeTopEdgeAnchorPointX) dockUpperRightResizeTopEdgeAnchorPointX;
+@property (Td,N,V_dockUpperRightResizeTopEdgeAnchorPointY) dockUpperRightResizeTopEdgeAnchorPointY;
+@property (Td,N,V_dockUpperRightResizeBottomEdgeAnchorPointX) dockUpperRightResizeBottomEdgeAnchorPointX;
+@property (Td,N,V_dockUpperRightResizeBottomEdgeAnchorPointY) dockUpperRightResizeBottomEdgeAnchorPointY;
+@property (Td,N,V_dockUpperRightResizeLeftEdgeAnchorPointX) dockUpperRightResizeLeftEdgeAnchorPointX;
+@property (Td,N,V_dockUpperRightResizeLeftEdgeAnchorPointY) dockUpperRightResizeLeftEdgeAnchorPointY;
+@property (Td,N,V_dockUpperRightResizeRightEdgeAnchorPointX) dockUpperRightResizeRightEdgeAnchorPointX;
+@property (Td,N,V_dockUpperRightResizeRightEdgeAnchorPointY) dockUpperRightResizeRightEdgeAnchorPointY;
+@property (Td,N,V_dockLowerRightResizeTopEdgeAnchorPointX) dockLowerRightResizeTopEdgeAnchorPointX;
+@property (Td,N,V_dockLowerRightResizeTopEdgeAnchorPointY) dockLowerRightResizeTopEdgeAnchorPointY;
+@property (Td,N,V_dockLowerRightResizeBottomEdgeAnchorPointX) dockLowerRightResizeBottomEdgeAnchorPointX;
+@property (Td,N,V_dockLowerRightResizeBottomEdgeAnchorPointY) dockLowerRightResizeBottomEdgeAnchorPointY;
+@property (Td,N,V_dockLowerRightResizeLeftEdgeAnchorPointX) dockLowerRightResizeLeftEdgeAnchorPointX;
+@property (Td,N,V_dockLowerRightResizeLeftEdgeAnchorPointY) dockLowerRightResizeLeftEdgeAnchorPointY;
+@property (Td,N,V_dockLowerRightResizeRightEdgeAnchorPointX) dockLowerRightResizeRightEdgeAnchorPointX;
+@property (Td,N,V_dockLowerRightResizeRightEdgeAnchorPointY) dockLowerRightResizeRightEdgeAnchorPointY;
+```
+
+## Class methods
+
+```
++[SBPIPEdgeResizeAnchorPointSettings settingsControllerModule];
+```
+
+## Instance methods
+
+```
+-[SBPIPEdgeResizeAnchorPointSettings setDefaultValues];
+-[SBPIPEdgeResizeAnchorPointSettings anchorPointType];
+-[SBPIPEdgeResizeAnchorPointSettings setAnchorPointType:];
+-[SBPIPEdgeResizeAnchorPointSettings _setAnchorPointForType:];
+-[SBPIPEdgeResizeAnchorPointSettings dockLowerLeftResizeBottomEdgeAnchorPointX];
+-[SBPIPEdgeResizeAnchorPointSettings dockLowerLeftResizeBottomEdgeAnchorPointY];
+-[SBPIPEdgeResizeAnchorPointSettings dockLowerLeftResizeLeftEdgeAnchorPointX];
+-[SBPIPEdgeResizeAnchorPointSettings dockLowerLeftResizeLeftEdgeAnchorPointY];
+-[SBPIPEdgeResizeAnchorPointSettings dockLowerLeftResizeRightEdgeAnchorPointX];
+-[SBPIPEdgeResizeAnchorPointSettings dockLowerLeftResizeRightEdgeAnchorPointY];
+-[SBPIPEdgeResizeAnchorPointSettings dockLowerLeftResizeTopEdgeAnchorPointX];
+-[SBPIPEdgeResizeAnchorPointSettings dockLowerLeftResizeTopEdgeAnchorPointY];
+-[SBPIPEdgeResizeAnchorPointSettings dockLowerRightResizeBottomEdgeAnchorPointX];
+-[SBPIPEdgeResizeAnchorPointSettings dockLowerRightResizeBottomEdgeAnchorPointY];
+-[SBPIPEdgeResizeAnchorPointSettings dockLowerRightResizeLeftEdgeAnchorPointX];
+-[SBPIPEdgeResizeAnchorPointSettings dockLowerRightResizeLeftEdgeAnchorPointY];
+-[SBPIPEdgeResizeAnchorPointSettings dockLowerRightResizeRightEdgeAnchorPointX];
+-[SBPIPEdgeResizeAnchorPointSettings dockLowerRightResizeRightEdgeAnchorPointY];
+-[SBPIPEdgeResizeAnchorPointSettings dockLowerRightResizeTopEdgeAnchorPointX];
+-[SBPIPEdgeResizeAnchorPointSettings dockLowerRightResizeTopEdgeAnchorPointY];
+-[SBPIPEdgeResizeAnchorPointSettings dockUpperLeftResizeBottomEdgeAnchorPointX];
+-[SBPIPEdgeResizeAnchorPointSettings dockUpperLeftResizeBottomEdgeAnchorPointY];
+-[SBPIPEdgeResizeAnchorPointSettings dockUpperLeftResizeLeftEdgeAnchorPointX];
+-[SBPIPEdgeResizeAnchorPointSettings dockUpperLeftResizeLeftEdgeAnchorPointY];
+-[SBPIPEdgeResizeAnchorPointSettings dockUpperLeftResizeRightEdgeAnchorPointX];
+-[SBPIPEdgeResizeAnchorPointSettings dockUpperLeftResizeRightEdgeAnchorPointY];
+-[SBPIPEdgeResizeAnchorPointSettings dockUpperLeftResizeTopEdgeAnchorPointX];
+-[SBPIPEdgeResizeAnchorPointSettings dockUpperLeftResizeTopEdgeAnchorPointY];
+-[SBPIPEdgeResizeAnchorPointSettings dockUpperRightResizeBottomEdgeAnchorPointX];
+-[SBPIPEdgeResizeAnchorPointSettings dockUpperRightResizeBottomEdgeAnchorPointY];
+-[SBPIPEdgeResizeAnchorPointSettings dockUpperRightResizeLeftEdgeAnchorPointX];
+-[SBPIPEdgeResizeAnchorPointSettings dockUpperRightResizeLeftEdgeAnchorPointY];
+-[SBPIPEdgeResizeAnchorPointSettings dockUpperRightResizeRightEdgeAnchorPointX];
+-[SBPIPEdgeResizeAnchorPointSettings dockUpperRightResizeRightEdgeAnchorPointY];
+-[SBPIPEdgeResizeAnchorPointSettings dockUpperRightResizeTopEdgeAnchorPointX];
+-[SBPIPEdgeResizeAnchorPointSettings dockUpperRightResizeTopEdgeAnchorPointY];
+-[SBPIPEdgeResizeAnchorPointSettings setDockLowerLeftResizeBottomEdgeAnchorPointX:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockLowerLeftResizeBottomEdgeAnchorPointY:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockLowerLeftResizeLeftEdgeAnchorPointX:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockLowerLeftResizeLeftEdgeAnchorPointY:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockLowerLeftResizeRightEdgeAnchorPointX:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockLowerLeftResizeRightEdgeAnchorPointY:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockLowerLeftResizeTopEdgeAnchorPointX:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockLowerLeftResizeTopEdgeAnchorPointY:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockLowerRightResizeBottomEdgeAnchorPointX:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockLowerRightResizeBottomEdgeAnchorPointY:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockLowerRightResizeLeftEdgeAnchorPointX:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockLowerRightResizeLeftEdgeAnchorPointY:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockLowerRightResizeRightEdgeAnchorPointX:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockLowerRightResizeRightEdgeAnchorPointY:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockLowerRightResizeTopEdgeAnchorPointX:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockLowerRightResizeTopEdgeAnchorPointY:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockUpperLeftResizeBottomEdgeAnchorPointX:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockUpperLeftResizeBottomEdgeAnchorPointY:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockUpperLeftResizeLeftEdgeAnchorPointX:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockUpperLeftResizeLeftEdgeAnchorPointY:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockUpperLeftResizeRightEdgeAnchorPointX:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockUpperLeftResizeRightEdgeAnchorPointY:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockUpperLeftResizeTopEdgeAnchorPointX:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockUpperLeftResizeTopEdgeAnchorPointY:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockUpperRightResizeBottomEdgeAnchorPointX:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockUpperRightResizeBottomEdgeAnchorPointY:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockUpperRightResizeLeftEdgeAnchorPointX:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockUpperRightResizeLeftEdgeAnchorPointY:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockUpperRightResizeRightEdgeAnchorPointX:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockUpperRightResizeRightEdgeAnchorPointY:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockUpperRightResizeTopEdgeAnchorPointX:];
+-[SBPIPEdgeResizeAnchorPointSettings setDockUpperRightResizeTopEdgeAnchorPointY:];
+```

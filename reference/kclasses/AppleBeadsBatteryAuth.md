@@ -1,0 +1,72 @@
+# `AppleBeadsBatteryAuth`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.driver.AppleSmartBatteryManagerEmbedded`](../kexts/com.apple.driver.AppleSmartBatteryManagerEmbedded.md)
+- Object size: `0x120` (288 bytes)
+- Metaclass: `0xfffffe000b99eaf8`; metaclass vtable `0xfffffe000822f2b0`; class vtable `0xfffffe000822ed38`
+- Registration (init): `0xfffffe0009741878`
+- Superclasses: [`AppleAuthCPRelayInterface`](AppleAuthCPRelayInterface.md) → [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## Strings in its kext that name it (60)
+
+- `AppleBeadsBatteryAuth: failed to read key '%c%c%c%c' rc:%#x=%s\n`
+- `AppleBeadsBatteryAuth: Failed to challenge ioret=%#x\n`
+- `AppleBeadsBatteryAuth: Failed to get signature. ioret:%#x\n`
+- `AppleBeadsBatteryAuth: Force publishing of data due to boot arg\n`
+- `AppleBeadsBatteryAuth: getSignedData: Invalid read command readback:%d != expected:%d\n`
+- `AppleBeadsBatteryAuth: timeout: waiting for command '%u'\n`
+- `site.AppleBeadsBatteryAuth`
+- `AppleBeadsBatteryAuth: Invalid input. rc:%#x\n`
+- `AppleBeadsBatteryAuth: Failed to set up beadsTrustedDataMap at %d\n`
+- `AppleBeadsBatteryAuth: Failed to write traceID command. ioret:%#x\n`
+- `AppleBeadsBatteryAuth: Failed to get service version. ioret:%#x\n`
+- `AppleBeadsBatteryAuth`
+- `AppleBeadsBatteryAuth: Failed to send command. rc:%#x=%s\n`
+- `AppleBeadsBatteryAuth: Failed to get traceID. ioret:%#x\n`
+- `AppleBeadsBatteryAuth: input data missing\n`
+- `AppleBeadsBatteryAuth: Failed to read status. rc:%#x=%s\n`
+- `AppleBeadsBatteryAuth: DBG: Received Command: %d\n`
+- `AppleBeadsBatteryAuth: Trusted data path is enabled`
+- `AppleBeadsBatteryAuth: Failed to get public key. ioret:%#x\n`
+- `AppleBeadsBatteryAuth: Failed to write authServiceVersion request. ioret:%#x\n`
+- `AppleBeadsBatteryAuth: output data pointer missing\n`
+- `AppleBeadsBatteryAuth: Auth Passed. Publishing trusted data nonce\n`
+- `AppleBeadsBatteryAuth: error in smc communication received command:(%d)\n`
+- `AppleBeadsBatteryAuth: invalid notification data: expected OSNumber at index 2\n`
+- `AppleBeadsBatteryAuth: Failed to get signature ioret=%#x\n`
+- `AppleBeadsBatteryAuth: Notify Clients about change in data\n`
+- `AppleBeadsBatteryAuth: DBG: ReadSMCKey attempt %lu/%u\n`
+- `AppleBeadsBatteryAuth: failed to get key info '%c%c%c%c' rc:%#x=%s\n`
+- `AppleBeadsBatteryAuth: Failed to append signed data to nonce ioret=%#x\n`
+- `AppleBeadsBatteryAuth: invalid notification data: expected OSNumber at index 0\n`
+- `AppleBeadsBatteryAuth: getSignedData: Num of indices mismatch readback:%d != expected:%d\n`
+- `AppleBeadsBatteryAuth: data payloadSize too large payloadSize = %u maxPayloadSize = %u\n`
+- `AppleBeadsBatteryAuth: Failed to create header. cmd%u rc:%#x\n`
+- `AppleBeadsBatteryAuth: Invalid getInfo maxPayloadSize = %d\n`
+- `AppleBeadsBatteryAuth: Failed to get key info\n`
+- `AppleBeadsBatteryAuth: Supported maxPayloadSize is greater than max buffer size\n`
+- `AppleBeadsBatteryAuth: getSignedData: Unexpected idx: %d\n`
+- `AppleBeadsBatteryAuth: failed to write key '%c%c%c%c' rc:%#x=%s\n`
+- `AppleBeadsBatteryAuth: Failed to get traceID readCmd mismatch. ioret:%#x\n`
+- `AppleBeadsBatteryAuth: Failed to get nonce. ioret:%#x\n`
+- `AppleBeadsBatteryAuth: invalid notification data: expected OSArray\n`
+- `AppleBeadsBatteryAuth: failed to write key '%c%c%c%c', retry:%zu\n`
+- `AppleBeadsBatteryAuth: Status payload size mismatch read:%d != expected:%lu`
+- `AppleBeadsBatteryAuth: Failed to create SMC key\n`
+- `AppleBeadsBatteryAuth: failed to get key info '%c%c%c%c' retry:%zu rc:%#x=%s\n`
+- `AppleBeadsBatteryAuth: error in gas gauge communication (%#x)\n`
+- `AppleBeadsBatteryAuth: invalid notification\n`
+- `AppleBeadsBatteryAuth: getSignedData: Failed to read signed data. ioret:%#x\n`
+- `AppleBeadsBatteryAuth: getSignedData: Request id mismatch readback:%d != expected:%d\n`
+- `AppleBeadsBatteryAuth: Failed to get nonce ioret=%#x\n`
+- `AppleBeadsBatteryAuth: Failed to get auth service version ret=%x\n`
+- `AppleBeadsBatteryAuth: getSignedData: Failed to send signed data rx cmd. ioret:%#x\n`
+- `AppleBeadsBatteryAuth: Failed to read data. rc:%#x=%s\n`
+- `AppleBeadsBatteryAuth: Failed to get auth info ret=%x using default data buffer size: %u\n`
+- `AppleBeadsBatteryAuth: status indicates failure. rc:%#x, breakdown: cmdStatus:%d cmd:%d state:%d error:%d\n`
+- `AppleBeadsBatteryAuth: Failed to get signed data ioret=%#x\n`
+- `AppleBeadsBatteryAuth: DBG: WriteSMCKey attempt %lu/%u\n`
+- `AppleBeadsBatteryAuth: Failed to get traceID size mismatch. read:%d != expected:%lu\n`
+- `AppleBeadsBatteryAuth: Failed to getInfo. rc:%#x=%s\n`
+- `AppleBeadsBatteryAuth: cmd '%u' failed rc:%#x=%s\n`

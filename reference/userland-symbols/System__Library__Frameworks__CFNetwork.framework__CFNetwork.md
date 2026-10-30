@@ -1,0 +1,1948 @@
+# Symbols: `/System/Library/Frameworks/CFNetwork.framework/CFNetwork`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__Frameworks__CFNetwork.framework__CFNetwork.md). **[DSC]**
+
+931 public symbols, 12,250 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x18cbffc24  __TEXT,__text  _CFCachedURLResponseCopyReceiverDataArray
+0x18cd019dc  __TEXT,__text  _CFCachedURLResponseCreateWithData
+0x18cd01bd0  __TEXT,__text  _CFCachedURLResponseGetReceiverData
+0x18cd01be0  __TEXT,__text  _CFCachedURLResponseGetStoragePolicy
+0x18cd01bc0  __TEXT,__text  _CFCachedURLResponseGetWrappedResponse
+0x18cd01bf8  __TEXT,__text  _CFCachedURLResponseSetStoragePolicy
+0x18ccdb958  __TEXT,__text  _CFFTPCreateParsedResourceListing
+0x18cd05108  __TEXT,__text  _CFHTTPAuthenticationAppliesToRequest
+0x18cd0561c  __TEXT,__text  _CFHTTPAuthenticationCopyDomains
+0x18cd0567c  __TEXT,__text  _CFHTTPAuthenticationCopyMethod
+0x18cd055cc  __TEXT,__text  _CFHTTPAuthenticationCopyRealm
+0x18cd05364  __TEXT,__text  _CFHTTPAuthenticationCreateFromResponse
+0x18cd05160  __TEXT,__text  _CFHTTPAuthenticationGetTypeID
+0x18cd04cdc  __TEXT,__text  _CFHTTPAuthenticationIsValid
+0x18cd0501c  __TEXT,__text  _CFHTTPAuthenticationRequiresAccountDomain
+0x18cd04dcc  __TEXT,__text  _CFHTTPAuthenticationRequiresOrderedRequests
+0x18cd056d4  __TEXT,__text  _CFHTTPAuthenticationRequiresUserNameAndPassword
+0x18cbc9104  __TEXT,__text  _CFHTTPCookieCopyDomain
+0x18cbc9200  __TEXT,__text  _CFHTTPCookieCopyName
+0x18cc01ce8  __TEXT,__text  _CFHTTPCookieCopyPath
+0x18ccffe44  __TEXT,__text  _CFHTTPCookieCopyProperties
+0x18cc31f70  __TEXT,__text  _CFHTTPCookieCopyRequestHeaderFields
+0x18cbe4f58  __TEXT,__text  _CFHTTPCookieCopyValue
+0x18ccffe08  __TEXT,__text  _CFHTTPCookieCreateWithProperties
+0x18cc70f5c  __TEXT,__text  _CFHTTPCookieCreateWithResponseHeaderFields
+0x18ccfff68  __TEXT,__text  _CFHTTPCookieGetExpirationTime
+0x18ccffec8  __TEXT,__text  _CFHTTPCookieGetFlags
+0x18ccffa48  __TEXT,__text  _CFHTTPCookieGetTypeID
+0x18ccffe78  __TEXT,__text  _CFHTTPCookieIsHTTPOnly
+0x18ccfff18  __TEXT,__text  _CFHTTPCookieIsSecure
+0x18ce11868  __TEXT,__text  _CFHTTPCookieStorageAddObserver
+0x18cd9a428  __TEXT,__text  _CFHTTPCookieStorageCopyCookies
+0x18cd9a4d4  __TEXT,__text  _CFHTTPCookieStorageCopyCookiesForURL
+0x18cc89ce0  __TEXT,__text  _CFHTTPCookieStorageCreateFromFile
+0x18cd9ab34  __TEXT,__text  _CFHTTPCookieStorageCreateFromIdentifyingData
+0x18cc87670  __TEXT,__text  _CFHTTPCookieStorageCreateIdentifyingData
+0x18cd99e00  __TEXT,__text  _CFHTTPCookieStorageDeleteAllCookies
+0x18cd9a934  __TEXT,__text  _CFHTTPCookieStorageDeleteCookie
+0x18cc1b7bc  __TEXT,__text  _CFHTTPCookieStorageGetCookieAcceptPolicy
+0x18ce11898  __TEXT,__text  _CFHTTPCookieStorageRemoveObserver
+0x18cd9ac28  __TEXT,__text  _CFHTTPCookieStorageScheduleWithRunLoop
+0x18cd99c94  __TEXT,__text  _CFHTTPCookieStorageSetCookie
+0x18cbd5e68  __TEXT,__text  _CFHTTPCookieStorageSetCookieAcceptPolicy
+0x18cd99b3c  __TEXT,__text  _CFHTTPCookieStorageSetCookies
+0x18cd9ad50  __TEXT,__text  _CFHTTPCookieStorageUnscheduleFromRunLoop
+0x18cd058f0  __TEXT,__text  _CFHTTPMessageAddAuthentication
+0x18cc50f44  __TEXT,__text  _CFHTTPMessageAppendBytes
+0x18cd0506c  __TEXT,__text  _CFHTTPMessageApplyCredentialDictionary
+0x18cd04eac  __TEXT,__text  _CFHTTPMessageApplyCredentials
+0x18cbefc10  __TEXT,__text  _CFHTTPMessageCopyAllHeaderFields
+0x18cbec874  __TEXT,__text  _CFHTTPMessageCopyBody
+0x18cbece28  __TEXT,__text  _CFHTTPMessageCopyHeaderFieldValue
+0x18cbcf240  __TEXT,__text  _CFHTTPMessageCopyRequestMethod
+0x18cc2325c  __TEXT,__text  _CFHTTPMessageCopyRequestURL
+0x18ccc72e4  __TEXT,__text  _CFHTTPMessageCopyResponseStatusLine
+0x18ccb6774  __TEXT,__text  _CFHTTPMessageCopySerializedMessage
+0x18cc52098  __TEXT,__text  _CFHTTPMessageCopyVersion
+0x18cc106e8  __TEXT,__text  _CFHTTPMessageCreateCopy
+0x18cc50698  __TEXT,__text  _CFHTTPMessageCreateEmpty
+0x18cc7a5ec  __TEXT,__text  _CFHTTPMessageCreateRequest
+0x18ccc7104  __TEXT,__text  _CFHTTPMessageCreateResponse
+0x18cbcdf04  __TEXT,__text  _CFHTTPMessageGetResponseStatusCode
+0x18ccd4cd4  __TEXT,__text  _CFHTTPMessageGetTypeID
+0x18ccd4e1c  __TEXT,__text  _CFHTTPMessageIsHeaderComplete
+0x18ccd4d1c  __TEXT,__text  _CFHTTPMessageIsRequest
+0x18ccd4d70  __TEXT,__text  _CFHTTPMessageSetBody
+0x18cc9af7c  __TEXT,__text  _CFHTTPMessageSetHeaderFieldValue
+0x18ccc6718  __TEXT,__text  _CFHostCancelInfoResolution
+0x18ccf5378  __TEXT,__text  _CFHostCreateCopy
+0x18ccf54ac  __TEXT,__text  _CFHostCreateWithAddress
+0x18ccc656c  __TEXT,__text  _CFHostCreateWithName
+0x18ccc5a4c  __TEXT,__text  _CFHostGetAddressing
+0x18ccc58b0  __TEXT,__text  _CFHostGetInfo
+0x18ccf5a50  __TEXT,__text  _CFHostGetNames
+0x18ccf5a5c  __TEXT,__text  _CFHostGetReachability
+0x18ccf5330  __TEXT,__text  _CFHostGetTypeID
+0x18ccf5bc0  __TEXT,__text  _CFHostScheduleWithRunLoop
+0x18ccf57d8  __TEXT,__text  _CFHostSetClient
+0x18ccf5a68  __TEXT,__text  _CFHostStartInfoResolution
+0x18ccf5c48  __TEXT,__text  _CFHostUnscheduleFromRunLoop
+0x18ccf45c4  __TEXT,__text  _CFNetDiagnosticCopyNetworkStatusActively
+0x18ccf4b3c  __TEXT,__text  _CFNetDiagnosticCopyNetworkStatusPassively
+0x18ccf4178  __TEXT,__text  _CFNetDiagnosticCreateBasic
+0x18ccf43fc  __TEXT,__text  _CFNetDiagnosticCreateWithStreams
+0x18ccf4284  __TEXT,__text  _CFNetDiagnosticCreateWithURL
+0x18ccf44ec  __TEXT,__text  _CFNetDiagnosticDiagnoseProblemInteractively
+0x1eb5d11c8  __DATA,__data  _CFNetDiagnosticNotifyKey
+0x18ccf6410  __TEXT,__text  _CFNetDiagnosticPing
+0x18ccf5cd0  __TEXT,__text  _CFNetDiagnosticPingWithOptions
+0x1e09724e0  __DATA_CONST,__const  _CFNetDiagnosticProtocolFTP
+0x1e09724d8  __DATA_CONST,__const  _CFNetDiagnosticProtocolHTTP
+0x1e09724d0  __DATA_CONST,__const  _CFNetDiagnosticProtocolIMAP
+0x1e09724c8  __DATA_CONST,__const  _CFNetDiagnosticProtocolOSCAR
+0x1e09724c0  __DATA_CONST,__const  _CFNetDiagnosticProtocolSMTP
+0x1e09724b8  __DATA_CONST,__const  _CFNetDiagnosticProtocolUnknown
+0x18ccf44a4  __TEXT,__text  _CFNetDiagnosticSetName
+0x18ccf44bc  __TEXT,__text  _CFNetDiagnosticSetProtocol
+0x18ccf44d4  __TEXT,__text  _CFNetDiagnosticSetServiceID
+0x18cced20c  __TEXT,__text  _CFNetServiceBrowserCreate
+0x18cced10c  __TEXT,__text  _CFNetServiceBrowserGetTypeID
+0x18cced338  __TEXT,__text  _CFNetServiceBrowserInvalidate
+0x18ccee46c  __TEXT,__text  _CFNetServiceBrowserScheduleWithRunLoop
+0x18cced3d4  __TEXT,__text  _CFNetServiceBrowserSearchForDomains
+0x18ccee194  __TEXT,__text  _CFNetServiceBrowserSearchForServices
+0x18ccee1fc  __TEXT,__text  _CFNetServiceBrowserStopSearch
+0x18ccee4d4  __TEXT,__text  _CFNetServiceBrowserUnscheduleFromRunLoop
+0x18ccf1944  __TEXT,__text  _CFNetServiceCancel
+0x18ccf032c  __TEXT,__text  _CFNetServiceCreate
+0x18ccf04b8  __TEXT,__text  _CFNetServiceCreateCopy
+0x18ccf1dec  __TEXT,__text  _CFNetServiceCreateDictionaryWithTXTData
+0x18ccf1fd4  __TEXT,__text  _CFNetServiceCreateTXTDataWithDictionary
+0x18ccf0758  __TEXT,__text  _CFNetServiceGetAddressing
+0x18ccf06f8  __TEXT,__text  _CFNetServiceGetDomain
+0x18ccf0700  __TEXT,__text  _CFNetServiceGetInfo
+0x18ccf0750  __TEXT,__text  _CFNetServiceGetName
+0x18ccf0768  __TEXT,__text  _CFNetServiceGetPortNumber
+0x18ccf0770  __TEXT,__text  _CFNetServiceGetTXTData
+0x18ccf0760  __TEXT,__text  _CFNetServiceGetTargetHost
+0x18ccf0748  __TEXT,__text  _CFNetServiceGetType
+0x18cc0f078  __TEXT,__text  _CFNetServiceGetTypeID
+0x18ccf3510  __TEXT,__text  _CFNetServiceMonitorCreate
+0x18ccf3410  __TEXT,__text  _CFNetServiceMonitorGetTypeID
+0x18ccf35fc  __TEXT,__text  _CFNetServiceMonitorInvalidate
+0x18ccf400c  __TEXT,__text  _CFNetServiceMonitorScheduleWithRunLoop
+0x18ccf3694  __TEXT,__text  _CFNetServiceMonitorStart
+0x18ccf3de4  __TEXT,__text  _CFNetServiceMonitorStop
+0x18ccf4074  __TEXT,__text  _CFNetServiceMonitorUnscheduleFromRunLoop
+0x18ccf07c8  __TEXT,__text  _CFNetServiceRegisterWithOptions
+0x18ccf126c  __TEXT,__text  _CFNetServiceResolveWithTimeout
+0x18ccf1cbc  __TEXT,__text  _CFNetServiceScheduleWithRunLoop
+0x18ccf1be8  __TEXT,__text  _CFNetServiceSetClient
+0x18ccf07c0  __TEXT,__text  _CFNetServiceSetInfo
+0x18ccf07b0  __TEXT,__text  _CFNetServiceSetTXTData
+0x18ccf1d54  __TEXT,__text  _CFNetServiceUnscheduleFromRunLoop
+0x18cd6094c  __TEXT,__text  _CFNetworkCopyProxiesForAutoConfigurationScript
+0x18cd0d0dc  __TEXT,__text  _CFNetworkCopyProxiesForURL
+0x18cd0d0e4  __TEXT,__text  _CFNetworkCopySystemProxySettings
+0x18cdf92e4  __TEXT,__text  _CFNetworkDiagnosticLevel
+0x18ccf83cc  __TEXT,__text  _CFNetworkExecuteProxyAutoConfigurationScript
+0x18ccf8324  __TEXT,__text  _CFNetworkExecuteProxyAutoConfigurationURL
+0x18cdcd520  __TEXT,__text  _CFNetworkProxyAuthorizationElementsCopyDebugDescription
+0x18cdccee0  __TEXT,__text  _CFNetworkProxyAuthorizationElementsCreateFromDictionary
+0x18cdcd594  __TEXT,__text  _CFNetworkProxyAuthorizationElementsGetClientDescription
+0x18cdcd58c  __TEXT,__text  _CFNetworkProxyAuthorizationElementsGetClientProcessName
+0x18cdcd53c  __TEXT,__text  _CFNetworkProxyAuthorizationElementsGetCredential
+0x18cdcd544  __TEXT,__text  _CFNetworkProxyAuthorizationElementsGetProtectionSpace
+0x18cdcd56c  __TEXT,__text  _CFNetworkProxyAuthorizationElementsIsUnviable
+0x18cdcd54c  __TEXT,__text  _CFNetworkProxyAuthorizationElementsIsViable
+0x18cdcd504  __TEXT,__text  _CFNetworkProxyAuthorizationElementsRelease
+0x18cdcd4c4  __TEXT,__text  _CFNetworkProxyAuthorizationElementsRetain
+0x18cd87bec  __TEXT,__text  _CFNetworkProxyCredentialCopyDebugDescription
+0x18cd87c08  __TEXT,__text  _CFNetworkProxyCredentialCreateData
+0x18cd87b20  __TEXT,__text  _CFNetworkProxyCredentialCreateWithCredential
+0x18cd87bd0  __TEXT,__text  _CFNetworkProxyCredentialEqual
+0x18cd87c84  __TEXT,__text  _CFNetworkProxyCredentialGetCredential
+0x18cd87bb4  __TEXT,__text  _CFNetworkProxyCredentialRelease
+0x18cd87b74  __TEXT,__text  _CFNetworkProxyCredentialRetain
+0x18cd87c7c  __TEXT,__text  _CFNetworkProxyCredentialSetViability
+0x18cce4584  __TEXT,__text  _CFReadStreamCreateForHTTPRequest
+0x18cce46b4  __TEXT,__text  _CFReadStreamCreateForStreamedHTTPRequest
+0x18ccdae98  __TEXT,__text  _CFReadStreamCreateWithFTPURL
+0x18ccd3a94  __TEXT,__text  _CFStreamCreatePairWithSocketToCFHost
+0x18ccd3bc4  __TEXT,__text  _CFStreamCreatePairWithSocketToNetService
+0x18cc080d4  __TEXT,__text  _CFURLAuthChallengeCreate
+0x18ccff780  __TEXT,__text  _CFURLAuthChallengeGetError
+0x18ccff7cc  __TEXT,__text  _CFURLAuthChallengeGetFailureResponse
+0x18ccff734  __TEXT,__text  _CFURLAuthChallengeGetPreviousFailureCount
+0x18ccff6e8  __TEXT,__text  _CFURLAuthChallengeGetProposedCredential
+0x18ccff69c  __TEXT,__text  _CFURLAuthChallengeGetProtectionSpace
+0x18cd00ea8  __TEXT,__text  _CFURLCacheAddCachedResponseForRequest
+0x18cc52340  __TEXT,__text  _CFURLCacheCopyResponseForRequest
+0x18ccc8408  __TEXT,__text  _CFURLCacheCopySharedURLCache
+0x18cd00a4c  __TEXT,__text  _CFURLCacheCreate
+0x18cbd8274  __TEXT,__text  _CFURLCacheCurrentDiskUsage
+0x18cc051dc  __TEXT,__text  _CFURLCacheDiskCapacity
+0x18cc05118  __TEXT,__text  _CFURLCacheMemoryCapacity
+0x18cd00f7c  __TEXT,__text  _CFURLCacheRemoveAllCachedResponses
+0x18cc86aa0  __TEXT,__text  _CFURLCacheRemoveCachedResponseForRequest
+0x18cbc5c34  __TEXT,__text  _CFURLCacheSetDiskCapacity
+0x18cbc5d18  __TEXT,__text  _CFURLCacheSetMemoryCapacity
+0x18cbc6188  __TEXT,__text  _CFURLCacheSetSharedURLCache
+0x18cc995f4  __TEXT,__text  _CFURLConnectionCancel
+0x18cd1cc54  __TEXT,__text  _CFURLConnectionCreate
+0x18cbe5cc0  __TEXT,__text  _CFURLConnectionCreateWithProperties
+0x18cd1ce68  __TEXT,__text  _CFURLConnectionHalt
+0x18cd1d150  __TEXT,__text  _CFURLConnectionInvalidateConnectionCache
+0x18cd1cd48  __TEXT,__text  _CFURLConnectionPerformDefaultHandlingForChallenge
+0x18cd1cdd8  __TEXT,__text  _CFURLConnectionRejectChallenge
+0x18cd1cee8  __TEXT,__text  _CFURLConnectionResume
+0x18cd1d098  __TEXT,__text  _CFURLConnectionScheduleDownloadWithRunLoop
+0x18cd1cf68  __TEXT,__text  _CFURLConnectionScheduleWithRunLoop
+0x18cbe58b4  __TEXT,__text  _CFURLConnectionSendSynchronousRequest
+0x18cc74f3c  __TEXT,__text  _CFURLConnectionSetDelegateDispatchQueue
+0x18cc746ac  __TEXT,__text  _CFURLConnectionStart
+0x18cd1d000  __TEXT,__text  _CFURLConnectionUnscheduleFromRunLoop
+0x18cd1ccb0  __TEXT,__text  _CFURLConnectionUseCredential
+0x18ccfb800  __TEXT,__text  _CFURLCredentialContainsPassword
+0x18ccfb7c0  __TEXT,__text  _CFURLCredentialCopyPassword
+0x18ccfb1f8  __TEXT,__text  _CFURLCredentialCreate
+0x18ccfb2e0  __TEXT,__text  _CFURLCredentialCreateWithIdentityAndCertificateArray
+0x18ccc6bf4  __TEXT,__text  _CFURLCredentialCreateWithTrust
+0x18ccfb6d0  __TEXT,__text  _CFURLCredentialGetPersistence
+0x18ccfb71c  __TEXT,__text  _CFURLCredentialGetUsername
+0x18cceb3ac  __TEXT,__text  _CFURLCredentialStorageCopyAllCredentials
+0x18cceb008  __TEXT,__text  _CFURLCredentialStorageCopyCredentialsForProtectionSpace
+0x18ccec060  __TEXT,__text  _CFURLCredentialStorageCopyDefaultCredentialForProtectionSpace
+0x18cc019b4  __TEXT,__text  _CFURLCredentialStorageCreate
+0x18ccecbc4  __TEXT,__text  _CFURLCredentialStorageIsSystemKeychainSupported
+0x18ccebb48  __TEXT,__text  _CFURLCredentialStorageRemoveCredentialForProtectionSpace
+0x18cceb6c8  __TEXT,__text  _CFURLCredentialStorageSetCredentialForProtectionSpace
+0x18ccec4cc  __TEXT,__text  _CFURLCredentialStorageSetDefaultCredentialForProtectionSpace
+0x18ccecc48  __TEXT,__text  _CFURLCredentialStorageSetUseSystemKeychain
+0x18cd0f9f4  __TEXT,__text  _CFURLDownloadCancel
+0x18cd0f860  __TEXT,__text  _CFURLDownloadCopyResumeData
+0x18cd0de54  __TEXT,__text  _CFURLDownloadCreate
+0x18cd0edf8  __TEXT,__text  _CFURLDownloadCreateAndStartWithLoadingConnection
+0x18cd0f45c  __TEXT,__text  _CFURLDownloadCreateWithResumeData
+0x18cd0f814  __TEXT,__text  _CFURLDownloadDeletesUponFailure
+0x18cd0f8ec  __TEXT,__text  _CFURLDownloadScheduleWithRunLoop
+0x18cd0f7c4  __TEXT,__text  _CFURLDownloadSetDeletesUponFailure
+0x18cd0f590  __TEXT,__text  _CFURLDownloadSetDestination
+0x18cd0f98c  __TEXT,__text  _CFURLDownloadStart
+0x18cc1b4e0  __TEXT,__text  _CFURLProtectionSpaceCreate
+0x18ccfbc54  __TEXT,__text  _CFURLProtectionSpaceGetAuthenticationScheme
+0x18ccfbb24  __TEXT,__text  _CFURLProtectionSpaceGetHost
+0x18ccfbb70  __TEXT,__text  _CFURLProtectionSpaceGetPort
+0x18ccfbc08  __TEXT,__text  _CFURLProtectionSpaceGetRealm
+0x18ccfbd1c  __TEXT,__text  _CFURLProtectionSpaceGetServerTrust
+0x18ccfbbbc  __TEXT,__text  _CFURLProtectionSpaceGetServerType
+0x18ccc0a4c  __TEXT,__text  _CFURLProtectionSpaceIsProxy
+0x18ccfbca0  __TEXT,__text  _CFURLProtectionSpaceReceivesCredentialSecurely
+0x18ccfb1d8  __TEXT,__text  _CFURLProtocolGetCachedResponse
+0x18ccfb1e4  __TEXT,__text  _CFURLProtocolGetClient
+0x18ccfb1e0  __TEXT,__text  _CFURLProtocolGetRequest
+0x18ccfb02c  __TEXT,__text  _CFURLProtocolRegisterImplementation
+0x18ccfb1d0  __TEXT,__text  _CFURLProtocolUnregisterImplementation
+0x18cbd88d0  __TEXT,__text  _CFURLRequestAppendHTTPHeaderFieldValue
+0x18ccf9ddc  __TEXT,__text  _CFURLRequestCopyAllHTTPHeaderFields
+0x18ccac640  __TEXT,__text  _CFURLRequestCopyHTTPCookieStorage
+0x18ccf9d9c  __TEXT,__text  _CFURLRequestCopyHTTPHeaderFieldValue
+0x18cc2347c  __TEXT,__text  _CFURLRequestCopyHTTPRequest
+0x18ccf9d70  __TEXT,__text  _CFURLRequestCopyHTTPRequestBody
+0x18ccb7168  __TEXT,__text  _CFURLRequestCopyHTTPRequestBodyParts
+0x18cbe9718  __TEXT,__text  _CFURLRequestCopyHTTPRequestBodyStream
+0x18cbd0718  __TEXT,__text  _CFURLRequestCopyHTTPRequestMethod
+0x18ccf9c44  __TEXT,__text  _CFURLRequestCreate
+0x18ccf9cb8  __TEXT,__text  _CFURLRequestCreateCopy
+0x18cc7a908  __TEXT,__text  _CFURLRequestCreateHTTPRequest
+0x18ccf9c48  __TEXT,__text  _CFURLRequestCreateMutable
+0x18ccf9cc0  __TEXT,__text  _CFURLRequestCreateMutableCopy
+0x18ccf9cc8  __TEXT,__text  _CFURLRequestCreateMutableHTTPRequest
+0x18ccf9d00  __TEXT,__text  _CFURLRequestGetCachePolicy
+0x18ccf9d54  __TEXT,__text  _CFURLRequestGetMainDocumentURL
+0x18ccac7b8  __TEXT,__text  _CFURLRequestGetProxySettings
+0x18ccc4494  __TEXT,__text  _CFURLRequestGetRequestPriority
+0x18ccf9d38  __TEXT,__text  _CFURLRequestGetSSLProperties
+0x18ccf9d1c  __TEXT,__text  _CFURLRequestGetTimeoutInterval
+0x18ccf9ce4  __TEXT,__text  _CFURLRequestGetURL
+0x18ccfa3dc  __TEXT,__text  _CFURLRequestSetAllowsCellularAccess
+0x18ccf9e28  __TEXT,__text  _CFURLRequestSetCachePolicy
+0x18ccf9fe0  __TEXT,__text  _CFURLRequestSetHTTPCookieStorage
+0x18ccfa0c4  __TEXT,__text  _CFURLRequestSetHTTPCookieStorageAcceptPolicy
+0x18cbea4b0  __TEXT,__text  _CFURLRequestSetHTTPHeaderFieldValue
+0x18cbe4b30  __TEXT,__text  _CFURLRequestSetHTTPRequestBody
+0x18ccf9f6c  __TEXT,__text  _CFURLRequestSetHTTPRequestBodyParts
+0x18cbe9608  __TEXT,__text  _CFURLRequestSetHTTPRequestBodyStream
+0x18cbe47d8  __TEXT,__text  _CFURLRequestSetHTTPRequestMethod
+0x18ccc23d8  __TEXT,__text  _CFURLRequestSetMainDocumentURL
+0x18cbd8aec  __TEXT,__text  _CFURLRequestSetMultipleHTTPHeaderFields
+0x18ccfa1d4  __TEXT,__text  _CFURLRequestSetNetworkServiceType
+0x18ccf9e94  __TEXT,__text  _CFURLRequestSetProxySettings
+0x18ccc22d8  __TEXT,__text  _CFURLRequestSetRequestPriority
+0x18ccf9f00  __TEXT,__text  _CFURLRequestSetSSLProperties
+0x18ccf9f9c  __TEXT,__text  _CFURLRequestSetShouldHandleHTTPCookies
+0x18cc8ae70  __TEXT,__text  _CFURLRequestSetShouldPipelineHTTP
+0x18ccfa380  __TEXT,__text  _CFURLRequestSetShouldStartSynchronously
+0x18ccf9e60  __TEXT,__text  _CFURLRequestSetTimeoutInterval
+0x18cbc9584  __TEXT,__text  _CFURLRequestSetURL
+0x18ccf9e08  __TEXT,__text  _CFURLRequestShouldHandleHTTPCookies
+0x18ccfaa5c  __TEXT,__text  _CFURLResponseConnectionDidFallback
+0x18ccfaa78  __TEXT,__text  _CFURLResponseConnectionIsCellular
+0x18ccfaa30  __TEXT,__text  _CFURLResponseCopyPeerAddress
+0x18ccfa9e0  __TEXT,__text  _CFURLResponseCopySuggestedFilename
+0x18cc74128  __TEXT,__text  _CFURLResponseCreate
+0x18cbf5fa0  __TEXT,__text  _CFURLResponseCreateWithHTTPResponse
+0x18ccfa9fc  __TEXT,__text  _CFURLResponseDataIsEncoded
+0x18ccfa778  __TEXT,__text  _CFURLResponseGetCreationTime
+0x18cbf6908  __TEXT,__text  _CFURLResponseGetExpectedContentLength
+0x18cbf9480  __TEXT,__text  _CFURLResponseGetExpirationTime
+0x18ccfa914  __TEXT,__text  _CFURLResponseGetHTTPResponse
+0x18ccfa590  __TEXT,__text  _CFURLResponseGetMIMEType
+0x18ccfa574  __TEXT,__text  _CFURLResponseGetRecommendedCachePolicy
+0x18ccfa5ac  __TEXT,__text  _CFURLResponseGetTextEncodingName
+0x18ccfa4b4  __TEXT,__text  _CFURLResponseGetTypeID
+0x18ccfa558  __TEXT,__text  _CFURLResponseGetURL
+0x18ccfa794  __TEXT,__text  _CFURLResponseSetExpectedContentLength
+0x18ccfa868  __TEXT,__text  _CFURLResponseSetExpiration
+0x18ccfa7e8  __TEXT,__text  _CFURLResponseSetMIMEType
+0x18ccfa8d0  __TEXT,__text  _CFURLResponseSetRecommendedCachePolicy
+0x18ccd8544  __TEXT,__text  _CFWriteStreamCreateWithFTPURL
+0x1e09724b0  __DATA_CONST,__const  _NSHTTPCookieComment
+0x1e09724a8  __DATA_CONST,__const  _NSHTTPCookieCommentURL
+0x1e09724a0  __DATA_CONST,__const  _NSHTTPCookieDiscard
+0x1e0972498  __DATA_CONST,__const  _NSHTTPCookieDomain
+0x1e0972490  __DATA_CONST,__const  _NSHTTPCookieExpires
+0x1e0972488  __DATA_CONST,__const  _NSHTTPCookieManagerAcceptPolicyChangedNotification
+0x1e0972480  __DATA_CONST,__const  _NSHTTPCookieManagerCookiesChangedNotification
+0x1e0972478  __DATA_CONST,__const  _NSHTTPCookieMaximumAge
+0x1e0972470  __DATA_CONST,__const  _NSHTTPCookieName
+0x1e0972468  __DATA_CONST,__const  _NSHTTPCookieOriginURL
+0x1e0972460  __DATA_CONST,__const  _NSHTTPCookiePath
+0x1e0972458  __DATA_CONST,__const  _NSHTTPCookiePort
+0x1e0972450  __DATA_CONST,__const  _NSHTTPCookieSameSiteLax
+0x1e0972448  __DATA_CONST,__const  _NSHTTPCookieSameSitePolicy
+0x1e0972440  __DATA_CONST,__const  _NSHTTPCookieSameSiteStrict
+0x1e0972438  __DATA_CONST,__const  _NSHTTPCookieSecure
+0x1e0972430  __DATA_CONST,__const  _NSHTTPCookieSetByJavaScript
+0x1e0972428  __DATA_CONST,__const  _NSHTTPCookieValue
+0x1e0972420  __DATA_CONST,__const  _NSHTTPCookieVersion
+0x1e0972418  __DATA_CONST,__const  _NSNetServicesErrorCode
+0x1e0972410  __DATA_CONST,__const  _NSNetServicesErrorDomain
+0x1e0972408  __DATA_CONST,__const  _NSTCPConnectionConditionsUnmetReasonErrorDomain
+0x1e0972400  __DATA_CONST,__const  _NSURLAuthenticationMethodClientCertificate
+0x1e09723f8  __DATA_CONST,__const  _NSURLAuthenticationMethodDefault
+0x1e09723f0  __DATA_CONST,__const  _NSURLAuthenticationMethodHTMLForm
+0x1e09723e8  __DATA_CONST,__const  _NSURLAuthenticationMethodHTTPBasic
+0x1e09723e0  __DATA_CONST,__const  _NSURLAuthenticationMethodHTTPDigest
+0x1e09723d8  __DATA_CONST,__const  _NSURLAuthenticationMethodNTLM
+0x1e09723d0  __DATA_CONST,__const  _NSURLAuthenticationMethodNegotiate
+0x1e09723c8  __DATA_CONST,__const  _NSURLAuthenticationMethodOAuth
+0x1e09723c0  __DATA_CONST,__const  _NSURLAuthenticationMethodOAuthBearerToken
+0x1e09723b8  __DATA_CONST,__const  _NSURLAuthenticationMethodPrivateAccessToken
+0x1e09723b0  __DATA_CONST,__const  _NSURLAuthenticationMethodServerTrust
+0x1e09723a8  __DATA_CONST,__const  _NSURLAuthenticationMethodXMobileMeAuthToken
+0x1e09723a0  __DATA_CONST,__const  _NSURLCredentialStorageChangedNotification
+0x1e0972398  __DATA_CONST,__const  _NSURLCredentialStorageRemoveSynchronizableCredentials
+0x1e0972390  __DATA_CONST,__const  _NSURLProtectionSpaceFTP
+0x1e0972388  __DATA_CONST,__const  _NSURLProtectionSpaceFTPProxy
+0x1e0972380  __DATA_CONST,__const  _NSURLProtectionSpaceHTTP
+0x1e0972378  __DATA_CONST,__const  _NSURLProtectionSpaceHTTPProxy
+0x1e0972370  __DATA_CONST,__const  _NSURLProtectionSpaceHTTPS
+0x1e0972368  __DATA_CONST,__const  _NSURLProtectionSpaceHTTPSProxy
+0x1e0972360  __DATA_CONST,__const  _NSURLProtectionSpaceSOCKSProxy
+0x18ce223b8  __TEXT,__const  _NSURLSessionDefaultLoadingPriority
+0x1e0972358  __DATA_CONST,__const  _NSURLSessionDownloadTaskResumeData
+0x1e0972350  __DATA_CONST,__const  _NSURLSessionProxyErrorDomain
+0x1e0972348  __DATA_CONST,__const  _NSURLSessionSourceApplicationBundleIdentifierIsExternal
+0x1e0972340  __DATA_CONST,__const  _NSURLSessionTaskOriginalStartTimeKey
+0x18ce223a8  __TEXT,__const  _NSURLSessionTaskPriorityDefault
+0x18ce223b0  __TEXT,__const  _NSURLSessionTaskPriorityHigh
+0x18ce223ac  __TEXT,__const  _NSURLSessionTaskPriorityLow
+0x18ce1e5b8  __TEXT,__const  _NSURLSessionTransferSizeUnknown
+0x1e0972338  __DATA_CONST,__const  _NSURLSessionUploadTaskResumeData
+0x1ef54c458  __AUTH,__objc_data  _OBJC_CLASS_$_AVAssetDownloadTask
+0x1ee084c18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AVAssetDownloadURLSession
+0x1ee084128  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSCachedURLResponse
+0x1ef54baf8  __AUTH,__objc_data  _OBJC_CLASS_$_NSGZipDecoder
+0x1ee083db8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSHTTPCookie
+0x1ee084588  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSHTTPCookieStorage
+0x1ee084a88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSHTTPURLResponse
+0x1ef54be90  __AUTH,__objc_data  _OBJC_CLASS_$_NSHost
+0x1ee084b28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSMutableURLRequest
+0x1ef54c2f0  __AUTH,__objc_data  _OBJC_CLASS_$_NSNetService
+0x1ef54c430  __AUTH,__objc_data  _OBJC_CLASS_$_NSNetServiceBrowser
+0x1ee084268  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLAuthenticationChallenge
+0x1ee084a10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLCache
+0x1ee084920  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLConnection
+0x1ee083b60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLCredential
+0x1ee0848f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLCredentialStorage
+0x1ef54b8c8  __AUTH,__objc_data  _OBJC_CLASS_$_NSURLDownload
+0x1ee0842e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLProtectionSpace
+0x1ee084e70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLProtocol
+0x1ee084f88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLRequest
+0x1ee084f38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLResponse
+0x1ee084f10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLSession
+0x1ef54be68  __AUTH,__objc_data  _OBJC_CLASS_$_NSURLSessionAVAggregateAssetDownloadTask
+0x1ef54c138  __AUTH,__objc_data  _OBJC_CLASS_$_NSURLSessionAVAssetDownloadTask
+0x1ee084e48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLSessionConfiguration
+0x1ee0846c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLSessionDataTask
+0x1ee083a70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLSessionDownloadTask
+0x1ee083b10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLSessionEffectiveConfiguration
+0x1ef54c548  __AUTH,__objc_data  _OBJC_CLASS_$_NSURLSessionMutableEffectiveConfiguration
+0x1ef54c110  __AUTH,__objc_data  _OBJC_CLASS_$_NSURLSessionStreamTask
+0x1ee084970  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLSessionTask
+0x1ef54b878  __AUTH,__objc_data  _OBJC_CLASS_$_NSURLSessionTaskDependency
+0x1ef54b850  __AUTH,__objc_data  _OBJC_CLASS_$_NSURLSessionTaskDependencyDescription
+0x1ef54b828  __AUTH,__objc_data  _OBJC_CLASS_$_NSURLSessionTaskDependencyTree
+0x1ee0844e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLSessionTaskMetrics
+0x1ee084150  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLSessionTaskTransactionMetrics
+0x1ee084240  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLSessionUploadTask
+0x1ef54c2c8  __AUTH,__objc_data  _OBJC_CLASS_$_NSURLSessionWebSocketMessage
+0x1ee083f20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSURLSessionWebSocketTask
+0x1ef54b800  __AUTH,__objc_data  _OBJC_CLASS_$__NSCFServer
+0x1ee084768  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__NSHSTSStorage
+0x1ee083d40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__NSHTTPAlternativeServiceEntry
+0x1ee083fe8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__NSHTTPAlternativeServicesFilter
+0x1ee083fc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__NSHTTPAlternativeServicesStorage
+0x1ef54c598  __AUTH,__objc_data  _OBJC_CLASS_$__NSHTTPConnectionInfo
+0x1ef54c0e8  __AUTH,__objc_data  _OBJC_CLASS_$__NSURLSessionBackgroundTaskOverrides
+0x1ee084858  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CFN_TaskMetrics
+0x1ee083a20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___NSCFURLSessionTaskInfo
+0x1ee0839f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___NSCFURLSessionXPC
+0x1ee0845d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___NSURLSessionStatistics
+0x1ef54c390  __AUTH,__objc_data  _OBJC_METACLASS_$_AVAssetDownloadTask
+0x1ee084bf0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AVAssetDownloadURLSession
+0x1ee084100  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSCachedURLResponse
+0x1ef54b5a8  __AUTH,__objc_data  _OBJC_METACLASS_$_NSGZipDecoder
+0x1ee083de0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSHTTPCookie
+0x1ee084538  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSHTTPCookieStorage
+0x1ee0849e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSHTTPURLResponse
+0x1ef54bcb0  __AUTH,__objc_data  _OBJC_METACLASS_$_NSHost
+0x1ee084b50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSMutableURLRequest
+0x1ef54c250  __AUTH,__objc_data  _OBJC_METACLASS_$_NSNetService
+0x1ef54c4a8  __AUTH,__objc_data  _OBJC_METACLASS_$_NSNetServiceBrowser
+0x1ee084218  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLAuthenticationChallenge
+0x1ee084ab0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLCache
+0x1ee084948  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLConnection
+0x1ee083b38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLCredential
+0x1ee0848a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLCredentialStorage
+0x1ef54b378  __AUTH,__objc_data  _OBJC_METACLASS_$_NSURLDownload
+0x1ee084290  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLProtectionSpace
+0x1ee084e98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLProtocol
+0x1ee084fb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLRequest
+0x1ee084f60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLResponse
+0x1ee084ee8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLSession
+0x1ef54bc88  __AUTH,__objc_data  _OBJC_METACLASS_$_NSURLSessionAVAggregateAssetDownloadTask
+0x1ef54bff8  __AUTH,__objc_data  _OBJC_METACLASS_$_NSURLSessionAVAssetDownloadTask
+0x1ee084ec0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLSessionConfiguration
+0x1ee084650  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLSessionDataTask
+0x1ee083a48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLSessionDownloadTask
+0x1ee083ae8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLSessionEffectiveConfiguration
+0x1ef54c520  __AUTH,__objc_data  _OBJC_METACLASS_$_NSURLSessionMutableEffectiveConfiguration
+0x1ef54bfd0  __AUTH,__objc_data  _OBJC_METACLASS_$_NSURLSessionStreamTask
+0x1ee0848d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLSessionTask
+0x1ef54b328  __AUTH,__objc_data  _OBJC_METACLASS_$_NSURLSessionTaskDependency
+0x1ef54b300  __AUTH,__objc_data  _OBJC_METACLASS_$_NSURLSessionTaskDependencyDescription
+0x1ef54b2d8  __AUTH,__objc_data  _OBJC_METACLASS_$_NSURLSessionTaskDependencyTree
+0x1ee084498  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLSessionTaskMetrics
+0x1ee0840d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLSessionTaskTransactionMetrics
+0x1ee0842b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLSessionUploadTask
+0x1ef54c200  __AUTH,__objc_data  _OBJC_METACLASS_$_NSURLSessionWebSocketMessage
+0x1ee083f48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSURLSessionWebSocketTask
+0x1ef54b2b0  __AUTH,__objc_data  _OBJC_METACLASS_$__NSCFServer
+0x1ee084790  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__NSHSTSStorage
+0x1ee083d18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__NSHTTPAlternativeServiceEntry
+0x1ee084010  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__NSHTTPAlternativeServicesFilter
+0x1ee084060  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__NSHTTPAlternativeServicesStorage
+0x1ef54c570  __AUTH,__objc_data  _OBJC_METACLASS_$__NSHTTPConnectionInfo
+0x1ef54bfa8  __AUTH,__objc_data  _OBJC_METACLASS_$__NSURLSessionBackgroundTaskOverrides
+0x1ee084880  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CFN_TaskMetrics
+0x1ee0839d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___NSCFURLSessionTaskInfo
+0x1ee0839a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___NSCFURLSessionXPC
+0x1ee084600  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___NSURLSessionStatistics
+0x18cd0193c  __TEXT,__text  __CFCachedURLResponseGetMemMappedData
+0x18cd01610  __TEXT,__text  __CFCachedURLResponseSetBecameFileBackedCallBackBlock
+0x18cd2d7dc  __TEXT,__text  __CFErrorCreateWithStreamError
+0x18cd06db4  __TEXT,__text  __CFHTTPAuthenticationAppSSOIsPerformDefaultHandlingError
+0x18cd06dcc  __TEXT,__text  __CFHTTPAuthenticationAppSSOShouldManageURL
+0x18cd05d6c  __TEXT,__text  __CFHTTPAuthenticationApplyProxyAuthorizationToRequest
+0x18cd06fcc  __TEXT,__text  __CFHTTPAuthenticationAskAccountsForCreds
+0x18cd06fac  __TEXT,__text  __CFHTTPAuthenticationCanRecoverFromKerberosFailure
+0x18cd06cd0  __TEXT,__text  __CFHTTPAuthenticationCheckOriginAllowedAsThirdParty
+0x18cd0733c  __TEXT,__text  __CFHTTPAuthenticationClearAccountRefreshState
+0x18cd06a88  __TEXT,__text  __CFHTTPAuthenticationCopySortedAuthSchemes
+0x18cd053a0  __TEXT,__text  __CFHTTPAuthenticationCreateFromResponseWithFlags
+0x18cd0695c  __TEXT,__text  __CFHTTPAuthenticationCreateNTLMHeaderForRequest
+0x18cd069c4  __TEXT,__text  __CFHTTPAuthenticationCreateNegotiateHeaderForRequest
+0x18cd06f50  __TEXT,__text  __CFHTTPAuthenticationDisableAppSSO
+0x18cd05444  __TEXT,__text  __CFHTTPAuthenticationDisassociateConnection
+0x18cd06f60  __TEXT,__text  __CFHTTPAuthenticationFailedToGetKerberosTicket
+0x18cd073d0  __TEXT,__text  __CFHTTPAuthenticationFetchProxyCredentialFromAuthBroker
+0x18cd06de4  __TEXT,__text  __CFHTTPAuthenticationGetAuthHeadersFromAppSSO
+0x18cd06b9c  __TEXT,__text  __CFHTTPAuthenticationGetPATAuthHeaders
+0x18cd06b50  __TEXT,__text  __CFHTTPAuthenticationGetPATSchemes
+0x18cd06a3c  __TEXT,__text  __CFHTTPAuthenticationGetSchemesDict
+0x18cd07380  __TEXT,__text  __CFHTTPAuthenticationIsSecondNTLMTransaction
+0x18cd056dc  __TEXT,__text  __CFHTTPAuthenticationPasswordInClear
+0x18cd075c4  __TEXT,__text  __CFHTTPAuthenticationSetKerberosUnitTestMode
+0x18cd054ac  __TEXT,__text  __CFHTTPAuthenticationSetPreferredScheme
+0x18cd04c74  __TEXT,__text  __CFHTTPAuthenticationUpdateFromResponse
+0x18cd06cf4  __TEXT,__text  __CFHTTPAuthenticationUsingAppSSO
+0x18ccffd24  __TEXT,__text  __CFHTTPCookieCreateCookiesWithResponseMessage
+0x18ccffc50  __TEXT,__text  __CFHTTPCookieCreateWithStringAndPartition
+0x18cd9a620  __TEXT,__text  __CFHTTPCookieStorageCopyCookiesForURLWithMainDocumentURL
+0x18cd9a86c  __TEXT,__text  __CFHTTPCookieStorageCopyRequestHeaderFieldsForURL
+0x18cd99840  __TEXT,__text  __CFHTTPCookieStorageCreateInMemory
+0x18cd998b8  __TEXT,__text  __CFHTTPCookieStorageCreateWithProperties
+0x18cd9aea4  __TEXT,__text  __CFHTTPCookieStorageFlushCookieStores
+0x18cbd2f50  __TEXT,__text  __CFHTTPCookieStorageGetDefault
+0x18cd99f90  __TEXT,__text  __CFHTTPCookieStorageSetCookiesWithResponseHeaderFields
+0x18cc7a8a0  __TEXT,__text  __CFHTTPMessageAddHeaderFieldValue
+0x18cd05870  __TEXT,__text  __CFHTTPMessageCanRetry
+0x18ccd4e70  __TEXT,__text  __CFHTTPMessageSetResponseProxyURL
+0x18cc50fb4  __TEXT,__text  __CFHTTPMessageSetResponseURL
+0x18ccffb78  __TEXT,__text  __CFHTTPParsedCookiesWithResponseHeaderFields
+0x18cdc9790  __TEXT,__text  __CFHTTPServerConnectionCopyProperty
+0x18cdc9474  __TEXT,__text  __CFHTTPServerConnectionGetClient
+0x18cdc91ac  __TEXT,__text  __CFHTTPServerConnectionGetTypeID
+0x18cdc99e0  __TEXT,__text  __CFHTTPServerConnectionInvalidate
+0x18cdc98c0  __TEXT,__text  __CFHTTPServerConnectionIsValid
+0x18cdc9af4  __TEXT,__text  __CFHTTPServerConnectionScheduleWithRunLoopAndMode
+0x18cdc91f4  __TEXT,__text  __CFHTTPServerConnectionSetClient
+0x18cdc9a08  __TEXT,__text  __CFHTTPServerConnectionSetDispatchQueue
+0x18cdc9598  __TEXT,__text  __CFHTTPServerConnectionSetProperty
+0x18cdc8bbc  __TEXT,__text  __CFHTTPServerCopyProperty
+0x18cdcb050  __TEXT,__text  __CFHTTPServerCreateSelfSignedIdentity
+0x18cdc83bc  __TEXT,__text  __CFHTTPServerCreateService
+0x18cdc85a0  __TEXT,__text  __CFHTTPServerCreateWithAcceptedSocket
+0x18cdc8710  __TEXT,__text  __CFHTTPServerCreateWithStreams
+0x18cdc88a0  __TEXT,__text  __CFHTTPServerGetClient
+0x18cdc8374  __TEXT,__text  __CFHTTPServerGetTypeID
+0x18cdc8fb8  __TEXT,__text  __CFHTTPServerInvalidate
+0x18cdc8e24  __TEXT,__text  __CFHTTPServerIsValid
+0x18cdca214  __TEXT,__text  __CFHTTPServerRequestCopyBodyStream
+0x18cdc9c50  __TEXT,__text  __CFHTTPServerRequestCopyProperty
+0x18cdc9e2c  __TEXT,__text  __CFHTTPServerRequestCreateResponseMessage
+0x18cdca71c  __TEXT,__text  __CFHTTPServerRequestGetClient
+0x18cdc9c08  __TEXT,__text  __CFHTTPServerRequestGetTypeID
+0x18cdca608  __TEXT,__text  __CFHTTPServerRequestSetClient
+0x18cdca3b0  __TEXT,__text  __CFHTTPServerResponseCopyProperty
+0x18cdca840  __TEXT,__text  __CFHTTPServerResponseCreateWithBodyStream
+0x18cdca108  __TEXT,__text  __CFHTTPServerResponseCreateWithData
+0x18cdcabf8  __TEXT,__text  __CFHTTPServerResponseEnqueue
+0x18cdcaad4  __TEXT,__text  __CFHTTPServerResponseGetClient
+0x18cdca368  __TEXT,__text  __CFHTTPServerResponseGetTypeID
+0x18cdca9b0  __TEXT,__text  __CFHTTPServerResponseSetClient
+0x18cdc90b4  __TEXT,__text  __CFHTTPServerScheduleWithRunLoopAndMode
+0x18cdc8fe0  __TEXT,__text  __CFHTTPServerSetDispatchQueue
+0x18cdc89c4  __TEXT,__text  __CFHTTPServerSetProperty
+0x18cbd833c  __TEXT,__text  __CFHostGetTopLevelDomain
+0x18cc87324  __TEXT,__text  __CFHostIsDomainTopLevel
+0x18ccecdb0  __TEXT,__text  __CFHostIsDomainTopLevelForCertificatePolicy
+0x18ccecd94  __TEXT,__text  __CFHostIsDomainTopLevelForCookiePolicy
+0x18ccf5b34  __TEXT,__text  __CFHostStartInfoResolutionForInterface
+0x18cd14080  __TEXT,__text  __CFN_createNewResumeDataWithExtractor
+0x18cd1414c  __TEXT,__text  __CFN_isForegroundOnlyAVAssetDownloadIdentifier
+0x18ccad644  __TEXT,__text  __CFN_isSafeRequestForBackgroundDownload
+0x18cd13f68  __TEXT,__text  __CFN_isSafeResumeDataForBackgroundDownload
+0x18cd14118  __TEXT,__text  __CFN_makeForegroundOnlyAVAssetDownloadIdentifier
+0x18cd13f90  __TEXT,__text  __CFN_requestFromResumeData
+0x18ccf24ec  __TEXT,__text  __CFNetServiceCreateFromServiceName
+0x18ccf2980  __TEXT,__text  __CFNetServiceCreateFromURL
+0x18cc8737c  __TEXT,__text  __CFNetworkCopyATSContext
+0x18ccf64f0  __TEXT,__text  __CFNetworkCopyDefaultUserAgentString
+0x18ccf80d4  __TEXT,__text  __CFNetworkCopyHSTSPolicies
+0x18cbdbd34  __TEXT,__text  __CFNetworkCopyPreferredLanguageCode
+0x18cc98194  __TEXT,__text  __CFNetworkErrorCopyLocalizedDescriptionWithHostname
+0x18cd2d7d4  __TEXT,__text  __CFNetworkErrorGetLocalizedDescription
+0x18ccab430  __TEXT,__text  __CFNetworkErrorGetLocalizedFailureReason
+0x18ccab438  __TEXT,__text  __CFNetworkErrorGetLocalizedRecoverySuggestion
+0x18ccf83c4  __TEXT,__text  __CFNetworkExecuteProxyAutoConfigurationURLDelegated
+0x18cda5984  __TEXT,__text  __CFNetworkHTTPConnectionCacheGetLimit
+0x18cda5a58  __TEXT,__text  __CFNetworkHTTPConnectionCacheSetLimit
+0x18ccf7fac  __TEXT,__text  __CFNetworkIsKnownHSTSHostWithSession
+0x18ccf813c  __TEXT,__text  __CFNetworkResetHSTS
+0x18ccf8258  __TEXT,__text  __CFNetworkResetHSTSHosts
+0x18ccf81d4  __TEXT,__text  __CFNetworkResetHSTSHostsSinceDate
+0x18ccf8250  __TEXT,__text  __CFNetworkResetHSTSHostsWithSession
+0x18cd8b504  __TEXT,__text  __CFNetworkSetATSContext
+0x18cdd7f94  __TEXT,__text  __CFNetworkSetHSTSStoragePath
+0x18cd0d1f8  __TEXT,__text  __CFNetworkSetOverrideSystemProxySettings
+0x18cce4ef8  __TEXT,__text  __CFServerCreate
+0x18cce5320  __TEXT,__text  __CFServerGetPort
+0x18cce522c  __TEXT,__text  __CFServerInvalidate
+0x18cce5404  __TEXT,__text  __CFServerStart
+0x18ccbe224  __TEXT,__text  __CFSocketStreamCreatePair
+0x18cc94b9c  __TEXT,__text  __CFStreamErrorFromCFError
+0x18cd2d66c  __TEXT,__text  __CFStringCreateRFC2616DateStringWithGregorianDate
+0x18cd00988  __TEXT,__text  __CFURLCacheCopyCacheDirectory
+0x18cd02850  __TEXT,__text  __CFURLCacheLoadMemoryFromDiskNow
+0x18cd02854  __TEXT,__text  __CFURLCachePersistMemoryToDiskNow
+0x18ccc6fe4  __TEXT,__text  __CFURLCachePurgeMemoryCache
+0x18cd01570  __TEXT,__text  __CFURLCacheSetCacheEventCallBackBlock
+0x18cd014a8  __TEXT,__text  __CFURLCacheSetMemoryLimit
+0x18cd1d1a8  __TEXT,__text  __CFURLConnectionCopyTimingData
+0x18cd0de04  __TEXT,__text  __CFURLConnectionSetFrameworkStubs
+0x18cd2c638  __TEXT,__text  __CFURLCreateDataAndPropertiesFromResource
+0x18ccfb840  __TEXT,__text  __CFURLCredentialCreateArchive
+0x18ccfb47c  __TEXT,__text  __CFURLCredentialCreateForKerberosTicket
+0x18ccfbb00  __TEXT,__text  __CFURLCredentialCreateFromArchive
+0x18ccfb608  __TEXT,__text  __CFURLCredentialCreateOAuth1
+0x18ccfb54c  __TEXT,__text  __CFURLCredentialCreateOAuth2
+0x18ccfb484  __TEXT,__text  __CFURLCredentialCreateXMobileMeAuthToken
+0x18cd2ce70  __TEXT,__text  __CFURLDestroyResource
+0x18ccfbd68  __TEXT,__text  __CFURLProtectionSpaceCreateArchive
+0x18ccfb1d4  __TEXT,__text  __CFURLProtocolSendCacheResponseIsValidCallback
+0x18ccfabbc  __TEXT,__text  __CFURLProtocolSendDidFailCallback
+0x18ccfac70  __TEXT,__text  __CFURLProtocolSendDidFinishLoadingCallback
+0x18ccfac3c  __TEXT,__text  __CFURLProtocolSendDidLoadDataCallback
+0x18ccfabf0  __TEXT,__text  __CFURLProtocolSendDidReceiveResponseCallback
+0x18ccfa1a8  __TEXT,__text  __CFURLRequestCopyContentDispositionEncodingFallbackArray
+0x18cbec4f4  __TEXT,__text  __CFURLRequestCopyProtocolPropertyForKey
+0x18ccfa124  __TEXT,__text  __CFURLRequestCreateArchiveList
+0x18cc0425c  __TEXT,__text  __CFURLRequestCreateFromArchiveList
+0x18ccfa48c  __TEXT,__text  __CFURLRequestSetAllowedProtocolTypes
+0x18ccc2d38  __TEXT,__text  __CFURLRequestSetContentDispositionEncodingFallbackArray
+0x18ccc2300  __TEXT,__text  __CFURLRequestSetProtocolProperty
+0x18ccfa208  __TEXT,__text  __CFURLRequestSetShouldPipelineNonIdempotentHTTP
+0x18ccfa2c4  __TEXT,__text  __CFURLRequestSetShouldSkipPipelineProbe
+0x18ccfa420  __TEXT,__text  __CFURLRequestSetStorageSession
+0x18ccfa970  __TEXT,__text  __CFURLResponseCreateArchiveList
+0x18cc4fb64  __TEXT,__text  __CFURLResponseCreateFromArchiveList
+0x18ccfa93c  __TEXT,__text  __CFURLResponseGetFreshnessLifetime
+0x18ccfa8f8  __TEXT,__text  __CFURLResponseGetSSLCertificateContext
+0x18cbf8364  __TEXT,__text  __CFURLResponseMustRevalidate
+0x18ccfa8a8  __TEXT,__text  __CFURLResponseSetCreationTime
+0x18cc73008  __TEXT,__text  __CFURLStorageSessionCopyCache
+0x18cc87380  __TEXT,__text  __CFURLStorageSessionCopyCookieStorage
+0x18cc01a48  __TEXT,__text  __CFURLStorageSessionCopyCredentialStorage
+0x18cdf4b2c  __TEXT,__text  __CFURLStorageSessionCopyIdentifier
+0x18cdf4b10  __TEXT,__text  __CFURLStorageSessionCopyProcessDefault
+0x18cdf48ac  __TEXT,__text  __CFURLStorageSessionCreate
+0x18cdf4a78  __TEXT,__text  __CFURLStorageSessionCreateWithData
+0x18cdf4b8c  __TEXT,__text  __CFURLStorageSessionDisableCache
+0x18cdf4864  __TEXT,__text  __CFURLStorageSessionGetTypeID
+0x18cd2cb28  __TEXT,__text  __CFURLWriteDataAndPropertiesToResource
+0x1e0972330  __DATA_CONST,__const  __NSServerConfigurationOutboundConnectionProxyDictionary
+0x1e0972328  __DATA_CONST,__const  __NSServerConfigurationSOCKS5ServerCredentials
+0x1e0972320  __DATA_CONST,__const  __NSURLErrorBlockedTrackerFailureKey
+0x1e0972318  __DATA_CONST,__const  __NSURLErrorNWPathKey
+0x1e0972310  __DATA_CONST,__const  __NSURLErrorNWResolutionReportKey
+0x1e0972308  __DATA_CONST,__const  __NSURLErrorPrivacyProxyFailureKey
+0x1e0972300  __DATA_CONST,__const  __NSURLErrorVPNInactiveFailureKey
+0x1e09722f8  __DATA_CONST,__const  __NSURLErrorWebSocketHandshakeFailureReasonKey
+0x18ce06fd0  __TEXT,__text  ___CFTubeSetTubeTypeNotifier
+0x1e096ccc8  __DATA_CONST,__const  __kATSAllowsArbitraryLoadsForMediaKey
+0x1e096cc98  __DATA_CONST,__const  __kCFHTTPCookiePolicyPropertyIsTopLevelNavigation
+0x1e096cc90  __DATA_CONST,__const  __kCFHTTPCookiePolicyPropertySiteForCookies
+0x1e096cc70  __DATA_CONST,__const  __kCFHTTPServerAllInterfacesIdentifier
+0x1e096cc68  __DATA_CONST,__const  __kCFHTTPServerAllowAnonymousServer
+0x1e096cc60  __DATA_CONST,__const  __kCFHTTPServerBoundInterfaceIdentifier
+0x1e096cc58  __DATA_CONST,__const  __kCFHTTPServerConnectionClientTrust
+0x1e096cc50  __DATA_CONST,__const  __kCFHTTPServerConnectionMaxRequestBufferSize
+0x1e096cc48  __DATA_CONST,__const  __kCFHTTPServerConnectionPeer
+0x1e096cc40  __DATA_CONST,__const  __kCFHTTPServerConnectionPeerCerts
+0x1e096cc38  __DATA_CONST,__const  __kCFHTTPServerConnectionServer
+0x1e096cc30  __DATA_CONST,__const  __kCFHTTPServerErrorDomain
+0x1e096cc28  __DATA_CONST,__const  __kCFHTTPServerFailingRequest
+0x1e096cc20  __DATA_CONST,__const  __kCFHTTPServerFailingResponse
+0x1e096cc18  __DATA_CONST,__const  __kCFHTTPServerHTTPServiceType
+0x1e096cc10  __DATA_CONST,__const  __kCFHTTPServerIdleTimeout
+0x1e096cc08  __DATA_CONST,__const  __kCFHTTPServerKeychain
+0x1e096cc00  __DATA_CONST,__const  __kCFHTTPServerName
+0x1e096cbf8  __DATA_CONST,__const  __kCFHTTPServerRequestConnection
+0x1e096cbf0  __DATA_CONST,__const  __kCFHTTPServerRequestHTTPVersion
+0x1e096cbe8  __DATA_CONST,__const  __kCFHTTPServerRequestHeaderOrderKey
+0x1e096cbe0  __DATA_CONST,__const  __kCFHTTPServerRequestHeaderValuesKey
+0x1e096cbd8  __DATA_CONST,__const  __kCFHTTPServerRequestHeaders
+0x1e096cbd0  __DATA_CONST,__const  __kCFHTTPServerRequestMethod
+0x1e096cbc8  __DATA_CONST,__const  __kCFHTTPServerRequestPath
+0x1e096cbc0  __DATA_CONST,__const  __kCFHTTPServerRequestURL
+0x1e096cbb8  __DATA_CONST,__const  __kCFHTTPServerRequireClientCertificate
+0x1e096cbb0  __DATA_CONST,__const  __kCFHTTPServerResponseConnection
+0x1e096cba8  __DATA_CONST,__const  __kCFHTTPServerResponseMessage
+0x1e096cba0  __DATA_CONST,__const  __kCFHTTPServerResponseRequest
+0x1e096cb98  __DATA_CONST,__const  __kCFHTTPServerReuseLocalAddress
+0x1e096cb90  __DATA_CONST,__const  __kCFHTTPServerSSLSettings
+0x1e096cb88  __DATA_CONST,__const  __kCFHTTPServerServerIdentity
+0x1e096cb80  __DATA_CONST,__const  __kCFHTTPServerServerTrustChain
+0x1e096cb78  __DATA_CONST,__const  __kCFHTTPServerServicePort
+0x1e096cb70  __DATA_CONST,__const  __kCFHTTPServerServiceType
+0x1e096cb68  __DATA_CONST,__const  __kCFHTTPServerStreamSSLSettings
+0x1e096cb60  __DATA_CONST,__const  __kCFHTTPServerWatchdogTimeout
+0x1e096cb58  __DATA_CONST,__const  __kCFHostByPassMasterAddressLookupString
+0x1e096cb50  __DATA_CONST,__const  __kCFHostConnectByNamePortString
+0x1e096cb48  __DATA_CONST,__const  __kCFHostIPv4AddressesString
+0x1e096cb40  __DATA_CONST,__const  __kCFHostIPv6AddressesString
+0x1e096cb38  __DATA_CONST,__const  __kCFHostMasterAddressLookupString
+0x1e096cb30  __DATA_CONST,__const  __kCFNetworkHSTSExpiry
+0x1e096cb28  __DATA_CONST,__const  __kCFNetworkHSTSIncludeSubDomains
+0x1e096cb20  __DATA_CONST,__const  __kCFNetworkHSTSPreloaded
+0x1e096cb18  __DATA_CONST,__const  __kCFNullHostInfoTypeString
+0x1e096cb10  __DATA_CONST,__const  __kCFStreamErrorCodeKey
+0x1e096cb08  __DATA_CONST,__const  __kCFStreamErrorDomainKey
+0x1e096cb00  __DATA_CONST,__const  __kCFStreamPropertyAllowConstrainedNetworkAccess
+0x1e096caf8  __DATA_CONST,__const  __kCFStreamPropertyAllowExpensiveAccess
+0x1e096cab8  __DATA_CONST,__const  __kCFStreamPropertyConnectionIsExpensive
+0x1e096caa0  __DATA_CONST,__const  __kCFStreamPropertyConnectionStatistics
+0x1e096ca98  __DATA_CONST,__const  __kCFStreamPropertyConnectionViabilityChangedBlock
+0x1e096ca88  __DATA_CONST,__const  __kCFStreamPropertyDNSIncludeAWDL
+0x1e096ca80  __DATA_CONST,__const  __kCFStreamPropertyDNSIncludeP2P
+0x1e096ca78  __DATA_CONST,__const  __kCFStreamPropertyEnableConnectionStatistics
+0x1e096ca58  __DATA_CONST,__const  __kCFStreamPropertyFTPLogInOnly
+0x1e096ca50  __DATA_CONST,__const  __kCFStreamPropertyFTPRemoveResource
+0x1e096c9e8  __DATA_CONST,__const  __kCFStreamPropertyIndefiniteConnectionKickInterval
+0x1e096c9d8  __DATA_CONST,__const  __kCFStreamPropertyLargeDownload
+0x1e096c9d0  __DATA_CONST,__const  __kCFStreamPropertyLocalAddressPreference
+0x1e096c9c8  __DATA_CONST,__const  __kCFStreamPropertyLowThroughputBlock
+0x1e096c9c0  __DATA_CONST,__const  __kCFStreamPropertyLowThroughputThreshold
+0x1e096c9b8  __DATA_CONST,__const  __kCFStreamPropertyNPNProtocolsAvailable
+0x1e096c9b0  __DATA_CONST,__const  __kCFStreamPropertyNPNSelectedProtocol
+0x1e096c9a8  __DATA_CONST,__const  __kCFStreamPropertyNoCompanion
+0x1e096c9a0  __DATA_CONST,__const  __kCFStreamPropertyPrefersNoProxy
+0x1e096c998  __DATA_CONST,__const  __kCFStreamPropertyPreventsAppSSO
+0x1e096c990  __DATA_CONST,__const  __kCFStreamPropertyProhibitInfraWiFi
+0x1e096c988  __DATA_CONST,__const  __kCFStreamPropertyQOSClass
+0x1e096c980  __DATA_CONST,__const  __kCFStreamPropertyRaceTCPQUICForDomains
+0x1e096c958  __DATA_CONST,__const  __kCFStreamPropertySSLClientCertificateState
+0x1e096c950  __DATA_CONST,__const  __kCFStreamPropertySSLClientCertificates
+0x1e096c948  __DATA_CONST,__const  __kCFStreamPropertySSLClientSideAuthentication
+0x1e096c940  __DATA_CONST,__const  __kCFStreamPropertySSLNegotiatedCipher
+0x1e096c938  __DATA_CONST,__const  __kCFStreamPropertySSLNegotiatedProtocol
+0x1e096c928  __DATA_CONST,__const  __kCFStreamPropertySocketImmediateBufferSize
+0x1e096c920  __DATA_CONST,__const  __kCFStreamPropertySocketImmediateBufferTimeOut
+0x1e096c918  __DATA_CONST,__const  __kCFStreamPropertySocketLowPriorityIO
+0x1e096c8f8  __DATA_CONST,__const  __kCFStreamPropertyTCPAdaptiveReadTimeout
+0x1e096c8f0  __DATA_CONST,__const  __kCFStreamPropertyTCPAdaptiveWriteTimeout
+0x1e096c8e0  __DATA_CONST,__const  __kCFStreamPropertyTCPConnectionMetadata
+0x1e096c8d8  __DATA_CONST,__const  __kCFStreamPropertyTCPInfo
+0x1e096c8d0  __DATA_CONST,__const  __kCFStreamPropertyTCPKeepAliveOffload
+0x1e096c8c8  __DATA_CONST,__const  __kCFStreamPropertyTCPKeepAliveParameters
+0x1e096c8c0  __DATA_CONST,__const  __kCFStreamPropertyWakeReadEvent
+0x1e096c8b8  __DATA_CONST,__const  __kCFStreamPropertyWatchdogTimeout
+0x1e096c8a0  __DATA_CONST,__const  __kCFStreamSSLDisableEphemeralDiffieHellmanCiphers
+0x1e096c890  __DATA_CONST,__const  __kCFStreamSSLShouldSetPeerID
+0x1e096c888  __DATA_CONST,__const  __kCFStreamSSLTrustedLeafCertificates
+0x1e096c880  __DATA_CONST,__const  __kCFStreamSSLUseFalseStart
+0x1e096c820  __DATA_CONST,__const  __kCFStreamSocketEnableECN
+0x1e096c808  __DATA_CONST,__const  __kCFStreamSocketSetNoDelay
+0x1e096c800  __DATA_CONST,__const  __kCFStreamSocketSetRecvAnyIf
+0x1e096c7e0  __DATA_CONST,__const  __kCFURLCachePartitionKey
+0x1e096c7d8  __DATA_CONST,__const  __kCFURLConnectionPropertyATSContext
+0x1e096c7d0  __DATA_CONST,__const  __kCFURLConnectionPropertyATSFrameworkOverrides
+0x1e096c7b8  __DATA_CONST,__const  __kCFURLConnectionPropertyRespectConnectionClose
+0x1e096c7b0  __DATA_CONST,__const  __kCFURLConnectionPropertyShouldReportTimingDataToAWD
+0x1e096c7a0  __DATA_CONST,__const  __kCFURLConnectionPropertyShouldSniff
+0x1e096c798  __DATA_CONST,__const  __kCFURLConnectionPropertyTimingDataOptions
+0x1e096c790  __DATA_CONST,__const  __kCFURLErrorAuthFailedResponseKey
+0x1e096c708  __DATA_CONST,__const  __kCFURLStorageSessionIsPrivate
+0x1e096c700  __DATA_CONST,__const  __kCFURLStorageSessionProcessSharing
+0x1e096c6f8  __DATA_CONST,__const  __kTCPKeepAliveParametersEnabled
+0x1e096c6f0  __DATA_CONST,__const  __kTCPKeepAliveParametersIdleTime
+0x1e096c6e8  __DATA_CONST,__const  __kTCPKeepAliveParametersInterval
+0x18ccaba84  __TEXT,__text  _cfnTranslateCFError
+0x18cdb332c  __TEXT,__text  _destinationURLFragment
+0x18cdf9004  __TEXT,__text  _estimatedPropertyListSize
+0x1e096c660  __DATA_CONST,__const  _kCFDNSServiceFailureKey
+0x1e096c658  __DATA_CONST,__const  _kCFErrorDomainCFNetwork
+0x1e096c650  __DATA_CONST,__const  _kCFErrorDomainWinSock
+0x1e096c648  __DATA_CONST,__const  _kCFFTPResourceGroup
+0x1e096c640  __DATA_CONST,__const  _kCFFTPResourceLink
+0x1e096c638  __DATA_CONST,__const  _kCFFTPResourceModDate
+0x1e096c630  __DATA_CONST,__const  _kCFFTPResourceMode
+0x1e096c628  __DATA_CONST,__const  _kCFFTPResourceName
+0x1e096c620  __DATA_CONST,__const  _kCFFTPResourceOwner
+0x1e096c618  __DATA_CONST,__const  _kCFFTPResourceSize
+0x1e096c610  __DATA_CONST,__const  _kCFFTPResourceType
+0x1e096c608  __DATA_CONST,__const  _kCFFTPStatusCodeKey
+0x1e096c600  __DATA_CONST,__const  _kCFGetAddrInfoFailureKey
+0x1e096c5f8  __DATA_CONST,__const  _kCFHTTPAuthenticationAccountDomain
+0x1e096c5d8  __DATA_CONST,__const  _kCFHTTPAuthenticationPassword
+0x1e096c580  __DATA_CONST,__const  _kCFHTTPAuthenticationSchemeBasic
+0x1e096c578  __DATA_CONST,__const  _kCFHTTPAuthenticationSchemeDigest
+0x1e096c570  __DATA_CONST,__const  _kCFHTTPAuthenticationSchemeKerberos
+0x1e096c568  __DATA_CONST,__const  _kCFHTTPAuthenticationSchemeNTLM
+0x1e096c560  __DATA_CONST,__const  _kCFHTTPAuthenticationSchemeNegotiate
+0x1e096c558  __DATA_CONST,__const  _kCFHTTPAuthenticationSchemeNegotiate2
+0x1e096c550  __DATA_CONST,__const  _kCFHTTPAuthenticationSchemeXMobileMeAuthToken
+0x1e096c548  __DATA_CONST,__const  _kCFHTTPAuthenticationUsername
+0x1e096c510  __DATA_CONST,__const  _kCFHTTPCookieDomain
+0x1e096c4f0  __DATA_CONST,__const  _kCFHTTPCookieLocalFileDomain
+0x1e096c4e0  __DATA_CONST,__const  _kCFHTTPCookieName
+0x1e096c4c8  __DATA_CONST,__const  _kCFHTTPCookiePath
+0x1e096c498  __DATA_CONST,__const  _kCFHTTPCookieValue
+0x1e096c228  __DATA_CONST,__const  _kCFHTTPRedirectionResponse
+0x1e096c220  __DATA_CONST,__const  _kCFHTTPVersion1_0
+0x1e096c218  __DATA_CONST,__const  _kCFHTTPVersion1_1
+0x1e096c210  __DATA_CONST,__const  _kCFHTTPVersion2_0
+0x1e096c208  __DATA_CONST,__const  _kCFHTTPVersion3_0
+0x1e096c200  __DATA_CONST,__const  _kCFHostAddressesString
+0x1e096c1f8  __DATA_CONST,__const  _kCFHostNamesString
+0x1e096c1f0  __DATA_CONST,__const  _kCFHostReachabilityString
+0x18cdf0e1c  __TEXT,__text  _kCFNIE
+0x1e096c130  __DATA_CONST,__const  _kCFNetDiagnosticPingOptionDataLength
+0x1e096c128  __DATA_CONST,__const  _kCFNetDiagnosticPingOptionPacketCount
+0x1e096c120  __DATA_CONST,__const  _kCFNetDiagnosticPingOptionTimeout
+0x1e096c118  __DATA_CONST,__const  _kCFNetDiagnosticPingOptionTrafficClass
+0x1e096c110  __DATA_CONST,__const  _kCFNetDiagnosticPingOptionTypeOfService
+0x1e096c108  __DATA_CONST,__const  _kCFNetworkProxiesHTTPEnable
+0x1e096c100  __DATA_CONST,__const  _kCFNetworkProxiesHTTPPort
+0x1e096c0f8  __DATA_CONST,__const  _kCFNetworkProxiesHTTPProxy
+0x1e096c0f0  __DATA_CONST,__const  _kCFNetworkProxiesProxyAutoConfigEnable
+0x1e096c0e8  __DATA_CONST,__const  _kCFNetworkProxiesProxyAutoConfigJavaScript
+0x1e096c0e0  __DATA_CONST,__const  _kCFNetworkProxiesProxyAutoConfigURLString
+0x1e096c0d8  __DATA_CONST,__const  _kCFProxyAutoConfigurationHTTPResponseKey
+0x1e096c0d0  __DATA_CONST,__const  _kCFProxyAutoConfigurationJavaScriptKey
+0x1e096c0c8  __DATA_CONST,__const  _kCFProxyAutoConfigurationURLKey
+0x1e096c0c0  __DATA_CONST,__const  _kCFProxyHostNameKey
+0x1e096c0b8  __DATA_CONST,__const  _kCFProxyPasswordKey
+0x1e096c0b0  __DATA_CONST,__const  _kCFProxyPortNumberKey
+0x1e096c0a8  __DATA_CONST,__const  _kCFProxyTypeAutoConfigurationJavaScript
+0x1e096c0a0  __DATA_CONST,__const  _kCFProxyTypeAutoConfigurationURL
+0x1e096c098  __DATA_CONST,__const  _kCFProxyTypeFTP
+0x1e096c090  __DATA_CONST,__const  _kCFProxyTypeHTTP
+0x1e096c088  __DATA_CONST,__const  _kCFProxyTypeHTTPS
+0x1e096c080  __DATA_CONST,__const  _kCFProxyTypeKey
+0x1e096c078  __DATA_CONST,__const  _kCFProxyTypeNone
+0x1e096c070  __DATA_CONST,__const  _kCFProxyTypeSOCKS
+0x1e096c068  __DATA_CONST,__const  _kCFProxyUsernameKey
+0x1e096c060  __DATA_CONST,__const  _kCFSOCKSNegotiationMethodKey
+0x1e096c058  __DATA_CONST,__const  _kCFSOCKSStatusCodeKey
+0x1e096c050  __DATA_CONST,__const  _kCFSOCKSVersionKey
+0x18ce1e4c0  __TEXT,__const  _kCFStreamErrorDomainFTP
+0x18ce1e4b8  __TEXT,__const  _kCFStreamErrorDomainHTTP
+0x18ce1e4d8  __TEXT,__const  _kCFStreamErrorDomainMach
+0x18ce1e4e0  __TEXT,__const  _kCFStreamErrorDomainNetDB
+0x18ce1e4d0  __TEXT,__const  _kCFStreamErrorDomainNetServices
+0x18ce1e4e8  __TEXT,__const  _kCFStreamErrorDomainSystemConfiguration
+0x18ce1e4c8  __TEXT,__const  _kCFStreamErrorDomainWinSock
+0x18ce1e144  __TEXT,__const  _kCFStreamErrorHTTPConnectionLost
+0x1e096c048  __DATA_CONST,__const  _kCFStreamNetworkServiceType
+0x1e096c040  __DATA_CONST,__const  _kCFStreamNetworkServiceTypeAVStreaming
+0x1e096c038  __DATA_CONST,__const  _kCFStreamNetworkServiceTypeBackground
+0x1e096c030  __DATA_CONST,__const  _kCFStreamNetworkServiceTypeBackgroundSystemInitiated
+0x1e096c028  __DATA_CONST,__const  _kCFStreamNetworkServiceTypeCallSignaling
+0x1e096c020  __DATA_CONST,__const  _kCFStreamNetworkServiceTypeNetworkControl
+0x1e096c018  __DATA_CONST,__const  _kCFStreamNetworkServiceTypeOAM
+0x1e096c010  __DATA_CONST,__const  _kCFStreamNetworkServiceTypeResponsiveAV
+0x1e096c008  __DATA_CONST,__const  _kCFStreamNetworkServiceTypeResponsiveData
+0x1e096c000  __DATA_CONST,__const  _kCFStreamNetworkServiceTypeVideo
+0x1e096bff8  __DATA_CONST,__const  _kCFStreamNetworkServiceTypeVoIP
+0x1e096bff0  __DATA_CONST,__const  _kCFStreamNetworkServiceTypeVoice
+0x1e096bfe8  __DATA_CONST,__const  _kCFStreamPropertyAccountIdentifier
+0x1e096bfe0  __DATA_CONST,__const  _kCFStreamPropertyAllowConstrainedNetworkAccess
+0x1e096bfd8  __DATA_CONST,__const  _kCFStreamPropertyAllowExpensiveNetworkAccess
+0x1e096bfc0  __DATA_CONST,__const  _kCFStreamPropertyBoundInterfaceIdentifier
+0x1e096bfb8  __DATA_CONST,__const  _kCFStreamPropertyCONNECTAdditionalHeaders
+0x1e096bfb0  __DATA_CONST,__const  _kCFStreamPropertyCONNECTProxy
+0x1e096bfa8  __DATA_CONST,__const  _kCFStreamPropertyCONNECTProxyHost
+0x1e096bfa0  __DATA_CONST,__const  _kCFStreamPropertyCONNECTProxyPort
+0x1e096bf98  __DATA_CONST,__const  _kCFStreamPropertyCONNECTResponse
+0x1e096bf88  __DATA_CONST,__const  _kCFStreamPropertyConditionalConnectionProperties
+0x1e096bf78  __DATA_CONST,__const  _kCFStreamPropertyConnectionFallbackEnabled
+0x1e096bf70  __DATA_CONST,__const  _kCFStreamPropertyConnectionFastFallbackEnabled
+0x1e096bf68  __DATA_CONST,__const  _kCFStreamPropertyConnectionIsCellular
+0x1e096bf60  __DATA_CONST,__const  _kCFStreamPropertyConnectionIsExpensive
+0x1e096bf58  __DATA_CONST,__const  _kCFStreamPropertyConnectionIsMultipath
+0x1e096bf50  __DATA_CONST,__const  _kCFStreamPropertyDUETConditional
+0x1e096bf48  __DATA_CONST,__const  _kCFStreamPropertyDataConnectionServiceType
+0x1e096bf40  __DATA_CONST,__const  _kCFStreamPropertyDataContextIdentifier
+0x1e096bf38  __DATA_CONST,__const  _kCFStreamPropertyDataContextOnDemand
+0x1e096bf28  __DATA_CONST,__const  _kCFStreamPropertyFTPAttemptPersistentConnection
+0x1e096bf20  __DATA_CONST,__const  _kCFStreamPropertyFTPFetchResourceInfo
+0x1e096bf18  __DATA_CONST,__const  _kCFStreamPropertyFTPFileTransferOffset
+0x1e096bf10  __DATA_CONST,__const  _kCFStreamPropertyFTPPassword
+0x1e096bf08  __DATA_CONST,__const  _kCFStreamPropertyFTPProxy
+0x1e096bf00  __DATA_CONST,__const  _kCFStreamPropertyFTPProxyHost
+0x1e096bef8  __DATA_CONST,__const  _kCFStreamPropertyFTPProxyPassword
+0x1e096bef0  __DATA_CONST,__const  _kCFStreamPropertyFTPProxyPort
+0x1e096bee8  __DATA_CONST,__const  _kCFStreamPropertyFTPProxyUser
+0x1e096bee0  __DATA_CONST,__const  _kCFStreamPropertyFTPResourceSize
+0x1e096bed8  __DATA_CONST,__const  _kCFStreamPropertyFTPUsePassiveMode
+0x1e096bed0  __DATA_CONST,__const  _kCFStreamPropertyFTPUserName
+0x1e096bec8  __DATA_CONST,__const  _kCFStreamPropertyHTTPAttemptPersistentConnection
+0x1e096bec0  __DATA_CONST,__const  _kCFStreamPropertyHTTPFinalRequest
+0x1e096beb8  __DATA_CONST,__const  _kCFStreamPropertyHTTPFinalURL
+0x1e096beb0  __DATA_CONST,__const  _kCFStreamPropertyHTTPProxy
+0x1e096bea8  __DATA_CONST,__const  _kCFStreamPropertyHTTPProxyHost
+0x1e096bea0  __DATA_CONST,__const  _kCFStreamPropertyHTTPProxyPort
+0x1e096be98  __DATA_CONST,__const  _kCFStreamPropertyHTTPRequestBytesWrittenCount
+0x1e096be90  __DATA_CONST,__const  _kCFStreamPropertyHTTPResponseHeader
+0x1e096be88  __DATA_CONST,__const  _kCFStreamPropertyHTTPSProxyHost
+0x1e096be80  __DATA_CONST,__const  _kCFStreamPropertyHTTPSProxyPort
+0x1e096be78  __DATA_CONST,__const  _kCFStreamPropertyHTTPShouldAutoredirect
+0x1e096be70  __DATA_CONST,__const  _kCFStreamPropertyHTTPUseSystemProxySettings
+0x1e096be68  __DATA_CONST,__const  _kCFStreamPropertyIndefiniteConnection
+0x1e096be60  __DATA_CONST,__const  _kCFStreamPropertyInterfaceIdentifier
+0x1e096be58  __DATA_CONST,__const  _kCFStreamPropertyMPTCPConnectedSubflowCount
+0x1e096be50  __DATA_CONST,__const  _kCFStreamPropertyMPTCPPrimarySubflowInterfaceName
+0x1e096be48  __DATA_CONST,__const  _kCFStreamPropertyMPTCPSubflowCount
+0x1e096be40  __DATA_CONST,__const  _kCFStreamPropertyMPTCPSubflowSwitchCounts
+0x1e096be38  __DATA_CONST,__const  _kCFStreamPropertyNoCellular
+0x1e096be30  __DATA_CONST,__const  _kCFStreamPropertyOpportunisticConnection
+0x1e096be28  __DATA_CONST,__const  _kCFStreamPropertyPersistentConnection
+0x1e096be08  __DATA_CONST,__const  _kCFStreamPropertyProxyLocalBypass
+0x1e096bdf8  __DATA_CONST,__const  _kCFStreamPropertySSLContext
+0x1e096bdf0  __DATA_CONST,__const  _kCFStreamPropertySSLPeerCertificates
+0x1e096bde8  __DATA_CONST,__const  _kCFStreamPropertySSLPeerTrust
+0x1e096bde0  __DATA_CONST,__const  _kCFStreamPropertySSLSettings
+0x1e096bdd0  __DATA_CONST,__const  _kCFStreamPropertySocketExtendedBackgroundIdleMode
+0x1e096bdc0  __DATA_CONST,__const  _kCFStreamPropertySocketRemoteHost
+0x1e096bdb8  __DATA_CONST,__const  _kCFStreamPropertySocketRemoteNetService
+0x1e096bd98  __DATA_CONST,__const  _kCFStreamPropertySourceApplication
+0x1e096bd90  __DATA_CONST,__const  _kCFStreamPropertySourceApplicationBundleIdentifier
+0x1e096bd88  __DATA_CONST,__const  _kCFStreamSSLAllowsAnyRoot
+0x1e096bd80  __DATA_CONST,__const  _kCFStreamSSLAllowsExpiredCertificates
+0x1e096bd78  __DATA_CONST,__const  _kCFStreamSSLAllowsExpiredRoots
+0x1e096bd70  __DATA_CONST,__const  _kCFStreamSSLCertificates
+0x1e096bd68  __DATA_CONST,__const  _kCFStreamSSLEnabledCiphers
+0x1e096bd60  __DATA_CONST,__const  _kCFStreamSSLIsServer
+0x1e096bd58  __DATA_CONST,__const  _kCFStreamSSLLevel
+0x1e096bd50  __DATA_CONST,__const  _kCFStreamSSLPSKIdentity
+0x1e096bd48  __DATA_CONST,__const  _kCFStreamSSLPSKSharedSecret
+0x1e096bd40  __DATA_CONST,__const  _kCFStreamSSLPeerName
+0x1e096bd30  __DATA_CONST,__const  _kCFStreamSSLValidatesCertificateChain
+0x1e096bd00  __DATA_CONST,__const  _kCFStreamSocketSecurityLevelTLSv1SSLv3
+0x1e096bcf8  __DATA_CONST,__const  _kCFStreamSocketSecurityLevelTLSv1_0
+0x1e096bcf0  __DATA_CONST,__const  _kCFStreamSocketSecurityLevelTLSv1_0SSLv3
+0x1e096bce8  __DATA_CONST,__const  _kCFStreamSocketSecurityLevelTLSv1_1
+0x1e096bce0  __DATA_CONST,__const  _kCFStreamSocketSecurityLevelTLSv1_2
+0x1e096bcd8  __DATA_CONST,__const  _kCFURLConnectionProhibitAuthChallengeUI
+0x1e096bcd0  __DATA_CONST,__const  _kCFURLConnectionPropertyStrictContentLength
+0x1e096bcc8  __DATA_CONST,__const  _kCFURLConnectionSocketStreamProperties
+0x1e096bcc0  __DATA_CONST,__const  _kCFURLConnectionSuspensionThreshold
+0x1e096bcb8  __DATA_CONST,__const  _kCFURLConnectionURLConnectionProperties
+0x1e096bcb0  __DATA_CONST,__const  _kCFURLCredentialKerberosTicketAllowDelegation
+0x1e096bca8  __DATA_CONST,__const  _kCFURLErrorFailingURLErrorKey
+0x1e096bca0  __DATA_CONST,__const  _kCFURLErrorFailingURLStringErrorKey
+0x1e096bc98  __DATA_CONST,__const  _kCFURLErrorPeerAddressKey
+0x1e096bc90  __DATA_CONST,__const  _kCFURLRequestAllowAllPOSTCaching
+0x1e096bc88  __DATA_CONST,__const  _kCFURLRequestContentDecoderSkipURLCheck
+0x1e096bc80  __DATA_CONST,__const  _kCFURLRequestDoNotDecodeData
+0x1e096bc78  __DATA_CONST,__const  _kCFURLRequestPreAuthXMMeAuthToken
+0x18ce1e4b0  __TEXT,__const  _kCFURLResponseExpectedContentLengthUnknown
+0x1e096bc20  __DATA_CONST,__const  _kConditionalConnectionActivityName
+0x1e096bc18  __DATA_CONST,__const  _kConditionalConnectionClientOptInDiscretionary
+0x1e096bc10  __DATA_CONST,__const  _kConditionalConnectionInTransitionalDiscretionaryPeriod
+0x1e096bc08  __DATA_CONST,__const  _kConditionalConnectionIsDiscretionary
+0x1e096bc00  __DATA_CONST,__const  _kConditionalConnectionIsUpload
+0x1e096bbf8  __DATA_CONST,__const  _kConditionalConnectionOnBehalfOfPairedDevice
+0x1e096bbf0  __DATA_CONST,__const  _kConditionalConnectionRequirementDiscretionaryElevated
+0x1e096bbe8  __DATA_CONST,__const  _kConditionalConnectionRequirementDownloadBytes
+0x1e096bbe0  __DATA_CONST,__const  _kConditionalConnectionRequirementDuetPreClearedMode
+0x1e096bbd8  __DATA_CONST,__const  _kConditionalConnectionRequirementPowerPluggedIn
+0x1e096bbd0  __DATA_CONST,__const  _kConditionalConnectionRequirementTimeWindowDelay
+0x1e096bbc8  __DATA_CONST,__const  _kConditionalConnectionRequirementTimeWindowDuration
+0x1e096bbc0  __DATA_CONST,__const  _kConditionalConnectionRequirementUploadBytes
+0x1e096bbb8  __DATA_CONST,__const  _kConditionalConnectionRequirementWorkload
+0x1eb5d0428  __DATA,__data  _kNSURLSessionLaunchOnDemandClientIdentifierKey
+0x1eb5d0420  __DATA,__data  _kNSURLSessionLaunchOnDemandNotificationName
+0x1eb5d0418  __DATA,__data  _kNSURLSessionLaunchOnDemandSessionIdentifierKey
+```
+
+## Private
+
+```
+0x18cbc46e0  __TEXT,__text  HTTPConnectionCache::timeoutIdleConnections()
+0x18cbc472c  __TEXT,__text  invocation function for block in HTTPConnectionCache::enableTimer()
+0x18cbc4734  __TEXT,__text  HTTPConnectionCache::purgeExcessiveConnections()
+0x18cbc49dc  __TEXT,__text  HTTPConnectionCache::disableTimer()
+0x18cbc49dc  __TEXT,__text  HTTPConnectionCache::disableTimer()
+0x18cbc4a14  __TEXT,__text  HTTPConnectionCache::performIdleSweep()
+0x18cbc4d7c  __TEXT,__text  HTTPConnectionCache::enableTimer()
+0x18cbc4ef8  __TEXT,__text  invocation function for block in HTTPConnectionCache::enableTimer()
+0x18cbc4f58  __TEXT,__text  HTTPConnectionCacheEntry::purgeIdleConnections(double, double)
+0x18cbc52e0  __TEXT,__text  HTTPConnectionCache::enableCellTimer()
+0x18cbc545c  __TEXT,__text  invocation function for block in HTTPConnectionCache::enableCellTimer()
+0x18cbc54c4  __TEXT,__text  HTTPConnectionCache::disableCellTimer()
+0x18cbc54c4  __TEXT,__text  HTTPConnectionCache::disableCellTimer()
+0x18cbc54fc  __TEXT,__text  invocation function for block in HTTPConnectionCache::enableCellTimer()
+0x18cbc555c  __TEXT,__text  -[NSURLCache initWithMemoryCapacity:diskCapacity:diskPath:]
+0x18cbc5620  __TEXT,__text  __CFURLCacheCreateInternal(__CFAllocator const*, long, long, __CFString const*, bool, bool, bool)
+0x18cbc5824  __TEXT,__text  __CFURLCache::__CFURLCache(_CFURLCache const*, long, long, __CFString const*, bool)
+0x18cbc5dc8  __TEXT,__text  -[NSURLCache setMemoryCapacity:]
+0x18cbc5de0  __TEXT,__text  CFURLCacheGetTypeID()
+0x18cbc5e7c  __TEXT,__text  -[NSURLCache setDiskCapacity:]
+0x18cbc5e94  __TEXT,__text  _URLCacheRegisterClass()
+0x18cbc5ebc  __TEXT,__text  invocation function for block in __CFURLCache::__CFURLCache(_CFURLCache const*, long, long, __CFString const*, bool)
+0x18cbc6058  __TEXT,__text  CFContainerEnumeratorBase::setup(void const*, long (*)(void const*), void (*)(void const*, long, void const**))
+0x18cbc6138  __TEXT,__text  CFContainerEnumeratorBase::~CFContainerEnumeratorBase()
+0x18cbc617c  __TEXT,__text  CFContainerEnumeratorBase::_claimDictKeyData(void const*, long, void const**)
+0x18cbc61e8  __TEXT,__text  CFContainerEnumeratorBase::_claimDictObjData(void const*, long, void const**)
+0x18cbc61f0  __TEXT,__text  QCoreSchedulingSet::createDispatchTimer() const
+0x18cbc6208  __TEXT,__text  XTubeManager::withTubeManager(CoreSchedulingSet const*, void  block_pointer(GlueTubeManager*))
+0x18cbc64c0  __TEXT,__text  CFAllocatedReferenceCountedObject::_retainable_hash(void const*)
+0x18cbc64dc  __TEXT,__text  NWIOConnection::setProperty(__CFString const*, void const*)
+0x18cbc7490  __TEXT,__text  CoreSchedulingSet::hash() const
+0x18cbc750c  __TEXT,__text  invocation function for block in URLConnectionLoader::withExistingProtocolAsync(void  block_pointer(URLProtocol*)) const
+0x18cbc756c  __TEXT,__text  URLConnectionLoader::withExistingProtocolAsync(void  block_pointer(URLProtocol*)) const
+0x18cbc7698  __TEXT,__text  -[__NSCFURLLocalSessionConnection withLoaderOnQueue:]
+0x18cbc7720  __TEXT,__text  invocation function for block in QCoreSchedulingSet::performAsync(void  block_pointer()) const
+0x18cbc7788  __TEXT,__text  CFAllocatedReferenceCountedObject::release() const
+0x18cbc77c0  __TEXT,__text  CFAllocatedReferenceCountedObject::retain() const
+0x18cbc77d0  __TEXT,__text  +[NSURLProtocol registerClass:]
+0x18cbc78a4  __TEXT,__text  -[NSURLCache initWithMemoryCapacity:diskCapacity:directoryURL:]
+0x18cbc79fc  __TEXT,__text  HTTPEngine::copyProperty(__CFString const*)
+0x18cbc7ae4  __TEXT,__text  _CoreLockable::_CoreLockable(unsigned char)
+0x18cbc7b94  __TEXT,__text  _CFURLCredentialStorageCreateWithProperties(__CFAllocator const*, __CFString const*, __CFDictionary const*)
+0x18cbc7d6c  __TEXT,__text  ActualCredentialStorage::initialize(__CFString const*, unsigned char)
+0x18cbc8014  __TEXT,__text  -[NSURLCredentialStorage _initWithCFURLCredentialStorage:]
+0x18cbc807c  __TEXT,__text  +[NSURLSessionConfiguration ephemeralSessionConfiguration]
+0x18cbc818c  __TEXT,__text  -[__NSCFMemoryHTTPCookieStorage init]
+0x18cbc81fc  __TEXT,__text  -[__NSCFMemoryURLCredentialStorage init]
+0x18cbc82d4  __TEXT,__text  _CookieStorageCreateInMemory(__CFAllocator const*, OpaqueCFHTTPCookieStorage*)
+0x18cbc83fc  __TEXT,__text  MemoryCookieStorage::MemoryCookieStorage(unsigned char)
+0x18cbc84a8  __TEXT,__text  -[NSHTTPCookieStorage _initWithCFHTTPCookieStorage:]
+0x18cbc8600  __TEXT,__text  MemoryCookies::MemoryCookies(__CFAllocator const*)
+0x18cbc86ac  __TEXT,__text  HTTPCookieStorage::initialize(PrivateHTTPCookieStorage*, int)
+0x18cbc87a8  __TEXT,__text  PrivateHTTPCookieStorage::PrivateHTTPCookieStorage(unsigned char)
+0x18cbc88c4  __TEXT,__text  PrivateHTTPCookieStorage::attachedClientLocked()
+0x18cbc88c8  __TEXT,__text  ___33-[NSURLSessionTask set_priority:]_block_invoke
+0x18cbc88d0  __TEXT,__text  -[NSURLSessionTask computeAdjustedPoolPriority]
+0x18cbc8920  __TEXT,__text  -[__NSCFURLSessionTaskInfo identifier]
+0x18cbc8928  __TEXT,__text  -[NSURLSessionTask _priorityValue]
+0x18cbc8930  __TEXT,__text  -[NSURLSessionTask set_priority:]
+0x18cbc89c0  __TEXT,__text  -[NSURLSessionTask set_priorityValue:]
+0x18cbc89c8  __TEXT,__text  URLConnectionLoader::_loaderInterface_setConnectionPoolPriority(__CFNumber const*)
+0x18cbc8a54  __TEXT,__text  non-virtual thunk to URLConnectionLoader::_loaderInterface_setConnectionPoolPriority(__CFNumber const*)
+0x18cbc8a5c  __TEXT,__text  ___51-[__NSCFURLLocalSessionConnection setPoolPriority:]_block_invoke
+0x18cbc8ad8  __TEXT,__text  invocation function for block in URLConnectionLoader::_loaderInterface_setConnectionPoolPriority(__CFNumber const*)
+0x18cbc8b3c  __TEXT,__text  HTTPProtocol::setConnectionPoolPriority(__CFNumber const*)
+0x18cbc8cdc  __TEXT,__text  invocation function for block in TubeManager::getPendingTubeForProtocolWithKey(MetaConnectionCacheClient*, HTTPConnectionCacheKey const*)
+0x18cbc8d58  __TEXT,__text  invocation function for block in XTubeManager::getPendingTubeForProtocol(MetaConnectionCacheClient*, HTTPConnectionCacheKey const*, CoreSchedulingSet const*)
+0x18cbc8ea4  __TEXT,__text  RetainableTypedArray<BaseAwaitingTube*>::_invoke(void const*, void*)
+0x18cbc8ebc  __TEXT,__text  invocation function for block in Tube::setConnectionProperty(__CFString const*, void const*)
+0x18cbc8f38  __TEXT,__text  Tube::setConnectionProperty(__CFString const*, void const*)
+0x18cbc9028  __TEXT,__text  CompactHTTPCookieWithData::CompactHTTPCookieWithData(__CFDictionary const*)::PropDecanter::valueToCFIndex(void const*, long*)
+0x18cbc90b4  __TEXT,__text  -[NSHTTPCookie isSessionOnly]
+0x18cbc915c  __TEXT,__text  CompactHTTPCookieWithData::CompactHTTPCookieWithData(__CFDictionary const*)::PropDecanter::getCreateTime()
+0x18cbc9258  __TEXT,__text  -[NSHTTPCookie name]
+0x18cbc9274  __TEXT,__text  CompactCookieHeader::getEnumeratedString(CookieData::FieldNames, unsigned char*) const
+0x18cbc9560  __TEXT,__text  ___51-[__NSCFURLLocalSessionConnection withLoaderAsync:]_block_invoke
+0x18cbc956c  __TEXT,__text  HTTPConnectionCacheEntry::EnqueuedRequest::getClient()
+0x18cbc9574  __TEXT,__text  HTTPConnectionCacheEntry::EnqueuedRequest::getTube()
+0x18cbc957c  __TEXT,__text  -[NSMutableURLRequest setURL:]
+0x18cbc9720  __TEXT,__text  HTTPRequestMessage::HTTPRequestMessage(HTTPRequestMessage const*, __CFURL const*)
+0x18cbc98c4  __TEXT,__text  -[NSHTTPCookieInternal init]
+0x18cbc98fc  __TEXT,__text  Decanter::decant(__CFAllocator const*)
+0x18cbca2e8  __TEXT,__text  -[NSHTTPCookieInternal_Data _initWithProperties:fromString:]
+0x18cbca548  __TEXT,__text  -[NSHTTPCookie initWithProperties:]
+0x18cbca5a4  __TEXT,__text  CompactHTTPCookieWithData::CompactHTTPCookieWithData(__CFDictionary const*)::PropDecanter::ensureValidName(PropDecanter*, void const*)
+0x18cbca604  __TEXT,__text  CompactHTTPCookieWithData::CompactHTTPCookieWithData(__CFDictionary const*)::PropDecanter::getEnumeratedString(unsigned int)
+0x18cbca810  __TEXT,__text  __CFStringGetOrCreateCString
+0x18cbca918  __TEXT,__text  CompactHTTPCookieWithData::CompactHTTPCookieWithData(__CFDictionary const*)::PropDecanter::ensureDomain(PropDecanter*, void const*)
+0x18cbca9dc  __TEXT,__text  CompactHTTPCookieWithData::CompactHTTPCookieWithData(__CFDictionary const*)::PropDecanter::getPortCount()
+0x18cbcaa8c  __TEXT,__text  CompactHTTPCookieWithData::CompactHTTPCookieWithData(__CFDictionary const*)::PropDecanter::getFlags()
+0x18cbcac28  __TEXT,__text  CompactHTTPCookieWithData::CompactHTTPCookieWithData(__CFDictionary const*)::PropDecanter::ensureValidValue(PropDecanter*, void const*)
+0x18cbcac78  __TEXT,__text  CompactHTTPCookieWithData::CompactHTTPCookieWithData(__CFDictionary const*)::PropDecanter::stringIsHTTPHeaderClean(__CFString const*)
+0x18cbcacf8  __TEXT,__text  AutoArray::getEmptyArray()
+0x18cbcad5c  __TEXT,__text  CompactHTTPCookieWithData::CompactHTTPCookieWithData(__CFDictionary const*)::PropDecanter::getEnumeratedTime(unsigned int)
+0x18cbcad94  __TEXT,__text  CompactHTTPCookieWithData::CompactHTTPCookieWithData(__CFDictionary const*)::PropDecanter::getVersion()
+0x18cbcade4  __TEXT,__text  CompactHTTPCookieWithData::CompactHTTPCookieWithData(__CFDictionary const*)::PropDecanter::getExpireTime()
+0x18cbcb2f0  __TEXT,__text  -[NSHTTPCookie domain]
+0x18cbcb30c  __TEXT,__text  -[NSHTTPCookie expiresDate]
+0x18cbcb3c8  __TEXT,__text  -[NSHTTPCookie ensureCookieValid]
+0x18cbcb430  __TEXT,__text  -[NSHTTPCookie _initWithInternal:]
+0x18cbcb49c  __TEXT,__text  CompactCookieHeader::setEnumeratedStringValue(CookieData::FieldNames, unsigned int, unsigned char const*, long)
+0x18cbcba8c  __TEXT,__text  CompactHTTPCookieWithData::CompactHTTPCookieWithData(__CFDictionary const*)::PropDecanter::~PropDecanter()
+0x18cbcbb04  __TEXT,__text  CompactHTTPCookieWithData::cookieHeader() const
+0x18cbcbb0c  __TEXT,__text  createCookieString(void const*, unsigned char const*)
+0x18cbcbb4c  __TEXT,__text  -[NSHTTPCookie _inner]
+0x18cbcbb54  __TEXT,__text  SessionConnectionLoadable::_irl_retain()
+0x18cbcbb80  __TEXT,__text  -[NSURLSessionTask session]
+0x18cbcbb9c  __TEXT,__text  non-virtual thunk to URLConnectionLoader::_loaderInterface_release()
+0x18cbcbbbc  __TEXT,__text  -[__NSCFURLLocalSessionConnection _tick]
+0x18cbcbed8  __TEXT,__text  -[NSURLSessionTask _taskGroup]
+0x18cbcbee4  __TEXT,__text  HTTPMessage::~HTTPMessage()
+0x18cbcc094  __TEXT,__text  __findExactString
+0x18cbcc1d0  __TEXT,__text  HTTPMessage::HTTPMessage(HTTPMessage const*)
+0x18cbcc300  __TEXT,__text  CFClass::FinalizeObj(void const*)
+0x18cbcc324  __TEXT,__text  DiagnosticLogging::newMsg(LogFormatter::LineInfo  block_pointer(), DiagnosticLogging::Level)
+0x18cbcc508  __TEXT,__text  HTTPRequestMessage::HTTPRequestMessage(HTTPRequestMessage const*)
+0x18cbcc6a4  __TEXT,__text  SessionConnectionLoadable::_irl_release()
+0x18cbcc6ac  __TEXT,__text  non-virtual thunk to URLConnectionLoader::_loaderInterface_retain()
+0x18cbcc6f0  __TEXT,__text  QCoreSchedulingSet::performAsync(void  block_pointer()) const
+0x18cbcc78c  __TEXT,__text  non-virtual thunk to URLConnectionLoader_Classic::protocolRetainClient()
+0x18cbcc7ac  __TEXT,__text  HTTPMessage::commonInitialization(unsigned char, HTTPMessage const*)
+0x18cbccac0  __TEXT,__text  HTTPMessage::headers() const
+0x18cbccb34  __TEXT,__text  HTTPHeaderDict::setValue(HTTPHeaderKeyMixedValue const&, HTTPHeaderValueMixedValue const&)
+0x18cbccbfc  __TEXT,__text  _key_hash(void const*)
+0x18cbcccb8  __TEXT,__text  _key_retain(__CFAllocator const*, void const*)
+0x18cbccccc  __TEXT,__text  HTTPHeaderValueMixedValue::HTTPHeaderValueMixedValue(__CFString const*)
+0x18cbccd64  __TEXT,__text  HTTPHeaderKeyMixedValue::HTTPHeaderKeyMixedValue(__CFString const*)
+0x18cbcce7c  __TEXT,__text  __findCanonicalString
+0x18cbcd188  __TEXT,__text  HTTPMessage::mutableHeaders()
+0x18cbcd280  __TEXT,__text  HTTPMessage::ensureParserFinished()
+0x18cbcd388  __TEXT,__text  HTTPRequestParserClient::HTTPRequestParserClient(__CFAllocator const*, HTTPMethodMixedValue const&, char const*, __CFURL const*)
+0x18cbcd4b4  __TEXT,__text  findSaneCStringInIndices(SaneCString, PerDomainWidth const*)
+0x18cbcd578  __TEXT,__text  HTTPRequest::HTTPRequest(HTTPMethodMixedValue const&, __CFURL const*)
+0x18cbcd71c  __TEXT,__text  HTTPRequestMessage::HTTPRequestMessage(HTTPMethodMixedValue const&, __CFURL const*, HTTPVersionMixedValue const&)
+0x18cbcd83c  __TEXT,__text  HTTPMessage::HTTPMessage(char const*, HTTPVersionMixedValue const&)
+0x18cbcd990  __TEXT,__text  HTTPParser::~HTTPParser()
+0x18cbcd9c0  __TEXT,__text  URLRequest::createHTTPRequest(HTTPMethodMixedValue const&)
+0x18cbcdacc  __TEXT,__text  HTTPParser::commitAccumulatedLine()
+0x18cbcde38  __TEXT,__text  HTTPParser::~HTTPParser()
+0x18cbcdec4  __TEXT,__text  -[NSURLRequestInternal _inner]
+0x18cbcdecc  __TEXT,__text  -[NSURLRequest(NSHTTPURLRequest) valueForHTTPHeaderField:]
+0x18cbcdf9c  __TEXT,__text  HTTPBodyData::~HTTPBodyData()
+0x18cbcdfe8  __TEXT,__text  HTTPBodyData::becomeEmpty()
+0x18cbce038  __TEXT,__text  HTTPBodyData::logit(char const*) const
+0x18cbce0ac  __TEXT,__text  HTTPMessage::setMultipleHeaderFields(__CFDictionary const*)
+0x18cbce5cc  __TEXT,__text  -[NSURLSession _groupSession]
+0x18cbce5d0  __TEXT,__text  HTTPMessage::setBody(__CFData const*)
+0x18cbce730  __TEXT,__text  HTTPRequest::setBody(__CFData const*)
+0x18cbce780  __TEXT,__text  HTTPHeaderDict::copyStringValue(__CFAllocator const*, HTTPHeaderKeyMixedValue const&) const
+0x18cbce814  __TEXT,__text  HTTPHeaderValue::isValid(__CFString const*)
+0x18cbce8e0  __TEXT,__text  HTTPMessage::copyAllHeaderFields()
+0x18cbce924  __TEXT,__text  _key_equal(void const*, void const*)
+0x18cbce9c4  __TEXT,__text  HTTPMessage::copyBody()
+0x18cbcea40  __TEXT,__text  HTTPMessage::copyHeaderFieldValue(__CFString const*)
+0x18cbceb14  __TEXT,__text  _key_release(__CFAllocator const*, void const*)
+0x18cbceb24  __TEXT,__text  HTTPHeaderDict::copyAsOrdinaryDict(__CFAllocator const*) const
+0x18cbceb90  __TEXT,__text  HTTPHeaderDict::~HTTPHeaderDict()
+0x18cbcebdc  __TEXT,__text  _merge_array_string(void const*, void const*, void*)
+0x18cbcec78  __TEXT,__text  HARLoggingEnabled(int)
+0x18cbcece8  __TEXT,__text  -[NSMutableURLRequest copyWithZone:]
+0x18cbcecec  __TEXT,__text  -[NSURLRequestInternal copyWithZone:]
+0x18cbced40  __TEXT,__text  HTTPRequest::commonInitialization(HTTPRequest const*)
+0x18cbcee14  __TEXT,__text  HTTPRequestMessage::~HTTPRequestMessage()
+0x18cbceecc  __TEXT,__text  HTTPRequest::~HTTPRequest()
+0x18cbcefb4  __TEXT,__text  HTTPRequest::~HTTPRequest()
+0x18cbcefb8  __TEXT,__text  -[NSURLRequestInternal .cxx_destruct]
+0x18cbcefc0  __TEXT,__text  -[NSURLRequest dealloc]
+0x18cbcf00c  __TEXT,__text  -[NSURLRequestInternal dealloc]
+0x18cbcf044  __TEXT,__text  URLRequest::~URLRequest()
+0x18cbcf17c  __TEXT,__text  HTTPRequestParserClient::~HTTPRequestParserClient()
+0x18cbcf2b8  __TEXT,__text  -[__NSCFURLSessionConnection withWorkQueueAsync:]
+0x18cbcf344  __TEXT,__text  -[__CFN_TransactionMetrics end:taskMetrics:]
+0x18cbd0188  __TEXT,__text  HTTPProtocol::_createCanonicalRequest(__CFAllocator const*, _CFURLRequest const*, NSURLSessionTask*, void const*)
+0x18cbd06a4  __TEXT,__text  HTTPHeaderDict::containsKey(HTTPHeaderKeyMixedValue const&) const
+0x18cbd0774  __TEXT,__text  -[NSURLSessionTaskTransactionMetrics initWithMetrics:forCache:]
+0x18cbd0804  __TEXT,__text  HTTPMessage::hasHeaderField(unsigned int) const
+0x18cbd08bc  __TEXT,__text  HTTPHeaderKeyMixedValue::HTTPHeaderKeyMixedValue(unsigned int)
+0x18cbd0954  __TEXT,__text  __createCanonicalURL
+0x18cbd10e8  __TEXT,__text  -[NSURLSessionTask _withXURLCache:]
+0x18cbd11ac  __TEXT,__text  -[__NSCFLocalSessionTask setConnection:]
+0x18cbd12b0  __TEXT,__text  HTTPHeaderKeyMixedValue::HTTPHeaderKeyMixedValue(CFNetworkConstantString::HTTPHeader::DomainString)
+0x18cbd1348  __TEXT,__text  HTTPMessage::copyHeaderFieldValue(unsigned int)
+0x18cbd141c  __TEXT,__text  HTTPMessage::setHeaderFieldStringValue(CFNetworkConstantString::HTTPHeader::DomainString, __CFString const*)
+0x18cbd1560  __TEXT,__text  addHeaderIfMissing(_CFURLRequest*, CFNetworkConstantString::HTTPHeader::DomainString, __CFString const*  block_pointer(), NSSet*)
+0x18cbd17a4  __TEXT,__text  -[NSURLSessionTask _loggableDescription]
+0x18cbd1918  __TEXT,__text  -[NSURLSessionTask set_protocolForTask:]
+0x18cbd1920  __TEXT,__text  -[__NSCFLocalDataTask isKindOfClass:]
+0x18cbd1988  __TEXT,__text  -[NSURLSessionTask currentRequest]
+0x18cbd1994  __TEXT,__text  -[__NSURLSessionLocal _onqueue_canonicalizeTaskAndCreateConnection:]
+0x18cbd1abc  __TEXT,__text  +[_NSCFURLProtocol canInitWithTask:]
+0x18cbd1b14  __TEXT,__text  _urlIsHTTPish(__CFURL const*)
+0x18cbd1b90  __TEXT,__text  AppSSO::shouldManageURL(__CFString const*, __CFURL const*, long, __CFData const*)
+0x18cbd1d3c  __TEXT,__text  AppSSOProtocol::_canHandleTask(NSURLSessionTask const*, void const*)
+0x18cbd1f88  __TEXT,__text  -[NSURLSessionTask _effectiveConfiguration]
+0x18cbd1f90  __TEXT,__text  -[NSURLSessionTask set_networkServiceType:]
+0x18cbd1fc0  __TEXT,__text  hasConfigValue(void const**, unsigned long, NSURLSessionConfiguration*, __CFString const*)
+0x18cbd2028  __TEXT,__text  -[NSURLSessionTask _addAdditionalHeaders:toRequest:]
+0x18cbd20e4  __TEXT,__text  -[NSURLSessionConfiguration _copyAttribute:]
+0x18cbd2374  __TEXT,__text  -[NSURLSessionTask set_allowsCellularOverride:]
+0x18cbd23a4  __TEXT,__text  hasConfigValue(long*, NSURLSessionConfiguration*, __CFString const*)
+0x18cbd242c  __TEXT,__text  -[NSURLSessionTask updateCurrentRequest:]
+0x18cbd2c94  __TEXT,__text  hasConfigValue(bool*, NSURLSessionConfiguration*, __CFString const*)
+0x18cbd2d7c  __TEXT,__text  -[NSURLSessionTask startTime]
+0x18cbd2d84  __TEXT,__text  -[NSURLSessionTask set_allowsCellular:]
+0x18cbd2d8c  __TEXT,__text  -[NSURLSessionTask state]
+0x18cbd2d94  __TEXT,__text  -[NSURLSessionTask workQueue]
+0x18cbd2db4  __TEXT,__text  -[NSURLSessionTask _qos]
+0x18cbd2dbc  __TEXT,__text  -[NSURLSessionTask _voucher]
+0x18cbd2dc8  __TEXT,__text  +[NSHTTPCookieStorage sharedHTTPCookieStorage]
+0x18cbd2e38  __TEXT,__text  ___46+[NSHTTPCookieStorage sharedHTTPCookieStorage]_block_invoke
+0x18cbd2fd4  __TEXT,__text  CFHTTPCookieStorageCopySharedHTTPCookieStorage()
+0x18cbd3128  __TEXT,__text  invocation function for block in _CFHTTPCookieStorageCreateDefault(__CFAllocator const*)
+0x18cbd342c  __TEXT,__text  cfTypeCreateMutableDictionary(__CFAllocator const*, ...)
+0x18cbd34ec  __TEXT,__text  _CFHTTPCookieStorageCreateWithProperties_possiblyFromCache(__CFAllocator const*, __CFDictionary const*, unsigned char)
+0x18cbd39b8  __TEXT,__text  AutoScalar::AutoScalar(__CFAllocator const*, int)
+0x18cbd3a70  __TEXT,__text  AutoDict::copyDictAndSetEmpty()
+0x18cbd3b38  __TEXT,__text  cacheOrCreate(__CFDictionary const*, PrivateHTTPCookieStorage* (*)(__CFDictionary const*), unsigned char)
+0x18cbd3e1c  __TEXT,__text  _createByIdentifier(__CFDictionary const*)
+0x18cbd4028  __TEXT,__text  copyParameterizedCookieStorageLocation(__CFString const*, __CFURL const*, __CFString const*, __CFString const*)
+0x18cbd41a8  __TEXT,__text  _createByFile(__CFDictionary const*)
+0x18cbd4bfc  __TEXT,__text  FilePathStorage<unsigned char>::FilePathStorage(__CFURL const*, FilePathStorage<unsigned char>::ParentDirectoryRules, FilePathStorage<unsigned char>::CreateParentDirectoryRules, FilePathStorage<unsigned char>::ResolutionRules)
+0x18cbd4d08  __TEXT,__text  DiskCookieStorage::readFileToCookies(MemoryCookies*)
+0x18cbd4fe4  __TEXT,__text  CFAllocatedReferenceCountedObject::_retainable_retain(__CFAllocator const*, void const*)
+0x18cbd5028  __TEXT,__text  AutoDict::getMutableDict()
+0x18cbd509c  __TEXT,__text  MemoryCookies::mergeCookiesFrom(MemoryCookies const*)
+0x18cbd5134  __TEXT,__text  AutoDict::~AutoDict()
+0x18cbd5198  __TEXT,__text  -[NSHTTPCookieStorageInternal registerForPostingNotificationsWithContext:]
+0x18cbd53d4  __TEXT,__text  HTTPCookieStorage::setDefaultNotificationHandler(void  block_pointer())
+0x18cbd5430  __TEXT,__text  invocation function for block in newCookieStorageEnabled()
+0x18cbd5460  __TEXT,__text  invocation function for block in HTTPCookieStorage::Class()
+0x18cbd54d0  __TEXT,__text  invocation function for block in URLCredentialStorage::Class()
+0x18cbd5540  __TEXT,__text  ___CFNLog_block_invoke
+0x18cbd5570  __TEXT,__text  invocation function for block in DiagnosticLogging::userDiagnosticLevel()
+0x18cbd55d8  __TEXT,__text  -[NSHTTPCookieStorage _cookieStorage]
+0x18cbd5604  __TEXT,__text  invocation function for block in getDafsa()
+0x18cbd58b8  __TEXT,__text  mmapDafsaFileAtLocation(sDafsa&, char const*)
+0x18cbd5e10  __TEXT,__text  -[NSHTTPCookieStorage setCookieAcceptPolicy:]
+0x18cbd5f88  __TEXT,__text  DiskCookieStorage::setCookieAcceptPolicyLocked(int)
+0x18cbd6058  __TEXT,__text  -[NSURLSessionTask _copyHSTSPolicy]
+0x18cbd60b8  __TEXT,__text  -[NSURLSessionTask _cfHSTS]
+0x18cbd60c4  __TEXT,__text  -[NSURLSessionConfiguration _hstsStorage]
+0x18cbd6134  __TEXT,__text  -[NSURLSessionConfiguration copyHSTSPolicy]
+0x18cbd6160  __TEXT,__text  invocation function for block in HSTSPolicy::getDefaultPolicy()
+0x18cbd6270  __TEXT,__text  HSTSPolicy::HSTSPolicy(__CFAllocator const*, unsigned char, std::__1::unique_ptr<__CFURL const, Deleter_CFRelease>)
+0x18cbd68dc  __TEXT,__text  +[_NSHSTSStorage sharedPersistentStore]
+0x18cbd6924  __TEXT,__text  ___39+[_NSHSTSStorage sharedPersistentStore]_block_invoke
+0x18cbd69c8  __TEXT,__text  invocation function for block in HSTSPolicy::Class()
+0x18cbd6a38  __TEXT,__text  invocation function for block in HSTSCache::defaultStoreURL()
+0x18cbd6bd0  __TEXT,__text  invocation function for block in HSTSCache::Class()
+0x18cbd6c40  __TEXT,__text  -[NSURLSessionConfiguration set_phskip_hstsStorage:]
+0x18cbd6c48  __TEXT,__text  -[NSURLSessionConfiguration set_hstsStorage:]
+0x18cbd6d08  __TEXT,__text  -[NSURLSessionConfiguration _phskip_hstsStorage]
+0x18cbd6d14  __TEXT,__text  invocation function for block in CoreSchedulingSet::getEmptySet()
+0x18cbd6db4  __TEXT,__text  invocation function for block in HTTPProtocol::needsThrottler()
+0x18cbd6de4  __TEXT,__text  -[NSURLSessionTask _cfCreds]
+0x18cbd6df0  __TEXT,__text  -[NSURLSessionConfiguration URLCredentialStorage]
+0x18cbd6e0c  __TEXT,__text  -[NSURLSessionTask _suspensionThreshhold]
+0x18cbd6e14  __TEXT,__text  StorageSession::copyProcessDefault()
+0x18cbd6ea4  __TEXT,__text  invocation function for block in StorageSession::copyProcessDefault()
+0x18cbd6fac  __TEXT,__text  +[NSURLCredentialStorage sharedCredentialStorage]
+0x18cbd6ff4  __TEXT,__text  invocation function for block in StrictSecurityPolicy::ATSLogLevel()
+0x18cbd705c  __TEXT,__text  invocation function for block in StorageSession::Class()
+0x18cbd70cc  __TEXT,__text  -[NSURLStorageURLCacheDB updateFSBackedCacheUsageOnDisk]
+0x18cbd7288  __TEXT,__text  CFURLCacheFS::~CFURLCacheFS()
+0x18cbd72b4  __TEXT,__text  CFURLCacheFS::~CFURLCacheFS()
+0x18cbd73a8  __TEXT,__text  __CFURLCacheCreateFS2
+0x18cbd7420  __TEXT,__text  -[NSURLStorageURLCacheDB isSchemaCurrent]
+0x18cbd74e8  __TEXT,__text  -[NSURLStorageURLCacheDB _prepareDBSelectStatements]
+0x18cbd759c  __TEXT,__text  CFURLCacheFS::CFURLCacheFS(__CFString const*, bool)
+0x18cbd7708  __TEXT,__text  __CFURLCache::createAndOpenCacheDB()
+0x18cbd791c  __TEXT,__text  _ExtractCStringfromCFStringRef(__CFString const*, bool&)
+0x18cbd79e0  __TEXT,__text  -[NSURLStorageURLCacheDB _openDBReadConnections]
+0x18cbd7ae0  __TEXT,__text  __BuildPath(char const*)
+0x18cbd7be0  __TEXT,__text  volumeSupportsFileProtection(char const*)
+0x18cbd7c50  __TEXT,__text  ___retainStorageAssertion
+0x18cbd7f5c  __TEXT,__text  ___releaseStorageAssertion
+0x18cbd800c  __TEXT,__text  ___acquireAssertion_block_invoke
+0x18cbd80f0  __TEXT,__text  +[NSURLCache setSharedURLCache:]
+0x18cbd8188  __TEXT,__text  -[NSURLSessionTask _loadingPriorityValue]
+0x18cbd8190  __TEXT,__text  invocation function for block in HTTPConnection::isCellular()
+0x18cbd8314  __TEXT,__text  invocation function for block in _CFURLCacheCreateWithURL(__CFAllocator const*, long, long, __CFURL const*)
+0x18cbd8324  __TEXT,__text  -[NSURLCache currentDiskUsage]
+0x18cbd8474  __TEXT,__text  createIDNAEncodedDomain(__CFString const*)
+0x18cbd8694  __TEXT,__text  net::FixedSetIncrementalLookup::Advance(char)
+0x18cbd877c  __TEXT,__text  -[NSURLStorageURLCacheDB initWithDBPath:maxSize:]
+0x18cbd88c8  __TEXT,__text  -[NSMutableURLRequest(NSMutableHTTPURLRequest) addValue:forHTTPHeaderField:]
+0x18cbd8a10  __TEXT,__text  invocation function for block in HTTPHeaderDict::emptyDict()
+0x18cbd8a90  __TEXT,__text  -[NSHTTPCookieInternal_Data _inner]
+0x18cbd8aa4  __TEXT,__text  -[NSMutableURLRequest setCachePolicy:]
+0x18cbd8adc  __TEXT,__text  -[NSMutableURLRequest(NSMutableHTTPURLRequest) setAllHTTPHeaderFields:]
+0x18cbd8bac  __TEXT,__text  -[NSURLSessionTask set_preconnect:]
+0x18cbd8bb4  __TEXT,__text  -[NSURLSessionTask description]
+0x18cbd8bb8  __TEXT,__text  -[NSURLSessionTask set_timeoutIntervalForResource:]
+0x18cbd8bc0  __TEXT,__text  -[NSURLSessionTask set_nw_activity:]
+0x18cbd8bc8  __TEXT,__text  FormContentLengthWithArray(__CFArray const*)
+0x18cbd8d50  __TEXT,__text  URLRequest::_setHTTPBodyParts(__CFArray const*, unsigned long long)
+0x18cbd8f0c  __TEXT,__text  HTTPMessage::setHeaderFieldScalarValue(CFNetworkConstantString::HTTPHeader::DomainString, long long)
+0x18cbd9058  __TEXT,__text  HTTPMessage::removeHeaderFieldValue(unsigned int)
+0x18cbd9108  __TEXT,__text  -[NSURLSessionTask _bytesPerSecondLimit]
+0x18cbd9110  __TEXT,__text  -[NSURLRequest cfURL]
+0x18cbd912c  __TEXT,__text  atsDictionaryAllowsArbitraryLoads(__CFDictionary const*)
+0x18cbd93d0  __TEXT,__text  URLConnectionLoader::loadWithWhatToDo(NSURLRequest*, _CFCachedURLResponse const*, long, URLConnectionLoader::WhatToDo)
+0x18cbd97f4  __TEXT,__text  -[NSURLSessionTask _cachePolicy]
+0x18cbd97fc  __TEXT,__text  HTTPProtocol::initialize(NSURLSessionTask*, URLProtocolClient*, HTTPProtocol::HTTPProtocolType)
+0x18cbd9f2c  __TEXT,__text  createDictionaryFromData(__CFData const*)
+0x18cbd9fd0  __TEXT,__text  -[NSURLSessionTask _createXCredentialStorage]
+0x18cbda060  __TEXT,__text  NSXCredentialStorage::NSXCredentialStorage(NSURLCredentialStorage*)
+0x18cbda0cc  __TEXT,__text  URLProtocol::initialize(NSURLSessionTask*, URLProtocolClient*)
+0x18cbda284  __TEXT,__text  URLConnectionLoader::ensureLoaderHasProtocolNoLock(NSURLRequest*)
+0x18cbda6d4  __TEXT,__text  -[__NSURLSessionLocal _newURLProtocolForTask:client:protocolClass:]
+0x18cbda8a4  __TEXT,__text  CoreSchedulingSet::createEmpty()
+0x18cbda914  __TEXT,__text  HTTPProtocol::_instantiateProtocol(__CFAllocator const*, NSURLSessionTask*, URLProtocolClient*, void const*)
+0x18cbdab24  __TEXT,__text  EmptyCoreSchedulingSet::retain() const
+0x18cbdab34  __TEXT,__text  HTTPProtocol::needsThrottler()
+0x18cbdab7c  __TEXT,__text  EmptyCoreSchedulingSet::release() const
+0x18cbdabb4  __TEXT,__text  invocation function for block in URLConnectionLoader::_private_ScheduleOriginLoad(NSURLRequest*, _CFCachedURLResponse const*)
+0x18cbdac54  __TEXT,__text  URLProtocol::updateScheduling(CoreSchedulingSet const*, CoreSchedulingSet const*)
+0x18cbdacf4  __TEXT,__text  HTTPProtocol::_protocolInterface_startLoad(_CFCachedURLResponse const*)
+0x18cbdb944  __TEXT,__text  URLConnectionLoader::scheduleTimeoutTimer()
+0x18cbdba00  __TEXT,__text  -[NSURLSessionTask _protocolForTask]
+0x18cbdba08  __TEXT,__text  -[NSURLRequest copyWithZone:]
+0x18cbdba0c  __TEXT,__text  __CFURLCache::logCacheEvent(CFURLCacheEventType, _CFURLRequest const*)
+0x18cbdbae4  __TEXT,__text  HTTPProtocol::_canHandleRequest(_CFURLRequest const*, void const*)
+0x18cbdbcb0  __TEXT,__text  +[_NSCFURLProtocol canonicalRequestForRequest:task:]
+0x18cbdbd28  __TEXT,__text  invocation function for block in HTTPProtocol::_createMutableCanonicalRequest(__CFAllocator const*, _CFURLRequest const*, NSURLSessionTask*, void const*)
+0x18cbdc11c  __TEXT,__text  invocation function for block in HTTPProtocol::_createMutableCanonicalRequest(__CFAllocator const*, _CFURLRequest const*, NSURLSessionTask*, void const*)
+0x18cbdc128  __TEXT,__text  invocation function for block in HTTPProtocol::_createMutableCanonicalRequest(__CFAllocator const*, _CFURLRequest const*, NSURLSessionTask*, void const*)
+0x18cbdc12c  __TEXT,__text  -[NSURLSessionConfiguration URLCache]
+0x18cbdc148  __TEXT,__text  invocation function for block in CoreSchedulingSet::copyLoaderQueueSet()
+0x18cbdc1f0  __TEXT,__text  QCoreSchedulingSet::QCoreSchedulingSet(NSObject objcproto17OS_dispatch_queue*)
+0x18cbdc27c  __TEXT,__text  CoreSchedulingSet::markAsUniquable() const
+0x18cbdc280  __TEXT,__text  CoreSchedulingSet::copyLoaderQueueSet()
+0x18cbdc2ec  __TEXT,__text  URLConnectionLoader::_loaderEvent_StartLoad(NSURLSessionTask*)
+0x18cbdc8f4  __TEXT,__text  URLConnectionLoader_Classic::URLConnectionLoader_Classic(InterfaceRequiredForLoader*, URLConnectionLoader::ConfigFlags const&, __NSURLSessionLocal*, void*)
+0x18cbdca84  __TEXT,__text  URLConnectionInstanceData::URLConnectionInstanceData(InterfaceRequiredForLoader*, char const*, NSObject objcproto17OS_dispatch_queue*)
+0x18cbdcb28  __TEXT,__text  -[__CFN_TaskMetrics nextTransaction:withNewRequest:]
+0x18cbdd154  __TEXT,__text  non-virtual thunk to URLConnectionLoader::_loaderEvent_StartLoad(NSURLSessionTask*)
+0x18cbdd15c  __TEXT,__text  XURLCache::createNSXURLCache(void const*, NSURLSession*)
+0x18cbdd28c  __TEXT,__text  CFXURLCache::CFXURLCache(_CFURLCache const*, NSURLSession*)
+0x18cbdd358  __TEXT,__text  __CFURLCacheGetMaxCacheableEntrySize
+0x18cbdd3d8  __TEXT,__text  CFXURLCache::getMaxCacheableEntrySize() const
+0x18cbdd3e0  __TEXT,__text  CFXURLCache::~CFXURLCache()
+0x18cbdd444  __TEXT,__text  HTTPMethodMixedValue::HTTPMethodMixedValue(CFNetworkConstantString::HTTPMethod::DomainString)
+0x18cbdd4d4  __TEXT,__text  ___CFURLCacheCopyResponseForRequestWithCompletionHandler
+0x18cbddef0  __TEXT,__text  _createCacheKeyForRequest(_CFURLRequest const*, bool, __CFString const*)
+0x18cbde524  __TEXT,__text  CFXURLCache::getResponseForTask(NSURLSessionTask*, unsigned char, void  block_pointer(_CFCachedURLResponse const*)) const
+0x18cbde57c  __TEXT,__text  invocation function for block in URLConnectionLoader::_loaderEvent_StartLoad(NSURLSessionTask*)
+0x18cbde6c0  __TEXT,__text  -[__NSCFURLSessionConnection initWithTask:delegate:delegateQueue:]
+0x18cbde790  __TEXT,__text  -[NSURLSessionTask _cfCache]
+0x18cbde79c  __TEXT,__text  -[__NSURLSessionLocal _onqueue_configureAndCreateConnection:task:]
+0x18cbde850  __TEXT,__text  -[__NSCFURLSessionDelegateWrapper check__willSendRequestForEstablishedConnection]
+0x18cbde8d4  __TEXT,__text  -[__NSCFURLSessionDelegateWrapper task:_willUseEffectiveConfiguration:completionHandler:]
+0x18cbdeb80  __TEXT,__text  ___88-[__NSCFLocalSessionTask _onqueue_setupNextEffectiveConfigurationWithCompletionHandler:]_block_invoke
+0x18cbdebf0  __TEXT,__text  ___66-[__NSURLSessionLocal _onqueue_configureAndCreateConnection:task:]_block_invoke
+0x18cbdeccc  __TEXT,__text  -[__NSCFLocalSessionTask _onqueue_setupNextEffectiveConfigurationWithCompletionHandler:]
+0x18cbded70  __TEXT,__text  -[__NSCFURLSessionDelegateWrapper _willSendRequestForEstablishedConnection]
+0x18cbdedb4  __TEXT,__text  -[__NSCFURLLocalSessionConnection initWithTask:delegate:delegateQueue:]
+0x18cbdf070  __TEXT,__text  -[__NSCFLocalSessionTask _onqueue_startResourceTimer:]
+0x18cbdf1c4  __TEXT,__text  SessionConnectionLoadable::loaderClientSupportsDispatchData() const
+0x18cbdf1e0  __TEXT,__text  ___66-[__NSCFURLSessionConnection initWithTask:delegate:delegateQueue:]_block_invoke
+0x18cbdf228  __TEXT,__text  ___71-[__NSCFURLLocalSessionConnection initWithTask:delegate:delegateQueue:]_block_invoke
+0x18cbdf260  __TEXT,__text  ___51-[__NSCFURLLocalSessionConnection _tick_initialize]_block_invoke
+0x18cbdf304  __TEXT,__text  -[__NSCFURLSessionDelegateWrapper check__isWaitingForConnection_withError]
+0x18cbdf374  __TEXT,__text  -[__NSCFURLSessionDelegateWrapper check__isWaitingForConnection_withoutError]
+0x18cbdf3f8  __TEXT,__text  -[__NSCFURLSessionDelegateWrapper check_isWaitingForConnectivity]
+0x18cbdf47c  __TEXT,__text  -[__NSCFURLSessionDelegateWrapper check__conditionalRequirementsChanged]
+0x18cbdf500  __TEXT,__text  -[__NSCFURLSessionDelegateWrapper check__alternatePathAvailable]
+0x18cbdf584  __TEXT,__text  SessionConnectionLoadable::_irl_allocator()
+0x18cbdf58c  __TEXT,__text  SessionConnectionLoadable::_loaderClient_SupportsDispatchData() const
+0x18cbdf594  __TEXT,__text  -[__NSCFLocalSessionTask _onqueue_startTimer:withTimeoutInNanos:streamErrorCode:]
+0x18cbdf6c4  __TEXT,__text  -[__NSCFLocalSessionTask _onqueue_startStartTimer]
+0x18cbdf7e4  __TEXT,__text  -[NSURLSessionTask _boundInterfaceIdentifier]
+0x18cbdf804  __TEXT,__text  -[NSURLSessionTask _preconnect]
+0x18cbdf80c  __TEXT,__text  -[NSURLSessionTask _useEnhancedPrivacyMode]
+0x18cbdf818  __TEXT,__text  -[NSURLSessionTask _allowsCellularOverride]
+0x18cbdf820  __TEXT,__text  -[NSURLSessionTask _disallowCellular]
+0x18cbdf828  __TEXT,__text  -[NSURLSessionTask _allowsExpensiveOverride]
+0x18cbdf830  __TEXT,__text  -[NSURLSessionTask _allowsUltraConstrainedOverride]
+0x18cbdf838  __TEXT,__text  -[NSURLSessionTask _copySocketStreamProperties]
+0x18cbe093c  __TEXT,__text  -[NSURLSessionTask _sourceApplicationBundleIdentifierForMobileAsset]
+0x18cbe0944  __TEXT,__text  -[NSURLSessionTask _allowsConstrainedOverride]
+0x18cbe094c  __TEXT,__text  -[NSURLSessionTask _networkServiceType]
+0x18cbe0954  __TEXT,__text  -[NSURLSessionTask _hostOverride]
+0x18cbe095c  __TEXT,__text  -[NSURLSessionTask _trackerContext]
+0x18cbe0968  __TEXT,__text  -[NSURLSessionTask _privacyProxyFailClosed]
+0x18cbe0974  __TEXT,__text  -[NSURLSessionTask _privacyProxyFailClosedForUnreachableNonMainHosts]
+0x18cbe0980  __TEXT,__text  -[NSURLSessionTask _privacyProxyStrictFailClosed]
+0x18cbe098c  __TEXT,__text  -[NSURLSessionTask _timeWindowDuration]
+0x18cbe0994  __TEXT,__text  -[NSURLSessionTask _requiresPowerPluggedIn]
+0x18cbe099c  __TEXT,__text  -[NSURLSessionTask _allowsPersistentDNS]
+0x18cbe09a8  __TEXT,__text  -[NSURLSessionTask _attribution]
+0x18cbe09b0  __TEXT,__text  -[NSURLSessionTask _privacyProxyFailClosedForUnreachableHosts]
+0x18cbe09bc  __TEXT,__text  -[NSURLSessionTask _blockTrackers]
+0x18cbe09c8  __TEXT,__text  -[NSURLSessionTask _prohibitPrivacyProxy]
+0x18cbe09d4  __TEXT,__text  -[NSURLSessionTask _failInsecureLoadWithHTTPSDNSRecord]
+0x18cbe09e0  __TEXT,__text  -[NSURLSessionTask _isWebSearchContent]
+0x18cbe09ec  __TEXT,__text  -[NSURLSessionTask _requiresDNSSECValidation]
+0x18cbe09f4  __TEXT,__text  -[NSURLSessionTask _strictContentLength]
+0x18cbe0a00  __TEXT,__text  -[NSURLSessionTask _isKnownTracker]
+0x18cbe0a0c  __TEXT,__text  -[NSURLSessionTask _timeWindowDelay]
+0x18cbe0a14  __TEXT,__text  -[NSURLSessionTask _legacySocketStreamProperties]
+0x18cbe0a34  __TEXT,__text  -[NSURLRequest(NSHTTPURLRequest) _requiresShortConnectionTimeout]
+0x18cbe0a58  __TEXT,__text  invocation function for block in defaultConnectionCacheLimits()
+0x18cbe0abc  __TEXT,__text  +[NSURLSessionConfiguration defaultSessionConfiguration]
+0x18cbe0b08  __TEXT,__text  ___56+[NSURLSessionConfiguration defaultSessionConfiguration]_block_invoke
+0x18cbe0b40  __TEXT,__text  StrictSecurityPolicy::CopyATSState()
+0x18cbe1114  __TEXT,__text  -[NSURLSessionConfiguration mutableCopyWithZone:]
+0x18cbe1b6c  __TEXT,__text  -[NSURLSessionConfiguration setDisposition:]
+0x18cbe1b74  __TEXT,__text  -[NSURLSessionConfiguration .cxx_construct]
+0x18cbe1ba4  __TEXT,__text  -[NSURLSessionConfiguration initWithDisposition:]
+0x18cbe1e40  __TEXT,__text  +[NSURLSessionConfiguration _defaultProtocolClasses]
+0x18cbe1f60  __TEXT,__text  -[NSURLSessionConfiguration copyWithZone:]
+0x18cbe1f64  __TEXT,__text  +[NSURLSessionConfiguration initialize]
+0x18cbe2014  __TEXT,__text  _____CFNGetHTTP3Override_block_invoke
+0x18cbe21a4  __TEXT,__text  -[NSURLSessionConfiguration disposition]
+0x18cbe21ac  __TEXT,__text  -[NSURLSessionConfiguration connectionProxyDictionary]
+0x18cbe21b8  __TEXT,__text  StrictSecurityPolicy::CreateBinaryDataFromPropertyList(void const*)
+0x18cbe2214  __TEXT,__text  invocation function for block in isAppleBundle()
+0x18cbe227c  __TEXT,__text  StrictSecurityPolicy::CreateDefaultSerializedATSState(bool, bool)
+0x18cbe2458  __TEXT,__text  invocation function for block in ATSLog()
+0x18cbe2488  __TEXT,__text  -[NSURLSessionConfiguration set_sourceApplicationSecondaryIdentifier:]
+0x18cbe2490  __TEXT,__text  -[NSURLSessionConfiguration set_sourceApplicationBundleIdentifier:]
+0x18cbe2498  __TEXT,__text  -[NSURLSessionConfiguration set_sourceApplicationAuditTokenData:]
+0x18cbe2524  __TEXT,__text  -[NSURLSessionConfiguration _connectionCachePurgeTimeout]
+0x18cbe252c  __TEXT,__text  -[NSURLSessionConfiguration set_longLivedConnectionCacheCellPurgeTimeout:]
+0x18cbe2534  __TEXT,__text  -[NSURLSessionConfiguration HTTPAdditionalHeaders]
+0x18cbe2540  __TEXT,__text  -[NSURLSessionConfiguration protocolClasses]
+0x18cbe254c  __TEXT,__text  -[NSURLSessionConfiguration HTTPCookieAcceptPolicy]
+0x18cbe2554  __TEXT,__text  -[NSURLSessionConfiguration _sourceApplicationAuditTokenData]
+0x18cbe255c  __TEXT,__text  -[NSURLSessionConfiguration set_socketStreamProperties:]
+0x18cbe2564  __TEXT,__text  +[NSURLSession _sessionWithConfiguration:delegate:delegateQueue:delegateDispatchQueue:]
+0x18cbe2dc8  __TEXT,__text  +[NSURLSession sessionWithConfiguration:delegate:delegateQueue:]
+0x18cbe2de4  __TEXT,__text  +[NSURLSession class]
+0x18cbe2e74  __TEXT,__text  -[NSURLSessionConfiguration _requiresSecureHTTPSProxyConnection]
+0x18cbe2e80  __TEXT,__text  CFAllocatedReferenceCountedObject::CFAllocatedReferenceCountedObject(__CFAllocator const*)
+0x18cbe2ee0  __TEXT,__text  -[NSURLSession .cxx_construct]
+0x18cbe2ee8  __TEXT,__text  -[__NSURLSessionLocal .cxx_construct]
+0x18cbe2f38  __TEXT,__text  -[NSURLSession initWithConfiguration:delegate:delegateQueue:delegateDispatchQueue:]
+0x18cbe3100  __TEXT,__text  -[NSURLSessionConfiguration copyImmutableVariant:]
+0x18cbe3144  __TEXT,__text  -[__CFN_ConnectionContextManager keyForSession:]
+0x18cbe321c  __TEXT,__text  ___50-[__CFN_ConnectionContextManager registerSession:]_block_invoke_2
+0x18cbe3224  __TEXT,__text  -[__CFN_ConnectionContextManager registerSession:]
+0x18cbe34f8  __TEXT,__text  -[__NSCFURLSessionDelegateWrapper initWithSession:]
+0x18cbe3584  __TEXT,__text  -[__NSURLSessionLocal initWithConfiguration:delegate:delegateQueue:delegateDispatchQueue:]
+0x18cbe3860  __TEXT,__text  ___83-[NSURLSession initWithConfiguration:delegate:delegateQueue:delegateDispatchQueue:]_block_invoke
+0x18cbe38b0  __TEXT,__text  -[NSURLSessionConfiguration setURLCache:]
+0x18cbe38dc  __TEXT,__text  -[NSURLSessionConfiguration proxiesRequireNWLoader]
+0x18cbe39cc  __TEXT,__text  ___87+[NSURLSession _sessionWithConfiguration:delegate:delegateQueue:delegateDispatchQueue:]_block_invoke
+0x18cbe39f4  __TEXT,__text  _____CFNIsInDevelopmentEnvironment_block_invoke
+0x18cbe3ab8  __TEXT,__text  -[NSURLSession _tlsSessionCachePrefix]
+0x18cbe3ac0  __TEXT,__text  _____CFNUseNWLoader_block_invoke
+0x18cbe3c4c  __TEXT,__text  -[NSURLSessionConfiguration set_connectionPoolName:]
+0x18cbe3c54  __TEXT,__text  -[NSURLSessionConfiguration _connectionCacheNumPriorityLevels]
+0x18cbe3c5c  __TEXT,__text  -[NSURLRequest _inner]
+0x18cbe3c64  __TEXT,__text  -[NSURLRequest initWithURL:cachePolicy:timeoutInterval:]
+0x18cbe3d80  __TEXT,__text  -[NSURLRequestInternal .cxx_construct]
+0x18cbe3e50  __TEXT,__text  -[NSURLRequestInternal init]
+0x18cbe3e88  __TEXT,__text  -[NSURLRequest mutableCopyWithZone:]
+0x18cbe3f08  __TEXT,__text  URLRequest::initialize(URLRequest const*, unsigned char)
+0x18cbe42b4  __TEXT,__text  CFClass::CFClass(char const*)
+0x18cbe438c  __TEXT,__text  URLRequest::copyMainDocumentRegistrableDomain() const
+0x18cbe4440  __TEXT,__text  -[NSURLRequest URL]
+0x18cbe445c  __TEXT,__text  -[NSURLRequest _initWithInternal:]
+0x18cbe44b4  __TEXT,__text  __CreatePathToCacheDirectory(__CFString const*, bool)
+0x18cbe4688  __TEXT,__text  +[NSURLCache sharedURLCache]
+0x18cbe4740  __TEXT,__text  -[NSURLCache init]
+0x18cbe4758  __TEXT,__text  -[NSMutableURLRequest(NSMutableHTTPURLRequest) setHTTPMethod:]
+0x18cbe4a60  __TEXT,__text  HTTPMethodMixedValue::HTTPMethodMixedValue(__CFString const*)
+0x18cbe4b28  __TEXT,__text  -[NSMutableURLRequest(NSMutableHTTPURLRequest) setHTTPBody:]
+0x18cbe4c08  __TEXT,__text  HTTPMessage::setHeaderFieldStringValue(__CFString const*, __CFString const*)
+0x18cbe4d60  __TEXT,__text  HTTPHeaderDict::HTTPHeaderDict()
+0x18cbe4dc0  __TEXT,__text  -[NSHTTPCookie dealloc]
+0x18cbe4e10  __TEXT,__text  CompactHTTPCookieWithData::~CompactHTTPCookieWithData()
+0x18cbe4e98  __TEXT,__text  CompactHTTPCookieWithData::~CompactHTTPCookieWithData()
+0x18cbe4ec4  __TEXT,__text  -[NSHTTPCookieInternal_Data dealloc]
+0x18cbe4f3c  __TEXT,__text  -[NSHTTPCookie value]
+0x18cbe4fb0  __TEXT,__text  -[NSURLRequest initWithURL:]
+0x18cbe4fc4  __TEXT,__text  invocation function for block in HTTPMessage::Class()
+0x18cbe5034  __TEXT,__text  invocation function for block in HTTPHeaderDict::Class()
+0x18cbe50a4  __TEXT,__text  +[NSURLConnection sendSynchronousRequest:returningResponse:error:]
+0x18cbe5340  __TEXT,__text  _____CFNProcessIsApplication_block_invoke
+0x18cbe5380  __TEXT,__text  _____CFNPerformanceDiagnosticRuntimeIssuesLogHandle_block_invoke
+0x18cbe53b0  __TEXT,__text  createCFRequest(InternalInit const*)
+0x18cbe5490  __TEXT,__text  +[NSURLRequest(NSHTTPURLRequest) allowsSpecificHTTPSCertificateForHost:]
+0x18cbe55f0  __TEXT,__text  withHostsSPILocked(void  block_pointer(NSMutableSet*, NSMutableDictionary*))
+0x18cbe5684  __TEXT,__text  invocation function for block in withHostsSPILocked(void  block_pointer(NSMutableSet*, NSMutableDictionary*))
+0x18cbe56d4  __TEXT,__text  ___72+[NSURLRequest(NSHTTPURLRequest) allowsSpecificHTTPSCertificateForHost:]_block_invoke
+0x18cbe571c  __TEXT,__text  +[NSURLRequest(NSHTTPURLRequest) allowsAnyHTTPSCertificateForHost:]
+0x18cbe5850  __TEXT,__text  ___67+[NSURLRequest(NSHTTPURLRequest) allowsAnyHTTPSCertificateForHost:]_block_invoke
+0x18cbe5894  __TEXT,__text  -[NSURLRequest(NSHTTPURLRequest) HTTPShouldHandleCookies]
+0x18cbe5b58  __TEXT,__text  SyncClient::SyncClient(__CFAllocator const*, _CFURLRequest const*, NSObject objcproto17OS_dispatch_queue*, void  block_pointer(__CFData const*, _CFURLResponse*, __CFError*))
+0x18cbe6350  __TEXT,__text  invocation function for block in TCFObject<URLConnection>::Class()
+0x18cbe63d8  __TEXT,__text  createUpdatedSocketPropertiesForRequest(_CFURLRequest const*, __CFDictionary const*, __CFDictionary const*)
+0x18cbe6a10  __TEXT,__text  invocation function for block in allowNewHTTP()
+0x18cbe6a94  __TEXT,__text  ClassicURLConnection::getNetworkServiceTypeString(CFURLRequestNetworkServiceType)
+0x18cbe6b7c  __TEXT,__text  +[NSURLSession sharedSession]
+0x18cbe6b88  __TEXT,__text  -[NSURLSessionConfiguration setHTTPCookieStorage:]
+0x18cbe6bb4  __TEXT,__text  -[NSURLSessionConfiguration set_phskip_cookieStorage:]
+0x18cbe6bbc  __TEXT,__text  -[NSURLSessionConfiguration set_phskip_urlCache:]
+0x18cbe6bc4  __TEXT,__text  +[NSURLSession _sharedSessionForConnection]
+0x18cbe6c44  __TEXT,__text  +[NSURLSessionConfiguration sessionConfigurationForSharedSession]
+0x18cbe6c90  __TEXT,__text  ___30+[NSURLSession _sharedSession]_block_invoke
+0x18cbe6d10  __TEXT,__text  ___65+[NSURLSessionConfiguration sessionConfigurationForSharedSession]_block_invoke
+0x18cbe6d48  __TEXT,__text  invocation function for block in mutableGlobalLimits()
+0x18cbe6dac  __TEXT,__text  +[NSURLSession _sharedSession]
+0x18cbe6e74  __TEXT,__text  -[NSURLSessionConfiguration set_allowsVirtualInterfaces:]
+0x18cbe6e7c  __TEXT,__text  -[NSURLSessionConfiguration setWaitsForConnectivity:]
+0x18cbe6e84  __TEXT,__text  -[NSURLSessionConfiguration isDiscretionary]
+0x18cbe6e90  __TEXT,__text  -[NSURLSessionConfiguration setDiscretionary:]
+0x18cbe6e98  __TEXT,__text  -[NSURLSessionConfiguration set_allowsUltraConstrainedInternal:]
+0x18cbe6ea0  __TEXT,__text  -[NSURLSessionConfiguration allowsCellularAccess]
+0x18cbe6eac  __TEXT,__text  -[NSURLSessionConfiguration setAllowsConstrainedNetworkAccess:]
+0x18cbe6eb4  __TEXT,__text  -[NSURLSessionConfiguration setAllowsCellularAccess:]
+0x18cbe6ebc  __TEXT,__text  -[NSURLSessionConfiguration setAllowsExpensiveNetworkAccess:]
+0x18cbe6ec4  __TEXT,__text  -[NSURLSessionConfiguration allowsExpensiveNetworkAccess]
+0x18cbe6ed0  __TEXT,__text  -[NSURLSessionConfiguration allowsConstrainedNetworkAccess]
+0x18cbe6edc  __TEXT,__text  -[NSURLSessionConfiguration _allowsUltraConstrainedInternal]
+0x18cbe6ee4  __TEXT,__text  -[NSURLSessionConfiguration _allowsVirtualInterfaces]
+0x18cbe6ef0  __TEXT,__text  -[NSURLSessionConfiguration waitsForConnectivity]
+0x18cbe6efc  __TEXT,__text  -[NSURLSessionConfiguration setHTTPShouldUsePipelining:]
+0x18cbe6f04  __TEXT,__text  -[NSURLSessionConfiguration sessionSendsLaunchEvents]
+0x18cbe6f10  __TEXT,__text  -[NSURLSessionConfiguration HTTPShouldSetCookies]
+0x18cbe6f1c  __TEXT,__text  -[NSURLSessionConfiguration setHTTPShouldSetCookies:]
+0x18cbe6f24  __TEXT,__text  -[NSURLSessionConfiguration sharedContainerIdentifier]
+0x18cbe6f30  __TEXT,__text  -[NSURLSessionConfiguration setSharedContainerIdentifier:]
+0x18cbe6f38  __TEXT,__text  -[NSURLSessionConfiguration setSessionSendsLaunchEvents:]
+0x18cbe6f40  __TEXT,__text  -[NSURLSessionConfiguration HTTPShouldUsePipelining]
+0x18cbe6f4c  __TEXT,__text  -[NSURLSessionConfiguration set_requiresPowerPluggedIn:]
+0x18cbe6f54  __TEXT,__text  -[NSURLSessionConfiguration _allowsHSTSWithUntrustedRootCertificate]
+0x18cbe6f60  __TEXT,__text  -[NSURLSessionConfiguration _requiresPowerPluggedIn]
+0x18cbe6f6c  __TEXT,__text  -[NSURLSessionConfiguration _allowsPowerNapScheduling]
+0x18cbe6f78  __TEXT,__text  -[NSURLSessionConfiguration _shouldSkipPreferredClientCertificateLookup]
+0x18cbe6f84  __TEXT,__text  -[NSURLSessionConfiguration _respectsAllowsCellularAccessForDiscretionaryTasks]
+0x18cbe6f90  __TEXT,__text  -[NSURLSessionConfiguration _allowsRetryForBackgroundDataTasks]
+0x18cbe6f9c  __TEXT,__text  -[NSURLSessionConfiguration _infersDiscretionaryFromOriginatingClient]
+0x18cbe6fa8  __TEXT,__text  -[NSURLSessionConfiguration setBackgroundSession:]
+0x18cbe6fb0  __TEXT,__text  -[NSURLSessionConfiguration set_allowsPowerNapScheduling:]
+0x18cbe6fb8  __TEXT,__text  -[NSURLSessionConfiguration set_allowsHSTSWithUntrustedRootCertificate:]
+0x18cbe6fc0  __TEXT,__text  -[NSURLSessionConfiguration _sessionSendsLaunchOnDemandEvents]
+0x18cbe6fcc  __TEXT,__text  -[NSURLSessionConfiguration isBackgroundSession]
+0x18cbe6fd8  __TEXT,__text  -[NSURLSessionConfiguration set_respectsAllowsCellularAccessForDiscretionaryTasks:]
+0x18cbe6fe0  __TEXT,__text  -[NSURLSessionConfiguration set_sessionSendsLaunchOnDemandEvents:]
+0x18cbe6fe8  __TEXT,__text  -[NSURLSessionConfiguration set_allowsRetryForBackgroundDataTasks:]
+0x18cbe6ff0  __TEXT,__text  -[NSURLSessionConfiguration _onBehalfOfPairedDevice]
+0x18cbe6ffc  __TEXT,__text  -[NSURLSessionConfiguration _clientIsNotExplicitlyDiscretionary]
+0x18cbe7008  __TEXT,__text  -[NSURLSessionConfiguration set_timingDataOptions:]
+0x18cbe7010  __TEXT,__text  -[NSURLSessionConfiguration set_shouldSkipPreferredClientCertificateLookup:]
+0x18cbe7018  __TEXT,__text  -[NSURLSessionConfiguration set_onBehalfOfPairedDevice:]
+0x18cbe7020  __TEXT,__text  -[NSURLSessionConfiguration set_clientIsNotExplicitlyDiscretionary:]
+0x18cbe7028  __TEXT,__text  -[NSURLSessionConfiguration skip_download_unlink]
+0x18cbe7034  __TEXT,__text  -[NSURLSessionConfiguration setSkip_download_unlink:]
+0x18cbe703c  __TEXT,__text  -[NSURLSessionConfiguration _requiresClientToOpenFiles]
+0x18cbe7048  __TEXT,__text  -[NSURLSessionConfiguration _timingDataOptions]
+0x18cbe7050  __TEXT,__text  -[NSURLSessionConfiguration set_infersDiscretionaryFromOriginatingClient:]
+0x18cbe7058  __TEXT,__text  -[NSURLSessionConfiguration setRequestCachePolicy:]
+0x18cbe7060  __TEXT,__text  -[NSURLSessionConfiguration setHTTPCookieAcceptPolicy:]
+0x18cbe7068  __TEXT,__text  -[NSURLSessionConfiguration TLSMaximumSupportedProtocol]
+0x18cbe7070  __TEXT,__text  -[NSURLSessionConfiguration set_requiresClientToOpenFiles:]
+0x18cbe7078  __TEXT,__text  -[NSURLSessionConfiguration set_forcesNewConnections:]
+0x18cbe7080  __TEXT,__text  -[NSURLSessionConfiguration _supportsAVAssetDownloads]
+0x18cbe708c  __TEXT,__text  -[NSURLSessionConfiguration set_supportsAVAssetDownloads:]
+0x18cbe7094  __TEXT,__text  -[NSURLSessionConfiguration set_proxySession:]
+0x18cbe709c  __TEXT,__text  -[NSURLSessionConfiguration set_preventsIdleSleep:]
+0x18cbe70a4  __TEXT,__text  -[NSURLSessionConfiguration _forcesNewConnections]
+0x18cbe70b0  __TEXT,__text  -[NSURLSessionConfiguration _isProxySession]
+0x18cbe70bc  __TEXT,__text  -[NSURLSessionConfiguration _preventsIdleSleep]
+0x18cbe70c8  __TEXT,__text  -[NSURLSessionConfiguration setConnectionProxyDictionary:]
+0x18cbe70d0  __TEXT,__text  -[NSURLSessionConfiguration requestCachePolicy]
+0x18cbe70d8  __TEXT,__text  -[NSURLSessionConfiguration setTimeoutIntervalForResource:]
+0x18cbe70e0  __TEXT,__text  -[NSURLSessionConfiguration setTimeoutIntervalForRequest:]
+0x18cbe70e8  __TEXT,__text  -[NSURLSessionConfiguration timeoutIntervalForRequest]
+0x18cbe70f0  __TEXT,__text  -[NSURLSessionConfiguration set_usePipeliningHeuristics:]
+0x18cbe70f8  __TEXT,__text  -[NSURLSessionConfiguration setTLSMinimumSupportedProtocol:]
+0x18cbe7100  __TEXT,__text  -[NSURLSessionConfiguration identifier]
+0x18cbe710c  __TEXT,__text  -[NSURLSessionConfiguration setTLSMaximumSupportedProtocol:]
+0x18cbe7114  __TEXT,__text  -[NSURLSessionConfiguration setIdentifier:]
+0x18cbe711c  __TEXT,__text  -[NSURLSessionConfiguration _usePipeliningHeuristics]
+0x18cbe7128  __TEXT,__text  -[NSURLSessionConfiguration timeoutIntervalForResource]
+0x18cbe7130  __TEXT,__text  -[NSURLSessionConfiguration TLSMinimumSupportedProtocol]
+0x18cbe7138  __TEXT,__text  -[NSURLSessionConfiguration networkServiceType]
+0x18cbe7140  __TEXT,__text  -[NSURLSessionConfiguration setNetworkServiceType:]
+0x18cbe7148  __TEXT,__text  -[NSURLSessionConfiguration _attributedBundleIdentifier]
+0x18cbe7154  __TEXT,__text  -[NSURLSessionConfiguration _TCPAdaptiveWriteTimeout]
+0x18cbe715c  __TEXT,__text  -[NSURLSessionConfiguration _sourceApplicationSecondaryIdentifier]
+0x18cbe7168  __TEXT,__text  -[NSURLSessionConfiguration multipathServiceType]
+0x18cbe7170  __TEXT,__text  -[NSURLSessionConfiguration _TCPAdaptiveReadTimeout]
+0x18cbe7178  __TEXT,__text  -[NSURLSessionConfiguration _sourceApplicationBundleIdentifier]
+0x18cbe7184  __TEXT,__text  -[NSURLSessionConfiguration _reportsDataStalls]
+0x18cbe7190  __TEXT,__text  -[NSURLSessionConfiguration _connectionPoolName]
+0x18cbe719c  __TEXT,__text  -[NSURLSessionConfiguration set_connectionCacheNumPriorityLevels:]
+0x18cbe71ac  __TEXT,__text  -[NSURLSessionConfiguration setHTTPAdditionalHeaders:]
+0x18cbe71b4  __TEXT,__text  -[NSURLSessionConfiguration setHTTPMaximumConnectionsPerHost:]
+0x18cbe71bc  __TEXT,__text  -[NSURLSessionConfiguration HTTPMaximumConnectionsPerHost]
+0x18cbe71c4  __TEXT,__text  -[NSURLSessionConfiguration setProtocolClasses:]
+0x18cbe71cc  __TEXT,__text  -[NSURLSessionConfiguration setMultipathServiceType:]
+0x18cbe71d4  __TEXT,__text  -[NSURLSessionConfiguration _directoryForDownloadedFiles]
+0x18cbe71e0  __TEXT,__text  -[NSURLSessionConfiguration set_directoryForDownloadedFiles:]
+0x18cbe71e8  __TEXT,__text  -[NSURLSessionConfiguration set_attributedBundleIdentifier:]
+0x18cbe71f0  __TEXT,__text  -[NSURLSessionConfiguration set_connectionCachePurgeTimeout:]
+0x18cbe7208  __TEXT,__text  -[NSURLSessionConfiguration set_TCPAdaptiveReadTimeout:]
+0x18cbe7210  __TEXT,__text  -[NSURLSessionConfiguration set_TCPAdaptiveWriteTimeout:]
+0x18cbe7218  __TEXT,__text  -[NSURLSessionConfiguration set_reportsDataStalls:]
+0x18cbe7220  __TEXT,__text  -[NSURLSessionConfiguration _connectionCacheCellPurgeTimeout]
+0x18cbe7228  __TEXT,__text  -[NSURLSessionConfiguration set_connectionCacheCellPurgeTimeout:]
+0x18cbe7230  __TEXT,__text  -[NSURLSessionConfiguration _longLivedConnectionCachePurgeTimeout]
+0x18cbe7238  __TEXT,__text  -[NSURLSessionConfiguration set_longLivedConnectionCachePurgeTimeout:]
+0x18cbe7254  __TEXT,__text  -[NSURLSessionConfiguration _longLivedConnectionCacheCellPurgeTimeout]
+0x18cbe725c  __TEXT,__text  -[NSURLSessionTask set_timeoutInterval:]
+0x18cbe7264  __TEXT,__text  -[NSURLSessionTask set_shouldSkipPipelineProbe:]
+0x18cbe726c  __TEXT,__text  -[NSURLSessionTask set_sslSettings:]
+0x18cbe7274  __TEXT,__text  -[NSURLSessionTask set_allowsConstrainedOverride:]
+0x18cbe72a4  __TEXT,__text  -[NSURLSessionTask set_allowsUltraConstrainedOverride:]
+0x18cbe72d4  __TEXT,__text  -[NSURLSessionTask set_requiresDNSSECValidation:]
+0x18cbe72dc  __TEXT,__text  -[NSURLSessionTask set_allowsExpensiveOverride:]
+0x18cbe730c  __TEXT,__text  -[NSURLSessionTask set_allowedProtocolTypes:]
+0x18cbe7314  __TEXT,__text  -[NSURLSessionTask set_isKnownTracker:]
+0x18cbe731c  __TEXT,__text  -[NSURLSessionTask set_privacyProxyFailClosedForUnreachableHosts:]
+0x18cbe7324  __TEXT,__text  -[NSURLSessionTask set_useEnhancedPrivacyMode:]
+0x18cbe732c  __TEXT,__text  -[NSURLSessionTask set_attribution:]
+0x18cbe7334  __TEXT,__text  -[NSURLSessionTask set_privacyProxyFailClosed:]
+0x18cbe733c  __TEXT,__text  -[NSURLSessionTask set_privacyProxyFailClosedForUnreachableNonMainHosts:]
+0x18cbe7344  __TEXT,__text  -[NSURLSessionTask set_blockTrackers:]
+0x18cbe734c  __TEXT,__text  -[NSURLSessionTask set_failInsecureLoadWithHTTPSDNSRecord:]
+0x18cbe7354  __TEXT,__text  -[NSURLSessionTask set_prohibitPrivacyProxy:]
+0x18cbe735c  __TEXT,__text  -[NSURLSessionTask set_allowsPersistentDNS:]
+0x18cbe7364  __TEXT,__text  -[NSURLSessionTask set_privacyProxyStrictFailClosed:]
+0x18cbe736c  __TEXT,__text  -[NSURLSessionTask set_cookieAcceptPolicy:]
+0x18cbe7374  __TEXT,__text  -[NSURLSessionTask set_preventsIdleSystemSleep:]
+0x18cbe737c  __TEXT,__text  -[NSURLSessionTask set_cachePolicy:]
+0x18cbe7384  __TEXT,__text  -[NSURLSessionTask set_shouldHandleCookies:]
+0x18cbe738c  __TEXT,__text  -[NSURLSessionTask set_assumesHTTP3Capable:]
+0x18cbe7394  __TEXT,__text  -[NSURLSessionTask set_isWebSearchContent:]
+0x18cbe739c  __TEXT,__text  -[NSURLSessionTask set_cachedSocketStreamProperties:]
+0x18cbe73a4  __TEXT,__text  -[NSURLSessionTask set_shouldPipelineHTTP:]
+0x18cbe73ac  __TEXT,__text  -[NSURLSessionTask set_shouldUsePipelineHeuristics:]
+0x18cbe73b4  __TEXT,__text  -[NSURLSessionTask _sslSettings]
+0x18cbe73c0  __TEXT,__text  -[NSURLSessionTask _uniqueIdentifier]
+0x18cbe73c8  __TEXT,__text  -[NSURLSessionTask setDelegate:]
+0x18cbe7458  __TEXT,__text  -[NSURLSession defaultTaskGroup]
+0x18cbe745c  __TEXT,__text  _____CFNIsRunningInXcode_block_invoke
+0x18cbe749c  __TEXT,__text  -[NSURLSession _groupConfiguration]
+0x18cbe74a4  __TEXT,__text  -[NSURLSessionTask setCurrentRequest:]
+0x18cbe74ac  __TEXT,__text  -[NSURLSessionTask setState:]
+0x18cbe74b4  __TEXT,__text  -[NSURLSessionTask _nw_activity]
+0x18cbe74c0  __TEXT,__text  -[NSURLSessionTask _timeoutIntervalForResource]
+0x18cbe74c8  __TEXT,__text  -[NSURLSessionTask taskIdentifier]
+0x18cbe74d0  __TEXT,__text  -[NSURLSessionTask set_trackerContext:]
+0x18cbe74d8  __TEXT,__text  -[NSURLSessionTask _timeoutInterval]
+0x18cbe74e0  __TEXT,__text  -[NSURLSessionTask set_private_nw_activity:]
+0x18cbe74e8  __TEXT,__text  -[NSURLSessionTask _preventsAppSSO]
+0x18cbe74f4  __TEXT,__text  -[NSURLSessionTask _private_nw_activity]
+0x18cbe7500  __TEXT,__text  -[NSURLSessionTask resumableUploadState]
+0x18cbe750c  __TEXT,__text  ___50-[NSURLSessionTask addAdditionalHeadersToRequest:]_block_invoke
+0x18cbe7554  __TEXT,__text  -[NSURLSessionTask set_voucher:]
+0x18cbe755c  __TEXT,__text  -[NSURLSessionTask _isAVAssetTask]
+0x18cbe7564  __TEXT,__text  -[NSURLSessionConfiguration setURLCredentialStorage:]
+0x18cbe7590  __TEXT,__text  -[NSURLSessionConfiguration set_phskip_credStorage:]
+0x18cbe7598  __TEXT,__text  -[NSURLSessionConfiguration _phskip_urlCache]
+0x18cbe75a4  __TEXT,__text  -[NSURLSessionConfiguration _phskip_cookieStorage]
+0x18cbe75b0  __TEXT,__text  -[NSURLSession dataTaskWithRequest:completionHandler:]
+0x18cbe7640  __TEXT,__text  -[NSURLSessionTask _description]
+0x18cbe7828  __TEXT,__text  -[NSURLSessionTask copyWithZone:]
+0x18cbe782c  __TEXT,__text  ___57-[__NSCFLocalSessionTask set_timeoutIntervalForResource:]_block_invoke
+0x18cbe7928  __TEXT,__text  -[__NSCFTaskForClass dealloc]
+0x18cbe7a20  __TEXT,__text  -[NSURLSessionTask resume]
+0x18cbe866c  __TEXT,__text  -[NSURLRequest(NSHTTPURLRequest) HTTPBodyStream]
+0x18cbe8688  __TEXT,__text  -[__NSCFURLSessionDelegateWrapper didCreateTask:]
+0x18cbe8774  __TEXT,__text  -[NSURLSessionTask fillTaskDescriptionWithTaskIdentifier:uniqueIdentifier:FixedTemplate:]
+0x18cbe8874  __TEXT,__text  -[__NSCFLocalSessionTask .cxx_construct]
+0x18cbe8888  __TEXT,__text  -[__NSCFTaskForClass initWithGroup:]
+0x18cbe88ec  __TEXT,__text  -[__NSCFURLSessionDelegateWrapper setFallbackDelegateWrapper:]
+0x18cbe88fc  __TEXT,__text  -[NSURLSessionTask initWithOriginalRequest:ident:taskGroup:]
+0x18cbe8d7c  __TEXT,__text  -[NSURLSessionTask initWithTaskGroup:]
+0x18cbe8e0c  __TEXT,__text  -[__CFN_TaskMetrics initWithTask:]
+0x18cbe8fe4  __TEXT,__text  -[NSURLSessionTaskMetrics initWithMetrics:]
+0x18cbe906c  __TEXT,__text  -[NSURLSessionTask currentRequest_URL]
+0x18cbe9088  __TEXT,__text  -[__NSURLSessionLocal _protocolClassForTask:skipAppSSO:]
+0x18cbe9278  __TEXT,__text  -[__NSCFLocalSessionTask _onqueue_completeInitialization]
+0x18cbe92fc  __TEXT,__text  -[NSURLSessionTask set_qos:]
+0x18cbe9304  __TEXT,__text  -[NSURLRequest(NSHTTPURLRequest) _startTimeoutDate]
+0x18cbe9340  __TEXT,__text  ___40-[__NSURLSessionLocal taskForClassInfo:]_block_invoke_3
+0x18cbe93d0  __TEXT,__text  -[__NSURLSessionLocal _onqueue_connectUploadTask:strippedRequest:bodyStream:bodyParts:]
+0x18cbe9588  __TEXT,__text  ___26-[NSURLSessionTask resume]_block_invoke
+0x18cbe9710  __TEXT,__text  -[NSMutableURLRequest(NSMutableHTTPURLRequest) setHTTPBodyStream:]
+0x18cbe9778  __TEXT,__text  -[__NSURLSessionLocal _dataTaskWithTaskForClass:]
+0x18cbe97c8  __TEXT,__text  -[__NSURLSessionLocal taskForClassInfo:]
+0x18cbe9cfc  __TEXT,__text  +[NSURLSession sessionWithConfiguration:]
+0x18cbe9db4  __TEXT,__text  -[NSURLSession dataTaskWithRequest:]
+0x18cbe9e30  __TEXT,__text  +[NSURLRequest requestWithURL:]
+0x18cbe9e60  __TEXT,__text  -[NSURLRequest _CFURLRequest]
+0x18cbe9e64  __TEXT,__text  -[NSMutableURLRequest(NSMutableHTTPURLRequest) setHTTPShouldHandleCookies:]
+0x18cbe9ea8  __TEXT,__text  -[NSURLRequest cachePolicy]
+0x18cbe9ec4  __TEXT,__text  invocation function for block in AppSSO::ssoOptionFlag()
+0x18cbe9f04  __TEXT,__text  -[NSURLRequest _initWithCFURLRequest:]
+0x18cbe9f70  __TEXT,__text  +[NSURLConnection(TimingData) _collectsTimingData]
+0x18cbe9f7c  __TEXT,__text  invocation function for block in HARLoggingEnabled(int)
+0x18cbea054  __TEXT,__text  readHARPreference()
+0x18cbea418  __TEXT,__text  secondsToStopForHARLogging(__CFString const*)
+0x18cbea4a8  __TEXT,__text  -[NSMutableURLRequest(NSMutableHTTPURLRequest) setValue:forHTTPHeaderField:]
+0x18cbea578  __TEXT,__text  HTTPMessage::removeHeaderFieldValue(__CFString const*)
+0x18cbea62c  __TEXT,__text  HTTPHeaderDict::removeValue(HTTPHeaderKeyMixedValue const&)
+0x18cbea6a4  __TEXT,__text  -[NSURLRequest(NSHTTPURLRequest) HTTPBody]
+0x18cbea6cc  __TEXT,__text  -[__NSURLSessionLocal _protocolClassesForTask:]
+0x18cbeab14  __TEXT,__text  -[NSURLSessionTask originalRequest]
+0x18cbeab20  __TEXT,__text  -[NSURLSessionConfiguration dealloc]
+0x18cbeac54  __TEXT,__text  -[__NSURLSessionLocal _createCanonicalRequestForTask:]
+0x18cbeacdc  __TEXT,__text  -[NSURLRequest(NSHTTPURLRequest) allHTTPHeaderFields]
+0x18cbead04  __TEXT,__text  -[NSURLSessionConfiguration _phskip_credStorage]
+0x18cbead10  __TEXT,__text  ___47+[__CFN_ConnectionContextManager sharedManager]_block_invoke
+0x18cbead38  __TEXT,__text  -[__CFN_ConnectionContextManager init]
+0x18cbeadb0  __TEXT,__text  -[NSURLSessionConfiguration getConnectionCacheLimits]
+0x18cbeadd0  __TEXT,__text  -[NSURLSession delegate]
+0x18cbeaddc  __TEXT,__text  -[NSURLSessionConfiguration set_pidForHAR:]
+0x18cbeade4  __TEXT,__text  -[NSURLSessionConfiguration set_prohibitEncryptedDNS:]
+0x18cbeadec  __TEXT,__text  -[NSURLSessionConfiguration set_disableAPWakeOnIdleConnections:]
+0x18cbeadf4  __TEXT,__text  -[NSURLSessionConfiguration usesClassicLoadingMode]
+0x18cbeae00  __TEXT,__text  -[NSURLSessionConfiguration enablesEarlyData]
+0x18cbeae0c  __TEXT,__text  -[NSURLSessionConfiguration set_preferredMaxParallelTasks:]
+0x18cbeae14  __TEXT,__text  -[NSURLSessionConfiguration setEnablesEarlyData:]
+0x18cbeae1c  __TEXT,__text  -[NSURLSessionConfiguration _preferredMaxParallelTasks]
+0x18cbeae24  __TEXT,__text  -[NSURLSessionConfiguration _backgroundSessionForPrivilegedDaemon]
+0x18cbeae30  __TEXT,__text  -[NSURLSessionConfiguration set_backgroundSessionForPrivilegedDaemon:]
+0x18cbeae38  __TEXT,__text  -[NSURLSessionConfiguration set_companionAppBundleIdentifier:]
+0x18cbeae40  __TEXT,__text  -[NSURLSessionConfiguration _forcedNetworkServiceType]
+0x18cbeae48  __TEXT,__text  -[NSURLSessionConfiguration set_forcedNetworkServiceType:]
+0x18cbeae50  __TEXT,__text  -[NSURLSessionConfiguration _overriddenDelegateOptions]
+0x18cbeae5c  __TEXT,__text  -[NSURLSessionConfiguration set_overriddenDelegateOptions:]
+0x18cbeae64  __TEXT,__text  -[NSURLSessionConfiguration _suppressedAutoAddedHTTPHeaders]
+0x18cbeae70  __TEXT,__text  -[NSURLSessionConfiguration set_suppressedAutoAddedHTTPHeaders:]
+0x18cbeae78  __TEXT,__text  -[NSURLSessionConfiguration _expiredDNSBehavior]
+0x18cbeae80  __TEXT,__text  -[NSURLSessionConfiguration set_expiredDNSBehavior:]
+0x18cbeae88  __TEXT,__text  -[NSURLSessionConfiguration requiresDNSSECValidation]
+0x18cbeae94  __TEXT,__text  -[NSURLSessionConfiguration setRequiresDNSSECValidation:]
+0x18cbeae9c  __TEXT,__text  -[NSURLSessionConfiguration _maximumWatchCellularTransferSize]
+0x18cbeaea8  __TEXT,__text  -[NSURLSessionConfiguration set_maximumWatchCellularTransferSize:]
+0x18cbeaeb0  __TEXT,__text  -[NSURLSessionConfiguration _multipathAlternatePort]
+0x18cbeaeb8  __TEXT,__text  -[NSURLSessionConfiguration set_multipathAlternatePort:]
+0x18cbeaec0  __TEXT,__text  -[NSURLSessionConfiguration _allowsHTTP3Internal]
+0x18cbeaec8  __TEXT,__text  -[NSURLSessionConfiguration set_allowsHTTP3Internal:]
+0x18cbeaed0  __TEXT,__text  -[NSURLSessionConfiguration setUsesClassicLoadingMode:]
+0x18cbeaed8  __TEXT,__text  -[NSURLSessionConfiguration set_neTrackerTCCResult:]
+0x18cbeaee0  __TEXT,__text  -[NSURLSessionConfiguration _disablesNWLoader]
+0x18cbeaeec  __TEXT,__text  -[NSURLSessionConfiguration _downloadFileProtectionType]
+0x18cbeaef8  __TEXT,__text  -[NSURLSessionConfiguration set_downloadFileProtectionType:]
+0x18cbeaf00  __TEXT,__text  -[NSURLSessionConfiguration _pidForHAR]
+0x18cbeaf08  __TEXT,__text  -[NSURLSessionConfiguration _neTrackerTCCResult]
+0x18cbeaf10  __TEXT,__text  -[NSURLSessionConfiguration set_disablesNWLoader:]
+0x18cbeaf18  __TEXT,__text  -[NSURLSessionConfiguration _enablesL4SInternal]
+0x18cbeaf20  __TEXT,__text  -[NSURLSessionConfiguration set_enableOAuthBearerTokenChallenges:]
+0x18cbeaf28  __TEXT,__text  -[NSURLSessionConfiguration _disableAPWakeOnIdleConnections]
+0x18cbeaf34  __TEXT,__text  -[NSURLSessionConfiguration set_enablesL4SInternal:]
+0x18cbeaf3c  __TEXT,__text  -[NSURLSessionConfiguration _prohibitEncryptedDNS]
+0x18cbeaf48  __TEXT,__text  -[NSURLSessionConfiguration _enableOAuthBearerTokenChallenges]
+0x18cbeaf54  __TEXT,__text  -[NSURLSessionConfiguration _systemClientOfPrivateAccessTokens]
+0x18cbeaf60  __TEXT,__text  -[NSURLSessionConfiguration set_systemClientOfPrivateAccessTokens:]
+0x18cbeaf68  __TEXT,__text  -[NSURLSessionConfiguration _companionAppBundleIdentifier]
+0x18cbeaf74  __TEXT,__text  -[NSURLSessionConfiguration set_allowsTLSFallback:]
+0x18cbeaf7c  __TEXT,__text  -[NSURLSessionConfiguration _allowsTLSECH]
+0x18cbeaf88  __TEXT,__text  -[NSURLSessionConfiguration set_allowsTLSECH:]
+0x18cbeaf90  __TEXT,__text  -[NSURLSessionConfiguration _forceEnablePQTLS]
+0x18cbeaf9c  __TEXT,__text  -[NSURLSessionConfiguration set_forceEnablePQTLS:]
+0x18cbeafa4  __TEXT,__text  -[NSURLSessionConfiguration set_tlsTrustPinningPolicyName:]
+0x18cbeafac  __TEXT,__text  -[NSURLSessionConfiguration _allowsTLSSessionResumption]
+0x18cbeafb8  __TEXT,__text  -[NSURLSessionConfiguration set_allowsTLSSessionResumption:]
+0x18cbeafc0  __TEXT,__text  -[NSURLSessionConfiguration _allowsTLSFalseStart]
+0x18cbeafcc  __TEXT,__text  -[NSURLSessionConfiguration set_allowsTLSFalseStart:]
+0x18cbeafd4  __TEXT,__text  -[NSURLSessionConfiguration _tlsTrustPinningPolicyName]
+0x18cbeafe0  __TEXT,__text  -[NSURLSessionConfiguration _allowsTLSFallback]
+0x18cbeafec  __TEXT,__text  -[NSURLSessionConfiguration set_allowsTLSSessionTickets:]
+0x18cbeaff4  __TEXT,__text  -[NSURLSessionConfiguration _appleIDContext]
+0x18cbeb000  __TEXT,__text  -[NSURLSessionConfiguration _proxyConfigurations]
+0x18cbeb00c  __TEXT,__text  -[NSURLSessionConfiguration _loggingPrivacyLevel]
+0x18cbeb014  __TEXT,__text  -[NSURLSessionConfiguration _requiresSustainedDataDelivery]
+0x18cbeb020  __TEXT,__text  -[NSURLSessionConfiguration _authenticatorStatusCodes]
+0x18cbeb02c  __TEXT,__text  -[NSURLSessionConfiguration _preventsSystemHTTPProxyAuthentication]
+0x18cbeb038  __TEXT,__text  -[NSURLSessionConfiguration _preventsAppSSO]
+0x18cbeb044  __TEXT,__text  -[NSURLSessionConfiguration set_allowsTCPFastOpen:]
+0x18cbeb04c  __TEXT,__text  -[NSURLSessionConfiguration set_allowsIndefiniteConnections:]
+0x18cbeb054  __TEXT,__text  -[NSURLSessionConfiguration _ignoreDidReceiveResponseDisposition]
+0x18cbeb060  __TEXT,__text  -[NSURLSessionConfiguration set_ignoreDidReceiveResponseDisposition:]
+0x18cbeb068  __TEXT,__text  -[NSURLSessionConfiguration set_allowsMultipathTCP:]
+0x18cbeb070  __TEXT,__text  -[NSURLSessionConfiguration set_alwaysPerformDefaultTrustEvaluation:]
+0x18cbeb078  __TEXT,__text  -[NSURLSessionConfiguration set_IDSMessageTimeout:]
+0x18cbeb080  __TEXT,__text  -[NSURLSessionConfiguration set_allowsResponseMonitoringDuringBodyTranmission:]
+0x18cbeb088  __TEXT,__text  -[NSURLSessionConfiguration _allowTCPIOConnectionStreamTask]
+0x18cbeb094  __TEXT,__text  -[NSURLSessionConfiguration set_overridesBackgroundSessionAutoRedirect:]
+0x18cbeb09c  __TEXT,__text  -[NSURLSessionConfiguration set_duetPreClearedMode:]
+0x18cbeb0a4  __TEXT,__text  -[NSURLSessionConfiguration set_atsContext:]
+0x18cbeb0e8  __TEXT,__text  -[NSURLSessionConfiguration set_customReadBufferSize:]
+0x18cbeb0f0  __TEXT,__text  -[NSURLSessionConfiguration set_allowTCPIOConnectionStreamTask:]
+0x18cbeb0f8  __TEXT,__text  -[NSURLSessionConfiguration set_customReadBufferTimeout:]
+0x18cbeb100  __TEXT,__text  -[NSURLSessionConfiguration _IDSMessageTimeout]
+0x18cbeb108  __TEXT,__text  -[NSURLSessionConfiguration _connectionCacheMinimumFastLanePriority]
+0x18cbeb110  __TEXT,__text  -[NSURLSessionConfiguration set_tcpConnectionPoolName:]
+0x18cbeb118  __TEXT,__text  -[NSURLSessionConfiguration _atsContext]
+0x18cbeb120  __TEXT,__text  -[NSURLSessionConfiguration set_preventsAppSSO:]
+0x18cbeb128  __TEXT,__text  -[NSURLSessionConfiguration _alwaysPerformDefaultTrustEvaluation]
+0x18cbeb134  __TEXT,__text  -[NSURLSessionConfiguration _tcpConnectionPoolName]
+0x18cbeb140  __TEXT,__text  -[NSURLSessionConfiguration _socketStreamProperties]
+0x18cbeb14c  __TEXT,__text  -[NSURLSessionConfiguration _preventsIdleSleepOnceConnected]
+0x18cbeb158  __TEXT,__text  -[NSURLSessionConfiguration _customReadBufferTimeout]
+0x18cbeb160  __TEXT,__text  -[NSURLSessionConfiguration _CTDataConnectionServiceType]
+0x18cbeb16c  __TEXT,__text  -[NSURLSessionConfiguration _customReadBufferSize]
+0x18cbeb174  __TEXT,__text  -[NSURLSessionConfiguration _allowsResponseMonitoringDuringBodyTranmission]
+0x18cbeb180  __TEXT,__text  -[NSURLSessionConfiguration _allowsMultipathTCP]
+0x18cbeb18c  __TEXT,__text  -[NSURLSessionConfiguration _allowsIndefiniteConnections]
+0x18cbeb198  __TEXT,__text  -[NSURLSessionConfiguration _allowsTCPFastOpen]
+0x18cbeb1a4  __TEXT,__text  -[NSURLSessionConfiguration _allowsTLSSessionTickets]
+0x18cbeb1b0  __TEXT,__text  -[NSURLSessionConfiguration _connectionCacheNumFastLanes]
+0x18cbeb1b8  __TEXT,__text  -[NSURLSessionConfiguration set_connectionCacheNumFastLanes:]
+0x18cbeb1d0  __TEXT,__text  -[NSURLSessionConfiguration set_connectionCacheMinimumFastLanePriority:]
+0x18cbeb1d8  __TEXT,__text  -[NSURLSessionConfiguration set_preventsIdleSleepOnceConnected:]
+0x18cbeb1e0  __TEXT,__text  -[NSURLSessionConfiguration _overridesBackgroundSessionAutoRedirect]
+0x18cbeb1ec  __TEXT,__text  -[NSURLSessionConfiguration _prefersInfraWiFi]
+0x18cbeb1f8  __TEXT,__text  -[NSURLSessionConfiguration set_shouldPreserveBackgroundSessionDisposition:]
+0x18cbeb200  __TEXT,__text  -[NSURLSessionConfiguration _disablesUseOfProxySession]
+0x18cbeb20c  __TEXT,__text  -[NSURLSessionConfiguration set_preventsDirectWiFiAccess:]
+0x18cbeb214  __TEXT,__text  -[NSURLSessionConfiguration _xpcActivityBudgeted]
+0x18cbeb21c  __TEXT,__text  -[NSURLSessionConfiguration set_xpcActivityBudgeted:]
+0x18cbeb224  __TEXT,__text  -[NSURLSessionConfiguration set_requiresSustainedDataDelivery:]
+0x18cbeb22c  __TEXT,__text  -[NSURLSessionConfiguration _explicitlySetATSContext]
+0x18cbeb238  __TEXT,__text  -[NSURLSessionConfiguration _performsEVCertCheck]
+0x18cbeb244  __TEXT,__text  -[NSURLSessionConfiguration set_performsEVCertCheck:]
+0x18cbeb24c  __TEXT,__text  -[NSURLSessionConfiguration set_appleIDContext:]
+0x18cbeb254  __TEXT,__text  -[NSURLSessionConfiguration set_authenticatorStatusCodes:]
+0x18cbeb25c  __TEXT,__text  -[NSURLSessionConfiguration set_prefersInfraWiFi:]
+0x18cbeb264  __TEXT,__text  -[NSURLSessionConfiguration _shouldPreserveBackgroundSessionDisposition]
+0x18cbeb270  __TEXT,__text  -[NSURLSessionConfiguration _disablesOutOfProcessDirectWiFiUsage]
+0x18cbeb27c  __TEXT,__text  -[NSURLSessionConfiguration set_disablesOutOfProcessDirectWiFiUsage:]
+0x18cbeb284  __TEXT,__text  -[NSURLSessionConfiguration set_disablesUseOfProxySession:]
+0x18cbeb28c  __TEXT,__text  -[NSURLSessionConfiguration _preventsDirectWiFiAccess]
+0x18cbeb298  __TEXT,__text  -[NSURLSessionConfiguration set_explicitlySetATSContext:]
+0x18cbeb2a0  __TEXT,__text  -[NSURLSessionConfiguration set_CTDataConnectionServiceType:]
+0x18cbeb2a8  __TEXT,__text  -[NSURLSessionConfiguration _duetPreClearedMode]
+0x18cbeb2b0  __TEXT,__text  -[NSURLSessionConfiguration set_preventsSystemHTTPProxyAuthentication:]
+0x18cbeb2b8  __TEXT,__text  -[NSURLSessionConfiguration set_requiresSecureHTTPSProxyConnection:]
+0x18cbeb2c0  __TEXT,__text  -[NSURLSessionConfiguration set_proxyConfigurations:]
+0x18cbeb2c8  __TEXT,__text  -[NSURLSessionConfiguration set_loggingPrivacyLevel:]
+0x18cbeb2d0  __TEXT,__text  -[NSURLSessionConfiguration _duetPreauthorized]
+0x18cbeb2dc  __TEXT,__text  -[NSURLSessionConfiguration set_duetPreauthorized:]
+0x18cbeb2e4  __TEXT,__text  -[NSHTTPURLResponse dealloc]
+0x18cbeb330  __TEXT,__text  -[NSURLResponse(NSURLResponsePrivate) dealloc]
+0x18cbeb37c  __TEXT,__text  -[NSURLResponseInternal dealloc]
+0x18cbeb3b4  __TEXT,__text  -[NSURLResponseInternal .cxx_destruct]
+0x18cbeb3bc  __TEXT,__text  URLResponse::~URLResponse()
+0x18cbeb488  __TEXT,__text  HTTPResponse::~HTTPResponse()
+0x18cbeb48c  __TEXT,__text  CFContainerEnumeratorBase::_claimArrayData(void const*, long, void const**)
+0x18cbeb49c  __TEXT,__text  -[NSURLSessionTask _releasePreventIdleSleepAssertionIfAppropriate]
+0x18cbeb6b0  __TEXT,__text  -[NSURLSessionTask _powerAssertion]
+0x18cbeb6b8  __TEXT,__text  -[NSURLSessionTask _darkWakePowerAssertion]
+0x18cbeb6c0  __TEXT,__text  HTTPResponseMessage::~HTTPResponseMessage()
+0x18cbeb788  __TEXT,__text  -[NSURLResponseInternal init]
+0x18cbeb7c0  __TEXT,__text  HTTPHeaderDict::addValue(HTTPHeaderKeyMixedValue const&, HTTPHeaderValueMixedValue const&)
+0x18cbeb8cc  __TEXT,__text  _logHARResponseBody
+0x18cbeb9a8  __TEXT,__text  HTTPResponseMessage::HTTPResponseMessage(HTTPResponseMessage const*)
+0x18cbebaa4  __TEXT,__text  -[NSURLResponseInternal .cxx_construct]
+0x18cbebb3c  __TEXT,__text  URLResponse::getMIMEType()
+0x18cbebbfc  __TEXT,__text  HTTPProtocol::validateCachedResponseForLoad(_CFCachedURLResponse const*)
+0x18cbec36c  __TEXT,__text  -[NSURLSessionTask _copyATSState]
+0x18cbec410  __TEXT,__text  HTTPMessage::copyHeaderFieldValue(CFNetworkConstantString::HTTPHeader::DomainString)
+0x18cbec4e4  __TEXT,__text  std::__1::__shared_ptr_pointer<__CFString const*, Deleter_CFRelease, std::__1::allocator<__CFString> >::__on_zero_shared()
+0x18cbec5fc  __TEXT,__text  URLRequest::copyProtocolPropertyForKey(__CFString const*) const
+0x18cbec628  __TEXT,__text  -[NSURLSessionTaskTransactionMetrics .cxx_destruct]
+0x18cbec634  __TEXT,__text  -[__NSURLSessionLocal _onqueue_checkForCompletion]
+0x18cbec808  __TEXT,__text  -[NSURLResponse _initWithCFURLResponse:]
+0x18cbec8c4  __TEXT,__text  std::__1::__shared_ptr_pointer<__CFDictionary*, Deleter_CFRelease, std::__1::allocator<__CFDictionary> >::__on_zero_shared()
+0x18cbec8d4  __TEXT,__text  std::__1::__shared_ptr_pointer<__CFDictionary*, Deleter_CFRelease, std::__1::allocator<__CFDictionary> >::__on_zero_shared_weak()
+0x18cbec8d8  __TEXT,__text  std::__1::__shared_ptr_pointer<__CFString const*, Deleter_CFRelease, std::__1::allocator<__CFString> >::__on_zero_shared_weak()
+0x18cbec8dc  __TEXT,__text  URLConnectionLoader::touchConnection()
+0x18cbecabc  __TEXT,__text  invocation function for block in SessionConnectionLoadable::withLoaderClientAsync(void  block_pointer(LoaderClientInterface*))
+0x18cbecb0c  __TEXT,__text  -[__NSCFURLLocalSessionConnection withDelegateAndPendingCompletion:]
+0x18cbecbb8  __TEXT,__text  -[__NSCFURLLocalSessionConnection afterDelegateWithTick:]
+0x18cbecc2c  __TEXT,__text  ___57-[__NSCFURLLocalSessionConnection afterDelegateWithTick:]_block_invoke
+0x18cbecc78  __TEXT,__text  invocation function for block in URLConnectionInstanceData::withWorkQueueAsync(void  block_pointer()) const
+0x18cbeccc8  __TEXT,__text  URLConnectionInstanceData::withWorkQueueAsync(void  block_pointer()) const
+0x18cbecd6c  __TEXT,__text  SessionConnectionLoadable::withLoaderClientAsync(void  block_pointer(LoaderClientInterface*))
+0x18cbece08  __TEXT,__text  non-virtual thunk to URLConnectionLoader_Classic::protocolReleaseClient()
+0x18cbece80  __TEXT,__text  URLProtocol::forgetProtocolClient()
+0x18cbecf58  __TEXT,__text  Throttler::invalidate(void  block_pointer())
+0x18cbed00c  __TEXT,__text  invocation function for block in Throttler::invalidate(void  block_pointer())
+0x18cbed140  __TEXT,__text  Throttler::~Throttler()
+0x18cbed210  __TEXT,__text  Throttler::~Throttler()
+0x18cbed240  __TEXT,__text  HTTPProtocol::cleanupStreams()
+0x18cbed2d8  __TEXT,__text  HTTPProtocol::destroyReadStream()
+0x18cbed8c0  __TEXT,__text  ProxyConnectionEstablishment::~ProxyConnectionEstablishment()
+0x18cbed948  __TEXT,__text  AuthenticationState::~AuthenticationState()
+0x18cbeda3c  __TEXT,__text  AuthenticationState::~AuthenticationState()
+0x18cbeda40  __TEXT,__text  std::__1::__shared_ptr_emplace<AuthenticationState, std::__1::allocator<AuthenticationState> >::__on_zero_shared()
+0x18cbeda5c  __TEXT,__text  AuthenticationConfiguration::~AuthenticationConfiguration()
+0x18cbeda8c  __TEXT,__text  -[__NSCFDeallocBomb dealloc]
+0x18cbedc68  __TEXT,__text  -[__NSCFDeallocBomb initWithMethod:delegate:]
+0x18cbedd18  __TEXT,__text  -[__NSCFDeallocBomb disarm]
+0x18cbeded0  __TEXT,__text  -[__NSCFDeallocBomb .cxx_destruct]
+0x18cbededc  __TEXT,__text  HTTPProtocol::~HTTPProtocol()
+0x18cbee5e0  __TEXT,__text  HTTPProtocol::~HTTPProtocol()
+0x18cbee5e4  __TEXT,__text  URLProtocol::~URLProtocol()
+0x18cbee6e4  __TEXT,__text  HTTPProtocol::_protocolInterface_cancelLoad()
+0x18cbee7a8  __TEXT,__text  NSXCredentialStorage::~NSXCredentialStorage()
+0x18cbee7fc  __TEXT,__text  -[NSURLSession configuration]
+0x18cbee81c  __TEXT,__text  invocation function for block in HTTPProtocol::_createMutableCanonicalRequest(__CFAllocator const*, _CFURLRequest const*, NSURLSessionTask*, void const*)
+0x18cbee828  __TEXT,__text  HTTPProtocol::needServerTrust(__SecTrust*, void  block_pointer(SSLPeerTrustAcceptancePolicy, bool))
+0x18cbeeca8  __TEXT,__text  non-virtual thunk to Tube::needServerTrust(__SecTrust*, void  block_pointer(SSLPeerTrustAcceptancePolicy, bool))
+0x18cbeecb0  __TEXT,__text  Tube::needServerTrust(__SecTrust*, void  block_pointer(SSLPeerTrustAcceptancePolicy, bool))
+0x18cbeef38  __TEXT,__text  AuthenticationState::setOption(AuthenticationConfiguration::Options, bool)
+0x18cbef078  __TEXT,__text  std::__1::__shared_ptr_emplace<AuthenticationState, std::__1::allocator<AuthenticationState> >::__on_zero_shared_weak()
+0x18cbef07c  __TEXT,__text  MultiplexerSource::_perform(void*)
+0x18cbef274  __TEXT,__text  ___destroy_helper_block_e8_32c39_ZTSNSt3__18weak_ptrI14HTTPStallTimerEE48c27_ZTSNSt3__110shared_ptrIvEE
+0x18cbef2b8  __TEXT,__text  invocation function for block in HTTPStallTimer::remove(std::__1::shared_ptr<void>)
+0x18cbef410  __TEXT,__text  HTTPConnectionCacheKey::~HTTPConnectionCacheKey()
+0x18cbef440  __TEXT,__text  connectionTimingFromMetrics(__CFN_ConnectionMetrics*)
+0x18cbef79c  __TEXT,__text  invocation function for block in connectionTimingFromMetrics(__CFN_ConnectionMetrics*)
+0x18cbef7f4  __TEXT,__text  invocation function for block in connectionTimingFromMetrics(__CFN_ConnectionMetrics*)
+0x18cbef84c  __TEXT,__text  -[__CFN_TaskMetrics lockTransactionMetrics:]
+0x18cbef8c0  __TEXT,__text  -[NSURLSessionTaskMetrics transactionMetrics]
+0x18cbef9c0  __TEXT,__text  ___45-[NSURLSessionTaskMetrics transactionMetrics]_block_invoke
+0x18cbefc60  __TEXT,__text  -[NSHTTPURLResponse allHeaderFields]
+0x18cbefccc  __TEXT,__text  -[NSHTTPURLResponse statusCode]
+0x18cbefd00  __TEXT,__text  HTTPMessage::copyAsMultiValueDict()
+0x18cbefd40  __TEXT,__text  ___copy_helper_block_e8_40c51_ZTSNSt3__110shared_ptrI23CoreSchedulingSetOneOffEE
+0x18cbefd60  __TEXT,__text  -[NSURLSession runDelegateBlock:]
+0x18cbefd84  __TEXT,__text  ___destroy_helper_block_e8_40c51_ZTSNSt3__110shared_ptrI23CoreSchedulingSetOneOffEE
+0x18cbefd94  __TEXT,__text  std::__1::__shared_ptr_emplace<CoreSchedulingSetOneOff, std::__1::allocator<CoreSchedulingSetOneOff> >::__on_zero_shared()
+0x18cbefdd8  __TEXT,__text  std::__1::__shared_ptr_emplace<CoreSchedulingSetOneOff, std::__1::allocator<CoreSchedulingSetOneOff> >::__on_zero_shared_weak()
+0x18cbefddc  __TEXT,__text  invocation function for block in URLConnectionLoader::_loaderEvent_AckBytes(long long)
+0x18cbefebc  __TEXT,__text  invocation function for block in URLConnectionLoader::invalidateAsync(std::__1::shared_ptr<CoreSchedulingSetOneOff>)
+0x18cbeff80  __TEXT,__text  URLConnectionInstanceData::invalidateAsync(std::__1::shared_ptr<CoreSchedulingSetOneOff>)
+0x18cbf0050  __TEXT,__text  URLRequest::createArchiveList(__CFAllocator const*, long*, void const***, long*, __CFDictionary const**) const
+0x18cbf0490  __TEXT,__text  URLConnectionLoader::~URLConnectionLoader()
+0x18cbf05c4  __TEXT,__text  URLConnectionLoader_Classic::~URLConnectionLoader_Classic()
+0x18cbf05f4  __TEXT,__text  ___49-[__NSURLSessionLocal task:terminatedConnection:]_block_invoke
+0x18cbf05fc  __TEXT,__text  -[__NSCFLocalSessionTask _onSessionQueue_disavow]
+0x18cbf0650  __TEXT,__text  -[__NSCFURLLocalSessionConnection dealloc]
+0x18cbf0724  __TEXT,__text  ___51-[NSURLSession _onqueue_didCompleteTask:withError:]_block_invoke
+0x18cbf075c  __TEXT,__text  ___79-[__NSCFURLSessionDelegateWrapper task:didCompleteWithError:completionHandler:]_block_invoke
+0x18cbf0794  __TEXT,__text  -[__NSURLSessionLocal task:terminatedConnection:]
+0x18cbf0830  __TEXT,__text  ___81-[__NSCFLocalSessionTask _onqueue_startTimer:withTimeoutInNanos:streamErrorCode:]_block_invoke_2
+0x18cbf0838  __TEXT,__text  -[__NSCFLocalSessionTask localSession]
+0x18cbf08d8  __TEXT,__text  -[NSURLResponse copyWithZone:]
+0x18cbf08dc  __TEXT,__text  -[NSURLSessionTask _resetTaskDelegate]
+0x18cbf092c  __TEXT,__text  URLConnectionInstanceData::~URLConnectionInstanceData()
+0x18cbf09b8  __TEXT,__text  invocation function for block in URLConnectionLoader::_loaderEvent_ResumeProtocolLoad()
+0x18cbf09e0  __TEXT,__text  -[NSURLSessionTask _consumePendingBytesReceivedEncoded]
+0x18cbf0a6c  __TEXT,__text  ___48-[__NSCFURLLocalSessionConnection _tick_running]_block_invoke_2
+0x18cbf0b18  __TEXT,__text  ___45-[__NSCFURLLocalSessionConnection _ackBytes:]_block_invoke
+0x18cbf0b48  __TEXT,__text  non-virtual thunk to URLConnectionLoader::_loaderEvent_AckBytes(long long)
+0x18cbf0b50  __TEXT,__text  URLConnectionLoader::_loaderEvent_AckBytes(long long)
+0x18cbf0c30  __TEXT,__text  -[__NSCFURLLocalSessionConnection _ackBytes:]
+0x18cbf0c9c  __TEXT,__text  ___48-[__NSCFURLLocalSessionConnection _tick_running]_block_invoke_3
+0x18cbf0d04  __TEXT,__text  -[__NSCFLocalSessionTask _task_onqueue_didReceiveDispatchData:completionHandler:]
+0x18cbf0ddc  __TEXT,__text  -[__NSCFURLSessionConnection _appendDataToCache:]
+0x18cbf0e6c  __TEXT,__text  invocation function for block in URLConnectionLoader::ensureLoaderHasProtocolNoLock(NSURLRequest*)
+0x18cbf0e90  __TEXT,__text  invocation function for block in URLConnectionLoader::_loaderEvent_SuspendProtocolLoad()
+0x18cbf0eb8  __TEXT,__text  ___48-[__NSCFURLLocalSessionConnection _tick_running]_block_invoke
+0x18cbf0fb4  __TEXT,__text  -[NSURLResponse expectedContentLength]
+0x18cbf0fb8  __TEXT,__text  -[__NSCFLocalDataTask _onqueue_didReceiveResponse:completion:]
+0x18cbf116c  __TEXT,__text  ___55-[__NSCFURLLocalSessionConnection _didFinishWithError:]_block_invoke
+0x18cbf11bc  __TEXT,__text  -[__NSCFLocalSessionTask connection:didReceiveResponse:completion:]
+0x18cbf12e8  __TEXT,__text  SessionConnectionLoadable::_loaderClientEvent_DidReceiveData(__CFArray const*, NSObject objcproto16OS_dispatch_data*)
+0x18cbf1374  __TEXT,__text  -[__NSCFURLLocalSessionConnection _didReceiveData:]
+0x18cbf1538  __TEXT,__text  conCatData(NSObject objcproto16OS_dispatch_data**, NSObject objcproto16OS_dispatch_data*)
+0x18cbf158c  __TEXT,__text  -[__NSCFURLLocalSessionConnection _didFinishWithError:]
+0x18cbf1650  __TEXT,__text  ___59-[__NSCFURLLocalSessionConnection _sendResponseToDelegate:]_block_invoke_3
+0x18cbf17d4  __TEXT,__text  ___67-[__NSCFLocalSessionTask connection:didReceiveResponse:completion:]_block_invoke_2
+0x18cbf1898  __TEXT,__text  ___59-[__NSCFURLLocalSessionConnection _sendResponseToDelegate:]_block_invoke_2
+0x18cbf1944  __TEXT,__text  -[NSURLSessionTask error]
+0x18cbf1950  __TEXT,__text  -[NSURLSessionTask setError:]
+0x18cbf1958  __TEXT,__text  -[NSURLSessionTask _completeUploadProgress]
+0x18cbf198c  __TEXT,__text  -[NSURLSessionTask _finishProgressReporting]
+0x18cbf1a34  __TEXT,__text  ___summaryLog_block_invoke
+0x18cbf1a6c  __TEXT,__text  -[NSURLResponse respondsToSelector:]
+0x18cbf1b0c  __TEXT,__text  -[__NSCFURLSessionConnection _setupForCache:expectedLength:response:]
+0x18cbf1b84  __TEXT,__text  ___41-[__NSCFURLLocalSessionConnection resume]_block_invoke
+0x18cbf1bbc  __TEXT,__text  non-virtual thunk to URLConnectionLoader::_loaderEvent_ResumeProtocolLoad()
+0x18cbf1bcc  __TEXT,__text  ___81-[__NSCFURLSessionDelegateWrapper dataTask:didReceiveResponse:completionHandler:]_block_invoke_3
+0x18cbf1be0  __TEXT,__text  -[__NSCFLocalSessionTask _private_onqueue_didReceiveResponseDisposition:completion:]
+0x18cbf21f0  __TEXT,__text  ___81-[__NSCFURLSessionDelegateWrapper dataTask:didReceiveResponse:completionHandler:]_block_invoke_2
+0x18cbf2294  __TEXT,__text  ___62-[__NSCFLocalDataTask _onqueue_didReceiveResponse:completion:]_block_invoke
+0x18cbf22a4  __TEXT,__text  ___49-[__NSCFLocalSessionTask _task_onqueue_didFinish]_block_invoke_3
+0x18cbf22cc  __TEXT,__text  ___43-[__NSCFURLLocalSessionConnection _cleanup]_block_invoke_2
+0x18cbf2300  __TEXT,__text  invocation function for block in CoreSchedulingSetOneOff::performAsyncWithTrailingBlock(void  block_pointer()) const
+0x18cbf2340  __TEXT,__text  ___51-[__NSCFURLLocalSessionConnection _task_sendFinish]_block_invoke_2
+0x18cbf23b8  __TEXT,__text  invocation function for block in URLConnectionLoader::invalidateAsync(std::__1::shared_ptr<CoreSchedulingSetOneOff>)
+0x18cbf25e0  __TEXT,__text  invocation function for block in URLConnectionInstanceData::invalidateAsync(std::__1::shared_ptr<CoreSchedulingSetOneOff>)
+0x18cbf26a4  __TEXT,__text  invocation function for block in URLConnectionInstanceData::invalidateAsync(std::__1::shared_ptr<CoreSchedulingSetOneOff>)
+0x18cbf26c4  __TEXT,__text  -[__NSCFLocalSessionTask _task_onqueue_didFinish]
+0x18cbf299c  __TEXT,__text  ___43-[__NSCFURLLocalSessionConnection _cleanup]_block_invoke
+0x18cbf2aa4  __TEXT,__text  -[__CFN_TaskMetrics completeWithError:]
+0x18cbf2da8  __TEXT,__text  ___51-[__NSCFURLLocalSessionConnection _task_sendFinish]_block_invoke
+0x18cbf2e7c  __TEXT,__text  URLConnectionLoader::invalidateAsync(std::__1::shared_ptr<CoreSchedulingSetOneOff>)
+0x18cbf2f30  __TEXT,__text  -[__NSCFURLSessionDelegateWrapper task:didFinishCollectingMetrics:completionHandler:]
+0x18cbf3168  __TEXT,__text  _summaryLog
+0x18cbf31b0  __TEXT,__text  endReasonString(_NSURLSessionTransactionEndReason)
+0x18cbf3254  __TEXT,__text  -[__NSCFURLSessionConnection _cachedResponse]
+0x18cbf331c  __TEXT,__text  Throttler::noteOutstandingBytes(long long)
+0x18cbf3548  __TEXT,__text  non-virtual thunk to URLProtocol::_throttle_getCurrentSuspensionThreshold(long long)
+0x18cbf3564  __TEXT,__text  non-virtual thunk to URLConnectionLoader_Classic::protocolDidLoadData(__CFData const*, long long)
+0x18cbf356c  __TEXT,__text  URLConnectionLoader_Classic::protocolDidLoadData(__CFData const*, long long)
+0x18cbf3608  __TEXT,__text  URLConnectionLoader::protocolDidLoadData(__CFData const*, long long)
+0x18cbf3944  __TEXT,__text  invocation function for block in URLConnectionLoader_Classic::protocolDidLoadData(__CFData const*, long long)
+0x18cbf3988  __TEXT,__text  invocation function for block in URLConnectionLoader::protocolDidReceiveResponse(_CFURLResponse*)
+```
+First 1,000 of 12,250.
+

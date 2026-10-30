@@ -1,0 +1,3054 @@
+# Symbols: `/System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__PrivateFrameworks__ManagedConfiguration.framework__ManagedConfiguration.md). **[DSC]**
+
+2,037 public symbols, 5,316 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x19464aa8c  __TEXT,__text  _ACMContextAddCredential
+0x19465c7ac  __TEXT,__text  _ACMContextAddCredentialWithScope
+0x19464aca8  __TEXT,__text  _ACMContextContainsCredentialType
+0x19464ad5c  __TEXT,__text  _ACMContextContainsCredentialTypeEx
+0x19465d1f4  __TEXT,__text  _ACMContextContainsPassphraseCredentialWithPurpose
+0x19464cc84  __TEXT,__text  _ACMContextCopyData
+0x19464a2e0  __TEXT,__text  _ACMContextCreate
+0x19464a500  __TEXT,__text  _ACMContextCreateWithExternalForm
+0x19464a2e8  __TEXT,__text  _ACMContextCreateWithFlags
+0x19464c4a0  __TEXT,__text  _ACMContextCredentialGetProperty
+0x19464c4b0  __TEXT,__text  _ACMContextCredentialGetPropertyEx
+0x19464a6fc  __TEXT,__text  _ACMContextDelete
+0x19464c9b4  __TEXT,__text  _ACMContextGetData
+0x19465d910  __TEXT,__text  _ACMContextGetDataEx
+0x19464cb18  __TEXT,__text  _ACMContextGetDataProperty
+0x19464a910  __TEXT,__text  _ACMContextGetExternalForm
+0x19464ce20  __TEXT,__text  _ACMContextGetInfo
+0x19464b5a8  __TEXT,__text  _ACMContextGetTrackingNumber
+0x19464ab40  __TEXT,__text  _ACMContextRemoveCredentialsByType
+0x19465c944  __TEXT,__text  _ACMContextRemoveCredentialsByTypeAndScope
+0x19464abf4  __TEXT,__text  _ACMContextRemoveCredentialsByValue
+0x19465cad0  __TEXT,__text  _ACMContextRemoveCredentialsByValueAndScope
+0x19465ce98  __TEXT,__text  _ACMContextRemovePassphraseCredentialsByPurposeAndScope
+0x19465d024  __TEXT,__text  _ACMContextReplacePassphraseCredentialsWithScope
+0x19464c6a4  __TEXT,__text  _ACMContextSetData
+0x19464c818  __TEXT,__text  _ACMContextSetDataEx
+0x19464b4dc  __TEXT,__text  _ACMContextVerifyAclConstraint
+0x19464b53c  __TEXT,__text  _ACMContextVerifyAclConstraintForOperation
+0x19464aed0  __TEXT,__text  _ACMContextVerifyPolicy
+0x19464b1c8  __TEXT,__text  _ACMContextVerifyPolicyEx
+0x19464b044  __TEXT,__text  _ACMContextVerifyPolicyWithPreflight
+0x19464c338  __TEXT,__text  _ACMCredentialCreate
+0x19464c33c  __TEXT,__text  _ACMCredentialDelete
+0x19465d3a0  __TEXT,__text  _ACMCredentialGetProperty
+0x19464b98c  __TEXT,__text  _ACMCredentialGetPropertyData
+0x19464c340  __TEXT,__text  _ACMCredentialGetType
+0x19464c344  __TEXT,__text  _ACMCredentialSetProperty
+0x19464d01c  __TEXT,__text  _ACMDecryptData
+0x19464d098  __TEXT,__text  _ACMDecryptDataEx
+0x19464cfd0  __TEXT,__text  _ACMEncryptData
+0x19464d068  __TEXT,__text  _ACMEncryptDataEx
+0x19464b994  __TEXT,__text  _ACMGetAclAuthMethod
+0x19464be0c  __TEXT,__text  _ACMGetEnvironmentVariable
+0x19464bf84  __TEXT,__text  _ACMGetEnvironmentVariableData
+0x19465cc68  __TEXT,__text  _ACMGlobalContextAddCredential
+0x19464c354  __TEXT,__text  _ACMGlobalContextCredentialGetProperty
+0x19465cd88  __TEXT,__text  _ACMGlobalContextRemoveCredentialsByType
+0x19464b340  __TEXT,__text  _ACMGlobalContextVerifyPolicy
+0x19464c104  __TEXT,__text  _ACMKernelControl
+0x19464b5b4  __TEXT,__text  _ACMParseAclAndCopyConstraintCharacteristics
+0x19464cf94  __TEXT,__text  _ACMPing
+0x19464c350  __TEXT,__text  _ACMRequirementGetPriority
+0x19465d708  __TEXT,__text  _ACMRequirementGetProperties
+0x19465d614  __TEXT,__text  _ACMRequirementGetProperty
+0x19464b990  __TEXT,__text  _ACMRequirementGetPropertyData
+0x19464c34c  __TEXT,__text  _ACMRequirementGetState
+0x19465d494  __TEXT,__text  _ACMRequirementGetSubrequirements
+0x19464c348  __TEXT,__text  _ACMRequirementGetType
+0x19464c294  __TEXT,__text  _ACMSEPControl
+0x19464c2e4  __TEXT,__text  _ACMSEPControlEx
+0x19464bad8  __TEXT,__text  _ACMSetEnvironmentVariable
+0x19464bc64  __TEXT,__text  _ACMSetEnvironmentVariableWithAccessPolicy
+0x194658500  __TEXT,__text  _CompareCredentials
+0x19465846c  __TEXT,__text  _CopyCredential
+0x194658b10  __TEXT,__text  _DeallocCredentialList
+0x1e0b7e158  __DATA_CONST,__const  _DeclarationsKey
+0x1946491fc  __TEXT,__text  _DeserializeAddCredential
+0x1946587f8  __TEXT,__text  _DeserializeAddCredentialType
+0x1946582a0  __TEXT,__text  _DeserializeCredential
+0x1946589e4  __TEXT,__text  _DeserializeCredentialList
+0x194658bf8  __TEXT,__text  _DeserializeGetContextProperty
+0x194648e84  __TEXT,__text  _DeserializeProcessAcl
+0x1946492bc  __TEXT,__text  _DeserializeRemoveCredential
+0x1946492c0  __TEXT,__text  _DeserializeReplacePassphraseCredential
+0x194657f80  __TEXT,__text  _DeserializeRequirement
+0x194648b68  __TEXT,__text  _DeserializeVerifyAclConstraint
+0x1946574cc  __TEXT,__text  _DeserializeVerifyPolicy
+0x1946586c0  __TEXT,__text  _GetSerializedAddCredentialSize
+0x1946581b8  __TEXT,__text  _GetSerializedCredentialSize
+0x194658ba0  __TEXT,__text  _GetSerializedGetContextPropertySize
+0x194657afc  __TEXT,__text  _GetSerializedProcessAclSize
+0x194658878  __TEXT,__text  _GetSerializedRemoveCredentialSize
+0x1946588cc  __TEXT,__text  _GetSerializedReplacePassphraseCredentialSize
+0x194657cd4  __TEXT,__text  _GetSerializedRequirementSize
+0x1946578c0  __TEXT,__text  _GetSerializedVerifyAclConstraintSize
+0x19465713c  __TEXT,__text  _GetSerializedVerifyPolicySize
+0x19465e0ac  __TEXT,__text  _LibCall_ACMContexAddCredentialWithScope
+0x19465e378  __TEXT,__text  _LibCall_ACMContexRemoveCredentialsByTypeAndScope
+0x19465e1fc  __TEXT,__text  _LibCall_ACMContextContainsCredentialTypeEx
+0x19466092c  __TEXT,__text  _LibCall_ACMContextCopyData
+0x19465dd0c  __TEXT,__text  _LibCall_ACMContextCreate
+0x19465dedc  __TEXT,__text  _LibCall_ACMContextCreateWithExternalForm
+0x19465f8d4  __TEXT,__text  _LibCall_ACMContextCredentialGetProperty
+0x19464d474  __TEXT,__text  _LibCall_ACMContextDelete
+0x194660798  __TEXT,__text  _LibCall_ACMContextGetData
+0x194660b88  __TEXT,__text  _LibCall_ACMContextGetInfo
+0x194660278  __TEXT,__text  _LibCall_ACMContextLoadFromImage
+0x19465e490  __TEXT,__text  _LibCall_ACMContextRemoveCredentialsByValueAndScope
+0x1946605e8  __TEXT,__text  _LibCall_ACMContextSetData
+0x194660444  __TEXT,__text  _LibCall_ACMContextUnloadToImage
+0x19465aff4  __TEXT,__text  _LibCall_ACMContextUnloadToImage_Block
+0x194649d30  __TEXT,__text  _LibCall_ACMContextVerifyAclConstraint
+0x194649eec  __TEXT,__text  _LibCall_ACMContextVerifyAclConstraintForOperation
+0x19465e5e0  __TEXT,__text  _LibCall_ACMContextVerifyPolicyAndCopyRequirementEx
+0x19465fbe4  __TEXT,__text  _LibCall_ACMContextVerifyPolicyEx
+0x19465ac04  __TEXT,__text  _LibCall_ACMContextVerifyPolicyEx_Block
+0x19465aad4  __TEXT,__text  _LibCall_ACMContextVerifyPolicyWithPreflight_Block
+0x194649a50  __TEXT,__text  _LibCall_ACMContextVerifyPolicy_Block
+0x19464d784  __TEXT,__text  _LibCall_ACMCredentialCreate
+0x19465e958  __TEXT,__text  _LibCall_ACMCredentialDelete
+0x19465edb0  __TEXT,__text  _LibCall_ACMCredentialGetPropertyData
+0x19465e964  __TEXT,__text  _LibCall_ACMCredentialGetType
+0x19465e970  __TEXT,__text  _LibCall_ACMCredentialSetProperty
+0x194649b94  __TEXT,__text  _LibCall_ACMGetAclAuthMethod_Block
+0x19465fe5c  __TEXT,__text  _LibCall_ACMGetEnvironmentVariable
+0x19465ad20  __TEXT,__text  _LibCall_ACMGetEnvironmentVariable_Block
+0x19465fac8  __TEXT,__text  _LibCall_ACMGlobalContextCredentialGetProperty
+0x19465a974  __TEXT,__text  _LibCall_ACMGlobalContextCredentialGetProperty_Block
+0x19465fd68  __TEXT,__text  _LibCall_ACMGlobalContextVerifyPolicyEx
+0x194649a5c  __TEXT,__text  _LibCall_ACMGlobalContextVerifyPolicy_Block
+0x19465f820  __TEXT,__text  _LibCall_ACMKernDoubleClickNotify
+0x19464d594  __TEXT,__text  _LibCall_ACMKernelControl
+0x194649768  __TEXT,__text  _LibCall_ACMKernelControl_Block
+0x19465f750  __TEXT,__text  _LibCall_ACMPing
+0x194660a30  __TEXT,__text  _LibCall_ACMPublishTrustedAccessories
+0x19465e8ac  __TEXT,__text  _LibCall_ACMRequirementDelete
+0x19465f3d0  __TEXT,__text  _LibCall_ACMRequirementGetPriority
+0x19465f3dc  __TEXT,__text  _LibCall_ACMRequirementGetPropertyData
+0x19465f3c4  __TEXT,__text  _LibCall_ACMRequirementGetState
+0x19465f3b8  __TEXT,__text  _LibCall_ACMRequirementGetType
+0x194661c14  __TEXT,__text  _LibCall_ACMSEPControl
+0x1946498dc  __TEXT,__text  _LibCall_ACMSEPControl_Block
+0x19465f214  __TEXT,__text  _LibCall_ACMSecContextCopyCredentialsArrayEx
+0x194661a40  __TEXT,__text  _LibCall_ACMSecContextGetUnlockSecret
+0x19464d798  __TEXT,__text  _LibCall_ACMSecContextProcessAcl
+0x19466159c  __TEXT,__text  _LibCall_ACMSecContextProcessAclAndCopyAuthMethod
+0x1946615f4  __TEXT,__text  _LibCall_ACMSecContextVerifyAclConstraintAndCopyRequirement
+0x19465fca4  __TEXT,__text  _LibCall_ACMSecContextVerifyPolicyAndCopyRequirementEx
+0x194661704  __TEXT,__text  _LibCall_ACMSecCredentialProviderEnrollmentStateChangedForUser
+0x19464d788  __TEXT,__text  _LibCall_ACMSecCredentialsArrayDelete
+0x194661948  __TEXT,__text  _LibCall_ACMSecSetBiometryAvailability
+0x19466189c  __TEXT,__text  _LibCall_ACMSecSetBuiltinBiometry
+0x19465ff28  __TEXT,__text  _LibCall_ACMSetEnvironmentVariable
+0x1946600d4  __TEXT,__text  _LibCall_ACMTRMLoadState
+0x19465aecc  __TEXT,__text  _LibCall_ACMTRMLoadState_Block
+0x194660190  __TEXT,__text  _LibCall_ACMTRMSaveState
+0x19465dbe0  __TEXT,__text  _LibCall_BuildCommand
+0x194659884  __TEXT,__text  _LibSer_ACMDeserializeEnvironmentVariableType
+0x19465991c  __TEXT,__text  _LibSer_ACMDeserializeSEPControlCode
+0x194658e18  __TEXT,__text  _LibSer_ContextCredentialGetPropertyEx_Deserialize
+0x194658d38  __TEXT,__text  _LibSer_ContextCredentialGetPropertyEx_GetSize
+0x194658d84  __TEXT,__text  _LibSer_ContextCredentialGetPropertyEx_Serialize
+0x194658cf8  __TEXT,__text  _LibSer_ContextCredentialGetProperty_Deserialize
+0x194658cb0  __TEXT,__text  _LibSer_ContextCredentialGetProperty_GetSize
+0x194658cc0  __TEXT,__text  _LibSer_ContextCredentialGetProperty_Serialize
+0x194659034  __TEXT,__text  _LibSer_DeleteContext_Deserialize
+0x194658fe4  __TEXT,__text  _LibSer_DeleteContext_GetSize
+0x194658ffc  __TEXT,__text  _LibSer_DeleteContext_Serialize
+0x194658c88  __TEXT,__text  _LibSer_GetAclAuthMethod_Deserialize
+0x194658c38  __TEXT,__text  _LibSer_GetAclAuthMethod_GetSize
+0x194658c50  __TEXT,__text  _LibSer_GetAclAuthMethod_Serialize
+0x194658820  __TEXT,__text  _LibSer_GetSerializedContainsCredential_GetSize
+0x194658840  __TEXT,__text  _LibSer_GetSerializedContainsCredential_Serialize
+0x194659570  __TEXT,__text  _LibSer_GetUnlockSecretResponse_Deserialize
+0x1946594e4  __TEXT,__text  _LibSer_GetUnlockSecretResponse_GetSize
+0x194659500  __TEXT,__text  _LibSer_GetUnlockSecretResponse_Serialize
+0x194659480  __TEXT,__text  _LibSer_GetUnlockSecret_Deserialize
+0x194659394  __TEXT,__text  _LibSer_GetUnlockSecret_GetSize
+0x1946593e4  __TEXT,__text  _LibSer_GetUnlockSecret_Serialize
+0x194658f28  __TEXT,__text  _LibSer_GlobalContextCredentialGetProperty_Deserialize
+0x194658ed8  __TEXT,__text  _LibSer_GlobalContextCredentialGetProperty_GetSize
+0x194658ef8  __TEXT,__text  _LibSer_GlobalContextCredentialGetProperty_Serialize
+0x194658fa4  __TEXT,__text  _LibSer_RemoveCredentialByType_Deserialize
+0x194658f5c  __TEXT,__text  _LibSer_RemoveCredentialByType_GetSize
+0x194658f6c  __TEXT,__text  _LibSer_RemoveCredentialByType_Serialize
+0x19465982c  __TEXT,__text  _LibSer_SEPControlResponse_Deserialize
+0x19465979c  __TEXT,__text  _LibSer_SEPControlResponse_GetSize
+0x1946597b8  __TEXT,__text  _LibSer_SEPControlResponse_Serialize
+0x1946596d4  __TEXT,__text  _LibSer_SEPControl_Deserialize
+0x1946595a8  __TEXT,__text  _LibSer_SEPControl_GetSize
+0x1946595f4  __TEXT,__text  _LibSer_SEPControl_Serialize
+0x19465905c  __TEXT,__text  _LibSer_StorageAnyCmd_DeserializeCommonFields
+0x194659324  __TEXT,__text  _LibSer_StorageGetData_Deserialize
+0x194659238  __TEXT,__text  _LibSer_StorageGetData_GetSize
+0x194659288  __TEXT,__text  _LibSer_StorageGetData_Serialize
+0x194659198  __TEXT,__text  _LibSer_StorageSetData_Deserialize
+0x194659090  __TEXT,__text  _LibSer_StorageSetData_GetSize
+0x1946590dc  __TEXT,__text  _LibSer_StorageSetData_Serialize
+0x1e0b7e150  __DATA_CONST,__const  _MCACMEErrorDomain
+0x1e0b7e148  __DATA_CONST,__const  _MCAPNErrorDomain
+0x1945b9000  __TEXT,__text  _MCASPolicyPreflighterClass
+0x1945b8a50  __TEXT,__text  _MCAXBackBoardServerSessionClass
+0x1e0b7e140  __DATA_CONST,__const  _MCActivationLockBypassCodeWasStoredNotification
+0x1e0b7e138  __DATA_CONST,__const  _MCActivationRecordStoredNotification
+0x1e0b7e130  __DATA_CONST,__const  _MCAddressbooksyncdBundleIdentifier
+0x1e0b7e128  __DATA_CONST,__const  _MCAllowCloudSyncChangedNotification
+0x1e0b7e120  __DATA_CONST,__const  _MCAllowHealthDataSubmissionChangedNotification
+0x1e0b7e118  __DATA_CONST,__const  _MCAllowPasscodeModificationChangedNotification
+0x1945a2060  __TEXT,__text  _MCAlwaysRestrictedAppsInEDUMode
+0x1945a33f4  __TEXT,__text  _MCAppManagedFeaturesDoNotBackupAppIDsFilePath
+0x1e0b7e110  __DATA_CONST,__const  _MCAppStoreBundleIdentifier
+0x1e0b7e108  __DATA_CONST,__const  _MCAppWhitelistDidChangeNotification
+0x1e0b7e100  __DATA_CONST,__const  _MCAppWhitelistErrorDomain
+0x1945a4374  __TEXT,__text  _MCAppleInternalBundlePath
+0x1e0b7e0f8  __DATA_CONST,__const  _MCAppstoredBundleIdentifier
+0x1e0b7e0f0  __DATA_CONST,__const  _MCAsdBundleIdentifier
+0x1e0b7e0e8  __DATA_CONST,__const  _MCAssignedObjectKey
+0x1e0b7e0e0  __DATA_CONST,__const  _MCAssistantServicesBundleIdentifier
+0x1e0b7e0d8  __DATA_CONST,__const  _MCAutoCorrectionAllowedThirdPartyQuery
+0x1945b93d0  __TEXT,__text  _MCBYSetupAssistantNeedsToRun
+0x1945a3184  __TEXT,__text  _MCBackupContainsPasscodeFilePath
+0x1945b95d8  __TEXT,__text  _MCBiometricKitClass
+0x1e0b7e0d0  __DATA_CONST,__const  _MCBirdBundleIdentifier
+0x194582134  __TEXT,__text  _MCBundleIDFromAuditToken
+0x194602698  __TEXT,__text  _MCBundleIDToContainingBundleIDMap
+0x1945b8960  __TEXT,__text  _MCCGDataProviderCreateWithURL
+0x1945b899c  __TEXT,__text  _MCCGFontCopyFullName
+0x1945b89d8  __TEXT,__text  _MCCGFontCopyPostScriptName
+0x1945b8a14  __TEXT,__text  _MCCGFontCreateWithDataProvider
+0x1945b8ec4  __TEXT,__text  _MCCGImageSourceCreateImageAtIndex
+0x1945b8f18  __TEXT,__text  _MCCGImageSourceCreateWithData
+0x1945b8f5c  __TEXT,__text  _MCCGImageSourceGetCount
+0x1945ddf3c  __TEXT,__text  _MCCTClearManagedCellularProfile
+0x1945b8fc4  __TEXT,__text  _MCCTFontManagerCreateFontDescriptorsFromURL
+0x1945ddff8  __TEXT,__text  _MCCTGetManagedCellularProfile
+0x1945ddc1c  __TEXT,__text  _MCCTHasCDMA
+0x1945dd6b0  __TEXT,__text  _MCCTHasCellular
+0x1945ddbe8  __TEXT,__text  _MCCTHasGSM
+0x1945dd604  __TEXT,__text  _MCCTHasTelephony
+0x1945dd75c  __TEXT,__text  _MCCTIMEI
+0x1945ddb4c  __TEXT,__text  _MCCTMEID
+0x1945ddc50  __TEXT,__text  _MCCTSetManagedCellularProfile
+0x1e0b7e0c8  __DATA_CONST,__const  _MCCalDAVErrorDomain
+0x1e0b7e0c0  __DATA_CONST,__const  _MCCalaccessdBundleIdentifier
+0x1e0b7e0b8  __DATA_CONST,__const  _MCCalendarBundleIdentifier
+0x1e0b7e0b0  __DATA_CONST,__const  _MCCalendarFocusConfigurationExtensionBundleIdentifier
+0x1e0b7e0a8  __DATA_CONST,__const  _MCCalendarNotificationsBundleIdentifier
+0x1e0b7e0a0  __DATA_CONST,__const  _MCCalendarWidgetBundleIdentifier
+0x1e0b7e098  __DATA_CONST,__const  _MCCalendarWidgetExtensionBundleIdentifier
+0x1e0b7e090  __DATA_CONST,__const  _MCCalendarWidgetIntentsExtensionBundleIdentifier
+0x1e0b7e088  __DATA_CONST,__const  _MCCallHistorySyncHelperBundleIdentifier
+0x1e0b7e080  __DATA_CONST,__const  _MCCallservicesdBundleIdentifier
+0x1e0b7e078  __DATA_CONST,__const  _MCCameraBundleIdentifier
+0x1e0b7e070  __DATA_CONST,__const  _MCCaptureBundleIdentifier
+0x1e0b7e068  __DATA_CONST,__const  _MCCardDAVErrorDomain
+0x1e0b7e060  __DATA_CONST,__const  _MCCellularErrorDomain
+0x1e0b7e058  __DATA_CONST,__const  _MCCertificateErrorDomain
+0x1e0b7e050  __DATA_CONST,__const  _MCCertificateTransparencyErrorDomain
+0x1946451d0  __TEXT,__text  _MCChangeOwnershipOfDirectoryContentsToMobile
+0x194644f40  __TEXT,__text  _MCChangeOwnershipOfFileToMobile
+0x1e0b7e048  __DATA_CONST,__const  _MCChaperoneErrorDomain
+0x194644124  __TEXT,__text  _MCCheckSystemGroupContainerFileReadability
+0x1e0b7e040  __DATA_CONST,__const  _MCCleanupMigrationFinishedNotification
+0x1e0b7e038  __DATA_CONST,__const  _MCClearPasscodeGenerationCachesNotification
+0x1e0b7e030  __DATA_CONST,__const  _MCClientRestrictionsChangedNotification
+0x1e0b7e028  __DATA_CONST,__const  _MCClientRestrictionsErrorDomain
+0x1e0b7e020  __DATA_CONST,__const  _MCClockBundleIdentifier
+0x1e0b7e018  __DATA_CONST,__const  _MCCloudConfigErrorDomain
+0x1945a3838  __TEXT,__text  _MCCloudConfigurationDetailsFilePath
+0x1e0b7e010  __DATA_CONST,__const  _MCCloudConfigurationDidChangeNotification
+0x1e0b7e008  __DATA_CONST,__const  _MCCloudConfigurationErrorDomain
+0x1945a38d4  __TEXT,__text  _MCCloudConfigurationSetAsideDetailsFilePath
+0x19457fa2c  __TEXT,__text  _MCConfigurationProfilesSystemGroupContainer
+0x1945a26d4  __TEXT,__text  _MCConfigurationProfilesSystemGroupContainerNF
+0x1e0b7e000  __DATA_CONST,__const  _MCContactsBundleIdentifier
+0x1e0b7dff8  __DATA_CONST,__const  _MCContactsLimitedAccessButtonBundleIdentifier
+0x1e0b7dff0  __DATA_CONST,__const  _MCContactsLimitedAccessPromptViewBundleIdentifier
+0x1e0b7dfe8  __DATA_CONST,__const  _MCContactsLimitedLibraryPickerViewServiceBundleIdentifier
+0x194580778  __TEXT,__text  _MCContainingBundleIDForBundleID
+0x1945a3220  __TEXT,__text  _MCCrashDetectionFilePath
+0x1e0b7dfe0  __DATA_CONST,__const  _MCDAErrorDomain
+0x1e0b7dfd8  __DATA_CONST,__const  _MCDNSProxyErrorDomain
+0x1e0b7dfd0  __DATA_CONST,__const  _MCDNSSettingsErrorDomain
+0x1e0b7dfc8  __DATA_CONST,__const  _MCDefaultsDidChangeNotification
+0x1e0b7dfc0  __DATA_CONST,__const  _MCDefaultsErrorDomain
+0x1e0b7dfb8  __DATA_CONST,__const  _MCDependencyDidChangeNotification
+0x194646178  __TEXT,__text  _MCDestinationPathIsSafeFromSymlinkAttacks
+0x1e0b7dfb0  __DATA_CONST,__const  _MCDeviceCapabilitiesErrorDomain
+0x1e0b7dfa8  __DATA_CONST,__const  _MCDiagnosticsCollectedNotification
+0x1e0b7dfa0  __DATA_CONST,__const  _MCDocumentManagerRecentsPopoverBundleIdentifier
+0x1e0b7df98  __DATA_CONST,__const  _MCDomainsErrorDomain
+0x1e0b7df90  __DATA_CONST,__const  _MCEASErrorDomain
+0x1945b9114  __TEXT,__text  _MCEASOverSimplifiedStatusForError
+0x1e0b7df88  __DATA_CONST,__const  _MCEDUClassroomErrorDomain
+0x1e0b7df80  __DATA_CONST,__const  _MCEffectiveSettingsChangedNotification
+0x1945d9a00  __TEXT,__text  _MCEffectiveSingleAppModeBundleID
+0x19457ed7c  __TEXT,__text  _MCEffectiveUserSettingsFilePath
+0x1e0b7df78  __DATA_CONST,__const  _MCEmailErrorDomain
+0x1e0b7df70  __DATA_CONST,__const  _MCEnablingRestrictionsChangedNotification
+0x194595d30  __TEXT,__text  _MCEqualDictionaries
+0x1945a78bc  __TEXT,__text  _MCEqualStrings
+0x19459b2e0  __TEXT,__text  _MCErrorArray
+0x19459b314  __TEXT,__text  _MCErrorArrayByDevice
+0x19459b398  __TEXT,__text  _MCErrorArrayFromLocalizedDescription
+0x1e0b7df68  __DATA_CONST,__const  _MCErrorPermanentlyRedirectedURLString
+0x1e0b7df60  __DATA_CONST,__const  _MCErrorRestrictionCauseKey
+0x1e0b7df58  __DATA_CONST,__const  _MCErrorRestrictionCauseLockdownMode
+0x1e0b7df50  __DATA_CONST,__const  _MCErrorRestrictionCauseProfile
+0x1e0b7df48  __DATA_CONST,__const  _MCErrorRestrictionCauseStolenDeviceProtection
+0x1e0b7df40  __DATA_CONST,__const  _MCErrorTypeFatal
+0x1e0b7df38  __DATA_CONST,__const  _MCErrorTypeKey
+0x1e0b7df30  __DATA_CONST,__const  _MCErrorTypeNeedsRetry
+0x1e0b7df28  __DATA_CONST,__const  _MCErrorTypeRetryable
+0x1e0b7df20  __DATA_CONST,__const  _MCErrorTypeSkippable
+0x19459b0f8  __TEXT,__text  _MCErrorVaArray
+0x1e0b7df18  __DATA_CONST,__const  _MCExplicitBooksAllowedThirdPartyQuery
+0x1e0b7df10  __DATA_CONST,__const  _MCExplicitMusicPodcastsAllowedThirdPartyQuery
+0x1e0b7df08  __DATA_CONST,__const  _MCExtensibleSingleSignOnErrorDomain
+0x1e0b7df00  __DATA_CONST,__const  _MCExternalIntelligenceWorkspaceListChangedNotification
+0x1e0b7def8  __DATA_CONST,__const  _MCFacetimeBundleIdentifier
+0x1e0b7def0  __DATA_CONST,__const  _MCFeatureAccessibilityLiveCaptionsAllowed
+0x1e0b7dee8  __DATA_CONST,__const  _MCFeatureAccessibilityReaderAllowed
+0x1e0b7dee0  __DATA_CONST,__const  _MCFeatureAccessibilityReaderSuggestionsAllowed
+0x1e0b7ded8  __DATA_CONST,__const  _MCFeatureAccessibilitySpeechAllowed
+0x1e0b7ded0  __DATA_CONST,__const  _MCFeatureAccessibilityTypingFeedbackAllowed
+0x1e0b7dec8  __DATA_CONST,__const  _MCFeatureAccessibilityVoiceOverAllowed
+0x1e0b7dec0  __DATA_CONST,__const  _MCFeatureAccountModificationAllowed
+0x1e0b7deb8  __DATA_CONST,__const  _MCFeatureActivityContinuationAllowed
+0x1e0b7deb0  __DATA_CONST,__const  _MCFeatureAddingGameCenterFriendsAllowed
+0x1e0b7dea8  __DATA_CONST,__const  _MCFeatureAirDropAllowed
+0x1e0b7dea0  __DATA_CONST,__const  _MCFeatureAirDropUnmanagedForced
+0x1e0b7de98  __DATA_CONST,__const  _MCFeatureAirPlayIncomingRequestsAllowed
+0x1e0b7de90  __DATA_CONST,__const  _MCFeatureAirPlayIncomingRequestsPairingPasswordForced
+0x1e0b7de88  __DATA_CONST,__const  _MCFeatureAirPlayOutgoingRequestsPairingPasswordForced
+0x1e0b7de80  __DATA_CONST,__const  _MCFeatureAirPlaySecuritySettingsUIAllowed
+0x1e0b7de78  __DATA_CONST,__const  _MCFeatureAirPlaySettingsUIAllowed
+0x1e0b7de70  __DATA_CONST,__const  _MCFeatureAirPrintAllowed
+0x1e0b7de68  __DATA_CONST,__const  _MCFeatureAirPrintCredentialsStorageAllowed
+0x1e0b7de60  __DATA_CONST,__const  _MCFeatureAirPrintTrustedTLSRequirementForced
+0x1e0b7de58  __DATA_CONST,__const  _MCFeatureAirPrintiBeaconDiscoveryAllowed
+0x1e0b7de50  __DATA_CONST,__const  _MCFeatureAllowGlobalBackgroundFetchWhenRoaming
+0x1e0b7de48  __DATA_CONST,__const  _MCFeatureAllowVoiceDialing
+0x1e0b7de40  __DATA_CONST,__const  _MCFeatureAllowedCameraRestrictionBundleIDs
+0x1e0b7de38  __DATA_CONST,__const  _MCFeatureAllowedExternalIntelligenceAccountDomains
+0x1e0b7de30  __DATA_CONST,__const  _MCFeatureAllowedExternalIntelligenceWorkspaceIDs
+0x1e0b7de28  __DATA_CONST,__const  _MCFeatureAllowedMarketplaceApps
+0x1e0b7de20  __DATA_CONST,__const  _MCFeatureAllowedPartnerFinancingAppBundleIDs
+0x1e0b7de18  __DATA_CONST,__const  _MCFeatureAllowedSafariPasswordAutoFillDomains
+0x1e0b7de10  __DATA_CONST,__const  _MCFeatureAlphanumericPasscodeRequired
+0x1e0b7de08  __DATA_CONST,__const  _MCFeatureAppAnalyticsAllowed
+0x1e0b7de00  __DATA_CONST,__const  _MCFeatureAppAndAccessoryAnalyticsAllowed
+0x1e0b7ddf8  __DATA_CONST,__const  _MCFeatureAppCellularDataModificationAllowed
+0x1e0b7ddf0  __DATA_CONST,__const  _MCFeatureAppClipsAllowed
+0x1e0b7dde8  __DATA_CONST,__const  _MCFeatureAppInstallationAllowed
+0x1e0b7dde0  __DATA_CONST,__const  _MCFeatureAppLockAccessWithoutPasscodeAllowed
+0x1e0b7ddd8  __DATA_CONST,__const  _MCFeatureAppLockBundleIDs
+0x1e0b7ddd0  __DATA_CONST,__const  _MCFeatureAppLockGrantSupervisorAccessForced
+0x1e0b7ddc8  __DATA_CONST,__const  _MCFeatureAppLockLogoutAllowed
+0x1e0b7ddc0  __DATA_CONST,__const  _MCFeatureAppLockMultipleAppsAllowed
+0x1e0b7ddb8  __DATA_CONST,__const  _MCFeatureAppRemovalAllowed
+0x1e0b7ddb0  __DATA_CONST,__const  _MCFeatureAppleIntelligenceReportAllowed
+0x1e0b7dda8  __DATA_CONST,__const  _MCFeatureApplePersonalizedAdvertisingAllowed
+0x1e0b7dda0  __DATA_CONST,__const  _MCFeatureAppsRatingExemptedBundleIDs
+0x1e0b7dd98  __DATA_CONST,__const  _MCFeatureAssistantAllowed
+0x1e0b7dd90  __DATA_CONST,__const  _MCFeatureAssistantProfanityFilterForced
+0x1e0b7dd88  __DATA_CONST,__const  _MCFeatureAssistantUserGeneratedContentAllowed
+0x1e0b7dd80  __DATA_CONST,__const  _MCFeatureAssistantWhileLockedAllowed
+0x1e0b7dd78  __DATA_CONST,__const  _MCFeatureAttentionAwareAutoLockAllowed
+0x1e0b7dd70  __DATA_CONST,__const  _MCFeatureAudioCallDefaultHandlerAppBundleIDs
+0x1e0b7dd68  __DATA_CONST,__const  _MCFeatureAudioConferencingAllowed
+0x1e0b7dd60  __DATA_CONST,__const  _MCFeatureAuthenticationBeforeAutoFillRequired
+0x1e0b7dd58  __DATA_CONST,__const  _MCFeatureAutoCapitalizationAllowed
+0x1e0b7dd50  __DATA_CONST,__const  _MCFeatureAutoCorrectionAllowed
+0x1e0b7dd48  __DATA_CONST,__const  _MCFeatureAutoDimAllowed
+0x1e0b7dd40  __DATA_CONST,__const  _MCFeatureAutoLockTime
+0x1e0b7dd38  __DATA_CONST,__const  _MCFeatureAutoUnlockAllowed
+0x1e0b7dd30  __DATA_CONST,__const  _MCFeatureAutomaticAppDownloadsAllowed
+0x1e0b7dd28  __DATA_CONST,__const  _MCFeatureAutomaticAppUpdatesAllowed
+0x1e0b7dd20  __DATA_CONST,__const  _MCFeatureAutomaticAppUpdatesModificationAllowed
+0x1e0b7dd18  __DATA_CONST,__const  _MCFeatureAutomaticDateAndTimeForced
+0x1e0b7dd10  __DATA_CONST,__const  _MCFeatureAutomaticScreenSaverAllowed
+0x1e0b7dd08  __DATA_CONST,__const  _MCFeatureAutonomousSingleAppModePermittedAppIDs
+0x1e0b7dd00  __DATA_CONST,__const  _MCFeatureBiometricAuthForSignInWithAppleAllowed
+0x1e0b7dcf8  __DATA_CONST,__const  _MCFeatureBlacklistedAppBundleIDs
+0x1e0b7dcf0  __DATA_CONST,__const  _MCFeatureBlockLevelEncryptionRequired
+0x1e0b7dce8  __DATA_CONST,__const  _MCFeatureBlockedAppBundleIDs
+0x1e0b7dce0  __DATA_CONST,__const  _MCFeatureBluetoothModificationAllowed
+0x1e0b7dcd8  __DATA_CONST,__const  _MCFeatureBookstoreAllowed
+0x1e0b7dcd0  __DATA_CONST,__const  _MCFeatureBookstoreEroticaAllowed
+0x1e0b7dcc8  __DATA_CONST,__const  _MCFeatureCJStructuralInputAllowed
+0x1e0b7dcc0  __DATA_CONST,__const  _MCFeatureCalculatorInputModeRPNAllowed
+0x1e0b7dcb8  __DATA_CONST,__const  _MCFeatureCalculatorInputModeUnitConversionAllowed
+0x1e0b7dcb0  __DATA_CONST,__const  _MCFeatureCalculatorModeBasicAllowed
+0x1e0b7dca8  __DATA_CONST,__const  _MCFeatureCalculatorModeMathPaperAllowed
+0x1e0b7dca0  __DATA_CONST,__const  _MCFeatureCalculatorModeProgrammerAllowed
+0x1e0b7dc98  __DATA_CONST,__const  _MCFeatureCalculatorModeScientificAllowed
+0x1e0b7dc90  __DATA_CONST,__const  _MCFeatureCallRecordingAllowed
+0x1e0b7dc88  __DATA_CONST,__const  _MCFeatureCameraAllowed
+0x1e0b7dc80  __DATA_CONST,__const  _MCFeatureCardsWhileLockedAllowed
+0x1e0b7dc78  __DATA_CONST,__const  _MCFeatureCellularHDUploadsAllowed
+0x1e0b7dc70  __DATA_CONST,__const  _MCFeatureCellularPlanModificationAllowed
+0x1e0b7dc68  __DATA_CONST,__const  _MCFeatureChatAllowed
+0x1e0b7dc60  __DATA_CONST,__const  _MCFeatureClassroomAirPlayAllowed
+0x1e0b7dc58  __DATA_CONST,__const  _MCFeatureClassroomAppLockAllowed
+0x1e0b7dc50  __DATA_CONST,__const  _MCFeatureClassroomAutomaticallyJoinClassesForced
+0x1e0b7dc48  __DATA_CONST,__const  _MCFeatureClassroomDeviceSettingsModificationAllowed
+0x1e0b7dc40  __DATA_CONST,__const  _MCFeatureClassroomLockDeviceAllowed
+0x1e0b7dc38  __DATA_CONST,__const  _MCFeatureClassroomOpenAppAllowed
+0x1e0b7dc30  __DATA_CONST,__const  _MCFeatureClassroomOpenDeepLinkAllowed
+0x1e0b7dc28  __DATA_CONST,__const  _MCFeatureClassroomOpenURLAllowed
+0x1e0b7dc20  __DATA_CONST,__const  _MCFeatureClassroomRequestPermissionToLeaveClassesForced
+0x1e0b7dc18  __DATA_CONST,__const  _MCFeatureClassroomRoles
+0x1e0b7dc10  __DATA_CONST,__const  _MCFeatureClassroomScreenObservationAllowed
+0x1e0b7dc08  __DATA_CONST,__const  _MCFeatureClassroomUnpromptedAppAndDeviceLockForced
+0x1e0b7dc00  __DATA_CONST,__const  _MCFeatureClassroomUnpromptedManagedScreenObservationForced
+0x1e0b7dbf8  __DATA_CONST,__const  _MCFeatureClassroomUnpromptedScreenObservationForced
+0x1e0b7dbf0  __DATA_CONST,__const  _MCFeatureCloudBackupAllowed
+0x1e0b7dbe8  __DATA_CONST,__const  _MCFeatureCloudBackupPasswordRequired
+0x1e0b7dbe0  __DATA_CONST,__const  _MCFeatureCloudDocumentSyncAllowed
+0x1e0b7dbd8  __DATA_CONST,__const  _MCFeatureCloudKeychainSyncAllowed
+0x1e0b7dbd0  __DATA_CONST,__const  _MCFeatureCloudPhotoLibraryAllowed
+0x1e0b7dbc8  __DATA_CONST,__const  _MCFeatureCloudPrivateRelayAllowed
+0x1e0b7dbc0  __DATA_CONST,__const  _MCFeatureCommandTabAllowed
+0x1e0b7dbb8  __DATA_CONST,__const  _MCFeatureConferenceRoomDisplayForced
+0x1e0b7dbb0  __DATA_CONST,__const  _MCFeatureConferenceRoomDisplaySettingsUIAllowed
+0x1e0b7dba8  __DATA_CONST,__const  _MCFeatureContactlessPaymentAllowed
+0x1e0b7dba0  __DATA_CONST,__const  _MCFeatureContinuousPathKeyboardAllowed
+0x1e0b7db98  __DATA_CONST,__const  _MCFeatureControlCenterAllowed
+0x1e0b7db90  __DATA_CONST,__const  _MCFeatureControlCenterInAppsAllowed
+0x1e0b7db88  __DATA_CONST,__const  _MCFeatureCoverSheetAllowed
+0x1e0b7db80  __DATA_CONST,__const  _MCFeatureCrossSiteTrackingPreventionRelaxedApps
+0x1e0b7db78  __DATA_CONST,__const  _MCFeatureCrossSiteTrackingPreventionRelaxedDomains
+0x1e0b7db70  __DATA_CONST,__const  _MCFeatureDefaultBrowserModificationAllowed
+0x1e0b7db68  __DATA_CONST,__const  _MCFeatureDefaultBrowserPromptingAllowed
+0x1e0b7db60  __DATA_CONST,__const  _MCFeatureDefaultCallingAppModificationAllowed
+0x1e0b7db58  __DATA_CONST,__const  _MCFeatureDefaultMessagingAppModificationAllowed
+0x1e0b7db50  __DATA_CONST,__const  _MCFeatureDefinitionLookupAllowed
+0x1e0b7db48  __DATA_CONST,__const  _MCFeatureDelayedSoftwareUpdatesForced
+0x1e0b7db40  __DATA_CONST,__const  _MCFeatureDeniedICCIDsForImessageFaceTime
+0x1e0b7db38  __DATA_CONST,__const  _MCFeatureDeniedICCIDsForRCS
+0x1e0b7db30  __DATA_CONST,__const  _MCFeatureDeniedMarketplaceApps
+0x1e0b7db28  __DATA_CONST,__const  _MCFeatureDeprecatedWebKitTLSAllowed
+0x1e0b7db20  __DATA_CONST,__const  _MCFeatureDeviceNameModificationAllowed
+0x1e0b7db18  __DATA_CONST,__const  _MCFeatureDeviceSleepAllowed
+0x1e0b7db10  __DATA_CONST,__const  _MCFeatureDiagnosticsSubmissionAllowed
+0x1e0b7db08  __DATA_CONST,__const  _MCFeatureDiagnosticsSubmissionModificationAllowed
+0x1e0b7db00  __DATA_CONST,__const  _MCFeatureDictationAllowed
+0x1e0b7daf8  __DATA_CONST,__const  _MCFeatureDriverDoNotDisturbModificationsAllowed
+0x1e0b7daf0  __DATA_CONST,__const  _MCFeatureESIMModificationAllowed
+0x1e0b7dae8  __DATA_CONST,__const  _MCFeatureESIMOutgoingTransfersAllowed
+0x1e0b7dae0  __DATA_CONST,__const  _MCFeatureEmojiKeyboardAllowed
+0x1e0b7dad8  __DATA_CONST,__const  _MCFeatureEnablingRestrictionsAllowed
+0x1e0b7dad0  __DATA_CONST,__const  _MCFeatureEncryptedBackupRequired
+0x1e0b7dac8  __DATA_CONST,__const  _MCFeatureEnforcedSoftwareUpdateDelay
+0x1e0b7dac0  __DATA_CONST,__const  _MCFeatureEnterpriseAppTrustAllowed
+0x1e0b7dab8  __DATA_CONST,__const  _MCFeatureEnterpriseBookBackupAllowed
+0x1e0b7dab0  __DATA_CONST,__const  _MCFeatureEnterpriseBookMetadataSyncAllowed
+0x1e0b7daa8  __DATA_CONST,__const  _MCFeatureEraseContentAndSettingsAllowed
+0x1e0b7daa0  __DATA_CONST,__const  _MCFeatureExplicitContentAllowed
+0x1e0b7da98  __DATA_CONST,__const  _MCFeatureExternalDisplayStageManagerAllowed
+0x1e0b7da90  __DATA_CONST,__const  _MCFeatureExternalIntelligenceAllowed
+0x1e0b7da88  __DATA_CONST,__const  _MCFeatureExternalIntelligenceSignInAllowed
+0x1e0b7da80  __DATA_CONST,__const  _MCFeatureFIPSVerificationForced
+0x1e0b7da78  __DATA_CONST,__const  _MCFeatureFileLevelEncryptionRequired
+0x1e0b7da70  __DATA_CONST,__const  _MCFeatureFindMyCarAllowed
+0x1e0b7da68  __DATA_CONST,__const  _MCFeatureFindMyDeviceAllowed
+0x1e0b7da60  __DATA_CONST,__const  _MCFeatureFindMyFriendsAllowed
+0x1e0b7da58  __DATA_CONST,__const  _MCFeatureFindMyFriendsModificationAllowed
+0x1e0b7da50  __DATA_CONST,__const  _MCFeatureFingerprintForContactlessPaymentAllowed
+0x1e0b7da48  __DATA_CONST,__const  _MCFeatureFingerprintModificationAllowed
+0x1e0b7da40  __DATA_CONST,__const  _MCFeatureFingerprintPurchaseAllowed
+0x1e0b7da38  __DATA_CONST,__const  _MCFeatureFingerprintUnlockAllowed
+0x1e0b7da30  __DATA_CONST,__const  _MCFeatureFlagsErrorDomain
+0x1e0b7da28  __DATA_CONST,__const  _MCFeatureGameCenterAllowed
+0x1e0b7da20  __DATA_CONST,__const  _MCFeatureGameCenterAllowedOtherPlayerTypes
+0x1e0b7da18  __DATA_CONST,__const  _MCFeatureGameCenterFriendsSharingModificationAllowed
+0x1e0b7da10  __DATA_CONST,__const  _MCFeatureGameCenterNearbyMultiplayerAllowed
+0x1e0b7da08  __DATA_CONST,__const  _MCFeatureGameCenterPrivateMessagingAllowed
+0x1e0b7da00  __DATA_CONST,__const  _MCFeatureGameCenterProfileModificationAllowed
+0x1e0b7d9f8  __DATA_CONST,__const  _MCFeatureGameCenterProfilePrivacyModificationAllowed
+0x1e0b7d9f0  __DATA_CONST,__const  _MCFeatureGenmojiAllowed
+0x1e0b7d9e8  __DATA_CONST,__const  _MCFeatureGeotagSharingAllowed
+0x1e0b7d9e0  __DATA_CONST,__const  _MCFeatureGroupActivityAllowed
+0x1e0b7d9d8  __DATA_CONST,__const  _MCFeatureHandWashingDataSubmissionAllowed
+0x1e0b7d9d0  __DATA_CONST,__const  _MCFeatureHashtagImagesAllowed
+0x1e0b7d9c8  __DATA_CONST,__const  _MCFeatureHealthAllowed
+0x1e0b7d9c0  __DATA_CONST,__const  _MCFeatureHealthDataSubmission2Allowed
+0x1e0b7d9b8  __DATA_CONST,__const  _MCFeatureHealthDataSubmissionAllowed
+0x1e0b7d9b0  __DATA_CONST,__const  _MCFeatureHiddenAppsAllowed
+0x1e0b7d9a8  __DATA_CONST,__const  _MCFeatureHomeAllowed
+0x1e0b7d9a0  __DATA_CONST,__const  _MCFeatureHomeScreenEditingAllowed
+0x1e0b7d998  __DATA_CONST,__const  _MCFeatureHostPairingAllowed
+0x1e0b7d990  __DATA_CONST,__const  _MCFeatureITunesAllowed
+0x1e0b7d988  __DATA_CONST,__const  _MCFeatureITunesSocialPagesAllowed
+0x1e0b7d980  __DATA_CONST,__const  _MCFeatureITunesStorePasswordEntryForced
+0x1e0b7d978  __DATA_CONST,__const  _MCFeatureIdentifierForAdvertisingAllowed
+0x1e0b7d970  __DATA_CONST,__const  _MCFeatureImagePlaygroundAllowed
+0x1e0b7d968  __DATA_CONST,__const  _MCFeatureImageWandAllowed
+0x1e0b7d960  __DATA_CONST,__const  _MCFeatureInAppPaymentAllowed
+0x1e0b7d958  __DATA_CONST,__const  _MCFeatureInAppPurchasesAllowed
+0x1945a153c  __TEXT,__text  _MCFeatureInsertRestrictedBool
+0x1945a1648  __TEXT,__text  _MCFeatureInsertRestrictedValue
+0x1e0b7d950  __DATA_CONST,__const  _MCFeatureInstalledAppNearMeSuggestionsAllowed
+0x1e0b7d948  __DATA_CONST,__const  _MCFeatureKeyboardMathSolvingAllowed
+0x1e0b7d940  __DATA_CONST,__const  _MCFeatureKeyboardPeriodShortcutAllowed
+0x1e0b7d938  __DATA_CONST,__const  _MCFeatureKeyboardShortcutsAllowed
+0x1e0b7d930  __DATA_CONST,__const  _MCFeatureKnownAirPrintTargets
+0x1e0b7d928  __DATA_CONST,__const  _MCFeatureLaunchRestrictedAppBundleIDs
+0x1e0b7d920  __DATA_CONST,__const  _MCFeatureLegacyAppsRatingExemptedBundleIDs
+0x1e0b7d918  __DATA_CONST,__const  _MCFeatureLimitAdTrackingForced
+0x1e0b7d910  __DATA_CONST,__const  _MCFeatureLimitWebProxies
+0x1e0b7d908  __DATA_CONST,__const  _MCFeatureLiveVoicemailAllowed
+0x1e0b7d900  __DATA_CONST,__const  _MCFeatureLockScreenControlCenterAllowed
+0x1e0b7d8f8  __DATA_CONST,__const  _MCFeatureLockScreenNotificationsViewAllowed
+0x1e0b7d8f0  __DATA_CONST,__const  _MCFeatureLockScreenTodayViewAllowed
+0x1e0b7d8e8  __DATA_CONST,__const  _MCFeatureLockScreenWiFiModificationAllowed
+0x1e0b7d8e0  __DATA_CONST,__const  _MCFeatureLockdownModeAllowed
+0x1e0b7d8d8  __DATA_CONST,__const  _MCFeatureLockedAppsAllowed
+0x1e0b7d8d0  __DATA_CONST,__const  _MCFeatureMDMEnrollmentAllowed
+0x1e0b7d8c8  __DATA_CONST,__const  _MCFeatureMEAllowed
+0x1e0b7d8c0  __DATA_CONST,__const  _MCFeatureMPAllowed
+0x1e0b7d8b8  __DATA_CONST,__const  _MCFeatureMUAllowed
+0x1e0b7d8b0  __DATA_CONST,__const  _MCFeatureMailPrivacyProtectionAllowed
+0x1e0b7d8a8  __DATA_CONST,__const  _MCFeatureMailSmartRepliesAllowed
+0x1e0b7d8a0  __DATA_CONST,__const  _MCFeatureMailSummaryAllowed
+0x1e0b7d898  __DATA_CONST,__const  _MCFeatureManagedAppsCloudSyncAllowed
+0x1e0b7d890  __DATA_CONST,__const  _MCFeatureManagedEmailDomains
+0x1e0b7d888  __DATA_CONST,__const  _MCFeatureManagedPasteboardRequired
+0x1e0b7d880  __DATA_CONST,__const  _MCFeatureManagedWebDomains
+0x1e0b7d878  __DATA_CONST,__const  _MCFeatureManagedWriteUnmanagedContactsAllowed
+0x1e0b7d870  __DATA_CONST,__const  _MCFeatureMarketplaceAppInstallationAllowed
+0x1e0b7d868  __DATA_CONST,__const  _MCFeatureMathPaperSolvingAllowed
+0x1e0b7d860  __DATA_CONST,__const  _MCFeatureMaximumAppsRating
+0x1e0b7d858  __DATA_CONST,__const  _MCFeatureMaximumFailedPasscodeAttempts
+0x1e0b7d850  __DATA_CONST,__const  _MCFeatureMaximumMoviesRating
+0x1e0b7d848  __DATA_CONST,__const  _MCFeatureMaximumPasscodeAgeDays
+0x1e0b7d840  __DATA_CONST,__const  _MCFeatureMaximumTVShowsRating
+0x1e0b7d838  __DATA_CONST,__const  _MCFeatureMediaPurchaseAllowed
+0x1e0b7d830  __DATA_CONST,__const  _MCFeatureMinimumPasscodeLength
+0x1e0b7d828  __DATA_CONST,__const  _MCFeatureMontaraAllowed
+0x1e0b7d820  __DATA_CONST,__const  _MCFeatureMultiplayerGamingAllowed
+0x1e0b7d818  __DATA_CONST,__const  _MCFeatureMultitaskingAllowed
+0x1e0b7d810  __DATA_CONST,__const  _MCFeatureMusicArtistActivityAllowed
+0x1e0b7d808  __DATA_CONST,__const  _MCFeatureMusicServiceAllowed
+0x1e0b7d800  __DATA_CONST,__const  _MCFeatureMusicVideosAllowed
+0x1e0b7d7f8  __DATA_CONST,__const  _MCFeatureNFCAllowed
+0x1e0b7d7f0  __DATA_CONST,__const  _MCFeatureNetworkDriveAccessInFilesAllowed
+0x1e0b7d7e8  __DATA_CONST,__const  _MCFeatureNewsAllowed
+0x1e0b7d7e0  __DATA_CONST,__const  _MCFeatureNewsTodayAllowed
+0x1e0b7d7d8  __DATA_CONST,__const  _MCFeatureNotesTranscriptionAllowed
+0x1e0b7d7d0  __DATA_CONST,__const  _MCFeatureNotesTranscriptionSummaryAllowed
+0x1e0b7d7c8  __DATA_CONST,__const  _MCFeatureNotificationRestrictedApps
+0x1e0b7d7c0  __DATA_CONST,__const  _MCFeatureNotificationsModificationAllowed
+0x1e0b7d7b8  __DATA_CONST,__const  _MCFeatureOTAPIKUpdatesAllowed
+0x1e0b7d7b0  __DATA_CONST,__const  _MCFeatureOnDeviceOnlyDictationForced
+0x1e0b7d7a8  __DATA_CONST,__const  _MCFeatureOnDeviceOnlyTranslationForced
+0x1e0b7d7a0  __DATA_CONST,__const  _MCFeatureOnenessAllowed
+0x1e0b7d798  __DATA_CONST,__const  _MCFeatureOpenFromManagedToUnmanagedAllowed
+0x1e0b7d790  __DATA_CONST,__const  _MCFeatureOpenFromUnmanagedToManagedAllowed
+0x1e0b7d788  __DATA_CONST,__const  _MCFeaturePairedWatchAllowed
+0x1e0b7d780  __DATA_CONST,__const  _MCFeaturePairingWithHomeDevicesAllowed
+0x1e0b7d778  __DATA_CONST,__const  _MCFeaturePasscodeHistoryCount
+0x1e0b7d770  __DATA_CONST,__const  _MCFeaturePasscodeKeyboardComplexity
+0x1e0b7d768  __DATA_CONST,__const  _MCFeaturePasscodeLockGraceTime
+0x1e0b7d760  __DATA_CONST,__const  _MCFeaturePasscodeMinimumComplexChars
+0x1e0b7d758  __DATA_CONST,__const  _MCFeaturePasscodeModificationAllowed
+0x1e0b7d750  __DATA_CONST,__const  _MCFeaturePasscodeRecoveryAllowed
+0x1e0b7d748  __DATA_CONST,__const  _MCFeaturePasscodeRequired
+0x1e0b7d740  __DATA_CONST,__const  _MCFeaturePasswordAutoFillAllowed
+0x1e0b7d738  __DATA_CONST,__const  _MCFeaturePasswordProximityRequestingAllowed
+0x1e0b7d730  __DATA_CONST,__const  _MCFeaturePasswordSharingAllowed
+0x1e0b7d728  __DATA_CONST,__const  _MCFeaturePersonalHotspotModificationAllowed
+0x1e0b7d720  __DATA_CONST,__const  _MCFeaturePersonalizedHandwritingResultsAllowed
+0x1e0b7d718  __DATA_CONST,__const  _MCFeaturePhotoStreamAllowed
+0x1e0b7d710  __DATA_CONST,__const  _MCFeaturePhotorealisticImageGenerationAllowed
+0x1e0b7d708  __DATA_CONST,__const  _MCFeaturePodcastsAllowed
+0x1e0b7d700  __DATA_CONST,__const  _MCFeaturePredictiveKeyboardAllowed
+0x1e0b7d6f8  __DATA_CONST,__const  _MCFeaturePreserveESIMOnEraseForced
+0x1e0b7d6f0  __DATA_CONST,__const  _MCFeaturePromptErrorDomain
+0x1e0b7d6e8  __DATA_CONST,__const  _MCFeatureProximitySetupToNewDeviceAllowed
+0x1e0b7d6e0  __DATA_CONST,__const  _MCFeatureQuickNoteAllowed
+0x1e0b7d6d8  __DATA_CONST,__const  _MCFeatureRCSAllowed
+0x1e0b7d6d0  __DATA_CONST,__const  _MCFeatureRadioServiceAllowed
+0x1e0b7d6c8  __DATA_CONST,__const  _MCFeatureRapidSecurityResponseInstallationAllowed
+0x1e0b7d6c0  __DATA_CONST,__const  _MCFeatureRapidSecurityResponseRemovalAllowed
+0x1e0b7d6b8  __DATA_CONST,__const  _MCFeatureRemoteAppPairingAllowed
+0x1e0b7d6b0  __DATA_CONST,__const  _MCFeatureRemoteScreenObservationAllowed
+0x1e0b7d6a8  __DATA_CONST,__const  _MCFeatureRemovedSystemAppBundleIDs
+0x1e0b7d6a0  __DATA_CONST,__const  _MCFeatureSafariAcceptCookies
+0x1e0b7d698  __DATA_CONST,__const  _MCFeatureSafariAllowed
+0x1e0b7d690  __DATA_CONST,__const  _MCFeatureSafariAutoFillAllowed
+0x1e0b7d688  __DATA_CONST,__const  _MCFeatureSafariFraudWarningForced
+0x1e0b7d680  __DATA_CONST,__const  _MCFeatureSafariHistoryClearingAllowed
+0x1e0b7d678  __DATA_CONST,__const  _MCFeatureSafariJavaScriptAllowed
+0x1e0b7d670  __DATA_CONST,__const  _MCFeatureSafariPopUpsAllowed
+0x1e0b7d668  __DATA_CONST,__const  _MCFeatureSafariPrivateBrowsingAllowed
+0x1e0b7d660  __DATA_CONST,__const  _MCFeatureSafariSummaryAllowed
+0x1e0b7d658  __DATA_CONST,__const  _MCFeatureSafetyDataSubmissionAllowed
+0x1e0b7d650  __DATA_CONST,__const  _MCFeatureSatelliteConnectionAllowed
+0x1e0b7d648  __DATA_CONST,__const  _MCFeatureScreenRecordingAllowed
+0x1e0b7d640  __DATA_CONST,__const  _MCFeatureScreenShotAllowed
+0x1e0b7d638  __DATA_CONST,__const  _MCFeatureScreenTimeModificationAllowed
+0x1e0b7d630  __DATA_CONST,__const  _MCFeatureSelectedTextSharingAllowed
+0x1945a1754  __TEXT,__text  _MCFeatureSetBoolSetting
+0x1e0b7d628  __DATA_CONST,__const  _MCFeatureSharedDeviceTemporarySessionAllowed
+0x1e0b7d620  __DATA_CONST,__const  _MCFeatureSharedStreamAllowed
+0x1e0b7d618  __DATA_CONST,__const  _MCFeatureSimplePasscodeAllowed
+0x1e0b7d610  __DATA_CONST,__const  _MCFeatureSimplePasscodeComplexity
+0x1e0b7d608  __DATA_CONST,__const  _MCFeatureSiri3489Allowed
+0x1e0b7d600  __DATA_CONST,__const  _MCFeatureSiriFeature1Spring2026Allowed
+0x1e0b7d5f8  __DATA_CONST,__const  _MCFeatureSiriReduceSensitiveContentForced
+0x1e0b7d5f0  __DATA_CONST,__const  _MCFeatureSiriServerLoggingAllowed
+0x1e0b7d5e8  __DATA_CONST,__const  _MCFeatureSmartPunctuationAllowed
+0x1e0b7d5e0  __DATA_CONST,__const  _MCFeatureSoftwareUpdatesAllowed
+0x1e0b7d5d8  __DATA_CONST,__const  _MCFeatureSpeakerVolumeLimitModificationAllowed
+0x1e0b7d5d0  __DATA_CONST,__const  _MCFeatureSpellCheckAllowed
+0x1e0b7d5c8  __DATA_CONST,__const  _MCFeatureSpotlightAllowed
+0x1e0b7d5c0  __DATA_CONST,__const  _MCFeatureSpotlightInternetResultsAllowed
+0x1e0b7d5b8  __DATA_CONST,__const  _MCFeatureSpotlightNewsAllowed
+0x1e0b7d5b0  __DATA_CONST,__const  _MCFeatureSpringBoardShouldConsiderAppAllowlistAsTransient
+0x1e0b7d5a8  __DATA_CONST,__const  _MCFeatureSquareRootOnBasicCalculatorForced
+0x1e0b7d5a0  __DATA_CONST,__const  _MCFeatureStandbyModeAllowed
+0x1e0b7d598  __DATA_CONST,__const  _MCFeatureSystemAppRemovalAllowed
+0x1e0b7d590  __DATA_CONST,__const  _MCFeatureTVAllowed
+0x1e0b7d588  __DATA_CONST,__const  _MCFeatureTVProviderModificationAllowed
+0x1e0b7d580  __DATA_CONST,__const  _MCFeatureTVRemoteAllowedRemotes
+0x1e0b7d578  __DATA_CONST,__const  _MCFeatureTVRemoteAllowedTVDeviceNames
+0x1e0b7d570  __DATA_CONST,__const  _MCFeatureTVRemoteAllowedTVs
+0x1e0b7d568  __DATA_CONST,__const  _MCFeatureTVShowingUndownloadedMoviesAllowed
+0x1e0b7d560  __DATA_CONST,__const  _MCFeatureTVShowingUndownloadedTVShowsAllowed
+0x1e0b7d558  __DATA_CONST,__const  _MCFeatureTodayViewAllowed
+0x1e0b7d550  __DATA_CONST,__const  _MCFeatureTodayViewModificationAllowed
+0x1e0b7d548  __DATA_CONST,__const  _MCFeatureTranslationLookupAllowed
+0x1e0b7d540  __DATA_CONST,__const  _MCFeatureTrustedCodeSigningIdentities
+0x1e0b7d538  __DATA_CONST,__const  _MCFeatureUIAppInstallationAllowed
+0x1e0b7d530  __DATA_CONST,__const  _MCFeatureUIConfigurationProfileInstallationAllowed
+0x1e0b7d528  __DATA_CONST,__const  _MCFeatureUSBDriveAccessAllowed
+0x1e0b7d520  __DATA_CONST,__const  _MCFeatureUSBDriveAccessInFilesAllowed
+0x1e0b7d518  __DATA_CONST,__const  _MCFeatureUSBRestrictedModeAllowed
+0x1e0b7d510  __DATA_CONST,__const  _MCFeatureUninstalledAppNearMeSuggestionsAllowed
+0x1e0b7d508  __DATA_CONST,__const  _MCFeatureUnmanagedReadManagedContactsAllowed
+0x1e0b7d500  __DATA_CONST,__const  _MCFeatureUnpairedExternalBootToRecoveryAllowed
+0x1e0b7d4f8  __DATA_CONST,__const  _MCFeatureUnpromptedRemoteScreenObservationForced
+0x1e0b7d4f0  __DATA_CONST,__const  _MCFeatureUntrustedTLSPromptAllowed
+0x1e0b7d4e8  __DATA_CONST,__const  _MCFeatureVPNCreationAllowed
+0x1e0b7d4e0  __DATA_CONST,__const  _MCFeatureVehicleUIAllowed
+0x1e0b7d4d8  __DATA_CONST,__const  _MCFeatureVideoConferencingAllowed
+0x1e0b7d4d0  __DATA_CONST,__const  _MCFeatureVideoConferencingRemoteControlAllowed
+0x1e0b7d4c8  __DATA_CONST,__const  _MCFeatureVisualIntelligenceSummaryAllowed
+0x1e0b7d4c0  __DATA_CONST,__const  _MCFeatureWallpaperAllowed
+0x1e0b7d4b8  __DATA_CONST,__const  _MCFeatureWallpaperModificationAllowed
+0x1e0b7d4b0  __DATA_CONST,__const  _MCFeatureWatchWristDetectRequired
+0x1e0b7d4a8  __DATA_CONST,__const  _MCFeatureWebContentFilterAutoForced
+0x1e0b7d4a0  __DATA_CONST,__const  _MCFeatureWebContentFilterAutoPermittedURLs
+0x1e0b7d498  __DATA_CONST,__const  _MCFeatureWebContentFilterBlacklistedURLs
+0x1e0b7d490  __DATA_CONST,__const  _MCFeatureWebContentFilterTransitiveTrustAllowed
+0x1e0b7d488  __DATA_CONST,__const  _MCFeatureWebContentFilterWhitelistedBookmarks
+0x1e0b7d480  __DATA_CONST,__const  _MCFeatureWebContentFilterWhitelistedURLs
+0x1e0b7d478  __DATA_CONST,__const  _MCFeatureWebDistributionAppInstallationAllowed
+0x1e0b7d470  __DATA_CONST,__const  _MCFeatureWheelchairDataSubmissionAllowed
+0x1e0b7d468  __DATA_CONST,__const  _MCFeatureWiFiPasswordSharingAllowed
+0x1e0b7d460  __DATA_CONST,__const  _MCFeatureWiFiToCellularFallbackAllowed
+0x1e0b7d458  __DATA_CONST,__const  _MCFeatureWiFiWhitelistingForced
+0x1e0b7d450  __DATA_CONST,__const  _MCFeatureWiFiWithAllowedNetworksOnlyForced
+0x1e0b7d448  __DATA_CONST,__const  _MCFeatureWifiPowerOnEnforced
+0x1e0b7d440  __DATA_CONST,__const  _MCFeatureWritingToolsAllowed
+0x1e0b7d438  __DATA_CONST,__const  _MCFeatureYouTubeAllowed
+0x1e0b7d430  __DATA_CONST,__const  _MCFeatureiPhoneWidgetsOnMacAllowed
+0x1e0b7d428  __DATA_CONST,__const  _MCFeedbackAssistantBundleIdentifier
+0x1e0b7d420  __DATA_CONST,__const  _MCFileAccessRepairToolErrorDomain
+0x1e0b7d418  __DATA_CONST,__const  _MCFilesBundleIdentifier
+0x1e0b7d410  __DATA_CONST,__const  _MCFilesRecentsWidgetBundleIdentifier
+0x1e0b7d408  __DATA_CONST,__const  _MCFilesServiceBundleIdentifier
+0x1e0b7d400  __DATA_CONST,__const  _MCFindMyBundleIdentifier
+0x1e0b7d3f8  __DATA_CONST,__const  _MCFitnessBundleIdentifier
+0x19464645c  __TEXT,__text  _MCFixHostileSymlinks
+0x1946454b4  __TEXT,__text  _MCFixPermissionOfManagedConfigurationFile
+0x194645520  __TEXT,__text  _MCFixPermissionOfManagedConfigurationFileFM
+0x19464584c  __TEXT,__text  _MCFixPermissionsOfManagedConfigurationDirectoryAndContents
+0x1946458b0  __TEXT,__text  _MCFixPermissionsOfManagedConfigurationDirectoryAndContentsFM
+0x1e0b7d3f0  __DATA_CONST,__const  _MCFontErrorDomain
+0x1945a76a0  __TEXT,__text  _MCFormattedStringForNumber
+0x1945a7700  __TEXT,__text  _MCFormattedStringForTimeInterval
+0x1945d9968  __TEXT,__text  _MCFrontmostApplicationBundleIdentifier
+0x1e0b7d3e8  __DATA_CONST,__const  _MCGameCenterBundleIdentifier
+0x1e0b7d3e0  __DATA_CONST,__const  _MCGamesBundleIdentifier
+0x1e0b7d3d8  __DATA_CONST,__const  _MCGeneralErrorDomain
+0x1945bbbe0  __TEXT,__text  _MCGestaltGetDeviceClass
+0x1945bc0a4  __TEXT,__text  _MCGestaltGetDeviceID
+0x1945bbc18  __TEXT,__text  _MCGestaltGetDeviceName
+0x1945bc07c  __TEXT,__text  _MCGestaltGetDeviceSerialNumber
+0x1945bc054  __TEXT,__text  _MCGestaltGetDeviceUUID
+0x1945bc174  __TEXT,__text  _MCGestaltGetModelNumber
+0x1945bc124  __TEXT,__text  _MCGestaltGetProductName
+0x1945bc14c  __TEXT,__text  _MCGestaltGetWiFiMAC
+0x1945bc1cc  __TEXT,__text  _MCGestaltHasBiometricCapability
+0x1945bc19c  __TEXT,__text  _MCGestaltHasInternetTetheringCapability
+0x1945bc1c0  __TEXT,__text  _MCGestaltHasOysterCapability
+0x1945bc1b4  __TEXT,__text  _MCGestaltHasPearlIDCapability
+0x1945bc2b0  __TEXT,__text  _MCGestaltHasSEP
+0x194580350  __TEXT,__text  _MCGestaltHasSMSCapability
+0x1945bbce4  __TEXT,__text  _MCGestaltIsAppleTV
+0x1945bbe0c  __TEXT,__text  _MCGestaltIsHomeAccessory
+0x1945bbea0  __TEXT,__text  _MCGestaltIsHomePod
+0x1945bc1a8  __TEXT,__text  _MCGestaltIsInternalBuild
+0x1945bbf34  __TEXT,__text  _MCGestaltIsPhone
+0x1945bbfc0  __TEXT,__text  _MCGestaltIsVisionDevice
+0x1945bbd78  __TEXT,__text  _MCGestaltIsWatch
+0x1945bbc50  __TEXT,__text  _MCGestaltIsiPad
+0x1945bc2bc  __TEXT,__text  _MCGestaltSupportsMultiUser
+0x194583cd0  __TEXT,__text  _MCGetBaseResourcePath
+0x1e0b7d3d0  __DATA_CONST,__const  _MCGizmoAddressbooksyncdBundleIdentifier
+0x1e0b7d3c8  __DATA_CONST,__const  _MCGizmoAppStoreBundleIdentifier
+0x1e0b7d3c0  __DATA_CONST,__const  _MCGizmoCalendarBundleIdentifier
+0x1e0b7d3b8  __DATA_CONST,__const  _MCGizmoCameraBundleIdentifier
+0x1e0b7d3b0  __DATA_CONST,__const  _MCGizmoCarouselBundleIdentifier
+0x1e0b7d3a8  __DATA_CONST,__const  _MCGizmoContactsBundleIdentifier
+0x1e0b7d3a0  __DATA_CONST,__const  _MCGizmoCyclesBundleIdentifier
+0x1e0b7d398  __DATA_CONST,__const  _MCGizmoECGBundleIdentifier
+0x1e0b7d390  __DATA_CONST,__const  _MCGizmoFindMyFriendsBundleIdentifier
+0x1e0b7d388  __DATA_CONST,__const  _MCGizmoFitnessBundleIdentifier
+0x1e0b7d380  __DATA_CONST,__const  _MCGizmoHomeBundleIdentifier
+0x1e0b7d378  __DATA_CONST,__const  _MCGizmoMailBundleIdentifier
+0x1e0b7d370  __DATA_CONST,__const  _MCGizmoMapsBundleIdentifier
+0x1e0b7d368  __DATA_CONST,__const  _MCGizmoMessagesBundleIdentifier
+0x1e0b7d360  __DATA_CONST,__const  _MCGizmoMusicBundleIdentifier
+0x1e0b7d358  __DATA_CONST,__const  _MCGizmoNewsBundleIdentifier
+0x1e0b7d350  __DATA_CONST,__const  _MCGizmoOxygenSaturationBundleIdentifier
+0x1e0b7d348  __DATA_CONST,__const  _MCGizmoPassbookBundleIdentifier
+0x1e0b7d340  __DATA_CONST,__const  _MCGizmoPhoneBundleIdentifier
+0x1e0b7d338  __DATA_CONST,__const  _MCGizmoPhotosBundleIdentifier
+0x1e0b7d330  __DATA_CONST,__const  _MCGizmoPodcastsBundleIdentifier
+0x1e0b7d328  __DATA_CONST,__const  _MCGizmoPreferencesBundleIdentifier
+0x1e0b7d320  __DATA_CONST,__const  _MCGizmoRadioBundleIdentifier
+0x1e0b7d318  __DATA_CONST,__const  _MCGizmoRemindersBundleIdentifier
+0x1e0b7d310  __DATA_CONST,__const  _MCGizmoRemoteBundleIdentifier
+0x1e0b7d308  __DATA_CONST,__const  _MCGizmoSetupAssistantBundleIdentifier
+0x1e0b7d300  __DATA_CONST,__const  _MCGizmoStocksBundleIdentifier
+0x1e0b7d2f8  __DATA_CONST,__const  _MCGizmoStopwatchBundleIdentifier
+0x1e0b7d2f0  __DATA_CONST,__const  _MCGizmoTimerBundleIdentifier
+0x1e0b7d2e8  __DATA_CONST,__const  _MCGizmoVoiceMemosBundleIdentifier
+0x1e0b7d2e0  __DATA_CONST,__const  _MCGizmoWeatherBundleIdentifier
+0x1e0b7d2d8  __DATA_CONST,__const  _MCGizmoWorkoutBundleIdentifier
+0x1e0b7d2d0  __DATA_CONST,__const  _MCGizmoWorldClockBundleIdentifier
+0x1e0b7d2c8  __DATA_CONST,__const  _MCGizmoiBooksBundleIdentifier
+0x1e0b7d2c0  __DATA_CONST,__const  _MCGlobalEthernetErrorDomain
+0x1e0b7d2b8  __DATA_CONST,__const  _MCGlobalHTTPProxyErrorDomain
+0x1e0b7d2b0  __DATA_CONST,__const  _MCGoogleErrorDomain
+0x1945b9ed8  __TEXT,__text  _MCHCUCopyCertificateFromKeychainForMappedLabel
+0x1945ba0fc  __TEXT,__text  _MCHCUCopyHostCertificateForMappedLabel
+0x1945b9c10  __TEXT,__text  _MCHCUCreateCSR
+0x1e0b7d2a8  __DATA_CONST,__const  _MCHCUPrivateKeyKey
+0x1e0b7d2a0  __DATA_CONST,__const  _MCHCUPublicKeyKey
+0x1945b9ff0  __TEXT,__text  _MCHCUSetHostCertificateDataForMappedLabel
+0x1e0b7d298  __DATA_CONST,__const  _MCHTTPTransactionErrorDomain
+0x1945d9680  __TEXT,__text  _MCHasMDMMigrated
+0x19457ce3c  __TEXT,__text  _MCHasMigrated
+0x1e0b7d290  __DATA_CONST,__const  _MCHealthBundleIdentifier
+0x1945a28fc  __TEXT,__text  _MCHoldingTankManifestName
+0x1e0b7d288  __DATA_CONST,__const  _MCHomeBundleIdentifier
+0x1e0b7d280  __DATA_CONST,__const  _MCHomeScreenLayoutChangedNotification
+0x1e0b7d278  __DATA_CONST,__const  _MCHomeScreenLayoutErrorDomain
+0x1e0b7d270  __DATA_CONST,__const  _MCICDidBeginInstallingNextProfileFn
+0x1e0b7d268  __DATA_CONST,__const  _MCICDidBeginInstallingNextProfileParamProfileData
+0x1e0b7d260  __DATA_CONST,__const  _MCICDidFinishFn
+0x1e0b7d258  __DATA_CONST,__const  _MCICDidFinishParamError
+0x1e0b7d250  __DATA_CONST,__const  _MCICDidFinishParamIdentifier
+0x1e0b7d248  __DATA_CONST,__const  _MCICDidRequestCurrentPasscodeFn
+0x1e0b7d240  __DATA_CONST,__const  _MCICDidRequestCurrentPasscodeReplyPasscode
+0x1e0b7d238  __DATA_CONST,__const  _MCICDidRequestCurrentPasscodeReplyRetval
+0x1e0b7d230  __DATA_CONST,__const  _MCICDidUpdateStatusFn
+0x1e0b7d228  __DATA_CONST,__const  _MCICDidUpdateStatusParamStatus
+0x1e0b7d220  __DATA_CONST,__const  _MCICPreflightParamPayloadIndex
+0x1e0b7d218  __DATA_CONST,__const  _MCICPreflightParamResponses
+0x1e0b7d210  __DATA_CONST,__const  _MCICPreflightReplyError
+0x1e0b7d208  __DATA_CONST,__const  _MCICPreflightReplyRetval
+0x1e0b7d200  __DATA_CONST,__const  _MCICPreflightResponseFn
+0x1e0b7d1f8  __DATA_CONST,__const  _MCICRequestUserInputFn
+0x1e0b7d1f0  __DATA_CONST,__const  _MCICRequestUserInputParamUserInput
+0x1e0b7d1e8  __DATA_CONST,__const  _MCICRequestUserInputReplyFnName
+0x1e0b7d1e0  __DATA_CONST,__const  _MCICRequestUserInputReplyFnNameDone
+0x1e0b7d1d8  __DATA_CONST,__const  _MCICRequestUserInputReplyFnNamePreflight
+0x1e0b7d1d0  __DATA_CONST,__const  _MCICRequestUserInputReplyResults
+0x1e0b7d1c8  __DATA_CONST,__const  _MCICShowUserWarningsFn
+0x1e0b7d1c0  __DATA_CONST,__const  _MCICShowUserWarningsParamWarnings
+0x1e0b7d1b8  __DATA_CONST,__const  _MCICShowUserWarningsReplyRetval
+0x1945de120  __TEXT,__text  _MCIOSerialString
+0x1e0b7d1b0  __DATA_CONST,__const  _MCInstallationErrorDomain
+0x1e0b7d1a8  __DATA_CONST,__const  _MCInternalErrorDomain
+0x1e0b7d1a0  __DATA_CONST,__const  _MCIntersectionDefaultKey
+0x1e0b7d198  __DATA_CONST,__const  _MCIntersectionKey
+0x1e0b7d190  __DATA_CONST,__const  _MCIntersectionValuesKey
+0x19458089c  __TEXT,__text  _MCIsAppAccountBasedForDragDrop
+0x1945a1d88  __TEXT,__text  _MCIsAppAccountBasedSourceForOpenIn
+0x1945a1e98  __TEXT,__text  _MCIsAppAccountBasedTargetForOpenIn
+0x1945a1e38  __TEXT,__text  _MCIsAppBasicallySafari
+0x1945a1ee8  __TEXT,__text  _MCIsAppExemptFromDragDropManagement
+0x1945a1ca8  __TEXT,__text  _MCIsAppExemptFromImportFromTargetRestrictions
+0x1945a1d30  __TEXT,__text  _MCIsAppExemptFromImportFromTargetRestrictionsForContacts
+0x1945a1c50  __TEXT,__text  _MCIsAppExemptFromOpenInSourceRestrictions
+0x1945d98ec  __TEXT,__text  _MCIsBundleIDRunning
+0x1eb9af488  __DATA,__common  _MCIsDaemonProcess
+0x1945bcd6c  __TEXT,__text  _MCIsDeviceActivated
+0x1945d9988  __TEXT,__text  _MCIsEffectivelyInAppWhitelistMode
+0x1945bce40  __TEXT,__text  _MCIsSystemLockdownModeEnabled
+0x194633198  __TEXT,__text  _MCKeybagClearMementoBlob
+0x1946331a0  __TEXT,__text  _MCKeybagClearMementoBlobForHandle
+0x1946330ac  __TEXT,__text  _MCKeybagClearPasscodeGenerationCaches
+0x194633328  __TEXT,__text  _MCKeybagCopyEscrowWithContext
+0x194633900  __TEXT,__text  _MCKeybagCreateMDMEscrowWithPasscodeContext
+0x1946335f0  __TEXT,__text  _MCKeybagCreateSupervisionEscrowWithPasscodeContext
+0x194632e34  __TEXT,__text  _MCKeybagCurrentMaximumFailedPasscodeAttempts
+0x194632e3c  __TEXT,__text  _MCKeybagCurrentMaximumFailedPasscodeAttemptsForHandle
+0x194632f2c  __TEXT,__text  _MCKeybagCurrentPasscodeGeneration
+0x194632f34  __TEXT,__text  _MCKeybagCurrentPasscodeGenerationForHandle
+0x194632b90  __TEXT,__text  _MCKeybagCurrentPasscodeGracePeriod
+0x194633bf8  __TEXT,__text  _MCKeybagDeleteMDMEscrowData
+0x194633c2c  __TEXT,__text  _MCKeybagDeleteMDMEscrowSecret
+0x1e0b7d188  __DATA_CONST,__const  _MCKeybagErrorDomain
+0x194633718  __TEXT,__text  _MCKeybagHasMDMEscrowDataAndSecret
+0x1946332a8  __TEXT,__text  _MCKeybagMementoBlobExists
+0x1946332b0  __TEXT,__text  _MCKeybagMementoBlobExistsForHandle
+0x194632fec  __TEXT,__text  _MCKeybagMementoPasscodeGeneration
+0x194632ff4  __TEXT,__text  _MCKeybagMementoPasscodeGenerationForHandle
+0x194633100  __TEXT,__text  _MCKeybagMementoSupported
+0x194633108  __TEXT,__text  _MCKeybagMementoSupportedForHandle
+0x194633768  __TEXT,__text  _MCKeybagRetrieveMDMEscrowDataIfPresent
+0x19463388c  __TEXT,__text  _MCKeybagRetrieveMDMEscrowSecret
+0x194633708  __TEXT,__text  _MCKeybagRetrieveSupervisionEscrowSecret
+0x194632be8  __TEXT,__text  _MCKeybagSetMaximumFailedPasscodeAttempts
+0x194632948  __TEXT,__text  _MCKeybagSetPasscodeGracePeriod
+0x194633c60  __TEXT,__text  _MCKeybagVerifyPasscodeContext
+0x1e0b7d180  __DATA_CONST,__const  _MCKeyboardSettingsChangedNotification
+0x194599744  __TEXT,__text  _MCKeychainCopyIdentityFromPKCS12
+0x1e0b7d178  __DATA_CONST,__const  _MCKeychainErrorDomain
+0x1e0b7d170  __DATA_CONST,__const  _MCLDAPErrorDomain
+0x1945b92e8  __TEXT,__text  _MCLDAPSearchSettingsClass
+0x1945b9a4c  __TEXT,__text  _MCLKLogoutSupportClass
+0x1e0b7d168  __DATA_CONST,__const  _MCLegacyCallHistorySyncHelperBundleIdentifier
+0x1945a379c  __TEXT,__text  _MCLegacyCloudConfigurationDetailsFilePath
+0x19457f16c  __TEXT,__text  _MCLegacyMetadataFilePath
+0x1945a2fac  __TEXT,__text  _MCLegacyPostSetupAutoInstallProfilePath
+0x1945a2738  __TEXT,__text  _MCLegacyProfileStorageDirectory
+0x19457f1a4  __TEXT,__text  _MCLegacyPublicInfoDirectory
+0x1945a2964  __TEXT,__text  _MCLegacyRestrictionsFilePath
+0x1e0b7d160  __DATA_CONST,__const  _MCLocalStorageSettingsChangedNotification
+0x19459ab0c  __TEXT,__text  _MCLocalizedAppleInternalString
+0x19459ad20  __TEXT,__text  _MCLocalizedAppleInternalStringByDevice
+0x1e0b7d158  __DATA_CONST,__const  _MCLocalizedCertificateSourceDescriptionDidChangeNotification
+0x19459af2c  __TEXT,__text  _MCLocalizedErrorFormat
+0x19459b058  __TEXT,__text  _MCLocalizedErrorFormatByDevice
+0x19459a29c  __TEXT,__text  _MCLocalizedErrorString
+0x19459acc0  __TEXT,__text  _MCLocalizedErrorStringByDevice
+0x19459ae84  __TEXT,__text  _MCLocalizedFormat
+0x19459afb8  __TEXT,__text  _MCLocalizedFormatByDevice
+0x1e0b7d150  __DATA_CONST,__const  _MCLocalizedRestrictionSourceDescriptionDidChangeNotification
+0x19459aa58  __TEXT,__text  _MCLocalizedString
+0x19459ab78  __TEXT,__text  _MCLocalizedStringByDevice
+0x1945a750c  __TEXT,__text  _MCLocalizedStringForBool
+0x19459abd8  __TEXT,__text  _MCLocalizedStringForDevice
+0x19459aa64  __TEXT,__text  _MCLocalizedStringInTable
+0x1945bc540  __TEXT,__text  _MCLockdownCopyBuiltInIdentity
+0x1945bcdb4  __TEXT,__text  _MCLockdownDeletePairingRecords
+0x1945bc4ec  __TEXT,__text  _MCLockdownGetDeviceAvailableCapacity
+0x1945bc444  __TEXT,__text  _MCLockdownGetDeviceCapacity
+0x1945bc41c  __TEXT,__text  _MCLockdownGetDeviceColor
+0x1945bcbb8  __TEXT,__text  _MCLockdownGetDeviceIntermediateCertificates
+0x1945bc30c  __TEXT,__text  _MCLockdownGetDeviceName
+0x1945bc498  __TEXT,__text  _MCLockdownGetDiskCapacity
+0x1945bccd8  __TEXT,__text  _MCLockdownLastCloudBackupDate
+0x1945bcdd4  __TEXT,__text  _MCLockdownOperationQueue
+0x1945bc344  __TEXT,__text  _MCLockdownSetDeviceName
+0x1946445a0  __TEXT,__text  _MCLogSystemGroupContainerDirectoryACLs
+0x19464490c  __TEXT,__text  _MCLogUnexpectedFileAccessError
+0x19457ea98  __TEXT,__text  _MCLoggingInitialize
+0x1e0b7d148  __DATA_CONST,__const  _MCLoggingSettingsErrorDomain
+0x1945b91f8  __TEXT,__text  _MCMAECopyActivationRecordWithError
+0x1945b91bc  __TEXT,__text  _MCMAEGetActivationStateWithError
+0x1e0b7d140  __DATA_CONST,__const  _MCMDMErrorDomain
+0x1945a3180  __TEXT,__text  _MCMDMFilePath
+0x19459099c  __TEXT,__text  _MCMailAccountClass
+0x1945b8f98  __TEXT,__text  _MCMailAccountManagedTag
+0x1e0b7d138  __DATA_CONST,__const  _MCMailBundleIdentifier
+0x1e0b7d130  __DATA_CONST,__const  _MCMailComposeBundleIdentifier
+0x1e0b7d128  __DATA_CONST,__const  _MCMailDaemonAliasBundleIdentifier
+0x1e0b7d120  __DATA_CONST,__const  _MCMailDaemonBundleIdentifier
+0x1e0b7d118  __DATA_CONST,__const  _MCMailIntentsBundleIdentifier
+0x194646b68  __TEXT,__text  _MCMakePathDeletableBySettingACL
+0x1e0b7d110  __DATA_CONST,__const  _MCManagedAppsChangedNotification
+0x1e0b7d108  __DATA_CONST,__const  _MCManagedBooksChangedNotification
+0x1e0b7d100  __DATA_CONST,__const  _MCManagingOrgInfoChangedNotification
+0x1e0b7d0f8  __DATA_CONST,__const  _MCMapsBundleIdentifier
+0x1e0b7d0f0  __DATA_CONST,__const  _MCMaximumAppsRatingThirdPartyQuery
+0x1e0b7d0e8  __DATA_CONST,__const  _MCMaximumMoviesRatingThirdPartyQuery
+0x1e0b7d0e0  __DATA_CONST,__const  _MCMaximumTVShowsRatingThirdPartyQuery
+0x1e0b7d0d8  __DATA_CONST,__const  _MCMessagesBundleIdentifier
+0x1e0b7d0d0  __DATA_CONST,__const  _MCMusicBundleIdentifier
+0x1945b93fc  __TEXT,__text  _MCNEProfileIngestionClass
+0x1945b9528  __TEXT,__text  _MCNEProfileIngestionHandlerClassForPayload
+0x1945a3358  __TEXT,__text  _MCNagUIMetaFilePath
+0x1e0b7d0c8  __DATA_CONST,__const  _MCNetworkUsageRulesErrorDomain
+0x1e0b7d0c0  __DATA_CONST,__const  _MCNewsBundleIdentifier
+0x1945a4368  __TEXT,__text  _MCNewsServicesFrameworkPath
+0x1e0b7d0b8  __DATA_CONST,__const  _MCNewsSettingsChangedNotification
+0x1e0b7d0b0  __DATA_CONST,__const  _MCNotesBundleIdentifier
+0x1e0b7d0a8  __DATA_CONST,__const  _MCNotificationSettingsErrorDomain
+0x1e0b7d0a0  __DATA_CONST,__const  _MCNotificationUserInfoSenderPIDKey
+0x1945b998c  __TEXT,__text  _MCOSLogInstallProfilePayload
+0x1945b99ec  __TEXT,__text  _MCOSLogRemoveProfilePayload
+0x1945b992c  __TEXT,__text  _MCOSLogValidateProfilePayload
+0x1e0b7d098  __DATA_CONST,__const  _MCOSXServerErrorDomain
+0x1e0b7d090  __DATA_CONST,__const  _MCOTAProfilesErrorDomain
+0x1945a352c  __TEXT,__text  _MCOutstandingNagComputationFilePath
+0x1e0b7d088  __DATA_CONST,__const  _MCOverrideUserSettingsKey
+0x1945b8d48  __TEXT,__text  _MCPLManagedAssetClass
+0x1945b8bcc  __TEXT,__text  _MCPLPhotoLibraryClass
+0x1e0b7d080  __DATA_CONST,__const  _MCPassbookBundleIdentifier
+0x1e0b7d078  __DATA_CONST,__const  _MCPasscodeChangedNotification
+0x1e0b7d070  __DATA_CONST,__const  _MCPasscodeComplianceChangedNotification
+0x1e0b7d068  __DATA_CONST,__const  _MCPasscodeErrorDomain
+0x1945a3490  __TEXT,__text  _MCPasscodeNagKeepAliveFilePath
+0x1e0b7d060  __DATA_CONST,__const  _MCPasscodePolicyChangedNotification
+0x194646d20  __TEXT,__text  _MCPathWithoutPrivatePathComponent
+0x1e0b7d058  __DATA_CONST,__const  _MCPayloadErrorDomain
+0x1e0b7d050  __DATA_CONST,__const  _MCPersonaErrorDomain
+0x1e0b7d048  __DATA_CONST,__const  _MCPhoneBundleIdentifier
+0x1e0b7d040  __DATA_CONST,__const  _MCPhoneIntentHandlerBundleIdentifier
+0x1e0b7d038  __DATA_CONST,__const  _MCPhotoBoothBundleIdentifier
+0x1e0b7d030  __DATA_CONST,__const  _MCPhotosBundleIdentifier
+0x1e0b7d028  __DATA_CONST,__const  _MCPodcastsBundleIdentifier
+0x1945a2e74  __TEXT,__text  _MCPostSetupAutoInstallProfilePathNF
+0x1945a2f10  __TEXT,__text  _MCPostSetupAutoInstallSetAsideProfilePath
+0x1945b8920  __TEXT,__text  _MCPowerlogControlReadMode
+0x1945b88c8  __TEXT,__text  _MCPowerlogControlSwitchMode
+0x1e0b7d020  __DATA_CONST,__const  _MCPreferencesBundleIdentifier
+0x1e0b7d018  __DATA_CONST,__const  _MCPrivateNetworkErrorDomain
+0x19457f06c  __TEXT,__text  _MCProductBuildVersion
+0x19459bc58  __TEXT,__text  _MCProductVersion
+0x194581b6c  __TEXT,__text  _MCProfileConnectionXPCProtocolInterface
+0x1e0b7d010  __DATA_CONST,__const  _MCProfileErrorDomain
+0x1945a30e4  __TEXT,__text  _MCProfileEventsFilePath
+0x1e0b7d008  __DATA_CONST,__const  _MCProfileListChangedNotification
+0x1e0b7d000  __DATA_CONST,__const  _MCProfileRemovalErrorDomain
+0x1e0b7cff8  __DATA_CONST,__const  _MCProfileServiceName
+0x1e0b7cff0  __DATA_CONST,__const  _MCProfileServicePublicName
+0x1e0b7cfe8  __DATA_CONST,__const  _MCProfileWasQueuedNotification
+0x1e0b7cfe0  __DATA_CONST,__const  _MCProfilectlBundleIdentifier
+0x1e0b7cfd8  __DATA_CONST,__const  _MCProvisioningProfileErrorDomain
+0x19458288c  __TEXT,__text  _MCPublicEffectiveUserSettingsFilePath
+0x1e0b7cfd0  __DATA_CONST,__const  _MCQuicklookPreviewBundleIdentifier
+0x1e0b7cfc8  __DATA_CONST,__const  _MCQuicklookUIExtensionBundleIdentifier
+0x1e0b7cfc0  __DATA_CONST,__const  _MCRapidReturnToServiceNotification
+0x194644d24  __TEXT,__text  _MCRecoverUnreadableSystemGroupContainerFile
+0x1e0b7cfb8  __DATA_CONST,__const  _MCRelayErrorDomain
+0x1e0b7cfb0  __DATA_CONST,__const  _MCRemindersBundleIdentifier
+0x1e0b7cfa8  __DATA_CONST,__const  _MCRemoteBundleIdentifier
+0x194607cdc  __TEXT,__text  _MCRemoteManagementTransferProfileAccount
+0x194646e10  __TEXT,__text  _MCRemoveFileIfExists
+0x194646a3c  __TEXT,__text  _MCRemoveFileIfSymlink
+0x1e0b7cfa0  __DATA_CONST,__const  _MCRemovedSystemAppsChangedNotification
+0x194646710  __TEXT,__text  _MCReplaceSymlinkWithDirectory
+0x1e0b7cf98  __DATA_CONST,__const  _MCRestrictedBoolKey
+0x1e0b7cf90  __DATA_CONST,__const  _MCRestrictedBoolPreferenceKey
+0x1e0b7cf88  __DATA_CONST,__const  _MCRestrictedBoolValueKey
+0x1e0b7cf80  __DATA_CONST,__const  _MCRestrictedBoolValuesKey
+0x1e0b7cf78  __DATA_CONST,__const  _MCRestrictedValueDefaultKey
+0x1e0b7cf70  __DATA_CONST,__const  _MCRestrictedValueKey
+0x1e0b7cf68  __DATA_CONST,__const  _MCRestrictedValuePreferSmallerValuesKey
+0x1e0b7cf60  __DATA_CONST,__const  _MCRestrictedValueValueKey
+0x1e0b7cf58  __DATA_CONST,__const  _MCRestrictionChangedNotification
+0x1e0b7cf50  __DATA_CONST,__const  _MCRestrictionsErrorDomain
+0x19457fd28  __TEXT,__text  _MCRestrictionsFilePath
+0x1e0b7cf48  __DATA_CONST,__const  _MCRoutinedBundleIdentifier
+0x1945b9850  __TEXT,__text  _MCSBAddWebClipToHomeScreen
+0x1945b9894  __TEXT,__text  _MCSBGetScreenLockStatus
+0x1945b98e8  __TEXT,__text  _MCSBRemoveWebClipFromHomeScreen
+0x1945b97a4  __TEXT,__text  _MCSBSApplicationLaunchFromURLOptionUnlockDeviceKey
+0x1945b97cc  __TEXT,__text  _MCSBSCopyFrontmostApplicationDisplayIdentifier
+0x1945b9824  __TEXT,__text  _MCSBSSpringBoardServerPort
+0x1945b97f8  __TEXT,__text  _MCSBSSuspendFrontmostApplication
+0x1945b977c  __TEXT,__text  _MCSBUserNotificationDismissOnLock
+0x1945b9754  __TEXT,__text  _MCSBUserNotificationDontDismissOnUnlock
+0x1e0b7cf40  __DATA_CONST,__const  _MCSCEPErrorDomain
+0x1e0b7cf38  __DATA_CONST,__const  _MCSSOErrorDomain
+0x1e0b7cf30  __DATA_CONST,__const  _MCSafariBundleIdentifier
+0x1e0b7cf28  __DATA_CONST,__const  _MCSafariCookieSettingsChangedNotification
+0x1e0b7cf20  __DATA_CONST,__const  _MCSafariViewServiceBundleIdentifier
+0x194645bec  __TEXT,__text  _MCSafelyCopyItemAtPathToDestinationPath
+0x194645c64  __TEXT,__text  _MCSafelyCopyItemAtPathToDestinationPathFM
+0x1e0b7cf18  __DATA_CONST,__const  _MCScreenTimeWidgetBundleIdentifier
+0x1e0b7cf10  __DATA_CONST,__const  _MCSelfSignedCertificateErrorDomain
+0x1945be22c  __TEXT,__text  _MCSendActivationLockBypassCodeWasStoredNotification
+0x1945be71c  __TEXT,__text  _MCSendActivationRecordStoredNotification
+0x1945be13c  __TEXT,__text  _MCSendAirPlayPreferencesChangedNotification
+0x1945bea10  __TEXT,__text  _MCSendAllowCloudSyncChangedNotification
+0x1945be5a8  __TEXT,__text  _MCSendAllowHealthDataSubmissionChangedNotification
+0x1945be434  __TEXT,__text  _MCSendAllowPasscodeModificationChangedNotification
+0x1945bded0  __TEXT,__text  _MCSendAppWhitelistChangedNotification
+0x1945be798  __TEXT,__text  _MCSendCleanupMigrationFinishedNotification
+0x1945be890  __TEXT,__text  _MCSendClearPasscodeGenerationCachesNotification
+0x1945bde50  __TEXT,__text  _MCSendClientTruthChangedNotification
+0x1945bdf4c  __TEXT,__text  _MCSendCloudConfigurationDetailsChangedNotification
+0x1945be624  __TEXT,__text  _MCSendDependencyChangedNotification
+0x1945be52c  __TEXT,__text  _MCSendDiagnosticsCollectedNotification
+0x1945bdd6c  __TEXT,__text  _MCSendEffectiveSettingsChangedNotification
+0x1945be990  __TEXT,__text  _MCSendEnablingRestrictionsChangedNotification
+0x1945be910  __TEXT,__text  _MCSendExternalIntelligenceWorkspaceListChangedNotification
+0x1945bdbec  __TEXT,__text  _MCSendHomeScreenLayoutChangedNotification
+0x1945bdaec  __TEXT,__text  _MCSendKeyboardSettingsChangedNotification
+0x1945be33c  __TEXT,__text  _MCSendManagedAppsChangedNotification
+0x1945be2c0  __TEXT,__text  _MCSendManagedBooksChangedNotification
+0x1945bdc6c  __TEXT,__text  _MCSendNewsSettingsChangedNotification
+0x1945bd9e4  __TEXT,__text  _MCSendPasscodeChangedNotification
+0x1945be814  __TEXT,__text  _MCSendPasscodeComplianceChangedNotification
+0x1945bda64  __TEXT,__text  _MCSendPasscodePolicyChangedNotification
+0x1945bdcec  __TEXT,__text  _MCSendProfileListChangedNotification
+0x1945be4b0  __TEXT,__text  _MCSendRemovedSystemAppsChangedNotification
+0x1945bd964  __TEXT,__text  _MCSendRestrictionChangedNotification
+0x1945be3b8  __TEXT,__text  _MCSendSafariCookiePolicyChangedNotification
+0x1945832c4  __TEXT,__text  _MCSendSettingsChangedNotification
+0x1945be6a0  __TEXT,__text  _MCSendTriggerRollKeybagsNotification
+0x1945be1b0  __TEXT,__text  _MCSendUnlockScreenTypeDidChangeNotification
+0x1945bdb6c  __TEXT,__text  _MCSendUserNotificationsSettingsChangedNotification
+0x1945bdfc8  __TEXT,__text  _MCSendWebContentFilterChangedNotification
+0x1945be0c0  __TEXT,__text  _MCSendWebContentFilterTypeChangedNotification
+0x1945be044  __TEXT,__text  _MCSendWebContentFilterUIActiveChangedNotification
+0x19461a888  __TEXT,__text  _MCSetMigrationParameters
+0x1e0b7cf08  __DATA_CONST,__const  _MCSetParametersForSettingsByTypeParamSenderPID
+0x194646234  __TEXT,__text  _MCSetSkipBackupAttributeToItemAtPath
+0x1e0b7cf00  __DATA_CONST,__const  _MCSettingParameterAskKey
+0x1e0b7cef8  __DATA_CONST,__const  _MCSettingParameterRangeMaximumKey
+0x1e0b7cef0  __DATA_CONST,__const  _MCSettingParameterRangeMinimumKey
+0x1e0b7cee8  __DATA_CONST,__const  _MCSettingParameterValueKey
+0x1e0b7cee0  __DATA_CONST,__const  _MCSettingParameterValuesKey
+0x1e0b7ced8  __DATA_CONST,__const  _MCSettingsChangedNotification
+0x1e0b7ced0  __DATA_CONST,__const  _MCSettingsErrorDomain
+0x1945a3048  __TEXT,__text  _MCSettingsEventsFilePath
+0x1e0b7cec8  __DATA_CONST,__const  _MCSetupAssistantBundleIdentifier
+0x1e0b7cec0  __DATA_CONST,__const  _MCSetupAssistantErrorDomain
+0x1945a3c50  __TEXT,__text  _MCSetupAssistantSettingsFilePath
+0x1e0b7ceb8  __DATA_CONST,__const  _MCSharedDeviceConfigurationErrorDomain
+0x1945a3a70  __TEXT,__text  _MCSharedDeviceConfigurationFilePath
+0x1e0b7ceb0  __DATA_CONST,__const  _MCSharingdBundleIdentifier
+0x1e0b7cea8  __DATA_CONST,__const  _MCShortcutsBackgroundShortcutRunnerBundleIdentifier
+0x1e0b7cea0  __DATA_CONST,__const  _MCShortcutsBundleIdentifier
+0x1e0b7ce98  __DATA_CONST,__const  _MCShortcutsIntentsBundleIdentifier
+0x1e0b7ce90  __DATA_CONST,__const  _MCShortcutsOldBundleIdentifier
+0x1e0b7ce88  __DATA_CONST,__const  _MCShortcutsRuntimeBundleIdentifier
+0x1e0b7ce80  __DATA_CONST,__const  _MCShortcutsTodayExtensionBundleIdentifier
+0x1e0b7ce78  __DATA_CONST,__const  _MCShortcutsWorkflowBundleIdentifier
+0x1e0b7ce70  __DATA_CONST,__const  _MCSingleAppErrorDomain
+0x1e0b7ce68  __DATA_CONST,__const  _MCSiriViewServiceBundleIdentifier
+0x1e0b7ce60  __DATA_CONST,__const  _MCSiriknowledgedBundleIdentifier
+0x1e0b7ce58  __DATA_CONST,__const  _MCSpellCheckAllowedThirdPartyQuery
+0x1e0b7ce50  __DATA_CONST,__const  _MCSpringboardBundleIdentifier
+0x1e0b7ce48  __DATA_CONST,__const  _MCStocksBundleIdentifier
+0x1e0b7ce40  __DATA_CONST,__const  _MCStoreErrorDomain
+0x1945a74f0  __TEXT,__text  _MCStringForBool
+0x1945a7544  __TEXT,__text  _MCStringFromArrayOfStrings
+0x1e0b7ce38  __DATA_CONST,__const  _MCSubCalErrorDomain
+0x1e0b7ce30  __DATA_CONST,__const  _MCSuggestdBundleIdentifier
+0x1945d9984  __TEXT,__text  _MCSuspendFrontmostApplication
+0x1945a2a00  __TEXT,__text  _MCSystemAppAccessibilityParametersFilePath
+0x1945a3664  __TEXT,__text  _MCSystemAppOptionsByBundleIDFilePath
+0x1945a35c8  __TEXT,__text  _MCSystemAppWhitelistByProfileFilePath
+0x1945a2b38  __TEXT,__text  _MCSystemClientRestrictionsFilePath
+0x1945a2dd8  __TEXT,__text  _MCSystemDependencyFilePath
+0x1945a3700  __TEXT,__text  _MCSystemEffectiveAppWhitelistFilePath
+0x19457f8d4  __TEXT,__text  _MCSystemGroupContainerPathWithGroupIdentifier
+0x19458388c  __TEXT,__text  _MCSystemHomeScreenLayoutFilePath
+0x1945a32bc  __TEXT,__text  _MCSystemLostModeRequestPath
+0x194590ea8  __TEXT,__text  _MCSystemManifestPath
+0x19457f0fc  __TEXT,__text  _MCSystemMetadataFilePath
+0x1945a2c38  __TEXT,__text  _MCSystemNamespacedUserSettingsFilePath
+0x1945a39d4  __TEXT,__text  _MCSystemNotificationSettingsFilePath
+0x1945a2cd4  __TEXT,__text  _MCSystemPreferencesDirectory
+0x19457ef4c  __TEXT,__text  _MCSystemProfileLibraryDirectory
+0x1945a27c4  __TEXT,__text  _MCSystemProfileLibraryDirectoryNF
+0x1945a2a9c  __TEXT,__text  _MCSystemProfileRestrictionsFilePath
+0x19457ef00  __TEXT,__text  _MCSystemProfileStorageDirectory
+0x1945a2860  __TEXT,__text  _MCSystemProfileStorageDirectoryNF
+0x19457f134  __TEXT,__text  _MCSystemPublicInfoDirectory
+0x1945a4194  __TEXT,__text  _MCSystemRestartLogPath
+0x194590b6c  __TEXT,__text  _MCSystemRootDirectory
+0x1945a4230  __TEXT,__text  _MCSystemShutDownLogPath
+0x194580630  __TEXT,__text  _MCSystemUserSettingsFilePath
+0x1945a3cec  __TEXT,__text  _MCSystemWatchEnrollmentDataFilePath
+0x1945a3b18  __TEXT,__text  _MCSystemWebContentFilterCurrentUserBookmarksPath
+0x1945a3bb4  __TEXT,__text  _MCSystemWebContentFilterStashedUserBookmarksPath
+0x1e0b7ce28  __DATA_CONST,__const  _MCTVPreferencesBundleIdentifier
+0x1945a42cc  __TEXT,__text  _MCTagsMappingFilePath
+0x1e0b7ce20  __DATA_CONST,__const  _MCTakeoverErrorDomain
+0x1e0b7ce18  __DATA_CONST,__const  _MCTapToRadarBundleIdentifier
+0x1e0b7ce10  __DATA_CONST,__const  _MCTelephonyUtilitiesBundleIdentifier
+0x1e0b7ce08  __DATA_CONST,__const  _MCTipsBundleIdentifier
+0x1e0b7ce00  __DATA_CONST,__const  _MCTransparencydBundleIdentifier
+0x1e0b7cdf8  __DATA_CONST,__const  _MCTriggerRollKeybagsNotification
+0x1e0b7cdf0  __DATA_CONST,__const  _MCTunnelErrorDomain
+0x1e0b7cde8  __DATA_CONST,__const  _MCUIOperationErrorDomain
+0x19459a98c  __TEXT,__text  _MCUSEnglishErrorFormat
+0x19459a2a8  __TEXT,__text  _MCUSEnglishErrorString
+0x19459ad80  __TEXT,__text  _MCUSEnglishErrorStringByDevice
+0x1945a77a4  __TEXT,__text  _MCUSEnglishLocale
+0x1945a7818  __TEXT,__text  _MCUSEnglishNumberFormatter
+0x1e0b7cde0  __DATA_CONST,__const  _MCUnionDefaultKey
+0x1e0b7cdd8  __DATA_CONST,__const  _MCUnionKey
+0x1e0b7cdd0  __DATA_CONST,__const  _MCUnionValuesKey
+0x1e0b7cdc8  __DATA_CONST,__const  _MCUnlockScreenTypeDidChangeNotification
+0x1945a1f40  __TEXT,__text  _MCUnrestrictableApps
+0x1e0b7cdc0  __DATA_CONST,__const  _MCUpNextWidgetBundleIdentifier
+0x1945a3e24  __TEXT,__text  _MCUserClientRestrictionsFilePath
+0x1945a3ff8  __TEXT,__text  _MCUserDependencyFilePath
+0x1945a272c  __TEXT,__text  _MCUserDirectory
+0x194583854  __TEXT,__text  _MCUserHomeScreenLayoutFilePath
+0x194591004  __TEXT,__text  _MCUserManifestPath
+0x19457f460  __TEXT,__text  _MCUserMetadataFilePath
+0x1945a3f5c  __TEXT,__text  _MCUserNamespacedUserSettingsFilePath
+0x1945a40f8  __TEXT,__text  _MCUserNotificationSettingsFilePath
+0x1e0b7cdb8  __DATA_CONST,__const  _MCUserNotificationsSettingsChangedNotification
+0x19457f610  __TEXT,__text  _MCUserProfileLibraryDirectory
+0x1945a3d88  __TEXT,__text  _MCUserProfileRestrictionsFilePath
+0x19457f428  __TEXT,__text  _MCUserProfileStorageDirectory
+0x19457f4ac  __TEXT,__text  _MCUserPublicInfoDirectory
+0x1945a3ec0  __TEXT,__text  _MCUserUserSettingsFilePath
+0x1e0b7cdb0  __DATA_CONST,__const  _MCVPNErrorDomain
+0x1e0b7cda8  __DATA_CONST,__const  _MCVisionSetupAssistantBundleIdentifier
+0x1e0b7cda0  __DATA_CONST,__const  _MCVoiceMemosBundleIdentifier
+0x1e0b7cd98  __DATA_CONST,__const  _MCWatchBundleIdentifier
+0x1e0b7cd90  __DATA_CONST,__const  _MCWeatherBundleIdentifier
+0x1e0b7cd88  __DATA_CONST,__const  _MCWebClipErrorDomain
+0x1e0b7cd80  __DATA_CONST,__const  _MCWebContentFilterDidChangeNotification
+0x1e0b7cd78  __DATA_CONST,__const  _MCWebContentFilterErrorDomain
+0x1945a3b0c  __TEXT,__text  _MCWebContentFilterOutputPath
+0x1e0b7cd70  __DATA_CONST,__const  _MCWebContentFilterTypeDidChangeNotification
+0x1e0b7cd68  __DATA_CONST,__const  _MCWiFiErrorDomain
+0x1e0b7cd60  __DATA_CONST,__const  _MCWritingToolsUIServiceBundleIdentifier
+0x1e0b7cd58  __DATA_CONST,__const  _MCXPCErrorDomain
+0x194580ffc  __TEXT,__text  _MCXPCProtocolInterface
+0x1e0b7cd50  __DATA_CONST,__const  _MCiBooksBundleIdentifier
+0x1e0b7cd48  __DATA_CONST,__const  _MCiCloudDriveBundleIdentifier
+0x1945a2d3c  __TEXT,__text  _MCiPCUKeychainMapPath
+0x1e0b7cd40  __DATA_CONST,__const  _MCiTunesBundleIdentifier
+0x1945b90e8  __TEXT,__text  _MCkASSyncDefaultFoldersOnly
+0x1945b9234  __TEXT,__text  _MCkESExchangeAccountWipeOnly
+0x1945b9270  __TEXT,__text  _MCkESExchangeDeviceID
+0x1945b92ac  __TEXT,__text  _MCkESExchangeUserEnrollmentMode
+0x1945b9164  __TEXT,__text  _MCkMAActivationStateActivated
+0x1945b9190  __TEXT,__text  _MCkNotificationActivationStateChanged
+0x1ef63e7e0  __AUTH,__objc_data  _OBJC_CLASS_$_MCACMContextWrapper
+0x1ef63f898  __AUTH,__objc_data  _OBJC_CLASS_$_MCACMEPayload
+0x1ef63ee98  __AUTH,__objc_data  _OBJC_CLASS_$_MCAPNConfiguration
+0x1ef63ee70  __AUTH,__objc_data  _OBJC_CLASS_$_MCAPNInfo
+0x1ef640928  __AUTH,__objc_data  _OBJC_CLASS_$_MCAPNPayload
+0x1ef63f1e0  __AUTH,__objc_data  _OBJC_CLASS_$_MCAccountUtilities
+0x1ef63f1b8  __AUTH,__objc_data  _OBJC_CLASS_$_MCActivationUtilities
+0x1ef63ee48  __AUTH,__objc_data  _OBJC_CLASS_$_MCAirPlayDestination
+0x1ef640900  __AUTH,__objc_data  _OBJC_CLASS_$_MCAirPlayPayload
+0x1ef6408d8  __AUTH,__objc_data  _OBJC_CLASS_$_MCAirPlaySecurityPayload
+0x1ef6408b0  __AUTH,__objc_data  _OBJC_CLASS_$_MCAirPrintPayload
+0x1ef63ee20  __AUTH,__objc_data  _OBJC_CLASS_$_MCAlwaysOnVPNPayload
+0x1ef63f4d8  __AUTH,__objc_data  _OBJC_CLASS_$_MCAppEnforcedRestrictionUtilities
+0x1ef640888  __AUTH,__objc_data  _OBJC_CLASS_$_MCAppLayerVPNPayload
+0x1ef63e6a0  __AUTH,__objc_data  _OBJC_CLASS_$_MCAppManagedFeaturesBackupExclusions
+0x1ef640860  __AUTH,__objc_data  _OBJC_CLASS_$_MCAppWhitelistPayloadBase
+0x1ef640838  __AUTH,__objc_data  _OBJC_CLASS_$_MCAppleServicesPayload
+0x1ef63f4b0  __AUTH,__objc_data  _OBJC_CLASS_$_MCBatterySaverMode
+0x1ef63edf8  __AUTH,__objc_data  _OBJC_CLASS_$_MCBookmark
+0x1ef63f190  __AUTH,__objc_data  _OBJC_CLASS_$_MCBookmarkManager
+0x1ef640810  __AUTH,__objc_data  _OBJC_CLASS_$_MCCalDAVAccountPayload
+0x1ef6407e8  __AUTH,__objc_data  _OBJC_CLASS_$_MCCardDAVAccountPayload
+0x1ef6407c0  __AUTH,__objc_data  _OBJC_CLASS_$_MCCellularPayload
+0x1ef63f870  __AUTH,__objc_data  _OBJC_CLASS_$_MCCellularPrivateNetworkPayload
+0x1ef640798  __AUTH,__objc_data  _OBJC_CLASS_$_MCCertificatePayload
+0x1ef640770  __AUTH,__objc_data  _OBJC_CLASS_$_MCCertificateRevocationPayload
+0x1ef640748  __AUTH,__objc_data  _OBJC_CLASS_$_MCCertificateTransparencyPayload
+0x1ef63edd0  __AUTH,__objc_data  _OBJC_CLASS_$_MCCertificateWrapperProfile
+0x1ef640720  __AUTH,__objc_data  _OBJC_CLASS_$_MCChaperonePayload
+0x1ee005900  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MCCloudConfiguration
+0x1ef63f168  __AUTH,__objc_data  _OBJC_CLASS_$_MCCommunicationServiceRulesUtilities
+0x1ef6406f8  __AUTH,__objc_data  _OBJC_CLASS_$_MCConferenceRoomDisplayPayload
+0x1ef6409a0  __AUTH,__objc_data  _OBJC_CLASS_$_MCConfigurationProfile
+0x1ef63eda8  __AUTH,__objc_data  _OBJC_CLASS_$_MCCrypto
+0x1ef6406d0  __AUTH,__objc_data  _OBJC_CLASS_$_MCDNSProxyPayload
+0x1ef6406a8  __AUTH,__objc_data  _OBJC_CLASS_$_MCDNSSettingsPayload
+0x1ef63f848  __AUTH,__objc_data  _OBJC_CLASS_$_MCDeclarationsPayload
+0x1ef640680  __AUTH,__objc_data  _OBJC_CLASS_$_MCDefaultsPayload
+0x1ee005a18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MCDependencyReader
+0x1ef63f690  __AUTH,__objc_data  _OBJC_CLASS_$_MCDeviceCapabilities
+0x1ef63f668  __AUTH,__objc_data  _OBJC_CLASS_$_MCDictionaryWriter
+0x1ef63ed80  __AUTH,__objc_data  _OBJC_CLASS_$_MCDomainsCacheEntry
+0x1ef640658  __AUTH,__objc_data  _OBJC_CLASS_$_MCDomainsPayload
+0x1ef640630  __AUTH,__objc_data  _OBJC_CLASS_$_MCEASAccountPayload
+0x1ef640608  __AUTH,__objc_data  _OBJC_CLASS_$_MCEDUClassroomPayload
+0x1ee0059f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MCEDUModeUtilities
+0x1ef6405e0  __AUTH,__objc_data  _OBJC_CLASS_$_MCEmailAccountPayload
+0x1ef6405b8  __AUTH,__objc_data  _OBJC_CLASS_$_MCEmailAccountPayloadBase
+0x1ef63f140  __AUTH,__objc_data  _OBJC_CLASS_$_MCEncryptedProfileServicePayload
+0x1ef640590  __AUTH,__objc_data  _OBJC_CLASS_$_MCExtensibleSingleSignOnPayload
+0x1ef63e7b8  __AUTH,__objc_data  _OBJC_CLASS_$_MCExtractablePasscodeContextWrapper
+0x1ef640568  __AUTH,__objc_data  _OBJC_CLASS_$_MCFeatureFlagsPayload
+0x1ef63f820  __AUTH,__objc_data  _OBJC_CLASS_$_MCFeatureOverrides
+0x1ef63f488  __AUTH,__objc_data  _OBJC_CLASS_$_MCFileAccessRepairTool
+0x1ef640540  __AUTH,__objc_data  _OBJC_CLASS_$_MCFontPayload
+0x1ef63ed58  __AUTH,__objc_data  _OBJC_CLASS_$_MCGeofenceInfo
+0x1ef63ed30  __AUTH,__objc_data  _OBJC_CLASS_$_MCGizmoUtilities
+0x1ef63f640  __AUTH,__objc_data  _OBJC_CLASS_$_MCGlobalEthernetPayload
+0x1ef640518  __AUTH,__objc_data  _OBJC_CLASS_$_MCGlobalHTTPProxyPayload
+0x1ef6404f0  __AUTH,__objc_data  _OBJC_CLASS_$_MCGmailAccountPayload
+0x1ef63f618  __AUTH,__objc_data  _OBJC_CLASS_$_MCHacks
+0x1ef63f6e0  __AUTH,__objc_data  _OBJC_CLASS_$_MCHoldingTankManifest
+0x1ef640978  __AUTH,__objc_data  _OBJC_CLASS_$_MCHomeScreenLayoutPayload
+0x1ef63f460  __AUTH,__objc_data  _OBJC_CLASS_$_MCInstallerReader
+0x1ef63ed08  __AUTH,__objc_data  _OBJC_CLASS_$_MCKeyValue
+0x1ef63ece0  __AUTH,__objc_data  _OBJC_CLASS_$_MCKeyValueSection
+0x1ef63f5f0  __AUTH,__objc_data  _OBJC_CLASS_$_MCKeychain
+0x1ef6404c8  __AUTH,__objc_data  _OBJC_CLASS_$_MCLDAPAccountPayload
+0x1ef63f7f8  __AUTH,__objc_data  _OBJC_CLASS_$_MCLazyInitializationUtilities
+0x1ef6404a0  __AUTH,__objc_data  _OBJC_CLASS_$_MCLoggingPayload
+0x1ef63ecb8  __AUTH,__objc_data  _OBJC_CLASS_$_MCMDMOptionsUtilities
+0x1ef640478  __AUTH,__objc_data  _OBJC_CLASS_$_MCMDMPayload
+0x1ef63f118  __AUTH,__objc_data  _OBJC_CLASS_$_MCManagedDomainsCache
+0x1ef63f0f0  __AUTH,__objc_data  _OBJC_CLASS_$_MCManagedPreferencesManager
+0x1ee005a68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MCManifest
+0x1ef640450  __AUTH,__objc_data  _OBJC_CLASS_$_MCNetworkUsageRulesPayload
+0x1ef640428  __AUTH,__objc_data  _OBJC_CLASS_$_MCNotificationSettingsPayload
+0x1ef63f0c8  __AUTH,__objc_data  _OBJC_CLASS_$_MCNotifier
+0x1ef640400  __AUTH,__objc_data  _OBJC_CLASS_$_MCOSXServerAccountPayload
+0x1ee005950  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MCPasscodeManager
+0x1ef63e790  __AUTH,__objc_data  _OBJC_CLASS_$_MCPasscodeUtilities
+0x1ef6403d8  __AUTH,__objc_data  _OBJC_CLASS_$_MCPasswordPolicyPayload
+0x1ef6403b0  __AUTH,__objc_data  _OBJC_CLASS_$_MCPayload
+0x1ef63ec90  __AUTH,__objc_data  _OBJC_CLASS_$_MCPayloadUserPromptUtilities
+0x1ef640388  __AUTH,__objc_data  _OBJC_CLASS_$_MCPlainCertificatePayload
+0x1ee0058b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MCProfile
+0x1ee005b58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MCProfileConnection
+0x1ef63f230  __AUTH,__objc_data  _OBJC_CLASS_$_MCProfileInfo
+0x1ef63f2d0  __AUTH,__objc_data  _OBJC_CLASS_$_MCProfileServiceProfile
+0x1ef63f438  __AUTH,__objc_data  _OBJC_CLASS_$_MCProfileStateHandler
+0x1ef63f0a0  __AUTH,__objc_data  _OBJC_CLASS_$_MCProfileTrustEvaluator
+0x1ee0059a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MCProfileWarning
+0x1ef63f5c8  __AUTH,__objc_data  _OBJC_CLASS_$_MCRelayPayload
+0x1ef640360  __AUTH,__objc_data  _OBJC_CLASS_$_MCRemovalPasswordPayload
+0x1ee005b08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MCRestrictionManager
+0x1ef63f078  __AUTH,__objc_data  _OBJC_CLASS_$_MCRestrictionUtilities
+0x1ef640338  __AUTH,__objc_data  _OBJC_CLASS_$_MCRestrictionsPayload
+0x1ef640310  __AUTH,__objc_data  _OBJC_CLASS_$_MCSCEPPayload
+0x1ef63f050  __AUTH,__objc_data  _OBJC_CLASS_$_MCSafariPasswordAutoFillDomainsCache
+0x1ef63e768  __AUTH,__objc_data  _OBJC_CLASS_$_MCSecurePasscodeContextWrapper
+0x1ef63f7d0  __AUTH,__objc_data  _OBJC_CLASS_$_MCSelfSignedCertificatePayload
+0x1ef6402e8  __AUTH,__objc_data  _OBJC_CLASS_$_MCSetupAssistantPayload
+0x1ef6402c0  __AUTH,__objc_data  _OBJC_CLASS_$_MCSharedDeviceConfigurationPayload
+0x1ef63ec68  __AUTH,__objc_data  _OBJC_CLASS_$_MCSignpost
+0x1ee005ab8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MCSignpostManager
+0x1ef63ec40  __AUTH,__objc_data  _OBJC_CLASS_$_MCSingleAppModeConfiguration
+0x1ef640298  __AUTH,__objc_data  _OBJC_CLASS_$_MCSingleAppPayload
+0x1ef640270  __AUTH,__objc_data  _OBJC_CLASS_$_MCSingleSignOnPayload
+0x1ef63ec18  __AUTH,__objc_data  _OBJC_CLASS_$_MCSingleSignOnPayloadKerberosInfo
+0x1ef63ebf0  __AUTH,__objc_data  _OBJC_CLASS_$_MCSkipSetupKeysUtilities
+0x1ef63f410  __AUTH,__objc_data  _OBJC_CLASS_$_MCStateHandler
+0x1ef640248  __AUTH,__objc_data  _OBJC_CLASS_$_MCSubCalAccountPayload
+0x1ef640220  __AUTH,__objc_data  _OBJC_CLASS_$_MCTVRemotePayload
+0x1ef63f280  __AUTH,__objc_data  _OBJC_CLASS_$_MCUnknownPayload
+0x1ef63ebc8  __AUTH,__objc_data  _OBJC_CLASS_$_MCUserNotificationManager
+0x1ef63eba0  __AUTH,__objc_data  _OBJC_CLASS_$_MCUserNotificationQueueEntry
+0x1ef6401f8  __AUTH,__objc_data  _OBJC_CLASS_$_MCVPNPayload
+0x1ef6401d0  __AUTH,__objc_data  _OBJC_CLASS_$_MCVPNPayloadBase
+0x1ef63eb78  __AUTH,__objc_data  _OBJC_CLASS_$_MCVersioningUtilities
+0x1ef6401a8  __AUTH,__objc_data  _OBJC_CLASS_$_MCWAPIIdentityCertificatePayload
+0x1ef640180  __AUTH,__objc_data  _OBJC_CLASS_$_MCWebClipPayload
+0x1ef640158  __AUTH,__objc_data  _OBJC_CLASS_$_MCWebContentFilterPayload
+0x1ef640130  __AUTH,__objc_data  _OBJC_CLASS_$_MCWiFiPayload
+0x1eb9ad4f8  __DATA,__objc_ivar  OBJC_IVAR_$_MCAPNInfo._apnName
+0x1eb9ad500  __DATA,__objc_ivar  OBJC_IVAR_$_MCAPNInfo._password
+0x1eb9ad504  __DATA,__objc_ivar  OBJC_IVAR_$_MCAPNInfo._proxy
+0x1eb9ad508  __DATA,__objc_ivar  OBJC_IVAR_$_MCAPNInfo._proxyPort
+0x1eb9ad4fc  __DATA,__objc_ivar  OBJC_IVAR_$_MCAPNInfo._username
+0x1eb9ad4f0  __DATA,__objc_ivar  OBJC_IVAR_$_MCAPNPayload._apnInfos
+0x1eb9ad4f4  __DATA,__objc_ivar  OBJC_IVAR_$_MCAPNPayload._wasInstalled
+0x1eb9ad608  __DATA,__objc_ivar  OBJC_IVAR_$_MCCalDAVAccountPayload._accountDescription
+0x1eb9ad630  __DATA,__objc_ivar  OBJC_IVAR_$_MCCalDAVAccountPayload._accountPersistentUUID
+0x1eb9ad628  __DATA,__objc_ivar  OBJC_IVAR_$_MCCalDAVAccountPayload._hostname
+0x1eb9ad62c  __DATA,__objc_ivar  OBJC_IVAR_$_MCCalDAVAccountPayload._password
+0x1eb9ad620  __DATA,__objc_ivar  OBJC_IVAR_$_MCCalDAVAccountPayload._port
+0x1eb9ad610  __DATA,__objc_ivar  OBJC_IVAR_$_MCCalDAVAccountPayload._principalURL
+0x1eb9ad618  __DATA,__objc_ivar  OBJC_IVAR_$_MCCalDAVAccountPayload._useSSL
+0x1eb9ad60c  __DATA,__objc_ivar  OBJC_IVAR_$_MCCalDAVAccountPayload._username
+0x1eb9ad664  __DATA,__objc_ivar  OBJC_IVAR_$_MCCardDAVAccountPayload._accountDescription
+0x1eb9ad690  __DATA,__objc_ivar  OBJC_IVAR_$_MCCardDAVAccountPayload._accountPersistentUUID
+0x1eb9ad688  __DATA,__objc_ivar  OBJC_IVAR_$_MCCardDAVAccountPayload._hostname
+0x1eb9ad68c  __DATA,__objc_ivar  OBJC_IVAR_$_MCCardDAVAccountPayload._password
+0x1eb9ad67c  __DATA,__objc_ivar  OBJC_IVAR_$_MCCardDAVAccountPayload._port
+0x1eb9ad66c  __DATA,__objc_ivar  OBJC_IVAR_$_MCCardDAVAccountPayload._principalURL
+0x1eb9ad674  __DATA,__objc_ivar  OBJC_IVAR_$_MCCardDAVAccountPayload._useSSL
+0x1eb9ad668  __DATA,__objc_ivar  OBJC_IVAR_$_MCCardDAVAccountPayload._username
+0x1eb9ad2dc  __DATA,__objc_ivar  OBJC_IVAR_$_MCDefaultsPayload._defaultsByDomain
+0x1eb9ad7dc  __DATA,__objc_ivar  OBJC_IVAR_$_MCDeviceCapabilities._hasSEP
+0x1eb9ad7d4  __DATA,__objc_ivar  OBJC_IVAR_$_MCDeviceCapabilities._supportsBlockLevelEncryption
+0x1eb9ad7d8  __DATA,__objc_ivar  OBJC_IVAR_$_MCDeviceCapabilities._supportsFileLevelEncryption
+0x1eb9ad184  __DATA,__objc_ivar  OBJC_IVAR_$_MCDictionaryWriter._repairTool
+0x1eb9ad240  __DATA,__objc_ivar  OBJC_IVAR_$_MCFileAccessRepairTool._fileManager
+0x1eb9ad638  __DATA,__objc_ivar  OBJC_IVAR_$_MCLDAPAccountPayload._accountDescription
+0x1eb9ad654  __DATA,__objc_ivar  OBJC_IVAR_$_MCLDAPAccountPayload._accountPersistentUUID
+0x1eb9ad640  __DATA,__objc_ivar  OBJC_IVAR_$_MCLDAPAccountPayload._hostname
+0x1eb9ad650  __DATA,__objc_ivar  OBJC_IVAR_$_MCLDAPAccountPayload._password
+0x1eb9ad64c  __DATA,__objc_ivar  OBJC_IVAR_$_MCLDAPAccountPayload._searchSettings
+0x1eb9ad648  __DATA,__objc_ivar  OBJC_IVAR_$_MCLDAPAccountPayload._useSSL
+0x1eb9ad63c  __DATA,__objc_ivar  OBJC_IVAR_$_MCLDAPAccountPayload._username
+0x1eb9ad2fc  __DATA,__objc_ivar  OBJC_IVAR_$_MCPasswordPolicyPayload._isAlphanumericPasscodeRequired
+0x1eb9ad300  __DATA,__objc_ivar  OBJC_IVAR_$_MCPasswordPolicyPayload._isManualFetchingWhenRoaming
+0x1eb9ad2f8  __DATA,__objc_ivar  OBJC_IVAR_$_MCPasswordPolicyPayload._isPasscodeRequired
+0x1eb9ad2f4  __DATA,__objc_ivar  OBJC_IVAR_$_MCPasswordPolicyPayload._isSimplePasscodeAllowed
+0x1eb9ad308  __DATA,__objc_ivar  OBJC_IVAR_$_MCPasswordPolicyPayload._maxFailedAttempts
+0x1eb9ad30c  __DATA,__objc_ivar  OBJC_IVAR_$_MCPasswordPolicyPayload._maxGracePeriodMinutes
+0x1eb9ad310  __DATA,__objc_ivar  OBJC_IVAR_$_MCPasswordPolicyPayload._maxInactivityMinutes
+0x1eb9ad314  __DATA,__objc_ivar  OBJC_IVAR_$_MCPasswordPolicyPayload._maxPasscodeAgeDays
+0x1eb9ad31c  __DATA,__objc_ivar  OBJC_IVAR_$_MCPasswordPolicyPayload._minComplexCharacters
+0x1eb9ad304  __DATA,__objc_ivar  OBJC_IVAR_$_MCPasswordPolicyPayload._minLength
+0x1eb9ad318  __DATA,__objc_ivar  OBJC_IVAR_$_MCPasswordPolicyPayload._passcodeHistoryCount
+0x1eb9ada20  __DATA,__objc_ivar  OBJC_IVAR_$_MCPayload._UUID
+0x1eb9ada14  __DATA,__objc_ivar  OBJC_IVAR_$_MCPayload._displayName
+0x1eb9ada18  __DATA,__objc_ivar  OBJC_IVAR_$_MCPayload._identifier
+0x1eb9ada1c  __DATA,__objc_ivar  OBJC_IVAR_$_MCPayload._organization
+0x1eb9ada10  __DATA,__objc_ivar  OBJC_IVAR_$_MCPayload._payloadDescription
+0x1eb9ada28  __DATA,__objc_ivar  OBJC_IVAR_$_MCPayload._persistentResourceID
+0x1eb9ada08  __DATA,__objc_ivar  OBJC_IVAR_$_MCPayload._profile
+0x1eb9ada0c  __DATA,__objc_ivar  OBJC_IVAR_$_MCPayload._type
+0x1eb9ada24  __DATA,__objc_ivar  OBJC_IVAR_$_MCPayload._version
+0x1eb9ad5e4  __DATA,__objc_ivar  OBJC_IVAR_$_MCSubCalAccountPayload._accountDescription
+0x1eb9ad600  __DATA,__objc_ivar  OBJC_IVAR_$_MCSubCalAccountPayload._accountPersistentUUID
+0x1eb9ad5f8  __DATA,__objc_ivar  OBJC_IVAR_$_MCSubCalAccountPayload._hostname
+0x1eb9ad5fc  __DATA,__objc_ivar  OBJC_IVAR_$_MCSubCalAccountPayload._password
+0x1eb9ad5f0  __DATA,__objc_ivar  OBJC_IVAR_$_MCSubCalAccountPayload._useSSL
+0x1eb9ad5e8  __DATA,__objc_ivar  OBJC_IVAR_$_MCSubCalAccountPayload._username
+0x1ef63e740  __AUTH,__objc_data  _OBJC_METACLASS_$_MCACMContextWrapper
+0x1ef63f7a8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCACMEPayload
+0x1ef63eb50  __AUTH,__objc_data  _OBJC_METACLASS_$_MCAPNConfiguration
+0x1ef63eb28  __AUTH,__objc_data  _OBJC_METACLASS_$_MCAPNInfo
+0x1ef640108  __AUTH,__objc_data  _OBJC_METACLASS_$_MCAPNPayload
+0x1ef63f028  __AUTH,__objc_data  _OBJC_METACLASS_$_MCAccountUtilities
+0x1ef63f000  __AUTH,__objc_data  _OBJC_METACLASS_$_MCActivationUtilities
+0x1ef63eb00  __AUTH,__objc_data  _OBJC_METACLASS_$_MCAirPlayDestination
+0x1ef6400e0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCAirPlayPayload
+0x1ef6400b8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCAirPlaySecurityPayload
+0x1ef640090  __AUTH,__objc_data  _OBJC_METACLASS_$_MCAirPrintPayload
+0x1ef63ead8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCAlwaysOnVPNPayload
+0x1ef63f3e8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCAppEnforcedRestrictionUtilities
+0x1ef640068  __AUTH,__objc_data  _OBJC_METACLASS_$_MCAppLayerVPNPayload
+0x1ef63e678  __AUTH,__objc_data  _OBJC_METACLASS_$_MCAppManagedFeaturesBackupExclusions
+0x1ef640040  __AUTH,__objc_data  _OBJC_METACLASS_$_MCAppWhitelistPayloadBase
+0x1ef640018  __AUTH,__objc_data  _OBJC_METACLASS_$_MCAppleServicesPayload
+0x1ef63f3c0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCBatterySaverMode
+0x1ef63eab0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCBookmark
+0x1ef63efd8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCBookmarkManager
+0x1ef63fff0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCCalDAVAccountPayload
+0x1ef63ffc8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCCardDAVAccountPayload
+0x1ef63ffa0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCCellularPayload
+0x1ef63f780  __AUTH,__objc_data  _OBJC_METACLASS_$_MCCellularPrivateNetworkPayload
+0x1ef63ff78  __AUTH,__objc_data  _OBJC_METACLASS_$_MCCertificatePayload
+0x1ef63ff50  __AUTH,__objc_data  _OBJC_METACLASS_$_MCCertificateRevocationPayload
+0x1ef63ff28  __AUTH,__objc_data  _OBJC_METACLASS_$_MCCertificateTransparencyPayload
+0x1ef63ea88  __AUTH,__objc_data  _OBJC_METACLASS_$_MCCertificateWrapperProfile
+0x1ef63ff00  __AUTH,__objc_data  _OBJC_METACLASS_$_MCChaperonePayload
+0x1ee0058d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MCCloudConfiguration
+0x1ef63efb0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCCommunicationServiceRulesUtilities
+0x1ef63fed8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCConferenceRoomDisplayPayload
+0x1ef640950  __AUTH,__objc_data  _OBJC_METACLASS_$_MCConfigurationProfile
+0x1ef63ea60  __AUTH,__objc_data  _OBJC_METACLASS_$_MCCrypto
+0x1ef63feb0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCDNSProxyPayload
+0x1ef63fe88  __AUTH,__objc_data  _OBJC_METACLASS_$_MCDNSSettingsPayload
+0x1ef63f758  __AUTH,__objc_data  _OBJC_METACLASS_$_MCDeclarationsPayload
+0x1ef63fe60  __AUTH,__objc_data  _OBJC_METACLASS_$_MCDefaultsPayload
+0x1ee005a90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MCDependencyReader
+0x1ef63f5a0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCDeviceCapabilities
+0x1ef63f398  __AUTH,__objc_data  _OBJC_METACLASS_$_MCDictionaryWriter
+0x1ef63ea38  __AUTH,__objc_data  _OBJC_METACLASS_$_MCDomainsCacheEntry
+0x1ef63fe38  __AUTH,__objc_data  _OBJC_METACLASS_$_MCDomainsPayload
+0x1ef63fe10  __AUTH,__objc_data  _OBJC_METACLASS_$_MCEASAccountPayload
+0x1ef63fde8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCEDUClassroomPayload
+0x1ee0059c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MCEDUModeUtilities
+0x1ef63fdc0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCEmailAccountPayload
+0x1ef63fd98  __AUTH,__objc_data  _OBJC_METACLASS_$_MCEmailAccountPayloadBase
+0x1ef63ef88  __AUTH,__objc_data  _OBJC_METACLASS_$_MCEncryptedProfileServicePayload
+0x1ef63fd70  __AUTH,__objc_data  _OBJC_METACLASS_$_MCExtensibleSingleSignOnPayload
+0x1ef63e718  __AUTH,__objc_data  _OBJC_METACLASS_$_MCExtractablePasscodeContextWrapper
+0x1ef63fd48  __AUTH,__objc_data  _OBJC_METACLASS_$_MCFeatureFlagsPayload
+0x1ef63f8c0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCFeatureOverrides
+0x1ef63f370  __AUTH,__objc_data  _OBJC_METACLASS_$_MCFileAccessRepairTool
+0x1ef63fd20  __AUTH,__objc_data  _OBJC_METACLASS_$_MCFontPayload
+0x1ef63ea10  __AUTH,__objc_data  _OBJC_METACLASS_$_MCGeofenceInfo
+0x1ef63e9e8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCGizmoUtilities
+0x1ef63f578  __AUTH,__objc_data  _OBJC_METACLASS_$_MCGlobalEthernetPayload
+0x1ef63fcf8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCGlobalHTTPProxyPayload
+0x1ef63fcd0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCGmailAccountPayload
+0x1ef63f550  __AUTH,__objc_data  _OBJC_METACLASS_$_MCHacks
+0x1ef63f6b8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCHoldingTankManifest
+0x1ef63fca8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCHomeScreenLayoutPayload
+0x1ef63f348  __AUTH,__objc_data  _OBJC_METACLASS_$_MCInstallerReader
+0x1ef63e9c0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCKeyValue
+0x1ef63e998  __AUTH,__objc_data  _OBJC_METACLASS_$_MCKeyValueSection
+0x1ef63f528  __AUTH,__objc_data  _OBJC_METACLASS_$_MCKeychain
+0x1ef63fc80  __AUTH,__objc_data  _OBJC_METACLASS_$_MCLDAPAccountPayload
+0x1ef63f730  __AUTH,__objc_data  _OBJC_METACLASS_$_MCLazyInitializationUtilities
+0x1ef63fc58  __AUTH,__objc_data  _OBJC_METACLASS_$_MCLoggingPayload
+0x1ef63e970  __AUTH,__objc_data  _OBJC_METACLASS_$_MCMDMOptionsUtilities
+0x1ef63fc30  __AUTH,__objc_data  _OBJC_METACLASS_$_MCMDMPayload
+0x1ef63ef60  __AUTH,__objc_data  _OBJC_METACLASS_$_MCManagedDomainsCache
+0x1ef63ef38  __AUTH,__objc_data  _OBJC_METACLASS_$_MCManagedPreferencesManager
+0x1ee005a40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MCManifest
+0x1ef63fc08  __AUTH,__objc_data  _OBJC_METACLASS_$_MCNetworkUsageRulesPayload
+0x1ef63fbe0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCNotificationSettingsPayload
+0x1ef63ef10  __AUTH,__objc_data  _OBJC_METACLASS_$_MCNotifier
+0x1ef63fbb8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCOSXServerAccountPayload
+0x1ee005928  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MCPasscodeManager
+0x1ef63e6f0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCPasscodeUtilities
+0x1ef63fb90  __AUTH,__objc_data  _OBJC_METACLASS_$_MCPasswordPolicyPayload
+0x1ef63fb68  __AUTH,__objc_data  _OBJC_METACLASS_$_MCPayload
+0x1ef63e948  __AUTH,__objc_data  _OBJC_METACLASS_$_MCPayloadUserPromptUtilities
+0x1ef63fb40  __AUTH,__objc_data  _OBJC_METACLASS_$_MCPlainCertificatePayload
+0x1ee005888  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MCProfile
+0x1ee005b80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MCProfileConnection
+0x1ef63f208  __AUTH,__objc_data  _OBJC_METACLASS_$_MCProfileInfo
+0x1ef63f2a8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCProfileServiceProfile
+0x1ef63f320  __AUTH,__objc_data  _OBJC_METACLASS_$_MCProfileStateHandler
+0x1ef63eee8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCProfileTrustEvaluator
+0x1ee005978  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MCProfileWarning
+0x1ef63f500  __AUTH,__objc_data  _OBJC_METACLASS_$_MCRelayPayload
+0x1ef63fb18  __AUTH,__objc_data  _OBJC_METACLASS_$_MCRemovalPasswordPayload
+0x1ee005b30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MCRestrictionManager
+0x1ef63e920  __AUTH,__objc_data  _OBJC_METACLASS_$_MCRestrictionUtilities
+0x1ef63faf0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCRestrictionsPayload
+0x1ef63fac8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCSCEPPayload
+0x1ef63eec0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCSafariPasswordAutoFillDomainsCache
+0x1ef63e6c8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCSecurePasscodeContextWrapper
+0x1ef63f708  __AUTH,__objc_data  _OBJC_METACLASS_$_MCSelfSignedCertificatePayload
+0x1ef63faa0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCSetupAssistantPayload
+0x1ef63fa78  __AUTH,__objc_data  _OBJC_METACLASS_$_MCSharedDeviceConfigurationPayload
+0x1ef63e8f8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCSignpost
+0x1ee005ae0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MCSignpostManager
+0x1ef63e8d0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCSingleAppModeConfiguration
+0x1ef63fa50  __AUTH,__objc_data  _OBJC_METACLASS_$_MCSingleAppPayload
+0x1ef63fa28  __AUTH,__objc_data  _OBJC_METACLASS_$_MCSingleSignOnPayload
+0x1ef63e8a8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCSingleSignOnPayloadKerberosInfo
+0x1ef63e880  __AUTH,__objc_data  _OBJC_METACLASS_$_MCSkipSetupKeysUtilities
+0x1ef63f2f8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCStateHandler
+0x1ef63fa00  __AUTH,__objc_data  _OBJC_METACLASS_$_MCSubCalAccountPayload
+0x1ef63f9d8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCTVRemotePayload
+0x1ef63f258  __AUTH,__objc_data  _OBJC_METACLASS_$_MCUnknownPayload
+0x1ef63e858  __AUTH,__objc_data  _OBJC_METACLASS_$_MCUserNotificationManager
+0x1ef63e830  __AUTH,__objc_data  _OBJC_METACLASS_$_MCUserNotificationQueueEntry
+0x1ef63f9b0  __AUTH,__objc_data  _OBJC_METACLASS_$_MCVPNPayload
+0x1ef63f988  __AUTH,__objc_data  _OBJC_METACLASS_$_MCVPNPayloadBase
+0x1ef63e808  __AUTH,__objc_data  _OBJC_METACLASS_$_MCVersioningUtilities
+0x1ef63f960  __AUTH,__objc_data  _OBJC_METACLASS_$_MCWAPIIdentityCertificatePayload
+0x1ef63f938  __AUTH,__objc_data  _OBJC_METACLASS_$_MCWebClipPayload
+0x1ef63f910  __AUTH,__objc_data  _OBJC_METACLASS_$_MCWebContentFilterPayload
+0x1ef63f8e8  __AUTH,__objc_data  _OBJC_METACLASS_$_MCWiFiPayload
+0x194658710  __TEXT,__text  _SerializeAddCredential
+0x1946581fc  __TEXT,__text  _SerializeCredential
+0x194658920  __TEXT,__text  _SerializeCredentialList
+0x194658bbc  __TEXT,__text  _SerializeGetContextProperty
+0x194657b98  __TEXT,__text  _SerializeProcessAcl
+0x1946588c8  __TEXT,__text  _SerializeRemoveCredential
+0x19465891c  __TEXT,__text  _SerializeReplacePassphraseCredential
+0x194657de8  __TEXT,__text  _SerializeRequirement
+0x194657968  __TEXT,__text  _SerializeVerifyAclConstraint
+0x1946572a4  __TEXT,__text  _SerializeVerifyPolicy
+0x19465b594  __TEXT,__text  _Util_AllocCredential
+0x19465b888  __TEXT,__text  _Util_AllocRequirement
+0x19465bda8  __TEXT,__text  _Util_CreateRequirement
+0x19465b334  __TEXT,__text  _Util_DeallocCredential
+0x19465be30  __TEXT,__text  _Util_DeallocRequirement
+0x194649fc0  __TEXT,__text  _Util_GetBitCount
+0x19464a0e8  __TEXT,__text  _Util_KeybagLockStateToEnvVar
+0x19465b22c  __TEXT,__text  _Util_ReadFromBuffer
+0x19464a110  __TEXT,__text  _Util_SafeDeallocParameters
+0x19465b120  __TEXT,__text  _Util_WriteToBuffer
+0x19464a070  __TEXT,__text  _Util_hexDumpToStrHelper
+0x19464a01c  __TEXT,__text  _Util_isNonNullEqualMemory
+0x194649fd4  __TEXT,__text  _Util_isNullOrZeroMemory
+0x194632e98  __TEXT,__text  __MCKeybagDeviceConfigurations
+0x194633a20  __TEXT,__text  __MCKeybagStoreMDMEscrowAndSecret
+0x1ee005dd0  __DATA_DIRTY,__common  __MCLogObjects
+0x1945d95e8  __TEXT,__text  __MCMachTimeToSeconds
+0x1946489d8  __TEXT,__text  _acm_explicit_bzero
+0x1946489e4  __TEXT,__text  _acm_get_mem
+0x194657028  __TEXT,__text  _acm_mem_alloc_data
+0x1946489f0  __TEXT,__text  _acm_mem_alloc_info
+0x1946570b4  __TEXT,__text  _acm_mem_alloc_typed
+0x1946570f8  __TEXT,__text  _acm_mem_free
+0x194657070  __TEXT,__text  _acm_mem_free_data
+0x194648aa0  __TEXT,__text  _acm_mem_free_info
+0x19465a2c4  __TEXT,__text  _crypto_decryptText
+0x19465a7c4  __TEXT,__text  _crypto_deriveKeyAndDecryptData
+0x19465a6a8  __TEXT,__text  _crypto_deriveKeyAndEncryptData
+0x194659f0c  __TEXT,__text  _crypto_encryptText
+0x1946494ec  __TEXT,__text  _crypto_encryptedTextLength
+0x194659d68  __TEXT,__text  _crypto_generateKey
+0x194659b44  __TEXT,__text  _crypto_generateKeyFromSharedInfo
+0x19465a8e4  __TEXT,__text  _crypto_generateRandomSaltLazily
+0x194649508  __TEXT,__text  _crypto_plainTextLength
+0x1eb9ae5b8  __DATA,__data  _gACMLoggingLevel
+0x1e0b7b990  __DATA_CONST,__const  _kAppEnforcedRestrictionsClientType
+0x1e0b7b988  __DATA_CONST,__const  _kAppSSOKerberosExtensionID
+0x1e0b7b980  __DATA_CONST,__const  _kBatterySaverClientType
+0x1e0b7b978  __DATA_CONST,__const  _kEASAccountClientType
+0x1e0b7b970  __DATA_CONST,__const  _kMCACMEAttest
+0x1e0b7b968  __DATA_CONST,__const  _kMCACMEClientIdentifierKey
+0x1e0b7b960  __DATA_CONST,__const  _kMCACMEDirectoryURLKey
+0x1e0b7b958  __DATA_CONST,__const  _kMCACMEExtendedKeyUsageKey
+0x1e0b7b950  __DATA_CONST,__const  _kMCACMEHardwareBoundKey
+0x1e0b7b948  __DATA_CONST,__const  _kMCACMEKeySizeKey
+0x1e0b7b940  __DATA_CONST,__const  _kMCACMEKeyTypeECSECPrimeRandom
+0x1e0b7b938  __DATA_CONST,__const  _kMCACMEKeyTypeKey
+0x1e0b7b930  __DATA_CONST,__const  _kMCACMEKeyTypeRSA
+0x1e0b7b928  __DATA_CONST,__const  _kMCACMEPayloadType
+0x1e0b7b920  __DATA_CONST,__const  _kMCACMESubjectAltNameKey
+0x1e0b7b918  __DATA_CONST,__const  _kMCACMESubjectKey
+0x1e0b7b910  __DATA_CONST,__const  _kMCACMEUsageFlagsKey
+0x1e0b7b908  __DATA_CONST,__const  _kMCAPNAuthenticationTypeCHAP
+0x1e0b7b900  __DATA_CONST,__const  _kMCAPNAuthenticationTypePAP
+0x1e0b7b8f8  __DATA_CONST,__const  _kMCAPNPayloadType
+0x1e0b7b8f0  __DATA_CONST,__const  _kMCAcceptProfileServicePayloadOnHomePod
+0x1e0b7b8e8  __DATA_CONST,__const  _kMCAccountEnableCalendarsUserOverridableKey
+0x1e0b7b8e0  __DATA_CONST,__const  _kMCAccountEnableContactsUserOverridableKey
+0x1e0b7b8d8  __DATA_CONST,__const  _kMCAccountEnableMailUserOverridableKey
+0x1e0b7b8d0  __DATA_CONST,__const  _kMCAccountEnableNotesKey
+0x1e0b7b8c8  __DATA_CONST,__const  _kMCAccountEnableNotesUserOverridableKey
+0x1e0b7b8c0  __DATA_CONST,__const  _kMCAccountEnableRemindersUserOverridableKey
+0x1e0b7b8b8  __DATA_CONST,__const  _kMCAccountManagingOwnerIdentifier
+0x1e0b7b8b0  __DATA_CONST,__const  _kMCAccountPayloadUUIDKey
+0x1e0b7b8a8  __DATA_CONST,__const  _kMCAccountProfileUUIDKey
+0x1e0b7b8a0  __DATA_CONST,__const  _kMCActivationLockEscrowCodeAccount
+0x1e0b7b898  __DATA_CONST,__const  _kMCActivationLockEscrowHashAccount
+0x1e0b7b890  __DATA_CONST,__const  _kMCActivationLockEscrowService
+0x1e0b7b888  __DATA_CONST,__const  _kMCAirPlayPasswordServiceKey
+0x1e0b7b880  __DATA_CONST,__const  _kMCAirPlayPayloadType
+0x1e0b7b878  __DATA_CONST,__const  _kMCAirPlaySecurityAccessTypeAny
+0x1e0b7b870  __DATA_CONST,__const  _kMCAirPlaySecurityAccessTypeWifiOnly
+0x1e0b7b868  __DATA_CONST,__const  _kMCAirPlaySecurityPayloadType
+0x1e0b7b860  __DATA_CONST,__const  _kMCAirPlaySecurityTypeNone
+0x1e0b7b858  __DATA_CONST,__const  _kMCAirPlaySecurityTypePasscodeAlways
+0x1e0b7b850  __DATA_CONST,__const  _kMCAirPlaySecurityTypePasscodeOnce
+0x1e0b7b848  __DATA_CONST,__const  _kMCAirPlaySecurityTypePassword
+0x1e0b7b840  __DATA_CONST,__const  _kMCAirPrintPayloadType
+0x1e0b7b838  __DATA_CONST,__const  _kMCAllowListedAppBundleIDsKey
+0x1e0b7b830  __DATA_CONST,__const  _kMCAllowSiriAIKey
+0x1e0b7b828  __DATA_CONST,__const  _kMCAlwaysOnVPNPayloadType
+0x1e0b7b820  __DATA_CONST,__const  _kMCAppLayerVPNPayloadType
+0x1e0b7b818  __DATA_CONST,__const  _kMCAppWhitelistIdentifierKey
+0x1e0b7b810  __DATA_CONST,__const  _kMCAppWhitelistOptionDisableAutoLockKey
+0x1e0b7b808  __DATA_CONST,__const  _kMCAppWhitelistOptionDisableDeviceRotationKey
+0x1e0b7b800  __DATA_CONST,__const  _kMCAppWhitelistOptionDisableRingerSwitchKey
+0x1e0b7b7f8  __DATA_CONST,__const  _kMCAppWhitelistOptionDisableSleepWakeButtonKey
+0x1e0b7b7f0  __DATA_CONST,__const  _kMCAppWhitelistOptionDisableTouchKey
+0x1e0b7b7e8  __DATA_CONST,__const  _kMCAppWhitelistOptionDisableVolumeButtonsKey
+0x1e0b7b7e0  __DATA_CONST,__const  _kMCAppWhitelistOptionEnableAssistiveTouchKey
+0x1e0b7b7d8  __DATA_CONST,__const  _kMCAppWhitelistOptionEnableCommandAndControlKey
+0x1e0b7b7d0  __DATA_CONST,__const  _kMCAppWhitelistOptionEnableInvertColorsKey
+0x1e0b7b7c8  __DATA_CONST,__const  _kMCAppWhitelistOptionEnableMonoAudioKey
+0x1e0b7b7c0  __DATA_CONST,__const  _kMCAppWhitelistOptionEnableSpeakSelectionKey
+0x1e0b7b7b8  __DATA_CONST,__const  _kMCAppWhitelistOptionEnableVoiceOverKey
+0x1e0b7b7b0  __DATA_CONST,__const  _kMCAppWhitelistOptionEnableZoomKey
+0x1e0b7b7a8  __DATA_CONST,__const  _kMCAppWhitelistOptionsKey
+0x1e0b7b7a0  __DATA_CONST,__const  _kMCAppWhitelistUserEnabledOptionAssistiveTouchKey
+0x1e0b7b798  __DATA_CONST,__const  _kMCAppWhitelistUserEnabledOptionInvertColorsKey
+0x1e0b7b790  __DATA_CONST,__const  _kMCAppWhitelistUserEnabledOptionZoomKey
+0x1e0b7b788  __DATA_CONST,__const  _kMCAppWhitelistUserEnabledOptionsCommandAndControlKey
+0x1e0b7b780  __DATA_CONST,__const  _kMCAppWhitelistUserEnabledOptionsKey
+0x1e0b7b778  __DATA_CONST,__const  _kMCAppWhitelistUserEnabledOptionsVoiceOverKey
+0x1e0b7b770  __DATA_CONST,__const  _kMCAppleCertificatesKeychainGroup
+0x1e0b7b768  __DATA_CONST,__const  _kMCAppleIdentitiesKeychainGroup
+0x1e0b7b760  __DATA_CONST,__const  _kMCAppleKeychainGroup
+0x1e0b7b758  __DATA_CONST,__const  _kMCAppleServicesPayloadType
+0x1e0b7b750  __DATA_CONST,__const  _kMCBridgeURLProfilesInstallation
+0x1e0b7b748  __DATA_CONST,__const  _kMCCCAllowPairingKey
+0x1e0b7b740  __DATA_CONST,__const  _kMCCCAnchorCertificatesKey
+0x1e0b7b738  __DATA_CONST,__const  _kMCCCAttemptedFaceTimeSignInKey
+0x1e0b7b730  __DATA_CONST,__const  _kMCCCAutoAdvanceSetup
+0x1e0b7b728  __DATA_CONST,__const  _kMCCCAwaitDeviceConfiguredKey
+0x1e0b7b720  __DATA_CONST,__const  _kMCCCCloudConfigurationUICompleteKey
+0x1e0b7b718  __DATA_CONST,__const  _kMCCCCloudConfigurationWasAppliedKey
+0x1e0b7b710  __DATA_CONST,__const  _kMCCCConfigurationSourceKey
+0x1e0b7b708  __DATA_CONST,__const  _kMCCCConfigurationURLKey
+0x1e0b7b700  __DATA_CONST,__const  _kMCCCConfigurationWebURLKey
+0x1e0b7b6f8  __DATA_CONST,__const  _kMCCCDEPFastTimeAccount
+0x1e0b7b6f0  __DATA_CONST,__const  _kMCCCDEPFastTimeService
+0x1e0b7b6e8  __DATA_CONST,__const  _kMCCCDeviceConfiguredKey
+0x1e0b7b6e0  __DATA_CONST,__const  _kMCCCIsMDMUnremovable
+0x1e0b7b6d8  __DATA_CONST,__const  _kMCCCIsMandatoryKey
+0x1e0b7b6d0  __DATA_CONST,__const  _kMCCCIsMultiUserKey
+0x1e0b7b6c8  __DATA_CONST,__const  _kMCCCIsSupervisedKey
+0x1e0b7b6c0  __DATA_CONST,__const  _kMCCCLanguageKey
+0x1e0b7b6b8  __DATA_CONST,__const  _kMCCCLanguageScriptKey
+0x1e0b7b6b0  __DATA_CONST,__const  _kMCCCMAIDHasCredentialKey
+0x1e0b7b6a8  __DATA_CONST,__const  _kMCCCMAIDUsernameKey
+0x1e0b7b6a0  __DATA_CONST,__const  _kMCCCMDMProtocolVersionKey
+0x1e0b7b698  __DATA_CONST,__const  _kMCCCOrganizationAddressKey
+0x1e0b7b690  __DATA_CONST,__const  _kMCCCOrganizationAddressLine1Key
+0x1e0b7b688  __DATA_CONST,__const  _kMCCCOrganizationAddressLine2Key
+0x1e0b7b680  __DATA_CONST,__const  _kMCCCOrganizationAddressLine3Key
+0x1e0b7b678  __DATA_CONST,__const  _kMCCCOrganizationCityKey
+0x1e0b7b670  __DATA_CONST,__const  _kMCCCOrganizationCountryKey
+0x1e0b7b668  __DATA_CONST,__const  _kMCCCOrganizationDepartmentKey
+0x1e0b7b660  __DATA_CONST,__const  _kMCCCOrganizationEmailKey
+0x1e0b7b658  __DATA_CONST,__const  _kMCCCOrganizationMagicKey
+0x1e0b7b650  __DATA_CONST,__const  _kMCCCOrganizationNameKey
+0x1e0b7b648  __DATA_CONST,__const  _kMCCCOrganizationPhoneKey
+0x1e0b7b640  __DATA_CONST,__const  _kMCCCOrganizationRegionKey
+0x1e0b7b638  __DATA_CONST,__const  _kMCCCOrganizationShortNameKey
+0x1e0b7b630  __DATA_CONST,__const  _kMCCCOrganizationSupportPhoneKey
+0x1e0b7b628  __DATA_CONST,__const  _kMCCCOrganizationZipCodeKey
+0x1e0b7b620  __DATA_CONST,__const  _kMCCCPostSetupProfileWasInstalledKey
+0x1e0b7b618  __DATA_CONST,__const  _kMCCCProvisionalEnrollmentExpiryKey
+0x1e0b7b610  __DATA_CONST,__const  _kMCCCRegionKey
+0x1e0b7b608  __DATA_CONST,__const  _kMCCCSkipAppStore
+0x1e0b7b600  __DATA_CONST,__const  _kMCCCSkipSIMSetup
+0x1e0b7b5f8  __DATA_CONST,__const  _kMCCCSkipScreenTime
+0x1e0b7b5f0  __DATA_CONST,__const  _kMCCCSkipSetupAccessibilityAppearance
+0x1e0b7b5e8  __DATA_CONST,__const  _kMCCCSkipSetupActionButton
+0x1e0b7b5e0  __DATA_CONST,__const  _kMCCCSkipSetupAll
+0x1e0b7b5d8  __DATA_CONST,__const  _kMCCCSkipSetupAndroid
+0x1e0b7b5d0  __DATA_CONST,__const  _kMCCCSkipSetupAppearance
+0x1e0b7b5c8  __DATA_CONST,__const  _kMCCCSkipSetupAppleID
+0x1e0b7b5c0  __DATA_CONST,__const  _kMCCCSkipSetupAvatar
+0x1e0b7b5b8  __DATA_CONST,__const  _kMCCCSkipSetupBiometric
+0x1e0b7b5b0  __DATA_CONST,__const  _kMCCCSkipSetupCloudStorage
+0x1e0b7b5a8  __DATA_CONST,__const  _kMCCCSkipSetupDeviceProtection
+0x1e0b7b5a0  __DATA_CONST,__const  _kMCCCSkipSetupDeviceToDeviceMigration
+0x1e0b7b598  __DATA_CONST,__const  _kMCCCSkipSetupDiagnostics
+0x1e0b7b590  __DATA_CONST,__const  _kMCCCSkipSetupDisplayTone
+0x1e0b7b588  __DATA_CONST,__const  _kMCCCSkipSetupExpressLanguage
+0x1e0b7b580  __DATA_CONST,__const  _kMCCCSkipSetupHomeButtonSensitivity
+0x1e0b7b578  __DATA_CONST,__const  _kMCCCSkipSetupIntendedUser
+0x1e0b7b570  __DATA_CONST,__const  _kMCCCSkipSetupKey
+0x1e0b7b568  __DATA_CONST,__const  _kMCCCSkipSetupKeyboard
+0x1e0b7b560  __DATA_CONST,__const  _kMCCCSkipSetupLanguage
+0x1e0b7b558  __DATA_CONST,__const  _kMCCCSkipSetupLocation
+0x1e0b7b550  __DATA_CONST,__const  _kMCCCSkipSetupLockdownMode
+0x1e0b7b548  __DATA_CONST,__const  _kMCCCSkipSetupMessagingActivationUsingPhoneNumber
+0x1e0b7b540  __DATA_CONST,__const  _kMCCCSkipSetupOnBoarding
+0x1e0b7b538  __DATA_CONST,__const  _kMCCCSkipSetupPasscode
+0x1e0b7b530  __DATA_CONST,__const  _kMCCCSkipSetupPayment
+0x1e0b7b528  __DATA_CONST,__const  _kMCCCSkipSetupPreferredLanguage
+0x1e0b7b520  __DATA_CONST,__const  _kMCCCSkipSetupPrivacy
+0x1e0b7b518  __DATA_CONST,__const  _kMCCCSkipSetupRegion
+0x1e0b7b510  __DATA_CONST,__const  _kMCCCSkipSetupRestore
+0x1e0b7b508  __DATA_CONST,__const  _kMCCCSkipSetupRestoreCompleted
+0x1e0b7b500  __DATA_CONST,__const  _kMCCCSkipSetupSafety
+0x1e0b7b4f8  __DATA_CONST,__const  _kMCCCSkipSetupSiri
+0x1e0b7b4f0  __DATA_CONST,__const  _kMCCCSkipSetupSpokenLanguage
+0x1e0b7b4e8  __DATA_CONST,__const  _kMCCCSkipSetupTOS
+0x1e0b7b4e0  __DATA_CONST,__const  _kMCCCSkipSetupTapToSetup
+0x1e0b7b4d8  __DATA_CONST,__const  _kMCCCSkipSetupTermsOfAddress
+0x1e0b7b4d0  __DATA_CONST,__const  _kMCCCSkipSetupUpdateCompleted
+0x1e0b7b4c8  __DATA_CONST,__const  _kMCCCSkipSetupWatchMigration
+0x1e0b7b4c0  __DATA_CONST,__const  _kMCCCSkipSetupWelcome
+0x1e0b7b4b8  __DATA_CONST,__const  _kMCCCSkipSetupiMessageAndFaceTime
+0x1e0b7b4b0  __DATA_CONST,__const  _kMCCCSkipSoftwareUpdate
+0x1e0b7b4a8  __DATA_CONST,__const  _kMCCCSkipWiFi
+0x1e0b7b4a0  __DATA_CONST,__const  _kMCCCSupervisorHostCertificateKey
+0x1e0b7b498  __DATA_CONST,__const  _kMCCCSupervisorHostCertificatesKey
+0x1e0b7b490  __DATA_CONST,__const  _kMCCPContentKey
+0x1e0b7b488  __DATA_CONST,__const  _kMCCPExpiryKey
+0x1e0b7b480  __DATA_CONST,__const  _kMCCPFileNameKey
+0x1e0b7b478  __DATA_CONST,__const  _kMCCPIsIdentityKey
+0x1e0b7b470  __DATA_CONST,__const  _kMCCPIsRootKey
+0x1e0b7b468  __DATA_CONST,__const  _kMCCPIssuerKey
+0x1e0b7b460  __DATA_CONST,__const  _kMCCPPEMType
+0x1e0b7b458  __DATA_CONST,__const  _kMCCPPKCS12Type
+0x1e0b7b450  __DATA_CONST,__const  _kMCCPPKCS1Type
+0x1e0b7b448  __DATA_CONST,__const  _kMCCPPasswordKey
+0x1e0b7b440  __DATA_CONST,__const  _kMCCPPersistentRefKey
+0x1e0b7b438  __DATA_CONST,__const  _kMCCPRootType
+0x1e0b7b430  __DATA_CONST,__const  _kMCCPSubjectKey
+0x1e0b7b428  __DATA_CONST,__const  _kMCCWAPIPEMDataKey
+0x1e0b7b420  __DATA_CONST,__const  _kMCCWAPIType
+0x1e0b7b418  __DATA_CONST,__const  _kMCCalDAVAccountPayloadType
+0x1e0b7b410  __DATA_CONST,__const  _kMCCardDAVAccountPayloadType
+0x1e0b7b408  __DATA_CONST,__const  _kMCCellularPayloadType
+0x1e0b7b400  __DATA_CONST,__const  _kMCCellularPrivateNetworkPayloadType
+0x1e0b7b3f8  __DATA_CONST,__const  _kMCCertificateRevocationPayloadType
+0x1e0b7b3f0  __DATA_CONST,__const  _kMCCertificateTransparencyPayloadType
+0x1e0b7b3e8  __DATA_CONST,__const  _kMCChaperonePayloadType
+0x1e0b7b3e0  __DATA_CONST,__const  _kMCClassroomRoleInstructor
+0x1e0b7b3d8  __DATA_CONST,__const  _kMCClassroomRoleStudent
+0x1e0b7b3d0  __DATA_CONST,__const  _kMCClientRestrictionsAppsAndOptions
+0x1e0b7b3c8  __DATA_CONST,__const  _kMCClientRestrictionsCompliant
+0x1e0b7b3c0  __DATA_CONST,__const  _kMCClientRestrictionsLocalizedClientDescription
+0x1e0b7b3b8  __DATA_CONST,__const  _kMCClientRestrictionsLocalizedWarning
+0x1e0b7b3b0  __DATA_CONST,__const  _kMCClientRestrictionsOverrideRestrictions
+0x1e0b7b3a8  __DATA_CONST,__const  _kMCClientRestrictionsTruth
+0x1e0b7b3a0  __DATA_CONST,__const  _kMCClientRestrictionsType
+0x1e0b7b398  __DATA_CONST,__const  _kMCClientRestrictionsUserInfo
+0x1e0b7b390  __DATA_CONST,__const  _kMCCommunicationServiceDefaultServiceHandlersKey
+0x1e0b7b388  __DATA_CONST,__const  _kMCCommunicationServiceRulesAccountProperty
+0x1e0b7b380  __DATA_CONST,__const  _kMCCommunicationServiceRulesKey
+0x1e0b7b378  __DATA_CONST,__const  _kMCCommunicationServiceTypeAudioCall
+0x1e0b7b370  __DATA_CONST,__const  _kMCCommunicationServiceTypeMessage
+0x1e0b7b368  __DATA_CONST,__const  _kMCCommunicationServiceTypeVideoCall
+0x1e0b7b360  __DATA_CONST,__const  _kMCConferenceRoomDisplayCustomMessageKey
+0x1e0b7b358  __DATA_CONST,__const  _kMCConferenceRoomDisplayPayloadType
+0x1e0b7b350  __DATA_CONST,__const  _kMCDMAirPlayAllowlistDeviceNameToPayloadUUIDDependencyKey
+0x1e0b7b348  __DATA_CONST,__const  _kMCDMAirPlayAllowlistMACToPayloadUUIDDependencyKey
+0x1e0b7b340  __DATA_CONST,__const  _kMCDMAirPlayPasswordDeviceNameToPayloadUUIDDependencyKey
+0x1e0b7b338  __DATA_CONST,__const  _kMCDMCertificateToHostIdentifierDependencyKey
+0x1e0b7b330  __DATA_CONST,__const  _kMCDMCertificateToPayloadUUIDDependencyKey
+0x1e0b7b328  __DATA_CONST,__const  _kMCDMEnterpriseCertificateToPayloadUUIDDependencyKey
+0x1e0b7b320  __DATA_CONST,__const  _kMCDMFontURLToProfileIdentifierKey
+0x1e0b7b318  __DATA_CONST,__const  _kMCDMHostIdentifierToCertificateDependencyKey
+0x1e0b7b310  __DATA_CONST,__const  _kMCDMManagedProfileToManagingProfileKey
+0x1e0b7b308  __DATA_CONST,__const  _kMCDMManagingProfileToManagedProfileKey
+0x1e0b7b300  __DATA_CONST,__const  _kMCDMManagingProfileToProvisioningProfileKey
+0x1e0b7b2f8  __DATA_CONST,__const  _kMCDMPayloadUUIDToAirPlayAllowlistMACDependencyKey
+0x1e0b7b2f0  __DATA_CONST,__const  _kMCDMPayloadUUIDToAirPlayPasswordDeviceNameDependencyKey
+0x1e0b7b2e8  __DATA_CONST,__const  _kMCDMPayloadUUIDToCertificateDependencyKey
+0x1e0b7b2e0  __DATA_CONST,__const  _kMCDMPayloadUUIDToDeviceNameDependencyKey
+0x1e0b7b2d8  __DATA_CONST,__const  _kMCDMPayloadUUIDToEnterpriseCertificateDependencyKey
+0x1e0b7b2d0  __DATA_CONST,__const  _kMCDMProfileIdentifierToFontURLKey
+0x1e0b7b2c8  __DATA_CONST,__const  _kMCDMProfileWithWebContentFilterToPayloadUUIDDependencyKey
+0x1e0b7b2c0  __DATA_CONST,__const  _kMCDMProvisioningProfileToManagingProfileKey
+0x1e0b7b2b8  __DATA_CONST,__const  _kMCDNSProxyPayloadType
+0x1e0b7b2b0  __DATA_CONST,__const  _kMCDNSSettingsPayloadType
+0x1e0b7b2a8  __DATA_CONST,__const  _kMCDeclarationsPayloadType
+0x1e0b7b2a0  __DATA_CONST,__const  _kMCDefaultsPayloadType
+0x1e0b7b298  __DATA_CONST,__const  _kMCDisablePasscodeNagD
+0x1e0b7b290  __DATA_CONST,__const  _kMCDomainsPayloadType
+0x1e0b7b288  __DATA_CONST,__const  _kMCEAPEmailAccountDescriptionKey
+0x1e0b7b280  __DATA_CONST,__const  _kMCEAPEmailAccountNameKey
+0x1e0b7b278  __DATA_CONST,__const  _kMCEAPEmailAccountTypeKey
+0x1e0b7b270  __DATA_CONST,__const  _kMCEAPEmailAddressKey
+0x1e0b7b268  __DATA_CONST,__const  _kMCEAPIncomingMailServerAuthenticationKey
+0x1e0b7b260  __DATA_CONST,__const  _kMCEAPIncomingMailServerHostnameKey
+0x1e0b7b258  __DATA_CONST,__const  _kMCEAPIncomingMailServerIMAPPathPrefix
+0x1e0b7b250  __DATA_CONST,__const  _kMCEAPIncomingMailServerPortNumberKey
+0x1e0b7b248  __DATA_CONST,__const  _kMCEAPIncomingMailServerUseSSLKey
+0x1e0b7b240  __DATA_CONST,__const  _kMCEAPIncomingMailServerUsernameKey
+0x1e0b7b238  __DATA_CONST,__const  _kMCEAPIncomingPasswordKey
+0x1e0b7b230  __DATA_CONST,__const  _kMCEAPOutgoingMailServerAuthenticationKey
+0x1e0b7b228  __DATA_CONST,__const  _kMCEAPOutgoingMailServerHostnameKey
+0x1e0b7b220  __DATA_CONST,__const  _kMCEAPOutgoingMailServerPortNumberKey
+0x1e0b7b218  __DATA_CONST,__const  _kMCEAPOutgoingMailServerUseSSLKey
+0x1e0b7b210  __DATA_CONST,__const  _kMCEAPOutgoingMailServerUsernameKey
+0x1e0b7b208  __DATA_CONST,__const  _kMCEAPOutgoingPasswordKey
+0x1e0b7b200  __DATA_CONST,__const  _kMCEAPOutgoingPasswordSameAsIncomingPasswordKey
+0x1e0b7b1f8  __DATA_CONST,__const  _kMCEASAccountPayloadType
+0x1e0b7b1f0  __DATA_CONST,__const  _kMCEDUClassroomPayloadType
+0x1e0b7b1e8  __DATA_CONST,__const  _kMCEmailAccountPayloadAuthenticationTypeCRAMMD5
+0x1e0b7b1e0  __DATA_CONST,__const  _kMCEmailAccountPayloadAuthenticationTypeHTTPMD5
+0x1e0b7b1d8  __DATA_CONST,__const  _kMCEmailAccountPayloadAuthenticationTypeNTLM
+0x1e0b7b1d0  __DATA_CONST,__const  _kMCEmailAccountPayloadAuthenticationTypeNone
+0x1e0b7b1c8  __DATA_CONST,__const  _kMCEmailAccountPayloadAuthenticationTypePassword
+0x1e0b7b1c0  __DATA_CONST,__const  _kMCEmailAccountPayloadType
+0x1e0b7b1b8  __DATA_CONST,__const  _kMCEmailAccountPayloadTypeIMAP
+0x1e0b7b1b0  __DATA_CONST,__const  _kMCEmailAccountPayloadTypePOP
+0x1e0b7b1a8  __DATA_CONST,__const  _kMCEnableProfilePurgatory
+0x1e0b7b1a0  __DATA_CONST,__const  _kMCEncryptedProfileServicePayloadType
+0x1e0b7b198  __DATA_CONST,__const  _kMCErrorLoginPromptKey
+0x1e0b7b190  __DATA_CONST,__const  _kMCExtensibleSingleSignOnPayloadType
+0x1e0b7b188  __DATA_CONST,__const  _kMCFeatureFlagsPayloadType
+0x1e0b7b180  __DATA_CONST,__const  _kMCFeaturePromptMessageKey
+0x1e0b7b178  __DATA_CONST,__const  _kMCFeaturePromptShowAlwaysAllowButtonKey
+0x1e0b7b170  __DATA_CONST,__const  _kMCFeaturePromptTitleKey
+0x1e0b7b168  __DATA_CONST,__const  _kMCFontPayloadType
+0x1e0b7b160  __DATA_CONST,__const  _kMCGlobalEthernetPayloadType
+0x1e0b7b158  __DATA_CONST,__const  _kMCGlobalHTTPProxyPayloadType
+0x1e0b7b150  __DATA_CONST,__const  _kMCGmailAccountLegacyPayloadType
+0x1e0b7b148  __DATA_CONST,__const  _kMCGmailAccountPayloadType
+0x1e0b7b140  __DATA_CONST,__const  _kMCHasCheckedForAutoInstalledProfiles
+0x1e0b7b138  __DATA_CONST,__const  _kMCHomeScreenLayoutPayloadType
+0x1e0b7b130  __DATA_CONST,__const  _kMCHomeURLProfilesInstallation
+0x1e0b7b128  __DATA_CONST,__const  _kMCIDDefaultValueKey
+0x1e0b7b120  __DATA_CONST,__const  _kMCIDDescriptionKey
+0x1e0b7b118  __DATA_CONST,__const  _kMCIDFieldTypeKey
+0x1e0b7b110  __DATA_CONST,__const  _kMCIDFinePrintKey
+0x1e0b7b108  __DATA_CONST,__const  _kMCIDFlagsKey
+0x1e0b7b100  __DATA_CONST,__const  _kMCIDMinimumLength
+0x1e0b7b0f8  __DATA_CONST,__const  _kMCIDMismatchDescriptionKey
+0x1e0b7b0f0  __DATA_CONST,__const  _kMCIDPlaceholderValueKey
+0x1e0b7b0e8  __DATA_CONST,__const  _kMCIDResponseKey
+0x1e0b7b0e0  __DATA_CONST,__const  _kMCIDRetypeDescriptionKey
+0x1e0b7b0d8  __DATA_CONST,__const  _kMCIDTitleKey
+0x1e0b7b0d0  __DATA_CONST,__const  _kMCIDUUIDKey
+0x1e0b7b0c8  __DATA_CONST,__const  _kMCInstallProfileOptionAdditionalManagedProfileIdentifiers
+0x1e0b7b0c0  __DATA_CONST,__const  _kMCInstallProfileOptionAssumeOwnership
+0x1e0b7b0b8  __DATA_CONST,__const  _kMCInstallProfileOptionCarrierIdentifier
+0x1e0b7b0b0  __DATA_CONST,__const  _kMCInstallProfileOptionCarrierName
+0x1e0b7b0a8  __DATA_CONST,__const  _kMCInstallProfileOptionESSOAppITunesStoreID
+0x1e0b7b0a0  __DATA_CONST,__const  _kMCInstallProfileOptionFilterFlag
+0x1e0b7b098  __DATA_CONST,__const  _kMCInstallProfileOptionInstallationSource
+0x1e0b7b090  __DATA_CONST,__const  _kMCInstallProfileOptionInstallationType
+0x1e0b7b088  __DATA_CONST,__const  _kMCInstallProfileOptionInstalledBy
+0x1e0b7b080  __DATA_CONST,__const  _kMCInstallProfileOptionIsAutoInstalled
+0x1e0b7b078  __DATA_CONST,__const  _kMCInstallProfileOptionIsCloudLocked
+0x1e0b7b070  __DATA_CONST,__const  _kMCInstallProfileOptionIsCloudProfile
+0x1e0b7b068  __DATA_CONST,__const  _kMCInstallProfileOptionIsESSOEnrollment
+0x1e0b7b060  __DATA_CONST,__const  _kMCInstallProfileOptionIsInstalledByMDM
+0x1e0b7b058  __DATA_CONST,__const  _kMCInstallProfileOptionIsInstalledInteractively
+0x1e0b7b050  __DATA_CONST,__const  _kMCInstallProfileOptionIsOTAInstallation
+0x1e0b7b048  __DATA_CONST,__const  _kMCInstallProfileOptionIsOTAUpdate
+0x1e0b7b040  __DATA_CONST,__const  _kMCInstallProfileOptionManagingProfileIdentifier
+0x1e0b7b038  __DATA_CONST,__const  _kMCInstallProfileOptionPersonaID
+0x1e0b7b030  __DATA_CONST,__const  _kMCInstallProfileOptionRMAccountIdentifier
+0x1e0b7b028  __DATA_CONST,__const  _kMCInstallProfileOptionSignatureVersion
+0x1e0b7b020  __DATA_CONST,__const  _kMCInstallProfileOptionSkipCheckout
+0x1e0b7b018  __DATA_CONST,__const  _kMCInstallProfileOptionsIsInstalledByDeclarativeManagement
+0x1e0b7b010  __DATA_CONST,__const  _kMCInstallProfileOptionsIsRMUserEnrollment
+0x1e0b7b008  __DATA_CONST,__const  _kMCInternalAbortOnUnreadableFiles
+0x1e0b7b000  __DATA_CONST,__const  _kMCInternalOverrideDiagnosticEnforcementKey
+0x1e0b7aff8  __DATA_CONST,__const  _kMCInternalOverrideDisallowEnrollmentWithoutEscrow
+0x1e0b7aff0  __DATA_CONST,__const  _kMCInternalOverrideNetworkTetheredKey
+0x1e0b7afe8  __DATA_CONST,__const  _kMCInternalOverrideProfileValidationKey
+0x1e0b7afe0  __DATA_CONST,__const  _kMCKeybagMigrationHasBeenClearedByHostKey
+0x1e0b7afd8  __DATA_CONST,__const  _kMCLDAPAccountPayloadType
+0x1e0b7afd0  __DATA_CONST,__const  _kMCLSSystemAppRemovalClientType
+0x1e0b7afc8  __DATA_CONST,__const  _kMCLocalizedRestrictionSourceDescription
+0x1e0b7afc0  __DATA_CONST,__const  _kMCLockdownCloudConfigurationDomain
+0x1e0b7afb8  __DATA_CONST,__const  _kMCLockdownCloudConfigurationFlagsKey
+0x1e0b7afb0  __DATA_CONST,__const  _kMCLockdownMigrationHostPairingAllowedKey
+0x1e0b7afa8  __DATA_CONST,__const  _kMCLockdownMigrationIsSupervisedKey
+0x1e0b7afa0  __DATA_CONST,__const  _kMCLockdownMigrationSupervisorCertificateKey
+0x1e0b7af98  __DATA_CONST,__const  _kMCLoggingPayloadType
+0x1e0b7af90  __DATA_CONST,__const  _kMCMDMLostModeLastLocationRequestDateKey
+0x1e0b7af88  __DATA_CONST,__const  _kMCMDMPayloadType
+0x1e0b7af80  __DATA_CONST,__const  _kMCMDMProfileIdentifierToWiFiRecoveryNetworkPayloadUUIDDependencyKey
+0x1e0b7af78  __DATA_CONST,__const  _kMCMISHashKey
+0x1e0b7af70  __DATA_CONST,__const  _kMCMISHashTypeKey
+0x1e0b7af68  __DATA_CONST,__const  _kMCMISIsBlockedKey
+0x1e0b7af60  __DATA_CONST,__const  _kMCManagedAppAttributeAssociatedDomains
+0x1e0b7af58  __DATA_CONST,__const  _kMCManagedAppAttributeAssociatedDomainsEnableDirectDownloads
+0x1e0b7af50  __DATA_CONST,__const  _kMCManagedAppAttributeBundleID
+0x1e0b7af48  __DATA_CONST,__const  _kMCManagedAppAttributeContentFilterUUID
+0x1e0b7af40  __DATA_CONST,__const  _kMCManagedAppAttributeDNSProxyUUID
+0x1e0b7af38  __DATA_CONST,__const  _kMCManagedAppAttributeRelayUUID
+0x1e0b7af30  __DATA_CONST,__const  _kMCManagedAppAttributeRemovable
+0x1e0b7af28  __DATA_CONST,__const  _kMCManagedAppAttributeVPNUUID
+0x1e0b7af20  __DATA_CONST,__const  _kMCMaximumResidentUsersKey
+0x1e0b7af18  __DATA_CONST,__const  _kMCMetaAllowedGrandfatheredRestrictions
+0x1e0b7af10  __DATA_CONST,__const  _kMCMetaLastMDMMigratedBuildKey
+0x1e0b7af08  __DATA_CONST,__const  _kMCMetaLastMigratedBuildKey
+0x1e0b7af00  __DATA_CONST,__const  _kMCMetaStopFilteringGrandfatheredRestrictions
+0x1e0b7aef8  __DATA_CONST,__const  _kMCMigrationDidMigrateKey
+0x1e0b7aef0  __DATA_CONST,__const  _kMCMigrationDidRestoreKey
+0x1e0b7aee8  __DATA_CONST,__const  _kMCMigrationPasscodeSetKey
+0x1e0b7aee0  __DATA_CONST,__const  _kMCMultiUserDeviceTemporarySessionOnlyKey
+0x1e0b7aed8  __DATA_CONST,__const  _kMCMultiUserDeviceTemporarySessionTimeoutKey
+0x1e0b7aed0  __DATA_CONST,__const  _kMCMultiUserDeviceUserSessionTimeoutKey
+0x1e0b7aec8  __DATA_CONST,__const  _kMCNagMetaLastLocaleKey
+0x1e0b7aec0  __DATA_CONST,__const  _kMCNagMetaLastLockDateKey
+0x1e0b7aeb8  __DATA_CONST,__const  _kMCNagMetaMandatoryKey
+0x1e0b7aeb0  __DATA_CONST,__const  _kMCNagMetaMessageKey
+0x1e0b7aea8  __DATA_CONST,__const  _kMCNagMetaTimerExpiryDateKey
+0x1e0b7aea0  __DATA_CONST,__const  _kMCNetworkUsageRulesPayloadSIMRulesICCIDsKey
+0x1e0b7ae98  __DATA_CONST,__const  _kMCNetworkUsageRulesPayloadSIMRulesWiFiAssistPolicyKey
+0x1e0b7ae90  __DATA_CONST,__const  _kMCNetworkUsageRulesPayloadType
+0x1e0b7ae88  __DATA_CONST,__const  _kMCNotBackedUpPreferencesDomain
+0x1e0b7ae80  __DATA_CONST,__const  _kMCNotificationSettingsPayloadType
+0x1e0b7ae78  __DATA_CONST,__const  _kMCNotificationsAlertTypeKey
+0x1e0b7ae70  __DATA_CONST,__const  _kMCNotificationsBadgesEnabledKey
+0x1e0b7ae68  __DATA_CONST,__const  _kMCNotificationsBundleIdentifierKey
+0x1e0b7ae60  __DATA_CONST,__const  _kMCNotificationsCriticalAlertEnabledKey
+0x1e0b7ae58  __DATA_CONST,__const  _kMCNotificationsGroupingTypeKey
+0x1e0b7ae50  __DATA_CONST,__const  _kMCNotificationsNotificationsEnabledKey
+0x1e0b7ae48  __DATA_CONST,__const  _kMCNotificationsPreviewTypeKey
+0x1e0b7ae40  __DATA_CONST,__const  _kMCNotificationsShowInCarPlayKey
+0x1e0b7ae38  __DATA_CONST,__const  _kMCNotificationsShowInLockScreenKey
+0x1e0b7ae30  __DATA_CONST,__const  _kMCNotificationsShowInNotificationCenterKey
+0x1e0b7ae28  __DATA_CONST,__const  _kMCNotificationsSoundsEnabledKey
+0x1e0b7ae20  __DATA_CONST,__const  _kMCOSXServerAccountPayloadType
+0x1e0b7ae18  __DATA_CONST,__const  _kMCPContextChaperoneKey
+0x1e0b7ae10  __DATA_CONST,__const  _kMCPSPChallengeKey
+0x1e0b7ae08  __DATA_CONST,__const  _kMCPSPConfirmInstallationKey
+0x1e0b7ae00  __DATA_CONST,__const  _kMCPSPDeviceAttributeIMEI
+0x1e0b7adf8  __DATA_CONST,__const  _kMCPSPDeviceAttributeMEID
+0x1e0b7adf0  __DATA_CONST,__const  _kMCPSPDeviceAttributeOSBuildVersion
+0x1e0b7ade8  __DATA_CONST,__const  _kMCPSPDeviceAttributeProduct
+0x1e0b7ade0  __DATA_CONST,__const  _kMCPSPDeviceAttributeSerial
+0x1e0b7add8  __DATA_CONST,__const  _kMCPSPDeviceAttributeUDID
+0x1e0b7add0  __DATA_CONST,__const  _kMCPSPDeviceAttributesKey
+0x1e0b7adc8  __DATA_CONST,__const  _kMCPSPEnrollmentIdentityPersistentID
+0x1e0b7adc0  __DATA_CONST,__const  _kMCPSPEnrollmentIdentityUUID
+0x1e0b7adb8  __DATA_CONST,__const  _kMCPSPSupportedServerVersionKey
+0x1e0b7adb0  __DATA_CONST,__const  _kMCPSPURLStringKey
+0x1e0b7ada8  __DATA_CONST,__const  _kMCPairingOptionsSupervisorCertificateKey
+0x1e0b7ada0  __DATA_CONST,__const  _kMCPasscodePolicyApplePayChinaKey
+0x1e0b7ad98  __DATA_CONST,__const  _kMCPasscodePolicyAutoUnlockKey
+0x1e0b7ad90  __DATA_CONST,__const  _kMCPasswordPolicyPayloadType
+0x1e0b7ad88  __DATA_CONST,__const  _kMCPayloadDescriptionKey
+0x1e0b7ad80  __DATA_CONST,__const  _kMCPayloadDisplayNameKey
+0x1e0b7ad78  __DATA_CONST,__const  _kMCPayloadIdentifierKey
+0x1e0b7ad70  __DATA_CONST,__const  _kMCPayloadOrganizationKey
+0x1e0b7ad68  __DATA_CONST,__const  _kMCPayloadPersistentResourceIDKey
+0x1e0b7ad60  __DATA_CONST,__const  _kMCPayloadTypeKey
+0x1e0b7ad58  __DATA_CONST,__const  _kMCPayloadUUIDKey
+0x1e0b7ad50  __DATA_CONST,__const  _kMCPayloadVersionKey
+0x1e0b7ad48  __DATA_CONST,__const  _kMCPreferencesDefaultMDMOptionsKey
+0x1e0b7ad40  __DATA_CONST,__const  _kMCPreferencesLockdownActivationIndicatesCloudConfigurationAvailableKey
+0x1e0b7ad38  __DATA_CONST,__const  _kMCPreferencesLockdownCloudConfigurationAvailableKey
+0x1e0b7ad30  __DATA_CONST,__const  _kMCPreferencesMobileUserName
+0x1e0b7ad28  __DATA_CONST,__const  _kMCPrivateAccountName
+0x1e0b7ad20  __DATA_CONST,__const  _kMCPrivatePasscodeCharacteristicAllDigitsKey
+0x1e0b7ad18  __DATA_CONST,__const  _kMCPrivatePasscodeCharacteristicComplexCharactersCountKey
+0x1e0b7ad10  __DATA_CONST,__const  _kMCPrivatePasscodeCharacteristicHasAlphaKey
+0x1e0b7ad08  __DATA_CONST,__const  _kMCPrivatePasscodeCharacteristicHasAscendingDescendingCharactersKey
+0x1e0b7ad00  __DATA_CONST,__const  _kMCPrivatePasscodeCharacteristicHasNumberKey
+0x1e0b7acf8  __DATA_CONST,__const  _kMCPrivatePasscodeCharacteristicHasRepeatingCharactersKey
+0x1e0b7acf0  __DATA_CONST,__const  _kMCPrivatePasscodeCharacteristicLengthKey
+0x1e0b7ace8  __DATA_CONST,__const  _kMCPrivatePasscodeCharacteristicStringHashKey
+0x1e0b7ace0  __DATA_CONST,__const  _kMCPrivatePasscodeCharacteristicTimestampKey
+0x1e0b7acd8  __DATA_CONST,__const  _kMCPrivatePasscodeCharacteristicsKey
+0x1e0b7acd0  __DATA_CONST,__const  _kMCPrivatePasscodeHistoryHashKey
+0x1e0b7acc8  __DATA_CONST,__const  _kMCPrivatePasscodeHistoryHashMethodKey
+0x1e0b7acc0  __DATA_CONST,__const  _kMCPrivatePasscodeHistoryIterationsKey
+0x1e0b7acb8  __DATA_CONST,__const  _kMCPrivatePasscodeHistoryKey
+0x1e0b7acb0  __DATA_CONST,__const  _kMCPrivatePasscodeHistoryMaxIterationsKey
+0x1e0b7aca8  __DATA_CONST,__const  _kMCPrivatePasscodeHistorySaltKey
+0x1e0b7aca0  __DATA_CONST,__const  _kMCProfileConsentTextKey
+0x1e0b7ac98  __DATA_CONST,__const  _kMCProfileDescriptionKey
+0x1e0b7ac90  __DATA_CONST,__const  _kMCProfileDisplayNameKey
+0x1e0b7ac88  __DATA_CONST,__const  _kMCProfileDurationUntilRemovalKey
+0x1e0b7ac80  __DATA_CONST,__const  _kMCProfileEncryptedPayloadContentKey
+0x1e0b7ac78  __DATA_CONST,__const  _kMCProfileExpiryDateKey
+0x1e0b7ac70  __DATA_CONST,__const  _kMCProfileIdentifierKey
+0x1e0b7ac68  __DATA_CONST,__const  _kMCProfileInstallDateKey
+0x1e0b7ac60  __DATA_CONST,__const  _kMCProfileInstallOptionsKey
+0x1e0b7ac58  __DATA_CONST,__const  _kMCProfileIsStubKey
+0x1e0b7ac50  __DATA_CONST,__const  _kMCProfileNeedsRebootKey
+0x1e0b7ac48  __DATA_CONST,__const  _kMCProfileOrganizationKey
+0x1e0b7ac40  __DATA_CONST,__const  _kMCProfilePayloadContentKey
+0x1e0b7ac38  __DATA_CONST,__const  _kMCProfileProductBuildVersionKey
+0x1e0b7ac30  __DATA_CONST,__const  _kMCProfileProductVersionKey
+0x1e0b7ac28  __DATA_CONST,__const  _kMCProfileRemovalDateKey
+0x1e0b7ac20  __DATA_CONST,__const  _kMCProfileRemovalDisallowedKey
+0x1e0b7ac18  __DATA_CONST,__const  _kMCProfileRemovalPasscodeService
+0x1e0b7ac10  __DATA_CONST,__const  _kMCProfileSignerCertsKey
+0x1e0b7ac08  __DATA_CONST,__const  _kMCProfileSignerSummaryKey
+0x1e0b7ac00  __DATA_CONST,__const  _kMCProfileTargetDeviceTypeKey
+0x1e0b7abf8  __DATA_CONST,__const  _kMCProfileTrustLevelKey
+0x1e0b7abf0  __DATA_CONST,__const  _kMCProfileTypeCertificateWrapperValue
+0x1e0b7abe8  __DATA_CONST,__const  _kMCProfileTypeConfigurationValue
+0x1e0b7abe0  __DATA_CONST,__const  _kMCProfileTypeEnrollmentServiceValue
+0x1e0b7abd8  __DATA_CONST,__const  _kMCProfileTypeKey
+0x1e0b7abd0  __DATA_CONST,__const  _kMCProfileTypeProfileServiceValue
+0x1e0b7abc8  __DATA_CONST,__const  _kMCProfileUUIDKey
+0x1e0b7abc0  __DATA_CONST,__const  _kMCProfileUserAgent
+0x1e0b7abb8  __DATA_CONST,__const  _kMCProfileVersionKey
+0x1e0b7abb0  __DATA_CONST,__const  _kMCProfileWasEncryptedKey
+0x1e0b7aba8  __DATA_CONST,__const  _kMCProfileWasLockedKey
+0x1e0b7aba0  __DATA_CONST,__const  _kMCProfileWasSignedKey
+0x1e0b7ab98  __DATA_CONST,__const  _kMCProfileWasTrustedKey
+0x1e0b7ab90  __DATA_CONST,__const  _kMCPublicPasscodeCreationDateKey
+0x1e0b7ab88  __DATA_CONST,__const  _kMCPublicPasscodeKeyboardTypeKey
+0x1e0b7ab80  __DATA_CONST,__const  _kMCPublicPasscodeSimpleTypeKey
+0x1e0b7ab78  __DATA_CONST,__const  _kMCPublicRecoveryPasscodeKeyboardTypeKey
+0x1e0b7ab70  __DATA_CONST,__const  _kMCPublicRecoveryPasscodeSimpleTypeKey
+0x19467aa30  __TEXT,__const  _kMCRecoveryPasscodeExpiryInterval
+0x1e0b7ab68  __DATA_CONST,__const  _kMCRelayPayloadType
+0x1e0b7ab60  __DATA_CONST,__const  _kMCRemovalPasswordPayloadType
+0x1e0b7ab58  __DATA_CONST,__const  _kMCRemoveProfileOptionRemovedDueToMigrationFromOtherDevice
+0x1e0b7ab50  __DATA_CONST,__const  _kMCRestrictionsPayloadType
+0x1e0b7ab48  __DATA_CONST,__const  _kMCSAPSkipKeysKey
+0x1e0b7ab40  __DATA_CONST,__const  _kMCSCEPCACapsKey
+0x1e0b7ab38  __DATA_CONST,__const  _kMCSCEPCAFingerprintKey
+0x1e0b7ab30  __DATA_CONST,__const  _kMCSCEPCAInstanceNameKey
+0x1e0b7ab28  __DATA_CONST,__const  _kMCSCEPChallengeKey
+0x1e0b7ab20  __DATA_CONST,__const  _kMCSCEPKeySizeKey
+0x1e0b7ab18  __DATA_CONST,__const  _kMCSCEPKeyUsageKey
+0x1e0b7ab10  __DATA_CONST,__const  _kMCSCEPPayloadType
+0x1e0b7ab08  __DATA_CONST,__const  _kMCSCEPRetriesKey
+0x1e0b7ab00  __DATA_CONST,__const  _kMCSCEPRetryDelayKey
+0x1e0b7aaf8  __DATA_CONST,__const  _kMCSCEPSubjectAltNameKey
+0x1e0b7aaf0  __DATA_CONST,__const  _kMCSCEPSubjectKey
+0x1e0b7aae8  __DATA_CONST,__const  _kMCSCEPURLKey
+0x1e0b7aae0  __DATA_CONST,__const  _kMCSSCExtendedKeyUsageKey
+0x1e0b7aad8  __DATA_CONST,__const  _kMCSSCHardwareBoundKey
+0x1e0b7aad0  __DATA_CONST,__const  _kMCSSCKeySizeKey
+0x1e0b7aac8  __DATA_CONST,__const  _kMCSSCKeyTypeECSECPrimeRandom
+0x1e0b7aac0  __DATA_CONST,__const  _kMCSSCKeyTypeKey
+0x1e0b7aab8  __DATA_CONST,__const  _kMCSSCKeyTypeRSA
+0x1e0b7aab0  __DATA_CONST,__const  _kMCSSCKeyUsageKey
+0x1e0b7aaa8  __DATA_CONST,__const  _kMCSSCLifetimeKey
+0x1e0b7aaa0  __DATA_CONST,__const  _kMCSafariCookieAcceptPolicyAlways
+0x1e0b7aa98  __DATA_CONST,__const  _kMCSafariCookieAcceptPolicyExclusivelyFromMainDocumentDomain
+0x1e0b7aa90  __DATA_CONST,__const  _kMCSafariCookieAcceptPolicyNever
+0x1e0b7aa88  __DATA_CONST,__const  _kMCSafariCookieAcceptPolicyOnlyFromMainDocumentDomain
+0x1e0b7aa80  __DATA_CONST,__const  _kMCSelfSignedCertificatePayloadType
+0x1e0b7aa78  __DATA_CONST,__const  _kMCServiceName
+0x1e0b7aa70  __DATA_CONST,__const  _kMCSettingsURLComponentProfilesOverview
+0x1e0b7aa68  __DATA_CONST,__const  _kMCSettingsURLOnsiteProfileInstallation
+0x1e0b7aa60  __DATA_CONST,__const  _kMCSettingsURLOnsiteProfileInstallationComponent
+0x1e0b7aa58  __DATA_CONST,__const  _kMCSettingsURLProfileError
+0x1e0b7aa50  __DATA_CONST,__const  _kMCSettingsURLProfileErrorComponent
+0x1e0b7aa48  __DATA_CONST,__const  _kMCSettingsURLProfilesInstallation
+0x1e0b7aa40  __DATA_CONST,__const  _kMCSettingsURLProfilesInstallationComponent
+0x1e0b7aa38  __DATA_CONST,__const  _kMCSettingsURLProfilesOverview
+0x1e0b7aa30  __DATA_CONST,__const  _kMCSetupAssistantPayloadType
+0x1e0b7aa28  __DATA_CONST,__const  _kMCSharedDeviceAssetTagInformationKey
+0x1e0b7aa20  __DATA_CONST,__const  _kMCSharedDeviceConfigurationPayloadType
+0x1e0b7aa18  __DATA_CONST,__const  _kMCSharedDeviceIfLostReturnToMessageKey
+0x1e0b7aa10  __DATA_CONST,__const  _kMCSharedDeviceLockScreenFootnoteKey
+0x1e0b7aa08  __DATA_CONST,__const  _kMCSharedDeviceUserQuotaSizeKey
+0x1e0b7aa00  __DATA_CONST,__const  _kMCSingleAppPayloadType
+0x1e0b7a9f8  __DATA_CONST,__const  _kMCSingleSignOnPayloadType
+0x1e0b7a9f0  __DATA_CONST,__const  _kMCSubCalAccountPayloadType
+0x1e0b7a9e8  __DATA_CONST,__const  _kMCTVRemotePayloadType
+0x1e0b7a9e0  __DATA_CONST,__const  _kMCUnknownPayloadType
+0x1e0b7a9d8  __DATA_CONST,__const  _kMCVPNPayloadBaseVPNTypeAlwaysOn
+0x1e0b7a9d0  __DATA_CONST,__const  _kMCVPNPayloadBaseVPNTypeKey
+0x1e0b7a9c8  __DATA_CONST,__const  _kMCVPNPayloadBaseVPNTypePPTP
+0x1e0b7a9c0  __DATA_CONST,__const  _kMCVPNPayloadType
+0x1e0b7a9b8  __DATA_CONST,__const  _kMCWCFAddressKey
+0x1e0b7a9b0  __DATA_CONST,__const  _kMCWCFBookmarkPathKey
+0x1e0b7a9a8  __DATA_CONST,__const  _kMCWCFPageTitleKey
+0x1e0b7a9a0  __DATA_CONST,__const  _kMCWCPContentModeKey
+0x1e0b7a998  __DATA_CONST,__const  _kMCWCPFullScreenKey
+0x1e0b7a990  __DATA_CONST,__const  _kMCWCPIconKey
+0x1e0b7a988  __DATA_CONST,__const  _kMCWCPIgnoreManifestScopeKey
+0x1e0b7a980  __DATA_CONST,__const  _kMCWCPIsRemovableKey
+0x1e0b7a978  __DATA_CONST,__const  _kMCWCPLabelKey
+0x1e0b7a970  __DATA_CONST,__const  _kMCWCPPrecomposedKey
+0x1e0b7a968  __DATA_CONST,__const  _kMCWCPTargetApplicationBundleIdentifierKey
+0x1e0b7a960  __DATA_CONST,__const  _kMCWCPURLKey
+0x1e0b7a958  __DATA_CONST,__const  _kMCWatchEnrollmentAnchorCertificatesKey
+0x1e0b7a950  __DATA_CONST,__const  _kMCWatchEnrollmentDeclarationConfigurationKey
+0x1e0b7a948  __DATA_CONST,__const  _kMCWatchEnrollmentDeclarationKeysKey
+0x1e0b7a940  __DATA_CONST,__const  _kMCWatchEnrollmentPairingTokenKey
+0x1e0b7a938  __DATA_CONST,__const  _kMCWatchEnrollmentProfileDataKey
+0x1e0b7a930  __DATA_CONST,__const  _kMCWatchEnrollmentServiceURLKey
+0x1e0b7a928  __DATA_CONST,__const  _kMCWatchEnrollmentSupervisionKey
+0x1e0b7a920  __DATA_CONST,__const  _kMCWebClipPayloadType
+0x1e0b7a918  __DATA_CONST,__const  _kMCWebContentFilterPayloadType
+0x1e0b7a910  __DATA_CONST,__const  _kMCWebContentFilterTypeBuiltIn
+0x1e0b7a908  __DATA_CONST,__const  _kMCWebContentFilterTypePlugin
+0x1e0b7a900  __DATA_CONST,__const  _kMCWebFilterUIActiveDidChangeNotification
+0x1e0b7a8f8  __DATA_CONST,__const  _kMCWhitelistedAppBundleIDsKey
+0x1e0b7a8f0  __DATA_CONST,__const  _kMCWhitelistedLocalesEnforcedRestrictionName
+0x1e0b7a8e8  __DATA_CONST,__const  _kMCWiFiEncryptionTypeAny
+0x1e0b7a8e0  __DATA_CONST,__const  _kMCWiFiEncryptionTypeWEP
+0x1e0b7a8d8  __DATA_CONST,__const  _kMCWiFiEncryptionTypeWPA
+0x1e0b7a8d0  __DATA_CONST,__const  _kMCWiFiEncryptionTypeWPA2
+0x1e0b7a8c8  __DATA_CONST,__const  _kMCWiFiEncryptionTypeWPA3
+0x1e0b7a8c0  __DATA_CONST,__const  _kMCWiFiPayloadType
+0x1e0b7a8b8  __DATA_CONST,__const  _kMCkMCEmailAccountIncomingACAccountIdentifier
+0x1e0b7a8b0  __DATA_CONST,__const  _kMCkMCEmailAccountOutgoingACAccountIdentifier
+0x1e0b7a8a8  __DATA_CONST,__const  _kNonStoreBooksManifestBooksKey
+0x1e0b7a8a0  __DATA_CONST,__const  _kStoreBooksManifestBooksKey
+0x1eb9adb28  __DATA,__data  _kSystemUsersGroupName
+0x194660cd8  __TEXT,__text  _verifyAclConstraintInternal
+```
+
+## Private
+
+```
+0x19457c950  __TEXT,__text  _migrationCheckQueue.cold.1
+0x19457c964  __TEXT,__text  +[MCSignpostManager willGetFeature:]
+0x19457c968  __TEXT,__text  -[MCRestrictionManager memberQueueEffectiveUserSettings]
+0x19457cb58  __TEXT,__text  +[MCRestrictionManager sharedManager]
+0x19457cb90  __TEXT,__text  -[MCProfileConnection(Private) checkInIfNeeded]
+0x19457cc48  __TEXT,__text  -[MCProfileConnection(Settings) effectiveBoolValueForSetting:]
+0x19457cc50  __TEXT,__text  -[MCProfileConnection(Settings) effectiveBoolValueForSetting:outAsk:]
+0x19457cdb4  __TEXT,__text  -[MCRestrictionManager memberQueue]
+0x19457cdbc  __TEXT,__text  -[MCProfileConnection(Settings) effectiveParametersForBoolSetting:configurationUUID:]
+0x19457cef0  __TEXT,__text  ___76-[MCRestrictionManager effectiveParametersForBoolSetting:configurationUUID:]_block_invoke
+0x19457d060  __TEXT,__text  ___MCHasMigrated_block_invoke
+0x19457d354  __TEXT,__text  _migrationCheckQueue
+0x19457d38c  __TEXT,__text  -[MCProfileConnection(Private) needsCheckIn]
+0x19457d498  __TEXT,__text  +[MCProfileConnection sharedConnection]
+0x19457d51c  __TEXT,__text  -[MCProfileConnection init]
+0x19457eac4  __TEXT,__text  _MCLoggingInitialize.cold.1
+0x19457ead8  __TEXT,__text  ___MCLoggingInitialize_block_invoke
+0x19457ec70  __TEXT,__text  ___notificationQueue_block_invoke
+0x19457eca4  __TEXT,__text  _notificationQueue
+0x19457ecdc  __TEXT,__text  _notificationQueue.cold.1
+0x19457ecf0  __TEXT,__text  +[NSPropertyListSerialization(MCSafeSerialization) MCSafePropertyListWithData:options:format:error:]
+0x19457edb4  __TEXT,__text  +[NSData(ManagedConfiguration) MCDataFromFile:]
+0x19457eeec  __TEXT,__text  _MCSystemProfileStorageDirectory.cold.1
+0x19457ef38  __TEXT,__text  _MCSystemPublicInfoDirectory.cold.1
+0x19457ef84  __TEXT,__text  ___MCSystemProfileStorageDirectory_block_invoke
+0x19457efe8  __TEXT,__text  __fillInProductVersions
+0x19457f0a0  __TEXT,__text  ___migrationCheckQueue_block_invoke
+0x19457f1dc  __TEXT,__text  ___MCLegacyMetadataFilePath_block_invoke
+0x19457f240  __TEXT,__text  _MCLegacyPublicInfoDirectory.cold.1
+0x19457f254  __TEXT,__text  _MCLegacyMetadataFilePath.cold.1
+0x19457f268  __TEXT,__text  ___MCLegacyPublicInfoDirectory_block_invoke
+0x19457f2bc  __TEXT,__text  _MCSystemMetadataFilePath.cold.1
+0x19457f2d0  __TEXT,__text  ___MCSystemPublicInfoDirectory_block_invoke
+0x19457f334  __TEXT,__text  ___MCSystemMetadataFilePath_block_invoke
+0x19457f398  __TEXT,__text  ___MCUserProfileLibraryDirectory_block_invoke
+0x19457f3ec  __TEXT,__text  _MCUserProfileStorageDirectory.cold.1
+0x19457f400  __TEXT,__text  _MCUserProfileLibraryDirectory.cold.1
+0x19457f414  __TEXT,__text  _MCUserPublicInfoDirectory.cold.1
+0x19457f498  __TEXT,__text  _MCUserMetadataFilePath.cold.1
+0x19457f4e4  __TEXT,__text  ___MCUserMetadataFilePath_block_invoke
+0x19457f548  __TEXT,__text  ___MCUserPublicInfoDirectory_block_invoke
+0x19457f5ac  __TEXT,__text  ___MCUserProfileStorageDirectory_block_invoke
+0x19457f648  __TEXT,__text  +[MCRestrictionManager sharedManager].cold.1
+0x19457f65c  __TEXT,__text  _MCEffectiveUserSettingsFilePath.cold.1
+0x19457f670  __TEXT,__text  ___37+[MCRestrictionManager sharedManager]_block_invoke
+0x19457f6b4  __TEXT,__text  -[MCRestrictionManager init]
+0x19457f738  __TEXT,__text  ___MCEffectiveUserSettingsFilePath_block_invoke
+0x19457f79c  __TEXT,__text  ___MCConfigurationProfilesSystemGroupContainer_block_invoke
+0x19457fa18  __TEXT,__text  _MCSystemProfileLibraryDirectory.cold.1
+0x19457fa64  __TEXT,__text  ___MCSystemProfileLibraryDirectory_block_invoke
+0x19457fac8  __TEXT,__text  _MCConfigurationProfilesSystemGroupContainer.cold.1
+0x19457fadc  __TEXT,__text  -[MCRestrictionManager effectiveParametersForBoolSetting:configurationUUID:]
+0x19457fc3c  __TEXT,__text  -[MCProfileConnection registerObserver:]
+0x19457fcd4  __TEXT,__text  ___40-[MCProfileConnection registerObserver:]_block_invoke
+0x19457fce0  __TEXT,__text  -[MCProfileConnection(Settings) effectiveParametersForBoolSetting:]
+0x19457fce8  __TEXT,__text  ___45-[MCRestrictionManager effectiveUserSettings]_block_invoke
+0x19457fd60  __TEXT,__text  ___43-[MCRestrictionManager currentRestrictions]_block_invoke
+0x19457fdb8  __TEXT,__text  -[MCRestrictionManager memberQueueRestrictions]
+0x19457fe7c  __TEXT,__text  _MCRestrictionsFilePath.cold.1
+0x19457fe90  __TEXT,__text  ___MCRestrictionsFilePath_block_invoke
+0x19457fef4  __TEXT,__text  +[MCRestrictionManager(AppWhitelist) explicitlyRestrictedAppsBySetting]
+0x19457ff2c  __TEXT,__text  +[MCRestrictionManager(AppWhitelist) explicitlyRestrictedAppsBySetting].cold.1
+0x19457ff40  __TEXT,__text  ___71+[MCRestrictionManager(AppWhitelist) explicitlyRestrictedAppsBySetting]_block_invoke
+0x19458035c  __TEXT,__text  +[MCRestrictionManager parametersForBoolSetting:withUserSettingDictionary:]
+0x194580370  __TEXT,__text  -[MCProfileConnection(Misc) isVideoConferencingAllowed]
+0x19458039c  __TEXT,__text  ___46-[MCRestrictionManager invalidateRestrictions]_block_invoke
+0x1945803f8  __TEXT,__text  ___42-[MCRestrictionManager invalidateSettings]_block_invoke
+0x194580454  __TEXT,__text  -[MCRestrictionManager boolSettingForFeature:]
+0x1945804bc  __TEXT,__text  ___42-[MCRestrictionManager systemUserSettings]_block_invoke
+0x1945804fc  __TEXT,__text  -[MCRestrictionManager memberQueueSystemUserSettings]
+0x194580668  __TEXT,__text  -[MCRestrictionManager .cxx_destruct]
+0x194580730  __TEXT,__text  +[MCRestrictionManager boolSettingForFeature:withUserSettingDictionary:]
+0x19458073c  __TEXT,__text  -[MCProfileConnection(ManagedOpenIn) isBundleIDAccountBasedForDragDrop:]
+0x194580908  __TEXT,__text  _MCIsAppAccountBasedForDragDrop.cold.1
+0x19458091c  __TEXT,__text  ___MCAccountBasedAppsForDragDrop_block_invoke
+0x194580a74  __TEXT,__text  -[MCRestrictionManager systemUserSettings]
+0x194580b84  __TEXT,__text  -[MCProfileConnection _queueCreateAndResumePublicXPCConnection]
+0x194580d30  __TEXT,__text  ___45-[MCProfileConnection checkInWithCompletion:]_block_invoke
+0x194580ddc  __TEXT,__text  -[MCProfileConnection(Misc) isHealthDataSubmissionAllowed]
+0x194580e08  __TEXT,__text  -[MCProfileConnection addObserver:]
+0x194580e0c  __TEXT,__text  -[MCProfileConnection(CloudConfiguration) managingOrganizationInformation]
+0x194580f38  __TEXT,__text  -[MCProfileConnection checkInWithCompletion:]
+0x194580fb4  __TEXT,__text  ___42-[MCProfileConnection publicXPCConnection]_block_invoke
+0x194581034  __TEXT,__text  _MCXPCProtocolInterface.cold.1
+0x194581048  __TEXT,__text  ___MCXPCProtocolInterface_block_invoke
+0x194581ba4  __TEXT,__text  _MCProfileConnectionXPCProtocolInterface.cold.1
+0x194581bb8  __TEXT,__text  ___MCProfileConnectionXPCProtocolInterface_block_invoke
+0x194581f88  __TEXT,__text  -[MCProfileConnection _queueCreateAndResumeXPCConnection]
+0x194582340  __TEXT,__text  -[MCProfileConnection(CloudConfiguration) isSupervised]
+0x194582384  __TEXT,__text  -[MCProfileConnection(Passcode) isPasscodeSet]
+0x1945823c8  __TEXT,__text  +[MCPasscodeManager sharedManager].cold.1
+0x1945823dc  __TEXT,__text  +[MCPasscodeManager sharedManager]
+0x194582414  __TEXT,__text  ___34+[MCPasscodeManager sharedManager]_block_invoke
+0x194582458  __TEXT,__text  -[MCProfileConnection(AppWhitelist) effectiveBlockedAppBundleIDs]
+0x19458245c  __TEXT,__text  -[MCProfileConnection(AppWhitelist) effectiveBlockedAppBundleIDsExcludingRemovedSystemApps]
+0x1945824cc  __TEXT,__text  -[MCProfileConnection(AppWhitelist) effectiveWhitelistedAppBundleIDs]
+0x194582538  __TEXT,__text  -[MCProfileConnection(Settings) effectiveUserSettings]
+0x194582584  __TEXT,__text  -[ACAccount(ManagedConfiguration) MCIsManaged]
+0x1945825f4  __TEXT,__text  -[MCProfileConnection(Misc) isActivityContinuationAllowed]
+0x194582620  __TEXT,__text  -[MCProfileConnection(Misc) isDiagnosticSubmissionAllowed]
+0x19458264c  __TEXT,__text  -[MCRestrictionManager userSettings]
+0x194582650  __TEXT,__text  -[MCProfileConnection(Settings) effectiveParametersForIntersectionSetting:]
+0x1945826bc  __TEXT,__text  -[MCProfileConnection(Settings) effectiveValuesForIntersectionSetting:]
+0x19458273c  __TEXT,__text  -[MCProfileConnection(Settings) effectiveValueForSetting:]
+0x1945827bc  __TEXT,__text  -[MCProfileConnection(Settings) effectiveParametersForValueSetting:]
+0x194582828  __TEXT,__text  ___MCPublicEffectiveUserSettingsFilePath_block_invoke
+0x1945828c4  __TEXT,__text  _MCPublicEffectiveUserSettingsFilePath.cold.1
+0x1945828d8  __TEXT,__text  -[MCProfileConnection(Misc) crossSiteTrackingPreventionRelaxedApps]
+0x1945828e8  __TEXT,__text  +[MCRestrictionManager parametersForSetting:ofType:withUserSettingDictionary:]
+0x194582980  __TEXT,__text  -[MCRestrictionManager effectiveUserSettings]
+0x194582a90  __TEXT,__text  -[MCProfileConnection(Misc) isCalculatorModeScientificAllowed]
+0x194582abc  __TEXT,__text  -[MCProfileConnection(Misc) isCalculatorModeMathPaperAllowed]
+0x194582ae8  __TEXT,__text  -[MCProfileConnection(Misc) isCalculatorInputModeUnitConversionAllowed]
+0x194582b14  __TEXT,__text  -[MCProfileConnection(Misc) isSquareRootOnBasicCalculatorForced]
+0x194582b40  __TEXT,__text  +[MCRestrictionManager boolSettingForFeature:outAsk:withUserSettingDictionary:]
+0x194582c60  __TEXT,__text  -[MCProfileConnection(Misc) isWritingToolsAllowed]
+0x194582c8c  __TEXT,__text  -[MCProfileConnection(Misc) isNotesTranscriptionAllowed]
+0x194582cb8  __TEXT,__text  -[MCProfileConnection(Misc) isMathPaperSolvingAllowed]
+0x194582ce4  __TEXT,__text  -[MCProfileConnection(Misc) isKeyboardMathSolvingAllowed]
+0x194582d10  __TEXT,__text  -[MCRestrictionManager invalidateSettings]
+0x194582d98  __TEXT,__text  +[MCRestrictionManager appWhitelistStateWithSettingsDictionary:restrictionsDictionary:]
+0x194582e54  __TEXT,__text  -[MCProfileConnection(Settings) isBoolSettingLockedDownByRestrictions:]
+0x194582eb8  __TEXT,__text  -[MCRestrictionManager invalidateRestrictions]
+0x194582f40  __TEXT,__text  -[MCRestrictionManager(AppWhitelist) restrictedAppBundleIDsExcludingRemovedSystemApps:]
+0x194583178  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.18
+0x194583344  __TEXT,__text  -[MCRestrictionManager applyConfiguration:toDomain:inNamespace:fromSender:]
+0x19458370c  __TEXT,__text  -[NSDictionary(ManagedConfiguration) mc_atomicWriteToPath:error:]
+0x194583768  __TEXT,__text  -[MCProfileConnection(Restrictions) boolRestrictionForFeature:]
+0x1945837cc  __TEXT,__text  -[MCProfileConnection(AppWhitelist) restrictionEnforcedHomeScreenLayout]
+0x1945838c4  __TEXT,__text  -[MCProfileConnection(ManagedOpenIn) mayOpenFromUnmanagedToManaged]
+0x194583988  __TEXT,__text  -[MCRestrictionManager isBoolSettingLockedDownByRestrictions:]
+0x194583a80  __TEXT,__text  -[MCProfileConnection(Misc) isAppClipsAllowed]
+0x194583aac  __TEXT,__text  -[MCProfileConnection(AppWhitelist) appWhitelistState]
+0x194583b50  __TEXT,__text  -[MCRestrictionManager effectiveRestrictedBoolForSetting:configurationUUID:]
+0x194583bbc  __TEXT,__text  -[MCProfileConnection(Misc) isDictationAllowed]
+0x194583be8  __TEXT,__text  -[MCRestrictionManager defaultRestrictions]
+0x194583c20  __TEXT,__text  -[MCRestrictionManager defaultRestrictions].cold.1
+0x194583c34  __TEXT,__text  +[MCRestrictionManager defaultRestrictionFilePath]
+0x194583c6c  __TEXT,__text  +[MCRestrictionManager defaultRestrictionFilePath].cold.1
+0x194583c80  __TEXT,__text  ___50+[MCRestrictionManager defaultRestrictionFilePath]_block_invoke
+0x194583cdc  __TEXT,__text  ___43-[MCRestrictionManager defaultRestrictions]_block_invoke
+0x194583e04  __TEXT,__text  -[NSDictionary(MCUtilities) MCMutableDeepCopy]
+0x194583e0c  __TEXT,__text  -[NSDictionary(MCUtilities) MCMutableDeepCopyWithZone:]
+0x194584044  __TEXT,__text  -[MCProfileConnection(ManagedOpenIn) mayOpenFromManagedToUnmanaged]
+0x194584108  __TEXT,__text  ___74-[MCProfileConnection(ManagedOpenIn) canSendMail:sourceAccountManagement:]_block_invoke.28
+0x194584118  __TEXT,__text  -[MCRestrictionManager effectiveRestrictedBoolForSetting:]
+0x194584120  __TEXT,__text  ___72-[MCProfileConnection(ManagedOpenIn) hasAnyMailAccountIgnoringFiltering]_block_invoke.31
+0x194584130  __TEXT,__text  -[MCProfileConnection(Misc) isControlCenterAllowed]
+0x19458415c  __TEXT,__text  -[MCProfileConnection(Misc) isSpotlightAllowed]
+0x194584188  __TEXT,__text  -[MCProfileConnection(Misc) isLiveVoicemailAllowed]
+0x1945841b4  __TEXT,__text  -[MCProfileConnection(Misc) isCloudSyncAllowed:]
+0x19458426c  __TEXT,__text  -[MCProfileConnection(Misc) isPasswordProximityAutoFillRequestingAllowed]
+0x194584298  __TEXT,__text  -[MCProfileConnection(Misc) isMontaraAllowed]
+0x19458429c  __TEXT,__text  -[MCProfileConnection(Misc) isExternalIntelligenceAllowed]
+0x1945842c8  __TEXT,__text  -[MCProfileConnection(ManagedOpenIn) isOpenInRestrictionInEffect]
+0x194584380  __TEXT,__text  -[MCProfileConnection(Misc) managedAppIDs]
+0x1945843cc  __TEXT,__text  -[MCProfileConnection(Profiles) trustedCodeSigningIdentities]
+0x194584444  __TEXT,__text  -[MCRestrictionManager effectiveUnionValuesForSetting:]
+0x194584490  __TEXT,__text  -[MCRestrictionManager effectiveParametersForUnionSetting:]
+0x194584504  __TEXT,__text  +[MCRestrictionManager parametersForUnionSetting:withUserSettingDictionary:]
+0x194584518  __TEXT,__text  -[MCProfileConnection(Misc) isCallRecordingAllowed]
+0x194584544  __TEXT,__text  -[MCRestrictionManager(AppWhitelist) effectiveWhitelistedAppBundleIDs]
+0x1945845a8  __TEXT,__text  -[MCRestrictionManager effectiveIntersectedValuesForSetting:]
+0x1945845f4  __TEXT,__text  -[MCRestrictionManager effectiveParametersForIntersectedSetting:]
+0x194584668  __TEXT,__text  +[MCRestrictionManager parametersForIntersectedSetting:withUserSettingDictionary:]
+0x19458467c  __TEXT,__text  -[MCProfileConnection(Misc) isActivationLockAllowed]
+0x1945846e8  __TEXT,__text  -[MCProfileConnection(Passcode) isPasscodeModificationAllowed]
+0x194584728  __TEXT,__text  +[MCRestrictionManager mayChangePasscode]
+0x194584778  __TEXT,__text  -[MCExtensibleSingleSignOnPayload _validateURLString:outError:]
+0x194584934  __TEXT,__text  -[MCExtensibleSingleSignOnPayload initWithDictionary:profile:outError:]
+0x194585434  __TEXT,__text  -[NSURL(MCExtensibleSingleSignOnPayloadExtensions) normalizedURL]
+0x194585534  __TEXT,__text  -[MCRestrictionManager setMemberQueueSystemNamespacedUserSettings:]
+0x194585540  __TEXT,__text  -[MCRestrictionManager setMemberQueueUserNamespacedUserSettings:]
+0x19458554c  __TEXT,__text  _MCSystemUserSettingsFilePath.cold.1
+0x194585560  __TEXT,__text  -[MCRestrictionManager setMemberQueueRestrictions:]
+0x19458556c  __TEXT,__text  -[MCRestrictionManager setMemberQueueSystemClientRestrictions:]
+0x194585578  __TEXT,__text  -[MCRestrictionManager setMemberQueueUserClientRestrictions:]
+0x194585584  __TEXT,__text  -[MCRestrictionManager setMemberQueueUserProfileRestrictions:]
+0x194585590  __TEXT,__text  -[MCRestrictionManager setMemberQueueEffectiveUserSettings:]
+0x19458559c  __TEXT,__text  -[MCRestrictionManager setMemberQueueSystemProfileRestrictions:]
+0x1945855a8  __TEXT,__text  -[MCRestrictionManager setMemberQueueSystemUserSettings:]
+0x1945855b4  __TEXT,__text  -[MCRestrictionManager setMemberQueueUserUserSettings:]
+0x1945855c0  __TEXT,__text  -[NSMutableDictionary(MCPayload) MCValidateAndRemoveObjectOfClass:withKey:isRequired:outError:]
+0x1945856a8  __TEXT,__text  -[MCProfile installOptions]
+0x1945856b0  __TEXT,__text  +[MCProfile(Private) removeOptionalObjectInDictionary:key:type:errorDomain:invalidDataCode:invalidDataErrorString:outError:]
+0x1945857dc  __TEXT,__text  -[MCConfigurationProfile _sortPayloads]
+0x19458581c  __TEXT,__text  -[MCConfigurationProfile _sortPayloads:]
+0x194585a98  __TEXT,__text  -[MCConfigurationProfile _addObjectsOfClass:fromArray:toArray:]
+0x194585b9c  __TEXT,__text  -[MCProfile isStub]
+0x194585ba4  __TEXT,__text  +[MCDependencyReader sharedReader]
+0x194585bdc  __TEXT,__text  -[MCProfile identifier]
+0x194585be4  __TEXT,__text  -[MCDependencyReader dependentsOfParent:inDomain:]
+0x194585d44  __TEXT,__text  -[MCDependencyReader memberQueue]
+0x194585d4c  __TEXT,__text  ___50-[MCDependencyReader dependentsOfParent:inDomain:]_block_invoke
+0x194585d90  __TEXT,__text  -[MCDependencyReader memberQueueDependentsOfParent:inDomain:]
+0x194585e68  __TEXT,__text  -[MCDependencyReader memberQueueDependentsOfParent:inSystemDomain:]
+0x194585f00  __TEXT,__text  -[MCDependencyReader memberQueueSystemDomainsDict]
+0x194585f38  __TEXT,__text  -[MCDependencyReader memberQueueDependentsOfParent:inUserDomain:]
+0x194585fd0  __TEXT,__text  -[MCDependencyReader memberQueueUserDomainsDict]
+0x194586008  __TEXT,__text  -[MCConfigurationProfile .cxx_destruct]
+0x19458608c  __TEXT,__text  -[MCExtensibleSingleSignOnPayload .cxx_destruct]
+0x194586160  __TEXT,__text  -[MCPayload .cxx_destruct]
+0x1945861dc  __TEXT,__text  -[MCProfile .cxx_destruct]
+0x1945862c8  __TEXT,__text  -[MCProfileConnection(Profiles) installedSystemProfileWithIdentifier:]
+0x19458631c  __TEXT,__text  +[MCManifest installedSystemProfileWithIdentifier:]
+0x194586378  __TEXT,__text  -[NSString(MCUtilities) MCHashedFilenameWithExtension:]
+0x194586388  __TEXT,__text  -[NSString(MCUtilities) MCHashedFilenameWithPrefix:extension:]
+0x19458644c  __TEXT,__text  -[MCConfigurationProfile initWithDictionary:options:signerCerts:allowEmptyPayload:outError:]
+0x1945878a0  __TEXT,__text  +[MCPayload(Private) payloadsFromArray:isStub:profile:outError:]
+0x194587ae0  __TEXT,__text  +[MCManifest installedSystemProfileDataWithIdentifier:]
+0x194587ae8  __TEXT,__text  -[NSString(MCUtilities) MCHashedIdentifier]
+0x194587b2c  __TEXT,__text  -[NSString(MCUtilities) MCSHA256DigestWithSalt:]
+0x194587c40  __TEXT,__text  -[NSData(ManagedConfiguration) MCHexString]
+0x194587d3c  __TEXT,__text  +[MCProfile profileWithData:outError:]
+0x194587d50  __TEXT,__text  +[MCProfile(Private) profileWithData:options:fileName:allowEmptyPayload:outError:]
+0x194588070  __TEXT,__text  +[MCProfile(Private) profileDictionaryFromProfileData:outSignerCerts:outError:]
+0x194588584  __TEXT,__text  +[MCProfile(Private) profileWithDictionary:options:signerCerts:fileName:allowEmptyPayload:outError:]
+0x194588724  __TEXT,__text  -[MCProfile(Private) initWithDictionary:signerCerts:allowEmptyPayload:outError:]
+0x1945897c8  __TEXT,__text  +[MCProfile(Private) removeRequiredObjectInDictionary:key:type:errorDomain:missingDataCode:missingDataErrorString:invalidDataCode:invalidDataErrorString:outError:]
+0x194589940  __TEXT,__text  +[MCProfile(Private) removeRequiredNonZeroLengthStringInDictionary:key:errorDomain:missingDataCode:missingDataErrorString:invalidDataCode:invalidDataErrorString:outError:]
+0x194589ad8  __TEXT,__text  +[MCProfile(Private) removeOptionalNonZeroLengthStringInDictionary:key:errorDomain:invalidDataCode:invalidDataErrorString:outError:]
+0x194589c18  __TEXT,__text  +[MCPayload(Private) payloadFromDictionary:isStub:profile:outError:]
+0x19458a1a8  __TEXT,__text  +[MCFeatureOverrides shouldDisablePlatformPayloadFilter]
+0x19458a1b4  __TEXT,__text  +[MCFeatureOverrides boolForDefaultsKey:]
+0x19458a1bc  __TEXT,__text  +[MCFeatureOverrides boolForDefaultsKey:isPresent:]
+0x19458a204  __TEXT,__text  +[MCFeatureOverrides _numberForDefaultsKey:isPresent:]
+0x19458a2a4  __TEXT,__text  +[MCFeatureOverrides isAppleInternal]
+0x19458a2b0  __TEXT,__text  +[MCPayload(Private) _platformSpecificConfigurationPayloadClasses]
+0x19458a2e8  __TEXT,__text  +[MCNetworkUsageRulesPayload typeStrings]
+0x19458a358  __TEXT,__text  +[MCDNSSettingsPayload typeStrings]
+0x19458a3c8  __TEXT,__text  +[MCAPNPayload typeStrings]
+0x19458a3dc  __TEXT,__text  +[MCRestrictionsPayload typeStrings]
+0x19458a3f0  __TEXT,__text  +[MCExtensibleSingleSignOnPayload typeStrings]
+0x19458a460  __TEXT,__text  +[MCCalDAVAccountPayload typeStrings]
+0x19458a474  __TEXT,__text  +[MCRelayPayload typeStrings]
+0x19458a4e4  __TEXT,__text  +[MCTVRemotePayload typeStrings]
+0x19458a554  __TEXT,__text  +[MCLoggingPayload typeStrings]
+0x19458a5c4  __TEXT,__text  +[MCCellularPrivateNetworkPayload typeStrings]
+0x19458a5d8  __TEXT,__text  +[MCPlainCertificatePayload typeStrings]
+0x19458a664  __TEXT,__text  -[MCPlainCertificatePayload initWithDictionary:profile:outError:]
+0x19458a9f4  __TEXT,__text  -[MCCertificatePayload initWithDictionary:profile:outError:]
+0x19458aea0  __TEXT,__text  -[MCPayload(Private) initWithDictionary:profile:outError:]
+0x19458b42c  __TEXT,__text  +[MCEmailAccountPayload typeStrings]
+0x19458b440  __TEXT,__text  +[MCSingleSignOnPayload typeStrings]
+0x19458b4b0  __TEXT,__text  +[MCHomeScreenLayoutPayload typeStrings]
+0x19458b520  __TEXT,__text  +[MCCertificateTransparencyPayload typeStrings]
+0x19458b590  __TEXT,__text  +[MCWebContentFilterPayload typeStrings]
+0x19458b600  __TEXT,__text  +[MCPasswordPolicyPayload typeStrings]
+0x19458b614  __TEXT,__text  +[MCEASAccountPayload typeStrings]
+0x19458b628  __TEXT,__text  +[MCAirPrintPayload typeStrings]
+0x19458b698  __TEXT,__text  +[MCSharedDeviceConfigurationPayload typeStrings]
+0x19458b708  __TEXT,__text  +[MCGlobalHTTPProxyPayload typeStrings]
+0x19458b71c  __TEXT,__text  +[MCWAPIIdentityCertificatePayload typeStrings]
+0x19458b730  __TEXT,__text  +[MCNotificationSettingsPayload typeStrings]
+0x19458b7a0  __TEXT,__text  +[MCDefaultsPayload typeStrings]
+0x19458b7b4  __TEXT,__text  +[MCSelfSignedCertificatePayload typeStrings]
+0x19458b7c8  __TEXT,__text  +[MCAirPlayPayload typeStrings]
+0x19458b838  __TEXT,__text  +[MCSCEPPayload typeStrings]
+0x19458b84c  __TEXT,__text  -[MCSCEPPayload initWithDictionary:profile:outError:]
+0x19458c298  __TEXT,__text  +[MCFeatureFlagsPayload typeStrings]
+0x19458c308  __TEXT,__text  +[MCCardDAVAccountPayload typeStrings]
+0x19458c31c  __TEXT,__text  +[MCVPNPayload typeStrings]
+0x19458c330  __TEXT,__text  +[MCMDMPayload typeStrings]
+0x19458c344  __TEXT,__text  +[MCDNSProxyPayload typeStrings]
+0x19458c3b4  __TEXT,__text  +[MCDeclarationsPayload typeStrings]
+0x19458c3c8  __TEXT,__text  +[MCRemovalPasswordPayload typeStrings]
+0x19458c3dc  __TEXT,__text  +[MCAppleServicesPayload typeStrings]
+0x19458c44c  __TEXT,__text  +[MCGlobalEthernetPayload typeStrings]
+0x19458c460  __TEXT,__text  +[MCSubCalAccountPayload typeStrings]
+0x19458c474  __TEXT,__text  +[MCLDAPAccountPayload typeStrings]
+0x19458c488  __TEXT,__text  +[MCChaperonePayload typeStrings]
+0x19458c4f8  __TEXT,__text  +[MCACMEPayload typeStrings]
+0x19458c50c  __TEXT,__text  +[MCWiFiPayload typeStrings]
+0x19458c520  __TEXT,__text  -[MCWiFiPayload initWithDictionary:profile:outError:]
+0x19458d948  __TEXT,__text  -[NSMutableDictionary(MCPayload) MCValidateAndRemoveNonZeroLengthStringWithKey:isRequired:outError:]
+0x19458da44  __TEXT,__text  -[NSMutableDictionary(MCPayload) MCValidateAndRemoveArrayOfClass:withKey:isRequired:outError:]
+0x19458da50  __TEXT,__text  -[NSMutableDictionary(MCPayload) MCValidateAndRemoveArrayOfClass:withKey:isRequired:allowZeroLengthString:outError:]
+0x19458dc78  __TEXT,__text  -[MCWiFiPayload setQosMarkingConfig:]
+0x19458dc8c  __TEXT,__text  -[MCPlainCertificatePayload .cxx_destruct]
+0x19458dce8  __TEXT,__text  -[MCCertificatePayload .cxx_destruct]
+0x19458dd94  __TEXT,__text  -[MCSCEPPayload .cxx_destruct]
+0x19458de40  __TEXT,__text  -[MCWiFiPayload .cxx_destruct]
+0x19458e090  __TEXT,__text  -[MCMDMPayload initWithDictionary:profile:outError:]
+0x19458f044  __TEXT,__text  -[MCProfileServiceProfile initWithDictionary:signerCerts:allowEmptyPayload:outError:]
+0x19458f76c  __TEXT,__text  +[MCManifest installedProfileWithIdentifier:]
+0x19458f804  __TEXT,__text  -[MCCalDAVAccountPayload initWithDictionary:profile:outError:]
+0x19458fdac  __TEXT,__text  -[MCDefaultsPayload .cxx_destruct]
+0x19458fdc0  __TEXT,__text  -[MCDefaultsPayload initWithDictionary:profile:outError:]
+0x194590438  __TEXT,__text  -[MCPayload profile]
+0x194590458  __TEXT,__text  -[MCProfileConnection(Misc) isMailSummaryAllowed]
+0x194590484  __TEXT,__text  -[MCProfileConnection(Misc) isMailSmartRepliesAllowed]
+0x1945904b0  __TEXT,__text  -[MCProfileConnection(Misc) isMailPrivacyProtectionAllowed]
+0x1945904dc  __TEXT,__text  -[MCProfileConnection(Misc) managedEmailDomains]
+0x1945904ec  __TEXT,__text  -[MCProfileConnection(ManagedOpenIn) shouldApplyFilterForBundleID:sourceAccountManagement:outAllowManagedAccounts:outAllowUnmanagedAccounts:]
+0x1945906ec  __TEXT,__text  -[MCProfileConnection(ManagedOpenIn) filteredMailSheetAccountsForBundleID:sourceAccountManagement:]
+0x1945909d4  __TEXT,__text  _MCMailAccountClass.cold.1
+0x1945909e8  __TEXT,__text  ___MCMailAccountClass_block_invoke
+0x194590af8  __TEXT,__text  _URLForCanonicalFilePath
+0x194590b78  __TEXT,__text  +[MCLazyInitializationUtilities loadNSBundleAtURL:completionBlock:]
+0x194590d1c  __TEXT,__text  ___MCMailAccountClass_block_invoke_2
+0x194590d50  __TEXT,__text  ___58-[MCProfileConnection _destroyXPCConnectionAndInvalidate:]_block_invoke
+0x194590d98  __TEXT,__text  ___57-[MCProfileConnection _queueCreateAndResumeXPCConnection]_block_invoke
+0x194590e44  __TEXT,__text  ___MCUserManifestPath_block_invoke
+0x194590ee0  __TEXT,__text  -[MCManifest init]
+0x194590fa0  __TEXT,__text  ___MCSystemManifestPath_block_invoke
+0x19459103c  __TEXT,__text  _MCUserManifestPath.cold.1
+0x194591050  __TEXT,__text  _MCSystemManifestPath.cold.1
+0x194591064  __TEXT,__text  ___28+[MCManifest sharedManifest]_block_invoke
+0x194591094  __TEXT,__text  -[MCProfileConnection(CloudConfiguration) userMode]
+0x1945910dc  __TEXT,__text  -[MCProfileConnection(CloudConfiguration) isEphemeralMultiUser]
+0x1945910e8  __TEXT,__text  +[MCManifest installedUserProfileDataWithIdentifier:]
+0x1945914b4  __TEXT,__text  +[MCHomeScreenLayoutPayload localizedSingularForm]
+0x1945914c0  __TEXT,__text  +[MCHomeScreenLayoutPayload localizedPluralForm]
+0x1945914cc  __TEXT,__text  -[MCHomeScreenLayoutPayload initWithDictionary:profile:outError:]
+0x194591a20  __TEXT,__text  -[MCHomeScreenLayoutPayload parseIconsArray:allowFolders:outError:]
+0x1945921a0  __TEXT,__text  -[MCHomeScreenLayoutPayload stubDictionary]
+0x19459221c  __TEXT,__text  -[MCHomeScreenLayoutPayload payloadDescriptionKeyValueSections]
+0x194592260  __TEXT,__text  -[MCHomeScreenLayoutPayload layout]
+0x194592274  __TEXT,__text  -[MCHomeScreenLayoutPayload setLayout:]
+0x194592288  __TEXT,__text  -[MCHomeScreenLayoutPayload .cxx_destruct]
+0x19459229c  __TEXT,__text  -[MCProfile(UserEnrollment) isUserEnrollmentProfile]
+0x19459230c  __TEXT,__text  -[NSDictionary(MCUtilities) MCWriteToBinaryFile:]
+0x194592314  __TEXT,__text  +[NSDictionary(MCUtilities) MCDictionaryFromFile:]
+0x194592408  __TEXT,__text  -[NSDictionary(MCUtilities) MCDeepCopyWithZone:]
+0x19459240c  __TEXT,__text  -[NSDictionary(MCUtilities) MCDeepCopy]
+0x194592414  __TEXT,__text  -[NSDictionary(MCUtilities) MCRetainRequiredObjectKey:type:errorDomain:missingDataCode:missingDataErrorString:invalidDataCode:invalidDataErrorString:outError:]
+0x194592574  __TEXT,__text  -[NSDictionary(MCUtilities) MCRetainOptionalObjectKey:type:errorDomain:invalidDataCode:invalidDataErrorString:outError:]
+0x194592680  __TEXT,__text  -[NSDictionary(MCUtilities) MCRetainRequiredNonZeroLengthStringKey:errorDomain:missingDataCode:missingDataErrorString:invalidDataCode:invalidDataErrorString:outError:]
+0x1945927f8  __TEXT,__text  -[NSDictionary(MCUtilities) MCRetainOptionalNonZeroLengthStringKey:errorDomain:invalidDataCode:invalidDataErrorString:outError:]
+0x194592918  __TEXT,__text  -[NSDictionary(MCUtilities) MCShortenedPlistDescription]
+0x194592964  __TEXT,__text  +[NSDictionary(MCUtilities) MCShortenedObject:]
+0x194592a30  __TEXT,__text  +[NSDictionary(MCUtilities) MCShortenedData:]
+0x194592b84  __TEXT,__text  +[NSDictionary(MCUtilities) MCShortenedArray:]
+0x194592cc8  __TEXT,__text  +[NSDictionary(MCUtilities) MCShortenedDictionary:]
+0x194592d8c  __TEXT,__text  ___51+[NSDictionary(MCUtilities) MCShortenedDictionary:]_block_invoke
+0x194592e1c  __TEXT,__text  -[NSDictionary(MCUtilities) MCValidateRestrictions]
+0x1945931bc  __TEXT,__text  -[NSDictionary(MCUtilities) MCValidateBoolRestriction:inRestrictions:defaultRestrictions:]
+0x1945932e8  __TEXT,__text  -[NSDictionary(MCUtilities) MCValidateValueRestriction:inRestrictions:defaultRestrictions:]
+0x194593414  __TEXT,__text  -[NSDictionary(MCUtilities) MCValidateIntersectionRestriction:inRestrictions:defaultRestrictions:]
+0x1945934ec  __TEXT,__text  -[NSDictionary(MCUtilities) MCValidateUnionRestriction:inRestrictions:defaultRestrictions:]
+0x1945935c4  __TEXT,__text  -[NSDictionary(MCUtilities) MCDictionaryAdditiveDeltaToCreateDictionary:]
+0x1945937a4  __TEXT,__text  -[NSDictionary(MCUtilities) MCDictionarySubtractiveDeltaToCreateDictionary:]
+0x194593980  __TEXT,__text  -[NSDictionary(MCUtilities) MCRemovedKeysFromDictionary:]
+0x194593b8c  __TEXT,__text  -[NSDictionary(MCUtilities) MCInsertedKeysFromDictionary:withNewLeafValue:]
+0x194593de0  __TEXT,__text  -[NSDictionary(MCUtilities) MCDictionaryWithLeafValuesSetToValue:]
+0x194593f74  __TEXT,__text  -[NSMutableDictionary(MCUtilities) MCDeepCopyEntriesFromDictionary:]
+0x194594138  __TEXT,__text  -[NSMutableDictionary(MCUtilities) MCDeepCopyMissingEntriesFromDictionary:]
+0x194594300  __TEXT,__text  -[NSMutableDictionary(MCUtilities) MCSetObjectIfNotNil:forKey:]
+0x19459430c  __TEXT,__text  -[NSMutableDictionary(MCUtilities) MCSetBoolRestriction:value:]
+0x194594528  __TEXT,__text  -[NSMutableDictionary(MCUtilities) MCDeleteBoolRestriction:]
+0x1945945c4  __TEXT,__text  -[NSMutableDictionary(MCUtilities) MCSetValueRestriction:value:]
+0x194594830  __TEXT,__text  -[NSMutableDictionary(MCUtilities) MCSetIntersectionRestriction:values:]
+0x194594a70  __TEXT,__text  -[NSMutableDictionary(MCUtilities) MCSetUnionRestriction:values:]
+0x194594cb0  __TEXT,__text  -[NSMutableDictionary(MCUtilities) MCSetIntersectionSetting:values:]
+0x194594ef0  __TEXT,__text  -[NSMutableDictionary(MCUtilities) MCSetUnionSetting:values:]
+0x194595130  __TEXT,__text  -[NSMutableDictionary(MCUtilities) MCFilterRestrictionPayloadKeys:]
+0x194595138  __TEXT,__text  -[NSMutableDictionary(MCUtilities) MCFilterOutRestrictionPayloadKeys:]
+0x194595140  __TEXT,__text  -[NSMutableDictionary(MCUtilities) _MCFilterRestrictionPayloadKeys:filterOut:]
+0x194595250  __TEXT,__text  ___78-[NSMutableDictionary(MCUtilities) _MCFilterRestrictionPayloadKeys:filterOut:]_block_invoke
+0x19459534c  __TEXT,__text  -[NSMutableDictionary(MCUtilities) MCFixUpRestrictionsDictionaryForMDMReporting]
+0x194595884  __TEXT,__text  -[NSMutableDictionary(MCUtilities) MCSanitizeRestrictions]
+0x194595da4  __TEXT,__text  -[MCDictionaryWriter initWithDictionary:path:]
+0x194595e50  __TEXT,__text  -[MCDictionaryWriter reset]
+0x194595ea0  __TEXT,__text  -[MCDictionaryWriter repairTool]
+0x194595ee8  __TEXT,__text  -[MCDictionaryWriter createRepairTool]
+0x194595f0c  __TEXT,__text  -[MCDictionaryWriter serializedData]
+0x194595fa0  __TEXT,__text  -[MCDictionaryWriter write]
+0x194595fe4  __TEXT,__text  -[MCDictionaryWriter didWriteSucceed]
+0x194596064  __TEXT,__text  -[MCDictionaryWriter logStartOfWrite]
+0x19459612c  __TEXT,__text  -[MCDictionaryWriter logResultOfWrite]
+0x194596498  __TEXT,__text  -[MCDictionaryWriter serializeDataAndWriteToStorage]
+0x194596588  __TEXT,__text  -[MCDictionaryWriter writeData:error:]
+0x194596620  __TEXT,__text  -[MCDictionaryWriter repairAccessIfNecessaryWithError:]
+0x194596704  __TEXT,__text  -[MCDictionaryWriter dictionary]
+0x19459670c  __TEXT,__text  -[MCDictionaryWriter path]
+0x194596714  __TEXT,__text  -[MCDictionaryWriter setRepairTool:]
+0x194596720  __TEXT,__text  -[MCDictionaryWriter serializeError]
+0x194596728  __TEXT,__text  -[MCDictionaryWriter setSerializeError:]
+0x194596730  __TEXT,__text  -[MCDictionaryWriter writeError]
+0x194596738  __TEXT,__text  -[MCDictionaryWriter setWriteError:]
+0x194596740  __TEXT,__text  -[MCDictionaryWriter beforeWriteRepairError]
+0x194596748  __TEXT,__text  -[MCDictionaryWriter setBeforeWriteRepairError:]
+0x194596750  __TEXT,__text  -[MCDictionaryWriter afterWriteRepairError]
+0x194596758  __TEXT,__text  -[MCDictionaryWriter setAfterWriteRepairError:]
+0x194596760  __TEXT,__text  -[MCDictionaryWriter .cxx_destruct]
+0x1945967d4  __TEXT,__text  +[MCKeychain _newQueryWithService:account:label:description:group:useSystemKeychain:outError:]
+0x1945969e8  __TEXT,__text  +[MCKeychain stringFromService:account:label:description:useSystemKeychain:outError:]
+0x194596a18  __TEXT,__text  +[MCKeychain stringFromService:account:label:description:group:useSystemKeychain:outError:]
+0x194596a98  __TEXT,__text  +[MCKeychain setString:forService:account:label:description:useSystemKeychain:outError:]
+0x194596ac8  __TEXT,__text  +[MCKeychain setString:forService:account:label:description:group:useSystemKeychain:outError:]
+0x194596b10  __TEXT,__text  +[MCKeychain setString:forService:account:label:description:access:group:useSystemKeychain:sysBound:outError:]
+0x194596c10  __TEXT,__text  +[MCKeychain setData:forService:account:label:description:useSystemKeychain:outError:]
+0x194596c4c  __TEXT,__text  +[MCKeychain setData:forService:account:label:description:access:useSystemKeychain:outError:]
+0x194596c84  __TEXT,__text  +[MCKeychain setData:forService:account:label:description:access:group:useSystemKeychain:sysBound:outError:]
+0x194596dbc  __TEXT,__text  +[MCKeychain setData:forService:account:label:description:access:group:useSystemKeychain:sysBound:enforcePersonalPersona:outError:]
+0x1945971e8  __TEXT,__text  ___131+[MCKeychain setData:forService:account:label:description:access:group:useSystemKeychain:sysBound:enforcePersonalPersona:outError:]_block_invoke
+0x194597318  __TEXT,__text  +[MCKeychain dataFromService:account:label:description:useSystemKeychain:outError:]
+0x194597348  __TEXT,__text  +[MCKeychain dataFromService:account:label:description:group:useSystemKeychain:outError:]
+0x194597444  __TEXT,__text  +[MCKeychain dataFromService:account:label:description:group:useSystemKeychain:enforcePersonalPersona:outError:]
+0x1945977f8  __TEXT,__text  ___112+[MCKeychain dataFromService:account:label:description:group:useSystemKeychain:enforcePersonalPersona:outError:]_block_invoke
+0x194597838  __TEXT,__text  +[MCKeychain removeItemForService:account:label:description:useSystemKeychain:group:]
+0x194597924  __TEXT,__text  +[MCKeychain removeItemForService:account:label:description:useSystemKeychain:enforcePersonalPersona:group:]
+0x194597a58  __TEXT,__text  ___108+[MCKeychain removeItemForService:account:label:description:useSystemKeychain:enforcePersonalPersona:group:]_block_invoke
+0x194597a60  __TEXT,__text  +[MCKeychain copyItemWithPersistentID:useSystemKeychain:]
+0x194597af0  __TEXT,__text  +[MCKeychain copyItemWithPersistentID:useSystemKeychain:enforcePersonalPersona:]
+0x194597e24  __TEXT,__text  ___80+[MCKeychain copyItemWithPersistentID:useSystemKeychain:enforcePersonalPersona:]_block_invoke
+0x194597e64  __TEXT,__text  +[MCKeychain copyCertificateWithPersistentID:useSystemKeychain:]
+0x194597ef4  __TEXT,__text  +[MCKeychain copyCertificateWithPersistentID:useSystemKeychain:enforcePersonalPersona:]
+0x194598158  __TEXT,__text  ___87+[MCKeychain copyCertificateWithPersistentID:useSystemKeychain:enforcePersonalPersona:]_block_invoke
+0x19459816c  __TEXT,__text  +[MCKeychain copyCertificatesWithPersistentIDs:useSystemKeychain:]
+0x1945982e0  __TEXT,__text  +[MCKeychain copyIdentityWithPersistentID:useSystemKeychain:]
+0x194598370  __TEXT,__text  +[MCKeychain copyIdentityWithPersistentID:useSystemKeychain:enforcePersonalPersona:]
+0x194598474  __TEXT,__text  +[MCKeychain saveItem:withLabel:group:useSystemKeychain:]
+0x194598530  __TEXT,__text  +[MCKeychain saveItem:withLabel:group:useSystemKeychain:accessibility:]
+0x1945985f4  __TEXT,__text  +[MCKeychain saveItem:withLabel:group:useSystemKeychain:enforcePersonalPersona:]
+0x1945986bc  __TEXT,__text  +[MCKeychain saveItem:withLabel:group:useSystemKeychain:enforcePersonalPersona:accessibility:]
+0x194598a34  __TEXT,__text  ___Block_byref_object_copy_
+0x194598a44  __TEXT,__text  ___Block_byref_object_dispose_
+0x194598a4c  __TEXT,__text  ___94+[MCKeychain saveItem:withLabel:group:useSystemKeychain:enforcePersonalPersona:accessibility:]_block_invoke
+0x194598b74  __TEXT,__text  +[MCKeychain removeItemWithPersistentID:useSystemKeychain:]
+0x194598c00  __TEXT,__text  +[MCKeychain removeItemWithPersistentID:useSystemKeychain:enforcePersonalPersona:]
+0x194598ee0  __TEXT,__text  ___82+[MCKeychain removeItemWithPersistentID:useSystemKeychain:enforcePersonalPersona:]_block_invoke
+0x194598fec  __TEXT,__text  +[MCKeychain itemExistsInKeychain:useSystemKeychain:]
+0x194599070  __TEXT,__text  +[MCKeychain itemExistsInKeychain:useSystemKeychain:enforcePersonalPersona:]
+0x1945992b4  __TEXT,__text  ___76+[MCKeychain itemExistsInKeychain:useSystemKeychain:enforcePersonalPersona:]_block_invoke
+0x1945992ec  __TEXT,__text  +[MCKeychain stringFromService:account:label:description:outError:]
+0x194599300  __TEXT,__text  +[MCKeychain stringFromService:account:label:description:group:outError:]
+0x194599330  __TEXT,__text  +[MCKeychain setString:forService:account:label:description:group:outError:]
+0x194599364  __TEXT,__text  +[MCKeychain setString:forService:account:label:description:access:group:outError:]
+0x19459939c  __TEXT,__text  +[MCKeychain setString:forService:account:label:description:outError:]
+0x1945993cc  __TEXT,__text  +[MCKeychain dataFromService:account:label:description:outError:]
+0x1945993e0  __TEXT,__text  +[MCKeychain dataFromService:account:label:description:group:outError:]
+0x194599410  __TEXT,__text  +[MCKeychain setData:forService:account:label:description:outError:]
+0x194599440  __TEXT,__text  +[MCKeychain setData:forService:account:label:description:access:outError:]
+0x194599474  __TEXT,__text  +[MCKeychain setData:forService:account:label:description:access:group:outError:]
+0x1945994ac  __TEXT,__text  +[MCKeychain removeItemForService:account:label:description:group:]
+0x1945994c0  __TEXT,__text  +[MCKeychain copyItemWithPersistentID:]
+0x1945994d0  __TEXT,__text  +[MCKeychain copyCertificateWithPersistentID:]
+0x1945994e0  __TEXT,__text  +[MCKeychain copyIdentityWithPersistentID:]
+0x1945994f0  __TEXT,__text  +[MCKeychain saveItem:withLabel:group:]
+0x194599500  __TEXT,__text  +[MCKeychain removeItemWithPersistentID:]
+0x194599510  __TEXT,__text  +[MCKeychain itemExistsInKeychain:]
+0x194599520  __TEXT,__text  +[MCKeychain canonicalPersistentReferenceForItemWithPersistentReference:inSystemKeychain:]
+0x194599928  __TEXT,__text  +[MCProfileStateHandler addProfileSettingsStateHandler]
+0x19459999c  __TEXT,__text  ___55+[MCProfileStateHandler addProfileSettingsStateHandler]_block_invoke
+0x1945999a8  __TEXT,__text  +[MCProfileStateHandler addProfileRestrictionsStateHandler]
+0x194599a1c  __TEXT,__text  ___59+[MCProfileStateHandler addProfileRestrictionsStateHandler]_block_invoke
+0x194599a28  __TEXT,__text  +[MCProfileStateHandler settingsStateDictionaryWithDetailsIncluded:]
+0x194599d40  __TEXT,__text  +[MCProfileStateHandler restrictionsStateDictionaryWithDetailsIncluded:]
+0x194599ed8  __TEXT,__text  +[NSError(MCExtension) MCErrorWithDomain:code:descriptionArray:errorType:]
+0x194599f08  __TEXT,__text  +[NSError(MCExtension) MCErrorWithDomain:code:descriptionArray:underlyingError:errorType:]
+0x194599f38  __TEXT,__text  +[NSError(MCExtension) MCErrorWithDomain:code:descriptionArray:suggestion:USEnglishSuggestion:underlyingError:errorType:]
+0x194599f60  __TEXT,__text  +[NSError(MCExtension) MCErrorWithDomain:code:descriptionArray:suggestion:USEnglishSuggestion:underlyingError:errorType:extraUserInfo:]
+0x19459a2f0  __TEXT,__text  -[NSError(MCExtension) MCVerboseDescription]
+0x19459a608  __TEXT,__text  -[NSError(MCExtension) MCFindPrimaryError]
+0x19459a718  __TEXT,__text  -[NSError(MCExtension) MCCopyAsPrimaryError]
+0x19459a7d0  __TEXT,__text  -[NSError(MCExtension) MCContainsErrorDomain:code:]
+0x19459a8b0  __TEXT,__text  -[NSError(MCExtension) MCUSEnglishDescription]
+0x19459a8f8  __TEXT,__text  -[NSError(MCExtension) MCUSEnglishSuggestion]
+0x19459a940  __TEXT,__text  -[NSError(MCExtension) MCErrorType]
+0x19459a9ec  __TEXT,__text  __USEnglishLocalizedStringForKey
+0x19459aad4  __TEXT,__text  __bundle
+0x19459ade0  __TEXT,__text  __MCLocalizedStringForDomain
+0x19459b178  __TEXT,__text  _MCErrorVaList
+0x19459b444  __TEXT,__text  ____bundle_block_invoke
+0x19459b494  __TEXT,__text  ____internalBundle_block_invoke
+0x19459b4f4  __TEXT,__text  +[MCRestrictionUtilities boolFeaturesWithPayloadRestictionKeyAlias]
+0x19459b534  __TEXT,__text  __boolFeaturesToAlias
+0x19459b56c  __TEXT,__text  +[MCRestrictionUtilities boolPayloadRestrictionKeysForFeature:]
+0x19459b5d4  __TEXT,__text  +[MCRestrictionUtilities boolFeatureForPayloadRestrictionKey:]
+0x19459b64c  __TEXT,__text  +[MCRestrictionUtilities intersectionFeaturesWithPayloadRestictionKeyAlias]
+0x19459b68c  __TEXT,__text  __intersectionFeaturesToAlias
+0x19459b6c4  __TEXT,__text  +[MCRestrictionUtilities intersectionPayloadRestrictionKeysForFeature:]
+0x19459b780  __TEXT,__text  +[MCRestrictionUtilities intersectionFeatureForPayloadRestrictionKey:]
+0x19459b7f8  __TEXT,__text  ____boolFeaturesToAlias_block_invoke
+0x19459b884  __TEXT,__text  ____boolAliasToFeatures_block_invoke
+0x19459b914  __TEXT,__text  ____intersectionFeaturesToAlias_block_invoke
+0x19459b9d8  __TEXT,__text  ____intersectionAliasToFeatures_block_invoke
+0x19459ba70  __TEXT,__text  +[MCVersioningUtilities _allZerosArray:startingAtIndex:]
+0x19459bb04  __TEXT,__text  +[MCVersioningUtilities versionString:isOlderThanVersionString:]
+0x19459bc8c  __TEXT,__text  -[MCProfileInfo initWithProfile:]
+0x19459bdb8  __TEXT,__text  +[MCProfileInfo supportsSecureCoding]
+0x19459bdc0  __TEXT,__text  -[MCProfileInfo encodeWithCoder:]
+0x19459bea8  __TEXT,__text  -[MCProfileInfo initWithCoder:]
+0x19459c050  __TEXT,__text  -[MCProfileInfo friendlyName]
+0x19459c058  __TEXT,__text  -[MCProfileInfo setFriendlyName:]
+0x19459c064  __TEXT,__text  -[MCProfileInfo profileDescription]
+0x19459c06c  __TEXT,__text  -[MCProfileInfo setProfileDescription:]
+0x19459c078  __TEXT,__text  -[MCProfileInfo identifier]
+0x19459c080  __TEXT,__text  -[MCProfileInfo setIdentifier:]
+0x19459c08c  __TEXT,__text  -[MCProfileInfo UUID]
+0x19459c094  __TEXT,__text  -[MCProfileInfo setUUID:]
+0x19459c0a0  __TEXT,__text  -[MCProfileInfo organization]
+0x19459c0a8  __TEXT,__text  -[MCProfileInfo setOrganization:]
+0x19459c0b4  __TEXT,__text  -[MCProfileInfo expiryDate]
+0x19459c0bc  __TEXT,__text  -[MCProfileInfo setExpiryDate:]
+0x19459c0c8  __TEXT,__text  -[MCProfileInfo isInstalledByDeclarativeManagement]
+0x19459c0d0  __TEXT,__text  -[MCProfileInfo setIsInstalledByDeclarativeManagement:]
+0x19459c0d8  __TEXT,__text  -[MCProfileInfo .cxx_destruct]
+0x19459c140  __TEXT,__text  -[MCProfileConnection xpcConnection]
+0x19459c224  __TEXT,__text  ___Block_byref_object_copy_
+0x19459c234  __TEXT,__text  ___Block_byref_object_dispose_
+0x19459c23c  __TEXT,__text  ___36-[MCProfileConnection xpcConnection]_block_invoke
+0x19459c284  __TEXT,__text  -[MCProfileConnection publicXPCConnection]
+0x19459c368  __TEXT,__text  -[MCProfileConnection _createAndResumeXPCConnection]
+0x19459c3dc  __TEXT,__text  ___52-[MCProfileConnection _createAndResumeXPCConnection]_block_invoke
+0x19459c3e4  __TEXT,__text  -[MCProfileConnection _destroyXPCConnectionAndInvalidate:]
+0x19459c45c  __TEXT,__text  ___57-[MCProfileConnection _queueCreateAndResumeXPCConnection]_block_invoke.1
+0x19459c4e0  __TEXT,__text  -[MCProfileConnection _createAndResumePublicXPCConnection]
+0x19459c554  __TEXT,__text  ___58-[MCProfileConnection _createAndResumePublicXPCConnection]_block_invoke
+0x19459c55c  __TEXT,__text  -[MCProfileConnection _destroyPublicXPCConnectionAndInvalidate:]
+0x19459c5d4  __TEXT,__text  ___64-[MCProfileConnection _destroyPublicXPCConnectionAndInvalidate:]_block_invoke
+0x19459c61c  __TEXT,__text  ___63-[MCProfileConnection _queueCreateAndResumePublicXPCConnection]_block_invoke
+0x19459c6a0  __TEXT,__text  ___63-[MCProfileConnection _queueCreateAndResumePublicXPCConnection]_block_invoke.2
+0x19459c724  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke
+0x19459c870  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.13
+0x19459c918  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.14
+0x19459c9c0  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.15
+0x19459cbe8  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.19
+0x19459cddc  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.21
+0x19459cea0  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.22
+0x19459cf48  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.23
+0x19459cff0  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.24
+0x19459d098  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.25
+0x19459d238  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.26
+0x19459d2e0  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.27
+0x19459d388  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.28
+0x19459d430  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.29
+0x19459d4d8  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.30
+0x19459d580  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.31
+0x19459d628  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.32
+0x19459d6d0  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.33
+0x19459d778  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.34
+0x19459d7e4  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.35
+0x19459d88c  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.36
+0x19459d934  __TEXT,__text  ___27-[MCProfileConnection init]_block_invoke.37
+0x19459d9dc  __TEXT,__text  -[MCProfileConnection dealloc]
+0x19459db34  __TEXT,__text  -[MCProfileConnection checkIn]
+0x19459db90  __TEXT,__text  ___30-[MCProfileConnection checkIn]_block_invoke
+0x19459dc3c  __TEXT,__text  -[MCProfileConnection checkInAsynchronously]
+0x19459dc98  __TEXT,__text  ___44-[MCProfileConnection checkInAsynchronously]_block_invoke
+0x19459dd44  __TEXT,__text  -[MCProfileConnection _applyToObservers:]
+0x19459df40  __TEXT,__text  ___41-[MCProfileConnection _applyToObservers:]_block_invoke
+0x19459df84  __TEXT,__text  -[MCProfileConnection _restrictionDidChange]
+0x19459dff8  __TEXT,__text  ___44-[MCProfileConnection _restrictionDidChange]_block_invoke
+0x19459e068  __TEXT,__text  ___44-[MCProfileConnection _restrictionDidChange]_block_invoke_2
+0x19459e0c0  __TEXT,__text  -[MCProfileConnection _passcodeDidChange]
+0x19459e134  __TEXT,__text  ___41-[MCProfileConnection _passcodeDidChange]_block_invoke
+0x19459e1a4  __TEXT,__text  ___41-[MCProfileConnection _passcodeDidChange]_block_invoke_2
+0x19459e1fc  __TEXT,__text  -[MCProfileConnection _passcodePolicyDidChange]
+0x19459e270  __TEXT,__text  ___47-[MCProfileConnection _passcodePolicyDidChange]_block_invoke
+0x19459e2e0  __TEXT,__text  ___47-[MCProfileConnection _passcodePolicyDidChange]_block_invoke_2
+0x19459e338  __TEXT,__text  -[MCProfileConnection _profileListDidChange]
+0x19459e3ac  __TEXT,__text  ___44-[MCProfileConnection _profileListDidChange]_block_invoke
+0x19459e41c  __TEXT,__text  ___44-[MCProfileConnection _profileListDidChange]_block_invoke_2
+0x19459e474  __TEXT,__text  -[MCProfileConnection _appWhitelistDidChange:]
+0x19459e4e8  __TEXT,__text  ___46-[MCProfileConnection _appWhitelistDidChange:]_block_invoke
+0x19459e558  __TEXT,__text  ___46-[MCProfileConnection _appWhitelistDidChange:]_block_invoke_2
+0x19459e5b0  __TEXT,__text  -[MCProfileConnection _defaultsDidChange]
+0x19459e5c4  __TEXT,__text  -[MCProfileConnection _internalDefaultsDidChange]
+0x19459e630  __TEXT,__text  ___49-[MCProfileConnection _internalDefaultsDidChange]_block_invoke
+0x19459e688  __TEXT,__text  -[MCProfileConnection _effectiveSettingsDidChange:]
+0x19459e720  __TEXT,__text  ___51-[MCProfileConnection _effectiveSettingsDidChange:]_block_invoke
+0x19459e7b0  __TEXT,__text  ___51-[MCProfileConnection _effectiveSettingsDidChange:]_block_invoke_2
+0x19459e81c  __TEXT,__text  -[MCProfileConnection _allowCloudSyncDidChange:]
+0x19459e8b4  __TEXT,__text  ___48-[MCProfileConnection _allowCloudSyncDidChange:]_block_invoke
+0x19459e944  __TEXT,__text  ___48-[MCProfileConnection _allowCloudSyncDidChange:]_block_invoke_2
+0x19459e9b0  __TEXT,__text  -[MCProfileConnection unregisterObserver:]
+0x19459ea48  __TEXT,__text  ___42-[MCProfileConnection unregisterObserver:]_block_invoke
+0x19459ea54  __TEXT,__text  -[MCProfileConnection removeObserver:]
+0x19459ea58  __TEXT,__text  -[MCProfileConnection .cxx_destruct]
+0x19459eb34  __TEXT,__text  -[MCSignpost initWithProcess:type:feature:timestamp:]
+0x19459ec04  __TEXT,__text  -[MCSignpost copyWithZone:]
+0x19459ecac  __TEXT,__text  -[MCSignpost process]
+0x19459ecb4  __TEXT,__text  -[MCSignpost type]
+0x19459ecbc  __TEXT,__text  -[MCSignpost feature]
+0x19459ecc4  __TEXT,__text  -[MCSignpost timestamp]
+0x19459eccc  __TEXT,__text  -[MCSignpost .cxx_destruct]
+0x19459ed10  __TEXT,__text  +[MCAirPrintPayload localizedSingularForm]
+0x19459ed1c  __TEXT,__text  +[MCAirPrintPayload localizedPluralForm]
+0x19459ed28  __TEXT,__text  -[MCAirPrintPayload initWithDictionary:profile:outError:]
+0x19459f4d8  __TEXT,__text  -[MCAirPrintPayload stubDictionary]
+0x19459f5b0  __TEXT,__text  -[MCAirPrintPayload subtitle1Label]
+0x19459f5f4  __TEXT,__text  -[MCAirPrintPayload subtitle1Description]
+0x19459f624  __TEXT,__text  -[MCAirPrintPayload verboseDescription]
+0x19459f7d0  __TEXT,__text  -[MCAirPrintPayload payloadDescriptionKeyValueSections]
+0x19459fb6c  __TEXT,__text  -[MCAirPrintPayload restrictions]
+0x19459fc54  __TEXT,__text  -[MCAirPrintPayload airPrintCount]
+0x19459fc68  __TEXT,__text  -[MCAirPrintPayload setAirPrintCount:]
+0x19459fc7c  __TEXT,__text  -[MCAirPrintPayload ippAddresses]
+0x19459fc90  __TEXT,__text  -[MCAirPrintPayload setIppAddresses:]
+0x19459fca4  __TEXT,__text  -[MCAirPrintPayload .cxx_destruct]
+0x19459fcb8  __TEXT,__text  +[MCCellularPrivateNetworkPayload localizedSingularForm]
+0x19459fcc4  __TEXT,__text  +[MCCellularPrivateNetworkPayload localizedPluralForm]
+0x19459fcd0  __TEXT,__text  -[MCCellularPrivateNetworkPayload _validationErrorType:forInvalidKey:]
+0x19459fd60  __TEXT,__text  -[MCCellularPrivateNetworkPayload _checkForValidContent:outError:]
+0x1945a0444  __TEXT,__text  -[MCCellularPrivateNetworkPayload _checkForValidLegacyArrayContent:outError:]
+0x1945a05a4  __TEXT,__text  -[MCCellularPrivateNetworkPayload _finishInitializationWithContent:]
+0x1945a0aa0  __TEXT,__text  -[MCCellularPrivateNetworkPayload _finishInitializationWithLegacyArrayContent:]
+0x1945a0bf0  __TEXT,__text  -[MCCellularPrivateNetworkPayload initWithDictionary:profile:outError:]
+0x1945a100c  __TEXT,__text  -[MCCellularPrivateNetworkPayload stubDictionary]
+0x1945a1108  __TEXT,__text  -[MCCellularPrivateNetworkPayload title]
+0x1945a114c  __TEXT,__text  -[MCCellularPrivateNetworkPayload subtitle1Label]
+0x1945a1158  __TEXT,__text  -[MCCellularPrivateNetworkPayload subtitle1Description]
+0x1945a119c  __TEXT,__text  -[MCCellularPrivateNetworkPayload dataSetName]
+0x1945a11b0  __TEXT,__text  -[MCCellularPrivateNetworkPayload setDataSetName:]
+0x1945a11c4  __TEXT,__text  -[MCCellularPrivateNetworkPayload versionNumber]
+0x1945a11d8  __TEXT,__text  -[MCCellularPrivateNetworkPayload setVersionNumber:]
+0x1945a11ec  __TEXT,__text  -[MCCellularPrivateNetworkPayload geofenceList]
+0x1945a1200  __TEXT,__text  -[MCCellularPrivateNetworkPayload setGeofenceList:]
+0x1945a1214  __TEXT,__text  -[MCCellularPrivateNetworkPayload csgNetworkIdentifier]
+0x1945a1228  __TEXT,__text  -[MCCellularPrivateNetworkPayload setCsgNetworkIdentifier:]
+0x1945a123c  __TEXT,__text  -[MCCellularPrivateNetworkPayload networkIdentifier]
+0x1945a1250  __TEXT,__text  -[MCCellularPrivateNetworkPayload setNetworkIdentifier:]
+0x1945a1264  __TEXT,__text  -[MCCellularPrivateNetworkPayload cellularDataPreferred]
+0x1945a1278  __TEXT,__text  -[MCCellularPrivateNetworkPayload setCellularDataPreferred:]
+0x1945a128c  __TEXT,__text  -[MCCellularPrivateNetworkPayload enableNRStandalone]
+0x1945a12a0  __TEXT,__text  -[MCCellularPrivateNetworkPayload setEnableNRStandalone:]
+0x1945a12b4  __TEXT,__text  -[MCCellularPrivateNetworkPayload .cxx_destruct]
+0x1945a1338  __TEXT,__text  -[MCGeofenceInfo description]
+0x1945a13ec  __TEXT,__text  +[MCGeofenceInfo geofenceWithID:latitude:longitude:radius:]
+0x1945a149c  __TEXT,__text  -[MCGeofenceInfo longitude]
+0x1945a14a4  __TEXT,__text  -[MCGeofenceInfo setLongitude:]
+0x1945a14b0  __TEXT,__text  -[MCGeofenceInfo latitude]
+0x1945a14b8  __TEXT,__text  -[MCGeofenceInfo setLatitude:]
+0x1945a14c4  __TEXT,__text  -[MCGeofenceInfo radius]
+0x1945a14cc  __TEXT,__text  -[MCGeofenceInfo setRadius:]
+0x1945a14d8  __TEXT,__text  -[MCGeofenceInfo geofenceId]
+0x1945a14e0  __TEXT,__text  -[MCGeofenceInfo setGeofenceId:]
+0x1945a14ec  __TEXT,__text  -[MCGeofenceInfo .cxx_destruct]
+0x1945a181c  __TEXT,__text  -[MCFileAccessRepairTool fileNeedsRepairAtPath:]
+0x1945a1954  __TEXT,__text  -[MCFileAccessRepairTool fileManagerThinksFileNeedsRepairAtPath:]
+0x1945a19ac  __TEXT,__text  -[MCFileAccessRepairTool fileManager]
+0x1945a19f4  __TEXT,__text  -[MCFileAccessRepairTool posixThinksFileNeedsRepairAtPath:]
+0x1945a1a58  __TEXT,__text  -[MCFileAccessRepairTool repairFileAtPath:error:]
+0x1945a1b44  __TEXT,__text  -[MCFileAccessRepairTool createRepairToolErrorWithCode:]
+0x1945a1b60  __TEXT,__text  -[MCFileAccessRepairTool createFileManager]
+0x1945a1b84  __TEXT,__text  -[MCFileAccessRepairTool accessAtPath:mode:error:]
+0x1945a1be0  __TEXT,__text  -[MCFileAccessRepairTool changePermissions:ofFileAtPath:]
+0x1945a1c1c  __TEXT,__text  -[MCFileAccessRepairTool contentsOfFileAtPath:]
+0x1945a1c28  __TEXT,__text  -[MCFileAccessRepairTool writeData:toFileAtPath:]
+0x1945a1c38  __TEXT,__text  -[MCFileAccessRepairTool setFileManager:]
+0x1945a1c44  __TEXT,__text  -[MCFileAccessRepairTool .cxx_destruct]
+0x1945a1cf8  __TEXT,__text  _MCAppsExemptFromOpenInTargetRestrictions
+0x1945a1e00  __TEXT,__text  _MCAccountBasedAppsForOpenIn
+0x1945a1f78  __TEXT,__text  ___MCUnrestrictableApps_block_invoke
+0x1945a2098  __TEXT,__text  ___MCAlwaysRestrictedAppsInEDUMode_block_invoke
+0x1945a2150  __TEXT,__text  ___MCAppsExemptFromOpenInSourceRestrictions_block_invoke
+0x1945a224c  __TEXT,__text  ___MCAppsExemptFromOpenInTargetRestrictions_block_invoke
+0x1945a2334  __TEXT,__text  ___MCAppsExemptFromOpenInTargetRestrictionsForContacts_block_invoke
+0x1945a2448  __TEXT,__text  ___MCAccountBasedAppsForOpenIn_block_invoke
+0x1945a2628  __TEXT,__text  ___MCAppsExemptFromDragDropManagement_block_invoke
+0x1945a2770  __TEXT,__text  ___MCLegacyProfileStorageDirectory_block_invoke
+0x1945a27fc  __TEXT,__text  ___MCSystemProfileLibraryDirectoryNF_block_invoke
+0x1945a2898  __TEXT,__text  ___MCSystemProfileStorageDirectoryNF_block_invoke
+0x1945a2934  __TEXT,__text  ___MCHoldingTankManifestName_block_invoke
+0x1945a299c  __TEXT,__text  ___MCLegacyRestrictionsFilePath_block_invoke
+0x1945a2a38  __TEXT,__text  ___MCSystemAppAccessibilityParametersFilePath_block_invoke
+0x1945a2ad4  __TEXT,__text  ___MCSystemProfileRestrictionsFilePath_block_invoke
+0x1945a2b70  __TEXT,__text  ___MCSystemClientRestrictionsFilePath_block_invoke
+0x1945a2bd4  __TEXT,__text  ___MCSystemUserSettingsFilePath_block_invoke
+0x1945a2c70  __TEXT,__text  ___MCSystemNamespacedUserSettingsFilePath_block_invoke
+0x1945a2d0c  __TEXT,__text  ___MCSystemPreferencesDirectory_block_invoke
+0x1945a2d74  __TEXT,__text  ___MCiPCUKeychainMapPath_block_invoke
+0x1945a2e10  __TEXT,__text  ___MCSystemDependencyFilePath_block_invoke
+0x1945a2eac  __TEXT,__text  ___MCPostSetupAutoInstallProfilePathNF_block_invoke
+0x1945a2f48  __TEXT,__text  ___MCPostSetupAutoInstallSetAsideProfilePath_block_invoke
+0x1945a2fe4  __TEXT,__text  ___MCLegacyPostSetupAutoInstallProfilePath_block_invoke
+0x1945a3080  __TEXT,__text  ___MCSettingsEventsFilePath_block_invoke
+0x1945a311c  __TEXT,__text  ___MCProfileEventsFilePath_block_invoke
+0x1945a31bc  __TEXT,__text  ___MCBackupContainsPasscodeFilePath_block_invoke
+0x1945a3258  __TEXT,__text  ___MCCrashDetectionFilePath_block_invoke
+0x1945a32f4  __TEXT,__text  ___MCSystemLostModeRequestPath_block_invoke
+0x1945a3390  __TEXT,__text  ___MCNagUIMetaFilePath_block_invoke
+0x1945a342c  __TEXT,__text  ___MCAppManagedFeaturesDoNotBackupAppIDsFilePath_block_invoke
+0x1945a34c8  __TEXT,__text  ___MCPasscodeNagKeepAliveFilePath_block_invoke
+0x1945a3564  __TEXT,__text  ___MCOutstandingNagComputationFilePath_block_invoke
+0x1945a3600  __TEXT,__text  ___MCSystemAppWhitelistByProfileFilePath_block_invoke
+0x1945a369c  __TEXT,__text  ___MCSystemAppOptionsByBundleIDFilePath_block_invoke
+0x1945a3738  __TEXT,__text  ___MCSystemEffectiveAppWhitelistFilePath_block_invoke
+0x1945a37d4  __TEXT,__text  ___MCLegacyCloudConfigurationDetailsFilePath_block_invoke
+0x1945a3870  __TEXT,__text  ___MCCloudConfigurationDetailsFilePath_block_invoke
+0x1945a390c  __TEXT,__text  ___MCCloudConfigurationSetAsideDetailsFilePath_block_invoke
+0x1945a3970  __TEXT,__text  ___MCSystemHomeScreenLayoutFilePath_block_invoke
+0x1945a3a0c  __TEXT,__text  ___MCSystemNotificationSettingsFilePath_block_invoke
+0x1945a3aa8  __TEXT,__text  ___MCSharedDeviceConfigurationFilePath_block_invoke
+0x1945a3b50  __TEXT,__text  ___MCSystemWebContentFilterCurrentUserBookmarksPath_block_invoke
+0x1945a3bec  __TEXT,__text  ___MCSystemWebContentFilterStashedUserBookmarksPath_block_invoke
+0x1945a3c88  __TEXT,__text  ___MCSetupAssistantSettingsFilePath_block_invoke
+0x1945a3d24  __TEXT,__text  ___MCSystemWatchEnrollmentDataFilePath_block_invoke
+0x1945a3dc0  __TEXT,__text  ___MCUserProfileRestrictionsFilePath_block_invoke
+0x1945a3e5c  __TEXT,__text  ___MCUserClientRestrictionsFilePath_block_invoke
+0x1945a3ef8  __TEXT,__text  ___MCUserUserSettingsFilePath_block_invoke
+0x1945a3f94  __TEXT,__text  ___MCUserNamespacedUserSettingsFilePath_block_invoke
+0x1945a4030  __TEXT,__text  ___MCUserDependencyFilePath_block_invoke
+0x1945a4094  __TEXT,__text  ___MCUserHomeScreenLayoutFilePath_block_invoke
+0x1945a4130  __TEXT,__text  ___MCUserNotificationSettingsFilePath_block_invoke
+0x1945a41cc  __TEXT,__text  ___MCSystemRestartLogPath_block_invoke
+0x1945a4268  __TEXT,__text  ___MCSystemShutDownLogPath_block_invoke
+0x1945a4304  __TEXT,__text  ___MCTagsMappingFilePath_block_invoke
+0x1945a4380  __TEXT,__text  -[MCKeyValue initWithData:localizedKey:]
+0x1945a4404  __TEXT,__text  -[MCKeyValue initWithDate:localizedKey:]
+0x1945a4488  __TEXT,__text  -[MCKeyValue initWithLocalizedArray:localizedKey:]
+0x1945a450c  __TEXT,__text  -[MCKeyValue initWithLocalizedString:localizedKey:]
+0x1945a4590  __TEXT,__text  -[MCKeyValue initWithValue:localizedKey:]
+0x1945a4754  __TEXT,__text  -[MCKeyValue setData:localizedKey:]
+0x1945a47e4  __TEXT,__text  -[MCKeyValue setDate:localizedKey:]
+0x1945a4874  __TEXT,__text  -[MCKeyValue setLocalizedArray:localizedKey:]
+0x1945a493c  __TEXT,__text  -[MCKeyValue setLocalizedString:localizedKey:]
+0x1945a49cc  __TEXT,__text  -[MCKeyValue setValue:localizedKey:]
+0x1945a4b50  __TEXT,__text  -[MCKeyValue isStringValue]
+0x1945a4b60  __TEXT,__text  +[MCKeyValue supportsSecureCoding]
+0x1945a4b68  __TEXT,__text  -[MCKeyValue encodeWithCoder:]
+0x1945a4c34  __TEXT,__text  -[MCKeyValue initWithCoder:]
+0x1945a4de8  __TEXT,__text  -[MCKeyValue key]
+0x1945a4df0  __TEXT,__text  -[MCKeyValue value]
+0x1945a4df8  __TEXT,__text  -[MCKeyValue valueType]
+0x1945a4e00  __TEXT,__text  -[MCKeyValue setValueType:]
+0x1945a4e08  __TEXT,__text  -[MCKeyValue .cxx_destruct]
+0x1945a4e40  __TEXT,__text  +[MCKeyValueSection sectionWithKeyValues:]
+0x1945a4e94  __TEXT,__text  +[MCKeyValueSection sectionWithLocalizedArray:title:footer:]
+0x1945a501c  __TEXT,__text  -[MCKeyValueSection initWithSectionTitle:footer:keyValues:]
+0x1945a50d8  __TEXT,__text  +[MCKeyValueSection supportsSecureCoding]
+0x1945a50e0  __TEXT,__text  -[MCKeyValueSection encodeWithCoder:]
+0x1945a5198  __TEXT,__text  -[MCKeyValueSection initWithCoder:]
+0x1945a5304  __TEXT,__text  -[MCKeyValueSection sectionTitle]
+0x1945a530c  __TEXT,__text  -[MCKeyValueSection setSectionTitle:]
+0x1945a5318  __TEXT,__text  -[MCKeyValueSection sectionFooter]
+0x1945a5320  __TEXT,__text  -[MCKeyValueSection setSectionFooter:]
+0x1945a532c  __TEXT,__text  -[MCKeyValueSection sectionKeyValues]
+0x1945a5334  __TEXT,__text  -[MCKeyValueSection setSectionKeyValues:]
+0x1945a5340  __TEXT,__text  -[MCKeyValueSection .cxx_destruct]
+0x1945a5384  __TEXT,__text  +[MCSafariPasswordAutoFillDomainsCache sharedCache]
+0x1945a53bc  __TEXT,__text  ___51+[MCSafariPasswordAutoFillDomainsCache sharedCache]_block_invoke
+0x1945a53ec  __TEXT,__text  -[MCSafariPasswordAutoFillDomainsCache init]
+0x1945a5598  __TEXT,__text  ___44-[MCSafariPasswordAutoFillDomainsCache init]_block_invoke
+0x1945a55cc  __TEXT,__text  ___44-[MCSafariPasswordAutoFillDomainsCache init]_block_invoke_2
+0x1945a55d4  __TEXT,__text  -[MCSafariPasswordAutoFillDomainsCache isSafariPasswordAutoFillAllowedForURL:]
+0x1945a5724  __TEXT,__text  ___78-[MCSafariPasswordAutoFillDomainsCache isSafariPasswordAutoFillAllowedForURL:]_block_invoke
+0x1945a58b0  __TEXT,__text  -[MCSafariPasswordAutoFillDomainsCache rereadCache]
+0x1945a5938  __TEXT,__text  ___51-[MCSafariPasswordAutoFillDomainsCache rereadCache]_block_invoke
+0x1945a5940  __TEXT,__text  -[MCSafariPasswordAutoFillDomainsCache memberQueueRereadCache]
+0x1945a5b1c  __TEXT,__text  ___62-[MCSafariPasswordAutoFillDomainsCache memberQueueRereadCache]_block_invoke
+0x1945a5b74  __TEXT,__text  -[MCSafariPasswordAutoFillDomainsCache memberQueue]
+0x1945a5b7c  __TEXT,__text  -[MCSafariPasswordAutoFillDomainsCache setMemberQueue:]
+0x1945a5b88  __TEXT,__text  -[MCSafariPasswordAutoFillDomainsCache memberQueueCache]
+0x1945a5b90  __TEXT,__text  -[MCSafariPasswordAutoFillDomainsCache setMemberQueueCache:]
+0x1945a5b9c  __TEXT,__text  -[MCSafariPasswordAutoFillDomainsCache .cxx_destruct]
+0x1945a5bd4  __TEXT,__text  -[MCProfileConnection(Classroom) activeClassroomRoles]
+0x1945a5c30  __TEXT,__text  -[MCProfileConnection(Classroom) setActiveClassroomRoles:]
+0x1945a5c90  __TEXT,__text  -[MCProfileConnection(Classroom) addActiveClassroomRole:]
+0x1945a5d08  __TEXT,__text  -[MCProfileConnection(Classroom) removeActiveClassroomRole:]
+0x1945a5d80  __TEXT,__text  -[MCProfileConnection(Classroom) isClassroomStudentRoleEnabled]
+0x1945a5dc0  __TEXT,__text  -[MCProfileConnection(Classroom) setClassroomStudentRoleEnabled:]
+0x1945a5ddc  __TEXT,__text  -[MCProfileConnection(Classroom) isClassroomInstructorRoleEnabled]
+0x1945a5e1c  __TEXT,__text  -[MCProfileConnection(Classroom) setClassroomInstructorRoleEnabled:]
+0x1945a5e38  __TEXT,__text  -[MCProfileConnection(Classroom) isClassroomEnabled]
+0x1945a5e94  __TEXT,__text  -[MCProfileConnection(Classroom) isClassroomUnpromptedScreenObservationForced]
+0x1945a5ee8  __TEXT,__text  -[MCProfileConnection(Classroom) isClassroomAutomaticClassJoiningForced]
+0x1945a5f14  __TEXT,__text  -[MCProfileConnection(Classroom) isClassroomUnpromptedAppAndDeviceLockForced]
+0x1945a5f40  __TEXT,__text  -[MCProfileConnection(Classroom) isClassroomRequestPermissionToLeaveClassesForced]
+0x1945a5f6c  __TEXT,__text  -[NSDictionary(ManagedConfiguration) mc_atomicWriteToURL:error:]
+0x1945a607c  __TEXT,__text  -[NSData(ManagedConfigurationAtomic) mc_atomicWriteToPath:error:]
+0x1945a60d8  __TEXT,__text  -[NSData(ManagedConfigurationAtomic) mc_atomicWriteToURL:error:]
+0x1945a64d4  __TEXT,__text  +[MCAppManagedFeaturesBackupExclusions appIDs]
+0x1945a657c  __TEXT,__text  +[MCAppManagedFeaturesBackupExclusions setAppIDs:error:]
+0x1945a6674  __TEXT,__text  +[MCAppManagedFeaturesBackupExclusions removeWithError:]
+0x1945a6724  __TEXT,__text  +[MCAppManagedFeaturesBackupExclusions appIDsAtPath:]
+0x1945a697c  __TEXT,__text  +[MCAppManagedFeaturesBackupExclusions setAppIDs:atPath:error:]
+0x1945a6c58  __TEXT,__text  +[MCAppManagedFeaturesBackupExclusions removeAtPath:error:]
+0x1945a6d9c  __TEXT,__text  +[MCPayloadUserPromptUtilities promptDictionaryForKey:title:description:retypeDescription:finePrint:defaultValue:placeholderValue:minimumLength:fieldType:flags:]
+0x1945a700c  __TEXT,__text  +[MCPayloadUserPromptUtilities prioritizeUserInput:key:overField:]
+0x1945a71a8  __TEXT,__text  -[NSString(MCUtilities) MCOldStyleSafeFilenameHash]
+0x1945a71b0  __TEXT,__text  -[NSString(MCUtilities) MCOldStyleSafeFilenameHashWithExtension:]
+0x1945a72a4  __TEXT,__text  -[NSString(MCUtilities) MCSHA256DigestWithPasscodeSalt]
+0x1945a72ec  __TEXT,__text  ___55-[NSString(MCUtilities) MCSHA256DigestWithPasscodeSalt]_block_invoke
+0x1945a732c  __TEXT,__text  -[NSString(MCUtilities) MCHash]
+0x1945a7484  __TEXT,__text  +[NSString(MCUtilities) MCMakeUUID]
+0x1945a7748  __TEXT,__text  ___MCFormattedStringForTimeInterval_block_invoke
+0x1945a77dc  __TEXT,__text  ___MCUSEnglishLocale_block_invoke
+0x1945a7850  __TEXT,__text  ___MCUSEnglishNumberFormatter_block_invoke
+0x1945a7930  __TEXT,__text  ___MCNoStyleNumberFormatter_block_invoke
+0x1945a79a4  __TEXT,__text  +[MCAppleServicesPayload localizedSingularForm]
+0x1945a79b0  __TEXT,__text  +[MCAppleServicesPayload localizedPluralForm]
+0x1945a79bc  __TEXT,__text  -[MCAppleServicesPayload initWithDictionary:profile:outError:]
+0x1945a7f10  __TEXT,__text  -[MCAppleServicesPayload stubDictionary]
+0x1945a811c  __TEXT,__text  -[MCAppleServicesPayload verboseDescription]
+0x1945a81ac  __TEXT,__text  -[MCAppleServicesPayload subtitle1Label]
+0x1945a8200  __TEXT,__text  -[MCAppleServicesPayload hashDictionaries]
+0x1945a8214  __TEXT,__text  -[MCAppleServicesPayload .cxx_destruct]
+0x1945a8228  __TEXT,__text  +[MCManifest _fileDataIfPresentAtPath:error:]
+0x1945a82fc  __TEXT,__text  +[MCManifest _setSystemManifestPath:userManifestPath:]
+0x1945a836c  __TEXT,__text  +[MCManifest sharedManifest]
+0x1945a83a4  __TEXT,__text  +[MCManifest installedUserProfileWithIdentifier:]
+0x1945a8400  __TEXT,__text  -[MCManifest installedProfileWithIdentifier:]
+0x1945a840c  __TEXT,__text  -[MCManifest installedProfileWithIdentifier:filterFlags:]
+0x1945a84a0  __TEXT,__text  -[MCManifest installedSystemProfileWithIdentifier:]
+0x1945a84ac  __TEXT,__text  -[MCManifest installedUserProfileWithIdentifier:]
+0x1945a84b8  __TEXT,__text  -[MCManifest installedMDMProfile]
+0x1945a8530  __TEXT,__text  +[MCManifest installedProfileDataWithIdentifier:]
+0x1945a8538  __TEXT,__text  +[MCManifest installedProfileDataWithIdentifier:error:]
+0x1945a8604  __TEXT,__text  +[MCManifest installedSystemProfileDataWithIdentifier:error:]
+0x1945a86a8  __TEXT,__text  +[MCManifest installedUserProfileDataWithIdentifier:error:]
+0x1945a874c  __TEXT,__text  -[MCManifest installedProfileDataWithIdentifier:]
+0x1945a8758  __TEXT,__text  -[MCManifest dealloc]
+0x1945a87c0  __TEXT,__text  -[MCManifest _systemManifest]
+0x1945a8998  __TEXT,__text  __populateMissingManifestDictionaries
+0x1945a8a60  __TEXT,__text  -[MCManifest _userManifest]
+0x1945a8c38  __TEXT,__text  -[MCManifest systemManifest]
+0x1945a8d1c  __TEXT,__text  ___Block_byref_object_copy_
+0x1945a8d2c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1945a8d34  __TEXT,__text  ___28-[MCManifest systemManifest]_block_invoke
+0x1945a8d74  __TEXT,__text  -[MCManifest userManifest]
+0x1945a8e58  __TEXT,__text  ___26-[MCManifest userManifest]_block_invoke
+0x1945a8e98  __TEXT,__text  -[MCManifest _setSystemManifest:userManifest:]
+0x1945a9018  __TEXT,__text  -[MCManifest identifiersOfProfilesWithFilterFlags:]
+0x1945a9020  __TEXT,__text  -[MCManifest identifiersOfProfilesWithFilterFlags:error:]
+0x1945a9344  __TEXT,__text  ___57-[MCManifest identifiersOfProfilesWithFilterFlags:error:]_block_invoke
+0x1945a93e4  __TEXT,__text  -[MCManifest allInstalledProfileIdentifiers]
+0x1945a93ec  __TEXT,__text  -[MCManifest allInstalledUserProfileIdentifiers]
+0x1945a93f4  __TEXT,__text  -[MCManifest allInstalledSystemProfileIdentifiers]
+0x1945a93fc  __TEXT,__text  -[MCManifest allProfileIdentifiersInstalledNonInteractivelyWithFilterFlags:]
+0x1945a95e0  __TEXT,__text  -[MCManifest allInstalledPayloadsOfClass:]
+0x1945a97e8  __TEXT,__text  -[MCManifest addIdentifierToSystemManifest:flag:]
+0x1945a97f8  __TEXT,__text  -[MCManifest addIdentifierToUserManifest:flag:]
+0x1945a9808  __TEXT,__text  -[MCManifest removeIdentifierFromSystemManifest:flag:]
+0x1945a9818  __TEXT,__text  -[MCManifest removeIdentifierFromUserManifest:flag:]
+0x1945a9828  __TEXT,__text  -[MCManifest _adjustManifestIdentifier:isUserInstall:flag:addingIdentifier:]
+0x1945a98e8  __TEXT,__text  ___76-[MCManifest _adjustManifestIdentifier:isUserInstall:flag:addingIdentifier:]_block_invoke
+0x1945a9ab4  __TEXT,__text  -[MCManifest invalidateCache]
+0x1945a9b28  __TEXT,__text  ___29-[MCManifest invalidateCache]_block_invoke
+0x1945a9b80  __TEXT,__text  -[MCManifest systemManifestLoadError]
+0x1945a9b88  __TEXT,__text  -[MCManifest setSystemManifestLoadError:]
+0x1945a9b94  __TEXT,__text  -[MCManifest userManifestLoadError]
+0x1945a9b9c  __TEXT,__text  -[MCManifest setUserManifestLoadError:]
+0x1945a9ba8  __TEXT,__text  -[MCManifest .cxx_destruct]
+0x1945a9c1c  __TEXT,__text  +[NSData(ManagedConfiguration) MCDataWithHexString:]
+0x1945a9d0c  __TEXT,__text  +[NSData(ManagedConfiguration) MCDataWithCFData:]
+0x1945a9d60  __TEXT,__text  -[NSData(ManagedConfiguration) MCSHA256Hash]
+0x1945a9df4  __TEXT,__text  -[MCRestrictionManager(AppWhitelist) restrictedAppBundleIDs]
+0x1945a9dfc  __TEXT,__text  +[MCRestrictionManager(AppWhitelist) explicitlyRestrictedEphemeralMultiUserApps]
+0x1945a9e34  __TEXT,__text  ___80+[MCRestrictionManager(AppWhitelist) explicitlyRestrictedEphemeralMultiUserApps]_block_invoke
+0x1945a9eec  __TEXT,__text  -[MCRestrictionManager(AppWhitelist) effectiveBlockedAppBundleIDsExcludingRemovedSystemApps:]
+0x1945a9fb4  __TEXT,__text  -[MCRestrictionManager(AppWhitelist) restrictionEnforcedBlockedAppBundleIDsExcludingRemovedSystemApps:]
+0x1945aa060  __TEXT,__text  -[MCRestrictionManager(AppWhitelist) parentalControlsBlockedAppBundleIDs]
+0x1945aa0b8  __TEXT,__text  -[MCRestrictionManager(AppWhitelist) restrictionEnforcedWhitelistedAppBundleIDs]
+0x1945aa11c  __TEXT,__text  -[MCRestrictionManager(AppWhitelist) parentalControlsWhitelistedAppBundleIDs]
+0x1945aa180  __TEXT,__text  -[MCRestrictionManager(AppWhitelist) effectiveWhitelistedAppsAndOptions]
+0x1945aa290  __TEXT,__text  ___Block_byref_object_copy_
+0x1945aa2a0  __TEXT,__text  ___Block_byref_object_dispose_
+0x1945aa2a8  __TEXT,__text  ___72-[MCRestrictionManager(AppWhitelist) effectiveWhitelistedAppsAndOptions]_block_invoke
+0x1945aa2e8  __TEXT,__text  -[MCRestrictionManager(AppWhitelist) clearEffectiveWhitelistedAppsAndOptionsCache]
+0x1945aa370  __TEXT,__text  ___82-[MCRestrictionManager(AppWhitelist) clearEffectiveWhitelistedAppsAndOptionsCache]_block_invoke
+0x1945aa37c  __TEXT,__text  -[MCRestrictionManager(AppWhitelist) isInSingleAppMode]
+0x1945aa3c4  __TEXT,__text  -[MCRestrictionManager(AppWhitelist) singleAppModeBundleID]
+0x1945aa43c  __TEXT,__text  -[MCRestrictionManager(AppWhitelist) isSingleAppModeLogoutAllowed]
+0x1945aa484  __TEXT,__text  -[MCRestrictionManager(AppWhitelist) allowedToRunAppWithBundleID:]
+0x1945aa518  __TEXT,__text  +[MCRemovalPasswordPayload localizedSingularForm]
+0x1945aa524  __TEXT,__text  +[MCRemovalPasswordPayload localizedPluralForm]
+0x1945aa530  __TEXT,__text  -[MCRemovalPasswordPayload initWithDictionary:profile:outError:]
+0x1945aa800  __TEXT,__text  -[MCRemovalPasswordPayload stubDictionary]
+0x1945aa878  __TEXT,__text  -[MCRemovalPasswordPayload removalPasscode]
+0x1945aa88c  __TEXT,__text  -[MCRemovalPasswordPayload setRemovalPasscode:]
+0x1945aa8a0  __TEXT,__text  -[MCRemovalPasswordPayload .cxx_destruct]
+0x1945aa8b4  __TEXT,__text  +[MCDependencyReader systemStoragePath]
+0x1945aa8e8  __TEXT,__text  +[MCDependencyReader userStoragePath]
+0x1945aa91c  __TEXT,__text  +[MCDependencyReader setSystemStoragePath:userStoragePath:]
+0x1945aa97c  __TEXT,__text  ___34+[MCDependencyReader sharedReader]_block_invoke
+0x1945aaa8c  __TEXT,__text  ___34+[MCDependencyReader sharedReader]_block_invoke_2
+0x1945aaac8  __TEXT,__text  -[MCDependencyReader init]
+0x1945aaae4  __TEXT,__text  -[MCDependencyReader _init]
+0x1945aab4c  __TEXT,__text  -[MCDependencyReader systemDomainsDict]
+0x1945aac5c  __TEXT,__text  ___Block_byref_object_copy_
+0x1945aac6c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1945aac74  __TEXT,__text  ___39-[MCDependencyReader systemDomainsDict]_block_invoke
+0x1945aaccc  __TEXT,__text  -[MCDependencyReader userDomainsDict]
+0x1945aaddc  __TEXT,__text  ___37-[MCDependencyReader userDomainsDict]_block_invoke
+0x1945aae34  __TEXT,__text  -[MCDependencyReader memberQueueParentsInDomain:]
+0x1945aaf40  __TEXT,__text  -[MCDependencyReader memberQueueParentsInSystemDomain:]
+0x1945aafb4  __TEXT,__text  -[MCDependencyReader memberQueueParentsInUserDomain:]
+0x1945ab028  __TEXT,__text  -[MCDependencyReader parentsInDomain:]
+0x1945ab160  __TEXT,__text  ___38-[MCDependencyReader parentsInDomain:]_block_invoke
+0x1945ab1a4  __TEXT,__text  -[MCDependencyReader parentsInSystemDomain:]
+0x1945ab2dc  __TEXT,__text  ___44-[MCDependencyReader parentsInSystemDomain:]_block_invoke
+0x1945ab320  __TEXT,__text  -[MCDependencyReader parentsInUserDomain:]
+0x1945ab458  __TEXT,__text  ___42-[MCDependencyReader parentsInUserDomain:]_block_invoke
+0x1945ab49c  __TEXT,__text  -[MCDependencyReader dependentsOfParent:inSystemDomain:]
+0x1945ab5fc  __TEXT,__text  ___56-[MCDependencyReader dependentsOfParent:inSystemDomain:]_block_invoke
+0x1945ab640  __TEXT,__text  -[MCDependencyReader dependentsOfParent:inUserDomain:]
+0x1945ab7a0  __TEXT,__text  ___54-[MCDependencyReader dependentsOfParent:inUserDomain:]_block_invoke
+0x1945ab7e4  __TEXT,__text  -[MCDependencyReader memberQueueRereadDomainsDict]
+0x1945ab810  __TEXT,__text  -[MCDependencyReader memberQueueRereadSystemDomainsDict]
+0x1945aba58  __TEXT,__text  -[MCDependencyReader memberQueueRereadUserDomainsDict]
+0x1945abca0  __TEXT,__text  -[MCDependencyReader invalidateCache]
+0x1945abd28  __TEXT,__text  ___37-[MCDependencyReader invalidateCache]_block_invoke
+0x1945abd60  __TEXT,__text  -[MCDependencyReader setMemberQueue:]
+0x1945abd6c  __TEXT,__text  -[MCDependencyReader setMemberQueueSystemDomainsDict:]
+0x1945abd78  __TEXT,__text  -[MCDependencyReader setMemberQueueUserDomainsDict:]
+0x1945abd84  __TEXT,__text  -[MCDependencyReader .cxx_destruct]
+0x1945abdc8  __TEXT,__text  +[MCSharedDeviceConfigurationPayload localizedSingularForm]
+0x1945abdd4  __TEXT,__text  +[MCSharedDeviceConfigurationPayload localizedPluralForm]
+0x1945abde0  __TEXT,__text  -[MCSharedDeviceConfigurationPayload initWithDictionary:profile:outError:]
+0x1945ac0a4  __TEXT,__text  -[MCSharedDeviceConfigurationPayload configuration]
+0x1945ac140  __TEXT,__text  -[MCSharedDeviceConfigurationPayload stubDictionary]
+0x1945ac1b4  __TEXT,__text  -[MCSharedDeviceConfigurationPayload payloadDescriptionKeyValueSections]
+0x1945ac380  __TEXT,__text  -[MCSharedDeviceConfigurationPayload lockScreenFootnote]
+0x1945ac394  __TEXT,__text  -[MCSharedDeviceConfigurationPayload assetTagInformation]
+0x1945ac3a8  __TEXT,__text  -[MCSharedDeviceConfigurationPayload .cxx_destruct]
+0x1945ac3f0  __TEXT,__text  -[MCConfigurationProfile payloads]
+0x1945ac404  __TEXT,__text  -[MCConfigurationProfile managedPayloads]
+0x1945ac5c4  __TEXT,__text  -[MCConfigurationProfile payloadWithUUID:]
+0x1945ac710  __TEXT,__text  -[MCConfigurationProfile _subjectSummaryFromCertificate:]
+0x1945ac73c  __TEXT,__text  -[MCConfigurationProfile copyCertificateFromPayloadWithUUID:]
+0x1945ac79c  __TEXT,__text  -[MCConfigurationProfile subjectSummaryFromCertificatePayloadWithUUID:]
+0x1945ac7f4  __TEXT,__text  -[MCConfigurationProfile copyCertificateWithPersistentID:]
+0x1945ac968  __TEXT,__text  -[MCConfigurationProfile subjectSummaryFromCertificateWithPersistentID:]
+0x1945ac9c0  __TEXT,__text  -[MCConfigurationProfile isManagedByMDM]
+0x1945aca18  __TEXT,__text  -[MCConfigurationProfile isManagedByProfileService]
+0x1945aca34  __TEXT,__text  -[MCConfigurationProfile installationWarningsIncludeUnsignedProfileWarning:]
+0x1945acbb4  __TEXT,__text  -[MCConfigurationProfile description]
+0x1945acdb0  __TEXT,__text  -[MCConfigurationProfile verboseDescription]
+0x1945acfac  __TEXT,__text  -[MCConfigurationProfile serializedDictionary]
+0x1945ad1ec  __TEXT,__text  -[MCConfigurationProfile stubDictionary]
+0x1945ad420  __TEXT,__text  -[MCConfigurationProfile _localizedPayloadSummaryByType:]
+0x1945ad5e4  __TEXT,__text  -[MCConfigurationProfile localizedPayloadSummaryByType]
+0x1945ad630  __TEXT,__text  -[MCConfigurationProfile localizedManagedPayloadSummaryByType]
+0x1945ad67c  __TEXT,__text  -[MCConfigurationProfile localizedManagedProfileConsentTexts]
+0x1945ad86c  __TEXT,__text  -[MCConfigurationProfile earliestCertificateExpiryDate]
+0x1945adba8  __TEXT,__text  ___Block_byref_object_copy_
+0x1945adbb8  __TEXT,__text  ___Block_byref_object_dispose_
+0x1945adbc0  __TEXT,__text  ___55-[MCConfigurationProfile earliestCertificateExpiryDate]_block_invoke
+0x1945adc38  __TEXT,__text  -[MCConfigurationProfile replacePayloadWithUUID:withPayload:]
+0x1945add44  __TEXT,__text  -[MCConfigurationProfile OTAProfile]
+0x1945add58  __TEXT,__text  -[MCConfigurationProfile setOTAProfile:]
+0x1945add6c  __TEXT,__text  -[MCConfigurationProfile isCloudProfile]
+0x1945add80  __TEXT,__text  -[MCConfigurationProfile setIsCloudProfile:]
+0x1945add94  __TEXT,__text  -[MCConfigurationProfile isCloudLocked]
+0x1945adda8  __TEXT,__text  -[MCConfigurationProfile setIsCloudLocked:]
+0x1945addbc  __TEXT,__text  -[MCConfigurationProfile isMDMProfile]
+0x1945addd0  __TEXT,__text  -[MCConfigurationProfile setIsMDMProfile:]
+0x1945adde4  __TEXT,__text  -[MCConfigurationProfile isCloudProfileNum]
+0x1945addf8  __TEXT,__text  -[MCConfigurationProfile setIsCloudProfileNum:]
+0x1945ade0c  __TEXT,__text  -[MCConfigurationProfile isCloudLockedNum]
+0x1945ade20  __TEXT,__text  -[MCConfigurationProfile setIsCloudLockedNum:]
+0x1945ade34  __TEXT,__text  +[MCFeatureOverrides isDevFused]
+0x1945ade40  __TEXT,__text  +[MCFeatureOverrides allowVPNInUserEnrollment]
+0x1945adea4  __TEXT,__text  +[MCFeatureOverrides allowUnsupervisedWatchEnrollment]
+0x1945adf08  __TEXT,__text  +[MCFeatureOverrides shouldSimulatorSupportMDM]
+0x1945adf14  __TEXT,__text  +[MCFeatureOverrides profileEventsMaxLength]
+0x1945adf68  __TEXT,__text  +[MCFeatureOverrides profileEventsExpirationInterval]
+0x1945adfc0  __TEXT,__text  +[MCFeatureOverrides accountRemovalTimeoutWithDefaultValue:]
+0x1945ae018  __TEXT,__text  -[MCProfileServiceProfile _badDataTypeErrorWithFieldName:]
+0x1945ae0a4  __TEXT,__text  -[MCProfileServiceProfile _unsupportedValueErrorWithFieldName:value:]
+0x1945ae134  __TEXT,__text  -[MCProfileServiceProfile localizedPayloadSummaryByType]
+0x1945ae18c  __TEXT,__text  -[MCProfileServiceProfile localizedManagedPayloadSummaryByType]
+0x1945ae190  __TEXT,__text  -[MCProfileServiceProfile payloads]
+0x1945ae224  __TEXT,__text  -[MCProfileServiceProfile managedPayloads]
+0x1945ae228  __TEXT,__text  -[MCProfileServiceProfile stubDictionary]
+0x1945ae368  __TEXT,__text  -[MCProfileServiceProfile description]
+0x1945ae4b8  __TEXT,__text  -[MCProfileServiceProfile verboseDescription]
+0x1945ae4bc  __TEXT,__text  -[MCProfileServiceProfile serializedDictionary]
+0x1945ae5f8  __TEXT,__text  -[MCProfileServiceProfile URLString]
+0x1945ae60c  __TEXT,__text  -[MCProfileServiceProfile setURLString:]
+0x1945ae620  __TEXT,__text  -[MCProfileServiceProfile deviceAttributes]
+0x1945ae634  __TEXT,__text  -[MCProfileServiceProfile challenge]
+0x1945ae648  __TEXT,__text  -[MCProfileServiceProfile enrollmentIdentityPersistentID]
+0x1945ae65c  __TEXT,__text  -[MCProfileServiceProfile setEnrollmentIdentityPersistentID:]
+0x1945ae670  __TEXT,__text  -[MCProfileServiceProfile confirmInstallation]
+0x1945ae684  __TEXT,__text  -[MCProfileServiceProfile supportedServerVersion]
+0x1945ae698  __TEXT,__text  -[MCProfileServiceProfile .cxx_destruct]
+0x1945ae71c  __TEXT,__text  +[MCDomainsPayload typeStrings]
+0x1945ae78c  __TEXT,__text  +[MCDomainsPayload localizedSingularForm]
+0x1945ae798  __TEXT,__text  +[MCDomainsPayload localizedPluralForm]
+0x1945ae7a4  __TEXT,__text  +[MCDomainsPayload invalidDomainPatternErrorWithPattern:field:]
+0x1945ae86c  __TEXT,__text  +[MCDomainsPayload tooManyDomainsErrorWithMaxCount:field:]
+0x1945ae934  __TEXT,__text  +[MCDomainsPayload tooManyAppsErrorWithMaxCount:field:]
+0x1945ae9fc  __TEXT,__text  +[MCDomainsPayload isPatternValid:forField:outError:]
+0x1945aeec0  __TEXT,__text  ___53+[MCDomainsPayload isPatternValid:forField:outError:]_block_invoke
+0x1945aef08  __TEXT,__text  -[MCDomainsPayload initWithDictionary:profile:outError:]
+0x1945af92c  __TEXT,__text  -[MCDomainsPayload restrictions]
+0x1945af940  __TEXT,__text  -[MCDomainsPayload stubDictionary]
+0x1945afb70  __TEXT,__text  -[MCDomainsPayload payloadDescriptionKeyValueSections]
+0x1945afec8  __TEXT,__text  -[MCDomainsPayload setRestrictions:]
+0x1945afedc  __TEXT,__text  -[MCDomainsPayload .cxx_destruct]
+0x1945afef0  __TEXT,__text  +[MCDefaultsPayload localizedSingularForm]
+0x1945afefc  __TEXT,__text  +[MCDefaultsPayload localizedPluralForm]
+0x1945aff08  __TEXT,__text  -[MCDefaultsPayload isAllowedToWriteDefaults]
+0x1945affa4  __TEXT,__text  -[MCDefaultsPayload stubDictionary]
+0x1945b0184  __TEXT,__text  -[MCDefaultsPayload verboseDescription]
+0x1945b0214  __TEXT,__text  -[MCDefaultsPayload domains]
+0x1945b0228  __TEXT,__text  -[MCDefaultsPayload defaultsForDomain:]
+0x1945b0264  __TEXT,__text  -[MCDefaultsPayload title]
+0x1945b02c8  __TEXT,__text  +[MCGizmoUtilities MCFirstPartyCompanionToWatchAppBundleIDs]
+0x1945b0300  __TEXT,__text  ___60+[MCGizmoUtilities MCFirstPartyCompanionToWatchAppBundleIDs]_block_invoke
+0x1945b0a28  __TEXT,__text  +[MCGizmoUtilities watchAppBundleIDsForBundleIDs:completion:]
+0x1945b0c30  __TEXT,__text  +[MCManagedDomainsCache sharedCache]
+0x1945b0c68  __TEXT,__text  ___36+[MCManagedDomainsCache sharedCache]_block_invoke
+0x1945b0c98  __TEXT,__text  -[MCManagedDomainsCache init]
+0x1945b0e5c  __TEXT,__text  ___29-[MCManagedDomainsCache init]_block_invoke
+0x1945b0e90  __TEXT,__text  ___29-[MCManagedDomainsCache init]_block_invoke_2
+```
+First 1,000 of 5,316.
+

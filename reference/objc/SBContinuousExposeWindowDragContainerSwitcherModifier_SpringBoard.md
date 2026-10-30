@@ -1,0 +1,71 @@
+# `SBContinuousExposeWindowDragContainerSwitcherModifier`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBFilteringSwitcherModifier`
+- 12 instance variables, 3 properties, 36 instance methods, 0 class methods
+
+## Instance variables
+
+```
+q _blinkCount;
+@"SBAppLayout" _appLayoutContainingAppLayout;
+@"SBAppLayout" _springLoadTargetAppLayout;
+q _windowDragSpringLoadState;
+@"NSString" _continuousExposeSpringLoadReasonWithAppLayout;
+Q _gesturePhase;
+@"SBFlexibleWindowingAutoLayoutSpace" _autoLayoutSpaceWithDraggedItemExcluded;
+d _initialHomeScreenDimmingAlpha;
+B _selectedDisplayItemWasInitiallyFullScreen;
+@"SBAppLayout" _initialAppLayout;
+@"SBDisplayItem" _selectedDisplayItem;
+@"SBContinuousExposeWindowDragContentSwitcherModifier" _windowDragContentSwitcherModifier;
+```
+
+## Properties
+
+```
+@property (T@"SBAppLayout",R,N,V_initialAppLayout) initialAppLayout;
+@property (T@"SBDisplayItem",R,N,V_selectedDisplayItem) selectedDisplayItem;
+@property (T@"SBContinuousExposeWindowDragContentSwitcherModifier",R,N,V_windowDragContentSwitcherModifier) windowDragContentSwitcherModifier;
+```
+
+## Instance methods
+
+```
+-[SBContinuousExposeWindowDragContainerSwitcherModifier handleGestureEvent:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier homeScreenDimmingAlpha];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier didMoveToParentModifier:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier animationAttributesForLayoutElement:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier visibleSplitViewHandleNubViews];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier dockProgress];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier appLayoutOnStage];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier visibleSplitViewHandleDimmingViews];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier topMostLayoutElements];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier appLayoutsForContinuousExposeIdentifier:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier dimmingAlphaForLayoutRole:inAppLayout:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier handleTransitionEvent:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier wantsDockBehaviorAssertion];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier appLayout];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier opacityForLayoutRole:inAppLayout:atIndex:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier handleTimerEvent:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier adjustedContinuousExposeIdentifiersInStripFromPreviousIdentifiersInStrip:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier wantsSceneResizesHostedContextForAppLayout:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier blurDelayForLayoutRole:inAppLayout:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier handleTapOutsideToDismissEvent:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier handleTapAppLayoutEvent:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier occlusionStateForLayoutRole:inAppLayout:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier _appLayoutContainingDisplayItem:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier isLayoutRoleMatchMovedToScene:inAppLayout:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier shouldConfigureInAppDockHiddenAssertion];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier _boundingBoxForCurrentStage];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier _createInterceptableTransitionRequestForActivatingAppLayout:withSelectedDisplayItem:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier _dockProgressForDraggedWindow];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier continuousExposeStripProgress];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier initWithAppLayouts:initialAppLayout:selectedDisplayItem:windowDragContentSwitcherModifier:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier initialAppLayout];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier responseForProposedChildResponse:childModifier:event:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier routingModifier:topMostLayoutElementsByModifier:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier selectedDisplayItem];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier slideOverTongueModifierForRoutingModifier:];
+-[SBContinuousExposeWindowDragContainerSwitcherModifier windowDragContentSwitcherModifier];
+```

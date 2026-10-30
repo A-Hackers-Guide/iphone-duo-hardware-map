@@ -1,0 +1,222 @@
+# `PKPaletteToolPickerView`
+
+- Image: [`/System/Library/Frameworks/PencilKit.framework/PencilKit`](../userland/System__Library__Frameworks__PencilKit.framework__PencilKit.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `UIView`
+- Protocols: `UIPopoverPresentationControllerDelegate`, `UIScrollViewDelegate`, `PKPaletteEdgeLocating`, `PKPalettePopoverDismissing`, `PKPalettePopoverUpdating`, `PKPaletteViewSizeScaling`
+- 37 instance variables, 43 properties, 121 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"NSMutableArray" _mutableToolViews;
+B _allowHDR;
+B _unselectedToolsVisible;
+B _scrollingEnabled;
+Q _edgeLocation;
+Q _cornerLocation;
+d _scalingFactor;
+@"<PKPaletteToolPickerViewDelegate>" _delegate;
+@"PKPaletteToolView" _selectedToolView;
+q _colorAppearance;
+d _interItemToolsSpacing;
+@"UIScrollView" _scrollView;
+@"PKPaletteTooltipPresentationHandle" _tooltipPresentationHandle;
+@"<PKDrawingPaletteStatistics>" _drawingPaletteStatistics;
+@"PKPaletteToolPickerClippingView" _clippingView;
+@"NSLayoutConstraint" _scrollViewTopConstraint;
+@"NSLayoutConstraint" _scrollViewBottomConstraint;
+@"NSLayoutConstraint" _scrollViewLeadingConstraint;
+@"NSLayoutConstraint" _scrollViewTrailingConstraint;
+@"NSLayoutConstraint" _scrollViewCenterXConstraint;
+@"NSLayoutConstraint" _scrollViewCenterYConstraint;
+@"NSLayoutConstraint" _scrollViewWidthConstraint;
+@"NSLayoutConstraint" _scrollViewHeightConstraint;
+@"UIStackView" _stackView;
+@"NSLayoutConstraint" _stackViewCompactHeightConstraint;
+@"NSLayoutConstraint" _clippingViewTopConstraint;
+@"NSLayoutConstraint" _clippingViewBottomConstraint;
+@"NSLayoutConstraint" _clippingViewLeadingConstraint;
+@"NSLayoutConstraint" _clippingViewTrailingConstraint;
+@"NSMutableArray" _toolsWidthConstraints;
+@"NSMutableArray" _toolsHeightConstraints;
+@"NSMutableArray" _toolsWidthCompactConstraints;
+@"PKPaletteToolView" _lastSelectedToolView;
+@"PKPaletteAttributeViewController" _toolAttributesPopover;
+@"NSHashTable" _presentedViewControllers;
+@"<UIScrollViewDelegate>" _lastScrollViewDelegateBeforeScrollingToolToVisible;
+@"PKScrollViewDelegateEventsHandler" _scrollViewDelegateEventsHandler;
+```
+
+## Properties
+
+```
+@property (T@"<PKDrawingPaletteStatistics>",&,N,V_drawingPaletteStatistics) drawingPaletteStatistics;
+@property (T@"PKPaletteToolPickerClippingView",&,N,V_clippingView) clippingView;
+@property (T@"UIScrollView",&,N,V_scrollView) scrollView;
+@property (T@"NSLayoutConstraint",&,N,V_scrollViewTopConstraint) scrollViewTopConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_scrollViewBottomConstraint) scrollViewBottomConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_scrollViewLeadingConstraint) scrollViewLeadingConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_scrollViewTrailingConstraint) scrollViewTrailingConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_scrollViewCenterXConstraint) scrollViewCenterXConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_scrollViewCenterYConstraint) scrollViewCenterYConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_scrollViewWidthConstraint) scrollViewWidthConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_scrollViewHeightConstraint) scrollViewHeightConstraint;
+@property (T@"UIStackView",&,N,V_stackView) stackView;
+@property (T@"NSLayoutConstraint",&,N,V_stackViewCompactHeightConstraint) stackViewCompactHeightConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_clippingViewTopConstraint) clippingViewTopConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_clippingViewBottomConstraint) clippingViewBottomConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_clippingViewLeadingConstraint) clippingViewLeadingConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_clippingViewTrailingConstraint) clippingViewTrailingConstraint;
+@property (T@"NSMutableArray",&,N,V_toolsWidthConstraints) toolsWidthConstraints;
+@property (T@"NSMutableArray",&,N,V_toolsHeightConstraints) toolsHeightConstraints;
+@property (T@"NSMutableArray",&,N,V_toolsWidthCompactConstraints) toolsWidthCompactConstraints;
+@property (T@"PKPaletteToolView",&,N,V_lastSelectedToolView) lastSelectedToolView;
+@property (T@"PKPaletteAttributeViewController",&,N,V_toolAttributesPopover) toolAttributesPopover;
+@property (T@"NSHashTable",&,N,V_presentedViewControllers) presentedViewControllers;
+@property (T@"<UIScrollViewDelegate>",W,N,V_lastScrollViewDelegateBeforeScrollingToolToVisible) lastScrollViewDelegateBeforeScrollingToolToVisible;
+@property (T@"PKScrollViewDelegateEventsHandler",&,N,V_scrollViewDelegateEventsHandler) scrollViewDelegateEventsHandler;
+@property (TQ,R,N) _selectedToolsCount;
+@property (T@"<PKPaletteToolPickerViewDelegate>",W,N,V_delegate) delegate;
+@property (T@"NSArray",R,N) toolViews;
+@property (T@"PKPaletteToolView",R,N,V_selectedToolView) selectedToolView;
+@property (TQ,R,N) indexOfSelectedTool;
+@property (TB,N,V_allowHDR) allowHDR;
+@property (Tq,N,V_colorAppearance) colorAppearance;
+@property (Td,N,V_interItemToolsSpacing) interItemToolsSpacing;
+@property (TB,N,V_unselectedToolsVisible) unselectedToolsVisible;
+@property (TB,N,GisScrollingEnabled,V_scrollingEnabled) scrollingEnabled;
+@property (T@"PKPaletteTooltipPresentationHandle",&,N,V_tooltipPresentationHandle) tooltipPresentationHandle;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+@property (TQ,N,V_edgeLocation) edgeLocation;
+@property (TQ,N,V_cornerLocation) cornerLocation;
+@property (Td,N,V_scalingFactor) scalingFactor;
+```
+
+## Instance methods
+
+```
+-[PKPaletteToolPickerView adaptivePresentationStyleForPresentationController:traitCollection:];
+-[PKPaletteToolPickerView adaptivePresentationStyleForPresentationController:];
+-[PKPaletteToolPickerView observeValueForKeyPath:ofObject:change:context:];
+-[PKPaletteToolPickerView scrollViewHeightConstraint];
+-[PKPaletteToolPickerView scalingFactor];
+-[PKPaletteToolPickerView init];
+-[PKPaletteToolPickerView scrollView];
+-[PKPaletteToolPickerView presentedViewControllers];
+-[PKPaletteToolPickerView dealloc];
+-[PKPaletteToolPickerView setScrollView:];
+-[PKPaletteToolPickerView setDelegate:];
+-[PKPaletteToolPickerView clippingView];
+-[PKPaletteToolPickerView delegate];
+-[PKPaletteToolPickerView setClippingView:];
+-[PKPaletteToolPickerView stackView];
+-[PKPaletteToolPickerView setScalingFactor:];
+-[PKPaletteToolPickerView setStackView:];
+-[PKPaletteToolPickerView traitCollectionDidChange:];
+-[PKPaletteToolPickerView _updateUI];
+-[PKPaletteToolPickerView setScrollViewTopConstraint:];
+-[PKPaletteToolPickerView setScrollViewHeightConstraint:];
+-[PKPaletteToolPickerView scrollViewTopConstraint];
+-[PKPaletteToolPickerView setScrollingEnabled:];
+-[PKPaletteToolPickerView dismissPalettePopoverWithCompletion:];
+-[PKPaletteToolPickerView setScrollViewLeadingConstraint:];
+-[PKPaletteToolPickerView scrollViewLeadingConstraint];
+-[PKPaletteToolPickerView scrollViewTrailingConstraint];
+-[PKPaletteToolPickerView setScrollViewTrailingConstraint:];
+-[PKPaletteToolPickerView _eraserToolView];
+-[PKPaletteToolPickerView _useCompactSize];
+-[PKPaletteToolPickerView setScrollViewCenterXConstraint:];
+-[PKPaletteToolPickerView colorAppearance];
+-[PKPaletteToolPickerView removeToolView:];
+-[PKPaletteToolPickerView scrollViewDelegateEventsHandler];
+-[PKPaletteToolPickerView setScrollViewCenterYConstraint:];
+-[PKPaletteToolPickerView updatePopoverUI];
+-[PKPaletteToolPickerView _addToolView:updateUI:];
+-[PKPaletteToolPickerView _canPresentToolAttributesPopover];
+-[PKPaletteToolPickerView _canSelectToolView:fromTap:];
+-[PKPaletteToolPickerView _ensureFirstToolVisibleForRTLIfNeeded];
+-[PKPaletteToolPickerView _firstInkingTool];
+-[PKPaletteToolPickerView _insertToolView:atIndex:updateUI:];
+-[PKPaletteToolPickerView _installScrollViewInView:];
+-[PKPaletteToolPickerView _installStackViewInScrollView:];
+-[PKPaletteToolPickerView _isAllToolsColorAppearanceEqualsTo:];
+-[PKPaletteToolPickerView _isAllToolsEdgeLocationEqualsTo:];
+-[PKPaletteToolPickerView _selectedToolsCount];
+-[PKPaletteToolPickerView _setSelectedToolView:animated:showToolTip:notifyDelegate:fromTap:];
+-[PKPaletteToolPickerView _showToolAttributesPopoverFromRect:inView:];
+-[PKPaletteToolPickerView _stackViewAxis];
+-[PKPaletteToolPickerView _toolTapGestureRecognizer:];
+-[PKPaletteToolPickerView _updateToolViewVisibilityLayingOutIfNeeded:];
+-[PKPaletteToolPickerView _widthForToolAtIndex:isCompactSize:];
+-[PKPaletteToolPickerView addToolView:];
+-[PKPaletteToolPickerView allowHDR];
+-[PKPaletteToolPickerView canToggleSelectedToolAndEraser];
+-[PKPaletteToolPickerView canToggleSelectedToolAndLastSelectedTool];
+-[PKPaletteToolPickerView clippingViewBottomConstraint];
+-[PKPaletteToolPickerView clippingViewLeadingConstraint];
+-[PKPaletteToolPickerView clippingViewTopConstraint];
+-[PKPaletteToolPickerView clippingViewTrailingConstraint];
+-[PKPaletteToolPickerView cornerLocation];
+-[PKPaletteToolPickerView drawingPaletteStatistics];
+-[PKPaletteToolPickerView edgeLocation];
+-[PKPaletteToolPickerView hasToolViewWithIdentifier:];
+-[PKPaletteToolPickerView indexOfSelectedTool];
+-[PKPaletteToolPickerView initWithToolViews:];
+-[PKPaletteToolPickerView insertToolView:atIndex:];
+-[PKPaletteToolPickerView interItemToolsSpacing];
+-[PKPaletteToolPickerView isScrollingEnabled];
+-[PKPaletteToolPickerView lastScrollViewDelegateBeforeScrollingToolToVisible];
+-[PKPaletteToolPickerView lastSelectedToolView];
+-[PKPaletteToolPickerView reloadToolViewsWithDataSource:];
+-[PKPaletteToolPickerView removeToolView:updateUI:];
+-[PKPaletteToolPickerView removeToolViewsWithIdentifier:];
+-[PKPaletteToolPickerView scrollSelectedToolViewToVisibleAnimated:];
+-[PKPaletteToolPickerView scrollToolViewAtIndex:toVisibleAnimated:];
+-[PKPaletteToolPickerView scrollViewBottomConstraint];
+-[PKPaletteToolPickerView scrollViewCenterXConstraint];
+-[PKPaletteToolPickerView scrollViewCenterYConstraint];
+-[PKPaletteToolPickerView scrollViewWidthConstraint];
+-[PKPaletteToolPickerView selectToolViewAtIndex:];
+-[PKPaletteToolPickerView selectedToolView];
+-[PKPaletteToolPickerView setAllowHDR:];
+-[PKPaletteToolPickerView setClippingViewBottomConstraint:];
+-[PKPaletteToolPickerView setClippingViewLassoToolEditingViewVisible:];
+-[PKPaletteToolPickerView setClippingViewLeadingConstraint:];
+-[PKPaletteToolPickerView setClippingViewTopConstraint:];
+-[PKPaletteToolPickerView setClippingViewTrailingConstraint:];
+-[PKPaletteToolPickerView setColorAppearance:];
+-[PKPaletteToolPickerView setCornerLocation:];
+-[PKPaletteToolPickerView setDrawingPaletteStatistics:];
+-[PKPaletteToolPickerView setEdgeLocation:];
+-[PKPaletteToolPickerView setInterItemToolsSpacing:];
+-[PKPaletteToolPickerView setLastScrollViewDelegateBeforeScrollingToolToVisible:];
+-[PKPaletteToolPickerView setLastSelectedToolView:];
+-[PKPaletteToolPickerView setPresentedViewControllers:];
+-[PKPaletteToolPickerView setScrollViewBottomConstraint:];
+-[PKPaletteToolPickerView setScrollViewDelegateEventsHandler:];
+-[PKPaletteToolPickerView setScrollViewWidthConstraint:];
+-[PKPaletteToolPickerView setStackViewCompactHeightConstraint:];
+-[PKPaletteToolPickerView setToolAttributesPopover:];
+-[PKPaletteToolPickerView setToolsHeightConstraints:];
+-[PKPaletteToolPickerView setToolsWidthCompactConstraints:];
+-[PKPaletteToolPickerView setToolsWidthConstraints:];
+-[PKPaletteToolPickerView setTooltipPresentationHandle:];
+-[PKPaletteToolPickerView setUnselectedToolsVisible:];
+-[PKPaletteToolPickerView sourceRectForPopoverPresentationForTool:];
+-[PKPaletteToolPickerView sourceViewForPopoverPresentationForTool:];
+-[PKPaletteToolPickerView stackViewCompactHeightConstraint];
+-[PKPaletteToolPickerView toggleSelectedToolAndEraserAnimated:];
+-[PKPaletteToolPickerView toggleSelectedToolAndLastSelectedToolAnimated:];
+-[PKPaletteToolPickerView toggleSelectedToolAttributesPopoverFromRect:inView:];
+-[PKPaletteToolPickerView toolAttributesPopover];
+-[PKPaletteToolPickerView toolViews];
+-[PKPaletteToolPickerView toolsHeightConstraints];
+-[PKPaletteToolPickerView toolsWidthCompactConstraints];
+-[PKPaletteToolPickerView toolsWidthConstraints];
+-[PKPaletteToolPickerView tooltipPresentationHandle];
+-[PKPaletteToolPickerView unselectedToolsVisible];
+-[PKPaletteToolPickerView updateClippingViewEdgesVisibility];
+```

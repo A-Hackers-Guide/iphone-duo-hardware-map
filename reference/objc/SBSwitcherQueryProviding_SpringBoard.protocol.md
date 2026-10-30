@@ -1,0 +1,92 @@
+# `SBSwitcherQueryProviding` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `SBSwitcherQueryDefaultImplementationProviding`
+- 0 instance variables, 0 properties, 82 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[SBSwitcherQueryProviding jetsamModeForAppLayout:];
+-[SBSwitcherQueryProviding scaleForIndex:];
+-[SBSwitcherQueryProviding titleOpacityForIndex:];
+-[SBSwitcherQueryProviding homeScreenScale];
+-[SBSwitcherQueryProviding isContainerStatusBarVisible];
+-[SBSwitcherQueryProviding foregroundAppLayouts];
+-[SBSwitcherQueryProviding homeScreenBackdropBlurProgress];
+-[SBSwitcherQueryProviding homeScreenDimmingAlpha];
+-[SBSwitcherQueryProviding isSwitcherWindowUserInteractionEnabled];
+-[SBSwitcherQueryProviding homeScreenAlpha];
+-[SBSwitcherQueryProviding isHomeScreenContentRequired];
+-[SBSwitcherQueryProviding touchBehaviorForLayoutRole:inAppLayout:];
+-[SBSwitcherQueryProviding cornerRadiiForIndex:];
+-[SBSwitcherQueryProviding clipsToUnobscuredMarginAtIndex:];
+-[SBSwitcherQueryProviding shouldScaleOverlayToFillBoundsAtIndex:];
+-[SBSwitcherQueryProviding animationAttributesForLayoutElement:];
+-[SBSwitcherQueryProviding adjustedAppLayoutsForAppLayouts:];
+-[SBSwitcherQueryProviding homeScreenBackdropBlurType];
+-[SBSwitcherQueryProviding dockProgress];
+-[SBSwitcherQueryProviding visibleHomeAffordanceLayoutElements];
+-[SBSwitcherQueryProviding topMostLayoutElements];
+-[SBSwitcherQueryProviding isSwitcherWindowVisible];
+-[SBSwitcherQueryProviding titleAndIconOpacityForIndex:];
+-[SBSwitcherQueryProviding activityModeForAppLayout:];
+-[SBSwitcherQueryProviding appLayoutsToCacheSnapshots];
+-[SBSwitcherQueryProviding shouldScrollViewBlockTouches];
+-[SBSwitcherQueryProviding isWallpaperRequiredForSwitcher];
+-[SBSwitcherQueryProviding visibleAppLayouts];
+-[SBSwitcherQueryProviding wantsDockBehaviorAssertion];
+-[SBSwitcherQueryProviding isContentStatusBarVisibleForIndex:];
+-[SBSwitcherQueryProviding shouldAccessoryDrawShadowForAppLayout:];
+-[SBSwitcherQueryProviding dockUpdateMode];
+-[SBSwitcherQueryProviding opacityForLayoutRole:inAppLayout:atIndex:];
+-[SBSwitcherQueryProviding shouldAllowContentViewTouchesForLayoutRole:inAppLayout:];
+-[SBSwitcherQueryProviding visibleCornersForTouchResizeForLayoutRole:inAppLayout:];
+-[SBSwitcherQueryProviding isScrollEnabled];
+-[SBSwitcherQueryProviding shadowOpacityForLayoutRole:atIndex:];
+-[SBSwitcherQueryProviding headerStyleForIndex:];
+-[SBSwitcherQueryProviding isIndexRubberbandableForSwipeToKill:];
+-[SBSwitcherQueryProviding wallpaperStyle];
+-[SBSwitcherQueryProviding frameForIndex:];
+-[SBSwitcherQueryProviding activeLeafAppLayoutsReachableByKeyboardShortcut];
+-[SBSwitcherQueryProviding wallpaperScale];
+-[SBSwitcherQueryProviding destinationAppLayoutForDismissingCurrentMode];
+-[SBSwitcherQueryProviding backgroundOpacityForIndex:];
+-[SBSwitcherQueryProviding keyboardSuppressionMode];
+-[SBSwitcherQueryProviding neighboringAppLayoutsForFocusedAppLayout:];
+-[SBSwitcherQueryProviding visibleMarginForItemContainerAtIndex:];
+-[SBSwitcherQueryProviding wallpaperOverlayAlphaForIndex:];
+-[SBSwitcherQueryProviding indexToScrollToAfterRemovingIndex:];
+-[SBSwitcherQueryProviding regionDividerOpacity];
+-[SBSwitcherQueryProviding activeCornersForTouchResizeForLayoutRole:inAppLayout:];
+-[SBSwitcherQueryProviding isFocusEnabledForAppLayout:];
+-[SBSwitcherQueryProviding isItemResizingAllowedForLayoutRole:inAppLayout:];
+-[SBSwitcherQueryProviding shouldUseBrightMaterialForIndex:];
+-[SBSwitcherQueryProviding isLayoutRoleKillable:inAppLayout:atIndex:];
+-[SBSwitcherQueryProviding canPerformKeyboardShortcutAction:forBundleIdentifier:];
+-[SBSwitcherQueryProviding isLayoutRoleEligibleForContentDragSpringLoading:inAppLayout:];
+-[SBSwitcherQueryProviding indexToScrollToAfterInsertingAtIndex:];
+-[SBSwitcherQueryProviding isItemContainerPointerInteractionEnabled];
+-[SBSwitcherQueryProviding regionDividerCenter];
+-[SBSwitcherQueryProviding appLayoutsToResignActive];
+-[SBSwitcherQueryProviding shelfBackgroundBlurOpacity];
+-[SBSwitcherQueryProviding isLayoutRoleSelectable:inAppLayout:];
+-[SBSwitcherQueryProviding appLayoutForReceivingHardwareButtonEvents];
+-[SBSwitcherQueryProviding wantsRegionDivider];
+-[SBSwitcherQueryProviding lighteningAlphaForIndex:];
+-[SBSwitcherQueryProviding preferredStatusBarAxis];
+-[SBSwitcherQueryProviding shelfBackgroundBlurFrame];
+-[SBSwitcherQueryProviding asyncRenderingAttributesForAppLayout:];
+-[SBSwitcherQueryProviding shadowStyleForLayoutRole:inAppLayout:];
+-[SBSwitcherQueryProviding wantsHomeScreenPointerInteractions];
+-[SBSwitcherQueryProviding shouldConfigureInAppDockHiddenAssertion];
+-[SBSwitcherQueryProviding regionDividerOptions];
+-[SBSwitcherQueryProviding preferredSnapshotOrientationForAppLayout:];
+-[SBSwitcherQueryProviding iconOpacityForIndex:];
+-[SBSwitcherQueryProviding shouldBringCardToFrontDuringInsertionOrRemoval];
+-[SBSwitcherQueryProviding isHomeAffordanceSupportedForAppLayout:];
+-[SBSwitcherQueryProviding shouldAnimateInsertionOrRemovalOfAppLayout:atIndex:];
+-[SBSwitcherQueryProviding wantsAsynchronousSurfaceRetentionAssertion];
+-[SBSwitcherQueryProviding appLayoutsToCacheFullsizeSnapshots];
+-[SBSwitcherQueryProviding isLayoutRoleDraggable:inAppLayout:];
+```

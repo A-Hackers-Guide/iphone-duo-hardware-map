@@ -1,0 +1,20 @@
+# `CAFAutomakerSettingsRemoteNotificationObserver` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/CarAccessoryFramework.framework/CarAccessoryFramework`](../userland/System__Library__PrivateFrameworks__CarAccessoryFramework.framework__CarAccessoryFramework.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `CAFServiceObserver`
+- 0 instance variables, 0 properties, 10 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[CAFAutomakerSettingsRemoteNotificationObserver automakerSettingsRemoteNotificationService:didUpdateIdentifier:];
+-[CAFAutomakerSettingsRemoteNotificationObserver automakerSettingsRemoteNotificationService:didUpdateAutomakerSettingsNotificationButtons:];
+-[CAFAutomakerSettingsRemoteNotificationObserver automakerSettingsRemoteNotificationService:didUpdateDisplayPanelIdentifier:];
+-[CAFAutomakerSettingsRemoteNotificationObserver automakerSettingsRemoteNotificationService:didUpdateDisplayZoneIdentifier:];
+-[CAFAutomakerSettingsRemoteNotificationObserver automakerSettingsRemoteNotificationService:didUpdateName:];
+-[CAFAutomakerSettingsRemoteNotificationObserver automakerSettingsRemoteNotificationService:didUpdateSymbolNameAndColor:];
+-[CAFAutomakerSettingsRemoteNotificationObserver automakerSettingsRemoteNotificationService:didUpdateTrailingButton:];
+-[CAFAutomakerSettingsRemoteNotificationObserver automakerSettingsRemoteNotificationService:didUpdateTrailingButtonState:];
+-[CAFAutomakerSettingsRemoteNotificationObserver automakerSettingsRemoteNotificationService:didUpdateUserVisibleDescription:];
+-[CAFAutomakerSettingsRemoteNotificationObserver automakerSettingsRemoteNotificationService:didUpdateUserVisibleLabel:];
+```

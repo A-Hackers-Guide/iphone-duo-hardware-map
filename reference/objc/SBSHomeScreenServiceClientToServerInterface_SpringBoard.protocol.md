@@ -1,0 +1,125 @@
+# `SBSHomeScreenServiceClientToServerInterface` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- 0 instance variables, 13 properties, 98 instance methods, 0 class methods
+
+## Properties
+
+```
+@property (T@"NSNumber",C,N) largeIconLayoutEnabledValue;
+@property (T@"NSNumber",C,N) largeIconSizeEnabledValue;
+@property (T@"NSNumber",C,N) addsNewIconsToHomeScreenValue;
+@property (T@"NSNumber",C,N) showsBadgesInAppLibraryValue;
+@property (T@"NSNumber",C,N) showsHomeScreenSearchAffordanceValue;
+@property (T@"SBSHomeScreenServiceArrayOfStrings",R,C,N) allHomeScreenApplicationBundleIdentifiers;
+@property (T@"SBSHomeScreenServiceArrayOfStrings",R,C,N) allHomeScreenApplicationPlaceholderBundleIdentifiers;
+@property (T@"NSString",R,C,N) allIconLists;
+@property (T@"SBSDebugActiveWidgetInfo",R,N) debuggingActiveWidgetInfo;
+@property (T@"NSNumber",R,C,N) homeScreenLayoutAvailability;
+@property (T@"SBSHomeScreenServiceArrayOfNumbers",R,C,N) overflowSlotCounts;
+@property (T@"SBSHomeScreenIconStyleConfiguration",C,N) homeScreenIconStyleConfiguration;
+@property (TB,R,N,GisWallpaperDimmed) wallpaperDimmed;
+```
+
+## Instance methods
+
+```
+-[SBSHomeScreenServiceClientToServerInterface replaceApplicationIconsWithBundleIdentifier:withApplicationIconsWithBundleIdentifier:options:];
+-[SBSHomeScreenServiceClientToServerInterface silhouetteLayoutForPageAtIndex:displaySize:];
+-[SBSHomeScreenServiceClientToServerInterface redo];
+-[SBSHomeScreenServiceClientToServerInterface undo];
+-[SBSHomeScreenServiceClientToServerInterface randomizeAllIconsAcrossPagesWithPageCount:];
+-[SBSHomeScreenServiceClientToServerInterface tearDownAndResetRootIconLists];
+-[SBSHomeScreenServiceClientToServerInterface silhouetteLayoutForPageAtIndex:];
+-[SBSHomeScreenServiceClientToServerInterface addFileStackWithURL:];
+-[SBSHomeScreenServiceClientToServerInterface runDownloadingIconTest];
+-[SBSHomeScreenServiceClientToServerInterface removeFileStackWithURL:];
+-[SBSHomeScreenServiceClientToServerInterface configureDeweyOneCategoryWithAllApps];
+-[SBSHomeScreenServiceClientToServerInterface clearNewlyInstalledAndRecentlyUpdatedAppIndicators];
+-[SBSHomeScreenServiceClientToServerInterface importOSMigrationHomeScreenLayout:];
+-[SBSHomeScreenServiceClientToServerInterface removeAllWidgets];
+-[SBSHomeScreenServiceClientToServerInterface setLargeIconSizeEnabledValue:];
+-[SBSHomeScreenServiceClientToServerInterface deleteAllWebClips];
+-[SBSHomeScreenServiceClientToServerInterface isWallpaperDimmed];
+-[SBSHomeScreenServiceClientToServerInterface setDockEdge:animated:];
+-[SBSHomeScreenServiceClientToServerInterface setHomeScreenIconStyleConfiguration:wallpaperDimmed:];
+-[SBSHomeScreenServiceClientToServerInterface overrideBadgeValue:forBundleIdentifier:];
+-[SBSHomeScreenServiceClientToServerInterface osMigrationDefaultHomeScreenLayout];
+-[SBSHomeScreenServiceClientToServerInterface requestSuggestedApplicationWithBundleIdentifier:assertionPort:completion:];
+-[SBSHomeScreenServiceClientToServerInterface replaceApplicationIconsWithBundleIdentifier:withApplicationIconsWithBundleIdentifier:];
+-[SBSHomeScreenServiceClientToServerInterface hasConfiguredFilesStackWithURL:];
+-[SBSHomeScreenServiceClientToServerInterface setIconListsHidden:];
+-[SBSHomeScreenServiceClientToServerInterface resetCategoriesLayoutWithCompletion:];
+-[SBSHomeScreenServiceClientToServerInterface swapApplicationIconsWithBundleIdentifier:withApplicationIconsWithBundleIdentifier:];
+-[SBSHomeScreenServiceClientToServerInterface setHomeScreenIconStyleConfiguration:];
+-[SBSHomeScreenServiceClientToServerInterface stashHomeScreenLayoutWithName:];
+-[SBSHomeScreenServiceClientToServerInterface organizeAllIconsIntoFoldersWithPageCount:];
+-[SBSHomeScreenServiceClientToServerInterface runRemoveAndRestoreIconTest];
+-[SBSHomeScreenServiceClientToServerInterface badgeValueForIconWithApplicationBundleIdentifier:completionHandler:];
+-[SBSHomeScreenServiceClientToServerInterface reloadHomeScreenLayout];
+-[SBSHomeScreenServiceClientToServerInterface setLargeIconLayoutEnabledValue:];
+-[SBSHomeScreenServiceClientToServerInterface setObservingInstalledWebClips:];
+-[SBSHomeScreenServiceClientToServerInterface debugContinuityWithBadgeType:deviceTypeIdentifier:];
+-[SBSHomeScreenServiceClientToServerInterface swapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithBundleIdentifier:];
+-[SBSHomeScreenServiceClientToServerInterface addDebugIconWithSizeClassDescription:inPage:atPositionDescription:];
+-[SBSHomeScreenServiceClientToServerInterface requestAppLibraryUpdate:reason:completion:];
+-[SBSHomeScreenServiceClientToServerInterface addFileStackWithURL:preferredDisplayName:];
+-[SBSHomeScreenServiceClientToServerInterface setupHomeScreenForWidgetScrollPerformanceTest];
+-[SBSHomeScreenServiceClientToServerInterface precacheIconLayersOnFirstPageWithAppearanceDescriptions:];
+-[SBSHomeScreenServiceClientToServerInterface refreshAppLibrary:reason:];
+-[SBSHomeScreenServiceClientToServerInterface folderPathToIconWithBundleIdentifier:];
+-[SBSHomeScreenServiceClientToServerInterface hasWidgetWithBundleIdentifier:];
+-[SBSHomeScreenServiceClientToServerInterface restoreStashedHomeScreenLayoutWithName:];
+-[SBSHomeScreenServiceClientToServerInterface setObservingIconTintColor:];
+-[SBSHomeScreenServiceClientToServerInterface setObservingHomeScreenLayout:];
+-[SBSHomeScreenServiceClientToServerInterface setObservingIconBadgeValue:];
+-[SBSHomeScreenServiceClientToServerInterface canSwapApplicationIconsInProminentPositionsWithBundleIdentifier:withApplicationIconsWithBundleIdentifier:];
+-[SBSHomeScreenServiceClientToServerInterface showsBadgesInAppLibraryValue];
+-[SBSHomeScreenServiceClientToServerInterface addPageOfApplicationIconsWithBundleIdentifier:];
+-[SBSHomeScreenServiceClientToServerInterface resetTodayViewLayout];
+-[SBSHomeScreenServiceClientToServerInterface homeScreenLayoutAvailability];
+-[SBSHomeScreenServiceClientToServerInterface addSuggestedPageWithPageType:focusModeIdentifier:];
+-[SBSHomeScreenServiceClientToServerInterface osMigrationHomeScreenLayout];
+-[SBSHomeScreenServiceClientToServerInterface configureCategoryMapProviderToUseCategoryMapAtURL:];
+-[SBSHomeScreenServiceClientToServerInterface setAddsNewIconsToHomeScreenValue:];
+-[SBSHomeScreenServiceClientToServerInterface showsHomeScreenSearchAffordanceValue];
+-[SBSHomeScreenServiceClientToServerInterface configureDeweyEachAppHasItsOwnCategory];
+-[SBSHomeScreenServiceClientToServerInterface allHomeScreenApplicationBundleIdentifiers];
+-[SBSHomeScreenServiceClientToServerInterface clearAllOverflowSlotCounts];
+-[SBSHomeScreenServiceClientToServerInterface clearTodayViewLayout];
+-[SBSHomeScreenServiceClientToServerInterface configureLibraryWithCategoryLimit:];
+-[SBSHomeScreenServiceClientToServerInterface addApplicationIconToHomeScreenWithBundleIdentifier:inPage:atPositionDescription:];
+-[SBSHomeScreenServiceClientToServerInterface setObservingHomeScreenApplications:];
+-[SBSHomeScreenServiceClientToServerInterface badgeValueForIconWithApplicationBundleIdentifier:];
+-[SBSHomeScreenServiceClientToServerInterface addsNewIconsToHomeScreenValue];
+-[SBSHomeScreenServiceClientToServerInterface addApplicationIconToHomeScreenWithBundleIdentifier:];
+-[SBSHomeScreenServiceClientToServerInterface addEmptyPage];
+-[SBSHomeScreenServiceClientToServerInterface allHomeScreenApplicationPlaceholderBundleIdentifiers];
+-[SBSHomeScreenServiceClientToServerInterface removeWidgetsFromHomeScreen];
+-[SBSHomeScreenServiceClientToServerInterface forbidApplicationBundleIdentifierFromLibrary:withCompletion:];
+-[SBSHomeScreenServiceClientToServerInterface setShowsHomeScreenSearchAffordanceValue:];
+-[SBSHomeScreenServiceClientToServerInterface ignoreAppWithBundleIdentifier:];
+-[SBSHomeScreenServiceClientToServerInterface overflowSlotCounts];
+-[SBSHomeScreenServiceClientToServerInterface largeIconSizeEnabledValue];
+-[SBSHomeScreenServiceClientToServerInterface changeDisplayedDateWithAutoupdatingSecondsOverride:];
+-[SBSHomeScreenServiceClientToServerInterface unforbidApplicationBundleIdentifierFromLibrary:withCompletion:];
+-[SBSHomeScreenServiceClientToServerInterface organizeAllIconsAcrossPagesWithPageCount:];
+-[SBSHomeScreenServiceClientToServerInterface runFloatingDockStressTestWithCompletion:];
+-[SBSHomeScreenServiceClientToServerInterface setShowsBadgesInAppLibraryValue:];
+-[SBSHomeScreenServiceClientToServerInterface debuggingActiveWidgetInfo];
+-[SBSHomeScreenServiceClientToServerInterface allIconLists];
+-[SBSHomeScreenServiceClientToServerInterface recacheAllData];
+-[SBSHomeScreenServiceClientToServerInterface addWidgetToTodayViewWithBundleIdentifier:];
+-[SBSHomeScreenServiceClientToServerInterface homeScreenIconStyleConfiguration];
+-[SBSHomeScreenServiceClientToServerInterface ignoreAllApps];
+-[SBSHomeScreenServiceClientToServerInterface simulateCampoEnablementChange];
+-[SBSHomeScreenServiceClientToServerInterface resetHomeScreenLayoutWithCompletion:];
+-[SBSHomeScreenServiceClientToServerInterface presentAppLibraryCategoryPodForCategoryIdentifier:completion:];
+-[SBSHomeScreenServiceClientToServerInterface setObservingHomeScreenLayoutAvailability:];
+-[SBSHomeScreenServiceClientToServerInterface dismissAppLibraryWithCompletion:];
+-[SBSHomeScreenServiceClientToServerInterface changeDisplayedDateOverride:];
+-[SBSHomeScreenServiceClientToServerInterface insertEmptyPageAtIndex:];
+-[SBSHomeScreenServiceClientToServerInterface largeIconLayoutEnabledValue];
+-[SBSHomeScreenServiceClientToServerInterface presentAppLibraryAnimated:completion:];
+-[SBSHomeScreenServiceClientToServerInterface changeDisplayedDateOffsetOverride:];
+```

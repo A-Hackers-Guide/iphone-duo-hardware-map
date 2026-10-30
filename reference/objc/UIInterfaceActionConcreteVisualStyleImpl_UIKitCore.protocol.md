@@ -1,0 +1,47 @@
+# `UIInterfaceActionConcreteVisualStyleImpl` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 37 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[UIInterfaceActionConcreteVisualStyleImpl defaultScreen];
+-[UIInterfaceActionConcreteVisualStyleImpl actionBackgroundColorForViewState:];
+-[UIInterfaceActionConcreteVisualStyleImpl actionTitleLabelFontForViewState:];
+-[UIInterfaceActionConcreteVisualStyleImpl newActionBackgroundViewForViewState:];
+-[UIInterfaceActionConcreteVisualStyleImpl actionTitleLabelColorForViewState:];
+-[UIInterfaceActionConcreteVisualStyleImpl newGroupBackgroundViewWithGroupViewState:];
+-[UIInterfaceActionConcreteVisualStyleImpl contentCornerRadius];
+-[UIInterfaceActionConcreteVisualStyleImpl horizontalImageContentSpacing];
+-[UIInterfaceActionConcreteVisualStyleImpl contentMargin];
+-[UIInterfaceActionConcreteVisualStyleImpl verticalImageContentSpacing];
+-[UIInterfaceActionConcreteVisualStyleImpl allowsZeroSizedSectionSeparators];
+-[UIInterfaceActionConcreteVisualStyleImpl configureForDismissingGroupView:alongsideTransitionCoordinator:];
+-[UIInterfaceActionConcreteVisualStyleImpl actionPropertiesAffectingLabelStyling];
+-[UIInterfaceActionConcreteVisualStyleImpl selectByPressGestureRequired];
+-[UIInterfaceActionConcreteVisualStyleImpl actionClassificationLabelFontForViewState:];
+-[UIInterfaceActionConcreteVisualStyleImpl actionPropertiesAffectingActionRepresentationViewStyling];
+-[UIInterfaceActionConcreteVisualStyleImpl actionGroupPropertiesAffectingActionsScrollViewStyling];
+-[UIInterfaceActionConcreteVisualStyleImpl actionImageViewTintColorForImageProperty:actionViewState:];
+-[UIInterfaceActionConcreteVisualStyleImpl actionTitleLabelCompositingFilterForViewState:];
+-[UIInterfaceActionConcreteVisualStyleImpl newSectionSeparatorViewForGroupViewState:];
+-[UIInterfaceActionConcreteVisualStyleImpl actionSequenceEdgeInsets];
+-[UIInterfaceActionConcreteVisualStyleImpl configureAttributesForTitleLabel:classificationLabel:actionViewState:];
+-[UIInterfaceActionConcreteVisualStyleImpl configureForPresentingGroupView:alongsideTransitionCoordinator:];
+-[UIInterfaceActionConcreteVisualStyleImpl configureAttributesForImageView:imageProperty:actionViewState:];
+-[UIInterfaceActionConcreteVisualStyleImpl configureAttributesForActionScrollView:groupViewState:];
+-[UIInterfaceActionConcreteVisualStyleImpl configureAttributesForActionRepresentationView:actionViewState:];
+-[UIInterfaceActionConcreteVisualStyleImpl shouldUseVibrantTitleLabels];
+-[UIInterfaceActionConcreteVisualStyleImpl maximumActionGroupContentSize];
+-[UIInterfaceActionConcreteVisualStyleImpl actionViewStateForAttachingToActionRepresentationView:];
+-[UIInterfaceActionConcreteVisualStyleImpl actionSpacingForGroupViewState:];
+-[UIInterfaceActionConcreteVisualStyleImpl selectionFeedbackEnabled];
+-[UIInterfaceActionConcreteVisualStyleImpl actionClassificationLabelColorForViewState:];
+-[UIInterfaceActionConcreteVisualStyleImpl minimumActionContentSize];
+-[UIInterfaceActionConcreteVisualStyleImpl newActionSeparatorViewForGroupViewState:];
+-[UIInterfaceActionConcreteVisualStyleImpl actionPropertiesAffectingImageViewStyling];
+-[UIInterfaceActionConcreteVisualStyleImpl selectByIndirectPointerTouchRequired];
+-[UIInterfaceActionConcreteVisualStyleImpl actionSectionSpacing];
+```

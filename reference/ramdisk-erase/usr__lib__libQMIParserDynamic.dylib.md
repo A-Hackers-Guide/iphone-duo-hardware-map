@@ -1,0 +1,421 @@
+# `/usr/lib/libQMIParserDynamic.dylib`
+
+From the erase/recovery restore ramdisk (141-28940-105.dmg, runs restored_external). 293,696 bytes.
+
+## Header
+
+```
+Magic         = 64-bit MachO
+Type          = DYLIB
+CPU           = AARCH64, 0xc caps: USR00
+Commands      = 20 (Size: 2064)
+Flags         = NoUndefs, DyldLink, TwoLevel, BindsToWeak, NoReexportedDylibs, AppExtensionSafe
+```
+
+## Linked libraries (4)
+
+- `/usr/lib/libQMIParserDynamic.dylib (compatibility version 1.0.0, current version 1.0.0)`
+- `/usr/lib/libTelephonyUtilDynamic.dylib (compatibility version 1.0.0, current version 1.0.0)`
+- `/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2200.32.0)`
+- `/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1359.40.3)`
+
+## Entitlements
+
+```xml
+  - no entitlements
+```
+
+## Strings (390)
+
+```
+QMI_ERR_PIN_BLOCKED
+CM_CALL_CMD_ERR_MODE_PREF_P
+CM_CALL_CMD_ERR_NO_SO_S
+CM_CALL_CMD_ERR_NON_NEGOT_BEARER_P
+ (0x
+QMI_ERR_INVALID_MCAST_HANDLE
+QMI_ERR_TPDU_TYPE
+QMI Access Terminal Service
+ 
+QMI_ERROR_NONE
+QMI_ERR_INVALID_PROFILE
+QMI_ERR_DISABLED
+QMI_ERR_PB_NOT_AVAILABLE
+CM_CALL_CMD_ERR_IN_USE_S
+ctl::tlv::PowerSaveState
+TLV parsing failed; expected 
+CM_CALL_CMD_ERR_FUNCTION_UNAVAILABLE_DUE_TO_UNDEFINED_FEATURE
+QMI Mav L1 Service
+ctl::ReleaseClientId::Response
+fProtocol
+QMI_ERR_INVALID_TRANSITION
+QMI_ERR_OP_PARTIAL_FAILURE
+CM_CALL_CMD_ERR_SRV_OPT_P
+v32@?0r^{QMuxHeader=CSCCCiS}8r*16i24i28
+QMI_ERR_TOO_MANY_DUPLICATES
+QMI Mav P2P Service
+Mismatch in uint16_t field: actual=
+QMI_ERR_MESSAGE_DELIVERY_FAILURE
+QMI_ERR_ENCODING
+QMI_ERR_INFO_UNAVAILABLE
+QMI_ERR_UNSUPPORTED_QMI_CMD
+ctl::tlv::DataFormat
+tlv_write_exception: msgId=
+CM_CALL_CMD_ERR_INVALID_PRIMARY_CALL_ID_P
+CM_CALL_CMD_ERR_CONNECTION_ID_OUT_L
+ctl::ConfigPowerSaveMode::Request
+ctl::ConfigPowerSaveModeExt::Response
+UInt32 field is a number but out of range
+kFixedArray
+request
+QMI_ERR_NO_THRESHOLDS
+vector
+QMI_ERR_INVALID_PDP_TYPE
+CM_CALL_CMD_ERR_NULL_NUM_P
+ATCS_BUF_TOO_SMALL
+ [1 byte]: 
+v24@?0*8Q16
+QMI_ERR_INVALID_HANDLE
+QMI_ERR_MAX_QOS_REQUESTS_IN_USE
+CM_CALL_CMD_ERR_CALL_SUPS_P
+CM_CALL_CMD_ERR_QOS_LEN_P
+CM_CALL_CMD_ERR_PROFILE_NUMBER_IN_USE_P
+QMI BSP APPS Service
+, expected=0x
+Object at index does not have the right name
+NAS
+QMI_ERR_INTERNAL
+QMI_ERR_PB_NOT_READY
+CM_CALL_CMD_ERR_MC_COM_L
+Int16 field is a number but out of range
+UInt16 field is a number but out of range
+QMI_ERR_PIN_PERM_BLOCKED
+QMI_ERR_NOT_A_MCAST_IFACE
+QMI_ERR_MAX_MCAST_REQUESTS_IN_USE
+CM_CALL_CMD_ERR_ACTIVATE_CODE_P
+::
+CM_CALL_CMD_ERR_SRV_STATE_S
+QMI Wireless Data Service
+QMI Phonebook Manager Service
+CIQ
+)
+(unknown 
+QMI_ERR_MISSING_ARG
+QMI_ERR_OP_NETWORK_UNSUPPORTED
+QMI_ERR_EXTENDED_INTERNAL
+QMI_ERR_GENERIC_0057
+kVectorNoLen
+Object at index is a dictionary but does not have exactly one element
+none
+QMI_ERR_DEVICE_NOT_READY
+QOS
+ctl::tlv::ServiceType
+fFormat
+ bytes]:
+QMI_ERR_INVALID_TECH_PREF
+QMI_ERR_SESSION_INACTIVE
+QMI_ERR_PB_SERIALIZE
+CM_CALL_CMD_ERR_LAST_ACT_DATA_NET_P
+UIM
+ELQM
+ctl::tlv::IndicationSetExt
+unknown
+CM_CALL_CMD_ERR_INVALID_SIM_STATE_S
+PDS
+ctl::tlv::IndicationSet
+Null object encountered
+QMI_ERR_INVALID_TX_ID
+QMI_ERR_REQUESTED_NUM_UNSUPPORTED
+QMI_ERR_POLICY_MISMATCH
+ATCS_BUF_NO_HEADER
+QMI Qos Service
+Unknown Service
+787
+RESP
+QMI_ERR_SUPS_FAILURE_CAUSE
+CM_CALL_CMD_ERR_NO_CALL_ID_S
+ATCS_PARSING_ERROR
+QMI Apple Wireless Diagnostics
+BSP
+fResult
+indication
+basic_string
+QMI_ERR_NO_FREE_PROFILE
+QMI_ERR_PB_DESERIALIZE
+MAV_QMI_ERR_DATA_IN_BUFFER
+CM_CALL_CMD_ERR_SRV_TYPE_S
+ATCS_TIMEOUT
+QMI Modem File System Extended Service
+QMI Wireless Data Administrative Service
+QMI_ERR_GENERIC_0014
+QMI_ERR_UIM_NOT_INITIALIZED
+QMI_ERR_NETWORK_ABORTED
+CM_CALL_CMD_ERR_CALL_CONTROL_REJECTED
+QMI Mav 5WI Service
+Object encountered, but not a XPC_TYPE_ARRAY as expected
+kVectorLen32
+[ Unable to parse this TLV as defined ]
+QMI_ERR_INJECT_TIMEOUT
+CM_CALL_CMD_ERR_INVALID_GROUP_ID_P
+QMI Position Determination Service
+QMI Subsystem Control
+ctl::SetDataFormat::Request
+ctl::SetPowerSaveMode::Response
+ expected bytes
+Mismatch in bool field: actual=
+QMI_ERR_FLOW_SUSPENDED
+QMI_ERR_UNABORTABLE_TRANSACTION
+QMI_ERR_SESSION_OWNERSHIP
+TLV Id does not match: actual=0x
+response
+QMI_ERR_NO_SIM
+QMI_ERR_PIN2_RESTRICTION
+MAV_QMI_ERR_FAIL_ORIG_DURING_INCOMING
+CM_CALL_CMD_ERR_MAX_SEC_PDP_CONTEXT_PER_PRI_S
+QMI Control Service
+VS
+Object does not have enough elements!
+QMI_ERR_HARDWARE_RESTRICTED
+QMI_ERR_VINYL_NOT_READY
+MFSE
+fEnabledIndSet
+UInt64 field is a number but is negative
+QMI_ERR_INVALID_QMI_CMD
+QMI_ERR_GENERIC_0059
+QMI_ERR_FILE_NOT_SUPPORTED
+UNKNOWN ERROR
+PDC
+kVectorLen8
+fResultCode
+Mismatch in uint32_t field: actual=
+CM_CALL_CMD_ERR_FLASH_S
+CM_CALL_CMD_ERR_FAVORED_MODE_PREF_FOR_ORIGINATION
+DMS
+Mismatch in uint64_t field: actual=
+actual=[
+QMI_ERR_INVALID_CLIENT_ID
+QMI_ERR_AUTHENTICATION_FAILED
+QMI_ERR_MESSAGE_NOT_SENT
+QMI_ERR_INVALID_OPERATION
+CM_CALL_CMD_ERR_BAD_PRIVACY_PREF_S
+CM_CALL_CMD_ERR_CALL_ORIG_FAIL_S
+Non-number type encountered.
+QMI_ERR_PB_TEXT_TOO_LONG
+AT
+MAVIMS
+ctl::Sync::Response
+String, but could not find a valid number
+bytes
+QMI_ERR_NO_MEMORY
+CM_CALL_CMD_ERR_NUM_P
+CM_CALL_CMD_ERR_SUPS_SRV_ON_PROHIBITED_LINE_S
+AUDIO
+REQ
+TLV parsing failed; endpoint preceded beginning of buffer.
+QMI_ERR_INVALID_INDEX
+QMI_ERR_CAUSE_CODE
+QMI_ERR_SESSION_INVALID
+QMI_ERR_NO_SUBSCRIPTION
+CM_CALL_CMD_ERR_NO_BUF_L
+CM_CALL_CMD_ERR_INVALID_BC_P
+ATCS_MIN_ERROR_VALUE
+QMI Device Management Service
+QMI_ERR_MALFORMED_MSG
+QMI_ERR_OUT_OF_CALL
+QMI_ERR_INCOMPATIBLE_STATE
+Parse underrun; expected end of message but more bytes still remain
+ctl::tlv::AssignedId
+ctl::Sync::Indication
+Int8 field is a number but out of range
+ bytes]: 
+QMI_ERR_PB_DELETE_IN_PROG
+CM_CALL_CMD_ERR_ALPHA_LEN_P
+CM_CALL_CMD_ERR_NULL_PARAM_P
+CM_CALL_CMD_ERR_INVALID_MODE_S
+ctl::GetClientId::Response
+Object encountered, but not a XPC_TYPE_DATA as expected
+Object at index is not a dictionary type
+parse_error
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~
+QMI_ERR_ABORTED
+QMI_ERR_INVALID_MESSAGE_ID
+CM_CALL_CMD_ERR_SRV_TYPE_P
+ATCS_MSGID_MISMATCH
+QMI Board Support Package Service
+SFT
+???
+QMI_ERR_INVALID_PROFILE_TYPE
+QMI_ERR_GENERIC_0063
+QMI_ERR_AWDC_CONFIG_DELETE
+ wrote 
+Mismatch in string field: 
+QMI_ERR_MSG_BLOCKED
+QMI_ERR_INVALID_SESSION_TYPE
+CM_CALL_CMD_ERR_OTHER
+QMI Message Id does not match: actual=0x
+(unknown tlv type)
+ of 
+Mismatch in binary blob field: actual=[
+QMI_ERR_SEGMENT_ORDER
+QMI_ERR_PB_NUMBER_TOO_LONG
+ATCS_BAD_QMI_ERROR
+QMI Voice Service
+QMI Audio Service
+VINYL
+SSCTL
+ctl::ReleaseClientId::Request
+QMI_ERR_GENERAL
+QMI_ERR_NO_EFFECT
+QMI_ERR_NETWORK_NOT_READY
+QMI_ERR_SIM_FILE_NOT_FOUND
+QMI_ERR_PUK_RESTRICTION
+MAV_QMI_ERR_RTP_INITIALIZATION_FAILED
+QMI Carrier IQ Service
+ctl::SetDataFormat::Response
+QMI_ERR_INVALID_IP_FAMILY_PREF
+CM_CALL_CMD_ERR_USER_DATA_LENGTH_P
+UInt8 field is a number but out of range
+String parsing for floats not yet supported
+kUnknown
+QMI_ERR_CLIENT_IDS_EXHAUSTED
+QMI_ERR_INVALID_REGISTER_ACTION
+QMI_ERR_UNKNOWN
+PBM
+ctl::Sync::Request
+Mismatch in int8_t field: actual=
+CM_CALL_CMD_ERR_UMTS_CDMA_HANDOVER_CNF_P
+QMI 5WI 787 Service
+QMI Data Filter Service
+String expected but got something else.
+, expected=[
+ bytes; got 
+CM_CALL_CMD_ERR_MISMATCH_P
+QMI Wireless Messaging Service
+QMI_ERR_GENERIC_0012
+QMI_ERR_DEVICE_IN_USE
+QMI_ERR_AUTHENTICATION_LOCK
+QMI_ERR_PB_ACCESS_RESTRICTED
+MAV_QMI_MEAS_ERROR_BAD_MEAS_TYPE
+CM_CALL_CMD_ERR_CDMA_LOCK_S
+ctl::tlv::PowerSaveDescriptor
+ctl::GetClientId::Request
+QMI_ERR_NOT_PROVISIONED
+QMI_ERR_INCORRECT_FLOW_FILTER
+QMI_ERR_SEGMENT_TOO_LONG
+QMI_ERR_GENERIC_0058
+CM_CALL_CMD_ERR_NO_FUNDS_S
+QMI_ERR_NO_NETWORK_FOUND
+COEX
+Bool field is a number but out of range
+CM_CALL_CMD_ERR_INVALID_ORIG_CLIENT_P
+QMI_ERR_SMSC_ADDR
+QMI_ERR_NO_ENTRY
+QMI_ERR_INCORRECT_PIN
+QMI_ERR_INVALID_ID
+QMI_ERR_SECURITY_FAILURE
+CM_CALL_CMD_ERR_CLIENT_ID_P
+CM_CALL_CMD_ERR_NO_NUM_P
+ tlvId=
+QMI_ERR_ACCESS_DENIED
+CM_CALL_CMD_ERR_MAX_PRIMARY_PDP_CONTEXTS_S
+CM_CALL_CMD_ERR_NO_COLLOC_HDR
+APPS
+DFS
+fError
+UNKNOWN
+QMI Card App Toolkit
+QMI Persistent Device Service
+CAT
+ctl::ConfigPowerSaveMode::Response
+Object does not have exactly the right number of elements!
+kVectorLen16
+ [
+QMI_ERR_NETWORK_QOS_UNAWARE
+QMI_ERR_DEVICE_STORAGE_FULL
+QMI_ERR_DEVICE_MEMORY_ERROR
+QMI_ERR_UNEXPECTED_SEG_NUMBER
+CM_CALL_CMD_ERR_CALL_ID_P
+CM_CALL_CMD_ERR_ORIG_RES_S
+QMI Enhnaced Link Quality Metric Service
+DSD
+QMI_ERR_INSUFFICIENT_RESOURCES
+QMI_ERR_AWDC_SET_Q_METRICS
+CM_CALL_CMD_ERR_NUM_CALL_IDS_P
+QMI Coexistence Service
+QMI Stewie Service
+TLV 0x
+Mismatch in uint8_t field: actual=
+QMI_ERR_INVALID_DATA_FORMAT
+QMI_ERROR_ACTIVATION_NOT_READY
+ATCS_NULL_MESSAGE
+ATCS_SERVER_FAILURE
+QMI Network Access Service
+QMI Data System Determination
+ [0 bytes]
+CM_CALL_CMD_ERR_NUM_LEN_P
+CM_CALL_CMD_ERR_UMTS_CDMA_HANDOVER_REQ_P
+MS
+WDA
+, expected=
+QMI_ERR_INVALID_PB_TYPE
+QMI_ERR_PB_HIDDEN_KEY_RESTRICTION
+MAV_QMI_MEAS_ERROR_BAD_MEAS_ID
+MAV_QMI_MEAS_ERROR_LISTENER_ERROR
+CM_CALL_CMD_ERR_ALERT_ANS_BYPASS_S
+AWD
+ctl::ConfigPowerSaveModeExt::Request
+Non-data type encountered.
+QMI_ERR_INVALID_ARG
+QMI_ERR_FDN_RESTRICT
+ATCS_NO_RESULT_CODE
+WDS
+fSvcType
+QMI_ERR_INTERFACE_NOT_FOUND
+QMI_ERR_NO_RADIO
+QMI_ERR_CARD_CALL_CONTROL_FAILED
+QMI_ERR_VINYL_NOCAPABLE_UICC
+CM_CALL_CMD_ERR_CALL_STATE_S
+ is not present but was expected
+Mismatch in int32_t field: actual=
+QMI_ERR_INVALID_SERVICE_TYPE
+QMI_ERR_BUNDLING_NOT_SUPPORTED
+QMI_ERR_AWDC_CONFIG_SET
+fClientId
+QMI_ERR_GENERIC_0015
+CM_CALL_CMD_ERR_UIM_NOT_PRESENT_S
+P2P
+MAVL1
+QMI_ERR_CALL_FAILED
+QMI_ERR_FILE_TRANSFER_BUSY
+CM_CALL_CMD_ERR_CALL_TYPE_P
+CM_CALL_CMD_ERR_CALL_TYPE_S
+QMI Media Service Extension
+CTL
+ctl::RevokeClientId::Indication
+QMI Response Result
+QMI_ERR_ACK_NOT_SENT
+QMI_ERR_GENERIC_0056
+QMI_ERR_PUK2_RESTRICTION
+QMI User Identity Module
+ctl::SetPowerSaveMode::Request
+fHandle
+Mismatch in int16_t field: actual=
+ATCS_UNKNOWN_ERROR
+QMI_ERR_NOT_SUPPORTED
+QMI_ERR_INVALID_PINID
+QMI_ERR_OP_DEVICE_UNSUPPORTED
+QMI_ERR_INVALID_PS_ATTACH_ACTION
+CM_CALL_CMD_ERR_NULL_ALPHA_P
+ATCS_CLIENT_NOT_READY
+ctl::tlv::LinkLayerProtocol
+CM_CALL_CMD_ERR_OFFLINE_S
+CM_CALL_CMD_ERR_EMERGENCY_MODE_S
+ATCS_CANCELLED
+QMI Vinyl Service
+WMS
+ failed to parse
+IND
+QMI_ERR_PIN_RESTRICTION
+tlv_parsing_exception: msgId=
+QMI_ERR_ARG_TOO_LONG
+```

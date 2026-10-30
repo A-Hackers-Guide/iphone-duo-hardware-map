@@ -1,0 +1,224 @@
+# `BKUIFingerprintEnrollViewController`
+
+- Image: [`/System/Library/PrivateFrameworks/BiometricKitUI.framework/BiometricKitUI`](../userland/System__Library__PrivateFrameworks__BiometricKitUI.framework__BiometricKitUI.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `BKUIBundleEnrollViewController`
+- Protocols: `BKUIEmbeddedEnrollmentSelectionType`, `BKEnrollTouchIDOperationDelegate`, `BKExtendEnrollTouchIDOperationDelegate`, `CAAnimationDelegate`
+- 56 instance variables, 20 properties, 127 instance methods, 0 class methods
+
+## Instance variables
+
+```
+B _restartRequest;
+B _didDisappear;
+B _enrollmentPhaseTwo;
+B _matchInProgress;
+q _mesaEnrollSecondPhaseSteps;
+q _ignoreTouchOffset;
+@"NSDate" _enrollmentEndTime;
+@"NSTimer" _messageTimer;
+i _movedFingerCount;
+i _movedFingerThr;
+B _movedFingerAlertShown;
+B _stillFingerAlertShown;
+B _showLiftYourFingerMsg;
+@"NSString" _lastPromptMessage;
+B _cancelForRestart;
+B _displayingFirstTitle;
+d _liftFingerMsgDelay;
+d _msgTransLength;
+d _msgShowTimeout;
+B _enrollInProgress;
+B _waitInProgress;
+f _currentProgress;
+@"BKUIAlertView" _alertView;
+B _mesaEnrollCompactContainer;
+@"BKUICurvesView" _mesaFirstEnrollView;
+@"BKUICurvesView" _mesaSecondEnrollView;
+@"UIView" _alertHudView;
+@"UILabel" _alertHudText;
+f _alertHudWhite;
+f _alertHudAlpha;
+f _alertHudCorners;
+f _alertHudBorder;
+B _smallCoverageMessage;
+q _smallCoverageMessageShownBefore;
+q _smallCoverageCount;
+q _smallCoverageInRowCount;
+q _maxSmallCoverageCount;
+B _inBuddy;
+I _userid;
+{CGSize="width"d"height"d} _lastDerivedPreferredContentSize;
+B _waitForFingerLift;
+B _fingerOn;
+B _followUPEnrollmentUpSell;
+@"BKDeviceTouchID" _bkDevice;
+@"BKEnrollTouchIDOperation" _bkEnroll;
+@"BKExtendEnrollTouchIDOperation" _bkExtendEnroll;
+@"BKIdentity" _bkIdentity;
+q _bkProgress;
+@"BKUIFingerprintFullBleedBackgroundVC" _backgroundSceneController;
+@"BKUIFingerPrintEnrollTutorialViewController" _tutorialController;
+@"BKUIFingerPrintEnrollmentPhaseViewController" _enrollmentControlller;
+@"BioStreamsEventHelper" _bioStreamEventHelper;
+@"BKIdentity" _firstFollowUpIdentity;
+@"NSObject<OS_os_log>" _log;
+@"NSObject<OS_os_log>" _log_result_delegate;
+@"NSObject<OS_os_log>" _log_bk_delegate;
+```
+
+## Properties
+
+```
+@property (T@"BKDeviceTouchID",&,V_bkDevice) bkDevice;
+@property (T@"BKEnrollTouchIDOperation",&,V_bkEnroll) bkEnroll;
+@property (T@"BKExtendEnrollTouchIDOperation",&,V_bkExtendEnroll) bkExtendEnroll;
+@property (T@"BKIdentity",&,V_bkIdentity) bkIdentity;
+@property (Tq,V_bkProgress) bkProgress;
+@property (TB,N,V_waitForFingerLift) waitForFingerLift;
+@property (TB,N,V_fingerOn) fingerOn;
+@property (T@"BKUIFingerprintFullBleedBackgroundVC",&,N,V_backgroundSceneController) backgroundSceneController;
+@property (T@"BKUIFingerPrintEnrollTutorialViewController",&,N,V_tutorialController) tutorialController;
+@property (T@"BKUIFingerPrintEnrollmentPhaseViewController",&,N,V_enrollmentControlller) enrollmentControlller;
+@property (T@"BioStreamsEventHelper",&,N,V_bioStreamEventHelper) bioStreamEventHelper;
+@property (TB,N,V_followUPEnrollmentUpSell) followUPEnrollmentUpSell;
+@property (T@"BKIdentity",&,N,V_firstFollowUpIdentity) firstFollowUpIdentity;
+@property (T@"NSObject<OS_os_log>",&,N,V_log) log;
+@property (T@"NSObject<OS_os_log>",&,N,V_log_result_delegate) log_result_delegate;
+@property (T@"NSObject<OS_os_log>",&,N,V_log_bk_delegate) log_bk_delegate;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[BKUIFingerprintEnrollViewController setLog:];
+-[BKUIFingerprintEnrollViewController isModalInPresentation];
+-[BKUIFingerprintEnrollViewController animationDidStop:finished:];
+-[BKUIFingerprintEnrollViewController applicationWillResignActive:];
+-[BKUIFingerprintEnrollViewController viewIsAppearing:];
+-[BKUIFingerprintEnrollViewController viewWillDisappear:];
+-[BKUIFingerprintEnrollViewController operation:finishedWithReason:];
+-[BKUIFingerprintEnrollViewController dealloc];
+-[BKUIFingerprintEnrollViewController _subtitleFont];
+-[BKUIFingerprintEnrollViewController viewDidLoad];
+-[BKUIFingerprintEnrollViewController initWithNibName:bundle:];
+-[BKUIFingerprintEnrollViewController homeButtonPressed];
+-[BKUIFingerprintEnrollViewController viewWillAppear:];
+-[BKUIFingerprintEnrollViewController statusMessage:];
+-[BKUIFingerprintEnrollViewController viewDidAppear:];
+-[BKUIFingerprintEnrollViewController loadView];
+-[BKUIFingerprintEnrollViewController viewDidDisappear:];
+-[BKUIFingerprintEnrollViewController preferredContentSize];
+-[BKUIFingerprintEnrollViewController log];
+-[BKUIFingerprintEnrollViewController menuAction];
+-[BKUIFingerprintEnrollViewController prefersStatusBarHidden];
+-[BKUIFingerprintEnrollViewController handleProgress:];
+-[BKUIFingerprintEnrollViewController operation:presenceStateChanged:];
+-[BKUIFingerprintEnrollViewController operation:stateChanged:];
+-[BKUIFingerprintEnrollViewController enrollProgress:];
+-[BKUIFingerprintEnrollViewController enrollOperation:failedWithReason:];
+-[BKUIFingerprintEnrollViewController enrollOperation:finishedWithIdentity:];
+-[BKUIFingerprintEnrollViewController enrollOperation:percentCompleted:];
+-[BKUIFingerprintEnrollViewController enrollOperation:progressedWithTouchIDInfo:];
+-[BKUIFingerprintEnrollViewController extendEnroll:hasUpdated:];
+-[BKUIFingerprintEnrollViewController fingerprintCaptureOperation:encounteredCaptureError:];
+-[BKUIFingerprintEnrollViewController touchIDButtonPressedInOperation:];
+-[BKUIFingerprintEnrollViewController _resetUI];
+-[BKUIFingerprintEnrollViewController respondToTapGesture:];
+-[BKUIFingerprintEnrollViewController _startTutorial:];
+-[BKUIFingerprintEnrollViewController _animateHeaderTitle:];
+-[BKUIFingerprintEnrollViewController _finishEnrollmentPhaseTwo];
+-[BKUIFingerprintEnrollViewController transitionToEnrollView:];
+-[BKUIFingerprintEnrollViewController fingerOn];
+-[BKUIFingerprintEnrollViewController setFingerOn:];
+-[BKUIFingerprintEnrollViewController _messageTimeout];
+-[BKUIFingerprintEnrollViewController enrollDoneContinueButtonPressed];
+-[BKUIFingerprintEnrollViewController log_bk_delegate];
+-[BKUIFingerprintEnrollViewController _skipEnrollment];
+-[BKUIFingerprintEnrollViewController bundleAlertView];
+-[BKUIFingerprintEnrollViewController _bkDeviceIdentityCount];
+-[BKUIFingerprintEnrollViewController _bkIdentityCount];
+-[BKUIFingerprintEnrollViewController _cancelActiveEnrollOperation];
+-[BKUIFingerprintEnrollViewController _cancelEnrollmentAndRestart:];
+-[BKUIFingerprintEnrollViewController _cancelEnrollmentMatch];
+-[BKUIFingerprintEnrollViewController _deviceAwareLocalizedStringForKey:];
+-[BKUIFingerprintEnrollViewController _enrollHapticFeedback:];
+-[BKUIFingerprintEnrollViewController _failEnrollment:withMessage:];
+-[BKUIFingerprintEnrollViewController _hapticFeedback:];
+-[BKUIFingerprintEnrollViewController _liftFingerString];
+-[BKUIFingerprintEnrollViewController _placeFingerString];
+-[BKUIFingerprintEnrollViewController _readyString];
+-[BKUIFingerprintEnrollViewController _requeryPreferredContentSize];
+-[BKUIFingerprintEnrollViewController _requestNewAuthToken];
+-[BKUIFingerprintEnrollViewController _resetUIWithTransitionToTutorial:];
+-[BKUIFingerprintEnrollViewController _restartEnrollment];
+-[BKUIFingerprintEnrollViewController _sendEnrollResult:identity:];
+-[BKUIFingerprintEnrollViewController _setBackgroundAction:];
+-[BKUIFingerprintEnrollViewController _setTapRecognizer:];
+-[BKUIFingerprintEnrollViewController _setTouchIndicatorVisibleForUnifiedMesa:];
+-[BKUIFingerprintEnrollViewController _shouldHideUnlockMessage];
+-[BKUIFingerprintEnrollViewController _showDirtOnSensorAlertView];
+-[BKUIFingerprintEnrollViewController _showLiftYourFinger];
+-[BKUIFingerprintEnrollViewController _showLiftYourFingerWithDelay];
+-[BKUIFingerprintEnrollViewController _showSkipEnrollmentAlert];
+-[BKUIFingerprintEnrollViewController _showSmallCoverageAlertView];
+-[BKUIFingerprintEnrollViewController _startEnrollOperation];
+-[BKUIFingerprintEnrollViewController _startExtendEnrollOperation];
+-[BKUIFingerprintEnrollViewController _startInitialTutorialAnimated:];
+-[BKUIFingerprintEnrollViewController _startMessageTimer:];
+-[BKUIFingerprintEnrollViewController _stopBiometricOperations];
+-[BKUIFingerprintEnrollViewController _stopMessageTimer];
+-[BKUIFingerprintEnrollViewController _stopTutorialTransitionToEnrollView];
+-[BKUIFingerprintEnrollViewController _transitionPromptMessage:];
+-[BKUIFingerprintEnrollViewController _transitionToEnrollView:];
+-[BKUIFingerprintEnrollViewController _transitionToTutorialView:];
+-[BKUIFingerprintEnrollViewController _tutorialContinueButtonPressed];
+-[BKUIFingerprintEnrollViewController _useAlertHud];
+-[BKUIFingerprintEnrollViewController backgroundSceneController];
+-[BKUIFingerprintEnrollViewController bioStreamEventHelper];
+-[BKUIFingerprintEnrollViewController bkDevice];
+-[BKUIFingerprintEnrollViewController bkEnroll];
+-[BKUIFingerprintEnrollViewController bkExtendEnroll];
+-[BKUIFingerprintEnrollViewController bkIdentity];
+-[BKUIFingerprintEnrollViewController bkProgress];
+-[BKUIFingerprintEnrollViewController cancelEnroll];
+-[BKUIFingerprintEnrollViewController constructAlertView];
+-[BKUIFingerprintEnrollViewController createEnrollUI];
+-[BKUIFingerprintEnrollViewController didSelectAddAnotherFingerButton:];
+-[BKUIFingerprintEnrollViewController didSelectPrimaryButton:];
+-[BKUIFingerprintEnrollViewController didSelectSecondaryButton:];
+-[BKUIFingerprintEnrollViewController didTapInValidRectForAlertInstructingWhereToTouch:];
+-[BKUIFingerprintEnrollViewController enrollmentControlller];
+-[BKUIFingerprintEnrollViewController firstFollowUpIdentity];
+-[BKUIFingerprintEnrollViewController followUPEnrollmentUpSell];
+-[BKUIFingerprintEnrollViewController initPromptMessage];
+-[BKUIFingerprintEnrollViewController isEnrollmentViewVisible];
+-[BKUIFingerprintEnrollViewController log_result_delegate];
+-[BKUIFingerprintEnrollViewController restartEnroll];
+-[BKUIFingerprintEnrollViewController restartEnrollPressed:];
+-[BKUIFingerprintEnrollViewController setBackgroundSceneController:];
+-[BKUIFingerprintEnrollViewController setBioStreamEventHelper:];
+-[BKUIFingerprintEnrollViewController setBkDevice:];
+-[BKUIFingerprintEnrollViewController setBkEnroll:];
+-[BKUIFingerprintEnrollViewController setBkExtendEnroll:];
+-[BKUIFingerprintEnrollViewController setBkIdentity:];
+-[BKUIFingerprintEnrollViewController setBkProgress:];
+-[BKUIFingerprintEnrollViewController setEnrollmentControlller:];
+-[BKUIFingerprintEnrollViewController setFirstFollowUpIdentity:];
+-[BKUIFingerprintEnrollViewController setFollowUPEnrollmentUpSell:];
+-[BKUIFingerprintEnrollViewController setLog_bk_delegate:];
+-[BKUIFingerprintEnrollViewController setLog_result_delegate:];
+-[BKUIFingerprintEnrollViewController setTutorialController:];
+-[BKUIFingerprintEnrollViewController setWaitForFingerLift:];
+-[BKUIFingerprintEnrollViewController showSecondFingerEnrollmentUpSell];
+-[BKUIFingerprintEnrollViewController skipEnrollmentPressed:];
+-[BKUIFingerprintEnrollViewController transitionToTutorialView:];
+-[BKUIFingerprintEnrollViewController transitionToTutorialView:completion:];
+-[BKUIFingerprintEnrollViewController tutorialContinueButtonPressed:];
+-[BKUIFingerprintEnrollViewController tutorialController];
+-[BKUIFingerprintEnrollViewController tutorialSkipButtonPressed:];
+-[BKUIFingerprintEnrollViewController waitForFingerLift];
+```

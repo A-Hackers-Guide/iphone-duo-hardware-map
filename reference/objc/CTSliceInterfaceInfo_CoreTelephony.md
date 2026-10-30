@@ -1,0 +1,39 @@
+# `CTSliceInterfaceInfo`
+
+- Image: [`/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony`](../userland/System__Library__Frameworks__CoreTelephony.framework__CoreTelephony.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `NSCopying`, `NSSecureCoding`
+- 2 instance variables, 2 properties, 8 instance methods, 1 class methods
+
+## Instance variables
+
+```
+@"NSString" _interface;
+@"NSArray" _trafficDescriptors;
+```
+
+## Properties
+
+```
+@property (T@"NSString",&,N,V_interface) interface;
+@property (T@"NSArray",&,N,V_trafficDescriptors) trafficDescriptors;
+```
+
+## Class methods
+
+```
++[CTSliceInterfaceInfo supportsSecureCoding];
+```
+
+## Instance methods
+
+```
+-[CTSliceInterfaceInfo trafficDescriptors];
+-[CTSliceInterfaceInfo setInterface:];
+-[CTSliceInterfaceInfo interface];
+-[CTSliceInterfaceInfo encodeWithCoder:];
+-[CTSliceInterfaceInfo description];
+-[CTSliceInterfaceInfo initWithCoder:];
+-[CTSliceInterfaceInfo setTrafficDescriptors:];
+-[CTSliceInterfaceInfo copyWithZone:];
+```

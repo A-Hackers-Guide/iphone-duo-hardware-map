@@ -1,0 +1,1300 @@
+# `com.apple.driver.AppleMobileFileIntegrity`
+
+- Name: AppleMobileFileIntegrity
+- Version: `1.0.5`
+- UUID: `5BEADE41-A671-3C5B-B6FE-EA3655D8EC5D`
+- Source version: `1171.40.9.0.0`
+- Depends on: [`com.apple.driver.ApplePMGR`](com.apple.driver.ApplePMGR.md) 1.0.0, [`com.apple.iokit.CoreAnalyticsFamily`](com.apple.iokit.CoreAnalyticsFamily.md) 1.0, [`com.apple.kec.corecrypto`](com.apple.kec.corecrypto.md) 1.0.0, [`com.apple.kext.CoreTrust`](com.apple.kext.CoreTrust.md) 1.0.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 15.0.0, [`com.apple.kpi.dsep`](com.apple.kpi.dsep.md) 9.0.0d8, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 15.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0.0, [`com.apple.security.AppleImage4`](com.apple.security.AppleImage4.md) 3.0.0, [`com.apple.security.Image4`](com.apple.security.Image4.md) 1.0.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (1) [KC]
+
+### AppleMobileFileIntegrity
+- `CFBundleIdentifier`: `com.apple.driver.AppleMobileFileIntegrity`
+- `IOClass`: `AppleMobileFileIntegrity`
+- `IOMatchCategory`: `AppleMobileFileIntegrity`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleMobileFileIntegrity`
+- `IOProviderClass`: `IOResources`
+- `IOResourceMatch`: `IOBSD`
+- `IOUserClientClass`: `AppleMobileFileIntegrityUserClient`
+
+
+## C++ classes (4) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleMobileFileIntegrity` | 0x98 | IOService → IORegistryEntry |
+| `AppleMobileFileIntegrityUserClient` | 0xe8 | IOUserClient → IOService → IORegistryEntry |
+| `OSDetachedCertificates` | 0x70 |  |
+| `OSEntitlements` | 0x28 |  |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1880)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0000da5d off=0x00670e60-0x0067e8bd addr=0xfffffe0007674e60-0xfffffe00076828bd r--/r--   __TEXT            
+	sz=0x0000b98c off=0x00671618-0x0067cfa4 addr=0xfffffe0007675618-0xfffffe0007680fa4               __TEXT.__cstring          (CstringLiterals)
+	sz=0x00001568 off=0x0067cfb0-0x0067e518 addr=0xfffffe0007680fb0-0xfffffe0007682518               __TEXT.__const            
+	sz=0x000003a5 off=0x0067e518-0x0067e8bd addr=0xfffffe0007682518-0xfffffe00076828bd               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x0002ac04 off=0x02295d50-0x022c0954 addr=0xfffffe0009299d50-0xfffffe00092c4954 r-x/r-x   __TEXT_EXEC       
+	sz=0x00029b44 off=0x02295d50-0x022bf894 addr=0xfffffe0009299d50-0xfffffe00092c3894          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000010c0 off=0x022bf894-0x022c0954 addr=0xfffffe00092c3894-0xfffffe00092c4954          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x000006b9 off=0x04981ce8-0x049823a1 addr=0xfffffe000b985ce8-0xfffffe000b9863a1 rw-/rw-   __DATA            
+	sz=0x000004f2 off=0x04981ce8-0x049821da addr=0xfffffe000b985ce8-0xfffffe000b9861da               __DATA.__data             
+	sz=0x000000f0 off=0x00000000-0x000000f0 addr=0xfffffe000b9861e0-0xfffffe000b9862d0               __DATA.__common           (Zerofill)
+	sz=0x000000d1 off=0x00000000-0x000000d1 addr=0xfffffe000b9862d0-0xfffffe000b9863a1               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00006eb0 off=0x011738c0-0x0117a770 addr=0xfffffe00081778c0-0xfffffe000817e770 rw-/rw-   __DATA_CONST      
+	sz=0x00000020 off=0x011738c0-0x011738e0 addr=0xfffffe00081778c0-0xfffffe00081778e0         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000028 off=0x011738e0-0x01173908 addr=0xfffffe00081778e0-0xfffffe0008177908         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x000040a0 off=0x01173908-0x011779a8 addr=0xfffffe0008177908-0xfffffe000817b9a8         __DATA_CONST.__const            
+	sz=0x00000f80 off=0x011779a8-0x01178928 addr=0xfffffe000817b9a8-0xfffffe000817c928         __DATA_CONST.__kalloc_type      
+	sz=0x00001400 off=0x01178928-0x01179d28 addr=0xfffffe000817c928-0xfffffe000817dd28         __DATA_CONST.__kalloc_var       
+	sz=0x000000f0 off=0x01179d28-0x01179e18 addr=0xfffffe000817dd28-0xfffffe000817de18         __DATA_CONST.__assert           
+	sz=0x00000860 off=0x01179e18-0x0117a678 addr=0xfffffe000817de18-0xfffffe000817e678         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000e0 off=0x0117a678-0x0117a758 addr=0xfffffe000817e678-0xfffffe000817e758         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000018 off=0x0117a758-0x0117a770 addr=0xfffffe000817e758-0xfffffe000817e770         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 564 at 0x04adfe90
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     5BEADE41-A671-3C5B-B6FE-EA3655D8EC5D
+008: LC_SOURCE_VERSION           1171.40.9.0.0
+009: LC_FUNCTION_STARTS          offset=0x004aaaec0 size=0x510
+```
+
+## Info.plist keys [KC]
+
+- `AppleSecurityExtension`: `True`
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleMobileFileIntegrity`
+- `CFBundleIdentifier`: `com.apple.driver.AppleMobileFileIntegrity`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleMobileFileIntegrity`
+- `CFBundleNumericVersion`: `17137664`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0.5`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1.0.5`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2008-2013 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.1`
+- `OSBundleRequired`: `Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleMobileFileIntegrity.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198899044768`
+- `_PrelinkExecutableRelativePath`: `AppleMobileFileIntegrity`
+- `_PrelinkExecutableSize`: `261066`
+- `_PrelinkExecutableSourceAddr`: `-2198899044768`
+- `_PrelinkKmodInfo`: `-2198828720920`
+
+## Strings (1171) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `platform-identifier`
+- `launch_type`
+- `AMFI Trust Cache Interface`
+- `com.apple.diagnosticd.diagnostic`
+- `\"AMFI: failed to acquire entitlements buffer from profile: %u\" @%s:%d`
+- `Restricted Execution Mode state(%s): %s would be disallowed by policy, but is allowed by boot-args\n`
+- `trust_cache_interface`
+- `%s: copyTrustCacheAndManifestFromInputArgument failed: %d\n`
+- `%lld`
+- `com.apple.springboard`
+- `AMFI: trying to get developer mode status from ACM\n`
+- `AMFI: apple-internal profile allows all entitlements\n`
+- `%s: error copying in args: %d\n`
+- `com.apple.MessagesBlastDoorService`
+- `Caller provided a disallowed launch type`
+- `AMFI: amfi-allows-trust-cache-load has unexpected size (%u).\n`
+- `AMFI: file (%s) contains an invalid launch constraint on in slot %d, ignoring\n`
+- `AMFI: Failed to set validation category in the tle usage event payload`
+- `\"AMFI: not booted with security-mode-change-enabled\\n\" @%s:%d`
+- `AMFI: [ApplePMGRNub] latched BPR\n`
+- `\"AMFI: failed to create profile context: %u\" @%s:%d`
+- `AMFI: research variant relaxes lock-state for trust caches: %u\n`
+- `com.apple.amfi.tle_violation.v2`
+- `fail_validation_category`
+- `p`
+- `kern_return_t _initializeAppleMobileFileIntegrity()`
+- `AMFI: code signature validation failed.\n`
+- `%s: only an allowed process can set local signing public key\n`
+- `ACMKernSetEnvironmentVariable`
+- `AMFI: disabling local signing due to no protected data access\n`
+- `AMFI: Failed to set error code in the tle violation event payload`
+- `AMFI: skipping PMGRAON latch due to AVP\n`
+- `/`
+- `B16@?0^{?={der_vm_context=^{CERuntime}{CEAccelerationContext=^{CEAccelerationElement}Q}QBB(?={ccder_read_blob=**}{?=**})}{der_vm_context=^{CERuntime}{CEAccelerationContext=^{CEAccelerationElement}Q}QBB(?={ccder_read_blob=**}{?=**})}II^v}8`
+- `%s::%s CoreAnalyticsmatchingDict is null\n`
+- `com.apple.sha1.code_directory.usage`
+- `!vnode_isdir(vp)`
+- `Got an unexpected type (not a dictionary) when trying to generate a query operation.`
+- `The array of dependent operations is empty.`
+- `$or-array`
+- `Attempting to select a string value from a non-string DER object`
+- `&quot;`
+- `%s: /product/udid-version is not supported: %u\n`
+- `_load_trust_cache`
+- `site.ACMCredential.ACMCredentialDataContinuityUnlock`
+- `LWCRs are not encoded correctly`
+- `This LWCR is not compatible with this runtime`
+- `\"%s: missing ChipID or UniqueChipID: %p | %p\" @%s:%d`
+- `No process found pid: %d pidversion: %d`
+- `\"AMFI mac policy could not be registered!\" @%s:%d`
+- `Invalid fact type for this operation (expected data)`
+- `der_vm_execute_integer_value_allowed`
+- `xml-looking blob was passed in`
+- `%s: target is not AppleMobileFileIntegrity object\n`
+- `%s: prepare failed: 0x%x\n`
+- `constraint_identifier`
+- `AMFI: %s: %s has no entitlements\n`
+- `1`
+- `unable to decode value tag for key-value pair`
+- `%s: prepare failed: %d\n`
+- `const kks_services_t *AKS_services()`
+- `sip-enabled`
+- `String contains an embedded NUL`
+- `AMFI: profile does not provision any devices\n`
+- `AMFI: can-execute-cdhash code in non-entitled context.\n`
+- `OSEntitlements.cpp`
+- `%s: data length overflow: %zu (= %zu + %zu)\n`
+- `com.apple.private.CallHistory.read`
+- `has_restricted_entitlements`
+- `AMFI: %s: unsupported OOP-JIT type: %u\n`
+- `%s: only an allowed process can authorize local signing\n`
+- `site.ACMRequirement`
+- `This bounded_ptr is pointing to memory outside of what can be represented by a native pointer.`
+- `com.apple.system-task-ports`
+- `AMFI: failed to set signing_identifier for auxiliary info\n`
+- `AMFI: armed security boot mode: %s\n`
+- `%s called with NULL proc\n`
+- `Unknown data encoding`
+- `com.apple.abm-helper`
+- `AMFIGetLocalSigningPublicKey`
+- `initCoreAnalyticsService`
+- `launch_env_logging`
+- `%s: token is untrusted: hash does not match\n`
+- `%s: Signature meets iphone VPN Prod policy\n`
+- `AMFI: task_for_pid() not allowed\n`
+- `Unable to allocate %llu bytes\n`
+- `AMFI: [1] informing daemon of developer mode state change`
+- `Only platform code can set launch constraints on its parent`
+- `cdhash != NULL`
+- `AMFI: '%s' cmsBlobVerifyWithAgilityHash failed: component=%#x error=%#x unique=%u\n`
+- `com.apple.system-task-ports.token.corpse`
+- `der_decode_boolean`
+- `pqc_codesigning_enabled`
+- `Too many elements in dictionary`
+- `Attempting to select an integer value from a non-integer DER object`
+- `com.apple.private.security.disk-device-access`
+- `com.apple.private.assetsd.nebulad.access`
+- `AppleMobileFileIntegrity.cpp`
+- `%s: local signing public key not available\n`
+- `AMFI: failed formatting for security boot mode: %u\n`
+- `AMFI: failed to create kernel allocation for profile\n`
+- `AMFI: %s: invalid OOP-JIT type\n`
+- `bounded_ptr<T>::operator+=(n): Adding the specified number of bytes to the offset representing the current position would overflow.`
+- `der_vm_execute_match_bool`
+- `AMFI: Failed to set failed process validation category in the tle violation event payload`
+- `Process was launched as a sysdiagnose helper unexpectedly`
+- `qa-path-appstore`
+- `virtual IOReturn AppleMobileFileIntegrityUserClient::externalMethod(uint32_t, IOExternalMethodArguments *, IOExternalMethodDispatch *, OSObject *, void *)`
+- `Couldn't find trust cache UUID for process when mapping library from SMAC`
+- `AMFI: evaluating provisioning profile: %.*s\n`
+- `AMFI: %s: unable to allocate storage space for names\n`
+- `site.ACMRequirement.ACMRequirementDataBiometryMatchedWithAttributes`
+- `string_prefix_allowed_iterate`
+- `\"Failed to add encyclopedia to MetaEncyclopedia\" @%s:%d`
+- `AMFI: disabling local signing due to AKS error: %x\n`
+- `Error getting XML\n`
+- `StaticPlatformPolicy<%d>: verify_code_directory server is dead\n`
+- `Constraint size (%zu) exceeds maximum %d`
+- `initAppleCredentialService`
+- `Invalid fact type for this operation (expected an integer or bool)`
+- `com.apple.tle.constraints.usage`
+- `on-system-volume`
+- `Not eligible for acceleration`
+- `%s: local signing public key not available with daemon\n`
+- `AMFI: completeSecurityBootMode: invalid scalarInput\n`
+- `com.apple.private.vfs.snapshot`
+- `LOCALSPKEY.swift-playgrounds-`
+- `retained`
+- `(keybagUuid && keybagUuidLength == UUID_LEN) || (!keybagUuid && !keybagUuidLength)`
+- `OSBoundedPtr.h`
+- `%s: daemon replied with error: %d\n`
+- `unable to create an OSObject for locally signed entitlement`
+- `AMFI: %s: oop-jit is disabled by system configuration\n`
+- `com.apple.private.cloudkit.spi`
+- `23:20:30`
+- `\"AMFI: inconsistency between instance and csBlob context\" @%s:%d`
+- `Unexpected key for parsing context`
+- `static IOReturn AppleMobileFileIntegrityUserClient::isCdhashInTrustCache(OSObject *, void *, IOExternalMethodArguments *)`
+- `com.apple.private.security.no-sandbox`
+- `validation-category`
+- `getOSEntitlementsFromProcSecure`
+- `com.apple.rootless.install.heritable`
+- `Got an unexpected type (not an integer, string or data) when trying to generate an In operation.`
+- `%s: NVRAM service not available`
+- `When validating %s:\n  %s`
+- `unable to create an OSString for locally signed entitlement`
+- `personalized.pdi`
+- `$gte`
+- `%s: mac_policy_register failed: %d\n`
+- `code-signing-flags`
+- `AMFI: profile disallowed due to developer mode\n`
+- `Non-Fatal: failed to change validation category from %d to %d at %s\n`
+- `inSize >= sizeof(acm_command_t)`
+- `personalized.cryptex-research`
+- `application-identifier`
+- `AMFI: Developer Mode can not be enabled on trusted darwinOS.\n`
+- `%s: token is untrusted: pid %d not found\n`
+- `AMFI: '%s': local signed binary has an invalid team-identifier: %s\n`
+- `RefCounted object destroyed, but is not fully released`
+- `entitlements blob does not have CCDER_CONSTRUCTED_SET coding`
+- `string decode failure`
+- `could not decode size for next DER sub-sequence`
+- `AMFI: AMFICompleteSecurityBootMode | bootMode: %u\n`
+- `\"AMFI: Unable to query BPR via AppleSocMisc: 0x%x\\n\" @%s:%d`
+- `\"AMFI: No PMGR?\\n\" @%s:%d`
+- `com.apple.private.apfs.revert-to-snapshot`
+- `monitor`
+- `AMFI: profile provisions claimed entitlements\n`
+- `AMFI: unable to validate entitlements: %u\n`
+- `acmService`
+- `entitlements blob does not have CCDER_ENTITLEMENTS coding`
+- `com.apple.private.amfi.garbage-collect-profiles`
+- `No Process`
+- `com.apple.private.tcc.allow`
+- `security-mode-change-enable`
+- `unique-chip-id`
+- `site.AppleMobileFileIntegrity`
+- `AMFI: '%s' has no cd?\n`
+- `%s: %s: mem: type=%s ptr=%p size=%u (total=%u raw=%u data=%u types=%u) %s:%d (%s).\n`
+- `vers`
+- `_amfi_copy_seatbelt_profile_names`
+- `AMFI: developer mode is disabled, processes can not run invalid.`
+- `-restore`
+- `com.apple.private.security.storage.Messages`
+- `OSEntitlements`
+- `\"AMFI: unable to get legacy context after adjustment without monitor: %u\" @%s:%d`
+- `site.ACMRequirement.ACMRequirementDataPasscodeValidatedWithAttributes`
+- `%s: %s: returning, err = %ld, code=%u.\n`
+- `<integer>`
+- `\"AMFI: no chosen device tree node!\" @%s:%d`
+- `com.apple.keystore.device`
+- `AMFI: OOP-JIT previews allowed through %s\n`
+- `AMFI: '%s': locally signed signatures need to be at least 0x%X signature version (0x%X)\n`
+- `performCommand`
+- `com.apple.CoreLocation.PrivateMode`
+- `AMFI: Failed to set team_identifier in the SHA1 code directory usage event payload\n`
+- `/product`
+- `AMFI: failed to create OSObject copy: %u\n`
+- `AMFI: Unknown Launch Type: %d\n`
+- `\"can't has cs_enforcement_disable\" @%s:%d`
+- `%s: copying private key from AMFI not supported on this platform\n`
+- `extra data at the end of element`
+- `com.apple.mobilenotes`
+- `AMFI: hook..execve() killing %s (pid %u): dyld signature cannot be verified. You either have a corrupt system image or are trying to run an unsigned application outside of a supported development configuration.\n`
+- `\"AMFI cert overrun\\n\" @%s:%d`
+- `Attempting to select a boolean value from a non-boolean DER object`
+- `is-kernel-proc`
+- `AMFI: disabling local signing due to failed MO query: %d\n`
+- `N/A`
+- `%s: loading trust caches disallowed by system state\n`
+- `yes`
+- `unknown`
+- `\"AMFI: failed to validate entitlements from profile: %u\" @%s:%d`
+- `%s (pid %u) not allowed for Restricted Execution Mode state (%s): code is not present in any trustcache\n`
+- `%s: unable to obtain AKS services for checking unlock state, failing.\n`
+- `Locally Signed Fast Path -> %s\n`
+- `ACM`
+- `site.ACMCredential.ACMCredentialDataPassphraseExtractable`
+- `noop`
+- `encountered invalid element in an iterable`
+- `dictionary value verification failure`
+- `der_vm_execute_match_string`
+- `AMFI: delaying developer mode latching...\n`
+- `Support.cpp`
+- `vp`
+- `commandSize`
+- `%s: blob too large: %zu\n`
+- `AMFI: Disable developer mode since we couldn't get mobile obliteration status\n`
+- `error copying in constraint %d`
+- `AMFI: %s not allowed with universal profile\n`
+- `%s: Internal error when creating code signature validation error (buffer allocation failed).`
+- `Process was launched as a system service unexpectedly but met System Service constraints`
+- `%s: unable to get amfid daemon port: %d\n`
+- `Failed to cast CoreAnalyticsHub`
+- `TXM`
+- `amfi_allow_3p_launch_constraints`
+- `com.apple.private.photoanalysisd.access`
+- `team_identifier`
+- `launch-type`
+- `slotHashSize`
+- `\"AMFI: no amfi-only-platform-code device tree node!\" @%s:%d`
+- `%s: Possible race detected. Rejecting.\n`
+- `LOCALSPKEY`
+- `\"AMFI: No AppleSocMisc?\\n\" @%s:%d`
+- `AMFI: %s linkage size is too small\n`
+- `site.ACMHandleWithPayload`
+- `personalized.mobile-asset-brain`
+- `Got an unexpected type (not a dictionary) when trying to generate dependent operations for evaluation.`
+- `[%s]: subset validation failed, integer value of key '%.*s' not allowed\n`
+- `com.apple.private.amfi.can-load-trust-cache`
+- `%s: error copying in img4_manifest_addr: %d\n`
+- `site.ACMRequirement.ACMRequirementDataUserOutputDisplayed`
+- `dictionary key is not a valid string`
+- `validation_category`
+- `CoreAnalyticsHub`
+- `AMFI: Developer Mode is off (%i)\n`
+- `AMFIProfiles.cpp`
+- `LibCall_ACMSetEnvironmentVariable`
+- `com.apple.private.amfi.can-load-cdhash`
+- `com.apple.recoveryos_agent`
+- `Disallowing: found launch warnings for %s\n`
+- `%s: %s disallowed due to OOP-JIT runner entitlement`
+- `fast-path-appstore`
+- `com.apple.private.enable-swift-playgrounds-validation`
+- `\"AMFI: unexpected OSEntitlements adjustment without monitor\" @%s:%d`
+- `site.ACMCredentialRef`
+- `$and`
+- `site.T`
+- `CESerializeXML`
+- `&gt;`
+- `encountered invalid tag`
+- `AMFI: Failed to set cpu_type in the SHA1 code directory usage event payload\n`
+- `AMFI: Only launchd can set the application launch type\n`
+- `com.apple.private.security.install`
+- `com.apple.private.oop-jit.loader`
+- `com.apple.nvram.boot-args-set-allow`
+- `AMFI: [AppleSocMisc] latched BPR\n`
+- `Expected operator string in Array tuple`
+- `%s: failure getting load trust cache entitlement for process %d\n`
+- `int _get_local_signing_public_key(struct proc *, user_addr_t)`
+- `\"Bad AMFI Detached Certs size\" @%s:%d`
+- `invalid tag or length`
+- `Non-SMAC process not permitted to map library from SMAC`
+- `AMFI: armSecurityBootMode: invalid scalarInput\n`
+- `com.apple.rootless.install`
+- `$query`
+- `OK`
+- `Unknown string encoding`
+- `[%s]: %s\n`
+- `1122211222112012122222`
+- `com.apple.private.corespotlight.receiver`
+- `failed getting DER entitlements`
+- `2322`
+- `site.BinaryStrOp`
+- `Attempted to execute a non-iterable query`
+- `CEIndexSizeForContext`
+- `com.apple.private.tcc.allow.overridable`
+- `AMFI: failed to set platform for auxiliary info\n`
+- `com.apple.avfoundation.allow-capture-filter-rendering`
+- `\"AMFI failed to initialize. This would compromise system security.\" @%s:%d`
+- `seatbelt-profiles`
+- `amfi-only-platform-code`
+- `AMFI: allowing pid %u to inherit IPC ports (cur_vp entitled)\n`
+- `Unexpected type to match against during iteration`
+- `com.apple.MediaAnalysisBlastDoorService`
+- `AMFI: Failed to set error message in the tle violation event payload`
+- `launch_constraints_enforced`
+- `sep-endpoint,scrd`
+- `ApplePMGRNub`
+- `AMFI: Non-SMAC process %s not permitted to map library %s from SMAC`
+- `%s: failed to copy out public key: %d\n`
+- `cryptex1.preboot.os`
+- `Attempted to execute unknown CoreEntitlements operation`
+- `AMFI: developer mode is force enabled\n`
+- `Requirement not satisfied: %.*s`
+- `int _authorize_local_signing(struct proc *, user_addr_t)`
+- `site.amfi_interface_constraint_match_result_t`
+- `String op requires string parameter`
+- `Unknown DER entitlements encoding`
+- `static IOReturn AppleMobileFileIntegrityUserClient::loadCompilationServiceCodeDirectoryHash(OSObject *, void *, IOExternalMethodArguments *)`
+- `com.apple.MobileFileIntegrity`
+- `AMFI: '%s' does not pass kernel-side policy for this model, bailing out.\n`
+- `$in`
+- `&lt;`
+- `static IOReturn AppleMobileFileIntegrityUserClient::copyBytesFromInputArguments(IOExternalMethodArguments *, void **, IOByteCount *)`
+- `com.apple.sysdiagnosed`
+- `AMFI: hook..execve() killing %s (pid %u): Attempt to execute a Legacy VPN Plugin.\n`
+- `der_vm_execute_string_value_allowed`
+- `AppleMobileFileIntegrityUserClient`
+- `dynamic-codesigning`
+- `com.apple.developer.swift-playgrounds-app`
+- `amfi_enforce_cc_types`
+- `Library violates process' library load contraint`
+- `%s: Process %d is checking if a cdhash is in the trust cache\n`
+- `AMFI: unable to obtain local signing public key from AKS: %x\n`
+- `initUDIDEnforcement`
+- `%s disallowed on non-platform process`
+- `unknown number encoding`
+- `com.apple.private.amfi.can-set-denylist`
+- `kern.hv_vmm_present`
+- `\"%s: /chosen/unique-device-id-string is too large: %d\" @%s:%d`
+- `AMFI: using cached detached cert data for %s\n`
+- `$and-array`
+- `MetaEncyclopedia.cpp`
+- `Launch warning found for proc (fatal): %s`
+- `Oct 13 2026`
+- `AMFI: '%s' cmsBlobVerify failed: component=%#x error=%#x unique=%u\n`
+- `critical failure during xml serialization, start != end`
+- `der_vm_string_from_context`
+- `integer_allowed_iterate`
+- `Invalid denylist\n`
+- `com.apple.wlan.authentication`
+- `AMFI: failed to set team_identifier for auxiliary info\n`
+- `unique-device-id-string`
+- `AMFI: %s: unable to obtain cs_blob on current_proc\n`
+- `Couldn't allocate buffer for cms blob\n`
+- `Fact not allowed in context`
+- `Failed during buffer decoding`
+- `com.apple.private.amfi.developer-mode-control`
+- `Embedded parent constraint can't be enforced because parent has changed`
+- `AMFI: _proc_check_inherit_ipc_ports returning %d for pid %u\n`
+- `_validateOOPJit`
+- `%s: error copying in args %d\n`
+- `\"AMFI: failed to create OSDictionary copy: %u\\n\" @%s:%d`
+- `der_vm_execute_select_longest_matching_key`
+- `could not decode tag for next DER sub-sequence`
+- `com.apple.camera.iokit-user-access`
+- `launch_constraints_cc_types_enforced`
+- `non-NULL`
+- `OOP-JIT loader entitlement is an incorrect type`
+- `der_vm_data_from_context`
+- `is-init-proc`
+- `OOP-JIT signature not valid for mapping process`
+- `Only platform code can set launch constraints on its responsible process`
+- `Couldn't find daemon.\n`
+- `AMFI: '%s' cmsBlobInit failed: component=%#x error=%#x unique=%#x\n`
+- `%s: failed to copy in cdhash %d\n`
+- `AMFI: [non-fatal] unable to accelerate context: %s | %u\n`
+- `com.apple.sh`
+- `\"Constraint array failed to validate\" @%s:%d`
+- `invalid dictionary element`
+- `Root installed sysdiagnose helper allowed: %s\n`
+- `oop-jit`
+- `com.apple.private.contacts`
+- `AMFI: Failed to set match result in the tle violation event payload`
+- `com.apple.private.oop-jit.runner`
+- `cryptex1.generic.supplemental`
+- `%s: Unexpected match result %d\n`
+- `Constraint category disallowed in spawn attr`
+- `Launch Constraint Violation, error info: c[%d]p[%d]m[%d]e[%d], (%.*s) launch type %d, failure proc [vc: %d]: %s`
+- `AMFI: device UDID not enforced\n`
+- `AMFI: constraint violation %s has entitlements but is not a main binary\n`
+- `site.LaunchTypeSystemServicePolicy`
+- `AMFI: disabling local signing due to restore environment\n`
+- `com.apple.private.host-exception-port-override`
+- `The signature could not be validated because AMFI could not load its entitlements for validation: %s`
+- `os_add_overflow(sizeof(acm_command_t), dataSize, &cmdSize) == 0 `
+- `[%s]: subset validation failed, type mismatch for key '%.*s' %lu != %lu \n`
+- `com.apple.WalletBlastDoorSupport`
+- `_proc_satisfies_constraint`
+- `AMFI: '%s': Unrecoverable CT signature issue, bailing out.\n`
+- `%s: could not query process for entitlements\n`
+- `valuesAreAllowed_block_invoke`
+- `site.InOperation`
+- `com.apple.private.set-exception-port`
+- `AMFI: Failed to set validation_category in the SHA1 code directory usage event payload\n`
+- `ConstraintCategories.cpp`
+- `copyOSEntitlements`
+- `$gt`
+- `osenvironment`
+- `NULL`
+- `compilation-service`
+- `int _check_authorize_local_signing_entitlement(struct proc *)`
+- `AMFI: UDID support enabled: %u\n`
+- `cmd = (acm_command_t *)acm_malloc_data(cmdSize)`
+- `site.ACMRequirement.ACMRequirementDataAP`
+- `CEDeserialization length mismatch`
+- `%s: %s: returning, err = %ld.\n`
+- `cryptex1.generic`
+- `com.apple.WebKit.WebContent`
+- `beta-reports-active`
+- `AMFI: hook..execve() killing %s (pid %u): Attempt to execute completely unsigned code (must be at least ad-hoc signed).\n`
+- `---`
+- `bool decode failure`
+- `AMFI: local signing validation was unsuccessful.\n`
+- `AMFI: OOP-JIT validation was unsuccessful.\n`
+- `root`
+- `(*cs_flags & initial_cs_flags) == initial_cs_flags`
+- `\"AMFI: %s: Anomaly, code directory is NULL\" @%s:%d`
+- `$or`
+- `der_vm_integer_from_context`
+- `%s: could not get current process\n`
+- `*`
+- `in-tc-with-constraint-category`
+- `LaunchConstraints.cpp`
+- `not `
+- `AMFI: '%s' : locally signed jit is disabled by system configuration\n`
+- `(data && dataLength && dataLength <= kACMControlMaxDataLength) || (!data && !dataLength)`
+- `oblit-inprogress`
+- `com.apple.system-task-ports.token.control`
+- `AMFI: '%s' is adhoc signed.\n`
+- `AMFI: '%s': disallowing locally signed library with entitlements`
+- `<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"https://www.apple.com/DTDs/PropertyList-1.0.dtd\"><plist version=\"1.0\">`
+- `AMFI: Validation Category info: current %s (%d) parent %s (%d) responsible %s (%d) launch type %d\n`
+- `chip-id`
+- `fast-path-local`
+- `int _set_local_signing_public_key(struct proc *, user_addr_t)`
+- `site.ACMCredential.ACMCredentialDataKextDenyList`
+- `site.OrOperation`
+- `com.apple.QuartzCore.secure-mode`
+- `AMFI: Failed to set team identifier in the tle usage event payload`
+- `checkForLaunchWarningsInDaemon`
+- `%s: process %s attempted to use MAP_JIT but jit is disallowed by system configuration\n`
+- `der_decode_data`
+- `com.apple.private.uninstall.deletion`
+- `library_validation_failure`
+- `Caller provided an invalid constraint as a spawnattr`
+- `AMFI: empty profile provided: %s\n`
+- `AMFI: run invalid not allowed\n`
+- `CertManager.cpp`
+- `Root installed system service allowed: %s\n`
+- `site.QueryOperation`
+- `\"AMFI: %s: unable to obtain local signing public key at early boot\" @%s:%d`
+- `XNU`
+- `AMFI: Failed to set launching process validation category in the tle violation event payload`
+- `disabled`
+- `\"AMFI: failed to deserialize legacy context: %s\\n\" @%s:%d`
+- `personalized.engineering-root`
+- `dictionary keys are not sorted or not unique`
+- `Memory prepare failed: 0x%x\n`
+- `developer mode status`
+- `on-authorized-authapfs-volume`
+- `bounded_ptr<T>::operator*: Dereferencing this pointer would access memory outside of the bounds set originally`
+- `string_value_allowed_iterate`
+- `%s: error copying in img4_object_addr: %d\n`
+- `ACMKernelLib`
+- `The offset of the pointer inside its valid memory range can't be represented using int32_t`
+- `virtual bool AppleMobileFileIntegrity::start(IOService *)`
+- `AMFI: '%s': unsuitable CT policy %#llx for this platform/device, rejecting signature.\n`
+- `cryptex1.safari-downlevel`
+- `LWCR: invalid version / compatible version fields`
+- `fatal error when decoding key/value pair`
+- `com.apple.security.get-movable-control-port`
+- `serviceMatchingDict`
+- `Failed to get path for vnode`
+- `com.apple.backboardd.debugapplications`
+- `\"Should not reach here proc: %d library: %d\" @%s:%d`
+- `StaticPlatformPolicy<%d>: unable to verify audit token came from amfid\n`
+- `OSDetachedCertificates`
+- `site.ACMCredential.ACMCredentialDataUserOutputDisplayed`
+- `cdhash`
+- `developer_mode_status`
+- `AMFI: AMFIUpdateDeviceState\n`
+- `darwinos-security-environment`
+- `failed to construct an LWCR from the provided buffer (error: %d)`
+- `%s: /product node not found\n`
+- `AMFI: profile does not provision any developer certificates\n`
+- `AMFI: disabling Swift Playgrounds JIT services on iPhone devices\n`
+- `com.apple.keystore.sik.access`
+- `iOS`
+- `com.apple.amfi.developer_mode_state`
+- `amfi`
+- `%s\n`
+- `EntitlementPolicy.h`
+- `iokit.OSEntitlements`
+- `$flag-check`
+- `AMFI: file (%s) failed to parse a launch constraint on in slot %d (%s), ignoring\n`
+- `1212212`
+- `developer_mode_resolved`
+- `Bad things happened.`
+- `filename`
+- `ConfigurationSettings.cpp`
+- `LibraryConstraints.cpp`
+- `AMFI: profile not registered with XNU monitor without cs_blob\n`
+- `dynamic`
+- `%s disallowed without %s`
+- `\"AMFI: failed OSEntitlements back-reference: %p | %p\" @%s:%d`
+- `$lt`
+- `com.apple.private.mediaexperience.suppressrecordingstatetosystemstatus`
+- `AMFI: Failed to set signing_identifier in the SHA1 code directory usage event payload\n`
+- `Boolean tokenIsTrusted(audit_token_t)`
+- `int _get_local_signing_private_key(struct proc *, user_addr_t)`
+- `ptr`
+- `CoreEntitlements: validation | %.*s: 0x%04X\n`
+- `%s: Returning IOReturn 0x%x to process %d\n`
+- `com.apple.private.tcc.manager`
+- `%s: loading duplicate trust cache (success)\n`
+- `%s: Unknown hash type %d\n`
+- `mapped file has no cdhash, completely unsigned? Code has to be at least ad-hoc signed.`
+- `%s called with NULL cred\n`
+- `acm_mem_alloc_info`
+- `CSBlobAccessor.cpp`
+- `com.apple.rootless.restricted-nvram-variables.heritable`
+- `der_decode_next`
+- `S24@?0r^{_CEValueTypePair=I{_CEElement={?=*Q}{?=Q{?=*Q}}}}8^{_CEIterateArgs=Q^vB}16`
+- `model`
+- `AMFI: %s: unable to find code directory\n`
+- `/Library/Caches/com.apple.xbs/4776FB82-4876-4747-BD9A-F14E510003B9/TemporaryDirectory.gzqdtN/Sources/AppleCredentialManager_KernelLibs/ACMKernelLib/ACMKernelTransport.cpp`
+- `$query deserialization failed since it has an invalid query definition`
+- `com.apple.WalletBlastDoorService`
+- `\"AMFI: unexpectedly failed to obtain AKS services\" @%s:%d`
+- `StaticPlatformPolicy<%d>: Unable to match identity\n`
+- `service`
+- `$or operator disallowed for active fact`
+- `site.LaunchTypeNonePolicy`
+- `Constraint categories are not supported when matching against a running process (cc:%lld)`
+- `img_vp`
+- `\"AMFI: attempted to reinitialize OSEntitlementsReadOnly identity: %p\" @%s:%d`
+- `_allocatedMem.total >= size`
+- `comp`
+- `der_vm_iterate_b`
+- `\"Should not reach here, uncategorized constraint category: %d\" @%s:%d`
+- `AMFI: only sysdiagnose can set the sysdiagnose launch type (parent changed: %d)\n`
+- `cryptex1.boot.app`
+- `site.AppleMobileFileIntegrityUserClient`
+- `team-identifier-for-current-process`
+- `validateCommand`
+- `signing_identifier`
+- `cdhash-full`
+- `virtual void AppleMobileFileIntegrity::stop(IOService *)`
+- `AMFI: allowing pid %u to inherit IPC ports (no entitlements)\n`
+- `\"AMFI gave us too many certs\\n\" @%s:%d`
+- `site.ACMRequirement.ACMRequirementDataBiometryMatchAttempted`
+- `developer_mode_state`
+- `No error message set`
+- `Unexpected type to match against`
+- `cryptex1.boot.rosetta`
+- `Unknown boolean encoding`
+- `%s: invalid load trust cache selector %d\n`
+- `com.apple.private.MobileContainerManager.allowed`
+- `com.apple.private.avfoundation.capture.nonstandard-client.allow`
+- `AppleMobileFileIntegrity`
+- `int _check_cdhash_in_trustcache(struct proc *, user_addr_t)`
+- `com.apple.private.system-keychain`
+- `Constraint not matched`
+- `com.apple.private.MobileGestalt.AllowProtectedKeys`
+- `com.apple.private.hid.manager.client`
+- `%s: token idversion (%d) does not match proc (%d)\n`
+- `AMFI: Failed to set launch type in the tle violation event payload`
+- `\"AMFI: calling %s without xART storage support\" @%s:%d`
+- `AMFI: '%s': disallowed value for entitlement: %s\n`
+- `$optional`
+- `AMFI: Enabling developer mode since we are in mobile obliteration\n`
+- `AMFI: DER entitlements present in no entitlement check. (length: %ld, ptr: %s)`
+- `%s: input too large: %llu\n`
+- `com.apple.developer.team-identifier`
+- `der_vm_execute_select_key`
+- `Invalid data length: %lld entries, %u bytes\n`
+- `AMFI: %s: required cs_blobs not available\n`
+- `No requirements in the provided constraint`
+- `can-execute-cdhash`
+- `AMFI: '%s': has developer signature (%#llx) but developer mode is not enabled\n`
+- `recursion limit reached`
+- `data element not allowed`
+- `run-unsigned-code`
+- `transport`
+- `LibCall_ACMKernelControl`
+- `com.apple.MediaAnalysisBlastDoorSupport`
+- `AMFI: Launch Constraint Violation (%senforcing), error info: c[%d]p[%d]m[%d]e[%d], (%.*s) launching proc[vc: %d pid: %d]: %s, launch type %d, failure proc [vc: %d pid: %d]: %s\n`
+- `Int op requires int parameter`
+- `com.apple.QuartzCore.secure-capture`
+- `AMFI: %s: OOP-JIT signature represents main binary\n`
+- `%s: unexpected cd hash length: %u\n`
+- `Not a CoreEntitlements error!`
+- `AMFI: no alternative entitlements for OOP-JIT type: %u\n`
+- `AMFI: DER entitlement extraction failure in no entitlement check.`
+- `site.ACMRequirement.ACMRequirementDataSecureStateWithAttributes`
+- `com.apple.TelephonyBlastDoorService`
+- `\"AMFI: Unable to create a name matching for SCRD\" @%s:%d`
+- `AMFI: Failed to allocate memory for the failure description\n`
+- `com.apple.rootless.datavault.controller`
+- `Non array element found in operator Array`
+- `boolean should be exactly 1 byte`
+- `com.apple.security.get-task-allow`
+- `previews`
+- `transportContext`
+- `site.ACMRequirement.ACMRequirementDataSecureIntent`
+- `com.apple.backboardd.launchapplications`
+- `trust_level`
+- `AMFI: CC_Responsible: Unknown Constraint category: %d\n`
+- `AMFI: Failed to get trust cache type for %s: (TCReturn: 0x%02X | 0x%02X | %u)`
+- `setBPR`
+- `%s: %s: returning, err = %ld, var=%u.\n`
+- `AppleSoCMisc`
+- `static IOReturn AppleMobileFileIntegrityUserClient::setDenylist(OSObject *, void *, IOExternalMethodArguments *)`
+- `mapped file has no Team ID and is not a platform binary (signed with custom identity or adhoc?)`
+- `AKSKernelServices`
+- `com.apple.system-task-ports.inspect`
+- `Constraint category parent constraint can't be enforced because parent has changed`
+- `\"AMFI: unable to create legacy CE context from monitor CE context: %u\" @%s:%d`
+- `personalized.supplemental-persistent`
+- `com.apple.MessagesAirlockService`
+- `site.LaunchTypeSysdiagnosePolicy`
+- `info-plist-hash`
+- `AMFI: hook..execve() killing %s (pid %u): %s\n`
+- `&amp;`
+- `AMFIProtectedDataAvailable`
+- `site.VnodeLazyPath`
+- `AMFI: process with pid %u is not CS_VALID, not honoring entitlements.\n`
+- `AMFI: allowing pid %u to inherit IPC ports (get-task-allow)\n`
+- `AMFI: '%s' has no CMS blob?\n`
+- `os-environment`
+- `\"AMFI: failed to serialize as XML: %s\\n\" @%s:%d`
+- `unhandled opcode`
+- `cpu_type`
+- `auxiliary_info`
+- `Query Operation expected the Fact to be a CoreEntitlements dictionary`
+- `Entitlements element not allowed`
+- `/chosen`
+- `com.apple.private.security.container-manager`
+- `com.apple.private.security.storage.Photos`
+- `com.apple.private.security.storage.trustd-private`
+- `com.apple.keystore.auth-token`
+- `curr_validation_category`
+- `%08X-%016llX`
+- `%s: img4_object cannot have zero length\n`
+- `boolean_t deviceUnlocked(bool *)`
+- `\"Should have fatal failure description pointers when we are enforcing\" @%s:%d`
+- `Entitlements`
+- `ProvisionedDevices`
+- `\"AMFI: unexpected OSEntitlements adjustment with monitor\" @%s:%d`
+- `err == 0 `
+- `kern.osreleasetype`
+- `cryptex1.preboot.app`
+- `amfi-allows-trust-cache-load`
+- `AMFI: providing XNU monitor with auxiliary signature\n`
+- `LibCall_BuildCommand`
+- `site.RefCounted`
+- `The range of valid memory is too large to be represented by this type, or [begin, end) is not a well-formed range`
+- `CEDeserialize_block_invoke`
+- `AMFI: unable to obtain AKS services\n`
+- `Setting up notifier for %s\n`
+- `amfi_enforce_launch_constraints`
+- `%s: unable to get %s (0x%x)\n`
+- `%s not allowed for Restricted Execution Mode state (%s)`
+- `v16@?0r^{_OSEntitlementsReadOnly=^{OSEntitlements}{CEQueryContext={der_vm_context=^{CERuntime}{CEAccelerationContext=^{CEAccelerationElement}Q}QBB(?={ccder_read_blob=**}{?=**})}B}{_CEContext={_CEContextInfo=CI}{_CEElement={?=*Q}{?=Q{?=*Q}}}^{_CEElementIndex}Q{CEQueryContext={der_vm_context=^{CERunti`
+- `\"AMFI: failed to compute size for deserialization: %s\\n\" @%s:%d`
+- `cryptex1.boot.os`
+- `AMFI: Failed to set launching process path in the tle violation event payload`
+- `com.apple.mis.warning`
+- `Error getting DER\n`
+- `%s: Hash type is SHA1`
+- `no code signature`
+- `heap underflow / memory tracking issue?`
+- `global.pdi`
+- `validate_VNext`
+- `signing-identifier`
+- `platform-identifier-for-current-process`
+- `AMFI: Failed to set process identifier in the tle violation event payload`
+- `Restricted Execution Mode state(%s): %s (pid %u) would be disallowed by policy, but is allowed by boot-args\n`
+- `platform binary with platform identifier not in trust cache\n`
+- `\"AMFI: inconsistency in DER entitlements length: %u | %lu\" @%s:%d`
+- `_allocatedMem.data >= size`
+- `site.ACMCredential.ACMCredentialDataPassphraseEntered`
+- `_process_matches_constraint`
+- `developer-mode`
+- `There should only be one operation to match a fact`
+- `copy_keys_to_accelerator_block_invoke`
+- `sub-sequence size is larger than sequence size`
+- `%s (pid %u) not allowed for Restricted Execution Mode state (%s)\n`
+- `[%s]: subset validation failed, bool value of key '%.*s' not allowed\n`
+- `der_vm_execute_select_index`
+- `process_identifier`
+- `%s: /product/udid-version has unexpected length: %u\n`
+- `site.ConstErrorOperation`
+- `com.apple.private.security.storage.DiagnosticReports.read-write`
+- `error_code`
+- `personalized.mobile-asset-code`
+- `iterable decoding failure`
+- `Verification failed`
+- `%s: expected length overflow: %zu (total len %zu + %zu)\n`
+- `\"AMFI: protected-data-access has unexpected size (%u)!\" @%s:%d`
+- `trustCacheIsDuplicateImg4`
+- `com.apple.RecoveryOS-Agent`
+- `%s: cs_enforcement disabled by boot-arg\n`
+- `%s: %s disallowed due to OOP-JIT loader entitlement`
+- `AMFI: %s: unsatisfied entitlements for loading OOP-JIT signature\n`
+- `%s: null address for public key\n`
+- `fatal error detected during OOP-JIT signature validation`
+- `site.ACMCredential.ACMCredentialDataBiometryMatchAttempted`
+- `der_vm_buffer_from_context`
+- `%s: copyBytesFromInputArguments failed: %d\n`
+- `LWCRs constraint category cannot be less that zero`
+- `AMFI: failed to set auxiliary_info for auxiliary info\n`
+- `amfid_validated`
+- `personalized.supplemental-ephemeral`
+- `12122`
+- `AMFI: bailing out because of restricted entitlements.\n`
+- `The system only allows platform binaries until developer mode status has been resolved, and the code is not a platform binary\n`
+- `AMFI: %s: OOP-JIT signature has entitlements\n`
+- `%s: error copying in public key %d\n`
+- `key-value pair contains extra elements`
+- `IODTNVRAM`
+- `AMFI: %s\n`
+- `StaticPlatformPolicy<%d>: verify_code_directory interrupted\n`
+- `%s: img4_object_addr expected but not provided\n`
+- `loadFromCE`
+- `key length is invalid`
+- `static IOReturn AppleMobileFileIntegrityUserClient::loadTrustCache(OSObject *, void *, IOExternalMethodArguments *)`
+- `Validation of denylist failed: not sorted`
+- `v40@?0{CESerializedElement=q(?=q)QB}8`
+- `AMFI: profile validated the code signature\n`
+- `UUID`
+- `\"AMFI: no /model device tree node!\" @%s:%d`
+- `AMFI: allowed with a license-to-operate\n`
+- `%s: unable to allocate %llu bytes\n`
+- `der_decode_number`
+- `com.apple.developer.swift-playgrounds-app.development-build`
+- `%s: unable to load trust cache: %d\n`
+- `AMFI booted with research mode\n`
+- `[%s]: subset validation failed, string array of key '%.*s' not allowed\n`
+- `Private Cloud Compute`
+- `_checkOOPJitLibraryValidation`
+- `QA Hierarchy used -> %s\n`
+- `StaticPlatformPolicy<%d>: verify_code_directory returned 0x%x\n`
+- `12111112122212121111111111112`
+- `AMFI: disabling local signing due to mobile obliteration\n`
+- `platform-application`
+- `AMFI: '%s' couldn't fetch certs\n`
+- `site.ACMRequirement.ACMRequirementDataPushButtonWithAttributes`
+- `Security research enabled`
+- `1211111212221212111`
+- `Respecting MIS launch warning: %s\n`
+- `%s: invalid error struct size: %zu\n`
+- `site.ACMCredential.ACMCredentialDataSignature`
+- `der_validate_dictionary`
+- `der_vm_execute_match_integer`
+- `Only platform code can set launch constraints on itself`
+- `iPhone`
+- `\"AMFI: unable to obtain legacy CE context from CE context: %u\" @%s:%d`
+- `index size overflow`
+- `com.apple.TelephonyBlastDoorSupport`
+- `AMFI: Failed to set cdhash in the SHA1 code directory usage event payload\n`
+- `App Store Fast Path -> %s\n`
+- `%s: %s: returning.\n`
+- `factless operator disallowed for active fact`
+- `</string>`
+- `/arm-io/sep/iop-sep-nub/xART`
+- `ConstraintUtilities.cpp`
+- `%s: process %d not allowed to load trust cache\n`
+- `%s: device is not unlocked (lock_state %d).\n`
+- `error_msg`
+- `curr_path`
+- `AMFI: '%s': unable to find code directory\n`
+- `der_vm_execute_nocopy`
+- `com.apple.private.osanalytics.defaults.read-all.allow`
+- `launch constraints enforced`
+- `\"AMFI: Unable to set BPR via AppleSocMisc: 0x%x\\n\" @%s:%d`
+- `personalized.ddi`
+- `com.apple.private.playgrounds-local-signing-allowed`
+- `Incorrect number of elements in operator Array tuple`
+- `%s: unable to extract img4 module: 0x%02X | 0x%02X | %u\n`
+- `developer mode status has been resolved`
+- `in-kernel`
+- `com.apple.wifi.manager-access`
+- `failed getting entitlements`
+- `\"amfid is broken. (%s) (%d) (%d) (%d)\" @%s:%d`
+- `site.ACMCredential.ACMCredentialDataSecureIntent`
+- `site.ProcessAccessor`
+- `%s: %s: called.\n`
+- `DeveloperCertificates`
+- `_unload_trust_cache`
+- `command`
+- `site.ACMCredential.ACMCredentialDataAP`
+- `protected-data-access`
+- `ml-compiler`
+- `performCommandV3`
+- `Got an unexpected type (not a sequence) when trying to read the array of matches.`
+- `der_decode_entitlements`
+- `AMFI: Failed to set has_restricted_entitlements in the SHA1 code directory usage event payload\n`
+- `entitlements`
+- `trust-cache`
+- `com.apple.private.amfi.can-check-trust-cache`
+- `AMFI: '%s': local signed binary does not have a team identifier\n`
+- `numeric string element not allowed`
+- `com.apple.locationd.activity`
+- `alloc_vm_buffer`
+- `Only platform code can set launch constraints`
+- `\"AMFI: failed to acquire entitlements element from profile: %u\" @%s:%d`
+- `ACMKernControl`
+- `LWCRs do not specify a constraint category or explicit requirements`
+- `com.apple.system-task-ports.control`
+- `AMFI: CC_Self: Unknown Constraint category: %d\n`
+- `amfi.OSEntitlements`
+- `%s (pid %u) not allowed for Restricted Execution Mode state (%s): code is unsigned\n`
+- `\"AMFI: attempted to reinitialize OSEntitlementsReadOnly ceCtx: %p\" @%s:%d`
+- `site.ACMCredential.ACMCredentialDataBiometryMatched`
+- `der_decode_key_value`
+- `com.apple.IDSBlastDoorService`
+- `copyTrustCacheAndManifestFromInputArgument`
+- `AMFI: ACM status %i\n`
+- `SMAC process not permitted to map library from different SMAC`
+- `Unknown launch type`
+- `AMFI: Couldn't copy buffer for the profile aux-sig\n`
+- `AMFI: profile does not provision claimed entitlements\n`
+- `\"AMFI: inconsistency between instance and monitor context: %u | %u\" @%s:%d`
+- `com.apple.QuartzCore.global-capture`
+- `AMFI: Enabling developer mode since protected data is not available\n`
+- `%s: no registered daemon port\n`
+- `12`
+- `unable to decode value size for key-value pair`
+- `com.apple.private.security.storage-exempt.heritable`
+- `_oopJITLibraryValidationEntitlement`
+- `vnode_isreg(vp)`
+- `int _proc_check_map_anon(proc_t, kauth_cred_t, user_addr_t, user_size_t, int, int, int *)`
+- `!dataSize || data`
+- `site.ACMRequirement.ACMRequirementDataKeyRef`
+- `site.char*`
+- `/Library/Caches/com.apple.xbs/4776FB82-4876-4747-BD9A-F14E510003B9/TemporaryDirectory.gzqdtN/Sources/AppleCredentialManager_KernelLibs/common/LibCall.c`
+- `site.ACMRequirement.ACMRequirementDataBiometryMatched`
+- `site.OptionalOperation`
+- `API Misuse`
+- `mapping process and mapped file (non-platform) have different Team IDs`
+- `%s: /product is missing udid-version\n`
+- `AMFI: %s: Failed to allocate memory for fatal error message, cannot produce a crash reason.\n`
+- `Internal Error: No cdhash found.`
+- `global.bootability-brain`
+- `&apos;`
+- `%s: unrecognized method selector %d\n`
+- `AMFI: armSecurityBootMode: invalid scalarInputCount\n`
+- `site.CEAccelerationElement_t`
+- `/Library/Caches/com.apple.xbs/4776FB82-4876-4747-BD9A-F14E510003B9/TemporaryDirectory.gzqdtN/Sources/AppleCredentialManager_KernelLibs/common/CommonMem.c`
+- `12121122211`
+- `encountered invalid element in an array`
+- `dictionary decoding failure`
+- `\"CoreEntitlments has triggered a panic\\n\" @%s:%d`
+- `com.apple.cs-auxiliary-info`
+- `AMFI: Entitlement extraction failure in no entitlement check.`
+- `AMFI: XNU monitor refused profile\n`
+- `AMFI: using universal provisioning profile\n`
+- `%s: built %s %s\n`
+- `\"AMFI: no root device tree node!\" @%s:%d`
+- `AMFI: Error: expected light weight code requirement, but data is not valid: %s\n`
+- `AMFI: disabling local signing due to allow3rdParty = false\n`
+- `AMFI: profile provisions current device\n`
+- `com.apple.private.security.install.heritable`
+- `AMFI: '%s': local signing public key not initialized\n`
+- `csflags`
+- `CoreEntitlements: subset | %.*s: 0x%04X\n`
+- `Unexpected type in Array tuple`
+- `site.BinaryDataOp`
+- `AMFI: failed to set filename for auxiliary info\n`
+- `lockdown_mode_state`
+- `entitlement validation failed, binary has XML entitlements but no DER slot is present.`
+- `AMFI: Only launchd can set the system service launch type (parent changed: %d)\n`
+- `A memory allocation has failed`
+- `der_decode_utc_time`
+- `%s: process %d not allowed to set denylist\n`
+- `task_for_pid-allow`
+- `com.apple.system-task-ports.token.read`
+- `I`
+- `%u`
+- `OOP-JIT runner entitlement is an incorrect type`
+- `OOP-JIT Signed Fast Path -> %s\n`
+- `personalized.cryptex1.update-brain`
+- `The dictionary of dependent operations is empty.`
+- `CEValidateWithOptions`
+- `entitlements blob does not have CCDER_ENTITLEMENTS_DICT as the second element`
+- `com.apple.keystore.devicebackup`
+- `developer_app_executions`
+- `AMFI: vn_getpath() returned %d.\n`
+- `The ConstraintCategory types that are enforcing`
+- `Apple Mobile File Integrity`
+- `der_decode_string`
+- `Unknown UTC Time encoding`
+- `%s: daemon token not trusted\n`
+- `com.apple.private.security.no-container`
+- `AMFI: failed to set monitor for auxiliary info\n`
+- `\"AMFI: no protected-data-access device tree node!\" @%s:%d`
+- `com.apple.basebandd.xpc.allow`
+- `com.apple.RecoveryDiagnose.recoverydiagnosed`
+- `ProvisionsAllDevices`
+- `allows_security_research`
+- `der_vm_execute_match_string_prefix`
+- `AMFI: %s: cannot securely resolve entitlements from NULL proc\n`
+- `(data && dataLength && dataLength <= kACMEnvironmentVariableMaxDataLength) || (!data && !dataLength)`
+- `AMFIInMobileObliterationPhase`
+- `com.apple.developer.cs.allow-jit`
+- `match_result`
+- `LaunchConstraintPolicy.cpp`
+- `AppleInternalProfile`
+- `AMFI`
+- `LWCRs 'requirements' field is not a dictionary`
+- `enabled`
+- `research.com.apple.license-to-operate`
+- `\"AMFI: attempted to free OSEntitlements without invalidation\" @%s:%d`
+- `com.apple.private.email`
+- `AMFI: [2] informing daemon of developer mode state change`
+- `\"Unknown validation category %d\" @%s:%d`
+- `[%s]: entitlements blob has unexpected version %lld\n`
+- `%s: could not get target\n`
+- `System process was launched as an application unexpectedly`
+- `site.char *`
+- `AMFI: '%s' no hash agility and first code directory is not the best one\n`
+- `AMFI: Failed to set constraint type in the tle usage event payload`
+- `entitlements too large`
+- `site.ACMRequirement.ACMRequirementDataRatchet`
+- `Query cannot be satisfied`
+- `Couldn't find trust cache UUID for library from SMAC`
+- `getOSEntitlements`
+- `AMFI: '%s' has short cms (%u), bailing out.\n`
+- `site.AndOperation`
+- `AMFI: completeSecurityBootMode: invalid scalarInputCount\n`
+- `ACM says dev mode is %llu\n`
+- `mapped file has wrong signer type`
+- `Invalid fact type for this operation (expected a string)`
+- `array decoding failure`
+- `AMFI: failed to set trust_level for auxiliary info\n`
+- `AMFI: Booted in a VM\n`
+- `no`
+- `com.apple.avfoundation.allow-still-image-capture-shutter-sound-manipulation`
+- `%s: img4_aux_manifest_addr expected but not provided\n`
+- `AppleCredentialManager`
+- `der_decode_numeric_string`
+- `AMFI: '%s': disallowed entitlement key: %s\n`
+- `AMFI: Developer Mode Is On\n`
+- `failed parsing DER entitlements`
+- `AMFI: '%s' cmsBlobVerifyWithAgilityHash unsupported: unique=%#x\n`
+- `%s: UUID expected but not provided\n`
+- `com.apple.system-task-ports.token.inspect`
+- `UTIL_OPTIONAL_BUFFER(outBuffer,outSize)`
+- `Null query context`
+- `%s: error %d when querying AKS for extended lock state, failing.\n`
+- `com.apple.coretelephony.Identity.get`
+- `untrusted`
+- `%s: null arguments\n`
+- `AssertMacros: %s (value: 0x%lx), %s, file: %s:%d\n`
+- `platform`
+- `com.apple.accounts.appleaccount.fullaccess`
+- `com.apple.private.thread-set-state`
+- `AMFI: failed to set research_variant for auxiliary info\n`
+- `launch constraints are allowed for 3rd parties`
+- `AMFI: profile does not provision developer certificate\n`
+- `com.apple.system-task-ports.read`
+- `dataOutBuffer && dataInOutLength`
+- `AMFI: allowing pid %u to inherit IPC ports (teamid match)\n`
+- `%s: img4_manifest_addr expected but not provided\n`
+- `site.ACMCredential.ACMCredentialDataPasscodeValidated2`
+- `CEBuildIndexForContext`
+- `Unknown numeric string encoding`
+- `PQC code signing support compiled in`
+- `IU`
+- `bounded_ptr<T>::operator+=(n): Calculating the number of bytes to add to the offset (n * sizeof(T)) would trigger an overflow`
+- `com.apple.IDSBlastDoorSupport`
+- `\"AMFI: failed to acquire UUID element from profile: %u\" @%s:%d`
+- `0123456789abcdef`
+- `AMFI: vnode_check_signature called with platform %d\n`
+- `%s: error: %s\n`
+- `Unexpected operator in Array tuple`
+- `Process violates library's library load constraint`
+- `iteration over a non-iterable type`
+- `\"AMFI: failed to evaluate provisioning profile: %d\" @%s:%d`
+- `site.ACMRequirement.ACMRequirementDataAccessGroups`
+- `site.BinaryIntOp`
+- `recursivelyValidateEntitlements`
+- `%s: PID %d is requesting a trust cache load\n`
+- `Entry count is too large, failing: %lld\n`
+- `not allowing mapping of development code into production process`
+- `AMFI: queried model name from device tree: %s\n`
+- `Bool op requires boolean parameter`
+- `%s: total length overflow: %zu != %zu + %zu\n`
+- `AMFI: developer mode is enabled in the trusted darwinos research variant\n`
+- `\"AMFI: failed to acquire UUID string from profile: %u\" @%s:%d`
+- `com.apple.private.security.restricted-nvram-variables.heritable`
+- `%s: error copying in img4_aux_manifest_addr: %d\n`
+- `\"%s\" @%s:%d`
+- `key / value decoding failure`
+- `\"AMFI: not capturing mobile obliteration state\" @%s:%d`
+- `AMFI: Entitlements present in no entitlement check. (length: %ld, ptr: %s)`
+- `Embedded self constraint can't be enforced because parent has changed`
+- `%s: /chosen node not found\n`
+- `Code has restricted entitlements, but the validation of its code signature failed.\nUnsatisfied Entitlements: %s`
+- `AMFI: Failed to set filename in the SHA1 code directory usage event payload\n`
+- `122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222211`
+- `\"Validation category %d should not reach here\" @%s:%d`
+- `Error communicating with amfid while checking launch warnings for %s\n`
+- `site.ACMRequirement.ACMRequirementDataPasscodeValidated`
+- `site.ACMRequirement.ACMRequirementDataPassphraseEntered`
+- `com.apple.family`
+- `%s: attempted to load duplicate trust cache -- switching to success\n`
+- `AMFI: %s not allowed to map OOP-JIT %s\n`
+- `AMFI: profile does not provision current device\n`
+- `In Operation expected the Fact to be an integer, string or data`
+- `[%s]: subset validation failed, key %.*s with value '%.*s' not allowed\n`
+- `UTC Time element not allowed`
+- `com.apple.locationd.private_info`
+- `team-identifier`
+- `AMFI: finished: %i %i\n`
+- `AMFI: '%s': verification failed since local signing is restricted\n`
+- `PPL`
+- `mapping process is a platform binary, but mapped file is not`
+- `apple-internal`
+- `$optional only supports a single dependent operation`
+- `Constraint is too deeply nested. Failing to avoid recursion overflow`
+- `[%s]: subset validation failed, key not found in the superset '%.*s'\n`
+- `\"previously valid CE result has become invalid\" @%s:%d`
+- `AMFI: profile provisions developer certificate\n`
+- `\"AMFI: failed to compute size for XML: %s\\n\" @%s:%d`
+- `com.apple.keystore.stash.access`
+- `AMFISetLocalSigningPublicKey`
+- `is-main-binary`
+- `AMFI: Failed to set signing identifier in the tle usage event payload`
+- `_checkForOOPJit`
+- `com.apple.developer.web-browser-engine.webcontent`
+- `Couldn't fetch detached certificates for %s\n`
+- `global.ota-update-brain`
+- `com.apple.private.security.storage.AppBundles`
+- `AMFI: Platform binary with platform identifier not in trust cache\n`
+- `MISDenylist.cpp`
+- `$lte`
+- `121212`
+- `com.apple.developer.app-management-domain`
+- `none`
+- `restricted execution mode status`
+- `\"AMFI: attempted to reinitialize OSEntitlementsReadOnly data: %p\" @%s:%d`
+- `getBPR`
+- `AMFI: '%s' has short cd (%u)?\n`
+- `Unexpected type of an fact declaration.`
+- `com.apple.keystore.access-keychain-keys`
+- `N`
+- `BATS_TESTPLAN_ID`
+- `callout out to amfid for %s %s, return %d valid: %d isApple: %d\n`
+- `\"Couldn't allocate memory for a denylist\" @%s:%d`
+- `Attempted resurection of an object`
+- `Attempting to select a data value from a non-data DER object`
+- `site.LaunchTypeApplicationPolicy`
+- `cs_enforcement_disable`
+- `_acmService`
+- `copyPackedData failed: %d\n`
+- `fail_path`
+- `launch environment logging`
+- `mapping process has no Team ID and is not a platform binary`
+- `AMFI: OOP-JIT %s is not meant for %s\n`
+- `%s not allowed for Restricted Execution Mode state (%s): code is not present in any trustcache`
+- `%s: error copying in UUID: %d\n`
+- `ACMKernGetEnvironmentVariable`
+- `%s: could not get entitlements\n`
+- `%s: short input data: %zu < %zu\n`
+- `\"Cannot unload AMFI - policy is not dynamic\\n\" @%s:%d`
+- `Unexpected type of an operation declaration.`
+- `Over-release of an object`
+- `der_vm_execute_string_prefix_value_allowed`
+- `LocalSigning.cpp`
+- `Got an unexpected type (not an integer) when trying to generate an integer operation.`
+- `key contains an embedded NUL`
+- `com.apple.private.osanalytics.defaults.allow`
+- `performCommandFunc`
+- `$and operator disallowed for active fact`
+- `com.apple.private.kernel.system-override`
+- `\"AMFI: amfi-only-platform-code has unexpected size (%u)!\" @%s:%d`
+- `Cannot be both OOP-JIT loader and runner simultaneously`
+- `\"%s: /chosen is missing unique-device-id-string\" @%s:%d`
+- `com.apple.BlastDoor`
+- `Internal`
+- `is-sip-protected`
+- `ccat`
+- `AMFI: Failed to set constraint identifier in the tle violation event payload`
+- `AMFI: Enabling developer mode since we are restoring....\n`
+- `AMFI: failed to copy profile data into kernel allocation\n`
+- `%s: process %d attempted to use MAP_JIT, but device still locked!\n`
+- `AMFI: '%s' has zero length cms, but is not adhoc?\n`
+- `AMFI: '%s': locally signed\n`
+- `%s: public key size not accepted: %zu\n`
+- `runtime doesn't support acceleration`
+- `loadTrustCacheWithType`
+- `StaticPlatformPolicy<%d>: no registered daemon port\n`
+- `iokit.OSDetachedCertificates`
+- `LibCall_ACMGetEnvironmentVariable`
+- `%s not allowed for Restricted Execution Mode state (%s): code is unsigned`
+- `Invalid Arguments`
+- `modify-anchor-certificates`
+- `site.amfid_failed_entitlements_desc_t`
+- `invalid arguments passed in`
+- `srd_allow_trust_caches_when_locked`
+- `AMFI: Failed to get trust cache UUID for %s (TCReturn: 0x%02X | 0x%02X | %u)\n`
+- `com.apple.private.security.datavault.controller`
+- `<data>`
+- `site.ACMRequirement.ACMRequirementDataPushButton`
+- `com.apple.private.cs.debugger`
+- `AMFI: CC_Parent: Unknown Constraint category: %d\n`
+- `launch_constraints_3rd_party_allowed`
+- `Array contains too many elements`
+- `com.apple.private.amfi.can-execute-cdhash`
+- `constraint_type`
+- `AMFI: failed to arm security boot mode: %u\n`
+- `/arm-io/soc-misc`
+- `AMFI: Failed to allocate ProcessAccessor objects\n`
+- `\"AMFI: unable to adjust without monitor: %u\" @%s:%d`
+- `%s: short input: %zu < %zu\n`
+- `com.apple.private.accounts.allaccounts`
+- `site.ACMCredential.ACMCredentialDataPasscodeValidated`
+- `number too large`
+- `com.apple.vpn.installer_events`
+- `%s: token is untrusted: error %d getting cdhash\n`
+- `AMFI: can-execute-cdhash is disabled by system configuration\n`
+- `research_variant`
+- `der_validate_array`
+- `get-task-allow`
+- `\"AMFI: Unable to match on SCRD endpoint\" @%s:%d`
+- `AMFI: SMAC process %s not permitted to map library %s from different SMAC`
+- `der_vm_bool_from_context`
+- `%s: only allowed process can modify the compilation service trust cache\n`
+- `swift-playgrounds`
+- `loadTrustCacheWithExternalManifest`
+- `AMFI: allowing pid %u to inherit IPC ports (platform binary)\n`
+- `S24@?0r^{_CEKeyValuePair={_CEElement={?=*Q}{?=Q{?=*Q}}}{_CEValueTypePair=I{_CEElement={?=*Q}{?=Q{?=*Q}}}}}8^{_CEIterateArgs=Q^vB}16`
+- `site.ACMCredential`
+- `</integer>`
+- `udid-version`
+- `validate_V0`
+- `dictionary key / value decoding failure`
+- `restricted_execution_mode_status`
+- `ACMKernelTransport`
+- `entitlements too small`
+- `Developer mode is disabled, %*.s is disallowed`
+- `%s: process %d attempted to use MAP_JIT but developer mode status has not been resolved!\n`
+- `acm_mem_free_info`
+- `com.apple.MessagesBlastDoorSupport`
+- `%s: failure getting can set denylist entitlement for process %d\n`
+- `AMFI: disabling local signing due to key length: %lu\n`
+
+**[__TEXT.__os_log]**
+
+- `library_validation_failure() could not copy out error msg '%s', error: %d`
+- `%s: vm_allocate failed`
+- `Library Process Constraint Rejection: Rejecting loading of '%s' (Team ID: %s, platform: %s) for process '%s(%d)' (Team ID: %s, platform: %s), reason: %.*s`
+- `evaluateLibraryLoadConstraintOnProcess() could not copy out error msg '%s', error: %d`
+- `%s: vm_map_wire failed kr = %d`
+- `%s: vm_map_unwire failed kr = %d`
+- `%s: vm_map_copyin failed kr = %d`
+- `Library Load Constraint Rejection: Rejecting '%s' (Team ID: %s, platform: %s) for process '%s(%d)' (Team ID: %s, platform: %s), reason: %.*s`
+- `evaluateLibraryLoadConstraintOnLibrary() could not copy out error msg '%s', error: %d`
+- `Library Validation overridden for '%s' (Team ID: %s, platform: %s) for process '%s(%d)' (Team ID: %s, platform: %s), overridden failure: %s`
+- `Library Validation failed: Rejecting '%s' (Team ID: %s, platform: %s) for process '%s(%d)' (Team ID: %s, platform: %s), reason: %s`

@@ -1,0 +1,148 @@
+# `MTLRenderCommandEncoder` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/MetalTools.framework/MetalTools`](../userland/System__Library__PrivateFrameworks__MetalTools.framework__MetalTools.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `MTLCommandEncoder`
+- 0 instance variables, 2 properties, 131 instance methods, 0 class methods
+
+## Properties
+
+```
+@property (TQ,R) tileWidth;
+@property (TQ,R) tileHeight;
+```
+
+## Instance methods
+
+```
+-[MTLRenderCommandEncoder useResources:count:usage:];
+-[MTLRenderCommandEncoder executeCommandsInBuffer:indirectBuffer:indirectBufferOffset:];
+-[MTLRenderCommandEncoder useResource:usage:];
+-[MTLRenderCommandEncoder executeCommandsInBuffer:withRange:];
+-[MTLRenderCommandEncoder useHeap:];
+-[MTLRenderCommandEncoder useHeaps:count:];
+-[MTLRenderCommandEncoder sampleCountersInBuffer:atSampleIndex:withBarrier:];
+-[MTLRenderCommandEncoder setFragmentBuffers:offsets:withRange:];
+-[MTLRenderCommandEncoder setVertexBufferOffset:attributeStride:atIndex:];
+-[MTLRenderCommandEncoder drawPrimitives:vertexStart:vertexCount:instanceCount:baseInstance:];
+-[MTLRenderCommandEncoder drawPatches:patchStart:patchCount:patchIndexBuffer:patchIndexBufferOffset:instanceCount:baseInstance:];
+-[MTLRenderCommandEncoder setVertexBuffers:offsets:withRange:];
+-[MTLRenderCommandEncoder setFrontFacingWinding:];
+-[MTLRenderCommandEncoder setMeshSamplerStates:lodMinClamps:lodMaxClamps:withRange:];
+-[MTLRenderCommandEncoder setObjectBufferOffset:atIndex:];
+-[MTLRenderCommandEncoder setBlendColorRed:green:blue:alpha:];
+-[MTLRenderCommandEncoder setColorStoreAction:atIndex:];
+-[MTLRenderCommandEncoder setFragmentSamplerState:atIndex:];
+-[MTLRenderCommandEncoder drawIndexedPatches:patchStart:patchCount:patchIndexBuffer:patchIndexBufferOffset:controlPointIndexBuffer:controlPointIndexBufferOffset:instanceCount:baseInstance:];
+-[MTLRenderCommandEncoder setCullMode:];
+-[MTLRenderCommandEncoder setVisibilityResultMode:offset:];
+-[MTLRenderCommandEncoder setFragmentIntersectionFunctionTable:atBufferIndex:];
+-[MTLRenderCommandEncoder setTileVisibleFunctionTable:atBufferIndex:];
+-[MTLRenderCommandEncoder setTileSamplerState:atIndex:];
+-[MTLRenderCommandEncoder drawPrimitives:indirectBuffer:indirectBufferOffset:];
+-[MTLRenderCommandEncoder setVertexBuffer:offset:attributeStride:atIndex:];
+-[MTLRenderCommandEncoder setVertexSamplerState:lodMinClamp:lodMaxClamp:atIndex:];
+-[MTLRenderCommandEncoder setTileAccelerationStructure:atBufferIndex:];
+-[MTLRenderCommandEncoder setFragmentBuffer:offset:atIndex:];
+-[MTLRenderCommandEncoder setRenderPipelineState:];
+-[MTLRenderCommandEncoder setVertexSamplerStates:lodMinClamps:lodMaxClamps:withRange:];
+-[MTLRenderCommandEncoder drawMeshThreadgroupsWithIndirectBuffer:indirectBufferOffset:threadsPerObjectThreadgroup:threadsPerMeshThreadgroup:];
+-[MTLRenderCommandEncoder setVertexBytes:length:attributeStride:atIndex:];
+-[MTLRenderCommandEncoder setTileTextures:withRange:];
+-[MTLRenderCommandEncoder setVertexVisibleFunctionTables:withBufferRange:];
+-[MTLRenderCommandEncoder setFragmentBufferOffset:atIndex:];
+-[MTLRenderCommandEncoder setObjectSamplerState:atIndex:];
+-[MTLRenderCommandEncoder setTileSamplerStates:withRange:];
+-[MTLRenderCommandEncoder drawPatches:patchIndexBuffer:patchIndexBufferOffset:indirectBuffer:indirectBufferOffset:];
+-[MTLRenderCommandEncoder setFragmentTexture:atIndex:];
+-[MTLRenderCommandEncoder setTriangleFillMode:];
+-[MTLRenderCommandEncoder setStencilStoreActionOptions:];
+-[MTLRenderCommandEncoder drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:];
+-[MTLRenderCommandEncoder setVertexBuffers:offsets:attributeStrides:withRange:];
+-[MTLRenderCommandEncoder setVertexBytes:length:atIndex:];
+-[MTLRenderCommandEncoder setTileBuffer:offset:atIndex:];
+-[MTLRenderCommandEncoder setObjectBuffer:offset:atIndex:];
+-[MTLRenderCommandEncoder setTileBuffers:offsets:withRange:];
+-[MTLRenderCommandEncoder setStencilReferenceValue:];
+-[MTLRenderCommandEncoder setMeshBuffer:offset:atIndex:];
+-[MTLRenderCommandEncoder setObjectBuffers:offsets:withRange:];
+-[MTLRenderCommandEncoder setTileVisibleFunctionTables:withBufferRange:];
+-[MTLRenderCommandEncoder setVertexIntersectionFunctionTable:atBufferIndex:];
+-[MTLRenderCommandEncoder setMeshSamplerState:atIndex:];
+-[MTLRenderCommandEncoder drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:instanceCount:];
+-[MTLRenderCommandEncoder tileHeight];
+-[MTLRenderCommandEncoder setVertexAccelerationStructure:atBufferIndex:];
+-[MTLRenderCommandEncoder setViewports:count:];
+-[MTLRenderCommandEncoder setFragmentVisibleFunctionTable:atBufferIndex:];
+-[MTLRenderCommandEncoder setVertexSamplerState:atIndex:];
+-[MTLRenderCommandEncoder useResource:usage:stages:];
+-[MTLRenderCommandEncoder drawMeshThreadgroups:threadsPerObjectThreadgroup:threadsPerMeshThreadgroup:];
+-[MTLRenderCommandEncoder setFragmentSamplerState:lodMinClamp:lodMaxClamp:atIndex:];
+-[MTLRenderCommandEncoder setFragmentVisibleFunctionTables:withBufferRange:];
+-[MTLRenderCommandEncoder setVertexSamplerStates:withRange:];
+-[MTLRenderCommandEncoder drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:instanceCount:baseVertex:baseInstance:];
+-[MTLRenderCommandEncoder setStencilStoreAction:];
+-[MTLRenderCommandEncoder setFragmentSamplerStates:withRange:];
+-[MTLRenderCommandEncoder tileWidth];
+-[MTLRenderCommandEncoder setTileSamplerStates:lodMinClamps:lodMaxClamps:withRange:];
+-[MTLRenderCommandEncoder setVertexIntersectionFunctionTables:withBufferRange:];
+-[MTLRenderCommandEncoder useHeaps:count:stages:];
+-[MTLRenderCommandEncoder setThreadgroupMemoryLength:offset:atIndex:];
+-[MTLRenderCommandEncoder setTessellationFactorBuffer:offset:instanceStride:];
+-[MTLRenderCommandEncoder setViewport:];
+-[MTLRenderCommandEncoder setTileBytes:length:atIndex:];
+-[MTLRenderCommandEncoder setScissorRects:count:];
+-[MTLRenderCommandEncoder setObjectSamplerStates:withRange:];
+-[MTLRenderCommandEncoder setVertexAmplificationCount:viewMappings:];
+-[MTLRenderCommandEncoder setVertexVisibleFunctionTable:atBufferIndex:];
+-[MTLRenderCommandEncoder setDepthStencilState:];
+-[MTLRenderCommandEncoder setVertexTexture:atIndex:];
+-[MTLRenderCommandEncoder setMeshBufferOffset:atIndex:];
+-[MTLRenderCommandEncoder setObjectSamplerState:lodMinClamp:lodMaxClamp:atIndex:];
+-[MTLRenderCommandEncoder setDepthStoreAction:];
+-[MTLRenderCommandEncoder setMeshTextures:withRange:];
+-[MTLRenderCommandEncoder drawPrimitives:vertexStart:vertexCount:];
+-[MTLRenderCommandEncoder setMeshBuffers:offsets:withRange:];
+-[MTLRenderCommandEncoder useHeap:stages:];
+-[MTLRenderCommandEncoder setTessellationFactorScale:];
+-[MTLRenderCommandEncoder setObjectTexture:atIndex:];
+-[MTLRenderCommandEncoder drawPrimitives:vertexStart:vertexCount:instanceCount:];
+-[MTLRenderCommandEncoder setTileIntersectionFunctionTables:withBufferRange:];
+-[MTLRenderCommandEncoder setFragmentTextures:withRange:];
+-[MTLRenderCommandEncoder useResources:count:usage:stages:];
+-[MTLRenderCommandEncoder updateFence:afterStages:];
+-[MTLRenderCommandEncoder drawIndexedPatches:patchIndexBuffer:patchIndexBufferOffset:controlPointIndexBuffer:controlPointIndexBufferOffset:indirectBuffer:indirectBufferOffset:];
+-[MTLRenderCommandEncoder setObjectThreadgroupMemoryLength:atIndex:];
+-[MTLRenderCommandEncoder setObjectTextures:withRange:];
+-[MTLRenderCommandEncoder setDepthStoreActionOptions:];
+-[MTLRenderCommandEncoder setFragmentSamplerStates:lodMinClamps:lodMaxClamps:withRange:];
+-[MTLRenderCommandEncoder setFragmentIntersectionFunctionTables:withBufferRange:];
+-[MTLRenderCommandEncoder drawIndexedPrimitives:indexType:indexBuffer:indexBufferOffset:indirectBuffer:indirectBufferOffset:];
+-[MTLRenderCommandEncoder setTileSamplerState:lodMinClamp:lodMaxClamp:atIndex:];
+-[MTLRenderCommandEncoder setDepthClipMode:];
+-[MTLRenderCommandEncoder setDepthBias:slopeScale:clamp:];
+-[MTLRenderCommandEncoder setMeshSamplerStates:withRange:];
+-[MTLRenderCommandEncoder setColorStoreActionOptions:atIndex:];
+-[MTLRenderCommandEncoder memoryBarrierWithResources:count:afterStages:beforeStages:];
+-[MTLRenderCommandEncoder setObjectBytes:length:atIndex:];
+-[MTLRenderCommandEncoder setScissorRect:];
+-[MTLRenderCommandEncoder setDepthTestMinBound:maxBound:];
+-[MTLRenderCommandEncoder setVertexBufferOffset:atIndex:];
+-[MTLRenderCommandEncoder setMeshTexture:atIndex:];
+-[MTLRenderCommandEncoder setVertexBuffer:offset:atIndex:];
+-[MTLRenderCommandEncoder setVertexTextures:withRange:];
+-[MTLRenderCommandEncoder dispatchThreadsPerTile:];
+-[MTLRenderCommandEncoder waitForFence:beforeStages:];
+-[MTLRenderCommandEncoder memoryBarrierWithScope:afterStages:beforeStages:];
+-[MTLRenderCommandEncoder textureBarrier];
+-[MTLRenderCommandEncoder setTileTexture:atIndex:];
+-[MTLRenderCommandEncoder setStencilFrontReferenceValue:backReferenceValue:];
+-[MTLRenderCommandEncoder setTileIntersectionFunctionTable:atBufferIndex:];
+-[MTLRenderCommandEncoder setObjectSamplerStates:lodMinClamps:lodMaxClamps:withRange:];
+-[MTLRenderCommandEncoder drawMeshThreads:threadsPerObjectThreadgroup:threadsPerMeshThreadgroup:];
+-[MTLRenderCommandEncoder setTileBufferOffset:atIndex:];
+-[MTLRenderCommandEncoder setFragmentBytes:length:atIndex:];
+-[MTLRenderCommandEncoder setMeshSamplerState:lodMinClamp:lodMaxClamp:atIndex:];
+-[MTLRenderCommandEncoder setFragmentAccelerationStructure:atBufferIndex:];
+-[MTLRenderCommandEncoder setMeshBytes:length:atIndex:];
+-[MTLRenderCommandEncoder setColorAttachmentMap:];
+```

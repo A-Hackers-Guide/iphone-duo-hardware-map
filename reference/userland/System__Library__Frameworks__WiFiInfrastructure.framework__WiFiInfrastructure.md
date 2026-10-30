@@ -1,0 +1,166 @@
+# `/System/Library/Frameworks/WiFiInfrastructure.framework/WiFiInfrastructure`
+
+iOS 27.2 dyld shared cache image. Version `1032.9.0.0.0`. **[DSC]**
+
+## Linked libraries (28)
+
+- `/System/Library/PrivateFrameworks/Centauri.framework/Centauri`
+- `/System/Library/Frameworks/AccessorySetupKit.framework/AccessorySetupKit`
+- `/System/Library/PrivateFrameworks/CoreWiFi.framework/CoreWiFi`
+- `/System/Library/Frameworks/Foundation.framework/Foundation`
+- `/usr/lib/libobjc.A.dylib`
+- `/usr/lib/libSystem.B.dylib`
+- `/System/Library/Frameworks/CryptoKit.framework/CryptoKit`
+- `/System/Library/Frameworks/Security.framework/Security`
+- `/System/Library/Frameworks/UIKit.framework/UIKit`
+- `/usr/lib/swift/libswiftAccelerate.dylib`
+- `/usr/lib/swift/libswiftCore.dylib`
+- `/usr/lib/swift/libswiftCoreAudio.dylib`
+- `/usr/lib/swift/libswiftCoreFoundation.dylib`
+- `/usr/lib/swift/libswiftCoreImage.dylib`
+- `/usr/lib/swift/libswiftCoreLocation.dylib`
+- `/usr/lib/swift/libswiftDispatch.dylib`
+- `/usr/lib/swift/libswiftMetal.dylib`
+- `/usr/lib/swift/libswiftOSLog.dylib`
+- `/usr/lib/swift/libswiftObjectiveC.dylib`
+- `/usr/lib/swift/libswiftQuartzCore.dylib`
+- `/usr/lib/swift/libswiftSpatial.dylib`
+- `/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib`
+- `/usr/lib/swift/libswiftXPC.dylib`
+- `/usr/lib/swift/libswift_Builtin_float.dylib`
+- `/usr/lib/swift/libswift_Concurrency.dylib`
+- `/usr/lib/swift/libswift_DarwinFoundation1.dylib`
+- `/usr/lib/swift/libswiftos.dylib`
+- `/usr/lib/swift/libswiftsimd.dylib`
+
+## Objective-C: 12 classes, 0 protocols, 0 methods, 0 properties
+
+### Class pages
+
+Every class and protocol, with its methods: [`_TtC18WiFiInfrastructure20WINetworkSharingUtil`](../objc/_TtC18WiFiInfrastructure20WINetworkSharingUtil_WiFiInfrastructure.md), [`_TtC18WiFiInfrastructure24WINetworkSharingProvider`](../objc/_TtC18WiFiInfrastructure24WINetworkSharingProvider_WiFiInfrastructure.md), [`_TtC18WiFiInfrastructure26WINetworkSharingController`](../objc/_TtC18WiFiInfrastructure26WINetworkSharingController_WiFiInfrastructure.md), [`_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909117AskToShareUIActor`](../objc/_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909117AskToShareUIActor_WiFiInfrastructure.md), [`_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909118AccessoryScanActor`](../objc/_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909118AccessoryScanActor_WiFiInfrastructure.md), [`_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909118NetworkEventsActor`](../objc/_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909118NetworkEventsActor_WiFiInfrastructure.md), [`_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909119NetworkEventCounter`](../objc/_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909119NetworkEventCounter_WiFiInfrastructure.md), [`_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909120AccessoryScanCounter`](../objc/_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909120AccessoryScanCounter_WiFiInfrastructure.md), [`_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909132AccessPointConnectionEventsActor`](../objc/_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909132AccessPointConnectionEventsActor_WiFiInfrastructure.md), [`_TtCC18WiFiInfrastructure26WINetworkSharingControllerP33_BAEECD5FF71A39607B4493A7A7C5203E15ControllerActor`](../objc/_TtCC18WiFiInfrastructure26WINetworkSharingControllerP33_BAEECD5FF71A39607B4493A7A7C5203E15ControllerActor_WiFiInfrastructure.md), [`_TtCVC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909120NetworkEventSequence13AsyncIterator`](../objc/_TtCVC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909120NetworkEventSequence13AsyncIterator_WiFiInfrastructure.md), [`_TtCVC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909134AccessPointConnectionEventSequence13AsyncIterator`](../objc/_TtCVC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909134AccessPointConnectionEventSequence13AsyncIterator_WiFiInfrastructure.md)
+
+### Classes
+
+`_TtC18WiFiInfrastructure20WINetworkSharingUtil`, `_TtC18WiFiInfrastructure24WINetworkSharingProvider`, `_TtC18WiFiInfrastructure26WINetworkSharingController`, `_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909117AskToShareUIActor`, `_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909118AccessoryScanActor`, `_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909118NetworkEventsActor`, `_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909119NetworkEventCounter`, `_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909120AccessoryScanCounter`, `_TtCC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909132AccessPointConnectionEventsActor`, `_TtCC18WiFiInfrastructure26WINetworkSharingControllerP33_BAEECD5FF71A39607B4493A7A7C5203E15ControllerActor`, `_TtCVC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909120NetworkEventSequence13AsyncIterator`, `_TtCVC18WiFiInfrastructure24WINetworkSharingProviderP33_4B4497092937051CBF69C00CBE22909134AccessPointConnectionEventSequence13AsyncIterator`
+
+## Swift types (126)
+
+`WiFiInfrastructure.WIChannel`, `WiFiInfrastructure.WIChannel.Band`, `WiFiInfrastructure.WIChannel.Band.Band24GHzCodingKeys`, `WiFiInfrastructure.WIChannel.Band.Band5GHzCodingKeys`, `WiFiInfrastructure.WIChannel.Band.Band6GHzCodingKeys`, `WiFiInfrastructure.WIChannel.Band.CodingKeys`, `WiFiInfrastructure.WIChannel.CodingKeys`, `WiFiInfrastructure.WIChannel.Width`, `WiFiInfrastructure.WIChannel.Width.CodingKeys`, `WiFiInfrastructure.WIChannel.Width.Width160MHzCodingKeys`, `WiFiInfrastructure.WIChannel.Width.Width20MHzCodingKeys`, `WiFiInfrastructure.WIChannel.Width.Width320MHzCodingKeys`, `WiFiInfrastructure.WIChannel.Width.Width40MHzCodingKeys`, `WiFiInfrastructure.WIChannel.Width.Width80MHzCodingKeys`, `WiFiInfrastructure.WIMACAddress`, `WiFiInfrastructure.WIMACAddress.CodingKeys`, `WiFiInfrastructure.WIMACAddress.Hash`, `WiFiInfrastructure.WIMACAddress.Hash.CodingKeys`, `WiFiInfrastructure.WIMACAddress.Hash.Method`, `WiFiInfrastructure.WIMACAddress.Hash.Method.CodingKeys`, `WiFiInfrastructure.WIMACAddress.Hash.Method.Sha256CodingKeys`, `WiFiInfrastructure.WINetworkSharingAskToShareState`, `WiFiInfrastructure.WINetworkSharingController`, `WiFiInfrastructure.WINetworkSharingController.AuthorizationState`, `WiFiInfrastructure.WINetworkSharingController.ControllerActor`, `WiFiInfrastructure.WINetworkSharingError`, `WiFiInfrastructure.WINetworkSharingError.AccessoryNotAuthorizedCodingKeys`, `WiFiInfrastructure.WINetworkSharingError.AccessoryNotConfiguredCodingKeys`, `WiFiInfrastructure.WINetworkSharingError.AccessoryNotConnectedCodingKeys`, `WiFiInfrastructure.WINetworkSharingError.AccessoryTransportNotSecuredCodingKeys`, `WiFiInfrastructure.WINetworkSharingError.AppNotInForegroundCodingKeys`, `WiFiInfrastructure.WINetworkSharingError.AppNotPermittedCodingKeys`, `WiFiInfrastructure.WINetworkSharingError.CodingKeys`, `WiFiInfrastructure.WINetworkSharingError.CommunicationFailureCodingKeys`, `WiFiInfrastructure.WINetworkSharingError.ErrorCodingKeys`, `WiFiInfrastructure.WINetworkSharingError.NoAccessoryScanResponseCodingKeys`, `WiFiInfrastructure.WINetworkSharingError.NoAvailableNetworksCodingKeys`, `WiFiInfrastructure.WINetworkSharingError.NoMatchingAccessoryScanRequestCodingKeys`, `WiFiInfrastructure.WINetworkSharingError.TimeoutCodingKeys`, `WiFiInfrastructure.WINetworkSharingError.TooManyRequestsCodingKeys`, `WiFiInfrastructure.WINetworkSharingError.WifiNetworkSharingUnsupportedCodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider`, `WiFiInfrastructure.WINetworkSharingProvider.AccessPointConnection`, `WiFiInfrastructure.WINetworkSharingProvider.AccessPointConnection.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.AccessPointConnection.ID`, `WiFiInfrastructure.WINetworkSharingProvider.AccessPointConnection.ID.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.AccessPointConnection.Link`, `WiFiInfrastructure.WINetworkSharingProvider.AccessPointConnection.Link.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.AccessPointConnection.Link.ID`, `WiFiInfrastructure.WINetworkSharingProvider.AccessPointConnection.Link.ID.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.AccessPointConnectionEvent`, `WiFiInfrastructure.WINetworkSharingProvider.AccessPointConnectionEvent.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.AccessPointConnectionEventSequence`, `WiFiInfrastructure.WINetworkSharingProvider.AccessPointConnectionEventSequence.AsyncIterator`, `WiFiInfrastructure.WINetworkSharingProvider.AccessPointConnectionEventsActor`, `WiFiInfrastructure.WINetworkSharingProvider.AccessoryScanActor`, `WiFiInfrastructure.WINetworkSharingProvider.AccessoryScanCounter`, `WiFiInfrastructure.WINetworkSharingProvider.AccessoryScanRequest`, `WiFiInfrastructure.WINetworkSharingProvider.AccessoryScanRequest.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.AccessoryScanResponse`, `WiFiInfrastructure.WINetworkSharingProvider.AccessoryScanResponse.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.AccessoryScanResult`, `WiFiInfrastructure.WINetworkSharingProvider.AccessoryScanResult.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.AskToShareUIActor`, `WiFiInfrastructure.WINetworkSharingProvider.Network`, `WiFiInfrastructure.WINetworkSharingProvider.Network.CaptivePortalLogin`, `WiFiInfrastructure.WINetworkSharingProvider.Network.CaptivePortalLogin.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.ClientIdentity`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.ClientIdentity.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType.EapFASTCodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType.EapTLSCodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType.EapTTLSCodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType.PeapCodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.FASTConfiguration`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.FASTConfiguration.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.TLSVersion`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.TLSVersion.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.TLSVersion.Tls10CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.TLSVersion.Tls11CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.TLSVersion.Tls12CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.TLSVersion.Tls13CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication.ChapCodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication.EapCodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication.MschapCodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication.MschapV2CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication.PapCodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TrustedServers`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.TrustedServers.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.UserLogin`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EAPCredentials.UserLogin.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.EnterpriseCodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.NoneCodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.Credentials.PasswordCodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.ID`, `WiFiInfrastructure.WINetworkSharingProvider.Network.ID.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.SecurityPolicy`, `WiFiInfrastructure.WINetworkSharingProvider.Network.SecurityPolicy.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.SecurityPolicy.OpenCodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.SecurityPolicy.OweCodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.SecurityPolicy.WepCodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.SecurityPolicy.Wpa2CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.SecurityPolicy.Wpa3CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.Network.SecurityPolicy.WpaCodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.NetworkEvent`, `WiFiInfrastructure.WINetworkSharingProvider.NetworkEvent.CodingKeys`, `WiFiInfrastructure.WINetworkSharingProvider.NetworkEventCounter`, `WiFiInfrastructure.WINetworkSharingProvider.NetworkEventSequence`, `WiFiInfrastructure.WINetworkSharingProvider.NetworkEventSequence.AsyncIterator`, `WiFiInfrastructure.WINetworkSharingProvider.NetworkEventsActor`, `WiFiInfrastructure.WINetworkSharingUtil`, `WiFiInfrastructure.WISSID`, `WiFiInfrastructure.WISSID.CodingKeys`, `conformance`
+
+## Strings (113)
+
+```
+, appRequestedSharing: 
+WINetworkSharingProvider.Network.lastModified
+WINetworkSharingProvider.Network.securityPolicy
+Optional<WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration>
+Optional<WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.TLSVersion>
+provisionPACAnonymously
+userEnteredFormValues
+accessPointConnectionsUpdateCounter
+WINetworkSharingProvider.Network.ssid
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.ClientIdentity.privateKey
+accessoryNotAuthorized
+WINetworkSharingProvider.Network.id
+WINetworkSharingProvider.AccessPointConnection
+WINetworkSharingProvider.AccessPointConnection.Link.bssidHash
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.UserLogin.username
+Optional<WINetworkSharingProvider.Network.Credentials.EAPCredentials.FASTConfiguration>
+accessoryTransportNotSecured
+isCertificateRequired
+WINetworkSharingProvider.AccessPointConnection.ssid
+Invalid number of keys found, expected one.
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.TrustedServers.certificates
+wifiNetworkSharingUnsupported
+WINetworkSharingProvider.AccessPointConnection.ID
+WINetworkSharingProvider.Network.ID
+Optional<WINetworkSharingProvider.Network.Credentials.EAPCredentials.ClientIdentity>
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.maximumTLSVersion
+Optional<WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication>
+noAccessoryScanResponse
+captivePortalLogin
+WINetworkSharingProvider.Network
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.InnerAuthentication
+acceptedEAPTypes
+WIMACAddress.Hash.Method
+WINetworkSharingProvider.Network.Credentials.EAPCredentials
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.fastConfiguration
+newShareableNetworkAvailable
+WIMACAddress.Hash.hash
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.TrustedServers.names
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.TLSVersion
+Optional<WINetworkSharingProvider.Network.Credentials.EAPCredentials.UserLogin>
+innerAuthentication
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.clientIdentity
+WINetworkSharingProvider.Network.CaptivePortalLogin.userEnteredFormValues
+maximumTLSVersion
+WINetworkSharingProvider.Network.SecurityPolicy
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.ttlsConfiguration
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.FASTConfiguration.usePAC
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.FASTConfiguration.provisionPACAnonymously
+WINetworkSharingProvider.AccessPointConnection.Link
+fastConfiguration
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.ClientIdentity.certificateChain
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration.innerAuthentication
+ (securityPolicy: 
+, accessPointConnections: 
+WINetworkSharingProvider.Network.isSSIDBroadcast
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.userLogin
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.TrustedServers
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType
+communicationFailure
+, newShareableNetworkAvailable: 
+WINetworkSharingProvider.AccessPointConnection.Link.id
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.acceptedEAPTypes
+Set<WINetworkSharingProvider.Network.Credentials.EAPCredentials.EAPType>
+accessoryNotConnected
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.UserLogin.password
+ttlsConfiguration
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.isCertificateRequired
+accessoryNotConfigured
+enterprise (acceptedEAPTypes: 
+, accessPointConnectionsUpdateCounter: 
+, isSSIDBroadcast: 
+, networksUpdateCounter: 
+WINetworkSharingProvider.Network.Credentials
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.UserLogin
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.tlsConfiguration
+noMatchingAccessoryScanRequest
+, captivePortalLogin: 
+WIMACAddress.Hash
+WINetworkSharingProvider.AccessPointConnection.id
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.trustedServers
+minimumTLSVersion
+appRequestedSharing
+networksUpdateCounter
+accessPointConnections
+noAvailableNetworks
+WINetworkSharingProvider.AccessPointConnection.links
+WIMACAddress.Hash.salt
+WINetworkSharingProvider.Network.credentials
+Set<WINetworkSharingProvider.Network.SecurityPolicy>
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.outerIdentity
+Optional<WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration>
+WINetworkSharingProvider.Network.CaptivePortalLogin
+WINetworkSharingProvider.Network.firstShared
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.ClientIdentity
+userEnteredFormValues: true
+WiFiInfrastructure/WINetworkSharingProvider.swift
+Array<WINetworkSharingProvider.AccessPointConnection.Link>
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.TTLSConfiguration
+WINetworkSharingProvider.AccessPointConnection.Link.ID
+WIChannel.number
+Optional<WINetworkSharingProvider.Network.CaptivePortalLogin>
+_createCheckedThrowingContinuation(_:)
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.FASTConfiguration
+WINetworkSharingProvider.Network.captivePortalLogin
+appNotInForeground
+, lastModified: 
+certificateChain
+tlsConfiguration
+WINetworkSharingProvider.AccessPointConnection.Link.channel
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.TLSConfiguration.minimumTLSVersion
+WIMACAddress.Hash.method
+WINetworkSharingProvider.Network.Credentials.EAPCredentials.ClientIdentity.certificate
+```

@@ -1,0 +1,4018 @@
+# Symbols: `/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md). **[DSC]**
+
+8,556 public symbols, 145,407 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1851147a8  __TEXT,__text  _BUG_IN_CLIENT_OF_DIFFABLE_DATA_SOURCE__APPLYING_SNAPSHOTS_REENTRANTLY_OR_ON_MAIN_AND_BACKGROUND_THREADS
+0x1858db410  __TEXT,__text  _BUG_IN_CLIENT_OF_DIFFABLE_DATA_SOURCE__DUPLICATE_ITEM_IDENTIFIERS_IN_SECTION_SNAPSHOT
+0x18641be30  __TEXT,__const  _BubbleHeight
+0x1854d0cac  __TEXT,__text  _CGAffineTransformFromString
+0x184bef2ec  __TEXT,__text  _CGPointFromString
+0x184ca2db8  __TEXT,__text  _CGRectFromString
+0x184be7098  __TEXT,__text  _CGSizeFromString
+0x1854d0c00  __TEXT,__text  _CGVectorFromString
+0x18533e9f4  __TEXT,__text  _DUIPreviewConvertSizeFromViewToView
+0x18533ead4  __TEXT,__text  _DUIPreviewGetRotationAngleFromViewToView
+0x184d1719c  __TEXT,__text  _KBEqualStrings
+0x1854d0e0c  __TEXT,__text  _NSDirectionalEdgeInsetsFromString
+0x18641b578  __TEXT,__const  _NSDirectionalEdgeInsetsZero
+0x185cb8db4  __TEXT,__text  _NSLayoutConstraintFailedToFindDefaultResolvedValueForSymbolicConstant
+0x184dc9268  __TEXT,__text  _NSStringFromCGAffineTransform
+0x184b31a00  __TEXT,__text  _NSStringFromCGPoint
+0x18479a888  __TEXT,__text  _NSStringFromCGRect
+0x184b2f780  __TEXT,__text  _NSStringFromCGSize
+0x1854cf870  __TEXT,__text  _NSStringFromCGVector
+0x184bdd34c  __TEXT,__text  _NSStringFromDirectionalEdgeInsets
+0x18487816c  __TEXT,__text  _NSStringFromUIEdgeInsets
+0x1854d0a90  __TEXT,__text  _NSStringFromUIOffset
+0x1854d0ad8  __TEXT,__text  _NSStringFromUIRectCornerRadii
+0x185452f40  __TEXT,__text  _NSStringFromUISceneAppearanceStyle
+0x18544bc88  __TEXT,__text  _NSStringFromUISceneRenderingMode
+0x185509874  __TEXT,__text  _NSStringFromUIScreenInteractionModel
+0x18550984c  __TEXT,__text  _NSStringFromUIScreenTouchLevel
+0x185a6a328  __TEXT,__text  _NSStringFromUISwipeConfig
+0x185a6a308  __TEXT,__text  _NSStringFromUISwipeDirection
+0x185a6a3c0  __TEXT,__text  _NSStringFromUISwipeInfo
+0x185a6a2e8  __TEXT,__text  _NSStringFromUISwipeState
+0x1e061ec28  __DATA_CONST,__const  _NSTextEffectBoldTintStyle
+0x00020edc0  indirect  _NSTextEncapsulationAttributeName
+0x1e061ec20  __DATA_CONST,__const  _NSUserActivityDocumentURLKey
+0x1ee02e468  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSColor
+0x1ef468818  __AUTH,__objc_data  _OBJC_CLASS_$_NSDiffableDataSourceSectionSnapshot
+0x1ef466ae0  __AUTH,__objc_data  _OBJC_CLASS_$_NSDiffableDataSourceSectionTransaction
+0x1ee01d548  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSDiffableDataSourceTransaction
+0x00020eeab  indirect  _OBJC_CLASS_$_NSTextEncapsulation
+0x1ee01bf68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TIKeyboardCandidateSuggestion
+0x1ef456508  __AUTH,__objc_data  _OBJC_CLASS_$_UIAcceleration
+0x1ef4564e0  __AUTH,__objc_data  _OBJC_CLASS_$_UIAccelerometer
+0x1ee018788  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAccessibilityCustomAction
+0x1ee03be88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAccessibilityCustomRotor
+0x1ee035268  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAccessibilityCustomRotorItemResult
+0x1ef4503b8  __AUTH,__objc_data  _OBJC_CLASS_$_UIAccessibilityCustomRotorSearchPredicate
+0x1ee03c770  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAccessibilityElement
+0x1ee01e010  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAccessibilityHUDGestureManager
+0x1ef450368  __AUTH,__objc_data  _OBJC_CLASS_$_UIAccessibilityHUDItem
+0x1ef4502f0  __AUTH,__objc_data  _OBJC_CLASS_$_UIAccessibilityHUDView
+0x1ee0183f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAccessibilityLocationDescriptor
+0x1ef450228  __AUTH,__objc_data  _OBJC_CLASS_$_UIAccessoryBackgroundTaskAction
+0x1ee03b488  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAction
+0x1ee027078  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIActionSheet
+0x1ef466360  __AUTH,__objc_data  _OBJC_CLASS_$_UIActivityContinuationAction
+0x1ee03a060  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIActivityIndicatorView
+0x1ef460a48  __AUTH,__objc_data  _OBJC_CLASS_$_UIActivityItemsConfiguration
+0x1ee016be0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAlertAction
+0x1ee03c0b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAlertController
+0x1ef46db58  __AUTH,__objc_data  _OBJC_CLASS_$_UIAlertControllerDescriptor
+0x1ef46db30  __AUTH,__objc_data  _OBJC_CLASS_$_UIAlertControllerVisualStyle
+0x1ef464518  __AUTH,__objc_data  _OBJC_CLASS_$_UIAlertControllerVisualStyleActionSheet
+0x1ef46c5a0  __AUTH,__objc_data  _OBJC_CLASS_$_UIAlertControllerVisualStyleAlert
+0x1ee026da8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAlertView
+0x1ee0299e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAnimatablePropertyBase
+0x1ee027d48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAnimatablePropertyWrapper
+0x1ee027d20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAnimation
+0x1ee0289a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAnimator
+0x1ee03ef20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIApplication
+0x1ef450110  __AUTH,__objc_data  _OBJC_CLASS_$_UIApplicationCoverSheetSceneSpecification
+0x1ef4500e8  __AUTH,__objc_data  _OBJC_CLASS_$_UIApplicationExternalScreenSceneSpecification
+0x1ef4500c0  __AUTH,__objc_data  _OBJC_CLASS_$_UIApplicationLegacyVOIPKeepAliveAction
+0x1ee03bb40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIApplicationRotationFollowingController
+0x1ee03b960  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIApplicationRotationFollowingControllerNoTouches
+0x1ee03deb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIApplicationRotationFollowingWindow
+0x1ee039d18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIApplicationSceneClientAgent
+0x1ee03aad8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIApplicationSceneClientSettings
+0x1ef45b370  __AUTH,__objc_data  _OBJC_CLASS_$_UIApplicationSceneClientSettingsDiffInspector
+0x1ef456468  __AUTH,__objc_data  _OBJC_CLASS_$_UIApplicationSceneDeactivationAssertion
+0x1ef456440  __AUTH,__objc_data  _OBJC_CLASS_$_UIApplicationSceneDeactivationManager
+0x1ee01dc28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIApplicationSceneHostAgent
+0x1ee03b550  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIApplicationSceneSettings
+0x1ee039cf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIApplicationSceneSettingsDiffInspector
+0x1ee03cb80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIApplicationSceneSpecification
+0x1ee03bdc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIApplicationSceneTransitionContext
+0x1ee018fa8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIApplicationShortcutIcon
+0x1ee019598  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIApplicationShortcutItem
+0x1ef456418  __AUTH,__objc_data  _OBJC_CLASS_$_UIApplicationStarkSceneSpecification
+0x1ef421da0  __AUTH,__objc_data  _OBJC_CLASS_$_UIArrangement
+0x1ef421d78  __AUTH,__objc_data  _OBJC_CLASS_$_UIArrangementViewController
+0x1ef421d50  __AUTH,__objc_data  _OBJC_CLASS_$_UIArrangementViewState
+0x1ee0322c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAssistantBarButtonItemProvider
+0x1ef46a118  __AUTH,__objc_data  _OBJC_CLASS_$_UIAsyncTextInteraction
+0x1ef45b348  __AUTH,__objc_data  _OBJC_CLASS_$_UIAttachmentBehavior
+0x1ef450048  __AUTH,__objc_data  _OBJC_CLASS_$_UIAutoFillTextSuggestion
+0x1ee03d3f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAutoRotatingWindow
+0x1ef44ffa8  __AUTH,__objc_data  _OBJC_CLASS_$_UIAutofillExtrasSuggestion
+0x1ee024a10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAutonomousSingleAppModeConfiguration
+0x1ee0249e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAutonomousSingleAppModeSession
+0x1ef466338  __AUTH,__objc_data  _OBJC_CLASS_$_UIAutoscroll
+0x1ee029d50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIBackgroundConfiguration
+0x1ef459390  __AUTH,__objc_data  _OBJC_CLASS_$_UIBackgroundExtensionView
+0x1ee028dd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIBandSelectionInteraction
+0x1ef44ff30  __AUTH,__objc_data  _OBJC_CLASS_$_UIBannerAction
+0x1ee0275a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIBarAppearance
+0x1ee03d878  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIBarButtonItem
+0x1ee027050  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIBarButtonItemAppearance
+0x1ef44ff08  __AUTH,__objc_data  _OBJC_CLASS_$_UIBarButtonItemBadge
+0x1ee032e00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIBarButtonItemGroup
+0x1ef45f7b0  __AUTH,__objc_data  _OBJC_CLASS_$_UIBarButtonItemStateAppearance
+0x1ee03d648  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIBarItem
+0x1ef45b320  __AUTH,__objc_data  _OBJC_CLASS_$_UIBarMinimization
+0x1ee033378  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIBezierPath
+0x1ee0329c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIBlurEffect
+0x1ef436cd8  __AUTH,__objc_data  _OBJC_CLASS_$_UIBridgedAnimatable
+0x1ee03dd28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIButton
+0x1ee028248  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIButtonConfiguration
+0x1ee025780  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIButtonConfigurationVisualProvider
+0x1ef44fee0  __AUTH,__objc_data  _OBJC_CLASS_$_UIButtonConfigurationVisualProviderTVOS
+0x1ee0329a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIButtonLegacyVisualProvider
+0x1ef4563f0  __AUTH,__objc_data  _OBJC_CLASS_$_UICalendarSelection
+0x1ef44fe68  __AUTH,__objc_data  _OBJC_CLASS_$_UICalendarSelectionMultiDate
+0x1ef4563c8  __AUTH,__objc_data  _OBJC_CLASS_$_UICalendarSelectionSingleDate
+0x1ef436cb0  __AUTH,__objc_data  _OBJC_CLASS_$_UICalendarSelectionWeekOfYear
+0x1ee02df40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICalendarView
+0x1ef44fe40  __AUTH,__objc_data  _OBJC_CLASS_$_UICalendarViewDecoration
+0x1ee0365f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICalloutBar
+0x1ef45b2f8  __AUTH,__objc_data  _OBJC_CLASS_$_UICanvasFeedbackGenerator
+0x1ef44fdf0  __AUTH,__objc_data  _OBJC_CLASS_$_UICarPlayApplicationSceneSettings
+0x1ee020058  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICellAccessory
+0x1ef467328  __AUTH,__objc_data  _OBJC_CLASS_$_UICellAccessoryCheckmark
+0x1ee01a208  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICellAccessoryCustomView
+0x1ef462fc8  __AUTH,__objc_data  _OBJC_CLASS_$_UICellAccessoryDelete
+0x1ef45f788  __AUTH,__objc_data  _OBJC_CLASS_$_UICellAccessoryDetail
+0x1ef469b78  __AUTH,__objc_data  _OBJC_CLASS_$_UICellAccessoryDisclosureIndicator
+0x1ef45eae0  __AUTH,__objc_data  _OBJC_CLASS_$_UICellAccessoryInsert
+0x1ef46a668  __AUTH,__objc_data  _OBJC_CLASS_$_UICellAccessoryLabel
+0x1ef464ce0  __AUTH,__objc_data  _OBJC_CLASS_$_UICellAccessoryMultiselect
+0x1ef463828  __AUTH,__objc_data  _OBJC_CLASS_$_UICellAccessoryOutlineDisclosure
+0x1ef4563a0  __AUTH,__objc_data  _OBJC_CLASS_$_UICellAccessoryPopUpMenu
+0x1ef466310  __AUTH,__objc_data  _OBJC_CLASS_$_UICellAccessoryReorder
+0x1ee028db0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICellConfigurationState
+0x1ef456378  __AUTH,__objc_data  _OBJC_CLASS_$_UICheckeredPatternView
+0x1ef456350  __AUTH,__objc_data  _OBJC_CLASS_$_UICloudSharingController
+0x1ee019ec0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionLayoutListConfiguration
+0x1ee03d800  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionReusableView
+0x1ee03b320  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionView
+0x1ee03d620  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionViewCell
+0x1ee0168c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionViewCellRegistration
+0x1ee027578  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionViewCompositionalLayout
+0x1ee021890  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionViewCompositionalLayoutConfiguration
+0x1ee03d350  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionViewController
+0x1ee030f38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionViewDiffableDataSource
+0x1ee017ef0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionViewDiffableDataSourceReorderingHandlers
+0x1ef462fa0  __AUTH,__objc_data  _OBJC_CLASS_$_UICollectionViewDiffableDataSourceSectionSnapshotHandlers
+0x1ef44fdc8  __AUTH,__objc_data  _OBJC_CLASS_$_UICollectionViewDropPlaceholder
+0x1ef459368  __AUTH,__objc_data  _OBJC_CLASS_$_UICollectionViewDropProposal
+0x1ee022878  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionViewFlowLayout
+0x1ee026810  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionViewFlowLayoutInvalidationContext
+0x1ef456328  __AUTH,__objc_data  _OBJC_CLASS_$_UICollectionViewFocusUpdateContext
+0x1ee039250  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionViewLayout
+0x1ee0271e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionViewLayoutAttributes
+0x1ee0287e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionViewLayoutInvalidationContext
+0x1ee03ca40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionViewListCell
+0x1ef44fda0  __AUTH,__objc_data  _OBJC_CLASS_$_UICollectionViewPlaceholder
+0x1ef469600  __AUTH,__objc_data  _OBJC_CLASS_$_UICollectionViewSupplementaryRegistration
+0x1ee036a78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionViewTableCell
+0x1ef459340  __AUTH,__objc_data  _OBJC_CLASS_$_UICollectionViewTableHeaderFooterView
+0x1ee01b680  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionViewTableLayout
+0x1ef456300  __AUTH,__objc_data  _OBJC_CLASS_$_UICollectionViewTableLayoutAttributes
+0x1ef4562d8  __AUTH,__objc_data  _OBJC_CLASS_$_UICollectionViewTableLayoutInvalidationContext
+0x1ef44fd50  __AUTH,__objc_data  _OBJC_CLASS_$_UICollectionViewTableLayoutSwipeAction
+0x1ee027988  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionViewTransitionLayout
+0x1ee022850  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICollectionViewUpdateItem
+0x1ef45b2d0  __AUTH,__objc_data  _OBJC_CLASS_$_UICollisionBehavior
+0x1ee03ed68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIColor
+0x1ee0295f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIColorEffect
+0x1ee02d428  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIColorPickerViewController
+0x1ee02d770  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIColorWell
+0x1ee0365c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICommand
+0x1ef4677b0  __AUTH,__objc_data  _OBJC_CLASS_$_UICommandAlternate
+0x1ee03eb38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIContentSizeCategoryPreference
+0x1ef469088  __AUTH,__objc_data  _OBJC_CLASS_$_UIContentUnavailableButtonProperties
+0x1ef4695d8  __AUTH,__objc_data  _OBJC_CLASS_$_UIContentUnavailableConfiguration
+0x1ee01dfc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIContentUnavailableConfigurationState
+0x1ef469038  __AUTH,__objc_data  _OBJC_CLASS_$_UIContentUnavailableImageProperties
+0x1ef469010  __AUTH,__objc_data  _OBJC_CLASS_$_UIContentUnavailableTextProperties
+0x1ef4695b0  __AUTH,__objc_data  _OBJC_CLASS_$_UIContentUnavailableView
+0x1ee016e60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIContextMenuConfiguration
+0x1ee0324c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIContextMenuInteraction
+0x1ef4662e8  __AUTH,__objc_data  _OBJC_CLASS_$_UIContextMenuSystem
+0x1ee0365a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIContextualAction
+0x1ee03df08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIControl
+0x1ef44fc60  __AUTH,__objc_data  _OBJC_CLASS_$_UIConversationContext
+0x1ef436c38  __AUTH,__objc_data  _OBJC_CLASS_$_UIConversationEntry
+0x1ee02d108  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICornerConfiguration
+0x1ee02cbe0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICornerRadius
+0x1ee036050  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICoverSheetButton
+0x1ee024510  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICubicTimingParameters
+0x1ef46a640  __AUTH,__objc_data  _OBJC_CLASS_$_UICustomViewMenuElement
+0x1ee035218  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIDateLabel
+0x1ee036a50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIDatePicker
+0x1ee032158  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIDefaultKeyboardInput
+0x1ee02f9d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIDeferredMenuElement
+0x1ee02a228  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIDeferredMenuElementProvider
+0x1ee01d520  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIDescriptionBuilder
+0x1ef45d708  __AUTH,__objc_data  _OBJC_CLASS_$_UIDestroySceneAction
+0x1ef44f800  __AUTH,__objc_data  _OBJC_CLASS_$_UIDestroySceneActionResponse
+0x1ee03ee08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIDevice
+0x1ee03c400  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIDictationController
+0x1ee02d0e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIDictationInputMode
+0x1ee024e48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIDictationInputModeOptions
+0x1ef44f648  __AUTH,__objc_data  _OBJC_CLASS_$_UIDictationPhrase
+0x1ee03bc58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIDictationView
+0x1ef456238  __AUTH,__objc_data  _OBJC_CLASS_$_UIDidTakeScreenshotAction
+0x1ef44f508  __AUTH,__objc_data  _OBJC_CLASS_$_UIDigitizerLongPressGestureRecognizer
+0x1ef44f4e0  __AUTH,__objc_data  _OBJC_CLASS_$_UIDigitizerTapGestureRecognizer
+0x1ef4592f0  __AUTH,__objc_data  _OBJC_CLASS_$_UIDismissSceneAction
+0x1ef45c6a8  __AUTH,__objc_data  _OBJC_CLASS_$_UIDocument
+0x1ef45b280  __AUTH,__objc_data  _OBJC_CLASS_$_UIDocumentMenuViewController
+0x1ef44f468  __AUTH,__objc_data  _OBJC_CLASS_$_UIDocumentPasswordField
+0x1ef44f440  __AUTH,__objc_data  _OBJC_CLASS_$_UIDocumentPasswordView
+0x1ef44f418  __AUTH,__objc_data  _OBJC_CLASS_$_UIDocumentPickerExtensionViewController
+0x1ef45f760  __AUTH,__objc_data  _OBJC_CLASS_$_UIDocumentPickerViewController
+0x1ee01a1e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIDocumentProperties
+0x1ef44f3f0  __AUTH,__objc_data  _OBJC_CLASS_$_UIDocumentSharingController
+0x1ef44f3c8  __AUTH,__objc_data  _OBJC_CLASS_$_UIDocumentViewController
+0x1ef44f3a0  __AUTH,__objc_data  _OBJC_CLASS_$_UIDocumentViewControllerLaunchOptions
+0x1ee02def0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIDragInteraction
+0x1ef465500  __AUTH,__objc_data  _OBJC_CLASS_$_UIDragItem
+0x1ef45b258  __AUTH,__objc_data  _OBJC_CLASS_$_UIDragPreview
+0x1ef463800  __AUTH,__objc_data  _OBJC_CLASS_$_UIDragPreviewParameters
+0x1ef45ea90  __AUTH,__objc_data  _OBJC_CLASS_$_UIDragPreviewTarget
+0x1ef46b950  __AUTH,__objc_data  _OBJC_CLASS_$_UIDraggingSessionConfiguration
+0x1ef456210  __AUTH,__objc_data  _OBJC_CLASS_$_UIDraggingSystemMonitor
+0x1ef44f350  __AUTH,__objc_data  _OBJC_CLASS_$_UIDraggingSystemSceneMetadata
+0x1ef4561e8  __AUTH,__objc_data  _OBJC_CLASS_$_UIDraggingSystemSession
+0x1ef45d6e0  __AUTH,__objc_data  _OBJC_CLASS_$_UIDraggingSystemSessionInfo
+0x1ef45c680  __AUTH,__objc_data  _OBJC_CLASS_$_UIDraggingSystemTouchRoutingPolicy
+0x1ee030f10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIDropInteraction
+0x1ef45d6b8  __AUTH,__objc_data  _OBJC_CLASS_$_UIDropProposal
+0x1ef45f738  __AUTH,__objc_data  _OBJC_CLASS_$_UIDynamicAnimator
+0x1ef45ea68  __AUTH,__objc_data  _OBJC_CLASS_$_UIDynamicBehavior
+0x1ef45c658  __AUTH,__objc_data  _OBJC_CLASS_$_UIDynamicItemBehavior
+0x1ef44f328  __AUTH,__objc_data  _OBJC_CLASS_$_UIDynamicItemGroup
+0x1ef4654b0  __AUTH,__objc_data  _OBJC_CLASS_$_UIEditMenuConfiguration
+0x1ee029350  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIEditMenuInteraction
+0x1ee039ed0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIEditingOverlayViewController
+0x1ef436b70  __AUTH,__objc_data  _OBJC_CLASS_$_UIEmojiAndStickerCollectionViewConfiguration
+0x1ef436b48  __AUTH,__objc_data  _OBJC_CLASS_$_UIEmojiAndStickerCollectionViewController
+0x1ee03dfd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIEvent
+0x1ee03ce78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIEventAttribution
+0x1ee02dec8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIEventAttributionView
+0x1ee03a038  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIFeedbackGenerator
+0x1ef45c630  __AUTH,__objc_data  _OBJC_CLASS_$_UIFetchContentInBackgroundAction
+0x1ef456198  __AUTH,__objc_data  _OBJC_CLASS_$_UIFetchContentInBackgroundActionResponse
+0x1ef45d690  __AUTH,__objc_data  _OBJC_CLASS_$_UIFieldBehavior
+0x1ee03c658  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIFieldEditor
+0x1ef46bd38  __AUTH,__objc_data  _OBJC_CLASS_$_UIFindInteraction
+0x1ee02d400  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIFindSession
+0x1ef460a20  __AUTH,__objc_data  _OBJC_CLASS_$_UIFocusAnimationCoordinator
+0x1ee0295d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIFocusContainerGuide
+0x1ee02fc78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIFocusDebugger
+0x1ef461470  __AUTH,__objc_data  _OBJC_CLASS_$_UIFocusEffect
+0x1ee03c310  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIFocusGuide
+0x1ef461448  __AUTH,__objc_data  _OBJC_CLASS_$_UIFocusHaloEffect
+0x1ef46a0c8  __AUTH,__objc_data  _OBJC_CLASS_$_UIFocusMovementAction
+0x1ef44f260  __AUTH,__objc_data  _OBJC_CLASS_$_UIFocusMovementHint
+0x1ef44f238  __AUTH,__objc_data  _OBJC_CLASS_$_UIFocusRingDefaultShapeLayer
+0x1ef44f210  __AUTH,__objc_data  _OBJC_CLASS_$_UIFocusRingLayer
+0x1ee03c888  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIFocusRingManager
+0x1ef456170  __AUTH,__objc_data  _OBJC_CLASS_$_UIFocusRingStyle
+0x1ee03c1a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIFocusSystem
+0x1ef460188  __AUTH,__objc_data  _OBJC_CLASS_$_UIFocusUpdateContext
+0x1ee02bf60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIFontMetrics
+0x1ef44f1e8  __AUTH,__objc_data  _OBJC_CLASS_$_UIFontPickerViewController
+0x1ef44f1c0  __AUTH,__objc_data  _OBJC_CLASS_$_UIFontPickerViewControllerConfiguration
+0x1ef44f170  __AUTH,__objc_data  _OBJC_CLASS_$_UIForceStageInteractionProgress
+0x1ef44f120  __AUTH,__objc_data  _OBJC_CLASS_$_UIFrameAnimation
+0x1ee03ca18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIGestureRecognizer
+0x1ee025ca8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIGlassContainerEffect
+0x1ee025ed8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIGlassEffect
+0x1ef44f0f8  __AUTH,__objc_data  _OBJC_CLASS_$_UIGradient
+0x1ee02e3f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIGraphicsImageRenderer
+0x1ee02e3c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIGraphicsImageRendererContext
+0x1ee02e3a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIGraphicsImageRendererFormat
+0x1ef45c608  __AUTH,__objc_data  _OBJC_CLASS_$_UIGraphicsPDFRenderer
+0x1ef45d668  __AUTH,__objc_data  _OBJC_CLASS_$_UIGraphicsPDFRendererContext
+0x1ef459250  __AUTH,__objc_data  _OBJC_CLASS_$_UIGraphicsPDFRendererFormat
+0x1ee036550  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIGraphicsRenderer
+0x1ee02e378  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIGraphicsRendererContext
+0x1ee02e350  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIGraphicsRendererFormat
+0x1ef45d640  __AUTH,__objc_data  _OBJC_CLASS_$_UIGravityBehavior
+0x1ef456120  __AUTH,__objc_data  _OBJC_CLASS_$_UIHBClickGestureRecognizer
+0x1ef44f0d0  __AUTH,__objc_data  _OBJC_CLASS_$_UIHBDownGestureRecognizer
+0x1ef4560f8  __AUTH,__objc_data  _OBJC_CLASS_$_UIHBLongClickGestureRecognizer
+0x1ef44f0a8  __AUTH,__objc_data  _OBJC_CLASS_$_UIHandleApplicationShortcutAction
+0x1ef4609f8  __AUTH,__objc_data  _OBJC_CLASS_$_UIHandleBackgroundURLSessionAction
+0x1ef44f080  __AUTH,__objc_data  _OBJC_CLASS_$_UIHandleCloudKitShareAction
+0x1ef44f058  __AUTH,__objc_data  _OBJC_CLASS_$_UIHandleLocalNotificationAction
+0x1ef44f030  __AUTH,__objc_data  _OBJC_CLASS_$_UIHandleRemoteNotificationAction
+0x1ef4560d0  __AUTH,__objc_data  _OBJC_CLASS_$_UIHandleStatusBarTapAction
+0x1ef44efe0  __AUTH,__objc_data  _OBJC_CLASS_$_UIHealthAuthorizationAction
+0x1ef46e8f0  __AUTH,__objc_data  _OBJC_CLASS_$_UIHinge
+0x1ef46ecb0  __AUTH,__objc_data  _OBJC_CLASS_$_UIHingeInteraction
+0x1ef46ec60  __AUTH,__objc_data  _OBJC_CLASS_$_UIHingeInteractionUpdate
+0x1ef4560a8  __AUTH,__objc_data  _OBJC_CLASS_$_UIHoverAutomaticEffect
+0x1ef436a80  __AUTH,__objc_data  _OBJC_CLASS_$_UIHoverEffectLayer
+0x1ef436a58  __AUTH,__objc_data  _OBJC_CLASS_$_UIHoverEmptyEffect
+0x1ee036528  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIHoverEvent
+0x1ee03c180  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIHoverGestureRecognizer
+0x1ef462ac8  __AUTH,__objc_data  _OBJC_CLASS_$_UIHoverHighlightEffect
+0x1ef436a30  __AUTH,__objc_data  _OBJC_CLASS_$_UIHoverLiftEffect
+0x1ef466ab8  __AUTH,__objc_data  _OBJC_CLASS_$_UIHoverStyle
+0x1ee03ee30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIImage
+0x1ee03d058  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIImageAsset
+0x1ee03dd00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIImageConfiguration
+0x1ef4662c0  __AUTH,__objc_data  _OBJC_CLASS_$_UIImagePickerController
+0x1ef436a08  __AUTH,__objc_data  _OBJC_CLASS_$_UIImageReader
+0x1ef4369e0  __AUTH,__objc_data  _OBJC_CLASS_$_UIImageReaderConfiguration
+0x1ee03d5f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIImageSymbolConfiguration
+0x1ee03de90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIImageView
+0x1ee02d720  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIImpactFeedbackGenerator
+0x1ee036028  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIIndexBarAccessoryView
+0x1ef45b230  __AUTH,__objc_data  _OBJC_CLASS_$_UIIndexBarDisplayEntry
+0x1ef45b1e0  __AUTH,__objc_data  _OBJC_CLASS_$_UIIndexBarEntry
+0x1ee036a28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIIndexBarView
+0x1ef45d618  __AUTH,__objc_data  _OBJC_CLASS_$_UIIndexBarVisualStyle_Base
+0x1ef45d5f0  __AUTH,__objc_data  _OBJC_CLASS_$_UIIndexBarVisualStyle_LegacyiOS
+0x1ee016e38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIIndirectScribbleInteraction
+0x1ef45ea40  __AUTH,__objc_data  _OBJC_CLASS_$_UIInputContextHistory
+0x1ee027028  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIInputResponderController
+0x1ee020e68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIInputSuggestion
+0x1ee03bd98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIInputView
+0x1ee03bd70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIInputViewController
+0x1ee021840  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIInputViewControllerInterface
+0x1ef44eea0  __AUTH,__objc_data  _OBJC_CLASS_$_UIInputViewControllerInterfaceClient
+0x1ef45c5e0  __AUTH,__objc_data  _OBJC_CLASS_$_UIIntentForwardingAction
+0x1ef45d5a0  __AUTH,__objc_data  _OBJC_CLASS_$_UIIntentForwardingActionResponse
+0x1ef45b190  __AUTH,__objc_data  _OBJC_CLASS_$_UIInteractionProgress
+0x1ef46c528  __AUTH,__objc_data  _OBJC_CLASS_$_UIInterfaceAction
+0x1ef46c500  __AUTH,__objc_data  _OBJC_CLASS_$_UIInterfaceActionGroup
+0x1ef46c8c0  __AUTH,__objc_data  _OBJC_CLASS_$_UIInterfaceActionGroupView
+0x1ef44ecc0  __AUTH,__objc_data  _OBJC_CLASS_$_UIInterfaceActionGroupViewController
+0x1ef44ec98  __AUTH,__objc_data  _OBJC_CLASS_$_UIInterfaceActionHighlightAttributes
+0x1ef44ec20  __AUTH,__objc_data  _OBJC_CLASS_$_UIInterfaceActionSeparatorAttributes
+0x1ee018760  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIInterpolatedFloat
+0x1ef462aa0  __AUTH,__objc_data  _OBJC_CLASS_$_UIInterpolatingMotionEffect
+0x1ef46cdc0  __AUTH,__objc_data  _OBJC_CLASS_$_UIItemProvider
+0x1ee030ee8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBArbiterClientFocusContext
+0x1ee01ed80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBBackdropView
+0x1ee01d048  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBCacheToken
+0x1ee037a90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBContainerKeyView
+0x1ee01a758  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBDerivedKeyboard
+0x1ef44e928  __AUTH,__objc_data  _OBJC_CLASS_$_UIKBDivotedEffect
+0x1ee01b658  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBEdgeEffect
+0x1ee01bf18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBGeometry
+0x1ee01cff8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBGradient
+0x1ee01c2d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBInputBackdropView
+0x1ee01cfd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBKeyDisplayContents
+0x1ee037fb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBKeyView
+0x1ee0278c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBKeyplaneChangeContext
+0x1ee017720  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBLayoutInfo
+0x1ee01bef0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBMergeAction
+0x1ee0183c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBMultilingualIntroductionView
+0x1ef436850  __AUTH,__objc_data  _OBJC_CLASS_$_UIKBMultilingualKeyboardArtworkView
+0x1ef45d550  __AUTH,__objc_data  _OBJC_CLASS_$_UIKBNullEffect
+0x1ee02e788  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBRenderConfig
+0x1ee02a480  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBRenderFactory
+0x1ee01cf80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBRenderFactoryLayoutSegment
+0x1ee01cf30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBRenderGeometry
+0x1ee01cf08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBRenderTraits
+0x1ee01cee0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBRenderingContext
+0x1ee02dea0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBScreenTraits
+0x1ee016820  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBShadowEffect
+0x1ee021e00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBShape
+0x1ef46a618  __AUTH,__objc_data  _OBJC_CLASS_$_UIKBShapeOperator
+0x1ef44ded8  __AUTH,__objc_data  _OBJC_CLASS_$_UIKBSplitTraits
+0x1ee01c2b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBTextEditingTraits
+0x1ee01ce90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBTextStyle
+0x1ee018df0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBTouchState
+0x1ee021dd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBTree
+0x1ef45c590  __AUTH,__objc_data  _OBJC_CLASS_$_UIKBViewTreeSnapshotter
+0x1ee01e4c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKBVisualEffectView
+0x1ef464cb8  __AUTH,__objc_data  _OBJC_CLASS_$_UIKey
+0x1ee0369d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKeyCommand
+0x1ef455f40  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyEvent
+0x1ef455f18  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyEventContext
+0x1ee03e070  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKeyboard
+0x1ef455ef0  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyboardArbiterManager
+0x1ee02ab88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKeyboardAutocorrectionController
+0x1ef44dcf8  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyboardButton
+0x1ef436710  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyboardCandidateSceneHostingController
+0x1ef44d8c0  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyboardEmoji
+0x1ef464310  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyboardEmojiCategory
+0x1ee02c820  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKeyboardEmojiDraggableView
+0x1ef44d7f8  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyboardEmojiGraphics
+0x1ef44d7d0  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyboardEmojiGraphicsTraits
+0x1ef44d780  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyboardEmojiPopoverController
+0x1ef469560  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyboardEmojiPreferences
+0x1ee034e30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKeyboardFloatingTransitionController
+0x1ee03daf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKeyboardImpl
+0x1ee038bc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKeyboardInputMode
+0x1ee0383c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKeyboardInputModeController
+0x1ee038850  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKeyboardLayout
+0x1ee026d80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKeyboardLayoutGuide
+0x1ef44d460  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyboardMediaServiceRemoteViewController
+0x1ef436620  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyboardNumberpadPopoverController
+0x1ef46d540  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyboardPathEffectView
+0x1ef464c90  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyboardPopoverController
+0x1ee038b98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKeyboardPreferencesController
+0x1ee03baf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKeyboardSceneDelegate
+0x1ef455dd8  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyboardScenePresentationModeManager
+0x1ef44d3e8  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyboardSuggestedInputMode
+0x1ef455d88  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyboardUIService
+0x1ef44d370  __AUTH,__objc_data  _OBJC_CLASS_$_UIKeyboardViewController
+0x1ee03ddc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UILabel
+0x1ee0330d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UILargeContentViewerInteraction
+0x1ee03c630  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UILayoutGuide
+0x1ef44d348  __AUTH,__objc_data  _OBJC_CLASS_$_UILexicon
+0x1ef44d320  __AUTH,__objc_data  _OBJC_CLASS_$_UILexiconEntry
+0x1ef46e148  __AUTH,__objc_data  _OBJC_CLASS_$_UILinkConnectionAction
+0x1ef46e120  __AUTH,__objc_data  _OBJC_CLASS_$_UILinkConnectionActionResponse
+0x1ee038210  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIListContentConfiguration
+0x1ee019520  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIListContentImageProperties
+0x1ee019ab0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIListContentTextProperties
+0x1ee02fbd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIListContentView
+0x1ee01ba90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIListSeparatorConfiguration
+0x1ef459138  __AUTH,__objc_data  _OBJC_CLASS_$_UILocalNotification
+0x1ef45e978  __AUTH,__objc_data  _OBJC_CLASS_$_UILocalizedIndexedCollation
+0x1ee03c090  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UILongPressGestureRecognizer
+0x1ef436558  __AUTH,__objc_data  _OBJC_CLASS_$_UIMailConversationContext
+0x1ef436530  __AUTH,__objc_data  _OBJC_CLASS_$_UIMailConversationEntry
+0x1ee024128  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIMainMenuSystem
+0x1ee022828  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIMainMenuSystemConfiguration
+0x1ef455d38  __AUTH,__objc_data  _OBJC_CLASS_$_UIManagedDocument
+0x1ee036d48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIMenu
+0x1ee03b0f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIMenuController
+0x1ee02cbb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIMenuDisplayPreferences
+0x1ee03c158  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIMenuElement
+0x1ee021818  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIMenuItem
+0x1ee031500  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIMenuSystem
+0x1ee022800  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIMenuSystemFindElementGroupConfiguration
+0x1ef436508  __AUTH,__objc_data  _OBJC_CLASS_$_UIMessageConversationContext
+0x1ef4364e0  __AUTH,__objc_data  _OBJC_CLASS_$_UIMessageConversationEntry
+0x1ef4590e8  __AUTH,__objc_data  _OBJC_CLASS_$_UIMoreListController
+0x1ef4590c0  __AUTH,__objc_data  _OBJC_CLASS_$_UIMoreNavigationController
+0x1ee037a18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIMorphingLabel
+0x1ef462a78  __AUTH,__objc_data  _OBJC_CLASS_$_UIMotionEffect
+0x1ef462a50  __AUTH,__objc_data  _OBJC_CLASS_$_UIMotionEffectGroup
+0x1ee038b70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIMovieScrubber
+0x1ee034e08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIMovieScrubberEditingView
+0x1ef44d2a8  __AUTH,__objc_data  _OBJC_CLASS_$_UIMovieScrubberTrackView
+0x1ee028d60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIMultiSelectInteraction
+0x1ee03aab0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIMutableApplicationSceneClientSettings
+0x1ee03b2f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIMutableApplicationSceneSettings
+0x1ef4609d0  __AUTH,__objc_data  _OBJC_CLASS_$_UIMutableApplicationShortcutItem
+0x1ef44d280  __AUTH,__objc_data  _OBJC_CLASS_$_UIMutableCarPlayApplicationSceneSettings
+0x1ef455d10  __AUTH,__objc_data  _OBJC_CLASS_$_UIMutableSceneAsynchronousRenderingOptions
+0x1ef455ce8  __AUTH,__objc_data  _OBJC_CLASS_$_UIMutableSceneLayerPresentationContext
+0x1ee01e498  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIMutableScenePresentationContext
+0x1ef44d258  __AUTH,__objc_data  _OBJC_CLASS_$_UIMutableSceneWindowLayerPresentationContext
+0x1ef455cc0  __AUTH,__objc_data  _OBJC_CLASS_$_UIMutableTransformer
+0x1ef45e950  __AUTH,__objc_data  _OBJC_CLASS_$_UIMutableUserNotificationAction
+0x1ef44d208  __AUTH,__objc_data  _OBJC_CLASS_$_UIMutableUserNotificationActionSettings
+0x1ef45e928  __AUTH,__objc_data  _OBJC_CLASS_$_UIMutableUserNotificationCategory
+0x1ee03c130  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UINavigationBar
+0x1ee01ed08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UINavigationBarAppearance
+0x1ee03d7d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UINavigationButton
+0x1ee03de40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UINavigationController
+0x1ee03c248  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UINavigationItem
+0x1ee017e50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UINib
+0x1ef462f28  __AUTH,__objc_data  _OBJC_CLASS_$_UINibKeyValuePair
+0x1ee02fb88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UINotificationFeedbackGenerator
+0x1ef45d4d8  __AUTH,__objc_data  _OBJC_CLASS_$_UINotificationResponseAction
+0x1ef44d1b8  __AUTH,__objc_data  _OBJC_CLASS_$_UINotificationSettingsAction
+0x1ef455c98  __AUTH,__objc_data  _OBJC_CLASS_$_UIOServer
+0x1ee02e328  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIOpenItemProvidersAction
+0x1ef46ac80  __AUTH,__objc_data  _OBJC_CLASS_$_UIOpenURLAction
+0x1ee01e470  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIOpenURLContext
+0x1ef44d190  __AUTH,__objc_data  _OBJC_CLASS_$_UIOverlayApplicationOverlaySceneSpecification
+0x1ef44d168  __AUTH,__objc_data  _OBJC_CLASS_$_UIOverlayApplicationSubterraneanSceneSpecification
+0x1ef421cd8  __AUTH,__objc_data  _OBJC_CLASS_$_UIOverlayArrangement
+0x1ef421cb0  __AUTH,__objc_data  _OBJC_CLASS_$_UIOverlayArrangementViewProperties
+0x1ef4364b8  __AUTH,__objc_data  _OBJC_CLASS_$_UIPDFAnnotation
+0x1ef436490  __AUTH,__objc_data  _OBJC_CLASS_$_UIPDFAnnotationController
+0x1ef4363f0  __AUTH,__objc_data  _OBJC_CLASS_$_UIPDFDocument
+0x1ef4363a0  __AUTH,__objc_data  _OBJC_CLASS_$_UIPDFHighlightAnnotation
+0x1ef4362d8  __AUTH,__objc_data  _OBJC_CLASS_$_UIPDFLinkAnnotation
+0x1ef436288  __AUTH,__objc_data  _OBJC_CLASS_$_UIPDFMarkupAnnotation
+0x1ef44d140  __AUTH,__objc_data  _OBJC_CLASS_$_UIPDFPage
+0x1ef436170  __AUTH,__objc_data  _OBJC_CLASS_$_UIPDFPageView
+0x1ef4360d0  __AUTH,__objc_data  _OBJC_CLASS_$_UIPDFPopupAnnotation
+0x1ef436058  __AUTH,__objc_data  _OBJC_CLASS_$_UIPDFSelection
+0x1ef435f18  __AUTH,__objc_data  _OBJC_CLASS_$_UIPDFUnderlineAnnotation
+0x1ef455c70  __AUTH,__objc_data  _OBJC_CLASS_$_UIPPTRequestAction
+0x1ee03a588  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPageControl
+0x1ef455c48  __AUTH,__objc_data  _OBJC_CLASS_$_UIPageControlProgress
+0x1ef455c20  __AUTH,__objc_data  _OBJC_CLASS_$_UIPageControlTimerProgress
+0x1ef44d118  __AUTH,__objc_data  _OBJC_CLASS_$_UIPageController
+0x1ee034de0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPageControllerScrollView
+0x1ee038828  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPageViewController
+0x1ee037c20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPanGestureRecognizer
+0x1ee035f60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPanelBorderView
+0x1ee034d90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPasscodeField
+0x1ee01ab90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPasteConfiguration
+0x1ee02dbd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPasteControl
+0x1ef44d0c8  __AUTH,__objc_data  _OBJC_CLASS_$_UIPasteControlConfiguration
+0x1ee039700  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPasteboard
+0x1ef44d0a0  __AUTH,__objc_data  _OBJC_CLASS_$_UIPasteboardOptions
+0x1ef435e50  __AUTH,__objc_data  _OBJC_CLASS_$_UIPencilHoverPose
+0x1ee029328  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPencilInteraction
+0x1ef435e28  __AUTH,__objc_data  _OBJC_CLASS_$_UIPencilInteractionSqueeze
+0x1ef435e00  __AUTH,__objc_data  _OBJC_CLASS_$_UIPencilInteractionTap
+0x1ee03bfa0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPercentDrivenInteractiveTransition
+0x1ee039ea8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPeripheralHost
+0x1ef435dd8  __AUTH,__objc_data  _OBJC_CLASS_$_UIPhotoSearchSuggestion
+0x1ee034d40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPickerContentView
+0x1ee03cc20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPickerView
+0x1ee027000  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPinchGestureRecognizer
+0x1ef44d000  __AUTH,__objc_data  _OBJC_CLASS_$_UIPointerAccessory
+0x1ef44cfd8  __AUTH,__objc_data  _OBJC_CLASS_$_UIPointerAppIconEffect
+0x1ef44cfb0  __AUTH,__objc_data  _OBJC_CLASS_$_UIPointerEffect
+0x1ef44cf88  __AUTH,__objc_data  _OBJC_CLASS_$_UIPointerHighlightEffect
+0x1ef44cf60  __AUTH,__objc_data  _OBJC_CLASS_$_UIPointerHoverEffect
+0x1ee032978  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPointerInteraction
+0x1ef44cf10  __AUTH,__objc_data  _OBJC_CLASS_$_UIPointerLiftEffect
+0x1ee016b40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPointerLockState
+0x1ee021520  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPointerRegion
+0x1ef44cee8  __AUTH,__objc_data  _OBJC_CLASS_$_UIPointerRegionRequest
+0x1ef44cec0  __AUTH,__objc_data  _OBJC_CLASS_$_UIPointerShape
+0x1ef467300  __AUTH,__objc_data  _OBJC_CLASS_$_UIPointerStyle
+0x1ef46cd98  __AUTH,__objc_data  _OBJC_CLASS_$_UIPopoverBackgroundView
+0x1ee038fa8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPopoverController
+0x1ee03c3d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPopoverPresentationController
+0x1ee03c7e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPresentationController
+0x1ef465438  __AUTH,__objc_data  _OBJC_CLASS_$_UIPress
+0x1ef464180  __AUTH,__objc_data  _OBJC_CLASS_$_UIPressInfo
+0x1ee03d008  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPressesEvent
+0x1ee034d18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPreviewAction
+0x1ef44ce48  __AUTH,__objc_data  _OBJC_CLASS_$_UIPreviewActionGroup
+0x1ef45b078  __AUTH,__objc_data  _OBJC_CLASS_$_UIPreviewForceInteractionProgress
+0x1ef45f6e8  __AUTH,__objc_data  _OBJC_CLASS_$_UIPreviewInteraction
+0x1ef459098  __AUTH,__objc_data  _OBJC_CLASS_$_UIPreviewInteractionController
+0x1ef459070  __AUTH,__objc_data  _OBJC_CLASS_$_UIPreviewItemController
+0x1ef44ce20  __AUTH,__objc_data  _OBJC_CLASS_$_UIPreviewMenuItem
+0x1ee016b18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPreviewParameters
+0x1ee034cf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPreviewPresentationController
+0x1ee016af0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIPreviewTarget
+0x1ee034cc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIProgressHUD
+0x1ef44cdf8  __AUTH,__objc_data  _OBJC_CLASS_$_UIProgressIndicator
+0x1ee03bbb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIProgressView
+0x1ef435db0  __AUTH,__objc_data  _OBJC_CLASS_$_UIProofreadingSuggestionList
+0x1ef459048  __AUTH,__objc_data  _OBJC_CLASS_$_UIPushBehavior
+0x1ef44cdd0  __AUTH,__objc_data  _OBJC_CLASS_$_UIQuickLookInternalSceneSpecification
+0x1ee035f10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIReferenceLibraryViewController
+0x1ee032bf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIRefreshControl
+0x1ef459020  __AUTH,__objc_data  _OBJC_CLASS_$_UIRegion
+0x1ef44cd58  __AUTH,__objc_data  _OBJC_CLASS_$_UIRemoteInputViewControllerInterface
+0x1ef44cd30  __AUTH,__objc_data  _OBJC_CLASS_$_UIRemoveControl
+0x1ef44cd08  __AUTH,__objc_data  _OBJC_CLASS_$_UIResetFocusAction
+0x1ef435d88  __AUTH,__objc_data  _OBJC_CLASS_$_UIResolvedShape
+0x1ee03ef70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIResponder
+0x1ef464158  __AUTH,__objc_data  _OBJC_CLASS_$_UIRivenFactory
+0x1ee035ee8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIRootSceneWindow
+0x1ef455ba8  __AUTH,__objc_data  _OBJC_CLASS_$_UIRootWindowScenePresentationBinder
+0x1ee018da0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIRotationGestureRecognizer
+0x1ee03eea8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIScene
+0x1ef458ff8  __AUTH,__objc_data  _OBJC_CLASS_$_UISceneAccessory
+0x1ef458fd0  __AUTH,__objc_data  _OBJC_CLASS_$_UISceneAccessoryRegistration
+0x1ee03af38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISceneActivationConditions
+0x1ef45e8b0  __AUTH,__objc_data  _OBJC_CLASS_$_UISceneActivationRequestOptions
+0x1ee01dc00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISceneAsynchronousRenderingOptions
+0x1ee030c40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISceneClosureConfirmation
+0x1ee03b410  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISceneConfiguration
+0x1ee03b0c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISceneConnectionOptions
+0x1ef435d60  __AUTH,__objc_data  _OBJC_CLASS_$_UISceneDestructionCondition
+0x1ef45b028  __AUTH,__objc_data  _OBJC_CLASS_$_UISceneDestructionRequestOptions
+0x1ef44ccb8  __AUTH,__objc_data  _OBJC_CLASS_$_UISceneHitTestAction
+0x1ef44cc90  __AUTH,__objc_data  _OBJC_CLASS_$_UISceneHitTestActionResponse
+0x1ee01dbd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISceneLayerPresentationContext
+0x1ef45b000  __AUTH,__objc_data  _OBJC_CLASS_$_UISceneLayerTargetFactory
+0x1ef44cc68  __AUTH,__objc_data  _OBJC_CLASS_$_UISceneOpenExternalURLOptions
+0x1ee02aae8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISceneOpenURLOptions
+0x1ef458fa8  __AUTH,__objc_data  _OBJC_CLASS_$_UIScenePresentationBinder
+0x1ee01e448  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIScenePresentationContext
+0x1ee01e420  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIScenePresentationManager
+0x1ef44cc40  __AUTH,__objc_data  _OBJC_CLASS_$_UISceneProposalAction
+0x1ef44cc18  __AUTH,__objc_data  _OBJC_CLASS_$_UISceneProposalActionResponse
+0x1ef45afd8  __AUTH,__objc_data  _OBJC_CLASS_$_UISceneRequestOptions
+0x1ee03b0a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISceneSession
+0x1ef458f80  __AUTH,__objc_data  _OBJC_CLASS_$_UISceneSessionActivationRequest
+0x1ef46b8b0  __AUTH,__objc_data  _OBJC_CLASS_$_UISceneSizeRestrictions
+0x1ee0311b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISceneSystemProtectionManager
+0x1ef44cbf0  __AUTH,__objc_data  _OBJC_CLASS_$_UISceneWindowLayerPresentationContext
+0x1ef44cbc8  __AUTH,__objc_data  _OBJC_CLASS_$_UISceneWindowingBehaviors
+0x1ef45afb0  __AUTH,__objc_data  _OBJC_CLASS_$_UISceneWindowingControlStyle
+0x1ee03ec28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIScreen
+0x1ee02f278  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIScreenEdgePanGestureRecognizer
+0x1ee02eb98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIScreenMode
+0x1ef458f58  __AUTH,__objc_data  _OBJC_CLASS_$_UIScreenshotMetadataRequestAction
+0x1ef463710  __AUTH,__objc_data  _OBJC_CLASS_$_UIScreenshotService
+0x1ee032950  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIScribbleInteraction
+0x1ef458f30  __AUTH,__objc_data  _OBJC_CLASS_$_UIScrollAnimation
+0x1ee028fe0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIScrollEdgeEffect
+0x1ee028fb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIScrollEdgeEffectStyle
+0x1ef45c518  __AUTH,__objc_data  _OBJC_CLASS_$_UIScrollEdgeElementContainerInteraction
+0x1ee033350  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIScrollEvent
+0x1ef44cba0  __AUTH,__objc_data  _OBJC_CLASS_$_UIScrollTestParameters
+0x1ee03df30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIScrollView
+0x1ee031e88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIScrollViewDelayedTouchesBeganGestureRecognizer
+0x1ee03d738  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISearchBar
+0x1ef44cb50  __AUTH,__objc_data  _OBJC_CLASS_$_UISearchContainerViewController
+0x1ee038f80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISearchController
+0x1ee034ca0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISearchDisplayController
+0x1ee035ec0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISearchField
+0x1ee034c50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISearchResultsTableView
+0x1ee0176f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISearchSuggestionItem
+0x1ef465410  __AUTH,__objc_data  _OBJC_CLASS_$_UISearchTab
+0x1ee03a3f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISearchTextField
+0x1ef45d488  __AUTH,__objc_data  _OBJC_CLASS_$_UISearchToken
+0x1ee03baa0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISegmentedControl
+0x1ef468f98  __AUTH,__objc_data  _OBJC_CLASS_$_UISegmentedControlDefaultStyleProvider
+0x1ee0217f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISelectionFeedbackGenerator
+0x1ef4653e8  __AUTH,__objc_data  _OBJC_CLASS_$_UIShadowProperties
+0x1ef44ca10  __AUTH,__objc_data  _OBJC_CLASS_$_UIShadowView
+0x1ee0295a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIShape
+0x1ef435c48  __AUTH,__objc_data  _OBJC_CLASS_$_UIShapeResolutionContext
+0x1ee038f58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISheetPresentationController
+0x1ee031e60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISheetPresentationControllerDetent
+0x1ef44c9e8  __AUTH,__objc_data  _OBJC_CLASS_$_UISimpleInteractionProgress
+0x1ef45af38  __AUTH,__objc_data  _OBJC_CLASS_$_UISiriTaskAction
+0x1ee03cdd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISlider
+0x1ef46a5f0  __AUTH,__objc_data  _OBJC_CLASS_$_UISliderDataModel
+0x1ef44c9c0  __AUTH,__objc_data  _OBJC_CLASS_$_UISliderTick
+0x1ef44c998  __AUTH,__objc_data  _OBJC_CLASS_$_UISliderTrackConfiguration
+0x1ef46d518  __AUTH,__objc_data  _OBJC_CLASS_$_UISlidingBarConfiguration
+0x1ef46cd70  __AUTH,__objc_data  _OBJC_CLASS_$_UISlidingBarState
+0x1ef46cd48  __AUTH,__objc_data  _OBJC_CLASS_$_UISlidingBarStateRequest
+0x1ef435c20  __AUTH,__objc_data  _OBJC_CLASS_$_UISmartActionAppleCashSuggestion
+0x1ef435bf8  __AUTH,__objc_data  _OBJC_CLASS_$_UISmartActionPollOption
+0x1ef435bd0  __AUTH,__objc_data  _OBJC_CLASS_$_UISmartActionPollSuggestion
+0x1ef435ba8  __AUTH,__objc_data  _OBJC_CLASS_$_UISmartActionSuggestion
+0x1ef435b80  __AUTH,__objc_data  _OBJC_CLASS_$_UISmartReplySuggestion
+0x1ef458f08  __AUTH,__objc_data  _OBJC_CLASS_$_UISnapBehavior
+0x1ef45c4f0  __AUTH,__objc_data  _OBJC_CLASS_$_UISnapshotView
+0x1ee02d3d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISpecializedInputMode
+0x1ef421c88  __AUTH,__objc_data  _OBJC_CLASS_$_UISplitArrangement
+0x1ef421c60  __AUTH,__objc_data  _OBJC_CLASS_$_UISplitArrangementDimension
+0x1ef421c38  __AUTH,__objc_data  _OBJC_CLASS_$_UISplitArrangementDimensionRange
+0x1ef421c10  __AUTH,__objc_data  _OBJC_CLASS_$_UISplitArrangementViewProperties
+0x1ee03c388  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISplitViewController
+0x1ef46ac58  __AUTH,__objc_data  _OBJC_CLASS_$_UISplitViewControllerDefaultImplProvider
+0x1ef46ac30  __AUTH,__objc_data  _OBJC_CLASS_$_UISplitViewControllerImplFactory
+0x1ee0370b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISplitViewControllerPanelImpl
+0x1ee03a718  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISpringLoadedInteraction
+0x1ee02c7d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISpringTimingParameters
+0x1ee03da30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIStackView
+0x1ee019200  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIStandardTextCursorView
+0x1ee0375b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIStatusBar
+0x1ee038b48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIStatusBarAnimationParameters
+0x1ee02d090  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIStatusBarHideAnimationParameters
+0x1ef44c600  __AUTH,__objc_data  _OBJC_CLASS_$_UIStatusBarHoverRegionAction
+0x1ee03a6f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIStatusBarManager
+0x1ee02a688  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIStatusBarOrientationAnimationParameters
+0x1ef458e90  __AUTH,__objc_data  _OBJC_CLASS_$_UIStatusBarServer
+0x1ee031190  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIStatusBarStyleAnimationParameters
+0x1ef458e40  __AUTH,__objc_data  _OBJC_CLASS_$_UIStatusBarStyleRequest
+0x1ef468f70  __AUTH,__objc_data  _OBJC_CLASS_$_UIStatusBarTapAction
+0x1ee03c5b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIStatusBarWindow
+0x1ee037090  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIStatusBar_Base
+0x1ee034a70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIStatusBar_Modern
+0x1ee038f30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIStepper
+0x1ef46c438  __AUTH,__objc_data  _OBJC_CLASS_$_UIStoryboard
+0x1ef44c420  __AUTH,__objc_data  _OBJC_CLASS_$_UIStoryboardPopoverSegue
+0x1ef45e860  __AUTH,__objc_data  _OBJC_CLASS_$_UIStoryboardSegue
+0x1ef4559f0  __AUTH,__objc_data  _OBJC_CLASS_$_UIStoryboardUnwindSegueSource
+0x1ef455978  __AUTH,__objc_data  _OBJC_CLASS_$_UISubTest
+0x1ef44c380  __AUTH,__objc_data  _OBJC_CLASS_$_UISwipeAction
+0x1ee0299b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISwipeActionController
+0x1ee0281d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISwipeActionDynamicPullView
+0x1ee034a48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISwipeActionPullView
+0x1ee023110  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISwipeActionVisualStyleProvider
+0x1ee0230e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISwipeActionVisualStyle_iOS
+0x1ee0230c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISwipeActionVisualStyle_macOS
+0x1ef464130  __AUTH,__objc_data  _OBJC_CLASS_$_UISwipeActionsConfiguration
+0x1ee020030  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISwipeGestureRecognizer
+0x1ef4609a8  __AUTH,__objc_data  _OBJC_CLASS_$_UISwipeOccurrence
+0x1ee039868  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISwitch
+0x1ef4694e8  __AUTH,__objc_data  _OBJC_CLASS_$_UISwitchVisualElement
+0x1ef458e18  __AUTH,__objc_data  _OBJC_CLASS_$_UISymbolContentTransition
+0x1ef462f00  __AUTH,__objc_data  _OBJC_CLASS_$_UISymbolEffectCompletionContext
+0x1ee020828  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISystemDefaultTextInputAssistantItem
+0x1ee017a40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISystemInputViewController
+0x1ef45e838  __AUTH,__objc_data  _OBJC_CLASS_$_UISystemNavigationAction
+0x1ef45e810  __AUTH,__objc_data  _OBJC_CLASS_$_UISystemNavigationActionDestinationContext
+0x1ee036438  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISystemShellApplication
+0x1ee02e300  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITab
+0x1ef458dc8  __AUTH,__objc_data  _OBJC_CLASS_$_UITabAccessory
+0x1ee039840  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITabBar
+0x1ef46d4f0  __AUTH,__objc_data  _OBJC_CLASS_$_UITabBarAppearance
+0x1ee03c068  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITabBarController
+0x1ef46cd20  __AUTH,__objc_data  _OBJC_CLASS_$_UITabBarControllerSidebar
+0x1ee0396d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITabBarItem
+0x1ef46d4c8  __AUTH,__objc_data  _OBJC_CLASS_$_UITabBarItemAppearance
+0x1ef462280  __AUTH,__objc_data  _OBJC_CLASS_$_UITabBarItemStateAppearance
+0x1ef462ed8  __AUTH,__objc_data  _OBJC_CLASS_$_UITabGroup
+0x1ef45c4a0  __AUTH,__objc_data  _OBJC_CLASS_$_UITabSidebarItem
+0x1ef45c478  __AUTH,__objc_data  _OBJC_CLASS_$_UITabSidebarItemRequest
+0x1ef435b30  __AUTH,__objc_data  _OBJC_CLASS_$_UITabSidebarScrollTarget
+0x1ee03daa8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITableView
+0x1ee03d710  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITableViewCell
+0x1ee038f08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITableViewCellEditControl
+0x1ee037658  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITableViewCellLayoutManager
+0x1ef460070  __AUTH,__objc_data  _OBJC_CLASS_$_UITableViewCellLayoutManagerValue1
+0x1ee03dc38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITableViewController
+0x1ef455900  __AUTH,__objc_data  _OBJC_CLASS_$_UITableViewDataSource
+0x1ef460980  __AUTH,__objc_data  _OBJC_CLASS_$_UITableViewDiffableDataSource
+0x1ef44c218  __AUTH,__objc_data  _OBJC_CLASS_$_UITableViewDropPlaceholder
+0x1ef4558d8  __AUTH,__objc_data  _OBJC_CLASS_$_UITableViewDropProposal
+0x1ef44c1f0  __AUTH,__objc_data  _OBJC_CLASS_$_UITableViewFocusUpdateContext
+0x1ee03ca90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITableViewHeaderFooterView
+0x1ee039228  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITableViewIndex
+0x1ef4558b0  __AUTH,__objc_data  _OBJC_CLASS_$_UITableViewIndexVisualStyle_CarPlay
+0x1ef455888  __AUTH,__objc_data  _OBJC_CLASS_$_UITableViewIndexVisualStyle_iOS
+0x1ee01ab68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITableViewLabel
+0x1ef44c1c8  __AUTH,__objc_data  _OBJC_CLASS_$_UITableViewPlaceholder
+0x1ef44c1a0  __AUTH,__objc_data  _OBJC_CLASS_$_UITableViewRow
+0x1ef44c178  __AUTH,__objc_data  _OBJC_CLASS_$_UITableViewRowAction
+0x1ef44c150  __AUTH,__objc_data  _OBJC_CLASS_$_UITableViewSection
+0x1ee02b650  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITapAndAHalfRecognizer
+0x1ee03b528  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITapGestureRecognizer
+0x1ef464c18  __AUTH,__objc_data  _OBJC_CLASS_$_UITargetedDragPreview
+0x1ee017298  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITargetedPreview
+0x1ef44c0d8  __AUTH,__objc_data  _OBJC_CLASS_$_UITextAttachmentView
+0x1ef44c0b0  __AUTH,__objc_data  _OBJC_CLASS_$_UITextAutofillSuggestion
+0x1ee027bb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextChecker
+0x1ee02a660  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextCheckingController
+0x1ee033328  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextContentView
+0x1ee0271b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextCursorAssertionController
+0x1ef435b08  __AUTH,__objc_data  _OBJC_CLASS_$_UITextCursorDropPositionAnimator
+0x1ee029968  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextDragDropSupport
+0x1ef455860  __AUTH,__objc_data  _OBJC_CLASS_$_UITextDragPreviewRenderer
+0x1ef44c010  __AUTH,__objc_data  _OBJC_CLASS_$_UITextDraggableGeometrySameViewDropOperationResult
+0x1ef44bfe8  __AUTH,__objc_data  _OBJC_CLASS_$_UITextDraggableObject
+0x1ef44bfc0  __AUTH,__objc_data  _OBJC_CLASS_$_UITextDropProposal
+0x1ee039458  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextEffectsHostingInfo
+0x1ee03d4b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextEffectsWindow
+0x1ee03da80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextField
+0x1ee03aee8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextFormattingCoordinator
+0x1ee027ff0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextFormattingViewController
+0x1ef435ae0  __AUTH,__objc_data  _OBJC_CLASS_$_UITextFormattingViewControllerChangeValue
+0x1ee01f070  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextFormattingViewControllerComponent
+0x1ee01f048  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextFormattingViewControllerComponentGroup
+0x1ee020008  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextFormattingViewControllerConfiguration
+0x1ef435ab8  __AUTH,__objc_data  _OBJC_CLASS_$_UITextFormattingViewControllerFormattingDescriptor
+0x1ef435a90  __AUTH,__objc_data  _OBJC_CLASS_$_UITextFormattingViewControllerFormattingStyle
+0x1ef458da0  __AUTH,__objc_data  _OBJC_CLASS_$_UITextHighlightView
+0x1ee020e40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextInputAssistantItem
+0x1ef46b860  __AUTH,__objc_data  _OBJC_CLASS_$_UITextInputContext
+0x1ee03b2d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextInputController
+0x1ee038800  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextInputMode
+0x1ef45c450  __AUTH,__objc_data  _OBJC_CLASS_$_UITextInputPasswordRules
+0x1ee017270  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextInputPayloadController
+0x1ee024470  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextInputSessionActionAnalytics
+0x1ee0233e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextInputStringTokenizer
+0x1ee030650  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextInputTraits
+0x1ee03aec0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextInteraction
+0x1ee02b308  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextInteractionAssistant
+0x1ef45aee8  __AUTH,__objc_data  _OBJC_CLASS_$_UITextItem
+0x1ef44bf20  __AUTH,__objc_data  _OBJC_CLASS_$_UITextItemMenuConfiguration
+0x1ef435a68  __AUTH,__objc_data  _OBJC_CLASS_$_UITextItemMenuPreview
+0x1ef45c428  __AUTH,__objc_data  _OBJC_CLASS_$_UITextLoupeSession
+0x1ee02b4e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextMultiTapRecognizer
+0x1ef4557e8  __AUTH,__objc_data  _OBJC_CLASS_$_UITextPlaceholder
+0x1ee02ba38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextPosition
+0x1ee02c7a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextRange
+0x1ef4557c0  __AUTH,__objc_data  _OBJC_CLASS_$_UITextSearchOptions
+0x1ef455798  __AUTH,__objc_data  _OBJC_CLASS_$_UITextSearchingDimmingView
+0x1ee01bea0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextSearchingFindSession
+0x1ee02b1f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextSelection
+0x1ee027b90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextSelectionDisplayInteraction
+0x1ee020800  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextSelectionRect
+0x1ef45aec0  __AUTH,__objc_data  _OBJC_CLASS_$_UITextSelectionRectCustomHandleInfo
+0x1ee0381c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextSelectionView
+0x1ee025be0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextSuggestion
+0x1ee029918  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextTapRecognizer
+0x1ee03d148  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextView
+0x1ef44bc78  __AUTH,__objc_data  _OBJC_CLASS_$_UIToolTipConfiguration
+0x1ef462a00  __AUTH,__objc_data  _OBJC_CLASS_$_UIToolTipInteraction
+0x1ee03c7c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIToolbar
+0x1ee023930  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIToolbarAppearance
+0x1ee03c590  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIToolbarButton
+0x1ee02de78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITouch
+0x1ef458d50  __AUTH,__objc_data  _OBJC_CLASS_$_UITouchForceGestureRecognizer
+0x1ee026d30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITrackingLayoutGuide
+0x1ee03e818  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitAccessibilityContrast
+0x1ee03e7f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitActiveAppearance
+0x1ee03e7c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitArtworkSubtype
+0x1ee03e7a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitBacklightLuminance
+0x1ee03ec00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitCollection
+0x1ee0399f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitColorVariant
+0x1ee03e778  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitDisplayCornerRadius
+0x1ee03e750  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitDisplayGamut
+0x1ee03e728  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitDisplayScale
+0x1ee03e700  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitFocusSystemState
+0x1ee03e6d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitForceTouchCapability
+0x1ef469ab0  __AUTH,__objc_data  _OBJC_CLASS_$_UITraitHDRHeadroomUsageLimit
+0x1ee03e6b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitHorizontalSizeClass
+0x1ee03e048  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitImageDynamicRange
+0x1ee03e688  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitInteractionModel
+0x1ee03e660  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitLayoutDirection
+0x1ee03e638  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitLegibilityWeight
+0x1ee0224e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitListEnvironment
+0x1ef46f830  __AUTH,__objc_data  _OBJC_CLASS_$_UITraitNavigationTitleAlignment
+0x1ee03e610  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitPreferredContentSizeCategory
+0x1ee03e5e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitPresentationSemanticContext
+0x1ee03e5c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitPrimaryInteractionModel
+0x1ee029cb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitResolvesNaturalAlignmentWithBaseWritingDirection
+0x1ee032298  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitSceneCaptureState
+0x1ee03e598  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitSelectionIsKey
+0x1ee03e570  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitSemanticContext
+0x1ee03e548  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitSplitViewControllerContext
+0x1ef46b838  __AUTH,__objc_data  _OBJC_CLASS_$_UITraitSplitViewControllerLayoutEnvironment
+0x1ef421be8  __AUTH,__objc_data  _OBJC_CLASS_$_UITraitSystemPrefersReducedResourceUsage
+0x1ef458d28  __AUTH,__objc_data  _OBJC_CLASS_$_UITraitTabAccessoryEnvironment
+0x1ee03e520  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitToolbarItemPresentationSize
+0x1ee03e4f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitTouchLevel
+0x1ee037068  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitTypesettingLanguage
+0x1ee02e2d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitTypesettingLanguageAwareLineHeightRatio
+0x1ee03e8b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitUserInterfaceIdiom
+0x1ee03e4d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitUserInterfaceLevel
+0x1ee03e4a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitUserInterfaceRenderingMode
+0x1ee03e908  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitUserInterfaceStyle
+0x1ee03e480  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitVerticalSizeClass
+0x1ee03e458  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITraitVibrancy
+0x1ef455770  __AUTH,__objc_data  _OBJC_CLASS_$_UITransform
+0x1ef460048  __AUTH,__objc_data  _OBJC_CLASS_$_UITransformEvent
+0x1ef455748  __AUTH,__objc_data  _OBJC_CLASS_$_UITransformer
+0x1ee03d120  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITransitionView
+0x1ef44bc00  __AUTH,__objc_data  _OBJC_CLASS_$_UIURLDragPreviewView
+0x1ee0399d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIUndoGestureInteraction
+0x1ef44bb88  __AUTH,__objc_data  _OBJC_CLASS_$_UIUnhandledBackButtonAction
+0x1ef44bb60  __AUTH,__objc_data  _OBJC_CLASS_$_UIUnhandledMenuButtonAction
+0x1ee023098  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIUpdateActionPhase
+0x1ee01cd00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIUpdateInfo
+0x1ee023070  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIUpdateLink
+0x1ef458d00  __AUTH,__objc_data  _OBJC_CLASS_$_UIUserInterfaceStyleArbiter
+0x1ef44bb38  __AUTH,__objc_data  _OBJC_CLASS_$_UIUserInterfaceStyleArbiterTransition
+0x1ef45e798  __AUTH,__objc_data  _OBJC_CLASS_$_UIUserNotificationAction
+0x1ef44bb10  __AUTH,__objc_data  _OBJC_CLASS_$_UIUserNotificationActionSettings
+0x1ef45e770  __AUTH,__objc_data  _OBJC_CLASS_$_UIUserNotificationCategory
+0x1ef45f648  __AUTH,__objc_data  _OBJC_CLASS_$_UIUserNotificationSettings
+0x1ef455720  __AUTH,__objc_data  _OBJC_CLASS_$_UIVectorLabel
+0x1ee030628  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIVibrancyEffect
+0x1ef4556f8  __AUTH,__objc_data  _OBJC_CLASS_$_UIVideoEditorController
+0x1ee03ee80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIView
+0x1ee03c568  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIViewAnimationState
+0x1ee02edf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIViewConfigurationState
+0x1ee03ed18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIViewController
+0x1ef44bae8  __AUTH,__objc_data  _OBJC_CLASS_$_UIViewControllerPreviewAction
+0x1ee02e2b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIViewControllerTransition
+0x1ee028d38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIViewFloatAnimatableProperty
+0x1ef4613a8  __AUTH,__objc_data  _OBJC_CLASS_$_UIViewLayoutRegion
+0x1ee03a290  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIViewPropertyAnimator
+0x1ef46f188  __AUTH,__objc_data  _OBJC_CLASS_$_UIViewReservedRegion
+0x1ef46f1f8  __AUTH,__objc_data  _OBJC_CLASS_$_UIViewReservedRegionIdentifier
+0x1ef46f268  __AUTH,__objc_data  _OBJC_CLASS_$_UIViewReservedRegionKind
+0x1ee025b68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIViewSpringAnimationBehavior
+0x1ee021f68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIViewSpringAnimationBehaviorSettings
+0x1ef468f48  __AUTH,__objc_data  _OBJC_CLASS_$_UIViewVectorAnimatableProperty
+0x1ee032bd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIVisualEffect
+0x1ee03ba78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIVisualEffectView
+0x1ef45ae98  __AUTH,__objc_data  _OBJC_CLASS_$_UIWKAutocorrectionContext
+0x1ef4556d0  __AUTH,__objc_data  _OBJC_CLASS_$_UIWKAutocorrectionRects
+0x1ef45d438  __AUTH,__objc_data  _OBJC_CLASS_$_UIWKDocumentContext
+0x1ef45c400  __AUTH,__objc_data  _OBJC_CLASS_$_UIWKDocumentRequest
+0x1ef46e378  __AUTH,__objc_data  _OBJC_CLASS_$_UIWKTextInteractionAssistant
+0x1ef44ba98  __AUTH,__objc_data  _OBJC_CLASS_$_UIWatchKitExtensionRequestAction
+0x1ef44ba70  __AUTH,__objc_data  _OBJC_CLASS_$_UIWatchKitExtensionRequestActionResponse
+0x1ee019e70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIWebBrowserView
+0x1ef44ba48  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebCaretRectTextPosition
+0x1ef460020  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebClip
+0x1ef44ba20  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebClipIcon
+0x1ef44b9f8  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebClipLinkTag
+0x1ee01a1b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIWebDocumentView
+0x1ef44b930  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebElementAction
+0x1ef44b908  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebElementActionInfo
+0x1ef44b8e0  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebFileUploadPanel
+0x1ee035c18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIWebFormAccessory
+0x1ef455680  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebFormDelegate
+0x1ef455658  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebGeolocationPolicyDecider
+0x1ef44b778  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebPDFLinkAction
+0x1ef44b750  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebPDFSearchController
+0x1ef44b700  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebPDFSearchResult
+0x1ef45d410  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebPDFView
+0x1ef458cb0  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebPDFViewHandler
+0x1ef44b6d8  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebPaginationInfo
+0x1ef44b688  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebRotatingAlertController
+0x1ef44b660  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebRotatingNodePopover
+0x1ef455608  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebScrollView
+0x1ee01a190  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIWebTiledView
+0x1ef4672b0  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebTouchEventsGestureRecognizer
+0x1ef45f620  __AUTH,__objc_data  _OBJC_CLASS_$_UIWebView
+0x1ef462eb0  __AUTH,__objc_data  _OBJC_CLASS_$_UIWillPresentNotificationAction
+0x1ef462e88  __AUTH,__objc_data  _OBJC_CLASS_$_UIWillPresentNotificationActionResponse
+0x1ee03ea48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIWindow
+0x1ee02c780  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIWindowController
+0x1ee03db70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIWindowScene
+0x1ef458c88  __AUTH,__objc_data  _OBJC_CLASS_$_UIWindowSceneActivationAction
+0x1ef45c3d8  __AUTH,__objc_data  _OBJC_CLASS_$_UIWindowSceneActivationConfiguration
+0x1ef45c3b0  __AUTH,__objc_data  _OBJC_CLASS_$_UIWindowSceneActivationInteraction
+0x1ef45c388  __AUTH,__objc_data  _OBJC_CLASS_$_UIWindowSceneActivationRequestOptions
+0x1ef458c60  __AUTH,__objc_data  _OBJC_CLASS_$_UIWindowSceneDestructionRequestOptions
+0x1ee024448  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIWindowSceneDragInteraction
+0x1ee0326a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIWindowSceneGeometry
+0x1ef458c38  __AUTH,__objc_data  _OBJC_CLASS_$_UIWindowSceneGeometryPreferences
+0x1ef458c10  __AUTH,__objc_data  _OBJC_CLASS_$_UIWindowSceneGeometryPreferencesIOS
+0x1ef455590  __AUTH,__objc_data  _OBJC_CLASS_$_UIWindowSceneGeometryPreferencesMac
+0x1ef458be8  __AUTH,__objc_data  _OBJC_CLASS_$_UIWindowScenePlacement
+0x1ef458bc0  __AUTH,__objc_data  _OBJC_CLASS_$_UIWindowSceneProminentPlacement
+0x1ef4359f0  __AUTH,__objc_data  _OBJC_CLASS_$_UIWindowScenePushPlacement
+0x1ef4359c8  __AUTH,__objc_data  _OBJC_CLASS_$_UIWindowSceneReplacePlacement
+0x1ef44b5c0  __AUTH,__objc_data  _OBJC_CLASS_$_UIWindowSceneSpecification
+0x1ef4359a0  __AUTH,__objc_data  _OBJC_CLASS_$_UIWindowSceneStandardPlacement
+0x1ef44b598  __AUTH,__objc_data  _OBJC_CLASS_$_UIWindowSceneTouchCancellationOnRotationAssertion
+0x1ee016aa0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIWritingToolsCoordinator
+0x1ef44b570  __AUTH,__objc_data  _OBJC_CLASS_$_UIWritingToolsCoordinatorAnimationParameters
+0x1ef44b548  __AUTH,__objc_data  _OBJC_CLASS_$_UIWritingToolsCoordinatorContext
+0x1ef465370  __AUTH,__objc_data  _OBJC_CLASS_$_UIZoomTransitionAlignmentRectContext
+0x1ef458b98  __AUTH,__objc_data  _OBJC_CLASS_$_UIZoomTransitionInteractionContext
+0x1ef466220  __AUTH,__objc_data  _OBJC_CLASS_$_UIZoomTransitionOptions
+0x1ef4661f8  __AUTH,__objc_data  _OBJC_CLASS_$_UIZoomTransitionSourceViewProviderContext
+0x1ef44b4d0  __AUTH,__objc_data  _OBJC_CLASS_$__DUIAccessibilityDragStatus
+0x1ef46b810  __AUTH,__objc_data  _OBJC_CLASS_$__DUIDirtyItem
+0x1ef46b7e8  __AUTH,__objc_data  _OBJC_CLASS_$__DUIImageComponent
+0x1ef458b70  __AUTH,__objc_data  _OBJC_CLASS_$__DUIPotentialDrop
+0x1ef464bf0  __AUTH,__objc_data  _OBJC_CLASS_$__DUIPresentationUpdate
+0x1ef46b7c0  __AUTH,__objc_data  _OBJC_CLASS_$__DUIPreview
+0x1ef46b798  __AUTH,__objc_data  _OBJC_CLASS_$__DUIPreviewAndImageComponent
+0x1ef44b4a8  __AUTH,__objc_data  _OBJC_CLASS_$__DUIPreviewAndImageComponentUpdate
+0x1ef464bc8  __AUTH,__objc_data  _OBJC_CLASS_$__DUITargetLayerDescriptor
+0x1ef46b770  __AUTH,__objc_data  _OBJC_CLASS_$__DUIVisibleDroppedItem
+0x1ef44b340  __AUTH,__objc_data  _OBJC_CLASS_$__NSDiffableDataSourceSectionSnapshot
+0x1ef44b318  __AUTH,__objc_data  _OBJC_CLASS_$__NSDiffableDataSourceSectionSnapshotInternal
+0x1ef468778  __AUTH,__objc_data  _OBJC_CLASS_$__NSDiffableDataSourceSectionSnapshotState
+0x1ef45ae70  __AUTH,__objc_data  _OBJC_CLASS_$__NSLayoutConstraintConstant
+0x1ef42d140  __AUTH,__objc_data  _OBJC_CLASS_$__TtC5UIKit15_UICloudChamber
+0x1ef42cdf8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC5UIKit16UITextEffectView
+0x1ee0195d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtC5UIKit17UIHostingViewBase
+0x1ef42c658  __AUTH,__objc_data  _OBJC_CLASS_$__TtC5UIKit18_UISoftOutlineView
+0x1ef42c368  __AUTH,__objc_data  _OBJC_CLASS_$__TtC5UIKit19_UILatencyLightView
+0x1ef42b5c8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC5UIKit21UITextEffectTextChunk
+0x1ef42b2c8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC5UIKit21_UIIntelligenceButton
+0x1ef42afa8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC5UIKit22UIPromptBackgroundView
+0x1ef42aed8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC5UIKit22UIPromptSuggestionView
+0x1ef42a768  __AUTH,__objc_data  _OBJC_CLASS_$__TtC5UIKit23_UILiquidMorphAnimation
+0x1ef4283a0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC5UIKit28UIDirectionalLightEffectView
+0x1ef427cd8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC5UIKit30UIRBDirectionalLightEffectView
+0x1ef426e28  __AUTH,__objc_data  _OBJC_CLASS_$__TtC5UIKit31UIPromptSuggestionContainerView
+0x1ef426dc0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC5UIKit31_UICampoSceneActionClientToHost
+0x1ef4269b0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC5UIKit33UITextInputLayoutControllerBridge
+0x1ef42b408  __AUTH,__objc_data  _OBJC_CLASS_$__TtCC5UIKit21_UIIntelligenceButton8FillView
+0x1ee024e88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCO5UIKit14IntelligenceUI15PromptEntryView
+0x1ef42d6c0  __AUTH,__objc_data  _OBJC_CLASS_$__TtCO5UIKit14IntelligenceUI17PromptComposeView
+0x1ef42d4e8  __AUTH,__objc_data  _OBJC_CLASS_$__TtCO5UIKit14IntelligenceUI22RotaryPlaceholderLabel
+0x1ef42d418  __AUTH,__objc_data  _OBJC_CLASS_$__TtCO5UIKit14IntelligenceUI27PromptComposeViewController
+0x1ef435928  __AUTH,__objc_data  _OBJC_CLASS_$__UI3DPanGestureRecognizer
+0x1ef461380  __AUTH,__objc_data  _OBJC_CLASS_$__UIAbstractDynamicButtonGestureRecognizer
+0x1ef44b2c8  __AUTH,__objc_data  _OBJC_CLASS_$__UIAccessDeniedView
+0x1ef44b250  __AUTH,__objc_data  _OBJC_CLASS_$__UIActionSheetPresentationController
+0x1ee038af8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIActionSlider
+0x1ef44b160  __AUTH,__objc_data  _OBJC_CLASS_$__UIActivityIndicatorViewStyleView
+0x1ee036960  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIAlertControllerView
+0x1ef44afd0  __AUTH,__objc_data  _OBJC_CLASS_$__UIAlignmentRegion
+0x1ee030178  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIAlwaysOnEnvironment
+0x1ef44af58  __AUTH,__objc_data  _OBJC_CLASS_$__UIAnimatedColor
+0x1ef435860  __AUTH,__objc_data  _OBJC_CLASS_$__UIAnimatedTextAttachment
+0x1ef44af08  __AUTH,__objc_data  _OBJC_CLASS_$__UIAnimatedTextLayoutInfo
+0x1ef44aee0  __AUTH,__objc_data  _OBJC_CLASS_$__UIAnimatedTextSpacer
+0x1ef464108  __AUTH,__objc_data  _OBJC_CLASS_$__UIAnimatingLabel
+0x1ef46e5d0  __AUTH,__objc_data  _OBJC_CLASS_$__UIAppAttribution
+0x1ee021d60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIAppCACommitFuture
+0x1ef468728  __AUTH,__objc_data  _OBJC_CLASS_$__UIAppearanceRecorder
+0x1ef45d3e8  __AUTH,__objc_data  _OBJC_CLASS_$__UIApplicationInfo
+0x1ee031140  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIApplicationIntelligenceSupport
+0x1ef435838  __AUTH,__objc_data  _OBJC_CLASS_$__UIApplicationSceneDisplayHostComponent
+0x1ee01c288  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIApplicationSceneKeyboardHostComponent
+0x1ef45ae48  __AUTH,__objc_data  _OBJC_CLASS_$__UIApplicationSceneRequestBuilder
+0x1ef44ae90  __AUTH,__objc_data  _OBJC_CLASS_$__UIArchiveExtractionController
+0x1ef44ae68  __AUTH,__objc_data  _OBJC_CLASS_$__UIArchiveItem
+0x1ef44ae40  __AUTH,__objc_data  _OBJC_CLASS_$__UIArchiveListingController
+0x1ef44ae18  __AUTH,__objc_data  _OBJC_CLASS_$__UIArrayController
+0x1ee03da08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIAssetManager
+0x1ee01ab40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIAsyncInvocation
+0x1ee017e00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIAsyncInvocationObserver
+0x1ee01ffe0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIBackdropColorSettings
+0x1ee037630  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIBackdropView
+0x1ee0203f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIBackdropViewSettings
+0x1ef455540  __AUTH,__objc_data  _OBJC_CLASS_$__UIBackgroundExtensionView
+0x1ef467260  __AUTH,__objc_data  _OBJC_CLASS_$__UIBackgroundViewConfiguration
+0x1ee03b078  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIBacklightEnvironment
+0x1ef44ac88  __AUTH,__objc_data  _OBJC_CLASS_$__UIBannerContent
+0x1ee03a560  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIBannerManager
+0x1ef45f5a8  __AUTH,__objc_data  _OBJC_CLASS_$__UIBarBadgeMetrics
+0x1ee025668  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIBarBadgeView
+0x1ef44abc0  __AUTH,__objc_data  _OBJC_CLASS_$__UIBarButtonItemBadge
+0x1ee029fa8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIBarButtonItemData
+0x1ef44ab48  __AUTH,__objc_data  _OBJC_CLASS_$__UIBarCustomizationItem
+0x1ef44aad0  __AUTH,__objc_data  _OBJC_CLASS_$__UIBarCustomizationSession
+0x1ee02d9c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIBarCustomizer
+0x1ee02b4c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIBarItemGroup
+0x1ee021f40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIBarSection
+0x1ef45f580  __AUTH,__objc_data  _OBJC_CLASS_$__UIBasicCellContentView
+0x1ee0349f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIBasicCellContentViewConfiguration
+0x1ef44aa30  __AUTH,__objc_data  _OBJC_CLASS_$__UIBasicHeaderFooterContentView
+0x1ee0349d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIBasicHeaderFooterContentViewConfiguration
+0x1ee0349a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIBatteryView
+0x1ef44a9e0  __AUTH,__objc_data  _OBJC_CLASS_$__UIBlendingHighlightView
+0x1ef44a9b8  __AUTH,__objc_data  _OBJC_CLASS_$__UIBlurThroughEffect
+0x1ef45add0  __AUTH,__objc_data  _OBJC_CLASS_$__UIBoundingTextRectsSolver
+0x1ee023908  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIButtonBar
+0x1ee03a268  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIButtonBarButton
+0x1ef4554c8  __AUTH,__objc_data  _OBJC_CLASS_$__UIButtonBarButtonSelectedIndicatorView
+0x1ee03b898  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIButtonBarButtonVisualProvider
+0x1ee03b500  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIButtonBarButtonVisualProviderIOS
+0x1ef45c2c0  __AUTH,__objc_data  _OBJC_CLASS_$__UIButtonConfiguration
+0x1ee025640  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIButtonConfigurationState
+0x1ef45fff8  __AUTH,__objc_data  _OBJC_CLASS_$__UIButtonFeedbackGenerator
+0x1ef45ffd0  __AUTH,__objc_data  _OBJC_CLASS_$__UIButtonFeedbackGeneratorConfiguration
+0x1ef45c298  __AUTH,__objc_data  _OBJC_CLASS_$__UICAPackageView
+0x1ef44a8f0  __AUTH,__objc_data  _OBJC_CLASS_$__UICalendarDateRange
+0x1ef4356f8  __AUTH,__objc_data  _OBJC_CLASS_$__UICalendarDateViewCellState
+0x1ef44a850  __AUTH,__objc_data  _OBJC_CLASS_$__UICalendarRangeSelection
+0x1ef44a788  __AUTH,__objc_data  _OBJC_CLASS_$__UICalendarViewPlatformMetrics
+0x1ef4356d0  __AUTH,__objc_data  _OBJC_CLASS_$__UICampoAction
+0x1ef4356a8  __AUTH,__objc_data  _OBJC_CLASS_$__UICampoActionConfiguration
+0x1ef435680  __AUTH,__objc_data  _OBJC_CLASS_$__UICampoLightweightConfiguration
+0x1ef435658  __AUTH,__objc_data  _OBJC_CLASS_$__UICampoLightweightContext
+0x1ef435630  __AUTH,__objc_data  _OBJC_CLASS_$__UICampoLightweightController
+0x1ef4355e0  __AUTH,__objc_data  _OBJC_CLASS_$__UICampoSceneHostingSceneSpecification
+0x1ee02b1a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UICampoService
+0x1ef45ada8  __AUTH,__objc_data  _OBJC_CLASS_$__UICanvasFeedbackGenerator
+0x1ef467210  __AUTH,__objc_data  _OBJC_CLASS_$__UICellAccessoryConfiguration
+0x1ef458a58  __AUTH,__objc_data  _OBJC_CLASS_$__UICellAccessoryConfigurationBadge
+0x1ef455450  __AUTH,__objc_data  _OBJC_CLASS_$__UICellAccessoryConfigurationCheckmark
+0x1ef455428  __AUTH,__objc_data  _OBJC_CLASS_$__UICellAccessoryConfigurationCustomView
+0x1ef4671e8  __AUTH,__objc_data  _OBJC_CLASS_$__UICellAccessoryConfigurationDelete
+0x1ef45d3c0  __AUTH,__objc_data  _OBJC_CLASS_$__UICellAccessoryConfigurationDisclosureIndicator
+0x1ef4671c0  __AUTH,__objc_data  _OBJC_CLASS_$__UICellAccessoryConfigurationInsert
+0x1ef458a30  __AUTH,__objc_data  _OBJC_CLASS_$__UICellAccessoryConfigurationMultiselect
+0x1ef467198  __AUTH,__objc_data  _OBJC_CLASS_$__UICellAccessoryConfigurationOutlineDisclosure
+0x1ef458a08  __AUTH,__objc_data  _OBJC_CLASS_$__UICellAccessoryConfigurationReorder
+0x1ef4589e0  __AUTH,__objc_data  _OBJC_CLASS_$__UICellAccessoryConfigurationSeparator
+0x1ef45f558  __AUTH,__objc_data  _OBJC_CLASS_$__UIClickFeedbackGenerator
+0x1ef45ffa8  __AUTH,__objc_data  _OBJC_CLASS_$__UIClickInteraction
+0x1ef4686b0  __AUTH,__objc_data  _OBJC_CLASS_$__UIClickPresentation
+0x1ee02a458  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIClickPresentationFeedbackGeneratorConfiguration
+0x1ee030bc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIClickPresentationInteraction
+0x1ef45ad80  __AUTH,__objc_data  _OBJC_CLASS_$__UIClientToHostGestureChangeAction
+0x1ee024d80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIClientToHostRelationshipGestureInteraction
+0x1ee01af78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UICollectionLayoutListSectionData
+0x1ef45c270  __AUTH,__objc_data  _OBJC_CLASS_$__UICollectionViewCellRegistration
+0x1ef44a4b8  __AUTH,__objc_data  _OBJC_CLASS_$__UICollectionViewCompositionLayout
+0x1ef44a490  __AUTH,__objc_data  _OBJC_CLASS_$__UICollectionViewCompositionLayoutInvalidationContext
+0x1ef455400  __AUTH,__objc_data  _OBJC_CLASS_$__UICollectionViewControllerLayoutToLayoutTransition
+0x1ef45ad58  __AUTH,__objc_data  _OBJC_CLASS_$__UICollectionViewDiffableDataSource
+0x1ef44a3f0  __AUTH,__objc_data  _OBJC_CLASS_$__UICollectionViewFeedbackLoopDebugger
+0x1ee03c748  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UICollectionViewListCell
+0x1ee035ba0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UICollectionViewListHeaderFooter
+0x1ee01b5b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UICollectionViewListLayoutSection
+0x1ee01b590  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UICollectionViewListLayoutSectionConfiguration
+0x1ee032900  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UICollectionViewOutlineCell
+0x1ef44a3a0  __AUTH,__objc_data  _OBJC_CLASS_$__UICollectionViewOutlineCellDisclosureConfiguration
+0x1ef458940  __AUTH,__objc_data  _OBJC_CLASS_$__UICollectionViewSupplementaryRegistration
+0x1ee018378  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIColorPalette
+0x1ef4354c8  __AUTH,__objc_data  _OBJC_CLASS_$__UIColorPickerActionClientToHost
+0x1ef44a288  __AUTH,__objc_data  _OBJC_CLASS_$__UIColorPickerViewControllerConfiguration
+0x1ef44a260  __AUTH,__objc_data  _OBJC_CLASS_$__UIColorSampler
+0x1ef4553d8  __AUTH,__objc_data  _OBJC_CLASS_$__UIColorSamplerSettings
+0x1ef458918  __AUTH,__objc_data  _OBJC_CLASS_$__UIColorWellVisualStyle
+0x1ee01ec40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UICommandIdentifier
+0x1ef4353b0  __AUTH,__objc_data  _OBJC_CLASS_$__UICompanionContainerSceneSpecification
+0x1ef45acb8  __AUTH,__objc_data  _OBJC_CLASS_$__UICompanionSceneAttributes
+0x1ee025fc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIConstraintBasedLayoutHostingView
+0x1ee027b40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIContentPlatterView
+0x1ef462910  __AUTH,__objc_data  _OBJC_CLASS_$__UIContentUnavailableView
+0x1ef44a030  __AUTH,__objc_data  _OBJC_CLASS_$__UIContentViewEditingConfiguration
+0x1ef449fe0  __AUTH,__objc_data  _OBJC_CLASS_$__UIContentViewEditingState
+0x1ef4608e0  __AUTH,__objc_data  _OBJC_CLASS_$__UIContentViewImageViewConfiguration
+0x1ee034930  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIContentViewLabelConfiguration
+0x1ee03ae70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIContextBinder
+0x1ee03ae48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIContextBinderSubstrate
+0x1ef465320  __AUTH,__objc_data  _OBJC_CLASS_$__UIContextMenuAccessoryView
+0x1ef4352e8  __AUTH,__objc_data  _OBJC_CLASS_$__UIContextMenuAsyncConfiguration
+0x1ef4352c0  __AUTH,__objc_data  _OBJC_CLASS_$__UIContextMenuAvoidanceRect
+0x1ef464b50  __AUTH,__objc_data  _OBJC_CLASS_$__UIContextMenuAvoidanceSceneComponent
+0x1ef463620  __AUTH,__objc_data  _OBJC_CLASS_$__UIContextMenuBackgroundDescriptor
+0x1ef435270  __AUTH,__objc_data  _OBJC_CLASS_$__UIContextMenuGradientMaskingConfiguration
+0x1ef464b00  __AUTH,__objc_data  _OBJC_CLASS_$__UIContextMenuLiquidMorphPresentationAnimation
+0x1ef468ed0  __AUTH,__objc_data  _OBJC_CLASS_$__UIContextMenuModifierKeyService
+0x1ef464ad8  __AUTH,__objc_data  _OBJC_CLASS_$__UIContextMenuPinnedFooterView
+0x1ee02b150  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIContextMenuPlatformMetrics
+0x1ef468480  __AUTH,__objc_data  _OBJC_CLASS_$__UIContextMenuStyle
+0x1ee030420  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIContextualMenuGestureRecognizer
+0x1ef449ef0  __AUTH,__objc_data  _OBJC_CLASS_$__UIContinuousFeedback
+0x1ef449ec8  __AUTH,__objc_data  _OBJC_CLASS_$__UICoreUICatalogColorWrapper
+0x1ef449ea0  __AUTH,__objc_data  _OBJC_CLASS_$__UICoreUIEffect
+0x1ef435130  __AUTH,__objc_data  _OBJC_CLASS_$__UICrossSceneMorphAnimationAutomaticTransitionConfiguration
+0x1ef435108  __AUTH,__objc_data  _OBJC_CLASS_$__UICrossSceneMorphAnimationMorphAction
+0x1ef4350e0  __AUTH,__objc_data  _OBJC_CLASS_$__UICrossSceneMorphAnimationSourceDescriptor
+0x1ee01a6b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UICurrentContextPresentationController
+0x1ef449e78  __AUTH,__objc_data  _OBJC_CLASS_$__UICursorAccessory
+0x1ef449e50  __AUTH,__objc_data  _OBJC_CLASS_$__UICustomBlurEffect
+0x1ee03d8a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UICustomTraitStorage
+0x1ef455270  __AUTH,__objc_data  _OBJC_CLASS_$__UIDataTransferMonitor
+0x1ef449db0  __AUTH,__objc_data  _OBJC_CLASS_$__UIDataTransferRequest
+0x1ef45ab78  __AUTH,__objc_data  _OBJC_CLASS_$__UIDatePickerOverlayPresentation
+0x1ef45ab50  __AUTH,__objc_data  _OBJC_CLASS_$__UIDatePickerStyle
+0x1ef458850  __AUTH,__objc_data  _OBJC_CLASS_$__UIDatePickerStyle_Glass
+0x1ef45ab28  __AUTH,__objc_data  _OBJC_CLASS_$__UIDatePickerStyle_iOS
+0x1ef449bf8  __AUTH,__objc_data  _OBJC_CLASS_$__UIDebugDot
+0x1ef45ff30  __AUTH,__objc_data  _OBJC_CLASS_$__UIDebugIssue
+0x1ee016de8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIDeferredMenuElementProvider
+0x1ef435090  __AUTH,__objc_data  _OBJC_CLASS_$__UIDeleteCursorAccessory
+0x1ef449928  __AUTH,__objc_data  _OBJC_CLASS_$__UIDictationCursorAccessory
+0x1ef45aad8  __AUTH,__objc_data  _OBJC_CLASS_$__UIDiffableDataSource
+0x1ef458800  __AUTH,__objc_data  _OBJC_CLASS_$__UIDiffableDataSourceItemRenderer
+0x1ef4498b0  __AUTH,__objc_data  _OBJC_CLASS_$__UIDiffableDataSourceItemRendererInternal
+0x1ef45e6d0  __AUTH,__objc_data  _OBJC_CLASS_$__UIDiffableDataSourceOutlineSectionController
+0x1ef449888  __AUTH,__objc_data  _OBJC_CLASS_$__UIDiffableDataSourceOutlineSectionControllerHandlers
+0x1ef449860  __AUTH,__objc_data  _OBJC_CLASS_$__UIDiffableDataSourceOutlineSectionControllerHandlersInternal
+0x1ef449838  __AUTH,__objc_data  _OBJC_CLASS_$__UIDiffableDataSourceOutlineSectionControllerInternal
+0x1ef4670d0  __AUTH,__objc_data  _OBJC_CLASS_$__UIDiffableDataSourceSectionController
+0x1ef45e6a8  __AUTH,__objc_data  _OBJC_CLASS_$__UIDiffableDataSourceSectionControllerHandlers
+0x1ef449810  __AUTH,__objc_data  _OBJC_CLASS_$__UIDiffableDataSourceSectionControllerHandlersInternal
+0x1ef4640e0  __AUTH,__objc_data  _OBJC_CLASS_$__UIDiffableDataSourceSectionControllerInternal
+0x1ef45c0b8  __AUTH,__objc_data  _OBJC_CLASS_$__UIDiffableDataSourceSectionTransaction
+0x1ef455180  __AUTH,__objc_data  _OBJC_CLASS_$__UIDiffableDataSourceSnapshot
+0x1ef45aab0  __AUTH,__objc_data  _OBJC_CLASS_$__UIDiffableDataSourceSnapshotter
+0x1ef460890  __AUTH,__objc_data  _OBJC_CLASS_$__UIDiffableDataSourceTransaction
+0x1ee0176a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIDirectionalLightConfiguration
+0x1ef434f78  __AUTH,__objc_data  _OBJC_CLASS_$__UIDirectionalLightPalette
+0x1ee021110  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIDirectionalRotationView
+0x1ee023890  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIDiscreteFeedback
+0x1ee019dd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIDismissInteraction
+0x1ef46ab90  __AUTH,__objc_data  _OBJC_CLASS_$__UIDispatchingNSXPCConnectionDelegate
+0x1ef434f28  __AUTH,__objc_data  _OBJC_CLASS_$__UIDocumentCarouselView
+0x1ef45aa60  __AUTH,__objc_data  _OBJC_CLASS_$__UIDocumentMenuHeader
+0x1ef449748  __AUTH,__objc_data  _OBJC_CLASS_$__UIDocumentPickerAuxiliaryOption
+0x1ef449720  __AUTH,__objc_data  _OBJC_CLASS_$__UIDocumentPickerExtensionRemoteViewController
+0x1ef455130  __AUTH,__objc_data  _OBJC_CLASS_$__UIDocumentPickerNSURLWrapper
+0x1ef4496a8  __AUTH,__objc_data  _OBJC_CLASS_$__UIDocumentPickerRemoteViewController
+0x1ee02ca28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIDoubleTapInteraction
+0x1ef45c090  __AUTH,__objc_data  _OBJC_CLASS_$__UIDragAndDropPlatformMetrics
+0x1ef4550b8  __AUTH,__objc_data  _OBJC_CLASS_$__UIDragBadge
+0x1ee02c6b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIDragFeedbackGenerator
+0x1ee02c690  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIDragFeedbackGeneratorConfiguration
+0x1ee026770  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIDragInteractionDefaultDriverProvider_iOS
+0x1ee02be98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIDragInteractionDriver
+0x1ee02be70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIDragInteractionLongPressDriver
+0x1ef4635f8  __AUTH,__objc_data  _OBJC_CLASS_$__UIDragLiftEffectOperation
+0x1ef45e658  __AUTH,__objc_data  _OBJC_CLASS_$__UIDragLiftedItem
+0x1ef434e10  __AUTH,__objc_data  _OBJC_CLASS_$__UIDragMonitor
+0x1ef434de8  __AUTH,__objc_data  _OBJC_CLASS_$__UIDragMonitorSession
+0x1ef434dc0  __AUTH,__objc_data  _OBJC_CLASS_$__UIDragMonitorSessionBadgeUpdate
+0x1ef434d70  __AUTH,__objc_data  _OBJC_CLASS_$__UIDragMonitorSessionPresentationUpdate
+0x1ef434d48  __AUTH,__objc_data  _OBJC_CLASS_$__UIDragMonitorSessionPreview
+0x1ef434d20  __AUTH,__objc_data  _OBJC_CLASS_$__UIDragMonitorSessionPreviewUpdate
+0x1ef434cf8  __AUTH,__objc_data  _OBJC_CLASS_$__UIDragMonitorSnapshotSettings
+0x1ef455068  __AUTH,__objc_data  _OBJC_CLASS_$__UIDragPreviewShadowProperties
+0x1ef434cd0  __AUTH,__objc_data  _OBJC_CLASS_$__UIDragRelaySession
+0x1ef434ca8  __AUTH,__objc_data  _OBJC_CLASS_$__UIDragSessionIntelligenceAdoptionAgency
+0x1ef434c80  __AUTH,__objc_data  _OBJC_CLASS_$__UIDragSessionIntelligenceBridge
+0x1ef455040  __AUTH,__objc_data  _OBJC_CLASS_$__UIDragSessionProperties
+0x1ef455018  __AUTH,__objc_data  _OBJC_CLASS_$__UIDragSetDownAnimation
+0x1ee02c640  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIDragSnappingFeedbackGenerator
+0x1ee02c618  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIDragSnappingFeedbackGeneratorConfiguration
+0x1ee02bdf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIDragSourceLiftEffect
+0x1ef46b6f8  __AUTH,__objc_data  _OBJC_CLASS_$__UIDropInteractionPlatformMetrics
+0x1ef449450  __AUTH,__objc_data  _OBJC_CLASS_$__UIDynamicAnimation
+0x1ef449428  __AUTH,__objc_data  _OBJC_CLASS_$__UIDynamicAnimationActiveValue
+0x1ef449400  __AUTH,__objc_data  _OBJC_CLASS_$__UIDynamicAnimationGroup
+0x1ef454eb0  __AUTH,__objc_data  _OBJC_CLASS_$__UIDynamicButton
+0x1ee0305d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIDynamicButtonEvent
+0x1ef449298  __AUTH,__objc_data  _OBJC_CLASS_$__UIDynamicSlider
+0x1ef449248  __AUTH,__objc_data  _OBJC_CLASS_$__UIDynamicValueAnimation
+0x1ee031b68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIEdgeFeedbackGenerator
+0x1ee031b40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIEdgeFeedbackGeneratorConfiguration
+0x1ef434c30  __AUTH,__objc_data  _OBJC_CLASS_$__UIEdgeInsetsVisualizerView
+0x1ee028d10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIEditMenuPlatformMetrics
+0x1ee024d58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIEditMenuPlatformMetrics_Glass
+0x1ef449158  __AUTH,__objc_data  _OBJC_CLASS_$__UIEditableTextSelectionForceGesture
+0x1ef449130  __AUTH,__objc_data  _OBJC_CLASS_$__UIEditableTextSelectionTwoFingerPanGesture
+0x1ef449108  __AUTH,__objc_data  _OBJC_CLASS_$__UIEditableTextSelectionTwoFingerTapGesture
+0x1ee03aba0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIEventDeferringManager
+0x1ef448f78  __AUTH,__objc_data  _OBJC_CLASS_$__UIExpandingGlyphsView
+0x1ee03a240  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFBSSceneSubstrate
+0x1ee026cb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFallbackPresentationViewController
+0x1ee023840  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFeedback
+0x1ef448f28  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackAudioFilePattern
+0x1ef448ed8  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackBehavior
+0x1ef448eb0  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackButtonBehavior
+0x1ef448e88  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackButtonBehaviorConfiguration
+0x1ef448e38  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackDragBehavior
+0x1ef448e10  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackDragBehaviorConfiguration
+0x1ef448de8  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackDragSnappingBehavior
+0x1ef448dc0  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackEdgeBehavior
+0x1ef448d98  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackEdgeBehaviorConfiguration
+0x1ee022f58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFeedbackEngine
+0x1ef448d70  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackEventBehavior
+0x1ef448d48  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackEventBehaviorConfiguration
+0x1ee03a010  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFeedbackGeneratorConfiguration
+0x1ee032270  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFeedbackGeneratorUserInteractionDrivenConfiguration
+0x1ef448d20  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackHapticFilePattern
+0x1ef448cf8  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackImpactBehavior
+0x1ef448cd0  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackImpactBehaviorConfiguration
+0x1ef448ca8  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackKeyboardBehavior
+0x1ef448c80  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackKeyboardBehaviorConfiguration
+0x1ee023818  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFeedbackParameters
+0x1ee018d50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFeedbackPattern
+0x1ef448c30  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackPreviewStatesBehaviorConfiguration
+0x1ef448c08  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackRetargetBehavior
+0x1ef448be0  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackRetargetBehaviorConfiguration
+0x1ef468ea8  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackStateChangeConfiguration
+0x1ef448bb8  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackStatesBehavior
+0x1ef448b90  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackSwipeActionStatesBehaviorConfiguration
+0x1ef448b18  __AUTH,__objc_data  _OBJC_CLASS_$__UIFeedbackZoomEdgeBehavior
+0x1ee0179c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFilteredDataSource
+0x1ef434b90  __AUTH,__objc_data  _OBJC_CLASS_$__UIFinalizeSceneSessionAction
+0x1ef434b68  __AUTH,__objc_data  _OBJC_CLASS_$__UIFinalizeSceneSessionResponse
+0x1ef45c068  __AUTH,__objc_data  _OBJC_CLASS_$__UIFindInteraction
+0x1ef448aa0  __AUTH,__objc_data  _OBJC_CLASS_$__UIFindNavigatorInlinePlacement
+0x1ef448a78  __AUTH,__objc_data  _OBJC_CLASS_$__UIFindNavigatorKeyboardPlacement
+0x1ef448a50  __AUTH,__objc_data  _OBJC_CLASS_$__UIFindNavigatorPlacement
+0x1ee022f08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFlexInteraction
+0x1ee01b4f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFlexInteractionUpdate
+0x1ee02a1b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFloatingBarContainerView
+0x1ef464a10  __AUTH,__objc_data  _OBJC_CLASS_$__UIFloatingContentView
+0x1ef454d48  __AUTH,__objc_data  _OBJC_CLASS_$__UIFloatingMotionConfiguration
+0x1ef4488e8  __AUTH,__objc_data  _OBJC_CLASS_$__UIFloatingShadowView
+0x1ee02ca00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFloatingTabBar
+0x1ef434b40  __AUTH,__objc_data  _OBJC_CLASS_$__UIFloatingTabBarBatchUpdatesTransaction
+0x1ef45d2d0  __AUTH,__objc_data  _OBJC_CLASS_$__UIFluidSliderDiscreteButtonDriver
+0x1ef4669f0  __AUTH,__objc_data  _OBJC_CLASS_$__UIFluidSliderInteraction
+0x1ef466018  __AUTH,__objc_data  _OBJC_CLASS_$__UIFluidSliderInteractionConfiguration
+0x1ef4669c8  __AUTH,__objc_data  _OBJC_CLASS_$__UIFluidSliderInteractionUpdate
+0x1ef45feb8  __AUTH,__objc_data  _OBJC_CLASS_$__UIFocusAnimationConfiguration
+0x1ee026f88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFocusContainerGuideImpl
+0x1ef45aa10  __AUTH,__objc_data  _OBJC_CLASS_$__UIFocusEnvironmentScrollableContainerTuple
+0x1ef4486b8  __AUTH,__objc_data  _OBJC_CLASS_$__UIFocusFastScrollingIndexBarEntry
+0x1ee026f60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFocusGuideImpl
+0x1ef448690  __AUTH,__objc_data  _OBJC_CLASS_$__UIFocusInputDeviceInfo
+0x1ee0298f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFocusIntelligenceProvider
+0x1ef45f3c8  __AUTH,__objc_data  _OBJC_CLASS_$__UIFocusItemInfo
+0x1ef448640  __AUTH,__objc_data  _OBJC_CLASS_$__UIFocusLinearMovementSequence
+0x1ef4485f0  __AUTH,__objc_data  _OBJC_CLASS_$__UIFocusMoveTest
+0x1ef4586e8  __AUTH,__objc_data  _OBJC_CLASS_$__UIFocusMovementInfo
+0x1ef4485c8  __AUTH,__objc_data  _OBJC_CLASS_$__UIFocusMovementRequest
+0x1ef4485a0  __AUTH,__objc_data  _OBJC_CLASS_$__UIFocusPromiseItem
+0x1ef4484d8  __AUTH,__objc_data  _OBJC_CLASS_$__UIFocusScrollBoundaryMetrics
+0x1ee035b28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFocusSearchInfo
+0x1ef448370  __AUTH,__objc_data  _OBJC_CLASS_$__UIFocusSwipeTest
+0x1ee03c9f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFocusSystemSceneComponent
+0x1ef448320  __AUTH,__objc_data  _OBJC_CLASS_$__UIFocusTest
+0x1ee032ba8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFocusUpdateRequest
+0x1ee0292b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFontLayoutMetrics
+0x1ef4482a8  __AUTH,__objc_data  _OBJC_CLASS_$__UIFontPickerActionClientToHost
+0x1ef448258  __AUTH,__objc_data  _OBJC_CLASS_$__UIFontPickerFontInfo
+0x1ef4349d8  __AUTH,__objc_data  _OBJC_CLASS_$__UIFontPickerSceneHostingImpl
+0x1ef4349b0  __AUTH,__objc_data  _OBJC_CLASS_$__UIFontPickerSceneSpecification
+0x1ee01c5d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIForceLevelClassifier
+0x1ee030100  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFormSheetPresentationController
+0x1ef434988  __AUTH,__objc_data  _OBJC_CLASS_$__UIFullScreenInAssistiveAccessApplicationSceneSpecification
+0x1ef4481e0  __AUTH,__objc_data  _OBJC_CLASS_$__UIGestureStudyInteraction
+0x1ef448190  __AUTH,__objc_data  _OBJC_CLASS_$__UIGhostView
+0x1ef458620  __AUTH,__objc_data  _OBJC_CLASS_$__UIGlintyStringView
+0x1ee036ff0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIGrabber
+0x1ef46f2d8  __AUTH,__objc_data  _OBJC_CLASS_$__UIHighlightCompanionSceneDelegate
+0x1ef45e4a0  __AUTH,__objc_data  _OBJC_CLASS_$__UIHighlightView
+0x1ef46e580  __AUTH,__objc_data  _OBJC_CLASS_$__UIHingeInteraction
+0x1ef46e530  __AUTH,__objc_data  _OBJC_CLASS_$__UIHingeInteractionUpdate
+0x1ef46e7b0  __AUTH,__objc_data  _OBJC_CLASS_$__UIHingeState
+0x1ee027190  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIHitTestContext
+0x1ee02e738  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIHomeAffordanceBSActionToClient
+0x1ef45d1b8  __AUTH,__objc_data  _OBJC_CLASS_$__UIHomeAffordanceDoubleTapGestureActionToClient
+0x1ee01c260  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIHomeAffordanceHostSceneComponent
+0x1ef448118  __AUTH,__objc_data  _OBJC_CLASS_$__UIHorizontalIndexTitleBar
+0x1ef454c58  __AUTH,__objc_data  _OBJC_CLASS_$__UIHostedFocusSystem
+0x1ee03d5d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIHostedWindow
+0x1ee0179a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIHostedWindowHostingHandle
+0x1ef46b4f0  __AUTH,__objc_data  _OBJC_CLASS_$__UIHostedWindowScene
+0x1ee024948  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIHyperAsymmetricExtender
+0x1ee01c5a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIHyperConstantExtender
+0x1ef4585f8  __AUTH,__objc_data  _OBJC_CLASS_$__UIHyperGesture
+0x1ef448000  __AUTH,__objc_data  _OBJC_CLASS_$__UIHyperInProcessPointAnimator
+0x1ef454c30  __AUTH,__objc_data  _OBJC_CLASS_$__UIHyperInProcessViewAnimator
+0x1ee029c88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIHyperInteractor
+0x1ee0227b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIHyperOutOfProcessViewAnimator
+0x1ef4585d0  __AUTH,__objc_data  _OBJC_CLASS_$__UIHyperPanGesture
+0x1ef447fd8  __AUTH,__objc_data  _OBJC_CLASS_$__UIHyperPinchGesture
+0x1ef447fb0  __AUTH,__objc_data  _OBJC_CLASS_$__UIHyperplane
+0x1ee0266f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIHyperpoint
+0x1ee029580  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIHyperrectangle
+0x1ee0264a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIHyperregionUnion
+0x1ef447f88  __AUTH,__objc_data  _OBJC_CLASS_$__UIHyperrepeatedRegion
+0x1ee018cd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIHyperspace
+0x1ef447f60  __AUTH,__objc_data  _OBJC_CLASS_$__UIHypersphere
+0x1ef447f38  __AUTH,__objc_data  _OBJC_CLASS_$__UIIdleModeController
+0x1ef46d3d8  __AUTH,__objc_data  _OBJC_CLASS_$__UIIdleModeLayoutAttributes
+0x1ef447ec0  __AUTH,__objc_data  _OBJC_CLASS_$__UIImageLoader
+0x1ef434898  __AUTH,__objc_data  _OBJC_CLASS_$__UIImageSymbolBounceEffect
+0x1ef4611c8  __AUTH,__objc_data  _OBJC_CLASS_$__UIImageSymbolConfiguration
+0x1ef454be0  __AUTH,__objc_data  _OBJC_CLASS_$__UIImageSymbolEffect
+0x1ef434870  __AUTH,__objc_data  _OBJC_CLASS_$__UIImageSymbolEffectRepeatBehavior
+0x1ef462000  __AUTH,__objc_data  _OBJC_CLASS_$__UIImageSymbolLayer
+0x1ef434848  __AUTH,__objc_data  _OBJC_CLASS_$__UIImageSymbolPulseEffect
+0x1ef434820  __AUTH,__objc_data  _OBJC_CLASS_$__UIImageSymbolReplaceTransition
+0x1ef4347f8  __AUTH,__objc_data  _OBJC_CLASS_$__UIImageSymbolScaleEffect
+0x1ef4347d0  __AUTH,__objc_data  _OBJC_CLASS_$__UIImageSymbolTransition
+0x1ef4347a8  __AUTH,__objc_data  _OBJC_CLASS_$__UIImageSymbolVariableColorEffect
+0x1ef4649e8  __AUTH,__objc_data  _OBJC_CLASS_$__UIImageSymbolVariant
+0x1ef454bb8  __AUTH,__objc_data  _OBJC_CLASS_$__UIImageSymbolVisibilityEffect
+0x1ee02d5e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIImpactFeedbackGeneratorConfiguration
+0x1ef447d80  __AUTH,__objc_data  _OBJC_CLASS_$__UIIndexBarStaticScrollAccessory
+0x1ef447d08  __AUTH,__objc_data  _OBJC_CLASS_$__UIInputModeCursorAccessory
+0x1ef458580  __AUTH,__objc_data  _OBJC_CLASS_$__UIInputViewAnimationAssertion
+0x1ef45e428  __AUTH,__objc_data  _OBJC_CLASS_$__UIIntelligenceContentLightEffect
+0x1ef45c040  __AUTH,__objc_data  _OBJC_CLASS_$__UIIntelligenceEdgeLightEffect
+0x1ef447c90  __AUTH,__objc_data  _OBJC_CLASS_$__UIIntelligenceLatencyEffect
+0x1ef434780  __AUTH,__objc_data  _OBJC_CLASS_$__UIIntelligenceLightSourceConfiguration
+0x1ef45e400  __AUTH,__objc_data  _OBJC_CLASS_$__UIIntelligenceLightSourceDescriptor
+0x1ef434758  __AUTH,__objc_data  _OBJC_CLASS_$__UIIntelligenceLightSourceView
+0x1ef454b90  __AUTH,__objc_data  _OBJC_CLASS_$__UIIntelligenceRimHighlightEffect
+0x1ef45d140  __AUTH,__objc_data  _OBJC_CLASS_$__UIIntelligenceSystemLightView
+0x1ef45c018  __AUTH,__objc_data  _OBJC_CLASS_$__UIIntelligenceSystemNoiseView
+0x1ef45d118  __AUTH,__objc_data  _OBJC_CLASS_$__UIIntelligenceSystemView
+0x1ef434730  __AUTH,__objc_data  _OBJC_CLASS_$__UIIntelligentAssistant
+0x1ef434708  __AUTH,__objc_data  _OBJC_CLASS_$__UIIntelligentAssistantImageSelectionContext
+0x1ee029c60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIIntelligentAssistantSceneComponent
+0x1ef458558  __AUTH,__objc_data  _OBJC_CLASS_$__UIIntelligentAssistantTextSelectionContext
+0x1ef447c68  __AUTH,__objc_data  _OBJC_CLASS_$__UIIntelligentTextInsertionAnimatedColor
+0x1ee034890  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIInteractiveHighlightEffectWindow
+0x1ef447a60  __AUTH,__objc_data  _OBJC_CLASS_$__UIInternalDebugView
+0x1ef4670a8  __AUTH,__objc_data  _OBJC_CLASS_$__UIInterruptScrollDecelerationGestureRecognizer
+0x1ef434690  __AUTH,__objc_data  _OBJC_CLASS_$__UIIntrusionDebugOverlay
+0x1ef447a38  __AUTH,__objc_data  _OBJC_CLASS_$__UIItemProviderRepresentationOptions
+0x1ee023e08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIKBFeedbackGeneratorPartner
+0x1ee018350  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIKBProductivityDoubleTapGesture
+0x1ee01e6c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIKBProductivityLongPressGestureRecognizer
+0x1ee018328  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIKBProductivityPanGestureRecognizer
+0x1ee018300  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIKBProductivityPinchGestureRecognizer
+0x1ee0182d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIKBProductivitySingleTapGesture
+0x1ee029df0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIKBUndoGestureObserver
+0x1ef447628  __AUTH,__objc_data  _OBJC_CLASS_$__UIKeyboardAnimator
+0x1ee034868  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIKeyboardChangedInformation
+0x1ee02b128  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIKeyboardChangedInformationWithFencing
+0x1ee023b88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIKeyboardFeedbackGenerator
+0x1ee023b60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIKeyboardFeedbackGeneratorConfiguration
+0x1ef4474e8  __AUTH,__objc_data  _OBJC_CLASS_$__UIKeyboardHandwritingLink
+0x1ee0223c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIKeyboardInputRehostingSceneSpecification
+0x1ee02bdd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIKeyboardInputScene
+0x1ef4473d0  __AUTH,__objc_data  _OBJC_CLASS_$__UIKeyboardInputSceneWorkspace
+0x1ef4345a0  __AUTH,__objc_data  _OBJC_CLASS_$__UIKeyboardIntelligenceSupportContext
+0x1ee018cb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIKeyboardSuppressionPencilPolicyDelegate
+0x1ee02f5e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIKeyboardUIInformation
+0x1ef464068  __AUTH,__objc_data  _OBJC_CLASS_$__UIKitDragAndDropStatistics
+0x1ee036cf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIKitFeatures
+0x1ef4344d8  __AUTH,__objc_data  _OBJC_CLASS_$__UILabelSummarySymbolTextAttachment
+0x1ee029f58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UILabelViewTextAttachment
+0x1ee022788  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UILargeContentViewerItemStoredProperties
+0x1ee03d0d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UILayerHostView
+0x1ee031e38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UILayoutGuide
+0x1ee0298c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UILayoutSpacer
+0x1ef454aa0  __AUTH,__objc_data  _OBJC_CLASS_$__UILegibilityImageSet
+0x1ee034818  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UILegibilityLabel
+0x1ef46a000  __AUTH,__objc_data  _OBJC_CLASS_$__UILegibilitySettings
+0x1ef462820  __AUTH,__objc_data  _OBJC_CLASS_$__UILegibilitySettingsProvider
+0x1ee035b00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UILegibilityView
+0x1ee016a78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UILinearForceLevelClassifier
+0x1ee017978  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UILiquidLensView
+0x1ee020df0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIListMetrics
+0x1ee01b4a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIListSeparatorConfiguration
+0x1ef465f50  __AUTH,__objc_data  _OBJC_CLASS_$__UILumaTrackingBackdropView
+0x1ef447150  __AUTH,__objc_data  _OBJC_CLASS_$__UILumaTrackingGroup
+0x1ef467080  __AUTH,__objc_data  _OBJC_CLASS_$__UIMagicMorphAnimation
+0x1ef434460  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenu
+0x1ef434410  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuBaseMenuRequest
+0x1ef434398  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuBaseMenuResponse
+0x1ef434370  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuCommand
+0x1ef434348  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuCommandAlternate
+0x1ef434320  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuCommandIdentifier
+0x1ef4342f8  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuCommandInvocationNotification
+0x1ef4342a8  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuCommandInvocationRequest
+0x1ef434230  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuCommandInvocationResponse
+0x1ef434208  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuCommandKeyboardShortcut
+0x1ef4341e0  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuCommandPrimaryActionContext
+0x1ef4341b8  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuCommandState
+0x1ef434190  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuDeferredElement
+0x1ef434168  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuDeferredElementIdentifier
+0x1ef434140  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuDeferredElementRequest
+0x1ef4340c8  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuDeferredElementResponse
+0x1ef4340a0  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuDeferredElementState
+0x1ef434028  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuHostKeyboardShortcut
+0x1ef434000  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuIdentifier
+0x1ef433fb0  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuSession
+0x1ef433f88  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuSessionIdentifier
+0x1ef433f38  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuSessionRequest
+0x1ef433ec0  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuSessionResponse
+0x1ef433e98  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuState
+0x1ef433e70  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuStateRequest
+0x1ef433df8  __AUTH,__objc_data  _OBJC_CLASS_$__UIMainMenuStateResponse
+0x1ef4627f8  __AUTH,__objc_data  _OBJC_CLASS_$__UIMaterialLuminanceAggregatorProxy
+0x1ee02f200  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIMenuBuilder
+0x1ee01ebf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIMenuLeafAlternate
+0x1ee02a638  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIMenuLeafKeyCombination
+0x1ee02a9f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIMenuLeafKeyboardShortcut
+0x1ef465f28  __AUTH,__objc_data  _OBJC_CLASS_$__UIMenuPresentationSource
+0x1ee027b18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIModernBarButton
+0x1ee026310  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIModernBarButtonVisualProvider
+0x1ef433dd0  __AUTH,__objc_data  _OBJC_CLASS_$__UIModifierKeyCursorAccessory
+0x1ef461178  __AUTH,__objc_data  _OBJC_CLASS_$__UIModulationFeedbackGenerator
+0x1ef461150  __AUTH,__objc_data  _OBJC_CLASS_$__UIModulationFeedbackGeneratorConfiguration
+0x1ee02eda0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIMorphingPlatterView
+0x1ef462dc0  __AUTH,__objc_data  _OBJC_CLASS_$__UIMorphingView
+0x1ef4627d0  __AUTH,__objc_data  _OBJC_CLASS_$__UIMotionAnalyzerSettings
+0x1ef45bff0  __AUTH,__objc_data  _OBJC_CLASS_$__UIMotionBodyObserver
+0x1ee029c38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIMultiLayer
+0x1ee01c580  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIMutableTextSelectionRect
+0x1ee025de8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationBarContents
+0x1ee02eaf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationBarItemStack
+0x1ee02e710  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationBarItemStackEntry
+0x1ee037ea0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationBarPalette
+0x1ee0285e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationBarTitleFontProvider
+0x1ee031e10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationBarTitleView
+0x1ef468de0  __AUTH,__objc_data  _OBJC_CLASS_$__UINavigationBarTitleViewOverlayRects
+0x1ee0199e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationBarTransitionAssistant
+0x1ee03bb90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationBarVisualProvider
+0x1ee0399a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationBarVisualProviderModernIOS
+0x1ee0237a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationBarVisualProviderModernIOSSwiftClassProvider
+0x1ef433d58  __AUTH,__objc_data  _OBJC_CLASS_$__UINavigationButtonBarWrapperView
+0x1ee028c98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationControllerDefaultVisualStyleProvider
+0x1ee036848  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationControllerPalette
+0x1ee028c70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationControllerVisualStyle
+0x1ee028c48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationControllerVisualStyleFactory
+0x1ee028f90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationControllerVisualStyleIOS
+0x1ee031af0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationInteractiveTransition
+0x1ee031ac8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationInteractiveTransitionBase
+0x1ef468278  __AUTH,__objc_data  _OBJC_CLASS_$__UINavigationItemProxy
+0x1ee0194a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationItemRenameHandler
+0x1ee02b498  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINavigationParallaxTransition
+0x1ef446cc8  __AUTH,__objc_data  _OBJC_CLASS_$__UINoBlurEffect
+0x1ef446c78  __AUTH,__objc_data  _OBJC_CLASS_$__UINonEditableTextSelectionForceGesture
+0x1ef45a8d0  __AUTH,__objc_data  _OBJC_CLASS_$__UINonHostingVisibilityPropagationView
+0x1ee02fb10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINotificationFeedbackGeneratorConfiguration
+0x1ef433d30  __AUTH,__objc_data  _OBJC_CLASS_$__UINullFeedback
+0x1ee022e90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UINullSubstrate
+0x1ef446c00  __AUTH,__objc_data  _OBJC_CLASS_$__UIOHypogeanViewHandle
+0x1ef446bd8  __AUTH,__objc_data  _OBJC_CLASS_$__UIOHypogeanViewRequestAction_TestingOnly
+0x1ef446bb0  __AUTH,__objc_data  _OBJC_CLASS_$__UIOHypogeanViewRequestConfiguration
+0x1ef446908  __AUTH,__objc_data  _OBJC_CLASS_$__UIOShowAlertAction_TestingOnly
+0x1ef4468e0  __AUTH,__objc_data  _OBJC_CLASS_$__UIOShowTouchAction_TestingOnly
+0x1ef433ce0  __AUTH,__objc_data  _OBJC_CLASS_$__UIOTestTranscriptRequestAction
+0x1ef433cb8  __AUTH,__objc_data  _OBJC_CLASS_$__UIOTestTranscriptResponse
+0x1ef458418  __AUTH,__objc_data  _OBJC_CLASS_$__UIOrientationRequestAction
+0x1ef4583f0  __AUTH,__objc_data  _OBJC_CLASS_$__UIOutlineItemRenderer
+0x1ef446890  __AUTH,__objc_data  _OBJC_CLASS_$__UIOutlineItemRendererInternal
+0x1ef45e360  __AUTH,__objc_data  _OBJC_CLASS_$__UIOverlayService
+0x1ef446840  __AUTH,__objc_data  _OBJC_CLASS_$__UIPackedRegion
+0x1ef446818  __AUTH,__objc_data  _OBJC_CLASS_$__UIPageControlDurationProgress
+0x1ef433c90  __AUTH,__objc_data  _OBJC_CLASS_$__UIPageControlProgress
+0x1ef4467f0  __AUTH,__objc_data  _OBJC_CLASS_$__UIPageCurl
+0x1ee02d5b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIPageSheetPresentationController
+0x1ee029260  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIPanOrFlickGestureRecognizer
+0x1ef45f300  __AUTH,__objc_data  _OBJC_CLASS_$__UIParallaxMotionEffect
+0x1ef46a500  __AUTH,__objc_data  _OBJC_CLASS_$__UIParallaxTransitionCardView
+0x1ee02f1d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIParallaxTransitionPanGestureRecognizer
+0x1ef4467a0  __AUTH,__objc_data  _OBJC_CLASS_$__UIPassthroughTapGestureRecognizer
+0x1ef4583a0  __AUTH,__objc_data  _OBJC_CLASS_$__UIPasteboardOptions
+0x1ef433c40  __AUTH,__objc_data  _OBJC_CLASS_$__UIPencilHoverState
+0x1ef433c18  __AUTH,__objc_data  _OBJC_CLASS_$__UIPencilInteractionSqueeze
+0x1ef433bf0  __AUTH,__objc_data  _OBJC_CLASS_$__UIPencilInteractionTap
+0x1ef454a28  __AUTH,__objc_data  _OBJC_CLASS_$__UIPercentDrivenInteractionEffect
+0x1ef468250  __AUTH,__objc_data  _OBJC_CLASS_$__UIPercentDrivenInteractionEffectChangeContext
+0x1ef458378  __AUTH,__objc_data  _OBJC_CLASS_$__UIPhysicalButtonAction
+0x1ef446778  __AUTH,__objc_data  _OBJC_CLASS_$__UIPhysicalButtonActionContext
+0x1ef458350  __AUTH,__objc_data  _OBJC_CLASS_$__UIPhysicalButtonBSAction
+0x1ef45d0a0  __AUTH,__objc_data  _OBJC_CLASS_$__UIPhysicalButtonBehaviorCameraShutterOptions
+0x1ef45d078  __AUTH,__objc_data  _OBJC_CLASS_$__UIPhysicalButtonBehaviorOptions
+0x1ef465ed8  __AUTH,__objc_data  _OBJC_CLASS_$__UIPhysicalButtonConfiguration
+0x1ef467008  __AUTH,__objc_data  _OBJC_CLASS_$__UIPhysicalButtonConfigurationResolutionContext
+0x1ee02cf78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIPhysicalButtonConfigurationSet
+0x1ef433bc8  __AUTH,__objc_data  _OBJC_CLASS_$__UIPhysicalButtonContact
+0x1ef4627a8  __AUTH,__objc_data  _OBJC_CLASS_$__UIPhysicalButtonInteraction
+0x1ee018c88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIPhysicalButtonInteractionArbiter
+0x1ef46d950  __AUTH,__objc_data  _OBJC_CLASS_$__UIPhysicalButtonMutableConfigurationSet
+0x1ef45a858  __AUTH,__objc_data  _OBJC_CLASS_$__UIPickerViewStyle
+0x1ef45a830  __AUTH,__objc_data  _OBJC_CLASS_$__UIPickerViewStyle_iOS
+0x1ef433ba0  __AUTH,__objc_data  _OBJC_CLASS_$__UIPickerViewStyle_tvOS
+0x1ef433b78  __AUTH,__objc_data  _OBJC_CLASS_$__UIPlatterShadowSettings
+0x1ef45f2d8  __AUTH,__objc_data  _OBJC_CLASS_$__UIPlatterView
+0x1ef446610  __AUTH,__objc_data  _OBJC_CLASS_$__UIPlaybackControlsStateManager
+0x1ef4465c0  __AUTH,__objc_data  _OBJC_CLASS_$__UIPointerAssistantRegion
+0x1ee02f5c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIPointerInteractionAssistant
+0x1ef4549d8  __AUTH,__objc_data  _OBJC_CLASS_$__UIPointerUnlockAction
+0x1ef462d98  __AUTH,__objc_data  _OBJC_CLASS_$__UIPopoverGlassBackground
+0x1ef446480  __AUTH,__objc_data  _OBJC_CLASS_$__UIPopoverHostManagerPopoverCloseConfiguration
+0x1ef446458  __AUTH,__objc_data  _OBJC_CLASS_$__UIPopoverHostManagerPopoverCreationConfiguration
+0x1ef446430  __AUTH,__objc_data  _OBJC_CLASS_$__UIPopoverHostManagerPopoverUpdateConfiguration
+0x1ef469fb0  __AUTH,__objc_data  _OBJC_CLASS_$__UIPopoverPresentationMetrics
+0x1ef4463e0  __AUTH,__objc_data  _OBJC_CLASS_$__UIPopoverSceneSpecification
+0x1ef46ab18  __AUTH,__objc_data  _OBJC_CLASS_$__UIPopoverShapeLayerChromeView
+0x1ee02e6e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIPortalView
+0x1ee032db0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIPresentationControllerDefaultVisualStyleProvider
+0x1ee031aa0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIPresentationControllerVisualStyle
+0x1ef446368  __AUTH,__objc_data  _OBJC_CLASS_$__UIPreview
+0x1ef446318  __AUTH,__objc_data  _OBJC_CLASS_$__UIPreviewActionsController
+0x1ee01b9a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIPreviewInteractionForceLevelClassifier
+0x1ef4461b0  __AUTH,__objc_data  _OBJC_CLASS_$__UIPreviewInteractionHighlighter
+0x1ef446098  __AUTH,__objc_data  _OBJC_CLASS_$__UIPreviewInteractionViewControllerPresentation
+0x1ef446070  __AUTH,__objc_data  _OBJC_CLASS_$__UIPreviewParameters
+0x1ee0347a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIPreviewPresentationContainerView
+0x1ee035a88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIPreviewPresentationController
+0x1ef445fa8  __AUTH,__objc_data  _OBJC_CLASS_$__UIPreviewTarget
+0x1ef445f80  __AUTH,__objc_data  _OBJC_CLASS_$__UIPreviewTransitionDelegate
+0x1ef445f58  __AUTH,__objc_data  _OBJC_CLASS_$__UIProductivityGestureAction
+0x1ef445f08  __AUTH,__objc_data  _OBJC_CLASS_$__UIProgressiveBlurContextController
+0x1ef458300  __AUTH,__objc_data  _OBJC_CLASS_$__UIProgressiveBlurPresentationAnimator
+0x1ef454988  __AUTH,__objc_data  _OBJC_CLASS_$__UIProgressiveBlurPresentationController
+0x1ef445ee0  __AUTH,__objc_data  _OBJC_CLASS_$__UIProofreadingShimmerRangeInfo
+0x1ef445e40  __AUTH,__objc_data  _OBJC_CLASS_$__UIPrototypingMenuSlider
+0x1ee018c60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIProxyDismissInteraction
+0x1ee018c38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIReflectingView
+0x1ee03d468  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIRemoteKeyboards
+0x1ee03cf90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIRemoteView
+0x1ee03b460  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIRemoteViewController
+0x1ef469920  __AUTH,__objc_data  _OBJC_CLASS_$__UIRemoteViewService
+0x1ef445c60  __AUTH,__objc_data  _OBJC_CLASS_$__UIRepeatingPressGestureRecognizer
+0x1ef45a808  __AUTH,__objc_data  _OBJC_CLASS_$__UIResilientRemoteViewContainerViewController
+0x1ee029878  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIResourceConditionsManager
+0x1ee030b78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIResourceConditionsSceneExtension
+0x1ee018c10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIResourceConditionsSceneHostComponent
+0x1ee03b2a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIRootWindow
+0x1ef445c10  __AUTH,__objc_data  _OBJC_CLASS_$__UIRopeAnimation
+0x1ef445be8  __AUTH,__objc_data  _OBJC_CLASS_$__UIRotaryGestureRecognizer
+0x1ef445bc0  __AUTH,__objc_data  _OBJC_CLASS_$__UIRotatingAlertController
+0x1ef46f678  __AUTH,__objc_data  _OBJC_CLASS_$__UIRoundBatteryView
+0x1ef45a7e0  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneAccessoryAttributes
+0x1ef433a10  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneAccessoryContainerSpecification
+0x1ee029238  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneAccessoryRegistry
+0x1ee01bdd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneActivationInteractionClientComponent
+0x1ee025dc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneActivationInteractionExtension
+0x1ee03aa88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneApplicationActionsHandler
+0x1ee032b58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneBarAlignmentsResolver
+0x1ee02b0d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneBarPositionResolver
+0x1ee030b50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneBarSizeClassResolver
+0x1ef445b98  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneBaseLifecycleSettingsDiffAction
+0x1ef46e850  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneCATransactionSynchronizedAction
+0x1ef46e878  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneCATransactionSynchronizedActionResponse
+0x1ef433948  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneCarPlaySessionTouchpad
+0x1ef4338f8  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneClassicModeExternalSettingsModifier
+0x1ef4338d0  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneClosureAction
+0x1ef4582b0  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneCompanion
+0x1ee029850  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneConnectionOptionDefinitionActionHandler
+0x1ef45bfa0  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneConnectionOptionDefinitionPayloadStorage
+0x1ee037e78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneConnectionOptionsContext
+0x1ee01ae38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneDestructionHostComponent
+0x1ef46ec10  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneHingeState
+0x1ef461dd0  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneHostingActionClientToHost
+0x1ee01e380  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneHostingActionHostToClient
+0x1ee01c238  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneHostingController
+0x1ee01a140  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneHostingControllerAdvancedConfiguration
+0x1ee01a550  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneHostingDisconnectingActivationController
+0x1ee019948  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneHostingHierarchyInteraction
+0x1ee018288  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneHostingReconnectingActivationController
+0x1ee038a80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneHostingSceneSpecification
+0x1ee038580  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneHostingTraitCollectionPropagationExtension
+0x1ee01aa50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneHostingView
+0x1ee0387b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneKeyValueStorageExtension
+0x1ee039c50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneLifecycleMonitor
+0x1ee029530  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneRegion
+0x1ef45d028  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneRegionHostInteraction
+0x1ef454870  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneResizeFinishedAction
+0x1ef4336f0  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneSafeAreaCornerInsetCompositeResolver
+0x1ee023de0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneSafeAreaCornerInsetConcreteResolver
+0x1ee036398  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneSafeAreaCornerInsetResolver
+0x1ef46f7c0  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneSafeAreaCornerInsetStatusBarAxisResolver
+0x1ef4336c8  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneSafeAreaCornerInsetStatusBarVisibilityResolver
+0x1ef4336a0  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneSafeAreaEdgeInsetCompositeResolver
+0x1ee02b2b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneSafeAreaEdgeInsetConcreteResolver
+0x1ee035a60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneSafeAreaEdgeInsetResolver
+0x1ef46f750  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneSafeAreaEdgeInsetStatusBarAxisResolver
+0x1ee027140  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISceneSafeAreaEdgeInsetStatusBarVisibilityResolver
+0x1ef433678  __AUTH,__objc_data  _OBJC_CLASS_$__UISceneSessionActivationRequest
+0x1ef458238  __AUTH,__objc_data  _OBJC_CLASS_$__UIScreenRoutePickerViewController
+0x1ee02b8a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIScreenSimpleBoundingPathUtilities
+0x1ee028928  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIScrollEdgeEffectViewInteraction
+0x1ef433628  __AUTH,__objc_data  _OBJC_CLASS_$__UIScrollPocketAppearanceObserverInteraction
+0x1ee02fe80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIScrollPocketCollectorInteraction
+0x1ee021c98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIScrollPocketContainerInteraction
+0x1ef4698f8  __AUTH,__objc_data  _OBJC_CLASS_$__UIScrollPocketElectionInteraction
+0x1ee02f8e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIScrollPocketInteraction
+0x1ef465cf8  __AUTH,__objc_data  _OBJC_CLASS_$__UIScrollPocketLumaObserverInteraction
+0x1ee029210  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIScrollPocketRegistrationInteraction
+0x1ee03be10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIScrollViewScrollIndicator
+0x1ee028590  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIScrollViewScrollIndicatorVisualStyle_CarPlay
+0x1ee028568  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIScrollViewScrollIndicatorVisualStyle_iOS
+0x1ee028540  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIScrollViewScrollIndicatorVisualStyle_tvOS
+0x1ee036f78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIScrollsToTopInitiatorView
+0x1ee034700  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISearchAtomView
+0x1ef454820  __AUTH,__objc_data  _OBJC_CLASS_$__UISearchAtomViewVisualStyle
+0x1ef462d70  __AUTH,__objc_data  _OBJC_CLASS_$__UISearchControllerInlineSearchFieldAccessoryView
+0x1ef4680e8  __AUTH,__objc_data  _OBJC_CLASS_$__UISearchControllerTrackableState
+0x1ee017680  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISearchSuggestionController
+0x1ee017658  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISearchSuggestionControllerIOS
+0x1ee0171a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISearchSuggestionControllerIOSBase
+0x1ef45cfd8  __AUTH,__objc_data  _OBJC_CLASS_$__UISearchSuggestionItemGroup
+0x1ef4455f8  __AUTH,__objc_data  _OBJC_CLASS_$__UISearchSuggestionItem_dci
+0x1ef45f1c0  __AUTH,__objc_data  _OBJC_CLASS_$__UISearchTabHostedFieldConfiguration
+0x1ee017950  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISearchTextFieldVisualStyle
+0x1ef445558  __AUTH,__objc_data  _OBJC_CLASS_$__UISearchToken
+0x1ef445508  __AUTH,__objc_data  _OBJC_CLASS_$__UISecureController
+0x1ee0217a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISelectionFeedbackGeneratorConfiguration
+0x1ee02ced8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISelectionInteraction
+0x1ee02cb40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISensitiveUI
+0x1ee02b5b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISettings
+0x1ee01a0c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIShadowProperties
+0x1ef46d298  __AUTH,__objc_data  _OBJC_CLASS_$__UIShape
+0x1ef445490  __AUTH,__objc_data  _OBJC_CLASS_$__UIShareInvitationRemoteViewController
+0x1ef454780  __AUTH,__objc_data  _OBJC_CLASS_$__UIShareParticipantDetails
+0x1ef4453f0  __AUTH,__objc_data  _OBJC_CLASS_$__UISharingViewController
+0x1ee01bd88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISheetAnimationController
+0x1ee025af0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISheetDetent
+0x1ef4581e8  __AUTH,__objc_data  _OBJC_CLASS_$__UISheetDropInteraction
+0x1ee024088  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISheetInteraction
+0x1ee02ea58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISheetLayoutInfoProvider
+0x1ee03bf78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISheetPresentationController
+0x1ee031410  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISheetPresentationControllerAppearance
+0x1ef4453a0  __AUTH,__objc_data  _OBJC_CLASS_$__UISheetPresentationInteraction
+0x1ee032860  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISheetPresentationMetrics
+0x1ee017180  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISidebarPlatformMetrics
+0x1ee02a408  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISimplePressGestureRecognizer
+0x1ee018238  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISimpleTimedInhibitor
+0x1ef445328  __AUTH,__objc_data  _OBJC_CLASS_$__UISimplex
+0x1ef433510  __AUTH,__objc_data  _OBJC_CLASS_$__UISliderFluidColorConfiguration
+0x1ef461088  __AUTH,__objc_data  _OBJC_CLASS_$__UISliderFluidConfiguration
+0x1ef460778  __AUTH,__objc_data  _OBJC_CLASS_$__UISliderFluidTickConfiguration
+0x1ef466f40  __AUTH,__objc_data  _OBJC_CLASS_$__UISliderFluidVisualElementFactory
+0x1ef45e298  __AUTH,__objc_data  _OBJC_CLASS_$__UISliderTick
+0x1ef4334e8  __AUTH,__objc_data  _OBJC_CLASS_$__UISliderTickConfiguration
+0x1ee017158  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISlotView
+0x1ee02a0e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISplitViewControllerAdaptiveColumnView
+0x1ef46aa28  __AUTH,__objc_data  _OBJC_CLASS_$__UISplitViewControllerAdaptiveLayoutTransition
+0x1ef46aa00  __AUTH,__objc_data  _OBJC_CLASS_$__UISplitViewControllerAdaptiveLayoutTransitionController
+0x1ef46a9b0  __AUTH,__objc_data  _OBJC_CLASS_$__UISplitViewControllerAdaptivePanelLayout
+0x1ef46a988  __AUTH,__objc_data  _OBJC_CLASS_$__UISplitViewControllerAdaptiveSingleColumnLayout
+0x1ef4333d0  __AUTH,__objc_data  _OBJC_CLASS_$__UISplitViewControllerAdaptiveTransitionLayout
+0x1ef4693a8  __AUTH,__objc_data  _OBJC_CLASS_$__UISplitViewControllerFloatingBarAssistant
+0x1ee016dc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISplitViewControllerStyle
+0x1ef46bb80  __AUTH,__objc_data  _OBJC_CLASS_$__UISpringParameters
+0x1ef445288  __AUTH,__objc_data  _OBJC_CLASS_$__UIStackedImageConfiguration
+0x1ef445260  __AUTH,__objc_data  _OBJC_CLASS_$__UIStackedImageContainerLayer
+0x1ef454730  __AUTH,__objc_data  _OBJC_CLASS_$__UIStackedImageContainerView
+0x1ee030808  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStatesFeedbackGenerator
+0x1ee030970  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStatesFeedbackGeneratorConfiguration
+0x1ee02f8b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStatesFeedbackGeneratorPreviewConfiguration
+0x1ee022328  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStatesFeedbackGeneratorSwipeActionConfiguration
+0x1ef45a718  __AUTH,__objc_data  _OBJC_CLASS_$__UIStaticBatteryView
+0x1ee034688  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStaticScrollBar
+0x1ee036370  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStatusBar
+0x1ee024ce0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStatusBarAction
+0x1ee034660  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStatusBarActivityView
+0x1ef433358  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarBatteryView
+0x1ee035a10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStatusBarCellularSignalView
+0x1ef454500  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarData
+0x1ef4544d8  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataActivityEntry
+0x1ef454460  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataBackgroundActivityEntry
+0x1ef454438  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataBatteryEntry
+0x1ef454410  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataBluetoothEntry
+0x1ef4543e8  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataBoolEntry
+0x1ef4543c0  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataBoolImageEntry
+0x1ef454398  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataCellularEntry
+0x1ef454370  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataConverter
+0x1ef454348  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataEntry
+0x1ef454320  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataImageEntry
+0x1ef4542f8  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataIntegerEntry
+0x1ef4542d0  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataLocationEntry
+0x1ef4542a8  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataLockEntry
+0x1ef454280  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataNetworkEntry
+0x1ef454258  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataQuietModeEntry
+0x1ef454230  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataStringEntry
+0x1ef454208  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataTetheringEntry
+0x1ef4541e0  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataThermalEntry
+0x1ef4541b8  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataVoiceControlEntry
+0x1ef454190  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDataWifiEntry
+0x1ef454168  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDisplayItem
+0x1ef4540f0  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarDisplayItemPlacement
+0x1ee034598  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStatusBarImageView
+0x1ee0359e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStatusBarItem
+0x1ef453bc8  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarRegion
+0x1ef453ba0  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarRegionAxesLayout
+0x1ef453b78  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarRegionAxisAligningLayout
+0x1ef453b50  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarRegionAxisCenteringLayout
+0x1ef453b28  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarRegionAxisFillingLayout
+0x1ef444e78  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarRegionAxisSquishyLayout
+0x1ef453b00  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarRegionAxisStackingLayout
+0x1ee0359c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStatusBarSignalView
+0x1ef433308  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarStaticBatteryView
+0x1ee0344a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStatusBarStringView
+0x1ef4539e8  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarStyleAttributes
+0x1ef45a6f0  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarVisualProvider_DynamicSplit
+0x1ef45a6c8  __AUTH,__objc_data  _OBJC_CLASS_$__UIStatusBarVisualProvider_FixedSplit
+0x1ee0243d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStatusBarVisualProvider_Phone
+0x1ee0248d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStatusBarVisualProvider_Split
+0x1ee0243a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStatusBarVisualProvider_iOS
+0x1ee034430  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStatusBarWifiSignalView
+0x1ef45a538  __AUTH,__objc_data  _OBJC_CLASS_$__UISticker
+0x1ef4332e0  __AUTH,__objc_data  _OBJC_CLASS_$__UIStickerPickerKeyboardSession
+0x1ef4332b8  __AUTH,__objc_data  _OBJC_CLASS_$__UIStickerPickerServiceRemoteViewController
+0x1ef433290  __AUTH,__objc_data  _OBJC_CLASS_$__UIStickerPickerViewController
+0x1ee023db8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIStickerRepresentation
+0x1ef45cf60  __AUTH,__objc_data  _OBJC_CLASS_$__UISubtitleCellContentView
+0x1ee034408  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISubtitleCellContentViewConfiguration
+0x1ef45cf38  __AUTH,__objc_data  _OBJC_CLASS_$__UISuperlayerSecurityAnalysisSceneComponent
+0x1ef4580f8  __AUTH,__objc_data  _OBJC_CLASS_$__UISupplementalItem
+0x1ef45a510  __AUTH,__objc_data  _OBJC_CLASS_$__UISupplementalLexicon
+0x1ef4538a8  __AUTH,__objc_data  _OBJC_CLASS_$__UISupplementalLexiconOperation
+0x1ef4580d0  __AUTH,__objc_data  _OBJC_CLASS_$__UISupplementalPersonItem
+0x1ef444b08  __AUTH,__objc_data  _OBJC_CLASS_$__UISupplementalPhraseItem
+0x1ef453858  __AUTH,__objc_data  _OBJC_CLASS_$__UISwipeActionDynamicButtonView
+0x1ef421410  __AUTH,__objc_data  _OBJC_CLASS_$__UISystemAuthenticationService
+0x1ef4213e8  __AUTH,__objc_data  _OBJC_CLASS_$__UISystemAuthenticationServiceMessage
+0x1ee028ba8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISystemBackgroundView
+0x1ef433240  __AUTH,__objc_data  _OBJC_CLASS_$__UISystemBannerRequest
+0x1ef46cbe0  __AUTH,__objc_data  _OBJC_CLASS_$__UISystemBaselineConstraint
+0x1ef453830  __AUTH,__objc_data  _OBJC_CLASS_$__UISystemGestureManager
+0x1ee036320  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UISystemGestureWindow
+0x1ee026a40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITAMICAdaptorView
+0x1ee02c9b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITab
+0x1ef444ab8  __AUTH,__objc_data  _OBJC_CLASS_$__UITabBarAccessoryView
+0x1ee02a9d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITabBarContentLayoutManager
+0x1ef444a90  __AUTH,__objc_data  _OBJC_CLASS_$__UITabBarControllerSidebar
+0x1ef46d900  __AUTH,__objc_data  _OBJC_CLASS_$__UITabBarControllerVisualStyle
+0x1ef463f00  __AUTH,__objc_data  _OBJC_CLASS_$__UITabBarControllerVisualStyle_Phone
+0x1ef433150  __AUTH,__objc_data  _OBJC_CLASS_$__UITabBarGlassBackground
+0x1ef461d58  __AUTH,__objc_data  _OBJC_CLASS_$__UITabBarHostedPlatterViewsHandle
+0x1ee039138  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITabBarVisualProvider
+0x1ef469380  __AUTH,__objc_data  _OBJC_CLASS_$__UITabBarVisualProviderFactory
+0x1ef4537e0  __AUTH,__objc_data  _OBJC_CLASS_$__UITabBasicAlternateRepresentation
+0x1ef433128  __AUTH,__objc_data  _OBJC_CLASS_$__UITabBorrowedViewHandle
+0x1ef461060  __AUTH,__objc_data  _OBJC_CLASS_$__UITabCrossFadeTransition
+0x1ee02c988  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITabElement
+0x1ef45bf00  __AUTH,__objc_data  _OBJC_CLASS_$__UITabElementGroup
+0x1ef46cb68  __AUTH,__objc_data  _OBJC_CLASS_$__UITabModel
+0x1ef433100  __AUTH,__objc_data  _OBJC_CLASS_$__UITabMorphTransition
+0x1ef46b3b0  __AUTH,__objc_data  _OBJC_CLASS_$__UITabSelectionView
+0x1ef4330d8  __AUTH,__objc_data  _OBJC_CLASS_$__UITabSidebarBatchUpdatesTransaction
+0x1ef458080  __AUTH,__objc_data  _OBJC_CLASS_$__UITabSidebarItem
+0x1ef433010  __AUTH,__objc_data  _OBJC_CLASS_$__UITabStyleSegmentedControl
+0x1ef4449c8  __AUTH,__objc_data  _OBJC_CLASS_$__UITableViewCellActionButton
+0x1ef444950  __AUTH,__objc_data  _OBJC_CLASS_$__UITableViewDiffableDataSource
+0x1ef444810  __AUTH,__objc_data  _OBJC_CLASS_$__UITapticEngine
+0x1ef457fb8  __AUTH,__objc_data  _OBJC_CLASS_$__UITargetedPreview
+0x1ef4447e8  __AUTH,__objc_data  _OBJC_CLASS_$__UITextAnimation
+0x1ef432f98  __AUTH,__objc_data  _OBJC_CLASS_$__UITextCursorDragAnimator
+0x1ee01c170  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITextCursorTrailingGlowView
+0x1ef46d1f8  __AUTH,__objc_data  _OBJC_CLASS_$__UITextCursorView
+0x1ee021778  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITextDocumentInterface
+0x1ef444680  __AUTH,__objc_data  _OBJC_CLASS_$__UITextDragCaretView
+0x1ef432f70  __AUTH,__objc_data  _OBJC_CLASS_$__UITextEffectsWindowHostManager
+0x1ef432f48  __AUTH,__objc_data  _OBJC_CLASS_$__UITextEffectsWindowPlacer
+0x1ee01e2b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITextFieldRoundedRectBackgroundViewNeue
+0x1ef432e30  __AUTH,__objc_data  _OBJC_CLASS_$__UITextFormattingViewControllerCustomComponent
+0x1ef432e08  __AUTH,__objc_data  _OBJC_CLASS_$__UITextFormattingViewControllerEmphasisStyle
+0x1ef432de0  __AUTH,__objc_data  _OBJC_CLASS_$__UITextHoverEffectContainerLayer
+0x1ee024380  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITextKit2LayoutController
+0x1ee02ade0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITextKitTextPosition
+0x1ee02adb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITextKitTextRange
+0x1ee024358  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITextLayoutControllerBase
+0x1ef457ea0  __AUTH,__objc_data  _OBJC_CLASS_$__UITextLayoutPreviewRenderer
+0x1ef444388  __AUTH,__objc_data  _OBJC_CLASS_$__UITextSearchOptions
+0x1ee018620  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITextSelectionForceGesture
+0x1ef432cf0  __AUTH,__objc_data  _OBJC_CLASS_$__UITextSelectionHighlightShimmerView
+0x1ee01def8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITextSelectionHighlightView
+0x1ee01cb98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITextSelectionLollipopView
+0x1ee023750  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITextStorageDraggableGeometry
+0x1ee019d30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITextStyleDescriptor
+0x1ef4442c0  __AUTH,__objc_data  _OBJC_CLASS_$__UITextViewAnimatedPlaceholderIdentifier
+0x1ef444298  __AUTH,__objc_data  _OBJC_CLASS_$__UITextViewAnimatedPlaceholderSupport
+0x1ee024830  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITextViewContentPadding
+0x1ee024808  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITextViewRestorableScrollPosition
+0x1ef45cee8  __AUTH,__objc_data  _OBJC_CLASS_$__UITiltMotionEffect
+0x1ef461d30  __AUTH,__objc_data  _OBJC_CLASS_$__UIToolTipInteractionStyle
+0x1ef4194c0  __AUTH,__objc_data  _OBJC_CLASS_$__UIToolbarMetricsUtils
+0x1ee02a5e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIToolbarVisualProvider
+0x1ee024c68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIToolbarVisualProviderModernIOS
+0x1ee0202b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIToolbarVisualProviderSwiftClassProvider
+0x1ee01c4b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITouchForceObservable
+0x1ee02a980  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITraitGlassElevationLevel
+0x1ee030b28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITraitHDRHeadroomSuppressionLimit
+0x1ee031758  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITraitHDRHeadroomUsage
+0x1ee030b00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITraitInterfaceProtectionState
+0x1ef45e1d0  __AUTH,__objc_data  _OBJC_CLASS_$__UITraitIsInVerticalBar
+0x1ee01dea8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITraitNavigationTitleAlignment
+0x1ee0307e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITraitRenderingEnvironmentAttributes
+0x1ee02c0a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITraitSceneUserResizability
+0x1ee023d90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITraitSuggestedMonochromaticTreatment
+0x1ee02b9c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITraitSystemDisplayIdentifier
+0x1ef469ec0  __AUTH,__objc_data  _OBJC_CLASS_$__UITraitSystemVerticalBarAllowed
+0x1ef46f598  __AUTH,__objc_data  _OBJC_CLASS_$__UITraitSystemVerticalBarHorizontalEdge
+0x1ee0247b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITraitVerticalBarAllowed
+0x1ef46f608  __AUTH,__objc_data  _OBJC_CLASS_$__UITraitVerticalBarSuppressed
+0x1ef4626e0  __AUTH,__objc_data  _OBJC_CLASS_$__UITraitWindowSceneActivationInteractionPolicy
+0x1ee02bd08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITraitWindowSceneInterfaceOrientationBehavior
+0x1ee019d08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITransformGestureRecognizer
+0x1ef444180  __AUTH,__objc_data  _OBJC_CLASS_$__UITransitionOverlayView
+0x1ee0222d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITypeSelectInteraction
+0x1ef432c00  __AUTH,__objc_data  _OBJC_CLASS_$__UITypeSelectItem
+0x1ef432bd8  __AUTH,__objc_data  _OBJC_CLASS_$__UITypeSelectItemResult
+0x1ef432bb0  __AUTH,__objc_data  _OBJC_CLASS_$__UITypeSelectResult
+0x1ee03dd50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UITypedStorage
+0x1ee032ef0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIUserInterfaceSizeClassResolver
+0x1ef457dd8  __AUTH,__objc_data  _OBJC_CLASS_$__UIValueCellContentView
+0x1ee0343b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIValueCellContentViewConfiguration
+0x1ee025fa0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIVariableGestureContextMenuInteraction
+0x1ee02b038  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIVelocityIntegrator
+0x1ee022d50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIVelocityIntegratorFilter
+0x1ef457d88  __AUTH,__objc_data  _OBJC_CLASS_$__UIVibrantSettings
+0x1ef46a910  __AUTH,__objc_data  _OBJC_CLASS_$__UIViewAlphaOverrideAssertion
+0x1ee026c90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIViewAnimationAttributes
+0x1ef432b88  __AUTH,__objc_data  _OBJC_CLASS_$__UIViewBridgeHelper
+0x1ee03a1c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIViewControllerOneToOneTransitionContext
+0x1ef45a420  __AUTH,__objc_data  _OBJC_CLASS_$__UIViewControllerTransition
+0x1ee03a1a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIViewControllerTransitionContext
+0x1ef432b60  __AUTH,__objc_data  _OBJC_CLASS_$__UIViewControllerTransitionManager
+0x1ef45a3f8  __AUTH,__objc_data  _OBJC_CLASS_$__UIViewControllerTransitionOptions
+0x1ef432b38  __AUTH,__objc_data  _OBJC_CLASS_$__UIViewGeometryObserverInteraction
+0x1ee02b998  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIViewGlass
+0x1ee023728  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIViewGlassGroup
+0x1ef432b10  __AUTH,__objc_data  _OBJC_CLASS_$__UIViewManagedContent
+0x1ee02b808  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIViewPowerLogStatistics
+0x1ef443f00  __AUTH,__objc_data  _OBJC_CLASS_$__UIViewPropertyAnimationDescription
+0x1ef443ed8  __AUTH,__objc_data  _OBJC_CLASS_$__UIViewPropertyAnimationUpdate
+0x1ee03c608  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIViewServiceSessionManager
+0x1ee020260  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIVisibilityPropagationInteraction
+0x1ee03d300  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIVisibilityPropagationView
+0x1ee0308f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIVisualEffectBackdropView
+0x1ef460f70  __AUTH,__objc_data  _OBJC_CLASS_$__UIVisualEffectConfig
+0x1ee0313e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIVisualEffectDescriptor
+0x1ee031fa0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIVisualEffectEnvironment
+0x1ee0313c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIVisualEffectFilterEntry
+0x1ef460f48  __AUTH,__objc_data  _OBJC_CLASS_$__UIVisualEffectLayerConfig
+0x1ee030da8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIVisualEffectSubview
+0x1ef45e1a8  __AUTH,__objc_data  _OBJC_CLASS_$__UIVisualEffectTintLayerConfig
+0x1ef45bd70  __AUTH,__objc_data  _OBJC_CLASS_$__UIVisualEffectVibrantLayerConfig
+0x1ee031f78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIVisualEffectViewBackdropCaptureGroup
+0x1ee02ad90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIVisualEffectViewEntry
+0x1ee02ddb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIVisualStyleRegistry
+0x1ef443c58  __AUTH,__objc_data  _OBJC_CLASS_$__UIWallpaperEffect
+0x1ef46bb30  __AUTH,__objc_data  _OBJC_CLASS_$__UIWebHighlightLongPressGestureRecognizer
+0x1ef457d38  __AUTH,__objc_data  _OBJC_CLASS_$__UIWebViewportHandler
+0x1ee03aa10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIWindowHostingSceneSafeAreaInsetsSettingsDiffAction
+0x1ef443aa0  __AUTH,__objc_data  _OBJC_CLASS_$__UIWindowSceneAccessibilityContrastSettingsDiffAction
+0x1ef453538  __AUTH,__objc_data  _OBJC_CLASS_$__UIWindowSceneActivationAction
+0x1ef453510  __AUTH,__objc_data  _OBJC_CLASS_$__UIWindowSceneActivationCleanupAction
+0x1ef443a50  __AUTH,__objc_data  _OBJC_CLASS_$__UIWindowSceneActivationConfiguration
+0x1ef443a00  __AUTH,__objc_data  _OBJC_CLASS_$__UIWindowSceneActivationInteraction
+0x1ef4534e8  __AUTH,__objc_data  _OBJC_CLASS_$__UIWindowSceneActivationPrewarmAction
+0x1ef4439d8  __AUTH,__objc_data  _OBJC_CLASS_$__UIWindowSceneActivationPrewarmActionResponse
+0x1ef4439b0  __AUTH,__objc_data  _OBJC_CLASS_$__UIWindowSceneActivationRequestOptions
+0x1ef432a98  __AUTH,__objc_data  _OBJC_CLASS_$__UIWindowSceneBackgroundPlacement
+0x1ee03a9c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIWindowSceneFBSSceneTransitionContextDrivenLifecycleSettingsDiffAction
+0x1ef432a70  __AUTH,__objc_data  _OBJC_CLASS_$__UIWindowSceneFullscreenPlacement
+0x1ef432a48  __AUTH,__objc_data  _OBJC_CLASS_$__UIWindowSceneOrderedPlacement
+0x1ef432a20  __AUTH,__objc_data  _OBJC_CLASS_$__UIWindowSceneOverlayPlacement
+0x1ef4329f8  __AUTH,__objc_data  _OBJC_CLASS_$__UIWindowScenePlacement
+0x1ef4329d0  __AUTH,__objc_data  _OBJC_CLASS_$__UIWindowScenePreservedPlacement
+0x1ef4329a8  __AUTH,__objc_data  _OBJC_CLASS_$__UIWindowSceneProminentPlacement
+0x1ef432980  __AUTH,__objc_data  _OBJC_CLASS_$__UIWindowSceneReplacePlacement
+0x1ef432958  __AUTH,__objc_data  _OBJC_CLASS_$__UIWindowSceneStandardPlacement
+0x1ee03a948  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIWindowSceneUserInterfaceStyleSettingsDiffAction
+0x1ef45a3a8  __AUTH,__objc_data  _OBJC_CLASS_$__UIWorkspaceSceneRequestOptionsFactory
+0x1ee031708  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIZoomEdgeFeedbackGenerator
+0x1ef45fcd8  __AUTH,__objc_data  _OBJC_CLASS_$__UIZoomEffect
+0x1ef469e20  __AUTH,__objc_data  _OBJC_CLASS_$__UIZoomTransitionController
+0x1ee01d930  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___UIDiffableDataSource
+0x1eb124a88  __DATA,__objc_ivar  OBJC_IVAR_$_UIAnimation._action
+0x1eb124a94  __DATA,__objc_ivar  OBJC_IVAR_$_UIAnimation._animationFlags
+0x1eb124a90  __DATA,__objc_ivar  OBJC_IVAR_$_UIAnimation._completion
+0x1eb124a8c  __DATA,__objc_ivar  OBJC_IVAR_$_UIAnimation._delegate
+0x1eb124a84  __DATA,__objc_ivar  OBJC_IVAR_$_UIAnimation._target
+0x1eb124a78  __DATA,__objc_ivar  OBJC_IVAR_$_UIAnimator._animations
+0x1eb124a7c  __DATA,__objc_ivar  OBJC_IVAR_$_UIAnimator._lastUpdateTime
+0x1eb132e28  __DATA,__objc_ivar  OBJC_IVAR_$_UIAutoRotatingWindow._interfaceOrientation
+0x1eb132e2c  __DATA,__objc_ivar  OBJC_IVAR_$_UIAutoRotatingWindow._unknownOrientation
+0x1eb1347b0  __DATA,__objc_ivar  OBJC_IVAR_$_UIAutoscroll.m_active
+0x1eb1347ac  __DATA,__objc_ivar  OBJC_IVAR_$_UIAutoscroll.m_count
+0x1eb1347a0  __DATA,__objc_ivar  OBJC_IVAR_$_UIAutoscroll.m_directions
+0x1eb134798  __DATA,__objc_ivar  OBJC_IVAR_$_UIAutoscroll.m_point
+0x1eb1347a4  __DATA,__objc_ivar  OBJC_IVAR_$_UIAutoscroll.m_repeatInterval
+0x1eb13479c  __DATA,__objc_ivar  OBJC_IVAR_$_UIAutoscroll.m_scrollContainer
+0x1eb134794  __DATA,__objc_ivar  OBJC_IVAR_$_UIAutoscroll.m_target
+0x1eb1347a8  __DATA,__objc_ivar  OBJC_IVAR_$_UIAutoscroll.m_timer
+0x1eb12bc84  __DATA,__objc_ivar  OBJC_IVAR_$_UIButtonConfigurationVisualProvider._backgroundView
+0x1eb12bc80  __DATA,__objc_ivar  OBJC_IVAR_$_UIButtonConfigurationVisualProvider._imageView
+0x1eb12b25c  __DATA,__objc_ivar  OBJC_IVAR_$_UIButtonLegacyVisualProvider._button
+0x1eb12d494  __DATA,__objc_ivar  OBJC_IVAR_$_UIDefaultKeyboardInput.m_traits
+0x1eb12cdfc  __DATA,__objc_ivar  OBJC_IVAR_$_UIDictationController._connectionWasAlreadyAliveForStatisticsLogging
+0x1eb12cdf0  __DATA,__objc_ivar  OBJC_IVAR_$_UIDictationController._dictationConnection
+0x1eb12ce04  __DATA,__objc_ivar  OBJC_IVAR_$_UIDictationController._language
+0x1eb12ce10  __DATA,__objc_ivar  OBJC_IVAR_$_UIDictationController._lastAnimationUpdateTimeStamp
+0x1eb12cdf4  __DATA,__objc_ivar  OBJC_IVAR_$_UIDictationController._preferences
+0x1eb12ce08  __DATA,__objc_ivar  OBJC_IVAR_$_UIDictationController._recievingResults
+0x1eb12cdf8  __DATA,__objc_ivar  OBJC_IVAR_$_UIDictationController._recordingLimitTimer
+0x1eb12ce0c  __DATA,__objc_ivar  OBJC_IVAR_$_UIDictationController._streamingAnimationActive
+0x1eb12ce00  __DATA,__objc_ivar  OBJC_IVAR_$_UIDictationController._streamingOperations
+0x1eb134f78  __DATA,__objc_ivar  OBJC_IVAR_$_UIDocumentPasswordView._label
+0x1eb134f7c  __DATA,__objc_ivar  OBJC_IVAR_$_UIDocumentPasswordView._passwordTextField
+0x1eb129b20  __DATA,__objc_ivar  OBJC_IVAR_$_UIEvent._buttonMask
+0x1eb129b0c  __DATA,__objc_ivar  OBJC_IVAR_$_UIEvent._gsEvent
+0x1eb129b14  __DATA,__objc_ivar  OBJC_IVAR_$_UIEvent._hasValidModifiers
+0x1eb129b10  __DATA,__objc_ivar  OBJC_IVAR_$_UIEvent._hidEvent
+0x1eb129b1c  __DATA,__objc_ivar  OBJC_IVAR_$_UIEvent._mzClickCount
+0x1eb129b18  __DATA,__objc_ivar  OBJC_IVAR_$_UIEvent._mzModifierFlags
+0x1eb124ab4  __DATA,__objc_ivar  OBJC_IVAR_$_UIFrameAnimation._endFrame
+0x1eb124ab8  __DATA,__objc_ivar  OBJC_IVAR_$_UIFrameAnimation._fieldsToChange
+0x1eb124ab0  __DATA,__objc_ivar  OBJC_IVAR_$_UIFrameAnimation._startFrame
+0x1eb12b460  __DATA,__objc_ivar  OBJC_IVAR_$_UIGradient._height
+0x1eb12b464  __DATA,__objc_ivar  OBJC_IVAR_$_UIGradient._shader
+0x1eb12b45c  __DATA,__objc_ivar  OBJC_IVAR_$_UIGradient._values
+0x1eb12b57c  __DATA,__objc_ivar  OBJC_IVAR_$_UIImageAsset._lock
+0x1eb12c554  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBCacheToken._components
+0x1eb12c560  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBCacheToken._emptyFields
+0x1eb12c558  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBCacheToken._name
+0x1eb12c55c  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBCacheToken._scale
+0x1eb12c564  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBCacheToken._transformationIdentifiers
+0x1eb12c670  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBGeometry.m_explicitlySpecified
+0x1eb12c65c  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBGeometry.m_h
+0x1eb12c674  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBGeometry.m_isTemplate
+0x1eb12c64c  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBGeometry.m_name
+0x1eb12c668  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBGeometry.m_paddingBottom
+0x1eb12c664  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBGeometry.m_paddingLeft
+0x1eb12c66c  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBGeometry.m_paddingRight
+0x1eb12c660  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBGeometry.m_paddingTop
+0x1eb12c658  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBGeometry.m_w
+0x1eb12c650  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBGeometry.m_x
+0x1eb12c654  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBGeometry.m_y
+0x1eb12d72c  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBInputBackdropView._innerCorners
+0x1eb12d71c  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBInputBackdropView._inputBackdropFullView
+0x1eb12d720  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBInputBackdropView._inputBackdropLeftView
+0x1eb12d724  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBInputBackdropView._inputBackdropRightView
+0x1eb12d730  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBInputBackdropView._isTransitioning
+0x1eb12d718  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBInputBackdropView._style
+0x1eb12d734  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBInputBackdropView._transitionGap
+0x1eb12d738  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBInputBackdropView._transitionLeftOffset
+0x1eb12d73c  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBInputBackdropView._transitionRightOffset
+0x1eb12c6a4  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBShape.m_concaveCorner
+0x1eb12c6a8  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBShape.m_concaveCornerOffset
+0x1eb12c69c  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBShape.m_frame
+0x1eb12c698  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBShape.m_geometry
+0x1eb12c6b4  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBShape.m_originalShape
+0x1eb12c6a0  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBShape.m_paddedFrame
+0x1eb12c6b0  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBShape.m_scaled
+0x1eb12c6ac  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBShape.m_uid
+0x1eb12c6d0  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBTree.cache
+0x1eb12c6d4  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBTree.layoutTag
+0x1eb12c6c4  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBTree.name
+0x1eb12c6c8  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBTree.properties
+0x1eb12c6cc  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBTree.subtrees
+0x1eb12c6c0  __DATA,__objc_ivar  OBJC_IVAR_$_UIKBTree.type
+0x1eb12d778  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboard.m_defaultTraits
+0x1eb12d790  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboard.m_disableTouchInput
+0x1eb12d788  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboard.m_focusGuides
+0x1eb12d760  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboard.m_hasExplicitOrientation
+0x1eb12d79c  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboard.m_idiom
+0x1eb12d768  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboard.m_minimized
+0x1eb12d764  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboard.m_orientation
+0x1eb12d77c  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboard.m_overrideTraits
+0x1eb12d76c  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboard.m_respondingToImplGeometryChange
+0x1eb12d780  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboard.m_snapshot
+0x1eb12d774  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboard.m_typingDisabled
+0x1eb12d78c  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboard.m_unfocusedFocusGuideOutsets
+0x1eb12d794  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboard.m_useLinearLayout
+0x1eb12d798  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboard.m_useRecentsAlert
+0x1eb12d8ec  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboardLayout._activeTouchUUID
+0x1eb12d8fc  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboardLayout._cursorLocation
+0x1eb12d8f8  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboardLayout._disableInteraction
+0x1eb12d8e4  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboardLayout._inputTraits
+0x1eb12d8e0  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboardLayout._screenTraits
+0x1eb12d8f0  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboardLayout._shiftKeyTouchUUID
+0x1eb12d8e8  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboardLayout._textEditingTraits
+0x1eb12d8dc  __DATA,__objc_ivar  OBJC_IVAR_$_UIKeyboardLayout._uncommittedTouchUUIDs
+0x1eb128520  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._dataSource
+0x1eb128524  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._delegate
+0x1eb12852c  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._editable
+0x1eb128530  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._editingView
+0x1eb128538  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._elapsedLabel
+0x1eb128578  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._fillImage
+0x1eb12855c  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._hitOffset
+0x1eb128574  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._innerShadowImage
+0x1eb128570  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._maskImage
+0x1eb128540  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._maxTrimmedLength
+0x1eb128508  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._maximumValue
+0x1eb128548  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._minTrimmedLength
+0x1eb128554  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._minimumValue
+0x1eb12853c  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._remainingLabel
+0x1eb12856c  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._shadowImage
+0x1eb128514  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._showTimeViews
+0x1eb128504  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._sliderFlags
+0x1eb128528  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._thumbView
+0x1eb128558  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._timeComponents
+0x1eb128560  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._touchLocationWhenTrackPressBegan
+0x1eb128550  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._trackRect
+0x1eb12851c  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._trackView
+0x1eb12854c  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._trimEndValue
+0x1eb128544  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._trimStartValue
+0x1eb12850c  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._value
+0x1eb128568  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._zoomAnimationDelay
+0x1eb128564  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._zoomAnimationDuration
+0x1eb128510  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubber._zoomDelay
+0x1eb1285a4  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._childThumbnailViews
+0x1eb1285b8  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._duration
+0x1eb128598  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._endValue
+0x1eb128584  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._maskContainerView
+0x1eb128588  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._overlayView
+0x1eb128594  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._startValue
+0x1eb1285b0  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._summaryThumbnailChildTimestamps
+0x1eb1285ac  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._summaryThumbnailTimestamps
+0x1eb1285a8  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._summaryThumbnailViews
+0x1eb12859c  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._thumbnailSize
+0x1eb1285a0  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._thumbnailStartXValues
+0x1eb128580  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._thumbnailViews
+0x1eb1285b4  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._timestamps
+0x1eb12858c  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._trackFlags
+0x1eb1285bc  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._unclampedZoomWidthDelta
+0x1eb128590  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._value
+0x1eb12857c  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._zoomAnimationDuration
+0x1eb1285c0  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._zoomOriginXDelta
+0x1eb1285c4  __DATA,__objc_ivar  OBJC_IVAR_$_UIMovieScrubberTrackView._zoomWidthDelta
+0x1eb1309cc  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotation._annotationController
+0x1eb130a10  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotation._annotationID
+0x1eb130a18  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotation._annotationView
+0x1eb1309d4  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotation._appearanceStream
+0x1eb1309c8  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotation._color
+0x1eb130a08  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotation._dictionary
+0x1eb130a20  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotation._drawingLayer
+0x1eb130a14  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotation._hidden
+0x1eb130a0c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotation._pdfContents
+0x1eb130a1c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotation._quadPoints
+0x1eb130a24  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotation._selection
+0x1eb130a7c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotationController._cachedMarginNoteSize
+0x1eb130a68  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotationController._currentAnnotation
+0x1eb130a78  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotationController._delegate
+0x1eb130a74  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotationController._drawingSurface
+0x1eb130a6c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotationController._initialRange
+0x1eb130a5c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotationController._lock
+0x1eb130a64  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotationController._moving
+0x1eb130a58  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotationController._pageView
+0x1eb130a60  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotationController._startPoint
+0x1eb130a70  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFAnnotationController._tracking
+0x1eb130940  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFDocument._cachedHeight
+0x1eb13093c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFDocument._cachedWidth
+0x1eb130934  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFDocument._cgDocument
+0x1eb130944  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFDocument._documentID
+0x1eb130948  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFDocument._documentName
+0x1eb130950  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFDocument._imageCacheCount
+0x1eb130960  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFDocument._imageCacheLock
+0x1eb130954  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFDocument._imageCacheLookAhead
+0x1eb130958  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFDocument._imageCacheResolution
+0x1eb13095c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFDocument._lock
+0x1eb130938  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFDocument._numberOfPages
+0x1eb13094c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFDocument._pageImageCache
+0x1eb130964  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFDocument._thumbnailCache
+0x1eb130968  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFDocument._thumbnailLock
+0x1eb1309d0  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFHighlightAnnotation._highLightColor
+0x1eb13099c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPage._cgPage
+0x1eb1309a8  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPage._lock
+0x1eb1309a0  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPage._pageNumber
+0x1eb1309b4  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPage._selection
+0x1eb1309b0  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPage._stringInReadingOrder
+0x1eb130c40  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._activityIndicator
+0x1eb130c90  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._allowHighlighting
+0x1eb130c1c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._allowSelection
+0x1eb130c08  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._animateSetFrame
+0x1eb130c38  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._annotationController
+0x1eb130c68  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._backgroundImage
+0x1eb130c74  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._backgroundIsFullResolution
+0x1eb130c6c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._backgroundIsScheduled
+0x1eb130c70  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._backgroundScheduleCount
+0x1eb130c54  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._backingLayer
+0x1eb130c3c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._backingLayerColor
+0x1eb130c7c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._boundsChanged
+0x1eb130c78  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._cachedScale
+0x1eb130c48  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._contentDelegate
+0x1eb130c44  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._contentLayer
+0x1eb130c80  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._cropBox
+0x1eb130c18  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._delegate
+0x1eb130c5c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._document
+0x1eb130c58  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._effectsLayer
+0x1eb130c30  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._enableLightMemoryFootprint
+0x1eb130c28  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._highLightColor
+0x1eb130c64  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._highlights
+0x1eb130c00  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._lock
+0x1eb130c14  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._margin
+0x1eb130c50  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._page
+0x1eb130c60  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._pageIndex
+0x1eb130c88  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._pageToViewTransform
+0x1eb130c04  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._scalePageOnDraw
+0x1eb130c10  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._searchHighlightController
+0x1eb130ca0  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._searchHiglightLayers
+0x1eb130c4c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._selectionController
+0x1eb130c34  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._showActivityIndicator
+0x1eb130c0c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._touchHandler
+0x1eb130c24  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._useBackingLayer
+0x1eb130c2c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._useTiledContent
+0x1eb130c8c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView._viewToPageTransform
+0x1eb130c84  __DATA,__objc_ivar  OBJC_IVAR_$_UIPDFPageView.zoomRect
+0x1eb127a00  __DATA,__objc_ivar  OBJC_IVAR_$_UIPageController._delegate
+0x1eb127a14  __DATA,__objc_ivar  OBJC_IVAR_$_UIPageController._notificationState
+0x1eb127a18  __DATA,__objc_ivar  OBJC_IVAR_$_UIPageController._pageControl
+0x1eb127a04  __DATA,__objc_ivar  OBJC_IVAR_$_UIPageController._pageControllerFlags
+0x1eb127a0c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPageController._pageCount
+0x1eb127a08  __DATA,__objc_ivar  OBJC_IVAR_$_UIPageController._pageSpacing
+0x1eb1279f8  __DATA,__objc_ivar  OBJC_IVAR_$_UIPageController._scrollView
+0x1eb1279f4  __DATA,__objc_ivar  OBJC_IVAR_$_UIPageController._viewControllers
+0x1eb127a10  __DATA,__objc_ivar  OBJC_IVAR_$_UIPageController._visibleIndex
+0x1eb1279fc  __DATA,__objc_ivar  OBJC_IVAR_$_UIPageController._wrapperViews
+0x1eb1279f0  __DATA,__objc_ivar  OBJC_IVAR_$_UIPageControllerScrollView._pageController
+0x1eb12db38  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._animationFencingEnabled
+0x1eb12daf4  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._automaticAppearanceEnabled
+0x1eb12daf8  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._automaticAppearanceEnabledInternal
+0x1eb12db28  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._disableAnimationsCount
+0x1eb12db10  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._displayLink
+0x1eb12daf0  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._hostView
+0x1eb12dafc  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._ignoredReloads
+0x1eb12db18  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._initialTransform
+0x1eb12db30  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._inputViewSet
+0x1eb12db3c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._interfaceAutorotationDisabled
+0x1eb12db04  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._isTranslating
+0x1eb12db08  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._isUndocked
+0x1eb12db24  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._lastKnownIAVFrame
+0x1eb12db20  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._lastKnownIVFrame
+0x1eb12db00  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._nextAutomaticOrderInDirection
+0x1eb12db34  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._responder
+0x1eb12db0c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._splitLockState
+0x1eb12db2c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._targetStateStack
+0x1eb12db14  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._targetTransform
+0x1eb12db1c  __DATA,__objc_ivar  OBJC_IVAR_$_UIPeripheralHost._velocity
+0x1eb12fbdc  __DATA,__objc_ivar  OBJC_IVAR_$_UIPickerContentView._checkView
+0x1eb12fbd8  __DATA,__objc_ivar  OBJC_IVAR_$_UIPickerContentView._pickerContentViewFlags
+0x1eb12fbe0  __DATA,__objc_ivar  OBJC_IVAR_$_UIPickerContentView._titleLabel
+0x1eb1335b4  __DATA,__objc_ivar  OBJC_IVAR_$_UIProgressHUD._doneView
+0x1eb1335b8  __DATA,__objc_ivar  OBJC_IVAR_$_UIProgressHUD._parentWindow
+0x1eb1335b0  __DATA,__objc_ivar  OBJC_IVAR_$_UIProgressHUD._progressHUDFlags
+0x1eb1335a8  __DATA,__objc_ivar  OBJC_IVAR_$_UIProgressHUD._progressIndicator
+0x1eb1335ac  __DATA,__objc_ivar  OBJC_IVAR_$_UIProgressHUD._progressMessage
+0x1eb124e64  __DATA,__objc_ivar  OBJC_IVAR_$_UISceneAsynchronousRenderingOptions._opaque
+0x1eb124e60  __DATA,__objc_ivar  OBJC_IVAR_$_UISceneAsynchronousRenderingOptions._renderMaxAPL
+0x1eb124e5c  __DATA,__objc_ivar  OBJC_IVAR_$_UISceneAsynchronousRenderingOptions._renderPeriod
+0x1eb124e58  __DATA,__objc_ivar  OBJC_IVAR_$_UISceneAsynchronousRenderingOptions._renderTimes
+0x1eb133644  __DATA,__objc_ivar  OBJC_IVAR_$_UISceneConfiguration._delegateClass
+0x1eb13363c  __DATA,__objc_ivar  OBJC_IVAR_$_UISceneConfiguration._role
+0x1eb133640  __DATA,__objc_ivar  OBJC_IVAR_$_UISceneConfiguration._sceneClass
+0x1eb133648  __DATA,__objc_ivar  OBJC_IVAR_$_UISceneConfiguration._storyboard
+0x1eb12a5c4  __DATA,__objc_ivar  OBJC_IVAR_$_UISceneLayerPresentationContext._alpha
+0x1eb12a5cc  __DATA,__objc_ivar  OBJC_IVAR_$_UISceneLayerPresentationContext._clippingDisabled
+0x1eb12a5c8  __DATA,__objc_ivar  OBJC_IVAR_$_UISceneLayerPresentationContext._hidden
+0x1eb12a5c0  __DATA,__objc_ivar  OBJC_IVAR_$_UISceneLayerPresentationContext._transformer
+0x1eb12a634  __DATA,__objc_ivar  OBJC_IVAR_$_UIScenePresentationContext._defaultPresentationContext
+0x1eb12a630  __DATA,__objc_ivar  OBJC_IVAR_$_UIScenePresentationContext._settings
+0x1eb12a638  __DATA,__objc_ivar  OBJC_IVAR_$_UIScenePresentationContext._transformer
+0x1eb12c628  __DATA,__objc_ivar  OBJC_IVAR_$_UISceneWindowLayerPresentationContext._flattenMode
+0x1eb12c620  __DATA,__objc_ivar  OBJC_IVAR_$_UISceneWindowLayerPresentationContext.fullyOccluded
+0x1eb12c61c  __DATA,__objc_ivar  OBJC_IVAR_$_UISceneWindowLayerPresentationContext.ignoreAnimations
+0x1eb12c624  __DATA,__objc_ivar  OBJC_IVAR_$_UISceneWindowLayerPresentationContext.postCommitDuration
+0x1eb124ac0  __DATA,__objc_ivar  OBJC_IVAR_$_UIScrollAnimation._endPoint
+0x1eb124abc  __DATA,__objc_ivar  OBJC_IVAR_$_UIScrollAnimation._startPoint
+0x1eb127bc4  __DATA,__objc_ivar  OBJC_IVAR_$_UISearchResultsTableView._offsetForNoResultsMessage
+0x1eb127bcc  __DATA,__objc_ivar  OBJC_IVAR_$_UISearchResultsTableView._topShadowView
+0x1eb127e4c  __DATA,__objc_ivar  OBJC_IVAR_$_UISplitViewControllerPanelImpl._perColumnViewControllers
+0x1eb1314e8  __DATA,__objc_ivar  OBJC_IVAR_$_UIStatusBarAnimationParameters._animationFactory
+0x1eb1314e4  __DATA,__objc_ivar  OBJC_IVAR_$_UIStatusBarAnimationParameters._curve
+0x1eb1314e0  __DATA,__objc_ivar  OBJC_IVAR_$_UIStatusBarAnimationParameters._delay
+0x1eb1314dc  __DATA,__objc_ivar  OBJC_IVAR_$_UIStatusBarAnimationParameters._duration
+0x1eb1314ec  __DATA,__objc_ivar  OBJC_IVAR_$_UIStatusBarAnimationParameters._skipFencing
+0x1eb1314f8  __DATA,__objc_ivar  OBJC_IVAR_$_UIStatusBarHideAnimationParameters._additionalSlideHeight
+0x1eb1314f4  __DATA,__objc_ivar  OBJC_IVAR_$_UIStatusBarHideAnimationParameters._hideAnimation
+0x1eb131500  __DATA,__objc_ivar  OBJC_IVAR_$_UIStatusBarOrientationAnimationParameters._orientationAnimation
+0x1eb131ce8  __DATA,__objc_ivar  OBJC_IVAR_$_UIStatusBarServer._source
+0x1eb131ce4  __DATA,__objc_ivar  OBJC_IVAR_$_UIStatusBarServer._statusBar
+0x1eb1314fc  __DATA,__objc_ivar  OBJC_IVAR_$_UIStatusBarStyleAnimationParameters._styleAnimation
+0x1eb131638  __DATA,__objc_ivar  OBJC_IVAR_$_UIStatusBarWindow._orientation
+0x1eb13163c  __DATA,__objc_ivar  OBJC_IVAR_$_UIStatusBarWindow._statusBar
+0x1eb1319e0  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewCellEditControl._backgroundView
+0x1eb1319cc  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewCellEditControl._cell
+0x1eb1319dc  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewCellEditControl._focalHeight
+0x1eb1319d8  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewCellEditControl._focalY
+0x1eb1319d4  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewCellEditControl._imageView
+0x1eb1319ec  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewCellEditControl._reserved
+0x1eb1319c8  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewCellEditControl._rotated
+0x1eb1319e8  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewCellEditControl._rotating
+0x1eb1319e4  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewCellEditControl._shadowView
+0x1eb1319d0  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewCellEditControl._style
+0x1eb131f7c  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewIndex._bottomPadding
+0x1eb131f74  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewIndex._cachedSize
+0x1eb131f78  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewIndex._cachedSizeToFit
+0x1eb131f6c  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewIndex._entries
+0x1eb131f88  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewIndex._font
+0x1eb131f90  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewIndex._indexBackgroundColor
+0x1eb131f9c  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewIndex._indexColor
+0x1eb131f8c  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewIndex._indexTrackingBackgroundColor
+0x1eb131f98  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewIndex._pastBottom
+0x1eb131f94  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewIndex._pastTop
+0x1eb131f70  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewIndex._selectedSection
+0x1eb131f68  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewIndex._titles
+0x1eb131f80  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewIndex._topPadding
+0x1eb131fa0  __DATA,__objc_ivar  OBJC_IVAR_$_UITableViewIndex._verticalTextHeightEstimate
+0x1eb132798  __DATA,__objc_ivar  OBJC_IVAR_$_UITapAndAHalfRecognizer._activeTouches
+0x1eb13279c  __DATA,__objc_ivar  OBJC_IVAR_$_UITapAndAHalfRecognizer._allowableMovement
+0x1eb1327a4  __DATA,__objc_ivar  OBJC_IVAR_$_UITapAndAHalfRecognizer._currentNumberOfTaps
+0x1eb1327a0  __DATA,__objc_ivar  OBJC_IVAR_$_UITapAndAHalfRecognizer._minimumFinalPressDuration
+0x1eb132794  __DATA,__objc_ivar  OBJC_IVAR_$_UITapAndAHalfRecognizer._numberOfFullTaps
+0x1eb1327ac  __DATA,__objc_ivar  OBJC_IVAR_$_UITapAndAHalfRecognizer._startPoint
+0x1eb1327a8  __DATA,__objc_ivar  OBJC_IVAR_$_UITapAndAHalfRecognizer._tapTimer
+0x1eb1327b0  __DATA,__objc_ivar  OBJC_IVAR_$_UITapAndAHalfRecognizer._touch
+0x1eb132e00  __DATA,__objc_ivar  OBJC_IVAR_$_UITextEffectsWindow.__intendedWindowScene
+0x1eb132e18  __DATA,__objc_ivar  OBJC_IVAR_$_UITextEffectsWindow._activeEffectsCount
+0x1eb132e1c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextEffectsWindow._defaultWindowLevel
+0x1eb132e14  __DATA,__objc_ivar  OBJC_IVAR_$_UITextEffectsWindow._hostedViewOrigin
+0x1eb132e20  __DATA,__objc_ivar  OBJC_IVAR_$_UITextEffectsWindow._inDealloc
+0x1eb132e0c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextEffectsWindow._isForViewService
+0x1eb132e08  __DATA,__objc_ivar  OBJC_IVAR_$_UITextEffectsWindow._isFullscreen
+0x1eb132e04  __DATA,__objc_ivar  OBJC_IVAR_$_UITextEffectsWindow._perSceneOptions
+0x1eb1333f4  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.acceptsDictationSearchResults
+0x1eb1333f0  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.acceptsEmoji
+0x1eb13341c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.acceptsFloatingKeyboard
+0x1eb133428  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.acceptsSplitKeyboard
+0x1eb1333b8  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.allowedWritingToolsResultOptions
+0x1eb13337c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.autocapitalizationType
+0x1eb13344c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.autocorrectionContext
+0x1eb133380  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.autocorrectionType
+0x1eb1333ec  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.contentsIsSingleValue
+0x1eb133484  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.conversationContext
+0x1eb133444  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.deferBecomingResponder
+0x1eb13339c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.devicePasscodeEntry
+0x1eb13347c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.disableHandwritingKeyboard
+0x1eb133458  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.disableInputBars
+0x1eb133454  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.disablePrediction
+0x1eb13342c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.displaySecureTextUsingPlainText
+0x1eb133434  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.emptyContentReturnKeyType
+0x1eb133394  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.enablesReturnKeyAutomatically
+0x1eb133448  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.enablesReturnKeyOnNonWhiteSpaceContent
+0x1eb133424  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.floatingKeyboardEdgeInsets
+0x1eb133410  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.forceDefaultDictationInfo
+0x1eb133404  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.forceDisableDictation
+0x1eb133400  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.forceEnableDictation
+0x1eb133420  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.forceFloatingKeyboard
+0x1eb13340c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.forceSpellingDictation
+0x1eb133470  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.inputContextHistory
+0x1eb1333c0  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.insertionPointColor
+0x1eb1333d8  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.insertionPointWidth
+0x1eb133480  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.intelligenceCursorEnabled
+0x1eb13345c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.isCarPlayIdiom
+0x1eb1333e8  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.isSingleLineDocument
+0x1eb13338c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.keyboardAppearance
+0x1eb133388  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.keyboardType
+0x1eb133430  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.learnsCorrections
+0x1eb1333a4  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.passwordRules
+0x1eb133408  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.preferKeyboardInput
+0x1eb133414  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.preferOnlineDictation
+0x1eb133460  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.preferredInputViewHeight
+0x1eb133464  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.recentInputIdentifier
+0x1eb133450  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.responseContext
+0x1eb133418  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.returnKeyGoesToNextResponder
+0x1eb133390  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.returnKeyType
+0x1eb133398  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.secureTextEntry
+0x1eb1333c4  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.selectionBarColor
+0x1eb1333cc  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.selectionDragDotImage
+0x1eb1333c8  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.selectionHighlightColor
+0x1eb133438  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.shortcutConversionType
+0x1eb1333fc  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.showDictationButton
+0x1eb1333b0  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.smartDashesType
+0x1eb1333a8  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.smartInsertDeleteType
+0x1eb1333ac  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.smartQuotesType
+0x1eb133384  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.spellCheckingType
+0x1eb133474  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.supplementalLexicon
+0x1eb133478  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.supplementalLexiconAmbiguousItemIcon
+0x1eb13343c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.suppressReturnKeyStyling
+0x1eb1333a0  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.textContentType
+0x1eb1333dc  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.textLoupeVisibility
+0x1eb13346c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.textScriptType
+0x1eb1333e0  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.textSelectionBehavior
+0x1eb1333e4  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.textSuggestionDelegate
+0x1eb1333bc  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.textTrimmingSet
+0x1eb1333d4  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.underlineColorForSpelling
+0x1eb1333d0  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.underlineColorForTextAlternatives
+0x1eb1333f8  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.useAutomaticEndpointing
+0x1eb133440  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.useInterfaceLanguageForLocalization
+0x1eb133468  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.validTextRange
+0x1eb1333b4  __DATA,__objc_ivar  OBJC_IVAR_$_UITextInputTraits.writingToolsBehavior
+0x1eb132c48  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_activated
+0x1eb132c68  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_caretAnimating
+0x1eb132c6c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_caretBlinks
+0x1eb132c7c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_caretShowingNow
+0x1eb132c60  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_caretView
+0x1eb132c80  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_caretVisible
+0x1eb132c3c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_deferSelectionCommands
+0x1eb132c58  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_delayShowingCommands
+0x1eb132c8c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_dictationReplacementsMode
+0x1eb132c5c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_floatingCaretView
+0x1eb132c84  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_ghostApperarance
+0x1eb132c34  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_interactionAssistant
+0x1eb132c38  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_observer
+0x1eb132c4c  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_rangeView
+0x1eb132c44  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_replacements
+0x1eb132c40  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_selection
+0x1eb132c70  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_shouldEmphasizeNextSelectionRects
+0x1eb132c54  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_showingCommandsCounter
+0x1eb132c78  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_visible
+0x1eb132c50  __DATA,__objc_ivar  OBJC_IVAR_$_UITextSelectionView.m_wasShowingCommands
+0x1eb125784  __DATA,__objc_ivar  OBJC_IVAR_$_UIToolbarButton._appearanceStorage
+0x1eb12579c  __DATA,__objc_ivar  OBJC_IVAR_$_UIToolbarButton._barHeight
+0x1eb12576c  __DATA,__objc_ivar  OBJC_IVAR_$_UIToolbarButton._barStyle
+0x1eb1257a4  __DATA,__objc_ivar  OBJC_IVAR_$_UIToolbarButton._bezel
+0x1eb125768  __DATA,__objc_ivar  OBJC_IVAR_$_UIToolbarButton._glowAdjust
+0x1eb125788  __DATA,__objc_ivar  OBJC_IVAR_$_UIToolbarButton._hitRect
+0x1eb125774  __DATA,__objc_ivar  OBJC_IVAR_$_UIToolbarButton._info
+0x1eb125780  __DATA,__objc_ivar  OBJC_IVAR_$_UIToolbarButton._infoInsets
+0x1eb125760  __DATA,__objc_ivar  OBJC_IVAR_$_UIToolbarButton._isInTopBar
+0x1eb125778  __DATA,__objc_ivar  OBJC_IVAR_$_UIToolbarButton._label
+0x1eb12577c  __DATA,__objc_ivar  OBJC_IVAR_$_UIToolbarButton._labelHeight
+0x1eb125798  __DATA,__objc_ivar  OBJC_IVAR_$_UIToolbarButton._maximumWidth
+0x1eb125794  __DATA,__objc_ivar  OBJC_IVAR_$_UIToolbarButton._minimumWidth
+0x1eb12578c  __DATA,__objc_ivar  OBJC_IVAR_$_UIToolbarButton._onState
+0x1eb125770  __DATA,__objc_ivar  OBJC_IVAR_$_UIToolbarButton._style
+0x1eb125764  __DATA,__objc_ivar  OBJC_IVAR_$_UIToolbarButton._toolbarTintColor
+0x1eb12a590  __DATA,__objc_ivar  OBJC_IVAR_$_UITransform._transform
+0x1eb12a5a0  __DATA,__objc_ivar  OBJC_IVAR_$_UITransformer._transformReasonAssociations
+0x1eb12a59c  __DATA,__objc_ivar  OBJC_IVAR_$_UITransformer._transforms
+0x1eb1349bc  __DATA,__objc_ivar  OBJC_IVAR_$_UITransitionView._delegate
+0x1eb1349b8  __DATA,__objc_ivar  OBJC_IVAR_$_UITransitionView._firstResponderToRemember
+0x1eb1349b0  __DATA,__objc_ivar  OBJC_IVAR_$_UITransitionView._fromView
+0x1eb1349c0  __DATA,__objc_ivar  OBJC_IVAR_$_UITransitionView._frozenSubviews
+0x1eb1349c4  __DATA,__objc_ivar  OBJC_IVAR_$_UITransitionView._originalWindow
+0x1eb1349b4  __DATA,__objc_ivar  OBJC_IVAR_$_UITransitionView._toView
+0x1eb1349a8  __DATA,__objc_ivar  OBJC_IVAR_$_UITransitionView._transitionViewFlags
+0x1eb134b2c  __DATA,__objc_ivar  OBJC_IVAR_$_UIView._boundsHeightVariable
+0x1eb134b28  __DATA,__objc_ivar  OBJC_IVAR_$_UIView._boundsWidthVariable
+0x1eb134b1c  __DATA,__objc_ivar  OBJC_IVAR_$_UIView._layer
+0x1eb134b30  __DATA,__objc_ivar  OBJC_IVAR_$_UIView._minXVariable
+0x1eb134b34  __DATA,__objc_ivar  OBJC_IVAR_$_UIView._minYVariable
+0x1eb134b20  __DATA,__objc_ivar  OBJC_IVAR_$_UIView._viewBackingAux
+0x1eb134a8c  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._addedCompletions
+0x1eb134a9c  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._allowUserInteraction
+0x1eb134aa0  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._allowUserInteractionToCutOffEndOfAnimation
+0x1eb134aa4  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._allowsHitTesting
+0x1eb134a88  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._alongsideAnimations
+0x1eb134a98  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._animationDidStopForced
+0x1eb134a94  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._animationDidStopSent
+0x1eb134a78  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._animationFactory
+0x1eb134a80  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._animationFactoryMakesPerAnimationCustomCurves
+0x1eb1349fc  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._animationID
+0x1eb134a58  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._autoreverses
+0x1eb134aa8  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._belongsToTrackingAnimator
+0x1eb134a54  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._cacheTransition
+0x1eb134a6c  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._completionCallbacksDisabledOnPop
+0x1eb134a00  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._context
+0x1eb134a20  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._curve
+0x1eb134a7c  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._customCurve
+0x1eb134a0c  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._delay
+0x1eb134a04  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._delegate
+0x1eb134a48  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._didEndCount
+0x1eb134a44  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._didEndSelector
+0x1eb134a84  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._disallowAdditiveAnimations
+0x1eb134a68  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._disallowCaptureWithinPropertyAnimator
+0x1eb134aac  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._disallowInheritance
+0x1eb134a08  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._duration
+0x1eb134a34  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._filter
+0x1eb134a3c  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._filterValue
+0x1eb134a38  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._filterView
+0x1eb134ab4  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._finishedPosition
+0x1eb134a90  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._flushUpdates
+0x1eb134a10  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._frameInterval
+0x1eb134a60  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._hasOuterAnimator
+0x1eb134a64  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._hasOuterTrackingAnimator
+0x1eb134a5c  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._layoutSubviews
+0x1eb1349f8  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._nextState
+0x1eb134a14  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._preferredFrameRateRange
+0x1eb134ac4  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._propertyAnimator
+0x1eb134a24  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._repeatCount
+0x1eb134ab8  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._retainedSelf
+0x1eb134a1c  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._start
+0x1eb134a70  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._trackedAnimations
+0x1eb134a28  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._transition
+0x1eb134a30  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._transitionOptions
+0x1eb134a2c  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._transitionView
+0x1eb134a18  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._updateReason
+0x1eb134ab0  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._useBackingOutermostLayerForTransition
+0x1eb134a50  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._useCurrentLayerState
+0x1eb134a74  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._uuid
+0x1eb134ac0  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._viewToDeferredAnimationsMap
+0x1eb134abc  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._viewsPendingConstraintBasedAnimation
+0x1eb134a40  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._willStartSelector
+0x1eb134a4c  __DATA,__objc_ivar  OBJC_IVAR_$_UIViewAnimationState._willStartSent
+0x1eb134fe4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._accessory
+0x1eb134fa4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._accessoryEnabled
+0x1eb134fc0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._activeHighlighters
+0x1eb135018  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._addressViewBounds
+0x1eb135014  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._allowDOMFocusRedirects
+0x1eb134ffc  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._allowsLinkPreview
+0x1eb135020  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._allowsPictureInPictureVideo
+0x1eb134ff4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._alwaysDispatchesScrollEvents
+0x1eb134fb8  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._assistedNodeStartingFocusRedirects
+0x1eb13501c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._audioSessionCategoryOverride
+0x1eb134fdc  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._currentAssistedNode
+0x1eb134fb4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._deferredTouchEvents
+0x1eb13500c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._dispatchedTouchEvents
+0x1eb134fac  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._editingDelegateForEverythingExceptForms
+0x1eb134fbc  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._focusPreservingTokens
+0x1eb134fe0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._forceInputView
+0x1eb134fa8  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._formDelegate
+0x1eb135000  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._formIsAutoFilling
+0x1eb135004  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._hasEditedTextField
+0x1eb134fe8  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._input
+0x1eb134fec  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._inputViewBounds
+0x1eb135008  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._inputViewObeysDOMFocus
+0x1eb134ff0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._lastAdjustmentForScroller
+0x1eb134fcc  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._overflowScrollViews
+0x1eb134fc8  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._overflowScrollViewsPendingDeletion
+0x1eb134fc4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._overflowScrollViewsPendingInsertion
+0x1eb135010  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._pendingGeometryChangeAfterOverflowScroll
+0x1eb134fd4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._pendingOverflowDataLock
+0x1eb134fd0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._pendingOverflowScrolls
+0x1eb134fb0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebBrowserView._webTouchEventsGestureRecognizer
+0x1eb13506c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.applicationBundleIdentifier
+0x1eb135078  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.bundleVersion
+0x1eb135080  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.classicMode
+0x1eb13505c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.currentIconIndex
+0x1eb1350ac  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.delegate
+0x1eb13507c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.fullScreen
+0x1eb13509c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.iconImage
+0x1eb13508c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.iconIsPrecomposed
+0x1eb135090  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.iconIsPrerendered
+0x1eb135088  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.iconIsScreenShotBased
+0x1eb135058  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.icons
+0x1eb135050  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.identifier
+0x1eb1350a8  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.initialLaunchImage
+0x1eb135074  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.manifestId
+0x1eb135054  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.pageURL
+0x1eb135070  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.placeholderBundleIdentifier
+0x1eb135084  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.removalDisallowed
+0x1eb1350a0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.startupImage
+0x1eb135060  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.startupImageURL
+0x1eb1350a4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.startupLandscapeImage
+0x1eb135064  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.startupLandscapeImageURL
+0x1eb135098  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.statusBarStyle
+0x1eb135094  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.supportedOrientations
+0x1eb135068  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClip.title
+0x1eb135034  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClipIcon._bestSize
+0x1eb13502c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClipIcon._precomposed
+0x1eb135030  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClipIcon._siteWide
+0x1eb135038  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebClipIcon._url
+0x1eb135200  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._additionalSubviews
+0x1eb135234  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._alwaysConstrainsScale
+0x1eb135238  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._autoresizes
+0x1eb1351f0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._autoscroll
+0x1eb13528c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._avoidFixedPositionUpdateViaDidScroll
+0x1eb135354  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._caretInsets
+0x1eb1351fc  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._contentLayersHostingLayer
+0x1eb13535c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._currentDragBoundingRect
+0x1eb1352e8  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._currentDragCaretRect
+0x1eb1351b0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._dataDetectorTypes
+0x1eb1351bc  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._delegate
+0x1eb135364  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._didCreateDropPreview
+0x1eb135360  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._didEndDropSession
+0x1eb135210  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._didFirstVisuallyNonEmptyLayout
+0x1eb1351a8  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._documentScale
+0x1eb135240  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._documentType
+0x1eb1351dc  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._doubleTapGestureRecognizer
+0x1eb135228  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._doubleTapRect
+0x1eb13525c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._doubleTapRectIsReplaced
+0x1eb135304  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._doubleTapStartPosition
+0x1eb135308  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._doubleTapStartTime
+0x1eb135208  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._fileUploadPanel
+0x1eb13529c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._fixedLayoutOriginRoundingDelta
+0x1eb1352a0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._fixedLayoutSizeRoundingDelta
+0x1eb1351f8  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._flattenedRotatingContentLayer
+0x1eb135348  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._geolocationDialogAllowed
+0x1eb135338  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._gesturesDisabled
+0x1eb135230  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._hasCustomScale
+0x1eb135214  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._hasDrawnTiles
+0x1eb135280  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._hasScrollPoint
+0x1eb1351e4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._highlightLongPressGestureRecognizer
+0x1eb1352c0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._ignoresFocusEventFromFirstResponderChange
+0x1eb135290  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._ignoresFocusingMouse
+0x1eb135294  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._ignoresKeyEvents
+0x1eb135254  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._ignoresViewportOverflowWhenAutoresizing
+0x1eb1352e0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._inputDelegate
+0x1eb1351b8  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._inspectorSearchingForNode
+0x1eb1351ac  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._interaction
+0x1eb1352a4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._isPerformingDrop
+0x1eb135220  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._isSettingRedrawFrame
+0x1eb1352cc  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._isShowingFullScreenPlugIn
+0x1eb135274  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._loadInProgress
+0x1eb135218  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._loadsSynchronously
+0x1eb1351e8  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._longPressGestureRecognizer
+0x1eb135224  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._mainDocumentDoubleTapRect
+0x1eb135344  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._mouseDown
+0x1eb135298  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._mouseDownCount
+0x1eb13530c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._mouseDownPoint
+0x1eb135310  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._mouseDownTime
+0x1eb13533c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._mouseDragged
+0x1eb135340  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._mouseReentrancyGuard
+0x1eb135268  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._needsScrollNotifications
+0x1eb1352a8  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._orientation
+0x1eb135278  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._pageIsLoadedFromPageCache
+0x1eb13523c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._pageNeedsReset
+0x1eb13531c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._panGestureWasEnabled
+0x1eb135258  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._pendingSize
+0x1eb135320  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._pinchGestureWasEnabled
+0x1eb13520c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._playbackTargetPicker
+0x1eb1351f4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._plugInViews
+0x1eb135314  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._previewGestureRecognizer
+0x1eb135324  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._previewItemController
+0x1eb135318  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._previewSecondaryGestureRecognizer
+0x1eb13527c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._previousDocumentScale
+0x1eb135270  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._previousScrollWasScrollToTop
+0x1eb135328  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._printModeCount
+0x1eb1351c4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._rangeToRestoreAfterDictation
+0x1eb135334  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._scalesToFit
+0x1eb1351b4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._scribbleInteraction
+0x1eb135288  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._scrollPoint
+0x1eb1352dc  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._selectionAffinity
+0x1eb13534c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._sheetsCount
+0x1eb1351a0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._shouldCloseWebViewAtDealloc
+0x1eb135260  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._shouldIgnoreCustomViewport
+0x1eb1352b0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._shouldOnlyRecognizeGesturesOnActiveElements
+0x1eb1351c8  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._shouldRemoveUserStyleSheet
+0x1eb135284  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._shouldRestoreScrollPosition
+0x1eb135350  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._shouldSendWillShowInteractionHighlight
+0x1eb1351d8  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._singleTapGestureRecognizer
+0x1eb13524c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._sizeUpdateOccurredWhileSuspended
+0x1eb135248  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._sizeUpdatesSuspended
+0x1eb1352b4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._standaloneEditableView
+0x1eb1352b8  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._standaloneEditingElement
+0x1eb1352ac  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._subviewCachesNeedUpdate
+0x1eb1351d0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._textChecker
+0x1eb135358  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._textDragCaretView
+0x1eb1352c8  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._textPlaceholder
+0x1eb1351c0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._textPlaceholderRemovalObserver
+0x1eb1351cc  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._textSelectionAssistant
+0x1eb135300  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._textSuggestionDelegate
+0x1eb135204  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._traits
+0x1eb1351e0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._twoFingerDoubleTapGestureRecognizer
+0x1eb1351ec  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._twoFingerPanGestureRecognizer
+0x1eb1352c4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._uiwdvIsResigningFirstResponder
+0x1eb1351d4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._undoManager
+0x1eb13522c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._updatesScrollView
+0x1eb135250  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._updatingSize
+0x1eb13526c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._usingMinimalTilesDuringLoading
+0x1eb1351a4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._viewportHandler
+0x1eb135330  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._webCoreNeedsDraw
+0x1eb13532c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._webCoreNeedsSetNeedsDisplay
+0x1eb13519c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._webView
+0x1eb1352bc  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView._widgetEditingView
+0x1eb13521c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView.m_parentTextView
+0x1eb1352e4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebDocumentView.m_selectionGranularity
+0x1eb135374  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebElementAction._actionHandler
+0x1eb135378  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebElementAction._dismissalHandler
+0x1eb135370  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebElementAction._title
+0x1eb13537c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebElementAction._type
+0x1eb13536c  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebElementActionInfo._interactionLocation
+0x1eb135394  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebPDFView._backingLayerImageViews
+0x1eb135498  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebRotatingAlertController._wasDeferringCallbacks
+0x1eb135494  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebRotatingAlertController._webBrowserView
+0x1eb1354c4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebTiledView._allowsPaintingAndScriptsWhilePanning
+0x1eb1354b4  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebTiledView._didFirstTileLayout
+0x1eb1354c8  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebTiledView._editingTilingModeEnabled
+0x1eb1354c0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebTiledView._inGestureType
+0x1eb1354b8  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebTiledView._layoutTilesInMainThread
+0x1eb1354bc  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebTiledView._tilingArea
+0x1eb1354cc  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebTiledView._tilingModeIsLocked
+0x1eb1354b0  __DATA,__objc_ivar  OBJC_IVAR_$_UIWebTiledView._wakWindow
+0x1eb132328  __DATA,__objc_ivar  OBJC_IVAR_$_UIWindowScene._metricsCalculator
+0x1eb132338  __DATA,__objc_ivar  OBJC_IVAR_$_UIWindowScene._overrideParentTraitCollection
+0x1eb128f98  __DATA,__objc_ivar  OBJC_IVAR_$__UIImageLoader._completionTrampolines
+0x1eb128f90  __DATA,__objc_ivar  OBJC_IVAR_$__UIImageLoader._error
+0x1eb128f8c  __DATA,__objc_ivar  OBJC_IVAR_$__UIImageLoader._image
+0x1eb128f94  __DATA,__objc_ivar  OBJC_IVAR_$__UIImageLoader._trampolineLock
+0x1eb132d10  __DATA,__objc_ivar  OBJC_IVAR_$__UINavigationInteractiveTransitionBase.__completesTransitionOnEnd
+0x1eb132d08  __DATA,__objc_ivar  OBJC_IVAR_$__UINavigationInteractiveTransitionBase.__interactionState
+0x1eb132cfc  __DATA,__objc_ivar  OBJC_IVAR_$__UINavigationInteractiveTransitionBase.__parent
+0x1eb132d04  __DATA,__objc_ivar  OBJC_IVAR_$__UINavigationInteractiveTransitionBase.__stoppedTransitionWasCancelled
+0x1eb132d00  __DATA,__objc_ivar  OBJC_IVAR_$__UINavigationInteractiveTransitionBase.__transitionWasStopped
+0x1eb132cf8  __DATA,__objc_ivar  OBJC_IVAR_$__UINavigationInteractiveTransitionBase.__updateRequestActive
+0x1eb132cec  __DATA,__objc_ivar  OBJC_IVAR_$__UINavigationInteractiveTransitionBase.__useAugmentedShouldPopDecisionProcedure
+0x1eb132cf4  __DATA,__objc_ivar  OBJC_IVAR_$__UINavigationInteractiveTransitionBase._contentSwipeGestureRecognizer
+0x1eb132cf0  __DATA,__objc_ivar  OBJC_IVAR_$__UINavigationInteractiveTransitionBase._gestureRecognizer
+0x1eb132ce8  __DATA,__objc_ivar  OBJC_IVAR_$__UINavigationInteractiveTransitionBase._gestureRecognizerView
+0x1eb127a38  __DATA,__objc_ivar  OBJC_IVAR_$__UIPageCurl._activeStateQueue
+0x1eb127a3c  __DATA,__objc_ivar  OBJC_IVAR_$__UIPageCurl._completedStates
+0x1eb127a28  __DATA,__objc_ivar  OBJC_IVAR_$__UIPageCurl._contentRect
+0x1eb127a2c  __DATA,__objc_ivar  OBJC_IVAR_$__UIPageCurl._contentView
+0x1eb127a40  __DATA,__objc_ivar  OBJC_IVAR_$__UIPageCurl._delayBetweenSuccessiveAnimations
+0x1eb127a4c  __DATA,__objc_ivar  OBJC_IVAR_$__UIPageCurl._manualPageCurlMaxDAngle
+0x1eb127a30  __DATA,__objc_ivar  OBJC_IVAR_$__UIPageCurl._manualPageCurlState
+0x1eb127a44  __DATA,__objc_ivar  OBJC_IVAR_$__UIPageCurl._pageDiagonalAngle
+0x1eb127a48  __DATA,__objc_ivar  OBJC_IVAR_$__UIPageCurl._pageDiagonalLength
+0x1eb127a34  __DATA,__objc_ivar  OBJC_IVAR_$__UIPageCurl._pendingStateQueue
+0x1eb127a24  __DATA,__objc_ivar  OBJC_IVAR_$__UIPageCurl._spineLocation
+0x1eb13497c  __DATA,__objc_ivar  OBJC_IVAR_$__UIReflectingView._containerView
+0x1eb134978  __DATA,__objc_ivar  OBJC_IVAR_$__UIReflectingView._gradientView
+0x1eb134980  __DATA,__objc_ivar  OBJC_IVAR_$__UIReflectingView._reflectionAlpha
+0x1eb12f318  __DATA,__objc_ivar  OBJC_IVAR_$__UIVelocityIntegratorFilter._filter
+0x1eb128184  __DATA,__objc_ivar  OBJC_IVAR_$__UIViewControllerOneToOneTransitionContext._fromView
+0x1eb12817c  __DATA,__objc_ivar  OBJC_IVAR_$__UIViewControllerOneToOneTransitionContext._isFromViewSet
+0x1eb128178  __DATA,__objc_ivar  OBJC_IVAR_$__UIViewControllerOneToOneTransitionContext._isToViewSet
+0x1eb128180  __DATA,__objc_ivar  OBJC_IVAR_$__UIViewControllerOneToOneTransitionContext._toView
+0x1ee02dd60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSColor
+0x1ef467ff8  __AUTH,__objc_data  _OBJC_METACLASS_$_NSDiffableDataSourceSectionSnapshot
+0x1ef466770  __AUTH,__objc_data  _OBJC_METACLASS_$_NSDiffableDataSourceSectionTransaction
+0x1ee01d390  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSDiffableDataSourceTransaction
+0x1ee01bce8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TIKeyboardCandidateSuggestion
+0x1ef453420  __AUTH,__objc_data  _OBJC_METACLASS_$_UIAcceleration
+0x1ef4533f8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIAccelerometer
+0x1ee0185f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAccessibilityCustomAction
+0x1ee03c018  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAccessibilityCustomRotor
+0x1ee034390  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAccessibilityCustomRotorItemResult
+0x1ef4438e8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIAccessibilityCustomRotorSearchPredicate
+0x1ee03c3b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAccessibilityElement
+0x1ee01de30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAccessibilityHUDGestureManager
+0x1ef443898  __AUTH,__objc_data  _OBJC_METACLASS_$_UIAccessibilityHUDItem
+0x1ef443820  __AUTH,__objc_data  _OBJC_METACLASS_$_UIAccessibilityHUDView
+0x1ee0185d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAccessibilityLocationDescriptor
+0x1ef443758  __AUTH,__objc_data  _OBJC_METACLASS_$_UIAccessoryBackgroundTaskAction
+0x1ee03b3e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAction
+0x1ee027398  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIActionSheet
+0x1ef465c58  __AUTH,__objc_data  _OBJC_METACLASS_$_UIActivityContinuationAction
+0x1ee03a178  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIActivityIndicatorView
+0x1ef460610  __AUTH,__objc_data  _OBJC_METACLASS_$_UIActivityItemsConfiguration
+0x1ee016a28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAlertAction
+0x1ee03bf50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAlertController
+0x1ef46d8b0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIAlertControllerDescriptor
+0x1ef46d888  __AUTH,__objc_data  _OBJC_METACLASS_$_UIAlertControllerVisualStyle
+0x1ef463eb0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIAlertControllerVisualStyleActionSheet
+0x1ef46c208  __AUTH,__objc_data  _OBJC_METACLASS_$_UIAlertControllerVisualStyleAlert
+0x1ee026a18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAlertView
+0x1ee0297b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAnimatablePropertyBase
+0x1ee027af0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAnimatablePropertyWrapper
+0x1ee027ac8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAnimation
+0x1ee028900  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAnimator
+0x1ee03eef8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIApplication
+0x1ef443640  __AUTH,__objc_data  _OBJC_METACLASS_$_UIApplicationCoverSheetSceneSpecification
+0x1ef443618  __AUTH,__objc_data  _OBJC_METACLASS_$_UIApplicationExternalScreenSceneSpecification
+0x1ef4435f0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIApplicationLegacyVOIPKeepAliveAction
+0x1ee03b910  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIApplicationRotationFollowingController
+0x1ee03b870  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIApplicationRotationFollowingControllerNoTouches
+0x1ee03de68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIApplicationRotationFollowingWindow
+0x1ee039e30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIApplicationSceneClientAgent
+0x1ee03a4c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIApplicationSceneClientSettings
+0x1ef45a358  __AUTH,__objc_data  _OBJC_METACLASS_$_UIApplicationSceneClientSettingsDiffInspector
+0x1ef453380  __AUTH,__objc_data  _OBJC_METACLASS_$_UIApplicationSceneDeactivationAssertion
+0x1ef453358  __AUTH,__objc_data  _OBJC_METACLASS_$_UIApplicationSceneDeactivationManager
+0x1ee01d908  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIApplicationSceneHostAgent
+0x1ee03ab78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIApplicationSceneSettings
+0x1ee039bb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIApplicationSceneSettingsDiffInspector
+0x1ee03c900  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIApplicationSceneSpecification
+0x1ee03ba50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIApplicationSceneTransitionContext
+0x1ee019110  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIApplicationShortcutIcon
+0x1ee0193b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIApplicationShortcutItem
+0x1ef453330  __AUTH,__objc_data  _OBJC_METACLASS_$_UIApplicationStarkSceneSpecification
+0x1ef46fb88  __AUTH,__data  _OBJC_METACLASS_$_UIArrangement
+0x1ef46fb60  __AUTH,__data  _OBJC_METACLASS_$_UIArrangementViewController
+0x1ef46fb38  __AUTH,__data  _OBJC_METACLASS_$_UIArrangementViewState
+0x1ee0325b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAssistantBarButtonItemProvider
+0x1ef469df8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIAsyncTextInteraction
+0x1ef45a330  __AUTH,__objc_data  _OBJC_METACLASS_$_UIAttachmentBehavior
+0x1ef443578  __AUTH,__objc_data  _OBJC_METACLASS_$_UIAutoFillTextSuggestion
+0x1ee03d5a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAutoRotatingWindow
+0x1ef4434d8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIAutofillExtrasSuggestion
+0x1ee024790  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAutonomousSingleAppModeConfiguration
+0x1ee024768  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAutonomousSingleAppModeSession
+0x1ef465c30  __AUTH,__objc_data  _OBJC_METACLASS_$_UIAutoscroll
+0x1ee029b48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIBackgroundConfiguration
+0x1ef477ea0  __AUTH,__data  _OBJC_METACLASS_$_UIBackgroundExtensionView
+0x1ee028b80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIBandSelectionInteraction
+0x1ef443460  __AUTH,__objc_data  _OBJC_METACLASS_$_UIBannerAction
+0x1ee027370  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIBarAppearance
+0x1ee03d7b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIBarButtonItem
+0x1ee026ee8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIBarButtonItemAppearance
+0x1ef477660  __AUTH,__data  _OBJC_METACLASS_$_UIBarButtonItemBadge
+0x1ee032d60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIBarButtonItemGroup
+0x1ef45f0d0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIBarButtonItemStateAppearance
+0x1ee03d580  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIBarItem
+0x1ef478088  __AUTH,__data  _OBJC_METACLASS_$_UIBarMinimization
+0x1ee033300  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIBezierPath
+0x1ee032810  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIBlurEffect
+0x1ef4328b8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIBridgedAnimatable
+0x1ee03dc10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIButton
+0x1ee028158  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIButtonConfiguration
+0x1ee024bf0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIButtonConfigurationVisualProvider
+0x1ef443438  __AUTH,__objc_data  _OBJC_METACLASS_$_UIButtonConfigurationVisualProviderTVOS
+0x1ee032590  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIButtonLegacyVisualProvider
+0x1ef453308  __AUTH,__objc_data  _OBJC_METACLASS_$_UICalendarSelection
+0x1ef4433c0  __AUTH,__objc_data  _OBJC_METACLASS_$_UICalendarSelectionMultiDate
+0x1ef4532e0  __AUTH,__objc_data  _OBJC_METACLASS_$_UICalendarSelectionSingleDate
+0x1ef432890  __AUTH,__objc_data  _OBJC_METACLASS_$_UICalendarSelectionWeekOfYear
+0x1ee02d950  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICalendarView
+0x1ef443398  __AUTH,__objc_data  _OBJC_METACLASS_$_UICalendarViewDecoration
+0x1ee036c30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICalloutBar
+0x1ef478060  __AUTH,__data  _OBJC_METACLASS_$_UICanvasFeedbackGenerator
+0x1ef443348  __AUTH,__objc_data  _OBJC_METACLASS_$_UICarPlayApplicationSceneSettings
+0x1ee01f928  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICellAccessory
+0x1ef466ef0  __AUTH,__objc_data  _OBJC_METACLASS_$_UICellAccessoryCheckmark
+0x1ee01a028  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICellAccessoryCustomView
+0x1ef462cf8  __AUTH,__objc_data  _OBJC_METACLASS_$_UICellAccessoryDelete
+0x1ef45f0a8  __AUTH,__objc_data  _OBJC_METACLASS_$_UICellAccessoryDetail
+0x1ef469880  __AUTH,__objc_data  _OBJC_METACLASS_$_UICellAccessoryDisclosureIndicator
+0x1ef45e130  __AUTH,__objc_data  _OBJC_METACLASS_$_UICellAccessoryInsert
+0x1ef46a3c0  __AUTH,__objc_data  _OBJC_METACLASS_$_UICellAccessoryLabel
+0x1ef4648f8  __AUTH,__objc_data  _OBJC_METACLASS_$_UICellAccessoryMultiselect
+0x1ef463440  __AUTH,__objc_data  _OBJC_METACLASS_$_UICellAccessoryOutlineDisclosure
+0x1ef4532b8  __AUTH,__objc_data  _OBJC_METACLASS_$_UICellAccessoryPopUpMenu
+0x1ef465c08  __AUTH,__objc_data  _OBJC_METACLASS_$_UICellAccessoryReorder
+0x1ee0288d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICellConfigurationState
+0x1ef453290  __AUTH,__objc_data  _OBJC_METACLASS_$_UICheckeredPatternView
+0x1ef453268  __AUTH,__objc_data  _OBJC_METACLASS_$_UICloudSharingController
+0x1ee019cb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionLayoutListConfiguration
+0x1ee03d788  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionReusableView
+0x1ee03b168  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionView
+0x1ee03d6e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionViewCell
+0x1ee016708  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionViewCellRegistration
+0x1ee027348  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionViewCompositionalLayout
+0x1ee021750  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionViewCompositionalLayoutConfiguration
+0x1ee03d2d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionViewController
+0x1ee030d58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionViewDiffableDataSource
+0x1ee017cc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionViewDiffableDataSourceReorderingHandlers
+0x1ef462cd0  __AUTH,__objc_data  _OBJC_METACLASS_$_UICollectionViewDiffableDataSourceSectionSnapshotHandlers
+0x1ef443320  __AUTH,__objc_data  _OBJC_METACLASS_$_UICollectionViewDropPlaceholder
+0x1ef457c98  __AUTH,__objc_data  _OBJC_METACLASS_$_UICollectionViewDropProposal
+0x1ee022698  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionViewFlowLayout
+0x1ee0266d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionViewFlowLayoutInvalidationContext
+0x1ef453240  __AUTH,__objc_data  _OBJC_METACLASS_$_UICollectionViewFocusUpdateContext
+0x1ee038350  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionViewLayout
+0x1ee027118  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionViewLayoutAttributes
+0x1ee0284f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionViewLayoutInvalidationContext
+0x1ee03c8d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionViewListCell
+0x1ef4432f8  __AUTH,__objc_data  _OBJC_METACLASS_$_UICollectionViewPlaceholder
+0x1ef469330  __AUTH,__objc_data  _OBJC_METACLASS_$_UICollectionViewSupplementaryRegistration
+0x1ee036c08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionViewTableCell
+0x1ef457c70  __AUTH,__objc_data  _OBJC_METACLASS_$_UICollectionViewTableHeaderFooterView
+0x1ee01b428  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionViewTableLayout
+0x1ef453218  __AUTH,__objc_data  _OBJC_METACLASS_$_UICollectionViewTableLayoutAttributes
+0x1ef4531f0  __AUTH,__objc_data  _OBJC_METACLASS_$_UICollectionViewTableLayoutInvalidationContext
+0x1ef4432a8  __AUTH,__objc_data  _OBJC_METACLASS_$_UICollectionViewTableLayoutSwipeAction
+0x1ee027820  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionViewTransitionLayout
+0x1ee022670  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICollectionViewUpdateItem
+0x1ef45a308  __AUTH,__objc_data  _OBJC_METACLASS_$_UICollisionBehavior
+0x1ee03ed90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIColor
+0x1ee029490  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIColorEffect
+0x1ee02c960  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIColorPickerViewController
+0x1ee02d2e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIColorWell
+0x1ee036be0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICommand
+0x1ef466748  __AUTH,__objc_data  _OBJC_METACLASS_$_UICommandAlternate
+0x1ee03eb88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIContentSizeCategoryPreference
+0x1ef468c78  __AUTH,__objc_data  _OBJC_METACLASS_$_UIContentUnavailableButtonProperties
+0x1ef469308  __AUTH,__objc_data  _OBJC_METACLASS_$_UIContentUnavailableConfiguration
+0x1ee01dde0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIContentUnavailableConfigurationState
+0x1ef468c28  __AUTH,__objc_data  _OBJC_METACLASS_$_UIContentUnavailableImageProperties
+0x1ef468c00  __AUTH,__objc_data  _OBJC_METACLASS_$_UIContentUnavailableTextProperties
+0x1ef4692e0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIContentUnavailableView
+0x1ee016d48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIContextMenuConfiguration
+0x1ee0320e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIContextMenuInteraction
+0x1ef465be0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIContextMenuSystem
+0x1ee0362f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIContextualAction
+0x1ee03de18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIControl
+0x1ef4431b8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIConversationContext
+0x1ef432818  __AUTH,__objc_data  _OBJC_METACLASS_$_UIConversationEntry
+0x1ee04b0e8  __DATA_DIRTY,__data  _OBJC_METACLASS_$_UICornerConfiguration
+0x1ee04aff8  __DATA_DIRTY,__data  _OBJC_METACLASS_$_UICornerRadius
+0x1ee036f28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICoverSheetButton
+0x1ee024308  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICubicTimingParameters
+0x1ef46a398  __AUTH,__objc_data  _OBJC_METACLASS_$_UICustomViewMenuElement
+0x1ee034340  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIDateLabel
+0x1ee0362d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIDatePicker
+0x1ee031370  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIDefaultKeyboardInput
+0x1ee02f868  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIDeferredMenuElement
+0x1ee02a0c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIDeferredMenuElementProvider
+0x1ee01d368  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIDescriptionBuilder
+0x1ef45ce98  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDestroySceneAction
+0x1ef442d30  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDestroySceneActionResponse
+0x1ee03ede0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIDevice
+0x1ee03c360  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIDictationController
+0x1ee02ce88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIDictationInputMode
+0x1ee024bc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIDictationInputModeOptions
+0x1ef442b78  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDictationPhrase
+0x1ee03bcd0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIDictationView
+0x1ef453150  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDidTakeScreenshotAction
+0x1ef442a38  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDigitizerLongPressGestureRecognizer
+0x1ef442a10  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDigitizerTapGestureRecognizer
+0x1ef457c48  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDismissSceneAction
+0x1ef45bd20  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDocument
+0x1ef45a2b8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDocumentMenuViewController
+0x1ef442998  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDocumentPasswordField
+0x1ef442970  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDocumentPasswordView
+0x1ef442948  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDocumentPickerExtensionViewController
+0x1ef45e0e0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDocumentPickerViewController
+0x1ee019920  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIDocumentProperties
+0x1ef442920  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDocumentSharingController
+0x1ef4428f8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDocumentViewController
+0x1ef4428d0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDocumentViewControllerLaunchOptions
+0x1ee02dd38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIDragInteraction
+0x1ef4650c8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDragItem
+0x1ef45a290  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDragPreview
+0x1ef463418  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDragPreviewParameters
+0x1ef45e0b8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDragPreviewTarget
+0x1ef46b360  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDraggingSessionConfiguration
+0x1ef453128  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDraggingSystemMonitor
+0x1ef442880  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDraggingSystemSceneMetadata
+0x1ef453100  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDraggingSystemSession
+0x1ef45bcf8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDraggingSystemSessionInfo
+0x1ef45bcd0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDraggingSystemTouchRoutingPolicy
+0x1ee031050  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIDropInteraction
+0x1ef45ce70  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDropProposal
+0x1ef45f080  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDynamicAnimator
+0x1ef45e090  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDynamicBehavior
+0x1ef45bca8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDynamicItemBehavior
+0x1ef442858  __AUTH,__objc_data  _OBJC_METACLASS_$_UIDynamicItemGroup
+0x1ef465078  __AUTH,__objc_data  _OBJC_METACLASS_$_UIEditMenuConfiguration
+0x1ee029198  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIEditMenuInteraction
+0x1ee039930  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIEditingOverlayViewController
+0x1ef432750  __AUTH,__objc_data  _OBJC_METACLASS_$_UIEmojiAndStickerCollectionViewConfiguration
+0x1ef442808  __AUTH,__objc_data  _OBJC_METACLASS_$_UIEmojiAndStickerCollectionViewController
+0x1ee03df58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIEvent
+0x1ee03cb30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIEventAttribution
+0x1ee02e210  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIEventAttributionView
+0x1ee039e08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIFeedbackGenerator
+0x1ef45bc80  __AUTH,__objc_data  _OBJC_METACLASS_$_UIFetchContentInBackgroundAction
+0x1ef4530b0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIFetchContentInBackgroundActionResponse
+0x1ef45ce48  __AUTH,__objc_data  _OBJC_METACLASS_$_UIFieldBehavior
+0x1ee03c540  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIFieldEditor
+0x1ef46bb08  __AUTH,__objc_data  _OBJC_METACLASS_$_UIFindInteraction
+0x1ee02ce60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIFindSession
+0x1ef4605e8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIFocusAnimationCoordinator
+0x1ee029468  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIFocusContainerGuide
+0x1ee02f4d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIFocusDebugger
+0x1ef460f20  __AUTH,__objc_data  _OBJC_METACLASS_$_UIFocusEffect
+0x1ee03c338  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIFocusGuide
+0x1ef460ef8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIFocusHaloEffect
+0x1ef46a370  __AUTH,__objc_data  _OBJC_METACLASS_$_UIFocusMovementAction
+0x1ef442768  __AUTH,__objc_data  _OBJC_METACLASS_$_UIFocusMovementHint
+0x1ef442740  __AUTH,__objc_data  _OBJC_METACLASS_$_UIFocusRingDefaultShapeLayer
+0x1ef442718  __AUTH,__objc_data  _OBJC_METACLASS_$_UIFocusRingLayer
+0x1ee03c9c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIFocusRingManager
+0x1ef453088  __AUTH,__objc_data  _OBJC_METACLASS_$_UIFocusRingStyle
+0x1ee03c2c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIFocusSystem
+0x1ef45fc88  __AUTH,__objc_data  _OBJC_METACLASS_$_UIFocusUpdateContext
+0x1ee02bc90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIFontMetrics
+0x1ef4426f0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIFontPickerViewController
+0x1ef4426c8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIFontPickerViewControllerConfiguration
+0x1ef442678  __AUTH,__objc_data  _OBJC_METACLASS_$_UIForceStageInteractionProgress
+0x1ef442628  __AUTH,__objc_data  _OBJC_METACLASS_$_UIFrameAnimation
+0x1ee03c8b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIGestureRecognizer
+0x1ee025a50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIGlassContainerEffect
+0x1ee025d98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIGlassEffect
+0x1ef442600  __AUTH,__objc_data  _OBJC_METACLASS_$_UIGradient
+0x1ee02e198  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIGraphicsImageRenderer
+0x1ee02e170  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIGraphicsImageRendererContext
+0x1ee02e648  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIGraphicsImageRendererFormat
+0x1ef45bc58  __AUTH,__objc_data  _OBJC_METACLASS_$_UIGraphicsPDFRenderer
+0x1ef45bc30  __AUTH,__objc_data  _OBJC_METACLASS_$_UIGraphicsPDFRendererContext
+0x1ef457ba8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIGraphicsPDFRendererFormat
+0x1ee036280  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIGraphicsRenderer
+0x1ee02e148  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIGraphicsRendererContext
+0x1ee02e120  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIGraphicsRendererFormat
+0x1ef45ce20  __AUTH,__objc_data  _OBJC_METACLASS_$_UIGravityBehavior
+0x1ef453038  __AUTH,__objc_data  _OBJC_METACLASS_$_UIHBClickGestureRecognizer
+0x1ef4425d8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIHBDownGestureRecognizer
+0x1ef453010  __AUTH,__objc_data  _OBJC_METACLASS_$_UIHBLongClickGestureRecognizer
+0x1ef4425b0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIHandleApplicationShortcutAction
+0x1ef4605c0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIHandleBackgroundURLSessionAction
+0x1ef442588  __AUTH,__objc_data  _OBJC_METACLASS_$_UIHandleCloudKitShareAction
+0x1ef442560  __AUTH,__objc_data  _OBJC_METACLASS_$_UIHandleLocalNotificationAction
+0x1ef442538  __AUTH,__objc_data  _OBJC_METACLASS_$_UIHandleRemoteNotificationAction
+0x1ef452fe8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIHandleStatusBarTapAction
+0x1ef4424e8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIHealthAuthorizationAction
+0x1ef46e918  __AUTH,__objc_data  _OBJC_METACLASS_$_UIHinge
+0x1ef46ecd8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIHingeInteraction
+0x1ef46ec88  __AUTH,__objc_data  _OBJC_METACLASS_$_UIHingeInteractionUpdate
+0x1ef4779c8  __AUTH,__data  _OBJC_METACLASS_$_UIHoverAutomaticEffect
+0x1ef476d70  __AUTH,__data  _OBJC_METACLASS_$_UIHoverEffectLayer
+0x1ef476d48  __AUTH,__data  _OBJC_METACLASS_$_UIHoverEmptyEffect
+0x1ee036258  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIHoverEvent
+0x1ee03bf28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIHoverGestureRecognizer
+0x1ef478ee8  __AUTH,__data  _OBJC_METACLASS_$_UIHoverHighlightEffect
+0x1ef476d18  __AUTH,__data  _OBJC_METACLASS_$_UIHoverLiftEffect
+0x1ef479520  __AUTH,__data  _OBJC_METACLASS_$_UIHoverStyle
+0x1ee03edb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIImage
+0x1ee03d080  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIImageAsset
+0x1ee03dcb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIImageConfiguration
+0x1ef465bb8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIImagePickerController
+0x1ef432688  __AUTH,__objc_data  _OBJC_METACLASS_$_UIImageReader
+0x1ef432660  __AUTH,__objc_data  _OBJC_METACLASS_$_UIImageReaderConfiguration
+0x1ee03d850  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIImageSymbolConfiguration
+0x1ee03ddf0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIImageView
+0x1ee02d568  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIImpactFeedbackGenerator
+0x1ee035948  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIIndexBarAccessoryView
+0x1ef45a268  __AUTH,__objc_data  _OBJC_METACLASS_$_UIIndexBarDisplayEntry
+0x1ef45a218  __AUTH,__objc_data  _OBJC_METACLASS_$_UIIndexBarEntry
+0x1ee035920  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIIndexBarView
+0x1ef45cdf8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIIndexBarVisualStyle_Base
+0x1ef45cdd0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIIndexBarVisualStyle_LegacyiOS
+0x1ee017090  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIIndirectScribbleInteraction
+0x1ef45e068  __AUTH,__objc_data  _OBJC_METACLASS_$_UIInputContextHistory
+0x1ee026ec0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIInputResponderController
+0x1ee021020  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIInputSuggestion
+0x1ee03ba28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIInputView
+0x1ee03bde8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIInputViewController
+0x1ee021700  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIInputViewControllerInterface
+0x1ef4423a8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIInputViewControllerInterfaceClient
+0x1ef45bc08  __AUTH,__objc_data  _OBJC_METACLASS_$_UIIntentForwardingAction
+0x1ef45dfa0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIIntentForwardingActionResponse
+0x1ef45a1a0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIInteractionProgress
+0x1ef46c190  __AUTH,__objc_data  _OBJC_METACLASS_$_UIInterfaceAction
+0x1ef46c168  __AUTH,__objc_data  _OBJC_METACLASS_$_UIInterfaceActionGroup
+0x1ef46c140  __AUTH,__objc_data  _OBJC_METACLASS_$_UIInterfaceActionGroupView
+0x1ef4421c8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIInterfaceActionGroupViewController
+0x1ef4421a0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIInterfaceActionHighlightAttributes
+0x1ef442128  __AUTH,__objc_data  _OBJC_METACLASS_$_UIInterfaceActionSeparatorAttributes
+0x1ee0185a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIInterpolatedFloat
+0x1ef4626b8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIInterpolatingMotionEffect
+0x1ef46cb18  __AUTH,__objc_data  _OBJC_METACLASS_$_UIItemProvider
+0x1ee030d30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBArbiterClientFocusContext
+0x1ee01ea88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBBackdropView
+0x1ee01cb20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBCacheToken
+0x1ee0378b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBContainerKeyView
+0x1ee01a988  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBDerivedKeyboard
+0x1ef441e30  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKBDivotedEffect
+0x1ee01b400  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBEdgeEffect
+0x1ee01bc98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBGeometry
+0x1ee01cad0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBGradient
+0x1ee01c120  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBInputBackdropView
+0x1ee01caa8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBKeyDisplayContents
+0x1ee037b80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBKeyView
+0x1ee0276b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBKeyplaneChangeContext
+0x1ee0174c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBLayoutInfo
+0x1ee01bc70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBMergeAction
+0x1ee018148  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBMultilingualIntroductionView
+0x1ef4324d0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKBMultilingualKeyboardArtworkView
+0x1ef45cd58  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKBNullEffect
+0x1ee02e5a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBRenderConfig
+0x1ee02a390  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBRenderFactory
+0x1ee01ca58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBRenderFactoryLayoutSegment
+0x1ee01ca08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBRenderGeometry
+0x1ee01c9e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBRenderTraits
+0x1ee01c9b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBRenderingContext
+0x1ee02dd10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBScreenTraits
+0x1ee016668  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBShadowEffect
+0x1ee021ba8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBShape
+0x1ef46a348  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKBShapeOperator
+0x1ef441368  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKBSplitTraits
+0x1ee01c0f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBTextEditingTraits
+0x1ee01c968  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBTextStyle
+0x1ee018f30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBTouchState
+0x1ee021b80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBTree
+0x1ef45bbb8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKBViewTreeSnapshotter
+0x1ee01ddb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKBVisualEffectView
+0x1ef4648d0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKey
+0x1ee036b68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKeyCommand
+0x1ef452ea8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyEvent
+0x1ef452e80  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyEventContext
+0x1ee03e8e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKeyboard
+0x1ef452e58  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyboardArbiterManager
+0x1ee02a908  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKeyboardAutocorrectionController
+0x1ef441188  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyboardButton
+0x1ef476cf0  __AUTH,__data  _OBJC_METACLASS_$_UIKeyboardCandidateSceneHostingController
+0x1ef440d50  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyboardEmoji
+0x1ef463ca8  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyboardEmojiCategory
+0x1ee02c4d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKeyboardEmojiDraggableView
+0x1ef440cb0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyboardEmojiGraphics
+0x1ef440c88  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyboardEmojiGraphicsTraits
+0x1ef440c38  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyboardEmojiPopoverController
+0x1ef469290  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyboardEmojiPreferences
+0x1ee033f08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKeyboardFloatingTransitionController
+0x1ee03dad0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKeyboardImpl
+0x1ee038760  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKeyboardInputMode
+0x1ee038328  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKeyboardInputModeController
+0x1ee038738  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKeyboardLayout
+0x1ee026c68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKeyboardLayoutGuide
+0x1ef440918  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyboardMediaServiceRemoteViewController
+0x1ef4322a0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyboardNumberpadPopoverController
+0x1ef46d108  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyboardPathEffectView
+0x1ef464880  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyboardPopoverController
+0x1ee0389e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKeyboardPreferencesController
+0x1ee03bca8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKeyboardSceneDelegate
+0x1ef452d40  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyboardScenePresentationModeManager
+0x1ef4408a0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyboardSuggestedInputMode
+0x1ef452cf0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyboardUIService
+0x1ef440828  __AUTH,__objc_data  _OBJC_METACLASS_$_UIKeyboardViewController
+0x1ee03dd78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UILabel
+```
+First 3,000 of 8,556.
+
+## Private
+
+```
+0x1846d9280  __TEXT,__text  _getTUIKeyboardLayoutFactoryClass
+0x1846d9354  __TEXT,__text  _getTUIKeyboardLayoutFactoryClass
+0x1846d9428  __TEXT,__text  _getSBSApplicationShortcutServiceClass
+0x1846d94fc  __TEXT,__text  _getAFPreferencesClass
+0x1846d95d0  __TEXT,__text  _getAFPreferencesClass
+0x1846d96a4  __TEXT,__text  _getAFDictationConnectionClass
+0x1846d9778  __TEXT,__text  _getAFAnalyticsClass
+0x1846d984c  __TEXT,__text  -[UIWindowScene _coordinateSpace]
+0x1846d9850  __TEXT,__text  -[UIWindowScene _internalCoordinateSpace]
+0x1846d9880  __TEXT,__text  -[_UIWindowSceneCoordinateSpace convertRect:fromCoordinateSpace:]
+0x1846d9d08  __TEXT,__text  ___36+[UIScene _scenesIncludingInternal:]_block_invoke_2
+0x1846d9d70  __TEXT,__text  -[UIGestureRecognizer state]
+0x1846d9d74  __TEXT,__text  -[UIGestureRecognizer _state]
+0x1846d9df4  __TEXT,__text  -[UIView(Rendering) isHidden]
+0x1846d9e40  __TEXT,__text  -[UIView _backing_isHidden]
+0x1846d9eb8  __TEXT,__text  -[UIView bounds]
+0x1846d9ebc  __TEXT,__text  -[UIView _backing_bounds]
+0x1846d9f04  __TEXT,__text  -[_UIWindowSceneCoordinateSpace convertRect:toCoordinateSpace:]
+0x1846da3c8  __TEXT,__text  ___UISceneEffectiveSettings
+0x1846da474  __TEXT,__text  -[UIWindow convertRect:fromCoordinateSpace:]
+0x1846da6bc  __TEXT,__text  -[UIScene _isInternal]
+0x1846da6d4  __TEXT,__text  -[UIViewController _appearState]
+0x1846da6ec  __TEXT,__text  -[UIImageView _intrinsicSizeWithinSize:]
+0x1846da84c  __TEXT,__text  -[UIViewController _appearingOrAppearedChildModalViewController]
+0x1846da984  __TEXT,__text  -[UIViewController childModalViewController]
+0x1846da9e4  __TEXT,__text  -[UIViewController nextResponder]
+0x1846dade0  __TEXT,__text  -[UIView traitCollection]
+0x1846daf98  __TEXT,__text  __UIInternalPreferenceUsesDefault
+0x1846db068  __TEXT,__text  __UIInternalPreferenceUsesDefault
+0x1846db138  __TEXT,__text  __UIInternalPreferenceUsesDefault
+0x1846db208  __TEXT,__text  __UIInternalPreferenceUsesDefault
+0x1846db2d8  __TEXT,__text  __UIRecordTraitUsage
+0x1846db36c  __TEXT,__text  -[UITraitCollection displayScale]
+0x1846db398  __TEXT,__text  _GetTraitCollectionTSD
+0x1846db46c  __TEXT,__text  -[UIResponder _responderWindow]
+0x1846db4ac  __TEXT,__text  -[UIView _updateSublayerGeometry]
+0x1846db6fc  __TEXT,__text  -[UIView _backing_outermostLayer]
+0x1846db8a0  __TEXT,__text  -[UIView center]
+0x1846db8a4  __TEXT,__text  -[UIView _backing_position]
+0x1846db978  __TEXT,__text  -[UIView(Geometry) frame]
+0x1846db97c  __TEXT,__text  -[UIView _backing_frame]
+0x1846dbab4  __TEXT,__text  -[UIView(Geometry) setFrame:]
+0x1846dbe6c  __TEXT,__text  -[UIView _backing_setFrame:]
+0x1846dbf8c  __TEXT,__text  -[UIView _synchronizeAutoLayoutWithCALayoutIfNecessaryForOldBounds:updateSuperview:]
+0x1846dc258  __TEXT,__text  -[UIView _wantsAutolayoutOrIsGuardingForEngineHosting]
+0x1846dc2e4  __TEXT,__text  -[UIView _raiseExceptionForBackgroundThreadLayoutIfNeeded]
+0x1846dc754  __TEXT,__text  -[UIView(Hierarchy) setNeedsLayout]
+0x1846dc928  __TEXT,__text  -[UIView(Hierarchy) layoutBelowIfNeeded]
+0x1846dce40  __TEXT,__text  -[UIView __viewDelegate]
+0x1846dce70  __TEXT,__text  +[UIScene _scenesIncludingInternal:]
+0x1846dcfdc  __TEXT,__text  -[UIScene delegate]
+0x1846dcff0  __TEXT,__text  -[UIWindowScene screen]
+0x1846dd06c  __TEXT,__text  +[UIDevice currentDevice]
+0x1846dd100  __TEXT,__text  -[UIViewController isViewLoaded]
+0x1846dd11c  __TEXT,__text  -[UIResponder _nextResponderOverride]
+0x1846dd174  __TEXT,__text  -[UIView(Internal) _firstResponder]
+0x1846dd1b4  __TEXT,__text  -[UIView(UIKitManual) superview]
+0x1846dd224  __TEXT,__text  __UIAccessibilityContentSizeCategorySizeForImage
+0x1846dd318  __TEXT,__text  -[_UIInteractivePageControlVisualProvider didUpdateCustomLayoutValues]
+0x1846dd374  __TEXT,__text  -[UIView nextResponder]
+0x1846dd3dc  __TEXT,__text  -[UIScrollView _interpageSpacing]
+0x1846dd3f0  __TEXT,__text  -[_UIInteractivePageControlVisualProvider sizeForNumberOfPages:]
+0x1846dd5e8  __TEXT,__text  -[_UIInteractivePageControlVisualProvider _supportsExpandedIndicator]
+0x1846dd62c  __TEXT,__text  -[_UIInteractivePageControlVisualProvider sizeThatFits:]
+0x1846dd8fc  __TEXT,__text  -[_UIInteractivePageControlVisualProvider _intrinsicContentSizeWithPageControlSize:includeExpandedActiveIndicator:]
+0x1846ddba4  __TEXT,__text  -[UIView(Internal) _viewControllerToNotifyOnLayoutSubviews]
+0x1846ddba8  __TEXT,__text  -[UIView(CALayerDelegate) layoutSublayersOfLayer:]
+0x1846df020  __TEXT,__text  __UIScopedSignpostIntervalInit
+0x1846df0b0  __TEXT,__text  -[UIView _updateAppearanceIfNeeded]
+0x1846df138  __TEXT,__text  -[UIImageView _edgeInsetsForEffects]
+0x1846df1d4  __TEXT,__text  -[_UIInteractivePageControlVisualProvider _indicatorSpacing]
+0x1846df254  __TEXT,__text  -[UIView _usesLayoutEngineHostingConstraints]
+0x1846df2f4  __TEXT,__text  +[UITraitCollection _currentTraitCollectionIfExists]
+0x1846df320  __TEXT,__text  +[UITraitCollection _currentTraitCollectionWithFallback:markFallback:]
+0x1846df73c  __TEXT,__text  +[UITraitCollection setCurrentTraitCollection:]
+0x1846df794  __TEXT,__text  __UIBeginTrackingTraitUsage
+0x1846df9c8  __TEXT,__text  __UISetCurrentFallbackEnvironment
+0x1846dfad8  __TEXT,__text  -[UIView _collectExistingTraitCollectionsForTraitTracking:]
+0x1846dfb5c  __TEXT,__text  ____UITraitCollectionInlinePointerSetForTraitEnvironment_block_invoke
+0x1846dfcb4  __TEXT,__text  ___swift_project_boxed_opaque_existential_0
+0x1846dfcb4  __TEXT,__text  ___swift_project_boxed_opaque_existential_0
+0x1846dfcb4  __TEXT,__text  ___swift_project_boxed_opaque_existential_0
+0x1846dfcb4  __TEXT,__text  ___swift_project_boxed_opaque_existential_0
+0x1846dfcb4  __TEXT,__text  ___swift_project_boxed_opaque_existential_0
+0x1846dfcb4  __TEXT,__text  ___swift_project_boxed_opaque_existential_0
+0x1846dfcb4  __TEXT,__text  ___swift_project_boxed_opaque_existential_0
+0x1846dfcb4  __TEXT,__text  ___swift_project_boxed_opaque_existential_0
+0x1846dfcb4  __TEXT,__text  ___swift_project_boxed_opaque_existential_0
+0x1846dfcb4  __TEXT,__text  ___swift_project_boxed_opaque_existential_0
+0x1846dfcb4  __TEXT,__text  ___swift_project_boxed_opaque_existential_0
+0x1846dfcb4  __TEXT,__text  ___swift_project_boxed_opaque_existential_0
+0x1846dfcb4  __TEXT,__text  ___swift_project_boxed_opaque_existential_0
+0x1846dfcb4  __TEXT,__text  ___swift_project_boxed_opaque_existential_0
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dfce4  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0Tm
+0x1846dff68  __TEXT,__text  -[UIView _backing_setPosition:]
+0x1846e0044  __TEXT,__text  -[UIView _backing_setTransform:]
+0x1846e00e0  __TEXT,__text  -[UIView _backing_transform3D]
+0x1846e0764  __TEXT,__text  -[UIView(Hierarchy) layoutSubviews]
+0x1846e0b70  __TEXT,__text  -[_UIHyperInteractor _mutateInternalUnconstrainedPoint:]
+0x1846e0bc8  __TEXT,__text  -[_UIHyperrectangle _mutateMinimumPoint:]
+0x1846e0c30  __TEXT,__text  -[_UIHyperInteractor observeValueForKeyPath:ofObject:change:context:]
+0x1846e0d1c  __TEXT,__text  __UIHyperInteractorDirtyClosestPoint
+0x1846e0d80  __TEXT,__text  -[_UIHyperrectangle _mutateMaximumPoint:]
+0x1846e0de8  __TEXT,__text  ___66-[_UIPageControlInteractor updateRubberbandLowerBound:upperBound:]_block_invoke_2
+0x1846e0df4  __TEXT,__text  -[_UIInteractivePageControlVisualProvider _numberOfVisibleIndicatorsFittingContentLengthForStartIndex:]
+0x1846e0ee4  __TEXT,__text  -[_UIInteractivePageControlVisualProvider _hasActiveExpandedIndicator]
+0x1846e0f38  __TEXT,__text  -[_UIInteractivePageControlVisualProvider _layoutSizeForIndicator:]
+0x1846e0f9c  __TEXT,__text  -[_UIInteractivePageControlVisualProvider _layoutSizeForIndicator:progress:]
+0x1846e110c  __TEXT,__text  -[_UIInteractivePageControlVisualProvider _indicatorScaleForPage:]
+0x1846e1340  __TEXT,__text  -[_UIPageControlVisualProvider layoutSubviews]
+0x1846e1344  __TEXT,__text  -[_UIInteractivePageControlVisualProvider layoutSubviews]
+0x1846e24d0  __TEXT,__text  ___46-[_UIHyperInteractor _copyUnconstrainedPoint:]_block_invoke
+0x1846e24e8  __TEXT,__text  -[_UIInteractivePageControlVisualProvider _pageForExpandedIndicator]
+0x1846e253c  __TEXT,__text  -[_UIInteractivePageControlVisualProvider _visibleLeftIndicator]
+0x1846e25ec  __TEXT,__text  -[_UIInteractivePageControlVisualProvider _visibleRightIndicator]
+0x1846e269c  __TEXT,__text  ___66-[_UIPageControlInteractor updateRubberbandLowerBound:upperBound:]_block_invoke
+0x1846e26e0  __TEXT,__text  __UIQOSExpectComplexCommit
+0x1846e2858  __TEXT,__text  __tracepointArg4
+0x1846e29a8  __TEXT,__text  __adjustOptions
+0x1846e2a6c  __TEXT,__text  -[UIView __swiftAnimatablePropertyContext]
+0x1846e2a9c  __TEXT,__text  -[UITraitCollection verticalSizeClass]
+0x1846e2ac8  __TEXT,__text  -[UIView init]
+0x1846e2adc  __TEXT,__text  -[UIView initWithFrame:]
+0x1846e2bb4  __TEXT,__text  _UIViewCommonInitWithFrame
+0x1846e3498  __TEXT,__text  +[UITraitCollection _fallbackTraitCollection]
+0x1846e3498  __TEXT,__text  +[UITraitCollection _fallbackTraitCollection]
+0x1846e34d4  __TEXT,__text  __UIViewGetDefaultLayoutMargins
+0x1846e3524  __TEXT,__text  __UIGetCurrentFallbackTraitCollection
+0x1846e3790  __TEXT,__text  __UITraitEnvironmentGeneratedTraitCollection
+0x1846e3910  __TEXT,__text  -[UIView _populateInitialTraitCollection:]
+0x1846e3adc  __TEXT,__text  __UIViewSetLayer
+0x1846e3c88  __TEXT,__text  -[UIView _updateAutogeneratedNameForLayerIfNeeded]
+0x1846e3ec8  __TEXT,__text  -[UIView setNeedsUpdateProperties]
+0x1846e3f0c  __TEXT,__text  +[UIColor _appKeyColorOrDefaultTint]
+0x1846e3f68  __TEXT,__text  +[UIColor _appKeyColor]
+0x1846e3fb4  __TEXT,__text  -[UIView _updateAutomaticCaptureGroupIfNecessary]
+0x1846e4178  __TEXT,__text  -[UITraitCollection horizontalSizeClass]
+0x1846e41a4  __TEXT,__text  -[UIView _backing_setNeedsPreLayoutUpdate]
+0x1846e41f4  __TEXT,__text  __UIConstraintBasedLayoutEngageNonLazily
+0x1846e423c  __TEXT,__text  -[UIView(Internal) _addSubview:positioned:relativeTo:]
+0x1846e4f5c  __TEXT,__text  -[UIView _removeParentGeometryObservers]
+0x1846e50e0  __TEXT,__text  __UIIsPrivateMainBundle
+0x1846e5128  __TEXT,__text  -[_UIButtonBarButtonVisualProvider set_typedStorage:]
+0x1846e5128  __TEXT,__text  -[_UIButtonBarButtonVisualProvider set_typedStorage:]
+0x1846e5128  __TEXT,__text  -[_UIButtonBarButtonVisualProvider set_typedStorage:]
+0x1846e5128  __TEXT,__text  -[_UIButtonBarButtonVisualProvider set_typedStorage:]
+0x1846e5128  __TEXT,__text  -[_UIButtonBarButtonVisualProvider set_typedStorage:]
+0x1846e5128  __TEXT,__text  -[_UIButtonBarButtonVisualProvider set_typedStorage:]
+0x1846e5128  __TEXT,__text  -[_UIButtonBarButtonVisualProvider set_typedStorage:]
+0x1846e5128  __TEXT,__text  -[_UIButtonBarButtonVisualProvider set_typedStorage:]
+0x1846e5128  __TEXT,__text  -[_UIButtonBarButtonVisualProvider set_typedStorage:]
+0x1846e5128  __TEXT,__text  -[_UIButtonBarButtonVisualProvider set_typedStorage:]
+0x1846e5128  __TEXT,__text  -[_UIButtonBarButtonVisualProvider set_typedStorage:]
+0x1846e5128  __TEXT,__text  -[_UIButtonBarButtonVisualProvider set_typedStorage:]
+0x1846e5128  __TEXT,__text  -[_UIButtonBarButtonVisualProvider set_typedStorage:]
+0x1846e5138  __TEXT,__text  -[UIView _updateRenderedHorizontallyFlippedFromSuperview:]
+0x1846e52b0  __TEXT,__text  __UIViewGetInteractionTintColor
+0x1846e530c  __TEXT,__text  -[UIView(Hierarchy) _makeSubtreePerformSelector:withObject:withObject:copySublayers:]
+0x1846e5320  __TEXT,__text  __makeSubTreePerformSelector
+0x1846e55a8  __TEXT,__text  -[UIView _backing_sublayers]
+0x1846e5778  __TEXT,__text  -[UIView(Internal) _invalidateSubviewCache]
+0x1846e577c  __TEXT,__text  -[UIView _backing_addSubview:]
+0x1846e57e0  __TEXT,__text  -[UIView _synchronizeAutoLayoutWithCALayoutForHierarchyChangeIfApplicable]
+0x1846e5864  __TEXT,__text  -[UIView _backing_invalidateSubviewCache]
+0x1846e58c0  __TEXT,__text  -[UIBackgroundConfiguration _setCustomView:]
+0x1846e58c0  __TEXT,__text  -[UIBackgroundConfiguration _setCustomView:]
+0x1846e58c0  __TEXT,__text  -[UIBackgroundConfiguration _setCustomView:]
+0x1846e58c0  __TEXT,__text  -[UIBackgroundConfiguration _setCustomView:]
+0x1846e58c0  __TEXT,__text  -[UIBackgroundConfiguration _setCustomView:]
+0x1846e58c0  __TEXT,__text  -[UIBackgroundConfiguration _setCustomView:]
+0x1846e58c0  __TEXT,__text  -[UIBackgroundConfiguration _setCustomView:]
+0x1846e58c0  __TEXT,__text  -[UIBackgroundConfiguration _setCustomView:]
+0x1846e58c0  __TEXT,__text  -[UIBackgroundConfiguration _setCustomView:]
+0x1846e58c0  __TEXT,__text  -[UIBackgroundConfiguration _setCustomView:]
+0x1846e58d0  __TEXT,__text  -[UIView _postMovedFromSuperview:]
+0x1846e5b2c  __TEXT,__text  ___45-[UIView(Hierarchy) _postMovedFromSuperview:]_block_invoke
+0x1846e5f2c  __TEXT,__text  __UIViewVisitorEntertainAscendingTrackingVisitors
+0x1846e61f0  __TEXT,__text  __UIViewVisitorEntertainDescendingTrackingVisitors
+0x1846e64b8  __TEXT,__text  -[UIView _interactionTintColor]
+0x1846e64bc  __TEXT,__text  __UIViewGetInteractionTintColorBypassingOverride
+0x1846e65ec  __TEXT,__text  +[UIView _defaultInteractionTintColorForIdiom:]
+0x1846e6650  __TEXT,__text  __UIViewShowAlignmentRects
+0x1846e6698  __TEXT,__text  -[UIView setSafeAreaInsets:]
+0x1846e6718  __TEXT,__text  -[UIView _setSafeAreaInsets:updateSubviewsDuringNextLayoutPass:]
+0x1846e69d8  __TEXT,__text  -[_UITraitChangeRegistry recordTraitUsage:forTraitEnvironment:insideMethod:withInvalidationAction:additive:]
+0x1846e6ca4  __TEXT,__text  __UITraitUsageTrackingResultDestroy
+0x1846e6d24  __TEXT,__text  __UIRestorePreviousFallbackEnvironment
+0x1846e6e28  __TEXT,__text  _UIInlinePointerSetContainsElement(_UIInlinePointerSet const*, void*)
+0x1846e6e28  __TEXT,__text  _UIInlinePointerSetContainsElement(_UIInlinePointerSet const*, void*)
+0x1846e6e28  __TEXT,__text  _UIInlinePointerSetContainsElement(_UIInlinePointerSet const*, void*)
+0x1846e6e28  __TEXT,__text  _UIInlinePointerSetContainsElement(_UIInlinePointerSet const*, void*)
+0x1846e6edc  __TEXT,__text  -[UIView _typedStorage]
+0x1846e70fc  __TEXT,__text  -[UIView setCenter:]
+0x1846e7434  __TEXT,__text  ___swift_instantiateConcreteTypeFromMangledNameV2
+0x1846e7488  __TEXT,__text  -[UIView setTransform:]
+0x1846e756c  __TEXT,__text  -[UIView _recordTraitUsage:trackedStateDiff:insideMethod:withInvalidationAction:additive:]
+0x1846e7654  __TEXT,__text  __UIClippedCornerInsetsPropagatedToChildRect
+0x1846e7c80  __TEXT,__text  -[UIView _safeAreaInsetsForFrame:inSuperview:ignoreViewController:]
+0x1846e8168  __TEXT,__text  __UIEdgeInsetsPropagatedToChildRectOnEdges
+0x1846e8180  __TEXT,__text  __UIEdgeInsetsPropagatedToChildRectOnEdgesAndIncludingOutset
+0x1846e837c  __TEXT,__text  -[UIView _isDeallocInitiated]
+0x1846e8398  __TEXT,__text  -[UIView _updateConstraintsAsNecessaryAndApplyLayoutFromEngineIfNeeded:needsLayoutDuringTransactionCommitting:]
+0x1846e8408  __TEXT,__text  -[UIView _wantsReapplicationOfAutoLayoutWithLayoutDirtyOnEntry:]
+0x1846e85b0  __TEXT,__text  ___swift_project_value_buffer
+0x1846e866c  __TEXT,__text  -[UIView(UIKitManual) actionForLayer:forKey:]
+0x1846e88e8  __TEXT,__text  -[UIView _backing_didMoveToSuperView]
+0x1846e893c  __TEXT,__text  __UITraitTokenForTraitLocked
+0x1846e8cf8  __TEXT,__text  __UIGetTraitMetadata
+0x1846e8da8  __TEXT,__text  -[UITraitCollection _valueForTraitWithMetadata:acquireLock:]
+0x1846e8ef0  __TEXT,__text  __UIGetTraitMetadataWithTraitTokenValueAcquireLock
+0x1846e9154  __TEXT,__text  -[UITraitCollection _objectForTraitToken:]
+0x1846e93fc  __TEXT,__text  -[UITraitCollection objectForTrait:]
+0x1846e945c  __TEXT,__text  __UIGetTraitMetadataLocked
+0x1846e9b44  __TEXT,__text  ___swift_noop_void_return
+0x1846eb284  __TEXT,__text  ___swift_assign_boxed_opaque_existential_1
+0x1846eb5e4  __TEXT,__text  __UIViewBackingObservesChanges
+0x1846eb62c  __TEXT,__text  +[UIView _defaultKeyPathsToSyncWithPrivateSubviews]
+0x1846eb7ac  __TEXT,__text  _get_enum_tag_for_layout_string So6UIViewC5UIKitE8Material_pSg
+0x1846ebad4  __TEXT,__text  +[_UIViewLayoutFeedbackLoopDebugger layoutFeedbackLoopDebugger]
+0x1846ebb68  __TEXT,__text  -[UIWindow _isVisible]
+0x1846ebb84  __TEXT,__text  ___setupCA_block_invoke_2
+0x1846ebb9c  __TEXT,__text  __UIUpdateInputSetInputChanged
+0x1846ebc68  __TEXT,__text  +[UIView _wantsDeepColorByDefault]
+0x1846ebc74  __TEXT,__text  -[UIViewController _setAllowsAutorotation:]
+0x1846ebca0  __TEXT,__text  -[UIView(UIKitManual) layer]
+0x1846ebcb8  __TEXT,__text  -[UIView(Hierarchy) window]
+0x1846ebcd0  __TEXT,__text  -[UIView _definesTintColor]
+0x1846ebd04  __TEXT,__text  -[UIView(Geometry) setBounds:]
+0x1846ec114  __TEXT,__text  -[UIView _shouldInvalidateBaselineConstraintsForSize:oldSize:]
+0x1846ec160  __TEXT,__text  -[UIScreen displayIdentity]
+0x1846ec1c0  __TEXT,__text  -[UIScene _FBSScene]
+0x1846ec1d4  __TEXT,__text  -[UIScene session]
+0x1846ec1e8  __TEXT,__text  -[UIApplication userInterfaceLayoutDirection]
+0x1846ec230  __TEXT,__text  -[UIView(Geometry) convertRect:toView:]
+0x1846ec320  __TEXT,__text  -[UISceneSession role]
+0x1846ec328  __TEXT,__text  -[UIApplication connectedScenes]
+0x1846ec384  __TEXT,__text  -[_UIPageIndicatorStore store]
+0x1846ec38c  __TEXT,__text  -[_UIInteractivePageControlVisualProvider resolvedDirection]
+0x1846ec3a0  __TEXT,__text  +[UIUserInterfaceStyleArbiter sharedInstance]
+0x1846ec4e0  __TEXT,__text  -[_UIImageContent scale]
+0x1846ec4e8  __TEXT,__text  -[_UIPageIndicatorView page]
+0x1846ec4fc  __TEXT,__text  -[UIView _updateInferredLayoutMargins]
+0x1846ec52c  __TEXT,__text  -[UIView(Rendering) contentScaleFactor]
+0x1846ec574  __TEXT,__text  -[UIView _concreteDefaultLayoutMargins]
+0x1846ec5d8  __TEXT,__text  __UIViewRecursivelyApplyBlockToSubtreesWithMotionEffects
+0x1846ec734  __TEXT,__text  -[UIView _updateInferredLayoutMarginsFromSuperview:]
+0x1846ecdb0  __TEXT,__text  __UIViewAdjustedLayoutMarginsForLayoutMargins
+0x1846ed208  __TEXT,__text  ____UIViewResolvedMargins_block_invoke
+0x1846ed274  __TEXT,__text  -[UIViewController initWithNibName:bundle:]
+0x1846ed3d0  __TEXT,__text  -[UIViewController _populateInitialTraitCollection]
+0x1846ed458  __TEXT,__text  -[UIViewController _doCommonSetup]
+0x1846ed7ac  __TEXT,__text  +[UIScreen mainScreen]
+0x1846ed98c  __TEXT,__text  ___22+[UIScreen mainScreen]_block_invoke
+0x1846eda10  __TEXT,__text  -[UIScreen bounds]
+0x1846eda64  __TEXT,__text  -[UIViewController _inferLayoutGuidesFromSubviews]
+0x1846ede3c  __TEXT,__text  -[UIViewController loadViewIfRequired]
+0x1846ee3d8  __TEXT,__text  -[UIViewController _setUpLayoutGuideConstraintIfNecessaryAtTop:]
+0x1846ee6e8  __TEXT,__text  -[UIViewController _needsAutomaticContentUnavailableConfigurationUpdates]
+0x1846ee774  __TEXT,__text  __UIViewControllerDefaultModalTransitionStyle
+0x1846ee7d0  __TEXT,__text  -[UIView _updateCombinedInsetsIfNecessary]
+0x1846ee8c0  __TEXT,__text  -[UIView(Rendering) setNeedsDisplay]
+0x1846ee938  __TEXT,__text  -[UIView(MultiLayer) _allSubviews]
+0x1846eeb14  __TEXT,__text  -[UIResponder(UIResponderChainTraversal) _didChangeDeepestActionResponder]
+0x1846eeb28  __TEXT,__text  -[UIView(_UIKitViewLandmarks) __isLandmarkView]
+0x1846eeb44  __TEXT,__text  -[UIView _setNeedsContentsFormatUpdate:]
+0x1846eeb70  __TEXT,__text  -[UIImage isEqual:]
+0x1846eee9c  __TEXT,__text  -[UIView(Rendering) setContentScaleFactor:]
+0x1846eef48  __TEXT,__text  -[UIView _window]
+0x1846eef4c  __TEXT,__text  -[UITraitCollection accessibilityContrast]
+0x1846eef78  __TEXT,__text  -[UIView(Rendering) setBackgroundColor:]
+0x1846eef7c  __TEXT,__text  -[UIColor _resolvedBackgroundColorWithTraitCollection:]
+0x1846ef130  __TEXT,__text  -[UIView _setBackgroundCGColor:withSystemColorName:]
+0x1846ef600  __TEXT,__text  -[UIView(Rendering) isOpaque]
+0x1846ef618  __TEXT,__text  -[UIView _hasOpaqueBackground]
+0x1846f0260  __TEXT,__text  -[UIStatusBarStyleRequest initWithStyle:legibilityStyle:foregroundColor:]
+0x1846f026c  __TEXT,__text  std::__1::pair<void (*)(), _UITrackedTraitUsageRecord>* std::__1::vector<std::__1::pair<void (*)(), _UITrackedTraitUsageRecord>, std::__1::allocator<std::__1::pair<void (*)(), _UITrackedTraitUsageRecord> > >::__emplace_back_slow_path<void (*&)(), _UITrackedTraitUsageRecord&>(void (*&)(), _UITrackedT
+0x1846f036c  __TEXT,__text  ___UIViewWillBeRemovedFromSuperview
+0x1846f0790  __TEXT,__text  +[UIFocusRingManager focusRingAvailableInBehavior:]
+0x1846f07d8  __TEXT,__text  -[UIStatusBarStyleRequest hash]
+0x1846f0834  __TEXT,__text  -[UIViewController(UIContainerViewControllerCallbacks) willMoveToParentViewController:]
+0x1846f089c  __TEXT,__text  -[_UIAfterCACommitQueue enqueuePostCommitBlock:]
+0x1846f08a8  __TEXT,__text  -[UIView(Geometry) setAutoresizingMask:]
+0x1846f08d4  __TEXT,__text  -[UIViewController _setSecurityModeForViewsLayer]
+0x1846f096c  __TEXT,__text  -[_UIApplicationInfo backgroundStyle]
+0x1846f0980  __TEXT,__text  -[UIViewController _window]
+0x1846f0a68  __TEXT,__text  -[UIViewController _rootAncestorViewControllerInWindow:]
+0x1846f0b54  __TEXT,__text  -[UIViewController _addChildViewController:performHierarchyCheck:notifyWillMove:]
+0x1846f0dc4  __TEXT,__text  -[UIViewController setParentViewController:]
+0x1846f0f1c  __TEXT,__text  -[UIViewController __setParentViewController:]
+0x1846f1038  __TEXT,__text  -[UIView _invalidateAutoresizingConstraints]
+0x1846f1084  __TEXT,__text  -[UIViewController setView:]
+0x1846f1694  __TEXT,__text  -[UIView __setViewDelegate:]
+0x1846f1830  __TEXT,__text  -[UIViewController nibName]
+0x1846f1a90  __TEXT,__text  -[UIView _updateEmbeddedViewControllerContentOverlayInsetsIfNecessary]
+0x1846f1ddc  __TEXT,__text  +[UIViewController setViewController:forView:]
+0x1846f1de8  __TEXT,__text  -[UIViewController _updateContentOverlayInsetsFromParentIfNecessary]
+0x1846f25cc  __TEXT,__text  -[UIViewController _shouldSkipContentOverlayInsetsUpdate]
+0x1846f2740  __TEXT,__text  __UIViewSetLayerNameDescriptionEnabled
+0x1846f2794  __TEXT,__text  -[UIViewController _defaultContentScrollViewForEdge:]
+0x1846f28fc  __TEXT,__text  -[UIViewController _sendViewDidLoadWithAppearanceProxyObjectTaggingEnabled]
+0x1846f297c  __TEXT,__text  -[UIViewController viewDidLoad]
+0x1846f2980  __TEXT,__text  -[UIViewController contentScrollView]
+0x1846f2984  __TEXT,__text  -[UIViewController _embeddingView]
+0x1846f2998  __TEXT,__text  -[UIViewController traitCollection]
+0x1846f2b3c  __TEXT,__text  -[UICachedDeviceWhiteColor release]
+0x1846f2b40  __TEXT,__text  -[NSValue(NSValueUIGeometryExtensions) CGSizeValue]
+0x1846f2b78  __TEXT,__text  __UIViewSetBackgroundColorSystemColorName
+0x1846f2c88  __TEXT,__text  -[UIView _removeChildTraitOverridesWithIdentifier:]
+0x1846f2ce4  __TEXT,__text  -[_UITraitOverrides _removeChildOverridesWithIdentifier:]
+0x1846f2e84  __TEXT,__text  -[_UIApplicationInfo statusBarHiddenWhenVerticallyCompact]
+0x1846f2e98  __TEXT,__text  -[UIView _backgroundCGColor]
+0x1846f2f5c  __TEXT,__text  -[UIView maskView]
+0x1846f2f60  __TEXT,__text  -[UITraitCollection _valueForBuiltInTraitWithTraitTokenValue:]
+0x1846f314c  __TEXT,__text  -[UITraitCollection _specifiedTraitTokens]
+0x1846f31b8  __TEXT,__text  -[UITraitCollection _traitCollectionByModifyingTraitsCopyOnWrite:]
+0x1846f3454  __TEXT,__text  -[UIViewController(BinaryCompatibility) _splitViewControllerEnforcingClass:]
+0x1846f35a8  __TEXT,__text  __UIPerformWithTraitLock
+0x1846f36dc  __TEXT,__text  __UIViewRemoveConstraintsMadeDanglyByChangingSuperview
+0x1846f3a4c  __TEXT,__text  __UIUserInterfaceSizeClassDefaultResolverForUserInterfaceIdiomOnAxis
+0x1846f3c00  __TEXT,__text  -[UIView setUserInteractionEnabled:]
+0x1846f3d0c  __TEXT,__text  -[_UIApplicationInfo statusBarForcedHiddenForInterfaceOrientation:onDisplay:withUserInterfaceIdiom:]
+0x1846f3d8c  __TEXT,__text  -[UIView _setLastNotifiedTraitCollection:]
+0x1846f3da0  __TEXT,__text  -[UIViewController(UIContainerViewControllerProtectedMethods) overrideTraitCollectionForChildViewController:]
+0x1846f3db4  __TEXT,__text  -[UIView _updateNeedsDisplayOnBoundsChange]
+0x1846f3ef8  __TEXT,__text  -[UIView _traitOverridesIfExist]
+0x1846f3f40  __TEXT,__text  -[UIView(Hierarchy) _setBackgroundColor:]
+0x1846f4348  __TEXT,__text  -[_UITraitChangeRegistry .cxx_construct]
+0x1846f43b0  __TEXT,__text  -[UIView(Internal) _viewControllerForAncestor]
+0x1846f4410  __TEXT,__text  -[UICachedDeviceWhiteColor autorelease]
+0x1846f4414  __TEXT,__text  -[UIViewController(UISplitViewController) splitViewController]
+0x1846f44a8  __TEXT,__text  -[UIViewController _contentOrObservableScrollViewForEdge:]
+0x1846f44d0  __TEXT,__text  -[UIViewController _resolveContentScrollViewForEdge:]
+0x1846f4778  __TEXT,__text  -[UIViewController _contentScrollViewHeuristic]
+0x1846f4b98  __TEXT,__text  __UIBarStyleWithTintColorIsTranslucentOnScreen
+0x1846f4c20  __TEXT,__text  -[UIView(AdditionalLayoutSupport) _hostsLayoutEngineAllowsTAMIC_NO]
+0x1846f4cb8  __TEXT,__text  -[UIViewController _compatibilityTraitOverridesFromParentViewControllerCreateIfNecessary:]
+0x1846f4d3c  __TEXT,__text  -[_UIAfterCACommitQueue _enqueueCommitResponse:forPhase:]
+0x1846f4f48  __TEXT,__text  -[_UIAfterCACommitBlock _initWithBlock:]
+0x1846f4fd0  __TEXT,__text  -[UIViewController(UINavigationControllerItem) navigationController]
+0x1846f5048  __TEXT,__text  -[UIViewController _ancestorViewControllerOfClass:allowModalParent:]
+0x1846f50f8  __TEXT,__text  __UIInternalPreference_LogStaleViewControllerTraitCollectionBacktrace_block_invoke_2
+0x1846f5160  __TEXT,__text  -[UIView _usesAutoresizingConstraints]
+0x1846f51d0  __TEXT,__text  -[UIViewController presentingViewController]
+0x1846f523c  __TEXT,__text  -[UIView _backing_insertSubview:atIndex:]
+0x1846f52a8  __TEXT,__text  -[UICachedDeviceWhiteColor retain]
+0x1846f52ac  __TEXT,__text  -[UIView registerForTraitChanges:withHandler:]
+0x1846f5324  __TEXT,__text  +[UITraitCollection _traitTokensIncludingPlaceholdersForTraits:]
+0x1846f53d0  __TEXT,__text  ___64+[UITraitCollection _traitTokensIncludingPlaceholdersForTraits:]_block_invoke
+0x1846f54c8  __TEXT,__text  -[UIView _registerForTraitTokenChanges:withHandler:]
+0x1846f5558  __TEXT,__text  -[_UITraitChangeRegistry registerForTraitTokenChanges:withHandler:]
+0x1846f572c  __TEXT,__text  -[_UITraitChangeRegistry _addRegistration:forTraitTokens:]
+0x1846f589c  __TEXT,__text  __UIInlinePointerSetInsertElement(_UIInlinePointerSet*, void*, bool)
+0x1846f59bc  __TEXT,__text  ___75-[UITraitCollection _traitCollectionByReplacingValue:forTraitWithMetadata:]_block_invoke
+0x1846f5a50  __TEXT,__text  -[UIView(Hierarchy) removeFromSuperview]
+0x1846f5bc4  __TEXT,__text  -[UIView _backing_removeFromSuperview]
+0x1846f5c44  __TEXT,__text  ___UIViewWasRemovedFromSuperview
+0x1846f5fb8  __TEXT,__text  __UIStateRestorationDebugLogEnabled
+0x1846f607c  __TEXT,__text  +[NSValue(NSValueUIGeometryExtensions) valueWithCGSize:]
+0x1846f60bc  __TEXT,__text  -[UIStatusBarStyleRequest isEqual:]
+0x1846f624c  __TEXT,__text  __stateRestorationPathForBundleIdentifier
+0x1846f637c  __TEXT,__text  -[UIStatusBarStyleRequest .cxx_destruct]
+0x1846f6400  __TEXT,__text  __UIScreenReferenceBoundsSizeForType
+0x1846f6518  __TEXT,__text  -[_UIApplicationInfo statusBarHiddenForInterfaceOrientation:onDisplay:]
+0x1846f65d0  __TEXT,__text  __getNSValueBytes
+0x1846f67dc  __TEXT,__text  -[UIImage _initWithData:preserveScale:cache:scale:]
+0x1846f6888  __TEXT,__text  __UIImageRefFromData
+0x1846f69f8  __TEXT,__text  __UIImageGetOrientationAndScale
+0x1846f6b54  __TEXT,__text  -[UIImage initWithCGImage:scale:orientation:]
+0x1846f6bd8  __TEXT,__text  -[UIImageView initWithImage:]
+0x1846f6cc8  __TEXT,__text  -[UIImage(UIImageLoadingPrivate) _isDecompressing]
+0x1846f6cd0  __TEXT,__text  ___52-[UIImageView _updateImageViewForOldImage:newImage:]_block_invoke
+0x1846f6cd8  __TEXT,__text  -[_UIImageContent canScaleImageToTargetResolution]
+0x1846f6ce0  __TEXT,__text  -[_UIImageContent initWithScale:]
+0x1846f6d38  __TEXT,__text  +[_UIImageContentLayout layoutForSource:inTarget:withSize:]
+0x1846f76f0  __TEXT,__text  ___56-[_UIImageContentLayout initWithSource:target:withSize:]_block_invoke
+0x1846f7d20  __TEXT,__text  _LayerContentModeTransform
+0x1846f7f2c  __TEXT,__text  +[_UIImageContentRenditionContext contextWithRenderEnvironment:source:]
+0x1846f7fc8  __TEXT,__text  -[_UIImageContentLayout contents]
+0x1846f7ff4  __TEXT,__text  -[_UIImageContentLayout _materializeRenditionContents]
+0x1846f8088  __TEXT,__text  ___61-[_UIImageContentLayout _prepareContentOfSize:source:target:]_block_invoke_2
+0x1846f80e8  __TEXT,__text  -[_UIImageContent renditionWithSize:scale:renditionContext:]
+0x1846f8650  __TEXT,__text  __UIImageViewCommonInit
+0x1846f87a4  __TEXT,__text  +[_UIHDRUsageCoordinator useCALayerDynamicRange]
+0x1846f887c  __TEXT,__text  -[UIImageView _setImageViewContents:]
+0x1846f8be0  __TEXT,__text  +[UIView(Animation) performWithoutAnimation:]
+0x1846f8c4c  __TEXT,__text  -[UIImageConfiguration _initWithTraitCollection:]
+0x1846f8cc0  __TEXT,__text  -[UITraitCollection _traitCollectionRelevantForImageConfiguration]
+0x1846f8d88  __TEXT,__text  -[UITraitCollection _traitCollectionByReplacingNSIntegerValue:forTraitToken:]
+0x1846f8e3c  __TEXT,__text  -[UITraitCollection _isEqualToTraitCollectionForResolvingImage:]
+0x1846f8f18  __TEXT,__text  -[UIImageView _resolvedImageFromImage:withImageViewTrait:]
+0x1846f9148  __TEXT,__text  -[UITraitCollection _traitCollectionByPopulatingUnspecifiedTraitsWithValuesFromTraitCollection:]
+0x1846f91bc  __TEXT,__text  ___96-[UITraitCollection _traitCollectionByPopulatingUnspecifiedTraitsWithValuesFromTraitCollection:]_block_invoke
+0x1846f925c  __TEXT,__text  ___96-[UITraitCollection _traitCollectionByPopulatingUnspecifiedTraitsWithValuesFromTraitCollection:]_block_invoke_2
+0x1846f9338  __TEXT,__text  -[UITraitCollection layoutDirection]
+0x1846f9474  __TEXT,__text  -[UITraitCollection isEqual:]
+0x1846f95c0  __TEXT,__text  -[UIImageView _resolveImagesWithPreviouslyDisplayedImage:]
+0x1846f9878  __TEXT,__text  -[UIImageView _effectiveImageViewTraitCollectionForResolvingImages]
+0x1846f9958  __TEXT,__text  -[UIImageConfiguration configurationWithTraitCollection:]
+0x1846f9a1c  __TEXT,__text  -[UIImageConfiguration copyWithZone:]
+0x1846f9a90  __TEXT,__text  -[UIImageConfiguration _setSystemIconAppearance:]
+0x1846f9b04  __TEXT,__text  +[UIImageConfiguration _completeConfiguration:fromConfiguration:]
+0x1846f9c2c  __TEXT,__text  -[UIImage imageWithConfiguration:]
+0x1846f9ee4  __TEXT,__text  +[UITraitCollection _currentTraitCollectionWithUnmarkedFallback]
+0x1846f9f10  __TEXT,__text  __UICurrentImageTraitCollection
+0x1846f9f58  __TEXT,__text  -[UIImageConfiguration isEqualToConfiguration:]
+0x1846fa0cc  __TEXT,__text  _UIEqual
+0x1846fa140  __TEXT,__text  _UIEqual
+0x1846fa140  __TEXT,__text  _UIEqual
+0x1846fa1b0  __TEXT,__text  _UIEqual
+0x1846fa220  __TEXT,__text  -[UIImageConfiguration .cxx_destruct]
+0x1846fa258  __TEXT,__text  -[UITraitCollection legibilityWeight]
+0x1846fa2d0  __TEXT,__text  -[UITraitCollection _userInterfaceRenderingMode]
+0x1846fa2fc  __TEXT,__text  -[UIImageView _symbolConfigurationForImage:]
+0x1846fa4e8  __TEXT,__text  -[UIImage CGImage]
+0x1846fa4f0  __TEXT,__text  -[UIImageView _setImage:invalidatingPendingSymbolTransitions:]
+0x1846fa798  __TEXT,__text  -[UIImageConfiguration _shouldApplyConfiguration:]
+0x1846fa7c8  __TEXT,__text  -[UIImageConfiguration _isUnspecified]
+0x1846fa7f0  __TEXT,__text  -[UIImageSymbolConfiguration copyWithZone:]
+0x1846fa918  __TEXT,__text  -[UIView(AdditionalLayoutSupport) translatesAutoresizingMaskIntoConstraints]
+0x1846fa934  __TEXT,__text  -[UIViewController _existingView]
+0x1846fa948  __TEXT,__text  -[UIView _drawsAsBackdropOverlay]
+0x1846fa964  __TEXT,__text  -[UIView(Internal) viewTraversalMark]
+0x1846fa97c  __TEXT,__text  -[UIResponder _clearOverrideNextResponder]
+0x1846faa00  __TEXT,__text  -[UIView(AdditionalLayoutSupport) needsUpdateConstraints]
+0x1846faa1c  __TEXT,__text  -[UIView(AdditionalLayoutSupport) nsis_orientationHintForVariable:]
+0x1846facd8  __TEXT,__text  -[UIView safeAreaInsets]
+0x1846facf0  __TEXT,__text  -[UIView _shouldInformFocusAboutBecomingVisible]
+0x1846fad78  __TEXT,__text  -[UIView(Internal) _subclassImplementsDrawRect]
+0x1846fadac  __TEXT,__text  -[UIView _setViewDelegateContentOverlayInsetsAreClean:]
+0x1846fadd8  __TEXT,__text  __UITraitCollectionWasCopied
+0x1846faf70  __TEXT,__text  -[UIView(AutoLayoutManual) _minYVariable]
+0x1846faf88  __TEXT,__text  -[UIView(AdditionalLayoutSupport) _wantsAutolayout]
+0x1846fafa0  __TEXT,__text  -[UIView(AutoLayoutManual) _boundsHeightVariable]
+0x1846fafb8  __TEXT,__text  -[UIView(AdditionalLayoutSupport) _invalidateIntrinsicContentSizeNeedingLayout:]
+0x1846fb0ec  __TEXT,__text  -[UIView(Hierarchy) didMoveToSuperview]
+0x1846fb0f0  __TEXT,__text  +[UIColor allocWithZone:]
+0x1846fb178  __TEXT,__text  -[UIImageView initWithFrame:]
+0x1846fb1d8  __TEXT,__text  -[UIView _safeAreaInsetsForFrame:inSuperview:]
+0x1846fb1e0  __TEXT,__text  -[UIViewController __viewWillAppear:]
+0x1846fb3d8  __TEXT,__text  -[UIView(Rendering) backgroundColor]
+0x1846fb3dc  __TEXT,__text  __UILayoutItemCreateAndObserveVariableWithValueRestriction
+0x1846fb450  __TEXT,__text  -[UIView(AdditionalLayoutSupport) nsli_lowerAttribute:intoExpression:withCoefficient:forConstraint:onBehalfOfLayoutGuide:]
+0x1846fc320  __TEXT,__text  -[UIView(AdditionalLayoutSupport) nsli_engineToUserScalingCoefficients]
+0x1846fc368  __TEXT,__text  -[UIView(AutoLayoutManual) nsli_minXVariable]
+0x1846fc408  __TEXT,__text  -[UIView _constraintsExceptingSubviewAutoresizingConstraints]
+0x1846fc41c  __TEXT,__text  -[UIView(AdditionalLayoutSupport) _uili_existingObservationEligibleLayoutVariables]
+0x1846fc420  __TEXT,__text  -[UIView _shouldNotifyGeometryObservers]
+0x1846fc458  __TEXT,__text  -[UIImageSymbolConfiguration variableValueMode]
+0x1846fc470  __TEXT,__text  +[UIStatusBar _styleAttributesForStatusBarStyle:]
+0x1846fc4d8  __TEXT,__text  +[UIView(Animation) _isInAnimationBlockWithAnimationsEnabled]
+0x1846fc514  __TEXT,__text  -[UIView _clippedSafeAreaCornerInsets]
+0x1846fc52c  __TEXT,__text  -[UIView(Hierarchy) didAddSubview:]
+0x1846fc530  __TEXT,__text  -[UIView _setNeedsContentsFormatUpdate]
+0x1846fc538  __TEXT,__text  +[UIView(UIConstraintBasedLayout) requiresConstraintBasedLayout]
+0x1846fc540  __TEXT,__text  -[UIView _overrideTintColorAutomaticallyOverridesTintColor]
+0x1846fc548  __TEXT,__text  -[_UIImageContent isDecompressing]
+0x1846fc550  __TEXT,__text  -[UIView(Internal) _isAncestorOfFirstResponder]
+0x1846fc568  __TEXT,__text  -[UIView(Rendering) setClipsToBounds:]
+0x1846fc584  __TEXT,__text  -[UIView _edgesPropagatingSafeAreaInsetsToSubviews]
+0x1846fc58c  __TEXT,__text  -[UIView _safeAreaInsetsFrozen]
+0x1846fc5a4  __TEXT,__text  +[UIView _supportsInvalidatingFocusCache]
+0x1846fc5fc  __TEXT,__text  +[UIView layerClass]
+0x1846fc608  __TEXT,__text  -[UIViewController(_UIFallbackEnvironment) _fallbackTraitCollection]
+0x1846fc60c  __TEXT,__text  +[UIView(Internal) _registerClassForIdiomInitializationIfNeccessary]
+0x1846fc6e8  __TEXT,__text  -[UIView _isRenderedHorizontallyFlipped]
+0x1846fc700  __TEXT,__text  -[UIViewController _willChangeToIdiom:onScreen:]
+0x1846fc704  __TEXT,__text  +[UIView(Animation) _isInAnimationBlock]
+0x1846fc718  __TEXT,__text  -[UIView(Internal) _canDrawContent]
+0x1846fc73c  __TEXT,__text  -[UIView(Hierarchy) addSubview:]
+0x1846fc748  __TEXT,__text  +[UIDevice _isWatch]
+0x1846fc790  __TEXT,__text  -[UIViewController _setFormSheetSize:]
+0x1846fc7a4  __TEXT,__text  +[UIViewController defaultFormSheetSize]
+0x1846fc838  __TEXT,__text  -[UIViewController setDefinesPresentationContext:]
+0x1846fc864  __TEXT,__text  -[UIViewController storyboardSegueTemplates]
+0x1846fc878  __TEXT,__text  -[UIViewController(UIContainerViewControllerProtectedMethods) addChildViewController:]
+0x1846fc884  __TEXT,__text  -[UIView _overrideTintColor]
+0x1846fc8c8  __TEXT,__text  -[UIImage hasMidline]
+0x1846fc8d0  __TEXT,__text  -[_UIImageContent prefersProvidingNonCGImageContentsDirectlyForRendering]
+0x1846fc8d8  __TEXT,__text  -[UIImage _hasExplicitBaseline]
+0x1846fc8e4  __TEXT,__text  -[UIImage _representsCIImageWhichSupportsIOSurfaceRendering]
+0x1846fc928  __TEXT,__text  -[UIImage duration]
+0x1846fc930  __TEXT,__text  -[_UIViewVisitor _currentlyVisitingHierarchy]
+0x1846fc938  __TEXT,__text  -[UIView(Hierarchy) _backgroundColor]
+0x1846fcabc  __TEXT,__text  +[UIStatusBar _shouldForwardToImplementationClassForStyle:]
+0x1846fcb38  __TEXT,__text  -[NSObject(UIAccessibility) _accessibilityGetBlockForAttribute:]
+0x1846fcbb0  __TEXT,__text  +[UIStatusBar _heightForStyle:orientation:forStatusBarFrame:inWindow:isAzulBLinked:]
+0x1846fcc68  __TEXT,__text  -[UIView(Hierarchy) subviews]
+0x1846fd070  __TEXT,__text  -[UIView(Rendering) alpha]
+0x1846fd074  __TEXT,__text  -[UIView(Rendering) setAlpha:]
+0x1846fd250  __TEXT,__text  -[UIView _backing_setAlpha:]
+0x1846fd2e0  __TEXT,__text  -[UIView(Rendering) _setContentStretchInPixels:forContentSize:shouldTile:]
+0x1846fd41c  __TEXT,__text  -[UIView _focusSystem]
+0x1846fd42c  __TEXT,__text  -[UIView _backing_alpha]
+0x1846fd4b0  __TEXT,__text  -[UIImageView _updateHDRFlags:]
+0x1846fd5cc  __TEXT,__text  +[_UIHDRUsageCoordinator convertDynamicRange:]
+0x1846fd620  __TEXT,__text  -[NSObject(UIAccessibility) accessibilityAttributedLabel]
+0x1846fd624  __TEXT,__text  __IsKindOfUIView
+0x1846fd6a4  __TEXT,__text  -[UIView(Internal) _unsubscribeToScrollNotificationsIfNecessary:]
+0x1846fd744  __TEXT,__text  -[UIView(UIKitManual) __isKindOfUIView]
+0x1846fd74c  __TEXT,__text  -[UIView(Internal) _subscribeToScrollNotificationsIfNecessary:]
+0x1846fd7b0  __TEXT,__text  -[UIView(Hierarchy) movedFromSuperview:]
+0x1846fd7b4  __TEXT,__text  -[_UIImageContentRenditionContext _renderingEffectsWithSize:]
+0x1846fd8d0  __TEXT,__text  -[UIImageView _effectsForRenderingSource:size:renditionContext:]
+0x1846fdabc  __TEXT,__text  +[_UIImageContentRenditionEffects effectsWithTintColor:visualEffects:drawMode:bold:]
+0x1846fdb4c  __TEXT,__text  +[_UIImageContentProvider providerWithDrawingProvider:CGImageProvider:rbSymbolConfigurationProvider:]
+0x1846fdc10  __TEXT,__text  -[_UIImageContentRenditionContext _renditionWithContentProvider:effects:size:]
+0x1846fdce0  __TEXT,__text  -[UIImageView _renditionForSource:effects:size:withContentProvider:renditionContext:]
+0x1846fe350  __TEXT,__text  +[_UIImageContentRendition renditionWithContentProvider:color:effects:drawMode:]
+0x1846fe404  __TEXT,__text  -[_UIImageContentRenditionEffects .cxx_destruct]
+0x1846fe43c  __TEXT,__text  -[_UIImageContentRendition CGImage]
+0x1846fe498  __TEXT,__text  -[_UIImageContentProvider CGImageProvider]
+0x1846fe4cc  __TEXT,__text  -[_UIImageContentRenditionContext .cxx_destruct]
+0x1846fe514  __TEXT,__text  -[_UIImageContentLayout contentEffects]
+0x1846fe54c  __TEXT,__text  -[_UIImageContentLayout contentsMultiplyColor]
+0x1846fe584  __TEXT,__text  -[_UIImageContentLayout contentDrawMode]
+0x1846fe5bc  __TEXT,__text  __setContentStretchForImage
+0x1846fe7dc  __TEXT,__text  ___60-[_UIImageContent renditionWithSize:scale:renditionContext:]_block_invoke_2
+0x1846fe7e4  __TEXT,__text  __UIIsSystemSymbolImage
+0x1846fe87c  __TEXT,__text  -[UIView(UIViewLayoutConstraintCreation) leftAnchor]
+0x1846fe908  __TEXT,__text  -[UIView(UIConstraintBasedLayout) nsli_addConstraint:]
+0x1846fe9c0  __TEXT,__text  -[UIView _tryToAddConstraint:roundingAdjustment:mutuallyExclusiveConstraints:]
+0x1846feaa4  __TEXT,__text  -[UIView(AdditionalLayoutSupport) _accumulateViewConstraintsIntoArray:]
+0x1846febcc  __TEXT,__text  -[UIView(AdditionalLayoutSupport) _initializeHostedLayoutEngine]
+0x1846fed18  __TEXT,__text  -[UIView _preferredLayoutEngineToUserScalingCoefficients]
+0x1846fede0  __TEXT,__text  ___57-[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:]_block_invoke
+0x1846ff040  __TEXT,__text  ___57-[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:]_block_invoke_2
+0x1846ff200  __TEXT,__text  -[UIView(AutoLayoutManual) _boundsWidthVariable]
+0x1846ff218  __TEXT,__text  -[UIView(Dragging) interactions]
+0x1846ff290  __TEXT,__text  -[UIView(AdditionalLayoutSupport) _switchToLayoutEngine:]
+0x1846ff394  __TEXT,__text  __UIViewNotifyPhysicalButtonArbiterOfEffectiveVisibilityChangeIfNeeded
+0x1846ff468  __TEXT,__text  -[UIView _createIfNeededAnchorForAssocObjectKey:class:withAttribute:]
+0x1846ff52c  __TEXT,__text  -[UIView(AdditionalLayoutSupport) _needsDoubleUpdateConstraintsPass]
+0x1846ff5b4  __TEXT,__text  -[UIView _notifySubtreeVisibilityDidChange:isRoot:]
+0x1846ff7fc  __TEXT,__text  __UIViewNotifiesFocusEngineForAlphaAndHiddenChanges
+0x1846ff870  __TEXT,__text  _CLIENT_LAYER
+0x1846ff884  __TEXT,__text  -[UIView(AdditionalLayoutSupport) _informContainerThatSubviewsNeedUpdateConstraintsNeedingLayout:]
+0x1846ffb7c  __TEXT,__text  -[UIView _layoutEngine_didAddLayoutConstraint:roundingAdjustment:mutuallyExclusiveConstraints:]
+0x184700530  __TEXT,__text  -[UIView _isViewHierarchyPreparedForConstraint:]
+0x1847005b8  __TEXT,__text  __tagLayoutItem
+0x18470065c  __TEXT,__text  -[UIView(AdditionalLayoutSupport) _configureAutolayoutFlagsNeedingLayout:]
+0x1847007d0  __TEXT,__text  -[UIView(AdditionalLayoutSupport) _startObservingVariablesOnlyToSupportTAMICChange:]
+0x184700a90  __TEXT,__text  -[UIView(AdditionalLayoutSupport) _supportsContentDimensionVariables]
+0x184700a98  __TEXT,__text  __UILayoutItemSetUpVariableObservation
+0x184700c5c  __TEXT,__text  __UIViewAutoLayoutShouldAbandonKVO2
+0x184700ca4  __TEXT,__text  -[UIView layoutGuides]
+0x184700d00  __TEXT,__text  +[UIViewAnimationState pushViewAnimationState:options:context:]
+0x184700e30  __TEXT,__text  -[UITraitCollection _initWithBuiltinTraitStorage:tintColor:customTraitStorage:]
+0x1847012e8  __TEXT,__text  __UIViewInvalidateTraitCollectionAndSchedulePropagation
+0x184701764  __TEXT,__text  ___66-[UITraitCollection _traitCollectionByModifyingTraitsCopyOnWrite:]_block_invoke_2
+0x18470187c  __TEXT,__text  -[UITraitCollection _setValue:forTraitWithMetadata:acquireLock:]
+0x1847021d4  __TEXT,__text  +[UITraitCollection _emptyTraitCollection]
+0x18470221c  __TEXT,__text  -[UITraitCollection _valueForNSIntegerTraitToken:]
+0x18470228c  __TEXT,__text  -[_UITraitOverrides .cxx_construct]
+0x1847022a8  __TEXT,__text  -[_UITraitOverrides initWithDelegate:]
+0x184702378  __TEXT,__text  -[_UITraitOverrides _setDelegate:]
+0x18470240c  __TEXT,__text  +[_UITraitTokenSet emptySet]
+0x184702454  __TEXT,__text  -[_UITraitOverrides _setOverrideTraitCollection:defaultValueOverrides:]
+0x1847024cc  __TEXT,__text  -[_UITraitOverrides _setOverrideTraitCollection:defaultValueOverrides:overridesAppliedBefore:overridesAppliedAfter:]
+0x18470273c  __TEXT,__text  -[_UITraitOverrides _setNSIntegerValue:forTraitToken:]
+0x1847028cc  __TEXT,__text  -[UIView _traitOverrides]
+0x18470297c  __TEXT,__text  -[UIViewAnimationState _requestsFlushUpdatesByDefault]
+0x184702a4c  __TEXT,__text  +[UIView(UIViewAnimationWithBlocks) _setupAnimationWithDuration:delay:view:options:factory:animations:start:animationStateGenerator:completion:]
+0x184702e84  __TEXT,__text  -[UIViewAnimationState init]
+0x184702ef8  __TEXT,__text  -[UIViewAnimationState setupWithDuration:delay:view:options:factory:parentState:start:completion:]
+0x184703420  __TEXT,__text  -[UIViewAnimationState pushWithViewAnimationID:options:context:]
+0x1847035d0  __TEXT,__text  +[UIViewAnimationState popAnimationState]
+0x184703788  __TEXT,__text  -[UIViewAnimationState pop]
+0x184703e0c  __TEXT,__text  +[NSNotificationCenter uikitInternalCenter]
+0x184703e58  __TEXT,__text  -[UIViewAnimationBlockDelegate _didEndBlockAnimation:finished:context:]
+0x18470410c  __TEXT,__text  -[UIViewAnimationState sendDelegateAnimationDidStop:finished:]
+0x1847044a8  __TEXT,__text  -[UIViewAnimationState .cxx_destruct]
+0x1847045dc  __TEXT,__text  ___120-[UIView(UIConstraintBasedLayout) _layoutEngine_didAddLayoutConstraint:roundingAdjustment:mutuallyExclusiveConstraints:]_block_invoke
+0x184704a08  __TEXT,__text  -[UIScene _effectiveSettings]
+0x184704a0c  __TEXT,__text  +[UIScene _activationStateFromSceneSettings:]
+0x184704a98  __TEXT,__text  _block_copy_helper
+0x184704aa8  __TEXT,__text  _block_copy_helper
+0x184704ab8  __TEXT,__text  _block_copy_helper
+0x184704ac8  __TEXT,__text  _block_copy_helper
+0x184704ad8  __TEXT,__text  _block_copy_helper
+0x184704ae8  __TEXT,__text  _block_copy_helper
+0x184704af8  __TEXT,__text  _block_copy_helper
+0x184704b08  __TEXT,__text  _block_copy_helper
+0x184704b18  __TEXT,__text  _block_copy_helper
+0x184704b28  __TEXT,__text  _block_copy_helper
+0x184704b38  __TEXT,__text  _block_copy_helper
+0x184704b48  __TEXT,__text  _block_copy_helper
+0x184704b58  __TEXT,__text  _block_copy_helper
+0x184704b68  __TEXT,__text  _block_copy_helper
+0x184704b78  __TEXT,__text  _block_copy_helper
+0x184704b88  __TEXT,__text  _block_copy_helper
+0x184704b98  __TEXT,__text  _block_copy_helper
+0x184704ba8  __TEXT,__text  _block_copy_helper
+0x184704bb8  __TEXT,__text  _block_copy_helper
+0x184704bc8  __TEXT,__text  _block_copy_helper
+0x184704bd8  __TEXT,__text  _block_copy_helper
+0x184704be8  __TEXT,__text  _block_copy_helper
+0x184704bf8  __TEXT,__text  _block_copy_helper
+0x184704c08  __TEXT,__text  _block_copy_helper
+0x184704c18  __TEXT,__text  _block_copy_helper
+0x184704c28  __TEXT,__text  _block_copy_helper
+0x184704c38  __TEXT,__text  _block_copy_helper
+0x184704c48  __TEXT,__text  _block_copy_helper
+0x184704c58  __TEXT,__text  _block_copy_helper
+0x184704c68  __TEXT,__text  _block_copy_helper
+0x184704c78  __TEXT,__text  _block_copy_helper
+0x184704c88  __TEXT,__text  _block_copy_helper
+0x184704c98  __TEXT,__text  _block_copy_helper
+0x184704ca8  __TEXT,__text  _block_copy_helper
+0x184704cb8  __TEXT,__text  _block_copy_helper
+0x184704cc8  __TEXT,__text  _block_copy_helper
+0x184704cd8  __TEXT,__text  _block_copy_helper
+0x184704ce8  __TEXT,__text  _block_copy_helper
+0x184704cf8  __TEXT,__text  _block_copy_helper
+0x184704d08  __TEXT,__text  _block_copy_helper
+0x184704d18  __TEXT,__text  _block_copy_helper
+0x184704d28  __TEXT,__text  _block_copy_helper
+0x184704d38  __TEXT,__text  _block_copy_helper
+0x184704d48  __TEXT,__text  _block_copy_helper
+0x184704d58  __TEXT,__text  _block_copy_helper
+0x184704d68  __TEXT,__text  _block_copy_helper
+0x184704d78  __TEXT,__text  _block_copy_helper
+0x184704d88  __TEXT,__text  _block_copy_helper
+0x184704d98  __TEXT,__text  _block_copy_helper
+0x184704da8  __TEXT,__text  _block_copy_helper
+0x184704db8  __TEXT,__text  _block_copy_helper
+0x184704dc8  __TEXT,__text  _block_copy_helper
+0x184704dd8  __TEXT,__text  _block_copy_helper
+0x184704de8  __TEXT,__text  _block_copy_helper
+0x184704df8  __TEXT,__text  _block_copy_helper
+0x184704e08  __TEXT,__text  _block_copy_helper
+0x184704e18  __TEXT,__text  _block_copy_helper
+0x184704e28  __TEXT,__text  _block_copy_helper
+0x184704e38  __TEXT,__text  _block_copy_helper
+0x184704e48  __TEXT,__text  _block_copy_helper
+0x184704e58  __TEXT,__text  _block_copy_helper
+0x184704e68  __TEXT,__text  _block_copy_helper
+0x184704e78  __TEXT,__text  _block_copy_helper
+0x184704e88  __TEXT,__text  _block_copy_helper
+0x184704e98  __TEXT,__text  _block_copy_helper
+0x184704ea8  __TEXT,__text  _block_copy_helper
+0x184704eb8  __TEXT,__text  _block_copy_helper
+0x184704ec8  __TEXT,__text  _block_copy_helper
+0x184704ed8  __TEXT,__text  _block_copy_helper
+0x184704ee8  __TEXT,__text  _block_copy_helper
+0x184704ef8  __TEXT,__text  _block_copy_helper
+0x184704f08  __TEXT,__text  _block_copy_helper
+0x184704f18  __TEXT,__text  _block_copy_helper
+0x184704f28  __TEXT,__text  _block_copy_helper
+0x184704f38  __TEXT,__text  _block_copy_helper
+0x184704f48  __TEXT,__text  _block_copy_helper
+0x184704f58  __TEXT,__text  _block_copy_helper
+0x184704f68  __TEXT,__text  _block_copy_helper
+0x184704f78  __TEXT,__text  _block_copy_helper
+0x184704f88  __TEXT,__text  _block_copy_helper
+0x184704f98  __TEXT,__text  _block_copy_helper
+0x184704fa8  __TEXT,__text  _block_copy_helper
+0x184704fb8  __TEXT,__text  _block_copy_helper
+0x184704fc8  __TEXT,__text  _block_copy_helper
+0x184704fd8  __TEXT,__text  _block_copy_helper
+0x184704fe8  __TEXT,__text  _block_copy_helper
+0x184704ff8  __TEXT,__text  _block_copy_helper
+0x184705008  __TEXT,__text  _block_copy_helper
+0x184705018  __TEXT,__text  _block_copy_helper
+0x184705028  __TEXT,__text  _block_copy_helper
+0x184705038  __TEXT,__text  _block_copy_helper
+0x184705048  __TEXT,__text  _block_copy_helper
+0x184705058  __TEXT,__text  _block_copy_helper
+0x184705068  __TEXT,__text  _block_copy_helper
+0x184705078  __TEXT,__text  _block_copy_helper
+0x184705088  __TEXT,__text  _block_copy_helper
+0x184705098  __TEXT,__text  _block_copy_helper
+0x1847050a8  __TEXT,__text  _block_copy_helper
+0x1847050b8  __TEXT,__text  _block_copy_helper
+0x1847050c8  __TEXT,__text  _block_copy_helper
+0x1847050d8  __TEXT,__text  _block_copy_helper
+0x1847050e8  __TEXT,__text  _block_copy_helper
+0x1847050f8  __TEXT,__text  _block_copy_helper
+0x184705108  __TEXT,__text  _block_copy_helper
+0x184705118  __TEXT,__text  _block_copy_helper
+0x184705128  __TEXT,__text  _block_copy_helper
+0x184705138  __TEXT,__text  _block_copy_helper
+0x184705148  __TEXT,__text  _block_copy_helper
+0x184705158  __TEXT,__text  _block_copy_helper
+0x184705168  __TEXT,__text  _block_copy_helper
+0x184705178  __TEXT,__text  _block_copy_helper
+0x184705188  __TEXT,__text  _block_copy_helper
+0x184705198  __TEXT,__text  _block_copy_helper
+0x1847051a8  __TEXT,__text  _block_copy_helper
+0x1847051b8  __TEXT,__text  _block_copy_helper
+0x1847051c8  __TEXT,__text  _block_copy_helper
+0x1847051d8  __TEXT,__text  _block_copy_helper
+0x1847051e8  __TEXT,__text  _block_copy_helper
+0x1847051f8  __TEXT,__text  _block_copy_helper
+0x184705208  __TEXT,__text  _block_copy_helper
+0x184705218  __TEXT,__text  _block_copy_helper
+0x184705228  __TEXT,__text  _block_copy_helper
+0x184705238  __TEXT,__text  _block_copy_helper
+0x184705248  __TEXT,__text  _block_copy_helper
+0x184705258  __TEXT,__text  _block_copy_helper
+0x184705268  __TEXT,__text  _block_copy_helper
+0x184705278  __TEXT,__text  _block_copy_helper
+0x184705288  __TEXT,__text  _block_copy_helper
+0x184705298  __TEXT,__text  _block_copy_helper
+0x1847052a8  __TEXT,__text  _block_copy_helper
+0x1847052b8  __TEXT,__text  _block_copy_helper
+0x1847052c8  __TEXT,__text  _block_copy_helper
+0x1847052d8  __TEXT,__text  _block_copy_helper
+0x1847052e8  __TEXT,__text  _block_copy_helper
+0x1847052f8  __TEXT,__text  _block_copy_helper
+0x184705308  __TEXT,__text  _block_copy_helper
+0x184705318  __TEXT,__text  _block_copy_helper
+0x184705328  __TEXT,__text  _block_copy_helper
+0x184705338  __TEXT,__text  _block_copy_helper
+0x184705348  __TEXT,__text  _block_copy_helper
+0x184705358  __TEXT,__text  _block_copy_helper
+0x184705368  __TEXT,__text  _block_copy_helper
+0x184705378  __TEXT,__text  _block_copy_helper
+0x184705388  __TEXT,__text  _block_copy_helper
+0x184705398  __TEXT,__text  _block_copy_helper
+0x1847053a8  __TEXT,__text  _block_copy_helper
+0x1847053b8  __TEXT,__text  _block_copy_helper
+0x1847053c8  __TEXT,__text  _block_copy_helper
+0x1847053d8  __TEXT,__text  _block_copy_helper
+0x1847053e8  __TEXT,__text  _block_copy_helper
+0x1847053f8  __TEXT,__text  _block_copy_helper
+0x184705408  __TEXT,__text  _block_copy_helper
+0x184705418  __TEXT,__text  _block_copy_helper
+0x184705428  __TEXT,__text  _block_copy_helper
+0x184705438  __TEXT,__text  _block_copy_helper
+0x184705448  __TEXT,__text  _block_copy_helper
+0x184705458  __TEXT,__text  _block_copy_helper
+0x184705468  __TEXT,__text  _block_copy_helper
+0x184705478  __TEXT,__text  _block_copy_helper
+0x184705488  __TEXT,__text  _block_copy_helper
+0x184705498  __TEXT,__text  _block_copy_helper
+0x1847054a8  __TEXT,__text  _block_copy_helper
+0x1847054b8  __TEXT,__text  _block_copy_helper
+0x1847054c8  __TEXT,__text  _block_copy_helper
+0x1847054d8  __TEXT,__text  _block_copy_helper
+0x1847054e8  __TEXT,__text  _block_copy_helper
+0x1847054f8  __TEXT,__text  _block_copy_helper
+0x184705508  __TEXT,__text  _block_copy_helper
+0x184705518  __TEXT,__text  _block_copy_helper
+0x184705528  __TEXT,__text  _block_copy_helper
+0x184705538  __TEXT,__text  _block_copy_helper
+0x184705548  __TEXT,__text  _block_copy_helper
+0x184705558  __TEXT,__text  _block_copy_helper
+0x184705568  __TEXT,__text  _block_copy_helper
+0x184705578  __TEXT,__text  _block_copy_helper
+0x184705588  __TEXT,__text  _block_copy_helper
+0x184705598  __TEXT,__text  _block_copy_helper
+0x1847055a8  __TEXT,__text  _block_copy_helper
+0x1847055b8  __TEXT,__text  _block_copy_helper
+0x1847055c8  __TEXT,__text  _block_copy_helper
+0x1847055d8  __TEXT,__text  _block_copy_helper
+0x1847055e8  __TEXT,__text  _block_copy_helper
+0x1847055f8  __TEXT,__text  _block_copy_helper
+0x184705608  __TEXT,__text  _block_copy_helper
+0x184705618  __TEXT,__text  _block_copy_helper
+0x184705628  __TEXT,__text  _block_copy_helper
+0x184705638  __TEXT,__text  _block_copy_helper
+0x184705648  __TEXT,__text  _block_copy_helper
+0x184705658  __TEXT,__text  _block_copy_helper
+0x184705668  __TEXT,__text  _block_copy_helper
+0x184705678  __TEXT,__text  _block_copy_helper
+0x184705688  __TEXT,__text  _block_copy_helper
+0x184705698  __TEXT,__text  _block_copy_helper
+0x1847056a8  __TEXT,__text  _block_copy_helper
+0x1847056b8  __TEXT,__text  _block_copy_helper
+0x1847056c8  __TEXT,__text  _block_copy_helper
+0x1847056d8  __TEXT,__text  _block_copy_helper
+0x1847056e8  __TEXT,__text  _block_copy_helper
+0x1847056f8  __TEXT,__text  _block_copy_helper.5
+0x1847056fc  __TEXT,__text  _block_copy_helper.5
+0x184705700  __TEXT,__text  _block_copy_helper.5
+0x184705704  __TEXT,__text  _block_copy_helper.5
+0x184705708  __TEXT,__text  _block_copy_helper.5
+0x18470570c  __TEXT,__text  _block_copy_helper.18
+0x184705710  __TEXT,__text  _block_copy_helper.18
+0x184705714  __TEXT,__text  _block_copy_helper.18
+0x184705718  __TEXT,__text  _block_copy_helper.18
+0x18470574c  __TEXT,__text  -[UIView(UIViewGestures) addGestureRecognizer:]
+0x184705780  __TEXT,__text  -[UIView(AdditionalLayoutSupport) _referenceView]
+0x18470579c  __TEXT,__text  -[UIView(UIConstraintBasedLayout_EngineDelegate) solutionDidChangeInEngine:]
+0x184705800  __TEXT,__text  -[UIView(UIConstraintBasedLayout_EngineDelegate) _invalidateSystemLayoutSizeFittingSizeAtEngineDelegateLevel]
+0x184705a68  __TEXT,__text  -[UIView(UIConstraintBasedLayout) _faultInGuidesForConstraint:]
+0x184705bf4  __TEXT,__text  __UIViewEnumerateViewsForWhichConstraintIsVulnerableToScrollViewBoundsOrigin
+0x184705d4c  __TEXT,__text  -[UIView(UIViewLayoutConstraintCreation) topAnchor]
+0x184705d90  __TEXT,__text  -[UIView(AdditionalLayoutSupport) _uili_isFocusGuide]
+0x184706260  __TEXT,__text  ___109-[UIView(UIConstraintBasedLayout_EngineDelegate) _invalidateSystemLayoutSizeFittingSizeAtEngineDelegateLevel]_block_invoke
+0x184706350  __TEXT,__text  -[UIView(UIViewLayoutConstraintCreation) rightAnchor]
+0x184706394  __TEXT,__text  -[UIView(AutoLayoutManual) nsli_boundsWidthVariable]
+0x184706434  __TEXT,__text  -[UIView(AutoLayoutManual) nsli_minYVariable]
+0x1847064d4  __TEXT,__text  ___74+[_UISceneLifecycleMultiplexer mostActiveSceneIncludingInternal:withTest:]_block_invoke
+0x184706544  __TEXT,__text  +[_UISceneLifecycleMultiplexer _compareLifecycleStateOfScene:toScene:]
+0x1847066ac  __TEXT,__text  -[UIScene _effectiveUISettings]
+0x1847066e0  __TEXT,__text  -[UIView(UIViewLayoutConstraintCreation) bottomAnchor]
+0x184706724  __TEXT,__text  -[UIWindowScene _interfaceOrientation]
+0x184706728  __TEXT,__text  -[UIWindowScene _internalInterfaceOrientation]
+0x184706788  __TEXT,__text  -[UIGestureRecognizer initWithTarget:action:]
+0x1847068a8  __TEXT,__text  __UIGestureRecognizerCommonInit
+0x184706dc4  __TEXT,__text  -[UIGestureRecognizer _defaultAllowedTouchTypesMask]
+0x184706e1c  __TEXT,__text  +[UIGestureRecognizer _supportsDefaultTouchTypes]
+0x184706e38  __TEXT,__text  __UIDeviceHasExternalTouchInput
+0x184706e88  __TEXT,__text  -[UIView(AutoLayoutManual) nsli_boundsHeightVariable]
+0x184706f28  __TEXT,__text  -[UIApplication statusBarOrientation]
+0x18470701c  __TEXT,__text  ___UIAppShouldDisableDeprecatedStatusBarMethods
+0x184707284  __TEXT,__text  ___70+[_UIScreenBasedWindowScene _unassociatedWindowSceneForScreen:create:]_block_invoke
+0x184707474  __TEXT,__text  ___62+[_UISceneLifecycleMultiplexer mostActiveWindowSceneOnScreen:]_block_invoke
+0x184707500  __TEXT,__text  -[UIScene _effectiveUIClientSettings]
+0x184707534  __TEXT,__text  ___UISceneEffectiveClientSettings
+0x1847075b8  __TEXT,__text  -[UIStatusBar_Base _initWithFrame:showForegroundView:wantsServer:inProcessStateProvider:]
+0x18470778c  __TEXT,__text  -[UIGestureRecognizer _updateGestureTraits]
+0x184707790  __TEXT,__text  -[UILongPressGestureRecognizer setView:]
+0x1847077e8  __TEXT,__text  -[UIGestureRecognizer setEnabled:]
+0x184707910  __TEXT,__text  +[UIGestureRecognizer _supportsDefaultPressTypes]
+0x184707914  __TEXT,__text  __UIGestureRecognizerAddTargetToArray
+0x184707ad0  __TEXT,__text  -[UIView _addGestureRecognizer:atEnd:]
+0x184707bec  __TEXT,__text  -[UIGestureRecognizer view]
+0x184707c2c  __TEXT,__text  _viewFromContainer
+0x184707d5c  __TEXT,__text  -[UIGestureRecognizer setContainer:]
+0x184707f38  __TEXT,__text  -[UIGestureRecognizer _updateContainer:]
+0x18470849c  __TEXT,__text  -[UIGestureEnvironment addGestureRecognizer:]
+0x1847086fc  __TEXT,__text  -[UIGestureRecognizer setGestureEnvironment:]
+0x1847087a0  __TEXT,__text  -[UIGestureEnvironment nodeCoordinator]
+0x184708988  __TEXT,__text  -[UICollectionViewLayoutAttributes _setPreferredSizingData:]
+0x184708988  __TEXT,__text  -[UICollectionViewLayoutAttributes _setPreferredSizingData:]
+0x184708998  __TEXT,__text  -[UIView _removeGestureRecognizer:]
+0x184708a48  __TEXT,__text  -[UILongPressGestureRecognizer initWithTarget:action:]
+0x184708b2c  __TEXT,__text  -[UITapRecognizer init]
+0x184708bbc  __TEXT,__text  -[NSArray ui_arrayByAddingObject:atEnd:]
+0x184708d18  __TEXT,__text  -[UIGestureRecognizer setView:]
+0x184708d80  __TEXT,__text  -[UIGestureRecognizer init]
+0x184709030  __TEXT,__text  _block_copy_helper.15
+0x184709034  __TEXT,__text  _block_copy_helper.15
+0x184709038  __TEXT,__text  _block_copy_helper.15
+0x18470903c  __TEXT,__text  _block_copy_helper.15
+0x184709040  __TEXT,__text  _block_copy_helper.15
+0x184709044  __TEXT,__text  _block_copy_helper.15
+0x184709048  __TEXT,__text  -[UIView transform]
+0x18470904c  __TEXT,__text  -[UIView _backing_transform]
+0x1847092b8  __TEXT,__text  -[UITraitCollection userInterfaceStyle]
+0x1847092e4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847092f4  __TEXT,__text  ___Block_byref_object_copy_
+0x184709304  __TEXT,__text  ___Block_byref_object_copy_
+0x184709314  __TEXT,__text  ___Block_byref_object_copy_
+0x184709324  __TEXT,__text  ___Block_byref_object_copy_
+0x184709334  __TEXT,__text  ___Block_byref_object_copy_
+0x184709344  __TEXT,__text  ___Block_byref_object_copy_
+0x184709354  __TEXT,__text  ___Block_byref_object_copy_
+0x184709364  __TEXT,__text  ___Block_byref_object_copy_
+0x184709374  __TEXT,__text  ___Block_byref_object_copy_
+0x184709384  __TEXT,__text  ___Block_byref_object_copy_
+0x184709394  __TEXT,__text  ___Block_byref_object_copy_
+0x1847093a4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847093b4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847093c4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847093d4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847093e4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847093f4  __TEXT,__text  ___Block_byref_object_copy_
+0x184709404  __TEXT,__text  ___Block_byref_object_copy_
+0x184709414  __TEXT,__text  ___Block_byref_object_copy_
+0x184709424  __TEXT,__text  ___Block_byref_object_copy_
+0x184709434  __TEXT,__text  ___Block_byref_object_copy_
+0x184709444  __TEXT,__text  ___Block_byref_object_copy_
+0x184709454  __TEXT,__text  ___Block_byref_object_copy_
+0x184709464  __TEXT,__text  ___Block_byref_object_copy_
+0x184709474  __TEXT,__text  ___Block_byref_object_copy_
+0x184709484  __TEXT,__text  ___Block_byref_object_copy_
+0x184709494  __TEXT,__text  ___Block_byref_object_copy_
+0x1847094a4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847094b4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847094c4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847094d4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847094e4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847094f4  __TEXT,__text  ___Block_byref_object_copy_
+0x184709504  __TEXT,__text  ___Block_byref_object_copy_
+0x184709514  __TEXT,__text  ___Block_byref_object_copy_
+0x184709524  __TEXT,__text  ___Block_byref_object_copy_
+0x184709534  __TEXT,__text  ___Block_byref_object_copy_
+0x184709544  __TEXT,__text  ___Block_byref_object_copy_
+0x184709554  __TEXT,__text  ___Block_byref_object_copy_
+0x184709564  __TEXT,__text  ___Block_byref_object_copy_
+0x184709574  __TEXT,__text  ___Block_byref_object_copy_
+0x184709584  __TEXT,__text  ___Block_byref_object_copy_
+0x184709594  __TEXT,__text  ___Block_byref_object_copy_
+0x1847095a4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847095b4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847095c4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847095d4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847095e4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847095f4  __TEXT,__text  ___Block_byref_object_copy_
+0x184709604  __TEXT,__text  ___Block_byref_object_copy_
+0x184709614  __TEXT,__text  ___Block_byref_object_copy_
+0x184709624  __TEXT,__text  ___Block_byref_object_copy_
+0x184709634  __TEXT,__text  ___Block_byref_object_copy_
+0x184709644  __TEXT,__text  ___Block_byref_object_copy_
+0x184709654  __TEXT,__text  ___Block_byref_object_copy_
+0x184709664  __TEXT,__text  ___Block_byref_object_copy_
+0x184709674  __TEXT,__text  ___Block_byref_object_copy_
+0x184709684  __TEXT,__text  ___Block_byref_object_copy_
+0x184709694  __TEXT,__text  ___Block_byref_object_copy_
+0x1847096a4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847096b4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847096c4  __TEXT,__text  ___Block_byref_object_copy_
+0x1847096d4  __TEXT,__text  ___Block_byref_object_copy_
+0x184709700  __TEXT,__text  ___Block_byref_object_copy_
+0x184709710  __TEXT,__text  ___Block_byref_object_copy_
+0x184709720  __TEXT,__text  ___Block_byref_object_copy_
+0x184709730  __TEXT,__text  ___Block_byref_object_copy_
+0x184709740  __TEXT,__text  ___Block_byref_object_copy_
+0x184709750  __TEXT,__text  ___Block_byref_object_copy_
+0x184709760  __TEXT,__text  ___Block_byref_object_copy_
+0x184709770  __TEXT,__text  ___Block_byref_object_copy_
+0x184709780  __TEXT,__text  ___Block_byref_object_copy_
+0x184709790  __TEXT,__text  ___Block_byref_object_copy_
+0x1847097a0  __TEXT,__text  ___Block_byref_object_copy_
+0x1847097b0  __TEXT,__text  ___Block_byref_object_copy_
+0x1847097bc  __TEXT,__text  ___Block_byref_object_copy_
+0x1847097cc  __TEXT,__text  ___Block_byref_object_copy_
+0x1847097dc  __TEXT,__text  ___Block_byref_object_copy_
+0x1847097ec  __TEXT,__text  ___Block_byref_object_copy_
+0x1847097fc  __TEXT,__text  ___Block_byref_object_copy_
+0x18470980c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470981c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470982c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470983c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470984c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470985c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470986c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470987c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470988c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470989c  __TEXT,__text  ___Block_byref_object_copy_
+0x1847098ac  __TEXT,__text  ___Block_byref_object_copy_
+0x1847098bc  __TEXT,__text  ___Block_byref_object_copy_
+0x1847098cc  __TEXT,__text  ___Block_byref_object_copy_
+0x1847098dc  __TEXT,__text  ___Block_byref_object_copy_
+0x1847098ec  __TEXT,__text  ___Block_byref_object_copy_
+0x1847098fc  __TEXT,__text  ___Block_byref_object_copy_
+0x18470990c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470991c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470992c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470993c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470994c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470995c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470996c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470997c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470998c  __TEXT,__text  ___Block_byref_object_copy_
+0x18470999c  __TEXT,__text  ___Block_byref_object_copy_
+0x1847099ac  __TEXT,__text  ___Block_byref_object_copy_
+0x1847099bc  __TEXT,__text  ___Block_byref_object_copy_
+0x1847099cc  __TEXT,__text  ___Block_byref_object_copy_
+0x1847099dc  __TEXT,__text  ___Block_byref_object_copy_
+0x1847099ec  __TEXT,__text  ___Block_byref_object_copy_
+0x1847099fc  __TEXT,__text  ___Block_byref_object_copy_
+0x184709a0c  __TEXT,__text  ___Block_byref_object_copy_
+0x184709a1c  __TEXT,__text  ___Block_byref_object_copy_
+0x184709a2c  __TEXT,__text  ___Block_byref_object_copy_
+0x184709a3c  __TEXT,__text  ___Block_byref_object_copy_
+0x184709a4c  __TEXT,__text  ___Block_byref_object_copy_
+0x184709a5c  __TEXT,__text  ___Block_byref_object_copy_
+0x184709a6c  __TEXT,__text  ___Block_byref_object_copy_
+0x184709a7c  __TEXT,__text  ___Block_byref_object_copy_
+0x184709a8c  __TEXT,__text  ___Block_byref_object_copy_
+0x184709a9c  __TEXT,__text  ___Block_byref_object_copy_
+0x184709aac  __TEXT,__text  ___Block_byref_object_copy_
+0x184709abc  __TEXT,__text  ___Block_byref_object_copy_
+0x184709acc  __TEXT,__text  ___Block_byref_object_copy_
+0x184709adc  __TEXT,__text  ___Block_byref_object_copy_
+0x184709aec  __TEXT,__text  ___Block_byref_object_copy_
+0x184709afc  __TEXT,__text  ___Block_byref_object_copy_
+0x184709b0c  __TEXT,__text  ___Block_byref_object_copy_
+0x184709b1c  __TEXT,__text  ___Block_byref_object_copy_
+0x184709b2c  __TEXT,__text  ___Block_byref_object_copy_
+```
+First 1,000 of 145,407.
+

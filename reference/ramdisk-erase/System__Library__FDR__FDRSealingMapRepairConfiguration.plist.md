@@ -1,0 +1,1234 @@
+# `/System/Library/FDR/FDRSealingMapRepairConfiguration.plist`
+
+From the erase/recovery restore ramdisk (141-28940-105.dmg, runs restored_external). 9,316 bytes.
+
+- `2a1f7a0afcfcff8e21a07d3ca61cc6ce89c0b9e5`:
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+      - `Tag`: `dCfg`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+          - `Tag`: `HmCA`
+    -
+      - `AssemblyIdentifierList`:
+        - `ZG:MesaSensorIDSensorSN`
+      - `DataInstanceIdentifier`: `MesaSerialNumber`
+      - `Tag`: `FSCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `MesaSerialNumber`
+          - `Tag`: `hop0`
+  - `Version`: `0`
+- `2d79cb2dee6fe4638525e05981e16004d7162cd4`:
+  - `RepairConfigurationAsidExceptionList`:
+    -
+      - `Tag`: `vcrt`
+    -
+      - `Tag`: `psd2`
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+      - `Tag`: `bCfg`
+    -
+      - `DataInstanceIdentifierList`:
+        - `ScreenSerialNumber`
+        - `ZG:MogulIDSNTopModule`
+      - `Tag`: `tcrt`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `AlsH`
+        -
+          - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+          - `Tag`: `dCfg`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+          - `Tag`: `GpC2`
+        -
+          - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+          - `Tag`: `IfCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `HmCl`
+      - `manp`:
+        -
+          - `PropertyIdentifier`: `RawPanelSerialNumber`
+          - `Tag`: `drp#`
+    -
+      - `DataInstanceIdentifier`: `SavageSerialNumber`
+      - `Tag`: `PlCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `prf1`
+        -
+          - `DataInstanceIdentifierList`:
+            - `SavageChipID`
+            - `SavageUID`
+          - `Tag`: `pspc`
+        -
+          - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+          - `Tag`: `FCCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `YonkersChipID`
+            - `YonkersUID`
+          - `Tag`: `ycrt`
+    -
+      - `AssemblyIdentifierList`:
+        - `RearFacingCameraModuleSerialNumber`
+        - `RearFacingSuperWideCameraModuleSerialNumber`
+        - `RearFacingTelephotoCameraModuleSerialNumber`
+      - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+      - `Tag`: `CmCl`
+  - `Version`: `0`
+- `3310a96441c96b8b9c63cd98151ef7a48a2af4f3`:
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:ExternalDisplayBacklightUID`
+      - `Tag`: `DpC3`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+          - `Tag`: `HmCA`
+        -
+          - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+          - `Tag`: `iCCl`
+    -
+      - `DataInstanceIdentifier`: `ZG:AmbientLightSensorRearSerialNumber`
+      - `Tag`: `HmCA`
+  - `Version`: `0`
+- `348b7187172445c4aef3f397180fdb225db77166`:
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifierList`:
+        - `ZG:TCONChipID`
+        - `ZG:TCONECID`
+      - `Tag`: `DpC2`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+          - `Tag`: `HmCA`
+        -
+          - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+          - `Tag`: `iCCl`
+  - `Version`: `0`
+- `37a37a3c50e6a70f6556b73f7d4418ed03cebe78`:
+  - `RepairConfigurationAsidExceptionList`:
+    -
+      - `Tag`: `vcrt`
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+      - `Tag`: `bCfg`
+    -
+      - `DataInstanceIdentifierList`:
+        - `ScreenSerialNumber`
+        - `TopModuleAuthChipID`
+      - `Tag`: `tcrt`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `AlsH`
+        -
+          - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+          - `Tag`: `dCfg`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+          - `Tag`: `GpC2`
+        -
+          - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+          - `Tag`: `IfCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `HmCl`
+      - `manp`:
+        -
+          - `PropertyIdentifier`: `RawPanelSerialNumber`
+          - `Tag`: `drp#`
+    -
+      - `DataInstanceIdentifierList`:
+        - `SavageChipID`
+        - `SavageUID`
+      - `Tag`: `prpc`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `psd3`
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `PlCl`
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `prf1`
+        -
+          - `DataInstanceIdentifierList`:
+            - `SavageChipID`
+            - `SavageUID`
+          - `Tag`: `pspc`
+        -
+          - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+          - `Tag`: `FCCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `YonkersChipID`
+            - `YonkersUID`
+          - `Tag`: `ycrt`
+    -
+      - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+      - `Tag`: `CmCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:BackCameraSerialNumber`
+          - `Tag`: `CmPM`
+  - `Version`: `0`
+- `37dfb312ffa6d315a197689cffb6adfcab01f4fb`:
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+      - `Tag`: `dCfg`
+    -
+      - `DataInstanceIdentifier`: `ZG:MesaSensorIDSensorSN`
+      - `Tag`: `MSRk`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:MesaSensorIDSensorSN`
+          - `Tag`: `FSC2`
+  - `Version`: `0`
+- `402bd4ba4d4d63bef5036f8dba239a510a50ca27`:
+  - `RepairConfigurationAsidExceptionList`:
+    -
+      - `Tag`: `vcrt`
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+      - `Tag`: `bCfg`
+    -
+      - `DataInstanceIdentifierList`:
+        - `ZG:ScreenSerialNumber18d`
+        - `ZG:MogulIDSNTopModule`
+      - `Tag`: `tcrt`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `AlsH`
+        -
+          - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+          - `Tag`: `dCfg`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+          - `Tag`: `GpC2`
+        -
+          - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+          - `Tag`: `IfCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `HmCl`
+      - `manp`:
+        -
+          - `PropertyIdentifier`: `RawPanelSerialNumber`
+          - `Tag`: `drp#`
+    -
+      - `DataInstanceIdentifier`: `ZG:TritiumMandoUID`
+      - `Tag`: `TBCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:TritiumMandoUID`
+          - `Tag`: `mCfg`
+    -
+      - `DataInstanceIdentifierList`:
+        - `SavageChipID`
+        - `SavageUID`
+      - `Tag`: `prpc`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `psd3`
+        -
+          - `AsidSubCCIdOptionalVerifyList`:
+            - `ZG:ProxSerialNumber`
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `PlCl`
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `prf1`
+        -
+          - `DataInstanceIdentifierList`:
+            - `SavageChipID`
+            - `SavageUID`
+          - `Tag`: `pspc`
+        -
+          - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+          - `Tag`: `FCCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `YonkersChipID`
+            - `YonkersUID`
+          - `Tag`: `ycrt`
+    -
+      - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+      - `Tag`: `CmCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:BackCameraSerialNumber`
+          - `Tag`: `CmPM`
+  - `Version`: `0`
+- `55ff477c1d668c8c74cc67e5b3ea32363eb31a97`:
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+      - `Tag`: `dCfg`
+    -
+      - `DataInstanceIdentifier`: `MesaSerialNumber`
+      - `Tag`: `FSCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `MesaSerialNumber`
+          - `Tag`: `hop0`
+  - `Version`: `0`
+- `5c5fc40113755341ca235f318aac422f2e022631`:
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+      - `Tag`: `dCfg`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+          - `Tag`: `HmCA`
+    -
+      - `DataInstanceIdentifier`: `MesaSerialNumber`
+      - `Tag`: `FSCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `MesaSerialNumber`
+          - `Tag`: `hop0`
+  - `Version`: `0`
+- `837b1816713eeae2e16b2b65e8d0af7bdbeda6c0`:
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifierList`:
+        - `ZG:PanelSerialNumber`
+        - `ZG:MogulIDSNTopModule`
+      - `Tag`: `tcrt`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+          - `Tag`: `ADCL`
+        -
+          - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+          - `Tag`: `dCfg`
+        -
+          - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+          - `Tag`: `HmCA`
+    -
+      - `DataInstanceIdentifierList`:
+        - `SavageChipID`
+        - `SavageUID`
+      - `Tag`: `prpc`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `psd3`
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `PlCl`
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `prf1`
+        -
+          - `DataInstanceIdentifierList`:
+            - `SavageChipID`
+            - `SavageUID`
+          - `Tag`: `pspc`
+        -
+          - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+          - `Tag`: `FCCl`
+  - `Version`: `0`
+- `84a589186dff740eddcc311d61b7f555b5d8bb0a`:
+  - `RepairConfigurationAsidExceptionList`:
+    -
+      - `Tag`: `psd2`
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifierList`:
+        - `ZG:ScreenSerialNumber18d`
+        - `ZG:MogulIDSNTopModule`
+      - `Tag`: `tcrt`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+          - `Tag`: `ADCL`
+        -
+          - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+          - `Tag`: `dCfg`
+        -
+          - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+          - `Tag`: `HmCA`
+    -
+      - `DataInstanceIdentifier`: `SavageSerialNumber`
+      - `Tag`: `PlCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `prf1`
+        -
+          - `DataInstanceIdentifierList`:
+            - `SavageChipID`
+            - `SavageUID`
+          - `Tag`: `pspc`
+        -
+          - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+          - `Tag`: `FCCl`
+  - `Version`: `0`
+- `857755e2eaf21ec0ae1ff50a1b6e1dd120efa737`:
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+      - `Tag`: `dCfg`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+          - `Tag`: `HmCA`
+    -
+      - `DataInstanceIdentifier`: `ZG:MesaSensorIDSensorSN`
+      - `Tag`: `MSRk`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:MesaSensorIDSensorSN`
+          - `Tag`: `FSC2`
+  - `Version`: `0`
+- `878df6af80f3a2f88a13bdc8af11d94661de69a1`:
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+      - `Tag`: `AlsC`
+    -
+      - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+      - `Tag`: `dCfg`
+    -
+      - `AssemblyIdentifierList`:
+        - `ZG:MesaSensorIDSensorSN`
+      - `DataInstanceIdentifier`: `MesaSerialNumber`
+      - `Tag`: `FSCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `MesaSerialNumber`
+          - `Tag`: `hop0`
+    -
+      - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+      - `Tag`: `AlsC`
+  - `Version`: `0`
+- `8b1022158aff6a4c40aeb29c428c9b01a819fbff`:
+  - `RepairConfigurationAsidExceptionList`:
+    -
+      - `Tag`: `vcrt`
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:BackglassSerialNumber`
+      - `Tag`: `LCfg`
+    -
+      - `DataInstanceIdentifierList`:
+        - `ScreenSerialNumber`
+        - `TopModuleAuthChipID`
+      - `Tag`: `tcrt`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `AlsH`
+        -
+          - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+          - `Tag`: `dCfg`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+          - `Tag`: `GpC2`
+        -
+          - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+          - `Tag`: `IfCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `HmCl`
+      - `manp`:
+        -
+          - `PropertyIdentifier`: `RawPanelSerialNumber`
+          - `Tag`: `drp#`
+    -
+      - `DataInstanceIdentifierList`:
+        - `SavageChipID`
+        - `SavageUID`
+      - `Tag`: `prpc`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `psd3`
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `PlCl`
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `prf1`
+        -
+          - `DataInstanceIdentifierList`:
+            - `SavageChipID`
+            - `SavageUID`
+          - `Tag`: `pspc`
+        -
+          - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+          - `Tag`: `FCCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `YonkersChipID`
+            - `YonkersUID`
+          - `Tag`: `ycrt`
+    -
+      - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+      - `Tag`: `CmCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:BackCameraSerialNumber`
+          - `Tag`: `CmPM`
+  - `Version`: `0`
+- `9736193ed69002f9f273693993cf95cb39e73d34`:
+  - `RepairConfigurationAsidExceptionList`:
+    -
+      - `Tag`: `vcrt`
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+      - `Tag`: `bCfg`
+    -
+      - `DataInstanceIdentifierList`:
+        - `ZG:ScreenSerialNumber18d`
+        - `ZG:MogulIDSNTopModule`
+      - `Tag`: `tcrt`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `AlsH`
+        -
+          - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+          - `Tag`: `dCfg`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+          - `Tag`: `GpC2`
+        -
+          - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+          - `Tag`: `IfCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `HmCl`
+      - `manp`:
+        -
+          - `PropertyIdentifier`: `RawPanelSerialNumber`
+          - `Tag`: `drp#`
+    -
+      - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+      - `Tag`: `NBCl`
+    -
+      - `DataInstanceIdentifierList`:
+        - `SavageChipID`
+        - `SavageUID`
+      - `Tag`: `prpc`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `psd3`
+        -
+          - `AsidSubCCIdOptionalVerifyList`:
+            - `ZG:ProxSerialNumber`
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `PlCl`
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `prf1`
+        -
+          - `DataInstanceIdentifierList`:
+            - `SavageChipID`
+            - `SavageUID`
+          - `Tag`: `pspc`
+        -
+          - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+          - `Tag`: `FCCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `YonkersChipID`
+            - `YonkersUID`
+          - `Tag`: `ycrt`
+    -
+      - `AssemblyIdentifierList`:
+        - `RearFacingCameraModuleSerialNumber`
+        - `RearFacingSuperWideCameraModuleSerialNumber`
+      - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+      - `Tag`: `CmCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:BackCameraSerialNumber`
+          - `Tag`: `CmPM`
+  - `Version`: `0`
+- `AppleDisplay18,1`: `3310a96441c96b8b9c63cd98151ef7a48a2af4f3`
+- `AppleDisplay18,2`: `348b7187172445c4aef3f397180fdb225db77166`
+- `abdba334a2d321cbdf7d6e348f048d04ea8c015b`:
+  - `RepairConfigurationAsidExceptionList`:
+    -
+      - `Tag`: `vcrt`
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifierList`:
+        - `ZG:ScreenSerialNumber18d`
+        - `ZG:MogulIDSNTopModule`
+      - `Tag`: `tcrt`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `AlsH`
+        -
+          - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+          - `Tag`: `dCfg`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+          - `Tag`: `GpC2`
+        -
+          - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+          - `Tag`: `IfCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `HmCl`
+    -
+      - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+      - `Tag`: `NBCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+          - `Tag`: `cCfg`
+        -
+          - `DataInstanceIdentifier`: `JasperSerialNumber`
+          - `Tag`: `JpCl`
+    -
+      - `ComponentType`: `frnt`
+      - `DataInstanceIdentifierList`:
+        - `SavageChipID`
+        - `SavageUID`
+      - `Tag`: `prpc`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `psd3`
+        -
+          - `AsidSubCCIdOptionalVerifyList`:
+            - `ZG:ProxSerialNumber`
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `PlCl`
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `prf1`
+        -
+          - `DataInstanceIdentifierList`:
+            - `SavageChipID`
+            - `SavageUID`
+          - `Tag`: `pspc`
+        -
+          - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+          - `Tag`: `FCCl`
+        -
+          - `ComponentType`: `frnt`
+          - `DataInstanceIdentifierList`:
+            - `YonkersChipID`
+            - `YonkersUID`
+          - `Tag`: `ycrt`
+    -
+      - `ComponentType`: `rcam`
+      - `DataInstanceIdentifierList`:
+        - `ZG:YonkersIR1ChipID`
+        - `ZG:YonkersIR1UID`
+      - `Tag`: `prpc`
+      - `dcls`:
+        -
+          - `ComponentType`: `supw`
+          - `DataInstanceIdentifier`: `ZG:BackSuperWideCameraSerialNumber`
+          - `Tag`: `CmPM`
+        -
+          - `DataInstanceIdentifierList`:
+            - `ZG:YonkersIR1ChipID`
+            - `ZG:YonkersIR1UID`
+          - `Tag`: `CmCt`
+        -
+          - `ComponentType`: `rcam`
+          - `DataInstanceIdentifierList`:
+            - `ZG:YonkersIR1ChipID`
+            - `ZG:YonkersIR1UID`
+          - `Tag`: `ycrt`
+        -
+          - `AssemblyIdentifierList`:
+            - `RearFacingCameraModuleSerialNumber`
+            - `RearFacingSuperWideCameraModuleSerialNumber`
+            - `RearFacingTelephotoCameraModuleSerialNumber`
+          - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+          - `Tag`: `CmCl`
+        -
+          - `ComponentType`: `tele`
+          - `DataInstanceIdentifier`: `ZG:BackTeleCameraSerialNumber`
+          - `Tag`: `CmPM`
+  - `Version`: `0`
+- `b89ffd0a0f6528281c8d94f348c7492f891749b9`:
+  - `RepairConfigurationAsidExceptionList`:
+    -
+      - `Tag`: `vcrt`
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+      - `Tag`: `bCfg`
+    -
+      - `DataInstanceIdentifierList`:
+        - `ZG:ScreenSerialNumber18d`
+        - `ZG:MogulIDSNTopModule`
+      - `Tag`: `tcrt`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `AlsH`
+        -
+          - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+          - `Tag`: `dCfg`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+          - `Tag`: `GpC2`
+        -
+          - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+          - `Tag`: `IfCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `HmCl`
+      - `manp`:
+        -
+          - `PropertyIdentifier`: `RawPanelSerialNumber`
+          - `Tag`: `drp#`
+    -
+      - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+      - `Tag`: `NBCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+          - `Tag`: `cCfg`
+        -
+          - `DataInstanceIdentifier`: `JasperSerialNumber`
+          - `Tag`: `JpCl`
+    -
+      - `DataInstanceIdentifierList`:
+        - `SavageChipID`
+        - `SavageUID`
+      - `Tag`: `prpc`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `psd3`
+        -
+          - `AsidSubCCIdOptionalVerifyList`:
+            - `ZG:ProxSerialNumber`
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `PlCl`
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `prf1`
+        -
+          - `DataInstanceIdentifierList`:
+            - `SavageChipID`
+            - `SavageUID`
+          - `Tag`: `pspc`
+        -
+          - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+          - `Tag`: `FCCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `YonkersChipID`
+            - `YonkersUID`
+          - `Tag`: `ycrt`
+    -
+      - `AssemblyIdentifierList`:
+        - `RearFacingCameraModuleSerialNumber`
+        - `RearFacingSuperWideCameraModuleSerialNumber`
+        - `RearFacingTelephotoCameraModuleSerialNumber`
+      - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+      - `Tag`: `CmCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:BackSuperWideCameraSerialNumber`
+          - `Tag`: `CmPM`
+        -
+          - `DataInstanceIdentifier`: `ZG:BackTeleCameraSerialNumber`
+          - `Tag`: `CmPM`
+  - `Version`: `0`
+- `c01e7564d3d5c78aabd8d515bb66572ffc6659c4`:
+  - `RepairConfigurationAsidExceptionList`:
+    -
+      - `Tag`: `vcrt`
+    -
+      - `Tag`: `psd2`
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+      - `Tag`: `bCfg`
+    -
+      - `DataInstanceIdentifierList`:
+        - `ScreenSerialNumber`
+        - `ZG:MogulIDSNTopModule`
+      - `Tag`: `tcrt`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `AlsH`
+        -
+          - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+          - `Tag`: `dCfg`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+          - `Tag`: `GpC2`
+        -
+          - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+          - `Tag`: `IfCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `HmCl`
+      - `manp`:
+        -
+          - `PropertyIdentifier`: `RawPanelSerialNumber`
+          - `Tag`: `drp#`
+    -
+      - `DataInstanceIdentifier`: `SavageSerialNumber`
+      - `Tag`: `PlCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `prf1`
+        -
+          - `DataInstanceIdentifierList`:
+            - `SavageChipID`
+            - `SavageUID`
+          - `Tag`: `pspc`
+        -
+          - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+          - `Tag`: `FCCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `YonkersChipID`
+            - `YonkersUID`
+          - `Tag`: `ycrt`
+    -
+      - `AssemblyIdentifierList`:
+        - `RearFacingCameraModuleSerialNumber`
+        - `RearFacingSuperWideCameraModuleSerialNumber`
+      - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+      - `Tag`: `CmCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:BackCameraSerialNumber`
+          - `Tag`: `CmPM`
+  - `Version`: `0`
+- `c950600e573d9e8d6803434c1c8e6b6687312753`:
+  - `RepairConfigurationAsidExceptionList`:
+    -
+      - `Tag`: `vcrt`
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:BackglassSerialNumber`
+      - `Tag`: `LCfg`
+    -
+      - `DataInstanceIdentifierList`:
+        - `ZG:ScreenSerialNumber18d`
+        - `ZG:MogulIDSNTopModule`
+      - `Tag`: `tcrt`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `AlsH`
+        -
+          - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+          - `Tag`: `dCfg`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+          - `Tag`: `GpC2`
+        -
+          - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+          - `Tag`: `IfCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `HmCl`
+      - `manp`:
+        -
+          - `PropertyIdentifier`: `RawPanelSerialNumber`
+          - `Tag`: `drp#`
+    -
+      - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+      - `Tag`: `NBCl`
+    -
+      - `DataInstanceIdentifierList`:
+        - `SavageChipID`
+        - `SavageUID`
+      - `Tag`: `prpc`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `psd3`
+        -
+          - `AsidSubCCIdOptionalVerifyList`:
+            - `ZG:ProxSerialNumber`
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `PlCl`
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `prf1`
+        -
+          - `DataInstanceIdentifierList`:
+            - `SavageChipID`
+            - `SavageUID`
+          - `Tag`: `pspc`
+        -
+          - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+          - `Tag`: `FCCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `YonkersChipID`
+            - `YonkersUID`
+          - `Tag`: `ycrt`
+    -
+      - `AssemblyIdentifierList`:
+        - `RearFacingCameraModuleSerialNumber`
+        - `RearFacingSuperWideCameraModuleSerialNumber`
+        - `RearFacingTelephotoCameraModuleSerialNumber`
+      - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+      - `Tag`: `CmCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:BackSuperWideCameraSerialNumber`
+          - `Tag`: `CmPM`
+        -
+          - `DataInstanceIdentifier`: `JasperSerialNumber`
+          - `Tag`: `JpCl`
+  - `Version`: `0`
+- `cd21c67262c85616d116ffda865f62bfe4f2bdac`:
+  - `RepairConfigurationAsidExceptionList`:
+    -
+      - `Tag`: `vcrt`
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+      - `Tag`: `bCfg`
+    -
+      - `DataInstanceIdentifierList`:
+        - `ZG:ScreenSerialNumber18d`
+        - `ZG:MogulIDSNTopModule`
+      - `Tag`: `tcrt`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `AlsH`
+        -
+          - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+          - `Tag`: `dCfg`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+          - `Tag`: `GpC2`
+        -
+          - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+          - `Tag`: `IfCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `AmbientLightSensorSerialNumber`
+          - `Tag`: `HmCl`
+      - `manp`:
+        -
+          - `PropertyIdentifier`: `RawPanelSerialNumber`
+          - `Tag`: `drp#`
+    -
+      - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+      - `Tag`: `NBCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+          - `Tag`: `cCfg`
+    -
+      - `DataInstanceIdentifierList`:
+        - `SavageChipID`
+        - `SavageUID`
+      - `Tag`: `prpc`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `psd3`
+        -
+          - `AsidSubCCIdOptionalVerifyList`:
+            - `ZG:ProxSerialNumber`
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `PlCl`
+        -
+          - `DataInstanceIdentifier`: `SavageSerialNumber`
+          - `Tag`: `prf1`
+        -
+          - `DataInstanceIdentifierList`:
+            - `SavageChipID`
+            - `SavageUID`
+          - `Tag`: `pspc`
+        -
+          - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+          - `Tag`: `FCCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `YonkersChipID`
+            - `YonkersUID`
+          - `Tag`: `ycrt`
+    -
+      - `AssemblyIdentifierList`:
+        - `RearFacingCameraModuleSerialNumber`
+        - `RearFacingSuperWideCameraModuleSerialNumber`
+      - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+      - `Tag`: `CmCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:BackCameraSerialNumber`
+          - `Tag`: `CmPM`
+        -
+          - `DataInstanceIdentifier`: `ZG:BackSuperWideCameraSerialNumber`
+          - `Tag`: `CmPM`
+  - `Version`: `0`
+- `e1aa861a6b241e92a083215f261a87a27456273c`:
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+      - `Tag`: `dCfg`
+    -
+      - `AssemblyIdentifierList`:
+        - `ZG:MesaSensorIDSensorSN`
+      - `DataInstanceIdentifier`: `MesaSerialNumber`
+      - `Tag`: `FSCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `MesaSerialNumber`
+          - `Tag`: `hop0`
+  - `Version`: `0`
+- `f770f02d3e022a6b31f7b948b48021e41204dda6`:
+  - `RepairConfigurationAsidExceptionList`:
+    -
+      - `ComponentType`: `4080`
+      - `DataInstanceIdentifierList`:
+        - `ZG:BatterySerialNumberPack0`
+        - `ZG:BatteryIDSNPack0`
+      - `Tag`: `vcrt`
+    -
+      - `ComponentType`: `4081`
+      - `DataInstanceIdentifierList`:
+        - `ZG:BatterySerialNumberPack1`
+        - `ZG:BatteryIDSNPack1`
+      - `Tag`: `vcrt`
+  - `RepairConfigurationAsidMetadata`:
+    -
+      - `DataInstanceIdentifier`: `ZG:BackglassMagnetometerSerialNumber`
+      - `Tag`: `3Bg3`
+    -
+      - `ComponentType`: `innr`
+      - `DataInstanceIdentifierList`:
+        - `ZG:ScreenSerialNumber18dSecondary`
+        - `ZG:MogulIDSNTopModuleSecondary`
+      - `Tag`: `tcrt`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:CoverGlassSerialNumberSecondary`
+          - `Tag`: `3Dp2`
+        -
+          - `ComponentType`: `innr`
+          - `DataInstanceIdentifierList`:
+            - `ZG:CoverGlassSerialNumberSecondary`
+          - `Tag`: `DspB`
+    -
+      - `ComponentType`: `outr`
+      - `DataInstanceIdentifierList`:
+        - `ZG:ScreenSerialNumber18d`
+        - `ZG:MogulIDSNTopModule`
+      - `Tag`: `tcrt`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `ZG:AmbientLightSensorMDSensorFlexSerialNumber`
+          - `Tag`: `AlsH`
+        -
+          - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+          - `Tag`: `dCfg`
+        -
+          - `ComponentType`: `outr`
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+          - `Tag`: `DspB`
+        -
+          - `DataInstanceIdentifier`: `ZG:AmbientLightSensorMDSensorFlexSerialNumber`
+          - `Tag`: `IfCl`
+        -
+          - `DataInstanceIdentifierList`:
+            - `CoverglassSerialNumber`
+            - `ZG:AmbientLightSensorMDSensorFlexSerialNumber`
+          - `Tag`: `HmCl`
+    -
+      - `DataInstanceIdentifier`: `ZG:TritiumMandoUID`
+      - `Tag`: `TBCl`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:TritiumMandoUID`
+          - `Tag`: `mCfg`
+    -
+      - `ComponentType`: `innf`
+      - `DataInstanceIdentifierList`:
+        - `ZG:YonkersIR2ChipID`
+        - `ZG:YonkersIR2UID`
+      - `Tag`: `prpc`
+      - `dcls`:
+        -
+          - `ComponentType`: `innf`
+          - `DataInstanceIdentifierList`:
+            - `ZG:YonkersIR2ChipID`
+            - `ZG:YonkersIR2UID`
+          - `Tag`: `ycrt`
+        -
+          - `ComponentType`: `innf`
+          - `DataInstanceIdentifier`: `ZG:InternalFrontCameraModuleSerialNumber`
+          - `Tag`: `iCCl`
+    -
+      - `ComponentType`: `outf`
+      - `DataInstanceIdentifierList`:
+        - `ZG:YonkersIR1ChipID`
+        - `ZG:YonkersIR1UID`
+      - `Tag`: `prpc`
+      - `dcls`:
+        -
+          - `ComponentType`: `outf`
+          - `DataInstanceIdentifierList`:
+            - `ZG:YonkersIR1ChipID`
+            - `ZG:YonkersIR1UID`
+          - `Tag`: `ycrt`
+    -
+      - `DataInstanceIdentifier`: `ZG:PMUFollowerSerialNumber`
+      - `Tag`: `xCfg`
+      - `dcls`:
+        -
+          - `ComponentType`: `left`
+          - `DataInstanceIdentifierList`:
+            - `ZG:AmbientLightSensorMDMLBSerialNumber`
+          - `Tag`: `AlsB`
+    -
+      - `DataInstanceIdentifier`: `ZG:MesaSensorIDSensorSN`
+      - `Tag`: `MSRk`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:MesaSensorIDSensorSN`
+          - `Tag`: `FSC2`
+    -
+      - `ComponentType`: `rear`
+      - `DataInstanceIdentifierList`:
+        - `ZG:RearCameraAuthICChipID`
+        - `ZG:RearCameraAuthICUID`
+      - `Tag`: `prpc`
+      - `dcls`:
+        -
+          - `DataInstanceIdentifier`: `ZG:BackSuperWideCameraSerialNumber`
+          - `Tag`: `CmPM`
+        -
+          - `AssemblyIdentifierList`:
+            - `RearFacingCameraModuleSerialNumber`
+            - `RearFacingSuperWideCameraModuleSerialNumber`
+          - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+          - `Tag`: `CmCl`
+    -
+      - `ComponentType`: `rigt`
+      - `DataInstanceIdentifierList`:
+        - `ZG:AmbientLightSensorTBSensorFlexSerialNumber`
+      - `Tag`: `AlsB`
+  - `Version`: `0`
+- `iPad14,10`: `5c5fc40113755341ca235f318aac422f2e022631`
+- `iPad14,11`: `5c5fc40113755341ca235f318aac422f2e022631`
+- `iPad14,8`: `55ff477c1d668c8c74cc67e5b3ea32363eb31a97`
+- `iPad14,9`: `55ff477c1d668c8c74cc67e5b3ea32363eb31a97`
+- `iPad15,3`: `e1aa861a6b241e92a083215f261a87a27456273c`
+- `iPad15,4`: `e1aa861a6b241e92a083215f261a87a27456273c`
+- `iPad15,5`: `2a1f7a0afcfcff8e21a07d3ca61cc6ce89c0b9e5`
+- `iPad15,6`: `2a1f7a0afcfcff8e21a07d3ca61cc6ce89c0b9e5`
+- `iPad15,7`: `878df6af80f3a2f88a13bdc8af11d94661de69a1`
+- `iPad15,8`: `878df6af80f3a2f88a13bdc8af11d94661de69a1`
+- `iPad16,1`: `e1aa861a6b241e92a083215f261a87a27456273c`
+- `iPad16,10`: `857755e2eaf21ec0ae1ff50a1b6e1dd120efa737`
+- `iPad16,11`: `857755e2eaf21ec0ae1ff50a1b6e1dd120efa737`
+- `iPad16,2`: `e1aa861a6b241e92a083215f261a87a27456273c`
+- `iPad16,3`: `84a589186dff740eddcc311d61b7f555b5d8bb0a`
+- `iPad16,4`: `84a589186dff740eddcc311d61b7f555b5d8bb0a`
+- `iPad16,5`: `84a589186dff740eddcc311d61b7f555b5d8bb0a`
+- `iPad16,6`: `84a589186dff740eddcc311d61b7f555b5d8bb0a`
+- `iPad16,8`: `37dfb312ffa6d315a197689cffb6adfcab01f4fb`
+- `iPad16,9`: `37dfb312ffa6d315a197689cffb6adfcab01f4fb`
+- `iPad17,1`: `837b1816713eeae2e16b2b65e8d0af7bdbeda6c0`
+- `iPad17,2`: `837b1816713eeae2e16b2b65e8d0af7bdbeda6c0`
+- `iPad17,3`: `837b1816713eeae2e16b2b65e8d0af7bdbeda6c0`
+- `iPad17,4`: `837b1816713eeae2e16b2b65e8d0af7bdbeda6c0`
+- `iPhone15,4`: `c01e7564d3d5c78aabd8d515bb66572ffc6659c4`
+- `iPhone15,5`: `c01e7564d3d5c78aabd8d515bb66572ffc6659c4`
+- `iPhone16,1`: `2d79cb2dee6fe4638525e05981e16004d7162cd4`
+- `iPhone16,2`: `2d79cb2dee6fe4638525e05981e16004d7162cd4`
+- `iPhone17,1`: `c950600e573d9e8d6803434c1c8e6b6687312753`
+- `iPhone17,2`: `c950600e573d9e8d6803434c1c8e6b6687312753`
+- `iPhone17,3`: `9736193ed69002f9f273693993cf95cb39e73d34`
+- `iPhone17,4`: `9736193ed69002f9f273693993cf95cb39e73d34`
+- `iPhone17,5`: `8b1022158aff6a4c40aeb29c428c9b01a819fbff`
+- `iPhone18,1`: `b89ffd0a0f6528281c8d94f348c7492f891749b9`
+- `iPhone18,2`: `b89ffd0a0f6528281c8d94f348c7492f891749b9`
+- `iPhone18,3`: `cd21c67262c85616d116ffda865f62bfe4f2bdac`
+- `iPhone18,4`: `402bd4ba4d4d63bef5036f8dba239a510a50ca27`
+- `iPhone18,5`: `37a37a3c50e6a70f6556b73f7d4418ed03cebe78`
+- `iPhone19,2`: `abdba334a2d321cbdf7d6e348f048d04ea8c015b`
+- `iPhone19,3`: `abdba334a2d321cbdf7d6e348f048d04ea8c015b`
+- `iPhone19,4`: `f770f02d3e022a6b31f7b948b48021e41204dda6`
+- `iPhone19,7`: `abdba334a2d321cbdf7d6e348f048d04ea8c015b`

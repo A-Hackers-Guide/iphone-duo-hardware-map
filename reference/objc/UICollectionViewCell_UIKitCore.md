@@ -1,0 +1,274 @@
+# `UICollectionViewCell`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `UICollectionReusableView`
+- Protocols: `UIEditMenuInteractionDelegate`, `UIGestureRecognizerDelegate`, `_UISystemBackgroundViewContainer`
+- 22 instance variables, 35 properties, 186 instance methods, 5 class methods
+
+## Instance variables
+
+```
+@"UIView" _contentView;
+@"UIView" _backgroundView;
+@"UIView" _selectedBackgroundView;
+@"UILongPressGestureRecognizer" _menuGesture;
+@ _selectionSegueTemplate;
+@ _highlightingSupport;
+@"<_UIContentViewInternal>" _viewForContentConfiguration;
+@"_UISystemBackgroundView" _systemBackgroundView;
+@? _contentViewConfigurationProvider;
+@? _backgroundViewConfigurationProvider;
+@"<_UIBackgroundConfigurationInternal>" _lastNormalBackgroundViewConfiguration;
+Q _dragAppearance;
+{?="selected"b1"highlighted"b1"editing"b1"swiped"b1"reordering"b1"contextMenuGroupLocation"b3"usesAnyPlainListStyle"b1"typeSelectState"b2"needsConfigurationStateUpdate"b1"performingConfigurationStateUpdate"b1"hasContentConfiguration"b1"hasCustomBackgroundColor"b1"hasCustomBackgroundView"b1"hasCustomSelectedBackgroundView"b1"hasCustomBackgroundViewConfigurationProvider"b1"hasCustomBackgroundViewConfiguration"b1"automaticallyUpdatesBackgroundViewConfiguration"b1"automaticallyUpdatesContentViewConfiguration"b1"clearSelectionWhenMenuDisappears"b1"waitingForSelectionAnimationHalfwayPoint"b1"contentViewWantsSystemLayoutSizeFittingSize"b1"selectionOrHighlightStateChangedSinceBackgroundUpdate"b1"allowsStateUpdatesWhenEvaluatingBackgroundAppearance"b1"lastNormalBackgroundConfigurationWasClearedForListAppearanceChange"b1"needsFocusEffectUpdateAfterLayout"b1"shouldSkipPrepareForConfigurationStateUpdate"b1"ignoreFocusStateForFetchingLastNormalConfigurationState"b1} _collectionCellFlags;
+B _selected;
+B _highlighted;
+B _dragging;
+@? _configurationUpdateHandler;
+@"UIEditMenuInteraction" __editMenuInteraction;
+@"_UIFloatingContentView" _focusedFloatingContentView;
+q __dropState;
+q _focusStyle;
+@"UIButton" __popupMenuButton;
+```
+
+## Properties
+
+```
+@property (T@"UICellConfigurationState",N,R) _bridgedConfigurationState;
+@property (T@"UIEditMenuInteraction",&,N,V__editMenuInteraction) _editMenuInteraction;
+@property (T@"UIView",&,N,V_contentView) contentView;
+@property (T@"UIView",R,N) _existingContentView;
+@property (T@"_UIFloatingContentView",R,N,G_focusedFloatingContentView,V_focusedFloatingContentView) focusedFloatingContentView;
+@property (Tq,N,G_contextMenuGroupLocation,S_setContextMenuGroupLocation:) _contextMenuGroupLocation;
+@property (TB,N,G_usesAnyPlainListStyle,S_setUsesAnyPlainListStyle:) _usesAnyPlainListStyle;
+@property (TB,N,G_isSwiped,S_setSwiped:) _swiped;
+@property (TB,N,G_isReordering,S_setReordering:) _reordering;
+@property (Tq,N,G_typeSelectState,S_setTypeSelectState:) _typeSelectState;
+@property (TQ,N,G_dragAppearance,S_setDragAppearance:) _dragAppearance;
+@property (Tq,N,G_dropState,S_setDropState:,V__dropState) _dropState;
+@property (T{UIEdgeInsets=dddd},R,N,G_contentViewInset) contentViewInset;
+@property (T@"UICellConfigurationState",R,N) _configurationState;
+@property (TB,R,N,G_backgroundFillIsCustomized) _backgroundFillIsCustomized;
+@property (TB,R,N,G_backgroundIsVerticallyInset) _backgroundIsVerticallyInset;
+@property (Tq,N,G_focusStyle,S_setFocusStyle:,V_focusStyle) focusStyle;
+@property (TB,R,N) _allowsHorizontalFocusMovement;
+@property (TB,N,GisDragging,V_dragging) dragging;
+@property (TB,N,G_isDropTarget,S_setDropTarget:) _dropTarget;
+@property (T@"UIButton",&,N,S_setPopupMenuButton:,V__popupMenuButton) _popupMenuButton;
+@property (T@"UICellConfigurationState",R,N) configurationState;
+@property (T@?,C,N,V_configurationUpdateHandler) configurationUpdateHandler;
+@property (T@"<UIContentConfiguration>",C,N) contentConfiguration;
+@property (TB,N) automaticallyUpdatesContentConfiguration;
+@property (TB,N,GisSelected,V_selected) selected;
+@property (TB,N,GisHighlighted,V_highlighted) highlighted;
+@property (T@"UIBackgroundConfiguration",C,N) backgroundConfiguration;
+@property (TB,N) automaticallyUpdatesBackgroundConfiguration;
+@property (T@"UIView",&,N,V_backgroundView) backgroundView;
+@property (T@"UIView",&,N,V_selectedBackgroundView) selectedBackgroundView;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Class methods
+
+```
++[UICollectionViewCell _contentViewClass];
++[UICollectionViewCell _isInternalCell];
++[UICollectionViewCell _createDefaultContentViewWithFrame:];
++[UICollectionViewCell _subclassOverridesContentViewClass];
++[UICollectionViewCell _wantsLegacyMenuGesture];
+```
+
+## Instance methods
+
+```
+-[UICollectionViewCell _setTypeSelectState:];
+-[UICollectionViewCell setUserInteractionEnabled:];
+-[UICollectionViewCell _setPopupMenuButton:];
+-[UICollectionViewCell _didUpdateFocusInContext:];
+-[UICollectionViewCell cut:];
+-[UICollectionViewCell paste:];
+-[UICollectionViewCell setContentView:];
+-[UICollectionViewCell setSelected:];
+-[UICollectionViewCell _intrinsicContentSizeInvalidatedForChildView:];
+-[UICollectionViewCell editMenuInteraction:willPresentMenuForConfiguration:animator:];
+-[UICollectionViewCell isHighlighted];
+-[UICollectionViewCell _updateProperties];
+-[UICollectionViewCell _contextMenuGroupLocation];
+-[UICollectionViewCell _setContextMenuGroupLocation:];
+-[UICollectionViewCell editMenuInteraction:targetRectForConfiguration:];
+-[UICollectionViewCell _bridgedUpdateConfigurationUsingState:];
+-[UICollectionViewCell _configureFocusedFloatingContentView:];
+-[UICollectionViewCell _updateBackgroundView];
+-[UICollectionViewCell layoutSubviews];
+-[UICollectionViewCell setDragging:];
+-[UICollectionViewCell isFocused];
+-[UICollectionViewCell _monitoredView:didMoveFromSuperview:toSuperview:];
+-[UICollectionViewCell canBecomeFocused];
+-[UICollectionViewCell _encodableSubviews];
+-[UICollectionViewCell _monitoredView:willMoveFromSuperview:toSuperview:];
+-[UICollectionViewCell _allowsHorizontalFocusMovement];
+-[UICollectionViewCell editMenuInteraction:willDismissMenuForConfiguration:animator:];
+-[UICollectionViewCell setSemanticContentAttribute:];
+-[UICollectionViewCell setBackgroundColor:];
+-[UICollectionViewCell isDragging];
+-[UICollectionViewCell sizeThatFits:];
+-[UICollectionViewCell _defaultFocusEffect];
+-[UICollectionViewCell setEditing:];
+-[UICollectionViewCell setHighlighted:];
+-[UICollectionViewCell copy:];
+-[UICollectionViewCell focusItemDeferralMode];
+-[UICollectionViewCell prepareForReuse];
+-[UICollectionViewCell encodeWithCoder:];
+-[UICollectionViewCell isSelected];
+-[UICollectionViewCell _layoutContentView];
+-[UICollectionViewCell _usesAnyPlainListStyle];
+-[UICollectionViewCell contentView];
+-[UICollectionViewCell setBackgroundConfiguration:];
+-[UICollectionViewCell backgroundView];
+-[UICollectionViewCell _setUsesAnyPlainListStyle:];
+-[UICollectionViewCell initWithCoder:];
+-[UICollectionViewCell traitCollectionDidChange:];
+-[UICollectionViewCell _typeSelectState];
+-[UICollectionViewCell _populateArchivedSubviews:];
+-[UICollectionViewCell backgroundConfiguration];
+-[UICollectionViewCell _gestureRecognizerShouldBegin:];
+-[UICollectionViewCell isEditing];
+-[UICollectionViewCell editMenuInteraction:menuForConfiguration:suggestedActions:];
+-[UICollectionViewCell initWithFrame:];
+-[UICollectionViewCell systemLayoutSizeFittingSize:withHorizontalFittingPriority:verticalFittingPriority:];
+-[UICollectionViewCell setBackgroundView:];
+-[UICollectionViewCell canPerformAction:withSender:];
+-[UICollectionViewCell _willUpdateFocusInContext:];
+-[UICollectionViewCell _setSelected:animated:];
+-[UICollectionViewCell setNeedsUpdateConfiguration];
+-[UICollectionViewCell _viewConfigurationState];
+-[UICollectionViewCell _dragAppearance];
+-[UICollectionViewCell _setContentView:addToHierarchy:];
+-[UICollectionViewCell _setDropTarget:];
+-[UICollectionViewCell _setReordering:];
+-[UICollectionViewCell _updateConfigurationUsingState:];
+-[UICollectionViewCell _defaultBackgroundConfiguration];
+-[UICollectionViewCell _setFocusStyle:];
+-[UICollectionViewCell _allowsStateUpdatesWhenEvaluatingBackgroundAppearance];
+-[UICollectionViewCell _appliesLayoutAttributesMaskingToBackgroundConfiguration];
+-[UICollectionViewCell _appliesLayoutAttributesMaskingToReusableView];
+-[UICollectionViewCell _applyBackgroundViewConfiguration:withState:];
+-[UICollectionViewCell _applyContentViewConfiguration:withState:usingSPI:];
+-[UICollectionViewCell _automaticallyUpdatesBackgroundViewConfiguration];
+-[UICollectionViewCell _automaticallyUpdatesContentViewConfiguration];
+-[UICollectionViewCell _backgroundFillIsCustomized];
+-[UICollectionViewCell _backgroundIsVerticallyInset];
+-[UICollectionViewCell _backgroundViewConfiguration];
+-[UICollectionViewCell _backgroundViewConfigurationProvider];
+-[UICollectionViewCell _bridgedConfigurationState];
+-[UICollectionViewCell _canFocusProgrammatically];
+-[UICollectionViewCell _canPerformActionForKey:];
+-[UICollectionViewCell _clearChangeHandlersForOldContentView:];
+-[UICollectionViewCell _configurationState];
+-[UICollectionViewCell _contentTargetSizeForTargetSize:withHorizontalFittingPriority:verticalFittingPriority:forUseWithSizeThatFits:];
+-[UICollectionViewCell _contentViewConfiguration];
+-[UICollectionViewCell _contentViewConfigurationProvider];
+-[UICollectionViewCell _contentViewInset];
+-[UICollectionViewCell _defaultBackgroundView];
+-[UICollectionViewCell _defaultFocusOutline];
+-[UICollectionViewCell _defaultSelectedBackgroundView];
+-[UICollectionViewCell _descendantsShouldHighlight];
+-[UICollectionViewCell _didPerformConfigurationStateUpdate];
+-[UICollectionViewCell _dropState];
+-[UICollectionViewCell _editMenuInteraction];
+-[UICollectionViewCell _effectiveDefaultBackgroundConfiguration];
+-[UICollectionViewCell _effectiveMaskedCornersForSystemBackgroundView];
+-[UICollectionViewCell _effectivePopupMenuButton];
+-[UICollectionViewCell _ensureFocusedFloatingContentView];
+-[UICollectionViewCell _existingContentView];
+-[UICollectionViewCell _focusStyle];
+-[UICollectionViewCell _focusedFloatingContentView];
+-[UICollectionViewCell _forcePopulateNormalStateConfiguration];
+-[UICollectionViewCell _forwardsSystemLayoutFittingSizeToContentView:];
+-[UICollectionViewCell _handleMenuGesture:];
+-[UICollectionViewCell _hasCustomSelectionAction];
+-[UICollectionViewCell _highlightDescendantsWhenSelected];
+-[UICollectionViewCell _invalidateConfiguration];
+-[UICollectionViewCell _isDropTarget];
+-[UICollectionViewCell _isReordering];
+-[UICollectionViewCell _isSwiped];
+-[UICollectionViewCell _isUsingOldStyleMultiselection];
+-[UICollectionViewCell _layoutFocusedFloatingContentView];
+-[UICollectionViewCell _layoutFocusedFloatingContentView:];
+-[UICollectionViewCell _layoutSystemBackgroundView];
+-[UICollectionViewCell _maskedCornersForSystemBackgroundView];
+-[UICollectionViewCell _notifyIsDisplaying:];
+-[UICollectionViewCell _performAction:sender:];
+-[UICollectionViewCell _performActionForKey:];
+-[UICollectionViewCell _performConfigurationStateModifications:];
+-[UICollectionViewCell _performConfigurationStateUpdate];
+-[UICollectionViewCell _performCustomSelectionAction];
+-[UICollectionViewCell _popupMenuButton];
+-[UICollectionViewCell _preferredConfigurationForFocusAnimation:inContext:];
+-[UICollectionViewCell _prepareForConfigurationStateUpdate];
+-[UICollectionViewCell _removesHighlightedAndSelectedStatesForBackground];
+-[UICollectionViewCell _resetBackgroundViewConfiguration];
+-[UICollectionViewCell _resetBackgroundViewsAndColor];
+-[UICollectionViewCell _restoreCurrentDragAppearanceIfNeeded];
+-[UICollectionViewCell _selectionSegueTemplate];
+-[UICollectionViewCell _setAllowsStateUpdatesWhenEvaluatingBackgroundAppearance:];
+-[UICollectionViewCell _setAutomaticIntrinsicContentSizeInvalidationEnabled:];
+-[UICollectionViewCell _setAutomaticallyUpdatesBackgroundViewConfiguration:];
+-[UICollectionViewCell _setAutomaticallyUpdatesContentViewConfiguration:];
+-[UICollectionViewCell _setBackgroundViewConfiguration:];
+-[UICollectionViewCell _setBackgroundViewConfigurationProvider:];
+-[UICollectionViewCell _setContentViewConfiguration:];
+-[UICollectionViewCell _setContentViewConfigurationProvider:];
+-[UICollectionViewCell _setDragAppearance:];
+-[UICollectionViewCell _setDropState:];
+-[UICollectionViewCell _setHighlighted:animated:];
+-[UICollectionViewCell _setLayoutAttributes:];
+-[UICollectionViewCell _setNeedsConfigurationStateUpdate];
+-[UICollectionViewCell _setOpaque:forSubview:];
+-[UICollectionViewCell _setSelected:animated:isUserInitiated:];
+-[UICollectionViewCell _setSelectionSegueTemplate:];
+-[UICollectionViewCell _setSwiped:];
+-[UICollectionViewCell _setupChangeHandlersForNewContentView:];
+-[UICollectionViewCell _setupHighlightingSupport];
+-[UICollectionViewCell _shouldForwardMovementToFocusEngine:];
+-[UICollectionViewCell _shouldSaveOpaqueStateForView:];
+-[UICollectionViewCell _stateForUpdatingBackgroundConfigurationWithState:];
+-[UICollectionViewCell _systemBackgroundView];
+-[UICollectionViewCell _systemDefaultFocusGroupPriority];
+-[UICollectionViewCell _teardownHighlightingSupportIfReady];
+-[UICollectionViewCell _updateBackgroundViewConfigurationForState:];
+-[UICollectionViewCell _updateConfigurationWithObservationTracking];
+-[UICollectionViewCell _updateContentViewConfigurationForState:];
+-[UICollectionViewCell _updateDefaultBackgroundAppearance];
+-[UICollectionViewCell _updateFocusedFloatingContentControlStateAnimated:];
+-[UICollectionViewCell _updateFocusedFloatingContentControlStateInContext:withAnimationCoordinator:animated:];
+-[UICollectionViewCell _updateHighlightColorsForAnimationHalfwayPoint];
+-[UICollectionViewCell _updateHighlightColorsForView:highlight:];
+-[UICollectionViewCell _updatePopupMenuButtonFromContentView];
+-[UICollectionViewCell _updateUserInterfaceRenderingModeUsingAttributes:];
+-[UICollectionViewCell _updateViewConfigurationsWithState:];
+-[UICollectionViewCell _usingBackgroundConfigurationOrDefaultBackgroundConfiguration];
+-[UICollectionViewCell _usingBackgroundViewConfiguration];
+-[UICollectionViewCell _usingContentViewConfiguration];
+-[UICollectionViewCell _visiblePathForBackgroundConfiguration];
+-[UICollectionViewCell automaticallyUpdatesBackgroundConfiguration];
+-[UICollectionViewCell automaticallyUpdatesContentConfiguration];
+-[UICollectionViewCell canBeEdited];
+-[UICollectionViewCell configurationState];
+-[UICollectionViewCell configurationUpdateHandler];
+-[UICollectionViewCell contentConfiguration];
+-[UICollectionViewCell defaultBackgroundConfiguration];
+-[UICollectionViewCell dragStateDidChange:];
+-[UICollectionViewCell selectedBackgroundView];
+-[UICollectionViewCell setAutomaticallyUpdatesBackgroundConfiguration:];
+-[UICollectionViewCell setAutomaticallyUpdatesContentConfiguration:];
+-[UICollectionViewCell setConfigurationUpdateHandler:];
+-[UICollectionViewCell setContentConfiguration:];
+-[UICollectionViewCell setSelectedBackgroundView:];
+-[UICollectionViewCell set_editMenuInteraction:];
+-[UICollectionViewCell updateConfigurationUsingState:];
+```

@@ -1,0 +1,2206 @@
+# Symbols: `/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__PrivateFrameworks__AccessibilityUtilities.framework__AccessibilityUtilities.md). **[DSC]**
+
+1,189 public symbols, 5,487 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1e07de808  __DATA_CONST,__const  _AFOutputLanguageDidChangeDarwinNotification
+0x1e07df4e8  __DATA_CONST,__const  _AXASTCustomGesturePrefixName
+0x1e07df4e0  __DATA_CONST,__const  _AXASTSiriShortcutPrefixName
+0x1e07de5a0  __DATA_CONST,__const  _AXAccessibilityIntentConfiguredActionTemplateParameterKey
+0x189b56b68  __TEXT,__text  _AXAirPodDidReceiveGestureAction
+0x189b1c95c  __TEXT,__text  _AXAirPodsB494LocalizedStringForKey
+0x189b1c9e0  __TEXT,__text  _AXAirPodsB698LocalizedStringForKey
+0x189b1c8d8  __TEXT,__text  _AXAirPodsLocalizedStringForKey
+0x189ab56d0  __TEXT,__text  _AXApplicationSupportsHapticMusic
+0x189b12a5c  __TEXT,__text  _AXAskIsRestricted
+0x189b12a88  __TEXT,__text  _AXAskIsRestrictedByParentalControls
+0x189b12a30  __TEXT,__text  _AXAskShouldHideOptions
+0x1e07df7a8  __DATA_CONST,__const  _AXAssertionTypeDisableControlCenterGesture
+0x1e07df7b0  __DATA_CONST,__const  _AXAssertionTypeDisableDashboardSystemGestures
+0x1e07df7a0  __DATA_CONST,__const  _AXAssertionTypeDisableNotificationCenterGesture
+0x1e07df7b8  __DATA_CONST,__const  _AXAssertionTypeDisableSecurePayAccessibilityFeatures
+0x1e07df798  __DATA_CONST,__const  _AXAssertionTypeDisableSpeakThisGesture
+0x1e07df790  __DATA_CONST,__const  _AXAssertionTypeDisableSystemGestures
+0x189adee7c  __TEXT,__text  _AXAssistiveTouchAXSSFacialExpressionForHeadTrackingExpression
+0x189add1dc  __TEXT,__text  _AXAssistiveTouchAccessibilityIcons
+0x189adc738  __TEXT,__text  _AXAssistiveTouchChangeIconCount
+0x189add5a8  __TEXT,__text  _AXAssistiveTouchCustomGesturesIcons
+0x189adeb18  __TEXT,__text  _AXAssistiveTouchDefaultIconTypeForMouseButton
+0x189adeb40  __TEXT,__text  _AXAssistiveTouchDefaultLaserIconTypeForMouseButton
+0x189adeb6c  __TEXT,__text  _AXAssistiveTouchDisallowedBaseActions
+0x189add948  __TEXT,__text  _AXAssistiveTouchDwellIcons
+0x189ade184  __TEXT,__text  _AXAssistiveTouchEyeTrackingIcons
+0x1e07df5e0  __DATA_CONST,__const  _AXAssistiveTouchHeadTrackingExpressionBrowsUp
+0x1e07df600  __DATA_CONST,__const  _AXAssistiveTouchHeadTrackingExpressionEyeBlink
+0x189adecb8  __TEXT,__text  _AXAssistiveTouchHeadTrackingExpressionForAXSSFacialExpression
+0x1e07df5e8  __DATA_CONST,__const  _AXAssistiveTouchHeadTrackingExpressionJawOpen
+0x1e07df610  __DATA_CONST,__const  _AXAssistiveTouchHeadTrackingExpressionMouthPuckerCenter
+0x1e07df620  __DATA_CONST,__const  _AXAssistiveTouchHeadTrackingExpressionMouthPuckerLeft
+0x1e07df618  __DATA_CONST,__const  _AXAssistiveTouchHeadTrackingExpressionMouthPuckerRight
+0x1e07df5d8  __DATA_CONST,__const  _AXAssistiveTouchHeadTrackingExpressionNone
+0x1e07df608  __DATA_CONST,__const  _AXAssistiveTouchHeadTrackingExpressionNoseSneer
+0x1e07df5f0  __DATA_CONST,__const  _AXAssistiveTouchHeadTrackingExpressionSmile
+0x1e07df5f8  __DATA_CONST,__const  _AXAssistiveTouchHeadTrackingExpressionTongueOut
+0x189ade250  __TEXT,__text  _AXAssistiveTouchHeadTrackingIcons
+0x1e07df270  __DATA_CONST,__const  _AXAssistiveTouchIconLocationBottomLeft
+0x1e07df278  __DATA_CONST,__const  _AXAssistiveTouchIconLocationBottomMiddle
+0x1e07df280  __DATA_CONST,__const  _AXAssistiveTouchIconLocationBottomRight
+0x1e07de4f8  __DATA_CONST,__const  _AXAssistiveTouchIconLocationMidLeft
+0x1e07df260  __DATA_CONST,__const  _AXAssistiveTouchIconLocationMidMiddle
+0x1e07df268  __DATA_CONST,__const  _AXAssistiveTouchIconLocationMidRight
+0x1e07df248  __DATA_CONST,__const  _AXAssistiveTouchIconLocationTopLeft
+0x1e07df250  __DATA_CONST,__const  _AXAssistiveTouchIconLocationTopMiddle
+0x1e07df258  __DATA_CONST,__const  _AXAssistiveTouchIconLocationTopRight
+0x1e07df628  __DATA_CONST,__const  _AXAssistiveTouchIconTypeAccessibilityReader
+0x1e07df588  __DATA_CONST,__const  _AXAssistiveTouchIconTypeActionButton
+0x1e07df300  __DATA_CONST,__const  _AXAssistiveTouchIconTypeAppSwitcher
+0x1e07df398  __DATA_CONST,__const  _AXAssistiveTouchIconTypeArmApplePay
+0x1e07df3a8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeAssistiveAccess
+0x1e07df4f0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeAssistiveTouch
+0x1e07df548  __DATA_CONST,__const  _AXAssistiveTouchIconTypeBackgroundSounds
+0x1e07df590  __DATA_CONST,__const  _AXAssistiveTouchIconTypeCalibrateOnDeviceEyeTracking
+0x1e07df488  __DATA_CONST,__const  _AXAssistiveTouchIconTypeCamera
+0x1e07df5b8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeCameraButton
+0x1e07df5c8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeCameraButtonDoubleLightPress
+0x1e07df5c0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeCameraButtonLightPress
+0x1e07df500  __DATA_CONST,__const  _AXAssistiveTouchIconTypeClassicInvert
+0x1e07df508  __DATA_CONST,__const  _AXAssistiveTouchIconTypeColorFilters
+0x1e07df320  __DATA_CONST,__const  _AXAssistiveTouchIconTypeCommandAndControl
+0x1e07df3c0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeConfirmApplePay
+0x1e07df478  __DATA_CONST,__const  _AXAssistiveTouchIconTypeContinuousScrollHorizontal
+0x1e07df480  __DATA_CONST,__const  _AXAssistiveTouchIconTypeContinuousScrollVertical
+0x1e07df2b8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeControlCenter
+0x1e07df290  __DATA_CONST,__const  _AXAssistiveTouchIconTypeCustom
+0x1e07df630  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDescribeScene
+0x1e07df540  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDetectionMode
+0x1e07df298  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDevice
+0x1e07df568  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDimFlashingLights
+0x1e07df570  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDisplayAppearance
+0x1e07df348  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDoubleTap
+0x1e07df358  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDragAndDrop
+0x1e07df3e8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDwell
+0x1e07df408  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDwellClick
+0x1e07df430  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDwellDecreaseTime
+0x1e07df428  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDwellIncreaseTime
+0x1e07df410  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDwellLock
+0x1e07df420  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDwellLockToggle
+0x1e07df3f8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDwellPause
+0x1e07df400  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDwellPauseToggle
+0x1e07df3f0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDwellResume
+0x1e07df438  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDwellToggleKeyboardContinuousPath
+0x1e07df418  __DATA_CONST,__const  _AXAssistiveTouchIconTypeDwellUnlock
+0x1e07df4b8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeEyeTrackingAutoHide
+0x1e07df4a8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeEyeTrackingBubbleMode
+0x1e07df5b0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeFaceTimeLiveCaptions
+0x1e07df4c0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeForceTap
+0x1e07df490  __DATA_CONST,__const  _AXAssistiveTouchIconTypeFrontFacingCamera
+0x1e07df538  __DATA_CONST,__const  _AXAssistiveTouchIconTypeFullKeyboardAccess
+0x1e07df2e8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeGestures
+0x1e07df5a8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeHapticMusic
+0x1e07df4b0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeHeadTrackingBubbleMode
+0x1e07df2b0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeHome
+0x1e07df3a0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeHoverTextTyping
+0x1e07df558  __DATA_CONST,__const  _AXAssistiveTouchIconTypeLiveCaptions
+0x1e07df560  __DATA_CONST,__const  _AXAssistiveTouchIconTypeLiveSpeech
+0x1e07df2c0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeLockScreen
+0x1e07df350  __DATA_CONST,__const  _AXAssistiveTouchIconTypeLongPress
+0x1e07df528  __DATA_CONST,__const  _AXAssistiveTouchIconTypeMagnifier
+0x1e07df3b8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeMenuBar
+0x1e07df578  __DATA_CONST,__const  _AXAssistiveTouchIconTypeMotionCues
+0x1e07df4c8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeMousePrimaryClick
+0x1e07df4d0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeMouseSecondaryClick
+0x1e07df360  __DATA_CONST,__const  _AXAssistiveTouchIconTypeMoveMenu
+0x1e07df390  __DATA_CONST,__const  _AXAssistiveTouchIconTypeMultitasking
+0x1e07df2e0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeMute
+0x1e07df550  __DATA_CONST,__const  _AXAssistiveTouchIconTypeNearbyDeviceControl
+0x1e07df288  __DATA_CONST,__const  _AXAssistiveTouchIconTypeNotificationCenter
+0x1e07df5a0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeOnDeviceEyeTracking
+0x1e07df598  __DATA_CONST,__const  _AXAssistiveTouchIconTypeOnDeviceEyeTrackingZoomScreen
+0x1e07df3d8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeOpenMenu
+0x1e07df310  __DATA_CONST,__const  _AXAssistiveTouchIconTypeOrientation
+0x1e07df3e0  __DATA_CONST,__const  _AXAssistiveTouchIconTypePassThroughToApp
+0x1e07df328  __DATA_CONST,__const  _AXAssistiveTouchIconTypePinch
+0x1e07df338  __DATA_CONST,__const  _AXAssistiveTouchIconTypePinchAndRotate
+0x1e07df3c8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeReachability
+0x1e07df380  __DATA_CONST,__const  _AXAssistiveTouchIconTypeRebootDevice
+0x1e07df330  __DATA_CONST,__const  _AXAssistiveTouchIconTypeRotate
+0x1e07df2c8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeRotateScreen
+0x1e07df378  __DATA_CONST,__const  _AXAssistiveTouchIconTypeSOS
+0x1e07df308  __DATA_CONST,__const  _AXAssistiveTouchIconTypeScreenshot
+0x1e07df440  __DATA_CONST,__const  _AXAssistiveTouchIconTypeScroll
+0x1e07df450  __DATA_CONST,__const  _AXAssistiveTouchIconTypeScrollDown
+0x1e07df458  __DATA_CONST,__const  _AXAssistiveTouchIconTypeScrollLeft
+0x1e07df460  __DATA_CONST,__const  _AXAssistiveTouchIconTypeScrollRight
+0x1e07df470  __DATA_CONST,__const  _AXAssistiveTouchIconTypeScrollToBottom
+0x1e07df468  __DATA_CONST,__const  _AXAssistiveTouchIconTypeScrollToTop
+0x1e07df448  __DATA_CONST,__const  _AXAssistiveTouchIconTypeScrollUp
+0x1e07df2f8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeShake
+0x1e07df2a0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeSiri
+0x1e07df4a0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeSiriShortcuts
+0x1e07df4d8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeSiriShortcutsMenu
+0x1e07df510  __DATA_CONST,__const  _AXAssistiveTouchIconTypeSmartInvert
+0x1e07df3d0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeSpeakScreen
+0x1e07df368  __DATA_CONST,__const  _AXAssistiveTouchIconTypeSpotlight
+0x1e07df530  __DATA_CONST,__const  _AXAssistiveTouchIconTypeSwitchControl
+0x1e07df370  __DATA_CONST,__const  _AXAssistiveTouchIconTypeSysdiagnose
+0x1e07df340  __DATA_CONST,__const  _AXAssistiveTouchIconTypeTap
+0x1e07df388  __DATA_CONST,__const  _AXAssistiveTouchIconTypeToggleDock
+0x1e07df498  __DATA_CONST,__const  _AXAssistiveTouchIconTypeTorch
+0x1e07df3b0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeTrackpad
+0x1e07df2f0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeTripleClick
+0x1e07df2a8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeTypeToSiri
+0x1e07df5d0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeVisualIntelligence
+0x1e07df318  __DATA_CONST,__const  _AXAssistiveTouchIconTypeVoiceControl
+0x1e07df4f8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeVoiceOver
+0x1e07df2d8  __DATA_CONST,__const  _AXAssistiveTouchIconTypeVolumeDown
+0x1e07df2d0  __DATA_CONST,__const  _AXAssistiveTouchIconTypeVolumeUp
+0x1e07df580  __DATA_CONST,__const  _AXAssistiveTouchIconTypeWatchRemoteScreen
+0x1e07df518  __DATA_CONST,__const  _AXAssistiveTouchIconTypeZoom
+0x1e07df520  __DATA_CONST,__const  _AXAssistiveTouchIconTypeZoomController
+0x189adcf2c  __TEXT,__text  _AXAssistiveTouchIcons
+0x189adc894  __TEXT,__text  _AXAssistiveTouchInsertIconsIntoDictionary
+0x189ade858  __TEXT,__text  _AXAssistiveTouchLocationsForLayout
+0x189adeb08  __TEXT,__text  _AXAssistiveTouchNamedLayout
+0x1e07deed0  __DATA_CONST,__const  _AXAssistiveTouchPayloadKeyDictionaryElementIndex
+0x1e07deed8  __DATA_CONST,__const  _AXAssistiveTouchPayloadKeyDictionaryElementIndexes
+0x1e07deee8  __DATA_CONST,__const  _AXAssistiveTouchPayloadKeyDictionaryElementValue
+0x1e07deee0  __DATA_CONST,__const  _AXAssistiveTouchPayloadKeyDictionaryElements
+0x189adcc28  __TEXT,__text  _AXAssistiveTouchRemoveIconsFromDictionary
+0x189b1a93c  __TEXT,__text  _AXAssistiveTouchScannerColorDescription
+0x189add560  __TEXT,__text  _AXAssistiveTouchScrollIcons
+0x1e07dee08  __DATA_CONST,__const  _AXAssistiveTouchServerServiceName
+0x189add794  __TEXT,__text  _AXAssistiveTouchSiriShortcutsIcons
+0x189add74c  __TEXT,__text  _AXAssistiveTouchSpecificActionIcons
+0x189adf034  __TEXT,__text  _AXAssistiveTouchSupportedHeadTrackingExpressions
+0x189add0a8  __TEXT,__text  _AXAssistiveTouchSystemIcons
+0x189ade314  __TEXT,__text  _AXAssitiveTouchPosition
+0x189b00e58  __TEXT,__text  _AXAttributedStringForVariables
+0x189b00e60  __TEXT,__text  _AXAttributedStringForVariables3
+0x189b0944c  __TEXT,__text  _AXAudioChannelNameForPort
+0x189b0932c  __TEXT,__text  _AXAudioHDMIChannelLabelDescription
+0x189acf9e0  __TEXT,__text  _AXBTRouteIsAirpods
+0x189caa6a8  __TEXT,__const  _AXBackBoardServerClarityUIAdminPasscodeLength
+0x1e07dee10  __DATA_CONST,__const  _AXBackBoardServerServiceName
+0x1e07defe0  __DATA_CONST,__const  _AXBackTapClientIDSwitchControl
+0x1e07defd8  __DATA_CONST,__const  _AXBackTapClientIDSystem
+0x1e07defe8  __DATA_CONST,__const  _AXBackTapClientIDVoiceOver
+0x1e07deff0  __DATA_CONST,__const  _AXBackTapClientRegistrationKeyPolicy
+0x1e07df650  __DATA_CONST,__const  _AXBackboardServerShouldToggleGuidedAccessNotification
+0x189b1ca64  __TEXT,__text  _AXBeats463LocalizedStringForKey
+0x1e07deb30  __DATA_CONST,__const  _AXCACCommandEditorApplicationIdentifiersToNamesKey
+0x1e07deb18  __DATA_CONST,__const  _AXCACCommandEditorGestureKey
+0x1e07deb40  __DATA_CONST,__const  _AXCACCommandEditorPasteboardKey
+0x1e07deb38  __DATA_CONST,__const  _AXCACCommandEditorShortcutWorkflowKey
+0x1e07deb20  __DATA_CONST,__const  _AXCACCommandEditorTextToInsertKey
+0x1e07deb28  __DATA_CONST,__const  _AXCACCommandEditorUserActionFlowKey
+0x1e07deb50  __DATA_CONST,__const  _AXCACCorrectionsAlternativesKey
+0x1e07deb58  __DATA_CONST,__const  _AXCACCorrectionsEmojisKey
+0x1e07deb60  __DATA_CONST,__const  _AXCACCorrectionsRectKey
+0x1e07deb48  __DATA_CONST,__const  _AXCACCorrectionsTextKey
+0x189b106cc  __TEXT,__text  _AXCanQueryGraphicServicesFunctions
+0x1e07dee20  __DATA_CONST,__const  _AXCarouselServerServiceName
+0x1eb39d6b0  __DATA,__data  _AXCarouselServerShowHearingControlsNotification
+0x1eb39dc60  __DATA,__data  _AXCharacterVoiceIdentifierMickey
+0x1eb39dc68  __DATA,__data  _AXCharacterVoiceIdentifierMinnie
+0x1eb39d44c  __DATA,__data  _AXClarityBoardMessageKeyActionResult
+0x1eb39d440  __DATA,__data  _AXClarityBoardMessageKeyActiveInterfaceOrientation
+0x1eb39d460  __DATA,__data  _AXClarityBoardMessageKeyGoHome
+0x1eb39d454  __DATA,__data  _AXClarityBoardMessageKeyIsSystemSleeping
+0x1eb39d43c  __DATA,__data  _AXClarityBoardMessageKeyPID
+0x1eb39d448  __DATA,__data  _AXClarityBoardMessageKeyRegisterActionHandler
+0x1eb39d45c  __DATA,__data  _AXClarityBoardMessageKeySetOrientation
+0x1eb39d464  __DATA,__data  _AXClarityBoardMessageKeyUnlockDevice
+0x1eb39d458  __DATA,__data  _AXClarityBoardMessageKeyWakeUpDeviceIfNecessary
+0x1e07df968  __DATA_CONST,__const  _AXClarityBoardOrientationKey
+0x1e07df960  __DATA_CONST,__const  _AXClarityBoardResultKey
+0x1e07dee28  __DATA_CONST,__const  _AXClarityBoardServerServiceName
+0x189b010f8  __TEXT,__text  _AXClockTimeStringForDate
+0x189b018b0  __TEXT,__text  _AXClockTimeStringForDateIncludingSeconds
+0x189b018bc  __TEXT,__text  _AXClockTimeStringForDateWithTimeZoneIncludingSeconds
+0x189b01a38  __TEXT,__text  _AXClockTimeVoiceOverSpokenStringForDate
+0x189b01a44  __TEXT,__text  _AXClockTimeVoiceOverSpokenStringForWatchFaces
+0x189b00d60  __TEXT,__text  _AXCompactDurationStringForDuration
+0x1e07def70  __DATA_CONST,__const  _AXContainerManagerMessageKeyData
+0x1e07def80  __DATA_CONST,__const  _AXContainerManagerMessageKeyError
+0x1e07def78  __DATA_CONST,__const  _AXContainerManagerMessageKeyPath
+0x189b1c17c  __TEXT,__text  _AXCopyUnicodeDescriptionStringForCharacter
+0x189b018a4  __TEXT,__text  _AXCurrentTimeForWatchFaces
+0x189b004e4  __TEXT,__text  _AXDateFromStringWithFormat
+0x189b005a8  __TEXT,__text  _AXDateStringForFormat
+0x189b007c8  __TEXT,__text  _AXDateStringForFormatWithLocale
+0x189b00864  __TEXT,__text  _AXDateStringForFormatWithLocaleInCalendarAndTimeZone
+0x189b00740  __TEXT,__text  _AXDateStringForFormatWithTimeZone
+0x189b2e2f4  __TEXT,__text  _AXDebugDescriptionForAXHandEventType
+0x1e07e0528  __DATA_CONST,__const  _AXDefaultProfile
+0x189b2dfb0  __TEXT,__text  _AXDenormalizePoint
+0x189b2e034  __TEXT,__text  _AXDenormalizePointForDisplayUUID
+0x189aeb168  __TEXT,__text  _AXDetectionModeForName
+0x189b0fad4  __TEXT,__text  _AXDeviceCanArmApplePay
+0x189b11014  __TEXT,__text  _AXDeviceDisplayIDForUUID
+0x189b11070  __TEXT,__text  _AXDeviceDisplayUUIDForID
+0x189b103d0  __TEXT,__text  _AXDeviceGetLocalizedShortModelName
+0x189aa6af8  __TEXT,__text  _AXDeviceGetMainScreenBounds
+0x189b10c64  __TEXT,__text  _AXDeviceGetMainScreenPixelBounds
+0x189b10e34  __TEXT,__text  _AXDeviceGetMainScreenScaleFactor
+0x189b110b0  __TEXT,__text  _AXDeviceGetPhysicalSizeInMMForDisplayID
+0x189b11110  __TEXT,__text  _AXDeviceGetPhysicalSizeInMMForDisplayUUID
+0x189b10d3c  __TEXT,__text  _AXDeviceGetPixelBoundsForDisplayID
+0x189b10db8  __TEXT,__text  _AXDeviceGetPixelBoundsForDisplayUUID
+0x189b10f0c  __TEXT,__text  _AXDeviceGetScaleFactorForDisplayID
+0x189b10f90  __TEXT,__text  _AXDeviceGetScaleFactorForDisplayUUID
+0x189b10938  __TEXT,__text  _AXDeviceGetScreenBoundsForDisplayID
+0x189b10abc  __TEXT,__text  _AXDeviceGetScreenBoundsForDisplayUUID
+0x189b0f88c  __TEXT,__text  _AXDeviceHas3DTouch
+0x189b0f81c  __TEXT,__text  _AXDeviceHasForcePress3dTouch
+0x189b12570  __TEXT,__text  _AXDeviceHasFrontCameraPhysicallyMountedUpsideDown
+0x189b12794  __TEXT,__text  _AXDeviceHasGreyMatterEnabled
+0x189b0f7d4  __TEXT,__text  _AXDeviceHasHomeButton
+0x189b119b8  __TEXT,__text  _AXDeviceHasJindo
+0x189b0f710  __TEXT,__text  _AXDeviceHasLongPress3dTouch
+0x189b0fa54  __TEXT,__text  _AXDeviceHasPearl
+0x189b0fa4c  __TEXT,__text  _AXDeviceHasReduceTransparency
+0x189b0f9ac  __TEXT,__text  _AXDeviceHasSideButton
+0x189b106a8  __TEXT,__text  _AXDeviceHasSystemPasscode
+0x189b0f958  __TEXT,__text  _AXDeviceHasTopButton
+0x189b0f5c8  __TEXT,__text  _AXDeviceHasTopTouchIDButton
+0x189b12268  __TEXT,__text  _AXDeviceIsAssistantWhileFaceDownEnabled
+0x189b0f464  __TEXT,__text  _AXDeviceIsJ5XX
+0x189b1221c  __TEXT,__text  _AXDeviceIsKShotMedinaEnabled
+0x189b1262c  __TEXT,__text  _AXDeviceIsPhysicalHardware
+0x189b0fde0  __TEXT,__text  _AXDeviceIsRingerSwitchAvailable
+0x189b0fdec  __TEXT,__text  _AXDeviceIsSOSAvailable
+0x189b0fc38  __TEXT,__text  _AXDeviceIsSiriAvailable
+0x189b0fc88  __TEXT,__text  _AXDeviceIsSiriAvailableInClarity
+0x189b121fc  __TEXT,__text  _AXDeviceIsSoundDetectionMedinaEnabled
+0x189b10680  __TEXT,__text  _AXDeviceIsUnlocked
+0x189b105e0  __TEXT,__text  _AXDeviceIsViridian
+0x189b125bc  __TEXT,__text  _AXDeviceIsVirtualMachine
+0x189b0fd08  __TEXT,__text  _AXDeviceIsVoiceControlAvailable
+0x189b11170  __TEXT,__text  _AXDevicePrimeDisplayManager
+0x189b12270  __TEXT,__text  _AXDeviceProcessLAStorageError
+0x189b106d4  __TEXT,__text  _AXDeviceRegisterForDisplayUpdates
+0x189b12374  __TEXT,__text  _AXDeviceSetKShotPreboardEnabled
+0x189b127d0  __TEXT,__text  _AXDeviceShouldShowEnhancedSiri
+0x189b1018c  __TEXT,__text  _AXDeviceSizeMM
+0x189b1049c  __TEXT,__text  _AXDeviceSupports8TouchesInBSI
+0x189b1219c  __TEXT,__text  _AXDeviceSupportsAirPodsHeadGestures
+0x189b12690  __TEXT,__text  _AXDeviceSupportsAppleIntelligence
+0x189b10598  __TEXT,__text  _AXDeviceSupportsArrangementMultitasking
+0x189b12b7c  __TEXT,__text  _AXDeviceSupportsAudioSessionForIndependentRoute
+0x189b11598  __TEXT,__text  _AXDeviceSupportsAudiogramIngestion
+0x189b111d0  __TEXT,__text  _AXDeviceSupportsBackTap
+0x189b100cc  __TEXT,__text  _AXDeviceSupportsBootSound
+0x189b1259c  __TEXT,__text  _AXDeviceSupportsCameraButton
+0x189b115ac  __TEXT,__text  _AXDeviceSupportsComfortSounds
+0x189b118b8  __TEXT,__text  _AXDeviceSupportsConcurrentHPLPMics
+0x189b11e5c  __TEXT,__text  _AXDeviceSupportsConfirmWith
+0x189b113bc  __TEXT,__text  _AXDeviceSupportsDetectionMode
+0x189b128b0  __TEXT,__text  _AXDeviceSupportsGreyMatterSAE
+0x189b120bc  __TEXT,__text  _AXDeviceSupportsGuestPass
+0x189b11f20  __TEXT,__text  _AXDeviceSupportsHaptics
+0x189b112d0  __TEXT,__text  _AXDeviceSupportsHeadTracking
+0x189b10170  __TEXT,__text  _AXDeviceSupportsHeadphoneNotifications
+0x189b11928  __TEXT,__text  _AXDeviceSupportsHoverText
+0x189b11974  __TEXT,__text  _AXDeviceSupportsHoverTextTyping
+0x189b1144c  __TEXT,__text  _AXDeviceSupportsHuman
+0x189b12210  __TEXT,__text  _AXDeviceSupportsKShotMedina
+0x189b115c0  __TEXT,__text  _AXDeviceSupportsLaneChange
+0x189b11d30  __TEXT,__text  _AXDeviceSupportsLiveCaptions
+0x189b125a8  __TEXT,__text  _AXDeviceSupportsLiveListen
+0x189b11d38  __TEXT,__text  _AXDeviceSupportsLiveSpeech
+0x189b11e48  __TEXT,__text  _AXDeviceSupportsLiveSpeechCategories
+0x189b10498  __TEXT,__text  _AXDeviceSupportsManyTouches
+0x189b1267c  __TEXT,__text  _AXDeviceSupportsMapsDescriptions
+0x189b121f0  __TEXT,__text  _AXDeviceSupportsMedina
+0x189b11f6c  __TEXT,__text  _AXDeviceSupportsMotionCues
+0x189b10628  __TEXT,__text  _AXDeviceSupportsMultitasking
+0x189b0fec0  __TEXT,__text  _AXDeviceSupportsPencil
+0x189b11af8  __TEXT,__text  _AXDeviceSupportsPencilHover
+0x189b0fecc  __TEXT,__text  _AXDeviceSupportsPhotosensitiveMitigation
+0x189b1016c  __TEXT,__text  _AXDeviceSupportsQuickNote
+0x189b11f2c  __TEXT,__text  _AXDeviceSupportsReachability
+0x189b121e8  __TEXT,__text  _AXDeviceSupportsRealWorldDetection
+0x189b0fbac  __TEXT,__text  _AXDeviceSupportsSecureDoubleClick
+0x189b104c8  __TEXT,__text  _AXDeviceSupportsSideApp
+0x189b11d14  __TEXT,__text  _AXDeviceSupportsSonification
+0x189b12174  __TEXT,__text  _AXDeviceSupportsSwitchControlOnboarding
+0x189b11f38  __TEXT,__text  _AXDeviceSupportsVibration
+0x189b1213c  __TEXT,__text  _AXDeviceSupportsVirtualTrackpad
+0x189b11f44  __TEXT,__text  _AXDeviceSupportsVoiceBanking
+0x189b12188  __TEXT,__text  _AXDeviceSupportsVoiceOverOnboarding
+0x189b11570  __TEXT,__text  _AXDeviceSupportsVoiceTriggers
+0x189b11584  __TEXT,__text  _AXDeviceSupportsVoicesRotor
+0x189b11650  __TEXT,__text  _AXDeviceSupportsWatchRemoteScreen
+0x189b10854  __TEXT,__text  _AXDeviceUnregisterForDisplayUpdates
+0x1e07dee78  __DATA_CONST,__const  _AXDisplayFilterUIServiceName
+0x1e07defc8  __DATA_CONST,__const  _AXDragServiceNameCommandAndControl
+0x1e07defd0  __DATA_CONST,__const  _AXDragServiceNameFullKeyboardAccess
+0x1e07defc0  __DATA_CONST,__const  _AXDragServiceNameSwitchControl
+0x1e07defb8  __DATA_CONST,__const  _AXDragServiceNameVoiceOver
+0x189b00a90  __TEXT,__text  _AXDurationForDurationString
+0x189b00a88  __TEXT,__text  _AXDurationStringForDuration
+0x189a9f230  __TEXT,__text  _AXDurationStringForDurationWithSeconds
+0x1eb39d9c0  __DATA,__data  _AXEventAuxiliaryDataKeyContactPoint
+0x1e07de938  __DATA_CONST,__const  _AXEventHIDServiceDisableAccessibilityEventTranslationKey
+0x1e07de930  __DATA_CONST,__const  _AXEventHIDTapIdentifierGuidedAccess
+0x189b36548  __TEXT,__text  _AXEventRepresentationEvictDisplayHardwareIdentifierForServiceClient
+0x189b362bc  __TEXT,__text  _AXEventRepresentationWarmDisplayHardwareIdentifierForServiceClient
+0x1e07de928  __DATA_CONST,__const  _AXEventTapIdentifierGuidedAccess
+0x189b2de00  __TEXT,__text  _AXEventTypeIsHomeButtonPress
+0x189b2dddc  __TEXT,__text  _AXEventTypeIsKeyboardKey
+0x189b2de20  __TEXT,__text  _AXEventTypeIsLockButtonPress
+0x189b2de68  __TEXT,__text  _AXEventTypeIsMotion
+0x189b2de48  __TEXT,__text  _AXEventTypeIsMuteButtonPress
+0x189b2de8c  __TEXT,__text  _AXEventTypeIsOrientationChange
+0x189b2de58  __TEXT,__text  _AXEventTypeIsRingerSwitchStateChange
+0x189b2de74  __TEXT,__text  _AXEventTypeIsShake
+0x189b2df50  __TEXT,__text  _AXEventTypeIsTVRemoteButton
+0x189b2def4  __TEXT,__text  _AXEventTypeIsTVRemoteClickDown
+0x189b2de98  __TEXT,__text  _AXEventTypeIsTVRemoteClickUp
+0x189b2de80  __TEXT,__text  _AXEventTypeIsTouch
+0x189b2de38  __TEXT,__text  _AXEventTypeIsVolumeButtonPress
+0x189b2ddf0  __TEXT,__text  _AXEventTypeShouldLetBackboardProcess
+0x189abc5e4  __TEXT,__text  _AXForceTouchAvailableAndEnabled
+0x1eb39d1f0  __DATA,__data  _AXForceTouchDuration
+0x189abc614  __TEXT,__text  _AXForceTouchThreshold
+0x189abc6e0  __TEXT,__text  _AXForceTouchThresholdPeek
+0x189abc7ac  __TEXT,__text  _AXForceTouchThresholdPeekPopMidpoint
+0x189abc878  __TEXT,__text  _AXForceTouchThresholdPop
+0x1eb39d1f8  __DATA,__data  _AXForceTouchUpdateInterval
+0x189b1c634  __TEXT,__text  _AXFormatAndListWithElements
+0x189b128c4  __TEXT,__text  _AXGenerativeModelAssetsReady
+0x189b53d28  __TEXT,__text  _AXGetComponentsInSiriVoiceIdentifier
+0x189ab5578  __TEXT,__text  _AXGetSiriCallHangUpValue
+0x189ab54ec  __TEXT,__text  _AXGetSiriRequireSiriForInterruptionsInValue
+0x1e07e0508  __DATA_CONST,__const  _AXGuestPassMacVOPrefsKey
+0x1e07e0510  __DATA_CONST,__const  _AXGuestPassPlatformKey
+0x1e07e0bf8  __DATA_CONST,__const  _AXGuestPassProfilesPathComponent
+0x1e07dee88  __DATA_CONST,__const  _AXGuestPassServerServiceName
+0x1e07e0518  __DATA_CONST,__const  _AXGuestPassVersionKey
+0x1e07dee70  __DATA_CONST,__const  _AXGuidedAccessActiveStatusDidChangeBroadcastNotification
+0x189b56b28  __TEXT,__text  _AXGuidedAccessGetAvailability
+0x1e07def20  __DATA_CONST,__const  _AXGuidedAccessPayloadKeyAppSetIndex
+0x1e07def08  __DATA_CONST,__const  _AXGuidedAccessPayloadKeyGAXConfiguration
+0x1e07def10  __DATA_CONST,__const  _AXGuidedAccessPayloadKeyGAXMode
+0x1e07def00  __DATA_CONST,__const  _AXGuidedAccessPayloadKeyIsTemporaryFailure
+0x1e07deef0  __DATA_CONST,__const  _AXGuidedAccessPayloadKeyRequestingAppIsSelfLockedToGAX
+0x1e07deef8  __DATA_CONST,__const  _AXGuidedAccessPayloadKeyRequestingAppSetGAXEnabled
+0x1e07def18  __DATA_CONST,__const  _AXGuidedAccessPayloadKeySessionApp
+0x189ae6170  __TEXT,__text  _AXHasCapability
+0x189af7c30  __TEXT,__text  _AXHomeClickHapticsSupported
+0x1e07de810  __DATA_CONST,__const  _AXIPCErrorDomain
+0x1e07dfb30  __DATA_CONST,__const  _AXIPCErrorKeyMachError
+0x1eb39d630  __DATA,__data  _AXIPCMessageKeyCarouselActionResult
+0x1eb39d65c  __DATA,__data  _AXIPCMessageKeyCarouselActivateSiri
+0x1eb39d66c  __DATA,__data  _AXIPCMessageKeyCarouselAppleWatchRemoteScreenAlert
+0x1eb39d664  __DATA,__data  _AXIPCMessageKeyCarouselArmApplePay
+0x1eb39d658  __DATA,__data  _AXIPCMessageKeyCarouselCanActivateSiri
+0x1eb39d6a8  __DATA,__data  _AXIPCMessageKeyCarouselCanShowAppSwitcher
+0x1eb39d604  __DATA,__data  _AXIPCMessageKeyCarouselCanShowControlCenter
+0x1eb39d688  __DATA,__data  _AXIPCMessageKeyCarouselCanShowHomeScreen
+0x1eb39d5f8  __DATA,__data  _AXIPCMessageKeyCarouselCanShowNotificationCenter
+0x1eb39d624  __DATA,__data  _AXIPCMessageKeyCarouselClockFaceIsFrontMost
+0x1eb39d680  __DATA,__data  _AXIPCMessageKeyCarouselCrownTripleClick
+0x1eb39d60c  __DATA,__data  _AXIPCMessageKeyCarouselCurrentFaceClass
+0x1eb39d660  __DATA,__data  _AXIPCMessageKeyCarouselDismissSiri
+0x1eb39d694  __DATA,__data  _AXIPCMessageKeyCarouselFocusedAppPID
+0x1eb39d6a0  __DATA,__data  _AXIPCMessageKeyCarouselFocusedOccludedAppScenes
+0x1eb39d644  __DATA,__data  _AXIPCMessageKeyCarouselGoToClockFace
+0x1eb39d64c  __DATA,__data  _AXIPCMessageKeyCarouselGoToShutdownAlert
+0x1eb39d674  __DATA,__data  _AXIPCMessageKeyCarouselGoToStingShutdownAlert
+0x1eb39d628  __DATA,__data  _AXIPCMessageKeyCarouselHasLockingSystemWindows
+0x1eb39d640  __DATA,__data  _AXIPCMessageKeyCarouselIsAppLauncherVisible
+0x1eb39d638  __DATA,__data  _AXIPCMessageKeyCarouselIsAppSwitcherVisible
+0x1eb39d668  __DATA,__data  _AXIPCMessageKeyCarouselIsApplePayVisible
+0x1eb39d600  __DATA,__data  _AXIPCMessageKeyCarouselIsControlCenterVisible
+0x1eb39d68c  __DATA,__data  _AXIPCMessageKeyCarouselIsHomeScreenVisible
+0x1eb39d5f4  __DATA,__data  _AXIPCMessageKeyCarouselIsNotificationCenterVisible
+0x1eb39d614  __DATA,__data  _AXIPCMessageKeyCarouselIsRingerMuted
+0x1eb39d650  __DATA,__data  _AXIPCMessageKeyCarouselIsShutdownAlertVisible
+0x1eb39d654  __DATA,__data  _AXIPCMessageKeyCarouselIsSiriVisible
+0x1eb39d6a4  __DATA,__data  _AXIPCMessageKeyCarouselIsStingPresentingBlockingContent
+0x1eb39d648  __DATA,__data  _AXIPCMessageKeyCarouselLauncherViewMode
+0x1eb39d620  __DATA,__data  _AXIPCMessageKeyCarouselOverrideNativeFocusWithPid
+0x1eb39d5f0  __DATA,__data  _AXIPCMessageKeyCarouselPID
+0x1eb39d61c  __DATA,__data  _AXIPCMessageKeyCarouselPerformScreenCoverGesture
+0x1eb39d69c  __DATA,__data  _AXIPCMessageKeyCarouselPresentAssistiveTouchOptIn
+0x1eb39d670  __DATA,__data  _AXIPCMessageKeyCarouselPresentNearbyDeviceControlPicker
+0x1eb39d698  __DATA,__data  _AXIPCMessageKeyCarouselPresentQuickActionsDisabledAlert
+0x1eb39d62c  __DATA,__data  _AXIPCMessageKeyCarouselRegisterActionHandling
+0x1eb39d618  __DATA,__data  _AXIPCMessageKeyCarouselSetRingerMuted
+0x1eb39d63c  __DATA,__data  _AXIPCMessageKeyCarouselShowAppLauncher
+0x1eb39d634  __DATA,__data  _AXIPCMessageKeyCarouselShowAppSwitcher
+0x1eb39d608  __DATA,__data  _AXIPCMessageKeyCarouselShowControlCenter
+0x1eb39d684  __DATA,__data  _AXIPCMessageKeyCarouselShowHomeScreen
+0x1eb39d5fc  __DATA,__data  _AXIPCMessageKeyCarouselShowNotificationCenter
+0x1eb39d610  __DATA,__data  _AXIPCMessageKeyCarouselTakeScreenshot
+0x1eb39d690  __DATA,__data  _AXIPCMessageKeyCarouselToggleIncomingCall
+0x1eb39d678  __DATA,__data  _AXIPCMessageKeyCarouselToggleWatchControl
+0x1eb39d67c  __DATA,__data  _AXIPCMessageKeyCarouselUnlockSystemState
+0x1e07dfdb8  __DATA_CONST,__const  _AXIPCPayloadKeyCarouselResult
+0x1eb39d1e8  __DATA,__data  _AXIPCRegisterClientWithServer
+0x189b12ab4  __TEXT,__text  _AXImageExplorerGenerativeModelsAvailable
+0x1e07dee90  __DATA_CONST,__const  _AXImageExplorerServiceName
+0x189b127ec  __TEXT,__text  _AXImagePlaygroundAllowedInRegion
+0x1e07dee68  __DATA_CONST,__const  _AXInCallConversationBannerHUDName
+0x189ab4ac8  __TEXT,__text  _AXInCheckerBoardScenario
+0x1e07de528  __DATA_CONST,__const  _AXInCheckerBoardScenarioUpdatedNotification
+0x1e07de520  __DATA_CONST,__const  _AXInPreBoardScenarioUpdatedNotification
+0x189ab4a20  __TEXT,__text  _AXInPreboardScenario
+0x189abc528  __TEXT,__text  _AXIncrefSendRight
+0x1e07df640  __DATA_CONST,__const  _AXInternalInCheckerBoardModeUpdatedNotification
+0x1e07df638  __DATA_CONST,__const  _AXInternalInPreBoardModeUpdatedNotification
+0x1e07df648  __DATA_CONST,__const  _AXInternalSessionIsLoginSessionChangedNotification
+0x1e07dfd78  __DATA_CONST,__const  _AXInvertColorsSettingsEventFeatureClassicInvert
+0x1e07dfd70  __DATA_CONST,__const  _AXInvertColorsSettingsEventFeatureSmartInvert
+0x1e07dfd88  __DATA_CONST,__const  _AXInvertColorsSettingsEventSourceAccessibilityShortcut
+0x1e07dfd90  __DATA_CONST,__const  _AXInvertColorsSettingsEventSourceActionButton
+0x1e07dfd98  __DATA_CONST,__const  _AXInvertColorsSettingsEventSourceControlCenter
+0x1e07dfd80  __DATA_CONST,__const  _AXInvertColorsSettingsEventSourceSettingsApp
+0x1e07dfda0  __DATA_CONST,__const  _AXInvertColorsSettingsEventSourceSiri
+0x1e07dfda8  __DATA_CONST,__const  _AXInvertColorsSettingsEventSourceUnknown
+0x189b245a4  __TEXT,__text  _AXLanguageCanonicalFormToGeneralLanguage
+0x189b25018  __TEXT,__text  _AXLanguageConvertToCanonicalForm
+0x189b23684  __TEXT,__text  _AXLanguageIsSpeakableEmojiString
+0x189b27000  __TEXT,__text  _AXLanguageSupportedBySynthesizer
+0x1e07deff8  __DATA_CONST,__const  _AXLiveCaptionsAnalyticsEnabledEvent
+0x1e07df000  __DATA_CONST,__const  _AXLiveCaptionsAnalyticsEnabledKey
+0x1e07df010  __DATA_CONST,__const  _AXLiveCaptionsAnalyticsLanguageKey
+0x1e07df008  __DATA_CONST,__const  _AXLiveCaptionsAnalyticsLanguageSelectedEvent
+0x189b1bd38  __TEXT,__text  _AXLoadPunctuationTable
+0x189b01474  __TEXT,__text  _AXLocDuration
+0x189b19c78  __TEXT,__text  _AXLocStringForDeviceVariant
+0x189b19f0c  __TEXT,__text  _AXLocStringKeyForExclusiveModel
+0x189b19e68  __TEXT,__text  _AXLocStringKeyForHomeButton
+0x189b1a014  __TEXT,__text  _AXLocStringKeyForHomeButtonAndExclusiveModel
+0x189b1a11c  __TEXT,__text  _AXLocStringKeyForHomeButtonAndPlatform
+0x189b19bb8  __TEXT,__text  _AXLocStringKeyForModel
+0x189b0118c  __TEXT,__text  _AXLocalizeDurationTime
+0x189aeb128  __TEXT,__text  _AXLocalizedNameForDetectionMode
+0x189aeb37c  __TEXT,__text  _AXLocalizedNameForRecognitionAction
+0x189aeb3a4  __TEXT,__text  _AXLocalizedNameForRecognitionActionForElement
+0x189b1a50c  __TEXT,__text  _AXLocalizedString
+0x189b4f978  __TEXT,__text  _AXLocalizedStringForHandGestureEventUsage
+0x189b1a1c0  __TEXT,__text  _AXLocalizedStringWithLocale
+0x189ab5958  __TEXT,__text  _AXLocalizedTimeSummaryString
+0x1e07def88  __DATA_CONST,__const  _AXLoginSessionNoteContainerPath
+0x1e07def90  __DATA_CONST,__const  _AXLoginSessionNoteVoiceOverWasEnabledKey
+0x1e07def98  __DATA_CONST,__const  _AXLoginSessionNoteZoomWasEnabledKey
+0x189caa6c8  __TEXT,__const  _AXMIDIControlAllNotesOff
+0x189caa6b0  __TEXT,__const  _AXMIDIControlAllSoundOff
+0x189caa6c0  __TEXT,__const  _AXMIDIControlLocalControl
+0x189caa6e0  __TEXT,__const  _AXMIDIControlMonoModeOn
+0x189caa6d0  __TEXT,__const  _AXMIDIControlOmniModeOff
+0x189caa6d8  __TEXT,__const  _AXMIDIControlOmniModeOn
+0x189caa6e8  __TEXT,__const  _AXMIDIControlPolyModeOn
+0x189caa6b8  __TEXT,__const  _AXMIDIControlResetAllControllers
+0x189b6b390  __TEXT,__text  _AXMIDIDeviceForEndpoint
+0x189b6b304  __TEXT,__text  _AXMIDIDeviceForEntity
+0x189b6b278  __TEXT,__text  _AXMIDIEntityForEndpoint
+0x1eb39dd30  __DATA,__data  _AXMIDIErrorDomain
+0x189b6ae0c  __TEXT,__text  _AXMIDILogError
+0x189af8f9c  __TEXT,__text  _AXMIDINoteOctaveForNoteOrdinal
+0x189af8f5c  __TEXT,__text  _AXMIDINoteValueForNoteOrdinal
+0x189b12918  __TEXT,__text  _AXMagnifierGenerativeModelsAvailable
+0x189aa4f74  __TEXT,__text  _AXMediaPreferencesParticipatingInGuestPass
+0x1e07dedf0  __DATA_CONST,__const  _AXMotionCuesAnalyticsDurationKey
+0x1e07dedc8  __DATA_CONST,__const  _AXMotionCuesAnalyticsEnableEvent
+0x1e07dedf8  __DATA_CONST,__const  _AXMotionCuesAnalyticsEnableKey
+0x1e07dedd0  __DATA_CONST,__const  _AXMotionCuesAnalyticsLearnMoreEvent
+0x1e07dedd8  __DATA_CONST,__const  _AXMotionCuesAnalyticsManualEvent
+0x1e07dee00  __DATA_CONST,__const  _AXMotionCuesAnalyticsReasonKey
+0x1e07dede0  __DATA_CONST,__const  _AXMotionCuesAnalyticsStartEvent
+0x1e07dede8  __DATA_CONST,__const  _AXMotionCuesAnalyticsStopEvent
+0x1e07dee98  __DATA_CONST,__const  _AXMotionCuesServerServiceName
+0x1e07de800  __DATA_CONST,__const  _AXNSAttributedStringKeySpeechLanguage
+0x189aeb108  __TEXT,__text  _AXNameForDetectionMode
+0x189aeb284  __TEXT,__text  _AXNameForRecognitionAction
+0x189aeb2a4  __TEXT,__text  _AXNameForRecognitionActionForElement
+0x1e07deea0  __DATA_CONST,__const  _AXNameRecognitionPluginServiceName
+0x189b2e180  __TEXT,__text  _AXNormalizePoint
+0x189b2e1d4  __TEXT,__text  _AXNormalizePointForDisplayUUID
+0x1e07dff18  __DATA_CONST,__const  _AXOratorErrorDomain
+0x189b12b90  __TEXT,__text  _AXPairedWatchSupportsSoundRecognition
+0x189b1a738  __TEXT,__text  _AXParameterizedLocalizedString
+0x189b56144  __TEXT,__text  _AXPerformPrivilegedAttributedStringTransformation
+0x189b569d8  __TEXT,__text  _AXPerformPrivilegedAttributedStringTransformations
+0x1e07dee48  __DATA_CONST,__const  _AXPerformanceTestReportingServerServiceName
+0x189b00bc0  __TEXT,__text  _AXPositionalStyleDurationStringForDuration
+0x1e07e0520  __DATA_CONST,__const  _AXProfileName
+0x1e07e0530  __DATA_CONST,__const  _AXProfilePlistSuffix
+0x1eb39dc08  __DATA,__data  _AXProfilesPathComponent
+0x189acf924  __TEXT,__text  _AXReaderShouldLaunchForBundleIdentifier
+0x189aeb4a4  __TEXT,__text  _AXRecognitionActionForName
+0x189aeb274  __TEXT,__text  _AXRecognitionActionRequiresAsk
+0x1e07deeb8  __DATA_CONST,__const  _AXReplyServiceName
+0x189ac469c  __TEXT,__text  _AXRetainAutorelease
+0x1e07dee30  __DATA_CONST,__const  _AXSBHearingAidServerServiceName
+0x1e07dee50  __DATA_CONST,__const  _AXSBServerDidShowTripleClickNotification
+0x189ac4af4  __TEXT,__text  _AXSBTitleForMedusaGesture
+0x1e07deec8  __DATA_CONST,__const  _AXServerPayloadKeyAssertionHolderIdentifier
+0x1e07deec0  __DATA_CONST,__const  _AXServerPayloadKeyAssertionType
+0x189ab4bdc  __TEXT,__text  _AXSessionIsLoginSession
+0x1e07de530  __DATA_CONST,__const  _AXSessionIsLoginSessionUpdatedNotification
+0x189ab5688  __TEXT,__text  _AXSetSiriCallHangUpValue
+0x189ab552c  __TEXT,__text  _AXSetSiriRequireSiriForInterruptionsInValue
+0x1e07dee60  __DATA_CONST,__const  _AXSharingUIServiceName
+0x189b00988  __TEXT,__text  _AXShortDurationStringForDuration
+0x189b4d424  __TEXT,__text  _AXShouldAskBeforeDisablingTransportMethods
+0x189b4d498  __TEXT,__text  _AXShouldHideVoiceOverRotorItemFromSettings
+0x189b3eaf8  __TEXT,__text  _AXShouldShowSwitchControlHeadTrackingModeFromSettings
+0x1e07defa0  __DATA_CONST,__const  _AXSpeakTypingPayloadKeyCharacter
+0x1e07defb0  __DATA_CONST,__const  _AXSpeakTypingPayloadKeyPrediction
+0x1e07defa8  __DATA_CONST,__const  _AXSpeakTypingPayloadKeyWord
+0x1e07dee58  __DATA_CONST,__const  _AXSpeechAssetUpdaterName
+0x1e07deb08  __DATA_CONST,__const  _AXSpringBoardActionKeyAccessibilityShortcutBannerSubtitle
+0x1e07deb00  __DATA_CONST,__const  _AXSpringBoardActionKeyAccessibilityShortcutBannerTitle
+0x1e07deae8  __DATA_CONST,__const  _AXSpringBoardActionKeyActiveInterfaceOrientation
+0x1e07deaf0  __DATA_CONST,__const  _AXSpringBoardActionKeyActiveInterfaceOrientationUpdateDuration
+0x1e07deaf8  __DATA_CONST,__const  _AXSpringBoardActionKeyUserInterfaceStyle
+0x1e07dee18  __DATA_CONST,__const  _AXSpringBoardServerServiceName
+0x1e07deb10  __DATA_CONST,__const  _AXSpringBoardUserChangedAudioRouteNotification
+0x1e07def28  __DATA_CONST,__const  _AXStartListeningForVoiceOverVibrationActivationNotification
+0x1e07def30  __DATA_CONST,__const  _AXStartVoiceOverSwipeDetectionActivationNotification
+0x1e07def68  __DATA_CONST,__const  _AXStickyKeysUIServerKeyStateKey
+0x1e07def60  __DATA_CONST,__const  _AXStickyKeysUIServerKeycodeKey
+0x1e07def58  __DATA_CONST,__const  _AXStickyKeysUIServerUsagePageKey
+0x189b01594  __TEXT,__text  _AXStringForTimeSince
+0x189b27824  __TEXT,__text  _AXSupportedVoiceOverLanguages
+0x1e07dee80  __DATA_CONST,__const  _AXSurfBoardServerServiceName
+0x189b1a514  __TEXT,__text  _AXSwitchControlLocalizedString
+0x1e07dee38  __DATA_CONST,__const  _AXSwitchControlServerServiceName
+0x189caa720  __TEXT,__const  _AXSwitchRecipeHoldPointNone
+0x189b5ddc0  __TEXT,__text  _AXSwitchRecipeMappingActionAllowsLongPress
+0x1e07e02a8  __DATA_CONST,__const  _AXSwitchRecipeMappingActionCenterTap
+0x1e07e02d0  __DATA_CONST,__const  _AXSwitchRecipeMappingActionExit
+0x1e07e02c8  __DATA_CONST,__const  _AXSwitchRecipeMappingActionGesture
+0x1e07e02c0  __DATA_CONST,__const  _AXSwitchRecipeMappingActionHoldAtPoint
+0x1e07e02b8  __DATA_CONST,__const  _AXSwitchRecipeMappingActionLeftToRightSwipe
+0x1e07e02b0  __DATA_CONST,__const  _AXSwitchRecipeMappingActionRightToLeftSwipe
+0x1e07e02d8  __DATA_CONST,__const  _AXSwitchRecipeMappingActionSelect
+0x1e07e02e0  __DATA_CONST,__const  _AXSwitchRecipeMappingGameControlButtonPress
+0x189b5dca0  __TEXT,__text  _AXSwitchRecipeMappingNameForAction
+0x189b5d36c  __TEXT,__text  _AXSwitchRecipeMappingSwitchUUIDs
+0x1e07e02e8  __DATA_CONST,__const  _AXSwitchRecipeMenuIconIdentifierCenterTap
+0x1e07e0300  __DATA_CONST,__const  _AXSwitchRecipeMenuIconIdentifierHoldPoint
+0x1e07e02f8  __DATA_CONST,__const  _AXSwitchRecipeMenuIconIdentifierTapPoint
+0x1e07e02f0  __DATA_CONST,__const  _AXSwitchRecipeMenuIconIdentifierTurnPages
+0x189caa718  __TEXT,__const  _AXSwitchRecipeTimeoutNone
+0x189b4d598  __TEXT,__text  _AXSystemActionIconTypes
+0x1e07e0c30  __DATA_CONST,__const  _AXSystemAppServerDiedNotification
+0x1e07e0c28  __DATA_CONST,__const  _AXSystemAppServerReadyNotification
+0x1e07e03e0  __DATA_CONST,__const  _AXSystemLangaugeDataKeyCurrentName
+0x1e07e03d0  __DATA_CONST,__const  _AXSystemLangaugeDataKeyLanguageID
+0x1e07e03d8  __DATA_CONST,__const  _AXSystemLangaugeDataKeyLocalName
+0x1e07e03e8  __DATA_CONST,__const  _AXSystemLangaugeDataKeySupportedBySystem
+0x1e07e03f0  __DATA_CONST,__const  _AXSystemLangaugeDataKeySupportedByVoiceOver
+0x1e07e03c0  __DATA_CONST,__const  _AXSystemLangaugeReportKeyLanguage
+0x1e07e03c8  __DATA_CONST,__const  _AXSystemLangaugeReportKeyLocale
+0x189b270f0  __TEXT,__text  _AXSystemLanguageReport
+0x189b50884  __TEXT,__text  _AXTapticTimeIntervalForTapType
+0x1e07dfff8  __DATA_CONST,__const  _AXTeachableFeatureAccessibilityReader
+0x1e07dff98  __DATA_CONST,__const  _AXTeachableFeatureAssistiveAccess
+0x1e07dff88  __DATA_CONST,__const  _AXTeachableFeatureAssistiveTouch
+0x1e07dff78  __DATA_CONST,__const  _AXTeachableFeatureBraille
+0x1e07dffb0  __DATA_CONST,__const  _AXTeachableFeatureDisplayTextSize
+0x1e07dffb8  __DATA_CONST,__const  _AXTeachableFeatureEyeTracking
+0x1e07e0018  __DATA_CONST,__const  _AXTeachableFeatureFaceGestures
+0x1e07e0000  __DATA_CONST,__const  _AXTeachableFeatureHearingDevices
+0x1e07dffa0  __DATA_CONST,__const  _AXTeachableFeatureHoverText
+0x1e07dfff0  __DATA_CONST,__const  _AXTeachableFeatureLiveCaptions
+0x1e07dffd0  __DATA_CONST,__const  _AXTeachableFeatureLiveListen
+0x1e07dff90  __DATA_CONST,__const  _AXTeachableFeatureLiveSpeech
+0x1e07dffe8  __DATA_CONST,__const  _AXTeachableFeatureMotionCues
+0x1e07dffa8  __DATA_CONST,__const  _AXTeachableFeatureMusicHaptics
+0x1e07dffc0  __DATA_CONST,__const  _AXTeachableFeaturePersonalVoice
+0x1e07dffd8  __DATA_CONST,__const  _AXTeachableFeatureReadAndSpeak
+0x1e07dffe0  __DATA_CONST,__const  _AXTeachableFeatureSoundRecognition
+0x1e07dff80  __DATA_CONST,__const  _AXTeachableFeatureSwitchControl
+0x1e07e0010  __DATA_CONST,__const  _AXTeachableFeatureTouchAccommodations
+0x1e07dffc8  __DATA_CONST,__const  _AXTeachableFeatureVoiceControl
+0x1e07dff70  __DATA_CONST,__const  _AXTeachableFeatureVoiceOver
+0x1e07e0008  __DATA_CONST,__const  _AXTeachableFeatureVoiceOverRecognition
+0x189b02320  __TEXT,__text  _AXTemperatureFromIntegerInUnits
+0x189b02458  __TEXT,__text  _AXTemperatureFromStringInUnits
+0x189b01818  __TEXT,__text  _AXTimeAgoStringForTimeSince
+0x189b01364  __TEXT,__text  _AXTimeStringForType
+0x1e07deea8  __DATA_CONST,__const  _AXTouchAccommodationsServerName
+0x1eb39d0b8  __DATA,__data  _AXTripleClickAttemptToEnterClarityBoardMessageIdentifier
+0x189ad72e4  __TEXT,__text  _AXUIAddressForBTDevice
+0x189ab4e44  __TEXT,__text  _AXUICanShowPointerControlSettings
+0x189b1c598  __TEXT,__text  _AXUnicodeCodePointForCharacterString
+0x189ab4e08  __TEXT,__text  _AXUtilitiesFrameworkBundle
+0x189caa6f0  __TEXT,__const  _AXVOAutomationMaxNonDeveloperUtteranceLength
+0x189afc21c  __TEXT,__text  _AXVOAutomationPIDIsDeveloperOwned
+0x189afc3b0  __TEXT,__text  _AXVOAutomationTrimUtteranceIfNeeded
+0x189b1bb8c  __TEXT,__text  _AXVOLocalizedStringForCharacter
+0x189b1bb58  __TEXT,__text  _AXVOLocalizedStringFreePunctuationTable
+0x189b1b8cc  __TEXT,__text  _AXVOLocalizedStringLoadPunctuationTable
+0x1e07dfd58  __DATA_CONST,__const  _AXVocalShortcutsSettingsEventSourceAXCTL
+0x1e07dfd60  __DATA_CONST,__const  _AXVocalShortcutsSettingsEventSourceEnrollmentFlow
+0x1e07dfd50  __DATA_CONST,__const  _AXVocalShortcutsSettingsEventSourceProfileSwitching
+0x1e07dfd48  __DATA_CONST,__const  _AXVocalShortcutsSettingsEventSourceSettingsApp
+0x1e07dfd68  __DATA_CONST,__const  _AXVocalShortcutsSettingsEventSourceUnknown
+0x189abb8b0  __TEXT,__text  _AXVoiceNameForVoiceId
+0x1e07dfc30  __DATA_CONST,__const  _AXVoiceOverAutomationErrorDomain
+0x1e07dfc28  __DATA_CONST,__const  _AXVoiceOverAutomationKeyRotorNames
+0x1eb39dc18  __DATA,__data  _AXVoiceOverDidDisableGesturedTextInputNotification
+0x1eb39dc10  __DATA,__data  _AXVoiceOverDidEnableGesturedTextInputNotification
+0x1eb39dc50  __DATA,__data  _AXVoiceOverHandwritingAttributeAcceptsContractedBraille
+0x1eb39dc40  __DATA,__data  _AXVoiceOverHandwritingAttributeAcceptsRawInput
+0x1eb39dc28  __DATA,__data  _AXVoiceOverHandwritingAttributeAllowedCharacterSets
+0x1eb39dc30  __DATA,__data  _AXVoiceOverHandwritingAttributeCanDeleteCharacter
+0x1eb39dc58  __DATA,__data  _AXVoiceOverHandwritingAttributeLanguage
+0x1eb39dc20  __DATA,__data  _AXVoiceOverHandwritingAttributePreferredCharacterSet
+0x1eb39dc38  __DATA,__data  _AXVoiceOverHandwritingAttributeShouldEchoCharacter
+0x1eb39dc48  __DATA,__data  _AXVoiceOverHandwritingAttributeShouldPlayKeyboardSecureClickSound
+0x1e07deb70  __DATA_CONST,__const  _AXVoiceOverImageExplorerElementInfoData
+0x1e07deb68  __DATA_CONST,__const  _AXVoiceOverImageExplorerVisionResultData
+0x189b1a9e8  __TEXT,__text  _AXVoiceOverLocString
+0x189b1b44c  __TEXT,__text  _AXVoiceOverMediaDescriptionLocString
+0x189b1aa88  __TEXT,__text  _AXVoiceOverRotorLocString
+0x1e07dee40  __DATA_CONST,__const  _AXVoiceOverServerServiceName
+0x189caa6a4  __TEXT,__const  _AXVoiceOverVibrationDisplayTimeout
+0x189b1b464  __TEXT,__text  _AXWallpaperLabelForIdentifier
+0x189b1b8c4  __TEXT,__text  _AXWallpaperValueForIdentifier
+0x189b1cae8  __TEXT,__text  _AXWatchControlEltonLocalizedStringForKey
+0x189ab4fa4  __TEXT,__text  _AXZoomAllLensEffects
+0x189ab50cc  __TEXT,__text  _AXZoomAllLensModes
+0x189ab53d4  __TEXT,__text  _AXZoomDockPositions
+0x189ab4f6c  __TEXT,__text  _AXZoomLensDefault
+0x1e07deeb0  __DATA_CONST,__const  _AXZoomRequiresAlertInBuddyNotification
+0x189ab523c  __TEXT,__text  _AXZoomUserSelectableLensModes
+0x189b070b8  __TEXT,__text  _AX_CGCreatePathPathWithUniformInset
+0x189b07588  __TEXT,__text  _AX_CGPathCopyDataRepresentation
+0x189b07598  __TEXT,__text  _AX_CGPathCreateWithDataRepresentation
+0x189b06400  __TEXT,__text  _AX_CGPathEnumerateElementsUsingBlock
+0x189b07434  __TEXT,__text  _AX_CGPathGetDescription
+0x189b06600  __TEXT,__text  _AX_CGPathGetIntersectionPointWithOtherPath
+0x189b06984  __TEXT,__text  _AX_CGPathGetIntersectionPointWithRect
+0x189b06d8c  __TEXT,__text  _AX_CGPathGetNumberOfElements
+0x189b06fac  __TEXT,__text  _AX_CGPathGetPointForElementAtIndex
+0x189b06e60  __TEXT,__text  _AX_CGPathGetStartingAndEndingPoints
+0x189b05a58  __TEXT,__text  _AX_CGPointFromString
+0x189b054f8  __TEXT,__text  _AX_CGPointGetDistanceToPoint
+0x189b05900  __TEXT,__text  _AX_CGPointGetMidpointOfAllPoints
+0x189b058e8  __TEXT,__text  _AX_CGPointGetMidpointToPoint
+0x189b05cd0  __TEXT,__text  _AX_CGPointGetOffsetAlongVectorWithDistance
+0x189b05734  __TEXT,__text  _AX_CGRectAlmostEqualToRect
+0x189b05514  __TEXT,__text  _AX_CGRectBySubtractingRect
+0x189b05498  __TEXT,__text  _AX_CGRectGetCenter
+0x189b05d50  __TEXT,__text  _AX_CGRectToOrientation
+0x189b05dbc  __TEXT,__text  _AX_CGRectToOrientationWithScreenBounds
+0x189b36fbc  __TEXT,__text  _AX_EventRepresentationContainsAnyTouchesInPath
+0x189b371a0  __TEXT,__text  _AX_EventRepresentationContainsOnlyPathsForContextID
+0x1eb39d278  __DATA,__data  _AX_brailleUIVisualWindowLevel
+0x1eb39d270  __DATA,__data  _AX_motionCuesWindowLevel
+0x1eb39d280  __DATA,__data  _AX_systemHUDWindowLevel
+0x189b1048c  __TEXT,__text  _AXkMobileKeyBagLockStatusNotificationID
+0x1ef4e1f10  __AUTH,__data  _DiscoveryAgentCallbacks
+0x1e07dfdb0  __DATA_CONST,__const  _FKAKeyboardCommandTypeSiriShortcut
+0x1e07def38  __DATA_CONST,__const  _GAXClearLiveCaptionsNotification
+0x1ef4e1ef8  __AUTH,__data  _LocalDeviceCallbacks
+0x1ef4e0320  __AUTH,__objc_data  _OBJC_CLASS_$_AXARDescriptionFormatting
+0x1ee1bd028  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXActionCoalescer
+0x1ef4e0c78  __AUTH,__objc_data  _OBJC_CLASS_$_AXAirPodSettingsManager
+0x1ef4e0d68  __AUTH,__objc_data  _OBJC_CLASS_$_AXAlternativeVoices
+0x1ef4e0b88  __AUTH,__objc_data  _OBJC_CLASS_$_AXAppRepresentation
+0x1ef4e02f8  __AUTH,__objc_data  _OBJC_CLASS_$_AXAppSceneRepresentation
+0x1ef4e09a8  __AUTH,__objc_data  _OBJC_CLASS_$_AXAssertion
+0x1ef4e02d0  __AUTH,__objc_data  _OBJC_CLASS_$_AXAssertionCoordinator
+0x1ef4e02a8  __AUTH,__objc_data  _OBJC_CLASS_$_AXAssistiveTouchServer
+0x1ef4e0280  __AUTH,__objc_data  _OBJC_CLASS_$_AXAudioHardwareManager
+0x1ee1bd1b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXBackBoardServer
+0x1ef4e0258  __AUTH,__objc_data  _OBJC_CLASS_$_AXBannerServices
+0x1ef4e0230  __AUTH,__objc_data  _OBJC_CLASS_$_AXBuddyDataPackage
+0x1ee1bcee8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXCapabilityManager
+0x1ef4e0208  __AUTH,__objc_data  _OBJC_CLASS_$_AXCenterTapReplayableGesture
+0x1ef4e01e0  __AUTH,__objc_data  _OBJC_CLASS_$_AXCharacterSoundMap
+0x1ef4e01b8  __AUTH,__objc_data  _OBJC_CLASS_$_AXClarityBoardServer
+0x1ef4e0958  __AUTH,__objc_data  _OBJC_CLASS_$_AXControlsSettingsObserver
+0x1ef4e0190  __AUTH,__objc_data  _OBJC_CLASS_$_AXCustomizableMouse
+0x1ef4e0c50  __AUTH,__objc_data  _OBJC_CLASS_$_AXDeviceMonitor
+0x1ef4e0168  __AUTH,__objc_data  _OBJC_CLASS_$_AXDialectMap
+0x1ef4e0930  __AUTH,__objc_data  _OBJC_CLASS_$_AXEventAccelerometerInfoRepresentation
+0x1ef4e0140  __AUTH,__objc_data  _OBJC_CLASS_$_AXEventData
+0x1ef4e0908  __AUTH,__objc_data  _OBJC_CLASS_$_AXEventGameControllerInfoRepresentation
+0x1ef4e08e0  __AUTH,__objc_data  _OBJC_CLASS_$_AXEventHandInfoRepresentation
+0x1ef4e08b8  __AUTH,__objc_data  _OBJC_CLASS_$_AXEventIOSMACPointerInfoRepresentation
+0x1ef4e0890  __AUTH,__objc_data  _OBJC_CLASS_$_AXEventKeyInfoRepresentation
+0x1ef4e0868  __AUTH,__objc_data  _OBJC_CLASS_$_AXEventPathInfoRepresentation
+0x1ef4e0840  __AUTH,__objc_data  _OBJC_CLASS_$_AXEventPointerInfoRepresentation
+0x1ef4e0d18  __AUTH,__objc_data  _OBJC_CLASS_$_AXEventProcessor
+0x1ee1bd258  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXEventRepresentation
+0x1ef4e0118  __AUTH,__objc_data  _OBJC_CLASS_$_AXEventSenderProperties
+0x1ef4e0818  __AUTH,__objc_data  _OBJC_CLASS_$_AXEventTapManager
+0x1ef4e07f0  __AUTH,__objc_data  _OBJC_CLASS_$_AXEventTapManagerFilterEvents
+0x1ef4e00f0  __AUTH,__objc_data  _OBJC_CLASS_$_AXFirstResponderValueChangeManager
+0x1ef4e07a0  __AUTH,__objc_data  _OBJC_CLASS_$_AXGameControllerEvent
+0x1ef4e0e08  __AUTH,__objc_data  _OBJC_CLASS_$_AXHIDServiceCacheObserver
+0x1ee1bdb00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXIPCClient
+0x1ee1bdad8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXIPCMessage
+0x1ee1bd118  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXIPCServer
+0x1ef4e0e80  __AUTH,__objc_data  _OBJC_CLASS_$_AXInvertColorsSettingsEvent
+0x1ef4e00c8  __AUTH,__objc_data  _OBJC_CLASS_$_AXLangMap
+0x1ee1bcf38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXLanguageManager
+0x1ef4e00a0  __AUTH,__objc_data  _OBJC_CLASS_$_AXLanguageTag
+0x1ef4e0078  __AUTH,__objc_data  _OBJC_CLASS_$_AXLanguageTaggedContent
+0x1ef4e0ef8  __AUTH,__objc_data  _OBJC_CLASS_$_AXLiveRecognitionAskParameters
+0x1ef4e0050  __AUTH,__objc_data  _OBJC_CLASS_$_AXMIDIDevice
+0x1ef4e0028  __AUTH,__objc_data  _OBJC_CLASS_$_AXMIDIDeviceEntity
+0x1ef4e0000  __AUTH,__objc_data  _OBJC_CLASS_$_AXMIDIDeviceEntityEndpoint
+0x1ef4dffd8  __AUTH,__objc_data  _OBJC_CLASS_$_AXMIDIEvent
+0x1ef4dffb0  __AUTH,__objc_data  _OBJC_CLASS_$_AXMIDIManager
+0x1ef4dff88  __AUTH,__objc_data  _OBJC_CLASS_$_AXMIDIParser
+0x1ef4e0b60  __AUTH,__objc_data  _OBJC_CLASS_$_AXMouseEventListener
+0x1ef4dff60  __AUTH,__objc_data  _OBJC_CLASS_$_AXMutableReplayableGesture
+0x1ef4dff38  __AUTH,__objc_data  _OBJC_CLASS_$_AXNPSWrapper
+0x1ef4dff10  __AUTH,__objc_data  _OBJC_CLASS_$_AXNamedReplayableGesture
+0x1ef4dfee8  __AUTH,__objc_data  _OBJC_CLASS_$_AXOSMigrationCaptionStyle
+0x1ef4dfec0  __AUTH,__objc_data  _OBJC_CLASS_$_AXOSMigrationManager
+0x1ef4dfe98  __AUTH,__objc_data  _OBJC_CLASS_$_AXOSMigrationPackage
+0x1ef4dfe70  __AUTH,__objc_data  _OBJC_CLASS_$_AXOrator
+0x1ef4dfe48  __AUTH,__objc_data  _OBJC_CLASS_$_AXOutputAction
+0x1ef4dfe20  __AUTH,__objc_data  _OBJC_CLASS_$_AXOutputRequest
+0x1ef4dfdf8  __AUTH,__objc_data  _OBJC_CLASS_$_AXPageTurningReplayableGesture
+0x1ef4e0b38  __AUTH,__objc_data  _OBJC_CLASS_$_AXPasscodeAccessor
+0x1ef4e0cf0  __AUTH,__objc_data  _OBJC_CLASS_$_AXPerformanceTestReportingServer
+0x1ef4e0b10  __AUTH,__objc_data  _OBJC_CLASS_$_AXPointerDeviceManager
+0x1ef4dfda8  __AUTH,__objc_data  _OBJC_CLASS_$_AXPredictiveTypingModel
+0x1ef4dfd80  __AUTH,__objc_data  _OBJC_CLASS_$_AXQuickSettingsData
+0x1ef4dfd58  __AUTH,__objc_data  _OBJC_CLASS_$_AXRedirectedEventDetector
+0x1ef4dfd30  __AUTH,__objc_data  _OBJC_CLASS_$_AXReplayableGesture
+0x1ee1bd000  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXReplayer
+0x1ef4dfd08  __AUTH,__objc_data  _OBJC_CLASS_$_AXSBImageExplorerData
+0x1ef4dfce0  __AUTH,__objc_data  _OBJC_CLASS_$_AXSBMenuBarManager
+0x1ef4dfcb8  __AUTH,__objc_data  _OBJC_CLASS_$_AXSCATProfile
+0x1ef4e0e30  __AUTH,__objc_data  _OBJC_CLASS_$_AXSecureIndicatorElevationAssertion
+0x1ee1bd208  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXServer
+0x1ee1c0098  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXSettings
+0x1ef4e0778  __AUTH,__objc_data  _OBJC_CLASS_$_AXSettingsProfileManager
+0x1ef4dfc68  __AUTH,__objc_data  _OBJC_CLASS_$_AXSiriShortcut
+0x1ef4dfc40  __AUTH,__objc_data  _OBJC_CLASS_$_AXSiriShortcutsManager
+0x1ee1bd140  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXSpringBoardServer
+0x1ef4dfc18  __AUTH,__objc_data  _OBJC_CLASS_$_AXSwitch
+0x1ef4dfbf0  __AUTH,__objc_data  _OBJC_CLASS_$_AXSwitchControlServer
+0x1ef4dfbc8  __AUTH,__objc_data  _OBJC_CLASS_$_AXSwitchGameControlButtonPress
+0x1ef4dfba0  __AUTH,__objc_data  _OBJC_CLASS_$_AXSwitchRecipe
+0x1ef4dfb78  __AUTH,__objc_data  _OBJC_CLASS_$_AXSwitchRecipeMapping
+0x1ef4dfb50  __AUTH,__objc_data  _OBJC_CLASS_$_AXSwitchRegistrar
+0x1ee1bce70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXSystemAppServer
+0x1ef4dfb28  __AUTH,__objc_data  _OBJC_CLASS_$_AXTadmorTesterDevice
+0x1ef4dfb00  __AUTH,__objc_data  _OBJC_CLASS_$_AXTapticSoundTestingContainer
+0x1ef4dfad8  __AUTH,__objc_data  _OBJC_CLASS_$_AXTapticTimeManager
+0x1ef4dfab0  __AUTH,__objc_data  _OBJC_CLASS_$_AXTeachableItem
+0x1ef4dfa88  __AUTH,__objc_data  _OBJC_CLASS_$_AXTeachableMomentsManager
+0x1ef4dfa60  __AUTH,__objc_data  _OBJC_CLASS_$_AXThreadTimer
+0x1ef4e0ac0  __AUTH,__objc_data  _OBJC_CLASS_$_AXTripleClickHelpers
+0x1ef4dfa10  __AUTH,__objc_data  _OBJC_CLASS_$_AXTypingPrediction
+0x1ef4df9e8  __AUTH,__objc_data  _OBJC_CLASS_$_AXUIBluetoothDevice
+0x1ef4df9c0  __AUTH,__objc_data  _OBJC_CLASS_$_AXUIBluetoothHelper
+0x1ef4df998  __AUTH,__objc_data  _OBJC_CLASS_$_AXUpdateElementVisualsCoalescer
+0x1ef4e0750  __AUTH,__objc_data  _OBJC_CLASS_$_AXUserEventTimer
+0x1ef4df970  __AUTH,__objc_data  _OBJC_CLASS_$_AXVOLiveRecognitionActivity
+0x1ef4df948  __AUTH,__objc_data  _OBJC_CLASS_$_AXValueChangeUtilities
+0x1ef4df920  __AUTH,__objc_data  _OBJC_CLASS_$_AXVirtualHIDService
+0x1ef4df8f8  __AUTH,__objc_data  _OBJC_CLASS_$_AXVocalShortcutsSettingsEvent
+0x1ef4e0728  __AUTH,__objc_data  _OBJC_CLASS_$_AXVoiceOverActivity
+0x1ef4df8d0  __AUTH,__objc_data  _OBJC_CLASS_$_AXVoiceOverAutomationClient
+0x1ef4df8a8  __AUTH,__objc_data  _OBJC_CLASS_$_AXVoiceOverServer
+0x1ef4df880  __AUTH,__objc_data  _OBJC_CLASS_$_AXVoiceOverVoiceRotorItem
+0x1ef4df858  __AUTH,__objc_data  _OBJC_CLASS_$_FKAAvailableCommands
+0x1ef4df830  __AUTH,__objc_data  _OBJC_CLASS_$_FKASiriShortcutKeyboardCommand
+0x1ef4e0700  __AUTH,__objc_data  _OBJC_CLASS_$_GAXTimeRestrictionManager
+0x1ef4e0360  __AUTH,__objc_data  _OBJC_CLASS_$_VOActivityKeyedArchiveHelper
+0x1ef4e06d8  __AUTH,__objc_data  _OBJC_CLASS_$__AXAssertionServer
+0x1ee1bfc68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings10LiveSpeech
+0x1ee1bfbb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings10MotionCues
+0x1ee1bd9d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings11HapticMusic
+0x1ee1bd8d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings11HearingAids
+0x1ee1bdfc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings11TripleClick
+0x1ee1bd7a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings12GuidedAccess
+0x1ee1bd718  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings12HeadTracking
+0x1ee1bd678  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings12LiveCaptions
+0x1ee1bdf38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings12VisualAlerts
+0x1ee1bd5c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings13ImageExplorer
+0x1ee1bff58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings13SpokenContent
+0x1ee1bf968  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings13SwitchControl
+0x1ee1bf1a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings14AssistiveTouch
+0x1ee1bfe70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings15NameRecognition
+0x1ee1bd4d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings18FullKeyboardAccess
+0x1ee1bfd70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings19AccessibilityReader
+0x1ee1bdb68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings4Misc
+0x1ee1beee0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings4Zoom
+0x1ee1bd438  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings5Dwell
+0x1ee1be078  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings5Touch
+0x1ee1bd358  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings7BackTap
+0x1ee1bee00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings9GuestPass
+0x1ee1bd298  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings9HoverText
+0x1ee1bed50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings9Magnifier
+0x1ee1be238  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings9VoiceOver
+0x1eb39c2c4  __DATA,__objc_ivar  OBJC_IVAR_$_AXBackBoardServer._eventListeners
+0x1eb39c2d0  __DATA,__objc_ivar  OBJC_IVAR_$_AXBackBoardServer._overrideGestureRecognition
+0x1eb39c2cc  __DATA,__objc_ivar  OBJC_IVAR_$_AXBackBoardServer._zoomAttributeListeners
+0x1eb39ca10  __DATA,__objc_ivar  OBJC_IVAR_$_AXReplayableGesture._allEvents
+0x1eb39c7a4  __DATA,__objc_ivar  OBJC_IVAR_$_AXThreadTimer._cancelBlock
+0x1eb39c7a0  __DATA,__objc_ivar  OBJC_IVAR_$_AXThreadTimer._thread
+0x1ef4df7a0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXARDescriptionFormatting
+0x1ee1bcf60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXActionCoalescer
+0x1ef4e0c00  __AUTH,__objc_data  _OBJC_METACLASS_$_AXAirPodSettingsManager
+0x1ef4e0d40  __AUTH,__objc_data  _OBJC_METACLASS_$_AXAlternativeVoices
+0x1ef4e0a98  __AUTH,__objc_data  _OBJC_METACLASS_$_AXAppRepresentation
+0x1ef4df778  __AUTH,__objc_data  _OBJC_METACLASS_$_AXAppSceneRepresentation
+0x1ef4e06b0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXAssertion
+0x1ef4df750  __AUTH,__objc_data  _OBJC_METACLASS_$_AXAssertionCoordinator
+0x1ef4df728  __AUTH,__objc_data  _OBJC_METACLASS_$_AXAssistiveTouchServer
+0x1ef4df700  __AUTH,__objc_data  _OBJC_METACLASS_$_AXAudioHardwareManager
+0x1ee1bd190  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXBackBoardServer
+0x1ef4df6d8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXBannerServices
+0x1ef4df6b0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXBuddyDataPackage
+0x1ee1bcec0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXCapabilityManager
+0x1ef4df688  __AUTH,__objc_data  _OBJC_METACLASS_$_AXCenterTapReplayableGesture
+0x1ef4df660  __AUTH,__objc_data  _OBJC_METACLASS_$_AXCharacterSoundMap
+0x1ef4df638  __AUTH,__objc_data  _OBJC_METACLASS_$_AXClarityBoardServer
+0x1ef4e0660  __AUTH,__objc_data  _OBJC_METACLASS_$_AXControlsSettingsObserver
+0x1ef4df610  __AUTH,__objc_data  _OBJC_METACLASS_$_AXCustomizableMouse
+0x1ef4e0cc8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXDeviceMonitor
+0x1ef4df5e8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXDialectMap
+0x1ef4e0638  __AUTH,__objc_data  _OBJC_METACLASS_$_AXEventAccelerometerInfoRepresentation
+0x1ef4df5c0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXEventData
+0x1ef4e0610  __AUTH,__objc_data  _OBJC_METACLASS_$_AXEventGameControllerInfoRepresentation
+0x1ef4e05e8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXEventHandInfoRepresentation
+0x1ef4e05c0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXEventIOSMACPointerInfoRepresentation
+0x1ef4e0598  __AUTH,__objc_data  _OBJC_METACLASS_$_AXEventKeyInfoRepresentation
+0x1ef4e0570  __AUTH,__objc_data  _OBJC_METACLASS_$_AXEventPathInfoRepresentation
+0x1ef4e0548  __AUTH,__objc_data  _OBJC_METACLASS_$_AXEventPointerInfoRepresentation
+0x1ef4e0ca0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXEventProcessor
+0x1ee1bd230  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXEventRepresentation
+0x1ef4df598  __AUTH,__objc_data  _OBJC_METACLASS_$_AXEventSenderProperties
+0x1ef4e0520  __AUTH,__objc_data  _OBJC_METACLASS_$_AXEventTapManager
+0x1ef4e04f8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXEventTapManagerFilterEvents
+0x1ef4df570  __AUTH,__objc_data  _OBJC_METACLASS_$_AXFirstResponderValueChangeManager
+0x1ef4e04a8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXGameControllerEvent
+0x1ef4e0de0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXHIDServiceCacheObserver
+0x1ee1bdb28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXIPCClient
+0x1ee1bdab0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXIPCMessage
+0x1ee1bd078  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXIPCServer
+0x1ef4e0ea8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXInvertColorsSettingsEvent
+0x1ef4df548  __AUTH,__objc_data  _OBJC_METACLASS_$_AXLangMap
+0x1ee1bcf10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXLanguageManager
+0x1ef4df520  __AUTH,__objc_data  _OBJC_METACLASS_$_AXLanguageTag
+0x1ef4df4f8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXLanguageTaggedContent
+0x1ef4e0ed0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXLiveRecognitionAskParameters
+0x1ef4df4d0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXMIDIDevice
+0x1ef4df4a8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXMIDIDeviceEntity
+0x1ef4df480  __AUTH,__objc_data  _OBJC_METACLASS_$_AXMIDIDeviceEntityEndpoint
+0x1ef4df458  __AUTH,__objc_data  _OBJC_METACLASS_$_AXMIDIEvent
+0x1ef4df430  __AUTH,__objc_data  _OBJC_METACLASS_$_AXMIDIManager
+0x1ef4df408  __AUTH,__objc_data  _OBJC_METACLASS_$_AXMIDIParser
+0x1ef4e0a70  __AUTH,__objc_data  _OBJC_METACLASS_$_AXMouseEventListener
+0x1ef4df3e0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXMutableReplayableGesture
+0x1ef4df3b8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXNPSWrapper
+0x1ef4df390  __AUTH,__objc_data  _OBJC_METACLASS_$_AXNamedReplayableGesture
+0x1ef4df368  __AUTH,__objc_data  _OBJC_METACLASS_$_AXOSMigrationCaptionStyle
+0x1ef4e1b10  __AUTH,__data  _OBJC_METACLASS_$_AXOSMigrationManager
+0x1ef4df340  __AUTH,__objc_data  _OBJC_METACLASS_$_AXOSMigrationPackage
+0x1ef4df318  __AUTH,__objc_data  _OBJC_METACLASS_$_AXOrator
+0x1ef4df2f0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXOutputAction
+0x1ef4df2c8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXOutputRequest
+0x1ef4df2a0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXPageTurningReplayableGesture
+0x1ef4e0a48  __AUTH,__objc_data  _OBJC_METACLASS_$_AXPasscodeAccessor
+0x1ef4e0bb0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXPerformanceTestReportingServer
+0x1ef4e0a20  __AUTH,__objc_data  _OBJC_METACLASS_$_AXPointerDeviceManager
+0x1ef4df250  __AUTH,__objc_data  _OBJC_METACLASS_$_AXPredictiveTypingModel
+0x1ef4df228  __AUTH,__objc_data  _OBJC_METACLASS_$_AXQuickSettingsData
+0x1ef4df200  __AUTH,__objc_data  _OBJC_METACLASS_$_AXRedirectedEventDetector
+0x1ef4df1d8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXReplayableGesture
+0x1ee1bcfb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXReplayer
+0x1ef4df1b0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXSBImageExplorerData
+0x1ef4df188  __AUTH,__objc_data  _OBJC_METACLASS_$_AXSBMenuBarManager
+0x1ef4df160  __AUTH,__objc_data  _OBJC_METACLASS_$_AXSCATProfile
+0x1ef4e0e58  __AUTH,__objc_data  _OBJC_METACLASS_$_AXSecureIndicatorElevationAssertion
+0x1ee1bd1e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXServer
+0x1ee1c0930  __DATA_DIRTY,__data  _OBJC_METACLASS_$_AXSettings
+0x1ef4e0480  __AUTH,__objc_data  _OBJC_METACLASS_$_AXSettingsProfileManager
+0x1ef4df110  __AUTH,__objc_data  _OBJC_METACLASS_$_AXSiriShortcut
+0x1ef4df0e8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXSiriShortcutsManager
+0x1ee1bd168  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXSpringBoardServer
+0x1ef4df0c0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXSwitch
+0x1ef4df098  __AUTH,__objc_data  _OBJC_METACLASS_$_AXSwitchControlServer
+0x1ef4df070  __AUTH,__objc_data  _OBJC_METACLASS_$_AXSwitchGameControlButtonPress
+0x1ef4df048  __AUTH,__objc_data  _OBJC_METACLASS_$_AXSwitchRecipe
+0x1ef4df020  __AUTH,__objc_data  _OBJC_METACLASS_$_AXSwitchRecipeMapping
+0x1ef4deff8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXSwitchRegistrar
+0x1ee1bce98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXSystemAppServer
+0x1ef4defd0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXTadmorTesterDevice
+0x1ef4defa8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXTapticSoundTestingContainer
+0x1ef4def80  __AUTH,__objc_data  _OBJC_METACLASS_$_AXTapticTimeManager
+0x1ef4def58  __AUTH,__objc_data  _OBJC_METACLASS_$_AXTeachableItem
+0x1ef4def30  __AUTH,__objc_data  _OBJC_METACLASS_$_AXTeachableMomentsManager
+0x1ef4def08  __AUTH,__objc_data  _OBJC_METACLASS_$_AXThreadTimer
+0x1ef4e09d0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXTripleClickHelpers
+0x1ef4deeb8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXTypingPrediction
+0x1ef4dee90  __AUTH,__objc_data  _OBJC_METACLASS_$_AXUIBluetoothDevice
+0x1ef4dee68  __AUTH,__objc_data  _OBJC_METACLASS_$_AXUIBluetoothHelper
+0x1ef4dee40  __AUTH,__objc_data  _OBJC_METACLASS_$_AXUpdateElementVisualsCoalescer
+0x1ef4e0458  __AUTH,__objc_data  _OBJC_METACLASS_$_AXUserEventTimer
+0x1ef4dee18  __AUTH,__objc_data  _OBJC_METACLASS_$_AXVOLiveRecognitionActivity
+0x1ef4dedf0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXValueChangeUtilities
+0x1ef4dedc8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXVirtualHIDService
+0x1ef4deda0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXVocalShortcutsSettingsEvent
+0x1ef4e0430  __AUTH,__objc_data  _OBJC_METACLASS_$_AXVoiceOverActivity
+0x1ef4ded78  __AUTH,__objc_data  _OBJC_METACLASS_$_AXVoiceOverAutomationClient
+0x1ef4ded50  __AUTH,__objc_data  _OBJC_METACLASS_$_AXVoiceOverServer
+0x1ef4e1ae8  __AUTH,__data  _OBJC_METACLASS_$_AXVoiceOverVoiceRotorItem
+0x1ef4ded28  __AUTH,__objc_data  _OBJC_METACLASS_$_FKAAvailableCommands
+0x1ef4ded00  __AUTH,__objc_data  _OBJC_METACLASS_$_FKASiriShortcutKeyboardCommand
+0x1ef4e0408  __AUTH,__objc_data  _OBJC_METACLASS_$_GAXTimeRestrictionManager
+0x1ef4e1ac0  __AUTH,__data  _OBJC_METACLASS_$_VOActivityKeyedArchiveHelper
+0x1ef4e03e0  __AUTH,__objc_data  _OBJC_METACLASS_$__AXAssertionServer
+0x1ee1c0808  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings10LiveSpeech
+0x1ee1c08d0  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings10MotionCues
+0x1ee1c05b0  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings11HapticMusic
+0x1ee1c0588  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings11HearingAids
+0x1ee1c06d8  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings11TripleClick
+0x1ee1c0560  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings12GuidedAccess
+0x1ee1c0538  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings12HeadTracking
+0x1ee1c0630  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings12LiveCaptions
+0x1ee1c06b0  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings12VisualAlerts
+0x1ee1c0510  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings13ImageExplorer
+0x1ee1c08a8  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings13SpokenContent
+0x1ee1c07e0  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings13SwitchControl
+0x1ee1c07b8  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings14AssistiveTouch
+0x1ee1c0880  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings15NameRecognition
+0x1ee1c04e8  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings18FullKeyboardAccess
+0x1ee1c0858  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings19AccessibilityReader
+0x1ee1c0608  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings4Misc
+0x1ee1c08f8  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings4Zoom
+0x1ee1c04c0  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings5Dwell
+0x1ee1c0688  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings5Touch
+0x1ee1c0498  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings7BackTap
+0x1ee1c0790  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings9GuestPass
+0x1ee1c0470  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings9HoverText
+0x1ee1c0768  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings9Magnifier
+0x1ee1c0830  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtCE22AccessibilityUtilitiesCSo10AXSettings9VoiceOver
+0x189b1cb6c  __TEXT,__text  _PSESettingsFooterText
+0x1ef4e1f20  __AUTH,__data  _PairingAgentCallbacks
+0x189b67e0c  __TEXT,__text  _SCATATVRemoteDeviceMatchingDictionary
+0x189b67778  __TEXT,__text  _SCATATVRemoteSwitchActions
+0x189b672e4  __TEXT,__text  _SCATActionDescription
+0x189b67e3c  __TEXT,__text  _SCATActionForTADSwitchControlButtonType
+0x189b66f3c  __TEXT,__text  _SCATAddOrUpdateCameraSwitchToSettings
+0x189b66dbc  __TEXT,__text  _SCATAddOrUpdateSwitchToSettings
+0x189b500d8  __TEXT,__text  _SCATAddProfileToSettings
+0x189b67784  __TEXT,__text  _SCATHeadTrackingSwitchActions
+0x189b67cec  __TEXT,__text  _SCATIsATVRemoteButtonEvent
+0x189b67c78  __TEXT,__text  _SCATIsATVRemoteButtonSwitchCandidateEvent
+0x189b67e18  __TEXT,__text  _SCATIsGamepadKeyEvent
+0x189b67c30  __TEXT,__text  _SCATIsKeyboardKeyEvent
+0x189b67be4  __TEXT,__text  _SCATIsMFIButtonDownValue
+0x189b67790  __TEXT,__text  _SCATLocStringForAction
+0x189b674f8  __TEXT,__text  _SCATNavigationSwitchActions
+0x189b4faa4  __TEXT,__text  _SCATNextAvailableProfileName
+0x189b6722c  __TEXT,__text  _SCATNextAvailableSwitchName
+0x189b5016c  __TEXT,__text  _SCATRemoveProfileFromSettings
+0x189b66d2c  __TEXT,__text  _SCATRemoveSwitchFromSettings
+0x189b674ec  __TEXT,__text  _SCATScannerSwitchActions
+0x189b670bc  __TEXT,__text  _SCATSwitchExistsWithName
+0x1e07e0cc8  __DATA_CONST,__const  _SCATSwitchSourceATVRemote
+0x1e07e0d18  __DATA_CONST,__const  _SCATSwitchSourceAccessibility
+0x1e07e0d28  __DATA_CONST,__const  _SCATSwitchSourceAutomation
+0x1e07e0cf8  __DATA_CONST,__const  _SCATSwitchSourceBackTap
+0x1e07e0ca8  __DATA_CONST,__const  _SCATSwitchSourceCamera
+0x1e07e0d10  __DATA_CONST,__const  _SCATSwitchSourceCameraHandGesture
+0x1e07e0ce0  __DATA_CONST,__const  _SCATSwitchSourceGamepad
+0x1e07e0d20  __DATA_CONST,__const  _SCATSwitchSourceHandGestures
+0x1e07e0d08  __DATA_CONST,__const  _SCATSwitchSourceHeadGesture
+0x1e07e0cb0  __DATA_CONST,__const  _SCATSwitchSourceKeyboard
+0x1e07e0cb8  __DATA_CONST,__const  _SCATSwitchSourceMFI
+0x1e07e0cd8  __DATA_CONST,__const  _SCATSwitchSourceMIDI
+0x1e07e0cf0  __DATA_CONST,__const  _SCATSwitchSourceMotionTracker
+0x1e07e0cd0  __DATA_CONST,__const  _SCATSwitchSourceRemote
+0x1e07e0cc0  __DATA_CONST,__const  _SCATSwitchSourceScreen
+0x1e07e0d00  __DATA_CONST,__const  _SCATSwitchSourceSound
+0x1e07e0ce8  __DATA_CONST,__const  _SCATSwitchSourceTadmor
+0x1e07e0d30  __DATA_CONST,__const  _SCATSwitchTypeOptional
+0x1e07e0d38  __DATA_CONST,__const  _SCATSwitchTypeRequired
+0x189b679b4  __TEXT,__text  _SCATSwitchesWithSource
+0x189b67acc  __TEXT,__text  _SCATSwitchesWithType
+0x189b67574  __TEXT,__text  _SCATSystemSwitchActions
+0x189b501fc  __TEXT,__text  _SCATUpdateProfileToSettings
+0x1ef4e1ef0  __AUTH,__data  _SessionCallbacks
+0x1e07def50  __DATA_CONST,__const  _SoundDetectionModelCreationIdentifierKey
+0x1e07def48  __DATA_CONST,__const  _UIAXZoomAdjustmentChange
+0x189caa710  __TEXT,__const  _VOBTDriverLoadingError
+0x189caa6f8  __TEXT,__const  _VOBTGeneralError
+0x189caa708  __TEXT,__const  _VOBTInvalidPINCodeError
+0x189caa700  __TEXT,__const  _VOBTNoServiceError
+0x189b14eac  __TEXT,__text  _VOSAddressForBTDevice
+0x1e07e00b8  __DATA_CONST,__const  _VOSBluetoothAvailabilityChangedNotification
+0x1e07e00c8  __DATA_CONST,__const  _VOSBluetoothConnectabilityChangedNotification
+0x1e07e0100  __DATA_CONST,__const  _VOSBluetoothConnectionStatusChangedNotification
+0x1e07e0160  __DATA_CONST,__const  _VOSBluetoothCoreBluetoothManagerReadyNotification
+0x1e07e00f8  __DATA_CONST,__const  _VOSBluetoothDeviceConnectFailedNotification
+0x1e07e00f0  __DATA_CONST,__const  _VOSBluetoothDeviceConnectSuccessNotification
+0x1e07e0110  __DATA_CONST,__const  _VOSBluetoothDeviceDisconnectFailedNotification
+0x1e07e0108  __DATA_CONST,__const  _VOSBluetoothDeviceDisconnectSuccessNotification
+0x1e07e00d8  __DATA_CONST,__const  _VOSBluetoothDeviceDiscoveredNotification
+0x1e07e0168  __DATA_CONST,__const  _VOSBluetoothDevicePairedNotification
+0x1e07e00e8  __DATA_CONST,__const  _VOSBluetoothDeviceRemovedNotification
+0x1e07e0148  __DATA_CONST,__const  _VOSBluetoothDeviceUnpairedNotification
+0x1e07e00e0  __DATA_CONST,__const  _VOSBluetoothDeviceUpdatedNotification
+0x1e07e00d0  __DATA_CONST,__const  _VOSBluetoothDiscoveryStateChangedNotification
+0x1e07e0150  __DATA_CONST,__const  _VOSBluetoothErrorKey
+0x1e07e0158  __DATA_CONST,__const  _VOSBluetoothNotificationNameKey
+0x1e07e0118  __DATA_CONST,__const  _VOSBluetoothPairingPINRequestNotification
+0x1e07e0128  __DATA_CONST,__const  _VOSBluetoothPairingPINResultFailedNotification
+0x1e07e0120  __DATA_CONST,__const  _VOSBluetoothPairingPINResultSuccessNotification
+0x1e07e0140  __DATA_CONST,__const  _VOSBluetoothPairingPassKeyDisplayNotification
+0x1e07e0130  __DATA_CONST,__const  _VOSBluetoothPairingUserConfirmationNotification
+0x1e07e0138  __DATA_CONST,__const  _VOSBluetoothPairingUserNumericComparisionNotification
+0x1e07e00c0  __DATA_CONST,__const  _VOSBluetoothPowerChangedNotification
+0x189b2f47c  __TEXT,__text  __AXEventKeyInfoSetSimulatedFNKeyDown
+0x189b541ac  __TEXT,__text  __AXFeatureSupportsNonSightedUsage
+0x189b54154  __TEXT,__text  __AXFeatureSupportsPhotoDescriptions
+0x189b54204  __TEXT,__text  __AXFeatureSupportsScrollBars
+0x189b6c6e0  __TEXT,__text  __AXIPCAsyncRequestReply_server
+0x189b6c5b8  __TEXT,__text  __AXIPCAsyncRequestReply_server_routine
+0x189b6c44c  __TEXT,__text  __AXIPCAsyncSendDataReply
+0x189b6c52c  __TEXT,__text  __AXIPCReplyToAsyncRequest
+0x189b6bb84  __TEXT,__text  __AXIPCSendData
+0x189b6be94  __TEXT,__text  __AXIPCSendDataWithAsyncReply
+0x189b6c3ac  __TEXT,__text  __AXIPCServer_server
+0x189b6bf9c  __TEXT,__text  __AXIPCServer_server_routine
+0x189aa65a4  __TEXT,__text  __AXIPCSimpleSendData
+0x189b6bd90  __TEXT,__text  __AXIPCSimpleSendDataWithFencePort
+0x189b6b1f4  __TEXT,__text  __AXMIDIBooleanProperty
+0x189b6acac  __TEXT,__text  __AXMIDIHandleErrorOSStatus
+0x189b6af9c  __TEXT,__text  __AXMIDIHandlePropertyLookupError
+0x189b6b170  __TEXT,__text  __AXMIDIIntegerProperty
+0x189b6b0fc  __TEXT,__text  __AXMIDIStringProperty
+0x189b62ac0  __TEXT,__text  __AXSSetTestBuddyData
+0x1e295ee90  __AUTH_CONST,__const  ___AXXIPC_AXIPCAsyncRequestReply_subsystem
+0x1e295edd0  __AUTH_CONST,__const  ___AXXIPC_AXIPCServer_subsystem
+0x189b1471c  __TEXT,__text  __btDiscoveryEventCallback
+0x189b146d8  __TEXT,__text  __btDiscoveryStatusEventCallback
+0x189b14524  __TEXT,__text  __btLocalStatusEventCallback
+0x189b154c0  __TEXT,__text  __btServiceEventCallback
+0x189b14380  __TEXT,__text  __btSessionEventCallback
+0x189ae9dd0  __TEXT,__text  __getReportCallback
+0x189b223a4  __TEXT,__text  __icuDisplayNameForLocale
+0x189aead44  __TEXT,__text  __valueCallback
+0x189b4c1ec  __TEXT,__text  _assistiveTouchNormalizedMotionTrackerSmoothingBufferSizeForUserPreference
+0x189b4c220  __TEXT,__text  _assistiveTouchUserPreferenceForNormalizedMotionTrackerSmoothingBufferSize
+0x189b4c0f8  __TEXT,__text  _assistiveTouchXYScannerNormalizedUserPreferenceForSpeed
+0x189b4c0d0  __TEXT,__text  _assistiveTouchXYScannerSpeedForNormalizedUserPreference
+0x1e07def40  __DATA_CONST,__const  _kAXHapticMusicSampleTrackISRCCode
+0x1e07e0540  __DATA_CONST,__const  _kAXSAssistiveTouchEyeTrackerCustomizedSettingsPreference
+0x1e07e0538  __DATA_CONST,__const  _kAXSAssistiveTouchMouseCustomizedClickActionsPreference
+0x1eb39d970  __DATA,__data  _kAXSAssistiveTouchScannerSpeechEnabledPreference
+0x1eb39d980  __DATA,__data  _kAXSAssistiveTouchScannerSpeechIsInterruptedByScanningEnabledPreference
+0x1eb39d9a0  __DATA,__data  _kAXSAssistiveTouchScannerSpeechRatePreference
+0x1eb39d978  __DATA,__data  _kAXSAssistiveTouchScannerSpeechShouldSpeakTraitsEnabledPreference
+0x1eb39d988  __DATA,__data  _kAXSAssistiveTouchScannerSpeechVoiceIdentifierForLanguage
+0x1eb39d990  __DATA,__data  _kAXSAssistiveTouchScannerSpeechVoiceSelection
+0x1e07e06d8  __DATA_CONST,__const  _kAXSAssistiveTouchSleepOnWristDownPreference
+0x1e07e06f8  __DATA_CONST,__const  _kAXSCallAudioRoutingAutoAnswerEnabledPreference
+0x1e07e06f0  __DATA_CONST,__const  _kAXSCallAudioRoutingAutoAnswerPreference
+0x1eb39d968  __DATA,__data  _kAXSCustomPronunciationSubstitutionsPreference
+0x1e07e0548  __DATA_CONST,__const  _kAXSDwellEnabledPreference
+0x1e07e0770  __DATA_CONST,__const  _kAXSLiveCaptionsHistoryDurationPreference
+0x1e07e0768  __DATA_CONST,__const  _kAXSLiveCaptionsSelectedLocationPreference
+0x1e07e0778  __DATA_CONST,__const  _kAXSLiveCaptionsTranscriberVersionPreference
+0x1e07e06b8  __DATA_CONST,__const  _kAXSLiveSpeechSelectedVoiceMap
+0x1e07e0760  __DATA_CONST,__const  _kAXSMonitorPreboardFeature
+0x1eb39d998  __DATA,__data  _kAXSSwitchControlUseExtendedKeyboardPredictionsEnabledPreference
+0x1e07e0648  __DATA_CONST,__const  _kAXSTapToSpeakTimeAvailabilityPreference
+0x1e07e0640  __DATA_CONST,__const  _kAXSTapToSpeakTimeEnabledPreference
+0x1e07e0728  __DATA_CONST,__const  _kAXSTouchAccommodationsAllowsSwipeGesturesToBypassPreference
+0x1e07e0700  __DATA_CONST,__const  _kAXSTouchAccommodationsEnabledPreference
+0x1e07e0718  __DATA_CONST,__const  _kAXSTouchAccommodationsHoldDurationEnabledPreference
+0x1e07e0720  __DATA_CONST,__const  _kAXSTouchAccommodationsHoldDurationPreference
+0x189caa730  __TEXT,__const  _kAXSTouchAccommodationsHoldDurationSwipeGestureMinimumDistanceDefault
+0x1e07e0730  __DATA_CONST,__const  _kAXSTouchAccommodationsHoldDurationSwipeGestureMinimumDistancePreference
+0x1e07e0740  __DATA_CONST,__const  _kAXSTouchAccommodationsIgnoreRepeatDurationPreference
+0x1e07e0738  __DATA_CONST,__const  _kAXSTouchAccommodationsIgnoreRepeatEnabledPreference
+0x1e07e0758  __DATA_CONST,__const  _kAXSTouchAccommodationsSettingsSourcePreference
+0x1e07e0748  __DATA_CONST,__const  _kAXSTouchAccommodationsTapActivationMethodPreference
+0x1e07e0750  __DATA_CONST,__const  _kAXSTouchAccommodationsTapActivationTimeoutPreference
+0x1e07e0710  __DATA_CONST,__const  _kAXSTouchAccommodationsTripleClickConfirmedPreference
+0x1e07e0708  __DATA_CONST,__const  _kAXSTouchAccommodationsUsageConfirmedPreference
+0x1e07e0620  __DATA_CONST,__const  _kAXSVoiceOverAdjustSoundVolumeIndependentlyPreference
+0x1e07e0608  __DATA_CONST,__const  _kAXSVoiceOverAudioDuckingEnabledPreference
+0x1e07e0680  __DATA_CONST,__const  _kAXSVoiceOverAvailableVoiceResources
+0x1eb39d9b8  __DATA,__data  _kAXSVoiceOverDelayUntilSpeakUnderTouch
+0x1eb39d9b0  __DATA,__data  _kAXSVoiceOverDoubleTapInterval
+0x1e07e06e8  __DATA_CONST,__const  _kAXSVoiceOverFlashlightNotificationsEnabled
+0x1e07e0558  __DATA_CONST,__const  _kAXSVoiceOverHardwareTypingFeedbackPreference
+0x1e07e0628  __DATA_CONST,__const  _kAXSVoiceOverKeyboardContinuousPathStartTimeoutPreference
+0x1e07e0568  __DATA_CONST,__const  _kAXSVoiceOverKeyboardModifierChoicePreference
+0x1e07e0550  __DATA_CONST,__const  _kAXSVoiceOverPhoneticsFeedbackPreference
+0x1eb39d9a8  __DATA,__data  _kAXSVoiceOverPitchPreference
+0x1e07e0678  __DATA_CONST,__const  _kAXSVoiceOverSelectedVoiceId
+0x1e07e06d0  __DATA_CONST,__const  _kAXSVoiceOverSleepOnWristDownPreference
+0x1e07e06e0  __DATA_CONST,__const  _kAXSVoiceOverSmartScreenCurtainPreference
+0x1e07e0560  __DATA_CONST,__const  _kAXSVoiceOverSoftwareTypingFeedbackPreference
+0x1e07e0610  __DATA_CONST,__const  _kAXSVoiceOverSoundEffectsEnabledPreference
+0x1e07e0618  __DATA_CONST,__const  _kAXSVoiceOverSoundVolumePreference
+0x1e07e0588  __DATA_CONST,__const  _kAXSVoiceOverTapticChimesAvailability
+0x1e07e0668  __DATA_CONST,__const  _kAXSVoiceOverTapticChimesEnabled
+0x1e07e0590  __DATA_CONST,__const  _kAXSVoiceOverTapticChimesFrequencyEncoding
+0x1e07e0580  __DATA_CONST,__const  _kAXSVoiceOverTapticChimesScheduleDateEnd
+0x1e07e0578  __DATA_CONST,__const  _kAXSVoiceOverTapticChimesScheduleDateStart
+0x1e07e0670  __DATA_CONST,__const  _kAXSVoiceOverTapticChimesScheduleEnabled
+0x1e07e0598  __DATA_CONST,__const  _kAXSVoiceOverTapticChimesSoundType
+0x1e07e05a0  __DATA_CONST,__const  _kAXSVoiceOverTapticChimesUnity25Active
+0x1e07e05a8  __DATA_CONST,__const  _kAXSVoiceOverTapticChimesUnity25SoundType
+0x1e07e0658  __DATA_CONST,__const  _kAXSVoiceOverTapticTimeEncoding
+0x1e07e0570  __DATA_CONST,__const  _kAXSVoiceOverTapticTimeMode
+0x1e07e0660  __DATA_CONST,__const  _kAXSVoiceOverTapticTimeSpeed
+0x1eb39d288  __DATA,__data  _kAXSVoiceOverTouchBrailleReconnectionTriggeredNotification
+0x1e07e0638  __DATA_CONST,__const  _kAXSVoiceOverTouchMediaDuckingModePreference
+0x1e07e0630  __DATA_CONST,__const  _kAXSVoiceOverTouchMediaDuckingVolumePreference
+0x1e07e05b0  __DATA_CONST,__const  _kAXSVoiceOverUseDigitalCrownNavigation
+0x1e07e06a0  __DATA_CONST,__const  _kAXSVoiceOverVoiceDownloadProgress
+0x1e07e0698  __DATA_CONST,__const  _kAXSVoiceOverVoiceIdForDeleteDownload
+0x1e07e0688  __DATA_CONST,__const  _kAXSVoiceOverVoiceIdForStartDownload
+0x1e07e0690  __DATA_CONST,__const  _kAXSVoiceOverVoiceIdForStopDownload
+0x1e07e05d8  __DATA_CONST,__const  _kAXSVoiceOverWatchBrailleAlertDisplayDuration
+0x1e07e05b8  __DATA_CONST,__const  _kAXSVoiceOverWatchBrailleInputMode
+0x1e07e05f8  __DATA_CONST,__const  _kAXSVoiceOverWatchBrailleInputTableIdentifier
+0x1e07e05e8  __DATA_CONST,__const  _kAXSVoiceOverWatchBrailleLanguageRotorItems
+0x1e07e05c8  __DATA_CONST,__const  _kAXSVoiceOverWatchBrailleOutputMode
+0x1e07e0600  __DATA_CONST,__const  _kAXSVoiceOverWatchBrailleOutputTableIdentifier
+0x1e07e05f0  __DATA_CONST,__const  _kAXSVoiceOverWatchBrailleSyncInputOutputTables
+0x1e07e05e0  __DATA_CONST,__const  _kAXSVoiceOverWatchBrailleTableIdentifier
+0x1e07e05d0  __DATA_CONST,__const  _kAXSVoiceOverWatchBrailleWordWrap
+0x1e07e05c0  __DATA_CONST,__const  _kAXSVoiceOverWatchGrade2AutoTranslate
+0x1e07e06a8  __DATA_CONST,__const  _kAXSVoiceOverWatchHandGestures
+0x1e07e06b0  __DATA_CONST,__const  _kAXSVoiceOverWatchHandGesturesActionCustomizations
+0x1e07e0650  __DATA_CONST,__const  _kAXSWatchSiriEndpointerThresholdPreference
+0x1e07e06c0  __DATA_CONST,__const  _kAXSZoomWatchHandGestures
+0x1e07e06c8  __DATA_CONST,__const  _kAXSZoomWatchHandGesturesActionCustomizations
+0x189caa6a0  __TEXT,__const  _kHoverTextEventFilterPriority
+0x1e07deae0  __DATA_CONST,__const  _kSBSLockStateNotifyKey
+0x189b14be8  __TEXT,__text  _pairingAgentAuthorizationCallback
+0x189b14d80  __TEXT,__text  _pairingAgentPassKeyDisplayCallback
+0x189b14b1c  __TEXT,__text  _pairingAgentPincodeCallback
+0x189b148fc  __TEXT,__text  _pairingAgentStatusEventCallback
+0x189b14bec  __TEXT,__text  _pairingAgentUserConfirmationCallback
+0x189ae9dd8  __TEXT,__text  _reportCallback
+0x189b4c188  __TEXT,__text  _switchControlNormalizedHeadTrackingMovementToleranceInJoystickModeForUserPreference
+0x189b4c124  __TEXT,__text  _switchControlNormalizedHeadTrackingSensitivityForUserPreference
+0x189b4c1bc  __TEXT,__text  _switchControlUserPreferenceForNormalizedHeadTrackingMovementToleranceInJoystickMode
+0x189b4c158  __TEXT,__text  _switchControlUserPreferenceForNormalizedHeadTrackingSensitivity
+```
+
+## Private
+
+```
+0x189a9712c  __TEXT,__text  ___swift_instantiateConcreteTypeFromMangledNameV2
+0x189a9718c  __TEXT,__text  _InitializeMaps
+0x189a9aa90  __TEXT,__text  ___44-[AXSettings(LegacyImplementation) postInit]_block_invoke
+0x189a9f054  __TEXT,__text  +[AXSpringBoardServer isAvailable]
+0x189a9f124  __TEXT,__text  +[AXSpringBoardServer server]
+0x189a9f234  __TEXT,__text  __AXDurationStringForDuration
+0x189a9f3f4  __TEXT,__text  ____AXCachedDateComponentsFormatter_block_invoke_2
+0x189aa5598  __TEXT,__text  ___51-[AXIPCServer _processValidatedMessage:completion:]_block_invoke
+0x189aa570c  __TEXT,__text  __XSimpleSendData
+0x189aa581c  __TEXT,__text  ___AXXIPCSimpleSendData
+0x189aa59ac  __TEXT,__text  -[AXIPCServer _handleIncomingMessage:securityToken:auditToken:clientPort:completion:]
+0x189aa5b2c  __TEXT,__text  -[AXIPCServer _processValidatedMessage:completion:]
+0x189aa5e44  __TEXT,__text  -[AXServer _handleActionResult:]
+0x189aa5f78  __TEXT,__text  ___32-[AXServer _handleActionResult:]_block_invoke
+0x189aa6040  __TEXT,__text  -[AXIPCMessage processedMessage]
+0x189aa6048  __TEXT,__text  ___85-[AXIPCServer _handleIncomingMessage:securityToken:auditToken:clientPort:completion:]_block_invoke
+0x189aa604c  __TEXT,__text  -[AXIPCMessage dealloc]
+0x189aa60dc  __TEXT,__text  -[AXIPCMessage .cxx_destruct]
+0x189aa60e8  __TEXT,__text  ___32-[AXServer _handleActionResult:]_block_invoke_2
+0x189aa6208  __TEXT,__text  -[AXServerActionHandlerHolder handler]
+0x189aa6210  __TEXT,__text  -[AXIPCMessage key]
+0x189aa6218  __TEXT,__text  -[AXIPCServerMessageHandlerContext target]
+0x189aa6244  __TEXT,__text  ___66-[AXIPCClient _prepareToSendMessage:withError:prepSuccessHandler:]_block_invoke
+0x189aa629c  __TEXT,__text  -[AXIPCClient _prepareToSendMessage:withError:prepSuccessHandler:]
+0x189aa6488  __TEXT,__text  ___59-[AXIPCClient sendSimpleMessage:synchronizationPort:error:]_block_invoke
+0x189aa669c  __TEXT,__text  -[AXIPCMessage setPayload:]
+0x189aa66a4  __TEXT,__text  +[AXBackBoardServer server]
+0x189aa6734  __TEXT,__text  ___AXInPreboardScenario_block_invoke
+0x189aa67b0  __TEXT,__text  ___AXPreBoardQueue_block_invoke
+0x189aa67e4  __TEXT,__text  ___AXInPreboardScenario_block_invoke_2
+0x189aa6bcc  __TEXT,__text  -[AXSpringBoardServer purpleBuddyPID]
+0x189aa6ca0  __TEXT,__text  -[AXSpringBoardServer(AXSpringBoardServer_Private) _shouldDispatchLocally]
+0x189aa6ce8  __TEXT,__text  -[AXSpringBoardServer(AXSpringBoardServer_Private) _axSpringBoardServerInstanceDelegate]
+0x189aa6d5c  __TEXT,__text  -[AXSpringBoardServer(AXSpringBoardServer_Private) _axSpringBoardServerInstance]
+0x189aa6dd8  __TEXT,__text  -[AXSettings(LegacyImplementation) valueForPreferenceKey:]
+0x189aa6e70  __TEXT,__text  -[AXSettings(LegacyImplementation) domainNameForPreferenceKey:]
+0x189aa6ea0  __TEXT,__text  -[AXSettings(LegacyImplementation) _domainForPreferenceKey:]
+0x189aa6f74  __TEXT,__text  -[AXSettings(LegacyImplementation) _domainNameForDomain:]
+0x189aa7114  __TEXT,__text  ___60-[AXSettings(LegacyImplementation) _domainForPreferenceKey:]_block_invoke
+0x189aa7168  __TEXT,__text  ___41-[AXIPCServer _handleClientInvalidation:]_block_invoke
+0x189aa71b0  __TEXT,__text  ___57-[AXIPCServerClientRegistration initWithPort:identifier:]_block_invoke_2
+0x189aa7224  __TEXT,__text  -[AXIPCServerClientRegistration port]
+0x189aa76c8  __TEXT,__text  ___AXDeviceSupportsMultitasking_block_invoke
+0x189ab4800  __TEXT,__text  +[AXPerformanceTestReportingServer server]
+0x189ab4848  __TEXT,__text  ___42+[AXPerformanceTestReportingServer server]_block_invoke
+0x189ab4888  __TEXT,__text  -[AXPerformanceTestReportingServer _serviceName]
+0x189ab4894  __TEXT,__text  -[AXPerformanceTestReportingServer voiceOverTouchDidLaunch]
+0x189ab48f0  __TEXT,__text  -[AXPerformanceTestReportingServer assistiveTouchDidLaunch]
+0x189ab494c  __TEXT,__text  -[AXPerformanceTestReportingServer voiceOverDidSpeak:]
+0x189ab4a78  __TEXT,__text  __handleInPreBoardModeUpdate
+0x189ab4b10  __TEXT,__text  ___AXInCheckerBoardScenario_block_invoke
+0x189ab4b80  __TEXT,__text  __handleInCheckerBoardModeUpdate
+0x189ab4ce8  __TEXT,__text  ___AXSessionIsLoginSession_block_invoke
+0x189ab4d28  __TEXT,__text  __handleSessionIsLoginSessionUpdate
+0x189ab4d6c  __TEXT,__text  ___AXSessionIsLoginSession_block_invoke_2
+0x189ab4fec  __TEXT,__text  ___AXZoomAllLensEffects_block_invoke
+0x189ab5114  __TEXT,__text  ___AXZoomAllLensModes_block_invoke
+0x189ab5284  __TEXT,__text  ___AXZoomUserSelectableLensModes_block_invoke
+0x189ab541c  __TEXT,__text  ___AXZoomDockPositions_block_invoke
+0x189ab55b4  __TEXT,__text  _getVTPreferencesClass
+0x189ab5ae4  __TEXT,__text  ____handleInPreBoardModeUpdate_block_invoke
+0x189ab5b40  __TEXT,__text  ____handleSessionIsLoginSessionUpdate_block_invoke
+0x189ab5bf8  __TEXT,__text  ___getVTPreferencesClass_block_invoke
+0x189ab5de8  __TEXT,__text  ___VoiceTriggerLibraryCore_block_invoke
+0x189ab5e5c  __TEXT,__text  +[AXTripleClickHelpers tripleClickOptionDidChangeNotification]
+0x189ab5e68  __TEXT,__text  +[AXTripleClickHelpers localizationKeyForAccessibilityShortcutOption:]
+0x189ab6244  __TEXT,__text  +[AXTripleClickHelpers localizationKeyForTripleClickOption:]
+0x189ab6248  __TEXT,__text  +[AXTripleClickHelpers symbolNameForAccessibilityShortcutOption:]
+0x189ab626c  __TEXT,__text  +[AXTripleClickHelpers symbolNameForTripleClickOption:]
+0x189ab6270  __TEXT,__text  +[AXTripleClickHelpers localizedTitleForAccessibilityShortcutOption:]
+0x189ab63a4  __TEXT,__text  _soft_AXUIAssistiveTouchStringForName
+0x189ab6528  __TEXT,__text  +[AXTripleClickHelpers titleForTripleClickOption:]
+0x189ab655c  __TEXT,__text  +[AXTripleClickHelpers domainAccessorForTripleClickOption:]
+0x189ab6640  __TEXT,__text  +[AXTripleClickHelpers valueForAccessibilityShortcutOption:]
+0x189ab6648  __TEXT,__text  +[AXTripleClickHelpers valueForTripleClickOption:]
+0x189ab664c  __TEXT,__text  +[AXTripleClickHelpers valueForAccessibilityShortcutOption:fromSource:]
+0x189ab6670  __TEXT,__text  +[AXTripleClickHelpers valueForTripleClickOption:fromSource:]
+0x189ab6674  __TEXT,__text  +[AXTripleClickHelpers classicInvertColorsEnabled]
+0x189ab675c  __TEXT,__text  ___50+[AXTripleClickHelpers classicInvertColorsEnabled]_block_invoke
+0x189ab67a8  __TEXT,__text  __AXResolvePendingInvertColorsValue
+0x189ab68a0  __TEXT,__text  +[AXTripleClickHelpers smartInvertColorsEnabled]
+0x189ab6974  __TEXT,__text  ___48+[AXTripleClickHelpers smartInvertColorsEnabled]_block_invoke
+0x189ab69c0  __TEXT,__text  +[AXTripleClickHelpers _sendInvertColorsChangeIsSmart:newValue:source:animationDuration:completion:]
+0x189ab6c2c  __TEXT,__text  ___100+[AXTripleClickHelpers _sendInvertColorsChangeIsSmart:newValue:source:animationDuration:completion:]_block_invoke
+0x189ab6ca4  __TEXT,__text  ___100+[AXTripleClickHelpers _sendInvertColorsChangeIsSmart:newValue:source:animationDuration:completion:]_block_invoke_2
+0x189ab6cbc  __TEXT,__text  +[AXTripleClickHelpers setClassicInvertColorsEnabled:source:completion:]
+0x189ab6cd8  __TEXT,__text  +[AXTripleClickHelpers _localValueForAccessibilityShortcutOption:]
+0x189ab7164  __TEXT,__text  _getHUAccessoryManagerClass
+0x189ab7238  __TEXT,__text  ___66+[AXTripleClickHelpers _localValueForAccessibilityShortcutOption:]_block_invoke
+0x189ab730c  __TEXT,__text  ___66+[AXTripleClickHelpers _localValueForAccessibilityShortcutOption:]_block_invoke_2
+0x189ab742c  __TEXT,__text  _getPASettingsClass
+0x189ab7500  __TEXT,__text  ___66+[AXTripleClickHelpers _localValueForAccessibilityShortcutOption:]_block_invoke_3
+0x189ab7510  __TEXT,__text  +[AXTripleClickHelpers _localValueForTripleClickOption:]
+0x189ab7514  __TEXT,__text  +[AXTripleClickHelpers valueForZoomTripleClickOption]
+0x189ab7534  __TEXT,__text  +[AXTripleClickHelpers stateForAccessibilityShortcutOption:]
+0x189ab7558  __TEXT,__text  +[AXTripleClickHelpers stateForTripleClickOption:]
+0x189ab755c  __TEXT,__text  +[AXTripleClickHelpers _npsKeyForTripleClickOption:]
+0x189ab7644  __TEXT,__text  +[AXTripleClickHelpers _npsValueForAccessibilityShortcutOption:]
+0x189ab77c8  __TEXT,__text  _getWatchControlSettingsClass
+0x189ab789c  __TEXT,__text  +[AXTripleClickHelpers _npsValueForTripleClickOption:]
+0x189ab78a0  __TEXT,__text  +[AXTripleClickHelpers _npsSyncTripleClickOption:]
+0x189ab79c8  __TEXT,__text  +[AXTripleClickHelpers isAccessibilityShortcutOptionComputed:]
+0x189ab79ec  __TEXT,__text  +[AXTripleClickHelpers _toggleVoiceOver]
+0x189ab7a4c  __TEXT,__text  +[AXTripleClickHelpers _promptToDisableBrightnessFilters:waitForResponse:data:]
+0x189ab7b90  __TEXT,__text  ___79+[AXTripleClickHelpers _promptToDisableBrightnessFilters:waitForResponse:data:]_block_invoke
+0x189ab7bdc  __TEXT,__text  +[AXTripleClickHelpers _displayFilterUIClient]
+0x189ab7c24  __TEXT,__text  ___46+[AXTripleClickHelpers _displayFilterUIClient]_block_invoke
+0x189ab7c64  __TEXT,__text  _getAXUIClientClass
+0x189ab7d38  __TEXT,__text  +[AXTripleClickHelpers _toggleSmartInvertColorsOffMainThread]
+0x189ab7d40  __TEXT,__text  +[AXTripleClickHelpers _toggleSmartInvertColorsOffMainThreadWithCompletion:]
+0x189ab7d50  __TEXT,__text  +[AXTripleClickHelpers _toggleSmartInvertColorsOffMainThreadWithSource:completion:]
+0x189ab7e74  __TEXT,__text  ___83+[AXTripleClickHelpers _toggleSmartInvertColorsOffMainThreadWithSource:completion:]_block_invoke
+0x189ab7ea4  __TEXT,__text  +[AXTripleClickHelpers _toggleClassicInvertColorsOffMainThread]
+0x189ab7eac  __TEXT,__text  +[AXTripleClickHelpers _toggleClassicInvertColorsOffMainThreadWithCompletion:]
+0x189ab7ebc  __TEXT,__text  +[AXTripleClickHelpers _toggleClassicInvertColorsOffMainThreadWithSource:completion:]
+0x189ab7f50  __TEXT,__text  +[AXTripleClickHelpers toggleColorFilter]
+0x189ab7f7c  __TEXT,__text  +[AXTripleClickHelpers toggleZoomOffMainThread]
+0x189ab7fe0  __TEXT,__text  +[AXTripleClickHelpers toggleLiveSpeech]
+0x189ab80ac  __TEXT,__text  +[AXTripleClickHelpers toggleHoverText]
+0x189ab8110  __TEXT,__text  +[AXTripleClickHelpers toggleHoverTextTyping]
+0x189ab8134  __TEXT,__text  +[AXTripleClickHelpers _toggleSpeakScreenForSceneID:]
+0x189ab8198  __TEXT,__text  _getSpeakThisServicesClass
+0x189ab826c  __TEXT,__text  +[AXTripleClickHelpers toggleSpeakScreen]
+0x189ab8274  __TEXT,__text  +[AXTripleClickHelpers toggleSpeakScreenUsingAppAtPoint:]
+0x189ab82dc  __TEXT,__text  +[AXTripleClickHelpers _disableSwitchControlWithHandler:]
+0x189ab83c4  __TEXT,__text  ___57+[AXTripleClickHelpers _disableSwitchControlWithHandler:]_block_invoke
+0x189ab8410  __TEXT,__text  +[AXTripleClickHelpers _toggleAssistiveTouch]
+0x189ab848c  __TEXT,__text  ___45+[AXTripleClickHelpers _toggleAssistiveTouch]_block_invoke
+0x189ab84b0  __TEXT,__text  +[AXTripleClickHelpers toggleReduceWhitePoint]
+0x189ab84d4  __TEXT,__text  +[AXTripleClickHelpers isReduceWhitePointEnabled]
+0x189ab84f4  __TEXT,__text  +[AXTripleClickHelpers toggleGuidedAccess]
+0x189ab85e8  __TEXT,__text  ___42+[AXTripleClickHelpers toggleGuidedAccess]_block_invoke
+0x189ab864c  __TEXT,__text  ___42+[AXTripleClickHelpers toggleGuidedAccess]_block_invoke_2
+0x189ab8688  __TEXT,__text  +[AXTripleClickHelpers toggleFullKeyboardAccess]
+0x189ab87d0  __TEXT,__text  ___48+[AXTripleClickHelpers toggleFullKeyboardAccess]_block_invoke
+0x189ab8810  __TEXT,__text  +[AXTripleClickHelpers attemptToToggleTwiceRemoteScreen]
+0x189ab88c0  __TEXT,__text  +[AXTripleClickHelpers attemptToEnterClarityBoard]
+0x189ab8a4c  __TEXT,__text  ___50+[AXTripleClickHelpers attemptToEnterClarityBoard]_block_invoke
+0x189ab8b34  __TEXT,__text  +[AXTripleClickHelpers attemptToPresentNearbyDeviceControlPicker]
+0x189ab8b70  __TEXT,__text  +[AXTripleClickHelpers togglePointerControl]
+0x189ab8b94  __TEXT,__text  +[AXTripleClickHelpers toggleHearingControlCenter]
+0x189ab8bd4  __TEXT,__text  +[AXTripleClickHelpers toggleOnDeviceEyeTracking]
+0x189ab8c28  __TEXT,__text  +[AXTripleClickHelpers attemptToToggleConversationBoost]
+0x189ab8c64  __TEXT,__text  +[AXTripleClickHelpers toggleAccessibilityShortcutOption:]
+0x189ab8c6c  __TEXT,__text  +[AXTripleClickHelpers toggleTripleClickOption:]
+0x189ab8c70  __TEXT,__text  +[AXTripleClickHelpers toggleAccessibilityShortcutOption:fromSource:]
+0x189ab8c94  __TEXT,__text  +[AXTripleClickHelpers toggleTripleClickOption:fromSource:]
+0x189ab8c98  __TEXT,__text  +[AXTripleClickHelpers _handleToggleTripleClickTriggeredFromAppIntent:]
+0x189ab8ca0  __TEXT,__text  +[AXTripleClickHelpers toggleAccessibilityShortcutOptionFromAppIntent:completion:]
+0x189ab8cac  __TEXT,__text  +[AXTripleClickHelpers toggleAccessibilityShortcutOptionFromControlCenter:completion:]
+0x189ab8cb8  __TEXT,__text  +[AXTripleClickHelpers toggleAccessibilityShortcutOptionFromSiri:completion:]
+0x189ab8cc4  __TEXT,__text  +[AXTripleClickHelpers _toggleAccessibilityShortcutOption:completion:invertColorsSource:]
+0x189ab8e34  __TEXT,__text  +[AXTripleClickHelpers _handleToggleTripleClickTriggeredFromAppIntent:completion:]
+0x189ab8e94  __TEXT,__text  +[AXTripleClickHelpers _localToggleAccessibilityShortcutOption:completion:]
+0x189ab900c  __TEXT,__text  +[AXTripleClickHelpers _localToggleAccessibilityShortcutOption:]
+0x189ab9784  __TEXT,__text  _AXGuestPassManager_Soft
+0x189ab98bc  __TEXT,__text  ___64+[AXTripleClickHelpers _localToggleAccessibilityShortcutOption:]_block_invoke
+0x189ab9968  __TEXT,__text  ___64+[AXTripleClickHelpers _localToggleAccessibilityShortcutOption:]_block_invoke.688
+0x189ab99d8  __TEXT,__text  +[AXTripleClickHelpers _localToggleTripleClickOption:]
+0x189ab99dc  __TEXT,__text  +[AXTripleClickHelpers _localToggleTripleClickOption:completion:]
+0x189ab99e0  __TEXT,__text  +[AXTripleClickHelpers switchControlRendersDeviceUnusable]
+0x189ab99ec  __TEXT,__text  +[AXTripleClickHelpers setSwitchControlRendersDeviceUnusable:]
+0x189ab99f8  __TEXT,__text  +[AXTripleClickHelpers switchControlHasScreenSwitch]
+0x189ab9a04  __TEXT,__text  +[AXTripleClickHelpers setSwitchControlHasScreenSwitch:]
+0x189ab9a10  __TEXT,__text  +[AXTripleClickHelpers motionCuesShowBanner]
+0x189ab9a1c  __TEXT,__text  +[AXTripleClickHelpers setMotionCuesShowBanner:]
+0x189ab9a28  __TEXT,__text  +[AXTripleClickHelpers _toggleSwitchOverOffMainThread]
+0x189ab9a90  __TEXT,__text  +[AXTripleClickHelpers _toggleLocalizationCaptionPanel]
+0x189ab9af4  __TEXT,__text  +[AXTripleClickHelpers _toggleSwitchOver]
+0x189ab9b04  __TEXT,__text  +[AXTripleClickHelpers _toggleWatchControl]
+0x189ab9b08  __TEXT,__text  +[AXTripleClickHelpers _npsToggleTripleClickOption:]
+0x189ab9d50  __TEXT,__text  +[AXTripleClickHelpers allTripleClickOptions]
+0x189ab9d58  __TEXT,__text  +[AXTripleClickHelpers allTripleClickOptionsForPlatform:]
+0x189ab9d8c  __TEXT,__text  +[AXTripleClickHelpers _allAvailableFeaturesIOS]
+0x189ab9d98  __TEXT,__text  +[AXTripleClickHelpers _allAvailableFeaturesWatchOS]
+0x189ab9da4  __TEXT,__text  +[AXTripleClickHelpers _availableFeatures]
+0x189ab9dc0  __TEXT,__text  +[AXTripleClickHelpers _isOptionHiddenByClarityBoard:]
+0x189ab9e48  __TEXT,__text  ___54+[AXTripleClickHelpers _isOptionHiddenByClarityBoard:]_block_invoke
+0x189ab9e84  __TEXT,__text  +[AXTripleClickHelpers _shouldShowFeatureInShortcutsControlCenterModule:includeGuidedAccess:]
+0x189ab9f44  __TEXT,__text  +[AXTripleClickHelpers tripleClickOptionsForAccessibilityShortcutControlCenterModuleIncludingGuidedAccess:]
+0x189aba008  __TEXT,__text  ___107+[AXTripleClickHelpers tripleClickOptionsForAccessibilityShortcutControlCenterModuleIncludingGuidedAccess:]_block_invoke
+0x189aba07c  __TEXT,__text  +[AXTripleClickHelpers _isAccessibilityAppIntentsProcess]
+0x189aba0dc  __TEXT,__text  +[AXTripleClickHelpers _loadAuxiliaryBundleIfNeeded]
+0x189aba104  __TEXT,__text  ___52+[AXTripleClickHelpers _loadAuxiliaryBundleIfNeeded]_block_invoke
+0x189aba110  __TEXT,__text  ___getAXUILocalizedStringForKeyWithTableSymbolLoc_block_invoke
+0x189aba160  __TEXT,__text  _AccessibilityUIUtilitiesLibrary
+0x189aba2bc  __TEXT,__text  ___AccessibilityUIUtilitiesLibraryCore_block_invoke
+0x189aba330  __TEXT,__text  ___getAXUIAssistiveTouchStringForNameSymbolLoc_block_invoke
+0x189aba380  __TEXT,__text  ___getHUComfortSoundsSettingsClass_block_invoke
+0x189aba448  __TEXT,__text  ___getHUAccessoryManagerClass_block_invoke
+0x189aba510  __TEXT,__text  ___getPASettingsClass_block_invoke
+0x189aba700  __TEXT,__text  ___PersonalAudioLibraryCore_block_invoke
+0x189aba774  __TEXT,__text  ___WatchControlSettingsLibraryCore_block_invoke
+0x189aba7e8  __TEXT,__text  ___getWatchControlSettingsClass_block_invoke
+0x189aba9d8  __TEXT,__text  ___getSpeakThisServicesClass_block_invoke
+0x189ababc8  __TEXT,__text  ___SpeakThisServicesLibraryCore_block_invoke
+0x189abac3c  __TEXT,__text  ___getAXGuestPassManagerSymbolLoc_block_invoke
+0x189abadc8  __TEXT,__text  ___AXGuestPassServicesLibraryCore_block_invoke
+0x189abae3c  __TEXT,__text  +[AXEventHandInfoRepresentation supportsSecureCoding]
+0x189abae44  __TEXT,__text  -[AXEventHandInfoRepresentation copyWithZone:]
+0x189abaf98  __TEXT,__text  -[AXEventHandInfoRepresentation initWithCoder:]
+0x189abb1b4  __TEXT,__text  -[AXEventHandInfoRepresentation encodeWithCoder:]
+0x189abb330  __TEXT,__text  -[AXEventHandInfoRepresentation accessibilityEventRepresentationTabularDescription]
+0x189abb524  __TEXT,__text  -[AXEventHandInfoRepresentation isStylus]
+0x189abb5b4  __TEXT,__text  -[AXEventHandInfoRepresentation description]
+0x189abb6e0  __TEXT,__text  -[AXEventHandInfoRepresentation pathsIncludingMayBeginEvents]
+0x189abb708  __TEXT,__text  -[AXEventHandInfoRepresentation paths]
+0x189abb774  __TEXT,__text  ___38-[AXEventHandInfoRepresentation paths]_block_invoke
+0x189abb798  __TEXT,__text  -[AXEventHandInfoRepresentation eventType]
+0x189abb7a0  __TEXT,__text  -[AXEventHandInfoRepresentation setEventType:]
+0x189abb7a8  __TEXT,__text  -[AXEventHandInfoRepresentation initialFingerCount]
+0x189abb7b0  __TEXT,__text  -[AXEventHandInfoRepresentation setInitialFingerCount:]
+0x189abb7b8  __TEXT,__text  -[AXEventHandInfoRepresentation currentFingerCount]
+0x189abb7c0  __TEXT,__text  -[AXEventHandInfoRepresentation setCurrentFingerCount:]
+0x189abb7c8  __TEXT,__text  -[AXEventHandInfoRepresentation lifetimeFingerCount]
+0x189abb7d0  __TEXT,__text  -[AXEventHandInfoRepresentation setLifetimeFingerCount:]
+0x189abb7d8  __TEXT,__text  -[AXEventHandInfoRepresentation setPaths:]
+0x189abb7e4  __TEXT,__text  -[AXEventHandInfoRepresentation setPathsIncludingMayBeginEvents:]
+0x189abb7f0  __TEXT,__text  -[AXEventHandInfoRepresentation systemGesturePossible]
+0x189abb7f8  __TEXT,__text  -[AXEventHandInfoRepresentation setSystemGesturePossible:]
+0x189abb800  __TEXT,__text  -[AXEventHandInfoRepresentation handIdentity]
+0x189abb808  __TEXT,__text  -[AXEventHandInfoRepresentation setHandIdentity:]
+0x189abb810  __TEXT,__text  -[AXEventHandInfoRepresentation handIndex]
+0x189abb818  __TEXT,__text  -[AXEventHandInfoRepresentation setHandIndex:]
+0x189abb820  __TEXT,__text  -[AXEventHandInfoRepresentation handPosition]
+0x189abb828  __TEXT,__text  -[AXEventHandInfoRepresentation setHandPosition:]
+0x189abb830  __TEXT,__text  -[AXEventHandInfoRepresentation handEventMask]
+0x189abb838  __TEXT,__text  -[AXEventHandInfoRepresentation setHandEventMask:]
+0x189abb840  __TEXT,__text  -[AXEventHandInfoRepresentation additionalHandEventFlagsForGeneratedEvents]
+0x189abb848  __TEXT,__text  -[AXEventHandInfoRepresentation setAdditionalHandEventFlagsForGeneratedEvents:]
+0x189abb850  __TEXT,__text  -[AXEventHandInfoRepresentation length]
+0x189abb858  __TEXT,__text  -[AXEventHandInfoRepresentation encodePathsForCompatibility]
+0x189abb860  __TEXT,__text  -[AXEventHandInfoRepresentation setEncodePathsForCompatibility:]
+0x189abb868  __TEXT,__text  -[AXEventHandInfoRepresentation swipe]
+0x189abb870  __TEXT,__text  -[AXEventHandInfoRepresentation setSwipe:]
+0x189abb878  __TEXT,__text  -[AXEventHandInfoRepresentation .cxx_destruct]
+0x189abba38  __TEXT,__text  -[AXSSKeyChord(Speaking) accessibilitySpeakableDisplayValue]
+0x189abba40  __TEXT,__text  -[AXSSKeyChord(Speaking) accessibilitySpeakableDisplayValueWithStyle:]
+0x189abbafc  __TEXT,__text  -[AXSSKeyChord(Speaking) _accessibilitySpeakableDisplayValueWithStyle:isUSKeyboard:]
+0x189abbb68  __TEXT,__text  -[AXSSKeyChord(Speaking) fkaSpeakableDisplayValue]
+0x189abbb70  __TEXT,__text  -[AXIPCMessage initWithKey:]
+0x189abbb78  __TEXT,__text  -[AXIPCMessage initWithKey:payload:]
+0x189abbc3c  __TEXT,__text  -[AXIPCMessage initWithKey:payload:keyDebugInfo:]
+0x189abbc40  __TEXT,__text  +[AXIPCMessage archivedMessageFromData:]
+0x189abbf7c  __TEXT,__text  -[AXIPCMessage initWithCoder:]
+0x189abc178  __TEXT,__text  -[AXIPCMessage encodeWithCoder:]
+0x189abc244  __TEXT,__text  +[AXIPCMessage supportsSecureCoding]
+0x189abc24c  __TEXT,__text  -[AXIPCMessage senderBundleId]
+0x189abc3b8  __TEXT,__text  -[AXIPCMessage description]
+0x189abc4a8  __TEXT,__text  -[AXIPCMessage setClientPort:]
+0x189abc594  __TEXT,__text  -[AXIPCMessage setKey:]
+0x189abc59c  __TEXT,__text  -[AXIPCMessage payload]
+0x189abc5a4  __TEXT,__text  -[AXIPCMessage clientPort]
+0x189abc5ac  __TEXT,__text  -[AXIPCMessage auditToken]
+0x189abc5bc  __TEXT,__text  -[AXIPCMessage setAuditToken:]
+0x189abc5cc  __TEXT,__text  -[AXIPCMessage uniqueID]
+0x189abc5d4  __TEXT,__text  -[AXIPCMessage setUniqueID:]
+0x189abc5dc  __TEXT,__text  -[AXIPCMessage setProcessedMessage:]
+0x189abc944  __TEXT,__text  __handleMultiplerChanged
+0x189abc9b8  __TEXT,__text  -[AXTypingPrediction description]
+0x189abca5c  __TEXT,__text  -[AXTypingPrediction fullWord]
+0x189abca64  __TEXT,__text  -[AXTypingPrediction setFullWord:]
+0x189abca6c  __TEXT,__text  -[AXTypingPrediction textToInsert]
+0x189abca74  __TEXT,__text  -[AXTypingPrediction setTextToInsert:]
+0x189abca7c  __TEXT,__text  -[AXTypingPrediction prefix]
+0x189abca84  __TEXT,__text  -[AXTypingPrediction setPrefix:]
+0x189abca8c  __TEXT,__text  -[AXTypingPrediction rangeToReplace]
+0x189abca98  __TEXT,__text  -[AXTypingPrediction setRangeToReplace:]
+0x189abcaa0  __TEXT,__text  -[AXTypingPrediction probability]
+0x189abcaa8  __TEXT,__text  -[AXTypingPrediction setProbability:]
+0x189abcab0  __TEXT,__text  -[AXTypingPrediction .cxx_destruct]
+0x189abcaf4  __TEXT,__text  -[AXPredictiveTypingModel init]
+0x189abcbbc  __TEXT,__text  -[AXPredictiveTypingModel dealloc]
+0x189abcc08  __TEXT,__text  -[AXPredictiveTypingModel enumerateTokensForText:usingBlock:]
+0x189abcd18  __TEXT,__text  -[AXPredictiveTypingModel _newContextForText:includeLastToken:length:]
+0x189abce50  __TEXT,__text  ___70-[AXPredictiveTypingModel _newContextForText:includeLastToken:length:]_block_invoke
+0x189abcf0c  __TEXT,__text  -[AXPredictiveTypingModel _completionPredictionsForPrefix:entireText:desiredNumber:]
+0x189abd09c  __TEXT,__text  ___84-[AXPredictiveTypingModel _completionPredictionsForPrefix:entireText:desiredNumber:]_block_invoke
+0x189abd1c8  __TEXT,__text  ___84-[AXPredictiveTypingModel _completionPredictionsForPrefix:entireText:desiredNumber:]_block_invoke_2
+0x189abd26c  __TEXT,__text  -[AXPredictiveTypingModel _lastPartialWordForText:orEndOfSentence:]
+0x189abd3ec  __TEXT,__text  ___67-[AXPredictiveTypingModel _lastPartialWordForText:orEndOfSentence:]_block_invoke
+0x189abd4f0  __TEXT,__text  -[AXPredictiveTypingModel _nextWordPredictionsForText:desiredNumber:]
+0x189abd620  __TEXT,__text  ___69-[AXPredictiveTypingModel _nextWordPredictionsForText:desiredNumber:]_block_invoke
+0x189abd788  __TEXT,__text  -[AXPredictiveTypingModel predictionsForText:desiredNumber:]
+0x189abd844  __TEXT,__text  -[AXPredictiveTypingModel predictionsForText:]
+0x189abd84c  __TEXT,__text  +[AXCustomizableMouse supportsSecureCoding]
+0x189abd854  __TEXT,__text  -[AXCustomizableMouse initWithCoder:]
+0x189abdbb8  __TEXT,__text  -[AXCustomizableMouse encodeWithCoder:]
+0x189abdd34  __TEXT,__text  -[AXCustomizableMouse description]
+0x189abddb0  __TEXT,__text  +[AXCustomizableMouse deserialize:]
+0x189abe078  __TEXT,__text  +[AXCustomizableMouse serialize:]
+0x189abe1c8  __TEXT,__text  +[AXCustomizableMouse mouseForHIDDevice:]
+0x189abe2d8  __TEXT,__text  +[AXCustomizableMouse mouseForHIDServiceClient:]
+0x189abe39c  __TEXT,__text  +[AXCustomizableMouse _isGameControllerForUsagePairs:]
+0x189abe55c  __TEXT,__text  +[AXCustomizableMouse _existingMouseForIdentifier:vendorId:productId:]
+0x189abe748  __TEXT,__text  ___70+[AXCustomizableMouse _existingMouseForIdentifier:vendorId:productId:]_block_invoke
+0x189abe7bc  __TEXT,__text  ___70+[AXCustomizableMouse _existingMouseForIdentifier:vendorId:productId:]_block_invoke_2
+0x189abe844  __TEXT,__text  +[AXCustomizableMouse _newOrExistingMouseForIdentifier:name:vendorId:productId:]
+0x189abe940  __TEXT,__text  -[AXCustomizableMouse initWithIdentifier:name:vendorId:productId:]
+0x189abea60  __TEXT,__text  -[AXCustomizableMouse setDefaultActionForButtonNumber:]
+0x189abeb50  __TEXT,__text  -[AXCustomizableMouse setCustomAction:forButtonNumber:]
+0x189abec2c  __TEXT,__text  -[AXCustomizableMouse hasCustomActions]
+0x189abec8c  __TEXT,__text  -[AXCustomizableMouse removeAllCustomActions]
+0x189abed10  __TEXT,__text  -[AXCustomizableMouse customActionsRequireAssistiveTouch]
+0x189abef30  __TEXT,__text  -[AXCustomizableMouse buttonsWithCustomActions]
+0x189abefb0  __TEXT,__text  -[AXCustomizableMouse customActionForButtonNumber:]
+0x189abf020  __TEXT,__text  -[AXCustomizableMouse hash]
+0x189abf07c  __TEXT,__text  -[AXCustomizableMouse isEqual:]
+0x189abf0e0  __TEXT,__text  -[AXCustomizableMouse isEqualToMouse:]
+0x189abf170  __TEXT,__text  -[AXCustomizableMouse isEqualToIdentifier:vendorId:productId:]
+0x189abf204  __TEXT,__text  -[AXCustomizableMouse debugDescription]
+0x189abf2f4  __TEXT,__text  -[AXCustomizableMouse _shouldUseAXAction]
+0x189abf320  __TEXT,__text  -[AXCustomizableMouse name]
+0x189abf328  __TEXT,__text  -[AXCustomizableMouse identifier]
+0x189abf330  __TEXT,__text  -[AXCustomizableMouse vendorId]
+0x189abf338  __TEXT,__text  -[AXCustomizableMouse productId]
+0x189abf340  __TEXT,__text  -[AXCustomizableMouse isGameController]
+0x189abf348  __TEXT,__text  -[AXCustomizableMouse setIsGameController:]
+0x189abf350  __TEXT,__text  -[AXCustomizableMouse buttonMap]
+0x189abf358  __TEXT,__text  -[AXCustomizableMouse setButtonMap:]
+0x189abf364  __TEXT,__text  -[AXCustomizableMouse accessibilityActions]
+0x189abf36c  __TEXT,__text  -[AXCustomizableMouse setAccessibilityActions:]
+0x189abf378  __TEXT,__text  -[AXCustomizableMouse noneActionButtonNumbers]
+0x189abf380  __TEXT,__text  -[AXCustomizableMouse setNoneActionButtonNumbers:]
+0x189abf38c  __TEXT,__text  -[AXCustomizableMouse .cxx_destruct]
+0x189abf3e8  __TEXT,__text  -[AXEventTapManagerFilterEvents wantsDigitizerEvents]
+0x189abf3f0  __TEXT,__text  -[AXEventTapManagerFilterEvents setWantsDigitizerEvents:]
+0x189abf3f8  __TEXT,__text  -[AXEventTapManagerFilterEvents wantsKeyboardEvents]
+0x189abf400  __TEXT,__text  -[AXEventTapManagerFilterEvents setWantsKeyboardEvents:]
+0x189abf408  __TEXT,__text  -[AXEventTapManagerFilterEvents wantsATVRemoteEvents]
+0x189abf410  __TEXT,__text  -[AXEventTapManagerFilterEvents setWantsATVRemoteEvents:]
+0x189abf418  __TEXT,__text  -[AXEventTapManagerFilterEvents wantsLisaEvents]
+0x189abf420  __TEXT,__text  -[AXEventTapManagerFilterEvents setWantsLisaEvents:]
+0x189abf428  __TEXT,__text  -[AXEventTapManagerFilterEvents wantsMouseEvents]
+0x189abf430  __TEXT,__text  -[AXEventTapManagerFilterEvents setWantsMouseEvents:]
+0x189abf438  __TEXT,__text  -[AXEventTapManagerFilterEvents wantsAccessibilityEvents]
+0x189abf440  __TEXT,__text  -[AXEventTapManagerFilterEvents setWantsAccessibilityEvents:]
+0x189abf448  __TEXT,__text  -[AXEventTapManagerFilterEvents wantsVolumeButtonEvents]
+0x189abf450  __TEXT,__text  -[AXEventTapManagerFilterEvents setWantsVolumeButtonEvents:]
+0x189abf458  __TEXT,__text  -[AXEventTapManagerFilterEvents wantsStylusEvents]
+0x189abf460  __TEXT,__text  -[AXEventTapManagerFilterEvents setWantsStylusEvents:]
+0x189abf468  __TEXT,__text  -[AXEventTapManagerFilterEvents wantsCameraControlEvents]
+0x189abf470  __TEXT,__text  -[AXEventTapManagerFilterEvents setWantsCameraControlEvents:]
+0x189abf478  __TEXT,__text  -[AXHIDServiceCacheObserver serviceLearned]
+0x189abf480  __TEXT,__text  -[AXHIDServiceCacheObserver setServiceLearned:]
+0x189abf488  __TEXT,__text  -[AXHIDServiceCacheObserver serviceRemoved]
+0x189abf490  __TEXT,__text  -[AXHIDServiceCacheObserver setServiceRemoved:]
+0x189abf498  __TEXT,__text  -[AXHIDServiceCacheObserver .cxx_destruct]
+0x189abf4d0  __TEXT,__text  -[AXEventTapPair dealloc]
+0x189abf524  __TEXT,__text  -[AXEventTapPair description]
+0x189abf59c  __TEXT,__text  -[AXEventTapPair handler]
+0x189abf5a4  __TEXT,__text  -[AXEventTapPair setHandler:]
+0x189abf5ac  __TEXT,__text  -[AXEventTapPair identifier]
+0x189abf5b4  __TEXT,__text  -[AXEventTapPair setIdentifier:]
+0x189abf5bc  __TEXT,__text  -[AXEventTapPair priority]
+0x189abf5c4  __TEXT,__text  -[AXEventTapPair setPriority:]
+0x189abf5cc  __TEXT,__text  -[AXEventTapPair type]
+0x189abf5d4  __TEXT,__text  -[AXEventTapPair setType:]
+0x189abf5dc  __TEXT,__text  -[AXEventTapPair systemClient]
+0x189abf5e4  __TEXT,__text  -[AXEventTapPair setSystemClient:]
+0x189abf5ec  __TEXT,__text  -[AXEventTapPair matchingServiceHandler]
+0x189abf5f4  __TEXT,__text  -[AXEventTapPair setMatchingServiceHandler:]
+0x189abf5fc  __TEXT,__text  -[AXEventTapPair failedToHandleInTime]
+0x189abf604  __TEXT,__text  -[AXEventTapPair setFailedToHandleInTime:]
+0x189abf60c  __TEXT,__text  -[AXEventTapPair shouldSeparateHIDStreamsBySenderID]
+0x189abf614  __TEXT,__text  -[AXEventTapPair setShouldSeparateHIDStreamsBySenderID:]
+0x189abf61c  __TEXT,__text  -[AXEventTapPair .cxx_destruct]
+0x189abf66c  __TEXT,__text  +[AXEventTapManager sharedManager]
+0x189abf6b4  __TEXT,__text  ___34+[AXEventTapManager sharedManager]_block_invoke
+0x189abf6e4  __TEXT,__text  -[AXEventTapManager init]
+0x189abf900  __TEXT,__text  ___25-[AXEventTapManager init]_block_invoke
+0x189abf94c  __TEXT,__text  ___25-[AXEventTapManager init]_block_invoke_2
+0x189abf9a4  __TEXT,__text  ___25-[AXEventTapManager init]_block_invoke_3
+0x189abf9ac  __TEXT,__text  ___25-[AXEventTapManager init]_block_invoke_4
+0x189abf9b4  __TEXT,__text  -[AXEventTapManager setIgnoreTouchEventsForDisplayTransition:]
+0x189abfaa0  __TEXT,__text  ___62-[AXEventTapManager setIgnoreTouchEventsForDisplayTransition:]_block_invoke
+0x189abfb10  __TEXT,__text  -[AXEventTapManager ignoreTouchEventsForDisplayTransition]
+0x189abfb18  __TEXT,__text  -[AXEventTapManager dealloc]
+0x189abfd7c  __TEXT,__text  -[AXEventTapManager description]
+0x189abfee0  __TEXT,__text  -[AXEventTapManager _setHIDEventTapCallback:]
+0x189abfefc  __TEXT,__text  -[AXEventTapManager _copyCurrentEventTapPairs]
+0x189ac0004  __TEXT,__text  ___46-[AXEventTapManager _copyCurrentEventTapPairs]_block_invoke
+0x189ac0088  __TEXT,__text  -[AXEventTapManager _enumerateEventTapPairsUsingBlock:]
+0x189ac032c  __TEXT,__text  ___55-[AXEventTapManager _enumerateEventTapPairsUsingBlock:]_block_invoke
+0x189ac0378  __TEXT,__text  __axEventTapHIDCallback
+0x189ac03e4  __TEXT,__text  -[AXEventTapManager _findServiceForSenderProperties:displayUUID:]
+0x189ac07c4  __TEXT,__text  -[AXEventTapManager sendHIDSystemEvent:senderID:]
+0x189ac07cc  __TEXT,__text  -[AXEventTapManager sendHIDSystemEvent:senderID:displayID:]
+0x189ac07dc  __TEXT,__text  -[AXEventTapManager sendHIDSystemEvent:repostCreatorHIDEvent:senderID:]
+0x189ac07e4  __TEXT,__text  -[AXEventTapManager sendHIDSystemEvent:repostCreatorHIDEvent:senderID:displayID:]
+0x189ac0c70  __TEXT,__text  -[AXEventTapManager excludeEventsFromSenderID:fromHitTestingToContextIDs:]
+0x189ac0c74  __TEXT,__text  -[AXEventTapManager _excludeEventsFromSenderID:fromHitTestingToContextIDs:]
+0x189ac107c  __TEXT,__text  ___75-[AXEventTapManager _excludeEventsFromSenderID:fromHitTestingToContextIDs:]_block_invoke
+0x189ac1088  __TEXT,__text  ___75-[AXEventTapManager _excludeEventsFromSenderID:fromHitTestingToContextIDs:]_block_invoke_2
+0x189ac10d4  __TEXT,__text  -[AXEventTapManager sendEvent:afterTap:useGSEvent:namedTaps:options:]
+0x189ac1364  __TEXT,__text  -[AXEventTapManager _handleTestIOHIDEvent:]
+0x189ac14e0  __TEXT,__text  -[AXEventTapManager _processHIDEvent:taskPort:bundleId:]
+0x189ac16c0  __TEXT,__text  ___56-[AXEventTapManager _processHIDEvent:taskPort:bundleId:]_block_invoke
+0x189ac16e4  __TEXT,__text  -[AXEventTapManager _reorderEventTaps]
+0x189ac172c  __TEXT,__text  ___38-[AXEventTapManager _reorderEventTaps]_block_invoke
+0x189ac1784  __TEXT,__text  -[AXEventTapManager setFailedToProcessInTimeCallback:callback:]
+0x189ac1854  __TEXT,__text  ___63-[AXEventTapManager setFailedToProcessInTimeCallback:callback:]_block_invoke
+0x189ac18cc  __TEXT,__text  -[AXEventTapManager setEventTapPriority:priority:]
+0x189ac198c  __TEXT,__text  ___50-[AXEventTapManager setEventTapPriority:priority:]_block_invoke
+0x189ac1a08  __TEXT,__text  -[AXEventTapManager _accessibilityShouldIgnoreHIDServiceForContinuity:]
+0x189ac1bb4  __TEXT,__text  -[AXEventTapManager _isCarPlayServiceCached:]
+0x189ac1c80  __TEXT,__text  -[AXEventTapManager _warmCarPlayVerdictAsynchronouslyForService:]
+0x189ac1d38  __TEXT,__text  ___65-[AXEventTapManager _warmCarPlayVerdictAsynchronouslyForService:]_block_invoke
+0x189ac1d44  __TEXT,__text  -[AXEventTapManager _cacheCarPlayVerdictForService:]
+0x189ac2064  __TEXT,__text  -[AXEventTapManager _removeCachedCarPlayVerdictForRegistryID:]
+0x189ac21a4  __TEXT,__text  -[AXEventTapManager _passivelyPeakAtHIDEventWithTarget:tapPair:sender:event:axEventRep:didHandle:]
+0x189ac21a8  __TEXT,__text  -[AXEventTapManager _setEventTapPriority:priority:]
+0x189ac22b4  __TEXT,__text  __ioHIDEventFilterCallback
+0x189ac2618  __TEXT,__text  __ioHIDEventCallback
+0x189ac261c  __TEXT,__text  -[AXEventTapManager _installEventTap:skipDeviceMatching:filterEvents:]
+0x189ac271c  __TEXT,__text  -[AXEventTapManager _hidFilterListForPair:filterEvents:]
+0x189ac34e4  __TEXT,__text  -[AXEventTapManager _installHIDFilter:skipDeviceMatching:filterEvents:]
+0x189ac3860  __TEXT,__text  __axServiceCacheObserversLearnService
+0x189ac39d4  __TEXT,__text  ___71-[AXEventTapManager _installHIDFilter:skipDeviceMatching:filterEvents:]_block_invoke
+0x189ac3a1c  __TEXT,__text  -[AXEventTapManager _installSystemEventTap:]
+0x189ac3ac4  __TEXT,__text  -[AXEventTapManager installEventTap:identifier:type:]
+0x189ac3b5c  __TEXT,__text  -[AXEventTapManager installEventTap:identifier:type:skipDeviceMatching:filterEvents:matchingServiceHandler:]
+0x189ac3b8c  __TEXT,__text  -[AXEventTapManager installEventTap:identifier:type:skipDeviceMatching:shouldSeparateHIDStreamsBySenderID:filterEvents:matchingServiceHandler:]
+0x189ac3ce8  __TEXT,__text  -[AXEventTapManager installKeyboardEventTap:identifier:matchingServiceHandler:]
+0x189ac3d94  __TEXT,__text  -[AXEventTapManager removeEventTap:]
+0x189ac3e9c  __TEXT,__text  ___36-[AXEventTapManager removeEventTap:]_block_invoke
+0x189ac3f14  __TEXT,__text  -[AXEventTapManager _removeHIDEventTapFilter:]
+0x189ac402c  __TEXT,__text  -[AXEventTapManager runMatchingServiceHandlerForEventTap:]
+0x189ac4170  __TEXT,__text  -[AXEventTapManager _runMatchingServiceHandler:]
+0x189ac42f8  __TEXT,__text  -[AXEventTapManager installationGSCallback]
+0x189ac4300  __TEXT,__text  -[AXEventTapManager setInstallationGSCallback:]
+0x189ac4308  __TEXT,__text  -[AXEventTapManager installationHIDCallback]
+0x189ac4310  __TEXT,__text  -[AXEventTapManager setInstallationHIDCallback:]
+0x189ac4318  __TEXT,__text  -[AXEventTapManager installationEventRepPost]
+0x189ac4320  __TEXT,__text  -[AXEventTapManager setInstallationEventRepPost:]
+0x189ac4328  __TEXT,__text  -[AXEventTapManager ignoreEventsForContinuitySession]
+0x189ac4330  __TEXT,__text  -[AXEventTapManager setIgnoreEventsForContinuitySession:]
+0x189ac4338  __TEXT,__text  -[AXEventTapManager disabledIDMappingRegistry]
+0x189ac4340  __TEXT,__text  -[AXEventTapManager setDisabledIDMappingRegistry:]
+0x189ac434c  __TEXT,__text  -[AXEventTapManager carPlayServiceVerdictCache]
+0x189ac4354  __TEXT,__text  -[AXEventTapManager setCarPlayServiceVerdictCache:]
+0x189ac4360  __TEXT,__text  -[AXEventTapManager serviceCacheObservers]
+0x189ac4368  __TEXT,__text  -[AXEventTapManager setServiceCacheObservers:]
+0x189ac4370  __TEXT,__text  -[AXEventTapManager virtualHIDServices]
+0x189ac4378  __TEXT,__text  -[AXEventTapManager setVirtualHIDServices:]
+0x189ac4384  __TEXT,__text  -[AXEventTapManager excludedContextIDsBySenderID]
+0x189ac438c  __TEXT,__text  -[AXEventTapManager setExcludedContextIDsBySenderID:]
+0x189ac4398  __TEXT,__text  -[AXEventTapManager bksExcludeEventServices]
+0x189ac43a0  __TEXT,__text  -[AXEventTapManager setBksExcludeEventServices:]
+0x189ac43ac  __TEXT,__text  -[AXEventTapManager .cxx_destruct]
+0x189ac4474  __TEXT,__text  ____ioHIDEventFilterCallback_block_invoke
+0x189ac4544  __TEXT,__text  __axServiceCacheRemovedCallback
+0x189ac46b8  __TEXT,__text  -[NSNumber(AXMIDIExtras) MIDIObject]
+0x189ac46d0  __TEXT,__text  -[NSNumber(AXMIDIExtras) MIDIDevice]
+0x189ac46e8  __TEXT,__text  -[NSNumber(AXMIDIExtras) MIDIEntity]
+0x189ac4700  __TEXT,__text  -[NSNumber(AXMIDIExtras) MIDIEndpoint]
+0x189ac4718  __TEXT,__text  +[AXSBImageExplorerData supportsSecureCoding]
+0x189ac4720  __TEXT,__text  -[AXSBImageExplorerData initWithCoder:]
+0x189ac4890  __TEXT,__text  -[AXSBImageExplorerData encodeWithCoder:]
+0x189ac4970  __TEXT,__text  -[AXSBImageExplorerData description]
+0x189ac4a54  __TEXT,__text  -[AXSBImageExplorerData hostAppBundleID]
+0x189ac4a5c  __TEXT,__text  -[AXSBImageExplorerData setHostAppBundleID:]
+0x189ac4a68  __TEXT,__text  -[AXSBImageExplorerData hostAppName]
+0x189ac4a70  __TEXT,__text  -[AXSBImageExplorerData setHostAppName:]
+0x189ac4a7c  __TEXT,__text  -[AXSBImageExplorerData axLabel]
+0x189ac4a84  __TEXT,__text  -[AXSBImageExplorerData setAxLabel:]
+0x189ac4a90  __TEXT,__text  -[AXSBImageExplorerData customContent]
+0x189ac4a98  __TEXT,__text  -[AXSBImageExplorerData setCustomContent:]
+0x189ac4aa4  __TEXT,__text  -[AXSBImageExplorerData .cxx_destruct]
+0x189ac4e44  __TEXT,__text  ___29+[AXSpringBoardServer server]_block_invoke
+0x189ac4eb0  __TEXT,__text  ___29+[AXSpringBoardServer server]_block_invoke.544
+0x189ac4edc  __TEXT,__text  -[AXSpringBoardServer init]
+0x189ac4fa0  __TEXT,__text  -[AXSpringBoardServer _serviceName]
+0x189ac4fac  __TEXT,__text  -[AXSpringBoardServer _handleReplyResult:]
+0x189ac51c0  __TEXT,__text  ___42-[AXSpringBoardServer _handleReplyResult:]_block_invoke
+0x189ac5218  __TEXT,__text  -[AXSpringBoardServer _handleMediaPlayingResult:]
+0x189ac5450  __TEXT,__text  -[AXSpringBoardServer _handleReachabilityResult:]
+0x189ac55b0  __TEXT,__text  -[AXSpringBoardServer _shouldValidateEntitlements]
+0x189ac55b8  __TEXT,__text  -[AXSpringBoardServer _didConnectToServer]
+0x189ac56e4  __TEXT,__text  -[AXSpringBoardServer _willClearServer]
+0x189ac5744  __TEXT,__text  -[AXSpringBoardServer _wasDisconnectedFromClient]
+0x189ac585c  __TEXT,__text  ___49-[AXSpringBoardServer _wasDisconnectedFromClient]_block_invoke
+0x189ac5868  __TEXT,__text  -[AXSpringBoardServer _didConnectToClient]
+0x189ac58ac  __TEXT,__text  -[AXSpringBoardServer takeScreenshot]
+0x189ac5904  __TEXT,__text  -[AXSpringBoardServer openAssistiveTouchCustomGestureCreation]
+0x189ac595c  __TEXT,__text  -[AXSpringBoardServer openSCATCustomGestureCreation]
+0x189ac59b4  __TEXT,__text  -[AXSpringBoardServer openCommandAndControlSettings]
+0x189ac5a0c  __TEXT,__text  -[AXSpringBoardServer openCommandAndControlCommands]
+0x189ac5a64  __TEXT,__text  -[AXSpringBoardServer openCommandAndControlVocabulary]
+0x189ac5abc  __TEXT,__text  -[AXSpringBoardServer setVolume:]
+0x189ac5ac0  __TEXT,__text  -[AXSpringBoardServer setCaptionPanelContextId:]
+0x189ac5bb8  __TEXT,__text  -[AXSpringBoardServer setHearingAidControlVisible:]
+0x189ac5cb0  __TEXT,__text  -[AXSpringBoardServer startHearingAidServer]
+0x189ac5d1c  __TEXT,__text  -[AXSpringBoardServer topEventPidOverride]
+0x189ac5dd4  __TEXT,__text  -[AXSpringBoardServer isOrientationLocked]
+0x189ac5e28  __TEXT,__text  -[AXSpringBoardServer setOrientation:]
+0x189ac5efc  __TEXT,__text  -[AXSpringBoardServer setOrientationLocked:]
+0x189ac5fd0  __TEXT,__text  -[AXSpringBoardServer resetDimTimer]
+0x189ac6028  __TEXT,__text  -[AXSpringBoardServer isSideSwitchUsedForOrientation]
+0x189ac607c  __TEXT,__text  -[AXSpringBoardServer isRingerMuted]
+0x189ac60d0  __TEXT,__text  -[AXSpringBoardServer reachabilityOffset]
+0x189ac613c  __TEXT,__text  -[AXSpringBoardServer volumeLevel]
+0x189ac61f4  __TEXT,__text  -[AXSpringBoardServer cleanupAlertHandler]
+0x189ac6308  __TEXT,__text  ___42-[AXSpringBoardServer cleanupAlertHandler]_block_invoke
+0x189ac6360  __TEXT,__text  -[AXSpringBoardServer hideAlert]
+0x189ac6450  __TEXT,__text  ___32-[AXSpringBoardServer hideAlert]_block_invoke
+0x189ac6584  __TEXT,__text  ___32-[AXSpringBoardServer hideAlert]_block_invoke_2
+0x189ac65c8  __TEXT,__text  -[AXSpringBoardServer isShowingAXAlert]
+0x189ac66a0  __TEXT,__text  ___39-[AXSpringBoardServer isShowingAXAlert]_block_invoke
+0x189ac66e4  __TEXT,__text  -[AXSpringBoardServer showAlert:withHandler:]
+0x189ac66ec  __TEXT,__text  -[AXSpringBoardServer showAlert:withHandler:withData:]
+0x189ac6a48  __TEXT,__text  ___54-[AXSpringBoardServer showAlert:withHandler:withData:]_block_invoke
+0x189ac6a50  __TEXT,__text  ___54-[AXSpringBoardServer showAlert:withHandler:withData:]_block_invoke_2
+0x189ac6b70  __TEXT,__text  ___54-[AXSpringBoardServer showAlert:withHandler:withData:]_block_invoke_3
+0x189ac6bc8  __TEXT,__text  ___54-[AXSpringBoardServer showAlert:withHandler:withData:]_block_invoke_4
+0x189ac6bdc  __TEXT,__text  ___54-[AXSpringBoardServer showAlert:withHandler:withData:]_block_invoke_5
+0x189ac6be4  __TEXT,__text  -[AXSpringBoardServer showRemoteView:withData:]
+0x189ac6bf4  __TEXT,__text  -[AXSpringBoardServer hideRemoteView:]
+0x189ac6c04  __TEXT,__text  -[AXSpringBoardServer isShowingRemoteView:]
+0x189ac6c88  __TEXT,__text  -[AXSpringBoardServer _payloadForRemoteViewType:data:]
+0x189ac6d1c  __TEXT,__text  -[AXSpringBoardServer _sendRemoteViewIPCMessage:withRemoteViewType:withData:]
+0x189ac6e4c  __TEXT,__text  ___77-[AXSpringBoardServer _sendRemoteViewIPCMessage:withRemoteViewType:withData:]_block_invoke
+0x189ac6e60  __TEXT,__text  -[AXSpringBoardServer setShowSpeechPlaybackControls:]
+0x189ac6f44  __TEXT,__text  -[AXSpringBoardServer _actionResultKey]
+0x189ac6f4c  __TEXT,__text  -[AXSpringBoardServer removeActionHandler:]
+0x189ac6f54  __TEXT,__text  -[AXSpringBoardServer registerSpringBoardActionHandler:withIdentifierCallback:]
+0x189ac6f60  __TEXT,__text  -[AXSpringBoardServer setCancelGestureActivation:cancelEnabled:]
+0x189ac70c4  __TEXT,__text  ___64-[AXSpringBoardServer setCancelGestureActivation:cancelEnabled:]_block_invoke
+0x189ac70d4  __TEXT,__text  -[AXSpringBoardServer cancelReachabilityDetection]
+0x189ac7144  __TEXT,__text  -[AXSpringBoardServer registerReachabilityHandler:withIdentifierCallback:]
+0x189ac7350  __TEXT,__text  ___74-[AXSpringBoardServer registerReachabilityHandler:withIdentifierCallback:]_block_invoke
+0x189ac7360  __TEXT,__text  ___74-[AXSpringBoardServer registerReachabilityHandler:withIdentifierCallback:]_block_invoke_2
+0x189ac74b0  __TEXT,__text  ___74-[AXSpringBoardServer registerReachabilityHandler:withIdentifierCallback:]_block_invoke_3
+0x189ac74c0  __TEXT,__text  -[AXSpringBoardServer toggleIncomingCall]
+0x189ac757c  __TEXT,__text  -[AXSpringBoardServer toggleReachability]
+0x189ac75b0  __TEXT,__text  -[AXSpringBoardServer setReachabilityActive:]
+0x189ac76a8  __TEXT,__text  -[AXSpringBoardServer setReachabilityEnabled:]
+0x189ac7814  __TEXT,__text  -[AXSpringBoardServer removeReachabilityHandler:]
+0x189ac7920  __TEXT,__text  -[AXSpringBoardServer isInspectorMinimized]
+0x189ac797c  __TEXT,__text  -[AXSpringBoardServer isPointInsideAccessibilityInspector:]
+0x189ac7984  __TEXT,__text  -[AXSpringBoardServer pid]
+0x189ac7a6c  __TEXT,__text  -[AXSpringBoardServer pid:]
+0x189ac7c30  __TEXT,__text  ___27-[AXSpringBoardServer pid:]_block_invoke
+0x189ac7c44  __TEXT,__text  ___27-[AXSpringBoardServer pid:]_block_invoke_2
+0x189ac7c5c  __TEXT,__text  ___27-[AXSpringBoardServer pid:]_block_invoke_3
+0x189ac7ce4  __TEXT,__text  -[AXSpringBoardServer activeApplicationOrientation]
+0x189ac7d9c  __TEXT,__text  -[AXSpringBoardServer activeInterfaceOrientation]
+0x189ac7e54  __TEXT,__text  -[AXSpringBoardServer activeInterfaceOrientation:]
+0x189ac7f20  __TEXT,__text  ___50-[AXSpringBoardServer activeInterfaceOrientation:]_block_invoke
+0x189ac7f90  __TEXT,__text  -[AXSpringBoardServer systemArbitratedInterfaceOrientationForDisplayID:]
+0x189ac80d8  __TEXT,__text  -[AXSpringBoardServer copyStringToPasteboard:]
+0x189ac81bc  __TEXT,__text  -[AXSpringBoardServer isScreenSaverVisible]
+0x189ac81c4  __TEXT,__text  -[AXSpringBoardServer isNowPlayingUIVisible]
+0x189ac81cc  __TEXT,__text  -[AXSpringBoardServer isSoftwareUpdateUIVisible]
+0x189ac81d4  __TEXT,__text  -[AXSpringBoardServer activateSOSMode]
+0x189ac822c  __TEXT,__text  -[AXSpringBoardServer connectedDevicesRequireAssistiveTouch]
+0x189ac82e8  __TEXT,__text  -[AXSpringBoardServer currentDevicesHaveAssistiveTouchCustomActions]
+0x189ac83d4  __TEXT,__text  -[AXSpringBoardServer cancelSiriDismissalForAssistiveTouch]
+0x189ac842c  __TEXT,__text  -[AXSpringBoardServer toggleTorch]
+0x189ac8484  __TEXT,__text  -[AXSpringBoardServer isScreenLockedWithPasscode:]
+0x189ac8584  __TEXT,__text  -[AXSpringBoardServer screenLockStatus:passcodeStatusRequired:]
+0x189ac86e4  __TEXT,__text  ___63-[AXSpringBoardServer screenLockStatus:passcodeStatusRequired:]_block_invoke
+0x189ac8700  __TEXT,__text  -[AXSpringBoardServer isSystemSleeping]
+0x189ac879c  __TEXT,__text  -[AXSpringBoardServer isSystemSleeping:]
+0x189ac8820  __TEXT,__text  -[AXSpringBoardServer isSyncingRestoringResettingOrUpdating]
+0x189ac88bc  __TEXT,__text  -[AXSpringBoardServer areSystemGesturesDisabledNatively]
+0x189ac8958  __TEXT,__text  -[AXSpringBoardServer areSystemGesturesDisabledByAccessibility]
+0x189ac89f4  __TEXT,__text  -[AXSpringBoardServer installedApps]
+0x189ac8ac0  __TEXT,__text  -[AXSpringBoardServer internalApps]
+0x189ac8b8c  __TEXT,__text  -[AXSpringBoardServer wakeUpDeviceIfNecessary]
+0x189ac8c20  __TEXT,__text  -[AXSpringBoardServer unlockDevice]
+0x189ac8cb4  __TEXT,__text  -[AXSpringBoardServer rebootDevice]
+0x189ac8d48  __TEXT,__text  -[AXSpringBoardServer isMediaPlayingForApp:completionHandler:]
+0x189ac8f80  __TEXT,__text  -[AXSpringBoardServer pauseMedia]
+0x189ac8f88  __TEXT,__text  -[AXSpringBoardServer pauseMediaForApp:]
+0x189ac90a0  __TEXT,__text  -[AXSpringBoardServer resumeMedia]
+0x189ac90a8  __TEXT,__text  -[AXSpringBoardServer resumeMediaForApp:]
+0x189ac91c0  __TEXT,__text  -[AXSpringBoardServer hasActiveCall]
+0x189ac925c  __TEXT,__text  -[AXSpringBoardServer hasActiveEndpointCall]
+0x189ac92f8  __TEXT,__text  -[AXSpringBoardServer hasActiveOrPendingCall]
+0x189ac9394  __TEXT,__text  -[AXSpringBoardServer hasActiveOrPendingCallOrFaceTime]
+0x189ac9430  __TEXT,__text  -[AXSpringBoardServer isMakingEmergencyCall]
+0x189ac94c4  __TEXT,__text  -[AXSpringBoardServer isNotificationCenterVisible]
+0x189ac9560  __TEXT,__text  -[AXSpringBoardServer isScreenshotWindowVisible]
+0x189ac95cc  __TEXT,__text  -[AXSpringBoardServer isNotificationVisible]
+0x189ac9638  __TEXT,__text  -[AXSpringBoardServer isShowingLongLookNotification]
+0x189ac96d4  __TEXT,__text  -[AXSpringBoardServer isBannerVisible]
+0x189ac9740  __TEXT,__text  -[AXSpringBoardServer isRemoteAlertVisible]
+0x189ac97ac  __TEXT,__text  -[AXSpringBoardServer toggleNotificationCenter]
+0x189ac9840  __TEXT,__text  -[AXSpringBoardServer showNotificationCenter]
+0x189ac987c  __TEXT,__text  -[AXSpringBoardServer hideNotificationCenter]
+0x189ac98b8  __TEXT,__text  -[AXSpringBoardServer isControlCenterVisible]
+0x189ac9954  __TEXT,__text  -[AXSpringBoardServer showNotificationCenter:]
+0x189ac9a88  __TEXT,__text  -[AXSpringBoardServer showControlCenter:]
+0x189ac9bc0  __TEXT,__text  -[AXSpringBoardServer armApplePay]
+0x189ac9c54  __TEXT,__text  -[AXSpringBoardServer toggleDock]
+0x189ac9cf8  __TEXT,__text  -[AXSpringBoardServer isStageManagerSwitcherVisible]
+0x189ac9d64  __TEXT,__text  -[AXSpringBoardServer isDockVisible]
+0x189ac9e00  __TEXT,__text  -[AXSpringBoardServer isStatusBarNativeFocusable]
+0x189ac9e08  __TEXT,__text  -[AXSpringBoardServer isStatusBarNativeFocusableIncludingNonDismissableElements:]
+0x189ac9ed4  __TEXT,__text  -[AXSpringBoardServer isShowingNonSystemApp]
+0x189ac9f70  __TEXT,__text  -[AXSpringBoardServer isShowingHomescreen]
+0x189aca00c  __TEXT,__text  -[AXSpringBoardServer isContinuitySessionActive]
+0x189aca0a8  __TEXT,__text  -[AXSpringBoardServer launchApplication:]
+0x189aca108  __TEXT,__text  -[AXSpringBoardServer launchPinnedApplication:onLeadingSide:]
+0x189aca170  __TEXT,__text  -[AXSpringBoardServer launchFloatingApplication:]
+0x189aca1d0  __TEXT,__text  -[AXSpringBoardServer canLaunchAsPinnedApplicationForIconView:]
+0x189aca23c  __TEXT,__text  -[AXSpringBoardServer canLaunchAsFloatingApplicationForIconView:]
+0x189aca2a8  __TEXT,__text  -[AXSpringBoardServer isAppSwitcherVisible]
+0x189aca344  __TEXT,__text  -[AXSpringBoardServer isShelfSwitcherVisible]
+0x189aca3e0  __TEXT,__text  -[AXSpringBoardServer openAppSwitcher]
+0x189aca4e8  __TEXT,__text  -[AXSpringBoardServer dismissAppSwitcher]
+0x189aca57c  __TEXT,__text  -[AXSpringBoardServer dismissShelfSwitcher]
+0x189aca610  __TEXT,__text  -[AXSpringBoardServer simulateEdgePressHaptics]
+0x189aca6a4  __TEXT,__text  -[AXSpringBoardServer toggleAppLibrary]
+0x189aca738  __TEXT,__text  -[AXSpringBoardServer toggleQuickNote]
+0x189aca7cc  __TEXT,__text  -[AXSpringBoardServer toggleSpotlight]
+0x189aca860  __TEXT,__text  -[AXSpringBoardServer revealSpotlight]
+0x189aca8f4  __TEXT,__text  -[AXSpringBoardServer isDarkModeActive]
+0x189aca92c  __TEXT,__text  -[AXSpringBoardServer isDarkModeActiveIfKnown]
+0x189acaa84  __TEXT,__text  -[AXSpringBoardServer toggleDarkMode]
+0x189acabc4  __TEXT,__text  -[AXSpringBoardServer isGuidedAccessActive]
+0x189acac60  __TEXT,__text  -[AXSpringBoardServer isSpotlightVisible]
+0x189acacfc  __TEXT,__text  -[AXSpringBoardServer isPIPWindowVisible]
+0x189acad98  __TEXT,__text  -[AXSpringBoardServer dismissSiri]
+0x189acae34  __TEXT,__text  -[AXSpringBoardServer isSiriVisible]
+0x189acaed0  __TEXT,__text  -[AXSpringBoardServer isSiriTalkingOrListening]
+0x189acaf0c  __TEXT,__text  -[AXSpringBoardServer isReceivingAirPlay]
+0x189acaf14  __TEXT,__text  -[AXSpringBoardServer isPasscodeLockVisible]
+0x189acafb0  __TEXT,__text  -[AXSpringBoardServer isLockScreenVisible]
+0x189acb04c  __TEXT,__text  -[AXSpringBoardServer openVoiceControl]
+0x189acb0e0  __TEXT,__text  -[AXSpringBoardServer isTypeToSiriVisible]
+0x189acb17c  __TEXT,__text  -[AXSpringBoardServer openTypeToSiri]
+0x189acb210  __TEXT,__text  -[AXSpringBoardServer isVoiceControlRunning]
+0x189acb2ac  __TEXT,__text  -[AXSpringBoardServer isSpeakThisTemporarilyDisabled]
+0x189acb348  __TEXT,__text  -[AXSpringBoardServer allowedMedusaGestures]
+0x189acb468  __TEXT,__text  -[AXSpringBoardServer setMenuBarVisible:]
+0x189acb5bc  __TEXT,__text  -[AXSpringBoardServer isMenuBarVisible]
+0x189acb658  __TEXT,__text  -[AXSpringBoardServer isMenuBarModal]
+0x189acb6f4  __TEXT,__text  -[AXSpringBoardServer isChamoisOrFlexibleWindowingEnabled]
+0x189acb790  __TEXT,__text  -[AXSpringBoardServer toggleBackgroundSounds]
+0x189acb824  __TEXT,__text  -[AXSpringBoardServer performMedusaGesture:]
+0x189acb958  __TEXT,__text  -[AXSpringBoardServer medusaApps]
+0x189acba00  __TEXT,__text  -[AXSpringBoardServer arrangementScreenRegion]
+0x189acbabc  __TEXT,__text  -[AXSpringBoardServer performArrangementSplitForBundleIdentifier:toLeft:]
+0x189acbc28  __TEXT,__text  -[AXSpringBoardServer performArrangementSplitForLeftBundleIdentifier:rightBundleIdentifier:]
+0x189acbd34  __TEXT,__text  -[AXSpringBoardServer setDockIconActivationMode:]
+0x189acbe88  __TEXT,__text  -[AXSpringBoardServer canSetDockIconActivationMode]
+0x189acbf24  __TEXT,__text  -[AXSpringBoardServer systemAppInfoWithQuery:completion:]
+0x189acc134  __TEXT,__text  ___57-[AXSpringBoardServer systemAppInfoWithQuery:completion:]_block_invoke
+0x189acc148  __TEXT,__text  ___57-[AXSpringBoardServer systemAppInfoWithQuery:completion:]_block_invoke_2
+0x189acc158  __TEXT,__text  -[AXSpringBoardServer isSystemAppShowingAnAlert]
+0x189acc22c  __TEXT,__text  -[AXSpringBoardServer setBluetoothPowerEnabled:]
+0x189acc318  __TEXT,__text  -[AXSpringBoardServer bluetoothPowerEnabled]
+0x189acc3b0  __TEXT,__text  -[AXSpringBoardServer setVoiceOverEnabled:]
+0x189acc49c  __TEXT,__text  -[AXSpringBoardServer voiceOverEnabled]
+0x189acc534  __TEXT,__text  -[AXSpringBoardServer setZoomEnabled:]
+0x189acc620  __TEXT,__text  -[AXSpringBoardServer zoomEnabled]
+0x189acc6b8  __TEXT,__text  -[AXSpringBoardServer focusedAppPID]
+0x189acc784  __TEXT,__text  -[AXSpringBoardServer purpleBuddyPID:]
+0x189acc8bc  __TEXT,__text  ___38-[AXSpringBoardServer purpleBuddyPID:]_block_invoke
+0x189acc930  __TEXT,__text  ___38-[AXSpringBoardServer purpleBuddyPID:]_block_invoke_2
+0x189acc9a0  __TEXT,__text  -[AXSpringBoardServer runningAppPIDs]
+0x189acca6c  __TEXT,__text  -[AXSpringBoardServer isSystemAppFrontmost]
+0x189acca74  __TEXT,__text  -[AXSpringBoardServer isSystemAppFrontmost:]
+0x189acca80  __TEXT,__text  -[AXSpringBoardServer isSystemAppFrontmostExludingSiri]
+0x189acca88  __TEXT,__text  -[AXSpringBoardServer _isSystemAppFrontmostExcludingSiri:completion:]
+0x189accc34  __TEXT,__text  ___69-[AXSpringBoardServer _isSystemAppFrontmostExcludingSiri:completion:]_block_invoke
+0x189accc4c  __TEXT,__text  -[AXSpringBoardServer _isSystemAppFrontmostExcludingSiri:]
+0x189accd80  __TEXT,__text  -[AXSpringBoardServer isPurpleBuddyAppFrontmost]
+0x189acce1c  __TEXT,__text  -[AXSpringBoardServer dismissBuddyIfNecessary]
+0x189accf0c  __TEXT,__text  -[AXSpringBoardServer reduceAmbientFullScreenLiveActivityIfPresented]
+0x189accfa8  __TEXT,__text  -[AXSpringBoardServer isSettingsAppFrontmost]
+0x189acd044  __TEXT,__text  -[AXSpringBoardServer focusedApps]
+0x189acd178  __TEXT,__text  -[AXSpringBoardServer displayIdentifierForSceneIdentifier:]
+0x189acd364  __TEXT,__text  -[AXSpringBoardServer focusedOccludedAppScenes]
+0x189acd4e0  __TEXT,__text  -[AXSpringBoardServer acquireAssertionWithType:identifier:]
+0x189acd584  __TEXT,__text  -[AXSpringBoardServer relinquishAssertionWithType:identifier:]
+0x189acd628  __TEXT,__text  -[AXSpringBoardServer loadGAXBundleForUnmanagedASAM]
+0x189acd6f8  __TEXT,__text  -[AXSpringBoardServer reactivateInCallService]
+0x189acd7a0  __TEXT,__text  -[AXSpringBoardServer launchMagnifierApp]
+0x189acd848  __TEXT,__text  -[AXSpringBoardServer isMagnifierVisibleWithCompletion:]
+0x189acd9d0  __TEXT,__text  ___56-[AXSpringBoardServer isMagnifierVisibleWithCompletion:]_block_invoke
+0x189acd9e8  __TEXT,__text  ___56-[AXSpringBoardServer isMagnifierVisibleWithCompletion:]_block_invoke_2
+0x189acdad4  __TEXT,__text  -[AXSpringBoardServer launchOnboardingViewService:]
+0x189acdbf0  __TEXT,__text  -[AXSpringBoardServer launchVoiceOverQuickSettingsViewService:]
+0x189acdd24  __TEXT,__text  -[AXSpringBoardServer launchVoiceOverImageExplorerViewServiceForResult:withData:]
+0x189acdfb0  __TEXT,__text  -[AXSpringBoardServer visibleTripleClickItems]
+0x189ace058  __TEXT,__text  -[AXSpringBoardServer isAppleWatchRemoteScreenActive]
+0x189ace0e8  __TEXT,__text  -[AXSpringBoardServer isNonExclusiveSystemUIFocusableIncludingPIPWindow:]
+0x189ace0f0  __TEXT,__text  -[AXSpringBoardServer isNonExclusiveSystemUIFocusableIncludingPIPWindow:includingNonDismissableElements:]
+0x189ace21c  __TEXT,__text  -[AXSpringBoardServer setShouldFocusNonExclusiveSystemUI:]
+0x189ace340  __TEXT,__text  -[AXSpringBoardServer didPotentiallyDismissNonExclusiveSystemUI]
+0x189ace3e4  __TEXT,__text  -[AXSpringBoardServer freezeClarityUILoadingScreenWithCompletion:]
+0x189ace564  __TEXT,__text  ___66-[AXSpringBoardServer freezeClarityUILoadingScreenWithCompletion:]_block_invoke
+0x189ace574  __TEXT,__text  ___66-[AXSpringBoardServer freezeClarityUILoadingScreenWithCompletion:]_block_invoke_2
+0x189ace5f8  __TEXT,__text  -[AXSpringBoardServer presentNearbyDeviceControlPicker]
+0x189ace6a8  __TEXT,__text  ___55-[AXSpringBoardServer presentNearbyDeviceControlPicker]_block_invoke
+0x189ace730  __TEXT,__text  -[AXSpringBoardServer requestDismissJindo]
+0x189ace7c4  __TEXT,__text  -[AXSpringBoardServer jindoAppBundleIndentifiers]
+0x189ace86c  __TEXT,__text  -[AXSpringBoardServer toggleDetectionMode]
+0x189ace908  __TEXT,__text  -[AXSpringBoardServer toggleLiveRecognition]
+0x189ace9a4  __TEXT,__text  -[AXSpringBoardServer startMagnifier]
+0x189acea40  __TEXT,__text  -[AXSpringBoardServer askLiveRecognitionQuestion]
+0x189aceadc  __TEXT,__text  -[AXSpringBoardServer askQuestionInMagnifier]
+0x189aceb78  __TEXT,__text  -[AXSpringBoardServer describeScene]
+0x189acec14  __TEXT,__text  -[AXSpringBoardServer launchAccessibilityReader]
+0x189acecfc  __TEXT,__text  -[AXSpringBoardServer isMagnifierVisible]
+0x189aced90  __TEXT,__text  -[AXSpringBoardServer isLiveRecognitionOverlayVisible]
+0x189acee24  __TEXT,__text  -[AXSpringBoardServer applicationWithIdentifier:]
+0x189aceed4  __TEXT,__text  -[AXSpringBoardServer focusedAppProcess]
+0x189acef70  __TEXT,__text  -[AXSpringBoardServer runningAppProcesses]
+0x189acf00c  __TEXT,__text  -[AXSpringBoardServer appNameFromPid:]
+0x189acf14c  __TEXT,__text  -[AXSpringBoardServer toggleLiveTranscription]
+0x189acf1e0  __TEXT,__text  -[AXSpringBoardServer toggleConversationBoost]
+0x189acf274  __TEXT,__text  -[AXSpringBoardServer nativeFocusedApplication]
+0x189acf350  __TEXT,__text  -[AXSpringBoardServer nativeFocusedApplicationSceneInfo]
+0x189acf42c  __TEXT,__text  -[AXSpringBoardServer switchNativeFocusedApplicationToProcessIdentifier:sceneIdentifier:]
+0x189acf5a4  __TEXT,__text  -[AXSpringBoardServer installGuestPassPINGesture]
+0x189acf61c  __TEXT,__text  -[AXSpringBoardServer installGuestPassAcceptDialogGesture]
+0x189acf694  __TEXT,__text  -[AXSpringBoardServer removeGuestPassAcceptDialogGesture]
+0x189acf70c  __TEXT,__text  -[AXSpringBoardServer accessQueue]
+0x189acf720  __TEXT,__text  -[AXSpringBoardServer setAccessQueue:]
+0x189acf734  __TEXT,__text  -[AXSpringBoardServer currentAlertHandler]
+0x189acf748  __TEXT,__text  -[AXSpringBoardServer setCurrentAlertHandler:]
+0x189acf754  __TEXT,__text  -[AXSpringBoardServer actionHandlers]
+0x189acf768  __TEXT,__text  -[AXSpringBoardServer setActionHandlers:]
+0x189acf77c  __TEXT,__text  -[AXSpringBoardServer shouldFocusNonExclusiveSystemUI]
+0x189acf790  __TEXT,__text  -[AXSpringBoardServer reachabilityHandlers]
+0x189acf7a4  __TEXT,__text  -[AXSpringBoardServer setReachabilityHandlers:]
+0x189acf7b8  __TEXT,__text  -[AXSpringBoardServer mediaPlayingHandlers]
+0x189acf7cc  __TEXT,__text  -[AXSpringBoardServer setMediaPlayingHandlers:]
+0x189acf7e0  __TEXT,__text  -[AXSpringBoardServer .cxx_destruct]
+0x189acf864  __TEXT,__text  -[AXSpringBoardServer(AXSpringBoardServer_Private) _axSpringBoardServerInstanceIfExists]
+0x189acf890  __TEXT,__text  ___74-[AXSpringBoardServer(AXSpringBoardServer_Private) _shouldDispatchLocally]_block_invoke
+0x189acf8b0  __TEXT,__text  ____AXSBPopArrangementTitle_block_invoke
+0x189acf9a4  __TEXT,__text  ___AXReaderShouldLaunchForBundleIdentifier_block_invoke
+0x189acfa48  __TEXT,__text  ___AXBTRouteIsAirpods_block_invoke
+0x189acfa84  __TEXT,__text  -[AXAirPodSettingsManager _productIdentifierForBTDevice:]
+0x189acfaec  __TEXT,__text  -[AXAirPodSettingsManager pairedAirPods]
+0x189acfc2c  __TEXT,__text  ___40-[AXAirPodSettingsManager pairedAirPods]_block_invoke
+0x189acfc6c  __TEXT,__text  -[AXAirPodSettingsManager _pairedAirPods]
+0x189acfe60  __TEXT,__text  ___41-[AXAirPodSettingsManager _pairedAirPods]_block_invoke
+0x189acfff8  __TEXT,__text  -[AXAirPodSettingsManager supportsSpatialAudio]
+0x189ad0040  __TEXT,__text  ___47-[AXAirPodSettingsManager supportsSpatialAudio]_block_invoke
+0x189ad0678  __TEXT,__text  -[AXAirPodSettingsManager pairedAirPodsSupportSpatialAudio]
+0x189ad07a4  __TEXT,__text  -[AXAirPodSettingsManager _pairedProductsFlags]
+0x189ad0870  __TEXT,__text  ___47-[AXAirPodSettingsManager _pairedProductsFlags]_block_invoke
+0x189ad0910  __TEXT,__text  -[AXAirPodSettingsManager titleForSettings]
+0x189ad0a20  __TEXT,__text  -[AXAirPodSettingsManager titleAndAssetNameForSettings]
+0x189ad0ba4  __TEXT,__text  -[AXAirPodSettingsManager disambiguationString]
+0x189ad0d90  __TEXT,__text  ___47-[AXAirPodSettingsManager disambiguationString]_block_invoke
+0x189ad0e2c  __TEXT,__text  -[AXAirPodSettingsManager isBeatsProduct:]
+0x189ad0e68  __TEXT,__text  -[AXAirPodSettingsManager isAirPodProduct:]
+0x189ad0ec8  __TEXT,__text  -[AXAirPodSettingsManager _deviceWithDeviceAddress:]
+0x189ad0ffc  __TEXT,__text  ___52-[AXAirPodSettingsManager _deviceWithDeviceAddress:]_block_invoke
+0x189ad1088  __TEXT,__text  -[AXAirPodSettingsManager _supportsCapability:forDeviceAddress:capabilityName:]
+0x189ad11b8  __TEXT,__text  -[AXAirPodSettingsManager supportsTapSpeedForDeviceAddress:]
+0x189ad11fc  __TEXT,__text  -[AXAirPodSettingsManager tapSpeedForDeviceAddress:]
+0x189ad1250  __TEXT,__text  _getHUAccessoryHearingSettingsClass
+0x189ad1324  __TEXT,__text  -[AXAirPodSettingsManager setTapSpeed:forDeviceAddress:]
+0x189ad1384  __TEXT,__text  -[AXAirPodSettingsManager supportsNoiseCancellationEnabledForDeviceAddress:]
+0x189ad146c  __TEXT,__text  -[AXAirPodSettingsManager noiseCancellationEnabledWithOneUnitForDeviceAddress:]
+0x189ad14c0  __TEXT,__text  -[AXAirPodSettingsManager setNoiseCancellationEnabledWithOneUnit:forDeviceAddress:]
+0x189ad1594  __TEXT,__text  -[AXAirPodSettingsManager _supportsCaseTonesForProductID:]
+0x189ad15ac  __TEXT,__text  -[AXAirPodSettingsManager _supportsCaseTonesForDeviceAddress:]
+0x189ad1614  __TEXT,__text  -[AXAirPodSettingsManager supportsCaseTonesForDeviceAddress:]
+0x189ad1718  __TEXT,__text  -[AXAirPodSettingsManager setCaseTonesEnabled:forDeviceAddress:]
+0x189ad17ec  __TEXT,__text  -[AXAirPodSettingsManager caseTonesEnabledForDeviceAddress:]
+0x189ad1840  __TEXT,__text  -[AXAirPodSettingsManager _supportsCaseTonesVolumeForDeviceAddress:]
+0x189ad1958  __TEXT,__text  -[AXAirPodSettingsManager supportsCaseTonesVolumeForDeviceAddress:]
+0x189ad19bc  __TEXT,__text  -[AXAirPodSettingsManager caseTonesVolumeForDeviceAddress:]
+0x189ad1a10  __TEXT,__text  -[AXAirPodSettingsManager setCaseTonesVolume:forDeviceAddress:]
+0x189ad1ae4  __TEXT,__text  -[AXAirPodSettingsManager defaultCaseTonesVolumeForDeviceAddress:]
+0x189ad1aec  __TEXT,__text  -[AXAirPodSettingsManager supportsToneVolumeForDeviceAddress:]
+0x189ad1b00  __TEXT,__text  -[AXAirPodSettingsManager defaultToneVolumeForDeviceAddress:]
+0x189ad1b54  __TEXT,__text  -[AXAirPodSettingsManager toneVolumeForDeviceAddress:]
+0x189ad1ba8  __TEXT,__text  -[AXAirPodSettingsManager setToneVolume:forDeviceAddress:]
+0x189ad1c7c  __TEXT,__text  -[AXAirPodSettingsManager supportsHoldDurationForDeviceAddress:]
+0x189ad1cc0  __TEXT,__text  -[AXAirPodSettingsManager holdDurationForDeviceAddress:]
+0x189ad1d14  __TEXT,__text  -[AXAirPodSettingsManager setHoldDuration:forDeviceAddress:]
+0x189ad1d74  __TEXT,__text  -[AXAirPodSettingsManager supportsVolumeSwipeForDeviceAddress:]
+0x189ad1e6c  __TEXT,__text  -[AXAirPodSettingsManager volumeSwipeEnabledForDeviceAddress:]
+0x189ad1ec0  __TEXT,__text  -[AXAirPodSettingsManager setVolumeSwipeEnabled:forDeviceAddress:]
+0x189ad1f18  __TEXT,__text  -[AXAirPodSettingsManager volumeSwipeDurationForDeviceAddress:]
+0x189ad1f6c  __TEXT,__text  -[AXAirPodSettingsManager setVolumeSwipeDuration:forDeviceAddress:]
+0x189ad1fcc  __TEXT,__text  -[AXAirPodSettingsManager supportsSpatialAudioForDeviceAddress:]
+0x189ad2050  __TEXT,__text  -[AXAirPodSettingsManager nps_tapSpeedForDeviceAddress:]
+0x189ad20a4  __TEXT,__text  -[AXAirPodSettingsManager nps_setTapSpeed:forDeviceAddress:]
+0x189ad2104  __TEXT,__text  -[AXAirPodSettingsManager nps_noiseCancellationEnabledWithOneUnitForDeviceAddress:]
+0x189ad2158  __TEXT,__text  -[AXAirPodSettingsManager nps_setNoiseCancellationEnabledWithOneUnit:forDeviceAddress:]
+0x189ad21b0  __TEXT,__text  -[AXAirPodSettingsManager nps_holdDurationForDeviceAddress:]
+0x189ad2204  __TEXT,__text  -[AXAirPodSettingsManager nps_setHoldDuration:forDeviceAddress:]
+0x189ad2264  __TEXT,__text  -[AXAirPodSettingsManager nps_defaultToneVolumeForDeviceAddress:]
+0x189ad22b8  __TEXT,__text  -[AXAirPodSettingsManager nps_toneVolumeForDeviceAddress:]
+0x189ad230c  __TEXT,__text  -[AXAirPodSettingsManager nps_setToneVolume:forDeviceAddress:]
+0x189ad236c  __TEXT,__text  -[AXAirPodSettingsManager nps_volumeSwipeEnabledForDeviceAddress:]
+0x189ad23c0  __TEXT,__text  -[AXAirPodSettingsManager nps_setVolumeSwipeEnabled:forDeviceAddress:]
+0x189ad2418  __TEXT,__text  -[AXAirPodSettingsManager nps_volumeSwipeDurationForDeviceAddress:]
+0x189ad246c  __TEXT,__text  -[AXAirPodSettingsManager nps_setVolumeSwipeDuration:forDeviceAddress:]
+0x189ad24cc  __TEXT,__text  -[AXAirPodSettingsManager nps_caseTonesEnabledForDeviceAddress:]
+0x189ad2520  __TEXT,__text  -[AXAirPodSettingsManager nps_setCaseTonesEnabled:forDeviceAddress:]
+0x189ad2578  __TEXT,__text  -[AXAirPodSettingsManager nps_caseTonesVolumeForDeviceAddress:]
+0x189ad25cc  __TEXT,__text  -[AXAirPodSettingsManager nps_setCaseTonesVolume:forDeviceAddress:]
+0x189ad262c  __TEXT,__text  -[AXAirPodSettingsManager _serviceEventForDevice:serviceMask:eventType:specificEvent:result:]
+0x189ad26a4  __TEXT,__text  ___93-[AXAirPodSettingsManager _serviceEventForDevice:serviceMask:eventType:specificEvent:result:]_block_invoke
+0x189ad26ac  __TEXT,__text  -[AXAirPodSettingsManager _accessoryEventForManager:event:device:state:]
+0x189ad2724  __TEXT,__text  ___72-[AXAirPodSettingsManager _accessoryEventForManager:event:device:state:]_block_invoke
+0x189ad27bc  __TEXT,__text  -[AXAirPodSettingsManager isConnectedToBluetoothSystem]
+0x189ad27cc  __TEXT,__text  -[AXAirPodSettingsManager _sessionEventForSession:event:result:]
+0x189ad28d0  __TEXT,__text  -[AXAirPodSettingsManager _didConnectWithSession:]
+0x189ad2a4c  __TEXT,__text  _accessoryEventCallback
+0x189ad2a68  __TEXT,__text  _serviceEventCallback
+0x189ad2a88  __TEXT,__text  ___50-[AXAirPodSettingsManager _didConnectWithSession:]_block_invoke
+0x189ad2a90  __TEXT,__text  -[AXAirPodSettingsManager _didDisconnect]
+0x189ad2b7c  __TEXT,__text  ___41-[AXAirPodSettingsManager _didDisconnect]_block_invoke
+0x189ad2c44  __TEXT,__text  ___41-[AXAirPodSettingsManager _didDisconnect]_block_invoke.447
+0x189ad2c4c  __TEXT,__text  -[AXAirPodSettingsManager _beginDetach]
+0x189ad2c50  __TEXT,__text  -[AXAirPodSettingsManager _probeAccessories]
+0x189ad3068  __TEXT,__text  -[AXAirPodSettingsManager _saveDeviceInfoForAddress:productID:]
+0x189ad325c  __TEXT,__text  -[AXAirPodSettingsManager _retrieveSettingsFromDevices:]
+0x189ad33f0  __TEXT,__text  -[AXAirPodSettingsManager _applySettings]
+0x189ad359c  __TEXT,__text  -[AXAirPodSettingsManager _retrieveSettingsForAddress:]
+0x189ad42dc  __TEXT,__text  -[AXAirPodSettingsManager _applySettingsForAddress:]
+0x189ad4f38  __TEXT,__text  -[AXAirPodSettingsManager initSharedInstance]
+0x189ad5024  __TEXT,__text  -[AXAirPodSettingsManager start]
+0x189ad5030  __TEXT,__text  ___32-[AXAirPodSettingsManager start]_block_invoke
+0x189ad5034  __TEXT,__text  -[AXAirPodSettingsManager startWithCallback:]
+0x189ad5150  __TEXT,__text  _sessionEventCallback
+0x189ad5164  __TEXT,__text  __prefChangedCallback
+0x189ad52ac  __TEXT,__text  ___45-[AXAirPodSettingsManager startWithCallback:]_block_invoke
+0x189ad52e4  __TEXT,__text  -[AXAirPodSettingsManager registerRetrievedSettingsChangedCallback:]
+0x189ad52e8  __TEXT,__text  -[AXAirPodSettingsManager dealloc]
+0x189ad5338  __TEXT,__text  +[AXAirPodSettingsManager sharedInstance]
+0x189ad5380  __TEXT,__text  ___41+[AXAirPodSettingsManager sharedInstance]_block_invoke
+0x189ad53b4  __TEXT,__text  -[AXAirPodSettingsManager readyBlock]
+0x189ad53bc  __TEXT,__text  -[AXAirPodSettingsManager setReadyBlock:]
+0x189ad53c4  __TEXT,__text  -[AXAirPodSettingsManager settingsChangedBlock]
+0x189ad53cc  __TEXT,__text  -[AXAirPodSettingsManager setSettingsChangedBlock:]
+0x189ad53d4  __TEXT,__text  -[AXAirPodSettingsManager ignoreSettingNotifications]
+0x189ad53e0  __TEXT,__text  -[AXAirPodSettingsManager setIgnoreSettingNotifications:]
+0x189ad53e8  __TEXT,__text  -[AXAirPodSettingsManager .cxx_destruct]
+0x189ad5468  __TEXT,__text  _getHUAccessoryCompatibilityUtilitiesClass
+0x189ad553c  __TEXT,__text  ___getHUAccessoryCompatibilityUtilitiesClass_block_invoke
+0x189ad5604  __TEXT,__text  ___getHUAccessoryHearingSettingsClass_block_invoke
+0x189ad56cc  __TEXT,__text  ____prefChangedCallback_block_invoke
+0x189ad56d4  __TEXT,__text  +[AXSwitchControlServer server]
+0x189ad571c  __TEXT,__text  ___31+[AXSwitchControlServer server]_block_invoke
+0x189ad574c  __TEXT,__text  -[AXSwitchControlServer _serviceName]
+0x189ad5758  __TEXT,__text  -[AXSwitchControlServer _connectIfNecessary]
+0x189ad57ac  __TEXT,__text  -[AXSwitchControlServer _didConnectToClient]
+0x189ad583c  __TEXT,__text  -[AXSwitchControlServer _wasDisconnectedFromClient]
+0x189ad58cc  __TEXT,__text  -[AXSwitchControlServer _willClearServer]
+0x189ad595c  __TEXT,__text  -[AXSwitchControlServer _triggerAutomationCommand:]
+0x189ad5aa8  __TEXT,__text  -[AXSwitchControlServer setupAutomation]
+0x189ad5ab0  __TEXT,__text  -[AXSwitchControlServer tearDownAutomation]
+0x189ad5ab8  __TEXT,__text  -[AXSwitchControlServer triggerCommand:]
+0x189ad5c24  __TEXT,__text  -[AXSwitchControlServer currentFocusedElement]
+0x189ad5cdc  __TEXT,__text  -[AXSwitchControlServer lastSpokenPhrases]
+0x189ad5d94  __TEXT,__text  -[AXSwitchControlServer clearSpokenPhrases]
+0x189ad5e24  __TEXT,__text  -[AXSwitchControlServer isScannerActive]
+0x189ad5ee4  __TEXT,__text  -[AXSwitchControlServer isScannerPaused]
+0x189ad5fa4  __TEXT,__text  -[AXSwitchControlServer isAutoScanEnabled]
+0x189ad6064  __TEXT,__text  -[AXSwitchControlServer isManualScanEnabled]
+0x189ad6124  __TEXT,__text  -[AXSwitchControlServer isDwellEnabled]
+0x189ad61e4  __TEXT,__text  -[AXSwitchControlServer headTrackingPoint]
+0x189ad62d8  __TEXT,__text  -[AXSwitchControlServer pointerPoint]
+0x189ad63cc  __TEXT,__text  -[AXSwitchControlServer setPointerPoint:]
+0x189ad6524  __TEXT,__text  -[AXAssertionCoordinator initWithIdentifier:delegate:]
+0x189ad65d4  __TEXT,__text  -[AXAssertionCoordinator acquireAssertionWithReason:]
+0x189ad66fc  __TEXT,__text  ___53-[AXAssertionCoordinator acquireAssertionWithReason:]_block_invoke
+0x189ad674c  __TEXT,__text  -[AXAssertionCoordinator _startTrackingPoorMansAssertion:]
+0x189ad6864  __TEXT,__text  ___58-[AXAssertionCoordinator _startTrackingPoorMansAssertion:]_block_invoke
+0x189ad6948  __TEXT,__text  -[AXAssertionCoordinator _stopTrackingPoorMansAssertion:]
+0x189ad6a60  __TEXT,__text  ___57-[AXAssertionCoordinator _stopTrackingPoorMansAssertion:]_block_invoke
+0x189ad6b24  __TEXT,__text  -[AXAssertionCoordinator dealloc]
+0x189ad6bc8  __TEXT,__text  ___33-[AXAssertionCoordinator dealloc]_block_invoke
+0x189ad6cfc  __TEXT,__text  -[AXAssertionCoordinator delegate]
+0x189ad6d1c  __TEXT,__text  -[AXAssertionCoordinator setDelegate:]
+0x189ad6d28  __TEXT,__text  -[AXAssertionCoordinator identifier]
+0x189ad6d30  __TEXT,__text  -[AXAssertionCoordinator setIdentifier:]
+0x189ad6d3c  __TEXT,__text  -[AXAssertionCoordinator assertionQueue]
+0x189ad6d44  __TEXT,__text  -[AXAssertionCoordinator setAssertionQueue:]
+0x189ad6d50  __TEXT,__text  -[AXAssertionCoordinator assertions]
+0x189ad6d58  __TEXT,__text  -[AXAssertionCoordinator setAssertions:]
+0x189ad6d64  __TEXT,__text  -[AXAssertionCoordinator .cxx_destruct]
+0x189ad6db0  __TEXT,__text  -[AXUIBluetoothDevice initWithDevice:address:helper:]
+0x189ad6e44  __TEXT,__text  -[AXUIBluetoothDevice initWithPeripheral:helper:]
+0x189ad6f00  __TEXT,__text  -[AXUIBluetoothDevice isBTLEDevice]
+0x189ad6f10  __TEXT,__text  -[AXUIBluetoothDevice isClassicDevice]
+0x189ad6f20  __TEXT,__text  -[AXUIBluetoothDevice copyWithZone:]
+0x189ad6fb4  __TEXT,__text  -[AXUIBluetoothDevice compare:]
+0x189ad7024  __TEXT,__text  -[AXUIBluetoothDevice isEqual:]
+0x189ad7098  __TEXT,__text  -[AXUIBluetoothDevice isEqualToDevice:]
+0x189ad7114  __TEXT,__text  -[AXUIBluetoothDevice hash]
+0x189ad714c  __TEXT,__text  -[AXUIBluetoothDevice hasAddress:]
+0x189ad71a4  __TEXT,__text  -[AXUIBluetoothDevice device]
+0x189ad71ac  __TEXT,__text  -[AXUIBluetoothDevice setDevice:]
+0x189ad71c0  __TEXT,__text  -[AXUIBluetoothDevice clearName]
+0x189ad71cc  __TEXT,__text  -[AXUIBluetoothDevice isNameCached]
+0x189ad71dc  __TEXT,__text  -[AXUIBluetoothDevice name]
+0x189ad7364  __TEXT,__text  -[AXUIBluetoothDevice address]
+0x189ad7404  __TEXT,__text  -[AXUIBluetoothDevice identifier]
+0x189ad7464  __TEXT,__text  -[AXUIBluetoothDevice type]
+0x189ad749c  __TEXT,__text  -[AXUIBluetoothDevice majorClass]
+0x189ad74d8  __TEXT,__text  -[AXUIBluetoothDevice minorClass]
+0x189ad7514  __TEXT,__text  -[AXUIBluetoothDevice deviceClass]
+0x189ad754c  __TEXT,__text  -[AXUIBluetoothDevice vendorId]
+0x189ad7598  __TEXT,__text  -[AXUIBluetoothDevice productId]
+0x189ad75e4  __TEXT,__text  -[AXUIBluetoothDevice description]
+0x189ad7698  __TEXT,__text  -[AXUIBluetoothDevice paired]
+0x189ad7708  __TEXT,__text  -[AXUIBluetoothDevice connected]
+0x189ad7770  __TEXT,__text  -[AXUIBluetoothDevice connecting]
+0x189ad78c8  __TEXT,__text  -[AXUIBluetoothDevice connectedServices]
+0x189ad78f8  __TEXT,__text  -[AXUIBluetoothDevice connectedServicesCount]
+0x189ad794c  __TEXT,__text  -[AXUIBluetoothDevice isServiceSupported:]
+0x189ad7994  __TEXT,__text  -[AXUIBluetoothDevice authorizedServices]
+0x189ad79d4  __TEXT,__text  -[AXUIBluetoothDevice connect]
+0x189ad7a18  __TEXT,__text  -[AXUIBluetoothDevice connectWithServices:]
+0x189ad7a64  __TEXT,__text  -[AXUIBluetoothDevice disconnect]
+0x189ad7be8  __TEXT,__text  -[AXUIBluetoothDevice setPIN:]
+0x189ad7c3c  __TEXT,__text  -[AXUIBluetoothDevice acceptSSP:]
+0x189ad7c88  __TEXT,__text  -[AXUIBluetoothDevice unpair]
+0x189ad7ce0  __TEXT,__text  -[AXUIBluetoothDevice peripheral]
+0x189ad7ce8  __TEXT,__text  -[AXUIBluetoothDevice setPeripheral:]
+0x189ad7cf4  __TEXT,__text  -[AXUIBluetoothDevice .cxx_destruct]
+0x189ad7d40  __TEXT,__text  +[AXEventIOSMACPointerInfoRepresentation supportsSecureCoding]
+0x189ad7d48  __TEXT,__text  -[AXEventIOSMACPointerInfoRepresentation encodeWithCoder:]
+0x189ad7df8  __TEXT,__text  -[AXEventIOSMACPointerInfoRepresentation initWithCoder:]
+0x189ad7ecc  __TEXT,__text  -[AXEventIOSMACPointerInfoRepresentation copyWithZone:]
+0x189ad7f3c  __TEXT,__text  -[AXEventIOSMACPointerInfoRepresentation pressed]
+0x189ad7f44  __TEXT,__text  -[AXEventIOSMACPointerInfoRepresentation setPressed:]
+0x189ad7f4c  __TEXT,__text  -[AXEventIOSMACPointerInfoRepresentation buttonIndex]
+0x189ad7f54  __TEXT,__text  -[AXEventIOSMACPointerInfoRepresentation setButtonIndex:]
+0x189ad7f5c  __TEXT,__text  -[AXEventIOSMACPointerInfoRepresentation location]
+0x189ad7f64  __TEXT,__text  -[AXEventIOSMACPointerInfoRepresentation setLocation:]
+0x189ad7f6c  __TEXT,__text  -[AXRedirectedEventDetector init]
+0x189ad8018  __TEXT,__text  -[AXRedirectedEventDetector _flushEventsIfNecessary]
+0x189ad805c  __TEXT,__text  -[AXRedirectedEventDetector addEvent:]
+0x189ad8104  __TEXT,__text  ___38-[AXRedirectedEventDetector addEvent:]_block_invoke
+0x189ad8218  __TEXT,__text  ___38-[AXRedirectedEventDetector addEvent:]_block_invoke_2
+0x189ad8264  __TEXT,__text  -[AXRedirectedEventDetector isRedirectedEvent:]
+0x189ad8344  __TEXT,__text  ___47-[AXRedirectedEventDetector isRedirectedEvent:]_block_invoke
+0x189ad84f8  __TEXT,__text  -[AXRedirectedEventDetector _elapsedTimeFrom:to:]
+0x189ad8570  __TEXT,__text  -[AXRedirectedEventDetector recentEvents]
+0x189ad8578  __TEXT,__text  -[AXRedirectedEventDetector setRecentEvents:]
+0x189ad8584  __TEXT,__text  -[AXRedirectedEventDetector flushEventsTimer]
+0x189ad858c  __TEXT,__text  -[AXRedirectedEventDetector setFlushEventsTimer:]
+0x189ad8598  __TEXT,__text  -[AXRedirectedEventDetector .cxx_destruct]
+0x189ad85dc  __TEXT,__text  +[AXRedirectedEventDetector(UnitTesting) flushEvents]
+0x189ad85ec  __TEXT,__text  +[AXRedirectedEventDetector(UnitTesting) setFlushEventsTimerDelay:]
+0x189ad85f8  __TEXT,__text  +[AXFirstResponderValueChangeManager sharedInstance]
+0x189ad8640  __TEXT,__text  ___52+[AXFirstResponderValueChangeManager sharedInstance]_block_invoke
+0x189ad8670  __TEXT,__text  -[AXFirstResponderValueChangeManager outputValueChangeForNewValue:oldValue:selectedTextRange:shouldEchoDeletion:isSingleInsert:feedbackType:lastKeyboardKeyPress:]
+0x189ad86a8  __TEXT,__text  -[AXFirstResponderValueChangeManager outputValueChangeForNewValue:oldValue:selectedTextRange:shouldEchoDeletion:isSingleInsert:feedbackType:lastKeyboardKeyPress:shouldOutputSingleCharactersOnly:]
+0x189ad8720  __TEXT,__text  -[AXFirstResponderValueChangeManager outputValueChangeForNewValue:oldValue:selectedTextRange:oldSelectedTextRange:shouldEchoDeletion:isSingleInsert:feedbackType:lastKeyboardKeyPress:]
+0x189ad8794  __TEXT,__text  -[AXFirstResponderValueChangeManager outputValueChangeForNewValue:oldValue:isFirstResponderValid:selectedTextRange:oldSelectedTextRange:shouldEchoDeletion:optionalValueChangeType:derivedValueChangeType:didHitBorder:isBreakSpaceCharacter:isSingleInsert:selectionDeleted:feedbackType:textOperationOccur
+0x189ad8810  __TEXT,__text  -[AXFirstResponderValueChangeManager _outputValueChangeForNewValue:oldValue:isFirstResponderValid:selectedTextRange:oldSelectedTextRange:shouldEchoDeletion:optionalValueChangeType:derivedValueChangeType:didHitBorder:isBreakSpaceCharacter:isSingleInsert:selectionDeleted:feedbackType:textOperationOccu
+0x189ad9fc0  __TEXT,__text  -[AXFirstResponderValueChangeManager _handleApostropheIfNeeded:]
+0x189ada03c  __TEXT,__text  -[AXFirstResponderValueChangeManager _handleAttributedApostropheIfNeeded:]
+0x189ada09c  __TEXT,__text  -[AXFirstResponderValueChangeManager wordBreakSet]
+0x189ada0f0  __TEXT,__text  +[NSCharacterSet(AXFRExtras) whitespaceNewlineAndSpecialCharacterSet]
+0x189ada2cc  __TEXT,__text  +[NSCharacterSet(AXFRExtras) wordBreakCharacterSet]
+0x189ada380  __TEXT,__text  -[NSString(AXFRExtras) stringByTrimmingEmptySpaceEdges]
+0x189ada3d8  __TEXT,__text  -[AXAssertionWorkItem initWithType:identifier:isAcquisition:]
+0x189ada480  __TEXT,__text  -[AXAssertionWorkItem type]
+0x189ada488  __TEXT,__text  -[AXAssertionWorkItem identifier]
+0x189ada490  __TEXT,__text  -[AXAssertionWorkItem acquire]
+0x189ada498  __TEXT,__text  -[AXAssertionWorkItem retries]
+0x189ada4a0  __TEXT,__text  -[AXAssertionWorkItem setRetries:]
+0x189ada4a8  __TEXT,__text  -[AXAssertionWorkItem .cxx_destruct]
+0x189ada4e0  __TEXT,__text  -[AXServerActionHandlerHolder setHandler:]
+0x189ada4e8  __TEXT,__text  -[AXServerActionHandlerHolder identifier]
+0x189ada4f0  __TEXT,__text  -[AXServerActionHandlerHolder setIdentifier:]
+0x189ada4f8  __TEXT,__text  -[AXServerActionHandlerHolder .cxx_destruct]
+0x189ada530  __TEXT,__text  -[AXServer init]
+0x189ada5c0  __TEXT,__text  -[AXServer dealloc]
+0x189ada624  __TEXT,__text  -[AXServer serverIdentifier]
+0x189ada71c  __TEXT,__text  ___28-[AXServer serverIdentifier]_block_invoke
+0x189ada7c4  __TEXT,__text  -[AXServer sendSimpleMessage:]
+0x189ada7cc  __TEXT,__text  -[AXServer sendSimpleMessage:enqueueError:]
+0x189ada834  __TEXT,__text  -[AXServer sendSimpleMessageWithResult:]
+0x189ada8dc  __TEXT,__text  -[AXServer sendSimpleMessageWithObjectResult:]
+0x189adaa44  __TEXT,__text  -[AXServer sendMessage:]
+0x189adaa4c  __TEXT,__text  -[AXServer _sendMessage:error:]
+0x189adaac8  __TEXT,__text  -[AXServer sendAsynchronousMessage:replyOnQueue:boolResultHandler:]
+0x189adab74  __TEXT,__text  ___67-[AXServer sendAsynchronousMessage:replyOnQueue:boolResultHandler:]_block_invoke
+0x189adabb0  __TEXT,__text  -[AXServer sendAsynchronousMessage:replyOnQueue:objectResultHandler:]
+0x189adac78  __TEXT,__text  ___69-[AXServer sendAsynchronousMessage:replyOnQueue:objectResultHandler:]_block_invoke
+0x189adad98  __TEXT,__text  -[AXServer sendAsynchronousMessage:replyOnQueue:handler:]
+0x189adaec8  __TEXT,__text  ___57-[AXServer sendAsynchronousMessage:replyOnQueue:handler:]_block_invoke
+0x189adaee0  __TEXT,__text  -[AXServer _processAssertionBacklog]
+0x189adb394  __TEXT,__text  ___36-[AXServer _processAssertionBacklog]_block_invoke
+0x189adb3c8  __TEXT,__text  -[AXServer _initializeAssertionBookkeeping]
+0x189adb4b0  __TEXT,__text  -[AXServer acquireAssertionWithType:identifier:]
+0x189adb590  __TEXT,__text  ___48-[AXServer acquireAssertionWithType:identifier:]_block_invoke
+0x189adb608  __TEXT,__text  -[AXServer relinquishAssertionWithType:identifier:]
+0x189adb6e8  __TEXT,__text  ___51-[AXServer relinquishAssertionWithType:identifier:]_block_invoke
+0x189adb760  __TEXT,__text  -[AXServer _didConnectToClient]
+0x189adb764  __TEXT,__text  -[AXServer _wasDisconnectedFromClient]
+```
+First 1,000 of 5,487.
+

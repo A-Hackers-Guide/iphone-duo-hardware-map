@@ -1,0 +1,3128 @@
+# `com.apple.driver.AppleAVE2`
+
+- Name: H264 Video Encoder
+- Version: `913.64.1`
+- UUID: `48698304-B011-3A62-8A6B-2D5B63FF35EF`
+- Source version: `913.64.1.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.FairPlayIOKit`](com.apple.driver.FairPlayIOKit.md) 3.3.0d1, [`com.apple.iokit.CoreAnalyticsFamily`](com.apple.iokit.CoreAnalyticsFamily.md) 1.0, [`com.apple.iokit.IOSurface`](com.apple.iokit.IOSurface.md) 52.6.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.4.1, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.4.1, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.4.1, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.4.1, [`com.apple.kpi.private`](com.apple.kpi.private.md) 22.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (1) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/ave`](../devicetree/root__arm-io__ave.md) | `AppleAVE2Driver` | `ave2` |
+
+## IOKit personalities (1) [KC]
+
+### ave2
+- `CFBundleIdentifier`: `com.apple.driver.AppleAVE2`
+- `IOClass`: `AppleAVE2Driver`
+- `IONameMatch`:
+  - `ave2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleAVE2`
+- `IOProviderClass`: `AppleARMIODevice`
+- `IOUserClientClass`: `AppleAVE2UserClient`
+
+
+## C++ classes (7) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AVE_Drv` | 0x1a0 |  |
+| `AVE_HwC` | 0x198 |  |
+| `AVE_Thread` | 0x28 |  |
+| `AVE_WorkPool` | 0x2678 | AVE_Thread |
+| `AVE_WorkThread` | 0x40 | AVE_Thread |
+| `AppleAVE2Driver` | 0xe8 | IOService → IORegistryEntry |
+| `AppleAVE2UserClient` | 0x168 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1800)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x000f30da off=0x0029a590-0x0038d66a addr=0xfffffe000729e590-0xfffffe000739166a r--/r--   __TEXT            
+	sz=0x0004b6c0 off=0x0029ad00-0x002e63c0 addr=0xfffffe000729ed00-0xfffffe00072ea3c0               __TEXT.__const            
+	sz=0x00049270 off=0x002e63c0-0x0032f630 addr=0xfffffe00072ea3c0-0xfffffe0007333630               __TEXT.__cstring          (CstringLiterals)
+	sz=0x0005e03a off=0x0032f630-0x0038d66a addr=0xfffffe0007333630-0xfffffe000739166a               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x001d24f8 off=0x017ab080-0x0197d578 addr=0xfffffe00087af080-0xfffffe0008981578 r-x/r-x   __TEXT_EXEC       
+	sz=0x001d1d48 off=0x017ab080-0x0197cdc8 addr=0xfffffe00087af080-0xfffffe0008980dc8          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000007b0 off=0x0197cdc8-0x0197d578 addr=0xfffffe0008980dc8-0xfffffe0008981578          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x000007b8 off=0x04932328-0x04932ae0 addr=0xfffffe000b936328-0xfffffe000b936ae0 rw-/rw-   __DATA            
+	sz=0x000002c8 off=0x04932328-0x049325f0 addr=0xfffffe000b936328-0xfffffe000b9365f0               __DATA.__data             
+	sz=0x00000130 off=0x00000000-0x00000130 addr=0xfffffe000b9365f0-0xfffffe000b936720               __DATA.__common           (Zerofill)
+	sz=0x000003c0 off=0x00000000-0x000003c0 addr=0xfffffe000b936720-0xfffffe000b936ae0               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00012398 off=0x00fd3358-0x00fe56f0 addr=0xfffffe0007fd7358-0xfffffe0007fe96f0 rw-/rw-   __DATA_CONST      
+	sz=0x00000038 off=0x00fd3358-0x00fd3390 addr=0xfffffe0007fd7358-0xfffffe0007fd7390         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000038 off=0x00fd3390-0x00fd33c8 addr=0xfffffe0007fd7390-0xfffffe0007fd73c8         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x0000ad60 off=0x00fd33c8-0x00fde128 addr=0xfffffe0007fd73c8-0xfffffe0007fe2128         __DATA_CONST.__const            
+	sz=0x00005300 off=0x00fde128-0x00fe3428 addr=0xfffffe0007fe2128-0xfffffe0007fe7428         __DATA_CONST.__kalloc_type      
+	sz=0x00001e00 off=0x00fe3428-0x00fe5228 addr=0xfffffe0007fe7428-0xfffffe0007fe9228         __DATA_CONST.__kalloc_var       
+	sz=0x000003d8 off=0x00fe5228-0x00fe5600 addr=0xfffffe0007fe9228-0xfffffe0007fe9600         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000e8 off=0x00fe5600-0x00fe56e8 addr=0xfffffe0007fe9600-0xfffffe0007fe96e8         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000008 off=0x00fe56e8-0x00fe56f0 addr=0xfffffe0007fe96e8-0xfffffe0007fe96f0         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 275 at 0x04ad3008
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     48698304-B011-3A62-8A6B-2D5B63FF35EF
+008: LC_SOURCE_VERSION           913.64.1.0.0
+009: LC_FUNCTION_STARTS          offset=0x004a98d58 size=0x1338
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleAVE2`
+- `CFBundleGetInfoString`: `Copyright © 2016-2022 Apple Inc. All rights reserved.`
+- `CFBundleIdentifier`: `com.apple.driver.AppleAVE2`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `H264 Video Encoder`
+- `CFBundleNumericVersion`: `0`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `913.64.1`
+- `CFBundleSignature`: `aapl`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `913.64.1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleAVE2.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198903069296`
+- `_PrelinkExecutableRelativePath`: `AppleAVE2`
+- `_PrelinkExecutableSize`: `2982178`
+- `_PrelinkExecutableSourceAddr`: `-2198903069296`
+- `_PrelinkKmodInfo`: `-2198829047000`
+
+## Strings (9953) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+First 3000 of 9953.
+
+**[__TEXT.__cstring]**
+
+- `iPayloadSize >= 0 && piLengthFieldSize != nullptr`
+- `iInFrameNum <= 4`
+- `pInfo->sBufPFSet.sLRSOutput.iAddr != 0`
+- `%lld %d AVE %s: %s:%d %s | invalid L%d%c ref firmware buffer in direct mode %p %d %lld %p %lld | %d %p\n`
+- `Load Stats %s | %p | iClientNum: %d iClientNumOfRt: %d iClientNumOfGOPTh: %d\n`
+- `%lld %d AVE %s: RefMgr %s | %p %lld | L%d: %s\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %p %p %p %p %p %p %p %d\n`
+- `ModeDecision Cfg %s | %p\n`
+- `AVE_Alg_DecideTier`
+- `%lld %d AVE %s: %s::%s:%d failed to send firmware command priority %p %d | %p %d %lld %p %lld | %p %d\n`
+- `(AVE_Cmd_Max + (pFrameInfo->PlaneNumber)) == fwCmdSlot`
+- `VMax`
+- `| %d %d - `
+- `m_psFrameHeader->show_frame == 0 || psSeqHeader->decoder_model_info_present_flag == 0 || psSeqHeader->timing_info.equal_picture_interval != 0`
+- `%lld %d AVE %s: LRME Properties %p %lld %s\n`
+- `%lld %d AVE %s: %s::%s:%d | failed to set short term RPS %d\n`
+- `m_pcSlice != nullptr`
+- `%lld %d AVE %s: DPBBuffer (%d) (frame %d) frame index out of bound (IndexReferenceFrameToBeUsedL0a %d FrameNumberFromIDR %d num_ref_frame %d) -> default to 0.\n`
+- `site.S_AVE_SurfaceEntry`
+- `%lld %d AVE %s: %s::%s Exit %p %d %d->%d %p %p %p %d\n`
+- `site.S_AVE_MemBlk`
+- `%lld %d AVE %s: %s::%s:%d %s | Failed to initialize picture parameter set class %p %llu %p %p\n`
+- `%lld %d AVE %s: %s::%s:%d | failed to set RBSP %d\n`
+- `%lld %d AVE %s: Slice: I pic_order_cnt_lsb %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %lld 0x%llx 0x%x %p %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to allocate SwC %p %d %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %p %p %d %d\n`
+- `AVE_SurfacePool`
+- `ProcessTermination`
+- `FwImage`
+- `AVE_AVC_Slice`
+- `%lld %d AVE %s: %s:%d %s | GGM info is not correct %p %lld %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to find service\n`
+- `%lld %d AVE %s: HEVCHEADERS L1[0] found, poc: %d\n`
+- `AVC_FindMaxSubMbRectSize`
+- `%lld %d AVE %s: %s FPS %f\n`
+- `%lld %d AVE %s: Client%s: %p ID: %lld LambdaModFeature: 0x%x \n`
+- `%lld %d AVE %s: %s:%d SKIP %p %d %lld | %p %d %lld 0x%x %lld | %p %d %lld 0x%x %lld\n`
+- `%lld %d AVE %s: RateControl PF Configuration %s | %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to Reset RC %p %lld %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %llu long term pic num %d %d\n`
+- `AVE_GOP_DecideFeature_SceneCut`
+- `AVE_BPDir_None < eDir && eDir < AVE_BPDir_Max && ppBuf != nullptr && pSize != nullptr`
+- `pSVESched != nullptr && psEUMap != nullptr`
+- `((m_eMode != AVE_DPB_Mode_External) || (iPreferedIdx < m_iBufNum))`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to allocate syntax writer %p %llu %p %d\n`
+- `%lld %d AVE %s: DPBBuffer (%d) (frame %d) selected long term (%d) to be replaced but the frame passed is not long term -> default to short term\n`
+- `pInfo->sSessionCfg.sEnc.sAlgCfg.sRC.eRCMode != AVE_RCMode_None`
+- `type < AVE_DPE_Type_Max`
+- `AVE_QPMod_DecideFeature_StaticBorder`
+- `%s:%d %p Count | `
+- `%lld %d AVE %s: %s::%s Enter %p %lld %p %p %d %lld %p\n`
+- `MinResolutions`
+- `%lld %d AVE %s: DART %s | %p %d | %p %p %p\n`
+- `%lld %d AVE %s: %s 0x%llx %d | %d | %d %d %d %d\n`
+- `AVE_SVEDPB`
+- `DestroySurfaces`
+- `%p %lld ConstantQualityFactor %d %d.%03d\n`
+- `SVESched %s | %p %lld | %d | %d %d %lld %d\n`
+- `TileMap cols=%d rows=%d num=%d\n`
+- `num > 0`
+- `retrieveVMLimits`
+- `%lld %d AVE %s: %s:%d failed to release fence %p %p %p\n`
+- `iFrameNum >= 0`
+- `%lld %d AVE %s: %s:%d %s | invalid entropy coding firmware buffer %p %d %lld %p %lld | %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | HEVC VPS highest_layer_idx_plus1 sum is out of range %d %d %d %d\n`
+- `AssignUnit`
+- `m_pcSurface->GetKernelAddr() <= addr && addr < m_pcSurface->GetKernelAddr() + m_pcSurface->GetSize()`
+- `%lld %d AVE %s: %s::%s:%d Surface Info %p %lld\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %p %p 0x%x %p\n`
+- `%lld %d AVE %s: HEVC PPS: num ref idx default active minus1 of l0 %d l1 %d\n`
+- `%lld %d AVE %s: KeyFrame %s | %p\n`
+- `site.AVE_MD_Crypto`
+- `%lld %d AVE %s: %s:%d %s | failed to create OSSerialize %p %p %p %d %zu\n`
+- `%lld %d AVE %s: %p %lld TileLayout %d,%d\n`
+- `%lld %d AVE %s: PMGR Power Available: %d\n`
+- `psEntry->psBuf != nullptr`
+- `site.AVE_ChkPool`
+- `%lld %d AVE %s: %s::%s Enter %p %d 0x%x %d\n`
+- `AVE_CreateInternalSurfaces`
+- `com.apple.AppleVideoEncoder.ClientStats`
+- `pcBufPool != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | invalid task command %p %d\n`
+- `Power    `
+- `%lld %d AVE %s: %s:%d update %p %lld %p %lld %d %d %d\n`
+- `%lld %d AVE %s: %s Enter %p %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | num slice groups not supported %p %llu %d\n`
+- `Algorithm PF Configuration %s | %p\n`
+- `%lld %d AVE %s: Load Stats %s | %p | iFrameCntOfInput_Rt: %d iFrameCntOfReady_Rt: %d iFrameCntOfRun_Rt: %d iFrameCntOfOutput_Rt: %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong IPC channel buffer size %p %d %d\n`
+- `%lld %d AVE %s: %s Enter %d %d %d %d %d %d\n`
+- `%p %lld RequiredHEVCSequenceParameterSetRepFormatIndex %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to DART map surface %s 0x%llx %d %d %d\n`
+- `CalcDPMThreshold`
+- `%lld %d AVE %s: + DPBBuffer (%d): ###### GetDPBSnapShot ###### FRAME %d -> %s\n`
+- `%lld %d AVE %s: DPBBuffer (%d): SaveContext\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p %lld %p %lld %d %d\n`
+- `%lld %d AVE %s: %p %lld BaseLayerFrameRate %d\n`
+- `%p %lld MasteringDisplayColorVolume Min Luminance 0x%x 0x%x 0x%x 0x%x\n`
+- `%p %lld EncodesDisparity %d\n`
+- `%lld %d AVE %s: %s:%d %s | HEVC VPS vps_max_layers_minus1 is out of range %d %d %d\n`
+- `%lld %d AVE %s: %s Exit %p 0x%lx %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to init mapper %p %d %d %d %d %d\n`
+- `DRL %s | %p %d | %d.%03d %d.%03d - %d.%03d %d.%03d\n`
+- `pProvider != nullptr && pWorkLoop != nullptr && pCfg != nullptr && pDevInfo != nullptr && pSurfaceMgr != nullptr && id < 4`
+- `Mapper Error %p %d | Type: %s Class: %s Error: %s Status: 0x%llx`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %lld %d\n`
+- `AVE_Work_Enc_DecideSchedMode`
+- `m_psSeqHeader->enable_ref_frame_mvs == 0`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to allocate SVEs %p %p %d\n`
+- `piVBVMaxBitRate != nullptr`
+- `%lld %d AVE %s: %s::%s:%d invalid command %p %d | %p %d %lld %p %lld | %d\n`
+- `psGGMInfo->saGGMRefInfo[i].iGGNum >= 0 && psGGMInfo->saGGMRefInfo[i].iGGNum <= 32 && psGGMInfo->saGGMRefInfo[i].iValidGGNum >= 0 && psGGMInfo->saGGMRefInfo[i].iValidGGNum <= 32 && psGGMInfo->saGGMRefInfo[i].iValidGGNum <= psGGMInfo->saGGMRefInfo[i].iGGNum`
+- `%p %lld MVHEVCLeftAndRightViewIDs %s\n`
+- `%lld %d AVE %s: %s::%s:%d Recon Unavailable %p %lld %lld\n`
+- `m_psSeqHeader->color_config.subsampling_x == 0`
+- `AVE_Client_DARTUnmapDataSurfaces`
+- `%p QPModFeatureOn 0x%x\n`
+- `%lld %d AVE %s: %s::%s:%d No Free Ref Buffer %p %lld\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid OBU type: %p %llu %d\n`
+- `%lld %d AVE %s: %s:%d %s | invalid profile %d\n`
+- `length > 0 && length < 32`
+- `AVE_Prop_Cfg_GGM_Uninit`
+- `%lld %d AVE %s: %s Exit %p %d\n`
+- `AVE_MD_LAGOP`
+- `pCHM != nullptr && pTimeOut != nullptr && pCmd != nullptr && idx < (AVE_Cmd_Max + (((3 + 2) + 2 + 5 + (2 + 1)) * ((2) < ((63 + 1)) ? (2) : ((63 + 1))))) && pInfo != nullptr`
+- `%lld %d AVE %s: CHM%s: %p ID: %d Work Mode: %d\n`
+- `%lld %d AVE %s: %p %lld EnsureTIJacinto4Compatibility %d\n`
+- `m_pcaIDHwC[pMap->saCHM[j].iID] != nullptr`
+- `%lld %d AVE %s: %s::%s Enter %p 0x%x 0x%x 0x%x 0x%x\n`
+- `%lld %d AVE %s: %p %lld RCMode %d\n`
+- `AVE_Client_GGM_Check_Flush`
+- `%d-%d `
+- `%lld %d AVE %s: %p %lld RequiredMVHEVCSequenceParameterSetIDs %s\n`
+- `%lld %d AVE %s: %s::%s:%d %p %lld %p %lld | %d\n`
+- `Write_tile_group_obu`
+- `m_psSeqHeader->seq_force_screen_content_tools == 2`
+- `%lld %d AVE %s: %s:%d %s | DPBSanityCheck: temp == NULL 2\n`
+- `%p %lld PreemptiveLoadBalancing %d\n`
+- `%lld %d AVE %s: iFrameRate %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d %p | %d %d | %d %d %d | %d %d %d | %d %d | %d %d\n`
+- `ProcessReadyCmd_Sync`
+- `%lld %d AVE %s: %p LookAheadFrameCount %d\n`
+- `%lld %d AVE %s: %s::%s:%d failed to send firmware command complete %p %d | %p %d %lld %p %lld | %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong provider %p %p %p %p %d %p\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d LOG OVERFLOW %lld %lld %d\n`
+- `%lld %d AVE %s: %s::%s:%d failed to destroy chunk buffer %p %p %d\n`
+- `pBufSet->saSrcNeighborLeftPixel[0].iAddr != 0`
+- `ProcessP`
+- `Send`
+- `%lld %d AVE %s: %s:%d %s | failed to create IODMACommand\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to set DCS power and its dependency %p %d %d %d\n`
+- `%lld %d AVE %s: %s:%d failed to release delayed surface %p %p %p\n`
+- `dataSize > 0`
+- `%lld %d AVE %s: %p BlkMaxQP %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p%lld %d\n`
+- `%lld %d AVE %s: %s:%d %s | wrong parameter\n`
+- `%p %lld MCTFGatingType %d\n`
+- `%lld %d AVE %s: %s:%d %p 0x%llx 0x%llx\n`
+- `AVE_WorkPool`
+- `%p RCMinQP %d\n`
+- `%p LambdaModFeatureOn 0x%x\n`
+- `%lld %d AVE %s: %p Bitrate: %d\n`
+- `pCHM != nullptr && pCmd != nullptr && bufIdx < (((3 + 2) + 2 + 5 + (2 + 1)) * ((2) < ((63 + 1)) ? (2) : ((63 + 1)))) && pInfo != nullptr`
+- `%p %lld PrioritizeEncodingSpeedOverQuality %d\n`
+- `%lld %d AVE %s: %s:%d failed to stop client %p %lld %d %lld %d %d\n`
+- `%p QPB %d\n`
+- `%lld %d AVE %s: %s:%d Copy PS info %d %p %d %d %d %d %p\n`
+- `%lld %d AVE %s: %p %lld RequiredHEVCPictureParameterSetID %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d iRdCnt %lld wrap around iWrCnt %lld\n`
+- `%lld %d AVE %s: %s:%d %s | failed to create Out FPS %p\n`
+- `InputScaledData`
+- `AVE_Work_Enc_DecideAV1TileMap`
+- `%lld %d AVE %s: %s::%s:%d %s | unsupportted SVE Sched Mode %p %lld %p %lld %d %d\n`
+- `ChromaFormat`
+- `AVE_AnalyticsService_Stop`
+- `%lld %d AVE %s: %p %lld StrictKeyFrameInterval %d\n`
+- `pClient != nullptr && pUCInfo != nullptr && pCodedHeader != nullptr`
+- `AVE_IOP_CheckIdle_Hypnos`
+- `pClient != nullptr && pFrameInfo != nullptr && pCodedHeader != nullptr`
+- `write_scaling_list_data`
+- `%lld %d AVE %s: %s:%d %s | invalid slice header firmware buffer %p %d %lld %p %lld | %d\n`
+- `%lld %d AVE %s: %s::%s HeartBeat %p %d %d %lld - %lld - %lld | %d [ %s] \n`
+- `pProvider != nullptr && pCfg != nullptr && pDevInfo != nullptr && id < 4 && pSVECtrl != nullptr`
+- `AVE_Work_LRME_PostUpdate`
+- `%lld %d AVE %s: %s:%d CAT_0 0x%x 0x%x | 0x%x\n`
+- `AVE_SurfaceLink`
+- `111222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to complete %p %lld %d\n`
+- `AVE_SVESched_Config`
+- `%lld %d AVE %s: %s:%d I slice qp delta = %d (qp %d pic init qp minus26 %d)\n`
+- `%lld %d AVE %s: %s Exit %p %lld\n`
+- `site.AVE_MD_LAGOP`
+- `%p %lld SEIFeatureOn 0x%llx\n`
+- `Stop         7 `
+- `FullRange`
+- `0x`
+- `%lld %d AVE %s: %p %lld ClientPID %d\n`
+- `pEntry == nullptr || (pEntry != nullptr && pEntry->sEntry.iFrameNum != iFrameNum)`
+- `pcSWriter != nullptr`
+- `AVE_MD_LAGOP_CheckFrameContinuity`
+- `%lld %d AVE %s: %s:%d handled command count %p %d 0x%x 0x%x %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d [%d] %d %d %d %d\n`
+- `AVE_Mapper_Pool_Destroy`
+- `FwClient`
+- `GetInterval`
+- `pcaRecon[AVE_RVRA_Org][layerIdx][k] != nullptr`
+- `%lld %d AVE %s: Client%s: %p ID: %lld RCFeature: 0x%llx LookAhead: %d RCMode: %d Bitrate: %d QP: %d %d %d CRFScale: %d.%06d VBVBitRate: %d VBVBufSize: %d.%06d VBVInitDelay: %d.%06d RCQPRange: [%d, %d]\n`
+- `%lld %d AVE %s: %s::%s Exit %p %d %p %d %d %d\n`
+- `Client %s%s%p %lld`
+- `%p SwFeatureOn 0x%llx\n`
+- `Destroy  `
+- `AVE_IOP_GetCurrTime_Erebus`
+- `%lld %d AVE %s: StrictKeyFrameInterval: %d\n`
+- `AVE_Analytics_CollectGOPMode`
+- `USAGE %s isHEIF %d - slices %d\n`
+- `%lld %d AVE %s: %s::%s:%d interrupt %p %d 0x%x\n`
+- `(AVC_Level_Invalid < eLevel) && (eLevel < AVC_Level_Max)`
+- `%lld %d AVE %s: SVECtrl %s | %p %d | Scratch %d 0x%x\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Failed to write OBU header %p %llu %p %d %d %d\n`
+- `m_pcCmdGate != nullptr`
+- `%lld %d AVE %s: DPBBuffer (%d): frame %d REFERENCE L0b index %d ListPosition %d -> %p\n`
+- `AVE_Analytics_SetEventFieldString`
+- `%lld %d AVE %s: %s:%d %s | wrong parameters %p %p %d %d %p %p\n`
+- `%lld %d AVE %s: GOP Configuration %s | %p\n`
+- `%lld %d AVE %s: %s:%d %s | failed to DART map surface %s x%llx %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to cast OS member function %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | refL0b = NULL %p\n`
+- `update_slice_lt_rps_internal_variables`
+- `%lld %d AVE %s: %s::%s:%d %s | Wrong parameter %p %lld %lld 0x%llx 0x%x %p %p | %f %f %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | fail to dispatch cmd %p %lld %d\n`
+- `AVE_GOP_DecideNumOfBFrame`
+- `ipcChBufSize > 0`
+- `AVE_SVESched_TimingMgr_FetchRefTime`
+- `WriteBit`
+- `DPBFindFirstInvalid`
+- `%lld %d AVE %s: %s:%d %s | invalid level %d\n`
+- `%p %lld MultiPassStorage 0x%llx\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to send message to firmware %p %p %d\n`
+- `InitSVESequentialRC`
+- `%lld %d AVE %s: %s::%s:%d %s | invalid frame type %p %lld %d\n`
+- `ProcessReadyCmd_Flush`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %d %p %p %p\n`
+- `AVE_QPMod_DecideFeature_Dering`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %d 0x%lx %d\n`
+- `m_psSeqHeader->enable_dual_filter == 0`
+- `%lld %d AVE %s: %s::%s:%d %s | Wrong length %p %llu %d\n`
+- `pVPS->vps_max_layers_minus1 < (63 + 1)`
+- `AVE_Drv`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %d 0x%lx %d %ld 0x%x\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong frame type %p %d %p %lld | %d %d %d\n`
+- `nextCoef == ScalingList[i]`
+- `site.S_AVE_Mapper_Pool`
+- `vps_extension`
+- `%lld %d AVE %s: %s::%s:%d %p %lld %d %p 0x%llx 0x%llx 0x%llx 0x%llx %d\n`
+- `AcquireEntry`
+- `AVE_Client_InitUCInfoPool`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to put buffer to buffer pool %p %d | %p %d %lld %p %lld | %p %d %ld | %d\n`
+- `GetBaseAddr`
+- `%lld %d AVE %s: %s::%s:%d LRME RS Result buffer not ready %p %d | %p %d %lld %p %lld\n`
+- `%lld %d AVE %s: %s::%s:%d %p %lld %d %d %d\n`
+- `AppleAVE2UserClient`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to get SVE ID %p %p %d\n`
+- `\"psList->sHead.cqh_first != NULL\" @%s:%d`
+- `%lld %d AVE %s: DPBBuffer: swrcMetaData.cadenceIndex     %d\n`
+- `ave-log`
+- `Client%s: %p ID: %lld Resolution: %dx%d PerfFeature: 0x%x Realtime: %d Priority: %d | %d InputQueue: %d %dMaxFrameRate: %d\n`
+- `Pipe5/MDINTRA`
+- `DARTMapInternalSurfaces`
+- `%lld %d AVE %s: %s:%d %s | wrong log configuration %d %d %p %lld\n`
+- `%lld %d AVE %s: %s::%s Enter %p %d %d %d %d %d %p\n`
+- `pClient != nullptr && pDLBInfo != nullptr`
+- `%lld %d AVE %s: DPE %s | %p %d | Client Count: %s\n`
+- `UpdateOutputBuf_Status`
+- `UpdateStrictIntervalDuration`
+- `%p %lld VBVMaxBitRate %d %d\n`
+- `%lld %d AVE %s: edgeReplEnable %d\n`
+- `cnt <= (20000 * 1)`
+- `CheckPSFlagUp`
+- `%lld %d AVE %s: %p %lld DebugFeature 0x%llx\n`
+- `%lld %d AVE %s: %s:%d %p %d Frame[%d] dis %d | intra %d inter(FS) %d %d %d | SADSumZero %d %d | ZeroMvBinCnt %d %d | RC Cost %d %d %d\n`
+- `%p %lld MoreFramesBeforeStart %d\n`
+- `%lld %d AVE %s: %s Enter %p %p %p %p\n`
+- `%lld %d AVE %s: %s:%d %s | failed to allocate client analytics %p\n`
+- `%lld %d AVE %s: %p ParallelMinFrameCnt %lld\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to calculate realtime FPS %p %lld %p\n`
+- `AVE_QPMod_DecideFeature_ROI`
+- `ok`
+- `%lld %d AVE %s: %p %lld ProfileLevel %s\n`
+- `%lld %d AVE %s: %p %lld STRNumOfBFrameL0 %d\n`
+- `ClearTaskInPriority`
+- `GenerateSPS`
+- `%s%s%s`
+- `Algorithm Configuration %s | %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail initial AVE_MD %p %lld %p %p %p %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %d %p %d\n`
+- `0 <= offset && offset < pInBuf->iSize && 0 <= size && offset + size <= pInBuf->iSize`
+- `Ref0 %d | `
+- `Link`
+- `pIn->eUCCmd == AVE_UCCmd_Process`
+- `%p %lld MCTFEdgeCount %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %p %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %lld %p %d\n`
+- `pDevInfo != nullptr && pSurfaceMgr != nullptr && id < 4 && pSVECtrl != nullptr && pFwImg != nullptr`
+- `%lld %d AVE %s: %s::%s Enter %p %llu %p\n`
+- `%lld %d AVE %s: %p %lld InitialQPI %d\n`
+- `ClearCmdInPriority`
+- `Flush`
+- `AVE_IOP_CheckIdle_Castor`
+- `%lld %d AVE %s: %s:%d %s | wrong parameters %p %p %p %lld %lld %p\n`
+- `psTask != nullptr && size > 0 && ppSurface != nullptr`
+- `AVE_IOP_Start_Aion`
+- `%lld %d AVE %s: %s::%s:%d %p %d AXI2AF register value 0x%x %d 0x%x 0x%x\n`
+- `%p TotalFrameCount %d\n`
+- `%lld %d AVE %s: ConcurrentIndependent %p | %d - %d %d %d\n`
+- `getFrameQP`
+- `CalcStats`
+- `| %d %lld %d - %lld`
+- `%lld %d AVE %s: %s::%s:%d firmware offset %p %d 0x%llx\n`
+- `%lld %d AVE %s: %s::%s:%d %s | invalid command %p %d %d %lld\n`
+- `%lld %d AVE %s: %s::%s:%d Frame Reference Count %p %d | %p %d %lld %p %lld | %d %d %d | %p %d | %lld 0x%x %lld | %p %d %d\n`
+- `%p Feature: 0x%llx\n`
+- `%lld %d AVE %s: surfaces are not released properly %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d L0 Ref Unavailable %p %lld %lld\n`
+- `m_psSeqHeader->enable_order_hint == 0`
+- `%lld %d AVE %s: %p %lld DLBType %d\n`
+- `%lld %d AVE %s: %s:%d %s | fail to find buffer from UC info pool %p %p %d %d\n`
+- `%lld %d AVE %s: %p CmdTimeOutMode %d\n`
+- `ReleaseFence`
+- `%lld %d AVE %s: %s:%d %s | wrong parameter %p\n`
+- `AVE_CHM_DupCmd`
+- `AVE_Prop_Cfg_DMV_Init`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to initialize all HwC %p %p %d %d %d 0x%llx 0x%llx %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %p %d %d %p %p\n`
+- `%lld %d AVE %s: %s Exit %d %d %d %p %d\n`
+- `SetIdle`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %d %lld %d %d %p %d\n`
+- `LOSSLESS %s\n`
+- `pClient != nullptr && pIOClient != nullptr && pIODrv != nullptr`
+- `%lld %d AVE %s: ResolutionSet %p | %d - %d %d %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %d %lld %d %p %d\n`
+- `0x%x`
+- `Halt         2 `
+- `DevCap Perf %s | %p | %d\n`
+- `%p MCTFPreFiltAdjType %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %p %p %p %p %p %p %p %d %p %p\n`
+- `site.HEVC_RPS`
+- `psSeqHeader != nullptr && piBuf != nullptr && iBufSize > 0 && piSize != nullptr`
+- `%lld %d AVE %s: %p DRL %d | %d.%03d %d.%03d - %d.%03d %d.%03d\n`
+- `22222212222`
+- `%lld %d AVE %s: %s::%s Enter %p %d %d %d\n`
+- `Trigger`
+- `%lld %d AVE %s: %s::%s Exit %p %d %d %d %d %d %p %d\n`
+- `ProcessInputCmd_Open`
+- `pClient->sSessionCfg.sEnc.sSliceMap.iNum > 0`
+- `%lld %d AVE %s: Command Count: %lld\n`
+- `%lld %d AVE %s: %s::%s Exit %p %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d | %p %d %lld %p %lld | %d %p %ld\n`
+- `m_pcProvider != nullptr && m_pcPerfSet != nullptr`
+- `NumberOfInterPMB         %d\n`
+- `%lld %d AVE %s: %s::%s:%d create thread %p %d %p %d\n`
+- `pInfo->saHEVC_SPS[i].separate_colour_plane_flag == 0`
+- `pVPS->layer_id_in_nuh[i] < (63 + 1)`
+- `ClearRC`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to initialize OS Driver %p %p %d\n`
+- `%p KernelVerbose 0x%llx\n`
+- `AVE_QPMod_DecideFeature_HDRPQ`
+- `%lld %d AVE %s: LRME Configuration %s | %p\n`
+- `%lld %d AVE %s: %s:%d wrong chip type %d\n`
+- `pIn != nullptr && pOut != nullptr`
+- `%lld %d AVE %s: %s:%d P slice qp delta = %d (qp %d pic init qp minus26 %d)\n`
+- `%p %lld CalculateMeanSquaredError %d\n`
+- `HTPC`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to create work loop %p\n`
+- `12221211`
+- `%lld %d AVE %s: %s::%s:%d %s | SVE DPB update failed %p %d | %p %d %lld %p %lld | %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | starting IOP time out %p %d %d\n`
+- `222111222222211122222221112222222111222222211122222221112222222111222222211122222221112222222111222222211122222221112222222111222222211122222221112222222111222222211122222221112222222111222222211122222221112111211121112`
+- `Write_loop_filter_params`
+- `%lld %d AVE %s: %s Enter %p %p %d\n`
+- `CABAC`
+- `%lld %d AVE %s: %p %lld H264EntropyMode %d\n`
+- `ProcessIntr_DMV_OutputData`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to init hevc sps %p %lld %d\n`
+- `%lld %d AVE %s: %s Enter %p %d %p\n`
+- `m_psSeqHeader->color_config.color_range == 1`
+- `AVE_Prop_PFCfg_MCTF_Uninit`
+- `AVE_Client_LRME_Check_Stop`
+- `%lld %d AVE %s: %s:%d %s | wrong state %p %lld %d %p %p %p %d\n`
+- `%lld %d AVE %s: %p RefGapOfBFrameL0 %d\n`
+- `AVE_RC_DecideMode`
+- `DevCap PDMap %s | %p \n`
+- `pIn->iUCInfoIdx >= 0`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to open one client %p %p %p %d\n`
+- `%p %lld MaxKeyFrameInterval %d\n`
+- `AVE_CHM_SetDataInfo_FwBuf`
+- `%lld %d AVE %s: %s::%s:%d %p %d %d | %lld %d - %lld\n`
+- `m_psExtProcTimer != nullptr`
+- `pDuration != nullptr`
+- `%lld %d AVE %s: %s::%s Enter %p%d %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create internal surfaces %p %lld %p %lld %d\n`
+- `%s - debl %d iMaxKeyFrameInterval %d\n`
+- `AVE_AVC_SetSPS`
+- `AVE_IOP_GetCurrTime_Acis`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create IPC memory pool %p %d 0x%llx %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to initial SVE DPB %p %lld %p %lld\n`
+- `iScheduleMode < (sizeof(gsc_piaAVE_Analytics_ScheduleMode) / sizeof(*gsc_piaAVE_Analytics_ScheduleMode))`
+- `%lld %d AVE %s: DPBBuffer (%d): REF # %d SURFACE ID %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | can not find matched firmware image %p %d %d\n`
+- `AVE_IOP_CheckIdle_Nyx`
+- `AVE_IOP_Start_Panda`
+- `%lld %d AVE %s: %p %lld MVHEVCVideoLayerIDs %s\n`
+- `%p %lld StrictKeyFrameIntervalDuration %d.%03d\n`
+- `pInfo->sBufPFSet.saTranscodedCDF[0].iAddr != 0`
+- `%lld %d AVE %s: %s:%d %s | fail to initialize LRSOutput Surface Pool %p %lld\n`
+- `%lld %d AVE %s: %p HwFeatureOn 0x%llx\n`
+- `StartUp  `
+- `IOP_Mid2`
+- `GetDPBSnapShot`
+- `%p %lld MasteringDisplayColorVolume White Point 0x%x 0x%x 0x%x 0x%x\n`
+- `%lld %d AVE %s: %p %lld EnableMultiReferenceP %d\n`
+- `%lld %d AVE %s: %s::%s:%d failed to send firmware command start %p %d | %p %d %lld %p %lld | %p %d\n`
+- `AVE_Enc_DecideConcurrentMode`
+- `%lld %d AVE %s: %s::%s:%d %p %lld | %d %lld %d %d 0x%08x %d %d\n`
+- `pEntry != nullptr && pID != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong sequence %p %lld %p %p %p\n`
+- `%p %lld ContentLightLevelInfo %d\n`
+- `%p %lld VBVInitialDelay %d.%03d\n`
+- `(pCmd != nullptr) && (pTask != nullptr)`
+- `%lld %d AVE %s: %s:%d %s | AV1 MCTF strength count out of range %d %d [0 %d]\n`
+- `ProcessReadyCmd_Start`
+- `%lld %d AVE %s: %s::%s:%d L0 Ref Unavailable %p %lld %lld %lld %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | recon buffer invalid %p %lld %lld %p %p\n`
+- `%lld %d AVE %s: %s:%d %s | refL1 = NULL\n`
+- `%lld %d AVE %s: %s:%d %s | wrong parameters %p %lld 0x%x %p %p %d %p\n`
+- `%lld %d AVE %s: %s::%s Exit %p 0x%x 0x%x 0x%x 0x%x %d\n`
+- `m_saRefBuf[i].psBuf != nullptr && m_saRefBuf[i].psLowResBuf != nullptr`
+- `GetEntryByPOC`
+- `%lld %d AVE %s: %s::%s:%d %s | IDR reference invalid %p %lld | %d %d %d\n`
+- `pIn != nullptr && pOut != nullptr && pAsyncWakePort != nullptr && pAsyncReference != nullptr`
+- `s->sRefInfo.iaNum[AVE_RefDir_Pos] > 0`
+- `pRes != nullptr`
+- `ForcePowerOff`
+- `m_pcFence != NULL`
+- `CreateInternalSurfaces`
+- `segmentation_params->feature_enabled[i][j] == 0`
+- `%lld %d AVE %s: %s::%s:%d AVE_Drv::IO_start %p %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create chunk buffer %p 0x%x %d %d %p\n`
+- `Acquire`
+- `%lld %d AVE %s: %s::%s:%d %s | failed in IntraPred init %p %lld %d %d %d %d %d\n`
+- `AppendCmd`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to receive message from firmware %p %d %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %lld get stats %lld | %d - %d %d | %d %d %d %d %d | %d %lld %d\n`
+- `%lld %d AVE %s: DPBBuffer (%d): REORDERING L0a! frame %d type %d index %d ListPosition %d\n`
+- `site.AVE_TBlkPool`
+- `AVE_Prop_Cfg_AVC_Uninit`
+- `res`
+- `AVE_PrintSurfaceInfoSet`
+- `SetDART`
+- `AVE_SVESched_Process`
+- `LRME PF Properties %p %lld %s\n`
+- `CalcInputQueueMinNum`
+- `%lld %d AVE %s: %s:%d %s | failed to create command pipeline %p\n`
+- `%lld %d | `
+- `AVX_SyntaxWriter`
+- `%lld %d AVE %s: %s::%s:%d %s | No free PTS pool %p %lld %p %lld\n`
+- `%lld %d AVE %s: LastFrame: %lld\n`
+- `%lld %d AVE %s: %s::%s:%d %s | number of CTRR segments is out of range %p %d %d\n`
+- `%lld %d AVE %s: DLBUnitCfg %s | %p | %d - %d %d || %s\n`
+- `%lld %d AVE %s: %s Enter %p %p %p\n`
+- `%lld %d AVE %s: %s::%s:%d fail to start IOP %p %d | %p %d %lld %p %lld | %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | could not find negative ref %p %lld %lld %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d total mapped info %p %d %d %d %llx\n`
+- `%lld %d AVE %s: %s::%s:%d SceneCut Frame # %d\n`
+- `Generate`
+- `pClient != nullptr`
+- `SendWPCmd_Complete`
+- `pName != nullptr && pID != nullptr`
+- `AVE_Log_UpdateConsole`
+- `%lld %d AVE %s: %s::%s Enter %p %d 0x%x %d %d\n`
+- `VMid`
+- `%lld %d AVE %s: BestMVSum[%d].iTotalMBNum %d\n`
+- `FwLog %s | %p %d | %p %p %p\n`
+- `%lld %d AVE %s: %s:%d no event sent\n`
+- `AVE_Client_AppendCmd`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to create Sw timer %p %p\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %d %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to get negative ref poc %p %lld %lld %d %d\n`
+- `AVE_Log_Update`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %llu %p %p %p %d %p\n`
+- `%lld %d AVE %s: %s:%d prepare event %s\n`
+- `%lld %d AVE %s: %s::%s:%d %s | invalid command counter %p %d %d\n`
+- `%lld %d AVE %s: %s:%d failed to destroy ExUCInfoPool %p %lld %p %d\n`
+- `%lld %d AVE %s: %s:%d %s | fail to allocate buffer from UC info pool %p %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to reset COM %p %lld %p %lld %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to iovmMapMemory %p %d 0x%x\n`
+- `%lld %d AVE %s: %s::%s Enter %p %d %d %p %p %p\n`
+- `pClient->pcOutFPS != nullptr`
+- `%p FrameRate %d\n`
+- `%p RCMode %d\n`
+- `AVE_RC_DecideFeature_RelaxBitRate`
+- `%lld %d AVE %s: %s::%s:%d failed to create MCC %p %p %p %p %d\n`
+- `m_pcDRC != nullptr`
+- `CreateSurfaces`
+- `site.AVC_PPS`
+- `AVE_IOP_Start_Ersa`
+- `P`
+- `%p %lld GOPFeatureOn 0x%x\n`
+- `GetIdleThreadID`
+- `%lld %d AVE %s: %s:%d %s | wrong parameters %p %p %d\n`
+- `1112112`
+- `AVE_IOP_GetCurrTime_Hypnos`
+- `AVE_RegCfg_Destroy`
+- `PTS2DTS: %s | %p\n`
+- `%lld %d AVE %s: %p %lld PerfFeatureOn 0x%x\n`
+- `%lld %d AVE %s: %s:%d %s | wrong parameters %p %p %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to do kernel mapping %p %lld %s\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to do DART mapping %p %lld %s %d %p %p 0x%llx 0x%llx %d\n`
+- `m_psFrameHeader->show_existing_frame == 0`
+- `m_psFrameHeader->frame_refs_short_signaling == 0`
+- `site.sIOProcessorChannelDescriptor`
+- `UpdateMaxInterval`
+- `AVC_FindMaxMvsPer2Mb`
+- `%lld %d AVE %s: %s Enter %p %p %d %p\n`
+- `%lld %d AVE %s: SwC %s | %p %d | State: %d Global Configuration: %p DeviceInfo: %p \n`
+- `ProcessLDB`
+- `%lld %d AVE %s: %s::%s wrong client number %p %d %d\n`
+- `%lld %d AVE %s: DPBBuffer (%d): Entry %d valid\n`
+- `pDevInfo != nullptr`
+- `%lld %d AVE %s: %s:%d %s | wrong common parameters %p %lld %d\n`
+- `%lld %d AVE %s: DPBBuffer (%d): RemoveDPBEntry ListPosition %d\n`
+- `%lld %d AVE %s: %p %lld ColorPrimaries %d\n`
+- `Encrypt`
+- `%lld %d AVE %s: %s::%s:%d wrong parameters %d %d\n`
+- `m_psFrameHeader->frame_type == AV1_FrameType_Key`
+- `AVE_TaskCmd_Crypto`
+- `%lld %d AVE %s: UsedByCurrPicS0[%d] %hhu\n`
+- `%lld %d AVE %s: %p %lld ConstantBitRate %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | wrong slice number %p %d %lld %p %lld | %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to get Mini-Device %p %lld %lld\n`
+- `%lld %d AVE %s: %s:%d %s | refL0 = NULL\n`
+- `%p %lld PerceptualQualityOptimization %d\n`
+- `%lld %d AVE %s: %s::%s:%d failed to notify command %p %d %p %d %d\n`
+- `AVE_Client_PreUpdate`
+- `%lld %d AVE %s: %s:%d %d.%03d %d.%03d %d.%03d %d.%03d 0x%llx %d.%03d %d %d\n`
+- `euID < 4 && 0 <= mapperID && mapperID < 2 && pOut != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid seq force integer mv %p %llu %d\n`
+- `%lld %d AVE %s: %p %lld PropertyMode %d\n`
+- `NumberOfFreePool: %d\n`
+- `HwC %s | %p %d | State: %d Provider: %p WorkLoop: %p Global Configuration: %p DeviceInfo: %p \n`
+- `%lld %d AVE %s: %s:%d %s | failed to allocate DART Pool %d\n`
+- `AcquireAutoFence`
+- `%lld %d AVE %s: %p %lld NumOfTemporalLayer %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to get low qp info entry %p %lld | %lld %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | faild to map memory\n`
+- `offset >= 0 && offset <= size && offset % 64 == 0 && pInfo->sBufPFSet.uInputData.sLinear.saCIBuf[AVE_BufIdx_Chroma].saIBuf[AVE_BufIdx_Data].iSize >= 0 && pInfo->sBufPFSet.uInputData.sLinear.saCIBuf[AVE_BufIdx_Chroma].saIBuf[AVE_BufIdx_Data].iAddr % 64 ==0`
+- `edgeReplEnable %d\n`
+- `Surface info: \n`
+- `222211111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111211111111111111111111111111111112222122222222222222222222222221111111111111111111122222222222222222222221112222122222222222222222222222221111111111111111111122222222222222222222221`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create the client %p %lld %p %p %d %p %p\n`
+- `pcPFInfo != nullptr`
+- `%lld %d AVE %s: %p %lld PerfFeatureOff 0x%x\n`
+- `Frame:%lld | PTS: %lld-%d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to create the analytics service\n`
+- `%lld %d AVE %s: %s::%s Enter %p %p %p %p %p %d %p %d\n`
+- `AVE_Ref_DecideFeature_WeightedPrediction`
+- `AVE_IOP_GetCurrTime64`
+- `DARTMapSurface`
+- `pFPS != nullptr`
+- `pSurface != nullptr && iMsgBufferSize != 0`
+- `%lld %d AVE %s: %s:%d %s | failed to match the notifier %p %p\n`
+- `%p %lld SpatialAdaptiveQPLevel %d\n`
+- `SetDPE`
+- `%lld %d AVE %s: %s::%s Enter %p %d %d 0x%x\n`
+- `site.S_AVE_SVESched_TimingMgr`
+- `AVE_UCCmd_CheckParam_Close`
+- `psLimit != nullptr`
+- `IOAVE%sCapabilities`
+- `GetStats`
+- `Memory Debug Begin %p %s | %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to update output buffer status %p %lld | %p %d %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | IOService::open failed %p %p %d\n`
+- `IsDPBEntryValid`
+- `Analytics: %s(%s) %s(%s) %s(%s) %s(%s) %s(%s) %s(%d) %s(%d) %s(%s) %s(%d) %s(%d) %s(%d)\n`
+- `%lld %d AVE %s: %p %lld MasteringDisplayColorVolume Display Primaries[%d] 0x%x 0x%x 0x%x 0x%x\n`
+- `AVE_IOP_GetCurrTime32`
+- `AVE_CalcBufSizeOfLRB`
+- `%lld %d AVE %s: %s:%d %s | failed to get GGM Refs buffer DART addresses %p %d %lld %p %lld | %d %d %d\n`
+- `AVE_Client_Enc_Check`
+- `Close        4 `
+- `[%d %d - %d] `
+- `%p %lld MVHEVCVideoLayerIDs %s\n`
+- `AVE_DARTMapInternalSurfaces`
+- `pcaRecon != nullptr`
+- `%lld %d AVE %s: %s:%d %s | invalid offset %p %d %lld %p %lld | 0x%llx %d %d %d %d\n`
+- `%lld %d AVE %s: search_range %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d %p %d %p %d\n`
+- `Complete     9 `
+- `%p %lld SpatialQPLevel %d\n`
+- `pTime != nullptr`
+- `AVE_GOP_DecideFeature_Complete`
+- `m_pcLAGOP != nullptr`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %d %p %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create SVECtrl %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d <- IPC memory firmware addr 0x%lx 0x%x 0x%x\n`
+- `pMem->pcMemMap != nullptr`
+- `m_psVUI != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to do DART unmapping %p %lld %d %d\n`
+- `pEntry != nullptr && pRevision != nullptr`
+- `%lld %d AVE %s: %s:%d %s | failed to DART map internal surfaces %p %d %p %lld %d\n`
+- `%lld %d AVE %s: %s:%d frame drop %p %lld %d %d\n`
+- `%p Level %d\n`
+- `%p StrictKeyFrameInterval %d\n`
+- `    `
+- `AVE_MCC`
+- `%lld %d AVE %s: %s:%d %s | failed to add timer event source to workloop %p %p %p 0x%x\n`
+- `AVE_QPMod_DecideFeature_StaticArea`
+- `Process`
+- `%p %lld EnableStatsCollect %d\n`
+- `lrme_rc_pass_num %d\n\n`
+- `%lld %d AVE %s: DRL %s | %p %d | %d.%03d %d.%03d - %d.%03d %d.%03d\n`
+- `%lld %d AVE %s: %s Exit %d.%03d %d.%03d %d.%03d 0x%llx %p %d\n`
+- `%lld %d AVE %s: %s:%d I frame num = %d pic order cnt lsb %d\n`
+- `%p %lld SoftMaxQuantizationParameter %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create task %p %d %p %p\n`
+- `WriterGet`
+- `%lld %d AVE %s: %p %lld VideoResolutionAdaptation %d\n`
+- `m_piCTRRData_Org != nullptr`
+- `site.AVE_AXI2AF`
+- `%lld %d AVE %s: %s::%s:%d EDT field is invalid %p %d %d\n`
+- `Mapper Error %p %d | L0 Index: 0x%llx L1 Index: 0x%llx L2 Index: 0x%llx L3 Index: 0x%llx Instance Name: %s Instance: 0x%llx`
+- `%lld %d AVE %s: %s:%d Enter %p %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to acquire HWs %p %lld %p %d %d %p %p %d\n`
+- `%lld %d AVE %s: SearchRange %p | %d - %d %d %d %d\n`
+- `%lld %d AVE %s: %p DumpFeature 0x%x\n`
+- `%p MaxKeyFrameIntervalDuration %d.%03d\n`
+- `%lld %d AVE %s: %s:%d %s | wrong parameter %p 0x%llx %p\n`
+- `m_pcFwLog != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %p %d <Buffer> %p %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create chunk buffer %p 0x%x %p %d %d %d %p\n`
+- `pClient != nullptr && pUCInfo != nullptr && idx >= 0`
+- `%lld %d AVE %s: %s:%d %s | wrong state %p %lld %d %p %d %d %p %p %d\n`
+- `AVE_Client_Complete`
+- `PowerOn`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to config sve scheduler %p %lld %p %lld %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %p %d %p %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld %lld %p %d\n`
+- `AVE_AVC_SetSlice`
+- `psAnalytics->psAnalyticsService != nullptr`
+- `pCHM != nullptr && pSurface != nullptr && pSize != nullptr && pAddr != nullptr`
+- `Client%s: %p ID: %lld QPModFeature: 0x%x QPModLevel: %d BlkQPRange: [%d, %d]\n`
+- `%lld %d AVE %s: %s:%d %p %lld | %p %d %d\n`
+- `m_pcaIDHwC[id] != nullptr`
+- `type > AVE_ChipType_None && type <= sizeof(gsc_saAVE_IOP_If)/sizeof(*gsc_saAVE_IOP_If) && gsc_saAVE_IOP_If[type - 1].CheckIdle != nullptr`
+- `%lld %d AVE %s: %s::%s:%d IPC buffer info %p %d 0x%llx %d\n`
+- `pBufSet->saSrcNeighborInfo[0].iAddr != 0`
+- `%lld %d AVE %s: %s:%d %s | LRME info is not correct %p %lld %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to initialize buffer image %p %d %d\n`
+- `AVE_Client_GGM_Check_Start`
+- `function-set_perf_state_floor`
+- `%lld %d AVE %s: InterSumSatd             %d\n`
+- `%lld %d AVE %s: SVEDPB %s | %p %lld Entry %p | 0x%x %d %lld %d %d %d %d %d\n`
+- `AVE_UCCmd_None < selector && selector < AVE_UCCmd_Max`
+- `%p InputQueueMaxCount %d\n`
+- `AVE_Work_MCTF_PostUpdate`
+- `AVE_PrintOutSurfaces`
+- `BestMVSum[%d].i32_Sum_Best8x8_MVx %d %d %d %d\n`
+- `AVE_RetrieveSVEID`
+- `Write_interpolation_filter`
+- `IOUserClientEntitlements`
+- `pcSyntaxWriter != nullptr`
+- `GGM PF Properties %p %lld %s\n`
+- `SelectUnit`
+- `%lld %d AVE %s: %p SwFeatureOn 0x%llx\n`
+- `iomdEarlyReclaim`
+- `PMGR %s | %p %d | State: %s | Clock Gating: %d\n`
+- `%p %lld NumberOfTemporalLayers %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to acquire fence %p %p %lld %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d 0x%x = 0x%x | 0x%x\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to create FPS %p %lld\n`
+- `RefMgr %s | %p %lld | L%d: %s\n`
+- `%lld %d AVE %s: %s::%s:%d %s | invalid IPC channel name %p %d %d %d %d 0x%lx %s\n`
+- `pUCInfo != nullptr && pHdr != nullptr && pStats != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld | %p %d\n`
+- `FwIPC`
+- `cur_obu_size + tile_size_bytes <= iBufSize`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %d %d | %p %d %d\n`
+- `H265`
+- `segment-ranges`
+- `%lld %d AVE %s: %s::%s:%d interrupt from channel %p %d 0x%x %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to update firmware image %p %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to find MD %p %d %lld %lld\n`
+- `pcDPB != nullptr`
+- `setActive`
+- `%lld %d AVE %s: %s::%s:%d %s | Failed to write OBU size %p %llu %d %d %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | invalid source neighbor firmware data firmware buffer %p %d %lld %p %lld | %d %d\n`
+- `0 < pInfo->sSessionCfg.sEnc.sAlgCfg.sGOP.iNumOfTemporalLayer && (pInfo->sSessionCfg.sEnc.sAlgCfg.sGOP.iNumOfTemporalLayer <= 7)`
+- `%p QPP %d\n`
+- `%p RefNumOfPFrame %d\n`
+- `AVE_PrintClientSurfaces`
+- `m_psFrameHeader->delta_lf_params.delta_lf_present == 0`
+- `IO_Close`
+- `12111112122212121121111211122`
+- `%lld %d AVE %s: %p %lld AmbientViewingEnvironment %d\n`
+- `%lld %d AVE %s: %s Enter %p %d %p %d\n`
+- `pMgr != nullptr && pSet != nullptr`
+- `%lld %d AVE %s: %s:%d %s | wrong parameters %p %p %lld %p\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %lld %d %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to allocate syntax writer %p %p %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong state %p %lld %p %p %p\n`
+- `DPE %s | %p %d | Client Count: %s\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to calculate sliding average FPS %p %lld %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong protection option %p %d %p %d %p %lld | %d %d 0x%llx\n`
+- `DPM %s | %p %d | State: %d IOP Power: %d DCS Power: %d FAB Power: %d\n`
+- `AVE_UCCmd_CheckParam_Start`
+- `%lld %d AVE %s: %s::%s Enter %p %d | %p\n`
+- `%lld %d AVE %s: %s:%d %s | DPB SaveContext (%d): m_ctx.m_num_ref_frame (%d) < 2\n`
+- `%lld %d AVE %s: %p %lld ExpectedDuration %d.%03d\n`
+- `%p PerfFeatureOff 0x%x\n`
+- `%p %lld EnableWeightedPrediction %d\n`
+- `%lld %d AVE %s: %s:%d %p doesn't support this case %p %d %p\n`
+- `%lld %d AVE %s: DPBBuffer (%d): DPB_NOT_FULL: m_FrameNumberFromIDR %d, num_ref_frame %d\n`
+- `Client%s: %p ID: %lld Resolution: %dx%d PerfFeature: 0x%x Realtime: %d Priority: %d | %d InputQueue: %d %d MaxFrameRate: %d\n`
+- `%lld %d AVE %s: DLB %s | %p | %s\n`
+- `DevCap Throughput %s | %p | %d\n`
+- `%lld %d AVE %s: DPBBuffer (%d): m_ctx.m_Slice_POC_lsb_IDR_diff %d\n`
+- `ProcessInputCmd_Priority`
+- `%p OutputBufNum %d\n`
+- `ProcessFrame`
+- `%lld %d AVE %s: %s::%s:%d EUMap %p %lld | [ %s ]\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to iovmInsert .data section %p %d 0x%x\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to init avc pps %p %lld %p %p %p %d\n`
+- `DARTMap`
+- `%p LogPath %s\n`
+- `%lld %d AVE %s: %s total commands in client stages %p | %d %d | %d | %d\n`
+- `HEVC_FindLevelIdc`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld %s %d 0x%llx\n`
+- `ResetEntry`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %p %p %d\n`
+- `%lld %d AVE %s: DPM: 0x%x\n`
+- `%lld %d AVE %s: %s:%d %s | failed to initialize a client %p %p %p %p %p %p %p %p %lld %d %p %d %p %d\n`
+- `Client%s: %p ID: %lld DLB: %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %d\n`
+- `AVE_QPMod_DecideQPRange`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld %s %d %p 0x%llx\n`
+- `%lld %d AVE %s: %p CfgOn 0x%llx\n`
+- `ShutDownIOP`
+- `AVE_Client_DMV_Check_Stop`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to sendAsyncResult64 %p %lld 0x%x\n`
+- `%lld %d AVE %s: DPBBuffer (%d): m_ctx.m_FrameNumberFromIDR %d\n`
+- `B`
+- `site._S_AVE_Client`
+- ` | `
+- `%p ModeDecFeatureOff 0x%x\n`
+- `AVE_IPC_Ch_None < ch && ch < AVE_IPC_Ch_Max && pBuf != nullptr`
+- `SVECtrl %s | %p %d |\n`
+- `m_saRefBuf[i].psaLowResRCResultBuf != nullptr`
+- `ApplyStatic`
+- `%p LambdaModFeatureOff 0x%x\n`
+- `IO_start`
+- `0 < fps && fps < 100000 && num >= 0`
+- `AVE_RC_DecideVBVBufferSize`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to set DART in surface manager %p %d %p %p %d\n`
+- `pMem != nullptr`
+- `AV1_SeqHeader`
+- `%lld %d AVE %s: %s:%d wrong encode type %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | fail to create command %p %lld %p %d\n`
+- `pcMD != nullptr`
+- `%lld %d AVE %s: %s:%d DPE register value 0x%x 0x%x %d 0x%x 0x%x\n`
+- `%p %lld DRL %d %d %d.%03d %d.%03d - %d.%03d %d.%03d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to generate PPS %p %p %d %d %d %d %d\n`
+- `(HEVC_Tier_Invalid < eTier) && (eTier < HEVC_Tier_Max)`
+- `%lld %d AVE %s: %s::%s:%d AVE_Drv::Get %p %d\n`
+- `%lld %d AVE %s: DPBBuffer (%d): reorder long long_term_pic_num %d\n`
+- `m_rec->reference_type == AVE_RefType_None`
+- `site.AVE_LACost`
+- `%lld %d AVE %s: %s:%d %s | HEVC VPS output-layer-set total is out of range %d %d %d %d %d\n`
+- `site.AVC_SPS`
+- `%lld %d AVE %s: %s::%s Exit %p %d %d 0x%x\n`
+- `DARTUnmapExternalSurfaces`
+- `m_psFrameHeader->error_resilient_mode != 0`
+- `%lld %d AVE %s: DPBBuffer (%d): frame %d REFERENCE L0b index %d ListPosition %d\n`
+- `0 <= pInfo->sSessionCfg.sEnc.sAlgCfg.sRC.iLAFrameCnt && pInfo->sSessionCfg.sEnc.sAlgCfg.sRC.iLAFrameCnt <= (48 / ((2) < ((63 + 1)) ? (2) : ((63 + 1))) - 4)`
+- `Open         3 `
+- `MarkSkipCmdInTask`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong firmware command info %p %d %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to calculate surface info %p %llu %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong input parameters %p %lld %p %p %d\n`
+- `Client%s: %p ID: %lld RefFeature: 0x%x RefNum I: %d P: %d B: %d %d RefGap I: %d P: %d B: %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d could not find entry %p %lld %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | invalid slice count %p %lld %d %p %p %d\n`
+- `AVE_Timer_Create`
+- `%lld %d AVE %s: DPBBuffer (%d): ! DPB_NOT_FULL: m_FrameNumberFromIDR %d, num_ref_frame %d; put this long term at the end\n`
+- `%lld %d AVE %s: %p %lld EncodesDisparity %d\n`
+- `%lld %d AVE %s: %p QPB %d\n`
+- `%lld %d AVE %s: %s::%s:%d CHM info %p %d %p %lld | %d %lld %d %lld\n`
+- `calcLaCplx`
+- `%lld %d AVE %s: %s:%d %s | DPBBuffer: temp == NULL\n`
+- `WriterPut`
+- `pClient->pcInFPS != nullptr`
+- `%p %lld iDLBType %d\n`
+- `CalcPerfNum`
+- `%lld %d AVE %s: HEVC SPS: bits %d (bytes %d)\n`
+- `pcaRecon[AVE_RVRA_First][layerIdx][k] != nullptr`
+- `0 < pInfo->sSessionCfg.sEnc.iLayerNum && pInfo->sSessionCfg.sEnc.iLayerNum <= ((2) < ((63 + 1)) ? (2) : ((63 + 1)))`
+- `ms_iFwClientSize <= (1024*1264)`
+- `%lld %d AVE %s: DPBBuffer (%d): m_ctx.m_POCFromIDR %d\n`
+- `DPBGetFrameRequestedFromIndex`
+- `%lld %d AVE %s: %s:%d drop command count %p %lld %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to generate slice header %p %lld %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %p %p\n`
+- `%lld %d AVE %s: %s:%d Exit %p %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to get Recon buffer dart addresses %p %d %lld %p %lld | %d %d\n`
+- `AVE_Client_Enc_Check_Flush`
+- `%lld %d AVE %s: %s:%d %llu\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d | %p [%d, %d] %d | %d <- %d\n`
+- `RecvIOPMsg`
+- `%lld %d AVE %s: LastStrictPTS: %lld\n`
+- `m_pcSurface != nullptr`
+- `err == 0`
+- `%p FirmwareVerbose 0x%llx\n`
+- `pClient != nullptr && pTimeOut != nullptr && pParam != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create process timer %p %d %p %p\n`
+- `AVE_IOP_Start_Atlas`
+- `DMVHiResInput`
+- `%p %lld FilterStrength %s\n`
+- `%lld %d AVE %s: %s Enter %p %lld %lld\n`
+- `AVE_Prop_PFCfg_AV1_Print`
+- `AVE_CalcBufSizeOfMBInputCtrl`
+- `AVE_CalcBufSizeOfSrcNeighborLeftInfo`
+- `DevCap Resolution %s | %p\n`
+- `t`
+- `%lld %d AVE %s: %p FirmwareVerbose 0x%llx\n`
+- `UninitComponents`
+- `msize > 0 && num > 0 && size > 0 && alignment >= 0 && alignment <= 64 && (alignment == 0 || (alignment & (alignment - 1)) == 0)`
+- `DPM: 0x%x\n`
+- `StartIOP    18 `
+- `%p StrictKeyFrameIntervalDuration %d.%03d\n`
+- `ProcessIntr_MCTF_OutputData`
+- `DCS`
+- `%lld %d AVE %s: %s::%s:%d stats F# %d - %d, %d, %d, %d, %d\n`
+- `%lld %d AVE %s: LastMaxKeyFrame: %lld\n`
+- `%lld %d AVE %s: %s:%d %s | firmware buffer is invalid %d %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %lld %p\n`
+- `DevCap DPM %s | %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to send message to IOP %p %d %d<->%d 0x%llx %d %d\n`
+- `pDevCap != nullptr`
+- `913.64.1`
+- `Baseline`
+- `%lld %d AVE %s: %s:%d %s | failed to get GGM output buffer DART address %p %d %lld %p %lld | %d %d %d\n`
+- `CreateThread`
+- `AVE_Client_DestroyDataSurfaces`
+- `ID: %llu Type: %d Codec: %d Num: %d`
+- `pCfg != nullptr && pDevInfo != nullptr && id < 4 && pReg != nullptr && pSVECtrl != nullptr && pAXI2AF != nullptr && pFwImg != nullptr`
+- `%lld %d AVE %s: %s Enter %lld %p\n`
+- `121111121222121211111111111111221111111111111`
+- `%lld %d AVE %s: %s:%d %s | wrong parameter %lld %p %p %d %d\n`
+- `CalcPerfThreshold`
+- `(psTileMap != nullptr) && (iWidth > 0) && (iHeight > 0)`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to get Surface Root %p %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create Refed Manager %p %lld\n`
+- `%lld %d AVE %s: %p %lld PreemptiveLoadBalancing %d\n`
+- `%lld %d AVE %s: AXI2AF %s | %p %d |\n`
+- `edgeReplEnable %d bRCModeSet %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d %p %d %d task command %d task %p %lld\n`
+- `AcquireCTRRData`
+- `%lld %d AVE %s: %s:%d %p %lld Frame disp %d FrameType %d\n`
+- `AVE_Prop_PFCfg_HEVC_Uninit`
+- `Init`
+- `m_refL0b != nullptr`
+- `%lld %d AVE %s: %s:%d %s | invalid entropy coding header firmware buffer %p %d %lld %p %lld | %d %d\n`
+- `%p QPI %d\n`
+- `%lld %d AVE %s: %p Feature: 0x%x\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld 0x%x %d %d %d %d %d %d %d %d %d %d %d\n`
+- `AVE_Prop_Cfg_LRME_Init`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %d %p %p %p %d\n`
+- `0 <= fwCmdSlot && fwCmdSlot < (AVE_Cmd_Max + (((3 + 2) + 2 + 5 + (2 + 1)) * ((2) < ((63 + 1)) ? (2) : ((63 + 1)))))`
+- `AVE_IOP_GetCurrTime_Hera`
+- `site.S_AVE_Mapper_Entry`
+- `%lld %d AVE %s: %s::%s Exit %p %d %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d BITBOX (%lld %lld) type %d cplx %d.%03d cplxAlt %d.%03d | cplxFiltered %d.%03d cplxFilteredAlt %d.%03d, lowresIntraCost %d.%03d lowresInterSumSad %d.%03d,\n`
+- `AVE_DestroyExternalOutSurfaces`
+- `%lld %d AVE %s: %s:%d %s | wrong parameters %p\n`
+- `psPSContext != nullptr`
+- `%lld %d AVE %s: %s:%d %s | invalid LRMERC result firmware buffer %p %d %lld %p %lld | %d %p\n`
+- `%lld %d AVE %s: %s:%d %s | failed to copy UC info %p %lld %p %d %d %p %p %d\n`
+- `Client%s: %p ID: %lld EUMap: %s\n`
+- `pProvider != nullptr && pCfg != nullptr && pDevInfo != nullptr && id < 4 && numOfEntry >= 0`
+- `m_pcDLB != nullptr`
+- `AVE_Work_Enc_DecideQPModFeature`
+- `%p %lld DebugFeature 0x%llx\n`
+- `%lld %d AVE %s: DPBBuffer (%d): ###### DebugPrintDPBSnapshot DONE! ###### frames = %d\n`
+- `%lld %d AVE %s: %p %lld MasteringDisplayColorVolume %d\n`
+- `pBufSet->saTranscodedCDF[i].iAddr != 0`
+- `%lld %d AVE %s: %p MCTFEnableFeedback %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create firmware heap %p %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d -> 0x%lx 0x%lx IPC channel 0x%llx heap addr 0x%llx size %d shared addr 0x%llx size %d chip %d\n`
+- `pData != nullptr && pData->getLength() == sizeof(uint32_t)`
+- `Constrained Baseline`
+- `AVE_IOP_Config_Ares`
+- `%p %lld VideoResolutionAdaptationType %d\n`
+- `0`
+- `type > AVE_ChipType_None && type <= sizeof(gsc_saAVE_IOP_If)/sizeof(*gsc_saAVE_IOP_If) && gsc_saAVE_IOP_If[type - 1].Config != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | could not find entry %p %lld | %lld\n`
+- `IO_Open`
+- `CalcProcTimeout`
+- `%lld %d AVE %s: %s:%d %s | failed to create work thread %p %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong firmware command buffer slot %p %d %d %d\n`
+- `SetPState`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %p %p %p %lld %d 0x%llx 0x%llx %p 0x%llx\n`
+- `SVEDPB %s | %p %lld Entry %p | %s\n`
+- `short_term_ref_pic_set`
+- `%lld %d AVE %s: Algorithm PF Configuration %s | %p\n`
+- `Write_ref_pic_list_modification`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p %lld %p %lld %p\n`
+- `RangeEntry`
+- `site.S_AVE_TBlkBuf<T>`
+- `1112212222221112111211121`
+- `%p ParallelMinFrameCnt %lld\n`
+- `AVE_Enc_DecidePFThroughputMode`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to generate PPS %p %lld %p %d %d %p %d\n`
+- `%lld %d AVE %s: %p %lld Paravirtualized %d\n`
+- `psTCmd != nullptr`
+- `AVE_QPMod_DecideLevel`
+- `Pipe4/HME`
+- `%lld %d AVE %s: DPM %s | %p %d | State: %d IOP Power: %d DCS Power: %d FAB Power: %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to create surface %s %d %d %d %d %d\n`
+- `SVEDPB %s | %p %lld | %d %d %d | Entry Num %d\n`
+- `%lld %d AVE %s: %s::%s:%d wrong CHM state %p %d | %p %d %lld %p %lld | %p %lld %d %d\n`
+- `%lld %d AVE %s: %p OutputBufNum %d\n`
+- `AVE_DPE`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to register client %p %p %lld %d\n`
+- `PowerOnStart   `
+- `%lld %d AVE %s: \t\t\t\t\t\t\t\t\t\t\t Phy %p Kernel %p DART %s\n`
+- `FreeEntry`
+- `SessionLength`
+- `AVE_MD_LACost`
+- `%p SearchRangeMode %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong command %p %d 0x%lx %d 0x%x %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to destroy external surfaces %p %lld %p %lld %d\n`
+- `%lld %d AVE %s: %s:%d %s | (%d): F %d m_ctx.m_num_ref_frame (%d) < 2\n`
+- `%lld %d AVE %s: %s::%s Exit %p %p %p %p %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d %lld %p %lld | %d %d %d %d  %d %d | %d %d %d %d\n`
+- `DMVLoResInput`
+- `%lld %d AVE %s: %p %lld MCTFEnableFeedback %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d | %d %d %p %d %lld\n`
+- `AVE_Client_MCTF_Check_Process`
+- `%p ResumableMinFrameCnt %lld\n`
+- `AVE_IOP_Config_Nyx`
+- `%lld %d AVE %s: %s:%d %s | DPBBuffer: L0a PictureTypeToReorder AVE_RefType_None (%x)-> cannot be\n`
+- `ProcessIntr_CmdErr`
+- `%lld %d AVE %s: %s Enter %p %lld %d %d %d %p\n`
+- `AVE_Client_Check_Flush`
+- `%lld %d AVE %s: DPBBuffer (%d): iFrameNum %d iPOCLsb %d (m_Slice_POC_lsb_IDR_diff %d)\n`
+- `SafeView (FT)`
+- `%lld %d AVE %s: Load Stats %s | %p | iCmdCntOfInput: %d iCmdCntOfReady: %d iCmdCntOfRun: %d iCmdCntOfOutput: %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to make command %p %d | %p %d %lld %p %lld | %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid feature value[%d][%d]: %p %llu %d %d\n`
+- `InsertOBUSize`
+- `num > 0 && num <= (int32_t)(sizeof(m_saEntry) / sizeof(m_saEntry[0])) && eMode > AVE_DPB_Mode_None && eMode < AVE_DPB_Mode_Max`
+- `PowerStateRatioMax`
+- `ave-flag`
+- `Client%s total number of commands %p %lld %s | %d %d\n`
+- `euID < 4`
+- `%lld %d AVE %s: %s:%d %s | wrong DPM configuration %d %d %p %lld\n`
+- `GetInfo`
+- `ForcePowerOn`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p %lld %d %p %p %p\n`
+- `num_ref_frame <= m_MaxDpbSizeForThisProfileAndLevel`
+- `concurrent_mode %d\n\n`
+- `pInfo->sSessionCfg.sEnc.eType == pClient->eEncType`
+- `%lld %d AVE %s: %s:%d %s | %p %lld: PFHW flag (0x%x) is not correct, %p %d, %d %d\n`
+- `pIn->eUCCmd == AVE_UCCmd_Stop`
+- `High 4:4:4`
+- `%p %lld InsertTrailingBytes %d\n`
+- `AVE_ChkPool`
+- `pInfo->sHEVC_RPS.strps.num_short_term_ref_pic_sets < 65 && (pInfo->sHEVC_RPS.slice_ltrps.num_long_term_sps + pInfo->sHEVC_RPS.slice_ltrps.num_long_term_pics) <= 16`
+- `%lld %d AVE %s: COM %s | %p %d | %d %lld\n`
+- `%lld %d AVE %s: %s::%s %d HwCMap[%d] %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | invalid command slot %p %d %p %p %d %p %d [0, %d)\n`
+- `Nero`
+- `%p Realtime 0x%x\n`
+- `HwC %s | %p %d | CmdSentCnt: %lld CmdRecvCnt: %lld FilterIntrCnt: %lld IntrInCnt: %lld IntrOutCnt: %lld FwTimeShift: %lld\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to generate VPS %p %lld %p\n`
+- `IPC %s | %p %d | %p %p 0x%llx | %d - %s\n`
+- `AVE_PSInfo_Make`
+- `%lld %d AVE %s: %s::%s:%d %p %d | BaseAddr: 0x%llx Size: 0x%llx PageSize: 0x%llx\n`
+- `site.AVE_BlkPool`
+- `%lld %d AVE %s: %s:%d %s | DPB (%d): num_ref_frame (%d) > m_ctx.m_MaxDpbSizeForThisProfileAndLevel (%d) fail.\n`
+- `Platform Type: %d\n`
+- `%lld %d AVE %s: %s:%d %s | wrong parameter %p %dx%d eu=%d colsHint=%d rowsHint=%d\n`
+- `%lld %d AVE %s: %s::%s Exit %p 0x%llx %p %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to prepare LACost command %p %d | %p %d %lld %p %lld | %p %d %p %d\n`
+- `iCount < sizeof(psParam->saLAStats) / sizeof(*psParam->saLAStats)`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %d %d %d %d %p %p %p %p\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %lld %p %p\n`
+- `SendFwCmd_Config`
+- `InsertEndDPBEntry`
+- `AVE_CalcBufSizeOfLRSOutput`
+- `%lld %d AVE %s: %s:%d %s | HEVC SPS count is out of range %d %d %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d | %p %d %lld %p %lld | %d %d\n`
+- `pSurfaceRoot != nullptr && psTask != nullptr && size > 0`
+- `psSeqHeader->film_grain_params_present == 0 || (m_psFrameHeader->show_frame == 0 && m_psFrameHeader->showable_frame == 0)`
+- `AVE_AVC_SetupBFrame`
+- `\"psNode->sEntry.cqe_next != NULL\" @%s:%d`
+- `%lld %d AVE %s: %s:%d %s | HSCOutput size overflow %d %d %d %d %d %d %d %lld\n`
+- `Lossy50`
+- `%lld %d AVE %s: %s:%d %p %lld | %d %d\n`
+- `AVE_WorkThread`
+- `%lld %d AVE %s: %s:%d bitrate is greater than DRL %d %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | not padded to bytes %p %d %d %d %p\n`
+- `AVE_DARTMapDataSurfaces`
+- `%lld %d AVE %s: DPBBuffer: swrcMetaData.acknowledged     %d\n`
+- `%lld %d AVE %s: DevCap ConcurrentChained %s | %p | %d\n`
+- `%lld %d AVE %s: %s::%s Exit %lld %p %d %d %d\n`
+- `CodedData`
+- `m_psSeqHeader->seq_profile != AV1_SeqProfile_2 || m_psSeqHeader->color_config.high_bitdepth == 0`
+- `%lld %d AVE %s: AVE_ClientDie %p %lld %p\n`
+- `%lld %d AVE %s: Slice: B pic_order_cnt_lsb %d\n`
+- `AVE_Prop_Cfg_MCTF_Uninit`
+- `%lld %d AVE %s: %s:%d %s | AVC PPS count is out of range %d %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong state %p %lld\n`
+- `Reference PFCfg %s | %p\n`
+- `SendFwCmd_Start`
+- `%lld %d AVE %s: %s Exit %d %d %d %d %d %d %d\n`
+- `AVE_Prop_Cfg_LRME_Print`
+- `%lld %d AVE %s: %s::%s:%d %s | entitlement check failed %p 0x%x\n`
+- `m_pcaSwC[i] != nullptr`
+- `AVE_IOP_Config_Erebus`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to initialize Driver %p %p %d\n`
+- `AVE_Client_LRME_Check_Reset`
+- `%p %lld NumberOfSlices %d\n`
+- `AVE_QPMod_DecideFeature_FlatArea`
+- `%lld %d AVE %s: Reference Cfg %s | %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to find CHM %p %d %lld\n`
+- `pcaLFSRef[k] != nullptr`
+- `%lld %d AVE %s: %p %lld CmdTimeOutMode %d\n`
+- `Client%s: %p ID: %lld AlgFeature: 0x%llx SEIFeature 0x%llx VUIFeature: 0x%llx FrameRate: %d\n`
+- `pInfo->uPropCfg.sMCTF.iMCTFStrengthLevelNum >= 0 && pInfo->uPropCfg.sMCTF.iMCTFStrengthLevelNum <= ((2) < ((63 + 1)) ? (2) : ((63 + 1)))`
+- `%lld %d AVE %s: %s:%d %s | fail in GOP decision %p %d %lld %p %lld | %p | %p %p %p %p %p %p %d %p %p %p\n`
+- `%lld %d AVE %s: %s::%s Exit %p %llu %d\n`
+- `1111`
+- `profile %d level %d LOSSLESS %s\n`
+- `pClient != nullptr && pCmd != nullptr`
+- `pCmdInfo != nullptr && pUCInfo != nullptr && pDPBSet != nullptr && pInfo != nullptr`
+- `iSliceNum >= 0 && iSliceNum <= ((32) < (256) ? (32) : (256))`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld %p %p %p %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | invalid task command %p %d %p %d %d\n`
+- `ProcessRunCmd_Reset`
+- `%lld %d AVE %s: %s Exit %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | invalid IPC channel entry %p %d %d %d %d 0x%lx\n`
+- `Mapper Error %p %d | AXI User: 0x%llx 0x%llx 0x%llx 0x%llx 0x%llx 0x%llx 0x%llx 0x%llx`
+- `SVEDPB %s | %p %lld Entry %p | 0x%x %d %lld %d %d %d %d %d\n`
+- `%lld %d AVE %s: %s:%d GBufSize: %d, encType: %d, width: %d, height: %d, chromaFmt: %d, bitDepth: %d, frameRate: %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to make config command %p %d %d\n`
+- `%lld %d AVE %s: %p %lld SEIFeatureOff 0x%llx\n`
+- `%p ReferenceNum: %d %d %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | IODMACommand should not be NULL\n`
+- `%lld %d AVE %s: Device Info %s | %p | DevID: %d DevType: %d ChipType: %d Arch: %d SVE Num: %d NumPerGroup: %d DevSubIDFlag: 0x%llx\n`
+- `%lld %d AVE %s: DPBBuffer: swrcMetaData.cadenceAnchor    %d\n`
+- `m_iaCurrCmdCnt[AVE_WP_Stage_Input] == 0`
+- `AVE_Client_UpdateOutputBuf`
+- `AVE_RC_DecideVBVInitialDelay`
+- `iret == 0 || iret == (((signed)((((unsigned)(0x38))&0x3f)<<26))|(((0)&0xfff)<<14)|0x2f0)`
+- `%lld %d AVE %s: DPBBuffer (%d) (frame %d) IndexLongTermReferenceFrameToBeReplaced selected (%d) is not long term -> default to no replacement\n`
+- `%lld %d AVE %s: disable_skip_mode %d\n`
+- `AVE_UCInfo_Check_Prepare`
+- `L1 %d | `
+- `%lld %d AVE %s: %p %lld EnableStatsCollect %d\n`
+- `%lld %d AVE %s: %s:%d %p %p %d %p | %d %d | Frame %d\n`
+- `ProcessOutputCmd`
+- `DeletePool`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to process dynamic bit allocation %p %lld | %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld | %d %lld %p\n`
+- `Config`
+- `AVE_CHM_HandleAllCmds`
+- `%s-%llu`
+- `MarkFrameNonDrop`
+- `%lld %d AVE %s: %s total commands in CHM stages %p %d | %d %d %d %d | %d\n`
+- `%lld %d AVE %s: %s Exit %p %d %d %d\n`
+- `%lld %d AVE %s: %p %lld DeghostingPriority %d\n`
+- `%lld %d AVE %s: DPBFindEntryFromPOC: found poc_lsb index %d\n`
+- `pInBuf != nullptr && pOutBuf != nullptr && psSliceInfo != nullptr`
+- `psLastInfo != nullptr`
+- `SVERC %s | %p %lld | %d %d | %s\n`
+- `%lld %d AVE %s: %s::%s Enter %p %llu %p %p %d %d %p %d %p\n`
+- `%lld %d AVE %s: %s::%s:%d %p %llu long term reference flag %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | task doesn't exist %p %d %p %d %d %lld %d\n`
+- `COM %s | %p %d | %d %lld\n`
+- `AVE_RegCfgList_Apply`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to Reset SVE RC %p %lld %p %lld\n`
+- `%lld %d AVE %s: %s::%s:%d Update Entry %p %lld | %p %d %lld | %d %d %d %d\n`
+- `%lld %d AVE %s: %s:%d %p %lld | %d %d | %lld %d %d %lld\n`
+- `%lld %d AVE %s: %p %lld InsertTrailingBytes %d\n`
+- `%lld %d AVE %s: %s:%d %s | invalid command info buffer %p %lld | %p %p\n`
+- `%lld %d AVE %s: PDMap %p | %d - %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create PTS2DTS %p %lld\n`
+- `SendWPCmd_Stop`
+- `%lld %d AVE %s: %p RCMinQP %d\n`
+- `site.AVE_Drv`
+- `AVE_IOP_GetCurrTime_Atlas`
+- `AVE_MemBlkList_Free`
+- `%lld %d AVE %s: %s::%s:%d %s | Failed to write tile group OBU %p %llu %p %d %d %d\n`
+- `pIn->eUCCmd == AVE_UCCmd_Start`
+- `pClient != nullptr && pDataInfo != nullptr && pDataSet != nullptr`
+- `ppEntry != nullptr && pCfg != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %p %d %d %d %lld %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to find command %p %d %lld %p %d %d\n`
+- `AVE_MemBlkList_FreeAll`
+- `%lld %d AVE %s: %p %lld EncodesAuxiliaryWithAuxID=%d\n`
+- `%p %lld MaxLookAhead %d\n`
+- `InputPixelFormat`
+- `%lld %d AVE %s: %p %lld MasteringDisplayColorVolume Min Luminance 0x%x 0x%x 0x%x 0x%x\n`
+- `AVE_CHM_MakeFwCmd_Open`
+- `GGM Configuration %s | %p\n`
+- `pcSurface != nullptr`
+- `BestMVSum[%d].iSum_Best16x16_MVx %d\n`
+- `%lld %d AVE %s: %s::%s:%d frame already update %p %lld %lld %d %p %d\n`
+- `site.S_AVE_PTS2DTS_Entry`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to allocate syntax writer %p %llu %p %p %d %d\n`
+- `%lld %d AVE %s: DPBFindInvalid: found invalid frame index %d position %d\n`
+- `%lld %d AVE %s: %s Exit %lld %p %p %d\n`
+- `AVE_GGM_DecideConcurrentMode`
+- `%lld %d AVE %s: %s:%d %s | failed to prepare IOMemoryDescriptor %p %d 0x%x\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to reset PSD state %p %d %d 0x%x\n`
+- `psTimingMgr != nullptr`
+- `1222221111111222221111`
+- `%lld %d AVE %s: %s:%d %s | HEVC RPS count is out of range %d %d %d %d\n`
+- `%lld %d AVE %s: %p NumOfGOPLayer %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d reset PSD state %s\n`
+- `%lld %d AVE %s: %s::%s Exit %p %llu %p %d %p %d\n`
+- `externalMethod`
+- `AVE_AVC_SetupIFrame`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create block pool %p %d %p %p %lld %d %d\n`
+- `%sEncoderMaxPixelRate`
+- `AVE_Prop_PFCfg_DMV_Uninit`
+- `ProcessRunCmd_Complete`
+- `%lld %d AVE %s: %s:%d %s | failed to create surface %s 0x%llx %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %lld RC Check: %d %lld %d %lld %s\n`
+- `%lld %d AVE %s: DPBBuffer (%d): ! DPB_NOT_FULL: m_FrameNumberFromIDR %d, num_ref_frame %d. put last short at the end\n`
+- `Map`
+- `ProcessRunCmd_StartIOP`
+- `%lld %d AVE %s: %p QPModLevel %d\n`
+- `piLFSOutput != nullptr && 0 <= iRefIdx && iRefIdx <= 1 && piLRMEZeroMVBinCnt != nullptr`
+- `FreeAllIPCMem`
+- `%lld %d AVE %s: %s:%d failed to get current time %d %llu 0x%x 0x%x 0x%x\n\n`
+- `AVE_UCInfo_Check_Stop`
+- `eEncMode < AVE_EncMode_Max`
+- `%lld %d AVE %s: %s:%d %s | invalid DMV2 HiRes compressed input %p %d %p %lld | 0x%llx %d\n`
+- `AVE_Client_DispatchCmd`
+- `H264`
+- `pMemDesc != nullptr && pCfg != nullptr`
+- `%lld %d AVE %s: SwC %s | %p %d | CmdSentCnt: %lld CmdRecvCnt: %lld IntrInCnt: %lld IntrOutCnt: %lld \n`
+- `ProcessIntr`
+- `%lld %d AVE %s: %p %lld RequiredHEVCVideoParameterSetAlphaLayerID %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %p %d %d\n`
+- `%lld %d AVE %s: DPBBuffer (%d): level %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to create DLB %p %p %p %d\n`
+- `SendFwCmd_Priority`
+- `PostProcess`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to generate slice header %p %lld %d %p %p %p %p %d %p\n`
+- `m_pcMemPool != nullptr && m_pcSurface != nullptr`
+- `0123456789abcdef`
+- `AVE_Prop_Cfg_MCTF_Init`
+- `(psCmdInfo != nullptr) && (psTCmd != nullptr)`
+- `%p %lld LRMERSPassNum %d\n`
+- `iLumaDataSize >= 0 && iLumaHeaderSize >= 0 && iChromaDataSize >= 0 && iChromaHeaderSize >= 0 && iTotal <= 2147483647`
+- `ISR`
+- `m_pcCTRRDataMap != nullptr`
+- `%lld %d AVE %s: %s:%d %p %p 0x%x 0x%x 0x%x 0x%x | %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %llu failed to generate PPS %d %d %d %p %d\n`
+- `%lld %d AVE %s: %p %lld MasteringDisplayColorVolume White Point 0x%x 0x%x 0x%x 0x%x\n`
+- `m_iaCurrCmdCnt[AVE_WP_Stage_Output] == 0`
+- `CreateFwHeartBeatTimer`
+- `%lld %d AVE %s: %s:%d %s | failed to initial MiniDevice %p %lld %p %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %lld %d %p\n`
+- `%lld %d AVE %s: %s::%s:%d wrong state %p %lld %d %d\n`
+- `pcSPS != nullptr && pcPPS != nullptr && s != nullptr`
+- `%lld %d AVE %s: %s:%d %s | HEVC MCTF strength count out of range %d %d [0 %d]\n`
+- `%lld %d AVE %s: %s::%s Enter %p %llu %p %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to start work pool thread %p %d %d\n`
+- `%lld %d AVE %s: %p MCTFSensorGainTrigThreshold %d.%03d\n`
+- `%lld %d AVE %s: %s:%s Enter %p %lld\n`
+- `AVE_Session_DecideSwFeature_Encrypt`
+- `psSeqHeader->decoder_model_info_present_flag == 0`
+- `AVE_HEVC_CheckVPSExtBounds`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to allocate slot %p %lld 0x%x %d %p %d %d %d %d\n`
+- `Write_sequence_header_obu`
+- `%p PerfFeatureOn 0x%x\n`
+- `%p DumpFeature 0x%x\n`
+- `CalcLACost`
+- `%lld %d AVE %s: %p Feature: %d\n`
+- `AVE_DevID_None < devID && devID < AVE_DevID_Max`
+- `%lld %d AVE %s: %s Exit %p 0x%llx %d\n`
+- `%lld %d AVE %s: %s::%s:%d is not initialized or is running %p %d %d %d\n`
+- `AVE_EncType_None < encType && encType < AVE_EncType_Max`
+- `ProcessIntr_GGM_OutputData`
+- `site.AVE_AVC_Slice`
+- `%p %lld EncodesAuxiliaryWithAuxID=%d\n`
+- `m_sSlice.num_ref_idx_l1_active_minus1 >= 0`
+- `ManageDPBBuffer`
+- `%lld %d AVE %s: %s:%d %s | failed to get block from block pool %p %d %p %d %lld %p %d\n`
+- `pCfg != nullptr && pDevInfo != nullptr && pSurfaceMgr != nullptr && pDWCfg != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to allocate IPC command buffer %p %d | %p %d %lld %p %lld | %ld %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to destroy DART pool %p %d %d %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid show frame: %p %llu %d\n`
+- `%lld %d AVE %s: %s:%d %s | wrong encode type %d %d %p %lld %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %p %p %d %p %d\n`
+- `maddr != 0 && msize > 0 && num > 0 && size > 0 && alignment >= 0 && alignment <= 64 && (alignment == 0 || (alignment & (alignment - 1)) == 0)`
+- `%lld %d AVE %s: %s::%s:%d wait %p %d %p %d %p %d %llu\n`
+- `%lld %d AVE %s: %s:%d %s | failed to internal create surface %s %d\n`
+- `%lld %d AVE %s: %s:%d %s | wrong parameters %p %p %p %p %lld %d %p %d\n`
+- `GetDARTLinearBuf`
+- `LastStrictKeyFrame: %lld\n`
+- `ParallelProcess`
+- `%lld %d AVE %s: %s::%s:%d %s | Loop restoration filter is not supported: %p %llu %d, %d, %d\n`
+- `%p %lld LatencyMode %s\n`
+- `Write_vui_parameters`
+- `site.AVE_Mapper`
+- `%lld %d AVE %s: %s::%s:%d %s | IPC channel buffer mismatch %p %d %p 0x%lx != 0x%llx 0x%x 0x%x\n`
+- `ProcessHiP`
+- `%lld %d AVE %s: %s::%s:%d %s | Failed to write OBU %p %llu %p %d %d %d\n`
+- `2212222222`
+- `%lld %d AVE %s: ThroughputMode %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %d %p %p %p %d\n`
+- `AVE_EncType_None == encType`
+- `%p BaseFrameRate %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong frame info %p %d %d %d %p\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %p %p %d\n`
+- `AVE_PrintExternalInSurfaces`
+- `%lld %d AVE %s: %p %lld NumOfGOPLayer %d\n`
+- `pFrameInfo != nullptr`
+- `Residual_Bits            %d\n`
+- `psRefInfo->iaNum[AVE_RefDir_Neg] == 0 && psRefInfo->iaNum[AVE_RefDir_Pos] == 0`
+- `%lld:%d:%d `
+- `Create`
+- `%lld %d AVE %s: %s:%d %p %d %lld %p %lld | %d | %d %d\n`
+- `%lld %d AVE %s: bRCModeSet %d\n`
+- `psTask->pcLACost != nullptr`
+- `AVE_Prop_Cfg_DMV_Uninit`
+- `CalcBufSize`
+- `site.AVE_MD`
+- `%lld %d AVE %s: %s:%d %s | wrong parameters %p %p %p %p %lld %p\n`
+- `psAS->pcNotifier != nullptr`
+- `%lld %d AVE %s: %p %lld SoftMinQuantizationParameter %d\n`
+- `%lld %d AVE %s: %p %lld YCbCrMatrix %d\n`
+- `size > 0 && unitSize >= 0 && (unitSize == 0 || (unitSize & (unitSize - 1)) == 0)`
+- `psDPBSet != nullptr && iPOC != nullptr`
+- `SrcNeighborInfo`
+- `pIn != nullptr && inSize >= sizeof(S_AVE_UCInParam_Flush) && pOut != nullptr && outSize >= sizeof(S_AVE_UCOutParam_Flush)`
+- `pUserClient != nullptr`
+- `pEventName != nullptr`
+- `AVE_CHM_MakeFwCmd_Stop`
+- `pBufSet->saMBInputCtrl[i].iAddr != 0`
+- `%lld %d AVE %s: %p RefNumOfPFrame %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to initialize sDLB %p %p %p %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d failed to process output data %p %d %p %d %p %lld | %p %d %d\n`
+- `pCmd != nullptr && pCmd->eID == pWPCmd->eID`
+- `/arm-io/dart-ave%d/mapper-ave%d`
+- `%lld %d AVE %s: %p %s I:%d/%d C:0x%x T:%d\n`
+- `%p %lld MasteringDisplayColorVolume Max Luminance 0x%x 0x%x 0x%x 0x%x\n`
+- `%lld %d AVE %s: %p QPI %d\n`
+- `%lld %d AVE %s: %s::%s:%d failed to send firmware command reset %p %d | %p %d %lld %p %lld | %p %d\n`
+- `%s 0x%llx %d %d | %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld | %p %d %d %d %p\n`
+- `%lld %d AVE %s: - DPBBuffer (%d): ###### SetDPBSnapShot ###### FRAME %d\n`
+- `AVE_CHM_Init`
+- `%lld %d AVE %s: %s:%d %s | failed to collect analytics: pixels per frame %p %lld %p %d %d %p %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d | %p %d | %p %d %d %d %llu | %d | 0x%llx %d\n`
+- `%p %lld RequiredHEVCVideoParameterSetAlphaLayerID %d\n`
+- `%lld %d AVE %s: Timer %s | %p | Workloop: %p EventSrc: %p StartCnt: %d StopCnt: %d\n`
+- `%p %lld ThroughputMode %d\n`
+- `%lld %d AVE %s: %s::%s:%d Frame Reference Count %p %d | %p %d %lld %p %lld | %p %d | %lld 0x%x %lld | %p %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to init AXI2AF %p %d %p %d\n`
+- `AVC_GenerateSlice`
+- `%lld %d AVE %s: DPBBuffer (%d): previous frame has been dropped. restore previous DPB state\n`
+- `%lld %d AVE %s: %s:%d (%4d to %4d) [%s]\n`
+- `pInfo->sBufPFSet.saEntropyCoding[i][j].saIBuf[AVE_BufIdx_Data].iAddr != 0`
+- `%p %lld MVHEVCViewIDs %s\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to create chunk pool %p %lld 0x%x %d %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | external surfaces are wrong %p %lld %p %lld %d\n`
+- `%lld %d AVE %s: %s:%d %p %lld Frame %lld %d No Reference %d %d\n`
+- `AVE_CHM_MakeFwCmd_Start_HEVC`
+- `%lld %d AVE %s: %s:%d %s | invalid frame queue index %p %lld\n`
+- `AVE_Client_CopyUCInfoToEx`
+- `AVE_HEVC_CheckInfo`
+- `pcCoreAnalyticsHub != nullptr`
+- `%lld %d AVE %s: %p %lld QPModFeatureOn 0x%x\n`
+- `pInfo->sBufPFSet.saSrcNeighborPixel[0].iAddr != 0`
+- `%lld %d AVE %s: %s:%d %s | invalid Colocated Surface %p %d %lld %p %lld | %d %p %d %d %d\n`
+- `%lld %d AVE %s: GGM Configuration %s | %p\n`
+- `%lld %d AVE %s: %s:%d wrong counter %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to create command gate %p\n`
+- `ReleaseCTRRData`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid tx mode: %p %llu %d\n`
+- `%lld %d AVE %s: %s:%d %s | DPBBuffer: m_rec->reference_type != AVE_RefType_None\n`
+- `num > 0 && size > 0 && alignment >= 0 && alignment <= 64 && (alignment == 0 || (alignment & (alignment - 1)) == 0)`
+- `%lld %d AVE %s: %s:%d %s | failed to initialize KeyFrame %p %lld %d %d %d.%d %d.%d %d %d\n`
+- `%p ParallelLimit %d\n`
+- `pNumOfEntry != nullptr`
+- `%lld %d AVE %s: %s:%d %s | library and driver mismatch %d %d %p %lld %s <- %s\n`
+- `EncMode`
+- `AVE_MD_LAGOP_Prepare`
+- `pCHM != nullptr && pFrameInfo != nullptr && pInfo != nullptr`
+- `pInfo->sBufPFSet.saSrcNeighborAboveFltPixel[i].iAddr != 0`
+- `pcaLFSOutput[i + iRefNum][0] [iLRMEResultBufSetIdx] != nullptr`
+- `%lld %d AVE %s: %s::%s:%d | failed to initialize RPS %d\n`
+- `AVE_Prop_PFCfg_MCTF_Init`
+- `%lld %d AVE %s: DPBBuffer: height[%d] %d - height[%d] %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %d %p %d %d %d\n`
+- `%lld %d AVE %s: %p Verbose 0x%llx\n`
+- `%p VBVInitialDelay: %d.%03d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p %lld 0x%x %d %d %d %d\n`
+- `%lld %d AVE %s: %p DebugMetadataSEI %d\n`
+- `pInfo->sBufPFSet.saSrcNeighborFwData[0].iAddr != 0`
+- `%lld %d AVE %s: %s::%s Enter %p %p %p %p %d\n`
+- `AVE_Client_DARTMapDataSurfaces`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to get buffer from buffer pool %p %d | %p %d %lld %p %lld | %p %d %d\n`
+- `%lld %d AVE %s: DPBBuffer (%d): NOT the first long term frame; already %d in the DPB\n`
+- `Free`
+- `420`
+- `%lld %d AVE %s: %s::%s Exit %p %d %p 0x%x %p %d\n`
+- `%lld %d AVE %s: %p Bitrate %d\n`
+- `m_pcCrypto != nullptr`
+- `AttachEUC`
+- `feature_value <= limit && feature_value >= 0`
+- `AVE_CalcBufSizeOfEntropyCoding`
+- `%lld %d AVE %s: USAGE %s - slices %d\n`
+- `AVE_Client_MCTF_Check`
+- `UpdateStats`
+- `212221111111`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to get stats entry %p %lld | %lld %d\n`
+- `%lld %d AVE %s: %p %lld MotionVectorSize %d\n`
+- `program_sps_rps_IPPP`
+- `currentFrameSettings != nullptr`
+- `%lld %d AVE %s: DPBBuffer (%d): frame %d REFERENCE L0a index %d ListPosition %d\n`
+- `Extended`
+- `setIomdCacheAttribute`
+- `%lld %d AVE %s: %s::%s:%d %s | chip is not supported %p %p %p %p %d %p\n`
+- `%lld %d AVE %s: %s:%d fail to make chroma format capability %d %d %d\n`
+- `0 < pInfo->sSessionCfg.sEnc.iViewNum && pInfo->sSessionCfg.sEnc.iViewNum <= ((2) < ((62 + 1)) ? (2) : ((62 + 1)))`
+- `%lld %d AVE %s: LambdaMod Cfg %s | %p\n`
+- `AVE_Work_Enc_UpdateFrameInfoFromOutputData`
+- `%lld %d AVE %s: DPBBuffer: swrcMetaData.reserved         %d\n`
+- `%lld %d AVE %s: %p %lld EncoderUsage %d\n`
+- `pCHM != nullptr && pCmdInfo != nullptr && pFrameInfo != nullptr && pInfo != nullptr`
+- `%lld %d AVE %s: %p MCTFMaxNextRefNum %d\n`
+- `RestoreCTRRData`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to create block pool %p %lld 0x%x %d %d %d %d\n`
+- `%p %lld EnableVUIBitstreamRestriction %d\n`
+- `size >= 0 && size <= 2147483647`
+- `%lld %d AVE %s: %s:%d log 0x%llx\n`
+- `CHM%s: %p ID: %d Work Mode: %d\n`
+- `%lld %d AVE %s: Commands in Stage: %s\n`
+- `%lld %d AVE %s: %s:%d %s | wrong DLB configuration %p %lld %d\n`
+- `%s %s%s| %p 0x%x | %p %d | %lld 0x%x %lld | %d %d %d\n`
+- `(pCHM->iFwCmdFlag & cmdFlag) == 0`
+- `RestoreContext`
+- `%lld %d AVE %s: %p %lld MCTFStrengthLevel[%d] %d\n`
+- `alignment >= 0 && (alignment == 0 || (alignment & (alignment - 1)) == 0) && pSize != nullptr && iSize != 0 && pAddr != nullptr`
+- `%lld %d AVE %s: %s:%d %s | failed to configure DLB %p %lld %p %p %p %d\n`
+- `%lld %d AVE %s: %s:%d CAC_00 0x%x 0x%x | 0x%x\n`
+- `%p NumOfFrame: %d %d %d\n`
+- `psInfo != nullptr && psInfo->iPOC >= 0 && psRefedInfo != nullptr`
+- `pNum != nullptr`
+- `%lld %d AVE %s: %s:%d %s | invalid colocated firmware buffer %p %d %lld %p %lld | %d %p %d %d\n`
+- `  tile[%d] (%d,%d) %dx%d\n`
+- `pInfo->saHEVC_PPS[i].num_tile_columns_minus1 <= 256 && pInfo->saHEVC_PPS[i].num_tile_rows_minus1 <= 256 && pInfo->saHEVC_PPS[i].chroma_qp_offset_list_len_minus1 <= 5 && pInfo->saHEVC_PPS[i].num_extra_slice_header_bits == 0`
+- `Load Stats %s | %p | iCmdCntOfInput: %d iCmdCntOfReady: %d iCmdCntOfRun: %d iCmdCntOfOutput: %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %p %p %p %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to create surface %s %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %lld | %p 0x%x %d %lld %d %d %d | %d %d | %d %d\n`
+- `psTileBufInfo != nullptr || (obu_type != AV1_OBU_TILE_GROUP && obu_type != AV1_OBU_FRAME)`
+- `0 <= pInfo->sSessionCfg.sEnc.sAlgCfg.sGOP.iaNumOfFrame[AVE_FrameType_B] && (pInfo->sSessionCfg.sEnc.sAlgCfg.sGOP.iaNumOfFrame[AVE_FrameType_B] <= 3)`
+- `%lld %d AVE %s: %s:%d %s | fail to get resolution capabilities %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Insufficient memory for syntax writing %p %llu %d %d %d\n`
+- `iHeaderSize > 0 && iPayloadSize >= 0 && piLengthFieldSize != nullptr`
+- `HEVC_FindTierName`
+- `%lld %d AVE %s: %s::%s Exit %p %p %p 0x%x %d\n`
+- `AVE_AVC_SetupPFrame`
+- `SaveContext`
+- `%lld %d AVE %s: %s:%d %s | wrong parameter %lld %p %d\n`
+- `AVE_MD`
+- `%p %lld ProfileLevel %s\n`
+- `%lld %d AVE %s: %s::%s Exit %p %p %d %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to initialize SVECtrl %p %d %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d WP buffer pool abnormal %p %d %d\n`
+- `GetNegative`
+- `AVE_Prop_Cfg_MCTF_Print`
+- `%lld %d AVE %s: %s::%s:%d %p %d | %d %d %d %d %p\n`
+- `ID: %llu | Input: `
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create buffer pool between SwCs and work pool %p %d %d\n`
+- `AVE_IOP_CheckIdle_Atlas`
+- `DevCap ConcurrentChained %s | %p | %d\n`
+- `m_psHead != nullptr`
+- `AVE_Client_GGM_Check_Stop`
+- `%p %lld FilterGroupSize %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong scaling matrix mode %p %llu %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %llu %p SPS bits %d (bytes %d)\n`
+- `%lld %d AVE %s: %p %lld STRFeatureOff 0x%x\n`
+- `%lld %d AVE %s: %s::%s:%d %p %lld %d %d | %d %d %lld %d\n`
+- `m_psSeqHeader->initial_display_delay_present_flag == 0`
+- `%lld %d AVE %s: %s:%d %s | failed to set data info of RC %p %d %lld %p %lld | %p %d %d\n`
+- `AVE_CHMList_InsertByPriority`
+- `AVE_GOP_DecideFeature_SceneCutKeyFrame`
+- `FwHeartBeatTimerHandler`
+- `AVE_IOP_CheckIdle_Uranus`
+- `%lld %d AVE %s: %p %lld iChatUsageString %d\n`
+- `AVE2`
+- `%lld %d AVE %s: %s::%s:%d %p %lld | %p 0x%x %d %d %d\n`
+- `ProcessOutputCmd_Done`
+- `%lld %d AVE %s: %p %lld MaximumRealTimeFrameRate %d\n`
+- `AVE_Client_Uninit`
+- `%lld %d AVE %s: %p RefNumOfBFrameL0 %d\n`
+- `%lld %d AVE %s: %s Enter 0x%x 0x%llx\n`
+- `GetEntryByFrameNum`
+- `%p %lld ClientPID %d\n`
+- `AppleAVE2Driver`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p %d %p %p\n`
+- `%lld %d AVE %s: %s:%d %p %d %lld %p %lld | 0x%llx\n`
+- `%p StrictKeyFrameIntervalDuration: %d.%03d\n`
+- `nextCoef == LocalExplicitScalingList[sizeId - 1][matrixId][0]`
+- `site.int16_t`
+- `%lld %d AVE %s: %s::%s:%d DPB Entry %p %lld | %p 0x%x %d %lld %d %d | %p %p| %d %p %p| %d %p %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | decoder model info present flag not supported: %p %llu %d, %d, %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %llu difference of pic nums minus1 %d\n`
+- `AVE_CHM_MakeFwCmd_Flush`
+- `site.T`
+- `HEVC_GenerateSlice`
+- `AVE_IOP_Config_Themis`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid show existing frame: %p %llu %d\n`
+- `Write_profile`
+- `%lld %d AVE %s: %s:%d DMV2 HiResInput %p %d %lld %p %lld | compress=%d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | previous task command not done %p %d %p\n`
+- `%lld %d AVE %s: %s:%d %s | wrong parameters %p %lld %d\n`
+- `%lld %d AVE %s: %s:%d %s | DPBBuffer: ok == false\n`
+- `%p %lld MachThreadPriorityForThreadEmittingFrames %d\n`
+- `pInfo->sBufPFSet.saTranscodedCDF[i].iAddr != 0`
+- `pInfo->sBufPFSet.saSrcNeighborAboveFltPixel[0].iAddr != 0`
+- `%lld %d AVE %s: %s:%d %s | LRME multipass index out of bounds %p %lld %p %d %d (expected: 0)\n`
+- `%lld %d AVE %s: %s::%s Enter %p 0x%llx %p %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to get tunables %p %p %p %d %p %d %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %p %p %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Failed to initialize slice header parameter set class %p %llu %p %p\n`
+- `%lld %d AVE %s: %s:%d %s | AVC log2_max is out of range %d %d %d (max %d)\n`
+- `%lld %d AVE %s: %s:%d cannot enable chained mode %d %d %d %d %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to find client %p %d %lld\n`
+- `pProvider != nullptr && pCfg != nullptr && pDevInfo != nullptr && id < 4 && 0 <= mapperID && mapperID < 2 && idx >= 0 && numOfEntry >= 0`
+- `%lld %d AVE %s: %s::%s Exit %p %d 0x%x %d %d %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %lld %p %d %p | %d %d\n`
+- `AVE_QPMod_DecideFeature_Depth`
+- `%lld %d AVE %s: %s::%s:%d %p %lld | %d %d %d %d %d\n`
+- `%lld %d AVE %s: %s:%d QPMod iFeature %p %lld 0x%x\n`
+- `ProcessDropP`
+- `m_pcIODrv != nullptr && m_psClient != nullptr`
+- `%lld %d AVE %s: HEVC SPS: sps_seq_parameter_set_id %d, sps_video_parameter_set_id %d\n`
+- `psSlice != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p %p\n`
+- `AVE_CHM_PrepareDataInfo`
+- `%lld %d AVE %s: %p AlgVerbose 0x%llx\n`
+- `%lld %d AVE %s: %p %lld VideoResolutionAdaptationType %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to start DPM %p %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | [Switch] failed to set refed info %p %lld %p %d %d %p %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %d %d %p\n`
+- `pBufSet->saDefaultCDF[i][m].iAddr != 0`
+- `%lld %d AVE %s: %p SliceNum %d\n`
+- `pInBuf->pBuf != nullptr && pOutBuf->pBuf != nullptr`
+- `pInBuf->iSize >= dataSize && pOutBuf->iSize >= dataSize`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to initialize device info %p %p %d 0x%llx %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to receive message from firmware %p %p %d\n`
+- `psSyncInfo != nullptr && piReady != nullptr`
+- `psSPS != nullptr && psPPS != nullptr && piSH != nullptr && iBufSize > 0 && piSHNumOfBit != nullptr`
+- `%lld %d AVE %s: %s:%d %s | DPBBuffer: RestoreContext with NULL state\n`
+- `AVE_Client_CheckInfo`
+- `ProcessRunCmd_Stop`
+- `%lld %d AVE %s: %s::%s Enter %p %d 0x%x %p %d\n`
+- `num > 0 && unitSize > 0`
+- `%lld %d AVE %s: BestMVSum[%d].iSum_Best16x16_MVy %d\n`
+- `%lld %d AVE %s: %s:%d %s | DPB pcaRecon == NULL.\n`
+- `pClient->pcPipeline != nullptr`
+- `%lld %d AVE %s: %p MaxKeyFrameIntervalDuration: %d.%03d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | firmware command error %p %d %p %p %p %d \n`
+- `MaxKeyFrameIntervalDuration: %d.%03d\n`
+- `- %d %d %d %d `
+- `%lld %d AVE %s: %s:%d %s | failed to configure Pipeline %p %lld %p %d %d %p %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to init base class %p %lld 0x%x %d %d %d %d %d %d %d %d\n`
+- `%lld %d AVE %s: Surface Manager %s | %p | Total DART Size: [%s]bytes\n`
+- `%lld %d AVE %s: %s:%d %s | Frame alread added %lld %p %lld\n`
+- `pInfo->sHEVC_VPS.num_add_layer_sets <= (63 + 1)`
+- `%lld %d AVE %s: %s:%d %s | %p %lld: GG#%d (%d-%d) weights (%d-%d-%d) are not correct, %p %d, %d %d\n`
+- `YES`
+- `IO_Config`
+- `%lld %d AVE %s: %s::%s:%d %s | KeyFrame Process failed %p %lld | %lld 0x%llx 0x%x %p %d\n`
+- `Client%s: %p ID: %lld Enc Type: %d Mode: %d View: %d Layer: %d Pass: %d\n`
+- `%lld %d AVE %s: %p DefaultCfg %d\n`
+- `iomdEarlyPurge`
+- `scenecutDetection`
+- `%lld %d AVE %s: %s::%s:%d %s | scaling matrix mode not support %p %llu %d\n`
+- `%lld %d AVE %s: DPBBuffer (%d): reorder L0b short abs_diff_pic_num_minus1 %d (m_refL0a->iFrameNum %d - m_refL0b->iFrameNum %d - 1)\n`
+- `%lld %d AVE %s: %p %lld InitialQPP %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p 0x%x %p %d %d %d\n`
+- `%lld %d AVE %s:   tile[%d] (%d,%d) %dx%d\n`
+- `%lld %d AVE %s: %s:%d updated configuration %p %lld | %d | %d.%03d %d 0x%x\n`
+- `%lld %d AVE %s: %s::%s:%d fail to send Work Pool command stop %p %d | %p %d %lld %p %lld | %p %d\n`
+- `AVE_Ref_DecideRefGapOfPFrame`
+- `%lld %d AVE %s: %p %lld OutputCopy %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %d %d %d.%03d %d.%03d %d\n`
+- `%lld %d AVE %s: DPBBuffer (%d): no long term; put rec at the beginning\n`
+- `ProcessNewCmd_Priority`
+- `AVE_IOP_GetCurrTime_Ares`
+- `%p MCTFGatingType %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %d 0x%llx\n`
+- `%lld %d AVE %s: %s::%s:%d failed to shut down IOP %p %d %d\n`
+- `%p %lld SVEMap %s\n`
+- `ave-fwsize`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to allocate block buffer %p %lld %d\n`
+- `SwC %s | %p %d | CmdSentCnt: %lld CmdRecvCnt: %lld IntrInCnt: %lld IntrOutCnt: %lld \n`
+- `iomd-cache-size`
+- `%lld %d AVE %s: BestMVSum[%d].i32_Sum_Best8x8_MVx %d %d %d %d\n`
+- `m_psFrameHeader->allow_warped_motion == 0`
+- `%lld %d AVE %s: %s::%s:%d %p %llu ref pic list reordering flag l0 %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %llu max long term frame idx plus1 %d\n`
+- `%lld %d AVE %s: %s:%d %s | DPB UpdateDPBFromFullSliceRPS (%d): F %d m_ctx.m_num_ref_frame (%d) < 2\n`
+- `AVE_Analytics_CollectPowerState`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to prepare IOMemoryDescriptor Data %p %d 0x%x\n`
+- `AVE_IOP_Config_Hypnos`
+- `%lld %d AVE %s: %s::%s:%d %p %lld pool %d %d | Cur %lld flush %d | %lld %lld\n`
+- `%lld %d AVE %s: %s::%s:%d data stream %p %d %d %p %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %d:%d %p %d:%d %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p 0x%x %d %d %d\n`
+- `%lld %d AVE %s: useUserRPS %d\n`
+- `(pClient->sSessionCfg.sRes.iWidth == 0 || pClient->sSessionCfg.sRes.iWidth == pInfo->sSessionCfg.sRes.iWidth) && (pClient->sSessionCfg.sRes.iHeight == 0 || pClient->sSessionCfg.sRes.iHeight == pInfo->sSessionCfg.sRes.iHeight)`
+- `AVE_Prop_Cfg_AVC_Init`
+- `DART2KernelAddr`
+- `StaticAreaQPModInfo`
+- `Write_seq_parameter_set_rbsp`
+- `SetRefFrames`
+- `%lld %d AVE %s: DPBBuffer (%d): we will replace long term %d\n`
+- `%lld %d AVE %s: %s:%d %s | invalid entropy coding header firmware buffer %p %d %lld %p %lld | %d\n`
+- `AVE_CHM_AppendCmd`
+- `1122222222222222222222222222222222222222222111122222222222222221111`
+- `%lld %d AVE %s: %s::%s:%d %s | driver is not ready %p 0x%x %d\n`
+- `%lld %d AVE %s: DPBBuffer (%d): NON IDR -> IsALongTermFrame %d TYPE %d\n`
+- `%p %lld MoreFramesAfterEnd %d\n`
+- `%lld %d AVE %s: bEnableTimingInfoMetadata %d\n`
+- `%p NumOfGOPLayer %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d <WPParm> %d %lld %lld %lld %d %d\n`
+- `pIn != nullptr && inSize >= sizeof(S_AVE_UCInParam_Complete) && pOut != nullptr && outSize >= sizeof(S_AVE_UCOutParam_Complete)`
+- `%lld %d AVE %s: RPS: stRpsIdx %d, num_negative_pics %d, num_positive_pics %d\n`
+- `SetRPSParallelMode`
+- `%lld %d AVE %s: %s Enter %p %p %d %d\n`
+- `%lld %d AVE %s: %s:%d %p %d %lld %p %lld | %d %d | %d %d %d | %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %lld %p %d\n`
+- `%lld %d AVE %s: MCC %s | %p %d | Handle: %p | Data Stream: %s\n`
+- `feature_value <= limit && feature_value >= -limit`
+- `m_psSeqHeader->color_config.subsampling_y == 1`
+- `222122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `%p %lld MCTFEnableFeedback %d\n`
+- `%lld %d AVE %s: DPBBuffer (%d): w = %d, h = %d\n`
+- `Commands in Stage: %s\n`
+- `2 <= pInfo->VideoParamsDriver.userDPBnumFrames && pInfo->VideoParamsDriver.userDPBnumFrames <= (((16) > (15) ? (16) : (15)) + 1)`
+- `AVE_Client_GGM_Check_Reset`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p %lld 0x%x %d %p %d %d %d\n`
+- `pSurface != nullptr && euID < 4`
+- `%lld %d AVE %s: %p %lld ThrottleForBackground %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to update FPS %p %lld %p %p %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %lld %d Var %d Cost Intra %d Inter %d %d L0 %d L1 %d L0L1 %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %lld %d %p 0x%llx 0x%llx 0x%llx\n`
+- `AVE_Client_DMV_Check`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid allow warped motion: %p %llu %d\n`
+- `p < m_iSize`
+- `AVE_UCCmd_CheckParam_Open`
+- `\"psList2 != NULL\" @%s:%d`
+- `%lld %d AVE %s: %p %lld UseLongTermReference %d\n`
+- `m_psInProcTimer != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong block buffer size %p %lld %p %p %p %p %d %p %p %p %p %p | %d %d\n`
+- `%lld %d AVE %s: %s Enter %d.%03d %d.%03d %d.%03d %d.%03d 0x%llx %p\n`
+- `CreateDict`
+- `%lld %d AVE %s: %s:%d %s | wrong UC Info index %d %d %p %lld %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p %lld %p %p 0x%x %p \n`
+- `AVE_CHM_SetDataInfo_Frame`
+- `%lld %d AVE %s: %s:%d %s | Firmware's MCTF Output buffer is invalid %p %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d %p 0x%llx 0x%llx\n`
+- `%lld %d AVE %s: %s::%s:%d received IPC buffer %p %d %d<->%d %p %d 0x%x\n`
+- `clientDied`
+- `AVE_AVC_Prepare_dec_ref_pic_marking`
+- `%lld %d AVE %s: HEVCHEADERS L0[0] found, poc: %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p %llu\n`
+- `%lld %d AVE %s: DPBBuffer (%d): m_ctx.m_ShortTermFrameNumberFromIDR %d\n`
+- `DPBGetFrameRequested`
+- `%lld %d AVE %s: %s:%d %s | invalid source neighbor left pixel firmware buffer %p %d %lld %p %lld | %d %d\n`
+- `Main 4:4:4 10`
+- `DirectRecon`
+- `%lld %d AVE %s: %s:%d %s | failed to DART map external surfaces %p %d %p %lld %d\n`
+- `%lld %d AVE %s: %s::%s:%d encrypt %p %d %p %d %p %lld | %d 0x%llx\n`
+- `%lld %d AVE %s: %s:%d %s | source and destination alias %p %d %p\n`
+- `%lld %d AVE %s: %s:%d %p %lld %p %d %lld input Q %d - %d\n`
+- `IOUserClientDefaultLockingSetProperties`
+- `AVE_DPBElem`
+- `AVE_QPMod_DecideFeature_Variance`
+- `AVE_IOP_Config_Pan`
+- `pd < AVE_PMGR_PD_Max`
+- `%lld %d AVE %s: %s:%d %s | AV1 GenerateTileMap failed %d %dx%d eu=%d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | refL1 = NULL %p\n`
+- `%lld %d AVE %s: %s:%d %s | DPBBuffer: previous cannot be NULL.\n`
+- `site.AVE_AVC_PPS`
+- `%lld %d AVE %s: Frame Stats:\n`
+- `%lld %d AVE %s: %s:%d %s | failed to set payload %p %p %d %lld%% %d\n`
+- `Reference Cfg %s | %p\n`
+- `Off`
+- `%lld %d AVE %s: %s:%d %s | DPBBuffer: L0b PictureTypeToReorder AVE_RefType_None (%x)-> cannot be\n`
+- `%lld %d AVE %s: %s:%d %s | failed to create internal UC info pool %p %lld %d %d %d\n`
+- `%lld %d AVE %s: %p %lld iMaximumRealTimeFrameRate %d\n`
+- `%lld %d AVE %s: %s::%s:%d firmware command error %p %d %d %lld 0x%x\n`
+- `0 < ipcChNum && ipcChNum <= AVE_IPC_Ch_Max`
+- `%lld %d AVE %s: %s::%s:%d halting IOP time out %p %d %d %d 0x%x\n`
+- `%lld %d AVE %s: %s 0x%llx %d %d %d | %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong frame QP %p %lld %p %d %d\n`
+- `%lld %d AVE %s: GGM PF Properties %p %lld %s\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d | %p %d %lld %p %lld | GOP Decision cmd %d frame #%d\n`
+- `1121221`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to get positive ref poc %p %lld %lld %d %d\n`
+- `UpdateAVCFrameNum`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to free memory to IPC pool %p %d 0x%lx 0x%llx %d\n`
+- `ConfigDLB`
+- `%p %lld VariableBitRate %d %d\n`
+- `%lld %d AVE %s: %p %lld MotionEstimationSearchMode %d\n`
+- `Input`
+- `%lld %d AVE %s: DLB %s | %p | %p %p\n`
+- `%p %lld EnableTransform8x8 %d\n`
+- `site.S_AVE_Time`
+- `%lld %d AVE %s: %s::%s:%d total number of commands %p %d | %p %d %p %lld | %d %d %d %d | %d %d %d %d %d %d %d\n`
+- `ThroughputMode %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | invalid task %p %d %p\n`
+- `%lld %d AVE %s: %s::%s:%d %p %lld %d %lld | %lld %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to initialize surface manager %p %p %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to make command %p %d %p %p %d\n`
+- `m_psSeqHeader->color_config.transfer_characteristics == AV1_TC_UNSPECIFIED`
+- `DevCap PixelFmt %s | %p | %d\n`
+- `InsertAfterDPBEntry`
+- `AVE_Analytics_CollectEncMode`
+- `Remap`
+- `%lld %d AVE %s: %p MCTFSensoreGain2RefThreshold %d.%03d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | frame type mismatch %d %d\n`
+- `SrcNeighborFwData`
+- `LastMaxPTS: %lld\n`
+- `%lld %d AVE %s: %s::%s Exit %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d task %p %lld priority %d %d\n`
+- `IntraPred`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to start IOP %p %d %p %d\n`
+- `iLengthFieldSize > 0 && iHeaderSize + iLengthFieldSize + iPayloadSize <= m_iSize`
+- `%lld %d AVE %s: NumberOfFreePool: %d\n`
+- `site.AVE_FPS`
+- `%lld %d AVE %s: %p %lld STRFeatureOn 0x%x\n`
+- `ret == AVE_OK`
+- `pClient->pcaSurfacePool[AVE_SurPoolIdx_LRB] != nullptr`
+- `%lld %d AVE %s: %s:%d %s | wrong UCInfo %p %lld %p %d %d\n`
+- `pcaSurface != nullptr && iNum > 0`
+- `pInfo != nullptr && pInfo->context != nullptr`
+- `%lld %d AVE %s: DPBBuffer: type              %d\n`
+- `AVE_CHM_MakeFwCmd_Start_AVC`
+- `%lld %d AVE %s: %s:%d %s | Client Type is invalid %p %lld %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to update FPS %p %lld %p %d %d %p %p %d\n`
+- `pcMD->GetType() <= AVE_WorkType_Sw`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %lld %p %d %p %d %p\n`
+- `addr != 0`
+- `CheckPSFlagDown`
+- `%lld %d AVE %s: %s:%d %s | invalid surface %d\n`
+- `%lld %d AVE %s: %s::%s:%d %pd %d | %p %d %lld %p %lld | %d %ld\n`
+- `%lld %d AVE %s: %s::%s:%d %s | HEVC Scaling Matrix nextCoef (%d) != ScalingList[%d] %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create Ref Manager %p %lld\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to init bit allocation ratio array %p %lld | %d %d %d %d\n`
+- `(entry->previous != nullptr) || (entry->next != nullptr)`
+- `%p %lld EnableMCTF %d\n`
+- `SetTunables_Parity`
+- `pCHM->psClient != nullptr`
+- `%lld %d AVE %s: %s::%d m_iFwTimeShift = %lld\n`
+- `%lld %d AVE %s: %s::%s:%d %s | IODMACommand should not be NULL %p %d %d %p\n`
+- `%p %lld UserRPSForFaceTime %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld %s %p %d %p\n`
+- `%p CfgOn 0x%llx\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to create device info %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create MCC %p %d\n`
+- `AVE_IOP_Start_Gaia`
+- `Mapper Error %p %d | AXI REQ: 0x%llx 0x%llx 0x%llx 0x%llx`
+- `%lld %d AVE %s: %s:%d %s | failed to DART map surface %s 0x%llx %d %d %d %d %d\n`
+- `Surface Manager %s | %p | Total Size: %lld bytes, Total Count: %d\n`
+- `piBuf != nullptr && iBufSize > 0 && piSize != nullptr`
+- `%lld %d AVE %s: Load Stats %s | %p | iFrameCntOfInput_HEIF: %d iFrameCntOfReady_HEIF: %d iFrameCntOfRun_HEIF: %d iFrameCntOfOutput_HEIF: %d\n`
+- `AVE_UCCmd_CheckParam_Reset`
+- `pClientList != nullptr && piaThreshold != nullptr && iNum == 2`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong firmware command sequence %p %d | %p %d %lld %p %lld | %p 0x%x 0x%x\n`
+- `ipcChBuf == ipcChEntry`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %p %d %d %p %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create hevc pps %p %lld %d %p\n`
+- `psPSCtxSrc != nullptr && psPSCtxDst != nullptr`
+- `%lld %d AVE %s: %s::%s Enter\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to allocate surface memory %p %lld\n`
+- `AVE_PrintExternalOutSurfaces`
+- `pUCInfo->PerFrameData.userSliceQP <= (((((-6) * ((8) - 8))) < (((-6) * ((10) - 8))) ? (((-6) * ((8) - 8))) : (((-6) * ((10) - 8)))) - 1) || pUCInfo->OutputMetaData.frameQp == pUCInfo->PerFrameData.userSliceQP`
+- `m_psFrameHeader->showable_frame == 0`
+- `%lld %d AVE %s: %s::%s:%d %s | Failed to allocate syntax writer %p %llu\n`
+- `aocp-client`
+- `program_sps_rps_IbBBPP`
+- `%lld %d AVE %s: %p %lld LatencyMode %s\n`
+- `SteveNote`
+- `%lld %d AVE %s: %p RCFeatureOff 0x%llx\n`
+- `%lld %d AVE %s: %s::%s:%d SetAbility %p %d\n`
+- `%lld %d AVE %s: %s:%d don't send invalid event %p %d %d\n`
+- `%lld %d AVE %s: UpdateParameterSets %d ScalingMatrixMode %d forceKeyFrame %d InputCompressed %d\n`
+- `%lld %d AVE %s: DMV PF Properties %p %lld %s\n`
+- `%lld %d AVE %s: %s::%s:%d Frame Reference Count %p %p %lld | %p %d | %lld 0x%x %lld | %p %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %lld %d %d | %d %d | %d %d %d %d\n`
+- `m_pcaMemMap[i] != nullptr`
+- `pSurfaceRoot != nullptr && psTask!= nullptr`
+- `PrintEntry`
+- `%lld %d AVE %s: %s:%d bLossless: %d, bMinMem: %d, encMode: %d, RCMode: %d, bitrate: %d, initialQPI: %d, normalSize: %d, size: %d \n`
+- `UpdateBufImage`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %p %p %p %d %p\n`
+- `AVE_DARTUnmapDataSurfaces`
+- `UpdateRC`
+- `%lld %d AVE %s: %s::%s:%d %s | Wrong bit value %p %llu %d\n`
+- `%p FrameRate: %d\n`
+- `%lld %d AVE %s: USAGE %s isHEIF %d - slices %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to config surface pool %p %lld %p %p %p %d\n`
+- `%lld %d AVE %s: %s:%d Surface Pool %p %lld Frame %d | %p 0x%llx %p 0x%llx %p 0x%llx\n`
+- `%lld %d AVE %s: %s:%d %s | fail in add PTS %p %d %lld %p %lld | %p | %d %d %d %p\n`
+- `m_iState != 0`
+- `- `
+- `site.HEVC_VPS`
+- `registerErrorHandler`
+- `AVE_CHM_FinishCmd`
+- `AVE_Client_MCTF_Check_Flush`
+- `%lld %d AVE %s: %p %lld NumberOfSlices %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %d %d %p %d %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %llu %p %d %d %d\n`
+- `%lld %d AVE %s: DPBFindInvalid: searching index %d position %d type %d\n`
+- `%lld %d AVE %s: %s::%s:%d Command not found for frame %lld\n`
+- `%lld %d AVE %s: %p %lld SEIFeatureOn 0x%llx\n`
+- `AVE_Client_Create`
+- `CalcZeroMVBinCnt`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create surface %p %p %p %lld 0x%x 0x%x 0x%llx 0x%x %d %d\n`
+- `%lld %d AVE %s: %s:%d send event %s %p %p\n`
+- `%lld %d AVE %s: %s:%d %p %d %d %d 0x%x WID %lld| 0x%x %d-%d | %p %d %lld 0x%x | %d %d | stage %d | %d | %lld %lld\n`
+- `Width`
+- `pMemDesc != nullptr && pCfg != nullptr && ppEntry != nullptr`
+- `%p RefGapOfPFrame %d\n`
+- `%lld %d AVE %s: %s 0x%llx %d %d %d | %d | %d %d %d %d\n`
+- `m_pcSVERC != nullptr`
+- `%lld %d AVE %s: %s:%d AV1TileMap | %dx%d eu=%d | cols=%d rows=%d || %d\n`
+- `Update`
+- `%lld %d AVE %s: DPBBuffer (%d) (frame %d) selected IsThisFrameNonReference -> default IsALongTermFrame (was true) to false\n`
+- `%p %lld SoftMinQuantizationParameter %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld %p %d %d\n`
+- `AV1_FindProfileIdc`
+- `Destroy`
+- `AVE_CalcBufSizeOfSrcNeighborLeftPixel`
+- `PMGR Power Available: %d\n`
+- `pInfo->sBufPFSet.saSrcNeighborLeftPixel[0].iAddr != 0`
+- `%lld %d AVE %s: %s::%s:%d LRFS %p %p resolution %dx%d, zeroMVBinCnt[%d] = %d\n`
+- `GOPDecision`
+- `Fw2KernelAddr`
+- `%lld %d AVE %s: %s:%d %s | device ID is not set %p\n`
+- `psKeyFrameHint != nullptr`
+- `%lld %d AVE %s: %p %lld SoftMaxQuantizationParameter %d\n`
+- `(psCmd != nullptr) && (iSize >= sizeof(S_AVE_WPOutParam_Start))`
+- `%lld %d AVE %s: %s:%d %s | invalid UC info pools %p %p %p\n`
+- `0 < psSliceInfo->iNum && psSliceInfo->iNum <= ((32) < (256) ? (32) : (256))`
+- `%p %lld HEVCAuxiliaryIDs [%d] %d\n`
+- `pHdr->sSliceInfo.saCOBuf[i].saOBuf[AVE_BufIdx_Data].iSize > 0`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid error resilient mode: %p %llu %d\n`
+- `:%d`
+- `%lld %d AVE %s: %s::%s:%d tile width too large %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d %d\n`
+- `%p %lld RequiredHEVCVideoParameterSetRepFormatBitDepths [%d] %d\n`
+- `%lld `
+- `pEntry != nullptr && pDevID != nullptr`
+- `pIn != nullptr && inSize >= sizeof(S_AVE_UCInParam_Config) && pOut != nullptr && outSize >= sizeof(S_AVE_UCOutParam_Config) && arguments->asyncWakePort != nullptr && arguments->asyncReference != nullptr && arguments->asyncReferenceCount > 0`
+- `ThroughputModeRatioUltra1`
+- `value != nullptr`
+- `%lld %d AVE %s: %s:%d %s | DPBBuffer: temp->previous == NULL\n`
+- `pInfo->sBufPFSet.saLRRef[AVE_RefDir_Neg][AVE_Ref_B].saCIBuf[AVE_BufIdx_Luma].saIBuf[AVE_BufIdx_Data].iAddr != 0`
+- `%lld %d AVE %s: %s::%s:%d %s | invalid segments count  %p %d %d \n`
+- `0 <= iNum && iNum < (1 + ((2) < ((63 + 1)) ? (2) : ((63 + 1))) * (1 + 9 ))`
+- `%lld %d AVE %s: %s::%s:%d %p %d %d %d %d 0x%x\n`
+- `EntropyCoding`
+- `temp->previous != nullptr`
+- `NumOfOpenClients`
+- `22222233321222222222222222222222222222222222222222222222222222222222222222222`
+- `pSPS != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %p %lld | %p %d | %lld %d %d | %d %d %d\n`
+- `%lld %d AVE %s: %p %lld LRMERSCPassNum %d\n`
+- `%lld %d AVE %s: %s::%s Enter %d %d %d %d %p\n`
+- `\"psSrcList != NULL\" @%s:%d`
+- `%lld %d AVE %s: %s::%s:%d EUStats %d | %s\n`
+- `%lld %d AVE %s: %s:%d apply 10bit DPE configuration\n`
+- `ProcessIntr_IPCCh`
+- `%lld %d AVE %s: %s::%s:%d %p %d keep perf state %d %d\n`
+- `%p %lld AuxiliaryLayerProperties num=%d\n`
+- `%lld %d AVE %s: DPBBuffer (%d): m_ctx.m_FirstReferenceIndex %d\n`
+- `%lld %d AVE %s: %s:%d %s | separate_colour_plane_flag is not valid %d %d %d\n`
+- `pClient != nullptr && pDataInfo != nullptr`
+- `Prepare`
+- `%lld %d AVE %s: SVERC %s | %p %lld | %d %d | %s\n`
+- `%lld %d AVE %s: %s::%s Exit %p %ld %p %d\n`
+- `site.AVE_KeyFrame`
+- `%lld %d AVE %s: %p StrictKeyFrameIntervalDuration: %d.%03d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %d 0x%lx\n`
+- `m_pcProvider != nullptr`
+- `%lld %d AVE %s: %s Exit 0x%x 0x%x 0x%x 0x%x %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | invalid coded header buffer %p %lld | %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld %d\n`
+- `AV1_FindProfileName`
+- `%lld %d AVE %s: %s:%d %s | size overflow %d %d %lld %lld\n`
+- `ret > 0`
+- `AVE_WorkThread_Destroy`
+- `%lld %d AVE %s: %s::%s:%d %s | B reference invalid %p %lld %d %d %d\n`
+- `%lld %d AVE %s: %s Exit %p %p %p %d %p %d\n`
+- `%p RefGapOfBFrameL1 %d\n`
+- `%p %lld EnableMultiReferenceP %d\n`
+- `pDevInfo != nullptr && pSurface != nullptr`
+- `TruncateRefedInfo`
+- `Professional`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld %p\n`
+- `m_pcCommandGate != nullptr`
+- `RegisterClient`
+- `DARTUnmapSurface`
+- `%lld %d AVE %s: %s::%s:%d %s | could not find negative reference %p %lld | %d %lld %d\n`
+- `AVE_CalcBufSizeOfSrcNeighborPixel`
+- `%lld %d AVE %s: %p LookAheadFrameCount: %d\n`
+- `VMin`
+- `%lld %d AVE %s: %s::%s Enter %p %llu %p %p %p %d %p\n`
+- `%lld %d AVE %s: DPBBuffer (%d): reorder L0a short abs_diff_pic_num_minus1 %d (FRAMENUMBERFROMIDRWRAPPED %d - m_refL0a->iFrameNum %d - 1)\n`
+- `AVE_Client_UninitUCInfoPool`
+- `%lld %d AVE %s: %s:%d %s | wrong UCInfo %p %lld %p %d %d %p %p %d\n`
+- `m_pcaIDHwC[id] == nullptr`
+- `%lld %d AVE %s: %s:%d %s | too many parameter sets %d %d %d %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to set Hw power and its dependency %p %d %d %d\n`
+- `BestMVSum[%d].iSum_Best16x16_MVy %d\n`
+- `Main`
+- `CleanClient`
+- `%lld %d AVE %s: SVEDPB %s | %p %lld Entry %p | %s\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %d %lld %p\n`
+- `pSVESched != nullptr && psInfo != nullptr && psRefInfo != nullptr && pCmdInfo != nullptr`
+- `%p %lld IncludeMotionConfidence %d\n`
+- `%p %lld Paravirtualized %d\n`
+- `StopTimer      `
+- `ConcurrentIndependent %p | %d - %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to DART map internal surfaces %p %lld %p %lld %d %d\n`
+- `m_psSeqHeader->enable_warped_motion == 0`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %p %lld %p %p %d %p\n`
+- `%p %lld MCTFStrengthLevel[%d] %d\n`
+- `%lld %d AVE %s: %s:%d %s | chroma format is not valid %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to create MiniDevice %p %llu\n`
+- `s != nullptr`
+- `%lld %d AVE %s: %s::%s Enter %p %p %d %d %d\n`
+- `%lld %d AVE %s: %p InputQueueMaxCount %d\n`
+- `site.AVE_AVC_SPS`
+- `%lld %d AVE %s: %s::%s Exit %d %d\n`
+- `%lld %d AVE %s: %s:%d reset OpenGOP to CloseGOP for 0 B frame %p %lld\n`
+- `pValue != nullptr`
+- `AVE_CHM_FreeDataInfo`
+- `%lld %d AVE %s: %s:%d %s | Enc multipass index out of bounds %p %lld %p %d %d (range: [0,%d])\n`
+- `Write_slice_header`
+- `%lld %d AVE %s: %p %lld AllowTemporalCompression %d\n`
+- `%lld %d AVE %s: %s:%d %s | invalid source neighbor above filter pixel firmware buffer %p %d %lld %p %lld | %d\n`
+- `AVE_Client_Enc_Check_Stop`
+- `%lld %d AVE %s: %s::%s:%d wait too long %p %d | %p %d %lld %p %lld | %p %d %lld %d | %d\n`
+- `%lld %d AVE %s: %p %lld log2_max_minus4 %d\n`
+- `%lld %d AVE %s: %s::%s:%d %d\n`
+- `IO_Flush`
+- `21122222222222222222222222222222222222222222222222222`
+- `pBufSet->saSrcNeighborPixel[i].iAddr != 0`
+- `%lld %d AVE %s: %s:%d %s | failed to get MCTF Ref buffer DART addresses %p %d %lld %p %lld | %d %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | wrong parameters %lld 0x%x %p %p\n`
+- `112`
+- `%lld %d AVE %s: %s::%s:%d %s | Failed to write OBU size %p %llu %p %d %d %d %d %d\n`
+- `%p %lld FrameRateTargetForAverageBitrate %d\n`
+- `%p %lld MaxKeyFrameIntervalDuration %d.%03d\n`
+- `%lld %d AVE %s: %s::%s:%d failed to generate PPS %d %d %d %d %p %d %d\n`
+- `%lld %d AVE %s: Slice: IDR pic_order_cnt_lsb %d\n`
+- `%lld %d AVE %s: %s::%s:%d Invalid buffer mode: %d\n`
+- `temp->next != nullptr`
+- `m_rec->next == nullptr`
+- `%lld %d AVE %s: %s:%d %s | failed to create command pool %p\n`
+- `SendFwCmd_Process`
+- `%lld %d AVE %s: %s::%s:%d %p %d %p %d %d\n`
+- `222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111222111`
+- `%lld %d AVE %s: %s:%d %s | failed to set payload%p %p %d %lld %d\n`
+- `lumaAddr != 0`
+- `%lld %d AVE %s: %s:%d %s | failed to create PTS FPS %p\n`
+- `AVE_Work_MSC_PostUpdate`
+- `Load Stats %s | %p | iFrameCntOfInput_Rt: %d iFrameCntOfReady_Rt: %d iFrameCntOfRun_Rt: %d iFrameCntOfOutput_Rt: %d\n`
+- `pre-loaded`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %d %p %p %d %p\n`
+- `pSurfaceRoot != nullptr && psTask != nullptr && size > 0 && ppSurface != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %p %llu no output of prior pics flag %d\n`
+- `StrictKeyFrameInterval: %d\n`
+- `%lld %d AVE %s: %s:%d %s | DPBBuffer ERROR: m_ctx.m_num_ref_frame (%d) != s->num_ref_frame (%d) in SetDPBSnapShot -> not supported yet -> fail\n`
+- `Power Range %d: [%d, %d]\n`
+- `pBufSet->saEntropyCoding[i][j].saIBuf[AVE_BufIdx_Header].iAddr != 0 && pBufSet->saEntropyCoding[i][j].saIBuf[AVE_BufIdx_Header].iSize != 0`
+- `GetPositive`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid skip mode present: %p %llu %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Wrong parameters %p %llu %p %d %p\n`
+- `%lld %d AVE %s: %s:%d %s | view number is out of range %d %d (%d, %d]\n`
+- `UninitCTRRImage`
+- `AVE_Enc_DecidePriority`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %lld\n`
+- `%lld %d AVE %s: %s::%s:%d %s | decoder model info present flag not supported: %p %llu %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %d %d %d\n`
+- `AVE_WorkPool_Destroy`
+- `Group Begin 16 `
+- `%p %lld ForceRefUncompressed %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | invalid HwC %p %p %lld %d %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to iovmInsert .text section %p %d 0x%x\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to allocate IPC command bufer %p %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | unsupportted GOP Mode %p %lld %p %d %d %p %p\n`
+- `axi2af_parity_enable`
+- `         `
+- `pCHM != nullptr && pBuf != nullptr && size > 0`
+- `DeletePools`
+- `%lld %d AVE %s: %s::%s:%d %p %d keep power state %d %d\n`
+- `InitRC`
+- `%lld %d AVE %s: %s:%d %p %lld %p %d %lld min input Q %d - %d\n`
+- `AVE_IOP_CheckIdle_Aion`
+- `%s\n`
+- `%p %lld NumOfTemporalLayer %d\n`
+- `%lld %d AVE %s: %s:%d Unsupportted Command %d\n`
+- `AVE_Client_LRME_Check_Process`
+- `%lld %d AVE %s: %s::%s:%d | %d %d %d | %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Failed to allocate picture parameter set class %p %llu\n`
+- `ProcessFrameForceP`
+- `%lld %d AVE %s: %s::%s:%d %s | Film grain parameters not supported: %p %llu %d, %d, %d\n`
+- `Firmware Size: %d\n`
+- `AVE_CHM_HandleCmds`
+- `kret == 0`
+- `NotifyNewCmd`
+- `SMMUHwException`
+- `%lld %d AVE %s: %p %lld NumberOfTemporalLayers %d\n`
+- `AVE_SVESched_TimingMgr_Init`
+- `site.AppleAVE2Driver`
+- `%lld %d AVE %s: %s Exit %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to update EUMap %p %p %lld %d\n`
+- `%lld %d AVE %s: DevCap Mapper %s | %p \n`
+- `(waitResult == 0) || (waitResult == 1)`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to attach the client %p %lld %p %p %d %p %p %d\n`
+- `%lld %d AVE %s: %s:%d %s | frame dimension doesn't match between prepare [%d %d] and start [%d %d] %p %lld %d\n`
+- `AVE_DART`
+- `%lld %d AVE %s: %s::%s:%d %s | channel not found %p %d %d\n`
+- `PDMap %p | %d - %d\n`
+- `%lld %d AVE %s: %s:%d %s | invalid L1 ref firmware buffer %p %d %lld %p %lld | %d %p\n`
+- `%p MCTFSensoreGain1RefThreshold %d.%03d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to generate PPS %p %lld %p %d %d %d %d %d %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d already generated before %p %d %d %d %d %d %p %p %d\n`
+- `%lld %d AVE %s: Slice: IDR slice_qp_delta = %d (qp %d init_qp_minus26 %d)\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d iRdCnt %lld iWrCnt %lld\n`
+- `%p %lld InitialQPB %d\n`
+- `%lld %d AVE %s: %s Enter %p %lld 0x%x %p %p\n`
+- `AVE_AVC_CheckInfo`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to create external process timer %p %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | too many clients %p %p %lld | %d %d\n`
+- `psGGMInfo->iaBaseColorWeight[i] >= 0 && psGGMInfo->iaBaseColorWeight[i] <= 1024 && psGGMInfo->iaSpatialWeight[i] >= 0 && psGGMInfo->iaSpatialWeight[i] <= 1024 && psGGMInfo->iaBaseColorWeight[i] >= 0 && psGGMInfo->iaBaseColorWeight[i] <= 1024`
+- `iNum <= 9`
+- `%lld %d AVE %s: %s:%d %s | invalid LRB firmware buffer %p %d %lld %p %lld | %d %p\n`
+- `AVE_Client_Verify`
+- `AVE_QPMod_DecideFeature_LowVariance`
+- `111211112`
+- `m_saRefBuf[i].psaLowResResultBuf != nullptr`
+- `%lld %d AVE %s: DPBBuffer: frame_num_driver  %d\n`
+- `Interchange`
+- `pd < AVE_PMGR_PD_Max && ps != AVE_PMGR_PS_ClockOff && ps < AVE_PMGR_PS_Max`
+- `size > 0 && unitSize > 0`
+- `%lld %d AVE %s: %s:%d %s | DPBFindInvalid: temp == NULL\n`
+- `pBufSet->saSTFSrcNeighborInfo[i].iAddr != 0`
+- `%lld %d AVE %s: %s:%d %s | failed to create command info pool %p\n`
+- `*pSize > 0`
+- `%p MCTFSensorGainTrigThreshold %d.%03d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to create internal process timer %p %p\n`
+- `pcWorkThread != nullptr`
+- `%lld %d AVE %s: %s::%s:%d could not find positive reference %p %lld %lld %lld\n`
+- `AVE_IOP_Config_Upis`
+- `AVE_DevCap_MakeGGMCap`
+- `%p CfgOff 0x%llx\n`
+- `Analyzer`
+- `AVE_Analytics_SetEventFieldUint64`
+- `AVE_Client_Reset`
+- `%lld %d AVE %s: %s:%d %s | fail to copy stats %p %lld %d %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %lld %d %p\n`
+- `DLBUnit %s | %p %lld | %d - 0x%x %d %d %d || %s\n`
+- `delta_poc <= currentFrameSettings->PerFrameData.iPOCLsb`
+- `psProfile != nullptr`
+- `%lld %d AVE %s: %s:%d %s | invalid low res ref firmware buffer %p %d %lld %p %lld | %d %p\n`
+- `Load Stats %s | %p | iFrameCntOfInput: %d iFrameCntOfReady: %d iFrameCntOfRun: %d iFrameCntOfOutput: %d\n`
+- `ProcessCmd`
+- `m_psFrameHeader->force_integer_mv == 0`
+- `%lld %d AVE %s: %s:%d B slice qp delta = %d (qp %d pic init qp minus26 %d)\n`
+- `%p %lld MaxLookBehind %d\n`
+- `%lld %d AVE %s: %s:%d %s | invalid entropy coding firmware buffer %p %d %lld %p %lld | %d %d %d\n`
+- `%p MCTFOnToOffPerfThreshold %lld\n`
+- `MCTFMapSet`
+- `%s 0x%llx %d %d %d | %d | %d %d %d %d\n`
+- `%lld %d AVE %s: DPBBuffer found s->e[%d].SurfaceID[0] %d and s->e[%d].SurfaceID[1] %d in the buffer list\n`
+- `%lld %d AVE %s: %s::%s Enter %p %d %p %d %p\n`
+- `%lld %d AVE %s: %s::%s:%d fail to send firmware command flush %p %d | %p %d %lld %p %lld | %p %d\n`
+- `%lld %d AVE %s: %p RCQPRange: [%d %d]\n`
+- `iNum > 0`
+- `ApplyFAB`
+- `(pcPFInfo->iFrameType == IMG_INTER_B || pcPFInfo->iFrameType == IMG_INTER_BREF) && psRefInfo->iaNum[AVE_RefDir_Neg] >= 1 && psRefInfo->iaNum[AVE_RefDir_Pos] >= 1`
+- `check_tile_size_conformance`
+- `%lld %d AVE %s: %s:%d %s | either QP map or slice QP has to be set %p %lld %p %d %lld 0x%x\n`
+- `%lld %d AVE %s: %s:%d %s | wrong parameters %p %d %p\n`
+- `pInfo->uPropCfg.sHEVC.iMCTFStrengthLevelNum >= 0 && pInfo->uPropCfg.sHEVC.iMCTFStrengthLevelNum <= ((2) < ((63 + 1)) ? (2) : ((63 + 1)))`
+- `pIOClient != nullptr && pIODrv != nullptr`
+- `AVE_TaskCmd_LACost`
+- `AVE_Enc_DecidePassNum`
+- `%d | `
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid enable masked compound %p %llu %d\n`
+- `ProcessReadyCmd_Complete`
+- `PostUpdate`
+- `type > AVE_ChipType_None && type <= sizeof(gsc_saAVE_IOP_If)/sizeof(*gsc_saAVE_IOP_If) && gsc_saAVE_IOP_If[type - 1].GetCurrTime != nullptr`
+- `waitResult == 0`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %p\n`
+- `next != nullptr`
+- `%lld %d AVE %s: %s:%d %s | failed to process command %p %lld %p %d %d %p %p %d\n`
+- `%lld %d AVE %s: Load Stats %s | %p | iClientNumOfPwEff: %d iActiveClientNumOfPwEff: %d iClientNumOfNoPwEff: %d iActiveClientNumOfNoPwEff: %d \n`
+- `%lld %d AVE %s: %s::%s Exit %p 0x%llx %d\n`
+- `setRpsVars`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %p | %d\n`
+- `%lld %d AVE %s: %p VBVMaxBitRate %d\n`
+- `%p GOPFeatureOff 0x%x\n`
+- `pfVBVBufferSize != nullptr`
+- `CondWait`
+- `PowerStateRatioMin`
+- `pSurface != nullptr`
+- `FreeIPCMem  20 `
+- `pDPBSet != nullptr && pUCInfo->sGOPInfo.iPOC >= 0`
+- `%lld %d AVE %s: %s::%s Enter %p %lld\n`
+- `DLB Unit: %d - %d %d %d %s\n`
+- `Last Frame Number: %lld\n`
+- `ProcessInputCmd`
+- `%lld %d AVE %s: %s::%s:%d sent IPC buffer %p %d %d<->%d 0x%llx %d\n`
+- `pList != nullptr && size > 0 && pUserAddr != nullptr`
+- `psTimingMgr != nullptr && iSVENum >= 0 && iSVENum <= 4`
+- `pID != nullptr && pSubIDFlag != nullptr && pRevision != nullptr`
+- `site.HEVC_Slice`
+- `%lld %d AVE %s: %s Enter %d %d %d %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong calling sequence %p %lld %s 0x%llx\n`
+- `%lld %d AVE %s: DMV Properties %p %lld %s\n`
+- `DLB %s | %p | %p %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to allocate syntax writer %p %p\n`
+- `AVE_RegCfg_Apply`
+- `AVE_CHM_MakeFwCmd_Process_HEVC`
+- `psTask->iaCurrCmdCnt[AVE_WP_Stage_Input] == 0`
+- `%lld %d AVE %s: %s:%d %s | user DPB number is out of range %p %lld %d %d [%d %d]\n`
+- `wrong parameters %p %p`
+- `site.AVE_RefMgr`
+- `%lld %d AVE %s: %s:%d %p %d | %p %d 0x%x %d %d | %d %d 0x%llx\n`
+- `%lld %d AVE %s: %s:%d %s | slice number is out of range %p %lld %d %d [%d %d]\n`
+- `Client%s: %p ID: %lld Type: %d HwFlag: 0x%x SwFeature: 0x%llx HwFeature: 0x%llx\n`
+- `%lld %d AVE %s: %s:%d %s | HEVC VPS layer-set total is out of range %d %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid frame type: %p %llu %d\n`
+- `psPPS != nullptr`
+- `%lld %d AVE %s: bEnableMCTF %d, MCTF DynamicSwitching %d, NumNextRefs %d\n`
+- `Drop: `
+- `%lld %d AVE %s: %s::%s:%d %s | failed to allocate IPC handshake memory %p %p %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld %p %d %d %p %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create hevc rps %p %lld %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | HEVC Scaling Matrix nextCoef (%d) != ScalingListDefault[%d][%d][0] %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | SVEGOP process failed %p %lld %d\n`
+- `psCurInfo != nullptr`
+- `%lld %d AVE %s: %s:%d %s | invalid DMV2 HiRes linear %p %d %p %lld | 0x%llx 0x%llx %d %d\n`
+- `SetDCS`
+- `%p %lld AlgFeatureOn 0x%llx\n`
+- `Calc`
+- `%lld %d AVE %s: %s:%d can not run at the best perf %d %d %d %d | %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d wrong state %p %lld %p %d %p %p %d %d\n`
+- `(next != nullptr) || (i >= m_ctx.m_num_ref_frame)`
+- `%lld %d AVE %s: %p %lld AverageNonDroppableFrameRate %d\n`
+- `%lld %d AVE %s: %s:%d firmware log size 0x%x\n`
+- `%lld %d AVE %s: %s:%d %s | failed to generate SPS %p %d %lld %p %lld | %p %p %d %d\n`
+- `Firmware Command Max: %d %d %d Flag: 0x%x Count: %d %d %d\n`
+- `%lld %d AVE %s: USAGE %s - REF %d slices %d\n`
+- `iFrameRate %d\n`
+- `%lld %d AVE %s: %s Enter %d.%03d %d.%03d %d.%03d 0x%llx %p\n`
+- `%lld %d AVE %s: %s::%s Already initialized %p %llu\n`
+- `%lld %d AVE %s: DPBBuffer: iFrameNum         %d\n`
+- `%lld %d AVE %s: %s:%d %s | invalid LRME RC result firmware buffer %p %d %lld %p %lld | %d %p\n`
+- `%lld %d AVE %s: %s:%d %s | fail to release surface %p %d %lld %p %lld | %d %p %d %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %p %d\n`
+- `%lld %d AVE %s: Load Stats %s | %p | iFrameCntOfInput: %d iFrameCntOfReady: %d iFrameCntOfRun: %d iFrameCntOfOutput: %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to prepare IOMemoryDescriptor Text %p %d 0x%x\n`
+- `%lld %d AVE %s: HwC %s | %p %d | IPC: %p IPC Surface: %p Heap: %p Command Buffer: %p %d Notify Buffer: %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to update FPS %p %lld %lld 0x%llx 0x%x %p %p %d\n`
+- `%lld %d AVE %s: %s:%d Exit %p\n`
+- `AVE_Prop_Cfg_AV1_Print`
+- `FRAME`
+- `%lld %d AVE %s: %p %lld TemporalNoiseReduction %d\n`
+- `GeneratePPS`
+- `%lld %d AVE %s: %s:%d %s | failed to create register configuration %p %p 0x%x 0x%x 0x%x 0x%x\n`
+- `%lld %d AVE %s: %s::%s:%d invalid B Num %p %lld %d\n`
+- `psGGMInfo->iGGNum > 0 && psGGMInfo->iGGNum <= 32 && psGGMInfo->iValidGGNum > 0 && psGGMInfo->iValidGGNum <= 32 && psGGMInfo->iValidGGNum <= psGGMInfo->iGGNum`
+- `ReleaseRefBuf`
+- `%lld %d AVE %s: %s:%d %s | fail to count EDT entry %d\n`
+- `%lld %d AVE %s: %s::%s:%d | failed to set VUI %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to acquire free entry %p %lld\n`
+- `111111221221111211122`
+- `%lld %d AVE %s: %s Exit %p %p %p | %d %d %d | %p %p %p %p %p %p %p %p %d\n`
+- `%d 0x%llx `
+- `%lld %d AVE %s: %s::%s Enter %p 0x%x %p %d %d %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | fail to create command %p %d %lld %p %lld | %d %d 0x%x %lld %p %p %d\n`
+- `AirPlay`
+- `%p HwFeatureOn 0x%llx\n`
+- `ApplyTunables`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to set input of look ahead cost %p %lld %p %lld %d\n`
+- `pInfo->sBufPFSet.saSrcNeighborPixel[i].iAddr != 0`
+- `%lld %d AVE %s: %s::%s Enter %lld %p %d %d\n`
+- `%lld %d AVE %s: %p %lld RequiredHEVCSequenceParameterSetRepFormatIndex %d\n`
+- `pIn != nullptr && inSize >= sizeof(S_AVE_UCInParam_Close) && pOut != nullptr && outSize >= sizeof(S_AVE_UCOutParam_Close)`
+- `TryPowerOff`
+- `%lld %d AVE %s: %s:%d %s | failed to allocate memory %p %d %p\n`
+- `AVE_SVESched_TimingMgr_Uninit`
+- `%lld %d AVE %s: %s::%s:%d %s | faild to prepare memory\n`
+- `Print`
+- `m_pcSwTimer != nullptr`
+- `ProcessInputCmd_Complete`
+- `%lld %d AVE %s: %s:%d %s | failed to convert pixel format %p 0x%x %p\n`
+- `AVE_CHM_MakeFwCmd_Reset`
+- `AVC_PPS`
+- `GGM Properties %p %lld %s\n`
+- `%lld %d AVE %s: %s::%s:%d is not initialized %p %llu %d %d\n`
+- `FaceTime`
+- `%lld %d AVE %s: ConstrainedIntra %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %d 0x%x 0x%x 0x%x 0x%x\n`
+- `%lld %d AVE %s: IOP %s | %p %d |\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to generate Slice %p %p %p %p %d %p %d\n`
+- `%p %lld RCFeatureOff 0x%llx\n`
+- `%lld %d AVE %s: %s::%s Exit %p 0x%x %d %d %d %d\n`
+- `pIn->PerFrameData.userQpMap != 0 || pIn->PerFrameData.userSliceQP > (((((-6) * ((8) - 8))) < (((-6) * ((10) - 8))) ? (((-6) * ((8) - 8))) : (((-6) * ((10) - 8)))) - 1)`
+- `%lld %d AVE %s: %p BaseFrameRate %d\n`
+- `CleanCHM`
+- `%lld %d AVE %s: %s:%d %s | surface is not enough %lld %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to find device capability %d %d\n`
+- `AVE_Prop_PFCfg_DMV_Init`
+- `m_pcPSGen != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | Wrong parameters %p %llu %d %d %p\n`
+- `%lld %d AVE %s: slice num ref idx l0 active minus1 (%d) != PPS default value (%d)\n`
+- `%lld %d AVE %s: %p MCTFPreFiltAdjType %d\n`
+- `%lld %d AVE %s: %s:%d %s | %p %lld: GG number (%d-%d) of Ref(%d) is not correct, %p %d, %d %d\n`
+- `WriteOBUSize`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to initialize syntax writer %p %llu %p %d %d\n`
+- `\t[%p sID 0x%X %s rI:%d/%d L:%d U:%d S:%d]\n`
+- `site.S_AVE_Analytics`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p %lld %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to generate PPS %p %p %d %d %d %d %d %p %d %d %d\n`
+- `%lld %d AVE %s: DPBBuffer (%d): frame %d RECON     ListPosition %d\n`
+- `%lld %d AVE %s: %s:%d %s | invalid output firmware buffer %p %d %lld %p %lld\n`
+- `%lld %d AVE %s: %s:%d %s | invalid number of ANFD %p %lld %p %d %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to allocate work thread %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to find client %p %d %lld %lld %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d L1 Ref Unavailable %p %lld %lld %lld %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to generate VPS %p %d %lld %p %lld | %p %p %d %d\n`
+- `%lld %d AVE %s: %p BlkQPRange: [%d, %d]\n`
+- `Frame Stats:\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %lld %d %lld %d %d %d %d %d %d %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid color range %p %llu %d\n`
+- `%lld %d AVE %s: %p %lld FilterStrength %s\n`
+- `High 10`
+- `%lld %d AVE %s: %s:%d %s | firmware buffer is invalid %d %d %d\n`
+- `ProcessIntr_Cmd`
+- `Halt`
+- `MBInputCtrl`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid color primaries %p %llu %d\n`
+- `%lld %d AVE %s: %s:%d %s | wrong mode %d %d %p %lld %lld %lld\n`
+- `ProcessHiB`
+- `%lld %d AVE %s: %s::%s:%d %s | not initialized %p %d %d\n`
+- `iFrameNum >= 0 && (iFrameType == IMG_INTRA_IDR || iFrameType == IMG_INTRA_FRAME || iFrameType == IMG_INTER_P)`
+- `%lld %d AVE %s: %s:%d %s | wrong parameters %p %p %p %d %p\n`
+- `%lld %d AVE %s: %s:%d %s | invalid scaled input data firmware buffer %p %d %p %lld | 0x%llx 0x%llx %d %d\n`
+- `Flush       11 `
+- `%lld %d AVE %s: %p %lld ForceRefUncompressed %d\n`
+- `%lld %d AVE %s: %p %lld ChromaQPIndexOffsetMultiPPS %s\n`
+- `%lld %d AVE %s: DPBBuffer (%d): IN %d type %d iFrameNum %d f %d poc %d this %p next %p previous %p ListPosition %d\n`
+- `%lld %d AVE %s: %s Exit %p %p %p %p %p %p %p %lld %d %p %d %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %lld %d %d | %d %lld %d - %d %lld %d | %d.%03d  %d.%03d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %d 0x%lx\n`
+- `open`
+- `pInfo->sBufPFSet.saSrcNeighborLeftInfo[0].iAddr != 0`
+- `%lld %d AVE %s: %s:%d %s | invalid transcode data CDF firmware buffer %p %d %lld %p %lld | %d\n`
+- `AVE_AVC_SPS`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to do DART mapping %p %p %d %p %d\n`
+- `Main RExt`
+- `%lld %d AVE %s: %s:%d %s | wrong parameters %p %p %p %p %lld %d %p\n`
+- `%d - `
+- `pWorkLoop != nullptr && pEventSrc != nullptr`
+- `%lld %d AVE %s: %s:%d %s | DPBGetFrameRequested: temp == NULL and i < IndexReferenceFrameToBeUsed -> cannot be\n`
+- `AVE_AnalyticsService_Create`
+- `pInfo->sBufPFSet.saSrcNeighborInfo[i].iAddr != 0`
+- `%lld %d AVE %s: %s:%d %d.%03d %d.%03d %d.%03d 0x%llx %d.%03d %d %d\n`
+- `site.AVE_DPM`
+- `DestroySurface`
+- `%lld %d AVE %s: %s::%s:%d %s | Tile width is greater than 4096. Enable tiles. %p %llu %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid frame size override flag: %p %llu %d\n`
+- `%lld %d AVE %s: %s:%d fail to copy bitstream %lld %p %p | %p %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d fail to send Work Pool command priority %p %d | %p %d %lld %p %lld | %p %d\n`
+- `ProcessRunCmd_Close`
+- `%p ModeDecFeatureOn 0x%x\n`
+- `FinishDataCmds`
+- `12221`
+- `m_pcMemDesc != nullptr`
+- `AVE_Prop_PFCfg_LRME_Print`
+- `LRME`
+- `%lld %d AVE %s: %p CfgOff 0x%llx\n`
+- `%lld %d AVE %s: %s::%s:%d %s | client die %p %d %p %p %p\n`
+- `ClearSVEParallelRC`
+- `%lld %d AVE %s: NumNegativePics %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld | %d %d\n`
+- `site.AVE_Reg`
+- `%lld %d AVE %s: %s::%s:%d %s | [HiB] failed to set refed info %p %lld %p %d %d %p %p\n`
+- `iomd-early-reclaim`
+- `CreateIOSurface`
+- `pUCInfo != nullptr && pHdr != nullptr`
+- `%lld %d AVE %s: DPBBuffer (%d): m_ctx.m_LongTermFrameNumberFromIDR %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p\n`
+- `SideCar (FT)`
+- `%lld %d AVE %s: %s::%s:%d Client info %p %lld %s | %d %d %d | %d | %lld\n`
+- `HEVC_SetSliceRPS`
+- `AVE_RegCfg_Create`
+- `bEntitlementOK`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %d %d %d.%03d %d.%03d %d %d\n`
+- `%p %lld STRFeatureOn 0x%x\n`
+- `pScaledSrc->saCIBuf[AVE_BufIdx_Luma].saIBuf[AVE_BufIdx_Data].iAddr != 0 && pScaledSrc->saCIBuf[AVE_BufIdx_Luma].saIBuf[AVE_BufIdx_Data].iSize != 0 && pScaledSrc->saCIBuf[AVE_BufIdx_Luma].saIBuf[AVE_BufIdx_Data].iStride != 0 && pScaledSrc->saCIBuf[AVE_BufIdx_Luma].saIBuf[AVE_BufIdx_Data].iStride % 64`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p %d %p\n`
+- `AVE_Client_HandleAllCmds`
+- `End      `
+- `%lld %d AVE %s: %s::%s:%d %s | failed to do kernel mapping %p %p %lld %d %d\n`
+- `Fetch`
+- `%lld %d AVE %s: %s::%s:%d DPBElem %p %lld %p %p %lld | %d:%d | %d %d | %d %d\n`
+- `m_psSPS->eScalingMatrixMode >= ScalingMatrixMode_Flat && m_psSPS->eScalingMatrixMode <= ScalingMatrixMode_ExplicitHighComp`
+- `122222222221112222222222211122222222222111222222222221112222222222211122222222222111222222222221112222222222211122222222222111222222222221112222222222211122222222222111222222222221112222222222211122222222222111222222222221112222222222211122222222222111222222222221112222222222211122222222222111222222`
+- `AVE_GOP_DecideNumOfTemporalLayer`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to get external process Timer %p %p\n`
+- `%lld %d AVE %s: %p %lld AmbientViewingEnvironment Data 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %p %d %p\n`
+- `%lld %d AVE %s: %s:%d %s | invalid LRMERC result firmware buffer %p %d %lld %p %lld | %d\n`
+- `%lld %d AVE %s: %s Enter %d.%03d %d.%03d\n`
+- `pd < AVE_PMGR_PD_Max && ps < AVE_PMGR_PS_Max`
+- `%lld %d AVE %s: %p %lld NumOfMergeCandidates %d\n`
+- `pIn != nullptr && inSize >= sizeof(S_AVE_UCInParam_Reset) && pOut != nullptr && outSize >= sizeof(S_AVE_UCOutParam_Reset)`
+- `%lld %d AVE %s: %s::%s:%d joinPMtree %p %d %d\n`
+- `%lld %d AVE %s: DPBBuffer (%d): this is first long term frame\n`
+- `ENCODE`
+- `%lld %d AVE %s: %p LogPath %s\n`
+- `m_pcaSwC[pMap->saCHM[j].iID] != nullptr`
+- `AVE_PrintInternalSurfaces`
+- `AVE_Work_Enc_CalcRefNum`
+- `%lld %d AVE %s: DeltaPocS1[%d] %d\n`
+- `\"psList != NULL\" @%s:%d`
+- `%p %lld STRNumOfBFrameL0 %d\n`
+- `site.S_AVE_TBlkIdx`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to enable data stream %p %d %d\n`
+- `%p %lld ExpectedFrameRate %d\n`
+- `AVE_IOP_Start_Acis`
+- `%lld %d AVE %s: %s::%s:%d %s | not initialized %p %d\n`
+- `AVE_Analytics_Destroy`
+- `ShutDwon `
+- `%lld %d AVE %s: %s::%s Exit %p %lld %d %d %d %d %p %p %p %p %d\n`
+- `%lld %d AVE %s: %p %lld FrameRateTargetForAverageBitrate %d\n`
+- `CarPlay`
+- `ProcessInputCmdInPriority`
+- `%lld %d AVE %s: %s:%d %s | MCTF multipass index out of bounds %p %lld %p %d %d (expected: 0)\n`
+- `%lld %d AVE %s: %s:%d %s | failed to copy frame info %p %lld %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d %p 0x%llx 0x%llx %d %d 0x%llx 0x%llx\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to refresh AV1 tile map %p %p %lld %d\n`
+- `Index        Time         EUID   Command        -        Position Count     - Order  Result Client             ID         Type EncType   Priority  FrameNum  FrameType \n`
+- `%p %lld AverageNonDroppableFrameRate %d\n`
+- `CreateInMem`
+- `MoveCmd`
+- `CreateSurface`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to make PS info %p %llu %d %p %d\n`
+- `%p %lld ConcurrentMode %d\n`
+- `%lld %d AVE %s: %s:%d %s | invalid LRMERC result in direct encode mode %p %d %lld %p %lld | %d\n`
+- `%p MaxKeyFrameInterval %d\n`
+- `AVE_UCInfo_Check`
+- `pNewPw != nullptr`
+- `%lld %d AVE %s: %s:%d %s | DPB size overflow %d %d %d %d %d %d %d %d %lld\n`
+- `pBufSet->saTranscodedData[i].iAddr != 0 && pBufSet->saTranscodedData[i].iSize != 0`
+- `%lld %d AVE %s: %s:%d %s | failed to process command %p %lld %p %d %p %p %d\n`
+- `Load Stats %s | %p | iClientNumOfPerf: %d\n`
+- `%lld %d AVE %s: %s:%d handled command count %p %lld %p %lld 0x%x 0x%x %d\n`
+- `AVE_IOP_Config_Atlas`
+- `AVE_IOP_Start_Castor`
+- `%lld %d AVE %s: %s:%d %s | invalid recon firmware buffer %p %d %lld %p %lld | %d %p\n`
+- `AVE_CHM_SortCmd`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to start work thread %p %p %d %d\n`
+- `%lld %d AVE %s: %s::%s entitlement result %p %lld %d\n`
+- `23:30:45`
+- `%lld %d AVE %s: %s:%d %s | RemoveDPBEntry: (entry->previous == NULL) && (entry->next == NULL)\n`
+- `SignalFrameHasBeenDropped`
+- `CoreAnalyticsHub`
+- `%lld %d AVE %s: %s::%s:%d wrong command counter in task %p %d %p %d %d %d %d %d\n`
+- `21111111111`
+- `AVE_Prop_PFCfg_HEVC_Print`
+- `m_pcaDART[euID] != nullptr`
+- `%d -> `
+- `ProcessInputCmd_Group`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p 0x%llx %d %d %d %p\n`
+- `m_pcaIDIntrEventSrc[id] != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to set ref info %p %lld | %lld %d\n`
+- `AVE_RetrieveRevision`
+- `%p %lld Session Name %s\n`
+- `%p AlgFeatureOn 0x%llx\n`
+- `%p Profile %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d | %p %d %lld %p %lld | %p %d QUEUESIZE %d %d %d | %d %d %d\n`
+- `AVE_IOP_GetCurrTime_Tethys`
+- `%lld %d AVE %s: %s::%s:%d AVE_Drv::GetCmdGate %p %d\n`
+- `pCfg != nullptr && pDevInfo != nullptr && id < 4 && pReg != nullptr`
+- `%lld %d AVE %s: %s:%d %s | invalid LRME result firmware buffer %p %d %lld %p %lld | %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to create surface input YUV %p %lld %d %p\n`
+- `pClient->pcPTS_FPS != nullptr`
+- `m_pMutex != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | SVE DPB update failed %p %d %d %d\n`
+- `AVE_PMGR_PD_Min <= pd && pd < AVE_PMGR_PD_Max && AVE_PMGR_PState_Off <= ps && ps < AVE_PMGR_PState_Max`
+- `ReaderGet`
+- `num >= 1`
+- `%lld %d AVE %s: %p %lld DRL %d %d %d.%03d %d.%03d - %d.%03d %d.%03d\n`
+- `%lld %d AVE %s: %p CRFScale: %d.%06d\n`
+- `AVE_Ref_DecideRefNumOfBFrameL0`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to make halt command %p %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | surface is not enough %lld %d %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %d %lld %d %p\n`
+- `%lld %d AVE %s: %s:%d %s | failed to create In FPS %p\n`
+- `SetMapCacheAttr`
+- `ProcessRunCmd_Open`
+- `%lld %d AVE %s: %s::%s:%d IPC channel %p %d | %d -> %d %s %d \n`
+- `m_psFrameHeader->allow_screen_content_tools == psSeqHeader->seq_force_screen_content_tools`
+- `%lld %d AVE %s: %p %lld MaxKeyFrameIntervalDuration %d.%03d\n`
+- `iSize >= 0 && iSize <= 2147483647`
+- `%lld %d AVE %s: %s:%d %s | invalid MB/CTU stats firmware buffer %p %d %lld %p %lld | %d\n`
+- `m_eState == AVE_HwC_State_Run`
+- `m_pcRefMgr != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to initial SVE RC %p %lld %p %lld\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p %llu %p\n`
+- `SEGMENT`
+- `%lld %d AVE %s: %p %lld ContentLightLevelInfo %d\n`
+- `pBufSet->saSrcNeighborLeftInfo[i].iAddr != 0`
+- `%lld %d AVE %s: Client%s total number of commands %p %lld %s | %d %d\n`
+- `%p NumOfGOPLayer: %d\n`
+- `UpdateFwBaseAddr`
+- `AVE_IOP_GetCurrTime_Eros`
+- `%lld %d AVE %s: %s:%d %s | wrong parameter %p %d\n`
+- `ProcessReadyCmd_Open`
+- `SwC %s | %p %d | State: %d Global Configuration: %p DeviceInfo: %p \n`
+- `updateNumPocTotalCurr`
+- `AVE_CHM_MoveCmd`
+- `%lld %d %d %d %d %d |`
+- `%lld %d AVE %s: %s::%s Exit %p %d %p %d 0x%x %d\n`
+- `0123456789abcdef0123456789ABCDEF`
+- `%lld %d AVE %s: %s:%d %s | could not find current %p %lld %d %p %lld\n`
+- `AVE_Work_Enc_CalcEUNumInSequential`
+- `\"psNode != NULL\" @%s:%d`
+- `%p %lld ConvergenceDurationForAverageDataRate %d\n`
+- `AVE_COM_CheckReady`
+- `%lld %d AVE %s: %s::%s Exit %p %p %p %p %d\n`
+- `%lld %d AVE %s: %s:%d %s | not padded to bytes %d %d %d %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | IOMemoryDescriptor prepare failed %p %lld %s 0x%x\n`
+- `%p %lld TileLayout %d,%d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to collect analytics: GOP mode %p %lld %p %d %d %p %p %d\n`
+- `HwC %s | %p %d | Firmware: %p Interrupt: %p IOP: %p Heart Beat Timer: %p Cnt: %d\n`
+- `AVE_Log_SetLevel`
+- `refIdx >= 0`
+- `AVE_Timer_Trigger`
+- `%lld %d AVE %s: %s:%d release all delayed surfaces %p\n`
+- `AVE_AVC_SetPPS`
+- `%lld %d AVE %s: %s Enter %p %lld\n`
+- `DispatchCmd`
+- `AVE_CHM_MakeFwCmd_Priority`
+- `%lld %d AVE %s: %s - debl %d iMaxKeyFrameInterval %d\n`
+- `%lld %d AVE %s: %s:%d fail to make perf capability %d %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to allocate KeyFrame %p\n`
+- `HwC %s | %p %d | Surface Manager: %p PMGR: %p DART: %p Reg: %p SVECtrl: %p AXI2AF: %p DPE: %p MCC: %p\n`
+- `%lld %d AVE %s: %s:%d %s | DMV multipass index out of bounds %p %lld %p %d %d (expected: 0)\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %p %d %d %d:%d\n`
+- `pTempSurface->GetDARTStatus(pCHM->iID) != 0`
+- `(eCurrStage >= AVE_WP_Stage_Input) && (eNewStage <= AVE_WP_Stage_Output) && (eCurrStage < eNewStage)`
+- `%lld %d AVE %s: %s::%s:%d %s | invalid command counter %p %d %p %d\n`
+- `pBuf != nullptr`
+- `%lld %d AVE %s: %s:%d %s | wrong remaining value %p %p %d %d %d %d %lld\n`
+- `%lld %d AVE %s: DLBUnit %s | %p %lld | %d - 0x%x %d %d %d || %s\n`
+- `%lld %d AVE %s: %s:%d EUMap %p %lld %d | %s\n`
+- `%p %lld PerfFeatureOff 0x%x\n`
+- `AVE_Ref_DecideRefNumOfPFrame`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to acquire fence %p %lld %s %d\n`
+- `DMV PF Configuration %s | %p\n`
+- `Write_delta_lf_params`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid refresh frame flags: %p %llu 0x%02X\n`
+- `ProcessOutputCmd_Skip`
+- `%lld %d AVE %s: %p %lld EdgeReplication %d\n`
+- `ProcessNewCmd`
+- `MCTF PF Configuration %s | %p\n`
+- `1121111222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222111222`
+- `%p SEIFeatureOn 0x%llx\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to halt IOP %p %d %d\n`
+- `ProcessBitAllocation`
+- `%lld %d AVE %s: %s::%s:%d %p %lld Frame[%lld] op 0x%llx 0x%x PTS %lld | interval %d %d %d.%03d %d.%03d | status %lld %lld %lld %d | Hint %d 0x%x\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to setup IPC channels %p %d %p %d 0x%lx %d\n`
+- `m_pcExtProcTimer != nullptr`
+- `AVE_Alg_DecideFrameRate`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %p %p %d %d\n`
+- `pInfo->VideoParamsDriver.usageMode == AVE_Usage_Default || pInfo->VideoParamsDriver.usageMode == AVE_Usage_AirPlay || pInfo->VideoParamsDriver.usageMode == AVE_Usage_Nero || pInfo->VideoParamsDriver.usageMode == AVE_Usage_CarPlay`
+- `%lld %d AVE %s: %s::%s Exit %p %p %p %d %d %d\n`
+- `%p VBVBufferSize: %d.%03d\n`
+- `%lld %d AVE %s: Surface Manager %s | %p | Total Size: %lld bytes, Total Count: %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create mutex for timer %p\n`
+- `\"psNewNode != NULL\" @%s:%d`
+- `FLLB`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to allocate slot %p %lld 0x%x %d %d %d %d\n`
+- `AVE_RC_DecideQP`
+- `%lld %d AVE %s: %s::%s:%d discard frame command due to client die %p %d %p %p %lld | %d 0x%x | %d %d %lld %d | %p %d %d\n`
+- `Surface %s | Name: %s %p %lld Surf %p ID %d Desc %p Map %p Fence %p Size %d DARTCfg 0x%llx OpFlag 0x%llx DARTOpFlag 0x%llx Protect 0x%llx Cnt %d %d Fmt %s \n`
+- `%lld %d AVE %s: %s Exit %p %lld %d %d %d %p %d\n`
+- `pSVESched != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to update FPS %p %lld %d %d %d.%03d %d.%03d %d %d\n`
+- `%lld %d AVE %s: %p %lld SwFeatureOn 0x%llx\n`
+- `%sMaxPixelRate`
+- `%lld %d AVE %s: %s:%d %p %lld %p %p | %d %d %lld %d | %d %d\n`
+- `%p RCMaxQP %d\n`
+- `HandleCmd`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create Reg %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create DPE %p %d\n`
+- `InitComponents`
+- `%p %lld BitRate %d %d\n`
+- `%lld %d AVE %s: %s:%d | %p %d %lld %d %p %lld | %p %lld %d %d | %d\n`
+- `%lld %d AVE %s: FPS %s | %p %lld | %d %p | %lld %d | %d %d | %d.%03d %d.%03d %d.%03d %d.%03d\n`
+- `%p OpFlag: 0x%x\n`
+- `%lld %d AVE %s: %s::%s:%d LRME FS Result buffer not ready %p %d | %p %d %lld %p %lld\n`
+- `psHEVCPS->pcHEVC_RPS != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to generate SPS %p %lld %p\n`
+- `ThroughputModeRatioTurbo`
+- `%lld %d AVE %s: %s:%d %s | LookAhead frame count is out of range %p %lld %d %d\n`
+- `AVE_Client_CreateCmdInfo`
+- `%lld %d AVE %s: %p StrictKeyFrameIntervalDuration %d.%03d\n`
+- `%lld %d AVE %s: %p BlkMinQP %d\n`
+- `%lld %d AVE %s: %p Feature: 0x%llx\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create Mapper error handler %p %d %d\n`
+- `CalcDPMStats`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %d.%03d %d\n`
+- `pCfg != nullptr && pSurfaceMgr != nullptr && id < 4`
+- `%lld %d AVE %s: %s:%d %s | failed to create OSNumber with double %p %lld %p\n`
+- `%p %lld AlgFeatureOff 0x%llx\n`
+- `m_psTCmd == nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to get IPC memory info %p %d %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d <CmdInfo> %p [%p] | intra %d inter %d %d | SAD %d %d BestCost %d %d %d | ZeroMv %d %d\n`
+- `N/A`
+- `%lld %d AVE %s: %p QP: %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to start up IOP %p %d %d %d\n`
+- `%lld %d AVE %s: %s Exit %p %d %d %d %p %d\n`
+- `AVE_Prop_Cfg_HEVC_Uninit`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create surface dictionary %p %p 0x%x 0x%x 0x%llx 0x%x %d %d\n`
+- `TuneUpHw`
+- `AVE_DestroyInternalSurfaces`
+- `UpdateDPB`
+- `%lld %d AVE %s: %s:%d %s | DPBBuffer: refL0a == NULL 2\n`
+- `AVE_AnalyticsService_Start`
+- `%lld %d AVE %s: %p %lld ContentLightLevelInfo Data 0x%x 0x%x 0x%x 0x%x\n`
+- `debl %d - iMaxKeyFrameInterval %d\n`
+- `ID: %llu %s | EU: `
+- `MOutput  `
+- `%lld %d AVE %s: %s Exit %p %lld %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | fail to reset Timing Manger %p %lld %d\n`
+- `%lld %d AVE %s: %p %lld VariableBitRate %d %d\n`
+- `pInfo->sBufPFSet.saSrcNeighborLeftInfo[i].iAddr != 0`
+- `pInfo->sBufPFSet.saEntropyCoding[i][j].saIBuf[AVE_BufIdx_Header].iAddr != 0`
+- `11`
+- `GOP Configuration %s | %p\n`
+- `pMem->pcMemDesc != nullptr`
+- `AVE_Mapper_Pool_Create`
+- `iGGWidth > 0 && iGGHeight > 0 && iX0 >= 0 && iY0 >= 0 && iX1 <= (((pClient->sSessionCfg.sRes.iWidth) + (16) - 1) & ~((16) - 1)) && iY1 <= (((pClient->sSessionCfg.sRes.iHeight) + (16) - 1) & ~((16) - 1))`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %d\n`
+- `%lld %d AVE %s: %s:%d %s | IsDPBEntryValid: entry == NULL\n`
+- `%lld %d AVE %s: GOP PF Configuration %s | %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to reset DPE %p %d %p %d\n`
+- `psPFInfo != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to allocate IPC memory pool %p %d %d\n`
+- `vps_encode_independent_layer_parameters`
+- `%lld %d AVE %s: %s::%s:%d %p %d set clock gating %d\n`
+- `%p NumOfBFrame %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to retrieve device info %p\n`
+- `HEVC PF Properties %p %lld %s\n`
+- `UpdateRefedInfo`
+- `active-mcc-bit-vector`
+- `%lld %d AVE %s: %s:%d %s:%d invalid active-mcc-bit-vector EDT value %d %p %d\n`
+- `m_psSeqHeader->color_config.matrix_coefficients == AV1_MC_UNSPECIFIED`
+- `%lld %d AVE %s: %s::%s:%d %s | Wrong parameters %p %llu %d %p\n`
+- `%lld %d AVE %s: %s:%d %p %d %p | %d %d %p\n`
+- `%lld %d AVE %s: %p %lld EnableTransform8x8 %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d set power state %s (%s <- %s)\n`
+- `%lld %d AVE %s: %s:%d %s | wrong parameters %p %p 0x%x 0x%x 0x%x 0x%x\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to release non-ref entry %p %lld | %p %d\n`
+- `DLBUnitCfg %s | %p | %d - %d %d || %s\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid subsampling x %p %llu %d\n`
+- `%lld %d AVE %s: %s::%s:%d AVE_Drv::GetDevInfo %p %d\n`
+- `%lld %d AVE %s: \n`
+- `%lld %d AVE %s: %p %lld AlgFeatureOn 0x%llx\n`
+- `%lld %d AVE %s: %s:%d %s | size overflow %d %d %d %lld %lld\n`
+- `Finish`
+- `IncrementRefCnt`
+- `[%lld %d] `
+- `%lld %d AVE %s: %s:%d %s | invalid tier %d\n`
+- `m_psDLB->iSchedMode == 0`
+- `pInfo->sSessionCfg.sEnc.sAlgCfg.sRef.iaSTRGap[AVE_RefIdx_P] < ((15) > (14) ? (15) : (14))`
+- `%lld %d AVE %s: %s:%d %s | firmware RC doesn't support the usage %p %lld %d %d %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | video common info is not correct %p %lld %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to decide AV1 tile map %p %lld %d %dx%d cols=%d rows=%d\n`
+- `pSet != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid delta lf present with intrabc: %p %llu %d\n`
+- `AVE_UCCmd_CheckParam_Process`
+- `%p %lld EncodesDepth %d\n`
+- `BlockTraffic`
+- `(psInCmdOpen->iPriority >= -100) && (psInCmdOpen->iPriority <= 200)`
+- `AVE_Ref_DecideRefGapOfBFrame`
+- `pSurface == nullptr || (iTotalSize < pSurface->GetSize() && iTotalSize != 0)`
+- `m_pcAXI2AF != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | ui32IdrPeriod (%d) BFrames (%d) %p\n`
+- `AVE_Client_Notify`
+- `ProcessI`
+- `AVE_IOP_Start_Nemesis`
+- `%lld %d AVE %s: PSGen%s: %p ID: %lld %d\n`
+- `AVE_Client_GGM_Check_Process`
+- `entry != nullptr`
+- `%lld %d AVE %s: %s:%d %s | wrong parameter %p %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | fail to create command %p %lld %d %d 0x%x %p %p %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %d %p %p\n`
+- `1211111111112212212121112222222211111111111121222221`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p %lld 0x%x %d %p %d %d %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | unsupportted GOP Mode %p %lld | %d\n`
+- `AVE_EncType_HEVC == encType`
+- `%lld %d AVE %s: %s Exit %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to activate mapper %p %d %d %d %d 0x%x\n`
+- `Mapper %s | %p %d %d | Entry Num: %d Allocated Entry Num: %d Free Entry Num: %d Pool Num: %d Mapped Num: %d Mapped Size: %lld\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld 0x%x\n`
+- `%lld %d AVE %s: %p %lld VUIFeatureOff 0x%llx\n`
+- `%lld %d AVE %s: NumberOfIntraMB          %d\n`
+- `AVE_Client_Check_Start`
+- `%lld %d AVE %s: %p AlgFeatureOff 0x%llx\n`
+- `pcaRecon != nullptr && pcaLFSRef != nullptr && pcaLFSOutput != nullptr && pcaLRSOutput != nullptr`
+- `s->sRefInfo.iaNum[AVE_RefDir_Neg] > 0`
+- `%p HwFeatureOff 0x%llx\n`
+- `%lld %d AVE %s: %s::%s:%d EDT field is not available %p %d %p\n`
+- `%lld %d AVE %s: Surface %s | Name: %s %p %lld Surf %p ID %d Desc %p Map %p Fence %p Size %d DARTCfg 0x%llx OpFlag 0x%llx DARTOpFlag 0x%llx Protect 0x%llx Cnt %d %d Fmt %s \n`
+- `%p %lld Quality %d %d.%03d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to DART map external surfaces %p %llu %p %lld %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid primary ref frame: %p %llu %d\n`
+- `m_pTimerMutex != nullptr`
+- `psEntry != nullptr`
+- `site.AVE_SyntaxWriter`
+- `Verify      15 `
+- `SendWPCmd_Start`
+- `%lld %d AVE %s: AVC Properties %p %lld %s\n`
+- `RefedMgr %s | %p %lld\n`
+- `%lld %d AVE %s: %s::%s:%d Invalid gopM %d\n`
+- `%lld %d AVE %s: %s::%s:%d No Refed %p %lld | 0x%x %d %lld %d %d %d | %d %d\n`
+- `%p %lld STRNumOfPFrame %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to allocate LACost %p %d %p %p %lld %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to initialize LACost %p %d %p %p %lld %p %d %d %d %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %d 0x%x\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d <CMD> %p %d %lld\n`
+- `pList != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong state %p %lld %p %p\n`
+- `%lld %d AVE %s: NumPositivePics %d\n`
+- `%lld %d AVE %s: %p %lld MaxLookBehind %d\n`
+- `%p RCFeatureOff 0x%llx\n`
+- `%p MCTFEnableFeedback %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %p %p %d\n`
+- `AVE_QPMod_DecideFeature_MVHEVC`
+- `Kernel2FwAddr`
+- `m_psRegOffset != nullptr`
+- `AVE_UCCmd_CheckParam_Complete`
+- `%lld %d AVE %s: %p %lld ExpectedFrameRate %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p %lld %d %p %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | fail to make chroma format capability %d %d\n`
+- `%p EdgeReplication %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %p %p %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Frame number out of range %p %lld %lld %d %lld\n`
+- `AVE_Prop_Cfg_GGM_Init`
+- `AVE_TaskCmd_Create`
+- `%lld %d AVE %s: %s:%d %p %d %d %d 0x%x WID %lld| 0x%x %d-%d | %p %d %lld 0x%x | %d %d | stage %d\n`
+- `TRUE`
+- `LRSOutput`
+- `%lld %d AVE %s: %p %lld iDLBType %d\n`
+- `%lld %d AVE %s: %s:%d %s | DPB LOW RES: pcaLFSOutput[%d].IOSurfaceBuffer == NULL\n`
+- `false`
+- `%p %lld VUIFeatureOn 0x%llx\n`
+- `%lld %d AVE %s: %s::%s:%d %p %llu long term pic num %d\n`
+- `psSyntaxPFCfg != nullptr && psSlice != nullptr`
+- `SendWPCmd_Close`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %lld %d %d %p %p\n`
+- `AVE_IOP_Start_Tethys`
+- `AVE_Client_CheckLRMEInfo`
+- `%lld %d AVE %s: %s:%d %p %lld %d %d | %d %d | %d %d | %d %d\n`
+- `pcLAGOP->GetGOPM() > 0`
+- `%lld %d AVE %s: %p Profile %d\n`
+- `%lld %d AVE %s: %p Usage %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to initialize interrupt %p %d %p %d\n`
+- `psInfo != nullptr && psInfo->iPOC >= 0 && psRefInfo != nullptr && psRefedInfo != nullptr`
+- `%lld %d AVE %s: %s:%d %s | fail to get Mini-Device %p %lld %lld\n`
+- `AVE_Prop_Cfg_GGM_Print`
+- `%lld %d AVE %s: %p %lld FilterGroupSize %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to free block buffer %p %p %p %d\n`
+- `GetCnt`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to set firmware configuration %p %d %p %p %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %d %d 0x%x %d\n`
+- `AVE_DestroyDataSurfaces`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld %p %p %d %lld %p\n`
+- `%lld %d AVE %s: %p StrictKeyFrameInterval: %d\n`
+- `RateControl Configuration %s | %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | 4:4:0 subsampling not allowed in AV1, subsampling y %p %llu %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | timing info present not supported %p %llu %d\n`
+- `site.S_AVE_BlkIdx`
+- `%lld %d AVE %s: %s:%d %s | MCTFOutput size overflow %d %d %d %d %d %d %d %lld\n`
+- `%lld %d AVE %s: %s:%d %s | failed to get SVE Info %p %d %lld %p %lld %d\n`
+- `%lld %d AVE %s: %s Exit %p %p %p %p %d\n`
+- `IO_PowerOff`
+- `pAddr != nullptr && pSize != nullptr`
+- `pInfo->sSyntaxCfgAVC.iBitDepthLuma == 8 && pInfo->sSyntaxCfgAVC.iBitDepthChroma == 8`
+- `Enable`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to reset pipeline %p %p %lld %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to init HwC Map %p %lld %p %lld %d\n`
+- `LambdaMod PFCfg %s | %p\n`
+- `%lld %d AVE %s: %s:%d %s | failed to set slice RPS %p %lld %d\n`
+- `setParameter`
+- `pInfo->sHEVC_VPS.vps_max_sub_layers_minus1 < 7 && pInfo->sHEVC_VPS.vps_num_layer_sets_minus1 < 16 && pInfo->sHEVC_VPS.vps_num_hrd_parameters <= 16 && pInfo->sHEVC_VPS.vps_num_rep_formats_minus1 < 2 && pInfo->sHEVC_VPS.vps_max_layer_id < (64 - 1)`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %lld %d %lld %d %d %d %d %d %d %p\n`
+- `SVERC %s | %p %lld | %d | %d %lld %d %lld %d %d %d %d\n`
+- `m_psFrameHeader->interpolation_filter == AV1_InterpFilter_Switchable`
+- `m_psPTS2DTS != nullptr`
+- `%lld %d AVE %s: %s:%d %s | DPB pcaRecon[%d][%d][MSB] == NULL\n`
+- `CalcInputQueueNum`
+- `ThroughputModeRatioSlow`
+- `%lld %d AVE %s: %s::%s:%d unsupported codec %p %lld %d\n`
+- `%lld %d AVE %s: %s:%d M %d openGOP %d cut %d| %d %d | %d %d | %d %d | %d %d\n`
+- `%lld %d AVE %s: FwImg %s | %p %d | iBootLoaded: %d Segments: %s Desc: %p Kernel Map: %p CTRR Data: %p %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Failed to set slice header parameter set structure %p %llu %p %p\n`
+- `AVE_CalcBufSizeOfSrcNeighborData`
+- `AVE_CalcBufSizeOfEntropyCodingHeader`
+- `HEVC`
+- `0 <= offset && offset < pOutBuf->iSize && 0 <= size && offset + size <= pOutBuf->iSize`
+- `pTimeOut != nullptr && pCmd != nullptr`
+- `%lld %d AVE %s: %s:%d %s | wrong parameters %d %p %p\n`
+- `%lld %d AVE %s: HEVCHEADERS L0[1] found, poc: %d\n`
+- `%p %lld RealTime %d\n`
+- `m_psCfg != nullptr`
+- `%lld %d AVE %s: %s:%d DPE info %d %d %d | %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | could not find entry with frame number %p %lld | %lld %d\n`
+- `AVE_Work_Enc_TuneParam`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %p %d %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | DPBFindInvalid: temp->next == NULL\n`
+- `%lld %d AVE %s: %s::%s:%d %p %lld | buf num: %d %p\n`
+- `psCfg != nullptr && psCfg->iaNumOfFrame[AVE_FrameType_B] <= 3 && iIDRPeriod >= 0`
+- `%lld %d AVE %s: %s:%d %s | DPBBuffer: m_refL1 == NULL 3\n`
+- `%lld %d AVE %s: %s:%d %s | invalid DMV output buffer %p %d %lld %p %lld | %d %p\n`
+- `AVE_Client_Enc_Check_Complete`
+- `%s total commands in client stages %p | %d %d | %d | %d\n`
+- `MInput   `
+- `DecideDCSPower`
+- `%lld %d AVE %s: %s::%s Enter %llu %p\n`
+- `m_psSeqHeader->color_config.subsampling_x == 1`
+- `%lld %d AVE %s: \t[%p sID 0x%X %s rI:%d/%d L:%d U:%d S:%d]\n`
+- `%lld %d AVE %s: %s:%d %s | failed to generate PPS %p %d %lld %p %lld | %p %p %d %d\n`
+- `RequestTaskCmd`
+- `%p LookAheadFrameCount %d\n`
+- `%lld %d AVE %s: %p ThroughputMode %d\n`
+- `AVE_IPC_Ch_None < ch && ch < AVE_IPC_Ch_Max && pSize != nullptr && pSize != nullptr`
+- `%s-%lld-%d`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to intial frame type mgr %p %lld %d\n`
+- `%lld %d AVE %s: %s::%s:%d failed to clear command in priority %p %d %d %d\n`
+- `%lld %d AVE %s: MCTF Configuration %s | %p\n`
+- `AVE_IOP_CheckIdle_Ares`
+- `%p %lld DLBType %d\n`
+- `pInfo->uPropCfg.sAV1.iMCTFStrengthLevelNum >= 0 && pInfo->uPropCfg.sAV1.iMCTFStrengthLevelNum <= ((2) < ((63 + 1)) ? (2) : ((63 + 1)))`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong calling sequence %p %lld %s %d %p 0x%llx\n`
+- `psBitRatioInfo != nullptr && iFound == 1`
+- `%lld %d AVE %s: %s:%d %s | frametype not recognized\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %p %d %d 0x%x\n`
+- `%p %lld FrameRateTargetForBitRate %d\n`
+- `LambdaMod Cfg %s | %p\n`
+- `CreateChannel`
+- `ME1/MDINTER`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %d %p %p 0x%llx\n`
+- `%lld %d AVE %s: %p RefFeatureOn 0x%x\n`
+- `%p MCTFSensorGainExitThreshold %d.%03d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | firmware is not mapped to address 0 %p %d 0x%llx\n`
+- `s->sRefInfo.iaNum[AVE_RefDir_Neg] > 1`
+- `%lld %d AVE %s: %s:%d %s | failed to convert pixel format %p %d %p\n`
+- `%p %lld VUIFeatureOff 0x%llx\n`
+- `%lld %d AVE %s: Client%s: %p ID: %lld ModeDecFeature: 0x%x \n`
+- `CarPlay (FT)`
+- `%lld %d AVE %s: EnableSelStatsFlags 0x%08x\n`
+- `%lld %d AVE %s: %s:%d %s | %p %lld: RefIdx(%d) of Ref(%d) is not correct, %p %d, %d %d\n`
+- `ApplyDCS`
+- `site.AVC_Slice`
+- `AVE_Client_FinishCmd`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to send firmware command %p %d | %p %d %lld %p %lld | %p %d %d\n`
+- `site.AVE_DDPB`
+- `((pcPFInfo->iFlag & (1U<<1)) != 0 && (psRefedInfo->iaNum[AVE_RefDir_Neg] > 0 || psRefedInfo->iaNum[AVE_RefDir_Pos] > 0)) || ((pcPFInfo->iFlag & (1U<<1)) == 0 && (psRefedInfo->iaNum[AVE_RefDir_Neg] == 0 && psRefedInfo->iaNum[AVE_RefDir_Pos] == 0))`
+- `AVE_Prop_Cfg_DMV_Print`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to generate PPS %p %lld %p\n`
+- `AVE_IOP_CheckIdle_Eros`
+- `IO_ShutDown`
+- `%lld %d AVE %s: %s::%s:%d %s | frametype not recognized %p\n`
+- `AVE_Analytics_CollectScheduleMode`
+- `%p %lld LambdaModFeatureOff 0x%x\n`
+- `AVE_Client_CheckGGMInfo`
+- `%lld %d AVE %s: %s:%d tile hint %dx%d infeasible for %dx%d; falling back to driver default\n`
+- `num == m_iHwCNum && idFlag == m_pcDevInfo->GetDevSubIDFlag()`
+- `%lld %d AVE %s: %s:%d can not run, use minimum queue size%d %d %d %d | %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | mismatched command type %p %lld %d\n`
+- `%p %lld MaxAllowedFrameQP %d\n`
+- `%lld %d AVE %s: %s:%d %s | invalid input data firmware buffer %p %d %p %lld | 0x%llx %d 0x%llx %d\n`
+- `%lld %d AVE %s: %p MaxKeyFrameInterval %d\n`
+- `%lld %d AVE %s: %p %lld UserParameterSetsIds %s\n`
+- `%lld %d AVE %s: %s::%s:%d %s | no HW resource %p %p %lld | %d\n`
+- `AVE_QPMod_DecideFeature_MBInput`
+- `CalcSurfaceInfo`
+- `%lld %d AVE %s: %s:%d %s | InsertEndDPBEntry: entry == NULL\n`
+- `%lld %d AVE %s: %p %lld GOPFeatureOff 0x%x\n`
+- `AVE_TBufPool`
+- `ProcessRunCmd_Priority`
+- `%lld %d AVE %s: %p TimeStatsMaxCnt %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to allocate chunk pool %p %lld 0x%x %d %p %d %d %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to DART map surface %s 0x%llx %d\n`
+- `MCTFOutput`
+- `%lld %d AVE %s: PixelFmt %p | %d - %.*s 0x%x\n`
+- `pMemPool != nullptr`
+- `RetrieveDSID`
+- `site.AVE_SVEDPB`
+- `%lld %d AVE %s: %s::%s:%d %s | not find ref1 %p %lld %lld\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld | %d %d %d %d %p %d\n`
+- `MultiPassStats`
+- `CodedHeader`
+- `%lld %d AVE %s: %s:%d %s | invalid LRME FS result firmware buffer %p %d %lld %p %lld | %d %p\n`
+- `%lld %d AVE %s: %p %lld Session Name %s\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid showable frame: %p %llu %d\n`
+- `site.AppleAVE2UserClient`
+- `%lld %d AVE %s: %s:%d IDR frame num = %d pic order cnt lsb %d\n`
+- `%lld %d AVE %s: %p %lld RCFeatureOff 0x%llx\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to get mapper map %p %d\n`
+- `SendWPCmd`
+- `Load Stats %s | %p | iPerfNum: %lld iActvePerfNum: %lld | iaPerfNum: %lld %lld %lld\n`
+- `%lld %d AVE %s: %s::%s Enter %p %d %d %d 0x%lx\n`
+- `%lld %d AVE %s: %s::%s:%d thread terminated %p %d %p %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %lld %p %d %p\n`
+- `AVE_IOP_GetCurrTime_Boreas`
+- `%lld %d AVE %s: %s:%d %s | pixel area overflow %d %d %d %d %lld\n`
+- `AVE_Prop_Cfg_AV1_Uninit`
+- `%lld %d AVE %s: %p %lld MaxAllowedFrameQP %d\n`
+- `%lld %d AVE %s: %p %lld MasteringDisplayColorVolume Max Luminance 0x%x 0x%x 0x%x 0x%x\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to find chunk buffer %p %p %p %d\n`
+- `pBufSet->saSrcNeighborData[i].iAddr != 0`
+- `pInfo->sBufPFSet.sSliceHeader.iAddr != 0`
+- `%lld %d AVE %s: %s:%d %s | invalid transcode data CDF firmware buffer %p %d %lld %p %lld | %d %d\n`
+- `AVE_IOP_GetCurrTime_Leto`
+- `AVE_IOP_CheckIdle_Ersa`
+- `%lld %d AVE %s: %s:%d %s | invalid list %p %p %p\n`
+- `AVE_Client_MCTF_Check_Complete`
+- `%p MCTFEnableGating %d\n`
+- `Monochrome 10`
+- `AVE_IOP_Config_Uranus`
+- `pTemp != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to allocate chunk pool %p %lld 0x%x %d %d %d %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %p %d %d 0x%x %lld %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %d | %p %p %d\n`
+- `msize > 0 && size > 0 && unitSize >= 0 && (unitSize == 0 || (unitSize & (unitSize - 1)) == 0)`
+- `site.S_AVE_Task`
+- `21112112212221111112`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to do kernel unmapping %p %lld %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | iRefNum is out of range %p %lld | %d [%d %d]\n`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld %lld %d\n`
+- `%lld %d AVE %s: DPBBuffer (%d): NON REFERENCE FRAME: m_FrameNumberFromIDR %d, num_ref_frame %d\n`
+- `0 <= pIn->sSessionPFCfg.sEnc.sANFDInfo.iNum && pIn->sSessionPFCfg.sEnc.sANFDInfo.iNum <= 10`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to calculate RPS %p %lld %d\n`
+- `CondTimedWait`
+- `AVE_BPType_None < eType && eType < AVE_BPType_Max`
+- `FwClientMem`
+- `%lld %d AVE %s: %s::%s:%d %p %llu | %d Output [%d] %lld %lld %s | %d %d %d %d %d %d %lld\n`
+- `%lld %d AVE %s: %p %lld IncludeMotionConfidence %d\n`
+- `UpdateStrictInterval`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to create FwLog surface %p %d %d %p %d\n`
+- `%sChromaFormat`
+- `0 <= pInfo->sSessionCfg.sEnc.sAlgCfg.sGOP.iNumOfTemporalLayer && (pInfo->sSessionCfg.sEnc.sAlgCfg.sGOP.iNumOfTemporalLayer <= 7)`
+- `%lld %d AVE %s: DevCap Resolution %s | %p\n`
+- `%lld %d AVE %s: %p SchedPolicy %d\n`
+- `%lld %d AVE %s: %s Exit %p %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %d %lld %p %d | %lld 0x%x %lld | RefCnt %d pNewCmd %p\n`
+- `%lld %d AVE %s: %s::%s:%d %p %p %llu failed %d\n`
+- `ClientType`
+- `444`
+- `%p %lld EnableAttachMVStats %d\n`
+- `%-12lld %-12lld %-6d %s %s IN %s%-9lld - %-6lld %-6d %-18p %-10lld %-4d %-9d %-2d - %-4d %-8d %-9d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %d %p %p %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | PSD domain %s is not supported/enabled %p %d %d %d\n`
+- `AVE_Prop_Cfg_HEVC_Print`
+- `%p %lld ConstantBitRate %d %d\n`
+- `ConstrainedIntra %d\n`
+- `%lld %d AVE %s: %p %lld MCTFStrengthLevel %d\n`
+- `site.AVE_HwC`
+- `psParam != nullptr`
+- `%lld %d AVE %s: %s::%s:%d %p %d %p %d\n`
+- `TuneFAB`
+- `UninitRC`
+- `%lld %d AVE %s: Frame:%lld | PTS: %lld-%d\n`
+- `%lld %d AVE %s: %s:%d %s | DPBBuffer: RemoveDPBEntry failed\n`
+- `%lld %d AVE %s: %s::%s:%d wait %p %d %p %d %p\n`
+- `%p VBVBufferSize %d.%03d\n`
+- `pCfg != nullptr && pDevInfo != nullptr && id < 1`
+- `AVE_IOP_Config_Leto`
+- `%s: %d `
+- `site.AVE_PSGen`
+- `%lld %d AVE %s: %s::%s:%d %s | Failed to allocate slice header parameter set class %p %llu\n`
+- `%p %lld AmbientViewingEnvironment Data 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x\n`
+- `%sEncoderChromaFormat`
+- `%p %lld iChatUsageString %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | %p %lld | pcaLRSOutput[%d][%d][%d] == NULL\n`
+- `psRefInfo != nullptr && psRefedInfo != nullptr`
+- `iSVEID >= 0 && iSVEID < 4 && psDistributedRCStats != nullptr`
+- `%lld %d AVE %s: %s::%s:%d RC States Not Ready %p %lld %d %lld %d\n`
+- `%lld %d AVE %s: %p %lld EnableMCTF %d\n`
+- `CalcOverall`
+- `psRefEntry != nullptr`
+- `%lld %d AVE %s: %s:%d %s | wrong parameters %llu %p\n`
+- `AVE_Timer_Start`
+- `AVE_UCCmd_CheckParam_Prepare`
+- `%lld %d AVE %s: %s::%s:%d harvested device %d %d %d 0x%llx\n`
+- `IO_Prepare`
+- `m_iMapperFlag != 0`
+- `SendWPCmd_Reset`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to initialize crypto %p %p %p %d\n`
+- `PrepareDataResource`
+- `%lld %d AVE %s: %s::%s:%d %s | Failed to write tile buffer %p %llu %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid separate uv delta q %p %llu %d\n`
+- `pIn != nullptr && inSize >= sizeof(S_AVE_UCInParam_Open) && pOut != nullptr && outSize >= sizeof(S_AVE_UCOutParam_Open)`
+- `resOpen == 0`
+- `%lld %d AVE %s: %s::%s:%d %p %lld %p %lld | %p %d %lld %d | %d %s\n`
+- `%lld %d AVE %s: %p %lld VUIFeatureOn 0x%llx\n`
+- `%lld %d AVE %s: %s:%d %s | HEVC VPS layer_id_in_nuh is out of range %d %d %d %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %p %d %p %d\n`
+- `%lld %d AVE %s: %s:%d %s | fail to intial Timing Manager %p %lld %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %p %p %d %p\n`
+- `%p %lld MotionSearchRangeMode %d\n`
+- `AVE_FwImg`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to calculate average FPS %p %lld %p\n`
+- `(psFInfo != nullptr) && (piLAGOPDone != nullptr)`
+- `%lld %d AVE %s: %s:%d %s | no Enc DLB unit\n`
+- `%lld %d AVE %s: %s::%s Exit %p %d %p %p %d %p %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to create surface %s 0x%llx %d\n`
+- `psRefL0Entry != nullptr`
+- `%lld %d AVE %s: %p FrameRate: %d\n`
+- `%lld %d AVE %s: %s:%d %s | invalid DMV2 LoRes compressed input %p %d %p %lld | 0x%llx %d\n`
+- `ProcessRunCmd_Process`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to save CTRR data segment %p %d %d\n`
+- `%lld %d AVE %s: %p %lld RequiredHEVCSequenceParameterSetID %d\n`
+- `MCTFRef`
+- `%lld %d AVE %s: %s:%d ExpectedFrameRate %d is not correct %p %lld\n`
+- `%lld %d AVE %s: %s:%d %s | GetDPBSnapShot with s == NULL\n`
+- `%p OutputBufSize %d\n`
+- `%lld %d AVE %s: %s::%s:%d failed to start IOP %p %d | %p %d %lld %p %lld | %p %d\n`
+- `AVE_IOP_Config_Nemesis`
+- `%s:%d release delayed surface %p %p %p\n`
+- `eGOPMode > AVE_GOPMode_None && eGOPMode < AVE_GOPMode_Max`
+- `GGMRef`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid reference select: %p %llu %d\n`
+- `422`
+- `IO_setPowerState`
+- `ProcessIntr_Enc_OutputData`
+- `%lld %d AVE %s: %p %lld PixelAspectRatio %d\n`
+- `%lld %d AVE %s: %s::%s Enter %p %lld 0x%x %d %p %d %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid Driver usageMode %p %lld %d\n`
+- `%lld %d AVE %s: %s::%s:%d waiting for message from IOP %p %d %d\n`
+- `AVE_UCCmd_CheckParam_Config`
+- `%lld %d AVE %s: %s::%s Enter %p %lld %d.%03d\n`
+- `%lld %d AVE %s: %p %lld LambdaModFeatureOn 0x%x\n`
+- `AVE_Prop_PFCfg_AVC_Print`
+- `Begin    `
+- `ipcChSize == sizeof(union ffwIOPChannelDescriptor64)`
+- `%p %lld RequiredHEVCSequenceParameterSetID %d\n`
+- `site.S_AVE_History_Entry`
+- `AVE_Enc_IsChainedModeCapable`
+- `UninitSVESequentialRC`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld %d %lld %d %d %p\n`
+- `%lld %d AVE %s: %s Enter %p %lld %d\n`
+- `pIODrv != nullptr && pTask != nullptr`
+- `pBufSet->saEntropyCoding[i][j].saIBuf[AVE_BufIdx_Data].iAddr != 0 && pBufSet->saEntropyCoding[i][j].saIBuf[AVE_BufIdx_Data].iSize != 0`
+- `m_pcSVECtrl != nullptr`
+- `AVE_Thread`
+- `\"(m_iPhyAddr & (page_size -1)) == 0\" @%s:%d`
+- `pIn->multiPassEndPassCounter == 0`
+- `%lld %d AVE %s: %s:%d %s | DPBBuffer ERROR: RemoveDPBEntry failed\n`
+- `%lld %d AVE %s: %s:%d %s | invalid work pool\n`
+- `TuneIOP`
+- `Close`
+- `AVE_DLList.c`
+- `111`
+- `%lld %d AVE %s: %s::%s Exit %p %llu %p %d\n`
+- `%p ParallelMinDuration %lld\n`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %p %p %d %lld %d\n`
+- `%lld %d AVE %s: PPS %d: bits %d (bytes %d).\n`
+- ` in %s`
+- `AVE_Client_DestroyCmd`
+- `DrainData`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to free IPC memory %p %d %p %d\n`
+- `m_pcMapper != nullptr`
+- `%lld %d AVE %s: %p %lld VBVMaxBitRate %d %d\n`
+- `%lld %d AVE %s: merge_candidates %d ref_compress %d bSwitchToHiP %d bDisablePaddingProcessing %d\n`
+- `%lld %d AVE %s: %s::%s:%d failed to clear command in task %p %d %p %lld %d\n`
+- `%lld %d AVE %s: %s:%d %s | frame rate is out of range %p %lld %d %d\n`
+- `AVE_Enc_GenerateTileMap`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %d %p %p 0x%llx %p\n`
+- `m_iSegmentNum == 2`
+- `%lld %d AVE %s: %s Exit 0x%x 0x%x 0x%x 0x%x %d\n`
+- `AVE_IOP_Config_Ourea`
+- `%lld %d AVE %s: %s:%d %s | AVE_SendRC slicePPSIdIdx (%d) == AVE_PPS_MAX_NUM\n`
+- `AVE_Client_DupCmd`
+- `%p QPModFeatureOff 0x%x\n`
+- `%lld %d AVE %s: %s::%s:%d %p sample buffer (%lld bytes) exceeds the limitation of MatchPoint receiver (%d bytes) 0x%llx %d %p %p %p %d\n`
+- `pIDFlag != nullptr`
+- `%lld %d AVE %s: %s::%s Exit %p %lld %d %p %d\n`
+- `%lld %d AVE %s: History Count: %lld\n`
+- `%p VBVMaxBitRate %d\n`
+- `%p %lld iMaximumRealTimeFrameRate %d\n`
+- `%p StrictKeyFrameInterval: %d\n`
+- `%lld %d AVE %s: %s::%s:%d %p %lld Stats Not Ready %d %lld %lld %lld\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to get DPB entry %p %lld %d\n`
+- `DPM %p | %d 0x%x\n`
+- `%lld %d AVE %s: %s::%s:%d Enter %p %d %p\n`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to create block pool %p %lld 0x%x %d %p %d %d %d %d\n`
+- `AVE_Client_CreateDataSurfaces`
+- `%lld %d AVE %s: %s::%s:%d %s | invalid command %p %lld %d\n`
+- `SwISR`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong firmware command buffer %p %d %d %d\n`
+- `HwC %s | %p %d | IPC: %p IPC Surface: %p Heap: %p Command Buffer: %p %d Notify Buffer: %p %d\n`
+- `GenerateVPS`
+- `SetChIntr`
+- `%lld %d AVE %s: %s:%d release delayed surface %p %p %p\n`
+- `AVE_Client_CheckDMVInfo`
+- `%lld %d AVE %s: %s:%d %s | pipeline mismatch %p %lld %d %d\n`
+- `%lld %d AVE %s: %s:%d %s | failed to initialize In FPS %p\n`
+- `KernelUnmap`
+- `%lld %d AVE %s: %s::%s:%d %p %lld %d 0x%llx 0x%llx 0x%llx 0x%llx %d\n`
+- `ResetSVEParallelRC`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameters %p %lld | %lld %d %p\n`
+- `%lld %d AVE %s: %s:%d %s | fail to generate SVE map %p %lld | %d %d\n`
+- `AVE_Analytics_SetEventFieldPercent`
+- `%lld %d AVE %s: %s:%d %s | fail to dispatch cmd %p %lld %p %d %d\n`
+- `site.AVE_Crypto`
+- `AVE_Pipeline`
+- `superres_params`
+- `pInfo->sBufPFSet.sRefColocated.iAddr != 0`
+- `4 <= pInfo->sSyntaxCfgAVC.iLog2MaxFrameNum && pInfo->sSyntaxCfgAVC.iLog2MaxFrameNum <= (12 + 4) && 4 <= pInfo->sSyntaxCfgAVC.iLog2MaxPOCLsb && pInfo->sSyntaxCfgAVC.iLog2MaxPOCLsb <= (12 + 5)`
+- `%lld %d AVE %s: %s::%s:%d %lld %d - %lld %d %d | %lld.%03lld %lld.%03lld \n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to find MD %p %d %lld %lld %d %d\n`
+- `ReleaseSurfaces`
+- `%lld %d AVE %s: %s::%s:%d %s | fail to truncate refed ino %p %lld %lld %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to allocate mutex\n`
+- `%lld %d AVE %s: %s::%s:%d AVE_Drv::IO_init %p %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | failed to initialize PMGR %p %d %p %d\n`
+- `%lld %d AVE %s: Log Cfg: %3d = 0x%02x\n`
+- `%lld %d AVE %s: %s:%d %s | failed to DART map surface %s 0x%llx %d %d\n`
+- `Check`
+- `%lld %d AVE %s: %s::%s:%d total number of commands %p %d | %p %d %lld %p %lld | %d %d %d %d | %d %d %d %d %d %d %d | %lld\n`
+- `site.AVE_TBufPool`
+- `site.AVE_IPC`
+- `AVE_Log_UpdateConf`
+- `SetPS`
+- `%lld %d AVE %s: %s::%s:%d %s | wrong parameter %p %lld 0x%x %d %d %d\n`
+- `%lld %d AVE %s: %p RCMode: %d\n`
+- `ave-lumarefs-dsid`
+- `%lld %d AVE %s: %s::%s:%d %s | Invalid tile size bytes: %p %llu %d\n`
+- `%lld %d AVE %s: %s:%d %s | invalid offset %p %d %lld %p %lld | 0x%llx %d %d %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %d %p %d %d\n`
+- `pInfo != nullptr`
+- `%lld %d AVE %s: %s Enter %d %d\n`
+- `MakeFwCmd_Halt`
+- `%lld %d AVE %s: %s:%d %s | fail to initialize RC %p %llu %p %lld %d %d\n`
+- `AVE_DevInfo`
+- `HWMC`
+- `m_pcDevInfo != nullptr`
+- `SendFwCmd_Stop`
+- `AVE_IOP_CheckIdle_Janus`
+- `AVE_PSGen`
+- `%lld %d AVE %s: %s:%d %s | wrong layer ID %d\n`
+- `AVE_SVECtrl`
+- `InsertBeforeDPBEntry`
+- `%lld %d AVE %s: %s::%s Exit %p %d %p %p %d\n`
+- `%lld %d AVE %s: %s::%s Exit %p %p %p %p %p %d %p %d %d\n`
+- `%lld %d AVE %s: %s::%s:%d %s | not initialized %p %d %d %p 0x%x\n`
+- `psPicReordering != nullptr && m_eEncType == AVE_EncType_AVC`

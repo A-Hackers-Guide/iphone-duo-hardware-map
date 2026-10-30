@@ -1,0 +1,215 @@
+# `usr/standalone/firmware/DP875/iPad16,5_LGD_75.bin`
+
+- File size: 8,388,608 bytes
+
+## Payload [FW]
+
+- Size after IM4P unwrap / decompression: 8,388,608 bytes
+- Format: raw binary
+
+## Strings (200) [FW]
+
+Printable runs of 6+ characters with at least three letters, in file order, with payload offset. For RTKit co-processor firmware these are the log formats, task names, endpoint names and assertions that describe what the processor does.
+
+```
+0000404d  Apple Display
+00006c1c  =PA"=PBG=PC
+00006c34  =PG.=PHt=PIQ=PJ
+00006c44  =PKE=PL
+00006c4c  =PMh=PN
+00006c60  =PR\=PSt=@L
+00014004  xmd`[XTQNKHFDDCCCBBNXbjrtvwy{|
+00014024  xmd`[XTQNKHFDDCCCBBNXbjrtvwy{|
+00014044  xmd`[XTQNKHFDDCCCBBNXbjrtvwy{|
+00014064  xmd`[XTQNKHFDDCCCBBNXbjrtvwy{|
+00014084  xmd`[XTQNKHFDDCCCBBNXbjrtvwy{|
+000140a4  xmd`[XTQNKHFDDCCCBBNXbjrtvwy{|
+0002110f  dis01t
+00021194  dis11t
+00021219  dis21t
+0002129e  dis31t
+000214d0  MANP1p
+00021551  OBJP1&
+000215f5  {fGOflL
+0002338d  +pGpGpGpGuF
+0002350b  @timeout1: 
+0002351b  @timeout2: 
+00023738  8FzO8`zI
+00023bc8  INFO: 
+00023bd0  WRSR()
+00023ce3  @timeout2:
+00023cf8  timeout1:
+00023eb3  `PHII68
+000244e2  PPPTRCKBUP=
+00024aae  fhIF8F
+00024b3e  ZUIM4MIM4C0
+00024b4a  PPBNAMPTRC|
+0002500c  :IJl:K
+0002522b  @OTP  
+00025234  load fail
+0002538c  INFO: 
+00025394  Quad Mode Enabled
+000253ff  @ERROR: 
+00025408  SPITimeout
+00025463  @ERROR: 
+0002546c  SPIStatusErr
+00025b08  ExpCFGD: 
+00025b14  ActualCFGD: 
+00025b2c  ExpTCON: 
+00025b38  ActualTCON: 
+00025b48  ExpEDID: 
+00025b54  ActualEDID: 
+00025b64  ExpACMD: 
+00025b70  ActualACMD: 
+00025b80  ExpADAT: 
+00025b8c  ActualADAT: 
+00025b9c  ExpPMIC: 
+00025ba8  ActualPMIC: 
+00025bb8  ExpPWM: 
+00025bc4  ActualPWM: 
+00025cac  New API: 
+00025d41  `#H:FAF
+00025e7c  EraseErr:
+00026264  INFO: 
+0002626c  OTPInit:
+00026279  OTPAddr0: 
+0002628d  OTPAddr1: 
+00026299  OTPAddr2: 
+000263e5  Version: 
+0002658c  FH1iFO
+000266a4  l5Z6PNAM>
+000268f0  INFO: 
+00026904  CmdOK:
+0002691a  @qAd?!
+00026d41  DPCD429: 
+00026d55  FW Version: 
+00026e80  INFO: 
+00026e88  WrErr:
+00026f70  INFO: 
+00026f78  RdErr:
+00026fe3  2S\CTI
+00027173  ` xPIPKQOQMRN
+00027358  INFO: 
+00027360  GetInfo
+000273c8  INFO: 
+000273d0  SetInfo
+000275c4  RdErr:
+00027608  API Status: 
+0002779c  INFO: 
+000277a4  OTPInit:
+000277b1  OTPAddr0: 
+000277c5  OTPAddr1: 
+000277d1  OTPAddr2: 
+000277dc  AlreadyProgrammed:
+00027804  OTP_PROG_ERR:
+00027d58  WrErr:
+00027fb0  0123456789abcdefError Format
+00028073  [-OPEC
+000280af  -efil0-dgfc
+000280cd  1sid@x}
+0002b1e8  =PW#=PW3=PWC=PWS>@o
+0004e10f  dis01t
+0004e194  dis11t
+0004e219  dis21t
+0004e29e  dis31t
+0004e4d0  MANP1p
+0004e551  OBJP1&
+0004e5f5  {fGOflL
+0005038d  +pGpGpGpGuF
+0005050b  @timeout1: 
+0005051b  @timeout2: 
+00050738  8FzO8`zI
+00050bc8  INFO: 
+00050bd0  WRSR()
+00050ce3  @timeout2:
+00050cf8  timeout1:
+00050eb3  `PHII68
+000514e2  PPPTRCKBUP=
+00051aae  fhIF8F
+00051b3e  ZUIM4MIM4C0
+00051b4a  PPBNAMPTRC|
+0005200c  :IJl:K
+0005222b  @OTP  
+00052234  load fail
+0005238c  INFO: 
+00052394  Quad Mode Enabled
+000523ff  @ERROR: 
+00052408  SPITimeout
+00052463  @ERROR: 
+0005246c  SPIStatusErr
+00052b08  ExpCFGD: 
+00052b14  ActualCFGD: 
+00052b2c  ExpTCON: 
+00052b38  ActualTCON: 
+00052b48  ExpEDID: 
+00052b54  ActualEDID: 
+00052b64  ExpACMD: 
+00052b70  ActualACMD: 
+00052b80  ExpADAT: 
+00052b8c  ActualADAT: 
+00052b9c  ExpPMIC: 
+00052ba8  ActualPMIC: 
+00052bb8  ExpPWM: 
+00052bc4  ActualPWM: 
+00052cac  New API: 
+00052d41  `#H:FAF
+00052e7c  EraseErr:
+00053264  INFO: 
+0005326c  OTPInit:
+00053279  OTPAddr0: 
+0005328d  OTPAddr1: 
+00053299  OTPAddr2: 
+000533e5  Version: 
+0005358c  FH1iFO
+000536a4  l5Z6PNAM>
+000538f0  INFO: 
+00053904  CmdOK:
+0005391a  @qAd?!
+00053d41  DPCD429: 
+00053d55  FW Version: 
+00053e80  INFO: 
+00053e88  WrErr:
+00053f70  INFO: 
+00053f78  RdErr:
+00053fe3  2S\CTI
+00054173  ` xPIPKQOQMRN
+00054358  INFO: 
+00054360  GetInfo
+000543c8  INFO: 
+000543d0  SetInfo
+000545c4  RdErr:
+00054608  API Status: 
+0005479c  INFO: 
+000547a4  OTPInit:
+000547b1  OTPAddr0: 
+000547c5  OTPAddr1: 
+000547d1  OTPAddr2: 
+000547dc  AlreadyProgrammed:
+00054804  OTP_PROG_ERR:
+00054d58  WrErr:
+00054fb0  0123456789abcdefError Format
+00055073  [-OPEC
+000550af  -efil0-dgfc
+000550cd  1sid@x}
+000581e8  =PW#=PW3=PWC=PWS>@o
+00066c1c  =PA"=PBG=PC
+00066c34  =PG.=PHt=PIQ=PJ
+00066c44  =PKE=PL
+00066c4c  =PMh=PN
+00066c60  =PR\=PSt=@L
+001f4014  wPPwPPwPPwPPwPPwPP
+001f40a4  wPPwPPwPPwPPwPPwPP
+001f4a34  wTTwTTwTTwTTwTTwTT
+001f4ac4  wTTwTTwTTwTTwTTwTT
+001f5454  wppwppwppwppwppwpp
+001f54e4  wppwppwppwppwppwpp
+00579048  @PAPAXCXCZ
+005790eb  IBIBKJKJk
+0057912c  AJIJIKI[
+005791d4  kekm{m{}
+0057924f  a!SD"$R$ST3Db$VbUcU ""
+0057926f  ca3"dB6d3e3BfRfSf5v
+0057944f  a!SD"$R$ST3Db$VbUcU ""
+0057946f  ca3"dB6d3e3BfRfSf5v
+00603cc0  '2Wksc
+```

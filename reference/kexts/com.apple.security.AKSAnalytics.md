@@ -1,0 +1,1690 @@
+# `com.apple.security.AKSAnalytics`
+
+- Name: AKSAnalytics
+- Version: `1`
+- UUID: `998E25AF-E888-3FEE-8976-1F0A6D8F5DEC`
+- Source version: `2383.40.18.0.0`
+- Depends on: [`com.apple.driver.AppleMobileFileIntegrity`](com.apple.driver.AppleMobileFileIntegrity.md) 1.0.2, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 18.0, [`com.apple.kpi.dsep`](com.apple.kpi.dsep.md) 18.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 18.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 18.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 18.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 18.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 18.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (1) [KC]
+
+### AKSAnalytics
+- `CFBundleIdentifier`: `com.apple.security.AKSAnalytics`
+- `IOClass`: `AKSAnalytics`
+- `IOMatchCategory`: `AKSAnalytics`
+- `IOPersonalityPublisher`: `com.apple.security.AKSAnalytics`
+- `IOProviderClass`: `IOResources`
+- `IOResourceMatch`: `IOKit`
+- `IOUserClientClass`: `AKSAnalyticsUserClient`
+
+
+## C++ classes (2) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AKSAnalytics` | 0x1a8 | IOService → IORegistryEntry |
+| `AKSAnalyticsUserClient` | 0xf8 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0000a862 off=0x00135220-0x0013fa82 addr=0xfffffe0007139220-0xfffffe0007143a82 r--/r--   __TEXT            
+	sz=0x0000008c off=0x00135940-0x001359cc addr=0xfffffe0007139940-0xfffffe00071399cc               __TEXT.__const            
+	sz=0x00008d25 off=0x001359cc-0x0013e6f1 addr=0xfffffe00071399cc-0xfffffe00071426f1               __TEXT.__cstring          (CstringLiterals)
+	sz=0x00001391 off=0x0013e6f1-0x0013fa82 addr=0xfffffe00071426f1-0xfffffe0007143a82               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x000052b8 off=0x016034c0-0x01608778 addr=0xfffffe00086074c0-0xfffffe000860c778 r-x/r-x   __TEXT_EXEC       
+	sz=0x00004ef8 off=0x016034c0-0x016083b8 addr=0xfffffe00086074c0-0xfffffe000860c3b8          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000003c0 off=0x016083b8-0x01608778 addr=0xfffffe000860c3b8-0xfffffe000860c778          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00003328 off=0x0492a7b0-0x0492dad8 addr=0xfffffe000b92e7b0-0xfffffe000b931ad8 rw-/rw-   __DATA            
+	sz=0x000032c0 off=0x0492a7b0-0x0492da70 addr=0xfffffe000b92e7b0-0xfffffe000b931a70               __DATA.__data             
+	sz=0x00000058 off=0x00000000-0x00000058 addr=0xfffffe000b931a70-0xfffffe000b931ac8               __DATA.__common           (Zerofill)
+	sz=0x00000010 off=0x00000000-0x00000010 addr=0xfffffe000b931ac8-0xfffffe000b931ad8               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00008890 off=0x00f81dc0-0x00f8a650 addr=0xfffffe0007f85dc0-0xfffffe0007f8e650 rw-/rw-   __DATA_CONST      
+	sz=0x00000010 off=0x00f81dc0-0x00f81dd0 addr=0xfffffe0007f85dc0-0xfffffe0007f85dd0         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000010 off=0x00f81dd0-0x00f81de0 addr=0xfffffe0007f85dd0-0xfffffe0007f85de0         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00008510 off=0x00f81de0-0x00f8a2f0 addr=0xfffffe0007f85de0-0xfffffe0007f8e2f0         __DATA_CONST.__const            
+	sz=0x00000080 off=0x00f8a2f0-0x00f8a370 addr=0xfffffe0007f8e2f0-0xfffffe0007f8e370         __DATA_CONST.__kalloc_type      
+	sz=0x000000a0 off=0x00f8a370-0x00f8a410 addr=0xfffffe0007f8e370-0xfffffe0007f8e410         __DATA_CONST.__kalloc_var       
+	sz=0x000001e0 off=0x00f8a410-0x00f8a5f0 addr=0xfffffe0007f8e410-0xfffffe0007f8e5f0         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000060 off=0x00f8a5f0-0x00f8a650 addr=0xfffffe0007f8e5f0-0xfffffe0007f8e650         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 132 at 0x04ad0748
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     998E25AF-E888-3FEE-8976-1F0A6D8F5DEC
+008: LC_SOURCE_VERSION           2383.40.18.0.0
+009: LC_FUNCTION_STARTS          offset=0x004a961b8 size=0xc0
+```
+
+## Info.plist keys [KC]
+
+- `AppleSecurityExtension`: `True`
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleExecutable`: `AKSAnalytics`
+- `CFBundleIdentifier`: `com.apple.security.AKSAnalytics`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AKSAnalytics`
+- `CFBundleNumericVersion`: `16809984`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2023 Apple Inc. All rights reserved.`
+- `OSBundleRequired`: `Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AKSAnalytics.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198904532448`
+- `_PrelinkExecutableRelativePath`: `AKSAnalytics`
+- `_PrelinkExecutableSize`: `112338`
+- `_PrelinkExecutableSourceAddr`: `-2198904532448`
+- `_PrelinkKmodInfo`: `-2198829078608`
+
+## Strings (1567) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `com.apple.centaurid`
+- `com.apple.siriactionsd`
+- `MotionTrackingCache`
+- `countryd`
+- `com.apple.mpsgraphtool`
+- `com.apple.ARExamples.internal`
+- `com.apple.cvcalibrationd`
+- `SOS Library`
+- `roactive.eventtracker`
+- `XcodeBuiltProducts`
+- `void AKSAnalytics::enqueueEvent(DPSerializedEvent)`
+- `com.apple.Preferences`
+- `com.apple.VistaCLI`
+- `com.apple.hid.Kaleidoscope`
+- `com.apple.security.cryptexd`
+- `com.apple.tccd`
+- `com.apple.nanomaild`
+- `com.apple.sidecar.extension.display`
+- `com.apple.MSUEarlyBootTask`
+- `com.apple.Blackbeard.BlackbeardTestApp`
+- `com.apple.Nova-rOS`
+- `com.apple.mediaanalysisd-service`
+- `com.apple.speech.localspeechrecognition`
+- `com.apple.stockholm.services.NFStorageServer`
+- `AppGroup Containers`
+- `AppstoreCache`
+- `com.apple.accountsd`
+- `com.apple.bluetoothd`
+- `com.apple.pay.finance.FinanceImageProcessingService`
+- `com.apple.ManagedSettingsAgent`
+- `FindmyImageCache`
+- `GameKitCache`
+- `Music`
+- `NewsScoringServiceCache`
+- `B24@?0^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}8^{IONotifier=^^?i}16`
+- `com.apple.jujubectl`
+- `com.apple.uarpd`
+- `com.apple.health.HealthExperienceTestsHost`
+- `com.apple.milod`
+- `PassKitCache`
+- `SiriTTS`
+- `UserLibrary`
+- `com.apple.accessibility.HearingMLHelperService`
+- `com.apple.fairplayd`
+- `AVConferenceCache`
+- `DeferredMedia`
+- `Keychains`
+- `Saved Application State Library`
+- `promotedcontentd`
+- `anaged Preferences`
+- `virtual void AKSAnalyticsUserClient::stop(IOService *)`
+- `com.apple.ANECompilerService`
+- `com.apple.realitycamerad`
+- `Daemon Containers`
+- `ExtensibleSSO Library`
+- `LocationLibrary`
+- `cryptexd`
+- `logs`
+- `23:34:04`
+- `com.apple.voiced`
+- `com.apple.icloud.fmflocatord`
+- `ParsecCache`
+- `UserCaches`
+- `DeliveryServices`
+- `mtranscoding.IMTranscoderAgent`
+- `com.apple.dyld_shared_cache_util`
+- `com.apple.crash_mover`
+- `com.apple.assistivetouchd`
+- `com.apple.UnifiedMessaging`
+- `com.apple.python`
+- `com.apple.ActivityMessagesApp.MessagesExtension`
+- `com.apple.hid.Canvas`
+- `NFStorageLibrary`
+- `UserDataVolume`
+- `com.apple.mobileactivationd`
+- `com.apple.mediaplaybackd`
+- `com.apple.MemojiImageRenderService`
+- `com.apple.defaults`
+- `com.apple.logd_helper`
+- `void AKSAnalyticsUserClient::configureAnalytics(uint64_t)`
+- `com.apple.devicemanagementclient.mdmd`
+- `com.apple.siri.AFMPlusSystem`
+- `com.apple.espressotool`
+- `com.apple.Casa`
+- `com.apple.PassbookUIService`
+- `DataProtectionTestDomain`
+- `changed analytics domain to %s (change count = %llu)`
+- `com.apple.momentsd`
+- `com.apple.icloud.findmydeviced`
+- `com.apple.Maps`
+- `com.apple.TabletopKit.MinimalGame`
+- `com.apple.BTLEServer`
+- `com.apple.devicesharingd`
+- `e5rtCache`
+- `com.apple.fileproviderd`
+- `com.apple.purplebuddy`
+- `com.apple.quicklook.ThumbnailsAgent`
+- `com.apple.presenced`
+- `com.apple.prng_seedctl`
+- `DataProtection/Unrestricted`
+- `hackemist.SDImageCache`
+- `com.apple.ap.adprivacyd`
+- `com.apple.eventkitsyncd`
+- `com.apple.intelligenceflow.intelligencecontextd`
+- `CallDirectory Library`
+- `locationd`
+- `/private/var/mobile/`
+- `com.apple.PosterBoard`
+- `com.apple.aiml.Antero100`
+- `com.apple.internal.FruitSaberRevival`
+- `com.apple.lsd`
+- `roleaccountd.staging`
+- `com.apple.bookdatastored`
+- `com.apple.devicecheckd`
+- `com.apple.pluginkit.pkd`
+- `OSAnalytics`
+- `SpringBoard`
+- `Shared/SystemGroup`
+- `com.apple.hidd.nonui`
+- `com.apple.mobileslideshow`
+- `MobileIdentityData`
+- `TrialLibrary`
+- `com.apple.royaprob`
+- `com.apple.followupd`
+- `com.apple.ValidUpdater`
+- `com.apple.bootpd`
+- `com.apple.DumpBasebandCrash`
+- `NanoPasses Library`
+- `dmdLibrary`
+- `com.apple.dt.xctest.tool`
+- `com.apple.assistant_service`
+- `com.apple.fitcored`
+- `com.apple.protectedcloudstorage.protectedcloudkeysyncing`
+- `com.apple.idstool`
+- `com.apple.applebbproxy`
+- `com.apple.fitnesscoachingd`
+- `com.apple.axauditd`
+- `com.apple.TrustedPeersHelper`
+- `com.apple.FileProviderDaemon.AppStoreService`
+- `com.apple.memoryanalyticsd`
+- `com.apple.Home.HomeUnitTester`
+- `com.apple.usermanagerd`
+- `com.apple.imdpersistence.IMDPersistenceAgent`
+- `com.apple.imtranscoding.IMTranscoderAgent`
+- `com.apple.UserEventAgent`
+- `com.apple.bookassetd`
+- `com.apple.Gaspar`
+- `com.apple.VFXREPlayer`
+- `com.apple.secureelementservice`
+- `com.apple.healthd`
+- `com.apple.commcentermobilehelper`
+- `CLEEDMediaService Library`
+- `IntelligencePlatformComputeServiceCache`
+- `com.apple.dt.DTMLModelRunnerService`
+- `com.apple.icloudmailagent`
+- `com.apple.timed`
+- `com.apple.ip.PingPong`
+- `ContainerStaging`
+- `MobileDocuments`
+- `NANDTelemetry`
+- `QuickLookThumbnailCache`
+- `com.apple.tvsetuputil`
+- `com.apple.ARKitSamples`
+- `com.apple.desktopservices.ArchiveService`
+- `com.apple.assistant_cdmd`
+- `ProtectedSystemData Containers`
+- `SafariSafeBrowsingCache`
+- `intelligenceplatformdCache`
+- `wifianalyticsd`
+- `com.apple.WebKit.Networking`
+- `FontsLibrary`
+- `SensorKitLibrary`
+- `StorageDailyCache`
+- `findmy.findmybeaconingd`
+- `posureNotification`
+- `InstallBundleStaging`
+- `AKSAnalytics.cpp`
+- `com.apple.clockface`
+- `com.apple.sc_ml_tool`
+- `com.apple.GazeTester.internal`
+- `com.apple.linkd`
+- `com.apple.UARPUpdaterServiceUSBPD`
+- `com.apple.assetsubscriptiond`
+- `Rover`
+- `com.apple.MobileInstallationHelperService`
+- `com.apple.springboard.SBRendererService`
+- `com.apple.notifyd`
+- `com.apple.uarpassetmanagertestd`
+- `com.apple.dasd`
+- `amfid`
+- `TokenGenerationInferenceIntegrationTests.xctrunner`
+- `PluginKitPlugin`
+- `com.apple.passd`
+- `com.apple.ClarityBoard`
+- `com.apple.mediaartworkd`
+- `com.apple.CloudDocsDaemon.container-metadata-extractor`
+- `com.apple.clpcpy`
+- `AttributionKitCache`
+- `CarrierBundles`
+- `NanoMusicSyncLibrary`
+- `dataprotect_policy_analytics`
+- `com.apple.bsdtar`
+- `com.apple.agx_power_test`
+- `com.apple.cloudkit.partlycloudd`
+- `SafetyAlerts`
+- `SharingLibrary`
+- `bluetooth`
+- `launchd`
+- `com.apple.PreBoard`
+- `com.apple.FMDMagSafeSetupRemoteUI`
+- `com.apple.health.HealthEvaluationsTester`
+- `com.apple.mobilenotes.WidgetExtension`
+- `com.apple.mobileactivation_unittest_runner`
+- `com.apple.DocumentManagerCore.Downloads`
+- `CloudDocs`
+- `coreidvdLibrary`
+- `IOUserClientDefaultLockingSingleThreadExternalMethod`
+- `\"samplingQueuePeek: invalid read index %d\" @%s:%d`
+- `com.apple.online-auth-agent`
+- `com.apple.BluetoothUIService`
+- `com.apple.intelligenceplatform.app.IntelligencePlatform`
+- `com.apple.CacheDeleteDaily`
+- `com.apple.sportsd`
+- `com.apple.ContesterSwiftUI`
+- `com.apple.Terminal`
+- `ISPLibrary`
+- `PluginData Containers`
+- `VoiceTrigger`
+- `gpsd`
+- `com.apple.amsengagementd`
+- `com.apple.siri.embeddedspeech`
+- `com.apple.appprotectiond`
+- `com.apple.weather`
+- `com.apple.newsd`
+- `com.apple.terminusd`
+- `com.apple.mobile_installation_proxy`
+- `com.apple.scutil`
+- `com.apple.photos.VideoConversionService`
+- `com.apple.UARPAssetManagerServiceMobileAsset`
+- `com.apple.naturallanguaged`
+- `IdentityServicesLibrary`
+- `com.apple.exchangesyncd`
+- `com.apple.FaceReality.FRUIT`
+- `com.apple.keystorectl`
+- `eligibilityd`
+- `staged_system_apps`
+- `trustd`
+- `ved Application State`
+- `anagedPurchases`
+- `com.apple.Typist`
+- `ChronoLibrary`
+- `MediaManagedPurchases`
+- `com.apple.AppleElements.StreamingHeartRateService`
+- `com.apple.darwin-init`
+- `PasteboardCache`
+- `RootHome`
+- `Finance`
+- `PersonalizationPortraitLibrary`
+- `Suggestions`
+- `coresymbolicationd`
+- `com.apple.manageddeviced`
+- `com.apple.appstored`
+- `com.apple.mediaremoted`
+- `com.apple.containermanagerd_system`
+- `com.apple.tailspind`
+- `com.apple.biomeapp`
+- `com.apple.tursd`
+- `com.apple.lockdownmoded`
+- `RenderQueueTestApp_iOS`
+- `com.apple.Maps.GeneralMapsWidget`
+- `ConsumerConnectivityPowerTableUpdates`
+- `Photos`
+- `UserTmp`
+- `com.apple.accessibility.heard`
+- `com.apple.ditto`
+- `com.apple.fmfd`
+- `com.apple.sirittsd`
+- `com.apple.FileProvider.LocalStorage`
+- `com.apple.ProxiedCrashCopier`
+- `com.apple.wifipicker.app`
+- `com.apple.SurfBoard`
+- `net.kishonti.gfxbench.metal.5.0.release.corporate`
+- `com.apple.maps.destinationd`
+- `com.apple.sed`
+- `com.apple.TabletopKit.InteractionPlayground`
+- `com.apple.FontServices.UserFontServices`
+- `com.apple.abm-helper`
+- `AppleMediaServicesCache`
+- `com.apple.texttospeech.SiriAUSP`
+- `com.apple.coreaudio.SoundEventDemo`
+- `com.apple.internal.AppleDepthViewer`
+- `com.apple.ovs-vswitchd`
+- `com.apple.nehelper`
+- `UserNotificationsUILibrary`
+- `com.apple.StreamingUnzipService`
+- `com.apple.jetpackassetd`
+- `com.apple.afktool`
+- `com.apple.TabletopKit.DiceRPG`
+- `com.apple.accessibility.motiontrackingd`
+- `LockdownMode`
+- `networkd`
+- `com.apple.appplaceholdersyncd`
+- `dataprotect_policy_enable`
+- `com.apple.TextUnderstanding.txtool`
+- `com.apple.findmy.findmybeaconingd`
+- `com.apple.installcoordination_test_runner`
+- `com.apple.familycircled`
+- `CoreDuetLibrary`
+- `accessoryupdater`
+- `com.apple.keybagd`
+- `com.apple.webprivacyd`
+- `com.apple.accessoryupdater.UARPUpdaterServiceStrap`
+- `site.AKSAnalytics`
+- `com.apple.amsaccountsd`
+- `com.apple.amstoold`
+- `com.apple.applepayautomation.apatool`
+- `com.apple.royareplayctl`
+- `com.apple.countryd`
+- `com.aiml-ve.leia-vision`
+- `com.apple.Sharing.SharingHUDService`
+- `virtual IOReturn AKSAnalyticsUserClient::clientMemoryForType(UInt32, IOOptionBits *, IOMemoryDescriptor **)`
+- `com.apple.TestFlight`
+- `com.apple.GLES2PowerVirus_NonUI`
+- `com.apple.Lynx`
+- `com.metaleco.deathstranding`
+- `com.apple.companionmessagesd`
+- `com.apple.MobileAsset.ManifestStorageService`
+- `com.apple.mobiletimerd`
+- `com.apple.NanoCompass.watchkitapp`
+- `com.apple.aiml.Oda`
+- `com.apple.hid.NaturalInputRecorder`
+- `com.watchkit-internal.Superman.Superman-Extensionless`
+- `com.apple.prototyped`
+- `com.apple.functioncoveragehelperd`
+- `com.apple.Keynote`
+- `ProxiedCrashCopier`
+- `Backup Library`
+- `DocumentRevisions`
+- `FeedbackLoggerCache`
+- `MedicalIDLibrary`
+- `SoftwareUpdateCore`
+- `com.apple.AXMediaUtilitiesService`
+- `com.apple.ciphermld`
+- `SwapFile`
+- `UserFonts`
+- `db`
+- `nowledgeconstructiond`
+- `com.apple.secureconfigd`
+- `com.apple.email.maild`
+- `com.apple.arkitctl`
+- `com.apple.bird`
+- `com.basemark.gpuscore.sacredpath.appleinternal`
+- `com.apple.login`
+- `elemetryServices`
+- `inningiPhoneApp`
+- `com.apple.Livability`
+- `buddy`
+- `ch.localspeechrecognition`
+- `DockAccessory Library`
+- `Lockdown`
+- `AKSAnalytics Kext`
+- `com.apple.tailspin.symbolicationserver`
+- `com.apple.cvcalibration_postfactoryfix`
+- `com.apple.nanomapsgd`
+- `xnu`
+- `BulletinBoard`
+- `ManagedAssets Library`
+- `Bundle/Application`
+- `com.apple.curl`
+- `com.apple.Manta.mantaremoteagentd`
+- `com.apple.ASPCarryLog`
+- `com.apple.ed`
+- `MobileSwitchLibrary`
+- `SystemGroup Containers`
+- `WatchKit Library`
+- `lligencePlatform`
+- `\"failed to allocate ProcessExceptions\" @%s:%d`
+- `com.apple.attributionkitd`
+- `com.apple.uamtesttool`
+- `HealthRecordsCache`
+- `PeopleSuggesterLibrary`
+- `MobileContainerManager`
+- `cureElementService`
+- `com.apple.HealthAlgorithms.DayStreamProcessorService`
+- `com.apple.backboardd`
+- `com.apple.businessservicesd`
+- `SiriTTSDCache`
+- `com.apple.location.tilesservice`
+- `com.apple.medialibraryd`
+- `com.apple.ctcategories.service`
+- `com.apple.fairplayd.G1`
+- `com.apple.SiriTTSTrainingAgent`
+- `com.apple.ShortcutsActions`
+- `com.apple.nanophoned`
+- `com.apple.security.CircleJoinRequested`
+- `com.apple.acx_test_runner`
+- `com.apple.goldrestore2`
+- `com.apple.rtcreportingd`
+- `com.apple.TokenGenerationInferenceIntegrationTests.xctrunner`
+- `CameraCache`
+- `FinHealth Library`
+- `RootApplicationSupport`
+- `andbox-overrides`
+- `com.apple.siri.context.service`
+- `com.apple.Passbook`
+- `com.apple.osanalyticshelper`
+- `com.apple.budd`
+- `com.apple.wifianalyticsd`
+- `ApplicationSupport`
+- `KeyboardLibrary`
+- `com.apple.powerlogHelperd`
+- `com.apple.CharacterControl`
+- `com.apple.siriknowledged`
+- `com.apple.subridged`
+- `Catacomb`
+- `RootMobileContainerManager`
+- `.services.cloud`
+- `com.apple.AccessibilityUIServer`
+- `com.apple.mapkittool`
+- `com.apple.audiomxd`
+- `com.apple.geocorrectiond`
+- `com.apple.$(PRODUCT_BUNDLE_IDENTIFIER)`
+- `com.apple.appleh16camerad`
+- `LASD Library`
+- `SystemTmp`
+- `com.apple.appinstallationmetricsd`
+- `com.apple.donotdisturbd`
+- `SpotlightParsetoolCache`
+- `bool AKSAnalytics::drainEventQueues()`
+- `com.apple.PosterChannelTester`
+- `com.apple.siritts-tool`
+- `com.apple.ClipTester`
+- `com.apple.bulletindistributord`
+- `com.apple.mmaintenanced`
+- `Carousel`
+- `com.apple.lskdd`
+- `com.apple.perfpowermetricd`
+- `com.apple.demod_helper`
+- `BridgeCache`
+- `NanoPhotos Library`
+- `iTunesCloud`
+- `com.apple.ConstantColorCam`
+- `com.apple.bluetoothuserd`
+- `com.apple.MusicKit.Internal.Tool`
+- `CallServicesLibrary`
+- `com.apple.intelligenceplatform.IntelligencePlatformComputeService`
+- `com.apple.mlruntimed`
+- `com.apple.mobilesms.compose`
+- `com.apple.mobile_storage_proxy`
+- `com.apple.arviz.app`
+- `com.apple.scrod`
+- `com.apple.SafariViewService`
+- `com.apple.SiriTasksEvaluation.SiriTasksEvaluationPlugin`
+- `com.apple.migrationpluginwrapper`
+- `com.apple.xctspawn`
+- `com.apple.internal.CoreGestureTest`
+- `com.apple.griddatad`
+- `RoutineCache`
+- `com.apple.EnergyKitService`
+- `com.apple.eligibilityd`
+- `com.apple.NanoHome`
+- `com.apple.usernotificationsd`
+- `com.apple.resourcegrabberd`
+- `Applications`
+- `Mail`
+- `dataprotect_enforce_disabled_policies`
+- `com.apple.Virtualization.VirtualMachine`
+- `com.apple.assistant_tool`
+- `com.apple.mobilestoredemod`
+- `S3TransferUtilityCache`
+- `TokenGenerationInferenceIntegrationTestsCache`
+- `diagnose/com.apple.`
+- `void AKSAnalytics::lockStateThreadCallHandler(keybag_handle_t)`
+- `com.apple.osanalytics.addaily`
+- `com.apple.Home.HomeUIService`
+- `com.apple.VideoConference.AVConference-framework-Library-Tests.xctrunner`
+- `MediaAnalysisCache`
+- `MobileSlideShowCache`
+- `com.apple.podcasts`
+- `com.apple.cp`
+- `com.happibaunch.A-BUNCHABEARS-Stickers.StickerPackExtension`
+- `com.apple.Pendulum`
+- `com.apple.arkitd`
+- `com.apple.chrono.WidgetRenderer-Activities`
+- `com.apple.driverkitd`
+- `os_eligibility`
+- `com.apple.dmd`
+- `com.apple.AlchemistServiceCLI`
+- `com.apple.geoanalyticsd`
+- `com.apple.security.dputil`
+- `AggregateDictionary`
+- `com.apple.schoolwork.ClassKitApp`
+- `com.apple.safetycheckd`
+- `com.apple.lockdownd`
+- `com.apple.searchd`
+- `AppIconsCache`
+- `AssistantCache`
+- `FamilyCache`
+- `HealthLibrary`
+- `com.apple.wwfe.waved`
+- `com.apple.internal.JasperViewer`
+- `com.apple.dirs_cleaner`
+- `com.apple.UARPUpdaterServiceHID`
+- `PassesLibrary`
+- `ProactiveClientAutomationTestCache`
+- `com.apple.AppleElements.TachogramV2Service`
+- `com.apple.CrowdCity`
+- `com.apple.MapKit.SnapshotService`
+- `roleaccountd`
+- `com.apple.brctl-internal`
+- `com.apple.CDEntitledTestRunner`
+- `com.apple.servicetowerd`
+- `DataProtectionTestExceptions`
+- `com.apple.CSUCLI-iOS`
+- `com.apple.assistantd`
+- `com.apple.royad`
+- `com.futuremark.appleinternal.extreme.DMAttanExtremeWorkload`
+- `com.apple.chrono.WidgetRenderer-Default`
+- `com.apple.nanoprefutil`
+- `com.apple.safetyalertsd`
+- `NanoHomeScreen`
+- `12`
+- `com.apple.fsdhelper`
+- `com.apple.DEC.PredictionAnalyzer`
+- `com.apple.brook.BrookUI`
+- `com.apple.coreaccessories.ACCFeatureAudioProductService`
+- `com.apple.homeenergyd`
+- `com.apple.nanoregistryd`
+- `com.apple.realityenrolld`
+- `com.apple.containermanagerd`
+- `com.apple.BiometricKitUITestApp`
+- `com.apple.SpeechRecognitionCore.speechrecognitiond`
+- `com.apple.mobilenotes`
+- `com.apple.shortcuts.TestHost`
+- `com.futuremark.appleinternal.DMDiscoWorkload`
+- `com.apple.mobile_diagnostics_relay`
+- `BackupUnitTestCache`
+- `com.apple.CallHistorySyncHelper`
+- `com.apple.spindump`
+- `com.apple.sleepd`
+- `com.apple.xpc.launchd`
+- `Avatar Library`
+- `MappedImageCache`
+- `TerminusLibrary`
+- `afari.SafeBrowsing`
+- `com.apple.sftp-server`
+- `CoreFollowUpLibrary`
+- `run`
+- `Protection/Unrestricted`
+- `.IntelligencePlatformComputeService`
+- `mediaanalysisd-service`
+- `com.apple.accounts.dom`
+- `com.apple.touch`
+- `com.apple.deviceconfigurationd`
+- `DCIM`
+- `KeyboardsCache`
+- `Oct 13 2026`
+- `com.apple.fileIntegrity`
+- `com.apple.divingd`
+- `com.apple.mobilegarageband.stickerext`
+- `com.apple.UsageTrackingAgent`
+- `com.apple.appconduitd`
+- `Managed Preferences`
+- `com.apple.AirPlaySenderService`
+- `com.apple.nanosystemsettingsd`
+- `com.apple.ssh-keygen`
+- `com.apple.Health`
+- `PPMLibrary`
+- `SpringboardRendererCache`
+- `iCloudSearchPartyLibrary`
+- `Failed to start AKSAnalytics`
+- `AKSAnalytics stopping`
+- `com.apple.wifi.ThreeBarsXPCService`
+- `com.apple.networkscored`
+- `com.apple.threadradiod`
+- `com.apple.spotlightknowledged`
+- `com.apple.swcd`
+- `LanguageModeling Library`
+- `i8@?0`
+- `OTACrashCopier`
+- `com.apple.coreidv.coreidvd`
+- `com.apple.RealityControlCenter`
+- `com.apple.trialtool`
+- `NanoBackup Library`
+- `Preferences`
+- `com.apple.notifyutil`
+- `AIMLInstrumentation`
+- `AneCache`
+- `MediaInstallBundleStaging`
+- `com.apple.stocks.widget`
+- `com.apple.apple-hwtrace`
+- `com.apple.arkitctl-xctest`
+- `com.apple.linkcli`
+- `com.apple.routined`
+- `MediaRemoteLibrary`
+- `VisageTestAppCache`
+- `ConfigurationProfiles`
+- `AMPIDService`
+- `DoNotDisturbLibrary`
+- `com.apple.AdaptiveMusicApp.AdaptiveMusicControl`
+- `com.apple.NRD.UpdateBrainService`
+- `ContinuityCaptureCache`
+- `TCC`
+- `WebKit Library`
+- `com.apple.companiond`
+- `com.apple.softwareupdateservicesd`
+- `com.apple.ActivityMonitorApp`
+- `com.apple.MetalTester`
+- `com.apple.MomentsUIService`
+- `QuickLook.thumbnailcache`
+- `com.apple.MobileAsset.DownloadService.Backported`
+- `com.apple.CoreDevice.dtdarwinupinstalld`
+- `com.apple.networkdiagnosticsd`
+- `com.apple.rapportd`
+- `com.apple.sysdiagnosed`
+- `com.apple.batteryintelligenced`
+- `com.apple.icloudsubscriptionoptimizerd`
+- `com.apple.SerenityNow`
+- `com.tdg.MRScenesTester`
+- `com.apple.fairplayd.G1.dev`
+- `com.apple.NTKFaceSnapshotService`
+- `com.apple.configd`
+- `IOUserClientDefaultLocking`
+- `com.apple.ProjectPolly`
+- `com.apple.datamigrator`
+- `com.apple.Fitness`
+- `LaunchAgents Library`
+- `com.apple.afcd`
+- `com.apple.mobileassetd`
+- `com.apple.healthappd`
+- `com.apple.vim`
+- `com.apple.nearbyd`
+- `com.apple.RCClientViewer`
+- `DuetActivitySchedulerLibrary`
+- `void AKSAnalytics::registerLockNotificationsAsync()_block_invoke_2`
+- `com.apple.NanoSettings`
+- `com.apple.vetap.STRecorder`
+- `com.apple.voicebankingd`
+- `com.apple.MobileAccessoryUpdater.DurianUpdaterService`
+- `com.apple.CloudKeyValuesTestingService`
+- `NewDeviceOutreach`
+- `systemstats`
+- `com.apple.CarPlayApp`
+- `com.apple.ContactsBackgroundColorService`
+- `com.apple.wedge`
+- `navdCache`
+- `vm`
+- `CloneFile`
+- `com.apple.nanoprefsyncd`
+- `com.apple.avfoundation.figcam`
+- `com.apple.internal.Whiteboard`
+- `com.apple.fairplayd.dev`
+- `ExclaveSecureStorage`
+- `MobileAsset`
+- `com.apple.AppStore.ProductPageExtension`
+- `com.apple.MinervaAgent`
+- `com.apple.arviz.cli`
+- `com.apple.calaccessd`
+- `com.apple.adid`
+- `VideoCodecCache`
+- `ppleMediaServices`
+- `SiriTTSTrainingAgent`
+- `com.apple.SpatialGallery`
+- `com.apple.uxautomation.unxtool`
+- `com.apple.automationmode-writer`
+- `com.apple.analyticsd`
+- `com.apple.applecamerad`
+- `CloudTelemetryCache`
+- `Prototyping Library`
+- `dataprotect_policy_enforcement`
+- `TVAppServicesTestsRunner`
+- `com.apple.NanoMusic.widgets`
+- `com.apple.progressd`
+- `com.apple.visualgenerationtool`
+- `com.apple.BatteryUsageUIApp`
+- `com.apple.TabletopKit.SampleApp`
+- `com.apple.assetsd`
+- `com.apple.checkpointd`
+- `MRPreferences Library`
+- `Shortcuts`
+- `UserMobileContainerManager`
+- `com.apple.UIKit.OverlayUI`
+- `CarPlayLibrary`
+- `erm`
+- `ssh`
+- `com.apple.firstlight`
+- `com.apple.plphotosctl`
+- `ntinuitycaptured`
+- `virtual bool AKSAnalyticsUserClient::start(IOService *)`
+- `SamplingQueue.c`
+- `com.apple.internal.xctestinternalangel`
+- `com.apple.MusicUIService`
+- `com.apple.recon`
+- `com.apple.nanonewscd`
+- `com.apple.logd`
+- `MobileDevice`
+- `com.apple.internal.Cassini.CassiniApp`
+- `com.apple.lightlayerd`
+- `com.apple.mv`
+- `com.apple.induce`
+- `com.apple.internal.jam`
+- `com.apple.appleh13camerad`
+- `com.apple.cameraispd`
+- `com.apple.uigroundingtool`
+- `\"initProcessExceptions was not called\" @%s:%d`
+- `com.apple.FunCamera.EmojiStickers.MessagesExtension`
+- `com.apple.MuseBuddy`
+- `com.apple.internal.appleAccountSetupTool`
+- `com.alexIsTrash.SilentSiri`
+- `com.apple.health.HealthMediaContentTester`
+- `com.apple.relatived`
+- `com.apple.siri.SiriDebug`
+- `com.apple.visage.FaceSyncApp`
+- `com.apple.3bars`
+- `com.apple.sharingd`
+- `com.apple.icloud.FindMyDevice.FindMyExtensionContainer.FMDMagSafeExtension`
+- `com.apple.epicenterd`
+- `com.apple.schooltimed`
+- `com.apple.NanoUniverse.AegirProxyApp`
+- `RelevanceEngine Library`
+- `ap.promotedcontentd`
+- `demo_bundle_staging`
+- `com.apple.coreduetd`
+- `SystemDataVolume`
+- `UserNotificationsLibrary`
+- `com.apple.itunesstored`
+- `com.apple.fskitd`
+- `com.apple.VideoConference.AVConferenceTestRunneriOS`
+- `ManagedSettings`
+- `com.apple.CheckerBoard`
+- `com.apple.ap.PromotedContentJetService`
+- `com.apple.DeviceRecoveryBrain`
+- `com.apple.privacyaccountingd`
+- `AppConduit`
+- `Battery`
+- `Documents`
+- `Seymour`
+- `com.apple.akd`
+- `com.apple.pppd`
+- `com.apple.DiagnosticExtensions.FileArchiverService`
+- `com.apple.cloudpaird`
+- `com.apple.perceptiond`
+- `Assistant`
+- `BluetoothServicesCloudLibrary`
+- `Spotlight`
+- `com.apple.smbclientd`
+- `com.apple.ScreenTimeWidgetApplication.ScreenTimeWidgetExtension`
+- `com.apple.get-network-info`
+- `com.apple.nanomediaremotelinkagent`
+- `AvatarKitCache`
+- `msengagementd.classicdatavault`
+- `com.apple.ClipServices.clipserviced`
+- `com.apple.AlgorithmRadar.internal`
+- `com.apple.DragUI.druid`
+- `com.apple.wifivelocityd`
+- `com.apple.coreautomation.coreautomationd`
+- `com.apple.parsecd`
+- `DataAccessLibrary`
+- `dhcpclient`
+- `Failed to initialize workloop`
+- `com.apple.backupd`
+- `com.apple.dpdo`
+- `com.apple.STExtractionService`
+- `com.apple.airplayd`
+- `com.apple.Numbers`
+- `com.apple.nanotimekitd`
+- `com.apple.mxiproc`
+- `com.apple.handwritingd`
+- `com.apple.tvremoted`
+- `com.apple.syslogd`
+- `com.apple.fairplayd.A2.dev`
+- `MediaAnalysisServiceCache`
+- `PhotoImageConversionServiceCache`
+- `com.apple.geod`
+- `com.apple.adpt.Peeps`
+- `com.apple.CoreMotionLivability.MotionLauncher`
+- `com.apple.spaceattributiond`
+- `com.apple.nebulad`
+- `Safari Library`
+- `dscsym`
+- `ccessoryupdater`
+- `enabled`
+- `com.apple.MobileAssetEarlyBootTask`
+- `com.apple.storekitd`
+- `com.apple.AudioPlayground.VirtualVoice`
+- `com.apple.NTKComplicationSnapshotService`
+- `linkdCache`
+- `.SBRendererService`
+- `utrino.cache.node`
+- `com.apple.FunCamera.TextPicker.MessagesExtension`
+- `ApplePushService`
+- `HomeKitCache`
+- `HomeLibrary`
+- `MediaDemBundleStaging`
+- `ModelCatalogCompilationServiceCache`
+- `fsevents`
+- `3TransferUtility`
+- `com.apple.Music`
+- `com.apple.CoreHandwriting.CHUnitTests.xctrunner`
+- `com.apple.PLLog`
+- `com.apple.devicedatareset.devicedataresetd`
+- `com.apple.identityservicesd`
+- `findmybeaconingd`
+- `iriTTS/BNNSModels`
+- `com.apple.Running-Wild`
+- `com.apple.avconferenced`
+- `com.apple.biomesyncd`
+- `UndefinedDomain`
+- `UserConfigurationProfiles`
+- `Apple.CognitiveUI`
+- `com.apple.RemoteUITest`
+- `mmandandcontrol`
+- `AKSAnalytics started`
+- `com.apple.Bridge`
+- `com.apple.xpc.roleaccountd`
+- `com.apple.magicswitchd`
+- `RootLibrary`
+- `Transparency`
+- `com.apple.DeviceRecoveryBuiltinBrain`
+- `com.apple.appstorecomponentsd`
+- `com.apple.ist.customapp.radar.stickers`
+- `com.apple.DeviceActivityUI.DeviceActivityReportService`
+- `com.apple.ReportMemoryException`
+- `com.apple.internal.tdg.CRViewer`
+- `com.apple.knowledgetool`
+- `com.apple.RaiseToSpeakCarryApp`
+- `\"samplingQueuePop: invalid read index %d\" @%s:%d`
+- `com.apple.Carousel`
+- `com.apple.ndoagent`
+- `com.apple.pipelined`
+- `com.apple.Goldfinger`
+- `WeatherLibrary`
+- `timed`
+- `com.apple.wbtest`
+- `com.apple.arkit.ARKit-iOS-tests-app`
+- `com.apple.photosfaced`
+- `com.apple.uaftool`
+- `com.apple.cameracaptured`
+- `com.apple.pcsctl`
+- `ClassroomCache`
+- `com.apple.finish_demo_restore`
+- `ChronoCache`
+- `Downloads`
+- `TelephonyUICache`
+- `keybags`
+- `com.apple.Home.HomeUtilNotification`
+- `com.apple.misd`
+- `com.apple.bwcrucible`
+- `CalendarLibrary`
+- `com.apple.brthumbctl`
+- `com.apple.remakePhoto`
+- `com.apple.NaturalInputSupport.NIS-PnP-Test`
+- `CoreBrightnessLibrary`
+- `HealthCache`
+- `com.apple.secitemd`
+- `com.apple.switchd`
+- `MobileStoreDemo`
+- `uuidtext`
+- `VideoSubscriberAccount.DeveloperService`
+- `com.apple.ScreenTimeAgent`
+- `com.apple.assistant.cdmtool`
+- `MemoryMaintenance Library`
+- `RootLaunchDaemons`
+- `com.apple.Home.HomeControlService`
+- `com.apple.cbergmann.SnippetUIService`
+- `com.apple.iRemote`
+- `MapKitSnapshotServiceCache`
+- `MediaAnalysis`
+- `UnrestrictedUserVolumeTestDomain`
+- `delCatalog.ModelCatalogCompilationService`
+- `com.apple.syncdefaultsd`
+- `com.apple.facetimemessagestored`
+- `AppleKeyStore`
+- `com.apple.MediaToolboxTests-XCTRunner-Embedded.xctrunner`
+- `com.apple.kbd`
+- `com.apple.userexperiencemanagerd`
+- `dev-apple.realitykit-spatial-tracking`
+- `com.apple.DumpPanic`
+- `com.apple.MTLCompilerService`
+- `com.apple.makoctl`
+- `com.apple.omniSearch.Ringo`
+- `com.apple.ASOctaneSupportXPCService`
+- `com.apple.fairplayd.H2.dev`
+- `AppData Containers`
+- `CacheDelete`
+- `WebClips Library`
+- `com.apple.transitd`
+- `com.apple.Corridor`
+- `com.apple.PresenceApp`
+- `com.apple.Spotlight`
+- `com.apple.dockaccessoryd`
+- `com.apple.siri.IntelligentLight`
+- `com.apple.NanoPhotos`
+- `com.apple.calendar_tool`
+- `com.apple.WorkflowKit.BackgroundShortcutRunner`
+- `com.apple.nand_task_scheduler`
+- `com.apple.icloud.FindMyDevice.FindMyDeviceHelperXPCService`
+- `com.apple.nptocompaniond`
+- `com.apple.gizmoappd`
+- `mnt`
+- `wifid`
+- `TLAssetUpgraderD`
+- `com.apple.intents.intents-helper`
+- `com.apple.privatecloudcomputed`
+- `com.apple.swtransparencyd`
+- `PurpleBuddyCache`
+- `WiFiAnalytics`
+- `flow.intelligenceflowd`
+- `biome/com.apple.rover.eventstore`
+- `com.apple.MobileStorageMounter`
+- `Voicemail`
+- `icloudsubscriptionoptimizerd`
+- `pplication Support`
+- `com.apple.modelcatalog`
+- `com.apple.corelocation.eedmediaservice`
+- `com.apple.managedconfiguration.profilectl`
+- `com.apple.fairplayd.T2`
+- `CallHistoryDB`
+- `MobileSoftwareUpdate`
+- `TKFaceSnapshotService`
+- `com.apple.Foundation.plutil`
+- `com.apple.rtadvd`
+- `geodCache`
+- `ccessibility.motiontrackingd`
+- `com.apple.CarPlayTemplateUIHost`
+- `com.apple.managedsettingsdiagnoticstool`
+- `com.apple.wirelessinsightsd`
+- `com.apple.trial.TrialArchivingService`
+- `iTunesControl`
+- `mobile_diagnostics_relay`
+- `com.apple.MobileAsset.DownloadService.Builtin`
+- `com.apple.AppStore`
+- `com.apple.avfoundation.AirPlayTester`
+- `com.apple.imagent`
+- `com.apple.splashboardd`
+- `NANDTaskScheduler`
+- `VoiceServicesCache`
+- `-restore`
+- `com.apple.mravplay`
+- `com.apple.GCTester`
+- `com.apple.appleaccountd`
+- `GamedCache`
+- `IMTranscoderAgentCache`
+- `MetalCache`
+- `ContainerManager`
+- `com.apple.NPKCompanionAgent`
+- `com.apple.sensorssqa.Eyeballs`
+- `AirPlayRoutePrediction`
+- `installd`
+- `wireless`
+- `com.apple.securityd`
+- `com.apple.notestool`
+- `com.apple.Stickers.UserGenerated.MessagesExtension`
+- `com.apple.iconservicesagent`
+- `com.apple.mi-test-runner`
+- `com.apple.CompareTableView`
+- `com.apple.owlcomposer`
+- `com.apple.icloud.searchpartyd`
+- `com.apple.MRUIKitCatalog`
+- `com.apple.accessoryupdaterd`
+- `ClarityBoard`
+- `USBRestricted`
+- `com.apple.installd`
+- `com.apple.GenerativeFunctions.generativeexperiencesd`
+- `JetPackCache`
+- `com.wwfe.otter`
+- `com.apple.tcpdump`
+- `com.apple.bbutil`
+- `com.apple.navd`
+- `12111112122212121121111111222222222222222222222222222`
+- `disabled`
+- `com.apple.nanotimekitcompaniond`
+- `com.chase`
+- `Kit.SnapshotService`
+- `com.apple.Classroom`
+- `com.chase.WNonUIExt`
+- `Backup`
+- `ClassKitLibrary`
+- `com.apple.makod Library`
+- `com.apple.StocksKitService`
+- `com.apple.TokenGenerationTool`
+- `com.apple.msq.metermatic2`
+- `SpringboardCache`
+- `timezone`
+- `obileSoftwareUpdate`
+- `com.apple.suggestd`
+- `com.apple.MobileSMS`
+- `com.apple.installcoordinationd`
+- `com.apple.NanoMaps`
+- `com.apple.Mica-Player`
+- `DataDeliveryServicesLibrary`
+- `NSURLSessionCache`
+- `BulletinDistributor`
+- `Maps`
+- `com.apple.agx_power_test_v2`
+- `com.apple.apfs_iosd`
+- `MapsSuggestionsCache`
+- `com.apple.wakeboardctl`
+- `com.apple.SpringtBoard.RemotePrototyping`
+- `com.apple.homed`
+- `com.apple.watchdogd`
+- `com.apple.Maps.mapssyncd`
+- `com.apple.fairplayd.H2`
+- `com.apple.DeviceConfigurationAgent`
+- `KnowledgeConstructionCache`
+- `com.apple.PersonalizedSensingService`
+- `com.apple.relleno`
+- `com.apple.vpg.SpatialExperienceAPITester`
+- `com.apple.fairplayd.T2.dev`
+- `com.apple.SpinningiPhoneApp`
+- `NanoMailKit`
+- `RootCaches`
+- `\"samplingQueuePush: invalid write index %d\" @%s:%d`
+- `com.apple.intelligenceplatformd`
+- `com.apple.royactl`
+- `com.apple.cloudd`
+- `com.apple.transcribe`
+- `analyticsd`
+- `iTunesStoreCache`
+- `com.apple.accessibility.axctl`
+- `com.apple.CoreMotionLivability.MotionLauncher.watchkitapp.watchkitextension`
+- `com.apple.atc`
+- `com.apple.gpsd`
+- `AddressBook`
+- `ExposureNotificationLibrary`
+- `ScreenSaverManager`
+- `SMCT-PnP`
+- `com.apple.srcacutil`
+- `com.apple.hangtracerd`
+- `com.apple.lighthouse.DeepThoughtWorker`
+- `com.apple.liveactivitiesd`
+- `com.apple.loctool`
+- `ControlCenterLibrary`
+- `hangtracer`
+- `com.apple.GSSCred`
+- `swtransparencyd`
+- `os_eligibility/eligibility.plist`
+- `site.SamplingQueue.SamplingQueueItem`
+- `com.apple.darwinup`
+- `com.apple.mobilecal`
+- `com.apple.StudyHall`
+- `com.apple.mobile.NRDUpdated`
+- `com.apple.sandboxd`
+- `AssistantContactsLibrary`
+- `SecureElementService Library`
+- `com.apple.SpotlightBackendTester`
+- `com.apple.personacamerad`
+- `com.apple.polarisctl`
+- `spindump`
+- `rnal.ProactiveClientAutomation.xctrunner`
+- `private.SensorKit`
+- `com.apple.geotool`
+- `com.apple.managedconfiguration.profiled`
+- `com.apple.copresence.HorizontalSharePlayTest`
+- `com.apple.enrollctl`
+- `com.apple.nanobuddy`
+- `DocumentRevisions-V100`
+- `com.apple.nanoregistrylaunchd`
+- `com.apple.siritest`
+- `com.apple.studentd`
+- `NanoPreferencesSyncLibrary`
+- `SafetyCheckCache`
+- `sysdiagnose`
+- `rsonalizationPortrait`
+- `com.apple.previewsd`
+- `com.apple.routined.RoutineApp`
+- `com.apple.FontServices.UserFontManager`
+- `NSURLSessionLibrary`
+- `PrivacyDisclosure Library`
+- `site.AKSAnalyticsUserClient`
+- `com.apple.sshd`
+- `com.apple.nanobackupd`
+- `com.apple.racoon`
+- `com.apple.commandandcontrol`
+- `apple.Trial-UIKit-App`
+- `com.audiomania.Ninja`
+- `com.tdg.xrCatalog`
+- `/com.apple.security.cryptexd`
+- `com.apple.osatool`
+- `com.apple.SensorKitDataExport`
+- `com.apple.appsspecialprojects.PromptValidator`
+- `com.apple.mobilenotes.IntentsExtension`
+- `v16@?0^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}8`
+- `com.apple.proactiveeventtrackerd`
+- `com.apple.MobileSoftwareUpdate.UpdateBrainService`
+- `com.apple.TapToRadar`
+- `otlight.parsetool`
+- `com.apple.Pearl-ID-Demo`
+- `uk.co.hellogames.nms`
+- `com.apple.biometrickitd`
+- `PowerUI Library`
+- `com.apple.amsondevicestoraged`
+- `com.apple.FinishRestoreFromBackup`
+- `com.apple.nsurlsessiond`
+- `com.apple.sw.dsi.DepthVader`
+- `com.apple.vetap.Miner`
+- `CommandandcontrolCache`
+- `GameKit Library`
+- `VideoConference`
+- `\"invalid AKSAnalytics event category %u\" @%s:%d`
+- `dataprotect_internal_entitlements`
+- `com.apple.test_apfs`
+- `com.apple.knowledgeconstructiond`
+- `com.apple.tdg.iRoll`
+- `AppleMediaServices`
+- `IntelligenceFlowCache`
+- `SandboxOverrides`
+- `cloud.searchpartyd`
+- `AKSAnalyticsUserClient`
+- `com.apple.misagent`
+- `com.apple.CrashReporter`
+- `VoiceServices`
+- `hardware`
+- `ProcessExceptions.cpp`
+- `com.apple.CloudTelemetryService.xpc`
+- `com.apple.siri.HomeAutomationFunctionalTests.xctrunner`
+- `com.apple.AppleElements.BackgroundWalkingHeartRateService`
+- `com.apple.MULe`
+- `com.apple.diskarbitrationd`
+- `com.apple.transparencyd`
+- `ScreenTimeAgentCache`
+- `com.apple.triald`
+- `com.apple.CDUnentitledTestRunner`
+- `com.apple.trace_internal`
+- `com.recon.blinker-app`
+- `CallHistoryTransactions`
+- `SpeechCache`
+- `com.apple.amstool`
+- `com.apple.webVNC`
+- `com.apple.AppShack`
+- `com.apple.dsi.datatech.RockNRoll`
+- `com.apple.internal.NW-Guide`
+- `com.apple.sbutil`
+- `NTKFaceSnapshotServiceCache`
+- `StudentLibrary`
+- `detected multiple instances of AKSAnalytics driver`
+- `com.apple.ScreenshotServicesService`
+- `com.apple.mobile_install`
+- `Reminders`
+- `SystemData Containers`
+- `dyldCache`
+- `fmfdCache`
+- `ggregateDictionary`
+- `com.apple.cv3d.CVPlayer`
+- `com.apple.OTACrashCopier`
+- `com.apple.CommCenterGizmo`
+- `GridData`
+- `WebPrivacyCache`
+- `com.apple.hkctl`
+- `com.apple.FontBook`
+- `com.apple.fairplayd.A2`
+- `com.apple.BundleComplicationMigrationService`
+- `dentityServices`
+- `IOUserClientDefaultLockingSetProperties`
+- `com.apple.wifi.app`
+- `com.apple.tee`
+- `com.apple.dt.DTConditionInducerSupportService`
+- `com.apple.wifi.WiFiLogCapture.MegaWiFiDiagnosticExtension`
+- `Accessibility`
+- `HackemistSDImageCache`
+- `com.apple.sosd`
+- `com.apple.sensorkitd`
+- `nDemandResources`
+- `IOReturn AKSAnalyticsUserClient::sendDataToUser(uint8_t *, size_t)`
+- `com.apple.PointerUI.pointeruid`
+- `com.apple.weatherkit.authservice`
+- `com.apple.speed-internal`
+- `com.apple.trace`
+- `ConnectivityPowerTableUpdates/Consumer`
+- `virtual IOReturn AKSAnalyticsUserClient::clientClose()`
+- `NeutrinoCache`
+- `com.apple.iBooks`
+- `com.apple.bash`
+- `com.apple.wakeboardd`
+- `com.apple.BackupAgent2`
+- `com.apple.NanoTimeKit.CreateWatchFace`
+- `ChronodCache`
+- `com.apple.iTester`
+- `com.apple.locationd`
+- `com.apple.diagnosticd`
+- `Biome`
+- `LocationCache`
+- `com.apple.CommCenterRootHelper`
+- `CountryCache`
+- `RTCReportingCache`
+- `VoiceTriggerCache`
+- `com.apple.mobilesafari`
+- `kbdCache`
+- `icloud.searchpartyd`
+- `ws.ScoringService`
+- `com.apple.asclient`
+- `com.apple.shazamd`
+- `com.apple.cfprefsd`
+- `CloudStorage Library`
+- `Media`
+- `SDWorkContainer`
+- `com.apple.UARPUpdaterServiceDFU`
+- `com.apple.DPSubmissionService`
+- `SiriIntelligentLightCache`
+- `5rt.e5bundlecache`
+- `/DataProtection/Test`
+- `com.apple.TestFlight.ServiceExtension`
+- `com.apple.cloudphotod`
+- `com.apple.wallet.test`
+- `AppContainer`
+- `Books`
+- `1211111212221212111111111111112`
+- `com.apple.amp.MusicUI.SampleApp-SwiftUI`
+- `com.apple.PosterTester`
+- `com.apple.ClientSimulator`
+- `com.apple.relevanced`
+- `com.apple.announced`
+- `FrontBoardLibrary`
+- `NewsLibrary`
+- `com.apple.askpermissiond`
+- `com.apple.ist.AppleConnect.mini`
+- `com.apple.chrono.WidgetRenderer-CarPlay`
+- `com.apple.powerd`
+- `SiriTTSTrainingAgent Library`
+- `hotos.ImageConversionService`
+- `com.apple.TapTestSwiftUI`
+- `FamilyControlsAgent`
+- `MSDWorkContainer`
+- `AKSAnalytics built %s %s\n`
+- `selected analytics domain %s`
+- `com.apple.Juniper`
+- `ApplicationSync Library`
+- `icloudmailagentCache`
+- `22`
+- `com.apple.videosubscriptionsd`
+- `com.apple.selfctl`
+- `com.apple.security.codesignkit.MockSignerSourceApp`
+- `com.apple.vista.VistaViewer`
+- `moryMaintenance`
+- `com.apple.security.applekeystored`
+- `com.apple.shortcuts`
+- `RootPreferences`
+- `driverkitd`
+- `nsurlsessiond-launchd`
+- `PrivacyDisclosure`
+- `com.apple.dataprotection.policy.exception-applied-by`
+- `com.apple.mobile.softwareupdated`
+- `com.apple.dataaccess.dataaccessd`
+- `com.apple.coremltest`
+- `com.apple.PassKitCoreXPCService`
+- `DeferredMediaCache`
+- `com.apple.setclass`
+- `com.apple.nanoweatherprefsd`
+- `com.apple.trustd`
+- `com.apple.PowerUIAgent`
+- `FairPlay`
+- `PreferencesCache`
+- `com.apple.avcapture`
+- `com.apple.AppleCredentialManagerDaemon`
+- `com.apple.corespeechd`
+- `Containers`
+- `Presence Library`
+- `com.apple.family`
+- `com.apple.Flounder`
+- `com.apple.vetap.thegobbler`
+- `com.apple.clonefile`
+- `ScreenshotServicesService`
+- `com.apple.AudioPlayground.VirtualSpeakerAUSM`
+- `com.apple.accessibility.axassetsd`
+- `ventKitSyncServices`
+- `iml.instrumentation`
+- `com.apple.managedappdistributiond`
+- `com.apple.HRTFEnrollmentService`
+- `com.apple.MTLAssetUpgraderD`
+- `com.apple.w`
+- `com.apple.itesterd`
+- `com.apple.revisiond`
+- `SMSLibrary`
+- `com.apple.MobileSoftwareUpdate.CleanupPreparePathService`
+- `com.apple.mediaanalysisd`
+- `MTLAssetUpgraderDCache`
+- `ssistant.Contacts`
+- `com.apple.TabletopKit.Checkers`
+- `com.apple.coreidv.kensho2`
+- `MediaPlaybackCache`
+- `com.apple.remotemanagementd`
+- `com.apple.biomed`
+- `preferences`
+- `IOUserClientEntitlements`
+- `com.apple.fseventsd`
+- `com.apple.Paint`
+- `com.apple.pairedsyncd`
+- `DuetExpertCenterLibrary`
+- `NanoTimeKitLibrary`
+- `SSUCache`
+- `ImageIOXPCService`
+- `com.apple.FinanceImageProcessingService`
+- `com.apple.proximitycontrold`
+- `com.apple.tipsd`
+- `com.apple.intelligenceflow.intelligenceflowd`
+- `com.apple.pasteboard.pasted`
+- `com.apple.dt.DTScreenshotService`
+- `com.apple.PerfPowerServicesExtended`
+- `com.apple.internal.OSExample`
+- `com.apple.dhcp6d`
+- `Accounts`
+- `BackupCache`
+- `GeoServicesCache`
+- `com.apple.Animoji.StickersApp.MessagesExtension`
+- `com.apple.taptoradard`
+- `MediaPublicStaging`
+- `com.apple.HangHUD`
+- `com.apple.SoftwareUpdateUIDemoApp`
+- `com.apple.camera`
+- `com.chase.intl`
+- `HomeCache`
+- `com.apple.tv`
+- `com.apple.apsd`
+- `com.apple.addressbooksyncd`
+- `com.apple.livabilityd`
+- `MediaStreamLibrary`
+- `OnDemandResources`
+- `SpinningiPhoneAppCache`
+- `.IntelligentLight`
+- `com.apple.watchlistd`
+- `com.apple.diagnosticextensionsd`
+- `com.apple.PerfPowerServices`
+- `com.apple.hangreporter`
+- `lockdownd.watch`
+- `com.apple.ovsdb-server`
+- `SpotlightCache`
+- `com.apple.osdiags.OSDGPUMathTest`
+- `com.apple.vcpctl`
+- `com.vcv.apple.Doc-iOS`
+- `AmsEngagementCache`
+- `irPlayRoutePrediction`
+- `indmy.imagecache`
+- `int VnodeCheckDataprotectSet(kauth_cred_t, struct vnode *, uint32_t *)`
+- `com.apple.TVAccessViewService`
+- `com.apple.mako-tester`
+- `com.apple.mediasetupd`
+- `com.apple.CacheDeleteSampleService`
+- `com.apple.softposreaderd`
+- `com.apple.nanoappregistryd`
+- `PrivateCloudCompute Library`
+- `RemindCache`
+- `AKSKernelServices`
+- `com.apple.MobileGestaltHelper`
+- `com.apple.intelligenceflow.iftool`
+- `com.apple.chrono.WidgetRenderer-WatchFaces`
+- `UnrestrictedSystemVolumeTestDomain`
+- `LEEDMediaService`
+- `com.apple.FunCamera.ShapesPicker.MessagesExtension`
+- `com.futuremark.appleinternal.DMPogoWorkload`
+- `com.apple.CSViewService`
+- `VideoConferenceCache`
+- `dirscleaner`
+- `dataprotect_inheritance_enforcement`
+- `com.apple.CallKit.CallDirectory`
+- `com.apple.arkitd-objecttracking`
+- `com.apple.mediastream.mstreamd`
+- `com.apple.IOMFB_bics_daemon`
+- `NanoTimeKitCache`
+- `itunesstored`
+- `com.apple.backgroundassets.user`
+- `AKSAnalytics`
+- `com.apple.TelephonyUtilities`
+- `com.apple.HangTracer.PerformanceLoggingDiagnosticExtension`
+- `com.apple.PresenceTestsApp`
+- `com.apple.gpusw.ParavirtualizedGraphicsGPUTask`
+- `MailCache`
+- `com.apple.ptpd`
+- `com.apple.coretelephony`
+- `com.apple.nesessionmanager`
+- `PhotosFaceLibrary`
+- `com.apple.mkfile`
+- `com.apple.gamed`
+- `com.playrix.township-ios.stickers2`
+- `com.apple.litehudd`
+- `com.apple.amfid`
+- `ImageIOXPCServiceCache`
+- `MediaDownloads`
+- `\"freeSamplingQueue: queue is not empty\" @%s:%d`
+- `com.apple.fileproviderctl_internal`
+- `com.appleinternal.PhotosSpatialMediaProtoApp`
+- `com.apple.cpio`
+- `MobileSMSCache`
+- `Python`
+- `com.apple.duetexpertd`
+- `com.apple.locationaccessstored`
+- `com.apple.uptime`
+- `CloudKitCache`
+- `Intents Library`
+- `MotionAssets`
+- `PhotoData`
+- `com.apple.AttentionController`
+- `IntelligencePlatform`
+- `SoftwareUpdateLibrary`
+- `SpeedInternalCache`
+- `MoveFile`
+- `com.apple.Photo-Booth`
+- `com.apple.managedassetsd`
+- `ActivityScheduler`
+- `com.apple.internal.shuttle.ShuttleAgent`
+- `com.apple.omniSearch.omstool`
+- `com.chase.WUIExt`
+- `com.apple.imtransferservices.IMTransferAgent`
+- `com.apple.TestHost`
+- `com.apple.parsec-fbf`
+- `spaceattribution`
+- `com.apple.photoanalysisd`
+- `com.apple.weatherd`
+- `com.apple.WebKit.GPU`
+- `com.apple.nanomapscd`
+- `com.apple.DirtyLaundry`
+- `com.apple.python3`
+- `CoreMLTestCache`
+- `GeoanalyticsCache`
+- `com.apple.springboard`
+- `com.apple.frauddefensed`
+- `com.apple.spotlight.rankingtool`
+- `com.apple.chronod`
+- `com.apple.deleted`
+- `CameraCaptureCache`
+- `diagnostics`
+- `ProtectedSystem`
+- `com.apple.AudioPlayground.VirtualSpeaker`
+- `com.apple.BarcodeSupport.BarcodeNotificationService`
+- `com.apple.keystore.analytics`
+- `com.apple.xctest`
+- `void saveExceptions(struct vnode *, ResolvedDomainPolicy *, uint32_t, _Bool, const char *, const char *)`
+- `com.apple.WirelessStress`
+- `com.apple.Vision-CLI`
+- `ProactiveEventtrackerCache`
+- `com.apple.inputexperience.documentunderstanding.dutool`
+- `com.apple.streaming_zip_conduit`
+- `com.apple.wifi.manager`
+- `SessionKit Library`
+- `i36@?0I8^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}12^v20Q28`
+- `com.apple.e5db`
+- `com.apple.matted`
+- `com.apple.Home`
+- `com.apple.signpost_reporter`
+- `com.apple.ap.promotedcontentd`
+- `com.apple.itunescloudd`
+- `com.apple.testmanagerd`
+- `EventKitSyncServices Library`
+- `MessagesMetaData Library`
+- `NanoPhotosCache`
+- `StatusKit`
+- `DeviceRegistry`
+- `com.apple.makod`
+- `com.apple.onboardingtest`
+- `DataDogHQCache`
+- `Developer`
+- `NanoTimeKitCache2`
+- `com.apple.proactiveagentplatform.agenticexperienced`
+- `com.apple.proximity.ProximityReaderTest`
+- `com.apple.symptomsd-helper`
+- `com.apple.devicedatareset.devicedataresetxpcserviceworker`
+- `com.apple.icloud.fmfd`
+- `ARKit Library`
+- `WifiCache`
+- `com.apple.sysdiagnose_helper`
+- `com.apple.coresymbolicationd`
+- `com.apple.wifistats`
+- `com.apple.security.cloudkeychainproxy3`
+- `com.apple.installcoordination_proxy`
+- `dev-apple.testSharedSpace`
+- `PrivacyAccounting Library`
+- `VideoSubscriberAccount Library`
+- `com.apple.MobileAssetTests`
+- `com.apple.StatusKitAgent`
+
+**[__TEXT.__os_log]**
+
+- `failed to start user client parent\n`
+- `%s: AKSAnalytics user client started\n`
+- `%s: allocating data queue\n`
+- `mac_policy_register failed\n`
+- `VIOLATION operation=CreateFile process=%s protectionClass=%u minProtectionClass=%u enforced=%d afu=%d path=%s\n`
+- `open: event handler not ready\n`
+- `failed to allocate sampling queue\n`
+- `empty item on event queue\n`
+- `failed to match AppleKeyStore service\n`
+- `failed to register aks notifier handler\n`
+- `FilePath normalized path allocation failed\n`
+- `swap: missing process signingId\n`
+- `swap: failed to get protection class for %s\n`
+- `ENFORCEMENT_REQUEST operation=SwapFile process=%s vnodeType=file protectionClass=%u minProtectionClass=%u enforced=%d path=%s from=%s\n`
+- `rate limit %d %lld\n`
+- `swap: failed to get left vnode file path\n`
+- `dataprotect_set: missing process signingId\n`
+- `clone: event handler not ready\n`
+- `failed to allocate data queue\n`
+- `%s: send failed: no client connection\n`
+- `setting rate limit maxEventBurst=%u averageEventPeriod=%llu\n`
+- `move: failed to get protection class for %s\n`
+- `swap: event handler not ready\n`
+- `%s: received aks message: (messageType = %x, argSize = %zu)\n`
+- `flushing events\n`
+- `domain name is invalid\n`
+- `data protection domain policy version=%d enable=%d enforce=%d enforce_disabled_policies=%d analytics=%d enforce_inheritance=%d internal_entitlements=%d\n`
+- `create: failed to get file path\n`
+- `VIOLATION operation=CreateFile process=%s protectionClass=0 minProtectionClass=%u enforced=%d afu=%d path=%s\n`
+- `%s: allocating violationQueue\n`
+- `unexpected flush before kext is initialized\n`
+- `setting event filter eventTypes=0x%llx protectionClasses=0x%llx\n`
+- `move: missing process signingId\n`
+- `failed to set xattr for process=%s path=%s ret=%d\n`
+- `vn_getpath failed: %d\n`
+- `%s: allocating enforcementRequestQueue\n`
+- `%s: AKSAnalytics user client stopping\n`
+- `exempted-by-controller operation=%s process=%s vnodeType=directory path=%s\n`
+- `dataprotect_set: failed to resolve filepath\n`
+- `%s: dataprotect_set: device is in BFU, scheduling remediation of %s in userspace\n`
+- `event serialization failed\n`
+- `cannot allocate serialization buffer\n`
+- `failed to get memory descriptor\n`
+- `failed to configure file protection analytics\n`
+- `ENFORCEMENT_REQUEST operation=%s %d process=%s vnodeType=directory enforced=%d path=%s\n`
+- `dataprotect_set: event handler not ready\n`
+- `%s: deallocating fileAccessQueue\n`
+- `send failed: invalid dataQueue\n`
+- `FilePath allocation failed\n`
+- `exempted-by-controller operation=SwapFile process=%s vnodeType=directory path=%s from=%s\n`
+- `VIOLATION operation=SetProtectionClass afu=%d process=%s protectionClass=%u minProtectionClass=%u enforced=%d path=%s\n`
+- `finishFileCreate: missing process signingId\n`
+- `AKSAnalytics notification port initialized to %p\n`
+- `unexpected client connection attempt before kext is initialized\n`
+- `unexpected client connection attempt\n`
+- `failed to allocate OSSymbol for AKSKernelServices\n`
+- `failed to get IOPlatformExpert\n`
+- `rename: failed to get source file path\n`
+- `create: event handler not ready\n`
+- `create: missing process signingId\n`
+- `analytics client disconnected\n`
+- `%s: deallocating violationQueue\n`
+- `notification port is already open\n`
+- `no data queue has been configured\n`
+- `create: device is in BFU, scheduling remediation of %s in userspace\n`
+- `finishFileCreate: failed to get file path\n`
+- `received first unlock message: (keybaghandle = %x)\n`
+- `%s: AKSAnalytics user client closing\n`
+- `rename: failed to get file path\n`
+- `%s: policy exception xattr for process=%s path=%s\n`
+- `finishFileCreate: unexpected policy violation for process=%s class=%d path=%s\n`
+- `dequeue mismatched after sending event\n`
+- `rename: event handler not ready\n`
+- `swap: unexpected combination of vnode types, process=%s left=%s right=%s, file a radar\n`
+- `clone: failed to get source file path\n`
+- `clone: failed to get file path\n`
+- `finishFileCreate: missing protection class for %s\n`
+- `keybag = %x has been unlocked\n`
+- `failed to add matching notifier for AppleKeyStore service\n`
+- `%s: received other aks notification message: %x, (keybaghandle = %x)\n`
+- `%s: successfully configured data queue descriptor\n`
+- `failed to get mount point\n`
+- `ENFORCEMENT_REQUEST operation=SwapFile afu=%d process=%s vnodeType=file protectionClass=%u minProtectionClass=%u enforced=%d path=%s from=%s\n`
+- `getFilePath: missing vnode\n`
+- `%s: checking (keybaghandle = %x) for unlock status\n`
+- `analytics event filter types=0x%llx classes=0x%llx\n`
+- `handleEvent: unexpected file access event\n`
+- `%s: allocating fileAccessQueue\n`
+- `invalid provider\n`
+- `%s: send failed: not enabled\n`
+- `%s: enable=0x%llx\n`
+- `analytics client connected\n`
+- `%s: deallocating enforcementRequestQueue\n`
+- `dequeue failed after sending event\n`
+- `%s: send failed: queue full\n`
+- `file protection analytics %s\n`
+- `ENFORCEMENT_REQUEST operation=%s afu=%d process=%s vnodeType=file protectionClass=%u minProtectionClass=%u enforced=%d path=%s\n`
+- `swap: failed to get right vnode file path\n`
+- `ENFORCEMENT_REQUEST operation=SwapFile afu=%d process=%s vnodeType=directory enforced=%d path=%s from=%s\n`

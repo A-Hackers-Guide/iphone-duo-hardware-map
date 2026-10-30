@@ -1,0 +1,2193 @@
+# Symbols: `/System/Library/Frameworks/MapKit.framework/MapKit`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__Frameworks__MapKit.framework__MapKit.md). **[DSC]**
+
+1,176 public symbols, 12,962 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1a72bb9d4  __TEXT,__text  _CLLocationCoordinatesFromNSData
+0x1a72552ac  __TEXT,__text  _DetailTextsForAdvisoryItem
+0x1a72550ac  __TEXT,__text  _ImageForArtwork
+0x1a72550b0  __TEXT,__text  _ImageForArtworkDataSource
+0x1a728c74c  __TEXT,__text  _ImageForShieldDataSourceTypeShouldBeFlipped
+0x1a72e662c  __TEXT,__text  _MKAddressDictionaryFromCLPlacemark
+0x1a71d6c14  __TEXT,__text  _MKAddressDictionaryFromContactsDictionary
+0x1a72e65e0  __TEXT,__text  _MKAddressDictionaryFromPostalAddress
+0x1a72e63dc  __TEXT,__text  _MKAddressStringForAddressDictionary
+0x1e0fa4b60  __DATA_CONST,__const  _MKAnnotationCalloutInfoDidChangeNotification
+0x1a744f970  __TEXT,__const  _MKAppImageManagerBadURLError
+0x1a744f978  __TEXT,__const  _MKAppImageManagerImageFormattingError
+0x1a71f2ef8  __TEXT,__text  _MKApplicationLayoutDirectionIsRightToLeft
+0x1e0fa8218  __DATA_CONST,__const  _MKApplicationStateDidBecomeActiveNotification
+0x1e0fa8210  __DATA_CONST,__const  _MKApplicationStateDidEnterBackgroundNotification
+0x1e0fa8208  __DATA_CONST,__const  _MKApplicationStateWillEnterForegroundNotification
+0x1e0fa8220  __DATA_CONST,__const  _MKApplicationStateWillResignActiveNotification
+0x1a737d908  __TEXT,__text  _MKArrowAppendExitRoadLeftToPathInRect
+0x1a737d65c  __TEXT,__text  _MKArrowAppendExitRoadRightToPathInRect
+0x1a737cf6c  __TEXT,__text  _MKArrowAppendLeftTurnToPathInRect
+0x1a737d0e4  __TEXT,__text  _MKArrowAppendMergeLeftToPathInRect
+0x1a737d268  __TEXT,__text  _MKArrowAppendMergeRightToPathInRect
+0x1a737ce00  __TEXT,__text  _MKArrowAppendRightTurnToPathInRect
+0x1a737d558  __TEXT,__text  _MKArrowAppendStraightArrowToPathInRect
+0x1a737d39c  __TEXT,__text  _MKArrowAppendUTurnToPathInRect
+0x1a737dbb0  __TEXT,__text  _MKArrowCreateBezierPathsForArrivalWithSize
+0x1a737db40  __TEXT,__text  _MKArrowCreateBezierPathsForArrivalWithSizeAndReturnCenter
+0x1a71f35c8  __TEXT,__text  _MKArrowCreateBezierPathsForProceedToRouteWithSize
+0x1a737dad0  __TEXT,__text  _MKArrowCreateBezierPathsForProceedToRouteWithSizeAndReturnCenter
+0x1e0fa5a48  __DATA_CONST,__const  _MKBalloonCalloutDidShowNotification
+0x1a73a9298  __TEXT,__text  _MKBearingFromCoordinateToCoordinate
+0x1a7324238  __TEXT,__text  _MKCGRectFittingImageWithinSize
+0x1a73a931c  __TEXT,__text  _MKCalculateDistance
+0x1a73a9234  __TEXT,__text  _MKClosestMapPointInLineSegmentFromMapPoint
+0x1a72e93b4  __TEXT,__text  _MKCompassPointFromLocationDirection
+0x1a71d3b64  __TEXT,__text  _MKCompassPointNEWSForHeading
+0x1a72e944c  __TEXT,__text  _MKCompassPointNEWSFromLocationDirection
+0x1a71bf4a0  __TEXT,__text  _MKCompassViewDiameterForSize
+0x1a71dadd8  __TEXT,__text  _MKCoordinateForMapPoint
+0x1a73a8ff0  __TEXT,__text  _MKCoordinateForTilePoint
+0x1a744fae0  __TEXT,__const  _MKCoordinateInvalid
+0x1a720d3c8  __TEXT,__text  _MKCoordinateRegionForMapRect
+0x1a744fb00  __TEXT,__const  _MKCoordinateRegionInvalid
+0x1a73a9090  __TEXT,__text  _MKCoordinateRegionMakeWithDistance
+0x1a73aa69c  __TEXT,__text  _MKCoordinateRegionMakeWithZoomLevel
+0x1a744fb70  __TEXT,__const  _MKCoordinateRegionWorld
+0x1a744faf0  __TEXT,__const  _MKCoordinateSpanInvalid
+0x1a73a929c  __TEXT,__text  _MKCoordinatesForRegion
+0x1a72bce2c  __TEXT,__text  _MKCreateBezierPathsForLane
+0x1a72bcc8c  __TEXT,__text  _MKCreateImageForLane
+0x1a71fddf0  __TEXT,__text  _MKCurrencySymbolForLocale
+0x1a71cf988  __TEXT,__text  _MKCurrentNetworkConnectionFailureDiagnosis
+0x1a737c2c4  __TEXT,__text  _MKDefaultCompactManeuverMetrics
+0x1a73aa42c  __TEXT,__text  _MKDefaultCoordinateRegion
+0x1a71ee9a8  __TEXT,__text  _MKDefaultGuidanceManeuverMetrics
+0x1a71eefc0  __TEXT,__text  _MKDefaultJunctionManeuverMetrics
+0x1a73aa718  __TEXT,__text  _MKDirectionBetween
+0x1e0fa5080  __DATA_CONST,__const  _MKDirectionsErrorCodeKey
+0x1e0fa8770  __DATA_CONST,__const  _MKDirectionsRequestFileExtension
+0x1e0fa50a0  __DATA_CONST,__const  _MKErrorDirectionsErrorInfoKey
+0x1ebebdd10  __DATA,__data  _MKErrorDomain
+0x1e0fa5088  __DATA_CONST,__const  _MKErrorGEOErrorKey
+0x1e0fa5098  __DATA_CONST,__const  _MKErrorGEOErrorUserInfoKey
+0x1e0fa5090  __DATA_CONST,__const  _MKErrorGEOTransitIncidentKey
+0x1a71f2eac  __TEXT,__text  _MKFormattedStringOptionsMakeDefault
+0x1a739604c  __TEXT,__text  _MKGetControlsShouldUseMapsAppSpecificNonStandardControlSizeResolution
+0x1a72b1b64  __TEXT,__text  _MKGetHasUserConsentedToAddingContributions
+0x1a71eeacc  __TEXT,__text  _MKGuidanceManeuverArrowMetricsApplyScale
+0x1a71eef60  __TEXT,__text  _MKGuidanceManeuverArrowMetricsApplyScaleForContent
+0x1a71f43e0  __TEXT,__text  _MKGuidanceManeuverArrowMetricsEqualToArrowMetrics
+0x1e0fa4670  __DATA_CONST,__const  _MKInfoCardIconFontGlyphStarFull
+0x1e0fa4678  __DATA_CONST,__const  _MKInfoCardIconFontGlyphStarLeftHalf
+0x1e0fa4680  __DATA_CONST,__const  _MKInfoCardIconFontGlyphStarRightHalf
+0x1a7250b48  __TEXT,__text  _MKIntegralCenterForView
+0x1a71c2b80  __TEXT,__text  _MKIntegralCenterForViewWithScale
+0x1a7250ad0  __TEXT,__text  _MKIntegralPoint
+0x1a731bd20  __TEXT,__text  _MKIsHostedInSiri
+0x1a73251b0  __TEXT,__text  _MKJunctionArrowImage
+0x1a7285a28  __TEXT,__text  _MKKeyForTransitArtwork
+0x1a72bcc58  __TEXT,__text  _MKLaneDirectionIsToTheLeft
+0x1e0fa5318  __DATA_CONST,__const  _MKLaunchOptionsAnalyticsActionKey
+0x1e0fa5320  __DATA_CONST,__const  _MKLaunchOptionsAnalyticsTargetKey
+0x1e0fa5328  __DATA_CONST,__const  _MKLaunchOptionsAnalyticsValueKey
+0x1e0fa52d0  __DATA_CONST,__const  _MKLaunchOptionsAutomobileOptionsKey
+0x1e0fa5258  __DATA_CONST,__const  _MKLaunchOptionsCameraAltitudeMultiplierKey
+0x1e0fa52f0  __DATA_CONST,__const  _MKLaunchOptionsCameraKey
+0x1e0fa5310  __DATA_CONST,__const  _MKLaunchOptionsConnectedToCarKey
+0x1e0fa51b8  __DATA_CONST,__const  _MKLaunchOptionsCurrentLocationPlacecardKey
+0x1e0fa52e8  __DATA_CONST,__const  _MKLaunchOptionsCyclingOptionsKey
+0x1e0fa52c0  __DATA_CONST,__const  _MKLaunchOptionsDirectionsModeCycling
+0x1e0fa5298  __DATA_CONST,__const  _MKLaunchOptionsDirectionsModeDefault
+0x1e0fa52a0  __DATA_CONST,__const  _MKLaunchOptionsDirectionsModeDriving
+0x1e0fa51c0  __DATA_CONST,__const  _MKLaunchOptionsDirectionsModeKey
+0x1e0fa52b8  __DATA_CONST,__const  _MKLaunchOptionsDirectionsModeRoutingApps
+0x1e0fa52b0  __DATA_CONST,__const  _MKLaunchOptionsDirectionsModeTransit
+0x1e0fa52a8  __DATA_CONST,__const  _MKLaunchOptionsDirectionsModeWalking
+0x1e0fa5228  __DATA_CONST,__const  _MKLaunchOptionsLaunchIntoNavDetailKey
+0x1e0fa5200  __DATA_CONST,__const  _MKLaunchOptionsLaunchIntoNavKey
+0x1e0fa5220  __DATA_CONST,__const  _MKLaunchOptionsLaunchIntoNavOverviewKey
+0x1e0fa5230  __DATA_CONST,__const  _MKLaunchOptionsLaunchIntoNavShareETAKey
+0x1e0fa5238  __DATA_CONST,__const  _MKLaunchOptionsLaunchIntoNavTraceKey
+0x1e0fa5240  __DATA_CONST,__const  _MKLaunchOptionsLaunchIntoNavTraceStartNavKey
+0x1e0fa5288  __DATA_CONST,__const  _MKLaunchOptionsLaunchIntoPhotoThumbnailGallery
+0x1e0fa5218  __DATA_CONST,__const  _MKLaunchOptionsLaunchIntoRAPKey
+0x1e0fa5208  __DATA_CONST,__const  _MKLaunchOptionsLaunchIntoRouteKey
+0x1e0fa5210  __DATA_CONST,__const  _MKLaunchOptionsLaunchIntoSearchHomeKey
+0x1e0fa51d8  __DATA_CONST,__const  _MKLaunchOptionsMapCenterKey
+0x1e0fa51f0  __DATA_CONST,__const  _MKLaunchOptionsMapRadiusInMetersKey
+0x1e0fa51e0  __DATA_CONST,__const  _MKLaunchOptionsMapSpanKey
+0x1e0fa51d0  __DATA_CONST,__const  _MKLaunchOptionsMapTypeKey
+0x1e0fa5290  __DATA_CONST,__const  _MKLaunchOptionsPhotoThumbnailGalleryAlbumIndex
+0x1e0fa52f8  __DATA_CONST,__const  _MKLaunchOptionsReferralIdentifierKey
+0x1e0fa51c8  __DATA_CONST,__const  _MKLaunchOptionsRouteHandleKey
+0x1e0fa51f8  __DATA_CONST,__const  _MKLaunchOptionsSearchTermsKey
+0x1e0fa5248  __DATA_CONST,__const  _MKLaunchOptionsSelectedIndexKey
+0x1e0fa51e8  __DATA_CONST,__const  _MKLaunchOptionsShowsTrafficKey
+0x1e0fa52c8  __DATA_CONST,__const  _MKLaunchOptionsTimePointKey
+0x1e0fa52d8  __DATA_CONST,__const  _MKLaunchOptionsTransitOptionsKey
+0x1e0fa5300  __DATA_CONST,__const  _MKLaunchOptionsURLKey
+0x1e0fa52e0  __DATA_CONST,__const  _MKLaunchOptionsWalkingOptionsKey
+0x1a73be9c4  __TEXT,__text  _MKLocalSearchMetricsStatusToKeypressStatus
+0x1a72e940c  __TEXT,__text  _MKLocalizedAbbreviationForCompassPoint
+0x1a71d1f9c  __TEXT,__text  _MKLocalizedAbbreviationForCompassPointNEWS
+0x1a72f71fc  __TEXT,__text  _MKLocalizedStringForApproximateLocation
+0x1a71cf4bc  __TEXT,__text  _MKLocalizedStringForCurrentLocation
+0x1a72f72ac  __TEXT,__text  _MKLocalizedStringForUnknownLocation
+0x1ebebdb28  __DATA,__data  _MKLocationErrorDomain
+0x1ebebb628  __DATA,__data  _MKLocationManagerApprovalDidChangeNotification
+0x1e0fa3078  __DATA_CONST,__const  _MKLocationManagerWiFiStatusDidChangeNotification
+0x1a744f988  __TEXT,__const  _MKLookAroundCompassTag
+0x1a744f980  __TEXT,__const  _MKLookAroundTTRButtonTag
+0x1e0fa24f0  __DATA_CONST,__const  _MKLookAroundViewDidBecomeAdequatelyDrawnNotification
+0x1e0fa24e8  __DATA_CONST,__const  _MKLookAroundViewDidBecomeFullyDrawnNotification
+0x1e0fa24f8  __DATA_CONST,__const  _MKLookAroundViewDidMoveToStorefrontNotification
+0x1e0fa2500  __DATA_CONST,__const  _MKLookAroundViewWillMoveToStorefrontNotification
+0x1a73242d0  __TEXT,__text  _MKManeuverArrowImage
+0x1a73249f0  __TEXT,__text  _MKManeuverArrowPaths
+0x1a744fa88  __TEXT,__const  _MKMapCameraZoomDefault
+0x1a729084c  __TEXT,__text  _MKMapItemIdentifierFromGEOPBTransitLine
+0x1a72907dc  __TEXT,__text  _MKMapItemIdentifierFromGEOTransitLine
+0x1a7290558  __TEXT,__text  _MKMapItemIdentifiersArrayFromGEOMapItemIdentifiersArray
+0x1a72906a0  __TEXT,__text  _MKMapItemIdentifiersArrayToGEOMapItemIdentifiersArray
+0x1a7290554  __TEXT,__text  _MKMapItemIdentifiersToGEOMapItemIdentifier
+0x1e0fa4048  __DATA_CONST,__const  _MKMapItemMetadataImageRequestErrorDomain
+0x1e0fa5348  __DATA_CONST,__const  _MKMapItemTypeIdentifier
+0x1a71da0b4  __TEXT,__text  _MKMapPointForCoordinate
+0x1a73a9374  __TEXT,__text  _MKMapPointsPerMeterAtLatitude
+0x1a73a9d40  __TEXT,__text  _MKMapRectBoundingMapPoints
+0x1a73a9dbc  __TEXT,__text  _MKMapRectBoundingMapPointsWrappingMeridian
+0x1a71c3b2c  __TEXT,__text  _MKMapRectContainsPoint
+0x1a71d8e14  __TEXT,__text  _MKMapRectContainsRect
+0x1a73a9574  __TEXT,__text  _MKMapRectContainsRectWrappingMeridian
+0x1a73a9404  __TEXT,__text  _MKMapRectDivide
+0x1a73a9318  __TEXT,__text  _MKMapRectForCoordinateRegion
+0x1a73a9398  __TEXT,__text  _MKMapRectInset
+0x1a71d8b2c  __TEXT,__text  _MKMapRectIntersection
+0x1a73a9874  __TEXT,__text  _MKMapRectIntersectsMapRectWrappingMeridian
+0x1a71d8d9c  __TEXT,__text  _MKMapRectIntersectsRect
+0x1a71da0bc  __TEXT,__text  _MKMapRectMakeWithRadialDistance
+0x1a7222320  __TEXT,__text  _MKMapRectMakeWithZoomLevel
+0x1a744fb50  __TEXT,__const  _MKMapRectNull
+0x1a73a93d4  __TEXT,__text  _MKMapRectOffset
+0x1a73a9514  __TEXT,__text  _MKMapRectRemainder
+0x1a73a94d0  __TEXT,__text  _MKMapRectSpans180thMeridian
+0x1a71daf40  __TEXT,__text  _MKMapRectUnion
+0x1a73a9b88  __TEXT,__text  _MKMapRectUnionWrappingMeridian
+0x1a744fb20  __TEXT,__const  _MKMapRectWorld
+0x1a744fb40  __TEXT,__const  _MKMapSizeWorld
+0x1e0fa2708  __DATA_CONST,__const  _MKMapViewCanEnter3DDidChangeNotification
+0x1e0fa2718  __DATA_CONST,__const  _MKMapViewDefaultAnnotationViewReuseIdentifier
+0x1e0fa2720  __DATA_CONST,__const  _MKMapViewDefaultClusterAnnotationViewReuseIdentifier
+0x1e0fa2728  __DATA_CONST,__const  _MKMapViewDidChangeLookAroundAvailabilityNotification
+0x1e0fa26c0  __DATA_CONST,__const  _MKMapViewDidFinishInitialRenderNotification
+0x1e0fa26c8  __DATA_CONST,__const  _MKMapViewDidFinishInitialUserTrackingModeAnimationNotification
+0x1e0fa26f0  __DATA_CONST,__const  _MKMapViewDidUpdatePitchDegreesKey
+0x1e0fa26f8  __DATA_CONST,__const  _MKMapViewDidUpdatePitchEnabledKey
+0x1e0fa26e8  __DATA_CONST,__const  _MKMapViewDidUpdatePitchNotification
+0x1e0fa26d8  __DATA_CONST,__const  _MKMapViewDidUpdateYawDegreesKey
+0x1e0fa26d0  __DATA_CONST,__const  _MKMapViewDidUpdateYawNotification
+0x1e0fa26e0  __DATA_CONST,__const  _MKMapViewDidUpdateYawVisibleKey
+0x1e0fa2700  __DATA_CONST,__const  _MKMapViewPitchStateDidChangeNotification
+0x1e0fa2710  __DATA_CONST,__const  _MKMapViewShouldUpdateScaleNotification
+0x1e0fa5d28  __DATA_CONST,__const  _MKMenuSeperatorIdentifier
+0x1a71d9f98  __TEXT,__text  _MKMetersBetweenMapPoints
+0x1a73a9378  __TEXT,__text  _MKMetersPerMapPointAtLatitude
+0x1a7250a38  __TEXT,__text  _MKNormalizedPointForLayer
+0x1e0fa47c0  __DATA_CONST,__const  _MKPlaceActionManagerBrandStoresEnableNotification
+0x1e0fa47c8  __DATA_CONST,__const  _MKPlaceActionManagerCNLabeledValueKey
+0x1e0fa47f0  __DATA_CONST,__const  _MKPlaceActionManagerIsActionBar
+0x1e0fa47f8  __DATA_CONST,__const  _MKPlaceActionManagerIsActionBarMoreMenu
+0x1e0fa47e0  __DATA_CONST,__const  _MKPlaceActionManagerIsQuickAction
+0x1e0fa47e8  __DATA_CONST,__const  _MKPlaceActionManagerModuleMetadataKey
+0x1e0fa47d8  __DATA_CONST,__const  _MKPlaceActionManagerSourceItemKey
+0x1e0fa47d0  __DATA_CONST,__const  _MKPlaceActionManagerSourceViewKey
+0x1a7347e64  __TEXT,__text  _MKPlaceCardActionTypeAsString
+0x1a728674c  __TEXT,__text  _MKPlaceHorizontalPlatterMargin
+0x1a734cbec  __TEXT,__text  _MKPlaceItemOptionsAsString
+0x1e0fa4fe0  __DATA_CONST,__const  _MKPlacePhotosViewControllerDidDisplayPhotosNotification
+0x1e0fa4fd8  __DATA_CONST,__const  _MKPlacePhotosViewControllerWillDisplayPhotosNotification
+0x1e0fa35d8  __DATA_CONST,__const  _MKPlaceViewControllerDidShowNotification
+0x1ebec4230  __DATA,__common  _MKPlaceViewControllerOptionsContextCompact
+0x1ebec4228  __DATA,__common  _MKPlaceViewControllerOptionsContextDefault
+0x1ebebbd60  __DATA,__data  _MKPlaceViewControllerOptionsContextEmbedded
+0x1ebebbd58  __DATA,__data  _MKPlaceViewControllerOptionsContextMapsApp
+0x1e0fa3c70  __DATA_CONST,__const  _MKPointOfInterestCategoryATM
+0x1e0fa3c48  __DATA_CONST,__const  _MKPointOfInterestCategoryAirport
+0x1e0fa3c50  __DATA_CONST,__const  _MKPointOfInterestCategoryAirportTerminal
+0x1e0fa3c58  __DATA_CONST,__const  _MKPointOfInterestCategoryAmusementPark
+0x1e0fa3c60  __DATA_CONST,__const  _MKPointOfInterestCategoryAnimalService
+0x1e0fa3c68  __DATA_CONST,__const  _MKPointOfInterestCategoryAquarium
+0x1e0fa3c78  __DATA_CONST,__const  _MKPointOfInterestCategoryAutomotiveDealership
+0x1e0fa3c80  __DATA_CONST,__const  _MKPointOfInterestCategoryAutomotiveRepair
+0x1e0fa3c88  __DATA_CONST,__const  _MKPointOfInterestCategoryBakery
+0x1e0fa3c90  __DATA_CONST,__const  _MKPointOfInterestCategoryBank
+0x1e0fa3c98  __DATA_CONST,__const  _MKPointOfInterestCategoryBaseball
+0x1e0fa3ca0  __DATA_CONST,__const  _MKPointOfInterestCategoryBasketball
+0x1e0fa3ca8  __DATA_CONST,__const  _MKPointOfInterestCategoryBeach
+0x1e0fa3cb0  __DATA_CONST,__const  _MKPointOfInterestCategoryBeauty
+0x1e0fa3cb8  __DATA_CONST,__const  _MKPointOfInterestCategoryBowling
+0x1e0fa3cc0  __DATA_CONST,__const  _MKPointOfInterestCategoryBrewery
+0x1e0fa3cc8  __DATA_CONST,__const  _MKPointOfInterestCategoryCafe
+0x1e0fa3cd0  __DATA_CONST,__const  _MKPointOfInterestCategoryCampground
+0x1e0fa3cd8  __DATA_CONST,__const  _MKPointOfInterestCategoryCarRental
+0x1e0fa3ce0  __DATA_CONST,__const  _MKPointOfInterestCategoryCastle
+0x1e0fa3ce8  __DATA_CONST,__const  _MKPointOfInterestCategoryCommercialVehicleDealership
+0x1e0fa3cf0  __DATA_CONST,__const  _MKPointOfInterestCategoryConventionCenter
+0x1e0fa3cf8  __DATA_CONST,__const  _MKPointOfInterestCategoryDistillery
+0x1e0fa3d00  __DATA_CONST,__const  _MKPointOfInterestCategoryEVCharger
+0x1e0fa3d08  __DATA_CONST,__const  _MKPointOfInterestCategoryFairground
+0x1e0fa3d10  __DATA_CONST,__const  _MKPointOfInterestCategoryFireStation
+0x1e0fa3d18  __DATA_CONST,__const  _MKPointOfInterestCategoryFishing
+0x1e0fa3d20  __DATA_CONST,__const  _MKPointOfInterestCategoryFitnessCenter
+0x1e0fa3d28  __DATA_CONST,__const  _MKPointOfInterestCategoryFoodMarket
+0x1e0fa3d30  __DATA_CONST,__const  _MKPointOfInterestCategoryFortress
+0x1e0fa3d38  __DATA_CONST,__const  _MKPointOfInterestCategoryGasStation
+0x1e0fa3d48  __DATA_CONST,__const  _MKPointOfInterestCategoryGoKart
+0x1e0fa3d40  __DATA_CONST,__const  _MKPointOfInterestCategoryGolf
+0x1e0fa3d50  __DATA_CONST,__const  _MKPointOfInterestCategoryHiking
+0x1e0fa3d58  __DATA_CONST,__const  _MKPointOfInterestCategoryHospital
+0x1e0fa3d60  __DATA_CONST,__const  _MKPointOfInterestCategoryHotel
+0x1e0fa3d68  __DATA_CONST,__const  _MKPointOfInterestCategoryInformationBooth
+0x1e0fa3d70  __DATA_CONST,__const  _MKPointOfInterestCategoryKayaking
+0x1e0fa3d78  __DATA_CONST,__const  _MKPointOfInterestCategoryLandmark
+0x1e0fa3d80  __DATA_CONST,__const  _MKPointOfInterestCategoryLaundry
+0x1e0fa3d88  __DATA_CONST,__const  _MKPointOfInterestCategoryLibrary
+0x1e0fa3d90  __DATA_CONST,__const  _MKPointOfInterestCategoryMailbox
+0x1e0fa3d98  __DATA_CONST,__const  _MKPointOfInterestCategoryMarina
+0x1e0fa3da0  __DATA_CONST,__const  _MKPointOfInterestCategoryMiniGolf
+0x1e0fa3da8  __DATA_CONST,__const  _MKPointOfInterestCategoryMotorbikeDealership
+0x1e0fa3db0  __DATA_CONST,__const  _MKPointOfInterestCategoryMovieTheater
+0x1e0fa3db8  __DATA_CONST,__const  _MKPointOfInterestCategoryMuseum
+0x1e0fa3dc0  __DATA_CONST,__const  _MKPointOfInterestCategoryMusicVenue
+0x1e0fa3dc8  __DATA_CONST,__const  _MKPointOfInterestCategoryNationalMonument
+0x1e0fa3dd0  __DATA_CONST,__const  _MKPointOfInterestCategoryNationalPark
+0x1e0fa3dd8  __DATA_CONST,__const  _MKPointOfInterestCategoryNightlife
+0x1e0fa3de0  __DATA_CONST,__const  _MKPointOfInterestCategoryPark
+0x1e0fa3de8  __DATA_CONST,__const  _MKPointOfInterestCategoryParking
+0x1e0fa3df0  __DATA_CONST,__const  _MKPointOfInterestCategoryPharmacy
+0x1e0fa3df8  __DATA_CONST,__const  _MKPointOfInterestCategoryPicnicArea
+0x1e0fa3e00  __DATA_CONST,__const  _MKPointOfInterestCategoryPlanetarium
+0x1e0fa3e08  __DATA_CONST,__const  _MKPointOfInterestCategoryPlayground
+0x1e0fa3e10  __DATA_CONST,__const  _MKPointOfInterestCategoryPolice
+0x1e0fa3e18  __DATA_CONST,__const  _MKPointOfInterestCategoryPostOffice
+0x1e0fa3e20  __DATA_CONST,__const  _MKPointOfInterestCategoryPublicTransport
+0x1e0fa3e58  __DATA_CONST,__const  _MKPointOfInterestCategoryRVPark
+0x1e0fa3e28  __DATA_CONST,__const  _MKPointOfInterestCategoryRangerStation
+0x1e0fa3e30  __DATA_CONST,__const  _MKPointOfInterestCategoryReligiousSite
+0x1e0fa3e38  __DATA_CONST,__const  _MKPointOfInterestCategoryRestArea
+0x1e0fa3e40  __DATA_CONST,__const  _MKPointOfInterestCategoryRestaurant
+0x1e0fa3e48  __DATA_CONST,__const  _MKPointOfInterestCategoryRestroom
+0x1e0fa3e50  __DATA_CONST,__const  _MKPointOfInterestCategoryRockClimbing
+0x1e0fa3e60  __DATA_CONST,__const  _MKPointOfInterestCategoryScenicView
+0x1e0fa3e68  __DATA_CONST,__const  _MKPointOfInterestCategorySchool
+0x1e0fa3e70  __DATA_CONST,__const  _MKPointOfInterestCategorySkatePark
+0x1e0fa3e78  __DATA_CONST,__const  _MKPointOfInterestCategorySkating
+0x1e0fa3e80  __DATA_CONST,__const  _MKPointOfInterestCategorySkiing
+0x1e0fa3e88  __DATA_CONST,__const  _MKPointOfInterestCategorySoccer
+0x1e0fa3e90  __DATA_CONST,__const  _MKPointOfInterestCategorySpa
+0x1e0fa3e98  __DATA_CONST,__const  _MKPointOfInterestCategoryStadium
+0x1e0fa3ea0  __DATA_CONST,__const  _MKPointOfInterestCategoryStore
+0x1e0fa3ea8  __DATA_CONST,__const  _MKPointOfInterestCategorySurfing
+0x1e0fa3eb0  __DATA_CONST,__const  _MKPointOfInterestCategorySwimming
+0x1e0fa3eb8  __DATA_CONST,__const  _MKPointOfInterestCategoryTennis
+0x1e0fa3ec0  __DATA_CONST,__const  _MKPointOfInterestCategoryTheater
+0x1e0fa3ec8  __DATA_CONST,__const  _MKPointOfInterestCategoryTicketOffice
+0x1e0fa3ed0  __DATA_CONST,__const  _MKPointOfInterestCategoryUniversity
+0x1e0fa3ed8  __DATA_CONST,__const  _MKPointOfInterestCategoryVisitorCenter
+0x1e0fa3ee0  __DATA_CONST,__const  _MKPointOfInterestCategoryVolleyball
+0x1e0fa3ee8  __DATA_CONST,__const  _MKPointOfInterestCategoryWinery
+0x1e0fa3ef0  __DATA_CONST,__const  _MKPointOfInterestCategoryZoo
+0x1a744fad8  __TEXT,__const  _MKPointsOfInterestRequestMaxRadius
+0x1a744f9f8  __TEXT,__const  _MKPopoverBackgroundArrowHeight
+0x1a744fa08  __TEXT,__const  _MKPopoverBackgroundArrowPointFactor
+0x1a744f9f0  __TEXT,__const  _MKPopoverBackgroundArrowRootBase
+0x1a744fa00  __TEXT,__const  _MKPopoverBackgroundArrowSmoothing
+0x1a744fa20  __TEXT,__const  _MKPopoverBackgroundCornerRadius
+0x1a744fa38  __TEXT,__const  _MKPopoverBackgroundMainImageBotCapInset
+0x1a744fa28  __TEXT,__const  _MKPopoverBackgroundMainImageHorizCapInset
+0x1a744fa30  __TEXT,__const  _MKPopoverBackgroundMainImageTopCapInset
+0x1a744fa48  __TEXT,__const  _MKPopoverControllerCalloutExpandDuration
+0x1a744fa40  __TEXT,__const  _MKPopoverControllerCalloutSlideDuration
+0x1a744fa50  __TEXT,__const  _MKPopoverLayoutAnimationDuration
+0x1a744f9d8  __TEXT,__const  _MKPopoverMargin
+0x1a744f9e8  __TEXT,__const  _MKPopoverSmallCalloutCornerRadius
+0x1a744fa18  __TEXT,__const  _MKPopoverSmallCalloutDeviceIndependentMaxWidth
+0x1a744f9e0  __TEXT,__const  _MKPopoverSmallCalloutHeight
+0x1a744fa10  __TEXT,__const  _MKPopoverSmallCalloutMinWidth
+0x1e0fa5b80  __DATA_CONST,__const  _MKRemoteUICompactAccessoryPlaceCardSceneID
+0x1e0fa5b78  __DATA_CONST,__const  _MKRemoteUIFullAccessoryPlaceCardSceneID
+0x1e0fa5b88  __DATA_CONST,__const  _MKRemoteUIStandAlonePlaceCardSceneID
+0x1a739b5a4  __TEXT,__text  _MKRoadWidthAtZoomScale
+0x1e0fa4050  __DATA_CONST,__const  _MKServerFormattedStringArtworkAlphaAttributeKey
+0x1e0fa40a0  __DATA_CONST,__const  _MKServerFormattedStringArtworkArrivalIconImageKey
+0x1e0fa4090  __DATA_CONST,__const  _MKServerFormattedStringArtworkArrowFillColorAttributeKey
+0x1e0fa4070  __DATA_CONST,__const  _MKServerFormattedStringArtworkFeatureTypeAttributeKey
+0x1e0fa4098  __DATA_CONST,__const  _MKServerFormattedStringArtworkJunctionFillColorAttributeKey
+0x1e0fa4078  __DATA_CONST,__const  _MKServerFormattedStringArtworkLimitToFontAscenderAttributeKey
+0x1e0fa4088  __DATA_CONST,__const  _MKServerFormattedStringArtworkLimitToLineHeightAttributeKey
+0x1e0fa4080  __DATA_CONST,__const  _MKServerFormattedStringArtworkMatchLineHeightAttributeKey
+0x1e0fa40b0  __DATA_CONST,__const  _MKServerFormattedStringArtworkSFSymbolScaleAttributeKey
+0x1e0fa40a8  __DATA_CONST,__const  _MKServerFormattedStringArtworkSFSymbolStyleAttributeKey
+0x1e0fa4060  __DATA_CONST,__const  _MKServerFormattedStringArtworkScaleAttributeKey
+0x1e0fa4068  __DATA_CONST,__const  _MKServerFormattedStringArtworkSideLengthAttributeKey
+0x1e0fa4058  __DATA_CONST,__const  _MKServerFormattedStringArtworkSizeAttributeKey
+0x1a72c57f0  __TEXT,__text  _MKServiceGapDescription
+0x1a7396040  __TEXT,__text  _MKSetControlsShouldUseMapsAppSpecificNonStandardControlSizeResolution
+0x1a72b1b74  __TEXT,__text  _MKSetHasUserConsentedToAddingContributions
+0x1a7250c14  __TEXT,__text  _MKSetLayoutPriorityOnConstraints
+0x1a744f9c8  __TEXT,__const  _MKStandardMapEmphasisStyleWeatherStandard
+0x1a744f9d0  __TEXT,__const  _MKStandardMapEmphasisStyleWeatherWind
+0x1e0fa8778  __DATA_CONST,__const  _MKStringAttributedFormatErrorDomain
+0x1e0fa8788  __DATA_CONST,__const  _MKStringAttributedFormatErrorMissingTokenKey
+0x1e0fa8780  __DATA_CONST,__const  _MKStringAttributedFormatErrorReplacementTokensKey
+0x1e0fa8790  __DATA_CONST,__const  _MKStringAttributedFormatErrorUnterminatedTokenStartLocationKey
+0x1a71c0f98  __TEXT,__text  _MKTilePointForCoordinate
+0x1a73c355c  __TEXT,__text  _MKTransitArtworkDataSourceAllowMasking
+0x1a744f9b8  __TEXT,__const  _MKTransitArtworkIncidentBadgeBottomOffset
+0x1a744f9b0  __TEXT,__const  _MKTransitArtworkIncidentBadgeTrailingOffset
+0x1a732c71c  __TEXT,__text  _MKTransitIncidentIcon
+0x1a744f9a0  __TEXT,__const  _MKTransitInfoLabelViewDefaultSpaceBetweenShields
+0x1a744f998  __TEXT,__const  _MKTransitInfoLabelViewNoMaxWidth
+0x1a73ac998  __TEXT,__text  _MKTransitLiveDepartureColorForLiveStatus
+0x1a73ac9e8  __TEXT,__text  _MKTransitLiveDepartureColorForViewWithLiveStatus
+0x1e0fa5350  __DATA_CONST,__const  _MKURLDestinationAddressKey
+0x1e0fa5368  __DATA_CONST,__const  _MKURLDestinationLabelKey
+0x1e0fa5358  __DATA_CONST,__const  _MKURLDestinationMUIDKey
+0x1e0fa5360  __DATA_CONST,__const  _MKURLDestinationProviderIDKey
+0x1e0fa3fa0  __DATA_CONST,__const  _MKUserTrackingViewDidResetUserLocationNotification
+0x1e0fa3f98  __DATA_CONST,__const  _MKUserTrackingViewDidUpdateUserLocationNotification
+0x1e0fa3f90  __DATA_CONST,__const  _MKUserTrackingViewModeDidChangeNotification
+0x1a73a9320  __TEXT,__text  _MKZoomLevelForScaleF
+0x1a73a934c  __TEXT,__text  _MKZoomScaleForZoomLevelF
+0x1e0fa6740  __DATA_CONST,__const  _MapKitConfig_AppStorePunchOutEnabled
+0x1e0fa6b10  __DATA_CONST,__const  _MapKitConfig_AuthorizationStatusWaitingHeartbeat
+0x1e0fa6650  __DATA_CONST,__const  _MapKitConfig_AutocompleteMinResponseTimeOverride
+0x1e0fa6b00  __DATA_CONST,__const  _MapKitConfig_AvoidSynchronousLocationAuthQuery
+0x1e0fa6720  __DATA_CONST,__const  _MapKitConfig_CaptureMapViewGestureAnalyticsMemThreshold
+0x1e0fa66e0  __DATA_CONST,__const  _MapKitConfig_DebugConsoleGestureEnabled
+0x1e0fa6940  __DATA_CONST,__const  _MapKitConfig_Debug_AllowOverridingPhotoSlideshowCounts
+0x1e0fa6900  __DATA_CONST,__const  _MapKitConfig_Debug_ModernMapControlsEnabled
+0x1e0fa6950  __DATA_CONST,__const  _MapKitConfig_Debug_PhotoSlideshowOverrideCount
+0x1e0fa6610  __DATA_CONST,__const  _MapKitConfig_DirectionsAllowMultipleTransportTypes
+0x1e0fa6760  __DATA_CONST,__const  _MapKitConfig_DirectionsButtonCloseWalkTravelTime
+0x1e0fa6790  __DATA_CONST,__const  _MapKitConfig_DirectionsButtonMaxDistanceToRequestETA
+0x1e0fa6780  __DATA_CONST,__const  _MapKitConfig_DirectionsButtonMaxWalkingDistance
+0x1e0fa6750  __DATA_CONST,__const  _MapKitConfig_DirectionsButtonStaleDistance
+0x1e0fa6770  __DATA_CONST,__const  _MapKitConfig_DirectionsButtonStaleTimeInterval
+0x1e0fa6620  __DATA_CONST,__const  _MapKitConfig_DirectionsShouldOverrideRouteOptionsSupported
+0x1e0fa69e0  __DATA_CONST,__const  _MapKitConfig_DisableTransitReferenceDateUpdater
+0x1e0fa6a50  __DATA_CONST,__const  _MapKitConfig_EnableAddPhotoCallToActionsOnPlaceCardPhotoGalleries
+0x1e0fa69d0  __DATA_CONST,__const  _MapKitConfig_EnableNewTransitStationCardUI
+0x1e0fa6a10  __DATA_CONST,__const  _MapKitConfig_EnableSPRForAllRouteLineOverlays
+0x1e0fa65f0  __DATA_CONST,__const  _MapKitConfig_ExtensionBlacklist
+0x1e0fa6600  __DATA_CONST,__const  _MapKitConfig_ExtensionContainingApplicationsBlacklist
+0x1e0fa6930  __DATA_CONST,__const  _MapKitConfig_FakeLinkedOnRelease_DEBUG
+0x1e0fa68c0  __DATA_CONST,__const  _MapKitConfig_Faux3DPuckEnabled
+0x1e0fa6a30  __DATA_CONST,__const  _MapKitConfig_ForceElevatedTerrainForStandardMap
+0x1e0fa6a20  __DATA_CONST,__const  _MapKitConfig_ForceGlobeProjectionForStandardMap
+0x1a7388444  __TEXT,__text  _MapKitConfig_GetConfigStoreStringKeysForWatchSync
+0x1a7388438  __TEXT,__text  _MapKitConfig_GetUserDefaultStringKeysForWatchSync
+0x1e0fa6a60  __DATA_CONST,__const  _MapKitConfig_HTMLRenderedWebModuleShowsLoadingIndicator
+0x1e0fa6a40  __DATA_CONST,__const  _MapKitConfig_HTMLRenderedWebModulesDefaultHeight
+0x1e0fa6a70  __DATA_CONST,__const  _MapKitConfig_HTMLRenderedWebModulesShowCTAOverlay
+0x1e0fa6640  __DATA_CONST,__const  _MapKitConfig_IconManagerUseDiskCache
+0x1e0fa6b20  __DATA_CONST,__const  _MapKitConfig_LinkPreviewSearchDefaultSpanDelta
+0x1e0fa6710  __DATA_CONST,__const  _MapKitConfig_LocallySplitGEOServerFormattedString
+0x1e0fa6660  __DATA_CONST,__const  _MapKitConfig_LocationManagerAssumeAccurateLocations
+0x1e0fa6670  __DATA_CONST,__const  _MapKitConfig_LocationManagerSingleUpdaterDefaultTimeout
+0x1e0fa6a90  __DATA_CONST,__const  _MapKitConfig_LookAroundTransitionsInterval
+0x1e0fa6a80  __DATA_CONST,__const  _MapKitConfig_LookAroundTransitionsUseSpringWithDampingAnimationStyle
+0x1e0fa6970  __DATA_CONST,__const  _MapKitConfig_MKCollectionCoverPhotoCacheDiskCapacity
+0x1e0fa6960  __DATA_CONST,__const  _MapKitConfig_MKCollectionCoverPhotoCacheMemoryCapacity
+0x1e0fa6920  __DATA_CONST,__const  _MapKitConfig_MKHasUserGivenInformedConsentToAddContributions
+0x1e0fa6580  __DATA_CONST,__const  _MapKitConfig_MKLocalSearchCompleter_MaxConcurrentRequests
+0x1e0fa6910  __DATA_CONST,__const  _MapKitConfig_MKLocalSearchMaxResultsCountDefault
+0x1e0fa69a0  __DATA_CONST,__const  _MapKitConfig_MKUseNewPlacecardUI
+0x1e0fa69c0  __DATA_CONST,__const  _MapKitConfig_MKUseSerializedMapItemStorage
+0x1e0fa6b60  __DATA_CONST,__const  _MapKitConfig_MKVisitedPlacesContainerPhotoCacheDiskCapacity
+0x1e0fa6b50  __DATA_CONST,__const  _MapKitConfig_MKVisitedPlacesContainerPhotoCacheMemoryCapacity
+0x1e0fa6980  __DATA_CONST,__const  _MapKitConfig_MKWebContentDefaultHeight
+0x1e0fa6990  __DATA_CONST,__const  _MapKitConfig_MKWebContentMaxHeight
+0x1e0fa6aa0  __DATA_CONST,__const  _MapKitConfig_MapItemURLExtraStorageEnabled
+0x1e0fa6b40  __DATA_CONST,__const  _MapKitConfig_MapItemUniversalLinksEnabled
+0x1e0fa6520  __DATA_CONST,__const  _MapKitConfig_MapTextSize
+0x1e0fa66f0  __DATA_CONST,__const  _MapKitConfig_MapViewProcessShouldForceManifestUpdate
+0x1e0fa6700  __DATA_CONST,__const  _MapKitConfig_MapsLaunchShouldForceManifestUpdate
+0x1e0fa67e0  __DATA_CONST,__const  _MapKitConfig_MapsSuggestionsPredictorConnectionLeewayInSecondsKey
+0x1e0fa67f0  __DATA_CONST,__const  _MapKitConfig_MapsSuggestionsPredictorConnectionTimeoutInSecondsKey
+0x1e0fa67b0  __DATA_CONST,__const  _MapKitConfig_MapsSuggestionsShouldUseFeelerPipelineTransportModePredictionKey
+0x1e0fa67c0  __DATA_CONST,__const  _MapKitConfig_MapsSuggestionsTransportModePredictionTimeoutKey
+0x1e0fa67d0  __DATA_CONST,__const  _MapKitConfig_MapsSuggestionsTransportationModeDebugPanelSettingKey
+0x1e0fa6730  __DATA_CONST,__const  _MapKitConfig_MaxUncertaintyAngleToShowArrow
+0x1e0fa6860  __DATA_CONST,__const  _MapKitConfig_MinimumDistanceBetweenAppleLogoAndLegalLinkToShowAppleLogo
+0x1e0fa6870  __DATA_CONST,__const  _MapKitConfig_MinimumMapViewSizeToShowAppleLogoHeight
+0x1e0fa6850  __DATA_CONST,__const  _MapKitConfig_MinimumMapViewSizeToShowControlsHeight
+0x1e0fa6840  __DATA_CONST,__const  _MapKitConfig_MinimumMapViewSizeToShowControlsWidth
+0x1e0fa6830  __DATA_CONST,__const  _MapKitConfig_MinimumSnapshotSizeToShowAppleLogoHeight
+0x1e0fa6820  __DATA_CONST,__const  _MapKitConfig_MinimumSnapshotSizeToShowAppleLogoWidth
+0x1e0fa6ab0  __DATA_CONST,__const  _MapKitConfig_ModernAppleLogo
+0x1e0fa68b0  __DATA_CONST,__const  _MapKitConfig_NewPuckEnabled
+0x1e0fa6ae0  __DATA_CONST,__const  _MapKitConfig_OverlayForceSPRGlobe
+0x1e0fa69f0  __DATA_CONST,__const  _MapKitConfig_PhotoAttributionProviderNameForApple
+0x1e0fa6a00  __DATA_CONST,__const  _MapKitConfig_PhotoAttributionProviderNameForAppleBusinessRegister
+0x1e0fa6ac0  __DATA_CONST,__const  _MapKitConfig_PitchButton3DMinimumZoomLevel
+0x1e0fa65a0  __DATA_CONST,__const  _MapKitConfig_PlaceCardCustomLayout
+0x1e0fa68a0  __DATA_CONST,__const  _MapKitConfig_PlaceCardShouldShowPhotoGalleryInParsec
+0x1e0fa6890  __DATA_CONST,__const  _MapKitConfig_PlaceCardShouldShowPhotoGalleryInSiri
+0x1e0fa6590  __DATA_CONST,__const  _MapKitConfig_PlaceLayoutDebugEnabled
+0x1e0fa65b0  __DATA_CONST,__const  _MapKitConfig_PlaceLayoutLogEnabled
+0x1e0fa65c0  __DATA_CONST,__const  _MapKitConfig_PlaceShowGEOID
+0x1e0fa68d0  __DATA_CONST,__const  _MapKitConfig_PuckUsesRawLocation
+0x1e0fa6ad0  __DATA_CONST,__const  _MapKitConfig_RAPFlowReportSomethingMissing
+0x1e0fa6880  __DATA_CONST,__const  _MapKitConfig_RAPForceOverrideServerConfig
+0x1e0fa6810  __DATA_CONST,__const  _MapKitConfig_RAPForceShowSuggestAnEditButton
+0x1e0fa67a0  __DATA_CONST,__const  _MapKitConfig_ReportAProblemIsDisabled
+0x1e0fa65d0  __DATA_CONST,__const  _MapKitConfig_RideBookingShouldAutomaticallyEnableExtensions
+0x1e0fa6550  __DATA_CONST,__const  _MapKitConfig_SearchCompleteReplaceInterval
+0x1e0fa6540  __DATA_CONST,__const  _MapKitConfig_SearchCompleteRequestInterval
+0x1e0fa6530  __DATA_CONST,__const  _MapKitConfig_SearchCompleteRequestIntervalCellular
+0x1e0fa6560  __DATA_CONST,__const  _MapKitConfig_SharesheetShortURLRequestInterval
+0x1e0fa6570  __DATA_CONST,__const  _MapKitConfig_ShortURLPunchInRequestInterval
+0x1e0fa6b30  __DATA_CONST,__const  _MapKitConfig_ShortURLTransformationEnabled
+0x1e0fa66a0  __DATA_CONST,__const  _MapKitConfig_SnapshotServiceEnabled
+0x1e0fa66c0  __DATA_CONST,__const  _MapKitConfig_SnapshotServiceMaxPixels
+0x1e0fa66d0  __DATA_CONST,__const  _MapKitConfig_SnapshotServicePerProcessSerializationEnabled
+0x1e0fa66b0  __DATA_CONST,__const  _MapKitConfig_SnapshotServiceQueueWidth
+0x1e0fa6690  __DATA_CONST,__const  _MapKitConfig_SnapshotterNumberOfRequestsAllowedPerThrottle
+0x1e0fa6680  __DATA_CONST,__const  _MapKitConfig_SnapshotterThrottleResetInterval
+0x1e0fa6630  __DATA_CONST,__const  _MapKitConfig_SpotlightShouldUseStyleAttributes
+0x1e0fa6b70  __DATA_CONST,__const  _MapKitConfig_UseCLBodyForHeadingCalculation
+0x1e0fa69b0  __DATA_CONST,__const  _MapKitConfig_UserConsentState
+0x1e0fa68e0  __DATA_CONST,__const  _MapKitConfig_UserLocation_MinAccuracyRadius
+0x1e0fa68f0  __DATA_CONST,__const  _MapKitConfig_UserLocation_MinAccuracyUncertainty
+0x1e0fa6af0  __DATA_CONST,__const  _MapKitConfig_VectorKitDebugConsoleEnabled
+0x1e0fa6800  __DATA_CONST,__const  _MapKitConfig_WebContentURLBlockingPattern
+0x1e0fa65e0  __DATA_CONST,__const  _MapKitConfig__deprecated_RideBookingExtensionsAppBundleIdentifiers
+0x1a71d482c  __TEXT,__text  _MapKitIdiomIsMacCatalyst
+0x1e0fa85b8  __DATA_CONST,__const  _MapsButtonETAUpdatedNotification
+0x1e0fa5fc0  __DATA_CONST,__const  _MapsExtensionCapabilities
+0x1a72bb7c0  __TEXT,__text  _NSDataFromCLLocationCoordinates
+0x1ef7bed48  __AUTH,__objc_data  _OBJC_CLASS_$_MKAddress
+0x1ef7bb9b8  __AUTH,__objc_data  _OBJC_CLASS_$_MKAddressFilter
+0x1ef7bd2e0  __AUTH,__objc_data  _OBJC_CLASS_$_MKAddressRepresentations
+0x1ef7bf8d8  __AUTH,__objc_data  _OBJC_CLASS_$_MKAnnotatedMapSnapshotter
+0x1ee2351b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKAnnotationView
+0x1ef7bed20  __AUTH,__objc_data  _OBJC_CLASS_$_MKAppImageManager
+0x1ef7bb968  __AUTH,__objc_data  _OBJC_CLASS_$_MKAppLaunchController
+0x1ef7bb918  __AUTH,__objc_data  _OBJC_CLASS_$_MKAppleMediaServices
+0x1ee234268  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKApplicationStateMonitor
+0x1ef7bd2b8  __AUTH,__objc_data  _OBJC_CLASS_$_MKArtworkDataSourceCache
+0x1ef7bd290  __AUTH,__objc_data  _OBJC_CLASS_$_MKArtworkImageView
+0x1ef7bd268  __AUTH,__objc_data  _OBJC_CLASS_$_MKArtworkLabelView
+0x1ef7bd240  __AUTH,__objc_data  _OBJC_CLASS_$_MKAutocompleteAnalyticsProvider
+0x1ef7becf8  __AUTH,__objc_data  _OBJC_CLASS_$_MKCalloutView
+0x1ef7bb8c8  __AUTH,__objc_data  _OBJC_CLASS_$_MKCatalystButton
+0x1ef7bd1f0  __AUTH,__objc_data  _OBJC_CLASS_$_MKCircle
+0x1ef7bb8a0  __AUTH,__objc_data  _OBJC_CLASS_$_MKCircleRenderer
+0x1ef7bb878  __AUTH,__objc_data  _OBJC_CLASS_$_MKCircleView
+0x1ef7bd1c8  __AUTH,__objc_data  _OBJC_CLASS_$_MKClipServices
+0x1ee233548  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKClusterAnnotation
+0x1ef7bd1a0  __AUTH,__objc_data  _OBJC_CLASS_$_MKCollectionBatchCell
+0x1ef7bb850  __AUTH,__objc_data  _OBJC_CLASS_$_MKCollectionStorageRefiner
+0x1ef7bd178  __AUTH,__objc_data  _OBJC_CLASS_$_MKCollectionsCarouselView
+0x1ef7bb800  __AUTH,__objc_data  _OBJC_CLASS_$_MKCompactDeveloperPlaceCardLoadingView
+0x1ef7bfd38  __AUTH,__objc_data  _OBJC_CLASS_$_MKCompassButton
+0x1ee2352d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKCompassView
+0x1ef7bb788  __AUTH,__objc_data  _OBJC_CLASS_$_MKCuratedCollectionsTestManager
+0x1ee234560  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKCustomSeparatorCell
+0x1ef7bb760  __AUTH,__objc_data  _OBJC_CLASS_$_MKDebugLocationConsole
+0x1ef7bfd10  __AUTH,__objc_data  _OBJC_CLASS_$_MKDirections
+0x1ef7bfce8  __AUTH,__objc_data  _OBJC_CLASS_$_MKDirectionsRequest
+0x1ef7bd150  __AUTH,__objc_data  _OBJC_CLASS_$_MKDirectionsResponse
+0x1ef7bfcc0  __AUTH,__objc_data  _OBJC_CLASS_$_MKDistanceFormatter
+0x1ef7becd0  __AUTH,__objc_data  _OBJC_CLASS_$_MKETAProvider
+0x1ef7bf888  __AUTH,__objc_data  _OBJC_CLASS_$_MKETAResponse
+0x1ef7bd128  __AUTH,__objc_data  _OBJC_CLASS_$_MKEmptyTextAttachment
+0x1ef7bb710  __AUTH,__objc_data  _OBJC_CLASS_$_MKExploreGuidesRequest
+0x1ef7bb6e8  __AUTH,__objc_data  _OBJC_CLASS_$_MKExploreGuidesResponse
+0x1ef7bd100  __AUTH,__objc_data  _OBJC_CLASS_$_MKExploreGuidesReusableView
+0x1ee234420  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKExploreGuidesView
+0x1ef7beca8  __AUTH,__objc_data  _OBJC_CLASS_$_MKFirstPartyRatingFormatter
+0x1ef7bec80  __AUTH,__objc_data  _OBJC_CLASS_$_MKFirstPartyRatingStringBuilder
+0x1ef7bb698  __AUTH,__objc_data  _OBJC_CLASS_$_MKFitnessRAPReport
+0x1ef7bf860  __AUTH,__objc_data  _OBJC_CLASS_$_MKFontManager
+0x1ef7bb648  __AUTH,__objc_data  _OBJC_CLASS_$_MKFullDeveloperPlaceCardLoadingView
+0x1ef7bfc98  __AUTH,__objc_data  _OBJC_CLASS_$_MKGeoJSONDecoder
+0x1ef7bfec8  __AUTH,__objc_data  _OBJC_CLASS_$_MKGeoJSONFeature
+0x1ef7bb5d0  __AUTH,__objc_data  _OBJC_CLASS_$_MKGeocodingRequest
+0x1ef7bb5a8  __AUTH,__objc_data  _OBJC_CLASS_$_MKGeodesicPolyline
+0x1ef7bb580  __AUTH,__objc_data  _OBJC_CLASS_$_MKGradientPolylineRenderer
+0x1ef7bb558  __AUTH,__objc_data  _OBJC_CLASS_$_MKGroupedPlacesSnapshotter
+0x1ef7bec58  __AUTH,__objc_data  _OBJC_CLASS_$_MKHairlineView
+0x1ef7bf838  __AUTH,__objc_data  _OBJC_CLASS_$_MKHapticEngine
+0x1ee233520  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKHybridMapConfiguration
+0x1ee233930  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKIconManager
+0x1ef7bb530  __AUTH,__objc_data  _OBJC_CLASS_$_MKIconStyle
+0x1ef7bd0d8  __AUTH,__objc_data  _OBJC_CLASS_$_MKImageTextAttachment
+0x1ee233818  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKImageryMapConfiguration
+0x1ef7bb508  __AUTH,__objc_data  _OBJC_CLASS_$_MKIncidentDetailContentView
+0x1ef7bb4e0  __AUTH,__objc_data  _OBJC_CLASS_$_MKIncidentExtendedDetailCell
+0x1ef7bd0b0  __AUTH,__objc_data  _OBJC_CLASS_$_MKIncidentsViewController
+0x1ef7bfc70  __AUTH,__objc_data  _OBJC_CLASS_$_MKInfoCardThemeManager
+0x1ef7bec30  __AUTH,__objc_data  _OBJC_CLASS_$_MKJunction
+0x1ee232d50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKLabelSelectionFilter
+0x1ef7bf810  __AUTH,__objc_data  _OBJC_CLASS_$_MKLayoutCardViewController
+0x1ef7bd060  __AUTH,__objc_data  _OBJC_CLASS_$_MKLinkPreviewDirectionsMetadata
+0x1ef7bd038  __AUTH,__objc_data  _OBJC_CLASS_$_MKLinkPreviewFrameMetadata
+0x1ef7bb468  __AUTH,__objc_data  _OBJC_CLASS_$_MKLinkPreviewGuidesMetadata
+0x1ef7bb418  __AUTH,__objc_data  _OBJC_CLASS_$_MKLinkPreviewLookAroundMetadata
+0x1ef7bec08  __AUTH,__objc_data  _OBJC_CLASS_$_MKLinkPreviewMetadata
+0x1ef7bebe0  __AUTH,__objc_data  _OBJC_CLASS_$_MKLinkPreviewMetadataRequest
+0x1ef7bebb8  __AUTH,__objc_data  _OBJC_CLASS_$_MKLinkPreviewPlaceMetadata
+0x1ef7bd010  __AUTH,__objc_data  _OBJC_CLASS_$_MKLinkPreviewPublisherMetadata
+0x1ef7bcfe8  __AUTH,__objc_data  _OBJC_CLASS_$_MKLinkPreviewSearchMetadata
+0x1ef7bcfc0  __AUTH,__objc_data  _OBJC_CLASS_$_MKLinkPreviewSnapshot
+0x1ef7bcf98  __AUTH,__objc_data  _OBJC_CLASS_$_MKLinkPreviewSnapshotRequest
+0x1ef7bcf70  __AUTH,__objc_data  _OBJC_CLASS_$_MKLocalPointsOfInterestRequest
+0x1ee233de0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKLocalSearch
+0x1ef7bf7e8  __AUTH,__objc_data  _OBJC_CLASS_$_MKLocalSearchCompleter
+0x1ef7bf7c0  __AUTH,__objc_data  _OBJC_CLASS_$_MKLocalSearchCompletion
+0x1ef7bcf48  __AUTH,__objc_data  _OBJC_CLASS_$_MKLocalSearchKeypressMetrics
+0x1ee233d68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKLocalSearchRequest
+0x1ef7bfc48  __AUTH,__objc_data  _OBJC_CLASS_$_MKLocalSearchResponse
+0x1ef7beb90  __AUTH,__objc_data  _OBJC_CLASS_$_MKLocalSearchSection
+0x1ee234178  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKLocationManager
+0x1ef7bf770  __AUTH,__objc_data  _OBJC_CLASS_$_MKLookAroundBumpFlash
+0x1ee234448  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKLookAroundContainerView
+0x1ef7bf720  __AUTH,__objc_data  _OBJC_CLASS_$_MKLookAroundEntryPoint
+0x1ef7bb378  __AUTH,__objc_data  _OBJC_CLASS_$_MKLookAroundScene
+0x1ef7bb350  __AUTH,__objc_data  _OBJC_CLASS_$_MKLookAroundSceneRequest
+0x1ef7bb328  __AUTH,__objc_data  _OBJC_CLASS_$_MKLookAroundSnapshot
+0x1ef7bb300  __AUTH,__objc_data  _OBJC_CLASS_$_MKLookAroundSnapshotOptions
+0x1ef7bb2d8  __AUTH,__objc_data  _OBJC_CLASS_$_MKLookAroundSnapshotter
+0x1ee2342e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKLookAroundView
+0x1ef7bb288  __AUTH,__objc_data  _OBJC_CLASS_$_MKLookAroundViewController
+0x1ee234e70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKMapAttribution
+0x1ee2340b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKMapCamera
+0x1ee2334d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKMapCameraBoundary
+0x1ee2334a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKMapCameraZoomRange
+0x1ee233f20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKMapConfiguration
+0x1ee232d28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKMapFeatureAnnotation
+0x1ee234128  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKMapItem
+0x1ef7bb260  __AUTH,__objc_data  _OBJC_CLASS_$_MKMapItemAnnotation
+0x1ef7bb238  __AUTH,__objc_data  _OBJC_CLASS_$_MKMapItemDetailSelectionAccessoryPresentationStyle
+0x1ef7bb210  __AUTH,__objc_data  _OBJC_CLASS_$_MKMapItemDetailViewController
+0x1ef7c02d8  __AUTH,__objc_data  _OBJC_CLASS_$_MKMapItemIdentifier
+0x1ef7bf6a8  __AUTH,__objc_data  _OBJC_CLASS_$_MKMapItemMetadata
+0x1ef7bb1e8  __AUTH,__objc_data  _OBJC_CLASS_$_MKMapItemMetadataImageRequest
+0x1ef7bb1c0  __AUTH,__objc_data  _OBJC_CLASS_$_MKMapItemMetadataRequest
+0x1ef7beb68  __AUTH,__objc_data  _OBJC_CLASS_$_MKMapItemMetadataRequester
+0x1ef7beb40  __AUTH,__objc_data  _OBJC_CLASS_$_MKMapItemPhoto
+0x1ef7beb18  __AUTH,__objc_data  _OBJC_CLASS_$_MKMapItemRequest
+0x1ef7beaf0  __AUTH,__objc_data  _OBJC_CLASS_$_MKMapItemView
+0x1ee234218  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKMapService
+0x1ee233b38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKMapSnapshot
+0x1ef7bb198  __AUTH,__objc_data  _OBJC_CLASS_$_MKMapSnapshotCreator
+0x1ef7c01c0  __AUTH,__objc_data  _OBJC_CLASS_$_MKMapSnapshotCustomFeatureAnnotation
+0x1ef7c0440  __AUTH,__objc_data  _OBJC_CLASS_$_MKMapSnapshotFeatureAnnotation
+0x1ee233ed0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKMapSnapshotOptions
+0x1ee233b10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKMapSnapshotter
+0x1ee2352a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKMapView
+0x1ef7beaa0  __AUTH,__objc_data  _OBJC_CLASS_$_MKMapsSuggestionsPredictor
+0x1ee2339d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKMarkerAnnotationView
+0x1ef7bb120  __AUTH,__objc_data  _OBJC_CLASS_$_MKModernUserLocationView
+0x1ef7bea78  __AUTH,__objc_data  _OBJC_CLASS_$_MKMultiPartAttributedString
+0x1ee234e48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKMultiPartLabel
+0x1ef7c0418  __AUTH,__objc_data  _OBJC_CLASS_$_MKMultiPoint
+0x1ef7bfc20  __AUTH,__objc_data  _OBJC_CLASS_$_MKMultiPolygon
+0x1ef7bcef8  __AUTH,__objc_data  _OBJC_CLASS_$_MKMultiPolygonRenderer
+0x1ef7bced0  __AUTH,__objc_data  _OBJC_CLASS_$_MKMultiPolyline
+0x1ef7bb0f8  __AUTH,__objc_data  _OBJC_CLASS_$_MKMultiPolylineRenderer
+0x1ef7bfbf8  __AUTH,__objc_data  _OBJC_CLASS_$_MKOverlayPathRenderer
+0x1ef7bb0d0  __AUTH,__objc_data  _OBJC_CLASS_$_MKOverlayPathView
+0x1ef7bfe78  __AUTH,__objc_data  _OBJC_CLASS_$_MKOverlayRenderer
+0x1ef7bb0a8  __AUTH,__objc_data  _OBJC_CLASS_$_MKOverlayView
+0x1ef7bea50  __AUTH,__objc_data  _OBJC_CLASS_$_MKPOIEnrichmentAvailibility
+0x1ee233408  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKPinAnnotationView
+0x1ef7c0350  __AUTH,__objc_data  _OBJC_CLASS_$_MKPitchButton
+0x1ef7bea28  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceActionDataProvider
+0x1ef7bcea8  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceActionEnvironment
+0x1ef7bea00  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceActionItemAppearanceProvider
+0x1ef7bce80  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceActionItemCustomAppearanceProvider
+0x1ef7be9d8  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceActionManager
+0x1ee234dd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKPlaceAttributionCell
+0x1ef7be960  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceAttributionViewController
+0x1ef7bb080  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceBatchController
+0x1ef7bb058  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceBatchableCompactCollection
+0x1ef7be938  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceCardActionItem
+0x1ee234da8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKPlaceCardHeaderViewController
+0x1ef7bce58  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceCardMenuBuildingOptions
+0x1ee234d80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKPlaceCollectionCell
+0x1ef7bcde0  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceCollectionImageProvider
+0x1ef7bb008  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceCollectionMapItem
+0x1ef7bcdb8  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceCollectionViewModel
+0x1ef7bcd90  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceCollectionsLogicController
+0x1ef7bcd68  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceCollectionsPublisherIconManager
+0x1ef7bcd40  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceCollectionsSizeController
+0x1ef7bcd18  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceCompactCollectionCell
+0x1ef7bccc8  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceCompactCollectionSizeController
+0x1ef7bcca0  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceCompactCollectionViewModel
+0x1ef7bcc78  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceCompactCollectionsLogicController
+0x1ef7bafe0  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceCuratedCollectionRefiner
+0x1ee234f60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKPlaceHeaderButton
+0x1ef7be8c0  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceHeaderButtonsViewController
+0x1ee234d08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKPlaceInlineMapViewController
+0x1ef7be758  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceInlineMapViewControllerConfiguration
+0x1ef7be730  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceItemActionDataProvider
+0x1ee234ce0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKPlacePhotosViewController
+0x1ef7be708  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlacePoisInlineMapViewController
+0x1ef7baf90  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlacePublisherRefiner
+0x1ef7baf68  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceReservationRowView
+0x1ee234f88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKPlaceSectionItemView
+0x1ee234f38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKPlaceSectionRowView
+0x1ef7be6b8  __AUTH,__objc_data  _OBJC_CLASS_$_MKPlaceSectionView
+0x1ee234cb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKPlaceSectionViewController
+0x1ee234c90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKPlaceViewStyleProvider
+0x1ee233908  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKPlacemark
+0x1ee2333e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKPointAnnotation
+0x1ef7c03f0  __AUTH,__objc_data  _OBJC_CLASS_$_MKPointOfInterestFilter
+0x1ef7c00f8  __AUTH,__objc_data  _OBJC_CLASS_$_MKPolygon
+0x1ef7bf590  __AUTH,__objc_data  _OBJC_CLASS_$_MKPolygonRenderer
+0x1ef7baf18  __AUTH,__objc_data  _OBJC_CLASS_$_MKPolygonView
+0x1ef7bfe50  __AUTH,__objc_data  _OBJC_CLASS_$_MKPolyline
+0x1ef7be690  __AUTH,__objc_data  _OBJC_CLASS_$_MKPolylineRenderer
+0x1ef7baef0  __AUTH,__objc_data  _OBJC_CLASS_$_MKPolylineView
+0x1ef7baea0  __AUTH,__objc_data  _OBJC_CLASS_$_MKPunchoutOptions
+0x1ef7be668  __AUTH,__objc_data  _OBJC_CLASS_$_MKRatingStringBuilder
+0x1ef7bae78  __AUTH,__objc_data  _OBJC_CLASS_$_MKReverseGeocoder
+0x1ef7bcc28  __AUTH,__objc_data  _OBJC_CLASS_$_MKReverseGeocodingRequest
+0x1ef7bae28  __AUTH,__objc_data  _OBJC_CLASS_$_MKRoundingByteCountFormatter
+0x1ef7bcc00  __AUTH,__objc_data  _OBJC_CLASS_$_MKRoute
+0x1ef7be640  __AUTH,__objc_data  _OBJC_CLASS_$_MKRouteContextBuilder
+0x1ef7bcbb0  __AUTH,__objc_data  _OBJC_CLASS_$_MKRouteStep
+0x1ef7bf568  __AUTH,__objc_data  _OBJC_CLASS_$_MKScaleView
+0x1ef7bcb60  __AUTH,__objc_data  _OBJC_CLASS_$_MKSearchCompletion
+0x1ef7be578  __AUTH,__objc_data  _OBJC_CLASS_$_MKSearchFoundationResult
+0x1ef7bae00  __AUTH,__objc_data  _OBJC_CLASS_$_MKSelectionAccessory
+0x1ef7bf540  __AUTH,__objc_data  _OBJC_CLASS_$_MKServerFormattedString
+0x1ef7bf518  __AUTH,__objc_data  _OBJC_CLASS_$_MKServerFormattedStringParameters
+0x1ee233db8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKShape
+0x1ef7bfbd0  __AUTH,__objc_data  _OBJC_CLASS_$_MKSiriInteraction
+0x1ef7bcb38  __AUTH,__objc_data  _OBJC_CLASS_$_MKSizedTransitArtwork
+0x1ef7bf4f0  __AUTH,__objc_data  _OBJC_CLASS_$_MKStackingViewController
+0x1ef7be528  __AUTH,__objc_data  _OBJC_CLASS_$_MKStandardCalloutView
+0x1ee233ea8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKStandardMapConfiguration
+0x1ee234c68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKStarRatingAndLabelView
+0x1ee234c40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKStarRatingView
+0x1ee234010  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKSystemController
+0x1ee234c18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKTableViewCell
+0x1ef7bcb10  __AUTH,__objc_data  _OBJC_CLASS_$_MKTileOverlay
+0x1ef7bad88  __AUTH,__objc_data  _OBJC_CLASS_$_MKTileOverlayRenderer
+0x1ee233340  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKTiltGestureRecognizer
+0x1ee233318  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKTrafficSupport
+0x1ef7bad10  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitArtwork
+0x1ee234bc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKTransitArtworkManager
+0x1ef7bace8  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitDepartureContainerHeaderCell
+0x1ee234380  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKTransitDepartureContainerHeaderView
+0x1ef7bacc0  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitDepartureContainerHeaderViewModel
+0x1ee234ba0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKTransitDeparturesCell
+0x1ef7bac48  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitDeparturesDataProvider
+0x1ef7bac20  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitDeparturesSectionController
+0x1ef7babf8  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitIcon
+0x1ef7babd0  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitInactiveLinesSectionController
+0x1ef7bab80  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitIncidentStringProvider
+0x1ef7bab58  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitIncidentSymbolImageCell
+0x1ef7bab30  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitIncidentViewModel
+0x1ee234b78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKTransitInfoLabelView
+0x1ef7bcac0  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitInfoPreloader
+0x1ef7bab08  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitItemIncidentCell
+0x1ef7baae0  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitItemIncidentView
+0x1ef7baab8  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitItemIncidentsController
+0x1ef7bca98  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitItemReferenceDateUpdater
+0x1ef7baa90  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitMapItemUpdater
+0x1ef7baa68  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitSectionController
+0x1ef7baa18  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitShield
+0x1ef7ba9f0  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitSystemFilterView
+0x1ef7ba9c8  __AUTH,__objc_data  _OBJC_CLASS_$_MKTransitText
+0x1ef7be4b0  __AUTH,__objc_data  _OBJC_CLASS_$_MKUGCCallToActionViewAppearance
+0x1ef7ba9a0  __AUTH,__objc_data  _OBJC_CLASS_$_MKURLContext
+0x1ef7ba978  __AUTH,__objc_data  _OBJC_CLASS_$_MKURLParser
+0x1ef7bca70  __AUTH,__objc_data  _OBJC_CLASS_$_MKURLSerializer
+0x1ef7bca48  __AUTH,__objc_data  _OBJC_CLASS_$_MKURLShortener
+0x1ee235078  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKUserLocation
+0x1ee2342b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKUserLocationView
+0x1ee234f10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKUserTrackingBarButtonItem
+0x1ef7bc9f8  __AUTH,__objc_data  _OBJC_CLASS_$_MKUserTrackingButton
+0x1ee2332f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKVariableDelayTapRecognizer
+0x1ef7bf478  __AUTH,__objc_data  _OBJC_CLASS_$_MKVibrantHairlineView
+0x1ee234538  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKVibrantLabel
+0x1ee234510  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKVibrantView
+0x1ee234b50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MKViewWithHairline
+0x1ef7ba8b0  __AUTH,__objc_data  _OBJC_CLASS_$_MKWalletMerchantLookupBankMerchantInfo
+0x1ef7bc9d0  __AUTH,__objc_data  _OBJC_CLASS_$_MKWalletMerchantLookupRequest
+0x1ef7bc9a8  __AUTH,__objc_data  _OBJC_CLASS_$_MKWalletMerchantResponse
+0x1ef7bfba8  __AUTH,__objc_data  _OBJC_CLASS_$_MKWalletMerchantStylingInfo
+0x1ef7ba888  __AUTH,__objc_data  _OBJC_CLASS_$_MKWalletRAPReport
+0x1ef7be460  __AUTH,__objc_data  _OBJC_CLASS_$_MUPlaceActionManager
+0x1ef7ba810  __AUTH,__objc_data  _OBJC_CLASS_$__MKAnimatedTileOverlay
+0x1ef7bc980  __AUTH,__objc_data  _OBJC_CLASS_$__MKBalloonCalloutView
+0x1ee233d40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MKCartographicMapConfiguration
+0x1ef7ba748  __AUTH,__objc_data  _OBJC_CLASS_$__MKCompassBarButtonItem
+0x1ef7be410  __AUTH,__objc_data  _OBJC_CLASS_$__MKContactPlaceItem
+0x1ee233ac0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MKCustomFeatureStore
+0x1ef7bc930  __AUTH,__objc_data  _OBJC_CLASS_$__MKDynamicTileOverlay
+0x1ef7ba6a8  __AUTH,__objc_data  _OBJC_CLASS_$__MKDynamicTileOverlayRenderer
+0x1ef7be3c0  __AUTH,__objc_data  _OBJC_CLASS_$__MKGradientView
+0x1ef7bc8b8  __AUTH,__objc_data  _OBJC_CLASS_$__MKLabelMarkerItem
+0x1ef7ba5e0  __AUTH,__objc_data  _OBJC_CLASS_$__MKLocalSearchExternalTransitLookupParameters
+0x1ef7ba5b8  __AUTH,__objc_data  _OBJC_CLASS_$__MKLocalSearchMerchantParameters
+0x1ef7bf400  __AUTH,__objc_data  _OBJC_CLASS_$__MKLocalizedHoursBuilder
+0x1ef7be370  __AUTH,__objc_data  _OBJC_CLASS_$__MKLocationShifter
+0x1ee233cf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MKMapItemAttribution
+0x1ee233cc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MKMapItemPhotosAttribution
+0x1ee233ca0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MKMapItemPlaceAttribution
+0x1ef7be2f8  __AUTH,__objc_data  _OBJC_CLASS_$__MKMapItemPlaceItem
+0x1ee233c78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MKMapItemReviewsAttribution
+0x1ef7ba480  __AUTH,__objc_data  _OBJC_CLASS_$__MKMotionEffect
+0x1ef7ba430  __AUTH,__objc_data  _OBJC_CLASS_$__MKOfflineRegionCustomFeature
+0x1ee2331d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MKOneHandedZoomGestureRecognizer
+0x1ef7ba3b8  __AUTH,__objc_data  _OBJC_CLASS_$__MKPitchBarButtonItem
+0x1ef7bc750  __AUTH,__objc_data  _OBJC_CLASS_$__MKPlaceActionButtonController
+0x1ef7be2a8  __AUTH,__objc_data  _OBJC_CLASS_$__MKPlaceAttributionLabel
+0x1ef7ba2f0  __AUTH,__objc_data  _OBJC_CLASS_$__MKPlaceReservationInfo
+0x1ef7bf388  __AUTH,__objc_data  _OBJC_CLASS_$__MKPlaceViewController
+0x1ee235118  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MKPuckAnnotationView
+0x1ef7be280  __AUTH,__objc_data  _OBJC_CLASS_$__MKQuickRouteManager
+0x1ef7ba228  __AUTH,__objc_data  _OBJC_CLASS_$__MKResultView
+0x1ef7be258  __AUTH,__objc_data  _OBJC_CLASS_$__MKRouteETA
+0x1ef7ba200  __AUTH,__objc_data  _OBJC_CLASS_$__MKRoutingAppCoverageRegions
+0x1ef7be1e0  __AUTH,__objc_data  _OBJC_CLASS_$__MKStackView
+0x1ef7ba0c0  __AUTH,__objc_data  _OBJC_CLASS_$__MKStaticMapView
+0x1ef7bc6b0  __AUTH,__objc_data  _OBJC_CLASS_$__MKTableViewController
+0x1ee234ab0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MKUILabel
+0x1ee234a88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MKUIViewControllerClickableRootView
+0x1ee234a60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MKUIViewControllerRootView
+0x1ef7be190  __AUTH,__objc_data  _OBJC_CLASS_$__MKURLBuilder
+0x1ef7ba020  __AUTH,__objc_data  _OBJC_CLASS_$__MKURLHandler
+0x1ef7bf338  __AUTH,__objc_data  _OBJC_CLASS_$__MKURLParser
+0x1ee235258  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MKUserLocationView
+0x1ee234ee8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MKUserTrackingButton
+0x1ee233160  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MKZoomingGestureControlConfiguration
+0x1ee233138  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MKZoomingPanGestureRecognizer
+0x1ef7b9fd0  __AUTH,__objc_data  _OBJC_CLASS_$__MXExtension
+0x1ef7be118  __AUTH,__objc_data  _OBJC_CLASS_$__MXExtensionDispatchCenter
+0x1ef7b9f30  __AUTH,__objc_data  _OBJC_CLASS_$__MXExtensionInternalServiceRequestDispatcher
+0x1ef7b9f08  __AUTH,__objc_data  _OBJC_CLASS_$__MXExtensionInternalStreamingServiceRequestDispatcher
+0x1ef7be0c8  __AUTH,__objc_data  _OBJC_CLASS_$__MXExtensionManager
+0x1ef7be078  __AUTH,__objc_data  _OBJC_CLASS_$__MXExtensionProvider
+0x1ef7b9ee0  __AUTH,__objc_data  _OBJC_CLASS_$__MXExtensionRequestDispatcher
+0x1ef7b9eb8  __AUTH,__objc_data  _OBJC_CLASS_$__MXExtensionRequestReceipt
+0x1ef7b9e90  __AUTH,__objc_data  _OBJC_CLASS_$__MXExtensionService
+0x1ef7be050  __AUTH,__objc_data  _OBJC_CLASS_$__MXExtensionServiceCenter
+0x1ebeb7f80  __DATA,__objc_ivar  OBJC_IVAR_$_MKMapItemMetadataRequester._dataForTasks
+0x1ebeb7f78  __DATA,__objc_ivar  OBJC_IVAR_$_MKMapItemMetadataRequester._requestsForURLs
+0x1ebeb7f74  __DATA,__objc_ivar  OBJC_IVAR_$_MKMapItemMetadataRequester._session
+0x1ebeb7f7c  __DATA,__objc_ivar  OBJC_IVAR_$_MKMapItemMetadataRequester._tasksForURLs
+0x1ebeb7fd4  __DATA,__objc_ivar  OBJC_IVAR_$_MKPlaceActionItemAppearanceProvider._actionType
+0x1ebeb7fd8  __DATA,__objc_ivar  OBJC_IVAR_$_MKPlaceActionItemAppearanceProvider._dataProvider
+0x1ebeb8130  __DATA,__objc_ivar  OBJC_IVAR_$_MKTiltGestureRecognizer._initialDistance
+0x1ebeb8124  __DATA,__objc_ivar  OBJC_IVAR_$_MKTiltGestureRecognizer._initialTouch1Point
+0x1ebeb812c  __DATA,__objc_ivar  OBJC_IVAR_$_MKTiltGestureRecognizer._initialTouch2Point
+0x1ebeb8120  __DATA,__objc_ivar  OBJC_IVAR_$_MKTiltGestureRecognizer._touch1
+0x1ebeb8128  __DATA,__objc_ivar  OBJC_IVAR_$_MKTiltGestureRecognizer._touch2
+0x1ebeb7dc8  __DATA,__objc_ivar  OBJC_IVAR_$_MKTransitSectionController.__pagingFilter
+0x1ebeb7dcc  __DATA,__objc_ivar  OBJC_IVAR_$_MKTransitSectionController._linesToShow
+0x1ebeb7dc4  __DATA,__objc_ivar  OBJC_IVAR_$_MKTransitSectionController._mapItem
+0x1ebeb7dd8  __DATA,__objc_ivar  OBJC_IVAR_$_MKTransitSectionController._numberOfFilteredLines
+0x1ebeb7dd4  __DATA,__objc_ivar  OBJC_IVAR_$_MKTransitSectionController._numberOfFilteredRows
+0x1ebeb7dd0  __DATA,__objc_ivar  OBJC_IVAR_$_MKTransitSectionController._numberOfRows
+0x1ebeb8134  __DATA,__objc_ivar  OBJC_IVAR_$_MKVariableDelayTapRecognizer.originalMaximumIntervalBetweenSuccessiveTaps
+0x1ebeb8f48  __DATA,__objc_ivar  OBJC_IVAR_$__MKPuckAnnotationView._puckLayer
+0x1ebeb8820  __DATA,__objc_ivar  OBJC_IVAR_$__MXExtensionProvider._extensionMatchingClass
+0x1ef7be028  __AUTH,__objc_data  _OBJC_METACLASS_$_MKAddress
+0x1ef7b9dc8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKAddressFilter
+0x1ef7bc638  __AUTH,__objc_data  _OBJC_METACLASS_$_MKAddressRepresentations
+0x1ef7bf310  __AUTH,__objc_data  _OBJC_METACLASS_$_MKAnnotatedMapSnapshotter
+0x1ee2350f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKAnnotationView
+0x1ef7be000  __AUTH,__objc_data  _OBJC_METACLASS_$_MKAppImageManager
+0x1ef7b9d78  __AUTH,__objc_data  _OBJC_METACLASS_$_MKAppLaunchController
+0x1ef7b9d28  __AUTH,__objc_data  _OBJC_METACLASS_$_MKAppleMediaServices
+0x1ee234240  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKApplicationStateMonitor
+0x1ef7bc610  __AUTH,__objc_data  _OBJC_METACLASS_$_MKArtworkDataSourceCache
+0x1ef7bc5e8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKArtworkImageView
+0x1ef7bc5c0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKArtworkLabelView
+0x1ef7bc598  __AUTH,__objc_data  _OBJC_METACLASS_$_MKAutocompleteAnalyticsProvider
+0x1ef7bdfd8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKCalloutView
+0x1ef7b9cd8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKCatalystButton
+0x1ef7bc548  __AUTH,__objc_data  _OBJC_METACLASS_$_MKCircle
+0x1ef7b9cb0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKCircleRenderer
+0x1ef7b9c88  __AUTH,__objc_data  _OBJC_METACLASS_$_MKCircleView
+0x1ef7bc520  __AUTH,__objc_data  _OBJC_METACLASS_$_MKClipServices
+0x1ee233110  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKClusterAnnotation
+0x1ef7bc4f8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKCollectionBatchCell
+0x1ef7b9c60  __AUTH,__objc_data  _OBJC_METACLASS_$_MKCollectionStorageRefiner
+0x1ef7bc4d0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKCollectionsCarouselView
+0x1ef7b9c10  __AUTH,__objc_data  _OBJC_METACLASS_$_MKCompactDeveloperPlaceCardLoadingView
+0x1ef7bfb08  __AUTH,__objc_data  _OBJC_METACLASS_$_MKCompassButton
+0x1ee235208  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKCompassView
+0x1ef7b9b98  __AUTH,__objc_data  _OBJC_METACLASS_$_MKCuratedCollectionsTestManager
+0x1ee2344e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKCustomSeparatorCell
+0x1ef7b9b70  __AUTH,__objc_data  _OBJC_METACLASS_$_MKDebugLocationConsole
+0x1ef7bfae0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKDirections
+0x1ef7bfab8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKDirectionsRequest
+0x1ef7bc4a8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKDirectionsResponse
+0x1ef7bfa90  __AUTH,__objc_data  _OBJC_METACLASS_$_MKDistanceFormatter
+0x1ef7bdfb0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKETAProvider
+0x1ef7bf2c0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKETAResponse
+0x1ef7bc480  __AUTH,__objc_data  _OBJC_METACLASS_$_MKEmptyTextAttachment
+0x1ef7b9b20  __AUTH,__objc_data  _OBJC_METACLASS_$_MKExploreGuidesRequest
+0x1ef7b9af8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKExploreGuidesResponse
+0x1ef7bc458  __AUTH,__objc_data  _OBJC_METACLASS_$_MKExploreGuidesReusableView
+0x1ee2343d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKExploreGuidesView
+0x1ef7bdf88  __AUTH,__objc_data  _OBJC_METACLASS_$_MKFirstPartyRatingFormatter
+0x1ef7bdf60  __AUTH,__objc_data  _OBJC_METACLASS_$_MKFirstPartyRatingStringBuilder
+0x1ef7b9aa8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKFitnessRAPReport
+0x1ef7bf298  __AUTH,__objc_data  _OBJC_METACLASS_$_MKFontManager
+0x1ef7b9a58  __AUTH,__objc_data  _OBJC_METACLASS_$_MKFullDeveloperPlaceCardLoadingView
+0x1ef7bfe00  __AUTH,__objc_data  _OBJC_METACLASS_$_MKGeoJSONDecoder
+0x1ef7bfa68  __AUTH,__objc_data  _OBJC_METACLASS_$_MKGeoJSONFeature
+0x1ef7b99e0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKGeocodingRequest
+0x1ef7b99b8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKGeodesicPolyline
+0x1ef7b9990  __AUTH,__objc_data  _OBJC_METACLASS_$_MKGradientPolylineRenderer
+0x1ef7b9968  __AUTH,__objc_data  _OBJC_METACLASS_$_MKGroupedPlacesSnapshotter
+0x1ef7bdf38  __AUTH,__objc_data  _OBJC_METACLASS_$_MKHairlineView
+0x1ef7bf270  __AUTH,__objc_data  _OBJC_METACLASS_$_MKHapticEngine
+0x1ee2330e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKHybridMapConfiguration
+0x1ee233890  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKIconManager
+0x1ef7b9940  __AUTH,__objc_data  _OBJC_METACLASS_$_MKIconStyle
+0x1ef7bc430  __AUTH,__objc_data  _OBJC_METACLASS_$_MKImageTextAttachment
+0x1ee233700  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKImageryMapConfiguration
+0x1ef7b9918  __AUTH,__objc_data  _OBJC_METACLASS_$_MKIncidentDetailContentView
+0x1ef7b98f0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKIncidentExtendedDetailCell
+0x1ef7bc408  __AUTH,__objc_data  _OBJC_METACLASS_$_MKIncidentsViewController
+0x1ef7bfa40  __AUTH,__objc_data  _OBJC_METACLASS_$_MKInfoCardThemeManager
+0x1ef7bdf10  __AUTH,__objc_data  _OBJC_METACLASS_$_MKJunction
+0x1ee2330c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKLabelSelectionFilter
+0x1ef7bf248  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLayoutCardViewController
+0x1ef7bc3b8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLinkPreviewDirectionsMetadata
+0x1ef7bc390  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLinkPreviewFrameMetadata
+0x1ef7b9878  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLinkPreviewGuidesMetadata
+0x1ef7b9828  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLinkPreviewLookAroundMetadata
+0x1ef7bdee8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLinkPreviewMetadata
+0x1ef7bdec0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLinkPreviewMetadataRequest
+0x1ef7bde98  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLinkPreviewPlaceMetadata
+0x1ef7bc368  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLinkPreviewPublisherMetadata
+0x1ef7bc340  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLinkPreviewSearchMetadata
+0x1ef7bc318  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLinkPreviewSnapshot
+0x1ef7bc2f0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLinkPreviewSnapshotRequest
+0x1ef7bc2c8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLocalPointsOfInterestRequest
+0x1ee233d90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKLocalSearch
+0x1ef7bf220  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLocalSearchCompleter
+0x1ef7bf1f8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLocalSearchCompletion
+0x1ef7bc2a0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLocalSearchKeypressMetrics
+0x1ee233c50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKLocalSearchRequest
+0x1ef7bfa18  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLocalSearchResponse
+0x1ef7bde70  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLocalSearchSection
+0x1ee2341c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKLocationManager
+0x1ef7bf1a8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLookAroundBumpFlash
+0x1ee234470  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKLookAroundContainerView
+0x1ef7bf158  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLookAroundEntryPoint
+0x1ef7b9788  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLookAroundScene
+0x1ef7b9760  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLookAroundSceneRequest
+0x1ef7b9738  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLookAroundSnapshot
+0x1ef7b9710  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLookAroundSnapshotOptions
+0x1ef7b96e8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLookAroundSnapshotter
+0x1ee2340d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKLookAroundView
+0x1ef7b9698  __AUTH,__objc_data  _OBJC_METACLASS_$_MKLookAroundViewController
+0x1ee234a38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKMapAttribution
+0x1ee234088  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKMapCamera
+0x1ee233070  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKMapCameraBoundary
+0x1ee2336d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKMapCameraZoomRange
+0x1ee233e58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKMapConfiguration
+0x1ee232cd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKMapFeatureAnnotation
+0x1ee234100  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKMapItem
+0x1ef7b9670  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMapItemAnnotation
+0x1ef7b9648  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMapItemDetailSelectionAccessoryPresentationStyle
+0x1ef7b9620  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMapItemDetailViewController
+0x1ef7c0328  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMapItemIdentifier
+0x1ef7bf0e0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMapItemMetadata
+0x1ef7b95f8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMapItemMetadataImageRequest
+0x1ef7b95d0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMapItemMetadataRequest
+0x1ef7bde48  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMapItemMetadataRequester
+0x1ef7bde20  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMapItemPhoto
+0x1ef7bddf8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMapItemRequest
+0x1ef7bddd0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMapItemView
+0x1ee2341f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKMapService
+0x1ee233a98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKMapSnapshot
+0x1ef7b95a8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMapSnapshotCreator
+0x1ef7bffe0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMapSnapshotCustomFeatureAnnotation
+0x1ef7c03c8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMapSnapshotFeatureAnnotation
+0x1ee233e30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKMapSnapshotOptions
+0x1ee233a70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKMapSnapshotter
+0x1ee235280  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKMapView
+0x1ef7bdd80  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMapsSuggestionsPredictor
+0x1ee233a48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKMarkerAnnotationView
+0x1ef7b9530  __AUTH,__objc_data  _OBJC_METACLASS_$_MKModernUserLocationView
+0x1ef7bdd58  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMultiPartAttributedString
+0x1ee234a10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKMultiPartLabel
+0x1ef7c0300  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMultiPoint
+0x1ef7bf9f0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMultiPolygon
+0x1ef7bc250  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMultiPolygonRenderer
+0x1ef7bc228  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMultiPolyline
+0x1ef7b9508  __AUTH,__objc_data  _OBJC_METACLASS_$_MKMultiPolylineRenderer
+0x1ef7bf9c8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKOverlayPathRenderer
+0x1ef7b94e0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKOverlayPathView
+0x1ef7bfdb0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKOverlayRenderer
+0x1ef7b94b8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKOverlayView
+0x1ef7bdd30  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPOIEnrichmentAvailibility
+0x1ee233020  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKPinAnnotationView
+0x1ef7c0238  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPitchButton
+0x1ef7bdd08  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceActionDataProvider
+0x1ef7bc200  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceActionEnvironment
+0x1ef7bdce0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceActionItemAppearanceProvider
+0x1ef7bc1d8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceActionItemCustomAppearanceProvider
+0x1ef7bdcb8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceActionManager
+0x1ee234998  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKPlaceAttributionCell
+0x1ef7bdc40  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceAttributionViewController
+0x1ef7b9490  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceBatchController
+0x1ef7b9468  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceBatchableCompactCollection
+0x1ef7bdc18  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceCardActionItem
+0x1ee234948  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKPlaceCardHeaderViewController
+0x1ef7bc1b0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceCardMenuBuildingOptions
+0x1ee234920  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKPlaceCollectionCell
+0x1ef7bc138  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceCollectionImageProvider
+0x1ef7b9418  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceCollectionMapItem
+0x1ef7bc110  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceCollectionViewModel
+0x1ef7bc0e8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceCollectionsLogicController
+0x1ef7bc0c0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceCollectionsPublisherIconManager
+0x1ef7bc098  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceCollectionsSizeController
+0x1ef7bc070  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceCompactCollectionCell
+0x1ef7bc020  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceCompactCollectionSizeController
+0x1ef7bbff8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceCompactCollectionViewModel
+0x1ef7bbfd0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceCompactCollectionsLogicController
+0x1ef7b93f0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceCuratedCollectionRefiner
+0x1ee2348f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKPlaceHeaderButton
+0x1ef7bdba0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceHeaderButtonsViewController
+0x1ee234880  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKPlaceInlineMapViewController
+0x1ef7bda38  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceInlineMapViewControllerConfiguration
+0x1ef7bda10  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceItemActionDataProvider
+0x1ee234858  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKPlacePhotosViewController
+0x1ef7bd9e8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlacePoisInlineMapViewController
+0x1ef7b93a0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlacePublisherRefiner
+0x1ef7b9378  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceReservationRowView
+0x1ee234830  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKPlaceSectionItemView
+0x1ee234808  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKPlaceSectionRowView
+0x1ef7bd998  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPlaceSectionView
+0x1ee2347e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKPlaceSectionViewController
+0x1ee2347b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKPlaceViewStyleProvider
+0x1ee233868  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKPlacemark
+0x1ee232ff8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKPointAnnotation
+0x1ef7c0378  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPointOfInterestFilter
+0x1ef7bffb8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPolygon
+0x1ef7befc8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPolygonRenderer
+0x1ef7b9328  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPolygonView
+0x1ef7bfd88  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPolyline
+0x1ef7bd970  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPolylineRenderer
+0x1ef7b9300  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPolylineView
+0x1ef7b92b0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKPunchoutOptions
+0x1ef7bd948  __AUTH,__objc_data  _OBJC_METACLASS_$_MKRatingStringBuilder
+0x1ef7b9288  __AUTH,__objc_data  _OBJC_METACLASS_$_MKReverseGeocoder
+0x1ef7bbf80  __AUTH,__objc_data  _OBJC_METACLASS_$_MKReverseGeocodingRequest
+0x1ef7b9238  __AUTH,__objc_data  _OBJC_METACLASS_$_MKRoundingByteCountFormatter
+0x1ef7bbf58  __AUTH,__objc_data  _OBJC_METACLASS_$_MKRoute
+0x1ef7bd920  __AUTH,__objc_data  _OBJC_METACLASS_$_MKRouteContextBuilder
+0x1ef7bbf08  __AUTH,__objc_data  _OBJC_METACLASS_$_MKRouteStep
+0x1ef7befa0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKScaleView
+0x1ef7bbeb8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKSearchCompletion
+0x1ef7bd858  __AUTH,__objc_data  _OBJC_METACLASS_$_MKSearchFoundationResult
+0x1ef7b9210  __AUTH,__objc_data  _OBJC_METACLASS_$_MKSelectionAccessory
+0x1ef7bef78  __AUTH,__objc_data  _OBJC_METACLASS_$_MKServerFormattedString
+0x1ef7bef50  __AUTH,__objc_data  _OBJC_METACLASS_$_MKServerFormattedStringParameters
+0x1ee233c28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKShape
+0x1ef7bf9a0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKSiriInteraction
+0x1ef7bbe90  __AUTH,__objc_data  _OBJC_METACLASS_$_MKSizedTransitArtwork
+0x1ef7bef28  __AUTH,__objc_data  _OBJC_METACLASS_$_MKStackingViewController
+0x1ef7bd808  __AUTH,__objc_data  _OBJC_METACLASS_$_MKStandardCalloutView
+0x1ee233ef8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKStandardMapConfiguration
+0x1ee234790  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKStarRatingAndLabelView
+0x1ee234768  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKStarRatingView
+0x1ee234060  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKSystemController
+0x1ee234740  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKTableViewCell
+0x1ef7bbe68  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTileOverlay
+0x1ef7b9198  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTileOverlayRenderer
+0x1ee232fa8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKTiltGestureRecognizer
+0x1ee2335c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKTrafficSupport
+0x1ef7b9120  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitArtwork
+0x1ee2346f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKTransitArtworkManager
+0x1ef7b90f8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitDepartureContainerHeaderCell
+0x1ee234358  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKTransitDepartureContainerHeaderView
+0x1ef7b90d0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitDepartureContainerHeaderViewModel
+0x1ee2346c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKTransitDeparturesCell
+0x1ef7b9058  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitDeparturesDataProvider
+0x1ef7b9030  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitDeparturesSectionController
+0x1ef7b9008  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitIcon
+0x1ef7b8fe0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitInactiveLinesSectionController
+0x1ef7b8f90  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitIncidentStringProvider
+0x1ef7b8f68  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitIncidentSymbolImageCell
+0x1ef7b8f40  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitIncidentViewModel
+0x1ee234ec0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKTransitInfoLabelView
+0x1ef7bbe18  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitInfoPreloader
+0x1ef7b8f18  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitItemIncidentCell
+0x1ef7b8ef0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitItemIncidentView
+0x1ef7b8ec8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitItemIncidentsController
+0x1ef7bbdf0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitItemReferenceDateUpdater
+0x1ef7b8ea0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitMapItemUpdater
+0x1ef7b8e78  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitSectionController
+0x1ef7b8e28  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitShield
+0x1ef7b8e00  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitSystemFilterView
+0x1ef7b8dd8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKTransitText
+0x1ef7bd790  __AUTH,__objc_data  _OBJC_METACLASS_$_MKUGCCallToActionViewAppearance
+0x1ef7b8db0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKURLContext
+0x1ef7b8d88  __AUTH,__objc_data  _OBJC_METACLASS_$_MKURLParser
+0x1ef7bbdc8  __AUTH,__objc_data  _OBJC_METACLASS_$_MKURLSerializer
+0x1ef7bbda0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKURLShortener
+0x1ee234fd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKUserLocation
+0x1ee234290  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKUserLocationView
+0x1ee2346a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKUserTrackingBarButtonItem
+0x1ef7bbd50  __AUTH,__objc_data  _OBJC_METACLASS_$_MKUserTrackingButton
+0x1ee232f80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKVariableDelayTapRecognizer
+0x1ef7beeb0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKVibrantHairlineView
+0x1ee2344c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKVibrantLabel
+0x1ee234498  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKVibrantView
+0x1ee234678  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MKViewWithHairline
+0x1ef7b8cc0  __AUTH,__objc_data  _OBJC_METACLASS_$_MKWalletMerchantLookupBankMerchantInfo
+0x1ef7bbd28  __AUTH,__objc_data  _OBJC_METACLASS_$_MKWalletMerchantLookupRequest
+0x1ef7bbd00  __AUTH,__objc_data  _OBJC_METACLASS_$_MKWalletMerchantResponse
+0x1ef7bf978  __AUTH,__objc_data  _OBJC_METACLASS_$_MKWalletMerchantStylingInfo
+0x1ef7b8c98  __AUTH,__objc_data  _OBJC_METACLASS_$_MKWalletRAPReport
+0x1ef7bd740  __AUTH,__objc_data  _OBJC_METACLASS_$_MUPlaceActionManager
+0x1ef7b8c20  __AUTH,__objc_data  _OBJC_METACLASS_$__MKAnimatedTileOverlay
+0x1ef7bbcd8  __AUTH,__objc_data  _OBJC_METACLASS_$__MKBalloonCalloutView
+0x1ee2339f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MKCartographicMapConfiguration
+0x1ef7b8b58  __AUTH,__objc_data  _OBJC_METACLASS_$__MKCompassBarButtonItem
+0x1ef7bd6f0  __AUTH,__objc_data  _OBJC_METACLASS_$__MKContactPlaceItem
+0x1ee233958  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MKCustomFeatureStore
+0x1ef7bbc88  __AUTH,__objc_data  _OBJC_METACLASS_$__MKDynamicTileOverlay
+0x1ef7b8ab8  __AUTH,__objc_data  _OBJC_METACLASS_$__MKDynamicTileOverlayRenderer
+0x1ef7bd6a0  __AUTH,__objc_data  _OBJC_METACLASS_$__MKGradientView
+0x1ef7bbc10  __AUTH,__objc_data  _OBJC_METACLASS_$__MKLabelMarkerItem
+0x1ef7b89f0  __AUTH,__objc_data  _OBJC_METACLASS_$__MKLocalSearchExternalTransitLookupParameters
+0x1ef7b89c8  __AUTH,__objc_data  _OBJC_METACLASS_$__MKLocalSearchMerchantParameters
+0x1ef7bee38  __AUTH,__objc_data  _OBJC_METACLASS_$__MKLocalizedHoursBuilder
+0x1ef7bd650  __AUTH,__objc_data  _OBJC_METACLASS_$__MKLocationShifter
+0x1ee233bd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MKMapItemAttribution
+0x1ee233bb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MKMapItemPhotosAttribution
+0x1ee233b88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MKMapItemPlaceAttribution
+0x1ef7bd5b0  __AUTH,__objc_data  _OBJC_METACLASS_$__MKMapItemPlaceItem
+0x1ee233b60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MKMapItemReviewsAttribution
+0x1ef7b8928  __AUTH,__objc_data  _OBJC_METACLASS_$__MKMotionEffect
+0x1ef7b88d8  __AUTH,__objc_data  _OBJC_METACLASS_$__MKOfflineRegionCustomFeature
+0x1ee232e18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MKOneHandedZoomGestureRecognizer
+0x1ef7b8860  __AUTH,__objc_data  _OBJC_METACLASS_$__MKPitchBarButtonItem
+0x1ef7bbad0  __AUTH,__objc_data  _OBJC_METACLASS_$__MKPlaceActionButtonController
+0x1ef7bd560  __AUTH,__objc_data  _OBJC_METACLASS_$__MKPlaceAttributionLabel
+0x1ef7b8798  __AUTH,__objc_data  _OBJC_METACLASS_$__MKPlaceReservationInfo
+0x1ef7bedc0  __AUTH,__objc_data  _OBJC_METACLASS_$__MKPlaceViewController
+0x1ee2350c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MKPuckAnnotationView
+0x1ef7bd538  __AUTH,__objc_data  _OBJC_METACLASS_$__MKQuickRouteManager
+0x1ef7b86d0  __AUTH,__objc_data  _OBJC_METACLASS_$__MKResultView
+0x1ef7bd510  __AUTH,__objc_data  _OBJC_METACLASS_$__MKRouteETA
+0x1ef7b86a8  __AUTH,__objc_data  _OBJC_METACLASS_$__MKRoutingAppCoverageRegions
+0x1ef7bd498  __AUTH,__objc_data  _OBJC_METACLASS_$__MKStackView
+0x1ef7b8568  __AUTH,__objc_data  _OBJC_METACLASS_$__MKStaticMapView
+0x1ef7bba30  __AUTH,__objc_data  _OBJC_METACLASS_$__MKTableViewController
+0x1ee2345d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MKUILabel
+0x1ee2345b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MKUIViewControllerClickableRootView
+0x1ee234588  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MKUIViewControllerRootView
+0x1ef7bd448  __AUTH,__objc_data  _OBJC_METACLASS_$__MKURLBuilder
+0x1ef7b84c8  __AUTH,__objc_data  _OBJC_METACLASS_$__MKURLHandler
+0x1ef7bed70  __AUTH,__objc_data  _OBJC_METACLASS_$__MKURLParser
+0x1ee2350a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MKUserLocationView
+0x1ee234e98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MKUserTrackingButton
+0x1ee232da0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MKZoomingGestureControlConfiguration
+0x1ee232d78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MKZoomingPanGestureRecognizer
+0x1ef7b8478  __AUTH,__objc_data  _OBJC_METACLASS_$__MXExtension
+0x1ef7bd3d0  __AUTH,__objc_data  _OBJC_METACLASS_$__MXExtensionDispatchCenter
+0x1ef7b83d8  __AUTH,__objc_data  _OBJC_METACLASS_$__MXExtensionInternalServiceRequestDispatcher
+0x1ef7b83b0  __AUTH,__objc_data  _OBJC_METACLASS_$__MXExtensionInternalStreamingServiceRequestDispatcher
+0x1ef7bd380  __AUTH,__objc_data  _OBJC_METACLASS_$__MXExtensionManager
+0x1ef7bd330  __AUTH,__objc_data  _OBJC_METACLASS_$__MXExtensionProvider
+0x1ef7b8388  __AUTH,__objc_data  _OBJC_METACLASS_$__MXExtensionRequestDispatcher
+0x1ef7b8360  __AUTH,__objc_data  _OBJC_METACLASS_$__MXExtensionRequestReceipt
+0x1ef7b8338  __AUTH,__objc_data  _OBJC_METACLASS_$__MXExtensionService
+0x1ef7bd308  __AUTH,__objc_data  _OBJC_METACLASS_$__MXExtensionServiceCenter
+0x1a744f990  __TEXT,__const  __MKAttributionBadgePaddingVertical
+0x1ebebe2d0  __DATA,__data  __MKBalloonCalloutInnerDiameter
+0x1ebebe2c8  __DATA,__data  __MKBalloonCalloutInnerDiameterUserLocation
+0x1a72c30d8  __TEXT,__text  __MKBlurEffectStyleForTraitCollection
+0x1a71fbda8  __TEXT,__text  __MKCartographicConfigurationDefault
+0x1a71ced90  __TEXT,__text  __MKCartographicConfigurationEquals
+0x1a71c8274  __TEXT,__text  __MKCartographicConfigurationForMapType
+0x1a7300248  __TEXT,__text  __MKIsIOSARMAppOnMac
+0x1a7300244  __TEXT,__text  __MKIsRunningInExtension
+0x1e0fa5330  __DATA_CONST,__const  __MKLaunchOptionsFindMyHandleIdentifiersKey
+0x1e0fa5308  __DATA_CONST,__const  __MKLaunchOptionsFromTimeToLeaveNotificationKey
+0x1e0fa5250  __DATA_CONST,__const  __MKLaunchOptionsMapZoomKey
+0x1e0fa5260  __DATA_CONST,__const  __MKLaunchOptionsPreserveSearchResultsKey
+0x1e0fa5280  __DATA_CONST,__const  __MKLaunchOptionsRoutingArrivalDateKey
+0x1e0fa5270  __DATA_CONST,__const  __MKLaunchOptionsRoutingAvoidHighwaysKey
+0x1e0fa5278  __DATA_CONST,__const  __MKLaunchOptionsRoutingAvoidTollsKey
+0x1e0fa5268  __DATA_CONST,__const  __MKLaunchOptionsSearchAlongRouteKey
+0x1a71bf4ec  __TEXT,__text  __MKLinkedOnOrAfterReleaseSet
+0x1e0fa5338  __DATA_CONST,__const  __MKMapItemDidResolveAttributionNotification
+0x1a73aa344  __TEXT,__text  __MKMapRectThatFits
+0x1a71ca7cc  __TEXT,__text  __MKMapTypeForCartographicConfiguration
+0x1a72504c0  __TEXT,__text  __MKMapViewUseModernControls
+0x1e0fa5ed0  __DATA_CONST,__const  __MKMapsIndexableFavoriteSpotlightRepresentationAttributeKey
+0x1a7352c38  __TEXT,__text  __MKPerformShortURLTransformationIfNeeded
+0x1a72c3a90  __TEXT,__text  __MKPlaceCardUseSmallerFont
+0x1a73be698  __TEXT,__text  __MKPointInPolygon
+0x1a720ac30  __TEXT,__text  __MKRAPIsAvailable
+0x1a7352a74  __TEXT,__text  __MKURLGetSchemeType
+0x1ebebb930  __DATA,__data  __MKURLHandlerDefaultZoomLevel
+0x1e0fa5340  __DATA_CONST,__const  __MKUserActivitySharedSessionEntityStringKey
+0x1e0fa5fc8  __DATA_CONST,__const  __MXExtensionCapabilityBaseMap
+0x1e0fa5fd0  __DATA_CONST,__const  __MXExtensionCapabilityPlaceCard
+0x1e0fa5fe8  __DATA_CONST,__const  __MXExtensionCapabilityRestaurantQueueing
+0x1e0fa5fe0  __DATA_CONST,__const  __MXExtensionCapabilityRestaurantReservations
+0x1e0fa5fd8  __DATA_CONST,__const  __MXExtensionCapabilityRouting
+0x1e0fa6278  __DATA_CONST,__const  __MXExtensionServiceErrorDomain
+0x1e0fa6280  __DATA_CONST,__const  __MXExtensionServiceErrorOriginalErrorKey
+0x1a7388450  __TEXT,__text  __MapKitConfig_MetadataForIdentifier
+0x1e0fa5ff0  __DATA_CONST,__const  ___MXExtensionCapabilityInternal
+0x1a732076c  __TEXT,__text  __mk_layoutFragmentForLocationInFragments
+0x1a7210ccc  __TEXT,__text  _displayStyleForAnnotatedItemList
+0x1e0fa4b68  __DATA_CONST,__const  _kAnnotationCoordinateKey
+0x1e0fa4b78  __DATA_CONST,__const  _kAnnotationSubtitleKey
+0x1e0fa4b70  __DATA_CONST,__const  _kAnnotationTitleKey
+0x1e0fa5a50  __DATA_CONST,__const  _kBalloonCalloutViewBalloonImageKey
+0x1e0fa5a58  __DATA_CONST,__const  _kBalloonCalloutViewBalloonImageTintColorKey
+0x1a744f9a8  __TEXT,__const  _kCourseAccuracyMax
+0x1e0fa5ac8  __DATA_CONST,__const  _kDirectionsButtonCloseWalkTravelTime
+0x1e0fa5ab0  __DATA_CONST,__const  _kDirectionsButtonMaxDistanceToRequestETA
+0x1e0fa5ad0  __DATA_CONST,__const  _kDirectionsButtonMaxWalkingDistance
+0x1e0fa5ab8  __DATA_CONST,__const  _kDirectionsButtonStaleDistance
+0x1e0fa5ac0  __DATA_CONST,__const  _kDirectionsButtonStaleTimeInterval
+0x1e0fa81f8  __DATA_CONST,__const  _kDoubleBoundsKey
+0x1e0fa8200  __DATA_CONST,__const  _kDoublePositionKey
+0x1e0fa5fa8  __DATA_CONST,__const  _kExtensionNonUI
+0x1e0fa5fa0  __DATA_CONST,__const  _kExtensionUI
+0x1a744faa0  __TEXT,__const  _kMKAnimationDurationLong
+0x1a744fa98  __TEXT,__const  _kMKAnimationDurationRegular
+0x1a744fa90  __TEXT,__const  _kMKAnimationDurationShort
+0x1a744f9c0  __TEXT,__const  _kMKTransitArtworkDefaultPadding
+0x1ebebcc78  __DATA,__data  _kMapKitPlaceCardHeaderTitleLabelBaselineToTop
+0x1e0fa5fb0  __DATA_CONST,__const  _kMapsExtensionPointNameServices
+0x1e0fa5fb8  __DATA_CONST,__const  _kMapsExtensionPointNameServicesUI
+0x1e0fa81f0  __DATA_CONST,__const  _kOpacityKey
+0x1a744fa58  __TEXT,__const  _kStackingViewSeparatorHeightDefault
+0x1a744fa80  __TEXT,__const  _kStackingViewSeparatorHeightExtraLarge
+0x1a744fa60  __TEXT,__const  _kStackingViewSeparatorHeightLarge
+0x1a744fa68  __TEXT,__const  _kStackingViewSeparatorHeightMedium
+0x1a744fa78  __TEXT,__const  _kStackingViewSeparatorHeightNone
+0x1a744fa70  __TEXT,__const  _kStackingViewSeparatorHeightSmall
+0x1a744fcb8  __TEXT,__const  _kTransitUIDisplayRefreshTimeInterval
+0x1a73296e4  __TEXT,__text  _mkAttributionForAnnotatedList
+```
+
+## Private
+
+```
+0x1a71bcab0  __TEXT,__text  +[MKIconManager imageForStyle:size:forScale:format:customIconID:fallbackToBundleIcon:transparent:transitmode:interactive:isCarplay:nightMode:]
+0x1a71bce0c  __TEXT,__text  _MapKitConfig_SpotlightShouldUseStyleAttributes_Metadata_block_invoke_18
+0x1a71bce18  __TEXT,__text  ___142+[MKIconManager imageForStyle:size:forScale:format:customIconID:fallbackToBundleIcon:transparent:transitmode:interactive:isCarplay:nightMode:]_block_invoke
+0x1a71bd024  __TEXT,__text  -[MKMapItem _muid]
+0x1a71bd02c  __TEXT,__text  -[MKMapItem setName:]
+0x1a71bd0ac  __TEXT,__text  -[MKMapItem _labelCoordinate]
+0x1a71bd110  __TEXT,__text  -[MKMapItem place]
+0x1a71bd188  __TEXT,__text  -[MKMapItem _hasMUID]
+0x1a71bd190  __TEXT,__text  -[MKMapItem _isPartiallyClientized]
+0x1a71bd198  __TEXT,__text  -[MKMapItem initWithGeoMapItem:isPlaceHolderPlace:]
+0x1a71bd3a8  __TEXT,__text  -[MKMapItem _coordinate]
+0x1a71bd40c  __TEXT,__text  -[MKMapItem _geoMapItem]
+0x1a71bd414  __TEXT,__text  -[MKMapItem _hasResolvablePartialInformation]
+0x1a71bd528  __TEXT,__text  -[MKMapItem _customIconID]
+0x1a71bd530  __TEXT,__text  -[MKLocationManager setNetworkActivity:]
+0x1a71bd538  __TEXT,__text  -[MKLocationManager setActivityType:]
+0x1a71bd57c  __TEXT,__text  ___42-[MKCoreLocationProvider setActivityType:]_block_invoke
+0x1a71bd5a4  __TEXT,__text  ___42-[MKCoreLocationProvider setActivityType:]_block_invoke_2
+0x1a71bd5b4  __TEXT,__text  -[UIViewController(_MKUIViewControllerContent) accessibilityIdentifier]
+0x1a71bd60c  __TEXT,__text  +[MKUserLocation _setAnnotationClass:]
+0x1a71bd654  __TEXT,__text  +[MKIconManager setDiskCacheURL:]
+0x1a71bd664  __TEXT,__text  ___38+[NSBundle(MKAdditions) _mapkitBundle]_block_invoke
+0x1a71bd6b4  __TEXT,__text  -[MKSystemController isInternalInstall]
+0x1a71bd6f4  __TEXT,__text  +[MKLocationManager setCanMonitorWiFiStatus:]
+0x1a71bd6f8  __TEXT,__text  ___MKGetApplicationStateMonitorLog_block_invoke
+0x1a71bd730  __TEXT,__text  ___36+[MKSystemController sharedInstance]_block_invoke
+0x1a71bd75c  __TEXT,__text  ___42+[MKLocationManager sharedLocationManager]_block_invoke
+0x1a71bd7f4  __TEXT,__text  +[MKApplicationStateMonitor sharedInstance]
+0x1a71bd83c  __TEXT,__text  ___43+[MKApplicationStateMonitor sharedInstance]_block_invoke
+0x1a71bd86c  __TEXT,__text  -[MKApplicationStateMonitor init]
+0x1a71bd8b0  __TEXT,__text  ___MKGetMKLocationManagerLog_block_invoke
+0x1a71bd8e8  __TEXT,__text  ____shouldUseUIApplicationState_block_invoke
+0x1a71bd90c  __TEXT,__text  +[MKLocationManager sharedLocationManager]
+0x1a71bd954  __TEXT,__text  -[MKLocationManager initWithCLLocationManager:]
+0x1a71bdc50  __TEXT,__text  -[MKLocationManager init]
+0x1a71bdc58  __TEXT,__text  -[MKApplicationStateMonitor startObserving]
+0x1a71be0d8  __TEXT,__text  _MKGetApplicationStateMonitorLog
+0x1a71be120  __TEXT,__text  -[MKCoreLocationProvider init]
+0x1a71be128  __TEXT,__text  -[MKLocationManager setLocationProvider:]
+0x1a71be360  __TEXT,__text  ___41-[MKLocationManager setLocationProvider:]_block_invoke
+0x1a71be36c  __TEXT,__text  -[MKMapView initWithFrame:]
+0x1a71be374  __TEXT,__text  -[MKMapView _initWithFrame:allowsAntialiasing:]
+0x1a71be4d4  __TEXT,__text  -[MKMapView setFrame:]
+0x1a71be5cc  __TEXT,__text  -[MKMapView _updateHeadingOrientation]
+0x1a71be634  __TEXT,__text  ____MKShouldDeriveHeadingFromCLBody_block_invoke
+0x1a71be660  __TEXT,__text  __registerStateCaptureCallbacks
+0x1a71be688  __TEXT,__text  ____registerStateCaptureCallbacks_block_invoke
+0x1a71be6ac  __TEXT,__text  -[MKMapView _updateInsetsWithForce:]
+0x1a71be6e0  __TEXT,__text  -[MKMapView _updateInsets]
+0x1a71be9cc  __TEXT,__text  -[MKMapView _setEdgeInsets:explicit:]
+0x1a71bee64  __TEXT,__text  +[UIView(MKAdditions) _mapkit_shouldAdoptImplicitAnimationParameters]
+0x1a71beea4  __TEXT,__text  -[MKMapView _updateVectorKitConsoleFrameWithEdgeInsets]
+0x1a71bef78  __TEXT,__text  -[MKMapView _updateCompassVisibility]
+0x1a71bf178  __TEXT,__text  -[MKMapView _edgeInsets]
+0x1a71bf190  __TEXT,__text  -[MKMapView _canShowControls]
+0x1a71bf244  __TEXT,__text  -[MKMapView canShowCompass]
+0x1a71bf294  __TEXT,__text  -[MKMapView _roomForCompass]
+0x1a71bf330  __TEXT,__text  -[MKMapView canPossiblyShowCompassForInternalControl:]
+0x1a71bf410  __TEXT,__text  -[MKMapView _compassDiameter]
+0x1a71bf424  __TEXT,__text  -[MKSystemController(Internal) isGlassEnabled]
+0x1a71bf458  __TEXT,__text  _MKGetMKLocationManagerLog
+0x1a71bf588  __TEXT,__text  +[MKSystemController sharedInstance]
+0x1a71bf61c  __TEXT,__text  -[MKMapView _updateControlsPosition:]
+0x1a71bf66c  __TEXT,__text  -[MKMapView _updateStackViewPosition]
+0x1a71bf7d4  __TEXT,__text  -[MKMapView _commonInitFromIB:gestureRecognizerHostView:locationManager:showsAttribution:showsAppleLogo:allowsAntialiasing:carDisplayType:]
+0x1a71c09e0  __TEXT,__text  ___MKGetMKMapViewLog_block_invoke
+0x1a71c0a18  __TEXT,__text  -[MKStandardMapConfiguration init]
+0x1a71c0a54  __TEXT,__text  +[NSBundle(MKAdditions) _mapkit_shouldShowAppleLogo]
+0x1a71c0af8  __TEXT,__text  ___29-[MKMapView _canShowControls]_block_invoke
+0x1a71c0b44  __TEXT,__text  _MapKitConfig_MinimumMapViewSizeToShowControlsWidth_Metadata_block_invoke_51
+0x1a71c0b50  __TEXT,__text  _MapKitConfig_MinimumMapViewSizeToShowControlsHeight_Metadata_block_invoke_52
+0x1a71c0b5c  __TEXT,__text  +[MKCompassView _parameterForSize:]
+0x1a71c0c10  __TEXT,__text  ___35+[MKCompassView _parameterForSize:]_block_invoke
+0x1a71c0eb0  __TEXT,__text  ____get_platform_and_version_block_invoke
+0x1a71c0f40  __TEXT,__text  ____get_platform_and_version_block_invoke_2
+0x1a71c0f78  __TEXT,__text  -[MKMapView _centerMapPoint]
+0x1a71c10e0  __TEXT,__text  -[MKMapView _mapViewHasUpdatedCamera]
+0x1a71c121c  __TEXT,__text  -[MKCoreLocationProvider locationManager:didUpdateLocations:]
+0x1a71c1734  __TEXT,__text  _MKGetMKCoreLocationProviderLog
+0x1a71c177c  __TEXT,__text  ___45-[MKCoreLocationProvider authorizationStatus]_block_invoke
+0x1a71c17b0  __TEXT,__text  ___61-[MKCoreLocationProvider locationManager:didUpdateLocations:]_block_invoke_2
+0x1a71c1828  __TEXT,__text  -[MKLocationManager locationProvider:didUpdateLocation:lastKnownNavCourse:]
+0x1a71c1ed8  __TEXT,__text  -[MKAnnotationContainerView _updateAnnotationViewsForReason:updatePositions:]
+0x1a71c2428  __TEXT,__text  -[_MKSpatialColliderPairSet initWithCapacity:]
+0x1a71c2490  __TEXT,__text  -[MKSpatialCollider .cxx_construct]
+0x1a71c249c  __TEXT,__text  -[MKAnnotationContainerView _updateAnnotationViews:]
+0x1a71c2858  __TEXT,__text  -[MKAnnotationView _updateAnchorPosition:alignToPixels:]
+0x1a71c2ac4  __TEXT,__text  _MKGetUserLocationViewLog
+0x1a71c2b0c  __TEXT,__text  -[MKAnnotationView _setMapRotationRadians:]
+0x1a71c2c3c  __TEXT,__text  -[_MKSpatialColliderPairSet .cxx_construct]
+0x1a71c2c54  __TEXT,__text  _MKGetAnnotationsLog
+0x1a71c2c9c  __TEXT,__text  void std::__1::__hash_table<_MKAnnotationViewPair, std::__1::hash<_MKAnnotationViewPair>, std::__1::equal_to<_MKAnnotationViewPair>, std::__1::allocator<_MKAnnotationViewPair> >::__rehash<true>(unsigned long)
+0x1a71c2e68  __TEXT,__text  -[MKSpatialCollider dealloc]
+0x1a71c2ebc  __TEXT,__text  -[MKMapViewInternal startEffects]
+0x1a71c2f2c  __TEXT,__text  -[MKAnnotationView dragState]
+0x1a71c2f40  __TEXT,__text  -[MKSpatialCollider .cxx_destruct]
+0x1a71c2f58  __TEXT,__text  -[_MKSpatialColliderPairSet .cxx_destruct]
+0x1a71c2fac  __TEXT,__text  ___61-[MKCoreLocationProvider locationManager:didUpdateLocations:]_block_invoke
+0x1a71c3014  __TEXT,__text  -[MKLocationManager locationProvider:didUpdateLocation:]
+0x1a71c301c  __TEXT,__text  -[MKCoreLocationProvider _authorizationStatusOnQueue]
+0x1a71c3044  __TEXT,__text  -[MKMapView(UserPositioningInternal) locationManagerUpdatedLocation:]
+0x1a71c3310  __TEXT,__text  -[MKMapView(UserPositioningInternal) _updateUserLocationViewWithLocation:hadUserLocation:]
+0x1a71c388c  __TEXT,__text  -[MKAnnotationView _userLocationProxy]
+0x1a71c38ec  __TEXT,__text  -[MKUserLocation coordinate]
+0x1a71c38f8  __TEXT,__text  -[MKQuadTrie remove:]
+0x1a71c3c78  __TEXT,__text  _insertionNodeForItem(objc_object objcproto12MKAnnotation*, MKQuadTrieNode*)
+0x1a71c3d2c  __TEXT,__text  -[_MKPuckAnnotationView _annotationTrackingInsets]
+0x1a71c3e34  __TEXT,__text  -[_MKPuckAnnotationView _setPresentationCoordinate:]
+0x1a71c3f64  __TEXT,__text  -[MKAnnotationView _setPresentationCoordinate:]
+0x1a71c3fe4  __TEXT,__text  ___49-[MKAnnotationContainerView setUserLocationView:]_block_invoke
+0x1a71c4018  __TEXT,__text  -[MKUserLocation setCoordinate:]
+0x1a71c4084  __TEXT,__text  -[MKMapView _didChangeRegionMidstream:]
+0x1a71c4508  __TEXT,__text  -[MKMapCamera _mapViewStateChanged]
+0x1a71c4514  __TEXT,__text  -[MKQuadTrie insert:]
+0x1a71c45ec  __TEXT,__text  _insert(objc_object objcproto12MKAnnotation*, MKQuadTrieNode*, MKQuadTrie*)
+0x1a71c4938  __TEXT,__text  -[MKAnnotationView viewRepresentation]
+0x1a71c493c  __TEXT,__text  -[MKAnnotationView _presentationCoordinate]
+0x1a71c4988  __TEXT,__text  -[MKQuadTrie contains:]
+0x1a71c4aa0  __TEXT,__text  -[MKMapView setUserTrackingMode:]
+0x1a71c4aa8  __TEXT,__text  -[MKMapView _setUserTrackingMode:animated:fromTrackingButton:]
+0x1a71c5100  __TEXT,__text  -[MKMapView(OverlaysAPI) removeOverlay:]
+0x1a71c514c  __TEXT,__text  -[MKAnnotationManager registerClass:forRepresentationReuseIdentifier:]
+0x1a71c5240  __TEXT,__text  +[NSBundle(MKAdditions) _mapkit_shouldEnableScrollEdgeEffectViewInteraction]
+0x1a71c528c  __TEXT,__text  -[MKQuadTrie itemsPassingRectTest:coordinateTest:]
+0x1a71c53dc  __TEXT,__text  -[VKMapView(MapKitAdditions) _mapkit_configureLabelSizesForContentSizeCategory:]
+0x1a71c550c  __TEXT,__text  __depthFirstApply(MKQuadTrieNode*, MKQuadTrieTraversalDirective  block_pointer(MKQuadTrieNode*))
+0x1a71c5608  __TEXT,__text  ___50-[MKQuadTrie itemsPassingRectTest:coordinateTest:]_block_invoke
+0x1a71c574c  __TEXT,__text  ___31-[MKMapView annotationRectTest]_block_invoke
+0x1a71c581c  __TEXT,__text  -[MKMapView annotationRectTest]
+0x1a71c5908  __TEXT,__text  -[MKMapView annotationCoordinateTest]
+0x1a71c59f4  __TEXT,__text  -[UIViewController(_MKUIViewControllerContent) setAccessibilityIdentifier:]
+0x1a71c5a54  __TEXT,__text  ___38-[MKPriorityToIndexMap addPriorities:]_block_invoke
+0x1a71c5a5c  __TEXT,__text  -[MKAnnotationManager init]
+0x1a71c5b34  __TEXT,__text  _labelScaleFactorForContentSizeCategory
+0x1a71c5cc8  __TEXT,__text  -[MKMapCamera _setMapView:]
+0x1a71c5cd4  __TEXT,__text  -[MKMapView annotationContainerShouldAlignToPixels:]
+0x1a71c5d18  __TEXT,__text  -[MKMapView _mapLayer]
+0x1a71c5d2c  __TEXT,__text  -[MKAnnotationView _staticMapView]
+0x1a71c5d54  __TEXT,__text  -[MKUserLocation location]
+0x1a71c5db8  __TEXT,__text  -[CALayer(MKDoubleLayer) setDoubleBounds:]
+0x1a71c5dbc  __TEXT,__text  -[MKMapView _zoomScale]
+0x1a71c5de8  __TEXT,__text  -[MKAnnotationContainerView setAnnotationViewsRotationRadians:animation:]
+0x1a71c5ef0  __TEXT,__text  -[MKMapView mapLayerDidDraw:]
+0x1a71c60f0  __TEXT,__text  -[MKMapItem _hasAreaHighlightId]
+0x1a71c60f8  __TEXT,__text  -[MKMapItem _venueInfo]
+0x1a71c6100  __TEXT,__text  -[MKMapItem _venueFeatureType]
+0x1a71c6144  __TEXT,__text  -[MKMapItem _styleAttributes]
+0x1a71c614c  __TEXT,__text  -[MKMapItem _labelGeometry]
+0x1a71c6154  __TEXT,__text  -[MKMapItem _enhancedPlacement]
+0x1a71c615c  __TEXT,__text  -[MKLocationManager isAuthorizedForPreciseLocation]
+0x1a71c6268  __TEXT,__text  ___51-[MKLocationManager isAuthorizedForPreciseLocation]_block_invoke
+0x1a71c62cc  __TEXT,__text  -[MKLabelSelectionFilter initWithMapFeatureOptions:]
+0x1a71c6318  __TEXT,__text  -[MKMapView(MKNonARC) setDelegate:]
+0x1a71c6520  __TEXT,__text  -[MKMapView _setSafeDelegate:]
+0x1a71c6534  __TEXT,__text  -[MKLabelSelectionFilter selectionHandler]
+0x1a71c653c  __TEXT,__text  -[MKMapView _updateShowHeadingIndicator]
+0x1a71c66ac  __TEXT,__text  -[MKMapView(MKHeadingAdditions) _showHeadingIndicator]
+0x1a71c66c4  __TEXT,__text  -[MKMapView(MKHeadingAdditions) _setShowHeadingIndicator:]
+0x1a71c680c  __TEXT,__text  -[MKMapView _shouldSupportAlwaysShowHeadingIndicator]
+0x1a71c684c  __TEXT,__text  -[MKMapView _enableScrollEdgeEffectViewInteraction]
+0x1a71c6948  __TEXT,__text  -[MKMapView _safeDelegate]
+0x1a71c6970  __TEXT,__text  -[MKMapView setSelectableMapFeatures:]
+0x1a71c6a28  __TEXT,__text  -[MKLabelSelectionFilter mapFeatureOptions]
+0x1a71c6a30  __TEXT,__text  -[MKLabelSelectionFilter .cxx_destruct]
+0x1a71c6a64  __TEXT,__text  -[MKMapView _setAlwaysShowHeadingIndicatorIfSupported:]
+0x1a71c6af8  __TEXT,__text  ___45-[MKSystemController supportsAlwaysOnCompass]_block_invoke
+0x1a71c6b20  __TEXT,__text  -[MKMapView _updateTrackingVisibility]
+0x1a71c6b78  __TEXT,__text  -[MKMapView _setTrackingButtonVisible:animationAllowed:]
+0x1a71c6c88  __TEXT,__text  -[MKMapView _updatePitchButtonVisibility]
+0x1a71c6cec  __TEXT,__text  -[MKMapView _setPitchButtonVisible:animationAllowed:]
+0x1a71c6e0c  __TEXT,__text  -[MKMapView _updateAppleLogoVisibility]
+0x1a71c709c  __TEXT,__text  -[MKMapView _showOrHideScaleIfNecessary:]
+0x1a71c7330  __TEXT,__text  -[MKMapView _updateScalePosition]
+0x1a71c773c  __TEXT,__text  -[MKMapView _currentEnvironmentNameFrame]
+0x1a71c78d4  __TEXT,__text  -[MKMapView _layoutAttribution]
+0x1a71c8048  __TEXT,__text  _MKGetMKMapViewLog
+0x1a71c8090  __TEXT,__text  -[MKMapConfiguration initWithElevationStyle:]
+0x1a71c80dc  __TEXT,__text  +[MKMapConfiguration _cartographicConfigurationForMapConfiguration:]
+0x1a71c8420  __TEXT,__text  -[MKMapView _setCompassVisible:animationAllowed:force:]
+0x1a71c8694  __TEXT,__text  -[MKMapView setShowsScale:]
+0x1a71c86e4  __TEXT,__text  -[MKMapView _setScaleVisibility:]
+0x1a71c870c  __TEXT,__text  -[MKMapView setPitchButtonVisibility:]
+0x1a71c8768  __TEXT,__text  -[MKMapView setShowsUserTrackingButton:]
+0x1a71c878c  __TEXT,__text  -[MKMapView _setLabelEdgeInsets:]
+0x1a71c87a4  __TEXT,__text  -[MKMapView _updateLabelEdgeInsets]
+0x1a71c8910  __TEXT,__text  -[MKMapView _setLabelEdgeWidths:]
+0x1a71c8928  __TEXT,__text  -[MKMapView _updateLabelEdgeWidths]
+0x1a71c8a9c  __TEXT,__text  -[MKMapView setShowsUserLocation:]
+0x1a71c8b90  __TEXT,__text  -[MKMapView showsUserLocation]
+0x1a71c8ba8  __TEXT,__text  -[MKMapView(UserPositioningInternal) startUpdatingUserLocation]
+0x1a71c8dec  __TEXT,__text  -[MKUserLocation init]
+0x1a71c8e7c  __TEXT,__text  -[MKUserLocation isUpdating]
+0x1a71c8e84  __TEXT,__text  -[MKUserLocation setUpdating:]
+0x1a71c8e8c  __TEXT,__text  -[MKLocationManager startLocationUpdateWithObserver:]
+0x1a71c8f30  __TEXT,__text  -[MKLocationManager _startLocationUpdateWithObserver:desiredAccuracy:]
+0x1a71c920c  __TEXT,__text  ___45-[MKCoreLocationProvider setDesiredAccuracy:]_block_invoke
+0x1a71c9234  __TEXT,__text  -[MKLocationManager _setTrackingLocation:]
+0x1a71c9424  __TEXT,__text  ___53-[MKLocationManager _initializeAuthStatusIfNecessary]_block_invoke
+0x1a71c950c  __TEXT,__text  -[MKMapView setShowsAttribution:]
+0x1a71c9538  __TEXT,__text  +[MKMapAttributionImage badgeImageForView:]
+0x1a71c96c4  __TEXT,__text  -[MKMapAttributionImage initWithAttributions:type:]
+0x1a71c9bc0  __TEXT,__text  __attributionImagesForType
+0x1a71c9d24  __TEXT,__text  -[MKMapAttributionImage .cxx_destruct]
+0x1a71c9d30  __TEXT,__text  ___43+[MKMapAttributionImage badgeImageForView:]_block_invoke
+0x1a71c9dd4  __TEXT,__text  -[MKMapView setShowsCompass:]
+0x1a71c9de8  __TEXT,__text  ___50-[MKCoreLocationProvider _createCLLocationManager]_block_invoke
+0x1a71c9e34  __TEXT,__text  -[MKCoreLocationProvider _createCLLocationManager]
+0x1a71ca424  __TEXT,__text  ___54-[MKCoreLocationProvider _beginWaitingForAuthCallback]_block_invoke
+0x1a71ca464  __TEXT,__text  ___47-[MKCoreLocationProvider accuracyAuthorization]_block_invoke
+0x1a71ca498  __TEXT,__text  -[MKLocationManager isLocationServicesApproved]
+0x1a71ca4d8  __TEXT,__text  -[MKMapView _setCompassInsets:]
+0x1a71ca4e0  __TEXT,__text  -[MKScaleView mapView]
+0x1a71ca508  __TEXT,__text  -[MKCoreLocationProvider _updateAuthorizationStatus]
+0x1a71ca664  __TEXT,__text  -[MKAnnotationContainerView _performStateUpdatesIfNeeded]
+0x1a71ca7a8  __TEXT,__text  -[MKAnnotationView alpha]
+0x1a71ca7bc  __TEXT,__text  -[MKMapView mapType]
+0x1a71ca930  __TEXT,__text  -[MKMapView _zoomLevel]
+0x1a71ca948  __TEXT,__text  __MKLocalizedStringFromThisBundle
+0x1a71ca9b8  __TEXT,__text  -[MKMapView _canEnter3DMode]
+0x1a71caa3c  __TEXT,__text  -[MKPitchButton _setBackgroundStyle:]
+0x1a71cac78  __TEXT,__text  ___139-[MKMapView _commonInitFromIB:gestureRecognizerHostView:locationManager:showsAttribution:showsAppleLogo:allowsAntialiasing:carDisplayType:]_block_invoke
+0x1a71cad80  __TEXT,__text  +[MKTrafficSupport sharedTrafficSupport]
+0x1a71cadc8  __TEXT,__text  -[MKLocationManager listenForLocationUpdates:]
+0x1a71cae58  __TEXT,__text  -[MKLocationManager lastLocation]
+0x1a71cae9c  __TEXT,__text  -[MKLocationManager hasLocation]
+0x1a71caed8  __TEXT,__text  -[MKLocationManager setFusionInfoEnabled:]
+0x1a71caf1c  __TEXT,__text  ___47-[MKCoreLocationProvider setFusionInfoEnabled:]_block_invoke
+0x1a71caf48  __TEXT,__text  -[MKLocationManager stopListeningForLocationUpdates:]
+0x1a71cafb0  __TEXT,__text  -[MKScaleView intrinsicContentSize]
+0x1a71cb098  __TEXT,__text  -[MKScaleView alignmentRectInsets]
+0x1a71cb0c4  __TEXT,__text  -[MKMapView _compassInsets]
+0x1a71cb0dc  __TEXT,__text  -[MKScaleView layoutSubviews]
+0x1a71cb8c0  __TEXT,__text  -[_MKScaleUnitsView setRTL:]
+0x1a71cb8d4  __TEXT,__text  -[MKScaleView _calculateSegments]
+0x1a71cbb38  __TEXT,__text  -[_MKScaleUnitsView canDisplaySegment:]
+0x1a71cbb90  __TEXT,__text  +[NSBundle(MKAdditions) _mapkitBundle]
+0x1a71cbbd8  __TEXT,__text  -[NSBundle(MKAdditions) _mapkit_localizedStringForKey:value:table:]
+0x1a71cbc88  __TEXT,__text  -[MKMapView pitchButtonVisibility]
+0x1a71cbc9c  __TEXT,__text  -[MKPitchButton setVisibility:]
+0x1a71cbcc0  __TEXT,__text  -[UIView(MKCrossPlatformOperations) _mapkit_userInterfaceDirection]
+0x1a71cbcc4  __TEXT,__text  -[MKMapView _compassInsetEdges]
+0x1a71cbd1c  __TEXT,__text  -[MKUserLocation setExpectedHeadingUpdateInterval:]
+0x1a71cbd24  __TEXT,__text  -[MKUserLocation setHeading:]
+0x1a71cbd2c  __TEXT,__text  ___45-[MKCoreLocationProvider _authStatusReceived]_block_invoke
+0x1a71cbd3c  __TEXT,__text  -[MKCoreLocationProvider locationManagerDidChangeAuthorization:]
+0x1a71cbec0  __TEXT,__text  ___40+[MKTrafficSupport sharedTrafficSupport]_block_invoke
+0x1a71cbef0  __TEXT,__text  ___41-[MKTrafficSupport setupTrafficIncidents]_block_invoke
+0x1a71cbfc0  __TEXT,__text  ___MKRegisterGEOMultitaskingNotifications_block_invoke
+0x1a71cc034  __TEXT,__text  ___36-[MKSystemController supports3DMaps]_block_invoke
+0x1a71cc05c  __TEXT,__text  -[MKMapView _registerTraitCollectionObservation]
+0x1a71cc15c  __TEXT,__text  -[MKMapCameraZoomRange init]
+0x1a71cc168  __TEXT,__text  ___91-[MKBasicMapView initWithFrame:andGlobe:shouldRasterize:allowsAntialiasing:carDisplayType:]_block_invoke
+0x1a71cc17c  __TEXT,__text  -[MKBasicMapView _updateBackgroundState:]
+0x1a71cc318  __TEXT,__text  _MKGetMKDefaultLog
+0x1a71cc360  __TEXT,__text  ___MKGetMKDefaultLog_block_invoke
+0x1a71cc398  __TEXT,__text  -[MKBasicMapView setRendersInBackground:]
+0x1a71cc488  __TEXT,__text  -[MKBasicMapView _updateBackgroundState]
+0x1a71cc598  __TEXT,__text  -[VKMapView(MapKitAdditions) _mapkit_configureFromDefaults]
+0x1a71cc5d4  __TEXT,__text  -[NSString(CGFloat) _mapkit_cgFloatValue]
+0x1a71cc5d8  __TEXT,__text  -[MKMapView registerClass:forAnnotationViewWithReuseIdentifier:]
+0x1a71cc5ec  __TEXT,__text  -[MKMapView _iconsShouldAlignToPixels]
+0x1a71cc6a4  __TEXT,__text  -[MKMapView _isHandlingUserEvent]
+0x1a71cc6b8  __TEXT,__text  -[MKMapView preferredConfiguration]
+0x1a71cc6cc  __TEXT,__text  -[MKStandardMapConfiguration showsTraffic]
+0x1a71cc6d0  __TEXT,__text  +[_MKURLBuilder URLForCollectionStorage:]
+0x1a71cc6dc  __TEXT,__text  +[MKAppImageManager sharedImageManager]
+0x1a71cc6e4  __TEXT,__text  -[MKLocationManager isLocationServicesAvailable]
+0x1a71cc6e8  __TEXT,__text  ___58-[MKAppImageManager URLSession:task:didCompleteWithError:]_block_invoke
+0x1a71cc72c  __TEXT,__text  -[MKAppImageManager URLSession:task:didCompleteWithError:]
+0x1a71ccd2c  __TEXT,__text  _MKGetAppImageManagerLog
+0x1a71ccd74  __TEXT,__text  -[_MKAppImageManagerContainer .cxx_destruct]
+0x1a71ccdac  __TEXT,__text  ___55-[_MKUserTrackingButtonController setUserTrackingView:]_block_invoke
+0x1a71cce3c  __TEXT,__text  -[MKAppImageManager loadAppImageAtURL:completionHandler:]
+0x1a71cd15c  __TEXT,__text  ___57-[MKAppImageManager loadAppImageAtURL:completionHandler:]_block_invoke
+0x1a71cd1fc  __TEXT,__text  -[_MKUserLocationViewImageProvider _updateContactImage]
+0x1a71cd4ac  __TEXT,__text  -[_MKUserLocationViewImageProvider _monogrammer]
+0x1a71cd500  __TEXT,__text  _getCNMonogrammerClass
+0x1a71cd5d4  __TEXT,__text  +[MKPOIEnrichmentAvailibility shouldShowRatingsCallToActionForMapItem:]
+0x1a71cd654  __TEXT,__text  ___59-[MKCoreLocationProvider locationManager:didUpdateHeading:]_block_invoke
+0x1a71cd69c  __TEXT,__text  -[MKMapView(MKHeadingAdditions) locationManagerUpdatedHeading:]
+0x1a71cd818  __TEXT,__text  -[_MKPuckAnnotationView setHeadingAccuracy:]
+0x1a71cd86c  __TEXT,__text  -[MKMapConfiguration set_showsTraffic:]
+0x1a71cd874  __TEXT,__text  -[MKMapView _setPreferredConfiguration:onInit:]
+0x1a71cda44  __TEXT,__text  -[MKMapView _unregisterConfigurationObservers]
+0x1a71cda64  __TEXT,__text  -[MKMapView _registerConfigurationObservers]
+0x1a71cda88  __TEXT,__text  -[MKMapView _updateShowsTraffic]
+0x1a71cdb00  __TEXT,__text  -[MKMapView _updatePointOfInterestFilter]
+0x1a71cdbb4  __TEXT,__text  -[MKMapConfiguration elevationStyle]
+0x1a71cdbbc  __TEXT,__text  -[MKMapView _labelEdgeWidthsForScrollEdgeEffectInsets:]
+0x1a71cdbd4  __TEXT,__text  -[MKMapConfiguration setElevationStyle:]
+0x1a71cdbdc  __TEXT,__text  ___MKGetMKCoreLocationProviderLog_block_invoke
+0x1a71cdc14  __TEXT,__text  __VKMapTypeForMKCartographicConfiguration
+0x1a71cdd20  __TEXT,__text  -[MKMapConfiguration _pointOfInterestFilter]
+0x1a71cdd28  __TEXT,__text  ___24-[MKUsageCounter count:]_block_invoke
+0x1a71cddac  __TEXT,__text  -[MKMapView _updateShowsHiking]
+0x1a71cdeb0  __TEXT,__text  -[MKMapConfiguration _showsHiking]
+0x1a71cdeb8  __TEXT,__text  -[MKMapConfiguration _showsTopographicFeatures]
+0x1a71cdec0  __TEXT,__text  -[MKMapView _updateCartographicConfigurationOnInit:]
+0x1a71ce05c  __TEXT,__text  -[MKStandardMapConfiguration emphasisStyle]
+0x1a71ce070  __TEXT,__text  -[MKStandardMapConfiguration _allowsTerrainModePromotion]
+0x1a71ce090  __TEXT,__text  -[MKMapView setPreferredConfiguration:]
+0x1a71ce098  __TEXT,__text  -[MKStandardMapConfiguration _removeObserver:context:]
+0x1a71ce118  __TEXT,__text  -[MKMapConfiguration _removeObserver:context:]
+0x1a71ce1cc  __TEXT,__text  -[MKMapView _shouldDeselectMapFeatureForNewPreferredConfiguration:]
+0x1a71ce324  __TEXT,__text  ___67-[MKMapView _shouldDeselectMapFeatureForNewPreferredConfiguration:]_block_invoke
+0x1a71ce3c8  __TEXT,__text  -[MKStandardMapConfiguration copyWithZone:]
+0x1a71ce424  __TEXT,__text  -[MKMapConfiguration copyWithZone:]
+0x1a71ce4a0  __TEXT,__text  -[MKMapConfiguration .cxx_destruct]
+0x1a71ce4ac  __TEXT,__text  -[MKMapConfiguration _addObserver:options:context:]
+0x1a71ce580  __TEXT,__text  -[MKMapView _setCartographicConfiguration:onInit:animated:]
+0x1a71ceaa0  __TEXT,__text  __VKEmphasisForMKCartographicConfiguration
+0x1a71ceb6c  __TEXT,__text  -[MKMapConfiguration _showsTraffic]
+0x1a71ceb74  __TEXT,__text  __VKMapKitClientModeForMKCartographicConfiguration
+0x1a71cebf0  __TEXT,__text  __VKTerrainModeForMKCartographicConfiguration
+0x1a71cec70  __TEXT,__text  __VKMapKitUsageForMKCartographicConfiguration
+0x1a71cecfc  __TEXT,__text  -[MKMapView _supportsVKMapType:]
+0x1a71cee0c  __TEXT,__text  -[MKMapView _canShowFlyover]
+0x1a71cee20  __TEXT,__text  -[MKMapView _showsNightMode]
+0x1a71cee44  __TEXT,__text  -[MKMapView _mapDisplayStyle]
+0x1a71cee58  __TEXT,__text  -[MKMapView _updateAppearanceIfNeeded]
+0x1a71cf100  __TEXT,__text  -[MKMapView _controlsUserInterfaceStyleOverride]
+0x1a71cf164  __TEXT,__text  -[MKMapView _updateIconsShouldAlignToPixels]
+0x1a71cf1e8  __TEXT,__text  -[MKScaleView mapType]
+0x1a71cf1fc  __TEXT,__text  -[_MKLegendString drawInContext:]
+0x1a71cf2bc  __TEXT,__text  -[MKMapView centerCoordinate]
+0x1a71cf2d0  __TEXT,__text  -[MKLocationManager currentLocation]
+0x1a71cf350  __TEXT,__text  ___55-[_MKUserLocationViewImageProvider _updateContactImage]_block_invoke
+0x1a71cf3ec  __TEXT,__text  -[_MKUserLocationView _setBalloonImage:]
+0x1a71cf454  __TEXT,__text  -[_MKUserLocationView _setBalloonImageTintColor:]
+0x1a71cf504  __TEXT,__text  -[MKMapView(UserPositioningInternal) userLocationView]
+0x1a71cf518  __TEXT,__text  -[MKMapView(MKHeadingAdditions) _startTrackingHeading]
+0x1a71cf564  __TEXT,__text  -[MKMapView(MKHeadingAdditions) _useVehicleHeading]
+0x1a71cf57c  __TEXT,__text  -[MKMapView(MKHeadingAdditions) _updateHeading:animated:]
+0x1a71cf7e0  __TEXT,__text  -[MKMapView userLocation]
+0x1a71cf85c  __TEXT,__text  -[MKMapView(MKHeadingAdditions) _updateRotationSupported]
+0x1a71cf8f8  __TEXT,__text  -[MKMapView(MKHeadingAdditions) _rotationPossible]
+0x1a71cf950  __TEXT,__text  -[MKLocationManager locationProvider]
+0x1a71cf984  __TEXT,__text  -[MKLocationManager isAuthorizationNotDetermined]
+0x1a71cfa60  __TEXT,__text  -[MKLocationManager isLocationServicesPossiblyAvailable]
+0x1a71cfaf8  __TEXT,__text  -[MKLocationManager isLocationServicesAuthorizationNeeded]
+0x1a71cfb34  __TEXT,__text  -[MKLocationManager isLocationServicesDenied]
+0x1a71cfb70  __TEXT,__text  -[MKLocationManagerSingleUpdater locationManagerUpdatedLocation:]
+0x1a71cfc44  __TEXT,__text  -[MKAnnotationView _mapView]
+0x1a71cfcb8  __TEXT,__text  -[_MKCompassViewStyleParameter textColor]
+0x1a71cfcc0  __TEXT,__text  -[_MKCompassDirectionImageKey compassViewStyle]
+0x1a71cfcc8  __TEXT,__text  -[_MKCompassDirectionImageKey copyWithZone:]
+0x1a71cfd04  __TEXT,__text  -[MKCompassButton _setListeningForYawUpdateNotifications:]
+0x1a71cfee8  __TEXT,__text  -[MKCompassView setMapHeading:]
+0x1a71d000c  __TEXT,__text  -[MKCompassButton _updateVisibility]
+0x1a71d01c8  __TEXT,__text  -[MKCompassButton _updateListeningForYawNotifications]
+0x1a71d0228  __TEXT,__text  -[MKMapView _postDidUpdateYawNotification]
+0x1a71d035c  __TEXT,__text  -[MKCompassButton mapViewDidUpdateYawNotification:]
+0x1a71d0434  __TEXT,__text  -[MKCompassButton _isListeningForYawUpdateNotifications]
+0x1a71d0448  __TEXT,__text  -[MKScaleView initWithFrame:]
+0x1a71d0918  __TEXT,__text  -[_MKScaleUnitsView _calculateLegend:]
+0x1a71d0d4c  __TEXT,__text  -[MKMapView isPitchEnabled]
+0x1a71d0d88  __TEXT,__text  -[_MKCompassViewStyleParameter imageNamePart]
+0x1a71d0d90  __TEXT,__text  ___75-[MKCompassView _compassDirectionImageForKey:sizeParams:styleParams:scale:]_block_invoke
+0x1a71d0dc0  __TEXT,__text  ___75-[MKCompassView _compassDirectionImageForKey:sizeParams:styleParams:scale:]_block_invoke_2
+0x1a71d0e1c  __TEXT,__text  +[MKScaleView scaleViewWithMapView:]
+0x1a71d0e64  __TEXT,__text  -[MKScaleView updateLocale:]
+0x1a71d0f00  __TEXT,__text  -[_MKLegendString actionForKey:]
+0x1a71d0f08  __TEXT,__text  -[MKAnnotationView _calloutView]
+0x1a71d0f1c  __TEXT,__text  -[_MKUserTrackingButton _repositionViews]
+0x1a71d0fa4  __TEXT,__text  -[_MKUserTrackingButton setControlSize:]
+0x1a71d0fd8  __TEXT,__text  ___31+[MKUsageCounter sharedCounter]_block_invoke
+0x1a71d1008  __TEXT,__text  -[_MKUserTrackingButton setMapView:]
+0x1a71d110c  __TEXT,__text  -[MKMapView userTrackingMode]
+0x1a71d1120  __TEXT,__text  -[_MKUserTrackingButton _updateForState:]
+0x1a71d1124  __TEXT,__text  -[_MKUserTrackingButton _defaultImageForUserTrackingMode:controlState:]
+0x1a71d11f4  __TEXT,__text  -[MKUserTrackingButton _intrinsicContentSizeInvalidatedForChildView:]
+0x1a71d11f8  __TEXT,__text  -[_MKUserTrackingButton _imageEdgeInsetsForUserTrackingMode:]
+0x1a71d1338  __TEXT,__text  -[_MKUserTrackingButton _isHighlightedForState:]
+0x1a71d1358  __TEXT,__text  -[MKUserTrackingButton setBackgroundStyle:]
+0x1a71d15f0  __TEXT,__text  -[MKUserTrackingButton _setControlSize:]
+0x1a71d1664  __TEXT,__text  +[MKPitchButton pitchButtonWithMapView:]
+0x1a71d16ac  __TEXT,__text  -[MKPitchButton initWithMapView:]
+0x1a71d1910  __TEXT,__text  -[MKPitchButton _updateControlSize]
+0x1a71d19d0  __TEXT,__text  +[UIImageSymbolConfiguration(MKCrossPlatformOperations) _mapkit_configurationWithPointSize:weight:]
+0x1a71d1a18  __TEXT,__text  +[UIImageSymbolConfiguration(MKCrossPlatformOperations) _symbolWeightForFontWeight:]
+0x1a71d1a1c  __TEXT,__text  -[MKPitchButton setMapView:]
+0x1a71d1c94  __TEXT,__text  -[MKPitchButton _updateState]
+0x1a71d1db0  __TEXT,__text  -[MKPitchButton _updateHiddenState]
+0x1a71d1ec0  __TEXT,__text  -[MKPitchButton visibility]
+0x1a71d1ed4  __TEXT,__text  -[MKMapView _isPitched]
+0x1a71d1ee8  __TEXT,__text  +[UIImage(MKCrossPlatformOperations) _mapkit_systemImageNamed:]
+0x1a71d1ef4  __TEXT,__text  -[MKPitchButton _setControlSize:]
+0x1a71d1f40  __TEXT,__text  -[MKCompassButton initWithFrame:mapView:]
+0x1a71d1f48  __TEXT,__text  -[MKCompassView initWithFrame:]
+0x1a71d1fdc  __TEXT,__text  -[_MKCompassViewStyleParameter setImageNamePart:]
+0x1a71d1fe4  __TEXT,__text  -[_MKCompassViewStyleParameter setTextColor:]
+0x1a71d1ff0  __TEXT,__text  -[MKUserTrackingButton initWithFrame:button:]
+0x1a71d2220  __TEXT,__text  -[MKUserTrackingButton setMapView:]
+0x1a71d2280  __TEXT,__text  -[MKMapView hasUserLocation]
+0x1a71d22c4  __TEXT,__text  -[_MKUserTrackingButton _imageForUserTrackingMode:controlState:]
+0x1a71d23b0  __TEXT,__text  +[MKCompassButton compassButtonWithMapView:]
+0x1a71d23b8  __TEXT,__text  -[MKCompassView _commonInit]
+0x1a71d2578  __TEXT,__text  -[MKCompassView _populateCompassPointLocalizedAbbreviationsArray]
+0x1a71d266c  __TEXT,__text  -[MKCompassView setCompassViewSize:style:]
+0x1a71d26dc  __TEXT,__text  ___36+[MKCompassView _parameterForStyle:]_block_invoke
+0x1a71d28ac  __TEXT,__text  -[_MKCompassViewStyleParameter setBackgroundColor:]
+0x1a71d28b8  __TEXT,__text  -[_MKCompassViewStyleParameter setBorderColor:]
+0x1a71d28c4  __TEXT,__text  -[_MKCompassViewStyleParameter setShadowColor:]
+0x1a71d28d0  __TEXT,__text  -[_MKScaleUnitsView fontSize]
+0x1a71d28e4  __TEXT,__text  -[_MKUserLocationView layoutSubviews]
+0x1a71d2930  __TEXT,__text  -[_MKPuckAnnotationView _updateInnerCourseRotation]
+0x1a71d2a40  __TEXT,__text  -[UIView(MapKitExtras) _mapkit_currentScreenScale]
+0x1a71d2a44  __TEXT,__text  -[_MKUserLocationView _updateMaxRadiusToShowAccuracyRing]
+0x1a71d2bc8  __TEXT,__text  -[_MKUserLocationInternalView _mapView]
+0x1a71d2c08  __TEXT,__text  -[_MKUserLocationInternalView parentView]
+0x1a71d2c30  __TEXT,__text  -[_MKPuckAnnotationView _locationAccuracyInScreenPoints]
+0x1a71d2d60  __TEXT,__text  -[_MKUserLocationInternalView _pointsForDistance:]
+0x1a71d2de0  __TEXT,__text  -[_MKPuckAnnotationView _updateAccuracyOpacityForRadius:duration:]
+0x1a71d3094  __TEXT,__text  -[MKMapView _forceManifestUpdateIfNecessary]
+0x1a71d30bc  __TEXT,__text  ___44-[MKMapView _forceManifestUpdateIfNecessary]_block_invoke
+0x1a71d3188  __TEXT,__text  _MapKitConfig_MapViewProcessShouldForceManifestUpdate_Metadata_block_invoke_30
+0x1a71d3194  __TEXT,__text  ___64-[MKCoreLocationProvider locationManagerDidChangeAuthorization:]_block_invoke
+0x1a71d31dc  __TEXT,__text  -[MKLocationManager locationProviderDidChangeAuthorizationStatus:]
+0x1a71d33ec  __TEXT,__text  ___66-[MKLocationManager locationProviderDidChangeAuthorizationStatus:]_block_invoke_2
+0x1a71d345c  __TEXT,__text  -[MKLocationManager _syncLocationProviderWithTracking]
+0x1a71d357c  __TEXT,__text  ___47-[MKCoreLocationProvider startUpdatingLocation]_block_invoke
+0x1a71d3620  __TEXT,__text  -[MKMapView(UserPositioningInternal) locationManagerApprovalDidChange:]
+0x1a71d3704  __TEXT,__text  -[MKMapView _alwaysShowHeadingIndicator]
+0x1a71d371c  __TEXT,__text  ___46-[MKCoreLocationProvider startUpdatingHeading]_block_invoke
+0x1a71d37c0  __TEXT,__text  -[_MKUserTrackingButtonController _authorizationStatusChanged:]
+0x1a71d384c  __TEXT,__text  -[_MKPuckAnnotationView _updateFromMap]
+0x1a71d398c  __TEXT,__text  -[MKCompassView stringForCompassPoint:]
+0x1a71d39ac  __TEXT,__text  -[_MKCompassDirectionImageKey hash]
+0x1a71d39ec  __TEXT,__text  -[_MKCompassDirectionImageKey size]
+0x1a71d39f4  __TEXT,__text  -[_MKCompassDirectionImageKey .cxx_destruct]
+0x1a71d3a00  __TEXT,__text  +[MKThreadContext currentContext]
+0x1a71d3a8c  __TEXT,__text  -[MKCompassView _adaptCompassStyleToUserInterfaceStyle]
+0x1a71d3af4  __TEXT,__text  -[MKCompassView mapHeading]
+0x1a71d3c08  __TEXT,__text  -[MKCompassView _updateImageForCompassDirection:]
+0x1a71d3e24  __TEXT,__text  -[_MKCompassDirectionImageKey initWithSize:headingString:compassViewStyle:]
+0x1a71d3ebc  __TEXT,__text  -[MKCompassView _compassDirectionImageForKey:sizeParams:styleParams:scale:]
+0x1a71d41e8  __TEXT,__text  -[_MKCompassDirectionImageKey isEqual:]
+0x1a71d42cc  __TEXT,__text  -[_MKCompassDirectionImageKey headingString]
+0x1a71d42d4  __TEXT,__text  -[MKMapView didMoveToSuperview]
+0x1a71d4320  __TEXT,__text  -[MKMapView updateLayoutGuides]
+0x1a71d4414  __TEXT,__text  -[MKMapView _clearLayoutGuides]
+0x1a71d44ac  __TEXT,__text  +[MKUserTrackingButton userTrackingButtonWithMapView:]
+0x1a71d44f4  __TEXT,__text  -[MKUserTrackingButton init]
+0x1a71d4550  __TEXT,__text  +[_MKUserTrackingButton buttonWithMapView:]
+0x1a71d4554  __TEXT,__text  +[_MKUserTrackingButton buttonWithUserTrackingView:]
+0x1a71d45b0  __TEXT,__text  +[_MKUserTrackingButton buttonWithUserTrackingView:withType:]
+0x1a71d45b8  __TEXT,__text  +[_MKUserTrackingButton buttonWithUserTrackingView:withType:applyDefaultImageIfNeeded:]
+0x1a71d4788  __TEXT,__text  -[_MKUserTrackingButton sizeThatFits:]
+0x1a71d47b4  __TEXT,__text  -[_MKUserTrackingButton inMiniBar]
+0x1a71d47c8  __TEXT,__text  -[_MKUserTrackingButtonController _symbolPointSize]
+0x1a71d4870  __TEXT,__text  -[_MKUserTrackingButton behavior]
+0x1a71d4878  __TEXT,__text  -[_MKUserTrackingButton _imageForState:controlState:]
+0x1a71d4960  __TEXT,__text  +[UIImage(MapKitExtras) _mapkit_imageNamed:]
+0x1a71d49d4  __TEXT,__text  -[MKCompassView _updateLayerForCurrentSizeAndStyle]
+0x1a71d4bfc  __TEXT,__text  -[MKCompassView compassViewSize]
+0x1a71d4c10  __TEXT,__text  -[MKCompassView compassViewStyle]
+0x1a71d4cdc  __TEXT,__text  ___swift_allocate_boxed_opaque_existential_1
+0x1a71d4cdc  __TEXT,__text  ___swift_allocate_boxed_opaque_existential_1
+0x1a71d4d2c  __TEXT,__text  -[MKMapView _startEffects]
+0x1a71d4d50  __TEXT,__text  ___39-[MKSystemController overrideBlurStyle]_block_invoke
+0x1a71d4d7c  __TEXT,__text  -[_MKPuckAnnotationView _setAccuracyRingStrokeOpacityThreshold:]
+0x1a71d4dd8  __TEXT,__text  -[MKAnnotationManager selectedAnnotationRepresentation]
+0x1a71d4e0c  __TEXT,__text  -[_MKPuckAnnotationView _updateToReflectLocationAccuracyWithDuration:allowShowHideAnimation:]
+0x1a71d51e4  __TEXT,__text  -[MKScaleView _updateVisibility]
+0x1a71d53d8  __TEXT,__text  -[MKScaleView useLightText]
+0x1a71d53ec  __TEXT,__text  -[MKMapView _setCompassInsets:animated:]
+0x1a71d5450  __TEXT,__text  -[MKCompassView movedToWindow:]
+0x1a71d545c  __TEXT,__text  -[MKCompassView _updateStyle]
+0x1a71d5488  __TEXT,__text  -[MKMapView didMoveToWindow]
+0x1a71d556c  __TEXT,__text  -[MKMapView _registerSceneLifecycleNotifications]
+0x1a71d569c  __TEXT,__text  -[MKAttributionLabel .cxx_destruct]
+0x1a71d56e4  __TEXT,__text  -[MKMapView setLayoutMargins:]
+0x1a71d573c  __TEXT,__text  -[MKMapView layoutMarginsDidChange]
+0x1a71d578c  __TEXT,__text  -[MKScaleView shouldUpdateScaleNotification:]
+0x1a71d5790  __TEXT,__text  -[MKMapView _setEdgeInsets:]
+0x1a71d5798  __TEXT,__text  -[MKMapView willMoveToWindow:]
+0x1a71d59e0  __TEXT,__text  -[MKMapView _updateEffects]
+0x1a71d5b08  __TEXT,__text  -[MKMapView _unregisterSceneLifecycleNotifications]
+0x1a71d5bf0  __TEXT,__text  -[MKMapView _geoapLogMapViewEngagementIfRequired]
+0x1a71d5c34  __TEXT,__text  -[UIScreen(MKBasicMapViewAdditions) _mapkit_display]
+0x1a71d5d08  __TEXT,__text  -[MKMapView _issueDatasetCheckinCall]
+0x1a71d5da4  __TEXT,__text  -[MKAnnotationManager updateVisibleAnnotations]
+0x1a71d61d8  __TEXT,__text  -[MKAnnotationView _updateFromMap]
+0x1a71d625c  __TEXT,__text  -[MKUserLocationAnnotation coordinate]
+0x1a71d6264  __TEXT,__text  -[MKAnnotationView anchor]
+0x1a71d62dc  __TEXT,__text  -[MKMapView annotationContainer:isAnnotationView:validForDisplayAtPoint:]
+0x1a71d63b8  __TEXT,__text  -[MKAnnotationView _setHidden:forReason:animated:completion:]
+0x1a71d6648  __TEXT,__text  -[MKAnnotationView _mapPitchRadians]
+0x1a71d665c  __TEXT,__text  -[MKUserLocationHeadingConeLayer .cxx_destruct]
+0x1a71d66c8  __TEXT,__text  -[MKAnnotationView isProvidingCustomFeature]
+0x1a71d672c  __TEXT,__text  -[MKAnnotationView titleVisibility]
+0x1a71d6740  __TEXT,__text  -[_MKPuckAnnotationView _updateHeadingIndicators]
+0x1a71d6790  __TEXT,__text  -[MKAnnotationView centerOffset]
+0x1a71d67a4  __TEXT,__text  -[MKAnnotationView _didUpdatePosition]
+0x1a71d67a8  __TEXT,__text  -[MKUserLocationView _setMapRotationRadians:]
+0x1a71d6810  __TEXT,__text  -[_MKPuckAnnotationView _setMapRotationRadians:]
+0x1a71d68d0  __TEXT,__text  -[_MKPuckAnnotationView layoutSubviews]
+0x1a71d69c4  __TEXT,__text  -[MKAnnotationView layoutSubviews]
+0x1a71d6aa8  __TEXT,__text  -[_MKPuckAnnotationView setMaxRadiusToShowAccuracyRing:]
+0x1a71d6ae8  __TEXT,__text  -[MKAnnotationContainerView updateAnnotationViewsWithDelay]
+0x1a71d6af0  __TEXT,__text  -[_MKURLBuilder initForSearch:]
+0x1a71d6b6c  __TEXT,__text  -[_MKURLBuilder setSearchLocation:span:]
+0x1a71d6b74  __TEXT,__text  -[_MKURLBuilder buildForWeb]
+0x1a71d6b7c  __TEXT,__text  -[_MKURLBuilder .cxx_destruct]
+0x1a71d6b88  __TEXT,__text  -[MKPlacemark initWithCoordinate:addressDictionary:]
+0x1a71d6c38  __TEXT,__text  _geoAddressDictionaryFromContactsAddressDictionary
+0x1a71d6e10  __TEXT,__text  ___geoAddressDictionaryFromContactsAddressDictionary_block_invoke
+0x1a71d6ebc  __TEXT,__text  -[_MKScaleUnitsView _legendStringForDistanceString:appendUnits:index:]
+0x1a71d6fb4  __TEXT,__text  -[MKMapService(WalletMerchantLookup) stylingForWalletCategory:]
+0x1a71d7014  __TEXT,__text  -[MKWalletMerchantStylingInfo .cxx_destruct]
+0x1a71d7020  __TEXT,__text  -[MKWalletMerchantStylingInfo tintColorForScale:]
+0x1a71d70a8  __TEXT,__text  +[MKIconManager imageForStyle:size:forScale:format:transparent:]
+0x1a71d70dc  __TEXT,__text  -[_MKScaleUnitsView zeroUnitsString]
+0x1a71d7140  __TEXT,__text  -[_MKScaleUnitsView _widthForString:attributes:]
+0x1a71d7218  __TEXT,__text  -[_MKLegendString string]
+0x1a71d722c  __TEXT,__text  -[_MKLegendString sizeToFit]
+0x1a71d72dc  __TEXT,__text  -[_MKLegendString setFrame:]
+0x1a71d7314  __TEXT,__text  -[_MKLegendString baselineDistanceFromBottom]
+0x1a71d7328  __TEXT,__text  -[MKCompassView layoutSubviews]
+0x1a71d739c  __TEXT,__text  -[MKCompassView _setupImageView:]
+0x1a71d7448  __TEXT,__text  -[MKCompassButton setMapView:]
+0x1a71d74f4  __TEXT,__text  -[MKCompassButton setAlpha:]
+0x1a71d7540  __TEXT,__text  -[MKCompassButton setHidden:]
+0x1a71d758c  __TEXT,__text  -[MKCompassButton setCompassSize:]
+0x1a71d7618  __TEXT,__text  -[MKScaleView initWithMapView:]
+0x1a71d76a0  __TEXT,__text  -[MKScaleView setFrame:]
+0x1a71d76ec  __TEXT,__text  -[MKScaleView updateMetrics]
+0x1a71d7830  __TEXT,__text  -[MKScaleView _controlSize]
+0x1a71d7844  __TEXT,__text  -[MKScaleView _updateStrings]
+0x1a71d792c  __TEXT,__text  -[MKScaleView memoryWarning:]
+0x1a71d7974  __TEXT,__text  -[_MKScaleUnitsView init]
+0x1a71d7af4  __TEXT,__text  -[_MKLegendString init]
+0x1a71d7b64  __TEXT,__text  -[_MKScaleUnitsView setUseLightText:]
+0x1a71d7f54  __TEXT,__text  -[_MKLegendString setString:]
+0x1a71d8014  __TEXT,__text  -[_MKScaleUnitsView legendMarginLeft]
+0x1a71d8028  __TEXT,__text  -[_MKScaleUnitsView setFontSize:]
+0x1a71d803c  __TEXT,__text  -[_MKScaleUnitsView setLegendMarginLeft:]
+0x1a71d8050  __TEXT,__text  -[MKScaleView _setupOutlineView]
+0x1a71d8150  __TEXT,__text  -[MKScaleView setUseLightText:]
+0x1a71d8498  __TEXT,__text  -[MKScaleView _setupSegmentView:]
+0x1a71d8560  __TEXT,__text  -[_MKScaleUnitsView setFloatNumberFormatter:]
+0x1a71d8574  __TEXT,__text  -[MKMapView deviceOrientationDidChange:]
+0x1a71d85e8  __TEXT,__text  -[MKApplicationStateMonitor _exitBackground]
+0x1a71d86c0  __TEXT,__text  -[MKScaleView setMapView:]
+0x1a71d886c  __TEXT,__text  __MKGEOAppEnteredForeground
+0x1a71d88c0  __TEXT,__text  -[MKMapView applicationWillEnterForeground:]
+0x1a71d88d8  __TEXT,__text  -[MKMapView _isZooming]
+0x1a71d88f0  __TEXT,__text  -[MKScaleView setLegendAlignment:]
+0x1a71d8914  __TEXT,__text  -[MKMapView annotations]
+0x1a71d8984  __TEXT,__text  -[MKAnnotationManager annotations]
+0x1a71d8a0c  __TEXT,__text  -[MKQuadTrie _itemsInMapRect:]
+0x1a71d8bc4  __TEXT,__text  ___30-[MKQuadTrie _itemsInMapRect:]_block_invoke
+0x1a71d8e74  __TEXT,__text  __filterLabelMarkersPredicate
+0x1a71d8ebc  __TEXT,__text  ____filterLabelMarkersPredicate_block_invoke
+0x1a71d8ef8  __TEXT,__text  -[MKMapView mapRectThatFits:edgePadding:]
+0x1a71d9050  __TEXT,__text  -[MKMapView _minimumZoomLevel]
+0x1a71d9068  __TEXT,__text  -[MKMapView _maximumZoomLevel]
+0x1a71d9080  __TEXT,__text  +[MKMapView(MKGeometry) _mapRectThatFitsViewBounds:mapRect:viewInsets:edgePadding:minZoomLevel:maxZoomLevel:snapToZoomLevel:]
+0x1a71d91c0  __TEXT,__text  ___44-[MKMapView _forceManifestUpdateIfNecessary]_block_invoke_3
+0x1a71d91c4  __TEXT,__text  +[MKMapCamera _cameraLookingAtMapRect:forViewSize:]
+0x1a71d9200  __TEXT,__text  -[MKMapCamera setCenterCoordinate:]
+0x1a71d92b4  __TEXT,__text  -[MKMapCamera setAltitude:]
+0x1a71d9380  __TEXT,__text  -[MKMapCamera centerCoordinate]
+0x1a71d93b8  __TEXT,__text  -[MKMapCamera .cxx_destruct]
+0x1a71d93c0  __TEXT,__text  -[_MKUserLocationViewImageProvider _updateDefaultImage]
+0x1a71d9478  __TEXT,__text  ___62-[_MKOfflineRegionsOverlayManager _setOverlay:customFeatures:]_block_invoke
+0x1a71d9530  __TEXT,__text  -[MKMapView(OverlaysAPI) overlays]
+0x1a71d9544  __TEXT,__text  -[MKMapView removeAnnotations:]
+0x1a71d963c  __TEXT,__text  -[MKMapView addAnnotations:]
+0x1a71d9688  __TEXT,__text  -[MKMapView _annotationViews]
+0x1a71d969c  __TEXT,__text  -[MKMapView(OverlaysAPI) removeOverlays:]
+0x1a71d96e8  __TEXT,__text  ___70-[MKLocationManager _startLocationUpdateWithObserver:desiredAccuracy:]_block_invoke
+0x1a71d97ac  __TEXT,__text  ___55-[_MKUserTrackingButtonController setUserTrackingView:]_block_invoke_2
+0x1a71d97fc  __TEXT,__text  -[_MKUserTrackingButton _setInternallyEnabled:]
+0x1a71d9858  __TEXT,__text  ___40-[MKMapView deviceOrientationDidChange:]_block_invoke
+0x1a71d9860  __TEXT,__text  -[MKApplicationStateMonitor _becomeActive]
+0x1a71d9940  __TEXT,__text  -[MKLocationManager applicationDidBecomeActive:]
+0x1a71d9944  __TEXT,__text  -[MKMapView applicationDidBecomeActive:]
+0x1a71d99b0  __TEXT,__text  ___37-[MKMapView _issueDatasetCheckinCall]_block_invoke
+0x1a71d99b4  __TEXT,__text  -[MKMapView setSuspended:]
+0x1a71d9a1c  __TEXT,__text  ___37-[MKMapView annotationCoordinateTest]_block_invoke
+0x1a71d9ab8  __TEXT,__text  ___91-[MKBasicMapView initWithFrame:andGlobe:shouldRasterize:allowsAntialiasing:carDisplayType:]_block_invoke_2
+0x1a71d9abc  __TEXT,__text  -[_MKPuckAnnotationView _updateBaseImage]
+0x1a71d9e40  __TEXT,__text  ____notifyOnSizeChange_block_invoke
+0x1a71d9e68  __TEXT,__text  -[MKAnnotationView _performStateUpdatesIfNeeded]
+0x1a71d9ed8  __TEXT,__text  -[MKMapView _updateScale]
+0x1a71d9ff0  __TEXT,__text  -[MKMapView _postDidChangeZoomNotificationIfNeeded]
+0x1a71da114  __TEXT,__text  -[MKAnnotationView _effectiveZPriority]
+0x1a71da1d0  __TEXT,__text  -[_MKPuckAnnotationView initWithAnnotation:reuseIdentifier:]
+0x1a71da7b4  __TEXT,__text  -[MKAnnotationView prepareForDisplay]
+0x1a71da7b8  __TEXT,__text  -[MKAnnotationView _setCalloutStyle:]
+0x1a71da7cc  __TEXT,__text  -[_MKPuckAnnotationView _updateLegacyConfiguration]
+0x1a71da85c  __TEXT,__text  -[MKAnnotationView setBounds:]
+0x1a71da930  __TEXT,__text  -[MKMapView setCamera:duration:springMass:springStiffness:springDamping:springVelocity:]
+0x1a71da938  __TEXT,__text  -[_MKPuckAccuracyLayer init]
+0x1a71daa70  __TEXT,__text  -[_MKUserTrackingButtonController _updateState]
+0x1a71dab08  __TEXT,__text  -[MKAnnotationView _anchorPoint]
+0x1a71dab1c  __TEXT,__text  -[MKAnnotationView _performOffsetAnimationIfNeeded]
+0x1a71dabf0  __TEXT,__text  -[MKMapView mapLayerDidStartLoadingTiles:]
+0x1a71dad34  __TEXT,__text  -[MKUserLocationView prepareForDisplay]
+0x1a71dad8c  __TEXT,__text  -[MKMapView camera]
+0x1a71dad90  __TEXT,__text  -[MKMapCamera pitch]
+0x1a71dadc8  __TEXT,__text  -[MKAnnotationView _unhideForDisplay]
+0x1a71daee0  __TEXT,__text  -[MKAnnotationView _titleRequiresCustomFeature]
+0x1a71dafc4  __TEXT,__text  ____MKPuckAnnotationViewBaseColor_block_invoke
+0x1a71db0a0  __TEXT,__text  -[MKAnnotationView subtitleVisibility]
+0x1a71db0b4  __TEXT,__text  -[MKAnnotationView _mapItem]
+0x1a71db10c  __TEXT,__text  objc_object* __strong* std::__1::vector<objc_object* __strong, std::__1::allocator<objc_object* __strong> >::__emplace_back_slow_path<objc_object* __strong>(objc_object* __strong&&)
+0x1a71db220  __TEXT,__text  -[MKAnnotationView invalidateCustomFeatureForced:]
+0x1a71db234  __TEXT,__text  -[MKAnnotationView _invalidateCustomFeatureForced:coordinates:count:]
+0x1a71db344  __TEXT,__text  __MKPuckAnnotationViewBaseColor
+0x1a71db424  __TEXT,__text  -[MKAnnotationView _annotationContainer]
+0x1a71db47c  __TEXT,__text  -[MKAnnotationView _performHideAnimationIfNeeded]
+0x1a71db600  __TEXT,__text  _MapKitConfig_Faux3DPuckEnabled_Metadata_block_invoke_59
+0x1a71db60c  __TEXT,__text  -[CALayer(MKDoubleLayer) setDoublePosition:]
+0x1a71db610  __TEXT,__text  -[MKAnnotationContainerView setMapPitchRadians:]
+0x1a71db734  __TEXT,__text  -[_MKPuckAnnotationView shouldShowOuterRing]
+0x1a71db748  __TEXT,__text  +[_MKPuckAnnotationView baseDiameter]
+0x1a71db750  __TEXT,__text  -[MKAnnotationView _mapType]
+0x1a71db764  __TEXT,__text  -[MKUserLocationView isSelected]
+0x1a71db778  __TEXT,__text  -[MKUserLocationHeadingConeLayer updateHeading:]
+0x1a71db980  __TEXT,__text  -[MKAnnotationView _collisionAlignmentRectInsets]
+0x1a71db9a0  __TEXT,__text  -[_MKPuckAnnotationView shouldDisplayInaccurateHeading]
+0x1a71db9b4  __TEXT,__text  -[MKMapView _updateScrollContainerView:forReason:]
+0x1a71dbdb4  __TEXT,__text  -[MKMapView _dropDraggingAnnotationView:]
+0x1a71dbe3c  __TEXT,__text  -[_MKPuckAccuracyLayer minimumRadius]
+0x1a71dbe50  __TEXT,__text  -[MKMapView(MKCamera) _updateCameraState]
+0x1a71dbe64  __TEXT,__text  -[MKPriorityToIndexMap objectForKeyedSubscript:]
+0x1a71dbe6c  __TEXT,__text  -[MKMapView _automaticallySnapsToNorth]
+0x1a71dbe80  __TEXT,__text  -[MKUserLocation setFixedLocation:]
+0x1a71dbe88  __TEXT,__text  -[MKAnnotationView isHidden]
+0x1a71dbea4  __TEXT,__text  -[_MKAnnotationViewAnchor pointOffsetForDistanceOffset:]
+0x1a71dbfa8  __TEXT,__text  -[MKMapCamera setPitch:]
+0x1a71dbfac  __TEXT,__text  -[MKMapCamera copyWithZone:]
+0x1a71dc030  __TEXT,__text  ____filterLabelMarkersPredicate_block_invoke_2
+0x1a71dc080  __TEXT,__text  -[_MKUserLocationView _updateCalloutOffset]
+0x1a71dc124  __TEXT,__text  -[_MKPuckAnnotationView setHeadingIndicatorStyle:]
+0x1a71dc1f0  __TEXT,__text  -[_MKPuckAnnotationView _setupLayers]
+0x1a71dccc4  __TEXT,__text  -[_MKUserLocationView setBounds:]
+0x1a71dcd10  __TEXT,__text  -[MKAnnotationView _metricsDidChange]
+0x1a71dcd5c  __TEXT,__text  -[_MKUserLocationInternalView _annotationContainer]
+0x1a71dcd9c  __TEXT,__text  -[MKAnnotationView displayPriority]
+0x1a71dcdb0  __TEXT,__text  -[MKAnnotationView _calloutStyle]
+0x1a71dcdc4  __TEXT,__text  -[MKAnnotationView setCalloutOffset:]
+0x1a71dce68  __TEXT,__text  -[_MKPuckAnnotationView _updateInnerImage]
+0x1a71dd188  __TEXT,__text  -[_MKPuckAnnotationView _currentInnerColor]
+0x1a71dd25c  __TEXT,__text  -[CLHeading(MapKitAdditions) heading]
+0x1a71dd2a0  __TEXT,__text  -[MKUserLocationView _mkUserLocationView]
+0x1a71dd2b4  __TEXT,__text  -[MKMapView(MKHeadingAdditions) _updateHeadingIndicatorAnimated:]
+0x1a71dd3ac  __TEXT,__text  -[MKUserLocation heading]
+0x1a71dd3b4  __TEXT,__text  -[_MKPuckAnnotationView setHeading:]
+0x1a71dd408  __TEXT,__text  -[_MKPuckAnnotationView _enforcedHeadingIndicatorStyle]
+0x1a71dd448  __TEXT,__text  -[_MKPuckAnnotationView forcesConeIndicator]
+0x1a71dd45c  __TEXT,__text  +[MKUserLocationHeadingLayerFactory headingLayerWithStyle:userLocationView:shouldMatchAccuracyRadius:]
+0x1a71dd4f4  __TEXT,__text  -[CALayer(MKAdditions) _mapkit_addAnimation:forKey:completion:]
+0x1a71dd58c  __TEXT,__text  +[MKCALayerCompletionDelegate delegateWithCompletion:]
+0x1a71dd5d8  __TEXT,__text  -[MKMapView setCamera:duration:springMass:springStiffness:springDamping:springVelocity:completionHandler:]
+0x1a71dd74c  __TEXT,__text  -[MKMapView(MKCamera) _setCamera:duration:springMass:springStiffness:springDamping:springVelocity:completionHandler:]
+0x1a71dd7e8  __TEXT,__text  __scaleForMapRect
+0x1a71dda18  __TEXT,__text  -[MKApplicationStateMonitor _resignActive]
+0x1a71ddaf4  __TEXT,__text  -[MKLocationManager _suspend]
+0x1a71ddbb4  __TEXT,__text  -[MKLocationManager applicationWillResignActive:]
+0x1a71ddbfc  __TEXT,__text  -[MKLocationManager continuesWhileInactive]
+0x1a71ddc04  __TEXT,__text  -[MKLocationManager description]
+0x1a71ddc9c  __TEXT,__text  -[MKAnnotationContainerView userLocationView]
+0x1a71ddcb0  __TEXT,__text  -[MKCoreLocationProvider stopUpdatingLocation]
+0x1a71ddd24  __TEXT,__text  -[MKMapView applicationWillResignActive:]
+0x1a71ddd8c  __TEXT,__text  -[MKMapView _updateShouldDisplayEffects]
+0x1a71dde74  __TEXT,__text  ___46-[MKCoreLocationProvider stopUpdatingLocation]_block_invoke
+0x1a71ddf0c  __TEXT,__text  -[MKMapView _stopEffects]
+0x1a71ddf28  __TEXT,__text  -[MKMapView effectsEnabled]
+0x1a71ddf5c  __TEXT,__text  -[MKBasicMapView updateStatsForTimeSpentInCurrentMapTypeIsShowingFlyover:]
+0x1a71ddf64  __TEXT,__text  -[MKBasicMapView _updateStatsForTimeSpentInCurrentMapTypeIsShowingFlyover:ignoreIfViewInWindow:]
+0x1a71de158  __TEXT,__text  -[MKSiriInteraction _isIntentDeletable]
+0x1a71de19c  __TEXT,__text  -[MKBasicMapView updateStatsForTrafficEnabledTime]
+0x1a71de1a4  __TEXT,__text  -[MKBasicMapView _updateStatsForTrafficEnabledTime:]
+0x1a71de260  __TEXT,__text  +[MKMapService sharedService]
+0x1a71de2a8  __TEXT,__text  -[MKMapService(MKLogMsgEventUsage) captureUserAction:onTarget:eventValue:]
+0x1a71de328  __TEXT,__text  -[MKMapService(MKLogMsgEventUsage) siriAnalyticsDonation:target:resultIndex:mapItem:searchCategory:searchQueryString:]
+0x1a71de3dc  __TEXT,__text  -[MKSiriInteraction initWithGEOUIAction:target:mapItem:resultIndex:searchCategory:searchQueryString:]
+0x1a71de4b4  __TEXT,__text  -[MKSiriInteraction intentIfWanted]
+0x1a71deb68  __TEXT,__text  -[MKSiriInteraction _isValidTargetForNavUI:]
+0x1a71debac  __TEXT,__text  -[MKSiriInteraction _whiteListedNavigationActionAsString:]
+0x1a71e4ea4  __TEXT,__text  +[MKSiriInteraction navigationHash]
+0x1a71e4ee0  __TEXT,__text  -[MKSiriInteraction donateIfWanted]
+0x1a71e4f7c  __TEXT,__text  -[MKSiriInteraction _isStartNavigationAction:]
+0x1a71e4fc0  __TEXT,__text  -[MKSiriInteraction .cxx_destruct]
+0x1a71e5004  __TEXT,__text  +[MKServerFormattedString supportsSecureCoding]
+0x1a71e500c  __TEXT,__text  -[MKServerFormattedString encodeWithCoder:]
+0x1a71e5080  __TEXT,__text  +[MKServerFormattedStringParameters supportsSecureCoding]
+0x1a71e5088  __TEXT,__text  -[MKServerFormattedStringParameters encodeWithCoder:]
+0x1a71e510c  __TEXT,__text  -[MKServerFormattedString initWithCoder:]
+0x1a71e51f8  __TEXT,__text  -[MKServerFormattedStringParameters initWithCoder:]
+0x1a71e5320  __TEXT,__text  -[MKServerFormattedString .cxx_destruct]
+0x1a71e5364  __TEXT,__text  -[MKServerFormattedStringParameters .cxx_destruct]
+0x1a71e5370  __TEXT,__text  -[MKUserLocationAnnotationViewProxy annotationView]
+0x1a71e5390  __TEXT,__text  -[MKUserLocationAnnotationViewProxy routeMatch]
+0x1a71e53d0  __TEXT,__text  -[MKAnnotationView _routeMatch]
+0x1a71e53e4  __TEXT,__text  -[_MKAnnotationViewAnchor coordinate]
+0x1a71e53f8  __TEXT,__text  +[UIColor(MKAdditions) _mapkit_colorNamed:compatibleWithTraitCollection:]
+0x1a71e547c  __TEXT,__text  -[MKBasicMapView mapView]
+0x1a71e5490  __TEXT,__text  -[MKMapView _shouldAnimatePropertyWithKey:]
+0x1a71e5518  __TEXT,__text  -[MKUserLocationAnnotationViewProxy presentationCoordinate]
+0x1a71e5560  __TEXT,__text  -[MKMapView _setInactive:]
+0x1a71e5574  __TEXT,__text  -[MKBasicMapView setInactive:]
+0x1a71e5650  __TEXT,__text  -[MKBasicMapView rendersInBackground]
+0x1a71e5664  __TEXT,__text  -[MKBasicMapView _didEnterBackground]
+0x1a71e5704  __TEXT,__text  -[MKBasicMapView _sceneDidEnterBackground:]
+0x1a71e570c  __TEXT,__text  -[MKMapView _sceneDidEnterBackground:]
+0x1a71e5710  __TEXT,__text  _MapKitConfig_NewPuckEnabled_Metadata_block_invoke_58
+0x1a71e571c  __TEXT,__text  -[MKThreadContext(CATransaction) _CA_setDisableActions:]
+0x1a71e574c  __TEXT,__text  -[MKAnnotationView _pointsForDistance:]
+0x1a71e579c  __TEXT,__text  -[_MKPuckAccuracyLayer accuracy]
+0x1a71e57cc  __TEXT,__text  -[MKAnnotationContainerView updateAnnotationViewsForReason:]
+0x1a71e57d4  __TEXT,__text  -[MKAnnotationContainerView _updateAnnotationViewPositions]
+0x1a71e57e8  __TEXT,__text  -[_MKAnnotationViewAnchor pointInLayer:bound:]
+0x1a71e58f8  __TEXT,__text  -[MKAnnotationView _setHidden:forReason:animated:]
+0x1a71e5900  __TEXT,__text  -[_MKPuckAnnotationView _defaultCollisionAlignmentRectInsets]
+0x1a71e597c  __TEXT,__text  +[_MKPuckAnnotationView shadowBlur]
+0x1a71e5984  __TEXT,__text  -[MKAnnotationView isSelected]
+0x1a71e599c  __TEXT,__text  -[MKAnnotationView annotation]
+0x1a71e59b0  __TEXT,__text  -[MKLocationManager _locationProvider:didUpdateLocation:lastKnownNavCourse:]
+0x1a71e5e30  __TEXT,__text  -[MKLocationManager _shouldAllowLocationUpdateInterval:]
+0x1a71e60e0  __TEXT,__text  -[MKUserLocation _updateCoordinate]
+0x1a71e613c  __TEXT,__text  -[MKLocationManager locationRecorder]
+0x1a71e6144  __TEXT,__text  -[MKLocationManager setLastLocation:]
+0x1a71e61e8  __TEXT,__text  -[MKLocationManager _reportLocationStatus:]
+0x1a71e62a8  __TEXT,__text  -[MKAnnotationManager observeValueForKeyPath:ofObject:change:context:]
+0x1a71e666c  __TEXT,__text  -[MKLocationManager _reportLocationSuccess]
+0x1a71e66b0  __TEXT,__text  -[MKUserLocation isEqualToLocation:]
+0x1a71e68c0  __TEXT,__text  -[MKUserLocation setLocation:]
+0x1a71e6974  __TEXT,__text  -[_MKKVOProxy delegate]
+0x1a71e6994  __TEXT,__text  -[_MKUserLocationView _mkObserveValueForKeyPath:ofObject:change:context:]
+0x1a71e69f8  __TEXT,__text  -[_MKKVOProxy observeValueForKeyPath:ofObject:change:context:]
+0x1a71e6a8c  __TEXT,__text  -[NSValue(NSValueMapKitGeometryExtensions) MKCoordinateValue]
+0x1a71e6abc  __TEXT,__text  -[_MKUserLocationView _updateCalloutStyle]
+0x1a71e6c80  __TEXT,__text  -[MKLocationManager expectedGpsUpdateInterval]
+0x1a71e6cc0  __TEXT,__text  -[MKAnnotationManager annotationRepresentations]
+0x1a71e6cc8  __TEXT,__text  -[MKUserLocation setExpectedCoordinateUpdateInterval:]
+0x1a71e6cd0  __TEXT,__text  -[MKUserLocation expectedCoordinateUpdateInterval]
+0x1a71e6cd8  __TEXT,__text  -[_MKPuckAnnotationView updateStateFromLocation:duration:]
+0x1a71e6d9c  __TEXT,__text  -[_MKPuckAnnotationView _isLocationStale:]
+0x1a71e6dc4  __TEXT,__text  -[_MKPuckAnnotationView setStale:]
+0x1a71e6e9c  __TEXT,__text  -[_MKPuckAccuracyLayer setStale:]
+0x1a71e6eb0  __TEXT,__text  -[_MKPuckAccuracyLayer _updateColors]
+0x1a71e7524  __TEXT,__text  -[_MKPuckAnnotationView setLocationAccuracy:duration:]
+0x1a71e75bc  __TEXT,__text  -[_MKPuckAnnotationView _updateLayers]
+0x1a71e762c  __TEXT,__text  -[_MKPuckAnnotationView isStale]
+0x1a71e7640  __TEXT,__text  -[MKAnnotationContainerView _visibleCenteringRectInView:]
+0x1a71e76c4  __TEXT,__text  -[MKMapView visibleCenteringRectInView:]
+0x1a71e7770  __TEXT,__text  -[_MKPuckAnnotationView shouldDisplayHeading]
+0x1a71e7784  __TEXT,__text  -[MKUserLocation accuracy]
+0x1a71e77f0  __TEXT,__text  -[MKCoreLocationProvider authorizationStatus]
+0x1a71e789c  __TEXT,__text  _MapKitConfig_AvoidSynchronousLocationAuthQuery_Metadata_block_invoke_95
+0x1a71e78a8  __TEXT,__text  -[MKCoreLocationProvider _updateAccuracyAuthorizationOnQueue:]
+0x1a71e799c  __TEXT,__text  -[MKUserLocationAnnotationViewProxy annotationTrackingEdgeInsets]
+0x1a71e79fc  __TEXT,__text  -[MKMapView mapLayerWillChangeRegionAnimated:]
+0x1a71e7a00  __TEXT,__text  -[MKMapView _willChangeRegionAnimated:]
+0x1a71e7bf8  __TEXT,__text  -[MKUserLocationAnnotationViewProxy setPresentationCoordinate:]
+0x1a71e7c44  __TEXT,__text  -[MKPassThroughStackView hitTest:withEvent:]
+0x1a71e7e08  __TEXT,__text  -[MKAnnotationContainerView hitTest:withEvent:]
+0x1a71e7ecc  __TEXT,__text  -[MKAnnotationView hitTest:withEvent:]
+0x1a71e7fa8  __TEXT,__text  -[MKAnnotationView _hitTest:view:withEvent:]
+0x1a71e804c  __TEXT,__text  -[MKMapGestureController gestureRecognizer:shouldReceiveTouch:]
+0x1a71e8180  __TEXT,__text  -[MKMapGestureController delegate]
+0x1a71e81a0  __TEXT,__text  -[_MKConditionalPanGestureRecognizer _shouldReceiveEvent:]
+0x1a71e823c  __TEXT,__text  -[_MKOneHandedZoomGestureRecognizer gestureRecognizer:shouldReceiveTouch:]
+0x1a71e82c0  __TEXT,__text  -[MKMapView(Gestures) gestureRecognizer:shouldReceiveTouch:]
+0x1a71e8658  __TEXT,__text  -[MKMapView calloutViewContainsPoint:]
+0x1a71e8694  __TEXT,__text  -[MKAnnotationContainerView calloutContainsPoint:]
+0x1a71e8700  __TEXT,__text  -[MKAnnotationContainerView _view:containsPoint:]
+0x1a71e879c  __TEXT,__text  -[MKMapView accessoryViewContainsPoint:]
+0x1a71e87d8  __TEXT,__text  -[MKAnnotationContainerView accessoryContainsPoint:]
+0x1a71e8844  __TEXT,__text  -[MKMapView _annotationAtPoint:avoidCurrent:]
+0x1a71e88b8  __TEXT,__text  -[MKAnnotationContainerView _annotationViewForSelectionAtPoint:avoidCurrent:maxDistance:]
+0x1a71e8b78  __TEXT,__text  -[MKMapView _labelMarkerAtPoint:]
+0x1a71e8c1c  __TEXT,__text  -[MKMapView(OverlaysInternal) vk_mapLayer]
+0x1a71e8c30  __TEXT,__text  -[MKMapView _canSelectAllLabels]
+0x1a71e8c48  __TEXT,__text  -[MKMapView isCompassEnabled]
+0x1a71e8c4c  __TEXT,__text  -[MKMapView showsCompass]
+0x1a71e8c60  __TEXT,__text  -[MKMapView visibleMapRect]
+0x1a71e8cd0  __TEXT,__text  -[MKMapView(Gestures) gestureRecognizerShouldBegin:]
+0x1a71e8d44  __TEXT,__text  -[_MKOneHandedZoomGestureRecognizer gestureRecognizerShouldBegin:]
+0x1a71e8df0  __TEXT,__text  -[_MKOneHandedZoomGestureRecognizer observeValueForKeyPath:ofObject:change:context:]
+0x1a71e8efc  __TEXT,__text  -[_MKUserInteractionGestureRecognizer touchesEnded:withEvent:]
+0x1a71e8fc4  __TEXT,__text  -[MKMapGestureController gestureRecognizerTouchesEnded:]
+0x1a71e8fc8  __TEXT,__text  -[MKMapGestureController endGesturing]
+0x1a71e9084  __TEXT,__text  -[MKMapView(Gestures) gestureControllerDidStopUserInteraction:]
+0x1a71e9214  __TEXT,__text  -[_MKUserInteractionGestureRecognizer touchesBegan:withEvent:]
+0x1a71e92fc  __TEXT,__text  -[MKTiltGestureRecognizer touchesBegan:withEvent:]
+0x1a71e9594  __TEXT,__text  -[MKTiltGestureRecognizer _activeTouchesForEvent:]
+0x1a71e96e8  __TEXT,__text  -[MKMapGestureController gestureRecognizerTouchesBegan:]
+0x1a71e96ec  __TEXT,__text  -[MKMapGestureController beginGesturing]
+0x1a71e97c8  __TEXT,__text  _MKGetGesturesLog
+0x1a71e9810  __TEXT,__text  -[MKMapView(Gestures) gestureControllerWillStartUserInteraction:]
+0x1a71e997c  __TEXT,__text  -[_MKOneHandedZoomGestureRecognizer touchesBegan:withEvent:]
+0x1a71e9a04  __TEXT,__text  -[MKMapGestureController stopDynamicAnimations]
+0x1a71e9b2c  __TEXT,__text  -[MKMapGestureController gestureRecognizerShouldBegin:]
+0x1a71e9bcc  __TEXT,__text  -[MKMapView _selectingTapGestureRecognizer]
+0x1a71e9be0  __TEXT,__text  -[_MKOneHandedZoomGestureRecognizer gestureRecognizer:shouldRequireFailureOfGestureRecognizer:]
+0x1a71e9c68  __TEXT,__text  -[MKMapGestureController gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:]
+0x1a71e9e74  __TEXT,__text  -[MKMapGestureController handleTouch:]
+0x1a71e9e78  __TEXT,__text  -[MKAnnotationContainerView annotationViews]
+0x1a71e9e8c  __TEXT,__text  -[MKMapCamera _updateState]
+0x1a71e9fa0  __TEXT,__text  -[MKMapView mapLayerDidChangeRegionAnimated:]
+0x1a71ea064  __TEXT,__text  -[MKMapView _updateRotationAttributes]
+0x1a71ea0a0  __TEXT,__text  -[MKLocationManager isHeadingServicesAvailable]
+0x1a71ea0ac  __TEXT,__text  -[MKMapView _canZoomIn]
+0x1a71ea0c4  __TEXT,__text  -[MKMapView _canZoomOut]
+0x1a71ea0dc  __TEXT,__text  -[MKMapView _clearFixedUserLocation]
+0x1a71ea10c  __TEXT,__text  -[MKAnnotationContainerView _updatePriorityMapIfNeeded]
+0x1a71ea174  __TEXT,__text  -[MKAnnotationContainerView _updateCollidableAnnotationViews]
+0x1a71ea514  __TEXT,__text  -[MKSpatialCollider initWithAnnotationViews:previousCollissions:options:]
+0x1a71ea7c0  __TEXT,__text  void std::__1::__introsort<std::__1::_ClassicAlgPolicy, _MKSpatialHorzComp&, MKAnnotationView**, false>(MKAnnotationView**, MKAnnotationView**, _MKSpatialHorzComp&, std::__1::iterator_traits<MKAnnotationView**>::difference_type, bool)
+0x1a71eb4ac  __TEXT,__text  -[MKSpatialCollider registeredCollissions]
+0x1a71eb4cc  __TEXT,__text  -[MKMapView(iOS) canBecomeFocused]
+0x1a71eb508  __TEXT,__text  -[MKPassThroughStackView isTransparentFocusItem]
+0x1a71eb510  __TEXT,__text  -[MKMapView mapLayerDidChangeVisibleRegion]
+0x1a71eb678  __TEXT,__text  -[MKUserLocationAnnotation location]
+0x1a71eb680  __TEXT,__text  _MapKitConfig_PitchButton3DMinimumZoomLevel_Metadata_block_invoke_91
+0x1a71eb68c  __TEXT,__text  -[MKMapView _geoCoordinateRegionForOffline]
+0x1a71eb768  __TEXT,__text  +[UIView(MKAdditions) _mapkit_currentAnimationTimingFunction]
+0x1a71eb7c4  __TEXT,__text  -[_MKCompassViewSizeParameter diameter]
+0x1a71eb7cc  __TEXT,__text  -[MKMapView showsUserTrackingButton]
+0x1a71eb7e0  __TEXT,__text  -[MKAnnotationContainerView _updateZPositionForAnnotationView:inBounds:]
+0x1a71eb950  __TEXT,__text  -[MKAnnotationView zPriority]
+0x1a71eb964  __TEXT,__text  -[MKSystemController userInterfaceIdiom]
+0x1a71eb9c0  __TEXT,__text  _MapKitConfig_ModernAppleLogo_Metadata_block_invoke_90
+0x1a71eb9cc  __TEXT,__text  -[MKAnnotationContainerView visibleCenteringRectChanged]
+0x1a71ebac4  __TEXT,__text  -[MKAnnotationView _mapVisibleCenteringRectChanged]
+0x1a71ebae0  __TEXT,__text  -[MKMapView _attributionInsets]
+0x1a71ebaf8  __TEXT,__text  -[MKLocationManager vehicleHeadingOrCourse]
+0x1a71ebb70  __TEXT,__text  -[MKLocationManager isLastLocationStale]
+0x1a71ebb78  __TEXT,__text  -[MKLocationManager currentVehicleHeading]
+0x1a71ebba8  __TEXT,__text  -[_MKPuckAnnotationView _vkNavigationPuckMarker]
+0x1a71ebbbc  __TEXT,__text  -[MKMapView mapLayerLabelsDidLayout:]
+0x1a71ebc78  __TEXT,__text  -[_MKPuckAccuracyLayer _updateFaux3DRingsIfNecessary]
+0x1a71ec1f4  __TEXT,__text  -[_MKPuckAnnotationView _updateShowHeadingLayer]
+0x1a71ec1fc  __TEXT,__text  -[_MKPuckAnnotationView _updateShowHeadingLayerAnimatedIfPossible:]
+0x1a71ec288  __TEXT,__text  -[_MKPuckAnnotationView _updateShowHeadingLayer:animatedIfPossible:]
+0x1a71ec564  __TEXT,__text  -[_MKPuckAnnotationView _shouldPulseForLocation:]
+0x1a71ec5f8  __TEXT,__text  -[_MKPuckAnnotationView _removePulse]
+0x1a71ec7cc  __TEXT,__text  -[_MKPuckAnnotationView _updatePulse]
+0x1a71ec854  __TEXT,__text  -[MKRouteContextBuilder buildRouteContextForRoutes:selectedRouteIndex:]
+0x1a71ec878  __TEXT,__text  -[MKRouteContextBuilder _defaultPuckRadius]
+0x1a71ec8a4  __TEXT,__text  -[VKRouteContext(MKRouteContextExtras) _routeInfoForRoute:]
+0x1a71eca58  __TEXT,__text  -[MKCoreLocationProvider isTracePlayer]
+0x1a71eca60  __TEXT,__text  -[MKCoreLocationProvider shouldShiftIfNecessary]
+0x1a71eca68  __TEXT,__text  -[MKCoreLocationProvider expectedGpsUpdateInterval]
+0x1a71eca70  __TEXT,__text  -[MKMapView(UserPositioningInternal) setPredictedUserLocation:]
+0x1a71ecb14  __TEXT,__text  -[MKUserLocation setPredictedLocation:]
+0x1a71ecb1c  __TEXT,__text  -[MKUserLocationInternal setPredictedLocation:]
+0x1a71ecb28  __TEXT,__text  -[VKRouteContext(MKMapViewRouteContextUpdates) _setRouteContextAnnotationText:etaType:tollCurrency:advisoryStyleAttributes:forRoute:]
+0x1a71ecc3c  __TEXT,__text  -[VKRouteContext(MKMapViewRouteContextUpdates) _setAlternateRouteContextAnnotationETAComparison:forRoute:]
+0x1a71ecda4  __TEXT,__text  -[VKRouteContext(MKMapViewRouteContextUpdates) _setRouteContextAnnotationTexts:forLegsInRoute:]
+0x1a71ecf6c  __TEXT,__text  -[VKRouteContext(MKMapViewRouteContextUpdates) _setRouteContextAnnotationFocus:forRoute:]
+0x1a71ecfc8  __TEXT,__text  -[MKMapView(VKRouteContext) _setRouteContext:]
+0x1a71ed158  __TEXT,__text  -[MKApplicationStateMonitor _enterBackground]
+0x1a71ed238  __TEXT,__text  __shouldUseSnapshotService
+0x1a71ed470  __TEXT,__text  _MapKitConfig_SnapshotServiceEnabled_Metadata_block_invoke_25
+0x1a71ed47c  __TEXT,__text  -[MKMapSnapshotOptions _allOverlayRenderers]
+0x1a71ed4ec  __TEXT,__text  -[MKMapSnapshotOptions _useSnapshotService]
+0x1a71ed4f4  __TEXT,__text  -[MKMapSnapshotOptions _cartographicConfiguration]
+0x1a71ed4fc  __TEXT,__text  -[MKMapSnapshotOptions _resolvedCartographicConfigurationWithAuditToken:]
+0x1a71ed748  __TEXT,__text  -[_MKCartographicMapConfiguration cartographicConfiguration]
+0x1a71ed770  __TEXT,__text  -[MKMapSnapshotOptions scale]
+0x1a71ed778  __TEXT,__text  _MapKitConfig_SnapshotServiceMaxPixels_Metadata_block_invoke_27
+0x1a71ed784  __TEXT,__text  __snapshotQueue
+0x1a71ed7cc  __TEXT,__text  -[MKMapSnapshotter _enterBackground:]
+0x1a71ed8dc  __TEXT,__text  -[MKMapSnapshotOptions _rendersInBackground]
+0x1a71ed8e4  __TEXT,__text  -[MKMapSnapshotOptions _routeOverlay]
+0x1a71ed8ec  __TEXT,__text  -[MKMapSnapshotOptions _routeContext]
+0x1a71ed8f4  __TEXT,__text  -[MKMapSnapshotOptions _overlayRenderersForOverlayLevel:]
+0x1a71ed968  __TEXT,__text  -[MKMapSnapshotOptions mapType]
+0x1a71ed9a4  __TEXT,__text  -[MKMapSnapshotOptions size]
+0x1a71ed9ac  __TEXT,__text  ___37-[MKMapSnapshotter _enterBackground:]_block_invoke
+0x1a71eda04  __TEXT,__text  __MKGEOAppEnteredBackground
+0x1a71eda1c  __TEXT,__text  -[MKMapView applicationDidEnterBackground:]
+0x1a71eda3c  __TEXT,__text  _MKGetTransitItemUpdaterLog
+0x1a71eda84  __TEXT,__text  -[MKJunction initWithJunction:]
+0x1a71edb1c  __TEXT,__text  -[MKJunction initWithType:maneuver:drivingSide:elements:count:]
+0x1a71ede5c  __TEXT,__text  _MapKitConfig_LocallySplitGEOServerFormattedString_Metadata_block_invoke_32
+0x1a71ede68  __TEXT,__text  ___Block_byref_object_copy_
+0x1a71ede74  __TEXT,__text  ___67-[MKServerFormattedString multiPartAttributedStringWithAttributes:]_block_invoke
+0x1a71edf84  __TEXT,__text  -[MKServerFormattedString _attributesByTokenForFormatStyles:]
+0x1a71ee100  __TEXT,__text  -[MKMapView moveAnnotationRepresentation:fromCoordinate:animated:duration:]
+0x1a71ee160  __TEXT,__text  -[MKAnnotationContainerView updateAnnotationView:]
+0x1a71ee164  __TEXT,__text  -[MKAnnotationContainerView _updateAnnotationView:]
+0x1a71ee1e8  __TEXT,__text  -[MKAnnotationView rightCalloutAccessoryView]
+0x1a71ee1fc  __TEXT,__text  -[MKAnnotationView leftCalloutAccessoryView]
+0x1a71ee210  __TEXT,__text  -[MKAnnotationView detailCalloutAccessoryView]
+0x1a71ee224  __TEXT,__text  -[MKAnnotationView canShowCallout]
+0x1a71ee23c  __TEXT,__text  -[MKAnnotationView _invalidateCachedCoordinate]
+0x1a71ee318  __TEXT,__text  -[MKQuadTrie itemsInMapRect:]
+0x1a71ee4a8  __TEXT,__text  +[MKTransitItemReferenceDateUpdater _updateReferenceDate]
+0x1a71ee62c  __TEXT,__text  +[MKTransitItemReferenceDateUpdater _currentTimeWithRoundedSeconds]
+0x1a71ee704  __TEXT,__text  -[MKJunction dealloc]
+0x1a71ee750  __TEXT,__text  ___57+[MKTransitItemReferenceDateUpdater _updateReferenceDate]_block_invoke
+0x1a71ee8f0  __TEXT,__text  -[MKMapView _applicationState]
+0x1a71ee918  __TEXT,__text  -[MKMapView _resumePropagatingEdgeInsets]
+0x1a71ee990  __TEXT,__text  -[MKMapView _setDisplayedSearchResultsType:]
+0x1a71eeb28  __TEXT,__text  __MKGuidanceManeuverArrowMetricsApplyScaleForContent
+0x1a71ef03c  __TEXT,__text  -[MKMapView _setCanSelectPOIs:]
+0x1a71ef0d0  __TEXT,__text  -[MKMapView layoutSubviews]
+0x1a71ef148  __TEXT,__text  -[_MKCustomFeatureStore annotationsInMapRect:]
+0x1a71ef1e4  __TEXT,__text  -[MKAnnotationContainerView(VKSpaceReserving) annotationsInMapRect:]
+0x1a71ef378  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a71ef37c  __TEXT,__text  -[MKServerFormattedString isEqualToServerFormattedString:]
+0x1a71efa14  __TEXT,__text  -[MKServerFormattedStringParameters options]
+0x1a71efa20  __TEXT,__text  -[MKServerFormattedString multiPartAttributedStringWithAttributes:]
+0x1a71f1c08  __TEXT,__text  -[MKServerFormattedString isEqual:]
+0x1a71f1c80  __TEXT,__text  -[MKServerFormattedString geoServerString]
+0x1a71f1c88  __TEXT,__text  -[MKServerFormattedString parameters]
+0x1a71f1c90  __TEXT,__text  -[MKServerFormattedStringParameters isEqual:]
+0x1a71f1d08  __TEXT,__text  -[MKMultiPartAttributedString initWithComponents:separators:]
+0x1a71f1da4  __TEXT,__text  -[MKMultiPartAttributedString attributedString]
+0x1a71f1f48  __TEXT,__text  -[MKMultiPartAttributedString components]
+0x1a71f1f50  __TEXT,__text  -[MKMultiPartAttributedString .cxx_destruct]
+0x1a71f1f94  __TEXT,__text  -[MKServerFormattedStringParameters isEqualToServerFormattedStringParameters:]
+0x1a71f205c  __TEXT,__text  +[UIColor(MKAdditions) _mapkit_colorNamed:]
+0x1a71f2064  __TEXT,__text  -[UIColor(MKAdditions) _mapkit_blendedColorWithFraction:ofColor:]
+0x1a71f2178  __TEXT,__text  -[UIColor(MKAdditions) _mapkit_getRed:green:blue:alpha:]
+0x1a71f220c  __TEXT,__text  -[_MKPuckAnnotationView _effectiveTintColor]
+0x1a71f2260  __TEXT,__text  -[_MKPuckAnnotationView _hideLargeAccuracyRing]
+0x1a71f227c  __TEXT,__text  -[_MKPuckAnnotationView _shouldShowAccuracyRing]
+0x1a71f22cc  __TEXT,__text  -[_MKPuckAnnotationView locationManagerFailedToUpdateLocation]
+0x1a71f2340  __TEXT,__text  ____MKPuckAnnotationViewInnerStaleColor_block_invoke
+0x1a71f23e0  __TEXT,__text  -[UIColor(MKAdditions) _mapkit_isWhite]
+0x1a71f2468  __TEXT,__text  +[_MKPuckAnnotationView innerDiameter]
+0x1a71f2470  __TEXT,__text  -[_MKPuckAnnotationView _resetInnerPulseFrame]
+0x1a71f24ec  __TEXT,__text  -[_MKUserLocationView _innerPulseFrameWhenDisabled:]
+0x1a71f24f4  __TEXT,__text  -[_MKPuckAnnotationView _updateGlyphImage]
+0x1a71f264c  __TEXT,__text  -[MKMapView(UserPositioningInternal) _updateUserLocation:routeMatch:]
+0x1a71f2978  __TEXT,__text  -[MKAnnotationView _setRouteMatch:]
+0x1a71f298c  __TEXT,__text  -[MKAnnotationManager addAnnotation:]
+0x1a71f2994  __TEXT,__text  -[MKAnnotationManager addAnnotation:allowAnimation:]
+0x1a71f2a1c  __TEXT,__text  -[MKAnnotationManager _addAnnotation:updateVisible:]
+0x1a71f2ba0  __TEXT,__text  -[_MKUserTrackingButtonController setState:]
+0x1a71f2d00  __TEXT,__text  -[MKUserLocationAnnotation setLocation:]
+0x1a71f2d0c  __TEXT,__text  -[MKUserLocationAnnotation setCoordinate:]
+0x1a71f2d14  __TEXT,__text  -[MKMapView(MKHeadingAdditions) _updateCourseForMapViewHeading:]
+0x1a71f2e18  __TEXT,__text  -[MKServerFormattedStringParameters initWithInstructionsDistanceDetailLevel:variableOverrides:]
+0x1a71f2f90  __TEXT,__text  +[MKTransitItemReferenceDateUpdater referenceDateAsTimeInterval]
+0x1a71f2ff0  __TEXT,__text  +[MKTransitItemReferenceDateUpdater _needsUpdateReferenceDate]
+0x1a71f30cc  __TEXT,__text  -[MKServerFormattedStringParameters initWithOptions:variableOverrides:]
+0x1a71f3150  __TEXT,__text  -[MKServerFormattedString initWithGeoServerString:parameters:]
+0x1a71f31f4  __TEXT,__text  -[MKServerFormattedString _parametersByScrubbingUnusedOverrideVariablesFromParameters:geoServerString:]
+0x1a71f33dc  __TEXT,__text  -[MKServerFormattedString initWithComposedString:]
+0x1a71f3450  __TEXT,__text  -[MKServerFormattedString _multiPartAttributedStringForComposedStringWithAttributes:]
+0x1a71f3638  __TEXT,__text  _MKArrowCreateBezierPathsForEitherProceedToRouteOrArrivalWithSizeAndReturnCenter
+0x1a71f3b20  __TEXT,__text  _MKArrowAppendInitialSegmentToPathInvertingCorners
+0x1a71f3c50  __TEXT,__text  _MKArrowAppendArrowheadToPathAndReturnMetricsWithStemAdjustment
+0x1a71f47e4  __TEXT,__text  -[MKServerFormattedStringParameters variableOverrides]
+0x1a71f47ec  __TEXT,__text  -[MKMapView _labelEdgeWidths]
+0x1a71f4804  __TEXT,__text  -[MKMapView _debugConsole]
+0x1a71f4818  __TEXT,__text  -[MKMapView _setUserTrackingBehavior:]
+0x1a71f485c  __TEXT,__text  -[MKMapView _suspendPropagatingEdgeInsets]
+0x1a71f4878  __TEXT,__text  -[MKMapView _calloutShowAnimationGroup]
+0x1a71f488c  __TEXT,__text  -[MKMapView _selectedLabelMarker]
+0x1a71f48a0  __TEXT,__text  -[_MKCustomFeatureStore removeAnnotations:]
+0x1a71f4c78  __TEXT,__text  PartitionAnnotations(NSArray<objc_object objcproto25MKCustomFeatureAnnotation*>*, NSArray<objc_object objcproto25MKCustomFeatureAnnotation*> __autoreleasing*, NSArray<objc_object objcproto25MKCustomFeatureAnnotation*> __autoreleasing)
+0x1a71f4e64  __TEXT,__text  -[_MKCustomFeatureStore addAnnotations:]
+0x1a71f523c  __TEXT,__text  -[_MKCustomFeatureStore allAnnotations]
+0x1a71f52d4  __TEXT,__text  -[MKQuadTrie allItems]
+0x1a71f532c  __TEXT,__text  -[MKMapView _labelEdgeInsets]
+0x1a71f5344  __TEXT,__text  -[MKLocationManager locationProvider:didUpdateHeading:]
+0x1a71f5404  __TEXT,__text  -[MKLocationManager setHeading:]
+0x1a71f5594  __TEXT,__text  -[MKLocationManager setThrottledHeading:]
+0x1a71f55a0  __TEXT,__text  -[MKLocationManager _reportHeadingSuccess]
+0x1a71f55f0  __TEXT,__text  -[MKApplicationStateMonitor _stringForTaskState:]
+0x1a71f5678  __TEXT,__text  -[MKApplicationStateMonitor _performSynchronouslyOnMainQueue:]
+0x1a71f5730  __TEXT,__text  ___97-[MKApplicationStateMonitor _handleApplicationStateChangeForMonitor:handle:update:interestedPid:]_block_invoke
+0x1a71f57a0  __TEXT,__text  -[MKApplicationStateMonitor _applicationStateIsForegroundForTaskState:]
+0x1a71f57cc  __TEXT,__text  ___78-[MKApplicationStateMonitor _setupProcessMonitorWithIdentifier:interestedPid:]_block_invoke_2
+0x1a71f5990  __TEXT,__text  -[MKApplicationStateMonitor _handleApplicationStateChangeForMonitor:handle:update:interestedPid:]
+0x1a71f5ba8  __TEXT,__text  -[MKApplicationStateMonitor isInBackground]
+0x1a71f5bb0  __TEXT,__text  -[MKMapService defaultTraitsWithTraits:]
+0x1a71f5ca4  __TEXT,__text  ___29+[MKMapService sharedService]_block_invoke
+0x1a71f5cd4  __TEXT,__text  +[MKMapItem(GEOPlaceCard) _itemWithGeoMapItem:]
+0x1a71f5d24  __TEXT,__text  ___62-[MKApplicationStateMonitor _performSynchronouslyOnMainQueue:]_block_invoke
+0x1a71f5d34  __TEXT,__text  ___57-[_MKCategoriesTicket submitWithHandler:networkActivity:]_block_invoke
+0x1a71f5e18  __TEXT,__text  __mapItemsForGeoMapItemsWithHandler
+0x1a71f6000  __TEXT,__text  ___61-[_MKTicket submitWithHandler:timeout:queue:networkActivity:]_block_invoke_4
+0x1a71f6104  __TEXT,__text  ___61-[_MKTicket submitWithHandler:timeout:queue:networkActivity:]_block_invoke
+0x1a71f62ec  __TEXT,__text  -[MKMapItem phoneNumber]
+0x1a71f642c  __TEXT,__text  _PhoneNumbersLibrary
+0x1a71f6590  __TEXT,__text  _mk_CFPhoneNumberCreate
+0x1a71f66bc  __TEXT,__text  -[MKMapItem _navBackgroundbrandColor]
+0x1a71f6728  __TEXT,__text  -[_MKPuckAnnotationView setEffectsEnabled:]
+0x1a71f6834  __TEXT,__text  -[MKUserLocationInternal setFixedLocation:]
+0x1a71f6840  __TEXT,__text  -[MKMapView(Gestures) _handleSelectGestureToDeselect:]
+0x1a71f6a08  __TEXT,__text  -[_MKOneHandedZoomGestureRecognizer reset]
+0x1a71f6ab8  __TEXT,__text  -[MKTiltGestureRecognizer reset]
+0x1a71f6b2c  __TEXT,__text  -[MKUserLocation hasValidHeading]
+0x1a71f6b5c  __TEXT,__text  -[MKTiltGestureRecognizer touchesEnded:withEvent:]
+0x1a71f6c30  __TEXT,__text  -[_MKOneHandedZoomGestureRecognizer gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:]
+0x1a71f6ca4  __TEXT,__text  -[MKMapView(Gestures) gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:]
+0x1a71f6d44  __TEXT,__text  -[_MKOneHandedZoomGestureRecognizer _tapGestureRecognizerStateDidChange:]
+0x1a71f6e20  __TEXT,__text  -[_MKOneHandedZoomGestureRecognizer _startTapTimer:]
+0x1a71f6e94  __TEXT,__text  -[_MKOneHandedZoomGestureRecognizer _clearTapTimer]
+```
+First 1,000 of 12,962.
+

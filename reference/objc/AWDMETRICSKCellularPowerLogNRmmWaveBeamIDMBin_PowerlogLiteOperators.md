@@ -1,0 +1,47 @@
+# `AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin`
+
+- Image: [`/System/Library/PrivateFrameworks/PowerlogLiteOperators.framework/PowerlogLiteOperators`](../userland/System__Library__PrivateFrameworks__PowerlogLiteOperators.framework__PowerlogLiteOperators.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `PBCodable`
+- Protocols: `NSCopying`
+- 3 instance variables, 4 properties, 19 instance methods, 0 class methods
+
+## Instance variables
+
+```
+i _binId;
+I _duration;
+{?="binId"b1"duration"b1} _has;
+```
+
+## Properties
+
+```
+@property (TB,N) hasBinId;
+@property (Ti,N,V_binId) binId;
+@property (TB,N) hasDuration;
+@property (TI,N,V_duration) duration;
+```
+
+## Instance methods
+
+```
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin writeTo:];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin mergeFrom:];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin hasDuration];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin duration];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin setHasDuration:];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin hash];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin copyTo:];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin description];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin setDuration:];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin readFrom:];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin copyWithZone:];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin isEqual:];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin dictionaryRepresentation];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin StringAsBinId:];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin binId];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin binIdAsString:];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin hasBinId];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin setBinId:];
+-[AWDMETRICSKCellularPowerLogNRmmWaveBeamIDMBin setHasBinId:];
+```

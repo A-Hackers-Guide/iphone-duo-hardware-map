@@ -1,0 +1,30 @@
+# `MTLAccelerationStructureCommandEncoderSPI` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/MetalTools.framework/MetalTools`](../userland/System__Library__PrivateFrameworks__MetalTools.framework__MetalTools.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `MTLCommandEncoderSPI`, `MTLAccelerationStructureCommandEncoder`
+- 0 instance variables, 0 properties, 20 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[MTLAccelerationStructureCommandEncoderSPI serializeAccelerationStructure:toBuffer:serializedBufferOffset:];
+-[MTLAccelerationStructureCommandEncoderSPI deserializeAccelerationStructure:fromBuffer:serializedBufferOffset:];
+-[MTLAccelerationStructureCommandEncoderSPI deserializeAccelerationStructure:primitiveAccelerationStructures:fromBuffer:serializedBufferOffset:];
+-[MTLAccelerationStructureCommandEncoderSPI deserializeInstanceAccelerationStructure:primitiveAccelerationStructures:fromBuffer:serializedBufferOffset:];
+-[MTLAccelerationStructureCommandEncoderSPI deserializePrimitiveAccelerationStructure:fromBuffer:serializedBufferOffset:];
+-[MTLAccelerationStructureCommandEncoderSPI serializeInstanceAccelerationStructure:primitiveAccelerationStructures:toBuffer:serializedBufferOffset:];
+-[MTLAccelerationStructureCommandEncoderSPI serializePrimitiveAccelerationStructure:toBuffer:serializedBufferOffset:];
+-[MTLAccelerationStructureCommandEncoderSPI writeDeserializedAccelerationStructureSize:serializedOffset:toBuffer:sizeBufferOffset:];
+-[MTLAccelerationStructureCommandEncoderSPI writeDeserializedPrimitiveAccelerationStructureSizes:serializedOffset:toBuffer:sizesBufferOffset:];
+-[MTLAccelerationStructureCommandEncoderSPI writeGeometryOfAccelerationStructure:toBuffer:geometryBufferOffset:];
+-[MTLAccelerationStructureCommandEncoderSPI writeGeometrySizeOfAccelerationStructure:toBuffer:sizeBufferOffset:];
+-[MTLAccelerationStructureCommandEncoderSPI writeSerializedAccelerationStructureSize:toBuffer:sizeBufferOffset:];
+-[MTLAccelerationStructureCommandEncoderSPI deserializeInstanceAccelerationStructure:primitiveAccelerationStructures:fromBuffer:serializedBufferOffset:withDescriptor:];
+-[MTLAccelerationStructureCommandEncoderSPI deserializePrimitiveAccelerationStructure:fromBuffer:serializedBufferOffset:withDescriptor:];
+-[MTLAccelerationStructureCommandEncoderSPI writeAccelerationStructureSerializationData:toBuffer:offset:];
+-[MTLAccelerationStructureCommandEncoderSPI writeAccelerationStructureTraversalDepth:toBuffer:offset:];
+-[MTLAccelerationStructureCommandEncoderSPI writeGenericBVHStructureOfAccelerationStructure:headerBuffer:headerBufferOffset:innerNodeBuffer:innerNodeBufferOffset:leafNodeBuffer:leafNodeBufferOffset:primitiveBuffer:primitiveBufferOffset:geometryBuffer:geometryOffset:instanceTransformBuffer:instanceTransformOffset:];
+-[MTLAccelerationStructureCommandEncoderSPI writeGenericBVHStructureOfAccelerationStructure:into:];
+-[MTLAccelerationStructureCommandEncoderSPI writeGenericBVHStructureSizesOfAccelerationStructure:into:];
+-[MTLAccelerationStructureCommandEncoderSPI writeGenericBVHStructureSizesOfAccelerationStructure:toBuffer:sizesBufferOffset:];
+```

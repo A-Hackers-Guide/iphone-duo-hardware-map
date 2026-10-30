@@ -1,0 +1,129 @@
+   • Found                     mach_trap_table=0xfffffe0007ecc018
+0   0xfffffe000ac92e08: kern_invalid
+1   0xfffffe000ac92e08: kern_invalid
+2   0xfffffe000ac92e08: kern_invalid
+3   0xfffffe000ac92e08: kern_invalid
+4   0xfffffe000ac92e08: kern_invalid
+5   0xfffffe000ac92e08: kern_invalid
+6   0xfffffe000ac92e08: kern_invalid
+7   0xfffffe000ac92e08: kern_invalid
+8   0xfffffe000ac92e08: kern_invalid
+9   0xfffffe000ac92e08: kern_invalid
+10  0xfffffe000ac023fc: mach_vm_allocate                  munge=0xfffffe000ae0c014 nargs=4 ret_port=0 mach_vm_allocate(mach_port_name_t target, mach_vm_address_t *address, mach_vm_size_t size, int flags);
+11  0xfffffe000ac026a0: mach_vm_purgable_control          munge=0xfffffe000ae0c10c nargs=4 ret_port=0 mach_vm_purgable_control(mach_port_name_t target, mach_vm_offset_t address, vm_purgable_t control, int *state);
+12  0xfffffe000ac024b4: mach_vm_deallocate                munge=0xfffffe000ae0c1c4 nargs=3 ret_port=0 mach_vm_deallocate(mach_port_name_t target, mach_vm_address_t address, mach_vm_size_t size);
+13  0xfffffe000ac035dc: task_dyld_process_info_notify_get munge=0xfffffe000ae0c4d4 nargs=2 ret_port=0 task_dyld_process_info_notify_get(mach_port_name_array_t names_addr, natural_t *names_count_addr);
+14  0xfffffe000ac02520: mach_vm_protect                   munge=0xfffffe000ae0c274 nargs=5 ret_port=0 mach_vm_protect(mach_port_name_t task, mach_vm_address_t address, mach_vm_size_t size, boolean_t set_maximum, vm_prot_t new_protection);
+15  0xfffffe000ac025ac: mach_vm_map                       munge=0xfffffe000ae0c0b4 nargs=6 ret_port=0 mach_vm_map(mach_port_name_t target, mach_vm_address_t *address, mach_vm_size_t size, mach_vm_offset_t mask, int flags, mem_entry_name_port_t object, memory_object_offset_t offset, boolean_t copy, vm_prot_t cur_protection, vm_prot_t max_protection, vm_inherit_t inheritance);
+16  0xfffffe000ac0276c: mach_port_allocate                munge=0xfffffe000ae0bea4 nargs=3 ret_port=0 mach_port_allocate(mach_port_name_t target, mach_port_right_t right, mach_port_name_t *name);
+17  0xfffffe000ac92e08: kern_invalid
+18  0xfffffe000ac0280c: mach_port_deallocate     munge=0xfffffe000ae0be8c nargs=2 ret_port=0 mach_port_deallocate(mach_port_name_t target, mach_port_name_t name);
+19  0xfffffe000ac02878: mach_port_mod_refs       munge=0xfffffe000ae0bec4 nargs=4 ret_port=0 mach_port_mod_refs(mach_port_name_t target, mach_port_name_t name, mach_port_right_t right, mach_port_delta_t delta);
+20  0xfffffe000ac028ec: mach_port_move_member    munge=0xfffffe000ae0bea4 nargs=3 ret_port=0 mach_port_move_member(mach_port_name_t target, mach_port_name_t member, mach_port_name_t after);
+21  0xfffffe000ac0295c: mach_port_insert_right   munge=0xfffffe000ae0bec4 nargs=4 ret_port=0 mach_port_insert_right(mach_port_name_t target, mach_port_name_t name, mach_port_name_t poly, mach_msg_type_name_t polyPoly);
+22  0xfffffe000ac02c8c: mach_port_insert_member  munge=0xfffffe000ae0bea4 nargs=3 ret_port=0 mach_port_insert_member(mach_port_name_t target, mach_port_name_t name, mach_port_name_t pset);
+23  0xfffffe000ac02cfc: mach_port_extract_member munge=0xfffffe000ae0bea4 nargs=3 ret_port=0 mach_port_extract_member(mach_port_name_t target, mach_port_name_t name, mach_port_name_t pset);
+24  0xfffffe000ac02d6c: mach_port_construct      munge=0xfffffe000ae0c014 nargs=4 ret_port=0 mach_port_construct(mach_port_name_t target, mach_port_options_t *options, uint64_t context, mach_port_name_t *name);
+25  0xfffffe000ac02e2c: mach_port_destruct       munge=0xfffffe000ae0c34c nargs=4 ret_port=0 mach_port_destruct(mach_port_name_t target, mach_port_name_t name, mach_port_delta_t srdelta, uint64_t guard);
+26  0xfffffe000ac51418: mach_reply_port          munge=0x0                nargs=0 ret_port=1 mach_reply_port(void);
+27  0xfffffe000ac512e4: thread_self              munge=0x0                nargs=0 ret_port=1 thread_self(void);
+28  0xfffffe000ac511b0: task_self                munge=0x0                nargs=0 ret_port=1 task_self(void);
+29  0xfffffe000ac4bd0c: host_self                munge=0x0                nargs=0 ret_port=1 host_self(void);
+30  0xfffffe000ac92e08: kern_invalid
+31  0xfffffe000ac04100: mach_msg                      munge=0xfffffe000ae0bf54 nargs=7 ret_port=0 mach_msg(mach_msg_header_t *msg, mach_msg_option_t option, mach_msg_size_t send_size, mach_msg_size_t rcv_size, mach_port_name_t rcv_name, mach_msg_timeout_t timeout, mach_port_name_t notify);
+32  0xfffffe000ac040f4: mach_msg_overwrite            munge=0xfffffe000ae0bf94 nargs=8 ret_port=0 mach_msg_overwrite(mach_msg_header_t *msg, mach_msg_option_t option, mach_msg_size_t send_size, mach_msg_size_t rcv_size, mach_port_name_t rcv_name, mach_msg_timeout_t timeout, mach_port_name_t notify, mach_msg_header_t *rcv_msg, mach_msg_size_t rcv_limit);
+33  0xfffffe000ac90e50: semaphore_signal              munge=0xfffffe000ae0be7c nargs=1 ret_port=0 semaphore_signal(mach_port_name_t signal_name);
+34  0xfffffe000ac90fac: semaphore_signal_all          munge=0xfffffe000ae0be7c nargs=1 ret_port=0 semaphore_signal_all(mach_port_name_t signal_name);
+35  0xfffffe000ac90bac: semaphore_signal_thread       munge=0xfffffe000ae0be8c nargs=2 ret_port=0 semaphore_signal_thread(mach_port_name_t signal_name, mach_port_name_t thread_name);
+36  0xfffffe000ac91450: semaphore_wait                munge=0xfffffe000ae0be7c nargs=1 ret_port=0 semaphore_wait(mach_port_name_t wait_name);
+37  0xfffffe000ac91788: semaphore_wait_signal         munge=0xfffffe000ae0be8c nargs=2 ret_port=0 semaphore_wait_signal(mach_port_name_t wait_name, mach_port_name_t signal_name);
+38  0xfffffe000ac9162c: semaphore_timedwait           munge=0xfffffe000ae0bea4 nargs=3 ret_port=0 semaphore_timedwait(mach_port_name_t wait_name, unsigned int sec, clock_res_t nsec);
+39  0xfffffe000ac9189c: semaphore_timedwait_signal    munge=0xfffffe000ae0bec4 nargs=4 ret_port=0 semaphore_timedwait_signal(mach_port_name_t wait_name, mach_port_name_t signal_name, unsigned int sec, clock_res_t nsec);
+40  0xfffffe000ac02b20: mach_port_get_attributes      munge=0xfffffe000ae0beec nargs=5 ret_port=0 mach_port_get_attributes(mach_port_name_t target, mach_port_name_t name, mach_port_flavor_t flavor, mach_port_info_t port_info_out, mach_msg_type_number_t *port_info_outCnt);
+41  0xfffffe000ac02ea0: mach_port_guard               munge=0xfffffe000ae0c014 nargs=4 ret_port=0 mach_port_guard(mach_port_name_t target, mach_port_name_t name, uint64_t guard, boolean_t strict);
+42  0xfffffe000ac02f14: mach_port_unguard             munge=0xfffffe000ae0bff4 nargs=3 ret_port=0 mach_port_unguard(mach_port_name_t target, mach_port_name_t name, uint64_t guard);
+43  0xfffffe000ac01610: mach_generate_activity_id     munge=0xfffffe000ae0bea4 nargs=3 ret_port=0 mach_generate_activity_id(mach_port_name_t target, int count, uint64_t *activity_id);
+44  0xfffffe000b184820: task_name_for_pid             munge=0xfffffe000ae0bea4 nargs=3 ret_port=0 task_name_for_pid(mach_port_name_t target_tport, int pid, mach_port_name_t *tn);
+45  0xfffffe000b18442c: task_for_pid                  munge=0xfffffe000ae0bea4 nargs=3 ret_port=0 task_for_pid(mach_port_name_t target_tport, int pid, mach_port_name_t *t);
+46  0xfffffe000b1842d4: pid_for_task                  munge=0xfffffe000ae0be8c nargs=2 ret_port=0 pid_for_task(mach_port_name_t t, int *x);
+47  0xfffffe000ac04110: mach_msg2                     munge=0xfffffe000ae0c4bc nargs=8 ret_port=0 mach_msg2(void *data, mach_msg_option64_t option64, mach_msg_header_t header, mach_msg_size_t send_size, mach_msg_size_t rcv_size, mach_port_t rcv_name, uint64_t timeout, uint32_t priority);
+48  0xfffffe000b2375cc: macx_swapon                   munge=0xfffffe000ae0c51c nargs=4 ret_port=0 macx_swapon(uint64_t filename, int flags, int size, int priority);
+49  0xfffffe000b2375d8: macx_swapoff                  munge=0xfffffe000ae0c4e4 nargs=2 ret_port=0 macx_swapoff(uint64_t filename, int flags);
+50  0xfffffe000ac514ac: thread_get_special_reply_port munge=0x0                nargs=0 ret_port=1 thread_get_special_reply_port(void);
+51  0xfffffe000b237554: macx_triggers                 munge=0xfffffe000ae0bec4 nargs=4 ret_port=0 macx_triggers(int hi_water, int low_water, int flags, mach_port_t alert_port);
+52  0xfffffe000b237548: macx_backing_store_suspend    munge=0xfffffe000ae0be7c nargs=1 ret_port=0 macx_backing_store_suspend(boolean_t suspend);
+53  0xfffffe000b23753c: macx_backing_store_recovery   munge=0xfffffe000ae0be7c nargs=1 ret_port=0 macx_backing_store_recovery(int pid);
+54  0xfffffe000ac92e08: kern_invalid
+55  0xfffffe000ac92e08: kern_invalid
+56  0xfffffe000ac92e08: kern_invalid
+57  0xfffffe000ac92e08: kern_invalid
+58  0xfffffe000ac91dcc: pfz_exit                                      munge=0x0                nargs=0 ret_port=0 pfz_exit(void);
+59  0xfffffe000ac91efc: swtch_pri                                     munge=0x0                nargs=0 ret_port=0 swtch_pri(int pri);
+60  0xfffffe000ac91dd8: swtch                                         munge=0x0                nargs=0 ret_port=0 swtch(void);
+61  0xfffffe000ac922b4: thread_switch                                 munge=0xfffffe000ae0bea4 nargs=3 ret_port=0 thread_switch(mach_port_name_t thread_name, int option, mach_msg_timeout_t option_time);
+62  0xfffffe000ac0c9a8: clock_sleep                                   munge=0xfffffe000ae0beec nargs=5 ret_port=0 clock_sleep(mach_port_name_t clock_name, sleep_type_t sleep_type, int sleep_sec, int sleep_nsec, mach_timespec_t *wakeup_time);
+63  0xfffffe000ac03b90: mach_vm_reclaim_update_kernel_accounting_trap munge=0xfffffe000ae0c1c4 nargs=3 ret_port=0 mach_vm_reclaim_update_kernel_accounting_trap(mach_port_name_t target, uint64_t *bytes_reclaimed);
+64  0xfffffe000ac92e08: kern_invalid
+65  0xfffffe000ac92e08: kern_invalid
+66  0xfffffe000ac92e08: kern_invalid
+67  0xfffffe000ac92e08: kern_invalid
+68  0xfffffe000ac92e08: kern_invalid
+69  0xfffffe000ac92e08: kern_invalid
+70  0xfffffe000ac031f8: host_create_mach_voucher munge=0xfffffe000ae0bec4 nargs=4 ret_port=0 host_create_mach_voucher(mach_port_name_t host, mach_voucher_attr_raw_recipe_array_t recipes, int recipes_size, mach_port_name_t *voucher);
+71  0xfffffe000ac92e08: kern_invalid
+72  0xfffffe000ac033f4: mach_voucher_extract_attr_recipe munge=0xfffffe000ae0bec4 nargs=4 ret_port=0 mach_voucher_extract_attr_recipe(mach_port_name_t voucher_name, mach_voucher_attr_key_t key, mach_voucher_attr_raw_recipe_t recipe, mach_msg_type_number_t *recipe_size);
+73  0xfffffe000ac92e08: kern_invalid
+74  0xfffffe000ac92e08: kern_invalid
+75  0xfffffe000ac92e08: kern_invalid
+76  0xfffffe000ac02f84: mach_port_type                 munge=0xfffffe000ae0bec4 nargs=3 ret_port=0 mach_port_type(ipc_space_t task, mach_port_name_t name, mach_port_type_t *ptype);
+77  0xfffffe000ac03018: mach_port_request_notification munge=0xfffffe000ae0bf54 nargs=7 ret_port=0 mach_port_request_notification(ipc_space_t task, mach_port_name_t name, mach_msg_id_t msgid, mach_port_mscount_t sync, mach_port_name_t notify, mach_msg_type_name_t notifyPoly, mach_port_name_t *previous);
+78  0xfffffe000ac92e08: kern_invalid
+79  0xfffffe000ac92e08: kern_invalid
+80  0xfffffe000ac92e08: kern_invalid
+81  0xfffffe000ac92e08: kern_invalid
+82  0xfffffe000ac92e08: kern_invalid
+83  0xfffffe000ac92e08: kern_invalid
+84  0xfffffe000ac92e08: kern_invalid
+85  0xfffffe000ac92e08: kern_invalid
+86  0xfffffe000ac92e08: kern_invalid
+87  0xfffffe000ac92e08: kern_invalid
+88  0xfffffe000ac164a8: exclaves_ctl               munge=0xfffffe000ae0c06c nargs=8 ret_port=0 exclaves_ctl(mach_port_name_t name, uint32_t operation_and_flags, uint64_t identifier, mach_vm_address_t buffer, mach_vm_size_t size, mach_vm_size_t size2, mach_vm_size_t offset, mach_vm_address_t status);
+89  0xfffffe000ac0a0cc: mach_timebase_info         munge=0xfffffe000ae0be7c nargs=1 ret_port=0 mach_timebase_info(mach_timebase_info_t info);
+90  0xfffffe000ac0b8ac: mach_wait_until            munge=0xfffffe000ae0c4dc nargs=1 ret_port=0 mach_wait_until(uint64_t deadline);
+91  0xfffffe000ac67da0: mk_timer_create            munge=0x0                nargs=0 ret_port=1 mk_timer_create(void);
+92  0xfffffe000ac68294: mk_timer_destroy           munge=0xfffffe000ae0be7c nargs=1 ret_port=0 mk_timer_destroy(mach_port_name_t name);
+93  0xfffffe000ac68358: mk_timer_arm               munge=0xfffffe000ae0bfdc nargs=2 ret_port=0 mk_timer_arm(mach_port_name_t name, uint64_t expire_time);
+94  0xfffffe000ac68598: mk_timer_cancel            munge=0xfffffe000ae0be8c nargs=2 ret_port=0 mk_timer_cancel(mach_port_name_t name, uint64_t *result_time);
+95  0xfffffe000ac68580: mk_timer_arm_leeway        munge=0xfffffe000ae0c1e4 nargs=4 ret_port=0 mk_timer_arm_leeway(mach_port_name_t name, uint64_t mk_timer_flags, uint64_t mk_timer_expire_time, uint64_t mk_timer_leeway);
+96  0xfffffe000b18524c: debug_control_port_for_pid munge=0xfffffe000ae0bea4 nargs=3 ret_port=0 debug_control_port_for_pid(mach_port_name_t target_tport, int pid, mach_port_name_t *t);
+97  0xfffffe000ac92e08: kern_invalid
+98  0xfffffe000ac92e08: kern_invalid
+99  0xfffffe000ac92e08: kern_invalid
+100 0xfffffe000b40a608: iokit_user_client munge=0xfffffe000ae0bf94 nargs=8 ret_port=0 iokit_user_client(void *userClientRef, uint32_t index, void *p1, void *p2, void *p3, void *p4, void *p5, void *p6);
+101 0xfffffe000ac92e08: kern_invalid
+102 0xfffffe000ac92e08: kern_invalid
+103 0xfffffe000ac92e08: kern_invalid
+104 0xfffffe000ac92e08: kern_invalid
+105 0xfffffe000ac92e08: kern_invalid
+106 0xfffffe000ac92e08: kern_invalid
+107 0xfffffe000ac92e08: kern_invalid
+108 0xfffffe000ac92e08: thread_set_x86_64_compat munge=0x0 nargs=0 ret_port=0 thread_set_x86_64_compat(uint32_t enable);
+109 0xfffffe000ac92e08: kern_invalid
+110 0xfffffe000ac92e08: kern_invalid
+111 0xfffffe000ac92e08: kern_invalid
+112 0xfffffe000ac92e08: kern_invalid
+113 0xfffffe000ac92e08: kern_invalid
+114 0xfffffe000ac92e08: kern_invalid
+115 0xfffffe000ac92e08: kern_invalid
+116 0xfffffe000ac92e08: kern_invalid
+117 0xfffffe000ac92e08: kern_invalid
+118 0xfffffe000ac92e08: kern_invalid
+119 0xfffffe000ac92e08: kern_invalid
+120 0xfffffe000ac92e08: kern_invalid
+121 0xfffffe000ac92e08: kern_invalid
+122 0xfffffe000ac92e08: kern_invalid
+123 0xfffffe000ac92e08: kern_invalid
+124 0xfffffe000ac92e08: kern_invalid
+125 0xfffffe000ac92e08: kern_invalid
+126 0xfffffe000ac92e08: kern_invalid
+127 0xfffffe000ac92e08: kern_invalid

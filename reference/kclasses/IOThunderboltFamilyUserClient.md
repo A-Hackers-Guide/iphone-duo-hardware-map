@@ -1,0 +1,71 @@
+# `IOThunderboltFamilyUserClient`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.iokit.IOThunderboltFamily`](../kexts/com.apple.iokit.IOThunderboltFamily.md)
+- Object size: `0x108` (264 bytes)
+- Metaclass: `0xfffffe000ba1c418`; metaclass vtable `0xfffffe0008402fd0`; class vtable `0xfffffe0008402940`
+- Registration (init): `0xfffffe000a43afb4`
+- Superclasses: [`IOUserClient`](IOUserClient.md) → [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## Strings in its kext that name it (59)
+
+- `%lldus IOThunderboltFamilyUserClient<%p>::setPowerState - signal wake\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::setupPowerManagement - HAL is on wait for power up\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::destroyPowerManagement\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::getTraceInfo - trace_index = %d trace_type = 0x%x trace_buffer_length = 0x%llx status = 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient::initWithTask - fHasAdminPrivs = %d\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setPowerState - kThunderboltPMWakeState\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::findCapability\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setPowerState - kThunderboltPMSleepState\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::hostDeviceConnect - cable_connected = %d status = 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::hostDeviceConnect - cable_connected = %d\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setI2CClockRate - can't find switch for route 0x%llx\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::routerOperation - can't find switch for route 0x%llx\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::i2cCommandAction - can't find i2c command queue!?\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::externalMethod - selector = %d status = 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::iecsCommandAction - can't create write descriptor\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::getTraceCount - status = 0x%08x trace_history_count = 0x%x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::iecsCommandAction - can't find iecs command queue!?\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::configRead\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::readTraceData - status = 0x%08x trace_index = %d buffer = 0x%016llx length = 0x%llx\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::routerOperation - command completed with status = 0x%x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::i2cCommandAction - can't find switch for route 0x%llx\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::findCapability - command completed with status = 0x%x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::configReadJTAG - rid = %d port = 0x%x space = 0x%x index = 0x%x data = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::finalize\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::sendVDM - can't create descriptor\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::i2cCommand\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::configWriteJTAG - rid = %d port = 0x%x space = 0x%x index = 0x%x data = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::readTraceData - can't create write descriptor\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::iecsCommandAction - can't alloc iecs command!?\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::configWrite\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::initWithTask\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::externalMethod - ERROR: command requires admin privs (%d)\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::i2cCommandAction - command completed with status = 0x%x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::i2cCommandAction - can't alloc i2c command!?\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::configReadAction - route = 0x%llx port = 0x%x space = 0x%x index = 0x%x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::iecsCommandAction - command completed with status = 0x%x\n`
+- `%lldus IOThunderboltFamilyUserClient::initWithTask - User client does NOT have kIOClientPrivilegeAdministrator\n`
+- `%lldus IOThunderboltFamilyUserClient::initWithTask - User client does NOT have entitlement: com.apple.ThunderboltEntitlement\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::externalMethod Unknown User Client method called! (%d)\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::i2cCommandAction - can't create read descriptor\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setPowerState - state = %d\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::externalMethod - ERROR: command deprecated (%d)\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setPowerState - unknown power state %d\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::clientDied\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::iecsCommand\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setupPowerManagement - commandSleep\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::configWriteAction - route = 0x%llx port = 0x%x space = 0x%x index = 0x%x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::externalMethod - ERROR: unknown command (%d)\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::i2cCommandAction - can't create write descriptor\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::iecsCommandAction - can't find switch for route 0x%llx\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setupPowerManagement - wake from commandSleep\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::setupPowerManagement - HAL is off stop waiting for power up\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::clientClose\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::configWriteAction - route = 0x%llx port = 0x%x space = 0x%x index = 0x%x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setPowerState - kThunderboltPMWakeState\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::iecsCommandAction - can't create write descriptor\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::externalMethod - ERROR: command requires admin privs (%d)\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setPowerState - signal wake\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::setupPowerManagement - HAL is on wait for power up\n`

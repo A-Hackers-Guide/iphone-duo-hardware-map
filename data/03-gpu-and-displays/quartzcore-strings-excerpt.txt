@@ -1,0 +1,183 @@
+"  FlipBook Enabled: %s, Supressed: %s, Active: %s\n"
+"-[CAFlipBook frameAtTime:] IPC failed 0x%x - %s"
+"-[CAFlipBook(Private) _notifyRenderCompletedForTime:status:frameId:oldestFrameId:apl:aplDimming:memoryUsage:rawSurfacePort:rawSurfaceDestRect:]"
+"16"
+"8@\"
+"<CAFlipBook: maximumSize %zu, maximumPoolMemory %zu, overAllocationFactor %f, generation %u, contextId 0x%x>"
+"<CAFlipBookFrame: time %llu, id %llu, generation %u, userInfo %p>"
+"AGX vsync hints will track display %u with %u Hz refresh rate\n"
+"CA Server Flipbook Frame DEBUG"
+"CA Server Flipbook Frame"
+"CA Server Flipbook Framebuffer"
+"CAFlipBook _frameById:%llu not found in _frames(size=%i, first=%llu, last=%llu)"
+"CAFlipBook collecting frames < %llu"
+"CAFlipBook initWithDisplayId=%u called but a flipbook for this display already exists."
+"CAFlipBook"
+"CAFlipBook.%i.renderNotification"
+"CAFlipBook.mm"
+"CA_CANVAS_HEIGHT"
+"CA_CANVAS_WIDTH"
+"CA_COLOR_FLIPBOOK"
+"CA_DISABLE_48HZ_AUTO_VFD"
+"CA_DISABLE_48HZ_COLOR_AUTO_VFD"
+"CA_DISABLE_FLIPBOOK_FRAME_DIAGNOSTICS"
+"CA_ENABLE_FLIPBOOK"
+"CA_ENABLE_FLIPBOOK_DEBUG_OVERLAY"
+"CA_FORCE_120HZ"
+"CA_FORCE_FLIPBOOK_LPR"
+"DeviceSurfaceType"
+"Display %u Canvas Scaling Req[%.2f, %.2f] over Limit[%.2f, %.2f] DownScaleLimit[DISP:%.2f MSR:%.2f]"
+"Display %u ignoring forced brightness control while in flipbook"
+"Display %u posting flipbook state %d notification (pre? %u) "
+"DisplayExtendedProperties"
+"FlipBook"
+"FlipBook::_exit from suspended, skip cancel (swapped %zu)"
+"FlipBook::cancel() - state:kFlipBookStateDisabled - Unexpected, No action performed"
+"FlipBook::cancel(), cancelled %zu suppressed frames, memory usage = %.2lf %s"
+"FlipBook::cancel(), cancelled %zu/%zu swapped frames and %zu enqueued frames, last frame = swap %u (seed %llu, timestamp %llu), memory usage = %.2lf %s"
+"FlipBook::query() at t=%llu, on_glass_frame=%llu, oldest_frame=%llu"
+"FlipBook::render (context 0x%x, t %llu)"
+"IOMFBFlipBook::_enter"
+"IOMFBFlipBook::_exit"
+"IOMFBFlipBook::_resume"
+"IOMFBFlipBook::_suspend"
+"IOMFBFlipBook::cancel_all_swaps(swap_size %zu) = 0x%x"
+"IOMFBFlipBook::cancel_all_swaps_get_current(swap_id %u / swap_size %zu) = 0x%x"
+"IOMFBFlipBook::cancel_frame(swap_id %u) = 0x%x"
+"Invalid Secure Flipbook type %@"
+"Invalid Secure Flipbook type '%s'"
+"Maximum flipbook pool size %u ignored. Using %zu."
+"Maximum flipbook size %u ignored. Using %zu."
+"OverrideCanvas"
+"OverrideCanvasHeight"
+"OverrideCanvasWidth"
+"SILManager flipbook size (%u, %u) mismatched provided size (%f, %f)"
+"Server-side flipbook %p\n"
+"Using FlipBook, use_dcp_blitter=%u"
+"_state == kFlipBookStateActive"
+"_state == kFlipBookStateDisabled"
+"_state == kFlipBookStateSuspended"
+"allocated surface 0x%x, %dx%d for the flipbook, memory usage = %.2lf %s"
+"com.apple.QuartzCore.flipbook"
+"com.apple.coreanimation.flipbook"
+"display not ready (entering flipbook). Dropping render!"
+"entering flipbook"
+"entering flipbook, disallowing detaching"
+"flipBookUsesDCPBlitter"
+"flipbook transition from %s to %s, has_live_frame %i"
+"flipbook"
+"flipbook_cancel ()"
+"flipbook_copy_current_frame ()"
+"flipbook_modify ()"
+"fold_transparency_layer"
+"notificationFlipBookOff"
+"notificationFlipBookOn"
+"powering on display and entering flipbook"
+"rendering update %u for flipbook to surface 0x%x, copy forward area %6lu[%3.0f%%], render area %6lu[%3.0f%%] root APL filter? %d (apl %.2g, dirty? %d)"
+"reuse surface 0x%x [%llu], %dx%d for the flipbook, memory pool usage = %.2lf %s, memory max pool = %.2lf %s, Free size: %zu"
+"set one hz flipbook requested %u"
+"set_flipbook_disabled"
+"set_flipbook_enabled (%d)"
+"set_flipbook_enabled"
+"set_flipbook_suppressed (%d)"
+"set_flipbook_suppressed"
+"set_flipbook_unsuppressed"
+"syncNotificationDidChangeFlipBookState"
+"syncNotificationWillChangeFlipBookState"
+"v24@?0@\"
+"windowserver-flipbook.cpp"
+"windowserver-iomfb-flipbook.cpp"
+__ZN2CA12WindowServer11IOMFBServer32post_flipbook_state_notificationEPNS_6Render6ObjectEPvS5_
+__ZN2CA12WindowServer12IOMFBDisplay20set_flipbook_enabledEb
+__ZN2CA12WindowServer12IOMFBDisplay23set_flipbook_suppressedEb
+__ZN2CA12WindowServer12IOMFBDisplay29set_physical_and_canvas_sizesEv
+__ZN2CA12WindowServer13IOMFBFlipBook10swap_frameERNS0_8FlipBook5FrameERKS3_
+__ZN2CA12WindowServer13IOMFBFlipBook12cancel_frameERNS0_8FlipBook5FrameE
+__ZN2CA12WindowServer13IOMFBFlipBook12resume_frameERNS0_8FlipBook5FrameE
+__ZN2CA12WindowServer13IOMFBFlipBook16cancel_all_swapsEm
+__ZN2CA12WindowServer13IOMFBFlipBook16resume_completedEv
+__ZN2CA12WindowServer13IOMFBFlipBook18draw_debug_overlayERKNS0_8FlipBook5FrameEP11__IOSurfacej
+__ZN2CA12WindowServer13IOMFBFlipBook18suspended_on_frameEh
+__ZN2CA12WindowServer13IOMFBFlipBook19get_cancel_metadataEPy
+__ZN2CA12WindowServer13IOMFBFlipBook22set_power_saving_stateEb
+__ZN2CA12WindowServer13IOMFBFlipBook25set_one_hz_flipbook_stateEb
+__ZN2CA12WindowServer13IOMFBFlipBook25swapped_frame_displayed_pERKNS0_8FlipBook5FrameE
+__ZN2CA12WindowServer13IOMFBFlipBook26apply_dbv_flash_workaroundEv
+__ZN2CA12WindowServer13IOMFBFlipBook28cancel_all_swaps_get_currentERjm
+__ZN2CA12WindowServer13IOMFBFlipBook28get_display_debug_propertiesEPNS_6Render6ObjectEPvS5_
+__ZN2CA12WindowServer13IOMFBFlipBook29set_low_power_rendering_stateEb
+__ZN2CA12WindowServer13IOMFBFlipBook33supports_individual_frame_cancelsEv
+__ZN2CA12WindowServer13IOMFBFlipBook5_exitENS0_23FlipBookStateTransitionE
+__ZN2CA12WindowServer13IOMFBFlipBook6_enterENS0_23FlipBookStateTransitionE
+__ZN2CA12WindowServer13IOMFBFlipBook7Blitter4blitEPNS_3OGL7SurfaceENS_6BoundsES6_
+__ZN2CA12WindowServer13IOMFBFlipBook7_resumeENS0_23FlipBookStateTransitionE
+__ZN2CA12WindowServer13IOMFBFlipBook8_suspendENS0_23FlipBookStateTransitionE
+__ZN2CA12WindowServer13IOMFBFlipBookD0Ev
+__ZN2CA12WindowServer13IOMFBFlipBookD1Ev
+__ZN2CA12WindowServer13IOMFBFlipBookD2Ev
+__ZN2CA12WindowServer27FlipBookStateChangeNotifierC2ENS0_23FlipBookStateTransitionE
+__ZN2CA12WindowServer6Server15flipbook_cancelEPNS_6Render6ObjectEPvS5_
+__ZN2CA12WindowServer6Server15flipbook_modifyEPNS_6Render6ObjectEPvS5_
+__ZN2CA12WindowServer6Server15flipbook_renderEPNS_6Render6ObjectEPvS5_
+__ZN2CA12WindowServer6Server20flipbook_query_frameEPNS_6Render6ObjectEPvS5_
+__ZN2CA12WindowServer6Server20set_flipbook_enabledEb
+__ZN2CA12WindowServer6Server23set_flipbook_suppressedEb
+__ZN2CA12WindowServer6Server27flipbook_copy_current_frameEPNS_6Render6ObjectEPvS5_
+__ZN2CA12WindowServer6Server27flipbook_query_memory_usageEPNS_6Render6ObjectEPvS5_
+__ZN2CA12WindowServer6Server30set_pre_post_flipbook_callbackEU13block_pointerFvbhE
+__ZN2CA12WindowServer7Display20set_flipbook_enabledEb
+__ZN2CA12WindowServer7Display23set_flipbook_suppressedEb
+__ZN2CA12WindowServer8FlipBook10next_frameENS0_17FlipBookFrameTypeEmm
+__ZN2CA12WindowServer8FlipBook11reuse_frameERNS1_5FrameE
+__ZN2CA12WindowServer8FlipBook12copy_surfaceERNS1_5FrameERj
+__ZN2CA12WindowServer8FlipBook12free_surfaceERNS1_5FrameE
+__ZN2CA12WindowServer8FlipBook12resume_frameERNS1_5FrameE
+__ZN2CA12WindowServer8FlipBook13free_surfacesEv
+__ZN2CA12WindowServer8FlipBook14allocate_frameENS0_17FlipBookFrameTypeEmm
+__ZN2CA12WindowServer8FlipBook14collect_memoryEm
+__ZN2CA12WindowServer8FlipBook14swap_completedEjy
+__ZN2CA12WindowServer8FlipBook16resume_completedEv
+__ZN2CA12WindowServer8FlipBook18invalidate_contextEPNS_6Render7ContextE
+__ZN2CA12WindowServer8FlipBook18invalidate_contextEj
+__ZN2CA12WindowServer8FlipBook18suspended_on_frameEh
+__ZN2CA12WindowServer8FlipBook19get_cancel_metadataEPy
+__ZN2CA12WindowServer8FlipBook19transition_to_stateENS0_13FlipBookStateEb
+__ZN2CA12WindowServer8FlipBook20swap_enqueued_lockedEv
+__ZN2CA12WindowServer8FlipBook22set_power_saving_stateEb
+__ZN2CA12WindowServer8FlipBook25set_one_hz_flipbook_stateEb
+__ZN2CA12WindowServer8FlipBook25swapped_frame_displayed_pERKNS1_5FrameE
+__ZN2CA12WindowServer8FlipBook28cancel_all_swaps_get_currentERjm
+__ZN2CA12WindowServer8FlipBook29set_low_power_rendering_stateEb
+__ZN2CA12WindowServer8FlipBook33supports_individual_frame_cancelsEv
+__ZN2CA12WindowServer8FlipBook5_exitENS0_23FlipBookStateTransitionE
+__ZN2CA12WindowServer8FlipBook6_enterENS0_23FlipBookStateTransitionE
+__ZN2CA12WindowServer8FlipBook6cancelERyRhPjbS2_Rb
+__ZN2CA12WindowServer8FlipBook7_resumeENS0_23FlipBookStateTransitionE
+__ZN2CA12WindowServer8FlipBook7collectEv
+__ZN2CA12WindowServer8FlipBook7recycleEv
+__ZN2CA12WindowServer8FlipBook8_suspendENS0_23FlipBookStateTransitionE
+__ZN2CA12WindowServer8FlipBook8rendererEv
+__ZN2CA12WindowServer8FlipBookD0Ev
+__ZN2CA12WindowServer8FlipBookD1Ev
+__ZN2CA2CG15ContextDelegate35pop_and_try_fold_transparency_layerEP8CGGStatePKNS0_5StyleEPPNS0_6DrawOpE
+__ZNK2CA12WindowServer12IOMFBDisplay16flipbook_enabledEv
+__ZNK2CA12WindowServer12IOMFBDisplay19flipbook_suppressedEv
+__ZNK2CA12WindowServer13IOMFBFlipBook19needs_debug_surfaceENS0_17FlipBookFrameTypeE
+__ZNK2CA12WindowServer13IOMFBFlipBook20debug_surface_boundsEv
+__ZNK2CA12WindowServer13IOMFBFlipBook23get_destination_surfaceEh
+__ZNK2CA12WindowServer7Display16flipbook_enabledEv
+__ZNK2CA12WindowServer7Display19flipbook_suppressedEv
+__ZNK2CA12WindowServer8FlipBook19needs_debug_surfaceENS0_17FlipBookFrameTypeE
+__ZNK2CA12WindowServer8FlipBook20debug_surface_boundsEv
+__ZNK2CA12WindowServer8FlipBook23get_destination_surfaceEh
+__ZNK2CA12WindowServer8FlipBook24previous_frame_with_seedEy
+__ZNKSt3__110__function6__funcIZN2CA12WindowServer8FlipBook6cancelERyRhPjbS5_RbE3
+__ZNSt3__110__function12__value_funcIFbNS_16reverse_iteratorINS_11__wrap_iterIPN2CA12WindowServer8FlipBook5FrameEEEEEEED2B9fqn220106Ev
+__ZNSt3__110__function6__funcIZN2CA12WindowServer8FlipBook6cancelERyRhPjbS5_RbE3
+__ZNSt3__111__introsortINS_17_ClassicAlgPolicyERZN2CA12WindowServer8FlipBook10next_frameENS3_17FlipBookFrameTypeEmmE3
+__ZNSt3__119__allocate_at_leastB9fqn220106INS_9allocatorIN2CA12WindowServer8FlipBook5FrameEEENS_16allocator_traitsIS6_EEEENS_19__allocation_resultINT0_7pointerENSA_9size_typeEEERT_m
+__ZNSt3__127__insertion_sort_incompleteB9fqn220106INS_17_ClassicAlgPolicyERZN2CA12WindowServer8FlipBook10next_frameENS3_17FlipBookFrameTypeEmmE3
+__ZNSt3__16vectorIN2CA12WindowServer8FlipBook5FrameENS_9allocatorIS4_EEE18__insert_with_sizeB9fqn220106INS_17_ClassicAlgPolicyENS_11__wrap_iterIPS4_EESC_EESC_NSA_IPKS4_EET0_T1_l
+__ZNSt3__16vectorIN2CA12WindowServer8FlipBook5FrameENS_9allocatorIS4_EEE9push_backB9fqn220106ERKS4_
+__ZNSt3__17__sort4B9fqn220106INS_17_ClassicAlgPolicyERZN2CA12WindowServer8FlipBook10next_frameENS3_17FlipBookFrameTypeEmmE3
+__ZNSt3__17__sort5B9fqn220106INS_17_ClassicAlgPolicyERZN2CA12WindowServer8FlipBook10next_frameENS3_17FlipBookFrameTypeEmmE3

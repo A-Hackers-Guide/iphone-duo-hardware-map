@@ -1,0 +1,220 @@
+# `KCellularPmicHwStats`
+
+- Image: [`/System/Library/PrivateFrameworks/PowerlogLiteOperators.framework/PowerlogLiteOperators`](../userland/System__Library__PrivateFrameworks__PowerlogLiteOperators.framework__PowerlogLiteOperators.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `PBCodable`
+- Protocols: `NSCopying`
+- 28 instance variables, 54 properties, 117 instance methods, 0 class methods
+
+## Instance variables
+
+```
+Q _timestamp;
+I _activeDurMs;
+I _bctActiveDurMs;
+I _cdmaActiveDurMs;
+I _dbgActiveDurMs;
+I _dpuActiveDurMs;
+I _durationMs;
+I _gsmActiveDurMs;
+I _gsmCa5ActiveDurMs;
+I _highVoltActiveDurMs;
+I _hostActiveDurMs;
+I _hostCpuActiveDurMs;
+I _hostCpuSysActiveDurMs;
+I _ioActiveDurMs;
+I _lowVoltActiveDurMs;
+I _lteActiveDurMs;
+I _midVoltActiveDurMs;
+I _perActiveDurMs;
+I _phyActiveDurMs;
+I _phyNocActiveDurMs;
+I _rauActiveDurMs;
+I _rpcuActiveDurMs;
+I _sleepDurMs;
+I _sleepEntryCount;
+I _tdscdmaActiveDurMs;
+I _tpcuActiveDurMs;
+I _wcdmaActiveDurMs;
+{?="timestamp"b1"activeDurMs"b1"bctActiveDurMs"b1"cdmaActiveDurMs"b1"dbgActiveDurMs"b1"dpuActiveDurMs"b1"durationMs"b1"gsmActiveDurMs"b1"gsmCa5ActiveDurMs"b1"highVoltActiveDurMs"b1"hostActiveDurMs"b1"hostCpuActiveDurMs"b1"hostCpuSysActiveDurMs"b1"ioActiveDurMs"b1"lowVoltActiveDurMs"b1"lteActiveDurMs"b1"midVoltActiveDurMs"b1"perActiveDurMs"b1"phyActiveDurMs"b1"phyNocActiveDurMs"b1"rauActiveDurMs"b1"rpcuActiveDurMs"b1"sleepDurMs"b1"sleepEntryCount"b1"tdscdmaActiveDurMs"b1"tpcuActiveDurMs"b1"wcdmaActiveDurMs"b1} _has;
+```
+
+## Properties
+
+```
+@property (TB,N) hasTimestamp;
+@property (TQ,N,V_timestamp) timestamp;
+@property (TB,N) hasDurationMs;
+@property (TI,N,V_durationMs) durationMs;
+@property (TB,N) hasSleepDurMs;
+@property (TI,N,V_sleepDurMs) sleepDurMs;
+@property (TB,N) hasActiveDurMs;
+@property (TI,N,V_activeDurMs) activeDurMs;
+@property (TB,N) hasSleepEntryCount;
+@property (TI,N,V_sleepEntryCount) sleepEntryCount;
+@property (TB,N) hasLowVoltActiveDurMs;
+@property (TI,N,V_lowVoltActiveDurMs) lowVoltActiveDurMs;
+@property (TB,N) hasMidVoltActiveDurMs;
+@property (TI,N,V_midVoltActiveDurMs) midVoltActiveDurMs;
+@property (TB,N) hasHighVoltActiveDurMs;
+@property (TI,N,V_highVoltActiveDurMs) highVoltActiveDurMs;
+@property (TB,N) hasGsmCa5ActiveDurMs;
+@property (TI,N,V_gsmCa5ActiveDurMs) gsmCa5ActiveDurMs;
+@property (TB,N) hasLteActiveDurMs;
+@property (TI,N,V_lteActiveDurMs) lteActiveDurMs;
+@property (TB,N) hasWcdmaActiveDurMs;
+@property (TI,N,V_wcdmaActiveDurMs) wcdmaActiveDurMs;
+@property (TB,N) hasTdscdmaActiveDurMs;
+@property (TI,N,V_tdscdmaActiveDurMs) tdscdmaActiveDurMs;
+@property (TB,N) hasHostActiveDurMs;
+@property (TI,N,V_hostActiveDurMs) hostActiveDurMs;
+@property (TB,N) hasHostCpuSysActiveDurMs;
+@property (TI,N,V_hostCpuSysActiveDurMs) hostCpuSysActiveDurMs;
+@property (TB,N) hasHostCpuActiveDurMs;
+@property (TI,N,V_hostCpuActiveDurMs) hostCpuActiveDurMs;
+@property (TB,N) hasRpcuActiveDurMs;
+@property (TI,N,V_rpcuActiveDurMs) rpcuActiveDurMs;
+@property (TB,N) hasPhyActiveDurMs;
+@property (TI,N,V_phyActiveDurMs) phyActiveDurMs;
+@property (TB,N) hasPhyNocActiveDurMs;
+@property (TI,N,V_phyNocActiveDurMs) phyNocActiveDurMs;
+@property (TB,N) hasBctActiveDurMs;
+@property (TI,N,V_bctActiveDurMs) bctActiveDurMs;
+@property (TB,N) hasCdmaActiveDurMs;
+@property (TI,N,V_cdmaActiveDurMs) cdmaActiveDurMs;
+@property (TB,N) hasGsmActiveDurMs;
+@property (TI,N,V_gsmActiveDurMs) gsmActiveDurMs;
+@property (TB,N) hasTpcuActiveDurMs;
+@property (TI,N,V_tpcuActiveDurMs) tpcuActiveDurMs;
+@property (TB,N) hasIoActiveDurMs;
+@property (TI,N,V_ioActiveDurMs) ioActiveDurMs;
+@property (TB,N) hasPerActiveDurMs;
+@property (TI,N,V_perActiveDurMs) perActiveDurMs;
+@property (TB,N) hasDbgActiveDurMs;
+@property (TI,N,V_dbgActiveDurMs) dbgActiveDurMs;
+@property (TB,N) hasDpuActiveDurMs;
+@property (TI,N,V_dpuActiveDurMs) dpuActiveDurMs;
+@property (TB,N) hasRauActiveDurMs;
+@property (TI,N,V_rauActiveDurMs) rauActiveDurMs;
+```
+
+## Instance methods
+
+```
+-[KCellularPmicHwStats hasTimestamp];
+-[KCellularPmicHwStats setHasTimestamp:];
+-[KCellularPmicHwStats setTimestamp:];
+-[KCellularPmicHwStats writeTo:];
+-[KCellularPmicHwStats mergeFrom:];
+-[KCellularPmicHwStats timestamp];
+-[KCellularPmicHwStats hash];
+-[KCellularPmicHwStats copyTo:];
+-[KCellularPmicHwStats description];
+-[KCellularPmicHwStats readFrom:];
+-[KCellularPmicHwStats copyWithZone:];
+-[KCellularPmicHwStats isEqual:];
+-[KCellularPmicHwStats dictionaryRepresentation];
+-[KCellularPmicHwStats durationMs];
+-[KCellularPmicHwStats hasDurationMs];
+-[KCellularPmicHwStats setDurationMs:];
+-[KCellularPmicHwStats setHasDurationMs:];
+-[KCellularPmicHwStats cdmaActiveDurMs];
+-[KCellularPmicHwStats hostActiveDurMs];
+-[KCellularPmicHwStats setActiveDurMs:];
+-[KCellularPmicHwStats rpcuActiveDurMs];
+-[KCellularPmicHwStats sleepEntryCount];
+-[KCellularPmicHwStats tpcuActiveDurMs];
+-[KCellularPmicHwStats activeDurMs];
+-[KCellularPmicHwStats bctActiveDurMs];
+-[KCellularPmicHwStats dbgActiveDurMs];
+-[KCellularPmicHwStats dpuActiveDurMs];
+-[KCellularPmicHwStats gsmActiveDurMs];
+-[KCellularPmicHwStats gsmCa5ActiveDurMs];
+-[KCellularPmicHwStats hasActiveDurMs];
+-[KCellularPmicHwStats hasBctActiveDurMs];
+-[KCellularPmicHwStats hasCdmaActiveDurMs];
+-[KCellularPmicHwStats hasDbgActiveDurMs];
+-[KCellularPmicHwStats hasDpuActiveDurMs];
+-[KCellularPmicHwStats hasGsmActiveDurMs];
+-[KCellularPmicHwStats hasGsmCa5ActiveDurMs];
+-[KCellularPmicHwStats hasHighVoltActiveDurMs];
+-[KCellularPmicHwStats hasHostActiveDurMs];
+-[KCellularPmicHwStats hasHostCpuActiveDurMs];
+-[KCellularPmicHwStats hasHostCpuSysActiveDurMs];
+-[KCellularPmicHwStats hasIoActiveDurMs];
+-[KCellularPmicHwStats hasLowVoltActiveDurMs];
+-[KCellularPmicHwStats hasLteActiveDurMs];
+-[KCellularPmicHwStats hasMidVoltActiveDurMs];
+-[KCellularPmicHwStats hasPerActiveDurMs];
+-[KCellularPmicHwStats hasPhyActiveDurMs];
+-[KCellularPmicHwStats hasPhyNocActiveDurMs];
+-[KCellularPmicHwStats hasRauActiveDurMs];
+-[KCellularPmicHwStats hasRpcuActiveDurMs];
+-[KCellularPmicHwStats hasSleepDurMs];
+-[KCellularPmicHwStats hasSleepEntryCount];
+-[KCellularPmicHwStats hasTdscdmaActiveDurMs];
+-[KCellularPmicHwStats hasTpcuActiveDurMs];
+-[KCellularPmicHwStats hasWcdmaActiveDurMs];
+-[KCellularPmicHwStats highVoltActiveDurMs];
+-[KCellularPmicHwStats hostCpuActiveDurMs];
+-[KCellularPmicHwStats hostCpuSysActiveDurMs];
+-[KCellularPmicHwStats ioActiveDurMs];
+-[KCellularPmicHwStats lowVoltActiveDurMs];
+-[KCellularPmicHwStats lteActiveDurMs];
+-[KCellularPmicHwStats midVoltActiveDurMs];
+-[KCellularPmicHwStats perActiveDurMs];
+-[KCellularPmicHwStats phyActiveDurMs];
+-[KCellularPmicHwStats phyNocActiveDurMs];
+-[KCellularPmicHwStats rauActiveDurMs];
+-[KCellularPmicHwStats setBctActiveDurMs:];
+-[KCellularPmicHwStats setCdmaActiveDurMs:];
+-[KCellularPmicHwStats setDbgActiveDurMs:];
+-[KCellularPmicHwStats setDpuActiveDurMs:];
+-[KCellularPmicHwStats setGsmActiveDurMs:];
+-[KCellularPmicHwStats setGsmCa5ActiveDurMs:];
+-[KCellularPmicHwStats setHasActiveDurMs:];
+-[KCellularPmicHwStats setHasBctActiveDurMs:];
+-[KCellularPmicHwStats setHasCdmaActiveDurMs:];
+-[KCellularPmicHwStats setHasDbgActiveDurMs:];
+-[KCellularPmicHwStats setHasDpuActiveDurMs:];
+-[KCellularPmicHwStats setHasGsmActiveDurMs:];
+-[KCellularPmicHwStats setHasGsmCa5ActiveDurMs:];
+-[KCellularPmicHwStats setHasHighVoltActiveDurMs:];
+-[KCellularPmicHwStats setHasHostActiveDurMs:];
+-[KCellularPmicHwStats setHasHostCpuActiveDurMs:];
+-[KCellularPmicHwStats setHasHostCpuSysActiveDurMs:];
+-[KCellularPmicHwStats setHasIoActiveDurMs:];
+-[KCellularPmicHwStats setHasLowVoltActiveDurMs:];
+-[KCellularPmicHwStats setHasLteActiveDurMs:];
+-[KCellularPmicHwStats setHasMidVoltActiveDurMs:];
+-[KCellularPmicHwStats setHasPerActiveDurMs:];
+-[KCellularPmicHwStats setHasPhyActiveDurMs:];
+-[KCellularPmicHwStats setHasPhyNocActiveDurMs:];
+-[KCellularPmicHwStats setHasRauActiveDurMs:];
+-[KCellularPmicHwStats setHasRpcuActiveDurMs:];
+-[KCellularPmicHwStats setHasSleepDurMs:];
+-[KCellularPmicHwStats setHasSleepEntryCount:];
+-[KCellularPmicHwStats setHasTdscdmaActiveDurMs:];
+-[KCellularPmicHwStats setHasTpcuActiveDurMs:];
+-[KCellularPmicHwStats setHasWcdmaActiveDurMs:];
+-[KCellularPmicHwStats setHighVoltActiveDurMs:];
+-[KCellularPmicHwStats setHostActiveDurMs:];
+-[KCellularPmicHwStats setHostCpuActiveDurMs:];
+-[KCellularPmicHwStats setHostCpuSysActiveDurMs:];
+-[KCellularPmicHwStats setIoActiveDurMs:];
+-[KCellularPmicHwStats setLowVoltActiveDurMs:];
+-[KCellularPmicHwStats setLteActiveDurMs:];
+-[KCellularPmicHwStats setMidVoltActiveDurMs:];
+-[KCellularPmicHwStats setPerActiveDurMs:];
+-[KCellularPmicHwStats setPhyActiveDurMs:];
+-[KCellularPmicHwStats setPhyNocActiveDurMs:];
+-[KCellularPmicHwStats setRauActiveDurMs:];
+-[KCellularPmicHwStats setRpcuActiveDurMs:];
+-[KCellularPmicHwStats setSleepDurMs:];
+-[KCellularPmicHwStats setSleepEntryCount:];
+-[KCellularPmicHwStats setTdscdmaActiveDurMs:];
+-[KCellularPmicHwStats setTpcuActiveDurMs:];
+-[KCellularPmicHwStats setWcdmaActiveDurMs:];
+-[KCellularPmicHwStats sleepDurMs];
+-[KCellularPmicHwStats tdscdmaActiveDurMs];
+-[KCellularPmicHwStats wcdmaActiveDurMs];
+```

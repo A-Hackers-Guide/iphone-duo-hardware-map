@@ -1,0 +1,24 @@
+# `SBDeviceApplicationSceneOverlayViewProviderDelegate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- 0 instance variables, 0 properties, 15 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[SBDeviceApplicationSceneOverlayViewProviderDelegate activateOverlayForViewProvider:];
+-[SBDeviceApplicationSceneOverlayViewProviderDelegate containerViewSizeForOverlayViewProvider:];
+-[SBDeviceApplicationSceneOverlayViewProviderDelegate deactivateOverlayForViewProvider:];
+-[SBDeviceApplicationSceneOverlayViewProviderDelegate hostWindowForOverlayViewProvider:];
+-[SBDeviceApplicationSceneOverlayViewProviderDelegate initialTraitsParticipantForOverlayViewProvider:];
+-[SBDeviceApplicationSceneOverlayViewProviderDelegate overlayViewProviderDidChangeSupportedInterfaceOrientations:];
+-[SBDeviceApplicationSceneOverlayViewProviderDelegate overlayViewProviderHostDisplayMode:];
+-[SBDeviceApplicationSceneOverlayViewProviderDelegate overlayViewProviderHostLiveContentDisableReasons:];
+-[SBDeviceApplicationSceneOverlayViewProviderDelegate overlayViewProviderHostPresentationPriority:];
+-[SBDeviceApplicationSceneOverlayViewProviderDelegate overlayViewProviderIsHostedInNonrotatingWindow:];
+-[SBDeviceApplicationSceneOverlayViewProviderDelegate overlayViewProviderIsHostedInSecureWindow:];
+-[SBDeviceApplicationSceneOverlayViewProviderDelegate overlayViewProviderNeedsStatusBarAppearanceUpdate:];
+-[SBDeviceApplicationSceneOverlayViewProviderDelegate overlayViewProviderNeedsUpdateResignActiveAssertions:];
+-[SBDeviceApplicationSceneOverlayViewProviderDelegate overlayViewProviderRendersWhileLocked:];
+-[SBDeviceApplicationSceneOverlayViewProviderDelegate windowSceneForOverlayViewProvider:];
+```

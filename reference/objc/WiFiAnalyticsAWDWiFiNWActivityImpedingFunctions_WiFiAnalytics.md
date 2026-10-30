@@ -1,0 +1,271 @@
+# `WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions`
+
+- Image: [`/System/Library/PrivateFrameworks/WiFiAnalytics.framework/WiFiAnalytics`](../userland/System__Library__PrivateFrameworks__WiFiAnalytics.framework__WiFiAnalytics.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `PBCodable`
+- Protocols: `NSCopying`
+- 33 instance variables, 58 properties, 148 instance methods, 6 class methods
+
+## Instance variables
+
+```
+I _activechains0;
+I _activechains1;
+@"NSMutableArray" _cTLMIndex1s;
+@"NSMutableArray" _cTLMIndexs;
+I _ctlmid0;
+I _ctlmid1;
+I _ppm0;
+I _ppm1;
+I _rc1Duration;
+I _rc1Request;
+I _rc1wlanCrit;
+I _rc1wlanCritDuration;
+I _rc2Duration;
+I _rc2Grant;
+I _rc2LongGrant;
+I _rc2Request;
+I _rc2cts2a;
+@"WiFiAnalyticsAWDWiFiTDM" _sdbtdm;
+I _temp0;
+I _temp1;
+I _tvpmindex0;
+I _tvpmindex1;
+@"NSMutableArray" _txDutyCyclePct1s;
+@"NSMutableArray" _txDutyCyclePcts;
+@"NSMutableArray" _txPowerBackoffDB1s;
+@"NSMutableArray" _txPowerBackoffDBs;
+I _txduty0;
+I _txduty1;
+I _txpowerbackoff0;
+I _txpowerbackoff1;
+I _voltage0;
+I _voltage1;
+{?="activechains0"b1"activechains1"b1"ctlmid0"b1"ctlmid1"b1"ppm0"b1"ppm1"b1"rc1Duration"b1"rc1Request"b1"rc1wlanCrit"b1"rc1wlanCritDuration"b1"rc2Duration"b1"rc2Grant"b1"rc2LongGrant"b1"rc2Request"b1"rc2cts2a"b1"temp0"b1"temp1"b1"tvpmindex0"b1"tvpmindex1"b1"txduty0"b1"txduty1"b1"txpowerbackoff0"b1"txpowerbackoff1"b1"voltage0"b1"voltage1"b1} _has;
+```
+
+## Properties
+
+```
+@property (T@"NSMutableArray",&,N,V_cTLMIndexs) cTLMIndexs;
+@property (T@"NSMutableArray",&,N,V_txPowerBackoffDBs) txPowerBackoffDBs;
+@property (T@"NSMutableArray",&,N,V_txDutyCyclePcts) txDutyCyclePcts;
+@property (T@"NSMutableArray",&,N,V_cTLMIndex1s) cTLMIndex1s;
+@property (T@"NSMutableArray",&,N,V_txPowerBackoffDB1s) txPowerBackoffDB1s;
+@property (T@"NSMutableArray",&,N,V_txDutyCyclePct1s) txDutyCyclePct1s;
+@property (TB,N) hasTxduty0;
+@property (TI,N,V_txduty0) txduty0;
+@property (TB,N) hasTxduty1;
+@property (TI,N,V_txduty1) txduty1;
+@property (TB,N) hasTxpowerbackoff0;
+@property (TI,N,V_txpowerbackoff0) txpowerbackoff0;
+@property (TB,N) hasTxpowerbackoff1;
+@property (TI,N,V_txpowerbackoff1) txpowerbackoff1;
+@property (TB,N) hasActivechains0;
+@property (TI,N,V_activechains0) activechains0;
+@property (TB,N) hasActivechains1;
+@property (TI,N,V_activechains1) activechains1;
+@property (TB,N) hasTemp0;
+@property (TI,N,V_temp0) temp0;
+@property (TB,N) hasTemp1;
+@property (TI,N,V_temp1) temp1;
+@property (TB,N) hasVoltage0;
+@property (TI,N,V_voltage0) voltage0;
+@property (TB,N) hasVoltage1;
+@property (TI,N,V_voltage1) voltage1;
+@property (TB,N) hasPpm0;
+@property (TI,N,V_ppm0) ppm0;
+@property (TB,N) hasPpm1;
+@property (TI,N,V_ppm1) ppm1;
+@property (TB,N) hasCtlmid0;
+@property (TI,N,V_ctlmid0) ctlmid0;
+@property (TB,N) hasCtlmid1;
+@property (TI,N,V_ctlmid1) ctlmid1;
+@property (TB,N) hasTvpmindex0;
+@property (TI,N,V_tvpmindex0) tvpmindex0;
+@property (TB,N) hasTvpmindex1;
+@property (TI,N,V_tvpmindex1) tvpmindex1;
+@property (TB,N) hasRc1Request;
+@property (TI,N,V_rc1Request) rc1Request;
+@property (TB,N) hasRc1Duration;
+@property (TI,N,V_rc1Duration) rc1Duration;
+@property (TB,N) hasRc1wlanCrit;
+@property (TI,N,V_rc1wlanCrit) rc1wlanCrit;
+@property (TB,N) hasRc1wlanCritDuration;
+@property (TI,N,V_rc1wlanCritDuration) rc1wlanCritDuration;
+@property (TB,N) hasRc2Request;
+@property (TI,N,V_rc2Request) rc2Request;
+@property (TB,N) hasRc2Duration;
+@property (TI,N,V_rc2Duration) rc2Duration;
+@property (TB,N) hasRc2Grant;
+@property (TI,N,V_rc2Grant) rc2Grant;
+@property (TB,N) hasRc2LongGrant;
+@property (TI,N,V_rc2LongGrant) rc2LongGrant;
+@property (TB,N) hasRc2cts2a;
+@property (TI,N,V_rc2cts2a) rc2cts2a;
+@property (TB,R,N) hasSdbtdm;
+@property (T@"WiFiAnalyticsAWDWiFiTDM",&,N,V_sdbtdm) sdbtdm;
+```
+
+## Class methods
+
+```
++[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions cTLMIndex1Type];
++[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions cTLMIndexType];
++[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txDutyCyclePct1Type];
++[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txDutyCyclePctType];
++[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txPowerBackoffDB1Type];
++[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txPowerBackoffDBType];
+```
+
+## Instance methods
+
+```
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions ctlmid0];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasActivechains0:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txduty0];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions cTLMIndex1sCount];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setCtlmid0:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasRc2Request];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasPpm0:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions writeTo:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setTxpowerbackoff0:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions temp1];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions addTxPowerBackoffDB:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasPpm1];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setRc1wlanCritDuration:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txpowerbackoff1];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setTxduty1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasRc2LongGrant:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setTxDutyCyclePcts:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setRc2Grant:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions activechains1];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions cTLMIndexAtIndex:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasTxpowerbackoff0:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions addCTLMIndex1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasRc1Duration:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions rc2cts2a];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions clearTxDutyCyclePcts];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasVoltage0:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasRc2Duration:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions cTLMIndex1AtIndex:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions rc1wlanCrit];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions mergeFrom:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setTxPowerBackoffDBs:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txDutyCyclePct1s];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions cTLMIndex1s];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions sdbtdm];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions temp0];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions ctlmid1];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions voltage1];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setCTLMIndexs:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasRc2cts2a:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txDutyCyclePct1sCount];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions rc1Request];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasTxpowerbackoff1];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setRc1wlanCrit:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasRc1Request:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasActivechains0];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasRc1Request];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setVoltage1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasPpm1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txPowerBackoffDBsCount];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasRc2Grant:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasActivechains1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setTxpowerbackoff1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions clearTxPowerBackoffDB1s];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txPowerBackoffDBs];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions ppm0];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasActivechains1];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setActivechains0:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txDutyCyclePctAtIndex:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txpowerbackoff0];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions ppm1];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasRc1wlanCritDuration:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasTxduty0];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasRc1wlanCrit];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions rc1wlanCritDuration];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions clearCTLMIndexs];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setRc1Duration:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setRc2cts2a:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setRc2Request:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasRc2LongGrant];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasVoltage0];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions clearTxDutyCyclePct1s];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasTvpmindex1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasTvpmindex1];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setActivechains1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions rc2LongGrant];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasCtlmid0:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setTemp1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setTvpmindex1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasRc2cts2a];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions clearTxPowerBackoffDBs];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasTxpowerbackoff0];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasTxduty1];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions rc2Duration];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setTxDutyCyclePct1s:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasTemp0:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions clearCTLMIndex1s];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions tvpmindex0];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txPowerBackoffDB1sCount];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasCtlmid1];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasRc1wlanCrit:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions activechains0];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasRc2Request:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setSdbtdm:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setTxduty0:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasTemp0];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setRc2Duration:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hash];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasTxpowerbackoff1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txDutyCyclePct1AtIndex:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions rc1Duration];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions copyTo:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions addCTLMIndex:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions addTxDutyCyclePct:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setCTLMIndex1s:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions description];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txDutyCyclePctsCount];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasCtlmid1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasTemp1];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasCtlmid0];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions addTxPowerBackoffDB1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasRc2Duration];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasTemp1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setTxPowerBackoffDB1s:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setCtlmid1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setRc1Request:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasRc2Grant];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setRc2LongGrant:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setVoltage0:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions readFrom:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasTxduty1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasTvpmindex0];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasRc1wlanCritDuration];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions addTxDutyCyclePct1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasVoltage1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions cTLMIndexsCount];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions copyWithZone:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions cTLMIndexs];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setPpm1:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txDutyCyclePcts];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txPowerBackoffDB1AtIndex:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txduty1];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setTemp0:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions rc2Grant];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions isEqual:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasTxduty0:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions voltage0];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txPowerBackoffDBAtIndex:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setTvpmindex0:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions rc2Request];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setHasTvpmindex0:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions setPpm0:];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasPpm0];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions txPowerBackoffDB1s];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasSdbtdm];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasVoltage1];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions dictionaryRepresentation];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions tvpmindex1];
+-[WiFiAnalyticsAWDWiFiNWActivityImpedingFunctions hasRc1Duration];
+```

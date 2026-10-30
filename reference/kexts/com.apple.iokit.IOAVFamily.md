@@ -1,0 +1,2369 @@
+# `com.apple.iokit.IOAVFamily`
+
+- Name: IOAVFamily
+- Version: `1.0.0`
+- UUID: `485CE4C5-0412-369F-B173-9EC34F3E5D67`
+- Source version: `519.40.3.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleAudioClockLibs`](com.apple.driver.AppleAudioClockLibs.md) 1.0, [`com.apple.driver.AppleIISController`](com.apple.driver.AppleIISController.md) 1.0.0, [`com.apple.iokit.IOAudio2Family`](com.apple.iokit.IOAudio2Family.md) 1.0, [`com.apple.iokit.IOCECFamily`](com.apple.iokit.IOCECFamily.md) 1.0, [`com.apple.iokit.IOHDCPFamily`](com.apple.iokit.IOHDCPFamily.md) 1.0.0, [`com.apple.kec.Libm`](com.apple.kec.Libm.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0.0b2, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0.0b2, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0.0b2, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0.0b2, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0.0b2
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (5) [KC]
+
+### AppleARMIISAudioLinkDelegate
+- `CFBundleIdentifier`: `com.apple.iokit.IOAVFamily`
+- `IOClass`: `AppleIISAudioLinkDelegate`
+- `IONameMatch`: `audio-data,hdmi`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAVFamily`
+- `IOProviderClass`: `AppleARMIISDevice`
+
+### IOAVAudioDriver
+- `CFBundleIdentifier`: `com.apple.iokit.IOAVFamily`
+- `IOClass`: `IOAVAudioDriver`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAVFamily`
+- `IOProviderClass`: `IOAVAudioInterface`
+
+### IOAVCECService
+- `CFBundleIdentifier`: `com.apple.iokit.IOAVFamily`
+- `IOClass`: `IOAVCECService`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAVFamily`
+- `IOProviderClass`: `DCPAVCECInterfaceProxy`
+
+### IOAVService
+- `CFBundleIdentifier`: `com.apple.iokit.IOAVFamily`
+- `IOClass`: `IOAVService`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAVFamily`
+- `IOProviderClass`: `IOAVDevice`
+- `Location`: `External`
+
+### IOAVSplitDisplay
+- `CFBundleIdentifier`: `com.apple.iokit.IOAVFamily`
+- `IOClass`: `IOAVSplitDisplay`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAVFamily`
+- `IOProviderClass`: `IOAVSliceVideoInterface`
+
+
+## C++ classes (59) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleIISAudioLinkDelegate` | 0x108 | IOAVIISAudioLinkDelegate → IOAVAudioLinkDelegate → IOService → IORegistryEntry |
+| `IOAVAUPPacket` | 0x18 |  |
+| `IOAVAbstractVideoInterface` | 0x438 | IOAVInterface → IOService → IORegistryEntry |
+| `IOAVAsyncEventSource` | 0x80 | IOTimerEventSource → IOEventSource |
+| `IOAVAudioChannelLayoutElement` | 0x50 | IOAVElement |
+| `IOAVAudioDMADelegate` | 0x110 | IOService → IORegistryEntry |
+| `IOAVAudioDriver` | 0x250 | IOAudio2Device → IOService → IORegistryEntry |
+| `IOAVAudioElement` | 0x50 | IOAVElement |
+| `IOAVAudioInterface` | 0x458 | IOAVInterface → IOService → IORegistryEntry |
+| `IOAVAudioInterfaceConcreteUserClient` | 0x108 | IOAVAudioInterfaceUserClient → IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOAVAudioInterfaceUserClient` | 0x108 | IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOAVAudioLinkDelegate` | 0xc0 | IOService → IORegistryEntry |
+| `IOAVAudioPattern` | 0x50 |  |
+| `IOAVCECInterface` | 0x118 | IOAVControlInterface → IOAVInterface → IOService → IORegistryEntry |
+| `IOAVCECService` | 0x140 | IOCECService → IOService → IORegistryEntry |
+| `IOAVCommandDelegateService` | 0xd8 | IOService → IORegistryEntry |
+| `IOAVCommandGate` | 0x58 | IOCommandGate → IOEventSource |
+| `IOAVConcreteDisplayMemory` | 0x98 | IOAVDisplayMemory → IOService → IORegistryEntry |
+| `IOAVControlInterface` | 0xd8 | IOAVInterface → IOService → IORegistryEntry |
+| `IOAVControlInterfaceConcreteUserClient` | 0x108 | IOAVControlInterfaceUserClient → IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOAVControlInterfaceUserClient` | 0x108 | IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOAVController` | 0x128 | IOService → IORegistryEntry |
+| `IOAVControllerAddDeviceCompletion` | 0x28 |  |
+| `IOAVControllerConcreteUserClient` | 0x108 | IOAVControllerUserClient → IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOAVControllerUserClient` | 0x108 | IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOAVDMACommand` | 0xb8 | IODMACommand → IOCommand |
+| `IOAVDevice` | 0x218 | IOService → IORegistryEntry |
+| `IOAVDeviceConcreteUserClient` | 0x108 | IOAVDeviceUserClient → IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOAVDeviceUserClient` | 0x108 | IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOAVDisplayConnection` | 0x10 |  |
+| `IOAVDisplayConnectionManager` | 0x88 | IOService → IORegistryEntry |
+| `IOAVDisplayMemory` | 0x90 | IOService → IORegistryEntry |
+| `IOAVDisplayMemoryConcreteUserClient` | 0x108 | IOAVDisplayMemoryUserClient → IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOAVDisplayMemoryUserClient` | 0x108 | IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOAVElement` | 0x20 |  |
+| `IOAVElementArray` | 0x28 | OSArray → OSCollection |
+| `IOAVEventLog` | 0x70 |  |
+| `IOAVIISAudioDMAEventSource` | 0x80 | IOEventSource |
+| `IOAVIISAudioLinkDelegate` | 0xc0 | IOAVAudioLinkDelegate → IOService → IORegistryEntry |
+| `IOAVInterface` | 0xd0 | IOService → IORegistryEntry |
+| `IOAVRegisterSet` | 0x58 |  |
+| `IOAVSerializer` | 0x30 |  |
+| `IOAVService` | 0x448 | IOService → IORegistryEntry |
+| `IOAVServiceConcreteUserClient` | 0x108 | IOAVServiceUserClient → IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOAVServiceUserClient` | 0x108 | IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOAVSimpleVideoInterface` | 0x470 | IOAVVideoInterface → IOAVAbstractVideoInterface → IOAVInterface → IOService → IORegistryEntry |
+| `IOAVSliceVideoInterface` | 0x440 | IOAVAbstractVideoInterface → IOAVInterface → IOService → IORegistryEntry |
+| `IOAVSplitDisplay` | 0x328 | IOService → IORegistryEntry |
+| `IOAVSplitDisplayVideoInterface` | 0x470 | IOAVVideoInterface → IOAVAbstractVideoInterface → IOAVInterface → IOService → IORegistryEntry |
+| `IOAVTransactionLog` | 0x48 |  |
+| `IOAVUserClient` | 0x100 | IOUserClient → IOService → IORegistryEntry |
+| `IOAVVSDBElement` | 0x30 | IOAVElement |
+| `IOAVValueSet` | 0x20 | OSSet → OSCollection |
+| `IOAVVideoColorElement` | 0x70 | IOAVElement |
+| `IOAVVideoInterface` | 0x468 | IOAVAbstractVideoInterface → IOAVInterface → IOService → IORegistryEntry |
+| `IOAVVideoInterfaceConcreteUserClient` | 0x108 | IOAVVideoInterfaceUserClient → IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOAVVideoInterfaceUserClient` | 0x108 | IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOAVVideoTimingElement` | 0xb0 | IOAVElement |
+| `IOAVWAVRecorder` | 0x78 |  |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x00024f24 off=0x009738c0-0x009987e4 addr=0xfffffe00079778c0-0xfffffe000799c7e4 r--/r--   __TEXT            
+	sz=0x0000aac5 off=0x00973fd8-0x0097ea9d addr=0xfffffe0007977fd8-0xfffffe0007982a9d               __TEXT.__cstring          (CstringLiterals)
+	sz=0x00009c26 off=0x0097ea9d-0x009886c3 addr=0xfffffe0007982a9d-0xfffffe000798c6c3               __TEXT.__os_log           
+	sz=0x00010114 off=0x009886d0-0x009987e4 addr=0xfffffe000798c6d0-0xfffffe000799c7e4               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x00079084 off=0x02f01f90-0x02f7b014 addr=0xfffffe0009f05f90-0xfffffe0009f7f014 r-x/r-x   __TEXT_EXEC       
+	sz=0x00078654 off=0x02f01f90-0x02f7a5e4 addr=0xfffffe0009f05f90-0xfffffe0009f7e5e4          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000a30 off=0x02f7a5e4-0x02f7b014 addr=0xfffffe0009f7e5e4-0xfffffe0009f7f014          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00000b18 off=0x049ebdc8-0x049ec8e0 addr=0xfffffe000b9efdc8-0xfffffe000b9f08e0 rw-/rw-   __DATA            
+	sz=0x000000d0 off=0x049ebdc8-0x049ebe98 addr=0xfffffe000b9efdc8-0xfffffe000b9efe98               __DATA.__data             
+	sz=0x00000a00 off=0x00000000-0x00000a00 addr=0xfffffe000b9efe98-0xfffffe000b9f0898               __DATA.__common           (Zerofill)
+	sz=0x00000048 off=0x00000000-0x00000048 addr=0xfffffe000b9f0898-0xfffffe000b9f08e0               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00016ba0 off=0x013077b8-0x0131e358 addr=0xfffffe000830b7b8-0xfffffe0008322358 rw-/rw-   __DATA_CONST      
+	sz=0x000001d0 off=0x013077b8-0x01307988 addr=0xfffffe000830b7b8-0xfffffe000830b988         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x000001d0 off=0x01307988-0x01307b58 addr=0xfffffe000830b988-0xfffffe000830bb58         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00015078 off=0x01307b58-0x0131cbd0 addr=0xfffffe000830bb58-0xfffffe0008320bd0         __DATA_CONST.__const            
+	sz=0x00000f40 off=0x0131cbd0-0x0131db10 addr=0xfffffe0008320bd0-0xfffffe0008321b10         __DATA_CONST.__kalloc_type      
+	sz=0x000001e0 off=0x0131db10-0x0131dcf0 addr=0xfffffe0008321b10-0xfffffe0008321cf0         __DATA_CONST.__kalloc_var       
+	sz=0x00000518 off=0x0131dcf0-0x0131e208 addr=0xfffffe0008321cf0-0xfffffe0008322208         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000150 off=0x0131e208-0x0131e358 addr=0xfffffe0008322208-0xfffffe0008322358         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 368 at 0x04aefb98
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     485CE4C5-0412-369F-B173-9EC34F3E5D67
+008: LC_SOURCE_VERSION           519.40.3.0.0
+009: LC_FUNCTION_STARTS          offset=0x004abb0f0 size=0x10f0
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `IOAVFamily`
+- `CFBundleIdentifier`: `com.apple.iokit.IOAVFamily`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `IOAVFamily`
+- `CFBundleNumericVersion`: `16809984`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0.0`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1.0.0`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2010-2017 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.0`
+- `OSBundleRequired`: `Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/IOAVFamily.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198895888192`
+- `_PrelinkExecutableRelativePath`: `IOAVFamily`
+- `_PrelinkExecutableSize`: `743008`
+- `_PrelinkExecutableSourceAddr`: `-2198895888192`
+- `_PrelinkKmodInfo`: `-2198828286520`
+
+## Strings (2165) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `RotationMax`
+- `HDCPReauthRequests`
+- `IOAVControllerUserClient`
+- `_setVirtualDeviceMode`
+- `stopping %s link\n`
+- `Processing CEA v3 Vendor-Specific Video Data Block (VSVDB). IEEE OUI=%02X-%02X-%02X, length=%d\n`
+- `BoundsSupport`
+- `HDMI VSIF stopInfoFrame() rc=0x%08x\n`
+- `Recovery`
+- `HPDSuppressed`
+- `1211111212221212111222221112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222221111111111`
+- `IOAVController`
+- `unexpected provider type: %s\n`
+- `Revision`
+- `Type II Timing - Detailed`
+- `site.IOAVValueSet`
+- `TransferAttempts`
+- `delegate: warning: correcting block tag 0x%02X (%s) length: 0x%02X should be 0x%02X\n`
+- `startLink ret=0x%08x\n`
+- `IOAVControlInterface`
+- `Type IV Timing - DMT ID Code`
+- `DRM InfoFrame Not Supported.\n`
+- `getSinkSupportsHDMIScramblingAtAllRates()=%d, getSinkSupportsSCDC()=%d, getSupportsHDMILinkStatusMonitoring()=%d, enableLinkStatusMonitoring=%d\n`
+- `_getPower`
+- `IOAVControlInterfaceUserClient`
+- `V1 Vendor-specific`
+- `Full`
+- `EDID`
+- `IOAVAudioDriver`
+- `sample time: %qd host time: %qd\n`
+- `Payload`
+- `_audioTxDevice->setChannelCount() failed\n`
+- `ok`
+- `00000000-0000-0000-0000-000000000000`
+- `addTimeHeader`
+- `addWAVSample`
+- `validateColorFormatConversion`
+- `av_max_sample_rate_lpcm`
+- `output safety offset`
+- `copyEDID failure, ret=0x%08x\n`
+- `Processing H14b-VSDB\n`
+- `filterElements_block_invoke`
+- `ChannelLayout`
+- `HDMI`
+- `MPEG2`
+- `LinkType`
+- `delegate: %s base section, version %u.%u, product type %u, %u extensions, checksum 0x%02X (expected 0x%02X)\n`
+- `site.IOAVServiceConcreteUserClient`
+- `HPDState`
+- `IOAVAbstractVideoInterface`
+- `Unknown`
+- `failed to allocate command gate\n`
+- `HorizontalAttributes`
+- `GRGB Tunneled as YCbCr422 (Even line red)`
+- `DSCEnabled`
+- `processEDIDDetailed`
+- `HDMILinkStatusMonitoringEnabled`
+- `addDevice`
+- `B16@?0^{OSObject=^^?i}8`
+- `didTerminate`
+- `VendorID`
+- `failed to add dma source to controller's work-loop\n`
+- `SliceCapabilityMask`
+- `Processing VTB Extension\n`
+- `Processing CEA v3 YCbCr 4:2:0 Capability Map Data Block (Y420CMDB)\n`
+- `transferData ret=0x%08x\n`
+- `Starting with pattern 0x%06X\n`
+- `Y420`
+- `index=%d mask=%08x\n`
+- `ProductAttributesDisplayID`
+- `reprotectLinkGated ret=0x%08x\n`
+- `Armed`
+- `getDataSafetyOffset`
+- `startDMAInternal ret=0x%08x\n`
+- `unexpected '%s' instance in timing element list!\n`
+- `site.IOAVCommandDelegateService`
+- `121111121222121211222221`
+- `sendCEC`
+- `Add Child`
+- `HDCP1`
+- `timing.aspectRatio`
+- `processEDIDCEA3Extended`
+- `SupportsHDR10PlusApplicationVersion`
+- `_setHDRStaticMetadata`
+- `com.apple.coreav`
+- `options.merge`
+- `Starting video on behalf of Audio\n`
+- `using tile topology data to compute native pixel dimensions\n`
+- `dcp-delegate`
+- `site.IOAVEventLog`
+- `IOAVControlInterfaceUserInterfaceSupported`
+- `HDRStaticMetadataTypes`
+- `VGA`
+- `addInterfaces`
+- `PreferredTimingElements`
+- `_HDMILinkStatusMonitorSource->setTimeoutMS() ret=0x%08x\n`
+- `EncryptionStatus`
+- `Upstream`
+- `handleCPOverridesChanged`
+- `parserDidReadSection`
+- `av_%s_log_size`
+- `setPixelRepetition`
+- `setSyncPolarity`
+- `IOAVAbstractVideoInterface::withProperties() failed!\n`
+- `setLogicalAddressMask() ret=0x%08x\n`
+- `av_audio_interface_level`
+- `validateLink(data) failed, ret=0x%08x\n`
+- `IOAVEventLog.cpp`
+- `AudioElements`
+- `output channel layout`
+- `PatternGeneratorVerboseLogging`
+- `_provider->dictionaryWithProperties() failed!\n`
+- `32 Gbps (8Gbps/lane * 4 lanes)`
+- `av_device_mask`
+- `ProtectionType`
+- `\"%s: invalid eventSize(%u) < sizeof(*event)(%u)\\n\" @%s:%d`
+- `setLinkMode`
+- `av_max_channel_count_lpcm`
+- `StreamSampleRate`
+- `ret = 0x%08x\n`
+- `new format flags=0x%0x\n`
+- `12111222111222122111222`
+- `site.IOAVUserClient`
+- `AlphanumericSerialNumber`
+- `DisplayAttributes`
+- `_hostTime=%llu, _transferStartTimeStamp=%llu, currentTime=%llu, bufferDurationNS=%llu, stoppedClientOutputOffset=%u, dmaFrameOffset=%u, remainingOutputFrames=%u, timeUntilPlaybackDone=%lluus\n`
+- `_wavBufferLength=%u, _currentDataHeaderOffset=%u, _currentDataBlockSize=%u, _wavBufferOffset=%u, _wavTotalFiles=%u, _wavTotalDataSize=%u\n`
+- `removing interface=%llx\n`
+- `enumerateBasicAudioElements`
+- `createAUPPacket`
+- `parserDidParseContainerIDDataBlock`
+- `parserDidParseTimingCode`
+- `IOUserClientClass`
+- `1212222222`
+- `addWAVFormatHeader`
+- `StandardType`
+- `BT.2100 HLG`
+- `Processing EDID:\n`
+- `SC-LX88`
+- `_audioDMAEventSource is NULL, override for getDataSafetyOffset missing\n`
+- `Setting %s frontPorch = %u\n`
+- `setColorEncoding`
+- `1211111212221212111222222222222222222222222222222222222212111211111`
+- `DolbyVision LL YCbCr 4:2:2 (DP tunneling)`
+- `xvYCC601`
+- `processEDIDStandardTimings`
+- `enumerateDolbyVisionColorElements`
+- `failed to add event source to workloop\n`
+- `IOAVSplitDisplayVideoInterface`
+- `setEventLogCommandMask`
+- `StopInfoFrame`
+- `RestartInterfaces`
+- `Overscan`
+- `IOAVVideoColorBitsPerPixel`
+- `IOAVDeviceUserInterfaceSupported`
+- `options=%llx status=%d byteCount=%llu completionTime=%lld\n`
+- `MaxTMDSClock`
+- `site.IOAVAudioDMADelegate`
+- `_copyEDID`
+- `EventClass`
+- `Front Center High`
+- `options.vrr`
+- `Content type capability changed: Reprotecting.\n`
+- `No external audio link delegate configured.\n`
+- `beginStartStopOperation() failed, ret=0x%08x\n`
+- `SupportsVBR`
+- `BNQ`
+- `Override max TMDS clock to 0x44 (340MHz) in H14b-VSDB`
+- `i`
+- `SCDC version=0x%02x\n`
+- `last CED error(s) occurred %u ms ago\n`
+- `setScanInformation`
+- `initChannelAllocation`
+- `DynamicRange`
+- `WakeDisplay`
+- `9:16`
+- `Processing base EDID\n`
+- `validateAudioElements`
+- `delegate: parsed timing type %s:\n   pixelClock:     %llu\n   preferred:      %s\n   scanType:       %d\n   aspectRatio:    %d\n   h active:       %u\n   h blank:        %u\n   h offset:       %u\n   h syncWidth:    %u\n   h polarity:     %s\n   v active:       %u\n   v blank:        %u\n   v offset`
+- `interface->open() failed\n`
+- `VESA Timing Standard`
+- `Protected`
+- `PixelRepetition`
+- `Physical Address`
+- `HDMIScramblingEnabled`
+- `Positive`
+- `-restore`
+- `send called with no interface\n`
+- `warning: Unknown EDID extension type %u\n`
+- `Processing elements\n`
+- `Setting DSC PPS:\n`
+- `timed out?!\n`
+- `openInterface`
+- `SleepDisplay`
+- `DSCParameters`
+- `warning: ignoring unsupported CEA data block with extended tag %u\n`
+- `willStopLinkGated`
+- `IOAVAsyncEventSource::waitUntilNoActionInProgressGated: Timed out waiting for action to complete.\n`
+- `%*D`
+- `IOAVWAVRecorder`
+- `WAV buffer created with size=%uMB\n`
+- `command=%s ret=0x%08x\n`
+- `Min`
+- `warning: ignoring unknown HDMI_VIC %u\n`
+- `av_cp_failure_mitigation_enabled`
+- `site.IOAVDisplayConnectionManager`
+- `1222222212`
+- `DolbyVision version=%d 4k60=%d yuv422=%d dimming=%d dmvers=%d.%d dolbyvsif=%d colorimetry=%s colorDepthMask=0x%08X, colorEncodingMask=0x%08x\n`
+- `Adding standard timing for %d x %d @ %d\n`
+- `parserWillFixSectionLength`
+- `interrupted for reason 0x%08x while waiting for service close\n`
+- `inNotification: %u, %u, %qu, %qu\n`
+- `Failed to save audio clip %u. err 0x%x\n`
+- `DisplayLuminance`
+- `PeakThroughputMode1`
+- `virtual `
+- `DSCCapabilities`
+- `byteCount=%lu byteOffset=%lu outstandingDMACount=%u\n`
+- `forceHotPlugDetect`
+- `AC3`
+- `Deferring processing of CEA v3 Video Data Block\n`
+- `Ignoring VSDB with unknown OUI %02X-%02X-%02X\n`
+- `processTimingElements`
+- `result=%d\n`
+- `initWithOwner`
+- `NTSC`
+- `Data`
+- `dsc.pps`
+- `VSDBElements`
+- `Request to %s display critical section\n`
+- `Unrecognized signature %c%c%c%c\n`
+- `Setting %s total = %u\n`
+- `Transport`
+- `DebugLogMask`
+- `48 Gbps (12Gbps/lane * 4 lanes)`
+- `SupportsSuspend`
+- `Attempting to start %s info frame for %s source\n`
+- `_setBounds`
+- `RegisterSetType`
+- `Setting link mode = %s\n`
+- `IOAVControllerAddDeviceCompletion`
+- `beginStartStopOperation`
+- `clearOutputBufferRange`
+- `device`
+- `Front Left High`
+- `color.supports.dsc`
+- `AudioDolbyPropertiesOutputConfigSurround`
+- `%s timing data unspecified, using upstream values\n`
+- `setProtectionStatus`
+- `MaxTMDSCharacterRate`
+- `AudioLatencyProgressiveMS`
+- `copyFilteredAudioElements`
+- `Enumerating elements\n`
+- `1111`
+- `_copyTimingElements`
+- `failed to create serializer for ProtectionType\n`
+- `ok=%d\n`
+- `av_cec_service_mask`
+- `stopping virtual video rc=0x%08x\n`
+- `Attempting to %s power\n`
+- `ramrod_disable_sep_load`
+- `_clientInterface->attach() failed!\n`
+- `9:14`
+- `Validating color format conversion using default implemantation that does not allow any conversion\n`
+- `SC-87`
+- `DTT`
+- `Color Characteristics`
+- `IOAVAudioInterfaceUserInterfaceSupported`
+- `i8@?0`
+- `publishClientInterface`
+- `site.IOAVVSDBElement`
+- `General Purpose ASCII String`
+- `IsMirroring`
+- `_audioTxDevice->setLRCLKFrequency() failed\n`
+- `IOAVUserClient`
+- `Front Center`
+- `9:15`
+- `YCbCr 4:2:2 (HDMI tunneling)`
+- `Video`
+- `LinkData`
+- `VideoLatencyProgressiveMS`
+- `IOAVDisplayMemory`
+- `timing.h.pixelRepetition`
+- `AudioDolbyPropertiesHeadphone`
+- `Format`
+- `byteCount=%lu byteOffset=%lu duration=%llums _dmaBytesOutstanding=%lu\n`
+- `LegacyManufacturerID`
+- `Added(%llu) %sCEA VIC %d timing for %d x %d @ %d %s%s\n`
+- `processEDIDCEA3HFVSDB`
+- `removeInterfaceGated`
+- `Setting %s syncRate = %d.%02u\n`
+- `stopIOEngineInternal failed, ret=0x%08x\n`
+- `data offset = %d.\n`
+- `Attempting to configure audio with the following properties:\n`
+- `Timing`
+- `DolbyVisionLuminance`
+- `ret=0x%08x source=%s %ux%u%c%d.%04uHz pixelRate=%d depth=%d encoding=[%s] maxTMDSClock=%d maxTMDSCharacterRate=%d\n`
+- `max error rate exceeded on channel %u: %llu errors/sec\n`
+- `IOAVAudioPattern`
+- `finalizeWAVDataHeader`
+- `Type V Timing - Short Descriptor`
+- `SupportsBlockPrediction`
+- `warning: ignoring unsupported CEA data block with tag %u\n`
+- `unprotectLink failed ret=0x%08x\n`
+- `hdmi_scrambling_disable`
+- `dmaCompleteAction`
+- `Sanity failed, no time info at offset %llu\n`
+- `established=%02x established1=%02x established2=%02x\n`
+- `Validating elements\n`
+- `enumerateElements`
+- `Attempting to rotate %d.%02u degrees\n`
+- `IOAVServiceConcreteUserClient`
+- `setLogicalFormat`
+- `handleChangeSampleRateGated`
+- `CEA`
+- `already %s\n`
+- `***HDMIRX character rate (%ucsc) exceeds max TMDS character rate (%ucsc)\n`
+- `121112222`
+- `Return`
+- `md0`
+- `av_min_channel_count_lpcm`
+- `isOpen=%d\n`
+- `SupportsBacklightControl`
+- `Unable to create dscRequiredColorElementIDsForTiming\n`
+- `site.IOAVDisplayConnection`
+- `transferAudioDataGated`
+- `ContrastFactorMin`
+- `SMPTE ST 2084 (PQ)`
+- `_current.displayHints.displayCapabilities: maxWidth=%u maxHeight=%u maxDepth=%ubpc maxActivePixelRate=%uHz maxTotalPixelRate=%uHz\n`
+- `I2C Read`
+- `failed to create test buffer \n`
+- `receiveCEC`
+- `failed to create publish thread call\n`
+- `Link Command`
+- `addInterfaceGated`
+- `exit critical session: p2:0x%x, p3:0x%x, p4:0x%x\n`
+- `%s virtual EDID mode\n`
+- `source=%d (%s) ID=%llu\n`
+- `rd`
+- `sendWAVBuffersToFile`
+- `getIISConfig() ret=0x%08x\n`
+- `Dolby Atmos (MAT2.0)`
+- `12228`
+- `Processing CEA v3 Vendor-Specific Data Block (VSDB). IEEE OUI=%02X-%02X-%02X, length=%d\n`
+- `ContinuousFrequencySupport`
+- `Setting color range = %d\n`
+- `Master`
+- `processEDIDCEA3HDRStaticMetadataDB`
+- `unexpected element type <%s>.\n`
+- `setSyncWidth`
+- `command=%s source=%s ret=0x%08x time=%llu ms, since prepareLink()=%llu ms\n`
+- `validateAudio`
+- `\"closeGate() with no work loop\" @%s:%d`
+- `failed to create _audioDMAEventSource\n`
+- `Chromaticity`
+- `DolbyVision (HDMI tunneling)`
+- `Vendor Specific`
+- `format=%s sampleRate=%d sampleSize=%d channelCount=%d: %s\n`
+- `DownstreamFormat`
+- `timing.v.syncWidth`
+- `disabled`
+- `Processing Detailed Timing index %d\n`
+- `Processing CEA v3 Audio Data Block (ADB)\n`
+- `processEDIDCEA3VendorSpecific`
+- `Attempting to stop %s link for %s source\n`
+- `121212222222222`
+- `Repeater`
+- `Skipping YCbCr422T_HDMI\n`
+- `Name`
+- `Clearing frame start=%u end=%u\n`
+- `No time block found\n`
+- `IOAVDMACommand`
+- `_current.displayAllocation: extraPipes=%d, mainUFP=%d, peerUFP=%d\n`
+- `unexpected state: %d\n`
+- `RegisterSetData`
+- `Score`
+- `startIOEngineInternal failed, ret=0x%08x\n`
+- `stopDataTransfer() ret=0x%08x\n`
+- `Sending !negotiating, DTT and not protected yet capable device!\n`
+- `site.IOAVController`
+- `IOAVElement`
+- `av_audio_pattern`
+- `Unable to allocate WAV buffer of %dMB\n`
+- `122212`
+- `SetPower`
+- `Rear Left Center`
+- `IOAV.cpp`
+- `transfer failed; status: %#08x, actualByteCount: %u\n`
+- `Attempting to set mask to 0x%08x for log level %u\n`
+- `Pattern generator not enabled, ensure 'av_audio_pattern=1' is included in boot-args\n`
+- `channelAllocation=%d\n`
+- `site.char`
+- `enumerateBasicTimingElements`
+- `ret=0x%08x source=%s format=%s\n`
+- `TransferInformation`
+- `finalizeWAVBuffer`
+- `format matches tile size; adjusting score\n`
+- `stopLinkGated`
+- `MaxSliceWidth`
+- `%06llu.%06llu IOAV[%d,%llu] %s: %s <%s>`
+- `Invalid object type in elementArray\n`
+- `DisplayContainerID`
+- `Forcing HPD\n`
+- `failed to create terminate thread call\n`
+- `got interface=%llx, count=%u; interface IDs do not match!\n`
+- `Dolby Atmos (EAC3)`
+- `timing.v.syncRate`
+- `MaxVerticalImageSize`
+- `setupContentProtection ret=0x%08x\n`
+- `Waiting`
+- `failed to allocate DMA commands\n`
+- `setLogLevelMask`
+- `VerticalAttributes`
+- `received frame: %s\n`
+- `enableWorkarounds`
+- `callFunction for 0x%x failed with 0x%x`
+- `audioTestCompletion`
+- `setStreamActiveGated`
+- `Downstream`
+- `HDCP Capable`
+- `Type I Timing - Detailed`
+- `Active`
+- `timing.h.total`
+- `VPrime=`
+- `Writing %lu bytes at offset %d\n`
+- `protectLinkGated`
+- `enumerateBasicColorElements`
+- `_forceHPD`
+- `setColorDepth`
+- `format=%d channelCount=%d sampleSize=%d sampleRate=%d\n`
+- `Supports10bpc`
+- `timing.h.syncPolarity`
+- `Processing CEA v3 Data Block type %d, data[%u]={ %*D }\n`
+- `delegate: %s extension section, version %u.%u, checksum 0x%02X (expected 0x%02X)\n`
+- `Adding VSDB tag=%d revision=%d for %02x-%02x-%02x`
+- `setColorElement`
+- `performConfigChangeGated`
+- `Top Center`
+- `av_audio_driver_level`
+- `mode`
+- `site.IOAVElementArray`
+- `Rear Center`
+- `Processing CEA Short Video Descriptor %d\n`
+- `Ignoring VSVDB with unknown OUI %02X-%02X-%02X\n`
+- `DolbyVisionSupports2160p60Hz`
+- `_current.displayHints: valid=%s version=%u tiled=%s ([%ux%u]x%ux%u@%u,%u %02x-%02x-%02x:%04x:%08x)\n`
+- `failed to create _dmaCompletionEventSource\n`
+- `SupportsDSC`
+- `Attempting to start link with user data\n`
+- `Slave`
+- `site.IOAVService`
+- `runLinkCommandInternal`
+- `serviceMatching() failed\n`
+- `stop`
+- `interface=%llx: %s\n`
+- `ContainerID`
+- `DolbyVision (native)`
+- `MPEG`
+- `1221`
+- `av_min_sample_rate_lpcm`
+- `registerServiceGated`
+- `ATRAC`
+- `VESA`
+- `av_control_interface_level`
+- `Rotation`
+- `_protectLinkPending=%d\n`
+- `_startLink`
+- `Setting dsc.bpp = %u.%03u\n`
+- `%s color data unspecified, using upstream values\n`
+- `Video Timing Range Limits`
+- `Clearing whole buffer\n`
+- `WAVRecorderEnable`
+- `setNewFormat`
+- `warning: commandSleep(&_cecTransactionInProgress) ret=0x%08x (ignored)\n`
+- `derived timing for %u-way split: %ux%up%d.%04u (%uMHz pixel rate)\n`
+- `Dolby TrueHD (MAT1.0)`
+- `10:16`
+- `scRGB`
+- `setTotal`
+- `setSyncRate`
+- `addSplitDisplayFormats`
+- `ColorModes`
+- `SMPTE 170M/BT.601`
+- `VFTG`
+- `av_service_mask`
+- `timing.v.frontPorch`
+- `failed to get work loop\n`
+- `Type VIII Timing - Enumerated Timing Code`
+- `_virtualEDIDMode=%d\n`
+- `H14b-VSDB HDMI_VIC_%u=%u, CEA VIC=%u\n`
+- `EventTime`
+- `site.IOAVControlInterfaceUserClient`
+- `RegisterSetDeviceAddress`
+- `warning: Ignoring DolbyVision VSVDB (Version %u) with unknown version number.\n`
+- `videoInputDef=0x%02x feature=0x%02x digitalVideoInterface=%s\n`
+- `finalizeDisplayHints`
+- `updateCPConfiguration`
+- `Write`
+- `force terminate\n`
+- `finalizing data header at offset=%u\n`
+- `Close`
+- `processEDIDStandardEstablishedTimings`
+- `prepareLink ret=0x%08x\n`
+- `TimingType`
+- `Open`
+- `Rear Right Center`
+- `Type`
+- `IOAVValueSet`
+- `native `
+- `Max`
+- `handleSlicePublished`
+- `prepareLink`
+- `processEDIDCVTTimings`
+- `DefaultColorSpaceIsSRGB`
+- `index=%d\n`
+- `unprotectLink ret=0x%08x\n`
+- `failed to create command\n`
+- `delegate: parsed tiled display topology (%s):\n  singleEnclosure:         %s\n  bezelInfoPresent:        %s\n  incompleteTiledBehavior: %u\n  singleTileBehavior:      %u\n  tileTopology:            (%u,%u)\n  tileLocation:            (%u,%u)\n  tileSize:                %ux%u\n  bezelInfo:           `
+- `IOAVDisplayMemoryUserClient`
+- `DisplayAsleep`
+- `ElementType`
+- `can't allocate event source\n`
+- `Colorimetry`
+- `MAX_DEVS_EXCEEDED set, aborting\n`
+- `_stopLink`
+- `Reason`
+- `DidStartLink`
+- `Product Description`
+- `Processed EDID offset %d\n`
+- `Processing CEA v3 Data Block index %d\n`
+- `AudioDolbyPropertiesVersion`
+- `copyFilteredVideoTimingElements`
+- `DR&M stopInfoFrame() rc=0x%08x\n`
+- `handleProtectLink aborted (ret=0x%08x). Not retrying.\n`
+- `hdmi_cec_enabled`
+- `site.IOAVAudioInterfaceConcreteUserClient`
+- `sampleArrived`
+- `validateRPrime`
+- `12111112122212121112222211111111112221222221222222212222212222212222222222222222222222222222222222222222222222222221111111112111111112222`
+- `failed to create serializer for TransferInformation\n`
+- `valid`
+- `failed to initialize audio link delegate: ret=0x%08x`
+- `handlePowerRegistration() failed\n`
+- `ProductName`
+- `Clearing buffer because audio client IO has fallen behind (I: %llu, O: %llu)\n`
+- `getEDIDAttributes`
+- `added interface=%llx, count=%u\n`
+- `PreciseAspectRatio`
+- `UnprotectLink`
+- `getDisplayAsleep`
+- `err=0x%08x\n`
+- `CVT v1.2+ standard blanking`
+- `12222222211111`
+- `Front Left`
+- `CPProtocol`
+- `Product`
+- `processEDID`
+- `Setting interlaced = %d\n`
+- `CPCapabilities`
+- `site.IOAVDMACommand`
+- `256:135`
+- `DSCPassthrough`
+- `MinBppIncrement`
+- `cpTypesMask`
+- `unprotectLink() failed! ret=0x%08x\n`
+- `OSArray::withArray(timingElements) failed!\n`
+- `enter critical session: p2:0x%x, p3:0x%x, p4:0x%x\n`
+- `site.IOAVServiceUserClient`
+- `Attempting to set color dither removal to %d\n`
+- `_copyElements`
+- `warning: V != V' ret=0x%08x\n`
+- `Dynamic Range & Mastering`
+- `av_service_level`
+- `IOAVAsyncEventSource::init: failed\n`
+- `BacklightDimmingFactorMax`
+- `Disabled`
+- `Test buffer:\n`
+- `cleared output buffer\n`
+- `stopRecording`
+- `4:3`
+- `Exceeded maximum protection failure limit of %d, restarting interfaces\n`
+- `_setRotation`
+- `I2C Write`
+- `av_%s_log_command_mask`
+- `setStreamActive failed, ret=0x%08x\n`
+- `InfoFrames`
+- `processEDIDCEA3SpeakerAllocation`
+- `AllElements`
+- `_protectionSource->signal() ret=0x%08x\n`
+- `IsVirtual`
+- `audio link unexpectedly active (re-registered?)\n`
+- `IOAVVideoTimingElement::withElementReplacingHorizontalTimingAxis() failed!\n`
+- `hdmi_ced_monitor_enabled`
+- `startTestAudioGated`
+- `IOAVAudioDriverUserInterfaceSupported`
+- `adding data header at offset=%u\n`
+- `Rear Left`
+- `%.3s`
+- `getMatchingTimingElement`
+- `getDisplayAsleepGated failed ret=%08x\n`
+- `finalizeTimeHeader`
+- `finalizing WAVHeader at offset=%u, cksize=%u\n`
+- `ProtectLink`
+- `None`
+- `Vertical`
+- `Mode`
+- `121111121222121211122222111222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222111`
+- `format=%s channelCount=%d sampleRate=%d sampleSize=%d channelAllocation=%d ret=0x%08x\n`
+- `Protection Command`
+- `Intermediate`
+- `Established`
+- `testMode`
+- `notice: Ignoring HDMI TMDS limits for DisplayPort sink...`
+- `Invalid size %d for VSADB block\n`
+- `site.IOAVAudioLinkDelegate`
+- `failed to extract phandle value from property \"%s\"\n`
+- `device manufacturer`
+- `adding time header at offset=%u, startTime=%llu\n`
+- `121111121222121211222221122221112`
+- `DSCRequiredColorElementIDs`
+- `result=%d ret=%d\n`
+- `DolbyVision LL YCbCr 4:4:4`
+- `handleSliceTerminated`
+- `CVT v1.1 reduced blanking`
+- `IOAVVideoColorElement`
+- `WMAPro`
+- `options.dsc`
+- `LinkQuality`
+- `AudioDolbyProperties`
+- `hdmiCharacterErrorDetectionUpdate`
+- `closeGated`
+- `X`
+- `HDMICharacterErrorCounts`
+- `probeSinkSupportsSCDC`
+- `getLinkQualityGated`
+- `IOAVAsyncEventSource::waitUntilNoActionInProgressGated: Giving up.\n`
+- `Attempting to startLinkWithSource(%s)\n`
+- `inStreamID=%u inNewStreamFormatByteSize=%u\n`
+- `V2 Vendor-specific`
+- `DP`
+- `containsElement`
+- `restartInterfacesOccurred`
+- `IOAVRegisterSet`
+- `failed to create serializer for Power\n`
+- `MPEG1`
+- `addInterfaces() result=%d\n`
+- `%08X-%04X-%04X-%04X-%04X%08X`
+- `not inGate()?\n`
+- `Command gate not held?!\n`
+- `Initializing at offset=%u\n`
+- `Type VII Timing - Detailed Timing`
+- `Standard`
+- `color.colorimetry`
+- `SerialNumber`
+- `Enumerating color elements\n`
+- `YES`
+- `GRGB Tunneled as YCbCr422 (Even line blue)`
+- `BT.709`
+- `eventMask`
+- `H14b VSIF Not Supported.\n`
+- `Monitoring`
+- `av_min_sample_size_lpcm`
+- `startDMAInternal`
+- `Sanity failed, not valid RIFF file\n`
+- `interrupted for reason 0x%08x while waiting for system wake\n`
+- `Processing HF-VSDB\n`
+- `warning: unexpected _restartInterfacesState=%d\n`
+- `Source`
+- `SC-85`
+- `Dolby VSIF stopInfoFrame() rc=0x%08x\n`
+- `IOAVDisplayConnectionManager`
+- `121111121222121211122222111`
+- `Audio Channel Layout`
+- `Override HF-VSDB`
+- `processEDIDStandard`
+- `Enumerating basic elements due to EDID read errors.\n`
+- `Protection`
+- `hdcpReauthenticationRequest`
+- `_stopLinkWithSource`
+- `handleTerminate`
+- `site.IOAVControllerConcreteUserClient`
+- `Unprotected`
+- `timing.v.syncPolarity`
+- `processTimingElement`
+- `Adding <%s:%d> code based timing for %d x %d @ %d%s\n`
+- `streamID=%u isActive=%u ret=0x%08x\n`
+- `enableCECMessages failed, ret=0x%08x\n`
+- `IsPreferred`
+- `updateLinkGated`
+- `PortID`
+- `135:256`
+- `Audio`
+- `color.encoding`
+- `warning: ignoring unexpected VDB in CEA Extension v3\n`
+- `HDMILinkStatusErrorMonitorState`
+- `hdmi_ced_error_injection`
+- `getMatchingColorElement`
+- `dmaFrameOffset > _outputBufferFrame size %u > %u\n`
+- `performOutputBufferOperationGated`
+- `new pattern set %u\n`
+- `YCbCr 4:2:2`
+- `Terminating older %s interface\n`
+- `Unit`
+- `openServiceMatching`
+- `saveWAVBuffer`
+- `*defer=%u\n`
+- `setInterlaced`
+- ` `
+- `Dolby VSIF Not Supported.\n`
+- `site.IOAVAudioElement`
+- `protectLink failure ret=0x%08x\n`
+- `_startLinkWithSource`
+- `startIOEngineInternal ret=0x%08x\n`
+- `Traditional gamma (SDR)`
+- `LinkID`
+- `AudioDolbyPropertiesOutputConfigCenter`
+- `Unable to open the interface`
+- `Replaced %llu with %llu\n`
+- `site.IOAVAudioInterfaceUserClient`
+- `sample rate`
+- `IsPromoted`
+- `StartLink`
+- `Dolby Atmos (MAT2.1)`
+- `Underscan`
+- `Passed EDID: size=%d\n`
+- `command=%s source=%s ret=0x%08x time=%lld ms\n`
+- `closeGated failed, ret=0x%x\n`
+- `CVT custom reduced blanking`
+- `av_audio_driver_mask`
+- `Red`
+- `timing ID %llu colorID %llu require DSC\n`
+- `SourceSupport`
+- `terminating interfaces\n`
+- `messageGated() ret=0x%08x\n`
+- `output latency`
+- `CVT v1.2+ reduced blanking`
+- `warning: trying to send tx while there is already one in progress\n`
+- `Capture`
+- `Limited`
+- `Color`
+- `LLMEnabled`
+- `OutputBufferOperation`
+- `AAC`
+- `15:9`
+- `DolbyVision LL YCbCr 4:2:2 (HDMI tunneling)`
+- `DCI-P3 (D65)`
+- `EDID Block 1`
+- `site.IOAVSliceVideoInterface`
+- `site.IOAVControlInterfaceConcreteUserClient`
+- `disableCECMessages failed, ret=0x%08x\n`
+- `av_device_level`
+- `delegate: block tag 0x%02X (%s) length 0x%02X\n`
+- `_setScreenVirtualTemperature`
+- `transport type`
+- `writeToBuffer`
+- `Failed to open the file %s\n`
+- `failed to create workloop\n`
+- `ScanInformation`
+- `HDCP2`
+- `%06llu.%06llu IOAV[%d,%llu] %s::%s:(0x%llx) %s`
+- `Downstream port type is %s; initial downstream sink type is %s\n`
+- `IOAVAudioElement`
+- `handleSlicePublishedGated`
+- `virtual EDID mode %s\n`
+- `Processing DisplayID Extension\n`
+- `warning: ignoring CEA data block with Reserved tag %u\n`
+- `processEDIDCEA3Audio`
+- `ignoring %s capability (not supported)\n`
+- `processEDIDCEA3VSVDB`
+- `registerService`
+- `finalizing time header at offset=%u, endTime=%llu\n`
+- `format matches tile aspect; adjusting score\n`
+- `Setting mask to 0x%016llx for events\n`
+- `ProtectionStatus`
+- `MaxBpp444`
+- `12111112122212121`
+- `invalid`
+- `Setting pixel encoding = %d [%s]\n`
+- `sampleRate < min`
+- `Vendor Specific Data Block`
+- `MaxBpp420`
+- `av_video_interface_mask`
+- `No element at index %u\n`
+- `Idle power off triggered\n`
+- `start_block_invoke`
+- `addDeviceInternal`
+- `stopIOEngineGated`
+- `terminateClientInterface`
+- `Processing DI-EXT\n`
+- `Processing CEA Extension\n`
+- `Validating %s timing ID=%llu%s%s color ID=%llu%s%s\n`
+- `Register signature %c%c%c%c\n`
+- `device name`
+- `Processing CEA v3 Colorimetry Data Block. length=%u\n`
+- `SupportsBT2020RGB`
+- `CPFailureCount`
+- `getDefaultContentProtection`
+- `handleProtectionFailure`
+- `cpTypesMask=0x%x hdcp.protocolMask=0x%x\n`
+- `RegisterSetName`
+- `setEventLogEventMask`
+- `UpdateLink`
+- `DolbyVisionDMVersion`
+- `IOAVIISAudioLinkDelegate`
+- `av_wav_buffer_size`
+- `_dmaCount=%u\n`
+- `Traditional gamma (HDR)`
+- `av_log_level`
+- `WeekOfManufacture`
+- `copyEDID`
+- `IOAVSliceVideoInterface`
+- `Attempting to %s Virtual Device Mode\n`
+- `12111112122212121112222211`
+- `wants output trap`
+- `no matching primary timing for secondary element ID %llu (%ux%up%u)\n`
+- `Finished Audio\n`
+- `warning: getVPrime ret=0x%08x\n`
+- `DCI-P3 (Theater)`
+- `DVI`
+- `Enumerating color elements for %s\n`
+- `handleChangeStreamFormatGated`
+- `commandAllSlices(kIOAVCommandOpen, kIOAVCommandClose) failed ret=0x%08x\n`
+- `setController`
+- `40 Gbps (10Gbps/lane * 4 lanes)`
+- `hdcp.protocolMask`
+- `%02x-%02x-%02x`
+- `processEDIDCEA3Video`
+- `processEDIDCEA3HDR10PlusVSVDB`
+- `HDCPTopology`
+- `Link Command (with source)`
+- `3:4`
+- `HDCP`
+- `timing.v.pixelClock`
+- `timingID=0x%04x\n`
+- `Y`
+- `Gamma`
+- `site.IOAVIISAudioDMAEventSource`
+- `terminated before starting initial audio link\n`
+- `first transmission complete after %lld ms\n`
+- `Unknown _currentFormat.mBitsPerChannel\n`
+- `Clearing service event log\n`
+- `122`
+- `av_cp_reprotect_enabled`
+- `site.IOAVAsyncEventSource`
+- `Failed to open audio link delegate.\n`
+- `TransferCount`
+- `timing.h.backPorch`
+- `processEDIDCEA2`
+- `AudioLatencyInterlacedMS`
+- `av_hdcp_auth_policy`
+- `parserDidReadBlock`
+- `Failed to exit critical section\n`
+- `EventLog`
+- `_audio_max_sample_rate_lpcm=%d _audio_min_sample_rate_lpcm=%d\n`
+- `_audioTxDevice->open() failed\n`
+- `%s -> %s\n`
+- `sYCC601`
+- `FrontPorch`
+- `IOCECInterfaceUserInterfaceSupported`
+- `Processing CEA Extension v3\n`
+- `failed to allocate interfaces array\n`
+- `no client interface!\n`
+- `site.IOAVVideoInterfaceConcreteUserClient`
+- `Off`
+- `timing.options.split`
+- `DolbyVisionWhitePoint`
+- `Adding established timing for %d x %d @ %d\n`
+- `added timing ID %llu with downstream timingID %llu\n`
+- `12111112122212121212222111221122222211111222212211111222222222222222222222`
+- `Attempting to set log level to %u\n`
+- `IOAVVideoInterfaceConcreteUserClient`
+- `Low Frequency Effects`
+- `Detailed`
+- `default`
+- `IOAVControlInterfaceConcreteUserClient`
+- `1211121111212211`
+- `Setting scan = %s\n`
+- `failed to get workloop\n`
+- `ret=0x%08x\n`
+- `ProductAttributes`
+- `timing ID %u does not support standard Dolby Vision (%ux%u interlaced=%u, pixelClock=%u, lte1280=%d lte2160p30Hz=%d lte2160p60Hz=%d Supports_2160p60Hz=%d, unsupported=%d)\n`
+- `av_async_event_fail_hard`
+- `BacklightLuminanceMax`
+- `_copyColorElements`
+- `startAudio`
+- `AspectRatio`
+- `YCbCr 4:4:4`
+- `/Library/Caches/com.apple.xbs/E5B24101-FDCA-4A95-A7AB-2FFB820CC5DA/TemporaryDirectory.XVoOmF/Sources/IOAVFamily/IOAV.cpp`
+- `ProductID`
+- `ContrastFactorMax`
+- `handleStart() failed\n`
+- `validateKSVList`
+- `SupportsPQEOTF`
+- `ID`
+- `_audioTxDevice->setLRCLKFrequency() is unsupported (ignored)\n`
+- `27:64`
+- `av_interface_mask`
+- `unable to create layoutElements\n`
+- `error: no HDCP protocol bit _cpCapabilities\n`
+- `Setting mask to 0x%016llx for command events\n`
+- `ERROR(0x%08x)`
+- `validateTimingElements`
+- `HardwareMirrorSupport`
+- `HDCPLinkIntegrityFailures`
+- `BacklightDimmingFactorMin`
+- `validateLink`
+- `updatePhysicalFormatIfNeeded ret=0x%08x\n`
+- `startLinkGated`
+- `timing.scanInformation`
+- `not adding existing element <%s>.\n`
+- `Setting %s pixelRepetition = %u\n`
+- `setActive`
+- `startLink: ret=0x%08x\n`
+- `LINK_INTEGRITY_FAILURE\n`
+- `Capabilties Changed`
+- `av_cp_failure_max_count`
+- `ActiveChannelCount`
+- `validateElements`
+- `EDID Block 0`
+- `stopIOEngineInternal ret=0x%08x\n`
+- `CEAShortID`
+- `Default RGB`
+- `HasHDMILegacyEDID`
+- `IOAVAsyncEventSource`
+- `_audio_max_sample_size_lpcm=%d _audio_min_sample_size_lpcm=%d\n`
+- `Filling with pattern 0x%02X\n`
+- `MAX_CASCADE_EXCEEDED set, aborting\n`
+- `av_video_interface_level`
+- `Luminance`
+- `service`
+- `no CED errors occurred since last reset\n`
+- `site.IOAVDisplayMemoryUserClient`
+- `adding format header at offset=%u, %d channels, %dbps\n`
+- `getHPDStatus`
+- `commandSingleSlice`
+- `Type IX Timing - Formula-based Timing`
+- `9 Gbps (3Gbps/lane * 3 lanes)`
+- `RegisterSets`
+- `site.IOAVSplitDisplayVideoInterface`
+- `Tiled Display Topology`
+- `SupportsHDRGammaEOTF`
+- `notice: %s: No specific EOTF support indicated; assuming traditional gamma (SDR)\n`
+- `ColorDitherRemoval`
+- `Power`
+- `setLogicalFormat ret=0x%08x\n`
+- `IsOverscanned`
+- `setCECInterface failed, ret=%08x\n`
+- `setVirtualEDIDMode`
+- `HDR10+ InfoFrame Not Supported.\n`
+- `Unable to set upstreamColor\n`
+- `CED error count update: [%u][%u][%u]\n`
+- `openAuxiliaryProviders`
+- `1222`
+- `LogLevel`
+- `skipping virtual timing element ID=%llu\n`
+- `updating %s link\n`
+- `StatusVersion`
+- `DTS`
+- `workArounds must not be NULL\n`
+- `site.IOAVDeviceConcreteUserClient`
+- `sendBuffer`
+- `ValidPixelEncodings`
+- `CTA DisplayID`
+- `Version`
+- `timing.v.backPorch`
+- `notice: HDMI Character Errors Counts: [%u][%u][%u], Reauths: %d, Link Integrity: %d, Link Quality: %d\n`
+- `IOAVSimpleVideoInterface`
+- `Adding %u-way split timing element (ID %llu): %ux%up%d.%04u (%uMHz pixel rate, score %u) created from timing ID %llu (score %u)\n`
+- `SDP Capability Apple VSDB`
+- `Rear Right`
+- `Encrypted`
+- `Setting basic %scolor elements for %s\n`
+- `av_no_virtual_audio`
+- `External DMA start handler not configured\n`
+- `Setting colorimetry = %d\n`
+- `site.IOAVWAVRecorder`
+- `No WAV samples captured.\n`
+- `AppleIISAudioLinkDelegate`
+- `masks`
+- `name`
+- ` (YCbCr 4:2:0 only)`
+- `SupportsBT2020YCC`
+- `super::start() failed\n`
+- `1211111212221212111222221111222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222212111`
+- `frame size=%u, frame index=%u sampleTime=%llu, hostTime=%llu\n`
+- `time`
+- `DST`
+- `MaxTMDSClockDivisor`
+- `IOAVAudioDMADelegate`
+- `SupportsAppleDynamicEDRSDPType1`
+- `OutputBufferDataOffset`
+- `LL DolbyVision color depth mask=0x%08X, colorEncodingMask=0x%08x\n`
+- `function-DMSG`
+- `Failed to enter critical section\n`
+- `1222222222`
+- `ChannelAllocation`
+- `RegisterSize`
+- `Display Interface`
+- ` opt`
+- `handleProtectionIntegrityFailure`
+- `warning: read SCDC Sink Version ret=0x%08x\n`
+- `\"Unrecoverable error in IOAVAsyncEventSource: waitResult=%d.\\n\" @%s:%d`
+- `Attempting to stopLinkWithSource(%s)\n`
+- `Setting %s backPorch = %u\n`
+- `prepareLink_block_invoke`
+- `av_refresh_rate_threshold`
+- `sendCECGated`
+- `DolbyVision VSVDB`
+- `sortElements_block_invoke`
+- `Raw`
+- `Processing CEA v3 Vendor-Specific Audio Data Block (VSADB). IEEE OUI=%02X-%02X-%02X, length=%d\n`
+- `preferred `
+- `prepareLinkGated`
+- `12`
+- `start`
+- `ManufacturerID`
+- `AdobeRGB`
+- `\"%s:%u: %s(): %s\" @%s:%d`
+- `%02x %02x %02x\n`
+- `RotationIncrement`
+- `CP Failure Limit Exceeded`
+- `TransferCompletions`
+- `failed to create event source\n`
+- `IOAVDeviceConcreteUserClient`
+- `site.uint8_t`
+- `Format block of %u channels at %ubps completed. Total size = %u bytes = %u.%03u seconds\n`
+- `CEA-861:Type1`
+- `processEDIDCEA`
+- `DolbyVisionGlobalDimming`
+- `setTimingElement`
+- `IOAVIISAudioDMAEventSource: BUG: queue size is too small\n`
+- `power=%d device=0x%llx attached=%d started=%d\n`
+- `device UID`
+- `transferData`
+- `AdobeYCC601`
+- `SerialID`
+- `SupportsHDRStaticMetadataType1`
+- `sampleRate > max`
+- `Unable to allocate matchingDict\n`
+- `OSCollectionIterator::withCollection(secondarySlice->getTimingElements())) failed!\n`
+- `invalid pixel encoding`
+- `Supports8bpc`
+- `timing.v.total`
+- `WhitePoints`
+- `completeBufferGated`
+- `12111112122212121112222211111211112`
+- `4:5`
+- `14:9`
+- `SyncRate`
+- `av_interface_level`
+- `WAVRecorderPatternEnable`
+- `startPattern`
+- `IOAVCECInterface`
+- `site.IOAVControlInterface`
+- `site.AppleIISAudioLinkDelegate`
+- `Command`
+- `18 Gbps (6Gbps/lane * 3 lanes)`
+- `SupportsStandby`
+- `121111121222121211122222111222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222111111111`
+- `1211111212221212111222222222221112122222`
+- `warning: retrying...\n`
+- `link_id`
+- `1211111212221212111222221112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222221111`
+- `IOAVEventLog`
+- `NO`
+- `audioStopped`
+- `IOAVCECService`
+- `StopLink`
+- `Front Right Wide`
+- `EDID had bad checksum blockID=%d checksum=0x%02x retry_count=%u\n`
+- `Processing CEA Extension v2: detailedFlags=0x%08x\n`
+- `Commanded`
+- `Product Serial Number`
+- `Front Left Center`
+- `PreciseSyncRate`
+- `av_controller_level`
+- `TMDS_Config reset failed, ret=0x%08x, relying on HDMI TX\n`
+- `handleProtectLinkGated`
+- `hdcp2ReceiverIDListAvailable`
+- `_startLinkWithModes`
+- `clock domain`
+- `Stopped at pattern 0x%02X\n`
+- `Downstream Established`
+- `Setting basic %stiming elements for %s\n`
+- `Unable to allocate dictionary\n`
+- `IOAVTransactionLog`
+- `commandAllSlices(kIOAVCommandClose, kIOAVCommandNone) failed ret=0x%08x\n`
+- `Processing CEA v3 HDR Static Metadata Data Block. length=%u\n`
+- `AUPPacket`
+- `***HDMIRX clock rate (%uHz) exceeds max TMDS clock(%uHz)\n`
+- `getLinkQuality`
+- `EventRaw`
+- `handleStart`
+- `doIO`
+- `Tiled Display Topology Block`
+- `timing.options.interlaced`
+- `VideoLatencyInterlacedMS`
+- `warning: already restarting interfaces (_restartInterfacesState=%d)`
+- `12122222111`
+- `IOAVSerializer`
+- `RIFF`
+- `Video Timing`
+- `event`
+- `IOAVAudioChannelLayoutElement`
+- `RegisterCount`
+- `downstreamID=%llu\n`
+- `site.IOAVDisplayMemory`
+- `Stereo Display Interface`
+- `16:10`
+- `BackPorch`
+- `MaxPixelClock`
+- `processEDIDVTB`
+- `09A40000-0000-0000-3416-010380472896`
+- `IOAVConcreteDisplayMemory`
+- `open`
+- `121111121222121211`
+- `Processing CEA Extension v1\n`
+- `av_filter_uncommon_modes`
+- `failed to add DMA event source to work loop\n`
+- `121111121222121211222221111`
+- `_setPower`
+- `IOAVIISAudioDMAEventSource`
+- `setHPDStatus`
+- `Selectable`
+- `Processing HDR10+ VSVDB (application_version=%u)\n`
+- `ModelYear`
+- `Unable to create unsafeColorElementIDsForTiming\n`
+- `av_hdcp_protocol_mask`
+- `no controller properties passed\n`
+- `handleOpen`
+- `DolbyVision LL YCbCr 4:2:2`
+- `PeakThroughputMode0`
+- `Processing CEA v3 Video Capability Data Block (VCDB)\n`
+- `_setVirtualEDID`
+- `Time`
+- `Addr`
+- `IOAVInterface`
+- `failed to add audio stop event source to work-loop\n`
+- `TimingStandard`
+- `Remove Child`
+- `MP3`
+- `Supports12bpc`
+- `ProtectionOptions`
+- `site.IOAVCommandGate`
+- `__symbolWithCharacters() failed\n`
+- `controls`
+- `client interface(%llu) already published!\n`
+- `AudioDolbyPropertiesOutputConfigHeight`
+- `*defer=%d\n`
+- `site.IOAVDevice`
+- `DTSHD`
+- `Processing DolbyVision VSVDB (Version %u)\n`
+- `SC-LX58`
+- `av_cp_failure_window_ms`
+- `IOAVServiceUserClient`
+- `site.IOAVVideoInterfaceUserClient`
+- `site.IOAVAudioDriver`
+- `startIOEngineGated`
+- `closeReceiveQueueGated`
+- `CPType`
+- `processEDIDCEA3VSADB`
+- `Invalid object type in _timingElements\n`
+- `ProductAttributesEDID`
+- `Character Error Rate Threshold Exceeded`
+- `failed to schedule next DMA status: %#08x\n`
+- `not 0,0 tile; failing probe\n`
+- `EOTF`
+- `LineBufferBitDepth`
+- `clearMemoryDescriptor() error 0x%08x\n`
+- `IOAVDisplayMemoryConcreteUserClient`
+- `failed to add _addDeviceSource to workloop\n`
+- `stopPersistentAudio failed, ret=0x%08x\n`
+- `CEA Timing Standard`
+- `EAC3`
+- `Unexpected Dolby Vision encoding %s\n`
+- `hdmiCharacterErrorRateThresholdExceeded`
+- `121111121222121211111111111112111`
+- `Setting options.dsc = %s\n`
+- `1211111212221212111`
+- `IOAVVideoInterfaceUserInterfaceSupported`
+- `updatePhysicalFormat ret=0x%08x\n`
+- `_sliceInterfaces[%u]: invalid object\n`
+- `starting %s link\n`
+- `Interface Power Sequencing`
+- `audio`
+- `IOAVCommandGate.h`
+- `ChannelCount`
+- `%s_%08X`
+- `failed to create terminate notifier\n`
+- `commandAllSlices`
+- `IOAVElementArray`
+- `handle closed: client count=%d\n`
+- `site.IOAVControllerAddDeviceCompletion`
+- `provider=%llu\n`
+- `skipping`
+- `Unable to create validColorElementsForTiming\n`
+- `error: DSC requires PPS\n`
+- `_HDMILinkStatusMonitorSource->signal() ret=0x%08x\n`
+- `12111112122212121111111111111211`
+- `Dolby TrueHD (MAT2.1)`
+- `restartInterfacesGated`
+- `completeLinkGated`
+- `shutdownContentProtection failed ret=0x%08x\n`
+- `External DMA stop handler not configured\n`
+- `setBackPorch`
+- `Attempting to stopLink()\n`
+- `setColorimetry`
+- `stopLinkIfNeeded`
+- `startDefaultAudioStream`
+- `Failed to write %lu to buffer\n`
+- `DolbyVisionChromaticity`
+- `processEDIDCEA3DolbyVSADB`
+- `getInitializedDMACommand`
+- `_setColorDitherRemoval`
+- `site.IOAVInterface`
+- `IOAVService`
+- `Unknown Failure`
+- `commandMask`
+- `SC-LX78`
+- `disable`
+- `Unsupported\n`
+- `handleSliceTerminatedGated`
+- `site.IOAVDeviceUserClient`
+- `64:27`
+- `IOPlatformExpertDevice`
+- `Green`
+- `didStartLinkGated`
+- `Enabled`
+- `12111`
+- `Waiting for client to close us.\n`
+- `failed to add command gate to work loop\n`
+- `Type VI Timing - Detailed`
+- `Calculated`
+- `timing.h.active`
+- `site.IOAVService::DisplayIDParser`
+- `av_%s_log_event_mask`
+- `inStreamID=%u _outputBufferFrameSize=%u\n`
+- `Reserved`
+- `Dolby TrueHD (MAT2.0)`
+- `type=%s source=%s _startingLinkMask=0x%08x\n`
+- `Adding %scalculated timing for %d x %d @ %d%s\n`
+- `logEvent`
+- `EventPayload`
+- `site.IOAVRegisterSet`
+- `site.IOAVSerializer`
+- `TimingElements`
+- `Negotiating`
+- `sRGB`
+- `scRGBfixed`
+- `av_audio_interface_mask`
+- `_startInfoFrame`
+- `WhitePoint`
+- `OneBitAudio`
+- `DSCBitsPerPixel`
+- `IOAVName::FunctionGetUserInterface`
+- `hdmiLinkStatusErrorMonitorOccurred`
+- `site.IOAVAudioChannelLayoutElement`
+- `\"openGate() with no work loop\" @%s:%d`
+- `_clientInterface->start() failed!\n`
+- `Transfer Characteristics`
+- `processEDIDCEA1`
+- `protectionOccurred`
+- `datasource: read %zu bytes at offset %u => 0x%08x\n`
+- `failed to create IOAVCommandDelegateService\n`
+- `failed to create _commandGate\n`
+- `failed to create _addDeviceSource\n`
+- `linkType=%s\n`
+- `site.IOAVAudioPattern`
+- `lost interface=%llx, current count=%u, interfaceTracked=%s\n`
+- `IOAVDeviceUserClient`
+- `DolbyVision LL RGB 4:4:4`
+- `IOAVControllerUserInterfaceSupported`
+- `site.Completion`
+- `MaxChannelCount`
+- `OSDynamicCast(OSArray, propertyTable->getObject(kIOAVVideoTimingElementsKey)) failed!\n`
+- `Status`
+- `options.llm`
+- `YearOfManufacture`
+- `enabled`
+- `re-enumerating interfaces\n`
+- `IOAVAudioLinkDelegate`
+- `elementID=%lld matching=%llu\n`
+- `RGB 4:4:4`
+- `warning: unexpected displayType=%u for analog connection: assuming RGB capable\n`
+- `validateVideoMode`
+- `channel %u error rate = %llu errors/sec\n`
+- `hdmi_ced_monitor_min_stable_ms`
+- `parserDidParseVendorSpecificDataBlock`
+- `open: result=%d\n`
+- `copyFilteredVideoColorElements`
+- `C`
+- `addElement`
+- `failed to create Downstream Timing element from element %llu\n`
+- `RestartInterfacesReason`
+- `powerOffOccurred`
+- `handleContentTypeCapabilityChanged`
+- `Invalid restartInterfaces reason`
+- `Received signature %c%c%c%c\n`
+- `Setting color depth = %u\n`
+- `handleClose`
+- `startDefaultAudioStream failed, ret=0x%08x\n`
+- `color.eotf`
+- `APP`
+- `Request for display reset\n`
+- `Attempting to start %s link for %s source\n`
+- `121111`
+- `Tag`
+- `IsSplit`
+- `IOAVDevice`
+- `Adding CVT timing for %d x %d @ %d\n`
+- `05411500-0000-0000-2014-010380462778`
+- `av_restart_interfaces_display_off_ms`
+- `parserShouldRereadSection`
+- `openServiceMatchingProviderProperty`
+- `audio-engine-private`
+- `warning: getKSVList ret=0x%08x\n`
+- `Display Parameters`
+- `VideoProperties`
+- `site.IOAVDisplayMemoryConcreteUserClient`
+- `_copyChannelLayoutElements`
+- `site.IOAVSimpleVideoInterface`
+- `setDSCBitsPerPixel`
+- `output streams`
+- `12111112122212121122222222222222222222222222222222222222222222222222222222222222222222222221111211112`
+- `Dynamic Video Timing Range Limits`
+- `LinearPCM`
+- `processEDIDStandardFeature`
+- `Processing (%llu) %d x %d @ %d%s score=%d matchingRate=%d matchingAspect=%d matchingDimension=%d matchingITTimingSource=%d greaterPixelClock=%d\n`
+- `matching=%llu\n`
+- `failed to add _commandGate to workloop\n`
+- `DMT`
+- `IsInterlaced`
+- `setHDRStaticMetadataGated`
+- `setMemoryDescriptor() error 0x%08x\n`
+- `function-%c%c%c%c`
+- `_copyPhysicalAddress`
+- `SampleSize`
+- `getIOBufferForStream`
+- `processEDIDCEA3ColorimetryDB`
+- `wakeDisplay error, ret=0x%08x\n`
+- `IOAVCommandGate`
+- `failed to add _dmaCompletionEventSource to workloop\n`
+- `site.IOAVIISAudioLinkDelegate`
+- `format=%s channelCount=%u sampleRate=%lld sampleSize=%u\n`
+- `? Gbps (Unknown FRL rate)`
+- `handleProtectLink failed (ret=0x%08x). Retrying.\n`
+- `Idle Power Off`
+- `setFrontPorch`
+- `DisplayID::Parser::readDisplayID(1) err 0x%08x\n`
+- `processEDIDCEA3`
+- `BacklightLuminanceMin`
+- `Limiting Max_TMDS_Clock to 340Mhz, reported as supporting %uHz\n`
+- `Added %llu\n`
+- `sampleSize > max`
+- `promoting non-preferred timing\n`
+- `_provider->getTiledDisplayInfo() failed!\n`
+- `AudioProperties`
+- `Attempting to startLinkWithModes(%u, %d, %llu, %llu)\n`
+- `Attempting to set virtual temp to %d.%02u\n`
+- `sampleSize < min`
+- `IOAVSplitDisplay`
+- `16:9`
+- `timing.v.active`
+- `hdcp2ReceiverIDListAvailable ret=0x%08x: Reprotecting.\n`
+- `IOAVAsyncEventSource::waitUntilNoActionInProgressGated: sleepGate() returned unexpected result=%d.\n`
+- `ColorElements`
+- `failed to create serializer for Wake\n`
+- `Front Right Center`
+- `GTF`
+- `LinkTime`
+- `overrideEDIDCEA3VendorSpecific`
+- `IOAVVideoInterface`
+- `is private`
+- `*inNewSampleRate=%lld inNewSampleRateByteSize=%u\n`
+- `cleaning up due to error...\n`
+- `Product Identification`
+- `unable to create new list\n`
+- `stopPersistentAudio`
+- `OSDynamicCast(OSArray, IOAVValueSet::withArray(originalTimingElementsArray) failed!\n`
+- `av_controller_mask`
+- `warning: Ignoring short DolbyVision VSVDB (Version 1).\n`
+- `exit`
+- `Saving %u bytes to file %u of %u, startTime=%llu endTime=%llu\n`
+- `datasource: read %zu bytes => 0x%08x\n`
+- `site.IOAVControllerUserClient`
+- `Read`
+- `HDCPTXVersion`
+- `color.depth`
+- `processElements`
+- `ret=0x%08x _linkPreparedMask=0x%08x\n`
+- `Attempting to stop %s info frame for %s source\n`
+- `_updateLinkWithSource`
+- `Attempting to set bounds to minx=%d.%02u maxx=%d.%02u miny=%d.%02u maxy=%d.%02u\n`
+- `IOAVParentMatching() failed\n`
+- `Total`
+- `SupportsYCbCr420`
+- `aborting`
+- `Probable invalid Max_TMDS_Clock of %uHz, limiting to 165Mhz\n`
+- `CommandReason`
+- `Setting %s syncPolarity = %u\n`
+- `updatePhysicalFormatIfNeeded`
+- `BT.2020 (RGB)`
+- `MergeEnabled`
+- `%s has closed us\n`
+- `interrupted for reason 0x%08x while waiting for sendCEC to complete\n`
+- `Success`
+- `PrepareLink`
+- `timing.h.syncRate`
+- `warning: Ignoring short DolbyVision VSVDB (Version 2).\n`
+- `hdmi_link_status_monitoring_disable`
+- `Attempting to updateLinkWithSource(%s)\n`
+- `setEventLogMaxCapacity`
+- `H14b Dolby VSIF Not Supported.\n`
+- `Blue`
+- `warning: No preferred timing element: using 1080p@60 (CTA VIC 16)\n`
+- `IOAVAudioInterfaceUserClient`
+- `Depth`
+- `IOAVVideoTimingElement`
+- `Dolby Atmos (EAC3 7.1)`
+- `%06llu.%06llu IOAV[%d,%llu] %s: %s`
+- `Processing CEA v3 %sVideo Data Block (%sVDB)\n`
+- `warning: No supported EOTF advertised\n`
+- `_restartInterfacesState=%d\n`
+- `enter`
+- `legacy UID list`
+- `av_cec_service_level`
+- `IODeviceTree:/chosen`
+- `V`
+- `hdmiCharacterErrorDetectionReset() ret=0x%08x\n`
+- `Display Interface Features`
+- `xvYCC709`
+- `color.range`
+- `controller`
+- `site.IOAVAUPPacket`
+- `established=%02x established1=%02x established2=%02x established3=%02x established4=%02x established5=%02x\n`
+- `setRequiresDSC`
+- `service not matched: \"%s\"; waiting...\n`
+- `startIOEngineInternal`
+- `VRREnabled`
+- `SyncPolarity`
+- `SAM`
+- `SC-89`
+- `Id`
+- `Setting %s active = %u\n`
+- `setDSCParameters`
+- `Location`
+- `No format block found\n`
+- `HDRStaticMetadata`
+- `WillStopLink`
+- `CVT`
+- `SupportsRGB`
+- `Failed to read EDID blockID=%d ret=0x%08x, %s\n`
+- `processEDIDDetailedEstablishedTimingsIII`
+- `Invalid object type in _audioElements\n`
+- `startDMACommand() ret=0x%08x\n`
+- `delegate: warning: section length: 0x%02X should be 0x%02X\n`
+- `fmt `
+- `Front Right`
+- `Front Right High`
+- `1:1`
+- `Setting basic audio elements for %s\n`
+- `IOAVAudioInterface`
+- `B24@?0r^{OSSymbol=^^?ib14b18*{smrq_slink={?=^{smrq_slink}}}}8^{OSObject=^^?i}16`
+- `Embedded`
+- `reprotectLinkGated`
+- `delegate: wrong timing code type <%d>\n`
+- `All`
+- `Video Color`
+- `v2`
+- `_stopInfoFrame`
+- `_copyDisplayAttributes`
+- `addWAVDataHeader`
+- `site.IOAVCECInterface`
+- `_sliceCount=%u\n`
+- `_audio_max_channel_count_lpcm=%d _audio_min_channel_count_lpcm=%d\n`
+- `IOAVAudioInterfaceConcreteUserClient`
+- `audioStarted`
+- `site.IOAVVideoColorElement`
+- `EDID read all zeros blockID=%d retry_count=%u\n`
+- `EDID block %d:\n`
+- `DefaultWhitePoint`
+- `warning: No preferred timing element: using first non-virtual timing element (ID %llu).\n`
+- `setColorDynamicRange`
+- `IOAVPHandleMatching() failed\n`
+- `message`
+- `cecReceiveCallbackGated`
+- `IOAVAUPPacket`
+- `Ignoring VSADB with unknown OUI %02X-%02X-%02X\n`
+- `Overriding for Black Magic.\n`
+- `hdmi_ced_monitor_period_ms`
+- `channelCount < min`
+- `WAV recorder not enabled, ensure 'av_wav_buffer_size=<MiB>' is included in boot-args, e.g. 'av_wav_buffer_size=128'\n`
+- `ReprotectLink`
+- `IOAVVideoInterfaceUserClient`
+- `RegisterSetOffset`
+- `site.IOAVAbstractVideoInterface`
+- `%s(%s)`
+- `_sliceCount (%u) exceeds maxSplit (%u); defaulting to single-tile\n`
+- `StartInfoFrame`
+- `%06llu.%06llu IOAV[%d,%llu] %s::%s:(0x%llx) %s <%s>`
+- `Invalid object type in filteredList\n`
+- `m0=`
+- `%s Audio`
+- `hdmi_ced_monitor_delay_ms`
+- `0 Gbps (FRL disabled)`
+- `unexpected timeout!\n`
+- `setting max event log capacity to %u\n`
+- `R: 0x%04x R': 0x%04x\n`
+- `Protection Command (with source and AUP data)`
+- `Set Power`
+- `AVI`
+- `ret=0x%08X`
+- `%s: cannot open\n`
+- `LinkSampleRate`
+- `site.IOAVCECService`
+- `DPCP`
+- `timing.v.pixelRepetition`
+- `processEDIDCEA3DolbyVSVDB`
+- `p`
+- `handleRemoveInterfaces`
+- `close`
+- `Link`
+- `Hot Plug`
+- `timing.h.frontPorch`
+- `handleUnprotectLinkGated`
+- `parserWillFixBlockLength`
+- `callPlatformFunction`
+- `disable-av-content-protection`
+- `site.IOAVElement`
+- `stopIOEngineInternal`
+- `Front Left Wide`
+- `Final downstream type is %s\n`
+- `12111211112`
+- `status=0x%08x byteCount=%lu async=%d totalOutstanding=%u isOutstanding=%d\n`
+- `parserDidParseTimingFormula`
+- `Other`
+- `SupportsBT2020cYCC`
+- `Invalid object type in _colorElements\n`
+- `***pixel clock (%u) exceeds max pixel clock (%u)\n`
+- `IOAVDisplayConnection`
+- `read`
+- `1211111212221212111222222221112111111`
+- `client count=%d\n`
+- `1222222222222211122122`
+- `IOAVDisplayMemoryUserInterfaceSupported`
+- `BT.2020 (YCbCr)`
+- `External`
+- `processEDIDCEA3H14bVSDB`
+- `sleepDisplay error, ret=0x%08x\n`
+- `site.IOAVVideoTimingElement`
+- `Processing CEA v3 Speaker Allocation Data Block (SADB)\n`
+- `warning: Ignoring short DolbyVision VSVDB (Version 0).\n`
+- `RotationMin`
+- `REAUTH_REQ\n`
+- `v1`
+- `parserDidParseTiming`
+- `12111122212222`
+- `property not found: \"%s\"\n`
+- `EDID UUID`
+- `initializeWAVBuffer`
+- `openGated`
+- `clearEventLog`
+- `UnsafeColorElementIDs`
+- `MaxHorizontalImageSize`
+- `enable`
+- `1211121111211111`
+- `messageGated`
+- `playbackDoneOccurred`
+- `SupportsYCbCr422`
+- `RateBufferBitCount`
+- `SupportsHLGEOTF`
+- `parserDidParseTiledDisplayTopologyDataBlock`
+- `site.IOAVTransactionLog`
+- `wrong service type: \"%s\"  expected: \"%s\"\n`
+- `updatePhysicalFormat`
+- `Horizontal`
+- `setTestMode`
+- `site.IOAVAudioInterface`
+- `YCbCr 4:2:2 (DP tunneling)`
+- `SupportsYCbCr444`
+- `IOAVServiceUserInterfaceSupported`
+- `YCbCr 4:2:0 `
+- `Processing CEA v3 Extended Tag %u. length=%u\n`
+- `PowerState`
+- `AudioChannelLayoutElements`
+- `/private/var/tmp/ioav_clip%u_%uch.wav`
+- `Saved %d bytes to file %s\n`
+- `Negative`
+- `ret=0x%08x (ignored)\n`
+- `SupportsSimpleYCbCr422`
+- `enumerateAudioChannelLayoutElements`
+- `IOAVAsyncEventSource.cpp`
+- `delegate: warning: invalid section will be ignored\n`
+- `CommandStatus`
+- `SupportsActiveOff`
+- `05411000-0000-0000-2011-010380462778`
+- `type=%s source=%s\n`
+- `hdmi_ced_rate_max`
+- `delegate: warning: re-reading section at offset 0x%04X, errorCount=%u\n`
+- `com.apple.private.ioavfamily.user-access-displaymemory`
+- `Setting %s syncWidth = %u\n`
+- `av_max_sample_size_lpcm`
+- `setAudioLimits`
+- `stopAudio`
+- `failed to create publish notifier\n`
+- `warning: no secondarySlice; not adding split formats\n`
+- `setLogLevel`
+- `Type III Timing - Short`
+- `5:4`
+- `dsc.bpp`
+- ` (YCbCr 4:2:0 capable)`
+- `MaxFrameAverage`
+- `enumerateColorElements`
+- `ColorDitherRemovalSupport`
+- `IOAVCommandDelegateService`
+- `site.IOAVSplitDisplay`
+- `IOAVVSDBElement`
+- `IOAVControllerConcreteUserClient`
+- `24 Gbps (6Gbps/lane * 4 lanes)`
+- `av_control_interface_mask`
+- `timing.h.syncWidth`
+- `ManufacturerPNPID`
+- `SCDCTransactionsEnabled`
+- `Setting test mode = %d\n`
+- `setProperties`
+- `site.IOAVConcreteDisplayMemory`
+- `probe`
+- `_audioTxDevice->setSampleSize() failed\n`
+- `CompleteLink`
+- `BT.2020 (YcCbcCrc)`
+- `level`
+- `site.IOAVVideoInterface`
+- `io buffer frame size`
+- `setPhysicalAddress`
+- `eventCapacity`
+- `YCbCr 4:2:0`
+- `MIPI`
+- `av-no-virtual-audio`
+- `Unable to shut down content protection\n`
+- `1211111212221212112222211112111111`
+- `channelCount > max`
+- `V     =`
+- `ElementData`
+- `Stopped recording due to buffer fill, total bytes used=%d\n`
+- `PixelEncoding`
+- `Display Device Data`
+- `DisplayID::Parser::readDisplayID(0) err 0x%08x\n`
+- `type=%s source=%s _linkPreparedMask=0x%08x _preparingLinkMask=0x%08x\n`
+- `no_entry`
+- `SyncWidth`
+- `Adding %sdetailed timing for %d x %d @ %d%s\n`
+- `Measuring`
+- `av_protection_delay_ms`
+- `delegate: parsed ContainerID: %s\n`
+- `0x%08x`
+- `111222`
+- `av_protection_enabled`
+- `openGated failed, ret=0x%x\n`
+- `command=%s enter\n`
+
+**[__TEXT.__os_log]**
+
+- `IOAV[%d] %s<0x%llx>::%s: result=%d ret=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to add event source to workloop\n`
+- `IOAV[%d] %s<0x%llx>::%s: provider=%llu\n`
+- `IOAV[%d] %s<0x%llx>::%s: Invalid object type in _audioElements\n`
+- `IOAV[%d] %s<0x%llx>::%s: delegate: warning: section length: 0x%02X should be 0x%02X\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for Power\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unexpected Dolby Vision encoding %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing (%llu) %d x %d @ %d%s score=%d matchingRate=%d matchingAspect=%d matchingDimension=%d matchingITTimingSource=%d greaterPixelClock=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to add DMA event source to work loop\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting scan = %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: sample time: %qd host time: %qd\n`
+- `IOAV[%d] %s<0x%llx>::%s: byteCount=%lu byteOffset=%lu duration=%llums _dmaBytesOutstanding=%lu\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: Ignoring short DolbyVision VSVDB (Version 1).\n`
+- `IOAV[%d] %s<0x%llx>::%s: unprotectLink() failed! ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to startLinkWithModes(%u, %d, %llu, %llu)\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create _addDeviceSource\n`
+- `IOAV[%d] %s<0x%llx>::%s: ret=0x%08x (ignored)\n`
+- `IOAV[%d] %s<0x%llx>::%s: Adding established timing for %d x %d @ %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: unexpected element type <%s>.\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for Wake\n`
+- `IOAV[%d] %s<0x%llx>::%s: Finished Audio\n`
+- `IOAV[%d] %s<0x%llx>::%s: Invalid object type in _colorElements\n`
+- `IOAV[%d] %s<0x%llx>::%s: Clearing frame start=%u end=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing DisplayID Extension\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing DI-EXT\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing VTB Extension\n`
+- `IOAV[%d] %s<0x%llx>::%s: index=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: unable to create new list\n`
+- `IOAV[%d] %s<0x%llx>::%s: _current.displayAllocation: extraPipes=%d, mainUFP=%d, peerUFP=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: LINK_INTEGRITY_FAILURE\n`
+- `IOAV[%d] %s<0x%llx>::%s: lost interface=%llx, current count=%u, interfaceTracked=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Ignoring VSVDB with unknown OUI %02X-%02X-%02X\n`
+- `IOAV[%d] %s<0x%llx>::%s: validateLink(data) failed, ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: callFunction for 0x%x failed with 0x%x`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to stopLinkWithSource(%s)\n`
+- `IOAV[%d] %s<0x%llx>::%s: unexpected timeout!\n`
+- `IOAV[%d] %s<0x%llx>::%s: getIISConfig() ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Invalid size %d for VSADB block\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: unexpected displayType=%u for analog connection: assuming RGB capable\n`
+- `IOAV[%d] %s<0x%llx>::%s: getSinkSupportsHDMIScramblingAtAllRates()=%d, getSinkSupportsSCDC()=%d, getSupportsHDMILinkStatusMonitoring()=%d, enableLinkStatusMonitoring=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to open the file %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Adding CVT timing for %d x %d @ %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing DolbyVision VSVDB (Version %u)\n`
+- `IOAV[%d] %s<0x%llx>::%s: established=%02x established1=%02x established2=%02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: startDMACommand() ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: delegate: parsed timing type %s:\n   pixelClock:     %llu\n   preferred:      %s\n   scanType:       %d\n   aspectRatio:    %d\n   h active:       %u\n   h blank:        %u\n   h offset:       %u\n   h syncWidth:    %u\n   h polarity:     %s\n   v active:       %u\n   v blan`
+- `IOAV[%d] %s<0x%llx>::%s: %s: cannot open\n`
+- `IOAV[%d] %s<0x%llx>::%s: IOAVPHandleMatching() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: not 0,0 tile; failing probe\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA Extension v1\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: unexpected _restartInterfacesState=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: unprotectLink ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: stopDataTransfer() ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: exit critical session: p2:0x%x, p3:0x%x, p4:0x%x\n`
+- `IOAV[%d] %s<0x%llx>::%s: format=%s channelCount=%d sampleRate=%d sampleSize=%d channelAllocation=%d ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: finalizing WAVHeader at offset=%u, cksize=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: format=%d channelCount=%d sampleSize=%d sampleRate=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: send called with no interface\n`
+- `IOAV[%d] %s<0x%llx>::%s: handlePowerRegistration() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: commandAllSlices(kIOAVCommandOpen, kIOAVCommandClose) failed ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: ret=0x%08x source=%s %ux%u%c%d.%04uHz pixelRate=%d depth=%d encoding=[%s] maxTMDSClock=%d maxTMDSCharacterRate=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: delegate: warning: invalid section will be ignored\n`
+- `IOAV[%d] %s<0x%llx>::%s: _hostTime=%llu, _transferStartTimeStamp=%llu, currentTime=%llu, bufferDurationNS=%llu, stoppedClientOutputOffset=%u, dmaFrameOffset=%u, remainingOutputFrames=%u, timeUntilPlaybackDone=%lluus\n`
+- `IOAV[%d] %s<0x%llx>::%s: cleared output buffer\n`
+- `IOAV[%d] %s<0x%llx>::%s: promoting non-preferred timing\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA Extension v2: detailedFlags=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: SCDC version=0x%02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: already %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: audio link unexpectedly active (re-registered?)\n`
+- `IOAV[%d] %s<0x%llx>::%s: new format flags=0x%0x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Writing %lu bytes at offset %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: OSCollectionIterator::withCollection(secondarySlice->getTimingElements())) failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: OSArray::withArray(timingElements) failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: _audioTxDevice->setChannelCount() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting interlaced = %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: prepareLink ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: transfer failed; status: %#08x, actualByteCount: %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to add _dmaCompletionEventSource to workloop\n`
+- `IOAV[%d] %s<0x%llx>::%s: format=%s sampleRate=%d sampleSize=%d channelCount=%d: %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to shut down content protection\n`
+- `IOAV[%d] %s<0x%llx>::%s: unexpected state: %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Request for display reset\n`
+- `IOAV[%d] %s<0x%llx>::%s: WAV buffer created with size=%uMB\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to create validColorElementsForTiming\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to set upstreamColor\n`
+- `IOAV[%d] %s<0x%llx>::%s: Passed EDID: size=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: No external audio link delegate configured.\n`
+- `IOAV[%d] %s<0x%llx>::%s: removing interface=%llx\n`
+- `IOAV[%d] %s<0x%llx>::%s: Override max TMDS clock to 0x44 (340MHz) in H14b-VSDB`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create _dmaCompletionEventSource\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to enter critical section\n`
+- `IOAV[%d] %s<0x%llx>::%s: getDisplayAsleepGated failed ret=%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Starting with pattern 0x%06X\n`
+- `IOAV[%d] %s<0x%llx>::%s: error: DSC requires PPS\n`
+- `IOAV[%d] %s<0x%llx>::%s: workArounds must not be NULL\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to rotate %d.%02u degrees\n`
+- `IOAV[%d] %s<0x%llx>::%s: inStreamID=%u _outputBufferFrameSize=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: finalizing time header at offset=%u, endTime=%llu\n`
+- `IOAV[%d] %s<0x%llx>::%s: Enumerating basic elements due to EDID read errors.\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA v3 Data Block type %d, data[%u]={ %*D }\n`
+- `IOAV[%d] %s<0x%llx>::%s: stopping virtual video rc=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: _audioDMAEventSource is NULL, override for getDataSafetyOffset missing\n`
+- `IOAV[%d] %s<0x%llx>::%s: Adding %scalculated timing for %d x %d @ %d%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Test buffer:\n <%s>`
+- `IOAV[%d] %s<0x%llx>::%s: adding format header at offset=%u, %d channels, %dbps\n`
+- `IOAV[%d] %s<0x%llx>::%s: DisplayID::Parser::readDisplayID(0) err 0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to write %lu to buffer\n`
+- `IOAV[%d] %s<0x%llx>::%s: Sanity failed, no time info at offset %llu\n`
+- `IOAV[%d] %s<0x%llx>::%s: setting max event log capacity to %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Invalid object type in elementArray\n`
+- `IOAV[%d] %s<0x%llx>::%s: Added %llu\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to start %s info frame for %s source\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to schedule next DMA status: %#08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: clearMemoryDescriptor() error 0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Clearing whole buffer\n`
+- `IOAV[%d] %s<0x%llx>::%s: delegate: parsed tiled display topology (%s):\n  singleEnclosure:         %s\n  bezelInfoPresent:        %s\n  incompleteTiledBehavior: %u\n  singleTileBehavior:      %u\n  tileTopology:            (%u,%u)\n  tileLocation:            (%u,%u)\n  tileSize:                %ux%u`
+- `IOAV[%d] %s<0x%llx>::%s: No WAV samples captured.\n`
+- `IOAV[%d] %s<0x%llx>::%s: _HDMILinkStatusMonitorSource->setTimeoutMS() ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: power=%d device=0x%llx attached=%d started=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: *defer=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: IOAVVideoTimingElement::withElementReplacingHorizontalTimingAxis() failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing base EDID\n`
+- `IOAV[%d] %s<0x%llx>::%s: Content type capability changed: Reprotecting.\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to add _commandGate to workloop\n`
+- `IOAV[%d] %s<0x%llx>::%s: updating %s link\n`
+- `IOAV[%d] %s<0x%llx>::%s: %02x %02x %02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Overriding for Black Magic.\n`
+- `IOAV[%d] %s<0x%llx>::%s: datasource: read %zu bytes => 0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: *inNewSampleRate=%lld inNewSampleRateByteSize=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to get work loop\n`
+- `IOAV[%d] %s<0x%llx>::%s: err=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: options=%llx status=%d byteCount=%llu completionTime=%lld\n`
+- `IOAV[%d] %s<0x%llx>::%s: _sliceInterfaces[%u]: invalid object\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA v3 Vendor-Specific Audio Data Block (VSADB). IEEE OUI=%02X-%02X-%02X, length=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: ret=0x%08x _linkPreparedMask=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: External DMA stop handler not configured\n`
+- `IOAV[%d] %s<0x%llx>::%s: using tile topology data to compute native pixel dimensions\n`
+- `IOAV[%d] %s<0x%llx>::%s: transferData ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Terminating older %s interface\n`
+- `IOAV[%d] %s<0x%llx>::%s: downstreamID=%llu\n`
+- `IOAV[%d] %s<0x%llx>::%s: inNotification: %u, %u, %qu, %qu\n`
+- `IOAV[%d] %s<0x%llx>::%s: format matches tile size; adjusting score\n`
+- `IOAV[%d] %s<0x%llx>::%s: stopping %s link\n`
+- `IOAV[%d] %s<0x%llx>::%s: Override HF-VSDB`
+- `IOAV[%d] %s<0x%llx>::%s: videoInputDef=0x%02x feature=0x%02x digitalVideoInterface=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Invalid object type in _timingElements\n`
+- `IOAV[%d] %s<0x%llx>::%s: _current.displayHints: valid=%s version=%u tiled=%s ([%ux%u]x%ux%u@%u,%u %02x-%02x-%02x:%04x:%08x)\n`
+- `IOAV[%d] %s<0x%llx>::%s: command=%s source=%s ret=0x%08x time=%llu ms, since prepareLink()=%llu ms\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to open audio link delegate.\n`
+- `IOAV[%d] %s<0x%llx>::%s: Filling with pattern 0x%02X\n`
+- `IOAV[%d] %s<0x%llx>::%s: commandAllSlices(kIOAVCommandClose, kIOAVCommandNone) failed ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Probable invalid Max_TMDS_Clock of %uHz, limiting to 165Mhz\n`
+- `IOAV[%d] %s<0x%llx>::%s: H14b VSIF Not Supported.\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create command\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to stop %s info frame for %s source\n`
+- `IOAV[%d] %s<0x%llx>::%s: hdmiCharacterErrorDetectionReset() ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to initialize audio link delegate: ret=0x%08x`
+- `IOAV[%d] %s<0x%llx>::%s: No time block found\n`
+- `IOAV[%d] %s<0x%llx>::%s: matching=%llu\n`
+- `IOAV[%d] %s<0x%llx>::%s: enableCECMessages failed, ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: _provider->getTiledDisplayInfo() failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA v3 Extended Tag %u. length=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA v3 Colorimetry Data Block. length=%u\n`
+- `logEvent:0x%llx:%u/%u:%s:<%s>`
+- `IOAV[%d] %s<0x%llx>::%s: Setting %s syncWidth = %u\n`
+- `OSString::withCString(buf) failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting mask to 0x%016llx for command events\n`
+- `IOAV[%d] %s<0x%llx>::%s: Saved %d bytes to file %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: trying to send tx while there is already one in progress\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create event source\n`
+- `IOAV[%d] %s<0x%llx>::%s: inStreamID=%u inNewStreamFormatByteSize=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: interface->open() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: Unknown EDID extension type %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: notice: Ignoring HDMI TMDS limits for DisplayPort sink...`
+- `IOAV[%d] %s<0x%llx>::%s: terminating interfaces\n`
+- `IOAV[%d] %s<0x%llx>::%s: protectLink failure ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting test mode = %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: handleProtectLink failed (ret=0x%08x). Retrying.\n`
+- `IOAV[%d] %s<0x%llx>::%s: datasource: read %zu bytes at offset %u => 0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: startLink ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create terminate thread call\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing HF-VSDB\n`
+- `IOAV[%d] %s<0x%llx>::%s: Replaced %llu with %llu\n`
+- `IOAV[%d] %s<0x%llx>::%s: Exceeded maximum protection failure limit of %d, restarting interfaces\n`
+- `IOAV[%d] %s<0x%llx>::%s: delegate: warning: re-reading section at offset 0x%04X, errorCount=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: unprotectLink failed ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting DSC PPS:\n <%s>`
+- `IOAV[%d] %s<0x%llx>::%s: failed to extract phandle value from property \"%s\"\n`
+- `IOAV[%d] %s<0x%llx>::%s: command=%s enter\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: ignoring unknown HDMI_VIC %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: added timing ID %llu with downstream timingID %llu\n`
+- `IOAV[%d] %s<0x%llx>::%s: CED error count update: [%u][%u][%u]\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to start %s link for %s source\n`
+- `IOAV[%d] %s<0x%llx>::%s: cpTypesMask=0x%x hdcp.protocolMask=0x%x\n`
+- `IOAV[%d] %s<0x%llx>::%s: ignoring %s capability (not supported)\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to stopLink()\n`
+- `IOAV[%d] %s<0x%llx>::%s: ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting dsc.bpp = %u.%03u\n`
+- `IOAV[%d] %s<0x%llx>::%s: _audio_max_sample_rate_lpcm=%d _audio_min_sample_rate_lpcm=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: linkType=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: setCECInterface failed, ret=%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: No supported EOTF advertised\n`
+- `IOAV[%d] %s<0x%llx>::%s: index=%d mask=%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: disableCECMessages failed, ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: setLogicalAddressMask() ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: H14b-VSDB HDMI_VIC_%u=%u, CEA VIC=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: not inGate()?\n`
+- `IOAV[%d] %s<0x%llx>::%s: stopPersistentAudio failed, ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: updatePhysicalFormatIfNeeded ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: _HDMILinkStatusMonitorSource->signal() ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to add audio stop event source to work-loop\n`
+- `IOAV[%d] %s<0x%llx>::%s: _provider->dictionaryWithProperties() failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: _clientInterface->attach() failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: Added(%llu) %sCEA VIC %d timing for %d x %d @ %d %s%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for ProtectionType\n`
+- `IOAV[%d] %s<0x%llx>::%s: can't allocate event source\n`
+- `IOAV[%d] %s<0x%llx>::%s: setStreamActive failed, ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: handle closed: client count=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Invalid restartInterfaces reason`
+- `IOAV[%d] %s<0x%llx>::%s: startDefaultAudioStream failed, ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Saving %u bytes to file %u of %u, startTime=%llu endTime=%llu\n`
+- `IOAV[%d] %s<0x%llx>::%s: open: result=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Enumerating color elements for %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting %s syncPolarity = %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: skipping virtual timing element ID=%llu\n`
+- `IOAV[%d] %s<0x%llx>::%s: reprotectLinkGated ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unrecognized signature %c%c%c%c\n`
+- `IOAV[%d] %s<0x%llx>::%s: format=%s channelCount=%u sampleRate=%lld sampleSize=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: adding data header at offset=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: getKSVList ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing Detailed Timing index %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Validating elements\n`
+- `IOAV[%d] %s<0x%llx>::%s: wrong service type: \"%s\"  expected: \"%s\"\n`
+- `IOAV[%d] %s<0x%llx>::%s: V     = <%s>`
+- `IOAV[%d] %s<0x%llx>::%s: isOpen=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Stopped recording due to buffer fill, total bytes used=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA Extension\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA v3 YCbCr 4:2:0 Capability Map Data Block (Y420CMDB)\n`
+- `IOAV[%d] %s<0x%llx>::%s: handleProtectLink aborted (ret=0x%08x). Not retrying.\n`
+- `IOAV[%d] %s<0x%llx>::%s: sleepDisplay error, ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Waiting for client to close us.\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: Ignoring short DolbyVision VSVDB (Version 2).\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting basic %stiming elements for %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Starting video on behalf of Audio\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to set log level to %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Register signature %c%c%c%c\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting %s total = %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: new pattern set %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting %s syncRate = %d.%02u\n`
+- `IOAV[%d] %s<0x%llx>::%s: data offset = %d.\n`
+- `IOAV[%d] %s<0x%llx>::%s: added interface=%llx, count=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: cleaning up due to error...\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting color range = %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: m0= <%s>`
+- `IOAV[%d] %s<0x%llx>::%s: setLogicalFormat ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to allocate WAV buffer of %dMB\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to add dma source to controller's work-loop\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: Ignoring DolbyVision VSVDB (Version %u) with unknown version number.\n`
+- `IOAV[%d] %s<0x%llx>::%s: copyEDID failure, ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA v3 Vendor-Specific Video Data Block (VSVDB). IEEE OUI=%02X-%02X-%02X, length=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Skipping YCbCr422T_HDMI\n`
+- `IOAV[%d] %s<0x%llx>::%s: HDMI VSIF stopInfoFrame() rc=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to startLinkWithSource(%s)\n`
+- `IOAV[%d] %s<0x%llx>::%s: super::start() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: Clearing buffer because audio client IO has fallen behind (I: %llu, O: %llu)\n`
+- `IOAV[%d] %s<0x%llx>::%s: OSDynamicCast(OSArray, IOAVValueSet::withArray(originalTimingElementsArray) failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA v3 HDR Static Metadata Data Block. length=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: No format block found\n`
+- `IOAV[%d] %s<0x%llx>::%s: Dolby VSIF Not Supported.\n`
+- `IOAV[%d] %s<0x%llx>::%s: timingID=0x%04x\n`
+- `IOAV[%d] %s<0x%llx>::%s: type=%s source=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to %s power\n`
+- `IOAV[%d] %s<0x%llx>::%s: handleStart() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create workloop\n`
+- `IOAV[%d] %s<0x%llx>::%s: Clearing service event log\n`
+- `IOAV[%d] %s<0x%llx>::%s: Adding %sdetailed timing for %d x %d @ %d%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: read SCDC Sink Version ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: beginStartStopOperation() failed, ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: startIOEngineInternal ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA v3 Speaker Allocation Data Block (SADB)\n`
+- `IOAV[%d] %s<0x%llx>::%s: service not matched: \"%s\"; waiting...\n`
+- `deviceUIDLock is null!\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to allocate matchingDict\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: no secondarySlice; not adding split formats\n`
+- `IOAV[%d] %s<0x%llx>::%s: received frame: %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: R: 0x%04x R': 0x%04x\n`
+- `IOAV[%d] %s<0x%llx>::%s: client count=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create publish notifier\n`
+- `IOAV[%d] %s<0x%llx>::%s: command=%s source=%s ret=0x%08x time=%lld ms\n`
+- `IOAV[%d] %s<0x%llx>::%s: _sliceCount=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: DolbyVision version=%d 4k60=%d yuv422=%d dimming=%d dmvers=%d.%d dolbyvsif=%d colorimetry=%s colorDepthMask=0x%08X, colorEncodingMask=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: ret=0x%08X`
+- `IOAV[%d] %s<0x%llx>::%s: byteCount=%lu byteOffset=%lu outstandingDMACount=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: delegate: %s base section, version %u.%u, product type %u, %u extensions, checksum 0x%02X (expected 0x%02X)\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unsupported\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA Extension v3\n`
+- `IOAV[%d] %s<0x%llx>::%s: setupContentProtection ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to set color dither removal to %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to add _addDeviceSource to workloop\n`
+- `IOAV[%d] %s<0x%llx>::%s: IOAVParentMatching() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: streamID=%u isActive=%u ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Received signature %c%c%c%c\n`
+- `IOAV[%d] %s<0x%llx>::%s: unexpected provider type: %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: EDID read all zeros blockID=%d retry_count=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: timing ID %u does not support standard Dolby Vision (%ux%u interlaced=%u, pixelClock=%u, lte1280=%d lte2160p30Hz=%d lte2160p60Hz=%d Supports_2160p60Hz=%d, unsupported=%d)\n`
+- `IOAV[%d] %s<0x%llx>::%s: DRM InfoFrame Not Supported.\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting basic %scolor elements for %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: wakeDisplay error, ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: ok=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: _wavBufferLength=%u, _currentDataHeaderOffset=%u, _currentDataBlockSize=%u, _wavBufferOffset=%u, _wavTotalFiles=%u, _wavTotalDataSize=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: _clientInterface->start() failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing elements\n`
+- `IOAV[%d] %s<0x%llx>::%s: Validating color format conversion using default implemantation that does not allow any conversion\n`
+- `IOAV[%d] %s<0x%llx>::%s: Validating %s timing ID=%llu%s%s color ID=%llu%s%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: last CED error(s) occurred %u ms ago\n`
+- `IOAV[%d] %s<0x%llx>::%s: %s timing data unspecified, using upstream values\n`
+- `IOAV[%d] %s<0x%llx>::%s: no CED errors occurred since last reset\n`
+- `IOAV[%d] %s<0x%llx>::%s: Adding VSDB tag=%d revision=%d for %02x-%02x-%02x`
+- `IOAV[%d] %s<0x%llx>::%s: Setting color depth = %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: %s color data unspecified, using upstream values\n`
+- `IOAV[%d] %s<0x%llx>::%s: _audio_max_sample_size_lpcm=%d _audio_min_sample_size_lpcm=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Stopped at pattern 0x%02X\n`
+- `IOAV[%d] %s<0x%llx>::%s: __symbolWithCharacters() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to allocate command gate\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting mask to 0x%016llx for events\n`
+- `IOAV[%d] %s<0x%llx>::%s: finalizing data header at offset=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to configure audio with the following properties:\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA Short Video Descriptor %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Invalid object type in filteredList\n`
+- `IOAV[%d] %s<0x%llx>::%s: messageGated() ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: command=%s ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: unable to create layoutElements\n`
+- `IOAV[%d] %s<0x%llx>::%s: Pattern generator not enabled, ensure 'av_audio_pattern=1' is included in boot-args\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to allocate interfaces array\n`
+- `IOAV[%d] %s<0x%llx>::%s: Sending !negotiating, DTT and not protected yet capable device!\n`
+- `IOAV[%d] %s<0x%llx>::%s: ***pixel clock (%u) exceeds max pixel clock (%u)\n`
+- `IOAV[%d] %s<0x%llx>::%s: enter critical session: p2:0x%x, p3:0x%x, p4:0x%x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting link mode = %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: startIOEngineInternal failed, ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Format block of %u channels at %ubps completed. Total size = %u bytes = %u.%03u seconds\n`
+- `IOAV[%d] %s<0x%llx>::%s: _virtualEDIDMode=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: shutdownContentProtection failed ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: startDMAInternal ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: _current.displayHints.displayCapabilities: maxWidth=%u maxHeight=%u maxDepth=%ubpc maxActivePixelRate=%uHz maxTotalPixelRate=%uHz\n`
+- `IOAV[%d] %s<0x%llx>::%s: DR&M stopInfoFrame() rc=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting pixel encoding = %d [%s]\n`
+- `IOAV[%d] %s<0x%llx>::%s: closeGated failed, ret=0x%x\n`
+- `IOAV[%d] %s<0x%llx>::%s: _sliceCount (%u) exceeds maxSplit (%u); defaulting to single-tile\n`
+- `IOAV[%d] %s<0x%llx>::%s: no client interface!\n`
+- `IOAV[%d] %s<0x%llx>::%s: OSDynamicCast(OSArray, propertyTable->getObject(kIOAVVideoTimingElementsKey)) failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: ignoring unexpected VDB in CEA Extension v3\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA v3 Vendor-Specific Data Block (VSDB). IEEE OUI=%02X-%02X-%02X, length=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: setMemoryDescriptor() error 0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: timed out?!\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to set bounds to minx=%d.%02u maxx=%d.%02u miny=%d.%02u maxy=%d.%02u\n`
+- `IOAV[%d] %s<0x%llx>::%s: interface=%llx: %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: EDID had bad checksum blockID=%d checksum=0x%02x retry_count=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: DisplayID::Parser::readDisplayID(1) err 0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: delegate: wrong timing code type <%d>\n`
+- `IOAV[%d] %s<0x%llx>::%s: Command gate not held?!\n`
+- `IOAV[%d] %s<0x%llx>::%s: MAX_CASCADE_EXCEEDED set, aborting\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting basic audio elements for %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Final downstream type is %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: already restarting interfaces (_restartInterfacesState=%d)`
+- `IOAV[%d] %s<0x%llx>::%s: ***HDMIRX clock rate (%uHz) exceeds max TMDS clock(%uHz)\n`
+- `IOAV[%d] %s<0x%llx>::%s: VPrime= <%s>`
+- `IOAV[%d] %s<0x%llx>::%s: Processed EDID offset %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: H14b Dolby VSIF Not Supported.\n`
+- `IOAV[%d] %s<0x%llx>::%s: External DMA start handler not configured\n`
+- `IOAV[%d] %s<0x%llx>::%s: delegate: parsed ContainerID: %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: property not found: \"%s\"\n`
+- `IOAV[%d] %s<0x%llx>::%s: force terminate\n`
+- `IOAV[%d] %s<0x%llx>::%s: Initializing at offset=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to read EDID blockID=%d ret=0x%08x, %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting colorimetry = %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: stopIOEngineInternal ret=0x%08x\n`
+- `deviceUIDs is null!\n`
+- `IOAV[%d] %s<0x%llx>::%s: Enumerating color elements\n`
+- `IOAV[%d] %s<0x%llx>::%s: REAUTH_REQ\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA v3 Data Block index %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: HDR10+ InfoFrame Not Supported.\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: No preferred timing element: using 1080p@60 (CTA VIC 16)\n`
+- `IOAV[%d] %s<0x%llx>::%s: re-enumerating interfaces\n`
+- `IOAV[%d] %s<0x%llx>::%s: type=%s source=%s _linkPreparedMask=0x%08x _preparingLinkMask=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: serviceMatching() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: unexpected '%s' instance in timing element list!\n`
+- `IOAV[%d] %s<0x%llx>::%s: Idle power off triggered\n`
+- `IOAV[%d] %s<0x%llx>::%s: Forcing HPD\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting %s pixelRepetition = %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: _audioTxDevice->setLRCLKFrequency() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to open the interface`
+- `IOAV[%d] %s<0x%llx>::%s: warning: getVPrime ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: Ignoring short DolbyVision VSVDB (Version 0).\n`
+- `IOAV[%d] %s<0x%llx>::%s: Enumerating elements\n`
+- `IOAV[%d] %s<0x%llx>::%s: max error rate exceeded on channel %u: %llu errors/sec\n`
+- `IOAV[%d] %s<0x%llx>::%s: _dmaCount=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: starting %s link\n`
+- `IOAV[%d] %s<0x%llx>::%s: error: no HDCP protocol bit _cpCapabilities\n`
+- `IOAV[%d] %s<0x%llx>::%s: channel %u error rate = %llu errors/sec\n`
+- `IOAV[%d] %s<0x%llx>::%s: elementID=%lld matching=%llu\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting %s frontPorch = %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: stopIOEngineInternal failed, ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: WAV recorder not enabled, ensure 'av_wav_buffer_size=<MiB>' is included in boot-args, e.g. 'av_wav_buffer_size=128'\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: commandSleep(&_cecTransactionInProgress) ret=0x%08x (ignored)\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: ignoring unsupported CEA data block with tag %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: type=%s source=%s _startingLinkMask=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: openGated failed, ret=0x%x\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: No preferred timing element: using first non-virtual timing element (ID %llu).\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create Downstream Timing element from element %llu\n`
+- `IOAV[%d] %s<0x%llx>::%s: delegate: %s extension section, version %u.%u, checksum 0x%02X (expected 0x%02X)\n`
+- `IOAV[%d] %s<0x%llx>::%s: Adding <%s:%d> code based timing for %d x %d @ %d%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to exit critical section\n`
+- `IOAV[%d] %s<0x%llx>::%s: startLink: ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: MAX_DEVS_EXCEEDED set, aborting\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to create unsafeColorElementIDsForTiming\n`
+- `IOAV[%d] %s<0x%llx>::%s: _restartInterfacesState=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: adding time header at offset=%u, startTime=%llu\n`
+- `IOAV[%d] %s<0x%llx>::%s: format matches tile aspect; adjusting score\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create _audioDMAEventSource\n`
+- `IOAV[%d] %s<0x%llx>::%s: _audioTxDevice->setSampleSize() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: Adding standard timing for %d x %d @ %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: source=%d (%s) ID=%llu\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting %s active = %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: first transmission complete after %lld ms\n`
+- `IOAV[%d] %s<0x%llx>::%s: frame size=%u, frame index=%u sampleTime=%llu, hostTime=%llu\n`
+- `IOAV[%d] %s<0x%llx>::%s: derived timing for %u-way split: %ux%up%d.%04u (%uMHz pixel rate)\n`
+- `IOAV[%d] %s<0x%llx>::%s: Request to %s display critical section\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to start link with user data\n`
+- `IOAV[%d] %s<0x%llx>::%s: Sanity failed, not valid RIFF file\n`
+- `IOAV[%d] %s<0x%llx>::%s: Adding %u-way split timing element (ID %llu): %ux%up%d.%04u (%uMHz pixel rate, score %u) created from timing ID %llu (score %u)\n`
+- `IOAV[%d] %s<0x%llx>::%s: TMDS_Config reset failed, ret=0x%08x, relying on HDMI TX\n`
+- `IOAV[%d] %s<0x%llx>::%s: _protectionSource->signal() ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: terminated before starting initial audio link\n`
+- `IOAV[%d] %s<0x%llx>::%s: dmaFrameOffset > _outputBufferFrame size %u > %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to add command gate to work loop\n`
+- `IOAV[%d] %s<0x%llx>::%s: updatePhysicalFormat ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: LL DolbyVision color depth mask=0x%08X, colorEncodingMask=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Downstream port type is %s; initial downstream sink type is %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing EDID:\n <%s>`
+- `IOAV[%d] %s<0x%llx>::%s: addInterfaces() result=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to set mask to 0x%08x for log level %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: virtual EDID mode %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to stop %s link for %s source\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to save audio clip %u. err 0x%x\n`
+- `IOAV[%d] %s<0x%llx>::%s: IOAVAbstractVideoInterface::withProperties() failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: _audioTxDevice->open() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: ignoring unsupported CEA data block with extended tag %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: timing ID %llu colorID %llu require DSC\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to allocate dictionary\n`
+- `IOAV[%d] %s<0x%llx>::%s: notice: HDMI Character Errors Counts: [%u][%u][%u], Reauths: %d, Link Integrity: %d, Link Quality: %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to %s Virtual Device Mode\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to get workloop\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create publish thread call\n`
+- `IOAV[%d] %s<0x%llx>::%s: %s -> %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: No element at index %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to updateLinkWithSource(%s)\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to set virtual temp to %d.%02u\n`
+- `IOAV[%d] %s<0x%llx>::%s: *defer=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: interrupted for reason 0x%08x while waiting for system wake\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: V != V' ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing H14b-VSDB\n`
+- `IOAV[%d] %s<0x%llx>::%s: not adding existing element <%s>.\n`
+- `IOAV[%d] %s<0x%llx>::%s: _audio_max_channel_count_lpcm=%d _audio_min_channel_count_lpcm=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: no matching primary timing for secondary element ID %llu (%ux%up%u)\n`
+- `IOAV[%d] %s<0x%llx>::%s: established=%02x established1=%02x established2=%02x established3=%02x established4=%02x established5=%02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Dolby VSIF stopInfoFrame() rc=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: ret=0x%08x source=%s format=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Deferring processing of CEA v3 Video Data Block\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA v3 Audio Data Block (ADB)\n`
+- `IOAV[%d] %s<0x%llx>::%s: Ignoring VSADB with unknown OUI %02X-%02X-%02X\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting %s backPorch = %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create _commandGate\n`
+- `IOAV[%d] %s<0x%llx>::%s: _protectLinkPending=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: no controller properties passed\n`
+- `IOAV[%d] %s<0x%llx>::%s: interrupted for reason 0x%08x while waiting for service close\n`
+- `portSpecificUIDs is null!\n`
+- `IOAV[%d] %s<0x%llx>::%s: client interface(%llu) already published!\n`
+- `IOAV[%d] %s<0x%llx>::%s: notice: %s: No specific EOTF support indicated; assuming traditional gamma (SDR)\n`
+- `IOAV[%d] %s<0x%llx>::%s: hdcp2ReceiverIDListAvailable ret=0x%08x: Reprotecting.\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to allocate DMA commands\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for TransferInformation\n`
+- `IOAV[%d] %s<0x%llx>::%s: Setting options.dsc = %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: _audioTxDevice->setLRCLKFrequency() is unsupported (ignored)\n`
+- `IOAV[%d] %s<0x%llx>::%s: EDID block %d:\n <%s>`
+- `IOAV[%d] %s<0x%llx>::%s: Processing HDR10+ VSVDB (application_version=%u)\n`
+- `IOAV[%d] %s<0x%llx>::%s: Ignoring VSDB with unknown OUI %02X-%02X-%02X\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to create dscRequiredColorElementIDsForTiming\n`
+- `IOAV[%d] %s<0x%llx>::%s: %s virtual EDID mode\n`
+- `IOAV[%d] %s<0x%llx>::%s: result=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: channelAllocation=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: got interface=%llx, count=%u; interface IDs do not match!\n`
+- `IOAV[%d] %s<0x%llx>::%s: interrupted for reason 0x%08x while waiting for sendCEC to complete\n`
+- `IOAV[%d] %s<0x%llx>::%s: %s has closed us\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unknown _currentFormat.mBitsPerChannel\n`
+- `IOAV[%d] %s<0x%llx>::%s: Limiting Max_TMDS_Clock to 340Mhz, reported as supporting %uHz\n`
+- `IOAV[%d] %s<0x%llx>::%s: ***HDMIRX character rate (%ucsc) exceeds max TMDS character rate (%ucsc)\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA v3 %sVideo Data Block (%sVDB)\n`
+- `IOAV[%d] %s<0x%llx>::%s: status=0x%08x byteCount=%lu async=%d totalOutstanding=%u isOutstanding=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: delegate: block tag 0x%02X (%s) length 0x%02X\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create terminate notifier\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: retrying...\n`
+- `IOAV[%d] %s<0x%llx>::%s: delegate: warning: correcting block tag 0x%02X (%s) length: 0x%02X should be 0x%02X\n`
+- `IOAV[%d] %s<0x%llx>::%s: ret = 0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: ignoring CEA data block with Reserved tag %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Processing CEA v3 Video Capability Data Block (VCDB)\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create test buffer \n`

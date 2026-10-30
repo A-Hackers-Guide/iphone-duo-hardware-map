@@ -1,0 +1,18 @@
+# `_TtP20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerProtocol_` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/AccessoryInteraction.framework/AccessoryInteraction`](../userland/System__Library__PrivateFrameworks__AccessoryInteraction.framework__AccessoryInteraction.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- 0 instance variables, 0 properties, 9 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[_TtP20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerProtocol_ didCompleteTaskWithDeviceUuid:];
+-[_TtP20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerProtocol_ didConnectToDeviceWithDeviceUuid:];
+-[_TtP20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerProtocol_ didDisconnectFromDeviceWithDeviceUuid:error:];
+-[_TtP20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerProtocol_ didFailToCompleteTaskWithDeviceUuid:error:];
+-[_TtP20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerProtocol_ didFailToConnectDeviceWithDeviceUuid:error:];
+-[_TtP20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerProtocol_ didReceiveUarpMessageWithDeviceUuid:uarpMsg:];
+-[_TtP20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerProtocol_ notifyMaintenanceStateForAccessoryWithBeacon:isMaintained:];
+-[_TtP20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerProtocol_ startMonitoringAccessoryForFirmwareUpdateWithBeacon:];
+-[_TtP20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerProtocol_ stopMonitoringAccessoryForFirmwareUpdateWithDeviceUuid:];
+```

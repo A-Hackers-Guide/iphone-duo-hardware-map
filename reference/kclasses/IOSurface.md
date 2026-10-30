@@ -1,0 +1,72 @@
+# `IOSurface`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.iokit.IOSurface`](../kexts/com.apple.iokit.IOSurface.md)
+- Object size: `0x3e0` (992 bytes)
+- Metaclass: `0xfffffe000ba1b240`; metaclass vtable `0xfffffe00083fa858`; class vtable `0xfffffe00083fa7c0`
+- Registration (init): `0xfffffe000a404018`
+- Superclasses: none registered (derives from a kernel-core root such as OSObject)
+
+## Strings in its kext that name it (60)
+
+- `IOSurfaceDescriptorComponent`
+- `\"IOSurfaceSharedEvent::free() called with non-empty notification list\" @%s:%d`
+- `IOSurfaceScalerTimes`
+- `\"IOSurface::prune_transaction_list unexpeted transaction list length\" @%s:%d`
+- `site.IOSurfaceSharedEvent *`
+- `IOSurfaceWiredSendRight`
+- `site.IOSurfaceWiredSendRight`
+- `IOSurfaceIsGlobal`
+- `IOSurfacePlaneBytesPerRowOfTileData`
+- `IOSurfacePlaneExtendedPixelsOnRight`
+- `\"%s: failed to get IOSurface root\" @%s:%d`
+- `IOSurfaceRootUserClient.cpp`
+- `\"IOSurfaceRootUserClient: asked to allocate client shared id %08x not known by IOSurfaceRoot\" @%s:%d`
+- `IOSurfaceElementWidth`
+- `IOSurfaceMapCacheAttribute`
+- `site.IOSurfaceClient`
+- `====> %s:%d IOSurfaceMemoryPool: %s (%d) invalid task (%p) can't access pool id %llu (wrong entitlements)\n`
+- `site.IOSurfaceSharedEventNotificationPort`
+- `IOSurfaceSharedEvent`
+- `IOSurfaceOffset`
+- `IOSurfaceAddressFormat`
+- `\"IOSurface released with non-zero client retain count: %p\" @%s:%d`
+- `IOSurfaceBufferTileFormat`
+- `IOSurfaceName`
+- `IOSurfacePlaneExtendedPixelsOnBottom`
+- `site.IOSurfaceClient *`
+- `site.IOSurfaceMemoryPoolBunch`
+- `IOSurfaceSmaMemoryRegion`
+- `site.IOSurfaceSmaMemoryRegion`
+- `IOSurfaceResetDefaultAttachmentsWhenNotInUse`
+- `IOSurfacePlaneHeight`
+- `IOSurface`
+- `IOSurfaceHeight`
+- `IOSurfacePlaneBytesPerRowOfCompressedTileHeaderGroups`
+- `\"IOSurface does not support taggedRelease with when != 1\" @%s:%d`
+- `IOSurfacePlaneCompressedTileHeight`
+- `site.IOSurfaceMemoryTag`
+- `site.IOSurfaceDescriptor`
+- `IOSurface Parameters`
+- `\"IOSurface in slot %08x has a mismatched surface ID of %08x\\n\" @%s:%d`
+- `IOSurfacePlaneCompressionFootprint`
+- `virtual bool IOSurfaceDeviceMemoryRegion::init(IOSurfaceRoot *, OSDictionary *, const char *, uint32_t, uint32_t)`
+- `IOSurfaceRoot::alloc_surface_id: Map said entry free but something was there\n`
+- `Security: Process %s (%d) relying on global (insecure) IOSurface lookups\n`
+- `\"IOSurfaceTransaction::serialize panic because of attempting to write to nullptr.\" @%s:%d`
+- `IOSurfaceDescriptorContext`
+- `IOSurfacePlaneHorizontalPixelOffsetWithinCompressedTileArray`
+- `Perf: Process %s (%d) has created %d IOSurfaces out of a limit of %d\n`
+- `IONewZero failed to alloc IOSurfaceClientSharedListEntry`
+- `IOSurfaceSendRight`
+- `IOSurfaceAddressRanges`
+- `IOSurfaceFenceTransaction.cpp`
+- `IOSurfacePlaneBytesPerCompressedTileHeader`
+- `IOSurfaceSharedEventNotification`
+- `IOSurfacePixelSizeCastingAllowed`
+- `IOSurfaceSubsampling`
+- `IOSurfacePlaneCompressedTileDataRegionOffset`
+- `IOSurfacePlaneDataRegionBytesPerSlice`
+- `IOSurfacePlaneVerticalPixelOffsetWithinCompressedTileArray`
+- `IOSurfaceEncoderTimes`

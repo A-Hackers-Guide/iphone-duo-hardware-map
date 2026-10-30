@@ -1,0 +1,1867 @@
+# Symbols: `/System/Library/Frameworks/CoreText.framework/CoreText`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__Frameworks__CoreText.framework__CoreText.md). **[DSC]**
+
+850 public symbols, 4,982 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x199f7d4fc  __TEXT,__text  _CTCopyDescriptionDictionary
+0x199f7dfac  __TEXT,__text  _CTCopyLanguageIdentifierNormalizedForFontCollection
+0x199f7df68  __TEXT,__text  _CTCopyLanguageIdentifierNormalizedForLocalizedNames
+0x199f7df24  __TEXT,__text  _CTCopyLanguageIdentifierNormalizedForPresetFallbacks
+0x199f7dff0  __TEXT,__text  _CTCopyLanguageIdentifierNormalizedForShaping
+0x199f3cce8  __TEXT,__text  _CTCopySampleStringForLanguage
+0x199fb4c24  __TEXT,__text  _CTCreatePathMaskedByLines
+0x199f7dd2c  __TEXT,__text  _CTEnumerateKnownUrduSequencesInString
+0x199f47b08  __TEXT,__text  _CTFontCollectionCopyFontAttribute
+0x199f47b18  __TEXT,__text  _CTFontCollectionCopyFontAttributes
+0x199f47820  __TEXT,__text  _CTFontCollectionCreateCopyWithFontDescriptors
+0x199f478b0  __TEXT,__text  _CTFontCollectionCreateForLanguages
+0x199f47a34  __TEXT,__text  _CTFontCollectionCreateForLocale
+0x199f47638  __TEXT,__text  _CTFontCollectionCreateFromAvailableFonts
+0x199f47acc  __TEXT,__text  _CTFontCollectionCreateMatchingFontDescriptors
+0x199f47af8  __TEXT,__text  _CTFontCollectionCreateMatchingFontDescriptorsSortedWithCallback
+0x199f47ae8  __TEXT,__text  _CTFontCollectionCreateMatchingFontDescriptorsWithOptions
+0x199f47788  __TEXT,__text  _CTFontCollectionCreateWithFontDescriptors
+0x199f475e4  __TEXT,__text  _CTFontCollectionGetTypeID
+0x199edbf48  __TEXT,__text  _CTFontCopyAttribute
+0x199f06d00  __TEXT,__text  _CTFontCopyAvailableTables
+0x199eb6318  __TEXT,__text  _CTFontCopyCharacterSet
+0x199f3e014  __TEXT,__text  _CTFontCopyCharacterSetOfDefaultCascadeListForSystemUIFonts
+0x199f10bc8  __TEXT,__text  _CTFontCopyColorGlyphCoverage
+0x199f3d4d4  __TEXT,__text  _CTFontCopyComplexColorFormatGlyphCoverage
+0x199f3c9f0  __TEXT,__text  _CTFontCopyConvertedTables
+0x199f3d180  __TEXT,__text  _CTFontCopyDefaultCascadeList
+0x199ef8c64  __TEXT,__text  _CTFontCopyDefaultCascadeListForLanguages
+0x199f3bc50  __TEXT,__text  _CTFontCopyDisplayName
+0x199edc5a8  __TEXT,__text  _CTFontCopyFamilyName
+0x199f3c950  __TEXT,__text  _CTFontCopyFeatureSettings
+0x199f3c890  __TEXT,__text  _CTFontCopyFeatures
+0x199f3c8e4  __TEXT,__text  _CTFontCopyFeaturesInternal
+0x199e71040  __TEXT,__text  _CTFontCopyFontDescriptor
+0x199f0ac18  __TEXT,__text  _CTFontCopyFullName
+0x199f3d9b4  __TEXT,__text  _CTFontCopyGlyphCoverageForFeature
+0x199e7e940  __TEXT,__text  _CTFontCopyGraphicsFont
+0x199f3e178  __TEXT,__text  _CTFontCopyImageForGlyph
+0x199f3e3a8  __TEXT,__text  _CTFontCopyImageFromAdaptiveImageProvider
+0x199f3e6f0  __TEXT,__text  _CTFontCopyImageFromEmojiImageProvider
+0x199f3bda8  __TEXT,__text  _CTFontCopyLocalizedName
+0x199f3be8c  __TEXT,__text  _CTFontCopyLocalizedNameByIDWithLanguages
+0x199f3be1c  __TEXT,__text  _CTFontCopyLocalizedNameWithLanguages
+0x199f3bef8  __TEXT,__text  _CTFontCopyLogicalCharacterSet
+0x199f3bcd0  __TEXT,__text  _CTFontCopyName
+0x199f3c540  __TEXT,__text  _CTFontCopyNameForGlyph
+0x199f3c984  __TEXT,__text  _CTFontCopyOTFontFeatureTable
+0x199f3bd3c  __TEXT,__text  _CTFontCopyOTName
+0x199ec0660  __TEXT,__text  _CTFontCopyPhysicalFont
+0x199e8ca38  __TEXT,__text  _CTFontCopyPostScriptName
+0x199f3bc48  __TEXT,__text  _CTFontCopyQuickdrawInstances
+0x199f3cb78  __TEXT,__text  _CTFontCopySampleLettersWithLanguages
+0x199f3cc54  __TEXT,__text  _CTFontCopySampleString
+0x199f3cd64  __TEXT,__text  _CTFontCopySampleStringForLanguage
+0x199f3cc64  __TEXT,__text  _CTFontCopySampleStringWithLanguages
+0x199f3db5c  __TEXT,__text  _CTFontCopyShapingLanguages
+0x199f3c2c4  __TEXT,__text  _CTFontCopyStringForGlyph
+0x199f3bfa4  __TEXT,__text  _CTFontCopySupportedLanguages
+0x199efb430  __TEXT,__text  _CTFontCopySystemUIFontExcessiveLineHeightCharacterSet
+0x199f0b998  __TEXT,__text  _CTFontCopyTable
+0x199f3dc60  __TEXT,__text  _CTFontCopyTallestTextStyleLanguageForString
+0x199f5d6d4  __TEXT,__text  _CTFontCopyTextScaleRecipeForStringAttributes
+0x199f3bb9c  __TEXT,__text  _CTFontCopyTraits
+0x199f3dbd8  __TEXT,__text  _CTFontCopyVariantsOfGlyph
+0x199edc07c  __TEXT,__text  _CTFontCopyVariation
+0x199ef1de0  __TEXT,__text  _CTFontCopyVariationAxes
+0x199ef55ac  __TEXT,__text  _CTFontCopyVariationAxesInternal
+0x199f7dd48  __TEXT,__text  _CTFontCreateCopyForKnownUrduSequences
+0x199ebfe20  __TEXT,__text  _CTFontCreateCopyOfSystemUIFontWithGrade
+0x199ebff50  __TEXT,__text  _CTFontCreateCopyWithAttributes
+0x199f3b7cc  __TEXT,__text  _CTFontCreateCopyWithFamily
+0x199efb678  __TEXT,__text  _CTFontCreateCopyWithSymbolicTraits
+0x199f3e07c  __TEXT,__text  _CTFontCreateEmojiFontForFont
+0x199f3baa0  __TEXT,__text  _CTFontCreateForCharacterRange
+0x199f3ba48  __TEXT,__text  _CTFontCreateForCharacters
+0x199f3ba58  __TEXT,__text  _CTFontCreateForCharactersWithLanguage
+0x199f06e08  __TEXT,__text  _CTFontCreateForCharactersWithLanguageAndOption
+0x199f3b894  __TEXT,__text  _CTFontCreateForString
+0x199f3b89c  __TEXT,__text  _CTFontCreateForStringWithLanguage
+0x199ede558  __TEXT,__text  _CTFontCreatePathForGlyph
+0x199e8a59c  __TEXT,__text  _CTFontCreateUIFontForLanguage
+0x199e85594  __TEXT,__text  _CTFontCreateWithFontDescriptor
+0x199ef2a1c  __TEXT,__text  _CTFontCreateWithFontDescriptorAndOptions
+0x199ee60e4  __TEXT,__text  _CTFontCreateWithGraphicsFont
+0x199eb714c  __TEXT,__text  _CTFontCreateWithName
+0x199eb5144  __TEXT,__text  _CTFontCreateWithNameAndOptions
+0x199e72494  __TEXT,__text  _CTFontDescriptorCanCreateWithTextStyle
+0x199e8ecdc  __TEXT,__text  _CTFontDescriptorCopyAttribute
+0x199e72264  __TEXT,__text  _CTFontDescriptorCopyAttributes
+0x199f3b58c  __TEXT,__text  _CTFontDescriptorCopyDefaultCascadeListForLanguages
+0x199f3b594  __TEXT,__text  _CTFontDescriptorCopyDefaultCascadeListForLanguagesWithOption
+0x199fbc0ec  __TEXT,__text  _CTFontDescriptorCopyDownloadableFontAttributesForRequests
+0x199f3af78  __TEXT,__text  _CTFontDescriptorCopyLocalizedAttribute
+0x199f3b47c  __TEXT,__text  _CTFontDescriptorCopyName
+0x199f53bd4  __TEXT,__text  _CTFontDescriptorCopyNameForSystemFontOfWeight
+0x199e9c1b4  __TEXT,__text  _CTFontDescriptorCreateCopyWithAttributes
+0x199f3b324  __TEXT,__text  _CTFontDescriptorCreateCopyWithFamily
+0x199edb148  __TEXT,__text  _CTFontDescriptorCreateCopyWithFeature
+0x199ea8d70  __TEXT,__text  _CTFontDescriptorCreateCopyWithSymbolicTraits
+0x199ef56a0  __TEXT,__text  _CTFontDescriptorCreateCopyWithVariation
+0x199f0a4b8  __TEXT,__text  _CTFontDescriptorCreateForCSSFamily
+0x199e8a528  __TEXT,__text  _CTFontDescriptorCreateForUIType
+0x199f3b430  __TEXT,__text  _CTFontDescriptorCreateLastResort
+0x199ec2608  __TEXT,__text  _CTFontDescriptorCreateMatchingFontDescriptor
+0x199ee1484  __TEXT,__text  _CTFontDescriptorCreateMatchingFontDescriptors
+0x199f3af28  __TEXT,__text  _CTFontDescriptorCreateMatchingFontDescriptorsWithOptions
+0x199ec20fc  __TEXT,__text  _CTFontDescriptorCreateWithAttributes
+0x199e9cc18  __TEXT,__text  _CTFontDescriptorCreateWithAttributesAndOptions
+0x199f3ae9c  __TEXT,__text  _CTFontDescriptorCreateWithNameAndSize
+0x199ec2428  __TEXT,__text  _CTFontDescriptorCreateWithTextStyle
+0x199e84a0c  __TEXT,__text  _CTFontDescriptorCreateWithTextStyleAndAttributes
+0x199fbcaec  __TEXT,__text  _CTFontDescriptorDownloadMatchingFontDescriptors
+0x199f3b518  __TEXT,__text  _CTFontDescriptorGetClientObject
+0x199f4e6e4  __TEXT,__text  _CTFontDescriptorGetContentSizeCategoryFromIndex
+0x199e85200  __TEXT,__text  _CTFontDescriptorGetContentSizeCategoryIndex
+0x199f53a68  __TEXT,__text  _CTFontDescriptorGetDefaultTextStylePlatform
+0x199f3b3c0  __TEXT,__text  _CTFontDescriptorGetLanguageAwareTextStyleSize
+0x199f3b314  __TEXT,__text  _CTFontDescriptorGetOptions
+0x199eb5e1c  __TEXT,__text  _CTFontDescriptorGetSymbolicTraits
+0x199e8d8a0  __TEXT,__text  _CTFontDescriptorGetTextStyleSize
+0x199ebad68  __TEXT,__text  _CTFontDescriptorGetTextStyleWithSymbolicTraits
+0x199f3b14c  __TEXT,__text  _CTFontDescriptorGetTypeID
+0x199eb8988  __TEXT,__text  _CTFontDescriptorGetWeight
+0x199f3b3cc  __TEXT,__text  _CTFontDescriptorHasPostScriptNameAlias
+0x199f3b298  __TEXT,__text  _CTFontDescriptorIsAppleFont
+0x199eaf2b4  __TEXT,__text  _CTFontDescriptorIsSystemUIFont
+0x199f3b1a0  __TEXT,__text  _CTFontDescriptorIsValid
+0x199f3b21c  __TEXT,__text  _CTFontDescriptorIsVisible
+0x199fbc0e0  __TEXT,__text  _CTFontDescriptorMatchFontDescriptorsWithProgressHandler
+0x199fbcb04  __TEXT,__text  _CTFontDescriptorRequiresFontAssetRequest
+0x199f3b578  __TEXT,__text  _CTFontDescriptorSetClientObject
+0x199f3b0c4  __TEXT,__text  _CTFontDescriptorsCopyAttribute
+0x199f3b144  __TEXT,__text  _CTFontDescriptorsCopyAttributes
+0x199f3afc8  __TEXT,__text  _CTFontDescriptorsCopyLocalizedAttribute
+0x199ed6cf8  __TEXT,__text  _CTFontDrawGlyphs
+0x199f3ce14  __TEXT,__text  _CTFontDrawGlyphsAtPoint
+0x199efeed8  __TEXT,__text  _CTFontDrawGlyphsAtPositions
+0x199e7e9bc  __TEXT,__text  _CTFontDrawGlyphsWithAdvances
+0x199f3e5c8  __TEXT,__text  _CTFontDrawImageFromAdaptiveImageProviderAtPoint
+0x199f3e744  __TEXT,__text  _CTFontDrawImageFromEmojiImageProviderAtPoint
+0x199f3cd98  __TEXT,__text  _CTFontEnumerateOverlappingGlyphs
+0x199f53ef0  __TEXT,__text  _CTFontGetAccessibilityBoldWeightOfWeight
+0x199ed6e1c  __TEXT,__text  _CTFontGetAdvancesForGlyphs
+0x199e90e08  __TEXT,__text  _CTFontGetAscent
+0x199f53d90  __TEXT,__text  _CTFontGetAscentForSystemFontOfSize
+0x199eaf7d8  __TEXT,__text  _CTFontGetBoundingBox
+0x199ee20c4  __TEXT,__text  _CTFontGetBoundingRectsForGlyphs
+0x199ebad28  __TEXT,__text  _CTFontGetCapHeight
+0x199f53dd4  __TEXT,__text  _CTFontGetCapHeightForSystemFontOfSize
+0x199f13324  __TEXT,__text  _CTFontGetClientObject
+0x199ee339c  __TEXT,__text  _CTFontGetClippingMetrics
+0x199f3d90c  __TEXT,__text  _CTFontGetComplexColorFormatForGlyph
+0x199f3c3e0  __TEXT,__text  _CTFontGetDefaultAscent
+0x199ee3528  __TEXT,__text  _CTFontGetDescent
+0x199f53db0  __TEXT,__text  _CTFontGetDescentForSystemFontOfSize
+0x199f3cdbc  __TEXT,__text  _CTFontGetDescriptorOptions
+0x199f53cd8  __TEXT,__text  _CTFontGetExuberatedLineHeightForLineHeight
+0x199f3c35c  __TEXT,__text  _CTFontGetGlyphCount
+0x199f3c528  __TEXT,__text  _CTFontGetGlyphWithName
+0x199f3c0d0  __TEXT,__text  _CTFontGetGlyphsAndAdvancesForCharacterRange
+0x199f3c064  __TEXT,__text  _CTFontGetGlyphsForCharacterRange
+0x199eb6d0c  __TEXT,__text  _CTFontGetGlyphsForCharacters
+0x199f3c01c  __TEXT,__text  _CTFontGetGlyphsForLongCharacters
+0x199ef08a0  __TEXT,__text  _CTFontGetLanguageAwareOutsets
+0x199ef0f60  __TEXT,__text  _CTFontGetLanguageAwareOutsetsForLanguage
+0x199ea3448  __TEXT,__text  _CTFontGetLatin1GlyphsAndAdvanceWidths
+0x199ee3568  __TEXT,__text  _CTFontGetLeading
+0x199f3c7a4  __TEXT,__text  _CTFontGetLigatureCaretPositions
+0x199f3bb58  __TEXT,__text  _CTFontGetMatrix
+0x199f3c424  __TEXT,__text  _CTFontGetMaximumAdvance
+0x199f3c7c0  __TEXT,__text  _CTFontGetOpticalBoundsForGlyphs
+0x199f3ba64  __TEXT,__text  _CTFontGetPhysicalSymbolicTraits
+0x199f3cfdc  __TEXT,__text  _CTFontGetSbixImageSizeForGlyph
+0x199f3d020  __TEXT,__text  _CTFontGetSbixImageSizeForGlyphAndContentsScale
+0x199f16e80  __TEXT,__text  _CTFontGetSize
+0x199f3c370  __TEXT,__text  _CTFontGetSlantAngle
+0x199f3bf6c  __TEXT,__text  _CTFontGetStringEncoding
+0x199eaf260  __TEXT,__text  _CTFontGetSymbolicTraits
+0x199e72300  __TEXT,__text  _CTFontGetTextStyle
+0x199f3c4e8  __TEXT,__text  _CTFontGetTrackingFloor
+0x199eafb1c  __TEXT,__text  _CTFontGetTransformedAdvancesForGlyphsAndStyle
+0x199f3c6a0  __TEXT,__text  _CTFontGetTransformedBoundingRectsForGlyphsAndStyle
+0x199f3cb24  __TEXT,__text  _CTFontGetTypeID
+0x199f3e2c8  __TEXT,__text  _CTFontGetTypographicBoundsForAdaptiveImageProvider
+0x199f3e658  __TEXT,__text  _CTFontGetTypographicBoundsForEmojiImageProvider
+0x199f3c438  __TEXT,__text  _CTFontGetTypographicMetrics
+0x199e70fe4  __TEXT,__text  _CTFontGetUIFontDesign
+0x199ebabf8  __TEXT,__text  _CTFontGetUIFontType
+0x199ee36c8  __TEXT,__text  _CTFontGetUnderlinePosition
+0x199ee38b4  __TEXT,__text  _CTFontGetUnderlineThickness
+0x199f0abd8  __TEXT,__text  _CTFontGetUnitsPerEm
+0x199eb660c  __TEXT,__text  _CTFontGetUnsummedAdvancesForGlyphsAndStyle
+0x199f3c2ac  __TEXT,__text  _CTFontGetVerticalGlyphsForCharacters
+0x199f3c784  __TEXT,__text  _CTFontGetVerticalTranslationsForGlyphs
+0x199e966dc  __TEXT,__text  _CTFontGetWeight
+0x199f3bbf8  __TEXT,__text  _CTFontGetWidth
+0x199ed3cac  __TEXT,__text  _CTFontGetXHeight
+0x199f3d694  __TEXT,__text  _CTFontHasComplexColorFormatForGlyph
+0x199f3d954  __TEXT,__text  _CTFontHasComplexColorFormatForGlyphs
+0x199f3d504  __TEXT,__text  _CTFontHasComplexColorFormatTables
+0x199f3ce04  __TEXT,__text  _CTFontHasDerivedOpticalSize
+0x199e9d8ac  __TEXT,__text  _CTFontHasExuberatedLineHeight
+0x199ec23f8  __TEXT,__text  _CTFontHasFeatureSettingWithTypeAndSelector
+0x199f3c968  __TEXT,__text  _CTFontHasFeatureWithTypeAndSelector
+0x199f034d4  __TEXT,__text  _CTFontHasTable
+0x199f3d228  __TEXT,__text  _CTFontInitializeShapingGlyphs
+0x199f04934  __TEXT,__text  _CTFontIsAppleColorEmoji
+0x199ee2fe4  __TEXT,__text  _CTFontIsLastResort
+0x199e90e48  __TEXT,__text  _CTFontIsSystemUIFont
+0x199e8d4f0  __TEXT,__text  _CTFontIsTextStyleFont
+0x199f3bb88  __TEXT,__text  _CTFontIsVertical
+0x199f50048  __TEXT,__text  _CTFontManagerCompareFontDescriptors
+0x199f50058  __TEXT,__text  _CTFontManagerCompareFontDescriptors2
+0x199f50018  __TEXT,__text  _CTFontManagerCompareFontFamilyNames
+0x199fb08e4  __TEXT,__text  _CTFontManagerCopyAvailableFontFamilyNames
+0x199fb0858  __TEXT,__text  _CTFontManagerCopyAvailablePostScriptNames
+0x199fb2538  __TEXT,__text  _CTFontManagerCopyRegisteredFontDescriptors
+0x199fb1298  __TEXT,__text  _CTFontManagerCreateFontDescriptorFromData
+0x199fb13a0  __TEXT,__text  _CTFontManagerCreateFontDescriptorsFromData
+0x199fb10fc  __TEXT,__text  _CTFontManagerCreateFontDescriptorsFromURL
+0x199fb131c  __TEXT,__text  _CTFontManagerCreateMemorySafeFontDescriptorFromData
+0x199fb2a6c  __TEXT,__text  _CTFontManagerDownloadFontsRequiredForLanguages
+0x199fb0dac  __TEXT,__text  _CTFontManagerInstalledFontsChanged
+0x199fb17f0  __TEXT,__text  _CTFontManagerRegisterFontDescriptors
+0x199fb14f0  __TEXT,__text  _CTFontManagerRegisterFontURLs
+0x199fb0974  __TEXT,__text  _CTFontManagerRegisterFontsForURL
+0x199fb098c  __TEXT,__text  _CTFontManagerRegisterFontsForURLs
+0x199fb1b5c  __TEXT,__text  _CTFontManagerRegisterFontsWithAssetNames
+0x199fb0ca4  __TEXT,__text  _CTFontManagerRegisterGraphicsFont
+0x199fb2660  __TEXT,__text  _CTFontManagerRequestFonts
+0x199fb1b4c  __TEXT,__text  _CTFontManagerUnregisterFontDescriptors
+0x199fb17d8  __TEXT,__text  _CTFontManagerUnregisterFontURLs
+0x199fb0980  __TEXT,__text  _CTFontManagerUnregisterFontsForURL
+0x199fb0c98  __TEXT,__text  _CTFontManagerUnregisterFontsForURLs
+0x199fb0ff0  __TEXT,__text  _CTFontManagerUnregisterGraphicsFont
+0x199eec3a0  __TEXT,__text  _CTFontRemoveFromCaches
+0x199f53c20  __TEXT,__text  _CTFontSetAltTextStyleSpec
+0x199e90d7c  __TEXT,__text  _CTFontSetClientObject
+0x199eff488  __TEXT,__text  _CTFontShapeGlyphs
+0x199f3c4a4  __TEXT,__text  _CTFontShouldAntiAlias
+0x199f3dff8  __TEXT,__text  _CTFontStrikeMetricsCreateDictionaryRepresentation
+0x199f3c4ac  __TEXT,__text  _CTFontSupportsConnectedLanguage
+0x199e72c3c  __TEXT,__text  _CTFontSwapDefaultLineHeightAdjustment
+0x199e72d9c  __TEXT,__text  _CTFontSwapDefaultSize
+0x199f3cd68  __TEXT,__text  _CTFontSwapEmojiPolicy
+0x199eebdf8  __TEXT,__text  _CTFontTransformGlyphs
+0x199e73174  __TEXT,__text  _CTFontTransformGlyphsWithLanguage
+0x199f36a60  __TEXT,__text  _CTFrameCopyVisibleString
+0x199efd668  __TEXT,__text  _CTFrameDraw
+0x199f36ac4  __TEXT,__text  _CTFrameGetFrameAttributes
+0x199efd490  __TEXT,__text  _CTFrameGetLineOrigins
+0x199f36ad8  __TEXT,__text  _CTFrameGetLines
+0x199f36ab0  __TEXT,__text  _CTFrameGetPath
+0x199f36a30  __TEXT,__text  _CTFrameGetStringRange
+0x199f369dc  __TEXT,__text  _CTFrameGetTypeID
+0x199f36a48  __TEXT,__text  _CTFrameGetVisibleStringRange
+0x199efdfc8  __TEXT,__text  _CTFramesetterCreateCGRectArray
+0x199fb5a08  __TEXT,__text  _CTFramesetterCreateCGRectArrayVertical
+0x199efd3b4  __TEXT,__text  _CTFramesetterCreateFrame
+0x199efb748  __TEXT,__text  _CTFramesetterCreateWithAttributedString
+0x199f36e60  __TEXT,__text  _CTFramesetterCreateWithTypesetter
+0x199f36ee8  __TEXT,__text  _CTFramesetterCreateWithUniCharProvider
+0x199fb5aa4  __TEXT,__text  _CTFramesetterFindRectPosition
+0x199f36e0c  __TEXT,__text  _CTFramesetterGetTypeID
+0x199f36f90  __TEXT,__text  _CTFramesetterGetTypesetter
+0x199efb854  __TEXT,__text  _CTFramesetterSuggestFrameSizeWithConstraints
+0x199f7d4f4  __TEXT,__text  _CTGetCoreTextVersion
+0x199f7d6f8  __TEXT,__text  _CTGetDefaultLanguageAwareLineHeightRatio
+0x199f7b670  __TEXT,__text  _CTGlyphInfoCreateWithCharacterIdentifier
+0x199f7b580  __TEXT,__text  _CTGlyphInfoCreateWithGlyph
+0x199f7b468  __TEXT,__text  _CTGlyphInfoCreateWithGlyphName
+0x199f7b8b0  __TEXT,__text  _CTGlyphInfoGetCharacterCollection
+0x199f7b834  __TEXT,__text  _CTGlyphInfoGetCharacterIdentifier
+0x199f7ba14  __TEXT,__text  _CTGlyphInfoGetGlyph
+0x199f7b7b8  __TEXT,__text  _CTGlyphInfoGetGlyphName
+0x199f7b414  __TEXT,__text  _CTGlyphInfoGetTypeID
+0x199efd7e0  __TEXT,__text  _CTGlyphStorageCreateMutableWithInterface
+0x199f4a8b0  __TEXT,__text  _CTGlyphStorageGetInterface
+0x199efdf8c  __TEXT,__text  _CTGlyphStorageGetRefCon
+0x199f4a8b4  __TEXT,__text  _CTGlyphStorageSyncWithInterface
+0x199f7dce8  __TEXT,__text  _CTIsExuberatedLanguage
+0x199efd7dc  __TEXT,__text  _CTIsLanguageIdentifierSuitableForKnownUrduSequences
+0x199f7e034  __TEXT,__text  _CTIsLanguageSupportedByIdentifier
+0x199f2d678  __TEXT,__text  _CTLineCopyCaretPathForStringIndex
+0x199f2d6c8  __TEXT,__text  _CTLineCopyHighlightPathForStringRange
+0x199f2d7e8  __TEXT,__text  _CTLineCreateCopyWithAttributeOverrides
+0x199eb18f8  __TEXT,__text  _CTLineCreateFromLineWithOffset
+0x199ece424  __TEXT,__text  _CTLineCreateHyphenatedLineWithOffset
+0x199f2d49c  __TEXT,__text  _CTLineCreateJustifiedLine
+0x199ee5fd0  __TEXT,__text  _CTLineCreateJustifiedLineWithOptions
+0x199edcef0  __TEXT,__text  _CTLineCreateTruncatedLine
+0x199f2dee4  __TEXT,__text  _CTLineCreateTruncatedLineWithTokenCallback
+0x199eba7c0  __TEXT,__text  _CTLineCreateTruncatedLineWithTokenHandler
+0x199e99be8  __TEXT,__text  _CTLineCreateWithAttributedString
+0x199f2d414  __TEXT,__text  _CTLineCreateWithRunArray
+0x199eb79d8  __TEXT,__text  _CTLineCreateWithString
+0x199f10a64  __TEXT,__text  _CTLineCreateWithUniCharProvider
+0x199f2dd58  __TEXT,__text  _CTLineDecorationApplyWithBlock
+0x199f76288  __TEXT,__text  _CTLineDecorationGetFragment
+0x199f76258  __TEXT,__text  _CTLineDecorationGetSegment
+0x199f7626c  __TEXT,__text  _CTLineDecorationGetSegmentColor
+0x199f7624c  __TEXT,__text  _CTLineDecorationGetType
+0x199eafec4  __TEXT,__text  _CTLineDraw
+0x199f2d718  __TEXT,__text  _CTLineDrawAttributedString
+0x199eed780  __TEXT,__text  _CTLineDrawWithAttributeOverrides
+0x199ee6b8c  __TEXT,__text  _CTLineEnumerateCaretOffsets
+0x199eddc08  __TEXT,__text  _CTLineGetBoundsWithOptions
+0x199f2ddb4  __TEXT,__text  _CTLineGetDefaultBounds
+0x199ebaae0  __TEXT,__text  _CTLineGetGlyphCount
+0x199eb16d4  __TEXT,__text  _CTLineGetGlyphRuns
+0x199f2d564  __TEXT,__text  _CTLineGetImageBounds
+0x199ee9b28  __TEXT,__text  _CTLineGetOffsetForStringIndex
+0x199ea7c88  __TEXT,__text  _CTLineGetPenOffsetForFlush
+0x199ee6180  __TEXT,__text  _CTLineGetRangeOfCharacterClusterAtIndex
+0x199f2d528  __TEXT,__text  _CTLineGetRunAtIndex
+0x199f2d510  __TEXT,__text  _CTLineGetRunCount
+0x199f2d664  __TEXT,__text  _CTLineGetStringIndexForPosition
+0x199ea69d4  __TEXT,__text  _CTLineGetStringIndexOfTabOverflow
+0x199f2d54c  __TEXT,__text  _CTLineGetStringRange
+0x199ea6ea4  __TEXT,__text  _CTLineGetTrailingWhitespaceWidth
+0x199f2d3c0  __TEXT,__text  _CTLineGetTypeID
+0x199f2d614  __TEXT,__text  _CTLineGetTypographicBounds
+0x199eb887c  __TEXT,__text  _CTLineGetWidthForStringRangeWithOffset
+0x199f2ded0  __TEXT,__text  _CTLineHasBidiLevels
+0x199f4e6d4  __TEXT,__text  _CTLineHeightToNSParagraphStyleBaselineInterval
+0x199f4e6c4  __TEXT,__text  _CTLineHeightToNSParagraphStyleBaselineIntervalType
+0x199f2debc  __TEXT,__text  _CTLineIsRightToLeft
+0x199f2e010  __TEXT,__text  _CTLineSuggestClusterBreakWithOffset
+0x199eb2b18  __TEXT,__text  _CTLineSuggestClusterBreakWithTabOverflow
+0x199f2df74  __TEXT,__text  _CTLineSuggestLineBreakWithOffset
+0x199f2e024  __TEXT,__text  _CTLineSuggestLineBreakWithTabOverflow
+0x199efdfb8  __TEXT,__text  _CTLineSyncWithRuns
+0x199ee38e4  __TEXT,__text  _CTParagraphStyleCreate
+0x199f6f0b4  __TEXT,__text  _CTParagraphStyleCreateCopy
+0x199f6f368  __TEXT,__text  _CTParagraphStyleGetCompositionLanguage
+0x199e97740  __TEXT,__text  _CTParagraphStyleGetCompositionLanguageForLanguage
+0x199eaf0a8  __TEXT,__text  _CTParagraphStyleGetTypeID
+0x199f6f140  __TEXT,__text  _CTParagraphStyleGetValueForSpecifier
+0x199f110ec  __TEXT,__text  _CTParagraphStyleSetCompositionLanguage
+0x199f531e8  __TEXT,__text  _CTRubyAnnotationCreate
+0x199f533f8  __TEXT,__text  _CTRubyAnnotationCreateCopy
+0x199f5335c  __TEXT,__text  _CTRubyAnnotationCreateWithAttributedString
+0x199f532b8  __TEXT,__text  _CTRubyAnnotationCreateWithAttributes
+0x199f534ac  __TEXT,__text  _CTRubyAnnotationGetAlignment
+0x199f534c4  __TEXT,__text  _CTRubyAnnotationGetOverhang
+0x199f534dc  __TEXT,__text  _CTRubyAnnotationGetSizeFactor
+0x199f534f4  __TEXT,__text  _CTRubyAnnotationGetTextForPosition
+0x199f53194  __TEXT,__text  _CTRubyAnnotationGetTypeID
+0x199f360a4  __TEXT,__text  _CTRunCopyEncapsulationPath
+0x199f3603c  __TEXT,__text  _CTRunCopyRubyAnnotationLineForPosition
+0x199ee68dc  __TEXT,__text  _CTRunCreateMutableRunsWithStorageAndOptions
+0x199efed88  __TEXT,__text  _CTRunDelegateCreate
+0x199f84734  __TEXT,__text  _CTRunDelegateGetRefCon
+0x199ec8b28  __TEXT,__text  _CTRunDelegateGetTypeID
+0x199f35888  __TEXT,__text  _CTRunDraw
+0x199f35890  __TEXT,__text  _CTRunDrawDecorations
+0x199f35580  __TEXT,__text  _CTRunDrawWithAttributeOverrides
+0x199f0bd08  __TEXT,__text  _CTRunGetAdvances
+0x199f34e84  __TEXT,__text  _CTRunGetAdvancesPtr
+0x199f35a94  __TEXT,__text  _CTRunGetAttachmentCounts
+0x199f35c44  __TEXT,__text  _CTRunGetAttachmentCountsPtr
+0x199ec52d0  __TEXT,__text  _CTRunGetAttributes
+0x199f3525c  __TEXT,__text  _CTRunGetBackgroundBounds
+0x199edb798  __TEXT,__text  _CTRunGetBaseAdvancesAndOrigins
+0x199f34dcc  __TEXT,__text  _CTRunGetFont
+0x199edd070  __TEXT,__text  _CTRunGetGlyphCount
+0x199f35fec  __TEXT,__text  _CTRunGetGlyphStorage
+0x199effde0  __TEXT,__text  _CTRunGetGlyphs
+0x199f34e58  __TEXT,__text  _CTRunGetGlyphsPtr
+0x199f34fbc  __TEXT,__text  _CTRunGetImageBounds
+0x199f0f19c  __TEXT,__text  _CTRunGetInitialAdvance
+0x199f35a70  __TEXT,__text  _CTRunGetInitialBaseAdvance
+0x199f34f08  __TEXT,__text  _CTRunGetMetrics
+0x199ecbb10  __TEXT,__text  _CTRunGetPositions
+0x199edd0d4  __TEXT,__text  _CTRunGetPositionsPtr
+0x199f35c74  __TEXT,__text  _CTRunGetPropertiesPtr
+0x199f34de0  __TEXT,__text  _CTRunGetScript
+0x199f34df4  __TEXT,__text  _CTRunGetStatus
+0x199f35df8  __TEXT,__text  _CTRunGetStretchFactors
+0x199f0bfb8  __TEXT,__text  _CTRunGetStringIndices
+0x199f34ec4  __TEXT,__text  _CTRunGetStringIndicesPtr
+0x199f34ef0  __TEXT,__text  _CTRunGetStringRange
+0x199f36008  __TEXT,__text  _CTRunGetTextMatrix
+0x199f34d78  __TEXT,__text  _CTRunGetTypeID
+0x199ec52e4  __TEXT,__text  _CTRunGetTypographicBounds
+0x199efdfa4  __TEXT,__text  _CTRunSyncWithStorage
+0x199f7d8bc  __TEXT,__text  _CTStringIsSuitableForArabicJustification
+0x199efb300  __TEXT,__text  _CTStringIsSuitableForVerticalLayout
+0x199eaf840  __TEXT,__text  _CTSwapLineBreakEpsilon
+0x199f5bfdc  __TEXT,__text  _CTTextTabCreate
+0x199f5c078  __TEXT,__text  _CTTextTabGetAlignment
+0x199f5c0b4  __TEXT,__text  _CTTextTabGetLocation
+0x199f5c0f8  __TEXT,__text  _CTTextTabGetOptions
+0x199f5bf88  __TEXT,__text  _CTTextTabGetTypeID
+0x199ed746c  __TEXT,__text  _CTTypesetterCreateLine
+0x199f36d64  __TEXT,__text  _CTTypesetterCreateLineWithOffset
+0x199edc6e4  __TEXT,__text  _CTTypesetterCreateWithAttributedString
+0x199ed6ec4  __TEXT,__text  _CTTypesetterCreateWithAttributedStringAndOptions
+0x199ee4a30  __TEXT,__text  _CTTypesetterCreateWithRunArray
+0x199efda80  __TEXT,__text  _CTTypesetterCreateWithRunArrayAndOptions
+0x199f36cdc  __TEXT,__text  _CTTypesetterCreateWithUniCharProvider
+0x199f10570  __TEXT,__text  _CTTypesetterCreateWithUniCharProviderAndOptions
+0x199f36c88  __TEXT,__text  _CTTypesetterGetTypeID
+0x199ee6720  __TEXT,__text  _CTTypesetterSuggestClusterBreak
+0x199f36d68  __TEXT,__text  _CTTypesetterSuggestClusterBreakWithOffset
+0x199edc754  __TEXT,__text  _CTTypesetterSuggestLineBreak
+0x199ee42c0  __TEXT,__text  _CTTypesetterSuggestLineBreakWithOffset
+0x199f7d5dc  __TEXT,__text  _CTWriteDescriptionDictionaryToFile
+0x1e0d02018  __DATA_CONST,__const  _NSTextEncapsulationAttributeName
+0x1ef6b87c0  __AUTH,__objc_data  _OBJC_CLASS_$_CTAdaptiveImageGlyph
+0x1ef6b8658  __AUTH,__objc_data  _OBJC_CLASS_$_CTEmojiImageAsset
+0x1ef6b86d0  __AUTH,__objc_data  _OBJC_CLASS_$_CTEmojiImageStrike
+0x1ee1719d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CTGlyphStorageInterface
+0x1ef6b85e0  __AUTH,__objc_data  _OBJC_CLASS_$_CTRunMetricsDelegate
+0x1ee171980  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextEncapsulation
+0x1ebb5272c  __DATA,__objc_ivar  OBJC_IVAR_$_CTGlyphStorageInterface._absorbedCounts
+0x1ebb52720  __DATA,__objc_ivar  OBJC_IVAR_$_CTGlyphStorageInterface._advances
+0x1ebb52718  __DATA,__objc_ivar  OBJC_IVAR_$_CTGlyphStorageInterface._glyphCount
+0x1ebb5271c  __DATA,__objc_ivar  OBJC_IVAR_$_CTGlyphStorageInterface._glyphs
+0x1ebb52730  __DATA,__objc_ivar  OBJC_IVAR_$_CTGlyphStorageInterface._origins
+0x1ebb52724  __DATA,__objc_ivar  OBJC_IVAR_$_CTGlyphStorageInterface._props
+0x1ebb52728  __DATA,__objc_ivar  OBJC_IVAR_$_CTGlyphStorageInterface._stringIndexes
+0x1ef6b8798  __AUTH,__objc_data  _OBJC_METACLASS_$_CTAdaptiveImageGlyph
+0x1ef6b8630  __AUTH,__objc_data  _OBJC_METACLASS_$_CTEmojiImageAsset
+0x1ef6b8608  __AUTH,__objc_data  _OBJC_METACLASS_$_CTEmojiImageStrike
+0x1ee1719a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CTGlyphStorageInterface
+0x1ef6b85b8  __AUTH,__objc_data  _OBJC_METACLASS_$_CTRunMetricsDelegate
+0x1ee171958  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextEncapsulation
+0x199f501fc  __TEXT,__text  __CTClearFontFallbacksCache
+0x199f50068  __TEXT,__text  __CTCopyDefaultFontFallbacksDictionary
+0x199f7e038  __TEXT,__text  __CTEnumerateScriptRanges
+0x199f3dff0  __TEXT,__text  __CTFontCopyPredefinedCharacterSet
+0x199e9bbd0  __TEXT,__text  __CTFontCreateWithNameAndSymbolicTraits
+0x199f3f1f4  __TEXT,__text  __CTFontGetBaseFontType
+0x199f3f218  __TEXT,__text  __CTFontGetPaletteColors
+0x199f50248  __TEXT,__text  __CTForceLocaleChange
+0x199f7e0b8  __TEXT,__text  __CTGetCharacterClass
+0x199e93268  __TEXT,__text  __CTGetEmojiFontName
+0x199f3949c  __TEXT,__text  __CTGetFrameworkBundleForLocalization
+0x199efee70  __TEXT,__text  __CTGetVisibleFormatterCharacterSet
+0x199f7b92c  __TEXT,__text  __CTGlyphInfoGetBaseString
+0x199f7b990  __TEXT,__text  __CTGlyphInfoGetFont
+0x199f7ba10  __TEXT,__text  __CTGlyphInfoGetGlyph
+0x199f2dcf0  __TEXT,__text  __CTLineEnumerateDecorations
+0x199f394b8  __TEXT,__text  __CTSetFrameworkBundleForLocalization
+0x199f7d6c0  __TEXT,__text  __CTSwapAllDescriptorsFallbackDisabled
+0x1e0cf9088  __DATA_CONST,__const  _kCTAdaptiveImageProviderAttributeName
+0x1e0cf9080  __DATA_CONST,__const  _kCTBackgroundColorAttributeName
+0x1e0cf9078  __DATA_CONST,__const  _kCTBaselineAttributeName
+0x1e0cf9070  __DATA_CONST,__const  _kCTBaselineClassAttributeName
+0x1e0cf9068  __DATA_CONST,__const  _kCTBaselineClassHanging
+0x1e0cf9060  __DATA_CONST,__const  _kCTBaselineClassICFBottom
+0x1e0cf9058  __DATA_CONST,__const  _kCTBaselineClassICFTop
+0x1e0cf9050  __DATA_CONST,__const  _kCTBaselineClassIdeographicCentered
+0x1e0cf9048  __DATA_CONST,__const  _kCTBaselineClassIdeographicHigh
+0x1e0cf9040  __DATA_CONST,__const  _kCTBaselineClassIdeographicLow
+0x1e0cf9038  __DATA_CONST,__const  _kCTBaselineClassMath
+0x1e0cf9030  __DATA_CONST,__const  _kCTBaselineClassRoman
+0x1e0cf9028  __DATA_CONST,__const  _kCTBaselineInfoAttributeName
+0x1e0cf9020  __DATA_CONST,__const  _kCTBaselineOffsetAttributeName
+0x1e0cf9018  __DATA_CONST,__const  _kCTBaselineOriginalFont
+0x1e0cf9010  __DATA_CONST,__const  _kCTBaselineReferenceFont
+0x1e0cf9008  __DATA_CONST,__const  _kCTBaselineReferenceInfoAttributeName
+0x1e0cf9000  __DATA_CONST,__const  _kCTBaselineVerticalOriginalFont
+0x1e0cf8ff8  __DATA_CONST,__const  _kCTCharacterShapeAttributeName
+0x1e0cf8ff0  __DATA_CONST,__const  _kCTFallbackWritingDirectionAttributeName
+0x1e0cf8fe8  __DATA_CONST,__const  _kCTFontAllowCellularDownloadAttribute
+0x1e0cf8fe0  __DATA_CONST,__const  _kCTFontAssetFontInfoKey
+0x00092a077  indirect  _kCTFontAssetType
+0x1e0cf8fd8  __DATA_CONST,__const  _kCTFontAttributeName
+0x1e0cf8fd0  __DATA_CONST,__const  _kCTFontBaselineAdjustAttribute
+0x1e0cf8fc8  __DATA_CONST,__const  _kCTFontCSSFamilyCursive
+0x1e0cf8fc0  __DATA_CONST,__const  _kCTFontCSSFamilyEmoji
+0x1e0cf8fb8  __DATA_CONST,__const  _kCTFontCSSFamilyFangSong
+0x1e0cf8fb0  __DATA_CONST,__const  _kCTFontCSSFamilyFantasy
+0x1e0cf8fa8  __DATA_CONST,__const  _kCTFontCSSFamilyMonospace
+0x1e0cf8fa0  __DATA_CONST,__const  _kCTFontCSSFamilyMonospaceUI
+0x1e0cf8f98  __DATA_CONST,__const  _kCTFontCSSFamilyRoundedUI
+0x1e0cf8f90  __DATA_CONST,__const  _kCTFontCSSFamilySansSerif
+0x1e0cf8f88  __DATA_CONST,__const  _kCTFontCSSFamilySerif
+0x1e0cf8f80  __DATA_CONST,__const  _kCTFontCSSFamilySerifUI
+0x1e0cf8f78  __DATA_CONST,__const  _kCTFontCSSFamilySystemUI
+0x1e0cf8f70  __DATA_CONST,__const  _kCTFontCSSWeightAttribute
+0x1e0cf8f68  __DATA_CONST,__const  _kCTFontCSSWidthAttribute
+0x1e0cf8f60  __DATA_CONST,__const  _kCTFontCacheGlyphImagesAttribute
+0x1e0cf8f58  __DATA_CONST,__const  _kCTFontCascadeListAttribute
+0x1e0cf8f50  __DATA_CONST,__const  _kCTFontCharacterSetAttribute
+0x1e0cf8f48  __DATA_CONST,__const  _kCTFontCodableVariationAttribute
+0x1e0cf8f40  __DATA_CONST,__const  _kCTFontCollectionIncludeInvisibleFontsOption
+0x1e0cf8f38  __DATA_CONST,__const  _kCTFontCollectionRemoveDuplicatesOption
+0x1e0cf8f30  __DATA_CONST,__const  _kCTFontCompatibleFullNameKey
+0x1e0cf8f28  __DATA_CONST,__const  _kCTFontComponentListAttribute
+0x1e0cf8f20  __DATA_CONST,__const  _kCTFontContentSizeCategoryAccessibilityL
+0x1e0cf8f18  __DATA_CONST,__const  _kCTFontContentSizeCategoryAccessibilityM
+0x1e0cf8f10  __DATA_CONST,__const  _kCTFontContentSizeCategoryAccessibilityXL
+0x1e0cf8f08  __DATA_CONST,__const  _kCTFontContentSizeCategoryAccessibilityXXL
+0x1e0cf8f00  __DATA_CONST,__const  _kCTFontContentSizeCategoryAccessibilityXXXL
+0x1e0cf8ef8  __DATA_CONST,__const  _kCTFontContentSizeCategoryL
+0x1e0cf8ef0  __DATA_CONST,__const  _kCTFontContentSizeCategoryM
+0x1e0cf8ee8  __DATA_CONST,__const  _kCTFontContentSizeCategoryS
+0x1e0cf8ee0  __DATA_CONST,__const  _kCTFontContentSizeCategoryXL
+0x1e0cf8ed8  __DATA_CONST,__const  _kCTFontContentSizeCategoryXS
+0x1e0cf8ed0  __DATA_CONST,__const  _kCTFontContentSizeCategoryXXL
+0x1e0cf8ec8  __DATA_CONST,__const  _kCTFontContentSizeCategoryXXXL
+0x1e0cf8ec0  __DATA_CONST,__const  _kCTFontCopyrightNameKey
+0x199fe1088  __TEXT,__const  _kCTFontDefaultWeights
+0x1e0cf8eb8  __DATA_CONST,__const  _kCTFontDescriptionNameKey
+0x1e0cf8ea0  __DATA_CONST,__const  _kCTFontDescriptorLanguageAttribute
+0x1e0cf8e98  __DATA_CONST,__const  _kCTFontDescriptorMatchingCancelDownloadHandler
+0x1e0cf8e90  __DATA_CONST,__const  _kCTFontDescriptorMatchingCurrentAssetSize
+0x1e0cf8e88  __DATA_CONST,__const  _kCTFontDescriptorMatchingDescriptors
+0x1e0cf8e80  __DATA_CONST,__const  _kCTFontDescriptorMatchingError
+0x1e0cf8e78  __DATA_CONST,__const  _kCTFontDescriptorMatchingEstimatedSecondsRemaining
+0x1e0cf8e70  __DATA_CONST,__const  _kCTFontDescriptorMatchingLocalizedDescription
+0x1e0cf8e68  __DATA_CONST,__const  _kCTFontDescriptorMatchingLocalizedFamilyName
+0x1e0cf8e60  __DATA_CONST,__const  _kCTFontDescriptorMatchingPercentage
+0x1e0cf8e58  __DATA_CONST,__const  _kCTFontDescriptorMatchingProcessedAssetCount
+0x1e0cf8e50  __DATA_CONST,__const  _kCTFontDescriptorMatchingResult
+0x1e0cf8e48  __DATA_CONST,__const  _kCTFontDescriptorMatchingSourceDescriptor
+0x1e0cf8e40  __DATA_CONST,__const  _kCTFontDescriptorMatchingTotalAssetCount
+0x1e0cf8e38  __DATA_CONST,__const  _kCTFontDescriptorMatchingTotalAssetSize
+0x1e0cf8e30  __DATA_CONST,__const  _kCTFontDescriptorMatchingTotalDownloadedSize
+0x1e0cf8e20  __DATA_CONST,__const  _kCTFontDescriptorTextStyleAttribute
+0x1e0cf8e18  __DATA_CONST,__const  _kCTFontDescriptorTextStyleBlack
+0x1e0cf8e10  __DATA_CONST,__const  _kCTFontDescriptorTextStyleBlackItalic
+0x1e0cf8e08  __DATA_CONST,__const  _kCTFontDescriptorTextStyleBold
+0x1e0cf8e00  __DATA_CONST,__const  _kCTFontDescriptorTextStyleBoldItalic
+0x1e0cf8df8  __DATA_CONST,__const  _kCTFontDescriptorTextStyleEmphasized
+0x1e0cf8df0  __DATA_CONST,__const  _kCTFontDescriptorTextStyleEmphasizedOblique
+0x1e0cf8de8  __DATA_CONST,__const  _kCTFontDescriptorTextStyleHeavy
+0x1e0cf8de0  __DATA_CONST,__const  _kCTFontDescriptorTextStyleHeavyItalic
+0x1e0cf8dd8  __DATA_CONST,__const  _kCTFontDescriptorTextStyleLight
+0x1e0cf8dd0  __DATA_CONST,__const  _kCTFontDescriptorTextStyleLightItalic
+0x1e0cf8dc8  __DATA_CONST,__const  _kCTFontDescriptorTextStyleMedium
+0x1e0cf8dc0  __DATA_CONST,__const  _kCTFontDescriptorTextStyleMediumItalic
+0x1e0cf8db8  __DATA_CONST,__const  _kCTFontDescriptorTextStyleOblique
+0x1e0cf8db0  __DATA_CONST,__const  _kCTFontDescriptorTextStyleRegular
+0x1e0cf8da8  __DATA_CONST,__const  _kCTFontDescriptorTextStyleSemibold
+0x1e0cf8da0  __DATA_CONST,__const  _kCTFontDescriptorTextStyleSemiboldItalic
+0x1e0cf8d98  __DATA_CONST,__const  _kCTFontDescriptorTextStyleThin
+0x1e0cf8d90  __DATA_CONST,__const  _kCTFontDescriptorTextStyleThinAlways
+0x1e0cf8d88  __DATA_CONST,__const  _kCTFontDescriptorTextStyleThinItalic
+0x1e0cf8d80  __DATA_CONST,__const  _kCTFontDescriptorTextStyleUltraLight
+0x1e0cf8d78  __DATA_CONST,__const  _kCTFontDescriptorTextStyleUltraLightAlways
+0x1e0cf8d70  __DATA_CONST,__const  _kCTFontDescriptorTextStyleUltraLightItalic
+0x1e0cf8d68  __DATA_CONST,__const  _kCTFontDesignLanguagesAttribute
+0x1e0cf8d60  __DATA_CONST,__const  _kCTFontDesignerNameKey
+0x1e0cf8d58  __DATA_CONST,__const  _kCTFontDesignerURLNameKey
+0x1e0cf8d48  __DATA_CONST,__const  _kCTFontDisplayNameAttribute
+0x1e0cf8d40  __DATA_CONST,__const  _kCTFontDownloadableAttribute
+0x1e0cf8d38  __DATA_CONST,__const  _kCTFontDownloadableStubAttribute
+0x1e0cf8d30  __DATA_CONST,__const  _kCTFontDownloadedAttribute
+0x1e0cf8d28  __DATA_CONST,__const  _kCTFontEmojiMLUpscalingTimeoutAttribute
+0x1e0cf8d20  __DATA_CONST,__const  _kCTFontEnabledAttribute
+0x1e0cf8d18  __DATA_CONST,__const  _kCTFontFallbackOptionAttribute
+0x1e0cf8d10  __DATA_CONST,__const  _kCTFontFamilyNameAttribute
+0x1e0cf8d08  __DATA_CONST,__const  _kCTFontFamilyNameKey
+0x1e0cf8d00  __DATA_CONST,__const  _kCTFontFeatureSampleTextKey
+0x1e0cf8cf8  __DATA_CONST,__const  _kCTFontFeatureSampleTextNameIDKey
+0x1e0cf8cf0  __DATA_CONST,__const  _kCTFontFeatureSelectorDefaultKey
+0x1e0cf8ce8  __DATA_CONST,__const  _kCTFontFeatureSelectorIdentifierKey
+0x1e0cf8ce0  __DATA_CONST,__const  _kCTFontFeatureSelectorNameIDKey
+0x1e0cf8cd8  __DATA_CONST,__const  _kCTFontFeatureSelectorNameKey
+0x1e0cf8cd0  __DATA_CONST,__const  _kCTFontFeatureSelectorSettingKey
+0x1e0cf8cc8  __DATA_CONST,__const  _kCTFontFeatureSettingsAttribute
+0x1e0cf8cc0  __DATA_CONST,__const  _kCTFontFeatureTooltipTextKey
+0x1e0cf8cb8  __DATA_CONST,__const  _kCTFontFeatureTooltipTextNameIDKey
+0x1e0cf8cb0  __DATA_CONST,__const  _kCTFontFeatureTypeExclusiveKey
+0x1e0cf8ca8  __DATA_CONST,__const  _kCTFontFeatureTypeIdentifierKey
+0x1e0cf8ca0  __DATA_CONST,__const  _kCTFontFeatureTypeNameIDKey
+0x1e0cf8c98  __DATA_CONST,__const  _kCTFontFeatureTypeNameKey
+0x1e0cf8c90  __DATA_CONST,__const  _kCTFontFeatureTypeSelectorsKey
+0x1e0cf8c88  __DATA_CONST,__const  _kCTFontFeaturesAttribute
+0x1e0cf8c70  __DATA_CONST,__const  _kCTFontFixedAdvanceAttribute
+0x1e0cf8c68  __DATA_CONST,__const  _kCTFontFormatAttribute
+0x1e0cf8c60  __DATA_CONST,__const  _kCTFontFullNameKey
+0x1e0cf8c58  __DATA_CONST,__const  _kCTFontGradeTrait
+0x1e0cf8c50  __DATA_CONST,__const  _kCTFontIgnoreLegibilityWeightAttribute
+0x1e0cf8c48  __DATA_CONST,__const  _kCTFontIgnoreScriptAnalysisAttribute
+0x1e0cf8c40  __DATA_CONST,__const  _kCTFontLangSysListAttribute
+0x1e0cf8c38  __DATA_CONST,__const  _kCTFontLanguageAwareLineHeightRatioAttribute
+0x1e0cf8c30  __DATA_CONST,__const  _kCTFontLanguagesAttribute
+0x1e0cf8c28  __DATA_CONST,__const  _kCTFontLegibilityWeightAttribute
+0x1e0cf8c20  __DATA_CONST,__const  _kCTFontLicenseNameKey
+0x1e0cf8c18  __DATA_CONST,__const  _kCTFontLicenseURLNameKey
+0x1e0cf8c10  __DATA_CONST,__const  _kCTFontLineSpacingOverrideAttribute
+0x1e0cf8c00  __DATA_CONST,__const  _kCTFontMacintoshEncodingsAttribute
+0x1e0cf8bf8  __DATA_CONST,__const  _kCTFontManagerAvailableFontURLsAddedKey
+0x1e0cf8bf0  __DATA_CONST,__const  _kCTFontManagerAvailableFontURLsRemovedKey
+0x1e0cf8be8  __DATA_CONST,__const  _kCTFontManagerErrorDomain
+0x1e0cf8be0  __DATA_CONST,__const  _kCTFontManagerErrorFontAssetNameKey
+0x1e0cf8bd8  __DATA_CONST,__const  _kCTFontManagerErrorFontDescriptorsKey
+0x1e0cf8bd0  __DATA_CONST,__const  _kCTFontManagerErrorFontURLsKey
+0x1e0cf8bc8  __DATA_CONST,__const  _kCTFontManagerRegisteredFontsChangedNotification
+0x1e0cf8bc0  __DATA_CONST,__const  _kCTFontManufacturerNameKey
+0x1e0cf8bb8  __DATA_CONST,__const  _kCTFontMarketingNameKey
+0x1e0cf8bb0  __DATA_CONST,__const  _kCTFontMatrixAttribute
+0x1e0cf8ba0  __DATA_CONST,__const  _kCTFontNameAttribute
+0x1e0cf8b90  __DATA_CONST,__const  _kCTFontOpenTypeFeatureTag
+0x1e0cf8b88  __DATA_CONST,__const  _kCTFontOpenTypeFeatureValue
+0x1e0cf8b80  __DATA_CONST,__const  _kCTFontOpticalPointSizesAttribute
+0x1e0cf8b78  __DATA_CONST,__const  _kCTFontOpticalSizeAttribute
+0x1e0cf8b70  __DATA_CONST,__const  _kCTFontOrientationAttribute
+0x1e0cf8b60  __DATA_CONST,__const  _kCTFontPaletteAttribute
+0x1e0cf8b58  __DATA_CONST,__const  _kCTFontPaletteColorsAttribute
+0x1e0cf8b50  __DATA_CONST,__const  _kCTFontPostScriptCIDNameKey
+0x1e0cf8b40  __DATA_CONST,__const  _kCTFontPostScriptNameAttribute
+0x1e0cf8b38  __DATA_CONST,__const  _kCTFontPostScriptNameKey
+0x1e0cf8b30  __DATA_CONST,__const  _kCTFontPreferredFamilyNameKey
+0x1e0cf8b28  __DATA_CONST,__const  _kCTFontPreferredSubFamilyNameKey
+0x1e0cf8b20  __DATA_CONST,__const  _kCTFontPriorityAttribute
+0x1e0cf8b18  __DATA_CONST,__const  _kCTFontQuickdrawEncodingKey
+0x1e0cf8b10  __DATA_CONST,__const  _kCTFontQuickdrawFamilyIdentifierKey
+0x1e0cf8b08  __DATA_CONST,__const  _kCTFontQuickdrawFamilyNameKey
+0x1e0cf8b00  __DATA_CONST,__const  _kCTFontQuickdrawStyleKey
+0x1e0cf8af8  __DATA_CONST,__const  _kCTFontReferenceURLAttribute
+0x1e0cf8af0  __DATA_CONST,__const  _kCTFontRegistrationScopeAttribute
+0x1e0cf8ae8  __DATA_CONST,__const  _kCTFontRegistrationUserInfoAttribute
+0x1e0cf8ae0  __DATA_CONST,__const  _kCTFontSampleTextNameKey
+0x1e0cf8ad8  __DATA_CONST,__const  _kCTFontSearchDomainAttribute
+0x1e0cf8ad0  __DATA_CONST,__const  _kCTFontShapingGlyphsAttribute
+0x1e0cf8ac8  __DATA_CONST,__const  _kCTFontSizeAttribute
+0x1e0cf8ac0  __DATA_CONST,__const  _kCTFontSizeCategoryAttribute
+0x1e0cf8ab8  __DATA_CONST,__const  _kCTFontSlantTrait
+0x1e0cf8aa8  __DATA_CONST,__const  _kCTFontStyleNameAttribute
+0x1e0cf8aa0  __DATA_CONST,__const  _kCTFontStyleNameKey
+0x1e0cf8a98  __DATA_CONST,__const  _kCTFontSubFamilyNameKey
+0x1e0cf8a90  __DATA_CONST,__const  _kCTFontSymbolicTrait
+0x1e0cf8a88  __DATA_CONST,__const  _kCTFontSyntheticFamilyNameKey
+0x1e0cf8a80  __DATA_CONST,__const  _kCTFontSyntheticNameKey
+0x1e0cf8a78  __DATA_CONST,__const  _kCTFontSystemAlternate
+0x1e0cf8a70  __DATA_CONST,__const  _kCTFontSystemAlternateBlack
+0x1e0cf8a68  __DATA_CONST,__const  _kCTFontSystemAlternateBlackItalic
+0x1e0cf8a60  __DATA_CONST,__const  _kCTFontSystemAlternateBold
+0x1e0cf8a58  __DATA_CONST,__const  _kCTFontSystemAlternateBoldItalic
+0x1e0cf8a50  __DATA_CONST,__const  _kCTFontSystemAlternateDemi
+0x1e0cf8a48  __DATA_CONST,__const  _kCTFontSystemAlternateDemiItalic
+0x1e0cf8a40  __DATA_CONST,__const  _kCTFontSystemAlternateHeavy
+0x1e0cf8a38  __DATA_CONST,__const  _kCTFontSystemAlternateHeavyItalic
+0x1e0cf8a30  __DATA_CONST,__const  _kCTFontSystemAlternateItalic
+0x1e0cf8a28  __DATA_CONST,__const  _kCTFontSystemAlternateLight
+0x1e0cf8a20  __DATA_CONST,__const  _kCTFontSystemAlternateLightItalic
+0x1e0cf8a18  __DATA_CONST,__const  _kCTFontSystemAlternateMedium
+0x1e0cf8a10  __DATA_CONST,__const  _kCTFontSystemAlternateMediumItalic
+0x1e0cf8a08  __DATA_CONST,__const  _kCTFontSystemAlternateThin
+0x1e0cf8a00  __DATA_CONST,__const  _kCTFontSystemAlternateThinItalic
+0x1e0cf89f8  __DATA_CONST,__const  _kCTFontSystemAlternateUltraLight
+0x1e0cf89f0  __DATA_CONST,__const  _kCTFontSystemAlternateUltraLightItalic
+0x1e0cf89e8  __DATA_CONST,__const  _kCTFontSystemCondensed
+0x1e0cf89e0  __DATA_CONST,__const  _kCTFontSystemCondensedBlack
+0x1e0cf89d8  __DATA_CONST,__const  _kCTFontSystemCondensedBold
+0x1e0cf89d0  __DATA_CONST,__const  _kCTFontSystemCondensedDemi
+0x1e0cf89c8  __DATA_CONST,__const  _kCTFontSystemCondensedHeavy
+0x1e0cf89c0  __DATA_CONST,__const  _kCTFontSystemCondensedLight
+0x1e0cf89b8  __DATA_CONST,__const  _kCTFontSystemCondensedMedium
+0x1e0cf89b0  __DATA_CONST,__const  _kCTFontSystemCondensedThin
+0x1e0cf89a8  __DATA_CONST,__const  _kCTFontSystemCondensedUltraLight
+0x1e0cf89a0  __DATA_CONST,__const  _kCTFontSystemCore
+0x1e0cf8998  __DATA_CONST,__const  _kCTFontSystemCoreBlack
+0x1e0cf8990  __DATA_CONST,__const  _kCTFontSystemCoreBlackItalic
+0x1e0cf8988  __DATA_CONST,__const  _kCTFontSystemCoreBold
+0x1e0cf8980  __DATA_CONST,__const  _kCTFontSystemCoreBoldItalic
+0x1e0cf8978  __DATA_CONST,__const  _kCTFontSystemCoreCondensed
+0x1e0cf8970  __DATA_CONST,__const  _kCTFontSystemCoreCondensedBlack
+0x1e0cf8968  __DATA_CONST,__const  _kCTFontSystemCoreCondensedBold
+0x1e0cf8960  __DATA_CONST,__const  _kCTFontSystemCoreCondensedDemi
+0x1e0cf8958  __DATA_CONST,__const  _kCTFontSystemCoreCondensedHeavy
+0x1e0cf8950  __DATA_CONST,__const  _kCTFontSystemCoreCondensedLight
+0x1e0cf8948  __DATA_CONST,__const  _kCTFontSystemCoreCondensedMedium
+0x1e0cf8940  __DATA_CONST,__const  _kCTFontSystemCoreCondensedThin
+0x1e0cf8938  __DATA_CONST,__const  _kCTFontSystemCoreCondensedUltraLight
+0x1e0cf8930  __DATA_CONST,__const  _kCTFontSystemCoreDemi
+0x1e0cf8928  __DATA_CONST,__const  _kCTFontSystemCoreDemiItalic
+0x1e0cf8920  __DATA_CONST,__const  _kCTFontSystemCoreHeavy
+0x1e0cf8918  __DATA_CONST,__const  _kCTFontSystemCoreHeavyItalic
+0x1e0cf8910  __DATA_CONST,__const  _kCTFontSystemCoreItalic
+0x1e0cf8908  __DATA_CONST,__const  _kCTFontSystemCoreLight
+0x1e0cf8900  __DATA_CONST,__const  _kCTFontSystemCoreLightItalic
+0x1e0cf88f8  __DATA_CONST,__const  _kCTFontSystemCoreMedium
+0x1e0cf88f0  __DATA_CONST,__const  _kCTFontSystemCoreMediumItalic
+0x1e0cf88e8  __DATA_CONST,__const  _kCTFontSystemCoreThin
+0x1e0cf88e0  __DATA_CONST,__const  _kCTFontSystemCoreThinItalic
+0x1e0cf88d8  __DATA_CONST,__const  _kCTFontSystemCoreUltraLight
+0x1e0cf88d0  __DATA_CONST,__const  _kCTFontSystemCoreUltraLightItalic
+0x1e0cf88c8  __DATA_CONST,__const  _kCTFontSystemPreferredSizeBold
+0x1e0cf88c0  __DATA_CONST,__const  _kCTFontSystemPreferredSizeRegular
+0x1e0cf88b8  __DATA_CONST,__const  _kCTFontTableStatusAttribute
+0x1e0cf88b0  __DATA_CONST,__const  _kCTFontTargetEnvironmentAttribute
+0x1e0cf88a8  __DATA_CONST,__const  _kCTFontTextStylePlatformAttribute
+0x1e0cf88a0  __DATA_CONST,__const  _kCTFontTextStyleTraitsAttribute
+0x1e0cf8898  __DATA_CONST,__const  _kCTFontTrackAttribute
+0x1e0cf8890  __DATA_CONST,__const  _kCTFontTrademarkNameKey
+0x1e0cf8888  __DATA_CONST,__const  _kCTFontTraitsAttribute
+0x1e0cf8880  __DATA_CONST,__const  _kCTFontUIFontDesignAlternate
+0x1e0cf8878  __DATA_CONST,__const  _kCTFontUIFontDesignCompact
+0x1e0cf8870  __DATA_CONST,__const  _kCTFontUIFontDesignCompactRounded
+0x1e0cf8868  __DATA_CONST,__const  _kCTFontUIFontDesignCompactSoft
+0x1e0cf8860  __DATA_CONST,__const  _kCTFontUIFontDesignCore
+0x1e0cf8858  __DATA_CONST,__const  _kCTFontUIFontDesignDefault
+0x1e0cf8850  __DATA_CONST,__const  _kCTFontUIFontDesignMonospaced
+0x1e0cf8848  __DATA_CONST,__const  _kCTFontUIFontDesignRounded
+0x1e0cf8840  __DATA_CONST,__const  _kCTFontUIFontDesignSerif
+0x1e0cf8838  __DATA_CONST,__const  _kCTFontUIFontDesignSoft
+0x1e0cf8830  __DATA_CONST,__const  _kCTFontUIFontDesignTrait
+0x1e0cf8828  __DATA_CONST,__const  _kCTFontURLAttribute
+0x1e0cf8820  __DATA_CONST,__const  _kCTFontUniqueNameKey
+0x1e0cf8818  __DATA_CONST,__const  _kCTFontUnscaledTrackingAttribute
+0x1e0cf8810  __DATA_CONST,__const  _kCTFontUserInstalledAttribute
+0x1e0cf8808  __DATA_CONST,__const  _kCTFontVariationAttribute
+0x1e0cf8800  __DATA_CONST,__const  _kCTFontVariationAxesAttribute
+0x1e0cf87f8  __DATA_CONST,__const  _kCTFontVariationAxisDefaultValueKey
+0x1e0cf87f0  __DATA_CONST,__const  _kCTFontVariationAxisHiddenKey
+0x1e0cf87e8  __DATA_CONST,__const  _kCTFontVariationAxisIdentifierKey
+0x1e0cf87e0  __DATA_CONST,__const  _kCTFontVariationAxisMaximumValueKey
+0x1e0cf87d8  __DATA_CONST,__const  _kCTFontVariationAxisMinimumValueKey
+0x1e0cf87d0  __DATA_CONST,__const  _kCTFontVariationAxisNameKey
+0x1e0cf87c8  __DATA_CONST,__const  _kCTFontVendorURLNameKey
+0x1e0cf87c0  __DATA_CONST,__const  _kCTFontVersionNameKey
+0x199fe1080  __TEXT,__const  _kCTFontWeightBlack
+0x199fe1070  __TEXT,__const  _kCTFontWeightBold
+0x199fe1078  __TEXT,__const  _kCTFontWeightHeavy
+0x199fe1050  __TEXT,__const  _kCTFontWeightLight
+0x199fe1060  __TEXT,__const  _kCTFontWeightMedium
+0x199fe1058  __TEXT,__const  _kCTFontWeightRegular
+0x199fe1068  __TEXT,__const  _kCTFontWeightSemibold
+0x199fe1048  __TEXT,__const  _kCTFontWeightThin
+0x1e0cf87a8  __DATA_CONST,__const  _kCTFontWeightTrait
+0x199fe1040  __TEXT,__const  _kCTFontWeightUltraLight
+0x199fe10e0  __TEXT,__const  _kCTFontWidthCompressed
+0x199fe10f0  __TEXT,__const  _kCTFontWidthCondensed
+0x199fe1110  __TEXT,__const  _kCTFontWidthExpanded
+0x199fe10d8  __TEXT,__const  _kCTFontWidthExtraCompressed
+0x199fe10e8  __TEXT,__const  _kCTFontWidthExtraCondensed
+0x199fe1118  __TEXT,__const  _kCTFontWidthExtraExpanded
+0x199fe10f8  __TEXT,__const  _kCTFontWidthSemiCondensed
+0x199fe1108  __TEXT,__const  _kCTFontWidthSemiExpanded
+0x199fe1100  __TEXT,__const  _kCTFontWidthStandard
+0x1e0cf87a0  __DATA_CONST,__const  _kCTFontWidthTrait
+0x199fe10d0  __TEXT,__const  _kCTFontWidthUltraCompressed
+0x199fe1120  __TEXT,__const  _kCTFontWidthUltraExpanded
+0x1e0cf8798  __DATA_CONST,__const  _kCTForegroundColorAttributeName
+0x1e0cf8790  __DATA_CONST,__const  _kCTForegroundColorFromContextAttributeName
+0x1e0cf8788  __DATA_CONST,__const  _kCTFrameClippingPathsAttributeName
+0x1e0cf8780  __DATA_CONST,__const  _kCTFrameForceNonRectPathAttributeName
+0x1e0cf8778  __DATA_CONST,__const  _kCTFrameHangingDescendersAttributeName
+0x1e0cf8770  __DATA_CONST,__const  _kCTFrameHangingLeadingAttributeName
+0x1e0cf8768  __DATA_CONST,__const  _kCTFrameIntegerLineMetricsAttributeName
+0x1e0cf8760  __DATA_CONST,__const  _kCTFrameMaximumNumberOfLinesAttributeName
+0x1e0cf8758  __DATA_CONST,__const  _kCTFramePathClippingPathAttributeName
+0x1e0cf8750  __DATA_CONST,__const  _kCTFramePathFillRuleAttributeName
+0x1e0cf8748  __DATA_CONST,__const  _kCTFramePathWidthAttributeName
+0x1e0cf8740  __DATA_CONST,__const  _kCTFrameProgressionAttributeName
+0x1e0cf8738  __DATA_CONST,__const  _kCTGlyphInfoAttributeName
+0x1e0cf8730  __DATA_CONST,__const  _kCTHorizontalInVerticalFormsAttributeName
+0x1e0cf8728  __DATA_CONST,__const  _kCTImposedGlyphAttributeName
+0x1e0cf8720  __DATA_CONST,__const  _kCTKernAttributeName
+0x1e0cf8718  __DATA_CONST,__const  _kCTLanguageAttributeName
+0x1e0cf8710  __DATA_CONST,__const  _kCTLigatureAttributeName
+0x1e0cf8708  __DATA_CONST,__const  _kCTPaletteAttributeName
+0x1e0cf8700  __DATA_CONST,__const  _kCTParagraphStyleAttributeName
+0x1e0cf86f8  __DATA_CONST,__const  _kCTRenderingStyleAttributeName
+0x1e0cf86f0  __DATA_CONST,__const  _kCTRubyAnnotationAttributeName
+0x1e0cf86e8  __DATA_CONST,__const  _kCTRubyAnnotationDrawBaseTextAttributeName
+0x1e0cf86e0  __DATA_CONST,__const  _kCTRubyAnnotationScaleToFitAttributeName
+0x1e0cf86d8  __DATA_CONST,__const  _kCTRubyAnnotationSizeFactorAttributeName
+0x1e0cf86d0  __DATA_CONST,__const  _kCTRunDelegateAttributeName
+0x1e0cf86c8  __DATA_CONST,__const  _kCTRunMetricsDelegateAttributeName
+0x1e0cf86c0  __DATA_CONST,__const  _kCTSecondaryScaleAttributeName
+0x1e0cf86b8  __DATA_CONST,__const  _kCTStrikethroughColorAttributeName
+0x1e0cf86b0  __DATA_CONST,__const  _kCTStrikethroughStyleAttributeName
+0x1e0cf86a8  __DATA_CONST,__const  _kCTStrokeColorAttributeName
+0x1e0cf86a0  __DATA_CONST,__const  _kCTStrokeWidthAttributeName
+0x1e0cf8698  __DATA_CONST,__const  _kCTSuperscriptAttributeName
+0x1e0cf8690  __DATA_CONST,__const  _kCTTabColumnTerminatorsAttributeName
+0x1e0cf8688  __DATA_CONST,__const  _kCTTextEffectsContextAttributeName
+0x1e0cf8680  __DATA_CONST,__const  _kCTTextEncapsulationAttributeName
+0x1e0cf8678  __DATA_CONST,__const  _kCTTextEncapsulationTraitEnclosureColor
+0x1e0cf8670  __DATA_CONST,__const  _kCTTextEncapsulationTraitLineWeight
+0x1e0cf8668  __DATA_CONST,__const  _kCTTextEncapsulationTraitPlatterSize
+0x1e0cf8660  __DATA_CONST,__const  _kCTTextEncapsulationTraitScale
+0x1e0cf8658  __DATA_CONST,__const  _kCTTextEncapsulationTraitShape
+0x1e0cf8650  __DATA_CONST,__const  _kCTTextEncapsulationTraitStyle
+0x1e0cf8648  __DATA_CONST,__const  _kCTTextScaleAttributeName
+0x1e0cf8640  __DATA_CONST,__const  _kCTTextScaleRatioAttributeName
+0x1e0cf8638  __DATA_CONST,__const  _kCTTextScaleSecondary
+0x1e0cf8630  __DATA_CONST,__const  _kCTTextScaleStaticWeightMatchingAttributeName
+0x1e0cf8628  __DATA_CONST,__const  _kCTTrackingAttributeName
+0x1e0cf8620  __DATA_CONST,__const  _kCTTrimWhitespaceBackgroundAttributeName
+0x1e0cf8618  __DATA_CONST,__const  _kCTTypesetterOptionAllowUnboundedLayout
+0x1e0cf8610  __DATA_CONST,__const  _kCTTypesetterOptionBidiLevelsProvider
+0x1e0cf8608  __DATA_CONST,__const  _kCTTypesetterOptionBidiResolutionStrategy
+0x1e0cf8600  __DATA_CONST,__const  _kCTTypesetterOptionDisableBidiProcessing
+0x1e0cf85f8  __DATA_CONST,__const  _kCTTypesetterOptionForcedEmbeddingLevel
+0x1e0cf85f0  __DATA_CONST,__const  _kCTTypesetterOptionVerticalLayout
+0x1e0cf85e8  __DATA_CONST,__const  _kCTUIFontTextStyleBody
+0x1e0cf85e0  __DATA_CONST,__const  _kCTUIFontTextStyleCallout
+0x1e0cf85d8  __DATA_CONST,__const  _kCTUIFontTextStyleCaption1
+0x1e0cf85d0  __DATA_CONST,__const  _kCTUIFontTextStyleCaption2
+0x1e0cf85c8  __DATA_CONST,__const  _kCTUIFontTextStyleCaption3
+0x1e0cf85c0  __DATA_CONST,__const  _kCTUIFontTextStyleEmphasizedBody
+0x1e0cf85b8  __DATA_CONST,__const  _kCTUIFontTextStyleEmphasizedExtraLargeTitle
+0x1e0cf85b0  __DATA_CONST,__const  _kCTUIFontTextStyleEmphasizedExtraLargeTitle2
+0x1e0cf85a8  __DATA_CONST,__const  _kCTUIFontTextStyleExtraLargeTitle
+0x1e0cf85a0  __DATA_CONST,__const  _kCTUIFontTextStyleExtraLargeTitle2
+0x1e0cf8598  __DATA_CONST,__const  _kCTUIFontTextStyleFootnote
+0x1e0cf8590  __DATA_CONST,__const  _kCTUIFontTextStyleFootnote1
+0x1e0cf8588  __DATA_CONST,__const  _kCTUIFontTextStyleFootnote2
+0x1e0cf8580  __DATA_CONST,__const  _kCTUIFontTextStyleHeadline
+0x1e0cf8578  __DATA_CONST,__const  _kCTUIFontTextStyleHeadline1
+0x1e0cf8570  __DATA_CONST,__const  _kCTUIFontTextStyleHeadline2
+0x1e0cf8568  __DATA_CONST,__const  _kCTUIFontTextStyleHeadline3
+0x1e0cf8560  __DATA_CONST,__const  _kCTUIFontTextStyleItalicBody
+0x1e0cf8558  __DATA_CONST,__const  _kCTUIFontTextStyleSection1
+0x1e0cf8550  __DATA_CONST,__const  _kCTUIFontTextStyleSection2
+0x1e0cf8548  __DATA_CONST,__const  _kCTUIFontTextStyleSection3
+0x1e0cf8540  __DATA_CONST,__const  _kCTUIFontTextStyleShortBody
+0x1e0cf8538  __DATA_CONST,__const  _kCTUIFontTextStyleShortCaption1
+0x1e0cf8530  __DATA_CONST,__const  _kCTUIFontTextStyleShortFootnote
+0x1e0cf8528  __DATA_CONST,__const  _kCTUIFontTextStyleShortHeadline
+0x1e0cf8520  __DATA_CONST,__const  _kCTUIFontTextStyleShortSubhead
+0x1e0cf8518  __DATA_CONST,__const  _kCTUIFontTextStyleSubhead
+0x1e0cf8510  __DATA_CONST,__const  _kCTUIFontTextStyleSubhead1
+0x1e0cf8508  __DATA_CONST,__const  _kCTUIFontTextStyleSubhead2
+0x1e0cf8500  __DATA_CONST,__const  _kCTUIFontTextStyleSubtitle1
+0x1e0cf84f8  __DATA_CONST,__const  _kCTUIFontTextStyleSubtitle2
+0x1e0cf84f0  __DATA_CONST,__const  _kCTUIFontTextStyleSubtitle3
+0x1e0cf84e8  __DATA_CONST,__const  _kCTUIFontTextStyleTallBody
+0x1e0cf84e0  __DATA_CONST,__const  _kCTUIFontTextStyleTitle0
+0x1e0cf84d8  __DATA_CONST,__const  _kCTUIFontTextStyleTitle1
+0x1e0cf84d0  __DATA_CONST,__const  _kCTUIFontTextStyleTitle2
+0x1e0cf84c8  __DATA_CONST,__const  _kCTUIFontTextStyleTitle3
+0x1e0cf84c0  __DATA_CONST,__const  _kCTUIFontTextStyleTitle4
+0x1e0cf84b8  __DATA_CONST,__const  _kCTUnderlineColorAttributeName
+0x1e0cf84b0  __DATA_CONST,__const  _kCTUnderlineStyleAttributeName
+0x1e0cf84a8  __DATA_CONST,__const  _kCTVerticalFormsAttributeName
+0x1e0cf84a0  __DATA_CONST,__const  _kCTWritingDirectionAttributeName
+0x1e0cf8480  __DATA_CONST,__const  _kFOComponentsKey
+0x1e0cf8468  __DATA_CONST,__const  _kFOFontMetricsKey
+0x1e0cf8460  __DATA_CONST,__const  _kFOFontNameKey
+0x1e0cf8458  __DATA_CONST,__const  _kFOFontNamesArrayKey
+0x1e0cf8440  __DATA_CONST,__const  _kFOFontVersionKey
+0x1e0cf8438  __DATA_CONST,__const  _kFOGlyphHAdvancesOverrideKey
+0x1e0cf8430  __DATA_CONST,__const  _kFOGlyphHAdvancesPerAltFontKey
+0x1e0cf83e8  __DATA_CONST,__const  _kFOLanguageKey
+0x1e0cf83d0  __DATA_CONST,__const  _kFOMatrixKey
+0x1e0cf83a8  __DATA_CONST,__const  _kFOStringKey
+0x1e0cf8398  __DATA_CONST,__const  _kFOTypeKey
+0x1e0cf8388  __DATA_CONST,__const  _kFOUnicodeCharSetKey
+0x1e0cf8378  __DATA_CONST,__const  _kFOUnicodeRangeKey
+0x1e0cf8340  __DATA_CONST,__const  _kFOcmapOverrideKey
+```
+
+## Private
+
+```
+0x199e70ee0  __TEXT,__text  TCFBase<TFont>::ClassEqual(void const*, void const*)
+0x199e70f00  __TEXT,__text  TFont::operator==(TFont const&) const
+0x199e71020  __TEXT,__text  TComponentFont::GetDesignUITrait() const
+0x199e71094  __TEXT,__text  TFont::CopyDescriptor(bool) const
+0x199e722b4  __TEXT,__text  TDescriptor::CopyAttributes() const
+0x199e72350  __TEXT,__text  _CTFontEnsureFontRef(__CTFont const*)
+0x199e723c4  __TEXT,__text  TComponentFont::GetTextStyle() const
+0x199e723cc  __TEXT,__text  TDescriptorSource::TDescriptorSource()
+0x199e724cc  __TEXT,__text  GetLocaleChangedCount()
+0x199e72520  __TEXT,__text  TDescriptorSource::IsValidTextStyle(__CFString const*)
+0x199e725e0  __TEXT,__text  TDescriptor::GetAttributes(bool) const
+0x199e72678  __TEXT,__text  FindTextStyle(unsigned long, (anonymous namespace)::THIUsageSpec&, CTFontTextStylePlatform)
+0x199e72ba4  __TEXT,__text  SetThreadSpecificData(ThreadSpecificKey, void*, void (*)(void*))
+0x199e72bf8  __TEXT,__text  TFont::SwapPerThreadLineHeightAdjustment(double)
+0x199e72c40  __TEXT,__text  GetTable()
+0x199e72d34  __TEXT,__text  TFont::SwapPerThreadSize(double)
+0x199e72da0  __TEXT,__text  TDescriptor::Hash() const
+0x199e72e64  __TEXT,__text  TBaseFont::GetGlyphCount() const
+0x199e72ecc  __TEXT,__text  TFont::Hash() const
+0x199e73124  __TEXT,__text  TCFBase<TFont>::ClassHash(void const*)
+0x199e7350c  __TEXT,__text  StackHasAvailable(unsigned long)
+0x199e73560  __TEXT,__text  TRunGlue::TRunGlue(__CTFont const*, unsigned short*, CGSize*, long, long, CGPoint*, long*)
+0x199e736b4  __TEXT,__text  TRunGlue::InitScale() const
+0x199e73724  __TEXT,__text  TRunGlue::DetermineCoverage(unsigned char*) const
+0x199e738b4  __TEXT,__text  TBaseFont::GetShapingType() const
+0x199e73950  __TEXT,__text  TFont::NeedsShapingForGlyphs(unsigned short const*, long, __CFString const*) const
+0x199e73a04  __TEXT,__text  TTenuousComponentFont::HasVariations() const
+0x199e73a10  __TEXT,__text  TFont::ShapesAnyPreferredLanguage() const
+0x199e73a94  __TEXT,__text  TRunGlue::length() const
+0x199e73ae0  __TEXT,__text  TBaseFont::GetCommonTable(unsigned int, unsigned int*) const
+0x199e742b0  __TEXT,__text  ScriptAndLangSysForPreferredLanguage()
+0x199e7436c  __TEXT,__text  TOpenTypeMorph::GetInitialScriptAndLangSys(__CFString const*, TFont const&)
+0x199e743cc  __TEXT,__text  TDescriptor::GetSystemUIFontOptions()
+0x199e74420  __TEXT,__text  TBaseFont::GetTableStatus() const
+0x199e74508  __TEXT,__text  OTL::GDEF::GDEF(__CFData const*)
+0x199e74578  __TEXT,__text  OTL::GDEF::GDEF(OTL::GDEF::Table const*, void const*)
+0x199e7482c  __TEXT,__text  ItemVariationStore::Initialize(ItemVariationStore::Table const*, void const*)
+0x199e74920  __TEXT,__text  OTL::GCommon::GCommon(OTL::GCommon::Table, TFont const&, __CFData const*, OTL::GDEF const&, unsigned int, unsigned int)
+0x199e74c54  __TEXT,__text  ScriptTagForScriptCode(UScriptCode)
+0x199e759d4  __TEXT,__text  OTL::GCommon::InitLangSysTable(OTL::GCommon::Table, TFont const&, unsigned int, unsigned int)
+0x199e761c0  __TEXT,__text  FallbackForLangSysTag(unsigned int)
+0x199e76294  __TEXT,__text  std::__1::function<bool (CFRange, unsigned short**, CGSize**, CGPoint**, long**)>::operator=(std::__1::function<bool (CFRange, unsigned short**, CGSize**, CGPoint**, long**)> const&)
+0x199e76308  __TEXT,__text  std::__1::__function::__func<CTFontTransformGlyphsWithLanguage::$_0, bool (CFRange, unsigned short**, CGSize**, CGPoint**, long**)>::__clone(std::__1::__function::__base<bool (CFRange, unsigned short**, CGSize**, CGPoint**, long**)>*) const
+0x199e7632c  __TEXT,__text  std::__1::__function::__func<CTFontTransformGlyphsWithLanguage::$_0, bool (CFRange, unsigned short**, CGSize**, CGPoint**, long**)>::destroy()
+0x199e76330  __TEXT,__text  TFont::IsSystemUIFontAndForShaping(bool*) const
+0x199e763a0  __TEXT,__text  TShapingEngine::ShapeGlyphs(TRunGlue&, ShapingType, __CFString const*, std::__1::optional<ScriptAndLangSys>*, TCharStream const*)
+0x199e7658c  __TEXT,__text  TOpenTypeMorph::TOpenTypeMorph(TRunGlue&, TCharStream const*, ScriptAndLangSys, CFRange*)
+0x199e76990  __TEXT,__text  TRunGlue::SetCharRange(CFRange)
+0x199e76a44  __TEXT,__text  std::__1::function<bool (TRunGlue::TGlyph)>::operator()(TRunGlue::TGlyph) const
+0x199e76a90  __TEXT,__text  TOpenTypeMorph::ShapeGlyphs(SyncState&)
+0x199e7816c  __TEXT,__text  TRunGlue::GlyphRangeByTrimming(std::__1::function<bool (TRunGlue::TGlyph)>) const
+0x199e78224  __TEXT,__text  std::__1::__function::__func<TOpenTypeMorph::ShapeGlyphs(SyncState&)::$_0, bool (TRunGlue::TGlyph)>::operator()(TRunGlue::TGlyph&&)
+0x199e78250  __TEXT,__text  TRunGlue::TGlyph::IsIgnorable() const
+0x199e782a4  __TEXT,__text  std::__1::__function::__func<TOpenTypeMorph::ShapeGlyphs(SyncState&)::$_0, bool (TRunGlue::TGlyph)>::destroy()
+0x199e782a8  __TEXT,__text  TRunGlue::IsDeleted(long) const
+0x199e78350  __TEXT,__text  TFont::GetFeatureTableSubstitutions(OTL::GCommon::Table) const
+0x199e784a8  __TEXT,__text  OTL::FeatureBuffer::FeatureBuffer(std::initializer_list<unsigned int>)
+0x199e7854c  __TEXT,__text  OTL::GSUB::ApplySubstLookupRecords(OTL::LookupSubtable const*, OTL::SubstLookupRecord const*, unsigned int, TGlyphIterator&, long, long*, unsigned long, unsigned short*, OTL::SubstitutionState*, unsigned long) const
+0x199e78918  __TEXT,__text  void std::__1::__introsort<std::__1::_ClassicAlgPolicy, OTL::GlyphLookups::SortLookups()::{lambda(OTL::GlyphLookups::LookupRanges const&, OTL::GlyphLookups::LookupRanges const&)#1}&, OTL::GlyphLookups::LookupRanges*, false>(OTL::GlyphLookups::LookupRanges*, OTL::GlyphLookups::LookupRanges*, OTL::Gly
+0x199e7992c  __TEXT,__text  std::__1::__function::__func<OTL::GSUB::ApplyLookups(TRunGlue&, int, OTL::GlyphLookups&, SyncState&, void (*)(void*, CFRange, long), void*) const::{lambda(CFRange, long)#1}, void (CFRange, long)>::__clone(std::__1::__function::__base<void (CFRange, long)>*) const
+0x199e79950  __TEXT,__text  std::__1::__hash_const_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned short, OTL::FeatureTable const*>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<unsigned short, OTL::FeatureTable const*>, std::__1::__unordered_map_hasher<unsigned short, std::__1::pair<unsigned
+0x199e79950  __TEXT,__text  std::__1::__hash_const_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned short, OTL::FeatureTable const*>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<unsigned short, OTL::FeatureTable const*>, std::__1::__unordered_map_hasher<unsigned short, std::__1::pair<unsigned
+0x199e799f8  __TEXT,__text  void std::__1::__introsort<std::__1::_ClassicAlgPolicy, std::__1::__less<void, void>&, std::__1::pair<unsigned short, unsigned short>*, false>(std::__1::pair<unsigned short, unsigned short>*, std::__1::pair<unsigned short, unsigned short>*, std::__1::__less<void, void>&, std::__1::iterator_traits<st
+0x199e7aa48  __TEXT,__text  void OTL::GlyphLookups::SetLookupInRange<false>(std::__1::pair<unsigned short, unsigned short>, CFRange, bool)
+0x199e7ac20  __TEXT,__text  OTL::CoverageBitmap::CoversBitmap(unsigned char const*, unsigned long) const
+0x199e7ad04  __TEXT,__text  OTL::CoverageBitmap::Covers(unsigned short) const
+0x199e7ad5c  __TEXT,__text  EmptyFeatureTableSubstitutions()
+0x199e7adb8  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, OTL::Lookup>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, OTL::Lookup>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, OTL::Lookup>, std::__1::ha
+0x199e7adb8  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, OTL::Lookup>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, OTL::Lookup>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, OTL::Lookup>, std::__1::ha
+0x199e7adb8  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, OTL::Lookup>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, OTL::Lookup>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, OTL::Lookup>, std::__1::ha
+0x199e7ae64  __TEXT,__text  TGlyphIterator::NextCoveredBy(OTL::Lookup const&)
+0x199e7aef8  __TEXT,__text  TGlyphIterator::CurrentGlyphIsIgnored(OTL::Lookup const*) const
+0x199e7afb4  __TEXT,__text  OTL::Lookup::CoversGlyph(unsigned short) const
+0x199e7afec  __TEXT,__text  OTL::ClassDefTable const* OTL::TableFromOffset<OTL::ClassDefTable, BigEndianScalar<unsigned short> >(void const*, void const*, OTL::OffsetTo<OTL::ClassDefTable, BigEndianScalar<unsigned short> > const&)
+0x199e7b0a0  __TEXT,__text  OTL::ClassDefTable::ClassOf(unsigned short) const
+0x199e7b1b0  __TEXT,__text  TGlyphIterator::Next(long)
+0x199e7b278  __TEXT,__text  std::__1::__function::__func<OTL::GSUB::ApplyLookups(TRunGlue&, int, OTL::GlyphLookups&, SyncState&, void (*)(void*, CFRange, long), void*) const::{lambda(CFRange, long)#1}, void (CFRange, long)>::destroy()
+0x199e7b27c  __TEXT,__text  OTL::Lookup const* TBaseFont::NthLookup<OTL::GSUB>(OTL::GSUB const&, unsigned int) const
+0x199e7b3d8  __TEXT,__text  OTL::GSUB::ApplyLookupSubtable(OTL::Lookup const&, unsigned int, OTL::LookupSubtable const*, TGlyphIterator&, unsigned int, unsigned int, unsigned short*, OTL::SubstitutionState*, unsigned long) const
+0x199e7b66c  __TEXT,__text  OTL::Coverage::SearchFmt1Linear(unsigned short) const
+0x199e7b6f0  __TEXT,__text  OTL::LigatureSet::LigatureOffsets(void const*) const
+0x199e7b6f0  __TEXT,__text  OTL::LigatureSet::LigatureOffsets(void const*) const
+0x199e7b6f0  __TEXT,__text  OTL::LigatureSet::LigatureOffsets(void const*) const
+0x199e7b6f0  __TEXT,__text  OTL::LigatureSet::LigatureOffsets(void const*) const
+0x199e7b6f0  __TEXT,__text  OTL::LigatureSet::LigatureOffsets(void const*) const
+0x199e7b770  __TEXT,__text  TGlyphIterator::NextContext(long)
+0x199e7b834  __TEXT,__text  OTL::GSUB::ApplyChainContextSubstFormat2(OTL::LookupSubtable const*, TGlyphIterator&, unsigned short*, OTL::SubstitutionState*, unsigned long) const
+0x199e7bda0  __TEXT,__text  ChainContextSubstFormat2::ChainSubClassSetOffsets(void const*) const
+0x199e7be0c  __TEXT,__text  TGlyphIterator::PrevContext(long)
+0x199e7bed4  __TEXT,__text  std::__1::__function::__func<OTL::GSUB::ApplySubstLookupRecords(OTL::LookupSubtable const*, OTL::SubstLookupRecord const*, unsigned int, TGlyphIterator&, long, long*, unsigned long, unsigned short*, OTL::SubstitutionState*, unsigned long) const::$_0, void (CFRange, long)>::destroy()
+0x199e7bed8  __TEXT,__text  std::__1::__function::__func<OTL::GSUB::ApplySubstLookupRecords(OTL::LookupSubtable const*, OTL::SubstLookupRecord const*, unsigned int, TGlyphIterator&, long, long*, unsigned long, unsigned short*, OTL::SubstitutionState*, unsigned long) const::$_0, void (CFRange, long)>::__clone(std::__1::__functi
+0x199e7befc  __TEXT,__text  OTL::GSUB::ApplyLookups(TRunGlue&, int, OTL::GlyphLookups&, SyncState&, void (*)(void*, CFRange, long), void*) const
+0x199e7c420  __TEXT,__text  OTL::GSUB::ApplySingleSubst(OTL::LookupSubtable const*, TGlyphIterator&, unsigned int, OTL::SubstitutionState*) const
+0x199e7c540  __TEXT,__text  TFont::GetUnsummedAdvancesForGlyphs(unsigned short const*, double*, AdvanceStride, long, CTFontOrientation, std::__1::optional<unsigned int>) const
+0x199e7c7dc  __TEXT,__text  TDescriptorSource::EnsureSplicedFontStash()
+0x199e7c880  __TEXT,__text  _ExuberatedGroupForPreferredLanguages(bool*, __CFString const**)
+0x199e7c994  __TEXT,__text  AsMatchingOptions(unsigned int)
+0x199e7ca0c  __TEXT,__text  TDescriptorSource::CopySplicedDescriptorForName(__CFString const*, __CFString const*, __CFString const*, __CFNumber const*, __CFNumber const*, CTFontLegibilityWeight, __CFBoolean const*, __CFNumber const*, __CFString const*, __CFNumber const*, __CFNumber const*, __CFNumber const*, __CFNumber const*,
+0x199e7caf8  __TEXT,__text  TDescriptorSource::CopySpliceFontForName(__CFString const*, __CFString const*, __CFNumber const*, __CFNumber const*, CTFontLegibilityWeight, __CFBoolean const*, __CFNumber const*, __CFString const*, __CFNumber const*, __CFNumber const*, __CFNumber const*, __CFNumber const*, unsigned int, __CFString 
+0x199e7d0a0  __TEXT,__text  TDescriptor::TDescriptor(__CFDictionary const*, unsigned int)
+0x199e7d108  __TEXT,__text  TDescriptor::InitBaseFont(unsigned long, double)
+0x199e7d674  __TEXT,__text  CurrentLocaleIsExuberated()
+0x199e7d6e4  __TEXT,__text  TDescriptor::CreateMatchingDescriptorInternal(__CFSet const*, unsigned long) const
+0x199e7e1c8  __TEXT,__text  TTenuousComponentFont::HasTable(unsigned int) const
+0x199e7e2b0  __TEXT,__text  TTenuousComponentFont::CopyTable(unsigned int) const
+0x199e7e3c8  __TEXT,__text  TTenuousComponentFont::IsAppleColorEmoji() const
+0x199e7e434  __TEXT,__text  TFont::GetEffectiveMatrix() const
+0x199e7e504  __TEXT,__text  TOpenTypePositioningEngine::TOpenTypePositioningEngine(TRunGlue&, TCharStream const*, ScriptAndLangSys, CFRange*)
+0x199e7e774  __TEXT,__text  TCFBase<TDescriptor>::Allocate(unsigned long)
+0x199e7e7ec  __TEXT,__text  TCFRef<__CTFont const*>::Retain(void const*)
+0x199e7e7ec  __TEXT,__text  TCFRef<__CTFont const*>::Retain(void const*)
+0x199e7e7ec  __TEXT,__text  TCFRef<__CTFont const*>::Retain(void const*)
+0x199e7e7ec  __TEXT,__text  TCFRef<__CTFont const*>::Retain(void const*)
+0x199e7e7ec  __TEXT,__text  TCFRef<__CTFont const*>::Retain(void const*)
+0x199e7e7ec  __TEXT,__text  TCFRef<__CTFont const*>::Retain(void const*)
+0x199e7e7ec  __TEXT,__text  TCFRef<__CTFont const*>::Retain(void const*)
+0x199e7e7ec  __TEXT,__text  TCFRef<__CTFont const*>::Retain(void const*)
+0x199e7e7ec  __TEXT,__text  TCFRef<__CTFont const*>::Retain(void const*)
+0x199e7e7ec  __TEXT,__text  TCFRef<__CTFont const*>::Retain(void const*)
+0x199e7e7ec  __TEXT,__text  TCFRef<__CTFont const*>::Retain(void const*)
+0x199e7e7ec  __TEXT,__text  TCFRef<__CTFont const*>::Retain(void const*)
+0x199e7e7ec  __TEXT,__text  TCFRef<__CTFont const*>::Retain(void const*)
+0x199e7e7ec  __TEXT,__text  TCFRef<__CTFont const*>::Retain(void const*)
+0x199e7e82c  __TEXT,__text  TRunGlue::SetAdvance(long, CGSize)
+0x199e7e8b0  __TEXT,__text  TRunGlue::GetAdvance(long) const
+0x199e7e9c4  __TEXT,__text  _CTFontDrawGlyphsWithAdvancesInternal
+0x199e7f188  __TEXT,__text  TFont::ensureSVGTableObject() const
+0x199e7f264  __TEXT,__text  (anonymous namespace)::DebugColorFor(TFont const&)
+0x199e7f340  __TEXT,__text  (anonymous namespace)::DrawGlyphsConfiguration::ApplyDebugFillColor(CGContext*) const
+0x199e7f38c  __TEXT,__text  EnumerateOverlappingGlyphs(CGContext*, TFont const&, unsigned short const*, long, int, void  block_pointer(CFRange, bool))
+0x199e7f6a0  __TEXT,__text  TBaseFont::GetMergeTable() const
+0x199e7f7ec  __TEXT,__text  ___CTFontDrawGlyphsWithAdvancesInternal_block_invoke
+0x199e7f890  __TEXT,__text  TTenuousComponentFont::CopyGraphicsFont() const
+0x199e7f8f8  __TEXT,__text  OTL::MergeTable::MergeClassForGlyph(unsigned short) const
+0x199e7f96c  __TEXT,__text  TTenuousComponentFont::GetGraphicsFont() const
+0x199e7f9bc  __TEXT,__text  TFont::GetUnscaledTrackAmount() const
+0x199e7fb38  __TEXT,__text  TComponentFont::GetFontMatrix() const
+0x199e7fc44  __TEXT,__text  TComponentFont::IsSystemUI() const
+0x199e7fc50  __TEXT,__text  TBaseFont::GetInitializedGraphicsFont() const
+0x199e7fce8  __TEXT,__text  TFont::GetAdvancesForGlyphsWithStyleFromCG(unsigned int, unsigned short const*, double*, AdvanceStride, long, CGAffineTransform const&, bool, double, bool) const
+0x199e7ffbc  __TEXT,__text  TTenuousComponentFont::InitializeVariationGraphicsFont() const
+0x199e800c8  __TEXT,__text  TFont::GetScaleFactor() const
+0x199e80130  __TEXT,__text  void TRunGlue::SetGlyphID<true>(long, unsigned short)
+0x199e8031c  __TEXT,__text  std::__1::__function::__func<OTL::GSUB::ApplyLookups(TRunGlue&, int, OTL::GlyphLookups&, SyncState&, void (*)(void*, CFRange, long), void*) const::{lambda(CFRange, long)#1}, void (CFRange, long)>::operator()(CFRange&&, long&&)
+0x199e80394  __TEXT,__text  std::__1::function<void (CFRange, long)>::operator()(CFRange, long) const
+0x199e803e8  __TEXT,__text  std::__1::__function::__func<OTL::GSUB::ApplySubstLookupRecords(OTL::LookupSubtable const*, OTL::SubstLookupRecord const*, unsigned int, TGlyphIterator&, long, long*, unsigned long, unsigned short*, OTL::SubstitutionState*, unsigned long) const::$_0, void (CFRange, long)>::operator()(CFRange&&, long
+0x199e80570  __TEXT,__text  OTL::GlyphLookups::Substituted(CFRange, long)
+0x199e80604  __TEXT,__text  TKerningEngine::PositionGlyphs(TRunGlue&, ShapingType, std::__1::optional<ScriptAndLangSys>, __CFString const*, TCharStream const*, unsigned long)
+0x199e80868  __TEXT,__text  TOpenTypePositioningEngine::SetScript(UScriptCode)
+0x199e80904  __TEXT,__text  TOpenTypePositioningEngine::PositionRuns(SyncState&, KerningStatus&)
+0x199e81930  __TEXT,__text  OTL::GPOS::ApplyPairPosAccelerated(OTL::Lookup const&, unsigned int, TGlyphIterator&) const
+0x199e8263c  __TEXT,__text  OTL::Coverage::SearchFmt1Binary(unsigned short) const
+0x199e82728  __TEXT,__text  OTL::Lookup const* TBaseFont::NthLookup<OTL::GPOS>(OTL::GPOS const&, unsigned int) const
+0x199e82884  __TEXT,__text  PairPosFormat1::PairSetOffsets(void const*) const
+0x199e828f0  __TEXT,__text  PairSet::ValuePair(unsigned short, unsigned short, unsigned short, void const*) const
+0x199e829bc  __TEXT,__text  OTL::Coverage::SearchFmt2Binary(unsigned short) const
+0x199e82ad8  __TEXT,__text  OTL::GPOS::ApplyLookupAt(OTL::Lookup const&, unsigned int, TGlyphIterator&, unsigned long) const
+0x199e82c34  __TEXT,__text  OTL::GPOS::ApplyPairPos(OTL::LookupSubtable const*, TGlyphIterator&, unsigned int) const
+0x199e82e84  __TEXT,__text  OTL::GPOS::ApplyLookupSubtable(OTL::Lookup const&, unsigned int, OTL::LookupSubtable const*, TGlyphIterator&, OTL::Coverage const&, unsigned int, unsigned long) const
+0x199e8303c  __TEXT,__text  ZeroMarkWidths(TRunGlue&, void*, bool (*)(void*, TRunGlue::TGlyph))
+0x199e83260  __TEXT,__text  ZeroMarkWidths(TRunGlue&, OTL::GDEF const&)
+0x199e83474  __TEXT,__text  ZeroCombiningMarkWidths(TRunGlue&)::$_0::__invoke(void*, TRunGlue::TGlyph)
+0x199e834a0  __TEXT,__text  TRunGlue::GetGlyphProps(long) const
+0x199e8353c  __TEXT,__text  TRunGlue::FilterJoiners()
+0x199e83678  __TEXT,__text  TTenuousComponentFont::IsLastResort() const
+0x199e836e4  __TEXT,__text  TBaseFont::GetCachedSpaceAndJoinerGlyphs(TcmapTable const*) const
+0x199e8384c  __TEXT,__text  OTL::GSUB::ApplyLigatureSubst(OTL::LookupSubtable const*, TGlyphIterator&, unsigned int, unsigned short*, OTL::SubstitutionState*) const
+0x199e83b94  __TEXT,__text  OTL::MultipleSubstFormat1::SequenceOffsets(void const*) const
+0x199e83b94  __TEXT,__text  OTL::MultipleSubstFormat1::SequenceOffsets(void const*) const
+0x199e83b94  __TEXT,__text  OTL::MultipleSubstFormat1::SequenceOffsets(void const*) const
+0x199e83b94  __TEXT,__text  OTL::MultipleSubstFormat1::SequenceOffsets(void const*) const
+0x199e83b94  __TEXT,__text  OTL::MultipleSubstFormat1::SequenceOffsets(void const*) const
+0x199e83c00  __TEXT,__text  OTL::Ligature const* OTL::TableFromOffset<OTL::Ligature, BigEndianScalar<unsigned short> >(void const*, void const*, OTL::OffsetTo<OTL::Ligature, BigEndianScalar<unsigned short> > const&)
+0x199e83c74  __TEXT,__text  TRunGlue::UpdateAdvancesIfNeeded()
+0x199e83d68  __TEXT,__text  DetermineLanguageSpecificParameters()
+0x199e83f64  __TEXT,__text  setOpticalSizeComponent(__CFString const*, (anonymous namespace)::TFontInfo const&, double, double, double, double, unsigned int, TLeading, unsigned int, __CFString const*, TCFMutableDictionary&, __CFString const*, __CFString const*, bool)
+0x199e841ec  __TEXT,__text  setNameWithGrade(__CFString const*, unsigned int, TCFMutableDictionary&)
+0x199e8427c  __TEXT,__text  FontServicesLibraryCore(char**)
+0x199e8434c  __TEXT,__text  CopyAttributeForSystemFont(__CFString const*, __CFString const*)
+0x199e84408  __TEXT,__text  AddVariationInfoWithGrade(TCFMutableDictionary&, __CFString const*, int)
+0x199e84484  __TEXT,__text  AddVariationInfo(TCFMutableDictionary&, __CFString const*)
+0x199e845a8  __TEXT,__text  getFSFontIsOverriddenSystemFontNameSymbolLoc()
+0x199e84658  __TEXT,__text  CopyVariationAttributeForSystemFont(__CFString const*)
+0x199e8484c  __TEXT,__text  TSplicedFontDict::ComponentHasOpticalSizeAxis() const
+0x199e84888  __TEXT,__text  TCFBase<TDescriptor>::ClassHash(void const*)
+0x199e848e4  __TEXT,__text  TCFMutableDictionary::SetPairs(__CFDictionary const*) const
+0x199e84908  __TEXT,__text  SetValuesToDictionaryFromDictionary(__CFDictionary*, __CFDictionary const*)::$_0::__invoke(void const*, void const*, void*)
+0x199e84928  __TEXT,__text  GetSymbolicTraitsFromTraits(__CFDictionary const*)
+0x199e849a0  __TEXT,__text  TCFRef<CTFontDescriptor::cf_type> TCFBase_NEW<CTFontDescriptor, __CFDictionary const*&, unsigned int&>(__CFDictionary const*&, unsigned int&)
+0x199e849a0  __TEXT,__text  TCFRef<CTFontDescriptor::cf_type> TCFBase_NEW<CTFontDescriptor, __CFDictionary const*&, unsigned int&>(__CFDictionary const*&, unsigned int&)
+0x199e84a7c  __TEXT,__text  TDescriptorSource::CreateDescriptorForTextStyle(__CFString const*, __CFString const*, __CFString const*, __CFDictionary const*) const
+0x199e84e8c  __TEXT,__text  TDescriptorSource::MapTextStyle(__CFString const*)
+0x199e84ec8  __TEXT,__text  SetDescriptorInfoForUIType((anonymous namespace)::TUIFontDescriptorInfo&, CTFontUIFontType)
+0x199e850b4  __TEXT,__text  TDescriptorSource::FindFontNameForTextStyle(__CFString const*, __CFDictionary const*, bool*, __CFString const**, __CFString const**)
+0x199e852c8  __TEXT,__text  TDescriptorSource::MapTextStyleSizeCategory(__CFString const*, unsigned int, CTFontTextStylePlatform, double*, double*, double*, __CFString const*)
+0x199e85410  __TEXT,__text  TDescriptorSource::IsVariableSizeTextStyleName(__CFString const*)
+0x199e85468  __TEXT,__text  ExuberatedGroupForTallPseudolanguageIfEnabled()
+0x199e854bc  __TEXT,__text  LanguageAwareLineSpacingOverrideRatio((anonymous namespace)::THIUsageSpec const*, __CFString const*)
+0x199e85628  __TEXT,__text  TDescriptor::CreateMatchingDescriptor(__CFSet const*, double, unsigned long) const
+0x199e85acc  __TEXT,__text  addPosingWithWeightAndSlant(unsigned int, TWeight, TSlant, TLeading, __CFString const*, __CFString const*, TCFMutableDictionary&, __CFString const*, void const*)
+0x199e85bbc  __TEXT,__text  CreateNormalizedPreferredLanguage(LanguageIdentifierNormalizationUsage)
+0x199e85c18  __TEXT,__text  LanguageNormalizedForPresetFallbacks(__CFString const*)
+0x199e85c2c  __TEXT,__text  CopyPreferredLanguage()
+0x199e85d44  __TEXT,__text  LanguageIdentifierByNormalizing(__CFString const*, LanguageIdentifierNormalizationUsage)
+0x199e867f8  __TEXT,__text  GetLocalizedTrimSetKeyForNormalizedLanguage(__CFString const*, unsigned int*)
+0x199e869ec  __TEXT,__text  addMetrics(TWeight, TSlant, TLeading, __CFString const*, void const*, TCFMutableDictionary&)
+0x199e86b04  __TEXT,__text  GetLocalizedTrimSetKey(__CFString const*, unsigned int*)
+0x199e86b58  __TEXT,__text  CommonStyleNameForIndex(unsigned long)
+0x199e86b78  __TEXT,__text  makeStyleName(TWeight, TSlant, __CFString const*)
+0x199e86c5c  __TEXT,__text  addNames(__CFString const*, __CFString const*, __CFString const*, TCFMutableDictionary&)
+0x199e86ec8  __TEXT,__text  weightString(TWeight)
+0x199e86ef0  __TEXT,__text  MakeSpliceDescriptor(__CFString const*, unsigned long, __CFString const*, __CFString const*, __CFNumber const*, __CFNumber const*, unsigned int, CTFontTextStylePlatform, unsigned int, __CFNumber const*, __CFNumber const*, CTFontLegibilityWeight, __CFBoolean const*, void const*, __CFString const*)
+0x199e8a138  __TEXT,__text  ValueRecord::operator()(TRunGlue::TGlyph)
+0x199e8a3dc  __TEXT,__text  PairPosFormat2::ValuePair(unsigned short, unsigned short, void const*) const
+0x199e8a470  __TEXT,__text  TCFRef<CTFontDescriptor::cf_type> TCFBase_NEW<CTFontDescriptor, __CFString const*&, double&, unsigned int&>(__CFString const*&, double&, unsigned int&)
+0x199e8a4ec  __TEXT,__text  TBaseFont::IsAppleFont() const
+0x199e8a5ec  __TEXT,__text  TDescriptorSource::CreateDescriptorForUIType(CTFontUIFontType, double, __CFString const*) const
+0x199e8a7c8  __TEXT,__text  TDescriptor::TDescriptor(__CFString const*, double, unsigned int)
+0x199e8a900  __TEXT,__text  TBaseFont::GetFontMatrix() const
+0x199e8a908  __TEXT,__text  TBaseFont::HasTable(unsigned int) const
+0x199e8a9ec  __TEXT,__text  TBaseFont::IsAppleColorEmoji() const
+0x199e8aa28  __TEXT,__text  TBaseFont::IsAppleColorEmojiUI() const
+0x199e8aa64  __TEXT,__text  TBaseFont::GetOpticalLeading(double, double) const
+0x199e8aa6c  __TEXT,__text  CopyNormalizedSystemFontPostScriptName(__CFString const*)
+0x199e8ab70  __TEXT,__text  CopyLowercasedString(__CFString const*)
+0x199e8ac20  __TEXT,__text  TPerThreadLRUCache<TRequestCacheNode, (ThreadSpecificKey)3, 16ul>::TPerThreadLRUCache()
+0x199e8ad34  __TEXT,__text  TDescriptorSource::CopyFontDescriptorPerPostScriptName(__CFString const*, unsigned long, unsigned long, __CFString const*, __CFNumber const*, __CFNumber const*, CTFontLegibilityWeight, __CFBoolean const*) const
+0x199e8b484  __TEXT,__text  TDescriptorSource::HasMissedRequest(void const*, unsigned long, CFComparisonResult (*)(void const*, void const*, void*))
+0x199e8b524  __TEXT,__text  GetMissedRequests()
+0x199e8b5fc  __TEXT,__text  TDescriptorSource::CopyDescriptorUncached(__CFURL const*, __CFString const*, __CFString const*, bool) const
+0x199e8b8dc  __TEXT,__text  TRequestCache::CopyResultForRequest(void const*, unsigned long, TCFRef<void const*>&, CFComparisonResult (*)(void const*, void const*, void*))
+0x199e8ba98  __TEXT,__text  TDescriptorSource::CopyFontDescriptorWithOptions(TCFRef<__CTFontDescriptor const*>&&, unsigned long, __CFNumber const*)
+0x199e8bc30  __TEXT,__text  invocation function for block in VariableSizeTextStylesSet()
+0x199e8bc78  __TEXT,__text  GetExuberatedGroupForLanguage(__CFString const*, __CFString const**)
+0x199e8bee0  __TEXT,__text  LanguageAwareLineSpacingOverrideRatio((anonymous namespace)::THIUsageSpec const*, __CFString const*)::$_0::__invoke(void*)
+0x199e8bf24  __TEXT,__text  TDescriptorSource::TDescriptorSource()::$_0::__invoke(void*)
+0x199e8bf28  __TEXT,__text  CTFontGetPlistFromGSFontCache(__CFString const*, bool)
+0x199e8bf98  __TEXT,__text  TCFBase<TDescriptor>::GetTypeID()::{lambda(void*)#1}::__invoke(void*)
+0x199e8bfbc  __TEXT,__text  _CTFontDescriptorEnableBridging(unsigned long)
+0x199e8c008  __TEXT,__text  MaximizedLocaleIdentifier(__CFString const*)
+0x199e8c148  __TEXT,__text  TDescriptorSource::GetCache()::{lambda(void*)#1}::__invoke(void*)
+0x199e8c1c0  __TEXT,__text  GetLocaleChangedCount()::$_0::__invoke(void*)
+0x199e8c230  __TEXT,__text  EnsureGSFontInitialized()
+0x199e8c264  __TEXT,__text  EnsureGSFontInitialized()::$_0::__invoke(void*)
+0x199e8c284  __TEXT,__text  TCFBase<TDescriptor>::CreateTypeID()
+0x199e8c338  __TEXT,__text  invocation function for block in DetermineTypeStylesSpec()
+0x199e8c414  __TEXT,__text  TDescriptor::GetSystemUIFontOptions()::$_0::__invoke(void*)
+0x199e8c47c  __TEXT,__text  invocation function for block in IsLinkedOnOrAfter(SDKVersion)
+0x199e8c508  __TEXT,__text  invocation function for block in CTFontGetPlistFromGSFontCache(__CFString const*, bool)
+0x199e8c530  __TEXT,__text  ExuberatedGroupForTallPseudolanguageIfEnabled()::$_0::__invoke(void*)
+0x199e8c570  __TEXT,__text  _LargestExuberatedGroupForLanguages(__CFArray const*, __CFString const**, bool, bool*)
+0x199e8c748  __TEXT,__text  CopyPreferredLanguageCode()
+0x199e8c7dc  __TEXT,__text  invocation function for block in getFSFontIsOverriddenSystemFontNameSymbolLoc()
+0x199e8c8a8  __TEXT,__text  invocation function for block in GetCTFontInfoDictionary()
+0x199e8c8d4  __TEXT,__text  SFFontNameForWidth(TLocalTrait, __CFNumber const*, __CFString const**)
+0x199e8c988  __TEXT,__text  TDescriptorSource::TextStyleForUIFontName(__CFString const*)
+0x199e8c9d8  __TEXT,__text  TCFNumber::TCFNumber<double>(double)
+0x199e8cab0  __TEXT,__text  TTenuousComponentFont::CopyName(__CFString const*) const
+0x199e8ce44  __TEXT,__text  TBaseFont::CopyNativeFont() const
+0x199e8d128  __TEXT,__text  -[_CTSplicedFontKey dealloc]
+0x199e8d184  __TEXT,__text  TComponentFont::Equal(TBaseFont const&) const
+0x199e8d258  __TEXT,__text  invocation function for block in TDescriptorSource::IsVariableSizeTextStyleInstance(__CFString const*, __CFString const**, __CFString const**)
+0x199e8d33c  __TEXT,__text  GetFontAttributeID(__CFString const*)
+0x199e8d3a0  __TEXT,__text  TDescriptor::Equal(TDescriptor const*) const
+0x199e8d52c  __TEXT,__text  TCFMutableDictionary::TCFMutableDictionary(__CFDictionary const*)
+0x199e8d588  __TEXT,__text  TCFBase<TDescriptor>::ClassEqual(void const*, void const*)
+0x199e8d5b0  __TEXT,__text  TDescriptorSource::GetTextStyleSize(__CFString const*, void const*, CTFontTextStylePlatform, double*, double*, bool, __CFString const*)
+0x199e8d8ac  __TEXT,__text  TDescriptorSource::IsVariableSizeTextStyleInstance(__CFString const*, __CFString const**, __CFString const**)
+0x199e8d9c4  __TEXT,__text  TPurgeableCache::RetainedValueForKey(void const*)
+0x199e8da20  __TEXT,__text  TComponentFont::IsTextStyleFont() const
+0x199e8da2c  __TEXT,__text  TCFBase<TDescriptor>::ClassDestruct(void const*)
+0x199e8da7c  __TEXT,__text  TFont::GetEffectiveSize() const
+0x199e8db40  __TEXT,__text  StrikeMetrics::StrikeMetrics(StrikeMetrics const&)
+0x199e8dbbc  __TEXT,__text  TBaseFont::CreateDescriptorAttributes() const
+0x199e8dd74  __TEXT,__text  TBaseFont::CopyAttributeInternal(void const*) const
+0x199e8ddd8  __TEXT,__text  TTenuousComponentFont::CopyAttribute(unsigned long) const
+0x199e8e53c  __TEXT,__text  TASCIIDataCache::TASCIIDataCache(TFont const*)
+0x199e8e608  __TEXT,__text  TTenuousComponentFont::CopyVariation() const
+0x199e8e7c8  __TEXT,__text  TTenuousComponentFont::CopyOpticalSizeAxis() const
+0x199e8e7dc  __TEXT,__text  TComponentFont::GetComponentAttribute(__CFString const*) const
+0x199e8e834  __TEXT,__text  TTenuousComponentFont::GetType() const
+0x199e8e840  __TEXT,__text  TDescriptor::CopyAttributeExternal(__CFString const*) const
+0x199e8e95c  __TEXT,__text  TComponentFont::IsOpticalFont() const
+0x199e8e968  __TEXT,__text  TDescriptor::~TDescriptor()
+0x199e8e96c  __TEXT,__text  TBaseFont::CopyOpticalSizeAxis() const
+0x199e8ea7c  __TEXT,__text  TSplicedFont::GetType() const
+0x199e8ea88  __TEXT,__text  TSplicedFont::GetOpticalSizeComponent(double) const
+0x199e8eb9c  __TEXT,__text  TTenuousComponentFont::CopyVariationAxes() const
+0x199e8ec48  __TEXT,__text  TDescriptor::~TDescriptor()
+0x199e8ed2c  __TEXT,__text  TDescriptor::IsSystemUIFont() const
+0x199e8ed90  __TEXT,__text  TSplicedFont::IsOpticalFont() const
+0x199e8eda0  __TEXT,__text  SoftLinked__FSFontIsOverriddenSystemFontName(__CFString const*)
+0x199e8ee30  __TEXT,__text  ClampValueToRangeOfAxis(double, __CFDictionary const*)
+0x199e8eec4  __TEXT,__text  TFont::InitDescriptor(__CTFontDescriptor const*)
+0x199e8ef30  __TEXT,__text  CopyAttributeToExtras(TDescriptor const*, __CFDictionary*, __CFString const*, AcceptedType)
+0x199e8f058  __TEXT,__text  TFont::TFont(__CTFontDescriptor const*, double, CGAffineTransform const*, __CTFontDescriptor const*)
+0x199e8f1d4  __TEXT,__text  TFont::SetExtras(__CTFontDescriptor const*, __CFArray const*)
+0x199e8f72c  __TEXT,__text  TFont::SetFlags(unsigned int, __CTFontDescriptor const*)
+0x199e8fb5c  __TEXT,__text  TCFRef<CTFont::cf_type> TCFBase_NEW<CTFont, __CTFontDescriptor const*, double&, CGAffineTransform const*&, __CTFontDescriptor const*&>(__CTFontDescriptor const*&&, double&, CGAffineTransform const*&, __CTFontDescriptor const*&)
+0x199e8fbe0  __TEXT,__text  TCFRef<CTFontDescriptor::cf_type> TCFBase_NEW<CTFontDescriptor, TBaseFont const*&, unsigned int&>(TBaseFont const*&, unsigned int&)
+0x199e8fbe0  __TEXT,__text  TCFRef<CTFontDescriptor::cf_type> TCFBase_NEW<CTFontDescriptor, TBaseFont const*&, unsigned int&>(TBaseFont const*&, unsigned int&)
+0x199e8fc80  __TEXT,__text  TCFBase<TFont>::Allocate(unsigned long)
+0x199e8fcf8  __TEXT,__text  TFont::InitSize(double, __CTFontDescriptor const*)
+0x199e8fdb4  __TEXT,__text  TFont::InitBaseFont(TCFRef<__CTFontDescriptor const*> const&)
+0x199e8fecc  __TEXT,__text  TFont::SetOpticalSize(__CTFontDescriptor const*)
+0x199e9079c  __TEXT,__text  TFont::AddFontSpecificFeatureSettings()
+0x199e90830  __TEXT,__text  TFont::InitMatrix(CGAffineTransform const*, __CTFontDescriptor const*)
+0x199e909d0  __TEXT,__text  TableFlagForIdentifier(unsigned int)
+0x199e90c70  __TEXT,__text  StrikeMetrics::ApplyTransform(CGAffineTransform)
+0x199e90d90  __TEXT,__text  TFont::InitStrikeMetrics() const
+0x199e90e78  __TEXT,__text  TBaseFont::GetStrikeMetrics(double, CGAffineTransform const*, bool) const
+0x199e90ff4  __TEXT,__text  TFont::GetStrikeMetrics(bool) const
+0x199e910d8  __TEXT,__text  TSplicedFontDict::IsSystemUISplice() const
+0x199e91170  __TEXT,__text  CreateSplicedFontFromStash(TCFRef<__CFDictionary const*>&&, __CFURL const*, bool)
+0x199e911f8  __TEXT,__text  TSplicedFontDict::IsInvisibleSplice() const
+0x199e91260  __TEXT,__text  TSplicedFontDict::FindFontName(unsigned int, __CFString const*) const
+0x199e913b8  __TEXT,__text  TSplicedFont::Create(__CFURL const*, adopted_t const&, __CFDictionary const*)
+0x199e91560  __TEXT,__text  TSplicedFont::CreateCascadeList(TSplicedFontDict const&, unsigned int)
+0x199e91e2c  __TEXT,__text  TSplicedFontDict::ComponentHasVariations() const
+0x199e91e68  __TEXT,__text  TSplicedFontDict::IsTextStyle() const
+0x199e91ea4  __TEXT,__text  FourCharCodeFromString(__CFString const*)
+0x199e91f40  __TEXT,__text  TBaseFont::TBaseFont(CGFont*)
+0x199e92050  __TEXT,__text  TBaseFont::Init(CGFont*)
+0x199e921d8  __TEXT,__text  TTenuousComponentFont::InitWithOpticalSize(double)
+0x199e923b0  __TEXT,__text  CopyVariationWithValue(__CFDictionary const*, __CFNumber const*, double)
+0x199e924b8  __TEXT,__text  IsSystemFontPostScriptName(__CFString const*)
+0x199e9254c  __TEXT,__text  TTenuousComponentFont::CopyDefaultVariation() const
+0x199e925dc  __TEXT,__text  TSplicedFont::SynthesiseURL(__CFString const*)
+0x199e92628  __TEXT,__text  IsInMemoryFontURL(__CFURL const*)
+0x199e926c0  __TEXT,__text  TBaseFont::TBaseFont(__CFURL const*, __CFString const*, is_unregistered_t const&)
+0x199e927d0  __TEXT,__text  TSplicedFont::EvalComponents(__CFArray const*)
+0x199e92ae8  __TEXT,__text  TSplicedFontDict::GetTraitsValuesFromMetrics(bool&, bool&, bool&, double&, double&, double&, unsigned int&) const
+0x199e92de4  __TEXT,__text  IsSystemFontPath(__CFString const*)
+0x199e92ec4  __TEXT,__text  IsPingFangPostScriptName(__CFString const*)
+0x199e92f50  __TEXT,__text  TBaseFont::DetermineFontFlags(unsigned int) const
+0x199e93284  __TEXT,__text  TTenuousComponentFont::Substantiate() const
+0x199e9336c  __TEXT,__text  TBaseFont::InitAttributesDict() const
+0x199e933e4  __TEXT,__text  TComponentFont::GetSymbolicTraitsInternal() const
+0x199e93450  __TEXT,__text  TCGFontCache::CopyFont(__CFURL const*, __CFString const*, __CFString const*)
+0x199e93528  __TEXT,__text  TCGFontCache::GetCache()
+0x199e935d4  __TEXT,__text  (anonymous namespace)::TSingleAttrDescriptor::TSingleAttrDescriptor(__CTFontDescriptor const*, void const*, void const*, __CTFontDescriptor const*)
+0x199e93658  __TEXT,__text  (anonymous namespace)::TSingleAttrDescriptorCache::TSingleAttrDescriptorCache()
+0x199e9382c  __TEXT,__text  TDescriptor::TDescriptor(TDescriptor const&, TBaseFont const*, __CFDictionary const*)
+0x199e938c0  __TEXT,__text  TTenuousComponentFont::IsAppleFont() const
+0x199e938c8  __TEXT,__text  TTenuousComponentFont::IsAppleColorEmojiUI() const
+0x199e93934  __TEXT,__text  TComponentFont::GetOpticalLeading(double, double) const
+0x199e939ec  __TEXT,__text  CompareValueWithValueInAxisForKey(double, __CFDictionary const*, __CFString const*, double*)
+0x199e93a5c  __TEXT,__text  TComponentFont::GetStrikeMetricsForSystemFont(bool, StrikeMetrics&, double) const
+0x199e93ac0  __TEXT,__text  TBaseFont::GetStrikeMetricsForSystemFont(bool, StrikeMetrics&, double) const
+0x199e93c38  __TEXT,__text  CopyStrikeMetricsDictionaryRepresentationForSystemFont(__CFString const*)
+0x199e93c84  __TEXT,__text  TComponentFont::AdjustLineMetrics(bool, StrikeMetrics&, double) const
+0x199e941e8  __TEXT,__text  TComponentFont::HasExuberatedLineHeight() const
+0x199e94284  __TEXT,__text  TBaseFont::InitFontMetrics(double) const
+0x199e94578  __TEXT,__text  TTenuousComponentFont::HasExuberatedLineHeight() const
+0x199e945c8  __TEXT,__text  TCGFontCache::CopyFontWithOpticalSizeVariation(CGFont*, __CFURL const*, __CFDictionary const*)
+0x199e94768  __TEXT,__text  TTenuousComponentFont::CopyFontURL() const
+0x199e947cc  __TEXT,__text  CreateFontWithFontURL(__CFURL const*, __CFString const*, __CFString const*)
+0x199e9498c  __TEXT,__text  CreateFontWithVariation(CGFont*, __CFDictionary const*)
+0x199e94c08  __TEXT,__text  TComponentFont::GetGlyphsForCharacterRange(CFRange, unsigned short*) const
+0x199e94d2c  __TEXT,__text  TComponentFont::GetCharacterOverride(__CFString const**) const
+0x199e94e6c  __TEXT,__text  TFont::InitASCIIDataCache() const
+0x199e94edc  __TEXT,__text  TBaseFont::GetGlyphsForCharacterRange(CFRange, unsigned short*) const
+0x199e95264  __TEXT,__text  TcmapTable::MapRange(CFRange, unsigned short*) const
+0x199e952cc  __TEXT,__text  TTenuousComponentFont::IsMicrosoftKorean() const
+0x199e95338  __TEXT,__text  TComponentFont::GetUnscaledTrackAmount(__CFDictionary const*, double, bool, unsigned int) const
+0x199e95404  __TEXT,__text  TBaseFont::GetUnscaledTrackAmount(__CFDictionary const*, double, bool, unsigned int) const
+0x199e9559c  __TEXT,__text  TBaseFont::CopyTable(unsigned int) const
+0x199e9565c  __TEXT,__text  TBaseFont::IsCommonTableFlag(unsigned int)
+0x199e956c4  __TEXT,__text  TAATTrakTable::UnscaledTrackAmountForSize(__CFData const*, double, bool, double)
+0x199e95bdc  __TEXT,__text  TBaseFont::GetUnscaledTrackAmount(__CFDictionary const*, double, bool, unsigned int) const::$_0::__invoke(void*)
+0x199e95c70  __TEXT,__text  -[_CTSplicedFontKey isEqual:]
+0x199e95e48  __TEXT,__text  CreateTraitValues(bool, double, bool, double, bool, double, unsigned int, __CFString const*)
+0x199e96060  __TEXT,__text  TTenuousComponentFont::CopyTraitsInternal() const
+0x199e962bc  __TEXT,__text  TComponentFont::CreateTraitsValuesPerFontInfo(MetadataFlag*) const
+0x199e9644c  __TEXT,__text  TCFNumber::TCFNumber<unsigned int>(unsigned int)
+0x199e964b0  __TEXT,__text  void TBaseFont::SetAttributeInternal<TCFRef<__CFSet const*> >(TCFRef<__CFSet const*>, void const*) const
+0x199e964b0  __TEXT,__text  void TBaseFont::SetAttributeInternal<TCFRef<__CFSet const*> >(TCFRef<__CFSet const*>, void const*) const
+0x199e964b0  __TEXT,__text  void TBaseFont::SetAttributeInternal<TCFRef<__CFSet const*> >(TCFRef<__CFSet const*>, void const*) const
+0x199e964b0  __TEXT,__text  void TBaseFont::SetAttributeInternal<TCFRef<__CFSet const*> >(TCFRef<__CFSet const*>, void const*) const
+0x199e964b0  __TEXT,__text  void TBaseFont::SetAttributeInternal<TCFRef<__CFSet const*> >(TCFRef<__CFSet const*>, void const*) const
+0x199e964b0  __TEXT,__text  void TBaseFont::SetAttributeInternal<TCFRef<__CFSet const*> >(TCFRef<__CFSet const*>, void const*) const
+0x199e9653c  __TEXT,__text  TBaseFont::CreateTraitsValues() const
+0x199e965f4  __TEXT,__text  TBaseFont::CreateTraitsValuesFromTraitsDictionary(__CFDictionary const*)
+0x199e9672c  __TEXT,__text  TFont::CompareExtras(TFont const&) const
+0x199e9699c  __TEXT,__text  GetWeightForLocalTrait(TLocalTrait)
+0x199e969c4  __TEXT,__text  -[_CTGlyphStorage initWithCount:]
+0x199e96a10  __TEXT,__text  GetTenuousComponentFont(TBaseFont const*)
+0x199e96af0  __TEXT,__text  TTenuousComponentFont::TTenuousComponentFont(TTenuousComponentFont const&, double)
+0x199e96b8c  __TEXT,__text  TComponentFont::TComponentFont(TComponentFont const&)
+0x199e96cb4  __TEXT,__text  TComponentFont::GetSplicedDict() const
+0x199e96cc0  __TEXT,__text  TFont::HasDerivedOpticalSize() const
+0x199e96d30  __TEXT,__text  TCFRef<__CFDictionary const*>::CompareAndSwap(void const*, adopted_t const&, void const*, std::__1::memory_order)
+0x199e97008  __TEXT,__text  TAttributes::ApplyAttributeHandlers(void const*, void const*, void*)::$_0::__invoke(void*)
+0x199e97250  __TEXT,__text  CompositionLanguageWithPreferences(__CFArray const*)
+0x199e974fc  __TEXT,__text  +[_CTNativeGlyphStorage newWithCount:capacity:]
+0x199e97644  __TEXT,__text  TCFBase<TRun>::GetTypeID()::{lambda(void*)#1}::__invoke(void*)
+0x199e97648  __TEXT,__text  TCFBase<TRun>::CreateTypeID()
+0x199e976fc  __TEXT,__text  invocation function for block in GetDefaultWritingDirection()
+0x199e97830  __TEXT,__text  TTypesetterAttrString::TTypesetterAttrString(__CFAttributedString const*, __CFDictionary const*, bool)
+0x199e978ec  __TEXT,__text  TCharStreamCFAttrString::TCharStreamCFAttrString(__CFAttributedString const*)
+0x199e97988  __TEXT,__text  TCharStreamCFString::SetString(TCFRef<__CFString const*>&&)
+0x199e979d0  __TEXT,__text  TTypesetter::TTypesetter(std::__1::shared_ptr<TCharStream const> const&, __CFDictionary const*)
+0x199e97a70  __TEXT,__text  ShouldCheckForKnownUrduSequences()
+0x199e97bd8  __TEXT,__text  TAttributes::ApplyTextTransform(__CTFont const*)
+0x199e97c94  __TEXT,__text  TAttributes::ApplyFont(__CFDictionary const*, __CTFont const*, TCharStream const*, CFRange, void const**)
+0x199e983ec  __TEXT,__text  TAttributes::TAttributes(__CFDictionary const*, TCharStream const*, CFRange, bool)
+0x199e985f0  __TEXT,__text  TAttributes::ApplyAttributeHandlers(void const*, void const*, void*)
+0x199e98688  __TEXT,__text  TAttributes::HandleFontAttribute(void const*, TAttributes::AttributeHandlerContext*)
+0x199e986d4  __TEXT,__text  TAttributes::SetLayoutAttributesForFont()
+0x199e98738  __TEXT,__text  TGlyphEncoder::EncodeChars(CFRange, TAttributes const&, TGlyphEncoder::Fallbacks)
+0x199e993f0  __TEXT,__text  TASCIIEncoder::Encode(bool)
+0x199e99600  __TEXT,__text  TRun::TRun(CFRange, _CTGlyphStorage*, TAttributes const&)
+0x199e996cc  __TEXT,__text  IsLanguageIdentifierSuitableForKnownUrduSequences(__CFString const*)
+0x199e99904  __TEXT,__text  GetDefaultWritingDirection()
+0x199e99990  __TEXT,__text  TStorageRange::TStorageRange(_CTGlyphStorage*, CFRange)
+0x199e99aa0  __TEXT,__text  TCFBase<TRun>::Allocate(unsigned long)
+0x199e99b18  __TEXT,__text  -[_CTNativeGlyphStorage retain]
+0x199e99b70  __TEXT,__text  TAttributes::~TAttributes()
+0x199e99cd0  __TEXT,__text  TTypesetterAttrString::Initialize(__CFAttributedString const*, bool)
+0x199e9a964  __TEXT,__text  TAttributes::GetCompositionLanguage() const
+0x199e9a9bc  __TEXT,__text  TAttributes::operator=(TAttributes const&)
+0x199e9aaec  __TEXT,__text  GetSystemLibraryFontsPath()::$_0::__invoke(void*)
+0x199e9ab78  __TEXT,__text  GetSystemRootPath()::$_0::__invoke(void*)
+0x199e9ac08  __TEXT,__text  GetSystemLibraryPrivateFontsPath()::$_0::__invoke(void*)
+0x199e9ac94  __TEXT,__text  TCFBase<TFont>::GetTypeID()::{lambda(void*)#1}::__invoke(void*)
+0x199e9acb8  __TEXT,__text  TCFBase<TFont>::CreateTypeID()
+0x199e9ad6c  __TEXT,__text  _CTFontEnableBridging(unsigned long)
+0x199e9adb8  __TEXT,__text  invocation function for block in IsSystemFontPostScriptName(__CFString const*)
+0x199e9ae14  __TEXT,__text  TPerThreadLRUCache<(anonymous namespace)::TSingleAttrDescriptor, (ThreadSpecificKey)2, 12ul>::DestroyCache(void*)
+0x199e9aeb4  __TEXT,__text  TBaseFont::TBaseFont(__CFURL const*, __CFString const*, __CFString const*)
+0x199e9afdc  __TEXT,__text  CopyLowercasedString(__CFString const*)::$_0::__invoke(void*)
+0x199e9b010  __TEXT,__text  GetFontAttributeID(__CFString const*)::$_0::__invoke(void*)
+0x199e9b410  __TEXT,__text  TBaseFont::IsOpticalFont() const
+0x199e9b418  __TEXT,__text  TBaseFont::CopyName(__CFString const*) const
+0x199e9b760  __TEXT,__text  TBaseFont::IsTextStyleFont() const
+0x199e9b768  __TEXT,__text  TDescriptorSource::AddCachedDescriptor(__CFString const*, unsigned long, __CTFontDescriptor const*) const
+0x199e9b854  __TEXT,__text  TRequestCache::AddResultForRequest(void const*, void const*, unsigned long, CFComparisonResult (*)(void const*, void const*, void*))
+0x199e9b95c  __TEXT,__text  TRequestCacheNode::operator=(TRequestCacheNode const&)
+0x199e9b9bc  __TEXT,__text  TCFRef<CTFontDescriptor::cf_type> TCFBase_NEW<CTFontDescriptor, TBaseFont const*>(TBaseFont const*&&)
+0x199e9ba48  __TEXT,__text  TBaseFont::CopyFontURL() const
+0x199e9ba78  __TEXT,__text  TDescriptorSource::ShouldSubstituteInvisibleFontName(__CFString const*)
+0x199e9bb28  __TEXT,__text  TPerThreadLRUCache<TRequestCacheNode, (ThreadSpecificKey)3, 16ul>::DestroyCache(void*)
+0x199e9bbb8  __TEXT,__text  GetInternalKey()::$_0::__invoke(void*)
+0x199e9c05c  __TEXT,__text  TDescriptorSource::SubstituteFontNameForInvisibleFontName(__CFString const*)
+0x199e9c098  __TEXT,__text  void TBaseFont::SetAttributeInternal<__CFDictionary const*>(__CFDictionary const*, void const*) const
+0x199e9c098  __TEXT,__text  void TBaseFont::SetAttributeInternal<__CFDictionary const*>(__CFDictionary const*, void const*) const
+0x199e9c098  __TEXT,__text  void TBaseFont::SetAttributeInternal<__CFDictionary const*>(__CFDictionary const*, void const*) const
+0x199e9c098  __TEXT,__text  void TBaseFont::SetAttributeInternal<__CFDictionary const*>(__CFDictionary const*, void const*) const
+0x199e9c11c  __TEXT,__text  invocation function for block in IsHVFCompatibleApp()
+0x199e9c234  __TEXT,__text  TCFRef<CTFontDescriptor::cf_type> TCFBase_NEW<CTFontDescriptor, CTFontDescriptor*, __CFDictionary const*&>(CTFontDescriptor*&&, __CFDictionary const*&)
+0x199e9c234  __TEXT,__text  TCFRef<CTFontDescriptor::cf_type> TCFBase_NEW<CTFontDescriptor, CTFontDescriptor*, __CFDictionary const*&>(CTFontDescriptor*&&, __CFDictionary const*&)
+0x199e9c234  __TEXT,__text  TCFRef<CTFontDescriptor::cf_type> TCFBase_NEW<CTFontDescriptor, CTFontDescriptor*, __CFDictionary const*&>(CTFontDescriptor*&&, __CFDictionary const*&)
+0x199e9c2a4  __TEXT,__text  TDescriptor::TDescriptor(TDescriptor const&, __CFDictionary const*)
+0x199e9c95c  __TEXT,__text  GetExcessiveLineHeightCharacterSet()::$_0::__invoke(void*)
+0x199e9c988  __TEXT,__text  CreateCharacterSetWithCompressedBitmapRepresentation(__CFData const*)
+0x199e9cb70  __TEXT,__text  TDescriptorSource::CopyPredefinedCharacterSet(__CFString const*, bool)
+0x199e9cbec  __TEXT,__text  invocation function for block in GetCTCharacterSetsDictionary(bool)
+0x199e9cc78  __TEXT,__text  TDescriptorSource::CreateDescriptorForUIFontDesign(__CFString const*, __CFDictionary const*, unsigned long, __CFString const*, __CFNumber const*, __CFNumber const*, CTFontLegibilityWeight, __CFBoolean const*) const
+0x199e9d3f0  __TEXT,__text  TDescriptorSource::GetNameForSystemFontOfWeight(__CFString const*, double, bool, bool, __CFString const**)
+0x199e9d6e0  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<TRun const*, long>, std::__1::__unordered_map_hasher<TRun const*, std::__1::pair<TRun const* const, long>, std::__1::hash<TRun const*>, std::__1::equal_to<TRun const*> >, std::__1::__unordered_map_equal<TRun const*, std::__1::pair<TRun const* c
+0x199e9d6e0  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<TRun const*, long>, std::__1::__unordered_map_hasher<TRun const*, std::__1::pair<TRun const* const, long>, std::__1::hash<TRun const*>, std::__1::equal_to<TRun const*> >, std::__1::__unordered_map_equal<TRun const*, std::__1::pair<TRun const* c
+0x199e9d6e0  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<TRun const*, long>, std::__1::__unordered_map_hasher<TRun const*, std::__1::pair<TRun const* const, long>, std::__1::hash<TRun const*>, std::__1::equal_to<TRun const*> >, std::__1::__unordered_map_equal<TRun const*, std::__1::pair<TRun const* c
+0x199e9d6e0  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<TRun const*, long>, std::__1::__unordered_map_hasher<TRun const*, std::__1::pair<TRun const* const, long>, std::__1::hash<TRun const*>, std::__1::equal_to<TRun const*> >, std::__1::__unordered_map_equal<TRun const*, std::__1::pair<TRun const* c
+0x199e9d6e0  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<TRun const*, long>, std::__1::__unordered_map_hasher<TRun const*, std::__1::pair<TRun const* const, long>, std::__1::hash<TRun const*>, std::__1::equal_to<TRun const*> >, std::__1::__unordered_map_equal<TRun const*, std::__1::pair<TRun const* c
+0x199e9d6e0  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<TRun const*, long>, std::__1::__unordered_map_hasher<TRun const*, std::__1::pair<TRun const* const, long>, std::__1::hash<TRun const*>, std::__1::equal_to<TRun const*> >, std::__1::__unordered_map_equal<TRun const*, std::__1::pair<TRun const* c
+0x199e9d8e8  __TEXT,__text  InitShapingGlyphsOnQueue(__CTFont const*, NSObject objcproto17OS_dispatch_queue*)::$_0::__invoke(void*)
+0x199e9d928  __TEXT,__text  FallbackForLangSysTag(unsigned int)::$_0::__invoke(void*)
+0x199e9db84  __TEXT,__text  TFont::InitShapingGlyphs() const
+0x199e9e34c  __TEXT,__text  TBaseFont::AccessAttributes(std::__1::function<void (__CFDictionary*)>) const
+0x199e9e3dc  __TEXT,__text  std::__1::__function::__func<TFont::InitShapingGlyphs() const::$_0, void (__CFDictionary*)>::operator()(__CFDictionary*&&)
+0x199e9e484  __TEXT,__text  std::__1::__function::__func<TFont::InitShapingGlyphs() const::$_0, void (__CFDictionary*)>::destroy_deallocate()
+0x199e9e4a8  __TEXT,__text  std::__1::__function::__func<TFont::InitShapingGlyphs() const::$_0, void (__CFDictionary*)>::~__func()
+0x199e9e4bc  __TEXT,__text  std::__1::__function::__func<TFont::InitShapingGlyphs() const::$_5, void (__CFDictionary*)>::operator()(__CFDictionary*&&)
+0x199e9e5ec  __TEXT,__text  GetShapingGlyphsAndLangSysListForFont(__CFString const*, TCFRef<__CFData const*>*)
+0x199e9e688  __TEXT,__text  std::__1::__function::__func<TFont::InitShapingGlyphs() const::$_5, void (__CFDictionary*)>::destroy_deallocate()
+0x199e9e6ac  __TEXT,__text  GetPossiblyCompressedDataForAttribute(__CFString const*, __CFString const*)
+0x199e9e788  __TEXT,__text  std::__1::__function::__func<TFont::InitShapingGlyphs() const::$_5, void (__CFDictionary*)>::~__func()
+0x199e9e79c  __TEXT,__text  IsAnyLangSysTagInPreferredLanguages(std::__1::span<unsigned int const, 18446744073709551615ul>)
+0x199e9e850  __TEXT,__text  OTL::GSUB::ApplyChainContextSubstFormat3(OTL::LookupSubtable const*, TGlyphIterator&, unsigned short*, OTL::SubstitutionState*, unsigned long) const
+0x199e9eb2c  __TEXT,__text  ConvertToMorxSync(TBaseFont const*)::{lambda(void*)#1}::__invoke(void*)
+0x199e9eb5c  __TEXT,__text  ScriptAndLangSysFromCanonicalLanguage(__CFString const*)
+0x199e9ec3c  __TEXT,__text  ItemVariationStore::ValueForDeltaSet(unsigned short, unsigned short, std::__1::variant<std::__1::span<short const, 18446744073709551615ul>, std::__1::span<double const, 18446744073709551615ul> >) const
+0x199e9f040  __TEXT,__text  ItemVariationStore::VariationRegionList::ComputeScalar(unsigned long, std::__1::span<short const, 18446744073709551615ul>) const
+0x199e9f0d4  __TEXT,__text  ItemVariationStore::ItemVariationData::NthDeltaSetRowSpan(unsigned long, bool*, unsigned long*, unsigned long*) const
+0x199e9f184  __TEXT,__text  ItemVariationStore::RegionAxisCoordinates::ComputeScalar(short) const
+0x199e9f220  __TEXT,__text  TcmapTable::Map(unsigned short const*, unsigned short*, long, bool) const
+0x199e9f5cc  __TEXT,__text  ScriptAndLangSysFromCanonicalLanguageInternal(__CFString const*)
+0x199ea2c34  __TEXT,__text  bool TGlyphIterator::MatchCoverSequenceContext<(MatchDirection)0>(long, unsigned int, OTL::OffsetTo<OTL::Coverage::Table, BigEndianScalar<unsigned short> > const*, void const*, void const*, long*)
+0x199ea2d50  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, OTL::Lookup>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, OTL::Lookup>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unordered_map_equal<unsigned int, std::__1
+0x199ea2d50  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, OTL::Lookup>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, OTL::Lookup>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unordered_map_equal<unsigned int, std::__1
+0x199ea2d50  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, OTL::Lookup>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, OTL::Lookup>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unordered_map_equal<unsigned int, std::__1
+0x199ea2d50  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, OTL::Lookup>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, OTL::Lookup>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unordered_map_equal<unsigned int, std::__1
+0x199ea2d50  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, OTL::Lookup>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, OTL::Lookup>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unordered_map_equal<unsigned int, std::__1
+0x199ea2e24  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, OTL::Lookup>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, OTL::Lookup>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unordered_map_equal<unsigned int, std::__1
+0x199ea2e24  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, OTL::Lookup>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, OTL::Lookup>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unordered_map_equal<unsigned int, std::__1
+0x199ea2e24  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, OTL::Lookup>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, OTL::Lookup>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unordered_map_equal<unsigned int, std::__1
+0x199ea2e24  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, OTL::Lookup>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, OTL::Lookup>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unordered_map_equal<unsigned int, std::__1
+0x199ea2e24  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, OTL::Lookup>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, OTL::Lookup>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unordered_map_equal<unsigned int, std::__1
+0x199ea2e24  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, OTL::Lookup>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, OTL::Lookup>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unordered_map_equal<unsigned int, std::__1
+0x199ea2f60  __TEXT,__text  TBaseFont::InitGlyphCount(CGFont*) const
+0x199ea2fa0  __TEXT,__text  TBaseFont::InitAnnexTables() const
+0x199ea31d8  __TEXT,__text  ConvertToMorxSync(TBaseFont const*)
+0x199ea34b4  __TEXT,__text  OTL::Coverage::Coverage(OTL::Coverage::Table const*, void const*, bool)
+0x199ea35c0  __TEXT,__text  ConvertSettingsToOTFeatures(OTL::FeatureList const&, TFontFeatureSettingList const&, bool, OTL::FeatureBuffer*, bool (*)(unsigned int), KerningStatus*, FeatureDefaults)
+0x199ea3ed4  __TEXT,__text  FindMasterFeatureMapEntry(unsigned int)
+0x199ea3f80  __TEXT,__text  OTL::FeatureList::StripMissingFeaturesFrom(unsigned int*) const
+0x199ea4068  __TEXT,__text  std::__1::__hash_table<std::__1::tuple<unsigned short, unsigned short, unsigned short>, unsigned long (*)(std::__1::tuple<unsigned short, unsigned short, unsigned short> const&), std::__1::equal_to<std::__1::tuple<unsigned short, unsigned short, unsigned short> >, std::__1::allocator<std::__1::tuple
+0x199ea4068  __TEXT,__text  std::__1::__hash_table<std::__1::tuple<unsigned short, unsigned short, unsigned short>, unsigned long (*)(std::__1::tuple<unsigned short, unsigned short, unsigned short> const&), std::__1::equal_to<std::__1::tuple<unsigned short, unsigned short, unsigned short> >, std::__1::allocator<std::__1::tuple
+0x199ea4068  __TEXT,__text  std::__1::__hash_table<std::__1::tuple<unsigned short, unsigned short, unsigned short>, unsigned long (*)(std::__1::tuple<unsigned short, unsigned short, unsigned short> const&), std::__1::equal_to<std::__1::tuple<unsigned short, unsigned short, unsigned short> >, std::__1::allocator<std::__1::tuple
+0x199ea4068  __TEXT,__text  std::__1::__hash_table<std::__1::tuple<unsigned short, unsigned short, unsigned short>, unsigned long (*)(std::__1::tuple<unsigned short, unsigned short, unsigned short> const&), std::__1::equal_to<std::__1::tuple<unsigned short, unsigned short, unsigned short> >, std::__1::allocator<std::__1::tuple
+0x199ea4068  __TEXT,__text  std::__1::__hash_table<std::__1::tuple<unsigned short, unsigned short, unsigned short>, unsigned long (*)(std::__1::tuple<unsigned short, unsigned short, unsigned short> const&), std::__1::equal_to<std::__1::tuple<unsigned short, unsigned short, unsigned short> >, std::__1::allocator<std::__1::tuple
+0x199ea4068  __TEXT,__text  std::__1::__hash_table<std::__1::tuple<unsigned short, unsigned short, unsigned short>, unsigned long (*)(std::__1::tuple<unsigned short, unsigned short, unsigned short> const&), std::__1::equal_to<std::__1::tuple<unsigned short, unsigned short, unsigned short> >, std::__1::allocator<std::__1::tuple
+0x199ea4068  __TEXT,__text  std::__1::__hash_table<std::__1::tuple<unsigned short, unsigned short, unsigned short>, unsigned long (*)(std::__1::tuple<unsigned short, unsigned short, unsigned short> const&), std::__1::equal_to<std::__1::tuple<unsigned short, unsigned short, unsigned short> >, std::__1::allocator<std::__1::tuple
+0x199ea4068  __TEXT,__text  std::__1::__hash_table<std::__1::tuple<unsigned short, unsigned short, unsigned short>, unsigned long (*)(std::__1::tuple<unsigned short, unsigned short, unsigned short> const&), std::__1::equal_to<std::__1::tuple<unsigned short, unsigned short, unsigned short> >, std::__1::allocator<std::__1::tuple
+0x199ea4068  __TEXT,__text  std::__1::__hash_table<std::__1::tuple<unsigned short, unsigned short, unsigned short>, unsigned long (*)(std::__1::tuple<unsigned short, unsigned short, unsigned short> const&), std::__1::equal_to<std::__1::tuple<unsigned short, unsigned short, unsigned short> >, std::__1::allocator<std::__1::tuple
+0x199ea4068  __TEXT,__text  std::__1::__hash_table<std::__1::tuple<unsigned short, unsigned short, unsigned short>, unsigned long (*)(std::__1::tuple<unsigned short, unsigned short, unsigned short> const&), std::__1::equal_to<std::__1::tuple<unsigned short, unsigned short, unsigned short> >, std::__1::allocator<std::__1::tuple
+0x199ea40b4  __TEXT,__text  OTL::GCommon::GetFeatures(OTL::FeatureList*) const
+0x199ea41a4  __TEXT,__text  OTL::GCommon::FeatureTableSubstitutionsForFont(OTL::GCommon::Header const*, void const*, TFont const&)
+0x199ea42a0  __TEXT,__text  OTL::GCommon::GetFeatureVariationsTable(OTL::GCommon::Header const*, void const*)
+0x199ea436c  __TEXT,__text  OTL::LookupWithCoverage::GetCoverage(void const*) const
+0x199ea43c8  __TEXT,__text  OTL::Coverage::Init()
+0x199ea45d4  __TEXT,__text  OTL::Coverage::Iterate(std::__1::function<bool (unsigned short, unsigned short, unsigned short)>) const
+0x199ea4698  __TEXT,__text  OTL::Lookup::InitCoverageUnion() const
+0x199ea4808  __TEXT,__text  OTL::Lookup::Lookup(OTL::Lookup&&)
+0x199ea4888  __TEXT,__text  OTL::Lookup::~Lookup()
+0x199ea48f0  __TEXT,__text  HashFilterCombiner<IdentityHashFilter, MultiplicativeHashFilter>::AddRange(unsigned int, unsigned int)
+0x199ea4970  __TEXT,__text  OTL::Lookup::Lookup<OTL::GSUB>(OTL::GSUB const&, OTL::LookupTable const*)
+0x199ea4bec  __TEXT,__text  OTL::GSUB::GetCoverageForSubtable(OTL::LookupTable const*, unsigned int, OTL::LookupSubtable const*) const
+0x199ea4d34  __TEXT,__text  std::__1::function<bool (unsigned int, OTL::FeatureTable const*, bool&)>::operator()(unsigned int, OTL::FeatureTable const*, bool&) const
+0x199ea4d84  __TEXT,__text  OTL::GCommon::IterateFeatureTables(OTL::GCommon::Header const*, OTL::FeatureListTable const*, void const*, std::__1::function<bool (unsigned int, OTL::FeatureTable const*, bool&)>)
+0x199ea4f7c  __TEXT,__text  OTL::Lookup::Lookup<OTL::GPOS>(OTL::GPOS const&, OTL::LookupTable const*)
+0x199ea51f8  __TEXT,__text  std::__1::__function::__func<TOpenTypePositioningEngine::PositionRuns(SyncState&, KerningStatus&)::$_0, bool (unsigned int, OTL::FeatureTable const*, bool&)>::destroy()
+0x199ea51fc  __TEXT,__text  OTL::GPOS::GetCoverageForSubtable(OTL::LookupTable const*, unsigned int, OTL::LookupSubtable const*) const
+0x199ea5330  __TEXT,__text  std::__1::function<bool (unsigned short, unsigned short, unsigned short)>::operator()(unsigned short, unsigned short, unsigned short) const
+0x199ea538c  __TEXT,__text  OTL::Coverage::IterateFmt2(std::__1::function<bool (unsigned short, unsigned short, unsigned short)>) const
+0x199ea5474  __TEXT,__text  OTL::CoverageBitmap::Reset(unsigned short, unsigned short)
+0x199ea550c  __TEXT,__text  std::__1::__function::__func<OTL::Lookup::InitCoverageUnion() const::{lambda(unsigned short, unsigned short, unsigned short)#1}, bool (unsigned short, unsigned short, unsigned short)>::__clone(std::__1::__function::__base<bool (unsigned short, unsigned short, unsigned short)>*) const
+0x199ea5534  __TEXT,__text  std::__1::__function::__func<OTL::Lookup::InitCoverageUnion() const::{lambda(unsigned short, unsigned short, unsigned short)#1}, bool (unsigned short, unsigned short, unsigned short)>::destroy()
+0x199ea5538  __TEXT,__text  std::__1::__function::__func<OTL::Lookup::InitCoverageUnion() const::{lambda(unsigned short, unsigned short, unsigned short)#1}, bool (unsigned short, unsigned short, unsigned short)>::operator()(unsigned short&&, unsigned short&&, unsigned short&&)
+0x199ea55c0  __TEXT,__text  OTL::Coverage::IterateFmt1(std::__1::function<bool (unsigned short, unsigned short, unsigned short)>) const
+0x199ea5678  __TEXT,__text  OTL::ClassDefTable::Iterate(std::__1::function<void (unsigned short, unsigned short, unsigned short)>) const
+0x199ea580c  __TEXT,__text  OTL::GDEF::IterateGlyphsWithClassMask(unsigned int, std::__1::function<void (unsigned short)>) const
+0x199ea5928  __TEXT,__text  OTL::Lookup::PopulateIgnoreSet(OTL::GDEF const&)
+0x199ea5a10  __TEXT,__text  OTL::GDEF::IterateGlyphsIgnoredByLookupTable(OTL::LookupTable const*, std::__1::function<void (unsigned short)>) const
+0x199ea5b5c  __TEXT,__text  std::__1::__function::__func<OTL::GDEF::IterateGlyphsWithClassMask(unsigned int, std::__1::function<void (unsigned short)>) const::{lambda(unsigned short, unsigned short, unsigned short)#1}, void (unsigned short, unsigned short, unsigned short)>::~__func()
+0x199ea5bb4  __TEXT,__text  std::__1::__function::__func<OTL::GDEF::IterateGlyphsWithClassMask(unsigned int, std::__1::function<void (unsigned short)>) const::{lambda(unsigned short, unsigned short, unsigned short)#1}, void (unsigned short, unsigned short, unsigned short)>::destroy_deallocate()
+0x199ea5bd8  __TEXT,__text  std::__1::__function::__func<TOpenTypePositioningEngine::PositionRuns(SyncState&, KerningStatus&)::$_0, bool (unsigned int, OTL::FeatureTable const*, bool&)>::operator()(unsigned int&&, OTL::FeatureTable const*&&, bool&)
+0x199ea5c14  __TEXT,__text  std::__1::__function::__func<OTL::GDEF::IterateGlyphsIgnoredByLookupTable(OTL::LookupTable const*, std::__1::function<void (unsigned short)>) const::{lambda(unsigned short)#1}, void (unsigned short)>::__clone(std::__1::__function::__base<void (unsigned short)>*) const
+0x199ea5c38  __TEXT,__text  std::__1::__function::__func<OTL::GDEF::IterateGlyphsIgnoredByLookupTable(OTL::LookupTable const*, std::__1::function<void (unsigned short)>) const::{lambda(unsigned short)#1}, void (unsigned short)>::destroy()
+0x199ea5c3c  __TEXT,__text  std::__1::__function::__func<OTL::Lookup::PopulateIgnoreSet(OTL::GDEF const&)::$_0, void (unsigned short)>::destroy()
+0x199ea5c40  __TEXT,__text  FindMasterFeatureMapEntry(unsigned int)::$_0::__invoke(void*)
+0x199ea5e84  __TEXT,__text  GetShapingGlyphsQueue()::$_0::__invoke(void*)
+0x199ea5ed4  __TEXT,__text  TShapingEngine::ShapeGlyphs(TRunGlue&, TCharStream const&)
+0x199ea61cc  __TEXT,__text  TOpenTypeMorph::TOpenTypeMorph(TRunGlue&, TCharStream const*)
+0x199ea69e4  __TEXT,__text  TTypesetter::GetTabOverflowIndex(TLine const&, long, double)
+0x199ea6a88  __TEXT,__text  TStorageRange::SetAdvance(long, CGSize)
+0x199ea6ae8  __TEXT,__text  TLine::GetTrailingWhitespace() const
+0x199ea6c04  __TEXT,__text  TRun::GetTrailingWhitespace() const
+0x199ea6db4  __TEXT,__text  TRun::ResolveCharIndex(long) const
+0x199ea6ee0  __TEXT,__text  long TRun::GetGlyphIndexForCharIndex<false>(long) const
+0x199ea7024  __TEXT,__text  TLine::FindRunWithCharIndex(long, int) const
+0x199ea72a0  __TEXT,__text  TRun::GetNextChar(long, long*) const
+0x199ea7460  __TEXT,__text  TRun::GetLeftPartialHangingGlyphCountAndWidth(long, unsigned long, TCharStream const&) const
+0x199ea75d0  __TEXT,__text  TRun::GetRightWhitespaceGlyphCountAndWidth() const
+0x199ea767c  __TEXT,__text  TLine::GetRightHangersGlyphCountAndWidth(unsigned long const*) const
+0x199ea77cc  __TEXT,__text  TRun::GetLeftHangersGlyphCountAndWidth(long, unsigned long, TCharStream const&, int) const
+0x199ea7b2c  __TEXT,__text  TLine::GetLeftHangersGlyphCountAndWidth(unsigned long const*) const
+0x199ea7d2c  __TEXT,__text  TRun::GetRightPartialHangingGlyphCountAndWidth(long, unsigned long, TCharStream const&) const
+0x199ea7ee0  __TEXT,__text  TRun::GetRightHangersGlyphCountAndWidth(long, unsigned long, TCharStream const&, int) const
+0x199ea81e4  __TEXT,__text  MapTightLooseTraits(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+0x199ea8298  __TEXT,__text  TBaseFont::CreateVariantWithSymbolicTraits(unsigned int&, unsigned int, __CTFontDescriptor const*) const
+0x199ea911c  __TEXT,__text  TBaseFont::SystemUIFontAttributesForSymbolicTraits(TCFMutableDictionary&, unsigned int, unsigned int, TDescriptor const&) const
+0x199ea98b4  __TEXT,__text  TDescriptor::CopyAttribute(unsigned long, __CFString const*) const
+0x199ea9968  __TEXT,__text  TDescriptorSource::FindFontNameForNameAndTrait(__CFString const*, unsigned int, unsigned int, unsigned int)
+0x199eaab50  __TEXT,__text  TBaseFont::CopyAttribute(unsigned long) const
+0x199eab358  __TEXT,__text  TLine::~TLine()
+0x199eab4f0  __TEXT,__text  TCFRef<CTLine::cf_type> TCFBase_NEW<CTLine, std::__1::shared_ptr<TCharStream const> const&>(std::__1::shared_ptr<TCharStream const> const&)
+0x199eab580  __TEXT,__text  ExternalizeLine(TCFRef<CTLine*>&&)
+0x199eab580  __TEXT,__text  ExternalizeLine(TCFRef<CTLine*>&&)
+0x199eab6f0  __TEXT,__text  TLine::SyncWithRuns()
+0x199eab7b0  __TEXT,__text  TTypesetter::FillLine(TLine&, double, double)
+0x199eab848  __TEXT,__text  TLine::operator=(TLine&&)
+0x199eab958  __TEXT,__text  TLine::AssociateWithRuns()
+0x199eabcf8  __TEXT,__text  TRunGlue::NextRunRange(unsigned long)
+0x199eabe94  __TEXT,__text  TBaselineEngine::AlignBaselines(TLine&, TCharStream const&)
+0x199eacb48  __TEXT,__text  TRunGlue::FocusOnIndex(long) const
+0x199eacba0  __TEXT,__text  TRun::UpdateCachedMetrics()
+0x199eacba4  __TEXT,__text  TCFBase<TLine>::Allocate(unsigned long)
+0x199eacc1c  __TEXT,__text  TCharStreamCFAttrString::~TCharStreamCFAttrString()
+0x199eacca0  __TEXT,__text  TCharStreamCFAttrString::~TCharStreamCFAttrString()
+0x199eacca4  __TEXT,__text  std::__1::__shared_ptr_emplace<TCharStreamCFAttrString, std::__1::allocator<TCharStreamCFAttrString> >::__on_zero_shared_weak()
+0x199eacca8  __TEXT,__text  std::__1::__shared_ptr_emplace<TCharStreamCFAttrString, std::__1::allocator<TCharStreamCFAttrString> >::__on_zero_shared()
+0x199eaccc4  __TEXT,__text  TCFBase<TLine>::ClassDestruct(void const*)
+0x199eaccfc  __TEXT,__text  TCFBase<TRun>::ClassDestruct(void const*)
+0x199eacd4c  __TEXT,__text  TRun::~TRun()
+0x199eacdb4  __TEXT,__text  TRun::~TRun()
+0x199eacdb8  __TEXT,__text  TStorageRange::~TStorageRange()
+0x199eacdf0  __TEXT,__text  TAttributes::GetScriptAndLangSys() const
+0x199eace40  __TEXT,__text  TRunGlue::TRunGlue(TLine&)
+0x199ead010  __TEXT,__text  TOpenTypePositioningEngine::TOpenTypePositioningEngine(TRunGlue&, TCharStream const*)
+0x199ead220  __TEXT,__text  TLine::UpdateCachedMetricsForRun(TRun const&)
+0x199ead4d4  __TEXT,__text  TKerningEngine::PositionGlyphs(TRunGlue&, TCharStream const&, signed char)
+0x199ead918  __TEXT,__text  TTypesetter::FinishLayout(std::__1::tuple<TLine const*, TCharStream const*, void const* (*)(__CTRun const*, __CFString const*, void*), void*, std::__1::shared_ptr<TBidiLevelsProvider>*, unsigned int, unsigned char, bool, long*> const&, TRunGlue&, signed char, SyncState)
+0x199ead9b8  __TEXT,__text  TLine::AppendRun(TCFRef<CTRun const*>&&)
+0x199eada1c  __TEXT,__text  TLine::LinkRuns()
+0x199eadab0  __TEXT,__text  TTypesetter::CanLayout(bool, long)
+0x199eadbbc  __TEXT,__text  TTypesetter::FinishEncoding(std::__1::tuple<TLine const*, TCharStream const*, void const* (*)(__CTRun const*, __CFString const*, void*), void*, std::__1::shared_ptr<TBidiLevelsProvider>*, unsigned int, unsigned char, bool, long*> const&, TRunGlue&, signed char*)
+0x199eae494  __TEXT,__text  TCharStreamIterator::GetChar(long)
+0x199eae500  __TEXT,__text  TTypesetter::CanLayout()
+0x199eae560  __TEXT,__text  TRun::GetDescent() const
+0x199eae5b0  __TEXT,__text  -[_CTNativeGlyphStorage release]
+0x199eae628  __TEXT,__text  TRun::GetLeading() const
+0x199eae678  __TEXT,__text  TFont::IterateShapingGlyphs(unsigned short const*, long, bool, std::__1::function<void (long)>) const
+0x199eae764  __TEXT,__text  TASCIIDataCache::InitProps()
+0x199eae8f0  __TEXT,__text  std::__1::__function::__func<TASCIIDataCache::InitProps()::$_0, void (long)>::operator()(long&&)
+0x199eae908  __TEXT,__text  std::__1::__function::__func<TASCIIDataCache::InitProps()::$_0, void (long)>::destroy()
+0x199eae90c  __TEXT,__text  std::__1::__function::__func<TASCIIDataCache::InitProps()::$_1, void (long)>::operator()(long&&)
+0x199eae924  __TEXT,__text  std::__1::__function::__func<TASCIIDataCache::InitProps()::$_1, void (long)>::destroy()
+0x199eae928  __TEXT,__text  OTL::BASE::BASE(OTL::BASE::Table const*, void const*)
+0x199eae9c0  __TEXT,__text  OTL::BASE::HasScriptSpecificMetrics() const
+0x199eaeb84  __TEXT,__text  TTenuousComponentFont::GetScriptAnalysisValue() const
+0x199eaeb98  __TEXT,__text  TRunGlue::InitLevelRange() const
+0x199eaec38  __TEXT,__text  TBaseFont::HasScriptSpecificMetrics() const
+0x199eaed40  __TEXT,__text  TCharStreamCFString::GetCharacterAtIndex(CFStringInlineBuffer*, long) const
+0x199eaee64  __TEXT,__text  TRun::GetAscent() const
+0x199eaeeb4  __TEXT,__text  TAttributes::GetKernSetting(double*, bool*) const
+0x199eaef38  __TEXT,__text  CheckForUnboundedLayout(bool)::$_0::__invoke(void*)
+0x199eaef68  __TEXT,__text  TParagraphStyle::GetBaseWritingDirection() const
+0x199eaef9c  __TEXT,__text  TAttributes::HandleParagraphStyleAttribute(void const*, TAttributes::AttributeHandlerContext*)
+0x199eaefa8  __TEXT,__text  TAttributes::HandleForegroundNSColorAttribute(void const*, TAttributes::AttributeHandlerContext*)
+0x199eaefd0  __TEXT,__text  TParagraphStyle::SetStyle(void const*)
+0x199eaf0fc  __TEXT,__text  TParagraphStyle::GetLineBoundsOptions() const
+0x199eaf164  __TEXT,__text  TParagraphStyle::GetCompositionLanguage() const
+0x199eaf1cc  __TEXT,__text  -[_CTNativeGlyphStorage setAdvance:atIndex:]
+0x199eaf238  __TEXT,__text  ___swift_memcpy1_1
+0x199eaf244  __TEXT,__text  ___swift_noop_void_return
+0x199eaf2ec  __TEXT,__text  MapTightTrait(unsigned int, bool, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+0x199eaf3b4  __TEXT,__text  TCFBase<TRunDelegate>::ClassHash(void const*)
+0x199eaf404  __TEXT,__text  TBaseFont::CopyVariationAxes() const
+0x199eaf5f8  __TEXT,__text  TFont::~TFont()
+0x199eaf7d0  __TEXT,__text  -[_CTSplicedFontKey hash]
+0x199eaf810  __TEXT,__text  TFont::GetBoundingBox() const
+0x199eaf8d0  __TEXT,__text  -[_CGFontCacheKey dealloc]
+0x199eaf91c  __TEXT,__text  OTL::MergeTable::MergeTable(TCFRef<__CFData const*>&&)
+0x199eafc34  __TEXT,__text  TAttributes::SetFillColor(CGContext*, void const*)
+0x199eafce8  __TEXT,__text  TLine::DrawGlyphs(CGContext*) const
+0x199eafed8  __TEXT,__text  TRun::DrawGlyphs(CGContext*, CFRange) const
+0x199eb02b4  __TEXT,__text  TAttributes::SetContextAttributesForBackground(CGContext*) const
+0x199eb0328  __TEXT,__text  TFont::SetInContext(CGContext*) const
+0x199eb037c  __TEXT,__text  TRun::DrawBackground(CGContext*, CFRange, TAttributes const*, bool) const
+0x199eb0594  __TEXT,__text  TAttributes::SetContextAttributes(CGContext*, bool) const
+0x199eb0740  __TEXT,__text  SetNSColor(CGContext*, void const*)
+0x199eb079c  __TEXT,__text  HandleFlippedTextMatrix(CGContext*, CGAffineTransform)
+0x199eb0834  __TEXT,__text  TLine::DrawBackground(CGContext*) const
+0x199eb0944  __TEXT,__text  TUnicodeEncoder::Encode(__CTFont const*, __CFString const*, TCharStreamIterator&, CFRange, unsigned short*, double*, unsigned int*, double*, bool)
+0x199eb0f88  __TEXT,__text  TFont::GetScaledMatrix() const
+0x199eb101c  __TEXT,__text  TRun::GetNextUnmappedCharRange(long) const
+0x199eb10ac  __TEXT,__text  TBMPDataCache::PageForCharacter(TBaseFont const&, unsigned int) const
+0x199eb11dc  __TEXT,__text  TBMPDataCache::Iterator::GetDataForCharacter(unsigned int)
+0x199eb1264  __TEXT,__text  TAttributes::OriginalFont() const
+0x199eb1390  __TEXT,__text  TGlyphEncoder::GetClusterRange(TGlyphEncoder::ClusterMatching, CFRange, CFRange) const
+0x199eb1514  __TEXT,__text  TStorageRange::GetNextUnmappedGlyphRange(long) const
+0x199eb15bc  __TEXT,__text  TUnicodeDataCachePage::GetDataForCharacter(unsigned int) const
+0x199eb1610  __TEXT,__text  TBaseFont::AcquireBMPDataCache() const
+0x199eb16e4  __TEXT,__text  TLine::GetRunCFArray() const
+0x199eb1764  __TEXT,__text  TRun::GetPrevChar(long, long*) const
+0x199eb1a08  __TEXT,__text  TLine::InsertRun(long, CTRun const*)
+0x199eb1a70  __TEXT,__text  TStorageRange::SetStorageSubRange(CFRange)
+0x199eb1b38  __TEXT,__text  TTypesetter::FillLine(std::__1::tuple<TLine const*, TCharStream const*, void const* (*)(__CTRun const*, __CFString const*, void*), void*, std::__1::shared_ptr<TBidiLevelsProvider>*, unsigned int, unsigned char, bool, long*> const&, TLine&, CFRange, double, double)
+0x199eb1ba4  __TEXT,__text  TLine::CopyStringRange(TLine const&, CFRange)
+0x199eb225c  __TEXT,__text  TStorageRange::TStorageRange(TStorageRange const&)
+0x199eb2320  __TEXT,__text  TLine::InsertPartialRun(long, CTRun const*, CFRange)
+0x199eb2398  __TEXT,__text  TRun::TRun(TRun const&, CFRange, TRun::SubrangingStyle)
+0x199eb27f0  __TEXT,__text  TCFRef<CTGlyphRun::cf_type> TCFBase_NEW<CTGlyphRun, TRun const&, CFRange&, TRun::SubrangingStyle&>(TRun const&, CFRange&, TRun::SubrangingStyle&)
+0x199eb287c  __TEXT,__text  CTGlyphRun::CloneRange(CTRun const*, CFRange, TRun::SubrangingStyle)
+0x199eb28d4  __TEXT,__text  TCharStreamCFString::GetClusterRangeAtIndex(long, CFStringCharacterClusterType) const
+0x199eb28e0  __TEXT,__text  TTypesetter::DecomposeLastChars(std::__1::tuple<TLine const*, TCharStream const*, void const* (*)(__CTRun const*, __CFString const*, void*), void*, std::__1::shared_ptr<TBidiLevelsProvider>*, unsigned int, unsigned char, bool, long*> const&, CFRange, double)
+0x199eb2a90  __TEXT,__text  TTypesetter::SuggestClusterBreak(TLine const&, long, double, double, long*)
+0x199eb2b68  __TEXT,__text  TTypesetter::SuggestClusterBreak(std::__1::tuple<TLine const*, TCharStream const*, void const* (*)(__CTRun const*, __CFString const*, void*), void*, std::__1::shared_ptr<TBidiLevelsProvider>*, unsigned int, unsigned char, bool, long*> const&, long, double, double, std::__1::function<unsigned char (l
+0x199eb2cf0  __TEXT,__text  TRun::FindBreak(long, double, TCharStream const&, TabMeasurementBehavior) const
+0x199eb32a0  __TEXT,__text  TTypesetter::FindGraphicalBreak(std::__1::tuple<TLine const*, TCharStream const*, void const* (*)(__CTRun const*, __CFString const*, void*), void*, std::__1::shared_ptr<TBidiLevelsProvider>*, unsigned int, unsigned char, bool, long*> const&, long, double, double, std::__1::function<unsigned char (lo
+0x199eb3a18  __TEXT,__text  TCharStream::GetRangeOfCharacterClusterAtIndex(__CFString const*, long, CFStringCharacterClusterType)
+0x199eb3d38  __TEXT,__text  long TRun::GetGlyphIndexForCharIndex<true>(long) const
+0x199eb3e7c  __TEXT,__text  TRun::TRun(TRun const&)
+0x199eb3fa8  __TEXT,__text  TAttributes::HandleShadowAttribute(void const*, TAttributes::AttributeHandlerContext*)
+0x199eb4030  __TEXT,__text  TCFRef<CTGlyphRun::cf_type> TCFBase_NEW<CTGlyphRun, TRun const&>(TRun const&)
+0x199eb40a4  __TEXT,__text  CTGlyphRun::CloneEntire(CTRun const*)
+0x199eb40ec  __TEXT,__text  TUnicodeEncoder::EncodePortion(long, unsigned short const*, long, TBaseFont const&, bool, unsigned short*, double*, AdvanceStride, unsigned int*, double*, bool)
+0x199eb4788  __TEXT,__text  TBMPDataCachePage::TBMPDataCachePage(TBaseFont const&, unsigned int)
+0x199eb49a0  __TEXT,__text  TBaseFont::GetUnscaledAdvances(unsigned short const*, double*, AdvanceStride, long) const
+0x199eb4b1c  __TEXT,__text  TTenuousComponentFont::GetUnscaledAdvances(unsigned short const*, double*, AdvanceStride, long) const
+0x199eb4c90  __TEXT,__text  std::__1::function<void (unsigned short, unsigned short, unsigned short)>::operator()(unsigned short, unsigned short, unsigned short) const
+0x199eb4cec  __TEXT,__text  std::__1::__function::__func<OTL::GPOS::ApplyPairPosAccelerated(OTL::Lookup const&, unsigned int, TGlyphIterator&) const::$_0::operator()(OTL::ClassDefTable const*) const::{lambda(unsigned short, unsigned short, unsigned short)#1}, void (unsigned short, unsigned short, unsigned short)>::destroy()
+0x199eb4cf0  __TEXT,__text  std::__1::__function::__func<OTL::GPOS::ApplyPairPosAccelerated(OTL::Lookup const&, unsigned int, TGlyphIterator&) const::$_1::operator()(std::__1::span<std::byte, 18446744073709551615ul>, OTL::ClassDefTable const*, std::__1::optional<std::__1::pair<unsigned short, unsigned short> > const&) const::{
+0x199eb4cf4  __TEXT,__text  std::__1::__function::__func<OTL::GPOS::ApplyPairPosAccelerated(OTL::Lookup const&, unsigned int, TGlyphIterator&) const::$_0::operator()(OTL::ClassDefTable const*) const::{lambda(unsigned short, unsigned short, unsigned short)#1}, void (unsigned short, unsigned short, unsigned short)>::__clone(std:
+0x199eb4d1c  __TEXT,__text  std::__1::__function::__func<OTL::GPOS::ApplyPairPosAccelerated(OTL::Lookup const&, unsigned int, TGlyphIterator&) const::$_1::operator()(std::__1::span<std::byte, 18446744073709551615ul>, OTL::ClassDefTable const*, std::__1::optional<std::__1::pair<unsigned short, unsigned short> > const&) const::{
+0x199eb4d44  __TEXT,__text  std::__1::__function::__func<OTL::GPOS::ApplyPairPosAccelerated(OTL::Lookup const&, unsigned int, TGlyphIterator&) const::$_0::operator()(OTL::ClassDefTable const*) const::{lambda(unsigned short, unsigned short, unsigned short)#1}, void (unsigned short, unsigned short, unsigned short)>::operator()(u
+0x199eb4d78  __TEXT,__text  std::__1::__function::__func<OTL::GPOS::ApplyPairPosAccelerated(OTL::Lookup const&, unsigned int, TGlyphIterator&) const::$_1::operator()(std::__1::span<std::byte, 18446744073709551615ul>, OTL::ClassDefTable const*, std::__1::optional<std::__1::pair<unsigned short, unsigned short> > const&) const::{
+0x199eb4dbc  __TEXT,__text  TCFBase<TNativeParagraphStyle>::GetTypeID()::{lambda(void*)#1}::__invoke(void*)
+0x199eb4e70  __TEXT,__text  TCFBase<TLine>::GetTypeID()::{lambda(void*)#1}::__invoke(void*)
+0x199eb4e74  __TEXT,__text  TCFBase<TLine>::CreateTypeID()
+0x199eb4f80  __TEXT,__text  TBaseFont::Equal(TBaseFont const&) const
+0x199eb5048  __TEXT,__text  TFont::GetSystemUIFontOptions()::$_0::__invoke(void*)
+0x199eb50b0  __TEXT,__text  TCFRef<CTFont::cf_type> TCFBase_NEW<CTFont, __CFString const*&, double&, CGAffineTransform const*&, char const (&) [31], unsigned long&>(__CFString const*&, double&, CGAffineTransform const*&, char const (&) [31], unsigned long&)
+0x199eb5210  __TEXT,__text  TFont::TFont(__CFString const*, double, CGAffineTransform const*, char const*, unsigned long)
+0x199eb5760  __TEXT,__text  TCFBase<TFont>::ClassDestruct(void const*)
+0x199eb5798  __TEXT,__text  TBaseFont::CopyGraphicsFont() const
+0x199eb579c  __TEXT,__text  TBaseFont::GetType() const
+0x199eb57a8  __TEXT,__text  TBaseFont::GetGraphicsFont() const
+0x199eb57b4  __TEXT,__text  TBaseFont::IsMicrosoftKorean() const
+0x199eb57f0  __TEXT,__text  TAttributes::EnsureRareData()
+0x199eb58e4  __TEXT,__text  TBaseFont::IsLastResort() const
+0x199eb5920  __TEXT,__text  TCharStreamIterator::GetFullChar(long&, CFRange*)
+0x199eb5a54  __TEXT,__text  TBaseFont::SupportsConnectedLanguage() const
+0x199eb5d14  __TEXT,__text  ScriptCodeForLongCharacter(unsigned int)
+0x199eb5dc0  __TEXT,__text  TASCIIDataCache::~TASCIIDataCache()
+0x199eb5eec  __TEXT,__text  TAttributes::HandleTrackingAttribute(void const*, TAttributes::AttributeHandlerContext*)
+0x199eb5fa8  __TEXT,__text  TBaseFont::HasVariations() const
+0x199eb5fb0  __TEXT,__text  FirstMappedOf(TcmapTable const&, unsigned short const (&) [2])
+0x199eb602c  __TEXT,__text  TCFNumber::TCFNumber<int>(int)
+0x199eb602c  __TEXT,__text  TCFNumber::TCFNumber<int>(int)
+0x199eb602c  __TEXT,__text  TCFNumber::TCFNumber<int>(int)
+0x199eb608c  __TEXT,__text  TBaseFont::CopyPrebuiltCharacterSet() const
+0x199eb60fc  __TEXT,__text  TBaseFont::CopyCharacterSet() const
+0x199eb6238  __TEXT,__text  CreateCharacterSetForFont(__CFString const*)
+0x199eb62b0  __TEXT,__text  TTenuousComponentFont::CopyCharacterSet() const
+0x199eb6384  __TEXT,__text  TComponentFont::CopyCharacterSet() const
+0x199eb664c  __TEXT,__text  TBaseFont::GetGlyphsForCharactersWithCMap(TcmapTable const&, unsigned short const*, unsigned short*, long) const
+0x199eb6abc  __TEXT,__text  TComponentFont::GetGlyphsForCharacters(unsigned short const*, unsigned short*, long) const
+0x199eb6d9c  __TEXT,__text  GetGlyphAdvancesForStyle(CGFont*, CGAffineTransform const*, unsigned int, unsigned short const*, long, double*, AdvanceStride)
+0x199eb6edc  __TEXT,__text  TASCIIDataCache::InitC0Whitespace()
+0x199eb702c  __TEXT,__text  TInstanceFont::HasDerivedOpticalSize() const
+0x199eb7040  __TEXT,__text  -[_CTSplicedFontKey design]
+0x199eb7048  __TEXT,__text  IsGB18030ComplianceRequired()
+0x199eb709c  __TEXT,__text  IsGB18030ComplianceRequired()::$_0::__invoke(void*)
+0x199eb70c4  __TEXT,__text  TCFRef<CTFont::cf_type> TCFBase_NEW<CTFont, __CFString const*&, double&, CGAffineTransform const*&, char const (&) [21]>(__CFString const*&, double&, CGAffineTransform const*&, char const (&) [21])
+0x199eb71ac  __TEXT,__text  TBaseFont::GetSymbolicTraitsInternal() const
+0x199eb71e0  __TEXT,__text  TDescriptorSource::CreateDefaultUserFont()
+0x199eb71f4  __TEXT,__text  TAttributes::GetDefaultFont()::{lambda(void*)#1}::__invoke(void*)
+0x199eb7224  __TEXT,__text  -[_CTNativeGlyphStorage initWithCount:capacity:]
+0x199eb732c  __TEXT,__text  TLine::CachePositions() const
+0x199eb7434  __TEXT,__text  TRun::CacheGlyphPositions(double&, double&) const
+0x199eb77e0  __TEXT,__text  TAttributes::GetDictionary() const
+0x199eb7964  __TEXT,__text  std::__1::__shared_ptr_emplace<TCharStreamCFString, std::__1::allocator<TCharStreamCFString> >::__on_zero_shared()
+0x199eb7980  __TEXT,__text  std::__1::__shared_ptr_emplace<TCharStreamCFString, std::__1::allocator<TCharStreamCFString> >::__on_zero_shared_weak()
+0x199eb7984  __TEXT,__text  TCharStreamCFString::~TCharStreamCFString()
+0x199eb7b50  __TEXT,__text  TCharStreamCFString::TCharStreamCFString(__CFString const*, __CFDictionary const*)
+0x199eb7bec  __TEXT,__text  TTypesetterString::TTypesetterString(__CFString const*, __CFDictionary const*)
+0x199eb7ce0  __TEXT,__text  TTypesetterString::Initialize(__CFString const*, __CFDictionary const*)
+0x199eb807c  __TEXT,__text  TLine::UpdateWidth(double)
+0x199eb82a4  __TEXT,__text  TInstanceFont::GetGraphicsFont() const
+0x199eb82b0  __TEXT,__text  TInstanceFont::CopyGraphicsFont() const
+0x199eb82e0  __TEXT,__text  IsVisibleFormatter(unsigned int)
+0x199eb8384  __TEXT,__text  TLine::operator=(TLine const&)
+0x199eb89fc  __TEXT,__text  TAttributes::HandleLanguageAttribute(void const*, TAttributes::AttributeHandlerContext*)
+0x199eb8a74  __TEXT,__text  TRunGlue::ClearSafeToBreakAfter(CFRange)
+0x199eb8b34  __TEXT,__text  TStorageRange::SetGlyphID(long, unsigned short)
+0x199eb8b94  __TEXT,__text  TStorageRange::ClearGlyphCombiningMark(long)
+0x199eb8bf0  __TEXT,__text  TStorageRange::UpdateAdvances(TFont const&, std::__1::optional<unsigned int>)
+0x199eb8fa0  __TEXT,__text  TFont::GetAdvancesForGlyphs(unsigned short const*, double*, AdvanceStride, long, CTFontOrientation, std::__1::optional<unsigned int>, CGAffineTransform const*) const
+0x199eb9338  __TEXT,__text  TAttributes::GetRenderingStyle() const
+0x199eb93e4  __TEXT,__text  TTruncator::AppendTruncatedRun(TLine&, CTRun const*, CFRange, bool)
+0x199eb94e4  __TEXT,__text  TRun::TruncateUnorderedEnd(CFRange, bool, TCharStream const&, CFStringCharacterClusterType)
+0x199eb9764  __TEXT,__text  TRun::TruncateStorageRange(CFRange)
+0x199eb9808  __TEXT,__text  TTruncator::CreateToken(CFRange&, __CTRun const*  block_pointer(__CTLine const*, CFRange*, __CFDictionary const*))
+0x199eb9bcc  __TEXT,__text  CreateTruncatedLine(__CTLine const*, double, CTLineTruncationType, __CTLine const*, __CTRun const*  block_pointer(__CTLine const*, CFRange*, __CFDictionary const*))
+0x199eb9d30  __TEXT,__text  TTruncator::TruncateWithTokenHandler(double, TLine&, CTLineTruncationType, __CTRun const*  block_pointer(__CTLine const*, CFRange*, __CFDictionary const*))
+0x199eba088  __TEXT,__text  TTruncator::TruncateEndChars(long, double, TLine&, unsigned char*)
+0x199eba538  __TEXT,__text  TTruncator::NoRunAdded(double, __CTRun const*  block_pointer(__CTLine const*, CFRange*, __CFDictionary const*), TLine const*, long)
+0x199eba590  __TEXT,__text  TLine::SetTruncationInfo(double, CTLineTruncationType, __CTLine const*, __CTRun const*  block_pointer(__CTLine const*, CFRange*, __CFDictionary const*))
+0x199eba64c  __TEXT,__text  TTruncator::Truncate(double, CTLineTruncationType, __CTLine const*, __CTRun const*  block_pointer(__CTLine const*, CFRange*, __CFDictionary const*))
+0x199eba750  __TEXT,__text  TTruncator::TTruncator(CTLine const*, TLine&)
+0x199eba7cc  __TEXT,__text  TRun::CountCharsInWidth(CFRange, double, int) const
+0x199ebaa78  __TEXT,__text  TLine::GetNonDeletedGlyphCount() const
+0x199ebaaf0  __TEXT,__text  TTruncator::HandleLeveledRuns()
+0x199ebab1c  __TEXT,__text  TTruncator::CreateAndAppendToken(CFRange, unsigned char, double, __CTRun const*  block_pointer(__CTLine const*, CFRange*, __CFDictionary const*))
+0x199ebabe8  __TEXT,__text  -[_CTSplicedFontKey grade]
+0x199ebabf0  __TEXT,__text  -[_CTSplicedFontKey legibilityWeight]
+0x199ebac24  __TEXT,__text  -[_CTNativeGlyphStorage attachmentCountAtIndex:]
+0x199ebac48  __TEXT,__text  TLine::ClearLine()
+0x199ebacb8  __TEXT,__text  TLine::SimpleRunDelete(long)
+0x199ebad6c  __TEXT,__text  TDescriptorSource::GetTextStyleWithSymbolicTraits(__CFString const*, unsigned int)
+0x199ebae04  __TEXT,__text  TAttributes::CopyOfFontWithLigatureSetting(__CTFont const*, LigatureSetting)
+0x199ebaeec  __TEXT,__text  CreateFeatureSettingsForLigatureSetting(__CTFont const*, LigatureSetting)
+0x199ebb1b8  __TEXT,__text  TBaseFont::IsSystemUI() const
+0x199ebb1c0  __TEXT,__text  void std::__1::__introsort<std::__1::_ClassicAlgPolicy, std::__1::__less<void, void>&, PseudoFeature*, false>(PseudoFeature*, PseudoFeature*, std::__1::__less<void, void>&, std::__1::iterator_traits<PseudoFeature*>::difference_type, bool)
+0x199ebc068  __TEXT,__text  TCFNumber::TCFNumber<short>(short)
+0x199ebc0c8  __TEXT,__text  TBaseFont::CopyOTFontFeatureTable() const
+0x199ebc24c  __TEXT,__text  TDescriptor::TDescriptor(TDescriptor const&, __CFNumber const*, __CFNumber const*)
+0x199ebc3e4  __TEXT,__text  TFontFeatureTable::LoadTableData(TBaseFont const&)
+0x199ebc52c  __TEXT,__text  TFontFeatureTable::TFontFeatureTable(TBaseFont const&)
+0x199ebc59c  __TEXT,__text  TFontFeatures::TFontFeatures(TBaseFont const&)
+0x199ebd4fc  __TEXT,__text  CreateOTFeatureTable(TBaseFont const&)
+0x199ebdf2c  __TEXT,__text  void MergeOTFeaturesFromTable<std::__1::vector<unsigned int, std::__1::allocator<unsigned int> > >(std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >&, TBaseFont const&, unsigned int)
+0x199ebe190  __TEXT,__text  std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::reserve(unsigned long)
+0x199ebe228  __TEXT,__text  OTL::StylisticSetFeatureParams const* FeatureParamsForTag<OTL::StylisticSetFeatureParams>(TBaseFont const&, unsigned int)
+0x199ebe298  __TEXT,__text  OTL::StylisticSetFeatureParams const* FeatureParamsForTag<OTL::StylisticSetFeatureParams>(__CFData const*, unsigned int)
+0x199ebe494  __TEXT,__text  TDescriptor::MergeVariationWithBase(TDescriptor const&, bool, __CFDictionary const*, TCFMutableDictionary&)
+0x199ebec6c  __TEXT,__text  AddDefaultsToVariation(__CFArray const*, __CFDictionary const*)
+0x199ebed74  __TEXT,__text  VariationsForGraphicsFontByAddingVariation(CGFont*, __CFDictionary const*)
+0x199ebefa8  __TEXT,__text  TInstanceFont::TInstanceFont(CGFont*, __CFDictionary const*, is_unregistered_t const&)
+0x199ebf058  __TEXT,__text  CreateCopyOfFontWithVariation(CGFont*, __CFDictionary const*)
+0x199ebf090  __TEXT,__text  TBaseFont::TBaseFont(CGFont*, is_unregistered_t const&)
+0x199ebf1a0  __TEXT,__text  CreateFontURLFromFont(CGFont*, bool&)
+0x199ebf2b8  __TEXT,__text  TInstanceFont::CopyVariation() const
+0x199ebf2e8  __TEXT,__text  TInstanceFont::InitWithVariation(CGFont*, __CFDictionary const*, __CFDictionary const*)
+0x199ebf61c  __TEXT,__text  IsNamedInstance(CGFont*)
+0x199ebf648  __TEXT,__text  TTenuousComponentFont::~TTenuousComponentFont()
+0x199ebf6c0  __TEXT,__text  TComponentFont::~TComponentFont()
+0x199ebf738  __TEXT,__text  TBaseFont::~TBaseFont()
+0x199ebf9ec  __TEXT,__text  CreateVariationDictFromGraphicsFont(CGFont*, __CFDictionary const*)
+0x199ebfbbc  __TEXT,__text  CopyVariationAxes(CGFont*)
+0x199ec00b4  __TEXT,__text  TComponentFont::CopyPhysicalFontDescriptor(double) const
+0x199ec013c  __TEXT,__text  SplitStringAtSeparator(__CFString const*, __CFString const*, CFRange*, CFRange*)
+0x199ec01c4  __TEXT,__text  FindAndReplace(TCFRef<__CFString const*>&&, __CFString const*, __CFString const*, unsigned long)
+0x199ec02a0  __TEXT,__text  CreateFontInfoDictionaryFromFontURL(__CFURL const*)
+0x199ec05ec  __TEXT,__text  TCFRef<CTFont::cf_type> TCFBase_NEW<CTFont, __CTFontDescriptor const*, double&, decltype(nullptr), decltype(nullptr)>(__CTFontDescriptor const*&&, double&, decltype(nullptr)&&, decltype(nullptr)&&)
+0x199ec0724  __TEXT,__text  CopyPostScriptNameFromFontURL(__CFURL const*)
+0x199ec0884  __TEXT,__text  TBaseFont::CopyVariation() const
+0x199ec0a30  __TEXT,__text  TInstanceFont::TInstanceFont(TBaseFont const&, is_validated_t const&, __CFDictionary const*)
+0x199ec0c00  __TEXT,__text  TBaseFont::TBaseFont(TBaseFont const&)
+0x199ec0d5c  __TEXT,__text  GetBaseCGFont(TBaseFont const&, __CFDictionary const*)
+0x199ec0ec0  __TEXT,__text  TInstanceFont::~TInstanceFont()
+0x199ec0eec  __TEXT,__text  TInstanceFont::~TInstanceFont()
+0x199ec0f50  __TEXT,__text  TDescriptor::TDescriptor(TDescriptor const&, __CFDictionary const*)::$_0::__invoke(void*)
+0x199ec0fec  __TEXT,__text  -[CTFeatureSetting hash]
+0x199ec10b8  __TEXT,__text  CopyOTFeatureSettingForTypeAndSelector(unsigned short, unsigned short)::$_0::__invoke(void*)
+0x199ec12fc  __TEXT,__text  TFontFeatureSettingList::ContainsAATSetting(__CFNumber const*, __CFNumber const*, bool) const
+0x199ec1420  __TEXT,__text  -[CTFeatureSetting selector]
+0x199ec1444  __TEXT,__text  TCFLazyMutableArray::LazyCreate()
+0x199ec14a8  __TEXT,__text  TFontFeatureSettingList::IndexOfAATSetting(unsigned short, unsigned short) const
+0x199ec1538  __TEXT,__text  std::__1::pair<std::__1::__tree_const_iterator<std::__1::__value_type<unsigned short, AATFeaturePair>, std::__1::__tree_node<std::__1::__value_type<unsigned short, AATFeaturePair>, void*>*, long>, std::__1::__tree_const_iterator<std::__1::__value_type<unsigned short, AATFeaturePair>, std::__1::__tre
+0x199ec15cc  __TEXT,__text  -[CTFeatureSetting tag]
+0x199ec15f0  __TEXT,__text  -[CTFeatureSetting objectForKey:]
+0x199ec1604  __TEXT,__text  void std::__1::__inplace_merge<std::__1::_ClassicAlgPolicy, std::__1::__less<void, void>&, std::__1::__wrap_iter<unsigned int*> >(std::__1::__wrap_iter<unsigned int*>, std::__1::__wrap_iter<unsigned int*>, std::__1::__wrap_iter<unsigned int*>, std::__1::__less<void, void>&, std::__1::iterator_traits
+0x199ec1ac4  __TEXT,__text  addComponentsWithTrimCharacterSet((anonymous namespace)::TFontInfo const&, __CFString const*, TCFMutableDictionary&, bool, void  block_pointer(TCFMutableDictionary&), void  block_pointer(TCFMutableArray&))
+0x199ec1be4  __TEXT,__text  CopyFeatureSettingForTag(__CFString const*, unsigned int, TBaseFont const*, bool*, unsigned int*)
+0x199ec2068  __TEXT,__text  TCFRef<CTFontDescriptor::cf_type> TCFBase_NEW<CTFontDescriptor, __CFDictionary const*&>(__CFDictionary const*&)
+0x199ec2154  __TEXT,__text  TCFMutableArray::TCFMutableArray(__CFArray const*)
+0x199ec21a8  __TEXT,__text  -[CTFeatureSetting isEqual:]
+0x199ec224c  __TEXT,__text  -[CTFeatureSetting isEqualToFeatureSetting:]
+0x199ec2498  __TEXT,__text  TFont::AppendFeatureSettingWithTypeAndSelector(unsigned short, unsigned short, TFont::FeatureSettingsCopyOperation)
+0x199ec2660  __TEXT,__text  (anonymous namespace)::TFeatureSelector::IsDefault() const
+0x199ec269c  __TEXT,__text  IsFontSpecificFeatureSetting(CTFeatureSetting*)
+0x199ec27bc  __TEXT,__text  -[CTFeatureSetting type]
+0x199ec27e0  __TEXT,__text  ConvertOTFeatureToAATFeature(unsigned int, PseudoFeature&)
+0x199ec28e8  __TEXT,__text  IsOTFeatureFontSpecific(unsigned int)
+0x199ec293c  __TEXT,__text  TFontFeatures::HandleAlias(TFeatureSetting const&, bool, TCFMutableArray&, TCFMutableArray&) const
+0x199ec2d98  __TEXT,__text  TFontFeatures::FindFeatureSelector(__CFArray const*, TFeatureSetting const&, bool&)
+0x199ec2e4c  __TEXT,__text  TFontFeatures::FindFeatureType(__CFArray const*, __CFNumber const*)
+0x199ec2f2c  __TEXT,__text  (anonymous namespace)::TFeatureType::GetSelector(__CFNumber const*) const
+0x199ec3034  __TEXT,__text  (anonymous namespace)::TFeatureType::IsExclusive() const
+0x199ec3070  __TEXT,__text  TFont::ShouldPropagateFeatureSetting(TFontFeatureSettingList const&, unsigned short, unsigned short) const
+0x199ec3124  __TEXT,__text  CopyOTFeatureSettingForTypeAndSelector(unsigned short, unsigned short)
+0x199ec32e4  __TEXT,__text  -[CTFeatureSetting initWithType:selector:tag:value:]
+0x199ec3410  __TEXT,__text  ValidatedValue(NSNumber*)
+0x199ec3488  __TEXT,__text  -[CTFeatureSetting initWithDictionary:]
+0x199ec35d0  __TEXT,__text  bool GetSettingValue<NSNumber*, unsigned short>(NSNumber*, unsigned short*)
+0x199ec3644  __TEXT,__text  CreateFeatureSettingsByConverting(__CFArray const*)
+0x199ec38fc  __TEXT,__text  TBaseFont::CopyFeaturesInternal() const
+0x199ec3ae0  __TEXT,__text  TFont::UpdateFeatureSettings(__CFDictionary*, __CFArray const*, TFont::FeatureSettingsCopyOperation)
+0x199ec3b60  __TEXT,__text  TFontFeatures::CopyNonDefaultSettings(TBaseFont const&, __CFArray const*)
+0x199ec3bf0  __TEXT,__text  TFontFeatures::CopyNonDefault(TBaseFont const&, __CFArray const*) const
+0x199ec412c  __TEXT,__text  -[CTFeatureSetting initWithNormalizedDictionary:]
+0x199ec419c  __TEXT,__text  TFontFeatureSettingList::TFontFeatureSettingList(__CFArray const*)
+0x199ec4218  __TEXT,__text  TFontFeatureSettingList::Emplace(TCFRef<__CFArray const*>&&)
+0x199ec43c8  __TEXT,__text  bool GetSettingValue<__CFNumber const*, unsigned short>(__CFNumber const*, unsigned short*)
+0x199ec4438  __TEXT,__text  TFontFeatures::SettingsByNormalizing(TBaseFont const&, CTFeatureSetting*, TCFRef<CTFeatureSetting*>*) const
+0x199ec4944  __TEXT,__text  TBaseFont::HasOTFontFeatureTable() const
+0x199ec4ad8  __TEXT,__text  -[CTFeatureSetting dealloc]
+0x199ec4b30  __TEXT,__text  TSplicedFont::CopyVariationAxes() const
+0x199ec4c0c  __TEXT,__text  TSplicedFont::HasTable(unsigned int) const
+0x199ec4c7c  __TEXT,__text  TSplicedFont::GetFontMatrix() const
+0x199ec4cdc  __TEXT,__text  TSplicedFont::IsAppleFont() const
+0x199ec4ce4  __TEXT,__text  TSplicedFont::CalculateFontMetrics(bool, double) const
+0x199ec4e30  __TEXT,__text  TSplicedFont::IsTextStyleFont() const
+0x199ec4e38  __TEXT,__text  TSplicedFont::CopyName(__CFString const*) const
+0x199ec5000  __TEXT,__text  FontNameCodeForKey(__CFString const*)
+0x199ec5148  __TEXT,__text  NamesWithUpdatedName(__CFDictionary const*, __CFString const*, __CFString const*)
+0x199ec51fc  __TEXT,__text  addComponentsWithNameAndTrimCharacterSet(__CFString const*, __CFString const*, TCFMutableDictionary&)
+0x199ec54e4  __TEXT,__text  TDelegateRun::GetAscent() const
+0x199ec54ec  __TEXT,__text  TDelegateRun::GetDescent() const
+0x199ec54f4  __TEXT,__text  TAATKernEngine::TAATKernEngine(TRunGlue&)
+0x199ec56ac  __TEXT,__text  TAATKerxEngine::~TAATKerxEngine()
+0x199ec5714  __TEXT,__text  TAATKerxEngine::TAATKerxEngine(TRunGlue&, __CFData const*)
+0x199ec592c  __TEXT,__text  bool GetValue<__CFNumber const*>(__CFNumber const*, unsigned int*)
+0x199ec599c  __TEXT,__text  -[_CTSplicedFontKey weight]
+0x199ec59a4  __TEXT,__text  TFontFeatureSettingList::IndexOfOpenTypeSetting(__CFString const*) const
+0x199ec5a58  __TEXT,__text  TBaseFont::SupportsConnectedLanguage() const::$_0::__invoke(void*)
+0x199ec5af8  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int const&>(unsigned int const&)
+0x199ec5af8  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int const&>(unsigned int const&)
+0x199ec5af8  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int const&>(unsigned int const&)
+0x199ec5bb8  __TEXT,__text  CustomOTFeatures(TBaseFont const&, unsigned int, bool)
+0x199ec5e04  __TEXT,__text  TFont::Compare(TFont const&, bool) const
+0x199ec6214  __TEXT,__text  TRunGlue::UpdateForCurrentRealRun(bool)
+0x199ec628c  __TEXT,__text  TRunGlue::PhysicalRunIndexFromLogical(long) const
+0x199ec6334  __TEXT,__text  TRunGlue::ComputeEndIndex()
+0x199ec63d8  __TEXT,__text  TRunGlue::SetRunRange(CFRange)
+0x199ec6484  __TEXT,__text  TRunGlue::SelectRunForIndex(long) const
+0x199ec65a0  __TEXT,__text  TRun::GetNonDeletedGlyphCount() const
+0x199ec65f0  __TEXT,__text  TAttributes::HandleBackgroundNSColorAttribute(void const*, TAttributes::AttributeHandlerContext*)
+0x199ec665c  __TEXT,__text  TAttributes::GetBackgroundColor(__CFDictionary const*, __CFString const**)
+0x199ec66cc  __TEXT,__text  GetOTFeaturesForOptionalLigatures(OTL::FeatureList const&, OTL::FeatureBuffer*)
+0x199ec67a8  __TEXT,__text  void OTL::GlyphLookups::SetLookupInRange<true>(std::__1::pair<unsigned short, unsigned short>, CFRange, bool)
+0x199ec69fc  __TEXT,__text  TOpenTypeMorph::CompareRuns(TRun const&, TRun const&)
+0x199ec6b04  __TEXT,__text  TBaseFont::GetScriptAnalysisValue() const
+0x199ec6c20  __TEXT,__text  IgnoreScriptAnalysisForGCommonTable(__CFData const*)
+0x199ec6c98  __TEXT,__text  void TAATKernEngine::KernOrderedList::ProcessGlyphsT<TRunGlue::TGlyphInSingleRun>(SyncState&)
+0x199ec6fa0  __TEXT,__text  TAATKernEngine::KernRuns(SyncState&, KerningStatus&)
+0x199ec7c7c  __TEXT,__text  TKerningEngineImplementation::MergeDeltas(std::__1::vector<std::__1::pair<long, TAATDeltaXListEntry>, std::__1::allocator<std::__1::pair<long, TAATDeltaXListEntry> > > const&, std::__1::map<long, TAATDeltaYListEntry, std::__1::less<long>, std::__1::allocator<std::__1::pair<long const, TAATDeltaYList
+0x199ec8068  __TEXT,__text  TFont::GetWinMetrics(double*, double*) const
+0x199ec80fc  __TEXT,__text  TScriptRun::NextRun(std::__1::optional<UScriptCode>)
+0x199ec8408  __TEXT,__text  TSimpleTracking::TrackRun(TRun&, double)
+0x199ec84f4  __TEXT,__text  TTrackingEngine::TrackRuns(TRunGlue&, TCharStream const&, CFRange, double)
+0x199ec86d4  __TEXT,__text  TAttributes::HandleRunDelegateAttribute(void const*, TAttributes::AttributeHandlerContext*)
+0x199ec8720  __TEXT,__text  TAttributes::HandleKernAttribute(void const*, TAttributes::AttributeHandlerContext*)
+0x199ec87d0  __TEXT,__text  -[_CTSplicedFontKey platform]
+0x199ec87d8  __TEXT,__text  TDelegateRun::TDelegateRun(CTRun const*)
+0x199ec88f8  __TEXT,__text  TRunDelegate::TRunDelegate(void const*)
+0x199ec8970  __TEXT,__text  TGlyphEncoder::CreateSpecialRun(CTRun*, TAttributes const&) const
+0x199ec8b7c  __TEXT,__text  TDelegateRun::GetLeading() const
+0x199ec8b84  __TEXT,__text  TTypesetter::MakeLineConsistent(std::__1::tuple<TLine const*, TCharStream const*, void const* (*)(__CTRun const*, __CFString const*, void*), void*, std::__1::shared_ptr<TBidiLevelsProvider>*, unsigned int, unsigned char, bool, long*> const&, TLine&)
+0x199ec8fcc  __TEXT,__text  TAATMorphSubtableMorx::InitLigatureState(TAATMorphSubtableMorx::MorxLigatureState&)
+0x199ec9078  __TEXT,__text  TAATMorphSubtableMorx::FetchInitialClass(TRunGlue&, CFRange, TRunGlue::TGlyph&, long&, TAATMorphSubtable::GlyphState&)
+0x199ec90d4  __TEXT,__text  TAATMorphSubtableMorx::FetchClass(unsigned short) const
+0x199ec9154  __TEXT,__text  TAATMorphTable::TAATMorphTable(TRunGlue&, unsigned int)
+0x199ec93b0  __TEXT,__text  TAATMorphTableMorx::TAATMorphTableMorx(TRunGlue&)
+0x199ec94d0  __TEXT,__text  TAATMorphSubtable::FindFirstGlyph(TRunGlue&, CFRange, TRunGlue::TGlyph&, long&) const
+0x199ec9578  __TEXT,__text  MorphActionResultCode TAATMorphSubtableMorx::ProcessT<TRunGlue::TGlyphInSingleRun>(TRunGlue&, CFRange, unsigned int)
+0x199eca1ec  __TEXT,__text  TAATMorphSubtableMorx::Process(TRunGlue&, CFRange)
+0x199eca24c  __TEXT,__text  TAATMorphTableMorx::ShapeGlyphs(SyncState&, __CFString const*)
+0x199ecac4c  __TEXT,__text  std::__1::__function::__func<TAATMorphTableMorx::ShapeGlyphs(SyncState&, __CFString const*)::$_0, bool (TRunGlue::TGlyph)>::operator()(TRunGlue::TGlyph&&)
+0x199ecac78  __TEXT,__text  TAATMorphSubtableMorx::NextSubtable()
+0x199ecacd4  __TEXT,__text  TAATMorphChainMorx::GetCoverage(unsigned int) const
+0x199ecad54  __TEXT,__text  TAATLookupTable::SetTable(SFNTLookupTable const*, void const*)
+0x199ecb094  __TEXT,__text  bool IsAccessWithinRange<SFNTLookupTable>(SFNTLookupTable const*, void const*, void const*)
+0x199ecb1f0  __TEXT,__text  TAATMorphChainMorx::NextChain(unsigned short)
+0x199ecb3d0  __TEXT,__text  std::__1::__function::__func<TAATMorphTableMorx::ShapeGlyphs(SyncState&, __CFString const*)::$_0, bool (TRunGlue::TGlyph)>::destroy()
+0x199ecb3d4  __TEXT,__text  TAATLookupTable::LookupSingleTable(unsigned short, unsigned long*) const
+0x199ecb484  __TEXT,__text  TFont::GetWindowsDescent() const
+0x199ecb508  __TEXT,__text  TLine::GetRightPartialHangingGlyphCountAndWidth(unsigned long const*) const
+0x199ecb5fc  __TEXT,__text  -[_CTNativeGlyphStorage dealloc]
+0x199ecb748  __TEXT,__text  TCFBase<TRunDelegate>::ClassDestruct(void const*)
+0x199ecb758  __TEXT,__text  CTRunDelegate::Destruct(void const*)
+0x199ecb770  __TEXT,__text  TTypesetter::FinishLineFill(std::__1::tuple<TLine const*, TCharStream const*, void const* (*)(__CTRun const*, __CFString const*, void*), void*, std::__1::shared_ptr<TBidiLevelsProvider>*, unsigned int, unsigned char, bool, long*> const&, TLine&, double, double)
+0x199ecb80c  __TEXT,__text  TTypesetter::ReorderRunsIfNecessary(std::__1::tuple<TLine const*, TCharStream const*, void const* (*)(__CTRun const*, __CFString const*, void*), void*, std::__1::shared_ptr<TBidiLevelsProvider>*, unsigned int, unsigned char, bool, long*> const&, TLine&)
+0x199ecb868  __TEXT,__text  CTDelegateRun::CloneEntire(CTRun const*)
+0x199ecb8f8  __TEXT,__text  TDelegateRun::CanUpdateWidth() const
+0x199ecb900  __TEXT,__text  TDelegateRun::TDelegateRun(TDelegateRun const&)
+0x199ecb980  __TEXT,__text  TDelegateRun::~TDelegateRun()
+0x199ecb9cc  __TEXT,__text  TDelegateRun::UpdateWidth(TLine*, long, double)
+0x199ecba84  __TEXT,__text  TRun::CopyPositions(CFRange, CGPoint*) const
+0x199ecbafc  __TEXT,__text  TDelegateRun::DrawGlyphs(CGContext*, CFRange) const
+0x199ecbce0  __TEXT,__text  TLine::DetachRuns()
+0x199ecbd44  __TEXT,__text  TLine::DetachRun(long)
+0x199ecbde8  __TEXT,__text  TLine::ReplaceRun(long, TCFRef<CTRun const*>&&)
+0x199ecbe70  __TEXT,__text  TLine::InsertLastRun(long, TCFRef<CTRun*>&&)
+0x199ecbed8  __TEXT,__text  TLine::ResetLine(TCharStream const&)
+0x199ecbfac  __TEXT,__text  TStorageRange::ResetAdvances(TFont const&, std::__1::optional<unsigned int>)
+0x199ecc0ac  __TEXT,__text  TKerningEngine::PositionGlyphs(TLine&, TCharStream const&, signed char)
+0x199ecc1a0  __TEXT,__text  TCombiningEngine::ResolveCombiningMarks(TCombiningEngine::CombiningFlag, bool*, bool*)
+0x199ece0d0  __TEXT,__text  TRun::GetNextUncombinedCharRange(long, bool&) const
+0x199ece308  __TEXT,__text  TRunGlue::GetNextUncombinedCharRange(long, bool*, int*) const
+0x199ece73c  __TEXT,__text  TRun::EnsureRareData()
+0x199ece7dc  __TEXT,__text  TLine::GetNextUncombinedCharRange(long, bool&, int&) const
+0x199ece9bc  __TEXT,__text  TRun::CanUpdateWidth() const
+0x199ece9c4  __TEXT,__text  SetNSShadow(CGContext*, void const*)
+0x199eceabc  __TEXT,__text  std::__1::__function::__func<OTL::GSUB::AddShapingGlyphsForLookup(OTL::Lookup const&, std::__1::function<void (unsigned short, unsigned short)>, std::__1::function<void ()>) const::$_0, bool (unsigned short, unsigned short, unsigned short)>::destroy_deallocate()
+0x199eceae0  __TEXT,__text  std::__1::__function::__func<OTL::GSUB::AddShapingGlyphsForLookup(OTL::Lookup const&, std::__1::function<void (unsigned short, unsigned short)>, std::__1::function<void ()>) const::$_0, bool (unsigned short, unsigned short, unsigned short)>::__clone() const
+0x199eceb44  __TEXT,__text  std::__1::__function::__func<TOpenTypeMorph::AddShapingGlyphs(TFont const&, std::__1::function<void (unsigned short, unsigned short)>, std::__1::function<void (unsigned short, unsigned short)>, std::__1::function<void (unsigned int)>, std::__1::function<void ()>)::$_0::operator()(unsigned int, OTL::
+0x199ecf0ac  __TEXT,__text  OTL::GCommon::IterateScriptTables(OTL::GCommon::Header const*, void const*, std::__1::function<bool (unsigned int, OTL::ScriptTable const*, bool&)>)
+0x199ecf244  __TEXT,__text  TOpenTypeMorph::AddShapingGlyphs(TFont const&, std::__1::function<void (unsigned short, unsigned short)>, std::__1::function<void (unsigned short, unsigned short)>, std::__1::function<void (unsigned int)>, std::__1::function<void ()>)
+0x199ecf3d4  __TEXT,__text  std::__1::function<void (unsigned int)>::operator()(unsigned int) const
+0x199ecf420  __TEXT,__text  LangSysTagsWithFallback(unsigned int)
+0x199ecf58c  __TEXT,__text  std::__1::__function::__func<TOpenTypeMorph::AddShapingGlyphs(TFont const&, std::__1::function<void (unsigned short, unsigned short)>, std::__1::function<void (unsigned short, unsigned short)>, std::__1::function<void (unsigned int)>, std::__1::function<void ()>)::$_0, bool (unsigned int, OTL::Scrip
+0x199ecf5b0  __TEXT,__text  TAATMorphTable::AddShapingGlyphs(TFont const&, std::__1::function<void (unsigned short, unsigned short)>, std::__1::function<void ()>)
+0x199ecf8b0  __TEXT,__text  std::__1::__function::__func<TFont::InitShapingGlyphs() const::$_2, void ()>::destroy()
+0x199ecf8b4  __TEXT,__text  std::__1::__function::__func<TFont::InitShapingGlyphs() const::$_1, void (unsigned short, unsigned short)>::destroy()
+0x199ecf8b8  __TEXT,__text  std::__1::function<bool (unsigned int, OTL::ScriptTable const*, bool&)>::operator()(unsigned int, OTL::ScriptTable const*, bool&) const
+0x199ecf90c  __TEXT,__text  OTL::GSUB::AddShapingGlyphsForLookup(OTL::Lookup const&, std::__1::function<void (unsigned short, unsigned short)>, std::__1::function<void ()>) const
+0x199ecfb00  __TEXT,__text  OTL::GSUB::AddShapingGlyphsForLookup(OTL::Lookup const&, std::__1::function<void (unsigned short, unsigned short)>, std::__1::function<void ()>) const::$_1::operator()(unsigned int) const
+0x199ecfc48  __TEXT,__text  std::__1::__function::__func<OTL::GSUB::AddShapingGlyphsForLookup(OTL::Lookup const&, std::__1::function<void (unsigned short, unsigned short)>, std::__1::function<void ()>) const::$_0, bool (unsigned short, unsigned short, unsigned short)>::operator()(unsigned short&&, unsigned short&&, unsigned sh
+0x199ecfc70  __TEXT,__text  std::__1::__function::__func<OTL::GSUB::AddShapingGlyphsForLookup(OTL::Lookup const&, std::__1::function<void (unsigned short, unsigned short)>, std::__1::function<void ()>) const::$_0, bool (unsigned short, unsigned short, unsigned short)>::~__func()
+0x199ecfcc8  __TEXT,__text  OTL::GCommon::IterateLangSysTables(OTL::GCommon::Header const*, OTL::ScriptTable const*, void const*, std::__1::function<bool (unsigned int, OTL::LangSysTable const*, bool&)>)
+0x199ecff04  __TEXT,__text  UniversalShapingEngine::AddShapingGlyphsForScript(TFont const&, unsigned int, std::__1::function<void (unsigned short, unsigned short)>)
+0x199ecff90  __TEXT,__text  std::__1::function<void (unsigned short, unsigned short)>::operator()(unsigned short, unsigned short) const
+0x199ecffe4  __TEXT,__text  std::__1::function<bool (unsigned int, OTL::LangSysTable const*, bool&)>::operator()(unsigned int, OTL::LangSysTable const*, bool&) const
+0x199ed0034  __TEXT,__text  IsOTFeatureTurnedOnByShapingEngine(unsigned int)
+0x199ed00e8  __TEXT,__text  std::__1::__function::__func<TFont::InitShapingGlyphs() const::$_4, void (unsigned int)>::operator()(unsigned int&&)
+0x199ed0174  __TEXT,__text  IsOTFeatureTurnedOnByShapingEngine(unsigned int)::$_0::__invoke(void*)
+0x199ed01e4  __TEXT,__text  LangSysTagsWithFallback(unsigned int)::$_0::__invoke(void*)
+0x199ed0668  __TEXT,__text  std::__1::__function::__func<TOpenTypeMorph::AddShapingGlyphs(TFont const&, std::__1::function<void (unsigned short, unsigned short)>, std::__1::function<void (unsigned short, unsigned short)>, std::__1::function<void (unsigned int)>, std::__1::function<void ()>)::$_0, bool (unsigned int, OTL::Scrip
+0x199ed067c  __TEXT,__text  std::__1::__function::__func<TFont::InitShapingGlyphs() const::$_4, void (unsigned int)>::destroy()
+0x199ed0680  __TEXT,__text  std::__1::__function::__func<TFont::InitShapingGlyphs() const::$_3, void (unsigned short, unsigned short)>::__clone(std::__1::__function::__base<void (unsigned short, unsigned short)>*) const
+0x199ed06a4  __TEXT,__text  std::__1::__function::__func<TFont::InitShapingGlyphs() const::$_3, void (unsigned short, unsigned short)>::destroy()
+0x199ed06a8  __TEXT,__text  std::__1::__function::__func<TFont::InitShapingGlyphs() const::$_3, void (unsigned short, unsigned short)>::operator()(unsigned short&&, unsigned short&&)
+0x199ed06ec  __TEXT,__text  std::__1::__function::__func<TFont::InitShapingGlyphs() const::$_2, void ()>::__clone(std::__1::__function::__base<void ()>*) const
+0x199ed0710  __TEXT,__text  std::__1::__function::__func<TFont::InitShapingGlyphs() const::$_1, void (unsigned short, unsigned short)>::__clone(std::__1::__function::__base<void (unsigned short, unsigned short)>*) const
+0x199ed0738  __TEXT,__text  UniversalClassTable::AddShapingGlyphsForScript(TFont const&, unsigned int, std::__1::function<void (unsigned short, unsigned short)>)
+0x199ed0bb0  __TEXT,__text  std::__1::__function::__func<TOpenTypeMorph::AddShapingGlyphs(TFont const&, std::__1::function<void (unsigned short, unsigned short)>, std::__1::function<void (unsigned short, unsigned short)>, std::__1::function<void (unsigned int)>, std::__1::function<void ()>)::$_0, bool (unsigned int, OTL::Scrip
+```
+First 1,000 of 4,982.
+

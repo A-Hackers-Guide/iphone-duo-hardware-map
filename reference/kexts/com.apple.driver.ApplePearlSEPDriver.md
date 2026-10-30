@@ -1,0 +1,1877 @@
+# `com.apple.driver.ApplePearlSEPDriver`
+
+- Name: ApplePearlSEPDriver
+- Version: `1`
+- UUID: `1F6C8227-BF8A-3AA6-8C5B-3A3DAC358DB5`
+- Source version: `980.40.13.0.1`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleH10PearlCameraInterface`](com.apple.driver.AppleH10PearlCameraInterface.md) 1.0.0, [`com.apple.driver.AppleSEPManager`](com.apple.driver.AppleSEPManager.md) 1.0.0, [`com.apple.driver.IOSlaveProcessor`](com.apple.driver.IOSlaveProcessor.md) 1.0.0, [`com.apple.iokit.AppleSEPGenericTransfer`](com.apple.iokit.AppleSEPGenericTransfer.md) 1.0.0, [`com.apple.iokit.IOBiometricFamily`](com.apple.iokit.IOBiometricFamily.md) 1.0.0, [`com.apple.iokit.IOHIDFamily`](com.apple.iokit.IOHIDFamily.md) 1.4, [`com.apple.iokit.IOSurface`](com.apple.iokit.IOSurface.md) 52.6.0, [`com.apple.kec.corecrypto`](com.apple.kec.corecrypto.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (1) [KC]
+
+### ApplePearlSEPDriver
+- `CFBundleIdentifier`: `com.apple.driver.ApplePearlSEPDriver`
+- `IOClass`: `ApplePearlSEPDriver`
+- `IOMatchCategory`: `com_apple_driver_ApplePearlSEPDriver`
+- `IONameMatch`: `sep-endpoint,sprl`
+- `IOPersonalityPublisher`: `com.apple.driver.ApplePearlSEPDriver`
+- `IOProbeScore`: `1000`
+- `IOProviderClass`: `AppleSEPDeviceService`
+- `IOUserClientClass`: `ApplePearlUserClient`
+
+
+## C++ classes (13) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `ApplePearlSEPDriver` | 0xb88 | IOSEPBiometricService → IOBiometricService → IOService → IORegistryEntry |
+| `ApplePearlUserClient` | 0xf8 | IOBiometricUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOPearlCameraContext` | 0x70 |  |
+| `IOPearlCameraFrame` | 0xb8 | IOPearlCameraFrameInterface → IOPearlFrame → IOBioShareableMemoryObject |
+| `IOPearlCameraFrameInterface` | 0x20 | IOPearlFrame → IOBioShareableMemoryObject |
+| `IOPearlExclaveCameraFrame` | 0x70 | IOPearlCameraFrameInterface → IOPearlFrame → IOBioShareableMemoryObject |
+| `IOPearlFrame` | 0x20 | IOBioShareableMemoryObject |
+| `IOPearlFrameDebug` | 0x50 | IOPearlFrame → IOBioShareableMemoryObject |
+| `IOPearlFrameQueue` | 0x40 | IOBioArrayQueue → IOBioQueue |
+| `IOPearlLogging` | 0x70 |  |
+| `IOPearlSharedMemoryTransferQueue` | 0xa0 | IOBioSharedMemoryTransferQueue → IOBioArrayQueue → IOBioQueue |
+| `PearlCachedSystemConfig` | 0x48 | CachedSystemConfig |
+| `PearlCachedUserContext` | 0x80 | CachedUserContext |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x00010be6 off=0x006a2f30-0x006b3b16 addr=0xfffffe00076a6f30-0xfffffe00076b7b16 r--/r--   __TEXT            
+	sz=0x00000318 off=0x006a3650-0x006a3968 addr=0xfffffe00076a7650-0xfffffe00076a7968               __TEXT.__const            
+	sz=0x0000b357 off=0x006a3968-0x006aecbf addr=0xfffffe00076a7968-0xfffffe00076b2cbf               __TEXT.__cstring          (CstringLiterals)
+	sz=0x00004e57 off=0x006aecbf-0x006b3b16 addr=0xfffffe00076b2cbf-0xfffffe00076b7b16               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x000410b4 off=0x0237daf0-0x023beba4 addr=0xfffffe0009381af0-0xfffffe00093c2ba4 r-x/r-x   __TEXT_EXEC       
+	sz=0x00040504 off=0x0237daf0-0x023bdff4 addr=0xfffffe0009381af0-0xfffffe00093c1ff4          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000bb0 off=0x023bdff4-0x023beba4 addr=0xfffffe00093c1ff4-0xfffffe00093c2ba4          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x000003af off=0x04984628-0x049849d7 addr=0xfffffe000b988628-0xfffffe000b9889d7 rw-/rw-   __DATA            
+	sz=0x000000cd off=0x04984628-0x049846f5 addr=0xfffffe000b988628-0xfffffe000b9886f5               __DATA.__data             
+	sz=0x00000260 off=0x00000000-0x00000260 addr=0xfffffe000b9886f8-0xfffffe000b988958               __DATA.__common           (Zerofill)
+	sz=0x0000007f off=0x00000000-0x0000007f addr=0xfffffe000b988958-0xfffffe000b9889d7               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x000033f8 off=0x0119ae38-0x0119e230 addr=0xfffffe000819ee38-0xfffffe00081a2230 rw-/rw-   __DATA_CONST      
+	sz=0x00000020 off=0x0119ae38-0x0119ae58 addr=0xfffffe000819ee38-0xfffffe000819ee58         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000020 off=0x0119ae58-0x0119ae78 addr=0xfffffe000819ee58-0xfffffe000819ee78         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x000025b0 off=0x0119ae78-0x0119d428 addr=0xfffffe000819ee78-0xfffffe00081a1428         __DATA_CONST.__const            
+	sz=0x00000640 off=0x0119d428-0x0119da68 addr=0xfffffe00081a1428-0xfffffe00081a1a68         __DATA_CONST.__kalloc_type      
+	sz=0x000000a0 off=0x0119da68-0x0119db08 addr=0xfffffe00081a1a68-0xfffffe00081a1b08         __DATA_CONST.__kalloc_var       
+	sz=0x000005d8 off=0x0119db08-0x0119e0e0 addr=0xfffffe00081a1b08-0xfffffe00081a20e0         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000150 off=0x0119e0e0-0x0119e230 addr=0xfffffe00081a20e0-0xfffffe00081a2230         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 416 at 0x04ae1fb0
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     1F6C8227-BF8A-3AA6-8C5B-3A3DAC358DB5
+008: LC_SOURCE_VERSION           980.40.13.0.1
+009: LC_FUNCTION_STARTS          offset=0x004aacbd8 size=0x448
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleExecutable`: `ApplePearlSEPDriver`
+- `CFBundleIdentifier`: `com.apple.driver.ApplePearlSEPDriver`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `ApplePearlSEPDriver`
+- `CFBundleNumericVersion`: `16809984`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2016-2017 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.0`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/ApplePearlSEPDriver.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198898839760`
+- `_PrelinkExecutableRelativePath`: `ApplePearlSEPDriver`
+- `_PrelinkExecutableSize`: `349249`
+- `_PrelinkExecutableSourceAddr`: `-2198898839760`
+- `_PrelinkKmodInfo`: `-2198828710360`
+
+## Strings (1742) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `analyticsMatchStop`
+- `allocShareableMemoryHeaderBuffer(kPearlSharedMemoryTransferCameraFrame, allocName)`
+- `PearlCamSendBuffersInfoString_HasEyeOcclusion`
+- `clientEntitlement == kOSBooleanTrue`
+- `payloadSize >= sizeof(cmd_request_message_data_in_v1_t)`
+- `_brunorKeyUnwrappingState != kBrunorKeyUnwrappingStateNone`
+- `ERROR: %s: Unknown sensor type (deviceID: 0x%04x) - assuming %d to be able to proceed\n\n`
+- `dartDict`
+- `_cameraState == kCameraStateFaceDetect || _cameraState == kCameraStateFaceDetectDone`
+- `800msCount`
+- `ERROR: IOPearlCameraFrame::%s: AssertMacros: %s (value = 0x%lx), %s file: %s, line: %d\n\n\n`
+- `pearl-simulateHWEvent`
+- `savageSessionSensorType != kSavageSensorTypeUnknown`
+- `frameType == kPearlFrameTypeBioCapture || frameType == kPearlFrameTypeProbingPattern`
+- `sepDailySize == sizeof(analytics_sep_daily_update_t)`
+- `OSBoundedPtr.h`
+- `This bounded_ptr is pointing to memory outside of what can be represented by a native pointer.`
+- `SavageNVMRev`
+- `ESDFailure`
+- `_state & kLoggingStateTemplates`
+- `(initOptionsMask & INIT_ENGINE_ALLOWED_OPTIONS_MASK) == initOptionsMask`
+- `pearl-wupeYawMax`
+- `options`
+- `PearlCamDoBioCaptureOptionsString_Nonce`
+- `pages.metaPagesISPAddress`
+- `FloodCount`
+- `_frameDebugProcessingQueue->requeueFrameByIdToQueue(*frameId, _driver->_sharedMemoryTransferQueue.get())`
+- `/Library/Caches/com.apple.xbs/DC80B99A-71A7-45F7-A533-4926D6628DC9/TemporaryDirectory.RiHkKs/Sources/Pearl_Kernel/ApplePearlSEPDriver/ApplePearlUserClient.cpp`
+- `payloadSize >= sizeof(cmd_set_system_protected_config_in_v1_t)`
+- `analyticsEnrollBioCapture`
+- `DisplayStatusChanged`
+- `PearlCamSendBuffersInfoString_UserOrientation`
+- `externalMethod`
+- `ispMapFunction`
+- `analyticsResetSecureFaceDetectState`
+- `PearlCachedSystemConfig`
+- `checkSavagePublicKeyValid`
+- `pearl`
+- `analyticsFaceDetectStop`
+- `_holdFramesQueue`
+- `!seqInfo->enrollSequenceInfo.enrollComplete`
+- `commandHoldMatch`
+- `getPearlSelfTestResultWithTimeout`
+- `allocScheme3IOBMD`
+- `B16@?0^{OSObject=^^?i}8`
+- `payloadSize >= sizeof(cmd_complete_save_catacomb_in_v1_t)`
+- `dataSize`
+- `readConfig`
+- `bounded_array_ref: invalid slice provided, the indices are of bounds for the bounded_array_ref`
+- `sendSeaCookieIdentifiersToSEPIfNeeded`
+- `handleCameraPearlSURv2UnwrapOutputNotification`
+- `ERROR: %s: Recovered from HW event\n\n`
+- `SuspendEnrollment`
+- `SetSavageSNUM`
+- `IOPearlFrameQueue`
+- `payloadSize >= sizeof(cmd_get_catacomb_id_in_v1_t)`
+- `virtualAddress`
+- `enrollInit`
+- `fourcc`
+- `_proxStateUpdateTimerEventSource`
+- `site.IOPearlFrameQueue`
+- `sysCfg`
+- `(skipped) `
+- `_frameQueue`
+- `PearlCamStatisticsString_SparseLowPowerFrames`
+- `GetReferenceFramesInfo`
+- `NoCatacombData`
+- `getDataCommand`
+- `!S3DynamicIOBMD->allocated`
+- `PearlCamPowerOnOptionsString_SkipFDRCheck`
+- `options->setObject(\"PearlCamPowerOnOptionsString_GetSensorNonce\", kOSBooleanTrue)`
+- `unwrapSessionRequestSize == sizeof(*unwrapSessionRequest)`
+- `development-cert`
+- `_delayedHoldMatchEventSource`
+- `rawFrameLength >= mainKeyIdxAbsoluteOffset + sizeof(*edlIdx)`
+- `SelfCheckResult`
+- `sensorTypeOut`
+- `handleCameraFrame`
+- `getDeviceSerialNumber() == 0 `
+- `replySize >= sizeof(*capabilities)`
+- `SendBuffers`
+- `_sequenceDebugBuffer`
+- `_logging->releaseDebugForFrameId(frameId)`
+- `analyticsIspServiceMatchingNotificationHandler`
+- `analyticsEnrollFrameFeedBack`
+- `1222222211112222`
+- `/Library/Caches/com.apple.xbs/DC80B99A-71A7-45F7-A533-4926D6628DC9/TemporaryDirectory.RiHkKs/Sources/Pearl_Kernel/ApplePearlSEPDriver/ApplePearlSEPDriver.cpp`
+- `ctx`
+- `ispNodeName`
+- `PearlCamSendBuffersInfoString_FrameIndex`
+- `_cameraState == kCameraStateBioCheck || _cameraState == kCameraStateProbingPattern`
+- `powerOffCompletionHandler`
+- `getFrontCameraPosition`
+- `pearlCtx`
+- `_matchSeqType == kMatchSeqSlowPath`
+- `responseData`
+- `pearl-autoRetryCount`
+- `StreamingStopped`
+- `alsHidInstallListener`
+- `_matchingParameters`
+- `initMappingARMFunctions`
+- `checkSavageProvisioning`
+- `ApplePearlSEPDriver:%s:%s mapped to ANE\n`
+- `S3DynamicIOBMD == &_S3DynamicIOBMDTemp`
+- `PearlCamSendBuffersInfoString_FaceDetectionScore`
+- `clientClose`
+- `_secureStreamingCheckEventSource`
+- `NoError`
+- `_cameraState == kCameraStateFaceDetect || _secureFaceDetectRequested`
+- `PearlCamStatisticsString_SparseFrames`
+- `IllegalRetryMode`
+- `SeaCookieHandleMessage`
+- `descriptor`
+- `alsHidMatchingNotification`
+- `CombinedSequenceAutoValue`
+- `matchInit->data.acmContext.length && (matchInit->data.acmContext.length <= 32)`
+- `ERROR: %s: (enrollmentUpdate -> 0x%x)\n\n`
+- `switchCameraState`
+- `_enrollmentUpdateQueueCount < _enrollmentUpdateQueue.size()`
+- `handleFrameProcessedMessage`
+- `ERROR: IOPearlLogging::%s: BOOT-ARG WARNING: pearl-logging-state-override:0x%x, final state:0x%x !!!\n\n`
+- `function-isp_unmap_iobmd`
+- `(initSprlOptionsMask & INIT_SPRL_ALLOWED_OPTIONS_MASK) == initSprlOptionsMask`
+- `ariesSessionPrepare`
+- `PearlCamStartOptionsString_UnwrapInputData`
+- `analyticsEnrollInfo`
+- `GetSavagePublicKeyValid`
+- `payloadSize >= sizeof(cmd_remove_identity_in_v1_t)`
+- `context`
+- `eventEngagementInfoStruct`
+- `PearlCamSendBuffersInfoString_SensorTemperature`
+- `ERROR: %s: Passcode challenge timeout\n\n`
+- `refDesc`
+- `pageListSize`
+- `PearlCachedUserContext`
+- `enableInstantMatchCancel`
+- `requestSecureFaceDetectForFdet`
+- `setPowerStateGated`
+- `pearl-wupeDistanceMax`
+- `pearl-SFDModeForPowerButton`
+- `Unknown`
+- `\"%s\" @%s:%d`
+- `outData`
+- `_catacombData.data`
+- `_summervilleFWCertInSEP == kBoolNotSet`
+- `AuthCount`
+- `EncryptFDRData`
+- `GenerateSessionData`
+- `pearl-wupeFaceRectHeightMax`
+- `ariesSessionData`
+- `stopCamera`
+- `AppleH10PearlCamInterface`
+- `_aopRomeoServiceMatchingNotifier`
+- `metadata.sequenceNumber == _camera->_frameSequenceCount`
+- `descriptor->getLength() % (1 << PAGE_SHIFT_CONST) == 0`
+- `(camBuffersType == PearlCamSendBuffersType_BioCapture) || (camBuffersType == PearlCamSendBuffersType_FaceDetect)`
+- `logHexdumpBytesWithTitle`
+- `ERROR: IOPearlFrameDebug::%s: AssertMacros: %s (value = 0x%lx), %s file: %s, line: %d\n\n\n`
+- `_driver->_commandGate`
+- `getCachedProtectedConfig`
+- `ApplePearlSEPDriver:%s Could not map object to ANE. ArmFunction:%p Allocated:%d\n`
+- `start`
+- `analyticsPassChallengeResult`
+- `title`
+- `PearlCamSendBuffersInfoString_MDData`
+- `templateListSize >= sizeof(*templateList)`
+- `enqueueCameraFrame`
+- `_dcnKernelsLoaded == kBoolNotSet`
+- `faceDetectInfo`
+- `SavageSNUM`
+- `data->getLength() == 32`
+- `unwrapOutputNonce`
+- `options->setObject(\"PearlCamStartOptionsString_DeliverGMCFrame\", kOSBooleanTrue)`
+- `PearlCamStartOptionsString_Nonce`
+- `snProperty`
+- `site.dma_data_pages_t`
+- `response`
+- `nonceData`
+- `refSurface`
+- `com.apple.BiometricKit`
+- `free`
+- `ProbeDBAvailable`
+- `LoadSavageFWCertificate`
+- `pearl-SFDModeForLiftToWake`
+- `_frameQueue->enqueueObject(OSDynamicPtrCast<IOPearlFrame>(frame))`
+- `analyticsCameraError`
+- `CancelEnrollment`
+- `IOPearlCameraFrame`
+- `_alsHidService->open(_driver, 0, nullptr, ((IOHIDEventService::Action) __builtin_load_member_function_pointer(*_driver, &ApplePearlSEPDriver::alsHidEventServiceCallback) ? : (IOHIDEventService::Action) OSMetaClassBase:: _ptmf2ptf(_driver, (void (OSMetaClassBase::*)(void)) &ApplePearlSEPDriver::alsHi`
+- `sequenceDebugInit`
+- `payloadSize >= sizeof(cmd_process_frame_metadata_in_v1_t)`
+- `feedback`
+- `me->_cameraProcessingLock`
+- `StartMatching`
+- `propertyPtr`
+- `err == 0 `
+- `*outSize >= sizeof(cmd_get_free_identity_count_out_v1_t)`
+- `ERROR: %s: Enrollment timeout\n\n`
+- `VerifyFDRData`
+- `SetProjectorSNUM`
+- `payloadSize >= sizeof(cmd_get_cmd_protocol_version_in_v1_t)`
+- `false`
+- `allignedMD`
+- `fallback`
+- `function-ane1_power_func`
+- `_reporters`
+- `analyticsCurrentEventStop`
+- `ReleaseStreamingBuffers`
+- `camPearlUseEngagedFlag`
+- `delayedHoldMatchEventSchedule`
+- `RemoveIdentity`
+- `wrappedKey`
+- `handleCommandModeSwitch`
+- `streamingSessionDataLength == sizeof(*streamingSessionData)`
+- `overrideIsPearlDisabled || !isPearlDisabled(nullptr)`
+- `analyticsFaceDetectResult`
+- `250msCount`
+- `JOn`
+- `_rStandbyReporter`
+- `PearlSURv2`
+- `GetReferenceFramesInfoRecord`
+- `site.IOPearlCameraFrame`
+- `payloadSize >= sizeof(cmd_set_logging_state_in_v1_t)`
+- `(replySize == 0) || (replySize == sizeof(enroll_meta_feedback_t))`
+- `1211222211`
+- `ApplePearlSEPDriver:%s Object%s mapped to ISP\n`
+- `board-id`
+- `DenseCount`
+- `pearl-enable-log-hexdump`
+- `withCameraFrame`
+- `checkCameraFramesHeldLimit`
+- `CombinedSequenceEnabled`
+- `psd3->hdr.version != (5)`
+- `(sequenceType == kPearlCamSequenceType_Enrollment) || (sequenceType == kPearlCamSequenceType_Authentication) || (sequenceType == kPearlCamSequenceType_PearlSURv2)`
+- `SetLoggingState`
+- `SetADOverride`
+- `IOBioUtils::isInternal() || !enrollInit->dummyEnrollment`
+- `handleResultStatisticsPhaseMessage`
+- `_logging`
+- `stopAndPowerOffCamera() == 0 `
+- `analyticsGetDailyUpdate`
+- `PearlSUR`
+- `site.IOPearlSharedMemoryTransferQueue`
+- `commandStopMatch`
+- `ApplePearlSEPDriver:%s: %s IOBMD:%p VA:%p dva offset:%X size:%u\n`
+- `doubleOrder`
+- `matchResultQueueDequeue`
+- `PassCount`
+- `payloadSize >= sizeof(cmd_get_free_identity_count_in_v1_t)`
+- `sequenceInfoSize >= sizeof(sequence_info_t)`
+- `_delayedFaceDetectMessage`
+- `aopDriverInterestNotificationHandler`
+- `checkCameraState`
+- `frameDebug`
+- `ERROR: %s: sprl state machine initialization failed\n\n`
+- `PearlCamPearlSURDataString_UnwrapOutputIV`
+- `site.IOPearlCameraFrameInterface`
+- `PearlCamSendBuffersInfoString_HasUnsupportedGlassesForUnlock`
+- `commandStartFaceDetect`
+- `fdetInit`
+- `commandStopEnroll() == 0 `
+- `sessionData`
+- `(_cameraState == kCameraStateFaceDetectDone) || (_cameraState == kCameraStateStreamingFlood)`
+- `ERROR: %s: HW event detected (0x%x)\n\n`
+- `GetPlatformHasMirage`
+- `12221222112111`
+- `payloadSize >= sizeof(cmd_map_s3_in_v1_t)`
+- `ERROR: %s: (match -> 0x%x)\n\n`
+- `changePearlDeviceState`
+- `pearl-SFDAddedDelay1`
+- `getCommandMode() == kCommandModeIdle`
+- `attentionSequenceCanContinue`
+- `getDeviceInfo`
+- `payloadSize > 0`
+- `payloadSize >= sizeof(cmd_enable_combined_sequence_in_v1_t)`
+- `delayedHoldMatchHandler`
+- `OSObject::init()`
+- `IOPearlSharedMemoryTransferQueue`
+- `IOPearlFrameSupport`
+- `handleClearProxState`
+- `sendMatchEventToClients`
+- `kcvObj && (kcvObj->getLength() == 3)`
+- `100msCount`
+- `osBoolean`
+- `patternType`
+- `com.apple.tracked.ApplePearlSEPDriver`
+- `enrollmentUpdateQueueDequeue`
+- `PrepareSaveCatacomb`
+- `GetAttestationToPDAK`
+- `processCameraFrame`
+- `_driver->_sharedMemoryTransferQueue->enqueueObject(frame)`
+- `Orientation`
+- `params`
+- `timeoutMS > 0`
+- `nvmRevObj && (nvmRevObj->getLength() == 1)`
+- `result`
+- `errISP == 0 `
+- `sessionDataSize == sizeof(session_data_t)`
+- `PearlCamSendBuffersInfoString_CropRectScaleFactorNumerator`
+- `IOBioSharedMemoryTransferQueue::init(name, capacity)`
+- `sendPearlDeviceEvent`
+- `handleSEPMessage`
+- `IOPearlCameraContext`
+- `IOPearlCameraFrameInterface`
+- `i8@?0`
+- `enqueueDebugForFrame`
+- `seqInfo->matchSequenceInfo.probingPatternDone == _loggingProbingPatternDone`
+- `ERROR: %s: Prewarm failure detected, _prewarmFailReason:%d\n\n`
+- `options->setObject(\"PearlCamStartOptionsString_DeliverFDFramesAfterFaceFound\", kOSBooleanTrue)`
+- `bcOpt`
+- `AttDur`
+- `SaveCatacombData`
+- `/Library/Caches/com.apple.xbs/DC80B99A-71A7-45F7-A533-4926D6628DC9/TemporaryDirectory.RiHkKs/Sources/Pearl_Kernel/ApplePearlSEPDriver/IOPearlLogging.cpp`
+- `unmapMemoryFromSEP`
+- `(sensorFamily == kSensorFamilyBrunor) || (sensorFamily == kSensorFamilyAries)`
+- `S3DynamicIOBMD->IOBMD.get()`
+- `Processing`
+- `analyticsTemplateInfoHandler`
+- `analyticsMatchProcessFailedAttemptCounter`
+- `GetSavageProvisioningData`
+- `GetSensorFamilyCommand`
+- `ERROR: %s: Display check failed\n\n`
+- `forceBioLockoutSpecific`
+- `!_brunorWrappedKey`
+- `unwrapSessionRequest`
+- `buffers`
+- `PowerOff`
+- `Enrollment`
+- `RestartMatching`
+- `pearl-wupePitchMin`
+- `(getCommandMode() == kCommandModeMatch) || (getCommandMode() == kCommandModeIdle)`
+- `FaceDetectDone`
+- `PearlCamSendBuffersInfoString_ERStatus`
+- `size`
+- `PrimaryUsage`
+- `ApplePearlSEPDriver:%s Could not unmap object from ANE. ArmFunction:%p\n`
+- `_matchSeqType != kMatchSeqPasscodeChallenge`
+- `setLoggingFramesEnabled`
+- `_hasDynamicScheme3 == kBoolTrue`
+- `wrappedKeyDataSize == (80)`
+- `IODeviceTree:/chosen`
+- `finalizeSKSStateHandling`
+- `isAutoRetryInternalAutoEnabled`
+- `_preCheckReporter`
+- `sequenceInfo->sequenceType == kPearlSeqTypeEnrollment`
+- `PowerOn`
+- `matchResult->phase == kMatchPhaseBioCheck`
+- `PearlCamPearlSURDataString_EphemeralPublicKeySignature`
+- `ApplePearlSEPDriver:%s Object%s mapped to ANE\n`
+- `SetAutoRetryMode`
+- `SetDummyWrappedFDRDataEncryptionKey`
+- `surface`
+- `pearl-logging-state-override`
+- `_faceDetectQueue->enqueueObject(OSDynamicPtrCast<IOPearlFrame>(frame))`
+- `loggingLogSequenceInfo`
+- `data->getLength() == sizeof(unwrapResponse.unwrapOutputNonce)`
+- `ApplePearlSEPDriver:%s Object%s unmapped from ANE\n`
+- `NOT FOUND`
+- `PearlCamStartOptionsString_DeliverGMCFrame`
+- `Attention`
+- `selectSecureFaceDetectFlowForMatch`
+- `GetADParameters`
+- `_hasMirage == kBoolTrue`
+- `payloadSize >= sizeof(cmd_set_secure_fd_state_in_v1_t)`
+- `site.ApplePearlSEPDriver`
+- `ERROR: %s: Unsupported message received, type:%d\n\n`
+- `121111121222121211212111111111111111111111211211222222221222112222222211112111112122221212111222222222222121122211122222221222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222212222222212212222222221212222222222122212222222222222222121211222222`
+- `_frameProcessingQueue->releaseFrameId(frameId)`
+- `(restore mode)`
+- `SetSavageUID`
+- `hw.osenvironment`
+- `payloadSize >= sizeof(cmd_set_protected_config_in_v1_t)`
+- `secureFaceDetectTimeoutHandler`
+- `function-isp_map_iobmd`
+- `ERROR: %s: kPearlCamEngagementInfo_Success but face not detected!\n\n`
+- `%s:%s%s\n`
+- `PearlCamRect_H`
+- `!_cachedSysConfig || _cachedSysConfig->_enabledBio`
+- `PearlCamStartOptionsString_HMACKey2E`
+- `analyticsBioLockoutEnter`
+- `PearlCamSendBuffersInfoString_CropRectScaleFactorDenominator`
+- `ApplePearlUserClient`
+- `romeo-b2b-unplug-detected`
+- `function-ane_unmap_iobmd`
+- `savageUIDObj`
+- `ApplePearlSEPDriver:%s AppleARMFunctions mapped\n`
+- `PearlSURUnwrapOutput`
+- `rawData->appendValue('\\0')`
+- `_armIODriver`
+- `PearlCamStatisticsString_Num800mSecCoolDownPeriods`
+- `IOPearlFrame::init()`
+- `pearl-dbg-pp-ctrl`
+- `checkDisableConditionsHandler`
+- `pearl-SFDAddedDelay2`
+- `PRLUsage`
+- `SetEntitlementOverride`
+- `HandleDummyMode`
+- `_camera->_sepSharedBufferPool`
+- `success`
+- `sepEndpoint`
+- `requestANEPowerAssertion(kANEPowerModeOff) == 0 `
+- `matchInit && matchInitLength >= sizeof(*matchInit)`
+- `during`
+- `makeProcessingThreadsNonRealTime`
+- `PrimaryUsagePage`
+- `com.apple.private.applepearl.allow`
+- `ERROR: %s: AssertMacros: %s (value = 0x%lx), %s file: %s, line: %d\n\n\n`
+- `DISABLED`
+- `ApplePearlSEPDriver:%s ISP Powered On\n`
+- `pages.refPagesISPAddress`
+- `GetLoggingData`
+- `GetRefFramesInfo`
+- `rawData->appendBytes(buff, static_cast<unsigned int>(buffOffset))`
+- `performSpecificCommandGated`
+- `site.match_result`
+- `parameters`
+- `_matchSeqType == kMatchSeqPasscodeChallenge`
+- `PearlCamSendBuffersInfoString_HasOcclusion`
+- `PearlCamSendBuffersInfoString_LuxLevel`
+- `pattern`
+- `_cameraContext`
+- `PearlCamSendBuffersInfoString_AttentionScore`
+- `SignDataWithBrunorPermanentKey`
+- `ENABLED`
+- `savageSNUMObj->getLength() == 20`
+- `getCommandMode() == kCommandModeIdle || getCommandMode() == kCommandModeNone`
+- `PearlCamStartOptionsString_EnablePeriocular`
+- `SeaCookieSetSensorWrappingKey`
+- `PearlCamSendBuffersInfoString_HasGlasses`
+- `_shareableMemoryDescriptors`
+- `payloadSize >= sizeof(cmd_get_catacomb_hash_in_v1_t)`
+- `unwrapOutputSensorTag`
+- `PearlCamStartOptionsString_EnableADNetwork`
+- `handleCameraStatisticsTotalMessage`
+- `ReportError`
+- `fdrDMA->dmaDataPagesCount || fdrDMA->vmAddress`
+- `_cameraStateEventSource`
+- `bytes && bytesLength`
+- `payloadSize >= sizeof(cmd_no_catacomb_in_v1_t)`
+- `checkHwCapabilities() == 0 `
+- `matchResultMsg`
+- `sender`
+- `rawSurface`
+- `processFaceDetectMessage`
+- `site.IOPearlLogging`
+- `_fdrDataBuffer->getMemory()`
+- `sensorFamily == kSensorFamilyAries`
+- `userCtx`
+- `IdentityMigrationState`
+- `ApplePearlSEPDriver:%s: %s IOBMD VA:%p\n`
+- `ApplePearlSEPDriver:%s ANE Powered On\n`
+- `armIODriver`
+- `mapping`
+- `matchInitLength >= sizeof(*matchInit) + length`
+- `*outSize >= dataBufferLength`
+- `ForceBioLockout`
+- `_cachedSysConfig`
+- `PearlCamPowerOnDataString_SensorNonce`
+- `_ariesEphPublicKeySignature->getLength() == sizeof(sessionPrepareResponse.ariesEphPublicKeySig)`
+- `ispUnmapFunction`
+- `ApplePearlSEPDriver:%s before mapDynamicObject fourcc:%s IOBMDTest:%p dvaOffset:0x%X objSize:%d\n`
+- `PearlCam_MetaBufferDARTAddress`
+- `FailCount`
+- `analyticsPassChallengeStop`
+- `ERROR: %s: Savage certificate loading failed\n\n`
+- `_ispMapFunction`
+- `PearlCamStartOptionsString_KDFNonce`
+- `enrollmentUpdateQueueEnqueue`
+- `GetCatacombId`
+- `Count`
+- `PearlCamSendBuffersInfoString_FrameCount`
+- `templateList`
+- `data->getLength() == sizeof(unwrapResponse.unwrapOutputKeyHmac)`
+- `getIspServiceForCamera`
+- `sendFaceDetectResultToClients`
+- `romeo`
+- `_fdrDataBuffer->getMemory()->getLength() >= (((vm_offset_t)(dataSize) + ((1 << PAGE_SHIFT_CONST)-1)) & ~((vm_offset_t)((1 << PAGE_SHIFT_CONST)-1)))`
+- `savageChipIDObj->getLength() == 4`
+- `data->getLength() == ((256 / 8) * 2)`
+- `analyticsProxStateChanged`
+- `__os_warn_unused(__builtin_sub_overflow((mach_continuous_time()), (_analyticsFaceDetectEvent.analyticsFaceDetectStartTime), (&_analyticsFaceDetectEvent.analyticsFaceDetectProxStateInfo.proxClearedEndTime))) == 0 `
+- `1211111212221212111111111112112`
+- `PearlCamStartOptionsString_ADNetworkParameters`
+- `sensorFamilyOut`
+- `payloadSize >= sizeof(cmd_face_detect_mode_in_v1_t)`
+- `_secureStreamingCheckEnrollmentFailure == 0 `
+- `_ariesEphPublicKeySignature`
+- `aneUnmapFunction`
+- `_camera`
+- `IOReportLegendPublic`
+- `analyticsMatchPhaseDone`
+- `GetBrunorPermanentKey`
+- `replySize >= sizeof(uint32_t)`
+- `savageChipIDObj`
+- `doBioCapture`
+- `while`
+- `bytesLength && bytesLength <= BYTES_MAX`
+- `The range of valid memory is too large to be represented by this type, or [begin, end) is not a well-formed range`
+- `PearlCamSendBuffersInfoString_Roll`
+- `handleCameraPearlSURNotification`
+- `PearlCamDoSecretPatternOptionsString_IVE`
+- `dropBiometricTokens`
+- `rawData`
+- `ApplePearlSEPDriver`
+- `deviceIDObj && (deviceIDObj->getLength() == 2)`
+- `ERROR: %s: Sensor type not supported anymore\n\n`
+- `camSequenceType == kPearlCamSequenceType_Enrollment`
+- `pageCount <= 4294967295U`
+- `analyticsReceivedFaceDetectResult`
+- `site.PearlCachedUserContext`
+- `S3DynamicIOBMD->IOBMD == nullptr`
+- `_commandGate`
+- `ERROR: %s: Triggering HW event recovery\n\n`
+- `SetSavageChipID`
+- `PearlCamSendBuffersInfoString_UserEngagementStatus`
+- `unsignedIntValueForDictionaryKey`
+- `uidObj`
+- `PearlCamStartOptionsString_DeliverFDFramesAfterFaceFound`
+- `checkHwCapabilities`
+- `disableInstantMatchCancel`
+- `GetFreeIdentityCount`
+- `SignDataWithBrunorCollectionKey`
+- `allocShareableMemoryHeaderBuffer`
+- `alsHidRegisterCallback`
+- `data->getLength() == sizeof(unwrapResponse.unwrapOutputSensorIV)`
+- `outBufferSize <= data->getLength()`
+- `keyData`
+- `PearlCamStatisticsString_EngagementInfo`
+- `_enrollmentUpdateEventSource`
+- `pageCount`
+- `400msCount`
+- `EnableCombinedSequence`
+- `PearlCamRect_Y`
+- `releaseFrameId`
+- `ERROR: %s: Not a matchForUnlock - disable passcode challenge\n\n`
+- `enrollInfo`
+- `requestSecureFaceDetectRaw`
+- `ERROR: %s: Disabling Pearl\n\n`
+- `handleCameraPearlSURv2PowerOnNotification`
+- `ApplePearlSEPDriver:%s Could not unmap object from ISP. ArmFunction:%p\n`
+- `contextIdxOut`
+- `analyticsMatchFaceDetectResult`
+- `commandStopEnroll`
+- `checkForPasscodeShortcut`
+- `_aneMapFunction`
+- `PearlCamDoBioCaptureOptionsString_IVE`
+- `PearlCamDoSecretPatternOptionsString_LFSRE`
+- `root`
+- `_matchResultEventSource`
+- `pageList`
+- `wrappedKey->getLength() == (80)`
+- `BCheck`
+- `_camera->_sepSharedBufferPoolPP`
+- `dequeueFrameToQueue`
+- `ERROR: IOPearlSharedMemoryTransferQueue::%s: AssertMacros: %s (value = 0x%lx), %s file: %s, line: %d\n\n\n`
+- `ERROR: IOPearlLogging::%s: CameraFramesHeld: %d > %d :_cameraFramesHeldLimit, dropping %u logging frames...\n\n`
+- `notifier`
+- `written == dataSize`
+- `pauseFaceDetectTimer`
+- `unwrapHostTag`
+- `cameraFrameHandler`
+- `analyticsMatchResult`
+- `PearlSURPairingKeyReady`
+- `PrewarmCamera`
+- `%s`
+- `passcodeChallengeTimeoutHandler`
+- `matchResult`
+- `isPearlDisabledSpecific`
+- `PearlCamSendBuffersInfoString_FaceRect`
+- `SecretCaptureComplete`
+- `getFaceDetectInfo`
+- `getMotionDetectInfo`
+- `newService`
+- `mem`
+- `pearl-dbg-ctrl`
+- `requestSecureFaceDetectForMatch`
+- `ivE`
+- `site.analytics_daily_update_t.analytics_template_info_t`
+- `LoadFDRClass`
+- `_frameDebugProcessingQueue->releaseFrameId(*frameId)`
+- `bufferSize == sizeof(uint32_t)`
+- `site.PearlCachedSystemConfig`
+- `seqInfo->matchSequenceInfo.passcodeChallengeAllowed == _passcodeChallengeAllowed`
+- `delayedHoldMatchEventCancel`
+- `selectSecureFaceDetectFlowForFdet`
+- `_brunorKeyUnwrappingResult == 0 `
+- `me`
+- `_cameraProcessingLock`
+- `PearlCamBufferType_Metadata`
+- `psd3->hdr.version > (5) && psd3->hdr.version <= (6)`
+- `__os_warn_unused(__builtin_add_overflow((payloadSize), (delta), (&dataBufferLength))) == 0 `
+- `unwrapOutputKeyHmac`
+- `cameraStateHandlerSwitch`
+- `rawMap`
+- `camErr != kPearlCamErrorCode_FDRNotValidated`
+- `EphemeralPublicKeyOutput`
+- `PearlCamSendBuffersInfoString_ProjectorMode`
+- `processFaceDetectMessage(_delayedFaceDetectMessage.get(), forceNoFD) == 0 `
+- `pearl-SFDModeForTapToWake`
+- `secureStreamingCheckHandler`
+- `streamingSessionData::ivE`
+- `bcOptSize == sizeof(biocapture_options_t)`
+- `CheckSavageProvisioning`
+- `StartMatchingPhase`
+- `request->verifyOnly || _refFramesInfoRecordInSEP == kBoolNotSet`
+- `unwrapOutputSensorIV`
+- `PearlCamStatisticsString_DenseFrames`
+- `ProbingPattern`
+- `12121111122112`
+- `processFrameUserFeedback`
+- `PearlCamStartOptionsString_HostTag`
+- `dataLength`
+- `_proCheckReporter`
+- `FrameReceivedTimeout`
+- `FaceDetect`
+- `memory`
+- `readSize == sizeof(pearl_config_get_t)`
+- `armIOCandidate`
+- `requestANEPowerAssertion`
+- `ApplePearlSEPDriver:%s Object allocated and%s mapped to SEP\n`
+- `powerOnAndStartCamera`
+- `analyticsEnrollStop`
+- `FaceDetectStatus`
+- `Notification`
+- `!isPearlDisabled(nullptr)`
+- `startMatchingInSEP`
+- `hwEventRecoveryHandler`
+- `frame->getFaceDetectInfo(&faceDetectInfo)`
+- `SetSecureFaceDetectState`
+- ` not`
+- `pearl-hw-metrics`
+- `PearlCamSendBuffersInfoString_Pitch`
+- `aneMapIobmd`
+- `PearlCamStartOptionsString_DeliverFDFrames`
+- `_cameraMatchingNotifierH10`
+- `analyticsCurrentEventCancel`
+- `analyticsMatchFaceDetectFallback`
+- `getBufferMemoryDescriptor`
+- `FrameDebugProcessing`
+- `mapMemoryForSEP`
+- `state.sessionID == _secureFaceDetectSessionID`
+- `_cameraState == kCameraStatePoweredOff`
+- `stopAndPowerOffCamera`
+- `analyticsCurrentEventFinish`
+- `IOPearlExclaveCameraFrame`
+- `PearlCamSendBuffersInfoString_RequestedPPMBudget`
+- `ERROR: IOPearlFrameQueue::%s: AssertMacros: %s (value = 0x%lx), %s file: %s, line: %d\n\n\n`
+- `payloadSize > sizeof(catacomb_header_t)`
+- `PearlCamDoBioCaptureOptionsString_SecretPatternType`
+- `PearlCamSendBuffersInfoString_SequenceID`
+- `OverridePCECalibration`
+- `SeaCookieGetSigningNonce`
+- `payload`
+- `pearl-sep`
+- `me->_cameraProcessingThread`
+- `_cameraMessageQueue`
+- `sendMessageToCamera`
+- `IspIsPoweredOn`
+- `motionDetectInfo`
+- `replySize >= (__builtin_offsetof(enrollment_info_t, poseBinStatus) + enrollInfo->pitchBinsCount * enrollInfo->yawBinsCount)`
+- `_attCheckReporter`
+- `analyticsPassChallengeStart`
+- `PSSetSensorUnwrapData`
+- `psdHeader->magic == (0x45674567) || (psdHeader->magic == (0xdead4567) && isV63p1Psd2MagicAllowed())`
+- `deallocScheme3IOBMD`
+- `makeProcessingThreadsNonRealTime() == 0 `
+- `DoBioCapture`
+- `bounded_array_ref: Can't construct from a size greater than UINT32_MAX`
+- `PearlCamSendBuffersInfoString_SequenceType`
+- `ERROR: IOPearlLogging::%s: Unexpected messageType:%u received!\n\n`
+- `orientation < alsOrientationTypeCount`
+- `payloadSize >= sizeof(cmd_alloc_map_s3c1_in_v1_t)`
+- `gatherSequenceInfo`
+- `commandCancel`
+- `ispMapIobmd`
+- `dictResult`
+- `analyticsFaceDetectTimeout`
+- `statistics`
+- `extractMessageInfo`
+- `payloadSize >= sizeof(cmd_get_sks_lock_state_in_v1_t)`
+- `ERROR: %s: Match operation failed\n\n`
+- `analyticsReceivedFrame`
+- `analyticsGetTemplateInfo`
+- `GetAttestationToBrunorCollectionKey`
+- `PSClearSession`
+- `bounded_ptr<T>::operator*: Dereferencing this pointer would access memory outside of the bounds set originally`
+- `getShareableMemoryHeader`
+- `pearl-clock-assertion`
+- `pearl-wupeFaceRectWidthMax`
+- `sizeof(_savageSessionOptions.fwNonce) == _brunorBootNonce->getLength()`
+- `_passcodeChallengeTimeoutEventSource`
+- `analyticsGetTemplateInfo() == 0 `
+- `%04zx: `
+- `startNewFrameSequence`
+- `messageFrameMetaData`
+- `122222222`
+- `pagesDMA`
+- `isPearlDisabled`
+- `lfsrE`
+- `ERROR: %s: Unknown FaceDetect engagementInfo value: 0x%x\n\n`
+- `ProxStateChanged`
+- `rect`
+- `transferQueue`
+- `releaseCamera`
+- `(_cameraState == kCameraStateIdle) || (_cameraState == kCameraStatePearlSURv2) || (_cameraState == kCameraStateAriesSessionPrepare)`
+- `ERROR: %s: %s (%d): unexpected cameraState %u\n\n`
+- `GetSequenceInfo`
+- `bufferSize >= sizeof(templateList->count)`
+- `_runningPasscodeChallenge`
+- `pearl-useExclaves`
+- `powerOnCamera`
+- `uint32FromOSDictNumber`
+- `stop`
+- `GetSKSLockState`
+- `ProcessEnrollMetadata`
+- `seqInfo->enrollSequenceInfo.enrollComplete == _enrollFinished`
+- `frameType == kPearlFrameTypeFaceDetect`
+- `GetPearlSelfTestResultCommand`
+- `GetSignedRefFrame`
+- `enqueued`
+- `matchResult->matched`
+- `ispUnmapIobmd`
+- `_brunorBootNonce`
+- `_cameraState == kCameraStateBioCheck || _cameraState == kCameraStateStreamingFlood`
+- `pearlHWMetricsProperty`
+- `GetCmdProtocolVersion`
+- `RemoveUserData`
+- `ConfirmCatacombData`
+- `handleSecureFaceDetectState`
+- `memcmp(edlIdx->padding0, paddingBytes, sizeof(edlIdx->padding0)) == 0 `
+- `copyCamIORegPropertyWithTimeout`
+- `PearlCamPearlSURDataString_SensorTag`
+- `_ariesSessionPrepareResult == 0 `
+- `length`
+- `GetSPRLInfo`
+- `!_secureStreamingCheckInProgress && (_brunorKeyUnwrappingState == kBrunorKeyUnwrappingStateNone) && (_cameraState != kCameraStateAriesSessionPrepare)`
+- `replySize == sizeof(match_result)`
+- `pubKeyValid`
+- `GetSystemProtectedConfig`
+- `GetPDAK`
+- `BioCheck`
+- `sendEnrollFailMessage`
+- `streamingSessionData::hostMasterKeyIdx`
+- `options->setObject(\"PearlCamStartOptionsString_HighPriority\", kOSBooleanTrue)`
+- `provider`
+- `AttCheck`
+- `SetAriesSessionPrepareResponse`
+- `payloadSize >= __builtin_offsetof(cmd_load_ref_frames_info_record_in_v1_t, refFramesInfoRecordData)`
+- `ERROR: %s: Unexpected camera state %d in command mode match\n\n`
+- `moreMessages`
+- `inData`
+- `phys`
+- `PearlCamStatisticsString_Num250mSecCoolDownPeriods`
+- `!_savageKeyTimedOut`
+- `S3DynamicIOBMD->objSize == 0`
+- `PowerUpFailure`
+- `SecretCaptureTimeout`
+- `SeaCookieSetNonceSignature`
+- `\n`
+- `front-cam-offset-from-center`
+- `ERROR: ApplePearlUserClient::%s: AssertMacros: %s (value = 0x%lx), %s file: %s, line: %d\n\n\n`
+- `payloadSize >= sizeof(cmd_match_mode_in_v1_t)`
+- `pearl-wupePitchMax`
+- `proxStateUpdateTimerHandler`
+- `dequeueAllFramesToQueue`
+- `_driver->_cameraContext->initFrameDebugLogging(_driver->_allocName, frameDebugDataSize, frameDebugDataProbeSize, _driver->_sep)`
+- `seqInfo->matchSequenceInfo.bioCheckDone == _loggingBioCheckDone`
+- `checkProxStateAtOperationStart`
+- `FirmwareFailure`
+- `Stop`
+- `enqueuedInSEP`
+- `PearlCamStatisticsString_ProbeDenseFrames`
+- `AllocateAndMapObjectS3C1`
+- `_brunorWrappedKey`
+- `options->setObject(\"PearlCamStartOptionsString_SkipFaceDetect\", kOSBooleanTrue)`
+- `SparseCount`
+- `PearlCamSendBuffersInfoString_OcclusionDetectionScore`
+- `!_cachedSysConfig || isEnabledForUnlock()`
+- `function-ane_power_func`
+- `PearlCamStartOptionsString_StartPrepareSession`
+- `SetUnwrapSessionResponse`
+- `enrollmentUpdateHandler`
+- `_brunorKeyUnwrappingState == kBrunorKeyUnwrappingStateUnwrapSequence`
+- `options->setObject(\"kPearlCamStartOptionsString_EnableMD\", kOSBooleanTrue)`
+- `clearFaceDetectResult`
+- `ERROR: %s: YG/MB error detected\n\n`
+- `NoCatacomb`
+- `logTemplateLists`
+- `payloadSize >= sizeof(cmd_enroll_mode_in_v1_t)`
+- `commandSuspendEnrollment`
+- `deduceSequenceRetryType`
+- `EncryptFDRDataSkipChecks`
+- `12121112222222222211`
+- `aneMapFunction`
+- `makeProcessingThreadsRealTime`
+- `analyticsProxStateHandleClear`
+- `HandleDummyModeCommand`
+- `PearlCamSendBuffersInfoString_ProjectorSubMode`
+- `startRepairSprlInitialization`
+- `kdfNonceData`
+- `_secureFaceDetectTimeoutEventSource`
+- `PearlCamStatisticsString_TotalFrameCount`
+- `PearlCamSendBuffersInfoString_DistanceToUserInMM`
+- `IOBioUtils::isInternal()`
+- `ERROR: %s: Romeo Serial number check failed\n\n`
+- `PearlCam_ReferenceBufferDARTAddress`
+- `_indicatorRequestTimerEventSource`
+- `platform`
+- `GetAriesStreamingSessionData`
+- `AriesSessionPrepare`
+- `bytesWritten && static_cast<size_t>(bytesWritten) < buffRemaining`
+- `PearlCamStartOptionsString_UnwrapInputMac`
+- `GetAnalyticsTemplateInfo`
+- `Disabling`
+- `_camIn`
+- `payloadSize >= sizeof(cmd_confirm_save_catacomb_in_v1_t)`
+- `camSuspend`
+- `enrollmentUpdateQueueInit`
+- `bounded_ptr<T>::discard_bounds: Discarding the bounds on this pointer would lose the fact that it is outside of the bounds set originally`
+- `handleFaceDetectFrames`
+- `IOBioUtils::isInternal() || !matchInit->dummyMatch`
+- `pauseFaceDetectTimerCmd`
+- `number`
+- `ariesGetStreamingSessionData`
+- `aneUnmapIobmd`
+- `PearlCamDoSecretPatternOptionsString_Nonce`
+- `_driver->_sharedMemoryTransferQueue`
+- `_savageSessionOptions.sensorType == kSavageSensorTypeAries || _savageSessionOptions.sensorType == kSavageSensorTypeHamal`
+- `_analyticsTemplateInfoEventSource`
+- `PearlCamRect_X`
+- `cmd->value < kAutoRetryModeCount`
+- `payloadSize >= sizeof(cmd_sea_cookie_handle_message_in_v1_t)`
+- `psd3->hdr.magic == (0x45674567) || (psd3->hdr.magic == (0xdead4567) && isV63p1Psd2MagicAllowed())`
+- `ERROR: %s: DCN Kernels loading failed\n\n`
+- `PearlCamSendBuffersInfoString_DARTData`
+- `_analyticsIspServiceMatchingNotifier`
+- `initWithTask`
+- `userID != 4294967295U`
+- `signingNonce.data`
+- `analyticsEnrollStart`
+- `Busy`
+- `Start`
+- `DoSecretPattern`
+- `site.IOPearlFrame`
+- `site.IOPearlFrameDebug`
+- `dataBuffer`
+- `function-ane_map_iobmd`
+- `ApplePearlSEPDriver:%s: %s dva offset:%X size:%u\n`
+- `message`
+- `GetAnalyticsDailyUpdate`
+- `UnwrapFDRDataEncryptionKey`
+- `ERROR: IOPearlLogging::%s: AssertMacros: %s (value = 0x%lx), %s file: %s, line: %d\n\n\n`
+- `templateListBuffer`
+- `savageUIDObj->getLength() == 16`
+- `mapScheme3IOBMD`
+- `AttCount`
+- `__os_warn_unused(__builtin_sub_overflow((mach_continuous_time()), (_analyticsMatchEvent.analyticsMatchStartTime), (&_analyticsMatchEvent.analyticsMatchProxStateInfo.proxClearedEndTime))) == 0 `
+- `StartNewMatchAtttempt`
+- `sequenceBioCapture`
+- `payloadSize >= sizeof(cmd_get_protected_config_in_v1_t)`
+- `pearlCtx->_cachedCfgValid`
+- `ApplePearlSEPDriver:%s after mapDynamicObject fourcc:%s IOBMDTest:%p dvaOffset:0x%X objSize:%d\n`
+- `getPagesFromMemoryDescriptor`
+- `GetPeriocularMatchState`
+- `bufferSize == sizeof(logging_debug_object_sizes_t)`
+- `loadFDRClass`
+- `resetSecureFaceDetectState`
+- `sendFaceDetectFeedbackToClients`
+- `FDRValidated`
+- `_cameraState == kCameraStateIdle`
+- `ApplePearlSEPDriver:%s Object%s unmapped from ISP\n`
+- `options->setObject(\"PearlCamStartOptionsString_EnableADNetwork\", kOSBooleanFalse)`
+- `GetBrunorCollectionKey`
+- `pearl-wupeRollMax`
+- `faceDetectTimeoutHandler`
+- `_frameProcessingQueue`
+- `LoadDCNKernels`
+- `%02x%s`
+- `init`
+- `12112222222222122222221`
+- `PearlCamSendBuffersInfoString_Yaw`
+- `alsHidEventServiceCallback`
+- `data->getLength() == sizeof(unwrapResponse.unwrapOutputKey)`
+- `nonce`
+- `key`
+- `IOPearlCameraFrameInterface::init()`
+- `frameQueue`
+- `IODeviceTree:/product`
+- `projectorSNUMObj->getLength() == 17`
+- `unwrapInputKeyHmac`
+- `PearlCamStatisticsString_SequenceID`
+- `newstate`
+- `analyticsClearEventContext`
+- `Cancel`
+- `PearlCamSendBuffersInfoString_IsCameraObstructed`
+- `ERROR: IOPearlSharedMemoryTransferQueue::%s: Two consecutive depth frames!\n\n`
+- `cmd`
+- `site.sequence_info_t`
+- `PearlCamPearlSURDataString_EphemeralPublicKeyX`
+- `ariesFrameGetSensorIndexes`
+- `analyticsRequestTemplateInfo`
+- `returnedSize == 0 || returnedSize == sizeof(response.hash)`
+- `matchInit && (matchInitLength >= sizeof(*matchInit))`
+- `SavageKCV`
+- `streamingSessionData`
+- `PreCheck`
+- `PearlCamSendBuffersInfoString_BuffersType`
+- `CombinedSequenceAutoSet`
+- `written == (80)`
+- `pearlSysConfig`
+- `handleCameraAriesSessionPrepareOutputNotification`
+- `iobmd`
+- `ResumeEnrollment`
+- `PearlCamSendBuffersInfoString_ERDistance`
+- `payloadSize >= sizeof(*request)`
+- `initANEPowerARMFunction`
+- `B20@?0^v8{?=SS}16`
+- `MapScheme3IOBMD`
+- `StartPasscodeChallenge`
+- `_faceDetectQueue->dequeueAllFramesToQueue(_driver->_sharedMemoryTransferQueue.get())`
+- `psdHeader->version != (5)`
+- `ApplePearlSEPDriver:%s - unmapping: %s IOBMD:%p VA:%p dva offset:%X size:%u\n`
+- `PearlCamStartOptionsString_BioKitLoggingEnabled`
+- `frameId.sequenceNumber == _cameraContext->getFrameSequenceCount()`
+- `_driver->_sharedMemoryTransferQueue->setEnqueueHandlerBlock(^{ _driver->notifySharedMemoryTransfer(); })`
+- `higher`
+- `replySize == sizeof(uint8_t)`
+- `matchResultQueueEnqueue`
+- `BioCaptureTimeout`
+- `SetSavageFWCertificate`
+- `dbgSize`
+- `payloadSize >= sizeof(cmd_force_biolockout_in_v1_t)`
+- `outSize && (*outSize >= sizeof(response))`
+- `pearl-wupeFaceRectWidthMin`
+- `!_cachedSysConfig || (_matchUserID != 4294967295U) || (isEnabledForIdentification())`
+- `_cameraState == kCameraStateFaceDetect`
+- `PearlCamPearlSURDataString_EphemeralPublicKeyY`
+- `analyticsSequenceInfo`
+- `GeneralError`
+- `indicatorRequestTimerHandler`
+- `pearl-SFDForcedMode`
+- `isExclavesSupportEnabled`
+- `sizeof(unwrapSessionOptions.wrappedKey) == _brunorWrappedKey->getLength()`
+- `metaMap->getLength()`
+- `SequenceError`
+- `getShareableMemoryDescriptors`
+- `ERROR: IOPearlLogging::%s: Unexpected command:%u received!\n\n`
+- `written == _fdrDataBuffer->getMemory()->getLength()`
+- `data->getLength() == 16`
+- `PearlCamDoBioCaptureOptionsString_SecretPatternOrder`
+- `PearlCamStatisticsString_StandbyTimeInMicroSeconds`
+- `matchingDict`
+- `dataSize <= (60 * 1024 * 1024)`
+- `abortOperation`
+- `_ariesEphPublicKeyX`
+- `(signingNonce.size == 16)`
+- `_jOnReporter`
+- `sepDaily`
+- `IOPearlFrame`
+- `FaceDetectLogging`
+- `payloadSize >= sizeof(*psdHeader)`
+- `PearlCamPearlSURDataString_UnwrapOutputData`
+- `PearlCamPearlSURDataString_UnwrapOutputMac`
+- `PrepareFDRDataEncryptionKey`
+- `pages.debugPagesMapAddress`
+- `matchResultHandler`
+- `cacheSysProtectedConfigurationSpecific`
+- `camSequenceType == kPearlCamSequenceType_Authentication`
+- `osNumber`
+- `_hwEventRecoverySource`
+- `_shareableMemoryDescriptors->setObject(descriptor)`
+- `!__os_warn_unused(__builtin_mul_overflow((list->numIdentities), (sizeof(list->identities[0])), (&length)))`
+- `(_hasMirage == kBoolFalse) || (_summervilleFWCertInSEP == kBoolTrue)`
+- `uidObj->getLength() == 16`
+- `_secureFaceDetectAddedDelayEventSource`
+- `getDeviceSerialNumberHash`
+- `GetLastMatchEvent`
+- `PearlCamSendBuffersInfoString_HardwareEvents`
+- `_frameDebugProcessingQueue`
+- `matchedIdentity`
+- `pearl-ignore-romeo-unplug`
+- `SavageChipID`
+- `AllocateStreamingBuffers`
+- `DropUnlockToken`
+- `PSGenerateHostUnwrapData`
+- `driver`
+- `_driver->_sharedMemoryTransferQueue->releaseObjects(count, kPearlSharedMemoryTransferCameraFrame) == count`
+- `_aneUnmapFunction`
+- `seaCookieHandleMessage`
+- `PearlCamStartOptionsString_SequenceIsRetry`
+- `header`
+- `IOPearlFrameDebug`
+- `templateListPO`
+- `_alsHidServiceMatchingNotifier`
+- `pearl-wupeRollMin`
+- `!_camera`
+- `PearlCamPowerOnOptionsString_GetSensorNonce`
+- `delayedPowerOffHandler`
+- `SPMIError`
+- `CompleteEnrollment`
+- `stopAndPowerOffCamera(0, true) == 0 `
+- `ApplePearlSEPDriver:%s _S3DynamicIOBMD(Perm+Temp) initialized\n`
+- `bounded_ptr<T>::operator+=(n): Calculating the number of bytes to add to the offset (n * sizeof(T)) would trigger an overflow`
+- `bounded_ptr<T>::operator+=(n): Adding the specified number of bytes to the offset representing the current position would overflow.`
+- `matching`
+- `ApplePearlSEPDriver:%s:%s mapped to ISP\n`
+- `cameraMessageCallback`
+- `BioCheckDone`
+- `unwrapHostSig`
+- `QueryHWCapabilities`
+- `SEPDriver-Pearl-UserClient`
+- `FDRDataEncryptionKey`
+- `handleCameraMessage_SendBuffers`
+- `(diagnostic mode)`
+- `memcmp(edlIdx->padding1, paddingBytes, sizeof(edlIdx->padding1)) == 0 `
+- `_bioCheckReporter`
+- `analyticsFaceDetectStart`
+- `GetTemplatesValidity`
+- `Placement`
+- `unknown`
+- `unwrapOutputKey`
+- `startMessage`
+- `ApplePearlSEPDriver:%s Object properties read\n`
+- `handleCameraFrame(frame.get()) == 0 `
+- `_logging->checkCameraFramesHeldLimit()`
+- `CompleteSprlInitForRepair`
+- `GetProvisioningData`
+- `processWUPoseEligibility`
+- `pearl-SFDModeForUserInitiated`
+- `FOUND`
+- `options->setObject(\"PearlCamStartOptionsString_DeliverFDFrames\", kOSBooleanTrue)`
+- `withNameAndCapacity`
+- `dequeuePearlFrameObject`
+- `IOHIDEventService`
+- `extPerform`
+- `pearl-wupeYawMin`
+- `PearlCamStartOptionsString_HostSignature`
+- `getSavageSessionOptions`
+- `cameraStateHandler`
+- `metaSurface`
+- `PSEstablishSharedSecret`
+- `inObj && inArg`
+- `timeoutMS <= 4294967295U`
+- `ERROR: IOPearlLogging::%s: Unexpected camSequenceType:%d for frameId:[%d:%d]!\n\n`
+- `clientMemoryForType`
+- `replySize >= __builtin_offsetof(enrollment_info_t, poseBinStatus)`
+- `Hold`
+- `payloadSize >= sizeof(cmd_remove_user_data_in_v1_t)`
+- `commandHoldMatchSpecific`
+- `frameType == kPearlFrameTypeFaceDetect || frameType == kPearlFrameTypeBioCapture`
+- `__os_warn_unused(__builtin_sub_overflow((mach_continuous_time()), (_analyticsFaceDetectEvent.analyticsFaceDetectStartTime), (&_analyticsFaceDetectEvent.analyticsFaceDetectProxStateInfo.proxFirstSampleEndTime))) == 0 `
+- `RequestMaxIdentityCount`
+- `secureFaceDetectAddedDelayHandler`
+- `_matchResultQueueCount < _matchResultQueue.size()`
+- `checkForPasscodeChallenge`
+- `createReporters`
+- `SetPCECalibOverride`
+- `GenerateUnwrapSessionRequest`
+- `PearlCamSendBuffersInfoString_AllocatedPPMBudget`
+- `site.ApplePearlUserClient`
+- `initCamera`
+- `InitializeEngine`
+- `removeFrameId_block_invoke`
+- `_savageFWCertInSEP == kBoolNotSet`
+- `ERROR: %s: Juliet unplugged\n\n`
+- `PearlCamPearlSURDataString_PearlSURPairingKey`
+- `(_cameraState != kCameraStatePoweredOff) && (_cameraState != kCameraStateIdle)`
+- `_analyticsEventLock`
+- `PearlCamStatisticsString_ProbeDenseLowPowerFrames`
+- `PPMError`
+- `DoRetry`
+- `PearlCamStartOptionsString_SkipFaceDetect`
+- `_powerOffEventSource`
+- `GetBiometrickitdInfo`
+- `hexdumpBytes`
+- `ERROR: IOPearlLogging::%s: Frames present in hold queue! Flushing ...\n\n`
+- `ERROR: %s: SavageDeviceID not available, cannot proceed\n\n`
+- `dropUnlockToken`
+- `ProcessFrames`
+- `allocShareableMemoryHeaderBuffer(kPearlSharedMemoryTransferFrameDebug, allocName)`
+- `12112222222222`
+- `sequenceInfo`
+- `ERROR: %s: Romeo unplugged\n\n`
+- `checkSecureStreaming`
+- `moreFrames`
+- `GetIdentitiesList`
+- `extractMessageInfo()`
+- `PearlCamSendBuffersInfoString_UserFeedback`
+- `_cacheLock`
+- `enrollmentTimeoutHandler`
+- `__os_warn_unused(__builtin_sub_overflow((mach_continuous_time()), (_analyticsMatchEvent.analyticsMatchStartTime), (&_analyticsMatchEvent.analyticsMatchProxStateInfo.proxFirstSampleEndTime))) == 0 `
+- `PoweredOff`
+- `_secureFaceDetectRequested`
+- `handleCameraMessage_Notification`
+- `Authentication`
+- `RequestMessageData`
+- `GetSignedReferenceFrame`
+- `seqInfo->valid`
+- `requestPowerAssertion`
+- `pages.rawPagesISPAddress`
+- `handleCameraMessage_FaceDetectStatus`
+- `StreamStartupFailure`
+- `HardwareCheckFailed`
+- `SetSavagePubKey`
+- `IOBioSharedMemoryTransferQueue::enqueueObject(OSDynamicPtrCast<IOBioShareableMemoryObject>(_waitingDepthFrame))`
+- `ApplePearlSEPDriver:%s Could not map object to ISP. ArmFunction:%p Allocated:%d\n`
+- `getSensorFamily`
+- `propertyData->getLength() == (17 - 1)`
+- `info`
+- `PSGenerateHostEphemeralKey`
+- `FireProbePattern`
+- `removeFrameId`
+- `boolValueForDictionaryKey`
+- `getDeviceSerialNumber`
+- `MatchMode`
+- `commandAutoRetryMatch`
+- `PearlCamStartOptionsString_AttestationNonce`
+- `patternOrder`
+- `AuthDur`
+- `TemplatesExistsAtBoot`
+- `osLogObject`
+- `_faceDetectQueue`
+- `projectorSNUMObj`
+- `data->getLength() == sizeof(unwrapResponse.unwrapOutputSensorSigAries)`
+- `S3DynamicIOBMD->allocated`
+- `enqueuedInSEPSize == sizeof(*enqueuedInSEP)`
+- `data->getLength() == sizeof(uint32_t)`
+- `_allocName`
+- `payloadSize >= sizeof(cmd_self_check_result_in_v1_t)`
+- `deallocScheme3IOBMD(&_S3DynamicIOBMDTemp) == 0 `
+- `makeProcessingThreadsRealTime() == 0 `
+- `cameraMessageHandler`
+- `_enrollmentTimeoutEventSource`
+- `templateInfo`
+- `site.IOPearlCameraContext`
+- `v8@?0`
+- `getCommandMode() == kCommandModePresenceDetect`
+- `_fdrDataBuffer`
+- `infoDict`
+- `DecryptFDRData`
+- `seqInfo->sequenceId.type == loggingCurrentSequenceId.type`
+- `juliet-b2b-unplug-detected`
+- `data->getLength() == (256 / 8)`
+- `unwrapInputHostIV`
+- `Incoming`
+- `StreamingFailure`
+- `osObject`
+- `_alsHidService`
+- `startPasscodeChallengeSequence`
+- `ProCheck`
+- `_hasMirage != kBoolNotSet`
+- `clearOperationProxState`
+- `requestPowerAssertion(true) == 0 `
+- `getSequenceDebug`
+- `requestPowerAssertion(false) == 0 `
+- `isExclavesSupportEnabled()`
+- `cachedConfig`
+- `PearlCamDoBioCaptureOptionsString_LFSRE`
+- `ERROR: %s: %s (%d): occurred during Aries session preparation\n\n`
+- `messageInfo`
+- `EnableMatchAutoRetry`
+- `CheckSecureStreamingCommand`
+- `PearlCamBufferType_ReferenceImage`
+- `TestAriesHostAuthorization`
+- `LoadCatacombData`
+- `Idle`
+- `ERROR: IOPearlExclaveCameraFrame::%s: AssertMacros: %s (value = 0x%lx), %s file: %s, line: %d\n\n\n`
+- `_shareableMemoryDescriptors->getCount() > 0`
+- `__os_warn_unused(__builtin_add_overflow((payloadSize), (2 * 16 + __builtin_offsetof(psd2_encrypted_t, encryptedData)), (&dataBufferLength))) == 0 `
+- `proxStateChanged`
+- `pearl-ignore-juliet-unplug`
+- `PearlCamStartOptionsString_EnableER`
+- `ERROR: %s: Unexpected camera state %s (%d) in command mode enroll\n\n`
+- `MB Armed`
+- `SystemSleep`
+- `cameraProcessingFunc`
+- `frame`
+- `_faceDetectOperationTimeoutEventSource`
+- `CancelMatching`
+- `unmapMemoryFromSEP(dmaCommand) == 0 `
+- `hmacKey2EData`
+- `kPearlCamStartOptionsString_EnableMD`
+- `_analyticsDailyUpdate`
+- `ConfirmSaveCatacomb`
+- `1211`
+- `returnedData`
+- `S3DynamicIOBMD->objSize`
+- `handleCameraMessage_ReportError`
+- `IOBioUtils::writeBytesToIOMD(outData, &response, sizeof(response), outSize) == 0 `
+- `ERROR: %s: %s: unexpected cameraState %u\n\n`
+- `initWorkLoop`
+- `aopDriverMatchingNotificationHandler`
+- `PearlSelfTestResult`
+- `frames <= 100`
+- `payloadSize >= sizeof(cmd_initialize_engine_in_v1_t)`
+- ` `
+- `site.IOPearlExclaveCameraFrame`
+- `sep`
+- `RemovePeriocularTemplates`
+- `_releaseMessageBlock`
+- `IOPearlLogging`
+- `setSequencePhaseResult`
+- `_hasEISP != kBoolNotSet`
+- `commandStartEnroll`
+- `sendMatchResultToClients`
+- `_enrollmentUpdateQueueCount > 0`
+- `GetIdentitiesFlags`
+- `ERROR: IOPearlLogging::%s: Failed to log all held frames! Flushing the hold queue ...\n\n`
+- `getARMIODriver`
+- `options->setObject(\"PearlCamPowerOnOptionsString_SkipFDRCheck\", kOSBooleanTrue)`
+- `(camBuffersType == PearlCamSendBuffersType_BioCapture) || (camBuffersType == PearlCamSendBuffersType_SecretCapture)`
+- `chip-id`
+- `sequenceInfo->valid`
+- `diagnostics`
+- `object`
+- `getPagesFromUnalignedMemoryDescriptor`
+- `ERROR: %s: Match attempt failed\n\n`
+- `testAllocAndMapObjS3C1`
+- `returnCameraMessage_SendBuffers(message, { 0 }) == 0 `
+- `ERROR: IOPearlCameraContext::%s: AssertMacros: %s (value = 0x%lx), %s file: %s, line: %d\n\n\n`
+- `payloadSize >= sizeof(cmd_load_fdr_class_in_v1_t)`
+- `isp`
+- `BioCaptureComplete`
+- `FDRDataEncryptionWrappedKey`
+- `clearMatchingContext`
+- `data->getLength() == sizeof(unwrapResponse.unwrapOutputSensorTagBrunor)`
+- `_ariesEphPublicKeyY`
+- `ShowAllocationsRequested`
+- `EncryptFDRDataForBrunor`
+- `data`
+- `fdrDMA->dmaDataSize`
+- `requestANEPowerAssertion(previousAnePowerMode) == 0 `
+- `dictionary`
+- `IOPlatformSerialNumber`
+- `StartEnrollmentPhase`
+- `templateListPOSize >= sizeof(*templateListPO)`
+- `payloadSize >= sizeof(cmd_suspend_enrollment_in_v1_t)`
+- `ERROR: %s: FDR Data check failed\n\n`
+- `_savageFWCertInSEP == kBoolTrue`
+- `initScheme3IOBMD`
+- `initCameraGated`
+- `metaMap`
+- `*sensorFamilyReply < kSensorFamilyCount`
+- `GetCatacombHash`
+- `reply`
+- `_ariesEphPublicKeyY->getLength() == sizeof(ariesEphPublicKey->y)`
+- `PearlCamStartOptionsString_TimeOutInMilliseconds`
+- `GetProtectedConfig`
+- `CheckProvisioning`
+- `_driver`
+- `FrontIRStructuredLightProjectorSerialNumString`
+- `hostMasterKeyIdx`
+- `streamingSessionData::lfsrE`
+- `S3DynamicIOBMD`
+- `PearlCamStartOptionsString_UnwrapInputIV`
+- `PPMNoPower`
+- `GetEnrollUpdate`
+- `setupFaceDetectTimeoutForMatch`
+- `processEnrollMetaFeedback`
+- `ERROR: %s: Unexpected camera state %d in command mode face detect\n\n`
+- `SetSystemProtectedConfig`
+- `getMemoryLength`
+- `templateList->count > 0`
+- `getFrontCameraPosition() != kPearlCameraPositionUnknown`
+- `fdrDMA`
+- `_ispUnmapFunction`
+- `errANE == 0 `
+- `getSavageSessionSensorType`
+- `Logging`
+- `PearlCamDoBioCaptureOptionsString_HostMainKeyIndex`
+- `ChannelReleased`
+- `releaseMessageBlock`
+- `enqueueObject`
+- `cmd->version == 1`
+- `responseSize == sizeof(pearl_config_get_t)`
+- `PearlCamStatisticsString_Num400mSecCoolDownPeriods`
+- `responseSize == sizeof(uint8_t)`
+- `queueCameraMessage`
+- `templateInfoSize <= _analyticsDailyUpdateSize`
+- `IsPeriocularSupported`
+- `GetSensorFamily`
+- `0`
+- `payloadSize >= sizeof(cmd_prepare_save_catacomb_in_v1_t)`
+- `mainKeyIdxOut`
+- `FDRNotValidated`
+- `requeueFrameByIdToQueue`
+- `AutoRetryMode`
+- `signingNonceData`
+- `PearlCamSendBuffersInfoString_ActNTC_Temperature`
+- `pearl-simulateInterlock`
+- `pearl-wupeFaceRectHeightMin`
+- `buffer`
+- `SavageDeviceID`
+- `S3DynamicIOBMD->IOBMD`
+- `getCommandMode() == kCommandModeEnroll`
+- `savageSNUMObj`
+- `(_cameraState == kCameraStatePearlSURv2) || (_cameraState == kCameraStateAriesSessionPrepare)`
+- `_aopJulietServiceMatchingNotifier`
+- `replySize == sizeof(*sensorFamilyReply)`
+- `RStandby`
+- `osArray->getCount() == (sizeof(motionDetectInfo->motionMatrix) / sizeof(motionDetectInfo->motionMatrix[0]))`
+- `getCommandMode() == kCommandModeIdle || getCommandMode() == kCommandModeMatch`
+- `cacheProtectedConfigurationSpecific`
+- `msg`
+- `isCombinedSequenceInternalAutoEnabled`
+- `GetMatchResult`
+- `PearlCamRect_W`
+- `cacheAttentionDetectionParameters`
+- `PearlCam_RawBufferDARTAddress`
+- `_matchResultQueueCount > 0`
+- `PearlCamStatisticsString_Num100mSecCoolDownPeriods`
+- `analyticsHelperFuncFaceDetectResultNotDetected`
+- `SystemWillSleep`
+- `SetLoggingData`
+- `PearlCamDoBioCaptureOptionsString_DoubleOrder`
+- `matchResultQueueInit`
+- `PearlCamStatisticsString_ProbeSparseFrames`
+- `PearlCamStatisticsString_DenseLowPowerFrames`
+- `alsHidMatchingNotificationGated`
+- `payloadSize >= sizeof(*psd3)`
+- `IOPlatformExpertDevice`
+- `ProbingPatternDone`
+- `%s: (hexdump failed)\n`
+- `payload || !payloadSize`
+- `AutoRetryAutoSet`
+- `getBrunorUnwrappedKey`
+- `restartCamera`
+- `GetCatacombState`
+- `StartEnrollment`
+- `getShareableMemoryHeaderBuffer`
+- `_dummyModeOperation`
+- `!isPearlDisabled(nullptr) && _savageFWCertInSEP == kBoolTrue`
+- `sendSavageIdentifiersToSEPIfNeeded`
+- `options->setObject(\"PearlCamStartOptionsString_EnableER\", kOSBooleanTrue)`
+- `checkMamaBearArmedState`
+- `PearlCamSendBuffersInfoString_ExposureTimeInMicroseconds`
+- `SEPDriver-Pearl`
+- `GetBioCaptureOptions`
+- `withReleaseMessageBlock`
+- `setState`
+- `alsHidInstallListener()`
+- `config`
+- `commandStartMatch`
+- `responseSize == sizeof(pearl_system_config_t)`
+- `_cameraMessageLock`
+- `snProperty->getLength() > 0`
+- `sequenceInfo->sequenceType == kPearlSeqTypeMatch`
+- `AutoRetryAutoValue`
+- `unmapScheme3IOBMD`
+- `camera`
+- `analyticsHelperFuncProcessFrameEngagementInfo`
+- `FaceDetectInitialized`
+- `releaseAllObjects`
+- `messageFrameMetaData(frame)`
+- `result == kPearlSelfTestResultOK`
+- `checkMatchLockoutConditions`
+- `wrappedKeyData`
+- `PearlCamPearlSURDataString_SensorNonce`
+- `device == this`
+- `numPages + count <= pageListSize`
+- `pagesOut`
+- `ariesEphPublicKey`
+- `site.message_match_node_v1_t`
+- `completeRepairSprlInitialization`
+- `provisioningStatus`
+- `PearlCamPearlSURDataString_AttestationNonceSignature`
+- `ariesEphPublicKeySig`
+- `handleCameraStatisticsPhaseMessage`
+- `EnrollMode`
+- `LoadReferenceFramesInfoRecord`
+- `waitForInstantMatchCancelEnabled`
+- `_bioCaptureFramesToProcess == 0`
+- `returnCameraMessage_SendBuffers`
+- `ERROR: %s: %s (%d): occurred during FDR encryption key unwrapping\n\n`
+- `IOReportLegend`
+- `PearlCamSendBuffersInfoString_GlassesScore`
+- `unmapMemoryFromSEP(sepMapping) == 0 `
+- `streamingSessionData::nonce`
+- `_faceDetectTimeoutEventSource`
+- `SetTemplateData`
+- `PearlCamSendBuffersInfoString_BioCaptureGroup`
+- `ERROR: IOPearlCameraFrame::%s: Key '%s' missing!\n\n`
+- `!_matchingOnHold`
+- `normal`
+- `unwrapInputKey`
+- `patternSize == sizeof(uint8_t)`
+- `engagementInfo`
+- `FaceDetectMode`
+- `CompleteSaveCatacomb`
+- `ProcessFrameMetadata`
+- `commandStartNewMatchAttempt`
+- `fdrValidMsg`
+- `pearl-skip-projector-checks`
+- `logMatchTimingBreakdown`
+- `lower`
+- `outSize`
+- `LoadCatacomb`
+- `state.state < kSecureFDStateCount`
+- `PearlCamStartOptionsString_SequenceID`
+- `PearlCamDoSecretPatternOptionsString_HostMainKeyIndex`
+- `*sensorFamilyReply != kSensorFamilyNotSet`
+- `PearlCamStatisticsString_ProbeSparseLowPowerFrames`
+- `PauseFaceDetectTimer`
+- `12121112`
+- `pearl-wupeDistanceMin`
+- `loadDCNKernels`
+- `pearl-SFDModeForSwipeUp`
+- `PearlCamStartOptionsString_HighPriority`
+- `_attentionDetectionParameters`
+- `PearlCamStatisticsString_FloodFrames`
+- `getFrameDebugDataSize`
+- `payloadSize >= sizeof(cmd_enable_match_auto_retry_in_v1_t)`
+- `getCommandMode() == kCommandModeMatch`
+- `_delayedPowerOffEventSource`
+- `_workLoop`
+- `options->setObject(\"PearlCamStartOptionsString_BioKitLoggingEnabled\", kOSBooleanTrue)`
+- `analyticsMatchStart`
+- `FaceDetectTimeout`
+- `rawData->appendBytes(buff, static_cast<unsigned int>(buffOffset + bytesWritten))`
+- `initFrameDebugLogging`
+- `TRUE`
+- `*outSize >= sizeof(cmd_get_templates_validity_out_v1_t)`
+- `initializeEngine`
+- `faceDetectOperationTimeoutHandler`
+- `analyticsBioLockoutExit`
+- `SetProtectedConfig`
+- `StreamingFlood`
+- `_camera->_releaseMessageBlock(_message, getFrameId())`
+- `_sprlEngineInitialized != kBoolFalse`
+- `inDiagnosticMode()`
+- `pearl-default-savage`
+- `_ariesEphPublicKeyX->getLength() == sizeof(ariesEphPublicKey->x)`
+- `rawFrameVA`
+- `_driver->_sharedMemoryTransferQueue->releaseObjects(1, kPearlSharedMemoryTransferFrameDebug) == 1`
+- `Enabling`
+- `rawDesc`
+- `/Library/Caches/com.apple.xbs/DC80B99A-71A7-45F7-A533-4926D6628DC9/TemporaryDirectory.RiHkKs/Sources/Pearl_Kernel/ApplePearlSEPDriver/IOPearlFrameSupport.cpp`
+- `payloadSize >= sizeof(cmd_get_templates_validity_in_v1_t)`
+- `juliet`
+- `setPowerState`
+- `SetBioCaptureParams`
+- `FALSE`
+- `SavageUID`
+- `metaDesc`
+- `PearlCamBufferType_SensorRaw`
+- `_checkDisableConditionsEventSource`
+- `createSEP`
+- `propertyBytes`
+- `setFrameForLogging`
+- `fireProbePattern`
+- `-restore`
+
+**[__TEXT.__os_log]**
+
+- `IOPearlSharedMemoryTransferQueue::%s <- <%d:%s> (count:%u, _waitingDepthFrame:[%d:%d])\n`
+- `%s: NEW SEQUENCE [%d:*] %s started (_frameQueue:%u, _frameProcessingQueue:%u, _framesHeld:%d, _frameDebugCount:%d, retryType:%d, timeoutMS:%u, ER:%d, continuous:%d, motionDetect:%d)\n`
+- `%s: Skipping MB check\n`
+- `%s -> ApplePearlSEPDriver::unmapMemoryFromSEP -> 0x%x\n`
+- `%s <- failedAttempt:%d, countAttempt:%d, lock:%d\n`
+- `%s <- service:%p, refCon:%s\n`
+- `%s: FDR Data check pending\n`
+- `%s -> getDeviceSerialNumberHash: %u\n`
+- `ApplePearlUserClient::%s -> kIOReturnSuccess\n`
+- `%s -> ApplePearlSEPDriver::getPagesFromUnalignedMemoryDescriptor -> 0x%x\n`
+- `%s <- caller:%s, cancelTimeout:%d\n`
+- `%s: (Cam <-- frameId:[%d:%d]) -> err:0x%x, _framesHeld:%d)\n`
+- `%s <- frames:%u\n`
+- `%s -> err:0x%x (skipped:%d)\n`
+- `%s: Received status for sequence %d in sequence %d\n`
+- `%s: Processing unexpected enrollment frame of type %d, in camera state %d\n`
+- `%s: Error processing message, err:0x%x\n`
+- `Couldn't create OS Log for 'com.apple.BiometricKit.SEPDriver-Pearl-UserClient'!\n`
+- `%s: cleared face detect result and face info\n`
+- `%s: sending faceOcclusionState = %u\n`
+- `Couldn't create OS Log for 'com.apple.BiometricKit.SEPDriver-Pearl'!\n`
+- `%s: kFramesProcessed frameId:[%d:%d] <-- SPRL\n`
+- `IOPearlCameraContext::%s: _simulatedHWEvents:0x%x\n`
+- `ApplePearlUserClient::%s <- type:%d, options:%d, memory:%p\n`
+- `%s: faceMaskDetected = %u\n`
+- `%s: retaining faceDetectFeedback = %u\n`
+- `%s -> combinedSequenceEnabled: %d\n`
+- `%s <- \n`
+- `%s <- matchInit:(%p, %lu, flags:0x%x), _commandMode:%u\n`
+- `%s <- inData:%p, inSize:%zu\n`
+- `%s: frameId:[%d:%d], frameType:%d, _commandMode:%d, _cameraState:%d\n`
+- `%s <- newState:%lu, device:%p\n`
+- `%s: matchInfo: (%d, %d, %d, %d, %d)\n`
+- `%s <- fdetInit:%p, _commandMode:%s (%u)\n`
+- `%s: sending MatchRequestedPasscodeShortcut: reason=%u\n\n`
+- `%s -> result:%p\n`
+- `%s: Camera error: %s (%d)\n`
+- `%s -> autoRetryEnabled: %d\n`
+- `%s: Sending PearlCamNotificationType_FDRValidated to camera\n`
+- `%s <- _analyticsCurrentEvent:%d\n`
+- `%s: Waiting for prox state to clear...\n`
+- `%s <- parameters:%p\n`
+- `%s -> %serr:0x%x\n`
+- `%s <- response:%p fourcc:%s mapObj:%d unmapObj:%d\n\n`
+- `%s <- sensorTypeOut:%p\n`
+- `%s <- sequenceType:%d\n`
+- `IOPearlLogging::%s: WARNING: Debug frames seems to be stuck in queue. Notifying client to flush the queue...\n`
+- `IOPearlLogging::%s: kKLM_FrameDebugData frameId:[%d:%d] <-dbg- SPRL (log:%d)\n`
+- `%s: Camera suspend %s\n`
+- `%s: %s clock, index: %d\n`
+- `%s <- canHold:%u, lock:%d\n`
+- `%s: FalseAcceptanceDebug isStaticUnlock:%d, isOnlineStaticUnlock:%d, isOnlineShortTermUnlock:%d, isShortTermUnlock:%d\n`
+- `%s: got pearl HW metrics: %s\n`
+- `%s: Done waiting for match cancellation, _instantMatchCancelDisabled:%d\n`
+- `%s: %s=%d, Ignore: %d\n`
+- `%s: Got enough frames when running secure streaming check, waking up the other thread\n`
+- `%s: Got frame when running secure streaming check, waking up the other thread\n`
+- `%s <- newState:%lu\n`
+- `%s: Waiting for IspIsPoweredOn notification. Timeout = %us.\n`
+- `%s: NOTICE: Ignoring frameId:[%d:%d] in enrollOnHold state...\n`
+- `%s: %s (%d), cameraState:%s (%d)\n`
+- `%s <- outData:%p, outSize:%p\n`
+- `IOPearlFrameQueue::%s -> <%d:%s> -X-> frameId:[%d:%d] (queued:%d)\n`
+- `IOPearlLogging::%s <- state:0x%x, options:(enrollFaceDetectSkipCount:%d, faceDetectSkipCount:%d)\n`
+- `%s <- data:%p, dataSize:%zu\n`
+- `%s: switchToSecureFaceDetect: gatherSequenceInfo()\n`
+- `%s: kCameraStateFaceDetectDone: gatherSequenceInfo()\n`
+- `%s: unsupported glasses detected\n`
+- `%s <- engagementInfo: 0x%x\n`
+- `IOPearlFrameQueue::%s -> frameId:[%d:%d] -(%d)-> <%d:%s> (queued:%d)\n`
+- `IOPearlLogging::%s: ALS service registered: orientation:%u, placement:%u, cameraPosition:%u\n`
+- `%s: command:%s (%d), value:%d, inLength:%lu, outLength:%d\n`
+- `%s <- cancelOptionsMask:0x%02x\n`
+- `%s <- msPowerOffDelay:%d\n`
+- `%s: phase:%s (%d), flood:%d, sparse:%d, dense:%d\n`
+- `%s: faceInfo.feedback: 0x%x\n`
+- `IOPearlLogging::%s -> \n`
+- `%s <- wrappedKeyData:%p, wrappedKeyDataSize:%zu, loadingFDR:%d\n`
+- `%s: frameId:[%d:%d] --> SPRL (processingInSEP:%d)\n`
+- `%s <- frame:%p\n`
+- `%s: FDRHeaderAP: cmd:%hu, class:%hu, alt:%hhu, size:%u\n`
+- `%s: pitch=%d, yaw=%d, roll=%d, distance=%u, faceRectW=%u, faceRectH=%u --> wuPoseEligible: %u\n`
+- `%s <- info:%p\n`
+- `%s: Unpacked raw frames ENABLED\n`
+- `%s <- newState:%d\n`
+- `%s: Romeo Serial number check pending\n`
+- `%s: Skipping trigger BioCapture for enrollment. _bioCaptureFramesToProcess: %zu\n`
+- `%s: PasscodeChallenge started\n`
+- `IOPearlCameraFrame::%s: FD Distance: %d, ER Distance: %d, ER Status: %d, Frame Number: %d Camera Obstruction: %s\n`
+- `IOPearlLogging::%s -> result:%d (driver:%p)\n`
+- `IOPearlLogging::%s: ERROR: Cannot initialize FramesLogging! FramesLogging is disabled!\n`
+- `%s <- userID:%d\n`
+- `%s <- msDelay:%u\n`
+- `%s <- message:(%p, notificationType:%d)\n`
+- `IOPearlSharedMemoryTransferQueue::%s: <%d:%s>: frameId:[%d:%d] Depth awaiting flood\n`
+- `IOPearlSharedMemoryTransferQueue::%s: <%d:%s> [QUEUED] type:%u, frameId:[%d:%d]\n`
+- `ApplePearlUserClient::%s <- selector:%u, arguments:%p, dispatch:%p, target:%p, reference:%p\n`
+- `%s <- _proxState:%d\n`
+- `%s <- outputResult:%p, timeoutMS:%llu, fromBoot:%d\n`
+- `%s: NOTICE: Ignoring frameId:[%d:%d] in biocheck done...\n`
+- `%s: Received unexpected camera frame of type %d, in command mode %d, camera state %d\n`
+- `%s <- statistics:%p, sequenceType:%s (%d)\n`
+- `%s -> ApplePearlSEPDriver::mapMemoryForSEP -> 0x%x\n`
+- `%s <- sender:%p, _commandMode:%u, _cameraState%u\n`
+- `%s: frameUserFeedback = 0x%x, projectorMode = %u, orientation = %u, _cameraState = %u\n`
+- `%s <- message:(%p, type:%d)\n`
+- `%s <- refCon:%p, newService:%p\n`
+- `%s: Restarting face detect operation -> kStatusFaceDetectCancelled message not sent\n`
+- `%s: ANE power function%s found\n`
+- `%s <- initSprlOptionsMask:0x%04x\n`
+- `%s <- fdResult:%d\n`
+- `%s <- reason:%d\n`
+- `IOPearlLogging::%s: WARNING: FaceDetectFrames logging enabled while FramesLogging is disabled. No frames will be logged until either FramesRawLogging or FramesMetaLogging is enabled.\n`
+- `ApplePearlUserClient::%s <- inObj:%p, inRef:%p, inArg:%p\n`
+- `%s -> ApplePearlSEPDriver::loadDCNKernels -> 0x%x\n`
+- `%s <- refCon:%s, newService:%p\n`
+- `IOPearlLogging::%s -> err:0x%x\n`
+- `%s: Using default Savage UID\n`
+- `%s: %s: occurred %s %s\n`
+- `%s <- _analyticsCurrentEvent: %d _proxState:%d newState:%d \n`
+- `%s <- phase:%s (%d)\n`
+- `IOPearlFrameDebug::%s: frameId:[%d:%d], _frameDebugCount:%d\n`
+- `IOPearlLogging::%s -> void\n`
+- `ApplePearlUserClient::%s <- owningTask:%p, securityToken:%p, type:%u, properties:%p\n`
+- `%s: _brunorBootNonce first/last bytes: %02x %02x ... %02x %02x\n`
+- `%s <- statistics:%p, phase:%s (%d)\n`
+- `%s: Send data for analyticsBioLockout\n`
+- `ApplePearlUserClient::%s -> err:0x%x\n`
+- `%s -> err:0x%x, sensorType:%d\n`
+- `%s: _currentSequenceType:%u, _cameraState:%u, continuous:%u->%u, eyeRelief:%u->%u, motionDetect:%u->%u, highPriority:%u->%u ==> canContinue:%u\n\n`
+- `%s <- provider:%p %s\n`
+- `%s: kEnrollStatusCompleted\n`
+- `Couldn't create OS Log for 'com.apple.BiometricKit.IOPearlFrameSupport'!\n`
+- `Couldn't create OS Log for 'com.apple.BiometricKit.IOPearlLogging'!\n`
+- `%s: Clearing _bioCaptureFramesToProcess (remaining:%zu)\n`
+- `%s: ENROLL COMPLETE %d %s\n`
+- `%s: Waiting for session prepare result. Timeout = %ums.\n`
+- `%s: analyticsMatchBioCheckResult: %d (%d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d)\n`
+- `IOPearlFrameQueue::%s <- <%d:%s> queued:%u ->-> <%d:%s> queued:%u\n`
+- `IOPearlLogging::%s: Camera frames STUCK, dumping queue states...\n`
+- `IOPearlLogging::%s: frameDebugCount:%d, dropping frame...\n`
+- `%s: MATCH %d %s UPDATE %d PSCHLNG %d AllowPSCHLNG %d AUTORETRY %d AllowAUTORETRY %d NORETRY %d PHASE %d PO %u\n\n`
+- `IOPearlLogging::%s: ERROR: Cannot initialize FramesDebugLogging! FramesDebugLogging is disabled!\n`
+- `%s: GetCmdProtocolVersionCommand: Device protocol version (%u) is %s than host protocol version (%u)! Using protocol version %u\n`
+- `%s <- failed:%d, countAttempt:%d, _commandMode:%u\n`
+- `%s <- cancelOptionsMask:0x%02x, failedAttempt:%d, lock:%d\n`
+- `%s <- options:%p, secretPattern:%d\n`
+- `%s: Noop after probing pattern done\n`
+- `%s <- _analyticsCurrentEvent: %d _proxState:%d\n`
+- `IOPearlLogging::%s -> err:0x%x, debugDataSize:%lu, debugDataProbeSize:%lu\n`
+- `%s: NEW SEQUENCE [%d:*] starting secure face detect\n`
+- `%s: sending faceDetectFeedback = %u\n`
+- `%s -> ISP node %s after %zu iterations\n`
+- `%s: PM_STATE_ON\n`
+- `%s: Waiting for match cancellation\n`
+- `%s: Display check pending\n`
+- `%s <- sequenceType:%s (%d)\n`
+- `%s <- S3DynamicIOBMD:%p\n`
+- `%s <- prewarmType:%d overrideIsPearlDisabled:%d forUnwrapping:%d\n`
+- `%s: _faceDetected:%d\n`
+- `%s: Exiting biolockout: duration = %llu ms\n`
+- `IOPearlLogging::%s <- \n`
+- `%s: Send data for _analyticsCurrentEvent: %d\n`
+- `%s: _faceDetected:%u\n`
+- `%s <- data:%p, pageList:%p, pageListSize:%zu, pageCount:%p\n`
+- `%s <- ApplePearlSEPDriver::getPagesFromUnalignedMemoryDescriptor\n`
+- `%s: FaceDetect operation timeout\n`
+- `%s: Skipping camera power-on for attention sequence in SFD mode\n`
+- `%s: bioCapture frame received with _bioCaptureFramesToProcess == 0\n`
+- `%s <- bioCheckDone:%d\n`
+- `ApplePearlUserClient::%s <- \n`
+- `%s: lastSequenceNumber:%d, _loggingCurrentSequenceId.number:%d\n`
+- `%s: Dummy Mode enrollment for userID:%d, err:0x%x\n`
+- `%s: Enrollment failed when running secure streaming check, waking up the other thread\n`
+- `%s: feedback: 0x%x [hcp:%u fgc:%u uggc:%u ugtc:%u, gmc:%u] --> 0x%x, abort: %u\n`
+- `%s: Using default Savage public key\n`
+- `%s <- commandMode:%d, _cameraState:%d\n`
+- `%s: %s (%d)\n`
+- `%s <- outData:%p, lock:%d\n`
+- `%s: timeout:%u continuous:%u highPriority:%u eyeRelief:%u motionDetect:%u restart:%u\n`
+- `%s: sensorType:%d\n`
+- `%s: [%d]Cam --> frameId:[%d:%d], frameType:%d, _commandMode:%s (%d), _cameraState:%s (%d), delay:%llums, _framesHeld:%d)\n`
+- `%s: analyticsMatchProbingPatternResult: %d (%d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d)\n`
+- `IOPearlLogging::%s: Frames debug STUCK, dumping queue states...\n`
+- `%s: requesting secure FD: request:%u, flags:0x%x, sessionID:%u\n`
+- `%s: Processing unexpected match frame of type %d, in camera state %d\n`
+- `%s: Processing unexpected camera frame of type %d, in command mode %d, camera state %d\n`
+- `%s: Got message from SEP, request = %d, length = %d, info = %d\n\n`
+- `IOPearlFrameQueue::%s: <%d:%s> [QUEUED] frameId:[%d:%d]\n`
+- `%s: sprl state machine initialization pending\n`
+- `%s <- camera: %p\n`
+- `%s <- message:%p\n`
+- `IOPearlLogging::%s -> result:%d\n`
+- `%s <- sender:%p\n`
+- `%s -> result:%d\n`
+- `%s <- statistics:%p, faceDetected:%d\n`
+- `IOPearlFrameDebug::%s -> result:%d (frameId:[%d:%d], ppCount:%d, _frameDebugCount:%d)\n`
+- `IOPearlLogging::%s <- type:%d, eventTime:%llx, descriptor:%p, descriptorSize:%llu, dataTimeId:%llx, sequenceId:(number:%d)\n`
+- `%s -> void (err:%d)\n`
+- `%s <- userID:%u\n`
+- `%s -> disabled: %d, result:0x%llx\n`
+- `%s <- S3DynamicIOBMD:%p powerOffThen:%d ispOn:%d\n`
+- `%s: Requesting 'completion' indicator\n`
+- `%s: Ignoring incoming frame (_commandMode:%d)\n`
+- `%s <- faceDetected:%p, forceNoFD:%u\n`
+- `IOPearlCameraContext::%s -> result:%d\n`
+- `%s: result = %u\n`
+- `%s: Enabling Pearl\n`
+- `IOPearlCameraFrame::%s: frameId:[%d:%d], _framesHeldCount:%d\n`
+- `ApplePearlUserClient::%s <- provider:%p\n`
+- `%s -> \n`
+- `%s <- _commandMode:%u\n`
+- `%s: _commandMode:%s (%u), _cameraState:%s (%u), _faceDetected:%d, _failedCommand:%u, _newOperationStarted:%u\n`
+- `%s <- mode:%d (currentMode:%d)\n`
+- `%s <- _commandMode:%s (%d)\n`
+- `%s: Fallback indicator already requested -> force NoFD\n`
+- `%s: Found pearl node ID: %llx\n`
+- `%s <- enable:%d\n`
+- `IOPearlExclaveCameraFrame::%s -> result:%d (frameId:[%d:%d], _framesHeldCount:%d)\n`
+- `IOPearlFrameQueue::%s: <%d:%s> frameId:[%d:%d] -(%d)-> <%d:%s>\n`
+- `%s <- suspend:%u\n`
+- `%s: newMatchAttempt:%u params->trigger:%u params->unsupportedOrientation:%u triggerOverride:%d secureFaceDetectForcedMode:%d -> useSecureFD:%u\n`
+- `%s <- sequenceType:%d:%s, overrideIsPearlDisabled:%d\n`
+- `%s <- message:%p, frameId:[%d:%d]\n`
+- `%s <- provider:%p\n`
+- `%s <- ApplePearlSEPDriver::mapMemoryForSEP\n`
+- `%s: Dummy Mode match for userID:%d, err:0x%x\n`
+- `%s <- matchInit:%p, matchInitLength:%lu\n`
+- `%s: Waiting for the camera interface to initialize. Timeout = %us.\n`
+- `%s: PREPARE SEQUENCE [%d:*] %s\n`
+- `%s: frameId:[%d:%d], mainKeyIdx:%u, contextIdx:%u\n`
+- `%s: messageType:%s (%d)\n`
+- `IOPearlLogging::%s: ERROR: Cannot initialize FaceDetectFrames logging! FaceDetectFrames logging is disabled!\n`
+- `%s <- cmd:%p, payload:%p, payloadSize:%lu outData:%p, outSize:%p\n`
+- `%s <- lock:%d\n`
+- `%s <- resultCodeOut:%p\n`
+- `IOPearlLogging::%s: ALS service close: orientation:%u, cameraPosition:%u\n`
+- `ApplePearlUserClient::%s -> 0x%x\n`
+- `IOPearlLogging::%s: Found ALS service: orientation:%u, placement:%u, cameraPosition:%u\n`
+- `%s -> err:0x%x\n`
+- `%s <- ApplePearlSEPDriver::loadDCNKernels\n`
+- `%s <- sessionID:%u, state:%u, lastFeedback:%u, lastOcclusionState:%u, lastWUPE:%u\n`
+- `%s: Waiting for Savage FW Cert to be loaded\n`
+- `IOPearlSharedMemoryTransferQueue::%s <- <%d:%s>\n`
+- `%s: Savage certificate loading pending\n`
+- `%s: DCN Kernels loading pending\n`
+- `IOPearlExclaveCameraFrame::%s: frameId:[%d:%d], _framesHeldCount:%d\n`
+- `IOPearlCameraFrame::%s -> result:%d (frameId:[%d:%d], _framesHeldCount:%d)\n`
+- `%s: Message type: %s (%d)\n`
+- `%s: gatherSequenceInfo()\n`
+- `%s <- caller:%s, timeoutMs:%u\n`
+- `%s <- request:%u, flags:0x%x data:%p timeout:%u\n`
+- `%s <- sender:%p, _commandMode:%d, _cameraState:%d\n`
+- `%s <- feedback->faceInfo.feedback:0x%x\n`
+- `%s: effectiveInitSprlMask:0x%04x\n`
+- `%s: Waiting for secure face detect...\n`
+- `IOPearlLogging::%s: WARNING: SequenceDebugLogging enabled while SequenceInfoLogging is disabled. No sequence debug data will be logged until SequenceInfoLogging is enabled.\n`
+- `IOPearlLogging::%s -> err:0x%x (dbgSize:%lu)\n`
+- `%s: Enabling/disabling device clock failed, err:0x%x\n`
+- `%s -> retryType:%d\n`
+- `%s: NOTICE: Ignoring frameId:[%d:%d] in onHold state...\n`
+- `%s <- camErr:%d, _analyticsCurrentEvent:%d\n`
+- `%s: Match time: total: %lld ms, face detect finished at %lld ms (duration: %lld ms), biocap finished at %lld ms (duration: %lld ms), pp finished at %lld ms (duration: %lld ms)\n`
+- `%s: cameraCovered = %u\n`
+- `%s: PM_STATE_OFF\n`
+- `%s <- inData:%p\n`
+- `%s: kDisplayStatusChangedCommand: Display Off - disable passcode challenge\n`
+- `%s <- pause:%u\n`
+- `%s: Requesting '%s' indicator\n`
+- `%s <- provisioningStatus:%p\n`
+- `%s: Waiting for FDR key unwrap result notification. Timeout = %us.\n`
+- `%s: Error processing camera frame: 0x%x\n`
+- `%s: seqType: %d, total: %d, standby: %llu, coolDown: %llu, %llu, %llu, %llu\n`
+- `IOPearlLogging::%s <- type:%d, eventTime:%llu, data:%p, dataSize:%zu, dataTimeId:%llx, sequenceId:(number:%d)\n`
+- `%s -> void\n`
+- `%s: sending WatchUnlockPoseEligibility: %u\n`
+- `IOPearlLogging::%s: ERROR: Cannot initialize SequenceDebugLogging! SequenceDebugLogging is disabled!\n`
+- `ApplePearlUserClient::%s -> success:%d\n`
+- `%s <- ApplePearlSEPDriver::unmapMemoryFromSEP\n`
+- `%s <- enrollInit:%p, _commandMode:%d\n`
+- `%s: Progress %d%% face %d (%d %d %d) / 1000000\n`
+- `%s: clearing retained 'CameraObstructed' feedback\n`
+- `%s: ANE1 power function%s found\n`
+- `%s: Delaying face detect processing by %u ms\n`
+- `%s <- pass:%d, phase:%s (%d)\n`
+- `IOPearlSharedMemoryTransferQueue::%s -> <%d:%s>: result:%d (_capacity:%u)\n`
+- `%s <- matchResult:%p\n`
+- `%s: enrollInfo: featureGenErr: %d enrollVectorErr: %d\n`
+- `%s: %s (%d) -> %s (%d)\n`
+- `%s: Error processing camera message: 0x%x\n`
+- `%s <- sequenceInfo:%p\n`

@@ -1,0 +1,21 @@
+# `LACDTOSensorTrustState` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/LocalAuthenticationCore.framework/LocalAuthenticationCore`](../userland/System__Library__PrivateFrameworks__LocalAuthenticationCore.framework__LocalAuthenticationCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 3 properties, 3 instance methods, 0 class methods
+
+## Properties
+
+```
+@property (T@"NSData",R,N) installedSensorID;
+@property (T@"NSData",R,N) trustedSensorID;
+@property (TB,R,N) isDisapproved;
+```
+
+## Instance methods
+
+```
+-[LACDTOSensorTrustState trustedSensorID];
+-[LACDTOSensorTrustState installedSensorID];
+-[LACDTOSensorTrustState isDisapproved];
+```

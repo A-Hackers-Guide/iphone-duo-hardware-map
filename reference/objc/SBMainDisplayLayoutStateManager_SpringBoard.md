@@ -1,0 +1,66 @@
+# `SBMainDisplayLayoutStateManager`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBLayoutStateManager`
+- 4 instance variables, 4 properties, 31 instance methods, 2 class methods
+
+## Instance variables
+
+```
+@"SBApplicationController" _applicationController;
+@"SBSplitPIPSupportValidator" _splitPIPSupportValidator;
+@"SBPIPEligibilityValidator" _pipEligibilityValidator;
+@"SBPIPControllerCoordinator" _pictureInPictureCoordinator;
+```
+
+## Properties
+
+```
+@property (T@"SBPlatformController",R,N) _platformController;
+@property (T@"SBMainWorkspace",R,N) _mainWorkspace;
+@property (T@"SBRecentAppLayouts",R,N) _recentAppLayouts;
+@property (T@"SBApplicationController",R,N) _applicationController;
+```
+
+## Class methods
+
+```
++[SBMainDisplayLayoutStateManager _initialLayoutStateWithDisplayOrdinal:isDisplayExternal:];
++[SBMainDisplayLayoutStateManager _layoutStateClass];
+```
+
+## Instance methods
+
+```
+-[SBMainDisplayLayoutStateManager layoutStateForApplicationTransitionContext:];
+-[SBMainDisplayLayoutStateManager _hasAppLayoutBeenUserKilledWithinThresholdToCreateNewScene:];
+-[SBMainDisplayLayoutStateManager _mainWorkspace];
+-[SBMainDisplayLayoutStateManager _applicationController];
+-[SBMainDisplayLayoutStateManager _layoutStateForDisplayIdentity:];
+-[SBMainDisplayLayoutStateManager _applicationSceneEntityFromApplicationBundleIdentifier:uniqueIdentifier:displayIdentity:switcherController:];
+-[SBMainDisplayLayoutStateManager _autoLayoutOptionsForNewAppLayout:previousAppLayout:request:];
+-[SBMainDisplayLayoutStateManager _butterflyUnlockedEnvironmentStateForRequestedUnlockedEnvironmentState:layoutElements:previousLayoutState:primaryWorkspaceEntity:isButterflySplitSupported:transitionSource:isContingencyPlanTransition:isReversingUncommittedDisplaySwap:entitiesWithRemovalContexts:inOutElementIdentifiersToLayoutAttributes:];
+-[SBMainDisplayLayoutStateManager _calculateCascadeBoundsForAppLayout:interfaceOrientation:switcherController:windowManagementContext:constrainingBounds:statusBarHeight:];
+-[SBMainDisplayLayoutStateManager _calculateCascadeTranslationForConstrainingBounds:statusBarHeight:];
+-[SBMainDisplayLayoutStateManager _cascadedFrameByTranslatingElement:cascadeFromFrame:appLayout:interfaceOrientation:windowScene:displayItemLayoutAttributesCalculator:constrainingBounds:translation:windowManagementContext:];
+-[SBMainDisplayLayoutStateManager _cascadedFrameForCascadingElement:cascadeFromFrame:appLayout:interfaceOrientation:windowScene:displayItemLayoutAttributesCalculator:constrainingBounds:statusBarHeight:windowManagementContext:];
+-[SBMainDisplayLayoutStateManager _computeButterflyLayoutForContext:previousLayoutState:layoutAttributesProvider:previousEntityResolver:isButterflySplitSupported:displayOrdinal:switcherController:activatingWorkspaceEntity:inOutPrimaryWorkspaceEntity:inOutSideWorkspaceEntity:outSpaceConfiguration:outAppExposeBundleIdentifierState:];
+-[SBMainDisplayLayoutStateManager _displayItemLayoutAttributesProvider];
+-[SBMainDisplayLayoutStateManager _doesSceneIDSpecifyPrimaryScene:forApplicationIdentifier:sceneSessionRole:];
+-[SBMainDisplayLayoutStateManager _layoutStateByApplyingDisplayRegionSidePolicyToLayoutState:previousLayoutState:switcherController:isRestoringFromPictureInPicture:];
+-[SBMainDisplayLayoutStateManager _layoutStateByPerformingChainCascadeForElements:elementIdentifiersToLayoutAttributes:layoutState:displayItemLayoutAttributesCalculator:previousLayoutState:switcherController:windowManagementContext:request:displayItemsNeedingPositionSnapping:];
+-[SBMainDisplayLayoutStateManager _layoutStateForApplicationTransitionContext:];
+-[SBMainDisplayLayoutStateManager _mostRecentAppLayoutForBundleIdentifier:ignoringUniqueIdentifiers:multitaskingSupported:];
+-[SBMainDisplayLayoutStateManager _mostRecentAppLayoutMatchingAnyUniqueIdentifier:multitaskingSupported:];
+-[SBMainDisplayLayoutStateManager _platformController];
+-[SBMainDisplayLayoutStateManager _recentAppLayouts];
+-[SBMainDisplayLayoutStateManager _sceneIDIfAppLayoutContainsPrimarySceneIDForBundleIdentifier:layoutState:bundleIdentifier:sceneSessionRole:];
+-[SBMainDisplayLayoutStateManager _switcherControllerForDisplayIdentity:];
+-[SBMainDisplayLayoutStateManager _updateSceneRelevancyManager:forAppLayout:applicationTransitionContext:elementIdentifiersToLayoutAttributes:interfaceOrientation:layoutAttributesProvider:layoutElements:];
+-[SBMainDisplayLayoutStateManager _validateButterflyLayoutState:applicationTransitionContext:forSwitcherController:];
+-[SBMainDisplayLayoutStateManager _zOrderComparatorFor:];
+-[SBMainDisplayLayoutStateManager defaultSceneIdentifierForBundleIdentifier:targetContentIdentifier:allowCanMatches:preferNewScene:visibleSceneIdentifiers:excludingSceneIdentifiers:sceneSessionRole:];
+-[SBMainDisplayLayoutStateManager defaultSceneIdentifierForBundleIdentifier:targetContentIdentifier:allowCanMatches:preferNewScene:visibleSceneIdentifiers:excludingSceneIdentifiers:sceneSessionRole:preferredDisplay:];
+-[SBMainDisplayLayoutStateManager initWithApplicationController:pictureInPictureCoordinator:];
+-[SBMainDisplayLayoutStateManager primarySceneIdentifierForBundleIdentifier:sceneSessionRole:displayIdentity:];
+```

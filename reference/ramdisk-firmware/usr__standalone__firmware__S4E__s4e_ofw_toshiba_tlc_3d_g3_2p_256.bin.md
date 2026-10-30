@@ -1,0 +1,285 @@
+# `usr/standalone/firmware/S4E/s4e_ofw_toshiba_tlc_3d_g3_2p_256.bin`
+
+- File size: 425,984 bytes
+
+## Payload [FW]
+
+- Size after IM4P unwrap / decompression: 425,984 bytes
+- Format: raw binary
+
+## Identity strings (versions, build tags) [FW]
+
+- `AppleMSPS4-13.174~1`
+
+## Strings (266) [FW]
+
+Printable runs of 6+ characters with at least three letters, in file order, with payload offset. For RTKit co-processor firmware these are the log formats, task names, endpoint names and assertions that describe what the processor does.
+
+```
+00000232  q(FWUE
+00000670  msp_core_toshiba_tlc_3d_g3_2p_256-13.174.0
+0000172c  #F0FBF
+0000182e  \LUF.[>
+000018a4  QF*FCF
+000018f2  PFBF#F
+00001998  FWLDETOC
+00001b43  a)bjb>K
+00001c2b  `hFAFO
+00002265  C0`WHp`D
+00002448  msp_rom_extension-13.174.0
+000025c8  app_main
+00003ed0  Undefined
+00003ee0  Software Int
+00003ef0  Prefetch Abort
+00003f00  Data Abort
+00003f10  Reserved Exception
+00003f82  hFqFzF
+00005a33   1F*FCF
+00005b3b   1F*FCF
+00005b83   1F*FCF
+00005bcb   1F*FCF
+00005d02  pG(HCn
+000061c9  `(FAF"F)
+00006253  `(FAF"F)
+00006359  H1FRFCF
+00006385  H1FRFCF
+000063b5  H1FRFCF
+00006d15  hYNYMA
+000074cd  hIh+`(`)`j` I)`h`N
+0000823d  qhh40&
+00008e45  F0HlF8"
+00009625  %`avI!`A
+0000a2d6  LP0epeO
+0000a3b7  h#a%pGM
+0000af3c  H`bLbH cbH
+0000bf98  p!)`RIrP!h!
+0000c80a  !4>jjH9H
+0000c9fd  R0FaFZF
+0000ca58  sh2hpi
+0000ca6c  uish2h
+0000ce3c  &IZFCF
+0000cfdd  r`hCF]
+0000d19f  rIhA`pG
+0000d4aa   FQFuF
+0000d4b6   FAFZF
+0000d683    u!Mhi
+0000dc4b  *WIky_
+0000e485  FrT1DJx
+0000e7bc  0FAFRF#F
+0000e7ed  $0FAFRF
+0000f05a  +F1FJFMF
+0000f128  @F1FJF
+0000f3b5  &QFYE\FO
+0000f532  $`KhVI
+0000fe06  !Fnj0F
+00010525  F hEh<H
+000120fe  AFFj0F
+0001281d  %0ItF!`O
+00012998  PF!FBF3F
+000129fe  0F)FBF
+000134cf  d#IAdC
+000138d3  DBy&K[
+00013aa0  UUUU3333
+00013cb8  *FbI1`4`
+00013e85  F"hLNMI
+00014e81  "IhA`O
+00016860  UUUU3333
+00016e75  !$"LFPF
+00016eb8  FL xFM
+00018e53  !0"PFO
+000193f5  ETL%`TL%h
+00019403  URL%`RL%h@
+00019481  FYFPF"
+00019e4e  jIJojI
+0001aa21  F FQFBF
+0001ac4c  ^F2FAD
+0001cac3   0c xpc
+0001d274  ]L^MAE
+0001d795  `F`VFqi@F
+0001d90d  xHC4!HC
+0001e0f4   FYFRF
+0001fa40  ,hhh1`O
+00020605  i!bBibb
+00020d34  BToCEBTC
+00021478  ha'HAy
+00021ce5  h!`Aha`
+00021cf5  i!aAiaa
+00021d05  j!bAjab
+00021d15  k!cAkac
+00021dfa  HVf`!`O
+000234a8  (FAF"F
+000236de  iL hAn0F
+00023a26  1FRFXF
+00023af1  F"LUFO
+00023c5c  WN!FWL
+00023de1  FKH,Fo
+00024174  (F1F"FCF
+00024909  )eNeM5`
+00024a61  ` FRF+F
+00024bc0   F1F*FCF
+000266e1  FYhJh#H#L
+000269b0  )FBmCn
+00027751  b8jyj c
+00027ba8  5F)iQE
+00027def  "ekXFAF
+000283d8  %Mhh"I#J
+000288ea  Ml*CJd#
+00028989   uutcpb1
+0002899c  E@tfpe
+00028dac  XF1F*FCF
+0002927b  !EuDcAb
+0002928e  EPDfAe
+00029dfe  % AppGM
+00029fa1  ,(hKILJ
+0002a596  X@0FAF]
+0002b23c  UUUU3333
+0002beff  BZabhO
+0002bf97  k!kYfak
+0002bfa7  g!lYgal
+0002c445  D `)hnh
+0002cb80  AaZ`pG
+0002d1ce  5hAL F
+0002dbd0  1h Frh
+0002ded9  0XCszO
+0002e9fe  yHyIzJ
+0002ea83  k_Mlj F
+0002eacc  NM,hhh @
+0002f8fb  b#crH@~iN
+0002fc17   BvpG<
+00030033  aFIGKJ
+000302ae  qHBF[F
+000302cd   0vVFjH
+000304d5  FKHBhKMKI
+0003073c  PFYFBF
+00031478  m`qH`gqH gqH
+0003223f  FmF`x)
+00032c56  0F)FBF
+00032caa  0F!FBF
+00033870  )xjxGL
+000338d8  @FQF2F
+00034384  0F!FBF
+000345b0   x"Fax
+00034705  F xax&M
+00034a2f   1F0aPF0"
+00034bc5  @1DArY
+00035218  0FAF"F]
+0003569c  QF(NBF0F
+000357d8  (FQFBF
+00035802  (FQFBF
+00035824  (FQFBF
+00035d20  pGpG#H
+00036a8e  8"0hFFj
+000371ea  YFBF#F
+00037e3c  sL$hlH0`N
+00039da7  hoJ"`!` `
+0003a9b0  ht)tTH
+0003aaf4  UUUU3333
+0003ab49  FjL%`jL%hO
+0003ab59  UhL%`hL
+0003b00b  hlM5`0`
+0003b016  3`4`r`fHpL
+0003b26c  JxBqIyAr
+0003b34f  h=iQF"F+F
+0003b35c  xiQF"F+F
+0003b3f3   )FZFSF
+0003b405   )FZFSF
+0003b49d   !FZF+F
+0003c262  RBc*JF
+0003c666  ahbl h8K
+0003e239   aFrFO
+0003e32d  #IFbFO
+00040fad   $(,048<@DHLP`lpt
+0004111c  REXTFWLDR5FWXTRAPTSDHBTCPBBT$4BDBToC
+0004141c  DDDDDDDD
+000415fc  DDDDDDDD
+00041734  PPPPPPPP
+00041da6  012ABC
+00043c48  c.'>*GAq{g
+00043c77  lEq0E"
+00043cc0  ffffffff
+00043d50  msp_core_toshiba_tlc_3d_g3_2p_256-13.174.0
+00043e27  !INTERACTIVEhelloscmd
+00043ee0  app_main
+00043ef0  ASI Device Info
+00043f00  Uknown
+00043f18  tlc_3d_g3_2p_256
+00043f29  Internal Only Mode requires Automatic value to be used
+00043f60  EUB mode can not use Automatic value
+00043f85  msp-nand-drive-v1.174-tigris_hdp
+00043fa8  AppleMSPS4-13.174~1
+0004ab04  DCCBCCC
+0004ab3d  DDD$"""
+0004abc5  DDDD"""
+0004cf8b  FmQ^9n
+0004f8b3  `NH aNH`aNH
+0004f8bf  aNH bNH`bNH
+0004f8d3  cNH dNH f(Fff
+0004ff7e  $"`xea
+0005047b  h+Nqh'M
+00050490   FZFCF
+0005076a  %FLFfF
+00051544   zaz"\
+00051b07  Npi Dpa@F
+00051ebd   pGHipG
+0005278d  #0hqhHJ
+00052880  XF1FRF
+000528dc  pGpGpGpG
+00052b98  XF1FRF
+00052d0c   F1FRF
+00052e5c  `@Q`jhQ@
+00053e60  4@LNtC
+0005400c  emi_ext
+00054068  S9U9SBUBSCUCL
+0005478f  pslf-P
+00054c12  zSZ^w$
+0005671c  ZFNLSF&FV
+000568a4  phTF?N
+00056e9f  F)F FEF
+00057c4e  @DAz!CAr
+00057e30  def_appl_ext
+00058cd5  F`IKx`J
+0005901c  &FrFd#
+0005946b  h1Nqh-M
+00059480   FZFCF
+0005a1f4   zaz"\
+0005a7b7  Npi Dpa@F
+0005ab6d   pGHipG8
+0005b180  sHH`vH
+0005b1b8   hjIJjBc
+0005b61d  xjqic(c
+0005b912  000000LLLLLL??????,,,,,,_
+0005be77  xZCPCO
+0005c53a  nxQC6J
+0005cc1e   F1F*FCF
+0005ccd8  7HBx7M)y
+0005d1a8  XF1FRF
+0005d82d    p.IHy
+0005d944  PF)FBF
+0005de60  ,@IMlC
+0005e0e8  slbt_ext
+0005e140  S9U9SBUBSCUCL
+0005e1bf  Z____HYX_____SDK_SAM_TSB_HPN_03D_
+0005ebd4  pts_update_ext
+0005f019  NTTETOC>
+00060071  F"F+F4FEF
+00060d1a  qY!CqQ
+00061459  H8"`cXF
+000625df  1!aPJB
+000625f6  Ah0FBF
+00062f12  #:CLLXAH
+000636dc  1h Frh
+00063982   t FRx0
+00064099  !F`XFD
+000641e7  `D"AFo
+0006460d  CcN3@`
+00066600  QF,NBF0F
+000668d0  msp_fw_loader_toshiba_tlc_3d_g3_2p_256-13.174.0
+000669f0  REXTFWLDR5FWXTRAPTSDHBTCPBBT$4BDBToC
+00066e10  app_main
+00066e19  Internal Only Mode requires Automatic value to be used
+00066e50  EUB mode can not use Automatic value
+00066e75  msp-nand-drive-v1.174-tigris_hdp
+000670e8  DCCBCCC
+00067121  DDD$"""
+000671a9  DDDD"""
+```

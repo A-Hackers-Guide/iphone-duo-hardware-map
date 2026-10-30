@@ -1,0 +1,110 @@
+# strings(1) of Firmware/M3/bin/securem3fw-v68.im4p (sm3f)
+RTKit_armv7m_Oz_floatabisoft-3514.40.18.release
+RTKSTACK
+D7q/;M
+gN~Ru0
+O<Z!H
+not set
+invalid
+stk_fail
+overflow
+underflow
+tytbmxport
+delegated_c_client.c
+tb_connection.c
+internal.h
+tb_message.c
+tb_codec.c
+main.c
+CILMonitorThread
+CILMonitor.c
+20.112
+Oct 21 2026
+23:22:29
+tytbmxport_client
+secureM3_tb_ipc.c
+tytbmxport_server
+secureM3_tb_translator.c
+m3_tb_server
+m3_tb_client
+rtk_mbi_messagebox.c
+securem3_coredump
+device.c
+CLPDPACIController.c
+CommonTask
+interrupt_service.c
+InterruptService
+CSensorDriver.c
+SensorThread
+SensorThreadLowPrio
+SpmiCmdThread
+SpmiControllerThread
+SpmiControllerCommon.c
+AldaSTI2cController.c
+i2cCmdThread0
+i2cCmdThread1
+i2cCmdThread2
+i2cControllerThread
+CVCRouter.c
+isp_to_m3_tightbeam.c
+not set
+invalid
+
+# AVE0..8 slice strings
+## AVE0
+RTKit-3491.release
+stk_fail
+!Mthd:%p
+not set
+## AVE8
+0123456789abcdef0123456789ABCDEF
+RTKit-3491.release
+stk_fail
+cs2asc_ipc
+<null>
+RTKit: %s - Client: %s
+not set
+# ANE fw (h19_ane0) selected
+./sne/Service/PowerControlService/CPowerControlServiceAneH18g.cpp
+./sne/aneEngine/exeLoop/CAneEngineExeLoopH18g.cpp
+./sne/drivers/CE/CSneCEDrvH18g.cpp
+./sne/drivers/itq/CSneItqDrvH18g.cpp
+./sne/drivers/tm/CSneTMDrvH18g.cpp
+/Library/Caches/com.apple.xbs/96BD7295-2E6C-40F1-901E-B8E997EFC517/TemporaryDirectory.0PDvHS/Sources/AppleH16AneFW/sne/ssi/src/common/CEispInterruptBuffer.cpp
+ANE not in non-secure mode
+ANE0_BASE_0
+ANE0_BASE_1
+ANE0_BASE_2
+ANE0_CPU_0
+ANE0_CPU_1
+ANE0_CPU_2
+ANE0_CPU_3
+ANE0_CPU_4
+ANE0_CPU_5
+ANE0_CPU_BLOCKI
+ANE0_MPM
+ANE0_SYS_0
+ANE0_SYS_1
+ANE1_BASE_0
+ANE1_BASE_1
+ANE1_BASE_2
+ANE1_CPU_0
+ANE1_CPU_1
+ANE1_CPU_2
+ANE1_CPU_3
+ANE1_CPU_4
+ANE1_CPU_5
+ANE1_CPU_BLOCKI
+ANE1_MPM
+ANE1_SYS_0
+ANE1_SYS_1
+CSNE_CMD_EXCLAVE_MODE_START
+CSNE_CMD_EXCLAVE_MODE_STOP
+EXCLAVE_MODE_PHASE_START
+EXCLAVE_MODE_PHASE_STOP
+PowerControl_H18g
+RTKSTACKRTKit_armv8_chinook_Oz_flto_pac-3514.40.18.release
+false == GetPowerStatus(PowerDomain_Id_H18g_ANE_TDBASE)
+powerDomain >= PowerDomain_Id_H18g_ANE_START && powerDomain < PowerDomain_Id_H18g_ANE_END
+# AVE main fw
+RTKit_armv8_chinook_Oz_flto_pac-3514.40.18.release

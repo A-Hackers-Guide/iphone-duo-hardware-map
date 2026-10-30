@@ -1,0 +1,221 @@
+# `SBWindowScene`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `UIWindowScene`
+- Protocols: `SBProductivityGestureDestinationProviding`, `SBLayoutStateTransitionObserver`, `SBWindowSceneContextProviding`, `SBLastInteractedSceneProviding`, `SBIdleTimerCoordinating`
+- 3 instance variables, 87 properties, 110 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"NSHashTable" _observers;
+B _isInvalidating;
+B _isInvalidated;
+```
+
+## Properties
+
+```
+@property (TQ,R,N) sbhScreenType;
+@property (T@"FBSDisplayIdentity",R,N) displayIdentity;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+@property (T@"<SBWindowSceneDelegate>",&,D,N) delegate;
+@property (TB,R,N,GisMainDisplayWindowScene) mainDisplayWindowScene;
+@property (TB,R,N,GisExternalDisplayWindowScene) externalDisplayWindowScene;
+@property (TB,R,N,GisIntegratedDisplayWindowScene) integratedDisplayWindowScene;
+@property (TB,R,N,GisContinuityDisplayWindowScene) continuityDisplayWindowScene;
+@property (TB,R,N,GisExtendedDisplayWindowScene) extendedDisplayWindowScene;
+@property (TB,R,N,GisResizableAppHostingWindowScene) resizableAppHostingWindowScene;
+@property (TB,R,N) supportsMultitasking;
+@property (TB,R,N) supportsAdvancedMultitasking;
+@property (TB,R,N) supportsSplitPIP;
+@property (T@"<SBIdleTimerProviding>",R,N) idleTimerProvider;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+@property (T@"SBAlertItemsController",R,N) alertItemsController;
+@property (T@"SBAmbientPresentationController",R,N) ambientPresentationController;
+@property (T@"SBDisplayAppInteractionEventSource",R,N) appInteractionEventSource;
+@property (T@"<SBAssistantSceneControlling>",R,N) assistantController;
+@property (T@"<SBFAuthenticationStatusProvider>",R,N) authenticationStatusProvider;
+@property (T@"BNBannerController",R,N) bannerController;
+@property (T@"SBBacklightController",R,N) backlightController;
+@property (T@"SBCompanionScenePresenter",R,N) companionScenePresenter;
+@property (T@"SBControlCenterController",R,N) controlCenterController;
+@property (T@"SBCoverSheetPresentationManager",R,N) coverSheetPresentationManager;
+@property (T@"CSCoverSheetViewController",R,N) coverSheetViewController;
+@property (T@"<FBSDisplayLayoutPublishing>",R,N) displayLayoutPublisher;
+@property (T@"SBFloatingDockController",R,N) floatingDockController;
+@property (T@"SBHIDUISensorModeController",R,N) HIDUISensorModeController;
+@property (T@"SBHomeAffordanceInteractionManager",R,N) homeAffordanceInteractionManager;
+@property (T@"SBHomeScreenController",R,N) homeScreenController;
+@property (T@"<SBHUDControlling>",R,N) hudController;
+@property (T@"SBSceneLayoutStateProvider",R,N) layoutStateProvider;
+@property (T@"SBMainDisplayLayoutStateManager",R,N) layoutStateManager;
+@property (T@"SBLayoutStateTransitionCoordinator",R,N) layoutStateTransitionCoordinator;
+@property (T@"SBLiftToWakeController",R,N) liftToWakeController;
+@property (T@"SBLockedPointerManager",R,N) lockedPointerManager;
+@property (T@"SBLockScreenManager",R,N) lockScreenManager;
+@property (T@"SBLockStateAggregator",R,N) lockStateAggregator;
+@property (T@"SBMedusaHostedKeyboardWindowController",R,N) medusaHostedKeyboardWindowController;
+@property (T@"<SBLockStateProviding>",R,N) uiLockStateProvider;
+@property (T@"SBModalAlertPresentationCoordinator",R,N) modalAlertPresentationCoordinator;
+@property (T@"SBModalLibraryController",R,N) modalLibraryController;
+@property (T@"SBModalUIFluidDismissGestureManager",R,N) modalUIFluidDismissGestureManager;
+@property (T@"SBWindowScenePIPManager",R,N) pictureInPictureManager;
+@property (T@"<SBProximityBacklightPolicy>",R,N) proximityBacklightPolicy;
+@property (T@"SBProximitySensorManager",R,N) proximitySensorManager;
+@property (T@"SBReachabilityController",R,N) reachabilityController;
+@property (T@"SBRecordingIndicatorManager",R,N) recordingIndicatorManager;
+@property (T@"SBRecordingIndicatorDisplayPowerManager",R,N) indicatorDisplayPowerManager;
+@property (T@"SBManagedDisplayController",R,N) managedDisplayController;
+@property (T@"SBPhoneRLController",R,N) phoneRLController;
+@property (T@"SBScreenSleepController",R,N) screenSleepController;
+@property (T@"<SBFSecureDisplayStateProviding>",R,N) secureDisplayStateProvider;
+@property (T@"SBSwitcherController",R,N) switcherController;
+@property (T@"<SBSystemApertureControlling>",R,N) systemApertureController;
+@property (T@"SBSystemGestureManager",R,N) systemGestureManager;
+@property (T@"SBSystemPointerInteractionManager",R,N) systemPointerInteractionManager;
+@property (T@"SBTouchSuppressionManager",R,N) touchSuppressionManager;
+@property (T@"TRAArbiter",R,N) traitsArbiter;
+@property (T@"SBTraitsPipelineManager",R,N) traitsPipelineManager;
+@property (T@"SBWindowSceneOrientationLockManager",R,N) orientationLockManager;
+@property (T@"<SBTransientOverlayPresenting>",R,N) transientOverlayPresenter;
+@property (T@"SBWallpaperController",R,N) wallpaperController;
+@property (T@"SBWindowHidingManager",R,N) windowHidingManager;
+@property (T@"SBFZStackResolver",R,N) zStackResolver;
+@property (T@"SBTransientUIInteractionManager",R,N) transientUIInteractionManager;
+@property (T@"<SBUICommandValidating>",R,N) commandValidator;
+@property (T@"SBHardwareButtonBezelEffectsCoordinator",R,N) hardwareButtonBezelEffectsCoordinator;
+@property (T@"SBIconController",R,N) iconController;
+@property (T@"SBCommandTabController",R,N) commandTabController;
+@property (T@"SBInteractiveScreenshotGestureManager",R,N) interactiveScreenshotGestureManager;
+@property (T@"SBMenuBarManager",R,N) menuBarManager;
+@property (T@"SBPolicyAggregator",R,N) policyAggregator;
+@property (T@"SBWindowSceneAccessorySceneProvider",R,N) accessorySceneProvider;
+@property (T@"_SBManualDisplayActivationShieldWindow",R,N) manualActivationShieldWindow;
+@property (T@"SBWindowSceneAuxiliaryContentController",R,N) auxiliaryContentController;
+@property (T@"SBContinuousFoldController",R,N) continuousFoldController;
+@property (T@"SBWindowSceneDisplayContentModeContext",R,N) displayContentModeContext;
+@property (Tq,R,N) surfaceType;
+@property (T@"FBScene",R,N) lastInteractedScene;
+```
+
+## Instance methods
+
+```
+-[SBWindowScene homeScreenController];
+-[SBWindowScene coverSheetViewController];
+-[SBWindowScene recordingIndicatorManager];
+-[SBWindowScene iconController];
+-[SBWindowScene layoutStateProvider];
+-[SBWindowScene isExternalDisplayWindowScene];
+-[SBWindowScene switcherController];
+-[SBWindowScene reachabilityController];
+-[SBWindowScene hudController];
+-[SBWindowScene backlightController];
+-[SBWindowScene coverSheetPresentationManager];
+-[SBWindowScene idleTimerProvider:didProposeBehavior:forReason:];
+-[SBWindowScene wallpaperController];
+-[SBWindowScene alertItemsController];
+-[SBWindowScene lockScreenManager];
+-[SBWindowScene modalLibraryController];
+-[SBWindowScene systemSpaceOrientationForDeviceOrientation:];
+-[SBWindowScene createManualActivationShieldWindow];
+-[SBWindowScene systemPointerInteractionManager];
+-[SBWindowScene removeLastInteractedSceneObserver:];
+-[SBWindowScene layoutStateManager];
+-[SBWindowScene floatingDockController];
+-[SBWindowScene uiLockStateProvider];
+-[SBWindowScene authenticationStatusProvider];
+-[SBWindowScene isIntegratedDisplayWindowScene];
+-[SBWindowScene surfaceType];
+-[SBWindowScene hardwareButtonBezelEffectsCoordinator];
+-[SBWindowScene isLegacyMainEmbeddedScene];
+-[SBWindowScene succinctDescriptionBuilder];
+-[SBWindowScene sbhScreenType];
+-[SBWindowScene lockedPointerManager];
+-[SBWindowScene setInvalidating:];
+-[SBWindowScene removeDisplayContentModeTransitionObserver:];
+-[SBWindowScene commandTabController];
+-[SBWindowScene isContinuityDisplayWindowScene];
+-[SBWindowScene isInvalidating];
+-[SBWindowScene windowHidingManager];
+-[SBWindowScene indicatorDisplayPowerManager];
+-[SBWindowScene accessorySceneProvider];
+-[SBWindowScene traitsPipelineManager];
+-[SBWindowScene policyAggregator];
+-[SBWindowScene medusaHostedKeyboardWindowController];
+-[SBWindowScene keyboardFocusCoalitionAffinity];
+-[SBWindowScene _abstractWindowSceneDelegate];
+-[SBWindowScene layoutStateTransitionCoordinator];
+-[SBWindowScene _windowsIgnoreSceneClientOrientation];
+-[SBWindowScene convertPoint:toNeighboringDisplayWindowScene:];
+-[SBWindowScene supportsMultitasking];
+-[SBWindowScene screenSleepController];
+-[SBWindowScene touchSuppressionManager];
+-[SBWindowScene addLastInteractedSceneObserver:];
+-[SBWindowScene deviceOrientationForSystemSpaceOrientation:];
+-[SBWindowScene isEmbeddedScene];
+-[SBWindowScene isInvalidated];
+-[SBWindowScene interactiveScreenshotGestureManager];
+-[SBWindowScene handleProductivityGestureAction:];
+-[SBWindowScene bannerController];
+-[SBWindowScene transientOverlayPresenter];
+-[SBWindowScene assistantController];
+-[SBWindowScene succinctDescription];
+-[SBWindowScene idleTimerProvider];
+-[SBWindowScene homeAffordanceInteractionManager];
+-[SBWindowScene invalidate];
+-[SBWindowScene isContinuityScene];
+-[SBWindowScene supportsSplitPIP];
+-[SBWindowScene lockStateAggregator];
+-[SBWindowScene resetIdleTimerIfNecessary];
+-[SBWindowScene layoutStateTransitionCoordinator:transitionDidEndWithTransitionContext:];
+-[SBWindowScene systemGestureManager];
+-[SBWindowScene auxiliaryContentController];
+-[SBWindowScene pictureInPictureManager];
+-[SBWindowScene secureDisplayStateProvider];
+-[SBWindowScene convertRect:toNeighboringDisplayWindowScene:];
+-[SBWindowScene menuBarManager];
+-[SBWindowScene displayLayoutPublisher];
+-[SBWindowScene supportsAdvancedMultitasking];
+-[SBWindowScene traitsArbiter];
+-[SBWindowScene isExtendedDisplayWindowScene];
+-[SBWindowScene liftToWakeController];
+-[SBWindowScene proposeBehaviorForReason:];
+-[SBWindowScene isResizableAppHostingWindowScene];
+-[SBWindowScene modalUIFluidDismissGestureManager];
+-[SBWindowScene phoneRLController];
+-[SBWindowScene _displayWindowingMode];
+-[SBWindowScene systemApertureController];
+-[SBWindowScene isMainDisplayWindowScene];
+-[SBWindowScene managedDisplayController];
+-[SBWindowScene lastInteractedScene];
+-[SBWindowScene appInteractionEventSource];
+-[SBWindowScene proximitySensorManager];
+-[SBWindowScene displayContentModeContext];
+-[SBWindowScene ambientPresentationController];
+-[SBWindowScene _sbDisplayContext];
+-[SBWindowScene commandValidator];
+-[SBWindowScene _hasTollFreeDeviceAndInterfaceOrientationConversion];
+-[SBWindowScene orientationLockManager];
+-[SBWindowScene companionScenePresenter];
+-[SBWindowScene HIDUISensorModeController];
+-[SBWindowScene sbs_uiStatusBar];
+-[SBWindowScene zStackResolver];
+-[SBWindowScene manualActivationShieldWindow];
+-[SBWindowScene displayIdentity];
+-[SBWindowScene modalAlertPresentationCoordinator];
+-[SBWindowScene isExternalDisplayScene];
+-[SBWindowScene controlCenterController];
+-[SBWindowScene addDisplayContentModeTransitionObserver:];
+-[SBWindowScene transientUIInteractionManager];
+-[SBWindowScene sbui_systemArbitratedInterfaceOrientation];
+-[SBWindowScene continuousFoldController];
+-[SBWindowScene proximityBacklightPolicy];
+```

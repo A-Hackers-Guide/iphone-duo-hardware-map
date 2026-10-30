@@ -1,0 +1,103 @@
+# `/System/Library/PrivateFrameworks/AppleFSCompression.framework/SystemCompressionRules.plist`
+
+From the erase/recovery restore ramdisk (141-28940-105.dmg, runs restored_external). 1,443 bytes.
+
+-
+  - `PathEndsWithString`: `.png`
+  - `RuleType`: `Exclude`
+-
+  - `PathEndsWithString`: `.gif`
+  - `RuleType`: `Exclude`
+-
+  - `PathEndsWithString`: `.gz`
+  - `RuleType`: `Exclude`
+-
+  - `PathEndsWithString`: `.dmg`
+  - `RuleType`: `Exclude`
+-
+  - `PathEndsWithString`: `.efi`
+  - `RuleType`: `Exclude`
+-
+  - `PathEndsWithString`: `.mp3`
+  - `RuleType`: `Exclude`
+-
+  - `PathEndsWithString`: `.im4m`
+  - `RuleType`: `Exclude`
+-
+  - `PathBeginsWithString`: `/System/Library/PrelinkedKernels/`
+  - `RuleType`: `Exclude`
+-
+  - `PathBeginsWithString`: `/System/Library/CoreServices/SystemVersion.bundle/`
+  - `RuleType`: `Exclude`
+-
+  - `PathBeginsWithString`: `/mach_kernel`
+  - `RuleType`: `Exclude`
+-
+  - `PathBeginsWithString`: `/System/Library/Caches/com.apple.kext.caches/`
+  - `RuleType`: `Exclude`
+-
+  - `PathBeginsWithString`: `/usr/standalone/`
+  - `RuleType`: `Exclude`
+-
+  - `PathBeginsWithString`: `/Developer/`
+  - `RuleType`: `Exclude`
+-
+  - `PathBeginsWithString`: `/System/Library/CFMSupport/`
+  - `RuleType`: `Exclude`
+-
+  - `PathBeginsWithString`: `/Library/Application Support/Macromedia/Shockwave 10/`
+  - `RuleType`: `Exclude`
+-
+  - `PathBeginsWithString`: `/System/Library/Frameworks/QuickTime.framework/Versions/A/Resources/`
+  - `RuleType`: `Exclude`
+-
+  - `PathBeginsWithString`: `/System/Library/dyld/`
+  - `RuleType`: `Exclude`
+-
+  - `PathBeginsWithString`: `/postinstall`
+  - `RuleType`: `Exclude`
+-
+  - `PathBeginsWithString`: `/postupgrade_actions/`
+  - `RuleType`: `Exclude`
+-
+  - `PathBeginsWithString`: `/preinstall`
+  - `RuleType`: `Exclude`
+-
+  - `PathBeginsWithString`: `/preupgrade_actions/`
+  - `RuleType`: `Exclude`
+-
+  - `PathBeginsWithString`: `/Tools/`
+  - `RuleType`: `Exclude`
+-
+  - `PathBeginsWithString`: `/usr/local/L4/bin/L4.`
+  - `RuleType`: `Exclude`
+-
+  - `PathExactlyEqualsString`: `/System/Library/Templates/Device/Library/Preferences/SystemConfiguration/com.apple.Boot.plist`
+  - `RuleType`: `Exclude`
+-
+  - `PathExactlyEqualsString`: `/Library/Preferences/SystemConfiguration/com.apple.Boot.plist`
+  - `RuleType`: `Exclude`
+-
+  - `PathExactlyEqualsString`: `/System/Library/CoreServices/.disk_label`
+  - `RuleType`: `Exclude`
+-
+  - `PathExactlyEqualsString`: `/System/Library/CoreServices/PlatformSupport.plist`
+  - `RuleType`: `Exclude`
+-
+  - `PathExactlyEqualsString`: `/System/Library/CoreServices/BootX`
+  - `RuleType`: `Exclude`
+-
+  - `PathExactlyEqualsString`: `/System/Library/CoreServices/SystemVersion.plist`
+  - `RuleType`: `Exclude`
+-
+  - `PathExactlyEqualsString`: `/System/Library/CoreServices/ServerVersion.plist`
+  - `RuleType`: `Exclude`
+-
+  - `PathExactlyEqualsString`: `/System/Library/CoreServices/BridgeVersion.bin`
+  - `RuleType`: `Exclude`
+-
+  - `PathExactlyEqualsString`: `/L4`
+  - `RuleType`: `Exclude`
+-
+  - `PathExactlyEqualsString`: `/usr/bin/afscexpand`
+  - `RuleType`: `Exclude`

@@ -1,0 +1,29 @@
+# `PGPictureInPictureViewControllerContentContainer` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 19 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[PGPictureInPictureViewControllerContentContainer performStartAnimationWithCompletionHandler:];
+-[PGPictureInPictureViewControllerContentContainer performStopAnimationWithFinalInterfaceOrientation:finalLayerFrame:completionHandler:];
+-[PGPictureInPictureViewControllerContentContainer preferredContentSizeDidChangeForPictureInPictureViewController];
+-[PGPictureInPictureViewControllerContentContainer prepareStartAnimationWithInitialInterfaceOrientation:initialLayerFrame:completionHandler:];
+-[PGPictureInPictureViewControllerContentContainer acquireInterfaceOrientationLock];
+-[PGPictureInPictureViewControllerContentContainer updateMenuItems];
+-[PGPictureInPictureViewControllerContentContainer didChangePiPControlsVisible:];
+-[PGPictureInPictureViewControllerContentContainer handleDoubleTapGesture];
+-[PGPictureInPictureViewControllerContentContainer handleTapWhileStashedGesture];
+-[PGPictureInPictureViewControllerContentContainer handleToggleProminenceTapGesture];
+-[PGPictureInPictureViewControllerContentContainer notePictureInPictureViewControllerPrefersHiddenFromClonedDisplayDidChange];
+-[PGPictureInPictureViewControllerContentContainer notePictureInPictureViewControllerTetheringDidUpdate];
+-[PGPictureInPictureViewControllerContentContainer performRotateAnimationWithRotation:completionHandler:];
+-[PGPictureInPictureViewControllerContentContainer performStartInIsolationWithCompletionHandler:];
+-[PGPictureInPictureViewControllerContentContainer performStopInIsolationWithCompletionHandler:];
+-[PGPictureInPictureViewControllerContentContainer pictureInPictureClientDidRequestStashing];
+-[PGPictureInPictureViewControllerContentContainer playbackSourceDidUpdateIsRoutingVideoToHostedWindow:];
+-[PGPictureInPictureViewControllerContentContainer prepareStopAnimationWithCompletionHandler:];
+-[PGPictureInPictureViewControllerContentContainer relinquishInterfaceOrientationLock];
+```

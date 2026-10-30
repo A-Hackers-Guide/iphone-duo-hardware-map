@@ -1,0 +1,85 @@
+# `_MTLSWRaytracingAccelerationStructureCommandEncoder`
+
+- Image: [`/System/Library/Frameworks/Metal.framework/Metal`](../userland/System__Library__Frameworks__Metal.framework__Metal.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `_MTLObjectWithLabel`
+- Protocols: `MTLAccelerationStructureCommandEncoderSPI`
+- 6 instance variables, 6 properties, 52 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"<MTLDevice>" _device;
+@"_MTLCommandBuffer<MTLCommandBuffer>" _commandBuffer;
+@"<MTLComputeCommandEncoderSPI>" _computeEncoder;
+^{?=} _progressBins;
+B _virtualSubstreamsEnabled;
+B _virtualSubstreamOpen;
+```
+
+## Properties
+
+```
+@property (T@"<MTLDevice>",R) device;
+@property (T@"NSString",C) label;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder waitForFence:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder useResources:count:usage:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder useResource:usage:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder insertDebugSignpost:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder updateFence:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder useHeap:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder useHeaps:count:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder sampleCountersInBuffer:atSampleIndex:withBarrier:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder pushDebugGroup:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder popDebugGroup];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder initWithCommandBuffer:descriptor:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder device];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder setLabel:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder endEncoding];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder globalTraceObjectID];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder dealloc];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder commandBuffer];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder endBVHSubstream];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder serializeAccelerationStructure:toBuffer:serializedBufferOffset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder barrierAfterQueueStages:beforeStages:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder beginBVHSubstream];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder buildAccelerationStructure:descriptor:scratchBuffer:scratchBufferOffset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder copyAccelerationStructure:toAccelerationStructure:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder copyAndCompactAccelerationStructure:toAccelerationStructure:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder deserializeAccelerationStructure:fromBuffer:serializedBufferOffset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder deserializeAccelerationStructure:primitiveAccelerationStructures:fromBuffer:serializedBufferOffset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder deserializeInstanceAccelerationStructure:primitiveAccelerationStructures:fromBuffer:serializedBufferOffset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder deserializeInstanceAccelerationStructure:primitiveAccelerationStructures:fromBuffer:serializedBufferOffset:withDescriptor:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder deserializePrimitiveAccelerationStructure:fromBuffer:serializedBufferOffset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder deserializePrimitiveAccelerationStructure:fromBuffer:serializedBufferOffset:withDescriptor:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder endEncodingAndRetrieveProgramAddressTable];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder initWithCommandBuffer:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder isSupportedVersion:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder refitAccelerationStructure:descriptor:destination:scratchBuffer:scratchBufferOffset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder refitAccelerationStructure:descriptor:destination:scratchBuffer:scratchBufferOffset:options:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder serializeInstanceAccelerationStructure:primitiveAccelerationStructures:toBuffer:serializedBufferOffset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder serializePrimitiveAccelerationStructure:toBuffer:serializedBufferOffset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder substreamSynchronizeAccelerationStructures:access:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder substreamSynchronizeDescriptor:access:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder writeAccelerationStructureSerializationData:toBuffer:offset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder writeAccelerationStructureTraversalDepth:toBuffer:offset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder writeCompactedAccelerationStructureSize:toBuffer:offset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder writeCompactedAccelerationStructureSize:toBuffer:offset:sizeDataType:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder writeDeserializedAccelerationStructureSize:serializedOffset:toBuffer:sizeBufferOffset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder writeDeserializedPrimitiveAccelerationStructureSizes:serializedOffset:toBuffer:sizesBufferOffset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder writeGenericBVHStructureOfAccelerationStructure:headerBuffer:headerBufferOffset:innerNodeBuffer:innerNodeBufferOffset:leafNodeBuffer:leafNodeBufferOffset:primitiveBuffer:primitiveBufferOffset:geometryBuffer:geometryOffset:instanceTransformBuffer:instanceTransformOffset:controlPointBuffer:controlPointBufferOffset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder writeGenericBVHStructureOfAccelerationStructure:into:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder writeGenericBVHStructureSizesOfAccelerationStructure:into:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder writeGenericBVHStructureSizesOfAccelerationStructure:toBuffer:sizesBufferOffset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder writeGeometryOfAccelerationStructure:toBuffer:geometryBufferOffset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder writeGeometrySizeOfAccelerationStructure:toBuffer:sizeBufferOffset:];
+-[_MTLSWRaytracingAccelerationStructureCommandEncoder writeSerializedAccelerationStructureSize:toBuffer:sizeBufferOffset:];
+```

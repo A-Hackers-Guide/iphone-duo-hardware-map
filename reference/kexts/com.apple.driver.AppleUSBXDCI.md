@@ -1,0 +1,783 @@
+# `com.apple.driver.AppleUSBXDCI`
+
+- Name: AppleUSBXDCI
+- Version: `1.0`
+- UUID: `F325DA89-BF00-3B0C-8DA2-8413F4DEB249`
+- Source version: `896.40.5.0.0`
+- Depends on: [`com.apple.driver.usb.AppleUSBCommon`](com.apple.driver.usb.AppleUSBCommon.md) 1.0, [`com.apple.iokit.IOUSBDeviceFamily`](com.apple.iokit.IOUSBDeviceFamily.md) 2.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 20.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 20.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 20.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 20.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 20.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (0) [KC]
+
+
+## C++ classes (6) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleUSBXDCI` | 0x2650 | IOUSBDeviceController → IOService → IORegistryEntry |
+| `AppleUSBXDCIEndpoint` | 0x130 |  |
+| `AppleUSBXDCIEventHandler` | 0x50 |  |
+| `AppleUSBXDCIIsocTRBBlock` | 0x40 |  |
+| `AppleUSBXDCITRBBlock` | 0x50 |  |
+| `AppleUSBXDCITRBPool` | 0x38 |  |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1640)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x000087bc off=0x00b02bf0-0x00b0b3ac addr=0xfffffe0007b06bf0-0xfffffe0007b0f3ac r--/r--   __TEXT            
+	sz=0x0000586c off=0x00b032b8-0x00b08b24 addr=0xfffffe0007b072b8-0xfffffe0007b0cb24               __TEXT.__cstring          (CstringLiterals)
+	sz=0x0000284e off=0x00b08b24-0x00b0b372 addr=0xfffffe0007b0cb24-0xfffffe0007b0f372               __TEXT.__os_log           
+	sz=0x00000034 off=0x00b0b378-0x00b0b3ac addr=0xfffffe0007b0f378-0xfffffe0007b0f3ac               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x0001e0f4 off=0x0363cff0-0x0365b0e4 addr=0xfffffe000a640ff0-0xfffffe000a65f0e4 r-x/r-x   __TEXT_EXEC       
+	sz=0x0001db84 off=0x0363cff0-0x0365ab74 addr=0xfffffe000a640ff0-0xfffffe000a65eb74          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000570 off=0x0365ab74-0x0365b0e4 addr=0xfffffe000a65eb74-0xfffffe000a65f0e4          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x000001c8 off=0x04a1a450-0x04a1a618 addr=0xfffffe000ba1e450-0xfffffe000ba1e618 rw-/rw-   __DATA            
+	sz=0x000000c8 off=0x04a1a450-0x04a1a518 addr=0xfffffe000ba1e450-0xfffffe000ba1e518               __DATA.__data             
+	sz=0x00000100 off=0x00000000-0x00000100 addr=0xfffffe000ba1e518-0xfffffe000ba1e618               __DATA.__common           (Zerofill)
+003: LC_SEGMENT_64 sz=0x000018a0 off=0x01437b68-0x01439408 addr=0xfffffe000843bb68-0xfffffe000843d408 rw-/rw-   __DATA_CONST      
+	sz=0x00000020 off=0x01437b68-0x01437b88 addr=0xfffffe000843bb68-0xfffffe000843bb88         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000020 off=0x01437b88-0x01437ba8 addr=0xfffffe000843bb88-0xfffffe000843bba8         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00001108 off=0x01437ba8-0x01438cb0 addr=0xfffffe000843bba8-0xfffffe000843ccb0         __DATA_CONST.__const            
+	sz=0x00000300 off=0x01438cb0-0x01438fb0 addr=0xfffffe000843ccb0-0xfffffe000843cfb0         __DATA_CONST.__kalloc_type      
+	sz=0x00000140 off=0x01438fb0-0x014390f0 addr=0xfffffe000843cfb0-0xfffffe000843d0f0         __DATA_CONST.__kalloc_var       
+	sz=0x000002b8 off=0x014390f0-0x014393a8 addr=0xfffffe000843d0f0-0xfffffe000843d3a8         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000060 off=0x014393a8-0x01439408 addr=0xfffffe000843d3a8-0xfffffe000843d408         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 186 at 0x04af9820
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     F325DA89-BF00-3B0C-8DA2-8413F4DEB249
+008: LC_SOURCE_VERSION           896.40.5.0.0
+009: LC_FUNCTION_STARTS          offset=0x004ac8ab8 size=0x190
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleExecutable`: `AppleUSBXDCI`
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBXDCI`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleUSBXDCI`
+- `CFBundleNumericVersion`: `16809984`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1.0`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2015 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.0`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/IOUSBDeviceFamily.kext/PlugIns/AppleUSBXDCI.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198894253072`
+- `_PrelinkExecutableRelativePath`: `AppleUSBXDCI`
+- `_PrelinkExecutableSize`: `164632`
+- `_PrelinkExecutableSourceAddr`: `-2198894253072`
+- `_PrelinkKmodInfo`: `-2198828096432`
+
+## Strings (666) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__os_log]**
+
+- `%s@%s: %s::%s: could not find register map\n`
+- `%s@%s: %s::%s: EP0_IN is not active\n`
+- `%s@%s: %s::%s: return with status 0x%08x\n`
+- `%s@%s: %s::%s: goOnBus - %d\n`
+- `%s@%s: %s::%s: starting DCTL: 0x%08x DSTS: 0x%08x\n`
+- `%s@%s: %s::%s: with newConfig %d\n`
+- `%s@%s: %s::%s: unexpected transfer complete event on EP0_IN endpoint\n`
+- `%s@%s: %s::%s: Pending IO on ep 0x%02x, attempting remote wake\n`
+- `%s@%s: %s::%s: failed to create workLoop\n`
+- `%s@%s: %s::%s: control transfer in %d state\n`
+- `%s@%s: %s::%s: _eventHandlers[kIsocEventHandlerIndex]\n`
+- `%s@%s: %s::%s: unexpected interrupter count %d\n`
+- `%s@%s: %s::%s: transferLength %d completionStatus 0x%x (setupPending %d)\n`
+- `%s@%s: %s::%s: returning TRB block %p (phys 0x%llx) to pool\n`
+- `%s@%s: %s::%s: Setting [%s] - Offset 0x%08x Value 0x%08x\n`
+- `%s@%s: %s::%s: Entering USB Test mode: %u\n`
+- `%s@%s: %s::%s: device is in disconnected state\n`
+- `%s@%s: %s::%s: for endpoint 0x%02x status 0x%08x\n`
+- `%s@%s: %s::%s: applying tag %s\n`
+- `%s@%s: %s::%s: Setting DCTL.DEVCTRLHLT timed out DSTS: 0x%08x. Trying to reset the controller.\n`
+- `%s: %s::%s: failed kEpCommandSetConfig for endpoint\n`
+- `%s: %s::%s: Failed to allocate _trbMemDesc for %d TRBs\n`
+- `%s@%s: %s::%s: EP0_IN finished:%d total:%d\n`
+- `%s@%s: %s::%s: failed to powerOn the controller\n`
+- `%s@%s: %s::%s: Failed to apply tunable tag '%s'\n`
+- `%s@%s: %s::%s: failed provideEndpointIDsForConfiguration\n`
+- `%s@%s: %s::%s: Performing first remote wake attempt since boot\n`
+- `%s@%s: %s::%s: endpoint (0x%02x) has pending IOs\n`
+- `%s@%s: %s::%s: timed out waiting for controller halt\n`
+- `%s@%s: %s::%s: failed at step - %d\n`
+- `%s@%s: %s::%s: testSelector %d\n`
+- `%s@%s: %s::%s: Invalid CONNECTSPD\n`
+- `%s@%s: %s::%s: unexpected event %d (EP0 IN not active)\n`
+- `%s@%s: %s::%s: exit - endpoint:%02x finished:%d bytes remaining:%d bytes\n`
+- `%s@%s: %s::%s: Pending IO on ep 0x%02x, but interface does not want remote wake\n`
+- `%s@%s: %s::%s: ep 0x%02x\n`
+- `%s@%s: %s::%s: failed kEpCommandStartNewConfig\n`
+- `%s@%s: %s::%s: called without being on bus\n`
+- `%s@%s: %s::%s: error: did not find a resting TRB block for endpoint 0x%02x\n`
+- `%s: %s::%s: failed kEpCommandSetXferResConfig for endpoint\n`
+- `%s@%s: %s::%s: could not allocate AppleUSBXDCIEndpoint for endpoint 0x%02x\n`
+- `%s@%s: %s::%s: new address - %d \n`
+- `%s@%s: %s::%s: ran out of OUT endpoints\n`
+- `%s@%s: %s::%s: failed to schedule IORequest for endpoint 0x%02x\n`
+- `%s@%s: %s::%s: returning TRB block %p (phys 0x%llx)\n`
+- `%s: %s::%s: Failed to _trbMemDesc->prepare\n`
+- `%s: %s::%s: failed to generate IOVM segments, result: 0x%x`
+- `%s@%s: %s::%s: EP 0x%02x cannot request remote wake. Not accepting the IO\n`
+- `%s@%s: %s::%s: endpoint (0x%02x) not active\n`
+- `%s@%s: %s::%s: Tag not in device tree, continuing\n`
+- `%s@%s: %s::%s: tunable offset 0x%08x mask 0x%08x value 0x%08x already set (read 0x%08x)\n`
+- `%s@%s: %s::%s: Timed out performing remote wake\n`
+- `%s@%s: %s::%s: Unable to allocate serializer\n`
+- `%s@%s: %s::%s: unable to allocate dma command\n`
+- `%s@%s: %s::%s: clearing endpoint stall for 0x%02x\n`
+- `%s@%s: %s::%s: Speed '%s' -> '%s'\n`
+- `%s@%s: %s::%s: starting new control transfer on EP0 OUT\n`
+- `%s: %s::%s: failed to create isoch stream structures\n`
+- `%s: %s::%s: \n`
+- `%s@%s: %s::%s: not starting a transfer in control state %d\n`
+- `%s@%s: %s::%s: invalid request on EP0_IN endpoint\n`
+- `%s@%s: %s::%s: Command Completion interrupt not received on time\n`
+- `%s@%s: %s::%s: timed out waiting for command 0x%x param 0x%x\n`
+- `%s@%s: %s::%s: failed to allocate TRB block from _controlTRBPool\n`
+- `%s@%s: %s::%s: failed to sendEndpointCommand(kEpCommandEndXfer) status 0x%08x\n`
+- `%s@%s: %s::%s: ConnectionDone event not received after reset\n`
+- `%s@%s: %s::%s: controllerReset failed with error 0x%08x\n`
+- `%s@%s: %s::%s: IO timeout (%p) for endpoint %02x, returning it\n`
+- `%s@%s: %s::%s: speed %d linkState %d return status 0x%08x\n`
+- `%s@%s: %s::%s: failed to prepare DMA command, status: 0x%x\n`
+- `%s@%s: %s::%s: \n`
+- `%s@%s: %s::%s: failed to %s stall for endpoint 0x%02x with error 0x%08x\n`
+- `%s@%s: %s::%s: ran out of IN endpoints\n`
+- `%s@%s: %s::%s: endpoint 0x%02x\n`
+- `%s@%s: %s::%s: unexpected event %d on EP0_IN endpoint, ignoring\n`
+- `%s@%s: %s::%s: endpoint 0x%02x is not active\n`
+- `%s: %s::%s: success\n`
+- `%s@%s: %s::%s: unable to allocate usb ep0 out buffer descriptor\n`
+- `%s@%s: %s::%s: failed to create _eventHandlers[kCommonEventHandlerIndex]\n`
+- `%s@%s: %s::%s: failed initDeviceController 0x%08x\n`
+- `%s@%s: %s::%s: not on bus\n`
+- `%s@%s: %s::%s: failed stopDeviceController 0x%08x\n`
+- `%s: %s::%s: failed to allocate interrupt lock\n`
+- `%s@%s: %s::%s: failed to allocate Device Capability Descriptors memory\n`
+- `%s@%s: %s::%s: failed to allocate TRB block from _standardTRBPool\n`
+- `%s@%s: %s::%s: returning 0x%08x\n`
+- `%s@%s: %s::%s: endpoint 0x%02x stall %d\n`
+- `%s@%s: %s::%s: completed with %d endpoints assigned\n`
+- `%s@%s: %s::%s: failed to kEpCommandEndXfer for endpoint 0x%02x (status 0x%08x)\n`
+- `%s@%s: %s::%s: failed kEpCommandStartNewConfig(2)\n`
+- `%s@%s: %s::%s: unexpected bus event %d\n`
+- `%s@%s: %s::%s: failed to prepareControlTRBs(data) - length %d\n`
+- `%s@%s: %s::%s: scheduled %d bytes\n`
+- `%s@%s: %s::%s: interface count %d\n`
+- `%s@%s: %s::%s: failed to sendEndpointCommand(kEpCommandUpdateXfer) status 0x%08x\n`
+- `%s@%s: %s::%s: for endpoint 0x%02x event %d\n`
+- `%s@%s: %s::%s: usb2phy suspend\n`
+- `%s: %s::%s: failed to configure the endpoint status 0x%08x\n`
+- `%s: %s::%s: failed to allocate (or prepare) _eventRingCommand\n`
+- `%s@%s: %s::%s: invalid memory descriptor\n`
+- `%s@%s: %s::%s: Core version register value: 0x%08x\n`
+- `%s@%s: %s::%s: Setting DCTL.DEVCTRLHLT timed out DSTS: 0x%08x\n`
+- `%s@%s: %s::%s: unknown device event %d\n`
+- `%s: %s::%s: isUpdate %d\n`
+- `%s: %s::%s: failed to generation IOVM segments, result: 0x%x\n`
+- `%s@%s: %s::%s: failed to create _eventHandlers[kIOEventHandlerIndex]\n`
+- `%s@%s: %s::%s: resetting core\n`
+- `%s@%s: %s::%s: endpoint 0x%02x not active\n`
+- `%s: %s::%s: Invalid endpoint property (type %d)\n`
+- `%s: %s::%s: Failed to allocate (or prepare) _trbMemDescDmaCommand\n`
+- `%s@%s: %s::%s: endpoint has already started\n`
+- `%s@%s: %s::%s: enter - endpoint:%02x finished:%d bytes remaining %d bytes\n`
+- `%s@%s: %s::%s: usb2phy resume\n`
+- `%s@%s: %s::%s: Performing remote wake attempt. Num remote wake attempts since boot: %llu. Nanoseconds since last remote wake attempt: %llu\n`
+- `%s: %s::%s: popping event 0x%08x\n`
+- `%s@%s: %s::%s: prepare failed for dma command req %p, result: 0x%x\n`
+- `%s@%s: %s::%s: called without active IOs on EP0_IN\n`
+- `%s@%s: %s::%s: failed to create _eventHandlers[kDeviceEventHandlerIndex]\n`
+- `%s@%s: %s::%s: ep:%02x finished:%d total:%d\n`
+- `%s@%s: %s::%s: unknown event %d on endpoint 0x%02x\n`
+- `%s@%s: %s::%s: failed to get dma command\n`
+- `%s@%s: %s::%s: Command Completion interrupt not received on time on endpoint 0x%x\n`
+- `%s@%s: %s::%s: Event buffer overflow, flushing the Bus event queue\n`
+- `%s@%s: %s::%s: sent %d\n completionStatus 0x%08x (setupPending %d)\n`
+- `%s@%s: %s::%s: failed super::start\n`
+- `%s@%s: %s::%s: command 0x%x failed (status %d param 0x%x)\n`
+- `%s@%s: %s::%s: failed to prepareControlTRBs(setup) - length %d\n`
+- `%s@%s: %s::%s: control transfer in state %d\n`
+- `%s@%s: %s::%s: Bus event %d\n`
+- `%s@%s: %s::%s: Ran out of TRBs. Failed to schedule IO for ep:%02x\n`
+- `%s: %s::%s: failed to allocate interrupt source\n`
+- `%s@%s: %s::%s: failed to create commandGate\n`
+- `%s@%s: %s::%s: controlTransfer in Status In phase, not scheduling an IO\n`
+- `%s@%s: %s::%s: failed to create _eventHandlers[kBusEventHandlerIndex]\n`
+- `%s@%s: %s::%s: USB Core GUID: 0x%08x\n`
+- `%s: %s::%s: returning event 0x%08x\n`
+- `%s@%s: %s::%s: failed to allocate interrupt lock\n`
+- `%s@%s: %s::%s: tunable offset 0x%08x mask 0x%08x value 0x%08x (read 0x%08x wrote 0x%08x)\n`
+- `%s@%s: %s::%s: did not find a pending IORequest for TRB for endpoint 0x%02x\n`
+- `%s@%s: %s::%s: Event buffer overflow, flushing the event queue\n`
+- `%s@%s: %s::%s: ignoring event %d for inactive endpoint 0x%02x\n`
+- `%s@%s: %s::%s: status 0x%08x\n`
+- `%s@%s: %s::%s: already on bus\n`
+- `%s@%s: %s::%s: Invalid endpoint 0x%02x\n`
+- `%s@%s: %s::%s: No active TRBs, ignoring the event %d\n`
+- `%s@%s: %s::%s: no more IOs to be scheduled on endpoint 0x%02x\n`
+- `%s: %s::%s: Failed to allocate TRB block\n`
+- `%s@%s: %s::%s: endpoint:%02x\n`
+- `%s@%s: %s::%s: unexpected event %d (EP0 OUT not active)\n`
+- `%s@%s: %s::%s: ignoring event %d for inactive endpoint 0x%02x, no pending transfers\n`
+- `%s: %s::%s: failed to allocate _isocTRBBlock\n`
+- `%s@%s: %s::%s: command 0x%x param 0x%x\n`
+- `%s@%s: %s::%s: Failed with status 0x%08x (ep 0x%02x , type %d, mps %d, interval %d)\n`
+- `%s@%s: %s::%s: endpoint 0 not active\n`
+- `%s@%s: %s::%s: completed with status 0x%08x\n`
+- `%s@%s: %s::%s: Core reset timed out DCTL: 0x%08x\n`
+- `%s: %s::%s: status %d\n`
+- `%s: %s::%s: mps %d\n`
+- `%s: %s::%s: failed to allocate event ring buffer for interrupt %d\n`
+- `%s@%s: %s::%s: event %d controlState %d\n`
+- `%s@%s: %s::%s: received XferNotReady in Status Phase, setting up EP0 IN now\n`
+- `%s@%s: %s::%s: [%p] debug logging mask 0x%08x\n`
+- `%s@%s: %s::%s: failed to sendEndpointCommand(kEpCommandStartXfer) status 0x%08x\n`
+- `%s@%s: %s::%s: offset 0x%08x invalid (rangeLength 0x%08llx)\n`
+- `%s@%s: %s::%s: endpoint 0x%02x transferredLength %d trbStatus 0x%x\n`
+- `%s@%s: %s::%s: ep:%02x\n`
+- `%s@%s: %s::%s: EP 0x%02x requesting remote wake\n`
+- `%s@%s: %s::%s: ep 0x%02x , type %d, mps %d, interval %d \n`
+- `%s@%s: %s::%s: Applying tunable tag '%s' (block offset 0x%08x)\n`
+
+**[__TEXT.__cstring]**
+
+- `Reset`
+- `%s@%s: %s::%s: could not allocate AppleUSBXDCIEndpoint for endpoint 0x%02x\n`
+- `%s@%s: %s::%s: clearing endpoint stall for 0x%02x\n`
+- `%s@%s: %s::%s: completed with status 0x%08x\n`
+- `AppleUSBXDCI::%s:Tag not in device tree, continuing\n`
+- `High Speed (480 Mbps)`
+- `Polling`
+- `L0 (Normal)`
+- `%s@%s: %s::%s: ignoring event %d for inactive endpoint 0x%02x, no pending transfers\n`
+- `%s@%s: %s::%s: ep 0x%02x\n`
+- `AppleUSBXDCI::%s:failed stopDeviceController 0x%08x\n`
+- `AppleUSBXDCI::%s:completed with status 0x%08x\n`
+- `AppleUSBXDCI::%s:endpoint 0x%02x not active\n`
+- `AppleUSBXDCI::%s:Missed frame %d on EP %d\n`
+- `AppleUSBXDCI::%s:error: did not find a resting TRB block for endpoint 0x%02x\n`
+- `%s@%s: %s::%s: enter - endpoint:%02x finished:%d bytes remaining %d bytes\n`
+- `AppleUSBXDCI::%s:speed %d linkState %d return status 0x%08x\n`
+- `%s@%s: %s::%s: unable to allocate usb ep0 out buffer descriptor\n`
+- `startEp0In`
+- `%s@%s: %s::%s: ignoring event %d for inactive endpoint 0x%02x\n`
+- `%s@%s: %s::%s: Performing remote wake attempt. Num remote wake attempts since boot: %llu. Nanoseconds since last remote wake attempt: %llu\n`
+- `12222222211111111121111111111111111112`
+- `%s@%s: %s::%s: ep 0x%02x , type %d, mps %d, interval %d \n`
+- `handleUSBConnectionDone`
+- `%s: %s::%s: status %d\n`
+- `%s: %s::%s: failed to allocate interrupt source\n`
+- `%s@%s: %s::%s: tunable offset 0x%08x mask 0x%08x value 0x%08x (read 0x%08x wrote 0x%08x)\n`
+- `AppleUSBXDCI::%s:kEpCommandEndXfer failed as XferResNotAvailable for ep 0x%02x\n`
+- `ep0InEventOccurred`
+- `AppleUSBXDCI.cpp`
+- `U0`
+- `%s@%s: %s::%s: endpoint 0x%02x transferredLength %d trbStatus 0x%x\n`
+- `%s@%s: %s::%s: unknown event %d on endpoint 0x%02x\n`
+- `AppleUSBXDCI::%s:device is in disconnected state\n`
+- `AppleUSBXDCI::%s:not on bus\n`
+- `%s@%s: %s::%s: called without being on bus\n`
+- `%s@%s: %s::%s: event %d controlState %d\n`
+- `AppleUSBXDCI::%s:event %d controlState %d\n`
+- `AppleUSBXDCI::%s:returning TRB block %p (phys 0x%llx)\n`
+- `%s@%s: %s::%s: [%p] debug logging mask 0x%08x\n`
+- `AppleUSBXDCI::%s:control transfer in state %d\n`
+- `AppleUSBXDCI::%s:resetting core\n`
+- `AppleUSBXDCI::%s:starting DCTL: 0x%08x DSTS: 0x%08x\n`
+- `AppleUSBXDCI::%s:failed to %s stall for endpoint 0x%02x with error 0x%08x\n`
+- `AppleUSBXDCI::%s:endpoint 0x%02x\n`
+- `applySDBTunables`
+- `set`
+- `OnBus`
+- `updateLPMPolicy`
+- `init`
+- `usb2phy-suspend`
+- `%s@%s: %s::%s: EP 0x%02x requesting remote wake\n`
+- `AppleUSBXDCI::%s:failed provideEndpointIDsForConfiguration\n`
+- `DSTS`
+- `site.UInt64`
+- `%s@%s: %s::%s: Command Completion interrupt not received on time\n`
+- `AppleUSBXDCI::%s:interface count %d\n`
+- `AppleUSBXDCI::%s:Performing first remote wake attempt since boot\n`
+- `initWithControllerAndOptions`
+- `%s@%s: %s::%s: failed to create _eventHandlers[kCommonEventHandlerIndex]\n`
+- `%s@%s: %s::%s: failed kEpCommandStartNewConfig\n`
+- `AppleUSBXDCI::%s:Setting DCTL.DEVCTRLHLT timed out DSTS: 0x%08x\n`
+- `ConnectionSpeed`
+- `%s@%s: %s::%s: EP 0x%02x cannot request remote wake. Not accepting the IO\n`
+- `AppleUSBXDCI::%s:failed to create _eventHandlers[kDeviceEventHandlerIndex]\n`
+- `AppleUSBXDCI::%s:called without being on bus\n`
+- `AppleUSBXDCI::%s:endpoint 0x%02x transferredLength %d trbStatus 0x%x\n`
+- `sendDeviceCommand`
+- `%s@%s: %s::%s: failed to prepareControlTRBs(setup) - length %d\n`
+- `%s@%s: %s::%s: endpoint:%02x\n`
+- `%s@%s: %s::%s: Bus event %d\n`
+- `AppleUSBXDCITRBBlock-debug`
+- `DefaultPreferredConfiguration`
+- `RemoteWakeEnabled`
+- `AppleUSBXDCI::%s:bus time expired\n`
+- `DumpDebug`
+- `isEndpointStalled`
+- `AppleUSBXDCI::%s:failed to schedule IORequest for endpoint 0x%02x\n`
+- `%s: %s::%s: returning event 0x%08x\n`
+- `%s@%s: %s::%s: EP0_IN is not active\n`
+- `%s@%s: %s::%s: returning 0x%08x\n`
+- `%s@%s: %s::%s: failed to kEpCommandEndXfer for endpoint 0x%02x (status 0x%08x)\n`
+- `AppleUSBXDCI::%s:unexpected event %d\n`
+- `%s@%s: %s::%s: failed to schedule IORequest for endpoint 0x%02x\n`
+- `AppleUSBXDCI::%s:epIndex %d depcmd 0x%x param0 0x%x param1 0x%x param2 0x%x\n`
+- `AppleUSBXDCI::%s:command 0x%x param 0x%x\n`
+- `AppleUSBXDCI::%s:Core version register value: 0x%08x\n`
+- `Super Speed Plus (10 Gbps)`
+- `Default`
+- `AppleUSBXDCITRBPool`
+- `AppleUSBXDCI::%s:prepare failed for dma command req %p, result: 0x%x\n`
+- `%s@%s: %s::%s: control transfer in state %d\n`
+- `L1 (Sleep)`
+- `AppleUSBXDCI::%s:kEpCommandStartXfer failed as IsocIntervalExpired for ep 0x%02x\n`
+- `site.AppleUSBXDCITRBBlock`
+- `%s@%s: %s::%s: Setting DCTL.DEVCTRLHLT timed out DSTS: 0x%08x. Trying to reset the controller.\n`
+- `SS.Inactive`
+- `%s@%s: %s::%s: failed kEpCommandStartNewConfig(2)\n`
+- `AppleUSBXDCI::%s:Bus event %d\n`
+- `AppleUSBXDCI::%s:completed with %d endpoints assigned\n`
+- `DeviceAddress`
+- `prepareNonIsocIORequest`
+- `ScatterGatherSupport`
+- `AppleUSBXDCI::%s:status 0x%08x\n`
+- `Invaild`
+- `%s@%s: %s::%s: starting new control transfer on EP0 OUT\n`
+- `%s@%s: %s::%s: Timed out performing remote wake\n`
+- `deactivateEndpoint`
+- `stopEp0Out`
+- `Unknown`
+- `%s@%s: %s::%s: Invalid CONNECTSPD\n`
+- `AppleUSBXDCI::%s:ignoring event %d for inactive endpoint 0x%02x\n`
+- `%s@%s: %s::%s: controlTransfer in Status In phase, not scheduling an IO\n`
+- `%s@%s: %s::%s: failed to prepare DMA command, status: 0x%x\n`
+- `Addressed`
+- `%s@%s: %s::%s: no more IOs to be scheduled on endpoint 0x%02x\n`
+- `%s@%s: %s::%s: return with status 0x%08x\n`
+- `eps-dir-bitmap`
+- `AppleUSBXDCI::%s:invalid request on EP0_IN endpoint\n`
+- `AppleUSBXDCI::%s:failed to powerOn the controller\n`
+- `stopEndpoint`
+- `interruptOccurredIsocEvents`
+- `startNonIsocEndpoint`
+- `AppleUSBXDCI::%s:clearing endpoint stall for 0x%02x\n`
+- `isocXferInProgressFilterOccurred`
+- `handleUSBSuspend`
+- `u2-init-disable`
+- `%s@%s: %s::%s: Pending IO on ep 0x%02x, attempting remote wake\n`
+- `AppleUSBXDCI::%s:Command Completion interrupt not received on time\n`
+- `AppleUSBXDCI::%s:kEpCommandStartXfer success for ep 0x%02x XferResIndex %d\n`
+- `configureInController`
+- `initWithTRBCount`
+- `%s@%s: %s::%s: endpoint has already started\n`
+- `%s@%s: %s::%s: invalid request on EP0_IN endpoint\n`
+- `%s@%s: %s::%s: USB Core GUID: 0x%08x\n`
+- `prepareConfiguration`
+- `AppleUSBXDCI::%s:Pending IO on ep 0x%02x, but interface does not want remote wake\n`
+- `%s: %s::%s: failed to allocate _isocTRBBlock\n`
+- `AppleUSBXDCI::%s:Setting DCTL.DEVCTRLHLT timed out DSTS: 0x%08x. Trying to reset the controller.\n`
+- `AppleUSBXDCI::%s:Ran out of TRBs. Failed to schedule IO for ep:%02x\n`
+- `AppleUSBXDCI::%s:returning TRB block %p (phys 0x%llx) to pool\n`
+- `AppleUSBXDCI::%s:transfer resource not available\n`
+- `AppleUSBXDCI::%s:\n`
+- `%s@%s: %s::%s: failed at step - %d\n`
+- `%s@%s: %s::%s: new address - %d \n`
+- `AppleUSBXDCI::%s:usb2phy suspend\n`
+- `Disconnected`
+- `AppleUSBXDCI::%s:event %d on endpoint 0x%02x\n`
+- `%s@%s: %s::%s: failed to allocate Device Capability Descriptors memory\n`
+- `AppleUSBXDCI::%s:failed to allocate TRB block from _standardTRBPool\n`
+- `%s@%s: %s::%s: ran out of OUT endpoints\n`
+- `U2`
+- `AppleUSBXDCI::%s:unable to allocate usb ep0 out buffer descriptor\n`
+- `Hot Reset`
+- `AppleUSBXDCI::%s:Failed with status 0x%08x (ep 0x%02x , type %d, mps %d, interval %d)\n`
+- `applyTunablesTag`
+- `AppleUSBXDCI::%s:IO timeout (%p) for endpoint %02x, returning it\n`
+- `AppleUSBXDCI::%s:Unable to allocate serializer\n`
+- `AppleUSBXDCI::%s:enter - endpoint:%02x finished:%d bytes remaining %d bytes\n`
+- `AppleUSBXDCI::%s:ep 0x%02x status 0x%08x\n`
+- `expandPool`
+- `AppleUSBXDCI::%s:invalid transfer resource\n`
+- `tunable_setting`
+- `AppleUSBXDCI::%s:event %d on inactive endpoint 0x%02x\n`
+- `AppleUSBXDCI::%s:command %d failed (status %d cmdParam %d for epIndex %d)\n`
+- `Full Speed (12 Mbps)`
+- `%s: %s::%s: success\n`
+- `%s@%s: %s::%s: command 0x%x param 0x%x\n`
+- `AppleUSBXDCI::%s:failed to allocate TRB block from _controlTRBPool\n`
+- `%s@%s: %s::%s: failed initDeviceController 0x%08x\n`
+- `AppleUSBXDCI::%s:unexpected event %d (EP0 OUT not active)\n`
+- `%s@%s: %s::%s: unexpected event %d on EP0_IN endpoint, ignoring\n`
+- `%s: %s::%s: Invalid endpoint property (type %d)\n`
+- `AppleUSBXDCITRBPool.cpp`
+- `site.AppleUSBXDCI`
+- `AppleUSBXDCI::%s:could not allocate AppleUSBXDCIEndpoint for endpoint 0x%02x\n`
+- `AppleUSBXDCI::%s:failed to create _eventHandlers[kIOEventHandlerIndex]\n`
+- `%s@%s: %s::%s: controllerReset failed with error 0x%08x\n`
+- `U1`
+- `AppleUSBXDCI::%s:failed send kEpCommandStartXfer - status 0x%08x\n`
+- `%s@%s: %s::%s: Setting DCTL.DEVCTRLHLT timed out DSTS: 0x%08x\n`
+- `%s@%s: %s::%s: Speed '%s' -> '%s'\n`
+- `%s: %s::%s: \n`
+- `AppleUSBXDCI::%s:return with status 0x%08x\n`
+- `SS.Disabled`
+- `AppleUSBXDCI::%s:Performing remote wake attempt. Num remote wake attempts since boot: %llu. Nanoseconds since last remote wake attempt: %llu\n`
+- `AppleUSBXDCI::%s:transferLength %d completionStatus 0x%x (setupPending %d)\n`
+- `%s: %s::%s: Failed to allocate (or prepare) _trbMemDescDmaCommand\n`
+- `%s@%s: %s::%s: endpoint 0x%02x stall %d\n`
+- `AppleUSBXDCI::%s:ran out of IN endpoints\n`
+- `%s@%s: %s::%s: unexpected bus event %d\n`
+- `%s@%s: %s::%s: failed to get dma command\n`
+- `EP0_OUT`
+- `AppleUSBXDCI::%s:_eventHandlers[kIsocEventHandlerIndex]\n`
+- `AppleUSBXDCI::%s:Core reset timed out DCTL: 0x%08x\n`
+- `AppleUSBXDCI::%s:already on bus\n`
+- `%s@%s: %s::%s: failed stopDeviceController 0x%08x\n`
+- `Super Speed (5 Gbps)`
+- `SoftwareLinkState`
+- `%s@%s: %s::%s: endpoint 0 not active\n`
+- `AppleUSBXDCI::%s:Failed to apply tunable tag '%s'\n`
+- `AppleUSBXDCI::%s:tunable offset 0x%08x mask 0x%08x value 0x%08x (read 0x%08x wrote 0x%08x)\n`
+- `%s@%s: %s::%s: unexpected transfer complete event on EP0_IN endpoint\n`
+- `Recovery`
+- `AppleUSBXDCI::%s:unexpected transfer complete event on EP0_IN endpoint\n`
+- `%s@%s: %s::%s: returning TRB block %p (phys 0x%llx)\n`
+- `handleUSBResume`
+- `AppleUSBXDCIEndpoint-debug`
+- `handleUSBReset`
+- `ConnectionSpeedDescription`
+- ` @%s:%d`
+- `%s@%s: %s::%s: device is in disconnected state\n`
+- `AppleUSBXDCI::%s:endpoint has already started\n`
+- `AppleUSBXDCI::%s:ep:%02x finished:%d total:%d\n`
+- `AppleUSBXDCI::%s:ignoring event %d for inactive endpoint 0x%02x, no pending transfers\n`
+- `%s: %s::%s: isUpdate %d\n`
+- `%s@%s: %s::%s: invalid memory descriptor\n`
+- `AppleUSBXDCI::%s:failed to get dma command\n`
+- `%s@%s: %s::%s: did not find a pending IORequest for TRB for endpoint 0x%02x\n`
+- `Invalid`
+- `AppleUSBXDCI::%s:endpoint 0x%02x is not active\n`
+- `AppleUSBXDCIIsocTRBBlock-debug`
+- `%s@%s: %s::%s: command 0x%x failed (status %d param 0x%x)\n`
+- `%s@%s: %s::%s: Setting [%s] - Offset 0x%08x Value 0x%08x\n`
+- `AppleUSBXDCI::%s:[%p] debug logging mask 0x%08x\n`
+- `AppleUSBXDCI::%s:invalid memory descriptor\n`
+- `AppleUSBXDCI::%s:unexpected event %d (EP0 IN not active)\n`
+- `1212111122`
+- `debug-usb`
+- `AppleUSBXDCI::%s:control transfer in %d state\n`
+- `goOnBus`
+- `%s@%s: %s::%s: already on bus\n`
+- `%s@%s: %s::%s: endpoint 0x%02x\n`
+- `Resume`
+- `interruptOccurredBusEvents`
+- `%s@%s: %s::%s: not starting a transfer in control state %d\n`
+- `%s@%s: %s::%s: transferLength %d completionStatus 0x%x (setupPending %d)\n`
+- `%s@%s: %s::%s: sent %d\n completionStatus 0x%08x (setupPending %d)\n`
+- `@%d`
+- `getCurrentEvent`
+- `AppleUSBXDCI::%s:endpoint (0x%02x) has pending IOs\n`
+- `%s@%s: %s::%s: Core version register value: 0x%08x\n`
+- `%s@%s: %s::%s: Command Completion interrupt not received on time on endpoint 0x%x\n`
+- `AppleUSBXDCI::%s:failed to prepareControlTRBs(setup) - length %d\n`
+- `%s@%s: %s::%s: failed to create _eventHandlers[kIOEventHandlerIndex]\n`
+- `%s@%s: %s::%s: not on bus\n`
+- `scheduleNextIsocRequest`
+- `site.AppleUSBXDCIEndpoint`
+- `%s: %s::%s: mps %d\n`
+- `%s@%s: %s::%s: completed with %d endpoints assigned\n`
+- `%s@%s: %s::%s: Ran out of TRBs. Failed to schedule IO for ep:%02x\n`
+- `AppleUSBXDCI::%s:Pending IO on ep 0x%02x, attempting remote wake\n`
+- `initWithParameters`
+- `AppleUSBXDCI::%s:controlTransfer in Status In phase, not scheduling an IO\n`
+- `%s@%s: %s::%s: tunable offset 0x%08x mask 0x%08x value 0x%08x already set (read 0x%08x)\n`
+- `initDeviceController`
+- `handleAbortEndpoint`
+- `AppleUSBXDCI::%s:timed out waiting for controller halt\n`
+- `Rx.Detect`
+- `AppleUSBXDCI::%s:for endpoint 0x%02x status 0x%08x\n`
+- `EP0_IN`
+- `doRemoteWakeGated`
+- `AppleUSBXDCIEndpoint.cpp`
+- `AppleUSBXDCI::%s:failed to sendEndpointCommand(kEpCommandEndXfer) status 0x%08x\n`
+- `AppleUSBXDCI::%s:failed to schedule TRBs for Isoc endpoint 0x%02x\n`
+- `%s@%s: %s::%s: could not find register map\n`
+- `%s@%s: %s::%s: failed to sendEndpointCommand(kEpCommandStartXfer) status 0x%08x\n`
+- `AppleUSBXDCI::%s:failed initDeviceController 0x%08x\n`
+- `forceReEnumeration`
+- `AppleUSBXDCI::%s:failed kEpCommandStartNewConfig(2)\n`
+- `site.AppleUSBXDCIEventHandler`
+- `AppleUSBXDCI::%s:command 0x%x failed (status %d param 0x%x)\n`
+- `ioGated`
+- `%s@%s: %s::%s: EP0_IN finished:%d total:%d\n`
+- `AppleUSBXDCI::%s:EP0_IN finished:%d total:%d\n`
+- `%s@%s: %s::%s: testSelector %d\n`
+- `%s: %s::%s: Failed to _trbMemDesc->prepare\n`
+- `%s: %s::%s: Failed to allocate TRB block\n`
+- `Loopback`
+- `AppleUSBXDCITRBBlock`
+- `AppleUSBXDCI: failed to allocate logging buffer of %d bytes`
+- `AppleUSBXDCI::%s:timed out waiting for command 0x%x param 0x%x\n`
+- `AppleUSBXDCI::%s:Invalid endpoint 0x%02x\n`
+- `Compliance`
+- `filterOccurredIsoc`
+- `%s@%s: %s::%s: Invalid endpoint 0x%02x\n`
+- `AppleUSBXDCI::%s:ConnectionDone event not received after reset\n`
+- `%s@%s: %s::%s: ran out of IN endpoints\n`
+- `%s@%s: %s::%s: endpoint 0x%02x not active\n`
+- `@%02x`
+- `AppleUSBXDCIEventHandler`
+- `doCompleteEndpointIO`
+- `AppleUSBXDCI::%s:failed to sendEndpointCommand(kEpCommandUpdateXfer) status 0x%08x\n`
+- `%s@%s: %s::%s: failed to sendEndpointCommand(kEpCommandEndXfer) status 0x%08x\n`
+- `AppleUSBXDCI::%s:with newConfig %d\n`
+- `AppleUSBXDCI::%s:End Xfer due to Missed Isoc event\n`
+- `%s@%s: %s::%s: No active TRBs, ignoring the event %d\n`
+- `1211111222`
+- `site.AppleUSBXDCITRBPool`
+- `handleSetConfiguration`
+- `\"No space for events\\n\" @%s:%d`
+- `%s@%s: %s::%s: failed super::start\n`
+- `%s@%s: %s::%s: endpoint (0x%02x) has pending IOs\n`
+- `Powered`
+- `%s: %s::%s: popping event 0x%08x\n`
+- `AppleUSBXDCI::%s:Speed '%s' -> '%s'\n`
+- `%s: %s::%s: failed to generation IOVM segments, result: 0x%x\n`
+- `%s@%s: %s::%s: prepare failed for dma command req %p, result: 0x%x\n`
+- `AppleUSBXDCI::%s:could not find register map\n`
+- `prepareControlTRBs`
+- `AppleUSBXDCI::%s:failed to create workLoop\n`
+- `AppleUSBXDCI::%s:called for endpoint 0x%02x\n`
+- `AppleUSBXDCI::%s:unknown device event %d\n`
+- `%s@%s: %s::%s: endpoint 0x%02x is not active\n`
+- `%s@%s: %s::%s: IO timeout (%p) for endpoint %02x, returning it\n`
+- `AppleUSBXDCI::%s:kEpCommandStartXfer failed as XferResNotAvailable for ep 0x%02x\n`
+- `AppleUSBXDCI::%s:sent %d\n completionStatus 0x%08x (setupPending %d)\n`
+- `site.IOUSBDeviceIsocFrame`
+- `prepareNonIsocTRBs`
+- `AppleUSBXDCI::%s:usb2phy resume\n`
+- `AppleUSBXDCI::%s:Timed out performing remote wake\n`
+- `AppleUSBXDCI::%s:Event buffer overflow, flushing the Bus event queue\n`
+- `%s@%s: %s::%s: unknown device event %d\n`
+- `AppleUSBXDCI::%s:failed super::start\n`
+- `%s@%s: %s::%s: failed to prepareControlTRBs(data) - length %d\n`
+- `PreferredConfiguration`
+- `%s@%s: %s::%s: for endpoint 0x%02x event %d\n`
+- `AppleUSBXDCIEndpoint`
+- `%s@%s: %s::%s: timed out waiting for command 0x%x param 0x%x\n`
+- `handleStallEndpoint`
+- `AppleUSBXDCI::%s:futureFrameNumber read value %d interval %d\n`
+- `%s@%s: %s::%s: Event buffer overflow, flushing the Bus event queue\n`
+- `popEvent`
+- `%s@%s: %s::%s: Entering USB Test mode: %u\n`
+- `%s@%s: %s::%s: error: did not find a resting TRB block for endpoint 0x%02x\n`
+- `endpointEventOccurred`
+- `AppleUSBXDCI::%s:for endpoint 0x%02x event %d\n`
+- `%s: %s::%s: failed to generate IOVM segments, result: 0x%x`
+- `start`
+- `AppleUSBXDCI::%s:ep 0x%02x\n`
+- `handleTestMode`
+- `Early Suspend`
+- `startIsocEndpoint`
+- `%s@%s: %s::%s: exit - endpoint:%02x finished:%d bytes remaining:%d bytes\n`
+- `AppleUSBXDCI::%s:ep 0x%02x , type %d, mps %d, interval %d \n`
+- `%s@%s: %s::%s: failed to allocate TRB block from _controlTRBPool\n`
+- `SelectedConfiguration`
+- `setMaxPacketSize`
+- `%s: %s::%s: failed to allocate (or prepare) _eventRingCommand\n`
+- `AppleUSBXDCI::%s:failed to create _eventHandlers[kCommonEventHandlerIndex]\n`
+- `AppleUSBXDCI::%s:offset 0x%08x invalid (rangeLength 0x%08llx)\n`
+- `controllerReset`
+- `%s@%s: %s::%s: \n`
+- `%s@%s: %s::%s: with newConfig %d\n`
+- `doCompleteFinishedIsocRequests`
+- `Resume/Reset`
+- `%s@%s: %s::%s: Performing first remote wake attempt since boot\n`
+- `%s: %s::%s: failed to allocate event ring buffer for interrupt %d\n`
+- `%s: %s::%s: Failed to allocate _trbMemDesc for %d TRBs\n`
+- `%s@%s: %s::%s: failed to allocate interrupt lock\n`
+- `AppleUSBXDCI::%s:endpoint 0x%02x stall %d\n`
+- `AppleUSBXDCI::%s:received XferNotReady in Status Phase, setting up EP0 IN now\n`
+- `%s: %s::%s: failed kEpCommandSetXferResConfig for endpoint\n`
+- `%s@%s: %s::%s: failed to allocate TRB block from _standardTRBPool\n`
+- `L2 (Suspend)`
+- `AppleUSBXDCI::%s:No active TRBs, ignoring the event %d\n`
+- `AppleUSBXDCI::%s:no more IOs to be scheduled on endpoint 0x%02x\n`
+- `sendEndpointCommand`
+- `AppleUSBXDCI::%s:exit - endpoint:%02x finished:%d bytes remaining:%d bytes\n`
+- `AppleUSBXDCI::%s:endpoint (0x%02x) not active\n`
+- `%s@%s: %s::%s: failed to create commandGate\n`
+- `AppleUSBXDCI::%s:timed out waiting for command %d cmdParam %d for epIndex %d\n`
+- `AppleUSBXDCI::%s:goOnBus - %d\n`
+- `endpointIOTimerExpired`
+- `site.AppleUSBXDCIIsocTRBBlock`
+- `AppleUSBXDCI::%s:failed to allocate interrupt lock\n`
+- `AppleUSBXDCI::%s:unable to allocate dma command\n`
+- `AppleUSBXDCI::%s:Applying tunable tag '%s' (block offset 0x%08x)\n`
+- `stopIsocEndpoint`
+- `AppleUSBXDCI::%s:kEpCommandStartXfer failed - event status %d for ep 0x%02x\n`
+- `%s@%s: %s::%s: received XferNotReady in Status Phase, setting up EP0 IN now\n`
+- `%s@%s: %s::%s: Pending IO on ep 0x%02x, but interface does not want remote wake\n`
+- `AppleUSBXDCI::%s:tunable offset 0x%08x mask 0x%08x value 0x%08x already set (read 0x%08x)\n`
+- `AppleUSBXDCI::%s:unexpected bus event %d\n`
+- `AppleUSBXDCI::%s:unknown event %d on endpoint 0x%02x\n`
+- `startEp0Out`
+- `%s@%s: %s::%s: _eventHandlers[kIsocEventHandlerIndex]\n`
+- `enumDoneTimerExpired`
+- `handleSetAddressPreStatusPhase`
+- `AppleUSBXDCI::%s:starting new control transfer on EP0 OUT\n`
+- `AppleUSBXDCI::%s:ep:%02x\n`
+- `%s@%s: %s::%s: Tag not in device tree, continuing\n`
+- `AppleUSBXDCI::%s:failed to kEpCommandEndXfer for endpoint 0x%02x (status 0x%08x)\n`
+- `AppleUSBXDCI::%s:Entering USB Test mode: %u\n`
+- `12111222`
+- `AppleUSBXDCI::%s:EP 0x%02x cannot request remote wake. Not accepting the IO\n`
+- `i8@?0`
+- `HardwareLinkState`
+- `AppleUSBXDCI::%s:Event buffer overflow, flushing the event queue\n`
+- `AppleUSBXDCI::%s:failed to create commandGate\n`
+- `%s@%s: %s::%s: resetting core\n`
+- `stopDeviceController`
+- `AppleUSBXDCI::%s:failed at step - %d\n`
+- `AppleUSBXDCI::%s:failed due to an active command for epIndex %d\n`
+- `AppleUSBXDCI::%s:returning 0x%08x\n`
+- `%s@%s: %s::%s: starting DCTL: 0x%08x DSTS: 0x%08x\n`
+- `%s@%s: %s::%s: failed to create workLoop\n`
+- `%s@%s: %s::%s: ConnectionDone event not received after reset\n`
+- `AppleUSBXDCI::%s:ran out of OUT endpoints\n`
+- `AppleUSBXDCI::%s:Invalid CONNECTSPD\n`
+- `AppleUSBXDCI::%s:unexpected event %d on EP0_IN endpoint, ignoring\n`
+- `%s: %s::%s: failed kEpCommandSetConfig for endpoint\n`
+- `AppleUSBXDCI::%s:called without active IOs on EP0_IN\n`
+- `%s@%s: %s::%s: failed to create _eventHandlers[kBusEventHandlerIndex]\n`
+- `%s: %s::%s: failed to allocate interrupt lock\n`
+- `AppleUSBXDCI::%s:failed to prepare DMA command, status: 0x%x\n`
+- `AppleUSBXDCI::%s:USB Core GUID: 0x%08x\n`
+- `AppleUSBXDCI::%s:endpoint:%02x\n`
+- `flushEvents`
+- `AppleUSBXDCIIsocTRBBlock`
+- `%s@%s: %s::%s: Applying tunable tag '%s' (block offset 0x%08x)\n`
+- `%s@%s: %s::%s: Core reset timed out DCTL: 0x%08x\n`
+- `%s@%s: %s::%s: failed to %s stall for endpoint 0x%02x with error 0x%08x\n`
+- `site.SInt32`
+- `%s@%s: %s::%s: failed to create _eventHandlers[kDeviceEventHandlerIndex]\n`
+- `AppleUSBXDCI::%s:Setting [%s] - Offset 0x%08x Value 0x%08x\n`
+- `%s: %s::%s: failed to configure the endpoint status 0x%08x\n`
+- `%s@%s: %s::%s: unexpected event %d (EP0 IN not active)\n`
+- `%s@%s: %s::%s: speed %d linkState %d return status 0x%08x\n`
+- `AppleUSBXDCI::%s:EP0_IN is not active\n`
+- `%s@%s: %s::%s: called without active IOs on EP0_IN\n`
+- `%s@%s: %s::%s: scheduled %d bytes\n`
+- `%s@%s: %s::%s: interface count %d\n`
+- `initRegisters`
+- `disable`
+- `AppleUSBXDCI::%s:EP 0x%02x requesting remote wake\n`
+- `AppleUSBXDCI::%s:testSelector %d\n`
+- `AppleUSBXDCI::%s:Missed Isoc for frame number %llu remaining %d bytes\n`
+- `u1-init-disable`
+- `site.SuperSpeedUSBDeviceCapabilityDescriptor`
+- `%s@%s: %s::%s: Failed with status 0x%08x (ep 0x%02x , type %d, mps %d, interval %d)\n`
+- `%s@%s: %s::%s: Failed to apply tunable tag '%s'\n`
+- `clear`
+- `%s@%s: %s::%s: ep:%02x finished:%d total:%d\n`
+- `121111121222121211121221222222212212222112121111111212122222112222222222222222222222222222222222222222222222222222222222222221122222222221111121111111111111111111111111111111122221111111112121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121`
+- `\"TRB preparation failed for %d bytes\" @%s:%d`
+- `CurrentState`
+- `AppleUSBXDCI::%s:unexpected interrupter count %d\n`
+- `%s@%s: %s::%s: Event buffer overflow, flushing the event queue\n`
+- `AppleUSBXDCI::%s:failed to prepareControlTRBs(data) - length %d\n`
+- `AppleUSBXDCI::%s:did not find a pending IORequest for TRB for endpoint 0x%02x\n`
+- `%s@%s: %s::%s: failed to sendEndpointCommand(kEpCommandUpdateXfer) status 0x%08x\n`
+- `%s@%s: %s::%s: returning TRB block %p (phys 0x%llx) to pool\n`
+- `%s@%s: %s::%s: usb2phy suspend\n`
+- `enable`
+- `AppleUSBXDCI::%s:endpoint 0 not active\n`
+- `%s@%s: %s::%s: usb2phy resume\n`
+- `%s@%s: %s::%s: for endpoint 0x%02x status 0x%08x\n`
+- `AppleUSBXDCI::%s:failed kEpCommandStartNewConfig\n`
+- `%s@%s: %s::%s: endpoint (0x%02x) not active\n`
+- `%s@%s: %s::%s: control transfer in %d state\n`
+- `%s@%s: %s::%s: applying tag %s\n`
+- `%s@%s: %s::%s: failed provideEndpointIDsForConfiguration\n`
+- `U3`
+- `%s@%s: %s::%s: unexpected event %d (EP0 OUT not active)\n`
+- `AppleUSBXDCI::%s:failed to sendEndpointCommand(kEpCommandStartXfer) status 0x%08x\n`
+- `AppleUSBXDCI::%s:scheduled %d bytes\n`
+- `AppleUSBXDCI::%s:futureFrameNumber write value %d\n`
+- `parseEndpointEvents`
+- `AppleUSBXDCI::%s:not starting a transfer in control state %d\n`
+- `AppleUSBXDCI::%s:failed to create _eventHandlers[kBusEventHandlerIndex]\n`
+- `AppleUSBXDCI::%s:kEpStatusStopPending for ep 0x%02x\n`
+- `AppleUSBXDCI`
+- `%s@%s: %s::%s: Unable to allocate serializer\n`
+- `%s@%s: %s::%s: ep:%02x\n`
+- `provideEndpointIDsForConfiguration`
+- `%s@%s: %s::%s: unable to allocate dma command\n`
+- `%s@%s: %s::%s: status 0x%08x\n`
+- `%s@%s: %s::%s: goOnBus - %d\n`
+- `%s@%s: %s::%s: failed to powerOn the controller\n`
+- `Configured`
+- `ep0OutEventOccurred`
+- `%s: %s::%s: failed to create isoch stream structures\n`
+- `AppleUSBXDCIEventHandler-debug`
+- `prepareIsocFrame`
+- `AppleUSBXDCI::%s:failed to allocate Device Capability Descriptors memory\n`
+- `%s@%s: %s::%s: unexpected interrupter count %d\n`
+- `AppleUSBXDCI::%s:new address - %d \n`
+- `AppleUSBXDCI::%s:Command Completion interrupt not received on time on endpoint 0x%x\n`
+- `activateEndpoint`
+- `%c`
+- `DeviceState`
+- `1211212`
+- `AppleUSBXDCI::%s:applying tag %s\n`
+- `%s@%s: %s::%s: offset 0x%08x invalid (rangeLength 0x%08llx)\n`
+- `AppleUSBXDCI::%s:controllerReset failed with error 0x%08x\n`
+- `%s@%s: %s::%s: timed out waiting for controller halt\n`

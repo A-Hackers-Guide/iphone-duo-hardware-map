@@ -1,0 +1,1724 @@
+# `com.apple.plugin.IOgPTPPlugin`
+
+- Name: IOgPTPPlugin
+- Version: `1510.9`
+- UUID: `8DBC7472-3E71-3918-A677-F489AEC93945`
+- Source version: `1510.9.0.0.0`
+- Depends on: [`com.apple.iokit.IOHIDFamily`](com.apple.iokit.IOHIDFamily.md) 1.4, [`com.apple.iokit.IONetworkingFamily`](com.apple.iokit.IONetworkingFamily.md) 2.0, [`com.apple.iokit.IOSkywalkFamily`](com.apple.iokit.IOSkywalkFamily.md) 1.0, [`com.apple.iokit.IOTimeSyncFamily`](com.apple.iokit.IOTimeSyncFamily.md) 500.10, [`com.apple.kec.Libm`](com.apple.kec.Libm.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 10.0.0d1, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 10.0.0d1, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 10.0.0d1, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 10.0.0d1, [`com.apple.kpi.private`](com.apple.kpi.private.md) 16.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (2) [KC]
+
+### IOTimeSyncDaemonService
+- `CFBundleIdentifier`: `com.apple.plugin.IOgPTPPlugin`
+- `IOClass`: `IOTimeSyncDaemonService`
+- `IOMatchCategory`: `IOTimeSyncDaemonService`
+- `IOPersonalityPublisher`: `com.apple.plugin.IOgPTPPlugin`
+- `IOProbeScore`: `0`
+- `IOProviderClass`: `IOTimeSyncRootService`
+- `IOUserClientClass`: `IOTimeSyncDaemonUserClient`
+
+### IOTimeSyncgPTPManager
+- `CFBundleIdentifier`: `com.apple.plugin.IOgPTPPlugin`
+- `IOClass`: `IOTimeSyncgPTPManager`
+- `IOMatchCategory`: `IOTimeSyncgPTPManager`
+- `IOPersonalityPublisher`: `com.apple.plugin.IOgPTPPlugin`
+- `IOProbeScore`: `0`
+- `IOPropertyMatch`:
+  - `WantsgPTPServices`: `True`
+- `IOProviderClass`: `IOTimeSyncClockManager`
+- `IOUserClientClass`: `IOTimeSyncgPTPManagerUserClient`
+
+
+## C++ classes (37) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `IOTSAEITimeSyncHandler` | 0x30 |  |
+| `IOTimeSyncClockManagerDaemonClient` | 0x108 | IOTimeSyncDaemonClientBase → IOService → IORegistryEntry |
+| `IOTimeSyncDaemonService` | 0xc8 | IOTimeSyncDaemonServiceBase → IOService → IORegistryEntry |
+| `IOTimeSyncDaemonServiceProcess` | 0x10 |  |
+| `IOTimeSyncDaemonUserClient` | 0x138 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `IOTimeSyncDomain` | 0x4f0 | IOTimeSyncService → IOService → IORegistryEntry |
+| `IOTimeSyncDomainDaemonClient` | 0x148 | IOTimeSyncServiceDaemonClient → IOTimeSyncDaemonClientBase → IOService → IORegistryEntry |
+| `IOTimeSyncDomainUserClient` | 0x1e0 | IOTimeSyncUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOTimeSyncEthernetConcreteControllerAdapter` | 0xa8 | IOTimeSyncEthernetControllerAdapter → IOService → IORegistryEntry |
+| `IOTimeSyncEthernetControllerAdapter` | 0xa8 | IOService → IORegistryEntry |
+| `IOTimeSyncEthernetInterfaceAdapter` | 0x130 | IOTimeSyncInterfaceAdapter → IOService → IORegistryEntry |
+| `IOTimeSyncEthernetModernInterfaceAdapter` | 0x150 | IOTimeSyncEthernetInterfaceAdapter → IOTimeSyncInterfaceAdapter → IOService → IORegistryEntry |
+| `IOTimeSyncEthernetPort` | 0xf58 | IOTimeSyncFDPtPPort → IOTimeSyncNetworkPort → IOTimeSyncPort → IOService → IORegistryEntry |
+| `IOTimeSyncFDEtEPort` | 0x17430 | IOTimeSyncNetworkPort → IOTimeSyncPort → IOService → IORegistryEntry |
+| `IOTimeSyncFDPtPPort` | 0xf50 | IOTimeSyncNetworkPort → IOTimeSyncPort → IOService → IORegistryEntry |
+| `IOTimeSyncInterfaceAdapter` | 0xc8 | IOService → IORegistryEntry |
+| `IOTimeSyncLocalClockPort` | 0x1d0 | IOTimeSyncPort → IOService → IORegistryEntry |
+| `IOTimeSyncNetworkPort` | 0xbb0 | IOTimeSyncPort → IOService → IORegistryEntry |
+| `IOTimeSyncNetworkPortDaemonClient` | 0xc8 | IOTimeSyncDaemonClientBase → IOService → IORegistryEntry |
+| `IOTimeSyncNetworkPortUserClient` | 0x150 | IOUserClient → IOService → IORegistryEntry |
+| `IOTimeSyncPort` | 0x138 | IOService → IORegistryEntry |
+| `IOTimeSyncPortManager` | 0xc8 | IOService → IORegistryEntry |
+| `IOTimeSyncReverseSync` | 0x100 | IOService → IORegistryEntry |
+| `IOTimeSyncTSNInterfaceAdapter` | 0xe0 | IOTimeSyncInterfaceAdapter → IOService → IORegistryEntry |
+| `IOTimeSyncTimeOfDayAnchorPort` | 0x1e8 | IOTimeSyncTimeSyncTimePort → IOTimeSyncLocalClockPort → IOTimeSyncPort → IOService → IORegistryEntry |
+| `IOTimeSyncTimeOfDayPort` | 0x200 | IOTimeSyncLocalClockPort → IOTimeSyncPort → IOService → IORegistryEntry |
+| `IOTimeSyncTimeSyncTimePort` | 0x1d0 | IOTimeSyncLocalClockPort → IOTimeSyncPort → IOService → IORegistryEntry |
+| `IOTimeSyncUnicastLinkLayerEtEPort` | 0x17450 | IOTimeSyncFDEtEPort → IOTimeSyncNetworkPort → IOTimeSyncPort → IOService → IORegistryEntry |
+| `IOTimeSyncUnicastLinkLayerPtPPort` | 0xf68 | IOTimeSyncFDPtPPort → IOTimeSyncNetworkPort → IOTimeSyncPort → IOService → IORegistryEntry |
+| `IOTimeSyncUnicastUDPv4EtEPort` | 0x17470 | IOTimeSyncFDEtEPort → IOTimeSyncNetworkPort → IOTimeSyncPort → IOService → IORegistryEntry |
+| `IOTimeSyncUnicastUDPv4PtPPort` | 0xf88 | IOTimeSyncFDPtPPort → IOTimeSyncNetworkPort → IOTimeSyncPort → IOService → IORegistryEntry |
+| `IOTimeSyncUnicastUDPv6EtEPort` | 0x17498 | IOTimeSyncFDEtEPort → IOTimeSyncNetworkPort → IOTimeSyncPort → IOService → IORegistryEntry |
+| `IOTimeSyncUnicastUDPv6PtPPort` | 0xfb0 | IOTimeSyncFDPtPPort → IOTimeSyncNetworkPort → IOTimeSyncPort → IOService → IORegistryEntry |
+| `IOTimeSyncUserFilteredServiceDaemonClient` | 0xc0 | IOTimeSyncServiceDaemonClient → IOTimeSyncDaemonClientBase → IOService → IORegistryEntry |
+| `IOTimeSyncgPTPManager` | 0x2f8 | IOService → IORegistryEntry |
+| `IOTimeSyncgPTPManagerDaemonClient` | 0x110 | IOTimeSyncDaemonClientBase → IOService → IORegistryEntry |
+| `IOTimeSyncgPTPManagerUserClient` | 0x148 | IOUserClient → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1640)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x00023592 off=0x00b68470-0x00b8ba02 addr=0xfffffe0007b6c470-0xfffffe0007b8fa02 r--/r--   __TEXT            
+	sz=0x00006bdc off=0x00b68b38-0x00b6f714 addr=0xfffffe0007b6cb38-0xfffffe0007b73714               __TEXT.__cstring          (CstringLiterals)
+	sz=0x0001c00e off=0x00b6f714-0x00b8b722 addr=0xfffffe0007b73714-0xfffffe0007b8f722               __TEXT.__os_log           
+	sz=0x000002d2 off=0x00b8b730-0x00b8ba02 addr=0xfffffe0007b8f730-0xfffffe0007b8fa02               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x0006ec14 off=0x0387ce50-0x038eba64 addr=0xfffffe000a880e50-0xfffffe000a8efa64 r-x/r-x   __TEXT_EXEC       
+	sz=0x0006de44 off=0x0387ce50-0x038eac94 addr=0xfffffe000a880e50-0xfffffe000a8eec94          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000dd0 off=0x038eac94-0x038eba64 addr=0xfffffe000a8eec94-0xfffffe000a8efa64          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00000768 off=0x04a1cec0-0x04a1d628 addr=0xfffffe000ba20ec0-0xfffffe000ba21628 rw-/rw-   __DATA            
+	sz=0x000000c8 off=0x04a1cec0-0x04a1cf88 addr=0xfffffe000ba20ec0-0xfffffe000ba20f88               __DATA.__data             
+	sz=0x000005d8 off=0x00000000-0x000005d8 addr=0xfffffe000ba20f88-0xfffffe000ba21560               __DATA.__common           (Zerofill)
+	sz=0x000000c8 off=0x00000000-0x000000c8 addr=0xfffffe000ba21560-0xfffffe000ba21628               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x0000fe70 off=0x01475e68-0x01485cd8 addr=0xfffffe0008479e68-0xfffffe0008489cd8 rw-/rw-   __DATA_CONST      
+	sz=0x00000110 off=0x01475e68-0x01475f78 addr=0xfffffe0008479e68-0xfffffe0008479f78         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000110 off=0x01475f78-0x01476088 addr=0xfffffe0008479f78-0xfffffe000847a088         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x0000ea70 off=0x01476088-0x01484af8 addr=0xfffffe000847a088-0xfffffe0008488af8         __DATA_CONST.__const            
+	sz=0x00000940 off=0x01484af8-0x01485438 addr=0xfffffe0008488af8-0xfffffe0008489438         __DATA_CONST.__kalloc_type      
+	sz=0x000006e8 off=0x01485438-0x01485b20 addr=0xfffffe0008489438-0xfffffe0008489b20         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000001b8 off=0x01485b20-0x01485cd8 addr=0xfffffe0008489b20-0xfffffe0008489cd8         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 497 at 0x04afbedc
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     8DBC7472-3E71-3918-A677-F489AEC93945
+008: LC_SOURCE_VERSION           1510.9.0.0.0
+009: LC_FUNCTION_STARTS          offset=0x004acab28 size=0x870
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleExecutable`: `IOgPTPPlugin`
+- `CFBundleGetInfoString`: `IOgPTPPlugin 1510.9, Copyright © 2010-2023 Apple Inc. All rights reserved.`
+- `CFBundleIdentifier`: `com.apple.plugin.IOgPTPPlugin`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `IOgPTPPlugin`
+- `CFBundleNumericVersion`: `0`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1510.9`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1510.9`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `IOgPTPPlugin 1510.9, Copyright © 2010-2023 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `625.1`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/IOgPTPPlugin.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198893837200`
+- `_PrelinkExecutableRelativePath`: `IOgPTPPlugin`
+- `_PrelinkExecutableSize`: `665470`
+- `_PrelinkExecutableSourceAddr`: `-2198893837200`
+- `_PrelinkKmodInfo`: `-2198828085568`
+
+## Strings (1555) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `site.IOTimeSyncNetworkPort`
+- `AttemptedFollowUpCounter`
+- `fUnicastLinkLayerEtEInterfaceReferences != NULL`
+- `NULL == newDomain`
+- `TransmittedPDelayResponseFollowUpCounter`
+- `RemoteClockIdentity`
+- `result != kIOReturnSuccess`
+- `NULL == fPDelayTimer`
+- `UDPv4PtP`
+- `timesync_lucky_filter_ceiling_method`
+- `_startStopLock != nullptr`
+- `TimestampingType`
+- `SyncMeasurementDiscardPPMLimitCounter`
+- `ExternalPowerConnected`
+- `timesync_lucky_filter`
+- `addControllerAdapterForController`
+- `((TSNInterface *)bsdInterface)->init(ethernetAddress, ifName, TSNInterfaceTypeUnknown, TSNTimestampingSupportNone, nullptr, false, nullptr)`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncDomainUserClient.cpp`
+- `site.IOTimeSyncPort`
+- `AllowedLostResponsesExceededCounter`
+- `NULL == refCountObj`
+- `timesync_test_interface`
+- `timesync_sync_filter`
+- `SyncPPMNumerator`
+- `fProvider != NULL`
+- `IOTimeSyncLocalClockPort`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncReverseSync.cpp`
+- `delay response`
+- `121111121222121211122111122111111`
+- `NULL == fMappingLock`
+- `NULL == fClockIDMappingReferences`
+- `kIOReturnSuccess == result`
+- `fUnicastUDPv4PtPReferenceCounts != NULL`
+- `fUnicastUDPv4PtPInterfaceReferences != NULL`
+- `updateNtpAnchorOffset`
+- `SystemDomainIdentifier`
+- `NULL == fOverrideReceiveLock`
+- `RxPacketDiscardInvalidCallbackCounter`
+- `IOTimeSyncDomainUserClient`
+- `fUnicastLinkLayerEtEPorts != NULL`
+- `NULL == fLocalClockPort`
+- `interfaceName`
+- `userClient != NULL`
+- `Product`
+- `IOTimeSyncNetworkPort`
+- `TransmittedSyncCounter`
+- `site.IOTimeSyncUnicastUDPv4PtPPort`
+- `12`
+- `NULL == process`
+- `TSNInterface`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncUnicastUDPv6EtEPort.cpp`
+- `121121`
+- `  %s(%s): Removing general notifier %p for local clock port %p start cleanup\n`
+- `LocalClockSourceFromNTP`
+- `IOTimeSyncTimeOfDayPort`
+- `LocalAnnounceLogMeanInterval`
+- `RxPacketDiscardNoDomainCounter`
+- `SyncMeasurementSuccessCounter`
+- `NULL == fGenericProvider`
+- `NULL == fReverseSyncReferenceCounts->getObject(keySym)`
+- `NULL == number`
+- `filterResetPPMLimit`
+- `fInterfaceName != nullptr`
+- `SyncFilterShift`
+- `NULL == eventName`
+- `fReverseSyncReferenceCounts != NULL`
+- `NULL == fSyncTimeLine`
+- `fUDPPortCount == 0`
+- `ProcessedPDelayRequestCounter`
+- `site.IOTimeSyncgPTPManagerDaemonClient`
+- `temp`
+- `timesync_pdelay_interval`
+- `fReverseSyncReferenceLock != NULL`
+- `NULL == clockManager`
+- `site.IOTimeSyncTimeOfDayAnchorPort`
+- `NULL == fUDPPortNumbersLock`
+- `RemoteIsSameDevice`
+- `TransmittedDelayResponseCounter`
+- `ProcessedFollowUpCounter`
+- `SourceMACAddress`
+- `IOTimeSyncUserFilteredServiceDaemonClient`
+- `NULL == fInterfaceInterfaceAdapterReferenceCounts`
+- `NULL == fNetworkPortLock`
+- `site.IOTimeSyncDomainDaemonClient`
+- `packet != nullptr`
+- `IOTimeSyncEthernetPort`
+- `IOHIDEventService`
+- `IOSkywalkLegacyEthernet`
+- `portManager != nullptr`
+- `superResult == true`
+- `found == true`
+- `MaximumRawDelay`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncPortManager.cpp`
+- `macAddressForIPv4Address`
+- `NULL == domainIdentifier`
+- `fTimeSyncTransmitHandlers != nullptr`
+- `NULL == fNotificationClientsLock`
+- `IOTimeSyncPortManager`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncInterfaceAdapter.cpp`
+- `GeneratedSyncCounter`
+- `site.IOTimeSyncgPTPManagerUserClient`
+- `NULL == fMbufPattern`
+- `found == false`
+- `SyncReceiptTimeoutCounter`
+- `IOTimeSyncUnicastUDPv6PtPPort`
+- `median`
+- `LinkPropagationMeanDelay`
+- `ASCapable`
+- `ReceivedOffsetScaledLogVariance`
+- `IOTimeSyncInterfaceAdapter`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncFDPtPPort.cpp`
+- `portManager->start(ifAdapter)`
+- `domain != nullptr`
+- `IOTimeSyncNetworkPortDaemonClient`
+- `NULL == fController`
+- `MaximumPropagationDelay`
+- `NULL == userIDStr`
+- `LocalPDelayLogMeanInterval`
+- `timesync_pdelay_filter`
+- `NULL == fInterfaceControllerAdapters`
+- `result == true`
+- `LocalFrequencyStabilityLower`
+- `timesync_announce_interval`
+- `SyncMeasurementDiscardDelayLimitExceededCounter`
+- `SyncMeasurementFilterResetDroppedLimitCounter`
+- `MultipleRemotes`
+- `NULL == fTSNCaptureLock`
+- `fUnicastUDPv4EtEReferenceCountLock != NULL`
+- `NULL == fInterfaceTerminatedNotifier`
+- `ReceivedPDelayResponseCounter`
+- `myIPv6AddressForAddress`
+- `!fSupportCoPresenceDomain`
+- `timesync_trace`
+- `ProcessedDelayResponseCounter`
+- `RemoteFrequencyStabilityUpper`
+- `addUnicastUDPv4Port`
+- `NULL == fInterfacePortManagerReferenceCounts`
+- `tsnInterfaceMatched`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncNetworkPortUserClient.cpp`
+- `121111121222121211211211222222222222122`
+- `LocalFrequencyToleranceLower`
+- `OverridenReceivePortNumber`
+- `RxPacketDiscardInvalidTimestampCounter`
+- `RxPacketDiscardDuplicateCounter`
+- `RxPacketDiscardRoleMismatchCounter`
+- `NULL == fIOTimeSyncgPTPManager`
+- `ClockClass`
+- `TransmittedAnnounceCounter`
+- `IOTimeSyncEthernetControllerAdapter`
+- `1211111212221212112112112222222222221221111221222222222212`
+- `GrandmasterChangesCounter`
+- `HasWiredEthernetLinkActive`
+- `timesync_log_lucky_filter_ete`
+- `bsdInterface->attach(this)`
+- `ProcessedPDelayResponseFollowUpCounter`
+- `IOUserClientDefaultLocking`
+- `IOTimeSyncgPTPManagerUserClient`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncUnicastLinkLayerPtPPort.cpp`
+- `fUnicastUDPv4EtEPorts != NULL`
+- `121111121222121211122111`
+- `domainIdentifier != nullptr`
+- `ClockIdentifier`
+- `SyncMeasurementDiscardTimestampsOutOfOrderCounter`
+- `fLinkLayerReferenceCountLock != NULL`
+- `interfaceTerminated`
+- `NULL == epochNum`
+- `AirPlayClockID`
+- `DestinationMACAddress`
+- `NULL == fGeneralNotifier`
+- `cleanupForInterfaceByName`
+- `filterResetOutOfBounds`
+- `SupersededDelayCounter`
+- `ReceivedClockPriority1`
+- `IOTimeSyncClockManagerUserClient`
+- `NULL == powerSource`
+- `timesync_lucky_filter_window_size`
+- `RefCount`
+- `site.IOTimeSyncReverseSync`
+- `IOTimeSyncUnicastUDPv6EtEPort`
+- `NULL == fDomainLock`
+- `NULL == fWorkLoop`
+- `YES`
+- `AVB3ClockID`
+- `NULL == fPortEnableLock`
+- `site.IOTimeSyncPortManager`
+- `NULL == userID`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncEthernetModernInterfaceAdapter.cpp`
+- `tsnPacket != nullptr`
+- `frequency-stability-lower`
+- `AVB2ClockID`
+- `ppmDropResets`
+- `floor`
+- `pdelay request`
+- `timesync_pdelay_denom`
+- `fLinkLayerPortsLock != NULL`
+- `machStatus == kIOReturnSuccess`
+- `ifName != NULL`
+- `NULL == fDelayTimeoutTimer`
+- `WantsgPTPServices`
+- `addControllerAdapterForInterface`
+- `IOTimeSyncPort`
+- `TransmittedPacketDiscardCounter`
+- `RawDelayMeasurementCounter`
+- `int`
+- `NULL == fTemperatureTimer`
+- `121111121222121211111111111111111111211111111111111111111111`
+- `com.apple.private.timesync.getsyncinfo`
+- `packetDiscardedDelayLimit`
+- `AttemptedPDelayResponseCounter`
+- `RxPacketDiscardInvalidSignalTLVCounter`
+- `RxPacketDiscardInvalidSignalTargetCounter`
+- `gPTPPresent`
+- `enabled`
+- `NULL == fTemperatureEventSource`
+- `UTCOffset`
+- `NULL == domainsArray`
+- `IOUserClientClass`
+- `NULL == fStateLock`
+- `NULL == portManager`
+- `IPAddress`
+- `site.IOTimeSyncgPTPManager`
+- `NULL == fUsedLinkLayerPortNumbers`
+- `NULL == fUTCOffsetsLock`
+- `scaledDelayLimit`
+- `121111121222121211211211222222222222122111112222222222121122221122211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `RxPacketDiscardInvalidEthertypeCounter`
+- `IOTimeSyncUnicastLinkLayerPtPPort`
+- `fUnicastUDPv4EtEPortsLock != NULL`
+- `!reverseSync->attach(this)`
+- `IOPMPowerSource`
+- `NULL == unserialised`
+- `IOUserNetworkWLAN`
+- `NULL == adapter`
+- `ifAdapter->start(interfaceService)`
+- `ifName`
+- `target-type`
+- `NULL == fTimeSyncDomain`
+- `outOfBoundResets`
+- `NULL == fIdentifierString`
+- `PDelayPPMDenominator`
+- `fTimeSyncTransmitHandlersLock != nullptr`
+- `_timeSyncPacketPool`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncNetworkPort.cpp`
+- `NO`
+- `IOTimeSyncDaemonUserClient`
+- `fLinkLayerPorts != NULL`
+- `domainNumber`
+- `NULL == fUsedUDPPortNumbers`
+- `NULL == fClockManager`
+- `IOTimeSyncReverseSyncUserClient`
+- `TxPacketDiscardUnimplementedCounter`
+- `fUnicastUDPv6EtEPortsLock != NULL`
+- `site.IOTimeSyncLocalClockPort`
+- `  %s(%s): Created general notifier %p for local clock port %p\n`
+- `12111112122212121111111111111111121121121111111112222222222222112112111112122222111112112112222`
+- `Master`
+- `timesync_log`
+- `IOLinkStatus`
+- `fDomainUserClientsLock != NULL`
+- `fDomainDaemonClients != NULL`
+- `timesync_delay_limit`
+- `121111121222121211211211222222222222122111112222222222121122221122211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `IOTimeSyncTimeOfDayAnchorPort`
+- `DefaultSyncLogMeanInterval`
+- `RemoteFrequencyStabilityLower`
+- `ReceivedStepsRemoved`
+- `IOTimeSyncDaemonServiceProcess`
+- `site.IOTimeSyncEthernetControllerAdapter`
+- `BatteryPowered`
+- `NULL == matchingService`
+- `callback != nullptr`
+- `com.apple.private.timesync.direct-userclient`
+- `PortNumber`
+- `RemoteLinkType`
+- `fUnicastUDPv6EtEInterfaceReferences != NULL`
+- `fReverseSyncInterfaceReferences != NULL`
+- `fDomainDaemonClientsLock != NULL`
+- `timesync_priority2`
+- `WantsTimeSync`
+- `RemoteTimestampingMode`
+- `nul`
+- `fIdentifierString != nullptr`
+- `AppleBCMWLANSkywalkInterface`
+- `fTimeSyncDomainLock != NULL`
+- `ppmDropCount`
+- `site.IOTimeSyncNetworkPortDaemonClient`
+- `1211111212221212111221112`
+- `instanceIndex >= NUMBER_OF_AVB_INSTANCES`
+- `NULL`
+- `121111121222121211211211222222222222122111112222222222121122221122211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `NULL == fTranslationService`
+- `fTSNBSDInterfaces != nullptr`
+- `ppmDropLimit`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncUnicastLinkLayerEtEPort.cpp`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncEthernetInterfaceAdapter.cpp`
+- `NULL == fAnnounceTimeoutTimer`
+- `announce`
+- `site.IOTimeSyncTimeSyncTimePort`
+- `timesync_support_copresence_domain`
+- `symbol != nullptr`
+- `fUnicastLinkLayerEtEPortsLock != NULL`
+- `UDPv6EtE`
+- `0 != err`
+- `LocalTimestampingMode`
+- `RxPacketDiscardPortIdMismatchCounter`
+- `site.IOTimeSyncClockManagerDaemonClient`
+- `fProvider->myIPv6AddressForAddress(fDestinationIPAddress, sourceIPAddress) != 0`
+- `site.IOTimeSyncEthernetInterfaceAdapter`
+- `NULL == fAnnounceInfoLock`
+- `OffsetScaledLogVariance`
+- `NULL == fProvider`
+- `signal`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncUnicastUDPv4EtEPort.cpp`
+- `fLinkLayerReferenceCounts != NULL`
+- `NULL == fInterfacePortManagers`
+- `addCopresenceDomain`
+- `NULL == fSyncTimeoutTimer`
+- `RemoteOscillatorType`
+- `IOTimeSyncUnicastUDPv4PtPPort`
+- `DestinationIPAddress`
+- `result != 0`
+- `err`
+- `site.IOTimeSyncUnicastUDPv4EtEPort`
+- `fUnicastUDPv4EtEReferenceCounts != NULL`
+- `ReceivedPDelayResponseFollowUpCounter`
+- `RxPacketDiscardUnknownTypeCounter`
+- `\"Invalid message type,\"`
+- `0 == refCount`
+- `!reverseSync->attach(interfaceAdapter)`
+- `timesync-preferred-gm`
+- `bsdInterface != nullptr`
+- `notifier == fInterfaceTerminatedNotifier`
+- `SyncPPMLimit`
+- `DelayReceiptTimeoutCounter`
+- `RxPacketDiscardInvalidLengthCounter`
+- `RxPacketDiscardDomainMismatchCounter`
+- `IOTimeSyncDomainDaemonClient`
+- `NULL == fTSNInterfaceTerminatedNotifier`
+- `max`
+- `NULL == fAsyncDCLCallbackSetLock`
+- `Passive`
+- `LocalLinkType`
+- `TxPacketDiscardInvalidTimestampCounter`
+- `[%04lu]:`
+- `IOTimeSyncFDPtPPort`
+- `NULL == numberVal`
+- `!reverseSync->start(interfaceAdapter)`
+- `addUnicastUDPv6Port`
+- `NULL == fInterfaceInterfaceAdapters`
+- `IOEthernetController`
+- `NULL == offsetNum`
+- `CopresenceClockID`
+- `TransmittedFollowUpCounter`
+- `timesync_sync_numer`
+- `LinkActive`
+- `TxPacketFailedNetworkSendCounter`
+- `12111112122212121111111111111111222212121`
+- `%s:%u.%u.%u.%u`
+- `NULL == matching`
+- `IOTimeSyncEthernetModernInterfaceAdapter`
+- `fUnicastUDPv6PtPReferenceCounts != NULL`
+- `NULL == fInterfaceInterfaceAdapterReferenceCountsLock`
+- `fTimeSyncReceiveHandlers != nullptr`
+- `pdelay response`
+- `ReceivedTimeSource`
+- `121111121222121211111111111111111111121`
+- `com.apple.private.timesync.clocksync`
+- `fUnicastLinkLayerPtPPorts != NULL`
+- `UDPv6PtP`
+- `UDPv4EtE`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncFDEtEPort.cpp`
+- `free`
+- `OverridenReceiveMatching`
+- `ProcessedAnnounceCounter`
+- `NULL == result`
+- `1211111212221212111111112`
+- `true`
+- `NULL == fInterfaceControllerAdapterReferenceCountsLock`
+- `121111121222121211211211222222222222122111112222222222121122221122211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `IOUserClientDefaultLockingSingleThreadExternalMethod`
+- `fDomainUserClients != NULL`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncDomainDaemonClient.cpp`
+- `addresses != nullptr`
+- `!_IOTimeSyncTimeIsMach`
+- `linkType`
+- `LocalFrequencyToleranceUpper`
+- `ProcessedSyncCounter`
+- `RxPacketDiscardInvalidAnnounceCounter`
+- `NULL == fAsyncCallbackSetLock`
+- `false`
+- `1211111212221212112112112222222222221221111221222222222212222`
+- `ifName != nullptr`
+- `avbPacket != nullptr`
+- `NULL == fSyncSendLock`
+- `NULL == fIOTimeSyncgPTPManagerLock`
+- `fUnicastUDPv6PtPPorts != NULL`
+- `%s[%s]_unknown_%u`
+- `SyncMeasurementFilterResetOutOfBoundsCounter`
+- `bufferLength < sizeof(IOTimeSyncgPTPGenericTLV)`
+- `IOTimeSyncgPTPManagerDaemonClient`
+- `site.IOTimeSyncDaemonServiceProcess`
+- `LinkPropagationDelay`
+- `DefaultPDelayLogMeanInterval`
+- `NULL == fRealtimeReceiveMACsLock`
+- `ClockPriority1`
+- `NULL == fNotificationClients`
+- `NULL == userClientClass`
+- `NULL == matchingDict`
+- `TransmittedEgressTimedSuccededCounter`
+- `IOInterfaceUnit`
+- `_timeSyncPacketPool != nullptr`
+- `ReceivedFollowUpCounter`
+- `site.IOTimeSyncDomainUserClient`
+- `NULL == gPTPManager`
+- `%s[%s]_%u.%u.%u.%u_%u`
+- `LocalOscillatorType`
+- `NULL == fUserFilteredClocks`
+- `0x%016llx`
+- `IOTimeSyncgPTPManager`
+- `_ifnet != nullptr`
+- `121111121222121211112222111111211111211212`
+- `NULL == fDomainIdentifiersLock`
+- `InterfaceName`
+- `LocalSyncLogMeanInterval`
+- `TransmittedEgressTimedCounter`
+- `myIPv6Address`
+- `RemoteSyncLogMeanInterval`
+- `fPathTrace != NULL`
+- `translationStatus == kIOReturnSuccess`
+- `timesync_sync_interval`
+- `AttemptedAnnounceCounter`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncgPTPManagerDaemonClient.cpp`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncDaemonUserClient.cpp`
+- `NULL == fProcesses`
+- `timesync_lucky_filter_per_cent`
+- `frequency-stability-upper`
+- `TemperatureSensor`
+- `AttemptedPDelayResponseFollowUpCounter`
+- `HasEthernetHardwareTimestamping`
+- `NULL == entry`
+- `timesync`
+- `foundEthernetAddress`
+- `perCent`
+- `IOTSAEITimeSyncHandler`
+- `sw+`
+- `fStartStopLock != nullptr`
+- `NULL == fIOTimeSyncUserFilteredService`
+- `TimeSyncRequired`
+- `notifier == fTSNInterfaceTerminatedNotifier`
+- `callbackRef != nullptr`
+- `SourceIPMask`
+- `NULL == fIOTimeSyncClockManager`
+- `121111121222121211121`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncDomain.cpp`
+- `fUnicastLinkLayerPtPInterfaceReferences != NULL`
+- `RxPacketDiscardNotAsCapableCounter`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncClockManagerDaemonClient.cpp`
+- `PropagationDelayLimit`
+- `%s:%02hhx:%02hhx:%02hhx:%02hhx:%02hhx:%02hhx`
+- `fSyncClientsLock != nullptr`
+- `NULL == matchDict`
+- `IOTimeSyncTSNInterfaceAdapter`
+- `%s_reverse_%u`
+- `ReceivedDelayResponseCounter`
+- `RxPacketDiscardInvalidFollowUpTLVCounter`
+- `myIPv4AddressForAddress`
+- `macAddressForIPv6Address`
+- `site.IOTimeSyncEthernetPort`
+- `timesync_pdelay_limit`
+- `  %s(%s): Removing general notifier %p for local clock port %p stop\n`
+- `disabled`
+- `NULL == fAnnounceRateTimeoutTimer`
+- `myIPv4Address`
+- `LinkLayerPtP`
+- `HasWiFiHardwareTimestamping`
+- `site.IOTimeSyncUnicastUDPv6PtPPort`
+- `NULL == fStartStopLock`
+- `oscillator-type`
+- `NULL == fControllerTerminatedNotifier`
+- `GrandmasterID`
+- `SyncPPMDenominator`
+- `RawDelayExceededCounter`
+- `delay request`
+- `IOTimeSyncUserClient`
+- `fUnicastUDPv4PtPReferenceCountLock != NULL`
+- `NULL == fInterfaceControllerAdapterReferenceCounts`
+- `IOSkywalkLegacyEthernetInterface`
+- `IOTimeSyncDaemonClientEntryIDMatching`
+- `site.IOTimeSyncDomain`
+- `ClockIdentity`
+- `matchDict != nullptr`
+- `stddev`
+- `com.apple.TimeSync.OriginalFilteredStatistics`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncUnicastUDPv4PtPPort.cpp`
+- `NULL == fDynamicClockIDReferences`
+- `PDelayPPMNumerator`
+- `TimeToChangeGrandmaster`
+- `timesync_lucky_filter_random_parameters`
+- `12111112122212121112211111111111111111111`
+- `err == 0 `
+- `bsdInterface->start(this)`
+- `TimeSource`
+- `fUnicastUDPv4PtPPorts != NULL`
+- `!reverseSync->init(portNumber, domainNumber, syncTransmitInterval)`
+- `ASPath`
+- `CoreAudioReanchors`
+- `portManager->attach(ifAdapter)`
+- `removePortManagerFromInterface`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncTSNInterfaceAdapter.cpp`
+- ` %02x`
+- `followup`
+- `timesync_pdelay_numer`
+- `IOTimeSyncReverseSync`
+- `FollowUpReceiptTimeoutCounter`
+- `NULL == clockID`
+- `fPortsLock != NULL`
+- `IOTimeSyncFDEtEPort`
+- `ifAdapter->init()`
+- `com.apple.TimeSync.OriginalAllDelays`
+- `ceiling`
+- `site.IOTimeSyncUnicastLinkLayerEtEPort`
+- `NULL == value`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncUserFilteredServiceDaemonClient.cpp`
+- `matchingDictionary != nullptr`
+- `RxPacketDiscardOverrideMismatchCounter`
+- `1211111212221212111221111222212121`
+- `fUnicastLinkLayerPtPPortsLock != NULL`
+- `NULL == timeSyncDomain`
+- `NULL == domain`
+- `IOUserClientDefaultLockingSetProperties`
+- `fPorts != NULL`
+- `IOTimeSyncEthernetInterfaceAdapter`
+- `NULL == fControllerAdapter`
+- `PortRole`
+- `RxPacketDiscardUnimplementedCounter`
+- `TxPacketInvalidFutureTimestampCounter`
+- `SyncMeasurementDroppedCounter`
+- `!refCountObj`
+- `daemonClient != NULL`
+- `result`
+- `BSD Name`
+- `RealtimeMulticastAllowed`
+- `site.IOTimeSyncNetworkPortUserClient`
+- `ProcessedPDelayResponseCounter`
+- `NULL == buffer`
+- `IOTimeSyncEthernetConcreteControllerAdapter`
+- `fUnicastUDPv6EtEPorts != NULL`
+- `NULL == fSyncProcessingLock`
+- `fAVBInstanceReferenceCount[instanceIndex] == INT64_MAX`
+- `12111112122212121111111212112222`
+- `pdelay response followup`
+- `fProvider->myIPv4AddressForAddress(fDestinationIPAddress, &sourceIPAddress, &sourceMask) != 0`
+- `NULL == service`
+- `fUnicastUDPv6EtEReferenceCountLock != NULL`
+- `NULL == fUsedUDPP2PPortNumbers`
+- `mean`
+- `ReceivedPDelayRequestCounter`
+- `AttemptedSignalCounter`
+- `RxPacketDiscardInvalidTransportCounter`
+- `RemoteFrequencyToleranceLower`
+- `IOTimeSyncDomain`
+- `fUnicastUDPv6EtEReferenceCounts != NULL`
+- `NULL == fLFSyncTimeLine`
+- `NtpAnchorOffsetNsec`
+- `!superStarted`
+- `timesync_sync_denom`
+- `RemotePortNumber`
+- `com.apple.private.timesync.timeofdayptpinstance`
+- `fUnicastLinkLayerPtPReferenceCountLock != NULL`
+- `fUTCOffsetsCount == 0`
+- `site.IOTimeSyncTSNInterfaceAdapter`
+- `1211111212221212111122221111`
+- `SupersededSyncCounter`
+- `121111121222121211211211222222222222122111112222222222121122221122211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `12111112122212121111211111122111111111111111111111122222222222221222222222222222222222222222222222222222222222222222222222211111111111111111111111111112222222`
+- `addInterfaceAdapterForInterface`
+- `portManager->init()`
+- `unknown`
+- `ReceivedClockAccuracy`
+- `IOTimeSyncUnicastUDPv4EtEPort`
+- `fUnicastLinkLayerPtPReferenceCounts != NULL`
+- `NULL == sensorNames`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncTimeOfDayPort.cpp`
+- `site.IOTimeSyncUnicastUDPv6EtEPort`
+- `status != 0`
+- `TxPacketFailedBuildCounter`
+- `NULL == fUserClientsLock`
+- `NULL == interfaceAdapter`
+- `removeControllerAdapterForController`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncNetworkPortDaemonClient.cpp`
+- `callback`
+- `ClockPriority2`
+- `!result`
+- `PTPPortEnabled`
+- `SourceIPAddress`
+- `packet->packetLength() >= frameLength`
+- `site.IOTimeSyncUserFilteredServiceDaemonClient`
+- `packetDiscardedPPMLimit`
+- `timesync_tod_filter`
+- `IOTimeSyncUnicastLinkLayerEtEPort`
+- `NULL == fReceivedPathTrace`
+- `IOTimeSyncUserFilteredServiceUserClient`
+- `NULL == fgPTPLock`
+- `%s[%s]_%02x:%02x:%02x:%02x:%02x:%02x_%u`
+- `fUnicastUDPv6PtPInterfaceReferences != NULL`
+- `TemperatureSensorName`
+- `com.apple.TimeSync.LuckyFilteredDelays`
+- `1211111212221212111111111`
+- `121111121222121211211211222222222222122111112222222222121122221122211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `sw`
+- `IOEthernetInterface`
+- `MinimumRawDelay`
+- `NULL == fInterfaceAdapters`
+- `keySym != NULL`
+- `frequency-tolerance-lower`
+- `ifAdapter->attach(interfaceService)`
+- `IOInterfaceNamePrefix`
+- `NULL == mbuf`
+- `NULL == fUserFilteredClocksLock`
+- `%s[%s]_%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x_%u`
+- `MachTimeOffset`
+- `NULL == fDomainsLock`
+- `feth`
+- `addPortManagerToInterface`
+- `targetTypeStr != nullptr`
+- `AVB0ClockID`
+- `RxPacketDiscardFollowUpMismatchCounter`
+- `NULL == fPDelayProcessingLock`
+- `index < SYNC_ARRAY_SIZE`
+- `ifnet != nullptr`
+- `SyncMeasurementDiscardOutOfBoundsCounter`
+- `site.IOTimeSyncEthernetConcreteControllerAdapter`
+- `windowSize`
+- `handler != nullptr`
+- `!startDone`
+- `TransmittedPDelayRequestCounter`
+- `NULL == fAirPlayInstanceLock`
+- `IOUserClientEntitlements`
+- `IOTimeSyncDaemonService`
+- `NULL == fPortsArray`
+- `NULL == fDynamicLock`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncEthernetControllerAdapter.cpp`
+- `AttemptedPDelayRequestCounter`
+- `site.IOTimeSyncInterfaceAdapter`
+- `ifAdapter != nullptr`
+- `result == kIOReturnSuccess`
+- `fCopresenceInstanceReferenceCount != 0`
+- `addCopresenceDomainRef`
+- `ReceivedClockPriority2`
+- `NULL == fAVBInstancesLock`
+- `NULL == port`
+- `fUnicastLinkLayerEtEReferenceCounts != NULL`
+- `  %s(%s): Removing general notifier %p for local clock port %p free\n`
+- `NULL == fDomains`
+- `frequency-tolerance-upper`
+- `_provider.get() != nullptr`
+- `ClockAccuracy`
+- `Disabled`
+- `OverridenReceiveClockIdentity`
+- `ReceivedSyncCounter`
+- `NULL == fIOTimeSyncDaemonService`
+- `NULL == fProcessWatchdogTimer`
+- `fUnicastUDPv4PtPPortsLock != NULL`
+- `LinkLayerEtE`
+- `NULL == fFollowUpTimeoutTimer`
+- `hw`
+- `fUnicastUDPv6PtPPortsLock != NULL`
+- `fSyncClients != nullptr`
+- `!fInterface`
+- `err != 0`
+- `ReceivedAnnounceCounter`
+- `NULL == fProcessesLock`
+- `fUnicastUDPv6PtPReferenceCountLock != NULL`
+- `startDone`
+- `ceilingAdjustmentMethod`
+- `stop`
+- `NULL == fUserClients`
+- `PDelayPPMLimit`
+- `fUnicastLinkLayerEtEReferenceCountLock != NULL`
+- `%s_%u`
+- `MACAddress`
+- `min`
+- `NULL == fPathTrace`
+- `ReceivedGrandmasterID`
+- `site.IOTimeSyncUnicastLinkLayerPtPPort`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncEthernetPort.cpp`
+- `NULL == fControllerControllerAdapterReferenceCounts`
+- `priorityCalculationInputs`
+- `TransmittedDelayRequestCounter`
+- `sync`
+- `MeasuringPDelay`
+- `samples`
+- `site.IOTimeSyncEthernetModernInterfaceAdapter`
+- `12111112122212121111222211111121111121`
+- `RemoteFrequencyToleranceUpper`
+- `%s[%s]_%u`
+- `NULL != fReverseSyncReferenceCounts->getObject(keySym)`
+- `NULL == eventPayload`
+- `site.IOTSAEITimeSyncHandler`
+- `NULL == fAnnounceTimer`
+- `LocalFrequencyStabilityUpper`
+- `IOTimeSyncClockManagerDaemonClient`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncgPTPManagerUserClient.cpp`
+- `reverseSync`
+- `NULL == reverseSync`
+- `NULL == fLinkLayerPortNumbersLock`
+- `AVB1ClockID`
+- `removeCopresenceDomain`
+- `IOTimeSyncNetworkPortUserClient`
+- `StepsRemoved`
+- `NULL == fCopresenceInstanceLock`
+- `removeInterfaceAdapterForInterface`
+- `com.apple.private.timesync.reversesync`
+- `_timeSyncPacketPool->init(2000, 1, &maxSegmentLength, nullptr) == true`
+- `%s:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x`
+- `thisStatus == kIOReturnSuccess`
+- `UTCEpoch`
+- `AttemptedDelayRequestCounter`
+- `site.IOTimeSyncDaemonUserClient`
+- `NULL == fPortsArrayLock`
+- `fTimeSyncReceiveHandlersLock != nullptr`
+- `121111121222121211111111111111121111111121`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncDaemonService.cpp`
+- `TransmittedEgressTimedFailedCounter`
+- `NULL == fInterfacePortManagerReferenceCountsLock`
+- `NULL == fTSNInterfaceMatchedNotifier`
+- `NULL == fUTCOffsets`
+- `fSyncTimeLine != NULL`
+- `ReceivedClockClass`
+- `NULL == fNetworkPort`
+- `AnnounceReceiptTimeoutCounter`
+- `site.IOTimeSyncFDEtEPort`
+- `NULL == offsetsArray`
+- `ReceivedSignalCounter`
+- `MinimumPropagationDelay`
+- `init`
+- `site.IOTimeSyncFDPtPPort`
+- `fUnicastUDPv4EtEInterfaceReferences != NULL`
+- `timesync_priority1`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncUnicastUDPv6PtPPort.cpp`
+- `TransmittedSignalCounter`
+- `NULL == fGPTPTManager`
+- `IOTimeSyncTimeSyncTimePort`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncPort.cpp`
+- `NULL == fSyncTimer`
+- `AttemptedSyncCounter`
+- `ProcessedDelayRequestCounter`
+- `RemoteAnnounceLogMeanInterval`
+- `NULL == fDomainIdentifiers`
+- `1211111212221212111122221`
+- `DefaultAnnounceLogMeanInterval`
+- `ReceivedDelayRequestCounter`
+- `AttemptedDelayResponseCounter`
+- `site.IOTimeSyncDaemonService`
+- `NULL == fPDelayTimeLine`
+- `RemotePDelayLogMeanInterval`
+- `fStartStopLock != NULL`
+- `NULL == ifName`
+- `lookupMACAddressForIPv4Address`
+- `NULL == fControllerControllerAdapters`
+- `tsnInterfaceTerminated`
+- `site.IOTimeSyncTimeOfDayPort`
+- `1211111212221212112112112222222222221221111221222222222212222212`
+- `tsnPacket->packetLength() >= packetLength`
+- `ProcessedSignalCounter`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncLocalClockPort.cpp`
+- `NULL == fUDPP2PPortNumbersLock`
+- `NULL == fUDPSocketLock`
+- `removeControllerAdapterForInterface`
+- `_providerLock != nullptr`
+- `Slave`
+- `TransmittedPDelayResponseCounter`
+- `IFName`
+- `fAirPlayInstanceReferenceCount == INT64_MAX`
+- `/Library/Caches/com.apple.xbs/0419396C-BF26-4435-923C-0CDDBDC5B2A6/TemporaryDirectory.UzO7lS/Sources/TimeSync_kext/IOgPTPPlugin/IOTimeSyncgPTPManager.cpp`
+- `ACIWiFiSkywalkInterface`
+
+**[__TEXT.__os_log]**
+
+- `  %s(%s): Transmitted gPTP PDelay Request message which is too short\n`
+- `  %s(%s): local = %llu, remote = %llu ratio %llu/%llu\n`
+- `  %s(%s): Now gPTP %llu (%llx.%016llx) now mach %llu convert gPTP %llu (%llx.%016llx) mach %llu diff %lld\n`
+- `  %s(%s): [BMCA] Starting port role changes`
+- `failed to allocate interface adapter ref count lock\n`
+- `  %s(%s): LFAttempting to synthesize EtE timestamps but there is no previous time to compute from.\n`
+- `  %s(%s): LFTimestamps are out of order.  Skipping delay calculation.\n`
+- `unable to match IOService for registryEntryID\n`
+- `%s %s %p terminated for %s, running cleanup\n`
+- `provider is not an IOTimeSyncNetworkPort\n`
+- `  %s(%s): Port counter summary:`
+- `  %s(%s): Invalid tx length %zu for packet %p`
+- `  %s(%s): Transmitted unknown gPTP message with messageType 0x%hhx\n`
+- `Could not get source IP, Error: %d (0x%X)\n`
+- `  %s(%s): Received first Sync message with seq ID %u, discarded: %s`
+- `could not set SO_RECV_ANYIF on UDPv6 event socket %d\n`
+- `  %s(%s): Egress Timed Failed Packet Count: %u %u\n`
+- `Failed to allocate override lock\n`
+- `could not add Sync timer to workloop\n, Error: %d (0x%X)\n`
+- `  %s(%s): actual ppm %lld\n`
+- `IOTimeSyncgPTPManager::init created and initing\n`
+- `IOTimeSyncgPTPManager::addInterfaceAdapterForInterface error %u getting address`
+- `  %s(%s): Sending metrics for lucky filter and original behavior`
+- `  %s(%s): OriginalFilter:History buffer is full`
+- `  %s(%s): LFDelayEtE_Error:%llu,%lld,%lld,%u,%u,%lld\n`
+- `could not create PDelay timeout timer\n\n`
+- `UnicastUDPv4 EtE Entry with no ref count\n`
+- `Could not add reverse sync, Error: %d (0x%X)\n`
+- `  %s(%s): LFRemote Sync Log Mean Interval changed from %d to %d, scaling intervals by %d to %llu, %llu\n`
+- `  %s(%s): Received gPTP Announce message which is too short %lu < %lu.\n`
+- `%s::%s UnicastUDPv6PtP port attach() failed for interface %s, provider %p (isInactive=%d)\n`
+- `  %s(%s): Set source address to %u.%u.%u.%u \n`
+- `Failed to allocate pDelay filter\n`
+- `  %s(%s): pt3 = %llu pt2 = %llu mid = %llu\n`
+- `  %s(%s): EtE dropped Sync %u,%u,%u,%u,%llu,%llu,%llu,%llu,%llu,%llu,%llu,%llu\n`
+- `  %s(%s): LFEtE Sync scaledRateRatio is above upper limit %llu > %llu (%u ppm), clamping and resetting filter`
+- `  %s(%s): Raw Delay Measurements Counter: %u\n`
+- `Failed to attach to domain\n`
+- `  %s(%s): Freeing local clock port but general notifier still in place`
+- `  %s(%s): sourcePortIdentity.clockIdentity 0x%016llx 0x%016llx\n`
+- `  %s(%s): More than %u ppm difference detected between expected pDelay neighbor time and actual neighbor time. There was a discontinuity in the neighbors local clock. Set with timeline %s\n`
+- `  %s(%s): expected = %llu, expected delta %llu, limit delta %llu, local diff %llu\n`
+- `  %s(%s): Reset pDelay\n`
+- `  %s(%s): UTC Offset: %d\n`
+- `Failed to create matching dictionary.\n`
+- `Copresence instance is created. Use TimeSyncAddCopresencePTPInstanceRef to add a reference count\n`
+- `  %s(%s): RX Not AS Capable: %u`
+- `Failed to allocate reference count object\n`
+- `  %s(%s): Lucky Filter window size: %u`
+- `Failed to unserialise UTC Offsets\n`
+- `  %s(%s): Realtime Multicast Is Allowed %s\n`
+- `  %s(%s): RX Invalid Ethertype: %u`
+- `  %s(%s): RX Port Identity Mismatch: %u`
+- `  %s(%s): Sync Timeout (No sync received within last %u ms)`
+- `Failed to allocate lock\n`
+- `  %s(%s): Converted a 32 time with spliced which is more than %llu milliseconds from now. nowSplicedDiffMag %llu nowPastDiffMag %llu nowFutureDiffMag %llu\n`
+- `  %s(%s): EtE Sync %u, %u difference is out of %u ppm limits. remote difference %llu, local difference %llu, min difference %llu, max difference %llu\n`
+- `  %s(%s): Transmitted gPTP PDelay Response message which is too short\n`
+- `%s::%s UnicastUDPv4EtE port start() failed for interface %s, provider %p (isInactive=%d)\n`
+- `%s::%s UnicastUDPv6PtP port init() failed for interface %s\n`
+- `  %s(%s): Trying to override pDelay default interval with value %d which is lower than minimum permitted of %d\n`
+- `  %s(%s): Error: Trying to calculate the EtE parameters for a local Timing Measurement Link.\n`
+- `  %s(%s): LFDelayEtE:%llu,%lld,%lld,%u,%u,%lld\n`
+- `failed to allocate user clocks array\n`
+- `  %s(%s): C: gPTP %llu timesync %llu\n`
+- `Failed to remove Unicast Link Layer EtE port\n`
+- `failed to allocate LinkLayer port numbers lock\n`
+- `Could not allocate number\n`
+- `IOTimeSyncDaemonService::deregisterProcess %d\n`
+- `  %s(%s): Trying to convert from a timesync time nanosecond time %llu (%llu) that would result in a negative gPTP time %llu %llu\n`
+- `  %s(%s): AD: gPTP %9llu timesync %9llu ppb %7lld\n`
+- `  %s(%s): LFSyncEtE:0x%llx.%016llx,%llu,%lld,%llu,%lld,%u,0x%016llx,%u,%u,%d,%lld,%lld,%d,%d,0x%016llx\n`
+- `  %s(%s): Received gPTP Delay Request message with invalid ingress timestamp\n`
+- `Could not get dest MAC, Error: %d (0x%X)\n`
+- `IOTimeSyncgPTPManager::addUDPSocket adding UDPv6 Event Socket\n`
+- `  %s(%s): %s\n`
+- `  %s(%s): Announce has null grandmasterIdentity from source 0x%016llx:%u\n`
+- `  %s(%s): Received gPTP PDelay Response FollowUp message which is too short %lu < %lu. %llu 0x%016llx\n`
+- `  %s(%s): Error: Removed port and fClockMasterPort not found in ports array!\n`
+- `Failed to add new port, Error: %d (0x%X)\n`
+- `  %s(%s): Trying to convert from a gPTP time %llx.%016llx (%llu) that would result in a negative mach_absolute time %llu %llu %llu\n`
+- `  %s(%s): Error: Bad sync wake time %llu, now mach %llu, now TSTime %llu, waking at %llu`
+- `null timeSyncUserFilteredService\n`
+- `  %s(%s): Received Allowed Lost Responses Exceeded Counter: %u\n`
+- `  %s(%s): rootSystemIdentity.clockClass %u %u\n`
+- `  %s(%s): Transmitted gPTP PDelay Response FollowUp message which is too short\n`
+- `  %s(%s): Received FollowUp with Sync Info with GM ID 0x%016llx which does not match current GM ID 0x%016llx. Remote sourced from port %u\n`
+- `UnicastUDPv4 PtP Entry with no ref count\n`
+- `Failed to add tsninterface matched notifier.\n`
+- `%s called with NULL ifName, dropping cleanup\n`
+- `could not bind UDPv6 event socket %d\n`
+- `Failed to allocate state lock\n`
+- `  %s(%s): [%u] t3 = %llu (%016llx) t2 = %llu (%016llx) pdelay_response_time = %llu (%016llx) mid = %llu (%016llx)\n`
+- `  %s(%s): Setting port disabled for not AS Capable.\n`
+- `  %s(%s): Received unknown gPTP message with messageType 0x%hhx\n`
+- `  %s(%s): Transmitted gPTP PDelay Response message (%hu) with invalid egress timestamp\n`
+- `failed to allocate domain identifiers lock\n`
+- `  %s(%s): Can System Sleep`
+- `  %s(%s): Last successful measurement with processed sync sequence id:%d at %llu, now:%llu, delta:%llu us`
+- `  %s(%s): localPortNumber %u %u\n`
+- `Supplied message type is invalid\n`
+- `  %s(%s): %s Failed to get default router error %d\n`
+- `  %s(%s): Lucky Filter is %s`
+- `Failed to add controller termination notifier.\n`
+- `  %s(%s): Attempting to synthesize %u EtE timestamps between {0x%llx.%016llx (%llu), %llu} and {0x%llx.%016llx (%llu), %llu} but intervals are out of bounds lower limit %llu upper limit %llu remote %llu local %llu, resetting\n`
+- `  %s(%s): LFProcEtE:%llx.%016llx,%llu,%llu,%llu,%llx.%016llx,%llu,%llx.%016llx,%llu,%llu,%lld,%lld,%u,%u,%d,%d,%016llx\n`
+- `Failed to allocate async DCL callback lock\n`
+- `  %s(%s): Announce from same clock\n`
+- `  %s(%s): Transmitted gPTP Signal message which is too short\n`
+- `  %s(%s): removing port %s\n`
+- `%s %s isWiFiInterface:%d`
+- `  %s(%s): LFEtE Sync timestamps %u,0x%llx.%016llx,%llu,0x%llx.%016llx,%llu,%u,%s\n`
+- `  %s(%s): TimeSyncTime has advanced more than 1.5 times the timer period, %llu`
+- `  %s(%s): Pdelay Req TX: %u/%u (%u%%), RX: %u/%u (%u%%)`
+- `  %s(%s): Pdelay Resp TX: %u/%u (%u%%), RX: %u/%u (%u%%)`
+- `  %s(%s): RX Role Mismatch: %u`
+- `  %s(%s): message linkDown\n`
+- `  %s(%s): SyncPtP:0x%llx.%016llx,%llu,%lld,%llu,%lld,%lld,%lld,%u,0x%016llx,%u,%u,%d,%lld,%lld,%d,%d\n`
+- `  %s(%s): start registered service\n`
+- `Failed to remove UnicastUDPv6 EtE port\n`
+- `+ %s::%s(%p)\n`
+- `  %s(%s): RX Invalid Transport: %u`
+- `  %s(%s): RX FollowUp Mismatch: %u`
+- `  %s(%s): pDelay measurement %llu exceeds the limit %llu\n`
+- `  %s(%s): Stopped PTP Domain 0x%016llx\n`
+- `  %s(%s): Error: removing time sync port not found in ports array!\n`
+- `  %s(%s): Attempting to synthesize but last GM identity (0x%016llx) and current GM identity (0x%016llx) mismatch, resetting\n`
+- `  %s(%s): Attempting to synthesize EtE timestamps but there is no previous time to compute from.\n`
+- `  %s(%s): pt4 = %llu pt1 = %llu pdelay_exchange_time = %llu\n`
+- `  %s(%s): Sync:0x%llx.%016llx,%llu,%llu,%llu,%llu,%u,0x%016llx,%lld,%lld,%u,%d,%d\n`
+- `IOTimeSyncgPTPManager %s dumped interface adapter for %s\n`
+- `could not create Sync timeout timer\n\n`
+- `  %s(%s): Transmitted gPTP Delay Response message which is too short\n`
+- `%s::%s UnicastUDPv4PtP port attach() failed for interface %s, provider %p (isInactive=%d)\n`
+- `port argument must be non NULL\n`
+- `  %s(%s): For sequence ID = %u scaled pdelay_response_time (%llu) > pdelay_exchange_time.  Aborting pdelay calculation.\n`
+- `Could not allocate reverse sync\n`
+- `  %s(%s): Converted a 32 time with past which is more than %llu milliseconds from now. nowSplicedDiffMag %llu nowPastDiffMag %llu nowFutureDiffMag %llu\n`
+- `failed to allocate controller adapters dictionary\n`
+- `  %s(%s): Link Info Updated using sync filter shift %u, sync ppmLimit %u, sync ppmNumerator %llu, sync ppmDenominator %llu\n`
+- `  %s(%s): TX Failed Network Send: %u`
+- `  %s(%s): message linkUp\n`
+- `  %s(%s): Sync Validation: Sync %u different grandmasters used for validation local 0x%016llx remote 0x%016llx\n`
+- `failed to allocate interface port manager ref counts lock\n`
+- `failed to allocate udp port numbers lock\n`
+- `IOTimeSyncgPTPManager::removeUDPSocket closing UDPv6 General Socket\n`
+- `domainIdentifier argument must be non-NULL\n`
+- `  %s(%s): Superseded Sync Counter: %u\n`
+- `  %s(%s): Trying to convert a 64 time but timesync conversion of now returned invalid\n`
+- `  %s(%s): EtE Sync scaledRateRatio is above upper limit %llu > %llu (%u ppm), clamping and resetting filter`
+- `  %s(%s): RX Unknown Type: %u`
+- `  %s(%s): Link Info Updated using pDelay ppmLimit %u, pDelay ppmNumerator %llu, pDelay ppmDenominator %llu\n`
+- `fTranslationService is NULL\n`
+- `Failed to add user clock, Error: %d (0x%X)\n`
+- `  %s(%s): Transmitted time sync message which is not gPTP link layer 0x%04hx\n`
+- `provider is not an IOTimeSyncgPTPManager\n`
+- `  %s(%s): pt4 = %llu pt1 = %llu mid = %llu\n`
+- `  %s(%s): local this = %llu previous = %llu\n`
+- `could not set non blocking on UDPv4 general socket %d\n`
+- `  %s(%s): RX No Domain: %u`
+- `failed to allocate domain identifiers array\n`
+- `IOTimeSyncPortManager(%p) workloop is the same as the IOTimeSyncClockManager workloop`
+- `failed to create Clock ID mapping ref count array\n`
+- `Failed to get the clock manager\n`
+- `  %s(%s): Delay Resp TX: %u/%u (%u%%), RX: %u/%u (%u%%)`
+- `  %s(%s): Received announce not qualified. Port enabled: %s`
+- `Reverse sync not added\n`
+- `domain argument must be non-NULL\n`
+- `  %s(%s): EtE Sync timestamps %u,0x%llx.%016llx,%llu,0x%llx.%016llx,%llu,%u,%s\n`
+- `  %s(%s): delay[%u] = %llu\n`
+- `null IOTimeSyncNetworkPort\n`
+- `  %s(%s): Minimum Raw Delay: %u ns\n`
+- `  %s(%s): Lucky Filter random parameters: %s`
+- `Failed to remove UnicastUDPv4 PtP port\n`
+- `  %s(%s): DelayEtE_Error:%llu,%lld,%lld,%u,%u,%lld\n`
+- `IOTimeSyncNetworkPortUserClient::externalMethod %u returning error 0x%08x\n`
+- `  %s(%s): TX Unimplemented: %u`
+- `  %s(%s): Has WiFi HW Timestamps: %s\n`
+- `Failed to allocate UTC offsets lock\n`
+- `  %s(%s): rootSystemIdentity.clockIdentity 0x%016llx 0x%016llx\n`
+- `  %s(%s): Device Will Power Off`
+- `IOTimeSyncgPTPManager::addUDPSocket closing UDPv6 Event Socket\n`
+- `  %s(%s): RX Unimplemented: %u`
+- `  %s(%s): Measurement discard reasons: %u exceeded PPM limit, %u exceeded delay limit, %u out of bounds, %u timestamps out of order`
+- `Failed to allocate user clients array\n`
+- `could not add receive packet handler\n, Error: %d (0x%X)\n`
+- `failed to start super\n`
+- `  %s(%s): pDelay synthesis %u %llu, %llu\n`
+- `  %s(%s): [BMCA] Port role change due to inferior clock identity 0x%016llx on port %s`
+- `failed to allocate controller adapter ref count lock\n`
+- `null matchingDict for registryEntryID\n`
+- `- %s::%s(%p[%s])\n`
+- `NULL clockID\n`
+- `  %s(%s): %s Failed to get MAC for IP %u.%u.%u.%u error %d\n`
+- `Failed to attach\n`
+- `  %s(%s): CD: gPTP %9llu timesync %9llu ppb %7lld\n`
+- `  %s(%s): LFRemote Sync Log Mean Interval changed from %d to %d, re-initialized filter with new nominal\n`
+- `  %s(%s): TimeOfDay difference is too large, 0x%llx.%016llx`
+- `  %s(%s): Transmit announce with pathTrace[%lu]: 0x%016llx\n`
+- `  %s(%s): %s Failed with _ifnet=%p ipv4Address=%p ipv4Mask=%p\n`
+- `failed to allocate gPTP manager lock\n`
+- `super::start failed\n`
+- `  %s(%s): Set as Preferred GM`
+- `  %s(%s): Error: Trying to calculate the EtE parameters for a local AVB Ethernet Link.\n`
+- `IOTimeSyncNetworkPortDaemonClient::externalMethod %u returning error 0x%08x\n`
+- `  %s(%s): Received gPTP message which is too short, messageLength %u\n`
+- `  %s(%s): OrgMetric:%llu,%lld, %lld,%llu,%lld,%lld,%u`
+- `  %s(%s): Receive announce with pathTrace[%lu]: 0x%016llx\n`
+- `  %s(%s): More than %u ppm difference detected between local pDelay interval and neighbor pDelay interval. There was a discontinuity in the neighbors local clock.\n`
+- `  %s(%s): t1=%llu t2=%llu t3=%llu t4=%llu\n`
+- `  %s(%s): Remote Sync Exchange is ludicrously huge %llx.%016llx\n`
+- `  %s(%s): rootSystemIdentity.priority1 %u %u\n`
+- `Failed to update parameters for Link\n`
+- `  %s(%s): Resetting sync filter for too many dropped (%u dropped exceeds %u limit)`
+- `Failed userIDStr allocation\n`
+- `Sensor names is not a dictionary\n`
+- `  %s(%s): Timestamps are out of order.  Skipping delay calculation.\n`
+- `  %s(%s): OriginalFilter:Filtered delay index is %llu. Skipped calculating statistics (requires at least 2 samples)`
+- `Failed to allocate realtime receive MACs lock\n`
+- `could not add Announce timeout timer to workloop\n, Error: %d (0x%X)\n`
+- `Unexpected bits in hi, %llu * %llu / 2^41 = 0x%llx.%016llx\n`
+- `  %s(%s): BD: gPTP %9llu timesync %9llu ppb %7lld\n`
+- `failed to allocate mbuf, Error: %d (0x%X)\n`
+- `  %s(%s): Forcing disabled port\n`
+- `  %s(%s): Filter reset counts: %u exceeded drop limit, %u out of bounds`
+- `  %s(%s): Lucky Filter EtE logging is %s`
+- `  %s(%s): Transmitted gPTP message which is not our domain %u != %u\n`
+- `IOTimeSyncClockManager(%p) workloop is not the same as the provider's workloop`
+- `could not create PDelay timer\n\n`
+- `  %s(%s): Failed to send lucky filtered delay statistics to CoreAnalytics %s`
+- `  %s(%s): Received duplicate Delay Response. Sequence ID %u, old timestamp %llu, new %llu\n`
+- `  %s(%s): DelayEtE:%llu,%lld,%lld,%u,%u,%lld\n`
+- `  %s(%s): LFSynthesizing %u EtE timestamps between {0x%llx.%016llx (%llu), %llu} and {0x%llx.%016llx (%llu), %llu} with interval {%llu, %llu}\n`
+- `  %s(%s): Error: Trying to calculate the PtP parameters for an undefined remote link, type %u.\n`
+- `  %s(%s): Transmitted Packet Discard Counter: %u\n`
+- `  %s(%s): RX Invalid Announce: %u`
+- `  %s(%s): %s Failed with _ifnet=%p \n`
+- `  %s(%s): [%u] t4 = %llu (%016llx) t1 = %llu (%016llx) mid = %llu (%016llx)\n`
+- `  %s(%s): System Paging Off`
+- `IOTimeSyncgPTPManager::removeUDPSocket closing UDPv4 General Socket\n`
+- `buffer must be at least the size of a TLV type and length\n`
+- `IOTimeSyncDaemonService::processWatchdogTimerFire failed to remove dead process\n`
+- `can't open daemon client for null service\n`
+- `  %s(%s): Error: Just changed fClockMasterPort and it is not found in ports array!\n`
+- `  %s(%s): Has Ethernet HW Timestamps: %s\n`
+- `  %s(%s): DelayRequestEtE:%llu,%llu,0x%llx.%016llx,%llu,0x%llx.%016llx,%llu,%lld,%lld,%lld,%u\n`
+- `invalid timeSyncDomain\n`
+- `could not add Sync timeout timer to workloop\n, Error: %d (0x%X)\n`
+- `  %s(%s): stepsRemoved %u %u\n`
+- `  %s(%s): Received gPTP FollowUp message which is too short %lu < %lu.\n`
+- `  %s(%s): Received gPTP PDelay Response message which is too short %lu < %lu.\n`
+- `  %s(%s): pDelay timeline is out of the dDelay ppm limits\n`
+- `  %s(%s): EtE Sync %u, %u difference is out of %u ppm limits. remote difference %llu, local difference %llu, min difference %llu, max difference %llu. Allowing through.\n`
+- `IOTimeSyncNetworkPortDaemonClient::sendAsyncNotification: notification=%u arg1=%llu arg2=%llu arg3=%llu arg4=%llu arg5=%llu arg6=%llu`
+- `could not add FollowUp timeout timer to workloop\n, Error: %d (0x%X)\n`
+- `  %s(%s): D: gPTP %llu timesync %llu\n`
+- `  %s(%s): [GM Change] Kernel notifying kIOTimeSyncDomainNotificationEndGrandmasterChange GMID 0x%016llx, port %hu`
+- `failed to create temperature monitoring timer\n`
+- `  %s(%s): Synthesizing %u EtE timestamps between {0x%llx.%016llx (%llu), %llu} and {0x%llx.%016llx (%llu), %llu} with interval {%llu, %llu}\n`
+- `Failed to add persistent user clock reference\n`
+- `IOTimeSyncLocalClockPort::attach frequency info: toleranceLower=%d(%d) toleranceUpper=%d(%d) stabilityLower=%d(%d) stabilityUpper=%d(%d) oscillatorType=%u\n`
+- `  %s(%s): AnnounceInfo %u, %u, %u, %u, %u, 0x%016llx, %u | 0x%04x, %d, %u\n`
+- `IOTimeSyncClockManager(%p) workloop is the same as the provider's workloop`
+- `Failed to allocate dynamic lock\n`
+- `  %s(%s): adding port %s\n`
+- `Trying to remove a link layer port not owned\n`
+- `could not setpriv on UDPv4 event socket %d\n`
+- `  %s(%s): FilterEtE:%llx.%016llx,%llu,%llx.%016llx,%llu,%llu,%llu,%u,%u,%d,%d,%016llx\n`
+- `  %s(%s): Transmitted gPTP message which does not have the correct transport specific value %u != %u\n`
+- `  %s(%s): TX Future Timestamp: %u`
+- `failed to start super class\n`
+- `  %s(%s): Error: Trying to calculate the PtP parameters for a local Ethernet port with a remote AVB port.\n`
+- `  %s(%s): Received gPTP Sync message with invalid ingress timestamp\n`
+- `  %s(%s): Device is battery powered\n`
+- `  %s(%s): Attempting to convert to Mach but index == -1\n`
+- `  %s(%s): B: gPTP %llu timesync %llu\n`
+- `failed to allocate domain lock\n`
+- `  %s(%s): Set role to %s from %s`
+- `  %s(%s): Trying to override sync default interval with value %d which is lower than minimum permitted of %d\n`
+- `  %s(%s): FollowUp TX: %u/%u (%u%%), RX: %u/%u (%u%%), Timeout: %u`
+- `ControllerAdapter activateAVB returned 0x%08x\n`
+- `  %s(%s): Converted a 32 time which didn't match a closest one condition. nowSplicedDiffMag %llu nowPastDiffMag %llu nowFutureDiffMag %llu\n`
+- `Failed to add UnicastUDPv4 PtP port, Error: %d (0x%X)\n`
+- `Could not remove reverse sync, Error: %d (0x%X)\n`
+- `  %s(%s): Trying to override announce default interval with value %d which is higher than maximum permitted of %d\n`
+- `  %s(%s): Received packet with a valid timestamp (%llu) but it's > %llu ns of now (%llu)\n`
+- `  %s(%s): Received gPTP Delay Response message which is too short %lu < %lu.\n`
+- `  %s(%s): Converted a 64 time with past which is more than %llu milliseconds from now. nowSplicedDiffMag %llx.%016llx nowPastDiffMag %llx.%016llx nowFutureDiffMag %llx.%016llx\n`
+- `Failed to create eventPayload\n`
+- `Trying to remove a UnicastUDPv6 EtE port not owned\n`
+- `%s %s %p terminated with no %s property, dropping cleanup\n`
+- `IOTimeSyncgPTPManager::addUDPSocket adding UDPv4 Event Socket\n`
+- `  %s(%s): Transmitted gPTP FollowUp message which is too short\n`
+- `IOTimeSyncDaemonUserClient::sendAsyncNotification not sending numArgs: %u\n`
+- `%s::%s UnicastUDPv4EtE port attach() failed for interface %s, provider %p (isInactive=%d)\n`
+- `  %s(%s): linkUp\n`
+- `  %s(%s): port-manager refcount for %s (Unicast%s) already balanced (kIOReturnNotFound)\n`
+- `  %s(%s): System Will Not Sleep`
+- `Failed to get temp sensor\n`
+- `Failed to add tsninterface terminated notifier.\n`
+- `  %s(%s): TX Invalid Timestamp: %u`
+- `  %s(%s): Attempting to send FollowUp when Sync GM ID 0x%016llx != Announce GM ID 0x%016llx\n`
+- `  %s(%s): Transmitted gPTP Sync message which is too short\n`
+- `failed to allocate user clocks lock\n`
+- `null fIOTimeSyncClockManager\n`
+- `  %s(%s): linkDown\n`
+- `  %s(%s): local = %llu, remote = %llu\n`
+- `Failed to create local clock port\n`
+- `  %s(%s): Administratively disabling port\n`
+- `NULL userID\n`
+- `  %s(%s): neighbor this = %llu previous = %llu\n`
+- `  %s(%s): System Has Powered On`
+- `could not allocate new domain object\n`
+- `  %s(%s): Transmitted gPTP PDelay Request message (%hu) with invalid egress timestamp\n`
+- `  %s(%s): Timestamps did not progress as expected.  Skipping pdelay interval calculation for sequenceID %u.\n`
+- `Value isn't a dictionary\n`
+- `  %s(%s): trying to override priority2 with an invalid value %d\n`
+- `IOTimeSyncgPTPManager::fTemperatures[0] = %d\n`
+- `%s %s %p terminated with no BSD Name property, dropping cleanup\n`
+- `IOTimeSyncgPTPManager Interface \"%s\" terminated\n`
+- `could not set IPV6_V6ONLY on UDPv6 event socket %d\n`
+- `IOTimeSyncNetworkPortUserClient: missing entitlement %s\n`
+- `  %s(%s): Trying to override sync default interval with value %d which is higher than maximum permitted of %d\n`
+- `  %s(%s): Reseting port state due to termination or link down`
+- `service missing IOUserClientClass property\n`
+- `  %s(%s): this t1=%llu t2=%llu t3=%llu t4=%llu\n`
+- `  %s(%s): Sync Validation: Sync %u PTP ingress time is more than %llu ns from the expected PTP ingress time (actual difference %lld)\n`
+- `  %s(%s): Failure: Lucky Filter window size %u rejected`
+- `  %s(%s): Transmitted packet with a valid timestamp (%llu) but it's > %llu ns of now (%llu)\n`
+- `%s::%s UnicastUDPv6PtP port start() failed for interface %s, provider %p (isInactive=%d)\n`
+- ` IOgPTPPlugin assertion FailIfNULLWithAction \"%s\" failed in %s at line %d goto ExitLocked. `
+- `  %s(%s): Rejecting attempt to update ntp anchor offset on unsupported domain %#llx of type %u`
+- `  %s(%s): Sync transmit 0x%08x\n`
+- `  %s(%s): LuckyFilter:History buffer full`
+- `  %s(%s): Pdelay Resp FollowUp TX: %u/%u (%u%%), RX: %u/%u (%u%%)`
+- `  %s(%s): RX Override Mismatch: %u`
+- `IOTimeSyncPortManager(%p) workloop is not the same as the IOTimeSyncClockManager workloop`
+- ` IOgPTPPlugin assertion FailIfError \"%s\" failed in %s at line %d goto ExitLocked. `
+- `  %s(%s): Resetting translation service`
+- `  %s(%s): Received Delay from a different remote port identity, old Identity 0x%016llx.%u new Identity 0x%016llx.%u\n`
+- `  %s(%s): Response time (%llu) is longer than scaled exchange time (%llu), raw delay %lld filter %llu,%llu,%llu,%llu\n`
+- `  %s(%s): RX Packet Discard summary:`
+- `  %s(%s): Received gPTP PDelay Response message with invalid ingress timestamp\n`
+- `Failed to get gPTP manager\n`
+- `  %s(%s): Sync Validation: Sync %u propagation delay is more than %llu ns from the expected propagation delay (actual difference %lld)\n`
+- `  %s(%s): sync differences local = %llu origin = %llu\n`
+- `Failed to create eventName\n`
+- `  %s(%s): Attempt to unset as preferred gm but the device does not have preferred gm set`
+- `Trying to remove a Unicast Link Layer port not owned\n`
+- `  %s(%s): Administratively enabling port\n`
+- `  %s(%s): Superseded Delay Counter: %u\n`
+- `%s domain interface %s terminated\n`
+- `IOTimeSyncgPTPManager %s dumped controller adapter for %s\n`
+- `  %s(%s): LuckyFilter:Filtered delay index is %llu. Skipped calculating statistics (requires at least 2 samples)`
+- `  %s(%s): Delay Req TX: %u/%u (%u%%), RX: %u/%u (%u%%)`
+- `  %s(%s): Successful measurements: %u/%llu (%u%%), (%u dropped, %llu discarded)`
+- `  %s(%s): %s Failed with family=%u sourceIPv6Address=%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x destinationIPv6Address= %02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x error=%d\n`
+- `  %s(%s): Translation clock not locked yet`
+- `UnicastUDPv6 EtE Entry with no ref count\n`
+- `  %s(%s): Updated scaled delay limit from %lld to %lld\n`
+- `  %s(%s): Set source address to %02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x\n`
+- `could not add transmit packet handler\n, Error: %d (0x%X)\n`
+- `IOTimeSyncgPTPManagerDaemonClient::handleExternalMethod selector %u failed result %08x\n`
+- `  %s(%s): Error: Trying to calculate the EtE parameters for a remote Fine Timing Measurement Link.\n`
+- `could not get matching service\n`
+- `Failed to unserialise UTC Offsets, \"%s\"\n`
+- `  %s(%s): RX Invalid Timestamp: %u`
+- `failed to allocate mapping lock\n`
+- `  %s(%s): %s Failed to lookup MAC for IP %u.%u.%u.%u error=%d\n`
+- `  %s(%s): Has Wired Ethernet Link: %s\n`
+- `  %s(%s): LuckyFilterEtE:%llu,%u,%lld,%lld,%lld,%lld,%llu,%llu,%llu`
+- `  %s(%s): LFRemote Sync Exchange is ludicrously huge %llx.%016llx\n`
+- `  %s(%s): Failed to allocate AVB packet for received time sync mbuf\n`
+- `  %s(%s): RX Invalid Signal TLV: %u`
+- `Failed to allocate process array\n`
+- `could not get matching dictionary\n`
+- `IOTimeSyncgPTPManager: Could not find an entry for epoch %llu using default value\n`
+- `  %s(%s): DelayMicroStatsEtE:%llu,%lld,%lld,%llu,%lld,%lld,%u\n`
+- `  %s(%s): Egress Timed Packet Count: %u %u\n`
+- `  %s(%s): Received gPTP PDelay Request message with invalid ingress timestamp\n`
+- `  %s(%s): Timestamps are out of order.  Skipping pdelay calculation.\n`
+- `  %s(%s): Converted a 64 time which didn't match a closest one condition. nowSplicedDiffMag %llx.%016llx nowPastDiffMag %llx.%016llx nowFutureDiffMag %llx.%016llx\n`
+- `Trying to remove a Unicast Link Layer EtE port not owned\n`
+- `Failed to add interface termination notifier.\n`
+- `Entry is not a dictionary\n`
+- `  %s(%s): TimeOfDay has gone backwards, %llu`
+- `  %s(%s): Error: Trying to calculate the PtP parameters for an undefined local link, type %u.\n`
+- `  %s(%s): RX Invalid Length: %u`
+- `  %s(%s): Converted a 32 time with the expansion performed on a different GrandMaster 0x%016llx than the conversion 0x%016llx.\n`
+- `  %s(%s): No IOPMPowerSource assuming wall powered\n`
+- `  %s(%s): Received duplicate FollowUp. Sequence ID %u, old timestamp %llu, new %llu\n`
+- `  %s(%s): LFFilterEtE:%llx.%016llx,%llu,%llx.%016llx,%llu,%llu,%llu,%u,%u,%d,%d,%016llx\n`
+- `IOTimeSyncDaemonUserClient::externalMethod unknown target selector %u\n`
+- `Failed to allocate process array lock\n`
+- `failed to allocate ports lock.\n`
+- `  %s(%s): System Will Power Off`
+- `  %s(%s): Received duplicate Delay Request. Sequence ID %u old timestamp %llu, new %llu\n`
+- `  %s(%s): Transmitted duplicate Delay Request. Sequence ID %u, old timestamp %llu, new %llu\n`
+- `IOTimeSyncgPTPManager::addUDPSocket adding UDPv6 General Socket\n`
+- `IOTimeSyncDaemonUserClient::HandleDaemonServiceCommand UNKNOWN COMMAND\n`
+- `  %s(%s): Device is wall powered\n`
+- `  %s(%s): [%u] t3 = %llu (%016llx) t2 = %llu (%016llx) mid = %llu (%016llx)\n`
+- `  %s(%s): [%u] not valid\n`
+- `failed to get interface controller\n`
+- `could not create process watchdog timer\n\n`
+- `failed to allocate ports array\n`
+- `Failed to start super\n`
+- `  %s(%s): Sync Validation: Sync %u ingress time is more than %llu ns from the expected ingress time (actual difference %lld)\n`
+- `Failed to get translation service\n`
+- `UnicastUDPv6 PtP Entry with no ref count\n`
+- `failed to create workloop\n`
+- ` IOgPTPPlugin assertion FailIfError \"%s\" failed in %s at line %d goto Exit. `
+- `  %s(%s): [Path %zu] 0x%016llx`
+- `IOTimeSyncDaemonUserClient::externalMethod no daemon service\n`
+- `Failed to remove UnicastUDPv4 EtE port\n`
+- `IOTimeSyncgPTPManager::removeUDPSocket closing UDPv4 Event Socket\n`
+- `  %s(%s): RX Invalid Signal Target: %u`
+- `  %s(%s): Received gPTP message which does not have the correct transport specific value %u != %u\n`
+- `Failed to remove Unicast Link Layer PtP port\n`
+- `Failed to cast provider\n`
+- `  %s(%s): RX Invalid FollowUp TLV: %u`
+- `  %s(%s): Last GM phase change is too large: origin(0x%llx.%016llx) - upstream(0x%llx.%016llx) = 0x%llx.%016llx\n`
+- `pDelay intervals local = %llu neighbor = %llu\n`
+- `  %s(%s): Unset as Preferred GM`
+- `Failed to allocate start/stop lock\n`
+- `IOTimeSyncgPTPManager::start creating system domain\n`
+- `Instantiated system domain 0x%016llx\n`
+- `  %s(%s): fAnnounceInfo 0x%llx != GM in packet 0x%llx`
+- `Failed to get persistent user clock\n`
+- `  %s(%s): Reinitalise pDelay Time Line for link up\n`
+- `  %s(%s): Neighbor local clock appears to have wrapped on the 64 bit boundary\n`
+- `  %s(%s): Started PTP Domain 0x%016llx\n`
+- `Failed to allocate mem to hold offsets\n`
+- `instance index unsupported\n`
+- `Reverse sync already exists\n`
+- `  %s(%s): Transmitted gPTP Delay Request message (%hu) with invalid egress timestamp\n`
+- `  %s(%s): For sequence ID = %u pdelay_response_time or pdelay_exchange_time > 134.2 ms.  This makes no sense.  Aborting pdelay calculation.\n`
+- ` IOgPTPPlugin assertion FailIf \"%s\" failed in %s at line %d goto ExitLocked. `
+- `  %s(%s): ppm numerator = %llu denominator = %llu\n`
+- `  %s(%s): Already synced once but fSyncGrandmasterID[%d] (0x%016llx) != fGMPriorityVector.rootSystemIdentity.clockIdentity (0x%016llx)\n`
+- `  %s(%s): Transmitted packet with a valid timestamp (%llu) that is in the future of now (%llu)\n`
+- `Failed to allocate user clients lock\n`
+- `  %s(%s): FollowUp Timeout %u\n`
+- `Failed to allocate sync filter\n`
+- `Removing a UDP port when there aren't any\n`
+- `  %s(%s): Transmitted gPTP Sync message with invalid egress timestamp\n`
+- `Failed to get controller adapter\n`
+- `  %s(%s): Error: Trying to calculate the PtP parameters for a local Peer-to-peer WiFi port with other remote type %u.\n`
+- `  %s(%s): RX Duplicate: %u`
+- `%s::%s UnicastUDPv4EtE port init() failed for interface %s\n`
+- `  %s(%s): Local time has gone backwards %llu < %llu\n`
+- `  %s(%s): [BMCA] Finished port role changes`
+- `could not set non blocking on UDPv4 event socket %d\n`
+- `IOTimeSyncgPTPManager::addUDPSocket closing UDPv6 General Socket\n`
+- `  %s(%s): LFResponse time (%llu) is longer than scaled exchange time (%llu), raw delay %lld filter %llu,%llu,%llu,%llu\n`
+- `  %s(%s): Received gPTP Sync message which is too short %lu < %lu.\n`
+- `  %s(%s): local = %llu, remote = %llu, diff = %llu, limit = %llu\n`
+- `  %s(%s): Local pDelay interval %llu is beyond the limit\n`
+- `IOTimeSyncgPTPManager::addUDPSocket closing UDPv4 Event Socket\n`
+- `  %s(%s): RawEtE:%llx.%016llx,%llu,%llu,%llx.%016llx,%llx.%016llx,%llu,%u,%u,%d,%d,%016llx,%d,%u,%u,%llx.%016llx,%lld\n`
+- `  %s(%s): DelayShortStatsEtE:%llu,%lld,%lld,%llu,%lld,%lld,%u\n`
+- `  %s(%s): TimeSync Support %u\n`
+- `  %s(%s): Number of Realtime Transmit Queues %u\n`
+- `  %s(%s): [BMCA] Becoming GM due to inferior clock identity 0x%016llx on port %s`
+- `  %s(%s): Transmitted gPTP Delay Request message which is too short\n`
+- `  %s(%s): %s Failed to call ifnet_get_address_list. err=%d \n`
+- `  %s(%s): pDelayRaw:%llu,%llu,%llu,%llu,%d,%d\n`
+- `could not setpriv on UDPv6 event socket %d\n`
+- `  %s(%s): Converted a 32 time with future which is more than %llu milliseconds from now. nowSplicedDiffMag %llu nowPastDiffMag %llu nowFutureDiffMag %llu\n`
+- `  %s(%s): rootSystemIdentity.offsetScaledLogVariance %u %u\n`
+- `  %s(%s): Transmitted time sync message which is not UDPv4 for this port\n`
+- `Failed to start\n`
+- `Unknown OSObject subtype for idx %u`
+- `  %s(%s): Error: Trying to calculate the EtE parameters for a remote Timing Measurement Link.\n`
+- `failed to allocate interface port managers dictionary\n`
+- `%s failed to allocate domainsArray for %s, leaving state intact\n`
+- `IOTimeSyncClockManagerDaemonClient::handleExternalMethod selector %u failed result %08x\n`
+- `  %s(%s): TX Failed Packet Build: %u`
+- `could not add Announce timer to workloop\n, Error: %d (0x%X)\n`
+- `  %s(%s): Maximum Raw Delay: %u ns\n`
+- `%s::%s UnicastUDPv4PtP port start() failed for interface %s, provider %p (isInactive=%d)\n`
+- `failed to create Dynamic Clock ID ref count array\n`
+- `  %s(%s): Lucky Filter maximum ceiling set to %u\n`
+- `  %s(%s): Received packet with a valid timestamp (%llu) that is in the future of now (%llu)\n`
+- `  %s(%s): Restoring reeceive matching\n`
+- `  %s(%s): RX Domain Mismatch: %u`
+- `could not add process watchdog timer to workloop\n, Error: %d (0x%X)\n`
+- ` IOgPTPPlugin assertion FailMessage \"%s\" failed in %s at line %d. `
+- `  %s(%s): %s Failed with _ifnet = NULL\n`
+- `  %s(%s): Received AVTP message on time sync queue!!!!\n`
+- `  %s(%s): A: gPTP %llu timesync %llu\n`
+- `found service is not a IOPMPowerSource!\n`
+- `  %s(%s): Attempting to convert to timesync interval but sync info at index %u is not valid\n`
+- `  %s(%s): Transmitted time sync message which is not UDPv6 for this port\n`
+- `Failed to create work look\n`
+- `IOTimeSyncgPTPManager::linkStatusForService no link status\n`
+- `  %s(%s): Synthesizing EtE timestamp %u %llx.%016llx,%llu,%llx.%016llx,%llu\n`
+- `  %s(%s): t1=%llx.%016llx (%llu) t2=%llu t3=%llu t4=%llx.%016llx (%llu)\n`
+- `  %s(%s): LuckyFilter:QuickSort failed`
+- `  %s(%s): LFEtE Sync scaledRateRatio is below lower limit %llu < %llu (%u ppm), clamping and resetting filter`
+- `  %s(%s): System Will Sleep`
+- `  %s(%s): System Will Restart`
+- `  %s(%s): Received duplicate Sync. Sequence ID %u, old timestamp %llu, new %llu\n`
+- `failed to allocate used LinkLayer port numbers array\n`
+- `No entries in array\n`
+- `  %s(%s): Changed PPM drop limit to %u for interval %d\n`
+- `Failed to get BSD name\n`
+- `could not create Announce timeout timer\n\n`
+- `Assert: %s (value 0x%lx %lu), %s file: %s, line: %d\n`
+- `could not get IOEthernetInterface provider\n`
+- `could not add PDelay timer to workloop\n, Error: %d (0x%X)\n`
+- `No ifName\n`
+- `Could not allocate dict\n`
+- `  %s(%s): [BMCA] GM change due to inferior clock identity 0x%016llx on port %s`
+- `IOTimeSyncgPTPManager %s dumped port manager for %s\n`
+- `  %s(%s): Transmitted gPTP message which is too short, messageLength %u\n`
+- `+ %s::%s(%p[%s])\n`
+- `IOTimeSyncgPTPManager::message %u\n`
+- `could not bind UDPv6 general socket %d\n`
+- `  %s(%s): LFResponse time (%llu) is longer than scaled exchange time (%llu)with no conversion, clamping to 0\n`
+- `  %s(%s): LFEtE Sync %u, %u difference is out of %u ppm limits. remote difference %llu, local difference %llu, min difference %llu, max difference %llu. Allowing through.\n`
+- `  %s(%s): LFChanged PPM drop limit to %u for interval %d\n`
+- `  %s(%s): LFAttempting to synthesize but last GM identity (0x%016llx) and current GM identity (0x%016llx) mismatch, resetting\n`
+- `must provide a buffer\n`
+- `  %s(%s): Announce has too many steps removed\n`
+- `  %s(%s): Received gPTP message which is not our domain %u != %u\n`
+- `  %s(%s): Finished synthesis next real timestamp %llu, %llu\n`
+- `  %s(%s): Attempting to convert from timesync interval but sync info at index %u is not valid\n`
+- `  %s(%s): Now gPTP %llu (%llx.%016llx) now timesync %llu convert gPTP %llu (%llx.%016llx) timesync %llu diff %lld\n`
+- ` IOgPTPPlugin assertion FailIfNULL \"%s\" failed in %s at line %d goto Exit. `
+- `  %s(%s): Received time sync message which is too short, messageLength %u\n`
+- `Unicast Link Layer Entry EtE with no ref count\n`
+- `failed to allocate used stream indexes array\n`
+- `  %s(%s): TimeOfDayFiltered: %llu, 0x%llx.%016llx, %llu, %llu`
+- `failed to allocate announce info lock\n`
+- `  %s(%s): RX Invalid Callback: %u`
+- `  %s(%s): Transmitted gPTP Announce message which is too short\n`
+- `  %s(%s): %s ntpAndUpTimeOffsetNsec:%lld isLocalClockSourceFromNTP:%d`
+- `Failed to allocate lucky sync filter\n`
+- `could not setpriv on UDPv4 general socket %d\n`
+- `  %s(%s): LFCalculated that we lost %u syncs which is equal to or larger than the timeout count of %u, resetting. %u,%u,%u\n`
+- `  %s(%s): Using IOSkywalkLegacyEthernet as no other controller was found\n`
+- `  %s(%s): %s Failed with family=%u sourceIPv4Address=%u.%u.%u.%u destinationIPv4Address=%u.%u.%u.%u error=%d\n`
+- `  %s(%s): pdelay_response_time (%llu) >= pdelay_ppm_limit (%llu) [pdelay_exchange_time (%llu)].  This makes no sense.  Aborting pdelay calculation.\n`
+- `  %s(%s): pDelay:%llu,%llu,%llu,%llu,%llu,%llu,%llu,%llu,%llu,%llu,%d,%d\n`
+- `Failed to add UnicastUDPv6 EtE port, Error: %d (0x%X)\n`
+- ` IOgPTPPlugin assertion FailIfWithAction \"%s\" failed in %s at line %d goto Exit. `
+- `  %s(%s): For sequence ID = %u scaled pdelay_response_time (%llu) > pdelay_exchange_time.  Resetting pdelay calculation.\n`
+- `  %s(%s): Attempting to convert from Mach but sync info at index %u is not valid\n`
+- `  %s(%s): [BMCA] GM is different than current, changing port role`
+- `  %s(%s): Device Has Powered On`
+- `  %s(%s): syncIngressSequenceID = %d, delayRequestEgressSequenceID = %d, t1(%d):%llx.%016llx, t2(%d):%016llu, t3(%d):%016llu, t4(%d):%llx.%016llx, delayMeasurement:%010llu, processedSyncIngressTime:%016llu, processedDelayRequestIngressTime:%016llu, deltaProcessedSyncIngressTime:%016lld us, deltaProc`
+- `%s::%s UnicastUDPv6EtE port start() failed for interface %s, provider %p (isInactive=%d)\n`
+- `Provider is not an ethernet controller\n`
+- `  %s(%s): Error: Adding port and fClockMasterPort not found in ports array!\n`
+- `  %s(%s): [BMCA] GM change to superior clock identity 0x%016llx on port %s`
+- `  %s(%s): Calculated difference between Domain Sync time and Delay Request Ingress time (%llu) is larger than allowed limit (%llu). Ingress time %llu domain sync time %llu.\n`
+- `  %s(%s): Error: Trying to calculate the EtE parameters for a local Fine Timing Measurement Link.\n`
+- `failed to allocate UDP socket lock\n`
+- `IOTimeSyncgPTPManager::init timesync node frequency info: toleranceLower=%d(%d) toleranceUpper=%d(%d) stabilityLower=%d(%d) stabilityUpper=%d(%d) oscillatorType=%u\n`
+- `  %s(%s): Announce Rate Timeout\n`
+- `Event: %s`
+- `  %s(%s): trying to override priority1 with an invalid value %d\n`
+- `could not set IPV6_V6ONLY on UDPv6 general socket %d\n`
+- `  %s(%s): Egress Timed Succeded Packet Count: %u %u\n`
+- `  %s(%s): Error: Trying to calculate the parameters for a remote AVB port with bad timestamping mode %u.\n`
+- `  %s(%s): Trying to override pDelay default interval with value %d which is higher than maximum permitted of %d\n`
+- `Failed to init super\n`
+- `%s found tsninterface and trigger domain update to recalculate priority\n`
+- `  %s(%s): Trying to override announce default interval with value %d which is lower than minimum permitted of %d\n`
+- `invalid process ID\n`
+- `  %s(%s): AB: gPTP %9llu timesync %9llu ppb %7lld\n`
+- `%s = %llu`
+- `%s = %s`
+- `IOTimeSyncDomain::timeXtoTimeY  timeYDelta128 is ridiculously big!\n`
+- `failed to allocate controller adapter ref count dictionary\n`
+- `could not bind UDPv4 event socket %d\n`
+- `  %s(%s): Error: Trying to calculate the EtE parameters for an undefined local timestamping mode, mode %u.\n`
+- `  %s(%s): Sync TX: %u/%u (%u%%), RX: %u/%u (%u%%), Timeout: %u`
+- `Failed to allocate adapters array\n`
+- `  %s(%s): Reinitalise pDelay Time Line\n`
+- `  %s(%s): Leap59: %s\n`
+- `Failed to add link layer port, Error: %d (0x%X)\n`
+- `sendDelayStatisticsToUserland kIOTimeSyncDomainNotificationEtEDelayStats localPortNumber=%u mean=%llu median=%llu stddev=%llu min=%llu max=%llu numberOfSamples=%u`
+- `Doesn't support copresence domain with PMGR clock\n`
+- `  %s(%s): SyncTX:%llu,%llu,0x%llx.%016llx,%llu,0x%llx.%016llx,%llu,%lld,%lld,%lld,%u,%d,%d\n`
+- `  %s(%s): t3 = %llu t2 = %llu pdelay_response_time = %llu\n`
+- `  %s(%s): Delay Limit: %llu ns\n`
+- `  %s(%s): calculateDelayStatistics failed`
+- `incorrect index\n`
+- `  %s(%s): Transmitted gPTP message which is too long\n`
+- `failed to allocate domains dictionary\n`
+- `IOTimeSyncgPTPManager::removeUDPSocket closing UDPv6 Event Socket\n`
+- `  %s(%s): Signal TX: %u/%u (%u%%), RX: %u/%u (%u%%)`
+- `  %s(%s): Announce has seen this device (0x%016llx) before`
+- `  %s(%s): Neighbor pDelay interval %llu is beyond the limit\n`
+- `  %s(%s): Converted a 64 time with the expansion performed on a different GrandMaster 0x%016llx than the conversion 0x%016llx.\n`
+- `  %s(%s): Failure: Lucky Filter ceiling method rejected`
+- `  %s(%s): Allocated AVB packet for received time sync mbuf has too many segments\n`
+- `  %s(%s): Error: Trying to calculate the PtP parameters for a local Ethernet port with a remote Peer-to-peer WiFi port.\n`
+- `  %s(%s): Raw Delay Exceeded Counter: %u\n`
+- `IOTimeSyncDaemonUserClient::externalMethod daemon target scalarInputCount %u too low\n`
+- `Trying to remove a UnicastUDPv4 PtP port not owned\n`
+- `could not setpriv on UDPv6 general socket %d\n`
+- `%s fCopresenceInstanceReferenceCount = %lld`
+- `No user clients array\n`
+- `Failed to remove persistent user clock\n`
+- `  %s(%s): Delay Response %u superseded by %hu\n`
+- `- %s::%s(0x%08x)\n`
+- `  %s(%s): Response time (%llu) is longer than scaled exchange time (%llu) with no conversion, clamping to 0\n`
+- `  %s(%s): LFResetting sync filter for too many dropped (%u dropped exceeds %u limit)`
+- `  %s(%s): LFMetric:%lld, %lld,%llu,%lld,%lld,%llu,%d`
+- `  %s(%s): SyncValidation:%llu,%llu,%lld,%llu,%llu,%lld,%llu,%llu,%lld,%llu,%llu,%lld,0x%016llx,0x%016llx,%u\n`
+- `  %s(%s): Rejecting attempt to set preferred GM %u.  Use boot-arg \"timesync-preferred-gm=1\" to enable this feature`
+- `  %s(%s): Lucky Filter adjustment method set to %u`
+- `could not add Delay timeout timer to workloop\n, Error: %d (0x%X)\n`
+- `Detected timesync_delay_limit boot-arg = %u`
+- `  %s(%s): Announce transmit 0x%08x\n`
+- `  %s(%s): Remote Sync Log Mean Interval changed from %d to %d, scaling intervals by %d to %llu, %llu\n`
+- `  %s(%s): Announce TX: %u/%u (%u%%), RX: %u/%u (%u%%), Timeout: %u`
+- `Failed to allocate async callback lock\n`
+- `  %s(%s): %s Failed with ifnet=%p \n`
+- `  %s(%s):  t4 = %llu  t1 = %llu mid = %llu\n`
+- `Failed to add Unicast Link Layer EtE port, Error: %d (0x%X)\n`
+- `Failed to add UnicastUDPv6 PtP port, Error: %d (0x%X)\n`
+- `Unserialised data is not an array\n`
+- `Refcount too large\n`
+- `  %s(%s): Received time sync message which is not gPTP link layer 0x%04x\n`
+- `Could not get src MAC, Error: %d (0x%X)\n`
+- `ControllerAdapter deactivateAVB returned 0x%08x\n`
+- `  %s(%s): Converted a 64 time with spliced which is more than %llu milliseconds from now. nowSplicedDiffMag %llx.%016llx nowPastDiffMag %llx.%016llx nowFutureDiffMag %llx.%016llx\n`
+- `fSyncTimer is NULL\n`
+- `Trying to remove a UnicastUDPv6 PtP port not owned\n`
+- `  %s(%s): LFAttempting to synthesize %u EtE timestamps between {0x%llx.%016llx (%llu), %llu} and {0x%llx.%016llx (%llu), %llu} but intervals are out of bounds lower limit %llu upper limit %llu remote %llu local %llu, resetting\n`
+- `  %s(%s): Error: Trying to calculate the EtE parameters for an undefined local link, type %u.\n`
+- `  %s(%s):  t3 = %llu  t2 = %llu mid = %llu\n`
+- `  %s(%s): Attempting to convert to Mach but sync info at index %u is not valid\n`
+- `failed to allocate interface adapters dictionary\n`
+- `failed to allocate number object\n`
+- `  %s(%s): ProcEtE:%llx.%016llx,%llu,%llu,%llu,%llx.%016llx,%llu,%llx.%016llx,%llu,%llu,%lld,%lld,%u,%u,%d,%d,%016llx\n`
+- `  %s(%s): EtE Sync scaledRateRatio is below lower limit %llu < %llu (%u ppm), clamping and resetting filter`
+- `  %s(%s): LFSynthesizing EtE timestamp %u %llx.%016llx,%llu,%llx.%016llx,%llu\n`
+- `  %s(%s): TX Packet Discard summary:`
+- `  %s(%s): Received gPTP PDelay Request message which is too short %lu < %lu.\n`
+- `  %s(%s): BC: gPTP %9llu timesync %9llu ppb %7lld\n`
+- `  %s(%s): Battery Powered: %s\n`
+- `  %s(%s): Received Sync from a different remote port identity, old Identity 0x%016llx.%u new Identity 0x%016llx.%u\n`
+- `Trying to remove a UnicastUDPv4 EtE port not owned\n`
+- `  %s(%s): Attempting to send Sync when Sync GM ID 0x%016llx != Announce GM ID 0x%016llx\n`
+- `  %s(%s): Skipped %u pDelays synthesizing from last real timestamp %llu, %llu step  %llu, %llu\n`
+- `  %s(%s): Timestamps aren't all valid.  Skipping pdelay calculation. %u %s %s %s %s\n`
+- `  %s(%s): Sync Validation: Sync %u cumulative rate ratio is more than %llu from the expected value (actual difference %lld)\n`
+- `Could notg allocate number\n`
+- `  %s(%s): Set clock slave port to %u, grandmaster Identity 0x%016llx\n`
+- `  %s(%s): Rejecting attempt to update ntp anchor offset since there is no IOTimeSyncTimeOfDayAnchorPort localport`
+- `  %s(%s): Leap61: %s\n`
+- `Failed to allocate enable lock\n`
+- `  %s(%s): FollowUp Timeout (No FollowUp received in last %u ms)`
+- `%s::%s UnicastUDPv4PtP port init() failed for interface %s\n`
+- `Could not add controller adapter, Error: %d (0x%X)\n`
+- `  %s(%s): Overriding priority1 with %d\n`
+- `  %s(%s): ^^^^^Link Info Updated should be using filterShift %u, ppmLimit %u, ppmNumerator %llu, ppmDenominator %llu\n`
+- `Failed to remove UnicastUDPv6 PtP port\n`
+- `IOTimeSyncgPTPManager::start registered service\n`
+- `  %s(%s): Run out of TLV Info entries and there are potentially more TLVs\n`
+- `IOTimeSyncDaemonService::registerProcess %d\n`
+- `IOTimeSyncgPTPManager::addUDPSocket adding UDPv4 General Socket\n`
+- `Offset is not a number\n`
+- `  %s(%s): Sync measurements summary:`
+- `  %s(%s): unexpected 0x%08x rebalancing port-manager refcount for %s (Unicast%s)\n`
+- `  %s(%s): Generated Sync Counter: %u\n`
+- `Failed to add UnicastUDPv4 EtE port, Error: %d (0x%X)\n`
+- `%s failed to allocate domains iterator for %s, leaving state intact\n`
+- `could not set SO_RECV_ANYIF on UDPv6 general socket %d\n`
+- `  %s(%s): LFEtE dropped Sync %u,%u,%u,%u,%llu,%llu,%llu,%llu,%llu,%llu,%llu,%llu\n`
+- `  %s(%s): TimeOfDayRaw: %llu, 0x%llx.%016llx, %d`
+- `%s::%s UnicastUDPv6EtE port init() failed for interface %s\n`
+- `failed to allocate interface adapter ref count dictionary\n`
+- `Using IOSkywalkLegacyEthernet for %s as no other controller was found\n`
+- `could not bind UDPv4 general socket %d\n`
+- `%s Using IOSkywalkLegacyEthernet as no other controller was found for %s%u\n`
+- `  %s(%s): FollowUp transmit 0x%08x\n`
+- `  %s(%s): Remote Sync Log Mean Interval changed from %d to %d, re-initialized filter with new nominal\n`
+- `  %s(%s): Received gPTP message which is too long\n`
+- `Failed to init\n`
+- `  %s(%s): External Power Connected: %s\n`
+- `  %s(%s): Calculated that we lost %u syncs which is equal to or larger than the timeout count of %u, resetting. %u,%u,%u\n`
+- `  %s(%s): Calculated Delay exceeded limit of %llu. Reached %u in a row\n`
+- `  %s(%s): LFt1=%llx.%016llx (%llu) t2=%llu t3=%llu t4=%llx.%016llx (%llu)\n`
+- ` IOgPTPPlugin assertion FailIf \"%s\" failed in %s at line %d goto Exit. `
+- `super failed to start\n`
+- `  %s(%s): Unknown TLV of type %u in a message of type %s\n`
+- `  %s(%s): Sync Validation: Sync %u the domain is not locked so gPTP ingress validation ignored\n`
+- `failed to cast provider\n`
+- `  %s(%s): System Will Power On`
+- `Unicast Link Layer PtP Entry with no ref count\n`
+- `Trying to remove a Unicast Link Layer PtP port not owned\n`
+- `  %s(%s): Received gPTP Signal message which is too short %lu < %lu.\n`
+- `IOTimeSyncgPTPManagerUserClient: missing entitlement %s\n`
+- `  %s(%s): pt3 = %llu pt2 = %llu pdelay_response_time = %llu\n`
+- ` IOgPTPPlugin assertion FailIfNULL \"%s\" failed in %s at line %d goto ExitLocked. `
+- `failed to allocate domains lock\n`
+- `could not set non blocking on UDPv6 event socket %d\n`
+- `  %s(%s): Calculated difference between Domain Sync time and Sync Egress time (%llu) is larger than allowed limit (%llu). Egress time %llu domain sync time %llu.\n`
+- `Failed to add persistent user clock\n`
+- `  %s(%s): t4 = %llu t1 = %llu pdelay_exchange_time = %llu\n`
+- `  %s(%s): %s Failed with ifnet=%p ipv4Address=%p ipv4Mask=%p\n`
+- `  %s(%s): %s Failed to lookup MAC for IP %02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x error=%u\n`
+- `  %s(%s): Skipped %u pDelays but we have no last timestamp resetting\n`
+- `failed to get port manager for interface\n`
+- `  %s(%s): Attempting to convert from Mach but index == -1\n`
+- `  %s(%s): Print historic timestamp measurement now=%llu`
+- `  %s(%s): Received gPTP Delay Request message which is too short %lu < %lu.\n`
+- `failed to allocate processing lock\n`
+- `  %s(%s): purging stale Unicast%s entry for %s (hadPort=%d)\n`
+- `Could not get interface adapter\n`
+- `Value isn't a reverse sync\n`
+- `  %s(%s): Lucky Filter perCent set to %u`
+- `Failed to remove link layer port\n`
+- `Failed to add Unicast Link Layer PtP port, Error: %d (0x%X)\n`
+- `could not create FollowUp timeout timer\n\n`
+- `Failed to create sync lock\n`
+- `  %s(%s): Rejecting attempt to set preferred GM on battery powered device`
+- `IOTimeSyncDomainDaemonClient::handleExternalMethod selector %u failed result %08x\n`
+- `failed to allocate interface port manager ref count dictionary\n`
+- `could not set non blocking on UDPv6 general socket %d\n`
+- `  %s(%s): Allocated AVB packet for received time sync mbuf is too short\n`
+- `could not create Announce timer\n\n`
+- `  %s(%s): Transmitted gPTP Sync message (%hu) with invalid egress timestamp\n`
+- `provider is not an fIOTimeSyncDaemonService\n`
+- `%s::%s UnicastUDPv6EtE port attach() failed for interface %s, provider %p (isInactive=%d)\n`
+- `  %s(%s): Transmitted time sync message which is too short, messageLength %u\n`
+- `Revesrse sync already exists\n`
+- `Could not add interface adapter, Error: %d (0x%X)\n`
+- ` IOgPTPPlugin assertion FailIfWithAction \"%s\" failed in %s at line %d goto ExitLocked. `
+- `  %s(%s): Converted a 64 time with future which is more than %llu milliseconds from now. nowSplicedDiffMag %llx.%016llx nowPastDiffMag %llx.%016llx nowFutureDiffMag %llx.%016llx\n`
+- `  %s(%s): delta differences = %llu limit = %llu\n`
+- `failed to create matching dictionary\n`
+- `failed to allocate used udp port numbers array\n`
+- `Failed to allocate memory for path trace\n`
+- `No user clients lock\n`
+- `  %s(%s): rootSystemIdentity.priority2 %u %u\n`
+- `  %s(%s): sourcePortIdentity.portNumber %u %u\n`
+- `%s Unknown tsninterface notifier called IOTimeSyncgPTPManager!\n`
+- `IOTimeSyncgPTPManager::addUDPSocket closing UDPv4 General Socket\n`
+- `Could not create mbuf fill pattern\n`
+- `failed to get an interface\n`
+- `No DaemonClient for registryEntryID %llu userClientClass %s clientTpe %u\n`
+- `  %s(%s): Reinitalise pDelay Time Line for enable\n`
+- `  %s(%s): last t1=%llu t2=%llu t3=%llu t4=%llu\n`
+- `Temperature: %llu, %d\n`
+- `Doesn't support copresence domain\n`
+- `  %s(%s): LFEtE Sync %u, %u difference is out of %u ppm limits. remote difference %llu, local difference %llu, min difference %llu, max difference %llu\n`
+- `  %s(%s): Announce Timeout (No announce received in last %u ms)`
+- `failed to allocate gPTP reference lock\n`
+- `  %s(%s): [%u] t4 = %llu (%016llx) t1 = %llu (%016llx) pdelay_exchange_time = %llu (%016llx) mid = %llu (%016llx)\n`
+- `  %s(%s): SyncEtE:0x%llx.%016llx,%llu,%lld,%llu,%lld,%u,0x%016llx,%u,%u,%d,%lld,%lld,%d,%d,0x%016llx\n`
+- `Failed to get shared manager\n`
+- `  %s(%s): Number of Realtime Receive Queues %u\n`
+- `failed to allocate mbuf\n`
+- `  %s(%s): Error: Trying to calculate the parameters for a local AVB port with bad timestamping mode %u.\n`
+- `  %s(%s): More than +/-%u ppm difference detected between local sync interval and neighbor sync interval. There was a discontinuity in the neighbors local clock.\n`
+- `  %s(%s): Overriding priority2 with %d\n`
+- `Failed to create notifier\n`
+- `failed to allocate lock\n`
+- `  %s(%s): rootSystemIdentity.clockAccuracy %u %u\n`
+- `  %s(%s): [BMCA] GM is same as current`
+- `  %s(%s): Failure: Lucky Filter %u perCent rejected`
+- `  %s(%s): Error: Trying to calculate the EtE parameters for a remote AVB Ethernet Link.\n`
+- `%s Copresence domainIdentifier = 0x%llx ntpAndUpTimeOffsetNsec = %lld isLocalClockSourceFromNTP = %d`
+- `domainsArray == nullptr\n`
+- `  %s(%s): Overriding receive matching with remoteClockIdentity 0x%016llx remotePortNumner %u\n`
+- `could not create Sync timer\n\n`
+- `  %s(%s): Error: Trying to calculate the PtP parameters for a local AVB port with a remote that doesn't match.\n`
+- ` IOgPTPPlugin assertion FailIfNULLWithAction \"%s\" failed in %s at line %d goto Exit. `
+- `  %s(%s): messagePriorityVector %u, %u, %u, %u, %u, 0x%016llx, %u, 0x%016llx, %u, %u\n`
+- `null fIOTimeSyncgPTPManager\n`
+- `Could not get clock manager\n`
+- `  %s(%s): AC: gPTP %9llu timesync %9llu ppb %7lld\n`

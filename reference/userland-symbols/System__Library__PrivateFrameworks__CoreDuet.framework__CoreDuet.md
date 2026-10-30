@@ -1,0 +1,2420 @@
+# Symbols: `/System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__PrivateFrameworks__CoreDuet.framework__CoreDuet.md). **[DSC]**
+
+1,403 public symbols, 9,114 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x195f7f264  __TEXT,__text  _CDPerfMetricEndTiming
+0x195f7f270  __TEXT,__text  _CDPerfMetricEndTimingAndIncrementErrorCount
+0x195f63c34  __TEXT,__text  _CDPerfMetricEndTimingAndSetResultCount
+0x195f63c3c  __TEXT,__text  _CDPerfMetricEndTimingAndSetResultCountMaybeIncrementErrorCount
+0x195f62bb0  __TEXT,__text  _CDPerfMetricStartTiming
+0x196070374  __TEXT,__text  _CDSizeMetricAddSize
+0x195f6f870  __TEXT,__text  _CloudFamilyAnalysisPETCloudFamilyAnalysisEventReadFrom
+0x196005cac  __TEXT,__text  _CloudFamilyAnalysisPETContactEventReadFrom
+0x195fdebb8  __TEXT,__text  _CloudFamilyAnalysisPETContactEventsReadFrom
+0x1960e2318  __TEXT,__const  _DaysPerBatch
+0x1e0bb0270  __DATA_CONST,__const  _ErrorDomain
+0x195fac9e4  __TEXT,__text  _FTCPPETInteractionLogEventReadFrom
+0x19605f5d8  __TEXT,__text  _FTCPPETInteractionReadFrom
+0x195f8b674  __TEXT,__text  _FTCPPETParticipantReadFrom
+0x195fa80b8  __TEXT,__text  _InteractionAnalysisPETInteractionEventReadFrom
+0x196070b5c  __TEXT,__text  _InteractionAnalysisPETInteractionEventsReadFrom
+0x196048914  __TEXT,__text  _MailIntelligencePETContactEventReadFrom
+0x196034efc  __TEXT,__text  _MailIntelligencePETContactEventsReadFrom
+0x195fdd608  __TEXT,__text  _MailIntelligencePETMailIntelligenceAnalysisEventReadFrom
+0x1960e2320  __TEXT,__const  _MaxBatches
+0x1ef64f468  __AUTH,__objc_data  _OBJC_CLASS_$_CDMonitorManager
+0x1ef64efe0  __AUTH,__objc_data  _OBJC_CLASS_$_CloudFamilyAnalysisPETCloudFamilyAnalysisEvent
+0x1ef64efb8  __AUTH,__objc_data  _OBJC_CLASS_$_CloudFamilyAnalysisPETContactEvent
+0x1ef64ef90  __AUTH,__objc_data  _OBJC_CLASS_$_CloudFamilyAnalysisPETContactEvents
+0x1ef64ef68  __AUTH,__objc_data  _OBJC_CLASS_$_FTCPPETInteraction
+0x1ef64ef40  __AUTH,__objc_data  _OBJC_CLASS_$_FTCPPETInteractionLogEvent
+0x1ef64ef18  __AUTH,__objc_data  _OBJC_CLASS_$_FTCPPETParticipant
+0x1ef64eef0  __AUTH,__objc_data  _OBJC_CLASS_$_InteractionAnalysisPETInteractionEvent
+0x1ef64eec8  __AUTH,__objc_data  _OBJC_CLASS_$_InteractionAnalysisPETInteractionEvents
+0x1ef64db68  __AUTH,__objc_data  _OBJC_CLASS_$_MailIntelligencePETContactEvent
+0x1ef64db40  __AUTH,__objc_data  _OBJC_CLASS_$_MailIntelligencePETContactEvents
+0x1ef64db18  __AUTH,__objc_data  _OBJC_CLASS_$_MailIntelligencePETMailIntelligenceAnalysisEvent
+0x1ef64daf0  __AUTH,__objc_data  _OBJC_CLASS_$_PersonLinkingLinkedPairEvent
+0x1ef64dac8  __AUTH,__objc_data  _OBJC_CLASS_$_PersonLinkingPerson
+0x1ef64daa0  __AUTH,__objc_data  _OBJC_CLASS_$_PersonLinkingPersonPair
+0x1ef64da78  __AUTH,__objc_data  _OBJC_CLASS_$_VisionSignalGradingEntry
+0x1ef64da50  __AUTH,__objc_data  _OBJC_CLASS_$_VisionSignalGradingVisionGrade
+0x1ef64da28  __AUTH,__objc_data  _OBJC_CLASS_$_VisionSignalGradingVisionGradeEvent
+0x1ee34f808  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDAdvisedInteraction
+0x1ee34f998  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDAttachment
+0x1ee34edb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDAttachmentRecord
+0x1ef64f440  __AUTH,__objc_data  _OBJC_CLASS_$__CDAutoSuCache
+0x1ef64f418  __AUTH,__objc_data  _OBJC_CLASS_$__CDAutoSuConfig
+0x1ef64da00  __AUTH,__objc_data  _OBJC_CLASS_$__CDCacheCandidate
+0x1ef64fbe8  __AUTH,__objc_data  _OBJC_CLASS_$__CDCachedPeopleSuggestion
+0x1ef64eea0  __AUTH,__objc_data  _OBJC_CLASS_$__CDCandidateInteractionTaxonomy
+0x1ef64d9d8  __AUTH,__objc_data  _OBJC_CLASS_$__CDCloudFamilyDataCollectionSession
+0x1ef64ee78  __AUTH,__objc_data  _OBJC_CLASS_$__CDCloudFamilyDataCollectionTask
+0x1ef64ee50  __AUTH,__objc_data  _OBJC_CLASS_$__CDComplications
+0x1ef64ee28  __AUTH,__objc_data  _OBJC_CLASS_$__CDConstants
+0x1ee34fb50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDContact
+0x1ef64ee00  __AUTH,__objc_data  _OBJC_CLASS_$__CDContactChangeHistoryEventVisitor
+0x1ef64f760  __AUTH,__objc_data  _OBJC_CLASS_$__CDContactFavoritesUtilities
+0x1ee34ed40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDContactRecord
+0x1ef64f738  __AUTH,__objc_data  _OBJC_CLASS_$__CDContactResolver
+0x1ee34ed18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDContactStatistics
+0x1ef64d9b0  __AUTH,__objc_data  _OBJC_CLASS_$__CDDataCollection
+0x1ef64d988  __AUTH,__objc_data  _OBJC_CLASS_$__CDDataCollectionAnonymizer
+0x1ef64d960  __AUTH,__objc_data  _OBJC_CLASS_$__CDDataCollectionSession
+0x1ef64d938  __AUTH,__objc_data  _OBJC_CLASS_$__CDDataCollectionUtilities
+0x1ef64f3f0  __AUTH,__objc_data  _OBJC_CLASS_$__CDDateRange
+0x1ee34f718  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDDecommissionUtils
+0x1ee34fad8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDDeviceInfo
+0x1ee34f3d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDEntitlementsUtilities
+0x1ee3507a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDEntityMetadataKey
+0x1ef650fc0  __AUTH,__objc_data  _OBJC_CLASS_$__CDErrorUtilities
+0x1ef64c3a8  __AUTH,__objc_data  _OBJC_CLASS_$__CDEventDictsForContactsState
+0x1ef64d910  __AUTH,__objc_data  _OBJC_CLASS_$__CDEventHandlerForActivityLevel
+0x1ef64d8e8  __AUTH,__objc_data  _OBJC_CLASS_$__CDEventHandlerForAppInFocus
+0x1ef64d8c0  __AUTH,__objc_data  _OBJC_CLASS_$__CDEventHandlerForDefaultPairedNearby
+0x1ef64d898  __AUTH,__objc_data  _OBJC_CLASS_$__CDEventHandlerForWatchNearby
+0x1ef64faf8  __AUTH,__objc_data  _OBJC_CLASS_$__CDEventIndexerBookmark
+0x1ef64fad0  __AUTH,__objc_data  _OBJC_CLASS_$__CDEventIndexerContext
+0x1ee350c58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDEventStream
+0x1ee350c30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDEventStreamProperties
+0x1ee350c08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDEventStreams
+0x1ef64d870  __AUTH,__objc_data  _OBJC_CLASS_$__CDEventStreamsRegister
+0x1ef64edd8  __AUTH,__objc_data  _OBJC_CLASS_$__CDFTCPInteractionDataCollectionSession
+0x1ef64edb0  __AUTH,__objc_data  _OBJC_CLASS_$__CDFTCPInteractionDataCollectionTask
+0x1ef64d848  __AUTH,__objc_data  _OBJC_CLASS_$__CDFileUtility
+0x1ef650b38  __AUTH,__objc_data  _OBJC_CLASS_$__CDGenericInteractionRanker
+0x1ef650e08  __AUTH,__objc_data  _OBJC_CLASS_$__CDHashUtilities
+0x1ef64ed88  __AUTH,__objc_data  _OBJC_CLASS_$__CDHomeManagerUtilities
+0x1ef64d820  __AUTH,__objc_data  _OBJC_CLASS_$__CDInBedDetection
+0x1ef64d7f8  __AUTH,__objc_data  _OBJC_CLASS_$__CDInBedDetector
+0x1ef650638  __AUTH,__objc_data  _OBJC_CLASS_$__CDIntentSpotlightIndex
+0x1ee34fb28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDInteraction
+0x1ef6511c8  __AUTH,__objc_data  _OBJC_CLASS_$__CDInteractionAdviceEngine
+0x1ef650de0  __AUTH,__objc_data  _OBJC_CLASS_$__CDInteractionAdvisor
+0x1ee34f858  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDInteractionAdvisorSettings
+0x1ef64d7d0  __AUTH,__objc_data  _OBJC_CLASS_$__CDInteractionAdvisorSimple
+0x1ef650b10  __AUTH,__objc_data  _OBJC_CLASS_$__CDInteractionAdvisorUtils
+0x1ef650ae8  __AUTH,__objc_data  _OBJC_CLASS_$__CDInteractionCache
+0x1ef64ed60  __AUTH,__objc_data  _OBJC_CLASS_$__CDInteractionDataCollectionSession
+0x1ef64ed38  __AUTH,__objc_data  _OBJC_CLASS_$__CDInteractionDataCollectionTask
+0x1ef64d7a8  __AUTH,__objc_data  _OBJC_CLASS_$__CDInteractionFeedbackLogger
+0x1ef64d780  __AUTH,__objc_data  _OBJC_CLASS_$__CDInteractionHarvester
+0x1ef650db8  __AUTH,__objc_data  _OBJC_CLASS_$__CDInteractionPolicies
+0x1ef650d90  __AUTH,__objc_data  _OBJC_CLASS_$__CDInteractionPolicy
+0x1ef650ac0  __AUTH,__objc_data  _OBJC_CLASS_$__CDInteractionRank
+0x1ee34ecf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDInteractionRecord
+0x1ef64f710  __AUTH,__objc_data  _OBJC_CLASS_$__CDInteractionRecorder
+0x1ee34f3a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDInteractionStore
+0x1ef650610  __AUTH,__objc_data  _OBJC_CLASS_$__CDInteractionStoreNotificationReceiver
+0x1ee34f380  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDInteractionStoreNotifier
+0x1ee34ecc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDKeywordRecord
+0x1ef64d758  __AUTH,__objc_data  _OBJC_CLASS_$__CDLastInFirstOutLock
+0x1ee350f78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDLogging
+0x1ef64d730  __AUTH,__objc_data  _OBJC_CLASS_$__CDMDSearchQueryDelegate
+0x1ef64d708  __AUTH,__objc_data  _OBJC_CLASS_$__CDMailIntelligencePETDataCollectionUtilities
+0x1ee34ed90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDMemoryUsageInterval
+0x1ee34eca0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDMemoryUsageIntervalTracker
+0x1ef64fa08  __AUTH,__objc_data  _OBJC_CLASS_$__CDMultiLevelRateLimiter
+0x1ee34eae8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDMutablePerfMetric
+0x1ef64ed10  __AUTH,__objc_data  _OBJC_CLASS_$__CDMutableSizeMetric
+0x1ef6505e8  __AUTH,__objc_data  _OBJC_CLASS_$__CDObservationCenter
+0x1ef64d6e0  __AUTH,__objc_data  _OBJC_CLASS_$__CDPInteractionStoreDataHarvester
+0x1ef64d6b8  __AUTH,__objc_data  _OBJC_CLASS_$__CDPModelTuning
+0x1ef64d690  __AUTH,__objc_data  _OBJC_CLASS_$__CDPModelTuningState
+0x1ef64d668  __AUTH,__objc_data  _OBJC_CLASS_$__CDPPredictionResult
+0x1ef64d640  __AUTH,__objc_data  _OBJC_CLASS_$__CDPSerializedDataHarvester
+0x1ef64d618  __AUTH,__objc_data  _OBJC_CLASS_$__CDPSimpleDataPoint
+0x1ef64d5f0  __AUTH,__objc_data  _OBJC_CLASS_$__CDPSimpleModel
+0x1ef64d5c8  __AUTH,__objc_data  _OBJC_CLASS_$__CDPSimpleModelParameterManager
+0x1ef64d5a0  __AUTH,__objc_data  _OBJC_CLASS_$__CDPSimpleModelParameterManagerAccountState
+0x1ef64d578  __AUTH,__objc_data  _OBJC_CLASS_$__CDPSimpleModelParameterManagerTuningValue
+0x1ee350e10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDPaths
+0x1ef6505c0  __AUTH,__objc_data  _OBJC_CLASS_$__CDPeopleSuggester
+0x1ef650868  __AUTH,__objc_data  _OBJC_CLASS_$__CDPeopleSuggesterContext
+0x1ef650598  __AUTH,__objc_data  _OBJC_CLASS_$__CDPeopleSuggesterSettings
+0x1ee34eac0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDPerfMetric
+0x1ef650570  __AUTH,__objc_data  _OBJC_CLASS_$__CDPerfMetricFamily
+0x1ef650a98  __AUTH,__objc_data  _OBJC_CLASS_$__CDPeriodicScheduler
+0x1ef650a70  __AUTH,__objc_data  _OBJC_CLASS_$__CDPeriodicSchedulerJob
+0x1ef64c4e8  __AUTH,__objc_data  _OBJC_CLASS_$__CDPersistedCoalescingTimer
+0x1ef64ece8  __AUTH,__objc_data  _OBJC_CLASS_$__CDPersonLinkingDataCollectionTask
+0x1ee350780  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDPortraitMetadataKey
+0x1ef6511a0  __AUTH,__objc_data  _OBJC_CLASS_$__CDPortraitStreams
+0x1ee34fa38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDPrivacyPolicy
+0x1ef64d550  __AUTH,__objc_data  _OBJC_CLASS_$__CDQueryInteractionAdvisor
+0x1ee34f7b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDRateAndTotalLimiter
+0x1ee34fab0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDRateLimiter
+0x1ef64c380  __AUTH,__objc_data  _OBJC_CLASS_$__CDReceiverNotifier
+0x1ef64f6e8  __AUTH,__objc_data  _OBJC_CLASS_$__CDSerializableKeyedData
+0x1ef64ecc0  __AUTH,__objc_data  _OBJC_CLASS_$__CDServerRequest
+0x1ef64f6c0  __AUTH,__objc_data  _OBJC_CLASS_$__CDSharedMemoryKeyValueStore
+0x1ee34fa10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDSiriLearningSettings
+0x1ef64ec98  __AUTH,__objc_data  _OBJC_CLASS_$__CDSizeMetric
+0x1ef64ec70  __AUTH,__objc_data  _OBJC_CLASS_$__CDSizeMetricFamily
+0x1ef64f3c8  __AUTH,__objc_data  _OBJC_CLASS_$__CDSleepForAutoSu
+0x1ef64f3a0  __AUTH,__objc_data  _OBJC_CLASS_$__CDSleepPredictor
+0x1ef64f378  __AUTH,__objc_data  _OBJC_CLASS_$__CDSleepPredictorMath
+0x1ef64d528  __AUTH,__objc_data  _OBJC_CLASS_$__CDSocialInteractionAdvisor
+0x1ef64ec48  __AUTH,__objc_data  _OBJC_CLASS_$__CDSpotlightCachedContact
+0x1ef64c4c0  __AUTH,__objc_data  _OBJC_CLASS_$__CDSpotlightCoalescedDeletionManager
+0x1ef64c498  __AUTH,__objc_data  _OBJC_CLASS_$__CDSpotlightCoalescedDeletionOperation
+0x1ef64ec20  __AUTH,__objc_data  _OBJC_CLASS_$__CDSpotlightContactResolver
+0x1ef64c470  __AUTH,__objc_data  _OBJC_CLASS_$__CDSpotlightDeletionOperation
+0x1ef650548  __AUTH,__objc_data  _OBJC_CLASS_$__CDSpotlightEventIndexer
+0x1ef650520  __AUTH,__objc_data  _OBJC_CLASS_$__CDSpotlightEventIndexerDataSource
+0x1ef6504f8  __AUTH,__objc_data  _OBJC_CLASS_$__CDSpotlightIntentIndexerDataSource
+0x1ef6504d0  __AUTH,__objc_data  _OBJC_CLASS_$__CDSpotlightItemRecorder
+0x1ef64f350  __AUTH,__objc_data  _OBJC_CLASS_$__CDSpotlightItemRecorderOperation
+0x1ef6504a8  __AUTH,__objc_data  _OBJC_CLASS_$__CDSpotlightItemUtils
+0x1ef64d500  __AUTH,__objc_data  _OBJC_CLASS_$__CDSpotlightQuerier
+0x1ef650a48  __AUTH,__objc_data  _OBJC_CLASS_$__CDStringTokenizer
+0x1ef64f940  __AUTH,__objc_data  _OBJC_CLASS_$__CDSuggestedPerson
+0x1ef650a20  __AUTH,__objc_data  _OBJC_CLASS_$__CDTemporalInteractionAdvisor
+0x1ef64ebf8  __AUTH,__objc_data  _OBJC_CLASS_$__CDTopicMetadataKey
+0x1ef64c538  __AUTH,__objc_data  _OBJC_CLASS_$__CDUncachedSentinel
+0x1ef64ebd0  __AUTH,__objc_data  _OBJC_CLASS_$__CDUserActivityCache
+0x1ee34ec78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CDVersionRecord
+0x1ef64eba8  __AUTH,__objc_data  _OBJC_CLASS_$__CDVisionSignalGradingDataCollectionTask
+0x1ef650840  __AUTH,__objc_data  _OBJC_CLASS_$__CDXPCCodecs
+0x1ef64eb80  __AUTH,__objc_data  _OBJC_CLASS_$__CDXPCEventPublisher
+0x1ef64eb58  __AUTH,__objc_data  _OBJC_CLASS_$__CDXPCEventSubscriber
+0x1ef650818  __AUTH,__objc_data  _OBJC_CLASS_$__DKActivityThrottler
+0x1ef64f9e0  __AUTH,__objc_data  _OBJC_CLASS_$__DKAirPlayPredictionCategory
+0x1ee350758  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKAirPlayPredictionMetadataKey
+0x1ee350938  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKAlarmMetadataKey
+0x1ef6507f0  __AUTH,__objc_data  _OBJC_CLASS_$__DKAlarmStateCategory
+0x1ef64f918  __AUTH,__objc_data  _OBJC_CLASS_$__DKAnyDoubleQuantity
+0x1ee34f268  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKAnyIntegerCategory
+0x1ee350ac8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKAnyStringIdentifier
+0x1ee34f650  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKAppActivityStreamTombstoneRequirement
+0x1ee350730  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKAppClipUsageMetadataKey
+0x1ee350708  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKAppInstallMetadataKey
+0x1ee34f628  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKAppIntentsStreamTombstoneRequirement
+0x1ee3506e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKAppMediaUsageMetadataKey
+0x1ee34f600  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKAppUsageTombstoneRequirement
+0x1ee3506b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKApplicationActivityMetadataKey
+0x1ee350a28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKApplicationMetadataKey
+0x1ee350690  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKAudioMetadataKey
+0x1ef6509f8  __AUTH,__objc_data  _OBJC_CLASS_$__DKAudioRouteCategory
+0x1ef64d4d8  __AUTH,__objc_data  _OBJC_CLASS_$__DKBacklightMetadataKey
+0x1ee34ea20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKBatteryPercentageQuantity
+0x1ee350668  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKBatterySaverMetadataKey
+0x1ee350640  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKBehavioralRuleFeaturesMetadataKey
+0x1ef64f328  __AUTH,__objc_data  _OBJC_CLASS_$__DKBiomePredicateScanner
+0x1ef64f300  __AUTH,__objc_data  _OBJC_CLASS_$__DKBiomePredicateValueScanner
+0x1ee34e9f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKBiomeQuery
+0x1ef651240  __AUTH,__objc_data  _OBJC_CLASS_$__DKBiomeStreamCache
+0x1ee350618  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKBluetoothMetadataKey
+0x1ee34f768  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKBoolCategory
+0x1ee3505f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKBulletinBoardMetadataKey
+0x1ee34fbc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKBundleIdentifier
+0x1ef64eb30  __AUTH,__objc_data  _OBJC_CLASS_$__DKCKError
+0x1ee3505c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKCalendarMetadataKey
+0x1ee3505a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKCallMetadataKey
+0x1ee3510b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKCategory
+0x1ee34ed68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKCategoryCache
+0x1ee34f240  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKCategoryMO
+0x1ee351090  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKCategoryType
+0x1ef64eb08  __AUTH,__objc_data  _OBJC_CLASS_$__DKChangeSet
+0x1ee34f218  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKChangeSetMO
+0x1ef650480  __AUTH,__objc_data  _OBJC_CLASS_$__DKCloudUtilities
+0x1ef64eae0  __AUTH,__objc_data  _OBJC_CLASS_$__DKCompatibility
+0x1ef64eab8  __AUTH,__objc_data  _OBJC_CLASS_$__DKContactsPrivacyMaintainer
+0x1ee34f948  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKCoreDataStorage
+0x1ef64d4b0  __AUTH,__objc_data  _OBJC_CLASS_$__DKCustomCategory
+0x1ef64faa8  __AUTH,__objc_data  _OBJC_CLASS_$__DKCustomIdentifier
+0x1ee34f1f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKCustomMetadataMO
+0x1ef64d488  __AUTH,__objc_data  _OBJC_CLASS_$__DKCustomQuantity
+0x1ee34f920  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKDataProtectionMonitor
+0x1ee34f8f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKDataProtectionStateMonitor
+0x1ef64d460  __AUTH,__objc_data  _OBJC_CLASS_$__DKDebugMetadataKey
+0x1ef64d438  __AUTH,__objc_data  _OBJC_CLASS_$__DKDeviceActivityLevelFeedbackMetadataKey
+0x1ef64ea90  __AUTH,__objc_data  _OBJC_CLASS_$__DKDeviceActivityStandingQuery
+0x1ee350578  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKDeviceBatteryPercentageMetadataKey
+0x1ee350550  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKDeviceIdMetadataKey
+0x1ee350528  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKDeviceIsPluggedInMetadataKey
+0x1ee350500  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKDeviceStandbyTimerMetadataKey
+0x1ee3509d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKDigitalHealthMetadataKey
+0x1ee350a78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKDiscoverabilitySignalsMetadataKey
+0x1ee3504d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKDiscoverabilityUsageMetadataKey
+0x1ef64fbc0  __AUTH,__objc_data  _OBJC_CLASS_$__DKDiskSubsystemIdentifier
+0x1ee34f5d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKEligibleForPredictionTombstoneRequirement
+0x1ef651178  __AUTH,__objc_data  _OBJC_CLASS_$__DKEntityCategory
+0x1ee351248  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKEvent
+0x1ef650d68  __AUTH,__objc_data  _OBJC_CLASS_$__DKEventAdapter
+0x1ef64ea68  __AUTH,__objc_data  _OBJC_CLASS_$__DKEventCKConverter
+0x1ef64ea40  __AUTH,__objc_data  _OBJC_CLASS_$__DKEventData
+0x1ee34f1c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKEventMO
+0x1ee351388  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKEventQuery
+0x1ef64d410  __AUTH,__objc_data  _OBJC_CLASS_$__DKEventResultStatsCounter
+0x1ef650d40  __AUTH,__objc_data  _OBJC_CLASS_$__DKEventStatsCollection
+0x1ef64ea18  __AUTH,__objc_data  _OBJC_CLASS_$__DKEventStatsCounter
+0x1ef650d18  __AUTH,__objc_data  _OBJC_CLASS_$__DKEventStatsCounterInternal
+0x1ef64fb98  __AUTH,__objc_data  _OBJC_CLASS_$__DKEventStatsTimerCounter
+0x1ef64e9f0  __AUTH,__objc_data  _OBJC_CLASS_$__DKEventStatsUtilities
+0x1ee351108  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKEventStream
+0x1ee350bb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKEventStreamCache
+0x1ef650458  __AUTH,__objc_data  _OBJC_CLASS_$__DKEventTypeResultStatsCounter
+0x1ef650bb0  __AUTH,__objc_data  _OBJC_CLASS_$__DKEventTypeStatsCounter
+0x1ef64e9c8  __AUTH,__objc_data  _OBJC_CLASS_$__DKEventTypeStatsTimerCounter
+0x1ee3504b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKFamilyPredictionMetadataKey
+0x1ef64f698  __AUTH,__objc_data  _OBJC_CLASS_$__DKFetchDatabaseChangesOperation
+0x1ef64f670  __AUTH,__objc_data  _OBJC_CLASS_$__DKFetchRecordZoneChangesOperation
+0x1ef64f648  __AUTH,__objc_data  _OBJC_CLASS_$__DKFetchRecordZonesOperation
+0x1ee350f50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKHistogram
+0x1ee34f1a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKHistogramMO
+0x1ee350f28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKHistogramQuery
+0x1ee34f178  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKHistogramValueMO
+0x1ef651150  __AUTH,__objc_data  _OBJC_CLASS_$__DKHomeKitAccessoryControlIdentifier
+0x1ef64f9b8  __AUTH,__objc_data  _OBJC_CLASS_$__DKHomeKitHomeAppViewIdentifier
+0x1ef651128  __AUTH,__objc_data  _OBJC_CLASS_$__DKHomeKitSceneIdentifier
+0x1ee3511d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKIdentifier
+0x1ee34f150  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKIdentifierMO
+0x1ee3511a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKIdentifierType
+0x1ee350988  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKIntentMetadataKey
+0x1ee34f128  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKKeyValueMO
+0x1ef650430  __AUTH,__objc_data  _OBJC_CLASS_$__DKKeyValueStore
+0x1ee34f6a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKKnowledgeStorage
+0x1ee34f678  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKKnowledgeStorageLogging
+0x1ef650408  __AUTH,__objc_data  _OBJC_CLASS_$__DKKnowledgeStorageSimpleKeyValueStore
+0x1ee350de8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKKnowledgeStore
+0x1ef64d3e8  __AUTH,__objc_data  _OBJC_CLASS_$__DKKnowledgeSyncStorageAssertion
+0x1ef64d3c0  __AUTH,__objc_data  _OBJC_CLASS_$__DKLocalChanges
+0x1ee350488  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKLocationApplicationActivityMetadataKey
+0x1ef64d398  __AUTH,__objc_data  _OBJC_CLASS_$__DKLocationIdentifier
+0x1ee350460  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKLocationMetadataKey
+0x1ee350910  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKMapsShareEtaFeedbackMetadataKey
+0x1ef64d370  __AUTH,__objc_data  _OBJC_CLASS_$__DKMetadata
+0x1ee350438  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKMetadataHomeAppView
+0x1ee350410  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKMetadataHomeKitAccessoryControl
+0x1ee3503e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKMetadataHomeKitScene
+0x1ee3503c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKMetadataPersistenceLookupTable
+0x1ee3508e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKMicroLocationMetadataKey
+0x1ef64f620  __AUTH,__objc_data  _OBJC_CLASS_$__DKModifyRecordZonesOperation
+0x1ef64f2d8  __AUTH,__objc_data  _OBJC_CLASS_$__DKModifyRecordsOperation
+0x1ef6507c8  __AUTH,__objc_data  _OBJC_CLASS_$__DKMotionCategory
+0x1ef64d348  __AUTH,__objc_data  _OBJC_CLASS_$__DKMotionMetadataKey
+0x1ee34ec50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKNotificationEventIdentifier
+0x1ee350398  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKNotificationUsageMetadataKey
+0x1ee350370  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKNowPlayingMetadataKey
+0x1ee351298  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKObject
+0x1ef651100  __AUTH,__objc_data  _OBJC_CLASS_$__DKObjectFromMOCache
+0x1ee34f100  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKObjectMO
+0x1ee34ee58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKObjectMOConverter
+0x1ee351180  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKObjectType
+0x1ef6503e0  __AUTH,__objc_data  _OBJC_CLASS_$__DKObserverEntry
+0x1ef64d320  __AUTH,__objc_data  _OBJC_CLASS_$__DKOrientationMetadataKey
+0x1ef64d2f8  __AUTH,__objc_data  _OBJC_CLASS_$__DKPRChangeSet
+0x1ef64d2d0  __AUTH,__objc_data  _OBJC_CLASS_$__DKPRCompressedChangeSet
+0x1ef650fe8  __AUTH,__objc_data  _OBJC_CLASS_$__DKPREvent
+0x1ef64e9a0  __AUTH,__objc_data  _OBJC_CLASS_$__DKPREventData
+0x1ef64d2a8  __AUTH,__objc_data  _OBJC_CLASS_$__DKPRMetadata
+0x1ef650e58  __AUTH,__objc_data  _OBJC_CLASS_$__DKPRMetadataEntry
+0x1ef650cf0  __AUTH,__objc_data  _OBJC_CLASS_$__DKPRSource
+0x1ef650f98  __AUTH,__objc_data  _OBJC_CLASS_$__DKPRStream
+0x1ef650f70  __AUTH,__objc_data  _OBJC_CLASS_$__DKPRValue
+0x1ef650f48  __AUTH,__objc_data  _OBJC_CLASS_$__DKPRValueType
+0x1ee350348  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKPeopleSuggesterOutputForSiriNLMetadataKey
+0x1ef64e978  __AUTH,__objc_data  _OBJC_CLASS_$__DKPerformSyncDownOperation
+0x1ef64e950  __AUTH,__objc_data  _OBJC_CLASS_$__DKPerformSyncDownPeerAdditionsOperation
+0x1ef64e928  __AUTH,__objc_data  _OBJC_CLASS_$__DKPerformSyncDownPeerDeletionsOperation
+0x1ef64e900  __AUTH,__objc_data  _OBJC_CLASS_$__DKPerformSyncDownPeerOperation
+0x1ef64d280  __AUTH,__objc_data  _OBJC_CLASS_$__DKPerformSyncUpChangeOperation
+0x1ef64e8d8  __AUTH,__objc_data  _OBJC_CLASS_$__DKPerformSyncUpHistoryAdditionsOperation
+0x1ef64e8b0  __AUTH,__objc_data  _OBJC_CLASS_$__DKPerformSyncUpHistoryDeletionsOperation
+0x1ef64e888  __AUTH,__objc_data  _OBJC_CLASS_$__DKPerformSyncUpHistoryOperation
+0x1ee350320  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKPeriodMetadataKey
+0x1ef64f2b0  __AUTH,__objc_data  _OBJC_CLASS_$__DKPhotosEventStreams
+0x1ee3502f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKPhotosMetadataKeys
+0x1ef64e860  __AUTH,__objc_data  _OBJC_CLASS_$__DKPlatform
+0x1ef6507a0  __AUTH,__objc_data  _OBJC_CLASS_$__DKPredicateValidator
+0x1ee350f00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKPredictionQuery
+0x1ef64f288  __AUTH,__objc_data  _OBJC_CLASS_$__DKPredictionQueryFeedback
+0x1ee3512c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKPredictionTimeline
+0x1ef64f8f0  __AUTH,__objc_data  _OBJC_CLASS_$__DKPredictor
+0x1ef64d258  __AUTH,__objc_data  _OBJC_CLASS_$__DKPreferences
+0x1ef64f260  __AUTH,__objc_data  _OBJC_CLASS_$__DKPrivacyMaintainer
+0x1ee350dc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKPrivacyPolicyEnforcer
+0x1ef64d230  __AUTH,__objc_data  _OBJC_CLASS_$__DKProtobufMetadata
+0x1ee351018  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKQuantity
+0x1ee34f0d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKQuantityMO
+0x1ee350ff0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKQuantityType
+0x1ee351360  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKQuery
+0x1ef64f5f8  __AUTH,__objc_data  _OBJC_CLASS_$__DKQueryOperation
+0x1ee350d98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKRateLimitPolicyEnforcer
+0x1ee3502d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKRelevantShortcutMetadataKey
+0x1ef64d208  __AUTH,__objc_data  _OBJC_CLASS_$__DKResourceIdentifier
+0x1ef64d1e0  __AUTH,__objc_data  _OBJC_CLASS_$__DKRoutineLocationCategory
+0x1ee3502a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKSafariHistoryMetadataKey
+0x1ee350280  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKSearchFeedbackMetadataKey
+0x1ee3508c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKShareSheetFeedbackMetadataKey
+0x1ee350258  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKShareSheetSuggestLessFeedbackMetadataKey
+0x1ee350898  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKSiriIntentEventMetadataKey
+0x1ee350230  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKSiriServiceMetadataKey
+0x1ee350b18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKSource
+0x1ee34f0b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKSourceMO
+0x1ef6510d8  __AUTH,__objc_data  _OBJC_CLASS_$__DKSourceMOConverter
+0x1ef64e838  __AUTH,__objc_data  _OBJC_CLASS_$__DKStandingQueryExecutor
+0x1ef64d1b8  __AUTH,__objc_data  _OBJC_CLASS_$__DKStarkMetadataKey
+0x1ee34f088  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKStructuredMetadataMO
+0x1ef6503b8  __AUTH,__objc_data  _OBJC_CLASS_$__DKSync2Coordinator
+0x1ef650390  __AUTH,__objc_data  _OBJC_CLASS_$__DKSync2Policy
+0x1ef64e810  __AUTH,__objc_data  _OBJC_CLASS_$__DKSync2State
+0x1ef64d190  __AUTH,__objc_data  _OBJC_CLASS_$__DKSync3FeaturePolicy
+0x1ef64d168  __AUTH,__objc_data  _OBJC_CLASS_$__DKSync3Policy
+0x1ef64d140  __AUTH,__objc_data  _OBJC_CLASS_$__DKSync3TransportPolicy
+0x1ef64e7e8  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncBlockCompositeOperation
+0x1ef64e7c0  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncBlockOperation
+0x1ef64d118  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncChanges
+0x1ef650368  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncCloudKitKnowledgeStorage
+0x1ef64e798  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncCompositeOperation
+0x1ef650340  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncContext
+0x1ef650318  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncContextObject
+0x1ef64d0f0  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncContextObjectFactory
+0x1ef64d0c8  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncCoordinatorLogging
+0x1ef64e770  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncDeletedEventIDs
+0x1ef6502f0  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncDownCloudKitKnowledgeStorage
+0x1ef64e748  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncErrors
+0x1ef64e720  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncHistory
+0x1ef6502c8  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncLocalKnowledgeStorage
+0x1ef64e6f8  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncMetadataStorage
+0x1ef64e6d0  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncOperation
+0x1ef64e6a8  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncPeer
+0x1ef64e680  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncPeerInfo
+0x1ee34f060  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKSyncPeerMO
+0x1ef6502a0  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncPeerObserver
+0x1ef650278  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncPeerStatusTracker
+0x1ef64d0a0  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncPolicy
+0x1ef64e658  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncPowerlog
+0x1ef650250  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncRapportCommonStorage
+0x1ef650228  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncRapportContextStorage
+0x1ef650200  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncRapportKnowledgeStorage
+0x1ef6501d8  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncRapportStorage
+0x1ef6501b0  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncSerializer
+0x1ee34f5b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKSyncStreamsTombstoneRequirement
+0x1ef650188  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncToggle
+0x1ef64e630  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncType
+0x1ef650160  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncUpCloudKitKnowledgeStorage
+0x1ef650138  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncUrgencyTracker
+0x1ef64e608  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncWindow
+0x1ef64e5e0  __AUTH,__objc_data  _OBJC_CLASS_$__DKSyncedFeatures
+0x1ee350b68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKSystemEventStreams
+0x1ef650778  __AUTH,__objc_data  _OBJC_CLASS_$__DKThrottledActivity
+0x1ee350208  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKTimerMetadataKey
+0x1ef64f8c8  __AUTH,__objc_data  _OBJC_CLASS_$__DKTitleIdentifier
+0x1ee3501e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKTombstoneMetadataKey
+0x1ef64e5b8  __AUTH,__objc_data  _OBJC_CLASS_$__DKTombstoneNotifier
+0x1ee34f588  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKTombstonePolicy
+0x1ee34f560  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKTombstoneRequirement
+0x1ee34ea48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKTopicIdentifier
+0x1ef64d078  __AUTH,__objc_data  _OBJC_CLASS_$__DKTristateCategory
+0x1ef64f8a0  __AUTH,__objc_data  _OBJC_CLASS_$__DKUIOrientationCategory
+0x1ee34f308  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKUUIDIdentifier
+0x1ee350cf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__DKXPCKnowledgeStore
+0x1eb9cc8f8  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETCloudFamilyAnalysisEvent._batch
+0x1eb9cc8f0  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETCloudFamilyAnalysisEvent._collectionId
+0x1eb9cc8fc  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETCloudFamilyAnalysisEvent._contactEvents
+0x1eb9cc8f4  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETCloudFamilyAnalysisEvent._sessionId
+0x1eb9cd668  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callAvgDur
+0x1eb9cd650  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callBirthday
+0x1eb9cd65c  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callDayRatio
+0x1eb9cd6d4  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callDurEveFri
+0x1eb9cd6d8  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callDurEveSat
+0x1eb9cd6dc  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callDurEveSun
+0x1eb9cd6d0  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callDurEveWeekday
+0x1eb9cd6b4  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callDurMorningFri
+0x1eb9cd6b8  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callDurMorningSat
+0x1eb9cd6bc  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callDurMorningSun
+0x1eb9cd6b0  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callDurMorningWeekday
+0x1eb9cd6e4  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callDurNightFri
+0x1eb9cd6e8  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callDurNightSat
+0x1eb9cd6ec  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callDurNightSun
+0x1eb9cd6e0  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callDurNightWeekday
+0x1eb9cd6c4  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callDurNoonFri
+0x1eb9cd6c8  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callDurNoonSat
+0x1eb9cd6cc  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callDurNoonSun
+0x1eb9cd6c0  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callDurNoonWeekday
+0x1eb9cd694  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callEveFri
+0x1eb9cd698  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callEveSat
+0x1eb9cd69c  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callEveSun
+0x1eb9cd690  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callEveWeekday
+0x1eb9cd714  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callLongEveFri
+0x1eb9cd718  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callLongEveSat
+0x1eb9cd71c  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callLongEveSun
+0x1eb9cd710  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callLongEveWeekday
+0x1eb9cd6f4  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callLongMorningFri
+0x1eb9cd6f8  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callLongMorningSat
+0x1eb9cd6fc  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callLongMorningSun
+0x1eb9cd6f0  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callLongMorningWeekday
+0x1eb9cd724  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callLongNightFri
+0x1eb9cd728  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callLongNightSat
+0x1eb9cd72c  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callLongNightSun
+0x1eb9cd720  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callLongNightWeekday
+0x1eb9cd704  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callLongNoonFri
+0x1eb9cd708  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callLongNoonSat
+0x1eb9cd70c  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callLongNoonSun
+0x1eb9cd700  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callLongNoonWeekday
+0x1eb9cd660  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callLongRatio
+0x1eb9cd66c  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callMaxDur
+0x1eb9cd674  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callMorningFri
+0x1eb9cd678  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callMorningSat
+0x1eb9cd67c  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callMorningSun
+0x1eb9cd670  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callMorningWeekday
+0x1eb9cd6a4  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callNightFri
+0x1eb9cd6a8  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callNightSat
+0x1eb9cd6ac  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callNightSun
+0x1eb9cd6a0  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callNightWeekday
+0x1eb9cd684  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callNoonFri
+0x1eb9cd688  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callNoonSat
+0x1eb9cd68c  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callNoonSun
+0x1eb9cd680  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callNoonWeekday
+0x1eb9cd664  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callOutgoingRatio
+0x1eb9cd734  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callSixWeeks
+0x1eb9cd64c  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callTotal
+0x1eb9cd658  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callTotalDur
+0x1eb9cd738  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callTwelveWeeks
+0x1eb9cd730  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._callTwoWeeks
+0x1eb9cd74c  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._contactEmergency
+0x1eb9cd750  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._contactEmergencyFamily
+0x1eb9cd744  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._contactFamilyName
+0x1eb9cd73c  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._contactFamilyRelation
+0x1eb9cd654  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._contactFavorite
+0x1eb9cd75c  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._contactInAirDrop
+0x1eb9cd760  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._contactInAirDropAtHome
+0x1eb9cd76c  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._contactInFMFFavorite
+0x1eb9cd764  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._contactInFMFFollowingMe
+0x1eb9cd768  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._contactInFMFSharingWithMe
+0x1eb9cd754  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._contactInHome
+0x1eb9cd758  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._contactInPhotos
+0x1eb9cd748  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._contactParent
+0x1eb9cd740  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._contactRelation
+0x1eb9cd5b0  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgDayRatio
+0x1eb9cd5dc  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgEveFri
+0x1eb9cd5e0  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgEveSat
+0x1eb9cd5e4  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgEveSun
+0x1eb9cd5d8  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgEveWeekday
+0x1eb9cd5bc  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgMorningFri
+0x1eb9cd5c0  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgMorningSat
+0x1eb9cd5c4  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgMorningSun
+0x1eb9cd5b8  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgMorningWeekday
+0x1eb9cd5ec  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgNightFri
+0x1eb9cd5f0  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgNightSat
+0x1eb9cd5f4  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgNightSun
+0x1eb9cd5e8  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgNightWeekday
+0x1eb9cd5cc  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgNoonFri
+0x1eb9cd5d0  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgNoonSat
+0x1eb9cd5d4  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgNoonSun
+0x1eb9cd5c8  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgNoonWeekday
+0x1eb9cd5b4  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgOutgoingRatio
+0x1eb9cd5fc  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgSixWeeks
+0x1eb9cd5ac  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgTotal
+0x1eb9cd5f8  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._firstPartyMsgTwoWeeks
+0x1eb9cd5a8  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._has
+0x1eb9cd604  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgDayRatio
+0x1eb9cd62c  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgEveFri
+0x1eb9cd630  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgEveSat
+0x1eb9cd634  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgEveSun
+0x1eb9cd628  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgEveWeekday
+0x1eb9cd60c  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgMorningFri
+0x1eb9cd610  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgMorningSat
+0x1eb9cd614  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgMorningSun
+0x1eb9cd608  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgMorningWeekday
+0x1eb9cd63c  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgNightFri
+0x1eb9cd640  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgNightSat
+0x1eb9cd644  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgNightSun
+0x1eb9cd638  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgNightWeekday
+0x1eb9cd61c  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgNoonFri
+0x1eb9cd620  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgNoonSat
+0x1eb9cd624  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgNoonSun
+0x1eb9cd618  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgNoonWeekday
+0x1eb9cd600  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgTotal
+0x1eb9cd648  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvent._thirdPartyMsgTwoWeeks
+0x1eb9cd338  __DATA,__objc_ivar  OBJC_IVAR_$_CloudFamilyAnalysisPETContactEvents._contactEvents
+0x1eb9cdea8  __DATA,__objc_ivar  OBJC_IVAR_$_FTCPPETInteraction._duration
+0x1eb9cdea4  __DATA,__objc_ivar  OBJC_IVAR_$_FTCPPETInteraction._isInbound
+0x1eb9cdea0  __DATA,__objc_ivar  OBJC_IVAR_$_FTCPPETInteraction._mechanism
+0x1eb9cde98  __DATA,__objc_ivar  OBJC_IVAR_$_FTCPPETInteraction._participants
+0x1eb9cde9c  __DATA,__objc_ivar  OBJC_IVAR_$_FTCPPETInteraction._timestamp
+0x1eb9ccf24  __DATA,__objc_ivar  OBJC_IVAR_$_FTCPPETInteractionLogEvent._hashedUserId
+0x1eb9ccf20  __DATA,__objc_ivar  OBJC_IVAR_$_FTCPPETInteractionLogEvent._interactions
+0x1eb9ccf28  __DATA,__objc_ivar  OBJC_IVAR_$_FTCPPETInteractionLogEvent._snapshotTimestamp
+0x1eb9ccbec  __DATA,__objc_ivar  OBJC_IVAR_$_FTCPPETParticipant._hashedId
+0x1eb9ccbf0  __DATA,__objc_ivar  OBJC_IVAR_$_FTCPPETParticipant._isContact
+0x1eb9ccecc  __DATA,__objc_ivar  OBJC_IVAR_$_InteractionAnalysisPETInteractionEvent._associatedMemberIDs
+0x1eb9cced8  __DATA,__objc_ivar  OBJC_IVAR_$_InteractionAnalysisPETInteractionEvent._bundleID
+0x1eb9ccedc  __DATA,__objc_ivar  OBJC_IVAR_$_InteractionAnalysisPETInteractionEvent._direction
+0x1eb9cced4  __DATA,__objc_ivar  OBJC_IVAR_$_InteractionAnalysisPETInteractionEvent._eventMechanism
+0x1eb9ccec8  __DATA,__objc_ivar  OBJC_IVAR_$_InteractionAnalysisPETInteractionEvent._interactionID
+0x1eb9cced0  __DATA,__objc_ivar  OBJC_IVAR_$_InteractionAnalysisPETInteractionEvent._timestamp
+0x1eb9ce028  __DATA,__objc_ivar  OBJC_IVAR_$_InteractionAnalysisPETInteractionEvents._deviceID
+0x1eb9ce024  __DATA,__objc_ivar  OBJC_IVAR_$_InteractionAnalysisPETInteractionEvents._interactionEvents
+0x1eb9cdd30  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callAvgDur
+0x1eb9cdd1c  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callBirthday
+0x1eb9cdd9c  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callDurEveFri
+0x1eb9cdda0  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callDurEveSat
+0x1eb9cdda4  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callDurEveSun
+0x1eb9cdd98  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callDurEveWeekday
+0x1eb9cdd7c  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callDurMorningFri
+0x1eb9cdd80  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callDurMorningSat
+0x1eb9cdd84  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callDurMorningSun
+0x1eb9cdd78  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callDurMorningWeekday
+0x1eb9cddac  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callDurNightFri
+0x1eb9cddb0  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callDurNightSat
+0x1eb9cddb4  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callDurNightSun
+0x1eb9cdda8  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callDurNightWeekday
+0x1eb9cdd8c  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callDurNoonFri
+0x1eb9cdd90  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callDurNoonSat
+0x1eb9cdd94  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callDurNoonSun
+0x1eb9cdd88  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callDurNoonWeekday
+0x1eb9cdd5c  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callEveFri
+0x1eb9cdd60  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callEveSat
+0x1eb9cdd64  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callEveSun
+0x1eb9cdd58  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callEveWeekday
+0x1eb9cdddc  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callLongEveFri
+0x1eb9cdde0  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callLongEveSat
+0x1eb9cdde4  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callLongEveSun
+0x1eb9cddd8  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callLongEveWeekday
+0x1eb9cddbc  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callLongMorningFri
+0x1eb9cddc0  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callLongMorningSat
+0x1eb9cddc4  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callLongMorningSun
+0x1eb9cddb8  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callLongMorningWeekday
+0x1eb9cddec  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callLongNightFri
+0x1eb9cddf0  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callLongNightSat
+0x1eb9cddf4  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callLongNightSun
+0x1eb9cdde8  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callLongNightWeekday
+0x1eb9cddcc  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callLongNoonFri
+0x1eb9cddd0  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callLongNoonSat
+0x1eb9cddd4  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callLongNoonSun
+0x1eb9cddc8  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callLongNoonWeekday
+0x1eb9cdd28  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callLongRatio
+0x1eb9cdd34  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callMaxDur
+0x1eb9cdd3c  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callMorningFri
+0x1eb9cdd40  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callMorningSat
+0x1eb9cdd44  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callMorningSun
+0x1eb9cdd38  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callMorningWeekday
+0x1eb9cdd6c  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callNightFri
+0x1eb9cdd70  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callNightSat
+0x1eb9cdd74  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callNightSun
+0x1eb9cdd68  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callNightWeekday
+0x1eb9cdd4c  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callNoonFri
+0x1eb9cdd50  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callNoonSat
+0x1eb9cdd54  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callNoonSun
+0x1eb9cdd48  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callNoonWeekday
+0x1eb9cdd2c  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callOutgoingRatio
+0x1eb9cdd18  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callTotal
+0x1eb9cdd24  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._callTotalDur
+0x1eb9cde08  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._contactEmergency
+0x1eb9cde0c  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._contactEmergencyFamily
+0x1eb9cde00  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._contactFamilyName
+0x1eb9cddf8  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._contactFamilyRelation
+0x1eb9cdd20  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._contactFavorite
+0x1eb9cde18  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._contactInAirDrop
+0x1eb9cde1c  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._contactInAirDropAtHome
+0x1eb9cde28  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._contactInFMFFavorite
+0x1eb9cde20  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._contactInFMFFollowingMe
+0x1eb9cde24  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._contactInFMFSharingWithMe
+0x1eb9cde10  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._contactInHome
+0x1eb9cde14  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._contactInPhotos
+0x1eb9cde04  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._contactParent
+0x1eb9cddfc  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._contactRelation
+0x1eb9cdcb8  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgEveFri
+0x1eb9cdcbc  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgEveSat
+0x1eb9cdcc0  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgEveSun
+0x1eb9cdcb4  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgEveWeekday
+0x1eb9cdc98  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgMorningFri
+0x1eb9cdc9c  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgMorningSat
+0x1eb9cdca0  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgMorningSun
+0x1eb9cdc94  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgMorningWeekday
+0x1eb9cdcc8  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgNightFri
+0x1eb9cdccc  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgNightSat
+0x1eb9cdcd0  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgNightSun
+0x1eb9cdcc4  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgNightWeekday
+0x1eb9cdca8  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgNoonFri
+0x1eb9cdcac  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgNoonSat
+0x1eb9cdcb0  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgNoonSun
+0x1eb9cdca4  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgNoonWeekday
+0x1eb9cdc90  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgOutgoingRatio
+0x1eb9cdc8c  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._firstPartyMsgTotal
+0x1eb9cdc88  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._has
+0x1eb9cde2c  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._mailIntelligenceContactId
+0x1eb9cdcfc  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._thirdPartyMsgEveFri
+0x1eb9cdd00  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._thirdPartyMsgEveSat
+0x1eb9cdd04  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._thirdPartyMsgEveSun
+0x1eb9cdcf8  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._thirdPartyMsgEveWeekday
+0x1eb9cdcdc  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._thirdPartyMsgMorningFri
+0x1eb9cdce0  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._thirdPartyMsgMorningSat
+0x1eb9cdce4  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._thirdPartyMsgMorningSun
+0x1eb9cdcd8  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._thirdPartyMsgMorningWeekday
+0x1eb9cdd0c  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._thirdPartyMsgNightFri
+0x1eb9cdd10  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._thirdPartyMsgNightSat
+0x1eb9cdd14  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._thirdPartyMsgNightSun
+0x1eb9cdd08  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._thirdPartyMsgNightWeekday
+0x1eb9cdcec  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._thirdPartyMsgNoonFri
+0x1eb9cdcf0  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._thirdPartyMsgNoonSat
+0x1eb9cdcf4  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._thirdPartyMsgNoonSun
+0x1eb9cdce8  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._thirdPartyMsgNoonWeekday
+0x1eb9cdcd4  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvent._thirdPartyMsgTotal
+0x1eb9cdb9c  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETContactEvents._contactEvents
+0x1eb9cd2e0  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETMailIntelligenceAnalysisEvent._batch
+0x1eb9cd2d8  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETMailIntelligenceAnalysisEvent._collectionId
+0x1eb9cd2e4  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETMailIntelligenceAnalysisEvent._contactEvents
+0x1eb9cd2e8  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETMailIntelligenceAnalysisEvent._mailIntelligenceUserId
+0x1eb9cd2dc  __DATA,__objc_ivar  OBJC_IVAR_$_MailIntelligencePETMailIntelligenceAnalysisEvent._sessionId
+0x1eb9cdba4  __DATA,__objc_ivar  OBJC_IVAR_$_PersonLinkingLinkedPairEvent._pairs
+0x1eb9cdba0  __DATA,__objc_ivar  OBJC_IVAR_$_PersonLinkingLinkedPairEvent._userID
+0x1eb9cd7e4  __DATA,__objc_ivar  OBJC_IVAR_$_PersonLinkingPerson._emails
+0x1eb9cd7e0  __DATA,__objc_ivar  OBJC_IVAR_$_PersonLinkingPerson._name
+0x1eb9cce30  __DATA,__objc_ivar  OBJC_IVAR_$_PersonLinkingPersonPair._confidence
+0x1eb9cce2c  __DATA,__objc_ivar  OBJC_IVAR_$_PersonLinkingPersonPair._grade
+0x1eb9cce28  __DATA,__objc_ivar  OBJC_IVAR_$_PersonLinkingPersonPair._has
+0x1eb9cce34  __DATA,__objc_ivar  OBJC_IVAR_$_PersonLinkingPersonPair._reason
+0x1eb9cce20  __DATA,__objc_ivar  OBJC_IVAR_$_PersonLinkingPersonPair._sourcePerson
+0x1eb9cce24  __DATA,__objc_ivar  OBJC_IVAR_$_PersonLinkingPersonPair._targetPerson
+0x1eb9cdb74  __DATA,__objc_ivar  OBJC_IVAR_$_VisionSignalGradingEntry._count
+0x1eb9cdb70  __DATA,__objc_ivar  OBJC_IVAR_$_VisionSignalGradingEntry._has
+0x1eb9cdb6c  __DATA,__objc_ivar  OBJC_IVAR_$_VisionSignalGradingEntry._identifier
+0x1eb9cde64  __DATA,__objc_ivar  OBJC_IVAR_$_VisionSignalGradingVisionGrade._cameraRollGrade
+0x1eb9cde74  __DATA,__objc_ivar  OBJC_IVAR_$_VisionSignalGradingVisionGrade._childAge
+0x1eb9cde70  __DATA,__objc_ivar  OBJC_IVAR_$_VisionSignalGradingVisionGrade._childGrade
+0x1eb9cde6c  __DATA,__objc_ivar  OBJC_IVAR_$_VisionSignalGradingVisionGrade._extractedGrade
+0x1eb9cde68  __DATA,__objc_ivar  OBJC_IVAR_$_VisionSignalGradingVisionGrade._extractedSignals
+0x1eb9cde58  __DATA,__objc_ivar  OBJC_IVAR_$_VisionSignalGradingVisionGrade._has
+0x1eb9cde54  __DATA,__objc_ivar  OBJC_IVAR_$_VisionSignalGradingVisionGrade._identifier
+0x1eb9cde5c  __DATA,__objc_ivar  OBJC_IVAR_$_VisionSignalGradingVisionGrade._imageGrade
+0x1eb9cde60  __DATA,__objc_ivar  OBJC_IVAR_$_VisionSignalGradingVisionGrade._numPeople
+0x1eb9cde7c  __DATA,__objc_ivar  OBJC_IVAR_$_VisionSignalGradingVisionGradeEvent._popularityEntries
+0x1eb9cde78  __DATA,__objc_ivar  OBJC_IVAR_$_VisionSignalGradingVisionGradeEvent._visionGrades
+0x1eb9cca64  __DATA,__objc_ivar  OBJC_IVAR_$__CDMutablePerfMetric._eventStatsTimerCounter
+0x1eb9cca5c  __DATA,__objc_ivar  OBJC_IVAR_$__CDMutablePerfMetric._os_activity
+0x1eb9cca60  __DATA,__objc_ivar  OBJC_IVAR_$__CDMutablePerfMetric._os_activity_scope_state
+0x1eb9cccd4  __DATA,__objc_ivar  OBJC_IVAR_$__CDPSimpleModelParameterManagerTuningValue._lambda
+0x1eb9ccce0  __DATA,__objc_ivar  OBJC_IVAR_$__CDPSimpleModelParameterManagerTuningValue._score
+0x1eb9cccdc  __DATA,__objc_ivar  OBJC_IVAR_$__CDPSimpleModelParameterManagerTuningValue._threshold
+0x1eb9cccd8  __DATA,__objc_ivar  OBJC_IVAR_$__CDPSimpleModelParameterManagerTuningValue._w0
+0x1eb9cca30  __DATA,__objc_ivar  OBJC_IVAR_$__CDPerfMetric._count
+0x1eb9cca4c  __DATA,__objc_ivar  OBJC_IVAR_$__CDPerfMetric._errorCount
+0x1eb9cca34  __DATA,__objc_ivar  OBJC_IVAR_$__CDPerfMetric._lastElapsedTime
+0x1eb9cca48  __DATA,__objc_ivar  OBJC_IVAR_$__CDPerfMetric._lastResultCount
+0x1eb9cca44  __DATA,__objc_ivar  OBJC_IVAR_$__CDPerfMetric._lastUpdateTime
+0x1eb9cca2c  __DATA,__objc_ivar  OBJC_IVAR_$__CDPerfMetric._lock
+0x1eb9cca3c  __DATA,__objc_ivar  OBJC_IVAR_$__CDPerfMetric._maximumElapsedTime
+0x1eb9cca38  __DATA,__objc_ivar  OBJC_IVAR_$__CDPerfMetric._minimumElapsedTime
+0x1eb9cca40  __DATA,__objc_ivar  OBJC_IVAR_$__CDPerfMetric._totalElapsedTime
+0x1eb9cdff0  __DATA,__objc_ivar  OBJC_IVAR_$__CDSizeMetric._count
+0x1eb9cdff4  __DATA,__objc_ivar  OBJC_IVAR_$__CDSizeMetric._firstSize
+0x1eb9ce008  __DATA,__objc_ivar  OBJC_IVAR_$__CDSizeMetric._firstUpdate
+0x1eb9cdff8  __DATA,__objc_ivar  OBJC_IVAR_$__CDSizeMetric._lastSize
+0x1eb9ce00c  __DATA,__objc_ivar  OBJC_IVAR_$__CDSizeMetric._lastUpdate
+0x1eb9cdfe8  __DATA,__objc_ivar  OBJC_IVAR_$__CDSizeMetric._lock
+0x1eb9ce000  __DATA,__objc_ivar  OBJC_IVAR_$__CDSizeMetric._maximumSize
+0x1eb9cdffc  __DATA,__objc_ivar  OBJC_IVAR_$__CDSizeMetric._minimumSize
+0x1eb9cdfec  __DATA,__objc_ivar  OBJC_IVAR_$__CDSizeMetric._scale
+0x1eb9ce004  __DATA,__objc_ivar  OBJC_IVAR_$__CDSizeMetric._totalSizes
+0x1eb9cd7f8  __DATA,__objc_ivar  OBJC_IVAR_$__DKActivityThrottler._cache
+0x1eb9cd7f4  __DATA,__objc_ivar  OBJC_IVAR_$__DKActivityThrottler._delayScheduledActions
+0x1eb9cd7f0  __DATA,__objc_ivar  OBJC_IVAR_$__DKActivityThrottler._minimumIntervalScheduledActions
+0x1eb9cd7fc  __DATA,__objc_ivar  OBJC_IVAR_$__DKActivityThrottler._storeQueue
+0x1eb9cdbc8  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRChangeSet._deleteEventIDs
+0x1eb9cdbc4  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRChangeSet._events
+0x1eb9ccffc  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRCompressedChangeSet._compressedData
+0x1eb9ccff8  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRCompressedChangeSet._uncompressedLength
+0x1eb9cd8b4  __DATA,__objc_ivar  OBJC_IVAR_$__DKPREvent._compatibilityVersion
+0x1eb9cd8ac  __DATA,__objc_ivar  OBJC_IVAR_$__DKPREvent._confidence
+0x1eb9cd8a8  __DATA,__objc_ivar  OBJC_IVAR_$__DKPREvent._creationDate
+0x1eb9cd8c0  __DATA,__objc_ivar  OBJC_IVAR_$__DKPREvent._endDate
+0x1eb9cd8a4  __DATA,__objc_ivar  OBJC_IVAR_$__DKPREvent._has
+0x1eb9cd8c8  __DATA,__objc_ivar  OBJC_IVAR_$__DKPREvent._identifier
+0x1eb9cd8a0  __DATA,__objc_ivar  OBJC_IVAR_$__DKPREvent._metadatas
+0x1eb9cd89c  __DATA,__objc_ivar  OBJC_IVAR_$__DKPREvent._source
+0x1eb9cd8bc  __DATA,__objc_ivar  OBJC_IVAR_$__DKPREvent._startDate
+0x1eb9cd8b8  __DATA,__objc_ivar  OBJC_IVAR_$__DKPREvent._stream
+0x1eb9cd8b0  __DATA,__objc_ivar  OBJC_IVAR_$__DKPREvent._timeZone
+0x1eb9cd8c4  __DATA,__objc_ivar  OBJC_IVAR_$__DKPREvent._value
+0x1eb9cd348  __DATA,__objc_ivar  OBJC_IVAR_$__DKPREventData._event
+0x1eb9cd33c  __DATA,__objc_ivar  OBJC_IVAR_$__DKPREventData._has
+0x1eb9cd340  __DATA,__objc_ivar  OBJC_IVAR_$__DKPREventData._uncompressedLength
+0x1eb9cd344  __DATA,__objc_ivar  OBJC_IVAR_$__DKPREventData._version
+0x1eb9cdba8  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRMetadata._entrys
+0x1eb9cde80  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRMetadataEntry._has
+0x1eb9cde84  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRMetadataEntry._index
+0x1eb9cde88  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRMetadataEntry._key
+0x1eb9cde8c  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRMetadataEntry._value
+0x1eb9cda2c  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRSource._bundleID
+0x1eb9cda38  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRSource._deviceID
+0x1eb9cda34  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRSource._groupID
+0x1eb9cda3c  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRSource._has
+0x1eb9cda30  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRSource._itemID
+0x1eb9cda28  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRSource._sourceID
+0x1eb9cda40  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRSource._userID
+0x1eb9ccd54  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRStream._name
+0x1eb9ccd58  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRStream._type
+0x1eb9ccd6c  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRValue._blobValue
+0x1eb9ccd70  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRValue._dateValue
+0x1eb9ccd68  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRValue._doubleValue
+0x1eb9ccd60  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRValue._has
+0x1eb9ccd64  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRValue._integerValue
+0x1eb9ccd5c  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRValue._stringValue
+0x1eb9ccd74  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRValue._type
+0x1eb9cd508  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRValueType._type
+0x1eb9cd50c  __DATA,__objc_ivar  OBJC_IVAR_$__DKPRValueType._typeCode
+0x1ef64f238  __AUTH,__objc_data  _OBJC_METACLASS_$_CDMonitorManager
+0x1ef64e590  __AUTH,__objc_data  _OBJC_METACLASS_$_CloudFamilyAnalysisPETCloudFamilyAnalysisEvent
+0x1ef64e568  __AUTH,__objc_data  _OBJC_METACLASS_$_CloudFamilyAnalysisPETContactEvent
+0x1ef64e540  __AUTH,__objc_data  _OBJC_METACLASS_$_CloudFamilyAnalysisPETContactEvents
+0x1ef64e518  __AUTH,__objc_data  _OBJC_METACLASS_$_FTCPPETInteraction
+0x1ef64e4f0  __AUTH,__objc_data  _OBJC_METACLASS_$_FTCPPETInteractionLogEvent
+0x1ef64e4c8  __AUTH,__objc_data  _OBJC_METACLASS_$_FTCPPETParticipant
+0x1ef64e4a0  __AUTH,__objc_data  _OBJC_METACLASS_$_InteractionAnalysisPETInteractionEvent
+0x1ef64e478  __AUTH,__objc_data  _OBJC_METACLASS_$_InteractionAnalysisPETInteractionEvents
+0x1ef64d050  __AUTH,__objc_data  _OBJC_METACLASS_$_MailIntelligencePETContactEvent
+0x1ef64d028  __AUTH,__objc_data  _OBJC_METACLASS_$_MailIntelligencePETContactEvents
+0x1ef64d000  __AUTH,__objc_data  _OBJC_METACLASS_$_MailIntelligencePETMailIntelligenceAnalysisEvent
+0x1ef64cfd8  __AUTH,__objc_data  _OBJC_METACLASS_$_PersonLinkingLinkedPairEvent
+0x1ef64cfb0  __AUTH,__objc_data  _OBJC_METACLASS_$_PersonLinkingPerson
+0x1ef64cf88  __AUTH,__objc_data  _OBJC_METACLASS_$_PersonLinkingPersonPair
+0x1ef64cf60  __AUTH,__objc_data  _OBJC_METACLASS_$_VisionSignalGradingEntry
+0x1ef64cf38  __AUTH,__objc_data  _OBJC_METACLASS_$_VisionSignalGradingVisionGrade
+0x1ef64cf10  __AUTH,__objc_data  _OBJC_METACLASS_$_VisionSignalGradingVisionGradeEvent
+0x1ee34f7e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDAdvisedInteraction
+0x1ee34f970  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDAttachment
+0x1ee34ec28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDAttachmentRecord
+0x1ef64f210  __AUTH,__objc_data  _OBJC_METACLASS_$__CDAutoSuCache
+0x1ef64f1e8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDAutoSuConfig
+0x1ef64cee8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDCacheCandidate
+0x1ef64fb70  __AUTH,__objc_data  _OBJC_METACLASS_$__CDCachedPeopleSuggestion
+0x1ef64e450  __AUTH,__objc_data  _OBJC_METACLASS_$__CDCandidateInteractionTaxonomy
+0x1ef64cec0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDCloudFamilyDataCollectionSession
+0x1ef64e428  __AUTH,__objc_data  _OBJC_METACLASS_$__CDCloudFamilyDataCollectionTask
+0x1ef64e400  __AUTH,__objc_data  _OBJC_METACLASS_$__CDComplications
+0x1ef64e3d8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDConstants
+0x1ee34fb00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDContact
+0x1ef64e3b0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDContactChangeHistoryEventVisitor
+0x1ef64f5d0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDContactFavoritesUtilities
+0x1ee34ec00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDContactRecord
+0x1ef64f5a8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDContactResolver
+0x1ee34ebd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDContactStatistics
+0x1ef64ce98  __AUTH,__objc_data  _OBJC_METACLASS_$__CDDataCollection
+0x1ef64ce70  __AUTH,__objc_data  _OBJC_METACLASS_$__CDDataCollectionAnonymizer
+0x1ef64ce48  __AUTH,__objc_data  _OBJC_METACLASS_$__CDDataCollectionSession
+0x1ef64ce20  __AUTH,__objc_data  _OBJC_METACLASS_$__CDDataCollectionUtilities
+0x1ef64f1c0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDDateRange
+0x1ee34f6f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDDecommissionUtils
+0x1ee34fa88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDDeviceInfo
+0x1ee34f358  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDEntitlementsUtilities
+0x1ee3501b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDEntityMetadataKey
+0x1ef650f20  __AUTH,__objc_data  _OBJC_METACLASS_$__CDErrorUtilities
+0x1ef64c358  __AUTH,__objc_data  _OBJC_METACLASS_$__CDEventDictsForContactsState
+0x1ef64cdf8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDEventHandlerForActivityLevel
+0x1ef64cdd0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDEventHandlerForAppInFocus
+0x1ef64cda8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDEventHandlerForDefaultPairedNearby
+0x1ef64cd80  __AUTH,__objc_data  _OBJC_METACLASS_$__CDEventHandlerForWatchNearby
+0x1ef64fa80  __AUTH,__objc_data  _OBJC_METACLASS_$__CDEventIndexerBookmark
+0x1ef64fa58  __AUTH,__objc_data  _OBJC_METACLASS_$__CDEventIndexerContext
+0x1ee350be0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDEventStream
+0x1ee350ca8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDEventStreamProperties
+0x1ee350c80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDEventStreams
+0x1ef64cd58  __AUTH,__objc_data  _OBJC_METACLASS_$__CDEventStreamsRegister
+0x1ef64e388  __AUTH,__objc_data  _OBJC_METACLASS_$__CDFTCPInteractionDataCollectionSession
+0x1ef64e360  __AUTH,__objc_data  _OBJC_METACLASS_$__CDFTCPInteractionDataCollectionTask
+0x1ef64cd30  __AUTH,__objc_data  _OBJC_METACLASS_$__CDFileUtility
+0x1ef6509d0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDGenericInteractionRanker
+0x1ef650cc8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDHashUtilities
+0x1ef64e338  __AUTH,__objc_data  _OBJC_METACLASS_$__CDHomeManagerUtilities
+0x1ef64cd08  __AUTH,__objc_data  _OBJC_METACLASS_$__CDInBedDetection
+0x1ef64cce0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDInBedDetector
+0x1ef650110  __AUTH,__objc_data  _OBJC_METACLASS_$__CDIntentSpotlightIndex
+0x1ee34fb78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDInteraction
+0x1ef6510b0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDInteractionAdviceEngine
+0x1ef650b88  __AUTH,__objc_data  _OBJC_METACLASS_$__CDInteractionAdvisor
+0x1ee34f830  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDInteractionAdvisorSettings
+0x1ef64ccb8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDInteractionAdvisorSimple
+0x1ef6509a8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDInteractionAdvisorUtils
+0x1ef650980  __AUTH,__objc_data  _OBJC_METACLASS_$__CDInteractionCache
+0x1ef64e310  __AUTH,__objc_data  _OBJC_METACLASS_$__CDInteractionDataCollectionSession
+0x1ef64e2e8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDInteractionDataCollectionTask
+0x1ef64cc90  __AUTH,__objc_data  _OBJC_METACLASS_$__CDInteractionFeedbackLogger
+0x1ef64cc68  __AUTH,__objc_data  _OBJC_METACLASS_$__CDInteractionHarvester
+0x1ef650ca0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDInteractionPolicies
+0x1ef650c78  __AUTH,__objc_data  _OBJC_METACLASS_$__CDInteractionPolicy
+0x1ef650958  __AUTH,__objc_data  _OBJC_METACLASS_$__CDInteractionRank
+0x1ee34ebb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDInteractionRecord
+0x1ef64f580  __AUTH,__objc_data  _OBJC_METACLASS_$__CDInteractionRecorder
+0x1ee34f538  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDInteractionStore
+0x1ef6500e8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDInteractionStoreNotificationReceiver
+0x1ee34f330  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDInteractionStoreNotifier
+0x1ee34eb88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDKeywordRecord
+0x1ef64cc40  __AUTH,__objc_data  _OBJC_METACLASS_$__CDLastInFirstOutLock
+0x1ee350ed8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDLogging
+0x1ef64cc18  __AUTH,__objc_data  _OBJC_METACLASS_$__CDMDSearchQueryDelegate
+0x1ef64cbf0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDMailIntelligencePETDataCollectionUtilities
+0x1ee34ee30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDMemoryUsageInterval
+0x1ee34eb60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDMemoryUsageIntervalTracker
+0x1ef64f990  __AUTH,__objc_data  _OBJC_METACLASS_$__CDMultiLevelRateLimiter
+0x1ee34ea98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDMutablePerfMetric
+0x1ef64e2c0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDMutableSizeMetric
+0x1ef6500c0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDObservationCenter
+0x1ef64cbc8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPInteractionStoreDataHarvester
+0x1ef64cba0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPModelTuning
+0x1ef64cb78  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPModelTuningState
+0x1ef64cb50  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPPredictionResult
+0x1ef64cb28  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPSerializedDataHarvester
+0x1ef64cb00  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPSimpleDataPoint
+0x1ef64cad8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPSimpleModel
+0x1ef64cab0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPSimpleModelParameterManager
+0x1ef64ca88  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPSimpleModelParameterManagerAccountState
+0x1ef64ca60  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPSimpleModelParameterManagerTuningValue
+0x1ee350e38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDPaths
+0x1ef650098  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPeopleSuggester
+0x1ef650750  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPeopleSuggesterContext
+0x1ef650070  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPeopleSuggesterSettings
+0x1ee34ea70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDPerfMetric
+0x1ef650048  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPerfMetricFamily
+0x1ef650930  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPeriodicScheduler
+0x1ef650908  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPeriodicSchedulerJob
+0x1ef64c448  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPersistedCoalescingTimer
+0x1ef64e298  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPersonLinkingDataCollectionTask
+0x1ee350190  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDPortraitMetadataKey
+0x1ef651088  __AUTH,__objc_data  _OBJC_METACLASS_$__CDPortraitStreams
+0x1ee34f9e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDPrivacyPolicy
+0x1ef64ca38  __AUTH,__objc_data  _OBJC_METACLASS_$__CDQueryInteractionAdvisor
+0x1ee34f790  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDRateAndTotalLimiter
+0x1ee34fa60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDRateLimiter
+0x1ef64c330  __AUTH,__objc_data  _OBJC_METACLASS_$__CDReceiverNotifier
+0x1ef64f558  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSerializableKeyedData
+0x1ef64e270  __AUTH,__objc_data  _OBJC_METACLASS_$__CDServerRequest
+0x1ef64f878  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSharedMemoryKeyValueStore
+0x1ee34f9c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDSiriLearningSettings
+0x1ef64e248  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSizeMetric
+0x1ef64e220  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSizeMetricFamily
+0x1ef64f198  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSleepForAutoSu
+0x1ef64f170  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSleepPredictor
+0x1ef64f148  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSleepPredictorMath
+0x1ef64ca10  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSocialInteractionAdvisor
+0x1ef64e1f8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSpotlightCachedContact
+0x1ef64c420  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSpotlightCoalescedDeletionManager
+0x1ef64c3f8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSpotlightCoalescedDeletionOperation
+0x1ef64e1d0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSpotlightContactResolver
+0x1ef64c3d0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSpotlightDeletionOperation
+0x1ef650020  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSpotlightEventIndexer
+0x1ef64fff8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSpotlightEventIndexerDataSource
+0x1ef64ffd0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSpotlightIntentIndexerDataSource
+0x1ef64ffa8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSpotlightItemRecorder
+0x1ef64f120  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSpotlightItemRecorderOperation
+0x1ef64ff80  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSpotlightItemUtils
+0x1ef64c9e8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSpotlightQuerier
+0x1ef6508e0  __AUTH,__objc_data  _OBJC_METACLASS_$__CDStringTokenizer
+0x1ef64f850  __AUTH,__objc_data  _OBJC_METACLASS_$__CDSuggestedPerson
+0x1ef6508b8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDTemporalInteractionAdvisor
+0x1ef64e1a8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDTopicMetadataKey
+0x1ef64c510  __AUTH,__objc_data  _OBJC_METACLASS_$__CDUncachedSentinel
+0x1ef64e180  __AUTH,__objc_data  _OBJC_METACLASS_$__CDUserActivityCache
+0x1ee34eb38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CDVersionRecord
+0x1ef64e158  __AUTH,__objc_data  _OBJC_METACLASS_$__CDVisionSignalGradingDataCollectionTask
+0x1ef650728  __AUTH,__objc_data  _OBJC_METACLASS_$__CDXPCCodecs
+0x1ef64f0f8  __AUTH,__objc_data  _OBJC_METACLASS_$__CDXPCEventPublisher
+0x1ef64e130  __AUTH,__objc_data  _OBJC_METACLASS_$__CDXPCEventSubscriber
+0x1ef650700  __AUTH,__objc_data  _OBJC_METACLASS_$__DKActivityThrottler
+0x1ef64f828  __AUTH,__objc_data  _OBJC_METACLASS_$__DKAirPlayPredictionCategory
+0x1ee350168  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKAirPlayPredictionMetadataKey
+0x1ee350870  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKAlarmMetadataKey
+0x1ef6506d8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKAlarmStateCategory
+0x1ef64f800  __AUTH,__objc_data  _OBJC_METACLASS_$__DKAnyDoubleQuantity
+0x1ee34f2e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKAnyIntegerCategory
+0x1ee350aa0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKAnyStringIdentifier
+0x1ee34f510  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKAppActivityStreamTombstoneRequirement
+0x1ee350140  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKAppClipUsageMetadataKey
+0x1ee350118  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKAppInstallMetadataKey
+0x1ee34f4e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKAppIntentsStreamTombstoneRequirement
+0x1ee3500f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKAppMediaUsageMetadataKey
+0x1ee34f4c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKAppUsageTombstoneRequirement
+0x1ee3500c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKApplicationActivityMetadataKey
+0x1ee350a00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKApplicationMetadataKey
+0x1ee3500a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKAudioMetadataKey
+0x1ef6506b0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKAudioRouteCategory
+0x1ef64c9c0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKBacklightMetadataKey
+0x1ee34e9d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKBatteryPercentageQuantity
+0x1ee350078  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKBatterySaverMetadataKey
+0x1ee350050  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKBehavioralRuleFeaturesMetadataKey
+0x1ef64f0d0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKBiomePredicateScanner
+0x1ef64f0a8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKBiomePredicateValueScanner
+0x1ee34e9a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKBiomeQuery
+0x1ee34e980  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKBiomeStreamCache
+0x1ee350028  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKBluetoothMetadataKey
+0x1ee34f740  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKBoolCategory
+0x1ee350000  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKBulletinBoardMetadataKey
+0x1ee34fba0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKBundleIdentifier
+0x1ef64e108  __AUTH,__objc_data  _OBJC_METACLASS_$__DKCKError
+0x1ee34ffd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKCalendarMetadataKey
+0x1ee34ffb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKCallMetadataKey
+0x1ee351068  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKCategory
+0x1ee34ee08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKCategoryCache
+0x1ee34f038  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKCategoryMO
+0x1ee351040  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKCategoryType
+0x1ef64e0e0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKChangeSet
+0x1ee34f010  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKChangeSetMO
+0x1ef64ff58  __AUTH,__objc_data  _OBJC_METACLASS_$__DKCloudUtilities
+0x1ef64e0b8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKCompatibility
+0x1ef64e090  __AUTH,__objc_data  _OBJC_METACLASS_$__DKContactsPrivacyMaintainer
+0x1ee34f8d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKCoreDataStorage
+0x1ef64c998  __AUTH,__objc_data  _OBJC_METACLASS_$__DKCustomCategory
+0x1ef64fa30  __AUTH,__objc_data  _OBJC_METACLASS_$__DKCustomIdentifier
+0x1ee34efe8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKCustomMetadataMO
+0x1ef64c970  __AUTH,__objc_data  _OBJC_METACLASS_$__DKCustomQuantity
+0x1ee34f8a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKDataProtectionMonitor
+0x1ee34f880  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKDataProtectionStateMonitor
+0x1ef64c948  __AUTH,__objc_data  _OBJC_METACLASS_$__DKDebugMetadataKey
+0x1ef64c920  __AUTH,__objc_data  _OBJC_METACLASS_$__DKDeviceActivityLevelFeedbackMetadataKey
+0x1ef64e068  __AUTH,__objc_data  _OBJC_METACLASS_$__DKDeviceActivityStandingQuery
+0x1ee34ff88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKDeviceBatteryPercentageMetadataKey
+0x1ee34ff60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKDeviceIdMetadataKey
+0x1ee34ff38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKDeviceIsPluggedInMetadataKey
+0x1ee34ff10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKDeviceStandbyTimerMetadataKey
+0x1ee3509b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKDigitalHealthMetadataKey
+0x1ee350a50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKDiscoverabilitySignalsMetadataKey
+0x1ee34fee8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKDiscoverabilityUsageMetadataKey
+0x1ef64fb48  __AUTH,__objc_data  _OBJC_METACLASS_$__DKDiskSubsystemIdentifier
+0x1ee34f498  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKEligibleForPredictionTombstoneRequirement
+0x1ef651060  __AUTH,__objc_data  _OBJC_METACLASS_$__DKEntityCategory
+0x1ee351220  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKEvent
+0x1ef650c50  __AUTH,__objc_data  _OBJC_METACLASS_$__DKEventAdapter
+0x1ef64e040  __AUTH,__objc_data  _OBJC_METACLASS_$__DKEventCKConverter
+0x1ef64e018  __AUTH,__objc_data  _OBJC_METACLASS_$__DKEventData
+0x1ee34efc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKEventMO
+0x1ee351310  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKEventQuery
+0x1ef64c8f8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKEventResultStatsCounter
+0x1ef650c28  __AUTH,__objc_data  _OBJC_METACLASS_$__DKEventStatsCollection
+0x1ef64dff0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKEventStatsCounter
+0x1ef650c00  __AUTH,__objc_data  _OBJC_METACLASS_$__DKEventStatsCounterInternal
+0x1ef64fb20  __AUTH,__objc_data  _OBJC_METACLASS_$__DKEventStatsTimerCounter
+0x1ef64dfc8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKEventStatsUtilities
+0x1ee3510e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKEventStream
+0x1ee350b90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKEventStreamCache
+0x1ef64ff30  __AUTH,__objc_data  _OBJC_METACLASS_$__DKEventTypeResultStatsCounter
+0x1ef650b60  __AUTH,__objc_data  _OBJC_METACLASS_$__DKEventTypeStatsCounter
+0x1ef64dfa0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKEventTypeStatsTimerCounter
+0x1ee34fec0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKFamilyPredictionMetadataKey
+0x1ef64f530  __AUTH,__objc_data  _OBJC_METACLASS_$__DKFetchDatabaseChangesOperation
+0x1ef64f508  __AUTH,__objc_data  _OBJC_METACLASS_$__DKFetchRecordZoneChangesOperation
+0x1ef64f4e0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKFetchRecordZonesOperation
+0x1ee350eb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKHistogram
+0x1ee34ef98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKHistogramMO
+0x1ee350e88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKHistogramQuery
+0x1ee34ef70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKHistogramValueMO
+0x1ef651038  __AUTH,__objc_data  _OBJC_METACLASS_$__DKHomeKitAccessoryControlIdentifier
+0x1ef64f968  __AUTH,__objc_data  _OBJC_METACLASS_$__DKHomeKitHomeAppViewIdentifier
+0x1ef651010  __AUTH,__objc_data  _OBJC_METACLASS_$__DKHomeKitSceneIdentifier
+0x1ee351158  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKIdentifier
+0x1ee34ef48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKIdentifierMO
+0x1ee3511f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKIdentifierType
+0x1ee350960  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKIntentMetadataKey
+0x1ee34f2b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKKeyValueMO
+0x1ef64ff08  __AUTH,__objc_data  _OBJC_METACLASS_$__DKKeyValueStore
+0x1ee34f6c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKKnowledgeStorage
+0x1ee34f470  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKKnowledgeStorageLogging
+0x1ef64fee0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKKnowledgeStorageSimpleKeyValueStore
+0x1ee350d20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKKnowledgeStore
+0x1ef64c8d0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKKnowledgeSyncStorageAssertion
+0x1ef64c8a8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKLocalChanges
+0x1ee34fe98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKLocationApplicationActivityMetadataKey
+0x1ef64c880  __AUTH,__objc_data  _OBJC_METACLASS_$__DKLocationIdentifier
+0x1ee34fe70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKLocationMetadataKey
+0x1ee350848  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKMapsShareEtaFeedbackMetadataKey
+0x1ef64c858  __AUTH,__objc_data  _OBJC_METACLASS_$__DKMetadata
+0x1ee34fe48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKMetadataHomeAppView
+0x1ee34fe20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKMetadataHomeKitAccessoryControl
+0x1ee34fdf8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKMetadataHomeKitScene
+0x1ee34fdd0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKMetadataPersistenceLookupTable
+0x1ee350820  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKMicroLocationMetadataKey
+0x1ef64f4b8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKModifyRecordZonesOperation
+0x1ef64f080  __AUTH,__objc_data  _OBJC_METACLASS_$__DKModifyRecordsOperation
+0x1ef650688  __AUTH,__objc_data  _OBJC_METACLASS_$__DKMotionCategory
+0x1ef64c830  __AUTH,__objc_data  _OBJC_METACLASS_$__DKMotionMetadataKey
+0x1ee34eb10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKNotificationEventIdentifier
+0x1ee34fda8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKNotificationUsageMetadataKey
+0x1ee34fd80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKNowPlayingMetadataKey
+0x1ee351270  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKObject
+0x1ef651218  __AUTH,__objc_data  _OBJC_METACLASS_$__DKObjectFromMOCache
+0x1ee34ef20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKObjectMO
+0x1ee34ede0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKObjectMOConverter
+0x1ee351130  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKObjectType
+0x1ef64feb8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKObserverEntry
+0x1ef64c808  __AUTH,__objc_data  _OBJC_METACLASS_$__DKOrientationMetadataKey
+0x1ef64c7e0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPRChangeSet
+0x1ef64c7b8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPRCompressedChangeSet
+0x1ef650ef8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPREvent
+0x1ef64df78  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPREventData
+0x1ef64c790  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPRMetadata
+0x1ef650e30  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPRMetadataEntry
+0x1ef650bd8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPRSource
+0x1ef650ed0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPRStream
+0x1ef650ea8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPRValue
+0x1ef650e80  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPRValueType
+0x1ee34fd58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKPeopleSuggesterOutputForSiriNLMetadataKey
+0x1ef64df50  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPerformSyncDownOperation
+0x1ef64df28  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPerformSyncDownPeerAdditionsOperation
+0x1ef64df00  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPerformSyncDownPeerDeletionsOperation
+0x1ef64ded8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPerformSyncDownPeerOperation
+0x1ef64c768  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPerformSyncUpChangeOperation
+0x1ef64deb0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPerformSyncUpHistoryAdditionsOperation
+0x1ef64de88  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPerformSyncUpHistoryDeletionsOperation
+0x1ef64de60  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPerformSyncUpHistoryOperation
+0x1ee34fd30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKPeriodMetadataKey
+0x1ef64f058  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPhotosEventStreams
+0x1ee34fd08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKPhotosMetadataKeys
+0x1ef64de38  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPlatform
+0x1ef650890  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPredicateValidator
+0x1ee350e60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKPredictionQuery
+0x1ef64f030  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPredictionQueryFeedback
+0x1ee3512e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKPredictionTimeline
+0x1ef64f7d8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPredictor
+0x1ef64c740  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPreferences
+0x1ef64f008  __AUTH,__objc_data  _OBJC_METACLASS_$__DKPrivacyMaintainer
+0x1ee350d70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKPrivacyPolicyEnforcer
+0x1ef64c718  __AUTH,__objc_data  _OBJC_METACLASS_$__DKProtobufMetadata
+0x1ee350fc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKQuantity
+0x1ee34eef8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKQuantityMO
+0x1ee350fa0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKQuantityType
+0x1ee351338  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKQuery
+0x1ef64f490  __AUTH,__objc_data  _OBJC_METACLASS_$__DKQueryOperation
+0x1ee350d48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKRateLimitPolicyEnforcer
+0x1ee34fce0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKRelevantShortcutMetadataKey
+0x1ef64c6f0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKResourceIdentifier
+0x1ef64c6c8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKRoutineLocationCategory
+0x1ee34fcb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKSafariHistoryMetadataKey
+0x1ee34fc90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKSearchFeedbackMetadataKey
+0x1ee3507f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKShareSheetFeedbackMetadataKey
+0x1ee34fc68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKShareSheetSuggestLessFeedbackMetadataKey
+0x1ee3507d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKSiriIntentEventMetadataKey
+0x1ee34fc40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKSiriServiceMetadataKey
+0x1ee350af0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKSource
+0x1ee34eed0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKSourceMO
+0x1ef6511f0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSourceMOConverter
+0x1ef64de10  __AUTH,__objc_data  _OBJC_METACLASS_$__DKStandingQueryExecutor
+0x1ef64c6a0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKStarkMetadataKey
+0x1ee34eea8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKStructuredMetadataMO
+0x1ef64fe90  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSync2Coordinator
+0x1ef64fe68  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSync2Policy
+0x1ef64dde8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSync2State
+0x1ef64c678  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSync3FeaturePolicy
+0x1ef64c650  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSync3Policy
+0x1ef64c628  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSync3TransportPolicy
+0x1ef64ddc0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncBlockCompositeOperation
+0x1ef64dd98  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncBlockOperation
+0x1ef64c600  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncChanges
+0x1ef64fe40  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncCloudKitKnowledgeStorage
+0x1ef64dd70  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncCompositeOperation
+0x1ef64fe18  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncContext
+0x1ef64fdf0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncContextObject
+0x1ef64c5d8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncContextObjectFactory
+0x1ef64c5b0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncCoordinatorLogging
+0x1ef64dd48  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncDeletedEventIDs
+0x1ef64fdc8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncDownCloudKitKnowledgeStorage
+0x1ef64dd20  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncErrors
+0x1ef64dcf8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncHistory
+0x1ef64fda0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncLocalKnowledgeStorage
+0x1ef64dcd0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncMetadataStorage
+0x1ef64dca8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncOperation
+0x1ef64dc80  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncPeer
+0x1ef64dc58  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncPeerInfo
+0x1ee34ee80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKSyncPeerMO
+0x1ef64fd78  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncPeerObserver
+0x1ef64fd50  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncPeerStatusTracker
+0x1ef64c588  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncPolicy
+0x1ef64dc30  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncPowerlog
+0x1ef64fd28  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncRapportCommonStorage
+0x1ef64fd00  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncRapportContextStorage
+0x1ef64fcd8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncRapportKnowledgeStorage
+0x1ef64fcb0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncRapportStorage
+0x1ef64fc88  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncSerializer
+0x1ee34f448  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKSyncStreamsTombstoneRequirement
+0x1ef64fc60  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncToggle
+0x1ef64dc08  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncType
+0x1ef64fc38  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncUpCloudKitKnowledgeStorage
+0x1ef64fc10  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncUrgencyTracker
+0x1ef64dbe0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncWindow
+0x1ef64dbb8  __AUTH,__objc_data  _OBJC_METACLASS_$__DKSyncedFeatures
+0x1ee350b40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKSystemEventStreams
+0x1ef650660  __AUTH,__objc_data  _OBJC_METACLASS_$__DKThrottledActivity
+0x1ee34fc18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKTimerMetadataKey
+0x1ef64f7b0  __AUTH,__objc_data  _OBJC_METACLASS_$__DKTitleIdentifier
+0x1ee34fbf0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKTombstoneMetadataKey
+0x1ef64db90  __AUTH,__objc_data  _OBJC_METACLASS_$__DKTombstoneNotifier
+0x1ee34f420  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKTombstonePolicy
+0x1ee34f3f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKTombstoneRequirement
+0x1ee34e958  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKTopicIdentifier
+0x1ef64c560  __AUTH,__objc_data  _OBJC_METACLASS_$__DKTristateCategory
+0x1ef64f788  __AUTH,__objc_data  _OBJC_METACLASS_$__DKUIOrientationCategory
+0x1ee34f290  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKUUIDIdentifier
+0x1ee350cd0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__DKXPCKnowledgeStore
+0x1e0bb0268  __DATA_CONST,__const  _PSStoreChangedNotification
+0x1960358d0  __TEXT,__text  _PersonLinkingLinkedPairEventReadFrom
+0x195fa25ac  __TEXT,__text  _PersonLinkingPersonPairReadFrom
+0x196018a10  __TEXT,__text  _PersonLinkingPersonReadFrom
+0x196033d08  __TEXT,__text  _VisionSignalGradingEntryReadFrom
+0x19605a424  __TEXT,__text  _VisionSignalGradingVisionGradeEventReadFrom
+0x1960589a0  __TEXT,__text  _VisionSignalGradingVisionGradeReadFrom
+0x1e0bb0260  __DATA_CONST,__const  __CDAppActivitiesKey
+0x1e0bb0258  __DATA_CONST,__const  __CDAppIntentNotification
+0x1e0bb0250  __DATA_CONST,__const  __CDAppIntentsBundleIDKey
+0x1e0bb0248  __DATA_CONST,__const  __CDAppIntentsDeletedGroupIdentifiersKey
+0x1e0bb0240  __DATA_CONST,__const  __CDAppIntentsDeletedIdentifiersKey
+0x1e0bb0238  __DATA_CONST,__const  __CDAppIntentsKey
+0x1e0bb0230  __DATA_CONST,__const  __CDAppRelevantShortcutsBundleIDKey
+0x1e0bb0228  __DATA_CONST,__const  __CDAppRelevantShortcutsKey
+0x195f40ea4  __TEXT,__text  __CDCurrentOrXPCProcessName
+0x195f40f00  __TEXT,__text  __CDCurrentProcessName
+0x195f9f9a8  __TEXT,__text  __CDDomainAvailabilityDescription
+0x195f4834c  __TEXT,__text  __CDFormattedDate
+0x1e0bb0220  __DATA_CONST,__const  __CDInteractionMachServiceName
+0x195f41ec0  __TEXT,__text  __CDInteractionNSXPCInterface
+0x1e0bb0218  __DATA_CONST,__const  __CDInteractionStoreDeleteAllInteractionsNotification
+0x1e0bb0210  __DATA_CONST,__const  __CDInteractionStoreDeletedInteractionsNotification
+0x1e0bb0208  __DATA_CONST,__const  __CDInteractionStoreInteractionDeletedXPCEventStreamName
+0x1e0bb0200  __DATA_CONST,__const  __CDInteractionStoreInteractionRecordedXPCEventStreamName
+0x1e0bb01f8  __DATA_CONST,__const  __CDInteractionStoreRecordedInteractionsNotification
+0x1e0bb01f0  __DATA_CONST,__const  __CDInteractionStoreRecordedShareSheetInteractionDistributedNotification
+0x1960e2068  __TEXT,__const  __CDInteractionUserConnectionOptions
+0x1e0bb01e8  __DATA_CONST,__const  __CDInteractionUserMachServiceName
+0x1e0bb01e0  __DATA_CONST,__const  __CDInteractionsKey
+0x1960234e8  __TEXT,__text  __CDLoggingUUIDAsInteger
+0x195f78360  __TEXT,__text  __CDNormalizedStringFromQueryString
+0x195f7ec74  __TEXT,__text  __CDPerfMetricInitialize
+0x1eb9cfaa0  __DATA,__data  __CDPeriodicSchedulerDefaultQueueName
+0x19602319c  __TEXT,__text  __CDPrettyPrintCollection
+0x195f437bc  __TEXT,__text  __CDProcessNameForXPCConnection
+0x1e0bb01d8  __DATA_CONST,__const  __CDReceiverXPCEventStreamName
+0x1960701cc  __TEXT,__text  __CDSizeMetricInitialize
+0x1e0bb01d0  __DATA_CONST,__const  __CDSocialInteractionAdvisorMacMailBundleId
+0x1e0bb01c8  __DATA_CONST,__const  __CDSocialInteractionAdvisorMobileMailBundleId
+0x1e0bb01c0  __DATA_CONST,__const  __CDSpotlightDeletionTypeDomainIdentifiers
+0x1e0bb01b8  __DATA_CONST,__const  __CDSpotlightDeletionTypeIdentifiers
+0x195f71360  __TEXT,__text  __CDStartDateCompare
+0x1960428a8  __TEXT,__text  __CDStringByConvertingPhoneNumberStringToASCII
+0x195f69acc  __TEXT,__text  __CDTargetBundleIdForBundleId
+0x1e0bb01b0  __DATA_CONST,__const  __CKEventRecordCreationDateKey
+0x1e0bb01a8  __DATA_CONST,__const  __CKEventRecordEncryptedEventKey
+0x1e0bb01a0  __DATA_CONST,__const  __CKEventRecordStreamNameKey
+0x1e0bb0198  __DATA_CONST,__const  __CKEventRecordType
+0x1eb9d0820  __DATA,__common  __DKAlarmStateCategoryValue
+0x1eb9d0828  __DATA,__common  __DKAudioRouteCategoryValue
+0x1eb9cfa98  __DATA,__data  __DKBiomeEventQueryKey
+0x1e0bb0190  __DATA_CONST,__const  __DKChangeSetTypeAddition
+0x1e0bb0188  __DATA_CONST,__const  __DKChangeSetTypeDeletion
+0x1e0bb0180  __DATA_CONST,__const  __DKCloudDeviceCountChangedNotification
+0x1e0bb0178  __DATA_CONST,__const  __DKCloudSyncAvailablityChangedNotification
+0x1e0bb0170  __DATA_CONST,__const  __DKCloudTransportAvailablityChangedNotification
+0x195f405ac  __TEXT,__text  __DKDaemonInterface
+0x1e0bb0168  __DATA_CONST,__const  __DKErrorDomain
+0x1e0bb0160  __DATA_CONST,__const  __DKEventPropertyNameObjectStringValue
+0x1960e2278  __TEXT,__const  __DKEventQueryAllDevices
+0x1960e2270  __TEXT,__const  __DKEventQueryOnlyLocalDevice
+0x1960e2280  __TEXT,__const  __DKEventQueryOnlyRemoteDevices
+0x1eb9d0818  __DATA,__common  __DKEventQueryPerformanceTesting
+0x1e0bb0158  __DATA_CONST,__const  __DKFetchDatabaseChangesServerChangeTokenKey
+0x1e0bb0150  __DATA_CONST,__const  __DKHomeKitSourceEventTrigger
+0x1e0bb0148  __DATA_CONST,__const  __DKHomeKitSourceFirstParty
+0x1e0bb0140  __DATA_CONST,__const  __DKHomeKitSourceIntentSuggestion
+0x1e0bb0138  __DATA_CONST,__const  __DKHomeKitSourceInternalRequested
+0x1e0bb0130  __DATA_CONST,__const  __DKHomeKitSourceRemoteRequested
+0x1e0bb0128  __DATA_CONST,__const  __DKHomeKitSourceSiri
+0x1e0bb0120  __DATA_CONST,__const  __DKHomeKitSourceThirdParty
+0x1e0bb0118  __DATA_CONST,__const  __DKHomeKitSourceTimerTrigger
+0x1e0bb0110  __DATA_CONST,__const  __DKHomeKitSourceUnknown
+0x1e0bb0108  __DATA_CONST,__const  __DKHomeKitSourceUser
+0x1e0bb0100  __DATA_CONST,__const  __DKKnowledgeStorageDidAgeOutEventsNotification
+0x1e0bb00f8  __DATA_CONST,__const  __DKKnowledgeStorageDidDeleteEventsNotification
+0x1e0bb00f0  __DATA_CONST,__const  __DKKnowledgeStorageDidInsertEventsNotification
+0x1e0bb00e8  __DATA_CONST,__const  __DKKnowledgeStorageDidInsertLocalEventsNotification
+0x1e0bb00e0  __DATA_CONST,__const  __DKKnowledgeStorageDidTombstoneEventsNotification
+0x1960e22f0  __TEXT,__const  __DKKnowledgeStorageLoggingDistributedNotificationThrottleInSeconds
+0x1e0bb00d8  __DATA_CONST,__const  __DKMachServiceName
+0x1eb9d0830  __DATA,__common  __DKMotionCategoryValue
+0x196038480  __TEXT,__text  __DKPRChangeSetReadFrom
+0x195fb6d00  __TEXT,__text  __DKPRCompressedChangeSetReadFrom
+0x195fdf484  __TEXT,__text  __DKPREventDataReadFrom
+0x195f6852c  __TEXT,__text  __DKPREventReadFrom
+0x195f67894  __TEXT,__text  __DKPRMetadataEntryReadFrom
+0x196036320  __TEXT,__text  __DKPRMetadataReadFrom
+0x195f69618  __TEXT,__text  __DKPRSourceReadFrom
+0x195f67e08  __TEXT,__text  __DKPRStreamReadFrom
+0x195f6804c  __TEXT,__text  __DKPRValueReadFrom
+0x195f69294  __TEXT,__text  __DKPRValueTypeReadFrom
+0x195fa71d4  __TEXT,__text  __DKPrivacySensitiveMetadataKeys
+0x195f65a90  __TEXT,__text  __DKQueryLoggingEnabled
+0x1e0bb00d0  __DATA_CONST,__const  __DKRapportTransportAvailablityChangedNotification
+0x1eb9d0838  __DATA,__common  __DKRoutineLocationCategoryValue
+0x195f3e1fc  __TEXT,__text  __DKStringContainsPrivacySensitiveMetadataKey
+0x1e0bb00c8  __DATA_CONST,__const  __DKSync2CoordinatorDidIdleNotification
+0x1e0bb00c0  __DATA_CONST,__const  __DKSync2PolicyDidChangeNotification
+0x1e0bb00b8  __DATA_CONST,__const  __DKSync3PolicyDidChangeNotification
+0x1e0bb00b0  __DATA_CONST,__const  __DKSyncCoordinatorDidAddRemoteEventsNotification
+0x1e0bb00a8  __DATA_CONST,__const  __DKSyncCoordinatorDidApplyRemoteAdditionChangeSetNotification
+0x1e0bb00a0  __DATA_CONST,__const  __DKSyncCoordinatorDidApplyRemoteDeletionChangeSetNotification
+0x1e0bb0098  __DATA_CONST,__const  __DKSyncCoordinatorDidCreateAdditionChangeSetNotification
+0x1e0bb0090  __DATA_CONST,__const  __DKSyncCoordinatorDidCreateDeletionChangeSetNotification
+0x1e0bb0088  __DATA_CONST,__const  __DKSyncCoordinatorDidDeleteRemoteEventsNotification
+0x1e0bb0080  __DATA_CONST,__const  __DKSyncCoordinatorDidInsertLocalAdditionEventsNotification
+0x1e0bb0078  __DATA_CONST,__const  __DKSyncCoordinatorDidInsertLocalDeletionEventsNotification
+0x1960e2338  __TEXT,__const  __DKSyncCoordinatorLoggingDistributedNotificationThrottleInSeconds
+0x1e0bb0070  __DATA_CONST,__const  __DKSyncEventStatsCollection
+0x19601b760  __TEXT,__text  __DKSyncLoggingWindowsDescription
+0x1e0bb0068  __DATA_CONST,__const  __DKSyncOperationEventStatsCollectionName
+0x1e0bb0060  __DATA_CONST,__const  __DKSyncOperationStateDidChangeNotification
+0x1e0bb0058  __DATA_CONST,__const  __DKSyncPolicyDidChangeNotification
+0x1e0bb0050  __DATA_CONST,__const  __DKSyncUrgencyDidChangeNotification
+0x1eb9cfa90  __DATA,__data  __DKTombstoneEligibleForPredictionIdentifier
+0x1eb9d0840  __DATA,__common  __DKTristateCategoryValue
+0x1eb9d0848  __DATA,__common  __DKUIOrientationCategoryValue
+0x1e0bb0048  __DATA_CONST,__const  __DKUserLocalMachServiceName
+0x1e0bb0040  __DATA_CONST,__const  __DKZoneIDsWithAdditionChangesKey
+0x1e0bb0038  __DATA_CONST,__const  __DKZoneIDsWithDeletionChangesKey
+0x195f64dbc  __TEXT,__text  __cdcontextstore_signpost_deprecated_api
+0x19602264c  __TEXT,__text  __cdcontextstore_signpost_deregister_begin
+0x196022718  __TEXT,__text  __cdcontextstore_signpost_deregister_end
+0x195f4d584  __TEXT,__text  __cdcontextstore_signpost_evaluateCallback_begin
+0x195f59338  __TEXT,__text  __cdcontextstore_signpost_evaluateCallback_end
+0x195f6ca54  __TEXT,__text  __cdcontextstore_signpost_get_object_begin
+0x1960227a8  __TEXT,__text  __cdcontextstore_signpost_get_object_end
+0x1960224f0  __TEXT,__text  __cdcontextstore_signpost_register_begin
+0x1960225bc  __TEXT,__text  __cdcontextstore_signpost_register_end
+0x195f4bc64  __TEXT,__text  __cdcontextstore_signpost_set_object_begin
+0x195f4d4f4  __TEXT,__text  __cdcontextstore_signpost_set_object_end
+0x196022218  __TEXT,__text  __cdknowledge_isInternal
+0x196022224  __TEXT,__text  __cdknowledge_signpost_count_begin
+0x196022338  __TEXT,__text  __cdknowledge_signpost_count_end
+0x195f3d870  __TEXT,__text  __cdknowledge_signpost_delete_begin
+0x195f3dce0  __TEXT,__text  __cdknowledge_signpost_delete_end
+0x1960223e0  __TEXT,__text  __cdknowledge_signpost_event_count
+0x195f65ca8  __TEXT,__text  __cdknowledge_signpost_query_begin
+0x195f57b0c  __TEXT,__text  __cdknowledge_signpost_query_end
+0x195f3b438  __TEXT,__text  __cdknowledge_signpost_save_begin
+0x195f46d88  __TEXT,__text  __cdknowledge_signpost_save_end
+0x195f799fc  __TEXT,__text  __isTimeRestrictionOverwritten
+0x195f65bf0  __TEXT,__text  __streamNameFromStreams
+0x195f7ba6c  __TEXT,__text  _active_memory_limit
+0x1960e22b8  __TEXT,__const  _batchSize
+0x19601c0a0  __TEXT,__text  _bucket_name_for_timing
+0x1960e1dc8  __TEXT,__const  _cacheSizeMultiplier
+0x195f4baa4  __TEXT,__text  _cd_dispatch_async_xpc
+0x195f8e674  __TEXT,__text  _ceilDateWithOffset
+0x195fb7668  __TEXT,__text  _contactIdTypeToString
+0x195f869ec  __TEXT,__text  _convert1dReversedBitPatternTo2dArray
+0x195f86d54  __TEXT,__text  _convert2dArrayTo1dReversedBitPattern
+0x195f86c24  __TEXT,__text  _cumulateSleepWakeProbability
+0x195f9bf08  __TEXT,__text  _directionToString
+0x1960e1dd0  __TEXT,__const  _dispatchDebounceTime
+0x195f86a54  __TEXT,__text  _earlyAggregate
+0x195f79ecc  __TEXT,__text  _findAutoSuPlanByProbability
+0x195f8e6b4  __TEXT,__text  _floorDateWithOffset
+0x195f86dc4  __TEXT,__text  _getMaxInterval
+0x195f3d0a4  __TEXT,__text  _get_memory_usage
+0x1960e1edc  __TEXT,__const  _kCDBitmapActiveValue
+0x1960e1ed8  __TEXT,__const  _kCDBitmapInactiveValue
+0x1960e1ee0  __TEXT,__const  _kCDBitmapMissingValue
+0x1960e1eb8  __TEXT,__const  _kCDConstantHourSeconds
+0x1960e1ec0  __TEXT,__const  _kCDConstantNumSlotPerDay
+0x1960e1ec8  __TEXT,__const  _kCDConstantSleepDayAlignment
+0x1960e1f08  __TEXT,__const  _kCDConstantSleepDaysPerWeek
+0x1960e1f18  __TEXT,__const  _kCDConstantSleepLongLambda
+0x1960e1efc  __TEXT,__const  _kCDConstantSleepLongMaxCount
+0x1960e1f04  __TEXT,__const  _kCDConstantSleepLongMinCount
+0x1960e1f20  __TEXT,__const  _kCDConstantSleepLongOverShortRatio
+0x1960e1ed0  __TEXT,__const  _kCDConstantSleepRequestedDays
+0x1960e1f10  __TEXT,__const  _kCDConstantSleepShortLambda
+0x1960e1ef8  __TEXT,__const  _kCDConstantSleepShortMaxCount
+0x1960e1f00  __TEXT,__const  _kCDConstantSleepShortMinCount
+0x1e0bacc60  __DATA_CONST,__const  _kCDConsumerIdentifierShareSheet
+0x1e0bacc58  __DATA_CONST,__const  _kCDContextErrorDomain
+0x1eb9ce108  __DATA,__data  _kCDESPDataCollectionKey
+0x1eb9ce100  __DATA,__data  _kCDESPEphemeralityInSecondsKey
+0x1eb9ce0f8  __DATA,__data  _kCDESPEventDescriptionKey
+0x1eb9ce0f0  __DATA,__data  _kCDESPEventFormattedNameKey
+0x1eb9ce0e8  __DATA,__data  _kCDESPEventNameKey
+0x1eb9ce0e0  __DATA,__data  _kCDESPEventTypeKey
+0x1eb9ce0d8  __DATA,__data  _kCDESPIsHistorical
+0x1eb9ce0d0  __DATA,__data  _kCDESPIsInstant
+0x1eb9ce0c8  __DATA,__data  _kCDESPKnowledgeBaseEventNameKey
+0x1eb9ce0c0  __DATA,__data  _kCDESPKnowledgeBaseMetadataClassKey
+0x1eb9ce0b8  __DATA,__data  _kCDESPMonitorClassKey
+0x1eb9ce0b0  __DATA,__data  _kCDESPPlatformsKey
+0x1eb9ce0a8  __DATA,__data  _kCDESPPollingPeriod
+0x1eb9ce0a0  __DATA,__data  _kCDESPRateLimitCountKey
+0x1eb9ce098  __DATA,__data  _kCDESPRateLimitPeriodInSecondsKey
+0x1eb9ce090  __DATA,__data  _kCDESPSetupOnDemandKey
+0x1eb9ce088  __DATA,__data  _kCDESPShouldSaveCurrentEventOnShutdown
+0x1eb9ce080  __DATA,__data  _kCDESPTimestampPrecisionInSecondsKey
+0x1eb9ce078  __DATA,__data  _kCDESPTotalNumberOfEventsLimitKey
+0x1e0bacc50  __DATA_CONST,__const  _kCDErrorDomain
+0x1960e21a0  __TEXT,__const  _kCDFailedToArchiveObjectError
+0x1960e21b8  __TEXT,__const  _kCDInternalFailureError
+0x1960e21b0  __TEXT,__const  _kCDInvalidArgumentError
+0x1960e21a8  __TEXT,__const  _kCDInvalidEventError
+0x1960e1ee4  __TEXT,__const  _kCDLockeventUnlockedValue
+0x1960e1ef0  __TEXT,__const  _kCDMinumumPredictedSleepTime
+0x1960e2180  __TEXT,__const  _kCDMissingDelegateError
+0x1960e2198  __TEXT,__const  _kCDMissingPublisherError
+0x1e0bacc48  __DATA_CONST,__const  _kCDPSimpleModelImprovedScoringFunction
+0x1e0bacc40  __DATA_CONST,__const  _kCDPSimpleModelMinimumNumberOfInteractions
+0x1e0bacc38  __DATA_CONST,__const  _kCDPSimpleModelMinimumSeedProportion
+0x1960e1ee8  __TEXT,__const  _kCDProbabilityThreshold
+0x1e0bacc30  __DATA_CONST,__const  _kCDSleepAutoSuExpirationTimeKey
+0x1e0bacc28  __DATA_CONST,__const  _kCDSleepAutoSuStatusGood
+0x1e0bacc20  __DATA_CONST,__const  _kCDSleepAutoSuStatusKey
+0x1e0bacc18  __DATA_CONST,__const  _kCDSleepAutoSuStatusNextDayPredictionNotAvailable
+0x1e0bacc10  __DATA_CONST,__const  _kCDSleepAutoSuStatusTemporarilyNotAvailable
+0x1e0bacc08  __DATA_CONST,__const  _kCDSleepAutoSuSuEndKey
+0x1e0bacc00  __DATA_CONST,__const  _kCDSleepAutoSuSuStartKey
+0x1e0bacbf8  __DATA_CONST,__const  _kCDSleepAutoSuUnlockKey
+0x1e0bacbf0  __DATA_CONST,__const  _kCDSleepPredictionTuningParameterLongLambdaKey
+0x1e0bacbe8  __DATA_CONST,__const  _kCDSleepPredictionTuningParameterLongOverShortRatioKey
+0x1e0bacbe0  __DATA_CONST,__const  _kCDSleepPredictionTuningParameterShortLambdaKey
+0x1e0bacbd8  __DATA_CONST,__const  _kCDSleepPredictionTuningParameters
+0x1e0bacbd0  __DATA_CONST,__const  _kCDSleepUnrestrictedEndKey
+0x1960e21c8  __TEXT,__const  _kCDTemporaryError
+0x1960e21c0  __TEXT,__const  _kCDUnknownClientError
+0x1960e2188  __TEXT,__const  _kCDUnknownProxyError
+0x1960e2190  __TEXT,__const  _kCDXPCSendError
+0x1eb9ce070  __DATA,__data  _kComplicationPushLimitsResetNotification
+0x1e0bacbc8  __DATA_CONST,__const  _kDKSync3PolicyDeviceTypeAppleTV
+0x1e0bacbc0  __DATA_CONST,__const  _kDKSync3PolicyDeviceTypeHomePod
+0x1e0bacbb8  __DATA_CONST,__const  _kDKSync3PolicyDeviceTypeMac
+0x1e0bacbb0  __DATA_CONST,__const  _kDKSync3PolicyDeviceTypeWatch
+0x1e0bacba8  __DATA_CONST,__const  _kDKSync3PolicyDeviceTypeiPad
+0x1e0bacba0  __DATA_CONST,__const  _kDKSync3PolicyDeviceTypeiPhone
+0x1e0bacb98  __DATA_CONST,__const  _kDKSync3PolicyDeviceTypeiPod
+0x1e0bacb90  __DATA_CONST,__const  _kDKSyncedFeatureDigitalHealth
+0x1e0bacb88  __DATA_CONST,__const  _kDKSyncedFeatureDigitalHealthClient
+0x1e0bacb80  __DATA_CONST,__const  _kDKSyncedFeatureEucalyptus
+0x1e0bacb78  __DATA_CONST,__const  _kDKSyncedFeatureIDSMessageGating
+0x1e0bacb70  __DATA_CONST,__const  _kDKSyncedFeatureOptimizedBatteryCharging
+0x1e0bacb68  __DATA_CONST,__const  _kDKSyncedFeatureSiriPortrait
+0x1e0bacb60  __DATA_CONST,__const  _kDKSyncedFeatureSupergreen
+0x1e0bacb58  __DATA_CONST,__const  _kDKSyncedFeatureTips
+0x1e0bacb50  __DATA_CONST,__const  _kPSStoreChangedMechanismsKey
+0x1960e22ec  __TEXT,__const  _kQueryTimeout
+0x1e0bacb48  __DATA_CONST,__const  _kSocialInteractionAdvisorLambda
+0x1e0bacb40  __DATA_CONST,__const  _kSocialInteractionAdvisorW0
+0x195f9bee4  __TEXT,__text  _mechanismToString
+0x195fb7644  __TEXT,__text  _meetingStatusToString
+0x195f885bc  __TEXT,__text  _reasonToString
+0x196039fa0  __TEXT,__text  _recordInteractionsAsync
+0x195f8df08  __TEXT,__text  _resolve
+0x195f41f0c  __TEXT,__text  _setClassesForCDInteractionXPCInterface
+0x1960421c4  __TEXT,__text  _sleepPrediction
+0x1960421ec  __TEXT,__text  _sleepPredictionWithParams
+0x196042278  __TEXT,__text  _sleepPredictionWithParams1
+0x195f86584  __TEXT,__text  _sleepPredictionWithParams2
+0x1960421fc  __TEXT,__text  _validatePastDetection
+```
+
+## Private
+
+```
+0x195f309d0  __TEXT,__text  ___47-[_CDSharedMemoryKeyValueStore setData:forKey:]_block_invoke
+0x195f30af4  __TEXT,__text  -[_CDSerializableKeyedData setData:]
+0x195f30b50  __TEXT,__text  _OUTLINED_FUNCTION_51
+0x195f30b64  __TEXT,__text  _OUTLINED_FUNCTION_51
+0x195f30b74  __TEXT,__text  _OUTLINED_FUNCTION_51
+0x195f30b84  __TEXT,__text  -[_CDSharedMemoryKeyValueStore schedulePersistToShMem]
+0x195f30c30  __TEXT,__text  +[_DKEvent eventWithStream:startDate:endDate:value:metadata:]
+0x195f30ce4  __TEXT,__text  -[_DKObject init]
+0x195f30d1c  __TEXT,__text  ___48-[CDMonitorManager initWithEventStreams:domain:]_block_invoke.85
+0x195f30dd8  __TEXT,__text  -[_DKIdentifier .cxx_destruct]
+0x195f30e20  __TEXT,__text  -[_DKObject .cxx_destruct]
+0x195f30e70  __TEXT,__text  -[_DKEvent encodeWithCoder:]
+0x195f30ffc  __TEXT,__text  -[_DKObject encodeWithCoder:]
+0x195f31084  __TEXT,__text  -[_DKEvent .cxx_destruct]
+0x195f3111c  __TEXT,__text  ___48-[CDMonitorManager initWithEventStreams:domain:]_block_invoke
+0x195f311d8  __TEXT,__text  -[_DKEvent compareValue:]
+0x195f31358  __TEXT,__text  -[_DKCategory .cxx_destruct]
+0x195f3136c  __TEXT,__text  ___54-[_CDSharedMemoryKeyValueStore schedulePersistToShMem]_block_invoke
+0x195f31374  __TEXT,__text  -[_CDSharedMemoryKeyValueStore _persistToShMem]
+0x195f317d0  __TEXT,__text  ___47-[_CDSharedMemoryKeyValueStore _persistToShMem]_block_invoke
+0x195f31978  __TEXT,__text  -[_CDSerializableKeyedData copyWithZone:]
+0x195f319e4  __TEXT,__text  -[_CDSerializableKeyedData serializeTo:maxSize:success:]
+0x195f31b34  __TEXT,__text  -[_CDEventStream eventStreamProperties]
+0x195f31b40  __TEXT,__text  -[_CDEventStreamProperties name]
+0x195f31b48  __TEXT,__text  -[_DKEventStream .cxx_destruct]
+0x195f31b8c  __TEXT,__text  +[_DKDigitalHealthMetadataKey usageType]
+0x195f31b98  __TEXT,__text  +[_DKBundleIdentifier withBundle:]
+0x195f31c08  __TEXT,__text  -[_CDSharedMemoryKeyValueStore setData:forKey:]
+0x195f31d04  __TEXT,__text  +[_CDEventStreams eventStreamPropertiesForKBName:]
+0x195f31d8c  __TEXT,__text  -[_DKEventStream eventValueType]
+0x195f31d98  __TEXT,__text  +[_DKObjectType objectTypeFromClass:]
+0x195f31de8  __TEXT,__text  -[_DKEvent setEndDate:]
+0x195f31df4  __TEXT,__text  +[_CDLogging contextChannel]
+0x195f31e2c  __TEXT,__text  +[_CDLogging instrumentationChannel]
+0x195f31e64  __TEXT,__text  -[_CDSerializableKeyedData .cxx_destruct]
+0x195f31ea8  __TEXT,__text  +[_CDEventStreams sharedInstance]
+0x195f31ee0  __TEXT,__text  +[_DKUIOrientationCategory unknown]
+0x195f31f34  __TEXT,__text  +[_CDSerializableKeyedData byteChecksumOfData:]
+0x195f31f94  __TEXT,__text  +[_CDSharedMemoryKeyValueStore sharedInstance]
+0x195f32028  __TEXT,__text  +[_DKEventStream eventStreamWithName:]
+0x195f32078  __TEXT,__text  -[_DKEvent value]
+0x195f32088  __TEXT,__text  +[_DKApplicationMetadataKey launchReason]
+0x195f32094  __TEXT,__text  +[_DKAppClipUsageMetadataKey appBundleID]
+0x195f320a0  __TEXT,__text  +[_CDLogging knowledgeChannel]
+0x195f320d8  __TEXT,__text  +[_DKCategoryCache sharedCached]
+0x195f32110  __TEXT,__text  +[_DKSystemEventStreams displayOrientationStream]
+0x195f32124  __TEXT,__text  +[_DKApplicationMetadataKey shortVersionString]
+0x195f32130  __TEXT,__text  -[_DKEventStream initWithName:valueType:cache:]
+0x195f32248  __TEXT,__text  +[_DKApplicationMetadataKey exactBundleVersion]
+0x195f32254  __TEXT,__text  +[_DKSystemEventStreams appUsageStream]
+0x195f32268  __TEXT,__text  -[_CDEventStreams _eventStreamForName:orKBName:]
+0x195f329dc  __TEXT,__text  -[_DKObjectType isEqual:]
+0x195f32a4c  __TEXT,__text  +[_DKIdentifier identifierWithString:type:]
+0x195f32ab4  __TEXT,__text  -[_DKEvent metadata]
+0x195f32ac4  __TEXT,__text  -[_DKIdentifier initWithString:type:]
+0x195f32b6c  __TEXT,__text  -[CDMonitorManager _monitorForStreamName:]
+0x195f32bf4  __TEXT,__text  -[_CDSharedMemoryKeyValueStore size]
+0x195f32bfc  __TEXT,__text  -[_CDSerializableKeyedData serializeData:withChecksum:to:]
+0x195f32c78  __TEXT,__text  -[_DKEvent _initWithStream:source:startDate:endDate:value:confidence:metadata:]
+0x195f32e34  __TEXT,__text  +[CDMonitorManager monitorManagerForEventStreams:domain:]
+0x195f32ef4  __TEXT,__text  -[_CDEventStreamProperties valueType]
+0x195f32efc  __TEXT,__text  -[_DKObject setSource:]
+0x195f32f04  __TEXT,__text  +[_DKDigitalHealthMetadataKey isUsageTrusted]
+0x195f32f10  __TEXT,__text  +[_DKIdentifierType associatedObjectClass]
+0x195f32f1c  __TEXT,__text  -[_DKEvent initWithStream:source:startDate:endDate:value:confidence:metadata:]
+0x195f330d8  __TEXT,__text  -[_DKIdentifier stringValue]
+0x195f330e8  __TEXT,__text  -[_DKEvent stringValue]
+0x195f33128  __TEXT,__text  +[_DKEvent eventWithStream:startDate:endDate:value:]
+0x195f331cc  __TEXT,__text  -[_DKCoreDataStorage initWithDirectory:databaseName:modelURL:readOnly:localOnly:]
+0x195f331e8  __TEXT,__text  -[_DKCoreDataStorage initWithDirectory:databaseName:modelURL:readOnly:localOnly:sync:]
+0x195f3362c  __TEXT,__text  -[_DKDataProtectionStateMonitor init]
+0x195f336ac  __TEXT,__text  +[_DKDataProtectionMonitor sharedInstance]
+0x195f33744  __TEXT,__text  -[_DKDataProtectionStateMonitor setChangeHandler:]
+0x195f337c0  __TEXT,__text  -[_DKDataProtectionMonitor registerStateChangeHandler:]
+0x195f338a8  __TEXT,__text  ___55-[_DKDataProtectionMonitor registerStateChangeHandler:]_block_invoke
+0x195f338f4  __TEXT,__text  -[_DKCoreDataStorage databaseManagerName]
+0x195f33a00  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x195f33a00  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x195f33a00  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x195f33a00  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x195f33a00  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x195f33a00  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x195f33a00  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x195f33a00  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x195f33a00  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x195f33a00  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x195f33a00  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x195f33a00  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x195f33a10  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x195f33a20  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x195f33a2c  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x195f33a40  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33a40  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33a40  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33a40  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33a40  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33a4c  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33a4c  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33a58  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33a58  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33a58  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33a64  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33a78  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33a90  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33aa0  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33ab8  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33acc  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33adc  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33ae8  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x195f33afc  __TEXT,__text  -[_DKCoreDataStorage isDataVaulted]
+0x195f33b78  __TEXT,__text  -[_DKCoreDataStorage dealloc]
+0x195f33be0  __TEXT,__text  -[_DKCoreDataStorage .cxx_destruct]
+0x195f33c8c  __TEXT,__text  -[_DKDataProtectionMonitor deregisterStateChangeHandler:]
+0x195f33d34  __TEXT,__text  -[_CDInteractionStore .cxx_destruct]
+0x195f33da8  __TEXT,__text  -[_DKDataProtectionStateMonitor dealloc]
+0x195f33df4  __TEXT,__text  ___57-[_DKDataProtectionMonitor deregisterStateChangeHandler:]_block_invoke
+0x195f33e00  __TEXT,__text  -[_DKDataProtectionStateMonitor .cxx_destruct]
+0x195f33e44  __TEXT,__text  +[_CDInteractionStore defaultDatabaseDirectory]
+0x195f33e50  __TEXT,__text  +[_CDPaths peopleDirectory]
+0x195f33e5c  __TEXT,__text  +[_DKSystemEventStreams appInFocusStream]
+0x195f33e70  __TEXT,__text  -[_DKObjectType initWithTypeCode:objectClass:]
+0x195f33ec0  __TEXT,__text  -[_DKObjectType objectClass]
+0x195f33ec8  __TEXT,__text  +[_DKObjectType typeCodeFromName:]
+0x195f33ed0  __TEXT,__text  +[_DKIdentifier supportsSecureCoding]
+0x195f33ed8  __TEXT,__text  -[_DKObject setUUID:]
+0x195f33ee0  __TEXT,__text  +[_DKCategory categoryWithInteger:type:]
+0x195f33f60  __TEXT,__text  -[_DKRateLimitPolicyEnforcer filterObjectsByEnforcingRateLimit:]
+0x195f34108  __TEXT,__text  -[_DKPrivacyPolicyEnforcer enforcePrivacy:]
+0x195f34624  __TEXT,__text  -[_DKCategory initWithInteger:type:cache:]
+0x195f346f8  __TEXT,__text  -[_DKCategory categoryType]
+0x195f34708  __TEXT,__text  ___64-[_CDSiriLearningSettings _startWithCallback:invokeCallbackNow:]_block_invoke
+0x195f349dc  __TEXT,__text  +[_DKEventStreamCache sharedCached]
+0x195f34a14  __TEXT,__text  -[_DKEventStream encodeWithCoder:]
+0x195f34a74  __TEXT,__text  +[_DKEvent(MOConversion) copyMetadata:toManagedObject:]
+0x195f35310  __TEXT,__text  ___90-[_CDSpotlightItemRecorder saveRateLimitedEvents:donatorUid:responseQueue:withCompletion:]_block_invoke
+0x195f35334  __TEXT,__text  +[_DKMetadataPersistenceLookupTable keyToAttribute]
+0x195f353cc  __TEXT,__text  -[_DKObject(MOConversion) copyToManagedObject:]
+0x195f35630  __TEXT,__text  -[_CDSpotlightItemRecorder saveRateLimitedEvents:donatorUid:responseQueue:withCompletion:]
+0x195f386c8  __TEXT,__text  -[_DKBiomeQuery .cxx_destruct]
+0x195f38724  __TEXT,__text  -[_DKKnowledgeStorage _tombstoneObjectsMatchingPredicate:batchSize:error:]
+0x195f38e8c  __TEXT,__text  +[_CDDecommissionUtils isRequestAllowed:]
+0x195f38f70  __TEXT,__text  -[CDMonitorManager populateCurrentValueForStreamName:]
+0x195f38ff0  __TEXT,__text  ___42+[_DKDataProtectionMonitor sharedInstance]_block_invoke
+0x195f3901c  __TEXT,__text  -[_DKDataProtectionMonitor init]
+0x195f392e4  __TEXT,__text  _MobileKeyBagLibrary
+0x195f39340  __TEXT,__text  _getMKBDeviceFormattedForContentProtectionSymbolLoc
+0x195f3942c  __TEXT,__text  _slMKBDeviceFormattedForContentProtection
+0x195f39450  __TEXT,__text  _MobileKeyBagLibraryCore
+0x195f3957c  __TEXT,__text  _libMobileGestaltLibrary
+0x195f395d8  __TEXT,__text  _getMGCopyAnswerSymbolLoc
+0x195f396c4  __TEXT,__text  -[_DKKnowledgeStorage _deleteAllEventsMatchingPredicate:error:]
+0x195f397e8  __TEXT,__text  ___78-[_CDInteractionStore deleteInteractionsWithBundleId:domainIdentifiers:error:]_block_invoke
+0x195f398f8  __TEXT,__text  -[_DKCoreDataStorage privateManagedObjectContextFor:]
+0x195f399e0  __TEXT,__text  -[_CDMemoryUsageInterval end].cold.1
+0x195f39a40  __TEXT,__text  -[_CDMemoryUsageIntervalTracker endInterval:]
+0x195f39ef0  __TEXT,__text  -[_CDMemoryUsageInterval end]
+0x195f39f20  __TEXT,__text  ___cd_dispatch_async_capture_tx_block_invoke
+0x195f39f30  __TEXT,__text  ___cd_dispatch_async_capture_tx_block_invoke
+0x195f39f40  __TEXT,__text  ___cd_dispatch_async_capture_tx_block_invoke
+0x195f39f50  __TEXT,__text  ___cd_dispatch_async_capture_tx_block_invoke
+0x195f39f60  __TEXT,__text  ___cd_dispatch_async_capture_tx_block_invoke
+0x195f39f70  __TEXT,__text  ___cd_dispatch_async_capture_tx_block_invoke
+0x195f39f80  __TEXT,__text  ___cd_dispatch_async_capture_tx_block_invoke
+0x195f39f90  __TEXT,__text  ___cd_dispatch_async_capture_tx_block_invoke
+0x195f39fa0  __TEXT,__text  ___cd_dispatch_async_capture_tx_block_invoke
+0x195f39fb0  __TEXT,__text  ___cd_dispatch_async_capture_tx_block_invoke
+0x195f39fc0  __TEXT,__text  ___cd_dispatch_async_capture_tx_block_invoke
+0x195f39fd0  __TEXT,__text  ___cd_dispatch_async_capture_tx_block_invoke
+0x195f39fe0  __TEXT,__text  ___cd_dispatch_async_capture_tx_block_invoke
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f39ff0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a004  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a004  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a004  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a004  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a004  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a004  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a004  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a010  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3a030  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f3a030  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f3a040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a050  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x195f3a050  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x195f3a050  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x195f3a050  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x195f3a050  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x195f3a050  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x195f3a050  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x195f3a060  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x195f3a060  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x195f3a060  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x195f3a060  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x195f3a060  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x195f3a060  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x195f3a060  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x195f3a060  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x195f3a06c  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a06c  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a06c  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a084  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x195f3a084  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x195f3a084  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x195f3a084  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x195f3a084  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x195f3a084  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x195f3a084  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x195f3a084  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x195f3a090  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f3a090  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f3a090  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f3a090  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f3a090  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f3a090  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f3a090  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f3a090  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f3a090  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f3a090  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f3a090  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f3a090  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f3a090  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f3a090  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f3a090  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a09c  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f3a0b0  __TEXT,__text  _OUTLINED_FUNCTION_42
+0x195f3a0b0  __TEXT,__text  _OUTLINED_FUNCTION_42
+0x195f3a0b0  __TEXT,__text  _OUTLINED_FUNCTION_42
+0x195f3a0bc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a0bc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a0bc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a0bc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a0bc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a0bc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a0bc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a0bc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a0bc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a0bc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a0cc  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a0dc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a0dc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a0dc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a0ec  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a0ec  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a0ec  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a0ec  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a0fc  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a110  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a110  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a124  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3a124  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3a12c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a12c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a12c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a12c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a13c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f3a13c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f3a13c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f3a150  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a150  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a164  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a174  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a184  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a194  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a194  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a194  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3a1a4  __TEXT,__text  _OUTLINED_FUNCTION_46
+0x195f3a1a4  __TEXT,__text  _OUTLINED_FUNCTION_46
+0x195f3a1a4  __TEXT,__text  _OUTLINED_FUNCTION_46
+0x195f3a1b0  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a1c0  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a1c8  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a1d8  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a1e8  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a1f8  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a208  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a210  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a21c  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a238  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a248  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a25c  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x195f3a268  __TEXT,__text  -[_CDSiriLearningSettings allLearningDisabledBundleIDs].cold.1
+0x195f3a2cc  __TEXT,__text  -[_DKObject source]
+0x195f3a2d8  __TEXT,__text  -[_DKKnowledgeStore saveObjects:tracker:responseQueue:withCompletion:]
+0x195f3a638  __TEXT,__text  -[_DKKnowledgeStore _sanitizeObjectsBeforeSaving:]
+0x195f3a790  __TEXT,__text  ___25-[_CDRateLimiter debited]_block_invoke
+0x195f3a7fc  __TEXT,__text  -[_CDRateLimiter debited]
+0x195f3a8a8  __TEXT,__text  -[_CDSiriLearningSettings allLearningDisabledBundleIDs]
+0x195f3a9c8  __TEXT,__text  -[_CDSiriLearningSettings notificationQueue]
+0x195f3aa18  __TEXT,__text  ___55-[_CDSiriLearningSettings allLearningDisabledBundleIDs]_block_invoke
+0x195f3aa58  __TEXT,__text  +[_CDSiriLearningSettings uncachedAllLearningDisabledBundleIDs]
+0x195f3aab4  __TEXT,__text  -[_CDSiriLearningSettings _unsafe_allLearningDisabledBundleIDs]
+0x195f3ab5c  __TEXT,__text  ___72-[_DKKnowledgeStorage saveObjects:tracker:responseQueue:withCompletion:]_block_invoke
+0x195f3ad04  __TEXT,__text  ___72-[_DKKnowledgeStorage saveObjects:tracker:responseQueue:withCompletion:]_block_invoke_2
+0x195f3ae64  __TEXT,__text  -[_DKKnowledgeStorage _saveObjects:error:]
+0x195f3b360  __TEXT,__text  -[_DKKnowledgeStorage removeBadObjects:]
+0x195f3b3d0  __TEXT,__text  ___40-[_DKKnowledgeStorage removeBadObjects:]_block_invoke
+0x195f3b568  __TEXT,__text  ___42-[_DKKnowledgeStorage _saveObjects:error:]_block_invoke
+0x195f3bca8  __TEXT,__text  -[_DKObjectMOConverter init]
+0x195f3bcec  __TEXT,__text  _getBMDKEventClass
+0x195f3bde8  __TEXT,__text  -[_DKEvent(Protobuf) toPBCodableUseStructuredMetadata:]
+0x195f3c22c  __TEXT,__text  -[_DKPREvent setStartDate:]
+0x195f3c244  __TEXT,__text  -[_DKPREvent setEndDate:]
+0x195f3c25c  __TEXT,__text  -[_DKIdentifier(Protobuf) toPBCodable]
+0x195f3c338  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3c338  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3c338  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3c338  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3c338  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3c338  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3c338  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3c338  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3c338  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3c338  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3c338  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3c338  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3c34c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3c34c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3c34c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3c36c  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x195f3c36c  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x195f3c384  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c394  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x195f3c394  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x195f3c394  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x195f3c394  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x195f3c3a0  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f3c3a0  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f3c3a0  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f3c3a0  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f3c3a0  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f3c3a0  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f3c3a0  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f3c3a0  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f3c3ac  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c3c4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c3d8  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x195f3c3d8  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x195f3c3ec  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c40c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c424  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f3c424  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f3c424  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f3c43c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c448  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c478  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c48c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c49c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c4ac  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x195f3c4ac  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x195f3c4c0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c4d0  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x195f3c4d0  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x195f3c4d0  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x195f3c4e4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c4f4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3c4f4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3c4f4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f3c508  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c528  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c528  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c540  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c554  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c568  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c578  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c588  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c594  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c5a4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c5b8  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c5cc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x195f3c5e4  __TEXT,__text  -[_DKDataProtectionStateMonitor isDataAvailableFor:]
+0x195f3c5f0  __TEXT,__text  -[_DKDataProtectionMonitor isDataAvailableFor:]
+0x195f3c6dc  __TEXT,__text  ___47-[_DKDataProtectionMonitor isDataAvailableFor:]_block_invoke
+0x195f3c744  __TEXT,__text  -[_DKCoreDataStorage managedObjectContextFor:identifier:]
+0x195f3c9e4  __TEXT,__text  -[_DKCoreDataStorage managedObjectContextForKey:]
+0x195f3ca68  __TEXT,__text  ___57-[_DKCoreDataStorage managedObjectContextFor:identifier:]_block_invoke
+0x195f3cacc  __TEXT,__text  -[_DKCoreDataStorage setManagedObjectContext:forKey:]
+0x195f3cb60  __TEXT,__text  -[_CDMemoryUsageInterval begin]
+0x195f3cbd0  __TEXT,__text  +[_CDMemoryUsageIntervalTracker sharedInstance]
+0x195f3cc0c  __TEXT,__text  -[_CDMemoryUsageIntervalTracker beginInterval:]
+0x195f3d1a0  __TEXT,__text  _legacy_log_signpost
+0x195f3d2ec  __TEXT,__text  +[_CDLogging knowledgeSignpost]
+0x195f3d324  __TEXT,__text  -[_DKPRValue setType:]
+0x195f3d338  __TEXT,__text  -[_DKPRValue type]
+0x195f3d350  __TEXT,__text  -[_DKPRValueType setType:]
+0x195f3d368  __TEXT,__text  -[_DKPRValueType setTypeCode:]
+0x195f3d380  __TEXT,__text  -[_DKObjectMOConverter .cxx_destruct]
+0x195f3d3b8  __TEXT,__text  -[_CDSpotlightItemRecorder deleteKnowledgeEventsMatchingPredicate:withCompletion:]
+0x195f3d60c  __TEXT,__text  +[_DKCoreDataStorage deleteObjectsInContext:entityName:predicate:sortDescriptors:fetchOffset:fetchLimit:includeSubentities:includePendingChanges:]
+0x195f3d984  __TEXT,__text  ___146+[_DKCoreDataStorage deleteObjectsInContext:entityName:predicate:sortDescriptors:fetchOffset:fetchLimit:includeSubentities:includePendingChanges:]_block_invoke
+0x195f3dd88  __TEXT,__text  -[NSExpression(CDLogging) cd_containsSensitiveKeyPath]
+0x195f3df04  __TEXT,__text  -[NSPredicate(CDLogging) cd_sanitizeForLogging]
+0x195f3e324  __TEXT,__text  -[_DKKnowledgeStorage _sendTombstoneNotificationsWithStreamNameCounts:]
+0x195f3e59c  __TEXT,__text  +[_CDInteractionStore predicateFilteringUsernameForPredicate:]
+0x195f3e5f0  __TEXT,__text  ___100-[_CDInteractionStore queryInteractionsUsingPredicate:sortDescriptors:limit:offset:objectIDs:error:]_block_invoke
+0x195f3ea14  __TEXT,__text  ___100-[_CDInteractionStore queryInteractionsUsingPredicate:sortDescriptors:limit:offset:objectIDs:error:]_block_invoke.213
+0x195f3ea1c  __TEXT,__text  +[_CDInteractionPolicies disallowedCSSIBundleIds]
+0x195f3ea28  __TEXT,__text  ___74-[_DKKnowledgeStorage _tombstoneObjectsMatchingPredicate:batchSize:error:]_block_invoke
+0x195f3ed5c  __TEXT,__text  -[_CDSpotlightItemRecorder deleteSearchableItemsWithDomainIdentifiers:bundleID:withCompletion:]
+0x195f3f5c0  __TEXT,__text  +[_DKQuery predicateForSpotlightEventsWithDomainIdentifiers:bundleID:]
+0x195f3f6bc  __TEXT,__text  +[_DKQuery predicateForSpotlightEventsWithBundleID:]
+0x195f3f954  __TEXT,__text  ___62-[_DKKnowledgeStorage deleteAllEventsMatchingPredicate:error:]_block_invoke
+0x195f3f9a4  __TEXT,__text  +[_CDLogging spotlightReceiverChannel]
+0x195f3f9dc  __TEXT,__text  -[_DKEvent endDate]
+0x195f3f9ec  __TEXT,__text  _slMGCopyAnswer
+0x195f3fa2c  __TEXT,__text  -[_DKDataProtectionMonitor deviceIsLocked]
+0x195f3fa74  __TEXT,__text  _libMobileGestaltLibraryCore
+0x195f3fba0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fbdc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fbf0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fc10  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fc38  __TEXT,__text  _OUTLINED_FUNCTION_65
+0x195f3fc38  __TEXT,__text  _OUTLINED_FUNCTION_65
+0x195f3fc40  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fc60  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fc94  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fcb0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fcc0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fcd4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fcd4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fcd4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fce8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fcf4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fd14  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fd2c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fd3c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fd50  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fd64  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fd84  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fd94  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fdb0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fdc0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fdd4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fddc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fdec  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f3fdec  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f3fe04  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fe1c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fe2c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fe4c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fe6c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fe8c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fea4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fec8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3fef0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3ff00  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3ff18  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3ff38  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3ff68  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x195f3ff70  __TEXT,__text  _slMKBDeviceUnlockedSinceBoot
+0x195f3ff94  __TEXT,__text  _getMKBDeviceUnlockedSinceBootSymbolLoc
+0x195f40080  __TEXT,__text  +[_CDInteractionStoreNotifier sharedInstance]
+0x195f400b8  __TEXT,__text  +[_CDInteractionStoreNotifier sharedInstance].cold.1
+0x195f400cc  __TEXT,__text  ___45+[_CDInteractionStoreNotifier sharedInstance]_block_invoke
+0x195f40114  __TEXT,__text  -[_CDInteractionStoreNotifier init]
+0x195f40478  __TEXT,__text  +[_CDLogging interactionChannel]
+0x195f404b0  __TEXT,__text  +[_CDLogging interactionChannel].cold.1
+0x195f404c4  __TEXT,__text  ___32+[_CDLogging interactionChannel]_block_invoke
+0x195f40528  __TEXT,__text  +[_DKKnowledgeStore knowledgeStore]
+0x195f40580  __TEXT,__text  +[_DKXPCKnowledgeStore XPCKnowledgeStore]
+0x195f4059c  __TEXT,__text  -[_DKXPCKnowledgeStore init]
+0x195f405e4  __TEXT,__text  -[_DKXPCKnowledgeStore initWithConnection:]
+0x195f4067c  __TEXT,__text  __DKDaemonInterface.cold.1
+0x195f40690  __TEXT,__text  ____DKDaemonInterface_block_invoke
+0x195f409dc  __TEXT,__text  +[_DKRateLimitPolicyEnforcer rateLimitPolicyEnforcer].cold.1
+0x195f409f0  __TEXT,__text  _OUTLINED_FUNCTION_30
+0x195f409fc  __TEXT,__text  _OUTLINED_FUNCTION_30
+0x195f40a0c  __TEXT,__text  _OUTLINED_FUNCTION_30
+0x195f40a1c  __TEXT,__text  _OUTLINED_FUNCTION_30
+0x195f40a30  __TEXT,__text  _OUTLINED_FUNCTION_30
+0x195f40a44  __TEXT,__text  _OUTLINED_FUNCTION_30
+0x195f40a54  __TEXT,__text  _OUTLINED_FUNCTION_30
+0x195f40a60  __TEXT,__text  _OUTLINED_FUNCTION_30
+0x195f40a70  __TEXT,__text  -[_DKBiomePredicateScanner .cxx_destruct]
+0x195f40aa8  __TEXT,__text  -[_DKBiomePredicateValueScanner .cxx_destruct]
+0x195f40ae0  __TEXT,__text  ___55+[_DKBiomeQuery biomeExclusiveStreamsFromEventStreams:]_block_invoke
+0x195f40b28  __TEXT,__text  -[_DKBiomeQuery initWithEventStreams:predicate:limit:offset:sortDescriptors:resultType:groupByProperties:returnDistinctResults:readMetadata:excludedMetadataKeys:]
+0x195f40f48  __TEXT,__text  -[_DKPredicateValidator .cxx_destruct]
+0x195f40f8c  __TEXT,__text  -[_DKBiomeQuery executeDeletionQuery:]
+0x195f413cc  __TEXT,__text  _getBMDKEventStreamClass
+0x195f414c8  __TEXT,__text  +[_CDPaths modelDirectory]
+0x195f414d4  __TEXT,__text  -[_DKKnowledgeStore initWithKnowledgeStoreHandle:readOnly:]
+0x195f415bc  __TEXT,__text  +[_DKRateLimitPolicyEnforcer rateLimitPolicyEnforcer]
+0x195f415f4  __TEXT,__text  ___53+[_DKRateLimitPolicyEnforcer rateLimitPolicyEnforcer]_block_invoke
+0x195f41624  __TEXT,__text  +[_DKPrivacyPolicyEnforcer privacyPolicyEnforcer]
+0x195f4165c  __TEXT,__text  ___49+[_DKPrivacyPolicyEnforcer privacyPolicyEnforcer]_block_invoke
+0x195f4168c  __TEXT,__text  -[_CDLastInFirstOutLock init]
+0x195f41720  __TEXT,__text  -[_CDLastInFirstOutLock runWithLockAcquired:]
+0x195f41848  __TEXT,__text  ____CDInteractionNSXPCInterface_block_invoke
+0x195f41894  __TEXT,__text  _PeopleSuggesterLibraryCore
+0x195f419c0  __TEXT,__text  _get_PSPredictionContextClass
+0x195f41abc  __TEXT,__text  _get_PSFeedbackClass
+0x195f41bb8  __TEXT,__text  _get_PSSuggesterConfigurationClass
+0x195f41cb4  __TEXT,__text  _get_PSMapsPredictionContextClass
+0x195f41db0  __TEXT,__text  _get_PSAutocompleteSuggestionClass
+0x195f41eac  __TEXT,__text  +[_DKPrivacyPolicyEnforcer privacyPolicyEnforcer].cold.1
+0x195f41ef8  __TEXT,__text  __CDInteractionNSXPCInterface.cold.1
+0x195f42bec  __TEXT,__text  _get_PSSuggestionClass
+0x195f42ce8  __TEXT,__text  _get_PSAttachmentClass
+0x195f42de4  __TEXT,__text  _get_PSSuggesterClass
+0x195f42ee0  __TEXT,__text  _get_PSRecipientClass
+0x195f42fdc  __TEXT,__text  _get_PSSiriHandleRankerPredictionContextClass
+0x195f430d8  __TEXT,__text  _get_PSMessagesPinningFeedbackClass
+0x195f431d4  __TEXT,__text  _get_PSContactSuggestionHandleAndAppClass
+0x195f432d0  __TEXT,__text  _get_PSContactSuggestionClass
+0x195f433cc  __TEXT,__text  _get_PSContactSuggesterClass
+0x195f434c8  __TEXT,__text  _get_PSCNAutocompleteFeedbackClass
+0x195f435c4  __TEXT,__text  _get_PSCandidateClass
+0x195f436c0  __TEXT,__text  _get_PSContactHandleFeatureProviderClass
+0x195f438ac  __TEXT,__text  -[_CDMemoryUsageInterval dealloc]
+0x195f43938  __TEXT,__text  -[_CDMemoryUsageInterval .cxx_destruct]
+0x195f43970  __TEXT,__text  -[_DKEventQuery .cxx_destruct]
+0x195f43a30  __TEXT,__text  -[_DKQuery .cxx_destruct]
+0x195f43a68  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43a70  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43a78  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43a80  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43a88  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43a90  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43a98  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43aa0  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43aa8  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43ab0  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43ab8  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43ac0  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43ac8  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43ad0  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43ad8  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43ae0  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43ae8  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43af0  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43af8  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43b00  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43b08  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43b10  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43b18  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43b20  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43b28  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43b30  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43b38  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43b40  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43b48  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43b50  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43b58  __TEXT,__text  ___Block_byref_object_dispose_
+0x195f43b60  __TEXT,__text  ___84-[_DKXPCKnowledgeStore executeQuery:synchronous:error:responseQueue:withCompletion:]_block_invoke_3
+0x195f43e14  __TEXT,__text  ___84-[_DKXPCKnowledgeStore executeQuery:synchronous:error:responseQueue:withCompletion:]_block_invoke_2.19
+0x195f43e2c  __TEXT,__text  -[_DKKnowledgeStore .cxx_destruct]
+0x195f43e7c  __TEXT,__text  -[_DKXPCKnowledgeStore dealloc]
+0x195f43ec8  __TEXT,__text  -[_DKXPCKnowledgeStore .cxx_destruct]
+0x195f43ed4  __TEXT,__text  -[_DKKnowledgeStorage saveObjects:tracker:responseQueue:withCompletion:]
+0x195f44024  __TEXT,__text  ___57-[_CDSiriLearningSettings startSanitizingKnowledgeStore:]_block_invoke
+0x195f442a0  __TEXT,__text  ___59-[_CDSiriLearningSettings startSanitizingInteractionStore:]_block_invoke
+0x195f445e0  __TEXT,__text  ___38-[_CDInteractionStore metadataForKey:]_block_invoke
+0x195f447e0  __TEXT,__text  -[_CDSiriLearningSettings _unsafe_clearAllLearningDisabledBundleIDs]
+0x195f44828  __TEXT,__text  ___42-[_CDInteractionStore setMetadata:forKey:]_block_invoke
+0x195f44a74  __TEXT,__text  -[_DKCoreDataStorage managedObjectContextFor:]
+0x195f44a7c  __TEXT,__text  _OUTLINED_FUNCTION_31
+0x195f44a88  __TEXT,__text  _OUTLINED_FUNCTION_31
+0x195f44a94  __TEXT,__text  _OUTLINED_FUNCTION_31
+0x195f44aa4  __TEXT,__text  _OUTLINED_FUNCTION_31
+0x195f44aa4  __TEXT,__text  _OUTLINED_FUNCTION_31
+0x195f44ab0  __TEXT,__text  _OUTLINED_FUNCTION_31
+0x195f44ac4  __TEXT,__text  _OUTLINED_FUNCTION_31
+0x195f44ad4  __TEXT,__text  _OUTLINED_FUNCTION_31
+0x195f44ae8  __TEXT,__text  _OUTLINED_FUNCTION_31
+0x195f44af8  __TEXT,__text  +[_DKEvent(INInteraction) relatedContactIdentifiersFromIntent:]
+0x195f44d78  __TEXT,__text  -[_DKEventStream name]
+0x195f44d84  __TEXT,__text  +[_DKBiomeStreamCache sharedCache]
+0x195f44dbc  __TEXT,__text  -[_CDSpotlightItemRecorder getUserNameOfDonator]
+0x195f44f04  __TEXT,__text  -[_CDSpotlightItemRecorder addInteractions:bundleID:protectionClass:withCompletion:]
+0x195f45398  __TEXT,__text  _getSpotlightReceiverConnectionUIDKey
+0x195f453bc  __TEXT,__text  ___84-[_CDSpotlightItemRecorder addInteractions:bundleID:protectionClass:withCompletion:]_block_invoke.cold.1
+0x195f4546c  __TEXT,__text  ___84-[_CDSpotlightItemRecorder addInteractions:bundleID:protectionClass:withCompletion:]_block_invoke
+0x195f4573c  __TEXT,__text  -[_CDSpotlightItemRecorder getUidOfDonator]
+0x195f45868  __TEXT,__text  _getSpotlightReceiverConnectionUIDKeySymbolLoc
+0x195f45954  __TEXT,__text  ___63+[_DKEvent(INInteraction) relatedContactIdentifiersFromIntent:]_block_invoke
+0x195f459d8  __TEXT,__text  _getRESiriActionsDonationsWhitelistClass
+0x195f45ad4  __TEXT,__text  -[_CDSpotlightItemRecorder _addOrUpdateCoreDuetInteractions:bundleID:]
+0x195f460e8  __TEXT,__text  _OUTLINED_FUNCTION_67
+0x195f460e8  __TEXT,__text  _OUTLINED_FUNCTION_67
+0x195f460f4  __TEXT,__text  _OUTLINED_FUNCTION_67
+0x195f46108  __TEXT,__text  +[_CDConstants mobileMessagesBundleId]
+0x195f46128  __TEXT,__text  -[_CDSpotlightItemRecorder addInteractions:bundleID:protectionClass:]
+0x195f46130  __TEXT,__text  -[INIntent(_CDSpotlightRecorderAdditions) cd_saveToPeopleStore]
+0x195f46138  __TEXT,__text  -[INIntent(_CDSpotlightRecorderAdditions) cd_saveToKnowledgeStore]
+0x195f46140  __TEXT,__text  -[_DKSource bundleID]
+0x195f4614c  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f4614c  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f4614c  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f4614c  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f4614c  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f4614c  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f4615c  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f4615c  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f46168  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f46178  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f46184  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f46190  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f461a0  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f461ac  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f461bc  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x195f461d0  __TEXT,__text  _OUTLINED_FUNCTION_22
+0x195f461dc  __TEXT,__text  _OUTLINED_FUNCTION_22
+0x195f4620c  __TEXT,__text  _OUTLINED_FUNCTION_22
+0x195f46220  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x195f46220  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x195f4622c  __TEXT,__text  _OUTLINED_FUNCTION_22
+0x195f46238  __TEXT,__text  _OUTLINED_FUNCTION_27
+0x195f46238  __TEXT,__text  _OUTLINED_FUNCTION_27
+0x195f46238  __TEXT,__text  _OUTLINED_FUNCTION_27
+0x195f46244  __TEXT,__text  _OUTLINED_FUNCTION_22
+0x195f46254  __TEXT,__text  _OUTLINED_FUNCTION_22
+0x195f46264  __TEXT,__text  _OUTLINED_FUNCTION_22
+0x195f46280  __TEXT,__text  _OUTLINED_FUNCTION_22
+0x195f46290  __TEXT,__text  _OUTLINED_FUNCTION_22
+0x195f462a8  __TEXT,__text  -[_DKEventStream(Protobuf) toPBCodable]
+0x195f46400  __TEXT,__text  -[_DKPRStream setName:]
+0x195f46414  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f46424  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f46444  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f46444  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f46464  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x195f46464  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x195f46478  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f464b0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f464c4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f464d4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f464d4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f464f4  __TEXT,__text  _OUTLINED_FUNCTION_21
+0x195f464f4  __TEXT,__text  _OUTLINED_FUNCTION_21
+0x195f464f4  __TEXT,__text  _OUTLINED_FUNCTION_21
+0x195f46500  __TEXT,__text  _OUTLINED_FUNCTION_27
+0x195f46500  __TEXT,__text  _OUTLINED_FUNCTION_27
+0x195f46500  __TEXT,__text  _OUTLINED_FUNCTION_27
+0x195f46500  __TEXT,__text  _OUTLINED_FUNCTION_27
+0x195f46500  __TEXT,__text  _OUTLINED_FUNCTION_27
+0x195f46500  __TEXT,__text  _OUTLINED_FUNCTION_27
+0x195f46510  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f46530  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f46530  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f4653c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f4654c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f46560  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f46578  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f4658c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f46598  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f465ac  __TEXT,__text  _OUTLINED_FUNCTION_37
+0x195f465ac  __TEXT,__text  _OUTLINED_FUNCTION_37
+0x195f465bc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f465d0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f465d8  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f465ec  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f46600  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f46614  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f46620  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f46628  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f46638  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f46658  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f46678  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x195f46698  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f466a8  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f466a8  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f466b4  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f466c0  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f466ec  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f46710  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f46768  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f46774  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f4678c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f4678c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f4678c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f4678c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f46798  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f467e8  __TEXT,__text  _OUTLINED_FUNCTION_15
+0x195f467e8  __TEXT,__text  _OUTLINED_FUNCTION_15
+0x195f467e8  __TEXT,__text  _OUTLINED_FUNCTION_15
+0x195f467e8  __TEXT,__text  _OUTLINED_FUNCTION_15
+0x195f467f4  __TEXT,__text  _OUTLINED_FUNCTION_44
+0x195f467f4  __TEXT,__text  _OUTLINED_FUNCTION_44
+0x195f46800  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f46810  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f46820  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f4682c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f46840  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f46854  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f46864  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x195f46878  __TEXT,__text  -[_DKPRStream setType:]
+0x195f4688c  __TEXT,__text  -[_DKPREvent setStream:]
+0x195f468a0  __TEXT,__text  -[_DKPREvent setIdentifier:]
+0x195f468b4  __TEXT,__text  -[_DKPREvent setSource:]
+0x195f468c8  __TEXT,__text  -[_DKPREvent setCreationDate:]
+0x195f468fc  __TEXT,__text  -[_DKPREvent setTimeZone:]
+0x195f46930  __TEXT,__text  +[_DKMetadataPersistenceLookupTable keyToIndex]
+0x195f4696c  __TEXT,__text  -[_DKPRMetadataEntry setKey:]
+0x195f46980  __TEXT,__text  -[_DKPRMetadataEntry setIndex:]
+0x195f469b0  __TEXT,__text  -[NSObject(Protobuf) toPBCodable]
+0x195f46b64  __TEXT,__text  -[_DKPRMetadataEntry setValue:]
+0x195f46b78  __TEXT,__text  -[_DKPREvent addMetadata:]
+0x195f46c00  __TEXT,__text  -[_DKPRMetadataEntry value]
+0x195f46c18  __TEXT,__text  -[_DKPREvent .cxx_destruct]
+0x195f46c9c  __TEXT,__text  -[_DKPRValue .cxx_destruct]
+0x195f46cf8  __TEXT,__text  -[_DKPRStream .cxx_destruct]
+0x195f46d40  __TEXT,__text  -[_DKPRMetadataEntry .cxx_destruct]
+0x195f46e18  __TEXT,__text  -[_DKKnowledgeStorage _sendInsertEventsNotificationWithObjects:]
+0x195f46eb4  __TEXT,__text  -[_DKKnowledgeStorage _sendEventsNotificationName:withObjects:]
+0x195f474a0  __TEXT,__text  ___63-[_DKKnowledgeStorage _sendEventsNotificationName:withObjects:]_block_invoke
+0x195f474b0  __TEXT,__text  -[_DKKnowledgeStorageLogging knowledgeStorage:didInsertEventsWithStreamNameCounts:]
+0x195f47540  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f47550  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f47560  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f47570  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f47578  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f475a8  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x195f475a8  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x195f475b8  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f475cc  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f475e0  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f475f0  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f47604  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f4761c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f47644  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x195f47644  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x195f47644  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x195f47650  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f4765c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f4767c  __TEXT,__text  _OUTLINED_FUNCTION_27
+0x195f4767c  __TEXT,__text  _OUTLINED_FUNCTION_27
+0x195f47690  __TEXT,__text  _OUTLINED_FUNCTION_28
+0x195f47690  __TEXT,__text  _OUTLINED_FUNCTION_28
+0x195f4769c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f476ac  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f476bc  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f476cc  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f476e0  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f47754  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f47768  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f47778  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f4778c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f4778c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f4779c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f477b4  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x195f477c4  __TEXT,__text  -[_DKKnowledgeStorageLogging _updateCounter:streamNameCounts:]
+0x195f47968  __TEXT,__text  -[_DKKnowledgeStorageLogging portraitStreamNames]
+0x195f479b8  __TEXT,__text  _OUTLINED_FUNCTION_70
+0x195f479c4  __TEXT,__text  _OUTLINED_FUNCTION_70
+0x195f479d0  __TEXT,__text  -[_DKKnowledgeStorageLogging _sendDistributedNotificationName:streamNameCounts:]
+0x195f47b14  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47b24  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47b38  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47b48  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47b58  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47b90  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x195f47b90  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x195f47b90  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x195f47b90  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x195f47b90  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x195f47ba0  __TEXT,__text  _OUTLINED_FUNCTION_50
+0x195f47ba0  __TEXT,__text  _OUTLINED_FUNCTION_50
+0x195f47bb0  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47bbc  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47bc8  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47bdc  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47bec  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47bf8  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47c18  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47c28  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47c38  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47c48  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47c5c  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47c70  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47c84  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47cfc  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47d08  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x195f47d18  __TEXT,__text  -[_DKKnowledgeStorageLogging streamNamesNotificationWhitelist]
+0x195f47db4  __TEXT,__text  -[_DKPRValue setStringValue:]
+0x195f47dc8  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x195f47dd4  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x195f47ddc  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x195f47df0  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x195f47e04  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x195f47e18  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x195f47e24  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x195f47e34  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x195f47e34  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x195f47e40  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x195f47e4c  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x195f47e5c  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x195f47e68  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x195f47e78  __TEXT,__text  -[_DKPREvent setValue:]
+0x195f47e8c  __TEXT,__text  -[_DKKnowledgeStorageLogging knowledgeStorage:didInsertLocalEventsWithStreamNameCounts:]
+0x195f47f1c  __TEXT,__text  ___63-[_DKKnowledgeStorage _sendEventsNotificationName:withObjects:]_block_invoke_2
+0x195f47f2c  __TEXT,__text  ___72-[_DKKnowledgeStorage saveObjects:tracker:responseQueue:withCompletion:]_block_invoke_3
+0x195f47f44  __TEXT,__text  -[CDMonitorManager deliverNotificationEvent:]
+0x195f48180  __TEXT,__text  +[_DKMotionCategory unknown]
+0x195f481d4  __TEXT,__text  -[_DKEvent stream]
+0x195f481e4  __TEXT,__text  +[_CDEventStreams rateLimiterForEventStreamName:]
+0x195f483ac  __TEXT,__text  __CDFormattedDate.cold.1
+0x195f483c0  __TEXT,__text  ___45-[CDMonitorManager deliverNotificationEvent:]_block_invoke
+0x195f483cc  __TEXT,__text  _OUTLINED_FUNCTION_28
+0x195f483d8  __TEXT,__text  _OUTLINED_FUNCTION_28
+0x195f483d8  __TEXT,__text  _OUTLINED_FUNCTION_28
+0x195f483e4  __TEXT,__text  _OUTLINED_FUNCTION_28
+0x195f483f0  __TEXT,__text  _OUTLINED_FUNCTION_28
+0x195f48400  __TEXT,__text  _OUTLINED_FUNCTION_28
+0x195f48414  __TEXT,__text  _OUTLINED_FUNCTION_28
+0x195f48428  __TEXT,__text  _OUTLINED_FUNCTION_28
+0x195f48434  __TEXT,__text  _OUTLINED_FUNCTION_28
+0x195f48444  __TEXT,__text  -[_DKEvent timeZone]
+0x195f48454  __TEXT,__text  ___94-[_DKActivityThrottler _performOrScheduleWithTimeInterval:name:queue:activityBlock:callDepth:]_block_invoke_2
+0x195f48490  __TEXT,__text  -[_DKActivityThrottler _performNoMoreOftenInSecondsThan:name:activityBlock:throttleBlock:]
+0x195f48604  __TEXT,__text  -[_DKActivityThrottler _performOrScheduleWithTimeInterval:name:queue:activityBlock:callDepth:]
+0x195f488e4  __TEXT,__text  -[_DKThrottledActivity activityThrottler]
+0x195f489ac  __TEXT,__text  -[_DKThrottledActivity performWithMinimumIntervalInSecondsOf:name:queue:activityBlock:]
+0x195f48a44  __TEXT,__text  +[_CDErrorUtilities simulateCrashWithDescription:]
+0x195f48a84  __TEXT,__text  +[_CDErrorUtilities simulateCrashWithDescription:].cold.1
+0x195f48ad8  __TEXT,__text  -[_DKEvent(MOConversion) eventValueClassOf:]
+0x195f48b8c  __TEXT,__text  -[_DKActivityThrottler setDate:forKey:]
+0x195f48c64  __TEXT,__text  -[_DKActivityThrottler dateForKey:]
+0x195f48d40  __TEXT,__text  -[_DKActivityThrottler initWithStore:]
+0x195f48e98  __TEXT,__text  -[_DKThrottledActivity activityThrottler].cold.1
+0x195f48eac  __TEXT,__text  -[_DKObject localCreationDate]
+0x195f48eb8  __TEXT,__text  -[_DKActivityThrottler _minimumIntervalScheduledActionsRemoveActionName:]
+0x195f48f30  __TEXT,__text  _OUTLINED_FUNCTION_47
+0x195f48f44  __TEXT,__text  _OUTLINED_FUNCTION_47
+0x195f48f50  __TEXT,__text  _OUTLINED_FUNCTION_47
+0x195f48f5c  __TEXT,__text  _OUTLINED_FUNCTION_47
+0x195f48f70  __TEXT,__text  -[_DKActivityThrottler _minimumIntervalScheduledActionsAddActionName:]
+0x195f48fe8  __TEXT,__text  -[_DKActivityThrottler _minimumIntervalScheduledActionsContainsActionName:]
+0x195f49064  __TEXT,__text  -[_DKKnowledgeStorageLogging _sendDistributedNotificationName:object:throttledActivityName:]
+0x195f49168  __TEXT,__text  ___92-[_DKKnowledgeStorageLogging _sendDistributedNotificationName:object:throttledActivityName:]_block_invoke
+0x195f491bc  __TEXT,__text  ___39-[_DKActivityThrottler setDate:forKey:]_block_invoke
+0x195f491d0  __TEXT,__text  ___40+[_DKThrottledActivity standardInstance]_block_invoke
+0x195f49240  __TEXT,__text  ___41-[_DKThrottledActivity activityThrottler]_block_invoke
+0x195f49270  __TEXT,__text  +[_DKThrottledActivity standardInstance]
+0x195f49304  __TEXT,__text  -[_DKEvent startDate]
+0x195f49314  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f49324  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f49348  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f49354  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f49364  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f49378  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f4939c  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f493a8  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f493c4  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f493d4  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f493e4  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f493ec  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f49400  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f4940c  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f49418  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f49424  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x195f49438  __TEXT,__text  +[_DKMetadataPersistenceLookupTable keyToIndex].cold.1
+0x195f4944c  __TEXT,__text  -[_CDSpotlightItemRecorder deleteSearchableItemsWithIdentifiers:bundleID:]
+0x195f49454  __TEXT,__text  -[_CDSpotlightItemRecorder deleteSearchableItemsWithIdentifiers:bundleID:withCompletion:]
+0x195f4a050  __TEXT,__text  +[_CDConstants mobileMailBundleId]
+0x195f4a070  __TEXT,__text  -[_CDSpotlightItemRecorder submitOperation:]
+0x195f4a1f4  __TEXT,__text  -[_DKSyncWindow setStartDate:]
+0x195f4a1f4  __TEXT,__text  -[_DKSyncWindow setStartDate:]
+0x195f4a1f4  __TEXT,__text  -[_DKSyncWindow setStartDate:]
+0x195f4a1f4  __TEXT,__text  -[_DKSyncWindow setStartDate:]
+0x195f4a204  __TEXT,__text  -[_DKPredictionTimeline setStartDate:]
+0x195f4a204  __TEXT,__text  -[_DKPredictionTimeline setStartDate:]
+0x195f4a204  __TEXT,__text  -[_DKPredictionTimeline setStartDate:]
+0x195f4a204  __TEXT,__text  -[_DKPredictionTimeline setStartDate:]
+0x195f4a204  __TEXT,__text  -[_DKPredictionTimeline setStartDate:]
+0x195f4a214  __TEXT,__text  ___44-[_CDSpotlightItemRecorder submitOperation:]_block_invoke
+0x195f4a278  __TEXT,__text  -[_CDSpotlightItemRecorder _enqueueOperation:]
+0x195f4a328  __TEXT,__text  ___46-[_CDSpotlightItemRecorder _enqueueOperation:]_block_invoke
+0x195f4a3bc  __TEXT,__text  +[_CDConstants mobilePhoneBundleId]
+0x195f4a3dc  __TEXT,__text  +[_DKQuery predicateForSpotlightEventsWithItemIdentifiers:bundleID:]
+0x195f4a684  __TEXT,__text  ___113-[_CDSpotlightItemRecorder initWithInteractionRecorder:knowledgeStore:rateLimitEnforcer:deletionManagerOverride:]_block_invoke
+0x195f4a844  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x195f4a850  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x195f4a870  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x195f4a888  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x195f4a894  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x195f4a8a0  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x195f4a8ac  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x195f4a8ac  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x195f4a8b8  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x195f4a8c4  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x195f4a8d4  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x195f4a8e4  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x195f4a8f4  __TEXT,__text  +[_DKQuery predicateForEventsWithStreamNames:]
+0x195f4a928  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x195f4a93c  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x195f4a954  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x195f4a960  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x195f4a970  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x195f4a97c  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x195f4a988  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x195f4a998  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x195f4a9a4  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x195f4a9b4  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x195f4a9c0  __TEXT,__text  +[_DKQuery predicateForEventsWithStringValue:]
+0x195f4aa48  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x195f4aa48  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x195f4aa48  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x195f4aa48  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x195f4aa54  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f4aa64  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f4aa74  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f4aa84  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f4aa98  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f4aaa8  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f4aab4  __TEXT,__text  _OUTLINED_FUNCTION_24
+0x195f4aad8  __TEXT,__text  +[_DKApplicationActivityMetadataKey itemRelatedUniqueIdentifier]
+0x195f4aae4  __TEXT,__text  +[_DKQuery predicateForObjectsWithMetadataKey:inValues:]
+0x195f4abc8  __TEXT,__text  +[_DKQuery structuredMetadataKeyPathForMetadataKey:]
+0x195f4ac64  __TEXT,__text  -[_CDSpotlightItemRecorderOperation .cxx_destruct]
+0x195f4ac9c  __TEXT,__text  -[_CDSpotlightItemRecorder runOperation:]
+0x195f4b04c  __TEXT,__text  _OUTLINED_FUNCTION_25
+0x195f4b04c  __TEXT,__text  _OUTLINED_FUNCTION_25
+0x195f4b058  __TEXT,__text  _OUTLINED_FUNCTION_38
+0x195f4b058  __TEXT,__text  _OUTLINED_FUNCTION_38
+0x195f4b068  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x195f4b074  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x195f4b088  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x195f4b098  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x195f4b0a8  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x195f4b0b8  __TEXT,__text  _OUTLINED_FUNCTION_17
+```
+First 1,000 of 9,114.
+

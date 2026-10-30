@@ -1,0 +1,107 @@
+# `SBFSiriSystemAssistantExperienceSettings`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoardFoundation.framework/SpringBoardFoundation`](../userland/System__Library__PrivateFrameworks__SpringBoardFoundation.framework__SpringBoardFoundation.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `PTSettings`
+- 20 instance variables, 20 properties, 41 instance methods, 1 class methods
+
+## Instance variables
+
+```
+d _typeToSiriLightInterfaceDimmingAlpha;
+d _typeToSiriDarkInterfaceDimmingAlpha;
+@"SBFFluidBehaviorSettings" _typeToSiriDimmingAnimationSettings;
+d _typeToSiriPushInScale;
+@"SBFFluidBehaviorSettings" _typeToSiriPushInAnimationSettings;
+d _homeAffordanceGlowInnerLightRadius;
+d _homeAffordanceGlowOuterLightRadius;
+d _homeAffordanceGlowHighlightThickness;
+d _homeAffordanceGlowHighlightWhiteness;
+d _homeAffordanceGlowHighlightAlpha;
+d _homeAffordanceGlowHighlightRadius;
+d _homeAffordanceGlowReverseAnimationDelay;
+d _homeAffordanceGlowEffectiveAnimationDuration;
+@"SBFFluidBehaviorSettings" _homeAffordanceGlowAnimationSettings;
+d _homeAffordancePulseXScale;
+d _homeAffordancePulseYScale;
+d _homeAffordancePulseReverseAnimationDelay;
+d _homeAffordancePulseEffectiveAnimationDuration;
+@"SBFFluidBehaviorSettings" _homeAffordancePulseAnimationSettings;
+@"SBFFluidBehaviorSettings" _homeAffordanceHintCancellationAnimationSettings;
+```
+
+## Properties
+
+```
+@property (Td,N,V_typeToSiriLightInterfaceDimmingAlpha) typeToSiriLightInterfaceDimmingAlpha;
+@property (Td,N,V_typeToSiriDarkInterfaceDimmingAlpha) typeToSiriDarkInterfaceDimmingAlpha;
+@property (T@"SBFFluidBehaviorSettings",&,N,V_typeToSiriDimmingAnimationSettings) typeToSiriDimmingAnimationSettings;
+@property (Td,N,V_typeToSiriPushInScale) typeToSiriPushInScale;
+@property (T@"SBFFluidBehaviorSettings",&,N,V_typeToSiriPushInAnimationSettings) typeToSiriPushInAnimationSettings;
+@property (Td,N,V_homeAffordanceGlowInnerLightRadius) homeAffordanceGlowInnerLightRadius;
+@property (Td,N,V_homeAffordanceGlowOuterLightRadius) homeAffordanceGlowOuterLightRadius;
+@property (Td,N,V_homeAffordanceGlowHighlightThickness) homeAffordanceGlowHighlightThickness;
+@property (Td,N,V_homeAffordanceGlowHighlightWhiteness) homeAffordanceGlowHighlightWhiteness;
+@property (Td,N,V_homeAffordanceGlowHighlightAlpha) homeAffordanceGlowHighlightAlpha;
+@property (Td,N,V_homeAffordanceGlowHighlightRadius) homeAffordanceGlowHighlightRadius;
+@property (Td,N,V_homeAffordanceGlowReverseAnimationDelay) homeAffordanceGlowReverseAnimationDelay;
+@property (Td,N,V_homeAffordanceGlowEffectiveAnimationDuration) homeAffordanceGlowEffectiveAnimationDuration;
+@property (T@"SBFFluidBehaviorSettings",&,N,V_homeAffordanceGlowAnimationSettings) homeAffordanceGlowAnimationSettings;
+@property (Td,N,V_homeAffordancePulseXScale) homeAffordancePulseXScale;
+@property (Td,N,V_homeAffordancePulseYScale) homeAffordancePulseYScale;
+@property (Td,N,V_homeAffordancePulseReverseAnimationDelay) homeAffordancePulseReverseAnimationDelay;
+@property (Td,N,V_homeAffordancePulseEffectiveAnimationDuration) homeAffordancePulseEffectiveAnimationDuration;
+@property (T@"SBFFluidBehaviorSettings",&,N,V_homeAffordancePulseAnimationSettings) homeAffordancePulseAnimationSettings;
+@property (T@"SBFFluidBehaviorSettings",&,N,V_homeAffordanceHintCancellationAnimationSettings) homeAffordanceHintCancellationAnimationSettings;
+```
+
+## Class methods
+
+```
++[SBFSiriSystemAssistantExperienceSettings settingsControllerModule];
+```
+
+## Instance methods
+
+```
+-[SBFSiriSystemAssistantExperienceSettings setDefaultValues];
+-[SBFSiriSystemAssistantExperienceSettings homeAffordanceGlowAnimationSettings];
+-[SBFSiriSystemAssistantExperienceSettings homeAffordanceGlowEffectiveAnimationDuration];
+-[SBFSiriSystemAssistantExperienceSettings homeAffordanceGlowHighlightAlpha];
+-[SBFSiriSystemAssistantExperienceSettings homeAffordanceGlowHighlightRadius];
+-[SBFSiriSystemAssistantExperienceSettings homeAffordanceGlowHighlightThickness];
+-[SBFSiriSystemAssistantExperienceSettings homeAffordanceGlowHighlightWhiteness];
+-[SBFSiriSystemAssistantExperienceSettings homeAffordanceGlowInnerLightRadius];
+-[SBFSiriSystemAssistantExperienceSettings homeAffordanceGlowOuterLightRadius];
+-[SBFSiriSystemAssistantExperienceSettings homeAffordanceGlowReverseAnimationDelay];
+-[SBFSiriSystemAssistantExperienceSettings homeAffordanceHintCancellationAnimationSettings];
+-[SBFSiriSystemAssistantExperienceSettings homeAffordancePulseAnimationSettings];
+-[SBFSiriSystemAssistantExperienceSettings homeAffordancePulseEffectiveAnimationDuration];
+-[SBFSiriSystemAssistantExperienceSettings homeAffordancePulseReverseAnimationDelay];
+-[SBFSiriSystemAssistantExperienceSettings homeAffordancePulseXScale];
+-[SBFSiriSystemAssistantExperienceSettings homeAffordancePulseYScale];
+-[SBFSiriSystemAssistantExperienceSettings setHomeAffordanceGlowAnimationSettings:];
+-[SBFSiriSystemAssistantExperienceSettings setHomeAffordanceGlowEffectiveAnimationDuration:];
+-[SBFSiriSystemAssistantExperienceSettings setHomeAffordanceGlowHighlightAlpha:];
+-[SBFSiriSystemAssistantExperienceSettings setHomeAffordanceGlowHighlightRadius:];
+-[SBFSiriSystemAssistantExperienceSettings setHomeAffordanceGlowHighlightThickness:];
+-[SBFSiriSystemAssistantExperienceSettings setHomeAffordanceGlowHighlightWhiteness:];
+-[SBFSiriSystemAssistantExperienceSettings setHomeAffordanceGlowInnerLightRadius:];
+-[SBFSiriSystemAssistantExperienceSettings setHomeAffordanceGlowOuterLightRadius:];
+-[SBFSiriSystemAssistantExperienceSettings setHomeAffordanceGlowReverseAnimationDelay:];
+-[SBFSiriSystemAssistantExperienceSettings setHomeAffordanceHintCancellationAnimationSettings:];
+-[SBFSiriSystemAssistantExperienceSettings setHomeAffordancePulseAnimationSettings:];
+-[SBFSiriSystemAssistantExperienceSettings setHomeAffordancePulseEffectiveAnimationDuration:];
+-[SBFSiriSystemAssistantExperienceSettings setHomeAffordancePulseReverseAnimationDelay:];
+-[SBFSiriSystemAssistantExperienceSettings setHomeAffordancePulseXScale:];
+-[SBFSiriSystemAssistantExperienceSettings setHomeAffordancePulseYScale:];
+-[SBFSiriSystemAssistantExperienceSettings setTypeToSiriDarkInterfaceDimmingAlpha:];
+-[SBFSiriSystemAssistantExperienceSettings setTypeToSiriDimmingAnimationSettings:];
+-[SBFSiriSystemAssistantExperienceSettings setTypeToSiriLightInterfaceDimmingAlpha:];
+-[SBFSiriSystemAssistantExperienceSettings setTypeToSiriPushInAnimationSettings:];
+-[SBFSiriSystemAssistantExperienceSettings setTypeToSiriPushInScale:];
+-[SBFSiriSystemAssistantExperienceSettings typeToSiriDarkInterfaceDimmingAlpha];
+-[SBFSiriSystemAssistantExperienceSettings typeToSiriDimmingAnimationSettings];
+-[SBFSiriSystemAssistantExperienceSettings typeToSiriLightInterfaceDimmingAlpha];
+-[SBFSiriSystemAssistantExperienceSettings typeToSiriPushInAnimationSettings];
+-[SBFSiriSystemAssistantExperienceSettings typeToSiriPushInScale];
+```

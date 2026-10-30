@@ -1,0 +1,887 @@
+# `com.apple.driver.AppleCentauriManager`
+
+- Name: AppleCentauriManager
+- Version: `1.0.0d1`
+- UUID: `4DBC2E4E-C08A-3376-9C8A-4692C32A052C`
+- Source version: `129.0.0.0.0`
+- Depends on: [`com.apple.driver.AppleEmbeddedPCIE`](com.apple.driver.AppleEmbeddedPCIE.md) 1.0.0, [`com.apple.driver.AppleFirmwareKit`](com.apple.driver.AppleFirmwareKit.md) 1.0, [`com.apple.driver.corecapture`](com.apple.driver.corecapture.md) 1.0.0, [`com.apple.iokit.IOUSBHostFamily`](com.apple.iokit.IOUSBHostFamily.md) 1.0.1, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0.0b2, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0.0b2, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0.0b2, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0.0b2
+
+## Device-tree nodes it binds (1) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/centauri`](../devicetree/root__centauri.md) | `AppleCentauriManagerHelper` | `centauri` |
+
+## IOKit personalities (4) [KC]
+
+### AppleCentauriManagerBuiltInMatch
+- `CFBundleIdentifier`: `com.apple.driver.AppleCentauriManager`
+- `CFBundleIdentifierKernel`: `com.apple.driver.AppleCentauriManager`
+- `IOClass`: `AppleCentauriManager`
+- `IOMatchCategory`: `com.apple.driver.AppleCentauriManager`
+- `IOPMAOTAllow`: `384`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleCentauriManager`
+- `IOPropertyExistsMatch`: `centauri-builtin`
+- `IOProviderClass`: `IOPCIDevice`
+- `IOUserClientClass`: `AppleCentauriManagerUserClient`
+
+### AppleCentauriManagerHelperMatch
+- `CFBundleIdentifier`: `com.apple.driver.AppleCentauriManager`
+- `CFBundleIdentifierKernel`: `com.apple.driver.AppleCentauriManager`
+- `IOClass`: `AppleCentauriManagerHelper`
+- `IOMatchCategory`: `AppleCentauriManagerHelper`
+- `IONameMatch`: `centauri`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleCentauriManager`
+- `IOPropertyExistsMatch`: `pci-bridge-handle`
+- `IOProviderClass`: `IOService`
+
+### AppleCentauriManagerPCIMatch
+- `CFBundleIdentifier`: `com.apple.driver.AppleCentauriManager`
+- `CFBundleIdentifierKernel`: `com.apple.driver.AppleCentauriManager`
+- `IOClass`: `AppleCentauriManager`
+- `IOMatchCategory`: `com.apple.driver.AppleCentauriManager`
+- `IOPCIMatch`: `0x1900106b`
+- `IOPCITunnelCompatible`: `True`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleCentauriManager`
+- `IOProviderClass`: `IOPCIDevice`
+- `IOUserClientClass`: `AppleCentauriManagerUserClient`
+
+### AppleCentauriManagerProtiumMatch
+- `CFBundleIdentifier`: `com.apple.driver.AppleCentauriManager`
+- `CFBundleIdentifierKernel`: `com.apple.driver.AppleCentauriManager`
+- `IOClass`: `AppleCentauriManager`
+- `IOMatchCategory`: `com.apple.driver.AppleCentauriManager`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleCentauriManager`
+- `IOPropertyExistsMatch`: `centauri-builtin-protium`
+- `IOProviderClass`: `IOPCIDevice`
+- `IOUserClientClass`: `AppleCentauriManagerUserClient`
+
+
+## C++ classes (5) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleCentauriManager` | 0x250 | IOService → IORegistryEntry |
+| `AppleCentauriManagerHelper` | 0x88 | IOService → IORegistryEntry |
+| `AppleCentauriManagerLogger` | 0x38 |  |
+| `AppleCentauriManagerUSBController` | 0x68 |  |
+| `AppleCentauriManagerUserClient` | 0xe0 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1560)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x000064b0 off=0x003fa9b0-0x00400e60 addr=0xfffffe00073fe9b0-0xfffffe0007404e60 r--/r--   __TEXT            
+	sz=0x00005cb1 off=0x003fb028-0x00400cd9 addr=0xfffffe00073ff028-0xfffffe0007404cd9               __TEXT.__cstring          (CstringLiterals)
+	sz=0x00000180 off=0x00400ce0-0x00400e60 addr=0xfffffe0007404ce0-0xfffffe0007404e60               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x0001b414 off=0x01ad8120-0x01af3534 addr=0xfffffe0008adc120-0xfffffe0008af7534 r-x/r-x   __TEXT_EXEC       
+	sz=0x0001ad34 off=0x01ad8120-0x01af2e54 addr=0xfffffe0008adc120-0xfffffe0008af6e54          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000006e0 off=0x01af2e54-0x01af3534 addr=0xfffffe0008af6e54-0xfffffe0008af7534          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x000002c8 off=0x04936d08-0x04936fd0 addr=0xfffffe000b93ad08-0xfffffe000b93afd0 rw-/rw-   __DATA            
+	sz=0x00000188 off=0x04936d08-0x04936e90 addr=0xfffffe000b93ad08-0xfffffe000b93ae90               __DATA.__data             
+	sz=0x000000f0 off=0x00000000-0x000000f0 addr=0xfffffe000b93ae90-0xfffffe000b93af80               __DATA.__common           (Zerofill)
+	sz=0x00000050 off=0x00000000-0x00000050 addr=0xfffffe000b93af80-0xfffffe000b93afd0               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00001ff8 off=0x01020c18-0x01022c10 addr=0xfffffe0008024c18-0xfffffe0008026c10 rw-/rw-   __DATA_CONST      
+	sz=0x00000028 off=0x01020c18-0x01020c40 addr=0xfffffe0008024c18-0xfffffe0008024c40         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000028 off=0x01020c40-0x01020c68 addr=0xfffffe0008024c40-0xfffffe0008024c68         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00001980 off=0x01020c68-0x010225e8 addr=0xfffffe0008024c68-0xfffffe00080265e8         __DATA_CONST.__const            
+	sz=0x000001c0 off=0x010225e8-0x010227a8 addr=0xfffffe00080265e8-0xfffffe00080267a8         __DATA_CONST.__kalloc_type      
+	sz=0x00000370 off=0x010227a8-0x01022b18 addr=0xfffffe00080267a8-0xfffffe0008026b18         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000f8 off=0x01022b18-0x01022c10 addr=0xfffffe0008026b18-0xfffffe0008026c10         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 251 at 0x04ad5244
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     4DBC2E4E-C08A-3376-9C8A-4692C32A052C
+008: LC_SOURCE_VERSION           129.0.0.0.0
+009: LC_FUNCTION_STARTS          offset=0x004a9be48 size=0x338
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleExecutable`: `AppleCentauriManager`
+- `CFBundleIdentifier`: `com.apple.driver.AppleCentauriManager`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleCentauriManager`
+- `CFBundleNumericVersion`: `16785409`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1.0.0d1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `OSBundleRequired`: `Auxiliary`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleCentauriManager.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198901626448`
+- `_PrelinkExecutableRelativePath`: `AppleCentauriManager`
+- `_PrelinkExecutableSize`: `146308`
+- `_PrelinkExecutableSourceAddr`: `-2198901626448`
+- `_PrelinkKmodInfo`: `-2198829028088`
+
+## Strings (733) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `%s::%s: replacing existing timer \n`
+- `None`
+- `centauri-dext-launch-timeout`
+- `%s::%s: failed to create matching dict \n`
+- `\"service\" @%s:%d`
+- `\"failed to allocate OSDictionary\" @%s:%d`
+- `%s::%s: failed to find a IOPCIDevice provider for client \n`
+- `%s::%s: failed to set target property \n`
+- `%s::%s: %s (dextCrash: %u) \n`
+- `%s::%s: failed to set clientPropertyData object \n`
+- `%s::%s: no pipes \n`
+- `%s::%s: failed to create OSArray for client notifiers \n`
+- `%s::%s: failed to create OSDictionary for client relaunch state \n`
+- `%s::%s: error detect function is needed to use warm reset \n`
+- `%s::%s: failed to find function-error_detect \n`
+- `com.apple.ConnectivityDriver.PortEnableResult`
+- `site.AppleCentauriManagerHelper`
+- `\"propLen && propData\" @%s:%d`
+- `%s::%s: failed to get pipes: %s %s \n`
+- `%s::%s: removing %s \n`
+- `\"CentauriAlpha dext launch timed out\" @%s:%d`
+- `interface`
+- `%s::%s: location 0x%llx, nibble 0x%x, ignore %u \n`
+- `site._CCOptionBuffer`
+- `start_block_invoke_4`
+- `IOUserClientDefaultLockingSetProperties`
+- `%s::%s: pci match \n`
+- `setBootTimestamp`
+- `%s::%s: failed to disable port \n`
+- `%s::%s: failed to copy collection \n`
+- `CentauriControl`
+- `setHardwareHealth`
+- `\"fErrorEventActionDict->setObject(forClient->getName(), errorAction)\" @%s:%d`
+- `free`
+- `In Low Power: %s\n`
+- `idVendor`
+- `%s::%s: invalid vendor id %u \n`
+- `isValidClient`
+- `\"fTargetName[0]\" @%s:%d`
+- `\"fClientRelaunchStateDict->setObject(pciDeviceName, relaunchReasonObj)\" @%s:%d`
+- `AppleCentauriManagerHelper`
+- `%s::%s: failed to add timer event source (ret = 0x%x) \n`
+- `%s::%s: failed to create notifier \n`
+- `\"IOService::getPMRootDomain()->releasePMAssertion(fPMAssertionID) == kIOReturnSuccess\" @%s:%d`
+- `centauri-reenum-waittime`
+- `%s::%s: super init failed \n`
+- `%s::%s: could not find configuration with interface descriptor \n`
+- `centauri-module-factory-env`
+- `centauri-panic-link-training-timeout`
+- `%s::%s: returning success \n`
+- `%s::%s: bad args \n`
+- `\"deadlineObj != nullptr\" @%s:%d`
+- `\"IORecursiveLockHaveLock(fLock)\" @%s:%d`
+- `centauri-driver-sim-sleep-enable`
+- `\"failed to copy collection\" @%s:%d`
+- `\"eventName && timeoutMs\" @%s:%d`
+- `Client Relaunch State:\n`
+- `\"resetCountSinceStaleObject != nullptr\" @%s:%d`
+- `CentauriBeta`
+- `%s::%s: fault reporter is busy \n`
+- `%s::%s: client is already open %s-0x%llx \n`
+- `enable-ptm`
+- `\"unexpected timer event\" @%s:%d`
+- `Error Detect Function: %s\n`
+- `centauri-consoleloglevel`
+- `probe`
+- `removing`
+- `%s::%s: stale user server: %s \n`
+- `12111112122212121`
+- `%s::%s: pci-match for built-in; fail probe \n`
+- `%s::%s: failed to create command gate \n`
+- `%s::%s: failed to turn %s OTP (ret = 0x%x) \n`
+- `%s::%s: Attempt to enter sim-sleep when already in sim sleep... ignoring \n`
+- `prepareChipForReset`
+- `com.apple.ConnectivityDriver.WarmResetResult`
+- `com.apple.ConnectivityDriver.UserServerState`
+- `%s::%s: selector %u \n`
+- `dext is crashed`
+- `DextRelaunchState`
+- `setupErrorDetectGPIO`
+- `com.apple.driver.AppleCentauriBeta`
+- `ChipPowerState`
+- `%s::%s: failed to reset bitmode controller 0x%08x \n`
+- `%s::%s: failed to set initial configuration 0x%08x \n`
+- `Slow Adaptive Clocking Function: %s\n`
+- `Manual Enable: %s\n`
+- `%s::%s: not a usb host device! \n`
+- `com.apple.private.applecentaurimanager.user-access`
+- `centauri`
+- `IOPMUPrimary`
+- `%s::%s: called with key %s \n`
+- `GPIO Error Detect State: %s\n`
+- `%s::%s: failed to issue FTDI reset 0x%08x \n`
+- `%s::%s: failed to get port control \n`
+- `%s::%s: target link speed at %s: gen %u \n`
+- `CentauriAlpha`
+- `%s::%s: bad argument \n`
+- `%s::%s: boot-arg to disable built-in; fail probe \n`
+- `%s::%s: Maximum Link Speed not setup \n`
+- `function-warm_reset`
+- `\"(*outMetadata)->setObject(kAppleCentauriManagerSACFunctionProperty, fSlowAdaptiveClockingFunction ? kOSBooleanTrue : kOSBooleanFalse)\" @%s:%d`
+- `\"relaunchReasonObj != nullptr\" @%s:%d`
+- `createClientPropertyDictObject`
+- `CentauriMgr`
+- `%s::%s: failed to create OSArray for clients \n`
+- `N/A`
+- `\"re-probe failed (ret = 0x%x)\" @%s:%d`
+- `%s::%s: changePowerStateTo failed (ret = 0x%x) \n`
+- `initWithTask`
+- `pcic`
+- `centauri-builtin-protium`
+- `%s::%s: bridge matching unsupported without centauri-module-factory-env boot-arg \n`
+- `com.apple.driver.AppleCentauriManager.recovery`
+- `%s::%s: Unable to proceed -- centauri-driver-sim-sleep capability is not enabled. \n`
+- `%s::%s: skipping reenumeration since error recovery is underway (error %s) \n`
+- `\"timeSinceFirstStaleObject != nullptr\" @%s:%d`
+- `%s::%s: kUSBProductString not found \n`
+- `setupNotifiers`
+- `powerOn`
+- `reenumeration`
+- `%s::%s: PCIe Express capability not found on root port (capHeader = 0x%08x) \n`
+- `%s::%s: chip is already powered off \n`
+- `releasePowerAssertion`
+- `%s::%s: type: 0x%x \n`
+- `%s::%s: failed to allocate lock \n`
+- `%s::%s: link training timeout reason: %u \n`
+- `%s::%s: %u \n`
+- `close`
+- `handleGPIOErrorStateChange`
+- `Is FPGA Target: %s\n`
+- `Power Off In Progress: %s\n`
+- `Boot Timestamps:\n`
+- `failed`
+- `\"propData[propLen - 1] == '\\\\0'\" @%s:%d`
+- `%s::%s: not our usb host interface! \n`
+- `site.AppleCentauriManagerLogger`
+- `initWithProvider`
+- `found`
+- `\"dict && (durationObject != nullptr)\" @%s:%d`
+- `%s::%s: invalid factory method parameters \n`
+- `DriverLogs`
+- `%s::%s: failed to get provider \n`
+- `%s::%s: centauri-panic-link-training-timeout boot-arg set \n`
+- `\"failed first warm reset (ret = 0x%x)\" @%s:%d`
+- `SecondWarmResetSuccess`
+- `%s::%s: power on/off unsupported for platform %u \n`
+- `CentauriBetaDextLaunch`
+- `%s::%s: GPIO write request failed 0x%08x \n`
+- `\"nub->changePowerStateToPriv(kIOPCIDeviceOnState) == kIOReturnSuccess\" @%s:%d`
+- `powerOnOffSequence_block_invoke`
+- `ManagerStartResult`
+- `[Fatal]Centauri-DextLaunchTimeout-Control`
+- `%s::%s: error filling buffer, bytesPrinted: %d kLineLength: %u \n`
+- `Client Array Count: %u\n`
+- `\"timestamp != nullptr\" @%s:%d`
+- `shouldIgnoreDevice`
+- `com.apple.driver.AppleCentauriManager`
+- `function-sac`
+- `inLPM`
+- `%s::%s: failed to set object \n`
+- `chipResetOnWorkloop`
+- `PowerTableVersions`
+- `did not find`
+- `lpm3`
+- `Chip Powered On: %s\n`
+- `handleOSStringProperty`
+- `reenumerationPortEnableStart`
+- `%s::%s: changePowerStateToPriv failed (ret = 0x%x) \n`
+- `%s::%s: publish notification for %s \n`
+- `%s::%s: Attempt to exit sim-sleep when not in sim sleep... ignoring \n`
+- `com.apple.ConnectivityDriver.TerminationDuration`
+- `site.AppleCentauriManager`
+- `%s::%s: failed to attach \n`
+- `%s::%s: failed to add event source for reenumeration (ret = 0x%x) \n`
+- `%s::%s: publish occurred for %s \n`
+- `%s::%s: found IOPP bridge \n`
+- `SecondWarmResetFailed`
+- `sleepWakeInterestNotification`
+- `%s::%s: event: %s \n`
+- `StateSnapshots`
+- `\"AppleCentauriManager: Dext crashed for pci device %s\" @%s:%d`
+- `\"non-built-in client %s on %s; use centauri-builtin-disable=1 boot-arg\" @%s:%d`
+- `doReenumeration`
+- `%s::%s: SAC clear victims failed (ret = 0x%x) \n`
+- ` %02hhx`
+- `\"duration != nullptr\" @%s:%d`
+- `Other`
+- `%s::%s: interface attached before device configuration \n`
+- `site.union _CCOptionBuffer`
+- `\"failed second warm reset (ret = 0x%x)\" @%s:%d`
+- `\"eventObj\" @%s:%d`
+- `%s::%s: already have a tx pipe, ignoring \n`
+- `%s::%s: failed to create interrupt event source for chip reset \n`
+- `lpm1`
+- `\"fIOPPBridge\" @%s:%d`
+- `Reset`
+- `removeClientPropertiesForCondition`
+- `clientPropertyData`
+- `\"timeToFirstStaleObject != nullptr\" @%s:%d`
+- `setupPCIDeviceNotifiers_block_invoke`
+- `closeAll`
+- `IOUserServer`
+- `DextLaunchTimeout`
+- `manual-enable-defer-scan`
+- `sim`
+- `%s::%s: failed to create OSDictionary \n`
+- `has not`
+- `FirstWarmResetSuccess`
+- `centauri-panic-dext-crash`
+- `%s::%s: no device \n`
+- `%s::%s: failed to create data log stream \n`
+- `AppleCentauriManagerUserClient`
+- `IOPMUBootLPMCtrl`
+- `lpm2`
+- `getClientOfPCIDevice`
+- `not null`
+- `Post Reenumeration: %s\n`
+- `%s::%s: invalid interface id %u \n`
+- `%s::%s: GPIO %u is already %u \n`
+- `BootTimestamps`
+- `IOPCIDevice`
+- `Link Training Timeout Reason: %s\n`
+- `       Data:`
+- `handleOSDictionaryProperty`
+- `%s::%s: wakeOnROM: %d \n`
+- `%s::%s: invalid provider \n`
+- `%s::%s: failed to create OSDictionary for firmware boot durations \n`
+- `unknown specifier`
+- `[NonFatal]Centauri-LinkTrainingTimeout-ROM`
+- `%s::%s: failed to set target link speed %u ret: %x \n`
+- `interfaceDetached`
+- `IOUserClientDefaultLockingSingleThreadExternalMethod`
+- `getPlatform`
+- `%s::%s: error event action is not registered \n`
+- `Duration`
+- `LinkTrainingTimeout`
+- `%s::%s: platform supports deferred root port scan \n`
+- `setGPIOState`
+- `%s::%s: GPIO read failed 0x%08x length %u \n`
+- `%s::%s: probe success \n`
+- `\"setProperty(kCentauriManagerChipPowerStateKey, on)\" @%s:%d`
+- `%s::%s: OTP GPIO is unsupported on built-in module \n`
+- `%s::%s: SAC add victims failed (ret = 0x%x) \n`
+- `setChipInfo`
+- `%s::%s: failed to allocate interface matching objects \n`
+- `\"IORecursiveLockHaveLock(fUSBAccessLock)\" @%s:%d`
+- `AppleCentauriManagerUSBController.cpp`
+- `\"failed to turn %s power (ret = 0x%x)\" @%s:%d`
+- `centauri-termination-timeout`
+- `%s::%s: port on unsupported for platform %u \n`
+- `\"errDetectState == 0 || errDetectState == 1\" @%s:%d`
+- `Client Properties:\n`
+- `%s::%s: failed to create interface match notifiers \n`
+- `%s::%s: no service at thunderbolt path \n`
+- `\"!fIOPPBridge\" @%s:%d`
+- `%s::%s: properties are not a dictionary \n`
+- `dextCrashHandler`
+- `%s::%s: failed to create osdata object for StateDump \n`
+- `ErrorDetectGPIO`
+- `%s::%s: not a usb host interface! \n`
+- `%s::%s: failed to create log pipe with provider %s-0x%llx \n`
+- `%s`
+- `%s::%s: Triggering sim sleep exit due to power %s \n`
+- `\"failed set object in dict for key %s and timestamp %llu\" @%s:%d`
+- `%s::%s: performing chip reset \n`
+- `PTM Clock Granularity: %hhu\n`
+- `firstPortEnableStart`
+- `%s::%s: failed to get device descriptor \n`
+- `sendDeviceRequest`
+- `sendBulkIO`
+- `locationID`
+- `%s::%s: failed to schedule immediate wake \n`
+- `%s::%s: received system will not sleep after will sleep \n`
+- `%s::%s: bad arg \n`
+- `%s::%s: GPIO error detect normal state \n`
+- `com.apple.driver.AppleCentauriControl`
+- `%s::%s: error appending bytes to bufferObject \n`
+- `Stale`
+- `%s::%s: created new dictionary \n`
+- `getTimestampsDictFromRegistry`
+- `\"fThis\" @%s:%d`
+- `%s::%s: port off; sleeping for %u ms \n`
+- `%s::%s: invalid product id %u \n`
+- `%s::%s: no memory \n`
+- `%s::%s: failed to create OSDictionary for client properties \n`
+- `%s::%s: unable to turn %s PCI Link:  (ret = 0x%x) \n`
+- `kUSBVendorString`
+- `%s::%s: failed to get client process info \n`
+- `FirmwareBootArgs`
+- `AppleCentauriManager.cpp`
+- `%s::%s: centauri-builtin-protium fail probe \n`
+- `%s::%s: failed to create OSDictionary for error actions \n`
+- `%s::%s: Error detect high after first warm reset and trying second warm reset \n`
+- `%s::%s: failed to save stats: (result = 0x%x) \n`
+- `%s::%s: Instantiating... centauri-module-factory-env %u \n`
+- `%s::%s: client count: %u \n`
+- `%s::%s: notify client about prior completion timeout \n`
+- `Warm Reset Function: %s\n`
+- `Use Warm Reset: %s\n`
+- `handleTimestampsProperty`
+- `ROM`
+- `%s::%s: no configurations \n`
+- `%s::%s: failed to register priority sleep/wake interest \n`
+- `\"userServerKey\" @%s:%d`
+- `bInterfaceNumber`
+- `%s::%s: previously instantiated, failing probe \n`
+- `v20@?0^{IOInterruptEventSource=^^?i^{IOEventSource}^{OSObject}^?B^{IOWorkLoop}^v^{ExpansionData}^{IOService}iIIBB^{ExpansionData}}8i16`
+- `%s::%s: %s slow adaptive clocking function \n`
+- `%s::%s: merge failed \n`
+- `IOUSBHostDevice`
+- `%s::%s: failed to get upstream bridge \n`
+- `%s::%s: powerState: %lu \n`
+- `WiFiHardwareHealthy`
+- `open`
+- `%s::%s: invalid port enable function \n`
+- `centauri-panic-link-down`
+- `clearSACFrequency`
+- `%s::%s: no thunderbolt port control \n`
+- `\"relaunchReason != nullptr\" @%s:%d`
+- `checkUserServerState`
+- `null`
+- `\"dict && stageObject\" @%s:%d`
+- `CompletionTimeout`
+- `reenumerationPortEnableEnd`
+- `Hibernation`
+- `function-reset`
+- `%s::%s: lpm2ctrl=%u \n`
+- `Reenumeration`
+- `%s::%s: AppleCentauriManagerHelper %s started, ret = %x \n`
+- `\"failed to find centauri EDT node\" @%s:%d`
+- `ChipID`
+- `PTM Supported: %s\n`
+- `maximum-link-speed`
+- `\"wait for termination failed (ret = 0x%x) timeout %us\" @%s:%d`
+- `%s::%s: chip is crashed \n`
+- `%s::%s: notify client about prior link training timeout \n`
+- `FusingConfig`
+- `%s::%s: port is %s already \n`
+- `\"unexpected link down with error detect - no recovery path\" @%s:%d`
+- `Stage`
+- `%s::%s: using cc log level %u \n`
+- `%s::%s: failed Start (ret = 0x%x) \n`
+- `%s::%s: port is already  %s \n`
+- `%s::%s: ptm supported, clock granularity: %u ns \n`
+- `%s::%s: failed to set autoClearConditions object \n`
+- `ResetCountSinceStale`
+- `config`
+- `%s::%s: already have an rx pipe, ignoring \n`
+- `%s::%s: failed to enable MPSSE mode 0x%08x \n`
+- `start`
+- `\"failed to set object\" @%s:%d`
+- `%s::%s: port %s failed (ret = 0x%x) \n`
+- `%s::%s: bad parameter \n`
+- `on`
+- `%s::%s: no thunderbolt path \n`
+- `IOUserService`
+- `%s::%s: GPIO state is 0x%x \n`
+- `1211111212221212111111111111`
+- `%s::%s: failed to get client pid \n`
+- `centauri-panic-dext-launch-timeout`
+- `externalMethod`
+- `ECID`
+- `Target Name: %s\n`
+- `TimeSinceFirstStale`
+- `%s::%s: invalid bridge handle property \n`
+- `%s::%s: failed to initialize data buffer \n`
+- `%s::%s: init userclient for client %s \n`
+- `%s::%s: failed to get bridge \n`
+- `TargetName`
+- `\"keysToRemoveArray\" @%s:%d`
+- `saveDriverBootTimestamp`
+- `%s::%s: failed to add interrupt event source to workloop (ret = 0x%x) \n`
+- `handleOSStringPropertyForCentauriNode`
+- `deviceAttached`
+- `%s::%s: failed to disable errors 0x%08x \n`
+- `systemWillShutdown`
+- `systemWillShutdown_block_invoke`
+- `setPowerState_block_invoke`
+- `%s::%s: failed to create OSNumber \n`
+- `notifyPendingErrorEvents`
+- `setWakeOnROM`
+- `setInitialConfiguration`
+- `loggerstream`
+- `%s::%s: failed to create timer event source \n`
+- `%s::%s: failed to start USB controller \n`
+- `%s::%s: getting GPIO error status failed 0x%x \n`
+- `CentauriManager`
+- `handleTimeout`
+- `%s::%s: buffer filled, totalBytesPrinted: %u bufferSize: %u \n`
+- `%s::%s: initial config write request failed 0x%08x \n`
+- `%s::%s: centauri-builtin fail probe (isFpgaTarget = %u) \n`
+- `%s::%s: setting up error detect GPIO failed (ret = 0x%x) \n`
+- `Built In: %s\n`
+- `   %s: 0x%llx\n`
+- `   %s: %llu\n`
+- `\"eventNameObject\" @%s:%d`
+- `SACFunctionAvailable`
+- `%s::%s: unable to set property on self \n`
+- `%s::%s: Enabling centauri-driver-sim-sleep capability \n`
+- `%s::%s: failed to create service matching dict \n`
+- `centauri-control`
+- `ErrorDetectGPIOLinkDown`
+- `%s::%s: failed to create fault reporter \n`
+- `%s::%s: chip is not powered on... ignoring enter/exit sim-sleep request \n`
+- `\"client\" @%s:%d`
+- `%s::%s: ptm not supported \n`
+- `removeSACFrequency`
+- `com.apple.driver.AppleCentauriAlpha`
+- `Sim Sleep Feature Enabled: %s\n`
+- `%s::%s: failed super start \n`
+- `%s::%s: failed to create workloop \n`
+- `%s::%s: thunderbolt path not set on upstream bridge \n`
+- `%s::%s: enable %u \n`
+- `Result`
+- `reenumerationPortDisableStart`
+- `idProduct`
+- `%s::%s: failed to create interrupt event source for reenumeration \n`
+- `%s::%s: Failed to create matching dictionary for AppleDialogSPMIPMU \n`
+- `%s::%s: bootLPMFWOK=%u \n`
+- `%s::%s: driver not initialized. \n`
+- `%s::%s: schedule a wake (%s) \n`
+- `LinkDown`
+- `Invalid`
+- `%s::%s: failed to disable events 0x%08x \n`
+- `AppleCentauriManagerLogger`
+- `i8@?0`
+- `portOnOffSequence_block_invoke`
+- `%s::%s: failed to set ecid property \n`
+- `setting`
+- `handleLinkDownError`
+- `com.apple.ConnectivityDriver.DextLaunchResult`
+- `%s::%s: failed to create PMU notifier \n`
+- `%s::%s: lpm3ctrl=%u \n`
+- `apcieErrorHandler`
+- `chipReset`
+- `TotalResetCount`
+- `\"false\" @%s:%d`
+- `deviceDetached`
+- `%s::%s: invalid GPIO \n`
+- `1211111`
+- `%s::%s: found unexpected key \n`
+- `IOPMUBootLPMFWOK`
+- `%s::%s: %s %s; auto clear conditions: 0x%x \n`
+- `%s::%s: failed to add event source (ret = 0x%x) \n`
+- `portEnable`
+- `\"fLinkTrainingTimeoutReason != kCentauriManagerLinkTrainingTimeoutReasonNone\" @%s:%d`
+- `%s::%s: failed to add event source for chip reset (ret = 0x%x) \n`
+- `%s::%s: not built in \n`
+- `\"failed to allocate OSNumber\" @%s:%d`
+- `-restore`
+- `\"data\" @%s:%d`
+- `   %s:\n`
+- `Firmware Boot Timestamps:\n`
+- `%s::%s: failed to set apcie error handler (ret = 0x%x) \n`
+- `setChipIdentifiersInRegistry`
+- `\"key\" @%s:%d`
+- `IOUserServerName`
+- `\"failed to create IOUserServer matching dict\" @%s:%d`
+- `timerFired`
+- `1211111111111`
+- `%s::%s: failed to find warm reset function \n`
+- `FirstPortOn`
+- `saveFLRTimestamps`
+- `\"gpioProvider\" @%s:%d`
+- `%s::%s: centauri-panic-link-down boot-arg set (0x%x) \n`
+- `%s::%s: failed to enable port hardware (ret=0x%x) \n`
+- `%s::%s: usb attach before detach \n`
+- `restart`
+- `%s::%s: permitted for control client only \n`
+- `Emulation`
+- `%s::%s: invalid configuration descriptor at %u \n`
+- `has`
+- `%s::%s: LPM entered, skip power off. \n`
+- `%s::%s: invalid reset function \n`
+- `ChipRevision`
+- `\n`
+- `Simulation`
+- `%s::%s: waiting for pipes \n`
+- `centauri-builtin-disable`
+- `%s::%s: failed to set WiFiHardwareHealthy property \n`
+- `\"eventName\" @%s:%d`
+- `Wake On ROM: %s\n`
+- `AppleCentauriManagerUSBController`
+- `%s::%s: locationID not found \n`
+- `CentauriManagerLogs`
+- `/Library/Caches/com.apple.xbs/EDF630A9-DA40-4C40-85DB-22132A13777B/TemporaryDirectory.D5OprX/Sources/AppleCentauri_kexts/AppleCentauriManager/AppleCentauriManagerLogger.cpp`
+- `IOUserClientDefaultLocking`
+- `IOUserClientEntitlements`
+- `12111112122212121111111111111111111111122222222212212121112222111211122222`
+- `fpga`
+- `%s::%s: found unexpected key type \n`
+- `FirmwareBootTimestamps`
+- `%s::%s: registerPowerDriver failed (ret = 0x%x) \n`
+- `%s::%s: ptm root role not supported \n`
+- `%s::%s: failed to set chip id property \n`
+- `\"userServerName\" @%s:%d`
+- `Client Error Notify: %s\n`
+- `Dext`
+- `%s::%s: failed to get device iterator \n`
+- `%s::%s: GPIO read request failed 0x%08x \n`
+- `%s::%s: failed to create lock \n`
+- `%s::%s: failed to set port control property \n`
+- `resetPortDisableStart`
+- `resetPortDisableEnd`
+- `%s::%s: centauri-driver-sim-sleep-enable = %u, but noidle=1 boot-arg wasn't found -- unsupported \n`
+- `\"dict\" @%s:%d`
+- `fetchClientProperty`
+- `AppleCentauriManager`
+- `%s::%s: failed to create OSDictionary for boot timestamps \n`
+- `%s::%s: in LPM: %u \n`
+- `%s::%s: client no longer valid \n`
+- `\"relaunchState != nullptr\" @%s:%d`
+- `\"newService\" @%s:%d`
+- `%s::%s: AppleCentauriManager %s started, ret = %x \n`
+- `%s::%s: ignoring for non-built-in \n`
+- `\"fClientArray\" @%s:%d`
+- `Version: %s\n`
+- `collectStateSnapshot_block_invoke`
+- `\"eventName && payload\" @%s:%d`
+- `%s::%s: port control function doesn't exist \n`
+- `%s::%s: failed to issue bulk read 0x%08x \n`
+- `%s::%s: found client \n`
+- `%s::%s: squashing since power off is in progress \n`
+- `\"failed to create property matching dict\" @%s:%d`
+- `IsBuiltIn`
+- `%s::%s: using console log level %u \n`
+- `FaultReporter`
+- `%s::%s:  \n`
+- `%s::%s: Found IOPMUPrimary service under %s \n`
+- `initWithManager`
+- `%s::%s: failed to get descriptors %s %s \n`
+- `pci-bridge`
+- `%s::%s: built-in property match (centauri-builtin-disable = %u) \n`
+- `%s::%s: failed to get IOPCI2PCIBridge \n`
+- `%s::%s: skip power off for external module. \n`
+- `[NonFatal]Centauri-WarmReset-Failed`
+- `%s::%s: missing centauri device tree service \n`
+- `\"Power %s request without FTDI USB wire connected\" @%s:%d`
+- `\"fMaxPCILinkSpeed > 0\" @%s:%d`
+- `%s::%s: lost instantiating race, failing probe \n`
+- `getIOPPBridge`
+- `boot`
+- `cancelTimer`
+- `false`
+- `\"bridgeEntry->getProperty(\\\"manual-enable-defer-scan\\\")\" @%s:%d`
+- `BulkInput`
+- `centauri-ccloglevel`
+- `%s::%s: failed to set BTHardwareHealthy property \n`
+- `%s::%s: chip revision: %s \n`
+- `%s::%s: failed to create client prop dict \n`
+- `%s::%s: dext recovery unsupported for platform %u \n`
+- `triggerFaultReport`
+- `chip in ROM`
+- `%s::%s: failed to set latency timer 0x%08x \n`
+- `B24@?0^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}8^{IONotifier=^^?i}16`
+- `%s::%s: Error detect high after second warm reset. Falling back to long reset \n`
+- `\"fClientArray->setObject(forClient)\" @%s:%d`
+- `%s::%s: failed to set dict object \n`
+- `%s::%s: not our usb host device! \n`
+- `%s::%s: failed to send %s (ret=0x%x) \n`
+- `reenumerationPortDisableEnd`
+- `22222233333222222222222222222222222222222323333333333333333333333333331133333333333333333333333333333333331`
+- `%s::%s: failed to create data log pipe \n`
+- `%s::%s: %s \n`
+- `powerStateDidChangeTo_block_invoke`
+- `BTHardwareHealthy`
+- `%s::%s: failed to get name for IOPCIDevice \n`
+- `\"dictCopy\" @%s:%d`
+- `IOUSBHostInterface`
+- `\"PEGetTargetName(fTargetName, sizeof(fTargetName))\" @%s:%d`
+- `%s::%s: overwriting pending error notification %s \n`
+- `exit`
+- `\"CentauriControl dext launch timed out\" @%s:%d`
+- `\"CentauriBeta dext launch timed out\" @%s:%d`
+- `%s::%s: failed to create iterator \n`
+- `CentauriAlphaDextLaunch`
+- `Silicon`
+- `function-pcie_port_control`
+- `\"numClientsObj != nullptr\" @%s:%d`
+- `IsReenumerationStage`
+- `FLRTimestamps`
+- `WSSCB`
+- `ModuleVendor`
+- `%s::%s: failed to get IOPPBridge (ret = 0x%x) \n`
+- `%s::%s: failed to create name matching dict \n`
+- `centauri-beta`
+- `%s::%s: squashing since this client is no longer valid \n`
+- `%s::%s: failed to allocate matching objects \n`
+- `%s::%s: invalid attach - multiple devices are unsupported \n`
+- `%s::%s: kUSBVendorString not found \n`
+- `kUSBProductString`
+- `proxima-platform`
+- `%s::%s: proxima-platform = %u \n`
+- `%s::%s: power off %s ret=0x%x \n`
+- `\"dict && resultObject\" @%s:%d`
+- `%s::%s: failed to create OSArray for IOPCIDevice notifiers \n`
+- `%s::%s: DLLLA link-up detected, link status: 0x%04x \n`
+- `enter`
+- `\"unexpected link down - no recovery path\" @%s:%d`
+- `addSACFrequency`
+- `%s::%s: dext recovery unsupported in restore \n`
+- `CentauriControlDextLaunch`
+- `%s::%s: failed to open USB device \n`
+- `%s::%s: failed to set configuration ret 0x%08x \n`
+- `Apple`
+- `%s::%s: properties in incorrect form \n`
+- `%s::%s: failed to set property \n`
+- `%s::%s: failed to find client for IOPCIDevice \n`
+- `gpioErrorDetectInterruptAction`
+- `\"nameObj\" @%s:%d`
+- `%s::%s: centauri-driver-sim-sleep-enable = %u \n`
+- `%s::%s: DLLLA link-up timeout after 100ms, link status: 0x%04x \n`
+- `%s::%s: status: %d \n`
+- `setManagerStartResult`
+- `saveClientProperty`
+- `%s::%s: failed to power on chip (ret=0x%x) \n`
+- `off`
+- `centauri-builtin`
+- `%s::%s: failed to create OSDictionary for firmware boot timestamps \n`
+- `\"nub\" @%s:%d`
+- `[Fatal]Centauri-PCIeCompletionTimeout`
+- `%s::%s: chip crash timed out \n`
+- `\"device\" @%s:%d`
+- `\"*outMetadata\" @%s:%d`
+- `%s::%s: using warm reset \n`
+- `%s::%s: ptm capability not found \n`
+- `getPTMCapability`
+- `%s::%s: failed to set chip revision property \n`
+- `%s::%s: %s object does not exist \n`
+- `\"fErrorDetectFunction\" @%s:%d`
+- `%s::%s: GPIO error detected \n`
+- `\"i < kCentauriMaxClients\" @%s:%d`
+- `%s::%s: failed to allocate memory \n`
+- `%s::%s: Looking for DLLLA link-up \n`
+- `driverSimSleepEnter_block_invoke`
+- `%s::%s: start result: %d \n`
+- `%s::%s: will sleep \n`
+- `getClientOfPCIDevice_block_invoke`
+- `\"fTimerStateDict->setObject(eventName, deadlineObj)\" @%s:%d`
+- `collectStateSnapshot`
+- `%s::%s: missing warm reset or err detect function or boot arg is set to 0 - long reset will be used \n`
+- `setupNotifiers_block_invoke`
+- `B24@?0r^{OSSymbol=^^?ib14b18*{smrq_slink={?=^{smrq_slink}}}}8^{OSObject=^^?i}16`
+- `startTimer`
+- `AppleCentauri-129`
+- `IsFirstStale`
+- `TimeToFirstStale`
+- `firstPortEnableEnd`
+- `site.AppleCentauriManagerUSBController`
+- `terminate-on-restore-failure`
+- `[Fatal]Centauri-LinkTrainingTimeout-Other`
+- `%s::%s: failed to create GPIO error interrupt event source \n`
+- `true`
+- `%s::%s: centauri-driverkit=0 \n`
+- `%s::%s: %s  \n`
+- `%s::%s: SAC remove victims failed (ret = 0x%x) \n`
+- `Sim Sleep Entered: %s\n`
+- `sendAnalytics`
+- `v16@?0^{IOTimerEventSource=^^?i^{IOEventSource}^{OSObject}^?B^{IOWorkLoop}^v^{ExpansionData}^vQ^{ExpansionData}}8`
+- `setupPCIDeviceNotifiers`
+- `%s::%s: command sleep returned %d \n`
+- `doReenumerationOnWorkloop`
+- `saveChipResetTimestamps`
+- `AppleCentauriManagerHelper.cpp`
+- `%s::%s: failed super initWithTask \n`
+- `%s::%s: Failed to add property matching to dictionary \n`
+- `\"service->setProperty(\\\"terminate-on-restore-failure\\\", true)\" @%s:%d`
+- `%s::%s: PCIe error: type %u \n`
+- `Firmware Boot Durations:\n`
+- `%s::%s: failed to open interface \n`
+- `BulkOutput`
+- `%s::%s: chip is already powered on \n`
+- `%s::%s: enable-ptm property not found \n`
+- `%s::%s: no SAC function \n`
+- `       Auto Clear: %u\n`
+- `0`
+- `%s::%s: lpm1ctrl=%u \n`
+- `%s::%s: client does not exist %s-0x%llx \n`
+- `Thunderbolt Path`
+- `centauri-warm-reset`
+- `\"(*outMetadata)->setObject(kAppleCentauriManagerDextRelaunchProperty, relaunchReason)\" @%s:%d`
+- `\"resetCountObject != nullptr\" @%s:%d`
+- `%s::%s: incorrect property type \n`
+- `%s::%s: failed to create log stream \n`
+- `succeeded`
+- `%s::%s: turning port on... \n`
+- `%s::%s: notify client about prior control dext launch timeout \n`
+- `NumClients`
+- `%s::%s: unexpected key \n`
+- `%s::%s: device request failed 0x%08x \n`
+- `%s::%s: bulk io failed 0x%08x \n`
+- `centauri-driverkit`
+- `%s::%s: failed to create OSDictionary for timer state \n`
+- `B16@?0^{OSObject=^^?i}8`
+- `\"ret == kIOReturnSuccess\" @%s:%d`
+- `\"dict && dextNameObject\" @%s:%d`
+- `%s::%s: Failed to allocate match key/value for IOPMUPrimary \n`
+- `HWHealthy`
+- `pci-bridge-handle`
+- `centauri-alpha`
+- `\"fMaxClients > 1\" @%s:%d`
+- `%s::%s: device %s-0x%llx, stateNumber %lu \n`
+- `Platform: %s\n`
+- `Port Enabled: %s\n`
+- `power off`
+- `\"fWorkLoop->onThread()\" @%s:%d`
+- `\"keysToRemoveArray->setObject(key)\" @%s:%d`
+- `interfaceAttached`
+- `MultiFunctionManager`
+- `autoClearConditions`
+- `%s::%s: failed to find bridge device tree entry \n`
+- `FirmwareBootDurations`
+- `%s::%s: isFpgaPlatform? %u delay: %u ms \n`
+- `setPTMCapability`
+- `\"fMaxClients && fMaxClients <= kCentauriMaxClients\" @%s:%d`
+- `resetEnd`
+- `%s::%s: failed to create device match notifiers \n`
+- `setProperties`
+- `%s::%s: failed to find reset function \n`
+- `\"autoClearConditionsObj != nullptr\" @%s:%d`
+- `isDextLaunchRecoverySupported`
+- `%s::%s: ignoring device \n`
+- `%s::%s: found interface \n`
+- `%s::%s: failed to trigger fault report (ret = 0x%x) \n`
+- `SIM`
+- `manual-enable`
+- `noidle`
+- `%s::%s: no pmu service \n`
+- `setOTPEnable`
+- `site.AppleCentauriManagerUserClient`
+- `AppleDialogSPMIPMU`
+- `\"fLock\" @%s:%d`
+- `function-error_detect`

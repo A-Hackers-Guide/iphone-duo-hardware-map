@@ -1,0 +1,140 @@
+# `AppleARMFunction`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.driver.AppleARMPlatform`](../kexts/com.apple.driver.AppleARMPlatform.md)
+- Object size: `0x28` (40 bytes)
+- Metaclass: `0xfffffe000b9340b8`; metaclass vtable `0xfffffe0007fb43e8`; class vtable `0xfffffe0007fb4348`
+- Registration (init): `0xfffffe00086f3f84`
+- Superclasses: none registered (derives from a kernel-core root such as OSObject)
+
+## Direct subclasses (104; 118 in total)
+
+- [`AHSFunctionBase`](AHSFunctionBase.md) — `com.apple.driver.AppleHapticsSupportLEAP`
+- [`AHTFunctionDisplayMessage`](AHTFunctionDisplayMessage.md) — `com.apple.driver.AppleHIDTransport`
+- [`AHTFunctionKill`](AHTFunctionKill.md) — `com.apple.driver.AppleHIDTransport`
+- [`AHTFunctionPing`](AHTFunctionPing.md) — `com.apple.driver.AppleHIDTransport`
+- [`AppleAGXFunctionMetrology`](AppleAGXFunctionMetrology.md) — `com.apple.AGXG19P`
+- [`AppleAMCPerfFunction`](AppleAMCPerfFunction.md) — `com.apple.driver.AppleT8160MCC`
+- [`AppleANEEPFunction`](AppleANEEPFunction.md) — `com.apple.driver.AppleH16ANEInterface`
+- [`AppleANEMPMMapMemoryFunction`](AppleANEMPMMapMemoryFunction.md) — `com.apple.driver.AppleH16ANEInterface`
+- [`AppleANEMPMUnmapMemoryFunction`](AppleANEMPMUnmapMemoryFunction.md) — `com.apple.driver.AppleH16ANEInterface`
+- [`AppleANEPerfCounterReadFunction`](AppleANEPerfCounterReadFunction.md) — `com.apple.driver.AppleH16ANEInterface`
+- [`AppleANEPowerOnOffFunction`](AppleANEPowerOnOffFunction.md) — `com.apple.driver.AppleH16ANEInterface`
+- [`AppleAOPAudioAmpStateFunction`](AppleAOPAudioAmpStateFunction.md) — `com.apple.driver.AppleAOPAudio`
+- [`AppleAOPAudioCodecRequestCompletionFunction`](AppleAOPAudioCodecRequestCompletionFunction.md) — `com.apple.driver.AppleAOPAudio`
+- [`AppleAOPSMCFunction`](AppleAOPSMCFunction.md) — `com.apple.driver.AppleSPU`
+- [`AppleARM64ErrorHandler`](AppleARM64ErrorHandler.md) — `com.apple.driver.AppleEverestErrorHandler`
+- [`AppleARMBacklightFunction`](AppleARMBacklightFunction.md) — `com.apple.driver.AppleARMPlatform`
+- [`AppleARMBacklightPCCUpdateFunction`](AppleARMBacklightPCCUpdateFunction.md) — `com.apple.driver.AppleARMPlatform`
+- [`AppleARMFunctionAssertReset`](AppleARMFunctionAssertReset.md) — `com.apple.driver.AppleARMPlatform`
+- [`AppleARMFunctionCharger`](AppleARMFunctionCharger.md) — `com.apple.driver.AppleARMPMU`
+- [`AppleARMFunctionEventTimestamp`](AppleARMFunctionEventTimestamp.md) — `com.apple.driver.AppleARMPlatform`
+- [`AppleARMFunctionIISActive`](AppleARMFunctionIISActive.md) — `com.apple.driver.AppleIISController`
+- [`AppleARMFunctionIISRoute`](AppleARMFunctionIISRoute.md) — `com.apple.driver.AppleIISController`
+- [`AppleARMFunctionPerfAdvise`](AppleARMFunctionPerfAdvise.md) — `com.apple.driver.AppleARMPlatform`
+- [`AppleARMFunctionSlowAdaptiveClocking`](AppleARMFunctionSlowAdaptiveClocking.md) — `com.apple.driver.AppleARMPlatform`
+- [`AppleARMFunctionSlowAdaptiveClockingAggressor`](AppleARMFunctionSlowAdaptiveClockingAggressor.md) — `com.apple.driver.AppleARMPlatform`
+- [`AppleARMFunctionUSBDataMonitor`](AppleARMFunctionUSBDataMonitor.md) — `com.apple.driver.AppleARMPlatform`
+- [`AppleARMGPICFunction`](AppleARMGPICFunction.md) — `com.apple.driver.AppleGPIOICController`
+- [`AppleARMGPIOFunction`](AppleARMGPIOFunction.md) — `com.apple.driver.AppleGPIOICController`
+- [`AppleARMPWMBacklightControllerUpdateFunction`](AppleARMPWMBacklightControllerUpdateFunction.md) — `com.apple.driver.AppleARMPlatform`
+- [`AppleARMPerformanceControllerFunctionCLPCEnabled`](AppleARMPerformanceControllerFunctionCLPCEnabled.md) — `com.apple.driver.AppleARMPlatform`
+- [`AppleARMPerformanceControllerFunctionCPUIdle`](AppleARMPerformanceControllerFunctionCPUIdle.md) — `com.apple.driver.AppleARMPlatform`
+- [`AppleARMPerformanceControllerFunctionClockGate`](AppleARMPerformanceControllerFunctionClockGate.md) — `com.apple.driver.AppleARMPlatform`
+- [`AppleARMPerformanceControllerFunctionPowerGate`](AppleARMPerformanceControllerFunctionPowerGate.md) — `com.apple.driver.AppleARMPlatform`
+- [`AppleARMWatchdogTimerFunctionExpireWatchdog`](AppleARMWatchdogTimerFunctionExpireWatchdog.md) — `com.apple.driver.AppleARMWatchdogTimer`
+- [`AppleBTMFunction`](AppleBTMFunction.md) — `com.apple.driver.ApplePhoneBTM`
+- [`AppleButtonsDispatchFunction`](AppleButtonsDispatchFunction.md) — `com.apple.driver.AppleM68Buttons`
+- [`AppleDialogSPMIPMUFunction`](AppleDialogSPMIPMUFunction.md) — `com.apple.driver.AppleSPMIPMU`
+- [`AppleDisplayPseudoStandbyFunction`](AppleDisplayPseudoStandbyFunction.md) — `com.apple.driver.AppleCamera`
+- [`AppleEmbeddedPCIEPortControlFunction`](AppleEmbeddedPCIEPortControlFunction.md) — `com.apple.driver.AppleEmbeddedPCIE`
+- [`AppleFAN53740VoltageFunction`](AppleFAN53740VoltageFunction.md) — `com.apple.driver.AppleFAN53740`
+- [`AppleMCKAudioFunction`](AppleMCKAudioFunction.md) — `com.apple.driver.AppleEmbeddedAudio`
+- [`AppleMPMMapMemoryFunction`](AppleMPMMapMemoryFunction.md) — `com.apple.driver.AppleCamera`
+- [`AppleMPMUnmapMemoryFunction`](AppleMPMUnmapMemoryFunction.md) — `com.apple.driver.AppleCamera`
+- [`AppleMemCacheDataSetsFunction`](AppleMemCacheDataSetsFunction.md) — `com.apple.driver.AppleARMPlatform`
+- [`AppleMemCacheDataSetsFunctionV2`](AppleMemCacheDataSetsFunctionV2.md) — `com.apple.driver.AppleT8160MCC`
+- [`AppleMemCacheFlushFunction`](AppleMemCacheFlushFunction.md) — `com.apple.driver.AppleT8160MCC`
+- [`AppleMemCacheModeFunction`](AppleMemCacheModeFunction.md) — `com.apple.driver.AppleT8160MCC`
+- [`AppleMemCachePanicFunction`](AppleMemCachePanicFunction.md) — `com.apple.driver.AppleT8160MCC`
+- [`AppleMesaARMFunction`](AppleMesaARMFunction.md) — `com.apple.driver.AppleBiometricSensor`
+- [`AppleMultitouchTimestampSyncLock`](AppleMultitouchTimestampSyncLock.md) — `com.apple.driver.AppleMultitouchDriver`
+- [`ApplePMGRFunctionAvoidPerfState`](ApplePMGRFunctionAvoidPerfState.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionCLPCEnabled`](ApplePMGRFunctionCLPCEnabled.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionCPUIdle`](ApplePMGRFunctionCPUIdle.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionClockGate`](ApplePMGRFunctionClockGate.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionEnableAutoClockGate`](ApplePMGRFunctionEnableAutoClockGate.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionEnableCPUCore`](ApplePMGRFunctionEnableCPUCore.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionEnablePSDService`](ApplePMGRFunctionEnablePSDService.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionEnableTouchClock`](ApplePMGRFunctionEnableTouchClock.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionGetServiceState`](ApplePMGRFunctionGetServiceState.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionGetValidPerfState`](ApplePMGRFunctionGetValidPerfState.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionISPRefClock`](ApplePMGRFunctionISPRefClock.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionPDMClockBypass`](ApplePMGRFunctionPDMClockBypass.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionPLLOffMode`](ApplePMGRFunctionPLLOffMode.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionPMPInterrupt`](ApplePMGRFunctionPMPInterrupt.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionPerfCycleCount`](ApplePMGRFunctionPerfCycleCount.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionPowerGate`](ApplePMGRFunctionPowerGate.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionROSC`](ApplePMGRFunctionROSC.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionReconfigTrigger`](ApplePMGRFunctionReconfigTrigger.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionResetPSDService`](ApplePMGRFunctionResetPSDService.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionSEPSleepPrep`](ApplePMGRFunctionSEPSleepPrep.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionSetATCDpClockSource`](ApplePMGRFunctionSetATCDpClockSource.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionSetPerfState`](ApplePMGRFunctionSetPerfState.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionSetTouchClockSource`](ApplePMGRFunctionSetTouchClockSource.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionStartS2RTimer`](ApplePMGRFunctionStartS2RTimer.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionStub`](ApplePMGRFunctionStub.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionUSBClock`](ApplePMGRFunctionUSBClock.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionVideoClock`](ApplePMGRFunctionVideoClock.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionVoteCriticalLltMode`](ApplePMGRFunctionVoteCriticalLltMode.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMGRFunctionWaitForDeviceEvent`](ApplePMGRFunctionWaitForDeviceEvent.md) — `com.apple.driver.ApplePMGR`
+- [`ApplePMPControlFunction`](ApplePMPControlFunction.md) — `com.apple.driver.ApplePMP`
+- [`ApplePPMARMFunction`](ApplePPMARMFunction.md) — `com.apple.driver.AppleiPhoneACSKPPM`
+- [`ApplePTDFunctionCmd`](ApplePTDFunctionCmd.md) — `com.apple.driver.ApplePTD`
+- [`ApplePTDFunctionMultiCmd`](ApplePTDFunctionMultiCmd.md) — `com.apple.driver.ApplePTD`
+- [`ApplePearlCamQMsgFunction`](ApplePearlCamQMsgFunction.md) — `com.apple.driver.AppleCamera`
+- [`AppleS5L8960XNCOFrequencyFunction`](AppleS5L8960XNCOFrequencyFunction.md) — `com.apple.driver.AppleS5L8960XNCO`
+- [`AppleS8000DWIBacklightFunction`](AppleS8000DWIBacklightFunction.md) — `com.apple.driver.AppleS8000DWI`
+- [`AppleS8000DWIVoltageFunction`](AppleS8000DWIVoltageFunction.md) — `com.apple.driver.AppleS8000DWI`
+- [`AppleSMCEmbeddedFunction`](AppleSMCEmbeddedFunction.md) — `com.apple.driver.AppleSMC`
+- [`AppleSPUMarconiFunction`](AppleSPUMarconiFunction.md) — `com.apple.driver.AppleSPU`
+- [`AppleSPUSphereFunction`](AppleSPUSphereFunction.md) — `com.apple.driver.AppleSPUSphere`
+- [`AppleSPUSpkAmpStateFunction`](AppleSPUSpkAmpStateFunction.md) — `com.apple.driver.AppleSPU`
+- [`AppleSecondaryAudioFunction`](AppleSecondaryAudioFunction.md) — `com.apple.driver.AppleEmbeddedAudio`
+- [`AppleSetDroopUtilizationControlEffortFunction`](AppleSetDroopUtilizationControlEffortFunction.md) — `com.apple.driver.AppleEmbeddedTempSensor`
+- [`AppleSoCFunctionPerfCycleCount`](AppleSoCFunctionPerfCycleCount.md) — `com.apple.driver.AppleT8160`
+- [`AppleSoCMiscFunctionSubmitVoteForceWakeupDram`](AppleSoCMiscFunctionSubmitVoteForceWakeupDram.md) — `com.apple.driver.AppleT8160`
+- [`AppleSynopsysMIPIDSIFrameDoneFunction`](AppleSynopsysMIPIDSIFrameDoneFunction.md) — `com.apple.driver.AppleSynopsysMIPIDSI`
+- [`AppleSynopsysMIPIDSIProgramPartialFrameFunction`](AppleSynopsysMIPIDSIProgramPartialFrameFunction.md) — `com.apple.driver.AppleSynopsysMIPIDSI`
+- [`AppleSynopsysMIPIDSIResetClockFunction`](AppleSynopsysMIPIDSIResetClockFunction.md) — `com.apple.driver.AppleSynopsysMIPIDSI`
+- [`AppleT700XTempSensorDisableSensorFunction`](AppleT700XTempSensorDisableSensorFunction.md) — `com.apple.driver.AppleEmbeddedTempSensor`
+- [`AudioDeviceCommandFunction`](AudioDeviceCommandFunction.md) — `com.apple.driver.AppleEmbeddedAudioLibs`
+- [`CS42L79FlickerBiasRequest`](CS42L79FlickerBiasRequest.md) — `com.apple.driver.AppleCS42L79Audio`
+- [`CS42L79HallRequest`](CS42L79HallRequest.md) — `com.apple.driver.AppleCS42L79Audio`
+- [`CS42L79ListeningRequest`](CS42L79ListeningRequest.md) — `com.apple.driver.AppleCS42L79Audio`
+- [`CS42L79StreamingRequest`](CS42L79StreamingRequest.md) — `com.apple.driver.AppleCS42L79Audio`
+
+## Strings in its kext that name it (21)
+
+- `AppleARMFunctionFunction`
+- `AppleARMFunctionUSBDataMonitor`
+- `newAppleARMFunction`
+- `site.AppleARMFunctionAssertReset`
+- `AppleARMFunctionDextTarget`
+- `AppleARMFunctionEventTimestamp`
+- `getAppleARMFunctionUserHandler`
+- `AppleARMFunctionAssertReset`
+- `site.AppleARMFunctionUSBDataMonitor`
+- `site.AppleARMFunctionSlowAdaptiveClocking`
+- `AppleARMFunction`
+- `site.AppleARMFunctionPerfAdvise`
+- `AppleARMFunctionSymbol`
+- `site.AppleARMFunction`
+- `callAppleARMFunction`
+- `AppleARMFunctionSlowAdaptiveClockingAggressor`
+- `site.AppleARMFunctionEventTimestamp`
+- `AppleARMFunctionData`
+- `AppleARMFunctionPerfAdvise`
+- `site.AppleARMFunctionSlowAdaptiveClockingAggressor`
+- `AppleARMFunctionSlowAdaptiveClocking`

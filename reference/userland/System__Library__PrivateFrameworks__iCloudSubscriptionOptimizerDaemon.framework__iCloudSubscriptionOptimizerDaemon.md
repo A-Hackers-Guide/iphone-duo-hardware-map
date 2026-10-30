@@ -1,0 +1,55 @@
+# `/System/Library/PrivateFrameworks/iCloudSubscriptionOptimizerDaemon.framework/iCloudSubscriptionOptimizerDaemon`
+
+iOS 27.2 dyld shared cache image, version `74.0.0.0.0`. Light page: libraries and type names only. **[DSC]**
+
+## Linked libraries (38)
+
+- `/System/Library/PrivateFrameworks/ProactiveEventTracker.framework/ProactiveEventTracker`
+- `/System/Library/PrivateFrameworks/iCloudSubscriptionOptimizerCore.framework/iCloudSubscriptionOptimizerCore`
+- `/System/Library/PrivateFrameworks/iCloudSubscriptionOptimizerPFLTraining.framework/iCloudSubscriptionOptimizerPFLTraining`
+- `/System/Library/PrivateFrameworks/UsageTracking.framework/UsageTracking`
+- `/System/Library/PrivateFrameworks/DistributedEvaluation.framework/DistributedEvaluation`
+- `/System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams`
+- `/System/Library/PrivateFrameworks/BiomeLibrary.framework/BiomeLibrary`
+- `/System/Library/PrivateFrameworks/AppleAccount.framework/AppleAccount`
+- `/System/Library/Frameworks/Foundation.framework/Foundation`
+- `/usr/lib/libobjc.A.dylib`
+- `/usr/lib/libSystem.B.dylib`
+- `/System/Library/Frameworks/Accounts.framework/Accounts`
+- `/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation`
+- `/System/Library/Frameworks/CoreML.framework/CoreML`
+- `/System/Library/Frameworks/UIKit.framework/UIKit`
+- `/System/Library/PrivateFrameworks/AuthKit.framework/AuthKit`
+- `/System/Library/PrivateFrameworks/BackgroundSystemTasks.framework/BackgroundSystemTasks`
+- `/System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf`
+- `/System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset`
+- `/usr/lib/swift/libswiftCompression.dylib`
+- `/usr/lib/swift/libswiftCore.dylib`
+- `/usr/lib/swift/libswiftCoreAudio.dylib`
+- `/usr/lib/swift/libswiftCoreFoundation.dylib`
+- `/usr/lib/swift/libswiftCoreImage.dylib`
+- `/usr/lib/swift/libswiftCoreLocation.dylib`
+- `/usr/lib/swift/libswiftDispatch.dylib`
+- `/usr/lib/swift/libswiftMLCompute.dylib`
+- `/usr/lib/swift/libswiftMetal.dylib`
+- `/usr/lib/swift/libswiftOSLog.dylib`
+- `/usr/lib/swift/libswiftObjectiveC.dylib`
+- `/usr/lib/swift/libswiftQuartzCore.dylib`
+- `/usr/lib/swift/libswiftSpatial.dylib`
+- `/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib`
+- `/usr/lib/swift/libswiftXPC.dylib`
+- `/usr/lib/swift/libswift_Builtin_float.dylib`
+- `/usr/lib/swift/libswift_Concurrency.dylib`
+- `/usr/lib/swift/libswiftos.dylib`
+- `/usr/lib/swift/libswiftsimd.dylib`
+
+## Objective-C: 100 classes, 8 protocols (method count not recorded on light pages)
+
+### Classes
+
+`ISODeviceInfo`, `_TtC33iCloudSubscriptionOptimizerDaemon10BiomeStats`, `_TtC33iCloudSubscriptionOptimizerDaemon10BiomeUtils`, `_TtC33iCloudSubscriptionOptimizerDaemon10ModelUtils`, `_TtC33iCloudSubscriptionOptimizerDaemon10PetDataAPI`, `_TtC33iCloudSubscriptionOptimizerDaemon10PflDataAPI`, `_TtC33iCloudSubscriptionOptimizerDaemon11DaemonEvent`, `_TtC33iCloudSubscriptionOptimizerDaemon11FeaturesAPI`, `_TtC33iCloudSubscriptionOptimizerDaemon11NewOfferAPI`, `_TtC33iCloudSubscriptionOptimizerDaemon12DaemonEvents`, `_TtC33iCloudSubscriptionOptimizerDaemon12FeatureUtils`, `_TtC33iCloudSubscriptionOptimizerDaemon13ModelProvider`, `_TtC33iCloudSubscriptionOptimizerDaemon14BiomeAppLaunch`, `_TtC33iCloudSubscriptionOptimizerDaemon14SystemActivity`, `_TtC33iCloudSubscriptionOptimizerDaemon15BiomeFocusSleep`, `_TtC33iCloudSubscriptionOptimizerDaemon15DaemonExitEvent`, `_TtC33iCloudSubscriptionOptimizerDaemon15FeatureProvider`, `_TtC33iCloudSubscriptionOptimizerDaemon15MLDelayProvider`, `_TtC33iCloudSubscriptionOptimizerDaemon16MockBiomeManager`, `_TtC33iCloudSubscriptionOptimizerDaemon16PETDataCollector`, `_TtC33iCloudSubscriptionOptimizerDaemon16PFLDataCollector`, `_TtC33iCloudSubscriptionOptimizerDaemon16RealBiomeManager`, `_TtC33iCloudSubscriptionOptimizerDaemon17PflDataStoreEvent`, `_TtC33iCloudSubscriptionOptimizerDaemon18CliDelayedActivity`, `_TtC33iCloudSubscriptionOptimizerDaemon18DaemonStateManager`, `_TtC33iCloudSubscriptionOptimizerDaemon18DataCollectorUtils`, `_TtC33iCloudSubscriptionOptimizerDaemon18PFLFeatureNameList`, `_TtC33iCloudSubscriptionOptimizerDaemon18PetFeatureNameList`, `_TtC33iCloudSubscriptionOptimizerDaemon18RealAssetInterface`, `_TtC33iCloudSubscriptionOptimizerDaemon18RealDESRecordStore`, `_TtC33iCloudSubscriptionOptimizerDaemon18SubscriptionDaemon`, `_TtC33iCloudSubscriptionOptimizerDaemon19DaemonLaunchedEvent`, `_TtC33iCloudSubscriptionOptimizerDaemon19PetToDESRecordStore`, `_TtC33iCloudSubscriptionOptimizerDaemon19ShadowEvaluationAPI`, `_TtC33iCloudSubscriptionOptimizerDaemon19ShadowModeEvaluator`, `_TtC33iCloudSubscriptionOptimizerDaemon19SystemActivityEvent`, `_TtC33iCloudSubscriptionOptimizerDaemon19XpcCallStartedEvent`, `_TtC33iCloudSubscriptionOptimizerDaemon20DeleteDaemonStateAPI`, `_TtC33iCloudSubscriptionOptimizerDaemon20MLEvaluationProvider`, `_TtC33iCloudSubscriptionOptimizerDaemon20MlDelayProviderEvent`, `_TtC33iCloudSubscriptionOptimizerDaemon20XpcCallFinishedEvent`, `_TtC33iCloudSubscriptionOptimizerDaemon21BackingOffINDNotifier`, `_TtC33iCloudSubscriptionOptimizerDaemon21GrowthIntelligenceAPI`, `_TtC33iCloudSubscriptionOptimizerDaemon21RepeatingBGSystemTask`, `_TtC33iCloudSubscriptionOptimizerDaemon21UsageTrackingFeatures`, `_TtC33iCloudSubscriptionOptimizerDaemon21XpcSubscriptionServer`, `_TtC33iCloudSubscriptionOptimizerDaemon22DeleteDaemonStateEvent`, `_TtC33iCloudSubscriptionOptimizerDaemon22MobileAssetDownloadAPI`, `_TtC33iCloudSubscriptionOptimizerDaemon22NotificationDelayEvent`, `_TtC33iCloudSubscriptionOptimizerDaemon22NotificationPendingAPI`, `_TtC33iCloudSubscriptionOptimizerDaemon22PetDataCollectionEvent`, `_TtC33iCloudSubscriptionOptimizerDaemon23BiomeNotificationStream`, `_TtC33iCloudSubscriptionOptimizerDaemon23BuildPFLFeatureAndLabel`, `_TtC33iCloudSubscriptionOptimizerDaemon23DESRecordStoreOperators`, `_TtC33iCloudSubscriptionOptimizerDaemon23DelayActionDaemonWakeUp`, `_TtC33iCloudSubscriptionOptimizerDaemon23MLDelayPerformanceEvent`, `_TtC33iCloudSubscriptionOptimizerDaemon23MLModelPerformanceEvent`, `_TtC33iCloudSubscriptionOptimizerDaemon23MobileAssetLocalManager`, `_TtC33iCloudSubscriptionOptimizerDaemon23NotificationDataSources`, `_TtC33iCloudSubscriptionOptimizerDaemon23NotificationDelayAction`, `_TtC33iCloudSubscriptionOptimizerDaemon23ShadowModeModelProvider`, `_TtC33iCloudSubscriptionOptimizerDaemon23SnapshotFeatureProvider`, `_TtC33iCloudSubscriptionOptimizerDaemon24MobileAssetDownloadEvent`, `_TtC33iCloudSubscriptionOptimizerDaemon24MobileAssetGetVersionAPI`, `_TtC33iCloudSubscriptionOptimizerDaemon24RealBatteryStateProvider`, `_TtC33iCloudSubscriptionOptimizerDaemon25BiomeFocusFeatureProvider`, `_TtC33iCloudSubscriptionOptimizerDaemon25NotificationStateWriteAPI`, `_TtC33iCloudSubscriptionOptimizerDaemon25OTANotificationDelayModel`, `_TtC33iCloudSubscriptionOptimizerDaemon25SimpleTimeFeatureProvider`, `_TtC33iCloudSubscriptionOptimizerDaemon25XpcCallToIndFinishedEvent`, `_TtC33iCloudSubscriptionOptimizerDaemon26DarwinNotificationListener`, `_TtC33iCloudSubscriptionOptimizerDaemon26DelayActionNewOfferRequest`, `_TtC33iCloudSubscriptionOptimizerDaemon26MobileAssetDownloadManager`, `_TtC33iCloudSubscriptionOptimizerDaemon26QuotaDaemonNotifierFactory`, `_TtC33iCloudSubscriptionOptimizerDaemon27DelayedNotificationActivity`, `_TtC33iCloudSubscriptionOptimizerDaemon27ICloudNotificationXpcClient`, `_TtC33iCloudSubscriptionOptimizerDaemon27MobileAssetDownloadActivity`, `_TtC33iCloudSubscriptionOptimizerDaemon28MobileAssetDaemonStateHelper`, `_TtC33iCloudSubscriptionOptimizerDaemon28NotificationDelayModelFormat`, `_TtC33iCloudSubscriptionOptimizerDaemon28SystemActivityHistoryManager`, `_TtC33iCloudSubscriptionOptimizerDaemon28UsageTrackingFeatureProvider`, `_TtC33iCloudSubscriptionOptimizerDaemon29BiomeAppLaunchFeatureProvider`, `_TtC33iCloudSubscriptionOptimizerDaemon29BundledNotificationDelayModel`, `_TtC33iCloudSubscriptionOptimizerDaemon29XpcSubscriptionServerDelegate`, `_TtC33iCloudSubscriptionOptimizerDaemon32BiomeNotificationFeatureProvider`, `_TtC33iCloudSubscriptionOptimizerDaemon33EventLoggingXpcSubscriptionClient`, `_TtC33iCloudSubscriptionOptimizerDaemon35XpcSubscriptionClientProtocolServer`, `_TtC33iCloudSubscriptionOptimizerDaemon40BundledNotificationDelaySamePropensities`, `_TtC33iCloudSubscriptionOptimizerDaemon45BundledNotificationDelaySamePropensitiesInput`, `_TtC33iCloudSubscriptionOptimizerDaemon46BundledNotificationDelaySamePropensitiesOutput`, `_TtC33iCloudSubscriptionOptimizerDaemon7Feature`, `_TtC33iCloudSubscriptionOptimizerDaemon7PingAPI`, `_TtCC33iCloudSubscriptionOptimizerDaemon14BiomeAppLaunch13CountersByApp`, `_TtCC33iCloudSubscriptionOptimizerDaemon14BiomeAppLaunch16LastOpenedApp24h`, `_TtCC33iCloudSubscriptionOptimizerDaemon14BiomeAppLaunch22MinsSinceLastAppLaunch`, `_TtCC33iCloudSubscriptionOptimizerDaemon23BiomeNotificationStream14ReceivedEvents`, `_TtCC33iCloudSubscriptionOptimizerDaemon23BiomeNotificationStream19CountersByUsageType`, `_TtCC33iCloudSubscriptionOptimizerDaemon23DelayActionDaemonWakeUp13DelayAndState`, `_TtCC33iCloudSubscriptionOptimizerDaemon26DelayActionNewOfferRequest19DelayAndStateUpdate`, `_TtCV33iCloudSubscriptionOptimizerDaemon23BiomeICloudSubscription13MlServerScore`
+
+### Protocols
+
+`ISOINDaemonProtocol`, `ISOXpcSubscriptionClient`, `MLFeatureProvider`, `NSCoding`, `NSObject`, `NSSecureCoding`, `NSXPCListenerDelegate`, `OS_xpc_object`
+

@@ -1,0 +1,70 @@
+# `SBSAIndicatorAppearanceStateTransitionProvider`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBSABasePreferencesProvider`
+- 14 instance variables, 0 properties, 35 instance methods, 1 class methods
+
+## Instance variables
+
+```
+@"<SBSAInterfaceElementPropertyIdentifying>" _pendingInterSensorRegionAppearanceProperty;
+@"<SBSAInterfaceElementPropertyIdentifying>" _pendingMicroRegionAppearanceProperty;
+@"<SBSAInterfaceElementPropertyIdentifying>" _pendingMicroRegionAcceptedProperty;
+@"<SBSAInterfaceElementPropertyIdentifying>" _pendingInterSensorRegionDisappearanceProperty;
+@"<SBSAInterfaceElementPropertyIdentifying>" _pendingMicroRegionDisappearanceProperty;
+@"<SBSAInterfaceElementPropertyIdentifying>" _pendingMicroRegionEjectedProperty;
+@"NSUUID" _activeIndicatorContainerIdentifier;
+@"SBSAIndicatorMitosisTransitionProvider" _indicatorMitosisProvider;
+@"SBSAIndicatorMitosisTransitionProvider" _indicatorRecombinationProvider;
+@"SBSAIndicatorFadeTransitionProvider" _indicatorFadeMitosisProvider;
+@"SBSAIndicatorFadeTransitionProvider" _indicatorFadeRecombinationProvider;
+B _hasAppearedOnce;
+@"SBSACornerCircleIndicatorTransitionProvider" _cornerCircleAppearanceProvider;
+@"SBSACornerCircleIndicatorTransitionProvider" _cornerCircleDisappearanceProvider;
+```
+
+## Class methods
+
+```
++[SBSAIndicatorAppearanceStateTransitionProvider initialize];
+```
+
+## Instance methods
+
+```
+-[SBSAIndicatorAppearanceStateTransitionProvider encodeWithCoder:];
+-[SBSAIndicatorAppearanceStateTransitionProvider membersForCoder];
+-[SBSAIndicatorAppearanceStateTransitionProvider _cleanupMicroMitosisIfNecessary];
+-[SBSAIndicatorAppearanceStateTransitionProvider _updatedUnifiedCornerPositionTransitionSettingsWithPreferences:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _areBothIndicatorsHiddenWithIndicatorAppearanceStateContext:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _attemptRecombinationWithPreferences:context:interSensorIndicatorNeedsAppearing:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _cleanupCornerCircleAppearanceIfNecessary];
+-[SBSAIndicatorAppearanceStateTransitionProvider _cleanupCornerCircleDisappearanceIfNecessary];
+-[SBSAIndicatorAppearanceStateTransitionProvider _cleanupFadeMitosisIfNecessary];
+-[SBSAIndicatorAppearanceStateTransitionProvider _cleanupFadeRecombinationIfNecessary];
+-[SBSAIndicatorAppearanceStateTransitionProvider _cleanupMicroRecombinationIfNecessary];
+-[SBSAIndicatorAppearanceStateTransitionProvider _ensureBothIndicatorsHidden:context:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _ensureCornerCircleAppearanceProvider];
+-[SBSAIndicatorAppearanceStateTransitionProvider _ensureCornerCircleDisappearanceProvider];
+-[SBSAIndicatorAppearanceStateTransitionProvider _ensureInterSensorRegionIndicatorOnlyVisible:context:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _ensureMicroRegionIndicatorOnlyVisible:context:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _isIndicatorWithheldByAssociatedBlankingRegionWithPreferences:context:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _milestoneDidReachExpectedMilestone:property:context:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _startFadeMitosisIfNecessary:context:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _startFadeRecombinationIfNecessary:context:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _startMicroMitosisIfNecessary:context:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _startMicroRecombinationIfNecessary:context:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _transitionInterSensorRegionToAppearingIfNecessary:context:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _transitionInterSensorRegionToDisappearingIfNecessary:context:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _transitionMicroRegionToAcceptingAndDisappearingIfNecessary:context:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _transitionMicroRegionToEjectingAndAppearingIfNecessary:context:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _updateIndicatorElementDescriptionWithPreferences:context:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _updatedCornerPositionTransitionSettingsWithPreferences:behaviorSettings:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _updatedIndicatorAnimationSettingsIfNeededWithPreferences:context:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _updatedOrientationChangeCornerPositionTransitionSettingsWithPreferences:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _updatedPreferencesAddingMilestonesIfNeededWithPreferences:context:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _updatedPreferencesForCompletedMilestonesWithContext:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _updatedUnanimatedCornerPositionEjectionWithPreferences:];
+-[SBSAIndicatorAppearanceStateTransitionProvider _updatedUnanimatedIndicatorAnimationSettingsWithPreferences:context:];
+-[SBSAIndicatorAppearanceStateTransitionProvider preferencesFromContext:];
+```

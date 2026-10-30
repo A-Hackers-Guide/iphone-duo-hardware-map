@@ -1,0 +1,16 @@
+# `SRSensorKitServiceServerDebugging` (protocol)
+
+- Image: [`/System/Library/Frameworks/SensorKit.framework/SensorKit`](../userland/System__Library__Frameworks__SensorKit.framework__SensorKit.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- 0 instance variables, 0 properties, 7 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[SRSensorKitServiceServerDebugging dumpClientsWithReply:];
+-[SRSensorKitServiceServerDebugging dumpConfigurationsWithReply:];
+-[SRSensorKitServiceServerDebugging dumpDefaultsWithReply:];
+-[SRSensorKitServiceServerDebugging dumpStateCacheWithReply:];
+-[SRSensorKitServiceServerDebugging fetchDeviceInformationForDeviceIdentifiers:reply:];
+-[SRSensorKitServiceServerDebugging fetchEligibilityStatusForBundleIdentifier:sensor:reply:];
+-[SRSensorKitServiceServerDebugging listDatastoreWithReply:];
+```

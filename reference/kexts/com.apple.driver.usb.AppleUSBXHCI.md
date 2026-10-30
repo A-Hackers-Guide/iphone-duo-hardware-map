@@ -1,0 +1,978 @@
+# `com.apple.driver.usb.AppleUSBXHCI`
+
+- Name: I/O Kit Driver for USB XHCI Controllers
+- Version: `1.2`
+- UUID: `EAAA6236-6EE4-3DE3-AC86-F9DA1173DB71`
+- Source version: `1617.40.10.0.0`
+- Depends on: [`com.apple.driver.usb.AppleUSBCommon`](com.apple.driver.usb.AppleUSBCommon.md) 1.0, [`com.apple.iokit.IOAccessoryManager`](com.apple.iokit.IOAccessoryManager.md) 1.0, [`com.apple.iokit.IOPortFamily`](com.apple.iokit.IOPortFamily.md) 1.0, [`com.apple.iokit.IOUSBHostFamily`](com.apple.iokit.IOUSBHostFamily.md) 1.2, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 23.0.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 23.0.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 23.0.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 23.0.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 23.0.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 23.0.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (0) [KC]
+
+
+## C++ classes (25) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleUSB20XHCIPort` | 0x430 | AppleUSBXHCIPort → AppleUSBHostPort → IOService → IORegistryEntry |
+| `AppleUSB20XHCITypeCPort` | 0x438 | AppleUSB20XHCIPort → AppleUSBXHCIPort → AppleUSBHostPort → IOService → IORegistryEntry |
+| `AppleUSB30XHCIPort` | 0x428 | AppleUSBXHCIPort → AppleUSBHostPort → IOService → IORegistryEntry |
+| `AppleUSB30XHCITypeCPort` | 0x428 | AppleUSB30XHCIPort → AppleUSBXHCIPort → AppleUSBHostPort → IOService → IORegistryEntry |
+| `AppleUSBXHCI` | 0xf88 | AppleUSBHostController → IOService → IORegistryEntry |
+| `AppleUSBXHCICommandRing` | 0x1868 |  |
+| `AppleUSBXHCIDevice` | 0x170 |  |
+| `AppleUSBXHCIEndpoint` | 0x58 |  |
+| `AppleUSBXHCIEndpointSoftRetry` | 0x58 | AppleUSBXHCIEndpoint |
+| `AppleUSBXHCIInterrupter` | 0x68 |  |
+| `AppleUSBXHCIInterrupterMSI` | 0x68 | AppleUSBXHCIInterrupter |
+| `AppleUSBXHCIIsochronousEndpoint` | 0x58 | AppleUSBXHCIEndpoint |
+| `AppleUSBXHCIIsochronousRequest` | 0x320 | AppleUSBXHCIRequest → AppleUSBIORequest → AppleUSBHostRequest → AppleUSBRequest → IOCommand |
+| `AppleUSBXHCIIsochronousRequestPool` | 0x70 | AppleUSBXHCIRequestPool → AppleUSBHostRequestPool → AppleUSBRequestPool → IOCommandPool |
+| `AppleUSBXHCIIsochronousTransferRing` | 0x88 | AppleUSBXHCITransferRing |
+| `AppleUSBXHCIPipe` | 0xc0 | IOUSBHostPipe → IOUSBHostIOSource |
+| `AppleUSBXHCIPort` | 0x420 | AppleUSBHostPort → IOService → IORegistryEntry |
+| `AppleUSBXHCIRequest` | 0x308 | AppleUSBIORequest → AppleUSBHostRequest → AppleUSBRequest → IOCommand |
+| `AppleUSBXHCIRequestPool` | 0x70 | AppleUSBHostRequestPool → AppleUSBRequestPool → IOCommandPool |
+| `AppleUSBXHCISparseRequest` | 0x308 | AppleUSBXHCIRequest → AppleUSBIORequest → AppleUSBHostRequest → AppleUSBRequest → IOCommand |
+| `AppleUSBXHCISparseRequestPool` | 0x70 | AppleUSBXHCIRequestPool → AppleUSBHostRequestPool → AppleUSBRequestPool → IOCommandPool |
+| `AppleUSBXHCIStream` | 0x78 | IOUSBHostStream → IOUSBHostIOSource |
+| `AppleUSBXHCIStreamingEndpoint` | 0x80 | AppleUSBXHCIEndpoint |
+| `AppleUSBXHCITDPool` | 0x48 |  |
+| `AppleUSBXHCITransferRing` | 0x78 |  |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1640)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0000af94 off=0x00b57560-0x00b624f4 addr=0xfffffe0007b5b560-0xfffffe0007b664f4 r--/r--   __TEXT            
+	sz=0x00005726 off=0x00b57c28-0x00b5d34e addr=0xfffffe0007b5bc28-0xfffffe0007b6134e               __TEXT.__cstring          (CstringLiterals)
+	sz=0x000050f0 off=0x00b5d34e-0x00b6243e addr=0xfffffe0007b6134e-0xfffffe0007b6643e               __TEXT.__os_log           
+	sz=0x000000b4 off=0x00b62440-0x00b624f4 addr=0xfffffe0007b66440-0xfffffe0007b664f4               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x00044c44 off=0x0380cc40-0x03851884 addr=0xfffffe000a810c40-0xfffffe000a855884 r-x/r-x   __TEXT_EXEC       
+	sz=0x00044524 off=0x0380cc40-0x03851164 addr=0xfffffe000a810c40-0xfffffe000a855164          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000720 off=0x03851164-0x03851884 addr=0xfffffe000a855164-0xfffffe000a855884          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x000004c0 off=0x04a1c430-0x04a1c8f0 addr=0xfffffe000ba20430-0xfffffe000ba208f0 rw-/rw-   __DATA            
+	sz=0x000000c8 off=0x04a1c430-0x04a1c4f8 addr=0xfffffe000ba20430-0xfffffe000ba204f8               __DATA.__data             
+	sz=0x000003f8 off=0x00000000-0x000003f8 addr=0xfffffe000ba204f8-0xfffffe000ba208f0               __DATA.__common           (Zerofill)
+003: LC_SEGMENT_64 sz=0x00006ee8 off=0x014686c0-0x0146f5a8 addr=0xfffffe000846c6c0-0xfffffe00084735a8 rw-/rw-   __DATA_CONST      
+	sz=0x00000090 off=0x014686c0-0x01468750 addr=0xfffffe000846c6c0-0xfffffe000846c750         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000090 off=0x01468750-0x014687e0 addr=0xfffffe000846c750-0xfffffe000846c7e0         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00005fb8 off=0x014687e0-0x0146e798 addr=0xfffffe000846c7e0-0xfffffe0008472798         __DATA_CONST.__const            
+	sz=0x000008c0 off=0x0146e798-0x0146f058 addr=0xfffffe0008472798-0xfffffe0008473058         __DATA_CONST.__kalloc_type      
+	sz=0x000000a0 off=0x0146f058-0x0146f0f8 addr=0xfffffe0008473058-0xfffffe00084730f8         __DATA_CONST.__kalloc_var       
+	sz=0x00000390 off=0x0146f0f8-0x0146f488 addr=0xfffffe00084730f8-0xfffffe0008473488         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000120 off=0x0146f488-0x0146f5a8 addr=0xfffffe0008473488-0xfffffe00084735a8         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 264 at 0x04afb294
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     EAAA6236-6EE4-3DE3-AC86-F9DA1173DB71
+008: LC_SOURCE_VERSION           1617.40.10.0.0
+009: LC_FUNCTION_STARTS          offset=0x004aca200 size=0x450
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleUSBXHCI`
+- `CFBundleIdentifier`: `com.apple.driver.usb.AppleUSBXHCI`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `I/O Kit Driver for USB XHCI Controllers`
+- `CFBundleNumericVersion`: `18907136`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.2`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1.2`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2000-2025 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.2`
+- `OSBundleLibraries_x86_64`:
+  - `com.apple.driver.usb.AppleUSBCommon`: `1.0`
+  - `com.apple.iokit.IOUSBHostFamily`: `1.2`
+  - `com.apple.kpi.bsd`: `23.0.0`
+  - `com.apple.kpi.iokit`: `23.0.0`
+  - `com.apple.kpi.libkern`: `23.0.0`
+  - `com.apple.kpi.mach`: `23.0.0`
+  - `com.apple.kpi.private`: `23.0.0`
+  - `com.apple.kpi.unsupported`: `23.0.0`
+- `OSBundleRequired`: `Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/IOUSBHostFamily.kext/PlugIns/AppleUSBXHCI.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198893906592`
+- `_PrelinkExecutableRelativePath`: `AppleUSBXHCI`
+- `_PrelinkExecutableSize`: `356224`
+- `_PrelinkExecutableSourceAddr`: `-2198893906592`
+- `_PrelinkKmodInfo`: `-2198828088272`
+
+## Strings (832) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `site.AppleUSBXHCIIsochronousRequestPool`
+- `abortCommand`
+- `waitForCommands`
+- `%s@%s: %s::%s: disable test mode on port\n`
+- `%s: %s::%s: %d-%d %d-%d\n`
+- `AppleUSBXHCIRequest`
+- `%s@%s: %s::%s: base address 0x%016llx\n`
+- `AppleUSBXHCIPort.cpp`
+- `usb-repeater`
+- `%s: %s::%s: %d-%d endpoint is still running\n`
+- `resource error`
+- `slot not enabled`
+- `%s@%s: %s::%s: restoring saved state\n`
+- `cancel`
+- `createPort`
+- `save state failed`
+- `AppleUSBXHCICommandRing`
+- `AppleUSBXHCIIsochronousEndpoint`
+- `AppleUSBXHCIDevice`
+- `ring underrun`
+- `restoreState`
+- `AppleUSBXHCIIsochronousTransferRing`
+- `1211112111111121111111111111111222222222222222211111111111111112222221121121111221111211111221222222`
+- `initRegisters`
+- `resume`
+- `testMode`
+- `resetAndCreateDevice`
+- `%s: %s::%s: endpoint is not stopped\n`
+- `site.AppleUSB20XHCIPort`
+- `createPorts`
+- `%s: %s::%s: device %d endpoint 0x%02x: transfer event for _previousTD\n`
+- `powerStateDidChangeToGated`
+- `%s: %s::%s: device %d endpoint 0x%02x: _previousTD is not NULL\n`
+- `update`
+- `enqueueRequest`
+- `%s: %s::%s: signaling threads waiting on command[%llu]\n`
+- `%s: %s::%s: holding waitForSlotCommands and waitForEndpointCommands calls\n`
+- `%s@%s: %s::%s: unexpected slot %d\n`
+- `%s@%s: %s::%s: streams are not supported downstream of a multiport hub\n`
+- `%s@%s: %s::%s: warm reset\n`
+- `split transaction error`
+- `%s@%s: %s::%s: failed to allocate thread call for test mode\n`
+- `%s@%s: %s::%s: cold attach detected on port %d (%s)\n`
+- `121211211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `no slots available`
+- `bandwidth overrun`
+- `%s@%s: %s::%s: failed to create IOUSBHostDevice\n`
+- `%s@%s: %s::%s: unable to find port %u\n`
+- `%s@%s: %s::%s: port %d mode %d\n`
+- `121111121222121211222222212222222222222222222222222222222222222222222222222221221111122221112112222222222211122112111111111111111112222`
+- `executePendingCommands`
+- `updateLPMPolicyGated`
+- `%s: %s::%s: %d-%d no transfer ring claimed event 0x%016llx %08x %08x\n`
+- `site.AppleUSBXHCIRequestPool`
+- `updateSlot`
+- `%s@%s: %s::%s: reset complete\n`
+- `ioGated`
+- `%s@%s: %s::%s: set test mode %d\n`
+- `%s@%s: %s::%s: signaling cold attach\n`
+- `%s@%s: %s::%s: failed to allocate internal device\n`
+- `enableSlot`
+- `%s: %s::%s: device %d endpoint 0x%02x: memory is too fragmented to fit burst at offset %d with length %d\n`
+- `%s@%s: %s::%s: failed to create _deviceContextBaseAddressArray\n`
+- `stopped (short packet)`
+- `undefined`
+- `%s: %s::%s: device %d endpoint 0x%02x: transfer is too far into the future\n`
+- `site.AppleUSBXHCIStream`
+- `%s: %s::%s: %d-%d waited %llu ns\n`
+- `1221112112211112`
+- `getDMASpecification`
+- `%s@%s: %s::%s: completing deferred destroy for slot %d\n`
+- `destroyDevice_block_invoke`
+- `%s@%s: %s::%s: locationID 0x%08x rootPort %d hubPort %d route 0x%05x-%d\n`
+- `%s@%s: %s::%s: port %p (%s) speed %d\n`
+- `site.AppleUSBXHCIIsochronousEndpoint`
+- `%s@%s: %s::%s: _deviceArray[slotID = %u] is invalid for endpoint %u`
+- `%s@%s: %s::%s: discarding device on slot %d\n`
+- `%s@%s: %s::%s: portSC 0x%08x (spurious overcurrent change)\n`
+- `site.AppleUSBXHCITDQueue`
+- `%s@%s: %s::%s: remote wake for locationID 0x%08x\n`
+- `%s@%s: %s::%s: %lu\n`
+- `hardwareException`
+- `%s@%s: %s::%s: enable compliance mode for USB3 port\n`
+- `%s@%s: %s::%s: kTRBTypeTransferEvent TRB %p (0x%016llx 0x%08x 0x%08x)\n`
+- `site.AppleUSBXHCIInterrupterMSI`
+- `enterTestMode`
+- `121111112212121`
+- `%s: %s::%s: %d-%d endpoint did not start\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: failed to create flags buffer\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: 0x%016llx %08x %08x\n`
+- `%s@%s: %s::%s: failed to enqueue request: 0x%08x\n`
+- `interruptOccurred`
+- `%s: %s::%s: command ring is full\n`
+- `%s@%s: %s::%s: PortPMSC 0x%08x (before test mode)\n`
+- `VF event ring full`
+- `updateEndpoint`
+- `%s@%s: %s::%s: link change to compliance (PORTSC 0x%08x)\n`
+- `%s: %s::%s: %d-%d software setting endpoint context to stopped\n`
+- `i8@?0`
+- `%s@%s: %s::%s: USB 3.x port %d (%p) maps to USB 2.0 port %d (%p)\n`
+- `%s: %s::%s: _abortQueue is not empty, abortResult 0x%08x endpointContext 0x%08x %08x %016llx %08x\n`
+- `%s@%s: %s::%s: hardware not accessible, deferring interrupt\n`
+- `%s@%s: %s::%s: failed to create _isochronousTransferRingsLock\n`
+- `invalid stream type`
+- `%s: %s::%s: holding waitForEndpointCommands calls\n`
+- `%s@%s: %s::%s: asserting reset\n`
+- `UsbHostControllerUSB2LPMPolicy`
+- `%s@%s: %s::%s: Speed(%d) LinkState(%d) LatencyType(%d) result(0x%08x) Latency(%d)\n`
+- `%s: %s::%s: %d-%d-%d\n`
+- `%s@%s: %s::%s: unable to create _tdPool\n`
+- `%s@%s: %s::%s: failed to create _scratchArray\n`
+- `%s@%s: %s::%s: port %d USB 2.%x with %d speed IDs\n`
+- `AppleUSBXHCIInterrupter`
+- `AppleUSBXHCIPort`
+- `start`
+- `%s: %s::%s: device %d endpoint 0x%02x: transfer TRB 0x%016llx %08x %08x, event TRB 0x%016llx %08x %08x (%s), current frame %llu\n`
+- `%s@%s: %s::%s: setAddress failed with 0x%08x\n`
+- `%s@%s: %s::%s: host controller error while halting\n`
+- `%s@%s: %s::%s: clearing pending change bits with portSC 0x%x\n`
+- `simulated`
+- `%s@%s: %s::%s: kIOReturnInternalError (port is not On)\n`
+- `powerOn`
+- `%s@%s: %s::%s: overcurrent active\n`
+- `11`
+- `UNDEFINED`
+- `unknown`
+- `%s@%s: %s::%s: %llu\n`
+- `%s: %s::%s: discarding command completion 0x%016llx %08x %08x due to unavailable hardware\n`
+- `%s: %s::%s: releasing waitForSlotCommands and waitForEndpointCommands hold\n`
+- `registerSuperSpeedHubGated`
+- `site.AppleUSBXHCIIsochronousRequest`
+- `UsbHostControllerUSB4LPMPolicy`
+- `context state error`
+- `incompatible device`
+- `%s@%s: %s::%s: endpoint is halted\n`
+- `%s: %s::%s: completed with result code %u slot %u\n`
+- `stop`
+- `%s@%s: %s::%s: HCSParams3 0x%08x (U2 Device Exit Latency %d U1 Device Exit Latency %d)\n`
+- `controller error`
+- `UsbProtocol (2.0)`
+- `releaseTemporaryHold`
+- `translateCompletionCode`
+- `%s@%s: %s::%s: <EXIT test mode>\n`
+- `%s@%s: %s::%s: <ENTER test mode>\n`
+- `force-usb-host`
+- `getLPMExitLatencyGated`
+- `adjustDeviceMaxExitLatencyGated`
+- `%s@%s: %s::%s: force-usb-test-mode set in boot-args, forcing device mode\n`
+- `%s@%s: %s::%s: alignment %u\n`
+- `%s@%s: %s::%s: signaling connect change\n`
+- `1211111212221212112222222122222222222222222222222222222222222222222222222222212211111222211121122222222222111221121111111111111111122`
+- `%s@%s: %s::%s: manually resuming the port\n`
+- `AppleUSBXHCICommandRing.cpp`
+- `%s: %s::%s: waiting for command[%u]\n`
+- `%s@%s: %s::%s: link change to resume\n`
+- `%s@%s: %s::%s: kTRBTypeCommandCompletionEvent TRB %p (0x%016llx 0x%08x 0x%08x)\n`
+- `%s@%s: %s::%s: HCSParams2 0x%08x (Max Scratchpad Bufs %d SPR %d ERST Max %d IST 0x%x)\n`
+- `bandwidth error`
+- `12211121122`
+- `%s@%s: %s::%s: failed to create portLinkSerializer\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: failed gen64IOVMSegments 0x%08x\n`
+- `addEndpoint`
+- `%s: %s::%s: NULL event\n`
+- `warmReset`
+- `AppleUSBXHCISparseRequestPool`
+- `%s@%s: %s::%s: kTRBTypeTransferEvent for slot %u endpoint %u\n`
+- `121111121222121211222222212222222222222222222222222222222222222222222222222221221111122221112112222222222211122112111111111111111112`
+- `%s@%s: %s::%s: config error change\n`
+- `AppleUSBXHCIStream`
+- `setTemporaryHold`
+- `site.AppleUSBXHCISparseRequestPool`
+- `%s@%s: %s::%s: scratch segment length (%llu) is < page size(%d)\n`
+- `ringDoorbell`
+- `%s@%s: %s::%s: timeout waiting for U0\n`
+- `serializePortLink`
+- `%s@%s: %s::%s: XHCI_PORT[%d].PortSC = 0x%08x\n`
+- `waitForEndpointCommands`
+- `%s@%s: %s::%s: overcurrent change\n`
+- `%s: %s::%s: %d-%d slot context 0x%08x %08x %08x %08x\n`
+- `%s@%s: %s::%s: assignedSlot %d\n`
+- `UsbHostControllerProtocolRevision`
+- `%s@%s: %s::%s: port %d USB 3.%x with %d speed IDs\n`
+- `%s@%s: %s::%s: host controller error while saving state\n`
+- `AppleUSB20XHCIPort`
+- `site.AppleUSB20XHCITypeCPort`
+- `%s: %s::%s: device %d endpoint 0x%02x: prepare failed with 0x%08x\n`
+- `%s@%s: %s::%s: max ports %d\n`
+- `force-usb-device`
+- `%s@%s: %s::%s: EOF2 violation\n`
+- `12111112122212121122222221222222222222222222222222222222222222222222222222222122111112222111211222222222221112211211111111111111111222`
+- `%s: %s::%s: %d-%d _transferRings is not empty\n`
+- `%s@%s: %s::%s: setting IOAccessory remote wake to %u\n`
+- `lowerOnePowerStateTo`
+- `AppleUSBXHCITransferRing`
+- `getDequeuePointer`
+- `%s: %s::%s: device %d endpoint 0x%02x: missed service TRB with NULL parameter\n`
+- `noOp`
+- `%s@%s: %s::%s: overcurrent cleared\n`
+- `kUSBTestMode`
+- `%s@%s: %s::%s: pipe %p endpoint 0x%02x type %d\n`
+- `dropEndpoint`
+- `site.tTestModeData`
+- `1211221211111111111111111111111111111111111112`
+- `site.AppleUSBXHCIPipe`
+- `site.AppleUSBXHCIRequest`
+- `%s: %s::%s: device %d endpoint 0x%02x: failed to allocate td\n`
+- `createDevice`
+- `%s@%s: %s::%s: port %d not created\n`
+- `%s@%s: %s::%s: port %d unsupported protocol %s %x.%x\n`
+- `%s@%s: %s::%s: controller does not support HW USB2 LPM\n`
+- `waitForSlotCommands`
+- `%s@%s: %s::%s: unexpected link state (PORTSC 0x%08x)\n`
+- `%s: %s::%s: kIOReturnIsoTooOld: startframe 0x%016llx firstAvailableFrame 0x%016llx\n`
+- `notifyHardware`
+- `%s: %s::%s: %d-%d %d-%d status 0x%08x\n`
+- `enableComplianceGated`
+- `setPowerStateGated`
+- `1211112111111121111111111111111222222222222222211111111111111112222221121121111221111211111221222`
+- `%s@%s: %s::%s: deferring slot %d\n`
+- `getCompanionPortGated`
+- `%s@%s: %s::%s: speed index %d has inconsistent speed IDs (%d and %d)\n`
+- `AAPL,ExternalConnectorBitmap`
+- `halt failed`
+- `AppleUSBXHCIIsochronousRequest.cpp`
+- `%s@%s: %s::%s: HCCParams2 0x%08x (ETC %d CIC %d LEC %d CTC %d FSC %d CMC %d U3C %d)\n`
+- `%s@%s: %s::%s: %s cold attach status\n`
+- `%s@%s: %s::%s: Setting LPM policy %d to %u, result 0x%08x\n`
+- `%s@%s: %s::%s: unable to obtain controller ownership from BIOS\n`
+- `parameter error`
+- `%s: %s::%s: endpoint context 0x%08x 0x%08x 0x%016llx 0x%08x\n`
+- `AppleUSB30XHCIPort`
+- `%s@%s: %s::%s: transfer ring is NULL\n`
+- `%s: %s::%s: XHCI.CommandRingControl = 0x%016llx\n`
+- `%s@%s: %s::%s: force-usb-host set in boot-args, forcing host mode\n`
+- `success`
+- `max exit latency too large`
+- `invalid stream ID`
+- `%s@%s: %s::%s: controller inactive\n`
+- `%s@%s: %s::%s: disconnect\n`
+- `%s@%s: %s::%s: failed to start thread call for test mode\n`
+- `invalid`
+- `portInterrupt`
+- `%s@%s: %s::%s: XHCI.DeviceNotification = 0x%08x\n`
+- `%s: %s::%s: command[%llu] 0x%016llx %08x %08x timeout after %llums\n`
+- `%s@%s: %s::%s: failed to create _portMemoryMap\n`
+- `%s@%s: %s::%s: turning off IOAccessory remote wakeup on upward power transition to %lu\n`
+- `%s@%s: %s::%s: USB 2.0 port %d (%p) maps to USB 3.x port %d (%p)\n`
+- `%s@%s: %s::%s: bad arguments index %d value %d\n`
+- `\"AppleUSBXHCI[%p]::%s: port %d in test mode %d\" @%s:%d`
+- `%s: %s::%s: \n`
+- `%s: %s::%s: %d-%d drop slot %d endpoint %d\n`
+- `%s@%s: %s::%s: slot %d is already marked as a hub\n`
+- `%s@%s: %s::%s: signaling cold attach on port %d (%s)\n`
+- `%s: %s::%s: slot %u endpoint %u\n`
+- `%s@%s: %s::%s: unknown test mode\n`
+- `IOPCITunnelled`
+- `%s: %s::%s: command[%llu] 0x%016llx %08x %08x did not generate an event\n`
+- `hardware`
+- `adjustPolicy`
+- `%s@%s: %s::%s: hot reset\n`
+- `%s@%s: %s::%s: speed mappings low:%d full:%d high:%d gen1:%d gen2:%d gen2x2:%d\n`
+- `%s@%s: %s::%s: failed to create result\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: DMA command operation failed\n`
+- `%s: %s::%s: completed with result code %u\n`
+- `processEvent`
+- `%s@%s: %s::%s: deadline passed (PORTSC 0x%08x)\n`
+- `%s@%s: %s::%s: simulated interrupts 0x%08x\n`
+- `no limit`
+- `isochronous buffer overrun`
+- `resumePipesGated`
+- `1211121222222`
+- `%s@%s: %s::%s: turning off IOAccessory remote wakeup\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: rejecting TRB 0x%016llx 0x%08x 0x%08x\n`
+- `endpoint not enabled`
+- `%s@%s: %s::%s: XHCI_DOORBELL[%d] = 0x%08x\n`
+- `%s: %s::%s: transfer ring %p dequeue pointer 0x%016llx\n`
+- `%s: %s::%s: discarding stopped command ring event 0x%016llx %08x %08x\n`
+- `AppleUSBXHCIStreamingEndpoint`
+- `%s: %s::%s: device %d endpoint 0x%02x: setMemoryDescriptor failed with 0x%08x\n`
+- `complete`
+- `%s@%s: %s::%s: hardware exception occurred\n`
+- `%s@%s: %s::%s: ports have not been created\n`
+- `%s@%s: %s::%s: XHCI.USBCommand = 0x%08x\n`
+- `disableSlot`
+- `%s@%s: %s::%s: failed to allocate _protocol\n`
+- `AppleUSBXHCISparseRequest`
+- `site.AppleUSBXHCIIsochronousTransferRing`
+- `121111112212111122222121`
+- `event lost`
+- `%s: %s::%s: ineligible endpoint with state 0x%08x\n`
+- `%s: %s::%s: hardware became unavailable while waiting for command ring stop\n`
+- `%s@%s: %s::%s: test mode for portNumber %d testMode %d\n`
+- `AppleIntelUSBXHCI`
+- `isochronousInterrupt`
+- `AppleUSB20XHCIPort.cpp`
+- `site.AppleUSBXHCITDPool`
+- `%s: %s::%s: device %d endpoint 0x%02x: kIOReturnIsoTooOld: controllerFrame 0x%016llx + %d startFrame 0x%016llx\n`
+- `site.AppleUSBXHCICommandRing`
+- `%s: %s::%s: hardware is unavailable\n`
+- `%s: %s::%s: command[%llu] event 0x%016llx %08x %08x with unexpected status\n`
+- `site.AppleUSBXHCIPort`
+- `missed service`
+- `%s@%s: %s::%s: failed to create _deviceContextBufferDescriptor\n`
+- `%s@%s: %s::%s: unsupported protocol %s %x.%x.%x\n`
+- `AppleUSBXHCIInterrupterMSI`
+- `%s: %s::%s: _abortQueue is not empty\n`
+- `%s@%s: %s::%s: overcurrent detected portSC 0x%08x\n`
+- `%s@%s: %s::%s: powering off unused port %d\n`
+- `site.AppleUSBXHCI`
+- `unregisterPeriodicTransferRing`
+- `%s: %s::%s: _queue is not empty\n`
+- `1221`
+- `waitForStateChange`
+- `transferEvent`
+- `%s: %s::%s: device %d endpoint 0x%02x: _tdQueue is not empty\n`
+- `enableStreamsGated`
+- `command failure`
+- `getNextCommand`
+- `AppleUSBXHCIEndpointSoftRetry`
+- `12112112111211`
+- `%s@%s: %s::%s: extended capability type %d length %d\n`
+- `%s@%s: %s::%s: stream %p endpoint 0x%02x stream %d\n`
+- `%s@%s: %s::%s: XHCI.Config = 0x%08x\n`
+- `saveState`
+- `%s@%s: %s::%s: setting minimum latency tolerance\n`
+- `%s: %s::%s: command[%llu] event 0x%016llx %08x %08x with invalid parameter\n`
+- `%s@%s: %s::%s: hub on root port %d with route string 0x%05x has %d ports\n`
+- `%s@%s: %s::%s: scavenge isochronous\n`
+- `powerOff`
+- `%s@%s: %s::%s: super::raiseOnePowerStateTo failed with %s\n`
+- `destroy`
+- `AppleUSBXHCITransferRing.cpp`
+- `AppleUSBXHCITDPool`
+- `prepare`
+- `%s: %s::%s: device %d endpoint 0x%02x: ownership mismatch for transfer TRB 0x%016llx, 0x%08x, 0x%08x\n`
+- `%s@%s: %s::%s: HCCParams1 0x%08x (xECP 0x%04x MaxPSASize %d CFC %d SEC %d SPC %d PAE %d NSS %d LTC %d LHRC %d PIND %d PPC %d CSZ %d BNC %d AC64 %d)\n`
+- `registerHubGated`
+- ` @%s:%d`
+- `%s: %s::%s: device %d endpoint 0x%02x: unhandled status %d\n`
+- `system error`
+- `%s@%s: %s::%s: device %s@%s Max Exit Latency(%d) result(0x%08x) \n`
+- `%s: %s::%s: request %p link failed with 0x%08x\n`
+- `%s: %s::%s: releasing waitForEndpointCommands hold\n`
+- `ring overrun`
+- `%s@%s: %s::%s: unable to find device slot\n`
+- `reset`
+- `%s: %s::%s: device %d endpoint 0x%02x: memory is too fragmented to fit transaction %d with length %d\n`
+- `%s@%s: %s::%s: slot %d\n`
+- `refreshDequeuePointer`
+- `%s: %s::%s: device %d endpoint 0x%02x: link TRB 0x%016llx %08x %08x current frame 0x%016llx\n`
+- `AppleUSBXHCIRequestPool`
+- `usb-port-number`
+- `%s@%s: %s::%s: slot context 0x%08x %08x %08x %08x\n`
+- `%s: %s::%s: state %d\n`
+- `%s: %s::%s: command ring failed to stop\n`
+- `getPortBandwidth`
+- `%s: %s::%s: %d-%d pending commands 0x%08x failed with 0x%08x\n`
+- `%s@%s: %s::%s: processing deferred isochronous events\n`
+- `%s@%s: %s::%s: save restore error while saving state\n`
+- `createRequestPool`
+- `hardwareExceptionThreadCall_block_invoke`
+- `lost power`
+- `%s: %s::%s: _queue is not empty, abortResult 0x%08x endpointContext 0x%08x %08x %016llx %08x\n`
+- `%s: %s::%s: command[%llu] 0x%016llx %08x %08x timeout %u\n`
+- `%s@%s: %s::%s: force-usb-device set in boot-args, forcing device mode\n`
+- `%s@%s: %s::%s: %d interrupters supported, %d are required\n`
+- `%s@%s: %s::%s: parent slot %d (route 0x%05x-%d) is not a hub\n`
+- `12111121111121212`
+- `%s@%s: %s::%s: disconnect transition timeout\n`
+- `transaction error`
+- `%s@%s: %s::%s: unsupported speed mantissa %d exponent %d\n`
+- `reset failed`
+- `UsbHostControllerPortWakeSourcesPolicy`
+- `UsbProtocol (1.x)`
+- `connectChangeInterrupt`
+- `%s@%s: %s::%s: kXHCITestModePowerOff\n`
+- `%s@%s: %s::%s: failed to create _commandRing\n`
+- `%s@%s: %s::%s: failed to allocate localProtocolCapability\n`
+- `%s: %s::%s: abortRequest failed with 0x%08x\n`
+- `Usb2Repeater`
+- `AppleUSBXHCIEndpoint.cpp`
+- `%s@%s: %s::%s: unexpected PAGESIZE 0x%08x\n`
+- `AppleUSBXHCIIsochronousRequest`
+- `AppleUSBXHCI.cpp`
+- `site.AppleUSBXHCIStreamingEndpoint`
+- `%s@%s: %s::%s: waiting for hot reset\n`
+- `site.AppleUSBXHCIInterrupter`
+- `%s@%s: %s::%s: HCIVersion 0x%04x\n`
+- `%s: %s::%s: slot context 0x%08x 0x%08x 0x%08x 0x%08x\n`
+- `force-usb-test-mode`
+- `%s@%s: %s::%s: kTRBTypeDeviceNotificationEvent 0x%016llx 0x%08x 0x%08x\n`
+- `%s@%s: %s::%s: invalid event\n`
+- `site.AppleUSBXHCITransferRing`
+- `%s@%s: %s::%s: port not powered, portSC 0x%08x\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: %d-TRB chain at 0x%016llx\n`
+- `121111121222121211211111222222222222222222222222222222222222222222222222222222222222222212121121111122222222222222221211222222222222222222222222222222222222222222222222212111111111222122222222222211222211112222211211111111111111111111111111111111111111111111111111111111111111111111111111111111111111`
+- `Usb2ExternalRemoteWake`
+- `%s@%s: %s::%s: kTRBTypePortStatusChangeEvent TRB %p (0x%016llx 0x%08x 0x%08x)\n`
+- `%s@%s: %s::%s: remote wake\n`
+- `AppleUSBXHCI`
+- `%s@%s: %s::%s: device with route 0x%05x is not a hub\n`
+- `%s@%s: %s::%s: host controller was not halted, USBStatus 0x%08x\n`
+- `%s@%s: %s::%s: halting controller, USBStatus 0x%08x\n`
+- `%s@%s: %s::%s: setting default latency tolerance\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: rejecting TRB 0x%016llx %08x %08x\n`
+- `setDequeuePointer`
+- `%s@%s: %s::%s: kIOReturnInternalError (port is On)\n`
+- `usb-dock-remote-wake`
+- `%s@%s: %s::%s: HCSParams1 0x%08x (MaxPorts %d MaxIntrs %d MaxSlots %d)\n`
+- `TRB error`
+- `%s@%s: %s::%s: unexpected power state %lu\n`
+- `%s@%s: %s::%s: XHCI.DeviceContextBase = 0x%016llx\n`
+- `site.AppleUSB30XHCIPort`
+- `%s@%s: %s::%s: Setting Timeout linkState %d timeoutUs %d\n`
+- `%s@%s: %s::%s: %s\n`
+- `secondary bandwidth error`
+- `%s@%s: %s::%s: index %d value 0x%08x\n`
+- `site.StandardUSBXHCIProtocolCapability.uint32_t`
+- `UsbHostControllerControlRequestPolicy`
+- `suspend`
+- `AppleUSB20XHCITypeCPort`
+- `controller not ready (CNR) still set`
+- `babble`
+- `%s: %s::%s: link TRB not found in TD %p\n`
+- `%x.%x`
+- `%s: %s::%s: hardware became unavailable while waiting for command\n`
+- `%s@%s: %s::%s: link change to inactive (PORTSC 0x%08x)\n`
+- `no ping response`
+- `stopped (length invalid)`
+- `%s: %s::%s: %d-%d update slot %d endpoint %d\n`
+- `UsbHostControllerDeferRegisterService`
+- `%s@%s: %s::%s: reset change\n`
+- `dock-remote-wake`
+- `%s@%s: %s::%s: controller supports HW USB2 LPM\n`
+- `resetEndpoint`
+- `%s: %s::%s: waiting for hold\n`
+- `site.AppleUSBXHCIDevice`
+- `%s@%s: %s::%s: unexpected reassignment of slot %d\n`
+- `%s@%s: %s::%s: unable to locate a device with route 0x%05x\n`
+- `usb-control-request-policy`
+- `UsbTunnel`
+- `AppleUSBXHCIPipe`
+- `%s: %s::%s: device %d endpoint 0x%02x: request still has TDs\n`
+- `%s@%s: %s::%s: failed to attach or start port %d\n`
+- `%s@%s: %s::%s: XHCI revision 0x%04x is not supported\n`
+- `event ring full`
+- `%s@%s: %s::%s: PortPMSC 0x%08x (in test mode)\n`
+- `%s@%s: %s::%s: unable to determine slot for device\n`
+- `site.AppleUSBXHCISparseRequest`
+- `%s@%s: %s::%s: boot-arg override %s: %d\n`
+- `%s: %s::%s: slot %u\n`
+- `site.AppleUSBXHCIEndpoint`
+- `unhalt`
+- `UsbHostPortLinkSpeedLimit`
+- `%s@%s: %s::%s: failed to allocate _interruptSource[%d]\n`
+- `stall`
+- `%s@%s: %s::%s: kTRBTypeMFINDEXWrapEvent _frameRolloverCount %llu\n`
+- `%s@%s: %s::%s: connect\n`
+- `121211112`
+- `stopped`
+- `primaryInterrupt`
+- `%s@%s: %s::%s: discarding type %d port %d status %d (0x%016llx %08x %08x)\n`
+- `setAddress`
+- `%s: %s::%s: %d-%d ineligible endpoint with state 0x%08x\n`
+- `%s: %s::%s: %d-%d endpoint did not stop\n`
+- `%s@%s: %s::%s: speed %d locationID 0x%08x options 0x%08x\n`
+- `disconnected`
+- `%s: %s::%s: device %d endpoint 0x%02x: transfer TRB 0x%016llx %08x %08x, event TRB 0x%016llx %08x %08x (%s), current frame 0x%016llx\n`
+- `%s@%s: %s::%s: portReg is invalid\n`
+- `site.AppleUSBXHCIEndpointSoftRetry`
+- `command ring stopped`
+- `%s@%s: %s::%s: IO event ring: unhandled type %d TRB %p (0x%016llx 0x%08x 0x%08x)\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: did not find link TRB in TD %p\n`
+- `initWithDeviceMemory`
+- `software-initiated reset`
+- `%s@%s: %s::%s: transitioning the lines from port fw\n`
+- `%s@%s: %s::%s: controller is unavailable\n`
+- `%s@%s: %s::%s: root port %u out of bounds\n`
+- `setProperties`
+- `12`
+- `site.AppleUSBXHCITD`
+- `short packet`
+- `%s@%s: %s::%s: ports limit reached.  Not creating the remaining %d ports\n`
+- `AppleUSBXHCIEndpoint`
+- `link-error-count`
+- `UsbHostControllerUSB3LPMPolicy`
+- `%s@%s: %s::%s: unable to get device memory\n`
+- `link`
+- `%s: %s::%s: command[%llu] event 0x%016llx %08x %08x\n`
+- `%s: %s::%s: signaling next command[%u]\n`
+- `%s@%s: %s::%s: set PLS=compliance on the port\n`
+- `UsbHostControllerStreamPolicy`
+- `command aborted`
+- `kUSBCompanionIndex`
+- `%s@%s: %s::%s: extended capability defines >maxPorts\n`
+- `executeCommand`
+- `%s: %s::%s: %d-%d reset slot %d endpoint %d\n`
+- `kUSBHostPortPropertyUsb3ComplianceMode`
+- `%s@%s: %s::%s: primary event ring: unhandled type %d TRB %p (0x%016llx 0x%08x 0x%08x)\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: failed gen64IOVMSegments with 0x%08x\n`
+- `stopEndpoint`
+- `%s@%s: %s::%s: link state U0\n`
+- `UsbProtocol (3.x)`
+- `ioInterrupt`
+- `%s@%s: %s::%s: timed out halting\n`
+- `%s@%s: %s::%s: port %d has change bits set, portSC 0x%08x\n`
+- `%s: %s::%s: no endpoint %d for event 0x%016llx %08x %08x\n`
+- `%s@%s: %s::%s: CapLength 0x%02x\n`
+- `site.AppleUSB30XHCITypeCPort`
+- `%s@%s: %s::%s: failed to create _interrupters[%d]\n`
+- `%s@%s: %s::%s: \n`
+- `buffer error`
+- `%s@%s: %s::%s: streams are not supported on a multiport controller\n`
+- `%s@%s: %s::%s: kUSBStatusHalted did not set\n`
+- `121111211111212`
+- `%s: %s::%s: %d-%d endpoint context 0x%08x %08x %016llx %08x\n`
+- `%s@%s: %s::%s: remote wake triggered\n`
+- `%s@%s: %s::%s: registers: operational %p runtime %p doorbell %p\n`
+- `abortAllRequests`
+- `AppleUSBXHCIIsochronousRequestPool`
+- `locationID`
+- `%s@%s: %s::%s: timed out saving state\n`
+- `registerPeriodicTransferRing`
+- `setLatencyTolerance`
+- `%s: %s::%s: hardware is not available, or command ring is not running\n`
+- `AppleUSB30XHCITypeCPort`
+- `%s@%s: %s::%s: link state %d\n`
+- `free`
+- `%s@%s: %s::%s: deviceContext segment length (%llu) is < _deviceContextSize size(%d)\n`
+- `createDevice_block_invoke`
+- `%s@%s: %s::%s: parent slot %d (route 0x%05x-%d)\n`
+- `%s@%s: %s::%s: unable to locate a parent slot (route 0x%05x-%d)\n`
+- `raiseOnePowerStateTo`
+- `%s: %s::%s: unexpected dequeue pointer 0x%016llx\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: mismatched event TRB 0x%016llx %08x %08x (expected parameter between 0x%016llx and 0x%016llx)\n`
+- `%s@%s: %s::%s: type %d port %d status %d (0x%016llx %08x %08x)\n`
+- `%s: %s::%s: command ring is already running\n`
+- `%s: %s::%s: hardware became unavailable while waiting for command abort\n`
+- `AppleUSBXHCIRequest.cpp`
+- `%s@%s: %s::%s: found boot-arg %s=%d\n`
+- `abortRequest`
+- `timeout`
+- `%s: %s::%s: command[%llu] 0x%016llx %08x %08x got result 0x%016llx %08x %08x after %llums (enqueued %llums)\n`
+- `setMaximumLinkSpeed_block_invoke`
+- `%s@%s: %s::%s: address lock not acquired\n`
+
+**[__TEXT.__os_log]**
+
+- `%s@%s: %s::%s: HCIVersion 0x%04x\n`
+- `%s@%s: %s::%s: endpoint is halted\n`
+- `%s@%s: %s::%s: failed to enqueue request: 0x%08x\n`
+- `%s: %s::%s: unexpected dequeue pointer 0x%016llx\n`
+- `%s: %s::%s: completed with result code %u slot %u\n`
+- `%s@%s: %s::%s: boot-arg override %s: %d\n`
+- `%s@%s: %s::%s: manually resuming the port\n`
+- `%s@%s: %s::%s: kTRBTypeMFINDEXWrapEvent _frameRolloverCount %llu\n`
+- `%s@%s: %s::%s: unsupported speed mantissa %d exponent %d\n`
+- `%s@%s: %s::%s: failed to create _portMemoryMap\n`
+- `%s@%s: %s::%s: force-usb-host set in boot-args, forcing host mode\n`
+- `%s@%s: %s::%s: parent slot %d (route 0x%05x-%d) is not a hub\n`
+- `%s@%s: %s::%s: kTRBTypePortStatusChangeEvent TRB %p (0x%016llx 0x%08x 0x%08x)\n`
+- `%s@%s: %s::%s: cold attach detected on port %d (%s)\n`
+- `%s@%s: %s::%s: link state %d\n`
+- `%s@%s: %s::%s: hot reset\n`
+- `%s: %s::%s: hardware became unavailable while waiting for command\n`
+- `%s@%s: %s::%s: USB 3.x port %d (%p) maps to USB 2.0 port %d (%p)\n`
+- `%s@%s: %s::%s: discarding type %d port %d status %d (0x%016llx %08x %08x)\n`
+- `%s@%s: %s::%s: XHCI.DeviceContextBase = 0x%016llx\n`
+- `%s@%s: %s::%s: halting controller, USBStatus 0x%08x\n`
+- `%s@%s: %s::%s: signaling cold attach\n`
+- `%s@%s: %s::%s: type %d port %d status %d (0x%016llx %08x %08x)\n`
+- `%s@%s: %s::%s: completing deferred destroy for slot %d\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: transfer TRB 0x%016llx %08x %08x, event TRB 0x%016llx %08x %08x (%s), current frame 0x%016llx\n`
+- `%s: %s::%s: state %d\n`
+- `%s@%s: %s::%s: unexpected PAGESIZE 0x%08x\n`
+- `%s@%s: %s::%s: alignment %u\n`
+- `%s@%s: %s::%s: timed out halting\n`
+- `%s: %s::%s: command[%llu] 0x%016llx %08x %08x timeout after %llums\n`
+- `%s@%s: %s::%s: kXHCITestModePowerOff\n`
+- `%s@%s: %s::%s: parent slot %d (route 0x%05x-%d)\n`
+- `%s@%s: %s::%s: root port %u out of bounds\n`
+- `%s@%s: %s::%s: super::raiseOnePowerStateTo failed with %s\n`
+- `%s@%s: %s::%s: port %d has change bits set, portSC 0x%08x\n`
+- `%s: %s::%s: %d-%d ineligible endpoint with state 0x%08x\n`
+- `%s@%s: %s::%s: waiting for hot reset\n`
+- `%s@%s: %s::%s: failed to create _isochronousTransferRingsLock\n`
+- `%s@%s: %s::%s: extended capability defines >maxPorts\n`
+- `%s@%s: %s::%s: restoring saved state\n`
+- `%s: %s::%s: ineligible endpoint with state 0x%08x\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: missed service TRB with NULL parameter\n`
+- `%s: %s::%s: %d-%d _transferRings is not empty\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: setMemoryDescriptor failed with 0x%08x\n`
+- `%s@%s: %s::%s: %d interrupters supported, %d are required\n`
+- `%s@%s: %s::%s: scavenge isochronous\n`
+- `%s@%s: %s::%s: save restore error while saving state\n`
+- `%s@%s: %s::%s: controller does not support HW USB2 LPM\n`
+- `%s: %s::%s: _queue is not empty\n`
+- `%s: %s::%s: transfer ring %p dequeue pointer 0x%016llx\n`
+- `%s: %s::%s: command ring failed to stop\n`
+- `%s: %s::%s: releasing waitForSlotCommands and waitForEndpointCommands hold\n`
+- `%s@%s: %s::%s: failed to allocate localProtocolCapability\n`
+- `%s@%s: %s::%s: transitioning the lines from port fw\n`
+- `%s@%s: %s::%s: processing deferred isochronous events\n`
+- `%s: %s::%s: signaling next command[%u]\n`
+- `%s@%s: %s::%s: disable test mode on port\n`
+- `%s@%s: %s::%s: failed to create _interrupters[%d]\n`
+- `%s@%s: %s::%s: \n`
+- `%s@%s: %s::%s: locationID 0x%08x rootPort %d hubPort %d route 0x%05x-%d\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: ownership mismatch for transfer TRB 0x%016llx, 0x%08x, 0x%08x\n`
+- `%s@%s: %s::%s: link state U0\n`
+- `%s@%s: %s::%s: unable to obtain controller ownership from BIOS\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: rejecting TRB 0x%016llx %08x %08x\n`
+- `%s: %s::%s: NULL event\n`
+- `%s: %s::%s: command[%llu] 0x%016llx %08x %08x did not generate an event\n`
+- `%s@%s: %s::%s: %s\n`
+- `%s@%s: %s::%s: extended capability type %d length %d\n`
+- `%s@%s: %s::%s: scratch segment length (%llu) is < page size(%d)\n`
+- `%s@%s: %s::%s: address lock not acquired\n`
+- `%s@%s: %s::%s: unsupported protocol %s %x.%x.%x\n`
+- `%s@%s: %s::%s: streams are not supported downstream of a multiport hub\n`
+- `%s@%s: %s::%s: index %d value 0x%08x\n`
+- `%s@%s: %s::%s: reset complete\n`
+- `%s@%s: %s::%s: timeout waiting for U0\n`
+- `%s@%s: %s::%s: CapLength 0x%02x\n`
+- `%s@%s: %s::%s: bad arguments index %d value %d\n`
+- `%s@%s: %s::%s: %lu\n`
+- `%s@%s: %s::%s: timed out saving state\n`
+- `%s@%s: %s::%s: config error change\n`
+- `%s@%s: %s::%s: PortPMSC 0x%08x (before test mode)\n`
+- `%s: %s::%s: %d-%d reset slot %d endpoint %d\n`
+- `%s: %s::%s: %d-%d endpoint is still running\n`
+- `%s@%s: %s::%s: failed to create _deviceContextBaseAddressArray\n`
+- `%s@%s: %s::%s: unable to find device slot\n`
+- `%s@%s: %s::%s: Speed(%d) LinkState(%d) LatencyType(%d) result(0x%08x) Latency(%d)\n`
+- `%s: %s::%s: hardware became unavailable while waiting for command ring stop\n`
+- `%s@%s: %s::%s: link change to resume\n`
+- `%s@%s: %s::%s: signaling connect change\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: memory is too fragmented to fit burst at offset %d with length %d\n`
+- `%s@%s: %s::%s: force-usb-test-mode set in boot-args, forcing device mode\n`
+- `%s@%s: %s::%s: set test mode %d\n`
+- `%s@%s: %s::%s: failed to create IOUSBHostDevice\n`
+- `%s: %s::%s: link TRB not found in TD %p\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: memory is too fragmented to fit transaction %d with length %d\n`
+- `%s: %s::%s: endpoint context 0x%08x 0x%08x 0x%016llx 0x%08x\n`
+- `%s@%s: %s::%s: set PLS=compliance on the port\n`
+- `%s@%s: %s::%s: turning off IOAccessory remote wakeup\n`
+- `%s@%s: %s::%s: kTRBTypeTransferEvent TRB %p (0x%016llx 0x%08x 0x%08x)\n`
+- `%s@%s: %s::%s: XHCI_PORT[%d].PortSC = 0x%08x\n`
+- `%s@%s: %s::%s: setting default latency tolerance\n`
+- `%s: %s::%s: slot context 0x%08x 0x%08x 0x%08x 0x%08x\n`
+- `%s: %s::%s: command[%llu] 0x%016llx %08x %08x timeout %u\n`
+- `%s@%s: %s::%s: host controller was not halted, USBStatus 0x%08x\n`
+- `%s: %s::%s: endpoint is not stopped\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: failed gen64IOVMSegments with 0x%08x\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: link TRB 0x%016llx %08x %08x current frame 0x%016llx\n`
+- `%s: %s::%s: discarding stopped command ring event 0x%016llx %08x %08x\n`
+- `%s: %s::%s: command[%llu] 0x%016llx %08x %08x got result 0x%016llx %08x %08x after %llums (enqueued %llums)\n`
+- `%s@%s: %s::%s: Setting Timeout linkState %d timeoutUs %d\n`
+- `%s@%s: %s::%s: controller inactive\n`
+- `%s@%s: %s::%s: overcurrent active\n`
+- `%s: %s::%s: no endpoint %d for event 0x%016llx %08x %08x\n`
+- `%s: %s::%s: releasing waitForEndpointCommands hold\n`
+- `%s: %s::%s: %d-%d endpoint context 0x%08x %08x %016llx %08x\n`
+- `%s@%s: %s::%s: XHCI revision 0x%04x is not supported\n`
+- `%s@%s: %s::%s: %llu\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: did not find link TRB in TD %p\n`
+- `%s: %s::%s: XHCI.CommandRingControl = 0x%016llx\n`
+- `%s@%s: %s::%s: overcurrent detected portSC 0x%08x\n`
+- `%s@%s: %s::%s: unable to find port %u\n`
+- `%s: %s::%s: holding waitForEndpointCommands calls\n`
+- `%s@%s: %s::%s: clearing pending change bits with portSC 0x%x\n`
+- `%s@%s: %s::%s: max ports %d\n`
+- `%s@%s: %s::%s: HCCParams2 0x%08x (ETC %d CIC %d LEC %d CTC %d FSC %d CMC %d U3C %d)\n`
+- `%s@%s: %s::%s: failed to create _deviceContextBufferDescriptor\n`
+- `%s@%s: %s::%s: primary event ring: unhandled type %d TRB %p (0x%016llx 0x%08x 0x%08x)\n`
+- `%s@%s: %s::%s: deadline passed (PORTSC 0x%08x)\n`
+- `%s@%s: %s::%s: asserting reset\n`
+- `%s@%s: %s::%s: assignedSlot %d\n`
+- `%s@%s: %s::%s: unable to locate a parent slot (route 0x%05x-%d)\n`
+- `%s@%s: %s::%s: kUSBStatusHalted did not set\n`
+- `%s: %s::%s: waiting for hold\n`
+- `%s@%s: %s::%s: warm reset\n`
+- `%s@%s: %s::%s: unexpected power state %lu\n`
+- `%s@%s: %s::%s: streams are not supported on a multiport controller\n`
+- `%s@%s: %s::%s: XHCI.DeviceNotification = 0x%08x\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: kIOReturnIsoTooOld: controllerFrame 0x%016llx + %d startFrame 0x%016llx\n`
+- `%s@%s: %s::%s: overcurrent cleared\n`
+- `%s@%s: %s::%s: kIOReturnInternalError (port is not On)\n`
+- `%s@%s: %s::%s: turning off IOAccessory remote wakeup on upward power transition to %lu\n`
+- `%s@%s: %s::%s: port %d not created\n`
+- `%s@%s: %s::%s: HCCParams1 0x%08x (xECP 0x%04x MaxPSASize %d CFC %d SEC %d SPC %d PAE %d NSS %d LTC %d LHRC %d PIND %d PPC %d CSZ %d BNC %d AC64 %d)\n`
+- `%s@%s: %s::%s: failed to allocate internal device\n`
+- `%s@%s: %s::%s: pipe %p endpoint 0x%02x type %d\n`
+- `%s@%s: %s::%s: speed index %d has inconsistent speed IDs (%d and %d)\n`
+- `%s: %s::%s: abortRequest failed with 0x%08x\n`
+- `%s: %s::%s: slot %u endpoint %u\n`
+- `%s: %s::%s: discarding command completion 0x%016llx %08x %08x due to unavailable hardware\n`
+- `%s@%s: %s::%s: failed to allocate _interruptSource[%d]\n`
+- `%s@%s: %s::%s: force-usb-device set in boot-args, forcing device mode\n`
+- `%s@%s: %s::%s: disconnect transition timeout\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: _previousTD is not NULL\n`
+- `%s@%s: %s::%s: unexpected reassignment of slot %d\n`
+- `%s@%s: %s::%s: slot %d\n`
+- `%s@%s: %s::%s: powering off unused port %d\n`
+- `%s@%s: %s::%s: speed mappings low:%d full:%d high:%d gen1:%d gen2:%d gen2x2:%d\n`
+- `%s@%s: %s::%s: host controller error while saving state\n`
+- `AppleUSBXHCIInterrupter::enable: invalid event ring (table size %d dequeue pointer 0x%016llx table address 0x%016llx)\n`
+- `%s@%s: %s::%s: unexpected link state (PORTSC 0x%08x)\n`
+- `%s@%s: %s::%s: remote wake for locationID 0x%08x\n`
+- `%s@%s: %s::%s: ports limit reached.  Not creating the remaining %d ports\n`
+- `%s: %s::%s: kIOReturnIsoTooOld: startframe 0x%016llx firstAvailableFrame 0x%016llx\n`
+- `%s: %s::%s: hardware is unavailable\n`
+- `%s@%s: %s::%s: simulated interrupts 0x%08x\n`
+- `%s@%s: %s::%s: PortPMSC 0x%08x (in test mode)\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: transfer is too far into the future\n`
+- `%s: %s::%s: completed with result code %u\n`
+- `%s: %s::%s: command[%llu] event 0x%016llx %08x %08x with unexpected status\n`
+- `%s: %s::%s: holding waitForSlotCommands and waitForEndpointCommands calls\n`
+- `%s@%s: %s::%s: portSC 0x%08x (spurious overcurrent change)\n`
+- `%s@%s: %s::%s: %s cold attach status\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: 0x%016llx %08x %08x\n`
+- `%s: %s::%s: \n`
+- `%s@%s: %s::%s: link change to inactive (PORTSC 0x%08x)\n`
+- `%s@%s: %s::%s: controller is unavailable\n`
+- `%s@%s: %s::%s: <EXIT test mode>\n`
+- `%s@%s: %s::%s: device %s@%s Max Exit Latency(%d) result(0x%08x) \n`
+- `%s: %s::%s: %d-%d no transfer ring claimed event 0x%016llx %08x %08x\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: request still has TDs\n`
+- `%s@%s: %s::%s: base address 0x%016llx\n`
+- `%s: %s::%s: command ring is already running\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: DMA command operation failed\n`
+- `%s@%s: %s::%s: unable to create _tdPool\n`
+- `%s: %s::%s: _queue is not empty, abortResult 0x%08x endpointContext 0x%08x %08x %016llx %08x\n`
+- `%s@%s: %s::%s: port not powered, portSC 0x%08x\n`
+- `%s@%s: %s::%s: remote wake\n`
+- `%s: %s::%s: %d-%d endpoint did not start\n`
+- `%s@%s: %s::%s: hardware exception occurred\n`
+- `%s@%s: %s::%s: slot context 0x%08x %08x %08x %08x\n`
+- `%s: %s::%s: %d-%d waited %llu ns\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: prepare failed with 0x%08x\n`
+- `%s@%s: %s::%s: reset change\n`
+- `%s@%s: %s::%s: disconnect\n`
+- `%s@%s: %s::%s: deferring slot %d\n`
+- `%s@%s: %s::%s: port %p (%s) speed %d\n`
+- `%s: %s::%s: %d-%d slot context 0x%08x %08x %08x %08x\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: transfer event for _previousTD\n`
+- `%s@%s: %s::%s: HCSParams1 0x%08x (MaxPorts %d MaxIntrs %d MaxSlots %d)\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: mismatched event TRB 0x%016llx %08x %08x (expected parameter between 0x%016llx and 0x%016llx)\n`
+- `%s: %s::%s: command ring is full\n`
+- `%s@%s: %s::%s: remote wake triggered\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: failed to create flags buffer\n`
+- `%s@%s: %s::%s: XHCI.USBCommand = 0x%08x\n`
+- `%s: %s::%s: command[%llu] event 0x%016llx %08x %08x\n`
+- `%s@%s: %s::%s: kIOReturnInternalError (port is On)\n`
+- `Block contains %d TRBs, expected mulitple of %d\n`
+- `%s@%s: %s::%s: failed to create portLinkSerializer\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: %d-TRB chain at 0x%016llx\n`
+- `%s@%s: %s::%s: HCSParams2 0x%08x (Max Scratchpad Bufs %d SPR %d ERST Max %d IST 0x%x)\n`
+- `%s@%s: %s::%s: failed to attach or start port %d\n`
+- `%s: %s::%s: request %p link failed with 0x%08x\n`
+- `%s: %s::%s: %d-%d %d-%d status 0x%08x\n`
+- `%s@%s: %s::%s: enable compliance mode for USB3 port\n`
+- `%s@%s: %s::%s: transfer ring is NULL\n`
+- `%s@%s: %s::%s: found boot-arg %s=%d\n`
+- `%s: %s::%s: slot %u\n`
+- `%s@%s: %s::%s: failed to allocate thread call for test mode\n`
+- `%s@%s: %s::%s: unknown test mode\n`
+- `%s: %s::%s: %d-%d pending commands 0x%08x failed with 0x%08x\n`
+- `%s@%s: %s::%s: setting IOAccessory remote wake to %u\n`
+- `%s@%s: %s::%s: failed to create _scratchArray\n`
+- `%s@%s: %s::%s: portReg is invalid\n`
+- `%s@%s: %s::%s: ports have not been created\n`
+- `%s@%s: %s::%s: XHCI_DOORBELL[%d] = 0x%08x\n`
+- `%s: %s::%s: _abortQueue is not empty\n`
+- `%s: %s::%s: signaling threads waiting on command[%llu]\n`
+- `%s@%s: %s::%s: EOF2 violation\n`
+- `%s: %s::%s: %d-%d endpoint did not stop\n`
+- `%s@%s: %s::%s: unexpected slot %d\n`
+- `%s@%s: %s::%s: stream %p endpoint 0x%02x stream %d\n`
+- `%s@%s: %s::%s: port %d USB 3.%x with %d speed IDs\n`
+- `%s@%s: %s::%s: setting minimum latency tolerance\n`
+- `%s@%s: %s::%s: connect\n`
+- `%s@%s: %s::%s: HCSParams3 0x%08x (U2 Device Exit Latency %d U1 Device Exit Latency %d)\n`
+- `%s@%s: %s::%s: deviceContext segment length (%llu) is < _deviceContextSize size(%d)\n`
+- `%s@%s: %s::%s: kTRBTypeTransferEvent for slot %u endpoint %u\n`
+- `%s@%s: %s::%s: kTRBTypeDeviceNotificationEvent 0x%016llx 0x%08x 0x%08x\n`
+- `%s: %s::%s: %d-%d-%d\n`
+- `%s@%s: %s::%s: setAddress failed with 0x%08x\n`
+- `%s@%s: %s::%s: device with route 0x%05x is not a hub\n`
+- `%s@%s: %s::%s: hub on root port %d with route string 0x%05x has %d ports\n`
+- `%s@%s: %s::%s: discarding device on slot %d\n`
+- `%s@%s: %s::%s: XHCI.Config = 0x%08x\n`
+- `%s: %s::%s: hardware became unavailable while waiting for command abort\n`
+- `%s: %s::%s: waiting for command[%u]\n`
+- `%s@%s: %s::%s: slot %d is already marked as a hub\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: transfer TRB 0x%016llx %08x %08x, event TRB 0x%016llx %08x %08x (%s), current frame %llu\n`
+- `%s@%s: %s::%s: port %d USB 2.%x with %d speed IDs\n`
+- `%s@%s: %s::%s: host controller error while halting\n`
+- `%s: %s::%s: aborted\n`
+- `%s: %s::%s: hardware is not available, or command ring is not running\n`
+- `%s@%s: %s::%s: failed to start thread call for test mode\n`
+- `%s: %s::%s: command[%llu] event 0x%016llx %08x %08x with invalid parameter\n`
+- `%s@%s: %s::%s: hardware not accessible, deferring interrupt\n`
+- `%s@%s: %s::%s: overcurrent change\n`
+- `%s: %s::%s: %d-%d drop slot %d endpoint %d\n`
+- `%s@%s: %s::%s: unable to get device memory\n`
+- `%s@%s: %s::%s: unable to determine slot for device\n`
+- `%s@%s: %s::%s: port %d unsupported protocol %s %x.%x\n`
+- `%s@%s: %s::%s: link change to compliance (PORTSC 0x%08x)\n`
+- `%s: %s::%s: %d-%d update slot %d endpoint %d\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: failed to allocate td\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: rejecting TRB 0x%016llx 0x%08x 0x%08x\n`
+- `%s@%s: %s::%s: kTRBTypeCommandCompletionEvent TRB %p (0x%016llx 0x%08x 0x%08x)\n`
+- `%s@%s: %s::%s: invalid event\n`
+- `%s: %s::%s: %d-%d software setting endpoint context to stopped\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: failed gen64IOVMSegments 0x%08x\n`
+- `%s@%s: %s::%s: port %d mode %d\n`
+- `%s: %s::%s: _abortQueue is not empty, abortResult 0x%08x endpointContext 0x%08x %08x %016llx %08x\n`
+- `%s@%s: %s::%s: failed to allocate _protocol\n`
+- `%s: %s::%s: %d-%d %d-%d\n`
+- `%s@%s: %s::%s: registers: operational %p runtime %p doorbell %p\n`
+- `%s@%s: %s::%s: USB 2.0 port %d (%p) maps to USB 3.x port %d (%p)\n`
+- `%s@%s: %s::%s: IO event ring: unhandled type %d TRB %p (0x%016llx 0x%08x 0x%08x)\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: _tdQueue is not empty\n`
+- `%s: %s::%s: device %d endpoint 0x%02x: unhandled status %d\n`
+- `%s@%s: %s::%s: signaling cold attach on port %d (%s)\n`
+- `%s@%s: %s::%s: test mode for portNumber %d testMode %d\n`
+- `%s@%s: %s::%s: Setting LPM policy %d to %u, result 0x%08x\n`
+- `%s@%s: %s::%s: speed %d locationID 0x%08x options 0x%08x\n`
+- `%s@%s: %s::%s: <ENTER test mode>\n`
+- `%s@%s: %s::%s: controller supports HW USB2 LPM\n`
+- `%s@%s: %s::%s: failed to create result\n`
+- `%s@%s: %s::%s: failed to create _commandRing\n`
+- `%s@%s: %s::%s: unable to locate a device with route 0x%05x\n`
+- `%s@%s: %s::%s: _deviceArray[slotID = %u] is invalid for endpoint %u`

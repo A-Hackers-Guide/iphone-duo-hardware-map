@@ -1,0 +1,27 @@
+# `SBWallpaperEffectView`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `PBUIWallpaperEffectViewBase`
+- Protocols: `SBApplicationSceneBackgroundView`
+- 0 instance variables, 9 properties, 2 instance methods, 0 class methods
+
+## Properties
+
+```
+@property (TB,?,N,GisFullscreen) fullscreen;
+@property (Tq,?,N) wallpaperStyle;
+@property (TB,?,N) needsClassicModeBackground;
+@property (TB,?,N) shouldUseBrightMaterial;
+@property (TQ,?,N) transformOptions;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[SBWallpaperEffectView initWithWallpaperVariant:wallpaperPresenter:];
+-[SBWallpaperEffectView initWithWallpaperVariant:transformOptions:wallpaperPresenter:];
+```

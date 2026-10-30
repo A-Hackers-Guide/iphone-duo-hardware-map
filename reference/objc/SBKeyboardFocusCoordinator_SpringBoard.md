@@ -1,0 +1,223 @@
+# `SBKeyboardFocusCoordinator`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `SBMultiDisplayUserInteractionCoordinatorActiveWindowSceneObserver`, `BKSHIDEventDeliveryChainObserving`, `BSDescriptionStreaming`, `SBSceneManagerObserver`, `SBKeyboardFocusSceneControllerDelegate`, `SBKeyboardFocusCoalitionDelegate`, `SBAdditionalEnvironmentDeferralsPolicyEnforcerDelegate`, `_UIEventDeferringSystemShellBehaviorDelegate`, `_UIKeyboardArbiterOmniscientDelegate`, `SBDisplayContentModeTransitionObserver`, `SBKeyboardFocusControlling`
+- 45 instance variables, 27 properties, 130 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"BKSHIDEventDeliveryManager" _deliveryManager;
+@"BKSHIDEventDeliveryChainObserver" _deliveryChainObserver;
+@"<BSInvalidatable>" _deliveryChainObserving;
+@"_SBKeyboardFocusSceneControllerFactory" _keyboardFocusSceneControllerFactory;
+@"_SBKeyboardFocusCoalitionFactory" _keyboardFocusCoalitionFactory;
+@"<SBKeyboardFocusSceneProviding>" _sceneProvider;
+@"UIKeyboardArbiterManager" _keyboardArbiterManager;
+@"<SBKeyboardFocusPolicyEnforcer>" _policyEnforcer;
+q _handleFocusChangeGenerationCount;
+@"BSCompoundAssertion" _activeFocusTargets;
+@"BSCompoundAssertion" _blockedRequestReasons;
+@"NSMutableDictionary" _additionalEnvironmentDeferringRules;
+@"NSMutableDictionary" _windowLockDeferringRecordsByDeferringToken;
+@"NSMutableDictionary" _lastFocusedSceneTokensByWindowSceneIdentifier;
+@"FBSSceneIdentityToken" _appSceneTokenWithFocus;
+@"SBWindowScene" _pendingActiveWindowScene;
+q _pendingActiveWindowSceneChangeReason;
+@"NSMutableArray" _pendingActiveWindowScenes;
+B _didAddDisplayContentModeTransitionObserver;
+@"NSMutableSet" _sceneControllers;
+AQ _eventBufferingRequestGeneration;
+@"SBInputUISceneController" _inputUISceneController;
+@"SBKeyboardFocusVisibilityGraphNavigator" _visibilityGraphNavigator;
+@"<_UIKeyboardArbiterAdvisor>" _keyboardArbiterAdvisor;
+AB _arbiterDidInitialize;
+B _didAddMultipleDisplayObserver;
+B _handlingKeyboardArbiterSuggestion;
+@"NSSet" _externalSceneIdentities;
+@"FBScene" _externalSceneWithFocus;
+@"<SBProductivityGestureDestinationProviding>" _sceneWithFocusIncludingSpringBoard;
+@"UIWindow" _windowWithFocus;
+Q _userFocusRequestGeneration;
+@"BSCompoundAssertion" _suppressKeyboardFocusEvaluationAssertion;
+@"<BSInvalidatable>" _coalition_suppressKeyboardFocusEvaluationAssertion;
+@"BSCompoundAssertion" _preventFocusForSceneAssertion;
+@"BSCompoundAssertion" _appFocusRedirections;
+@"BSCompoundAssertion" _accessibilityKeyboardFocusTargetOverrides;
+@"NSMutableDictionary" _focusServiceAdditionalEnvironmentRequests;
+@"BSCompoundAssertion" _observers;
+@"SBKeyboardFocusCoalition" _coalition;
+@"SBKeyboardFocusPolicy" _enforcedPolicy;
+@"_SBRecentlyUsedSceneIdentityCache" _recentlyUsedScenes;
+@"NSMutableArray" _userFocusRequestRuleUpdateCompletionHandlers;
+@"SBWindowScene" _windowSceneWithFocus;
+@"FBScene" _overlayUISceneRequestingFocus;
+```
+
+## Properties
+
+```
+@property (T@"BSCompoundAssertion",&,N,V_suppressKeyboardFocusEvaluationAssertion) suppressKeyboardFocusEvaluationAssertion;
+@property (T@"<BSInvalidatable>",&,N,V_coalition_suppressKeyboardFocusEvaluationAssertion) coalition_suppressKeyboardFocusEvaluationAssertion;
+@property (T@"BSCompoundAssertion",&,N,V_preventFocusForSceneAssertion) preventFocusForSceneAssertion;
+@property (T@"BSCompoundAssertion",&,N,V_appFocusRedirections) appFocusRedirections;
+@property (T@"BSCompoundAssertion",&,N,V_accessibilityKeyboardFocusTargetOverrides) accessibilityKeyboardFocusTargetOverrides;
+@property (T@"NSMutableDictionary",&,N,V_focusServiceAdditionalEnvironmentRequests) focusServiceAdditionalEnvironmentRequests;
+@property (T@"BSCompoundAssertion",&,N,V_observers) observers;
+@property (T@"SBKeyboardFocusCoalition",&,N,V_coalition) coalition;
+@property (T@"SBKeyboardFocusPolicy",&,N,V_enforcedPolicy) enforcedPolicy;
+@property (T@"_SBRecentlyUsedSceneIdentityCache",&,N,V_recentlyUsedScenes) recentlyUsedScenes;
+@property (TB,N,GisHandlingKeyboardArbiterSuggestion,V_handlingKeyboardArbiterSuggestion) handlingKeyboardArbiterSuggestion;
+@property (T@"NSMutableArray",&,N,V_userFocusRequestRuleUpdateCompletionHandlers) userFocusRequestRuleUpdateCompletionHandlers;
+@property (T@"FBScene",&,N,V_externalSceneWithFocus) externalSceneWithFocus;
+@property (T@"<SBProductivityGestureDestinationProviding>",&,N,V_sceneWithFocusIncludingSpringBoard) sceneWithFocusIncludingSpringBoard;
+@property (T@"SBWindowScene",&,N,V_windowSceneWithFocus) windowSceneWithFocus;
+@property (T@"UIWindow",&,N,V_windowWithFocus) windowWithFocus;
+@property (T@"FBScene",&,N,V_overlayUISceneRequestingFocus) overlayUISceneRequestingFocus;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+@property (T@"NSSet",C,V_externalSceneIdentities) externalSceneIdentities;
+@property (TQ,R,N,V_userFocusRequestGeneration) userFocusRequestGeneration;
+@property (TB,R) hasExternalSceneWithFocus;
+@property (T@"NSString",R,N) windowSceneIdentifierHostingFocusedAppScene;
+@property (T@"SBInputUISceneController",R,N) inputUISceneController;
+@property (Ti,R,N) presentingKeyboardProcessIdentifier;
+```
+
+## Instance methods
+
+```
+-[SBKeyboardFocusCoordinator userFocusRequestForScene:requestReason:completion:];
+-[SBKeyboardFocusCoordinator sceneManager:didAddExternalForegroundApplicationSceneHandle:];
+-[SBKeyboardFocusCoordinator requestArbitrationForReason:];
+-[SBKeyboardFocusCoordinator bufferEventsForSpringBoardScene:reason:];
+-[SBKeyboardFocusCoordinator preventFocusForSceneWithIdentityToken:reason:];
+-[SBKeyboardFocusCoordinator _isDisplayContentModeSwapInFlight];
+-[SBKeyboardFocusCoordinator requestKeyboardFocusOverrideSceneIdentityTokenStringRepresentation:forAccessibilityReason:];
+-[SBKeyboardFocusCoordinator setAppFocusRedirections:];
+-[SBKeyboardFocusCoordinator userFocusRequestForScene:reason:completion:];
+-[SBKeyboardFocusCoordinator _deferringGraph_lastFocusedAppSceneTargetForWindowScene:];
+-[SBKeyboardFocusCoordinator _setNeedsArbitrationForReason:];
+-[SBKeyboardFocusCoordinator addKeyboardFocusObserver:];
+-[SBKeyboardFocusCoordinator userFocusRequestForWindow:requestReason:completion:];
+-[SBKeyboardFocusCoordinator establishConstraint:onTarget:reason:];
+-[SBKeyboardFocusCoordinator setExternalSceneWithFocus:];
+-[SBKeyboardFocusCoordinator sceneManager:didRemoveExternalForegroundApplicationSceneHandle:];
+-[SBKeyboardFocusCoordinator _sbWindowSceneHostingFBSSceneIdentityToken:ultimateHostTarget:];
+-[SBKeyboardFocusCoordinator _shouldDropWindowFocusRequestDuringDisplayContentModeSwapForReason:];
+-[SBKeyboardFocusCoordinator overlayUISceneRequestingFocus];
+-[SBKeyboardFocusCoordinator setUserFocusRequestRuleUpdateCompletionHandlers:];
+-[SBKeyboardFocusCoordinator windowSceneDidDisconnect:];
+-[SBKeyboardFocusCoordinator _notifyObserversExternalSceneDidAcquireFocus:];
+-[SBKeyboardFocusCoordinator _callUserFocusSceneRequestCompletionBlocksIfNeeded];
+-[SBKeyboardFocusCoordinator displayContentModeCoordinator:handleDisplayContentModeTransition:];
+-[SBKeyboardFocusCoordinator eventDeferringManagerSystemShellBehavior:isRemoteRuleOwningElement:andContainingWindow:visibleComparedToLocalTargetWindow:];
+-[SBKeyboardFocusCoordinator externalSceneWithFocus];
+-[SBKeyboardFocusCoordinator accessibilityKeyboardFocusTargetOverrides];
+-[SBKeyboardFocusCoordinator externalSceneIdentities];
+-[SBKeyboardFocusCoordinator setSuppressKeyboardFocusEvaluationAssertion:];
+-[SBKeyboardFocusCoordinator displayContentModeCoordinator:handleSwapTransitionFromPrimaryWindowScene:toPrimaryWindowScene:withContinuationLockProvider:];
+-[SBKeyboardFocusCoordinator _deferringGraph_applyAdditionalEnvironments];
+-[SBKeyboardFocusCoordinator _deferringGraph_requestFocusForActiveWindowScene:reason:];
+-[SBKeyboardFocusCoordinator _sbWindowSceneHostingFBSSceneIdentityTokenString:];
+-[SBKeyboardFocusCoordinator sceneManager:willRemoveExternalForegroundApplicationSceneHandle:withReason:];
+-[SBKeyboardFocusCoordinator recentlyUsedScenes];
+-[SBKeyboardFocusCoordinator coalition_suppressKeyboardFocusEvaluationAssertion];
+-[SBKeyboardFocusCoordinator hasExternalSceneWithFocus];
+-[SBKeyboardFocusCoordinator setOverlayUISceneRequestingFocus:];
+-[SBKeyboardFocusCoordinator focusServiceAdditionalEnvironmentRequests];
+-[SBKeyboardFocusCoordinator _updateCoalitionForSceneControllersAddedOrRemoved];
+-[SBKeyboardFocusCoordinator setPreventFocusForSceneAssertion:];
+-[SBKeyboardFocusCoordinator _sceneControllerForSBWindowScene:];
+-[SBKeyboardFocusCoordinator keyboardArbiterAdvisor:request:sceneFocusChange:];
+-[SBKeyboardFocusCoordinator _deferringGraph_userFocusRequestForScene:reason:completion:];
+-[SBKeyboardFocusCoordinator _deferringGraph_springBoardFocusLockOnWindowScene:target:];
+-[SBKeyboardFocusCoordinator setHandlingKeyboardArbiterSuggestion:];
+-[SBKeyboardFocusCoordinator _windowDidBecomeKey:];
+-[SBKeyboardFocusCoordinator setWindowWithFocus:];
+-[SBKeyboardFocusCoordinator observer:deliveryChainDidUpdate:];
+-[SBKeyboardFocusCoordinator _setAppSceneTokenWithFocus:];
+-[SBKeyboardFocusCoordinator redirectFocusForReason:fromProcessIdentifier:fromSceneIdentityToken:toProcessIdentifier:toSceneIdentityToken:inContainingWindow:];
+-[SBKeyboardFocusCoordinator _isAcceptableVisibilityBasedHostScene:forSBWindowScene:];
+-[SBKeyboardFocusCoordinator _deferringGraph_applyPendingActiveWindowSceneChangeAfterCancelledSwap:];
+-[SBKeyboardFocusCoordinator _displayContentModeForWindowScene:];
+-[SBKeyboardFocusCoordinator multiDisplayUserInteractionCoordinator:updatedActiveWindowScene:reason:];
+-[SBKeyboardFocusCoordinator eventDeferringManagerSystemShellBehavior:shouldSuppressRemoteRuleForOwningElement:inEnvironment:];
+-[SBKeyboardFocusCoordinator _keyboardArbiter_userFocusRequestForScene:reason:completion:];
+-[SBKeyboardFocusCoordinator keyboardFocusCoalitionDidUpdateEnforcedPolicy:];
+-[SBKeyboardFocusCoordinator windowWithFocus];
+-[SBKeyboardFocusCoordinator setFocusServiceAdditionalEnvironmentRequests:];
+-[SBKeyboardFocusCoordinator _fetchFBScene:sbWindowScene:forSceneTokenString:];
+-[SBKeyboardFocusCoordinator _displayContentModeSwapPhase];
+-[SBKeyboardFocusCoordinator _deferringGraph_windowSceneShowingPrimaryContent];
+-[SBKeyboardFocusCoordinator _observer:deliveryChainDidUpdate:];
+-[SBKeyboardFocusCoordinator appFocusRedirections];
+-[SBKeyboardFocusCoordinator _currentActiveWindowScene];
+-[SBKeyboardFocusCoordinator eventDeferringManagerSystemShellBehaviorWantsLocalCompatibilityRules];
+-[SBKeyboardFocusCoordinator userFocusRequestRuleUpdateCompletionHandlers];
+-[SBKeyboardFocusCoordinator inputUISceneController];
+-[SBKeyboardFocusCoordinator requestArbitrationForSBWindowScene:forReason:];
+-[SBKeyboardFocusCoordinator presentingKeyboardProcessIdentifier];
+-[SBKeyboardFocusCoordinator _deferringGraph_focusTargetToRequestForActiveWindowScene:reason:ignoreModalities:];
+-[SBKeyboardFocusCoordinator setCoalition:];
+-[SBKeyboardFocusCoordinator _isFocusRequestReasonBlocked:];
+-[SBKeyboardFocusCoordinator preventFocusForSceneAssertion];
+-[SBKeyboardFocusCoordinator removeKeyboardFocusFromScene:];
+-[SBKeyboardFocusCoordinator windowSceneWithFocus];
+-[SBKeyboardFocusCoordinator setSceneWithFocusIncludingSpringBoard:];
+-[SBKeyboardFocusCoordinator _pendingActiveWindowScene];
+-[SBKeyboardFocusCoordinator shouldPreventFocusForSceneWithIdentityToken:];
+-[SBKeyboardFocusCoordinator _notifyObserversDidAddDeferringRuleForTarget:];
+-[SBKeyboardFocusCoordinator _removeSceneFromRecents:reason:];
+-[SBKeyboardFocusCoordinator setAccessibilityKeyboardFocusTargetOverrides:];
+-[SBKeyboardFocusCoordinator suppressKeyboardFocusEvaluationAssertion];
+-[SBKeyboardFocusCoordinator userFocusRequestGeneration];
+-[SBKeyboardFocusCoordinator deferAdditionalEnvironments:whenTargetHasKeyboardFocus:];
+-[SBKeyboardFocusCoordinator _addFocusLockRuleDeferringFromPredicate:forWindowScene:toTarget:keyboardTarget:lockReason:reason:];
+-[SBKeyboardFocusCoordinator initWithPolicyEnforcer:sceneControllerFactory:coalitionFactory:sceneProvider:sceneManager:uiKitDependencyProvider:visibilityGraphNavigator:];
+-[SBKeyboardFocusCoordinator additionalDeferringEnvironmentsForFocusTarget:];
+-[SBKeyboardFocusCoordinator _talkToKeyboardArbiterAdvisor:];
+-[SBKeyboardFocusCoordinator _handleSceneFocusChange_reasonToAvoidFocusingAppSceneIdentityToken:];
+-[SBKeyboardFocusCoordinator setObservers:];
+-[SBKeyboardFocusCoordinator appendDescriptionToStream:];
+-[SBKeyboardFocusCoordinator _deferringGraph_focusTargetToRequestForActiveWindowScene:reason:];
+-[SBKeyboardFocusCoordinator shouldAllowInteractionTrackingKeyboardFocusUpdateForWindow:];
+-[SBKeyboardFocusCoordinator _deferringGraph_activeWindowSceneDidChangeTo:reason:];
+-[SBKeyboardFocusCoordinator appFocusRedirectionForProposedTarget:];
+-[SBKeyboardFocusCoordinator sceneWithFocusIncludingSpringBoard];
+-[SBKeyboardFocusCoordinator setRecentlyUsedScenes:];
+-[SBKeyboardFocusCoordinator suppressKeyboardFocusEvaluationForReason:];
+-[SBKeyboardFocusCoordinator observers];
+-[SBKeyboardFocusCoordinator _deferringGraph_applyPendingActiveWindowSceneChange];
+-[SBKeyboardFocusCoordinator coalition];
+-[SBKeyboardFocusCoordinator setWindowSceneWithFocus:];
+-[SBKeyboardFocusCoordinator _fixupFocusSceneRequest:];
+-[SBKeyboardFocusCoordinator setCoalition_suppressKeyboardFocusEvaluationAssertion:];
+-[SBKeyboardFocusCoordinator deferFromSBWindowScene:toTarget:lockReason:];
+-[SBKeyboardFocusCoordinator windowSceneDidConnect:];
+-[SBKeyboardFocusCoordinator _sceneControllerForScene:];
+-[SBKeyboardFocusCoordinator _setLastFocusedSceneToken:forWindowScene:];
+-[SBKeyboardFocusCoordinator enforcedPolicy];
+-[SBKeyboardFocusCoordinator systemUISceneRequestingFocus];
+-[SBKeyboardFocusCoordinator _deferringGraph_changeSelectionToTarget:ignoreModalities:reason:];
+-[SBKeyboardFocusCoordinator _notifyObserversFocusedWindowSceneChangedFrom:to:];
+-[SBKeyboardFocusCoordinator focusLockSpringBoardWindowScene:forAccessibilityReason:];
+-[SBKeyboardFocusCoordinator _reevaluateFocusLockDeferringRules];
+-[SBKeyboardFocusCoordinator _sceneControllerHostingSceneIdentityToken:ultimateHostTarget:isSecretScene:];
+-[SBKeyboardFocusCoordinator _handleFocusSceneChange:fromArbiter:request:waitForSecretSceneHost:];
+-[SBKeyboardFocusCoordinator _keyboardArbiter_deferFromSBWindowScene:toTarget:lockReason:];
+-[SBKeyboardFocusCoordinator _handleSceneFocusChange_denyRequestForOverlayUI:];
+-[SBKeyboardFocusCoordinator sceneIdentityTokensWithShouldPreventFocus];
+-[SBKeyboardFocusCoordinator noteSceneKeyboardShouldBeJailed:];
+-[SBKeyboardFocusCoordinator accessibilityOverrideTarget];
+-[SBKeyboardFocusCoordinator setEnforcedPolicy:];
+-[SBKeyboardFocusCoordinator isHandlingKeyboardArbiterSuggestion];
+-[SBKeyboardFocusCoordinator windowSceneIdentifierHostingFocusedAppScene];
+-[SBKeyboardFocusCoordinator _deferringGraph_deferFromSBWindowScene:toTarget:lockReason:];
+-[SBKeyboardFocusCoordinator _setEnforcedKeyboardFocusPolicy:];
+-[SBKeyboardFocusCoordinator setExternalSceneIdentities:];
+-[SBKeyboardFocusCoordinator initWithSceneManager:];
+```

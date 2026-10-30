@@ -1,0 +1,78 @@
+# `IOTBTTunnelClientInterface`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.iokit.IOThunderboltFamily`](../kexts/com.apple.iokit.IOThunderboltFamily.md)
+- Object size: `0x60` (96 bytes)
+- Metaclass: `0xfffffe000ba1cb38`; metaclass vtable `0xfffffe000840e908`; class vtable `0xfffffe000840e7a0`
+- Registration (init): `0xfffffe000a4ab154`
+- Superclasses: none registered (derives from a kernel-core root such as OSObject)
+
+## Direct subclasses (3; 3 in total)
+
+- [`IOTBTTunnelDPClientInterface`](IOTBTTunnelDPClientInterface.md) — `com.apple.iokit.IOThunderboltFamily`
+- [`IOTBTTunnelUSBClientInterface`](IOTBTTunnelUSBClientInterface.md) — `com.apple.iokit.IOThunderboltFamily`
+- [`IOTBTTunnelUSBType2ClientInterface`](IOTBTTunnelUSBType2ClientInterface.md) — `com.apple.iokit.IOThunderboltFamily`
+
+## Strings in its kext that name it (60)
+
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::processSendStateChangeNotification -  callback = %p\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addTunnelClientInterface - driver_interface = %p status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelWillSleepUSB - return\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::clientDidSleep\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::clientUsingTunnel - interface %p before clientUsingTunnel()\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::sendStateChangeNotificationWithParams -  dispatchAsync( processSendStateChangeNotificationWithParams )\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::getTunnelDriverInterface - port_key = %p status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::clientUsingTunnel\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - fDriverInterfaceDictionaryByType = %p status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsDidWake - return\n`
+- `%lldus IOTBTTunnelClientInterfaceManager<%p>::initWithController - return status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - addDriverInterface status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::sendStateChangeNotificationWithParams2 -  status=0x%x\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::clientWillWake\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsWillSleepByType - return\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsDidWakeByType\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::getTunnelDriverInterface - port = %d\n`
+- `%lldus IOTBTTunnelClientInterface<%p>::free\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addDriverInterface - type_key = %p status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::keyForAdapterTypeAndIndex %s\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsDidWakeByType - type_key = %s\n`
+- `%lldus IOTBTTunnelClientInterfaceManager<%p>::handleClose - client = %p\n`
+- `%lldus IOTBTTunnelClientInterfaceManager<%p>::handleIsOpen - client = %p is_open = %d\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::adapterCountForType - type = 0X%08x tunnel_count = %d\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - return status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::sendStateChangeNotificationWithParams - return status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - port %d = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsDidWakeByType - return\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addTunnelDPOutClientInterface - dp_client_interface = %pn`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsDidWake\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - USBType2: add_interface = %d adapter_index = %d status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsWillSleepByType - type_key = %s\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::sendStateChangeNotificationWithParams1 -  status=0x%x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addDriverInterface - fDriverInterfaceDictionaryByType->setObject status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsWillSleep onlyBlockedClientOnDeallocation=%d\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelWillSleepDP - return\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::sendStateChangeNotification - return status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsDidWakeByType - interface %p\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsDidWake - interface %p tunnelsDidWake()\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addDriverInterface - fDriverInterfaceDictionaryByPort->setObject status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::clientUsingTunnel - interface %p after clientUsingTunnel()\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addDriverInterface - port_key = %p status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - entry_count = %d status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - fDriverInterfaceDictionaryByPort = %p status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::sendStateChangeNotificationWithParams0 -  status=0x%x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelWillSleepDP\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addTunnelClientInterface - client_interface = %p status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager<%p>::handleOpen - client = %p did_open = %d\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsWillSleepByType - interface %p\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::sendStateChangeNotification -  dispatchAsync( processSendStateChangeNotification )\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelWillSleepPCI\n`
+- `%lldus IOTBTTunnelClientInterfaceManager<%p>::initWithController\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelWillSleepPCI - return\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addTunnelClientInterface - type_key = %p status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager<%p>::free\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - driver_interface = %p status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addTunnelUSBType2ClientInterface - usb_type2_client_interface = %p usbTransportIndex = 0x%llx ioPortIndex=0x%llx\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - PCI: add_interface = %d adapter_index = %d status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::clientUsingTunnel - return %d\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addDriverInterface - driver_interface = %p adapter_type = 0x%08x port_index = 0x%08x adapter_index = 0x%08x status = 0x%08x\n`

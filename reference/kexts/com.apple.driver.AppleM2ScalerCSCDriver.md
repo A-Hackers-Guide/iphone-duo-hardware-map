@@ -1,0 +1,3361 @@
+# `com.apple.driver.AppleM2ScalerCSCDriver`
+
+- Name: Apple M2 Scaler and Color Space Converter Driver
+- Version: `265.0.0`
+- UUID: `1D59E099-D089-31DF-9BF2-DB6C14F90908`
+- Source version: `200.69.0.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.IODARTFamily`](com.apple.driver.IODARTFamily.md) 1.0, [`com.apple.iokit.CoreAnalyticsFamily`](com.apple.iokit.CoreAnalyticsFamily.md) 1.0, [`com.apple.iokit.IOSurface`](com.apple.iokit.IOSurface.md) 52.7.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.4.1, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.4.1, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.4.1, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.4.1, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0.0b1, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (1) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/scaler0`](../devicetree/root__arm-io__scaler0.md) | `AppleM2ScalerCSCDriver` | `scaler,s5l8960x` |
+
+## IOKit personalities (1) [KC]
+
+### s5l8720x
+- `CFBundleIdentifier`: `com.apple.driver.AppleM2ScalerCSCDriver`
+- `IOClass`: `AppleM2ScalerCSCDriver`
+- `IONameMatch`:
+  - `scaler,s5l8960x`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleM2ScalerCSCDriver`
+- `IOProviderClass`: `AppleARMIODevice`
+
+
+## C++ classes (239) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `ApiodmaRegStream` | 0x540 | RegStream |
+| `ApiodmaRegStreamMSR11` | 0x540 | ApiodmaRegStream → RegStream |
+| `ApiodmaRegStreamMSR15` | 0x540 | ApiodmaRegStreamMSR11 → ApiodmaRegStream → RegStream |
+| `ApiodmaRegStreamMSR19` | 0x540 | ApiodmaRegStreamMSR15 → ApiodmaRegStreamMSR11 → ApiodmaRegStream → RegStream |
+| `AppleM2ScalerCSCDriver` | 0x640 | IOService → IORegistryEntry |
+| `AppleM2ScalerCSCDriverFilters` | 0x990 |  |
+| `AppleM2ScalerCSCHal` | 0x200 |  |
+| `AppleM2ScalerCSCHalControl` | 0x30 |  |
+| `AppleM2ScalerCSCHalMSR` | 0x258 | AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR10` | 0x258 | AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR10j` | 0x258 | AppleM2ScalerCSCHalMSR10 → AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR11` | 0x258 | AppleM2ScalerCSCHalMSR10 → AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR13` | 0x258 | AppleM2ScalerCSCHalMSR11 → AppleM2ScalerCSCHalMSR10 → AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR15` | 0x258 | AppleM2ScalerCSCHalMSR13 → AppleM2ScalerCSCHalMSR11 → AppleM2ScalerCSCHalMSR10 → AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR16` | 0x258 | AppleM2ScalerCSCHalMSR15 → AppleM2ScalerCSCHalMSR13 → AppleM2ScalerCSCHalMSR11 → AppleM2ScalerCSCHalMSR10 → AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR18` | 0x258 | AppleM2ScalerCSCHalMSR15 → AppleM2ScalerCSCHalMSR13 → AppleM2ScalerCSCHalMSR11 → AppleM2ScalerCSCHalMSR10 → AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR2` | 0x258 | AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR20` | 0x258 | AppleM2ScalerCSCHalMSR16 → AppleM2ScalerCSCHalMSR15 → AppleM2ScalerCSCHalMSR13 → AppleM2ScalerCSCHalMSR11 → AppleM2ScalerCSCHalMSR10 → AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR21` | 0x258 | AppleM2ScalerCSCHalMSR20 → AppleM2ScalerCSCHalMSR16 → AppleM2ScalerCSCHalMSR15 → AppleM2ScalerCSCHalMSR13 → AppleM2ScalerCSCHalMSR11 → AppleM2ScalerCSCHalMSR10 → AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR22` | 0x258 | AppleM2ScalerCSCHalMSR20 → AppleM2ScalerCSCHalMSR16 → AppleM2ScalerCSCHalMSR15 → AppleM2ScalerCSCHalMSR13 → AppleM2ScalerCSCHalMSR11 → AppleM2ScalerCSCHalMSR10 → AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR23` | 0xc40 | AppleM2ScalerCSCHalMSR20 → AppleM2ScalerCSCHalMSR16 → AppleM2ScalerCSCHalMSR15 → AppleM2ScalerCSCHalMSR13 → AppleM2ScalerCSCHalMSR11 → AppleM2ScalerCSCHalMSR10 → AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR24` | 0xc40 | AppleM2ScalerCSCHalMSR23 → AppleM2ScalerCSCHalMSR20 → AppleM2ScalerCSCHalMSR16 → AppleM2ScalerCSCHalMSR15 → AppleM2ScalerCSCHalMSR13 → AppleM2ScalerCSCHalMSR11 → AppleM2ScalerCSCHalMSR10 → AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR25` | 0xc40 | AppleM2ScalerCSCHalMSR23 → AppleM2ScalerCSCHalMSR20 → AppleM2ScalerCSCHalMSR16 → AppleM2ScalerCSCHalMSR15 → AppleM2ScalerCSCHalMSR13 → AppleM2ScalerCSCHalMSR11 → AppleM2ScalerCSCHalMSR10 → AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR26` | 0xc40 | AppleM2ScalerCSCHalMSR25 → AppleM2ScalerCSCHalMSR23 → AppleM2ScalerCSCHalMSR20 → AppleM2ScalerCSCHalMSR16 → AppleM2ScalerCSCHalMSR15 → AppleM2ScalerCSCHalMSR13 → AppleM2ScalerCSCHalMSR11 → AppleM2ScalerCSCHalMSR10 → AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR27` | 0xc40 | AppleM2ScalerCSCHalMSR25 → AppleM2ScalerCSCHalMSR23 → AppleM2ScalerCSCHalMSR20 → AppleM2ScalerCSCHalMSR16 → AppleM2ScalerCSCHalMSR15 → AppleM2ScalerCSCHalMSR13 → AppleM2ScalerCSCHalMSR11 → AppleM2ScalerCSCHalMSR10 → AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR28` | 0xc40 | AppleM2ScalerCSCHalMSR25 → AppleM2ScalerCSCHalMSR23 → AppleM2ScalerCSCHalMSR20 → AppleM2ScalerCSCHalMSR16 → AppleM2ScalerCSCHalMSR15 → AppleM2ScalerCSCHalMSR13 → AppleM2ScalerCSCHalMSR11 → AppleM2ScalerCSCHalMSR10 → AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR29` | 0xc40 | AppleM2ScalerCSCHalMSR26 → AppleM2ScalerCSCHalMSR25 → AppleM2ScalerCSCHalMSR23 → AppleM2ScalerCSCHalMSR20 → AppleM2ScalerCSCHalMSR16 → AppleM2ScalerCSCHalMSR15 → AppleM2ScalerCSCHalMSR13 → AppleM2ScalerCSCHalMSR11 → AppleM2ScalerCSCHalMSR10 → AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR30` | 0xc40 | AppleM2ScalerCSCHalMSR29 → AppleM2ScalerCSCHalMSR26 → AppleM2ScalerCSCHalMSR25 → AppleM2ScalerCSCHalMSR23 → AppleM2ScalerCSCHalMSR20 → AppleM2ScalerCSCHalMSR16 → AppleM2ScalerCSCHalMSR15 → AppleM2ScalerCSCHalMSR13 → AppleM2ScalerCSCHalMSR11 → AppleM2ScalerCSCHalMSR10 → AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR4` | 0x258 | AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR6` | 0x258 | AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR7` | 0x258 | AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR8` | 0x258 | AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `AppleM2ScalerCSCHalMSR9` | 0x258 | AppleM2ScalerCSCHalMSR8 → AppleM2ScalerCSCHalMSR7 → AppleM2ScalerCSCHalMSR6 → AppleM2ScalerCSCHalMSR4 → AppleM2ScalerCSCHalMSR2 → AppleM2ScalerCSCHalMSR → AppleM2ScalerCSCHal |
+| `BlockDescriptorRegStream` | 0x7c0 | RegStream |
+| `BlockDescriptorRegStreamMSR23` | 0x7c0 | BlockDescriptorRegStream → RegStream |
+| `DisplayScalerFilter` | 0x990 | AppleM2ScalerCSCDriverFilters |
+| `DitherControl` | 0x30 | AppleM2ScalerCSCHalControl |
+| `DitherControlMSR` | 0x30 | DitherControl → AppleM2ScalerCSCHalControl |
+| `DitherControlMSR23` | 0x30 | DitherControlMSR8 → DitherControlMSR7 → DitherControlMSR → DitherControl → AppleM2ScalerCSCHalControl |
+| `DitherControlMSR4` | 0x30 | DitherControlMSR → DitherControl → AppleM2ScalerCSCHalControl |
+| `DitherControlMSR7` | 0x30 | DitherControlMSR → DitherControl → AppleM2ScalerCSCHalControl |
+| `DitherControlMSR8` | 0x30 | DitherControlMSR7 → DitherControlMSR → DitherControl → AppleM2ScalerCSCHalControl |
+| `FilmGrainSynthesizer` | 0x8d48 |  |
+| `FrameDescriptorRing` | 0x128 | RingBuffer |
+| `FrameDescriptorRingMSR23` | 0x160 | FrameDescriptorRing → RingBuffer |
+| `FrameDescriptorRingMSR28` | 0x160 | FrameDescriptorRingMSR23 → FrameDescriptorRing → RingBuffer |
+| `FrameDescriptorRingMSR29` | 0x160 | FrameDescriptorRingMSR23 → FrameDescriptorRing → RingBuffer |
+| `IOAsynchronousScheduler` | 0x2c50 |  |
+| `IORegFlex` | 0x28 |  |
+| `IOSurfaceAcceleratorClient` | 0x180 | IOUserClient → IOService → IORegistryEntry |
+| `IosaAxi2AfControl` | 0x30 | AppleM2ScalerCSCHalControl |
+| `IosaCSCPipeUnit` | 0x28 | IosaPipeUnit |
+| `IosaChannelConfig` | 0x40 |  |
+| `IosaChromaDownsamplePipeUnit` | 0x168 | IosaPipeUnit |
+| `IosaChromaDownsamplePipeUnitMSR23` | 0x2a8 | IosaChromaDownsamplePipeUnit → IosaPipeUnit |
+| `IosaChromaUpsamplePipeUnit` | 0x28 | IosaPipeUnit |
+| `IosaChromaUpsamplePipeUnitMSR9` | 0x28 | IosaPipeUnit |
+| `IosaColorManager` | 0x38 | AppleM2ScalerCSCHalControl |
+| `IosaColorManagerMSR10` | 0x148 | IosaColorManagerMSR8 → IosaColorManagerMSR7 → IosaColorManagerMSR4 → IosaColorManagerMSR2 → IosaColorManager → AppleM2ScalerCSCHalControl |
+| `IosaColorManagerMSR10j` | 0x148 | IosaColorManagerMSR10 → IosaColorManagerMSR8 → IosaColorManagerMSR7 → IosaColorManagerMSR4 → IosaColorManagerMSR2 → IosaColorManager → AppleM2ScalerCSCHalControl |
+| `IosaColorManagerMSR11` | 0x148 | IosaColorManagerMSR10 → IosaColorManagerMSR8 → IosaColorManagerMSR7 → IosaColorManagerMSR4 → IosaColorManagerMSR2 → IosaColorManager → AppleM2ScalerCSCHalControl |
+| `IosaColorManagerMSR13` | 0x148 | IosaColorManagerMSR11 → IosaColorManagerMSR10 → IosaColorManagerMSR8 → IosaColorManagerMSR7 → IosaColorManagerMSR4 → IosaColorManagerMSR2 → IosaColorManager → AppleM2ScalerCSCHalControl |
+| `IosaColorManagerMSR15` | 0x1c0 | IosaColorManagerMSR13 → IosaColorManagerMSR11 → IosaColorManagerMSR10 → IosaColorManagerMSR8 → IosaColorManagerMSR7 → IosaColorManagerMSR4 → IosaColorManagerMSR2 → IosaColorManager → AppleM2ScalerCSCHalControl |
+| `IosaColorManagerMSR16` | 0x1c0 | IosaColorManagerMSR15 → IosaColorManagerMSR13 → IosaColorManagerMSR11 → IosaColorManagerMSR10 → IosaColorManagerMSR8 → IosaColorManagerMSR7 → IosaColorManagerMSR4 → IosaColorManagerMSR2 → IosaColorManager → AppleM2ScalerCSCHalControl |
+| `IosaColorManagerMSR18` | 0x1c0 | IosaColorManagerMSR15 → IosaColorManagerMSR13 → IosaColorManagerMSR11 → IosaColorManagerMSR10 → IosaColorManagerMSR8 → IosaColorManagerMSR7 → IosaColorManagerMSR4 → IosaColorManagerMSR2 → IosaColorManager → AppleM2ScalerCSCHalControl |
+| `IosaColorManagerMSR2` | 0x38 | IosaColorManager → AppleM2ScalerCSCHalControl |
+| `IosaColorManagerMSR20` | 0x1c0 | IosaColorManagerMSR16 → IosaColorManagerMSR15 → IosaColorManagerMSR13 → IosaColorManagerMSR11 → IosaColorManagerMSR10 → IosaColorManagerMSR8 → IosaColorManagerMSR7 → IosaColorManagerMSR4 → IosaColorManagerMSR2 → IosaColorManager → AppleM2ScalerCSCHalControl |
+| `IosaColorManagerMSR23` | 0x240 | IosaColorManagerMSR20 → IosaColorManagerMSR16 → IosaColorManagerMSR15 → IosaColorManagerMSR13 → IosaColorManagerMSR11 → IosaColorManagerMSR10 → IosaColorManagerMSR8 → IosaColorManagerMSR7 → IosaColorManagerMSR4 → IosaColorManagerMSR2 → IosaColorManager → AppleM2ScalerCSCHalControl |
+| `IosaColorManagerMSR28` | 0x240 | IosaColorManagerMSR23 → IosaColorManagerMSR20 → IosaColorManagerMSR16 → IosaColorManagerMSR15 → IosaColorManagerMSR13 → IosaColorManagerMSR11 → IosaColorManagerMSR10 → IosaColorManagerMSR8 → IosaColorManagerMSR7 → IosaColorManagerMSR4 → IosaColorManagerMSR2 → IosaColorManager → AppleM2ScalerCSCHalControl |
+| `IosaColorManagerMSR4` | 0x38 | IosaColorManagerMSR2 → IosaColorManager → AppleM2ScalerCSCHalControl |
+| `IosaColorManagerMSR5` | 0x38 | IosaColorManagerMSR4 → IosaColorManagerMSR2 → IosaColorManager → AppleM2ScalerCSCHalControl |
+| `IosaColorManagerMSR7` | 0x38 | IosaColorManagerMSR4 → IosaColorManagerMSR2 → IosaColorManager → AppleM2ScalerCSCHalControl |
+| `IosaColorManagerMSR8` | 0xd0 | IosaColorManagerMSR7 → IosaColorManagerMSR4 → IosaColorManagerMSR2 → IosaColorManager → AppleM2ScalerCSCHalControl |
+| `IosaColorManagerMSR9` | 0xd0 | IosaColorManagerMSR8 → IosaColorManagerMSR7 → IosaColorManagerMSR4 → IosaColorManagerMSR2 → IosaColorManager → AppleM2ScalerCSCHalControl |
+| `IosaConvertPipeUnit` | 0x28 | IosaPipeUnit |
+| `IosaDPEControl` | 0x38 | AppleM2ScalerCSCHalControl |
+| `IosaDPEControlMSR10` | 0x38 | IosaDPEControlMSR8 → IosaDPEControl → AppleM2ScalerCSCHalControl |
+| `IosaDPEControlMSR10j` | 0x38 | IosaDPEControlMSR10 → IosaDPEControlMSR8 → IosaDPEControl → AppleM2ScalerCSCHalControl |
+| `IosaDPEControlMSR11` | 0x38 | IosaDPEControlMSR10 → IosaDPEControlMSR8 → IosaDPEControl → AppleM2ScalerCSCHalControl |
+| `IosaDPEControlMSR16` | 0x38 | IosaDPEControlMSR11 → IosaDPEControlMSR10 → IosaDPEControlMSR8 → IosaDPEControl → AppleM2ScalerCSCHalControl |
+| `IosaDPEControlMSR17` | 0x38 | IosaDPEControlMSR16 → IosaDPEControlMSR11 → IosaDPEControlMSR10 → IosaDPEControlMSR8 → IosaDPEControl → AppleM2ScalerCSCHalControl |
+| `IosaDPEControlMSR19` | 0x38 | IosaDPEControlMSR16 → IosaDPEControlMSR11 → IosaDPEControlMSR10 → IosaDPEControlMSR8 → IosaDPEControl → AppleM2ScalerCSCHalControl |
+| `IosaDPEControlMSR20` | 0x38 | IosaDPEControlMSR16 → IosaDPEControlMSR11 → IosaDPEControlMSR10 → IosaDPEControlMSR8 → IosaDPEControl → AppleM2ScalerCSCHalControl |
+| `IosaDPEControlMSR21` | 0x38 | IosaDPEControlMSR20 → IosaDPEControlMSR16 → IosaDPEControlMSR11 → IosaDPEControlMSR10 → IosaDPEControlMSR8 → IosaDPEControl → AppleM2ScalerCSCHalControl |
+| `IosaDPEControlMSR22` | 0x38 | IosaDPEControlMSR21 → IosaDPEControlMSR20 → IosaDPEControlMSR16 → IosaDPEControlMSR11 → IosaDPEControlMSR10 → IosaDPEControlMSR8 → IosaDPEControl → AppleM2ScalerCSCHalControl |
+| `IosaDPEControlMSR23` | 0x38 | IosaDPEControlMSR22 → IosaDPEControlMSR21 → IosaDPEControlMSR20 → IosaDPEControlMSR16 → IosaDPEControlMSR11 → IosaDPEControlMSR10 → IosaDPEControlMSR8 → IosaDPEControl → AppleM2ScalerCSCHalControl |
+| `IosaDPEControlMSR8` | 0x38 | IosaDPEControl → AppleM2ScalerCSCHalControl |
+| `IosaDegammaPipeUnit` | 0x28 | IosaPipeUnit |
+| `IosaDegammaPipeUnitMSR23` | 0x28 | IosaDegammaPipeUnit → IosaPipeUnit |
+| `IosaDirectionalScalingPipeUnit` | 0x28 | IosaPipeUnit |
+| `IosaDirectionalScalingPipeUnitMSR23` | 0x28 | IosaDirectionalScalingPipeUnit → IosaPipeUnit |
+| `IosaEnhancementPipeUnit` | 0x28 | IosaPipeUnit |
+| `IosaEnhancementPipeUnitMSR23` | 0x28 | IosaEnhancementPipeUnit → IosaPipeUnit |
+| `IosaEnhancementPipeUnitMSR9` | 0x28 | IosaPipeUnit |
+| `IosaFilmGrainControl` | 0x30 | IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaFilmGrainControlMSR16` | 0x63b8 | IosaFilmGrainControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaFilmGrainControlMSR23` | 0x63b8 | IosaFilmGrainControlMSR16 → IosaFilmGrainControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaFilmGrainPipeUnitMSR16` | 0x28 | IosaPipeUnit |
+| `IosaFirmwareControl` | 0x38 | AppleM2ScalerCSCHalControl |
+| `IosaFirmwareControlMSR23` | 0xa0 | IosaFirmwareControl → AppleM2ScalerCSCHalControl |
+| `IosaFirmwareControlMSR23Dv` | 0xa8 | IosaFirmwareControlMSR23 → IosaFirmwareControl → AppleM2ScalerCSCHalControl |
+| `IosaFirmwareControlMSR23Rtk` | 0xb8 | IosaFirmwareControlMSR23 → IosaFirmwareControl → AppleM2ScalerCSCHalControl |
+| `IosaFirmwareControlMSR24Rtk` | 0xb8 | IosaFirmwareControlMSR23Rtk → IosaFirmwareControlMSR23 → IosaFirmwareControl → AppleM2ScalerCSCHalControl |
+| `IosaFirmwareControlMSR25Rtk` | 0xb8 | IosaFirmwareControlMSR23Rtk → IosaFirmwareControlMSR23 → IosaFirmwareControl → AppleM2ScalerCSCHalControl |
+| `IosaFirmwareControlMSR26Rtk` | 0xb8 | IosaFirmwareControlMSR23Rtk → IosaFirmwareControlMSR23 → IosaFirmwareControl → AppleM2ScalerCSCHalControl |
+| `IosaFirmwareControlMSR27Rtk` | 0xb8 | IosaFirmwareControlMSR23Rtk → IosaFirmwareControlMSR23 → IosaFirmwareControl → AppleM2ScalerCSCHalControl |
+| `IosaFirmwareControlMSR28Rtk` | 0xb8 | IosaFirmwareControlMSR23Rtk → IosaFirmwareControlMSR23 → IosaFirmwareControl → AppleM2ScalerCSCHalControl |
+| `IosaFirmwareControlMSR29Rtk` | 0x470 | IosaFirmwareControlMSR23Rtk → IosaFirmwareControlMSR23 → IosaFirmwareControl → AppleM2ScalerCSCHalControl |
+| `IosaFirmwareControlMSR30Rtk` | 0x470 | IosaFirmwareControlMSR29Rtk → IosaFirmwareControlMSR23Rtk → IosaFirmwareControlMSR23 → IosaFirmwareControl → AppleM2ScalerCSCHalControl |
+| `IosaInternalPipe` | 0x30 | IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaInternalPipeMSR` | 0x30 | IosaInternalPipe → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaInternalPipeMSR10` | 0x30 | IosaInternalPipeMSR8 → IosaInternalPipeMSR7 → IosaInternalPipeMSR6 → IosaInternalPipeMSR → IosaInternalPipe → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaInternalPipeMSR15` | 0x30 | IosaInternalPipeMSR10 → IosaInternalPipeMSR8 → IosaInternalPipeMSR7 → IosaInternalPipeMSR6 → IosaInternalPipeMSR → IosaInternalPipe → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaInternalPipeMSR23` | 0x30 | IosaInternalPipeMSR15 → IosaInternalPipeMSR10 → IosaInternalPipeMSR8 → IosaInternalPipeMSR7 → IosaInternalPipeMSR6 → IosaInternalPipeMSR → IosaInternalPipe → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaInternalPipeMSR6` | 0x30 | IosaInternalPipeMSR → IosaInternalPipe → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaInternalPipeMSR7` | 0x30 | IosaInternalPipeMSR6 → IosaInternalPipeMSR → IosaInternalPipe → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaInternalPipeMSR8` | 0x30 | IosaInternalPipeMSR7 → IosaInternalPipeMSR6 → IosaInternalPipeMSR → IosaInternalPipe → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaPipe` | 0x108 |  |
+| `IosaPipeControl` | 0x30 | AppleM2ScalerCSCHalControl |
+| `IosaPipeUnit` | 0x28 |  |
+| `IosaPixelAveragingPipeUnitMSR6` | 0xa0 | IosaPipeUnit |
+| `IosaPolyphaseScalingPipeUnit` | 0xf8 | IosaPipeUnit |
+| `IosaPolyphaseScalingPipeUnitMSR23` | 0xf8 | IosaPolyphaseScalingPipeUnit → IosaPipeUnit |
+| `IosaPowerManager` | 0x380 | AppleM2ScalerCSCHalControl |
+| `IosaPowerManagerMSR` | 0x380 | IosaPowerManager → AppleM2ScalerCSCHalControl |
+| `IosaPowerManagerMSR20` | 0x380 | IosaPowerManagerMSR → IosaPowerManager → AppleM2ScalerCSCHalControl |
+| `IosaPowerManagerMSR23` | 0x3c0 | IosaPowerManagerMSR20 → IosaPowerManagerMSR → IosaPowerManager → AppleM2ScalerCSCHalControl |
+| `IosaPowerManagerMSR26` | 0x3c0 | IosaPowerManagerMSR23 → IosaPowerManagerMSR20 → IosaPowerManagerMSR → IosaPowerManager → AppleM2ScalerCSCHalControl |
+| `IosaPowerManagerMSR27` | 0x3c0 | IosaPowerManagerMSR23 → IosaPowerManagerMSR20 → IosaPowerManagerMSR → IosaPowerManager → AppleM2ScalerCSCHalControl |
+| `IosaPremultiplyAlphaMultiplyPipeUnit` | 0x28 | IosaPipeUnit |
+| `IosaPrescaler3x3PipeUnit` | 0x28 | IosaPipeUnit |
+| `IosaPrescaler3x3PipeUnitMSR23` | 0x28 | IosaPrescaler3x3PipeUnit → IosaPipeUnit |
+| `IosaPrescaler3x3PipeUnitMSR9` | 0x28 | IosaPrescaler3x3PipeUnit → IosaPipeUnit |
+| `IosaPrescalerControl` | 0x30 | IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaPrescalerControlMSR23` | 0x30 | IosaPrescalerControlMSR8 → IosaPrescalerControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaPrescalerControlMSR8` | 0x30 | IosaPrescalerControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaPrescalerControlMSR9` | 0x30 | IosaPrescalerControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaRdmaControl` | 0x30 | IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaRdmaControlMSR10` | 0x30 | IosaRdmaControlMSR8 → IosaRdmaControlMSR6 → IosaRdmaControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaRdmaControlMSR11` | 0x30 | IosaRdmaControlMSR10 → IosaRdmaControlMSR8 → IosaRdmaControlMSR6 → IosaRdmaControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaRdmaControlMSR15` | 0x30 | IosaRdmaControlMSR11 → IosaRdmaControlMSR10 → IosaRdmaControlMSR8 → IosaRdmaControlMSR6 → IosaRdmaControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaRdmaControlMSR18` | 0x30 | IosaRdmaControlMSR15 → IosaRdmaControlMSR11 → IosaRdmaControlMSR10 → IosaRdmaControlMSR8 → IosaRdmaControlMSR6 → IosaRdmaControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaRdmaControlMSR20` | 0x30 | IosaRdmaControlMSR15 → IosaRdmaControlMSR11 → IosaRdmaControlMSR10 → IosaRdmaControlMSR8 → IosaRdmaControlMSR6 → IosaRdmaControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaRdmaControlMSR23` | 0x30 | IosaRdmaControlMSR20 → IosaRdmaControlMSR15 → IosaRdmaControlMSR11 → IosaRdmaControlMSR10 → IosaRdmaControlMSR8 → IosaRdmaControlMSR6 → IosaRdmaControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaRdmaControlMSR25` | 0x30 | IosaRdmaControlMSR23 → IosaRdmaControlMSR20 → IosaRdmaControlMSR15 → IosaRdmaControlMSR11 → IosaRdmaControlMSR10 → IosaRdmaControlMSR8 → IosaRdmaControlMSR6 → IosaRdmaControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaRdmaControlMSR27` | 0x30 | IosaRdmaControlMSR25 → IosaRdmaControlMSR23 → IosaRdmaControlMSR20 → IosaRdmaControlMSR15 → IosaRdmaControlMSR11 → IosaRdmaControlMSR10 → IosaRdmaControlMSR8 → IosaRdmaControlMSR6 → IosaRdmaControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaRdmaControlMSR6` | 0x30 | IosaRdmaControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaRdmaControlMSR8` | 0x30 | IosaRdmaControlMSR6 → IosaRdmaControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaRdmaPipeUnit` | 0x238 | IosaPipeUnit |
+| `IosaRdmaPipeUnitMSR23` | 0x238 | IosaRdmaPipeUnit → IosaPipeUnit |
+| `IosaRegammaPipeUnit` | 0x28 | IosaPipeUnit |
+| `IosaRemoteIOPPowerNotificationHandler` | 0x228 |  |
+| `IosaRequestPipeUnit` | 0x170 | IosaPipeUnit |
+| `IosaRequestPipeUnitMSR23` | 0x170 | IosaRequestPipeUnit → IosaPipeUnit |
+| `IosaReshapePipeUnit` | 0x28 | IosaPipeUnit |
+| `IosaRevertPipeUnit` | 0x28 | IosaPipeUnit |
+| `IosaTiledCompressedMem` | 0x30 | AppleM2ScalerCSCHalControl |
+| `IosaTiledCompressedMemMSR13` | 0x30 | IosaTiledCompressedMemMSR8 → IosaTiledCompressedMemMSR7 → IosaTiledCompressedMem → AppleM2ScalerCSCHalControl |
+| `IosaTiledCompressedMemMSR7` | 0x30 | IosaTiledCompressedMem → AppleM2ScalerCSCHalControl |
+| `IosaTiledCompressedMemMSR8` | 0x30 | IosaTiledCompressedMemMSR7 → IosaTiledCompressedMem → AppleM2ScalerCSCHalControl |
+| `IosaTunableControl` | 0x30 | AppleM2ScalerCSCHalControl |
+| `IosaTunableControlMSR22` | 0x30 | IosaTunableControl → AppleM2ScalerCSCHalControl |
+| `IosaTunableControlMSR23` | 0x30 | IosaTunableControl → AppleM2ScalerCSCHalControl |
+| `IosaTunableControlMSR24` | 0x30 | IosaTunableControlMSR23 → IosaTunableControl → AppleM2ScalerCSCHalControl |
+| `IosaTunableControlMSR24d` | 0x30 | IosaTunableControlMSR23 → IosaTunableControl → AppleM2ScalerCSCHalControl |
+| `IosaTunableControlMSR25` | 0x30 | IosaTunableControlMSR23 → IosaTunableControl → AppleM2ScalerCSCHalControl |
+| `IosaTunableControlMSR26` | 0x30 | IosaTunableControlMSR23 → IosaTunableControl → AppleM2ScalerCSCHalControl |
+| `IosaTunableControlMSR27` | 0x30 | IosaTunableControlMSR23 → IosaTunableControl → AppleM2ScalerCSCHalControl |
+| `IosaTunableControlMSR28` | 0x30 | IosaTunableControlMSR23 → IosaTunableControl → AppleM2ScalerCSCHalControl |
+| `IosaTunableControlMSR29` | 0x30 | IosaTunableControlMSR23 → IosaTunableControl → AppleM2ScalerCSCHalControl |
+| `IosaTunableControlMSR30` | 0x30 | IosaTunableControlMSR23 → IosaTunableControl → AppleM2ScalerCSCHalControl |
+| `IosaWdmaControl` | 0x30 | IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaWdmaControlMSR10` | 0x30 | IosaWdmaControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaWdmaControlMSR11` | 0x30 | IosaWdmaControlMSR10 → IosaWdmaControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaWdmaControlMSR23` | 0x30 | IosaWdmaControlMSR11 → IosaWdmaControlMSR10 → IosaWdmaControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaWdmaControlMSR25` | 0x30 | IosaWdmaControlMSR23 → IosaWdmaControlMSR11 → IosaWdmaControlMSR10 → IosaWdmaControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `IosaWdmaPipeUnit` | 0x238 | IosaPipeUnit |
+| `IosaWdmaPipeUnitMSR23` | 0x238 | IosaWdmaPipeUnit → IosaPipeUnit |
+| `M2ScalerCSCColorConversionControl` | 0x30 | IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerCSCColorConversionControlMSR` | 0x30 | M2ScalerCSCColorConversionControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerCSCColorConversionControlMSR10` | 0x30 | M2ScalerCSCColorConversionControlMSR8 → M2ScalerCSCColorConversionControlMSR7 → M2ScalerCSCColorConversionControlMSR4 → M2ScalerCSCColorConversionControlMSR → M2ScalerCSCColorConversionControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerCSCColorConversionControlMSR10j` | 0x30 | M2ScalerCSCColorConversionControlMSR10 → M2ScalerCSCColorConversionControlMSR8 → M2ScalerCSCColorConversionControlMSR7 → M2ScalerCSCColorConversionControlMSR4 → M2ScalerCSCColorConversionControlMSR → M2ScalerCSCColorConversionControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerCSCColorConversionControlMSR15` | 0x30 | M2ScalerCSCColorConversionControlMSR10j → M2ScalerCSCColorConversionControlMSR10 → M2ScalerCSCColorConversionControlMSR8 → M2ScalerCSCColorConversionControlMSR7 → M2ScalerCSCColorConversionControlMSR4 → M2ScalerCSCColorConversionControlMSR → M2ScalerCSCColorConversionControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerCSCColorConversionControlMSR23` | 0x38 | M2ScalerCSCColorConversionControlMSR15 → M2ScalerCSCColorConversionControlMSR10j → M2ScalerCSCColorConversionControlMSR10 → M2ScalerCSCColorConversionControlMSR8 → M2ScalerCSCColorConversionControlMSR7 → M2ScalerCSCColorConversionControlMSR4 → M2ScalerCSCColorConversionControlMSR → M2ScalerCSCColorConversionControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerCSCColorConversionControlMSR4` | 0x30 | M2ScalerCSCColorConversionControlMSR → M2ScalerCSCColorConversionControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerCSCColorConversionControlMSR7` | 0x30 | M2ScalerCSCColorConversionControlMSR4 → M2ScalerCSCColorConversionControlMSR → M2ScalerCSCColorConversionControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerCSCColorConversionControlMSR8` | 0x30 | M2ScalerCSCColorConversionControlMSR7 → M2ScalerCSCColorConversionControlMSR4 → M2ScalerCSCColorConversionControlMSR → M2ScalerCSCColorConversionControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerCSCRequest` | 0x2380 |  |
+| `M2ScalerScalingASEControl` | 0x40 | IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerScalingASEControlMSR10` | 0x40 | M2ScalerScalingASEControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerScalingASEControlMSR20` | 0x40 | M2ScalerScalingASEControlMSR10 → M2ScalerScalingASEControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerScalingASEControlMSR23` | 0x40 | M2ScalerScalingASEControlMSR20 → M2ScalerScalingASEControlMSR10 → M2ScalerScalingASEControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerScalingASEControlMSR29` | 0x40 | M2ScalerScalingASEControlMSR23 → M2ScalerScalingASEControlMSR20 → M2ScalerScalingASEControlMSR10 → M2ScalerScalingASEControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerScalingControl` | 0x90 | IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerScalingControlMSR` | 0xa8 | M2ScalerScalingControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerScalingControlMSR10` | 0xe8 | M2ScalerScalingControlMSR8 → M2ScalerScalingControlMSR7 → M2ScalerScalingControlMSR6 → M2ScalerScalingControlMSR4 → M2ScalerScalingControlMSR → M2ScalerScalingControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerScalingControlMSR15` | 0xe8 | M2ScalerScalingControlMSR10 → M2ScalerScalingControlMSR8 → M2ScalerScalingControlMSR7 → M2ScalerScalingControlMSR6 → M2ScalerScalingControlMSR4 → M2ScalerScalingControlMSR → M2ScalerScalingControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerScalingControlMSR2` | 0xa8 | M2ScalerScalingControlMSR → M2ScalerScalingControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerScalingControlMSR23` | 0xe8 | M2ScalerScalingControlMSR15 → M2ScalerScalingControlMSR10 → M2ScalerScalingControlMSR8 → M2ScalerScalingControlMSR7 → M2ScalerScalingControlMSR6 → M2ScalerScalingControlMSR4 → M2ScalerScalingControlMSR → M2ScalerScalingControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerScalingControlMSR4` | 0xa8 | M2ScalerScalingControlMSR → M2ScalerScalingControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerScalingControlMSR6` | 0xa8 | M2ScalerScalingControlMSR4 → M2ScalerScalingControlMSR → M2ScalerScalingControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerScalingControlMSR7` | 0xa8 | M2ScalerScalingControlMSR6 → M2ScalerScalingControlMSR4 → M2ScalerScalingControlMSR → M2ScalerScalingControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerScalingControlMSR8` | 0xa8 | M2ScalerScalingControlMSR7 → M2ScalerScalingControlMSR6 → M2ScalerScalingControlMSR4 → M2ScalerScalingControlMSR → M2ScalerScalingControl → IosaPipeControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControl` | 0x148 | AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR` | 0x148 | M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR10` | 0x148 | M2ScalerSrcDestCfgControlMSR8 → M2ScalerSrcDestCfgControlMSR7 → M2ScalerSrcDestCfgControlMSR6 → M2ScalerSrcDestCfgControlMSR5 → M2ScalerSrcDestCfgControlMSR4 → M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR10j` | 0x148 | M2ScalerSrcDestCfgControlMSR10 → M2ScalerSrcDestCfgControlMSR8 → M2ScalerSrcDestCfgControlMSR7 → M2ScalerSrcDestCfgControlMSR6 → M2ScalerSrcDestCfgControlMSR5 → M2ScalerSrcDestCfgControlMSR4 → M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR13` | 0x148 | M2ScalerSrcDestCfgControlMSR10j → M2ScalerSrcDestCfgControlMSR10 → M2ScalerSrcDestCfgControlMSR8 → M2ScalerSrcDestCfgControlMSR7 → M2ScalerSrcDestCfgControlMSR6 → M2ScalerSrcDestCfgControlMSR5 → M2ScalerSrcDestCfgControlMSR4 → M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR14` | 0x148 | M2ScalerSrcDestCfgControlMSR13 → M2ScalerSrcDestCfgControlMSR10j → M2ScalerSrcDestCfgControlMSR10 → M2ScalerSrcDestCfgControlMSR8 → M2ScalerSrcDestCfgControlMSR7 → M2ScalerSrcDestCfgControlMSR6 → M2ScalerSrcDestCfgControlMSR5 → M2ScalerSrcDestCfgControlMSR4 → M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR15` | 0x148 | M2ScalerSrcDestCfgControlMSR13 → M2ScalerSrcDestCfgControlMSR10j → M2ScalerSrcDestCfgControlMSR10 → M2ScalerSrcDestCfgControlMSR8 → M2ScalerSrcDestCfgControlMSR7 → M2ScalerSrcDestCfgControlMSR6 → M2ScalerSrcDestCfgControlMSR5 → M2ScalerSrcDestCfgControlMSR4 → M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR17` | 0x148 | M2ScalerSrcDestCfgControlMSR15 → M2ScalerSrcDestCfgControlMSR13 → M2ScalerSrcDestCfgControlMSR10j → M2ScalerSrcDestCfgControlMSR10 → M2ScalerSrcDestCfgControlMSR8 → M2ScalerSrcDestCfgControlMSR7 → M2ScalerSrcDestCfgControlMSR6 → M2ScalerSrcDestCfgControlMSR5 → M2ScalerSrcDestCfgControlMSR4 → M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR19` | 0x148 | M2ScalerSrcDestCfgControlMSR17 → M2ScalerSrcDestCfgControlMSR15 → M2ScalerSrcDestCfgControlMSR13 → M2ScalerSrcDestCfgControlMSR10j → M2ScalerSrcDestCfgControlMSR10 → M2ScalerSrcDestCfgControlMSR8 → M2ScalerSrcDestCfgControlMSR7 → M2ScalerSrcDestCfgControlMSR6 → M2ScalerSrcDestCfgControlMSR5 → M2ScalerSrcDestCfgControlMSR4 → M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR2` | 0x148 | M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR20` | 0x148 | M2ScalerSrcDestCfgControlMSR19 → M2ScalerSrcDestCfgControlMSR17 → M2ScalerSrcDestCfgControlMSR15 → M2ScalerSrcDestCfgControlMSR13 → M2ScalerSrcDestCfgControlMSR10j → M2ScalerSrcDestCfgControlMSR10 → M2ScalerSrcDestCfgControlMSR8 → M2ScalerSrcDestCfgControlMSR7 → M2ScalerSrcDestCfgControlMSR6 → M2ScalerSrcDestCfgControlMSR5 → M2ScalerSrcDestCfgControlMSR4 → M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR22` | 0x148 | M2ScalerSrcDestCfgControlMSR20 → M2ScalerSrcDestCfgControlMSR19 → M2ScalerSrcDestCfgControlMSR17 → M2ScalerSrcDestCfgControlMSR15 → M2ScalerSrcDestCfgControlMSR13 → M2ScalerSrcDestCfgControlMSR10j → M2ScalerSrcDestCfgControlMSR10 → M2ScalerSrcDestCfgControlMSR8 → M2ScalerSrcDestCfgControlMSR7 → M2ScalerSrcDestCfgControlMSR6 → M2ScalerSrcDestCfgControlMSR5 → M2ScalerSrcDestCfgControlMSR4 → M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR23` | 0x148 | M2ScalerSrcDestCfgControlMSR20 → M2ScalerSrcDestCfgControlMSR19 → M2ScalerSrcDestCfgControlMSR17 → M2ScalerSrcDestCfgControlMSR15 → M2ScalerSrcDestCfgControlMSR13 → M2ScalerSrcDestCfgControlMSR10j → M2ScalerSrcDestCfgControlMSR10 → M2ScalerSrcDestCfgControlMSR8 → M2ScalerSrcDestCfgControlMSR7 → M2ScalerSrcDestCfgControlMSR6 → M2ScalerSrcDestCfgControlMSR5 → M2ScalerSrcDestCfgControlMSR4 → M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR24` | 0x148 | M2ScalerSrcDestCfgControlMSR23 → M2ScalerSrcDestCfgControlMSR20 → M2ScalerSrcDestCfgControlMSR19 → M2ScalerSrcDestCfgControlMSR17 → M2ScalerSrcDestCfgControlMSR15 → M2ScalerSrcDestCfgControlMSR13 → M2ScalerSrcDestCfgControlMSR10j → M2ScalerSrcDestCfgControlMSR10 → M2ScalerSrcDestCfgControlMSR8 → M2ScalerSrcDestCfgControlMSR7 → M2ScalerSrcDestCfgControlMSR6 → M2ScalerSrcDestCfgControlMSR5 → M2ScalerSrcDestCfgControlMSR4 → M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR4` | 0x148 | M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR5` | 0x148 | M2ScalerSrcDestCfgControlMSR4 → M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR6` | 0x148 | M2ScalerSrcDestCfgControlMSR5 → M2ScalerSrcDestCfgControlMSR4 → M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR7` | 0x148 | M2ScalerSrcDestCfgControlMSR6 → M2ScalerSrcDestCfgControlMSR5 → M2ScalerSrcDestCfgControlMSR4 → M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR8` | 0x148 | M2ScalerSrcDestCfgControlMSR7 → M2ScalerSrcDestCfgControlMSR6 → M2ScalerSrcDestCfgControlMSR5 → M2ScalerSrcDestCfgControlMSR4 → M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `M2ScalerSrcDestCfgControlMSR9` | 0x148 | M2ScalerSrcDestCfgControlMSR8 → M2ScalerSrcDestCfgControlMSR7 → M2ScalerSrcDestCfgControlMSR6 → M2ScalerSrcDestCfgControlMSR5 → M2ScalerSrcDestCfgControlMSR4 → M2ScalerSrcDestCfgControlMSR → M2ScalerSrcDestCfgControl → AppleM2ScalerCSCHalControl |
+| `MSR23BackwardsCompatibleFilter` | 0x9f0 | MSR23DefaultFilter → AppleM2ScalerCSCDriverFilters |
+| `MSR23ChromaDownsampleFilter` | 0x990 | AppleM2ScalerCSCDriverFilters |
+| `MSR23CurvatureLUT` | 0x28 |  |
+| `MSR23DefaultFilter` | 0x990 | AppleM2ScalerCSCDriverFilters |
+| `MailBox` | 0x58 |  |
+| `MailBoxMSR23` | 0x58 | MailBox |
+| `MailBoxMSR26` | 0x60 | MailBox |
+| `ModularDefaultFilter` | 0x990 | AppleM2ScalerCSCDriverFilters |
+| `PerfControlClient` | 0x48 |  |
+| `RegStream` | 0x2c0 |  |
+| `RingBuffer` | 0xb8 |  |
+| `SpillBuffer` | 0x60 |  |
+| `SpillBufferMSR23` | 0x60 | SpillBuffer |
+| `StatusDescriptorRing` | 0xd8 | RingBuffer |
+| `StatusDescriptorRingMSR23` | 0xe0 | StatusDescriptorRing → RingBuffer |
+| `StatusDescriptorRingMSR29` | 0xe0 | StatusDescriptorRingMSR23 → StatusDescriptorRing → RingBuffer |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x000e8bf0 off=0x00554090-0x0063cc80 addr=0xfffffe0007558090-0xfffffe0007640c80 r--/r--   __TEXT            
+	sz=0x000c3140 off=0x005547b0-0x006178f0 addr=0xfffffe00075587b0-0xfffffe000761b8f0               __TEXT.__const            
+	sz=0x00025390 off=0x006178f0-0x0063cc80 addr=0xfffffe000761b8f0-0xfffffe0007640c80               __TEXT.__cstring          (CstringLiterals)
+001: LC_SEGMENT_64 sz=0x0013cc80 off=0x020aa7d0-0x021e7450 addr=0xfffffe00090ae7d0-0xfffffe00091eb450 r-x/r-x   __TEXT_EXEC       
+	sz=0x0013c0b0 off=0x020aa7d0-0x021e6880 addr=0xfffffe00090ae7d0-0xfffffe00091ea880          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000bd0 off=0x021e6880-0x021e7450 addr=0xfffffe00091ea880-0xfffffe00091eb450          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00024000 off=0x04951c48-0x04975c48 addr=0xfffffe000b955c48-0xfffffe000b97c83c rw-/rw-   __DATA            
+	sz=0x00022388 off=0x04951c48-0x04973fd0 addr=0xfffffe000b955c48-0xfffffe000b977fd0               __DATA.__data             
+	sz=0x00002738 off=0x00000000-0x00002738 addr=0xfffffe000b977fd0-0xfffffe000b97a708               __DATA.__common           (Zerofill)
+	sz=0x00002134 off=0x00000000-0x00002134 addr=0xfffffe000b97a708-0xfffffe000b97c83c               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x000322f0 off=0x011303b0-0x011626a0 addr=0xfffffe00081343b0-0xfffffe00081666a0 rw-/rw-   __DATA_CONST      
+	sz=0x00000698 off=0x011303b0-0x01130a48 addr=0xfffffe00081343b0-0xfffffe0008134a48         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000670 off=0x01130a48-0x011310b8 addr=0xfffffe0008134a48-0xfffffe00081350b8         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x0002ac90 off=0x011310b8-0x0115bd48 addr=0xfffffe00081350b8-0xfffffe000815fd48         __DATA_CONST.__const            
+	sz=0x00004e80 off=0x0115bd48-0x01160bc8 addr=0xfffffe000815fd48-0xfffffe0008164bc8         __DATA_CONST.__kalloc_type      
+	sz=0x000013b0 off=0x01160bc8-0x01161f78 addr=0xfffffe0008164bc8-0xfffffe0008165f78         __DATA_CONST.__kalloc_var       
+	sz=0x000005e8 off=0x01161f78-0x01162560 addr=0xfffffe0008165f78-0xfffffe0008166560         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000b8 off=0x01162560-0x01162618 addr=0xfffffe0008166560-0xfffffe0008166618         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000088 off=0x01162618-0x011626a0 addr=0xfffffe0008166618-0xfffffe00081666a0         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 401 at 0x04ade42c
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     1D59E099-D089-31DF-9BF2-DB6C14F90908
+008: LC_SOURCE_VERSION           200.69.0.0.0
+009: LC_FUNCTION_STARTS          offset=0x004aa6ac0 size=0x2f00
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleDisplayName`: ``
+- `CFBundleExecutable`: `AppleM2ScalerCSC`
+- `CFBundleGetInfoString`: `9.0.5, Copyright Apple Inc. 2007-2023`
+- `CFBundleIdentifier`: `com.apple.driver.AppleM2ScalerCSCDriver`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `Apple M2 Scaler and Color Space Converter Driver`
+- `CFBundleNumericVersion`: `0`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `266.0.0`
+- `CFBundleSignature`: `aapl`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `265.0.0`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2007-2023 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleM2ScalerCSC.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198900211568`
+- `_PrelinkExecutableRelativePath`: `AppleM2ScalerCSC`
+- `_PrelinkExecutableSize`: `2615124`
+- `_PrelinkExecutableSourceAddr`: `-2198900211568`
+- `_PrelinkKmodInfo`: `-2198828917688`
+
+## Strings (3715) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+First 3000 of 3715.
+
+**[__TEXT.__cstring]**
+
+- `Invalid outbound comm data type: %d\n`
+- `void AppleM2ScalerCSCHal::createHalObjects()`
+- `IOSurfaceAcceleratorFormatInPMARGB8888`
+- `bad notify_signal callback\n`
+- `OOTF is not supported by this version of hardware\n`
+- `IosaPrescaler3x3PipeUnit`
+- `Error decoding options dictionary\n`
+- `ClientTransformFallback`
+- `  Enabled Blocks: %d/15, BlockEnable=0x%08x\n`
+- `Failed to initialize M3 scratch interrupts (index: %u)!\n`
+- `CanIdleCheck`
+- `LOG_EVENT_ERROR_UNHANDLED_EXTERNAL_IRQ`
+- `unknown`
+- `kInterchangeSizeNormal`
+- `site.AppleM2ScalerCSCHalMSR30`
+- `IosaWdmaPipeUnit`
+- `Initialized %s\n`
+- `site.MailBox`
+- `HdrInputError: lumaAvgCoeff value [%d] exceeding the range [%d:%d]\n`
+- `CM_BLOCK`
+- `MSRCPU: Using AP-side IMEM loading\n`
+- `MSR4 Debug status (MSR_CTRL_DBGSTS) error = 0x%x\n`
+- `site.IosaDegammaPipeUnitMSR23`
+- `site.MSR23ChromaDownsampleFilter`
+- `Block4V NbrBuf: Addr0=0x%08x [RdCHint:%u WrCHint:%u] Addr1=0x%08x [Size:%u] FullAddr=0x%llx\n`
+- `ASE not allowed with VRA Scaling\n`
+- `AppleM2ScalerCSCHalMSR9`
+- `EnableCacheHints`
+- `com.apple.AppleM2ScalerCSCDriver.blockEnablement`
+- `SIB `
+- `Power down with count already zero for request %p with reason %d\n`
+- `1`
+- `downScalingRequiredVH[%s]=%u\n`
+- `site.T`
+- `enqueueDescriptor`
+- `apq_degamma`
+- `task-id=%llu\n`
+- `Firmware not paused, cannot resume (%u)\n`
+- `interruptOccurredDartFlush`
+- `[%05X %08X] %03u {%08X %08X} msrcore irqsts=%08X`
+- `[%05X %08X] %03u {%08X %08X} tiler %s`
+- `MSR INTR2AXI is not idle, can't do sw reset!\n`
+- `msr_chdwn`
+- `HSclEdgeMode`
+- `rdmaSubsampleMode`
+- `obtainActiveWindow`
+- `tryExecuteGangedFrameDescriptor_gated`
+- `Failed to create SID%u commandpool!\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaFilmGrainControlMSR23.cpp`
+- `Interchange compression without interchange tile not supported by this version of hardware: Format = %s\n`
+- `[IOSA][Boot ] Scaler HAL[%u] Initialized.\n`
+- `prepareTransform`
+- `linScaleDeGammaEnable`
+- `ColorManager`
+- `pop`
+- `commitFilmGrain_gatedContext`
+- `selectPowerGatingModeASE`
+- `clearBlock`
+- `Block4V NbrCfg: 0x%08x [BufRd0:%u BufWr0:%u BufRd1:%u BufWr1:%u]\n`
+- `dump`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/DPEControl/IosaDPEControlMSR16.cpp`
+- `121111122222222221222122212221222122212221222122212221222122212221222122212221222122212221222122212221222122212221122222`
+- `ContextSwitchCount`
+- `\"[%s] \" \"After ASE scaling, postASEDim[%s][%s] dim (\" \"%s%d.%s%u\" \") not dest[%s][%s] (\" \"%s%d.%s%u\" \")\\n\" @%s:%d`
+- `IosaColorManagerMSR10`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR29.cpp`
+- `\"[%s] \" \"Program error detecting SOC version for HAL\\n\" @%s:%d`
+- `[SYM] Configuring LUMADDAInit[%s] as 0x%x (%s%d.%s%u)\n`
+- `configureOddSizeLumaOption_gated: replication!\n`
+- `data ready`
+- `initDefaultFilters`
+- ` (WARNING: no matching OPEN)`
+- `clientOpened_gated`
+- `site.IosaColorManagerMSR5`
+- `0x%zx: %s\n`
+- `IOSurfaceAcceleratorASEApiVersion`
+- `IOSurfaceAcceleratorCapabilitiesCurvatureDegammaLUTSize`
+- `submit`
+- `site.IosaTiledCompressedMem`
+- `    Edges: Top=%s, Bottom=%s, Left=%s, Right=%s\n`
+- `IOSurfaceAcceleratorOddLumaForSubsampledSource`
+- `IosaColorManagerMSR23.cpp`
+- `Null returned for Virtual Address of readPhysicalRegister (0x%llx)\n`
+- `makeActiveWindowsForGangedMSRs`
+- `\"[%s] \" \"Failed to load MsrCPU firmware %s: MSR%u scaler %u path=%s embedded=%u imem0=0x%08x apImg0=0x%08x bootProgress=%s(0x%08x) bootEntries=%u running=0x%08x ibootFw=%d ctrrLock=%u ctrrWrDis=%u\\n\" @%s:%d`
+- `site.IosaReshapePipeUnit`
+- `blueCr mismatch for bin %d\n`
+- `  Total FD Size: %zu bytes (%zu words)\n`
+- `IOSurfaceAcceleratorFormatInPARGBV16`
+- `submit_free`
+- `ASEScale`
+- `[IOSA][Boot ] Mapper: SID[0]: %p, SID[1]: %p\n`
+- `AppleM2ScalerCSCHalMSR.cpp`
+- `site.M2ScalerCSCColorConversionControlMSR23`
+- `MSR23CurvatureLUT`
+- `12111111212111111111111111111111111111111111111111111111`
+- `ASE`
+- `site.Arena`
+- `Failed to allocate PipeInfo\n`
+- `[SYM] Configuring ChromaDDAInit[%s] as 0x%x (%s%d.%s%u)\n`
+- `M2ScalerCSCColorConversionControlMSR4`
+- `HdrInputError: histBinLimit[%d] value [%u] exceeding the maximum [%u]\n`
+- `HDR/ASE API ERROR: Unsupported API params version: %d\n`
+- `Failed to map spillbuffer!\n`
+- `dumpScalerRegisters`
+- `VRA Scaling is not supported alongside kIOSurfaceAcceleratorReducedPrecisionFractionalOffsets \n`
+- `[%05X %08X] %03u {%08X %08X} fid %08X -> tid %u`
+- `MSR Message Box link bring up!\n`
+- `IosaColorManagerMSR15`
+- `kPipeLocNoiseEstimation`
+- `%s: IosaFirmwareControlMSR30Rtk\n`
+- `IosaFirmwareControlMSR23`
+- `entry`
+- `IOSurfaceAcceleratorCapabilitiesASEMinRatio`
+- `IosaDirectionalScalingPipeUnit`
+- `pitch = %d\n`
+- `ASE API version unsupported\n`
+- `IOSurfaceAcceleratorFormatOut2Planes422`
+- `M2ScalerCSCColorConversionControlMSR7.cpp`
+- `IosaRequestPipeUnitMSR23`
+- `site.IosaTunableControl`
+- `enhancement unsupported by this version of HW`
+- `  Bilateral Coefficients [%d entries × 4]:\n`
+- `TriggerOneTimeRegistersDump`
+- `Block3H NbrCfg: 0x%08x [BufRd0:%u BufWr0:%u BufRd1:%u BufWr1:%u]\n`
+- `Block13V Tile[%d]: Out[0x%08x TileCoord:%u Size:%u]\n`
+- `sleepAckSequence_gated`
+- `Mcw       `
+- `for reset (postInit)`
+- `directional scaling unsupported by this version of HW`
+- `site.AppleM2ScalerCSCHalMSR22`
+- `%s %s BAYER/QUADRA format does not support fractional dimensions\n`
+- `msr_use_precomputed_gamma`
+- `rotate180=%u\n`
+- `Enhancement inactive because %s\n`
+- `After wake, frame count %u != 0\n`
+- `121122222`
+- `msgbox-doorbell-num`
+- `DDAinitVH_CLA[%s][%s]=%s%d.%s%u\n`
+- `site.IosaPowerManager`
+- `HCU API requested but HDR not enabled\n`
+- `DisableMsbReplicationWorkaround`
+- `interruptOccurredMSR`
+- `IOSurfaceAcceleratorFilterHorizontalTapsCount`
+- `SRC`
+- `M2ScalerSrcDestCfgControlMSR23`
+- `DirectionalScalingEnable`
+- `DisableSIMDOptimizations`
+- `chrDownSampleHEN`
+- `site.MSR23BackwardsCompatibleFilter`
+- `broadcast`
+- `fdrResetPointers`
+- `cmToneMapEnable`
+- `[IOSA][DIAG] IOSA activity log not found\n`
+- `[%05X %08X] %03u {%08X %08X} %s DRAM WRITE priority: %u`
+- `next_frame`
+- `Request retain count %d, possible memory leak!\n`
+- `DitherControlMSR`
+- `cacheFlushInactive`
+- `[COSITE] Using VE CHDWN Coeffs, v: %d, h: %d\n`
+- `BorderFillOddSizeYCbCrAlpha`
+- `Resetting: Power Cycling MSR\n`
+- `[IOSA][Boot ] Failed to initialize RegStream!\n`
+- `[%05X %08X] %03u {%08X %08X} control plane %s`
+- `LOG_EVENT_FD_FETCH_COMPLETE`
+- `Failed to report # of scalers\n`
+- `callbackID=0x%llx\n`
+- `ASE API Legacy: elem=%u, size=%u, min=%zu (ASEConfigUnits), max=%zu\n`
+- `HEADER %016llX`
+- `MSR23: Not setting custom fields ptr\n`
+- `logFrameDescriptorFields`
+- `[PIXCAP] DEST %d : %u (0x%x)\n`
+- `readBlock: %#x\n`
+- `IosaFirmwareControlMSR23Rtk.cpp`
+- `MSR Debug status (MSR_CTRL_DBGSTS) error = %#x\n`
+- `ASEPRE_BLOCK`
+- `000000`
+- `FakePowerState`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/DPEControl/IosaDPEControlMSR17.cpp`
+- `kInterchangeCompressed`
+- `kPipeLocWdma`
+- `RuntimeDebug1`
+- `LEGACY`
+- `ZeroFill`
+- `Initialize MSR29 Mailbox interrupt sources index %u..\n`
+- `bytesPerTileHeaderOfPlane[%u]=%u\n`
+- `%s %s dimension (%u) > buffer (%u)\n`
+- `Cannot adjust dimensions for internal rounding\n`
+- `\"[%s] \" \"argument queue not empty!\" @%s:%d`
+- `dequeue_head`
+- `Driver error: User provided outbound size too small\n`
+- `%s Failed to map agent mask %d mdAgentMask=%p!\n`
+- `virtual void AppleM2ScalerCSCHalMSR23::saveTiledBufferUsage_gatedContext(M2ScalerCSCRequest *)`
+- `[IOSA][Boot ] Allocating RegStream (piodma_enable: %u, firmware_scheduler_enable: %u)\n`
+- `IOSurfaceScalerTimes`
+- `transform (%dx%d)->(%dx%d): src to dst ratio %s%d.%s%u for %s %s landed on bin %d with no coefficients; using neighboring bin %d instead to absorb client ratio quantization noise\n`
+- `122222222222211222222221222`
+- `RegStream`
+- `    biPosThresh[%d]: thresh0=%d, thresh1=%d\n`
+- `[MSR22]: Soc Version Register read failed \n`
+- `iosa`
+- `IosaFilmGrainPipeUnitMSR16`
+- `Stride in bytes (Pixels=%u Luma=%u, Chroma=%u) exceeds HW limit of %u\n`
+- `Allocating backwards compatible filter for custom chroma filters.\n`
+- `1212222122122122122122211111122`
+- `cannot create an interrupt source\n`
+- `// Reused for non-PA asserts to avoid adding entries here`
+- `MailBox`
+- `HistogramPixelBins`
+- `%s %s offset (%u) > buffer (%u)\n`
+- `Created RemoteIOP power notification handler\n`
+- `%-31s : %#x\n`
+- `NULL pID passed\n`
+- `Failed to allocate SDR!\n`
+- `ActiveDartStartTime`
+- `[IOSA][Boot ] Scaler[%d]:[%s]: %d (%#x) (%s)\n`
+- `Border Fill X/Y offsets of %u/%u must be greater than transform X/Y offsets of %u/%u and bfill w/h of %u/%u with dest w/h %u/%u total less than buffer width/height of %u/%u\n`
+- `[%05X %08X] %03u {%08X %08X} dev init: %.4s`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaRdmaControlMSR27.cpp`
+- `cmPostDeGamma3x3Enable`
+- `[0x%016llx]`
+- `adjustBufferPhysicalAddresses`
+- `bad notify_signal event\n`
+- `IosaFirmwareControlMSR30Rtk`
+- `No available slots to track power state change to %d for request %p with reason %d\n`
+- `Failed to quiesce MsrCPU\n`
+- `IosaChromaUpsamplePipeUnitMSR9`
+- `lockIOSurface`
+- `sendEventToCoreAnalytics`
+- `site.IosaPolyphaseScalingPipeUnit`
+- `ApiodmaRegStreamMSR19`
+- `site.IosaInternalPipeMSR15`
+- `PixelCapturePreSclY`
+- `Source has kIOSurfaceProtectionOptionDisableStatistics set\n`
+- `site.IosaColorManagerMSR10j`
+- `Block13H Tile[%d]: Out[0x%08x TileCoord:%u Size:%u]\n`
+- `msr_publish_real_scaler_caps`
+- `NoiseEstimationEnable`
+- `\"[%s] \" \"Request %d hold power ref (%d)!\\n\" @%s:%d`
+- `TransformSize`
+- `Custom Chroma Filter :\n`
+- `configureUnequalSpacingLut_gatedContext`
+- `HSclComp1DeringingEn`
+- `greenCb pointer invalid\n`
+- `kPipeLocReshape`
+- `Aggregate scaler [%d] spill buffer\n`
+- `HdrInputError: Detail Preservation HV0Coeff beyond limits\n`
+- `Unknown`
+- `configBlocksForActiveWindow`
+- `rotate90_flipY=%u\n`
+- `LOG_EVENT_SPEW_PIPELINE_PIXEL_COUNT`
+- `M2ScalerScalingControlMSR10`
+- `Object=%p: Provider=%p: Register Service\n`
+- `mapBufferOnDartGatedIfNeeded`
+- `%09llx:  `
+- `ReducedPrecisionFractionalOffsets`
+- `get_single_dimen_tilearray H failed (%u)\n`
+- `[IOSA][Boot ] Simulated model. instance %p \n`
+- `LOG_EVENT_FD_FSM_TRANSITION`
+- `runColdBootInitSequence`
+- `mChromaDownsampleFilter updateWithCoefficientsRef failed: 0x%x\n`
+- `processSdTileInfo`
+- `Failed to create estimation buffer\n`
+- `CLA_Alpha`
+- `bank error`
+- `True`
+- `Convert to gamma input incorrect\n`
+- `site.CacheEntry`
+- `1212221`
+- `kInterruptIndexMSR_AP_MBX_MAILBOX_APT0_READ_NOT_EMPTY\n`
+- `parse_next unpack`
+- `    biPosVal[%d]: value0=%d, value1=%d\n`
+- `  Mix Curves:\n`
+- `LOG_EVENT_WARNING_MSR_CORE_HW_DECOMP_IRQ`
+- `LockInScaler (kIOSurfaceAcceleratorLockInScalerCString) deprecated!\n`
+- `compressionFootprintOfPlane[%u]=%u\n`
+- `AppleM2ScalerCSCHalMSR11.cpp`
+- `msgbox-mailbox-num`
+- `ReshapingLUT`
+- `FD SIZE FIXED: After tile descriptor, fd_len still=%zu bytes (%zu words)\n`
+- `loadReadPointer`
+- `Failed to allocate md for Arena.\n`
+- `--- TileArrayAddrSize (offset 0xd0, 2 entries) ---\n`
+- `Block12V NbrCfg[%d]: 0x%08x [BufRd0:%u BufWr0:%u BufRd1:%u BufWr1:%u]\n`
+- `[%05X %08X] %03u {%08X %08X} %s fsm transition: %u -> %u`
+- `getPacketSequence for req %d\n`
+- `ActualPlaneDataSize: %llu, ActualPlaneMetadataSize: %llu\n`
+- `Failed to create block enablement string\n`
+- `postPerfStateChange`
+- `getCommand`
+- `IOSurfaceAcceleratorFormatIn1PlaneYonly10`
+- `site.IosaFirmwareControlMSR23Rtk`
+- `[%05X %08X] %03u {%08X %08X} %s tile loop exit: error at tile=[%u,%u]`
+- `width=%u\n`
+- `site.IosaDPEControlMSR22`
+- `[SD frame_id:%08x] epoch=+%lldus, fetch_done=+%lldus, init_done=+%lldus, first_tile_submitted=+%lldus, frame_complete=+%lldus\n`
+- `Symmetric Scaling is not yet enabled with Rotations and Flips \n`
+- `Dart Error req %d, %s plane %d.\n`
+- `executePipeValidate`
+- `set`
+- `@`
+- `clientsData.sourceYOffset=%d.%06u(0x%llx)\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AXI2AFControl/IosaAxi2AfControl.cpp`
+- `System error: Mismatched comm outbound data size\n`
+- `handleRecovery_gated`
+- `Cannot send remote IOP power notification - firmware not loaded\n`
+- `bounds check failed! len: %lu off: %lu fill_len: %lu\n`
+- `scaler[%d] %s: perfState %d \n`
+- `site.M2ScalerScalingControl`
+- `writeToBlockRegStream`
+- `HdrInputError: Detail Preservation Mode not supported (%u)\n`
+- `Border fill region width/height must align to 32 for this version of HW. border fill w/h=%u/%u\n`
+- `configureStart req %d aw seq %d/%d\n`
+- `System is powering down, skip MSR reset!\n`
+- `cannot create IOAsynchronousScheduler\n`
+- `IOSurfaceAcceleratorFormatOut2Planes42210`
+- `Rot: %s\n`
+- `offset Adjustments for QuadraBayer formats failed.\n`
+- `IosaDPEControlMSR19`
+- `12221`
+- `bank unknown`
+- `msr_publish_custom_vscaler_caps`
+- `[%s]Forcing default filter \n`
+- `Use client's nc buffer: md %p \n`
+- `createOptions`
+- `  BlockAddrSize[%d]: Block=%u (%s), Addr=0x%llx, Size=%u dwords\n`
+- `Block2H Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `IosaRdmaControl`
+- `Block4V Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `initRegStream`
+- `IOSurfaceAcceleratorActiveWindowSize`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaRdmaControlMSR23.cpp`
+- `Inbox full!\n`
+- `site.M2ScalerSrcDestCfgControlMSR13`
+- `wireMemoryToKernel`
+- `\"[%s] \" \"Provider Name invalid (%s) (%p)\\n\" @%s:%d`
+- `M2ScalerScalingASEControlMSR23`
+- `aseNoiseEstEn`
+- `notifyThread`
+- `site.M2ScalerCSCColorConversionControlMSR8`
+- `failed with result: %#x\n`
+- `site.IosaDirectionalScalingPipeUnit`
+- `Registered interest for %s messages\n`
+- `LOG_EVENT_UNEXPECTED_WAKEUP_FROM_STATIC_PG`
+- `IosaRdmaPipeUnit`
+- `Stride: %u is less than: %u bytes for                     plane: %d, iDS: %d\n`
+- `validate_UnequalSpacingTm_gatedContext`
+- `mpASEApiBlendLogic is null\n`
+- `DS_Source`
+- `\"[%s] \" \" Context switch tag is not higest priority %u\" @%s:%d`
+- `TransformDumpLevel`
+- `--- BlockAddrSize (offset 0x58, 15 entries) ---\n`
+- `%s Quadra/Bayer format requesting 1-4/4-1 packing (0x%x) cannot be more than 1 plane\n`
+- `%8x %8x %8x %8x %8x %8x %8x %8x\n`
+- `[%05X %08X] %03u {%08X %08X} %s td-cache READ check: skipped (data already fetched)`
+- `H1xANELoadBalancer`
+- `site.IosaChromaUpsamplePipeUnit`
+- `iomdEarlyPurge`
+- `colorRange=%u\n`
+- ` (upscale)`
+- `Couldn't map register memory!\n`
+- `\"[%s] \" \" Context switch occured but no high priority request %u\" @%s:%d`
+- `getColorspaceMatrix`
+- `Only identical dimensions are supported in Bayer/Quadra unfolded transforms \n`
+- `msr_keep_power_on`
+- `Custom Filter Shift has been detected.\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/MsrBlockDescriptorRegisterStream.cpp`
+- `BorderFillOddSizeYCbCrLuma`
+- `Block %d (%s) is enabled\n`
+- `Failed to prepare IOSurface (%#x) (%#x)\n`
+- `scalingRequiredVH_CLA[%s][%s]=%d\n`
+- `HdrInputError: Detail Preservation HV1Coeff beyond limits\n`
+- `NO`
+- `structure size mismatch`
+- `commitChromaDownsampling_gatedContext`
+- `Failed to get precomputed degamma values for %d \n`
+- `Block14H Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `[IOSA][Boot ] Selecting Static Power Gating for scaler %d\n`
+- `ARGB_Alpha`
+- `colorRemapMode=%u\n`
+- `  Found ASE Angle Detect V3\n`
+- `%s Plane %u Stride %llu is less than expected minimum stride %llu\n`
+- `kModulePM`
+- `=== FW→AP DMEM dump: FWTDRegs_t (offset=0x%x, %u words) ===\n`
+- `prepareThread`
+- `LOG_EVENT_MSR_FW_VERSION_COMMIT_HEX`
+- `ACTIVITY`
+- `operator()`
+- `prepareBlockDescriptorSet`
+- `site.IosaDPEControlMSR17`
+- `Identity`
+- `withOptions`
+- `notification port already registered!\n`
+- `UnwireSurface`
+- `\"[%s] \" \"MailBox[6] credit return_inc check failed on transform completion (req: %d)\\n\" @%s:%d`
+- `[IOSA][Boot ] PowerManager perf states used.\n`
+- `site.M2ScalerScalingASEControlMSR23`
+- `M2ScalerSrcDestCfgControlMSR17`
+- `M2ScalerSrcDestCfgControlMSR24`
+- `IosaFirmwareControlMSR27Rtk`
+- `printRegs`
+- `SpillBuffer`
+- `site.IosaFirmwareControlMSR24Rtk`
+- `ASEPre `
+- `printMSRIdleState`
+- `outbox_nempty!\n`
+- `Firmware Stalled after %d us\n`
+- `M2ScalerScalingControlMSR.cpp`
+- `\"[%s] \" \"Program error\\n\" @%s:%d`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/DPEControl/IosaDPEControlMSR23.cpp`
+- `postInitAllHals`
+- `AppleM2ScalerCSCHalMSR6`
+- `destBFillCtrlEnable`
+- `enableDeviceClockProxy`
+- `site.AppleM2ScalerCSCHalMSR10`
+- `=== FW→AP DMEM dump: frame_desc_t (offset=0x%x, %u words) ===\n`
+- `Not last tile!\n`
+- `IosaTiledCompressedMemMSR13`
+- `Failed to validate pipe! req = %d!\n`
+- `ASE API consistency error\n`
+- `Interchange format with tile sizes other than 16x16 are not supported for rgb surfaces that are not fp16.\n`
+- `\"%s: Unsupported\\n\" @%s:%d`
+- `Client`
+- `findApiParams FAILED: type=%s, error=0x%x\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/MSR23ChromaDownsampleFilter.cpp`
+- `IOSA`
+- `pseudoLinearScalingDisable=%u\n`
+- `site.IosaTunableControlMSR24`
+- `Failed to allocate ta_pool\n`
+- `M2ScalerCSCColorConversionControlMSR`
+- `LOG_EVENT_ERROR_UNHANDLED_INTERNAL_IRQ`
+- `IosaTunableControlMSR25`
+- `Unable to find appropriate gamma function %d \n`
+- `[PIXCAP] FG %d : %u (0x%x)\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR8.cpp`
+- `IOSurfaceAcceleratorCapabilitiesMMR`
+- `msr_hcu_no_hdr`
+- ` mBoxWrite 0x%x, 0x%x\n`
+- `\"[%s] \" \"ASE: Scaling ratio is zero\\n\" @%s:%d`
+- `HSclComp1HighFreqEn`
+- `simulated_model`
+- `\n`
+- `QuadraBayer: %s: %s (%s) [%d]\n`
+- `M2ScalerSrcDestCfgControlMSR13`
+- `site.IosaWdmaControlMSR25`
+- `=== MSR29 Frame Descriptor Complete Field Breakdown ===\n`
+- `%s: IosaFirmwareControlMSR29Rtk\n`
+- `unknown value for DisplayColorRemapMode: %d\n`
+- `given size (%llu) doesn't match IOSurfaceAcceleratorClientProperty's (%lu)\n`
+- `122222222222121111111121111111111111111111221221122211222111111211122222222211111111111111111111222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `NULL argument given\n`
+- `WorkloadPriority`
+- `\tMSR_PS 0x%08x ASE_PS 0x%08x\n`
+- `Surface %s width %d doesn't align with %s alignment of %d\n`
+- `site.IosaRdmaControlMSR20`
+- `setDimensionsProper`
+- `site.IosaPremultiplyAlphaMultiplyPipeUnit`
+- `testStress`
+- `[SYM] Skipping CHDDAInit subsample adjustment\n`
+- `IosaRdmaControlMSR18`
+- `IosaInternalPipeMSR23`
+- `IosaChromaUpsamplePipeUnit`
+- `enqueueFrame`
+- `OFF`
+- `configureDynamicFrameState`
+- `\"[%s] \" \"Interrupts not enabled before start for scaler %d - request can hang\" @%s:%d`
+- `12111112122212121222211122111222022121111111111111000000200000002000000020000000212211111111111111112222222222222222222222222222222222222222222222222222222222222222222222222222222222221122221121122212`
+- `msr_mask`
+- `Outbound buffer cannot hold size: 0x%lx\n`
+- `site.M2ScalerSrcDestCfgControlMSR6`
+- `releaseTileArraySlots: slot %u decrementing default NC refCount\n`
+- `flipX=%u\n`
+- `=== ASE Sharp LUT V4 Config Injected ===\n`
+- `Block7V Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `SharedEvent`
+- `DART error handler registeration mapper failed!, ret: 0x%08x\n`
+- `ERROR:pa_configure_pipeline: %d\n`
+- `mCommApiType=%u\n`
+- `StrideNotMultipleOf32`
+- `HdrInputError: Cacsc1 Mode Unsupported (%u)\n`
+- `ERROR: pa_create_next_tile failed with code %X on frame %X, tile (%u,%u)`
+- `site.M2ScalerScalingASEControlMSR10`
+- `Firmware resumed normally\n`
+- `Block10H NbrCfg[%d]: 0x%08x [BufRd0:%u BufWr0:%u BufRd1:%u BufWr1:%u]\n`
+- `req %d selectScaler scaler %d AW(%d/%d) canEnqueue %d canContextSwitch %d\n`
+- `MultiplyAlphaSecond`
+- `LOG_EVENT_WARNING_MSR_CORE_HW_TIMEOUT_IRQ`
+- `RuntimeSvc`
+- `IosaDPEControlMSR23`
+- `BottomLeft`
+- `allocateTileArrayBuffer: slot %u already in use\n`
+- `IOSurfaceAcceleratorCapabilitiesMinAseSourceWidth`
+- `FrameSinkSubmit`
+- `postInit`
+- `processSdTimingInfo`
+- `00000`
+- `configureVerticalScaling_gatedContext`
+- `site.M2ScalerScalingASEControlMSR29`
+- `site.IosaPrescaler3x3PipeUnitMSR23`
+- `site.IosaColorManagerMSR8`
+- `HdrInputError: Precision value [%u] exceeding the maximum [%d]\n`
+- `kPipeLocChromaUpsample`
+- `site.M2ScalerSrcDestCfgControlMSR19`
+- `Cannot collect FW DMEM. Buffer null \n`
+- `deAllocateFrameByRequest %d, frame %d, active window %d / %d\n`
+- `\"[%s] \" \"entry is not in the pool\\n\" @%s:%d`
+- `2111`
+- `Failed to map register index: %u\n`
+- `kSurfaceAcceleratorCapabilitiesHistogramFixedBins`
+- `[SYM]Got Symmetric Scaling RuntimeProperty \n`
+- `DisplayColorRemapMode_to_CSCData_Accessibility`
+- `M2ScalerSrcDestCfgControlMSR14`
+- `configureSpillBuffer_gatedContext`
+- `[MSRCPU] BOOT log: %#X\n`
+- `target-type`
+- `IosaPipe`
+- `checkForOverlappingRectangles`
+- `Cannot enable symmetric scaling for this verison of HW\n`
+- `wdmaARGB`
+- `Chroma Downsampler Filter for MSR23 failed to allocate \n`
+- `kModuleBoot`
+- `IOSurfaceID: %d  signalCompleted()  event: %p  id: %d  value: %lld (%lld)\n`
+- `iterateOnFrames_gatedContext`
+- `site.StatusDescriptorRingMSR23`
+- `validateSourceToDestRelationship`
+- `[%05X %08X] %03u {%08X %08X} %s DRAM WRITE after-checksum: 0x%08X`
+- `dimensionAdjustmentsWithExtendedPixels %s, %s %s%d.%s%u\n`
+- ` Unmap shared event %d md=%p dva=0x%llx\n`
+- `[SYM][%s] Capping DDAinit to -1.0\n`
+- `IOSurfaceAcceleratorFormatOut2Planes44410`
+- `[IOSA][Boot ] APIODMA Version: %u,%u\n`
+- `clientClose`
+- `kSurfaceAcceleratorCapabilitiesMediaCompOutput`
+- `IosaRegammaPipeUnit`
+- `  Found ASE Peaking Config V3\n`
+- `\"[%s] \" \"Provider Name invalid (%s)\\n\" @%s:%d`
+- `[%05X %08X] %03u {%08X %08X} %s average units: %u`
+- `IosaInternalPipe`
+- `site.IosaPowerManagerMSR`
+- `[IOSA][Boot ] obj=%p\n`
+- `IOSurfaceAcceleratorFormatIn2PlanesPacked44410`
+- `%s width/height of %dx%d is greater than maximum of %dx%d: options=0x%x, Tiling=%d\n`
+- ` yOffsetDst = %lld\n`
+- `IOSurfaceAcceleratorFormatOutARGB8101010`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR30.cpp`
+- `IosaRdmaControlMSR20`
+- `[MSRCPU] Firmware initialization failed to ack (%#x)!\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/MSR23BackwardsCompatibleFilter.cpp`
+- `Allocated SDR: %p\n`
+- `X offset + width: %u is improperly aligned                                 to: %u pixels for plane: %d, iDS: %d\n`
+- `validateDimensions`
+- `IOSurfaceAcceleratorCapabilitiesHDR`
+- `\"[IOSA] Unexpected frame pri from FW ( %u )\\n\"`
+- `IOSurfaceAcceleratorCapabilitiesSymmetricScaling`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaColorManagerMSR18.cpp`
+- `IosaRdmaControlMSR27`
+- `AppleM2ScalerCSCHalMSR18`
+- `enableDeviceClock_gatedContext`
+- `SleepRequested`
+- `SCMBuildInfo_AppleM2ScalerCSC`
+- `clientsData.sourceHeight=%d.%06u(0x%llx)\n`
+- `X offset: %u is improperly aligned to: %u pixels\n`
+- `12111122222222222222222222222222222222222`
+- `IOSurfaceAcceleratorCapabilitiesMaxHUpscale`
+- `ditheringMode=%u\n`
+- `ASEANEEnh`
+- `borderFill.greenCb=%#x\n`
+- `Scale Exceeds HW Ratio Limit: Dimension=%s, SrcSize=%u, DstSize=%u, HW Precision=%u.%u, srcToDstRatio=%s%d.%s%u, HW limit=%s%d.%s%u\n`
+- `M2ScalerCSCColorConversionControlMSR15`
+- `unfolded`
+- ` aggregateStats_gated active window= %d \n`
+- `DV 4:2:0`
+- `AppleM2ScalerCSCHalMSR29::initInterrupts()!\n`
+- `22211`
+- `BLOCK[%zu %s] INVALID: inv_valid=0 (block not initialized!)\n`
+- `Block2V NbrBuf: Addr0=0x%08x [RdCHint:%u WrCHint:%u] Addr1=0x%08x [Size:%u] FullAddr=0x%llx\n`
+- `kInterchangeSizeNone`
+- `Request:\n`
+- `Contex Switch transform id %d doesn't exist in compeletion queue!\n`
+- `HorizontalScale`
+- `Axi2af    `
+- `histogram is null\n`
+- `Main `
+- `dashboardIrqMaskSet`
+- `[%-*s]`
+- `FirmwareTimeoutInject`
+- `complete`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaColorManagerMSR20.cpp`
+- `FILMGRAIN_BLOCK`
+- `site.IosaInternalPipeMSR23`
+- `0`
+- `DMEM dump: frame_desc size %u < expected %zu\n`
+- `[%05X %08X] %03u {%08X %08X} %s rotation: %s`
+- `histogramRequest.offsetY=%u\n`
+- `site.AppleM2ScalerCSCHalMSR26`
+- `prepareCSCForCM`
+- ` `
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaPowerManager.cpp`
+- `site.M2ScalerScalingControlMSR6`
+- `findApiParams`
+- `Dashboard irq(dropped): index=%d status=%#x\n`
+- `Block10V NbrBuf: Addr0=0x%08x [RdCHint:%u WrCHint:%u] Addr1=0x%08x [Size:%u] FullAddr=0x%llx\n`
+- `kPipeLocASERegamma`
+- `site.PerfControlClient`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/StatusDescriptorRingMSR23.cpp`
+- `Quadra Bayer: Setting Dither Clamp registers to max \n`
+- `validate_toneMapping_gatedContext`
+- `Addressing format %s not supported.\n`
+- `Failed to cast handlers (%p)\n`
+- `Linear scaling with wide range YCbCr source not supported by this version of hardware\n`
+- `Block2V Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `AppleM2ScalerCSCHalMSR23`
+- `the minimum scaling ratio was not requested`
+- `[%s][%s]Detected coefficient shift in custom filters bin %d\n`
+- `HCU style HDR API is not supported by this version of hardware\n`
+- `Tiled compressed buffer[%s] Size < dalignment: size=0x%llx, alignment=0x%x, plane=%d\n`
+- `Dest `
+- `Block10H NbrBuf: Addr0=0x%08x [RdCHint:%u WrCHint:%u] Addr1=0x%08x [Size:%u] FullAddr=0x%llx\n`
+- `A8RGB101010-2Plane format (%s) cannot be used at the destination if source (%s) does not have alpha\n`
+- `deAllocateFrameForRequest`
+- `get_single_dimen_tilearray V failed (%u)\n`
+- `IOSurfaceAcceleratorScalerVersion`
+- `useCustomFilters[VH_Horizontal]=%u\n`
+- `Failed to allocate MD for FDR\n`
+- `enableDevicePowerProxy`
+- `dartErrorHandlerCallback - client null.\n`
+- `\"[%s] \" \"trying to overwrite read-only coefficients\\n\" @%s:%d`
+- `IOAsynchronousScheduler`
+- `initFrameDescRing`
+- `FilmGrainSynthesizer`
+- `INFO`
+- `QUADRA`
+- `RuntimeDebugNoIdle0`
+- `M2ScalerCSCColorConversionControlMSR23.cpp`
+- `mHDRApiEnabled=%u\n`
+- `sleepForPointer`
+- `=== AP DRAM dump: fd_desc ===\n`
+- `rdma_frame_height %d wdma_frame_height %d aw %dx%d\n`
+- `fdr_0_wr_ptr`
+- `kModuleASE`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR27.cpp`
+- `IosaFirmwareControlMSR28Rtk`
+- `[%05X %08X] %03u {%08X %08X} dram %s`
+- `[IOSA][Boot ] scalerId: %u disabled (msr_mask=%#x)\n`
+- `MSR 6 Register Dump%s\n`
+- `command %u in use but has no packet sequence (valid=%u)\n`
+- `Block11V Tile[%d]: Out[0x%08x TileCoord:%u Size:%u]\n`
+- `[%05X %08X] %03u {%08X %08X} %s td-cache DRAM READ: %s`
+- `rgbLumaBytesPerPixel=%u\n`
+- `convert to linear input incorrect\n`
+- `IOSurfaceAcceleratorFormatInARGB8888`
+- `site.IosaPipeUnit`
+- `[MSR15]: Cannot create mapping for SoC Version register address\n`
+- `ClearUsageStatistics`
+- `IOSurfaceAcceleratorCapabilitiesFractionalXYOffsetsSupported`
+- `[%05X %08X] %03u {%08X %08X} %s cache store success: priority=%u, v_index=%u (DMEM tier)`
+- `SourceCompressedPlane%u`
+- `Custom Register Dump:\n`
+- `Received message from RemoteIOP with invalid arg`
+- `site.IosaRdmaControl`
+- `222122`
+- ` Client closed with requests not notified! (%u / %u)!\n`
+- `direct-dart-power`
+- `121222`
+- `Failed to get pipe config! req %d\n`
+- `rotate90_flipX=%u\n`
+- `srcToDstRatioIndex is out of bounds\n`
+- `Failed to create failed client log record\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/M2ScalerCSCColorConversionControlMSR.cpp`
+- `HdrInputError: spacingComp1 value [%d] exceeding the maximum [%d]\n`
+- `getLockedInScaler derecated!!\n`
+- `################################################################\n`
+- `Transform results in dimensional adjustment, Not allowed with VRA Scaling\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR4.cpp`
+- `[IOSA][Boot ] Failed to find scaler version %#x!\n`
+- `kSurfaceAcceleratorCapabilitiesGpuCompInput`
+- `SharedEventAgentSignalEnabled`
+- `prepareFilters`
+- `  Found ASE Noise Meter V3\n`
+- `msgbox-using-postoffice`
+- `AppleM2ScalerCSCHalMSR29`
+- `adaptDDAInitForSymmetricScaling`
+- `IOSurfaceAcceleratorCapabilitiesInterchangeStrideAlignment`
+- `not needed`
+- `site.DitherControlMSR`
+- `12122222222222222222222222222222222222222222222222222222222222222222222`
+- `Failed to initialize pipe! req = %d!\n`
+- `[%05X %08X] %03u {%08X %08X} pa_lib \"%.4s\" err: %u`
+- `Failed to initialize RemoteIOP power notification handler`
+- `[IOSA] [Scaler%d] Unexpected frame_id (req %u aw seq %u prio %u)\n`
+- `0.5x`
+- `ARGB_BlueCr`
+- `IOSurfaceAcceleratorCapabilitiesPrecisionScalingFactor`
+- `canEnqueueFrame`
+- `M2ScalerCSCColorConversionControl.cpp`
+- `site.IosaRdmaControlMSR6`
+- `setCositeControl`
+- `Only Bayer -> Bayer or Quadra->Quadra transforms are supported, (%d != %d) \n`
+- `kIOSurfaceAddressFormatTiled`
+- `IOSurfaceAcceleratorFormatOut1PlaneYonly10`
+- `configureDDAInit_gatedContext`
+- `kInterchangeLinear`
+- `IOSurfaceAcceleratorFormatIn2Planes444`
+- `\"[%s] \" \"scaler request not found for fence signal\" @%s:%d`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/SpillBufferMSR23.cpp`
+- `M2ScalerScalingControlMSR8.cpp`
+- `site.M2ScalerSrcDestCfgControlMSR7`
+- `MSR 2 Register Dump\n`
+- `allocateTileArrayBuffer`
+- `zeroFill=%u\n`
+- `Base needs to be 128 byte aligned\n`
+- `at least %d surfaces required\n`
+- `PixelCapturePreSclX`
+- `HTPCVerticalHeaderGroupingModeOfPlane[%u]=%u\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/FirmwareControl/IosaFirmwareControlMSR27Rtk.cpp`
+- `prePerfStateChange: on %d clockIndex %d ltr %d\n`
+- `IOSurfaceAcceleratorCapabilitiesMaxDestHeight`
+- `[IOSA][Boot ] [MSR22] SOC Major: %#x Minor: %#x\n`
+- `CMPreTM3x3`
+- `HdrInputError: lumaOutputSel value [%u] exceeding the maximum [%u]\n`
+- `IosaColorManagerMSR11`
+- `IosaPowerManagerMSR23`
+- `user_set_filter`
+- `Failed to initialize MailBox\n`
+- `HdrInputError: Input Maximum Clip hit input clip value limits \n`
+- `  BlockEnable: 0x%08x\n`
+- `enqueueFrame failed`
+- `[%05X %08X] %03u {%08X %08X} %s DRAM WRITE post-transfer CRC: 0x%08X`
+- `Block2H NbrCfg: 0x%08x [BufRd0:%u BufWr0:%u BufRd1:%u BufWr1:%u]\n`
+- `filmGrainCtrlEnable`
+- `mailbox error!\n`
+- `XY offset %u/%u not aligned with media compressed hdr tile width/height of %u/%u for this version of hardware \n`
+- `    sharpLut[%d]: value0=%d, value1=%d\n`
+- `writeToGroupRegStream`
+- `MSR TunableControl object null. MSR Tunables are not being configured`
+- `configureNeighborChannel`
+- `AppleM2ScalerCSCHalMSR26`
+- `cmFixedPQReGammaEnable`
+- `prepareThreadWithAction`
+- `prePerfStateChange`
+- `transformSurface_asynchronous`
+- `WriteAddressNot128aligned`
+- `site.SpillBufferMSR23`
+- `Cannot allocate ActiveWindow!\n`
+- `enableDevicePower(%d) failed: 0x%x\n`
+- `Block6H Tile[%d]: Out[0x%08x TileCoord:%u Size:%u]\n`
+- `[%05X %08X] %03u {%08X %08X} %s APIODMA SW queue capacity: %u slots (matches HW SEQFIFO_DEPTH=16)`
+- `Failed to create MD\n`
+- `ProcessName`
+- `CLA_Chroma`
+- `12222222222221122222222121111211222222222222`
+- `IosaRdmaPipeUnitMSR23`
+- `[MSR16]: Cannot create mapping for SoC Version register address\n`
+- `IosaColorManagerMSR7.cpp`
+- `site.IosaWdmaPipeUnit`
+- `Custom Filter does not follow odd symmetry in phase 0\n`
+- `AppleM2ScalerCSCHalMSR8`
+- `fdr_4_wr_ptr`
+- `match_string`
+- `SIB_BLOCK `
+- `MSR23BackwardsCompatibleFilter`
+- `\"[%s] \" \"Source base address not 16-bit aligned\\n\" @%s:%d`
+- `Driver Error \n`
+- `createHalObjects`
+- `CLOSE `
+- `[%05X %08X] %03u {%08X %08X} %s DRAM READ v_index: %u`
+- `Log.cpp`
+- `[%05X %08X] %03u {%08X %08X} %s tile loop exit: tiles_generated=%u`
+- `configPerfStatesFromEDT`
+- `dequeueFrame frame %d request %d, seq %d active window %d / %d\n`
+- `IosaPrescalerControl`
+- `IosaFirmwareControlMSR26Rtk`
+- `CLA_Luma`
+- `notify_event`
+- `  Found ASE Scaling Coeff Config V3\n`
+- `Ok`
+- `Invalid histogram bin values(%u:%u): bin %u\n`
+- `Interrupt not enabled prior to start. MSR_GLBL_IRQEN = %u\n`
+- `MSRCPU FW SLEEP\n`
+- `Initialize MSR interrupt sources ..\n`
+- `Disabling polyphase v_scl_en because ASE is active with no alpha component. \n`
+- `SkipAsyncCallback`
+- `Block10V Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `histogramRequest.width=%u\n`
+- `MSR23BackwardsCompatibleFilter::updateWithCoefficients srcToDstRatioIndex %d (%s) %p\n`
+- `cannot lookup surface %d\n`
+- `IOSA Idle Power Off Timeout in us`
+- `Off`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/Shared/Utility/IOFBSAGammaLUT.cpp`
+- `Request.cpp`
+- `[IOSA][Boot ] MSRVERSION updated from %#x to %#x\n `
+- `site.IosaDPEControl`
+- `IosaFirmwareControlMSR24Rtk`
+- `MSR 23 Register Dump%s\n`
+- `dst format %d pixels align(%d %d)\n`
+- `\"[%s] \" \"Failed to initialize Power Manager\\n\" @%s:%d`
+- `commandReturn=%#x\n`
+- `site.M2ScalerSrcDestCfgControlMSR10`
+- `kPipeLocASE3x3`
+- `122222121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212`
+- `[COSITE] Dest Surface Cositing Top Left, hPos:post(0), vPos:post(0)\n`
+- `ForceDefaultFilters`
+- `[MSRCPU] [PROF] %s (unknown scope)\n`
+- `PowerManager: create\n`
+- `TopLeft`
+- `makeActiveWindows`
+- `M2ScalerScalingControl`
+- `site.IosaColorManagerMSR11`
+- `fixupApGeneratedTileDesc skip %llx %llx\n`
+- `setLockedInScaler derecated!!\n`
+- `sendAsyncResult64 failed with 0x%x\n`
+- `[IOSA][Boot ] MSR Driver Waiting for IOSurfaceRoot\n`
+- `configureBlend_gatedContext`
+- `Surface %s height %d doesn't align with %s alignment of %d\n`
+- `DestinationWidth`
+- `CMDetPrsv`
+- `HdrInputError: msbPos2 value [%d] exceeding the range[13:31]\n`
+- `Chroma Stride: %u is improperly aligned to: %u bytes, iDS: %d\n`
+- `given ratios are must be > 0\n`
+- `Invalid FDR priority: %u\n`
+- ` (ctx restore)`
+- `site.M2ScalerScalingControlMSR23`
+- `%sflipX`
+- `AppleM2ScalerCSCDriver`
+- `DitherControl`
+- `In recovery but MSR Fw CPU is still running!\n`
+- `site.TileArray`
+- `Scaler[%d]: Request %d(%p) done: active window %d of %d\n`
+- `clientClosed_gated`
+- `site.IosaPowerManagerMSR20`
+- `needed after tile gen`
+- `\"[%s] \" \"Invalid CSC Precision Location\\n\" @%s:%d`
+- `[MSRCPU] [PROF] %s (invalid format)\n`
+- `LOG_EVENT_SDR_RD_PTR_UPDATE`
+- `RuntimeThread`
+- `rotate270=%u\n`
+- `DestinationYCbCr`
+- `12111121221111111222222`
+- `redLuma pointer invalid\n`
+- `DisableTimeoutRegisterDump`
+- `initCommandPools`
+- `msr_panic_mask`
+- `1222222222222112222222212221`
+- `[SD frame_id:%08x] WDMA (l=%u, t=%u, r=%u, b=%u)\n`
+- `[%05X %08X] %03u {%08X %08X} signal [%.4s] %u%s - %d`
+- `Quadra Bayer transforms cannot contain special filters\n`
+- `Req 0x%x commandSleep failed (%d)\n`
+- `1111222`
+- `msr_custom_filter_bc_disable`
+- `    HSclChDDAStepOverride: %s\n`
+- `parse_next`
+- `debugDumpTransform`
+- `\"[%s] \" \"must called from user space!\\n\" @%s:%d`
+- `  ................\n`
+- `%sflipY`
+- `HDR API specifies coeff precision in excess of register\n`
+- `Block4H NbrBuf: Addr0=0x%08x [RdCHint:%u WrCHint:%u] Addr1=0x%08x [Size:%u] FullAddr=0x%llx\n`
+- `HCU API %s validation FAILED: elem=%u, size=%u not in [%zu, %zu]\n`
+- `Missing CSC Matrix: sourceSpace=%d, sourceRange=%d, destSpace=%d, destRange=%d, accessibility=%d, variant=%d\n`
+- `WriteOnlyModeGreenCb`
+- `msr_low_latency_shared_event`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/M2ScalerScalingASEControlMSR20.cpp`
+- `[IOSA][Boot ] Req 0x%x Waiting for MSR%d wake\n`
+- `site.IosaTunableControlMSR28`
+- `Common to B input incorrect\n`
+- `setTransformFormat`
+- `IOSurfaceAcceleratorFormatIn1PlaneYCBCR10422`
+- `[%05X %08X] %03u {%08X %08X} %s td-cache DMA transfer ERROR`
+- `pop_thread`
+- `msgbox-dashboard-num`
+- `site.M2ScalerSrcDestCfgControlMSR24`
+- `findApiParams SUCCESS: type=%s found at %p\n`
+- `mxWrapScratchSet`
+- `Buffer alignment check failed for tiled buffer\n`
+- `setIomdCacheAttribute`
+- `DMEM dump: TD ring wrap overflow %u+%u > %u, discarding\n`
+- `Context switch but no request in completion queue.\n`
+- `LOG_EVENT_FDR_PTR_UPDATE`
+- `Setting allocated custom fields buffer, %p\n`
+- `site.IosaDPEControlMSR20`
+- `A 2 common input incorrect\n`
+- `FW log ptr wrapped since last dump.  Some logs may be missing.\n`
+- `shared event values`
+- `abortThread`
+- `MSR Error Occurred = 0x%x\n`
+- `LOG_EVENT_LTM_CFG_REG_READ_COMPLETE`
+- `IosaDPEControlMSR11`
+- `site.AppleM2ScalerCSCHalMSR29`
+- `Rejecting transform because this version of hardware can hang with YCbCr input + Packed output + horizontal chroma downsampling on + any CSC or the CM on\n`
+- `site.M2ScalerCSCColorConversionControlMSR10j`
+- `RDMAFrameDimension: 0x%08x [Width: %u, Height: %u], WDMAFrameDimension: 0x%08x [Width: %u, Height: %u]\n`
+- `[MSR16] Overriding MSRVERSION with SOCVERSION (%#x)\n `
+- `ASE API V4: elem=%u, size=%u, min=%zu (hdr), max=%zu\n`
+- `handleFirmwareTimeout_gated`
+- `IOSurfaceAcceleratorCapabilitiesFP16Regamma`
+- `set_mode_flush (pending_drain_tids)`
+- `TILE_LOOP`
+- `MMRCr`
+- `[COSITE] Dest Surface Cositing Left, hPos:Post(1), vPos:Post(1)\n`
+- `ScalerLoad`
+- `IOFence is hung: Client owning=%s\n`
+- `edt`
+- `invalid agent: %d\n`
+- `Invalid histogram bin mode: %u\n`
+- `Scaler[%d] scratch irq: index=%d(%d) status=%#x, doorbell_value=%#x\n`
+- `writeBlock: %u (%#x), %#x, %u\n`
+- `[IOSA][Boot ] [MSR%d] SOC Major: %#x Minor: %#x\n`
+- `AppleM2ScalerCSCHalMSR10j`
+- `Pix Format %s not supported for tiling\n `
+- `enabled`
+- `VSclEdgeMode`
+- `WriteTd`
+- `set_entry`
+- `HSclComp2HighFreqEn`
+- `HdrInputError: mixLookupBasis value [%u] exceeding the maximum [1]\n`
+- `ModularDefaultFilter`
+- `FrameProperties: 0x%08x [WdmaBPP: [%u, %u, %u] (Luma/R, Chroma/GB, Alpha), VSclChDDAStepOverride: %s, HSclChDDAStepOverride: %s, AW_enable: %s, Rot90or270: %s, saveStats: %s]\n`
+- `%s: planeWidth: %d is smaller than requested width: %d\n`
+- `notifySharedEventAgentStateChange`
+- `failure to meet programming restriction`
+- `site.IosaRequestPipeUnit`
+- `site.ApiodmaRegStreamMSR15`
+- `Wrong 0x%x pipeConfig2. Writing rectified 0x%x to pipeConfig2 for QuadraBayer mitigation\n`
+- `MSR Register Dump\n`
+- `BorderFillX`
+- `push_thread`
+- `IOSA Controls`
+- `validateForProtectedSurface`
+- `Src ProtectionBits %llu Dst ProtectionBits %llu Src WholeBuffer %d Dst WholeBuffer %d\n`
+- `IosaColorManagerMSR7`
+- `Cannot retrieve macroblock information for plane %d with bpp %d\n`
+- `FrameDescriptor block cfg[%lu, %s]: dva: %#llx used: %lu (%#llx, %llu), count: %u dwords\n`
+- `AppleM2ScalerCSCHalMSR23::initInterrupts()!\n`
+- `Failed to initialize request for transform (%#x)!\n`
+- `[%05X %08X] %03u {%08X %08X} %s cache store miss: v_index=%u (DMEM full, need DRAM tier)`
+- `SDR pointers %lld %lld previous (%lld %lld)\n `
+- `122222222222121111111121111111111111111111221221122211222111111211122222222211111111111111111111222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `activateDART() failed: 0x%x\n`
+- `for PG`
+- `Sending remote IOP power notification: %s, agent_mask: 0x%llx\n`
+- `IosaColorManagerMSR9`
+- `AppleM2ScalerCSCHalMSR4`
+- `cmOOTFEnable`
+- `IORegFlex`
+- `[IOSA][Boot ] histograms will not use spillbuffer!\n`
+- `site.M2ScalerCSCColorConversionControlMSR15`
+- `IosaDPEControl`
+- `\"[%s] \" \"Couldn't allocate gamma LUT\\n\" @%s:%d`
+- `configurePowerState -> offset 0x%x : val 0x%x\n`
+- ` False`
+- `Property '%s' NOT found on service %p (expected 0x%llx) - matching may be incorrect!\n`
+- `\"[%s] \" \"MailBox[%d] credit return_inc check failed on wake\\n\" @%s:%d`
+- `dashboardPairWrite64`
+- `ApiodmaRegStreamMSR11`
+- `site.AppleM2ScalerCSCHalMSR8`
+- `DRAM_QUEUE`
+- `borderFill.height=%u\n`
+- `MSR 11 Register Dump%s\n`
+- `IosaColorManagerMSR4.cpp`
+- `=== FW→AP DMEM dump: FWTDRegs_t ring wrap, first chunk %u/%u words (offset=0x%x) ===\n`
+- `site.AppleM2ScalerCSCHalMSR11`
+- `kPipeLocASEGeneral`
+- `  FrameId: %u (0x%08x)\n`
+- `Legacy ASE API is not supported by this version of hardware\n`
+- `IosaColorManagerMSR16`
+- `frame 0x%llx, get_num_tiles %d x %d col 0x%llx row 0x%llx spill 0x%llx\n`
+- `offsetAdjustmentsForQuadraBayerFormats`
+- `ARGB_RedLuma`
+- `len = 0x%zx\n`
+- `\"[%s] \" \"Failed to unmarshal status descriptor: %d\\n\" @%s:%d`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/MsrApiodmaRegisterStream.cpp`
+- `[COSITE] Dest Surface Cositing Bottom, hPos:post(1), vPos:post(0)\n`
+- `initRegStream (EDT entries:%d) supported mask 0x%llx\n`
+- `site.IosaDPEControlMSR10`
+- `HdrInputError: Detail Preservation VHCoeff beyond limits\n`
+- `Left`
+- `msr_use_rtk_fw`
+- `[%d] Active window (%d, %d) %d x %d\n`
+- `IOSurfaceAcceleratorClient`
+- `  FrameSubId: 0x%08x\n`
+- `compressionType[%s]=%s\n`
+- `  Processing V4-specific HCUs...\n`
+- `X Offset of %u must be a multiple of %zu with media compression on this version of HW\n`
+- `Invalid flip/rotate settings: 0x%x`
+- `LOG_EVENT_MSR_CORE_CONTEXT`
+- `Invalid histogram pixel value: %u`
+- `Failed to initialize RecoveryHandler interrupts!\n`
+- `CMReGam`
+- `MSRCPU: Using iBoot IMEM loading\n`
+- `Memory`
+- `Failed to allocate MailBox!\n`
+- `wireAndMapBuffer`
+- `IOSurfaceAcceleratorCapabilitiesOddLumaFillOptionForSubsampledFormats`
+- `site.ApiodmaRegStreamMSR19`
+- `borderFill.blueCr=%#x\n`
+- `site.IosaWdmaPipeUnitMSR23`
+- `IosaColorManagerMSR13`
+- `LOG_EVENT_CONTEXT_SWITCH_TILE`
+- `deferring arena release during flush, queue length %u\n`
+- `site.AppleM2ScalerCSCHalMSR7`
+- `Scaler[%d] activateDART_gatedContext activate=%d\n`
+- `%s Quadra/Bayer format requesting 1-4/4-1 packing (0x%x) cannot be compressed\n`
+- `IOSurfaceAcceleratorFormatOutLumaOnlyL012`
+- `updateWithAllCoefficientsCopy failed: 0x%x\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/M2ScalerScalingControlMSR.cpp`
+- `create`
+- `failed to start perform synchronous transform %d\n`
+- `handle_ptd`
+- `msr_post_transform_dump_high`
+- `Border fill region width/height must align  to 32 for this version of HW. border fill w/h=%u/%u\n`
+- `IosaDPEControlMSR20`
+- `CMPostDeGam3x3`
+- `CMPQDeGam`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/M2ScalerScalingASEControlMSR10.cpp`
+- `1222222222221211111111211111111111111111112212211222112221111112`
+- `Capability/Extent OSString create for %s Failed\n`
+- `useNearestFilters=%u\n`
+- `FrameDescriptorRingMSR29::initWithOptions priority %d\n`
+- `Film Grain cannot be used with Luma only formats. Src Luma Only: %d, Dst Luma Only: %d \n`
+- `Compression type not supported with tiled/twiddled  format.\n`
+- `IosaReshapePipeUnit`
+- `push`
+- `M2ScalerScalingControlMSR2`
+- `Driver`
+- `pauseMsrCPU`
+- `IosaWdmaControlMSR10`
+- `site.failedClientRecord`
+- `LOG_EVENT_LTM_CONFIGURE_PIPELINE_START`
+- `IosaPowerManagerMSR27`
+- `IosaWdmaControlMSR25`
+- `site.MSR23DefaultFilter`
+- `IosaTunableControlMSR24`
+- `M2ScalerSrcDestCfgControlMSR22`
+- `ActualSize: %llu, ActualStride: %llu, ActualPlaneBaseOffset: %llu, ActualMetadataOffset: %llu\n`
+- `    Buffers: ColRd=%s ColWr=%s RowRd=%s RowWr=%s StatsRd=%s StatsWr=%s\n`
+- `IOMobileFramebuffer`
+- `\"[%s] \" \"Powered down MSR while it is running\\n\" @%s:%d`
+- `Scaler HW version: 0x%x \n`
+- `site.DitherControlMSR23`
+- `HdrInputError: spacingComp0 value [%d] exceeding the maximum [%d]\n`
+- `interruptOccurredMsrDashboard`
+- `[SYM][%s] Capping DDAInit to 2.0 \n`
+- `RDMA`
+- `kSurfaceAcceleratorCapabilitiesMediaCompInput`
+- `logFailedClient`
+- `Comm elem=%u (non-ASE): size=%u, min=%zu, max=%zu\n`
+- `failed to join thread\n`
+- `IOSurfaceAcceleratorFormatOutARGB1555`
+- `kSurfaceAcceleratorCapabilitiesAccessibility`
+- `ditherSelR`
+- `AppleM2ScalerCSCHalMSR24`
+- `[MSRCPU] Firmware boot progress: %4s(%08X)\n`
+- `M2ScalerScalingASEControlMSR20`
+- `Block11H Tile[%d]: Out[0x%08x TileCoord:%u Size:%u]\n`
+- `EdgeMirroring`
+- `0.875x`
+- `error ignored`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/FirmwareControl/IosaFirmwareControlMSR23.cpp`
+- `[%s] RESET: reset_byte_count: %lu, mapped_byte_count: %llu\n`
+- `kIOSurfaceAcceleratorReducedPrecisionFractionalOffsets is not supported by this version of hardware \n`
+- `Rotation`
+- `12122222222222222222`
+- `HdrInputError: Detail Preservation edge weight beyond limits\n`
+- `IosaTiledCompressedMemMSR8`
+- `site.IosaRegammaPipeUnit`
+- `getCustomFields returned 0\n`
+- `[SD frame_id:%08x] msr_pa_err_code_t: %u\n`
+- `SharedEventDstRef`
+- `dashWrite64`
+- `MATCH`
+- `stopDPE() broke out of do-while loop after hitting threshold. \n`
+- `[%05X %08X] %03u {%08X %08X} %s td-cache DMEM fetch: priority=%u, v_index=%u`
+- `IosaFilmGrainControlMSR16`
+- `Failed to read AV1 Attachment from IOSurface. Error: %#x\n`
+- `\t setting newDDAinit to -1.0\n`
+- `pump_frame_src / step_thread_id`
+- `site.IosaEnhancementPipeUnit`
+- `MSRCPU: IMEM verify failed: %zu/%zu words mismatched\n`
+- `AppleM2ScalerCSCHalMSR11`
+- `BorderFillRedY`
+- `kModuleDriver`
+- `DramSubmit`
+- `site.IosaPixelAveragingPipeUnitMSR6`
+- `collectHistogram_gatedContext`
+- `site.BlockDescriptorSet`
+- `Protected surface - cannot get histogram\n`
+- `postAllframeComplete`
+- `initMappers`
+- `site.AppleM2ScalerCSCHal`
+- `notify_signal_callback`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR21.cpp`
+- `Y`
+- `logFlush`
+- `AppleM2ScalerCSCDriverFilters`
+- `Interchange format with tile sizes other than 16 and 32 not supported.\n`
+- `Failed to initialize Mailbox interrupts (index: %u)!\n`
+- `DRAM_TX`
+- `Convert to rgb 2 ycc input incorrect\n`
+- `validate_src2Rgb_gatedContext`
+- `IOSurfaceAcceleratorCapabilitiesIdentityCSC`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/DisplayScalerFilter.cpp`
+- `IOSurfaceAcceleratorCapabilitiesInterchangeBaseAlignment`
+- `wdmaSubsampleMode`
+- `Read-only mode not allowed with this version of HW\n`
+- `kPipeLocASEToneMap`
+- `site.IosaWdmaControlMSR23`
+- `%s : %s tap %d and tap %d are not close in value as expected\n`
+- `MSR23 scaler[%d] transformComplete: %u, req: %d prio: %u, need_reset: %d status: %u msrIrqSts: %x\n`
+- `Req %d already exists in BlockRegStream!\n`
+- `Disable completion interrupt %d.\n`
+- `validate_3x3_block_data`
+- `HdrInputError: Tone Mapping input invalid\n`
+- `HDRInputError: Reshaping Mode[%d] is not supported\n`
+- `Bottom`
+- `IOSurfaceAcceleratorCapabilities16bitYCbCr`
+- `msr_client_transform_fallback`
+- `  controlParams: shootCtlEn=%d, sharpLUTEn=%d, lessBit=%d, deltaEBEEn=%d\n`
+- `bitsPerComponentARGB[%s]=%u\n`
+- `chrDownSampleVEN`
+- `Scaler Decompression error\n`
+- `  ..dropped\n`
+- `selectScaler_gatedContext`
+- `mpASEApiObjectProtection is null\n`
+- `AppleM2ScalerCSCHalMSR10`
+- `site.M2ScalerScalingControlMSR10`
+- `MailBoxMSR23`
+- `Metadata plane size incorrect.\n`
+- `[%05X %08X] %03u {%08X %08X} mbox rd`
+- `getPsdServiceState(%d, %d) -> 0x%x\n`
+- `\"[%s] \" \"%s req %d\\n\" @%s:%d`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/FirmwareControl/IosaFirmwareControlMSR23Rtk.cpp`
+- `Can't enqueue req %d, as req %d seq %d likely stuck.\n`
+- `Failed to initialize MSR interrupts!\n`
+- `[%05X %08X] %03u {%08X %08X} %s DRAM WRITE done`
+- `completeRequest_gatedContext: %p\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/FirmwareControl/IosaFirmwareControlMSR30Rtk.cpp`
+- `formatClassToSpace`
+- `LOG_EVENT_LTM_CONFIGURE_PIPELINE_FINISH`
+- `IOSurfaceAcceleratorCapabilitiesMaxVDownscale`
+- `HDRInputError: Reshaping Mode[%d] unimplemented\n`
+- `update`
+- `site.IosaChromaUpsamplePipeUnitMSR9`
+- `flushDARTCache_gatedContext`
+- `Failed to create HAL (%u)!\n`
+- `IOSurfaceAcceleratorCapabilitiesDirectionalScaling`
+- `[%05X %08X] %03u {%08X %08X} %s APIODMA queue overflow: thread %u hit backpressure`
+- `[%05X %08X] %03u {%08X %08X} %s fsm waiting: reason=%u`
+- `M2ScalerCSCColorConversionControl`
+- `dequeueFrame`
+- `Skipping coefficients are shifted checks\n`
+- `validateCompressionFormat`
+- `ERROR`
+- `HdrInputError: Input Offset limit hit\n`
+- `UNKNOWN`
+- `[IOSA][Boot ] MailBoxMSR26::initWithOptions( %d )\n`
+- `IOSurfaceAcceleratorFormatOut1PlaneYCBCR10422`
+- `[%05X %08X] %03u {%08X %08X} %s cache fetch ERROR: %s`
+- `Scaling ratio %s%d.%s%u not supported by hardware: Dimension=%s, Chroma/Luma=%s, hwLowerLimit=%s%d.%s%u, hwUpperLimit=%s%d.%s%u, requestSrcDim(%s)=%s%d.%s%u, requestDstDim(%s)=%s%d.%s%u, Rotation=%d\n`
+- `matched_service`
+- `Invalid size for IOSurface FilmGrain Attachment.\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaWdmaControlMSR23.cpp`
+- `\"[%s] \" \"program error\\n\" @%s:%d`
+- `configurePowerState %d\n`
+- `reclaiming PIODMA command idx=%u tag=%u transformId=%d powerRefOutstanding=%d release=%d\n`
+- `--- BlockCfg (offset 0x1c, 15 entries) ---\n`
+- `Block7H Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `kModuleScaler`
+- `BLOCK ENABLE FINAL: BlockEnable.all=0x%08X, %u blocks enabled\n`
+- `Dumping MSR23 BlockDescriptor; msr_version=%08X frame_id=%08X pri=%d time=%lldns\n`
+- `deAllocateTileArrayBuffer dva 0x%llx\n`
+- `initHalObjects`
+- `[%05X %08X] %03u {%08X %08X} %s DRAM WRITE size: %u words`
+- `[%05X %08X] %03u {%08X %08X} %s td-cache DMEM store: priority=%u, v_index=%u`
+- `zeroFill`
+- `PROGRAM ERROR: Incorrect HAL reference\n`
+- `HighPriority`
+- `generateTileDescriptor frame 0x%llx dva 0x%llx len 0x%zx md len 0x%llx\n`
+- `Wake`
+- `command tag (%s) not expected. done_irq_cnt: %u, irq_status: %#x cmd_tag %u head %u tail %u \n`
+- `    WdmaBPP: [%u, %u, %u] (Luma/R, Chroma/GB, Alpha)\n`
+- `chip-revision`
+- `configureNeighborChannel failed`
+- `IosaColorManagerMSR8.cpp`
+- `site.IosaTiledCompressedMemMSR7`
+- `IOAsynchronousScheduler.cpp`
+- `122222222222121111111121111111111111111111221221122211222111111211122222222`
+- `%srotate90`
+- `DestinationRGB`
+- `allocateFilter`
+- `site.IosaPrescalerControlMSR23`
+- `\"[%s] \" \"unexpected DeReGamma value: %u\\n\" @%s:%d`
+- `Skipping %s as it's not needed!\n`
+- `site.AppleM2ScalerCSCHalMSR24`
+- `12222222222221122222222`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaPowerManagerMSR20.cpp`
+- `Failed to initialize MCW (%d) interrupts!\n`
+- `MsrCoreLocalTiler`
+- `Clients inactive, releasing buffers\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/M2ScalerScalingASEControl.cpp`
+- `[FilterComp] pCoefficients %p Returning 0x%x for t:%d p:%d\n`
+- `Could not cast properties to OSDictionary\n`
+- `msr_use_client_buffer`
+- `Forcing unoptimized gamma validate\n`
+- `generateTileDescriptor frame id 0x%x\n`
+- `        BlockEnable: 0x%x ==> 0x%x\n`
+- `    AW_enable: %s\n`
+- `M2SCSC`
+- ` pRequest->gangedScalerIds 0x%llx\n`
+- `IosaPowerManagerMSR26`
+- `WDMA`
+- `[Recovery] Scaler Decompression Error\n`
+- `CMTM`
+- `    mixVal[%d]: v0=%d, v1=%d\n`
+- `Block12H Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `msr_ap_tile_gen`
+- `site.IosaPolyphaseScalingPipeUnitMSR23`
+- `SpillBufferMSR23`
+- `[COSITE] Dest Surface Cositing Default, hPos:post(1), vPos:post(1)\n`
+- `Failed to allocate neighbor channel req %d\n`
+- `Quadra/Bayer unfolded %s %s offset (actual %d) \n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR9.cpp`
+- `\"[%s] \" \"After wake, frame count %u != 0\\n\" @%s:%d`
+- `tileDataRegionOffsetOfPlane[%u]=%u\n`
+- `borderFill.redY=%#x\n`
+- `DivideAlphaSecond`
+- `canContextSwitch`
+- `FilmGrainEnable`
+- `Wrong 0x%x pipeConfig1. Writing rectified 0x%x to pipeConfig1 for QuadraBayer mitigation\n`
+- `resetScaler_gatedContext`
+- `[%05X %08X] %03u {%08X %08X} %s DRAM WRITE addr_lo: 0x%08X`
+- `msr_coefficient_checks`
+- `makeActiveWindows dest %d x %d (%d*%d) \n`
+- `interchangeMode[%s]=%s\n`
+- `[MSR16]: Cannot get memory descriptor - null socMd\n`
+- `kPipeLocBorderFill`
+- `121111`
+- `IosaPrescalerControlMSR8`
+- `IosaInternalPipeMSR7`
+- `[SD frame_id:%08x] ctx_sw_time=%uus, ctx_sw_count=%u\n`
+- `site.StatusDescriptorRingMSR29`
+- `setTransformCfg: Updating MSR_CTRL_PIPE_CONFIG1_OFFSET\n`
+- `[IOSA][Boot ] RegisterMap[%u]=%p, [ %s ]: virt=(%#llx,%llu), phys=(%#llx,%llu)\n`
+- `interruptOccurredMsrM3Scratch`
+- `IOSurfaceAcceleratorCapabilitiesMaxHDownscale`
+- `reshapingLUTCtrlEnable`
+- `site.IosaPrescaler3x3PipeUnitMSR9`
+- `MSR hardware-version (%u) invalid!\n`
+- `[IOSA][Boot ] msrMaxCount (override): %u\n`
+- `collectASEApiOutput_gatedContext`
+- `updateFields`
+- `\"[%s] \" \"no default action for argument %u!\" @%s:%d`
+- `site.IosaInternalPipeMSR8`
+- `Writing Hyst 0x%x to Offset %#x\n`
+- `releaseTileArraySlot slot %u dva 0x%llx\n`
+- `Failed to resume MSRCPU (%u)\n`
+- `MSR23 configureStart_gatedContext: req=%p\n`
+- `notifySharedEvent frameId %d event id %d value %d doNotify (%d)\n`
+- `\"[%s] \" \"Unexpected wait with retention.  IMEM retention: %08X\\n\" @%s:%d`
+- `DART error set mapper %d parameter failed!, ret: 0x%08x\n`
+- `AppleM2ScalerCSCHal.cpp`
+- `[%s][%s]getIndexFromSrcToDstRatio filterIndex: %d (%s)\n`
+- `HCU API %s validation PASSED: elem=%u, size=%u in [%zu, %zu]\n`
+- `%s Plane %u Size %llu is less than expected size %llu\n`
+- `rgbLumaPitchInBytes=%u bytes\n`
+- `Failed to enqueue frame descriptor!\n`
+- `user_get_estimation`
+- `IosaColorManagerMSR23`
+- `IosaFirmwareControlMSR29Rtk.cpp`
+- `site.IosaEnhancementPipeUnitMSR23`
+- `Dumping log (%d->%d)\n`
+- `Prepare failed to wire down histogram data\n`
+- `interruptOccurredMsrMcw`
+- `simulated-model`
+- `HdrInputError: Cacsc1 Mode[%u] Unsupported \n`
+- `VSclComp2HighFreqEn`
+- `AppleM2ScalerCSCHalMSR20`
+- `msr_multi_msr_ganging`
+- `dumpFilterCoefficients`
+- `PreScaler`
+- `[%05X %08X] %03u {%08X %08X} prof stopwatch reset`
+- `site.IosaRequestPipeUnitMSR23`
+- `writeBlock [ID: %u] offset %x exceeds range length %#llx\n`
+- `inconsistent sizes given: given(expected): vTaps: %d(%d), vPhases: %d(%d), hTaps: %d(%d), hPhases: %d(%d)\n`
+- `dashWrite`
+- `kPipeLocRegamma`
+- `[%05X %08X] %03u {%08X %08X} %s axis tile size: %u`
+- `M2ScalerScalingControlMSR15`
+- `Pitch must be tile-width aligned for agx tiled surfaces\n`
+- `IOSurfaceAcceleratorFormatInLumaOnlyL012`
+- `IOSurfaceAcceleratorFormatIn1PlanePackedYonly12`
+- `[%05X %08X] %03u {%08X %08X} ptd timesync`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR28.cpp`
+- `Error in %s Plane %u Compressed Tile Buffer Validation\n`
+- `site.M2ScalerCSCColorConversionControlMSR4`
+- `releaseTileArraySlots`
+- `%srotate180`
+- `compressed tile format in %s not supported for %s\n`
+- `pump_frame_src / next_frame`
+- `horizontalPixelOffsetWithinTileArrayOfPlane[%u]=%u\n`
+- `DeGammaForLinearScale`
+- `=== End Sharp LUT V4 Config ===\n`
+- `site.IosaTunableControlMSR29`
+- `\"[%s] \" \"Unexpected Matrix CSC index: sourceSpace=%d, sourceRange=%d, \" \"destSpace=%d, destRange=%d, accessibility=%d, Variant==%d\\n\" @%s:%d`
+- `Can't find a slot in client buffer!\n`
+- `1212212122121221212212122121221212212122121221212212122121221212212000002000000012000000`
+- `[%05X %08X] %03u {%08X %08X} %s td-cache WRITE complete`
+- `findCustomFilterCoefficientsAtNeighboringBin`
+- `Buffer Pitch alignment check failed for tiled source buffer \n`
+- `tagTransformRegisters`
+- `IOSurfaceAcceleratorCapabilitiesMaxAseSourceHeight`
+- `CMPostCLUT3x3`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/M2ScalerSrcDestCfgControlMSR22.cpp`
+- `deallocateNeighborChannel`
+- `bid [%d], offset 0x%x, value 0x%x, mask 0x%x\n`
+- `Pixel averaging not allowed with VRA Scaling\n`
+- `IosaTunableControlMSR29`
+- `kPipeLocStats`
+- `Failed to collect log activity!\n`
+- `site.M2ScalerCSCColorConversionControl`
+- `site.IosaColorManagerMSR4`
+- `user_get_histogram`
+- `msr_direct_dart_power`
+- `Processed %lu frames\n`
+- `IosaInternalPipeMSR`
+- `IOSurfaceAcceleratorFormatOut2PlanesPacked42010`
+- `[%05X %08X] %03u {%08X %08X} str: %.8s`
+- `mapAPIParams`
+- `command %u sequence list spans two requests (%p != %p)\n`
+- `12112`
+- `    ColBuf Width: [A=%u, C=%u, Y=%u]\n`
+- `site.DitherControlMSR7`
+- `IosaPowerManagerMSR.cpp`
+- `HCU API entry %s not found\n`
+- `M2ScalerSrcDestCfgControlMSR4`
+- `CommandPool: SID[0]: %p, SID[1]: %p\n`
+- `Cannot map PIODMASAVE because MSR subsystem base addr is invalid \n`
+- `\"[%s] \" \"unknown value for colorRange: %d\\n\" @%s:%d`
+- `LOG_EVENT_SDR_COMMIT_SD`
+- `site.IosaInternalPipeMSR6`
+- `\"[%s] \" \"Context Switch Error %#x\\n\" @%s:%d`
+- `failed to init kernel thread\n`
+- `memory descriptor prepare failed with 0x%x\n`
+- `Failed to allocate IOBufferMemoryDescriptor size %zu\n`
+- `%08x `
+- `AppleM2ScalerCSCDriver::notify_event() req %d surface %d event %d value: %lld (%lld)\n`
+- `setDither_gatedContext`
+- `pollForWritesAndCompleteFrames`
+- `HSclComp2DeringingEn`
+- `[MSRCPU] Waiting for Driver Init Ack ...\n`
+- `LOG_EVENT_GOING_TO_PG`
+- `%s deprecated\n`
+- `kSurfaceAcceleratorCapabilitiesHistogramValues`
+- `BLOCK[%zu %s]: BlockEnable bit=%zu, BlockAddrSize[%zu], DVA=0x%llx, Size=%u dwords\n`
+- `IOSurfaceAcceleratorCapabilitiesMinDestWidth`
+- `resetHousekeeping_gatedContext`
+- `site.IosaDPEControlMSR11`
+- `IOSurfaceAcceleratorFormatIn2Planes42210`
+- `numMacroblocksWide: %llu, numMacroblocksTall: %llu `
+- `DefaultChromaDownsample`
+- `DitherControlMSR7`
+- `AppleM2ScalerCSCHal`
+- `\"[%s] \" \"[MSRCPU] Invalid FDR size: %zu\" @%s:%d`
+- `\"[%s] \" \"Same request can not be enqueued twice %p\\n\" @%s:%d`
+- `getHDRStats_gatedContext`
+- `[%05X %08X] %03u {%08X %08X} %s min tile size: %u`
+- `none`
+- `IosaFilmGrainControl`
+- `Promote to default NC buffer! %zu, %zu -> %zu,%zu\n`
+- `Publishing Custom VScaler Caps : Taps: %u Phases: %u\n`
+- `Root`
+- `Block14V Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `RegisterMap[%u]=%p, virt=(%#llx,%llu), phys=(%#llx,%llu)\n`
+- `invalid`
+- `above the maximum polyphase scaling ratio after ASE`
+- `IosaDegammaPipeUnit`
+- `ASEEnh`
+- `Luma Stride: %u is improperly aligned to: %u bytes\n`
+- `msr_log_verbosity`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/M2ScalerSrcDestCfgControlMSR.cpp`
+- `Firmware`
+- `HdrInputError: msbPos0 value [%d] exceeding the range[13:31] \n`
+- `site.IosaFirmwareControlMSR28Rtk`
+- `invoke null txs`
+- `Linear Quadra Bayer formats cannot be folded\n`
+- `site.IosaFilmGrainControlMSR23`
+- `HdrInputError: Tone Mapping Mode[%u] Unsupported \n`
+- `RDMA_BLOCK`
+- `LOG_EVENT_LTM_CREATE_TILE_FINISH`
+- `[MSR21]: SoC Version Register value: %#x\n`
+- `[SD frame_id:%08x] MSR CORE needs reset\n`
+- `notifySharedEvent`
+- `\"[%s] \" \"Missing CSC Matrix: sourceSpace=%d, sourceRange=%d, \" \"destSpace=%d, destRange=%d, accessibility=%d, variant=%d\\n\" @%s:%d`
+- `[SYM]Got Symmetric Scaling Option \n`
+- `[%s][%s]Forcing Default Filter Bin: %d \n`
+- `clearBlockDescriptorSet`
+- `NEEDED`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaRdmaControlMSR10.cpp`
+- `user_set_client_property`
+- `IOSurfaceAcceleratorCapabilitiesRotation`
+- `Packed YCbCr dest format (%s) cannot be <= 4x high for this version of scaler\n`
+- `Packed YCbCr format (%s) cannot be tiled\n`
+- `BorderFillHeight`
+- `generateTileDescriptor`
+- `cmPostCLUT3x3Enable`
+- `\"[%s] \" \"unknown value for formatClass: %d\\n\" @%s:%d`
+- `createArgumentEntry`
+- `\"[%s] \" \"MSR INTR2AXI is not idle, can't do sw reset!\\n\" @%s:%d`
+- `kIOSurfaceAddressFormatLinear`
+- `checkDevicePowerStateChange_gatedContext`
+- `configureSizes_gatedContext`
+- `1111112220000000112200001111212211220000111121221122000011112122112200001111212211220000111121221122000011112122112200001111212211220000111121222200000000000000`
+- `kPipeLocFilmGrain`
+- `IOSurfaceAcceleratorHDRApiVersion`
+- `PaLibParseFd`
+- `cannot allocate memory descriptor\n`
+- `IOSurfaceAcceleratorFormatOutLumaOnlyL008`
+- `registerRuntimeProperties`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaColorManagerMSR8.cpp`
+- `checkRdma`
+- `Failed to init interrupts!\n`
+- `not enough surfaces %d\n`
+- `Shared Event Dictionary not available in KERNEL`
+- `site.BlockDescriptorRegStreamMSR23`
+- `YCbCr`
+- `msr_idlepoweroff_timeout_us`
+- `FrameDescriptorRing`
+- `PowerManager: init\n`
+- `cmDeGammaEnable`
+- `Write `
+- `registerNotificationPort`
+- `\t setting newDDAinit to 1.99\n`
+- `msr_disable_firmware_recovery`
+- `[MSRCPU] Waiting for Firmware Alive Ack ...\n`
+- `mboxReceiveMessage`
+- `SpillBuffer: DVA: %#llx\n`
+- `[MSR16] SOC Major: %#x Minor: %#x\n`
+- `PROGRAM ERROR: cscMatrixLocation=%u\n`
+- `revertCfgFP16RangeAdjustEnable`
+- `md (%p) wiredown failed (%#x)!\n`
+- `fdr_2_rd_ptr`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/StatusDescriptorRing.cpp`
+- `IosaPixelAveragingPipeUnitMSR6`
+- `MSR23DefaultFilter allocation for filter type: %d failed.`
+- `cmFixedPQDeGammaEnable`
+- `HAL`
+- `HdrInputError: Detail Preservation Mode[%d] Undefined yet\n`
+- `msr_pm`
+- `Doing FFC\n`
+- `Scaler [%d]: Flushing in-flight requests after %d stalls during power-down\n`
+- `msr_rack_panic_debug`
+- `tileHeaderRegionOffsetOfPlane[%u]=%u\n`
+- `Invalid Compression Footprint: %d\n`
+- `site.FrameDescriptorRing`
+- `HdrInputError: Cacsc2 Mode Unsupported (%u)\n`
+- `dashboardIrqMaskSet pair %d offset 0x%x mask 0x%x\n`
+- `  Delta Thresholds:\n`
+- `BLOCK[%zu %s] INVALID: fs_valid=0 (frame state not configured!)\n`
+- `scaler-start`
+- `MSRCPU: IMEM verified against embedded image (%zu words)\n`
+- `shared event wait`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/RingBuffer.cpp`
+- `M2ScalerScalingASEControlMSR29`
+- `site.IosaRdmaControlMSR15`
+- `checkAberrantSizesForDimensionAndBuffer`
+- `Program error; no filters\n`
+- `Scaler [%d]: Firmware stall #%d detected for request %d prio %d!\n`
+- `0.625x`
+- `compressionTypeOfPlane[%u]=%u\n`
+- `    mixSlope[%d]: s0=%d, s1=%d\n`
+- `site.IosaRdmaControlMSR27`
+- `DPE`
+- `1212222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `Pitch must be power of two aligned for twiddle surfaces \n `
+- `EnableStickyRegistersDump`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHal.cpp`
+- `msr_dump_on_timeout`
+- `site.IosaRdmaControlMSR25`
+- `redLuma != greenCb for bin %d\n`
+- `IosaInternalPipeMSR10`
+- `Addressing format not supported.\n`
+- `Dashboard `
+- `tileHeightOfPlane[%u]=%u\n`
+- `Failed to initialize StatusDescriptorRing\n`
+- `site.BlockDescriptorRegStream`
+- `Texture Dimensions not supported for %s format.\n `
+- `AppleM2ScalerCSCHalMSR13`
+- `--- Summary ---\n`
+- `req %d need req %d\n`
+- ` deallocateNeighborChannel nd=%p\n`
+- `invoke (local addr / words)`
+- `addressingFormat[%s]=%s\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/MSR23DefaultFilter.cpp`
+- `dartErrorHandlerCallback`
+- `M2ScalerScalingASEControlMSR29.cpp`
+- `No RemoteIOP services configured\n`
+- `IosaChromaDownsamplePipeUnitMSR23`
+- `given size (%llu) doesn't match TransformEstimationData's (%lu)\n`
+- `HDREnable`
+- `ASENoiseEst`
+- `StatusDescriptorRing`
+- `Compression with Linear format is not supported.\n`
+- `testCallback`
+- `setLockedInScaler`
+- `M2ScalerScalingControlMSR7.cpp`
+- `%s\n`
+- `IosaDPEControlMSR10j`
+- `SharedEventAgent state change notification sent: %s (property: %s)\n`
+- `commitChromaUpsampling_gatedContext`
+- `ASEENHANCE_BLOCK`
+- `00`
+- `completeRequest_gatedContext`
+- `MSR Reset - activateDART(true) failed: 0x%x\n`
+- `IOSurfaceAcceleratorCapabilitiesDestXYOffsetsWithTiling`
+- `[%05X %08X] %03u {%08X %08X} %s td-cache DRAM WRITE: %s`
+- `cmPostCm3x3Enable`
+- `Invalid dither control setting: 0x%x`
+- `failed pitch %lu width: %lu padding: %lu\n`
+- `configureOddSizeLumaOption_gated %d\n`
+- `[IOSA][Boot ] Req 0x%x Resumption on MSR%d\n`
+- `  Bilateral Positive Curves:\n`
+- `  BlockCfg[%d]: 0x%08x\n`
+- `configureStart_gatedContext`
+- `WA: fake the dashboard interrupt!\n`
+- `[IOSA] dart-scaler%d error!! type %s, %s SID %u %s DVA %llx Msr IntrSts %x\n`
+- `site.IosaInternalPipeMSR10`
+- `QuadraBayer: Adjusting requestDimensionProper to be sizeDS_VH \n`
+- `Interchange Tile pitch %u < minimum of %u\n`
+- `chromatic adaptation input incorrect\n`
+- `validate_a2Common_gatedContext`
+- `M2ScalerSrcDestCfgControlMSR8`
+- `121222221222`
+- `printRawFrameDescriptor`
+- `VraScaling`
+- `TilerConfigAlloc backpressure`
+- `MailBoxMSR26`
+- `121222222222222222222222222222222222222222222`
+- `Outbound buffer size %llu cannot hold size: %lu\n`
+- `site.IosaRdmaControlMSR11`
+- `Unhandled mailbox interrupt (index %d)!\n`
+- `TILE_SPATIAL`
+- `folded`
+- `logEBEConfigV4`
+- `setParameter`
+- `validateWdmaCfg`
+- `BorderFillGreenCb`
+- `\"Missing 'delete' overload\" @%s:%d`
+- `MaxActiveWindowSize`
+- `Dart Error req %d, Spill buffer.\n`
+- `[%05X %08X] %03u {%08X %08X} %s data [%.4s]`
+- `HdrInputError: Degamma Mode[%d] Unsupported \n`
+- `SleepAcked`
+- `IosaTunableControlMSR23`
+- `getCSCMatrix_gatedContext`
+- `\"[%s] \" \"DV Firmware not supported for MSR26\\n\" @%s:%d`
+- `pop_map tag in flight`
+- `validateSpecialFilters`
+- `IosaDirectionalScalingPipeUnitMSR23`
+- `previous transform failed with 0x%x\n`
+- `[IOSA][Boot ] %s : Soc chip-revision: 0x%x\n`
+- `ASEScaler `
+- `  RDMAFrameDimension: 0x%08x\n`
+- `LOG_EVENT_MAIN_FSM_TRANSITION`
+- `onBufferMapped`
+- `IosaEnhancementPipeUnitMSR9`
+- `=====================================================================\n`
+- `IosaEnhancementPipeUnit`
+- `%.4s`
+- `WriteOnlyModeRedLuma`
+- `mxWrapScratchGet`
+- `IOSurfaceAcceleratorCapabilitiesTiling`
+- `IOSurfaceAcceleratorFormatInLumaOnlyL016`
+- `generateTileDescriptor frame id 0x%x pipe %p\n`
+- `msr_hal_disable_mask`
+- `Block7H NbrBuf: Addr0=0x%08x [RdCHint:%u WrCHint:%u] Addr1=0x%08x [Size:%u] FullAddr=0x%llx\n`
+- `Upscale/Identity`
+- `Failed to add interrupt event source to work loop!\n`
+- `CMPostTM3x3`
+- `site.M2ScalerScalingControlMSR2`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaPowerManagerMSR27.cpp`
+- `update: %#x, umask: %#x, value: %#x (eff: %#x)\n`
+- `buf:allocSize=%llu\n`
+- `MSR23ChromaDownsampleFilter`
+- `MSR 8 Register Dump%s\n`
+- `kIOSurfaceCompressionTypeInterchange`
+- `[%05X %08X] %03u {%08X %08X} %s dma address: 0x%08X%08X`
+- `[%05X %08X] %03u {%08X %08X} ap ptd write %s`
+- `121111222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `configurePowerState`
+- `Compression type not supported with Media Compressed format.\n`
+- `processing frame %x - tiles %d x %d\n`
+- `HdrInputError: Output Minimum Clip hit output clip value limits\n`
+- `[%05X %08X] %03u {%08X %08X} tdcache config: addr=0x%08X%08X`
+- `directionalScalingDimCheck`
+- `After transform...\n`
+- `kInterchangeUncompressed`
+- `cancel_done interrupt!\n`
+- `histogramRequest.height=%u\n`
+- `handleContextSwitchInterruptStatus`
+- `writeBlock`
+- `[IOSA][Boot ] Failed to allocate failed HAL lock %d\n`
+- `MSR Transform Error=0x%x\n`
+- `RGB`
+- `IOSurfaceID: %d  waitCompleted()  event: %p  id: %d  wait value: %lld (completed %lld) signal value: %lld done: %s\n`
+- `schedulingPriority (%u) out of range [0, %u)\n`
+- `fdrGetReadPointer`
+- `interruptOccurredPIODMA`
+- `[IOSA][Boot ] probe: result=%#x, instance=%p\n`
+- `%s: X offset of %u is greater than maximum of %u for this hardware)`
+- `[%05X %08X] %03u {%08X %08X} %s DRAM READ priority: %u`
+- `msr_log_module_mask`
+- ` selectScaler %d\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/M2ScalerCSCColorConversionControl.cpp`
+- `%0zx: %s\n`
+- `%s Failed to map shared event %d md=%p!\n`
+- `site.IosaPipe`
+- `enableDeviceClock(%d) failed: 0x%x\n`
+- `Unexpected: command tag (%s) is zero\n`
+- `logFrameErrorStatus`
+- `SourceRGB`
+- `FDR latch enabled. Need to decrement power ref count. \n`
+- `M2ScalerSrcDestCfgControlMSR10`
+- `k2k_get_histogram should have returned 0x%x but returned 0x%x instead\n`
+- `start`
+- `registerErrorHandler`
+- `site.IosaPowerManagerMSR26`
+- `inbox not empty!\n`
+- `Failed to generate Tile Descriptors! req %d\n`
+- `alphaPitchInBytes=%u bytes\n`
+- `SourceHeight`
+- `cannot create a lock\n`
+- `Block3V Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `[IOSA][Boot ] Name=%s Lock=%p id=%u max_msrs=%u msr_mask=%#x scaler_count=%d\n`
+- `MSR 15 Register Dump%s\n`
+- `site.IosaColorManagerMSR16`
+- `[%*s:%-*lu]`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IOSurfaceAcceleratorClient.cpp`
+- `verticalPixelOffsetWithinTileArrayOfPlane[%u]=%u\n`
+- `clientsData.sourceWidth=%d.%06u(0x%llx)\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/M2ScalerSrcDestCfgControlMSR10.cpp`
+- `12111121221111111222`
+- `Rounding source dimension (%s) to account for internal rounding\n`
+- `kSurfaceAcceleratorCapabilitiesHistogram`
+- `IosaInternalPipeMSR15`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR7.cpp`
+- `IOSurfaceAcceleratorLimitationXYOffsetsWithWidthHeight`
+- `%s Plane Start Address and Metadata Address are the same.\n`
+- `    saveStats: %s\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/MsrBlockDescriptorRegisterStreamMSR23.cpp`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR16.cpp`
+- `IosaInternalPipeMSR6`
+- `1211111222222222212221222122212221222122212221222122212221222122212221222122212221222122212221222122212221222122`
+- `allocateBlockDescriptors`
+- `AppleM2ScalerCSCHalControl`
+- `kPipeLocDirectionalScaling`
+- `Mapping md (%p) to DART failed (%#x)!\n`
+- `M2ScalerSrcDestCfgControlMSR20`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IOAsynchronousScheduler.cpp`
+- `LOG_EVENT_ERR_UNEXPECTED_DASHBOARD_WRITE`
+- `AGX Tile compressed surface does not have compression info struct\n`
+- `Failed to pause MSRCPU (%u)\n`
+- `site.AppleM2ScalerCSCHalMSR25`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR15.cpp`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/DPEControl/IosaDPEControlMSR21.cpp`
+- `HDR API requested but HDR not enabled \n`
+- `ASEEnhance `
+- `initWithDriver`
+- `%s %s, src to dst ratio index=%d%s:      %s\n`
+- `enableDevicePowerProxy: newState %d powerClockIndex %d ltr %d\n`
+- `1211111`
+- `[COSITE] Using Default CHDWN Coeffs v: %d, h:%d\n`
+- `[MSRCPU] BOOT entry count: %u\n`
+- `M2ScalerScalingControlMSR6`
+- `This version of hardware does not support border fill\n`
+- `HdrInputError: lumaAvgOffset value [%d] exceeding the range [-65535:65535]\n`
+- `[%05X %08X] %03u {%08X %08X} %s td-cache fetch checksum: 0x%08X`
+- `wrong index given: iTap==%d vs %d taps and iPhase==%d vs %d phases!\n`
+- `kPipeLocConvert`
+- `This HW doesn't support display filters \n`
+- `HdrInputError: lumaShiftBits value [%u] exceeding the maximum [%u]\n`
+- `IosaTunableControlMSR28`
+- `req %d has pre-failed :%x.\n`
+- `site.AppleM2ScalerCSCHalMSR21`
+- `Dart      `
+- `IOSurfaceAcceleratorFormatInARGB8101010`
+- `PROGRAM ERROR: Invalid address format: %u\n`
+- `Scaler AXI error\n`
+- `site.AppleM2ScalerCSCHalMSR2`
+- `profLogFlush_gatedContext`
+- `fdr_4_rd_ptr`
+- `Could not get timer event source %u for HAL instance %u\n`
+- `fence create failed\n`
+- `site.MailBoxMSR23`
+- `frame 0x%x req %d seq %d queued seq %d\n`
+- `PixelCapturePostSclY`
+- `DPG must be disabled before reg programming\n`
+- `Dumping profiling (%04X->%04X)\n`
+- `[%s][%s:%zu, %s] `
+- `commandRingAdvanceTail but ring already full`
+- `Starting...\n`
+- `11122222222222222222222222222222222211`
+- `site.AppleM2ScalerCSCHalMSR16`
+- `aseEnhanceANEEnable`
+- `normal`
+- `11111111212`
+- `chromaBytesPerPixel=%u\n`
+- `  Directional Weighting Coefficients [%d entries × 4]:\n`
+- `destStatsCtrlSTEN`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCDriver.cpp`
+- `site.M2ScalerScalingControlMSR7`
+- `No property matching expected for this service %p (class-only matching)\n`
+- `HdrInputError: CommonToB Mode[%d] Unsupported \n`
+- `IosaPrescaler3x3PipeUnitMSR9`
+- `Dump FrameDescriptor block [%lu, %s]: dva: %#llx used: %lu (%#llx, %llu), count: %u dwords\n`
+- `configurePixelCapture_gated`
+- `ON`
+- `Metadata plane needs to be 128 byte aligned\n`
+- ` frame 0x%x : %d x %d : Col %zu, Row %zu ( %zu, %zu)\n`
+- `commitFilters_gatedContext`
+- `kIOSurfaceCompressionTypeAGX`
+- `NearestFilter`
+- `resetPointers`
+- `[%s] Setting Filter Adaptation Type to Symmetric Adaptation \n`
+- `ASESCALER_BLOCK`
+- `0000000`
+- `Using MSR23 super %s\n`
+- `Failed to initialize Dart Flush interrupts!\n`
+- `IOSurfaceAcceleratorFormatIn1PlaneYonly8`
+- `heightInTilesOfPlane[%u]=%u tiles\n`
+- `site.IosaDirectionalScalingPipeUnitMSR23`
+- `IosaRemoteIOPPowerNotificationHandler`
+- `site.IosaPowerManagerMSR23`
+- `kModuleFilter`
+- `Main`
+- `IosaPrescalerControlMSR9`
+- `site.AppleM2ScalerCSCHalMSR`
+- `[%s][Chroma] bin mismatch; %s custom filter has ratio match, using %s coefficients\n`
+- `Block3V NbrCfg: 0x%08x [BufRd0:%u BufWr0:%u BufRd1:%u BufWr1:%u]\n`
+- `MsrCoreLocalTilerMainLoop`
+- `DivideAlphaFirst`
+- `site.IosaInternalPipe`
+- `IosaChromaDownsamplePipeUnit`
+- `enableDeviceClockProxy -> %s clockIndex %d\n`
+- `BLOCK[%zu %s] INVALID: used=%zu exceeds range.length=%llu (buffer overflow!)\n`
+- `calculateColNCSize`
+- `aseEnhanceEBEEnable`
+- `\"[%s] \" \"[Recovery] Scaler Decompression Error\\n\" @%s:%d`
+- ` Memory Descriptor invalid. \n`
+- `IOSurfaceAcceleratorCapabilitiesInterchangeSubblockSize`
+- `[%05X %08X] %03u {%08X %08X} %.4s %s`
+- `SharedEvent id: %d  wait low latency listener %d : %d\n`
+- `dimensionAdjustmentsWithExtendedPixels`
+- `IosaColorManagerMSR2`
+- `[%05X %08X] %03u {%08X %08X} %s DRAM WRITE v_index: %u`
+- `CONVERT_BLOCK`
+- `scaler[%d] copyGangedFrame request %d (%d - %d) \n`
+- `Read `
+- `programNeighborChannel`
+- `Failed to get md for register index: %u\n`
+- `[IOSA][ACTV] log activity queue is null\n`
+- `Enable completion interrupt %d.\n`
+- `msr_power_gating_mode`
+- `msr_piodma_options`
+- `enableDeviceClock() failed: 0x%x\n`
+- `divideOutAlphaEnable`
+- `kPipeLocPremultipliedAlphaMultiply`
+- `HdrInputError: Src2RGB Mode[%d] Unsupported\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaTiledCompressedMemMSR8.cpp`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR.cpp`
+- `Sent remote IOP power notification: %s, doorbell_mask: 0x%x\n`
+- `msr_client_inactivity_timeout`
+- `logPowerStateTrackerEntries`
+- `mapper [%d]: WiredMemSize before DARTFlush = %llu\n`
+- `msr_multi_frames_proc`
+- `site.IosaAxi2AfControl`
+- `%s \n`
+- `EnableCompletionRegistersDump`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/FrameDescriptorRing.cpp`
+- `Done generating tiles for frame id 0x%x\n`
+- `HAL request to process transforms more than completion queue count (%u > %u)!\n`
+- `WARN`
+- `\"[%s] \" \"wrong value passed %d\" @%s:%d`
+- `kSurfaceAcceleratorCapabilitiesGpuCompOutput`
+- `Failed to initialize RegStream!\n`
+- `ASEChEnh`
+- `DitherControlMSR8`
+- `-`
+- `[MSRCPU] Unexpected quiesce ack msg (%#x)!\n`
+- `validateXYOffsets`
+- `%d is not enough surfaces for %d threads and %d loops\n`
+- `kIOSurfaceCompressionTypeHTPC`
+- `pBuffer=%p\n`
+- `    biNegVal[%d]: value0=%d, value1=%d\n`
+- `LockInScaler`
+- `HighPriority (kIOSurfaceAcceleratorHighPriorityCString) deprecated!\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/ModularDefaultFilter.cpp`
+- `[%05X %08X] %03u {%08X %08X} sdr frame sink %s`
+- `Failed to create the ktrace callback!\n`
+- `site.M2ScalerTrasformStat`
+- `HistogramOffsetX`
+- `transform (%dx%d)->(%dx%d): A dimension has src to dst ratio %s%d.%s%u (bin %d) for %s %s has set a custom filter flag without custom coefficients; falling back to default filter for this axis\n`
+- `site.DitherControlMSR4`
+- `site.IosaFirmwareControlMSR23Dv`
+- `121221212212122121221212212122121221212212122121221212212122121221200000200000001222222222222000112112112112112112112112112112112112112112112112220000002000000011222220`
+- `Unhandled mailbox msg (cmd: %u)\n`
+- `[%05X %08X] %03u {%08X %08X} %s DRAM READ post-checksum: 0x%08X`
+- `IOSA Disable PG in interrupt filter`
+- `\"[%s] \" \"System error: Mismatched data size\\n\" @%s:%d`
+- `LOG_EVENT_DASHBOARD_IRQ`
+- `IOSurfaceAcceleratorClient.cpp`
+- `interruptOccurredMsrApMbox index %d eventSource %p\n`
+- `handleServiceMatching`
+- `90°`
+- `site.DisplayScalerFilter`
+- ` SpillBuffer23::updateFields \n`
+- `Unknown Config Name`
+- `LOG_EVENT_LTM_TILE_DONE`
+- `site.MailBoxMSR26`
+- `[%05X %08X] %03u {%08X %08X} tile %s: f=%08X: tile=[%u,%u]%s%s%s (tdr=%u)`
+- `422 1-plane dest format (%s) not supported with histogram\n`
+- `configureCurvatureReGammaLUT_gatedContext`
+- `--- TileHeader (offset 0x00, 8 words) ---\n`
+- `kPipeLocChromaDownsample`
+- `Parse step`
+- `initInterrupts`
+- `handleClientInactivityTimeout_gated`
+- `cmConfigCtrlEnable`
+- `Overlapping rectangles with same src/dest surface: sw=%u, sh=%u, sx=%u, sy=%u, dw=%u, dh=%u, dx=%u, dy=%u\n`
+- `IosaWdmaControl`
+- `executeSharedEventSignal`
+- `VSclMode`
+- `sendRemoteIOPPowerNotification`
+- `[IOSA][Boot ] DONE Waiting for IOSurfaceRoot\n`
+- `site.IosaDPEControlMSR16`
+- `getFilterCounts`
+- `DEST_BLOCK`
+- `msr_msb_replication_war_disable`
+- `V1/V2`
+- `validateHistogram`
+- `Unfolded Surface %s (%s) cannot be compressed\n`
+- `[%s][%s]bin %d phase 16 gain %d != %d (2*%d + COEFFX %#x), err %+d\n`
+- `msr_disable_simd_opt`
+- `notify_event_callback`
+- `IosaPipeControl`
+- `site.M2ScalerSrcDestCfgControlMSR2`
+- `WDMA_BLOCK`
+- `LOG_EVENT_INTERNAL_IRQ`
+- `[0x%08llx]`
+- `ActiveWindow partiton %dx%d (src %dx%d dst %dx%d rot %d): Dest AW dimension %dx%d\n`
+- `ScalerEndTime`
+- `    mixThresh[%d]: t0=%d, t1=%d, t2=%d, t3=%d\n`
+- `site.M2ScalerCSCColorConversionControlMSR10`
+- `IOFBSAGammaLUT.h`
+- `printPixelCapture_gated`
+- `kIOSurfaceAddressFormatReference`
+- `setActive`
+- `validate_convertToGamma_gatedContext`
+- `121111222121`
+- `Failed to allocate fWriteFlowControlLock\n`
+- `Perf threshold EDT data insonsistency\n`
+- `mis-match in protection bits between src & dst!\n`
+- `Registers not stable for dump\n`
+- `cmValidation`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaColorManagerMSR23.cpp`
+- `wakeSequence_gated`
+- `done`
+- `HTPCPredictionSelectorOfPlane[%u]=%u\n`
+- `DitherControlMSR4`
+- `Using MSR23 %s\n`
+- `site.AppleM2ScalerCSCHalMSR9`
+- `PROGRAM ERROR: sourceSpace=%d, sourceRange=%d, destSpace=CSCData_Space_RGB, destRange=CSCData_Range_Full, accessibility=CSCData_Accessibility_Identity, Variant=CSCData_Variant_Normal\n`
+- `M2ScalerScalingControlMSR2.cpp`
+- `fdrStoreWritePointer`
+- `CLA_Unknown`
+- `IOSurfaceAcceleratorCapabilitiesMaxDestWidth`
+- `idle_power_off_us`
+- `[IOSA][Boot ] scalerId: %u disabled (msr_max=%u)\n`
+- `Filter initialized (%p: ratios:%u vtaps:%u, htaps:%u, vphases:%u, hphases:%u)\n`
+- `arenaReturnPage`
+- `IOSurfaceAcceleratorFilterCoefficientsPrePointBits`
+- `PolyScaler`
+- `IOSurfaceAcceleratorFormatIn2PlanesPacked42210`
+- `%s: planeHeight: %d is smaller than requested height: %d\n`
+- `CtxSwitchTaskId %d LastTaskId %d\n`
+- `ASEScaler`
+- `Interchange format with tile sizes other than large are not supported for luma plane.\n`
+- `Failed to allocate md for Block.\n`
+- `resizeNeighborChannel`
+- `pipeCheckScalingIssues`
+- `AppleM2ScalerCSCHalMSR27`
+- `ITUVariantCSCEnable`
+- `pixelAveragingEnable=%u\n`
+- `LOG_EVENT_FDR_CFG_REG_ADDR_HEX`
+- `validateInterchangeTileSpan`
+- `[IOSA][Boot ] Found scaler version: %#x\n`
+- `IOSurfaceAcceleratorCapabilitiesInterchangeCompression`
+- `0.375x`
+- `kPipeLocPrescaler3x3`
+- `SdSubmit`
+- `MMR`
+- `dimensionAdjustmentsForInternalRounding`
+- `\"[%s] \" \"DV Firmware not supported for MSR28\\n\" @%s:%d`
+- `Could not set md for DMA command (%#x)\n`
+- `group [%d], offset 0x%x, value 0x%x, mask 0x%x\n`
+- `122222121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212212122121221212`
+- `LOG_EVENT_AP_INIT_FDR_ADDR_HEX`
+- `Block4H NbrCfg: 0x%08x [BufRd0:%u BufWr0:%u BufRd1:%u BufWr1:%u]\n`
+- `Initialize MCW interrupt sources ..\n`
+- `kIOSurfaceAddressFormatTwiddled`
+- `msr_symmetric_scaling_debug`
+- `HCU API bad header format: count=%u, totalSize=%u, bufLen=%zu\n`
+- `IOSurfaceAcceleratorCapabilitiesMinSourceHeight`
+- `TD_STATS`
+- `isTiled=%u\n`
+- `[IOSA][Boot ] Req 0x%x Waking on MSR%d\n`
+- `MMR_BLOCK`
+- `kModuleDefault`
+- `[ID: %u] %#x: %#x (& %#x | %#x) -> %#x \n`
+- `site.ShadowMapperCacheEntry`
+- `IOSurfaceAcceleratorCapabilitiesASENoiseEnhancePolyMinHRatio`
+- `    ... (remaining %d entries omitted, enable TRACE to see all)\n`
+- `Cannot allocate memory!\n`
+- `enablePsdService(%d, %d, %u) -> 0x%x\n`
+- `Active Window: Cord (%u, %u) / Dimension (%u x %u)\n`
+- `Scaler[%d] stopDPE() done\n`
+- `\t curr_val = 0x%llx md=%p\n`
+- `%s: NULL surface passed\n`
+- `numberOfPlanes=%u\n`
+- `addPacketSequence for req %d\n`
+- `completeRequest_gatedContext: %p done\n`
+- `site.IosaPipeControl`
+- `MISMATCH`
+- `MacroblockWidth: %llu, MacroblockHeight: %llu\n`
+- `NoPowerEarlyBail`
+- `msrCPU IRQ dump\n\tregs 0x100108: 0x%08x 0x%08x 0x%08x 0x%08x 0x%08x 0x%08x\n`
+- `kPipeLocDegamma`
+- `validateBorderFill`
+- `site.IosaWdmaControlMSR10`
+- `TD_CACHE_DMA`
+- `cmPreToneMap3x3Enable`
+- `T(%02d)`
+- `HdrInputError: Detail Preservation weight beyond limits\n`
+- `IOSurfaceAcceleratorCapabilitiesFilmGrain`
+- `ditherSelB`
+- `Using custom threshold for filter checks 0x%x\n`
+- `    NumTiles: X=%u, Y=%u\n`
+- `IOSurfaceAcceleratorCapabilitiesMinSourceWidth`
+- `power_down_hyst_us`
+- `buf:allocOffset=%u\n`
+- `Reverting to default filters\n`
+- `IosaPolyphaseScalingPipeUnit`
+- `loadFirmware`
+- `mCurrentIsrFrames != 0 after reset, hw frame counter %u, isr frame counter %u\n`
+- `M2ScalerSrcDestCfgControlMSR9`
+- `Allocated MailBox: %p (instance id: %d)\n`
+- `site.RegStream`
+- `Driver [%p] start (provider %p) returns %d\n`
+- `site.IosaPrescalerControlMSR9`
+- `HdrInputError: %s Scaling Mode[%d] unsupported\n`
+- `ioAsynchronousScheduler`
+- `Failed to send init struct\n`
+- `bytesPerRowOfTileHeaderGroupsOfPlane[%u]=%u\n`
+- `[MSR15] SOC Major: %#x Minor: %#x \n`
+- `site.AppleM2ScalerCSCHalMSR4`
+- `calling function-get_valid_perf_states failed! 0x%x !\n`
+- `timerCompletionQueue_gatedContext`
+- `ChromaDownSample`
+- `IosaRdmaControlMSR23`
+- `IosaTunableControlMSR30`
+- `getDmaCommandDva`
+- `IOSurfaceAcceleratorFormatOut2Planes444`
+- `IosaPipeUnit`
+- `receiveMessage`
+- `IOSurfaceAcceleratorFormatOutLumaOnlyL010`
+- `Rejecting transformID: %u from process: %s\n`
+- `Failed to report %s[%u]\n`
+- `getVersatileSenselArrayFormat`
+- `BorderFillColorCompressedFormats`
+- `IosaTunableControlMSR22`
+- `HDR not allowed with VRA Scaling\n`
+- `DestinationSurfaceDisplayBound`
+- `[%05X %08X] %03u {%08X %08X} %s cache store ERROR: %s`
+- `sbmt`
+- `height=%u\n`
+- `  MATCH FOUND: type=%s, size=%u, expectedSize=%zu\n`
+- `site.IosaTiledCompressedMemMSR8`
+- `fdrResetPointers prio = %d, val 0x%llx\n`
+- `00000000 `
+- `\"[%s] \" \"IRQSTS is zeroes before IRQSTS is cleared by driver\" @%s:%d`
+- `Invalid Lossy level: %d\n`
+- `M2ScalerCSCColorConversionControlMSR10`
+- `ScalerStartTime`
+- `sourceDimensionProper[%s]=%s%d.%s%u\n`
+- `MSR_VSCALE_COEFFX %x\n`
+- `IosaDegammaPipeUnitMSR23`
+- `invalid partition: %d\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR10j.cpp`
+- `%s: IosaFirmwareControlMSR26Rtk\n`
+- `unmodifiedStrideInPixels=%u\n`
+- `validateAlphaOverride`
+- `site.IosaTunableControlMSR22`
+- `\"[%s] \" \"called with %s\\n\" @%s:%d`
+- `site.IosaFirmwareControlMSR30Rtk`
+- `AppleM2ScalerCSCHalMSR21`
+- `failed to open kernel client\n`
+- `Scaler Compression/Decompression error\n`
+- `bin count mismatch %u != %u\n`
+- `genIOVMSegments failed! (%#x)\n`
+- `IOSurfaceAcceleratorFormatInInterleaved422`
+- `scaler-stop`
+- `kPipeLocPolyphaseScaling`
+- `Capability/Extent Dictionary set for %s Failed\n`
+- `NumScalers`
+- `initWithOptions`
+- `site.IosaChromaDownsamplePipeUnitMSR23`
+- `Failed to map spill buffer\n`
+- `Failed to quiesce MsrCPU for sleep\n`
+- `canEnqueueRequest`
+- `OPEN  `
+- `CSC`
+- `site.Evaluator`
+- `[%05X %08X] %03u {%08X %08X} ring buffer %s`
+- `map buffer failed\n`
+- `Source dimensions outside ASE range: Src width = %s%d.%s%u, Src height = %s%d.%s%u, Min = %s%d.%s%u, Max width = %s%d.%s%u, `
+- `MultiplyAlphaFirst`
+- `On`
+- `ColorManager `
+- `IOSA Panic Mask`
+- `DDAstepVH_CLA[%s][%s]=%s%d.%s%u\n`
+- `borderFill.alpha=%#x\n`
+- `AppleM2ScalerCSCHalMSR`
+- `Initializing RemoteIOP handler with %zu services\n`
+- `sdr_rd_ptr`
+- `redLuma mismatch for bin %d\n`
+- `site.IosaFirmwareControlMSR26Rtk`
+- `Failed to create analytics array\n`
+- `sizeDS_VH[DS_Destination][%s]=%s%d.%s%u\n`
+- `validateColorManagement`
+- `Block8V Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `Block10H Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `flipY=%u\n`
+- `121111121222121211111111111221221121121212212222`
+- `kPipeLocRdma`
+- `IOSurfaceAcceleratorCapabilitiesVariableRateDirectionalScaling`
+- `Registered service %s for agent_mask 0x%llx (property match: %s=0x%llx)\n`
+- `IosaDPEControlMSR10`
+- `LOG_EVENT_AP_INIT_INIT_STRUCT_RECV`
+- `FrameDescriptorRingMSR29::loadReadPointer power down\n`
+- `pipeCheckXYOffsets`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/MailBoxMSR26.cpp`
+- `interchangeTileSize[%s]=%s\n`
+- `argument id %u already notified, it's too late to abort!\n`
+- `configureTunables`
+- `kModuleCSC`
+- `BorderFill`
+- `M2ScalerSrcDestCfgControlMSR19`
+- `BlockCfg[%d]: 0x%08x [ColBufWidth(A:%u,C:%u,Y:%u) ColBuf(Rd:%s,Wr:%s) RowBuf(Rd:%s,Wr:%s) Stats(Rd:%s,Wr:%s) CfgRegEn:%s SetsBitmap:0x%x]\n`
+- `Resetting: Skipping MSR Power Cycling\n`
+- `commit_fw_ptr`
+- `IosaTunableControlMSR24d`
+- `%s MSR25::adjustBufferPhysicalAddresses\n`
+- `wdmaPreMult`
+- `WriteOnlyModeBlueCr`
+- `site.IosaTunableControlMSR30`
+- `IOSurfaceAcceleratorFormatOutLumaOnlyL016`
+- `IOSurfaceAcceleratorFilterVerticalPhasesCount`
+- `Offset %#x=%#x\n`
+- `Couldn't allocate lock\n`
+- `    VSclChDDAStepOverride: %s\n`
+- `FW prof ptr wrapped since last dump. Some entries may be missing.\n`
+- `Setup service matching for %s (agent_mask 0x%llx)\n`
+- `M2ScalerCSCColorConversionControlMSR8`
+- `NULL pointer given\n`
+- `OptOutBlitClip`
+- `kPipeLocRevert`
+- `\"[%s] \" \"Failed to enque request %p\\n\" @%s:%d`
+- `Legacy HDR API is not supported by this version of hardware: %u previous repetitions\n`
+- `HCU API bad entry header: headerEnd=%p bufferEnd=%p size=%u min=%zu type=%s\n`
+- `Power state change to %d for request %p (transform ID: %d) with reason %d, count: %d\n`
+- `IosaColorManagerMSR28`
+- `ForcedTimeoutModeEnable`
+- `Driver Error: Got ChUp enable for QuadraBayer Pack transform \n`
+- `joinThread`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR22.cpp`
+- `incorrect state: %d\n`
+- `IosaFirmwareControlMSR23.cpp`
+- `IOSurfaceAcceleratorFormatOut2PlanesPacked42210`
+- `     req %d prio %d ctx_sw_cnt %d\n`
+- `site.IosaTunableControlMSR23`
+- `no default action for argument relying on it\n`
+- `Invalid component type: %d\n`
+- `surfId %u length %llu WiredMemSize %llu\n`
+- `[%05X %08X] %03u {%08X %08X} %s dma address (accumulating...)`
+- `msr_compressed_buffer_validation`
+- `Not signaled: IOSurfaceID: %d event: %p  id: %d  value: %lld\n`
+- `validateAndInitializeCommAPI`
+- `PROGRAM ERROR: matrixLocation: %u, cscArbUnits[%u].cscMatrixLocation: %u\n`
+- `--- FrameHeader (offset 0x00, 7 words) ---\n`
+- `Req %d reInit\n`
+- `IOSurfaceAcceleratorCapabilitiesMaxVUpscale`
+- `pTransformData->Luma = %llx, pTransformData->Chroma = %llx\n`
+- `error: no filters to configure scaler\n`
+- `\"[%s] \" sd.frame_info.priority @%s:%d`
+- `flush_partial_frame`
+- `decStatLoadSize`
+- `HdrInputError: mixLookupBasis value [%u] exceeding the maximum [%u]\n`
+- `allocate`
+- `--- BlockAddrSize (offset 0x5c, 15 entries) ---\n`
+- `mapBuffer`
+- `IOSurfaceAcceleratorCapabilitiesAvdHistogram`
+- `DestinationCompressedPlane%u`
+- `setDefaultAction`
+- `HdrInputError: Gamma mode [%d] not supported\n`
+- `Request %d low latency se %d\n`
+- `IOSurfaceAcceleratorFormatIn1PlaneYonly12`
+- `FirstNoIdle`
+- `121121111122211111222111112221111122211111222111112221111122211111222`
+- `Created Axi2AfTunables table with %lu entries\n`
+- `site.IosaRdmaPipeUnit`
+- `invoke`
+- `[IOSA][Boot ] msr_mask (override): %u\n`
+- `validateChromaCustomFilter`
+- `    biCoeff[%d]: c0=%d, c1=%d, c2=%d, c3=%d\n`
+- ` Stop client's async thread!\n`
+- `[IOSA][Boot ] msrCPU Dashboard register peek\n\tBroadcast    0x%lx  0x%08x%08x\n\tStatusRingWR 0x%lx  0x%08x%08x\n\tStatusRingRD 0x%lx  0x%08x%08x\n`
+- `active-mcc-bit-vector`
+- `MsrBlockDescriptorRegisterStream.cpp`
+- `[IOSA][Boot ] Selecting DPG for scaler %d\n`
+- `M2ScalerScalingControlMSR7`
+- `Service previously matched for %s. Ignoring re-match\n`
+- `setPerfState`
+- `dumpFWTDRegs`
+- `IosaAxi2AfControl`
+- `HCU API size accounting error: entrySize=%u > remaining=%u, type=%s\n`
+- `configurePowerState -> offset %x : val %d\n`
+- `bank immediate`
+- `histogramRequest.enable=%u\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/MsrApiodmaRegisterStreamMSR19.cpp`
+- `System error: Comm API consistency error\n`
+- `releaseArgumentEntry`
+- `stopDPE`
+- `FilmGrain `
+- `M2ScalerCSCColorConversionControlMSR23`
+- `msr_log_header_mask`
+- `Too many RemoteIOP services (%zu), max is %d`
+- `Scaler Number=%u\n`
+- `HCU API entry %s invalid: size=%u expected=%zu bufEnd=%p entryEnd=%p\n`
+- `IosaFirmwareControlMSR23Dv`
+- `MSRCPU: msr_iboot_fw=%d, CTRR_WR_DIS=%d, CTRR_LOCK=%d\n`
+- `--- BlockCfg (offset 0x20, 15 entries) ---\n`
+- `\"[%s] \" \"SDR offset/size out of bounds (off=%08X, size=%08x).  Is firmware loaded?\\n\" @%s:%d`
+- `[%05X %08X] %03u {%08X %08X} %s tx address (accumulating...)`
+- `fdr_0_rd_ptr`
+- `Failed to initialize CoreAnalytics interrupts!\n`
+- `[%05X %08X] %03u {%08X %08X} %s APIODMA HW FIFO full: %u commands in-flight (limit=16)`
+- `wireIOSurface`
+- `upscalingRequiredVH_CLA[%s][%s]=%d\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaPowerManagerMSR.cpp`
+- `[MSR15]: SoC Version Register value: %#x\n`
+- `IRQ Mask Clear= 0x%x\n`
+- `site.IosaTiledCompressedMemMSR13`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/MailBox.cpp`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/DitherControlMSR23.cpp`
+- `BorderFillAlpha`
+- `IosaColorManagerMSR10j`
+- `[QB] Resolving 0xff sniff to Bayer_RGGB\n`
+- `interruptOccurredMsrApMbox`
+- ` (duration: %06X)`
+- `[%05X %08X] %03u {%08X %08X} %s tile loop entry: tile=[%u,%u]`
+- `M2ScalerScalingControlMSR`
+- `configureOddSizeLumaOption_gated: padding luma=%x alpha=%x\n`
+- `ColorRemapMode`
+- `[%05X %08X] %03u {%08X %08X} %s source dimensions: %ux%u`
+- `useCustomFilters=%u %u\n`
+- `zeroFillColumnPadding`
+- `IosaColorManagerMSR18.cpp`
+- `121111212211111112222`
+- `site.IosaPrescaler3x3PipeUnit`
+- `AppleM2ScalerCSCHalMSR23.cpp`
+- `MSR Reset - Remap frame desc ring failed.\n`
+- `IOSurfaceID=%u\n`
+- `offsetVH_CLA[%s][%s]=%s%d.%s%u\n`
+- `M2ScalerScalingASEControl`
+- `Unbalanced power down for request %p with reason %d\n`
+- `IosaChannelConfig`
+- `validateMacroblockSize`
+- `IosaDPEControlMSR17`
+- `[%05X %08X] %03u {%08X %08X} %s tx address: 0x%08X%08X`
+- `blueCr pointer invalid\n`
+- `Initialize Mailbox interrupt sources ..\n`
+- `Req %d is waitting for %s shared event!\n`
+- `TD_CACHE`
+- `\"[%s] \" \"enableDevicePower() failed: 0x%x\\n\" @%s:%d`
+- `Unequal spacing tone mapping mode 1 input incorrect\n`
+- `selectPowerGatingMode`
+- `[%05X %08X] %03u {%08X %08X} %s APIODMA packet allocator full: rd_ptr=%u`
+- `[SD frame_id:%08x] (%u, %u)\n`
+- `IOSurfaceAcceleratorKernelClient`
+- `| `
+- `DisplayScalerFilter allocation failed \n`
+- `bufferWidth=%u\n`
+- `site.IosaChannelConfig`
+- `Scaler [%d] MSRCPU: Firmware crashed\n`
+- `IosaColorManager`
+- `Luma Stride: %u is improperly aligned to: %u bytes, iDS: %d\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR20.cpp`
+- `printConfigInfo`
+- `IOSurfaceAcceleratorFormatOut1PlaneYonly12`
+- `error allocating default filters!\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR26.cpp`
+- `kPipeLocPreCM`
+- `site.IosaCSCPipeUnit`
+- `Block3H NbrBuf: Addr0=0x%08x [RdCHint:%u WrCHint:%u] Addr1=0x%08x [Size:%u] FullAddr=0x%llx\n`
+- `IosaTunableControl`
+- `[%05X %08X] %03u {%08X %08X} %s tile loop exit: last tile (normal)`
+- `  sharpLut[%d × 2] (showing first 10, use TRACE for all):\n`
+- `SymmetricScaling`
+- `IOSurfaceAcceleratorFormatIn2PlanesPacked42010`
+- `site.IosaColorManagerMSR9`
+- `HSclEn`
+- `site.M2ScalerScalingControlMSR8`
+- `[%s][Luma] bin mismatch; falling back to default filter bin %d (%s)\n`
+- `pair = %u, mStartAddr = 0x%x\n`
+- `SurfaceSharedEventAgentMask`
+- `debugDumpRegisters`
+- `Failed to set transform format! req = %d!\n`
+- `HdrInputError: Cacsc1 3x3 input invalid\n`
+- `Unserviced Dashboard FDR Enqueue %d\n`
+- `%srotate270`
+- `Failed to prepare HW descriptor for req %d\n`
+- `=== ASE EBE V4 Config Injected ===\n`
+- `kModuleRing`
+- `12000000200000002111121122222112222211222221122222112222211222221122222112222211222221111222111122211112221111222111122211112221111222111122222112000000`
+- `  FrameProperties: 0x%08x\n`
+- `bytesPerRowOfTileDataOfPlane[%u]=%u\n`
+- `active`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/M2ScalerCSCColorConversionControlMSR23.cpp`
+- `Firmware not running, cannot pause (%u)\n`
+- `N`
+- `Fail`
+- `Piodmasave`
+- `Top`
+- `msr_idlepoweroff_supported`
+- `validate_convertToLinear_gatedContext`
+- `ASEPeakEnh`
+- `site.IosaColorManagerMSR2`
+- `Failed to correctly write scaler properties and extents to IORegistry\n`
+- `bad notify_event callback\n`
+- `HSclMode`
+- `ASE API V3: elem=%u, size=%u, min=%zu (hdr+entry+scaling), max=%zu\n`
+- `  Found ASE Sharp LUT Config V4\n`
+- `Invalid instance id (%u)\n`
+- `EnableMSRPowerDown`
+- `VH_Horizontal`
+- `ARGB_GreenCb`
+- `gatherOptions`
+- `get_iosaDiag_gated`
+- `CMDeGam`
+- `IosaColorManagerMSR5`
+- `Differing chroma subsampling not allowed with VRA Scaling\n`
+- `site.IOFBSAGammaLUT`
+- `start(%#llx) > end(%#llx)\n`
+- `fetchPrecomputed`
+- `221`
+- `Starting ...\n`
+- `BIF tiling not supported by this version of hardware\n`
+- `kModuleColorManager`
+- `HdrInputError: Input Minimum Clip hit input clip value limits\n`
+- `IosaFirmwareControl`
+- `AppleM2ScalerCSCHalMSR20.cpp`
+- `\"[%s] \" \"CM must be enabled before Gamma LUT is written\" @%s:%d`
+- `%s sharedEvent id=%d, dva=0x%llx, signal doorbell=0x%x\n`
+- `testSynchronous`
+- `FFC Blockers: Pipe1: 0x%x Pipe2: 0x%x Pipe3: 0x%x AlphaOverride: 0x%x\n`
+- `Dart Error req %d, NC column buffer.\n`
+- `12122121221212212122121221212212122121221212212122121221212212122120000020000000122112221200000020000000211112112222211222221122222112222211222221122222112222211222221122222111122211112221111222111122211112221111222111122211112222211212000020000000`
+- `HistogramHeight`
+- `selfCallback`
+- `cannot find the scaler driver\n`
+- `Failed to allocate custom chroma filter!\n`
+- `Center`
+- `IosaFirmwareControlMSR29Rtk`
+- `panic_mask`
+- `Failed to prepare pipe! req = %d!\n`
+- `Cannot create mapping for physical register address(0x%llx)\n`
+- `IOSurfaceAcceleratorFormatOut2Planes420`
+- ` (isr)`
+- `dumpMsrCPUIRQState`
+- `Printing Pixel Capture Values \n`
+- `IOSurfaceAcceleratorFormatOutInterleaved422`
+- `Malformed message!\n`
+- `mapper_cache_policy`
+- `validate_chromaticAdaptation_gatedContext`
+- `[IOSA] Discarding stale SD frame_id %u (all requests flushed, firmware reset pending)\n`
+- `ExpectedSize: %llu, ExpectedMinStride: %llu, ExpectedMetadataSize: %llu, ExpectedTileSize: %llu\n `
+- `site.AppleM2ScalerCSCHalMSR13`
+- `[IOSA][Boot ] mPerfStateCount=%u, mMaxPerfStateClock=%u\n`
+- ` %d: 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x\n`
+- `[MSRCPU] Failed waiting for Driver Init ack!\n`
+- `ReadOnly`
+- `[%05X %08X] %03u {%08X %08X} data`
+- `0°`
+- `ApiodmaRegStream`
+- `[ID: %u] %#x: %#x\n`
+- `HistogramWidth`
+- `  FrameConfig: 0x%08x\n`
+- `Transform is not in FFC \n`
+- `collectDmemDump`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/FirmwareControl/IosaFirmwareControlMSR29Rtk.cpp`
+- `Failed to validate color manager! req = %d!\n`
+- `pop empty`
+- `gamut_matrix=%p\n`
+- `cmPreCm3x3Enable`
+- `failed to start thread\n`
+- `initClient`
+- `ChromaUpSample`
+- `M2ScalerCSCRequest`
+- `resumeMsrCPU`
+- `Convert`
+- `  TileArray[%d]: Addr=0x%llx, Size=%u dwords\n`
+- `Block12V Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR23.cpp`
+- `share event doorbell`
+- `reportNumberOfScalers`
+- `[COSITE] Dest Surface Cositing BottomLeft, hPos:post(0), vPos:post(0)\n`
+- `validate_common2B_gatedContext`
+- `greenCb mismatch for bin %d\n`
+- `\"[%s] \" \"Failed to allocate tile array!\" @%s:%d`
+- `%s+-%s`
+- `[IOSA][Boot ] [MSR21] SOC Major: %#x Minor: %#x\n`
+- `[COSITE] Using VE CHDWN InterpPos, v:POST, h: POST\n`
+- `%s Plane %u Metadata Size %llu is less than expected size %llu\n`
+- `LOG_EVENT_FDR_LAST_TILE_SENT`
+- `aggregateStats_gated`
+- `Exhausted wait cycles for AXI DEST IDLE`
+- `unmapShadowMapperCacheEntry_gated`
+- `notify_event callback event %d wait value %llu already done.\n`
+- `    biPosSlope[%d]: slope0=%d, slope1=%d\n`
+- `HCU style ASE API is not supported by this version of hardware\n`
+- `checkHtpcPlanes`
+- `Block7H NbrCfg[%d]: 0x%08x [BufRd0:%u BufWr0:%u BufRd1:%u BufWr1:%u]\n`
+- `blitClipOptOut=%u\n`
+- `Insufficient memory! %zx %d-%d\n`
+- `msr_force_default_filters`
+- `default/preserve`
+- `PANIC`
+- `121111112121111111111111111111111111111111111111111111111111111111111111`
+- `  Non-zero BlockAddrSize entries: %d/15\n`
+- `MsrApiodmaRegisterStream.cpp`
+- `zero fill is not supported in tiled mode\n`
+- `validateXAlignment`
+- `HdrInputError: Cannot disable %s scaling. Chroma needs upsampling. \n`
+- `M2ScalerScalingControlMSR6.cpp`
+- `\"[%s] \" \"user client call to K2K method!\\n\" @%s:%d`
+- `msr_firmware_timeout_us`
+- `site.SpillBuffer`
+- `configureFastFormatConversion_gatedContext`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/FrameDescriptorRingMSR29.cpp`
+- `site.IosaFirmwareControlMSR23`
+- `IosaTiledCompressedMemMSR7`
+- `  WDMAFrameDimension: 0x%08x\n`
+- `fdr_3_wr_ptr`
+- `site.IosaConvertPipeUnit`
+- `System error: Bad COMM API Type: %d\n`
+- `  Non-zero BlockCfg entries: %d/15\n`
+- `Updating MSR_CTRL_PIPE_CONFIG1_OFFSET\n`
+- `HdrInputError: Histogram type value [%u] exceeding the maximum [%u]\n`
+- `Unexpected Degamma LUT count (%d != %d)!`
+- `This version of hardware does not support compressed destination formats in read-only mode\n`
+- `[%05X %08X] %03u {%08X %08X} %s td-cache wait complete`
+- `validateScalingRatios`
+- `setTransformCfg`
+- `IOSurfaceAcceleratorFormatInRGBA8888`
+- `M2ScalerCSCColorConversionControlMSR10j`
+- `site.M2ScalerSrcDestCfgControlMSR14`
+- `LOG_EVENT_PA_ASSERT_ERROR`
+- `0000`
+- `RemoteIOP power notification: agent_mask=0x%llx enabled=%u ret %d\n`
+- `entry is NULL\n`
+- `[%05X %08X] %03u {%08X %08X} %s submit_tile FAILED: tile=[%u,%u]`
+- `SourceYCbCr`
+- `[COSITE] Dest Surface Cositing Center, hPos:post(1), vPos:Post(1)\n`
+- `AppleM2ScalerCSCHalMSR2`
+- `Failed to create diagnose buffer\n`
+- `Failed to allocate IOBufferMemoryDescriptor\n`
+- `configBlocksForActiveWindow seq %d, slot %d\n`
+- `kIODARTFunctionCacheFlushInactive FAILED!\n`
+- `pump_frame_src / null thread`
+- `IosaWdmaControlMSR11`
+- `iomd-cache-size`
+- `IOSurfaceAcceleratorFilterCoefficientsPostPointBits`
+- `pipeunit[%zu] is null\n`
+- `PerfControlClient`
+- `handleErrorInterruptStatus`
+- `Block7V NbrBuf: Addr0=0x%08x [RdCHint:%u WrCHint:%u] Addr1=0x%08x [Size:%u] FullAddr=0x%llx\n`
+- `kPipeLocRequest`
+- `mailbox irq(dropped): index %d eventSource %p\n`
+- `[SD frame_id:%08x] sd_error_code: %u\n`
+- `FixUpscaling`
+- `Block5V Tile[%d]: Out[0x%08x TileCoord:%u Size:%u]\n`
+- `IU`
+- `kModuleRequest`
+- `Request`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaColorManagerMSR4.cpp`
+- `thread %d failed with 0x%x\n`
+- `site.IosaColorManagerMSR23`
+- `    Block[%d] %s: ENABLED\n`
+- `Request: %p, Neighbor Channel (Col=%#llx, Row=%#llx) %x page (%#lx)\n`
+- `IOSurfaceAcceleratorFilterHorizontalPhasesCount`
+- `dashRead`
+- `MSR 20 Register Dump%s\n`
+- `MCLTScheduler`
+- `RemoteIOP agent 0x%llx (%s) signal state changed: %s\n`
+- `Block9V Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `adaptDDAinitToRotationForFractionalOffsets`
+- `[IOSA][Boot ] [MSR%u] SleepState transition from %s to %s\n`
+- `READ`
+- `failed (%#x)\n`
+- `linScaleReGammaEnable`
+- `12122`
+- `setCoefficient`
+- `\tMCW:0x%08x\n`
+- `cmReGammaEnable`
+- `Cannot allocate IOAsynchronousScheduler\n`
+- `11222`
+- `[SD frame_id:%08x] RDMA (l=%u, t=%u, r=%u, b=%u)\n`
+- `EnhanceEnable`
+- `Awake`
+- `[%05X %08X] %03u {%08X %08X} %s DRAM READ addr_hi: 0x%08X`
+- `[%05X %08X] %03u {%08X %08X} %s td-cache store checksum: 0x%08X`
+- `getASEStats_gatedContext`
+- `bd.id=%u, bd.dva=%#llx, bd.range=(%#llx,%llu),\n`
+- `EnableKernelTests`
+- `ASEEnhance`
+- `%s folded QuadraBayer format needs to be 1/2 of the %s size \n`
+- `Failed to receive message!\n`
+- `MMR `
+- `Driver Error=0x%x\n`
+- `borderFill.offsetY=%u\n`
+- `enableDevicePower_gatedContext`
+- `IosaPowerManagerMSR20`
+- `Allocating buffer for FW DMEM\n`
+- `121111222212222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222220020000000222222222222222222221112222222222222222222222222222222222222222222222222222222222222222222222222222222222222111222222222222222222222222222222222222222222222`
+- `AppleM2ScalerCSCDriverFilters.cpp`
+- `trackPowerStateReason_gatedContext`
+- `handleDmemDumpMessage`
+- `site.AppleM2ScalerCSCDriverFilters`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/MsrApiodmaRegisterStreamMSR15.cpp`
+- `HdrInputError: Output Offset limit hit\n`
+- `site.IosaFirmwareControlMSR25Rtk`
+- `ARGB_Unknown`
+- `IosaWdmaPipeUnitMSR23`
+- `v20@?0^{PacketSequence={?=^{PacketSequence}^^{PacketSequence}}^{ArenaPageDescriptor}^{M2ScalerCSCRequest}IIQIIQ}8I16`
+- `Selecting 3x3 block %d that doesn't exist in this HW version\n`
+- `AlphaOverride`
+- `site.AppleM2ScalerCSCHalMSR20`
+- `IOSurfaceAcceleratorFormatInLumaOnlyL010`
+- `site.AppleM2ScalerCSCDriver`
+- `msr_disable_odd_luma`
+- `HdrInputError: Scaling in dolby mode unimplemented\n`
+- `IOSurfaceChromaLocationTopField`
+- `[%05X %08X] %03u {%08X %08X} %s td-cache fire-and-forget: skip wait`
+- `HdrInputError: lumaAvgOffset value [%d] exceeding the range [%d:%d]\n`
+- `DPE TunableControl object null. DPE tunables are not configured\n`
+- `Interchange tile/compression not supported by this version of hardware: Format = %s\n`
+- `site.StatusDescriptorRing`
+- `%s: Y offset of %u is greater than maximum of %u for this hardware)`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/FirmwareControl/IosaFirmwareControlMSR23Dv.cpp`
+- `site.FrameDescriptorRingMSR23`
+- `Only identical color spaces are supported in Bayer/Quadra transforms \n`
+- `IOSurfaceAcceleratorFormatOutARGB8888`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/M2ScalerCSCColorConversionControlMSR4.cpp`
+- `Found phase %d that has taps around middle tap with closer values\n`
+- `tagTransformRegisters MSR29: transformId=%d, frame_id0=%u, frame_id1=%u\n`
+- `Failed to lock buffer (%#x)\n`
+- `customFieldsPtr doesnt exist\n`
+- `error while reading memory: expected %llu bytes read, but got %llu\n`
+- `APQ Degamma Input %d, Output %d `
+- ` Mapped shared event %d md=%p dva=0x%llx\n`
+- `IOSurfaceAcceleratorFormatIn2Planes422`
+- `[%05X %08X] %03u {%08X %08X} %s tile loop: next_tile_id() returned NullOpt!`
+- `DestinationPixelFormat`
+- `[MSRCPU] [PROF] WARNING: Unclosed scope %s\n`
+- `FdFetch frame pri`
+- `msr_disable_prescaler_ffc`
+- `  shootControlParams1: overBase=%d, underBase=%d, overSlope=%d, underSlope=%d\n`
+- `MsrCpu    `
+- `[%05X %08X] %03u {%08X %08X} %s DRAM READ addr_lo: 0x%08X`
+- `%s`
+- `Block4H Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `Could not retrieve histogram bin array`
+- `Unknown scaler version %u\n`
+- `=== End Frame Descriptor Breakdown ===\n`
+- `invoke (dram addr)`
+- `chrUpSampleEnable`
+- `[IOSA][Boot ] Writing 0x%x to Offset %#x\n`
+- `site.IosaInternalPipeMSR`
+- `HdrInputError: Detail Preservation not supported in MSR23\n`
+- `EnableFiltersNoRewriteMode`
+- `180°`
+- `121111222222221111`
+- `LOG_EVENT_LTM_CREATE_TILE_START`
+- `Failed to allocate FDR!\n`
+- `Scaler Read/Write error\n`
+- `PlaneWidth: %llu, PlaneHeight: %llu, `
+- `  RDMA: %ux%u, WDMA: %ux%u\n`
+- `Block5H Tile[%d]: Out[0x%08x TileCoord:%u Size:%u]\n`
+- `dashRead64`
+- `%s: planeWidth: %d is smaller than requested width: %d and offset: %d\n`
+- `PERF`
+- `Pmgr      `
+- `site.IosaDPEControlMSR23`
+- `histogramRequest.offsetX=%u\n`
+- `below the minimum polyphase scaling ratio after ASE`
+- `[MSR15]: Null returned for Virtual Address of SoC Version register\n`
+- `transformGeneral`
+- `A8RGB101010-2Plane format (%s) cannot be used at the destination if alpha override is enabled\n`
+- `MSR23DefaultFilter`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaRemoteIOPPowerNotificationHandler.cpp`
+- `printBlockDescriptor`
+- `Registered service %s for agent_mask 0x%llx\n`
+- `reading`
+- `=== End EBE V4 Config ===\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCDriverFilters.cpp`
+- `\"%s\" @%s:%d`
+- `quiesceMsrCPU`
+- `rdmaARGB`
+- `site.M2ScalerScalingASEControlMSR20`
+- `FrameDescriptorRingMSR28`
+- `[MSRCPU] Failed waiting for quiesce ack!\n`
+- `[MSRCPU] Quiesce complete!\n`
+- `IosaPowerManagerMSR23::init mPerfStates %d\n`
+- `%s: failed to look up surface %d\n`
+- `\"[%s] \" \"Source base address not 32-bit aligned\\n\" @%s:%d`
+- `allocateCoefficientsIfNecessary`
+- `site.IosaFirmwareControlMSR29Rtk`
+- `    CfgRegEn=%s, SetsBitmap=0x%x\n`
+- `%s is %u\n`
+- `msr_scheduling_credits_to_earn`
+- `isSharedEventWaitDone`
+- `HdrInputError: msbPos1 value [%d] exceeding the range[13:31]\n`
+- `Failed to initialize request pipe unit!\n`
+- `Using MSR23 workaround allowing taps = %d\n`
+- `    biNegThresh[%d]: thresh0=%d, thresh1=%d\n`
+- `DriverCommonFunctions.cpp`
+- `IOSurfaceAcceleratorFormatInARGBV16`
+- `XFlip`
+- `Twiddle/Tile addressing mode not supported. \n`
+- `[SYM][%s] Calculating symmetric DDAInit %s%d.%s%u srcDim %s%d.%s%u dstDim: %s%d.%s%u \n`
+- `Bifrost simulated model`
+- `IosaRevertPipeUnit`
+- `System error: Failure to get a memory descriptor for comm API inbound data\n`
+- `HDR API is not supported by this version of hardware\n`
+- `Y offset + height: %u is improperly aligned to:                                 %u pixels for plane: %d, iDS: %d\n`
+- `default`
+- `site.IosaDPEControlMSR19`
+- `site.M2ScalerScalingControlMSR15`
+- `unknown color space combination!\n`
+- ` >>>> Client %d (%p) (%s) filters %p, Scaling filters %p\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaColorManagerMSR10.cpp`
+- `msr_dump_registers`
+- `bad version`
+- `Failed to initialize pipe control for transform!\n`
+- `[%05X %08X] %03u {%08X %08X} %s td-cache READ complete`
+- `[%05X %08X] %03u {%08X %08X} %s DRAM READ size: %u words`
+- `IosaPrescalerControlMSR23`
+- `12111112`
+- `PreScaler `
+- `%0llx: %s\n`
+- `IOSurfaceAcceleratorFormatOut1PlaneYCBCR10444`
+- `%s_%u`
+- `Setup property matching for %s=0x%llx (agent_mask 0x%llx)\n`
+- `DEBUG`
+- `Entry index out of bounds.\n`
+- `logSharpLUTConfigV4`
+- `writing`
+- `testRetain`
+- `failed (%#x)!\n`
+- `    deltaSlope[%d]: slope0=%d, slope1=%d\n`
+- `IosaColorManagerMSR20`
+- `site.ModularDefaultFilter`
+- `Scaler[%d] activateMSR: newstate: %u\n`
+- `max_msrs`
+- `CMOOTF`
+- `site.AppleM2ScalerCSCHalMSR6`
+- `site.AppleM2ScalerCSCHalMSR28`
+- `MSRCPU: Failed to start!\n`
+- `CMPQReGam`
+- `LOG_EVENT_AP_INIT_FW_READY`
+- `sdrFrameComplete error, MSR reset! frame_id %d\n`
+- `HDR API PROGRAM ERROR\n`
+- `IOSurfaceAcceleratorCapabilities12bitYCbCr`
+- `msr_log_activity_length`
+- `msr_fw_log_collection`
+- `chromaSubsampleFactor[%s]=%u\n`
+- `all subordinate features are disabled`
+- `Failed to initialize PIODMA interrupts!\n`
+- `Publishing Custom HScaler Caps : Taps: %u Phases: %u\n`
+- `bank count`
+- `Invalid notify_event event!\n`
+- `M2ScalerScalingControlMSR23`
+- `VSclComp1HighFreqEn`
+- `site.IosaDPEControlMSR10j`
+- `MSR 10j Register Dump%s\n`
+- `HdrInputError: lumaAvgCoeff value [%d] exceeding the range [-32767:32767]\n`
+- `IOSurfaceAcceleratorCapabilitiesYCbCrAlpha`
+- `ratio %s%d.%s%u\n`
+- `site.M2ScalerSrcDestCfgControlMSR`
+- `IosaFirmwareControlMSR25Rtk`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR25.cpp`
+- `IOSurfaceAcceleratorCapabilitiesUnequallySpacedLut`
+- `AppleM2ScalerCSCDriver.cpp`
+- `site.IosaChromaDownsamplePipeUnit`
+- `ditherSelG`
+- `HdrInputError : Scale Taps out of range %d\n`
+- `allocateRegStreamBlocks`
+- `[%05X %08X] %03u {%08X %08X} tdcache config: size=0x%X`
+- `site.IosaDegammaPipeUnit`
+- `IosaPremultiplyAlphaMultiplyPipeUnit`
+- `given size (%llu) doesn't match TransformSurfaceData's (%lu)\n`
+- `Block8H Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `quiesceFirmware`
+- `useWholeBuffer=%u\n`
+- `MSR Interrupt status (MSR_GLBL_IRQSTS) error = %#x\n`
+- `kIOSurfaceCompressionTypeNone`
+- `Wrong 0x%x pipeconfig3. Writing rectified 0x%x to pipeconfig3 for QuadraBayer mitigation\n`
+- `IOSurfaceAcceleratorFormatOutPARGBV16`
+- `Cannot use more than one special filter in the same request. Enabled: %d \n`
+- `rotate90=%u\n`
+- `command tag %d corrupted req %p expeted %p\n`
+- `mapShadowMapperCacheEntry_gated`
+- `[%05X %08X] %03u {%08X %08X} %s data`
+- `borderFill.enable=%u\n`
+- `Service matched for %s (agent_mask 0x%llx), IOService ptr=%p\n`
+- `Filter bins not allocated\n`
+- `Allocated FDR: %p\n`
+- `[IOSA][Boot ] iommu-parent node not found!\n`
+- `site.M2ScalerCSCColorConversionControlMSR`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/M2ScalerScalingControlMSR8.cpp`
+- `Custom Filter :\n`
+- `miscDimensionAdjustments`
+- `M2ScalerSrcDestCfgControlMSR15`
+- `HdrInputError: Cacsc2 Mode[%d] Unsupported \n`
+- `=== FW→AP DMEM dump: FWTDRegs_t ring wrap, second chunk %u words (offset=0x%x), TD complete ===\n`
+- `M2ScalerScalingControlMSR8`
+- `writeIterate`
+- `[%05X %08X] %03u {%08X %08X} %s dest dimensions: %ux%u`
+- `alphaOverride.enable=%u\n`
+- `IOSurfaceAcceleratorFormatOutRGBA8888`
+- `bank ignore`
+- `supervisor_tick pending_reads`
+- `msr_ktrace_options`
+- `VSclComp1DeringingEn`
+- `cmPreReGamma3x3Enable`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/MsrRegisterStream.cpp`
+- `[%05X %08X] %03u {%08X %08X} %s submit_tile succeeded: tile=[%u,%u]`
+- `site.M2ScalerSrcDestCfgControlMSR5`
+- `[%05X %08X] %03u {%08X %08X} ap interface error: %.8s`
+- `CMPreReGam3x3`
+- `MSR 4 Register Dump%s\n`
+- `Horizontal downscale ratio of %s%d.%s%u is less than the limit of %s%d.%s%u for dest format %s and is not supported by this hardware (rotation=%d)\n`
+- `testHistogram`
+- `\tMSR 0x%08x IRQSts 0x%08x IRQEn 0x%08x IM3IRQEn 0x%08x\n`
+- `activateAndExecuteTransform_gatedContext`
+- `site.IosaRdmaControlMSR8`
+- `tearDownMsrMessageBoxLinks_gatedContext`
+- `HdrInputError: Cacsc2 3x3 input invalid\n`
+- `drainOutboxMessages`
+- `Dashboard IRQSTS: 0x%x, CHUNKSTS: 0x%x IRQEN: 0x%x \n`
+- `%s plane %d base address %llu does not align with %s base addr requirements\n`
+- `VH_Unknown`
+- `computeChromaDDAinit`
+- `startDPE`
+- `commitDegamma_gatedContext`
+- `Block1V Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `kSurfaceAcceleratorCapabilitiesColorManager`
+- `perf-clocks`
+- `IosaDPEControlMSR16`
+- `422 1-plane dest format (%s) not supported with border fill\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/M2ScalerCSCColorConversionControlMSR8.cpp`
+- `Msr       `
+- `fourccCode=%s\n`
+- `getLockedInScaler`
+- `[%05X %08X] %03u {%08X %08X} %s horizontal axis generated checksum: 0x%08X`
+- `Req 0x%x commandSleep timeout\n`
+- `%s Quadra/Bayer format requesting 1-4/4-1 packing (0x%x) cannot be rotated\n`
+- `[%05X %08X] %03u {%08X %08X} %s DRAM WRITE addr_hi: 0x%08X`
+- `[MSR16]: SoC Version Register value: %#x\n`
+- `msr_iboot_fw`
+- `Custom Filter [%s]:\n`
+- `Driver Error: Got ChDwn enable [%d,%d] for QuadraBayer Pack/Unpack transform\n`
+- `    AW_H: %u (horizontal active window index)\n`
+- `door_bell_isr`
+- `AppleM2ScalerCSCHalMSR25`
+- `kModuleAsyncScheduler`
+- `Failed to add interrupt event source (%d) to work loop!\n`
+- `Fixup: exceeds tile buffer range (%zu > %zu)!\n`
+- `setupServiceMatchCallbacks`
+- `VSclEn`
+- `pollForReads`
+- `startThreadWithAction`
+- `site.IosaPrescalerControl`
+- `Bad Quadra Bayer format %u \n`
+- `FW not loaded when submitting transform.  power up / wake sequencing issue!\n`
+- `setProperties`
+- `applyScalingCorrection=%u\n`
+- `This version of hardware does not support alpha override\n`
+- `HistogramOffsetY`
+- `adaptDDAinitToRotation`
+- `priority invalid`
+- `Request %d hold power ref (%d)!\n`
+- `At least one border fill color (Alpha/Luma=0x%x, Red=0x%x, Green=0x%x, Blue=0x%x) is invalid for this HW\n`
+- `ASEPre`
+- `RDMA `
+- `[%05X %08X] %03u {%08X %08X} %s tile loop continue: next tile`
+- `[%05X %08X] %03u {%08X %08X} %s td-cache v_index=%u`
+- `cmDetailPrsvEnable`
+- `IOLockSleep failed with %d\n`
+- `Skipping complete even symmetry check. Custom Filter is not shifted.\n`
+- `PROGRAM ERROR: matrixLocation: %u, cscMatrixLocation: %u\n`
+- `Failed to create spill buffer memory descriptor\n`
+- `    Rot90or270: %s\n`
+- `[Unimplemented] Multiple Requests (%d) Need Reset (SD needs_reset) [use msr_panic_mask=0 to turn off]`
+- `Timeout injected for req: %d\n`
+- `aseEnhanceChromaEnhEnable`
+- `ASE API capability: V3=%d, V4=%d, commElement=%d\n`
+- `msr_iosurface_purge`
+- `StatusDescriptorRingMSR23`
+- `BorderFillOddSizeYCbCrEnable`
+- `Failed to validate request! req = %d!\n`
+- `Done initializing HAL Control Objects\n`
+- `[MSRCPU] [%04X] %s\n`
+- `[%05X %08X] %03u {%08X %08X} %s vertical axis generated checksum: 0x%08X`
+- `flush`
+- `logFWTDRegsFields`
+- `SOURCE Transform Format:\n`
+- `IosaColorManagerMSR15.cpp`
+- `cmPostToneMap3x3Enable`
+- `  Frame ID: %u, Priority: %u\n`
+- `[PIXCAP] POSTCMCSC %d : %u (0x%x)\n`
+- `configureRDMA_gatedContext`
+- `IOSurfaceAcceleratorCapabilitiesOOTF`
+- `site.DitherControlMSR8`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IOSurfaceAcceleratorPreparator.cpp`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaTunableControlMSR23.cpp`
+- `super::init() failed\n`
+- `Scaler Tiled Decompression error\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/DPEControl/IosaDPEControlMSR22.cpp`
+- `[%05X %08X] %03u {%08X %08X} %s APIODMA packet allocator full: wr_ptr=%u`
+- `This version of hardware does not allow dest format w18p when source format has no alpha\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/SpillBuffer.cpp`
+- `Cannot send remote IOP power notification - firmware in init protocol\n`
+- `VmStep`
+- `IOSurfaceAcceleratorCapabilitiesMinDestHeight`
+- `Folded Quadra Bayer formats cannot have linear containers \n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaColorManagerMSR15.cpp`
+- `cannot allocate an UserAsyncObjectsWrapper\n`
+- `  Total Enabled Blocks: %d/15\n`
+- `[MSR16]: Null returned for Virtual Address of SoC Version register\n`
+- `LOG_EVENT_MSR_M3_STARTING`
+- `=== FWTDRegs Complete Field Breakdown ===\n`
+- `postInit : scaler[%d]\n`
+- ` (WARNING: scope already open)`
+- `invalid_rd`
+- `borderFill.offsetX=%u\n`
+- `arenaAllocate`
+- `\"[%s] \" \"Failed to quiesce MsrCPU for PG\\n\" @%s:%d`
+- `LOG_EVENT_GENERAL`
+- `Invalid cositing control`
+- `0.25x`
+- `IOSurfaceAcceleratorCapabilitiesASEPolyMaxHRatio`
+- `[%05X %08X] %03u {%08X %08X} doorbell %d %s 0x%08X`
+- `msr_disable_hdr_clips`
+- `Block7V NbrCfg[%d]: 0x%08x [BufRd0:%u BufWr0:%u BufRd1:%u BufWr1:%u]\n`
+- `NC slot %u not yet released req %d; forcing release\n`
+- `Failed to map FDR to CPU VA\n`
+- `FrameDescriptorRing: va=%#llx, dva=%#llx, length=%lu\n`
+- `propertyExport`
+- `wasZeroFilled=%u\n`
+- `Failure mode: dest height <= 32, source width > 128, planes > 1\n`
+- `site.M2ScalerScalingControlMSR4`
+- `M2ScalerSrcDestCfgControlMSR2`
+- `DMA Command resources exhausted!\n`
+- `User provided outbound size too small\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/M2ScalerScalingASEControlMSR23.cpp`
+- `  Optional HCU type %s not found (OK)\n`
+- `Piodma    `
+- `Surface %s width %d doesn't follow %s dimensions limit of [%u, %u]\n`
+- `site.IosaFilmGrainPipeUnitMSR16`
+- `%s: Wrong version %d!\n`
+- `Cannot allocate MSR23CurvatureLUT \n`
+- `System power down, do not send mailbox message to block MSR fw sleep\n`
+- `prepareClientForTransform`
+- `INVALID`
+- `tileWidthOfPlane[%u]=%u\n`
+- `site.IosaTunableControlMSR24d`
+- `Scaler[%d] Submit Frame ID: %u, Prio:%u, fdlen = %u dwords (total: %lu bytes)\n`
+- `Bd Slots are still used when client closed.\n`
+- `fdr_1_rd_ptr`
+- `\"[%s] \" \"[IOSA] Unexpected frame_id from FW ( %u )\\n\" @%s:%d`
+- `DisablePseudoLinearScaling`
+- `inbox_empty!\n`
+- `DS_Unknown`
+- `IosaRdmaControlMSR11`
+- `[%s][%s](%d)Setting Custom Coefficient 0x%x (%p)\n`
+- `site.IOFBSAWritableGammaLUT`
+- `Revert `
+- `kModuleFirmware`
+- `Fixup: frame 0x%x: %zu of %zu tile_buf dva 0x%llx\n`
+- `getCSCPrecisions`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaPowerManagerMSR26.cpp`
+- `   dash_offset 0x%x\n`
+- `supportedAddressingFormat`
+- `IosaPowerManagerMSR27::init\n`
+- `FrameDescriptorRingMSR23`
+- `Block12H NbrCfg[%d]: 0x%08x [BufRd0:%u BufWr0:%u BufRd1:%u BufWr1:%u]\n`
+- `Failed to get DMA command!\n`
+- `[%s][Luma] bin mismatch; %s custom filter has ratio match, using %s coefficients\n`
+- `pipeCheckASEIssues`
+- ` 0x%08x`
+- `MSR23ChromaDownsampleFilter allocation failed.`
+- `Entry index(%d) out of bounds(%d).\n`
+- `initExternalSubSystem`
+- `RuntimeDebugNoIdle1`
+- `Could not add timer event source %u to work loop\n`
+- `site.IosaFirmwareControl`
+- `MSR 10 Register Dump%s\n`
+- `parse_next done`
+- `msr_hardware_timeout_us`
+- `sizeDS_VH[DS_Source][%s]=%s%d.%s%u\n`
+- `[MSR15]: Cannot get memory descriptor - null socMd\n`
+- `M2ScalerSrcDestCfgControlMSR`
+- `“IOAcceleratorES”`
+- `notify_event_callback()  value: %lld  refcon: 0x%llx\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaPrescalerControlMSR23.cpp`
+- `Failed to init super for filter\n`
+- `IosaRdmaControlMSR25`
+- `PixelCapturePostSclX`
+- `Cannot print FW Logs since system is asleep. Err:%d \n`
+- `clr`
+- `HdrInputError: msbPos0 value [%d] exceeding the range[13:31]\n`
+- `aseDirScaleEn`
+- `Dram`
+- `IosaInternalPipeMSR10.cpp`
+- `site.M2ScalerSrcDestCfgControlMSR9`
+- `cscArbiter`
+- `Checking for SOC 0x%x, HwVersion 0x%x, against table SOC 0x%x, and table version 0x%x\n`
+- `argument id %u already notified!\n`
+- `getBaseOffset`
+- `%s req %d\n`
+- `LOG_EVENT_ERROR_MSR_CORE_ERROR_IRQ`
+- `Failed to fixupApGeneratedTileDesc! req %d\n`
+- `WRITE`
+- `System error: Failure to prepare memory descriptor for ASE API parameters\n`
+- `LOG_EVENT_MAILBOX_IRQ`
+- `[%05X %08X] %03u {%08X %08X} vm step [%02X]: (%s,%u)->(%s,%u)`
+- `TileDone`
+- `Scaler[%d]: Request %d(%p) has not finished transform! (%d/%d)\n`
+- `N301`
+- `Block2H NbrBuf: Addr0=0x%08x [RdCHint:%u WrCHint:%u] Addr1=0x%08x [Size:%u] FullAddr=0x%llx\n`
+- `Capability/Extent OSNumber create for %s Failed\n`
+- `M2ScalerScalingASEControlMSR23.cpp`
+- `initPipeForTransform`
+- `FrameSink_Submit`
+- `site.DitherControl`
+- `StatusDescriptorRingMSR23.cpp`
+- `12111111212111111111111111`
+- `WriteOnlyModeAlpha`
+- `PaLibBackwardPass`
+- `DEST`
+- `agent_mask`
+- `site.FrameDescriptorRingMSR28`
+- `IOSurfaceAcceleratorFormatOutPMARGB8888`
+- `HdrInputError: MSRToneMapMode value [%d] invalid\n`
+- `[IOSA][Boot ] Allocating BlockDescriptorRegStreamMSR23\n`
+- `[IOSA][Boot ] [%s]: %d (%#x) (%s)\n`
+- `Could not retrieve histogram values dictionary`
+- `HDR API consistency error\n`
+- `YES`
+- `[%05X %08X] %03u {%08X %08X} %s DRAM WRITE pre-transfer CRC: 0x%08X`
+- `for reset (resetScaler)`
+- `clock-gates`
+- `[%*s %*s:%-*lu]`
+- `mBoxWrite`
+- `Interchange format with tile sizes other than 16x16 are not supported for chroma plane.\n`
+- `Property (%s) not an OSBoolean!\n`
+- `msr_core_analytics`
+- `checkForMaxDownscale`
+- `site.AppleM2ScalerCSCHalMSR15`
+- `  Found ASE EBE Config V4\n`
+- `Src 2 rgb Input incorrect\n`
+- `activateMSRState_gatedContext`
+- `readBlock`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/FrameDescriptorRingMSR23.cpp`
+- `[%05X %08X] %03u {%08X %08X} ap init`
+- `waitForPowerOn_gated`
+- `setCustomFilters_gatedContext`
+- `ctx_switch`
+- `HDR API precision differs from CSC in use\n`
+- `iBoot`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/AppleM2ScalerCSCHalMSR2.cpp`
+- `TriggerPipeEnablementDump`
+- `Block3H Tile[%d]: Out[0x%08x TileCoord:%u Size:%u] In[0x%08x TileCoord:%u Size:%u]\n`
+- `[IOSA][Boot ] [MSR22] MSR CHIPID: %d \n`
+- `argument %u already removed, nothing to abort\n`
+- `Invalid histogram width/height/X/Y\n: Bw=%u, Bh=%u, Hw=%u, Hx=%u, Hh=%u, Hy=%u\n`
+- `k2k_transformSurface failed with 0x%x\n`
+- `transactionId=%u\n`
+- `  Bilateral Negative Curves:\n`
+- `site.IosaPrescalerControlMSR8`
+- `Pixel offset within compressed tile out of range\n`
+- `fdr_2_wr_ptr`
+- `12111111212111111111111111111111111111111`
+- `addToRequestAge_gatedContext`
+- `V4`
+- `Revert`
+- `BlockAddrSize[%d]: [Block=%u (%s), Addr=0x%llx, Size=%u dwords]\n`
+- `HdrInputError: mode value [%u] not equal to [%u] \n`
+- `Dpe1      `
+- `Firmware paused normally\n`
+- `M2ScalerScalingControlMSR4.cpp`
+- `Received IOSurface message for agent_mask 0x%llx, messageType %u\n`
+- `Missing transform buffer reference`
+- `msr_scheduling_credits_criteria`
+- ` (saved)`
+- `%srotate90_flipY`
+- `kIOSurfaceAddressFormatIndirect`
+- `Failed to initialize Dashboard interrupts (index: %u)!\n`
+- `IOSurfaceAcceleratorFormatIn1PlaneYCBCR10444`
+- `dumpSrcOrDstTransform`
+- `Falling back to default filters, skipping custom filters\n`
+- `IosaDPEControlMSR22`
+- `SharedEventSrcRef`
+- `Emitting tile (%d, %d) wc %d\n`
+- `IosaPowerManager`
+- `powerRefCount cannot be zero with kSPSSleepAcked. [MSR%d] partition %d newState %d oldState %d refCount %d`
+- `IOSurfaceAcceleratorCapabilitiesInterchangeMacroblockSizeLarge`
+- `[%05X %08X] %03u {%08X %08X} %s tile count: h=%u, v=%u, total=%u`
+- `[%05X %08X] %03u {%08X %08X} %s tdcache hit: count=%u`
+- `\"[%s] \" \"setPowerState sleep ack watchdog: MSR%u scaler %u sleepStateSPS=%u powerRefCount=%u partitionPower=%u compQueueEmpty=%u running=%u cmdQueueDepth=%u recoveryInProgress=%u resetReason=%u fwLoaded=%u pendingMask=0x%x ticks=%u\\n\" @%s:%d`
+- `useCustomFilters[VH_Vertical]=%u\n`
+- `validateAndAdjustTransformFormat`
+- `revertCfgEnable`
+- `Context Frame Complete\n`
+- `Mismatching HTPC/VERF planes\n`
+- ` (0.%03ux downscale)`
+- `kSurfaceAcceleratorCapabilitiesVERF`
+- `IOSA Power down hyst in us`
+- `121111111111111111111111111111111`
+- `initScalerPropertiesAndExtents`
+- `site.M2ScalerCSCColorConversionControlMSR7`
+- `msr_workload_priority`
+- `VALIDATE BLOCK[%zu %s]: inv_valid=%u, fs_valid=%u, used=%zu, range.len=%llu, dva=0x%llx\n`
+- `M2ScalerScalingASEControlMSR10`
+- `Block6V Tile[%d]: Out[0x%08x TileCoord:%u Size:%u]\n`
+- `IOSurfaceAcceleratorCapabilitiesSourceXYOffsetsWithTiling`
+- `unexpected value for ITU_VARIANT: %d using YCbCr601\n`
+- `readSocVersionRegister`
+- `IOSurfaceAcceleratorFormatOut1PlaneYonly8`
+- `Max tile size %zu\n`
+- `  shootControlParams2: overMinVal=%d, underMinVal=%d, overShift=%d, underShift=%d\n`
+- `  Parse loop: offset=%zu, remaining=%u, entryType=%s, entrySize=%u\n`
+- `IosaRdmaControlMSR15`
+- `ActiveDartEndTime`
+- `dashboardPairWrite64 dash_index = %u, base_pair = %u, pair = %u, offset = 0x%x\n`
+- `ASE API is not supported by this version of hardware\n`
+- `LOG_EVENT_TD_SCH_FSM_TRANSITION`
+- `mBorderFillOddSizeYCbCrEnable=%u\n`
+- `IosaColorManagerMSR18`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/M2ScalerCSCColorConversionControl.h`
+- `Using precomputed degamma values \n`
+- `No Color Management operation can be performed if one of the formats is Bayer/Quadra unfolded \n`
+- `kPipeLocBypass`
+- `site.IosaTunableControlMSR25`
+- `releaseApiodmaPackets`
+- `site.MSR23CurvatureLUT`
+- `Object is NULL. Film grain initialization failed.`
+- `IosaDPEControlMSR8`
+- `lookupSurfaces`
+- `IOSurfaceAcceleratorFormatInARGB2101010`
+- `FDR pointers %lld %lld previous (%lld %lld)\n `
+- `Failed to alloc IosaPipe\n`
+- `MSRCPU: Configuring Firmware ...\n`
+- `/Library/Caches/com.apple.xbs/522A5A31-EB7C-4ABF-8E34-D1BC4D0B2069/TemporaryDirectory.PZnBn7/Sources/IOSurfaceAccelerator_kexts/IosaRdmaControl.cpp`
+- `IOSurfaceAcceleratorFilterVerticalTapsCount`
+- `validateFilmGrainParameters`
+- `configureWDMA_gatedContext`
+- `rotEn`
+- `site.IosaWdmaControlMSR11`
+- `site.UserAsyncObjectsWrapper`
+- `Program Error: DimensionAdjustmentsForInternalRounding got fractional offsets/dimensions\n`
+- `[IOSA][Boot ] [MSR22] Overriding MSRVERSION with SOCVERSION (%#x)\n `
+- `reclaimed %u PIODMA command(s), released %u MSR power ref(s), refCount now %u\n`
+- `executePowerChange_gatedContext`
+- `IOSurfaceAcceleratorFormatIn2Planes42010`
+- `getIOSurfaceFilmGrainAttachment`
+- `MSR23BackwardsCompatibleFilter::checkCoefficientsValid...0x%x\n`
+- `MSRCPU: Firmware crashed\n`
+- `[IOSA][Boot ] Found properties and extents entry %u\n`
+- `in_flight_timeout`
+- `[%05X %08X] %03u {%08X %08X} INVALID LOG MSG`

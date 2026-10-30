@@ -1,0 +1,21 @@
+# `_UICampoServiceSession` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 3 properties, 3 instance methods, 0 class methods
+
+## Properties
+
+```
+@property (Tq,R,N) identifier;
+@property (TB,R,N,GisPopoverSession) popoverSession;
+@property (TB,R,N) supportsAssistantField;
+```
+
+## Instance methods
+
+```
+-[_UICampoServiceSession identifier];
+-[_UICampoServiceSession isPopoverSession];
+-[_UICampoServiceSession supportsAssistantField];
+```

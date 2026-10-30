@@ -1,0 +1,133 @@
+# `SBFullScreenContinuousExposeSwitcherModifier`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBSwitcherModifier`
+- 7 instance variables, 4 properties, 102 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"SBStripLayoutWindowingModifier" _stripModifier;
+@"SBFullScreenAppLayoutSwitcherModifier" _fullScreenAppLayoutModifier;
+@"NSArray" _zOrderedLeafAppLayoutsForKeyboardNavigation;
+B _handlesTapAppLayoutEvents;
+B _handlesTapAppLayoutHeaderEvents;
+B _continuousExposeConfigurationChangeTransition;
+@"SBAppLayout" _fullScreenAppLayout;
+```
+
+## Properties
+
+```
+@property (T@"SBAppLayout",R,N,V_fullScreenAppLayout) fullScreenAppLayout;
+@property (TB,N,V_handlesTapAppLayoutEvents) handlesTapAppLayoutEvents;
+@property (TB,N,V_handlesTapAppLayoutHeaderEvents) handlesTapAppLayoutHeaderEvents;
+@property (TB,N,GisContinuousExposeConfigurationChangeTransition,V_continuousExposeConfigurationChangeTransition) continuousExposeConfigurationChangeTransition;
+```
+
+## Instance methods
+
+```
+-[SBFullScreenContinuousExposeSwitcherModifier scaleForIndex:];
+-[SBFullScreenContinuousExposeSwitcherModifier anchorPointForIndex:];
+-[SBFullScreenContinuousExposeSwitcherModifier titleOpacityForIndex:];
+-[SBFullScreenContinuousExposeSwitcherModifier isContainerStatusBarVisible];
+-[SBFullScreenContinuousExposeSwitcherModifier shouldUseWallpaperGradientTreatment];
+-[SBFullScreenContinuousExposeSwitcherModifier homeScreenBackdropBlurProgress];
+-[SBFullScreenContinuousExposeSwitcherModifier homeScreenDimmingAlpha];
+-[SBFullScreenContinuousExposeSwitcherModifier shouldUseAnchorPointToPinLayoutRolesToSpace:];
+-[SBFullScreenContinuousExposeSwitcherModifier homeScreenAlpha];
+-[SBFullScreenContinuousExposeSwitcherModifier handleEvent:];
+-[SBFullScreenContinuousExposeSwitcherModifier maskedCornersForIndex:];
+-[SBFullScreenContinuousExposeSwitcherModifier isHomeScreenContentRequired];
+-[SBFullScreenContinuousExposeSwitcherModifier didMoveToParentModifier:];
+-[SBFullScreenContinuousExposeSwitcherModifier touchBehaviorForLayoutRole:inAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier cornerRadiiForIndex:];
+-[SBFullScreenContinuousExposeSwitcherModifier adjustedSpaceAccessoryViewAnchorPoint:forAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier visibleSplitViewHandleNubViews];
+-[SBFullScreenContinuousExposeSwitcherModifier homeScreenBackdropBlurType];
+-[SBFullScreenContinuousExposeSwitcherModifier dockProgress];
+-[SBFullScreenContinuousExposeSwitcherModifier adjustedSpaceAccessoryViewFrame:forAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier visibleHomeAffordanceLayoutElements];
+-[SBFullScreenContinuousExposeSwitcherModifier visibleSplitViewHandleDimmingViews];
+-[SBFullScreenContinuousExposeSwitcherModifier topMostLayoutElements];
+-[SBFullScreenContinuousExposeSwitcherModifier titleAndIconOpacityForIndex:];
+-[SBFullScreenContinuousExposeSwitcherModifier wantsContinuousExposeHoverGesture];
+-[SBFullScreenContinuousExposeSwitcherModifier appLayoutsToCacheSnapshots];
+-[SBFullScreenContinuousExposeSwitcherModifier dimmingAlphaForLayoutRole:inAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier handleTransitionEvent:];
+-[SBFullScreenContinuousExposeSwitcherModifier shouldPinLayoutRolesToSpace:];
+-[SBFullScreenContinuousExposeSwitcherModifier isWallpaperRequiredForSwitcher];
+-[SBFullScreenContinuousExposeSwitcherModifier visibleAppLayouts];
+-[SBFullScreenContinuousExposeSwitcherModifier wantsDockBehaviorAssertion];
+-[SBFullScreenContinuousExposeSwitcherModifier shouldAccessoryDrawShadowForAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier dockUpdateMode];
+-[SBFullScreenContinuousExposeSwitcherModifier perspectiveAngleForIndex:];
+-[SBFullScreenContinuousExposeSwitcherModifier shouldAllowContentViewTouchesForLayoutRole:inAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier visibleCornersForTouchResizeForLayoutRole:inAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier shadowOpacityForLayoutRole:atIndex:];
+-[SBFullScreenContinuousExposeSwitcherModifier headerStyleForIndex:];
+-[SBFullScreenContinuousExposeSwitcherModifier wallpaperStyle];
+-[SBFullScreenContinuousExposeSwitcherModifier switcherHitTestsAsOpaque];
+-[SBFullScreenContinuousExposeSwitcherModifier frameForIndex:];
+-[SBFullScreenContinuousExposeSwitcherModifier activeLeafAppLayoutsReachableByKeyboardShortcut];
+-[SBFullScreenContinuousExposeSwitcherModifier backgroundOpacityForIndex:];
+-[SBFullScreenContinuousExposeSwitcherModifier spaceAccessoryViewIconHitTestOutsetForAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier canSelectLeafWithModifierKeysInAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier activeCornersForTouchResizeForLayoutRole:inAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier cornerRadiiForLayoutRole:inAppLayout:withCornerRadii:];
+-[SBFullScreenContinuousExposeSwitcherModifier handleTapOutsideToDismissEvent:];
+-[SBFullScreenContinuousExposeSwitcherModifier isItemResizingAllowedForLayoutRole:inAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier wantsMenuBar];
+-[SBFullScreenContinuousExposeSwitcherModifier wallpaperGradientAttributesForLayoutRole:inAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier handleTapAppLayoutEvent:];
+-[SBFullScreenContinuousExposeSwitcherModifier isLayoutRoleEligibleForContentDragSpringLoading:inAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier frameForSplitViewHandleNubView:];
+-[SBFullScreenContinuousExposeSwitcherModifier hiddenContainerStatusBarParts];
+-[SBFullScreenContinuousExposeSwitcherModifier appLayoutsToResignActive];
+-[SBFullScreenContinuousExposeSwitcherModifier occlusionStateForLayoutRole:inAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier isLayoutRoleSelectable:inAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier isContainerStatusBarPart:hiddenByLeafAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier wantsSpaceAccessoryViewPointerInteractionsForAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier shouldSuppressHighlightEffectForLayoutRole:inAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier preferredStatusBarAxis];
+-[SBFullScreenContinuousExposeSwitcherModifier shadowStyleForLayoutRole:inAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier shouldAllowGroupOpacityForAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier hasContentIntersectingMenuBarRegion];
+-[SBFullScreenContinuousExposeSwitcherModifier isLayoutRoleMatchMovedToScene:inAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier shouldConfigureInAppDockHiddenAssertion];
+-[SBFullScreenContinuousExposeSwitcherModifier footerViewIconAlignmentForAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier frameForSplitViewHandleDimmingView:];
+-[SBFullScreenContinuousExposeSwitcherModifier maskedCornersForLayoutRole:inAppLayout:withMaskedCorners:];
+-[SBFullScreenContinuousExposeSwitcherModifier isHomeAffordanceSupportedForAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier shouldAnimateInsertionOrRemovalOfAppLayout:atIndex:];
+-[SBFullScreenContinuousExposeSwitcherModifier contentPageViewScaleForAppLayout:withScale:];
+-[SBFullScreenContinuousExposeSwitcherModifier descriptionBuilderWithMultilinePrefix:];
+-[SBFullScreenContinuousExposeSwitcherModifier appLayoutsToCacheFullsizeSnapshots];
+-[SBFullScreenContinuousExposeSwitcherModifier isLayoutRoleDraggable:inAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier _isAppLayoutEffectivelyOnStage:];
+-[SBFullScreenContinuousExposeSwitcherModifier _isStripStashed];
+-[SBFullScreenContinuousExposeSwitcherModifier handlesTapAppLayoutHeaderEvents];
+-[SBFullScreenContinuousExposeSwitcherModifier _continuousExposeStripEdge];
+-[SBFullScreenContinuousExposeSwitcherModifier _continuousExposeStripRevealProgress];
+-[SBFullScreenContinuousExposeSwitcherModifier _isStripRevealedFromHidden];
+-[SBFullScreenContinuousExposeSwitcherModifier _resetKeyboardNavigationZOrder];
+-[SBFullScreenContinuousExposeSwitcherModifier _responseForDismissingStrip];
+-[SBFullScreenContinuousExposeSwitcherModifier _shouldEnableItemResizeGrabbersForLayoutRole:inAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier _shouldEnableResizingForLayoutRole:inAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier _stageContainsFullScreenItem];
+-[SBFullScreenContinuousExposeSwitcherModifier _updateStripModifierIfNeeded];
+-[SBFullScreenContinuousExposeSwitcherModifier _wantsContinuousExposeHoverGestureForDismissingStrip];
+-[SBFullScreenContinuousExposeSwitcherModifier continuousExposeStripProgress];
+-[SBFullScreenContinuousExposeSwitcherModifier fullScreenAppLayout];
+-[SBFullScreenContinuousExposeSwitcherModifier handleHoverEvent:];
+-[SBFullScreenContinuousExposeSwitcherModifier handlePointerCrossedDisplayBoundaryEvent:];
+-[SBFullScreenContinuousExposeSwitcherModifier handleTapAppLayoutHeaderEvent:];
+-[SBFullScreenContinuousExposeSwitcherModifier handleTapSlideOverTongueEvent:];
+-[SBFullScreenContinuousExposeSwitcherModifier handlesTapAppLayoutEvents];
+-[SBFullScreenContinuousExposeSwitcherModifier initWithFullScreenAppLayout:];
+-[SBFullScreenContinuousExposeSwitcherModifier isContinuousExposeConfigurationChangeTransition];
+-[SBFullScreenContinuousExposeSwitcherModifier setContinuousExposeConfigurationChangeTransition:];
+-[SBFullScreenContinuousExposeSwitcherModifier setHandlesTapAppLayoutEvents:];
+-[SBFullScreenContinuousExposeSwitcherModifier setHandlesTapAppLayoutHeaderEvents:];
+```

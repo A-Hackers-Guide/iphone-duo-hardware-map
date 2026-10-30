@@ -1,0 +1,16 @@
+# `_TtC11MediaCoreUI30NowPlayingHostedContentSession`
+
+- Image: [`/System/Library/PrivateFrameworks/MediaCoreUI.framework/MediaCoreUI`](../userland/System__Library__PrivateFrameworks__MediaCoreUI.framework__MediaCoreUI.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `_TtCs12_SwiftObject`
+- 6 instance variables, 0 properties, 0 instance methods, 0 class methods
+
+## Instance variables
+
+```
+MediaCoreUI.NowPlayingViewModel @unowned type viewModel;
+_$sSh -> Combine.AnyCancellable subscriptions;
+MediaCoreUI.NowPlayingHostedViewController ? viewController;
+Swift.Bool safeAreaInsetsAreFrozenForPresentation;
+MediaCoreUI.DeviceMetrics ? deviceMetrics;
+_$sSbSg _controlsHidden;
+```

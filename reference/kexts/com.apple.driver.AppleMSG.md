@@ -1,0 +1,1152 @@
+# `com.apple.driver.AppleMSG`
+
+- Name: AppleMSG
+- Version: `1`
+- UUID: `B1F43CE0-9F44-3A2A-801B-037EAD229FCA`
+- Source version: `420.0.2.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleEmbeddedPCIE`](com.apple.driver.AppleEmbeddedPCIE.md) 1.0.0, [`com.apple.driver.AppleFirmwareKit`](com.apple.driver.AppleFirmwareKit.md) 1.0.0, [`com.apple.iokit.IOHIDFamily`](com.apple.iokit.IOHIDFamily.md) 2.0, [`com.apple.iokit.IOPCIFamily`](com.apple.iokit.IOPCIFamily.md) 2.7.3, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 9.0.0d1, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 9.0.0d1, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 9.0.0d1, [`com.apple.kpi.private`](com.apple.kpi.private.md) 22.0
+
+## Device-tree nodes it binds (1) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/msg`](../devicetree/root__arm-io__msg.md) | `AppleMSGKext` | `msg-mapper` |
+
+## IOKit personalities (2) [KC]
+
+### AppleMSG
+- `CFBundleIdentifier`: `com.apple.driver.AppleMSG`
+- `IOClass`: `AppleMSGKext`
+- `IONameMatch`:
+  - `msg-mapper`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleMSG`
+- `IOProviderClass`: `AppleARMIODevice`
+- `IOUserClientClass`: `AppleMSGKextUserClient`
+
+### AppleMSGEPIC
+- `CFBundleIdentifier`: `com.apple.driver.AppleMSG`
+- `IOClass`: `AppleMSGKextEPIC`
+- `IONameMatch`: `msg-svc`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleMSG`
+- `IOProviderClass`: `AFKEndpointInterface`
+- `IOUserClientClass`: `AppleMSGKextEPICUserClient`
+
+
+## C++ classes (11) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleMSGKext` | 0x28288 | IOService → IORegistryEntry |
+| `AppleMSGKextEPIC` | 0x4430 | IOService → IORegistryEntry |
+| `AppleMSGKextEPICUserClient` | 0x100 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `AppleMSGKextUserClient` | 0x108 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `AppleMSGWatchdog` | 0x100 |  |
+| `MSGPerfCoreAnalytics` | 0x20 |  |
+| `MSGPulseRateNotifier` | 0x28 | MSGSyncNotifier |
+| `MSGPulseRateSubscriber` | 0x80 |  |
+| `MSGSyncInterrupt` | 0x28 | MSGSyncNotifier |
+| `MSGSyncNotifier` | 0x20 |  |
+| `MSGSyncSubscriber` | 0x58 |  |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x00018e94 off=0x00642b10-0x0065b9a4 addr=0xfffffe0007646b10-0xfffffe000765f9a4 r--/r--   __TEXT            
+	sz=0x00000362 off=0x00643230-0x00643592 addr=0xfffffe0007647230-0xfffffe0007647592               __TEXT.__const            
+	sz=0x00011b18 off=0x00643592-0x006550aa addr=0xfffffe0007647592-0xfffffe00076590aa               __TEXT.__os_log           
+	sz=0x000068fa off=0x006550aa-0x0065b9a4 addr=0xfffffe00076590aa-0xfffffe000765f9a4               __TEXT.__cstring          (CstringLiterals)
+001: LC_SEGMENT_64 sz=0x0003b0d4 off=0x022049b0-0x0223fa84 addr=0xfffffe00092089b0-0xfffffe0009243a84 r-x/r-x   __TEXT_EXEC       
+	sz=0x0003a9b4 off=0x022049b0-0x0223f364 addr=0xfffffe00092089b0-0xfffffe0009243364          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000720 off=0x0223f364-0x0223fa84 addr=0xfffffe0009243364-0xfffffe0009243a84          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00000908 off=0x04978a38-0x04979340 addr=0xfffffe000b97ca38-0xfffffe000b97d340 rw-/rw-   __DATA            
+	sz=0x000000d0 off=0x04978a38-0x04978b08 addr=0xfffffe000b97ca38-0xfffffe000b97cb08               __DATA.__data             
+	sz=0x00000250 off=0x00000000-0x00000250 addr=0xfffffe000b97cb08-0xfffffe000b97cd58               __DATA.__common           (Zerofill)
+	sz=0x000005e8 off=0x00000000-0x000005e8 addr=0xfffffe000b97cd58-0xfffffe000b97d340               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x000053d8 off=0x01164e40-0x0116a218 addr=0xfffffe0008168e40-0xfffffe000816e218 rw-/rw-   __DATA_CONST      
+	sz=0x00000050 off=0x01164e40-0x01164e90 addr=0xfffffe0008168e40-0xfffffe0008168e90         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000050 off=0x01164e90-0x01164ee0 addr=0xfffffe0008168e90-0xfffffe0008168ee0         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x000044d8 off=0x01164ee0-0x011693b8 addr=0xfffffe0008168ee0-0xfffffe000816d3b8         __DATA_CONST.__const            
+	sz=0x00000480 off=0x011693b8-0x01169838 addr=0xfffffe000816d3b8-0xfffffe000816d838         __DATA_CONST.__kalloc_type      
+	sz=0x000005a0 off=0x01169838-0x01169dd8 addr=0xfffffe000816d838-0xfffffe000816ddd8         __DATA_CONST.__kalloc_var       
+	sz=0x00000390 off=0x01169dd8-0x0116a168 addr=0xfffffe000816ddd8-0xfffffe000816e168         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000b0 off=0x0116a168-0x0116a218 addr=0xfffffe000816e168-0xfffffe000816e218         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 250 at 0x04aded24
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     B1F43CE0-9F44-3A2A-801B-037EAD229FCA
+008: LC_SOURCE_VERSION           420.0.2.0.0
+009: LC_FUNCTION_STARTS          offset=0x004aa9bd0 size=0x8b0
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleExecutable`: `AppleMSG`
+- `CFBundleIdentifier`: `com.apple.driver.AppleMSG`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleMSG`
+- `CFBundleNumericVersion`: `16809984`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2020 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleMSG.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198899234032`
+- `_PrelinkExecutableRelativePath`: `AppleMSG`
+- `_PrelinkExecutableSize`: `367688`
+- `_PrelinkExecutableSourceAddr`: `-2198899234032`
+- `_PrelinkKmodInfo`: `-2198828758472`
+
+## Strings (1011) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__os_log]**
+
+- `AppleMSGLocalService::%s: err=0x%x\n`
+- `AppleMSGKext_Power::%s: _updateRegValues failed with retcode %x\n`
+- `AppleMSGKext_RTVSync: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGKextEPIC::%s: Overriding EDT sync configs for Camera 2-8 (DualSync=0)\n`
+- `AppleMSGKext_EDT::%s: num_sync_interrupts = %d\n\n`
+- `AppleMSGWatchdog::%s: address=0x%qx size=%llu inout\n\n`
+- `AppleMSGWatchdog::%s: Client has checked in during Wake, SN = %llu\n`
+- `AppleMSGKext_ConfigCache::%s: dumping init config for sync id %i\n`
+- `AppleMSGKextEPIC::%s: packetType:0x%x timestamp:%lld payloadSize:%zu\n`
+- `AppleMSGWatchdog::%s: Request watchdog wake, SN = %llu\n`
+- `AppleMSGWatchdog::%s: Watchdog expired, but skipping client kill\n`
+- `AppleMSGLocalService::%s: configuring master sync %u @ (%llu,%hu) GTB\n`
+- `AppleMSGKext_Power::%s: Detected transition still in progress on sleep, state %u (will be reset)\n`
+- `AppleMSGKextEPIC::%s: Got report for ET #%u with count %llu, @time %llu.\n`
+- `AppleMSGKextEPIC::%s: failed to end AFK Session during init!\n`
+- `AppleMSGWatchdog::%s: wdt=0x%llx\n\n`
+- `AppleMSGLocalService::%s: AppleMSG Potentially Fatal (%u): Another Event Trigger occured during the handling of this event trigger!\n`
+- `AppleMSGKext::%s: Boot-arg override syncgen %u frame duration: %llu\n`
+- `MSGIOServiceUtility::%s: Failed to wait for the service named %s, with the error code: 0x%08x\n`
+- `AppleMSGKext_EDT::%s: Device Name in EDT is larger than allocation for our variable\n`
+- `AppleMSGLocalService::%s: Successfully got FIFO state for sync: %u fifo_avail_count=%d\n`
+- `AppleMSGWatchdog::%s: Reporting client suspension of %llu ms to CoreAnalytics\n`
+- `AppleMSGLocalService::%s: Successfully reset sync %u\n`
+- `AppleMSGLocalService::%s: Successfully got active config for sync: %u\n`
+- `AppleMSGWatchdog::%s: Time since last Check-in: %llu ms, Suspension Start: %llu ms, Suspension End: %llu ms\n`
+- `AppleMSGKextUserClient::%s: msg_log_info test\n`
+- `AppleMSGKextEPIC::%s: Overriding EDT sync configs for Camera 2-8 (DualSync=1)\n`
+- `AppleMSGKextEPIC::%s: Resuming GTB watchdog\n`
+- `AppleMSGKext_EDT::%s: Found sync '%s' -> ID %u on device '%s'\n`
+- `AppleMSGKext_EDT::%s: Found event trigger '%s' -> ID %u on device '%s'\n`
+- `AppleMSGWatchdog::%s: Enabling watchdog logic without panic.\n\n`
+- `AppleMSGWatchdog::%s: retcode=0x%x\n\n`
+- `AppleMSGLocalService::%s: AppleMSG Build Variant: %s\n\n`
+- `AppleMSGKext_UserMapping::%s: MSG memory mapping not available - _msgMemoryMap=%p, _msgProvider=%p\n`
+- `AppleMSGKextEPIC::%s: Extending history for sync %u, count=%u, length=%u\n\n`
+- `AppleMSGKextEPIC::%s: watchdog disabled by boot-arg.\n\n`
+- `AppleMSGWatchdog::%s: clientDied during state %s: %s %s\n`
+- `AppleMSGLocalService::%s: AppleMSG Potentially Fatal (%u): Failed to update RTVsync!\n`
+- `AppleMSGWatchdog::%s: Request to kill PID %d with psignal_sigkill_with_reason\n`
+- `AppleMSGKextEPIC::%s: Response for bora errored with code: %x\n`
+- `AppleMSGKextEPIC::%s: dumping current sync-gen history buffer for all active syncs\n`
+- `AppleMSGKextEPIC::%s: Updated demand count=%llu and updated power state=%d\n`
+- `AppleMSGKext_EDT::%s: No sync presets found\n\n`
+- `AppleMSGLocalService::%s: stop sync %u @ frame %u\n`
+- `AppleMSGLocalService::%s: Successfully stoped sync %u @ (%llu,%hu)\n`
+- `MSGSyncInterrupt::%s: subscriber not found\n`
+- `AppleMSGKextEPIC::%s: syncGetStatus id %d retcode 0x%x active: %d\n`
+- `AppleMSGWatchdog::%s: MSG Watchdog state is %s\n`
+- `AppleMSGLocalService::%s: configuring slave sync %u\n`
+- `MSGSyncInterrupt::%s: failed to add subscriber\n`
+- `AppleMSGKextEPIC::%s: err enqueueing cmd: %x\n`
+- `AppleMSGKext_Transitions::%s: entry\n`
+- `AppleMSGKext_Transitions::%s: Sync %d transitioning framerate index %u -> %u at GTB %llu (frame ID %u)\n`
+- `AppleMSGKext_EDT::%s: configuring local sync #%d\n`
+- `AppleMSGLocalService::%s: Unrecognized batch config entry type %#x\n\n`
+- `AppleMSGKext::%s: msg=0x%llx (%s)\n`
+- `MSGPerfCoreAnalytics::%s: MSGPerfCoreAnalytics %s:%llu %s submission:%s\n`
+- `AppleMSGKextEPIC::%s: detected kernel POST testing enabled, watchdog disabled.\n\n`
+- `AppleMSGKext_EDT::%s: Event trigger name '%s' not found in LUT\n`
+- `AppleMSGWatchdog::%s: cID=%llu, PID=%d, interval = %llu strict=%llu relaxed=%llu frames\n\n`
+- `AppleMSGLocalService::%s: configuring master sync %u\n`
+- `AppleMSGLocalService::%s: Successfully got sync initialization configuration for sync id: %u\n`
+- `AppleMSGLocalService::%s: AppleMSG Potentially Fatal (%u): Failed Event Trigger intr_sts read\n`
+- `AppleMSGKext_ConfigCache: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGKext_TrackedTimer::%s: Set tracked time %hhu @ %llu: %llu; inc:%u+%hu/%hu\n`
+- `AppleMSGKextEPIC::%s: msg_log_debug test\n`
+- `AppleMSGWatchdog::%s: Watchdog expired, but client process is suspended. Reset timer\n`
+- `AppleMSGLocalService::%s: Successfully configured master sync %u\n`
+- `MSGPulseRateSubscriber::%s: post-add: sync %u has %u subs\n`
+- `MSGIOServiceUtility::%s: Added the matching notification for Bora\n\n`
+- `AppleMSGKextEPIC: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGKext_Notification::%s: Detected missed interrupt, using cached frame duration\n`
+- `AppleMSGWatchdog::%s: Set pre-panic delay to %u frames (%u ms at %ufps)\n\n`
+- `AppleMSGWatchdog::%s: ClientDied panic has been disabled\n`
+- `AppleMSGKext_Notification: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGKextEPIC::%s: Read %u config presets in %u bytes from EDT\n\n`
+- `AppleMSGLocalService::%s: reset sync %u\n`
+- `AppleMSGLocalService::%s: Soft reset sync %u\n`
+- `AppleMSGLocalService::%s: Get sync initialization configuration for sync id: %u\n`
+- `AppleMSGKextEPIC::%s: intr enable vals=%u, sizeof=%lu\n`
+- `AppleMSGKextEPIC::%s: msg_log_error test\n`
+- `AppleMSGKext_Notification::%s: removed %u subscriptions for client\n`
+- `AppleMSGLocalService::%s: Successfully retrieved the current timestamps\n`
+- `AppleMSGKext_TrackedTimer: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `MSGIOServiceUtility::%s: Failed to register power interest for the service named %s, with the error code: 0x%08x\n`
+- `AppleMSGWatchdog::%s: detected kernel POST testing enabled, watchdog disabled.\n\n`
+- `AppleMSGWatchdog::%s: Don't halt CPUTrace when watchdog expires.\n\n`
+- `AppleMSGWatchdog::%s: monitoring disabled.\n\n`
+- `AppleMSGKextUserClient::%s: msg_log_debug test\n`
+- `AppleMSGKext_Interrupt::%s: AppleMSG Potentially Fatal (%u): FrameID changed from %llu to %llu between AP Interrupt Handler Executions.\n`
+- `MSGPulseRateSubscriber::%s: pre-remove : sync %u has %u subs\n`
+- `AppleMSGKext_EDT::%s: Found no interrupts for MSGKext\n\n`
+- `AppleMSGWatchdog::%s: Enabling MSG Watchdog\n`
+- `AppleMSGKext_RTVSync::%s: last config, tracking: (%llu, %llu)\n`
+- `AppleMSGKextEPIC::%s: Bora is powered off. Cannot release handles\n`
+- `AppleMSGKext::%s: start\n`
+- `AppleMSGWatchdog::%s: watchdog disabled by boot-arg.\n\n`
+- `AppleMSGWatchdog::%s: interval=%llu\n\n`
+- `AppleMSGWatchdog::%s: Ignoring request to set MSG Watchdog state from %s to %s\n`
+- `AppleMSGWatchdog::%s: Panic suppressed by boot-args: %s\n`
+- `AppleMSGKext::%s: probe()\n`
+- `AppleMSGKext_Notification::%s: client DISCONNECTED id: %llu, checking for dangling subscriptions\n`
+- `AppleMSGKextEPIC::%s: Enqueued ET #%u with count %llu, @time %llu.\n`
+- `AppleMSGKextEPIC::%s: Config for sync %u is out of date\n\n`
+- `AppleMSGWatchdog::%s: Boot timeout expired. timeout=%d.\n\n`
+- `AppleMSGKextEPICUserClient::%s: msg_log test\n`
+- `AppleMSGWatchdog::%s: Request to kill PID %d with proc_signal\n`
+- `AppleMSGWatchdog::%s: Kill client process if it is suspended.\n\n`
+- `AppleMSGWatchdog::%s: Set MSG Watchdog state from %s to %s\n`
+- `AppleMSGLocalService::%s: Get FIFO state for sync: %u\n`
+- `MSGSyncInterrupt::%s: client already subscribed to this sync pulse\n`
+- `AppleMSGKext_UserMapping::%s: Failed to create memory descriptor for MSG registers\n`
+- `AppleMSGKextEPIC::%s: Found the EDT config hub!\n`
+- `AppleMSGKextEPIC::%s: intr enable=%u\n`
+- `MSGIOServiceUtility: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGKext_EDT::%s: Sync name LUT not available\n`
+- `AppleMSGLocalService::%s: initialize sync %u as master {sync_trigger: %u}\n`
+- `AppleMSGKext_Power::%s: _initSyncConfigs failed with retcode %x\n`
+- `AppleMSGKextEPIC::%s: WARNING: sw sync id %u can't be mapped to hw sync id, skipping it's config tracing\n`
+- `AppleMSGKextEPIC::%s: dumping current sync-gen history for sync %i\n`
+- `MSGVirtualFrameID: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGKext_Reporting: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGKext_ConfigCache::%s: Extending history for sync %u, count=%u, length=%u\n\n`
+- `AppleMSGKextEPICUserClient::%s: Output payload size %d didn't match the expected size %d\n`
+- `MSGSyncInterrupt::%s: pre-remove : sync %u has %u subs\n`
+- `AppleMSGWatchdog::%s: No Check-ins: %llu -> %llu, Last Suspension: %llu -> %llu, count: %llu, total duration: %llu\n`
+- `AppleMSGLocalService::%s: configuring slave sync %u @ frame %u\n`
+- `AppleMSGLocalService::%s: AppleMSG Potentially Fatal (%u): Event Trigger missed at least 1 interrupt!\n`
+- `AppleMSGKext_UserMapping::%s: Mapping MSG IP is not supported on release builds!\n`
+- `AppleMSGKextEPIC::%s: probe()\n`
+- `AppleMSGKextEPIC::%s: dumping new config for sync_id: %u\n`
+- `AppleMSGKext_EDT::%s: Sync name '%s' not found in LUT\n`
+- `AppleMSGWatchdog::%s: service checked in.\n\n`
+- `AppleMSGLocalService::%s: AppleMSG Potentially Fatal (%u): Failed Event Trigger count read\n`
+- `AppleMSGKext: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGKext::%s: Waiting for MSG system ready, thread=%p, timeout_ns=%llu\n`
+- `AppleMSGKext::%s: syncGetStatus id %d retcode 0x%x active: %d\n`
+- `AppleMSGKextEPICUserClient::%s: msg_log_always test\n`
+- `AppleMSGKextBase: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGWatchdog::%s: Can't allocate lock\n\n`
+- `AppleMSGKext_UserMapping::%s: Unsupported memory type: %u\n`
+- `AppleMSGKextEPIC::%s: Applied %d remote configurations\n\n`
+- `AppleMSGKextEPIC::%s: wdt=0x%llx\n\n`
+- `AppleMSGKextEPIC::%s: There are no handles to be released\n`
+- `AppleMSGKext_Syncs::%s: getting config %i for %u\n`
+- `AppleMSGWatchdog::%s: Invalid watchdog interval. interval=%llu\n\n`
+- `AppleMSGWatchdog::%s: Request watchdog sleep, SN = %llu\n`
+- `AppleMSGLocalService::%s: {slave, timer: %u, frame-skip: %hu, polarity: %u, assert-duration: (%llu, %hu), offset: (%lli, %hu)}\n`
+- `AppleMSGLocalService::%s: AppleMSG Potentially Fatal (%u): Failed Event Trigger ts read\n`
+- `AppleMSGKext::%s: Loading of MSG local kext has been disabled via boot-arg '%s' with a value of 0x%x\n\n`
+- `AppleMSGKext::%s: stop()\n`
+- `AppleMSGKext::%s: Link delay is only measured using remote MSG instance\n`
+- `AppleMSGKextUserClient::%s: watchdogAddClient. address=%llx strict=%llu relaxed=%llu\n\n`
+- `AppleMSGWatchdog::%s: MSG Watchdog v2.9.4 (%s, %s).\n\n`
+- `AppleMSGLocalService::%s: Successfully stoped sync %u @ \n`
+- `AppleMSGKext::%s: syncGetConfig retcode %x sync_id %d frame duration %llu\n`
+- `AppleMSGKextUserClient::%s: msg_log_error test\n`
+- `AppleMSGKext_UserMapping::%s: Unable to get memory descriptor from existing memory map\n`
+- `AppleMSGKext_Transitions::%s: AppleMSG Potentially Fatal (%u): Failed to correctly compute transition timing.\n`
+- `AppleMSGWatchdog::%s: %s overrides wdt=-1, Enabling watchdog\n\n`
+- `AppleMSGLocalService: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `MSGSyncInterrupt::%s: post-add: sync %u has %u subs\n`
+- `AppleMSGKext_Notification::%s: Failed to send mach notification\n`
+- `AppleMSGKext::%s: syncStop sync_id %u retcode %x\n`
+- `AppleMSGKextEPIC::%s: AppleMSG Potentially Fatal (%u): Inter-SOC GTB skew is too large (latency to Bora: %lli)\n`
+- `AppleMSGKextEPIC::%s: Disabling GTB watchdog during sleep\n`
+- `AppleMSGKextEPIC::%s: syncStop sync_id %u retcode %x\n`
+- `AppleMSGWatchdog::%s: Watchdog expired, but disabled due to valid conditions (%s): %s %s\n`
+- `AppleMSGKextEPIC::%s: Thread waiting on bora response was awakened\n`
+- `AppleMSGKextEPIC::%s: AppleMSGKextEPIC's desired power state set to off in response to demand\n\n`
+- `AppleMSGKext_Transitions: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGWatchdog::%s: %s\n`
+- `MSGProxy: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGKextEPIC::%s: loadConfigsStartSynchronous retcode %x\n`
+- `AppleMSGKext_EDT::%s: No preset sync configurations to apply\n`
+- `AppleMSGWatchdog::%s: Client checked in after suspension\n`
+- `MSGSyncInterrupt::%s: pre-add : sync %u has %u subs\n`
+- `AppleMSGKextEPIC::%s: AppleMSG Potentially Fatal (%u): Failed to handle incoming AFK Report Packet!\n`
+- `AppleMSGLocalService::%s: Set tracked time %hhu @ %llu: %llu; inc:%u+%hu/%hu\n`
+- `AppleMSGLocalService::%s: Successfully stopped sync %u @ frame %u\n`
+- `AppleMSGKextUserClient::%s: msg_log test\n`
+- `AppleMSGKext_EDT: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGLocalService::%s: Successfully initialized sync %u as master {sync_trigger: %hhu}\n`
+- `Failed to release handle with error code: 0x%x\n`
+- `AppleMSGKextEPIC::%s: stop()\n`
+- `AppleMSGKextEPIC::%s: entry\n`
+- `AppleMSGKextEPIC::%s: msg_log_info test\n`
+- `AppleMSGKextEPIC::%s: start\n`
+- `AppleMSGKext_Syncs: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGWatchdog::%s: %s=0x%llx\n\n`
+- `AppleMSGWatchdog::%s: SystemHasPoweredOn (Wake) Notification Received\n`
+- `AppleMSGLocalService::%s: Configuring event trigger config %u\n`
+- `AppleMSGKext::%s: MSG waiter wakeup, thread=%p, waitresult=0x%x\n`
+- `AppleMSGKextEPIC::%s: response:time=%llu\n`
+- `AppleMSGKextEPIC::%s: Bora-less wake feature enabled for MSG\n\n`
+- `AppleMSGKext_Interrupt: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGLocalService::%s: initialize sync %u as slave {master: %u, sync_trigger: %u}\n`
+- `AppleMSGLocalService::%s: Successfully configured slave sync %u\n`
+- `AppleMSGLocalService::%s: msg_log_error test\n`
+- `MSGPerfCoreAnalytics::%s: MSGPerfCoreAnalytics _coreAnalyticsService is null unable to submit: %s:%llu %s\n`
+- `AppleMSGKext_Interrupt::%s: AppleMSG Potentially Fatal (%u): AppleMSG Sync Interrupt Callback Failed, err=0x%08x\n`
+- `MSGPulseRateSubscriber::%s: post-remove : sync %u has %u subs\n`
+- `AppleMSGWatchdog::%s: %s = %u ms\n\n`
+- `AppleMSGLocalService::%s: MSG Version: AppleMSG-%s\n\n`
+- `AppleMSGKextEPICUserClient::%s: msg_log_info test\n`
+- `AppleMSGKextUserClient: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGLocalService::%s: Set tracked time %hhu immediate: %llu; inc:%u+%hu/%hu\n`
+- `AppleMSGWatchdog::%s: Durations for %s Suspension: %llu ms, Total Suspension: %llu ms, Time since: %llu ms\n`
+- `AppleMSGKextEPIC::%s: dumping init config for sync id %u\n`
+- `AppleMSGKextEPIC::%s: WARNING: sw sync id %llu can't be mapped to hw sync id, skipping it's config tracing\n`
+- `AppleMSGWatchdog::%s: monitoring disabled with retryCount %d\n\n`
+- `AppleMSGLocalService::%s: Setting sync %u's trigger interrupts to %d and sched_err interrupts to %d\n`
+- `AppleMSGLocalService::%s: start sync %u\n`
+- `AppleMSGKextEPICUserClient::%s: msg_log_debug test\n`
+- `AppleMSGWatchdog::%s: Client (cID=%llu, PID=%d) was suspended since last check-in\n`
+- `AppleMSGKext_Power::%s: Failed to complete failsafe teardown: err=0x%08x\n`
+- `AppleMSGKextEPIC::%s: entry for state: %lu\n`
+- `AppleMSGWatchdog::%s: Warning: New addClient for cID %llu, ignoring previously attached cID %llu\n`
+- `AppleMSGKextEPICUserClient: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGKext::%s: %s this: %p _msgBaseAddress: %#lx, chipID: %x\n`
+- `AppleMSGKextEPIC::%s: AppleMSG Potentially Fatal (%u): Inter-SOC GTB skew is too large (latency to Staten: %lli)\n`
+- `AppleMSGKextEPIC::%s: Bora-less wake feature NOT enabled for MSG\n\n`
+- `AppleMSGKext_EventTrigger: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGKext_EDT::%s: Added baseAddress %#lx for index %d\n\n`
+- `AppleMSGWatchdog::%s: Disabling watchdog.\n\n`
+- `AppleMSGLocalService::%s: msg_log test\n`
+- `AppleMSGKext::%s: Got camDispConfig from EDT: %d\n`
+- `AppleMSGKextEPIC::%s: Response recieved, retcode:0x%x timestamp:%llu, payloadSize:%zu\n`
+- `AppleMSGKextEPIC::%s: Unknown packet type!\n`
+- `AppleMSGKextEPIC::%s: AppleMSGKextEPIC's desired power state set to on in response to demand\n\n`
+- `AppleMSGKext_EDT::%s: _populateSyncLUT failed with retcode = 0x%x\n`
+- `AppleMSGWatchdog: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGLocalService::%s: Get frame count extended bits\n`
+- `AppleMSGLocalService::%s: stop sync %u\n`
+- `AppleMSGKext_RTVSync::%s: {master, timer: %u, polarity: %u, assert-duration: (%llu, %hu), frame-duration: (%llu, %hu, %hu/%hu)}\n`
+- `AppleMSGKextEPIC::%s: Enqueueing ET got an error: 0x%x\n`
+- `MSGPulseRateSubscriber::%s: pre-add : sync %u has %u subs\n`
+- `AppleMSGKext_EDT::%s: Event trigger name LUT not available\n`
+- `AppleMSGWatchdog::%s: Requested conID %llu, Active conID %llu\n`
+- `AppleMSGLocalService::%s: stop sync %u @ (%llu,%hu)\n`
+- `AppleMSGLocalService::%s: msg_log_info test\n`
+- `AppleMSGKext_UserMapping::%s: Created memory descriptor for MSG registers: phys=0x%llx, size=0x%llx\n`
+- `AppleMSGKextEPIC::%s: done\n`
+- `AppleMSGKextEPIC::%s: Handle Report failed with error: 0x%x\n`
+- `AppleMSGKext_Interrupt::%s: AppleMSG Potentially Fatal (%u): Sched error interrupt for sync id %u\n`
+- `AppleMSGKext::%s: syncGetTrackingInfo retcode %x sync_id %d pulse start time %lld\n`
+- `AppleMSGWatchdog::%s: Don't kill client process if it is suspended (default).\n\n`
+- `AppleMSGLocalService::%s: Successfully got frame duration Integer for sync:%u frame_dur=%llu\n`
+- `AppleMSGLocalService::%s: AppleMSG Potentially Fatal (%u): Event Trigger Reporting during the handling of this event trigger!\n`
+- `AppleMSGKext_Power::%s: Failed to preserve monotonicity of frametrack, and mark lastFrameID dirty on wake: err=0x%08x\n`
+- `AppleMSGKextUserClient::%s: msg_log_always test\n`
+- `AppleMSGLocalService::%s: Successfully Got frame count extended bits, ext_bits=%llu\n`
+- `AppleMSGKextEPIC::%s: Loading of MSG remote kext has been disabled via boot-arg '%s' with a value of 0x%x\n\n`
+- `AppleMSGClient: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGLocalService::%s: Resetting Sync 0, Frame IDs are no longer global or monotonic!\n`
+- `AppleMSGLocalService::%s: Batch entry %d : sync ID %d : scheduled %d : frameno %lld : framedur %lld\n\n`
+- `AppleMSGKext::%s: MSG system ready, thread=%p, timeout_ns=%llu\n`
+- `AppleMSGKext::%s: Got camDispConfig from boot-arg: %d\n`
+- `AppleMSGKext_UserMapping::%s: Invalid MSG memory parameters: phys=0x%llx, size=0x%llx\n`
+- `AppleMSGKextEPIC::%s: syncGetTrackingInfo retcode %x sync_id %d pulse start time %lld\n`
+- `AppleMSGKext_Transitions::%s: AppleMSG Potentially Fatal (%u): Staten MSG FIFO drained and we don't support recovery yet!\n`
+- `AppleMSGKext::%s: done\n`
+- `AppleMSGKext::%s: MSG system not ready, thread=%p, timeout_ns=%llu, retcode=0x%x\n`
+- `MSGPerfCoreAnalytics::%s: MSGPerfCoreAnalytics init()\n`
+- `AppleMSGKext_Power::%s: Frame count not reset on sleep, doing it now\n`
+- `AppleMSGKextEPIC::%s: syncGetConfig retcode %x sync_id %d frame duration %llu\n`
+- `MSGIOServiceUtility::%s: Waiting for IOService named %s\n\n`
+- `MSGVirtualFrameID::%s: Update virtual frame coefficient on physical frame %llu (virtual frame %llu) to %llu.\n`
+- `AppleMSGLocalService::%s: start sync %u @ (%llu,%hu)\n`
+- `AppleMSGKext_UserMapping::%s: Failed to prepare memory descriptor for MSG registers\n`
+- `AppleMSGKextEPIC::%s: Updated demand count=%llu and updated desired power state=%d\n`
+- `AppleMSGWatchdog::%s: SystemWillPowerOn Notification Received\n`
+- `AppleMSGLocalService::%s: start sync %u @ frame %u\n`
+- `AppleMSGLocalService::%s: Successfully started sync %u\n`
+- `AppleMSGKextEPIC::%s: fifo depth = %u\n`
+- `AppleMSGKextEPIC::%s: msg_log_always test\n`
+- `AppleMSGKext_EDT::%s: Created sync event: sync %u, edt idx: %d, irq: %u\n`
+- `AppleMSGLocalService::%s: {master, timer: %u, polarity: %u, assert-duration: (%llu, %hu), frame-duration: (%llu, %hu, %hu/%hu)}\n`
+- `AppleMSGKextEPIC::%s: type:%u timestamp:%lld payloadSize:%u\n`
+- `MSGPulseRateSubscriber::%s: failed to add subscriber\n`
+- `AppleMSGLocalService::%s: getting sync %u active config\n`
+- `AppleMSGKextEPIC::%s: Failed to create command latency reporters\n`
+- `AppleMSGKext_Notification::%s: client id: %llu | sync id: %u\n`
+- `AppleMSGWatchdog::%s: Enabling watchdog logic without kill.\n\n`
+- `AppleMSGWatchdog::%s: SystemWillSleep Notification Received\n`
+- `AppleMSGLocalService::%s: msg_log_debug test\n`
+- `AppleMSGKext_ConfigCache::%s: dumping current sync-gen history for sync %i\n`
+- `AppleMSGKext_Power::%s: entry for state: %lu\n`
+- `AppleMSGKext_Transitions::%s: Invalid constraint id with value %d passed in\n`
+- `AppleMSGKext_EDT::%s: Invalid name count: %u (max %u)\n`
+- `AppleMSGWatchdog::%s: Detect Disabled in state %s: %s %s\n`
+- `AppleMSGLocalService::%s: Successfully configured slave sync %u @ frame %u\n`
+- `AppleMSGLocalService::%s: Successfully started sync %u @ frame %u\n`
+- `AppleMSGKext_Power: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGKext_EDT::%s: Input parameter ID of %d is not supported for the getData function\n`
+- `AppleMSGWatchdog::%s: Unexpected state: %d (%s) \n`
+- `AppleMSGLocalService::%s: AppleMSG Potentially Fatal (%u): Failed Event Trigger clear count\n`
+- `AppleMSGKextEPIC::%s: msg_log test\n`
+- `AppleMSGLocalService::%s: AppleMSG Potentially Fatal (%u): Failed Event Trigger read snapshot count\n`
+- `AppleMSGWatchdog::%s: Halting CPUTrace. Previous Value: %s (Return: %d)\n`
+- `AppleMSGKext_Transitions::%s: AppleMSG Potentially Fatal (%u): Aligned Frame ID for PST transition can not be less that un-aligned frame ID\n`
+- `MSGPulseRateSubscriber::%s: subscriber not found\n`
+- `AppleMSGWatchdog::%s: State = %s, Strict = %llu, Relaxed = %llu frames\n\n`
+- `AppleMSGLocalService::%s: Successfully started sync %u @ (%llu,%hu) GTB\n`
+- `AppleMSGLocalService::%s: msg_log_always test\n`
+- `AppleMSGLocalService::%s: Failed to verify/execute all configs! total %llu, verified %d, executed %d\n\n`
+- `AppleMSGWatchdog::%s: State = %s, SN = %llu, Last = %llu\n`
+- `AppleMSGLocalService::%s: Get frame duration Integer for sync:%u\n`
+- `AppleMSGLocalService::%s: Successfully initialized sync %u as slave {master: %u, sync_trigger: %u}\n`
+- `AppleMSGKext_ConfigCache::%s: dumping current sync-gen history buffer for all active syncs\n`
+- `MSGSyncInterrupt::%s: post-remove : sync %u has %u subs\n`
+- `AppleMSGKextEPIC::%s: AppleMSG Potentially Fatal (%u): Failed to handle Pending Interrupt!\n`
+- `AppleMSGKextEPIC::%s: packetType:0x%x timestamp:%lld reportSize:%zu\n`
+- `AppleMSGKextEPIC::%s: Thread awakened with unknown status: %x and response status: %d\n`
+- `AppleMSGKextEPIC::%s: Measuring AFK link delay\n`
+- `MSGPulseRateSubscriber::%s: client already subscribed to this sync pulse\n`
+- `AppleMSGKext_EDT::%s: _populateTriggerLUT failed with retcode = 0x%x\n`
+- `AppleMSGKextEPICUserClient::%s: msg_log_error test\n`
+- `AppleMSGKextEPIC::%s: Bundle %u (configs:%u size:%u rem:%u)\n`
+- `AppleMSGKextEPIC::%s: Current demand count=%llu and current power state=%d\n`
+- `AppleMSGWatchdog::%s: CPUTrace is now %s (Return %d)\n`
+- `AppleMSGLocalService::%s: Successfully set tracked time\n`
+
+**[__TEXT.__cstring]**
+
+- `_total_configs_to_push >= 2`
+- `Unable to start local sync`
+- `Failed to initialize the interrupts for the MSG Kext`
+- `input`
+- `requestRTVsyncBuffer`
+- `Could not start sync`
+- `eventTriggerReportSubscriber[event_trigger_id].proxy_ptr == nullptr`
+- `Failed start GTB watchdog timer.`
+- `error getting base config for transition ramp!`
+- `MSGSyncInterrupt.h`
+- `_syncConfigCache[phy_id]->config.is_slave_sync`
+- `could not set up interrupt latency reporter`
+- `wait_result == 0 `
+- `syncGetPhysicalID`
+- `Roundtrip Latency`
+- `_transition_state == kTransitionStateReady`
+- `site.MSGPulseRateNotifier`
+- `initWithInterval failed.`
+- `Failed to enqueue Full Transition`
+- `this->propertyExists(kMSGPropertySyncRemotePreset)`
+- `reg-val-update`
+- `chip-id`
+- `createMapping`
+- `checkWatchdog`
+- `Unable to fetch timer count`
+- `bounded_ptr<T>::discard_bounds: Discarding the bounds on this pointer would lose the fact that it is outside of the bounds set originally`
+- `com.apple.private.msg.register-access`
+- `enqueueCmdLock`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/Local-MSG/AppleMSGKext_Notification.cpp`
+- `frame_dur`
+- `dict`
+- `site.MsgDriver2_4`
+- `fWorkloop`
+- `com.apple.private.master-sync-generator.user-access`
+- `retcode == kIOReturnSuccess || retcode == kIOReturnNotFound`
+- `_createCommandLatencyReporters`
+- `returnService`
+- `virtualFrameIDAtUpdate > m_virtualIDUpdate[m_latestUpdate]`
+- `output`
+- `IORegistryEntryAllowableSetProperties`
+- `services`
+- `unexpected response`
+- `!is_hw_id`
+- `Error while  doing override on power on`
+- `retcode == 0 `
+- `site.MSGSyncNotifier`
+- `Unable to configure local master sync`
+- `isMSGSystemInitDone`
+- `msg_wdt_panic_delay`
+- `fMonitoringEnabled`
+- `syncInterruptEnable`
+- `site.AppleMSGKextEPIC`
+- `numRequests <= APPLEMSG_MAX_FRAMETRACK_BUFFERS`
+- `AppleMSG isMSGSystemInitDone`
+- `Sleep`
+- `syncReset`
+- `Failed to find host service`
+- `site.IOLogicalAddress`
+- `*(memoryMapArr + updatesPtr->mem_map_index)`
+- `Wake`
+- `found_client`
+- `Frame Delta has an unexpected value`
+- `num_cfgs_bundled == num_cfgs_applied`
+- `Minimum Transition Size to prevent drift is 2!`
+- `failed to set master config end transition!`
+- `packing args failed`
+- `getEventTriggerConfig`
+- `stopMonitoring`
+- `arguments != nullptr && arguments->structureInput != nullptr`
+- `\"Somehow missed the last config in the ramp before the time!\" @%s:%d`
+- `Could not add event trigger interrupt to the workloop`
+- `MSG Sync 0 InterruptLatency`
+- `fClient.proc`
+- `syncSlaveInit`
+- `handleResponse`
+- `_allocateHandleGated`
+- `Couldn't retrieve frame data`
+- `matchdict`
+- `coefficient > 0`
+- `Failed to copy the deviceName from the EDT`
+- `Couldn't set interrupt state`
+- `arguments`
+- `task_info(SUSPEND_STATS) failed.`
+- `AppleMSGKext_Power.cpp`
+- `report event failed for sync 0`
+- `\"AppleMSGKext fifo_avail_count > _msg_fifo_depth, fifo_avail_count = %x, _msg_fifo_depth = %x\" @%s:%d`
+- `i8@?0`
+- `Unable to fetch sync count`
+- `_syncInterruptCallback`
+- `MSGAddMatchingNotification`
+- `AppleMSGLocalService.cpp`
+- `client_target->currentEventTriggerMappedBuffer == nullptr`
+- `MAX_MSG_SYNCS >= _syncCount`
+- `no _epif`
+- `AppleMSGKext_Interrupt.cpp`
+- `setSyncMasterConfigUnscheduled`
+- `Couldn't schedule a master sync`
+- `B24@?0r^{OSSymbol=^^?ib14b18*{smrq_slink={?=^{smrq_slink}}}}8^{OSObject=^^?i}16`
+- `Unable to initialize local master sync`
+- `_updateRegValues`
+- `Failed to get the base interrupt from the EDT`
+- `!(data->getLength() % regUpdates_size)`
+- `\"OOM in AppleMSGKext, failed to allocate MSGSyncInterrupt.\" @%s:%d`
+- `/Shutdown`
+- `couldn't collect frametrack`
+- `Bad target argument`
+- `Client Suspended`
+- `Couldn't read sync event log`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/Local-MSG/AppleMSGKext_TrackedTimer.cpp`
+- `\"Failed Event Trigger intr_sts read\" @%s:%d`
+- `Could not setup versioning info`
+- `_parseSyncGenOverrideBootArgs`
+- `start_index < _total_configs_to_push`
+- `site.struct sync_config_t`
+- `Failed creating boot timer.`
+- `Couldn't schedule master sync config`
+- `snapshot.count_snapshot == 1`
+- `AppleMSGKextEPICUserClient`
+- `could not init commandgate`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/Local-MSG/AppleMSGKext_EDT.cpp`
+- `currentSubscribableEventTrigger.event_trigger_id == event_trigger_id`
+- `kernPOST`
+- `Couldn't schedule stop for slave sync`
+- `getSyncCount() failed`
+- `MAX_MSG_EVENTS >= _eventCount`
+- `could not init provider`
+- `_gtbWatchdogStart`
+- `\"AppleMSG Sync Interrupt Callback Failed, err=0x%08x\" @%s:%d`
+- `%llu`
+- `info`
+- `dumpCurrentSyncGenState`
+- `client_target`
+- `camDispConfig`
+- `MSGPerfCoreAnalytics`
+- `Ongoing`
+- `Failed to copy the sync lut from the EDT`
+- `_eventTriggerInterruptHandlerGated`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/Local-MSG/AppleMSGKextUserClient.cpp`
+- `12121122222`
+- `Error while powering off`
+- `site.MSGPulseRateSubscriber`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/MSGSharedLocalService/AppleMSGClient.cpp`
+- `interrupts`
+- `site.struct msg_lut_entry_t`
+- `no target`
+- `updateMSGFIFODepth`
+- `_roundtripLatencyHistogram`
+- `_checkSync0InterruptStart`
+- `entriesSearched < m_updateCount`
+- `Unable to configure local slave sync`
+- `AppleMSGKext`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/Local-MSG/AppleMSGKext.cpp`
+- `error in _syncSubscribeToTimingInfoGated`
+- `lookupEventTriggerNames`
+- `getEDTData`
+- `/Crash`
+- `probe`
+- `No Dict with MSG Kext`
+- `waitResult == THREAD_AWAKENED && params->response.receivedResp`
+- `_initInterrupts`
+- `fClient.buffer`
+- `Unknown`
+- `could not create sync history`
+- `MSGSyncInterrupt`
+- `_dumpCfgsAsTheyCome`
+- `_watchdogTimerFired`
+- `syncConfigCache->is_initialized`
+- `_msgDriver != nullptr`
+- `arguments != nullptr && arguments->structureInput != nullptr && arguments->structureOutput != nullptr`
+- `Disabled`
+- `getCrossTimestampImmediate`
+- `IOUserClientEntitlements`
+- `syncGetTrackingInfo`
+- `temp_len >= min_shared_buffer_capacity`
+- `site.AppleMSGWatchdog`
+- `Failed to register for Power State notifications.`
+- `Relaxed`
+- `syncGetStatus failed`
+- `syncGetInitConfig`
+- `overriden by boot-arg`
+- `!_syncConfigCache[msg_sync_id_t::FrameMaster]->config.is_slave_sync`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/MSGSupport/VirtualFrameID.cpp`
+- `_reporterList`
+- `init`
+- `Client lacks required entitlement for MSG register access`
+- `report event failed`
+- `(virtualID - m_offset[currentEntry]) % m_coefficient[currentEntry] == 0`
+- `site.uint32_t`
+- `lookupSyncNames`
+- `hasEntitlement`
+- `Failed to enqueue starting Nominal Config`
+- `Failed to enqueue just the Nominal Config`
+- `Shutdown`
+- `(baseAddressArr)`
+- `kernel_buffer_ptr != nullptr`
+- `testLogging`
+- `local_retcode == 0 `
+- `Could not add the event trigger IOIES`
+- `Response Latency`
+- `getFIFODepth() failed`
+- `_wakeActionsGated`
+- `Null sync config pointer?`
+- `current_framerate_index < tr_tbl_entries`
+- `_syncInterruptReporter`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/AFK-based-MSG/AppleMSGKextEPICUserClient.cpp`
+- `_rt_vsync_subscriptions[sync_id].subscriber_count > 0`
+- `112`
+- `_enqueueCmd`
+- `masterSyncTransition`
+- `nullptr != fSleepWakeNotifier`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/MSGSharedLocalService/AppleMSGLocalService.cpp`
+- `Couldn't set slave sync config`
+- `\"updateSyncConfigCache returns error code: 0x%08x\" @%s:%d`
+- `121111121222121211111111111111221`
+- `_rt_vsync_subscriptions[sync_id].subscribers[i].clientID != connectionID || connectionID == UINT64_MAX`
+- `_releaseHandleGated`
+- `Failed to allocate memory for EDT reg updates`
+- `_currentPAState.resumeFrame > 0`
+- `setTrackedTimeScheduled`
+- `setTrackedTimeImmediate`
+- `site.AppleMSGKextUserClient`
+- `bounded_ptr<T>::operator+=(n): Calculating the number of bytes to add to the offset (n * sizeof(T)) would trigger an overflow`
+- `target_framerate_index < tr_tbl_entries`
+- `!(data->getLength() % interrupt_size)`
+- `Couldn't enable event interrupts`
+- `syncGetSoftwareID`
+- `idleLowPower`
+- `MSGWaitForIOService`
+- `stop`
+- `success`
+- `\"Could not start remote MSG, err: 0x%08x\" @%s:%d`
+- `\"Event Trigger missed at least 1 interrupt!\" @%s:%d`
+- `\"Another Event Trigger occured during the handling of this event trigger!\" @%s:%d`
+- `alignedFrameId >= *transitionFrameID`
+- `bounded_ptr<T>::operator+=(n): Adding the specified number of bytes to the offset representing the current position would overflow.`
+- `device-name`
+- `_parseBootArgs`
+- `kr == 0`
+- `Queue Population Failed`
+- `\"FrameID changed from %llu to %llu between AP Interrupt Handler Executions.\" @%s:%d`
+- `syncStop`
+- `bufferAddress`
+- `syncStopUnscheduled`
+- `could not set up sync interrupt counters`
+- `syncGetFIFOState`
+- `Failed to allocate memory for memory map array`
+- `23:30:13`
+- `Failed to stop sync`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/AppleMSGWatchdogClient.cpp`
+- `frametrack buffer unexpected error`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/Local-MSG/AppleMSGKext_Interrupt.cpp`
+- `_syncConfigCache[msg_sync_id_t::FrameMaster]->config.master.repeat`
+- `clientClose`
+- `SyncStartMasterScheduled`
+- `AppleMSGKext.cpp`
+- `IODeviceTree:/defaults`
+- `IOMD != nullptr`
+- `_fillFifoTransitionGated`
+- `event-trigger-supported`
+- `Timeout`
+- `Couldn't get active config for sync`
+- `MsgDriver::createAndInit() failed`
+- `handleCommand`
+- `sending cmd / receiving resp failed`
+- `_syncConfigCache[sync_id]->enabled`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/AppleMSGKextBase.cpp`
+- `callPlatformFunction`
+- `failed to select watchdog deadline`
+- `getSlaveSchedulingMarginForMasterID`
+- `couldn't store frametrack data`
+- `site.struct reg_updates`
+- `Failed obtaining VM address`
+- `unable to allocate memory`
+- `_msgDriver`
+- `No presets`
+- `Couldn't get event interrupt enable value`
+- `setVersionInfo()`
+- `failed to add watchdog client`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/AFK-based-MSG/AppleMSGKextEPIC.cpp`
+- `could not add commandgate to workloop`
+- `Error sending general setup command`
+- `\"Somehow missed the last config in the ramp after the time!\" @%s:%d`
+- `could not init workloop`
+- `Filling FIFO Ongoing failed!`
+- `syncSoftReset`
+- `type == 0`
+- `OSBoundedPtr.h`
+- `Failed to enqueue Transition for RT-vsync during dispatch`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/AppleMSGWatchdog.cpp`
+- `Last`
+- `m_pendingEventTriggers`
+- `Could not check cross-SOC GTB`
+- `syncConfigCache`
+- `Couldn't get event interrupt status value`
+- `\"Failed to handle Pending Interrupt!\" @%s:%d`
+- `Failed to copy the configs from the EDT`
+- `RELEASE`
+- `_setSyncMasterConfigScheduledGated_block_invoke`
+- `start`
+- `localKextDict`
+- `AppleMSGKextEPIC.cpp`
+- `ret == kIOReturnSuccess`
+- `12121`
+- `addSubscriber`
+- `setVersionInfo`
+- `param1 != nullptr`
+- `site.MSGPerfCoreAnalytics`
+- `Error updating framecount extended bits`
+- `\"Inter-SOC GTB skew is too large (latency to Staten: %lli)\" @%s:%d`
+- `Number of sync configs exceeds max size`
+- `11`
+- `retcode == kIOReturnSuccess`
+- `snapshot.count_live == 0 `
+- `microsec`
+- `IS_MSG_TRANSITION_SCHEDULED_FRAME_IN_FUTURE(current_frame_index, target_frame_count)`
+- `m_updateCount > 0`
+- `1211`
+- `no input parameters provided`
+- `createBootTimer`
+- `Failed to start sync`
+- `_extendSyncConfigHistory`
+- `IOUserClientDefaultLockingSingleThreadExternalMethod`
+- `Error loading bundled remote MSG default configs`
+- `eventInterruptEnable`
+- `Failed creating timer.`
+- `stepWatchdog`
+- `_currentPAState.paused`
+- `Couldn't get FIFO state for sync`
+- `couldn't add cmdgate event source to work loop`
+- `v56@?0^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}8^{AFKEndpointInterface=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInt`
+- `_overwriteDualSyncConfig`
+- `initWithInterval`
+- `Not enough memory allocated to support this MSG blocks event trigger counts.`
+- `Too many active subscribers to this vsync`
+- `sync_id < _syncCount`
+- `Queue Init Failed`
+- `target != nullptr`
+- `Parent class did not start`
+- `_intLatencyReporter != nullptr`
+- `IOService::start(provider)`
+- `com.apple.tdg.applemsg.WatchdogTimeoutClientSuspended`
+- `_workloop->addEventSource(_commandGate.get()) == kIOReturnSuccess`
+- `Could not restart watchdog timer`
+- `\"Staten MSG FIFO drained and we don't support recovery yet!\" @%s:%d`
+- `Number of lut entries exceeds max size`
+- `setState`
+- `_batchSyncConfigGated`
+- `_workloop`
+- `_createWatchdog failed.`
+- `reportMSG`
+- `notifier`
+- `(m_edt_data.configs)`
+- `Could not map info.`
+- `-`
+- `Error updating FIFO depth`
+- `_dumpInitCfg`
+- `loadConfigBundle`
+- `syncStopSlaveScheduled`
+- `Soft reset is currently supported for derived syncs only`
+- `no client_target`
+- `\"MSG Kext failed to load with error code: 0x%08x\" @%s:%d`
+- `_responseLatencyHistogram`
+- `Couldn't retrieve reporting sync frame duration`
+- `\"Failed to update RTVsync!\" @%s:%d`
+- `Number of reg value updates exceeds max size`
+- `clientIndex < MAX_RT_VSYNC_SUBSCRIBERS_PER_SYNC`
+- `Failed to enqueue Partial Transition`
+- `error:_epif is null`
+- `error in getting tracking info.`
+- `remote-msg`
+- `getSyncFIFOState`
+- `CoreAnalyticsHub`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/Local-MSG/AppleMSGKext_RTVSync.cpp`
+- `resp->payload && resp->payload.size() >= payloadSize`
+- `failed to set master config mid transition!`
+- `_syncConfigCache[msg_sync_id_t::FrameMaster]->start_mode == MsgDriver::MSG_SYNC_START_MODE_SCHEDULED && _syncConfigCache[msg_sync_id_t::FrameMaster]->enabled`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/MSGSupport/MSGIOServiceUtility.cpp`
+- `setSyncSlaveConfigScheduled`
+- `Unable to set tracked time immediate`
+- `\"_msgDriver reference is NULL!\" @%s:%d`
+- `buffer_len >= min_shared_buffer_capacity`
+- `isInitSuccessful`
+- `_setNotificationPortGated`
+- `physicalFrameIDUpdate >= m_physicalIDUpdate[m_latestUpdate]`
+- `params.outputPayloadSize == arguments->structureOutputSize`
+- `param3 != nullptr`
+- `Failed to import EDT configs`
+- `\"Failed to handle incoming AFK Report Packet!\" @%s:%d`
+- `_syncFrameCountReporter`
+- `AppleMSG sync generator frame counts`
+- `Failed adding event source.`
+- `Failed to get the current timestamps`
+- `Couldn't clear event interrupt status`
+- `AppleMSGKext_ConfigCache.cpp`
+- `_sleepActionsGated`
+- `_enqueuePendingEventTriggersGated`
+- `transition in progress failed`
+- `couldn't get sync tracking info`
+- `site.msg_config_cache_t`
+- `responseStruct != nullptr`
+- `args.num_requests <= APPLEMSG_MAX_FRAMETRACK_BUFFERS`
+- `frame_delta > 0`
+- `sync_lookup`
+- `_rt_vsync_subscriptions[sync_id].subscribers[clientIndex].mappedBuffer`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/Local-MSG/AppleMSGKext_Syncs.cpp`
+- `br`
+- `Postpanic`
+- `Must be called in gate`
+- `site.MSGDebugStateCommandResponse`
+- `fClient.map`
+- `fBootTimer`
+- `target`
+- `eventGetInterruptEnable`
+- `error in gated function`
+- `Failed to update the SoC register\n`
+- `Failed to initialize the sync configs for the MSG Kext`
+- `syncGetFrameDurationInteger`
+- `\"Sched error interrupt for sync id %u\" @%s:%d`
+- `1212112222222222`
+- `param2 != nullptr`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/MSGSharedLocalService/AppleMSGProxy.cpp`
+- `Interrupt Latency set failed.`
+- `AppleMSGKext_Transitions.cpp`
+- `haltCpuTrace`
+- `active`
+- `\"Failed Event Trigger count read\" @%s:%d`
+- `sync_id == FrameMaster`
+- `\"%s\" @%s:%d`
+- `MSGPulseRateSubscriber`
+- `monitoring disabled. returning sucess.`
+- `SyncMasterInit`
+- `currentEventTriggerMappedBuffer != nullptr`
+- `syncgen%u-fr`
+- `com.apple.tdg.applemsg.BootReady`
+- `MSGSyncSubscriber`
+- `_reportSyncEventGated`
+- `_syncApplyEDTConfigsGated`
+- `watchdog-enabled`
+- `com.apple.tdg.applemsg.ResumeReady`
+- `eventClearInterruptStatus`
+- `\"Aligned Frame ID for PST transition can not be less that un-aligned frame ID\" @%s:%d`
+- `m_updateCount > 1`
+- `input->nameCount > 0 && input->nameCount <= MSG_NAME_LOOKUP_MAX_BATCH_SIZE`
+- `Couldn't get tracking info for sync`
+- `currentEventTriggerID == event_trigger_id`
+- `_unregisterForEventTriggerReports`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/Local-MSG/AppleMSGKext_Reporting.cpp`
+- `getFramecountExtendedBits`
+- `\"AppleMSGKext failed to apply default register values on wake: err=0x%08x\" @%s:%d`
+- `Inactive Client Close.`
+- `\"Failed Event Trigger read snapshot count\" @%s:%d`
+- `_registerForEventTriggerReports send of cmd / receiving resp failed`
+- `%s`
+- `setTimeout failed.`
+- `IOUserClientDefaultLockingSetProperties`
+- `_rt_vsync_subscriptions[sync_id].iobmd != nullptr`
+- `updateCoefficientOnFrame`
+- `me->initWithInterval(interval)`
+- `syncStopMasterScheduled`
+- `AppleMSGKextEPIC`
+- `_epif`
+- `_isIdleLowPowerEnabled`
+- `data`
+- `syncGetConfig`
+- `Error caching bundled remote MSG default configs`
+- `getCrossTimestampTriggeredAndReset`
+- `The range of valid memory is too large to be represented by this type, or [begin, end) is not a well-formed range`
+- `MSGSyncNotifier`
+- `setWatchdogOptions`
+- `AppleMSG Kext Interrupt Latency`
+- `wdt`
+- `updateDeadlines`
+- `Couldn't get frame duration`
+- `Error while powering on`
+- `_maxIntLatencyReporter != nullptr`
+- `121111121222121211111221212121212222222222222221222221111221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221221`
+- `_transitionMarginTActionReporter`
+- `/Close`
+- `MSG Watchdog %s. State=%s%s%s%s%s Deadline=%llu:%llu [timeoutMCT %llu / lastCheckinMCT %llu]`
+- `cfg`
+- `Failed to wait for the matching IOService`
+- `Failed to allocate memory for EDT interrupts`
+- `IODeviceTree:/chosen`
+- `Could not add event source to workloop`
+- `msg-load-disable`
+- `_guardLock != nullptr`
+- `unpacking response failed`
+- `Could not init interrupt`
+- `Failed to update the platform specific variables`
+- `count <= UINT8_MAX`
+- `is_hw_id`
+- `site.IOMemoryMap *`
+- `(memoryMapArr)`
+- `Number of interrupts exceeds max size`
+- `AppleMSGWatchdog::No Checkin From Polarisd [%llu]. State=%s%s%s%s%s Deadline=%llu:%llu [expiredCheckInMCT %llu / timeoutMCT %llu / lastCheckinMCT %llu]`
+- `\"Failed Event Trigger ts read\" @%s:%d`
+- `_dumpCurrentSyncGenState`
+- `enableDeviceClock() failed`
+- `AppleMSGKextUserClient`
+- `Failed to find node of interest`
+- `prepare failed.`
+- `measureLinkDelay`
+- `frameDelta < 100 && frameDelta > 0`
+- `i64@?0^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}8^{AFKEndpointInterface=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInt`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/Local-MSG/AppleMSGKext_EventTrigger.cpp`
+- `Initial FIFO filling failed!`
+- `createBootTimer() == kIOReturnSuccess`
+- `connectionID == fClient.connectionID`
+- `syncStartSlaveScheduled`
+- `batchSyncConfig`
+- `could not set up frame count reporters`
+- `inParams`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/Local-MSG/AppleMSGKext_Transitions.cpp`
+- `Bad handle to client process.`
+- `_isMSGSystemReady`
+- `This bounded_ptr is pointing to memory outside of what can be represented by a native pointer.`
+- `syncGetActiveConfig`
+- `setSyncSlaveConfigUnscheduled`
+- `12111112222221112121222222222222`
+- `fSuspendEvent`
+- `getEventTriggerCountSnapshot`
+- `Buffer Range not Initialized!`
+- `Mapping failed`
+- `halted`
+- `Failed to process the EDT data`
+- `site.MsgDriver2_2`
+- `site.MSGSyncInterrupt`
+- `Enqueue Latency`
+- `AppleMSGWatchdog`
+- `_transition_state != kTransitionStateReady`
+- `Failed to complete synchronized start`
+- `eventGetInterruptStatus`
+- `\"Inter-SOC GTB skew is too large (latency to Bora: %lli)\" @%s:%d`
+- `interrupt-base`
+- `fail`
+- `no output parameters provided`
+- `This task already has access to this resource`
+- `No _epif`
+- `client_target != nullptr`
+- `map() failed, returned NULL`
+- `(m_edt_data.interrupts)`
+- `addClient`
+- `handleSleepWakeNotifications`
+- `\"Failed Event Trigger clear count\" @%s:%d`
+- `\"AppleMSGKext failed to apply default configurations on wake: err=0x%08x\" @%s:%d`
+- `/Sleep`
+- `Failed to copy the trigger lut from the EDT`
+- `temp_len <= UINT32_MAX`
+- `retcode == kIOReturnNotFound`
+- `bounded_ptr<T>::operator*: Dereferencing this pointer would access memory outside of the bounds set originally`
+- `unable to clear interrupt retcode`
+- `watchdogAddClient`
+- `unable to clear sched err interrupt retcode`
+- `Invalid current_framerate_index`
+- `MSGPulseRateNotifier`
+- `Oct 13 2026`
+- `me`
+- `site.AppleMSGKextEPICUserClient`
+- `_commandGate`
+- `msg`
+- `Could not find any IOService with the required class name`
+- `Unable to initialize local slave sync`
+- `!(data->getLength() % lut_entry_size)`
+- `IOMD allocation failed`
+- `clientDied`
+- `_msgMemoryMap`
+- `millisec`
+- `!active_config.is_slave_sync`
+- `_calculateTransitionTimeAndFrameIdGated`
+- `Unable to enable interrupts for sync`
+- `1`
+- `AppleMSG sync interrupts`
+- `_initWaitReporter != nullptr`
+- `Prepanic`
+- `atomic_load(&_is_connectionID_valid)`
+- `updateSyncConfigCache`
+- `Could not add interrupt event source`
+- `Failed to copy the interrupts from the EDT`
+- `Failed to allocate memory for EDT sync configs`
+- `Inactive Client Died.`
+- `_syncConfigCache[sync_id]->valid && _syncConfigCache[sync_id]->enabled`
+- `!idle && fifo_avail_count == _msg_fifo_depth - 1`
+- `_enqueueLatencyHistogram`
+- `Transition schedule margin (tAction)`
+- `12111112122212121111111111112212`
+- `Failed to copy the register updates from the EDT`
+- `(m_edt_data.sync_lut)`
+- `eventTriggerReportSubscriber[event_trigger_id].proxy_ptr == subscriber_endpoint`
+- `no arguments`
+- `site.AppleMSGKext`
+- `could not set up transition reporters`
+- `isClientSuspended`
+- `site.MSGSyncSubscriber`
+- `trigger_lookup`
+- `Failed to initialize power management`
+- `atomic_load(&client_target->_is_connectionID_valid)`
+- `createMemoryDescriptorForUserspace`
+- `Memory allocation for payload incorrect`
+- `updateFramecountExtendedBits`
+- `block_retcode == 0 `
+- `setSyncMasterConfigScheduled`
+- `setEventTriggerConfig`
+- `Failed to populate the EDT data`
+- `could not set up initialization wait reporter`
+- `localRetcode == 0 `
+- `Failed to find services matching MSG Kext`
+- `remote-sync-preset`
+- `client_target->currentEventTriggerMappedBuffer`
+- `handleReport`
+- `coefficient * physicalFrameIDUpdate + offset > m_coefficient[m_latestUpdate] * (physicalFrameIDUpdate - 1) + m_offset[m_latestUpdate]`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/Local-MSG/AppleMSGKext_Power.cpp`
+- `retcode == kIOReturnSuccess || retcode == kIOReturnNotAttached`
+- `_sendSyncNotificationGated`
+- `clock-gates`
+- `Could not create event source`
+- `_getNextNFramesInternal`
+- `_hostService`
+- `_registerForEventTriggerReports`
+- `removeSubscriber`
+- `_syncConfigCache[msg_sync_id_t::FrameMaster]->valid`
+- `The EDT data does not align with the expected size`
+- `(sizeof(m_edt_data.deviceName) > data->getLength())`
+- `default`
+- `Transition tAction margin`
+- `Close`
+- `\"Event Trigger Reporting during the handling of this event trigger!\" @%s:%d`
+- `_handleSyncSubscriberDisconnectGated`
+- `failed to get fifo state for master sync!`
+- `currentSubscribableEventTrigger.iobmd != nullptr`
+- `Failed to create workloop\n`
+- `nullptr != me`
+- `IOUserClientDefaultLocking`
+- `selector < numMethods`
+- `forwardAppleMSGCommand`
+- `_rt_vsync_subscriptions[FrameMaster].subscriber_count >= 1`
+- `sync-preset`
+- `Failed to add reporter channel`
+- `MsgDriver::enable() failed`
+- `outParams`
+- `sync_id == msg_sync_id_t::FrameMaster`
+- `Failed to initialize GTB watchdog`
+- `Failed adding GTB watchdog event source.`
+- `1212`
+- `_syncApplyEDTConfigGated`
+- `Failed to allocate memory for base address array`
+- `Failed allocating watchdog`
+- `super::start(provider)`
+- `loadConfigsStartSynchronous`
+- `_GTBWatchdogTimer`
+- `Invalid target_framerate_index`
+- `Transition is scheduled for a past frame!`
+- `_populateEDTData`
+- `isMSGTimerValid(config.master.timer_sel)`
+- `killClient`
+- `mismatch between configs applied and configs in bundle`
+- `unable to get interrupt retcode`
+- `Failed to create notifier`
+- `msg_wdt`
+- `Failed to get Tracking Info.`
+- `v60@?0^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}8^{AFKEndpointInterface=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInt`
+- `Failed to allocate memory for EDT sync lut`
+- `currentSubscribableEventTrigger.subscriber_count > 0`
+- `_intr_event_src_arr[index]`
+- `!(data->getLength() % syncConfig_size)`
+- `(m_edt_data.updates)`
+- `reportTimeoutClientSuspended`
+- `couldn't get sync duration`
+- `\"Failed to correctly compute transition timing.\" @%s:%d`
+- `site.MSGFrametrack`
+- `syncGetStatus`
+- `Active`
+- `%d.%d.%d.%d.%d`
+- `syncStartUnscheduled`
+- `Unable to fetch event count`
+- `Couldn't retrieve master sync frame duration`
+- `(m_edt_data.trigger_lut)`
+- `bootTimerFired`
+- `hw.cputrace.active`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/Local-MSG/AppleMSGKext_ConfigCache.cpp`
+- `_workloop->inGate()`
+- `setPowerState`
+- `(cfg_presets_size % sizeof(sync_config_t)) == 0`
+- `earliestTransitionTime <= *transitionTsGtb`
+- `count <= MAX_MSG_SYNCS + 1`
+- `_getChipID() failed`
+- `memoryDescriptor != nullptr`
+- `sendGeneralSetup`
+- `Presets size doesn't fit whole number of configs`
+- `Error while doing override on power off`

@@ -1,0 +1,3022 @@
+# Symbols: `/System/Library/Frameworks/Photos.framework/Photos`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__Frameworks__Photos.framework__Photos.md). **[DSC]**
+
+2,005 public symbols, 14,470 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x199bb1bf8  __TEXT,__text  _CPLMasterImportSourceFromPHAssetImportSource
+0x199c6d9c4  __TEXT,__text  _CPLSuggestionNotificationStateForPHSuggestionNotificationState
+0x199c6d9a0  __TEXT,__text  _CPLSuggestionStateForPHSuggestionState
+0x199c6d85c  __TEXT,__text  _CPLSuggestionSubtypeForPHSuggestionSubtype
+0x199c6d718  __TEXT,__text  _CPLSuggestionTypeForPHSuggestionType
+0x199a97798  __TEXT,__text  _LEOItemTypeForPHFindQueryResultItemSubtype
+0x199adcef0  __TEXT,__text  _LEOItemTypeFromPHSearchResultType
+0x199ca78e0  __TEXT,__text  _LEOLexemeCategoryForPHFindQueryCategory
+0x199c580ac  __TEXT,__text  _LEOLexemeTextTypeForPHFindLexemeTextType
+0x199a9328c  __TEXT,__text  _NSStringFromPHCloudFeedEntryFilter
+0x199c94b68  __TEXT,__text  _NSStringFromPHErrorCode
+0x1ef6b0350  __AUTH,__objc_data  _OBJC_CLASS_$_DurationGroup
+0x1ef6b0328  __AUTH,__objc_data  _OBJC_CLASS_$_ICCameraDeviceRemovedItemsCoalescer
+0x1ef6b32a8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAdjustmentData
+0x1ef6b2010  __AUTH,__objc_data  _OBJC_CLASS_$_PHAdjustmentDataRequest
+0x1ef6b1fe8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAdjustmentDataRequestBehaviorSpec
+0x1ef6b1fc0  __AUTH,__objc_data  _OBJC_CLASS_$_PHAdjustmentDataRequestContext
+0x1ef6b1f98  __AUTH,__objc_data  _OBJC_CLASS_$_PHAdjustmentDataResult
+0x1ee1b6bb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHAlbum
+0x1ef6abe90  __AUTH,__objc_data  _OBJC_CLASS_$_PHAmbientPosterBundle
+0x1ef6abe68  __AUTH,__objc_data  _OBJC_CLASS_$_PHAmbientPosterConfiguration
+0x1ef6ad0b0  __AUTH,__objc_data  _OBJC_CLASS_$_PHAmbientPosterSelection
+0x1ef6ad088  __AUTH,__objc_data  _OBJC_CLASS_$_PHAnalysisCoalescer
+0x1ef6b0300  __AUTH,__objc_data  _OBJC_CLASS_$_PHAnimatedImage
+0x1ef6b02d8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAnimatedImageRequestOptions
+0x1ee1b85f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHAsset
+0x1ef6b1f70  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetAddedDateProperties
+0x1ef6b1f48  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetAdjustmentProperties
+0x1ef6b2e20  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetAestheticProperties
+0x1ef6b02b0  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetAnalysisStateProperties
+0x1ef6b0288  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetBundleExportSession
+0x1ef6b2880  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCameraCaptureDeviceProperties
+0x1ee1b6b90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHAssetChangeRequest
+0x1ef6b2df8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCharacterRecognitionProperties
+0x1ef6b2858  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCloudLocalStateProperties
+0x1ef6ad060  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCloudSharedProperties
+0x1ef6b2dd0  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCoarseLocationProperties
+0x1ee1b8328  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHAssetCollection
+0x1ef6b1f20  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCollectionChangeRequest
+0x1ef6b0260  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCollectionReference
+0x1ef6ad038  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCollectionShareProperties
+0x1ef6b1110  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCrashRecoverySupport
+0x1ef6b0238  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCrashRecoveryUnarchiver
+0x1ef6b10e8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCreationAdjustmentBakeInOptions
+0x1ef6adfb0  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCreationCameraIngestOptions
+0x1ef6b1ef8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCreationDateProperties
+0x1ef6b0210  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCreationDerivativeContext
+0x1ef6b10c0  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCreationMetadataCopyOptions
+0x1ef6b3640  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCreationOptions
+0x1ef6b3618  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCreationRequest
+0x1ef6b1098  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCreationRequestBridge
+0x1ef6b01e8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCreationRequestPlaceholderSupport
+0x1ef6b1070  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetCreationRequestPlaceholderSupportCrashRecovery
+0x1ee1b6ca8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHAssetCurationProperties
+0x1ef6b2830  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetDeleteOptions
+0x1ef6b2808  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetDeleteRequest
+0x1ef6b35f0  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetDescriptionProperties
+0x1ef6b1ed0  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetDestinationAssetCopyProperties
+0x1ef6b1ea8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetExportRequest
+0x1ef6b1e80  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetExportRequestOptions
+0x1ef6ad010  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetExtendedMetadata
+0x1ef6acfe8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetExtendedMetadataProperties
+0x1ef6b27e0  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetGeoHashUtilities
+0x1ef6b27b8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetGridMetadataProperties
+0x1ee1b6f28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHAssetID
+0x1ef6b1e58  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetIconicScoreProperties
+0x1ef6acfc0  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetImageMediaMetadata
+0x1ef6b3280  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetImportProperties
+0x1ef6b1048  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetKeywordProperties
+0x1ef6b1020  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetLibraryScopeProperties
+0x1ef6b2da8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetLocalDateProperties
+0x1ef6b0ff8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetLocationDataProperties
+0x1ef6b3258  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetMediaAnalysisProperties
+0x1ef6b01c0  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetMontageProperties
+0x1ee1b6f00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHAssetOriginalMetadataProperties
+0x1ee1b6d98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHAssetPLAdapter
+0x1ef6acf98  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetPTPProperties
+0x1ef6ad9e8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetPersonalEnvironmentProperties
+0x1ef6b1e30  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetPhotoAnalysisWallpaperProperties
+0x1ef6b0198  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetPhotoCommentProperties
+0x1ef6b3230  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetPhotoIrisProperties
+0x1ee1b67a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHAssetPhotosInfoPanelExtendedProperties
+0x1ef6b0170  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetPhotosInfoPanelLocationProperties
+0x1ef6b2d80  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetPhotosOneUpProperties
+0x1ef6b0148  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetPhotosSmartStyleExtendedProperties
+0x1ee1b76f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHAssetPropertySet
+0x1ef6b0120  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetReference
+0x1ee1b6b68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHAssetResource
+0x1ef6b2790  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetResourceBag
+0x1ef6b3208  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetResourceCreationOptions
+0x1ef6acf70  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetResourceFetchResult
+0x1ef6b0fd0  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetResourceManager
+0x1ef6b2d58  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetResourceQualityClass
+0x1ef6b1e08  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetResourceRequest
+0x1ef6b1de0  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetResourceRequestOptions
+0x1ee1b7928  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHAssetResourceUploadJob
+0x1ef6acf48  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetResourceUploadJobChangeRequest
+0x1ee1b7a68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHAssetResourceUploadJobConfiguration
+0x1ef6acf20  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetResourceUploadJobConfigurationChangeRequest
+0x1ef6acef8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetResourceUploadJobConfigurationDeleteRequest
+0x1ef6aced0  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetResourceUploadJobDeleteRequest
+0x1ef6abe40  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetResourceUploadJobOptions
+0x1ef6b0fa8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetResourceValidatedContext
+0x1ef6b00f8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetResourceWriteRequest
+0x1ee1b6780  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHAssetSceneAnalysisProperties
+0x1ef6b2768  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetSceneprintProperties
+0x1ef6b0f80  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetSpatialMediaProperties
+0x1ef6adf88  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetStoryPlaybackProperties
+0x1ef6ad9c0  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetTextUnderstandingProperties
+0x1ef6b1db8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetUserActivityProperties
+0x1ef6acea8  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetVideoMediaMetadata
+0x1ef6b2740  __AUTH,__objc_data  _OBJC_CLASS_$_PHAssetVisualSearchProperties
+0x1ee1b76d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHAssociatedObjectsEntry
+0x1ee1b7ba8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHAssociatedObjectsTable
+0x1ee1b6870  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHAsynchronousPhotoLibraryExecutionContext
+0x1ef6b0f58  __AUTH,__objc_data  _OBJC_CLASS_$_PHBatchAssetExpunger
+0x1ef6b1d90  __AUTH,__objc_data  _OBJC_CLASS_$_PHBatchFetchedAssetPropertySet
+0x1ee1b81e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHBatchFetchingArray
+0x1ef6b2d30  __AUTH,__objc_data  _OBJC_CLASS_$_PHBatchFetchingArrayFetchedClass
+0x1ef6b0f30  __AUTH,__objc_data  _OBJC_CLASS_$_PHBatchPerformChanges
+0x1ee1b6b40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHCPAnalyticsCachedPropertyProvider
+0x1ee1b6b18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHCPAnalyticsMediaPropertyProvider
+0x1ee1b6758  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHCachingImageManager
+0x1ef6b00d0  __AUTH,__objc_data  _OBJC_CLASS_$_PHCameraSmartSharingIdentity
+0x1ef6b0f08  __AUTH,__objc_data  _OBJC_CLASS_$_PHCameraSmartSharingMetadata
+0x1ee1b7a40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHChange
+0x1ef6b2718  __AUTH,__objc_data  _OBJC_CLASS_$_PHChangeBuilder
+0x1ee1b8418  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHChangeHandlingDebugEvent
+0x1ee1b8468  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHChangeHandlingDebugger
+0x1ee1b6af0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHChangeRequest
+0x1ee1b6ac8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHChangeRequestHelper
+0x1ef6b0ee0  __AUTH,__objc_data  _OBJC_CLASS_$_PHChangeValidationController
+0x1ee1b6aa0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHClientLinkedAgainst
+0x1ee1b7a18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHCloudFeedEntry
+0x1ef6ace80  __AUTH,__objc_data  _OBJC_CLASS_$_PHCloudFeedEntryChangeRequest
+0x1ef6b35c8  __AUTH,__objc_data  _OBJC_CLASS_$_PHCloudIdentifier
+0x1ef6b26f0  __AUTH,__objc_data  _OBJC_CLASS_$_PHCloudIdentifierLookup
+0x1ef6b1d68  __AUTH,__objc_data  _OBJC_CLASS_$_PHCloudIdentifierMapping
+0x1ef6b00a8  __AUTH,__objc_data  _OBJC_CLASS_$_PHCloudSharedAssetExportRequest
+0x1ef6b0080  __AUTH,__objc_data  _OBJC_CLASS_$_PHCloudSharedPhoto
+0x1ee1b8300  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHCollection
+0x1ef6b1d40  __AUTH,__objc_data  _OBJC_CLASS_$_PHCollectionDeleteRequest
+0x1ee1b7f40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHCollectionList
+0x1ef6b0058  __AUTH,__objc_data  _OBJC_CLASS_$_PHCollectionListAncestryContext
+0x1ef6b0030  __AUTH,__objc_data  _OBJC_CLASS_$_PHCollectionListChangeRequest
+0x1ef6ace58  __AUTH,__objc_data  _OBJC_CLASS_$_PHCollectionListKeyAssetsFetchResult
+0x1ef6b0008  __AUTH,__objc_data  _OBJC_CLASS_$_PHCollectionListReference
+0x1ef6affe0  __AUTH,__objc_data  _OBJC_CLASS_$_PHCollectionReference
+0x1ee1b7b08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHCollectionShare
+0x1ef6ace30  __AUTH,__objc_data  _OBJC_CLASS_$_PHCollectionShareAssetSource
+0x1ef6ace08  __AUTH,__objc_data  _OBJC_CLASS_$_PHCollectionShareChangeRequest
+0x1ef6acde0  __AUTH,__objc_data  _OBJC_CLASS_$_PHCollectionShareDeleteRequest
+0x1ee1b7568  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHCompositeMediaResult
+0x1ef6b2d08  __AUTH,__objc_data  _OBJC_CLASS_$_PHConcurrentMapTable
+0x1ef6b1d18  __AUTH,__objc_data  _OBJC_CLASS_$_PHContentEditingInput
+0x1ef6b1cf0  __AUTH,__objc_data  _OBJC_CLASS_$_PHContentEditingInputRequestContext
+0x1ef6b1cc8  __AUTH,__objc_data  _OBJC_CLASS_$_PHContentEditingInputRequestOptions
+0x1ef6b1ca0  __AUTH,__objc_data  _OBJC_CLASS_$_PHContentEditingInputResult
+0x1ef6b26c8  __AUTH,__objc_data  _OBJC_CLASS_$_PHContentEditingOutput
+0x1ef6b26a0  __AUTH,__objc_data  _OBJC_CLASS_$_PHContentEditingOutputRequestOptions
+0x1ee1b7ae0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHConversation
+0x1ef6adf60  __AUTH,__objc_data  _OBJC_CLASS_$_PHCreationRequestOptions
+0x1ef6acdb8  __AUTH,__objc_data  _OBJC_CLASS_$_PHDCFUtilities
+0x1ef6b2678  __AUTH,__objc_data  _OBJC_CLASS_$_PHDetectionTrait
+0x1ef6affb8  __AUTH,__objc_data  _OBJC_CLASS_$_PHDuplicateDetection
+0x1ee1b7b58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHEntityKeyMap
+0x1ef6b31e0  __AUTH,__objc_data  _OBJC_CLASS_$_PHExternalAssetResource
+0x1ee1b80a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHFace
+0x1ef6b0eb8  __AUTH,__objc_data  _OBJC_CLASS_$_PHFaceChangeRequest
+0x1ef6b31b8  __AUTH,__objc_data  _OBJC_CLASS_$_PHFaceClusteringProperties
+0x1ee1b7ce8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHFaceCrop
+0x1ef6b0e90  __AUTH,__objc_data  _OBJC_CLASS_$_PHFaceCropChangeRequest
+0x1ef6aff90  __AUTH,__objc_data  _OBJC_CLASS_$_PHFaceCropDeleteRequest
+0x1ef6b0e68  __AUTH,__objc_data  _OBJC_CLASS_$_PHFaceDeleteRequest
+0x1ee1b7f18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHFaceGroup
+0x1ef6b0e40  __AUTH,__objc_data  _OBJC_CLASS_$_PHFaceGroupChangeRequest
+0x1ef6b0e18  __AUTH,__objc_data  _OBJC_CLASS_$_PHFaceGroupDeleteRequest
+0x1ef6aff68  __AUTH,__objc_data  _OBJC_CLASS_$_PHFaceGroupPLAdapter
+0x1ef6b2650  __AUTH,__objc_data  _OBJC_CLASS_$_PHFacePLAdapter
+0x1ef6b3190  __AUTH,__objc_data  _OBJC_CLASS_$_PHFacePropertySet
+0x1ef6b35a0  __AUTH,__objc_data  _OBJC_CLASS_$_PHFaceprint
+0x1ef6aff40  __AUTH,__objc_data  _OBJC_CLASS_$_PHFeatureAvailability
+0x1ef6acd90  __AUTH,__objc_data  _OBJC_CLASS_$_PHFeatureAvailabilityConfig
+0x1ef6adf38  __AUTH,__objc_data  _OBJC_CLASS_$_PHFeatureAvailabilityReadOptions
+0x1ee1b78d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHFetchLogRateLimiter
+0x1ee1b8288  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHFetchOptions
+0x1ee1b8260  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHFetchResult
+0x1ee1b6c80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHFetchResultChangeDetails
+0x1ee1b7ef0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHFetchResultInstrumentation
+0x1ee1b6730  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHFetchResultMediaTypeCounts
+0x1ee1b7068  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHFigDecoder
+0x1ef6ad998  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindEmbeddingSearch
+0x1ef6ad970  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindEmbeddingSearchOptions
+0x1ef6ad948  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindEmbeddingSearchResult
+0x1ef6ad920  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindLexeme
+0x1ef6ad8f8  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindLexemeResult
+0x1ef6b0df0  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindQueryContext
+0x1ef6b0dc8  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindQueryExecutor
+0x1ef6aff18  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindQueryMatchDetails
+0x1ef6afef0  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindQueryOperand
+0x1ef6afec8  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindQueryOperator
+0x1ef6b0da0  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindQueryOptions
+0x1ef6adf10  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindQueryParse
+0x1ef6adee8  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindQueryParseResult
+0x1ef6adec0  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindQueryParseToken
+0x1ef6afea0  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindQueryParser
+0x1ef6afe78  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindQueryPredicate
+0x1ef6afe50  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindQueryResult
+0x1ef6afe28  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindQueryResultItem
+0x1ef6afe00  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindQueryResultProcessor
+0x1ef6afdd8  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindQueryResultRanker
+0x1ef6afdb0  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindQueryToken
+0x1ef6afd88  __AUTH,__objc_data  _OBJC_CLASS_$_PHFindQueryUtilities
+0x1ef6ad8d0  __AUTH,__objc_data  _OBJC_CLASS_$_PHGeneratedAssetDescription
+0x1ef6afd60  __AUTH,__objc_data  _OBJC_CLASS_$_PHGraphQuery
+0x1ef6b3578  __AUTH,__objc_data  _OBJC_CLASS_$_PHImageCache
+0x1ef6b3550  __AUTH,__objc_data  _OBJC_CLASS_$_PHImageCacheEntry
+0x1ee1b7040  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHImageDecoder
+0x1ee1b6ed8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHImageDecoderAsyncDecodeRequestHandle
+0x1ee1b7018  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHImageDecoderOptions
+0x1ee1b7540  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHImageDisplaySpec
+0x1ef6b3528  __AUTH,__objc_data  _OBJC_CLASS_$_PHImageIODecoder
+0x1ee1b79f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHImageManager
+0x1ef6b0d78  __AUTH,__objc_data  _OBJC_CLASS_$_PHImageManagerRequestTracer
+0x1ee1b7518  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHImageRequest
+0x1ee1b74f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHImageRequestBehaviorSpec
+0x1ee1b74c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHImageRequestContext
+0x1ee1b7770  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHImageRequestOptions
+0x1ee1b74a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHImageResourceChooser
+0x1ee1b71a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHImageResourceChooserBestPolicyHandler
+0x1ee1b6848  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHImageResourceChooserFastPolicyHandler
+0x1ef6b2628  __AUTH,__objc_data  _OBJC_CLASS_$_PHImageResourceChooserIntermediatePolicyHandler
+0x1ee1b7180  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHImageResourceChooserPolicyHandler
+0x1ee1b7158  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHImageResourceChooserRequestInfo
+0x1ee1b7478  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHImageResult
+0x1ef6abe18  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportAmbientPosterSource
+0x1ef6afd38  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportAsset
+0x1ef6afd10  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportAssetBundleAsset
+0x1ef6afce8  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportAssetDataRequest
+0x1ef6afcc0  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportAssetFilePresenter
+0x1ef6afc98  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportAssetMetadataRequest
+0x1ef6afc70  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportAssetNameDescription
+0x1ef6afc48  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportAssetThumbnailDataRequest
+0x1ef6afc20  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportBatch
+0x1ef6afbf8  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportCanceler
+0x1ef6b1c78  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportController
+0x1ef6afbd0  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportDeviceAsset
+0x1ef6afba8  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportDeviceSource
+0x1ef6afb80  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportDuplicateChecker
+0x1ef6afb58  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportDuplicateInfo
+0x1ef6afb30  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportException
+0x1ef6b1c50  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportExceptionRecorder
+0x1ef6afb08  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportLegacyLibrarySource
+0x1ef6afae0  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportLibraryAsset
+0x1ef6afab8  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportLibrarySource
+0x1ef6afa90  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportOptions
+0x1ef6afa68  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportRecord
+0x1ef6afa40  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportResults
+0x1ee1b7ec8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHImportSession
+0x1ef6b1c28  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportSource
+0x1ef6afa18  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportTimer
+0x1ef6af9f0  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportTimerCollection
+0x1ef6af9c8  __AUTH,__objc_data  _OBJC_CLASS_$_PHImportUrlSource
+0x1ef6af9a0  __AUTH,__objc_data  _OBJC_CLASS_$_PHImporter
+0x1ef6b1c00  __AUTH,__objc_data  _OBJC_CLASS_$_PHInternalAssetExportRequest
+0x1ef6ad8a8  __AUTH,__objc_data  _OBJC_CLASS_$_PHInternalRootFolder
+0x1ee1b7cc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHKeyword
+0x1ef6af978  __AUTH,__objc_data  _OBJC_CLASS_$_PHKeywordChangeRequest
+0x1ef6af950  __AUTH,__objc_data  _OBJC_CLASS_$_PHKeywordDeleteRequest
+0x1ee1b7bf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHLibraryScope
+0x1ef6af928  __AUTH,__objc_data  _OBJC_CLASS_$_PHLibraryScopeChangeRequest
+0x1ef6af900  __AUTH,__objc_data  _OBJC_CLASS_$_PHLibraryScopeCondition
+0x1ef6af8d8  __AUTH,__objc_data  _OBJC_CLASS_$_PHLibraryScopeConditionDateRange
+0x1ef6af8b0  __AUTH,__objc_data  _OBJC_CLASS_$_PHLibraryScopeConditionPerson
+0x1ef6af888  __AUTH,__objc_data  _OBJC_CLASS_$_PHLibraryScopeConditionUnknown
+0x1ef6af860  __AUTH,__objc_data  _OBJC_CLASS_$_PHLibraryScopeDeleteRequest
+0x1ef6af838  __AUTH,__objc_data  _OBJC_CLASS_$_PHLibraryScopeRule
+0x1ee1b6f78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHLivePhoto
+0x1ef6b0d50  __AUTH,__objc_data  _OBJC_CLASS_$_PHLivePhotoCreationOperation
+0x1ef6af810  __AUTH,__objc_data  _OBJC_CLASS_$_PHLivePhotoEditingContext
+0x1ef6af7e8  __AUTH,__objc_data  _OBJC_CLASS_$_PHLivePhotoExportSession
+0x1ef6af7c0  __AUTH,__objc_data  _OBJC_CLASS_$_PHLivePhotoExportSessionOptions
+0x1ef6b2600  __AUTH,__objc_data  _OBJC_CLASS_$_PHLivePhotoRequestContext
+0x1ef6b2ce0  __AUTH,__objc_data  _OBJC_CLASS_$_PHLivePhotoRequestOptions
+0x1ef6b25d8  __AUTH,__objc_data  _OBJC_CLASS_$_PHLivePhotoResult
+0x1ef6af798  __AUTH,__objc_data  _OBJC_CLASS_$_PHLiveRenderEditingInputRequestContext
+0x1ef6b25b0  __AUTH,__objc_data  _OBJC_CLASS_$_PHLocalIdentifierMapping
+0x1ee1b7450  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHLocallyAvailableResourceBag
+0x1ee1b6eb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHManualFetchResult
+0x1ef6b0d28  __AUTH,__objc_data  _OBJC_CLASS_$_PHMediaProcessingAlgorithmVersionProvider
+0x1ee1b7428  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHMediaRequest
+0x1ee1b7400  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHMediaRequestContext
+0x1ef6b1bd8  __AUTH,__objc_data  _OBJC_CLASS_$_PHMediaResourceRequest
+0x1ef6b1bb0  __AUTH,__objc_data  _OBJC_CLASS_$_PHMediaResourceResult
+0x1ee1b8080  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHMemory
+0x1ef6b1b88  __AUTH,__objc_data  _OBJC_CLASS_$_PHMemoryAnalyticsHelper
+0x1ef6b2cb8  __AUTH,__objc_data  _OBJC_CLASS_$_PHMemoryChangeRequest
+0x1ef6b1b60  __AUTH,__objc_data  _OBJC_CLASS_$_PHMemoryDeleteRequest
+0x1ef6b2588  __AUTH,__objc_data  _OBJC_CLASS_$_PHMemoryFeature
+0x1ef6b1b38  __AUTH,__objc_data  _OBJC_CLASS_$_PHMemoryFeatureDecoder
+0x1ef6b0d00  __AUTH,__objc_data  _OBJC_CLASS_$_PHMemoryFeatureEncoder
+0x1ef6af770  __AUTH,__objc_data  _OBJC_CLASS_$_PHMemoryGenerationOptions
+0x1ef6af748  __AUTH,__objc_data  _OBJC_CLASS_$_PHMemoryPresentationHints
+0x1ef6b1b10  __AUTH,__objc_data  _OBJC_CLASS_$_PHMemoryPropertySet
+0x1ef6b2560  __AUTH,__objc_data  _OBJC_CLASS_$_PHMemoryRelevanceHelper
+0x1ef6b0cd8  __AUTH,__objc_data  _OBJC_CLASS_$_PHMemoryUpNextHelper
+0x1ef6b1ae8  __AUTH,__objc_data  _OBJC_CLASS_$_PHMemoryUserFeedbackProperties
+0x1ee1b8058  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHMoment
+0x1ef6b1ac0  __AUTH,__objc_data  _OBJC_CLASS_$_PHMomentChangeRequest
+0x1ee1b77c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHMomentList
+0x1ee1b7ea0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHMomentShare
+0x1ef6af720  __AUTH,__objc_data  _OBJC_CLASS_$_PHMomentShareChangeRequest
+0x1ef6af6f8  __AUTH,__objc_data  _OBJC_CLASS_$_PHMomentShareDeleteRequest
+0x1ef6af6d0  __AUTH,__objc_data  _OBJC_CLASS_$_PHMomentSharePreview
+0x1ef6ad880  __AUTH,__objc_data  _OBJC_CLASS_$_PHMomentThemeAssignment
+0x1ef6acd68  __AUTH,__objc_data  _OBJC_CLASS_$_PHMutablePTPAsset
+0x1ee1b85a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHObject
+0x1ee1b6708  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHObjectChangeDetails
+0x1ef6b2c90  __AUTH,__objc_data  _OBJC_CLASS_$_PHObjectDeleteRequest
+0x1ef6b0cb0  __AUTH,__objc_data  _OBJC_CLASS_$_PHObjectDeleteValidator
+0x1ee1b6d70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHObjectPLAdapter
+0x1ef6b3168  __AUTH,__objc_data  _OBJC_CLASS_$_PHObjectPlaceholder
+0x1ef6b1a98  __AUTH,__objc_data  _OBJC_CLASS_$_PHObjectReference
+0x1ef6ad858  __AUTH,__objc_data  _OBJC_CLASS_$_PHPTPAnalyticsData
+0x1ef6acd40  __AUTH,__objc_data  _OBJC_CLASS_$_PHPTPAsset
+0x1ef6acd18  __AUTH,__objc_data  _OBJC_CLASS_$_PHPTPAssetHandle
+0x1ef6ad830  __AUTH,__objc_data  _OBJC_CLASS_$_PHPTPAssetManager
+0x1ef6accf0  __AUTH,__objc_data  _OBJC_CLASS_$_PHPTPAssetReader
+0x1ef6accc8  __AUTH,__objc_data  _OBJC_CLASS_$_PHPTPConversionDestinationAssetReader
+0x1ef6acca0  __AUTH,__objc_data  _OBJC_CLASS_$_PHPTPConversionHelper
+0x1ef6acc78  __AUTH,__objc_data  _OBJC_CLASS_$_PHPTPConversionResult
+0x1ef6acc50  __AUTH,__objc_data  _OBJC_CLASS_$_PHPTPConversionSourceHints
+0x1ef6acc28  __AUTH,__objc_data  _OBJC_CLASS_$_PHPTPDebugAnalytics
+0x1ef6acc00  __AUTH,__objc_data  _OBJC_CLASS_$_PHPTPFetches
+0x1ef6ad808  __AUTH,__objc_data  _OBJC_CLASS_$_PHPTPFormatConversionManager
+0x1ef6acbd8  __AUTH,__objc_data  _OBJC_CLASS_$_PHPTPLegacyConversionSupport
+0x1ef6acbb0  __AUTH,__objc_data  _OBJC_CLASS_$_PHPTPUtilities
+0x1ee1b6c58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHPerformChangesInstrumentation
+0x1ee1b84b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHPerformChangesRequest
+0x1ef6b3140  __AUTH,__objc_data  _OBJC_CLASS_$_PHPerformChangesTransaction
+0x1ef6b0c88  __AUTH,__objc_data  _OBJC_CLASS_$_PHPersistentChange
+0x1ef6b0c60  __AUTH,__objc_data  _OBJC_CLASS_$_PHPersistentChangeEnumerationContext
+0x1ef6b1a70  __AUTH,__objc_data  _OBJC_CLASS_$_PHPersistentChangeFetchOptions
+0x1ef6b1a48  __AUTH,__objc_data  _OBJC_CLASS_$_PHPersistentChangeFetchRequest
+0x1ef6b2538  __AUTH,__objc_data  _OBJC_CLASS_$_PHPersistentChangeFetchResult
+0x1ef6b2510  __AUTH,__objc_data  _OBJC_CLASS_$_PHPersistentChangeToken
+0x1ef6b0c38  __AUTH,__objc_data  _OBJC_CLASS_$_PHPersistentObjectChangeDetails
+0x1ee1b80d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHPerson
+0x1ef6acb88  __AUTH,__objc_data  _OBJC_CLASS_$_PHPersonAvailability
+0x1ef6b0c10  __AUTH,__objc_data  _OBJC_CLASS_$_PHPersonChangeRequest
+0x1ef6b0be8  __AUTH,__objc_data  _OBJC_CLASS_$_PHPersonDeleteRequest
+0x1ef6b0bc0  __AUTH,__objc_data  _OBJC_CLASS_$_PHPersonPLAdapter
+0x1ef6b0b98  __AUTH,__objc_data  _OBJC_CLASS_$_PHPersonPropertySet
+0x1ef6af6a8  __AUTH,__objc_data  _OBJC_CLASS_$_PHPersonReference
+0x1ef6af680  __AUTH,__objc_data  _OBJC_CLASS_$_PHPersonResetManager
+0x1ef6af658  __AUTH,__objc_data  _OBJC_CLASS_$_PHPersonSuggestion
+0x1ef6b0b70  __AUTH,__objc_data  _OBJC_CLASS_$_PHPersonUserFeedbackProperties
+0x1ee1b8530  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHPhotoLibrary
+0x1ef6b2c68  __AUTH,__objc_data  _OBJC_CLASS_$_PHPhotoLibraryAppPrivateData
+0x1ef6acb60  __AUTH,__objc_data  _OBJC_CLASS_$_PHPhotoLibraryAttributes
+0x1ef6ad7e0  __AUTH,__objc_data  _OBJC_CLASS_$_PHPhotoLibraryAttributesChangeRequest
+0x1ee1b83a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHPhotoLibraryChangeObserverRegistrar
+0x1ef6b24e8  __AUTH,__objc_data  _OBJC_CLASS_$_PHPhotoLibraryCloudStatus
+0x1ee1b7748  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHPhotoLibraryCloudStatusObserverCoordinator
+0x1ee1b8378  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHPhotoLibraryCloudStatusObserverRegistrar
+0x1ef6ad7b8  __AUTH,__objc_data  _OBJC_CLASS_$_PHPhotoLibraryCreationOptions
+0x1ef6ad790  __AUTH,__objc_data  _OBJC_CLASS_$_PHPhotoLibraryDeletionOptions
+0x1ef6acb38  __AUTH,__objc_data  _OBJC_CLASS_$_PHPhotoLibraryFeatureAvailability
+0x1ef6af630  __AUTH,__objc_data  _OBJC_CLASS_$_PHPhotoLibraryFeatureAvailabilityReporter
+0x1ef6acb10  __AUTH,__objc_data  _OBJC_CLASS_$_PHPhotoLibraryFeatureAvailabilityTask
+0x1ee1b6820  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHPhotoLibraryIdentifier
+0x1ef6b1a20  __AUTH,__objc_data  _OBJC_CLASS_$_PHPhotoLibraryManager
+0x1ef6b19f8  __AUTH,__objc_data  _OBJC_CLASS_$_PHPhotoLibraryOpenOptions
+0x1ee1b8030  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHPhotosHighlight
+0x1ef6b19d0  __AUTH,__objc_data  _OBJC_CLASS_$_PHPhotosHighlightChangeRequest
+0x1ef6af608  __AUTH,__objc_data  _OBJC_CLASS_$_PHPhotosHighlightDeleteRequest
+0x1ef6b3668  __AUTH,__objc_data  _OBJC_CLASS_$_PHPrefetchedMediaMetadata
+0x1ee1b6a78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHProgressContainerForRetryableRequest
+0x1ee1b7e78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHProject
+0x1ef6af5e0  __AUTH,__objc_data  _OBJC_CLASS_$_PHProjectChangeRequest
+0x1ef6b24c0  __AUTH,__objc_data  _OBJC_CLASS_$_PHPropertyFetchingHelper
+0x1ef6ade98  __AUTH,__objc_data  _OBJC_CLASS_$_PHPublicEventInfo
+0x1ee1b81c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHQuery
+0x1ef6b3500  __AUTH,__objc_data  _OBJC_CLASS_$_PHQueryChangeDetectionCriteria
+0x1ee1b7608  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHQueryPersonContext
+0x1ee1b7c98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHQuestion
+0x1ef6b19a8  __AUTH,__objc_data  _OBJC_CLASS_$_PHQuestionChangeRequest
+0x1ef6b1980  __AUTH,__objc_data  _OBJC_CLASS_$_PHQuestionDeleteRequest
+0x1ef6b0b48  __AUTH,__objc_data  _OBJC_CLASS_$_PHRecentContentSyndicationCollectionsResult
+0x1ee1b75e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHRecyclableObjectVendor
+0x1ee1b6a50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHRelationshipChangeRequestHelper
+0x1ef6af5b8  __AUTH,__objc_data  _OBJC_CLASS_$_PHRepairRequest
+0x1ee1b73d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHResourceChooserList
+0x1ee1b7130  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHResourceChooserListResourceInfo
+0x1ef6b1958  __AUTH,__objc_data  _OBJC_CLASS_$_PHResourceLocalAvailabilityRequest
+0x1ef6b1930  __AUTH,__objc_data  _OBJC_CLASS_$_PHResourceLocalAvailabilityRequestOptions
+0x1ef6abf80  __AUTH,__objc_data  _OBJC_CLASS_$_PHResourceRequestReplyGuard
+0x1ee1b73b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHSafeNSCacheDelegateReflector
+0x1ef6b2c40  __AUTH,__objc_data  _OBJC_CLASS_$_PHSandboxExtensionWrapper
+0x1ee1b6d48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHSceneClassification
+0x1ef6af590  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearch
+0x1ef6ad768  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchEntity
+0x1ef6ade70  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchEntityChangeRequest
+0x1ef6ade48  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchEntityCreationRequest
+0x1ef6acae8  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchEntityDeleteRequest
+0x1ef6acac0  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchFeedbackDiagnostics
+0x1ef6b1908  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchIndex
+0x1ef6ade20  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchIndexEntityQueryOptions
+0x1ef6addf8  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchIndexEntityResult
+0x1ef6ad740  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchIntentQUToken
+0x1ef6ad718  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchIntentQUTokenExpanded
+0x1ef6ad6f0  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchIntentQUTokenMediaType
+0x1ef6ad6c8  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchIntentQUTokenWhat
+0x1ef6ad6a0  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchIntentQUTokenWhen
+0x1ef6ad678  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchIntentQUTokenWhere
+0x1ef6ad650  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchIntentQUTokenWho
+0x1ef6ad628  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchIntentQueryOptions
+0x1ef6ad600  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchIntentQueryResult
+0x1ef6ad5d8  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchIntentTranslator
+0x1ef6af568  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchQuery
+0x1ef6af540  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchQueryAnnotation
+0x1ef6addd0  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchQueryDisambiguation
+0x1ef6aca98  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchQueryGroundingPersonalEvent
+0x1ef6b0b20  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchQueryManager
+0x1ef6af518  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchQueryMatchDetails
+0x1ef6af4f0  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchQueryOptions
+0x1ef6adda8  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchQueryQUToken
+0x1ef6af4c8  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchQueryResult
+0x1ef6af4a0  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchQuerySuggestion
+0x1ef6af478  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchResult
+0x1ef6add80  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchResultProcessor
+0x1ef6af450  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchSuggestion
+0x1ef6ad5b0  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchSuggestionOptions
+0x1ef6aca70  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchSuggestionProcessor
+0x1ef6ad588  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchSuggestionQueryResult
+0x1ef6af428  __AUTH,__objc_data  _OBJC_CLASS_$_PHSearchUtility
+0x1ef6add58  __AUTH,__objc_data  _OBJC_CLASS_$_PHSensitiveContentAnalysisUtility
+0x1ef6b0af8  __AUTH,__objc_data  _OBJC_CLASS_$_PHServerResourceRequestRunner
+0x1ef6af400  __AUTH,__objc_data  _OBJC_CLASS_$_PHShare
+0x1ef6aca48  __AUTH,__objc_data  _OBJC_CLASS_$_PHShareAssetChangeRequestHelper
+0x1ee1b7810  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHShareComment
+0x1ef6abdf0  __AUTH,__objc_data  _OBJC_CLASS_$_PHShareCommentChangeRequest
+0x1ef6aca20  __AUTH,__objc_data  _OBJC_CLASS_$_PHShareCommentCreationRequest
+0x1ef6ac9f8  __AUTH,__objc_data  _OBJC_CLASS_$_PHShareCommentDeleteRequest
+0x1ef6ac9d0  __AUTH,__objc_data  _OBJC_CLASS_$_PHShareCommentIsInterestingProperties
+0x1ef6ac9a8  __AUTH,__objc_data  _OBJC_CLASS_$_PHShareCommentPermissionsProperties
+0x1ef6ac980  __AUTH,__objc_data  _OBJC_CLASS_$_PHShareCommentPropertySet
+0x1ee1b7e50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHShareParticipant
+0x1ef6af3d8  __AUTH,__objc_data  _OBJC_CLASS_$_PHShareParticipantChangeRequest
+0x1ef6af3b0  __AUTH,__objc_data  _OBJC_CLASS_$_PHShareParticipantDeleteRequest
+0x1ef6ac958  __AUTH,__objc_data  _OBJC_CLASS_$_PHShareParticipantRelationshipChangeRequestHelper
+0x1ee1b7860  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHSharePost
+0x1ef6ac930  __AUTH,__objc_data  _OBJC_CLASS_$_PHSharePostChangeRequest
+0x1ef6ac908  __AUTH,__objc_data  _OBJC_CLASS_$_PHSharePostDeleteRequest
+0x1ef6af388  __AUTH,__objc_data  _OBJC_CLASS_$_PHSingleMediaRequestContext
+0x1ee1b6de8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHSmartAlbum
+0x1ef6af360  __AUTH,__objc_data  _OBJC_CLASS_$_PHSmartAlbumChangeRequest
+0x1ee1b66e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHSocialGroup
+0x1ef6add30  __AUTH,__objc_data  _OBJC_CLASS_$_PHSocialGroupChangeRequest
+0x1ef6add08  __AUTH,__objc_data  _OBJC_CLASS_$_PHSocialGroupDeleteRequest
+0x1ef6ac8e0  __AUTH,__objc_data  _OBJC_CLASS_$_PHSocialGroupReference
+0x1ee1b7e28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHSuggestion
+0x1ef6b3118  __AUTH,__objc_data  _OBJC_CLASS_$_PHSuggestionChangeRequest
+0x1ef6b18e0  __AUTH,__objc_data  _OBJC_CLASS_$_PHSuggestionDeleteRequest
+0x1ef6af338  __AUTH,__objc_data  _OBJC_CLASS_$_PHSuggestionMessageContext
+0x1ef6af310  __AUTH,__objc_data  _OBJC_CLASS_$_PHSuggestionMessageMatchingResult
+0x1ef6b30f0  __AUTH,__objc_data  _OBJC_CLASS_$_PHSynchronousPhotoLibraryExecutionContext
+0x1ef6b18b8  __AUTH,__objc_data  _OBJC_CLASS_$_PHTextFeature
+0x1ef6af2e8  __AUTH,__objc_data  _OBJC_CLASS_$_PHTextFeatureDecoder
+0x1ef6af2c0  __AUTH,__objc_data  _OBJC_CLASS_$_PHTextFeatureEncoder
+0x1ef6ad560  __AUTH,__objc_data  _OBJC_CLASS_$_PHTextUnderstandingIdentificationDocument
+0x1ef6b2498  __AUTH,__objc_data  _OBJC_CLASS_$_PHThumbnailAsset
+0x1ef6af298  __AUTH,__objc_data  _OBJC_CLASS_$_PHTransientAssetCollectionOptions
+0x1ef6b2470  __AUTH,__objc_data  _OBJC_CLASS_$_PHTrashableObjectDeleteRequest
+0x1ef6af270  __AUTH,__objc_data  _OBJC_CLASS_$_PHUnauthorizedFetchResult
+0x1ee1b8508  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHUniqueObjectIDCache
+0x1ef6af248  __AUTH,__objc_data  _OBJC_CLASS_$_PHUserFeedback
+0x1ef6b34d8  __AUTH,__objc_data  _OBJC_CLASS_$_PHUserFeedbackCalculator
+0x1ef6b34b0  __AUTH,__objc_data  _OBJC_CLASS_$_PHUserFeedbackDataCache
+0x1ef6af220  __AUTH,__objc_data  _OBJC_CLASS_$_PHUserFeedbackImportantPerson
+0x1ef6af1f8  __AUTH,__objc_data  _OBJC_CLASS_$_PHUtilityCollection
+0x1ef6ac8b8  __AUTH,__objc_data  _OBJC_CLASS_$_PHUtilityCollectionReference
+0x1ef6b30c8  __AUTH,__objc_data  _OBJC_CLASS_$_PHValidator
+0x1ef6b2c18  __AUTH,__objc_data  _OBJC_CLASS_$_PHVideoRequest
+0x1ef6b30a0  __AUTH,__objc_data  _OBJC_CLASS_$_PHVideoRequestBehaviorSpec
+0x1ef6b2bf0  __AUTH,__objc_data  _OBJC_CLASS_$_PHVideoRequestContext
+0x1ef6b2bc8  __AUTH,__objc_data  _OBJC_CLASS_$_PHVideoRequestOptions
+0x1ef6b2ba0  __AUTH,__objc_data  _OBJC_CLASS_$_PHVideoResult
+0x1ee1b76a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PHVideoXPCRequest
+0x1ef6af1d0  __AUTH,__objc_data  _OBJC_CLASS_$_PHVisionAnalysisUtilities
+0x1ef6b0ad0  __AUTH,__objc_data  _OBJC_CLASS_$_PHWallpaperAsset
+0x1ef6af1a8  __AUTH,__objc_data  _OBJC_CLASS_$__PHAnimatedImageLoadOperation
+0x1ef6b0aa8  __AUTH,__objc_data  _OBJC_CLASS_$__PHAssetCreationRequestValidator
+0x1ef6b2448  __AUTH,__objc_data  _OBJC_CLASS_$__PHDictionaryKeyValueWrapper
+0x1ee1b8198  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__PHFetchRequestWrapper
+0x1ef6ac890  __AUTH,__objc_data  _OBJC_CLASS_$__PHPhotoLibraryFeatureAvailabilityTaskGlobalProcessing
+0x1ef6ac868  __AUTH,__objc_data  _OBJC_CLASS_$__PHPhotoLibraryFeatureAvailabilityTaskMemoryCreation
+0x1ef6b0a80  __AUTH,__objc_data  _OBJC_CLASS_$__PHPhotoLibraryValidator
+0x1ef6b3078  __AUTH,__objc_data  _OBJC_CLASS_$__PHValidation
+0x1ebb46c3c  __DATA,__objc_ivar  OBJC_IVAR_$_PHAssetCollection._approximateLocation
+0x1ebb46bd4  __DATA,__objc_ivar  OBJC_IVAR_$_PHAssetCollection._assetCollectionSubtype
+0x1ebb46bd0  __DATA,__objc_ivar  OBJC_IVAR_$_PHAssetCollection._assetCollectionType
+0x1ebb46c30  __DATA,__objc_ivar  OBJC_IVAR_$_PHAssetCollection._assets
+0x1ebb46c40  __DATA,__objc_ivar  OBJC_IVAR_$_PHAssetCollection._canShowCloudComments
+0x1ebb46c00  __DATA,__objc_ivar  OBJC_IVAR_$_PHAssetCollection._endDate
+0x1ebb46bf0  __DATA,__objc_ivar  OBJC_IVAR_$_PHAssetCollection._localizedLocationNames
+0x1ebb46c7c  __DATA,__objc_ivar  OBJC_IVAR_$_PHAssetCollection._localizedTitle
+0x1ebb46bf8  __DATA,__objc_ivar  OBJC_IVAR_$_PHAssetCollection._parentFolderObjectID
+0x1ebb46c20  __DATA,__objc_ivar  OBJC_IVAR_$_PHAssetCollection._query
+0x1ebb46bfc  __DATA,__objc_ivar  OBJC_IVAR_$_PHAssetCollection._startDate
+0x1ebb46c24  __DATA,__objc_ivar  OBJC_IVAR_$_PHAssetCollection._transientIdentifier
+0x1ebb47fd0  __DATA,__objc_ivar  OBJC_IVAR_$_PHAssetPropertySet._asset
+0x1ebb498dc  __DATA,__objc_ivar  OBJC_IVAR_$_PHChangeRequest._helper
+0x1ebb47068  __DATA,__objc_ivar  OBJC_IVAR_$_PHChangeRequestHelper._isMutated
+0x1ebb4706c  __DATA,__objc_ivar  OBJC_IVAR_$_PHChangeRequestHelper._isNewRequest
+0x1ebb47070  __DATA,__objc_ivar  OBJC_IVAR_$_PHChangeRequestHelper._mutations
+0x1ebb47074  __DATA,__objc_ivar  OBJC_IVAR_$_PHChangeRequestHelper._nilMutations
+0x1ebb46fdc  __DATA,__objc_ivar  OBJC_IVAR_$_PHCollectionList._collectionListSubtype
+0x1ebb46fd8  __DATA,__objc_ivar  OBJC_IVAR_$_PHCollectionList._collectionListType
+0x1ebb46ff4  __DATA,__objc_ivar  OBJC_IVAR_$_PHCollectionList._collections
+0x1ebb47000  __DATA,__objc_ivar  OBJC_IVAR_$_PHCollectionList._endDate
+0x1ebb46fe4  __DATA,__objc_ivar  OBJC_IVAR_$_PHCollectionList._localizedLocationNames
+0x1ebb46fe0  __DATA,__objc_ivar  OBJC_IVAR_$_PHCollectionList._localizedTitle
+0x1ebb46fec  __DATA,__objc_ivar  OBJC_IVAR_$_PHCollectionList._parentFolderObjectID
+0x1ebb46ff0  __DATA,__objc_ivar  OBJC_IVAR_$_PHCollectionList._query
+0x1ebb46ffc  __DATA,__objc_ivar  OBJC_IVAR_$_PHCollectionList._startDate
+0x1ebb46ff8  __DATA,__objc_ivar  OBJC_IVAR_$_PHCollectionList._transientIdentifier
+0x1ebb46658  __DATA,__objc_ivar  OBJC_IVAR_$_PHCompositeMediaResult._imageProperties
+0x1ebb46654  __DATA,__objc_ivar  OBJC_IVAR_$_PHCompositeMediaResult._mutableInfo
+0x1ebb48fbc  __DATA,__objc_ivar  OBJC_IVAR_$_PHContentEditingInputRequestContext._contentEditingInputResult
+0x1ebb48c18  __DATA,__objc_ivar  OBJC_IVAR_$_PHFacePropertySet._face
+0x1ebb49a94  __DATA,__objc_ivar  OBJC_IVAR_$_PHFetchResult._fetchError
+0x1ebb49a90  __DATA,__objc_ivar  OBJC_IVAR_$_PHFetchResult._fetchPropertySets
+0x1ebb49a8c  __DATA,__objc_ivar  OBJC_IVAR_$_PHFetchResult._fetchType
+0x1ebb46ac0  __DATA,__objc_ivar  OBJC_IVAR_$_PHImageRequest._asyncDecodeRequestHandle
+0x1ebb46aa8  __DATA,__objc_ivar  OBJC_IVAR_$_PHImageRequest._imageResult
+0x1ebb46ab4  __DATA,__objc_ivar  OBJC_IVAR_$_PHImageRequest._lock
+0x1ebb46e30  __DATA,__objc_ivar  OBJC_IVAR_$_PHImportAsset._source
+0x1ebb46e34  __DATA,__objc_ivar  OBJC_IVAR_$_PHImportAsset._strongSource
+0x1ebb46e1c  __DATA,__objc_ivar  OBJC_IVAR_$_PHImportAssetNameDescription._filename
+0x1ebb46e20  __DATA,__objc_ivar  OBJC_IVAR_$_PHImportAssetNameDescription._uuid
+0x1ebb484c8  __DATA,__objc_ivar  OBJC_IVAR_$_PHImportDeviceAsset._cameraFile
+0x1ebb48cac  __DATA,__objc_ivar  OBJC_IVAR_$_PHMediaRequest._configurationError
+0x1ebb46c9c  __DATA,__objc_ivar  OBJC_IVAR_$_PHMediaRequestContext._resultHandler
+0x1ebb47418  __DATA,__objc_ivar  OBJC_IVAR_$_PHMemoryPropertySet._memory
+0x1ebb48cf4  __DATA,__objc_ivar  OBJC_IVAR_$_PHObject._uuid
+0x1ebb466f8  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._burstFavorite
+0x1ebb466fc  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._burstFirstPicked
+0x1ebb466f4  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._burstPicked
+0x1ebb466f0  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._burstUUID
+0x1ebb466e0  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._captureDateString
+0x1ebb4672c  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._capturedFilename
+0x1ebb46714  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._contentType
+0x1ebb4670c  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._conversionGroup
+0x1ebb46724  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._dcfFilename
+0x1ebb466b8  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._deleted
+0x1ebb466d8  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._desiredOrientation
+0x1ebb466e4  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._durationString
+0x1ebb46728  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._fileSystemFilename
+0x1ebb466c0  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._fingerprint
+0x1ebb466ec  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._groupUUID
+0x1ebb46700  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._highFrameRateVideo
+0x1ebb466d0  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._imagePixSize
+0x1ebb46718  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._isHDR
+0x1ebb466e8  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._locationString
+0x1ebb466dc  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._modificationDateString
+0x1ebb466bc  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._objectCompressedSize
+0x1ebb466c4  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._originatingAssetID
+0x1ebb4671c  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._overflowURL
+0x1ebb46708  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._relatedUUID
+0x1ebb46720  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._resourceHandle
+0x1ebb466cc  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._thumbCompressedSize
+0x1ebb466c8  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._thumbOffset
+0x1ebb466d4  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._thumbPixSize
+0x1ebb46704  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._timeLapseVideo
+0x1ebb46730  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._url
+0x1ebb46734  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._urlForTransfer
+0x1ebb46710  __DATA,__objc_ivar  OBJC_IVAR_$_PHPTPAsset._videoCodec
+0x1ebb48784  __DATA,__objc_ivar  OBJC_IVAR_$_PHPersonPropertySet._person
+0x1ebb48844  __DATA,__objc_ivar  OBJC_IVAR_$_PHResourceChooserList._asset
+0x1ebb4884c  __DATA,__objc_ivar  OBJC_IVAR_$_PHResourceChooserList._endOfListHandler
+0x1ebb48848  __DATA,__objc_ivar  OBJC_IVAR_$_PHResourceChooserList._itemHandler
+0x1ebb48850  __DATA,__objc_ivar  OBJC_IVAR_$_PHResourceChooserList._nonHintResourceInfos
+0x1ebb49898  __DATA,__objc_ivar  OBJC_IVAR_$_PHShareCommentPropertySet._comment
+0x1ef6af158  __AUTH,__objc_data  _OBJC_METACLASS_$_DurationGroup
+0x1ef6af130  __AUTH,__objc_data  _OBJC_METACLASS_$_ICCameraDeviceRemovedItemsCoalescer
+0x1ef6b3050  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAdjustmentData
+0x1ef6b1890  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAdjustmentDataRequest
+0x1ef6b1868  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAdjustmentDataRequestBehaviorSpec
+0x1ef6b1840  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAdjustmentDataRequestContext
+0x1ef6b1818  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAdjustmentDataResult
+0x1ee1b6a28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHAlbum
+0x1ef6abdc8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAmbientPosterBundle
+0x1ef6abda0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAmbientPosterConfiguration
+0x1ef6ac840  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAmbientPosterSelection
+0x1ef6ac818  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAnalysisCoalescer
+0x1ef6af108  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAnimatedImage
+0x1ef6af0e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAnimatedImageRequestOptions
+0x1ee1b8580  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHAsset
+0x1ef6b17f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetAddedDateProperties
+0x1ef6b17c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetAdjustmentProperties
+0x1ef6b2b78  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetAestheticProperties
+0x1ef6af0b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetAnalysisStateProperties
+0x1ef6af090  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetBundleExportSession
+0x1ef6b2420  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCameraCaptureDeviceProperties
+0x1ee1b6a00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHAssetChangeRequest
+0x1ef6b2b50  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCharacterRecognitionProperties
+0x1ef6b23f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCloudLocalStateProperties
+0x1ef6ac7f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCloudSharedProperties
+0x1ef6b2b28  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCoarseLocationProperties
+0x1ee1b82d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHAssetCollection
+0x1ef6b17a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCollectionChangeRequest
+0x1ef6af068  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCollectionReference
+0x1ef6ac7c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCollectionShareProperties
+0x1ef6b0a58  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCrashRecoverySupport
+0x1ef6af040  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCrashRecoveryUnarchiver
+0x1ef6b0a30  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCreationAdjustmentBakeInOptions
+0x1ef6adce0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCreationCameraIngestOptions
+0x1ef6b1778  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCreationDateProperties
+0x1ef6af018  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCreationDerivativeContext
+0x1ef6b0a08  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCreationMetadataCopyOptions
+0x1ef6b3488  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCreationOptions
+0x1ef6b3460  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCreationRequest
+0x1ef6b09e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCreationRequestBridge
+0x1ef6aeff0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCreationRequestPlaceholderSupport
+0x1ef6b09b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetCreationRequestPlaceholderSupportCrashRecovery
+0x1ee1b6c30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHAssetCurationProperties
+0x1ef6b23d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetDeleteOptions
+0x1ef6b23a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetDeleteRequest
+0x1ef6b3438  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetDescriptionProperties
+0x1ef6b1750  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetDestinationAssetCopyProperties
+0x1ef6b1728  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetExportRequest
+0x1ef6b1700  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetExportRequestOptions
+0x1ef6ac7a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetExtendedMetadata
+0x1ef6ac778  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetExtendedMetadataProperties
+0x1ef6b2380  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetGeoHashUtilities
+0x1ef6b2358  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetGridMetadataProperties
+0x1ee1b6e88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHAssetID
+0x1ef6b16d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetIconicScoreProperties
+0x1ef6ac750  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetImageMediaMetadata
+0x1ef6b3028  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetImportProperties
+0x1ef6b0990  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetKeywordProperties
+0x1ef6b0968  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetLibraryScopeProperties
+0x1ef6b2b00  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetLocalDateProperties
+0x1ef6b0940  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetLocationDataProperties
+0x1ef6b3000  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetMediaAnalysisProperties
+0x1ef6aefc8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetMontageProperties
+0x1ee1b6e60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHAssetOriginalMetadataProperties
+0x1ee1b6d20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHAssetPLAdapter
+0x1ef6ac728  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetPTPProperties
+0x1ef6ad538  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetPersonalEnvironmentProperties
+0x1ef6b16b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetPhotoAnalysisWallpaperProperties
+0x1ef6aefa0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetPhotoCommentProperties
+0x1ef6b2fd8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetPhotoIrisProperties
+0x1ee1b66b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHAssetPhotosInfoPanelExtendedProperties
+0x1ef6aef78  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetPhotosInfoPanelLocationProperties
+0x1ef6b2ad8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetPhotosOneUpProperties
+0x1ef6aef50  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetPhotosSmartStyleExtendedProperties
+0x1ee1b7680  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHAssetPropertySet
+0x1ef6aef28  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetReference
+0x1ee1b69d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHAssetResource
+0x1ef6b2330  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetResourceBag
+0x1ef6b2fb0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetResourceCreationOptions
+0x1ef6ac700  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetResourceFetchResult
+0x1ef6b0918  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetResourceManager
+0x1ef6b2ab0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetResourceQualityClass
+0x1ef6b1688  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetResourceRequest
+0x1ef6b1660  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetResourceRequestOptions
+0x1ee1b7900  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHAssetResourceUploadJob
+0x1ef6ac6d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetResourceUploadJobChangeRequest
+0x1ee1b79c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHAssetResourceUploadJobConfiguration
+0x1ef6ac6b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetResourceUploadJobConfigurationChangeRequest
+0x1ef6ac688  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetResourceUploadJobConfigurationDeleteRequest
+0x1ef6ac660  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetResourceUploadJobDeleteRequest
+0x1ef6abd78  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetResourceUploadJobOptions
+0x1ef6b08f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetResourceValidatedContext
+0x1ef6aef00  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetResourceWriteRequest
+0x1ee1b6690  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHAssetSceneAnalysisProperties
+0x1ef6b2308  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetSceneprintProperties
+0x1ef6b08c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetSpatialMediaProperties
+0x1ef6adcb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetStoryPlaybackProperties
+0x1ef6ad510  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetTextUnderstandingProperties
+0x1ef6b1638  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetUserActivityProperties
+0x1ef6ac638  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetVideoMediaMetadata
+0x1ef6b22e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHAssetVisualSearchProperties
+0x1ee1b7658  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHAssociatedObjectsEntry
+0x1ee1b7b80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHAssociatedObjectsTable
+0x1ee1b69b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHAsynchronousPhotoLibraryExecutionContext
+0x1ef6b08a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHBatchAssetExpunger
+0x1ef6b1610  __AUTH,__objc_data  _OBJC_METACLASS_$_PHBatchFetchedAssetPropertySet
+0x1ee1b8170  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHBatchFetchingArray
+0x1ef6b2a88  __AUTH,__objc_data  _OBJC_METACLASS_$_PHBatchFetchingArrayFetchedClass
+0x1ef6b0878  __AUTH,__objc_data  _OBJC_METACLASS_$_PHBatchPerformChanges
+0x1ee1b6988  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHCPAnalyticsCachedPropertyProvider
+0x1ee1b6960  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHCPAnalyticsMediaPropertyProvider
+0x1ee1b6668  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHCachingImageManager
+0x1ef6aeed8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCameraSmartSharingIdentity
+0x1ef6b0850  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCameraSmartSharingMetadata
+0x1ee1b79a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHChange
+0x1ef6b22b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHChangeBuilder
+0x1ee1b83f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHChangeHandlingDebugEvent
+0x1ee1b8440  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHChangeHandlingDebugger
+0x1ee1b6938  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHChangeRequest
+0x1ee1b6910  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHChangeRequestHelper
+0x1ef6b0828  __AUTH,__objc_data  _OBJC_METACLASS_$_PHChangeValidationController
+0x1ee1b68e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHClientLinkedAgainst
+0x1ee1b7978  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHCloudFeedEntry
+0x1ef6ac610  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCloudFeedEntryChangeRequest
+0x1ef6b3410  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCloudIdentifier
+0x1ef6b2290  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCloudIdentifierLookup
+0x1ef6b15e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCloudIdentifierMapping
+0x1ef6aeeb0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCloudSharedAssetExportRequest
+0x1ef6aee88  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCloudSharedPhoto
+0x1ee1b82b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHCollection
+0x1ef6b15c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCollectionDeleteRequest
+0x1ee1b7e00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHCollectionList
+0x1ef6aee60  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCollectionListAncestryContext
+0x1ef6aee38  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCollectionListChangeRequest
+0x1ef6ac5e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCollectionListKeyAssetsFetchResult
+0x1ef6aee10  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCollectionListReference
+0x1ef6aede8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCollectionReference
+0x1ee1b7ab8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHCollectionShare
+0x1ef6ac5c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCollectionShareAssetSource
+0x1ef6ac598  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCollectionShareChangeRequest
+0x1ef6ac570  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCollectionShareDeleteRequest
+0x1ee1b7388  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHCompositeMediaResult
+0x1ef6b2a60  __AUTH,__objc_data  _OBJC_METACLASS_$_PHConcurrentMapTable
+0x1ef6b1598  __AUTH,__objc_data  _OBJC_METACLASS_$_PHContentEditingInput
+0x1ef6b1570  __AUTH,__objc_data  _OBJC_METACLASS_$_PHContentEditingInputRequestContext
+0x1ef6b1548  __AUTH,__objc_data  _OBJC_METACLASS_$_PHContentEditingInputRequestOptions
+0x1ef6b1520  __AUTH,__objc_data  _OBJC_METACLASS_$_PHContentEditingInputResult
+0x1ef6b2268  __AUTH,__objc_data  _OBJC_METACLASS_$_PHContentEditingOutput
+0x1ef6b2240  __AUTH,__objc_data  _OBJC_METACLASS_$_PHContentEditingOutputRequestOptions
+0x1ee1b7a90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHConversation
+0x1ef6adc90  __AUTH,__objc_data  _OBJC_METACLASS_$_PHCreationRequestOptions
+0x1ef6ac548  __AUTH,__objc_data  _OBJC_METACLASS_$_PHDCFUtilities
+0x1ef6b2218  __AUTH,__objc_data  _OBJC_METACLASS_$_PHDetectionTrait
+0x1ef6aedc0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHDuplicateDetection
+0x1ee1b7b30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHEntityKeyMap
+0x1ef6b33e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHExternalAssetResource
+0x1ee1b8008  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHFace
+0x1ef6b0800  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFaceChangeRequest
+0x1ef6b2f88  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFaceClusteringProperties
+0x1ee1b7c70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHFaceCrop
+0x1ef6b07d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFaceCropChangeRequest
+0x1ef6aed98  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFaceCropDeleteRequest
+0x1ef6b07b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFaceDeleteRequest
+0x1ee1b7dd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHFaceGroup
+0x1ef6b0788  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFaceGroupChangeRequest
+0x1ef6b0760  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFaceGroupDeleteRequest
+0x1ef6aed70  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFaceGroupPLAdapter
+0x1ef6b21f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFacePLAdapter
+0x1ef6b2f60  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFacePropertySet
+0x1ef6b33c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFaceprint
+0x1ef6aed48  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFeatureAvailability
+0x1ef6ac520  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFeatureAvailabilityConfig
+0x1ef6adc68  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFeatureAvailabilityReadOptions
+0x1ee1b78b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHFetchLogRateLimiter
+0x1ee1b8238  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHFetchOptions
+0x1ee1b8210  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHFetchResult
+0x1ee1b6c08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHFetchResultChangeDetails
+0x1ee1b7fe0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHFetchResultInstrumentation
+0x1ee1b6640  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHFetchResultMediaTypeCounts
+0x1ee1b6ff0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHFigDecoder
+0x1ef6ad4e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindEmbeddingSearch
+0x1ef6ad4c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindEmbeddingSearchOptions
+0x1ef6ad498  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindEmbeddingSearchResult
+0x1ef6ad470  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindLexeme
+0x1ef6ad448  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindLexemeResult
+0x1ef6b0738  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindQueryContext
+0x1ef6b0710  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindQueryExecutor
+0x1ef6aed20  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindQueryMatchDetails
+0x1ef6aecf8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindQueryOperand
+0x1ef6aecd0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindQueryOperator
+0x1ef6b06e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindQueryOptions
+0x1ef6adc40  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindQueryParse
+0x1ef6adc18  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindQueryParseResult
+0x1ef6adbf0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindQueryParseToken
+0x1ef6aeca8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindQueryParser
+0x1ef6aec80  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindQueryPredicate
+0x1ef6aec58  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindQueryResult
+0x1ef6aec30  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindQueryResultItem
+0x1ef6aec08  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindQueryResultProcessor
+0x1ef6aebe0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindQueryResultRanker
+0x1ef6aebb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindQueryToken
+0x1ef6aeb90  __AUTH,__objc_data  _OBJC_METACLASS_$_PHFindQueryUtilities
+0x1ef6adbc8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHGeneratedAssetDescription
+0x1ef6aeb68  __AUTH,__objc_data  _OBJC_METACLASS_$_PHGraphQuery
+0x1ef6b3398  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImageCache
+0x1ef6b3370  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImageCacheEntry
+0x1ee1b6fc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHImageDecoder
+0x1ee1b6e38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHImageDecoderAsyncDecodeRequestHandle
+0x1ee1b6fa0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHImageDecoderOptions
+0x1ee1b7360  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHImageDisplaySpec
+0x1ef6b3348  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImageIODecoder
+0x1ee1b7950  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHImageManager
+0x1ef6b06c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImageManagerRequestTracer
+0x1ee1b7338  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHImageRequest
+0x1ee1b7310  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHImageRequestBehaviorSpec
+0x1ee1b72e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHImageRequestContext
+0x1ee1b7720  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHImageRequestOptions
+0x1ee1b72c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHImageResourceChooser
+0x1ee1b7108  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHImageResourceChooserBestPolicyHandler
+0x1ee1b67f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHImageResourceChooserFastPolicyHandler
+0x1ef6b2a38  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImageResourceChooserIntermediatePolicyHandler
+0x1ee1b70e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHImageResourceChooserPolicyHandler
+0x1ee1b70b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHImageResourceChooserRequestInfo
+0x1ee1b7298  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHImageResult
+0x1ef6abd50  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportAmbientPosterSource
+0x1ef6aeb40  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportAsset
+0x1ef6aeb18  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportAssetBundleAsset
+0x1ef6aeaf0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportAssetDataRequest
+0x1ef6aeac8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportAssetFilePresenter
+0x1ef6aeaa0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportAssetMetadataRequest
+0x1ef6aea78  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportAssetNameDescription
+0x1ef6aea50  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportAssetThumbnailDataRequest
+0x1ef6aea28  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportBatch
+0x1ef6aea00  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportCanceler
+0x1ef6b14f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportController
+0x1ef6ae9d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportDeviceAsset
+0x1ef6ae9b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportDeviceSource
+0x1ef6ae988  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportDuplicateChecker
+0x1ef6ae960  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportDuplicateInfo
+0x1ef6ae938  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportException
+0x1ef6b14d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportExceptionRecorder
+0x1ef6ae910  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportLegacyLibrarySource
+0x1ef6ae8e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportLibraryAsset
+0x1ef6ae8c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportLibrarySource
+0x1ef6ae898  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportOptions
+0x1ef6ae870  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportRecord
+0x1ef6ae848  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportResults
+0x1ee1b7db0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHImportSession
+0x1ef6b14a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportSource
+0x1ef6ae820  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportTimer
+0x1ef6ae7f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportTimerCollection
+0x1ef6ae7d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImportUrlSource
+0x1ef6ae7a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHImporter
+0x1ef6b1480  __AUTH,__objc_data  _OBJC_METACLASS_$_PHInternalAssetExportRequest
+0x1ef6ad420  __AUTH,__objc_data  _OBJC_METACLASS_$_PHInternalRootFolder
+0x1ee1b7c48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHKeyword
+0x1ef6ae780  __AUTH,__objc_data  _OBJC_METACLASS_$_PHKeywordChangeRequest
+0x1ef6ae758  __AUTH,__objc_data  _OBJC_METACLASS_$_PHKeywordDeleteRequest
+0x1ee1b7bd0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHLibraryScope
+0x1ef6ae730  __AUTH,__objc_data  _OBJC_METACLASS_$_PHLibraryScopeChangeRequest
+0x1ef6ae708  __AUTH,__objc_data  _OBJC_METACLASS_$_PHLibraryScopeCondition
+0x1ef6ae6e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHLibraryScopeConditionDateRange
+0x1ef6ae6b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHLibraryScopeConditionPerson
+0x1ef6ae690  __AUTH,__objc_data  _OBJC_METACLASS_$_PHLibraryScopeConditionUnknown
+0x1ef6ae668  __AUTH,__objc_data  _OBJC_METACLASS_$_PHLibraryScopeDeleteRequest
+0x1ef6ae640  __AUTH,__objc_data  _OBJC_METACLASS_$_PHLibraryScopeRule
+0x1ee1b6f50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHLivePhoto
+0x1ef6b0698  __AUTH,__objc_data  _OBJC_METACLASS_$_PHLivePhotoCreationOperation
+0x1ef6ae618  __AUTH,__objc_data  _OBJC_METACLASS_$_PHLivePhotoEditingContext
+0x1ef6b0670  __AUTH,__objc_data  _OBJC_METACLASS_$_PHLivePhotoExportSession
+0x1ef6b0648  __AUTH,__objc_data  _OBJC_METACLASS_$_PHLivePhotoExportSessionOptions
+0x1ef6b21c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHLivePhotoRequestContext
+0x1ef6b2a10  __AUTH,__objc_data  _OBJC_METACLASS_$_PHLivePhotoRequestOptions
+0x1ef6b21a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHLivePhotoResult
+0x1ef6ae5f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHLiveRenderEditingInputRequestContext
+0x1ef6b2178  __AUTH,__objc_data  _OBJC_METACLASS_$_PHLocalIdentifierMapping
+0x1ee1b7270  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHLocallyAvailableResourceBag
+0x1ee1b6e10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHManualFetchResult
+0x1ef6b0620  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMediaProcessingAlgorithmVersionProvider
+0x1ee1b7248  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHMediaRequest
+0x1ee1b7220  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHMediaRequestContext
+0x1ef6b1458  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMediaResourceRequest
+0x1ef6b1430  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMediaResourceResult
+0x1ee1b7fb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHMemory
+0x1ef6b1408  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMemoryAnalyticsHelper
+0x1ef6b29e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMemoryChangeRequest
+0x1ef6b13e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMemoryDeleteRequest
+0x1ef6b29c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMemoryFeature
+0x1ef6b13b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMemoryFeatureDecoder
+0x1ef6b05f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMemoryFeatureEncoder
+0x1ef6ae5c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMemoryGenerationOptions
+0x1ef6ae5a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMemoryPresentationHints
+0x1ef6b1390  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMemoryPropertySet
+0x1ef6b2150  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMemoryRelevanceHelper
+0x1ef6b05d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMemoryUpNextHelper
+0x1ef6b1368  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMemoryUserFeedbackProperties
+0x1ee1b7f90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHMoment
+0x1ef6b1340  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMomentChangeRequest
+0x1ee1b7798  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHMomentList
+0x1ee1b7d88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHMomentShare
+0x1ef6ae578  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMomentShareChangeRequest
+0x1ef6ae550  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMomentShareDeleteRequest
+0x1ef6ae528  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMomentSharePreview
+0x1ef6ad3f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMomentThemeAssignment
+0x1ef6ac4f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHMutablePTPAsset
+0x1ee1b85d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHObject
+0x1ee1b6618  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHObjectChangeDetails
+0x1ef6b2998  __AUTH,__objc_data  _OBJC_METACLASS_$_PHObjectDeleteRequest
+0x1ef6b05a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHObjectDeleteValidator
+0x1ee1b6cf8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHObjectPLAdapter
+0x1ef6b2f38  __AUTH,__objc_data  _OBJC_METACLASS_$_PHObjectPlaceholder
+0x1ef6b1318  __AUTH,__objc_data  _OBJC_METACLASS_$_PHObjectReference
+0x1ef6ad3d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPTPAnalyticsData
+0x1ef6ac4d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPTPAsset
+0x1ef6ac4a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPTPAssetHandle
+0x1ef6ad3a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPTPAssetManager
+0x1ef6ac480  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPTPAssetReader
+0x1ef6ac458  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPTPConversionDestinationAssetReader
+0x1ef6ac430  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPTPConversionHelper
+0x1ef6ac408  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPTPConversionResult
+0x1ef6ac3e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPTPConversionSourceHints
+0x1ef6ac3b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPTPDebugAnalytics
+0x1ef6ac390  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPTPFetches
+0x1ef6ad380  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPTPFormatConversionManager
+0x1ef6ac368  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPTPLegacyConversionSupport
+0x1ef6ac340  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPTPUtilities
+0x1ee1b6be0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHPerformChangesInstrumentation
+0x1ee1b8490  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHPerformChangesRequest
+0x1ef6b2f10  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPerformChangesTransaction
+0x1ef6b0580  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPersistentChange
+0x1ef6b0558  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPersistentChangeEnumerationContext
+0x1ef6b12f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPersistentChangeFetchOptions
+0x1ef6b12c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPersistentChangeFetchRequest
+0x1ef6b2128  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPersistentChangeFetchResult
+0x1ef6b2100  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPersistentChangeToken
+0x1ef6b0530  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPersistentObjectChangeDetails
+0x1ee1b80f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHPerson
+0x1ef6ac318  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPersonAvailability
+0x1ef6b0508  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPersonChangeRequest
+0x1ef6b04e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPersonDeleteRequest
+0x1ef6b04b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPersonPLAdapter
+0x1ef6b0490  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPersonPropertySet
+0x1ef6ae500  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPersonReference
+0x1ef6ae4d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPersonResetManager
+0x1ef6ae4b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPersonSuggestion
+0x1ef6b0468  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPersonUserFeedbackProperties
+0x1ee1b8558  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHPhotoLibrary
+0x1ef6b2970  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPhotoLibraryAppPrivateData
+0x1ef6ac2f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPhotoLibraryAttributes
+0x1ef6ad358  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPhotoLibraryAttributesChangeRequest
+0x1ee1b83c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHPhotoLibraryChangeObserverRegistrar
+0x1ef6b20d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPhotoLibraryCloudStatus
+0x1ee1b7888  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHPhotoLibraryCloudStatusObserverCoordinator
+0x1ee1b8350  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHPhotoLibraryCloudStatusObserverRegistrar
+0x1ef6ad330  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPhotoLibraryCreationOptions
+0x1ef6ad308  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPhotoLibraryDeletionOptions
+0x1ef6ac2c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPhotoLibraryFeatureAvailability
+0x1ef6ae488  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPhotoLibraryFeatureAvailabilityReporter
+0x1ef6ac2a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPhotoLibraryFeatureAvailabilityTask
+0x1ee1b67d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHPhotoLibraryIdentifier
+0x1ef6b12a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPhotoLibraryManager
+0x1ef6b1278  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPhotoLibraryOpenOptions
+0x1ee1b7f68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHPhotosHighlight
+0x1ef6b1250  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPhotosHighlightChangeRequest
+0x1ef6ae460  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPhotosHighlightDeleteRequest
+0x1ef6b3690  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPrefetchedMediaMetadata
+0x1ee1b68c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHProgressContainerForRetryableRequest
+0x1ee1b7d60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHProject
+0x1ef6ae438  __AUTH,__objc_data  _OBJC_METACLASS_$_PHProjectChangeRequest
+0x1ef6b20b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPropertyFetchingHelper
+0x1ef6adba0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHPublicEventInfo
+0x1ee1b8148  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHQuery
+0x1ef6b3320  __AUTH,__objc_data  _OBJC_METACLASS_$_PHQueryChangeDetectionCriteria
+0x1ee1b75b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHQueryPersonContext
+0x1ee1b7c20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHQuestion
+0x1ef6b1228  __AUTH,__objc_data  _OBJC_METACLASS_$_PHQuestionChangeRequest
+0x1ef6b1200  __AUTH,__objc_data  _OBJC_METACLASS_$_PHQuestionDeleteRequest
+0x1ef6b0440  __AUTH,__objc_data  _OBJC_METACLASS_$_PHRecentContentSyndicationCollectionsResult
+0x1ee1b7590  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHRecyclableObjectVendor
+0x1ee1b6898  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHRelationshipChangeRequestHelper
+0x1ef6ae410  __AUTH,__objc_data  _OBJC_METACLASS_$_PHRepairRequest
+0x1ee1b71f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHResourceChooserList
+0x1ee1b7090  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHResourceChooserListResourceInfo
+0x1ef6b11d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHResourceLocalAvailabilityRequest
+0x1ef6b11b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHResourceLocalAvailabilityRequestOptions
+0x1ef6abf58  __AUTH,__objc_data  _OBJC_METACLASS_$_PHResourceRequestReplyGuard
+0x1ee1b71d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHSafeNSCacheDelegateReflector
+0x1ef6b2948  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSandboxExtensionWrapper
+0x1ee1b6cd0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHSceneClassification
+0x1ef6ae3e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearch
+0x1ef6ad2e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchEntity
+0x1ef6adb78  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchEntityChangeRequest
+0x1ef6adb50  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchEntityCreationRequest
+0x1ef6ac278  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchEntityDeleteRequest
+0x1ef6ac250  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchFeedbackDiagnostics
+0x1ef6b1188  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchIndex
+0x1ef6adb28  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchIndexEntityQueryOptions
+0x1ef6adb00  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchIndexEntityResult
+0x1ef6ad2b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchIntentQUToken
+0x1ef6ad290  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchIntentQUTokenExpanded
+0x1ef6ad268  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchIntentQUTokenMediaType
+0x1ef6ad240  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchIntentQUTokenWhat
+0x1ef6ad218  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchIntentQUTokenWhen
+0x1ef6ad1f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchIntentQUTokenWhere
+0x1ef6ad1c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchIntentQUTokenWho
+0x1ef6ad1a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchIntentQueryOptions
+0x1ef6ad178  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchIntentQueryResult
+0x1ef6ad150  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchIntentTranslator
+0x1ef6ae3c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchQuery
+0x1ef6ae398  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchQueryAnnotation
+0x1ef6adad8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchQueryDisambiguation
+0x1ef6ac228  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchQueryGroundingPersonalEvent
+0x1ef6b0418  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchQueryManager
+0x1ef6ae370  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchQueryMatchDetails
+0x1ef6ae348  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchQueryOptions
+0x1ef6adab0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchQueryQUToken
+0x1ef6ae320  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchQueryResult
+0x1ef6ae2f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchQuerySuggestion
+0x1ef6ae2d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchResult
+0x1ef6ada88  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchResultProcessor
+0x1ef6ae2a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchSuggestion
+0x1ef6ad128  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchSuggestionOptions
+0x1ef6ac200  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchSuggestionProcessor
+0x1ef6ad100  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchSuggestionQueryResult
+0x1ef6ae280  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSearchUtility
+0x1ef6ada60  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSensitiveContentAnalysisUtility
+0x1ef6b03f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHServerResourceRequestRunner
+0x1ef6ae258  __AUTH,__objc_data  _OBJC_METACLASS_$_PHShare
+0x1ef6ac1d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHShareAssetChangeRequestHelper
+0x1ee1b77e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHShareComment
+0x1ef6abd28  __AUTH,__objc_data  _OBJC_METACLASS_$_PHShareCommentChangeRequest
+0x1ef6ac1b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHShareCommentCreationRequest
+0x1ef6ac188  __AUTH,__objc_data  _OBJC_METACLASS_$_PHShareCommentDeleteRequest
+0x1ef6ac160  __AUTH,__objc_data  _OBJC_METACLASS_$_PHShareCommentIsInterestingProperties
+0x1ef6ac138  __AUTH,__objc_data  _OBJC_METACLASS_$_PHShareCommentPermissionsProperties
+0x1ef6ac110  __AUTH,__objc_data  _OBJC_METACLASS_$_PHShareCommentPropertySet
+0x1ee1b7d38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHShareParticipant
+0x1ef6ae230  __AUTH,__objc_data  _OBJC_METACLASS_$_PHShareParticipantChangeRequest
+0x1ef6ae208  __AUTH,__objc_data  _OBJC_METACLASS_$_PHShareParticipantDeleteRequest
+0x1ef6ac0e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHShareParticipantRelationshipChangeRequestHelper
+0x1ee1b7838  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHSharePost
+0x1ef6ac0c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSharePostChangeRequest
+0x1ef6ac098  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSharePostDeleteRequest
+0x1ef6ae1e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSingleMediaRequestContext
+0x1ee1b6dc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHSmartAlbum
+0x1ef6ae1b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSmartAlbumChangeRequest
+0x1ee1b65f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHSocialGroup
+0x1ef6ada38  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSocialGroupChangeRequest
+0x1ef6ada10  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSocialGroupDeleteRequest
+0x1ef6ac070  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSocialGroupReference
+0x1ee1b7d10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHSuggestion
+0x1ef6b2ee8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSuggestionChangeRequest
+0x1ef6b1160  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSuggestionDeleteRequest
+0x1ef6ae190  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSuggestionMessageContext
+0x1ef6ae168  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSuggestionMessageMatchingResult
+0x1ef6b2ec0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHSynchronousPhotoLibraryExecutionContext
+0x1ef6b1138  __AUTH,__objc_data  _OBJC_METACLASS_$_PHTextFeature
+0x1ef6ae140  __AUTH,__objc_data  _OBJC_METACLASS_$_PHTextFeatureDecoder
+0x1ef6ae118  __AUTH,__objc_data  _OBJC_METACLASS_$_PHTextFeatureEncoder
+0x1ef6ad0d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHTextUnderstandingIdentificationDocument
+0x1ef6b2088  __AUTH,__objc_data  _OBJC_METACLASS_$_PHThumbnailAsset
+0x1ef6ae0f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHTransientAssetCollectionOptions
+0x1ef6b2060  __AUTH,__objc_data  _OBJC_METACLASS_$_PHTrashableObjectDeleteRequest
+0x1ef6ae0c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHUnauthorizedFetchResult
+0x1ee1b84e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHUniqueObjectIDCache
+0x1ef6ae0a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHUserFeedback
+0x1ef6b32f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHUserFeedbackCalculator
+0x1ef6b32d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHUserFeedbackDataCache
+0x1ef6ae078  __AUTH,__objc_data  _OBJC_METACLASS_$_PHUserFeedbackImportantPerson
+0x1ef6ae050  __AUTH,__objc_data  _OBJC_METACLASS_$_PHUtilityCollection
+0x1ef6ac048  __AUTH,__objc_data  _OBJC_METACLASS_$_PHUtilityCollectionReference
+0x1ef6b2e98  __AUTH,__objc_data  _OBJC_METACLASS_$_PHValidator
+0x1ef6b2920  __AUTH,__objc_data  _OBJC_METACLASS_$_PHVideoRequest
+0x1ef6b2e70  __AUTH,__objc_data  _OBJC_METACLASS_$_PHVideoRequestBehaviorSpec
+0x1ef6b28f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHVideoRequestContext
+0x1ef6b28d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PHVideoRequestOptions
+0x1ef6b28a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHVideoResult
+0x1ee1b7630  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PHVideoXPCRequest
+0x1ef6ae028  __AUTH,__objc_data  _OBJC_METACLASS_$_PHVisionAnalysisUtilities
+0x1ef6b03c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PHWallpaperAsset
+0x1ef6ae000  __AUTH,__objc_data  _OBJC_METACLASS_$__PHAnimatedImageLoadOperation
+0x1ef6b03a0  __AUTH,__objc_data  _OBJC_METACLASS_$__PHAssetCreationRequestValidator
+0x1ef6b2038  __AUTH,__objc_data  _OBJC_METACLASS_$__PHDictionaryKeyValueWrapper
+0x1ee1b8120  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__PHFetchRequestWrapper
+0x1ef6ac020  __AUTH,__objc_data  _OBJC_METACLASS_$__PHPhotoLibraryFeatureAvailabilityTaskGlobalProcessing
+0x1ef6abff8  __AUTH,__objc_data  _OBJC_METACLASS_$__PHPhotoLibraryFeatureAvailabilityTaskMemoryCreation
+0x1ef6b0378  __AUTH,__objc_data  _OBJC_METACLASS_$__PHPhotoLibraryValidator
+0x1ef6b2e48  __AUTH,__objc_data  _OBJC_METACLASS_$__PHValidation
+0x199cd573c  __TEXT,__text  _PFAssetBundleMediaSubtypesFromPHAssetMediaSubtypes
+0x199cd5730  __TEXT,__text  _PFAssetBundleMediaTypeFromPHAssetMediaType
+0x199cd5760  __TEXT,__text  _PFAssetBundlePlaybackStyleFromPHAssetPlaybackStyle
+0x199cd5770  __TEXT,__text  _PFAssetBundlePlaybackVariationFromPHAssetPlaybackVariation
+0x199cd5780  __TEXT,__text  _PFAssetBundleVideoComplementVisibilityStateFromPHVideoComplementVisibilityState
+0x199b8b1b0  __TEXT,__text  _PHAccessLevelFromPLPhotosAccessScopeOptions
+0x199bb6e8c  __TEXT,__text  _PHAdjustmentBaseVersionDescription
+0x1e0cd0620  __DATA_CONST,__const  _PHAdjustmentDataKey
+0x1ebb4c5c0  __DATA,__data  _PHAdjustmentDataOpaqueFormatIdentifier
+0x199bb9c64  __TEXT,__text  _PHAmbientPosterMemoryTypeDescription
+0x199bb9d20  __TEXT,__text  _PHAmbientPosterModeDescription
+0x199bb9cc8  __TEXT,__text  _PHAmbientPosterShuffleFrequencyDescription
+0x199bb9ba0  __TEXT,__text  _PHAmbientPosterShuffleSmartAlbumsDescription
+0x199ca31e0  __TEXT,__text  _PHAmbientPosterTypeDescription
+0x1e0cd0618  __DATA_CONST,__const  _PHApplyTimeRangeKey
+0x199b5da10  __TEXT,__text  _PHAssertPredicateContainsNoManagedObjects
+0x199c069ec  __TEXT,__text  _PHAssetAVMetadataItemDateFormatter
+0x1e0cd0610  __DATA_CONST,__const  _PHAssetAnalysisAssetCountsKey
+0x1e0cd0608  __DATA_CONST,__const  _PHAssetAnalysisClustererEligibleFaceCountKey
+0x1e0cd0600  __DATA_CONST,__const  _PHAssetAnalysisClustererIsClusteringKey
+0x1e0cd05f8  __DATA_CONST,__const  _PHAssetAnalysisClustererPendingFaceCountKey
+0x1e0cd05f0  __DATA_CONST,__const  _PHAssetAnalysisClustererRebuildRequiredKey
+0x1e0cd05e8  __DATA_CONST,__const  _PHAssetAnalysisClusteringStateKey
+0x1e0cd05e0  __DATA_CONST,__const  _PHAssetAnalysisCountFailedKey
+0x1e0cd05d8  __DATA_CONST,__const  _PHAssetAnalysisCountFailedNoResourceKey
+0x1e0cd05d0  __DATA_CONST,__const  _PHAssetAnalysisCountProcessedKey
+0x1e0cd05c8  __DATA_CONST,__const  _PHAssetAnalysisCountTotalAllowedKey
+0x1e0cd05c0  __DATA_CONST,__const  _PHAssetAnalysisCountUnavailableKey
+0x1e0cd05b8  __DATA_CONST,__const  _PHAssetAnalysisPersonVIPStatusKey
+0x1e0cd05b0  __DATA_CONST,__const  _PHAssetAnalysisPetVIPStatusKey
+0x1e0cd05a8  __DATA_CONST,__const  _PHAssetAnalysisStatePropertyResultsKey
+0x1e0cd05a0  __DATA_CONST,__const  _PHAssetBundleExportSessionErrorDomain
+0x199ab1c4c  __TEXT,__text  _PHAssetCanPerformAdditionalProcessingOnAsset
+0x1e0cd0598  __DATA_CONST,__const  _PHAssetCollectionReferenceType
+0x1e0cd0590  __DATA_CONST,__const  _PHAssetComposabilityOptionComputeDiptychScoresKey
+0x1e0cd0588  __DATA_CONST,__const  _PHAssetComposabilityOptionComputeTriptychScoresKey
+0x1e0cd0580  __DATA_CONST,__const  _PHAssetComposabilityOptionIdenticalSimilarityThresholdKey
+0x1e0cd0578  __DATA_CONST,__const  _PHAssetComposabilityOptionSemanticalSimilarityThresholdKey
+0x1e0cd0570  __DATA_CONST,__const  _PHAssetComposabilityResultDiptychScoresKey
+0x1e0cd0568  __DATA_CONST,__const  _PHAssetComposabilityResultTriptychScoresKey
+0x1e0cd0560  __DATA_CONST,__const  _PHAssetCreationDictionaryPathExtension
+0x1e0cd0558  __DATA_CONST,__const  _PHAssetCreationHelperDictionaryFilename
+0x1e0cd0550  __DATA_CONST,__const  _PHAssetCreationLargeThumbnailExtension
+0x199d2da98  __TEXT,__const  _PHAssetCreationRequestRetryMaxCount
+0x1e0cd0548  __DATA_CONST,__const  _PHAssetCreationXPCDictionaryFilename
+0x199c06a78  __TEXT,__text  _PHAssetDateAndTimeZoneFromISO8601DateString
+0x199b98a58  __TEXT,__text  _PHAssetDeferredProcessingInvalidatesContentWhenCompleted
+0x199b98a50  __TEXT,__text  _PHAssetDeferredProcessingNeededDescription
+0x199af5454  __TEXT,__text  _PHAssetEditOperationToPLManagedAssetEditOperation
+0x199ab0c9c  __TEXT,__text  _PHAssetExportRequestAccessibilityDescriptionMetadataOperationForAssetWithOptions
+0x1e0cd0540  __DATA_CONST,__const  _PHAssetExportRequestAdjustmentBaseFullSizePhotoURLKey
+0x1e0cd0538  __DATA_CONST,__const  _PHAssetExportRequestAdjustmentBasePairedVideoURLKey
+0x1e0cd0530  __DATA_CONST,__const  _PHAssetExportRequestAdjustmentBaseVideoURLKey
+0x1e0cd0528  __DATA_CONST,__const  _PHAssetExportRequestAdjustmentDataFileURLKey
+0x1e0cd0520  __DATA_CONST,__const  _PHAssetExportRequestAdjustmentSecondaryDataFileURLKey
+0x1e0cd0518  __DATA_CONST,__const  _PHAssetExportRequestAlternatePhotoURLKey
+0x1e0cd0510  __DATA_CONST,__const  _PHAssetExportRequestAnalyticsPayloadActivityTypeKey
+0x1e0cd0508  __DATA_CONST,__const  _PHAssetExportRequestAnalyticsPayloadExcludeAccessibilityDescriptionKey
+0x1e0cd0500  __DATA_CONST,__const  _PHAssetExportRequestAnalyticsPayloadExcludeCaptionKey
+0x1e0cd04f8  __DATA_CONST,__const  _PHAssetExportRequestAnalyticsPayloadExcludeLivenessKey
+0x1e0cd04f0  __DATA_CONST,__const  _PHAssetExportRequestAnalyticsPayloadExcludeLocationKey
+0x1e0cd04e8  __DATA_CONST,__const  _PHAssetExportRequestAnalyticsPayloadPreparationOutcomeKey
+0x1e0cd04e0  __DATA_CONST,__const  _PHAssetExportRequestAnalyticsPayloadSendAsOriginalsKey
+0x1e0cd04d8  __DATA_CONST,__const  _PHAssetExportRequestAnalyticsPayloadTimeBundlingKey
+0x1e0cd04d0  __DATA_CONST,__const  _PHAssetExportRequestAnalyticsPayloadTimeDownloadingKey
+0x1e0cd04c8  __DATA_CONST,__const  _PHAssetExportRequestAnalyticsPayloadTimeGeneratingDeferredResourcesKey
+0x1e0cd04c0  __DATA_CONST,__const  _PHAssetExportRequestAnalyticsPayloadTimePerformingAdditionalProcessingKey
+0x1e0cd04b8  __DATA_CONST,__const  _PHAssetExportRequestAnalyticsPayloadTimePerformingAssetExportPreflightKey
+0x1e0cd04b0  __DATA_CONST,__const  _PHAssetExportRequestAnalyticsPayloadTimeRetrievingFromDiskKey
+0x1e0cd04a8  __DATA_CONST,__const  _PHAssetExportRequestAnalyticsPayloadTimeTotalKey
+0x199aae3c8  __TEXT,__text  _PHAssetExportRequestAssetAvailabilityDescription
+0x1e0cd04a0  __DATA_CONST,__const  _PHAssetExportRequestAssetBundleURLKey
+0x199ab7a00  __TEXT,__text  _PHAssetExportRequestCanCreateLivePhotoBundleForAssetWithOptions
+0x199ab0a78  __TEXT,__text  _PHAssetExportRequestCaptionMetadataOperationForAssetWithOptions
+0x199aaf5b0  __TEXT,__text  _PHAssetExportRequestCopyFileURL
+0x199aaf37c  __TEXT,__text  _PHAssetExportRequestCreateOutputDirectory
+0x199ab1574  __TEXT,__text  _PHAssetExportRequestCustomDateForAssetWithOptions
+0x199aaebc8  __TEXT,__text  _PHAssetExportRequestError
+0x1e0cd0498  __DATA_CONST,__const  _PHAssetExportRequestErrorDomain
+0x1e0cd0490  __DATA_CONST,__const  _PHAssetExportRequestExpectedFileNameKey
+0x1e0cd0488  __DATA_CONST,__const  _PHAssetExportRequestFileProviderURLKey
+0x1e0cd0480  __DATA_CONST,__const  _PHAssetExportRequestFullSizePhotoURLKey
+0x1e0cd0478  __DATA_CONST,__const  _PHAssetExportRequestFullSizeVideoURLKey
+0x199ab0e94  __TEXT,__text  _PHAssetExportRequestKeywordsMetadataOperationForAssetWithOptions
+0x1e0cd0470  __DATA_CONST,__const  _PHAssetExportRequestLivePhotoBundleURLKey
+0x199ab054c  __TEXT,__text  _PHAssetExportRequestLocationMetadataOperationForAssetWithOptions
+0x199d2d9e0  __TEXT,__const  _PHAssetExportRequestMaximumAnalyticsIntervalEvents
+0x199ab3640  __TEXT,__text  _PHAssetExportRequestMediaFormatConversionManager
+0x199ab2560  __TEXT,__text  _PHAssetExportRequestMetadataOperationComparingLibraryAndOriginalValuesForAsset
+0x199ab1aa4  __TEXT,__text  _PHAssetExportRequestNeedsSloMoFlatteningForAssetWithOptions
+0x1e0cd0468  __DATA_CONST,__const  _PHAssetExportRequestOriginalAdjustmentDataFileURLKey
+0x1e0cd0460  __DATA_CONST,__const  _PHAssetExportRequestOriginalProvenanceURLKey
+0x199ab40c8  __TEXT,__text  _PHAssetExportRequestPassthroughConversionIsSupportedByType
+0x199ab3210  __TEXT,__text  _PHAssetExportRequestPerformGifConversion
+0x199ab36b8  __TEXT,__text  _PHAssetExportRequestPerformMediaConversion
+0x199ab2818  __TEXT,__text  _PHAssetExportRequestPerformSlomoFlattening
+0x1e0cd0458  __DATA_CONST,__const  _PHAssetExportRequestPhotoFileURLKey
+0x199aafcec  __TEXT,__text  _PHAssetExportRequestProcessingRequiredForAssetWithOptions
+0x199ab0758  __TEXT,__text  _PHAssetExportRequestProvenanceMetadataOperationForAssetWithOptions
+0x1e0cd0450  __DATA_CONST,__const  _PHAssetExportRequestSpatialOvercapturePairedVideoURLKey
+0x1e0cd0448  __DATA_CONST,__const  _PHAssetExportRequestSpatialOvercapturePhotoURLKey
+0x1e0cd0440  __DATA_CONST,__const  _PHAssetExportRequestSpatialOvercaptureVideoURLKey
+0x199ab1134  __TEXT,__text  _PHAssetExportRequestStarRatingMetadataOperationForAssetWithOptions
+0x199aae3a4  __TEXT,__text  _PHAssetExportRequestStateDebugDescription
+0x1e0cd0438  __DATA_CONST,__const  _PHAssetExportRequestThumbnailURLKey
+0x199ab1368  __TEXT,__text  _PHAssetExportRequestTitleMetadataOperationForAssetWithOptions
+0x1e0cd0430  __DATA_CONST,__const  _PHAssetExportRequestTypeKey
+0x1e0cd0428  __DATA_CONST,__const  _PHAssetExportRequestVideoFileURLKey
+0x1e0cd0420  __DATA_CONST,__const  _PHAssetFailureInfoCodecNameKey
+0x1e0cd0418  __DATA_CONST,__const  _PHAssetFailureInfoUTIKey
+0x199d2dab8  __TEXT,__const  _PHAssetGeohashUtilitiesLimitOfAssetUUIDsToReturn
+0x199d2dac0  __TEXT,__const  _PHAssetGeohashUtilitiesLimitOfGeoHashesToReturn
+0x199d2dac8  __TEXT,__const  _PHAssetGeohashUtilitiesMaxGeoHashKeySize
+0x199bb1bd4  __TEXT,__text  _PHAssetImportSourceDescription
+0x199d2db68  __TEXT,__const  _PHAssetJunkSceneClassificationIdentifierMedicalReference
+0x199d2db70  __TEXT,__const  _PHAssetJunkSceneClassificationIdentifierReceiptOrDocument
+0x199d2db78  __TEXT,__const  _PHAssetJunkSceneClassificationIdentifierRepairReference
+0x199d2db80  __TEXT,__const  _PHAssetJunkSceneClassificationIdentifierShoppingReference
+0x199c06950  __TEXT,__text  _PHAssetLocationCoordinatesAreEqual
+0x199bb0fe4  __TEXT,__text  _PHAssetMediaAnalysisDataWithColorNormalizationDictionaryAndRevision
+0x199bb0f40  __TEXT,__text  _PHAssetMediaAnalysisStringWithSingleAudioClassification
+0x199ba965c  __TEXT,__text  _PHAssetMediaAnalysisStringsWithMultipleAudioClassifications
+0x199c7431c  __TEXT,__text  _PHAssetMediaAnalysisSyndicationProcessingValueDescription
+0x199b9897c  __TEXT,__text  _PHAssetMediaSubtypesDebugDescription
+0x199b98954  __TEXT,__text  _PHAssetMediaTypeDebugDescription
+0x199b9a654  __TEXT,__text  _PHAssetMediaTypeForPLAssetType
+0x199c06730  __TEXT,__text  _PHAssetOriginalAccessibilityDescriptionForAsset
+0x199c066a8  __TEXT,__text  _PHAssetOriginalCaptionForAsset
+0x199c067b8  __TEXT,__text  _PHAssetOriginalKeywordsForAsset
+0x199c065e4  __TEXT,__text  _PHAssetOriginalLocationForAsset
+0x199c0647c  __TEXT,__text  _PHAssetOriginalMetadataOfAsset
+0x199c068c8  __TEXT,__text  _PHAssetOriginalStarRatingForAsset
+0x199c06840  __TEXT,__text  _PHAssetOriginalTitleForAsset
+0x199b989ac  __TEXT,__text  _PHAssetPlaybackStyleDebugDescription
+0x199b9898c  __TEXT,__text  _PHAssetPlaybackVariationDebugDescription
+0x1e0cd0410  __DATA_CONST,__const  _PHAssetPreviewAestheticsScorePercentileThresholdKey
+0x1e0cd0408  __DATA_CONST,__const  _PHAssetPreviewCurationScorePercentileThresholdKey
+0x199d2dbf8  __TEXT,__const  _PHAssetPreviewDefaultAestheticScorePercentileThreshold
+0x199d2dbf0  __TEXT,__const  _PHAssetPreviewDefaultCurationScorePercentileThreshold
+0x1e0cd0400  __DATA_CONST,__const  _PHAssetPropertySetAdjustment
+0x1e0cd03f8  __DATA_CONST,__const  _PHAssetPropertySetAesthetic
+0x1e0cd03f0  __DATA_CONST,__const  _PHAssetPropertySetAnalysisState
+0x1e0cd03e8  __DATA_CONST,__const  _PHAssetPropertySetCameraCaptureDevice
+0x1e0cd03e0  __DATA_CONST,__const  _PHAssetPropertySetCharacterRecognition
+0x1e0cd03d8  __DATA_CONST,__const  _PHAssetPropertySetCloudLocalState
+0x1e0cd03d0  __DATA_CONST,__const  _PHAssetPropertySetCloudShared
+0x1e0cd03c8  __DATA_CONST,__const  _PHAssetPropertySetCoarseLocation
+0x1e0cd03c0  __DATA_CONST,__const  _PHAssetPropertySetCollectionShare
+0x1e0cd03b8  __DATA_CONST,__const  _PHAssetPropertySetComments
+0x1e0cd03b0  __DATA_CONST,__const  _PHAssetPropertySetCore
+0x1e0cd03a8  __DATA_CONST,__const  _PHAssetPropertySetCuration
+0x1e0cd03a0  __DATA_CONST,__const  _PHAssetPropertySetDescription
+0x1e0cd0398  __DATA_CONST,__const  _PHAssetPropertySetDestinationAssetCopy
+0x1e0cd0390  __DATA_CONST,__const  _PHAssetPropertySetExtendedMetadata
+0x1e0cd0388  __DATA_CONST,__const  _PHAssetPropertySetFaceWorker
+0x1e0cd0380  __DATA_CONST,__const  _PHAssetPropertySetGridMetadata
+0x1e0cd0378  __DATA_CONST,__const  _PHAssetPropertySetIconicScore
+0x1e0cd0370  __DATA_CONST,__const  _PHAssetPropertySetIdentifier
+0x1e0cd0368  __DATA_CONST,__const  _PHAssetPropertySetImageManager
+0x1e0cd0360  __DATA_CONST,__const  _PHAssetPropertySetImport
+0x1e0cd0358  __DATA_CONST,__const  _PHAssetPropertySetKeywords
+0x1e0cd0350  __DATA_CONST,__const  _PHAssetPropertySetLibraryScope
+0x1e0cd0348  __DATA_CONST,__const  _PHAssetPropertySetLocalDate
+0x1e0cd0340  __DATA_CONST,__const  _PHAssetPropertySetLocationData
+0x1e0cd0338  __DATA_CONST,__const  _PHAssetPropertySetMediaAnalysis
+0x1e0cd0330  __DATA_CONST,__const  _PHAssetPropertySetMontage
+0x1e0cd0328  __DATA_CONST,__const  _PHAssetPropertySetOriginalMetadata
+0x1e0cd0320  __DATA_CONST,__const  _PHAssetPropertySetPTP
+0x1e0cd0318  __DATA_CONST,__const  _PHAssetPropertySetPersonalEnvironment
+0x1e0cd0310  __DATA_CONST,__const  _PHAssetPropertySetPhotoAnalysisWallpaperProperties
+0x1e0cd0308  __DATA_CONST,__const  _PHAssetPropertySetPhotoIris
+0x1e0cd0300  __DATA_CONST,__const  _PHAssetPropertySetPhotosInfoPanelExtended
+0x1e0cd02f8  __DATA_CONST,__const  _PHAssetPropertySetPhotosInfoPanelLocation
+0x1e0cd02f0  __DATA_CONST,__const  _PHAssetPropertySetPhotosOneUp
+0x1e0cd02e8  __DATA_CONST,__const  _PHAssetPropertySetPhotosSmartStyleExtended
+0x1e0cd02e0  __DATA_CONST,__const  _PHAssetPropertySetPlacesCore
+0x1e0cd02d8  __DATA_CONST,__const  _PHAssetPropertySetSceneAnalysis
+0x1e0cd02d0  __DATA_CONST,__const  _PHAssetPropertySetSceneprint
+0x1e0cd02c8  __DATA_CONST,__const  _PHAssetPropertySetSpatialMedia
+0x1e0cd02c0  __DATA_CONST,__const  _PHAssetPropertySetStoryPlayback
+0x1e0cd02b8  __DATA_CONST,__const  _PHAssetPropertySetTextUnderstanding
+0x1e0cd02b0  __DATA_CONST,__const  _PHAssetPropertySetUserActivity
+0x1e0cd02a8  __DATA_CONST,__const  _PHAssetPropertySetVisualSearch
+0x1e0cd02a0  __DATA_CONST,__const  _PHAssetReferenceType
+0x199b21db0  __TEXT,__text  _PHAssetResourceAnalysisTypeDescription
+0x199b2205c  __TEXT,__text  _PHAssetResourceTypeClientCanAppendToOrDeleteFromAssetWithLibraryServicesManager
+0x199b21fc8  __TEXT,__text  _PHAssetResourceTypeClientCanAppendToOrDeleteFromAssetWithPhotoLibrary
+0x199b22158  __TEXT,__text  _PHAssetResourceTypeForDataDerivativeRecipeID
+0x199b7ae8c  __TEXT,__text  _PHAssetResourceTypeGroupsIncludesTargetGroups
+0x199d2db90  __TEXT,__const  _PHAssetSDSceneClassificationIdentifierFood
+0x199d2db98  __TEXT,__const  _PHAssetSDSceneClassificationIdentifierLandscapeCityscape
+0x199d2dad8  __TEXT,__const  _PHAssetSceneClassificationIdentifierAdult
+0x199d2dae0  __TEXT,__const  _PHAssetSceneClassificationIdentifierAnimal
+0x199d2dae8  __TEXT,__const  _PHAssetSceneClassificationIdentifierBaby
+0x199d2daf0  __TEXT,__const  _PHAssetSceneClassificationIdentifierBeach
+0x199d2daf8  __TEXT,__const  _PHAssetSceneClassificationIdentifierCat
+0x199d2db00  __TEXT,__const  _PHAssetSceneClassificationIdentifierChild
+0x199d2db08  __TEXT,__const  _PHAssetSceneClassificationIdentifierCrowd
+0x199d2db10  __TEXT,__const  _PHAssetSceneClassificationIdentifierDog
+0x199d2db18  __TEXT,__const  _PHAssetSceneClassificationIdentifierElder
+0x199d2db20  __TEXT,__const  _PHAssetSceneClassificationIdentifierInteriorRoom
+0x199d2db28  __TEXT,__const  _PHAssetSceneClassificationIdentifierOutdoor
+0x199d2db30  __TEXT,__const  _PHAssetSceneClassificationIdentifierPerformance
+0x199d2db38  __TEXT,__const  _PHAssetSceneClassificationIdentifierRecreation
+0x199d2db40  __TEXT,__const  _PHAssetSceneClassificationIdentifierScreenshot
+0x199d2db48  __TEXT,__const  _PHAssetSceneClassificationIdentifierSport
+0x199d2db50  __TEXT,__const  _PHAssetSceneClassificationIdentifierTeen
+0x199d2db58  __TEXT,__const  _PHAssetSceneClassificationIdentifierVehicle
+0x199bb0e58  __TEXT,__text  _PHAssetSourceTypeStringWithSourceType
+0x199d2dab0  __TEXT,__const  _PHAssetSyndicationCurrentAlgorithmVersion
+0x199d2daa8  __TEXT,__const  _PHAssetSyndicationCurrentAlgorithmVersionFinal
+0x199c742f4  __TEXT,__text  _PHAssetSyndicationEligibilityDescription
+0x199c742cc  __TEXT,__text  _PHAssetSyndicationEligibilityShortDescription
+0x199c7457c  __TEXT,__text  _PHAssetSyndicationProcessingCurrentVersionForAsset
+0x199c74504  __TEXT,__text  _PHAssetSyndicationProcessingVersionDescription
+0x199c74574  __TEXT,__text  _PHAssetSyndicationProcessingVersionWithFacesProcessed
+0x199b98a74  __TEXT,__text  _PHAssetVideoDeferredProcessingInvalidatesContentWhenCompleted
+0x199b98a54  __TEXT,__text  _PHAssetVideoDeferredProcessingNeededDescription
+0x199b8b158  __TEXT,__text  _PHAuthorizationStatusFromPhotosAccessAllowedResult
+0x1ebb4c5b8  __DATA,__data  _PHAuxiliaryResourceFilenameMarkerAdjustmentBase
+0x1ebb4c5b0  __DATA,__data  _PHAuxiliaryResourceFilenameMarkerAdjustmentSecondaryData
+0x1ebb4c5a8  __DATA,__data  _PHAuxiliaryResourceFilenameMarkerOriginalAdjustment
+0x1ebb4c5a0  __DATA,__data  _PHAuxiliaryResourceFilenameMarkerRender
+0x199d2daa0  __TEXT,__const  _PHBatchFetchedPropertySetFirstPropertyIndex
+0x1e0cd0298  __DATA_CONST,__const  _PHBatchFetchingArrayBatchSizeOptionKey
+0x1e0cd0290  __DATA_CONST,__const  _PHBatchFetchingArrayCacheSizeOptionKey
+0x1e0cd0288  __DATA_CONST,__const  _PHBatchFetchingArrayFetchedObjectBatchPropertySetClassOptionKey
+0x1e0cd0280  __DATA_CONST,__const  _PHBatchFetchingArrayFetchedObjectClassOptionKey
+0x1e0cd0278  __DATA_CONST,__const  _PHBatchFetchingArrayPropertyHintOptionKey
+0x1e0cd0270  __DATA_CONST,__const  _PHBatchPerformChangesRangeErrorKey
+0x1e0cd0268  __DATA_CONST,__const  _PHCPAnalyticsLibrarySizeRangeDescriptionEmpty
+0x1e0cd0260  __DATA_CONST,__const  _PHCPAnalyticsLibrarySizeRangeDescriptionHuge
+0x1e0cd0258  __DATA_CONST,__const  _PHCPAnalyticsLibrarySizeRangeDescriptionLarge20K
+0x1e0cd0250  __DATA_CONST,__const  _PHCPAnalyticsLibrarySizeRangeDescriptionLarge30K
+0x1e0cd0248  __DATA_CONST,__const  _PHCPAnalyticsLibrarySizeRangeDescriptionLarge40K
+0x1e0cd0240  __DATA_CONST,__const  _PHCPAnalyticsLibrarySizeRangeDescriptionLarge50K
+0x1e0cd0238  __DATA_CONST,__const  _PHCPAnalyticsLibrarySizeRangeDescriptionMedium10K
+0x1e0cd0230  __DATA_CONST,__const  _PHCPAnalyticsLibrarySizeRangeDescriptionMedium5K
+0x1e0cd0228  __DATA_CONST,__const  _PHCPAnalyticsLibrarySizeRangeDescriptionSmall
+0x1e0cd0220  __DATA_CONST,__const  _PHCPAnalyticsLibrarySizeRangeDescriptionVeryLarge
+0x1e0cd0218  __DATA_CONST,__const  _PHCPAnalyticsLibrarySizeRangeDescriptionVerySmall
+0x199d2db60  __TEXT,__const  _PHCPAnalyticsMediaJunkModelVersionLatest
+0x199d2db88  __TEXT,__const  _PHCPAnalyticsMediaSDModelVersionLatest
+0x1e0cd0210  __DATA_CONST,__const  _PHCPAnalyticsMediaSceneSubjectNone
+0x1e0cd0208  __DATA_CONST,__const  _PHCPAnalyticsMediaSceneTypeOther
+0x199d2dad0  __TEXT,__const  _PHCPAnalyticsSceneVersionLatest
+0x199a3d7b4  __TEXT,__text  _PHChooserListContinueEnumerating
+0x199bf51b8  __TEXT,__text  _PHChooserListLookAheadForNonHintResourcePassingTest
+0x199a3cedc  __TEXT,__text  _PHChooserListMoveFirst
+0x199a3cf54  __TEXT,__text  _PHChooserListSetSortDescriptor
+0x199cbe3e4  __TEXT,__text  _PHChoosingPolicyName
+0x199a93244  __TEXT,__text  _PHCloudFeedEntryFilterForPLCloudFeedEntryFilter
+0x199a93264  __TEXT,__text  _PHCloudFeedEntryTypeForPLCloudFeedEntryType
+0x1e0cd0200  __DATA_CONST,__const  _PHCloudQuotaBytesUsedMediaTypeKeyDuplicate
+0x1e0cd01f8  __DATA_CONST,__const  _PHCloudQuotaBytesUsedMediaTypeKeyScreenshot
+0x1e0cd01f0  __DATA_CONST,__const  _PHCloudQuotaBytesUsedMediaTypeKeyVideo
+0x199c0626c  __TEXT,__text  _PHCloudResourcePrefetchModeForPLCloudResourcePrefetchMode
+0x199c10224  __TEXT,__text  _PHCloudSyncConditionDescription
+0x1e0cd01e8  __DATA_CONST,__const  _PHCollectionListReferenceType
+0x199af9474  __TEXT,__text  _PHCollectionPresentationHintsStringFromQualityCategory
+0x199af941c  __TEXT,__text  _PHCollectionPresentationHintsStringFromTripType
+0x199af9368  __TEXT,__text  _PHCollectionPresentationHintsStringsFromSocialRelationships
+0x1e0cd01e0  __DATA_CONST,__const  _PHCollectionReferenceType
+0x1e0cd01d8  __DATA_CONST,__const  _PHContentEditingInputCancelledKey
+0x1e0cd01d0  __DATA_CONST,__const  _PHContentEditingInputErrorKey
+0x1e0cd01c8  __DATA_CONST,__const  _PHContentEditingInputResultIsInCloudKey
+0x199cf8970  __TEXT,__text  _PHDebugStringForPHSearchIntentQUTokenType
+0x199adc808  __TEXT,__text  _PHDebugStringForSearchResultRetrievalType
+0x199adc7e0  __TEXT,__text  _PHDebugStringForSearchResultType
+0x199a3f080  __TEXT,__text  _PHDecodeImageFromStoreForRequest
+0x199a3f1f0  __TEXT,__text  _PHDecodeImageFromURLForRequest
+0x1e0cd01c0  __DATA_CONST,__const  _PHDeletedLocalIdentifiersKey
+0x199b1bbcc  __TEXT,__text  _PHDescriptionForPhotosHighlightCategory
+0x199b1bb7c  __TEXT,__text  _PHDescriptionForPhotosHighlightKind
+0x199b1bb80  __TEXT,__text  _PHDescriptionForPhotosHighlightType
+0x199b1bc50  __TEXT,__text  _PHDescriptionForSharingComposition
+0x199b1bc74  __TEXT,__text  _PHDescriptionForSharingFilter
+0x199bf29c8  __TEXT,__text  _PHDescriptionForUtilityCollectionType
+0x199b21a00  __TEXT,__text  _PHDescriptionsForResourceTypes
+0x199be972c  __TEXT,__text  _PHDetectionTypeDescription
+0x199b6d518  __TEXT,__text  _PHDeviceSupportsRAW
+0x199d2dc10  __TEXT,__const  _PHDuplicateMergeBatchProcessingLimit
+0x199a817fc  __TEXT,__text  _PHErrorAllowsInternalErrors
+0x199c9472c  __TEXT,__text  _PHErrorCodeIsPublic
+0x199c959fc  __TEXT,__text  _PHErrorFromPLError
+0x199b1eadc  __TEXT,__text  _PHErrorIsCorruptImage
+0x199b1ec30  __TEXT,__text  _PHErrorIsGenerateAdjustmentFileNotFound
+0x199b1ec2c  __TEXT,__text  _PHErrorIsImageRequestRetryableError
+0x199a44cc0  __TEXT,__text  _PHErrorIsMediaServerDisconnected
+0x199b1ec44  __TEXT,__text  _PHErrorIsServerUnavailableError
+0x199b1eb5c  __TEXT,__text  _PHErrorIsXPCConnectionInvalidOrInterrupted
+0x1e0cd01b8  __DATA_CONST,__const  _PHFacePropertySetAnalytics
+0x1e0cd01b0  __DATA_CONST,__const  _PHFacePropertySetClustering
+0x1e0cd01a8  __DATA_CONST,__const  _PHFacePropertySetCore
+0x1e0cd01a0  __DATA_CONST,__const  _PHFacePropertySetCropping
+0x1e0cd0198  __DATA_CONST,__const  _PHFacePropertySetIdentifier
+0x1e0cd0190  __DATA_CONST,__const  _PHFacePropertySetPersonBuilder
+0x1e0cd0188  __DATA_CONST,__const  _PHFacePropertySetSexAge
+0x199a31864  __TEXT,__text  _PHFastHashForPredicate
+0x199b8ae2c  __TEXT,__text  _PHFetchDictionaryAccessingMutableCopy
+0x199cb94b0  __TEXT,__text  _PHFetchSignpostsEnabled
+0x1e0cd0180  __DATA_CONST,__const  _PHFetchTypeAlbum
+0x1e0cd0178  __DATA_CONST,__const  _PHFetchTypeAsset
+0x1e0cd0170  __DATA_CONST,__const  _PHFetchTypeAssetCollection
+0x1e0cd0168  __DATA_CONST,__const  _PHFetchTypeAssetResourceUploadJob
+0x1e0cd0160  __DATA_CONST,__const  _PHFetchTypeAssetResourceUploadJobConfiguration
+0x1e0cd0158  __DATA_CONST,__const  _PHFetchTypeCloudFeedEntry
+0x1e0cd0150  __DATA_CONST,__const  _PHFetchTypeCollection
+0x1e0cd0148  __DATA_CONST,__const  _PHFetchTypeCollectionList
+0x1e0cd0140  __DATA_CONST,__const  _PHFetchTypeCollectionShare
+0x1e0cd0138  __DATA_CONST,__const  _PHFetchTypeConversation
+0x1e0cd0130  __DATA_CONST,__const  _PHFetchTypeFace
+0x1e0cd0128  __DATA_CONST,__const  _PHFetchTypeFaceCrop
+0x1e0cd0120  __DATA_CONST,__const  _PHFetchTypeFaceGroup
+0x1e0cd0118  __DATA_CONST,__const  _PHFetchTypeGeneratedAssetDescription
+0x1e0cd0110  __DATA_CONST,__const  _PHFetchTypeImportSession
+0x1e0cd0108  __DATA_CONST,__const  _PHFetchTypeKeyword
+0x1e0cd0100  __DATA_CONST,__const  _PHFetchTypeLibraryScope
+0x1e0cd00f8  __DATA_CONST,__const  _PHFetchTypeMemory
+0x1e0cd00f0  __DATA_CONST,__const  _PHFetchTypeMoment
+0x1e0cd00e8  __DATA_CONST,__const  _PHFetchTypeMomentList
+0x1e0cd00e0  __DATA_CONST,__const  _PHFetchTypeMomentShare
+0x1e0cd00d8  __DATA_CONST,__const  _PHFetchTypePerson
+0x1e0cd00d0  __DATA_CONST,__const  _PHFetchTypePhotosHighlight
+0x1e0cd00c8  __DATA_CONST,__const  _PHFetchTypeProject
+0x1e0cd00c0  __DATA_CONST,__const  _PHFetchTypeQuestion
+0x1e0cd00b8  __DATA_CONST,__const  _PHFetchTypeSearchEntity
+0x1e0cd00b0  __DATA_CONST,__const  _PHFetchTypeShareComment
+0x1e0cd00a8  __DATA_CONST,__const  _PHFetchTypeShareParticipant
+0x1e0cd00a0  __DATA_CONST,__const  _PHFetchTypeSharePost
+0x1e0cd0098  __DATA_CONST,__const  _PHFetchTypeSmartAlbum
+0x1e0cd0090  __DATA_CONST,__const  _PHFetchTypeSocialGroup
+0x1e0cd0088  __DATA_CONST,__const  _PHFetchTypeSuggestion
+0x199c17d90  __TEXT,__text  _PHFileStatusErrorForFailedDecodeAtURL
+0x199cb2ef0  __TEXT,__text  _PHFindDateComponentsFromDictionary
+0x199cb5794  __TEXT,__text  _PHFindDateMetadataTokenFromTokens
+0x199cb3b14  __TEXT,__text  _PHFindDateOperandFromDatesDictionary
+0x199cb2be0  __TEXT,__text  _PHFindFullSemanticStringFromSemanticOperand
+0x199cb6028  __TEXT,__text  _PHFindFullTextPredicateFromTokens
+0x199cb5144  __TEXT,__text  _PHFindHighPrecisionParseCandidatesFromTokens
+0x199aac4a0  __TEXT,__text  _PHFindHumanReadableStringForPHFindEmbeddingSearchThresholdType
+0x199a93e80  __TEXT,__text  _PHFindHumanReadableStringForPHFindLocationQueryExpansionType
+0x199a93df0  __TEXT,__text  _PHFindHumanReadableStringForPHFindQueryOperandMatchOptions
+0x199a93da8  __TEXT,__text  _PHFindHumanReadableStringForPHFindQueryOperandType
+0x199cdce70  __TEXT,__text  _PHFindHumanReadableStringForPHFindQueryPrecisionMode
+0x199a977a8  __TEXT,__text  _PHFindHumanReadableStringForPHFindQueryResultItemSubtype
+0x199cc18c0  __TEXT,__text  _PHFindHumanReadableStringForPHFindQueryResultRankingOptions
+0x199a977cc  __TEXT,__text  _PHFindHumanReadableStringForPHFindResultItemRetrievalType
+0x199cdcd60  __TEXT,__text  _PHFindHumanReadableStringForPHFindResultTypes
+0x199a93dcc  __TEXT,__text  _PHFindHumanReadableStringForPHFindTextMatchMode
+0x199cb25e8  __TEXT,__text  _PHFindIsPersonGroundedTerm
+0x199cb2298  __TEXT,__text  _PHFindIsStopWord
+0x199cb3568  __TEXT,__text  _PHFindJSONDictionaryFromDateComponents
+0x199c58098  __TEXT,__text  _PHFindLexemeTextTypeForLEOLexemeTextType
+0x199cb5990  __TEXT,__text  _PHFindNonSuggestionTextSpansFromTokens
+0x199cb38ec  __TEXT,__text  _PHFindOperandWithText
+0x199cc5a70  __TEXT,__text  _PHFindOptionsShouldResolveItemLexemeDetails
+0x199ca6934  __TEXT,__text  _PHFindQueryCategoriesForPHFindQueryCategoryGroup
+0x199ca6d28  __TEXT,__text  _PHFindQueryCategoriesFromPLSearchIndexCategories
+0x199ca7598  __TEXT,__text  _PHFindQueryCategoryForLEOLexemeCategory
+0x199cb1f84  __TEXT,__text  _PHFindQueryParserUtilAttributedStringContainsSuggestion
+0x199cb5d9c  __TEXT,__text  _PHFindQueryParserUtilHighPrecisionSupportedCategories
+0x199cb1d58  __TEXT,__text  _PHFindQueryParserUtilRangeIsAtEndOfAttributedString
+0x199cb1e94  __TEXT,__text  _PHFindQueryParserUtilRangeIsAtEndOfString
+0x199cb1f10  __TEXT,__text  _PHFindQueryParserUtilRangeIsValidForString
+0x199cb41cc  __TEXT,__text  _PHFindQueryParserUtilStripSuggestionFromSemanticPhrase
+0x199cb20d4  __TEXT,__text  _PHFindQueryParserUtilTextContainsOnlyIgnoreWords
+0x199cb2534  __TEXT,__text  _PHFindQueryParserUtilTextHasNoLexicalTokens
+0x199cb6878  __TEXT,__text  _PHFindQueryParserUtilTokensFromText
+0x199a97788  __TEXT,__text  _PHFindQueryResultItemSubtypeForLEOItemType
+0x199cb5684  __TEXT,__text  _PHFindSemanticParseTokenFromTokens
+0x199cb2ac0  __TEXT,__text  _PHFindSemanticPhraseFromQueryOutputDescription
+0x199cb6408  __TEXT,__text  _PHFindSuggestionAndPredicateFromParseTokens
+0x199cb3eb8  __TEXT,__text  _PHFindSuggestionsOperandsByRangeFromQueryString
+0x199b310a0  __TEXT,__text  _PHFullScreenSizeForScreen
+0x199c18090  __TEXT,__text  _PHGenerateCropRectGivenNormalizedCropRect
+0x199a93ea4  __TEXT,__text  _PHHumanReadableStringForPHFindEmbeddingSearchThresholdType
+0x199c58014  __TEXT,__text  _PHHumanReadableStringForPHFindLexemeTextType
+0x199ca5cd0  __TEXT,__text  _PHHumanReadableStringForPHFindQueryCategory
+0x199c9d100  __TEXT,__text  _PHHumanReadableStringForPHFindQueryOperatorType
+0x199bb6878  __TEXT,__text  _PHHumanReadableStringForPHFindQueryParseTokenType
+0x199aab6fc  __TEXT,__text  _PHHumanReadableStringForPHFindWellKnownClientIdentifier
+0x199c1ef0c  __TEXT,__text  _PHHumanReadableStringForSearchQueryStatus
+0x199adc830  __TEXT,__text  _PHHumanReadableStringForSearchResultMatchType
+0x199adcf34  __TEXT,__text  _PHHumanReadableStringForSearchResultRetrievalType
+0x199adcf10  __TEXT,__text  _PHHumanReadableStringForSearchResultType
+0x199bf29f4  __TEXT,__text  _PHIdentifierForUtilityCollectionType
+0x1e0cd0080  __DATA_CONST,__const  _PHImageCancelledKey
+0x199b4a3c0  __TEXT,__text  _PHImageDataFromImageAsScreenshot
+0x1e0cd0078  __DATA_CONST,__const  _PHImageErrorKey
+0x1e0cd0070  __DATA_CONST,__const  _PHImageFileDataKey
+0x1e0cd0068  __DATA_CONST,__const  _PHImageFileHighDynamicRangeGainMapKey
+0x1e0cd0060  __DATA_CONST,__const  _PHImageFileHighDynamicRangeGainMapOrientationKey
+0x1e0cd0058  __DATA_CONST,__const  _PHImageFileHighDynamicRangeGainMapValueKey
+0x1e0cd0050  __DATA_CONST,__const  _PHImageFileOrientationKey
+0x1e0cd0048  __DATA_CONST,__const  _PHImageFileSandboxExtensionTokenKey
+0x1e0cd0040  __DATA_CONST,__const  _PHImageFileURLKey
+0x1e0cd0038  __DATA_CONST,__const  _PHImageFileUTIKey
+0x199d2dc18  __TEXT,__const  _PHImageManagerMaximumSize
+0x199a3cd88  __TEXT,__text  _PHImageManagerRecordEnabled
+0x199cb934c  __TEXT,__text  _PHImageManagerSignpostRequestStateFromRecipeID
+0x199cca8b0  __TEXT,__text  _PHImageRequestDeliveryModeHasSingleRequest
+0x199cca858  __TEXT,__text  _PHImageRequestOptionsDeliveryModeDescription
+0x199cca7b0  __TEXT,__text  _PHImageRequestOptionsVersionDescription
+0x1e0cd0030  __DATA_CONST,__const  _PHImageRequestResultCacheMetricsShouldRecordHit
+0x1e0cd0028  __DATA_CONST,__const  _PHImageRequestResultEligibleForCacheMetricsLogging
+0x1e0cd0020  __DATA_CONST,__const  _PHImageResultAVAssetOutOfBandPresentationHintsKey
+0x1e0cd0018  __DATA_CONST,__const  _PHImageResultClientShouldRetryKey
+0x1e0cd0010  __DATA_CONST,__const  _PHImageResultDeliveredImageFormatKey
+0x1e0cd0008  __DATA_CONST,__const  _PHImageResultExpirationKey
+0x1e0cd0000  __DATA_CONST,__const  _PHImageResultFingerPrintKey
+0x1e0ccfff8  __DATA_CONST,__const  _PHImageResultIsDegradedKey
+0x1e0ccfff0  __DATA_CONST,__const  _PHImageResultIsDerivedFromDeferredPreviewKey
+0x1e0ccffe8  __DATA_CONST,__const  _PHImageResultIsInCloudKey
+0x1e0ccffe0  __DATA_CONST,__const  _PHImageResultIsPlaceholderKey
+0x1e0ccffd8  __DATA_CONST,__const  _PHImageResultRequestIDKey
+0x1e0ccffd0  __DATA_CONST,__const  _PHImageResultTimeRangeMapperKey
+0x199ad9954  __TEXT,__text  _PHImportConcurrencyLimit
+0x199ad9ae0  __TEXT,__text  _PHImportDispatchApply
+0x199ad9a40  __TEXT,__text  _PHImportDumpCGImageToURL
+0x1e0ccffc8  __DATA_CONST,__const  _PHImportErrorDomain
+0x1e0ccffc0  __DATA_CONST,__const  _PHImportErrorUserInfoMoreSpaceRequiredKey
+0x1e0ccffb8  __DATA_CONST,__const  _PHInsertedLocalIdentifiersKey
+0x199b21f7c  __TEXT,__text  _PHIsFullSizeRenderAssetResourceType
+0x1e0ccffb0  __DATA_CONST,__const  _PHLearnMoreLinkErrorKey
+0x199c15444  __TEXT,__text  _PHLibraryScopeExitStateDebugDescription
+0x1e0ccffa8  __DATA_CONST,__const  _PHLibraryScopeScopeSyncingIsActiveDefaultsKey
+0x1e0ccffa0  __DATA_CONST,__const  _PHLibraryScopeStatusCountsDidChangeNotification
+0x1e0ccff98  __DATA_CONST,__const  _PHLivePhotoExportSessionInfoBundleURLKey
+0x1e0ccff90  __DATA_CONST,__const  _PHLivePhotoExportSessionInfoErrorKey
+0x1e0ccff88  __DATA_CONST,__const  _PHLivePhotoExportSessionInfoPhotoURLKey
+0x1e0ccff80  __DATA_CONST,__const  _PHLivePhotoExportSessionInfoVideoURLKey
+0x1e0ccff78  __DATA_CONST,__const  _PHLivePhotoInfoCancelledKey
+0x1e0ccff70  __DATA_CONST,__const  _PHLivePhotoInfoErrorKey
+0x1e0ccff68  __DATA_CONST,__const  _PHLivePhotoInfoIsDegradedKey
+0x1e0ccff60  __DATA_CONST,__const  _PHLivePhotoShouldRenderAtPlaybackTime
+0x1e0ccff58  __DATA_CONST,__const  _PHLocalIdentifierNotFound
+0x199c2d400  __TEXT,__text  _PHLocalIdentifierWithUUIDAndCode
+0x1e0ccff50  __DATA_CONST,__const  _PHLocalIdentifiersErrorKey
+0x1e0ccff48  __DATA_CONST,__const  _PHMediaMetadataTypeKey
+0x199abf0c8  __TEXT,__text  _PHMediaProcessingAllKnownTaskIDs
+0x199abf280  __TEXT,__text  _PHMediaProcessingAllKnownTaskPriorities
+0x1e0ccff40  __DATA_CONST,__const  _PHMediaProcessingAssetCountLivePhotoKey
+0x1e0ccff38  __DATA_CONST,__const  _PHMediaProcessingAssetCountStillImageKey
+0x1e0ccff30  __DATA_CONST,__const  _PHMediaProcessingAssetCountVideoKey
+0x199abf0cc  __TEXT,__text  _PHMediaProcessingDescriptionForTaskID
+0x1e0ccff28  __DATA_CONST,__const  _PHMemoryAnalyticsPayloadKeyCategory
+0x1e0ccff20  __DATA_CONST,__const  _PHMemoryAnalyticsPayloadKeyColorGradeKind
+0x1e0ccff18  __DATA_CONST,__const  _PHMemoryAnalyticsPayloadKeyEdited
+0x1e0ccff10  __DATA_CONST,__const  _PHMemoryAnalyticsPayloadKeyFavorited
+0x1e0ccff08  __DATA_CONST,__const  _PHMemoryAnalyticsPayloadKeyIsSuggestedPrompt
+0x1e0ccff00  __DATA_CONST,__const  _PHMemoryAnalyticsPayloadKeyMemoryType
+0x1e0ccfef8  __DATA_CONST,__const  _PHMemoryAnalyticsPayloadKeyPlayCount
+0x1e0ccfef0  __DATA_CONST,__const  _PHMemoryAnalyticsPayloadKeyShareCount
+0x1e0ccfee8  __DATA_CONST,__const  _PHMemoryAnalyticsPayloadKeySubcategory
+0x1e0ccfee0  __DATA_CONST,__const  _PHMemoryAnalyticsPayloadKeyTriggerType
+0x1e0ccfed8  __DATA_CONST,__const  _PHMemoryAnalyticsPayloadKeyViewCount
+0x199b31170  __TEXT,__text  _PHMemoryCategoryIsDisabled
+0x1e0ccfed0  __DATA_CONST,__const  _PHMemoryCreationAttributeSubtitleKey
+0x1e0ccfec8  __DATA_CONST,__const  _PHMemoryCreationAttributeTitleCategoryKey
+0x1e0ccfec0  __DATA_CONST,__const  _PHMemoryCreationAttributeTitleKey
+0x199b31144  __TEXT,__text  _PHMemoryCreationTypeDescription
+0x199d2dbd0  __TEXT,__const  _PHMemoryCurationAvailabilityDefaultLivePhotoDuration
+0x199d2dbe8  __TEXT,__const  _PHMemoryCurationAvailabilityDefaultMinimumDurationForLongCuration
+0x199d2dbe0  __TEXT,__const  _PHMemoryCurationAvailabilityDefaultMinimumDurationForMediumCuration
+0x199d2dbc8  __TEXT,__const  _PHMemoryCurationAvailabilityDefaultStillPhotoDuration
+0x199d2dbd8  __TEXT,__const  _PHMemoryCurationAvailabilityDefaultVideoDuration
+0x1e0ccfeb8  __DATA_CONST,__const  _PHMemoryCurationAvailabilityOptionImageCountKey
+0x1e0ccfeb0  __DATA_CONST,__const  _PHMemoryCurationAvailabilityOptionLivePhotoDurationKey
+0x1e0ccfea8  __DATA_CONST,__const  _PHMemoryCurationAvailabilityOptionMinimumDurationForLongCurationKey
+0x1e0ccfea0  __DATA_CONST,__const  _PHMemoryCurationAvailabilityOptionMinimumDurationForMediumCurationKey
+0x1e0ccfe98  __DATA_CONST,__const  _PHMemoryCurationAvailabilityOptionStillPhotoDurationKey
+0x1e0ccfe90  __DATA_CONST,__const  _PHMemoryCurationAvailabilityOptionVideoCountKey
+0x1e0ccfe88  __DATA_CONST,__const  _PHMemoryCurationAvailabilityOptionVideoDurationKey
+0x199c7e580  __TEXT,__text  _PHMemoryCurationLengthForString
+0x1e0ccfe80  __DATA_CONST,__const  _PHMemoryCurationOptionSpecificTargetDurationKey
+0x199b311b8  __TEXT,__text  _PHMemoryFeaturedStateFromPLMemoryFeaturedState
+0x199d2da20  __TEXT,__const  _PHMemoryGreatScoreThreshold
+0x199b8a848  __TEXT,__text  _PHMemoryMoodForString
+0x1e0ccfe78  __DATA_CONST,__const  _PHMemoryMovieDataTitleFontNameKey
+0x199d2da30  __TEXT,__const  _PHMemoryMustSeeScoreThreshold
+0x199d2da18  __TEXT,__const  _PHMemoryOtherScoreThreshold
+0x199b31120  __TEXT,__text  _PHMemoryPendingStateDescription
+0x199d2da40  __TEXT,__const  _PHMemoryProactiveValidPeriod
+0x1e0ccfe70  __DATA_CONST,__const  _PHMemoryPropertySetCore
+0x1e0ccfe68  __DATA_CONST,__const  _PHMemoryPropertySetIdentifier
+0x1e0ccfe60  __DATA_CONST,__const  _PHMemoryPropertySetUserFeedback
+0x199d2da10  __TEXT,__const  _PHMemoryScoreGapBetweenCategories
+0x199d2da28  __TEXT,__const  _PHMemoryStellarScoreThreshold
+0x199d2da00  __TEXT,__const  _PHMemoryUpNextFallbackMinimumMomentOverlapThreshold
+0x199d2da08  __TEXT,__const  _PHMemoryUpNextFallbackMinimumNumberOfAssets
+0x199a37454  __TEXT,__text  _PHMemoryValidatedMemoryCategory
+0x199a37538  __TEXT,__text  _PHMemoryValidatedMemorySubcategory
+0x199b37438  __TEXT,__text  _PHMomentAggregationScoreFromAggregationScoreType
+0x199b3743c  __TEXT,__text  _PHMomentDescriptionForProcessedLocationType
+0x199c96530  __TEXT,__text  _PHNetworkAccessAllowedRequiredError
+0x199bbb8cc  __TEXT,__text  _PHNextImageAndAssetResourceManagerID
+0x1e0ccfe58  __DATA_CONST,__const  _PHObjectReferenceType
+0x199b989cc  __TEXT,__text  _PHOriginalResourceChoiceDebugDescription
+0x1e0ccfe50  __DATA_CONST,__const  _PHPerformanceLogsDisabledUserDefaultsKey
+0x1e0ccfe48  __DATA_CONST,__const  _PHPerformanceLogsEnableBacktracesUserDefaultsKey
+0x199be975c  __TEXT,__text  _PHPersonAgeTypeDescription
+0x199d2da80  __TEXT,__const  _PHPersonDefaultManualOrder
+0x199d2da88  __TEXT,__const  _PHPersonEffectiveMaxManualOrder
+0x199d2da90  __TEXT,__const  _PHPersonMergeCandidateConfidenceHighPrecisionOperatingPoint
+0x199d2da84  __TEXT,__const  _PHPersonPreferredManualOrderSpacing
+0x1e0ccfe40  __DATA_CONST,__const  _PHPersonPropertySetCore
+0x1e0ccfe38  __DATA_CONST,__const  _PHPersonPropertySetIdentifier
+0x1e0ccfe30  __DATA_CONST,__const  _PHPersonPropertySetUserFeedback
+0x1e0ccfe28  __DATA_CONST,__const  _PHPersonReferenceType
+0x199be96dc  __TEXT,__text  _PHPersonTypeDescription
+0x199be9704  __TEXT,__text  _PHPersonVerifiedTypeDescription
+0x1e0ccfe20  __DATA_CONST,__const  _PHPhotoLibraryChangeNotification
+0x1e0ccfe18  __DATA_CONST,__const  _PHPhotoLibraryCreateOptionsKey
+0x1e0ccfe10  __DATA_CONST,__const  _PHPhotoLibraryImageBytesKey
+0x1e0ccfe08  __DATA_CONST,__const  _PHPhotoLibraryImageCountKey
+0x1e0ccfe00  __DATA_CONST,__const  _PHPhotoLibraryPersistentHistoryDidChangeNotification
+0x1e0ccfdf8  __DATA_CONST,__const  _PHPhotoLibraryUpgradeOptionsKey
+0x1e0ccfdf0  __DATA_CONST,__const  _PHPhotoLibraryVideoBytesKey
+0x1e0ccfde8  __DATA_CONST,__const  _PHPhotoLibraryVideoCountKey
+0x1e0ccfde0  __DATA_CONST,__const  _PHPhotosChallengeExternalAssetRelevance_MomentLocalIdentifiersKey
+0x1e0ccfdd8  __DATA_CONST,__const  _PHPhotosErrorDomain
+0x1e0ccfdd0  __DATA_CONST,__const  _PHPhotosHighlightPropertySetCore
+0x1e0ccfdc8  __DATA_CONST,__const  _PHPhotosHighlightPropertySetIdentifier
+0x1e0ccfdc0  __DATA_CONST,__const  _PHPhotosHighlightPropertySetOnlyPrivate
+0x1e0ccfdb8  __DATA_CONST,__const  _PHPhotosHighlightPropertySetOnlyShared
+0x1e0ccfdb0  __DATA_CONST,__const  _PHPhotosHighlightPropertySetPrivateOrShared
+0x1e0ccfda8  __DATA_CONST,__const  _PHPhotosHighlightPropertySetSharingSuggestions
+0x199b18ff8  __TEXT,__text  _PHPhotosHighlightTypeConsideredTrip
+0x199b1bc98  __TEXT,__text  _PHPhotosHighlightVisibilityStateIsVisibleInMonth
+0x1ebb4c598  __DATA,__data  _PHPredicateByCombiningPredicatesWithAnd
+0x1ebb4c590  __DATA,__data  _PHPredicateByCombiningPredicatesWithOr
+0x199c966a8  __TEXT,__text  _PHPublicErrorFromError
+0x199b1ec58  __TEXT,__text  _PHPublicImageManagerErrorFromError
+0x1ebb4c588  __DATA,__data  _PHQueryForAssetCollectionType_Album
+0x1ebb4c580  __DATA,__data  _PHQueryForAssetCollectionType_CollectionShare
+0x1ebb4c578  __DATA,__data  _PHQueryForAssetCollectionType_Conversation
+0x1ebb4c570  __DATA,__data  _PHQueryForAssetCollectionType_ImportSession
+0x1ebb4c568  __DATA,__data  _PHQueryForAssetCollectionType_Memory
+0x1ebb4c560  __DATA,__data  _PHQueryForAssetCollectionType_Moment
+0x1ebb4c558  __DATA,__data  _PHQueryForAssetCollectionType_MomentShare
+0x1ebb4c550  __DATA,__data  _PHQueryForAssetCollectionType_NoFetchType
+0x1ebb4c548  __DATA,__data  _PHQueryForAssetCollectionType_Other
+0x1ebb4c540  __DATA,__data  _PHQueryForAssetCollectionType_PhotosHighlight
+0x1ebb4c538  __DATA,__data  _PHQueryForAssetCollectionType_Project
+0x1ebb4c530  __DATA,__data  _PHQueryForAssetCollectionType_SmartAlbum
+0x1ebb4c528  __DATA,__data  _PHQueryForAssetCollectionType_Suggestion
+0x1ebb4c520  __DATA,__data  _PHQueryForAssetCollectionType_Unknown
+0x1ebb4c518  __DATA,__data  _PHQueryForAssetCollectionType_Utility
+0x1ebb4c510  __DATA,__data  _PHQueryForAssetInAlbumKind_1WaySyncAlbum
+0x1ebb4c508  __DATA,__data  _PHQueryForAssetInAlbumKind_1WaySyncEvent
+0x1ebb4c500  __DATA,__data  _PHQueryForAssetInAlbumKind_1WaySyncFolder
+0x1ebb4c4f8  __DATA,__data  _PHQueryForAssetInAlbumKind_1WaySyncLibraryAlbum
+0x1ebb4c4f0  __DATA,__data  _PHQueryForAssetInAlbumKind_1stSpecial
+0x1ebb4c4e8  __DATA,__data  _PHQueryForAssetInAlbumKind_ActionCamVideoAlbum
+0x1ebb4c4e0  __DATA,__data  _PHQueryForAssetInAlbumKind_AllAssetsAlbum
+0x1ebb4c4d8  __DATA,__data  _PHQueryForAssetInAlbumKind_AllHiddenAlbum
+0x1ebb4c4d0  __DATA,__data  _PHQueryForAssetInAlbumKind_AllImportedAlbum
+0x1ebb4c4c8  __DATA,__data  _PHQueryForAssetInAlbumKind_AllLibraryDuplicatesAlbum
+0x1ebb4c4c0  __DATA,__data  _PHQueryForAssetInAlbumKind_AllNonPhotoStreamAssetsAlbum
+0x1ebb4c4b8  __DATA,__data  _PHQueryForAssetInAlbumKind_AllPhotoStream
+0x1ebb4c4b0  __DATA,__data  _PHQueryForAssetInAlbumKind_AllPhotosAlbum
+0x1ebb4c4a8  __DATA,__data  _PHQueryForAssetInAlbumKind_AnimatedAlbum
+0x1ebb4c4a0  __DATA,__data  _PHQueryForAssetInAlbumKind_BurstsAlbum
+0x1ebb4c498  __DATA,__data  _PHQueryForAssetInAlbumKind_CameraSession
+0x1ebb4c490  __DATA,__data  _PHQueryForAssetInAlbumKind_CapturedByMeAlbum
+0x1ebb4c488  __DATA,__data  _PHQueryForAssetInAlbumKind_CinematicVideoAlbum
+0x1ebb4c480  __DATA,__data  _PHQueryForAssetInAlbumKind_CloudSharedAlbum
+0x1ebb4c478  __DATA,__data  _PHQueryForAssetInAlbumKind_ConversationAlbum
+0x1ebb4c470  __DATA,__data  _PHQueryForAssetInAlbumKind_DepthEffectAlbum
+0x1ebb4c468  __DATA,__data  _PHQueryForAssetInAlbumKind_Duplicate
+0x1ebb4c460  __DATA,__data  _PHQueryForAssetInAlbumKind_Event
+0x1ebb4c458  __DATA,__data  _PHQueryForAssetInAlbumKind_EventsSmartFolder
+0x1ebb4c450  __DATA,__data  _PHQueryForAssetInAlbumKind_EventsStandIn
+0x1ebb4c448  __DATA,__data  _PHQueryForAssetInAlbumKind_FacesSmartFolder
+0x1ebb4c440  __DATA,__data  _PHQueryForAssetInAlbumKind_FacesStandIn
+0x1ebb4c438  __DATA,__data  _PHQueryForAssetInAlbumKind_FavoriteMemoriesSmartFolder
+0x1ebb4c430  __DATA,__data  _PHQueryForAssetInAlbumKind_FavoritesAlbum
+0x1ebb4c428  __DATA,__data  _PHQueryForAssetInAlbumKind_FilesystemImportProgressAlbum
+0x1ebb4c420  __DATA,__data  _PHQueryForAssetInAlbumKind_Folder
+0x1ebb4c418  __DATA,__data  _PHQueryForAssetInAlbumKind_FrontBackAlbum
+0x1ebb4c410  __DATA,__data  _PHQueryForAssetInAlbumKind_HorizontalPanoramasAlbum
+0x1ebb4c408  __DATA,__data  _PHQueryForAssetInAlbumKind_ImportSessionAlbum
+0x1ebb4c400  __DATA,__data  _PHQueryForAssetInAlbumKind_ImportStandIn
+0x1ebb4c3f8  __DATA,__data  _PHQueryForAssetInAlbumKind_LastImportAlbum
+0x1ebb4c3f0  __DATA,__data  _PHQueryForAssetInAlbumKind_LegacyFaces
+0x1ebb4c3e8  __DATA,__data  _PHQueryForAssetInAlbumKind_LivePhotosAlbum
+0x1ebb4c3e0  __DATA,__data  _PHQueryForAssetInAlbumKind_LongExposuresAlbum
+0x1ebb4c3d8  __DATA,__data  _PHQueryForAssetInAlbumKind_NotUploadedAlbum_DEPRECATED
+0x1ebb4c3d0  __DATA,__data  _PHQueryForAssetInAlbumKind_OTARestoreProgressAlbum
+0x1ebb4c3c8  __DATA,__data  _PHQueryForAssetInAlbumKind_PanoramasAlbum
+0x1ebb4c3c0  __DATA,__data  _PHQueryForAssetInAlbumKind_PhotoStream
+0x1ebb4c3b8  __DATA,__data  _PHQueryForAssetInAlbumKind_PictureFrame
+0x1ebb4c3b0  __DATA,__data  _PHQueryForAssetInAlbumKind_Places
+0x1ebb4c3a8  __DATA,__data  _PHQueryForAssetInAlbumKind_PlacesSmartAlbum
+0x1ebb4c3a0  __DATA,__data  _PHQueryForAssetInAlbumKind_ProResAlbum
+0x1ebb4c398  __DATA,__data  _PHQueryForAssetInAlbumKind_Project
+0x1ebb4c390  __DATA,__data  _PHQueryForAssetInAlbumKind_ProjectAlbumRootFolder
+0x1ebb4c388  __DATA,__data  _PHQueryForAssetInAlbumKind_ProvenanceAlbum
+0x1ebb4c380  __DATA,__data  _PHQueryForAssetInAlbumKind_RAWAlbum
+0x1ebb4c378  __DATA,__data  _PHQueryForAssetInAlbumKind_RecentlyAddedAlbum
+0x1ebb4c370  __DATA,__data  _PHQueryForAssetInAlbumKind_RecentlyEditedAlbum
+0x1ebb4c368  __DATA,__data  _PHQueryForAssetInAlbumKind_RecentlySavedAlbum
+0x1ebb4c360  __DATA,__data  _PHQueryForAssetInAlbumKind_RecentsAlbum_DEPRECATED
+0x1ebb4c358  __DATA,__data  _PHQueryForAssetInAlbumKind_RecoveredAlbum
+0x1ebb4c350  __DATA,__data  _PHQueryForAssetInAlbumKind_Regular
+0x1ebb4c348  __DATA,__data  _PHQueryForAssetInAlbumKind_RootFolder
+0x1ebb4c340  __DATA,__data  _PHQueryForAssetInAlbumKind_SavedPhotos
+0x1ebb4c338  __DATA,__data  _PHQueryForAssetInAlbumKind_ScreenRecordingsAlbum
+0x1ebb4c330  __DATA,__data  _PHQueryForAssetInAlbumKind_ScreenshotsAlbum
+0x1ebb4c328  __DATA,__data  _PHQueryForAssetInAlbumKind_SelfPortraitsAlbum
+0x1ebb4c320  __DATA,__data  _PHQueryForAssetInAlbumKind_SharedLibrarySharingSuggestionsAlbum
+0x1ebb4c318  __DATA,__data  _PHQueryForAssetInAlbumKind_SlomoVideosAlbum
+0x1ebb4c310  __DATA,__data  _PHQueryForAssetInAlbumKind_SpatialAlbum
+0x1ebb4c308  __DATA,__data  _PHQueryForAssetInAlbumKind_SyncProgressAlbum
+0x1ebb4c300  __DATA,__data  _PHQueryForAssetInAlbumKind_TimelapsesAlbum
+0x1ebb4c2f8  __DATA,__data  _PHQueryForAssetInAlbumKind_TrashBinAlbum
+0x1ebb4c2f0  __DATA,__data  _PHQueryForAssetInAlbumKind_UnableToUploadAlbum
+0x1ebb4c2e8  __DATA,__data  _PHQueryForAssetInAlbumKind_UserLibraryAlbum
+0x1ebb4c2e0  __DATA,__data  _PHQueryForAssetInAlbumKind_UserSmartAlbum
+0x1ebb4c2d8  __DATA,__data  _PHQueryForAssetInAlbumKind_VerticalPanoramasAlbum
+0x1ebb4c2d0  __DATA,__data  _PHQueryForAssetInAlbumKind_VideosAlbum
+0x1ebb4c2c8  __DATA,__data  _PHQueryForAssetInAlbumKind_Wallpaper_UNUSED
+0x1ebb4c2c0  __DATA,__data  _PHQueryForAssetResourceUploadJobsInUploadJobConfiguration
+0x1ebb4c2b8  __DATA,__data  _PHQueryForAssetsAlbum_SortKeyOther
+0x1ebb4c2b0  __DATA,__data  _PHQueryForAssetsInAlbum_SortKeyContentTitle
+0x1ebb4c2a8  __DATA,__data  _PHQueryForAssetsInAlbum_SortKeyCreationDate
+0x1ebb4c2a0  __DATA,__data  _PHQueryForAssetsInAlbum_SortKeyImportDate
+0x1ebb4c298  __DATA,__data  _PHQueryForAssetsInAlbum_SortKeyLastModifiedDate
+0x1ebb4c290  __DATA,__data  _PHQueryForAssetsInAlbum_SortKeyManual
+0x1ebb4c288  __DATA,__data  _PHQueryForAssetsInAlbum_SortKeyPublishDate
+0x1ebb4c280  __DATA,__data  _PHQueryForAssetsInAlbum_SortKeyTitle
+0x1ebb4c278  __DATA,__data  _PHQueryForAssetsInAlbum_SortKeyTrashDate
+0x1ebb4c270  __DATA,__data  _PHQueryForAssetsInCollectionShare
+0x1ebb4c268  __DATA,__data  _PHQueryForAssetsInConversation
+0x1ebb4c260  __DATA,__data  _PHQueryForAssetsInImportSession
+0x1ebb4c258  __DATA,__data  _PHQueryForAssetsInMemory
+0x1ebb4c250  __DATA,__data  _PHQueryForAssetsInMoment
+0x1ebb4c248  __DATA,__data  _PHQueryForAssetsInMomentShare
+0x1ebb4c240  __DATA,__data  _PHQueryForAssetsInOtherSmartAlbum
+0x1ebb4c238  __DATA,__data  _PHQueryForAssetsInPhotosHighlight
+0x1ebb4c230  __DATA,__data  _PHQueryForAssetsInSearchIndex
+0x1ebb4c228  __DATA,__data  _PHQueryForAssetsInSharedLibrarySuggestion
+0x1ebb4c220  __DATA,__data  _PHQueryForAssetsInSuggestion
+0x1ebb4c218  __DATA,__data  _PHQueryForAssetsInUserSmartAlbum
+0x1ebb4c210  __DATA,__data  _PHQueryForAssetsInUtility_GenericDocument
+0x1ebb4c208  __DATA,__data  _PHQueryForAssetsInUtility_Handwriting
+0x1ebb4c200  __DATA,__data  _PHQueryForAssetsInUtility_IdentityDocuments
+0x1ebb4c1f8  __DATA,__data  _PHQueryForAssetsInUtility_Illustrations
+0x1ebb4c1f0  __DATA,__data  _PHQueryForAssetsInUtility_Maps
+0x1ebb4c1e8  __DATA,__data  _PHQueryForAssetsInUtility_Other
+0x1ebb4c1e0  __DATA,__data  _PHQueryForAssetsInUtility_QRCodes
+0x1ebb4c1d8  __DATA,__data  _PHQueryForAssetsInUtility_Receipts
+0x1ebb4c1d0  __DATA,__data  _PHQueryForCollectionsInFolder
+0x1ebb4c1c8  __DATA,__data  _PHQueryForCollectionsInInternalRootFolder
+0x1ebb4c1c0  __DATA,__data  _PHQueryForCollectionsInMomentList
+0x1ebb4c1b8  __DATA,__data  _PHQueryForCollectionsInSmartFolderEvents
+0x1ebb4c1b0  __DATA,__data  _PHQueryForCollectionsInSmartFolderFaces
+0x1ebb4c1a8  __DATA,__data  _PHQueryForCollectionsInSmartFolderFavoriteMemories
+0x1ebb4c1a0  __DATA,__data  _PHQueryForCollectionsInUserCollectionRootFolder
+0x1ebb4c198  __DATA,__data  _PHQueryForKeyAssetsInAssetCollection
+0x1ebb4c190  __DATA,__data  _PHQueryForKeyAssetsInCollectionShare
+0x1ebb4c188  __DATA,__data  _PHQueryForKeyAssetsInMomentShare
+0x1ebb4c180  __DATA,__data  _PHQueryForKeyAssetsInSuggestion
+0x1ebb4c178  __DATA,__data  _PHQueryForKeySharingSuggestionAssetsInHighlight
+0x1ebb4c170  __DATA,__data  _PHQueryForTransientAssetCollectionType_Generic
+0x1ebb4c168  __DATA,__data  _PHQueryForTransientAssetCollectionType_ImportHistory
+0x1ebb4c160  __DATA,__data  _PHQueryForTransientAssetCollectionType_Other
+0x1ebb4c158  __DATA,__data  _PHQueryForTransientAssetCollectionType_RecentlyEdited
+0x1ebb4c150  __DATA,__data  _PHQueryForTransientAssetCollectionType_RecentlyShared
+0x1ebb4c148  __DATA,__data  _PHQueryForTransientAssetCollectionType_RecentlyViewed
+0x1ebb4c140  __DATA,__data  _PHQueryForTransientAssetCollectionType_SavedToday
+0x1ebb4c138  __DATA,__data  _PHQueryForTransientAssetCollectionType_SearchCollectionResults
+0x1ebb4c130  __DATA,__data  _PHQueryForTransientAssetCollectionType_SearchTopResults
+0x199c369b8  __TEXT,__text  _PHQueryTransformExpressionConstantValue
+0x199af4f3c  __TEXT,__text  _PHQuestionOptionsDebugDescription
+0x199cca798  __TEXT,__text  _PHRequestOptionsDownloadIntentIsExplicitUserAction
+0x199cc68dc  __TEXT,__text  _PHRequestRetryTypeForRequest
+0x1e0ccfda0  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestAdjustmentBaseFullSizePhotoURLKey
+0x1e0ccfd98  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestAdjustmentBaseFullSizePhotoUTIKey
+0x1e0ccfd90  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestAdjustmentBasePairedVideoURLKey
+0x1e0ccfd88  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestAdjustmentBasePairedVideoUTIKey
+0x1e0ccfd80  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestAdjustmentBaseVideoURLKey
+0x1e0ccfd78  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestAdjustmentBaseVideoUTIKey
+0x1e0ccfd70  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestAdjustmentDataBlobURLKey
+0x1e0ccfd68  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestAdjustmentDataBlobUTIKey
+0x1e0ccfd60  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestAdjustmentDataURLKey
+0x1e0ccfd58  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestAdjustmentDataUTIKey
+0x1e0ccfd50  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestAdjustmentSecondaryDataURLKey
+0x1e0ccfd48  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestAdjustmentSecondaryDataUTIKey
+0x1e0ccfd40  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestAlternatePhotoURLKey
+0x1e0ccfd38  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestAlternatePhotoUTIKey
+0x1e0ccfd30  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestErrorDomain
+0x1e0ccfd28  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestFullSizePhotoURLKey
+0x1e0ccfd20  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestFullSizePhotoUTIKey
+0x1e0ccfd18  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestFullSizeVideoURLKey
+0x1e0ccfd10  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestFullSizeVideoUTIKey
+0x1e0ccfd08  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestOriginalAdjustmentDataURLKey
+0x1e0ccfd00  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestOriginalAdjustmentDataUTIKey
+0x1e0ccfcf8  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestOriginalProvenanceURLKey
+0x1e0ccfcf0  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestOriginalProvenanceUTIKey
+0x1e0ccfce8  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestPhotoURLKey
+0x1e0ccfce0  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestPhotoUTIKey
+0x1e0ccfcd8  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestProcessedProvenanceURLKey
+0x1e0ccfcd0  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestSpatialOvercapturePairedVideoURLKey
+0x1e0ccfcc8  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestSpatialOvercapturePairedVideoUTIKey
+0x1e0ccfcc0  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestSpatialOvercapturePhotoURLKey
+0x1e0ccfcb8  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestSpatialOvercapturePhotoUTIKey
+0x1e0ccfcb0  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestSpatialOvercaptureVideoURLKey
+0x1e0ccfca8  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestSpatialOvercaptureVideoUTIKey
+0x1e0ccfca0  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestVideoURLKey
+0x1e0ccfc98  __DATA_CONST,__const  _PHResourceLocalAvailabilityRequestVideoUTIKey
+0x1e0ccfc90  __DATA_CONST,__const  _PHResourceUrlsErrorKey
+0x199b0d91c  __TEXT,__text  _PHSanitizeNormalizedCropRect
+0x199b6d02c  __TEXT,__text  _PHScaleImageFromURL
+0x199c28110  __TEXT,__text  _PHSearchEntityTypeForPLSearchEntityType
+0x1e0ccfc88  __DATA_CONST,__const  _PHSearchFeedbackDiagnosticExtensionParameterKey
+0x1e0ccfc80  __DATA_CONST,__const  _PHSearchFeedbackDiagnosticExtensionSearchQueryInfoKey
+0x1e0ccfc78  __DATA_CONST,__const  _PHSearchFeedbackDiagnosticExtensionVisibleAssetUUIDsKey
+0x1e0ccfc70  __DATA_CONST,__const  _PHSearchFeedbackOnScreenAssetsKey
+0x1e0ccfc68  __DATA_CONST,__const  _PHSearchFeedbackQueryDetailsRequestNotification
+0x1e0ccfc60  __DATA_CONST,__const  _PHSearchFeedbackQueryResultKey
+0x199c32238  __TEXT,__text  _PHSearchIndexCategoryForPLSearchIndexCategory
+0x1e0ccfc58  __DATA_CONST,__const  _PHSearchIndexIndexingPausedKey
+0x1e0ccfc50  __DATA_CONST,__const  _PHSearchIndexIndexingStatusDidChangeNotification
+0x1e0ccfc48  __DATA_CONST,__const  _PHSearchIndexItemsRemainingKey
+0x1e0ccfc40  __DATA_CONST,__const  _PHSearchIntentAttributeName
+0x1e0ccfc38  __DATA_CONST,__const  _PHSearchLocationDisambiguationAnnotationKey
+0x199aa1840  __TEXT,__text  _PHSearchNaturalLanguageDateSuggestionsEnabled
+0x1e0ccfc30  __DATA_CONST,__const  _PHSearchNaturalLanguageDateSuggestionsEnabledKey
+0x1e0ccfc28  __DATA_CONST,__const  _PHSearchParsedTokenRangeInQueryKey
+0x1e0ccfc20  __DATA_CONST,__const  _PHSearchQueryAllTimeAttributeKey
+0x1e0ccfc18  __DATA_CONST,__const  _PHSearchQueryAttributeKey
+0x199d2dbb0  __TEXT,__const  _PHSearchQueryOptionsCollectionThresholdDefaultValue
+0x199d2dba8  __TEXT,__const  _PHSearchQueryOptionsEmbeddingGenerationTimeoutSpotlightDefaultValue
+0x199d2dba0  __TEXT,__const  _PHSearchQueryOptionsEmbeddingRelevanceThresholdSpotlightDefaultValue
+0x199d2dbb8  __TEXT,__const  _PHSearchQueryOptionsMinNumberOfResultsForNextTokenGeneration
+0x199d2dbc0  __TEXT,__const  _PHSearchQueryOptionsSpotlightTimeoutSecondsDefaultValue
+0x199c7b88c  __TEXT,__text  _PHSearchQueryResultTypesDescription
+0x1e0ccfc10  __DATA_CONST,__const  _PHSearchQuerySortOrderAttributeDefaultValue
+0x1e0ccfc08  __DATA_CONST,__const  _PHSearchQuerySortOrderAttributeKey
+0x199c7b920  __TEXT,__text  _PHSearchQuerySpotlightQUTypesDescription
+0x1e0ccfc00  __DATA_CONST,__const  _PHSearchQueryTripAttributeKey
+0x199b67db8  __TEXT,__text  _PHSearchSuggestionCategoriesTypeForPLSearchSuggestionCategoriesType
+0x199afe4c8  __TEXT,__text  _PHSensitiveContentAnalysisAvailable
+0x1e0ccfbf8  __DATA_CONST,__const  _PHServerGeneratedLocalizedDescriptionErrorKey
+0x1e0ccfbf0  __DATA_CONST,__const  _PHShareCommentPropertySetCore
+0x1e0ccfbe8  __DATA_CONST,__const  _PHShareCommentPropertySetIdentifier
+0x1e0ccfbe0  __DATA_CONST,__const  _PHShareCommentPropertySetIsInteresting
+0x1e0ccfbd8  __DATA_CONST,__const  _PHShareCommentPropertySetPermissions
+0x199af4ee0  __TEXT,__text  _PHShareParticipantAcceptanceStatusDebugDescription
+0x199c7fdf8  __TEXT,__text  _PHShareParticipantPermissionDebugDescription
+0x199af4e84  __TEXT,__text  _PHShareParticipantRoleDebugDescription
+0x199c7fe50  __TEXT,__text  _PHSharePublishStateDebugDescription
+0x199c7fdcc  __TEXT,__text  _PHShareStatusDebugDescription
+0x199c7fe24  __TEXT,__text  _PHShareTrashedStateDebugDescription
+0x199b1bbd0  __TEXT,__text  _PHShortDescriptionForPhotosHighlightCategory
+0x199b1bbfc  __TEXT,__text  _PHShortDescriptionForPhotosHighlightEnrichmentState
+0x199b1bb84  __TEXT,__text  _PHShortDescriptionForPhotosHighlightKind
+0x199b1bba8  __TEXT,__text  _PHShortDescriptionForPhotosHighlightType
+0x199b1bc20  __TEXT,__text  _PHShortDescriptionForPhotosHighlightVisibilityState
+0x199b67f30  __TEXT,__text  _PHShortLabelForSuggestionCategoriesType
+0x199b8b1a0  __TEXT,__text  _PHShouldAllowAccessWithAuthorizationStatus
+0x199cb92a0  __TEXT,__text  _PHSignpostEventsEnabled
+0x199b6d020  __TEXT,__text  _PHSizeScale
+0x199b6d024  __TEXT,__text  _PHSizeScaleToFillSize
+0x199b6d028  __TEXT,__text  _PHSizeScaleToFitSize
+0x1e0ccfbd0  __DATA_CONST,__const  _PHSocialGroupReferenceType
+0x199a980dc  __TEXT,__text  _PHSocialGroupVerifiedTypeDescription
+0x199c965ec  __TEXT,__text  _PHStreamingDeniedError
+0x199c7e560  __TEXT,__text  _PHStringForMemoryCurationLength
+0x199b8a700  __TEXT,__text  _PHStringForMemoryMood
+0x199af5390  __TEXT,__text  _PHStringFromAnalysisCoordinatorFeature
+0x199b8b178  __TEXT,__text  _PHStringFromAuthorizationStatus
+0x199af5370  __TEXT,__text  _PHStringFromCloudResourcePrefetchMode
+0x199c0bf2c  __TEXT,__text  _PHStringFromFeatureAvailabilityState
+0x199af52dc  __TEXT,__text  _PHStringFromPHAdjustmentStyleCastShort
+0x199c6d9d8  __TEXT,__text  _PHSuggestionFeaturedStateForPLSuggestionFeaturedState
+0x199c70348  __TEXT,__text  _PHSuggestionFeaturedStateStringWithFeaturedState
+0x199d2d9f0  __TEXT,__const  _PHSuggestionMessageDefaultMatchingWeight
+0x199c6d9b0  __TEXT,__text  _PHSuggestionNotificationStateForCPLSuggestionNotificationState
+0x199c70324  __TEXT,__text  _PHSuggestionNotificationStateStringWithNotificationState
+0x199c6d990  __TEXT,__text  _PHSuggestionStateForCPLSuggestionState
+0x199c70300  __TEXT,__text  _PHSuggestionStateStringWithState
+0x199c6fe68  __TEXT,__text  _PHSuggestionStringWithSubtype
+0x199c6fe38  __TEXT,__text  _PHSuggestionStringWithType
+0x199c6d728  __TEXT,__text  _PHSuggestionSubtypeForCPLSuggestionSubtype
+0x199c6d708  __TEXT,__text  _PHSuggestionTypeForCPLSuggestionType
+0x199aa58b4  __TEXT,__text  _PHTransactionPriorityToString
+0x199b21f18  __TEXT,__text  _PHUniformTypeConformsToResourceType
+0x199b21dd8  __TEXT,__text  _PHUniformTypesForResourceType
+0x1e0ccfbc8  __DATA_CONST,__const  _PHUpdatedLocalIdentifiersKey
+0x1e0ccfbc0  __DATA_CONST,__const  _PHUserFeedbackDomain
+0x1e0ccfbb8  __DATA_CONST,__const  _PHUserFeedbackPropertyContext
+0x1e0ccfbb0  __DATA_CONST,__const  _PHUserFeedbackPropertyCreationType
+0x1e0ccfba8  __DATA_CONST,__const  _PHUserFeedbackPropertyFeature
+0x1e0ccfba0  __DATA_CONST,__const  _PHUserFeedbackPropertyLastModifiedDate
+0x1e0ccfb98  __DATA_CONST,__const  _PHUserFeedbackPropertyType
+0x1e0ccfb90  __DATA_CONST,__const  _PHUserFeedbackPropertyUUID
+0x199d2d9c8  __TEXT,__const  _PHUserFeedbackScoreThresholdAcceptable
+0x199d2d9d0  __TEXT,__const  _PHUserFeedbackScoreThresholdNotRecommended
+0x199d2d9c0  __TEXT,__const  _PHUserFeedbackScoreThresholdRecommended
+0x199d2d9d8  __TEXT,__const  _PHUserFeedbackScoreThresholdUnacceptable
+0x1e0ccfb88  __DATA_CONST,__const  _PHUtilityCollectionReferenceType
+0x1e0ccfb80  __DATA_CONST,__const  _PHValidationFailureTypeErrorKey
+0x199c9f284  __TEXT,__text  _PHValidationFailureTypeIsForLivePhotoPairingIdentifier
+0x199d2da50  __TEXT,__const  _PHVariationSuggestionStateMask
+0x199b9ca04  __TEXT,__text  _PHVariationSuggestionStatesFromPLStatesAndType
+0x199ad6400  __TEXT,__text  _PHVideoComplementVisibilityStateHasFullEditingSupport
+0x199ad63f8  __TEXT,__text  _PHVideoComplementVisibilityStateIsEvaluated
+0x199ad63f0  __TEXT,__text  _PHVideoComplementVisibilityStateIsExplicit
+0x199ad63e8  __TEXT,__text  _PHVideoComplementVisibilityStateIsHidden
+0x199ad6408  __TEXT,__text  _PHVideoComplementVisibilityStateIsPlayable
+0x199ad641c  __TEXT,__text  _PHVideoComplementVisibilityStateSupportsVariationChanges
+0x1e0ccfb78  __DATA_CONST,__const  _PHVideoExportOmitFromAssetCacheKey
+0x199b99b60  __TEXT,__text  _PLAssetTypeForPHAssetMediaType
+0x199a93254  __TEXT,__text  _PLCloudFeedEntryFilterForPHCloudFeedEntryFilter
+0x199a93278  __TEXT,__text  _PLCloudFeedEntryTypeForPHCloudFeedEntryType
+0x199c06284  __TEXT,__text  _PLCloudResourcePrefetchModeForPHCloudResourcePrefetchMode
+0x199aa2010  __TEXT,__text  _PLDebugStringForAmbiguityType
+0x199b67dec  __TEXT,__text  _PLDebugStringForPHSearchSuggestionCategoriesType
+0x199aa1ab0  __TEXT,__text  _PLDebugStringForSearchEntityType
+0x199aa1fe4  __TEXT,__text  _PLDebugStringForSearchQuerySuggestionType
+0x199aa1a88  __TEXT,__text  _PLDebugStringForSearchSuggestionType
+0x199b67e10  __TEXT,__text  _PLDebugStringsForPHSearchSuggestionCategoriesTypes
+0x199ca7e6c  __TEXT,__text  _PLImageManagerRecordEnabled
+0x199af5478  __TEXT,__text  _PLManagedAssetEditOperationToPHAssetEditOperation
+0x199b311c8  __TEXT,__text  _PLMemoryFeaturedStateFromPHMemoryFeaturedState
+0x199b02d1c  __TEXT,__text  _PLObjectIDOrUUIDFromPHObject
+0x1e0ccfb70  __DATA_CONST,__const  _PLPTPHostCharacteristicMake_Apple
+0x1e0ccfb68  __DATA_CONST,__const  _PLPTPHostCharacteristicMake_Microsoft
+0x1e0ccfb60  __DATA_CONST,__const  _PLPTPHostCharacteristicOS_Windows
+0x1e0ccfb58  __DATA_CONST,__const  _PLPTPHostCharacteristicOS_iOS
+0x1e0ccfb50  __DATA_CONST,__const  _PLPTPHostCharacteristicOS_macOS
+0x1e0ccfb48  __DATA_CONST,__const  _PLPTPHostCharacteristicTransport_MTP
+0x1e0ccfb40  __DATA_CONST,__const  _PLPTPHostCharacteristicTransport_PTP
+0x1e0ccfb38  __DATA_CONST,__const  _PLPTPHostCharacteristicsKeyMake
+0x1e0ccfb30  __DATA_CONST,__const  _PLPTPHostCharacteristicsKeyOS
+0x1e0ccfb28  __DATA_CONST,__const  _PLPTPHostCharacteristicsKeyOSVersion
+0x1e0ccfb20  __DATA_CONST,__const  _PLPTPHostCharacteristicsKeyTransport
+0x199c28280  __TEXT,__text  _PLSearchEntityTypeForPHSearchEntityType
+0x199c3240c  __TEXT,__text  _PLSearchIndexCategoryForPHSearchIndexCategory
+0x199b67dc8  __TEXT,__text  _PLSearchSuggestionCategoriesTypeForPHSearchSuggestionCategoriesType
+0x199aa1818  __TEXT,__text  _PLStringForSearchEntityCategoryType
+0x199c6d9e4  __TEXT,__text  _PLSuggestionFeaturedStateForPHSuggestionFeaturedState
+0x199b9c9e4  __TEXT,__text  _PLVariationSuggestionTypeStatesFromPHStatesAndType
+0x199b2225c  __TEXT,__text  _PathForDeletableAssetResourceType
+0x199d2d9e8  __TEXT,__const  _RepresentationMarkerLocation
+0x199b220b4  __TEXT,__text  _ResourceRecipeIDForDeletableAssetResourceType
+0x199ab27bc  __TEXT,__text  __CreationDatesInLibraryAndOriginalMetadataAreSame
+0x199ab231c  __TEXT,__text  __LocationsMatchUsingComparisonStrategy
+0x199b99c10  __TEXT,__text  __PHAllAssetMediaSubtypes
+0x199b21b40  __TEXT,__text  __PHAssetResourceTypeDescription
+0x199cca9e8  __TEXT,__text  __PHDownloadIntentName
+0x199ccaa4c  __TEXT,__text  __PHDownloadPriorityName
+0x199cb4b40  __TEXT,__text  __PHFindCombineTokenText
+0x199cb4eac  __TEXT,__text  __PHFindGenerateGroupings
+0x199cb136c  __TEXT,__text  __PHFindOperandsFromSuggestion
+0x199cb12f4  __TEXT,__text  __PHFindQueryParserUtilStringByTrimmingOuterWhitespace
+0x199cb0f9c  __TEXT,__text  __PHFindQueryParserUtilTokensFromText
+0x199cb4830  __TEXT,__text  __PHFindStopWordStrings
+0x199b26d34  __TEXT,__text  __PHResourceLocalAvailabilityRequestResourceAvailabilityDescription
+0x199b2df68  __TEXT,__text  __PHResourceLocalAvailabilityRequestResourceTypeDescription
+0x199cca984  __TEXT,__text  __PHStreamingVideoIntentName
+0x199d2da48  __TEXT,__const  __PHVariationSuggestionStateWidth
+0x199b56054  __TEXT,__text  __PrimaryPLResourceTypeForPrimaryPHResourceType
+0x199cf7c30  __TEXT,__text  __canPerformTokenizedSearchByLookupIdentifierForCategory
+0x199af549c  __TEXT,__text  __createGainMapFromImageSource
+0x199c253ec  __TEXT,__text  __descriptionForPHImageRequestResultPhase
+0x199bf4c50  __TEXT,__text  __fetchNonHintResources
+0x199cf5a24  __TEXT,__text  __indexCategoriesForTokenType
+0x199bf5034  __TEXT,__text  __presentFullResourceAtIndex
+0x199a3dbe8  __TEXT,__text  __presentResourcesFromHintsUntilStop
+0x199bf40f8  __TEXT,__text  __resourceInfoFromResultDict
+0x199bf3f8c  __TEXT,__text  __resourceInfoFromVirtualResource
+0x199bf3c20  __TEXT,__text  __sortedInfosFromChooserInfos
+0x1ebb4e4cc  __DATA,__common  __swift_FORCE_LOAD_$_swiftPhotos
+0x199b9a664  __TEXT,__text  _assetSubtypeForMediaSubtypes
+0x199b48b8c  __TEXT,__text  _copyPropertiesFromObjectAToObjectB
+0x199bf47ac  __TEXT,__text  _fetchResourcesForChoosing
+0x1e0cc9150  __DATA_CONST,__const  _kBundleRelativePath_Masters
+0x1e0cc9148  __DATA_CONST,__const  _kBundleRelativePath_Originals
+0x199d2da58  __TEXT,__const  _kMicroPreviewSlotSize
+0x199d2da70  __TEXT,__const  _kMiniPreviewCompressionQuality
+0x1ebb49ea0  __DATA,__data  _kPHGraphCreationDate
+0x1ebb49e98  __DATA,__data  _kPHGraphInferenceConfirmedFamily
+0x1ebb49e90  __DATA,__data  _kPHGraphInferenceContactIdentifier
+0x1ebb49e88  __DATA,__data  _kPHGraphInferenceFamily
+0x1ebb49e80  __DATA,__data  _kPHGraphInferenceInferredFamily
+0x1ebb49e78  __DATA,__data  _kPHGraphInferenceLocalIdentifier
+0x1ebb49e70  __DATA,__data  _kPHGraphInferenceName
+0x1ebb49e68  __DATA,__data  _kPHGraphInferenceTagBaby
+0x1ebb49e60  __DATA,__data  _kPHGraphInferenceTagBeach
+0x1ebb49e58  __DATA,__data  _kPHGraphInferenceTagEventDate
+0x1ebb49e50  __DATA,__data  _kPHGraphInferenceTagEvents
+0x1ebb49e48  __DATA,__data  _kPHGraphInferenceTagFrequentLocation
+0x1ebb49e40  __DATA,__data  _kPHGraphInferenceTagHolidays
+0x1ebb49e38  __DATA,__data  _kPHGraphInferenceTagHome
+0x1ebb49e30  __DATA,__data  _kPHGraphInferenceTagInferences
+0x1ebb49e28  __DATA,__data  _kPHGraphInferenceTagMountain
+0x1ebb49e20  __DATA,__data  _kPHGraphInferenceTagNature
+0x1ebb49e18  __DATA,__data  _kPHGraphInferenceTagPerformers
+0x1ebb49e10  __DATA,__data  _kPHGraphInferenceTagPersons
+0x1ebb49e08  __DATA,__data  _kPHGraphInferenceTagPet
+0x1ebb49e00  __DATA,__data  _kPHGraphInferenceTagPublicEvents
+0x1ebb49df8  __DATA,__data  _kPHGraphInferenceTagTrip
+0x1ebb49df0  __DATA,__data  _kPHGraphInferenceTagVenue
+0x1ebb49de8  __DATA,__data  _kPHGraphInferenceTagWork
+0x1ebb49de0  __DATA,__data  _kPHGraphPersonalTraitAssociatedPersonLocalIdentifiers
+0x1ebb49dd8  __DATA,__data  _kPHGraphPersonalTraitHolidayIdentifier
+0x1ebb49dd0  __DATA,__data  _kPHGraphPersonalTraitIsGatedForStorytelling
+0x1ebb49dc8  __DATA,__data  _kPHGraphPersonalTraitIsShortlistedForStorytelling
+0x1ebb49dc0  __DATA,__data  _kPHGraphPersonalTraitLabelType
+0x1ebb49db8  __DATA,__data  _kPHGraphPersonalTraitLabelTypeHoliday
+0x1ebb49db0  __DATA,__data  _kPHGraphPersonalTraitLabelTypeMeaning
+0x1ebb49da8  __DATA,__data  _kPHGraphPersonalTraitLabelTypeScene
+0x1ebb49da0  __DATA,__data  _kPHGraphPersonalTraitMeaningIdentifier
+0x1ebb49d98  __DATA,__data  _kPHGraphPersonalTraitName
+0x1ebb49d90  __DATA,__data  _kPHGraphPersonalTraitRelevantAssetUUIDs
+0x1ebb49d88  __DATA,__data  _kPHGraphPersonalTraitSceneClassId
+0x199d2dc00  __TEXT,__const  _kPHHighPrecisionMaxTokenCount
+0x199d2dc08  __TEXT,__const  _kPHHighPrecisionMinCharacterCount
+0x199d2da38  __TEXT,__const  _kPHMemoryMaximumNumberOfUserCuratedAssets
+0x199d2d9f8  __TEXT,__const  _kPHRequestUUIDTimeoutInSeconds
+0x199d2da68  __TEXT,__const  _kThumbnailPreviewCompressionQuality
+0x199d2da78  __TEXT,__const  _kTinyPreviewCompressionQuality
+0x199d2da60  __TEXT,__const  _kTinyPreviewDataMaxSize
+0x199d2da5c  __TEXT,__const  _kTinyPreviewSlotSize
+0x199a3e09c  __TEXT,__text  _ph_objc_getAssociatedObject
+0x199a48708  __TEXT,__text  _ph_objc_removeAssociatedObjects
+0x199a87fa8  __TEXT,__text  _ph_objc_setAssociatedObject
+0x199a38ae4  __TEXT,__text  _ph_objc_setAssociatedObjectIfNotSet
+0x199adad94  __TEXT,__text  _stringForTrashedMask
+```
+
+## Private
+
+```
+0x199a27bf8  __TEXT,__text  +[PHPhotoLibrary initialize]
+0x199a27bfc  __TEXT,__text  +[PHPhotoLibrary enableMultiLibraryMode]
+0x199a27c08  __TEXT,__text  -[PHPhotoLibrary initWithPhotoLibraryURL:]
+0x199a27c10  __TEXT,__text  -[PHPhotoLibrary initWithPhotoLibraryURL:type:]
+0x199a27c98  __TEXT,__text  -[PHPhotoLibrary initWithPhotoLibraryBundle:type:]
+0x199a28e5c  __TEXT,__text  -[PHPerformChangesRequest init]
+0x199a28fe8  __TEXT,__text  ___swift_instantiateConcreteTypeFromMangledNameV2
+0x199a290b8  __TEXT,__text  -[PHPhotoLibrary isSystemPhotoLibrary]
+0x199a29108  __TEXT,__text  -[PHPhotoLibrary photoLibraryURL]
+0x199a29110  __TEXT,__text  ___63-[PHChangeHandlingDebugger changeHandlingActiveStateDidChange:]_block_invoke
+0x199a29150  __TEXT,__text  +[PHPhotoLibrary isSystemPhotoLibraryURL:]
+0x199a2915c  __TEXT,__text  ___37+[PHPhotoLibrary uniqueObjectIDCache]_block_invoke
+0x199a2918c  __TEXT,__text  -[PHPhotoLibraryChangeObserverRegistrar initWithLibraryBundle:changeHandlingDebugger:uniqueObjectIDCache:]
+0x199a29358  __TEXT,__text  -[PHChangeHandlingDebugger changeHandlingActiveStateDidChange:]
+0x199a293cc  __TEXT,__text  -[PHPhotoLibraryCloudStatusObserverRegistrar initWithLibraryBundle:]
+0x199a294dc  __TEXT,__text  -[PHPhotoLibraryCloudStatusObserverRegistrar setBeginObservingCloudStatusBlock:]
+0x199a294e4  __TEXT,__text  -[PHPhotoLibrary photoLibrary]
+0x199a295a0  __TEXT,__text  ___50-[PHPhotoLibrary initWithPhotoLibraryBundle:type:]_block_invoke
+0x199a29600  __TEXT,__text  ___36+[PHImportController sharedInstance]_block_invoke
+0x199a29630  __TEXT,__text  -[PHImportController init]
+0x199a2969c  __TEXT,__text  -[PHPhotoLibrary _lazyPhotoLibrary]
+0x199a296e4  __TEXT,__text  -[PHChangeHandlingDebugger init]
+0x199a296ec  __TEXT,__text  -[PHChangeHandlingDebugger initWithMaxPreviousEvents:]
+0x199a297a8  __TEXT,__text  _newPhotoLibrary
+0x199a29900  __TEXT,__text  +[PHImportController sharedInstance]
+0x199a29948  __TEXT,__text  -[PHImportController enableDeviceImport]
+0x199a299d0  __TEXT,__text  ___40-[PHImportController enableDeviceImport]_block_invoke
+0x199a29a48  __TEXT,__text  -[PHImportController addImportControllerObserver:]
+0x199a29adc  __TEXT,__text  -[PHImportController accessSourceList:]
+0x199a29b28  __TEXT,__text  ___50-[PHImportController addImportControllerObserver:]_block_invoke
+0x199a29cc8  __TEXT,__text  +[PHQuery photoLibraryWasAccessed]
+0x199a29d18  __TEXT,__text  -[PHPhotoLibrary shouldMobileSlideShowLaunchWithError:]
+0x199a2a268  __TEXT,__text  -[PHCollection initWithFetchDictionary:propertyHint:photoLibrary:]
+0x199a2a378  __TEXT,__text  -[PHObject initWithFetchDictionary:propertyHint:photoLibrary:]
+0x199a2a494  __TEXT,__text  -[PHObject photoLibrary]
+0x199a2a4a0  __TEXT,__text  -[PHAssetCollection initWithFetchDictionary:propertyHint:photoLibrary:]
+0x199a2b104  __TEXT,__text  +[PHPhotoLibrary uniquedOID:]
+0x199a2b180  __TEXT,__text  +[PHPhotoLibrary uniqueObjectIDCache]
+0x199a2b1b4  __TEXT,__text  -[PHAssetCollection plAlbumKind]
+0x199a2b1c8  __TEXT,__text  +[PHCollectionList transientCollectionListWithCollections:title:identifier:photoLibrary:]
+0x199a2b264  __TEXT,__text  -[PHCollectionList initTransientWithCollections:orQuery:title:identifier:photoLibrary:]
+0x199a2b558  __TEXT,__text  -[PHCollectionList initWithFetchDictionary:propertyHint:photoLibrary:]
+0x199a2b734  __TEXT,__text  -[PHObject isTransient]
+0x199a2b744  __TEXT,__text  -[PHAssetCollection transientIdentifier]
+0x199a2b758  __TEXT,__text  -[PHAssetCollection assetCollectionSubtype]
+0x199a2b76c  __TEXT,__text  -[PHAssetCollection assetCollectionType]
+0x199a2b780  __TEXT,__text  +[PHAssetCollection _defaultKeyAssetsAtEndForType:subtype:]
+0x199a2b7d4  __TEXT,__text  +[PHPhotoLibrary _photosAccessAllowedForAccessLevel:]
+0x199a2b850  __TEXT,__text  +[PHFetchOptions defaultDetectionTypes]
+0x199a2b85c  __TEXT,__text  +[PHAssetCollection transientAssetCollectionWithAssets:title:identifier:photoLibrary:]
+0x199a2b914  __TEXT,__text  -[PHAssetCollection initTransientWithAssets:orFetchResult:title:subtitle:titleFontName:identifier:albumKind:subtype:photoLibrary:]
+0x199a2b95c  __TEXT,__text  -[PHAssetCollection initTransientWithAssets:orFetchResult:orQuery:title:subtitle:titleFontName:identifier:albumKind:subtype:photoLibrary:]
+0x199a2b998  __TEXT,__text  -[PHAssetCollection initTransientWithAssets:orFetchResult:orQuery:title:subtitle:titleFontName:identifier:albumKind:subtype:startDate:endDate:photoLibrary:]
+0x199a2bb04  __TEXT,__text  -[PHAssetCollection _initTransientWithAssets:orFetchResult:orQuery:title:subtitle:titleFontName:identifier:keyAssetsAtEnd:albumKind:type:subtype:startDate:endDate:photoLibrary:]
+0x199a2c1c4  __TEXT,__text  -[PHPhotoLibrary wellKnownPhotoLibraryIdentifier]
+0x199a2c1cc  __TEXT,__text  -[PHObject uuid]
+0x199a2c1d8  __TEXT,__text  ___32+[PHImageManager defaultManager]_block_invoke
+0x199a2c218  __TEXT,__text  +[PHImageManager defaultManager]
+0x199a2c2ac  __TEXT,__text  -[PHPhotoLibraryFeatureAvailabilityReporter initWithPhotoLibrary:]
+0x199a2c390  __TEXT,__text  -[PHFeatureAvailabilityReadOptions init]
+0x199a2c3ec  __TEXT,__text  -[PHCollectionList canContainCollections]
+0x199a2c3f4  __TEXT,__text  +[PHMemory fetchMemoriesWithOptions:]
+0x199a2c40c  __TEXT,__text  +[PHAssetCollection fetchAssetCollectionsWithType:subtype:options:]
+0x199a2c494  __TEXT,__text  +[PHObject authorizationAwareFetchResultWithOptions:fetchBlock:]
+0x199a2c5b8  __TEXT,__text  +[PHPhotoLibrary checkAuthorizationStatusForAPIAccessLevel:]
+0x199a2c5c0  __TEXT,__text  +[PHPhotoLibrary checkAuthorizationStatusForAPIAccessLevel:suppressPrompt:]
+0x199a2c61c  __TEXT,__text  +[PHFetchOptions effectivePhotoLibraryForFetchOptions:object:]
+0x199a2c684  __TEXT,__text  +[PHFetchOptions defaultMediaAnalysisProcessingRangeTypes]
+0x199a2c68c  __TEXT,__text  -[PHFetchOptions init]
+0x199a2c744  __TEXT,__text  +[PHCollectionList fetchRootAlbumCollectionListWithOptions:]
+0x199a2c758  __TEXT,__text  -[PHPhotoLibrary userInitiatedQueuePhotoLibrary]
+0x199a2c7a0  __TEXT,__text  +[PHFetchOptions fetchOptionsCopyFromNullableFetchOptions:photoLibrary:]
+0x199a2c818  __TEXT,__text  -[PHQuery executeQuery]
+0x199a2c960  __TEXT,__text  ___23-[PHQuery executeQuery]_block_invoke
+0x199a2c9cc  __TEXT,__text  +[PHPhotoLibrary classForFetchType:]
+0x199a2c9d4  __TEXT,__text  +[PHMemory managedEntityName]
+0x199a2c9e0  __TEXT,__text  ___50-[PHPhotoLibrary initWithPhotoLibraryBundle:type:]_block_invoke_5
+0x199a2ca40  __TEXT,__text  ___PHNextImageAndAssetResourceManagerID_block_invoke
+0x199a2ca54  __TEXT,__text  +[PHAssetResourceQualityClass allQualityClassesMatchingPredicate:inLibrary:]
+0x199a2caec  __TEXT,__text  -[PHPhotoLibrary photoLibraryBundle]
+0x199a2caf8  __TEXT,__text  +[PHPhotoLibrary systemPhotoLibraryURLChangeNotificationName]
+0x199a2cb08  __TEXT,__text  ___50-[PHPhotoLibrary initWithPhotoLibraryBundle:type:]_block_invoke_11
+0x199a2cb58  __TEXT,__text  -[PHPhotoLibrary _initializeAppPrivateData]
+0x199a2cc34  __TEXT,__text  -[PHPhotoLibraryAppPrivateData initWithLibrary:]
+0x199a2cce4  __TEXT,__text  -[PHPhotoLibraryAppPrivateData valueForKey:]
+0x199a2ccec  __TEXT,__text  -[PHPhotoLibrary registerChangeObserver:]
+0x199a2ce6c  __TEXT,__text  -[PHImageManager init]
+0x199a2cf20  __TEXT,__text  -[PHPhotoLibrary pathManager]
+0x199a2cf28  __TEXT,__text  -[PHAssetResourceQualityClass isTable]
+0x199a2cf30  __TEXT,__text  ___76+[PHAssetResourceQualityClass allQualityClassesMatchingPredicate:inLibrary:]_block_invoke
+0x199a2cf38  __TEXT,__text  -[PHAssetResourceQualityClass .cxx_destruct]
+0x199a2cf44  __TEXT,__text  -[PLImageFormat(PHAdoptionUtilities) sizeWithFallBackSize:]
+0x199a2cf7c  __TEXT,__text  -[PHPhotoLibrary librarySpecificFetchOptions]
+0x199a2d1ac  __TEXT,__text  -[PHPhotoLibrary photoLibraryForCurrentQueueQoS]
+0x199a2d35c  __TEXT,__text  -[PHPhotoLibrary isPHPhotoLibraryForCMM]
+0x199a2d37c  __TEXT,__text  -[PHPhotoLibrary type]
+0x199a2d384  __TEXT,__text  ___60+[PHCollectionList fetchRootAlbumCollectionListWithOptions:]_block_invoke
+0x199a2d414  __TEXT,__text  -[PHPhotoLibrary albumRootFolderObjectID]
+0x199a2d41c  __TEXT,__text  ___50-[PHPhotoLibrary initWithPhotoLibraryBundle:type:]_block_invoke_9
+0x199a2d478  __TEXT,__text  -[PHPhotoLibrary mainQueuePhotoLibrary]
+0x199a2d4c0  __TEXT,__text  ___50-[PHPhotoLibrary initWithPhotoLibraryBundle:type:]_block_invoke_3
+0x199a2d520  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x199a2d530  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x199a2d538  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x199a2d550  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x199a2d55c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x199a2d568  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x199a2d578  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x199a2d578  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x199a2d584  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x199a2d5a4  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x199a2d5b4  __TEXT,__text  _block_copy_helper.35
+0x199a2d5b8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x199a2d5c8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x199a2d5e0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x199a2d600  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x199a2d620  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x199a2d634  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x199a2d658  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x199a2d668  __TEXT,__text  _block_copy_helper
+0x199a2d678  __TEXT,__text  _block_copy_helper
+0x199a2d688  __TEXT,__text  _block_copy_helper
+0x199a2d698  __TEXT,__text  _block_copy_helper
+0x199a2d760  __TEXT,__text  _block_destroy_helper.36
+0x199a2d764  __TEXT,__text  _block_destroy_helper
+0x199a2d76c  __TEXT,__text  _block_destroy_helper
+0x199a2d774  __TEXT,__text  _block_destroy_helper
+0x199a2d77c  __TEXT,__text  _block_destroy_helper
+0x199a2d784  __TEXT,__text  ___swift_closure_destructor.15
+0x199a2d7a0  __TEXT,__text  ___swift_closure_destructor.32
+0x199a2d7a4  __TEXT,__text  ___swift_closure_destructor.32
+0x199a2d7a8  __TEXT,__text  ___swift_closure_destructor.29
+0x199a2d7dc  __TEXT,__text  ___swift_closure_destructor.29
+0x199a2d808  __TEXT,__text  ___54+[PHQuery fetchRootFolderIDForAlbumKind:photoLibrary:]_block_invoke
+0x199a2d890  __TEXT,__text  +[PHMemory managedObjectSupportsRejectedState]
+0x199a2d898  __TEXT,__text  ___52+[PHQuery _transformedSortDescriptors:forFetchType:]_block_invoke
+0x199a2da18  __TEXT,__text  ___24+[PHMemory entityKeyMap]_block_invoke
+0x199a2e01c  __TEXT,__text  -[PHFetchOptions copyWithZone:]
+0x199a2e820  __TEXT,__text  -[PHFetchOptions .cxx_destruct]
+0x199a2ec6c  __TEXT,__text  -[PHFetchResult initWithQuery:library:]
+0x199a2ec74  __TEXT,__text  -[PHFetchResult initWithQuery:library:registerIfNeeded:]
+0x199a2ed70  __TEXT,__text  -[PHFetchResult initWithQuery:library:oids:registerIfNeeded:usingManagedObjectContext:]
+0x199a2f308  __TEXT,__text  -[PHFetchResult init]
+0x199a2f3bc  __TEXT,__text  -[PHQuery copyWithZone:]
+0x199a2f4c0  __TEXT,__text  +[PHCollectionList managedEntityName]
+0x199a2f4cc  __TEXT,__text  +[PHCollectionList managedObjectSupportsTrashedState]
+0x199a2f4d4  __TEXT,__text  +[PHObject managedObjectSupportsHiddenState]
+0x199a2f4dc  __TEXT,__text  +[PHObject managedObjectSupportsShareTrashedState]
+0x199a2f4e4  __TEXT,__text  +[PHObject managedObjectSupportsShareExpiredState]
+0x199a2f4ec  __TEXT,__text  +[PHObject managedObjectSupportsShareExitingState]
+0x199a2f4f4  __TEXT,__text  +[PHObject managedObjectSupportsSharePendingState]
+0x199a2f4fc  __TEXT,__text  +[PHObject managedObjectSupportsCollectionShareMigrationState]
+0x199a2f504  __TEXT,__text  +[PHObject managedObjectSupportsAllowedForAnalysis]
+0x199a2f50c  __TEXT,__text  +[PHObject managedObjectSupportsContributor]
+0x199a2f514  __TEXT,__text  +[PHObject managedObjectSupportsVisibilityState]
+0x199a2f51c  __TEXT,__text  +[PHObject managedObjectSupportsDuplicateVisibilityState]
+0x199a2f524  __TEXT,__text  +[PHObject managedObjectSupportsAssetStacks]
+0x199a2f52c  __TEXT,__text  +[PHObject managedObjectSupportsPendingState]
+0x199a2f534  __TEXT,__text  +[PHObject managedObjectSupportsCreationType]
+0x199a2f53c  __TEXT,__text  +[PHObject managedObjectSupportsMontage]
+0x199a2f544  __TEXT,__text  +[PHObject managedObjectSupportsScreenshot]
+0x199a2f54c  __TEXT,__text  +[PHPhotoLibrary authorizationStatusForAccessLevel:]
+0x199a2f580  __TEXT,__text  -[PHPhotoLibrary _addChangeObservers:authorizationStatus:]
+0x199a2f588  __TEXT,__text  -[PHPhotoLibraryChangeObserverRegistrar addObservers:authorizationStatus:]
+0x199a2f624  __TEXT,__text  ___74-[PHPhotoLibraryChangeObserverRegistrar addObservers:authorizationStatus:]_block_invoke
+0x199a2f804  __TEXT,__text  +[PHPhotoLibraryChangeObserverRegistrar _isInternalObserver:]
+0x199a2f850  __TEXT,__text  -[PHPhotoLibraryChangeObserverRegistrar _lock_resumeChangeHandlingIfNeeded]
+0x199a2f97c  __TEXT,__text  -[PHUniqueObjectIDCache _verifyObjectIDIsTagged:]
+0x199a2fa04  __TEXT,__text  +[PHPhotoLibrary isMultiLibraryModeEnabled]
+0x199a2fa10  __TEXT,__text  +[PHObject managedObjectSupportsPersonFilters]
+0x199a2fa18  __TEXT,__text  +[PHObject managedObjectSupportsKeyFaces]
+0x199a2fa20  __TEXT,__text  -[PHPhotoLibrary(PXCPLStatus) managedObjectContextForCurrentQueueQoS]
+0x199a2fb38  __TEXT,__text  +[PHMemory managedObjectSupportsCreationType]
+0x199a2fb40  __TEXT,__text  +[PHMemory managedObjectSupportsSharingComposition]
+0x199a2fb48  __TEXT,__text  +[PHMemory entityKeyMap]
+0x199a2fbc8  __TEXT,__text  -[PHFetchResult fetchOptions]
+0x199a2fc08  __TEXT,__text  -[PHFetchResult fetchRequest]
+0x199a2fc48  __TEXT,__text  ___sReadUserDefaults_block_invoke
+0x199a2fcc0  __TEXT,__text  +[PHObject managedObjectSupportsRejectedState]
+0x199a2fcc8  __TEXT,__text  +[PHObject entityKeyForPropertyKey:]
+0x199a2fd28  __TEXT,__text  +[PHObject managedObjectSupportsBursts]
+0x199a2fd30  __TEXT,__text  +[PHMemory managedObjectSupportsPendingState]
+0x199a2fd38  __TEXT,__text  ___51+[PHEntityKeyMap transposePropertyKeysByEntityKey:]_block_invoke
+0x199a2fe58  __TEXT,__text  +[PHObject managedObjectSupportsDetectionType]
+0x199a2fe60  __TEXT,__text  +[PHObject managedObjectSupportsBodyDetection]
+0x199a2fe68  __TEXT,__text  +[PHObject managedObjectSupportsSharingComposition]
+0x199a2fe70  __TEXT,__text  -[_PHFetchRequestWrapper initWithFetchRequest:containerIdentifier:fetchPropertySets:]
+0x199a2ff70  __TEXT,__text  -[PHFetchResult fetchedObjectsUsingManagedObjectContext:]
+0x199a30020  __TEXT,__text  ___57-[PHFetchResult fetchedObjectsUsingManagedObjectContext:]_block_invoke
+0x199a300f8  __TEXT,__text  ___55+[PHFetchResult fetchObjectIDs:inManagedObjectContext:]_block_invoke
+0x199a30280  __TEXT,__text  -[PHFetchResultInstrumentation managedObjectContext:willExecuteFetchRequest:]
+0x199a30284  __TEXT,__text  -[PHFetchResultInstrumentation beginTrackingStatisticsWithContext:]
+0x199a30300  __TEXT,__text  -[PHFetchResultInstrumentation managedObjectContext:didExecuteFetchRequest:withSQLString:bindVariables:rowCount:]
+0x199a30314  __TEXT,__text  -[PHFetchResultInstrumentation didExecuteFetchRequestWithContext:resultCount:sqlString:bindVariables:]
+0x199a30410  __TEXT,__text  +[PHPhotoLibrary uniquedOIDs:]
+0x199a30470  __TEXT,__text  -[PHFetchResultInstrumentation .cxx_destruct]
+0x199a304c4  __TEXT,__text  -[PHPhotoLibraryChangeObserverRegistrar registerFetchResult:]
+0x199a30560  __TEXT,__text  -[PHFetchResult count]
+0x199a305a8  __TEXT,__text  -[PHFetchResult fetchType]
+0x199a305b4  __TEXT,__text  -[PHFetchResult fetchPropertySets]
+0x199a305c0  __TEXT,__text  -[PHPhotoLibrary(PHBatchFetchingArray) bfa_fetchObjectsForOIDs:propertyHint:overrideResultsWithClass:]
+0x199a305cc  __TEXT,__text  -[PHFetchResult query]
+0x199a305d8  __TEXT,__text  -[PHPhotoLibrary fetchPHObjectsForOIDs:propertyHint:includeTrash:overrideResultsWithClass:]
+0x199a3095c  __TEXT,__text  -[PHFetchResult photoLibrary]
+0x199a3099c  __TEXT,__text  -[PHPhotoLibrary fetchDictionariesByPHClassForOIDs:propertyHint:includeTrash:overrideWithPHClass:]
+0x199a30c54  __TEXT,__text  -[PHPhotoLibrary objectFetchingContextForCurrentQueueQoS]
+0x199a30cc0  __TEXT,__text  ___61-[PHPhotoLibraryChangeObserverRegistrar registerFetchResult:]_block_invoke
+0x199a30cf4  __TEXT,__text  -[PHFetchResult fetchedObjects]
+0x199a30cfc  __TEXT,__text  ___67-[PHBatchFetchingArray _batchForBatchNumber:shouldUpdateLastBatch:]_block_invoke
+0x199a30d54  __TEXT,__text  -[PHPhotoLibrary mainQueueManagedObjectContext]
+0x199a30d94  __TEXT,__text  ___98-[PHPhotoLibrary fetchDictionariesByPHClassForOIDs:propertyHint:includeTrash:overrideWithPHClass:]_block_invoke
+0x199a31124  __TEXT,__text  +[PHCollectionList propertiesToFetchWithHint:]
+0x199a311b8  __TEXT,__text  -[PHObject objectID]
+0x199a311c4  __TEXT,__text  ___42-[PHBatchFetchingArray _phObjectsForOIDs:]_block_invoke
+0x199a3149c  __TEXT,__text  -[PHFetchResult dealloc]
+0x199a314fc  __TEXT,__text  -[PHPhotoLibrary unregisterFetchResult:]
+0x199a31504  __TEXT,__text  -[PHPhotoLibraryChangeObserverRegistrar unregisterFetchResult:]
+0x199a3157c  __TEXT,__text  ___63-[PHPhotoLibraryChangeObserverRegistrar unregisterFetchResult:]_block_invoke
+0x199a315c4  __TEXT,__text  -[PHPhotoLibraryChangeObserverRegistrar _lock_pauseChangeHandlingIfNeeded]
+0x199a316c0  __TEXT,__text  -[PHPhotoLibraryChangeObserverRegistrar _lock_hasChangeObservers]
+0x199a31730  __TEXT,__text  -[PHFetchResult .cxx_destruct]
+0x199a317e0  __TEXT,__text  -[PHBatchFetchingArray dealloc]
+0x199a3183c  __TEXT,__text  +[PHObject managedObjectSupportsFaceState]
+0x199a31844  __TEXT,__text  +[PHObject managedObjectSupportsAdjustments]
+0x199a3184c  __TEXT,__text  +[PHObject managedObjectSupportsSavedAssetType]
+0x199a31854  __TEXT,__text  +[PHObject managedObjectSupportsTorsoOnly]
+0x199a3185c  __TEXT,__text  +[PHObject managedObjectSupportsSensitivityAnalysis]
+0x199a31a70  __TEXT,__text  __FastValueHashForExpression
+0x199a31b78  __TEXT,__text  -[PHFetchResultInstrumentation willExecuteFetchRequestWithContext:]
+0x199a31c68  __TEXT,__text  -[PHFetchResultInstrumentation isPerformanceLoggingDisabled]
+0x199a31cb0  __TEXT,__text  -[PHFetchResultInstrumentation endTrackingStatisticsWithContext:resultCount:sqlString:bindVariables:]
+0x199a31d8c  __TEXT,__text  -[PHPhotoLibrary allowedEntities]
+0x199a31dfc  __TEXT,__text  ___33-[PHPhotoLibrary allowedEntities]_block_invoke
+0x199a32228  __TEXT,__text  -[PHUniqueObjectIDCache uniquedOIDs:]
+0x199a32330  __TEXT,__text  -[PHPhotoLibrary registerFetchResult:]
+0x199a32338  __TEXT,__text  -[PHFetchResult updateRegistrationForChangeNotificationDeltas]
+0x199a323a4  __TEXT,__text  -[PHFetchResult setRegisteredForChangeNotificationDeltas:]
+0x199a32408  __TEXT,__text  +[PHPhotoLibrary PHObjectClassForEntityName:]
+0x199a32468  __TEXT,__text  -[PHQuery .cxx_destruct]
+0x199a32590  __TEXT,__text  +[PHPhotoLibrary PHObjectClassesByEntityName]
+0x199a325d8  __TEXT,__text  -[PHFetchResult firstObject]
+0x199a32618  __TEXT,__text  ___45+[PHPhotoLibrary PHObjectClassesByEntityName]_block_invoke
+0x199a32d20  __TEXT,__text  ___46+[PHCollectionList propertiesToFetchWithHint:]_block_invoke
+0x199a32e50  __TEXT,__text  -[_PHFetchRequestWrapper .cxx_destruct]
+0x199a32e94  __TEXT,__text  ___67+[PHAssetCollection fetchAssetCollectionsWithType:subtype:options:]_block_invoke
+0x199a3303c  __TEXT,__text  +[PHQuery queryForAssetCollectionsWithType:subtype:options:]
+0x199a33e74  __TEXT,__text  __fetchTypeForAssetCollectionTypeAndSubtype
+0x199a33f94  __TEXT,__text  -[PHBatchFetchingArray .cxx_destruct]
+0x199a34054  __TEXT,__text  -[PHSearchQueryManager initWithPhotoLibrary:]
+0x199a341d4  __TEXT,__text  -[PHSearchQueryManager photoLibrary]
+0x199a341dc  __TEXT,__text  +[PHMemory managedObjectSupportsTrashedState]
+0x199a341e4  __TEXT,__text  -[PHPhotoLibrary stateCaptureDictionary]
+0x199a34368  __TEXT,__text  +[PHMemory propertyFetchHintsForPropertySets:]
+0x199a34434  __TEXT,__text  -[PHFetchResult prefetchObjectsAtIndexes:]
+0x199a34488  __TEXT,__text  -[PHPhotoLibrary backgroundQueueObjectFetchingPhotoLibrary]
+0x199a344d0  __TEXT,__text  ___50-[PHPhotoLibrary initWithPhotoLibraryBundle:type:]_block_invoke_6
+0x199a34530  __TEXT,__text  +[PHMemory propertiesToFetchWithHint:]
+0x199a34664  __TEXT,__text  ___38+[PHMemory propertiesToFetchWithHint:]_block_invoke
+0x199a346b8  __TEXT,__text  +[PHMemory _composePropertiesToFetchWithHint:]
+0x199a3477c  __TEXT,__text  ___49-[PHBatchFetchingArray prefetchObjectsAtIndexes:]_block_invoke
+0x199a3481c  __TEXT,__text  ___49-[PHPTPAssetManager cameraWatcherDidChangeState:]_block_invoke
+0x199a34860  __TEXT,__text  ___50-[PHChangeHandlingDebugger stateCaptureDictionary]_block_invoke_2
+0x199a34888  __TEXT,__text  ___50-[PHChangeHandlingDebugger stateCaptureDictionary]_block_invoke
+0x199a348b0  __TEXT,__text  +[PHEntityKeyMap assertPropertyKey:doesNotExistForEntityKey:inEntityKeysByProperty:]
+0x199a349b8  __TEXT,__text  -[PHChangeHandlingDebugger stateCaptureDictionary]
+0x199a34c78  __TEXT,__text  -[PHChangeHandlingDebugger formattedStringFromTimestamp:]
+0x199a34d14  __TEXT,__text  +[PHObject identifierPropertiesToFetch]
+0x199a34d48  __TEXT,__text  ___39+[PHObject identifierPropertiesToFetch]_block_invoke
+0x199a34de4  __TEXT,__text  ___33+[PHMemory corePropertiesToFetch]_block_invoke
+0x199a35014  __TEXT,__text  +[PHMemory corePropertiesToFetch]
+0x199a350a8  __TEXT,__text  +[PHObject extendPropertiesToFetch:withPropertySetClass:]
+0x199a353f0  __TEXT,__text  +[PHMemoryUserFeedbackProperties isToMany]
+0x199a353f8  __TEXT,__text  +[PHAsset managedObjectSupportsBursts]
+0x199a35400  __TEXT,__text  -[PHAssetCollection isUserSmartAlbum]
+0x199a35424  __TEXT,__text  -[PHPhotoLibraryChangeObserverRegistrar countOfRegisteredFetchResults]
+0x199a354e4  __TEXT,__text  ___70-[PHPhotoLibraryChangeObserverRegistrar countOfRegisteredFetchResults]_block_invoke
+0x199a3551c  __TEXT,__text  +[PHAsset managedObjectSupportsAdjustments]
+0x199a35524  __TEXT,__text  +[PHObject extendPropertiesToFetch:withProperties:]
+0x199a35644  __TEXT,__text  +[PHAsset managedObjectSupportsSavedAssetType]
+0x199a3564c  __TEXT,__text  +[PHAsset managedObjectSupportsSensitivityAnalysis]
+0x199a35654  __TEXT,__text  +[PHAsset propertyFetchHintsForPropertySets:]
+0x199a356b8  __TEXT,__text  -[PHCachingImageManager init]
+0x199a35884  __TEXT,__text  -[PHImageCache init]
+0x199a359a0  __TEXT,__text  +[PHFetchResultMediaTypeCounts mediaTypeCountsWithPhotosCount:videosCount:audiosCount:]
+0x199a35a04  __TEXT,__text  -[PHFetchResult initWithMediaTypeCounts:library:]
+0x199a35a5c  __TEXT,__text  +[PHAsset fetchType]
+0x199a35a68  __TEXT,__text  -[PHFetchResult countByEnumeratingWithState:objects:count:]
+0x199a35ac0  __TEXT,__text  +[PHSmartAlbum albumKindFromSmartAlbumSubtype:]
+0x199a35d64  __TEXT,__text  -[PHFetchOptions hasAnySortDescriptors]
+0x199a35dd0  __TEXT,__text  +[PHAssetCollection managedObjectSupportsTrashedState]
+0x199a35dd8  __TEXT,__text  +[PHAssetCollection managedEntityName]
+0x199a35de4  __TEXT,__text  +[PHAssetCollection propertiesToFetchWithHint:]
+0x199a35f18  __TEXT,__text  -[PHAssetCollection alwaysRecalculateCounts]
+0x199a35f58  __TEXT,__text  -[PHAssetCollection estimatedAssetCount]
+0x199a35f6c  __TEXT,__text  -[PHAssetCollection estimatedPhotosCount]
+0x199a35f80  __TEXT,__text  -[PHAssetCollection estimatedVideosCount]
+0x199a35f94  __TEXT,__text  -[PHObject hash]
+0x199a35fcc  __TEXT,__text  -[PHAssetCollection identifier]
+0x199a36028  __TEXT,__text  -[PHObject identifier]
+0x199a360b4  __TEXT,__text  -[PHObject copyWithZone:]
+0x199a360b8  __TEXT,__text  -[PHAssetCollection keyAssetsAtEnd]
+0x199a36138  __TEXT,__text  +[PHAsset fetchAssetsInAssetCollection:options:]
+0x199a363e0  __TEXT,__text  -[PHQuery fetchOptions]
+0x199a363e8  __TEXT,__text  +[PHAsset managedEntityName]
+0x199a363f4  __TEXT,__text  +[PHAsset managedObjectSupportsTrashedState]
+0x199a363fc  __TEXT,__text  +[PHAsset managedObjectSupportsHiddenState]
+0x199a36404  __TEXT,__text  +[PHAsset managedObjectSupportsAllowedForAnalysis]
+0x199a3640c  __TEXT,__text  +[PHAsset managedObjectSupportsContributor]
+0x199a36414  __TEXT,__text  +[PHAsset managedObjectSupportsVisibilityState]
+0x199a3641c  __TEXT,__text  +[PHAsset managedObjectSupportsDuplicateVisibilityState]
+0x199a36424  __TEXT,__text  +[PHAsset managedObjectSupportsAssetStacks]
+0x199a3642c  __TEXT,__text  -[PHImageCacheEntry init]
+0x199a36498  __TEXT,__text  +[PHAsset managedObjectSupportsMontage]
+0x199a364a0  __TEXT,__text  +[PHAsset managedObjectSupportsScreenshot]
+0x199a364a8  __TEXT,__text  +[PHAsset _extendedPropertyFetchHintsForPropertySets:]
+0x199a36c64  __TEXT,__text  -[PHMemory initWithFetchDictionary:propertyHint:photoLibrary:]
+0x199a373b4  __TEXT,__text  +[PHSafeNSCacheDelegateReflector setDelegate:forCache:]
+0x199a37424  __TEXT,__text  ___48+[PHSafeNSCacheDelegateReflector sharedInstance]_block_invoke
+0x199a374c4  __TEXT,__text  -[PHSafeNSCacheDelegateReflector init]
+0x199a375ac  __TEXT,__text  ___55-[PHSafeNSCacheDelegateReflector setDelegate:forCache:]_block_invoke
+0x199a375ec  __TEXT,__text  +[PHCollection fetchCollectionsInCollectionList:options:]
+0x199a377a4  __TEXT,__text  -[PHFetchOptions setInternalInclusionPredicate:]
+0x199a377b0  __TEXT,__text  -[PHCollectionList collectionListType]
+0x199a377c4  __TEXT,__text  _PHQueryForCollectionsInFolder_block_invoke_5
+0x199a37914  __TEXT,__text  -[PHFetchOptions internalInclusionPredicate]
+0x199a3791c  __TEXT,__text  -[PHQuery collectionFetchType]
+0x199a37974  __TEXT,__text  -[PHFetchOptions excludeSensitiveAndUnprocessedAssets]
+0x199a3797c  __TEXT,__text  +[PHCollection managedEntityName]
+0x199a37988  __TEXT,__text  -[PHFetchResult fetchedObjectIDs]
+0x199a379dc  __TEXT,__text  +[PHCollection managedObjectSupportsTrashedState]
+0x199a379e4  __TEXT,__text  -[PHCollection isUserSmartAlbum]
+0x199a379ec  __TEXT,__text  +[PHAssetAddedDateProperties propertiesToFetch]
+0x199a37a20  __TEXT,__text  -[PHCollectionList effectiveCustomSortDescriptors]
+0x199a37a84  __TEXT,__text  ___47+[PHAssetAddedDateProperties propertiesToFetch]_block_invoke
+0x199a37b14  __TEXT,__text  +[PHAssetCreationDateProperties propertiesToFetch]
+0x199a37b48  __TEXT,__text  -[PHCollection customSortKey]
+0x199a37b5c  __TEXT,__text  ___50+[PHAssetCreationDateProperties propertiesToFetch]_block_invoke
+0x199a37bec  __TEXT,__text  -[PHCollectionList collectionListSubtype]
+0x199a37c00  __TEXT,__text  -[PHPhotoLibrary appPrivateData]
+0x199a37c08  __TEXT,__text  ___47+[PHAssetCollection propertiesToFetchWithHint:]_block_invoke
+0x199a37c5c  __TEXT,__text  +[PHAssetCollection _composePropertiesToFetchWithHint:]
+0x199a37cec  __TEXT,__text  +[PHAssetCollection corePropertiesToFetch]
+0x199a37d20  __TEXT,__text  ___42+[PHAssetCollection corePropertiesToFetch]_block_invoke
+0x199a37e64  __TEXT,__text  +[PHKeyword fetchKeywordsWithOptions:]
+0x199a37e78  __TEXT,__text  ___38+[PHKeyword fetchKeywordsWithOptions:]_block_invoke
+0x199a37ec4  __TEXT,__text  -[PHPhotoLibraryFeatureAvailabilityReporter availabilityForFeature:completionHandler:]
+0x199a37f6c  __TEXT,__text  -[PHFeatureAvailabilityReadOptions validateSpotlightAvailability]
+0x199a37f74  __TEXT,__text  -[PHFetchOptions photoLibrary]
+0x199a37f7c  __TEXT,__text  +[PHKeyword managedEntityName]
+0x199a37f88  __TEXT,__text  -[PHPhotoLibrary(FeatureAvailability) featureAvailabilityForFeature:readOptions:error:]
+0x199a37f94  __TEXT,__text  +[PHObject managedObjectSupportsTrashedState]
+0x199a37f9c  __TEXT,__text  -[PHFeatureAvailability initForFeature:]
+0x199a37fa4  __TEXT,__text  -[PHFeatureAvailability initForFeature:withPLFeatureAvailability:]
+0x199a38214  __TEXT,__text  -[PHBatchFetchingArray copyWithZone:]
+0x199a38218  __TEXT,__text  +[PHKeyword propertiesToFetchWithHint:]
+0x199a3824c  __TEXT,__text  -[PHFeatureAvailability isAvailable]
+0x199a38254  __TEXT,__text  ___39+[PHKeyword propertiesToFetchWithHint:]_block_invoke
+0x199a38310  __TEXT,__text  -[PHKeyword initWithFetchDictionary:propertyHint:photoLibrary:]
+0x199a383e0  __TEXT,__text  -[PHKeyword shortcut]
+0x199a383f4  __TEXT,__text  -[PHAsset _createPropertyObjectOfClass:preFetchedProperties:]
+0x199a38b6c  __TEXT,__text  _sSharedTable
+0x199a38ba0  __TEXT,__text  -[PHAssociatedObjectsTable setAssociatedObjectIfNotSet:onObject:forKey:]
+0x199a38ce4  __TEXT,__text  -[PHAssociatedObjectsTable _entryForObjectCreatingIfNecessary:]
+0x199a38e04  __TEXT,__text  -[PHAssociatedObjectsTable _runWithLockedBucketForObject:block:]
+0x199a38ea0  __TEXT,__text  ___63-[PHAssociatedObjectsTable _entryForObjectCreatingIfNecessary:]_block_invoke
+0x199a38f3c  __TEXT,__text  -[PHAssociatedObjectsEntry init]
+0x199a38fac  __TEXT,__text  -[PHAssociatedObjectsEntry setAssociatedObjectIfNotSet:forKey:]
+0x199a39044  __TEXT,__text  -[PHAsset isMediaSubtype:]
+0x199a390ec  __TEXT,__text  +[PHAsset fetchAssetsWithOptions:]
+0x199a39100  __TEXT,__text  -[PHAssetCollection(Curated) supportsFastKeyAssetCuration]
+0x199a39124  __TEXT,__text  -[PHFetchOptions mergeWithFetchOptions:]
+0x199a39eb0  __TEXT,__text  _PHPredicateByCombiningPredicatesWithAnd_block_invoke
+0x199a39f8c  __TEXT,__text  _PHPredicateByCombiningPredicatesWithOr_block_invoke_2
+0x199a3a068  __TEXT,__text  -[PHMemory(Transient) isTransient]
+0x199a3a084  __TEXT,__text  +[PHObject internalSortDescriptorForPropertyKey:ascending:]
+0x199a3a0fc  __TEXT,__text  +[PHAsset entityKeyMap]
+0x199a3a17c  __TEXT,__text  -[PHQuery photoLibrary]
+0x199a3a188  __TEXT,__text  +[PHQuery _containerIdentifierForFetchType:predicate:outRelationship:]
+0x199a3a364  __TEXT,__text  -[PHFigDecoder decodeImageFromData:orFileURL:options:completion:]
+0x199a3ae88  __TEXT,__text  __figDecodeOptionsFromContext
+0x199a3b8d4  __TEXT,__text  -[PHResourceChooserListResourceInfo .cxx_destruct]
+0x199a3b918  __TEXT,__text  ___51-[PHMediaRequestContext _registerAndStartRequests:]_block_invoke
+0x199a3b920  __TEXT,__text  -[PHFetchResult objectAtIndexedSubscript:]
+0x199a3b968  __TEXT,__text  -[PHCachingImageManager mediaRequestContext:isQueryingCacheForRequest:didWait:didFindImage:resultHandler:]
+0x199a3bb60  __TEXT,__text  __buildCacheKey
+0x199a3bc88  __TEXT,__text  +[PHAsset(Curated) fetchKeyCuratedAssetInAssetCollection:referenceAsset:options:]
+0x199a3bedc  __TEXT,__text  ___34+[PHAsset fetchAssetsWithOptions:]_block_invoke
+0x199a3bf28  __TEXT,__text  -[PHImageCache queryEntryForKey:didWaitForInFlightRequest:didFindImage:entryIsValidBlock:resultHandler:]
+0x199a3c094  __TEXT,__text  ___106-[PHCachingImageManager mediaRequestContext:isQueryingCacheForRequest:didWait:didFindImage:resultHandler:]_block_invoke
+0x199a3c1d0  __TEXT,__text  -[PHImageRequest startRequest]
+0x199a3cde4  __TEXT,__text  -[PHImageResourceChooser _reset]
+0x199a3d010  __TEXT,__text  -[PHAsset hasAdjustments]
+0x199a3d02c  __TEXT,__text  ___23+[PHAsset entityKeyMap]_block_invoke
+0x199a3d6e0  __TEXT,__text  -[PHFetchOptions wantsIncrementalChangeDetails]
+0x199a3d6f4  __TEXT,__text  ___40+[PHQuery _isKindOfMomentOrAlbumEntity:]_block_invoke
+0x199a3da28  __TEXT,__text  -[PHEntityKeyMap initWithPropertyKeysByEntityKey:]
+0x199a3dac0  __TEXT,__text  -[PHResourceChooserList continueEnumeratingWithSourceOptions:]
+0x199a3dac8  __TEXT,__text  -[PHAssociatedObjectsTable _entryForObject:]
+0x199a3de50  __TEXT,__text  ____presentResourcesFromHintsUntilStop_block_invoke
+0x199a3e108  __TEXT,__text  ___55-[PHImageResourceChooser presentNextQualifyingResource]_block_invoke
+0x199a3e61c  __TEXT,__text  +[PHImageResourceChooserPolicyHandler qualifyResourceInfo:againstPolicy:requestInfo:reversed:tooLargeForPolicy:disqualificationReason:]
+0x199a3e9e8  __TEXT,__text  -[PHAssociatedObjectsTable associatedObjectOnObject:forKey:]
+0x199a3eb10  __TEXT,__text  -[PHAsset isRAWPlusJPEG]
+0x199a3eb34  __TEXT,__text  ___47+[PHPhotosHighlight propertiesToFetchWithHint:]_block_invoke
+0x199a3ee08  __TEXT,__text  +[PHQuery _relationshipForFetchType:predicate:]
+0x199a3f010  __TEXT,__text  -[PHAsset RAWBadgeAttributes]
+0x199a3f028  __TEXT,__text  -[PHAssetID .cxx_destruct]
+0x199a3f078  __TEXT,__text  -[PHFetchOptions includeCollectionShareAssets]
+0x199a3fa80  __TEXT,__text  -[PHAssociatedObjectsEntry associatedObjectForKey:]
+0x199a3faec  __TEXT,__text  -[PHFetchResult enumerateObjectsUsingBlock:]
+0x199a3fb40  __TEXT,__text  -[PHImageDecoderOptions init]
+0x199a3fb90  __TEXT,__text  __decodeCallback
+0x199a3fef8  __TEXT,__text  -[PHAsset _setupProvenanceStateFromFetchDictionary:]
+0x199a3ff60  __TEXT,__text  +[PHPerson fetchPersonsWithUserFeedbackWithOptions:]
+0x199a3ff74  __TEXT,__text  ___52+[PHPerson fetchPersonsWithUserFeedbackWithOptions:]_block_invoke
+0x199a3ffe0  __TEXT,__text  ____loadImageFromStoreAndKey_block_invoke
+0x199a403e8  __TEXT,__text  ____chooserDidPresentLocallyAvailableBag_block_invoke
+0x199a40f20  __TEXT,__text  ___44-[PHAssociatedObjectsTable _entryForObject:]_block_invoke
+0x199a40f64  __TEXT,__text  +[PHPerson managedEntityName]
+0x199a40f70  __TEXT,__text  -[PHMediaRequestContext shouldReportProgress]
+0x199a40fa4  __TEXT,__text  +[PHPerson propertiesToFetchWithHint:]
+0x199a410d8  __TEXT,__text  -[PHMediaRequestContext requestWithIdentifier:didReportProgress:completed:error:]
+0x199a41300  __TEXT,__text  ___38+[PHPerson propertiesToFetchWithHint:]_block_invoke
+0x199a41354  __TEXT,__text  -[PHAsset representsBurst]
+0x199a41394  __TEXT,__text  __finishRequest
+0x199a417a4  __TEXT,__text  +[PHPerson _composePropertiesToFetchWithHint:]
+0x199a41868  __TEXT,__text  -[PHMediaRequestContext _produceChildRequestsForRequest:withResult:]
+0x199a418e8  __TEXT,__text  -[PHAsset avalanchePickType]
+0x199a418fc  __TEXT,__text  +[PHPerson identifierPropertiesToFetch]
+0x199a41930  __TEXT,__text  -[PHImageRequestContext processMediaResult:forRequest:]
+0x199a4202c  __TEXT,__text  ___39+[PHPerson identifierPropertiesToFetch]_block_invoke
+0x199a420c8  __TEXT,__text  -[PHFetchResult copyWithZone:]
+0x199a420cc  __TEXT,__text  ___89-[PHImageManager requestNewCGImageForAsset:targetSize:contentMode:options:resultHandler:]_block_invoke
+0x199a426b8  __TEXT,__text  -[PHFetchResult objectAtIndex:]
+0x199a42700  __TEXT,__text  -[PHCompositeMediaResult isInCloud]
+0x199a42708  __TEXT,__text  -[PHImageManager mediaRequestContextDidFinish:]
+0x199a42934  __TEXT,__text  ___33+[PHPerson corePropertiesToFetch]_block_invoke
+0x199a42a84  __TEXT,__text  -[PHAsset mediaSubtypes]
+0x199a42a98  __TEXT,__text  -[PHAsset isFavorite]
+0x199a42aac  __TEXT,__text  -[PHImageRequestContext .cxx_destruct]
+0x199a42b44  __TEXT,__text  +[PHPerson corePropertiesToFetch]
+0x199a42b8c  __TEXT,__text  -[PHMediaRequestContext .cxx_destruct]
+0x199a42c2c  __TEXT,__text  -[PHAsset isGuestAsset]
+0x199a42c70  __TEXT,__text  -[PHAsset _setupSpatialTypeFromFetchDictionary:]
+0x199a42ce8  __TEXT,__text  -[PHImageRequestOptions .cxx_destruct]
+0x199a42d38  __TEXT,__text  -[PHAsset savedAssetType]
+0x199a42d4c  __TEXT,__text  -[PHAsset participatesInLibraryScope]
+0x199a42d60  __TEXT,__text  -[PHAsset _setupHDRAndDepthMediaSubtypesFromFetchDictionary:]
+0x199a42f48  __TEXT,__text  __cleanupContext
+0x199a42fd8  __TEXT,__text  -[PHMediaRequest dealloc]
+0x199a43024  __TEXT,__text  -[PHAsset duration]
+0x199a43038  __TEXT,__text  -[PHAsset _setupAnalysisScoreAttributesFromFetchDictionary:]
+0x199a43108  __TEXT,__text  -[PHFetchResult thumbnailAssets]
+0x199a43200  __TEXT,__text  -[PHAsset _setupBadgeAttributesFromFetchDictionary:]
+0x199a432d8  __TEXT,__text  -[PHImageRequest .cxx_destruct]
+0x199a43394  __TEXT,__text  -[PHImageResourceChooser .cxx_destruct]
+0x199a43404  __TEXT,__text  -[PHAsset thumbnailIndex]
+0x199a43418  __TEXT,__text  -[PHAsset _setupSmartStyleFromFetchDictionary:]
+0x199a4348c  __TEXT,__text  -[PHResourceChooserList .cxx_destruct]
+0x199a4350c  __TEXT,__text  -[PHAsset complete]
+0x199a43520  __TEXT,__text  -[PHAsset _createExtendedPropertySetsIfNeededWithPropertyHint:fetchDictionary:]
+0x199a43a78  __TEXT,__text  +[PHSensitiveContentAnalysisUtility obscureThumbnailDataIfSensitiveFromThumbnailData:outThumbnailData:forThumbnailAsset:]
+0x199a43b0c  __TEXT,__text  -[PHImageResourceChooserRequestInfo .cxx_destruct]
+0x199a43b5c  __TEXT,__text  -[PHImageResult dealloc]
+0x199a43bb4  __TEXT,__text  -[PHAsset _attachPropertyObjectOfClass:preFetchedProperties:]
+0x199a43c20  __TEXT,__text  +[PHSensitiveContentAnalysisUtility assetNeedsThumbnailSensitivityProcessing:]
+0x199a43c2c  __TEXT,__text  -[PHImageResult .cxx_destruct]
+0x199a43c74  __TEXT,__text  +[PHSensitiveContentAnalysisUtility _assetNeedsSensitivityProcessing:forThumbnail:forPickerSharing:]
+0x199a43dbc  __TEXT,__text  -[PHCompositeMediaResult .cxx_destruct]
+0x199a43df4  __TEXT,__text  -[PHAsset sourceType]
+0x199a43e30  __TEXT,__text  -[PHMediaRequest .cxx_destruct]
+0x199a43ea0  __TEXT,__text  +[PHSensitiveContentAnalysisUtility _obscureImageManagerResultOrThumbnailDataIfSensitive:outResult:infoDictionary:outInfoDictionary:forRequestFromAsset:applyLiveBlurIfSensitive:assetNeedsProcessing:]
+0x199a440dc  __TEXT,__text  -[PHImageDecoderAsyncDecodeRequestHandle dealloc]
+0x199a44128  __TEXT,__text  +[PHSensitiveContentAnalysisUtility isContentPreviewableForAsset:outError:]
+0x199a44134  __TEXT,__text  +[PHSensitiveContentAnalysisUtility _isContentPreviewableForAsset:forPickerSharing:outError:]
+0x199a441e0  __TEXT,__text  -[PHImageDecoderAsyncDecodeRequestHandle .cxx_destruct]
+0x199a441ec  __TEXT,__text  ___90-[PHCachingImageManager additionalWorkForImageRequestCompletedWithResult:request:context:]_block_invoke
+0x199a44348  __TEXT,__text  -[PHMediaRequest asset]
+0x199a44350  __TEXT,__text  -[PHCachingImageManager _cacheImageResult:forRequest:]
+0x199a445f8  __TEXT,__text  +[PHAsset fetchKeyAssetsInAssetCollection:options:]
+0x199a4470c  __TEXT,__text  -[PHAssetCollection isPrivacySensitiveAlbum]
+0x199a44764  __TEXT,__text  -[PHAssetCollection canContainCustomKeyAssets]
+0x199a44798  __TEXT,__text  -[PHFetchOptions internalSortDescriptors]
+0x199a447a0  __TEXT,__text  +[PHFetchResult cleanedAndSortedOIDsFrom:usingFetchOptions:]
+0x199a44a24  __TEXT,__text  -[PHCompositeMediaResult sanitizedInfoDictionary]
+0x199a44c84  __TEXT,__text  -[PHFetchOptions setIncludeGuestAssets:]
+0x199a44d40  __TEXT,__text  ___84-[PHImageManager requestImageForAsset:targetSize:contentMode:options:resultHandler:]_block_invoke
+0x199a44df8  __TEXT,__text  -[PHFetchResultChangeDetails dealloc]
+0x199a44e4c  __TEXT,__text  -[PHFetchResultChangeDetails .cxx_destruct]
+0x199a44ed8  __TEXT,__text  -[PHMediaRequest isCancelled]
+0x199a44f14  __TEXT,__text  -[PHMediaRequestContext imageRequest:isQueryingCacheAndDidWait:didFindImage:resultHandler:]
+0x199a44fa0  __TEXT,__text  -[PHAsset isPartOfBurst]
+0x199a44fa8  __TEXT,__text  -[PHMediaRequestContext delegate]
+0x199a44fc8  __TEXT,__text  -[PHAssetSpatialMediaProperties initWithFetchDictionary:asset:prefetched:]
+0x199a4506c  __TEXT,__text  -[PHMediaRequest requestID]
+0x199a45074  __TEXT,__text  -[PHFetchOptions isExclusivePredicate]
+0x199a4507c  __TEXT,__text  -[PHFetchOptions customObjectIDSortOrder]
+0x199a45084  __TEXT,__text  -[PHAsset _setupFileSystemAttributesFromFetchDictionary:]
+0x199a45110  __TEXT,__text  -[PHThumbnailAsset initWithObjectID:knownKeysDictionary:photoLibrary:]
+0x199a451cc  __TEXT,__text  -[PHFetchOptions cacheSizeForFetch]
+0x199a451d4  __TEXT,__text  -[PHMediaRequestContext mediaRequest:didReportProgress:]
+0x199a45258  __TEXT,__text  -[PHImageResult setImageRef:]
+0x199a4529c  __TEXT,__text  -[PHMediaRequest delegate]
+0x199a452bc  __TEXT,__text  -[PHAsset deferredProcessingNeeded]
+0x199a452d0  __TEXT,__text  -[PHMediaRequestContext asset]
+0x199a452d8  __TEXT,__text  -[PHAsset adjustmentVersion]
+0x199a4532c  __TEXT,__text  -[PHAsset adjustmentTimestamp]
+0x199a45340  __TEXT,__text  -[PHImageCache populateEntryWithImage:requestID:forKey:additionalInfo:]
+0x199a454a0  __TEXT,__text  -[PHAsset pixelWidth]
+0x199a454b4  __TEXT,__text  -[PHAsset pixelHeight]
+0x199a454c8  __TEXT,__text  -[PHAsset unorientedSize]
+0x199a45524  __TEXT,__text  +[PHObject localIdentifierWithUUID:]
+0x199a455a8  __TEXT,__text  +[PHAssetCollection identifierCode]
+0x199a455b4  __TEXT,__text  -[PHFetchOptions setVerifiedPersonTypes:]
+0x199a455bc  __TEXT,__text  -[PHImageDecoderAsyncDecodeRequestHandle figRequestID]
+0x199a455c4  __TEXT,__text  -[PHAsset imageRequestHints]
+0x199a455d8  __TEXT,__text  -[PHQuery effectivePredicateForPHClass:includingBasePredicate:]
+0x199a45cc0  __TEXT,__text  -[PHCompositeMediaResult errorInfoKey]
+0x199a45ccc  __TEXT,__text  -[PHFetchOptions suppressSlowFetchReports]
+0x199a45cd4  __TEXT,__text  -[PHPhotosHighlight initWithFetchDictionary:propertyHint:photoLibrary:]
+0x199a46924  __TEXT,__text  +[PHFetchResultChangeDetails changeDetailsFromFetchResult:toFetchResult:changedObjects:]
+0x199a469cc  __TEXT,__text  -[PHImageResult isPlaceholder]
+0x199a469e0  __TEXT,__text  -[PHImageRequestContext _isVideoFrameRequest]
+0x199a46a50  __TEXT,__text  -[PHFetchResultChangeDetails shouldReload]
+0x199a46a58  __TEXT,__text  -[PHImageRequestOptions isNetworkAccessAllowed]
+0x199a46a60  __TEXT,__text  -[PHImageResourceChooser setDesiredSize:]
+0x199a46a9c  __TEXT,__text  -[PHCompositeMediaResult error]
+0x199a46aac  __TEXT,__text  -[PHImageManager _runBlockOnAppropriateResultQueueOrSynchronouslyWithRequest:options:block:]
+0x199a46b44  __TEXT,__text  -[PHCachingImageManager additionalWorkForImageRequestCompletedWithResult:request:context:]
+0x199a46c14  __TEXT,__text  -[PHImageRequestBehaviorSpec choosingPolicy]
+0x199a46c1c  __TEXT,__text  -[PHResourceChooserListResourceInfo isHintBased]
+0x199a46c24  __TEXT,__text  -[PHAsset isVideo]
+0x199a46c44  __TEXT,__text  -[PHImageResourceChooserRequestInfo behaviorSpec]
+0x199a46c4c  __TEXT,__text  -[PHImageRequestBehaviorSpec includeHDRGainMap]
+0x199a46c54  __TEXT,__text  -[PHImageDecoderOptions setHighPriority:]
+0x199a46c5c  __TEXT,__text  -[PHMediaRequestContext mediaRequest:didFindLocallyAvailableResult:isDegraded:]
+0x199a46ca4  __TEXT,__text  ___31-[PHBatchFetchingArray oidsSet]_block_invoke
+0x199a46d24  __TEXT,__text  -[PHFetchOptions setInternalSortDescriptors:]
+0x199a46d30  __TEXT,__text  -[PHCompositeMediaResult clearError]
+0x199a46d38  __TEXT,__text  -[PHPhotoLibrary backgroundQueuePhotoLibrary]
+0x199a46d80  __TEXT,__text  ___57-[PHPhotoLibrary fetchedObjectsForOIDs:propertySetClass:]_block_invoke
+0x199a46e44  __TEXT,__text  -[PHMediaRequestContext mediaRequest:didFinishWithResult:]
+0x199a470d8  __TEXT,__text  +[PHPerson fetchVerifiedPersonUUIDsGroupedByAssetUUIDForAssetUUIDs:options:]
+0x199a47244  __TEXT,__text  -[PHMediaRequest identifierString]
+0x199a472b4  __TEXT,__text  -[PHImageRequestContext produceChildRequestsForRequest:reportingIsLocallyAvailable:isDegraded:result:]
+0x199a47580  __TEXT,__text  -[PHMediaRequestContext _registerAndStartRequests:]
+0x199a47970  __TEXT,__text  +[PHFetchResult _batchFetchingArrayForObjectIDs:fetchResult:]
+0x199a47be0  __TEXT,__text  +[PHAssetPropertySet isToMany]
+0x199a47be8  __TEXT,__text  ___54+[PHAssetOriginalMetadataProperties propertiesToFetch]_block_invoke
+0x199a47cbc  __TEXT,__text  -[PHCachingImageManager _canPopulateCacheForResult:]
+0x199a47d20  __TEXT,__text  +[PHAssetPropertySet keyPathFromPrimaryObject]
+0x199a47d2c  __TEXT,__text  -[PHImageDisplaySpec contentMode]
+0x199a47d34  __TEXT,__text  -[PHImageRequestBehaviorSpec isSynchronous]
+0x199a47d3c  __TEXT,__text  -[PHImageRequestBehaviorSpec onlyUseFetchedAssetPropertiesDuringChoosing]
+0x199a47d44  __TEXT,__text  -[PHImageRequestBehaviorSpec version]
+0x199a47d4c  __TEXT,__text  +[PHImageResourceChooserPolicyHandler _passesSquareTableThumbnailTestWithKey:pixelSize:storeClassID:loadingOptions:]
+0x199a47dbc  __TEXT,__text  -[PHObject isEqual:]
+0x199a47e74  __TEXT,__text  -[PHPhotosHighlight isEqual:]
+0x199a47efc  __TEXT,__text  -[PHImageResult sanitizedInfoDictionary]
+0x199a48004  __TEXT,__text  -[PHLocallyAvailableResourceBag isDerivedFromDeferredPreview]
+0x199a4800c  __TEXT,__text  -[PHImageDecoderOptions allowFallbackDecoder]
+0x199a48014  __TEXT,__text  -[PHPhotoLibrary libraryID]
+0x199a48058  __TEXT,__text  -[PHBatchFetchedAssetPropertySet initWithObjectID:knownKeysDictionary:photoLibrary:]
+0x199a480f0  __TEXT,__text  -[PHQuery _setIdentificationBlock:]
+0x199a48124  __TEXT,__text  -[PHFetchOptions sortDescriptors]
+0x199a4812c  __TEXT,__text  -[PHBatchFetchedAssetPropertySet objectID]
+0x199a48134  __TEXT,__text  -[PHAssetCreationDateProperties creationDate]
+0x199a48178  __TEXT,__text  +[PHLibraryScope entityKeyMap]
+0x199a481f8  __TEXT,__text  -[PHBatchFetchedAssetPropertySet knownKeysDictionary]
+0x199a48200  __TEXT,__text  ___30+[PHLibraryScope entityKeyMap]_block_invoke
+0x199a486b4  __TEXT,__text  ___50-[PHMediaRequest recordMetricsWithMetricsHandler:]_block_invoke_2
+0x199a48754  __TEXT,__text  +[PHObject fetchPredicateFromComparisonPredicate:options:]
+0x199a48c74  __TEXT,__text  -[PHObject dealloc]
+0x199a48cbc  __TEXT,__text  ____loadImageFromStoreAndKey_block_invoke.205
+0x199a48cc4  __TEXT,__text  -[PHQuery _setContainerCollection:]
+0x199a48cd0  __TEXT,__text  -[PHAssociatedObjectsTable removeAllAssociatedObjectsOnObject:]
+0x199a48e40  __TEXT,__text  ___50-[PHPhotoLibrary initWithPhotoLibraryBundle:type:]_block_invoke_14
+0x199a48ebc  __TEXT,__text  -[PHBatchFetchingArray _phObjectAtIndex:]
+0x199a48f2c  __TEXT,__text  -[PHAsset _setupAuxiliaryIdentifierAttributesFromFetchDictionary:]
+0x199a48ff0  __TEXT,__text  -[PHAsset initWithFetchDictionary:propertyHint:photoLibrary:]
+0x199a4952c  __TEXT,__text  -[PHPhotoLibrary cacheMetricsCollector]
+0x199a49534  __TEXT,__text  -[PHPhotoLibrary assetsdClient]
+0x199a4953c  __TEXT,__text  -[PHFetchResult fetchSortDescriptors]
+0x199a4957c  __TEXT,__text  -[PHImageRequestOptions resultHandlerQueue]
+0x199a49584  __TEXT,__text  -[PHManualFetchResult objects]
+0x199a49594  __TEXT,__text  -[PHBatchFetchingArray _prepareObjectsByOIDsFromOIDsToFetch:andUpdateUUIDsByOIDsForRestrictedObjectsUsingFetchedObjects:]
+0x199a49888  __TEXT,__text  -[PHFetchOptions setPhotoLibrary:]
+0x199a49894  __TEXT,__text  -[PHAsset _isPartOfAvalancheWithKind:]
+0x199a498d0  __TEXT,__text  -[PHAsset _setupGeometryAttributesFromFetchDictionary:]
+0x199a49a3c  __TEXT,__text  -[PHObject localIdentifier]
+0x199a49a94  __TEXT,__text  -[PHImageRequestOptions progressHandler]
+0x199a49a9c  __TEXT,__text  +[PHAsset _isLivePhotoWithPhotoIris:hasAdjustments:videoCpDuration:videoCPVisibility:sourceType:]
+0x199a49b04  __TEXT,__text  -[PHAsset _setupLocationAndCreationDateAttributesFromFetchDictionary:]
+0x199a49c0c  __TEXT,__text  ___53+[PHLibraryScope fetchActiveLibraryScopeWithOptions:]_block_invoke
+0x199a49c58  __TEXT,__text  _PHIsExpressionMatchingTypeOrAggregateMatchingType
+0x199a49dc8  __TEXT,__text  +[PHAsset _composePropertiesToFetchWithHint:]
+0x199a4a470  __TEXT,__text  -[PHAsset locationCoordinate]
+0x199a4a484  __TEXT,__text  -[PHAssetCollection .cxx_destruct]
+0x199a4a65c  __TEXT,__text  -[PHCollection .cxx_destruct]
+0x199a4a6b8  __TEXT,__text  -[PHObject .cxx_destruct]
+0x199a4a6fc  __TEXT,__text  -[PHAsset .cxx_destruct]
+0x199a4a898  __TEXT,__text  -[PHFetchOptions chunkSizeForFetch]
+0x199a4a8a0  __TEXT,__text  -[PHFetchOptions relatedEntityName]
+0x199a4a8a8  __TEXT,__text  -[PHBatchFetchingArray initWithOIDs:options:photoLibrary:]
+0x199a4a8ac  __TEXT,__text  +[PHFetchResult fetchObjectIDs:inManagedObjectContext:]
+0x199a4ac6c  __TEXT,__text  -[PHQuery setFetchOptions:]
+0x199a4acec  __TEXT,__text  -[PHFetchOptions reverseSortOrder]
+0x199a4acf4  __TEXT,__text  +[PHQuery queryForType:withBasePredicate:inLibrary:]
+0x199a4ad6c  __TEXT,__text  ___63-[PHAssociatedObjectsTable removeAllAssociatedObjectsOnObject:]_block_invoke
+0x199a4add4  __TEXT,__text  -[PHBatchFetchingArrayFetchedClass .cxx_destruct]
+0x199a4ae0c  __TEXT,__text  -[PHBatchFetchedAssetPropertySet .cxx_destruct]
+0x199a4ae44  __TEXT,__text  -[PHMediaRequestContext requestID]
+0x199a4ae4c  __TEXT,__text  -[PHFetchResultChangeDetails _addAdditionalIndexesToChanges:withPreviousIdentifiers:currentIdentifiers:]
+0x199a4aff4  __TEXT,__text  -[PHPhotoLibrary .cxx_destruct]
+0x199a4b264  __TEXT,__text  +[PHPhotoLibrary unsafeShutdownLibraryWithPhotoLibraryURL:]
+0x199a4b374  __TEXT,__text  -[PHPhotoLibrary handleMergeNotification:]
+0x199a4b79c  __TEXT,__text  -[PHChangeHandlingDebugger beginProcessPendingChanges]
+0x199a4b7d4  __TEXT,__text  -[PHChangeHandlingDebugEvent reset]
+0x199a4b938  __TEXT,__text  -[PHChangeHandlingDebugEvent setKind:]
+0x199a4b94c  __TEXT,__text  -[PHChangeHandlingDebugEvent setIsAuthorizedForChanges:]
+0x199a4b960  __TEXT,__text  -[PHChangeHandlingDebugEvent setThrottleChangesTimestamp:]
+0x199a4b974  __TEXT,__text  -[PHChangeHandlingDebugEvent setWaitTimeInterval:]
+0x199a4b988  __TEXT,__text  -[PHChangeHandlingDebugEvent setPublishTimestamp:]
+0x199a4b99c  __TEXT,__text  ___55-[PHPhotoLibrary openAndWaitWithUpgrade:options:error:]_block_invoke_2
+0x199a4bfe4  __TEXT,__text  _block_copy_helper.34
+0x199a4bfe8  __TEXT,__text  _block_destroy_helper.35
+0x199a4bfec  __TEXT,__text  -[PHChangeHandlingDebugEvent setPublishThreadID:]
+0x199a4c000  __TEXT,__text  -[PHChangeHandlingDebugEvent setExternalObserversCount:]
+0x199a4c014  __TEXT,__text  -[PHChangeHandlingDebugEvent setInternalObserversCount:]
+0x199a4c028  __TEXT,__text  -[PHChangeHandlingDebugEvent setDistributeInternalTimestamp:]
+0x199a4c03c  __TEXT,__text  -[PHChangeHandlingDebugEvent setDistributeExternalTimestamp:]
+0x199a4c050  __TEXT,__text  -[PHChangeHandlingDebugEvent setInsertedCount:]
+0x199a4c064  __TEXT,__text  -[PHChangeHandlingDebugEvent setUpdatedCount:]
+0x199a4c078  __TEXT,__text  -[PHChangeHandlingDebugEvent setDeletedCount:]
+0x199a4c08c  __TEXT,__text  -[PHChangeHandlingDebugEvent setUnknownMergeEvent:]
+0x199a4c0a0  __TEXT,__text  -[PHChangeHandlingDebugEvent setPreloadTimestamp:]
+0x199a4c0b4  __TEXT,__text  -[PHChangeHandlingDebugEvent setFetchResultsToClearCount:]
+0x199a4c0c8  __TEXT,__text  -[PHChangeHandlingDebugEvent setLastTransactionNumber:]
+0x199a4c0dc  __TEXT,__text  -[PHChangeHandlingDebugEvent setTransactionCount:]
+0x199a4c0f0  __TEXT,__text  -[PHChangeHandlingDebugEvent setChangeCount:]
+0x199a4c104  __TEXT,__text  -[PHChangeHandlingDebugEvent setCloudSyncEnabled:]
+0x199a4c118  __TEXT,__text  -[PHChangeHandlingDebugEvent startProcessPendingChanges]
+0x199a4c148  __TEXT,__text  -[PHChangeHandlingDebugEvent setFirstSyncTimestamp:]
+0x199a4c15c  __TEXT,__text  -[PHPhotoLibrary _notifyPersistentChangeObservers]
+0x199a4c200  __TEXT,__text  -[PHChangeHandlingDebugEvent setFetchResultCount:]
+0x199a4c214  __TEXT,__text  -[PHChangeHandlingDebugEvent setFetchResultsToRefetchCount:]
+0x199a4c228  __TEXT,__text  -[PHChangeHandlingDebugEvent setLastSyncTimestamp:]
+0x199a4c23c  __TEXT,__text  ___42-[PHPhotoLibrary handleMergeNotification:]_block_invoke_2
+0x199a4ca6c  __TEXT,__text  -[PHPhotoLibrary _publishChangeWithDebugEvent:block:]
+0x199a4cb88  __TEXT,__text  +[PHChange handlerQueue]
+0x199a4cbd0  __TEXT,__text  -[PHChangeHandlingDebugger processPendingChangesStateDidChange:]
+0x199a4cc44  __TEXT,__text  ___64-[PHChangeHandlingDebugger processPendingChangesStateDidChange:]_block_invoke
+0x199a4cc84  __TEXT,__text  ___53-[PHPhotoLibrary _publishChangeWithDebugEvent:block:]_block_invoke
+0x199a4ccbc  __TEXT,__text  ___42-[PHPhotoLibrary handleMergeNotification:]_block_invoke_3
+0x199a4cd00  __TEXT,__text  -[PHPhotoLibrary _processPendingChangesWithDebugEvent:]
+0x199a4d704  __TEXT,__text  ___55-[PHPhotoLibrary _processPendingChangesWithDebugEvent:]_block_invoke
+0x199a4d7b4  __TEXT,__text  ___55-[PHPhotoLibrary _processPendingChangesWithDebugEvent:]_block_invoke_2
+0x199a4d81c  __TEXT,__text  -[PHSceneClassification confidence]
+0x199a4d824  __TEXT,__text  -[PHSceneClassification sceneIdentifier]
+0x199a4d8b0  __TEXT,__text  +[PHAsset identifierCode]
+0x199a4d8bc  __TEXT,__text  -[PHAsset sceneClassifications]
+0x199a4d8c8  __TEXT,__text  -[PHAsset sceneClassificationsOfTypes:]
+0x199a4dd4c  __TEXT,__text  -[PHAsset _sceneClassificationsWithPredicate:]
+0x199a4e064  __TEXT,__text  -[PHPhotoLibrary objectFetchingManagedObjectContextForObject:propertySet:]
+0x199a4e068  __TEXT,__text  +[PHAssetSceneAnalysisProperties propertySetName]
+0x199a4e074  __TEXT,__text  ___46-[PHAsset _sceneClassificationsWithPredicate:]_block_invoke
+0x199a4e474  __TEXT,__text  -[PHSceneClassification initWithExtendedSceneIdentifier:confidence:boundingBox:startTime:duration:classificationType:thumbnailIdentifier:]
+0x199a4e6fc  __TEXT,__text  +[PHSceneClassification _fetchSceneClassificationsGroupedByAssetLocalIdentifierForAssets:includeTemporalClassifications:sceneClassificationTypePredicate:]
+0x199a4e9d8  __TEXT,__text  -[PHSceneClassification isEqual:]
+0x199a4ea4c  __TEXT,__text  -[PHSceneClassification isEqualToSceneClassification:]
+0x199a4eaf4  __TEXT,__text  -[PHAsset mediaType]
+0x199a4eb08  __TEXT,__text  +[PHFetchOptions fetchOptionsWithPhotoLibrary:orObject:]
+0x199a4eb94  __TEXT,__text  -[PHFetchOptions setPersonContext:]
+0x199a4ebd0  __TEXT,__text  -[PHFetchOptions setIncludedDetectionTypes:]
+0x199a4ebdc  __TEXT,__text  +[PHPerson fetchPersonsInAsset:options:]
+0x199a4ec30  __TEXT,__text  +[PHQuery queryForPersonsInAssets:withOptions:]
+0x199a4ecfc  __TEXT,__text  -[PHSceneClassification _validateStartTime:duration:classificationType:]
+0x199a4ed44  __TEXT,__text  -[PHSceneClassification hash]
+0x199a4ed4c  __TEXT,__text  -[PHSceneClassification classificationType]
+0x199a4ed54  __TEXT,__text  -[PHSceneClassification extendedSceneIdentifier]
+0x199a4ed5c  __TEXT,__text  +[PHSceneClassification fetchSceneClassificationsGroupedByAssetLocalIdentifierForAssets:]
+0x199a4ed68  __TEXT,__text  ___154+[PHSceneClassification _fetchSceneClassificationsGroupedByAssetLocalIdentifierForAssets:includeTemporalClassifications:sceneClassificationTypePredicate:]_block_invoke
+0x199a4ee34  __TEXT,__text  ___154+[PHSceneClassification _fetchSceneClassificationsGroupedByAssetLocalIdentifierForAssets:includeTemporalClassifications:sceneClassificationTypePredicate:]_block_invoke_2
+0x199a4f108  __TEXT,__text  -[PHSceneClassification description]
+0x199a4f1a4  __TEXT,__text  -[PHSceneClassification .cxx_destruct]
+0x199a4f1b0  __TEXT,__text  -[PHAsset creationDate]
+0x199a4f1c4  __TEXT,__text  +[PHQuery queryForPersonsInAsset:options:]
+0x199a4f290  __TEXT,__text  -[PHChange initWithInsertedObjectIDs:updatedObjectIDs:deletedObjectIDs:deletedUuidsByObjectId:deletedPrimaryLabelCodesByOID:changedAttributesByOID:changedRelationshipsByOID:unknownMergeEvent:changeToken:fetchOptions:library:managedObjectContext:enumerationContext:]
+0x199a4f508  __TEXT,__text  -[PHChange init]
+0x199a4f5cc  __TEXT,__text  -[PHPhotoLibrary changeHandlingPhotoLibrary]
+0x199a4f614  __TEXT,__text  -[PHChange preloadChangeDetailsForFetchResults:inManagedObjectContext:debugEvent:handler:]
+0x199a500c4  __TEXT,__text  -[PHChange _insertedOrUpdatedObjectIDsMatchingEntities:]
+0x199a50168  __TEXT,__text  -[PHChange _entityNamesForEntities:]
+0x199a502e8  __TEXT,__text  -[PHChange _deletedObjectIDsMatchingEntities:]
+0x199a50368  __TEXT,__text  -[PHChange _preloadChangeDetailsWithRefetchForFetchResults:inManagedObjectContext:]
+0x199a506b8  __TEXT,__text  -[PHChange _updateChangeHandlingValuesIfNeeded:seedOidsByFetchResult:context:]
+0x199a50850  __TEXT,__text  ___83-[PHChange _preloadChangeDetailsWithRefetchForFetchResults:inManagedObjectContext:]_block_invoke_2
+0x199a50a28  __TEXT,__text  -[PHChange _preloadChangeDetailsWithClearCacheForFetchResults:inManagedObjectContext:]
+0x199a50b0c  __TEXT,__text  ___86-[PHChange _preloadChangeDetailsWithClearCacheForFetchResults:inManagedObjectContext:]_block_invoke
+0x199a50cb4  __TEXT,__text  -[PHPTPAssetManager photoLibraryDidChange:]
+0x199a51fbc  __TEXT,__text  ___43-[PHPTPAssetManager photoLibraryDidChange:]_block_invoke
+0x199a52008  __TEXT,__text  -[PHChange .cxx_destruct]
+0x199a52124  __TEXT,__text  -[PHChange initWithChangedIdentifiers:unknownMergeEvent:library:]
+0x199a52130  __TEXT,__text  -[PHChange initWithChangedIdentifiers:unknownMergeEvent:changeToken:library:]
+0x199a52284  __TEXT,__text  ___43-[PHPTPAssetManager photoLibraryDidChange:]_block_invoke_2
+0x199a52298  __TEXT,__text  -[PHChangeHandlingDebugEvent end]
+0x199a52340  __TEXT,__text  -[PHQueryPersonContext initWithFetchOptions:]
+0x199a523bc  __TEXT,__text  -[PHQueryPersonContext subpredicates]
+0x199a52548  __TEXT,__text  -[PHFetchOptions personContext]
+0x199a52550  __TEXT,__text  -[PHQueryPersonContext personContextNonePredicates]
+0x199a526e8  __TEXT,__text  -[PHFetchOptions minimumVerifiedFaceCount]
+0x199a526fc  __TEXT,__text  -[PHQueryPersonContext _notVerifiedPredicate]
+0x199a52738  __TEXT,__text  -[PHQueryPersonContext .cxx_destruct]
+0x199a52744  __TEXT,__text  -[PHFetchOptions includeOnlyPersonsWithVisibleKeyFaces]
+0x199a5274c  __TEXT,__text  -[PHFetchOptions includePendingShares]
+0x199a52754  __TEXT,__text  -[PHFetchOptions includeOnlyContentContributedByCurrentUser]
+0x199a5275c  __TEXT,__text  -[PHFetchOptions includeBothPrivateAssetsAndSharedContentContributedByCurrentUser]
+0x199a52764  __TEXT,__text  +[PHPerson managedObjectSupportsPersonFilters]
+0x199a5276c  __TEXT,__text  +[PHQueryPersonContext subpredicatesForFetchOptions:]
+0x199a527e0  __TEXT,__text  -[PHFetchOptions minimumUnverifiedFaceCount]
+0x199a527f4  __TEXT,__text  -[PHFetchOptions fetchLimit]
+0x199a527fc  __TEXT,__text  -[PHFetchOptions predicate]
+0x199a52804  __TEXT,__text  -[PHFetchOptions setPredicate:]
+0x199a52810  __TEXT,__text  -[PHFetchOptions setSortDescriptors:]
+0x199a5281c  __TEXT,__text  -[PHFetchOptions fetchPropertySets]
+0x199a52824  __TEXT,__text  -[PHFetchOptions setTransientIdentifier:]
+0x199a52830  __TEXT,__text  -[PHFetchOptions verifiedPersonTypes]
+0x199a52838  __TEXT,__text  -[PHFetchOptions changeDetectionCriteria]
+0x199a52844  __TEXT,__text  -[PHFetchOptions setChangeDetectionCriteria:]
+0x199a5284c  __TEXT,__text  ___47+[PHQuery queryForPersonsInAssets:withOptions:]_block_invoke
+0x199a52854  __TEXT,__text  +[PHQuery _queryForPersonsInAssetsWithObjectIDs:withOptions:]
+0x199a52940  __TEXT,__text  -[PHQuery initForType:withBasePredicate:inLibrary:]
+0x199a5294c  __TEXT,__text  -[PHQuery initForType:withBasePredicate:seedOIDs:inLibrary:]
+0x199a52a9c  __TEXT,__text  -[PHQuery _setIncludesCameraRoll:]
+0x199a52aa4  __TEXT,__text  -[PHQuery setPropertiesToFetchWhenGrouping:]
+0x199a52aac  __TEXT,__text  -[PHQuery fetchRequest]
+0x199a52b0c  __TEXT,__text  -[PHQuery filterPredicate]
+0x199a52bcc  __TEXT,__text  -[PHFetchOptions internalPredicate]
+0x199a52bd4  __TEXT,__text  -[PHFetchOptions setInternalPredicate:]
+0x199a52be0  __TEXT,__text  -[PHFetchOptions setFetchPropertySets:]
+0x199a52c30  __TEXT,__text  -[PHFetchOptions transientIdentifier]
+0x199a52c38  __TEXT,__text  -[PHFetchOptions setCustomObjectIDSortOrder:]
+0x199a52c44  __TEXT,__text  -[PHQuery _setCollectionFetchType:]
+0x199a52c4c  __TEXT,__text  -[PHQuery seedOIDs]
+0x199a52c58  __TEXT,__text  +[PHFetchResult emptyFetchResultChangeHandlingKey]
+0x199a52c64  __TEXT,__text  -[PHQuery _includesCameraRoll]
+0x199a52c6c  __TEXT,__text  -[PHQuery propertiesToGroupBy]
+0x199a52c78  __TEXT,__text  -[PHQuery setPropertiesToGroupBy:]
+0x199a52c80  __TEXT,__text  -[PHQuery propertiesToFetchWhenGrouping]
+0x199a52c8c  __TEXT,__text  -[PHQuery fetchType]
+0x199a52c98  __TEXT,__text  -[PHFetchOptions fetchPropertySetsAsSet]
+0x199a52cac  __TEXT,__text  -[PHQuery _createFetchRequestIncludingBasePredicate:]
+0x199a530e4  __TEXT,__text  -[PHQuery _effectiveSortDescriptors]
+0x199a534dc  __TEXT,__text  -[PHFetchOptions reverseDefaultSortDescriptors]
+0x199a534e4  __TEXT,__text  -[PHFetchOptions fetchOffset]
+0x199a534ec  __TEXT,__text  -[PHQuery changeHandlingContainerIdentifier]
+0x199a534f4  __TEXT,__text  -[PHQuery _globalPredicatesForPHClass:]
+0x199a54354  __TEXT,__text  -[PHFetchOptions includeTrashedAssets]
+0x199a5435c  __TEXT,__text  -[PHFetchOptions includeHiddenAssets]
+0x199a54364  __TEXT,__text  -[PHFetchOptions includeTrashedShares]
+0x199a5436c  __TEXT,__text  -[PHFetchOptions includeExpiredShares]
+0x199a54374  __TEXT,__text  -[PHFetchOptions includeExitingShares]
+0x199a5437c  __TEXT,__text  -[PHFetchOptions includeOnlyAssetsAllowedForAnalysis]
+0x199a54384  __TEXT,__text  -[PHQueryPersonContext _faceCountPredicateWithMinimum:]
+0x199a543c0  __TEXT,__text  +[PHPerson managedObjectSupportsDetectionType]
+0x199a543c8  __TEXT,__text  +[PHPerson managedObjectSupportsTorsoOnly]
+0x199a543d0  __TEXT,__text  -[PHQuery _effectiveDefaultSortDescriptorReversingOrder:]
+0x199a54484  __TEXT,__text  -[PHQuery basePredicate]
+0x199a54490  __TEXT,__text  +[PHQuery defaultSortDescriptorForFetchType:predicate:ascending:]
+0x199a54540  __TEXT,__text  -[PHQuery containerIdentifier]
+0x199a5456c  __TEXT,__text  -[PHQuery _prepareContainerInfo]
+0x199a54654  __TEXT,__text  -[PHQuery _isUserSmartAlbum]
+0x199a5465c  __TEXT,__text  -[PHFetchOptions shouldPrefetchCount]
+0x199a54664  __TEXT,__text  -[PHFetchOptions importantFetchName]
+0x199a5466c  __TEXT,__text  -[PHFetchResultInstrumentation logFetchWithSqlString:bindVariables:]
+0x199a54a10  __TEXT,__text  -[PHFetchResultInstrumentation classifyFetchPerformanceWithTuple:]
+0x199a54ad4  __TEXT,__text  -[PHFetchResultInstrumentation classifyFetchPerformanceLogLevel]
+0x199a54bb0  __TEXT,__text  -[PHFetchResultInstrumentation bytesPerRow]
+0x199a54bc4  __TEXT,__text  +[PHFetchLogRateLimiter sharedRateLimiter]
+0x199a54bf8  __TEXT,__text  -[PHFetchLogRateLimiter rateLimitedLogLevelForLogForLevel:]
+0x199a54c18  __TEXT,__text  ___68-[PHFetchResultInstrumentation logFetchWithSqlString:bindVariables:]_block_invoke
+0x199a54c38  __TEXT,__text  +[PHFetchResult postProcessFetchedObjectIDs:forFetchResult:fetchRequest:]
+0x199a54f30  __TEXT,__text  +[PHFetchResult filteredOIDsFrom:usingEntityName:withPhotoLibrary:]
+0x199a54fbc  __TEXT,__text  -[PHBatchFetchingArray initWithOIDs:options:dataSource:]
+0x199a55384  __TEXT,__text  -[PHQueryPersonContext _verifiedPredicate]
+0x199a553c0  __TEXT,__text  +[PHPerson managedObjectSupportsKeyFaces]
+0x199a553c8  __TEXT,__text  -[PHFetchOptions includeTorsoOnlyPerson]
+0x199a553d0  __TEXT,__text  -[PHQuery overrideResultClassWithFetchType]
+0x199a55488  __TEXT,__text  -[PHFetchOptions includedDetectionTypes]
+0x199a55490  __TEXT,__text  -[PHBatchFetchingArray countByEnumeratingWithState:objects:count:]
+0x199a55510  __TEXT,__text  -[PHBatchFetchingArray _populateObjectBuffer:range:]
+0x199a555cc  __TEXT,__text  -[PHBatchFetchingArray _batchForBatchNumber:shouldUpdateLastBatch:]
+0x199a55838  __TEXT,__text  -[PHBatchFetchingArray _fetchObjectsInBatchNumber:]
+0x199a55a94  __TEXT,__text  -[PHBatchFetchingArray oids]
+0x199a55aa4  __TEXT,__text  -[PHBatchFetchingArray _phObjectsForOIDs:]
+0x199a55c40  __TEXT,__text  -[PHPerson initWithFetchDictionary:propertyHint:photoLibrary:]
+0x199a560a8  __TEXT,__text  -[PHPerson type]
+0x199a560bc  __TEXT,__text  -[PHPerson displayName]
+0x199a560d0  __TEXT,__text  -[PHPerson contactMatchingDictionary]
+0x199a560e4  __TEXT,__text  -[PHPerson isMe]
+0x199a56100  __TEXT,__text  -[PHPerson name]
+0x199a56114  __TEXT,__text  -[PHPerson personUri]
+0x199a56128  __TEXT,__text  -[PHPerson faceCount]
+0x199a5613c  __TEXT,__text  -[PHPerson isVerified]
+0x199a56158  __TEXT,__text  -[PHPerson verifiedType]
+0x199a5616c  __TEXT,__text  -[PHPerson detectionType]
+0x199a56180  __TEXT,__text  +[PHPerson identifierCode]
+0x199a5618c  __TEXT,__text  -[PHAsset mediaAnalysisProperties]
+0x199a561cc  __TEXT,__text  -[PHObject assertRequiredFetchPropertyHints:]
+0x199a56320  __TEXT,__text  -[PHObject propertyHint]
+0x199a56358  __TEXT,__text  -[PHAsset _createPropertyObjectOfClass:]
+0x199a56360  __TEXT,__text  -[PHAssetMediaAnalysisProperties faceCount]
+0x199a56368  __TEXT,__text  -[PHAsset overallAestheticScore]
+0x199a5637c  __TEXT,__text  -[PHAsset description]
+0x199a5653c  __TEXT,__text  -[PHObject description]
+0x199a565cc  __TEXT,__text  -[PHAsset burstIdentifier]
+0x199a565e0  __TEXT,__text  +[PHAsset sourceTypeFromSavedAssetType:]
+0x199a56684  __TEXT,__text  -[PHAsset location]
+0x199a56698  __TEXT,__text  -[PHAsset isHidden]
+0x199a566ac  __TEXT,__text  -[PHPerson .cxx_destruct]
+0x199a56730  __TEXT,__text  -[PHAssociatedObjectsEntry .cxx_destruct]
+0x199a5673c  __TEXT,__text  -[PHAssetSceneAnalysisProperties .cxx_destruct]
+0x199a56780  __TEXT,__text  -[PHAssetPropertySet .cxx_destruct]
+0x199a56788  __TEXT,__text  -[PHAssetUserActivityProperties .cxx_destruct]
+0x199a56794  __TEXT,__text  -[PHAssetSceneprintProperties .cxx_destruct]
+0x199a567d8  __TEXT,__text  -[PHAssetMediaAnalysisProperties .cxx_destruct]
+0x199a5681c  __TEXT,__text  -[PHPhotosHighlight .cxx_destruct]
+0x199a56a44  __TEXT,__text  -[PHFetchOptions setShouldPrefetchCount:]
+0x199a56a80  __TEXT,__text  -[PHFetchOptions setChunkSizeForFetch:]
+0x199a56abc  __TEXT,__text  +[PHQuery identificationBlockForAssetCollectionType:]
+0x199a56b3c  __TEXT,__text  -[PHFetchOptions sharingFilter]
+0x199a56b50  __TEXT,__text  -[PHFetchOptions addFetchPropertySets:]
+0x199a56b60  __TEXT,__text  +[PHPhotosHighlight managedEntityName]
+0x199a56b6c  __TEXT,__text  +[PHQuery _filterPredicateFromFetchOptionsPredicate:options:phClass:]
+0x199a56df8  __TEXT,__text  +[PHPhotosHighlight fetchPredicateFromComparisonPredicate:options:]
+0x199a56f40  __TEXT,__text  +[PHObject managedObjectSupportsCustomUUIDKey]
+0x199a56f48  __TEXT,__text  +[PHPhotosHighlight entityKeyMap]
+0x199a56fc8  __TEXT,__text  -[PHEntityKeyMap entityKeyForPropertyKey:]
+0x199a56fd0  __TEXT,__text  +[PHPhotosHighlight transformValueExpression:forKeyPath:]
+0x199a570b4  __TEXT,__text  +[PHPhotosHighlight managedObjectSupportsTrashedState]
+0x199a570bc  __TEXT,__text  +[PHPhotosHighlight managedObjectSupportsSharingComposition]
+0x199a570c4  __TEXT,__text  +[PHFetchResult fetchObjectCount:inManagedObjectContext:]
+0x199a5740c  __TEXT,__text  ___57+[PHFetchResult fetchObjectCount:inManagedObjectContext:]_block_invoke
+0x199a5756c  __TEXT,__text  -[PHFetchResult fetchError]
+0x199a57574  __TEXT,__text  +[PHPhotosHighlight propertyFetchHintsForPropertySets:]
+0x199a576c4  __TEXT,__text  -[PHBatchFetchingArray count]
+0x199a576d8  __TEXT,__text  +[PHPhotosHighlight propertiesToFetchWithHint:]
+0x199a5776c  __TEXT,__text  -[PHFetchOptions setHighlightCurationType:]
+0x199a577a8  __TEXT,__text  +[PHAsset(Curated) fetchSummaryCurationForHighlight:fetchOptions:allowsOnDemand:error:]
+0x199a579f4  __TEXT,__text  -[PHPhotosHighlight enrichmentState]
+0x199a57a08  __TEXT,__text  -[PHPhotosHighlight enrichmentVersion]
+0x199a57a1c  __TEXT,__text  -[PHPhotosHighlight highlightVersion]
+0x199a57a30  __TEXT,__text  +[PHAsset(Curated) fetchCuratedAssetsInAssetCollection:options:]
+0x199a57be8  __TEXT,__text  -[PHFetchOptions highlightCurationType]
+0x199a57c10  __TEXT,__text  +[PHQuery queryForCuratedAssetsInPhotosHighlight:options:]
+0x199a57cfc  __TEXT,__text  __predicateForAssetsInPhotosHighlightWithOptions
+0x199a57f44  __TEXT,__text  -[PHPhotosHighlight kind]
+0x199a57f58  __TEXT,__text  -[PHPhotosHighlight isSharingSuggestion]
+0x199a57f6c  __TEXT,__text  +[PHQuery _fetchOptionsForFetchingAssetsFromAssetCollection:options:changeDetectionCriteria:]
+0x199a5862c  __TEXT,__text  -[PHFetchOptions useNoIndexOnSharingFilter]
+0x199a58634  __TEXT,__text  -[PHFetchOptions includeDuplicateAssets]
+0x199a5863c  __TEXT,__text  -[PHPhotoLibrary isCloudPhotoLibraryEnabled]
+0x199a58644  __TEXT,__text  -[PHFetchOptions excludeDuplicateAssetVisibilityStateHidden]
+0x199a5864c  __TEXT,__text  -[PHFetchOptions includeDuplicateAssetVisibilityStateMostRelevant]
+0x199a58654  __TEXT,__text  -[PHFetchOptions excludeNonVisibleStackedAssets]
+0x199a5865c  __TEXT,__text  -[PHFetchOptions excludeMontageAssets]
+0x199a58664  __TEXT,__text  -[PHFetchOptions excludeScreenshotAssets]
+0x199a5866c  __TEXT,__text  -[PHFetchOptions includeAllBurstAssets]
+0x199a58674  __TEXT,__text  +[PHQuery _isKindOfMomentOrAlbumEntity:]
+0x199a586f8  __TEXT,__text  -[PHFetchOptions includeRecentlyEditedSmartAlbum]
+0x199a58700  __TEXT,__text  +[PHQuery _excludeMaskForUserLibraryWithFetchOptions:]
+0x199a5884c  __TEXT,__text  -[PHFetchOptions includeAssetSourceTypes]
+0x199a58854  __TEXT,__text  -[PHFetchOptions includeGuestAssets]
+0x199a5885c  __TEXT,__text  -[PHFetchOptions includePebblePlaceholderAssets]
+0x199a58864  __TEXT,__text  +[PHPhotosHighlight identifierCode]
+0x199a58870  __TEXT,__text  +[PHQuery queryForAssetsWithOptions:]
+0x199a58934  __TEXT,__text  -[PHFetchOptions setIncludeAssetSourceTypes:]
+0x199a58970  __TEXT,__text  +[PHAsset fetchPredicateFromComparisonPredicate:options:]
+0x199a58cb0  __TEXT,__text  +[PHAsset transformValueExpression:forKeyPath:]
+0x199a58e68  __TEXT,__text  +[PHAsset propertiesToFetchWithHint:]
+0x199a58f9c  __TEXT,__text  -[PHAsset _initializeCachedLocation]
+0x199a590a0  __TEXT,__text  -[PHAsset _setupUIStateAndTrashAttributesFromFetchDictionary:]
+0x199a591d4  __TEXT,__text  -[PHAsset _setupAdjustmentAndDeferredProcessingAttributesFromFetchDictionary:]
+0x199a592d4  __TEXT,__text  -[PHAsset _setupTypeAndPersistenceStateAttributesFromFetchDictionary:]
+0x199a59410  __TEXT,__text  -[PHAsset _setupFaceAttributesFromFetchDictionary:]
+0x199a59550  __TEXT,__text  -[PHAsset _setupKindSubtypeFromFetchDictionary:]
+0x199a596fc  __TEXT,__text  -[PHAssetUserActivityProperties initWithFetchDictionary:asset:prefetched:]
+0x199a59900  __TEXT,__text  -[PHAssetSceneAnalysisProperties initWithFetchDictionary:asset:prefetched:]
+0x199a59a4c  __TEXT,__text  -[PHAssetAestheticProperties initWithFetchDictionary:asset:prefetched:]
+0x199a59f7c  __TEXT,__text  -[PHAssetMediaAnalysisProperties initWithFetchDictionary:asset:prefetched:]
+0x199a5ad0c  __TEXT,__text  -[PHAssetSceneprintProperties initWithFetchDictionary:asset:prefetched:]
+0x199a5ae28  __TEXT,__text  -[PHObject fetchPropertySetsIfNeeded]
+0x199a5ae30  __TEXT,__text  -[PHObject addFetchPropertyHint:]
+0x199a5ae70  __TEXT,__text  ___61-[PHAsset _createPropertyObjectOfClass:preFetchedProperties:]_block_invoke
+0x199a5b334  __TEXT,__text  +[PHAssetPropertySet inverseIsToMany]
+0x199a5b33c  __TEXT,__text  -[PHAssetImportProperties initWithFetchDictionary:asset:prefetched:]
+0x199a5b408  __TEXT,__text  -[PHAssetImportProperties importedBy]
+0x199a5b410  __TEXT,__text  -[PHAsset importProperties]
+0x199a5b450  __TEXT,__text  +[PHAssetPropertySet entityName]
+0x199a5b45c  __TEXT,__text  +[PHAssetPropertySet keyPathToPrimaryObject]
+0x199a5b468  __TEXT,__text  +[PHAssetImportProperties propertiesToFetch]
+0x199a5b49c  __TEXT,__text  +[PHAssetImportProperties propertySetName]
+0x199a5b4a8  __TEXT,__text  ___36-[PHAsset _initializeCachedLocation]_block_invoke
+0x199a5b4f8  __TEXT,__text  -[PHAsset _uncachedLocation]
+0x199a5b598  __TEXT,__text  -[PHAsset sceneAnalysisProperties]
+0x199a5b5d8  __TEXT,__text  -[PHAssetSceneAnalysisProperties sceneAnalysisVersion]
+0x199a5b5e0  __TEXT,__text  -[PHAssetSceneAnalysisProperties sceneAnalysisTimestamp]
+0x199a5b5e8  __TEXT,__text  -[PHAsset curationScore]
+0x199a5b5fc  __TEXT,__text  -[PHPhotoLibrary(PhotosKnowledgeSPI) requestPersonalTraitsForAssetsWithUUIDs:error:]
+0x199a5b664  __TEXT,__text  -[PHPhotoLibrary photoAnalysisClient]
+0x199a5b66c  __TEXT,__text  -[PHPhotoLibrary debugDescription]
+0x199a5b72c  __TEXT,__text  +[PHPhotoLibrary stringFromPHPhotoLibraryType:]
+0x199a5b78c  __TEXT,__text  +[PHPhotoLibrary authorizationStatus]
+0x199a5b7e8  __TEXT,__text  -[PHPTPAssetManager cameraWatcherDidChangeState:]
+0x199a5b984  __TEXT,__text  -[PHPhotoLibrary _removeChangeObserver:]
+0x199a5b98c  __TEXT,__text  -[PHPhotoLibraryChangeObserverRegistrar removeObserver:]
+0x199a5ba20  __TEXT,__text  -[PHPhotoLibrary unregisterChangeObserver:]
+0x199a5ba2c  __TEXT,__text  ___56-[PHPhotoLibraryChangeObserverRegistrar removeObserver:]_block_invoke
+0x199a5ba80  __TEXT,__text  ___71-[PHPhotoLibraryChangeObserverRegistrar clearIsChangeProcessingPending]_block_invoke
+0x199a5badc  __TEXT,__text  -[PHPhotoLibraryChangeObserverRegistrar throttlePendingChangesTimerFiredWithBlock:]
+0x199a5bb2c  __TEXT,__text  ___63-[PHPhotoLibraryChangeObserverRegistrar getObserversWithBlock:]_block_invoke
+0x199a5bbb8  __TEXT,__text  -[PHPhotoLibraryChangeObserverRegistrar getObserversWithBlock:]
+0x199a5bd84  __TEXT,__text  ___40-[PHChange changeDetailsForFetchResult:]_block_invoke
+0x199a5bed4  __TEXT,__text  +[PHPhotoLibrary assertTransaction]
+0x199a5bf58  __TEXT,__text  -[PHPhotoLibrary assertTransaction]
+0x199a5c0e8  __TEXT,__text  +[PHSmartAlbum managedEntityName]
+0x199a5c0f4  __TEXT,__text  -[PHAssetCreationRequest didSendChangeToServiceHandlerWithResult:]
+0x199a5c1a4  __TEXT,__text  -[PHCloudIdentifier initWithArchivalStringValue:]
+0x199a5c328  __TEXT,__text  -[PHCloudIdentifier initWithStringValue:]
+0x199a5c32c  __TEXT,__text  -[PHCloudIdentifier initWithLocalCloudIdentifier:identifierCode:stableHash:extraArchivalStringComponents:photoLibrary:]
+0x199a5c4a4  __TEXT,__text  +[PHPhotoLibrary systemPhotoLibraryURL]
+0x199a5c4b0  __TEXT,__text  -[PHPhotoLibrary openAndWaitWithUpgrade:error:]
+0x199a5c4bc  __TEXT,__text  -[PHPhotoLibrary openAndWaitWithUpgrade:options:error:]
+0x199a5c6e8  __TEXT,__text  ___42+[PHFetchLogRateLimiter sharedRateLimiter]_block_invoke
+0x199a5c718  __TEXT,__text  ___50-[PHPhotoLibrary initWithPhotoLibraryBundle:type:]_block_invoke_4
+0x199a5c778  __TEXT,__text  -[PHFetchLogRateLimiter init]
+0x199a5c848  __TEXT,__text  +[PHPhotoLibrary sharedPhotoLibrary]
+0x199a5c87c  __TEXT,__text  +[PHPhotoLibrary _sharedPhotoLibrary]
+0x199a5c8f8  __TEXT,__text  -[PHPhotoLibrary initSharedLibrary]
+0x199a5c948  __TEXT,__text  -[PHPerformChangesInstrumentation initWithUUID:]
+0x199a5c9bc  __TEXT,__text  ___37+[PHPhotoLibrary _sharedPhotoLibrary]_block_invoke
+0x199a5c9f0  __TEXT,__text  -[PHPhotoLibraryChangeObserverRegistrar _throttlePendingChangesWithBlock:]
+0x199a5cb24  __TEXT,__text  ___95-[PHPhotoLibraryChangeObserverRegistrar publishChangesToObserversOnQueue:withDebugEvent:block:]_block_invoke
+0x199a5cd14  __TEXT,__text  ___74-[PHPhotoLibraryChangeObserverRegistrar _throttlePendingChangesWithBlock:]_block_invoke
+0x199a5cd48  __TEXT,__text  -[PHPhotoLibrary performChangesAndWait:error:]
+0x199a5ce30  __TEXT,__text  -[PHAssetCreationCameraIngestOptions dealloc]
+0x199a5ce84  __TEXT,__text  -[PHPerformChangesRequest accessScopeOptionsRequiredForRequestedChanges]
+0x199a5d084  __TEXT,__text  ___72-[PHPerformChangesRequest accessScopeOptionsRequiredForRequestedChanges]_block_invoke
+0x199a5d194  __TEXT,__text  -[PHSynchronousPhotoLibraryExecutionContext dispatchOnQueue:block:]
+0x199a5d1a0  __TEXT,__text  -[PHAssetCreationOptions useRecoverableStagingDirectory]
+0x199a5d1a8  __TEXT,__text  -[PHAssetCreationRequest assetCreationOptions]
+0x199a5d1bc  __TEXT,__text  +[PHAssetCreationOptions validatedOptionsFromOptions:forCopyingAssetOrNilIfNoCopy:]
+0x199a5d4fc  __TEXT,__text  -[PHAssetCreationRequest _setAssetCreationOptions:]
+0x199a5d510  __TEXT,__text  -[PHAssetCreationOptions init]
+0x199a5d564  __TEXT,__text  -[PHAssetCreationCameraIngestOptions copyWithZone:]
+0x199a5d690  __TEXT,__text  ___102-[PHPhotoLibrary _performCancellableChanges:withInstrumentation:onExecutionContext:completionHandler:]_block_invoke
+0x199a5d7fc  __TEXT,__text  -[PHAssetCreationCameraIngestOptions init]
+0x199a5d844  __TEXT,__text  -[PHPerformChangesInstrumentation init]
+0x199a5d890  __TEXT,__text  -[PHAssetCreationCameraIngestOptions initFromJobDictionary:withPreviewImgSurfaceRef:]
+0x199a5db40  __TEXT,__text  -[PHAssetCreationRequest setCameraIngestOptions:]
+0x199a5db4c  __TEXT,__text  -[PHAssetCreationCameraIngestOptions setCameraMetadataPath:]
+0x199a5db54  __TEXT,__text  -[PHAssetCreationCameraIngestOptions setDbgFilePath:]
+0x199a5db5c  __TEXT,__text  -[PHChangeRequestHelper changeRequest]
+0x199a5db7c  __TEXT,__text  -[PHAssetResourceBag validatedURLForAssetResource:]
+0x199a5dbbc  __TEXT,__text  -[PHChangeRequest prepareForServicePreflightCheck:]
+0x199a5dc0c  __TEXT,__text  -[PHChangeRequest helper]
+0x199a5dc14  __TEXT,__text  -[PHAssetChangeRequest prepareForPhotoLibraryCheck:error:]
+0x199a5dd10  __TEXT,__text  -[PHChangeRequest init]
+0x199a5dd94  __TEXT,__text  -[PHAssetChangeRequest initWithHelper:]
+0x199a5df18  __TEXT,__text  -[PHExternalAssetResource initWithResourceType:]
+0x199a5dfe4  __TEXT,__text  -[PHAssetResourceCreationOptions setAlternateImportImageDate:]
+0x199a5dff0  __TEXT,__text  -[PHAssetResourceCreationOptions copyWithZone:]
+0x199a5e080  __TEXT,__text  -[PHAssetResourceCreationOptions setShouldMoveFile:]
+0x199a5e088  __TEXT,__text  -[PHAssetCreationRequest initWithHelper:]
+0x199a5e17c  __TEXT,__text  -[PHExternalAssetResource setData:]
+0x199a5e188  __TEXT,__text  +[PHExternalAssetResource probableCPLResourceTypeFromAssetResourceType:]
+0x199a5e294  __TEXT,__text  -[PHExternalAssetResource setFileURL:]
+0x199a5e29c  __TEXT,__text  -[PHExternalAssetResource setCreationOptions:]
+0x199a5e2a4  __TEXT,__text  -[PHAssetResourceCreationOptions setOriginalFilename:]
+0x199a5e2ac  __TEXT,__text  -[PHAssetResourceCreationOptions setUniformTypeIdentifier:]
+0x199a5e2b4  __TEXT,__text  -[PHAssetResourceCreationOptions setBurstPickType:]
+0x199a5e2bc  __TEXT,__text  -[PHAssetResourceCreationOptions setShouldIngestInPlace:]
+0x199a5e2c4  __TEXT,__text  -[PHAssetResourceCreationOptions setForcePairingIdentifier:]
+0x199a5e2d0  __TEXT,__text  -[PHAssetResourceCreationOptions setHasProvenanceData:]
+0x199a5e2d8  __TEXT,__text  -[PHAssetCreationRequestBridge executeCreationRequestWithJobDict:previewImageSurface:]
+0x199a5e9b4  __TEXT,__text  +[PHAssetCreationRequest creationRequestForAssetWithUUID:options:]
+0x199a5eabc  __TEXT,__text  +[PHAssetCreationRequest _creationRequestForAssetUsingUUID:]
+0x199a5eb08  __TEXT,__text  -[PHPhotoLibrary setChangeRequest:forUUID:]
+0x199a5ebec  __TEXT,__text  +[PHAssetCreationCameraIngestOptions optionsFromXPCDict:]
+0x199a5ec50  __TEXT,__text  -[PHPhotoLibrary _performCancellableChanges:withInstrumentation:onExecutionContext:completionHandler:]
+0x199a5edf0  __TEXT,__text  ___46-[PHPhotoLibrary performChangesAndWait:error:]_block_invoke
+0x199a5ee00  __TEXT,__text  -[PHClientLinkedAgainst init]
+0x199a5ee5c  __TEXT,__text  +[PHSynchronousPhotoLibraryExecutionContext synchronousExecutionContext]
+0x199a5ee80  __TEXT,__text  +[PHPhotoLibrary photoLibraryForCurrentTransaction]
+0x199a5ee8c  __TEXT,__text  +[PHAssetCreationRequest creationRequestForAssetFromImageJobDictionary:holdingDirectoryPath:]
+0x199a5f3b8  __TEXT,__text  -[PHAssetCreationRequest initForNewObjectWithUUID:]
+0x199a5f424  __TEXT,__text  -[PHChangeRequestHelper initForNewObjectWithUUID:changeRequest:]
+0x199a5f530  __TEXT,__text  -[PHChangeRequestHelper initWithUUID:objectID:isNew:changeRequest:]
+0x199a5f7f4  __TEXT,__text  -[PHPhotoLibrary recordInsertRequest:]
+0x199a5f870  __TEXT,__text  -[PHRelationshipChangeRequestHelper initWithRelationshipName:changeRequestHelper:]
+```
+First 1,000 of 14,470.
+

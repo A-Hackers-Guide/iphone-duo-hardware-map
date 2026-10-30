@@ -1,0 +1,3261 @@
+# `com.apple.iokit.IOThunderboltFamily`
+
+- Name: IOThunderboltFamily
+- Version: `9.3.3`
+- UUID: `81CE9328-C51B-313A-B71A-29DE828A3335`
+- Source version: `6834.40.2.0.0`
+- Depends on: [`com.apple.driver.AppleSMC`](com.apple.driver.AppleSMC.md) 1.0, [`com.apple.iokit.IOAccessoryManager`](com.apple.iokit.IOAccessoryManager.md) 1.0.0, [`com.apple.iokit.IOPortFamily`](com.apple.iokit.IOPortFamily.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 9.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 9.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 9.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 9.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 9.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (1) [KC]
+
+### IOThunderboltVSA
+- `Adapter Type`: `16711681`
+- `CFBundleIdentifier`: `com.apple.iokit.IOThunderboltFamily`
+- `IOClass`: `IOThunderboltVSA`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOThunderboltFamily`
+- `IOProbeScore`: `4096`
+- `IOProviderClass`: `IOThunderboltPort`
+
+
+## C++ classes (139) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `IOTBTTunnelActivationState` | 0x40 |  |
+| `IOTBTTunnelClientInterface` | 0x60 |  |
+| `IOTBTTunnelClientInterfaceManager` | 0xc8 | IOService → IORegistryEntry |
+| `IOTBTTunnelDPClientInterface` | 0x60 | IOTBTTunnelClientInterface |
+| `IOTBTTunnelDriverInterface` | 0x78 |  |
+| `IOTBTTunnelDriverInterfaceType2` | 0x80 | IOTBTTunnelDriverInterface |
+| `IOTBTTunnelDriverInterfaceType3` | 0xa0 | IOTBTTunnelDriverInterface |
+| `IOTBTTunnelUSBClientInterface` | 0x60 | IOTBTTunnelClientInterface |
+| `IOTBTTunnelUSBType2ClientInterface` | 0x70 | IOTBTTunnelClientInterface |
+| `IOThunderboltAbstractMicro` | 0x40 |  |
+| `IOThunderboltAbstractPath` | 0xc8 |  |
+| `IOThunderboltArray` | 0x28 | OSArray → OSCollection |
+| `IOThunderboltCableState` | 0x50 |  |
+| `IOThunderboltCallbackEventSource` | 0x50 | IOEventSource |
+| `IOThunderboltCommand` | 0x40 | IOCommand |
+| `IOThunderboltCommandGate` | 0x50 | IOCommandGate → IOEventSource |
+| `IOThunderboltCommandQueue` | 0x30 |  |
+| `IOThunderboltConfigCMOverrideCommand` | 0xa8 | IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigCommand` | 0x98 | IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigCompareSwapCommand` | 0xc0 | IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigErrorCommand` | 0xb0 | IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigModifyQuadletCommand` | 0xc0 | IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigMultiReadCommand` | 0xd8 | IOThunderboltConfigReadCommand → IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigNotifyAckCommand` | 0xa0 | IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigPollQuadletCommand` | 0xe8 | IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigPrepareToSleepCommand` | 0xa8 | IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigReadCommand` | 0xc0 | IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigReadQuadletCommand` | 0xb8 | IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigResetCommand` | 0xa8 | IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigWriteCommand` | 0xc0 | IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigWriteQuadletCommand` | 0xb8 | IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigXDomainCommand` | 0xa0 | IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigXDomainLinkChangeRequestCommand` | 0xb8 | IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigXDomainLinkStatusRequestCommand` | 0xb8 | IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigXDomainPathCapabilitiesRequestCommand` | 0x118 | IOThunderboltConfigXDomainPathRequestCommand → IOThunderboltConfigXDomainCommand → IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigXDomainPathControlRequestCommand` | 0x928 | IOThunderboltConfigXDomainPathRequestCommand → IOThunderboltConfigXDomainCommand → IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigXDomainPathRequestCommand` | 0x100 | IOThunderboltConfigXDomainCommand → IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigXDomainPathSetupCompleteRequestCommand` | 0x128 | IOThunderboltConfigXDomainPathRequestCommand → IOThunderboltConfigXDomainCommand → IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigXDomainPathSetupRequestCommand` | 0x160 | IOThunderboltConfigXDomainPathRequestCommand → IOThunderboltConfigXDomainCommand → IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigXDomainPathTeardownRequestCommand` | 0x120 | IOThunderboltConfigXDomainPathRequestCommand → IOThunderboltConfigXDomainCommand → IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigXDomainROMChangedRequestCommand` | 0xc0 | IOThunderboltConfigXDomainCommand → IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigXDomainROMReadRequestCommand` | 0xe8 | IOThunderboltConfigXDomainCommand → IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigXDomainRequestCommand` | 0xc0 | IOThunderboltConfigXDomainCommand → IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigXDomainResponseCommand` | 0xb8 | IOThunderboltConfigXDomainCommand → IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConfigXDomainUUIDRequestCommand` | 0xc8 | IOThunderboltConfigXDomainCommand → IOThunderboltConfigCommand → IOThunderboltCommand → IOCommand |
+| `IOThunderboltConnectionManager` | 0x98 |  |
+| `IOThunderboltConnectionManagerType5` | 0xa0 | IOThunderboltConnectionManager |
+| `IOThunderboltControlPath` | 0xe0 |  |
+| `IOThunderboltControlPathListener` | 0x50 |  |
+| `IOThunderboltController` | 0x1a0 | IOService → IORegistryEntry |
+| `IOThunderboltControllerGenericACIO` | 0x1e0 | IOThunderboltController → IOService → IORegistryEntry |
+| `IOThunderboltControllerType5` | 0x1e0 | IOThunderboltControllerGenericACIO → IOThunderboltController → IOService → IORegistryEntry |
+| `IOThunderboltControllerType7` | 0x1e0 | IOThunderboltControllerGenericACIO → IOThunderboltController → IOService → IORegistryEntry |
+| `IOThunderboltData` | 0x28 | OSData |
+| `IOThunderboltDebugBlock` | 0x10 |  |
+| `IOThunderboltDeficitCommandQueue` | 0x48 | IOThunderboltCommandQueue |
+| `IOThunderboltDictionary` | 0x28 | OSDictionary → OSCollection |
+| `IOThunderboltDispatchCallback` | 0x48 |  |
+| `IOThunderboltDispatchContext` | 0x70 | IOThunderboltDispatchContextAbstract → IOCommand |
+| `IOThunderboltDispatchContextAbstract` | 0x40 | IOCommand |
+| `IOThunderboltDispatchContextBlock` | 0x50 | IOThunderboltDispatchContextAbstract → IOCommand |
+| `IOThunderboltDispatchQueue` | 0x58 |  |
+| `IOThunderboltEEPROM` | 0x380 |  |
+| `IOThunderboltFamilyUserClient` | 0x108 | IOUserClient → IOService → IORegistryEntry |
+| `IOThunderboltFindCapabilityCommand` | 0xc0 | IOThunderboltCommand → IOCommand |
+| `IOThunderboltFrameList` | 0x48 |  |
+| `IOThunderboltHopSet` | 0x40 |  |
+| `IOThunderboltI2CCommand` | 0xb0 | IOThunderboltCommand → IOCommand |
+| `IOThunderboltI2CCommandQueue` | 0x48 |  |
+| `IOThunderboltIECSCommand` | 0x90 | IOThunderboltCommand → IOCommand |
+| `IOThunderboltIECSCommandQueue` | 0xe0 |  |
+| `IOThunderboltIECSNub` | 0xa0 | IOService → IORegistryEntry |
+| `IOThunderboltJTAG` | 0x28 |  |
+| `IOThunderboltLinkController` | 0x58 | IOThunderboltAbstractMicro |
+| `IOThunderboltLocalNode` | 0xe8 | IOService → IORegistryEntry |
+| `IOThunderboltMultiMapper` | 0xd8 | IOMapper → IOService → IORegistryEntry |
+| `IOThunderboltNHI` | 0x98 | IOService → IORegistryEntry |
+| `IOThunderboltNHIReceiveRing` | 0x18 |  |
+| `IOThunderboltNHITransmitRing` | 0x18 |  |
+| `IOThunderboltNub` | 0x98 | IOService → IORegistryEntry |
+| `IOThunderboltNumber` | 0x18 | OSNumber |
+| `IOThunderboltPacketLoggerNub` | 0x90 | IOService → IORegistryEntry |
+| `IOThunderboltPath` | 0x160 | IOThunderboltAbstractPath |
+| `IOThunderboltPort` | 0x1a0 | IOThunderboltNub → IOService → IORegistryEntry |
+| `IOThunderboltPortMicro` | 0x50 | IOThunderboltAbstractMicro |
+| `IOThunderboltProtocolListener` | 0x70 | IOThunderboltControlPathListener |
+| `IOThunderboltReceiveCommand` | 0x100 | IOThunderboltCommand → IOCommand |
+| `IOThunderboltReceiveQueue` | 0x98 |  |
+| `IOThunderboltSRAMLog` | 0x28 | IOThunderboltDebugBlock |
+| `IOThunderboltSet` | 0x20 | OSSet → OSCollection |
+| `IOThunderboltSideband` | 0x50 | IOThunderboltAbstractMicro |
+| `IOThunderboltStatistics` | 0x78 |  |
+| `IOThunderboltString` | 0x18 | OSString |
+| `IOThunderboltSwitch` | 0x220 | IOThunderboltNub → IOService → IORegistryEntry |
+| `IOThunderboltSwitchDelegate` | 0x28 |  |
+| `IOThunderboltSwitchDelegateACIO` | 0xb8 | IOThunderboltSwitchDelegate |
+| `IOThunderboltSwitchI2CCommandQueue` | 0x70 | IOThunderboltI2CCommandQueue |
+| `IOThunderboltSwitchIntelJHL8440` | 0x2c8 | IOThunderboltSwitchUSB4 → IOThunderboltSwitchOS → IOThunderboltSwitch → IOThunderboltNub → IOService → IORegistryEntry |
+| `IOThunderboltSwitchIntelJHL9580` | 0x2d0 | IOThunderboltSwitchOS2 → IOThunderboltSwitchOS → IOThunderboltSwitch → IOThunderboltNub → IOService → IORegistryEntry |
+| `IOThunderboltSwitchLC` | 0x260 | IOThunderboltSwitchLegacy → IOThunderboltSwitch → IOThunderboltNub → IOService → IORegistryEntry |
+| `IOThunderboltSwitchLegacy` | 0x228 | IOThunderboltSwitch → IOThunderboltNub → IOService → IORegistryEntry |
+| `IOThunderboltSwitchOS` | 0x2c0 | IOThunderboltSwitch → IOThunderboltNub → IOService → IORegistryEntry |
+| `IOThunderboltSwitchOS2` | 0x2c8 | IOThunderboltSwitchOS → IOThunderboltSwitch → IOThunderboltNub → IOService → IORegistryEntry |
+| `IOThunderboltSwitchType1` | 0x250 | IOThunderboltSwitchLegacy → IOThunderboltSwitch → IOThunderboltNub → IOService → IORegistryEntry |
+| `IOThunderboltSwitchType2` | 0x270 | IOThunderboltSwitchLC → IOThunderboltSwitchLegacy → IOThunderboltSwitch → IOThunderboltNub → IOService → IORegistryEntry |
+| `IOThunderboltSwitchType3` | 0x280 | IOThunderboltSwitchLC → IOThunderboltSwitchLegacy → IOThunderboltSwitch → IOThunderboltNub → IOService → IORegistryEntry |
+| `IOThunderboltSwitchType5` | 0x2c8 | IOThunderboltSwitchUSB4 → IOThunderboltSwitchOS → IOThunderboltSwitch → IOThunderboltNub → IOService → IORegistryEntry |
+| `IOThunderboltSwitchType6` | 0x2d0 | IOThunderboltSwitchUSB4 → IOThunderboltSwitchOS → IOThunderboltSwitch → IOThunderboltNub → IOService → IORegistryEntry |
+| `IOThunderboltSwitchType7` | 0x2d8 | IOThunderboltSwitchOS2 → IOThunderboltSwitchOS → IOThunderboltSwitch → IOThunderboltNub → IOService → IORegistryEntry |
+| `IOThunderboltSwitchUSB4` | 0x2c0 | IOThunderboltSwitchOS → IOThunderboltSwitch → IOThunderboltNub → IOService → IORegistryEntry |
+| `IOThunderboltTRMPolicy` | 0x30 |  |
+| `IOThunderboltTRMPolicyRoot` | 0x68 | IOThunderboltTRMPolicy |
+| `IOThunderboltTimerCommand` | 0x70 | IOCommand |
+| `IOThunderboltTimerCommandQueue` | 0x48 |  |
+| `IOThunderboltTracebuffer` | 0x30 | IOThunderboltDebugBlock |
+| `IOThunderboltTransmitCommand` | 0x108 | IOThunderboltCommand → IOCommand |
+| `IOThunderboltTransmitQueue` | 0x118 |  |
+| `IOThunderboltTunnelDriver` | 0xd0 | IOService → IORegistryEntry |
+| `IOThunderboltTunnelDriverType2` | 0xd0 | IOThunderboltTunnelDriver → IOService → IORegistryEntry |
+| `IOThunderboltUserObjectExporter` | 0x40 |  |
+| `IOThunderboltVSA` | 0xd8 | IOService → IORegistryEntry |
+| `IOThunderboltVSAService` | 0xa0 | IOService → IORegistryEntry |
+| `IOThunderboltWorkLoop` | 0x50 | IOWorkLoop |
+| `IOThunderboltXDDirectory` | 0x18 |  |
+| `IOThunderboltXDLocalPropertiesCache` | 0x50 | IOThunderboltXDPropertiesCache |
+| `IOThunderboltXDPropertiesCache` | 0x40 |  |
+| `IOThunderboltXDPropertiesDirectory` | 0x50 | IOThunderboltDictionary → OSDictionary → OSCollection |
+| `IOThunderboltXDPropertiesEntry` | 0x38 |  |
+| `IOThunderboltXDPropertiesImmediateValue` | 0x38 | IOThunderboltNumber → OSNumber |
+| `IOThunderboltXDPropertiesLeafData` | 0x48 | IOThunderboltData → OSData |
+| `IOThunderboltXDPropertiesLeafText` | 0x38 | IOThunderboltString → OSString |
+| `IOThunderboltXDomainLink` | 0x1a8 | IOService → IORegistryEntry |
+| `IOThunderboltXDomainPath` | 0x1a8 | IOThunderboltAbstractPath |
+| `IOThunderboltXDomainReceivePath` | 0x1a8 | IOThunderboltXDomainPath → IOThunderboltAbstractPath |
+| `IOThunderboltXDomainService` | 0xa8 | IOService → IORegistryEntry |
+| `IOThunderboltXDomainServiceClient` | 0x218 | IOService → IORegistryEntry |
+| `IOThunderboltXDomainServiceClientManager` | 0xc8 | IOService → IORegistryEntry |
+| `IOThunderboltXDomainServiceClientManagerMergeProperties` | 0x88 | IOProviderPropertyMerger → IOService → IORegistryEntry |
+| `IOThunderboltXDomainTransmitPath` | 0x1a8 | IOThunderboltXDomainPath → IOThunderboltAbstractPath |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x00087d60 off=0x00a67a90-0x00aef7f0 addr=0xfffffe0007a6ba90-0xfffffe0007af37f0 r--/r--   __TEXT            
+	sz=0x0004ad99 off=0x00a681a8-0x00ab2f41 addr=0xfffffe0007a6c1a8-0xfffffe0007ab6f41               __TEXT.__cstring          (CstringLiterals)
+	sz=0x0003bd4b off=0x00ab2f41-0x00aeec8c addr=0xfffffe0007ab6f41-0xfffffe0007af2c8c               __TEXT.__os_log           
+	sz=0x00000b60 off=0x00aeec90-0x00aef7f0 addr=0xfffffe0007af2c90-0xfffffe0007af37f0               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x001c2b7c off=0x0341f610-0x035e218c addr=0xfffffe000a423610-0xfffffe000a5e618c r-x/r-x   __TEXT_EXEC       
+	sz=0x001c20dc off=0x0341f610-0x035e16ec addr=0xfffffe000a423610-0xfffffe000a5e56ec          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000aa0 off=0x035e16ec-0x035e218c addr=0xfffffe000a5e56ec-0xfffffe000a5e618c          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00002251 off=0x04a17758-0x04a199a9 addr=0xfffffe000ba1b758-0xfffffe000ba1d9a9 rw-/rw-   __DATA            
+	sz=0x00000c42 off=0x04a17758-0x04a1839a addr=0xfffffe000ba1b758-0xfffffe000ba1c39a               __DATA.__data             
+	sz=0x00001600 off=0x00000000-0x00001600 addr=0xfffffe000ba1c3a0-0xfffffe000ba1d9a0               __DATA.__common           (Zerofill)
+	sz=0x00000009 off=0x00000000-0x00000009 addr=0xfffffe000ba1d9a0-0xfffffe000ba1d9a9               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x000289b0 off=0x013fd158-0x01425b08 addr=0xfffffe0008401158-0xfffffe0008429b08 rw-/rw-   __DATA_CONST      
+	sz=0x00000460 off=0x013fd158-0x013fd5b8 addr=0xfffffe0008401158-0xfffffe00084015b8         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000460 off=0x013fd5b8-0x013fda18 addr=0xfffffe00084015b8-0xfffffe0008401a18         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00024a28 off=0x013fda18-0x01422440 addr=0xfffffe0008401a18-0xfffffe0008426440         __DATA_CONST.__const            
+	sz=0x00002340 off=0x01422440-0x01424780 addr=0xfffffe0008426440-0xfffffe0008428780         __DATA_CONST.__kalloc_type      
+	sz=0x00000cd0 off=0x01424780-0x01425450 addr=0xfffffe0008428780-0xfffffe0008429450         __DATA_CONST.__kalloc_var       
+	sz=0x00000550 off=0x01425450-0x014259a0 addr=0xfffffe0008429450-0xfffffe00084299a0         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000168 off=0x014259a0-0x01425b08 addr=0xfffffe00084299a0-0xfffffe0008429b08         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 385 at 0x04af89c4
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     81CE9328-C51B-313A-B71A-29DE828A3335
+008: LC_SOURCE_VERSION           6834.40.2.0.0
+009: LC_FUNCTION_STARTS          offset=0x004ac61b8 size=0x1dd8
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `IOThunderboltFamily`
+- `CFBundleIdentifier`: `com.apple.iokit.IOThunderboltFamily`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `IOThunderboltFamily`
+- `CFBundleNumericVersion`: `154370048`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `9.3.3`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `9.3.3`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `IOThunderboltFamily version 9.3.3, Copyright © 2009-2021 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.0`
+- `OSBundleRequired`: `Local-Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/IOThunderboltFamily.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198894888304`
+- `_PrelinkExecutableRelativePath`: `IOThunderboltFamily`
+- `_PrelinkExecutableSize`: `2577629`
+- `_PrelinkExecutableSourceAddr`: `-2198894888304`
+- `_PrelinkKmodInfo`: `-2198828107944`
+
+## Strings (6219) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+First 3000 of 6219.
+
+**[__TEXT.__os_log]**
+
+- `%lldus IOThunderboltSwitchOS2<%p>::configureUpstreamAsymmetricMode - dispatchAsync( IOThunderboltSwitchOS2<%p>::configureUpstreamAsymmetricModeInternal )\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - path %d - route = 0x%llx port = 0x%x hw_bw = %d req_alloc_bw = %d req_bw_avail = %d req_bw = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainROMReadRequest - did not find a matching link, rescan \n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::sendI2CSync - start read phase\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - encodedBytes size %u  updateAddressOffsetValue %u  currentOffset %u\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::submitGated - queue iterate break\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startRemotePathActivation - Path ID %u - deactivation requested, abort\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::addressWrite - i = %d,\tSK = 1, status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readDROM - fSwitch not set in regular mode!\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigPollRead\n`
+- `%lldus IOThunderboltTransmitQueue(%d)::stop\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathTeardownRequest\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainQueue - Path ID %u\n`
+- `%lldus IOThunderboltXDomainSupport::comparePacketToUUIDSwapped - packet uuid = %s, uuid = %s, same = %d\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::identifyHWRevision - could not write cc95 of port 0x%x\n`
+- `%lldus IOThunderboltConfigPrepareToSleepCommand<%p>::processResponse - fErrorCode = 0x%x error_code_received = %d\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::processSendStateChangeNotification -  callback = %p\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - new_port %d route = 0x%llx port = 0x%x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CPollRead\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequestComplete - incoming status = 0x%x, fXDControlRequest = %p, command = %p, fFinalizeWaiting = %u\n`
+- `%lldus IOThunderboltReceiveQueue(%d)::submitWorkToNHI\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::fullScan - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::publishAdapterData - port %x dev %x func %x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - found a service key \n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setPowerState - signal wake\n`
+- `%lldus IOThunderboltControlPath<%p>::submitResponseQueueWorkToTransmitter\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - waiting %u milliseconds for invalid config port\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::acquireDPActivationSemaphore - adapter %p waiting on fDPActivationSemaphore\n`
+- `%lldus IOThunderboltConfigXDomainROMReadRequestCommand<%p>::processResponse - wrong read index, fROMIndex = %d, index = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::createResources - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltController<%p>::free\n`
+- `%lldus IOThunderboltSwitchType6<%p>(0x%llx)::createResources - exit special mode kIOThunderboltSpecialModeSTMC\n`
+- `%lldus IOThunderboltConfigMultiReadCommand<%p>::free\n`
+- `%lldus IOThunderboltPort(FF@FF:%x)::configureStandardProperties - fSwitch = 0x0\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::submitGated - command_deadline = %llu ms queue_command_deadline = %llu ms\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::finalize - done\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::processResponse - xdomain link uuid = %s, local node uuid = %s\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::start completed - status = 0x%x fHIPort = %p\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::configureFromStaticData - status = 0x%08x\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)::tunnelDidDeallocate - interface = %p\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireI2CLock\n`
+- `%lldus IOThunderboltConfigMultiReadCommand<%p>::submit\n`
+- `%lldus IOThunderboltPath<%p>::allocate - (1) allocated input hop id %d for dst port %p status = 0x%x\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::readEntry - asRoot dataOffset=%u dataSizeQuads=%u quadsToCacheEnd=%u entrySizeQuads=%u\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::sendPrepareToSleepMessageToMicro - micro_address = 0x%08x port_set count = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::allocateActivationStatePerPort - entered\n`
+- `%lldus IOThunderboltConnectionManager<%p>::createRootSwitch - device header ptr is null\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addTunnelClientInterface - driver_interface = %p status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::isPortInDPMode - port %d dp_mode %d\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::free\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::getRootSwitchStaticDataForKey - status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainPath - Remote Request = %u, XDomain To Port = %u, XDomain Tx Path = %u, Allocated Remote Hop ID = %u, Allocated XDomain Hop ID = %u, Remote Path UUID %s\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::dropDPActivationSemaphore - adapter %p signaling fDPActivationSemaphore\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::lateSleep - fRestored = %d\n`
+- `%lldus IOThunderboltXDomainSupport::extractUUIDFromPacket - uuid = 0x%llx\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::enableTimeSyncSlaveForPortSynchronous - find port time sync capability for port 0x%x at route = 0x%llx\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processXDomainChild - depth = %d peer_route_string = 0x%llx\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::configureLinkMode\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - add start_port route = 0x%llx port = 0x%x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::installClientInterface - return status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::resubmitXDomainPathCapabilitiesRequest - fFinalizeWaiting = %u\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::sendI2CSync -  start write phase\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache::encodeDictionary - adding encoded bytes for directory entry '%s'\t0x%08x %08x %08x %08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::disableUnusedLinks - port = %d has a dual link port at route 0x%llx port %d\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::processTimeout -  command %p timeout\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processROMRead - fROMIndex = %d, quad_length = %d, fROMSize = %d\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::setupPowerManagement - HAL is on wait for power up\n`
+- `%lldus IOThunderboltConfigReadCommand<%p>::processResponse - PktVerify - This response doesn't match what's expected. length = 0x%x/0x%x port = %d/%d space = %d/%d offset = 0x%x/0x%x sequenceNumber = %d/%d\n`
+- `%lldus IOThunderboltPath<%p>::getNextPortsArray - odd port index\n`
+- `%lldus IOThunderboltConfigReadCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltConfigReadCommand<%p>::processResponse - packet type = error\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 7 (Static Link) done\n`
+- `%lldus IOThunderboltPath<%p>::createPathTable - not enough bandwidth\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - max_link_width = %d current_link_width = %d\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelWillSleepUSB - return\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::start - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::findCandidatePaths - candidate_paths = %p\n`
+- `%lldus IOThunderboltConfigXDomainResponseCommand<%p>::prepareForExecution - route = 0x%llx sn = %d\n`
+- `%lldus IOThunderboltXDPropertiesCache<%p>::buildPropertiesTree done\n`
+- `%lldus IOThunderboltXDPropertiesEntry<%p>::free\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - enable = %d, clear kEE_BB_REQ\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::submitWorkToTransmitter - ERROR: status = 0x%08x\n`
+- `%lldus TBT Timing - Bus scan begin\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - use new path, maximize \n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::initWithCache(parent)\n`
+- `%lldus IOThunderboltConfigPrepareToSleepCommand<%p>::processResponse - packet type = write response\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 1 (Discover Switch) done\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::headChanged - queue empty cancel timeout\n`
+- `%lldus IOThunderboltPath<%p>::configCommandCallback - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - could not create service iterator\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - uid: 0x%llx\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapterSynchronous\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::clientDidSleep\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache::encodeDictionary - encodedBytes text '%s' of size %u, encodedBytes size %u  appended %u  updateAddressOffsetValue %u  currentOffset %u\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::earlyWakeBegin - WARNING: fController == NULL\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientNotReadySync - control request command is in progress, sleep on fXDControlRequest = %p\n`
+- `%lldus IOThunderboltConnectionManager<%p>::createRootSwitch - could not attach NHI port to controller\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getPortLinkID - adapterType = 0x%06x disabled = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequestComplete - remote Service Ready = %u, remote XDomain Max Hop ID = %u, remote Max Credits = %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientNotReadySync - found XDomain Paths not yet deactivated, fLocalServiceReady sleep\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::tunnelDidWake - fIsSleeping = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::setTunnelStartWithTransportPort - activationState = %p transportPort=0x%x fTunnelIsStarted = %d fPendingPorts->getCount() = 0x%x\n`
+- `%lldus IOThunderboltUserObjectExporter::addObject - ERROR: can't make objects\n`
+- `%lldus IOThunderboltControlPath<%p>::startTokenBucketTimer - old timer = %d us, new_timer = %llu us, use the new\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - wait %u milliseconds for training on port %d\n`
+- `%lldus IOThunderboltPort(%x@%llx:%x)::setPortState - old state = %d new state = %d\n`
+- `%lldus Created new service %p\n`
+- `%lldus IOThunderboltXDomainPath<%p>::activateSynchronous - Path ID %u\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getDROM - Error getting DROM from I/O Registry (0x%x)\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::readEEPROM - NVM not loaded! EEC=0x%x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::copyDestinationPort - return port = %p\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::activateXDomainPath - local port = %u, local_hop_id = %u, remote port = %u\n`
+- `%lldus IOThunderboltControlPath<%p>::createTransmitter - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltConfigMultiReadCommand<%p>::prepareForExecution - fOffset = 0x%x fBaseOffset = 0x%x fLength = %u fCurrentCount = %u\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::terminateInvalidClientsOnPort - terminate invalid child port %d\n`
+- `%lldus IOThunderboltPath<%p>::setDestinationPort - fLocalState = %d destination_port = %p\n`
+- `%lldus IOThunderboltController(%d)::updateCLxModeInternal - wakeCLxWaiters fSWObjectionCLxStates=0x%x\n`
+- `%lldus IOThunderboltTunnelDriverType2(%x:%llx:%x)::addAvailableTBTPorts - interface = %p srcPort = %p dstPort = %p\n`
+- `%lldus IOThunderboltXDomainPath<%p>::resubmitXDomainPathSetupCompleteCommand - Path ID %u - deactivation requested, abort\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::doesPortHaveMicro - adapterType = 0x%06x disabled = %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::dataRead - i = %d,\tD0 = 0, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::releaseLock - cannot unlock!\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::destroyPowerManagement\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::tunnelDidActivate - return\n`
+- `%lldus IOThunderboltIECSNub<%p>::isInUse = in_use = %d, fInUse = %d\n`
+- `%lldus IOThunderboltControlPath<%p>::sleep\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - link is up, but dual link was not, recheck\n`
+- `%lldus  02:  %08x   Adapter Type=0x%06x (DisplayPort or HDMI Adapter)`
+- `%lldus IOThunderboltXDomainPath<%p>::startCompleteActivation - Path ID %u - we're done with a remote-initiated activation, submitting path setup complete notification.\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidActivateWithTransportPort - transportPort=0x%x changed=%d return\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::configureRouter - upstream port = %d\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::isPortConnected - port %d connected %d\n`
+- `%lldus IOThunderboltSwitchType6<%p>(0x%llx)::free\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::earlyWake - terminatedAllClients\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::portAllowsDeviceScan - device identification prohibited.\n`
+- `%lldus  04:  %08x   Total Buffers=%d   Non Flow Controlled Buffers=%d\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startRemotePathActivation - Path ID %u - fDeactivationRequested = %u\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::sendPrepareToSleepMessageToMicro - micro_address = 0x%08x the_port = %p peer_port = %p peer_switch = %p\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::getTraceInfo - trace_index = %d trace_type = 0x%x trace_buffer_length = 0x%llx status = 0x%08x\n`
+- `%lldus IOThunderboltTransmitCommand<%p>::bindToMapper - error IOThunderboltTransmitCommand can only be bound to a single mapper. Found %s<%p> but bound to %s<%p>.\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyXDomainPath - done, Path ID %u, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::createRxQueueInternal - done,  Path ID %u, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startRemotePathDeactivation - Path ID %u\n`
+- `%lldus IOThunderboltDispatchContextAbstract<%p>::dispatchWait - fQueue woke up\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigDataRead\n`
+- `%lldus IOThunderboltConfigWriteCommand<%p>::processResponse - packet type = write response\n`
+- `%lldus IOThunderboltVSAService<%p>::publish\n`
+- `%lldus ***** IOThunderboltConnectionManagerType5(%x)::scanDelay - wait %d milliseconds\n`
+- `%lldus IOThunderboltConfigXDomainROMReadRequestCommand<%p>::prepareForExecution - route = 0x%llx sn = %d\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - encodedBytes size %u with status 0x%x\n`
+- `%lldus IOThunderboltXDomainTransmitPath<%p>::startActivation - Path ID %u - Tx: (1) begin local path activation. Call startLocalPathActivation().\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::message - type = 0x%x, state = 0x%x\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::submitGated - deadline = %llu ms\n`
+- `%lldus IOThunderboltXDomainPath<%p>::deactivateSynchronous - Path ID %u\n`
+- `%lldus IOThunderboltIECSCommand<%p>::complete\n`
+- `%lldus IOThunderboltSwitchType6(%x@%llx)::configureRouter - router ready - status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::setAllocatedAndActivatedWithTransportPort - transportPort=0x%x fActualTunnelIsAllocated = %d fActualTunnelIsActivated = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupRequest - done, status = 0x%08x\n`
+- `%lldus IOThunderboltPort<%p>::lowSpeedPeerPort - port = %d has a dual link port at route 0x%llx port %d\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processRemoteDeactivateComplete - Path ID %u - incoming status = 0x%x, command = %p, clearing fRemotePathUUID\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::setAllocatedAndActivatedWithTransportPort - transportPort=0x%x fTunnelIsAllocated = %d fTunnelIsActivated = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupCompleteRequest - done, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::registerTransmitQueue - done,  Path ID %u, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - link_status_command error_code = 0x%08x\n`
+- `%lldus IOThunderboltSwitchLegacy(%x@%llx)::setupTMU - disable TMU\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::enterSpecialMode - port %d about to enable and reset registered state!\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::setTunnelFlags - return flags = %u\n`
+- `%lldus IOThunderboltConnectionManager<%p>::startWakeScan - fConfigurationThreadRunning = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - port %d\n`
+- `%lldus IOThunderboltSwitchType5(%x@%llx)::resetChild - done\n`
+- `%lldus IOThunderboltConfigPollQuadletCommand<%p>::free\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::getMatchingXDomainServiceClient - remote_service_uuid_string = %s\n`
+- `%lldus IOThunderboltVSAService<%p>::unpublish\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processRemoteActivateComplete - done, status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::clientUsingTunnel - interface %p before clientUsingTunnel()\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::finalize\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::publishServices - done status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - retry = %d - child port %d phy state = %d\n`
+- `%lldus IOThunderboltPath<%p>::activate - fLocalState = %d\n`
+- `%lldus IOThunderboltConfigReadQuadletCommand<%p>::complete - incoming status = 0x%08x\n`
+- `%lldus IOThunderboltConfigMultiReadCommand<%p>::processResponse - claimed complete fCurrentCount=%u fCount=%u\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::messagePortClientsWithTransportPort - msg = 0x%08x activationState=%p \n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::portAllowsDeviceScan - device scan prohibited.\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathSetupRequest - done, status = 0x%08x\n`
+- `%lldus IOThunderboltController<%p>::enableSleep - disable sleep - kIOPMDriverAssertionLevelOn\n`
+- `%lldus IOThunderboltControlPath<%p>::newTransmitCommand - command = %p, status = 0x%x\n`
+- `%lldus IOThunderboltLocalNode<%p>::initWithController - could not inherit EFI's Domain UUID, generate a new one`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - Failed CRC8 Verification: 0x%x != 0x%x\n`
+- `%lldus IOThunderboltFamilyUserClient::initWithTask - fHasAdminPrivs = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupCompleteRequest\n`
+- `%lldus  02:  %08x  Adapter Type=0x%06x (USB Type2 Adapter)`
+- `%lldus IOThunderboltPath<%p>::deallocate - fLocalState = %d\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - created work queue (0x%x)\n`
+- `%lldus IOThunderboltXDomainPath<%p>::resubmitXDomainPathSetupRequestCommand - fDeactivationRequested = %u\n`
+- `%lldus IOThunderboltController<%p>::findCapability - had to retry findCap 0x%x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::waitForTunnelSleep - fReadyToReleaseClient = %d\n`
+- `%lldus IOThunderboltConnectionManager<%p>::resetRootSwitch - reset\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::startPortScan - scan_port = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::registerService\n`
+- `%lldus IOThunderboltPath<%p>::processNFCActivationResults - didn't lock, old_value = 0x%08x\n`
+- `%lldus IOThunderboltConfigXDomainROMReadRequestCommand<%p>::processResponse - packet type = interdomain response\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::readBytesSync - read byte\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getDROM - fSwitch = %p fUIDOnlyMode = %d\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setPowerState - kThunderboltPMWakeState\n`
+- `%lldus IOThunderboltSwitchType7<%p>(0x%llx)::free\n`
+- `%lldus IOThunderboltConnectionManager<%p>::enableConfigurationThread\n`
+- `%lldus TBT Timing - Bus scan complete\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processUUIDReadResponse - command = %p, status = 0x%x\n`
+- `%lldus IOThunderboltConfigXDomainUUIDRequestCommand<%p>::processUUIDReadResponse - fProtocolErrorCode = 0x%08x\n`
+- `%lldus Return type 0x%x\n`
+- `%lldus IOThunderboltFindCapabilityCommand(%x@%llx:%x)<%p>::processConfigReadResults - packet[0] = 0x%08x\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::createResources\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::isEnhancedUniDirTMUEnabled - offset = 0x%x data = 0x%08x is_enable = %d status = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::newXDomainResponseCommand - command = %p, status = 0x%x\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainROMChangedRequest = %d\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - working on item %p\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::setDestinationServiceUUID - uuid = %s, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchLegacy(%x@%llx)::isLinkUpInternal - child port %d phy state = %d\n`
+- `%lldus IOThunderboltConfigErrorCommand<%p>::prepareForExecution - route = 0x%llx\n`
+- `%lldus IOThunderboltSwitchType6(%x@%llx)::setupSpecialModesInternal - fSupportedSpecialMode = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequestComplete - done, wake up fXDControlRequest = %p\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyTxQueueInternal - Path ID %u\n`
+- `%lldus IOThunderboltReceiveQueue(%d)::initWithController\n`
+- `%lldus IOThunderboltSwitch(%x@%llx:0x%x)::childDeviceScanForPort - wait_for_training = %d prior_link = %d status = 0x%08x\n`
+- `%lldus IOThunderboltFindCapabilityCommand(%x@%llx:%x)<%p>::submit\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapter - ERROR: dropDPSemaphore failed with 0x%08x\n`
+- `%lldus IOThunderboltConfigXDomainLinkStatusRequestCommand<%p>::prepareForExecution - route = 0x%llx sn = %d\n`
+- `%lldus IOThunderboltController<%p>::start - fTBTFlags 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::areAllClientsAsleep isAsleep=%d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::updateTopologyID - fRouteString = 0x%016llx hi = 0x%08x lo = 0x%08x valid = 0x%x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::publishLinkProperties - port = 0x%x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::controllerWillPowerDown\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathSetupRequest, rx_command = %p, response_ack_command = %p\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processRemoteActivateComplete - remote Path ID %u, remote Allocated Hop ID = %u, remote Allocated XDomain Hop ID = %u\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::ppsAccessSync ACKS returned = 0x%x\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::configureUpstreamAsymmetricMode - wake sleeping threads\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::overrideDROMProperties - InUSB4Mode\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - zero byte buffer\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::setLCCapability smcWriteKey returned = 0x%x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigPhyStateReadComplete - route = 0x%llx, port = %d, state = %d\n`
+- `%lldus IOThunderboltLinkController<%p>::free\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelWillSleepPerTransportPort transportPort=0x%x - waiting for clients to sleep\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::i2cRead - route = 0x%llx, address = 0x%02x, offset = 0x%02x, size = 0x%x\n`
+- `%lldus IOThunderboltConfigResetCommand<%p>::prepareForExecution - route = 0x%llx\n`
+- `%lldus ROM bytes at %p of size 0x%08x:\n`
+- `%lldus IOThunderboltConfigModifyQuadletCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltController(%d)::updateTMUMode - switch_needs_tmu_mode_change = %d route_string = 0x%llx\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::linkPartnerReset - reset success = %d - took %d milliseconds\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::listenerCallback - listener callback - not idle - switch = %p\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - path uses primary lane - discard path %d\n`
+- `%lldus IOThunderboltPath<%p>::allocate - dst_port %p != fDestinationPort %p\n`
+- `%lldus IOThunderboltPath<%p>::doUpdate - 0x%08x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processLocalActivateComplete - Path ID %u - WARNING: got an error, calling cleanUpOnActivationError(), status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO<%p>(0x%llx)::initWithController - acioPortDisable: 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::readEEPROMInternal - thistime %x remaining %x offset %x\n`
+- `%lldus IOThunderboltConfigCompareSwapCommand<%p>::processResponse - PktVerify - This read response doesn't match what's expected. length = 0x%x/0x%x port = %d/%d space = %d/%d offset = 0x%x/0x%x sequenceNumber = %d/%d\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::readEntry - dataOffset=%u dataSizeQuads=%u quadsToCacheEnd=%u entrySizeQuads=%u\n`
+- `%lldus IOThunderboltFindCapabilityCommand(%x@%llx:%x)<%p>::processConfigReadResults - WARNING: cap offset not found (status = 0x%x)\n`
+- `%lldus IOThunderboltXDomainTransmitPath<%p>::processLocalActivateCompleteSuccess - done, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::identifyHWRevision - return status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::exitSpecialMode invalidating port %d\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::installClientInterface - interface = %p\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - done\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::rescanROM\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - Setting properties to Link in IORegistry\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainLinkStateStatusRequest = %d\n`
+- `%lldus IOThunderboltConfigXDomainResponseCommand<%p>::complete\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::sendStateChangeNotificationWithParams -  dispatchAsync( processSendStateChangeNotificationWithParams )\n`
+- `%lldus IOThunderboltVSAService<%p>::free\n`
+- `%lldus IOThunderboltTunnelDriverType2(%x:%llx:%x)::tunnelWillActivate - interface = %p\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::sendI2CSync - send stop\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache::addItemToWorkQueue - done, work queue has %u items, error = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::updateWakeEnables - port_group_offset = 0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::sendControlRequestSynchronous - sleep on fXDControlRequest = %p\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::verifierCallback - CRC error - crc = 0x%08x, calc_crc = 0x%08x\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::configureLinkMode - ufp = (%x@%llx:0x%x), dfp = (%x@%llx:0x%x)\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::getTunnelDriverInterface - port_key = %p status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelDeallocateWithTransportPort - transportPort=0x%x woke up fActualTunnelIsAllocated = %d\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath ------------------------- \n`
+- `%lldus IOThunderboltLocalNode<%p>::createPropertiesCacheCopy - An error (%x) occurred while get a copy of the properties cache\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::getPortSetForBus - port_set = %p\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::writeBytesSync - received NACK\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelSleepWithTransportPort - transportPort=0x%x sleep on fReadyToReleaseClient = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmLocalI2CComplete - read_bytes = 0x%08x, length = %lld\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::findCapability\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainPath - directionXDomainToPort = %u\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::publishVSAConfigTable - protocol_idx=0x%x rsvd3=0x%x \n`
+- `%lldus Thunderbolt (%x@%llx) - Termination delayed > 5s. Driver registration is deferred.\n`
+- `%lldus IOThunderboltPath<%p>::getMinLinkRate - done, min_available_bandwidth = %d\n`
+- `%lldus IOThunderboltConfigNotifyAckCommand<%p>::processRequestComplete - packet type = notify ack\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processUUIDReadResponse - terminate\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::readEntry - Finished reading directory\n`
+- `%lldus IOThunderboltController(%d)::updateTMUMode - current tmu mode = %d, new tmu mode = %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - enable = %d, set kEE_CS\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcLocalConfig - length = %lld, offset = %d, fAddress = 0x%x, command_type = %d\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::dispatchSync(gate) - start\n`
+- `%lldus IOThunderboltController(%d)::updateTMUMode - switch_required_tmu_mode = %d route_string = 0x%llx\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::enableTimeSyncMasterForPortSynchronous - find time sync capability for port 0x%x at route = 0x%llx\n`
+- `%lldus IOThunderboltSwitch(%x@%llx:0x%x)::getLinkTrainingTimeout - timeout = %llu\n`
+- `%lldus IOThunderboltSwitchOS(%d@0x%llx)::routerOperation - packet_data[%d] = 0x%08x\n`
+- `%lldus IOThunderboltXDomainService(%x@%llx)::finalize\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::hostDeviceConnect - fDebugIDRestricted = false\n`
+- `%lldus IOThunderboltLocalNode<%p>::free\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - waiting for kEE_BB_RDY\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::setPortSetReady - ready = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::messagePortClientsWithTransportPort - sending message to destination port at (%x:%llx:%x)\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyRxQueueInternal - done, Path ID %u status = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - dispatchAsync( IOThunderboltLocalNode<%p>::linkStateChange )\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::enablePlugEvents - set notify retry, packet = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - isCaptive:0x%x bandwidth:0x%x\n`
+- `%lldus Error: IOThunderboltSwitchDelegateACIO(%x@%llx)::initWithController Error writing to VSEC register: fACIOVSECRegOffset: 0x%08x, fACIOVSECRegValue: 0x%08x, VSEC Length: %d, offset greater than VSEC Length\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::setDestinationPort - port = %p\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelDeallocateWithTransportPort transportPort=0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupRequest_DEBUG - calling dispatchActivateXDomainPath() for XDomain Path with Path ID %u\n`
+- `%lldus IOThunderboltControlPath<%p>::start - WARNING: rx command count = %d, should be = %d\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::updateUpstreamLinkModeSupport - final values: ufp_asymmetric_support = 0x%08x, dfp_asymmetric_support = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::identifyHWRevision - string_buffer = %s\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::readACIOCounters - reading chunk offset 0x%x, num dwords 0x%x\n`
+- `%lldus IOThunderboltController<%p>::switchForRouteString - depth = %d, port = %d\n`
+- `%lldus IOThunderboltController<%p>::configWriteDWord - WARNING: synchronous call on workloop thread not permitted.\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainPath - Remote Request = %u, XDomain To Port = %u, XDomain Tx Path = %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientReadySync - path capabilities request command woke up, fXDPathCapabilitiesRequest = %p\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::readEntry Adding child %p type 0x%x='%c' with key '%s'\n`
+- `%lldus IOThunderboltLinkController<%p>::initWithController\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::configureSpecialMode - poffset = 0x%x data = 0x%08x mask = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType5<%p>(0x%llx)::free\n`
+- `%lldus TBT Timing - switch 0x%llx port %d wait for training done\n`
+- `%lldus IOThunderboltController<%p>::start - fTBTOptions 0x%08x\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::finalize - success = %d\n`
+- `%lldus Decoded Child Device Configuration base page:\n`
+- `%lldus IOThunderboltPath<%p>::destroyResources\n`
+- `%lldus IOThunderboltConfigCMOverrideCommand<%p>::processResponse - packet type = cm override response\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::earlyWakeComplete - decremented early wake scan count to %u\n`
+- `%lldus IOThunderboltController(%d)::getCountOfTraceHistories - statistics debug block count = %d\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::finalize - waiting on fState = %d fROMChangedRequestInProgress = %d\n`
+- `%lldus IOThunderboltI2CCommand<%p>::free\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::setupSpecialModes - key %s not found\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidDeallocateWithTransportPort transportPort=0x%x - clear allocated and activated\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::getTxQueueForPathID - queue_object = %p\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::clientUsingTunnel\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::sendStateChangeNotification\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::iecsRead - data = 0x%08x... status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - rid: 0x%x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropI2CLockSynchronous - dispatchSync( dropI2CLock )\n`
+- `%lldus IOThunderboltController<%p>::poweredStart - ERROR: status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::sendStateChangeNotificationWithTransportPort - transportPort=0x%x ioportIndex=0x%x isAllocateOp=%d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processDeviceScanResult - fMaxPortNumber %d fUpstreamPortNumber %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - Port number is either 0 or exceeds maximum allowed value!\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getDROM - Error reading DROM from EEPROM (0x%x)\n`
+- `%lldus Error: IOThunderboltSwitchDelegateACIO(%x@%llx)::initWithController Unable to find VSEC block with id: 0x%x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::setAllocatedAndActivated - fTunnelIsAllocated = %d fTunnelIsActivated = %d\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::setAllocatedAndActivated - changed = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelWakeWithTransportPort - transportPort=0x%x fTunnelIsAllocated = %d fTunnelIsActivated = %d\n`
+- `%lldus IOThunderboltConfigReadCommand<%p>::prepareForExecution - route = 0x%llx space = %d port = %d length = %d offset = %d sn = %d\n`
+- `%lldus IOTBTTunnelDPClientInterface(%d)<%p>::clientConnectionDown\n`
+- `%lldus IOThunderboltVSAService<%p>::attach\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - fDriverInterfaceDictionaryByType = %p status = 0x%08x\n`
+- `%lldus IOThunderboltConnectionManager<%p>::scanRootSwitch - device header read status = 0x%x\n`
+- `%lldus IOThunderboltControlPath<%p>::completeCommand - %p command timed out, retries left %u\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getGenericEntry - found type: 0x%x \n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::identifyHWRevision\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsDidWake - return\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - enable = %d, clear kEE_CS, status = 0x%08x\n`
+- `%lldus IOThunderboltControlPath<%p>::completeCommand request = %p\n`
+- `%lldus IOThunderboltVSAService(%x@%llx)::finalize\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - XDomain Request packet unknown domain\n`
+- `%lldus IOThunderboltConfigXDomainLinkStatusRequestCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltPath<%p>::mergeLists - failed to find inflection point\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::wakeAllPortsInternal - LC 1 set SLI bit - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::updateDeviceID - updated device_id = 0x%x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::countActiveClients activeClients=0x%x\n`
+- `%lldus IOThunderboltControlPath<%p>::stopTokenBucketTimer\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::lateSleepPhase3 - waited for sleep ready indication, data = 0x%08x - status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processPathSetupCompleteResponse - Path ID %u - incoming status = 0x%08x, fXDPathSetupCompleteCommand = %p, command = %p, fDeactivationRequested = %u\n`
+- `%lldus IOTBTTunnelClientInterfaceManager<%p>::initWithController - return status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapters - ERROR: acquireSemaphore failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::initWithController acio_fw_configuration: 0x%08x\n`
+- `%lldus IOThunderboltConfigReadQuadletCommand<%p>::processResponse - packet type = read response\n`
+- `%lldus IOThunderboltControlPath<%p>::stop\n`
+- `%lldus IOThunderboltPath<%p>::beginNextActivationWrite - route 0x%llx, src_port = %d, src_hopID = %d, counter_id = %d, packet = 0x%08x %08x %08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainPathCapabilitiesRequest = %d\n`
+- `%lldus IOThunderboltXDPropertiesLeafData<%p>::initWithCache\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireI2CLockSynchronous - ERROR: dispatchSync failed with 0x%08x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigCommandWrite - length = %lld, offset = %d, fAddress = 0x%x, command_type = %d, data=0x%08x\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::identifyHWRevision - HWRev = 1 => 'LR C1'\n`
+- `%lldus IOThunderboltConfigXDomainLinkStatusRequestCommand<%p>::processResponseData - packet type = interdomain response\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setPowerState - kThunderboltPMSleepState\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::submitGated - delta = %llu ms\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireSemaphore - acquired semaphore, 0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>::start\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::dispatchPublishServices\n`
+- `%lldus IOThunderboltSwitchType6(%x@%llx)::configureSpecialModeInternal - poffset = 0x%x data = 0x%08x mask = 0x%08x status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelWakeWithTransportPort transportPort=0x%x\n`
+- `%lldus IOThunderboltReceiveQueue(%d)::submit command = %p\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::resetChild - fChildResetPort = %d reset_port = %p dual_link_port =%p\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - publishing newRootDirectory into newRootPropertiesCache, publish = %u\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - addDriverInterface status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::preConfigureRouter - writing acio_fw_debug 0x%08x\n`
+- `%lldus IOThunderboltConfigCommand - error_port = 0x%x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::startScan - route = 0x%llx\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - link status (2) read retry = %d\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::dispatchWait(lock) - fThreadRunning woke up\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::sendStateChangeNotificationWithParams2 -  status=0x%x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processXDomainChild - port = %d status = 0x%x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::earlyWakeDelayTunnelType - fMaxPortNumber = %d, type = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - path uses a zero hw bandwidth port - discard path %d\n`
+- `%lldus IOThunderboltConnectionManagerType5(%d)::createRootSwitch - return status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::activateSynchronous - already activated\n`
+- `%lldus IOThunderboltTimerCommand<%p>::complete - target = %p, action = %p fTimeout = %lld status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::readEEPROMInternal DROM Length %x \n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - parsing entry at offset 0x%x\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::dropDPAdapterSynchronous - ERROR: dropDPAdapter failed with 0x%08x\n`
+- `%lldus IOThunderboltXDomainReceivePath<%p>::processLocalDeactivateCompleteSuccess - Path ID %u\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - port 0 to current list\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::romChangedCommandCallback - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltConfigXDomainUUIDRequestCommand<%p>::prepareForExecution - route = 0x%llx sn = %d\n`
+- `%lldus IOThunderboltFindCapabilityCommand(%x@%llx:%x)<%p>::processConfigReadResults - ERROR: exceeded max reads!\n`
+- `%lldus IOThunderboltXDomainReceivePath<%p>::startRemotePathDeactivation - done, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::prepareForTermination - waiting on fSerialDispatchQueue\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::finalize\n`
+- `%lldus IOThunderboltConfigXDomainLinkStatusRequestCommand<%p>::complete\n`
+- `%lldus IOThunderboltController<%p>::configModifyDWordWithMask - WARNING: synchronous call on workloop thread not permitted.\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::2setPowerState - return\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::free\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::wake\n`
+- `%lldus IOThunderboltControlPath<%p>::startTokenBucketTimer - start timer for %llu us\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - ERROR: could not fetch VID (0x%08x)\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::setupIECSCommandQueue - find LC capability for switch at route = 0x%llx\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelWillSleepPerTransportPort transportPort=0x%x - changed=%d return\n`
+- `%lldus IOThunderboltPath<%p>::configCommandCallback - command completion in illegal state = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcLocalConfigComplete - incoming status = 0x%08x, command = %p\n`
+- `%lldus IOThunderboltXDomainReceivePath<%p>::startLocalPathActivationConfigure - Path ID %u - Rx: (2) src (%u:0x%llx:0x%x) src hop ID range (%u-%u) dst (%u:0x%llx:0x%x) dst hop ID range (%u-%u)\n`
+- `%lldus IOThunderboltController<%p>::processSetPowerState - kThunderboltPMSleepState\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::checkPathsDisabledByPortType - protocol_flags = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::overrideDeviceHeader\n`
+- `%lldus IOThunderboltControlPath<%p>::newReceiveCommand - command = %p, status = 0x%x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::enterIdleState\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::sendI2CSync\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::addressWrite - i = %d,\tDI = 1, status = 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::hostDeviceConnect - cable_connected = %d status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::resetChild - done\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - add lists for ports > 1\n`
+- `%lldus IOThunderboltConfigResetCommand<%p>::complete\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - building newRootPropertiesCache properties tree, publish = %u\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::earlyWakeBegin - incremented early wake scan count to %u\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readDROM - DROM Offset 0x%x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::exitSpecialMode disabling and invalidating port %d\n`
+- `%lldus IOThunderboltPath<%p>::setSourcePort - fLocalState = %d source_port = %p\n`
+- `%lldus IOThunderboltHopSet<%p>::allocateHopIDInRangeForPathWithCounter - path = %p, range = (%d - %d), out_hop_id = %p, out_counter = %p, max_counter = %d\n`
+- `%lldus IOThunderboltSwitchOS(%d@0x%llx)::routerOperation - opcode write status = 0x%08x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::configCommandCallback - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::ppsAccessSync READ addr=0x%02x, reg=0x%02x, length=%llu\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidActivateWithTransportPort - set activated and allocated\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 9 (Register New) begin\n`
+- `%lldus IOThunderboltSwitchOS(%d@0x%llx)::routerOperation - write data and metadata, status = 0x%08x\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::hostDeviceConnect - fDebugTransportRestricted = false\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelWillDeactivateWithTransportPort - transportPort=0x%x changed=%d return\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::loadPortMap - fPortMap = %p fPortMapEntryCount = %d status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processPathCapabilitiesRequestComplete - path capabilities request unsuccessful, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS2(%x:%llx)::checkPathsDisabledByPortType - paths_disabled = %d for port type 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::finalize - port % d - path starts here, deactivate = %p\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::initResources - creating entry from cache %p with offset 0x%x\n`
+- `%lldus IOThunderboltControlPath<%p>::createTokenBucket - fTokenBucketEnabled=%d fTokenBucketBytesPerSecond=%d fTokenBucketTimerThreshold=%d fTokenBucketBurstLimit=%d\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::setPowerState - unknown power state %d\n`
+- `%lldus IOThunderboltPath<%p>::doHopDeactivations - skipping invalid hop_index %d\n`
+- `%lldus IOThunderboltProtocolListener<%p>::processResponse - packet_type = %u\n`
+- `%lldus IOThunderboltReceiveCommand<%p>::complete - fStatus = 0x%08x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processPathSetupRequestResponse - Path ID %u - incoming status = 0x%08x, fXDPathSetupRequestCommand = %p, command = %p, fDeactivationRequested = %u\n`
+- `%lldus IOThunderboltConfigXDomainLinkStatusRequestCommand<%p>::processResponseData - pdf = %d\n`
+- `%lldus IOThunderboltConfigXDomainLinkChangeRequestCommand<%p>::processResponseData - pdf = %d\n`
+- `%lldus IOThunderboltController(%d)::updateCLxModeInternal - sw_clx_objection=0x%x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::destroyPowerManagement\n`
+- `%lldus IOThunderboltPath<%p>::findCandidatePaths\n`
+- `%lldus IOThunderboltTunnelDriverType2(%x:%llx:%x)::tunnelWillDeactivate - interface = %p\n`
+- `%lldus IOThunderboltDispatchContextAbstract<%p>::dispatchWait(lock) - fQueue woke up\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::setLCCapability - offset = 0x%08x length = 0x%08x count = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmLocalI2CComplete - incoming status = 0x%x, command_type = %d, desc = %p\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::tunnelDidWake - We're awake. Tell the current tunnel state.\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::submitGated - insert command %p before command %p\n`
+- `%lldus IOThunderboltXDomainPath<%p>::setSourceServiceUUID - Path ID %u - uuid = %s, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::writeAddressSync\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::setActive on fCIOTransport = %p active = %d\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::dropDPAdapter - ERROR: dropDPSemaphore failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::updateWakeEnables - modified port = %d offset = 0x%x with data = 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::hostDeviceConnect - cable_connected = %d\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::processResponse - resp src uuid = %s, resp dst uuid = %s\n`
+- `%lldus IOThunderboltConfigWriteQuadletCommand<%p>::complete - incoming status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processLocalDeactivateComplete - Path ID %u, incoming status = 0x%x, path = %p\n`
+- `%lldus IOThunderboltConfigXDomainPathControlRequestCommand<%p>::prepareForExecutionInternal - tx_command = %p\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::earlyWake - ERROR: cable_state is NULL.\n`
+- `%lldus IOThunderboltConfigCommand - end of route\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScan - scan port %d adapter = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathTeardownComplete - incoming status = 0x%x, xdomain_path = %p, fFinalizeWaiting = %u\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - Failed CRC32 Verification: 0x%x != 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readSynchronous - Error getting DROM 0x%x\n`
+- `%lldus IOThunderboltConfigWriteQuadletCommand<%p>::free\n`
+- `%lldus IOThunderboltController<%p>::incrementScanCount - fScanCount = %d\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::createTunnelInterfaceManager - attach status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processChild - current_port = %p, child_switch_port = %p, child inactive = %d, current inactive = %d\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::decrementScanCount\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - overstepped buffer size!\n`
+- `%lldus IOThunderboltXDomainTransmitPath<%p>::processRemoteDeactivateCompleteSuccess - Path ID %u\n`
+- `%lldus IOThunderboltController<%p>::shutdown\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setI2CClockRate - can't find switch for route 0x%llx\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequestComplete - incoming status = 0x%x, fXDPathCapabilitiesRequest = %p, command = %p, fFinalizeWaiting = %u\n`
+- `%lldus  01:  %08x   CCS=%d BCS=%d  Max Counters=%d   Next Cap Ptr=0x%02x\n`
+- `%lldus IOThunderboltPort(FF@FF:%x)::getChipType - fSwitch = 0x0\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::readEntry - busType 0x%x 0x%x version 0x%x\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::readEntry - numOfEntries = %u\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readSynchronous - status = 0x%x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::tunnelDidDeallocate - return\n`
+- `%lldus IOThunderboltIECSNub<%p>::setInUse - in_use = %d, fInUse = %d\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::0setPowerState - state = %ld\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processXDomainChild - port = %d - has_internal_peer %u\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::read8051 - ERROR: failed to find capability ( 0x%08x )\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::getMaxHardwareBandwidth - max bw = %u\n`
+- `%lldus IOThunderboltConfigResetCommand<%p>::processResponse - fErrorCode = 0x%x error_code_received = %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - portNum: 0x%x\n`
+- `%lldus IOThunderboltController<%p>::poweredStart\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyRxQueueInternal - removing Rx Queue for key = \"%s\"\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::clientWillWake\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::free\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 2 (Discover Ports) done\n`
+- `%lldus TBT Timing - Power manager wake\n`
+- `%lldus IOThunderboltConfigPollQuadletCommand<%p>::timerCommandCallback - incoming status = 0x%08x, command = %p\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - waiting for kEE_BB_RDY fEECRegisterCache = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::acquireDPAdapter - ERROR: dropDPSemaphore failed with 0x%08x\n`
+- `%lldus IOThunderboltTransmitQueue(%d)::initWithControllerAndWorkLoop\n`
+- `%lldus IOTBTTunnelDriverInterface<%p>::initWithManager\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::changeTMUMode\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::resetChild - fChildResetPort = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - error adding object to Services dictionary\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readDROMFromRegistry\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::routerOperation - can't find switch for route 0x%llx\n`
+- `%lldus IOTBTTunnelDriverInterface<%p>::free\n`
+- `%lldus IOThunderboltSwitchOS(%d@0x%llx)::routerOperation - operation not supported - status = 0x%08x\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::publish\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::i2cCommandAction - can't find i2c command queue!?\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidActivateWithTransportPort transportPort=0x%x\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::publishVSAConfigTable - status=0x%x length_offset=0x%x vsec_length=0x%x\n`
+- `%lldus IOThunderboltControlPath<%p>::rxCommandCallback - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltConfigCommand - kConfigCommandNotClaimedInvalid - exact route mismatch\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::acquireDPActivationSemaphoreSynchronous - dispatchSync( acquireDPActivationSemaphore )\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processRemoteActivateComplete - Path ID %u - incoming status = 0x%08x, rx_command = %p, fDeactivationRequested = %u\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - register service took > 2s\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - downstream_port = %p, upstream_port = %p\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - done, publish = %u, error = 0x%08x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteStart - length = %lld, fAddress = 0x%x, command_type = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::syncTargetAndNegotiatedWidth - port = %d, negotiated_link_width = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::beginROMChangedNotification\n`
+- `%lldus IOThunderboltConfigXDomainROMChangedRequestCommand<%p>::complete\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::earlyWake - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::readNextROMChunk\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::readBytesSync - set read bit\n`
+- `%lldus IOThunderboltConfigModifyQuadletCommand<%p>::processResponse - read - PktVerify - This response doesn't match what's expected. length = 0x%x/0x%x port = %d/%d space = %d/%d offset = 0x%x/0x%x sequenceNumber = %d/%d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readSynchronous - fUIDOnlyMode = %d\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::setMetadataAndHash - set hash on fCIOTransport = %p hash = %p\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::getAvailableTBTPorts - srcPort=%p dstPort = %p\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startDeactivation - Path ID %u - path setup complete command is in progress, sleep on fXDPathSetupCompleteCommand = %p\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::publishVSAConfigTable - protocol_idx=0x%x protocol_rev=0x%x \n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::dropDPActivationSemaphoreSynchronous - dispatchSync( dropDPActivationSemaphore )\n`
+- `%lldus IOThunderboltPath<%p>::findCandidatePaths - find dst to nhi paths - fDestinationPort = %p\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::setupTMU - Time Synchronization Protocol Not Supported (TSNS) bit is set.\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - DP Port v2 - entryLength: 0x%x hasPreferredPort: 0x%x\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::transportTerminated - cio_transport = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CCommandDataWriteComplete - incoming status = 0x%x, command_type = %d, desc = %p\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::finalize\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 2 (Discover Ports) begin\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 8 (Terminate Invalid) done\n`
+- `%lldus IOThunderboltConfigCompareSwapCommand<%p>::free\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDService - done, error = 0x%08x\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::prepareForExecution - src uuid = %s, dst uuid = %s\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::lateSleepBegin - incremented late sleep scan count to %u\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::getRootDROM - guid = 0x%016llx\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::terminateInvalidClientsOnPort - %d - remove CM version\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::getArrayOfEntriesOfType Releasing root iterator\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - created encodedBytes buffer (0x%x), encodedBytes size = %u\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::earlyWakeComplete\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::submitWorkToTransmitter\n`
+- `%lldus IOThunderboltXDDirectory<%p>::getPropertiesTypeOfObject - ERROR: 0x%x occurred while trying to determine type of object %p\n`
+- `%lldus IOThunderboltSwitchLegacy<%p>(0x%llx)::fullScan - Self-Reset Count read failed 0x%x\n`
+- `%lldus IOThunderboltXDPropertiesLeafText<%p>::free\n`
+- `%lldus IOThunderboltConfigXDomainPathCapabilitiesRequestCommand<%p>::processResponseInternal - fRemoteServiceReady = %u, fRemoteXDomainMaxHopID = %u, fRemoteMaxCredits = %u, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::finalize\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::configureRouter - data = 0x%08x should_configure = %d - status = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::createResponseCommands - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::setPropertiesBytes - cacheBytes result=0x%x\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::readEntry - asRoot with bytes pointer %p\n`
+- `%lldus IOThunderboltPath<%p>::mergeLists - found a loop, discarding\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startRemotePathActivation - Path ID %u - remote path is already activated. Call processRemoteActivateCompleteSuccess().\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - ERROR: could not fetch HW rev (0x%08x)\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::unsetTransportPortToIOPortIndex  status=0x%x - transportPort=0x%x \n`
+- `%lldus IOThunderboltConfigPrepareToSleepCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::loadPortDefaults - simulate hidden dp out port - fPortDefaults last entry = %08x status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientReadySync - path capabilities request command is in progress, sleep on fXDPathCapabilitiesRequest = %p\n`
+- `%lldus IOThunderboltControlPath<%p>::submit - enqueue command = %p onto response queue\n`
+- `%lldus IOThunderboltPort<%p>::lowSpeedPeerPort - port = %d has no peer\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readSynchronous - set Persistence to 0x%x, status = 0x%x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::enterSpecialMode - port %d about to invalidate!\n`
+- `%lldus IOThunderboltController<%p>::didDecrementScanCount - fQuiesceMode changePowerStateToPriv( kThunderboltPMSleepState )\n`
+- `%lldus IOThunderboltController<%p>::processSetPowerState - kThunderboltPMPauseState\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::tunnelDidActivate\n`
+- `%lldus  02:  %08x   Adapter Type=0x%06x (PCIe Adapter)`
+- `%lldus IOThunderboltPath<%p>::doHopDeactivations - dst_route_string = 0x%llx, src_port_number = %d, src_hop_id = %d\n`
+- `%lldus IOThunderboltConfigXDomainRequestCommand<%p>::processResponse - packet type = interdomain response\n`
+- `%lldus IOThunderboltTunnelDriverType2(%x:%llx:%x)::countActiveClients - interface = %p\n`
+- `%lldus IOThunderboltConfigXDomainROMReadRequestCommand<%p>::free\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::createResources - return status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequestComplete - dispatching resubmitXDomainPathCapabilitiesRequest()\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::registerTransmitQueue - Path ID %u, added new Tx Queue %p for key \"%s\"\n`
+- `%lldus IOThunderboltSwitchOS<%p>(0x%llx)::free\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::setupTMU - enable bidir mode early\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::finishTMUSetup\n`
+- `%lldus IOThunderboltLocalNode<%p>::configCommandCallback - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::addDictionaryToWorkQueue - adding non-root directory header entry with key = '%s', uuid = '%s', updateAddressOffset = 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::externalMethod - selector = %d status = 0x%08x\n`
+- `%lldus IOThunderboltControllerType5(%d)::createSwitchForDeviceHeader - Device ID=0x%04x Vendor ID=0x%04x\n`
+- `%lldus IOThunderboltConnectionManager<%p>::scanRootSwitch\n`
+- `%lldus IOThunderboltControlPath<%p>::tokenBucketAcquireTokens - tokens=%d token_deficit=%llu delta=%llu us- wait\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::configureSharedBuffers enable=0x%x shared_credits=0x%lx\n`
+- `%lldus IOThunderboltConfigNotifyAckCommand<%p>::complete\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startCompleteActivation - Path ID %u - we're done with a local-initiated activation. Calling finishCompleteActivation().\n`
+- `%lldus IOThunderboltAbstractMicro<%p>::removeFromPortSet %d - route 0x%llx port %d lane %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::findCapability - fFindCapabilityCommand route=%llx port=0x%x space=%u mask=0x%x value=0x%x\n`
+- `%lldus IOThunderboltPort<%p>::free\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsWillSleepByType - return\n`
+- `%lldus IOThunderboltController<%p>::finalize\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::iecsCommandAction - can't create write descriptor\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::getTraceCount - status = 0x%08x trace_history_count = 0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::localOrRemoteServiceStatusChanged - new activation, allocate and call dispatchActivateXDomainPath()\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - start_switch = %p\n`
+- `%lldus IOThunderboltPath<%p>::findCandidatePaths ------------------------- \n`
+- `%lldus IOThunderboltConnectionManagerType5(%d)::createRootSwitch - fNHIPort = %p, fRootSwitch = %p\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainUUIDRequestV2 = %d\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::earlyWake - call super\n`
+- `%lldus  04:  %08x   Thunderbolt Version=0x%02x   Config Retry Timeout=0x%02x\n`
+- `%lldus IOThunderboltPort<%p>::finalize - port number = %d upstream = %d\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::configureRouter - inUSB4Mode = %d status = 0x%08x\n`
+- `%lldus IOThunderboltConfigNotifyAckCommand<%p>::prepareForExecution - route = 0x%llx\n`
+- `%lldus IOThunderboltConfigCompareSwapCommand<%p>::prepareForExecution - kReadPhase - route = 0x%llx space = %d port = %d offset = %d sn = %d\n`
+- `%lldus IOThunderboltConfigXDomainROMReadRequestCommand<%p>::processResponse - wrong source domain\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsDidWakeByType\n`
+- `%lldus IOThunderboltTransmitQueue(%d)::allocate\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelDeallocateWithTransportPort - transportPort=0x%x sleep on fActualTunnelIsAllocated = %d\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::getRootSwitchStaticDataForKey - hardware_service = %p status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::updateUpstreamLinkModeSupport - done, status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData \n`
+- `%lldus IOThunderboltSwitchUSB4(%x@%llx)::configureRouter - router ready - status = 0x%08x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::configCommandCallback - command completion in illegal state = %d\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - path uses internal link - discard path %d\n`
+- `%lldus IOThunderboltConfigCompareSwapCommand<%p>::processResponse - packet type = write response\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::free\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::incrementClientScanCount - incremented client scan count id %u to %u\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::wakeAllPortsInternal - port NOT in USB mode\n`
+- `%lldus IOThunderboltIECSCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::setLCCapability ACKS returned = 0x%x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigDataWrite - length = %lld, fAddress = 0x%x, command_type = %d\n`
+- `%lldus IOThunderboltController(%d)::getCountOfTraceHistories - statistics + root switch debug block count = %d\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::iecsCommandAction - can't find iecs command queue!?\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::attach\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequest - configured response_command\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - Basic Port - disabled: 0x%x adapterType: 0x%06X\n`
+- `%lldus IOThunderboltController<%p>::processSetPowerState - unknown power state %d\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::createTunnelInterfaceManager\n`
+- `%lldus IOThunderboltConfigXDomainROMReadRequestCommand<%p>::processResponse - wrong destination domain\n`
+- `%lldus IOThunderboltConfigXDomainPathSetupCompleteRequestCommand<%p>::prepareForExecutionInternal - Path ID %u Path UUID %s, fAllocatedHopID = %u, fAllocatedXDomainHopID = %u, status = 0x%08x\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::incrementClientScanCount\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::wakeAllPortsInternal - fSkipEnumeration = true\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapter - setIOReturnParameter( 0x%08x )\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::createTunnelInterfaceManager - hardware_service = %p status = 0x%08x\n`
+- `%lldus  03:  %08x   SBC=%d   Port Number=%d\n`
+- `%lldus IOThunderboltPath<%p>::allocate - allocated input hop id %d for src port %p status = 0x%x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%d@0x%llx)::publishSocketIDs - found port-number = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltController<%p>::systemWillShutdown - kIOMessageSystemWillRestart\n`
+- `%lldus IOThunderboltSwitchType6(%x@%llx)::configureRouter - config ready - status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::setAllocatedAndActivatedWithTransportPort - transportPort=0x%x changed = %d\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::publishVSAConfigTable - protocol_idx=0x%x rsvd0=0x%x \n`
+- `%lldus  07:  %08x   Invalid HopID Errors\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::getTunnelDriverInterface - port = %d\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::earlyWake - terminatedAllClients returned\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::updateUpstreamLinkModeSupport - ufp_supported_link_modes = 0x%08x, dfp_supported_link_modes = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::completeXDomainPathRequestCommand - in-flight command is complete, free up the in-flight request slot\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache::encodeDictionary - working on entry '%s'\n`
+- `%lldus IOThunderboltFindCapabilityCommand(%x)<%p>::createResources - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::configRead\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - modelID: 0x%x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::enablePlugEvents - disable_mask = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterface<%p>::free\n`
+- `%lldus IOThunderboltConfigMultiReadCommand<%p>::processResponse - fErrorCode = 0x%x error_code_received = %d\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireI2CLockSynchronous\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%d@0x%llx)::publishSocketIDs - hardware_service = %p status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::saveSleepState - return status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::resubmitXDomainPathCapabilitiesRequest - fFinalizeWaiting = true, stop sending capabilities requests\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::enableTimeSyncSlaveForPortSynchronous - find time sync vsec capability at route = 0x%llx\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - (1) Check if service key exists, publish = %u, service key = '%s', error = 0x%08x\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::setActive - active = %d lane = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::ppsAccessSync WRITE addr=0x%02x, reg=0x%02x, length=%llu\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateRxQueueInternal - done, Path ID %u, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processUUIDReadResponse - prune duplicate xdomain found_link = %p\n`
+- `%lldus IOThunderboltTunnelDriverType2(%x:%llx:%x)::tunnelDidActivate - interface = %p\n`
+- `%lldus IOThunderboltConfigXDomainPathControlRequestCommand<%p>::processResponseInternal - fCommandStatus = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::setPowerState - unknown power state %d\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache::encodeDictionary - adding directory header to ROM for '%s'\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - creating byte buffer of %u quads\n`
+- `%lldus IOThunderboltConfigReadQuadletCommand<%p>::processResponse - packet type = error\n`
+- `%lldus IOThunderboltController<%p>::updateDevicesConnectedStateContext - active user_client found\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathTeardownRequest - done, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequest - fControlRequestSyncCallback.target = %p, fControlRequestAsyncCallback.target = %p\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::configureRouter - PORT_CS_18 = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainROMReadRequest = %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getGenericEntry - overstepped buffer size!\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - modelRev: 0x%x\n`
+- `%lldus IOThunderboltConfigXDomainLinkChangeRequestCommand<%p>::prepareForExecution - route = 0x%llx sn = %d\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::wake - fIsAsleep = %d power_on_allowed = %d\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::configureUpstreamAsymmetricMode - start waiting for in-progress asymmetric transition (if any)\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::getMaxLinkWidth - port = 0x%x\n`
+- `%lldus IOThunderboltPort<%p>::setSWObjectionCLxStates - waitForCLxChange to 0x%x\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::getArrayOfEntriesOfType Found object of requested type 0x%x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addDriverInterface - type_key = %p status = 0x%08x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigPollTimer\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::dispatchPublishServices - dispatchAsync( publishServices )\n`
+- `%lldus IOThunderboltTransmitQueue(%d)::deallocate\n`
+- `%lldus IOThunderboltXDomainSupport::comparePacketToUUID - packet uuid = 0x%llx, uuid = 0x%llx, same = %d\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::getRootDROM - drom_buffer[0] = 0x%x\n`
+- `%lldus IOThunderboltXDomainReceivePath<%p>::processRemoteActivateCompleteSuccess - Path ID %u - Rx: (2) begin local path activation. Call startLocalPathActivation().\n`
+- `%lldus IOThunderboltControlPath<%p>::fakePlugEvent - unplug = %d, port = %d\n`
+- `%lldus IOThunderboltController<%p>::findCapability - ERROR: findCapability failed with 0x%x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::staticLinkAll - port = %p port number = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::lateSleepPhase2 - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::writeAddressSync - send start\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startLocalPathActivation - Path ID %u - deactivation requested, abort\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::dispatchSync(gate) - finish\n`
+- `%lldus IOThunderboltController(%d)::getTraceHistory - debug block = %p\n`
+- `%lldus IOThunderboltControlPath<%p>::completeCommand - %p command timed out, checkNHIForData\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::dropDPActivationSemaphore - ERROR: adapter = %p, fDPActivationSemaphoreOwner = %p\n`
+- `%lldus IOThunderboltLocalNode<%p>::unpublishXDService\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::finalize\n`
+- `%lldus IOThunderboltConfigCommand<%p>::processResponse - CRC error! crc = 0x%08x, calc_crc = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS<%p>(0x%llx)::finalize\n`
+- `%lldus IOThunderboltXDPropertiesCache<%p>::buildPropertiesTree\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::decrementScanCount - decremented scan count id %u to %u\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::headChanged - head_deadline = %llu ms\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - free_bw = %d length = %d score = %d\n`
+- `%lldus IOThunderboltConfigCMOverrideCommand<%p>::processResponse - pdf = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::createResources - building fPropertiesCache properties tree\n`
+- `%lldus IOThunderboltConnectionManager<%p>::scanRootSwitch - processDeviceScanResults\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::checkPathsDisabledByPortType - paths_disabled = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::registerReceiveQueue - Path ID %u, added new Tx Queue %p for key \"%s\"\n`
+- `%lldus IOThunderboltConnectionManager<%p>::startRescan - startConfigurationThread - fConfigurationThreadRunning = %d fRescanRequested = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - rescan child\n`
+- `%lldus IOThunderboltPort(%x@%llx:%x)::configureFromDesciption - vendor_id = 0x%x device_id = 0x%x revision = 0x%x spec_version = 0x%x fMaxInHopID = 0x%x max_out_hop_id = 0x%x fMaxCredits = 0x%x fAdapterType = 0x%x fPortNumber = 0x%x fByteCounterSupported = 0x%x fLockByeCounterSupported = 0x%x status`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - read link status\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::sendI2CSync - clear target lock\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::setTMUParameters - set avg constant to %d. data = 0x%08x mask = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltConfigWriteCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltController(%d)<%p>::setPowerState processSetPowerState - return status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::allocateActivationStatePerPort - exiting status=0x%x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::linkAll - fSkipEnumeration = true\n`
+- `%lldus IOThunderboltTunnelDriverType2(%x:%llx:%x)::setTunnelSourcePort - interface = %p tbtPort = %p transportPort = 0x%x\n`
+- `%lldus IOThunderboltConfigXDomainROMChangedRequestCommand<%p>::free\n`
+- `%lldus IOThunderboltConfigErrorCommand<%p>::free\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::updateWakeEnables - write device offset = 0x%x data = 0x%08x mask = 0x%08x - status = 0x%08x\n`
+- `%lldus IOThunderboltConfigModifyQuadletCommand<%p>::processResponse - fErrorCode = 0x%x error_code_received = %d\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireI2CLock - locked, 0x%x\n`
+- `%lldus IOThunderboltTransmitQueue(%d)::start\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::readEEPROMInternal set fEEPROMRead\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainPathSetupRequest = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - found an existing service with key = '%s', existingkey64 = 0x%08llx, new service key = '%s', key64 = 0x%08llx, publish = %u\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::dropDPSemaphore\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::createResources - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::iecsWrite - data = 0x%08x... status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::createPathTable - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::getArrayOfEntriesOfType - theKey='%s' theActualObject=%p\n`
+- `%lldus IOThunderboltTransmitQueue(%d)::free\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::copySourcePort - return port = %p\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::checkUIDMatch - status=0x%08x new_uid=0x%016llx old_uid=0x%016llx result=%d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::setupPowerManagement - ERROR: status = 0x%x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::tunnelDidActivate - set activated and allocated\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelSleepWithTransportPort transportPort=0x%x\n`
+- `%lldus IOThunderboltPath<%p>::doHopDeactivations - hop_index = %d\n`
+- `%lldus IOThunderboltController<%p>::configPollDWordWithMask - WARNING: synchronous call on workloop thread not permitted.\n`
+- `%lldus IOThunderboltUserObjectExporter::addObject - ERROR: can't grow object exporter\n`
+- `%lldus IOThunderboltReceiveQueue(%d)::stop\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::enablePlugEvents - data (before) = 0x%08x\n`
+- `%lldus IOThunderboltController<%p>::start - could not create NVRAM /options handle\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::isTunnelInUse\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::waitForTunnelSleep\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::needsEarlyWake - port = %p port number = %d needs early wake = %d\n`
+- `%lldus IOThunderboltPort<%p>::ensureRegistered - registerService\n`
+- `%lldus IOThunderboltPath<%p>::update - dispatchAsync( IOThunderboltPath<%p>::doUpdate )\n`
+- `%lldus IOThunderboltConfigWriteQuadletCommand<%p>::processResponse - packet type = write response\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::getRootDROM - drom_buffer = %p\n`
+- `%lldus IOThunderboltControlPath<%p>::submitRequestQueueWorkToTransmitter\n`
+- `%lldus IOThunderboltConfigXDomainPathSetupRequestCommand<%p>::prepareForExecutionInternal\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::addressWrite - i = %d,\tDI = 0, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType7(%x@%llx)::overrideSupportedCLxStates - clx_states 0x%08x new_clx_states = 0x%08x the_port->getLastNegotiatedLinkWidth() = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::addAvailableTBTPorts - success = %d srcPort=%p dstPort = %p\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::createTunnelInterfaceManager - fTunnelInterfaceManager = %p status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processControlRequest - src service uuid = %s, dst service uuid = %s\n`
+- `%lldus IOThunderboltConfigWriteCommand<%p>::complete\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::syncTargetAndNegotiatedWidth - port = %d, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::discoverMicroForPort\n`
+- `%lldus IOThunderboltI2CCommand<%p>::complete\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - ERROR can't find ports\n`
+- `%lldus IOThunderboltConfigCMOverrideCommand<%p>::processResponse - fErrorCode = 0x%x error_code_received = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDService - removing existing service with ID '%s', publish = %u\n`
+- `%lldus IOThunderboltSwitchDelegateACIO::overrideIsPortDisabled - port_number=0x%X disabled by boot-arg!\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::sleep\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processXDomainChild - port = %d - %u primary_lane = %d\n`
+- `%lldus IOThunderboltPath<%p>::update - fLocalState = %d\n`
+- `%lldus IOThunderboltController(%d)<%p>::setPowerState -  dispatchAsync( processSetPowerState)\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::countActiveClients fTunnelActivationStatePerPort=%p\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::sendControlRequestSynchronous - control request command woke up, fXDControlRequest = %p\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::disableUnusedLinks - port = %d has no peer\n`
+- `%lldus IOThunderboltConfigXDomainCommand<%p>::processResponse - fErrorCode = 0x%x error_code_received = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - link is up, check dual link port = %p\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - ERROR can't allocate NFC\n`
+- `%lldus IOThunderboltConfigCompareSwapCommand<%p>::prepareForExecution - kWritePhase - route = 0x%llx space = %d port = %d offset = %d sn = %d\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::initWithController acio_fw_debug: 0x%08x\n`
+- `%lldus IOTBTTunnelUSBType2ClientInterface(%x@0:0x%x)::stopUsingTunnel\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::clientReady - done, fLocalServiceReady = %u, ready = %u, status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::allocate - (1) allocated input hop id %d for dst port %p dst counter id = %d status = 0x%x\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::updateWakeEnables - port %d is a primary NULL port\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::setPowerState - kThunderboltPMWakeState\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - send kIOThunderboltXDomainLinkStateStatusResponse max_link_width = 0x%x supported_link_speeds = 0x%x\n`
+- `%lldus IOThunderboltLocalNode<%p>::linkStateChange - context = %p port = %p alt_port = %p link_width = 0x%x\n`
+- `%lldus IOThunderboltPort<%p>::deallocateNonFlowControlledCredits - requested = %d, allocated = %d, max = %d, status = 0x%08x\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)::getTunnelDriverInterface - interface_manager = %p\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::sendPrepareToSleepMessageToMicro - this is the root switch in a J40\n`
+- `%lldus IOThunderboltController<%p>::start - ERROR: success = %d\n`
+- `%lldus IOThunderboltPath<%p>::allocate - dst_port->getMaxInHopID = %d\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processPathSetupCompleteResponse - Path ID %u - deactivation requested, abort\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getAuxMicro - found aux micro descriptor of type 0x%x\n`
+- `%lldus IOThunderboltSwitchUSB4(%x@%llx)::configureRouter - write config = 0x%08x - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::setupIECSCommandQueue - find GPIO capability for switch at route = 0x%llx\n`
+- `%lldus IOThunderboltSwitch<%p>::linkAll - fController->updateCLxMode(true)\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - link is up - setPortState for port %p to kPortStateProbedConnected\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::waitForTunnelWake - sleep on fTunnelIsActivated = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::detach\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue::destroyResources\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - Asserting kEE_BB_REQ\n`
+- `%lldus IOThunderboltXDomainTransmitPath<%p>::startDeactivationInternal - Path ID %u\n`
+- `%lldus IOThunderboltUserObjectExporter::createWithOwner\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::registerAll - ports registered.\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - reset status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchLC(%x@%llx)::lateSleepPhase3 - send new sleep request\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropDPAdapter - ERROR: acquireSemaphore failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - tbt_flags = 0x%08x\n`
+- `%lldus IOThunderboltConfigXDomainLinkChangeRequestCommand<%p>::processResponseData - crc = 0x%08x, calc_crc = 0x%08x crc_error = %d\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::earlyWake - returnfIsAsleep = %d\n`
+- `%lldus IOThunderboltUserObjectExporter::free - object exporter %p, fObjectCount = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processXDomainChild - XDomain UUID request took %llu ms - status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::wake - setting XDomain Service Client to Ready, xd_client = %p, %s\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - hasDualLinkPort:%u linkID:%u dualLinkPortRID:0x%x dualLinkPeerPortNum:0x%x microType:0x%x microRID:0x%x microAID:0x%x hasIntPeerPort:%u intPeerPortRID:0x%x intPeerPortNum:0x%x\n`
+- `%lldus IOThunderboltIECSNub<%p>::free\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 1 (Discover Switch) begin\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::invalidateAllClients - upstream = %d type = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::deactivate - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getMicroForPort - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltDispatchContextAbstract<%p>::dispatchWait(gate) - fQueue woke up\n`
+- `%lldus IOThunderboltPath<%p>::doHopDeactivations - ERROR: starting hop deactivations failed with 0x%08x, moving on to NFC\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)::tunnelDidActivate - interface = %p\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::processPlugEvent - invalidateAllClients\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::localOrRemoteServiceStatusChanged - changed_to_ready = %u, fLocalServiceReady = %u, fRemoteServiceReady = %u\n`
+- `%lldus IOThunderboltConfigCommand<%p>::complete - target = %p, action = %p\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::getPortSetForType - portType = %d\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::earlyWakeDelayTunnelType - doing wake delay for tunnel driver: port = %d, type = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::getPacketForPath - index = %d, valid = %d, clearISE = %d\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::wakeAllPortsInternal\n`
+- `%lldus IOThunderboltProtocolListener<%p>(%u)::processResponse - comparing packet and protocol UUIDs\n`
+- `%lldus IOThunderboltController(%d))::lateShutdown - fIsAsleep = %d\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::destroyResources\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startDeactivation - Path ID %u - path setup request command is in progress, sleep on fXDPathSetupRequestCommand = %p\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::setCIOTransport - set fCIOTransport = %p\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::setupSpecialModes - found key = %s fSupportedSpecialMode = 0x%08x temp_status = 0x%08x\n`
+- `%lldus IOThunderboltConfigXDomainCommand<%p>::processResponse - crc = 0x%08x, calc_crc = 0x%08x crc_error = %d\n`
+- `%lldus IOThunderboltHopSet<%p>::allocateHopIDInRangeForPathWithCounter - candidate_hop = %d\n`
+- `%lldus IOThunderboltFindCapabilityCommand(%x@%llx:%x)<%p>::processConfigReadResults - packet[1] = 0x%08x\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::processResponse - wrong destination domain\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::incrementScanCount - incremented scan count id %u to %u\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CCommandWrite2Complete - incoming status = 0x%x, command_type = %d, desc = %p\n`
+- `%lldus IOThunderboltController(%d)::updateCLxModeInternal\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::checkCanEnterLinkModeForPort - port = (%x@%llx:0x%x), mode = %d, link_mode_entry_possible = %u, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processROMRead - more to read\n`
+- `%lldus IOThunderboltController(%d)::getTraceHistory - root switch debug block = %p\n`
+- `%lldus IOThunderboltConfigCommand - kConfigCommandNotClaimedInvalid - error port in route mismatch\n`
+- `%lldus IOThunderboltPath<%p>::pollForQNE - hop_index = %d, dst_route_string = 0x%llx, src_port_number = %d, src_hop_id = %d\n`
+- `%lldus IOThunderboltXDomainPath<%p>::initWithXDomainLink - done, success = %u\n`
+- `%lldus IOThunderboltDispatchContextAbstract<%p>::dispatchWait(lock, held) - sleep on fQueue\n`
+- `%lldus IOThunderboltController<%p>::start - IONVRAM not available\n`
+- `%lldus IOThunderboltTransmitCommand<%p>::complete - fStatus = 0x%08x\n`
+- `%lldus IOThunderboltConfigErrorCommand<%p>::complete\n`
+- `%lldus IOThunderboltController<%p>::decrementClientScanCount - fClientScanCount = %d\n`
+- `%lldus IOThunderboltPath<%p>::destroyPathTable - table = %p count = %d\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::readEEPROMInternal First RO status %x rstatus %x\n`
+- `%lldus IOThunderboltXDomainService<%p>::free\n`
+- `%lldus IOThunderboltConfigXDomainRequestCommand<%p>::prepareForExecution - route = 0x%llx length = %d sn = %d\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::keyForAdapterTypeAndIndex %s\n`
+- `%lldus IOThunderboltSRAMLog(%x@%llx)::readDebugBlock - buffer = %p output_length = 0x%llx log_length = 0x%llx status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyTxQueueInternal - removing Tx Queue for key = \"%s\"\n`
+- `%lldus IOThunderboltReceiveQueue(%d)::start\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsDidWakeByType - type_key = %s\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - skip_enumeration = %d\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::stop - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::readTraceData - status = 0x%08x trace_index = %d buffer = 0x%016llx length = 0x%llx\n`
+- `%lldus IOThunderboltSideband<%p>::initWithController\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::clientReady - failed in fXDPathCapabilitiesRequest->submitFlowControlled()! status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - path uses secondary lane - discard path %d\n`
+- `%lldus IOTBTTunnelClientInterfaceManager<%p>::handleClose - client = %p\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)::checkPathsDisabledByProtocol - paths_disabled = %d for port type 0x%06x\n`
+- `%lldus IOThunderboltConfigErrorCommand<%p>::processRequestComplete - pdf = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidWake - transportPort=0x%x  fIsSleeping = %d\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - path %d - route = 0x%llx port = 0x%x\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDService - adding new service with key '%s', publish = %u\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - Will process %u current items in work queue\n`
+- `%lldus IOTBTTunnelClientInterfaceManager<%p>::handleIsOpen - client = %p is_open = %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - Size: %u ROM buffer size: %u\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)::createClientInterface - client = %p type = 0x%08x transportPort=0x%x\n`
+- `%lldus TBT Timing (%d) - scan delay begin\n`
+- `%lldus IOThunderboltXDomainPath<%p>::sendActivationCompletion - Path ID %u - status = 0x%08x\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::transportMessage = %p\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapterSynchronous - ERROR: dispatchSync failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::preConfigureRouter - vsec_offset = 0x%x status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::invalidateAllClients - port[%d] = %p\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::adapterCountForType - type = 0X%08x tunnel_count = %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::dataWrite - i = %d,\tSK = 1, status = 0x%08x\n`
+- `%lldus IOThunderboltProtocolListener<%p>(%u)::processResponse - UUIDs match!\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::dropDPAdapter - setIOReturnParameter( 0x%08x )\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainPath - key = \"%s\"\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::readEEPROM - find DFT capability for switch at route = 0x%llx\n`
+- `%lldus IOThunderboltProtocolListener<%p>(%u)::processResponse - pdf = %d\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapter\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::routerOperation - command completed with status = 0x%x\n`
+- `%lldus IOThunderboltSwitchType6(%x@%llx)::configureRouter - not in special mode and directly connected to host - upsteam_port = %p parent_port = %p parent_switch = %p supported_mode = %d\n`
+- `%lldus IOTBTTunnelUSBType2ClientInterface(%x@0:0x%x)::clientDidSleep - return status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapterSynchronous - dispatchSync( acquireDPAdapter, port 0x%x )\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::isLinkUp - connected = %d\n`
+- `%lldus IOThunderboltController(%d)::updateCLxModeInternal enable=0x%x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::setTransportPortToIOPortIndex  status=0x%x - transportPort=0x%x ioPortIndex=0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::pathDeactivationCallback - incoming status = 0x%x, path = %p, fFinalizeWaiting = %u\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::updateUpstreamLinkModeSupport - read UFP, ufp_asymmetric_support = 0x%08x, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::setTargetLinkWidthToMax - port = 0x%x\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::sendPrepareToSleepMessageToMicro - Skipping Setting for IceLake\n`
+- `%lldus IOTBTTunnelDriverInterfaceType2(%d)<%p>::waitForClientStop - fTunnelIsStarted = %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readDROM - DROM lengthOffset 0x%x length %u status 0x%x\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::setupStaticData - Found path disable boot-args = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::start - fRemoteRootSwitchUID = 0x%016llx\n`
+- `%lldus IOThunderboltSwitchIntelJHL9580<%p>(0x%llx)::finalize\n`
+- `%lldus IOThunderboltXDomainPath<%p>::dispatchResubmitXDomainPathSetupCompleteCommand - dispatching resubmitXDomainPathSetupCompleteCommand()\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::initWithController\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::wakeAllPortsInternal - LC %d usb_plugged=%d data=0x%08x temp_status=0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::i2cCommandAction - can't find switch for route 0x%llx\n`
+- `%lldus IOThunderboltConnectionManager<%p>::scanRootSwitch - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processControlRequest - found XDomain Service Client %s\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::processResponse - packet type = interdomain response\n`
+- `%lldus IOThunderboltConfigModifyQuadletCommand<%p>::processResponse - packet type = write response\n`
+- `%lldus IOThunderboltController<%p>::setQuiesceMode - fQuiesceMode = %d, start\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::tunnelDidDeallocate\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::1setPowerState - state = %ld\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::write8051 - timed out waiting for valid to clear\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::addDictionaryToWorkQueue - adding entry with key '%s' type 0x%x ('%c') untyped key '%s' entry %p from dictionary %p\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::registerReceiveQueue - Path ID %u\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - currentCacheServiceEntries has %u items, publish = %u\n`
+- `%lldus IOThunderboltXDomainService<%p>::detach\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupRequest\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteStart - fPortSet = %p\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::waitForTunnelWake - return status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathCapabilitiesRequest - found XDomain Service Client %s\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigPhyStateRead\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::copyDestinationPortWithTransportPort - return tbtPort = %p\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequestComplete - done, wake up fXDPathCapabilitiesRequest = %p\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathRequestFinalizePacket - swapped quad_packet[%d] = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainPathSetupCompleteRequest = %d\n`
+- `%lldus IOThunderboltConfigXDomainROMReadRequestCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startLocalPathActivation - Path ID %u - activating local path, src (%u:0x%08llx:%u) src hop [%u-%u] dst (%u:0x%08llx:%u) dst hop [%u-%u]\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::getDevicesConnectedState - found_devices = %d in_use = %d\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::discoverMicroForPort - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::submitWorkToTransmitter\n`
+- `%lldus IOThunderboltConfigXDomainLinkStatusRequestCommand<%p>::processResponseData - fErrorCode = 0x%x command_status = 0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainPath - adding XDomain Path to dictionary with key \"%s\", new_path = %p, src port = %u, dst port = %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processRemoteServiceReady - fRemoteServiceReady = %u, ready = %u\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::startNextAPMEnable - find PM capability for child port %d\n`
+- `%lldus IOThunderboltConfigResetCommand<%p>::free\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache::encodeDictionary - adding encoded bytes for text entry '%s' \"%s\" \t0x%08x %08x %08x %08x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::%s - Path ID %u - [LUUID=%s RUUID=%s] (XDS=%u LHID=%u XDHID=%u RHID=%u S=0x%08x)\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::findCapability - command completed with status = 0x%x\n`
+- `%lldus IOThunderboltTransmitQueue(%d)::submit command = %p\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::waitForTunnelDeallocate - fTunnelIsAllocated = %d fTunnelIsActivated = %d\n`
+- `%lldus IOThunderboltTransmitCommand<%p>::free\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::setPowerState - unkonwn power state %ld\n`
+- `%lldus IOThunderboltConfigXDomainROMReadRequestCommand<%p>::complete\n`
+- `%lldus IOThunderboltConnectionManager<%p>::createRootSwitch - could not attach root switch to NHI\n`
+- `%lldus IOThunderboltConfigXDomainCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltConfigReadQuadletCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltSRAMLog(%x@%llx)::readDebugBlock - took = %lld ms\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::getSupportedCLxStates - data = 0x%08x clx_states = 0x%x hw_clx_states = 0x%x link_clx_supported = %d status = 0x%08x\n`
+- `%lldus IOThunderboltHopSet<%p>::allocateHopIDInRangeForPathWithCounter - fHopArray[%d].counterEnabled = %d, fHopArray[%d].counterID = %d, fCount = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>::processPathRequestPreparePacket - local node uuid = %s, xdomain link uuid = %s\n`
+- `%lldus IOThunderboltVSAService<%p>::setProperties\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)::setTunnelFlags - interface = %p flags = %u\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processChild - child=0x%llx is persistent\n`
+- `%lldus IOThunderboltXDomainService<%p>::publish\n`
+- `%lldus IOThunderboltPort<%p>::cmReadDWord - out_data = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::configureLinkMode - done, status = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDService - creating service directory using dictionary\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::free\n`
+- `%lldus IOThunderboltXDomainPath<%p>::setRemotePathUUID - Path ID %u - uuid = %s, status = 0x%08x\n`
+- `%lldus IOThunderboltConfigXDomainPathTeardownRequestCommand<%p>::setRemotePathUUID - uuid = %s, status = 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::configReadJTAG - rid = %d port = 0x%x space = 0x%x index = 0x%x data = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::registerAll - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::lateSleepPhase2 - dual link port, quiesce = true\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::readSupportedRouterCapabilities - status = 0x%08x fRouterCapabilities[0] = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::finalize - done with deactivations, clear fXDomainPaths\n`
+- `%lldus IOThunderboltTunnelDriverType2(%x:%llx:%x)::waitForClientStop - interface = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CCommandWrite2\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::setupSpecialModes - hardware_service = %p status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::childDeviceScanForPort - packet = 0x%08x 0x%08x 0x%08x 0x%08x 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processChild - configRead child=0x%llx persist token_data=0x%x @ offset=0x%x status=0x%x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::earlyWake - port = %p port number = %d found tunnel driver = %p\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - in_port = %p, in_port_num = %d, out_port = %p out_port_num = %d\n`
+- `%lldus IOThunderboltConfigResetCommand<%p>::processResponse - packet type = reset response\n`
+- `%lldus IOThunderboltConfigCommand<%p>::free\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::enableTimeSyncMasterForPortSynchronous - write 0x%08x to offset 0x%x for port 0x%x at route = 0x%llx status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - src_to_nhi_list = %p status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::discoverMicroForPort - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteConfigPhyStateReadComplete - error, complete now\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::allocateActivationStatePerPort - allocated succssfully\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::discoverXDomainLinks - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltConfigCompareSwapCommand<%p>::processResponse - packet type = read response\n`
+- `%lldus IOThunderboltXDPropertiesCache<%p>::getRootNonDirectoryEntries\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::tunnelDidDeallocate - clear allocated and activated\n`
+- `%lldus IOTBTTunnelDPClientInterface(%d)<%p>::clientConnectionUp\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::lateSleepComplete - decremented late sleep scan count to %u\n`
+- `%lldus IOThunderboltConfigPollQuadletCommand<%p>::processConfigReadResults - fReadData = 0x%08x fMask = 0x%08x fValue = 0x%08x\n`
+- `%lldus IOThunderboltDispatchContextAbstract<%p>::dispatchWait(lock, held) - fQueue woke up\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::start\n`
+- `%lldus IOThunderboltController(%d)::updateCLxMode dispatching a job\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::finalize\n`
+- `%lldus IOThunderboltVSAService<%p>::detach\n`
+- `%lldus IOThunderboltXDPropertiesLeafText<%p>::initWithCache\n`
+- `%lldus IOThunderboltController(%d)::updateTMUMode - override tmu mode = %d\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::sendVDM - can't create descriptor\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::invalidateAllClients - invalidateClientsOnPort(%d)\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::controllerSetPowerState - kThunderboltPMPauseState\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::lateSleepComplete\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::keyForPort - %s\n`
+- `%lldus IOThunderboltConfigCMOverrideCommand<%p>::prepareForExecution - route = 0x%llx\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - return status = 0x%08x\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::lateSleepBegin\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::plugEventAckCallback - startRescan - switch = %p\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::publishAdapterData - Buffer Allocation Operation - metadata = 0x%08x, robuffer[0] = 0x%08x, operation_status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::cleanUpOnActivationError - Path ID %u - done, deactivate_status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::addressWrite - i = %d,\tSK = 0, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequest - done, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::resolveMicros - port = %p fUpstreamPortNumber = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::enableAPM\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - description->pathType = 0x%x startroute = 0x%llx\n`
+- `%lldus IOThunderboltSwitchOS(%d@0x%llx)::routerOperation - metadata = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::beginROMChangedNotification to %llx\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::isPortConnected - port %d connected %d\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::publishServices - found client service key '%s'\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::ppsAccessSync READ data =%s\n`
+- `%lldus IOThunderboltConfigXDomainPathControlRequestCommand<%p>::prepareForExecutionInternal - fRequestDataDWORDLen = %lu, fMaxRequestDataDWORDLen = %lu, fRequestSizeBytes = %u, descriptor len = %llu, status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::getTunnelFlags - return result = %u\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidDeallocateWithTransportPort transportPort=0x%x - return\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::setPowerState - kThunderboltPMWakeState\n`
+- `%lldus IOThunderboltConfigReadCommand<%p>::free\n`
+- `%lldus IOThunderboltAbstractMicro<%p>::setPortSetReady - ready = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::startNextAPMEnable - scan port %d adapter = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::controllerSetPowerState - state = %d\n`
+- `%lldus IOThunderboltSwitchType6(%x@%llx)::configureRouter - enter special mode kIOThunderboltSpecialModeSTMC on local switch\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::start\n`
+- `%lldus IOThunderboltConfigCommand - kConfigCommandNotClaimedInvalid - not exact route mismatch\n`
+- `%lldus IOThunderboltPath<%p>::createResources - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::findCandidatePaths - find src to nhi paths - fSourcePort = %p\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processROMRead - Device revision was: 0x%08X\n`
+- `%lldus IOThunderboltXDomainPath<%p>::completeDeactivation - Path ID %u - fXDState = %u, fDeactivationRequested = %u, status = 0x%08x\n`
+- `%lldus IOThunderboltFindCapabilityCommand(%x@%llx:%x)<%p>::processConfigReadResults - hit DPIn cap workaround port = 0x%x ***don't forget to remove this later***\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::areAllClientsForTransportAsleep clients_asleep=%d\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::sendStateChangeNotificationWithParams - return status = 0x%08x\n`
+- `%lldus IOThunderboltConfigXDomainROMChangedRequestCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CDataRead\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::setDestinationPortWithTransportPort - transportPort = %p\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::setTSPacketInterval - set interval to %d. data = 0x%08x mask = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::earlyWakeDelay - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::submitXDomainPathRequestCommandsToControlPath\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache::addItemToWorkQueue - workType=%u '%s'\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - port %d = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsDidWakeByType - return\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)::isTunnelInUse - interface = %p\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::configureRouter - config ready - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::resolveMicros - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processControlRequest\n`
+- `%lldus IOThunderboltSwitchLegacy(%x@%llx)::switchNeedsExtendedLinkTrainingTimeout - is_legacy_device = %d, parent_needs_extended_link_training = %d, upstream_port = %p, parent_switch_port = %p, parent_switch = %p\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - enable = %d, clear kEE_BB\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::dataWrite - i = %d,\tDI = 0, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::acquireDPAdapter - setIOReturnParameter( 0x%08x )\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelSleepWithTransportPort - transportPort=0x%x woke up fReadyToReleaseClient = %d\n`
+- `%lldus IOThunderboltConnectionManager<%p>::free\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processXDomainChild - port = %d IOThunderboltXDomainLink::withController\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::lateSleepPhase2 - port %d, quiesce = %d\n`
+- `%lldus IOThunderboltPath<%p>::update - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::wake - waiting on fState = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::createPropertiesCacheCopy - will cacheBytes %p of size quads 0x%x\n`
+- `%lldus IOThunderboltConfigXDomainROMChangedRequestCommand<%p>::prepareForExecution - route = 0x%llx sn = %d\n`
+- `%lldus IOThunderboltXDomainReceivePath<%p>::startActivation - Path ID %u - Rx: (1) begin remote path activation. Call startRemotePathActivation().\n`
+- `%lldus TBT Timing (%d) - scan delay done\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::postLocalTime (1) - complete - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::checkUIDMatch - new_uid=0x%016llx old_uid=0x%016llx result=%d\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache::encodeDictionary - adding text data to ROM for '%s'\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processPathSetupRequestResponse - Path ID %u - deactivation requested, abort\n`
+- `%lldus IOThunderboltFindCapabilityCommand(%x@%llx:%x)<%p>::submitInitialConfigRead\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - CRC8: 0x%x Len: 0x%x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::countUsingClients usingClients=0x%x\n`
+- `%lldus IOThunderboltReceiveCommand<%p>::free\n`
+- `%lldus IOThunderboltLocalNode<%p>::registerService\n`
+- `%lldus IOThunderboltConfigReadQuadletCommand<%p>::free\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::finalize\n`
+- `%lldus IOThunderboltController(%d)::updateCLxModeInternal - switch_sw_clx_Objection = 0x%x route_string = 0x%llx (sw_clx_objection=0x%x)\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::childDeviceScanForPort - missing link during early wake at route = 0x%llx port = %d\n`
+- `%lldus IOThunderboltPath<%p>::getNextPortsArray - found a loop, ignoring next port\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - XDomain Request packet src uuid = %s\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteConfigPhyStateRead - route = 0x%llx, port_number = %d, offset = %d\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::updateWakeEnables - write device offset = 0x%x data = 0x%08x mask = 0x%08x - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 8 (Terminate Invalid) begin\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::addPortForMicro - port %d micro_address 0x%x micro_type = %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - waiting for kEE_BB_REQ\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 5 (Wake Links) done\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::isPortConnected - port_number = 0x%02x - offset = %x connected = %d status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - context = %p\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::updateDPPortAffinity\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainPath - done, Path ID %u, status = 0x%08x\n`
+- `%lldus IOThunderboltReceiveQueue(%d)::completeCommand command = %p\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::assignLanes - port = %d - %u\n`
+- `%lldus IOThunderboltSwitch(%x:%llx)::checkPathsDisabledByPortType - paths_disabled = %d for port type 0x%06x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathTeardownRequest - found XDomain Service Client %s\n`
+- `%lldus IOThunderboltControlPath<%p>::submitWorkToTransmitter\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::updateUpstreamLinkModeSupport - read DFP, dfp_asymmetric_support = 0x%08x, status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::getAvailableBandwidth - hw_bandwidth = %d, allocated_bandwidth = %d, available_bandwidth = %d, min_available_bandwidth = %d\n`
+- `%lldus IOThunderboltSwitchOS(%d@0x%llx)::routerOperation - packet_data[%d] (metadata) = 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::i2cCommand\n`
+- `%lldus IOThunderboltConfigCommand - error_route_port = 0x%x command_route_port = 0x%x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::needsEarlyWake - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::readEntry - UUID: %s\n`
+- `%lldus IOThunderboltXDomainReceivePath<%p>::startDeactivationInternal - done, status = 0x%08x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::ppsAccessSync failed SMC access with code = 0x%x at step %d\n`
+- `%lldus IOThunderboltXDomainServiceClient(%x@%llx)::finalize\n`
+- `%lldus IOThunderboltConnectionManager<%p>::resetRootSwitch - topology ID write - packet = 0x%x 0x%x \n`
+- `%lldus IOThunderboltSwitchOS(%d@0x%llx)::routerOperation - write offset = 0x%x opcode_dword = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addTunnelDPOutClientInterface - dp_client_interface = %pn`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::setLCCapability smcReadKey returned = 0x%x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::checkUIDMatch - find DFT capability\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - new_ports_array = %d\n`
+- `%lldus IOThunderboltConfigXDomainResponseCommand<%p>::processRequestComplete - packet type = inter domain response\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - pciDeviceNum:0x%x pciFunctionNum:0x%x isUpAdapter:%u\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::setAllocatedAndActivated - fActualTunnelIsAllocated = %d fActualTunnelIsActivated = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::createPropertiesCacheCopy - cacheBytes result=0x%x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startLocalPathActivation - Path ID %u - local path is already activated. Call processLocalActivateCompleteSuccess().\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readSynchronous\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::syncTargetAndNegotiatedWidth - ERROR: port = %d, negotiated_link_width = %d, last_negotiated_link_width = %d, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::isCIOTransportIdentificationRestricted - the_port = %d is_restricted = %d\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - link_status_command (2) error_code = 0x%08x\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::writeBytesSync\n`
+- `%lldus IOThunderboltConfigXDomainPathTeardownRequestCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)::setTunnelDestinationPort - interface = %p port = %p\n`
+- `%lldus IOThunderboltTransmitCommand<%p>::initWithControllerAndQueue\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathSetupCompleteRequest - done, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::publishAdapterData - publish Buffer Allocation Request = %p count = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::getTransportPortToIOPortIndex  status=0x%x - transportPort=0x%x ioPortIndex=0x%x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::disableUnusedLinks - port = %d has a dual link peer at route 0x%llx port %d\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::sendPlugEventAck - plug_port = 0x%x ack_type = 0x%x\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainLinkStateStatusRequest not ready\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::setMetadataAndHash - set metadata on fCIOTransport = %p hash = %p\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::dispatchWait - fThreadRunning woke up\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::sendControlRequestSynchronous - in_data = %p, in_dword_len = %lu\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::getUIDFromDeviceSpace - uid = 0x%016llx\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::configureCLx - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::checkUIDMatch - reading UID from child DROM\n`
+- `%lldus IOThunderboltController<%p>::enableSleep - enable sleep - kIOPMDriverAssertionLevelOff\n`
+- `%lldus IOThunderboltConfigMultiReadCommand<%p>::processResponse - packet type = error\n`
+- `%lldus IOThunderboltPort<%p>::setPeerPort - port_number = 0x%x alt_port = %p 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::getNextPortsArray - even port index\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startRemotePathActivation - Path ID %u - remote path is not activated. Submit fXDPathSetupRequestCommand.\n`
+- `%lldus IOThunderboltController<%p>::findCapability - route = %llx, port = 0x%x, space = %u, mask = 0x%x, value = 0x%x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::linkAll - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::linkAll - port = %p port number = %d\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::terminateInvalidClientsOnPort - terminate invalid tunnel driver on port %d\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - fRestored = %d\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::tunnelWillSleep - return\n`
+- `%lldus IOThunderboltSwitch(%x@%llx:0x%x)::childDeviceScanForPort - link_is_up = %d status = 0x%08x\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::hostDeviceConnect - fDebugMode = true\n`
+- `%lldus IOThunderboltXDomainServiceClient(%x@%llx)::finalize - service: %s\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::changeTMUMode\n`
+- `%lldus IOThunderboltConfigMultiReadCommand<%p>::processResponse - resubmit fCurrentCount=%u fCount=%u\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::loadPortMap - port_map_buffer = %p status = 0x%08x\n`
+- `%lldus IOThunderboltControlPath<%p>::tokenBucketAcquireTokens - tokens=%d acquired_tokens=%d fTokenBucket=%d\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsDidWake\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteConfigPhyStateRead\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::identifyHWRevision - string_offset = 0x%x string_length = 0x%x status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::disableTMU\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::getClientSetForName - clientName = %s\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::read8051 - dp_vsec_offset = 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::doHopDeactivations - ERROR: submitSynchronous failed with 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - cacheBytes retruned error (0x%x)\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcLocalConfigComplete - read_bytes = 0x%08x, length = %lld\n`
+- `%lldus IOThunderboltControllerType5(%d)::createSwitchForDeviceHeader - Unknown VID 0x%04x DID 0x%04x\n`
+- `%lldus IOThunderboltControlPath(%d)::shutdown\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::disableHPDProcessing - disable = %d\n`
+- `%lldus IOThunderboltController(%d)::createResources - status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::areAllClientsAwake clients_awake=%d\n`
+- `%lldus IOThunderboltPath<%p>::processNFCDeactivationResults - didn't lock, old_value = 0x%08x\n`
+- `%lldus IOThunderboltHopSet<%p>::allocateHopIDInRangeForPathWithCounter - found_free_hop = %d, found_free_counter = %d, out_counter = %p\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::updateWakeEnables - status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelWillSleep transportPort=0x%x \n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::dispatchDestroyXDomainPath - dispatching destroyXDomainPathAndQueue()\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::patchDROM - fSwitch not set in regular mode!\n`
+- `%lldus IOThunderboltXDomainTransmitPath<%p>::processLocalActivateCompleteSuccess - Path ID %u - Tx: (2) begin remote path activation. Call startRemotePathActivation().\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::free\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::createResources - fLock = %p\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3<%p>::initWithManager\n`
+- `%lldus  06:  %08x   HEC Errors\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::publishAdapterData - recvd %d buffer allocation parameters\n`
+- `%lldus IOThunderboltConfigCMOverrideCommand<%p>::processResponse - packet type = error\n`
+- `%lldus IOTBTTunnelDriverInterfaceType2(%d)<%p>::waitForClientStop - sleep on fTunnelIsStarted = %d\n`
+- `%lldus IOThunderboltSwitchLegacy(%x@%llx)::finishTMUSetup\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - isSlotDevice:0x%x isLeafDevice:0x%x requiredBandwidth:0x%x maxBandwidth:0x%x reqBandIn:0x%x maxBandIn:0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyRxQueueInternal - Path ID %u\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::assignLanes\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - (3) Update local properties cache with modified root directory, publish = %u, error = 0x%08x\n`
+- `%lldus IOThunderboltXDomainService<%p>::terminate\n`
+- `%lldus IOThunderboltXDomainPath<%p>::setDestinationServiceUUID - uuid = %s, status = 0x%08x\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)::isClientAsleep - interface = %p\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropI2CLockSynchronous\n`
+- `%lldus IOThunderboltSwitchType6(0x%llx)::needsEarlyWake - always perform early wake scan\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForClientStopWithTransportPort transportPort=0x%x - return status = 0x%08x\n`
+- `%lldus IOThunderboltConfigReadCommand<%p>::processResponse - details = 0x%08x, response port = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::syncTargetAndNegotiatedWidth - bonding_entry_port = %p\n`
+- `%lldus IOThunderboltPath<%p>::hardwareWasReset - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathSetupComplete - incoming status = 0x%x, xdomain_path = %p\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::configWriteJTAG - rid = %d port = 0x%x space = 0x%x index = 0x%x data = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::destroyPowerManagement\n`
+- `%lldus IOThunderboltPath<%p>::doHopDeactivations - starting NFC deactivation\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - waiting for kEE_BB\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::NNNNNfind VSA capability - status=0x%x kVSACapabilityMask=0x%x kVSACapabilityID=0x%x cap_offset=0x%x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - USBType2: add_interface = %d adapter_index = %d status = 0x%08x\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::setHashNotAvailable - set hash on fCIOTransport = %p hash = kHashNotAvailable\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::identifyHWRevision - error = 0x%x, port = 0x%x\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::threadCleanup\n`
+- `%lldus IOThunderboltConnectionManager<%p>::startRescan - fConfigurationThreadRunning = %d fRescanRequested = %d\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - primary_switch = %p secondary_switch = %p\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - done publish + buildPropertiesTree, publish = %u, error = 0x%08x\n`
+- `%lldus IOThunderboltConfigWriteQuadletCommand<%p>::processResponse - fErrorCode = 0x%x error_code_received = %d\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::readACIOCounters - got vsec length: 0x%x, minus header: 0x%x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%d)::aggregateACIOCounters - aggregate counters\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequest - calling sendControlRequestSyncCallback()\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::sendControlRequestAsynchronous - in_data = %p, in_dword_len = %lu\n`
+- `%lldus IOThunderboltControlPath<%p>::completeCommand - %p command timed out, no retries left\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::checkCanEnterLinkModeForPort - ufp = (%x@%llx:0x%x), dfp = (%x@%llx:0x%x)\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::assignLanes - port = %d - has_internal_peer %u\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - waiting for kEE_BB_REQ fEECRegisterCache = 0x%08x\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::setupStaticData - Found path disable flags in EDT = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDService - removing debug property of existing service with ID '%s', publish = %u\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::initWithCache\n`
+- `%lldus IOThunderboltConfigXDomainPathSetupRequestCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::saveSleepState - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - ERROR: could not fetch DID (0x%08x)\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::initWithController Writing to VSEC register: fACIOVSECRegOffset: 0x%08x, fACIOVSECRegValue: 0x%08x, status: 0x%x\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::readTraceData - can't create write descriptor\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::setAllocatedAndActivated - prev_tunnel_is_allocated = %d prev_tunnel_is_activated = %d\n`
+- `%lldus IOThunderboltSRAMLog(%x@%llx)::getSizeInBytes - metadata = 0x%08x operation_status = 0x%08x log_size = 0x%016llx status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - ERROR can't find child switch.\n`
+- `%lldus IOThunderboltXDomainPath<%p>::dispatchResubmitXDomainPathSetupRequestCommand - dispatching resubmitXDomainPathSetupRequestCommand()\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getAuxMicro - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - preferredNullPort: 0x%x\n`
+- `%lldus IOThunderboltProtocolListener<%p>(%u)::processResponse - length = 0x%08x, crc_error = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 5 (Wake Links) begin\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::isCIOTransportRestricted - trm_policy = %p\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::headChanged - queue head changed set new timeout\n`
+- `%lldus IOThunderboltConfigCMOverrideCommand<%p>::complete\n`
+- `%lldus IOThunderboltConnectionManagerType5(%d)::free\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::getArrayOfEntriesOfType Iterating root entries\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::readBytesSync - wait for read\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsWillSleepByType - type_key = %s\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelDeallocateWithTransportPort - transportPort=0x%x fTunnelIsAllocated = %d fTunnelIsActivated = %d\n`
+- `%lldus IOThunderboltPath<%p>::completeUpdate - status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathCapabilitiesRequest - src service uuid = %s, dst service uuid = %s\n`
+- `%lldus IOThunderboltSwitchLC(%x@%llx)::lateSleepPhase3 - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getDROM - Failed to get a reliable DROM (status=0x%x), retry %d...\n`
+- `%lldus IOThunderboltXDomainReceivePath<%p>::processRemoteDeactivateCompleteSuccess - Path ID %u\n`
+- `%lldus IOThunderboltSwitchType6(0x%llx)::configureSpecialModeInternal - write special mode VSEC\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::publishVSAConfigTable - protocol_idx=0x%x rsvd1=0x%x \n`
+- `%lldus IOThunderboltControlPath<%p>::tokenBucketTimerCommandCallback - time to re-evaluate\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::wakeAllPorts - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltPath<%p>::mergeLists - i = %d src_list_port = %p dst_list_port = %p \n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::readEEPROMInternal - << %x\n`
+- `%lldus IOThunderboltLocalNode<%p>::createResources - product = '%s'\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidWake - transportPort=0x%x  We're awake. Tell the current tunnel state.\n`
+- `%lldus  02:  %08x   Topology ID Low\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::discoverMicroForPort - port = %d\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startLocalPathDeactivation - Path ID %u\n`
+- `%lldus IOThunderboltI2CCommandQueue<%p>::createResources - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::sendPrepareToSleepMessageToMicro - micro_address = 0x%08x port_set = %p\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::sendStateChangeNotificationWithParams1 -  status=0x%x\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - ERROR can't allocate in hop id\n`
+- `%lldus IOThunderboltConfigCompareSwapCommand<%p>::processResponse - PktVerify - This write response doesn't match what's expected. length = 0x%x/0x%x port = %d/%d space = %d/%d offset = 0x%x/0x%x sequenceNumber = %d/%d\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::dropDPAdapterSynchronous - ERROR: dispatchSync failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::dropDPAdapter\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::getTSPacketInterval - offset = 0x%x data = 0x%08x interval = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::discoverXDomainLinksForPort - port %d - child read status = 0x%08x\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::isEnhancedUniDirTMUEnabled - is_enable = %d status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - fServices has %u items\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::doesPortHaveInternalPeerPort - portNumber = %d, hasIntPeerPort = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcLocalConfig - register_offset = 0x%x, register_length = %d\n`
+- `%lldus IOThunderboltXDomainReceivePath<%p>::startLocalPathDeactivationFailed - Path ID %u - status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidDeallocateWithTransportPort port=0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::clientReady - cap request = %p, local Service Ready = %u, local XDomain Max Hop ID = %u, local Max Credits = %u\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::staticLinkAll - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainLinkStateChangeRequest = %d\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::wakeAllPortsInternal - port in USB mode\n`
+- `%lldus IOThunderboltPortMicro<%p>::initWithController\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::localOrRemoteServiceStatusChanged - fLocalServiceReady wake\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::doOverrideSupportedCLxStates - new_clx_states=0x%x controllerObjection=0x%x (explicit=%d)\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::sendNotifyAck\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - ERROR can't find peer switch.\n`
+- `%lldus IOThunderboltPath<%p>::configureLinkMode - port 0x%x configuring link mode\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::stop\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathTeardownRequest\n`
+- `%lldus IOThunderboltI2CCommandQueue<%p>::destroyResources\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteStart - route = 0x%llx, port = %d, lane = %d\n`
+- `%lldus IOThunderboltDispatchQueue<%p>:dispatchThread - WARNING: fRunningThreadCount would have gone negative!!!\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::getAvailablePort - transportPort = 0x%x fPendingPorts->getCount() = 0x%x status=0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequest - done, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::registerTransmitQueue - Path ID %u\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::finalize - port %d - path ends here, deactivate = %p\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::attach\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::ppsAccessSync WRITE data =%s\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::areAllClientsAsleep clients_asleep=%d\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - ERROR can't allocate out hop id\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::setupI2CCommandQueue - find LC capability for switch at route = 0x%llx\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::enableTimeSyncSlaveForPortSynchronous - find device time sync capability at route = 0x%llx\n`
+- `%lldus IOThunderboltPath<%p>::createPathTable - first port %p is not fSourcePort %p\n`
+- `%lldus IOThunderboltPath<%p>::getAvailableBandwidth - done, min_available_bandwidth = %d\n`
+- `%lldus %u<%p>: 0x%08x\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - swap byte buffer\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addDriverInterface - fDriverInterfaceDictionaryByType->setObject status = 0x%08x\n`
+- `%lldus IOThunderboltConfigPollQuadletCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::transportTRMStateChanged - cio_transport = %p\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForClientStopWithTransportPort transportPort=0x%x - sleep on fTunnelIsStarted = %d\n`
+- `%lldus IOTBTTunnelUSBType2ClientInterface(%x@0:0x%x)::clientDidSleep\n`
+- `%lldus IOThunderboltPort<%p>::linkPorts - r 0x%llx p %d provider_port = %p r 0x%llx p %d fOutHopSet %p fInHopSet %p\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - free byte buffer\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteStart - length = %lld, fAddress = 0x%x, command_type = %d\n`
+- `%lldus IOThunderboltSwitchType5<%p>(0x%llx)::finalize\n`
+- `%lldus  02:  %08x  Adapter Type=0x%06x (USB Adapter)`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::prepareForTermination, fLocalServiceReady = %u, fRemoteServiceReady = %u\n`
+- `%lldus IOThunderboltConfigWriteCommand<%p>::processResponse - fErrorCode = 0x%x error_code_received = %d from port %u\n`
+- `%lldus IOThunderboltConnectionManagerType5(%d)::createRootSwitch - could not create NHI port\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsWillSleep onlyBlockedClientOnDeallocation=%d\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::sendI2CSync - fStartSent = %d target_lock_set = %d\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::readACIOCounters\n`
+- `%lldus IOThunderboltController(%d)::updateTMUMode\n`
+- `%lldus IOThunderboltController<%p>::sleep\n`
+- `%lldus IOThunderboltConfigReadCommand<%p>::processResponse - packet type = read response\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::setInvalid\n`
+- `%lldus IOThunderboltPath<%p>::destroyPathTable - fPathTable[%d].flags = 0x%x port = %p\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapterSynchronous - ERROR: acquireDPAdapter failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::sendPrepareToSleepMessageToMicro - there is a 3.3V device attached to micro @ 0x%x, disable unplug wake reason\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::iecsCommandAction - can't alloc iecs command!?\n`
+- `%lldus IOThunderboltPort(FF@FF:%x)::configureStandardProperties - eeprom->getPCIDeviceFunction\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::waitForTunnelDeallocate - sleep on fActualTunnelIsAllocated = %d\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::overrideDROMProperties - Not InUSB4Mode\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readSynchronous - fROMVersion = 0x%x calc_value = 0x%x\n`
+- `%lldus IOThunderboltController<%p>::start\n`
+- `%lldus IOThunderboltXDomainServiceClient(%x@%llx)::finalize - unknown service\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::disableUnusedLinks - port = %d prospective peer = %p\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::updateCIOTransportMetadataAndHashForXDomain - trm_policy->setHashNotAvailable()\n`
+- `%lldus IOThunderboltConfigPollQuadletCommand<%p>::createResources - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltController<%p>::decrementScanCount - fScanCount = %d\n`
+- `%lldus IOTBTTunnelUSBType2ClientInterface(%d)<%p>::clientWillWake - return status = 0x%08x\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::createSwitchForDeviceHeader - Unknown VID 0x%04x DID 0x%04x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequest - remote Service Ready = %u, remote XDomain Max Hop ID = %u, remote Max Credits = %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientNotReadySync - path capabilities request command woke up, fXDPathCapabilitiesRequest = %p\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::setRouterCapability - status = 0x%08x enabled = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathSetupCompleteRequest - src service uuid = %s, dst service uuid = %s\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelWillSleepDP - return\n`
+- `%lldus IOThunderboltConnectionManagerType5(%d)::createRootSwitch - could not attach root switch to NHI\n`
+- `%lldus IOThunderboltConfigXDomainPathControlRequestCommand<%p>::initWithController\n`
+- `%lldus IOTBTTunnelUSBType2ClientInterface<%p>::initWithManager\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::iecsRead - route = 0x%llx bus=0x%x device=0x%x address=0x%x length=0x%x flags=0x%x\n`
+- `%lldus IOTBTTunnelDPClientInterface(%d)<%p>::clientConnectionUp - return status = 0x%08x\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::setEnabledCLxStates - set CLx data = 0x%08x mask = 0x%08x\n`
+- `%lldus IOThunderboltXDPropertiesCache<%p>::getXDServices\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::processResponse - req src uuid = %s, req dst uuid = %s\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::decrementClientScanCount\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::isTunnelInitializedWithTransportPort - port=0x%x tunnelWillActivated=%d tunnelIsStarted=%d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - zero length entry!\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireSemaphore\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CDataReadComplete - read_bytes = 0x%08x, length = %lld\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>::attach\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::preConfigureRouter - writing acio_fw_panic 0x%08x\n`
+- `%lldus IOThunderboltController(%d)::start - override tmu mode = %d\n`
+- `%lldus IOThunderboltPath<%p>::allocate\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::configWrite\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::sendStateChangeNotification - return status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%d@0x%llx)::getPathsDisabledForUpdate - could not create NVRAM /options handle\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::discoverXDomainLinksForPort - port %d\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::isCIOTransportRestricted - is_restricted = %d\n`
+- `%lldus IOThunderboltConfigReadQuadletCommand<%p>::prepareForExecution - route = 0x%llx space = %d port = %d offset = %d sn = %d\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::updateWakeEnables - status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - link status read retry = %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getDROMOffset\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidDeallocateWithTransportPort transportPort=0x%x - waiting for clients to stop using tunnel or to sleep\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - length = 0x%08x, crc_error = %d\n`
+- `%lldus TBT W (2): 0x%04x [x]\n`
+- `%lldus IOThunderboltControlPath<%p>::txCommandCallback - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::publishAdapterData - got param_index = 0x%02x, requested_allocation = 0x%04x, key = \"%s\"\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - last neg width = 0x%x, link_status_command = NULL\n`
+- `%lldus IOThunderboltLocalNode<%p>::setPropertiesCache - \n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::clientReady - failed in localOrRemoteServiceStatusChanged()! status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - link training not done - attempt %d - child port %d status = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - discovery_protocol = %d, path_protocol = %d, packet_type = %d, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType6(%x@%llx)::configureRouter - enter special mode kIOThunderboltSpecialModeSTMC on parent switch %p - status = 0x%08x\n`
+- `%lldus IOThunderboltReceiveQueue(%d)::deallocate\n`
+- `%lldus IOThunderboltSwitch(%d@0x%llx)::getPathsDisabledForUpdate - IONVRAM not available\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::updateTopologyID - packet = 0x%08x 0x%08x 0x%08x 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::destroyResources\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processLocalActivateComplete - Path ID %u - incoming status = 0x%x, path = %p, fDeactivationRequested = %u\n`
+- `%lldus IOThunderboltSwitchType6(%x@%llx)::configureRouter - write config valid = 0x%08x - status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::stateChangedNotifyClients fClientInterfaceSet=%p size=0x%x\n`
+- `%lldus IOThunderboltConfigCommand - kConfigCommandNotClaimedInvalid - route mismatch\n`
+- `%lldus IOTBTTunnelDriverInterfaceType2(%d)<%p>::waitForClientStop\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::doesPortHaveInternalPeerPort - adapterType = 0x%06x, disabled = %d\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::sendPrepareToSleepMessageToMicro - address = 0x%02x, micro_type = 0x%x, message = 0x%08x, mode = %d, status = 0x%08x\n`
+- `%lldus IOThunderboltDispatchContext<%p>::callAction\n`
+- `%lldus TBT Timing - switch 0x%llx port %d wait for training start\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::getSWObjectionCLxStates - port_number=0x%x switchSWObjectionsCLxStates=0x%x port->getSWObjectionCLxStates()=0x%x\n`
+- `%lldus IOThunderboltLocalNode<%p>::createResources - root directory publish+buildPropertiesTree result=0x%x\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::updateConfiguredStateForPort - eeprom_version = 0x%x eeprom_revision = %d chip_type = 0x%04x\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::setSourceServiceUUID - uuid = %s, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>::registerService - calling registerService()\n`
+- `%lldus IOThunderboltController(%d)::wakeCLxWaiters - fSWObjectionCLxStates = 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::initWithTask\n`
+- `%lldus IOThunderboltSwitchOS<%p>(0x%llx)::discoverMicroForPort - port = %d\n`
+- `%lldus IOThunderboltXDPropertiesCache<%p>::cacheBytes No initial bytes to copy into cache\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getPCIDeviceFunction - adapterType = 0x%06x - not correct adapter type! (0x%06x)\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - Force unique UID\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::dropDPAdapterSynchronous - dispatchSync( dropDPAdapter, port 0x%x )\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::enterSpecialMode - port %d adapter type = 0x%08x actual adapter type = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequest - no fControlRequestAsyncCallback, continue\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::configureFromStaticData\n`
+- `%lldus IOThunderboltPath<%p>::setRequiredBandwidth - deallocating... error port = 0x%x, port = 0x%x, req bw = %u, hw bw = %u, port req bw allocated = %u, bw available = %u, bw delta = %u, req bw = %u\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsDidWakeByType - interface %p\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)::getTunnelDriverInterface - port is on root switch\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - Could not create a service entry iterator\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::setSourcePort - port = %p\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::areAllClientsForTransportAsleep transportPort=0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientNotReadySync - fLocalServiceReady woke up\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::setupPowerManagement - status = 0x%x\n`
+- `%lldus IOThunderboltPort<%p>::setSWObjectionCLxStates - settting objection to 0x%x\n`
+- `%lldus IOThunderboltConfigXDomainResponseCommand<%p>::free\n`
+- `%lldus IOThunderboltController<%p>::earlyWake - fIsAsleep = %d\n`
+- `%lldus IOThunderboltControllerType7(%d)::createSwitchForDeviceHeader - Unknown VID 0x%04x DID 0x%04x\n`
+- `%lldus IOThunderboltSwitchType6(%x@%llx)::configureRouter - write config = 0x%08x - status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupRequest - key = \"%s\"\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::publishVSAConfigTable - status=0x%08x table_config=0x%x num_of_entries_per_protocol=0x%x num_of_entries_in_table=0x%x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::sendROMChangedNotification - ROM change request in progress\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - append bytes\n`
+- `%lldus IOThunderboltConfigModifyQuadletCommand<%p>::prepareForExecution - kWritePhase - route = 0x%llx space = %d port = %d offset = %d sn = %d\n`
+- `%lldus IOThunderboltSwitchType6(%x@%llx)::overrideDeviceHeader\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::sendPrepareToSleepMessageToMicro - address = 0x%02x micro_type = 0x%02x mode = 0x%02x - status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>::processPathRequestPreparePacket - req src uuid = %s, req dst uuid = %s\n`
+- `%lldus IOThunderboltConfigXDomainRequestCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache::encodeDictionary - adding leaf data to ROM for '%s'\n`
+- `%lldus IOThunderboltConfigPollQuadletCommand<%p>::processConfigReadResults - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::free\n`
+- `%lldus IOThunderboltProtocolListener<%p>(%u)::processResponse - incoming_route = 0x%llx\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::setupIECSCommandQueue - count = %d offset=0x%x fLength=0x%x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CPollReadComplete - incoming status = 0x%x, command_type = %d, desc = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigPhyStateRead - route = 0x%llx, port_number = %d, offset = %d\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::restoreSleepState - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType7(%x@%llx)::readEEPROMInternal - readSynchronous\n`
+- `%lldus IOThunderboltControlPath<%p>::submit - command = %p\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - fSkipEnumeration = true\n`
+- `%lldus IOThunderboltConfigCMOverrideCommand<%p>::free\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainUUIDRequest = %d\n`
+- `%lldus IOThunderboltXDPropertiesImmediateValue<%p>::initWithCache\n`
+- `%lldus IOThunderboltXDomainPath<%p>::resubmitXDomainPathSetupRequestCommand - Path ID %u - deactivation requested, abort\n`
+- `%lldus IOThunderboltFindCapabilityCommand(%x@%llx:%x)<%p>::processConfigReadResults - retry = %u, status = 0x%x, cap_quad = 0x%x, fState = %u\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::checkPathsDisabledByPortType - fPathDisableBootArgs = 0x%08x, fPathDisableByATCBootArgs = 0x%016llx, fPathDisableStaticFlags = 0x%08x, path_disable_flags = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::controllerSetPowerState - kThunderboltPMWakeState\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::write8051 - dp_vsec_offset = 0x%x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsDidWake - interface %p tunnelsDidWake()\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - PCI Port - disabled: 0x%x adapterType: 0x%06X\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getDROMOffset - configRead route=0x%llx offset=0x%x serialnum=0x%x\n`
+- `%lldus IOThunderboltXDomainReceivePath<%p>::processRemoteActivateCompleteSuccess - done, status = 0x%08x\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::processPlugEvent - plugged = %d\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::processPlugEvent - invalidateAllClients returned\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequestComplete - no fControlRequestAsyncCallback, continue\n`
+- `%lldus IOThunderboltConfigCommand<%p>::complete\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addDriverInterface - fDriverInterfaceDictionaryByPort->setObject status = 0x%08x\n`
+- `%lldus IOThunderboltPortMicro<%p>::free\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::externalMethod - ERROR: command requires admin privs (%d)\n`
+- `%lldus IOThunderboltConfigReadCommand<%p>::processResponse - fErrorCode = 0x%x error_code_received = %d from port %u\n`
+- `%lldus IOThunderboltPath<%p>::completeDeactivation\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue::createResources - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CCommandDataWrite\n`
+- `%lldus IOThunderboltConfigXDomainPathControlRequestCommand<%p>::processResponseInternal - fResponseDataDWORDLen = %lu, fMaxResponseDataDWORDLen = %lu, descriptor len = %llu, command_status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::getTunnelFlags\n`
+- `%lldus IOThunderboltReceiveQueue(%d)::free\n`
+- `%lldus IOThunderboltVSAService(%x@%llx)::finalize - terminate service: unknown service\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::lateSleepPhase2 - port %d, empty = true\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::disableTMU\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::sendPrepareToSleepMessageToMicro - lc_address = 0x%08x wake enables = 0x%08x\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::determineWakeReason - fLCOffset = 0x%x reason 0x%04x\n`
+- `%lldus IOThunderboltFindCapabilityCommand(%x)<%p>::free\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::clientUsingTunnel - interface %p after clientUsingTunnel()\n`
+- `%lldus IOThunderboltConfigReadQuadletCommand<%p>::processResponse - fData = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::doesPortHaveDualLinkPort - adapterType = 0x%06x disabled = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - port %d - child read status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addDriverInterface - port_key = %p status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::configureRouter - router ready - status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::submitXDomainPathRequestCommandsToControlPath - submitting request, fXDomainPathRequestCommandInFlight = %p\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::initWithLocalNode\n`
+- `%lldus IOThunderboltXDDirectory::addEntry - adding '%s' : %p to directory %p\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::doesPortHaveMicro - hasMicro = %d\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::updateWakeEnables - port %d is a primary NULL port\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 4 (Activate Port Sets) begin\n`
+- `%lldus IOThunderboltXDomainPath<%p>::setDestinationUUID - uuid = %s, status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - Version: %u\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::acquireDPAdapterSynchronous - ERROR: dispatchSync failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::setupI2CCommandQueue - find I2C capability for switch at route = 0x%llx\n`
+- `%lldus IOThunderboltConnectionManager<%p>::createRootSwitch - could not create NHI port\n`
+- `%lldus IOThunderboltPath<%p>::processNFCActivationResults - incoming status = 0x%08x\n`
+- `%lldus IOThunderboltXDPropertiesCache<%p>::cacheBytes\n`
+- `%lldus IOThunderboltSRAMLog(%x@%llx)::readDebugBlock - output_descriptor = %p\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::discoverMicroForPort - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::lateSleep - port = %p port number = %d found xdomain_link = %p\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::enableTMU - tmu_mode = %d\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::finalize - done waiting on XDomain Path deactivation, Path ID %u, path = %p\n`
+- `%lldus IOThunderboltConfigModifyQuadletCommand<%p>::prepareForExecution - kReadPhase - route = 0x%llx space = %d port = %d offset = %d sn = %d\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - ace_a1_device = %d, efi_support = %d, host_type_3 = %d, enumerate_all_devices = %d\n`
+- `%lldus IOThunderboltVSAService<%p>::initWithPort\n`
+- `%lldus IOThunderboltTunnelDriver<%p>::free\n`
+- `%lldus IOThunderboltConfigXDomainPathCapabilitiesRequestCommand<%p>::processResponseInternal - fCommandStatus = 0x%08x\n`
+- `%lldus IOThunderboltSwitchLegacy<%p>(0x%llx)::fullScan - Self-Reset Count = 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - vendorID: 0x%x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - VID = 0x%08x, kIECSVendorIDTI = 0x%08x\n`
+- `%lldus IOThunderboltController<%p>::setQuiesceMode - fQuiesceMode = %d, stop\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processROMRead - read entire ROM\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelWillSleepPerTransportPort transportPort=0x%x \n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::setPowerState - kThunderboltPMSleepState\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::systemWillShutdown - kIOMessageSystemWillRestart\n`
+- `%lldus IOThunderboltXDPropertiesCache<%p>::cacheBytes - cached bytes at %p of size %u / fCacheSize %u\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processPathSetupCompleteResponseSuccess - Path ID %u - path setup complete notification suceeded, we're done with a remote-initiated activation. Calling finishCompleteActivation().\n`
+- `%lldus IOThunderboltXDDirectory::removeEntry - removing '%s' from directory %p\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - entry_count = %d status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - copy into byte buffer\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::tunnelWillSleep - waiting for clients to sleep\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::hasPCITunnel - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltPath<%p>::allocate - allocated input hop id %d for src port %p src counter id = %d status = 0x%x\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::lateSleepPhase3 - status = 0x%08x\n`
+- `%lldus IOThunderboltConfigNotifyAckCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltXDPropertiesLeafData<%p>::free\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::transportCreated - cio_transport = %p\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::configureLinkMode - ufp required bw allocated = %u, ufp hw bw = %u, ufp max hw bw = %u, dfp required bw allocated = %u, dfp hw bw = %u, dfp max hw bw = %u, bw thresh = %u\n`
+- `%lldus IOThunderboltConfigXDomainRequestCommand<%p>::complete\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::transportMessage - kIOMessageServiceIsTerminated - cio_transport = %p\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - path is a dead end\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CCommandWrite1Complete - incoming status = 0x%x, command_type = %d, desc = %p\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::dispatchWait - sleep on fRunningThreadCount\n`
+- `%lldus IOThunderboltConfigXDomainLinkChangeRequestCommand<%p>::processResponseData - fProtocolErrorCode = 0x%08x\n`
+- `%lldus IOThunderboltController<%p>::incrementClientScanCount - fClientScanCount = %d\n`
+- `%lldus IOThunderboltConfigCommand<%p>::processRequestComplete - PktVerify - Request has mismatched route 0x%llx vs 0x%llx\n`
+- `%lldus IOThunderboltConfigXDomainCommand<%p>::processResponse - unknown pdf = %d\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - fDriverInterfaceDictionaryByPort = %p status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequestComplete - dispatching sendControlResponseAsyncCallback()\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::sendStateChangeNotificationWithParams0 -  status=0x%x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - dual link port = %p state = %d\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::addDictionaryToWorkQueue - dictionary = %p, workQueue = %p, updateAddressOffset = %p\n`
+- `%lldus IOThunderboltConfigModifyQuadletCommand<%p>::processResponse - write - PktVerify - This response doesn't match what's expected. length = 0x%x/0x%x port = %d/%d space = %d/%d offset = 0x%x/0x%x sequenceNumber = %d/%d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::dataRead - i = %d,\tSK = 1, status = 0x%08x\n`
+- `%lldus IOThunderboltConfigWriteQuadletCommand<%p>::prepareForExecution - route = 0x%llx space = %d port = %d offset = %d sn = %d\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::hostDeviceConnect - fDebugIDRestricted = true\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::localOrRemoteServiceStatusChanged - new deactivation, calling dispatchDestroyXDomainPathAndQueue()\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - link link_change_command read retry = %d\n`
+- `%lldus IOThunderboltVSAService<%p>::initWithPort - ERROR: fPort = NULL\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDService - adding debug property of new service with ID '%s', publish = %u\n`
+- `%lldus IOThunderboltDispatchContextAbstract<%p>::dispatchWait(lock) - sleep on fQueue\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::dispatchWait(gate) - sleep on fRunningThreadCount\n`
+- `%lldus IOTBTTunnelUSBType2ClientInterface(%d)<%p>::clientDidSleep fTransportPort=0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::dispatchActivateXDomainPath - dispatching activateXDomainPath()\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::lateSleep - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropI2CLockSynchronous - ERROR: dropDPAdapter failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::postConfigureRouter - vsec_offset = 0x%x status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientReadySync\n`
+- `%lldus IOThunderboltConfigCommand<%p>::processResponse - PktVerify - Response has mismatched route 0x%llx vs 0x%llx\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::updateUpstreamLinkModeSupport\n`
+- `%lldus IOThunderboltPath<%p>::allocate - src_port->getMaxInHopID = %d\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelWillSleepDP\n`
+- `%lldus IOThunderboltControlPath<%p>::submit - enqueue command = %p onto request queue\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 7 (Static Link) begin\n`
+- `%lldus IOTBTTunnelDPClientInterface(%d)<%p>::clientConnectionDown - return status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::doHopDeactivations - no more valid ports\n`
+- `%lldus IOThunderboltController<%p>::switchForRouteString - route = 0x%llx, switch = %p, switch_route = 0x%llx\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::setTunnelStart - fTunnelIsStarted = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateTxQueueInternal - done, Path ID %u, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::discoverXDomainLinksForPort - waiting %u milliseconds for invalid config port\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::updateCIOTransportMetadataAndHashForXDomain\n`
+- `%lldus IOThunderboltPath<%p>::allocate - src_range.start %d > src_range.end %d\n`
+- `%lldus IOThunderboltConfigXDomainUUIDRequestCommand<%p>::free\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::readEntry - reading entry %u at offset quad %u (0x%x)\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainPath - Remote Request = %u, XDomain To Port = %u, XDomain Tx Path = %u, Local XDomain Max Hop ID = %u, Remote XDomain Max Hop ID = %u\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - encodedBytes size %u\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)::getTunnelDriverInterface - tbt_port = %p\n`
+- `%lldus IOThunderboltConfigModifyQuadletCommand<%p>::processResponse - packet type = error\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::hostDeviceConnect - fDebugTransportRestricted = true\n`
+- `%lldus IOTBTTunnelUSBType2ClientInterface(%x@0:0x%x)::clientWillWake - return status = 0x%08x\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::start - VSA Port matched port %p adapterType = 0x%x\n`
+- `%lldus IOThunderboltConfigXDomainCommand<%p>::processResponse - pdf = %d\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::enableUniDirTMU - offset = 0x%x data = 0x%08x mask = 0x%08x enable = %d status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - (2) new_port route = 0x%llx port = 0x%x\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::finalize - wait on XDomain Path deactivation, Path ID %u, path = %p\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::message - got a property changed message, checking for new services to publish\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::enablePlugEvents - enable = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::write8051 - port = 0x%x, space = %d, offset = 0x%08x, value = 0x%08x\n`
+- `%lldus IOThunderboltConfigNotifyAckCommand<%p>::free\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processControlRequest - done, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchUSB4(%x@%llx)::configureRouter - config ready - status = 0x%08x\n`
+- `%lldus IOThunderboltConnectionManager<%p>::disableConfigurationThread\n`
+- `%lldus IOThunderboltXDomainPath<%p>::initWithXDomainLink\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - eepromRev: 0x%x\n`
+- `%lldus IOThunderboltController(%d)::lateSleep - return - fIsAsleep = %d\n`
+- `%lldus IOThunderboltXDomainPath<%p>::resubmitXDomainPathSetupCompleteCommand - fDeactivationRequested = %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientNotReadySync - path capabilities request command is in progress, sleep on fXDPathCapabilitiesRequest = %p\n`
+- `%lldus  02:  %08x   Adapter Type=0x%06x (Thunderbolt Port)`
+- `%lldus IOThunderboltPath<%p>::getNextPortsArray - port is upstream - route = 0x%llx port = 0x%x\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - last neg width = 0x%x max link width = 0x%x supported speeds = 0x%x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processLocalDeactivateComplete - Path ID %u, done, deactivate_complete_status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainTransmitPath<%p>::processRemoteActivateCompleteSuccess - Path ID %u, Tx: (3) we're done. Calling startCompleteActivation().\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::createTxQueueInternal - Path ID %u\n`
+- `%lldus IOThunderboltConnectionManager<%p>::createRootSwitch - fRootSwitch = %p\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::enableTimeSyncSlaveForPortSynchronous - enable = %d\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - primary_port_port = %p secondary_port = %p\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startLocalPathActivation - Path ID %u - fDeactivationRequested = %u\n`
+- `%lldus IOThunderboltConfigWriteCommand<%p>::prepareForExecution - route = 0x%llx space = %d port = %d length = %d offset = %d sn = %d\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - link status (2) target link width = 0x%x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::free - Path ID %u\n`
+- `%lldus IOThunderboltFindCapabilityCommand(%x@%llx:%x)<%p>::processConfigReadResults - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltController<%p>::updateDevicesConnectedStateContext\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainQueue - done, Path ID %u, status = 0x%08x\n`
+- `%lldus ----------------------------------------------------------------------\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 4 (Activate Port Sets) end\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::lateSleep - port = %p port number = %d found tunnel_driver = %p\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::lateSleepPhase2 - port %d, no dual link port, quiesce = true\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigPollTimerComplete\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::free\n`
+- `%lldus IOThunderboltConfigXDomainRequestCommand<%p>::free\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::getArrayOfEntriesOfType Length of Directory %u\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::writeAddressSync - write sddress\n`
+- `%lldus IOThunderboltXDomainPath<%p>::destroyResources - stopping fSerialDispatchQueue\n`
+- `%lldus IOThunderboltConfigXDomainLinkStatusRequestCommand<%p>::processResponseData - packet type = error\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::processPlugEvent - fChildResetPort = %d port = %d rescan = %d\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::uninstallClientInterface - return status = 0x%08x\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::getMaxHardwareBandwidth - per lane bw = %u, supported link modes = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathSetupCompleteRequest, rx_command = %p, response_ack_command = %p\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropDPAdapterSynchronous\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>::detach\n`
+- `%lldus  00:  %08x   Device ID=0x%04x   Vendor ID=0x%04x\n`
+- `%lldus  02:  %08x   Adapter Type=0x%06x (Thunderbolt Native Host Interface Adapter)`
+- `%lldus IOThunderboltSwitchOS(%d@0x%llx)::routerOperation - buffer[%d] = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - link_change_command error_code = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - link status (2) read retry = %d done\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - removing service %p with uuid 0x%llx from fServices array\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::acquireDPAdapter - WARNING: allocation = 0x%08x, returning kIOReturnBusy\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmLocalI2C - length = %lld, offset = %d, fAddress = 0x%x, command_type = %d\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::uninstallClientInterface - interface = %p\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::getRootSwitchStaticDataForKey - compatibility mode - key = %s out_value = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::activateXDomainPath - done, Path ID %u, local_hop_id = %u, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::configureRouter - write config = 0x%08x - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::isPortConnected - port %d connected %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequest - local Service Ready = %u, local XDomain Max Hop ID = %u, local Max Credits = %u\n`
+- `%lldus IOThunderboltConfigCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)::getTunnelDriverInterface - interface = %p\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::setSourcePortWithTransportPort - tbt_port = %p transportPort = 0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::start - ERROR: fSerialDispatchQueue = NULL\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequestComplete - retry path capabilities request\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::writeAddressSync -  check for ack\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::getRootDROM\n`
+- `%lldus IOThunderboltConnectionManager<%p>::earlyWakeScan - done\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - send kIOThunderboltXDomainLinkStateChangeRequest\n`
+- `%lldus IOThunderboltXDPropertiesEntry<%p>::initWithCache\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processPathSetupRequestResponse - Path ID %u - done, wake up fXDPathSetupRequestCommand = %p\n`
+- `%lldus IOThunderboltXDomainPath<%p>::deactivateSynchronous - already deactivated\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addTunnelClientInterface - client_interface = %p status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::destroyPathTable - fPathTable[%d].flags = 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::doHopDeactivations - ERROR: pollForQNE failed with 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::publishServices - fLocalRootSwitchUID = 0x%016llx\n`
+- `%lldus IOThunderboltXDomainReceivePath<%p>::processLocalActivateCompleteSuccess - Path ID %u - Rx: (3) we're done. Calling startCompleteActivation().\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::messagePortClients - sending message to source port at (%x:%llx:%x)\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::finalize\n`
+- `%lldus IOThunderboltConfigWriteQuadletCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::earlyWake - port = %p port number = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathSetupComplete - done, fFinalizeWaiting = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - crc = 0x%08x, calc_crc = 0x%08x crc_error = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::createPropertiesCacheCopy - \n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::lateSleepBegin - WARNING: fController == NULL\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::finalize - done\n`
+- `%lldus IOThunderboltConfigXDomainLinkChangeRequestCommand<%p>::processResponseData - packet type = interdomain response\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::terminateInvalid - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltXDomainService<%p>::initWithLink - ERROR: fLink = NULL\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - waiting for kEE_BB fEECRegisterCache = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::acquireDPAdapterSynchronous\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CPollTimerComplete\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processRemoteServiceReady - fRemoteServiceReady = %u, ready = %u, status = 0x%08x\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::setEnabledCLxStates - data = 0x%08x clx_states = 0x%x status = 0x%08x\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::processTimeout - command_deadline = %llu ms now = %llu ms\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - use new path, shortest\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startLocalPathDeactivation - Path ID %u - done, status = 0x%08x\n`
+- `%lldus IOThunderboltConfigXDomainLinkChangeRequestCommand<%p>::processResponseData - packet type = error\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::areAllClientsAwake\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::copySourcePortWithTransportPort - return port = %p\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::createTunnelInterfaceManager - status = 0x%08x\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::publishVSAConfigTable - protocol_idx=0x%x protocol_setting=0x%x \n`
+- `%lldus ***** IOThunderboltConnectionManager(%x)::scanDelay - wait %d milliseconds\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::verifierCallback - byte length error - byte_length = %llu\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - cache bytes of size %u\n`
+- `%lldus IOThunderboltXDomainPath<%p>::destroyResources - waiting on fSerialDispatchQueue\n`
+- `%lldus IOThunderboltConfigXDomainCommand<%p>::processResponse - Response too big, pdf = 0x%x\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::resetChild - child_route_string = %llx\n`
+- `%lldus IOThunderboltConfigXDomainPathSetupCompleteRequestCommand<%p>::initWithController\n`
+- `%lldus IOTBTTunnelClientInterfaceManager<%p>::handleOpen - client = %p did_open = %d\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)::getTunnelFlags - interface = %p\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientNotReadySync\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 7 (Link) done\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::registerAll - port = %p fUpstreamPortNumber = %d\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - entry key string '%s' key value 0x%016llx \n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::complete\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - NULL Port - disabled: 0x%x adapterType: 0x%06X\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::isUniDirTMUEnabled - offset = 0x%x data = 0x%08x is_enable = %d status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::cleanUpOnActivationError - Path ID %u - status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::dataWrite - i = %d,\tSK = 0, status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::tunnelDidDeallocate - waiting for clients to stop using tunnel or to sleep\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::messagePortClientsWithTransportPort - sending message to source port at (%x:%llx:%x)\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::earlyWake - fIsAsleep = %d\n`
+- `%lldus IOThunderboltConfigCompareSwapCommand<%p>::complete - incoming status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::free\n`
+- `%lldus IOThunderboltConnectionManager<%p>::earlyWakeScan - start\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::setUpstreamTMUParameters - offset = 0x%x data = 0x%08x mask = 0x%08x replenish_n = %d status = 0x%08x\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::processTimeout - now = %llu ms\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::configCommandCallback - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::dataWrite - i = %d,\tDI = 1, status = 0x%08x\n`
+- `%lldus IOThunderboltController(%d)::getTraceHistory - history = %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readDROMFromBuffer - Error getting DROM from I/O Registry (0x%x)\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::publishVSAConfigTable - protocol_idx=0x%x protocol_id=0x%x \n`
+- `%lldus  01:  %08x   Rev=0x%02x   Depth=%d   Max Port=%d   Upstream Port=%d   Next Cap Ptr=0x%02x\n`
+- `%lldus IOThunderboltLocalNode<%p>::setPropertiesCache - New ROM %p Generation %u\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary\n`
+- `%lldus IOThunderboltReceiveQueue(%d)::requestMoreWork\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::getRequiredTMUMode - fTimeSyncNotSupported = true, disabling TMU\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processChild - set Persistence to 0x%x, status = 0x%x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::read8051 - findCapability( port = 0x%x, space = %d, mask = 0x%x, value = 0x%x )\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::lateSleep - setting XDomain Service Client to Not Ready, xd_client = %p, %s\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::setCapabilityOffset - offset = 0x%x\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::loadPortMap - hardware_service = %p status = 0x%08x\n`
+- `%lldus IOThunderboltConfigCompareSwapCommand<%p>::processResponse - packet type = error\n`
+- `%lldus IOThunderboltConfigXDomainResponseCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltFindCapabilityCommand(%x@%llx:%x)<%p>::processConfigReadResults - ERROR: extCapRead encountered fCapabilityOffset == 0\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsWillSleepByType - interface %p\n`
+- `%lldus IOThunderboltConfigWriteQuadletCommand<%p>::processResponse - PktVerify - This response doesn't match what's expected. length = 0x%x/0x%x port = %d/%d space = %d/%d offset = 0x%x/0x%x sequenceNumber = %d/%d\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::updateCableParameters - offset = 0x%x value = 0x%08x current = 0x%08x cached = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::createResources\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - finished link training - child port %d status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processChild - configRead child=0x%llx persist token=0x%x status=0x%x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::doOverrideSupportedCLxStates - new_clx_states=0x%x\n`
+- `%lldus  02:  %08x  Adapter Type=0x%06x (Port is inactive)`
+- `%lldus IOThunderboltSwitchIntelJHL8440<%p>(0x%llx)::finalize\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::i2cCommandAction - command completed with status = 0x%x\n`
+- `%lldus IOTBTTunnelUSBType2ClientInterface(%x@0:0x%x)::clientWillWake\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::writeBytesSync - set write bit\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::ppsAccessSync step %d smcWriteKey returned = 0x%x\n`
+- `%lldus IOThunderboltConfigXDomainLinkChangeRequestCommand<%p>::processResponseData - fErrorCode = 0x%x command_status = 0x%x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::setPowerState - kThunderboltPMPauseState\n`
+- `%lldus IOThunderboltPath<%p>::getNextPortsArray - port has a peer - route = 0x%llx port = 0x%x\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::readEntry key='%s'\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::processXDomainLinkPreload - depth = %d \n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::wake - call super\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - fSourcePort = %p, port num = %d\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths ------------------------- \n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::setPowerState - kThunderboltPMSleepState\n`
+- `%lldus IOThunderboltConfigXDomainPathSetupRequestCommand<%p>::prepareForExecutionInternal - src service uuid = %s, dst service uuid = %s\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - fEECRegisterCache = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::enablePlugEvents - write plug event register, data = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateRxQueueInternal - Path ID %u, max_frame_size = %llu, tx_e2e_hop_id = %u\n`
+- `%lldus IOThunderboltPath<%p>::allocate - (2) allocated input hop id %d for src port %p status = 0x%x\n`
+- `%lldus IOThunderboltVSAService(%x@%llx)::finalize - terminate service: %s\n`
+- `%lldus IOThunderboltConnectionManagerType5(%d)::createRootSwitch - could not attach NHI port to controller\n`
+- `%lldus IOThunderboltConfigXDomainLinkStatusRequestCommand<%p>::free\n`
+- `%lldus IOThunderboltController<%p>::setupPowerManagement - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::loadPortMap - simulate hidden dp out port - fPortDefaults last entry = %08x status = 0x%08x\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::loadPortDefaults - fPortDefaults = %p fPortDefaultsEntryCount = %d status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientReadySync - done\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::sendStateChangeNotification -  dispatchAsync( processSendStateChangeNotification )\n`
+- `%lldus IOThunderboltSwitch(%x@%llx:0x%x)::checkLinkTrainingIsPortConnected - port connected check took - timeTaken = %llu ns start = %llu ns deadline = %llu ns now = %llu ns\n`
+- `%lldus IOThunderboltLocalNode<%p>::sendROMChangedNotifications\n`
+- `%lldus IOThunderboltFindCapabilityCommand(%x)<%p>::initWithController\n`
+- `%lldus IOThunderboltConfigModifyQuadletCommand<%p>::free\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::startDispatchThread - fRunningThreadCount = %d, fMaxThreadCount = %d, fQueueDepth = %d\n`
+- `%lldus IOThunderboltXDomainPath<%p>::createResources - ERROR: fSerialDispatchQueue = NULL\n`
+- `%lldus IOThunderboltSwitch(%x@%llx) - Phase 0 (Configure From Static Data) begin\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::terminateInvalid - port = %p fUpstreamPortNumber = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::i2cWriteDWord - route = 0x%llx, address = 0x%02x, offset = 0x%02x, data = 0x%08x\n`
+- `%lldus IOThunderboltConfigResetCommand<%p>::processResponse - packet type = error\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::setSourceUUID - uuid = %s, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropDPAdapter - ERROR: releaseSemaphore failed with 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::dispatchPublishServices - ERROR: dispatchAsync( publishServices ) failed with 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::i2cCommandAction - can't alloc i2c command!?\n`
+- `%lldus IOThunderboltReceiveCommand<%p>::bindToMapper - error IOThunderboltReceiveCommand can only be bound to a single mapper. Found %s<%p> but bound to %s<%p>.\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - publish = %u\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelWillSleepPCI\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::identifyHWRevision - could not read cc95 of port 0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::createRxQueueInternal - Path ID %u\n`
+- `%lldus IOThunderboltConnectionManager<%p>::destroyResources\n`
+- `%lldus IOThunderboltControlPath<%p>::startTokenBucketTimer - old timer = %d us, new_timer = %llu us, use the old\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - found a candidate\n`
+- `%lldus IOThunderboltPath<%p>::deallocate - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::getAvailableBandwidth - port (%x@%llx:0x%x), consider link mode switch = %d\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::updateWakeEnables - modified port = %d offset = 0x%x with data = 0x%08x and mask = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::needsTMUModeChange tmu_mode=0x%x current_tmu_mode=0x%x needs_change=%d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - object = %p busy_count = %d\n`
+- `%lldus IOThunderboltPort<%p>::lowSpeedPeerPort - port = %d has a dual link peer at route 0x%llx port %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::setupI2CCommandQueue - find I2C capability for switch at route = 0x%llx\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getGenericEntry - type: 0x%x length: %u\n`
+- `%lldus IOThunderboltConfigCMOverrideCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - Could not create new XD service\n`
+- `%lldus IOThunderboltLocalNode<%p>::findXDomainLink - compare uuid = %s, link uuid = %s\n`
+- `%lldus IOThunderboltConfigReadQuadletCommand<%p>::processResponse - fErrorCode = 0x%x error_code_received = %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - CRC32: 0x%x Len: 0x%x\n`
+- `%lldus IOTBTTunnelUSBType2ClientInterface(%d)<%p>::clientDidSleep - return status = 0x%08x\n`
+- `%lldus IOThunderboltReceiveQueue(%d)<%d>::shutdown\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::enableTimeSyncSlaveForPortSynchronous - write 0x%08x to offset 0x%x at route = 0x%llx status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager<%p>::initWithController\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getAuxMicro - ERROR: can't find RID 0x%x\n`
+- `%lldus IOThunderboltConfigPrepareToSleepCommand<%p>::free\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::acquireDPSemaphore\n`
+- `%lldus IOThunderboltControlPath<%p>::tokenBucketAddTokens - tokens=%d fTokenBucket=%d\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::preConfigureRouter - writing acio_fw_config 0x%08x\n`
+- `%lldus IOThunderboltController(%d)::updateCLxModeInternal done getting a list of switches in BFS order\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processRemoteDeactivateComplete - Path ID %u, done, deactivate_complete_status = 0x%08x\n`
+- `%lldus TBT Timing - DROM read done\n`
+- `%lldus IOThunderboltConnectionManager<%p>::wakeScan\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::wakeAllPorts - fDidQuiesce = true, wait 1 second\n`
+- `%lldus IOThunderboltConfigCompareSwapCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache::encodeDictionary - adding encoded bytes for value entry '%s'\t0x%08x %08x %08x %08x\n`
+- `%lldus IOThunderboltFindCapabilityCommand(%x@%llx:%x)<%p>::processConfigReadResults - ext_quad = 0x%08x\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)::setTunnelSourcePort - interface = %p port = %p\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)::createClientInterface - client_interface = %p status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::setTunnelFlags\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::setupStaticData - Found path disable by ATC boot-args = 0x%016llx\n`
+- `%lldus IOThunderboltControllerGenericACIO<%p>::shutdown\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::setTMUParameters - set freq measurement window to %d. data = 0x%08x mask = 0x%08x status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType2(%d)<%p>::messagePortClients - msg = 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::configReadAction - route = 0x%llx port = 0x%x space = 0x%x index = 0x%x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::linkPartnerReset - PHY capability offset = %d for child port %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - command = %p status = 0%08x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::timerCommandCallback - command completion in illegal state = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequest - rx_command = %p, response_ack_command = %pt\n`
+- `%lldus IOThunderboltPath<%p>::beginNextActivationWrite - route 0x%llx, src_port = %d, src_hopID = %d --> dst_port = %d, dst_hopID = %d, packet = 0x%08x 0x%08x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::sendDeactivationCompletion - Path ID %u - status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelWillSleepPCI - return\n`
+- `%lldus IOThunderboltSwitchUSB4(%x@%llx)::configureRouter - data = 0x%08x should_configure = %d - status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupCompleteRequest - Path ID %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::getRxQueueForPathID - key = \"%s\"\n`
+- `%lldus IOThunderboltHopSet<%p>::deallocateHopIDForPath - path = %p\n`
+- `%lldus TBT Timing - DROM read begin\n`
+- `%lldus IOThunderboltConfigXDomainLinkStatusRequestCommand<%p>::processResponseData - crc = 0x%08x, calc_crc = 0x%08x crc_error = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForClientStopWithTransportPort transportPort=0x%x \n`
+- `%lldus IOThunderboltConnectionManager<%p>::createRootSwitch - fNHIPort = %p, fRootSwitch = %p\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::fullScan - Switch enumeration timestamp = 0x%llx\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - addPathToActivePaths for port %p\n`
+- `%lldus IOThunderboltDispatchQueue<%p>:dequeueContext - WARNING: fQueueDepth would have gone negative!!!\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::prepareForTermination - stopping fSerialDispatchQueue\n`
+- `%lldus IOThunderboltPort(FF@FF:%x)::getRouteString - fSwitch = 0x0\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathSetupRequest - src service uuid = %s, dst service uuid = %s\n`
+- `%lldus IOThunderboltXDomainTransmitPath<%p>::processRemoteActivateCompleteSuccess - done, status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::allocateActivationStatePerPort - port_key found\n`
+- `%lldus Did not find an aux micro\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::assignLanes\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::systemWillShutdown - kIOMessageSystemWillPowerOff\n`
+- `%lldus IOThunderboltConfigXDomainPathSetupRequestCommand<%p>::prepareForExecutionInternal - Path ID %u, Path ID Pair %u, Path UUID %s (0x%llx:%u) Hop=%u XDHop=%u [ICr=%u WRR=%u Pr=%u DPE=%u Cnt=%u IFC=%u EFC=%u ISB=%u ESB=%u NFC=%u Flags=0x%08x]\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)::tunnelWillActivate - interface = %p\n`
+- `%lldus IOThunderboltController(%d)::processPlugEvent - plugged = %d\n`
+- `%lldus IOTBTTunnelUSBType2ClientInterface(%d)<%p>::setDriverInterface\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyXDomainPath - fLocalServiceReady wake\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processChild - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::publishAdapterData - data 0x%08x 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyXDomainPathAndQueue - done, Path ID %u, status = 0x%08x\n`
+- `%lldus IOThunderboltAbstractMicro<%p>::addToPortSet %d - route 0x%llx port %d lane %d\n`
+- `%lldus  05:  %08x   Link Credits Allocated=%d   Max Out HopID=%d   Max In HopID=%d\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::headChanged - now = %llu ms\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addTunnelClientInterface - type_key = %p status = 0x%08x\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::earlyWake - connected = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - resetting = %d client_port = %p\n`
+- `%lldus IOThunderboltPath<%p>::beginNextActivationWrite - dispatchAsync( IOThunderboltPath<%p>::doActivationWrite )\n`
+- `%lldus IOTBTTunnelDriverInterface<%p>::initWithManager - return status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::setPowerState - state = %d\n`
+- `%lldus IOThunderboltPath<%p>::getMinLinkRate - min_link_rate = %d, current_link_rate = %d\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - secondary_port link is up = %d\n`
+- `%lldus IOThunderboltConfigCommand - error_code = %d exact_match = %d not_exact_match = %d error_port_in_route = %d command_status = %d\n`
+- `%lldus IOThunderboltConfigMultiReadCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::enableEnhancedUniDirTMU - offset = 0x%x data = 0x%08x mask = 0x%08x enable = %d status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::getMinimumRequiredTMUMode - driver requirement = %d for port %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::romReadRetryTimerCallback - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltXDomainTransmitPath<%p>::startLocalPathActivationConfigure - Path ID %u - Tx: (1) set src (%u:0x%llx:0x%x) src hop ID range (%u-%u) dst (%u:0x%llx:0x%x) dst hop ID range (%u-%u)\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::configureSpecialMode - write special mode VSEC\n`
+- `%lldus IOThunderboltController<%p>::switchForUID - uid = 0x%08llx, switch = %p\n`
+- `%lldus IOThunderboltPort<%p>::allocateNonFlowControlledCredits - requested = %d, allocated = %d, max = %d, status = 0x%08x\n`
+- `%lldus IOThunderboltXDPropertiesCache<%p>::free\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)::getTunnelDriverInterface - fController = %p\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireI2CLockSynchronous - dispatchSync( acquireI2CLock )\n`
+- `%lldus IOThunderboltController<%p>::earlyWake - return - fIsAsleep = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::read8051 - port = 0x%x, space = %d, offset = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::detach\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::processResponse - swapped quad_packet[%d] = 0x%08x\n`
+- `%lldus IOThunderboltConfigXDomainPathSetupCompleteRequestCommand<%p>::prepareForExecutionInternal - tx_command = %p\n`
+- `%lldus IOThunderboltConfigErrorCommand<%p>::processRequestComplete - packet type = error\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::destroyResources\n`
+- `%lldus IOThunderboltVSA::createResources status = 0x%x\n`
+- `%lldus --------------\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processXDomainChild - dl_route_string = 0x%llx dl_port=%d route_string = 0x%llx port=%d\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - IOThunderboltXDomainLinkStateChangeResponseStruct not ready\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::resolveMicros - port = %p port number = %d\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::setMinimumRequiredTMUMode - fMinRequiredTMUMode = 0x%08x tmu_mode = 0x%08x\n`
+- `%lldus IOThunderboltProtocolListener<%p>(%u)::processResponse - crc = 0x%08x, calc_crc = 0x%08x crc_error = %d\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::areAllClientsAsleep\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::updateUpstreamLinkModeSupport - check x3 transmitters ufp -> dfp, ufp_asymmetric_support = 0x%08x, dfp_asymmetric_support = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathRequestFinalizePacket - unswapped quad_packet[%d] = 0x%08x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcLocalConfig - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::portSupportsDeviceScan - device_scan_supported = %d\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::iecsCommandAction - command completed with status = 0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::createRxQueueInternal - Path ID %u, added new Rx Queue %p for key \"%s\"\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx:0x%x)::needExtendedLinkTrainingTimeout - check_socket = %d switch_needs_extended_link_training = %d is_early_wake = %d is_legacy_connection = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::lateSleepPhase2 - dual link port, dual_link_switch = %p\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - path %d - route = 0x%llx port = 0x%x\n`
+- `%lldus IOThunderboltConfigCompareSwapCommand<%p>::processResponse - fErrorCode = 0x%x error_code_received = %d\n`
+- `%lldus IOThunderboltTunnelDriverType2(%x:%llx:%x)::getAvailablePort - interface = %p transportPort = 0x%x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager<%p>::free\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::tunnelWillSleep\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::loadPortDefaults - hardware_service = %p status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::iecsWrite - route = 0x%llx, bus = 0x%x, device = 0x%x, address = 0x%x, length = 0x%x, flags = 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::getNextPortsArray - add port route = 0x%llx port = 0x%x\n`
+- `%lldus IOThunderboltSwitchLegacy(%x@%llx)::setupTMU - enable TMU - status = 0x%08x\n`
+- `%lldus IOThunderboltConfigPrepareToSleepCommand<%p>::prepareForExecution - route = 0x%llx data = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::setupIECSCommandQueue - count = %d offset=0x%x fLength=0x%x\n`
+- `%lldus IOThunderboltUserObjectExporter::removeObject - removing handle %d\n`
+- `%lldus IOThunderboltPath<%p>::createPathTable - last port %p is not fDestinationPort %p\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - creating service entries iterator on array %p with %u objects\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - incoming_route = 0x%llx\n`
+- `%lldus IOThunderboltConfigXDomainPathCapabilitiesRequestCommand<%p>::prepareForExecutionInternal - tx_command = %p\n`
+- `%lldus IOThunderboltConfigWriteQuadletCommand<%p>::processResponse - packet type = error\n`
+- `%lldus IOThunderboltController<%p>::systemWillShutdown - kIOMessageSystemWillPowerOff\n`
+- `%lldus IOThunderboltSwitchOS(%d@0x%llx)::routerOperation - poll opcode offset = 0x%x\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::writeAddressSync - received NACK\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - driver_interface = %p status = 0x%08x\n`
+- `%lldus IOThunderboltConfigPrepareToSleepCommand<%p>::processResponse - packet type = error\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::restoreSleepState - return status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::createResources - client_interface = %p status = 0x%08x\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::incrementScanCount\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::setupIECSCommandQueue - find GPIO capability for switch at route = 0x%llx\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::enablePlugEvents - write plug event register, packet = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::waitForTunnelWake\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainPath - Path ID %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateTxQueueInternal - Tx queue allocated\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - working on service with key '%s', publish = %u\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::processResponse - wrong source domain\n`
+- `%lldus IOThunderboltSwitchType7<%p>(0x%llx)::finalize\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::updateUpstreamLinkModeSupport - dfp = (%x@%llx:0x%x), ufp = (%x@%llx:0x%x), ufp spec version = 0x%x, dfp spec version = 0x%x, ufp current link speed = 0x%x\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::earlyWakeBegin\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::discoverMicroForPort - port = %d\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapter - WARNING: allocation = 0x%08x, returning kIOReturnBusy\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CDataReadComplete - incoming status = 0x%x, command_type = %d, desc = %p\n`
+- `%lldus IOThunderboltController(%d)::getTraceHistory - statistics debug block = %p\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDService - Create a new dictionary describing the new service, error = 0x%08x\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::updateConfiguredStateForPort - do_correct_xdomain_sleep = %d\n`
+- `%lldus TBT W (2): 0x%04x [√]\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropDPAdapterSynchronous - dispatchSync( dropDPAdapter, port 0x%x )\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidWake - transportPort=0x%x fIsSleeping = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequestComplete - done dispatching submitXDomainPathCapabilitiesRequest(), dispatch_status = 0x%08x\n`
+- `%lldus IOThunderboltConfigWriteCommand<%p>::processResponse - packet type = error\n`
+- `%lldus IOThunderboltSwitch(%x@%llx:%d): Error writing to null adapter configuration space: 0x%x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::releaseLock\n`
+- `%lldus IOThunderboltDispatchContextAbstract<%p>::dispatchWait(gate) - sleep on fQueue\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 3 (Resolve Micros) begin\n`
+- `%lldus IOThunderboltPath<%p>::createPathTable - port_a = %p depth = %d, port_b = %p depth = %d\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::readEEPROMInternal - do Router Operation\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - added root entries to work queue (0x%x)\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addTunnelUSBType2ClientInterface - usb_type2_client_interface = %p usbTransportIndex = 0x%llx ioPortIndex=0x%llx\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::dispatchWait(lock, held) - fThreadRunning woke up\n`
+- `%lldus IOThunderboltFamilyUserClient::initWithTask - User client does NOT have kIOClientPrivilegeAdministrator\n`
+- `%lldus IOThunderboltConfigWriteCommand<%p>::processResponse - PktVerify - This response doesn't match what's expected. length = 0x%x/0x%x port = %d/%d space = %d/%d offset = 0x%x/0x%x sequenceNumber = %d/%d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::weakenTMUFilters - find device time sync capability at route = 0x%llx\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CPollTimer\n`
+- `%lldus IOTBTTunnelUSBType2ClientInterface(%d)<%p>::clientWillWake\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::configureUpstreamAsymmetricMode - done waiting for in-progress asymmetric transition\n`
+- `%lldus IOThunderboltSwitch(%x@%llx:0x%x)::checkLinkTrainingIsPortConnected - is_connected = %d\n`
+- `%lldus IOThunderboltPath<%p>::mergeLists - next_switch = 0x%llx check_switch = 0x%llx\n`
+- `%lldus IOThunderboltLocalNode<%p>::finalize\n`
+- `%lldus IOThunderboltSwitchUSB4(%x@%llx)::configureRouter - write config valid = 0x%08x - status = 0x%08x\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::loadPortDefaults - port_defaults_buffer = %p status = 0x%08x\n`
+- `%lldus IOThunderboltIECSNub<%p>::initWithController\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - link is not up - setPortState for port %p to kPortStateProbedNotConnected\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processChild - find DFT capability, child=0x%llx\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireSemaphore - retry acquire-semaphore, 0x%x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::setAllocatedAndActivatedWithTransportPort - transportPort=0x%x prev_tunnel_is_allocated = %d prev_tunnel_is_activated = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::i2cWriteDWord - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processChild - scan_port = %d upstream_port = %d\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::submitGated - now = %llu ms\n`
+- `%lldus IOThunderboltPath<%p>::mergeLists - found inflection point = %d\n`
+- `%lldus IOThunderboltController(%d)::waitForCLxChange - fSWObjectionCLxStates = 0x%08x waitOnCLxObjectionValue = 0x%08x\n`
+- `%lldus IOThunderboltController::createSwitchForDeviceHeader - Device ID=0x%04x Vendor ID=0x%04x\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::setTMUMode - tmu_mode = %d\n`
+- `%lldus IOThunderboltConfigResetCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processROMRead\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::releaseSemaphore\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::strengthenTMUFilters - find device time sync capability at route = 0x%llx\n`
+- `%lldus Decoded Port Configuration base page:\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - fDestinationPort = %p, port num = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathTeardownComplete - done, fFinalizeWaiting = %u\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - Creating new root directory\n`
+- `%lldus IOThunderboltConfigPollQuadletCommand<%p>::submitNextConfigRead\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - enable = %d, set kEE_BB, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::dropDPAdapterSynchronous\n`
+- `%lldus IOThunderboltFamilyUserClient::initWithTask - User client does NOT have entitlement: com.apple.ThunderboltEntitlement\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::externalMethod Unknown User Client method called! (%d)\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::i2cCommandAction - can't create read descriptor\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::destroyTunnelInterfaceManager\n`
+- `%lldus IOThunderboltPort<%p>::setDualLinkPort - port_number = 0x%x alt_port = %p 0x%x rid = %d\n`
+- `%lldus IOThunderboltSwitchOS(%d@0x%llx)::routerOperation - status = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - (2) Add or remove service with key '%s', publish = %u, error = 0x%08x\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::sendPrepareToSleepMessageToMicro - address = 0x%02x, micro_type = 0x%x, mode = %d, status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidDeallocateWithTransportPort transportPort=0x%x - unblock clients that were waiting for deallocation\n`
+- `%lldus IOThunderboltSwitch(%x@%llx:0x%x)::childDeviceScanForPort - link is up!\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::read8051 - timed out waiting for valid to clear\n`
+- `%lldus IOThunderboltXDomainSupport::extractUUIDFromPacketSwapped - uuid = 0x%llx\n`
+- `%lldus IOThunderboltXDPropertiesCache<%p>::initWithLink\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::processResponse - unswapped quad_packet[%d] = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType1(%x@%llx)::lateSleepPhase3 - send new sleep request\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::iterator!=NULL\n`
+- `%lldus IOThunderboltConfigMultiReadCommand<%p>::processResponse - packet type = read response\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - path %d - route = 0x%llx port = 0x%x hw_bw = %d max_alloc_bw = %d max_bw = %d\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - link_change_command status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - PCI: add_interface = %d adapter_index = %d status = 0x%08x\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::dispatchWait(lock, held) - sleep on fRunningThreadCount\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%d@0x%llx)::publishSocketIDs - using RID+1 = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltConfigReadCommand<%p>::complete\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::checkCanEnterLinkModeForPort - ufp supported link modes = 0x%08x, dfp supported link modes = 0x%08x\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::free\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::write8051 - ERROR: failed to find capability ( 0x%08x )\n`
+- `%lldus  02:  %08x   Adapter Type=0x%06x (Unknown adapter base class)`
+- `%lldus IOThunderboltPath<%p>::deactivate\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::releaseSemaphore - cannot release!\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::acquireDPAdapter - ERROR: acquireDPSemaphore failed with 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setPowerState - state = %d\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::resetChild - child_route_string = %llx\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::readUUID\n`
+- `%lldus IOThunderboltTunnelDriverType2(%x:%llx:%x)::getAvailablePort - interface = %p\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::sendPrepareToSleepMessageToMicro - micro_address = 0x%08x no pci tunnel, clearing configured\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::setCIOTransport - clear fCIOTransport = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CLengthReadComplete - incoming status = 0x%x, command_type = %d, desc = %p\n`
+- `%lldus IOThunderboltConnectionManagerType5(%d)::createRootSwitch - fRootSwitch = %p\n`
+- `%lldus IOThunderboltReceiveCommand<%p>::initWithControllerAndQueue\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::free\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::setDestinationUUID - uuid = %s, status = 0x%08x\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::transportCreatedNotification - cio_transport = %p\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelWakeWithTransportPort - transportPort=0x%x sleep on fTunnelIsActivated = %d\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::loadPortDefaults - compatibility mode - fPortDefaults = 0x%08x %08x %08x %08x %08x %08x %08x status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::getRxQueueForPathID - queue_object = %p\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::updateUpstreamLinkModeSupport - check x3 transmitters dfp -> ufp, dfp_asymmetric_support = 0x%08x, ufp_asymmetric_support = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::resolvePortAffinity\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::readEEPROMInternal - buffer %p\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathTeardownComplete - finalize or late sleep waiting, wake up, xdomain_path = %p\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - error while getting service entries (0x%x)\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::runTestCode_DEBUG - make_path_0 = %u, local_provider_uid = 0x%016llx, remote_provider_uid = 0x%016llx\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::createTxQueueInternal - Path ID %u, added new Tx Queue %p for key \"%s\"\n`
+- `%lldus IOThunderboltReceiveQueue(%d)::allocate\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::isLinkUpInternal - child port %d phy state = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::startLinkStateNegotiation\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::setPortSetReady - ready = %d\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::sendPrepareToSleepMessageToMicro - lc_address = 0x%08x the_port = %p peer_port = %p peer_switch = %p\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::readBytesSync\n`
+- `%lldus IOThunderboltController(%d)::updateCLxModeInternal - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 9 (Register New) done\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::clientUsingTunnel - return %d\n`
+- `%lldus IOThunderboltConfigErrorCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltConfigXDomainLinkStatusRequestCommand<%p>::processResponseData - fProtocolErrorCode = 0x%08x\n`
+- `%lldus IOThunderboltDispatchQueue<%p>:dequeueContext - sleep on fSleepingThreadCount\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::initWithController acio_fw_panic: 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::controllerSetPowerState - unknown power state %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::destroyPowerManagement\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - added service %p with uuid 0x%llx to services dictionary\n`
+- `%lldus IOThunderboltLocalNode<%p>::processROMChangedPacket - did not find a matching link, rescan and try again\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropI2CLockSynchronous - ERROR: dispatchSync failed with 0x%08x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteStart - route = 0x%llx, port = %d, lane = %d\n`
+- `%lldus IOThunderboltSwitchType1(%x@%llx)::lateSleepPhase3 - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::publishServices\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::waitForTunnelSleep - sleep on fReadyToReleaseClient = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::disableUnusedLinks - disabling port = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::write8051 - findCapability( port = 0x%x, space = %d, mask = 0x%x, value = 0x%x )\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::updateWakeEnables - port = %d offset = 0x%x with data = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - Setting domain UUID in IORegistry\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientNotReadySync - all_paths_deactivated = %u, not deactivated Path ID %d, state = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::updateBusPowerProperties - micro @ 0x%x, hv_byte = 0x%x temp_status = 0x%08x\n`
+- `%lldus IOThunderboltPort<%p>::setSWObjectionCLxStates - didUpdateCLx = %d waitForCLxChange to 0x%x Done \n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - link_status_command (2) status = 0x%08x\n`
+- `%lldus IOThunderboltXDPropertiesEntry<%p>::initWithCache - cache = %p, offset = 0x%x\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::processResponse - got packet type %d\n`
+- `%lldus IOThunderboltConfigXDomainPathTeardownRequestCommand<%p>::prepareForExecutionInternal\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::lateSleepPhase3 - status = 0x%08x\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::getEnabledCLxStates - data = 0x%08x clx_states = 0x%x status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::hardwareWasReset\n`
+- `%lldus IOThunderboltConfigPrepareToSleepCommand<%p>::complete - incoming status = 0x%08x\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::dispatchWait(lock, held) - fSleepingThreadCount woke up\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%d@0x%llx)::overrideDevicesConnectedState - found_devices = %d in_use = %d\n`
+- `%lldus IOThunderboltXDomainService<%p>::unpublish\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addDriverInterface - driver_interface = %p adapter_type = 0x%08x port_index = 0x%08x adapter_index = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::hostDeviceConnect - fDebugMode = false\n`
+- `%lldus IOThunderboltControlPath<%p>::wake\n`
+- `%lldus IOThunderboltPath<%p>::getNextPortsArray - next_switch = 0x%llx check_switch = 0x%llx\n`
+- `%lldus IOThunderboltLocalNode<%p>::processROMChangedPacket\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache::encodeDictionary - adding encoded bytes for data entry '%s'\t0x%08x %08x %08x %08x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::setSourceUUID - Path ID %u - uuid = %s, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::unlockPort - port_number = 0x%02x - status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - link_status_command status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchLegacy(%x@%llx)::setupTMU\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::activateXDomainPath - Path ID %u\n`
+- `%lldus Decoded Device Configuration base page:\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::acquireDPActivationSemaphore - adapter %p got fDPActivationSemaphore\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - shoud bond\n`
+- `%lldus IOThunderboltXDomainService<%p>::setProperties\n`
+- `%lldus IOThunderboltConfigXDomainPathCapabilitiesRequestCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::doesPortHaveInternalPeerPort - adapterType = 0x%06x disabled = %d\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)::createClientInterface - return status = 0x%08x\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::publishVSAConfigTable - status=0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathSetupRequest - found XDomain Service Client %s\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelSleepWithTransportPort - transportPort=0x%x fReadyToReleaseClient = %d\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::setTimeDisruption - set time disruption to %d. data = 0x%08x mask = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processChild - uid_match = %d, status = 0x%x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::controllerSetPowerState - kThunderboltPMSleepState\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::checkPathsDisabledByPortType - Checking paths disabled for port type = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::getXDomainPathForPathID - key = \"%s\"\n`
+- `%lldus IOThunderboltSwitch(%x@%llx) - Phase 0 (Configure From Static Data) done\n`
+- `%lldus IOThunderboltLocalNode<%p>::setPropertiesBytes - setPropertiesCache result=0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientNotReadySync - control request command woke up, fXDControlRequest = %p\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::syncTargetAndNegotiatedWidth - last_negotiated_link_width = %d parent_max_link_width = %d child_max_link_width = %d parent_negotiated_link_width = %d primary_connected = %d secondary_connected = %d should_bond = %d status = 0x%08x\n`
+- `%lldus IOThunderboltControlPath<%p>::timerCommandCallback - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathCapabilitiesRequest - done, status = 0x%08x\n`
+- `%lldus IOThunderboltConfigXDomainResponseCommand<%p>::processRequestComplete - pdf = %d\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::getTunnelDriverInterface - interface = %p status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::getDevicesConnectedState - found_devices = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequest - rx_command = %p, response_ack_command = %pt\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::publishVSAConfigTable - protocol_idx=0x%x txMask=0x%x \n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::setTMUParameters - set avg constant to %d. data = 0x%08x mask = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathCapabilitiesRequest, rx_command = %p, response_ack_command = %p\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getDROM - root_switch = %p status = 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::externalMethod - ERROR: command deprecated (%d)\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::setPowerState - kThunderboltPMSleepState\n`
+- `%lldus IOThunderboltPort<%p>::setSWObjectionCLxStates - updating CLx mode for states 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - use new path, pack\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setPowerState - unknown power state %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processXDomainChild - scan_port = %d\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropDPAdapterSynchronous - ERROR: dispatchSync failed with 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::free\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::getArrayOfEntriesOfType\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::timerCommandCallback - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 6 (Discover XDomain) done\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::enableTMU - tmu_mode = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::findXDomainLink\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - inter domain request packet\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::dispatchWait(gate) - fThreadRunning woke up\n`
+- `%lldus IOThunderboltTransmitQueue(%d)<%d>::shutdown\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::pathActivationCallback - incoming status = 0x%x, parameter = %p, path = %p\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::getMinimumRequiredTMUMode - device requirement = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::enableTimeSyncSlaveForPortSynchronous - write 0x%08x to offset 0x%x for port 0x%x at route = 0x%llx status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::setupTMU - valid DROM TMU entry not found, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyXDomainPathAndQueue, Path ID %u\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::publishVSAConfigTable\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::verifierCallback - port_number = %d is restricted\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::setUpstreamTMUParameters - offset = 0x%x data = 0x%08x mask = 0x%08x replenish_timeout = %d replenish_threshold = %d status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::createPathTable - fPathTable count %d is odd\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::updateWakeEnables - port_group_offset = 0x%x\n`
+- `%lldus IOThunderboltSwitchOS(%d@0x%llx)::routerOperation - opcode 0x%08x\n`
+- `%lldus IOThunderboltConfigXDomainROMChangedRequestCommand<%p>::processUUIDReadResponse - fProtocolErrorCode = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::beginNextNFCActivation - route = 0x%llx, port = %d, nfc credits = %d, compare_value = 0x%08x, new_value = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readDROM - read DROM status 0x%x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::setupIECSCommandQueue - find LC capability for switch at route = 0x%llx\n`
+- `%lldus IOThunderboltControlPath<%p>::completeCommand response = %p\n`
+- `%lldus IOThunderboltConfigXDomainUUIDRequestCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::publishServices - remote root switch uid property = 0x%016llx\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::updateUpstreamLinkModeSupport - cable asymmetric support = %u, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::setTMUParameters - set freq measurement window to %d. data = 0x%08x mask = 0x%08x status = 0x%08x\n`
+- `%lldus TBT W (1): %d [x]\n`
+- `%lldus IOThunderboltLocalNode<%p>::createResources - publishing defaultRootDirectory into fPropertiesCache\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startDeactivation - Path ID %u - path setup request command woke up, fXDPathSetupRequestCommand = %p\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::clientDied\n`
+- `%lldus IOThunderboltControlPath<%p>::tokenBucketAcquireTokens - tokens=%d token_deficit=%llu delta=%llu us - timer\n`
+- `%lldus IOThunderboltSwitchOS(%d@0x%llx)::routerOperation - opcode poll status = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - found an existing service with UUID: %s, publish = %u\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::acquireDPAdapter\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::dispatchWait(lock) - sleep on fRunningThreadCount\n`
+- `%lldus IOThunderboltSwitchType6<%p>(0x%llx)::finalize\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::submitGated - insert command %p at tail\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDService\n`
+- `%lldus IOThunderboltXDomainService<%p>::attach\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processRemoteActivateComplete - Path ID %u - deactivation requested, abort\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::submitWorkToTransmitter - bus = 0x%x, flags = 0x%x, IECSType = %d, fAddress = 0x%x\n`
+- `%lldus IOThunderboltConfigReadCommand<%p>::processResponse - pdf = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::enqueueXDomainPathRequestCommand - enqueing request, command = %p, fFinalizeWaiting = %u\n`
+- `%lldus IOThunderboltXDomainService<%p>::initWithLink\n`
+- `%lldus IOThunderboltTunnelDriverType2(%x:%llx:%x)::isTunnelInitializedWithTransportPort - interface = %p transportPort = 0x%x\n`
+- `%lldus IOThunderboltConfigModifyQuadletCommand<%p>::complete - incoming status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - Trying to parse an unknown style ROM (Version %u)\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::getPortSetForBus - port_set = %p\n`
+- `%lldus IOThunderboltConfigWriteCommand<%p>::free\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::completeXDomainPathRequestCommand - fXDomainPathRequestCommandInFlight = %p, command = %p, fFinalizeWaiting = %u\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::prepareForExecution - route = 0x%llx sn = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::setAllocatedAndActivatedWithTransportPort - activationState = %p transportPort=0x%x allocated = %d activated = %d\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::publishVSAConfigTable - protocol_idx=0x%x rsvd2=0x%x \n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::syncTargetAndNegotiatedWidth - retrain link, offset = 0x%08x data = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::getSWObjectionCLxStates switchSWObjectionsCLxStates=0x%x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::updateDPPortAffinity\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::startPortScan - scan_port = %d, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropDPAdapter\n`
+- `%lldus IOThunderboltConnectionManager<%p>::earlyWakeScan - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::startHopDeactivations - ### dispatchAsync( IOThunderboltPath<%p>::doHopDeactivations )\n`
+- `%lldus IOThunderboltPath<%p>::beginNextNFCDeactivation - route 0x%llx, port = %d, nfc credits = %d, compare_value = 0x%08x, new_credits = 0x%08x\n`
+- `%lldus IOThunderboltConfigCompareSwapCommand<%p>::processResponse - fOldValue = 0x%08x, fCompareValue = 0x%08x match = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::getMatchingXDomainPath - xd_path_uuid_string = %s\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::sendPrepareToSleepMessageToMicro - write LC_SX_CTRL lc_address = 0x%08x data = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::setRequiredBandwidth - port = 0x%x, req bw = %u, hw bw = %u, port req bw allocated = %u, bw available = %u, bw delta = %u, req bw = %u\n`
+- `%lldus IOThunderboltXDomainPath<%p>::deactivate - Path ID %u, fXDState = %u, fDeactivationRequested = %u\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::dispatchThread\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::iecsCommand\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelWakeWithTransportPort - transportPort=0x%x return status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupRequest_DEBUG - Path ID %u\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::start - fHIPort = %p fVSAPort = %p status=0x%x \n`
+- `%lldus IOThunderboltConfigMultiReadCommand<%p>::processResponse - PktVerify - This response doesn't match what's expected. length = 0x%x/0x%x port = %d/%d space = %d/%d offset = 0x%x/0x%x sequenceNumber = %d/%d\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setupPowerManagement - commandSleep\n`
+- `%lldus IOThunderboltControlPath<%p>::start\n`
+- `%lldus IOThunderboltConfigXDomainPathCapabilitiesRequestCommand<%p>::prepareForExecutionInternal - fServiceReady = %u, fXDomainMaxHopID = %u, fMaxCredits = %u, status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)::destroyResources\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::allocateActivationStatePerPort - transportPort already allocated\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::initWithService\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::terminate\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::getTxQueueForPathID - key = \"%s\"\n`
+- `%lldus IOThunderboltLocalNode<%p>::createResources - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltXDPropertiesLeafText<%p>::readEntry cacheSizeQuads %u dataOffsetQuads %u bytesToCacheEnd %u romSize %u strLenSize %u terminateByte %u\n`
+- `%lldus IOThunderboltFindCapabilityCommand(%x@%llx:%x)<%p>::submitSynchronous\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientNotReadySync - done\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathTeardownRequest - done, status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - USB: add_interface = %d adapter_index = %d status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::setPowerState - kThunderboltPMWakeState\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::setCIOTransportActive - the_port = %d active = %d\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - secondary_port link is up = %d, going to sleep and will retry...\n`
+- `%lldus IOThunderboltEEPROM(%x@%llx)::getPreferredSingleDataPath - single_data_path_entry = 0x%02x drom_pref_single_data_path = 0x%02x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getGenericEntry - searching offset 0x%x for generic entry type 0x%x\n`
+- `%lldus IOThunderboltXDomainReceivePath<%p>::startRemotePathDeactivationFailed - Path ID %u - status = 0x%08x\n`
+- `%lldus IOThunderboltConfigCommand - fRouteString = 0x%llx error_route = 0x%llx error_port = 0x%x details = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::updateCIOTransportMetadataAndHash\n`
+- `%lldus IOThunderboltPath<%p>::allocate - (2) allocated input hop id %d for src port %p src counter id = %d status = 0x%x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processROMRead - fRestored = %d\n`
+- `%lldus IOThunderboltTunnelDriverType2(%x:%llx:%x)::areAllClientsForTransportAsleep - interface = %p transportPort = 0x%x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropDPAdapter - setIOReturnParameter( 0x%08x )\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::setDPCrossbar - crossed = %d\n`
+- `%lldus IOThunderboltController<%p>::processSetPowerState - kThunderboltPMWakeState\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelWillActivate - return\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::registerService - calling registerService()\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::setPowerState - kThunderboltPMPauseState\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::dataRead - i = %d,\tSK = 0, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::i2cRead - data = 0x%08x... status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::invalidateClientsOnPortInternal - %d\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processPathSetupCompleteResponse - Path ID %u - done, wake up fXDPathSetupCompleteCommand = %p\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::setChildSwitch - ERROR: failed to attach switch\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - DID = 0x%08x, kIECSDeviceIDAce1 = 0x%08x\n`
+- `%lldus IOThunderboltIECSCommand<%p>::free\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::messagePortClients - msg = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyXDomainPath, Path ID %u\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainPathTeardownRequest = %d\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - hw_rev = 0x%02x\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::acquireDPAdapterSynchronous - ERROR: acquireDPAdapter failed with 0x%08x\n`
+- `%lldus IOThunderboltController<%p>::destroyPowerManagement\n`
+- `%lldus IOThunderboltSwitchType5(%x@%llx)::readEEPROMInternal - readSynchronous\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::linkPartnerReset - find PHY capability for child port %d\n`
+- `%lldus TBT W (1): %d [√]\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startDeactivation - Path ID %u - path setup complete command woke up, fXDPathSetupCompleteCommand = %p\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelWillSleepUSB\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::setupSpecialModes - fSupportedSpecialMode = 0x%08x\n`
+- `%lldus IOThunderboltConfigNotifyAckCommand<%p>::processRequestComplete - pdf = %d\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - link status read retry = %d done\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processROMRead - knownGoodTarget.  YAY!\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigPhyStateReadComplete - error, complete now\n`
+- `%lldus IOThunderboltConfigXDomainLinkChangeRequestCommand<%p>::free\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::NNNNNfind VSA capability - status=0x%x kVSACapabilityMask=0x%x kVSACapabilityID=0x%x\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::dropDPAdapter - ERROR: acquireDPSemaphore failed with 0x%08x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::sendUpdateCompletion - Path ID %u - status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::addTunnelDPInClientInterface - dp_client_interface = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::ppsAccessSync step %d smcReadKey returned = 0x%x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::waitForTunnelDeallocate\n`
+- `%lldus IOThunderboltSwitch(%d)::isPortDisabledByBootArg - port_number=0x%X\n`
+- `%lldus IOThunderboltPath<%p>::getNextPortsArray - (2) add port route = 0x%llx port = 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - DP Port - disabled: 0x%x adapterType: 0x%06X\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::hasPCITunnel - port = %p port number = %d has pci tunnel = %d\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::lateSleepPhase3 - write enter sleep, data = 0x%08x - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::sendPrepareToSleepMessageToMicro - lc_address = 0x%08x no pci tunnel, clearing configured\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::finalize\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::addPortForMicro\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>::terminate\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - candidate_paths = %p\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::startROMRead\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - pdf = %d\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteConfigPhyStateReadComplete - route = 0x%llx, port = %d, state = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::registerReceiveQueue - done,  Path ID %u, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 7 (Link) begin\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::verifierCallback - route error - route_string = 0x%llx\n`
+- `%lldus IOThunderboltPort<%p>::cmReadDWord - route = 0x%llx address = 0x%x offset = 0x%02x\n`
+- `%lldus IOThunderboltConfigResetCommand<%p>::processResponse - pdf = %d\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireI2CLockSynchronous - ERROR: acquireDPAdapter failed with 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::configWriteAction - route = 0x%llx port = 0x%x space = 0x%x index = 0x%x\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::checkCanEnterLinkModeForPort - port = (%x@%llx:0x%x), mode = %d\n`
+- `%lldus IOThunderboltXDomainPath<%p>::finishCompleteActivation - Path ID %u - fXDState = %u, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::lateSleepPhase3 - vsec_offset = 0x%x status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelWillSleep calling reevaluateTunnelSleepWithTransportPort for transportPort=0x%x \n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::countUsingClients fTunnelActivationStatePerPort=%p\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::registerAll - port registration prohibited.\n`
+- `%lldus IOThunderboltConfigPollQuadletCommand<%p>::submit\n`
+- `%lldus IOThunderboltXDomainTransmitPath<%p>::processLocalDeactivateCompleteSuccess - Path ID %u\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::externalMethod - ERROR: unknown command (%d)\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::i2cCommandAction - can't create write descriptor\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::getRootSwitchStaticDataForKey - found key = %s out_value = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS(%d@0x%llx)::routerOperation - opcode = 0x%x metadata = 0x%08x buffer = %p dword_count = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType2(%d)<%p>::isTunnelInitialized - fTunnelWillActivated = %d fIsSleeping = %d\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::sendPrepareToSleepMessageToMicro - address = 0x%02x, message = 0x%08x, retries = %d\n`
+- `%lldus IOThunderboltController(%d)::destroyResources\n`
+- `%lldus IOThunderboltController<%p>::configReadDWord - WARNING: synchronous call on workloop thread not permitted.\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::doLateSleepPhase3 - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltTunnelDriverType2(%x:%llx:%x)::tunnelDidDeallocate - interface = %p\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue::setCapabilityOffset - I2C capability offset = 0x%x, LC capability offset = 0x%x, route = 0x%llx\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::sendI2CSync - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltConfigModifyQuadletCommand<%p>::processResponse - fOldValue = 0x%08x, fMask = 0x%08x, fData = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::enablePlugEvents - set notify retry, packet = 0x%08x\n`
+- `%lldus IOThunderboltController<%p>::pause\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelWillDeactivateWithTransportPort transportPort=0x%x\n`
+- `%lldus IOThunderboltProtocolListener<%p>::processResponse - inter domain packet\n`
+- `%lldus IOThunderboltConfigXDomainLinkChangeRequestCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltController(%d)::updateCLxMode\n`
+- `%lldus IOThunderboltController<%p>::wake\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - link link_change_command read retry = %d done\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropDPAdapterSynchronous - ERROR: dropDPAdapter failed with 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidSleep fTunnelActivationStatePerPort=%p\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::init\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::configureRouter - write config valid = 0x%08x - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%d@0x%llx)::getPathsDisabledForUpdate - set NVRAM property %s = %u\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processChild - invalidating unknown child_switch %p on current_port = %p\n`
+- `%lldus IOThunderboltI2CCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltDispatchContextAbstract<%p>::dispatchWait - sleep on fQueue\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::processXDomainLinkPreload - finished status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::checkCanEnterLinkModeForPort - ufp_can_enter_x3_rx = %d, ufp_can_enter_x3_tx = %d\n`
+- `%lldus IOTBTTunnelClientInterface<%p>::initWithManager\n`
+- `%lldus IOThunderboltHopSet<%p>::allocateHopIDInRangeForPathWithCounter - candidate_counter = %d, max_counter = %d\n`
+- `%lldus IOThunderboltXDomainPath<%p>::deactivate - Path ID %u - done, fXDState = %u, fDeactivationRequested = %u, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::acquireDPAdapterSynchronous - dispatchSync( acquireDPAdapter, port 0x%x )\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CCommandWrite1 - length = %lld, offset = %d, fAddress = 0x%x, command_type = %d\n`
+- `%lldus IOThunderboltControlPath<%p>::newTimerCommand - command = %p, status = 0x%x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::syncTargetAndNegotiatedWidth - child_primary_port = %p child_secondary_port = %p parent_primary_port = %p parent_secondary_port = %p status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::needsTMUModeChange - tmu_mode = %d needs_change = %d\n`
+- `%lldus IOThunderboltXDomainTransmitPath<%p>::startRemotePathDeactivationFailed - Path ID %u\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::setAllocatedAndActivated - allocated = %d activated = %d\n`
+- `%lldus IOThunderboltXDomainPath<%p>::activate - Path ID %u\n`
+- `%lldus IOThunderboltControlPath<%p>::tokenBucketUpdate - delta=%llu ns tokens=%d fTokenBucket=%d\n`
+- `%lldus IOThunderboltPort(FF@FF:%x)::getThunderboltDepth - fSwitch = 0x0\n`
+- `%lldus IOThunderboltPath<%p>::doHopDeactivations - deactivating hop_index %d\n`
+- `%lldus IOThunderboltConfigXDomainUUIDRequestCommand<%p>::complete\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::setPowerState - kThunderboltPMPauseState\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::enableTimeSyncMasterForPortSynchronous - enable = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::lateSleepPhase2 - port %d, no dual link client, quiesce = true\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CLengthRead\n`
+- `%lldus IOThunderboltConnectionManagerType5(%d)::initWithController - success = %d\n`
+- `%lldus IOThunderboltController(%d))::lateSleep - fIsAsleep = %d\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::iecsCommandAction - can't find switch for route 0x%llx\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::clientReady - fLocalServiceReady = %u, ready = %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateRxQueueInternal - Rx queue allocated\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::publishVSAConfigTable - protocol_idx=0x%x rxMask=0x%x \n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::updateCIOTransportMetadataAndHash - trm_policy->setMetadataAndHash metadata = %p hash = %p\n`
+- `%lldus IOThunderboltConnectionManager<%p>::createResources - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::verifierCallback - port_number = %d not found\n`
+- `%lldus IOThunderboltSwitchOS(%d@0x%llx)::routerOperation - operation_status = 0x%02x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathSetupCompleteRequest - found XDomain Service Client %s\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - Could not create PropertiesDirectory from key 0x%llx\n`
+- `%lldus IOThunderboltLocalNode<%p>::setPropertiesBytes - \n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createInterfaces - DP: add_interface = %d adapter_index = %d status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::enablePlugEvents - data (after) = 0x%08x\n`
+- `%lldus IOThunderboltControlPath<%p>::destroyTokenBucket\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::readEEPROMInternal first rstatus non zero %x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::getMatchingXDomainServiceClient - compare_service_uuid_string = %s\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::dataRead - i = %d,\tD0 = 1, status = 0x%08x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::complete - incoming status = 0x%x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::getRootDROM - drom_data = %p\n`
+- `%lldus IOThunderboltController(%d)::updateTMUMode - status = 0x%08x\n`
+- `%lldus IOThunderboltController<%p>::getSwitchesForRoute - depth = %d, port = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyTxQueueInternal - done, Path ID %u status = 0x%08x\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::enableTimeSync - offset = 0x%x data = 0x%08x mask = 0x%08x enable = %d status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::doHopDeactivations - clear_ise = %d, packet = 0x%08x 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setupPowerManagement - wake from commandSleep\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainQueue - Path ID %u, Path ID Pair %u, tx_e2e_hop_id = %u, tx_queue_status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::createTxQueueInternal - done,  Path ID %u, status = 0x%08x\n`
+- `%lldus  03:  %08x   Topology ID High\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::getSwitchesAtDepth - port = %p port number = %d\n`
+- `%lldus IOThunderboltPath<%p>::createPathTable - route = 0x%llx port = 0x%x hw_bw = %d req_alloc_bw = %d req_bw_avail = %d req_bw = %d\n`
+- `%lldus IOThunderboltConfigXDomainROMChangedRequestCommand<%p>::processResponse - packet type = interdomain response\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::processResponse - fProtocolErrorCode = 0x%08x\n`
+- `%lldus IOThunderboltController(%d)::createResources\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::prepareForTermination - done\n`
+- `%lldus IOThunderboltUserObjectExporter::addObject - ERROR: failed with 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - use new path, score\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - Reading EEC\n`
+- `%lldus IOThunderboltConfigXDomainLinkChangeRequestCommand<%p>::complete\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::setupPowerManagement - HAL is off stop waiting for power up\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequestComplete - fFinalizeWaiting = true, abort\n`
+- `%lldus IOThunderboltVSAService<%p>::terminate\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainPathControlRequest = %d\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processLocalActivateComplete - Path ID %u - deactivation requested, abort\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>::initWithLocalNode\n`
+- `%lldus IOThunderboltXDomainReceivePath<%p>::startDeactivationInternal - Path ID %u\n`
+- `%lldus IOThunderboltSwitchOS2(%d)::updateCLxModeInternal enable=0x%x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 3 (Resolve Micros) end\n`
+- `%lldus IOThunderboltConfigXDomainROMReadRequestCommand<%p>::processResponse - fProtocolErrorCode = 0x%08x\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::writeBytesSync - check for write ack\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsWillSleep onlyBlockedClientOnDeallocation=%d - return\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::decrementClientScanCount - decremented client scan count id %u to %u\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigPhyStateReadComplete - not ready for IECS, complete now\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::clientClose\n`
+- `%lldus IOThunderboltConfigXDomainCommand<%p>::processResponse - packet type = error\n`
+- `%lldus IOThunderboltPath<%p>::findCandidatePaths - path %d - route = 0x%llx port = 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::completeActivation status=0x%llx\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathTeardownRequest - src service uuid = %s, dst service uuid = %s\n`
+- `%lldus IOThunderboltTunnelDriverType2(%x:%llx:%x)::setTunnelDestinationPort - interface = %p tbtPort = %p transportPort = 0x%x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteConfigPhyStateReadComplete - not ready for IECS, complete now\n`
+- `%lldus IOThunderboltTransmitQueue(%d)::completeCommand = %p\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForClientStopWithTransportPort - transportPort=0x%x fTunnelIsStarted = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequest - dispatching sendControlRequestAsyncCallback()\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::stopUsingTunnel\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - not enough bandwidth - discard path %d\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::updateConfiguredStateForPort - port_number = 0x%02x - offset = 0x%x data = 0x%08x mask = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::getMatchingXDomainServiceClient - xd_client = %p, %s\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::getMatchingXDomainPath - compare_path_uuid_string = %s\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::messagePortClients - sending message to destination port at (%x:%llx:%x)\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateTxQueueInternal - Path ID %u, max_frame_size = %llu\n`
+- `%lldus IOThunderboltPath<%p>::allocate - dst_range.start %d > dst_range.end %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType2(%d)<%p>::waitForClientStop - return status = 0x%08x\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::setMetadata on fCIOTransport = %p key = \"%s\" metadata_key = \"%s\" value = %p\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireI2CLock - retry lock, 0x%x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigDataReadComplete - read_bytes = 0x%08x, length = %lld\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::getRootDROM - old_drom_data = %p\n`
+- `%lldus IOThunderboltSRAMLog(%x@%llx)::readDebugBlock - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 6 (Discover XDomain) begin\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readDROMFromRegistry - could not get DROM property from registry\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::start\n`
+- `%lldus IOThunderboltControlPath<%p>::createTimers - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::terminateInvalidClientsOnPort - terminate invalid xdomain link %d\n`
+- `%lldus IOThunderboltXDPropertiesImmediateValue<%p>::free\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::lateSleepPhase3 - write enter sleep, offset = 0x%x data = 0x%08x - status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::stateChangedNotifyClients calling sendStateChangeNotificationWithParams\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - response_mode = %u, command = %p\n`
+- `%lldus IOThunderboltConfigModifyQuadletCommand<%p>::processResponse - packet type = read response\n`
+
+**[__TEXT.__cstring]**
+
+- `IOThunderboltEEPROM::getDROM - Error getting DROM from I/O Registry (0x%x)\n`
+- `%lldus IOThunderboltPath<%p>::getNextPortsArray - (2) add port route = 0x%llx port = 0x%x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startLocalPathActivation - Path ID %u - activating local path, src (%u:0x%08llx:%u) src hop [%u-%u] dst (%u:0x%08llx:%u) dst hop [%u-%u]\n`
+- `site.IOThunderboltControllerType5`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::publishServices - ERROR: couldn't copy service directory for client service key '%s'!\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::copyDestinationPort - return port = %p\n`
+- `site.IOThunderboltDispatchContextBlock`
+- `%lldus IOThunderboltSwitch(%x@%llx:0x%x)::childDeviceScanForPort - link is up!\n`
+- `%lldus IOThunderboltConfigXDomainROMReadRequestCommand<%p>::processResponse - wrong source domain\n`
+- `%lldus IOThunderboltConfigXDomainLinkStatusRequestCommand<%p>::processResponseData - pdf = %d\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::publishServices - ERROR: Couldn't allocate services dictionary!\n`
+- `%lldus IOThunderboltControlPath<%p>::createTokenBucket - fTokenBucketEnabled=%d fTokenBucketBytesPerSecond=%d fTokenBucketTimerThreshold=%d fTokenBucketBurstLimit=%d\n`
+- `%lldus IOThunderboltSwitchUSB4(%x@%llx)::configureRouter - data = 0x%08x should_configure = %d - status = 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::configWriteAction - route = 0x%llx port = 0x%x space = 0x%x index = 0x%x\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::finalize - ERROR: XDomain Path is not deactivated!, Path ID %u, path = %p\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::configCommandCallback - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::dataRead - i = %d,\tD0 = 0, status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getDROMOffset - configRead route=0x%llx offset=0x%x serialnum=0x%x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CCommandDataWrite\n`
+- `%lldus IOThunderboltConfigXDomainUUIDRequestCommand<%p>::processUUIDReadResponse - fProtocolErrorCode = 0x%08x\n`
+- `site.IOThunderboltTimerCommandQueue`
+- `%lldus IOThunderboltXDomainService<%p>::initWithLink\n`
+- `site.IOThunderboltSwitchDelegateACIO`
+- `IOThunderboltSRAMLog`
+- `%lldus IOThunderboltControlPath<%p>::submit - enqueue command = %p onto response queue\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processChild - find DFT capability, child=0x%llx\n`
+- `%lldus IOThunderboltConfigCompareSwapCommand<%p>::free\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::dispatchWait(lock, held) - fSleepingThreadCount woke up\n`
+- `IOTBTTunnelDriverInterfaceType3`
+- `%lldus IOThunderboltConfigReadCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx) - Phase 5 (Wake Links) begin\n`
+- `%lldus IOThunderboltPath<%p>::createPathTable - last port %p is not fDestinationPort %p\n`
+- `%lldus IOThunderboltXDomainService(%x@%llx)::finalize - terminate service: %s\n`
+- `IOThunderboltNumber`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - ERROR: newServiceDictionary = NULL! publish = %u\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::free\n`
+- `Reserved (13) `
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - waiting for kEE_BB_REQ fEECRegisterCache = 0x%08x\n`
+- `%lldus IOThunderboltController(%d)<%p>::setPowerState processSetPowerState - return status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::createRxQueueInternal - Path ID %u\n`
+- `%lldus IOThunderboltConnectionManager<%p>::scanRootSwitch - processDeviceScanResults\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::readBytesSync - set read bit\n`
+- `startLocalPathActivation`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::processResponse - wrong destination domain\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::dataRead - i = %d,\tSK = 0, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::enablePlugEvents - write plug event register, packet = 0x%08x\n`
+- `Link Bandwidth`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::finalize - ERROR: late sleep scan count = %u\n`
+- `site.OSSharedPtr<IOThunderboltPortMicro>`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupRequest - ERROR: failed in sendNewXDomainPathCallback()!\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - could not create service iterator\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::checkCanEnterLinkModeForPort - port = (%x@%llx:0x%x), mode = %d\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::submitGated - queue iterate break\n`
+- `Max Hop ID`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::updateUpstreamLinkModeSupport - read UFP, ufp_asymmetric_support = 0x%08x, status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::destroyPathTable - fPathTable[%d].flags = 0x%x\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::free\n`
+- `%lldus IOThunderboltController<%p>::systemWillShutdown - kIOMessageSystemWillPowerOff\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::free\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::wakeAllPorts - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltXDomainPath<%p>::createResources - ERROR: failed to allocate fLocalPath!\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::setLCCapability smcReadKey returned = 0x%x\n`
+- `UART packet `
+- `%lldus IOThunderboltFamilyUserClient<%p>::setPowerState - kThunderboltPMWakeState\n`
+- `12111112122212121111111111111122122122221111122112121212221211112112222122222222211111211`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - reset status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::processNFCDeactivationResults - didn't lock, old_value = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyXDomainPath - fLocalServiceReady wake\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - XDomain Request packet src uuid = %s\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - ERROR: unknown XDomain path protocol request packet type = %d\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - created work queue (0x%x)\n`
+- `HPD unplug `
+- `Advertised XDomain Services`
+- `site.OSSharedPtr<IOThunderboltLinkController>`
+- `%lldus IOThunderboltXDomainPath<%p>::startCompleteActivationConfigure - Path ID %u - ERROR: Base class does not implement this function!\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::areAllClientsAsleep clients_asleep=%d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::runTestCode_DEBUG - BUILDING PATH ID %u!\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::earlyWake - port = %p port number = %d found tunnel driver = %p\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processRemoteActivateComplete - ERROR: Mismatched Path ID from Path Setup Complete Request! Path ID %u, Request Path ID %u\n`
+- `Tx`
+- `IOThunderboltSwitchType3(0x%llx)::readEEPROMInternal - No DROM found. Using default Type 2.1 DROM.\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::sendPrepareToSleepMessageToMicro - address = 0x%02x, message = 0x%08x, retries = %d\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::start - fHIPort = %p fVSAPort = %p status=0x%x \n`
+- `Protocol Rev`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - WARNING: attempted to unpublish a non-published service! key = %s, publish = %u\n`
+- `%lldus IOThunderboltSwitchOS2<%p>::configureUpstreamAsymmetricMode - dispatchAsync( IOThunderboltSwitchOS2<%p>::configureUpstreamAsymmetricModeInternal )\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::invalidateAllClients - invalidateClientsOnPort(%d)\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::processPlugEvent - invalidate clients #%d route = 0x%llx port = %d\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::readEntry - Finished reading directory\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::getArrayOfEntriesOfType - theKey='%s' theActualObject=%p\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::free\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequest - fControlRequestSyncCallback.target = %p, fControlRequestAsyncCallback.target = %p\n`
+- `%lldus IOThunderboltPath<%p>::mergeLists - i = %d src_list_port = %p dst_list_port = %p \n`
+- `%lldus IOThunderboltXDomainPath<%p>::startDeactivation - Path ID %u - path setup complete command woke up, fXDPathSetupCompleteCommand = %p\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::decrementScanCount - ERROR: fController == NULL\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::setAllocatedAndActivated - allocated = %d activated = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::activateXDomainPath - local port = %u, local_hop_id = %u, remote port = %u\n`
+- `%lldus IOThunderboltLocalNode<%p>::createResources - product = '%s'\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::setMetadata on fCIOTransport = %p key = \"%s\" metadata_key = \"%s\" value = %p\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::finalize\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequestComplete - done dispatching submitXDomainPathCapabilitiesRequest(), dispatch_status = 0x%08x\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - Error 0x%x occurred while encoding text entry\n`
+- `%02x`
+- `%lldus Thunderbolt - Waiting for client (Client interface %p) \"%s\" at rid %d, ASP=%d, RSP=%d\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::tunnelDidDeallocate - return\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::initWithService - ERROR: Failed to allocate fTxQueues!\n`
+- `IOThunderboltUserObjectExporter`
+- `%lldus IOThunderboltXDomainPath<%p>::startCompleteActivation - Path ID %u - we're done with a remote-initiated activation, submitting path setup complete notification.\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::init\n`
+- `Supported Link Modes`
+- `IOThunderboltPath`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - start_switch = %p\n`
+- `TBT W (1): %d [√]\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::clientUsingTunnel\n`
+- `%lldus IOTBTTunnelUSBType2ClientInterface(%x@0:0x%x)::stopUsingTunnel\n`
+- `%lldus IOThunderboltXDPropertiesEntry<%p>::initWithCache\n`
+- `IOThunderboltXDLocalPropertiesCache`
+- `%lldus IOThunderboltXDomainPath<%p>::processPathSetupRequestResponse - Path ID %u - resubmitted the path setup request, resubmit_status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchLegacy(%x@%llx)::setupTMU - enable TMU - status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::clientWillWake\n`
+- `%lldus IOThunderboltPort<%p>::setPeerPort - port_number = 0x%x alt_port = %p 0x%x\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::headChanged - queue empty cancel timeout\n`
+- `%lldus IOThunderboltSwitchLegacy(%x@%llx)::setupTMU - disable TMU\n`
+- `%lldus IOThunderboltConfigXDomainLinkChangeRequestCommand<%p>::processResponseData - crc = 0x%08x, calc_crc = 0x%08x crc_error = %d\n`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::setupPowerManagement - status = 0x%x\n`
+- `%lldus IOThunderboltConnectionManager<%p>::disableConfigurationThread\n`
+- `Apple Serial Number`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processChild - scan_port = %d upstream_port = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::read8051 - timed out waiting for valid to clear\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::setupStaticData - Found path disable flags in EDT = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::invalidateClientsOnPortInternal - %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathTeardownComplete - incoming status = 0x%x, xdomain_path = %p, fFinalizeWaiting = %u\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::configCommandCallback - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::ppsAccessSync failed SMC access with code = 0x%x at step %d\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::childDeviceScanForPort - invalidate clients #%d route = 0x%llx port = %d\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache::encodeDictionary - adding directory header to ROM for '%s'\n`
+- `Protocol Setting`
+- `IOThunderboltCommandGate`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::getTxQueueForPathID - key = \"%s\"\n`
+- `%lldus IOThunderboltLocalNode<%p>::sendROMChangedNotifications\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDService - ERROR: could not create new service properties dictionary! publish = %u\n`
+- `DPSRC HPD change `
+- `%lldus IOThunderboltSwitchDelegateACIO(%d@0x%llx)::updateCableParameters - ERROR: cable_state is NULL.\n`
+- `IOTBTTunnelClientInterface`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainPathSetupCompleteRequest = %d\n`
+- `%lldus IOThunderboltXDomainTransmitPath<%p>::processRemoteActivateCompleteSuccess - done, status = 0x%08x\n`
+- `121111211112221222112221`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::finalize - done with deactivations, clear fXDomainPaths\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processControlRequest - found XDomain Service Client %s\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::clientReady - cap request = %p, local Service Ready = %u, local XDomain Max Hop ID = %u, local Max Credits = %u\n`
+- `%lldus IOThunderboltControlPath<%p>::start\n`
+- `enable`
+- `%lldus IOThunderboltController<%p>::decrementClientScanCount - fClientScanCount = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequest - ERROR: Failed to get response_command packet buffer!\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::configureUpstreamAsymmetricMode - Failed to get cleared Asym in progress indication cleared).\n`
+- `site.IOThunderboltMultiMapper`
+- `%lldus TBT Timing - DROM read begin\n`
+- `IOThunderboltConfigXDomainLinkChangeRequestCommand`
+- `%lldus IOThunderboltSwitch(%x@%llx)::doOverrideSupportedCLxStates - new_clx_states=0x%x\n`
+- `121111211`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::createSwitchForDeviceHeader - Unknown VID 0x%04x DID 0x%04x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx:0x%x)::childDeviceScanForPort - wait_for_training = %d prior_link = %d status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx:0x%x)::childDeviceScanForPort - timed out waiting for link training\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::sendPlugEventAck - plug_port = 0x%x ack_type = 0x%x\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::headChanged - head_deadline = %llu ms\n`
+- `%lldus IOThunderboltSwitchLC<%p>(0x%llx)::sendPrepareToSleepMessageToMicro - lc_address = 0x%08x wake enables = 0x%08x\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::incrementScanCount - ERROR: increment id %u must be between 0 and %u inclusive\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropI2CLockSynchronous - dispatchSync( dropI2CLock )\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::checkUIDMatch - status=0x%08x new_uid=0x%016llx old_uid=0x%016llx result=%d\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::setTMUMode - tmu_mode = %d\n`
+- `%lldus IOThunderboltXDomainPath<%p>::completeDeactivation - Path ID %u - WARNING: deactivation was run synchronously but a completion is registered by %p, the completion will not be called, status = 0x%08x\n`
+- `%lldus IOThunderboltFindCapabilityCommand(%x@%llx:%x)<%p>::processConfigReadResults - ext_quad = 0x%08x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteStart - fPortSet = %p\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>::terminate\n`
+- `IOThunderboltTransmitQueue`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::waitForTunnelDeallocate - woke up fActualTunnelIsAllocated = %d\n`
+- `v8@?0`
+- `%lldus IOThunderboltConfigCommand - kConfigCommandNotClaimedInvalid - error port in route mismatch\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::initWithCache(parent) - ERROR: initResources failed with 0x%08x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::createResources - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltLocalNode<%p>::setPropertiesBytes - cacheBytes result=0x%x\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - (2) Add or remove service with key '%s', publish = %u, error = 0x%08x\n`
+- `%lldus IOThunderboltXDLocalPropertiesCache<%p>::encodeDictionary - ERROR: error while caching bytes, 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - Failed CRC8 Verification: 0x%x != 0x%x\n`
+- `NVM Load Failed`
+- `%lldus IOThunderboltConfigResetCommand<%p>::processResponse - fErrorCode = 0x%x error_code_received = %d\n`
+- `%lldus IOThunderboltController<%p>::start - IONVRAM not available\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::configureLinkMode - done, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::updateWakeEnables - port_group_offset = 0x%x\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::readEntry - ERROR: (2) directory data offset out of bounds (%d + %d >= %d)\n`
+- `%lldus IOThunderboltControlPath<%p>::tokenBucketAddTokens - tokens=%d fTokenBucket=%d\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::configureUpstreamAsymmetricMode - sym -> asym ufp CL0 polling status=0x%08x.\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::headChanged - queue head changed set new timeout\n`
+- `IOThunderboltXDPropertiesDirectory`
+- `%lldus IOThunderboltXDomainPath<%p>::processPathSetupRequestResponse - Path ID %u - incoming status = 0x%08x, fXDPathSetupRequestCommand = %p, command = %p, fDeactivationRequested = %u\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::loadPortDefaults - hardware_service = %p status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupCompleteRequest - done, status = 0x%08x\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::setEnabledCLxStates - data = 0x%08x clx_states = 0x%x status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::getAvailableBandwidth - hw_bandwidth = %d, allocated_bandwidth = %d, available_bandwidth = %d, min_available_bandwidth = %d\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::readBytesSync - read byte\n`
+- `TMU Mode`
+- `%lldus IOThunderboltPath<%p>::hardwareWasReset\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::clientUsingTunnel - interface %p before clientUsingTunnel()\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processPathCapabilitiesRequestComplete - ERROR: failed to allocate IOThunderboltDispatchContext!\n`
+- `Current Link Speed`
+- `%lldus IOThunderboltConfigPollQuadletCommand<%p>::initWithController\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::tunnelWillSleep\n`
+- `%lldus IOThunderboltControlPath<%p>::tokenBucketUpdate - delta=%llu ns tokens=%d fTokenBucket=%d\n`
+- `site.IOThunderboltPath`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::changeTMUMode\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::preConfigureRouter - vsec_offset = 0x%x status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - ERROR can't allocate NFC\n`
+- `%lldus IOThunderboltConfigXDomainLinkChangeRequestCommand<%p>::processResponseData - packet type = error\n`
+- `%lldus IOThunderboltConfigXDomainROMChangedRequestCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltPath<%p>::update - fLocalState = %d\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::setupTMU - Time Synchronization Protocol Not Supported (TSNS) bit is set.\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - removing service %p with uuid 0x%llx from fServices array\n`
+- `site.IOThunderboltConfigReadQuadletCommand`
+- `%lldus IOThunderboltController(%d)::updateCLxModeInternal - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::updateTopologyID - packet = 0x%08x 0x%08x 0x%08x 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - link is up, but dual link was not, recheck\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::attach\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::updateWakeEnables - port %d is a primary NULL port\n`
+- `%lldus IOThunderboltSRAMLog(%x@%llx)::readDebugBlock - buffer = %p output_length = 0x%llx log_length = 0x%llx status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterface(%d)<%p>::sendStateChangeNotificationWithParams -  dispatchAsync( processSendStateChangeNotificationWithParams )\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::invalidateAllClients - invalidate clients #%d route = 0x%llx port = %d\n`
+- `%lldus IOThunderboltSwitchLC(%x@%llx)::lateSleepPhase3 - ERROR: status = 0x%08x\n`
+- `site.IOThunderboltSwitchI2CCommandQueue`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsWillSleep onlyBlockedClientOnDeallocation=%d\n`
+- `%lldus IOThunderboltController<%p>::switchForUID - uid = 0x%08llx, switch = %p\n`
+- `%lldus IOThunderboltConfigResetCommand<%p>::free\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::finalize\n`
+- `%lldus IOThunderboltVSAService<%p>::terminate\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::decrementClientScanCount\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::overrideDeviceHeader\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%d@0x%llx)::publishSocketIDs - No port-number property found.\n`
+- `%lldus IOThunderboltTransmitQueue(%d)::completeCommand = %p\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::linkPartnerReset - PHY capability offset = %d for child port %d\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::publishServices - ERROR: Couldn't find Advertised XDomain Services dictionary!\n`
+- `%lldus IOThunderboltPath<%p>::beginNextNFCDeactivation - route 0x%llx, port = %d, nfc credits = %d, compare_value = 0x%08x, new_credits = 0x%08x\n`
+- `IOThunderboltTRMPolicy`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getDROMOffset\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::lateSleepPhase3 - waited %d ms for firmware sleep, state = 0x%08x\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::iecsCommandAction - can't create write descriptor\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::discoverXDomainLinks - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processXDomainChild - scan_port = %d\n`
+- `%lldus IOThunderboltPath<%p>::completeUpdate - status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::getMatchingXDomainPath - ERROR: Found non-IOThunderboltXDomainPath OSObject %p in fXDomainPaths!\n`
+- `%lldus IOThunderboltLocalNode<%p>::finalize\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::submitWorkToTransmitter\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::resolveMicros - port = %p port number = %d\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::isCIOTransportRestricted - trm_policy = %p\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::setPowerState - kThunderboltPMPauseState\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::readBytesSync - wait for read\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequestComplete - dispatching resubmitXDomainPathCapabilitiesRequest()\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::startROMRead\n`
+- `%lldus IOThunderboltConfigReadQuadletCommand<%p>::free\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigPollTimer\n`
+- `%lldus IOThunderboltXDomainServiceClient(%x@%llx)::finalize - unknown service\n`
+- `%lldus IOThunderboltReceiveQueue(%d)::start\n`
+- `Max Out Hop ID`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::lateSleepComplete - decremented late sleep scan count to %u\n`
+- `site.IOThunderboltConfigXDomainPathSetupCompleteRequestCommand`
+- `%lldus IOThunderboltHopSet<%p>::allocateHopIDInRangeForPathWithCounter - candidate_hop = %d\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::readEntry - ERROR: Unknown entry type 0x%x at offset quad %u (0x%x)\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getDROM - Error reading DROM from EEPROM (0x%x)\n`
+- `site.IOThunderboltCommand`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::loadPortMap - port_map_buffer = %p status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::createPathTable - route = 0x%llx port = 0x%x hw_bw = %d req_alloc_bw = %d req_bw_avail = %d req_bw = %d\n`
+- `%lldus IOThunderboltController(%d)::wakeCLxWaiters - fSWObjectionCLxStates = 0x%08x\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::checkPathsDisabledByPortType - paths_disabled = %d\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::configureUpstreamAsymmetricMode - asym -> sym step 5/6a status=0x%08x).\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::updateBusPowerProperties - micro @ 0x%x, hv_byte = 0x%x temp_status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startLocalPathActivation - Path ID %u - fDeactivationRequested = %u\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::externalMethod - ERROR: command requires admin privs (%d)\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::controllerSetPowerState - kThunderboltPMWakeState\n`
+- `IOThunderboltMultiMapper`
+- `%lldus IOThunderboltConfigXDomainLinkChangeRequestCommand<%p>::prepareForExecution - route = 0x%llx sn = %d\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::processResponse - swapped quad_packet[%d] = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::isPortConnected - port %d connected %d\n`
+- `%lldus IOThunderboltController<%p>::findCapability - ERROR: findCapability failed with 0x%x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelWillSleep calling reevaluateTunnelSleepWithTransportPort for transportPort=0x%x \n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::lateSleepPhase3 - waited for sleep ready indication, data = 0x%08x - status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - Asserting kEE_BB_REQ\n`
+- `%lldus IOThunderboltReceiveCommand<%p>::free\n`
+- `Device Model Name`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - fDestinationPort = %p, port num = %d\n`
+- `IOThunderboltEEPROM::parseDROMData - Failed CRC32 Verification: 0x%x != 0x%x\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::waitForTunnelDeallocate - fTunnelIsAllocated = %d fTunnelIsActivated = %d\n`
+- `USB3 Wake`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::readEEPROMInternal First RO status %x rstatus %x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::activateXDomainPath - ERROR: Couldn't find a Rx Queue with Path ID %u!\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::patchDROM - fSwitch not set in regular mode!\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupRequest_DEBUG - ERROR: failed in allocateXDomainQueue() for XDomain Path with Path ID %u! status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::syncTargetAndNegotiatedWidth - invalidate clients #%d route = 0x%llx port = %d\n`
+- `%lldus IOThunderboltPath<%p>::doHopDeactivations - deactivating hop_index %d\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::configureUpstreamAsymmetricMode - asym -> sym  Failed to get expected negotiated width (Expected=0x%x ufp_negotiated_width=0x%x status=0x%08x).\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::finalize - WARNING: deactivating path %p with uuid %s\n`
+- `Remote Controller`
+- `%lldus IOThunderboltConnectionManager<%p>::startWakeScan - fConfigurationThreadRunning = %d\n`
+- `121111111`
+- `%lldus IOThunderboltPath<%p>::findBestPath - path %d - route = 0x%llx port = 0x%x\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::setSourceUUID - uuid = %s, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::identifyHWRevision - string_buffer = %s\n`
+- `DP Wake`
+- `%lldus IOThunderboltReceiveQueue(%d)::completeCommand command = %p\n`
+- `%lldus IOThunderboltControlPath<%p>::newTransmitCommand - command = %p, status = 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - downstream_port = %p, upstream_port = %p\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::free\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyRxQueueInternal - ERROR: failed to get Rx Queue for key \"%s\"!\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::terminateInvalid - port = %p fUpstreamPortNumber = %d\n`
+- `Buffer Allocation Request`
+- `site.PathEntry`
+- `%lldus IOTBTTunnelDriverInterfaceType2(%d)<%p>::tunnelWillDeactivate - changed=%d return\n`
+- `tb_packet_history`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequest - done, status = 0x%08x\n`
+- `%lldus IOThunderboltXDPropertiesCache<%p>::propertiesTypeOfObject - ERROR: Error 0x%x occurred while trying to determine type of object %p\n`
+- `%lldus IOThunderboltController<%p>::configPollDWordWithMask - WARNING: synchronous call on workloop thread not permitted.\n`
+- `1211111212221212111111111111112212212222111112211212121222121111211222212222222221111121211`
+- `%lldus IOThunderboltSwitchType7(%x@%llx)::handleNotifyEvent - event_code = %d - requestPowerDown\n`
+- `%lldus  05:  %08x   Link Credits Allocated=%d   Max Out HopID=%d   Max In HopID=%d\n`
+- `1211112111122212221221`
+- `%lldus IOThunderboltConfigMultiReadCommand<%p>::processResponse - claimed complete fCurrentCount=%u fCount=%u\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathCapabilitiesRequest - src service uuid = %s, dst service uuid = %s\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::initResources - creating entry from cache %p with offset 0x%x\n`
+- `%lldus IOThunderboltSwitchType6(%x@%llx)::configureRouter - write config valid = 0x%08x - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::lateSleepPhase2 - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::startLinkStateNegotiation\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - link status (2) target link width = 0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientNotReadySync - done\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::publishLinkProperties - port = 0x%x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::setPowerState - state = %d\n`
+- `1211111212221212111212222221212211212221212212122221`
+- `%lldus IOThunderboltController(%d)::updateTMUMode - status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequestComplete - no fControlRequestAsyncCallback, continue\n`
+- `IOThunderboltConfigXDomainPathSetupCompleteRequestCommand`
+- `%lldus IOThunderboltXDomainTransmitPath<%p>::processRemoteActivateCompleteSuccess - Path ID %u, Tx: (3) we're done. Calling startCompleteActivation().\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::checkCanEnterLinkModeForPort - ufp = (%x@%llx:0x%x), dfp = (%x@%llx:0x%x)\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::staticLinkAll - fMaxPortNumber = %d\n`
+- `%lldus IOThunderboltPath<%p>::destroyPathTable - table = %p count = %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::doesPortHaveDualLinkPort - adapterType = 0x%06x disabled = %d\n`
+- `%lldus IOThunderboltConfigErrorCommand<%p>::processRequestComplete - pdf = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::destroyPowerManagement\n`
+- `%lldus IOThunderboltXDomainPath<%p>::startRemotePathDeactivationFailed - Path ID %u - ERROR: Base class does not implement this function!\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireI2CLockSynchronous - ERROR: acquireDPAdapter failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::dropDPAdapter\n`
+- `%lldus IOThunderboltController<%p>::free\n`
+- `IOThunderboltConfigXDomainCommand`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::completeXDomainPathRequestCommand - ERROR: Mismatch between completed config command and in-flight XDomain Path Request command! fXDomainPathRequestCommandInFlight = %p, command = %p\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::dataWrite - i = %d,\tSK = 0, status = 0x%08x\n`
+- `<< tx:`
+- `%lldus IOThunderboltUserObjectExporter::addObject - ERROR: can't make objects\n`
+- `Device ID`
+- `%lldus IOThunderboltConfigCompareSwapCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltDispatchQueue<%p>::stop\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::waitForTunnelWake - sleep on fTunnelIsActivated = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::dispatchActivateXDomainPath - dispatching activateXDomainPath()\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::disableTMU\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelDeallocateWithTransportPort - transportPort=0x%x fTunnelIsAllocated = %d fTunnelIsActivated = %d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::setupPowerManagement - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::createResources - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processXDomainChild - dl_route_string = 0x%llx dl_port=%d route_string = 0x%llx port=%d\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::isPortConnected - port %d connected %d\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::setEnabledCLxStates - set CLx data = 0x%08x mask = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::finalize - wait on XDomain Path deactivation, Path ID %u, path = %p\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::rescanROM\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::setAllocatedAndActivatedWithTransportPort - transportPort=0x%x fTunnelIsAllocated = %d fTunnelIsActivated = %d\n`
+- `%lldus IOThunderboltPath<%p>::beginNextNFCActivation - ERROR: total buffers exceeded (%d + %d > %d)\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDService - done, error = 0x%08x\n`
+- `12111121111222122212222222121`
+- `%lldus IOThunderboltXDomainPath<%p>::processLocalActivateComplete - Path ID %u - WARNING: got an error, calling cleanUpOnActivationError(), status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processLocalActivateCompleteSuccess - Path ID %u - ERROR: Base class does not implement this function!\n`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::finalize - ERROR: early wake scan count = %u\n`
+- `12111121`
+- `%lldus IOThunderboltSwitch(%x@%llx)::syncTargetAndNegotiatedWidth - bonding failed - S = 0x%08x SB = %d LNLW = %d NLW = %d PMLW = %d CMLW = %d PNLW = %d PCS1 = 0x%08x BER = 0x%llx BEP = 0x%x\n`
+- `%lldus IOThunderboltXDPropertiesDirectory<%p>::readEntry - busType 0x%x 0x%x version 0x%x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::dispatchResubmitXDomainPathSetupRequestCommand - dispatching resubmitXDomainPathSetupRequestCommand()\n`
+- `%lldus IOTBTTunnelDriverInterfaceType2(%d)<%p>::messagePortClients - sending message to source port at (%x:%llx:%x)\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - CRC32: 0x%x Len: 0x%x\n`
+- `%lldus IOThunderboltSwitchLegacy(%x@%llx)::finishTMUSetup\n`
+- `%lldus IOThunderboltController<%p>::systemWillShutdown - kIOMessageSystemWillRestart\n`
+- `%lldus IOThunderboltFamilyUserClient<%p>::setPowerState - signal wake\n`
+- `Local Provider UID`
+- `PCI Device`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::setPowerState - unknown power state %d\n`
+- `%lldus IOThunderboltFamilyUserClient(%d)::setupPowerManagement - HAL is on wait for power up\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::createTunnelInterfaceManager - attach status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::readSupportedRouterCapabilities - status = 0x%08x fRouterCapabilities[0] = 0x%08x\n`
+- `1211112111122212221222222222221122221`
+- `%lldus IOThunderboltTunnelDriver(%x:%llx:%x)<0x%08x>::incrementScanCount\n`
+- `site.IOThunderboltSRAMLog`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelWakeWithTransportPort transportPort=0x%x\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - pretend we didn't see a link on port %d\n`
+- `%lldus IOThunderboltController<%p>::setupPowerManagement - ERROR: status = 0x%x\n`
+- `121111121222121211111111122221111111221222221222222121212122`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::checkPathsDisabledByPortType - protocol_flags = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::pathActivationCallback - ERROR: xdomain_path is NULL!\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientNotReadySync - fLocalServiceReady woke up\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteI2CDataRead\n`
+- `special-modes`
+- `%lldus IOThunderboltController<%p>::start - ERROR: success = %d\n`
+- `%lldus IOThunderboltPath<%p>::deallocate - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltXDomainPath<%p>::processPathSetupRequestResponse - Path ID %u - deactivation requested, abort\n`
+- `Whatever`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::message - type = 0x%x, state = 0x%x\n`
+- `objects`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidDeallocateWithTransportPort transportPort=0x%x - waiting for clients to stop using tunnel or to sleep\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - response_mode = %u, command = %p\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getDROM - Error getting DROM from I/O Registry (0x%x)\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainPath - done, Path ID %u, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathSetupRequest - ERROR: failed in xd_client->processPathSetupRequest()! status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - waiting for kEE_BB_RDY\n`
+- `3A0F596B-5D02-41D3-99D4-E27D4F218A54`
+- `%lldus IOThunderboltConnectionManager<%p>::enableConfigurationThread\n`
+- `IOThunderboltConfigXDomainROMChangedRequestCommand`
+- `%lldus IOThunderboltXDomainPath<%p>::startRemotePathActivation - Path ID %u - deactivation requested, abort\n`
+- `%lldus IOThunderboltController(%d)::getCountOfTraceHistories - statistics + root switch debug block count = %d\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::messagePortClients - sending message to destination port at (%x:%llx:%x)\n`
+- `%lldus IOThunderboltPath<%p>::doHopDeactivations - no more valid ports\n`
+- `site.IOThunderboltControllerType7`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - hw_rev = 0x%02x\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmRemoteStart - route = 0x%llx, port = %d, lane = %d\n`
+- `%lldus IOThunderboltPort(%x@%llx:0x%x)::configureLinkMode - ufp = (%x@%llx:0x%x), dfp = (%x@%llx:0x%x)\n`
+- `%lldus IOThunderboltXDomainService<%p>::setProperties\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::tunnelsWillSleepByType - type_key = %s\n`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::pmLocalI2C - length = %lld, offset = %d, fAddress = 0x%x, command_type = %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::dataRead - i = %d,\tD0 = 1, status = 0x%08x\n`
+- `Firmware Mode`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForClientStopWithTransportPort - transportPort=0x%x fTunnelIsStarted = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathTeardownRequest\n`
+- `%lldus IOThunderboltReceiveQueue(%d)::submitWorkToNHI\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::processXDomainChild - invalidate clients #%d route = 0x%llx port = %d\n`
+- `%lldus IOThunderboltPath<%p>::setDestinationPort - fLocalState = %d destination_port = %p\n`
+- `site.IOThunderboltHopSet`
+- `%lldus IOThunderboltConfigResetCommand<%p>::processResponse - packet type = error\n`
+- `%lldus IOThunderboltConfigXDomainROMReadRequestCommand<%p>::complete\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::loadPortMap - hardware_service = %p status = 0x%08x\n`
+- `%lldus IOThunderboltControlPath<%p>::submit - command = %p\n`
+- `IOThunderboltConfigXDomainPathTeardownRequestCommand`
+- `site.IOThunderboltSwitchDelegate`
+- `site.IOThunderboltXDPropertiesLeafText`
+- `%lldus IOThunderboltXDomainPath<%p>::dispatchResubmitXDomainPathSetupRequestCommand - ERROR: failed to dispatch resubmitXDomainPathSetupRequestCommand()! status = 0x%08x\n`
+- `%lldus IOThunderboltConfigXDomainPathRequestCommand<%p>::processResponse - req src uuid = %s, req dst uuid = %s\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - CRC8: 0x%x Len: 0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>::detach\n`
+- `%lldus IOThunderboltController<%p>::switchForRouteString - route = 0x%llx, switch = %p, switch_route = 0x%llx\n`
+- `vid-did`
+- `%lldus IOThunderboltSwitch(%x@%llx)::resetChild - done\n`
+- `link-width-default`
+- `%lldus IOThunderboltVSA(%x@%llx:%x)::publishVSAConfigTable - status=0x%08x table_config=0x%x num_of_entries_per_protocol=0x%x num_of_entries_in_table=0x%x\n`
+- `%lldus IOThunderboltConnectionManager<%p>::createResources - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::updateUpstreamLinkModeSupport - read UFP failed, ufp_asymmetric_support = 0x%08x, status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchIntelJHL9580(%x@%llx)::overrideSupportedCLxStates - Gen4 disabling clx\n`
+- `%lldus IOThunderboltXDomainPath<%p>::free - Path ID %u\n`
+- `%lldus IOThunderboltSwitch(%x@%llx)::fullScan - enumerate device: %s\n`
+- `%lldus IOThunderboltSwitchOS2(%x@%llx)::configureRouter - write config valid = 0x%08x - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitch(%d)::isPortDisabledByBootArg - port_number=0x%X\n`
+- `TBT W (1): %d [x]\n`
+- `1281211`
+- `CLx SW Objection`
+- `%lldus IOThunderboltTransmitQueue(%d)::free\n`
+- `%lldus IOTBTTunnelUSBType2ClientInterface(%d)<%p>::clientDidSleep fTransportPort=0x%x\n`
+- `%lldus  06:  %08x   HEC Errors\n`
+- `%lldus IOThunderboltXDPropertiesEntry<%p>::initWithCache - cache = %p, offset = 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::addressWrite - i = %d,\tDI = 0, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathSetupRequest - done, status = 0x%08x\n`
+- `site.IOThunderboltConfigXDomainPathSetupRequestCommand`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainPath - Remote Request = %u, XDomain To Port = %u, XDomain Tx Path = %u, Local XDomain Max Hop ID = %u, Remote XDomain Max Hop ID = %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::dispatchDestroyXDomainPath - dispatching destroyXDomainPathAndQueue()\n`
+- `v16@?0^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}8`
+- `%lldus IOThunderboltSwitchType7<%p>(0x%llx)::finalize\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequestComplete - retry path capabilities request\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupRequest - done, status = 0x%08x\n`
+- `Supported Link Width`
+- `acioPortDisable`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::submitGated - now = %llu ms\n`
+- `%lldus IOThunderboltConfigXDomainROMReadRequestCommand<%p>::free\n`
+- `%lldus IOThunderboltConfigXDomainPathSetupRequestCommand<%p>::initWithController\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::setCapabilityOffset - offset = 0x%x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::postConfigureRouter - vsec_offset = 0x%x status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::lateSleep - fRestored = %d\n`
+- `%lldus IOThunderboltSwitchType5(%x@%llx)::readEEPROMInternal - readSynchronous\n`
+- `%lldus IOTBTTunnelDriverInterface(%d)<%p>::setTunnelFlags\n`
+- `site.IOTBTTunnelDriverInterfaceType2`
+- `%lldus IOThunderboltTRMPolicyRoot(%x)::setCIOTransport - clear fCIOTransport = %p\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::preConfigureRouter - writing acio_fw_panic 0x%08x\n`
+- `Peer Port Route String`
+- `IOThunderboltXDPropertiesLeafText`
+- `%lldus IOThunderboltIECSCommandQueue<%p>::lcRemoteConfigPollRead\n`
+- `%lldus IOThunderboltControllerGenericACIO(%d)::checkPathsDisabledByPortType - Checking paths disabled for port type = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::getXDomainPathForPathID - ERROR: Found an unknown OSObject in fXDomainPaths!\n`
+- `Micro Address`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::childDeviceScanForPort - wait %u milliseconds for training on port %d\n`
+- `%lldus IOThunderboltSwitchUSB4(%x@%llx)::configureRouter - router ready - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType1<%p>(0x%llx)::addPortForMicro\n`
+- `%lldus IOThunderboltTimerCommandQueue<%p>::processTimeout - command_deadline = %llu ms now = %llu ms\n`
+- `%lldus IOThunderboltSwitchI2CCommandQueue<%p>::writeAddressSync -  check for ack\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupRequest_DEBUG - calling dispatchActivateXDomainPath() for XDomain Path with Path ID %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateRxQueueInternal - Rx queue allocated\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::setTargetLinkWidthToMax - port = 0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::sendControlRequestSynchronous - ERROR: failed in sendControlRequestAsynchronous(), status = 0x%08x\n`
+- `%lldus IOThunderboltConfigCMOverrideCommand<%p>::processResponse - packet type = cm override response\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::acquireDPAdapter\n`
+- `%lldus IOThunderboltController(%d)::start - override tmu mode = %d\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainQueue - Path ID %u\n`
+- `%lldus IOThunderboltPath<%p>::allocate - allocated input hop id %d for src port %p src counter id = %d status = 0x%x\n`
+- `Dst Hop ID`
+- `Apple Host`
+- `L`
+- `%lldus IOThunderboltSwitchType5<%p>(0x%llx)::finalize\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::initWithLocalNode - ERROR: failed to init\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelDeallocateWithTransportPort transportPort=0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainQueue - ERROR: failed in allocateQueue()! Path ID %u, is Tx = %u, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateTxQueueInternal - ERROR: couldn't find Tx Queue for Path ID %u!\n`
+- `tb_cp_burst`
+- `%lldus IOThunderboltSwitchOS(%x@%llx)::updateWakeEnables - port = %d offset = 0x%x with data = 0x%08x\n`
+- `%lldus IOThunderboltTunnelDriverType2(%x:%llx:%x)::tunnelDidActivate - interface = %p\n`
+- `1211112111122212221222221`
+- `%lldus IOThunderboltConfigXDomainROMChangedRequestCommand<%p>::processResponse - packet type = interdomain response\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::doesPortHaveInternalPeerPort - adapterType = 0x%06x, disabled = %d\n`
+- `%lldus IOThunderboltTRMPolicyRoot(%x@%llx:0x%x)::evaluateTRMState - identification restricted\n`
+- `%lldus IOThunderboltSwitchType2<%p>(0x%llx)::setupIECSCommandQueue - find LC capability for switch at route = 0x%llx\n`

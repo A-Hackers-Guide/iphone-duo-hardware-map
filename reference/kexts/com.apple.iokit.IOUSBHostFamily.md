@@ -1,0 +1,1832 @@
+# `com.apple.iokit.IOUSBHostFamily`
+
+- Name: IOKit USB host family
+- Version: `1.2`
+- UUID: `CE17C293-3B9D-3518-8BB8-67A326E1C404`
+- Source version: `1617.40.10.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0, [`com.apple.driver.AppleMobileFileIntegrity`](com.apple.driver.AppleMobileFileIntegrity.md) 1.0.2, [`com.apple.driver.AppleSMC`](com.apple.driver.AppleSMC.md) 1.0.0, [`com.apple.driver.usb.AppleUSBCommon`](com.apple.driver.usb.AppleUSBCommon.md) 1.0, [`com.apple.driver.usb.AppleUSBHostPlatformProperties`](com.apple.driver.usb.AppleUSBHostPlatformProperties.md) 1.2, [`com.apple.iokit.IOAccessoryManager`](com.apple.iokit.IOAccessoryManager.md) 1.0, [`com.apple.iokit.IOPortFamily`](com.apple.iokit.IOPortFamily.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 23.0.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 23.0.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 23.0.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 23.0.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 23.0.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 23.0.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (2) [KC]
+
+### AppleUSBHostResources
+- `CFBundleIdentifier`: `com.apple.iokit.IOUSBHostFamily`
+- `IOClass`: `AppleUSBHostResources`
+- `IOMatchCategory`: `AppleUSBHostResources`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOUSBHostFamily`
+- `IOProviderClass`: `IOResources`
+- `IOResourceMatch`: `IOKit`
+
+### AppleUSBHostResourcesTypeC
+- `CFBundleIdentifier`: `com.apple.iokit.IOUSBHostFamily`
+- `IOClass`: `AppleUSBHostResourcesTypeC`
+- `IOMatchCategory`: `AppleUSBHostResources`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOUSBHostFamily`
+- `IOProviderClass`: `IOResources`
+- `IOResourceMatch`: `IOKit`
+
+
+## C++ classes (44) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleUSB20HostController` | 0xe08 | AppleUSBHostController → IOService → IORegistryEntry |
+| `AppleUSBHostBufferMemoryDescriptor` | 0x120 | IOBufferMemoryDescriptor → IOGeneralMemoryDescriptor → IOMemoryDescriptor |
+| `AppleUSBHostBusCurrentAllocator` | 0x58 |  |
+| `AppleUSBHostBusCurrentClient` | 0x20 |  |
+| `AppleUSBHostBusCurrentPool` | 0x28 |  |
+| `AppleUSBHostClientBufferMemoryDescriptor` | 0x120 | AppleUSBHostBufferMemoryDescriptor → IOBufferMemoryDescriptor → IOGeneralMemoryDescriptor → IOMemoryDescriptor |
+| `AppleUSBHostController` | 0x600 | IOService → IORegistryEntry |
+| `AppleUSBHostControllerDMACommand` | 0x98 | IODMACommand → IOCommand |
+| `AppleUSBHostControllerIsochEndpoint` | 0x28 |  |
+| `AppleUSBHostControllerIsochListElement` | 0x58 | AppleUSBHostControllerListElement |
+| `AppleUSBHostControllerListElement` | 0x38 |  |
+| `AppleUSBHostDARTDMACommand` | 0xa0 | AppleUSBHostDMACommand → IODMACommand → IOCommand |
+| `AppleUSBHostDMABufferMemoryDescriptor` | 0xf0 | IOBufferMemoryDescriptor → IOGeneralMemoryDescriptor → IOMemoryDescriptor |
+| `AppleUSBHostDMACommand` | 0x90 | IODMACommand → IOCommand |
+| `AppleUSBHostDeviceIdler` | 0x50 |  |
+| `AppleUSBHostDeviceUserClient` | 0x130 | AppleUSBHostUserClient → IOUSBInterfaceUserClientV3 → IOUSBInterfaceUserClientV2 → IOUSBInterfaceUserClient → IOUSBDeviceUserClientV2 → IOUSBDeviceUserClient → IOUserClient → IOService → IORegistryEntry |
+| `AppleUSBHostFrameworkClient` | 0x130 | IOUserClient → IOService → IORegistryEntry |
+| `AppleUSBHostFrameworkDeviceClient` | 0x138 | AppleUSBHostFrameworkClient → IOUserClient → IOService → IORegistryEntry |
+| `AppleUSBHostFrameworkInterfaceClient` | 0x138 | AppleUSBHostFrameworkClient → IOUserClient → IOService → IORegistryEntry |
+| `AppleUSBHostIORequestPool` | 0x60 | AppleUSBRequestPool → IOCommandPool |
+| `AppleUSBHostInterfaceUserClient` | 0x1d8 | AppleUSBHostUserClient → IOUSBInterfaceUserClientV3 → IOUSBInterfaceUserClientV2 → IOUSBInterfaceUserClient → IOUSBDeviceUserClientV2 → IOUSBDeviceUserClient → IOUserClient → IOService → IORegistryEntry |
+| `AppleUSBHostPort` | 0x3f8 | IOService → IORegistryEntry |
+| `AppleUSBHostPortInterruptEventSource` | 0xa8 | IOInterruptEventSource → IOEventSource |
+| `AppleUSBHostRequest` | 0x40 | AppleUSBRequest → IOCommand |
+| `AppleUSBHostRequestCompleter` | 0xb0 | AppleUSBRequestCompleter → IOEventSource |
+| `AppleUSBHostRequestPool` | 0x68 | AppleUSBRequestPool → IOCommandPool |
+| `AppleUSBHostResources` | 0x8b8 | IOService → IORegistryEntry |
+| `AppleUSBHostResourcesBusPowerClient` | 0x20 |  |
+| `AppleUSBHostResourcesTypeC` | 0x8c8 | AppleUSBHostResources → IOService → IORegistryEntry |
+| `AppleUSBHostUserClient` | 0x130 | IOUSBInterfaceUserClientV3 → IOUSBInterfaceUserClientV2 → IOUSBInterfaceUserClient → IOUSBDeviceUserClientV2 → IOUSBDeviceUserClient → IOUserClient → IOService → IORegistryEntry |
+| `AppleUSBIORequest` | 0x288 | AppleUSBHostRequest → AppleUSBRequest → IOCommand |
+| `IOUSBDevice` | 0x88 | IODMACommand → IOCommand |
+| `IOUSBDeviceUserClient` | 0xd8 | IOUserClient → IOService → IORegistryEntry |
+| `IOUSBDeviceUserClientV2` | 0xd8 | IOUSBDeviceUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOUSBHostDevice` | 0x150 | IOUSBDevice → IODMACommand → IOCommand |
+| `IOUSBHostIOSource` | 0x60 |  |
+| `IOUSBHostInterface` | 0x1d0 | IOUSBInterface → IOService → IORegistryEntry |
+| `IOUSBHostInterfaceIterator` | 0x28 | OSIterator |
+| `IOUSBHostPipe` | 0xb8 | IOUSBHostIOSource |
+| `IOUSBHostStream` | 0x70 | IOUSBHostIOSource |
+| `IOUSBInterface` | 0x88 | IOService → IORegistryEntry |
+| `IOUSBInterfaceUserClient` | 0xd8 | IOUSBDeviceUserClientV2 → IOUSBDeviceUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOUSBInterfaceUserClientV2` | 0xd8 | IOUSBInterfaceUserClient → IOUSBDeviceUserClientV2 → IOUSBDeviceUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOUSBInterfaceUserClientV3` | 0xd8 | IOUSBInterfaceUserClientV2 → IOUSBInterfaceUserClient → IOUSBDeviceUserClientV2 → IOUSBDeviceUserClient → IOUserClient → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x00015018 off=0x00b19c70-0x00b2ec88 addr=0xfffffe0007b1dc70-0xfffffe0007b32c88 r--/r--   __TEXT            
+	sz=0x0000a2ff off=0x00b1a388-0x00b24687 addr=0xfffffe0007b1e388-0xfffffe0007b28687               __TEXT.__cstring          (CstringLiterals)
+	sz=0x000085e3 off=0x00b24687-0x00b2cc6a addr=0xfffffe0007b28687-0xfffffe0007b30c6a               __TEXT.__os_log           
+	sz=0x00002018 off=0x00b2cc70-0x00b2ec88 addr=0xfffffe0007b30c70-0xfffffe0007b32c88               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x0008f068 off=0x036a1a10-0x03730a78 addr=0xfffffe000a6a5a10-0xfffffe000a734a78 r-x/r-x   __TEXT_EXEC       
+	sz=0x0008e328 off=0x036a1a10-0x0372fd38 addr=0xfffffe000a6a5a10-0xfffffe000a733d38          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000d40 off=0x0372fd38-0x03730a78 addr=0xfffffe000a733d38-0xfffffe000a734a78          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00000b80 off=0x04a1a920-0x04a1b4a0 addr=0xfffffe000ba1e920-0xfffffe000ba1f4a0 rw-/rw-   __DATA            
+	sz=0x000001f0 off=0x04a1a920-0x04a1ab10 addr=0xfffffe000ba1e920-0xfffffe000ba1eb10               __DATA.__data             
+	sz=0x00000980 off=0x00000000-0x00000980 addr=0xfffffe000ba1eb10-0xfffffe000ba1f490               __DATA.__common           (Zerofill)
+	sz=0x00000010 off=0x00000000-0x00000010 addr=0xfffffe000ba1f490-0xfffffe000ba1f4a0               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x0000f310 off=0x01441d98-0x014510a8 addr=0xfffffe0008445d98-0xfffffe00084550a8 rw-/rw-   __DATA_CONST      
+	sz=0x000000f0 off=0x01441d98-0x01441e88 addr=0xfffffe0008445d98-0xfffffe0008445e88         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x000000e8 off=0x01441e88-0x01441f70 addr=0xfffffe0008445e88-0xfffffe0008445f70         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x0000c8a8 off=0x01441f70-0x0144e818 addr=0xfffffe0008445f70-0xfffffe0008452818         __DATA_CONST.__const            
+	sz=0x00001d80 off=0x0144e818-0x01450598 addr=0xfffffe0008452818-0xfffffe0008454598         __DATA_CONST.__kalloc_type      
+	sz=0x00000280 off=0x01450598-0x01450818 addr=0xfffffe0008454598-0xfffffe0008454818         __DATA_CONST.__kalloc_var       
+	sz=0x000006a0 off=0x01450818-0x01450eb8 addr=0xfffffe0008454818-0xfffffe0008454eb8         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000001f0 off=0x01450eb8-0x014510a8 addr=0xfffffe0008454eb8-0xfffffe00084550a8         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 486 at 0x04af9ea0
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     CE17C293-3B9D-3518-8BB8-67A326E1C404
+008: LC_SOURCE_VERSION           1617.40.10.0.0
+009: LC_FUNCTION_STARTS          offset=0x004ac8ea8 size=0xaa0
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `IOUSBHostFamily`
+- `CFBundleIdentifier`: `com.apple.iokit.IOUSBHostFamily`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `IOKit USB host family`
+- `CFBundleNumericVersion`: `18907136`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.2`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1.2`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2000-2025 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.1`
+- `OSBundleLibraries_x86_64`:
+  - `com.apple.driver.AppleBusPowerController`: `1.0`
+  - `com.apple.driver.AppleMobileFileIntegrity`: `1.0.2`
+  - `com.apple.driver.AppleSMC`: `3.1.9`
+  - `com.apple.driver.usb.AppleUSBCommon`: `1.0`
+  - `com.apple.driver.usb.AppleUSBHostPlatformProperties`: `1.2`
+  - `com.apple.kpi.bsd`: `23.0.0`
+  - `com.apple.kpi.iokit`: `23.0.0`
+  - `com.apple.kpi.libkern`: `23.0.0`
+  - `com.apple.kpi.mach`: `23.0.0`
+  - `com.apple.kpi.private`: `23.0.0`
+  - `com.apple.kpi.unsupported`: `23.0.0`
+- `OSBundleRequired`: `Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/IOUSBHostFamily.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198894158736`
+- `_PrelinkExecutableRelativePath`: `IOUSBHostFamily`
+- `_PrelinkExecutableSize`: `737040`
+- `_PrelinkExecutableSourceAddr`: `-2198894158736`
+- `_PrelinkKmodInfo`: `-2198828095200`
+
+## Strings (1647) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `%s@%s: %s::%s: device signature missing\n`
+- `USB Vendor Name`
+- `UsbStreamsSupported`
+- `%s@%s: %s::%s: pipe %p\n`
+- `%s@%s: %s::%s: negative _clockReferenceCount\n`
+- `kPortStatEOF2ViolationCurrentConnectCount`
+- `simulated or deferred connection lost`
+- `fullDisconnect`
+- `%s@%s: %s::%s: iProduct %d\n`
+- `kUSBHostDeviceDisablePortLPM`
+- `%s@%s: %s::%s: found %s@%d %s(%s)\n`
+- `%s@%s: %s::%s: The %s entitlements array has matched at index %d\n`
+- `AppleUSBHostFrameworkInterfaceClient`
+- `9dc7b780-9ec0-11d4-a54f-000a27052861`
+- `setObjectGated`
+- `controllerRegistered`
+- `abortPipe`
+- `willTerminate`
+- `willTerminateThreadCallGated`
+- `%s: %s::%s: forcePower completed with 0x%08x\n`
+- `%s@%s: %s::%s: full-speed endpoint 0 with max packet size of %d\n`
+- `%s@%s: %s::%s: kUSBHostMessageUpdateIdlePolicy from %s@%s [%p]\n`
+- `%s@%s: %s::%s: configuration current override %u mA\n`
+- `UsbUserClientEntitlementExceptionAllowUnlocked`
+- `%s@%s: %s::%s: service terminated while waiting for forcePowerThread\n`
+- `kUSBWakePowerSupply`
+- `%s@%s: %s::%s: unable to allocate _mapperReferenceLock\n`
+- `stopThreadCall`
+- `%s@%s: %s::%s: overcurrent detected with port status 0x%x, localSimulatedInterrupts = 0x%x\n`
+- `USB Serial Number`
+- `121111121222121211211111222222222222222222222222222222222222222222222222222222222222222212121121111122222222222222221211222222222222222222222222222222222222222222222222212111111111222122222222212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121`
+- `%s@%s: %s::%s: device %p interface %p completed with %p\n`
+- `AppleUSBHostDMABufferMemoryDescriptor`
+- `site.AppleUSBHostResources`
+- `40 Gbps`
+- `site.IOUSBDeviceUserClientV2`
+- `pipe stalled`
+- `hardwareExceptionThreadCallGated`
+- `site.T`
+- `didTerminateThreadCall`
+- `%s@%s: %s::%s: enumeration attempt %u\n`
+- `%s@%s: %s::%s: AppleUSBHostDeviceUserClient[%p]::AbortPipeZero - returning err %x`
+- `121112111122121112222`
+- `kPortStatEOF2ViolationDuringResumeCount`
+- `A745B2DF-FB29-4E45-844D-BEFD6D125F9A`
+- `%s@%s: %s::%s: found descriptor in cache \n`
+- `12111111221211112222212`
+- `TRM_DeviceLocked`
+- `11221112`
+- `%s@%s: %s::%s: successfully cached new descriptor %u %u %u %u\n`
+- `%s: %s::%s: device %d (%s@%s) endpoint 0x%02x: status 0x%08x (%s): %d bytes transferred\n`
+- `%s@%s: %s::%s: unable to allocate _isochEPListLock\n`
+- `powerStateDidChangeToGated`
+- `remoteWake`
+- `11111111111`
+- `%s@%s: %s::%s: failed to create _lpmLatencyCache\n`
+- `UsbLinkPowerManagement`
+- `%s@%s: %s::%s: descriptor %p speed %d completed with %p\n`
+- `12122`
+- `%s@%s: %s::%s: failed to create companion port notifier\n`
+- `%s@%s: %s::%s: failed to create _dkInterfaceIteratorDict\n`
+- `%s@%s: %s::%s: domainState 0x%08lx result %lu\n`
+- `%s@%s: %s::%s: %s: waiting for previous power change completed with 0x%08x\n`
+- `IOUSBHostFamily-debug-error`
+- `terminated`
+- `name`
+- `%s@%s: %s::%s: tracking %s@%d %s(%s)\n`
+- `11`
+- `UsbHardwareException`
+- `%s@%s: %s::%s: %s@%s\n`
+- `kPortStatEnumerationFailureCount`
+- `%s@%s: %s::%s: deferring power off\n`
+- `%s: %s::%s: called with invalid completion\n`
+- `%s: %s::%s: @%s: disabled\n`
+- `%s@%s: %s::%s: port not enabled (port status 0x%08x\n`
+- `%s@%s: %s::%s: error setting U2Enable (0x%08x)\n`
+- `1211211211121`
+- `clock-gates`
+- `didTerminateThreadCallGated`
+- `%s: %s::%s: called with invalid pipe\n`
+- `%s@%s: %s::%s: failed to open device\n`
+- `121111121222121211111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111222`
+- `%s@%s: %s::%s: task entitled\n`
+- `%s@%s: %s::%s: string descriptor cannot be overridden\n`
+- `kPortStatUSB3LinkFailureCount`
+- `%s@%s: %s::%s: failed authentication: %s\n`
+- `IOUSBHostPipe`
+- `validateEndpointMaxPacketSize`
+- `%s@%s: %s::%s: wake bus power pool %d mW\n`
+- `disableClock`
+- `bus-number`
+- `%s@%s: %s::%s: removing %s@%d %s(%s)\n`
+- `kUSBHostReturnNoPower`
+- `%s@%s: %s::%s: descriptor override index %s is not recognized\n`
+- `AppleUSBHostDeviceIdler`
+- `UsbExclusiveOwner`
+- `%s@%s: %s::%s: failed to generate device signature\n`
+- `GetIdlePolicy_Impl`
+- `%s: %s::%s: wake bus current pool %d mA\n`
+- `%s: %s::%s: %s@%s: other clients request wakeUnits %d sleepUnits %d\n`
+- `bcdDeviceRange`
+- `usb-stream-policy`
+- `%s@%s: %s::%s: failed to create _transportTerminateNotifier\n`
+- `%s@%s: %s::%s: simulating interrupts with mask 0x%08x\n`
+- `%s@%s: %s::%s: device does not support USB2 LPM\n`
+- `AppleUSBHostBufferMemoryDescriptor`
+- `site.AppleUSBHostClientBufferMemoryDescriptor`
+- `%s: %s::%s: correcting invalid bInterval for pre-USB 2.0 isochronous endpoint\n`
+- `%s@%s: %s::%s: going to state %ld failed with 0x%08x\n`
+- `%s@%s: %s::%s: 0x%08x (%s)\n`
+- `addPowerChildGated`
+- `site.IOUSBHostIOSourceClientRecord`
+- `CreateStreams`
+- `isochronousRequestCompletion`
+- `disableStreams`
+- `Serial Number`
+- `portMonitorTimeout`
+- `%s: %s::%s: bad argument: ioTransferAcceptedCount == NULL\n`
+- `IOUSBHostFamily-debug-assert`
+- `setConfigurationGated`
+- `%s@%s: %s::%s: unable to open user client\n`
+- `%s@%s: %s::%s: device %p completed with 0x%08x\n`
+- `%s@%s: %s::%s: %s %d\n`
+- ` `
+- `system-state-notify`
+- `port-statistics`
+- `removeObjectGated`
+- `%s@%s: %s::%s: privileged/entitled client rejected: admin %d authorized %d entitled %d\n`
+- `kUSBFailedRequestedPower`
+- `%s: %s::%s: pipe state %d\n`
+- `121121121112`
+- `kPowerStateOff`
+- `site.IOUSBInterface`
+- `%s: %s::%s: @%s: unable to waitForWork on workloop thread\n`
+- `UsbProtocolCompanion (2.0)`
+- `%s: %s::%s: sleep bus current pool %d mA\n`
+- `%s@%s: %s::%s: flushing %u buffer mappings\n`
+- `interruptOccurred`
+- `%s@%s: %s::%s: inspecting %s\n`
+- `%s: %s::%s: completed with 0x%08x\n`
+- `kUSBWakePortCurrentLimit`
+- `%s@%s: %s::%s: pipe %p completed with 0x%08x\n`
+- `%s@%s: %s::%s: transport no longer available\n`
+- `%s@%s: %s::%s: consensus idle policy timeout %ums\n`
+- `%s@%s: %s::%s: AppleUSBHostDeviceUserClient[%p]::message - received kIOMessageServiceIsTerminated`
+- `kUSBBusCurrentSleepAllocation`
+- `clearPipeStall`
+- `adjustPipe`
+- `%s@%s: %s::%s: %s -> %s, converting to %s\n`
+- `cableChangeOccurred`
+- `abortGated`
+- `%s: %s::%s: %s@%s: aggregated request wakeUnits %d sleepUnits %d\n`
+- `*`
+- `%s@%s: %s::%s: sleep bus power pool %d mW\n`
+- `enableStreams`
+- `10 Gbps`
+- `%s: %s::%s: called outside of expected lock\n`
+- `site.AppleUSBHostControllerDMACommand`
+- `site.AppleUSBHostInterfaceUserClient`
+- `%s@%s: %s::%s: arguments->scalarInputCount = %u, arguments->scalarOutputCount = %u`
+- `%s@%s: %s::%s: capability descriptors are invalid\n`
+- `%s@%s: %s::%s: forClient %p options 0x%08x arg %p\n`
+- `site.tRawBufferControlRequestCompletionParameter`
+- `%s: %s::%s: device %s endpoint 0x%02x: control request { 0x%02x %02x %04x %04x %04x } timeout %d\n`
+- `1211111122`
+- `%s@%s: %s::%s: \n`
+- `%s@%s: %s::%s: unable to allocate commandGate\n`
+- `:`
+- `%s@%s: %s::%s: device will not be registered for matching\n`
+- `%s@%s: %s::%s: %dmA of bus current is not available\n`
+- `site.AppleUSBHostControllerIsochEndpoint`
+- `unknown`
+- `%s@%s: %s::%s: %s does not share bus power allocation, no work to set %d wakeCurrent and %d sleepCurrent\n`
+- `%s@%s: %s::%s: usb2 port timings are resume: %ums, resumeRecovery: %ums, suspend: %ums, powerOnStabilize: %ums, reset: %ums, resetRecovery: %ums, setAddressRecovery: %ums\n`
+- `hostPipeDisableStreams`
+- `kUSBResumeRecoveryTime`
+- `%s@%s: %s::%s: type 0x%02x index %d length %d: compliance violation: USB 2.0 9.2.6.4: standard request timed out after %dms\n`
+- `site.AsyncIOContext`
+- `attach`
+- `%s@%s: %s::%s: trying to create pipe while interface is being terminated for address 0x%x\n`
+- `%s@%s: %s::%s: type 0x%02x index %d length %d: completed with 0x%08x bytesTransferred %d type 0x%02x\n`
+- `/options`
+- `20 Gbps`
+- `%s@%s: %s::%s: failed to create interface %d for configuration %d\n`
+- `site.AppleUSBHostDMACommand`
+- `AppleUSBHostControllerListElement`
+- `AppleUSBHostControllerIsochEndpoint`
+- `AppleUSBHostFrameworkClient`
+- `%llums (%u%%)`
+- `IOUSBHostIOSource.cpp`
+- `site.AppleUSBHostFrameworkInterfaceClient`
+- `%s@%s: %s::%s: attempt to read descriptor from cache\n`
+- `%s@%s: %s::%s: device identification permitted\n`
+- `121121212122121322132111212121`
+- `480 Mbps`
+- `UsbIOPort`
+- `%s: %s::%s: calling forcePower due to %s %p\n`
+- `%s@%s: %s::%s: bad options argument\n`
+- `%s@%s: %s::%s: failed to open %s@%s: provider is already opened for exclusive access by %s\n`
+- `createPipe`
+- `restrictionChangeOccurred`
+- `%s@%s: %s::%s: smc request command 0x%x for %umA SMC result = 0x%x\n`
+- `IOUSBInterfaceUserClientV2`
+- `AppleUSBHostRequestCompleter`
+- `enqueueRequest`
+- `setPowerStateGated`
+- `kUSBFailedRemoteWake`
+- `%s@%s: %s::%s: capability descriptors are missing\n`
+- `site.AppleUSBHostDeviceIdler`
+- `%s@%s: %s::%s: unable to open provider or inactive\n`
+- `AppleUSBHostRequest`
+- `aborted`
+- `12111112122212121111111111111111111212`
+- `enumerateDeviceComplete_block_invoke`
+- `%s@%s: %s::%s: redundant authentication: %s\n`
+- `kUSBRemoteWakeOverride`
+- `start`
+- `%s: %s::%s: @%s: cannot set moderation time while the interrupt source is enabled\n`
+- `\"unexpected power state %ld\" @%s:%d`
+- `iAP Interface`
+- `enableMapper`
+- `cold attach`
+- `%s@%s: %s::%s: interface name %s\n`
+- `%s@%s: %s::%s: generating %s:%s\n`
+- `%s@%s: %s::%s: appending interface summary 0x%02x %02x %02x to signature\n`
+- `%s@%s: %s::%s: waiting for previous setConfiguration\n`
+- `AppleUSBHostResourcesTypeC`
+- `%s::%s: missing required descriptor\n`
+- `USBSpeed`
+- `Tunnel Endpoint Device Vendor ID`
+- `kUSBSimulateInterrupt`
+- `IOUSBDevice`
+- `AppleUSBHostDMACommand`
+- `%s@%s: %s::%s: device %p does not belong to controller %p\n`
+- `reset API call`
+- `%s@%s: %s::%s: SetAlternateInterface failed (0x%x)\n`
+- `%s@%s: %s::%s: unsupported link speed %llu\n`
+- `%s@%s: %s::%s: %s: %s@%s\n`
+- `%s@%s: %s::%s: failed to create _clients\n`
+- `122112`
+- `%s: %s::%s: %s@%s: aggregated request wakeUnits %d sleepUnits %d completed with 0x%08x\n`
+- `%s@%s: %s::%s: service is already opened for client\n`
+- `handleStop`
+- `%s@%s: %s::%s: tier limit override %d\n`
+- `UsbLinkSpeed`
+- `kUSBAddress`
+- `iSerialNumber`
+- `disableMapper`
+- `%s@%s: %s::%s: deferring enumeration due to a power state change in progress\n`
+- `matchPropertyTable`
+- `pid %d, %s`
+- `\"%s[%p]::closeGated failed\" @%s:%d`
+- `Device Protocol`
+- `cableConnected`
+- `%s@%s: %s::%s: failed to create DEXT entitlements\n`
+- `%s@%s: %s::%s: descriptor %p speed %d\n`
+- `InterfaceProperties`
+- `site.AsyncDeviceRequestContext`
+- `12111112122212121111111111111111111212111222222222222222222`
+- `11111111111112`
+- `%s@%s: %s::%s: unknown specifier 0x%08x\n`
+- `setModerationTime`
+- `simulated or deferred cold attach`
+- `UsbProtocol (1.x)`
+- `%s@%s: %s::%s: resuming pipes\n`
+- `UsbDeviceFunction`
+- `IOUSBInterfaceUserClient`
+- `B16@?0^{OSSerialize=^^?i*III^{OSArray}^{OSArray}BB^v^v^{OSData}I}8`
+- `%s::%s: USB 2.0 9.6.6: endpoint 0x%02x reserved isochronous usage type\n`
+- `IOMemoryMapPreMap`
+- `AppleUSBHostController.cpp`
+- `%s@%s: %s::%s: unexpected power transition from %d to %lu\n`
+- `%s@%s: %s::%s: forClient %p options 0x%08x\n`
+- `destroyPipesGated`
+- `%s@%s: %s::%s: kUSBHostMessageRenegotiateCurrent\n`
+- `removeClockReference`
+- `port`
+- `%s@%s: %s::%s: %d\n`
+- `%s@%s: %s::%s: failed to create _requestCompleter\n`
+- `Usb3LinkRequired`
+- `%s@%s: %s::%s: unexpected _currentPowerState %s\n`
+- `site.AppleUSBHostControllerListElement`
+- `%s@%s: %s::%s: powering off\n`
+- `%s@%s: %s::%s: failed to find/remove iterator from _dkInterfaceIteratorDict\n`
+- `11112`
+- `%s::%s: USB 2.0 9.6.6: endpoint 0x%02x invalid bInterval %d\n`
+- `%s@%s: %s::%s: failed to create _deferredTeardownBufferCollection\n`
+- `site.void*`
+- `%s@%s: %s::%s: service is inactive or null\n`
+- `usb-port-current-limit`
+- `IOUSB`
+- `forcePowerGated`
+- `getDMASpecification`
+- `port-status`
+- `%s@%s: %s::%s: prepare failed 0x%08x\n`
+- `lowerOnePowerStateTo`
+- `controllerRegisteredThreadCall_block_invoke`
+- `%s@%s: %s::%s: unexpected _mapperReferenceCount %u\n`
+- `kPortStatAddressFailureCount`
+- `serializePortStatus`
+- `%s@%s: %s::%s: compliance violation: failed to enable remote wake\n`
+- `AppleUSBHostControllerIsochListElement`
+- `SetConfiguration`
+- `%s@%s: %s::%s: no superspeed endpoint companion descriptor for endpoint 0x%02x\n`
+- `IOUSBHostDevice`
+- `%s@%s: %s::%s: failed to create _activePowerChildren\n`
+- `%s::%s: USB 2.0 5.[5-8].3: endpoint 0x%02x invalid wMaxPacketSize 0x%04x\n`
+- `hardware port overcurrent`
+- `Vendor ID`
+- `%s@%s: %s::%s: failed to create _powerChildren\n`
+- `free`
+- `%s: %s::%s: %s@%s: unable to query other clients\n`
+- `AppleCredentialManager`
+- `validateEndpointBurstSize`
+- `site.tControllerDidTerminateArguments`
+- `%s: %s::%s: forClient == NULL\n`
+- `print`
+- `%s: %s::%s: device %d (%s@%s) endpoint 0x%02x: status 0x%08x (%s)\n`
+- `%s@%s: %s::%s: unable to get workLoop\n`
+- `maxCapabilityForDomainState`
+- `%s@%s: %s::%s: device %p interface %p\n`
+- `iInterface`
+- `%s@%s: %s::%s: device locked, terminating\n`
+- `UsbUserClientEntitlement`
+- `%s@%s: %s::%s: failed to create _providerCommandGate\n`
+- `IOUSBInterface`
+- `%s@%s: %s::%s: signaling for deferred interrupts\n`
+- `terminateDevice`
+- `UsbProtocolCompanion (3.x)`
+- `%s@%s: %s::%s: The %s entitlements property doesn't contain a matching entitlement\n`
+- `%s@%s: %s::%s: error setting U1Enable (0x%08x)\n`
+- `%s::%s: USB 3.1 9.6.8: endpoint 0x%02x invalid descriptor length %d or type %d\n`
+- `AppleUSBHostController`
+- `%s@%s: %s::%s: PlatformECIDCapabilityDescriptor failed validation checks\n`
+- `Usb3LinkPreferred`
+- `reset`
+- `%s@%s: %s::%s: waiting for %s@%s to terminate\n`
+- `AppleUSBHostFrameworkDeviceClient`
+- `%s::%s: USB 3.1 9.6.8: endpoint 0x%02x of type %d has SuperSpeedPlusIsochronousEndpointCompanion descriptor\n`
+- `1211`
+- `%s@%s: %s::%s: smc error: not enough power, returning %umA\n`
+- `IOUSBHostPipe.cpp`
+- `site.AppleUSBIORequest`
+- `clearPipeStallThreadCall`
+- `%s@%s: %s::%s: unable to allocate _clients\n`
+- `getBufferSpecification`
+- `%s@%s: %s::%s: persistent enumeration failures\n`
+- `%s@%s: %s::%s: bMaxPacketSize0 %d\n`
+- `%s@%s: %s::%s: address lock not acquired\n`
+- `applyTunablesData`
+- `5 Gbps`
+- `%s@%s: %s::%s: ignoring %s@%d %s(%s)\n`
+- `powerChangeDone`
+- `smcSystemStateCallback`
+- `IOUSBHostFamily-debug`
+- `stopThreadCallCompleteGated`
+- `hardware connection lost`
+- `%s@%s: %s::%s: enumeration failed\n`
+- `hostPipeClearStall`
+- `Device Speed`
+- `%s@%s: %s::%s: address %d\n`
+- `UsbHostControllerPortWakeSourcesPolicy`
+- `%s@%s: %s::%s: recursive power floor session detected: current %lu new %lu\n`
+- `didTerminate`
+- `unknown reason`
+- `5EDBC6C9-1442-4917-86C0-9A76C9DFF098`
+- `internalDeviceRequestGated`
+- `IOBufferMemoryDescriptor`
+- `%s@%s: %s::%s: unable to allocate _hardwareExceptionHistoryLock\n`
+- `%s@%s: %s::%s: waiting for previous power floor session completed with 0x%08x\n`
+- `%s@%s: %s::%s: %s: system is shutting down\n`
+- `1221111`
+- `cancel`
+- `1211121111111111111212`
+- `usb-port-current-wake-limit`
+- `80 Gbps`
+- `%s@%s: %s::%s: forClient %s(%p)\n`
+- `%s@%s: %s::%s: device does not support USB 2.0 BESL method of LPM\n`
+- `%s@%s: %s::%s: Enabled Device Initiated U1 with SEL(%d) PEL(%d)\n`
+- `%s: %s::%s: calling forcePower due to pipe 0x%02x\n`
+- `UsbHostControllerPersistFullSpeedIsochronous`
+- `bAlternateSetting`
+- `%s@%s: %s::%s: parameter is not the expected type\n`
+- `%s@%s: %s::%s: passed authentication: %s\n`
+- `addPowerChildThreadCall`
+- `ioBundledGated`
+- `IsochIO_Impl`
+- `stopThreadCallGated`
+- `resumePipes`
+- `PortNumber`
+- `IOUSBHostInterface`
+- `idleAssertion`
+- `%s::%s: USB 3.0 9.6.6: endpoint 0x%02x invalid bMaxBurst %d with wMaxPacketSize %d\n`
+- `kPortStatEOF2ViolationRecoveryDuringResetCount`
+- `hostPipeGetIdlePolicy`
+- `%s@%s: %s::%s: superspeed USB device capability is missing\n`
+- `USB Address`
+- `UsbDescriptorOverrideProductStringIndex`
+- `AppleUSBHostControllerDMACommand`
+- `kUSBBusCurrentAllocation`
+- `kPowerStateOn`
+- `simulated or deferred port overcurrent`
+- `%s@%s: %s::%s: wakeUnits %d sleepUnits %d\n`
+- `IOMemoryDescriptor`
+- `%s::%s: USB 3.0 9.6.7: endpoint 0x%02x invalid descriptor length %d or type %d\n`
+- `12111112122212121111111111111111112222`
+- `%s@%s: %s::%s: terminating\n`
+- `%s@%s: %s::%s: %s@%s will permit idling\n`
+- `%s@%s: %s::%s: trying to create pipe while inactive\n`
+- `12211111122`
+- `%s: %s::%s: wakePool %d sleepPool %d\n`
+- `board-id`
+- `%s@%s: %s::%s: client %s@%s output wakeCurrent %d sleepCurrent %d\n`
+- `%s@%s: %s::%s: failed with result 0x%x\n`
+- `%s@%s: %s::%s: no free addresses available\n`
+- `%s: %s::%s: called in an invalid context\n`
+- `12111121`
+- `site.AppleUSBHostDeviceUserClient`
+- `portRegistered`
+- `UsbPowerSinkCapability`
+- `UsbUserClientBufferStatistics`
+- `%s::%s: USB 3.1 9.6.8: endpoint 0x%02x has reserved bits set 0x%02x\n`
+- `%s@%s: %s::%s: failed to create device (0x%08x)\n`
+- `Product`
+- `%s: %s::%s: invalid completion\n`
+- `%08x`
+- `createStream`
+- `iManufacturer`
+- `%s@%s: %s::%s: could not update device LPM policies for configuration %d result 0x%08x, LPM disabled\n`
+- `site.AppleUSBHostRequestCompleter`
+- `idProductMask`
+- `AppleUSBHostPort`
+- `hostPipeControlRequest`
+- `%s@%s: %s::%s: forcing hardware exception 0x%08x\n`
+- `%s@%s: %s::%s: kUSBHostMessageRemoteWake: allowing power level to float\n`
+- `IOUSBHostStream`
+- `bInterfaceClass`
+- `init`
+- `%s@%s: %s::%s: failed to create statSerializer\n`
+- `kPortStatRemoteWakeCount`
+- `%s@%s: %s::%s: unable to lock port for reset (reason %d)\n`
+- `%s@%s: %s::%s: failed to get descriptor override languageID\n`
+- `%s@%s: %s::%s: using %s@%d for cable type\n`
+- `%s@%s: %s::%s: kUSBHostMessageRemoteWake\n`
+- `%s@%s: %s::%s: failed to attach or start interface %d for configuration %d\n`
+- `site.IOUSBHostStream`
+- `missed service error`
+- `USBBusNumber`
+- `site.tPortTerminateServiceArguments`
+- `%s@%s: %s::%s: host does not support USB2 LPM\n`
+- `site.AppleUSBHostResourcesTypeC`
+- `site.AppleUSBHostPort`
+- `%s@%s: %s::%s: %s@%s [%p] has not enabled an idle policy\n`
+- `AsyncDeviceRequest_Impl`
+- `%s@%s: %s::%s: offset 0x%08x invalid (memory length 0x%08llx)\n`
+- `%s@%s: %s::%s: found %s@%d\n`
+- `CopyInterface_Impl_block_invoke`
+- `AppleUSBHostBusCurrentPool`
+- `%s@%s: %s::%s: unable to allocate _commandGate\n`
+- `B24@?0^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}8^{IONotifier=^^?i}16`
+- `%s@%s: %s::%s: failed to create power assertion\n`
+- `USBPortType`
+- `%s@%s: %s::%s: stream %p withError 0x%08x completed with 0x%08x\n`
+- `close`
+- `0A374CE4-7623-47C9-880E-1AC31513476F`
+- `96F08FA9-7B44-4781-8733-15E25E61B8AA`
+- `smcPowerRequest`
+- `%s: %s::%s: called with invalid transactionList\n`
+- `%s: %s::%s: starting device idle period\n`
+- `%s@%s: %s::%s: unable to obtain client set\n`
+- `site.AppleUSBHostResourcesBusPowerClient`
+- `kPortStatPowerStateTime`
+- `kUSBProductString`
+- `%s@%s: %s::%s: productIDArrayExists was true, matches = %d\n`
+- `IOUSBHostInterfaceIterator`
+- `%s::%s: USB 3.0 9.6.6: endpoint 0x%02x reserved interrupt usage type\n`
+- `%s@%s: %s::%s: controller %p completed with 0x%08x\n`
+- `usb-tier-limit`
+- `IONVRAM`
+- `initBusCurrent`
+- `%s@%s: %s::%s: invalid speed %d\n`
+- `AppleUSBHostDARTDMACommand`
+- `%s::%s: USB 4.0 9.4.3.4: endpoint 0x%02x invalid bMaxBurst %d\n`
+- `usb4-lpm-policy`
+- `usb3-port-timing`
+- `DestroyInterfaceIterator_Impl_block_invoke`
+- `1111111112`
+- `usb-soft-retry-policy`
+- `site.tExpansionData`
+- `%s@%s: %s::%s: provider is NULL\n`
+- `AppleUSBHostDeviceUserClient`
+- `UsbHostControllerUSB2LPMPolicy`
+- `%s@%s: %s::%s: request %p completed with 0x%08x\n`
+- `121121212122121322132111212122111222`
+- `site.AppleUSBHostDARTDMACommand`
+- `hardware port disabled`
+- `%s@%s: %s::%s: [%d] Function - %s - failed to start on device.\n`
+- `site.AppleUSBHostRequestPool`
+- `open`
+- `%s@%s: %s::%s: failed to create _cableChangeTimer\n`
+- `site.AppleUSBHostFrameworkClient`
+- `%s@%s: %s::%s: controller %p busNumber %d\n`
+- `hostPipeSetIdlePolicy`
+- `ECID`
+- `%s@%s: %s::%s: failed to create containerID property\n`
+- `kUSBContainerID`
+- `timeout`
+- `product`
+- `%s: %s::%s: bad argument: AsyncIOBundledMemoryDescriptorRing overrun\n`
+- `site.IOUSBInterfaceUserClientV2`
+- `initWithSizes`
+- `unknown speed`
+- `hostStreamAbort`
+- `%s@%s: %s::%s: %s %d (0x%04x)\n`
+- `%s@%s: %s::%s: smc query command 0x%x result = 0x%x responding with %dmA\n`
+- `getDescriptorGated`
+- `transaction error`
+- `%s: %s::%s: _pEndpoint %p\n`
+- `%s: %s::%s: called without first calling prepare\n`
+- `UsbUserClientEnableReset`
+- `UsbBusCurrentPoolID`
+- `registerService`
+- `%s@%s: %s::%s: failed to create _addressRequestCompleter\n`
+- `%s::%s: USB 2.0 9.6.6: endpoint 0x%02x invalid descriptor length %d or type %d\n`
+- `releaseBusNumber`
+- `hostPipeAdjustPipe`
+- `%s@%s: %s::%s: input wakeUnits %d sleepUnits %d\n`
+- `IOUSBHostIOSource`
+- `openGated`
+- `%s@%s: %s::%s: failed to open %s@%s\n`
+- `UsbProtocol (2.0)`
+- `%s: %s::%s: called with invalid transaction requestCount and/or offset\n`
+- `%s@%s: %s::%s: device identification blocked by transport restrictions\n`
+- `idVendor`
+- `validateEndpointInterval`
+- `%s: %s::%s: @%s: interruptModerationTimeMS %d\n`
+- `%s@%s: %s::%s: %s: terminated while waiting for previous power change\n`
+- `index`
+- `complete`
+- `site.AppleUSBHostBusCurrentPool`
+- `%s@%s: %s::%s: unable to get client's provider\n`
+- `bDeviceProtocol`
+- `%s@%s: %s::%s: interface %p does not belong to device %p\n`
+- `provider unavailable`
+- `%s@%s: %s::%s: failed to create _transportPublishNotifier\n`
+- `UsbDeviceSignature`
+- `%s@%s: %s::%s: failed to cacheDescriptor %u %u %u %u\n`
+- `%s@%s: %s::%s: %s: %d completed with %d\n`
+- `%s@%s: %s::%s: ownership mismatch\n`
+- `abortStream`
+- `unknown process`
+- `%s@%s: %s::%s: completed\n`
+- `%s@%s: %s::%s: failed to add iterator to _dkInterfaceIteratorDict\n`
+- `getOutstandingIO`
+- `%s: %s::%s: client %s@%s output wakeUnits %d sleepUnits %d\n`
+- `site.IOUSBHostDevice`
+- `%s: %s::%s: invalid data buffer\n`
+- `usb-c-port-number`
+- `%s@%s: %s::%s: found boot-arg %s=%d\n`
+- `Product ID`
+- `kUSBVendorString`
+- `%s: %s::%s: commandSleep (_completionRunning) returned 0x%08x\n`
+- `site.AppleUSB20HostController`
+- `closeStream`
+- `kPortStatOverCurrentCount`
+- `registerService_block_invoke_3`
+- `%s@%s: %s::%s: waiting for link training approval\n`
+- `%s@%s: %s::%s: thread_call creation failed with 0x%08x\n`
+- `211`
+- `usb-options`
+- `%s: %s::%s: commandSleep (_outStandingIO) returned 0x%08x\n`
+- `site.IsochIOCompatContext`
+- `GetConfiguredStreams`
+- `1111`
+- `%s: %s::%s: failed to alloc context\n`
+- `AppleUSBHostRequestCompleter.cpp`
+- `%s@%s: %s::%s: failed to open %s@%s: provider is terminating\n`
+- `%s@%s: %s::%s: failed to create _lifecycleTimer\n`
+- `%s@%s: %s::%s: completed with result 0x%08x\n`
+- `AppleSMC`
+- `%s: %s::%s: IOUSBHostIOSource is not valid\n`
+- `site.IOUSBHostInterface`
+- `%s@%s: %s::%s: calling SetAlternateInterface(%d)\n`
+- `%s@%s: %s::%s: bLength %d\n`
+- `%s@%s: %s::%s: waiting for previous power change\n`
+- `%s@%s: %s::%s: unable to complete set configuration request\n`
+- `NeedsDeviceAccessEntitlement`
+- `reserveBusNumber`
+- `%s@%s: %s::%s: LinkState(%d) LatencyType(%d) result(0x%08x) Latency(%d)\n`
+- `_GetDescriptor_Impl`
+- `IOUSBInterfaceUserClientV3`
+- `io`
+- `%s@%s: %s::%s: locationID not available\n`
+- `built-in`
+- `site.AppleUSBHostPort*`
+- `upstream hub is terminating`
+- `languageID`
+- `%s@%s: %s::%s: type %d requestedPower %d\n`
+- `site.AppleUSBHostPortInterruptEventSource`
+- `%s@%s: %s::%s: created device\n`
+- `%s@%s: %s::%s: cable override %d`
+- `enumeration failure`
+- `%s@%s: %s::%s: enumerated stale device\n`
+- `%s@%s: %s::%s: unable to get pipe with endpoint address %u\n`
+- `iAPAuthenticationRequired`
+- `getLPMExitLatencyGated`
+- `kControllerStatSpuriousInterruptCount`
+- `systemWillShutdown`
+- `cableDetect_block_invoke`
+- `%s@%s: %s::%s: aborting\n`
+- `%s: %s::%s: client %s@%s input wakeUnits %d sleepUnits %d\n`
+- `%s: %s::%s: %s@%s: client %s@%s output wakeUnits %d sleepUnits %d completed with 0x%08x\n`
+- `%s::%s: USB 3.0 9.6.7: endpoint 0x%02x bmAttributes has reserved bits set 0x%02x\n`
+- `createDevice`
+- `AppleUSBHostPortInterruptEventSource`
+- `%s@%s: %s::%s: failed to create workloop\n`
+- `%x%x`
+- `%s: %s::%s: %s@%s: client %s@%s input wakeUnits %d sleepUnits %d\n`
+- `entering test mode`
+- `%s@%s: %s::%s: failed to create interrupt event source\n`
+- `allocateDownstreamBusCurrent`
+- `%s: %s::%s: _sharedPhysical 0x%08lx\n`
+- `kControllerStatPowerStateTime`
+- `%s@%s: %s::%s: device is terminating\n`
+- `bcdUSB`
+- `%s@%s: %s::%s: %s selected configuration %d\n`
+- `AppleUSBHostResourcesBusPowerClient`
+- `121111121222121211211111222222222222222222222222222222222222222222222222222222222222222212121121111122222222222222221211222222222222222222222222222222222222222222222222212111111111222122222222`
+- `kUSBSleepPortCurrentLimit`
+- `%s@%s: %s::%s: device %p\n`
+- `%s@%s: %s::%s: USB 2.0 extension capability is missing or does not support LPM\n`
+- `descriptor`
+- `kUSBConfigurationCurrentOverride`
+- `site.struct AsyncIOBundledMemoryDescriptorRing`
+- `usb-port-current-sleep-limit`
+- `setPowerFloorGated`
+- `IOPCITunnelled`
+- `configuration error interrupt`
+- `site.AppleUSBHostIORequestPool`
+- `site.AppleUSBHostBusCurrentClient`
+- `usb2-lpm-policy`
+- `usb3-lpm-policy`
+- `%s@%s: %s::%s: unable to open _device\n`
+- `idProduct`
+- `UsbHostControllerSoftRetryPolicy`
+- `UsbForcePower`
+- `%s@%s: %s::%s: The %s entitlements property is malformed\n`
+- `%s@%s: %s::%s: remote wake (bmAttributes 0x%02x, kUSBHostDevicePropertyRemoteWakeOverride %d)\n`
+- `%s: %s::%s: _dkMemoryDescriptorArray == NULL\n`
+- `121111211111112111111111111111122222222222222221111111111111111222222112112111122`
+- `site.AppleUSBHostController`
+- `closePipe`
+- `%s@%s: %s::%s: device %p pipe %p streamID %d\n`
+- `closeGated`
+- `i36@?0I8^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}12^v20Q28`
+- `%s@%s: %s::%s: _workLoop %p or _commandGate %p is not NULL\n`
+- `%s@%s: %s::%s: bNumConfigurations of 0 is not permitted\n`
+- `121111112212`
+- `site.IOUSBHostStream*`
+- `%s@%s: %s::%s: controller %p busNumber %d completed with 0x%08x\n`
+- `usb-port-number`
+- `willTerminateThreadCall`
+- `%s@%s: %s::%s: failed to create _ioPortPublishNotifier\n`
+- `usb-c-smc-pwr`
+- `service-gates`
+- `UsbDescriptorOverrideVendorStringIndex`
+- `%s: %s::%s: AsyncIOBundledMemoryDescriptorRing doesn't exist\n`
+- `%s: %s::%s: bad argument: ioTransferIndex %u ioTransferCount %u nMemoryDescriptors %u dataBufferLengthArrayCount %d\n`
+- `site.AppleUSBHostDMABufferMemoryDescriptor`
+- `UsbHostControllerUSB4LPMPolicy`
+- `%s@%s: %s::%s: specifier 0x%08x\n`
+- `%s@%s: %s::%s: %lu\n`
+- `%s@%s: %s::%s: kUSBSleepPortCurrentLimit %d mA\n`
+- `registerCompanionPort`
+- `setActive`
+- `setMaxLinkSpeed API call`
+- `%s@%s: %s::%s: Failed to create entitlementWildardDictionary for %s\n`
+- `%s@%s: %s::%s: iManufacturer %d\n`
+- `%s@%s: %s::%s: %s timeout %dms\n`
+- `usb-repeater`
+- `%s@%s: %s::%s: closeGated failed with 0x%08x\n`
+- `%s@%s: %s::%s: output wakeUnits %d sleepUnits %d result 0x%08x\n`
+- `AppleUSBHostBusCurrentClient`
+- `%s@%s: %s::%s: AppleUSBHostInterfaceUserClient[%p]::message - received kIOMessageServiceIsTerminated`
+- `%s@%s: %s::%s: no parameters found \n`
+- `kUSBSerialNumberString`
+- `IOUserClientCreator`
+- `IOUSBHostFamily-debug-level`
+- `%s@%s: %s::%s: requires admin privileges that the task does not have with options 0x%x\n`
+- `%s@%s: %s::%s: super::start failed\n`
+- `1`
+- `%s@%s: %s::%s: device does not have USB20ExtensionDeviceCapabilityDescriptor\n`
+- `%s@%s: %s::%s: type = %s\n`
+- `12111111221212`
+- `1211122211122211111`
+- `%s@%s: %s::%s: completed with 0x%08x\n`
+- `kUSBSleepSupported`
+- `%s@%s: %s::%s: deferring enumeration due to current power state %d\n`
+- `%s@%s: %s::%s: provider is not an AppleUSBHostPort\n`
+- `updateIdlePolicyGated`
+- `%s@%s: %s::%s: service is inactive\n`
+- `%s@%s: %s::%s: pipe %p withError 0x%08x forClient %p completed with 0x%08x\n`
+- `UsbProtocolCompanion (1.x)`
+- `%s: %s::%s: called without first calling cancel/complete\n`
+- `Descriptors`
+- `usb-controller-sleep-pwr-supply`
+- `enable_block_invoke`
+- `%s@%s: %s::%s: device does not have BOS Descriptor\n`
+- `%s@%s: %s::%s: smc error: requested negative power\n`
+- `site.IOUSBDeviceUserClient`
+- `%s@%s: %s::%s: failed to create _companionPortLock\n`
+- `terminateService`
+- `controller-statistics`
+- `unspecified`
+- `%s: %s::%s: @%s: enabled\n`
+- `%s@%s: %s::%s: %s property is unavailable\n`
+- `%s@%s: %s::%s: failing reset attempt from workloop thread\n`
+- `kUSBHostDeviceForceSuspend`
+- `AppleUSB20HostController`
+- `%s: %s::%s: pipe has no bandwidth allocated\n`
+- `timerCompletion`
+- `kPortStatEOF2ViolationCount`
+- `simulated or deferred port disabled`
+- `%s@%s: %s::%s: %s: completed with 0x%08x after %llums\n`
+- `UsbTunnel`
+- `site.AppleUSBHostUserClientAsyncParamBlock`
+- `UsbConnector`
+- `bInterfaceNumber`
+- `%s@%s: %s::%s: sleep bus power supply %u mW\n`
+- `software port monitor`
+- `%s@%s: %s::%s: power change notification, 0x%x\n`
+- `acmLockStateChangeThreadCall`
+- `%s@%s: %s::%s: missing entitlement %s\n`
+- `UsbProtocol (4.0)`
+- `acquireAddressLock`
+- `%s: %s::%s: _dkMemoryDescriptorRing != NULL . Cleanup and recreate the ring\n`
+- `%s@%s: %s::%s: offset 0x%08x mask 0x%08x read 0x%08x wrote 0x%08x\n`
+- `%s: %s::%s: @%s: pending\n`
+- `kPortStatConnectCount`
+- `%s@%s: %s::%s: failed to create clients set\n`
+- `SupportsIAP`
+- `UsbUserClientEnableDataToggleReset`
+- `%s@%s: %s::%s: invalid descriptors\n`
+- `%s@%s: %s::%s: unexpected _clockReferenceCount %u\n`
+- `112`
+- `link change interrupt`
+- `%s@%s: %s::%s: failed to find host controller service\n`
+- `usb-port-current-policy`
+- `iProduct`
+- `port-timing`
+- `powerStateLockLock`
+- `bNumConfigurations`
+- `UsbAppleDeviceECID`
+- `com.apple.usb.authentication`
+- `registerPowerService`
+- `%s@%s: %s::%s: smc error: unknown error 0x%x\n`
+- `stop`
+- `%s@%s: %s::%s: %s: waiting for previous power change\n`
+- `%s@%s: %s::%s: destroying 0x%04x/%04x/%04x (%s): %s\n`
+- `%s@%s: %s::%s: wakeUnits %d sleepUnits %d completed with 0x%08x\n`
+- `createSetAddressPipe`
+- `%s@%s: %s::%s: waiting for previous power floor\n`
+- `kPortStatUSB3LinkFailureCountForDevice`
+- `simulated or deferred disconnect`
+- `%s@%s: %s::%s: %s: already at desired power state, returning success\n`
+- `externalMethod`
+- `%s@%s: %s::%s: missing entitlement %s for %s: pid %d\n`
+- `%s@%s: %s::%s: AppleUSBHostDeviceUserClient[%p]::SetConfiguration - returning err %x`
+- `bInterfaceProtocol`
+- `suspendPipes`
+- `UsbAllowSoftRetry`
+- `site.IOUSBInterfaceUserClientV3`
+- `%s@%s: %s::%s: client's provider is NULL\n`
+- `%s@%s: %s::%s: device signature changed\n`
+- `12111112122212121`
+- `site.tPortTerminateArguments`
+- `Authenticated`
+- `%s@%s: %s::%s: Enabled Device Initiated U2 with SEL(%d) PEL(%d)\n`
+- `\"failed to allocate client record\\n\" @%s:%d`
+- `%s@%s: %s::%s: forcing power %d\n`
+- `disable_block_invoke`
+- `%s@%s: %s::%s: usb3 port timings are disconnectDetect: %ums\n`
+- `%s@%s: %s::%s: %s: rejecting transition from off to intermediate state\n`
+- `%s@%s: %s::%s: kUSBWakePortCurrentLimit %d mA\n`
+- `bNumEndpoints`
+- `com.apple.developer.driverkit.transport.usb`
+- `simulateResetCompletionThreadCall`
+- `%s@%s: %s::%s: failed to open because workLoop/commandGate is NULL or opening for a different client`
+- `Tunnel Endpoint Device Model ID`
+- `%s@%s: %s::%s: unable to enumerate a device during shutdown or termination\n`
+- `%s@%s: %s::%s: locationID 0x%08x: new address %d hub port %d hub address %d\n`
+- `kUSBSleepPowerSupply`
+- `%s@%s: %s::%s: blocked\n`
+- `reset_block_invoke`
+- `%s@%s: %s::%s: failed to allocate thread_call to simulate asynchronous completion\n`
+- `%s@%s: %s::%s: revoking authentication: %s\n`
+- `%s@%s: %s::%s: %s completed with 0x%08x after %llums\n`
+- `prepare`
+- `UsbPowerSource`
+- `121111121222121211111111111111111122221`
+- `%s: %s::%s: invalid increment %d\n`
+- `usbHostResourcesRegistered`
+- `%s@%s: %s::%s: assuming successful wakeUnits %d sleepUnits %d\n`
+- `%s@%s: %s::%s: _workLoop is invalid\n`
+- `%s@%s: %s::%s: unable to allocate _workLoop\n`
+- `%s@%s: %s::%s: generateBusNumber failed\n`
+- `%s@%s: %s::%s: failed to create command gate\n`
+- `111111111`
+- `kControllerStatIOCount`
+- `handleStopPhase2`
+- `com.apple.developer.driverkit.builtin`
+- `terminateGated`
+- `%s@%s: %s::%s: terminated service while waiting to force power\n`
+- `%s@%s: %s::%s: compliance violation: USB 2.0 9.3.5: device returned more than wLength data\n`
+- `%s@%s: %s::%s: powering on\n`
+- `%s::%s: USB 3.0 9.6.7: endpoint 0x%02x invalid mult %d\n`
+- `tryAddMapperReference`
+- `1211111212221212111211111111111111111111111111111111211121`
+- `v16@?0^{IOTimerEventSource=^^?i^{IOEventSource}^{OSObject}^?B^{IOWorkLoop}^v^{ExpansionData}^vQ^{ExpansionData}}8`
+- `UsbRTD3Supported`
+- `Manufacturer`
+- `site.AppleUSBHostFrameworkInterfaceClientIsochAsyncParameter`
+- `%s@%s: %s::%s: suspending pipes\n`
+- `12111112122212121111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111122211`
+- `%s@%s: %s::%s: smc error: requesting more power than port power limits\n`
+- `AppleUSBHostBusCurrentAllocator`
+- ` @%s:%d`
+- `%s@%s: %s::%s: waiting for previous forcePower completed with 0x%08x\n`
+- `usb-port-type`
+- `IOCFPlugInTypes`
+- `site.IOUSBHostPipe`
+- `12`
+- `%s: %s::%s: frameNumber %lld\n`
+- `%s: %s::%s: called on a prepared request\n`
+- `%s@%s: %s::%s: failed to create matching notifier\n`
+- `%s@%s: %s::%s: failed to create _restrictionChangeInterrupt\n`
+- `%s@%s: %s::%s: kUSBHostMessagePortsCreated\n`
+- `hostPipeGetDescriptors`
+- `%s: %s::%s: clientRecord has an outstandingIO of %u`
+- `GetConfiguration`
+- `model`
+- `removable`
+- `%s@%s: %s::%s: requires admin privileges to change power allocations\n`
+- `site.tSimulatedCompletionParameters`
+- `%s@%s: %s::%s: failed set configuration request with 0x%08x\n`
+- `%s@%s: %s::%s: failed to create result\n`
+- `%s@%s: %s::%s: configuration %d\n`
+- `validateEndpointDescriptor`
+- `AppleUSBPreventSystemSleep`
+- `%s@%s: %s::%s: unable to get stream with endpointAddress %u, streamID %u\n`
+- `%s@%s: %s::%s: suspending\n`
+- `kUSBCurrentConfiguration`
+- `site.AppleUSBHostControllerIsochListElement`
+- `AppleUSBHostUserClient`
+- `IOUSBHostFamily`
+- `%s@%s: %s::%s: going to state %ld returned 0x%08x\n`
+- `%s@%s: %s::%s: waiting for previous power change completed with 0x%08x\n`
+- `UsbAppleDeviceUDID`
+- `CreateInterfaceIterator_Impl_block_invoke`
+- `kPowerStateSuspended`
+- `releaseAddressLock`
+- `%s@%s: %s::%s: attempting recovery\n`
+- `%s@%s: %s::%s: ignoring %s\n`
+- `%s@%s: %s::%s: unlock exception granted\n`
+- `kUSBHostReturnPipeStalled`
+- `bDeviceClass`
+- `%s@%s: %s::%s: device %p pipe %p streamID %d completed with %p\n`
+- `no description`
+- `allow-subpage-mapping`
+- `111`
+- `UNDEFINED`
+- `kUSBDisconnectInterval`
+- `%s@%s: %s::%s: timed out\n`
+- `kUSBPreferredConfiguration`
+- `%s: %s::%s: _sharedLogical %p\n`
+- `AppleUSBIORequest`
+- `AppleUSBHostRequest.cpp`
+- `site.IOUSBInterfaceUserClient`
+- `%s@%s: %s::%s: null provider\n`
+- `%s@%s: %s::%s: blocking\n`
+- `AppleUSBHostPort.cpp`
+- `%s@%s: %s::%s: appending serial number %s to signature\n`
+- `%s: %s::%s: invalid buffer for device %d endpoint 0x%02x\n`
+- `%s::%s: USB 3.0 9.6.6: endpoint 0x%02x invalid wMaxPacketSize 0x%04x\n`
+- `bDeviceSubClass`
+- `UsbTransportState`
+- `%s@%s: %s::%s: iSerialNumber %d\n`
+- `powerStateWillChangeToGated`
+- `%s@%s: %s::%s: LPM status 0x%08x\n`
+- `%s@%s: %s::%s: %lu completed with 0x%08x\n`
+- `%s@%s: %s::%s: failed to enable remote wakeup with 0x%08x\n`
+- `DeviceRequest_Impl`
+- `%s: %s::%s: device %d (%s@%s) endpoint 0x%02x: aborting %d requests\n`
+- `%s: %s::%s: called with invalid stream\n`
+- `%s@%s: %s::%s: waiting for previous forcePower\n`
+- `%s@%s: %s::%s: stream %p withError 0x%08x\n`
+- `%s@%s: %s::%s: unrecoverable: exception 0x%08x shutdown 0x%08x\n`
+- `registerService_block_invoke`
+- `%s@%s: %s::%s: %s\n`
+- `%s@%s: %s::%s: bNumConfigurations %d\n`
+- `%s@%s: %s::%s: %s@%s will inhibit idling\n`
+- `bInterfaceSubClass`
+- `UsbSmcBusCurrentPoolID`
+- `site.AppleUSBHostUserClient`
+- `%s::%s: USB 2.0 9.6.6: endpoint 0x%02x bEndpointAddress has reserved bits set 0x%02x\n`
+- `%s@%s`
+- `%s@%s: %s::%s: base idle policy %d ms\n`
+- `%s@%s: %s::%s: configuration descriptor %d not found\n`
+- `IOMemoryMapNewMap`
+- `%s@%s: %s::%s: offset 0x%08x mask 0x%08x read 0x%08x\n`
+- `%s@%s: %s::%s: idling port from %s to %s\n`
+- `IOServiceDEXTEntitlements`
+- `%s@%s: %s::%s: _busCurrentAllocator does not exist\n`
+- `2d9786c6-9ef3-11d4-ad51-000a27052861`
+- `hostPipeCopyStream`
+- `start_block_invoke`
+- `message`
+- `allocateDownstreamBusCurrentGated`
+- `%s@%s: %s::%s: negative _mapperReferenceLock\n`
+- `%s@%s: %s::%s: link training approval result %d\n`
+- `%s@%s: %s::%s: device-initiated U1/U2 disabled due to long PEL/SEL\n`
+- `smc-port-number`
+- `Bytes`
+- `%s@%s: %s::%s: failed to find iterator in _dkInterfaceIteratorDict\n`
+- `site.IOUSBHostIOSource`
+- `UsbUserClientBufferAllocations`
+- `%s::%s: invalid descriptor length %d or type %d\n`
+- `getCompanionControllerGated`
+- `%s@%s: %s::%s: _commandGate is invalid\n`
+- `com.apple.vm.device-access`
+- `removeMapperReference`
+- `%s@%s: %s::%s: port already has a reset in progress\n`
+- `kUSBString`
+- `%s@%s: %s::%s: disable future pipe creation\n`
+- `%s@%s: %s::%s: AppleUSBHostDeviceUserClient[%p]::message -  received 0x%x`
+- `%s@%s: %s::%s: PlatformUDIDCapabilityDescriptor failed validation checks\n`
+- `%s: %s::%s: failed to map frameList\n`
+- `%s@%s: %s::%s: trying to close a nonexistent session\n`
+- `1.5 Mbps`
+- `%s@%s: %s::%s: disconnect\n`
+- `%s@%s: %s::%s: allowing power level to float\n`
+- `%s@%s: %s::%s: redundant configuration %d\n`
+- `%lx`
+- `site.AppleUSBHostBusCurrentAllocator`
+- `RequestExtraPower`
+- `kUSBDescriptorOverride`
+- `AppleUSBHostRequestPool`
+- `1221`
+- `UsbHostControllerStreamPolicy`
+- `%s@%s: %s::%s: stream %p\n`
+- `site.AppleUSBHostBufferMemoryDescriptor`
+- `CreateMemoryDescriptorRing_Impl`
+- `registerService_block_invoke_2`
+- `hostPipeIO`
+- `%s@%s: %s::%s: no candidateArray or iterator\n`
+- `%s: %s::%s: unrecognized _completionType %d\n`
+- `undefined`
+- `i8@?0`
+- `dart-options`
+- `%s@%s: %s::%s: failed to create _powerChildrenLock\n`
+- `%s::%s: USB 2.0 9.6.6: endpoint 0x%02x reserved bits set in wMaxPacketSize 0x%04x\n`
+- `%s@%s: %s::%s: trying to close a nonexistent provider session\n`
+- `getProtectionGranularity`
+- `addMapperReference`
+- `AppleUSBHostClientBufferMemoryDescriptor`
+- `%s@%s: %s::%s: smc error: nothing attached to port\n`
+- `UsbHostControllerTierLimit`
+- `%s@%s: %s::%s: super::open failed forClient %s with options 0x%x\n`
+- `destroyDevice_block_invoke`
+- `121112221112221211`
+- `%s@%s: %s::%s: wake bus power supply %u mW\n`
+- `%s@%s: %s::%s: %s@%s [%p] has an idle policy of %dms\n`
+- `%s: %s::%s: Failed to allocate context\n`
+- `setModerationTime_block_invoke`
+- `%s@%s: %s::%s: %s: allowing power level to float\n`
+- `setDeferredInterrupt`
+- `NULL`
+- `SetPipeIdlePolicy`
+- `kPortStatEOF2ViolationDuringResetCount`
+- `usb-port-location`
+- `%s@%s: %s::%s: terminating service %s\n`
+- `site.IOBufferMemoryDescriptor*`
+- `%s@%s: %s::%s: unable to allocate _configList\n`
+- `site.AppleUSBHostFrameworkClientAsyncParamBlock`
+- `%s@%s: %s::%s: failed to get descriptor override index\n`
+- `%s: %s::%s: _logicalNext %p\n`
+- `%s@%s: %s::%s: alignment %u\n`
+- `%s@%s: %s::%s: forcing a max link speed of %u\n`
+- `%s@%s: %s::%s: selector %u is out of range %u\n`
+- `hostStreamIO`
+- `%s@%s: %s::%s: failed to get descriptor\n`
+- `UsbHostPortOvercurrent`
+- `%s@%s: %s::%s: device functionality permitted\n`
+- `copyPipeGated`
+- `sessionID`
+- `AsyncIO_Impl`
+- `%s::%s: USB 2.0 5.[5|7].3: endpoint 0x%02x invalid wMaxPacketSize 0x%04x\n`
+- `%s::%s: USB 3.0 9.6.7: endpoint 0x%02x invalid bMaxBurst %d\n`
+- `%s: %s::%s: prepare failed 0x%08x\n`
+- `insufficient USB power`
+- `%s@%s: %s::%s: request %p\n`
+- `%s@%s: %s::%s: remote wake\n`
+- `%s@%s: %s::%s: failed to create _transportMessageNotifier\n`
+- `IOUSBHostFamily.kext/PlugIns/IOUSBLib.bundle`
+- `%s@%s: %s::%s: forClient %p\n`
+- `UsbPowerSinkAllocation`
+- `createPipeGated`
+- `AppleUSBHostInterfaceUserClient.cpp`
+- `UsbUserClientEntitlementRequired`
+- `AppleUSBHostResources`
+- `createDevice_block_invoke`
+- `AppleUSBHostIORequestPool`
+- `%s::%s: USB 3.0 9.6.7: endpoint 0x%02x wBytesPerInterval has reserved bits set 0x%04x\n`
+- `%s@%s: %s::%s: %s completed with 0x%08x\n`
+- `%s: %s::%s: Failed to allocate transaction list\n`
+- `bcdDevice`
+- `12111222111222121121`
+- `UsbHostControllerUSB3LPMPolicy`
+- `%s@%s: %s::%s: %s completed with 0x%08x (%d attempts)\n`
+- `%s@%s: %s::%s: failed to set location\n`
+- `portsCreatedMessage`
+- `updateLPMPolicyGated`
+- `ioGated`
+- `%s: %s::%s: dataBuffer == NULL\n`
+- `systemWillShutdown_block_invoke`
+- `%s@%s: %s::%s: stream %p completed with 0x%08x\n`
+- `checkForWork`
+- `%s@%s: %s::%s: failed to alloc context\n`
+- `%s@%s: %s::%s: requesting minimum port power, %dmW for smcCommand 0x%x, assume successful\n`
+- `%s: %s::%s: completion timeouts not permitted for interrupt transfers\n`
+- `AppleUSBHostInterfaceUserClient`
+- `usb-port-wake-sources-policy`
+- `%s: %s::%s: @%s: moderating\n`
+- `unspecified reason`
+- `%s@%s: %s::%s: child service %s (IOPort %s@%d)\n`
+- `idProductArray`
+- `iAPAuthenticator`
+- `com.apple.usb.externaldevice.%s`
+- `%s@%s: %s::%s: deferring address %d\n`
+- `%s: %s::%s: device %d (%s@%s) endpoint 0x%02x stream %d: aborting %d requests\n`
+- `allocateBusCurrent`
+- `%s@%s: %s::%s: AppleUSBHostDeviceUserClient[%p]::GetConfiguration - returning err %x`
+- `port-count`
+- `%s@%s: %s::%s: provider is not an IOUSBHostDevice\n`
+- `AbortPipeZero`
+- `%s@%s: %s::%s: unable to locate AppleUSBHostResources\n`
+- `willTerminateThreadCallCompleteGated`
+- `%s@%s: %s::%s: failed super::start\n`
+- `Preferred Configuration`
+- `%s@%s: %s::%s: Invalid BESL/BESLD index %d in USB 2.0 Extension Capability Descriptor\n`
+- `SetMemoryDescriptor_Impl`
+- `site.IOUSBHostInterfaceUserClientISOAsyncParamBlock`
+- `kPowerStateInitialize`
+- `%s@%s: %s::%s: bcdUSB 0x%04x\n`
+- `121111121222121211111111111`
+- `removePowerChild`
+- `buffer error`
+- `Device Class`
+- `12211`
+- `babble error`
+- `%s@%s: %s::%s: failed to create _busCurrentAllocator\n`
+- `%s@%s: %s::%s: failed to add to create ref key\n`
+- `%s@%s: %s::%s: client %s@%s input wakeCurrent %d sleepCurrent %d\n`
+- `setProperties`
+- `%s@%s: %s::%s: failed to initialize IOPortTransportState\n`
+- `setProperty`
+- `destroyGated`
+- `UsbProtocol (3.x)`
+- `PortType`
+- `disconnect`
+- `hostPipeEnableStreams`
+- `adjustOutstandingIO`
+- `site.AsyncIOBundledMemoryDescriptorRingElement`
+- `IOUSBDeviceUserClientV2`
+- `\"AppleUSBRequestCompleter[%p]::%s: thread call(%p) failed (0x%08x)\" @%s:%d`
+- `%s@%s: %s::%s: unable to get pipe with reference %u\n`
+- `121111121222121212111111211122111212122221`
+- `IOUSBHostDevice.cpp`
+- `%s@%s: %s::%s: %s: %llu completed with %d\n`
+- `IOUSBDeviceUserClient`
+- `%s@%s: %s::%s: privileged/entitled client approved: admin %d authorized %d entitled %d\n`
+- `%s@%s: %s::%s: failed thread_call_enter1\n`
+- `%s@%s: %s::%s: failed initBusCurrent\n`
+- `%s@%s: %s::%s: bDescriptorType %d\n`
+- `%s@%s: %s::%s: invalid descriptor %p\n`
+- `site.AppleUSBHostRequest`
+- `12111111212`
+- `1112`
+- `IOSubMemoryDescriptor`
+- `kPowerStateSleep`
+- `usb-prevent-sleep`
+- `%s@%s: %s::%s: waiting for power level >= %lu\n`
+- `USB Product Name`
+- `%s@%s: %s::%s: %s (id 0x%08llx) did not surrender device to %s (id 0x%08llx)\n`
+- `bConfigurationValue`
+- `%s@%s: %s::%s: device descriptor fragment is invalid\n`
+- `addPowerChild`
+- `%s@%s: %s::%s: compliance violation: USB 2.0 9.6.1: device descriptor bLength %d is invalid\n`
+- `site.IOUSBDevice`
+- `port is powering off`
+- `%s@%s: %s::%s: forcing cable detect for %s@%s\n`
+- `Device Function`
+- `UsbEnumerationState`
+- `%s@%s: %s::%s: forClient %s(%p) completed with 0x%08x\n`
+- `%s@%s: %s::%s: kIOUSBPlatformCapabilityFailedFunctionsDescriptorUUID failed validation checks\n`
+- `usb-controller-wake-pwr-supply`
+- `12 Mbps`
+- `hostPipeAbort`
+- `kUSBResetDurationOverride`
+- `%s@%s: %s::%s: unable to get locationID of provider\n`
+- `site.IOUSBHostInterfaceIterator`
+- `%s@%s: %s::%s: pipe %p withError 0x%08x forClient %p\n`
+- `%s: %s::%s: @%s: complete\n`
+- `successful`
+- `%s@%s: %s::%s: converting domainState 0x%08lx to 0x%08x\n`
+- `setPortLocation`
+- `%s@%s: %s::%s: device functionality blocked by transport restrictions\n`
+- `%s@%s: %s::%s: unable to create _descriptorCache\n`
+- `%s: %s::%s: \n`
+- `locationID`
+- `validateDeviceDescriptor`
+- `%s@%s: %s::%s: failed to allocate _clockReferenceLock\n`
+- `%s@%s: %s::%s: already at desired intermediate power state\n`
+- `%s@%s: %s::%s: hub depth exceeded\n`
+- `%s@%s: %s::%s: unable to create _deviceIdler\n`
+- `UsbDescriptorOverrideSerialNumberStringIndex`
+- `site.AppleUSBHostFrameworkDeviceClient`
+- `enableClock`
+- `Device Subclass`
+- `%s@%s: %s::%s: failed to create or open pipe zero\n`
+- `%s@%s: %s::%s: descriptor not found\n`
+- `root`
+- `%s@%s: %s::%s: %s -> %s\n`
+- `%s: %s::%s: @%s: \n`
+- `%x`
+- `bMaxPacketSize0`
+- `%s@%s: %s::%s: proceeding with power state %s\n`
+- `1211111212221212112222222122222222222222222222222222222222222222222222222222212211111222211121122222222222111221121111111111111`
+- `%s@%s: %s::%s: failed to get device descriptor\n`
+- `%s@%s: %s::%s: failed to create statusSerializer\n`
+- `AsyncIOBundled_Impl_block_invoke_2`
+- `site.AsyncIsochIOContext`
+- `simulateAsyncCompletion`
+- `%s@%s: %s::%s: failed to allocate params to simulate asynchronous completion\n`
+- `getMapperSpecification`
+- `%s@%s: %s::%s: superspeed plus USB device capability is missing\n`
+- `%s@%s: %s::%s: resuming\n`
+- `initWithDescriptorsAndOwners`
+- `%s@%s: %s::%s: client %s does not have the appropriate privelages to capture device`
+- `kUSBDebugOptions`
+- `%s@%s: %s::%s: enumerated 0x%04x/%04x/%04x (%s / %u) at %s\n`
+- `UsbIdlePolicy`
+
+**[__TEXT.__os_log]**
+
+- `%s::%s: USB 3.0 9.6.7: endpoint 0x%02x invalid bMaxBurst %d\n`
+- `%s@%s: %s::%s: unable to enumerate a device during shutdown or termination\n`
+- `%s@%s: %s::%s: arguments->scalarInputCount = %u, arguments->scalarOutputCount = %u`
+- `%s@%s: %s::%s: The %s entitlements array has matched at index %d\n`
+- `%s@%s: %s::%s: unable to allocate _configList\n`
+- `%s: %s::%s: called with invalid transactionList\n`
+- `%s: %s::%s: %s@%s: aggregated request wakeUnits %d sleepUnits %d\n`
+- `%s@%s: %s::%s: client's provider is NULL\n`
+- `%s@%s: %s::%s: wakeUnits %d sleepUnits %d\n`
+- `%s@%s: %s::%s: failed to create power assertion\n`
+- `%s@%s: %s::%s: failed to create result\n`
+- `%s@%s: %s::%s: failed to get descriptor override index\n`
+- `%s@%s: %s::%s: smc request command 0x%x for %umA SMC result = 0x%x\n`
+- `%s: %s::%s: %s@%s: client %s@%s output wakeUnits %d sleepUnits %d completed with 0x%08x\n`
+- `%s::%s: USB 3.0 9.6.7: endpoint 0x%02x wBytesPerInterval has reserved bits set 0x%04x\n`
+- `%s@%s: %s::%s: failed to create interface %d for configuration %d\n`
+- `%s@%s: %s::%s: service is inactive or null\n`
+- `%s@%s: %s::%s: usb2 port timings are resume: %ums, resumeRecovery: %ums, suspend: %ums, powerOnStabilize: %ums, reset: %ums, resetRecovery: %ums, setAddressRecovery: %ums\n`
+- `%s@%s: %s::%s: device identification permitted\n`
+- `%s@%s: %s::%s: device-initiated U1/U2 disabled due to long PEL/SEL\n`
+- `%s@%s: %s::%s: failed to create _lifecycleTimer\n`
+- `%s@%s: %s::%s: unsupported link speed %llu\n`
+- `%s@%s: %s::%s: output wakeUnits %d sleepUnits %d result 0x%08x\n`
+- `%s@%s: %s::%s: unable to complete set configuration request\n`
+- `%s@%s: %s::%s: blocking\n`
+- `%s@%s: %s::%s: bcdUSB 0x%04x\n`
+- `%s@%s: %s::%s: trying to close a nonexistent session\n`
+- `%s@%s: %s::%s: unable to allocate _isochEPListLock\n`
+- `%s: %s::%s: @%s: disabled\n`
+- `%s@%s: %s::%s: found %s@%d\n`
+- `%s@%s: %s::%s: capability descriptors are invalid\n`
+- `%s@%s: %s::%s: failed thread_call_enter1\n`
+- `%s@%s: %s::%s: unable to locate AppleUSBHostResources\n`
+- `%s@%s: %s::%s: revoking authentication: %s\n`
+- `%s: %s::%s: invalid completion\n`
+- `%s: %s::%s: @%s: enabled\n`
+- `%s@%s: %s::%s: recursive power floor session detected: current %lu new %lu\n`
+- `%s::%s: USB 3.0 9.6.7: endpoint 0x%02x bmAttributes has reserved bits set 0x%02x\n`
+- `%s@%s: %s::%s: going to state %ld failed with 0x%08x\n`
+- `%s@%s: %s::%s: found %s@%d %s(%s)\n`
+- `%s@%s: %s::%s: failed to get descriptor override languageID\n`
+- `%s@%s: %s::%s: compliance violation: USB 2.0 9.6.1: device descriptor bLength %d is invalid\n`
+- `%s@%s: %s::%s: waiting for previous power floor session completed with 0x%08x\n`
+- `%s@%s: %s::%s: device %p interface %p completed with %p\n`
+- `%s: %s::%s: @%s: moderating\n`
+- `%s@%s: %s::%s: device functionality permitted\n`
+- `%s@%s: %s::%s: The %s entitlements property doesn't contain a matching entitlement\n`
+- `%s::%s: USB 2.0 9.6.6: endpoint 0x%02x reserved bits set in wMaxPacketSize 0x%04x\n`
+- `%s: %s::%s: _sharedPhysical 0x%08lx\n`
+- `%s@%s: %s::%s: ignoring %s@%d %s(%s)\n`
+- `%s: %s::%s: %s@%s: aggregated request wakeUnits %d sleepUnits %d completed with 0x%08x\n`
+- `%s@%s: %s::%s: unknown specifier 0x%08x\n`
+- `%s@%s: %s::%s: forcing cable detect for %s@%s\n`
+- `%s@%s: %s::%s: device signature changed\n`
+- `%s@%s: %s::%s: failed to open %s@%s: provider is already opened for exclusive access by %s\n`
+- `%s@%s: %s::%s: controller %p completed with 0x%08x\n`
+- `%s@%s: %s::%s: failed to create _activePowerChildren\n`
+- `%s@%s: %s::%s: error setting U2Enable (0x%08x)\n`
+- `%s: %s::%s: called with invalid pipe\n`
+- `AppleUSBHostRequestCompleter::%s: clearStall for pipe %p failed (0x%08x)\n`
+- `%s@%s: %s::%s: blocked\n`
+- `%s@%s: %s::%s: unexpected power transition from %d to %lu\n`
+- `%s@%s: %s::%s: disconnect\n`
+- `%s@%s: %s::%s: no superspeed endpoint companion descriptor for endpoint 0x%02x\n`
+- `%s@%s: %s::%s: failed super::start\n`
+- `%s: %s::%s: _dkMemoryDescriptorRing != NULL . Cleanup and recreate the ring\n`
+- `%s@%s: %s::%s: going to state %ld returned 0x%08x\n`
+- `%s@%s: %s::%s: %s %d (0x%04x)\n`
+- `%s@%s: %s::%s: descriptor not found\n`
+- `%s@%s: %s::%s: invalid descriptors\n`
+- `%s@%s: %s::%s: cable override %d`
+- `%s@%s: %s::%s: failed set configuration request with 0x%08x\n`
+- `%s@%s: %s::%s: device does not have USB20ExtensionDeviceCapabilityDescriptor\n`
+- `%s: %s::%s: Failed to allocate transaction list\n`
+- `%s@%s: %s::%s: client %s does not have the appropriate privelages to capture device`
+- `%s@%s: %s::%s: stream %p completed with 0x%08x\n`
+- `%s@%s: %s::%s: found descriptor in cache \n`
+- `%s@%s: %s::%s: unable to get locationID of provider\n`
+- `%s@%s: %s::%s: %s -> %s\n`
+- `%s@%s: %s::%s: failed to create _cableChangeTimer\n`
+- `%s@%s: %s::%s: using %s@%d for cable type\n`
+- `%s@%s: %s::%s: disable future pipe creation\n`
+- `%s: %s::%s: Failed to allocate context\n`
+- `%s: %s::%s: bad argument: AsyncIOBundledMemoryDescriptorRing overrun\n`
+- `%s@%s: %s::%s: proceeding with power state %s\n`
+- `%s@%s: %s::%s: failed to create _powerChildrenLock\n`
+- `%s@%s: %s::%s: failing reset attempt from workloop thread\n`
+- `%s@%s: %s::%s: locationID not available\n`
+- `%s: %s::%s: failed to alloc context\n`
+- `%s@%s: %s::%s: failed to create statusSerializer\n`
+- `%s@%s: %s::%s: _busCurrentAllocator does not exist\n`
+- `%s@%s: %s::%s: failed to create _requestCompleter\n`
+- `%s@%s: %s::%s: failed to generate device signature\n`
+- `%s@%s: %s::%s: waiting for previous power change completed with 0x%08x\n`
+- `%s@%s: %s::%s: prepare failed 0x%08x\n`
+- `%s@%s: %s::%s: unable to lock port for reset (reason %d)\n`
+- `%s@%s: %s::%s: LPM status 0x%08x\n`
+- `%s@%s: %s::%s: missing entitlement %s for %s: pid %d\n`
+- `%s: %s::%s: invalid increment %d\n`
+- `%s: %s::%s: device %s endpoint 0x%02x: control request { 0x%02x %02x %04x %04x %04x } timeout %d\n`
+- `%s@%s: %s::%s: unable to get pipe with endpoint address %u\n`
+- `%s@%s: %s::%s: base idle policy %d ms\n`
+- `%s: %s::%s: \n`
+- `%s@%s: %s::%s: unable to open user client\n`
+- `%s@%s: %s::%s: full-speed endpoint 0 with max packet size of %d\n`
+- `%s@%s: %s::%s: offset 0x%08x mask 0x%08x read 0x%08x\n`
+- `%s@%s: %s::%s: transport no longer available\n`
+- `%s@%s: %s::%s: unable to create _deviceIdler\n`
+- `%s@%s: %s::%s: superspeed USB device capability is missing\n`
+- `%s@%s: %s::%s: failed authentication: %s\n`
+- `%s@%s: %s::%s: no candidateArray or iterator\n`
+- `%s@%s: %s::%s: Enabled Device Initiated U2 with SEL(%d) PEL(%d)\n`
+- `%s: %s::%s: bad argument: ioTransferIndex %u ioTransferCount %u nMemoryDescriptors %u dataBufferLengthArrayCount %d\n`
+- `%s::%s: USB 2.0 5.[5|7].3: endpoint 0x%02x invalid wMaxPacketSize 0x%04x\n`
+- `%s::%s: USB 3.0 9.6.7: endpoint 0x%02x invalid descriptor length %d or type %d\n`
+- `%s@%s: %s::%s: unable to allocate _commandGate\n`
+- `%s@%s: %s::%s: provider is not an IOUSBHostDevice\n`
+- `%s@%s: %s::%s: suspending\n`
+- `%s@%s: %s::%s: deferring enumeration due to current power state %d\n`
+- `%s@%s: %s::%s: failed to enable remote wakeup with 0x%08x\n`
+- `%s@%s: %s::%s: already at desired intermediate power state\n`
+- `%s@%s: %s::%s: %s completed with 0x%08x\n`
+- `%s@%s: %s::%s: alignment %u\n`
+- `%s@%s: %s::%s: failed to create DEXT entitlements\n`
+- `%s@%s: %s::%s: smc error: unknown error 0x%x\n`
+- `%s: %s::%s: called outside of expected lock\n`
+- `%s@%s: %s::%s: kUSBHostMessagePortsCreated\n`
+- `%s@%s: %s::%s: unable to create _descriptorCache\n`
+- `%s::%s: USB 3.1 9.6.8: endpoint 0x%02x has reserved bits set 0x%02x\n`
+- `%s@%s: %s::%s: null provider\n`
+- `%s@%s: %s::%s: unable to get client's provider\n`
+- `%s@%s: %s::%s: attempting recovery\n`
+- `%s@%s: %s::%s: forcing a max link speed of %u\n`
+- `%s@%s: %s::%s: task entitled\n`
+- `%s@%s: %s::%s: %s@%s will permit idling\n`
+- `%s@%s: %s::%s: Enabled Device Initiated U1 with SEL(%d) PEL(%d)\n`
+- `%s@%s: %s::%s: locationID 0x%08x: new address %d hub port %d hub address %d\n`
+- `%s@%s: %s::%s: PlatformECIDCapabilityDescriptor failed validation checks\n`
+- `%s: %s::%s: device %d (%s@%s) endpoint 0x%02x stream %d: aborting %d requests\n`
+- `%s@%s: %s::%s: failed to create _transportTerminateNotifier\n`
+- `%s@%s: %s::%s: configuration current override %u mA\n`
+- `%s@%s: %s::%s: %dmA of bus current is not available\n`
+- `%s@%s: %s::%s: failed to create companion port notifier\n`
+- `%s@%s: %s::%s: unable to open provider or inactive\n`
+- `%s@%s: %s::%s: failed to create _deferredTeardownBufferCollection\n`
+- `%s@%s: %s::%s: unexpected _mapperReferenceCount %u\n`
+- `%s@%s: %s::%s: powering off\n`
+- `%s@%s: %s::%s: trying to create pipe while inactive\n`
+- `%s: %s::%s: _logicalNext %p\n`
+- `%s::%s: missing required descriptor\n`
+- `%s: %s::%s: prepare failed 0x%08x\n`
+- `%s@%s: %s::%s: negative _clockReferenceCount\n`
+- `%s@%s: %s::%s: unrecoverable: exception 0x%08x shutdown 0x%08x\n`
+- `%s@%s: %s::%s: failed to create workloop\n`
+- `%s@%s: %s::%s: compliance violation: USB 2.0 9.3.5: device returned more than wLength data\n`
+- `%s::%s: USB 3.0 9.6.6: endpoint 0x%02x invalid bMaxBurst %d with wMaxPacketSize %d\n`
+- `%s@%s: %s::%s: offset 0x%08x invalid (memory length 0x%08llx)\n`
+- `%s@%s: %s::%s: failed to create _companionPortLock\n`
+- `%s@%s: %s::%s: forcing hardware exception 0x%08x\n`
+- `%s@%s: %s::%s: %s completed with 0x%08x after %llums\n`
+- `%s: %s::%s: called with invalid stream\n`
+- `%s: %s::%s: called without first calling prepare\n`
+- `%s::%s: USB 3.0 9.6.6: endpoint 0x%02x invalid wMaxPacketSize 0x%04x\n`
+- `%s@%s: %s::%s: device %p completed with 0x%08x\n`
+- `%s@%s: %s::%s: trying to create pipe while interface is being terminated for address 0x%x\n`
+- `%s@%s: %s::%s: device locked, terminating\n`
+- `%s@%s: %s::%s: smc error: not enough power, returning %umA\n`
+- `%s@%s: %s::%s: AppleUSBHostDeviceUserClient[%p]::GetConfiguration - returning err %x`
+- `%s@%s: %s::%s: unexpected _clockReferenceCount %u\n`
+- `%s@%s: %s::%s: _commandGate is invalid\n`
+- `%s@%s: %s::%s: interface name %s\n`
+- `%s@%s: %s::%s: iProduct %d\n`
+- `%s@%s: %s::%s: super::start failed\n`
+- `%s@%s: %s::%s: %s: rejecting transition from off to intermediate state\n`
+- `%s@%s: %s::%s: super::open failed forClient %s with options 0x%x\n`
+- `%s@%s: %s::%s: [%d] Function - %s - failed to start on device.\n`
+- `%s@%s: %s::%s: resuming pipes\n`
+- `%s@%s: %s::%s: remote wake (bmAttributes 0x%02x, kUSBHostDevicePropertyRemoteWakeOverride %d)\n`
+- `%s@%s: %s::%s: host does not support USB2 LPM\n`
+- `%s@%s: %s::%s: found boot-arg %s=%d\n`
+- `%s@%s: %s::%s: powering on\n`
+- `%s@%s: %s::%s: %s %d\n`
+- `%s@%s: %s::%s: waiting for previous forcePower\n`
+- `%s@%s: %s::%s: request %p\n`
+- `%s@%s: %s::%s: _workLoop %p or _commandGate %p is not NULL\n`
+- `%s@%s: %s::%s: AppleUSBHostDeviceUserClient[%p]::SetConfiguration - returning err %x`
+- `%s@%s: %s::%s: no parameters found \n`
+- `%s@%s: %s::%s: unable to allocate _workLoop\n`
+- `%s@%s: %s::%s: LinkState(%d) LatencyType(%d) result(0x%08x) Latency(%d)\n`
+- `%s@%s: %s::%s: pipe %p withError 0x%08x forClient %p completed with 0x%08x\n`
+- `%s@%s: %s::%s: removing %s@%d %s(%s)\n`
+- `%s@%s: %s::%s: The %s entitlements property is malformed\n`
+- `%s@%s: %s::%s: waiting for previous setConfiguration\n`
+- `%s@%s: %s::%s: completed with 0x%08x\n`
+- `%s@%s: %s::%s: terminating\n`
+- `%s@%s: %s::%s: timed out\n`
+- `%s: %s::%s: dataBuffer == NULL\n`
+- `%s@%s: %s::%s: input wakeUnits %d sleepUnits %d\n`
+- `%s@%s: %s::%s: forClient %p\n`
+- `%s@%s: %s::%s: AppleUSBHostDeviceUserClient[%p]::message -  received 0x%x`
+- `%s@%s: %s::%s: deferring enumeration due to a power state change in progress\n`
+- `%s@%s: %s::%s: failed to add iterator to _dkInterfaceIteratorDict\n`
+- `%s: %s::%s: pipe state %d\n`
+- `%s@%s: %s::%s: unable to allocate commandGate\n`
+- `%s@%s: %s::%s: waiting for link training approval\n`
+- `%s@%s: %s::%s: forClient %s(%p) completed with 0x%08x\n`
+- `%s@%s: %s::%s: successfully cached new descriptor %u %u %u %u\n`
+- `%s@%s: %s::%s: failed to create _dkInterfaceIteratorDict\n`
+- `%s@%s: %s::%s: configuration descriptor %d not found\n`
+- `%s@%s: %s::%s: AppleUSBHostDeviceUserClient[%p]::AbortPipeZero - returning err %x`
+- `%s@%s: %s::%s: ignoring %s\n`
+- `%s: %s::%s: bad argument: ioTransferAcceptedCount == NULL\n`
+- `%s@%s: %s::%s: failed to create _ioPortPublishNotifier\n`
+- `%s@%s: %s::%s: %s\n`
+- `%s@%s: %s::%s: terminating service %s\n`
+- `%s@%s: %s::%s: kIOUSBPlatformCapabilityFailedFunctionsDescriptorUUID failed validation checks\n`
+- `%s@%s: %s::%s: device %p interface %p\n`
+- `%s@%s: %s::%s: usb3 port timings are disconnectDetect: %ums\n`
+- `%s@%s: %s::%s: %s -> %s, converting to %s\n`
+- `%s@%s: %s::%s: failed to create _lpmLatencyCache\n`
+- `%s: %s::%s: calling forcePower due to pipe 0x%02x\n`
+- `%s@%s: %s::%s: specifier 0x%08x\n`
+- `%s@%s: %s::%s: failed to set location\n`
+- `%s@%s: %s::%s: waiting for previous power change\n`
+- `%s@%s: %s::%s: %s: %llu completed with %d\n`
+- `%s@%s: %s::%s: smc error: nothing attached to port\n`
+- `%s@%s: %s::%s: smc error: requesting more power than port power limits\n`
+- `%s: %s::%s: correcting invalid bInterval for pre-USB 2.0 isochronous endpoint\n`
+- `%s@%s: %s::%s: AppleUSBHostInterfaceUserClient[%p]::message - received kIOMessageServiceIsTerminated`
+- `%s@%s: %s::%s: failed to create _busCurrentAllocator\n`
+- `%s@%s: %s::%s: %d\n`
+- `%s@%s: %s::%s: port already has a reset in progress\n`
+- `%s: %s::%s: AsyncIOBundledMemoryDescriptorRing doesn't exist\n`
+- `%s@%s: %s::%s: waiting for previous power floor\n`
+- `%s@%s: %s::%s: invalid speed %d\n`
+- `%s@%s: %s::%s: persistent enumeration failures\n`
+- `%s: %s::%s: %s@%s: unable to query other clients\n`
+- `%s@%s: %s::%s: overcurrent detected with port status 0x%x, localSimulatedInterrupts = 0x%x\n`
+- `%s@%s: %s::%s: kUSBHostMessageUpdateIdlePolicy from %s@%s [%p]\n`
+- `%s: %s::%s: completed with 0x%08x\n`
+- `%s@%s: %s::%s: could not update device LPM policies for configuration %d result 0x%08x, LPM disabled\n`
+- `%s@%s: %s::%s: wake bus power supply %u mW\n`
+- `%s@%s: %s::%s: AppleUSBHostDeviceUserClient[%p]::message - received kIOMessageServiceIsTerminated`
+- `%s@%s: %s::%s: unable to get pipe with reference %u\n`
+- `%s@%s: %s::%s: trying to close a nonexistent provider session\n`
+- `%s@%s: %s::%s: unable to allocate _clients\n`
+- `%s: %s::%s: client %s@%s output wakeUnits %d sleepUnits %d\n`
+- `%s@%s: %s::%s: unlock exception granted\n`
+- `%s@%s: %s::%s: failed to alloc context\n`
+- `%s: %s::%s: completion timeouts not permitted for interrupt transfers\n`
+- `%s@%s: %s::%s: request %p completed with 0x%08x\n`
+- `%s@%s: %s::%s: device %p pipe %p streamID %d\n`
+- `%s@%s: %s::%s: calling SetAlternateInterface(%d)\n`
+- `%s: %s::%s: IOUSBHostIOSource is not valid\n`
+- `%s@%s: %s::%s: requires admin privileges that the task does not have with options 0x%x\n`
+- `%s: %s::%s: @%s: unable to waitForWork on workloop thread\n`
+- `%s@%s: %s::%s: kUSBSleepPortCurrentLimit %d mA\n`
+- `%s@%s: %s::%s: bDescriptorType %d\n`
+- `%s@%s: %s::%s: iManufacturer %d\n`
+- `%s: %s::%s: device %d (%s@%s) endpoint 0x%02x: status 0x%08x (%s): %d bytes transferred\n`
+- `%s: %s::%s: clientRecord has an outstandingIO of %u`
+- `%s@%s: %s::%s: controller %p busNumber %d\n`
+- `%s@%s: %s::%s: failed to create _providerCommandGate\n`
+- `%s@%s: %s::%s: %s: terminated while waiting for previous power change\n`
+- `%s@%s: %s::%s: created device\n`
+- `%s: %s::%s: called with invalid completion\n`
+- `%s@%s: %s::%s: forClient %p options 0x%08x arg %p\n`
+- `%s@%s: %s::%s: flushing %u buffer mappings\n`
+- `%s@%s: %s::%s: converting domainState 0x%08lx to 0x%08x\n`
+- `%s@%s: %s::%s: provider is not an AppleUSBHostPort\n`
+- `%s@%s: %s::%s: pipe %p\n`
+- `%s@%s: %s::%s: child service %s (IOPort %s@%d)\n`
+- `%s@%s: %s::%s: deferring power off\n`
+- `%s@%s: %s::%s: failed to get device descriptor\n`
+- `%s@%s: %s::%s: failed to create containerID property\n`
+- `%s@%s: %s::%s: privileged/entitled client approved: admin %d authorized %d entitled %d\n`
+- `%s@%s: %s::%s: unable to allocate _hardwareExceptionHistoryLock\n`
+- `%s@%s: %s::%s: tracking %s@%d %s(%s)\n`
+- `%s@%s: %s::%s: capability descriptors are missing\n`
+- `%s@%s: %s::%s: consensus idle policy timeout %ums\n`
+- `%s@%s: %s::%s: service is already opened for client\n`
+- `%s@%s: %s::%s: tier limit override %d\n`
+- `%s@%s: %s::%s: bMaxPacketSize0 %d\n`
+- `%s: %s::%s: _sharedLogical %p\n`
+- `%s@%s: %s::%s: privileged/entitled client rejected: admin %d authorized %d entitled %d\n`
+- `%s@%s: %s::%s: bad options argument\n`
+- `%s::%s: USB 2.0 9.6.6: endpoint 0x%02x invalid bInterval %d\n`
+- `%s@%s: %s::%s: pipe %p completed with 0x%08x\n`
+- `%s: %s::%s: @%s: pending\n`
+- `%s@%s: %s::%s: device identification blocked by transport restrictions\n`
+- `%s@%s: %s::%s: inspecting %s\n`
+- `%s@%s: %s::%s: completed with result 0x%08x\n`
+- `%s: %s::%s: starting device idle period\n`
+- `%s@%s: %s::%s: kUSBWakePortCurrentLimit %d mA\n`
+- `%s@%s: %s::%s: bNumConfigurations %d\n`
+- `%s@%s: %s::%s: Invalid BESL/BESLD index %d in USB 2.0 Extension Capability Descriptor\n`
+- `%s@%s: %s::%s: failed to open device\n`
+- `%s@%s: %s::%s: %s does not share bus power allocation, no work to set %d wakeCurrent and %d sleepCurrent\n`
+- `%s: %s::%s: @%s: cannot set moderation time while the interrupt source is enabled\n`
+- `%s@%s: %s::%s: failed to create device (0x%08x)\n`
+- `%s@%s: %s::%s: enumerated stale device\n`
+- `%s@%s: %s::%s: %s@%s\n`
+- `%s: %s::%s: calling forcePower due to %s %p\n`
+- `%s@%s: %s::%s: generateBusNumber failed\n`
+- `%s@%s: %s::%s: type = %s\n`
+- `%s@%s: %s::%s: device %p does not belong to controller %p\n`
+- `%s@%s: %s::%s: failed to create _powerChildren\n`
+- `%s: %s::%s: commandSleep (_completionRunning) returned 0x%08x\n`
+- `%s: %s::%s: client %s@%s input wakeUnits %d sleepUnits %d\n`
+- `%s@%s: %s::%s: %s: already at desired power state, returning success\n`
+- `%s@%s: %s::%s: string descriptor cannot be overridden\n`
+- `%s@%s: %s::%s: kUSBHostMessageRemoteWake: allowing power level to float\n`
+- `%s@%s: %s::%s: device does not have BOS Descriptor\n`
+- `%s: %s::%s: forcePower completed with 0x%08x\n`
+- `%s::%s: USB 2.0 5.[5-8].3: endpoint 0x%02x invalid wMaxPacketSize 0x%04x\n`
+- `%s@%s: %s::%s: failed initBusCurrent\n`
+- `%s: %s::%s: %s@%s: other clients request wakeUnits %d sleepUnits %d\n`
+- `%s@%s: %s::%s: simulating interrupts with mask 0x%08x\n`
+- `%s@%s: %s::%s: wakeUnits %d sleepUnits %d completed with 0x%08x\n`
+- `%s@%s: %s::%s: parameter is not the expected type\n`
+- `%s@%s: %s::%s: suspending pipes\n`
+- `%s@%s: %s::%s: allowing power level to float\n`
+- `%s@%s: %s::%s: attempt to read descriptor from cache\n`
+- `%s@%s: %s::%s: failed to open because workLoop/commandGate is NULL or opening for a different client`
+- `%s@%s: %s::%s: failed to create matching notifier\n`
+- `%s@%s: %s::%s: failed to get descriptor\n`
+- `%s@%s: %s::%s: failed to open %s@%s\n`
+- `%s@%s: %s::%s: %s: waiting for previous power change\n`
+- `%s@%s: %s::%s: %s: %d completed with %d\n`
+- `%s@%s: %s::%s: kUSBHostMessageRenegotiateCurrent\n`
+- `%s@%s: %s::%s: aborting\n`
+- `%s@%s: %s::%s: deferring address %d\n`
+- `%s: %s::%s: device %d (%s@%s) endpoint 0x%02x: aborting %d requests\n`
+- `%s: %s::%s: %s@%s: client %s@%s input wakeUnits %d sleepUnits %d\n`
+- `%s::%s: USB 2.0 9.6.6: endpoint 0x%02x invalid descriptor length %d or type %d\n`
+- `%s@%s: %s::%s: compliance violation: failed to enable remote wake\n`
+- `%s@%s: %s::%s: forClient %p options 0x%08x\n`
+- `%s@%s: %s::%s: completed\n`
+- `%s@%s: %s::%s: invalid descriptor %p\n`
+- `%s@%s: %s::%s: failed to allocate thread_call to simulate asynchronous completion\n`
+- `%s@%s: %s::%s: unable to get workLoop\n`
+- `%s@%s: %s::%s: sleep bus power pool %d mW\n`
+- `%s@%s: %s::%s: device functionality blocked by transport restrictions\n`
+- `%s: %s::%s: wake bus current pool %d mA\n`
+- `%s::%s: USB 4.0 9.4.3.4: endpoint 0x%02x invalid bMaxBurst %d\n`
+- `%s@%s: %s::%s: failed to initialize IOPortTransportState\n`
+- `%s@%s: %s::%s: SetAlternateInterface failed (0x%x)\n`
+- `%s@%s: %s::%s: %s timeout %dms\n`
+- `%s: %s::%s: commandSleep (_outStandingIO) returned 0x%08x\n`
+- `%s@%s: %s::%s: failed to create _restrictionChangeInterrupt\n`
+- `%s@%s: %s::%s: enumerated 0x%04x/%04x/%04x (%s / %u) at %s\n`
+- `%s@%s: %s::%s: kUSBHostMessageRemoteWake\n`
+- `%s@%s: %s::%s: %s@%s [%p] has an idle policy of %dms\n`
+- `%s@%s: %s::%s: configuration %d\n`
+- `%s::%s: USB 3.1 9.6.8: endpoint 0x%02x invalid descriptor length %d or type %d\n`
+- `%s@%s: %s::%s: negative _mapperReferenceLock\n`
+- `%s@%s: %s::%s: smc error: requested negative power\n`
+- `%s: %s::%s: pipe has no bandwidth allocated\n`
+- `%s@%s: %s::%s: assuming successful wakeUnits %d sleepUnits %d\n`
+- `%s@%s: %s::%s: failed to create clients set\n`
+- `%s@%s: %s::%s: %s property is unavailable\n`
+- `%s@%s: %s::%s: failed to allocate params to simulate asynchronous completion\n`
+- `%s@%s: %s::%s: %s completed with 0x%08x (%d attempts)\n`
+- `%s@%s: %s::%s: terminated service while waiting to force power\n`
+- `%s@%s: %s::%s: failed to find/remove iterator from _dkInterfaceIteratorDict\n`
+- `%s@%s: %s::%s: address %d\n`
+- `%s: %s::%s: unrecognized _completionType %d\n`
+- `%s@%s: %s::%s: client %s@%s output wakeCurrent %d sleepCurrent %d\n`
+- `%s@%s: %s::%s: forcing power %d\n`
+- `%s@%s: %s::%s: pipe %p withError 0x%08x forClient %p\n`
+- `%s: %s::%s: invalid data buffer\n`
+- `%s: %s::%s: @%s: interruptModerationTimeMS %d\n`
+- `%s@%s: %s::%s: _workLoop is invalid\n`
+- `%s@%s: %s::%s: bLength %d\n`
+- `%s@%s: %s::%s: closeGated failed with 0x%08x\n`
+- `%s: %s::%s: _pEndpoint %p\n`
+- `%s@%s: %s::%s: failed to open %s@%s: provider is terminating\n`
+- `%s@%s: %s::%s: type %d requestedPower %d\n`
+- `%s@%s: %s::%s: Failed to create entitlementWildardDictionary for %s\n`
+- `%s@%s: %s::%s: productIDArrayExists was true, matches = %d\n`
+- `%s@%s: %s::%s: provider is NULL\n`
+- `%s@%s: %s::%s: missing entitlement %s\n`
+- `%s@%s: %s::%s: sleep bus power supply %u mW\n`
+- `%s@%s: %s::%s: device signature missing\n`
+- `%s: %s::%s: device %d (%s@%s) endpoint 0x%02x: status 0x%08x (%s)\n`
+- `%s@%s: %s::%s: type 0x%02x index %d length %d: compliance violation: USB 2.0 9.2.6.4: standard request timed out after %dms\n`
+- `%s@%s: %s::%s: device descriptor fragment is invalid\n`
+- `%s@%s: %s::%s: %s@%s [%p] has not enabled an idle policy\n`
+- `%s::%s: USB 2.0 9.6.6: endpoint 0x%02x reserved isochronous usage type\n`
+- `%s@%s: %s::%s: client %s@%s input wakeCurrent %d sleepCurrent %d\n`
+- `%s@%s: %s::%s: %s: completed with 0x%08x after %llums\n`
+- `%s@%s: %s::%s: failed to create _clients\n`
+- `%s@%s: %s::%s: appending serial number %s to signature\n`
+- `%s@%s: %s::%s: failed to create _addressRequestCompleter\n`
+- `%s@%s: %s::%s: signaling for deferred interrupts\n`
+- `%s@%s: %s::%s: remote wake\n`
+- `%s@%s: %s::%s: redundant configuration %d\n`
+- `%s@%s: %s::%s: controller %p busNumber %d completed with 0x%08x\n`
+- `%s@%s: %s::%s: hub depth exceeded\n`
+- `%s@%s: %s::%s: device is terminating\n`
+- `%s: %s::%s: called without first calling cancel/complete\n`
+- `%s@%s: %s::%s: ownership mismatch\n`
+- `%s@%s: %s::%s: descriptor %p speed %d\n`
+- `%s@%s: %s::%s: failed to find host controller service\n`
+- `%s@%s: %s::%s: enumeration failed\n`
+- `%s@%s: %s::%s: failed to create _transportMessageNotifier\n`
+- `%s@%s: %s::%s: device will not be registered for matching\n`
+- `%s@%s: %s::%s: passed authentication: %s\n`
+- `%s::%s: USB 3.1 9.6.8: endpoint 0x%02x of type %d has SuperSpeedPlusIsochronousEndpointCompanion descriptor\n`
+- `%s@%s: %s::%s: unable to allocate _mapperReferenceLock\n`
+- `%s@%s: %s::%s: service terminated while waiting for forcePowerThread\n`
+- `%s@%s: %s::%s: idling port from %s to %s\n`
+- `%s@%s: %s::%s: failed to attach or start interface %d for configuration %d\n`
+- `%s@%s: %s::%s: error setting U1Enable (0x%08x)\n`
+- `%s: %s::%s: frameNumber %lld\n`
+- `%s@%s: %s::%s: unable to get stream with endpointAddress %u, streamID %u\n`
+- `%s@%s: %s::%s: failed to add to create ref key\n`
+- `%s@%s: %s::%s: %s selected configuration %d\n`
+- `%s@%s: %s::%s: device does not support USB 2.0 BESL method of LPM\n`
+- `%s@%s: %s::%s: failed with result 0x%x\n`
+- `%s@%s: %s::%s: bNumConfigurations of 0 is not permitted\n`
+- `%s: %s::%s: called on a prepared request\n`
+- `%s@%s: %s::%s: %lu\n`
+- `%s@%s: %s::%s: %lu completed with 0x%08x\n`
+- `%s@%s: %s::%s: offset 0x%08x mask 0x%08x read 0x%08x wrote 0x%08x\n`
+- `%s@%s: %s::%s: %s: %s@%s\n`
+- `%s@%s: %s::%s: generating %s:%s\n`
+- `%s@%s: %s::%s: redundant authentication: %s\n`
+- `%s@%s: %s::%s: unable to obtain client set\n`
+- `%s::%s: USB 3.0 9.6.6: endpoint 0x%02x reserved interrupt usage type\n`
+- `%s@%s: %s::%s: failed to allocate _clockReferenceLock\n`
+- `%s@%s: %s::%s: %s: allowing power level to float\n`
+- `%s@%s: %s::%s: forClient %s(%p)\n`
+- `%s@%s: %s::%s: selector %u is out of range %u\n`
+- `%s@%s: %s::%s: type 0x%02x index %d length %d: completed with 0x%08x bytesTransferred %d type 0x%02x\n`
+- `%s@%s: %s::%s: smc query command 0x%x result = 0x%x responding with %dmA\n`
+- `%s: %s::%s: wakePool %d sleepPool %d\n`
+- `%s@%s: %s::%s: interface %p does not belong to device %p\n`
+- `%s@%s: %s::%s: enumeration attempt %u\n`
+- `%s@%s: %s::%s: unexpected _currentPowerState %s\n`
+- `%s@%s: %s::%s: device does not support USB2 LPM\n`
+- `%s@%s: %s::%s: no free addresses available\n`
+- `%s: %s::%s: called with invalid transaction requestCount and/or offset\n`
+- `%s@%s: %s::%s: \n`
+- `%s@%s: %s::%s: waiting for power level >= %lu\n`
+- `%s: %s::%s: @%s: complete\n`
+- `%s@%s: %s::%s: thread_call creation failed with 0x%08x\n`
+- `%s@%s: %s::%s: descriptor %p speed %d completed with %p\n`
+- `%s: %s::%s: called in an invalid context\n`
+- `%s@%s: %s::%s: unable to open _device\n`
+- `%s@%s: %s::%s: superspeed plus USB device capability is missing\n`
+- `%s@%s: %s::%s: %s@%s will inhibit idling\n`
+- `%s@%s: %s::%s: failed to find iterator in _dkInterfaceIteratorDict\n`
+- `%s::%s: USB 3.0 9.6.7: endpoint 0x%02x invalid mult %d\n`
+- `%s@%s: %s::%s: waiting for previous forcePower completed with 0x%08x\n`
+- `%s@%s: %s::%s: failed to create command gate\n`
+- `%s@%s: %s::%s: failed to create interrupt event source\n`
+- `%s@%s: %s::%s: iSerialNumber %d\n`
+- `%s@%s: %s::%s: appending interface summary 0x%02x %02x %02x to signature\n`
+- `%s@%s: %s::%s: 0x%08x (%s)\n`
+- `%s: %s::%s: @%s: \n`
+- `%s@%s: %s::%s: USB 2.0 extension capability is missing or does not support LPM\n`
+- `%s@%s: %s::%s: failed to cacheDescriptor %u %u %u %u\n`
+- `%s: %s::%s: sleep bus current pool %d mA\n`
+- `%s@%s: %s::%s: %s: system is shutting down\n`
+- `%s@%s: %s::%s: port not enabled (port status 0x%08x\n`
+- `%s@%s: %s::%s: failed to create or open pipe zero\n`
+- `%s@%s: %s::%s: PlatformUDIDCapabilityDescriptor failed validation checks\n`
+- `%s@%s: %s::%s: requesting minimum port power, %dmW for smcCommand 0x%x, assume successful\n`
+- `%s@%s: %s::%s: destroying 0x%04x/%04x/%04x (%s): %s\n`
+- `%s@%s: %s::%s: resuming\n`
+- `%s@%s: %s::%s: %s (id 0x%08llx) did not surrender device to %s (id 0x%08llx)\n`
+- `%s@%s: %s::%s: power change notification, 0x%x\n`
+- `%s@%s: %s::%s: requires admin privileges to change power allocations\n`
+- `%s@%s: %s::%s: device %p\n`
+- `%s@%s: %s::%s: stream %p withError 0x%08x\n`
+- `%s: %s::%s: forClient == NULL\n`
+- `%s@%s: %s::%s: service is inactive\n`
+- `%s::%s: USB 2.0 9.6.6: endpoint 0x%02x bEndpointAddress has reserved bits set 0x%02x\n`
+- `%s@%s: %s::%s: domainState 0x%08lx result %lu\n`
+- `%s@%s: %s::%s: stream %p withError 0x%08x completed with 0x%08x\n`
+- `%s@%s: %s::%s: %s: waiting for previous power change completed with 0x%08x\n`
+- `%s@%s: %s::%s: descriptor override index %s is not recognized\n`
+- `%s::%s: invalid descriptor length %d or type %d\n`
+- `%s@%s: %s::%s: stream %p\n`
+- `%s@%s: %s::%s: address lock not acquired\n`
+- `%s: %s::%s: _dkMemoryDescriptorArray == NULL\n`
+- `%s: %s::%s: failed to map frameList\n`
+- `%s@%s: %s::%s: wake bus power pool %d mW\n`
+- `%s@%s: %s::%s: failed to create statSerializer\n`
+- `%s@%s: %s::%s: device %p pipe %p streamID %d completed with %p\n`
+- `%s@%s: %s::%s: link training approval result %d\n`
+- `%s@%s: %s::%s: waiting for %s@%s to terminate\n`
+- `%s@%s: %s::%s: failed to create _transportPublishNotifier\n`
+- `%s: %s::%s: invalid buffer for device %d endpoint 0x%02x\n`

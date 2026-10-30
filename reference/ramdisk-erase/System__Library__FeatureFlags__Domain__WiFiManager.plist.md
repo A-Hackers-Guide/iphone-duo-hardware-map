@@ -1,0 +1,94 @@
+# `/System/Library/FeatureFlags/Domain/WiFiManager.plist`
+
+From the erase/recovery restore ramdisk (141-28940-105.dmg, runs restored_external). 4,341 bytes.
+
+- `AJPolicyTuning`:
+  - `Enabled`: `True`
+- `AdaptiveInterfaceRanking`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AirplaneWiFiDetection`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AskToJoinPersonalHotspotBanner`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AutoHotspotLatencyOptimization`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `CATS`:
+  - `Enabled`: `True`
+- `CarPlayCheckForInternet`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `ContextAwareTriggerDisconnect`:
+  - `Enabled`: `True`
+- `DNSSymptoms`:
+  - `Enabled`: `True`
+- `DeferredColocatedScopeProvisioning`:
+  - `Enabled`: `True`
+- `EnableCarPlayJoinAfterInCar`:
+  - `Enabled`: `True`
+- `EnableNANPHS`:
+  - `Enabled`: `True`
+- `FCCVLP`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `FastTDRssiDecay`:
+  - `Enabled`: `True`
+- `FindAndJoinNetworkAPI`:
+  - `Enabled`: `True`
+- `LMTPCFor24GHzCarPlay`:
+  - `Enabled`: `True`
+- `LMTPCFor5GHzCarPlay`:
+  - `Enabled`: `True`
+- `LinkRecommendationTD`:
+  - `Enabled`: `True`
+- `LinkUpEventAfter4way`:
+  - `Enabled`: `True`
+- `Linwood`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `ListenBeforeTalk`:
+  - `Enabled`: `True`
+- `MitigateInterferenceForCarPlay`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `MitigateNavJammerForCarPlay`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `NAN6EChanEnable`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `NetworkDenyList`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `OneCoreTx`:
+  - `Enabled`: `True`
+- `OverrideTDPreference`:
+  - `Enabled`: `True`
+- `PHDataUsage`:
+  - `Enabled`: `True`
+- `PersonalHotspotRecoveryFromDextCrash`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `PersonalHotspotRecoveryFromWiFidCrash`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `PrivateMacAirPlayNetwork`:
+  - `Enabled`: `True`
+- `PrivateMacRotation`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `QoS_MSCS`:
+  - `Enabled`: `True`
+- `RRTS`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `RangingPerCoreRSSIFilter`:
+  - `Enabled`: `True`
+- `RealTimeFastTD`:
+  - `Enabled`: `True`
+- `RealTimeRoamSuppression`:
+  - `Enabled`: `True`
+- `RealtimeDynamicRTS`:
+  - `Enabled`: `True`
+- `SCCA`:
+  - `Enabled`: `True`
+- `ScanForwardToAOP`:
+  - `Enabled`: `True`
+- `ScoreBasedTriggerDisconnect`:
+  - `Enabled`: `True`
+- `ViVoDatapathTuning`:
+  - `Enabled`: `True`
+- `WPA3PersonalHotspot`:
+  - `Enabled`: `True`
+- `WiFiLQMCrashTracer`:
+  - `Enabled`: `True`
+- `WiFiWatchCredentialSharing`:
+  - `DevelopmentPhase`: `FeatureComplete`

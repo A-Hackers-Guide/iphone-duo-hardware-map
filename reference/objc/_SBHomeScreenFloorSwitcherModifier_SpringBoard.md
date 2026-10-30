@@ -1,0 +1,97 @@
+# `_SBHomeScreenFloorSwitcherModifier`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBSwitcherModifier`
+- 0 instance variables, 0 properties, 87 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[_SBHomeScreenFloorSwitcherModifier jetsamModeForAppLayout:];
+-[_SBHomeScreenFloorSwitcherModifier scaleForIndex:];
+-[_SBHomeScreenFloorSwitcherModifier titleOpacityForIndex:];
+-[_SBHomeScreenFloorSwitcherModifier homeScreenScale];
+-[_SBHomeScreenFloorSwitcherModifier isContainerStatusBarVisible];
+-[_SBHomeScreenFloorSwitcherModifier foregroundAppLayouts];
+-[_SBHomeScreenFloorSwitcherModifier homeScreenBackdropBlurProgress];
+-[_SBHomeScreenFloorSwitcherModifier homeScreenDimmingAlpha];
+-[_SBHomeScreenFloorSwitcherModifier clippingFrameForIndex:withBounds:];
+-[_SBHomeScreenFloorSwitcherModifier isSwitcherWindowUserInteractionEnabled];
+-[_SBHomeScreenFloorSwitcherModifier homeScreenAlpha];
+-[_SBHomeScreenFloorSwitcherModifier isHomeScreenContentRequired];
+-[_SBHomeScreenFloorSwitcherModifier touchBehaviorForLayoutRole:inAppLayout:];
+-[_SBHomeScreenFloorSwitcherModifier cornerRadiiForIndex:];
+-[_SBHomeScreenFloorSwitcherModifier clipsToUnobscuredMarginAtIndex:];
+-[_SBHomeScreenFloorSwitcherModifier shouldScaleOverlayToFillBoundsAtIndex:];
+-[_SBHomeScreenFloorSwitcherModifier animationAttributesForLayoutElement:];
+-[_SBHomeScreenFloorSwitcherModifier adjustedAppLayoutsForAppLayouts:];
+-[_SBHomeScreenFloorSwitcherModifier clippingFrameForLayoutRole:inAppLayout:atIndex:withBounds:];
+-[_SBHomeScreenFloorSwitcherModifier homeScreenBackdropBlurType];
+-[_SBHomeScreenFloorSwitcherModifier dockProgress];
+-[_SBHomeScreenFloorSwitcherModifier visibleHomeAffordanceLayoutElements];
+-[_SBHomeScreenFloorSwitcherModifier topMostLayoutElements];
+-[_SBHomeScreenFloorSwitcherModifier isSwitcherWindowVisible];
+-[_SBHomeScreenFloorSwitcherModifier titleAndIconOpacityForIndex:];
+-[_SBHomeScreenFloorSwitcherModifier activityModeForAppLayout:];
+-[_SBHomeScreenFloorSwitcherModifier appLayoutsToCacheSnapshots];
+-[_SBHomeScreenFloorSwitcherModifier handleTransitionEvent:];
+-[_SBHomeScreenFloorSwitcherModifier shouldScrollViewBlockTouches];
+-[_SBHomeScreenFloorSwitcherModifier isWallpaperRequiredForSwitcher];
+-[_SBHomeScreenFloorSwitcherModifier visibleAppLayouts];
+-[_SBHomeScreenFloorSwitcherModifier wantsDockBehaviorAssertion];
+-[_SBHomeScreenFloorSwitcherModifier isContentStatusBarVisibleForIndex:];
+-[_SBHomeScreenFloorSwitcherModifier shouldAccessoryDrawShadowForAppLayout:];
+-[_SBHomeScreenFloorSwitcherModifier dockUpdateMode];
+-[_SBHomeScreenFloorSwitcherModifier opacityForLayoutRole:inAppLayout:atIndex:];
+-[_SBHomeScreenFloorSwitcherModifier shouldAllowContentViewTouchesForLayoutRole:inAppLayout:];
+-[_SBHomeScreenFloorSwitcherModifier visibleCornersForTouchResizeForLayoutRole:inAppLayout:];
+-[_SBHomeScreenFloorSwitcherModifier isScrollEnabled];
+-[_SBHomeScreenFloorSwitcherModifier shadowOpacityForLayoutRole:atIndex:];
+-[_SBHomeScreenFloorSwitcherModifier headerStyleForIndex:];
+-[_SBHomeScreenFloorSwitcherModifier isIndexRubberbandableForSwipeToKill:];
+-[_SBHomeScreenFloorSwitcherModifier wallpaperStyle];
+-[_SBHomeScreenFloorSwitcherModifier frameForIndex:];
+-[_SBHomeScreenFloorSwitcherModifier activeLeafAppLayoutsReachableByKeyboardShortcut];
+-[_SBHomeScreenFloorSwitcherModifier wallpaperScale];
+-[_SBHomeScreenFloorSwitcherModifier destinationAppLayoutForDismissingCurrentMode];
+-[_SBHomeScreenFloorSwitcherModifier backgroundOpacityForIndex:];
+-[_SBHomeScreenFloorSwitcherModifier keyboardSuppressionMode];
+-[_SBHomeScreenFloorSwitcherModifier neighboringAppLayoutsForFocusedAppLayout:];
+-[_SBHomeScreenFloorSwitcherModifier visibleMarginForItemContainerAtIndex:];
+-[_SBHomeScreenFloorSwitcherModifier wallpaperOverlayAlphaForIndex:];
+-[_SBHomeScreenFloorSwitcherModifier identifiersInStrip];
+-[_SBHomeScreenFloorSwitcherModifier indexToScrollToAfterRemovingIndex:];
+-[_SBHomeScreenFloorSwitcherModifier regionDividerOpacity];
+-[_SBHomeScreenFloorSwitcherModifier activeCornersForTouchResizeForLayoutRole:inAppLayout:];
+-[_SBHomeScreenFloorSwitcherModifier isFocusEnabledForAppLayout:];
+-[_SBHomeScreenFloorSwitcherModifier shouldRemoveProlongedCursorGestureFloatingDockBehaviorAssertion];
+-[_SBHomeScreenFloorSwitcherModifier isItemResizingAllowedForLayoutRole:inAppLayout:];
+-[_SBHomeScreenFloorSwitcherModifier shouldUseBrightMaterialForIndex:];
+-[_SBHomeScreenFloorSwitcherModifier isLayoutRoleKillable:inAppLayout:atIndex:];
+-[_SBHomeScreenFloorSwitcherModifier canPerformKeyboardShortcutAction:forBundleIdentifier:];
+-[_SBHomeScreenFloorSwitcherModifier isLayoutRoleEligibleForContentDragSpringLoading:inAppLayout:];
+-[_SBHomeScreenFloorSwitcherModifier indexToScrollToAfterInsertingAtIndex:];
+-[_SBHomeScreenFloorSwitcherModifier isItemContainerPointerInteractionEnabled];
+-[_SBHomeScreenFloorSwitcherModifier regionDividerCenter];
+-[_SBHomeScreenFloorSwitcherModifier appLayoutsToResignActive];
+-[_SBHomeScreenFloorSwitcherModifier shelfBackgroundBlurOpacity];
+-[_SBHomeScreenFloorSwitcherModifier isLayoutRoleSelectable:inAppLayout:];
+-[_SBHomeScreenFloorSwitcherModifier appLayoutForReceivingHardwareButtonEvents];
+-[_SBHomeScreenFloorSwitcherModifier wantsRegionDivider];
+-[_SBHomeScreenFloorSwitcherModifier lighteningAlphaForIndex:];
+-[_SBHomeScreenFloorSwitcherModifier preferredStatusBarAxis];
+-[_SBHomeScreenFloorSwitcherModifier shelfBackgroundBlurFrame];
+-[_SBHomeScreenFloorSwitcherModifier asyncRenderingAttributesForAppLayout:];
+-[_SBHomeScreenFloorSwitcherModifier shadowStyleForLayoutRole:inAppLayout:];
+-[_SBHomeScreenFloorSwitcherModifier wantsHomeScreenPointerInteractions];
+-[_SBHomeScreenFloorSwitcherModifier shouldConfigureInAppDockHiddenAssertion];
+-[_SBHomeScreenFloorSwitcherModifier regionDividerOptions];
+-[_SBHomeScreenFloorSwitcherModifier preferredSnapshotOrientationForAppLayout:];
+-[_SBHomeScreenFloorSwitcherModifier iconOpacityForIndex:];
+-[_SBHomeScreenFloorSwitcherModifier shouldBringCardToFrontDuringInsertionOrRemoval];
+-[_SBHomeScreenFloorSwitcherModifier isHomeAffordanceSupportedForAppLayout:];
+-[_SBHomeScreenFloorSwitcherModifier shouldAnimateInsertionOrRemovalOfAppLayout:atIndex:];
+-[_SBHomeScreenFloorSwitcherModifier wantsAsynchronousSurfaceRetentionAssertion];
+-[_SBHomeScreenFloorSwitcherModifier appLayoutsToCacheFullsizeSnapshots];
+-[_SBHomeScreenFloorSwitcherModifier isLayoutRoleDraggable:inAppLayout:];
+```

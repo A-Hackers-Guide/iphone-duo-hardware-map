@@ -1,0 +1,72 @@
+# `IOThunderboltXDomainServiceClient`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.iokit.IOThunderboltFamily`](../kexts/com.apple.iokit.IOThunderboltFamily.md)
+- Object size: `0x218` (536 bytes)
+- Metaclass: `0xfffffe000ba1c818`; metaclass vtable `0xfffffe000840ac38`; class vtable `0xfffffe000840a4c8`
+- Registration (init): `0xfffffe000a47b008`
+- Superclasses: [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## Strings in its kext that name it (60)
+
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathTeardownRequest\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainQueue - Path ID %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequestComplete - incoming status = 0x%x, fXDControlRequest = %p, command = %p, fFinalizeWaiting = %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainPath - Remote Request = %u, XDomain To Port = %u, XDomain Tx Path = %u, Allocated Remote Hop ID = %u, Allocated XDomain Hop ID = %u, Remote Path UUID %s\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientNotReadySync - control request command is in progress, sleep on fXDControlRequest = %p\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequestComplete - remote Service Ready = %u, remote XDomain Max Hop ID = %u, remote Max Credits = %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientNotReadySync - found XDomain Paths not yet deactivated, fLocalServiceReady sleep\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::activateXDomainPath - local port = %u, local_hop_id = %u, remote port = %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyXDomainPath - done, Path ID %u, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::createRxQueueInternal - done,  Path ID %u, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::message - type = 0x%x, state = 0x%x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupRequest - done, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupCompleteRequest - done, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::registerTransmitQueue - done,  Path ID %u, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::finalize\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::publishServices - done status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupCompleteRequest\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::registerService\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequestComplete - done, wake up fXDControlRequest = %p\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyTxQueueInternal - Path ID %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::sendControlRequestSynchronous - sleep on fXDControlRequest = %p\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainPath - directionXDomainToPort = %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyRxQueueInternal - done, Path ID %u status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupRequest_DEBUG - calling dispatchActivateXDomainPath() for XDomain Path with Path ID %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainPath - Remote Request = %u, XDomain To Port = %u, XDomain Tx Path = %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientReadySync - path capabilities request command woke up, fXDPathCapabilitiesRequest = %p\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::getTxQueueForPathID - queue_object = %p\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>::start\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::dispatchPublishServices\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::prepareForTermination - waiting on fSerialDispatchQueue\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequestComplete - incoming status = 0x%x, fXDPathCapabilitiesRequest = %p, command = %p, fFinalizeWaiting = %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyRxQueueInternal - removing Rx Queue for key = \"%s\"\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::setClientReadySync - path capabilities request command is in progress, sleep on fXDPathCapabilitiesRequest = %p\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequestComplete - dispatching resubmitXDomainPathCapabilitiesRequest()\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::registerTransmitQueue - Path ID %u, added new Tx Queue %p for key \"%s\"\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::localOrRemoteServiceStatusChanged - new activation, allocate and call dispatchActivateXDomainPath()\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::attach\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequest - configured response_command\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateRxQueueInternal - done, Path ID %u, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathTeardownRequest - done, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processControlRequest - fControlRequestSyncCallback.target = %p, fControlRequestAsyncCallback.target = %p\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::dispatchPublishServices - dispatchAsync( publishServices )\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::registerReceiveQueue - Path ID %u, added new Tx Queue %p for key \"%s\"\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::sendControlRequestSynchronous - control request command woke up, fXDControlRequest = %p\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::clientReady - done, fLocalServiceReady = %u, ready = %u, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::detach\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::localOrRemoteServiceStatusChanged - changed_to_ready = %u, fLocalServiceReady = %u, fRemoteServiceReady = %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::destroyTxQueueInternal - removing Tx Queue for key = \"%s\"\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::clientReady - failed in fXDPathCapabilitiesRequest->submitFlowControlled()! status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainPath - key = \"%s\"\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::pathDeactivationCallback - incoming status = 0x%x, path = %p, fFinalizeWaiting = %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::start - fRemoteRootSwitchUID = 0x%016llx\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::registerReceiveQueue - Path ID %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathSetupRequest\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequestComplete - done, wake up fXDPathCapabilitiesRequest = %p\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::allocateXDomainPath - adding XDomain Path to dictionary with key \"%s\", new_path = %p, src port = %u, dst port = %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processRemoteServiceReady - fRemoteServiceReady = %u, ready = %u\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::processPathCapabilitiesRequest - done, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainServiceClientManager<%p>(%u)::publishServices - found client service key '%s'\n`
+- `%lldus IOThunderboltXDomainServiceClient<%p>::start\n`

@@ -1,0 +1,72 @@
+# `AppleThunderboltDPPathManager`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.driver.AppleThunderboltDPAdapterFamily`](../kexts/com.apple.driver.AppleThunderboltDPAdapterFamily.md)
+- Object size: `0xc0` (192 bytes)
+- Metaclass: `0xfffffe000b9d1568`; metaclass vtable `0xfffffe0008278bd0`; class vtable `0xfffffe0008278a68`
+- Registration (init): `0xfffffe00098f83ec`
+- Superclasses: none registered (derives from a kernel-core root such as OSObject)
+
+## Strings in its kext that name it (60)
+
+- `%lldus AppleThunderboltDPPathManager<%p>::createSnoopRings - added %d commands to fAuxTxTransmitCommandPool\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::createSnoopRings - ERROR: failed to allocate fAuxTxReceiveQueue\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::startAllQueues - ERROR: failed to submit rx_command to fAuxTxReceiveQueue\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::destroySnoopRings - %d commands released from fAuxRxReceiveCommandPool\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::createPath - use_primary_lane = %d, use_secondary_lane = %d, routing_options = 0x%08x\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::verifyAndReservePort - ( %p )->reserveDPPort( true, %p )\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::createPath - ERROR: setDestinationPort failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::createPathSet - creating videoPath\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::findDPInPortAtRoute - adding DPI port 0x%x to affinity_port_array\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::createSnoopRings - creating fAuxTxReceiveCommandPool\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::createPathSet - WARNING: activating auxRxPath failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::logPathCreation - activating %s - SRC [%d:0x%llx:0x%x] DST [%d:0x%llx:0x%x] - req_bandwidth = %d\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::free\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::getSSCOffset - ssc_offset (prop) = 0x%x\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::findExistingPaths - ERROR: incomplete path set found: video_path = %p, aux_tx_path = %p, aux_rx_path = %p\n`
+- `AppleThunderboltDPPathManager`
+- `%lldus AppleThunderboltDPPathManager<%p>::findExistingPaths - number of active DPO paths = %d\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::createSnoopRings - creating fAuxRxTransmitQueue\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::createSnoopRings - creating fAuxRxReceiveQueue\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::startAllQueues - ERROR: starting fAuxRxReceiveQueue failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::createPathSet - ERROR: DPPMCallback not valid\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::createPath - ERROR: new_path = NULL\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::createPathSet - WARNING: activating auxRxPathSnoopToSource failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::createPathSet - WARNING: activating auxTxPathSnoopToSink failed with 0x%08x\n`
+- `AppleThunderboltDPPathManagerOS`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::createPathSet - WARNING: activating videoPath failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::verifyAndReservePort - ( %p )->isAdapterAvailableForClient( %p )\n`
+- `%lldus AppleThunderboltDPPathManager<<<static>>>::setDPPort - ERROR: could not find adapter (dp_client = %p, adapter_type = 0x%x)\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::startAllQueues - ERROR: queues not ready\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::findDPInPortAtRoute - WARNING: unable to find available DPI port\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::createPathSet - ERROR: unrecognized pathSetType (%d)\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::findDPInPortAtRoute - adding DPI port 0x%x to nonaffinity_port_array\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::startAllQueues - submitted %d commands to fAuxTxReceiveQueue\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::stopAllQueues\n`
+- `%lldus AppleThunderboltDPPathManager<<<static>>>::setDPPort - ERROR: failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::createPathSet - creating auxRxPath\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::createSnoopRings - ERROR: failed to create fAuxRxTransmitQueue\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::destroySnoopRings - %d commands released from fAuxTxTransmitCommandPool\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::getSSCOffset - ssc_offset (default) = 0x%x\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::createSnoopRings - ERROR: failed to allocate fAuxTxTransmitQueue\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::createPath - source_hop_id_range = { %d, %d }\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::sendHPD - ERROR: fAuxRxTransmitQueue->submit() failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::findExistingPaths - number of active DPI paths = %d\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::transmitCommandCallback - ERROR: receive_queue->submit failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::createSnoopRings - creating fAuxTxTransmitQueue\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::transmitCommandCallback - WARNING: incomingStatus = 0x%08x\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::createPathSet - creating auxRxPathSinkToSnoop\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::createPathSet - creating auxTxPathSourceToSnoop\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::createSnoopRings - ERROR: failed to create fAuxTxTransmitQueue\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::createSnoopRings - ERROR: failed to create fAuxRxTransmitCommandPool\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::createSnoopRings - creating fAuxRxTransmitQueue\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::sendAuxPacket - ERROR: insertAuxData failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPPathManagerOS<<<static>>>::setDPPort - ERROR: could not find adapter (dp_client = %p, adapter_type = 0x%x)\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::transmitCommandCallback - WARNING: incomingStatus = 0x%08x\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::insertAuxData - ERROR: transmit_queue->submit() failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPPathManagerOS<%p>::findExistingPaths - all paths found\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::findDPInPortAtRoute - reserving DPI: route 0x%llx, port 0x%x\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::createPath - dest_hop_id_range = { %d, %d }\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::createPath - ERROR: pathSetConfigData = NULL\n`
+- `%lldus AppleThunderboltDPPathManager<%p>::createSnoopRings - creating fAuxTxReceiveCommandPool\n`

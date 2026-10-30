@@ -1,0 +1,86 @@
+# `_SBButterflyHomeLayoutModifier`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBWindowingModifier`
+- 0 instance variables, 0 properties, 76 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[_SBButterflyHomeLayoutModifier jetsamModeForAppLayout:];
+-[_SBButterflyHomeLayoutModifier homeScreenScale];
+-[_SBButterflyHomeLayoutModifier isContainerStatusBarVisible];
+-[_SBButterflyHomeLayoutModifier foregroundAppLayouts];
+-[_SBButterflyHomeLayoutModifier homeScreenBackdropBlurProgress];
+-[_SBButterflyHomeLayoutModifier homeScreenDimmingAlpha];
+-[_SBButterflyHomeLayoutModifier clippingFrameForIndex:withBounds:];
+-[_SBButterflyHomeLayoutModifier wallpaperGradientAttributesForItem:];
+-[_SBButterflyHomeLayoutModifier isSwitcherWindowUserInteractionEnabled];
+-[_SBButterflyHomeLayoutModifier homeScreenAlpha];
+-[_SBButterflyHomeLayoutModifier isHomeScreenContentRequired];
+-[_SBButterflyHomeLayoutModifier touchBehaviorForLayoutRole:inAppLayout:];
+-[_SBButterflyHomeLayoutModifier clippingFrameForLayoutRole:inAppLayout:atIndex:withBounds:];
+-[_SBButterflyHomeLayoutModifier homeScreenBackdropBlurType];
+-[_SBButterflyHomeLayoutModifier dockProgress];
+-[_SBButterflyHomeLayoutModifier isSwitcherWindowVisible];
+-[_SBButterflyHomeLayoutModifier activityModeForAppLayout:];
+-[_SBButterflyHomeLayoutModifier appLayoutsToCacheSnapshots];
+-[_SBButterflyHomeLayoutModifier shouldScrollViewBlockTouches];
+-[_SBButterflyHomeLayoutModifier isWallpaperRequiredForSwitcher];
+-[_SBButterflyHomeLayoutModifier wantsDockBehaviorAssertion];
+-[_SBButterflyHomeLayoutModifier isContentStatusBarVisibleForIndex:];
+-[_SBButterflyHomeLayoutModifier shouldAccessoryDrawShadowForAppLayout:];
+-[_SBButterflyHomeLayoutModifier dockUpdateMode];
+-[_SBButterflyHomeLayoutModifier shouldAllowContentViewTouchesForLayoutRole:inAppLayout:];
+-[_SBButterflyHomeLayoutModifier isScrollEnabled];
+-[_SBButterflyHomeLayoutModifier isIndexRubberbandableForSwipeToKill:];
+-[_SBButterflyHomeLayoutModifier wallpaperStyle];
+-[_SBButterflyHomeLayoutModifier activeLeafAppLayoutsReachableByKeyboardShortcut];
+-[_SBButterflyHomeLayoutModifier wallpaperScale];
+-[_SBButterflyHomeLayoutModifier destinationAppLayoutForDismissingCurrentMode];
+-[_SBButterflyHomeLayoutModifier backgroundOpacityForIndex:];
+-[_SBButterflyHomeLayoutModifier keyboardSuppressionMode];
+-[_SBButterflyHomeLayoutModifier neighboringAppLayoutsForFocusedAppLayout:];
+-[_SBButterflyHomeLayoutModifier wallpaperOverlayAlphaForIndex:];
+-[_SBButterflyHomeLayoutModifier transitionWillBegin:];
+-[_SBButterflyHomeLayoutModifier identifiersInStrip];
+-[_SBButterflyHomeLayoutModifier indexToScrollToAfterRemovingIndex:];
+-[_SBButterflyHomeLayoutModifier shadowForItem:];
+-[_SBButterflyHomeLayoutModifier visibleItems];
+-[_SBButterflyHomeLayoutModifier regionDividerOpacity];
+-[_SBButterflyHomeLayoutModifier isFocusEnabledForAppLayout:];
+-[_SBButterflyHomeLayoutModifier shouldRemoveProlongedCursorGestureFloatingDockBehaviorAssertion];
+-[_SBButterflyHomeLayoutModifier shouldUseBrightMaterialForIndex:];
+-[_SBButterflyHomeLayoutModifier isLayoutRoleKillable:inAppLayout:atIndex:];
+-[_SBButterflyHomeLayoutModifier canPerformKeyboardShortcutAction:forBundleIdentifier:];
+-[_SBButterflyHomeLayoutModifier isLayoutRoleEligibleForContentDragSpringLoading:inAppLayout:];
+-[_SBButterflyHomeLayoutModifier spaceAccessoryViewModelForItem:];
+-[_SBButterflyHomeLayoutModifier indexToScrollToAfterInsertingAtIndex:];
+-[_SBButterflyHomeLayoutModifier isItemContainerPointerInteractionEnabled];
+-[_SBButterflyHomeLayoutModifier regionDividerCenter];
+-[_SBButterflyHomeLayoutModifier appLayoutsToResignActive];
+-[_SBButterflyHomeLayoutModifier animationAttributesForItem:];
+-[_SBButterflyHomeLayoutModifier isLayoutRoleSelectable:inAppLayout:];
+-[_SBButterflyHomeLayoutModifier opacityForItem:];
+-[_SBButterflyHomeLayoutModifier appLayoutForReceivingHardwareButtonEvents];
+-[_SBButterflyHomeLayoutModifier personalityDebugColorStyleForItem:];
+-[_SBButterflyHomeLayoutModifier dimmingAlphaForItem:];
+-[_SBButterflyHomeLayoutModifier wantsRegionDivider];
+-[_SBButterflyHomeLayoutModifier lighteningAlphaForIndex:];
+-[_SBButterflyHomeLayoutModifier preferredStatusBarAxis];
+-[_SBButterflyHomeLayoutModifier perspectiveAngleForItem:];
+-[_SBButterflyHomeLayoutModifier asyncRenderingAttributesForAppLayout:];
+-[_SBButterflyHomeLayoutModifier wantsHomeScreenPointerInteractions];
+-[_SBButterflyHomeLayoutModifier shouldConfigureInAppDockHiddenAssertion];
+-[_SBButterflyHomeLayoutModifier regionDividerOptions];
+-[_SBButterflyHomeLayoutModifier preferredSnapshotOrientationForAppLayout:];
+-[_SBButterflyHomeLayoutModifier topMostItems];
+-[_SBButterflyHomeLayoutModifier shouldBringCardToFrontDuringInsertionOrRemoval];
+-[_SBButterflyHomeLayoutModifier supportsHomeAffordanceForItem:];
+-[_SBButterflyHomeLayoutModifier frameForItem:];
+-[_SBButterflyHomeLayoutModifier shouldAnimateInsertionOrRemovalOfAppLayout:atIndex:];
+-[_SBButterflyHomeLayoutModifier wantsAsynchronousSurfaceRetentionAssertion];
+-[_SBButterflyHomeLayoutModifier titleStyleForItem:];
+-[_SBButterflyHomeLayoutModifier appLayoutsToCacheFullsizeSnapshots];
+-[_SBButterflyHomeLayoutModifier isLayoutRoleDraggable:inAppLayout:];
+```

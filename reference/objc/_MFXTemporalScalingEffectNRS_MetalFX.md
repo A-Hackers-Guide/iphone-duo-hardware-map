@@ -1,0 +1,220 @@
+# `_MFXTemporalScalingEffectNRS`
+
+- Image: [`/System/Library/Frameworks/MetalFX.framework/MetalFX`](../userland/System__Library__Frameworks__MetalFX.framework__MetalFX.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `_MTLFXTemporalScaler`
+- Protocols: `MTLFXTemporalScalerSPI`
+- 52 instance variables, 55 properties, 92 instance methods, 0 class methods
+
+## Instance variables
+
+```
+_jitterOffset;
+_motionVectorScale;
+@"<MTLBuffer>" _internal_is_history_invalid;
+{?="emaFactor"f"prevExposure"@"<MTLBuffer>""currExposure"@"<MTLBuffer>""lumaLogSums"@"<MTLBuffer>""lumaLogSumKernel"@"<MTLComputePipelineState>""lumaLogSumToExposureKernel"@"<MTLComputePipelineState>""exposureToBufferKernel"@"<MTLComputePipelineState>"} _internalExposure;
+{?="colorRangeReduced"@"<MTLTexture>""dilatedFlow"@"<MTLTexture>""pixelData"@"<MTLTexture>""variance0"@"<MTLTexture>""variance1"@"<MTLTexture>""variance2"@"<MTLTexture>""kernel"@"<MTLComputePipelineState>""tileKernel"@"<MTLRenderPipelineState>""kernelUsesImageblock"B} _internalRenderResolution;
+{?="prevHistory0"@"<MTLTexture>""prevHistory1"@"<MTLTexture>""currHistory0"@"<MTLTexture>""currHistory1"@"<MTLTexture>""kernel"@"<MTLComputePipelineState>""tileKernel"@"<MTLRenderPipelineState>""kernelUsesImageblock"B"emulateSRGB"B} _internalOutputResolution;
+B _reset;
+B _reversedDepth;
+f _inputContentMinScale;
+f _inputContentMaxScale;
+f _preExposure;
+Q _colorTextureUsage;
+Q _depthTextureUsage;
+Q _motionTextureUsage;
+Q _reactiveTextureUsage;
+Q _outputTextureUsage;
+Q _inputContentWidth;
+Q _inputContentHeight;
+@"<MTLTexture>" _colorTexture;
+@"<MTLTexture>" _depthTexture;
+@"<MTLTexture>" _motionTexture;
+@"<MTLTexture>" _outputTexture;
+Q _colorTextureFormat;
+Q _depthTextureFormat;
+Q _motionTextureFormat;
+Q _outputTextureFormat;
+Q _inputWidth;
+Q _inputHeight;
+Q _outputWidth;
+Q _outputHeight;
+@"<MTLFence>" _fence;
+@"<MTLTexture>" _exposureTexture;
+@"<MTLTexture>" _debugTexture;
+@"<MTLTexture>" _reactiveMaskTexture;
+Q _executionMode;
+Q _colorContentOffsetX;
+Q _colorContentOffsetY;
+Q _depthContentOffsetX;
+Q _depthContentOffsetY;
+Q _motionContentOffsetX;
+Q _motionContentOffsetY;
+Q _reactiveMaskContentOffsetX;
+Q _reactiveMaskContentOffsetY;
+Q _outputOffsetX;
+Q _outputOffsetY;
+Q _reactiveMaskTextureFormat;
+@"<MTLTexture>" _dilatedMotionVectors;
+{CGPoint="x"d"y"d} _previousJitterOffset;
+{?="columns"[4]} _currentWorldToViewMatrix;
+{?="columns"[4]} _currentViewToClipMatrix;
+{?="columns"[4]} _previousWorldToViewMatrix;
+{?="columns"[4]} _previousViewToClipMatrix;
+```
+
+## Properties
+
+```
+@property (T{CGPoint=dd},N,V_previousJitterOffset) previousJitterOffset;
+@property (T{?=[4]},N,V_currentWorldToViewMatrix) currentWorldToViewMatrix;
+@property (T{?=[4]},N,V_currentViewToClipMatrix) currentViewToClipMatrix;
+@property (T{?=[4]},N,V_previousWorldToViewMatrix) previousWorldToViewMatrix;
+@property (T{?=[4]},N,V_previousViewToClipMatrix) previousViewToClipMatrix;
+@property (T@"<MTLTexture>",R,N,V_dilatedMotionVectors) dilatedMotionVectors;
+@property (T@"<MTLTexture>",&,N,V_debugTexture) debugTexture;
+@property (TQ,R,N,V_executionMode) executionMode;
+@property (TQ,R,N,V_colorTextureUsage) colorTextureUsage;
+@property (TQ,R,N,V_depthTextureUsage) depthTextureUsage;
+@property (TQ,R,N,V_motionTextureUsage) motionTextureUsage;
+@property (TQ,R,N) reactiveMaskTextureUsage;
+@property (TQ,R,N,V_reactiveTextureUsage) reactiveTextureUsage;
+@property (TQ,R,N,V_outputTextureUsage) outputTextureUsage;
+@property (TQ,N,V_inputContentWidth) inputContentWidth;
+@property (TQ,N,V_inputContentHeight) inputContentHeight;
+@property (TQ,N,V_colorContentOffsetX) colorContentOffsetX;
+@property (TQ,N,V_colorContentOffsetY) colorContentOffsetY;
+@property (TQ,N,V_depthContentOffsetX) depthContentOffsetX;
+@property (TQ,N,V_depthContentOffsetY) depthContentOffsetY;
+@property (TQ,N,V_motionContentOffsetX) motionContentOffsetX;
+@property (TQ,N,V_motionContentOffsetY) motionContentOffsetY;
+@property (TQ,N,V_reactiveMaskContentOffsetX) reactiveMaskContentOffsetX;
+@property (TQ,N,V_reactiveMaskContentOffsetY) reactiveMaskContentOffsetY;
+@property (TQ,N,V_outputOffsetX) outputOffsetX;
+@property (TQ,N,V_outputOffsetY) outputOffsetY;
+@property (T@"<MTLTexture>",&,N,V_colorTexture) colorTexture;
+@property (T@"<MTLTexture>",&,N,V_depthTexture) depthTexture;
+@property (T@"<MTLTexture>",&,N,V_motionTexture) motionTexture;
+@property (T@"<MTLTexture>",&,N,V_outputTexture) outputTexture;
+@property (T@"<MTLTexture>",&,N,V_exposureTexture) exposureTexture;
+@property (T@"<MTLTexture>",&,N,V_reactiveMaskTexture) reactiveMaskTexture;
+@property (Tf,N,V_preExposure) preExposure;
+@property (Tf,N) jitterOffsetX;
+@property (Tf,N) jitterOffsetY;
+@property (Tf,N) motionVectorScaleX;
+@property (Tf,N) motionVectorScaleY;
+@property (TB,N,V_reset) reset;
+@property (TB,N,GisDepthReversed,V_reversedDepth) depthReversed;
+@property (TQ,R,N,V_colorTextureFormat) colorTextureFormat;
+@property (TQ,R,N,V_depthTextureFormat) depthTextureFormat;
+@property (TQ,R,N,V_motionTextureFormat) motionTextureFormat;
+@property (TQ,R,N,V_reactiveMaskTextureFormat) reactiveMaskTextureFormat;
+@property (TQ,R,N,V_outputTextureFormat) outputTextureFormat;
+@property (TQ,R,N,V_inputWidth) inputWidth;
+@property (TQ,R,N,V_inputHeight) inputHeight;
+@property (TQ,R,N,V_outputWidth) outputWidth;
+@property (TQ,R,N,V_outputHeight) outputHeight;
+@property (Tf,R,N,V_inputContentMinScale) inputContentMinScale;
+@property (Tf,R,N,V_inputContentMaxScale) inputContentMaxScale;
+@property (T@"<MTLFence>",&,N,V_fence) fence;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[_MFXTemporalScalingEffectNRS outputHeight];
+-[_MFXTemporalScalingEffectNRS initWithDevice:descriptor:];
+-[_MFXTemporalScalingEffectNRS setReset:];
+-[_MFXTemporalScalingEffectNRS reset];
+-[_MFXTemporalScalingEffectNRS setOutputTexture:];
+-[_MFXTemporalScalingEffectNRS outputTexture];
+-[_MFXTemporalScalingEffectNRS outputWidth];
+-[_MFXTemporalScalingEffectNRS inputHeight];
+-[_MFXTemporalScalingEffectNRS encodeToCommandQueue:];
+-[_MFXTemporalScalingEffectNRS inputWidth];
+-[_MFXTemporalScalingEffectNRS depthTexture];
+-[_MFXTemporalScalingEffectNRS encodeToCommandBuffer:];
+-[_MFXTemporalScalingEffectNRS setColorTexture:];
+-[_MFXTemporalScalingEffectNRS setDepthReversed:];
+-[_MFXTemporalScalingEffectNRS setDepthTexture:];
+-[_MFXTemporalScalingEffectNRS setJitterOffsetX:];
+-[_MFXTemporalScalingEffectNRS setJitterOffsetY:];
+-[_MFXTemporalScalingEffectNRS setMotionTexture:];
+-[_MFXTemporalScalingEffectNRS setMotionVectorScaleX:];
+-[_MFXTemporalScalingEffectNRS setMotionVectorScaleY:];
+-[_MFXTemporalScalingEffectNRS colorTexture];
+-[_MFXTemporalScalingEffectNRS debugTexture];
+-[_MFXTemporalScalingEffectNRS setPreExposure:];
+-[_MFXTemporalScalingEffectNRS exposureTexture];
+-[_MFXTemporalScalingEffectNRS isDepthReversed];
+-[_MFXTemporalScalingEffectNRS colorContentOffsetX];
+-[_MFXTemporalScalingEffectNRS colorContentOffsetY];
+-[_MFXTemporalScalingEffectNRS colorTextureFormat];
+-[_MFXTemporalScalingEffectNRS colorTextureUsage];
+-[_MFXTemporalScalingEffectNRS currentViewToClipMatrix];
+-[_MFXTemporalScalingEffectNRS currentWorldToViewMatrix];
+-[_MFXTemporalScalingEffectNRS depthContentOffsetX];
+-[_MFXTemporalScalingEffectNRS depthContentOffsetY];
+-[_MFXTemporalScalingEffectNRS depthTextureFormat];
+-[_MFXTemporalScalingEffectNRS depthTextureUsage];
+-[_MFXTemporalScalingEffectNRS dilatedMotionVectors];
+-[_MFXTemporalScalingEffectNRS executionMode];
+-[_MFXTemporalScalingEffectNRS fence];
+-[_MFXTemporalScalingEffectNRS inputContentHeight];
+-[_MFXTemporalScalingEffectNRS inputContentMaxScale];
+-[_MFXTemporalScalingEffectNRS inputContentMinScale];
+-[_MFXTemporalScalingEffectNRS inputContentWidth];
+-[_MFXTemporalScalingEffectNRS jitterOffset];
+-[_MFXTemporalScalingEffectNRS jitterOffsetX];
+-[_MFXTemporalScalingEffectNRS jitterOffsetY];
+-[_MFXTemporalScalingEffectNRS motionContentOffsetX];
+-[_MFXTemporalScalingEffectNRS motionContentOffsetY];
+-[_MFXTemporalScalingEffectNRS motionTexture];
+-[_MFXTemporalScalingEffectNRS motionTextureFormat];
+-[_MFXTemporalScalingEffectNRS motionTextureUsage];
+-[_MFXTemporalScalingEffectNRS motionVectorScale];
+-[_MFXTemporalScalingEffectNRS motionVectorScaleX];
+-[_MFXTemporalScalingEffectNRS motionVectorScaleY];
+-[_MFXTemporalScalingEffectNRS outputOffsetX];
+-[_MFXTemporalScalingEffectNRS outputOffsetY];
+-[_MFXTemporalScalingEffectNRS outputTextureFormat];
+-[_MFXTemporalScalingEffectNRS outputTextureUsage];
+-[_MFXTemporalScalingEffectNRS preExposure];
+-[_MFXTemporalScalingEffectNRS previousJitterOffset];
+-[_MFXTemporalScalingEffectNRS previousViewToClipMatrix];
+-[_MFXTemporalScalingEffectNRS previousWorldToViewMatrix];
+-[_MFXTemporalScalingEffectNRS reactiveMaskContentOffsetX];
+-[_MFXTemporalScalingEffectNRS reactiveMaskContentOffsetY];
+-[_MFXTemporalScalingEffectNRS reactiveMaskTexture];
+-[_MFXTemporalScalingEffectNRS reactiveMaskTextureFormat];
+-[_MFXTemporalScalingEffectNRS reactiveMaskTextureUsage];
+-[_MFXTemporalScalingEffectNRS reactiveTextureUsage];
+-[_MFXTemporalScalingEffectNRS reversedDepth];
+-[_MFXTemporalScalingEffectNRS setColorContentOffsetX:];
+-[_MFXTemporalScalingEffectNRS setColorContentOffsetY:];
+-[_MFXTemporalScalingEffectNRS setCurrentViewToClipMatrix:];
+-[_MFXTemporalScalingEffectNRS setCurrentWorldToViewMatrix:];
+-[_MFXTemporalScalingEffectNRS setDebugTexture:];
+-[_MFXTemporalScalingEffectNRS setDepthContentOffsetX:];
+-[_MFXTemporalScalingEffectNRS setDepthContentOffsetY:];
+-[_MFXTemporalScalingEffectNRS setExposureTexture:];
+-[_MFXTemporalScalingEffectNRS setFence:];
+-[_MFXTemporalScalingEffectNRS setInputContentHeight:];
+-[_MFXTemporalScalingEffectNRS setInputContentWidth:];
+-[_MFXTemporalScalingEffectNRS setJitterOffset:];
+-[_MFXTemporalScalingEffectNRS setMotionContentOffsetX:];
+-[_MFXTemporalScalingEffectNRS setMotionContentOffsetY:];
+-[_MFXTemporalScalingEffectNRS setMotionVectorScale:];
+-[_MFXTemporalScalingEffectNRS setOutputOffsetX:];
+-[_MFXTemporalScalingEffectNRS setOutputOffsetY:];
+-[_MFXTemporalScalingEffectNRS setPreviousJitterOffset:];
+-[_MFXTemporalScalingEffectNRS setPreviousViewToClipMatrix:];
+-[_MFXTemporalScalingEffectNRS setPreviousWorldToViewMatrix:];
+-[_MFXTemporalScalingEffectNRS setReactiveMaskContentOffsetX:];
+-[_MFXTemporalScalingEffectNRS setReactiveMaskContentOffsetY:];
+-[_MFXTemporalScalingEffectNRS setReactiveMaskTexture:];
+-[_MFXTemporalScalingEffectNRS setReversedDepth:];
+```

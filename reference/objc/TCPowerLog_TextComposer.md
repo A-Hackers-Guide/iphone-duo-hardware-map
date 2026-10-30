@@ -1,0 +1,12 @@
+# `TCPowerLog`
+
+- Image: [`/System/Library/PrivateFrameworks/TextComposer.framework/TextComposer`](../userland/System__Library__PrivateFrameworks__TextComposer.framework__TextComposer.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- 0 instance variables, 0 properties, 2 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[TCPowerLog logSmartReplyQueryWithEventType:withApp:withQueryType:withInputTokenCount:withOutputTokenCount:];
+-[TCPowerLog processHasPerfPowerServicesEntitlement];
+```

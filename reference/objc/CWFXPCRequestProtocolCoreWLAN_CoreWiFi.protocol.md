@@ -1,0 +1,72 @@
+# `CWFXPCRequestProtocolCoreWLAN` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/CoreWiFi.framework/CoreWiFi`](../userland/System__Library__PrivateFrameworks__CoreWiFi.framework__CoreWiFi.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- 0 instance variables, 0 properties, 63 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[CWFXPCRequestProtocolCoreWLAN reportQuickProbeResult:networkProfile:requestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryPowersaveWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryPowerDebugInfoWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryMaxLinkSpeedWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryBSSIDWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN setCarPlayInternet:requestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryCSIFWStatsWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryPowerTableInfoWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN stopMonitoringEvent:requestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryMaxNSSForAPWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryKnownNetworkProfilesWithProperties:requestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryPowerWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN updateKnownNetworkProfile:properties:OSSpecificKeys:requestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryInterfaceNamesWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN disassociateWithReason:requestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN cancelRequestsWithUUID:reply:];
+-[CWFXPCRequestProtocolCoreWLAN querySupportedPHYModesWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryCSIStatsIncludingAOP2:requestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN startMonitoringEvent:requestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryRSSIWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN querySSIDWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryCSIConfigWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryWoWEnabledWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryWEPSubtypeWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN requestAOP2CSIStatsWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryWAPISubtypeWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryAWDLOpModeWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryInterfaceNameWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryCurrentScanResultWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN querySecurityWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryIsQuickProbeRequiredForNetworkProfile:requestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryChannelWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryTxRateWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryMCSIndexWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryVirtualInterfaceNamesWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN setPower:requestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryStateWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryCountryCodeWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryPowerStateWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN performScanWithParameters:requestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryOpModeWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryParentInterfaceNameWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryAWDLPeerTrafficRegistrationWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryTxNSSWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryHardwareSupportedChannelsWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryIsNetworkServiceEnabledWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryPHYModeWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryTxPowerWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN associateWithParameters:requestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryInterfaceCapabilitiesWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryMACAddressWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN removeKnownNetworkProfile:reason:requestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN addKnownNetworkProfile:requestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN updateSoftAPBand:requestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryAuthTypeWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryHardwareMACAddressWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN stopMonitoringAllEventsWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryNoiseWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN setChannel:requestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryVirtualInterfaceRoleWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryNumberOfSpatialStreamsWithRequestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN querySupportedChannelsWithCountryCode:requestParams:reply:];
+-[CWFXPCRequestProtocolCoreWLAN queryAWDLSidecarDiagnosticsWithRequestParams:reply:];
+```

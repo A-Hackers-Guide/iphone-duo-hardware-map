@@ -1,0 +1,216 @@
+# `EAAccessoryInternal`
+
+- Image: [`/System/Library/Frameworks/ExternalAccessory.framework/ExternalAccessory`](../userland/System__Library__Frameworks__ExternalAccessory.framework__ExternalAccessory.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- 49 instance variables, 48 properties, 99 instance methods, 0 class methods
+
+## Instance variables
+
+```
+B _connected;
+I _connectionID;
+@"NSString" _name;
+@"NSString" _manufacturer;
+@"NSString" _modelNumber;
+@"NSString" _serialNumber;
+@"NSString" _firmwareRevisionActive;
+@"NSString" _firmwareRevisionPending;
+@"NSString" _hardwareRevision;
+@"NSString" _dockType;
+q _transportType;
+@"NSString" _macAddress;
+@"NSString" _preferredApp;
+@"NSData" _certSerial;
+@"NSData" _certData;
+@"NSString" _ppid;
+@"NSString" _regionCode;
+i _classType;
+@"NSDictionary" _audioPorts;
+I _capabilities;
+B _notPresentInIAPAccessoriesArray;
+@"NSLock" _locationLock;
+@"NSMutableArray" _sessionsList;
+@"NSArray" _eqNames;
+i _locationSentenceTypesMask;
+@"NSDictionary" _vehicleInfoSupportedTypes;
+@"NSDictionary" _vehicleInfoInitialData;
+@"NSArray" _cameraComponents;
+@"NSDictionary" _protocols;
+@"NSNumber" _highestXPCDelay;
+@"NSNumber" _highestFrameworkDelay;
+@"NSNumber" _averageXPCDelay;
+@"NSNumber" _averageFrameworkDelay;
+@"<EAAccessoryDelegate>" _delegate;
+B _pointOfInterestHandoffEnabled;
+B _hasIPConnection;
+B _isAvailableOverBonjour;
+B _createdByCoreAccessories;
+I _eqIndex;
+@"NSMutableArray" _enqueuedNMEASentences;
+@"NSMutableArray" _enqueuedNMEATimestamps;
+Q _destinationSharingOptions;
+@"NSDictionary" _protocolDetails;
+@"NSString" _coreAccessoryPrimaryUUID;
+Q _nmeaSentenceAddCounter;
+Q _nmeaSentenceGetCounter;
+@"NSString" _bonjourName;
+@? _pairingCompletionBlock;
+@? _WiFiCredentialsCompletionBlock;
+```
+
+## Properties
+
+```
+@property (TB,V_connected) connected;
+@property (TI,V_connectionID) connectionID;
+@property (T@"NSString",C,V_manufacturer) manufacturer;
+@property (T@"NSString",C,V_name) name;
+@property (T@"NSString",C,V_modelNumber) modelNumber;
+@property (T@"NSString",C,V_serialNumber) serialNumber;
+@property (T@"NSString",C,V_firmwareRevisionActive) firmwareRevisionActive;
+@property (T@"NSString",C,V_firmwareRevisionPending) firmwareRevisionPending;
+@property (T@"NSString",C,V_hardwareRevision) hardwareRevision;
+@property (T@"NSString",C,V_dockType) dockType;
+@property (Tq,V_transportType) transportType;
+@property (T@"NSString",C,V_macAddress) macAddress;
+@property (T@"NSString",C,V_preferredApp) preferredApp;
+@property (T@"NSData",C,V_certSerial) certSerial;
+@property (T@"NSData",C,V_certData) certData;
+@property (T@"NSString",C,V_ppid) ppid;
+@property (T@"NSString",C,V_regionCode) regionCode;
+@property (T@"NSDictionary",C,V_protocolDetails) protocolDetails;
+@property (T@"NSString",C,V_coreAccessoryPrimaryUUID) coreAccessoryPrimaryUUID;
+@property (Ti,V_classType) classType;
+@property (T@"NSDictionary",&,V_audioPorts) audioPorts;
+@property (TI,V_capabilities) capabilities;
+@property (TB,V_notPresentInIAPAccessoriesArray) notPresentInIAPAccessoriesArray;
+@property (T@"NSArray",R) sessionsList;
+@property (T@"NSArray",&,V_eqNames) eqNames;
+@property (TI,V_eqIndex) eqIndex;
+@property (Ti,V_locationSentenceTypesMask) locationSentenceTypesMask;
+@property (T@"NSDictionary",&,V_vehicleInfoSupportedTypes) vehicleInfoSupportedTypes;
+@property (T@"NSDictionary",&,V_vehicleInfoInitialData) vehicleInfoInitialData;
+@property (T@"NSArray",&,V_cameraComponents) cameraComponents;
+@property (T@"NSMutableArray",&,V_enqueuedNMEASentences) enqueuedNMEASentences;
+@property (T@"NSMutableArray",&,V_enqueuedNMEATimestamps) enqueuedNMEATimestamps;
+@property (TQ,V_nmeaSentenceAddCounter) nmeaSentenceAddCounter;
+@property (TQ,V_nmeaSentenceGetCounter) nmeaSentenceGetCounter;
+@property (T@"NSDictionary",&,V_protocols) protocols;
+@property (T@"NSNumber",&,V_highestXPCDelay) highestXPCDelay;
+@property (T@"NSNumber",&,V_highestFrameworkDelay) highestFrameworkDelay;
+@property (T@"NSNumber",&,V_averageXPCDelay) averageXPCDelay;
+@property (T@"NSNumber",&,V_averageFrameworkDelay) averageFrameworkDelay;
+@property (T@"<EAAccessoryDelegate>",V_delegate) delegate;
+@property (T@"NSString",C,V_bonjourName) bonjourName;
+@property (TB,V_hasIPConnection) hasIPConnection;
+@property (TB,V_isAvailableOverBonjour) isAvailableOverBonjour;
+@property (TB,V_pointOfInterestHandoffEnabled) pointOfInterestHandoffEnabled;
+@property (TB,V_createdByCoreAccessories) createdByCoreAccessories;
+@property (T@?,C,V_pairingCompletionBlock) pairingCompletionBlock;
+@property (T@?,C,V_WiFiCredentialsCompletionBlock) WiFiCredentialsCompletionBlock;
+@property (TQ,V_destinationSharingOptions) destinationSharingOptions;
+```
+
+## Instance methods
+
+```
+-[EAAccessoryInternal modelNumber];
+-[EAAccessoryInternal connected];
+-[EAAccessoryInternal regionCode];
+-[EAAccessoryInternal setConnected:];
+-[EAAccessoryInternal setSerialNumber:];
+-[EAAccessoryInternal macAddress];
+-[EAAccessoryInternal setRegionCode:];
+-[EAAccessoryInternal setTransportType:];
+-[EAAccessoryInternal init];
+-[EAAccessoryInternal removeSession:];
+-[EAAccessoryInternal setModelNumber:];
+-[EAAccessoryInternal dealloc];
+-[EAAccessoryInternal transportType];
+-[EAAccessoryInternal manufacturer];
+-[EAAccessoryInternal setMacAddress:];
+-[EAAccessoryInternal serialNumber];
+-[EAAccessoryInternal setDelegate:];
+-[EAAccessoryInternal bonjourName];
+-[EAAccessoryInternal ppid];
+-[EAAccessoryInternal delegate];
+-[EAAccessoryInternal capabilities];
+-[EAAccessoryInternal setName:];
+-[EAAccessoryInternal connectionID];
+-[EAAccessoryInternal setPpid:];
+-[EAAccessoryInternal setCapabilities:];
+-[EAAccessoryInternal name];
+-[EAAccessoryInternal setBonjourName:];
+-[EAAccessoryInternal addSession:];
+-[EAAccessoryInternal setManufacturer:];
+-[EAAccessoryInternal classType];
+-[EAAccessoryInternal setConnectionID:];
+-[EAAccessoryInternal certData];
+-[EAAccessoryInternal protocols];
+-[EAAccessoryInternal setProtocols:];
+-[EAAccessoryInternal destinationSharingOptions];
+-[EAAccessoryInternal hardwareRevision];
+-[EAAccessoryInternal vehicleInfoInitialData];
+-[EAAccessoryInternal firmwareRevisionActive];
+-[EAAccessoryInternal firmwareRevisionPending];
+-[EAAccessoryInternal setDestinationSharingOptions:];
+-[EAAccessoryInternal setFirmwareRevisionActive:];
+-[EAAccessoryInternal setFirmwareRevisionPending:];
+-[EAAccessoryInternal setHardwareRevision:];
+-[EAAccessoryInternal averageXPCDelay];
+-[EAAccessoryInternal eqNames];
+-[EAAccessoryInternal hasIPConnection];
+-[EAAccessoryInternal notPresentInIAPAccessoriesArray];
+-[EAAccessoryInternal eqIndex];
+-[EAAccessoryInternal highestXPCDelay];
+-[EAAccessoryInternal protocolDetails];
+-[EAAccessoryInternal WiFiCredentialsCompletionBlock];
+-[EAAccessoryInternal audioPorts];
+-[EAAccessoryInternal averageFrameworkDelay];
+-[EAAccessoryInternal cameraComponents];
+-[EAAccessoryInternal certSerial];
+-[EAAccessoryInternal coreAccessoryPrimaryUUID];
+-[EAAccessoryInternal createdByCoreAccessories];
+-[EAAccessoryInternal dockType];
+-[EAAccessoryInternal enqueuedNMEASentences];
+-[EAAccessoryInternal enqueuedNMEATimestamps];
+-[EAAccessoryInternal highestFrameworkDelay];
+-[EAAccessoryInternal isAvailableOverBonjour];
+-[EAAccessoryInternal locationSentenceTypesMask];
+-[EAAccessoryInternal nmeaSentenceAddCounter];
+-[EAAccessoryInternal nmeaSentenceGetCounter];
+-[EAAccessoryInternal pairingCompletionBlock];
+-[EAAccessoryInternal pointOfInterestHandoffEnabled];
+-[EAAccessoryInternal preferredApp];
+-[EAAccessoryInternal sessionsList];
+-[EAAccessoryInternal setAudioPorts:];
+-[EAAccessoryInternal setAverageFrameworkDelay:];
+-[EAAccessoryInternal setAverageXPCDelay:];
+-[EAAccessoryInternal setCameraComponents:];
+-[EAAccessoryInternal setCertData:];
+-[EAAccessoryInternal setCertSerial:];
+-[EAAccessoryInternal setClassType:];
+-[EAAccessoryInternal setCoreAccessoryPrimaryUUID:];
+-[EAAccessoryInternal setCreatedByCoreAccessories:];
+-[EAAccessoryInternal setDockType:];
+-[EAAccessoryInternal setEnqueuedNMEASentences:];
+-[EAAccessoryInternal setEnqueuedNMEATimestamps:];
+-[EAAccessoryInternal setEqIndex:];
+-[EAAccessoryInternal setEqNames:];
+-[EAAccessoryInternal setHasIPConnection:];
+-[EAAccessoryInternal setHighestFrameworkDelay:];
+-[EAAccessoryInternal setHighestXPCDelay:];
+-[EAAccessoryInternal setIsAvailableOverBonjour:];
+-[EAAccessoryInternal setLocationSentenceTypesMask:];
+-[EAAccessoryInternal setNmeaSentenceAddCounter:];
+-[EAAccessoryInternal setNmeaSentenceGetCounter:];
+-[EAAccessoryInternal setNotPresentInIAPAccessoriesArray:];
+-[EAAccessoryInternal setPairingCompletionBlock:];
+-[EAAccessoryInternal setPointOfInterestHandoffEnabled:];
+-[EAAccessoryInternal setPreferredApp:];
+-[EAAccessoryInternal setProtocolDetails:];
+-[EAAccessoryInternal setVehicleInfoInitialData:];
+-[EAAccessoryInternal setVehicleInfoSupportedTypes:];
+-[EAAccessoryInternal setWiFiCredentialsCompletionBlock:];
+-[EAAccessoryInternal vehicleInfoSupportedTypes];
+```

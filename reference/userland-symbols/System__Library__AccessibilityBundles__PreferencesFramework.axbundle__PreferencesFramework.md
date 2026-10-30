@@ -1,0 +1,497 @@
+# Symbols: `/System/Library/AccessibilityBundles/PreferencesFramework.axbundle/PreferencesFramework`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__AccessibilityBundles__PreferencesFramework.axbundle__PreferencesFramework.md). **[DSC]**
+
+176 public symbols, 305 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1ee297868  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXPreferencesFrameworkGlue
+0x1ee297728  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AlphanumericPINTextFieldAccessibility
+0x1ee297700  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_DevicePINKeypadAccessibility
+0x1ee2976d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_DevicePINPaneAccessibility
+0x1ef4bd278  __AUTH,__objc_data  _OBJC_CLASS_$_DiagnosticDataControllerAccessibility
+0x1ee2976b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FailureBarViewAccessibility
+0x1ef4bd138  __AUTH,__objc_data  _OBJC_CLASS_$_PINKeypadAccessibility
+0x1ee297688  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PINViewAccessibility
+0x1ee297660  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSBadgedTableCellAccessibility
+0x1ee297638  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSCapacityBarCellAccessibility
+0x1ee297610  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSControlTableCellAccessibility
+0x1ee2975e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSDateTimePickerCellAccessibility
+0x1ee2975c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSEditableTableCellAccessibility
+0x1ee297598  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSFooterHyperlinkViewAccessibility
+0x1ee297570  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSKeyboardNavigationSearchBarAccessibility
+0x1ee297548  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSKeychainSyncSecurityCodeControllerAccessibility
+0x1ee297520  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSListControllerAccessibility
+0x1ee2974f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSPasscodeFieldAccessibility
+0x1ee2963f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSReversedSubtitleDisclosureTableCellAccessibility
+0x1ee2974d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSRootControllerAccessibility
+0x1ee2974a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSSegmentTableCellAccessibility
+0x1ee297480  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSSegmentableSliderAccessibility
+0x1ee297458  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSSetupControllerAccessibility
+0x1ee297430  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSSliderTableCellAccessibility
+0x1ee2977f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSSpecifierAccessibility
+0x1ee2963c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSSpecifierContentConfigurationCellAccessibility
+0x1ee2963a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSSpecifierDeleteButtonContentConfigurationCellAccessibility
+0x1ee296418  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSSpecifierSliderConfigurationCellAccessibility
+0x1ee296378  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSSpecifierTimeRangeContentConfigurationCellAccessibility
+0x1ee296350  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSSpecifierToggleContentConfigurationCellAccessibility
+0x1ef4bd1d8  __AUTH,__objc_data  _OBJC_CLASS_$_PSStaticTextTableCellAccessibility
+0x1ee297408  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSSubtitleSwitchTableCellAccessibility
+0x1ef4bd098  __AUTH,__objc_data  _OBJC_CLASS_$_PSSwitchTableCellAccessibility
+0x1ee2973e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSTableCellAccessibility
+0x1ee2973b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSTimeRangeCellAccessibility
+0x1ee297390  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSUsageBundleCellAccessibility
+0x1ee297368  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSUsageSizeHeaderAccessibility
+0x1ee2964b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PSViewControllerAccessibility
+0x1ee297840  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PreferencesPSTableCellAccessibility
+0x1ee297340  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PrefsUILinkLabelAccessibility
+0x1ee297318  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SUIKSearchResultCollectionViewListCellAccessibility
+0x1ee296328  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UISplitViewControllerPanelImplAccessibility__Preferences__UIKit
+0x1ee2972f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITableViewAccessibility__Preferences__UIKit
+0x1ee2972c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITableViewCellAccessibility__Preferences__UIKit
+0x1ee2972a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___AlphanumericPINTextFieldAccessibility_super
+0x1ee297278  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___DevicePINKeypadAccessibility_super
+0x1ee297250  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___DevicePINPaneAccessibility_super
+0x1ef4bd250  __AUTH,__objc_data  _OBJC_CLASS_$___DiagnosticDataControllerAccessibility_super
+0x1ee297228  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___FailureBarViewAccessibility_super
+0x1ef4bd110  __AUTH,__objc_data  _OBJC_CLASS_$___PINKeypadAccessibility_super
+0x1ee297200  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PINViewAccessibility_super
+0x1ee2971d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSBadgedTableCellAccessibility_super
+0x1ee2971b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSCapacityBarCellAccessibility_super
+0x1ee297188  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSControlTableCellAccessibility_super
+0x1ee297160  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSDateTimePickerCellAccessibility_super
+0x1ee297138  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSEditableTableCellAccessibility_super
+0x1ee297110  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSFooterHyperlinkViewAccessibility_super
+0x1ee2970e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSKeyboardNavigationSearchBarAccessibility_super
+0x1ee2970c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSKeychainSyncSecurityCodeControllerAccessibility_super
+0x1ee297098  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSListControllerAccessibility_super
+0x1ee297070  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSPasscodeFieldAccessibility_super
+0x1ee296300  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSReversedSubtitleDisclosureTableCellAccessibility_super
+0x1ee297048  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSRootControllerAccessibility_super
+0x1ee297020  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSSegmentTableCellAccessibility_super
+0x1ee296ff8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSSegmentableSliderAccessibility_super
+0x1ee296fd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSSetupControllerAccessibility_super
+0x1ee296fa8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSSliderTableCellAccessibility_super
+0x1ee296f80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSSpecifierAccessibility_super
+0x1ee2962d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSSpecifierContentConfigurationCellAccessibility_super
+0x1ee2962b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSSpecifierDeleteButtonContentConfigurationCellAccessibility_super
+0x1ee296288  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSSpecifierSliderConfigurationCellAccessibility_super
+0x1ee296260  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSSpecifierTimeRangeContentConfigurationCellAccessibility_super
+0x1ee296238  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSSpecifierToggleContentConfigurationCellAccessibility_super
+0x1ef4bd1b0  __AUTH,__objc_data  _OBJC_CLASS_$___PSStaticTextTableCellAccessibility_super
+0x1ee296f58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSSubtitleSwitchTableCellAccessibility_super
+0x1ef4bd070  __AUTH,__objc_data  _OBJC_CLASS_$___PSSwitchTableCellAccessibility_super
+0x1ee296f30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSTableCellAccessibility_super
+0x1ee296f08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSTimeRangeCellAccessibility_super
+0x1ee296ee0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSUsageBundleCellAccessibility_super
+0x1ee296eb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSUsageSizeHeaderAccessibility_super
+0x1ee296490  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PSViewControllerAccessibility_super
+0x1ee296e90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PreferencesPSTableCellAccessibility_super
+0x1ee296e68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PrefsUILinkLabelAccessibility_super
+0x1ee296e40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SUIKSearchResultCollectionViewListCellAccessibility_super
+0x1ee296210  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___UISplitViewControllerPanelImplAccessibility__Preferences__UIKit_super
+0x1ee2977c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___UITableViewAccessibility__Preferences__UIKit_super
+0x1ee2977a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___UITableViewCellAccessibility__Preferences__UIKit_super
+0x1ee297818  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXPreferencesFrameworkGlue
+0x1ee296e18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AlphanumericPINTextFieldAccessibility
+0x1ee296df0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_DevicePINKeypadAccessibility
+0x1ee296dc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_DevicePINPaneAccessibility
+0x1ef4bd2a0  __AUTH,__objc_data  _OBJC_METACLASS_$_DiagnosticDataControllerAccessibility
+0x1ee296da0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FailureBarViewAccessibility
+0x1ef4bd160  __AUTH,__objc_data  _OBJC_METACLASS_$_PINKeypadAccessibility
+0x1ee296d78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PINViewAccessibility
+0x1ee296d50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSBadgedTableCellAccessibility
+0x1ee296d28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSCapacityBarCellAccessibility
+0x1ee296d00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSControlTableCellAccessibility
+0x1ee296cd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSDateTimePickerCellAccessibility
+0x1ee297778  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSEditableTableCellAccessibility
+0x1ee296cb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSFooterHyperlinkViewAccessibility
+0x1ee296c88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSKeyboardNavigationSearchBarAccessibility
+0x1ee296c60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSKeychainSyncSecurityCodeControllerAccessibility
+0x1ee296c38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSListControllerAccessibility
+0x1ee296c10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSPasscodeFieldAccessibility
+0x1ee2961e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSReversedSubtitleDisclosureTableCellAccessibility
+0x1ee296be8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSRootControllerAccessibility
+0x1ee296bc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSSegmentTableCellAccessibility
+0x1ee296b98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSSegmentableSliderAccessibility
+0x1ee296b70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSSetupControllerAccessibility
+0x1ee296b48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSSliderTableCellAccessibility
+0x1ee296b20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSSpecifierAccessibility
+0x1ee2961c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSSpecifierContentConfigurationCellAccessibility
+0x1ee296198  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSSpecifierDeleteButtonContentConfigurationCellAccessibility
+0x1ee296170  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSSpecifierSliderConfigurationCellAccessibility
+0x1ee296148  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSSpecifierTimeRangeContentConfigurationCellAccessibility
+0x1ee296120  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSSpecifierToggleContentConfigurationCellAccessibility
+0x1ef4bd200  __AUTH,__objc_data  _OBJC_METACLASS_$_PSStaticTextTableCellAccessibility
+0x1ee296af8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSSubtitleSwitchTableCellAccessibility
+0x1ef4bd0c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PSSwitchTableCellAccessibility
+0x1ee296ad0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSTableCellAccessibility
+0x1ee296aa8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSTimeRangeCellAccessibility
+0x1ee296a80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSUsageBundleCellAccessibility
+0x1ee296a58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSUsageSizeHeaderAccessibility
+0x1ee296468  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PSViewControllerAccessibility
+0x1ee297750  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PreferencesPSTableCellAccessibility
+0x1ee296a30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PrefsUILinkLabelAccessibility
+0x1ee296a08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SUIKSearchResultCollectionViewListCellAccessibility
+0x1ee2960f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UISplitViewControllerPanelImplAccessibility__Preferences__UIKit
+0x1ee2969e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UITableViewAccessibility__Preferences__UIKit
+0x1ee2969b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UITableViewCellAccessibility__Preferences__UIKit
+0x1ee296990  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___AlphanumericPINTextFieldAccessibility_super
+0x1ee296968  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___DevicePINKeypadAccessibility_super
+0x1ee296940  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___DevicePINPaneAccessibility_super
+0x1ef4bd228  __AUTH,__objc_data  _OBJC_METACLASS_$___DiagnosticDataControllerAccessibility_super
+0x1ee296918  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___FailureBarViewAccessibility_super
+0x1ef4bd0e8  __AUTH,__objc_data  _OBJC_METACLASS_$___PINKeypadAccessibility_super
+0x1ee2968f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PINViewAccessibility_super
+0x1ee2968c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSBadgedTableCellAccessibility_super
+0x1ee2968a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSCapacityBarCellAccessibility_super
+0x1ee296878  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSControlTableCellAccessibility_super
+0x1ee296850  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSDateTimePickerCellAccessibility_super
+0x1ee296828  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSEditableTableCellAccessibility_super
+0x1ee296800  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSFooterHyperlinkViewAccessibility_super
+0x1ee2967d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSKeyboardNavigationSearchBarAccessibility_super
+0x1ee2967b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSKeychainSyncSecurityCodeControllerAccessibility_super
+0x1ee296788  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSListControllerAccessibility_super
+0x1ee296760  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSPasscodeFieldAccessibility_super
+0x1ee2960d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSReversedSubtitleDisclosureTableCellAccessibility_super
+0x1ee296738  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSRootControllerAccessibility_super
+0x1ee296710  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSSegmentTableCellAccessibility_super
+0x1ee2966e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSSegmentableSliderAccessibility_super
+0x1ee2966c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSSetupControllerAccessibility_super
+0x1ee296698  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSSliderTableCellAccessibility_super
+0x1ee296670  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSSpecifierAccessibility_super
+0x1ee2960a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSSpecifierContentConfigurationCellAccessibility_super
+0x1ee296080  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSSpecifierDeleteButtonContentConfigurationCellAccessibility_super
+0x1ee296058  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSSpecifierSliderConfigurationCellAccessibility_super
+0x1ee296030  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSSpecifierTimeRangeContentConfigurationCellAccessibility_super
+0x1ee296008  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSSpecifierToggleContentConfigurationCellAccessibility_super
+0x1ef4bd188  __AUTH,__objc_data  _OBJC_METACLASS_$___PSStaticTextTableCellAccessibility_super
+0x1ee296648  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSSubtitleSwitchTableCellAccessibility_super
+0x1ef4bd048  __AUTH,__objc_data  _OBJC_METACLASS_$___PSSwitchTableCellAccessibility_super
+0x1ee296620  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSTableCellAccessibility_super
+0x1ee2965f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSTimeRangeCellAccessibility_super
+0x1ee2965d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSUsageBundleCellAccessibility_super
+0x1ee2965a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSUsageSizeHeaderAccessibility_super
+0x1ee296440  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PSViewControllerAccessibility_super
+0x1ee296580  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PreferencesPSTableCellAccessibility_super
+0x1ee296558  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PrefsUILinkLabelAccessibility_super
+0x1ee296530  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SUIKSearchResultCollectionViewListCellAccessibility_super
+0x1ee295fe0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___UISplitViewControllerPanelImplAccessibility__Preferences__UIKit_super
+0x1ee296508  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___UITableViewAccessibility__Preferences__UIKit_super
+0x1ee2964e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___UITableViewCellAccessibility__Preferences__UIKit_super
+0x1ee297890  __DATA_DIRTY,__common  __Failover
+0x187fb57c4  __TEXT,__text  _accessibilityLocalizedString
+```
+
+## Private
+
+```
+0x187fb5028  __TEXT,__text  +[AXPreferencesFrameworkGlue accessibilityInitializeBundle]
+0x187fb50dc  __TEXT,__text  ___59+[AXPreferencesFrameworkGlue accessibilityInitializeBundle]_block_invoke
+0x187fb53d0  __TEXT,__text  ___59+[AXPreferencesFrameworkGlue accessibilityInitializeBundle]_block_invoke_2
+0x187fb5418  __TEXT,__text  ___59+[AXPreferencesFrameworkGlue accessibilityInitializeBundle]_block_invoke_3
+0x187fb574c  __TEXT,__text  ___59+[AXPreferencesFrameworkGlue accessibilityInitializeBundle]_block_invoke_4
+0x187fb575c  __TEXT,__text  ___59+[AXPreferencesFrameworkGlue accessibilityInitializeBundle]_block_invoke_5
+0x187fb57b0  __TEXT,__text  ___59+[AXPreferencesFrameworkGlue accessibilityInitializeBundle]_block_invoke_6
+0x187fb5868  __TEXT,__text  -[AXPreferencesFrameworkGlue _formatTime:showHours:showSubseconds:]
+0x187fb5870  __TEXT,__text  +[PSSpecifierTimeRangeContentConfigurationCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb587c  __TEXT,__text  +[PSSpecifierTimeRangeContentConfigurationCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb5888  __TEXT,__text  +[PSSpecifierTimeRangeContentConfigurationCellAccessibility _accessibilityPerformValidations:]
+0x187fb588c  __TEXT,__text  -[PSSpecifierTimeRangeContentConfigurationCellAccessibility accessibilityLabel]
+0x187fb5890  __TEXT,__text  +[PSSpecifierSliderConfigurationCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb589c  __TEXT,__text  +[PSSpecifierSliderConfigurationCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb58a8  __TEXT,__text  +[PSSpecifierSliderConfigurationCellAccessibility _accessibilityPerformValidations:]
+0x187fb5914  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility accessibilityLabel]
+0x187fb59a4  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility accessibilityHint]
+0x187fb59ec  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility accessibilityTraits]
+0x187fb5a74  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility accessibilityValue]
+0x187fb5af8  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility _accessibilityAbsoluteValue]
+0x187fb5b40  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility accessibilityIncrement]
+0x187fb5bd4  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility accessibilityDecrement]
+0x187fb5c68  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility accessibilityActivationPoint]
+0x187fb5cb8  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility _axSpecifier]
+0x187fb5d30  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility _axBumpSliderValue:]
+0x187fb5e24  __TEXT,__text  ___70-[PSSpecifierSliderConfigurationCellAccessibility _axBumpSliderValue:]_block_invoke
+0x187fb5e34  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility _axIsLockingSegmentedSlider]
+0x187fb5e70  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility _axSliderIncreaseAmount:]
+0x187fb5f80  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility _axMinimumValue]
+0x187fb5fdc  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility _axMaximumValue]
+0x187fb6048  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility _axIsSegmented]
+0x187fb60a4  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility _axLocksToSegment]
+0x187fb6108  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility _axSegmentCount]
+0x187fb6164  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility _axNumberOfTicks]
+0x187fb61c4  __TEXT,__text  -[PSSpecifierSliderConfigurationCellAccessibility _axOffsetBetweenTicksForNumberOfTicks:]
+0x187fb6250  __TEXT,__text  +[PSSpecifierDeleteButtonContentConfigurationCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb625c  __TEXT,__text  +[PSSpecifierDeleteButtonContentConfigurationCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb6268  __TEXT,__text  +[PSSpecifierDeleteButtonContentConfigurationCellAccessibility _accessibilityPerformValidations:]
+0x187fb626c  __TEXT,__text  -[PSSpecifierDeleteButtonContentConfigurationCellAccessibility isAccessibilityElement]
+0x187fb6274  __TEXT,__text  -[PSSpecifierDeleteButtonContentConfigurationCellAccessibility accessibilityLabel]
+0x187fb6278  __TEXT,__text  +[PSSpecifierContentConfigurationCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb6284  __TEXT,__text  +[PSSpecifierContentConfigurationCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb6290  __TEXT,__text  +[PSSpecifierContentConfigurationCellAccessibility _accessibilityPerformValidations:]
+0x187fb6384  __TEXT,__text  -[PSSpecifierContentConfigurationCellAccessibility isAccessibilityElement]
+0x187fb638c  __TEXT,__text  -[PSSpecifierContentConfigurationCellAccessibility accessibilityTraits]
+0x187fb64dc  __TEXT,__text  -[PSSpecifierContentConfigurationCellAccessibility accessibilityLabel]
+0x187fb66c4  __TEXT,__text  ___70-[PSSpecifierContentConfigurationCellAccessibility accessibilityLabel]_block_invoke
+0x187fb6710  __TEXT,__text  ___70-[PSSpecifierContentConfigurationCellAccessibility accessibilityLabel]_block_invoke_2
+0x187fb6778  __TEXT,__text  ___70-[PSSpecifierContentConfigurationCellAccessibility accessibilityLabel]_block_invoke_3
+0x187fb6800  __TEXT,__text  -[PSSpecifierContentConfigurationCellAccessibility accessibilityUserInputLabels]
+0x187fb68c8  __TEXT,__text  -[PSSpecifierContentConfigurationCellAccessibility _accessibilitySupplementaryFooterViews]
+0x187fb6984  __TEXT,__text  ___90-[PSSpecifierContentConfigurationCellAccessibility _accessibilitySupplementaryFooterViews]_block_invoke
+0x187fb69cc  __TEXT,__text  -[PSSpecifierContentConfigurationCellAccessibility _accessorySwitchView]
+0x187fb6a34  __TEXT,__text  +[PSSwitchTableCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb6a40  __TEXT,__text  +[PSSwitchTableCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb6a4c  __TEXT,__text  +[PSSwitchTableCellAccessibility _accessibilityPerformValidations:]
+0x187fb6acc  __TEXT,__text  -[PSSwitchTableCellAccessibility accessibilityPath]
+0x187fb6b68  __TEXT,__text  -[PSSwitchTableCellAccessibility _axSwitchCellContentFrame]
+0x187fb6dfc  __TEXT,__text  -[PSSwitchTableCellAccessibility tableTextAccessibleFrame:]
+0x187fb6f04  __TEXT,__text  __axCollectContentFrames
+0x187fb71a8  __TEXT,__text  ____axCollectContentFrames_block_invoke
+0x187fb7240  __TEXT,__text  +[UISplitViewControllerPanelImplAccessibility__Preferences__UIKit(SafeCategory) safeCategoryTargetClassName]
+0x187fb724c  __TEXT,__text  +[UISplitViewControllerPanelImplAccessibility__Preferences__UIKit(SafeCategory) safeCategoryBaseClass]
+0x187fb7258  __TEXT,__text  +[UISplitViewControllerPanelImplAccessibility__Preferences__UIKit _accessibilityPerformValidations:]
+0x187fb7298  __TEXT,__text  -[UISplitViewControllerPanelImplAccessibility__Preferences__UIKit _viewControllerChildViewControllersDidChange:]
+0x187fb73a0  __TEXT,__text  +[PSReversedSubtitleDisclosureTableCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb73ac  __TEXT,__text  +[PSReversedSubtitleDisclosureTableCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb73b8  __TEXT,__text  +[PSReversedSubtitleDisclosureTableCellAccessibility _accessibilityPerformValidations:]
+0x187fb73bc  __TEXT,__text  -[PSReversedSubtitleDisclosureTableCellAccessibility _axCellSelf]
+0x187fb741c  __TEXT,__text  -[PSReversedSubtitleDisclosureTableCellAccessibility accessibilityLabel]
+0x187fb74c0  __TEXT,__text  -[PSReversedSubtitleDisclosureTableCellAccessibility accessibilityValue]
+0x187fb7518  __TEXT,__text  +[PSViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb7524  __TEXT,__text  +[PSViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb7530  __TEXT,__text  +[PSViewControllerAccessibility _accessibilityPerformValidations:]
+0x187fb7548  __TEXT,__text  -[PSViewControllerAccessibility _accessibilityHandleNavigationControllerDidEndTransition]
+0x187fb784c  __TEXT,__text  +[AlphanumericPINTextFieldAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb7858  __TEXT,__text  +[AlphanumericPINTextFieldAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb7864  __TEXT,__text  +[AlphanumericPINTextFieldAccessibility _accessibilityPerformValidations:]
+0x187fb78c8  __TEXT,__text  -[AlphanumericPINTextFieldAccessibility _accessibilityInsertText:]
+0x187fb795c  __TEXT,__text  ___66-[AlphanumericPINTextFieldAccessibility _accessibilityInsertText:]_block_invoke
+0x187fb79d4  __TEXT,__text  -[AlphanumericPINTextFieldAccessibility _accessibilityReplaceCharactersAtCursor:withString:]
+0x187fb7a68  __TEXT,__text  ___92-[AlphanumericPINTextFieldAccessibility _accessibilityReplaceCharactersAtCursor:withString:]_block_invoke
+0x187fb7ae0  __TEXT,__text  +[DevicePINKeypadAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb7aec  __TEXT,__text  +[DevicePINKeypadAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb7af8  __TEXT,__text  +[DevicePINKeypadAccessibility _accessibilityPerformValidations:]
+0x187fb7b08  __TEXT,__text  -[DevicePINKeypadAccessibility _accessibilityScannerGroupTraits]
+0x187fb7b10  __TEXT,__text  -[DevicePINKeypadAccessibility _accessibilityIsScannerGroup]
+0x187fb7b18  __TEXT,__text  -[DevicePINKeypadAccessibility accessibilityFrame]
+0x187fb7bc8  __TEXT,__text  +[PSSpecifierToggleContentConfigurationCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb7bd4  __TEXT,__text  +[PSSpecifierToggleContentConfigurationCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb7be0  __TEXT,__text  +[PSSpecifierToggleContentConfigurationCellAccessibility _accessibilityPerformValidations:]
+0x187fb7c54  __TEXT,__text  -[PSSpecifierToggleContentConfigurationCellAccessibility refreshCellContentsWithSpecifier:]
+0x187fb7cb0  __TEXT,__text  +[DevicePINPaneAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb7cbc  __TEXT,__text  +[DevicePINPaneAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb7cc8  __TEXT,__text  +[DevicePINPaneAccessibility _accessibilityPerformValidations:]
+0x187fb7e40  __TEXT,__text  -[DevicePINPaneAccessibility initWithFrame:]
+0x187fb7e90  __TEXT,__text  -[DevicePINPaneAccessibility setPINPolicyString:visible:]
+0x187fb7f08  __TEXT,__text  -[DevicePINPaneAccessibility slideToNewPasscodeField:requiresKeyboard:numericOnly:transition:showsOptionsButton:]
+0x187fb7fb0  __TEXT,__text  -[DevicePINPaneAccessibility _accessibilityLoadAccessibilityInformation]
+0x187fb8018  __TEXT,__text  -[DevicePINPaneAccessibility _accessibilityResponderElement]
+0x187fb80b4  __TEXT,__text  -[DevicePINPaneAccessibility _accessibilitySupportsHandwriting]
+0x187fb80bc  __TEXT,__text  -[DevicePINPaneAccessibility _accessibilityHandwritingAttributeShouldEchoCharacter]
+0x187fb80c4  __TEXT,__text  -[DevicePINPaneAccessibility _accessibilityHandwritingAttributePreferredCharacterSet]
+0x187fb810c  __TEXT,__text  -[DevicePINPaneAccessibility _accessibilityHandwritingAttributeAllowedCharacterSets]
+0x187fb8158  __TEXT,__text  -[DevicePINPaneAccessibility _accessibilitySupportsTextInsertionAndDeletion]
+0x187fb8160  __TEXT,__text  -[DevicePINPaneAccessibility _accessibilityHasDeletableText]
+0x187fb821c  __TEXT,__text  ___60-[DevicePINPaneAccessibility _accessibilityHasDeletableText]_block_invoke
+0x187fb8250  __TEXT,__text  -[DevicePINPaneAccessibility _accessibilityInsertText:]
+0x187fb82e8  __TEXT,__text  ___55-[DevicePINPaneAccessibility _accessibilityInsertText:]_block_invoke
+0x187fb8318  __TEXT,__text  -[DevicePINPaneAccessibility _accessibilityReplaceCharactersAtCursor:withString:]
+0x187fb83b0  __TEXT,__text  ___81-[DevicePINPaneAccessibility _accessibilityReplaceCharactersAtCursor:withString:]_block_invoke
+0x187fb8410  __TEXT,__text  +[FailureBarViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb841c  __TEXT,__text  +[FailureBarViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb8428  __TEXT,__text  -[FailureBarViewAccessibility setFailureCount:]
+0x187fb84ac  __TEXT,__text  -[FailureBarViewAccessibility accessibilityLabel]
+0x187fb84f4  __TEXT,__text  -[FailureBarViewAccessibility isAccessibilityElement]
+0x187fb84fc  __TEXT,__text  +[PINKeypadAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb8508  __TEXT,__text  +[PINKeypadAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb8514  __TEXT,__text  -[PINKeypadAccessibility _accessibilityInternalChildren]
+0x187fb8904  __TEXT,__text  ___56-[PINKeypadAccessibility _accessibilityInternalChildren]_block_invoke
+0x187fb8944  __TEXT,__text  ___56-[PINKeypadAccessibility _accessibilityInternalChildren]_block_invoke.407
+0x187fb8988  __TEXT,__text  ___56-[PINKeypadAccessibility _accessibilityInternalChildren]_block_invoke_2
+0x187fb8abc  __TEXT,__text  ___56-[PINKeypadAccessibility _accessibilityInternalChildren]_block_invoke_3
+0x187fb8af8  __TEXT,__text  +[PSBadgedTableCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb8b04  __TEXT,__text  +[PSBadgedTableCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb8b10  __TEXT,__text  -[PSBadgedTableCellAccessibility badgeWithInteger:]
+0x187fb8b88  __TEXT,__text  -[PSBadgedTableCellAccessibility accessibilityValue]
+0x187fb8c48  __TEXT,__text  +[PSCapacityBarCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb8c54  __TEXT,__text  +[PSCapacityBarCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb8c60  __TEXT,__text  +[PSCapacityBarCellAccessibility _accessibilityPerformValidations:]
+0x187fb8ce4  __TEXT,__text  -[PSCapacityBarCellAccessibility isAccessibilityElement]
+0x187fb8cec  __TEXT,__text  -[PSCapacityBarCellAccessibility accessibilityTraits]
+0x187fb8cfc  __TEXT,__text  -[PSCapacityBarCellAccessibility accessibilityLabel]
+0x187fb8d08  __TEXT,__text  -[PSCapacityBarCellAccessibility accessibilityValue]
+0x187fb8f2c  __TEXT,__text  +[PSStaticTextTableCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb8f38  __TEXT,__text  +[PSStaticTextTableCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb8f44  __TEXT,__text  -[PSStaticTextTableCellAccessibility accessibilityTraits]
+0x187fb8f94  __TEXT,__text  +[PSControlTableCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb8fa0  __TEXT,__text  +[PSControlTableCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb8fac  __TEXT,__text  -[PSControlTableCellAccessibility accessibilityLabel]
+0x187fb9074  __TEXT,__text  -[PSControlTableCellAccessibility accessibilityTraits]
+0x187fb914c  __TEXT,__text  -[PSControlTableCellAccessibility _accessibilityAbsoluteValue]
+0x187fb9194  __TEXT,__text  -[PSControlTableCellAccessibility accessibilityIncrement]
+0x187fb9220  __TEXT,__text  -[PSControlTableCellAccessibility accessibilityDecrement]
+0x187fb92ac  __TEXT,__text  +[PSEditableTableCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb92b8  __TEXT,__text  +[PSEditableTableCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb92c4  __TEXT,__text  -[PSEditableTableCellAccessibility _accessibilityAlwaysReturnsChild]
+0x187fb92cc  __TEXT,__text  -[PSEditableTableCellAccessibility _accessibilityChildren]
+0x187fb93a8  __TEXT,__text  ___58-[PSEditableTableCellAccessibility _accessibilityChildren]_block_invoke
+0x187fb9408  __TEXT,__text  -[PSEditableTableCellAccessibility _accessibilitySetSelectedTextRange:]
+0x187fb9454  __TEXT,__text  -[PSEditableTableCellAccessibility _accessibilitySelectedTextRange]
+0x187fb949c  __TEXT,__text  -[PSEditableTableCellAccessibility _accessibilityTextViewTextOperationResponder]
+0x187fb94a8  __TEXT,__text  -[PSEditableTableCellAccessibility accessibilityLabel]
+0x187fb957c  __TEXT,__text  -[PSEditableTableCellAccessibility accessibilityValue]
+0x187fb95bc  __TEXT,__text  -[PSEditableTableCellAccessibility accessibilityTraits]
+0x187fb95f4  __TEXT,__text  +[PSFooterHyperlinkViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb9600  __TEXT,__text  +[PSFooterHyperlinkViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb960c  __TEXT,__text  +[PSFooterHyperlinkViewAccessibility _accessibilityPerformValidations:]
+0x187fb9680  __TEXT,__text  -[PSFooterHyperlinkViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x187fb96e8  __TEXT,__text  -[PSFooterHyperlinkViewAccessibility isAccessibilityUserDefinedElement]
+0x187fb96f4  __TEXT,__text  -[PSFooterHyperlinkViewAccessibility initWithSpecifier:]
+0x187fb974c  __TEXT,__text  +[PSKeyboardNavigationSearchBarAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb9758  __TEXT,__text  +[PSKeyboardNavigationSearchBarAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb9764  __TEXT,__text  +[PSKeyboardNavigationSearchBarAccessibility _accessibilityPerformValidations:]
+0x187fb97a4  __TEXT,__text  -[PSKeyboardNavigationSearchBarAccessibility _accessibilityShouldIncludeArrowKeyCommandsForDirectionalFocusMovement]
+0x187fb97ac  __TEXT,__text  -[PSKeyboardNavigationSearchBarAccessibility keyCommands]
+0x187fb9810  __TEXT,__text  +[PSKeychainSyncSecurityCodeControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb981c  __TEXT,__text  +[PSKeychainSyncSecurityCodeControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb9828  __TEXT,__text  +[PSKeychainSyncSecurityCodeControllerAccessibility _accessibilityPerformValidations:]
+0x187fb98bc  __TEXT,__text  -[PSKeychainSyncSecurityCodeControllerAccessibility _accessibilityMarkupTable]
+0x187fb9960  __TEXT,__text  -[PSKeychainSyncSecurityCodeControllerAccessibility viewDidLoad]
+0x187fb99ac  __TEXT,__text  -[PSKeychainSyncSecurityCodeControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x187fb9a20  __TEXT,__text  -[PSKeychainSyncSecurityCodeControllerAccessibility _configureTextEntryCell]
+0x187fb9a7c  __TEXT,__text  +[PSListControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fb9a88  __TEXT,__text  +[PSListControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fb9a94  __TEXT,__text  +[PSListControllerAccessibility _accessibilityPerformValidations:]
+0x187fb9b18  __TEXT,__text  -[PSListControllerAccessibility loadSpecifiersFromPlistName:target:]
+0x187fb9bf0  __TEXT,__text  ___68-[PSListControllerAccessibility loadSpecifiersFromPlistName:target:]_block_invoke
+0x187fb9c74  __TEXT,__text  -[PSListControllerAccessibility highlightSpecifierWithID:]
+0x187fb9e00  __TEXT,__text  ___58-[PSListControllerAccessibility highlightSpecifierWithID:]_block_invoke
+0x187fb9e44  __TEXT,__text  -[PSListControllerAccessibility _accessibilityHandleNavigationControllerDidEndTransition]
+0x187fba21c  __TEXT,__text  -[PSListControllerAccessibility reloadSpecifierAtIndex:animated:]
+0x187fba294  __TEXT,__text  +[PSPasscodeFieldAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fba2a0  __TEXT,__text  +[PSPasscodeFieldAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fba2ac  __TEXT,__text  +[PSPasscodeFieldAccessibility _accessibilityPerformValidations:]
+0x187fba320  __TEXT,__text  -[PSPasscodeFieldAccessibility isAccessibilityElement]
+0x187fba328  __TEXT,__text  -[PSPasscodeFieldAccessibility accessibilityTraits]
+0x187fba380  __TEXT,__text  -[PSPasscodeFieldAccessibility accessibilityLabel]
+0x187fba38c  __TEXT,__text  -[PSPasscodeFieldAccessibility accessibilityValue]
+0x187fba440  __TEXT,__text  +[PSRootControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fba44c  __TEXT,__text  +[PSRootControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fba458  __TEXT,__text  +[PSSetupControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fba464  __TEXT,__text  +[PSSetupControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fba470  __TEXT,__text  -[PSSetupControllerAccessibility viewWillBecomeVisible:]
+0x187fba4bc  __TEXT,__text  -[PSSetupControllerAccessibility accessibilityPerformEscape]
+0x187fba4c4  __TEXT,__text  +[PSSegmentTableCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fba4d0  __TEXT,__text  +[PSSegmentTableCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fba4dc  __TEXT,__text  +[PSSegmentTableCellAccessibility _accessibilityPerformValidations:]
+0x187fba4e0  __TEXT,__text  -[PSSegmentTableCellAccessibility accessibilityContainerType]
+0x187fba4e8  __TEXT,__text  -[PSSegmentTableCellAccessibility _accessibilityIgnoreInternalLabels]
+0x187fba4f0  __TEXT,__text  +[PSSegmentableSliderAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fba4fc  __TEXT,__text  +[PSSegmentableSliderAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fba508  __TEXT,__text  +[PSSegmentableSliderAccessibility _accessibilityPerformValidations:]
+0x187fba61c  __TEXT,__text  -[PSSegmentableSliderAccessibility _accessibilityIncreaseAmount:]
+0x187fba7fc  __TEXT,__text  ___65-[PSSegmentableSliderAccessibility _accessibilityIncreaseAmount:]_block_invoke
+0x187fba834  __TEXT,__text  +[PSSliderTableCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fba840  __TEXT,__text  +[PSSliderTableCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fba84c  __TEXT,__text  +[PSSliderTableCellAccessibility _accessibilityPerformValidations:]
+0x187fba8b4  __TEXT,__text  -[PSSliderTableCellAccessibility isAccessibilityElement]
+0x187fba8bc  __TEXT,__text  -[PSSliderTableCellAccessibility accessibilityActivationPoint]
+0x187fba90c  __TEXT,__text  +[PSSpecifierAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fba918  __TEXT,__text  +[PSSpecifierAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fba924  __TEXT,__text  -[PSSpecifierAccessibility dealloc]
+0x187fba96c  __TEXT,__text  -[PSSpecifierAccessibility accessibilityIdentification]
+0x187fbaa58  __TEXT,__text  +[PSSubtitleSwitchTableCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fbaa64  __TEXT,__text  +[PSSubtitleSwitchTableCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fbaa70  __TEXT,__text  +[PSSubtitleSwitchTableCellAccessibility _accessibilityPerformValidations:]
+0x187fbaa74  __TEXT,__text  -[PSSubtitleSwitchTableCellAccessibility accessibilityValue]
+0x187fbab14  __TEXT,__text  +[PSDateTimePickerCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fbab20  __TEXT,__text  +[PSDateTimePickerCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fbab2c  __TEXT,__text  +[PSDateTimePickerCellAccessibility _accessibilityPerformValidations:]
+0x187fbabf8  __TEXT,__text  -[PSDateTimePickerCellAccessibility isAccessibilityElement]
+0x187fbac38  __TEXT,__text  -[PSDateTimePickerCellAccessibility accessibilityLabel]
+0x187fbacd8  __TEXT,__text  -[PSDateTimePickerCellAccessibility accessibilityValue]
+0x187fbad18  __TEXT,__text  -[PSDateTimePickerCellAccessibility accessibilityHint]
+0x187fbad58  __TEXT,__text  -[PSDateTimePickerCellAccessibility accessibilityActivationPoint]
+0x187fbada0  __TEXT,__text  -[PSDateTimePickerCellAccessibility accessibilityTraits]
+0x187fbadd8  __TEXT,__text  -[PSDateTimePickerCellAccessibility accessibilityPickerView]
+0x187fbade4  __TEXT,__text  -[PSDateTimePickerCellAccessibility accessibilityPickerTimeView]
+0x187fbae2c  __TEXT,__text  +[PSTableCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fbae38  __TEXT,__text  +[PSTableCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fbae44  __TEXT,__text  +[PSTableCellAccessibility _accessibilityPerformValidations:]
+0x187fbaf90  __TEXT,__text  -[PSTableCellAccessibility _accessibilityElementServesAsHeadingLandmark]
+0x187fbaf98  __TEXT,__text  -[PSTableCellAccessibility refreshCellContentsWithSpecifier:]
+0x187fbb024  __TEXT,__text  +[PSTableCellAccessibility _setAccessibilityData:onCell:]
+0x187fbb2b8  __TEXT,__text  -[PSTableCellAccessibility _accessibilityLanguageOverriddesUser]
+0x187fbb330  __TEXT,__text  -[PSTableCellAccessibility initWithStyle:reuseIdentifier:specifier:]
+0x187fbb3b8  __TEXT,__text  -[PSTableCellAccessibility prepareForReuse]
+0x187fbb404  __TEXT,__text  -[PSTableCellAccessibility _accessibilityLoadAccessibilityInformation]
+0x187fbb470  __TEXT,__text  -[PSTableCellAccessibility _accessibilityLoadAccessibilityInformationWithSpecifier:]
+0x187fbb4bc  __TEXT,__text  -[PSTableCellAccessibility _accessibilityHitTest:withEvent:]
+0x187fbb5e4  __TEXT,__text  -[PSTableCellAccessibility automationElements]
+0x187fbb718  __TEXT,__text  -[PSTableCellAccessibility isAccessibilityElement]
+0x187fbb794  __TEXT,__text  -[PSTableCellAccessibility accessibilityTraits]
+0x187fbb934  __TEXT,__text  -[PSTableCellAccessibility accessibilityLabel]
+0x187fbbd40  __TEXT,__text  -[PSTableCellAccessibility accessibilityActivationPoint]
+0x187fbbdd0  __TEXT,__text  -[PSTableCellAccessibility accessibilityValue]
+0x187fbbfbc  __TEXT,__text  -[PSTableCellAccessibility accessibilityIncrement]
+0x187fbc040  __TEXT,__text  -[PSTableCellAccessibility accessibilityDecrement]
+0x187fbc0c4  __TEXT,__text  -[PSTableCellAccessibility accessibilityHint]
+0x187fbc158  __TEXT,__text  -[PSTableCellAccessibility _accessibilityIsSpeakThisElement]
+0x187fbc160  __TEXT,__text  -[PSTableCellAccessibility _accessibilityMinScrubberPosition]
+0x187fbc1ec  __TEXT,__text  -[PSTableCellAccessibility _accessibilityMaxScrubberPosition]
+0x187fbc278  __TEXT,__text  -[PSTableCellAccessibility accessibilityRespondsToUserInteraction]
+0x187fbc2ec  __TEXT,__text  -[PSTableCellAccessibility canPerformAction:withSender:]
+0x187fbc398  __TEXT,__text  +[PSTimeRangeCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fbc3a4  __TEXT,__text  +[PSTimeRangeCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fbc3b0  __TEXT,__text  +[PSTimeRangeCellAccessibility _accessibilityPerformValidations:]
+0x187fbc450  __TEXT,__text  -[PSTimeRangeCellAccessibility isAccessibilityElement]
+0x187fbc458  __TEXT,__text  -[PSTimeRangeCellAccessibility accessibilityTraits]
+0x187fbc4a0  __TEXT,__text  -[PSTimeRangeCellAccessibility accessibilityLabel]
+0x187fbc5bc  __TEXT,__text  +[SUIKSearchResultCollectionViewListCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fbc5c8  __TEXT,__text  +[SUIKSearchResultCollectionViewListCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fbc5d4  __TEXT,__text  +[SUIKSearchResultCollectionViewListCellAccessibility _accessibilityPerformValidations:]
+0x187fbc5d8  __TEXT,__text  -[SUIKSearchResultCollectionViewListCellAccessibility isAccessibilityElement]
+0x187fbc5e0  __TEXT,__text  +[UITableViewCellAccessibility__Preferences__UIKit(SafeCategory) safeCategoryTargetClassName]
+0x187fbc5ec  __TEXT,__text  +[UITableViewCellAccessibility__Preferences__UIKit(SafeCategory) safeCategoryBaseClass]
+0x187fbc5f8  __TEXT,__text  +[UITableViewCellAccessibility__Preferences__UIKit _accessibilityPerformValidations:]
+0x187fbc5fc  __TEXT,__text  -[UITableViewCellAccessibility__Preferences__UIKit accessibilityLabel]
+0x187fbc704  __TEXT,__text  +[PSUsageBundleCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fbc710  __TEXT,__text  +[PSUsageBundleCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fbc71c  __TEXT,__text  +[PSUsageBundleCellAccessibility _accessibilityPerformValidations:]
+0x187fbc720  __TEXT,__text  -[PSUsageBundleCellAccessibility accessibilityLabel]
+0x187fbc87c  __TEXT,__text  +[PSUsageSizeHeaderAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fbc888  __TEXT,__text  +[PSUsageSizeHeaderAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fbc894  __TEXT,__text  +[PSUsageSizeHeaderAccessibility _accessibilityPerformValidations:]
+0x187fbc904  __TEXT,__text  -[PSUsageSizeHeaderAccessibility isAccessibilityElement]
+0x187fbc90c  __TEXT,__text  -[PSUsageSizeHeaderAccessibility accessibilityTraits]
+0x187fbc91c  __TEXT,__text  -[PSUsageSizeHeaderAccessibility accessibilityLabel]
+0x187fbc9cc  __TEXT,__text  +[PreferencesPSTableCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fbc9d8  __TEXT,__text  +[PreferencesPSTableCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fbc9e4  __TEXT,__text  +[PreferencesPSTableCellAccessibility _accessibilityPerformValidations:]
+0x187fbc9e8  __TEXT,__text  -[PreferencesPSTableCellAccessibility accessibilityLabel]
+0x187fbcc3c  __TEXT,__text  +[DiagnosticDataControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fbcc48  __TEXT,__text  +[DiagnosticDataControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fbcc54  __TEXT,__text  +[DiagnosticDataControllerAccessibility _accessibilityPerformValidations:]
+0x187fbccbc  __TEXT,__text  -[DiagnosticDataControllerAccessibility viewDidLoad]
+0x187fbcd50  __TEXT,__text  +[PrefsUILinkLabelAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fbcd5c  __TEXT,__text  +[PrefsUILinkLabelAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fbcd68  __TEXT,__text  -[PrefsUILinkLabelAccessibility accessibilityTraits]
+0x187fbcd78  __TEXT,__text  +[UITableViewAccessibility__Preferences__UIKit(SafeCategory) safeCategoryTargetClassName]
+0x187fbcd84  __TEXT,__text  +[UITableViewAccessibility__Preferences__UIKit(SafeCategory) safeCategoryBaseClass]
+0x187fbcd90  __TEXT,__text  +[UITableViewAccessibility__Preferences__UIKit _accessibilityPerformValidations:]
+0x187fbcdf4  __TEXT,__text  -[UITableViewAccessibility__Preferences__UIKit _axIsDynamicTypeTable]
+0x187fbce34  __TEXT,__text  -[UITableViewAccessibility__Preferences__UIKit accessibilityElementCount]
+0x187fbce88  __TEXT,__text  -[UITableViewAccessibility__Preferences__UIKit isAccessibilityElement]
+0x187fbcedc  __TEXT,__text  -[UITableViewAccessibility__Preferences__UIKit _accessibilityHitTest:withEvent:]
+0x187fbcf78  __TEXT,__text  -[UITableViewAccessibility__Preferences__UIKit _accessibilityFooterElement]
+0x187fbd01c  __TEXT,__text  +[PINViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x187fbd028  __TEXT,__text  +[PINViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x187fbd034  __TEXT,__text  -[PINViewAccessibility isAccessibilityElement]
+0x187fbd03c  __TEXT,__text  ___Block_byref_object_copy_
+0x187fbd04c  __TEXT,__text  ___Block_byref_object_dispose_
+0x187fbd054  __TEXT,__text  ___Block_byref_object_copy_.726
+0x187fbd064  __TEXT,__text  ___Block_byref_object_dispose_.727
+```
+

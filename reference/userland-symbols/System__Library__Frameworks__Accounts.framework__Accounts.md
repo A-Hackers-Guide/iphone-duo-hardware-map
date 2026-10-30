@@ -1,0 +1,1545 @@
+# Symbols: `/System/Library/Frameworks/Accounts.framework/Accounts`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__Frameworks__Accounts.framework__Accounts.md). **[DSC]**
+
+528 public symbols, 1,996 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1e0dfe578  __DATA_CONST,__const  _ACAccountCredentialsDidChangeNotification
+0x1e0dfe570  __DATA_CONST,__const  _ACAccountDataclassAvailability
+0x1e0dfe568  __DATA_CONST,__const  _ACAccountDataclassBackToMyMac
+0x1e0dfe560  __DATA_CONST,__const  _ACAccountDataclassBackToMyMacDeprecated
+0x1e0dfe558  __DATA_CONST,__const  _ACAccountDataclassBackup
+0x1e0dfe550  __DATA_CONST,__const  _ACAccountDataclassBookmarks
+0x1e0dfe548  __DATA_CONST,__const  _ACAccountDataclassCKCodeService
+0x1e0dfe540  __DATA_CONST,__const  _ACAccountDataclassCKDatabaseService
+0x1e0dfe538  __DATA_CONST,__const  _ACAccountDataclassCKDeviceService
+0x1e0dfe530  __DATA_CONST,__const  _ACAccountDataclassCKMetricsService
+0x1e0dfe528  __DATA_CONST,__const  _ACAccountDataclassCKShareService
+0x1e0dfe520  __DATA_CONST,__const  _ACAccountDataclassCalendars
+0x1e0dfe518  __DATA_CONST,__const  _ACAccountDataclassCloudDesktop
+0x1e0dfe510  __DATA_CONST,__const  _ACAccountDataclassCloudPhotos
+0x1e0dfe508  __DATA_CONST,__const  _ACAccountDataclassContacts
+0x1e0dfe500  __DATA_CONST,__const  _ACAccountDataclassContactsSearch
+0x1e0dfe4f8  __DATA_CONST,__const  _ACAccountDataclassContent
+0x1e0dfe4f0  __DATA_CONST,__const  _ACAccountDataclassCoreRoutine
+0x1e0dfe4e8  __DATA_CONST,__const  _ACAccountDataclassDeviceEnrollments
+0x1e0dfe4e0  __DATA_CONST,__const  _ACAccountDataclassDeviceLocator
+0x1e0dfe4d8  __DATA_CONST,__const  _ACAccountDataclassFitnessPlus
+0x19fd51e48  __TEXT,__text  _ACAccountDataclassForACDataclass
+0x1e0dfe4d0  __DATA_CONST,__const  _ACAccountDataclassFreeform
+0x1e0dfe4c8  __DATA_CONST,__const  _ACAccountDataclassHealth
+0x1e0dfe4c0  __DATA_CONST,__const  _ACAccountDataclassHome
+0x1e0dfe4b8  __DATA_CONST,__const  _ACAccountDataclassImagePlayground
+0x1e0dfe4b0  __DATA_CONST,__const  _ACAccountDataclassKeyValue
+0x1e0dfe4a8  __DATA_CONST,__const  _ACAccountDataclassKeychainSync
+0x1e0dfe4a0  __DATA_CONST,__const  _ACAccountDataclassMail
+0x1e0dfe498  __DATA_CONST,__const  _ACAccountDataclassMediaStream
+0x1e0dfe490  __DATA_CONST,__const  _ACAccountDataclassMessages
+0x1e0dfe488  __DATA_CONST,__const  _ACAccountDataclassMoments
+0x1e0dfe480  __DATA_CONST,__const  _ACAccountDataclassNetworkVPN
+0x1e0dfe478  __DATA_CONST,__const  _ACAccountDataclassNews
+0x1e0dfe470  __DATA_CONST,__const  _ACAccountDataclassNotes
+0x1e0dfe468  __DATA_CONST,__const  _ACAccountDataclassNotifications
+0x1e0dfe460  __DATA_CONST,__const  _ACAccountDataclassPhoneFaceTime
+0x1e0dfe458  __DATA_CONST,__const  _ACAccountDataclassPhotos
+0x1e0dfe450  __DATA_CONST,__const  _ACAccountDataclassProtectedCloudStorage
+0x1e0dfe448  __DATA_CONST,__const  _ACAccountDataclassReminders
+0x1e0dfe440  __DATA_CONST,__const  _ACAccountDataclassServerDocuments
+0x19fd5206c  __TEXT,__text  _ACAccountDataclassSetForACDataclassEnumSet
+0x1e0dfe438  __DATA_CONST,__const  _ACAccountDataclassSettings
+0x1e0dfe430  __DATA_CONST,__const  _ACAccountDataclassShareLocation
+0x1e0dfe428  __DATA_CONST,__const  _ACAccountDataclassShareMenu
+0x1e0dfe420  __DATA_CONST,__const  _ACAccountDataclassSharedStreams
+0x1e0dfe418  __DATA_CONST,__const  _ACAccountDataclassShoebox
+0x1e0dfe410  __DATA_CONST,__const  _ACAccountDataclassSiri
+0x1e0dfe408  __DATA_CONST,__const  _ACAccountDataclassSmartDefaults
+0x1e0dfe400  __DATA_CONST,__const  _ACAccountDataclassStocks
+0x1e0dfe3f8  __DATA_CONST,__const  _ACAccountDataclassUbiquity
+0x1e0dfe3f0  __DATA_CONST,__const  _ACAccountDataclassiWorkMailBox
+0x1e0dfe3e8  __DATA_CONST,__const  _ACAccountIdentifierKey
+0x1e0dfe3e0  __DATA_CONST,__const  _ACAccountPropertyAllowsInsecureAuthentication
+0x1e0dfe3d8  __DATA_CONST,__const  _ACAccountPropertyAllowsRecoverableTrustCertificate
+0x1e0dfe3d0  __DATA_CONST,__const  _ACAccountPropertyAuthenticationScheme
+0x1e0dfe3c8  __DATA_CONST,__const  _ACAccountPropertyAutodiscoverURL
+0x1e0dfe3c0  __DATA_CONST,__const  _ACAccountPropertyChildCardDAVAccountIdentifier
+0x1e0dfe3b8  __DATA_CONST,__const  _ACAccountPropertyConfigurationProfileIdentifier
+0x1e0dfe3b0  __DATA_CONST,__const  _ACAccountPropertyDAAccountHost
+0x1e0dfe3a8  __DATA_CONST,__const  _ACAccountPropertyDisableDynamicConfiguration
+0x1e0dfe3a0  __DATA_CONST,__const  _ACAccountPropertyEWSExternalURL
+0x1e0dfe398  __DATA_CONST,__const  _ACAccountPropertyEWSInternalURL
+0x1e0dfe390  __DATA_CONST,__const  _ACAccountPropertyEWSRootFolderID
+0x1e0dfe388  __DATA_CONST,__const  _ACAccountPropertyEmailAliases
+0x1e0dfe380  __DATA_CONST,__const  _ACAccountPropertyEmailAliasesEditingURLString
+0x1e0dfe378  __DATA_CONST,__const  _ACAccountPropertyExchangeGraphAPIEndpointURI
+0x1e0dfe370  __DATA_CONST,__const  _ACAccountPropertyFirstName
+0x1e0dfe368  __DATA_CONST,__const  _ACAccountPropertyFullName
+0x1e0dfe360  __DATA_CONST,__const  _ACAccountPropertyGrantedDataclasses
+0x1e0dfe358  __DATA_CONST,__const  _ACAccountPropertyHostname
+0x1e0dfe350  __DATA_CONST,__const  _ACAccountPropertyIMAPHostname
+0x1e0dfe348  __DATA_CONST,__const  _ACAccountPropertyIMAPPortNumber
+0x1e0dfe340  __DATA_CONST,__const  _ACAccountPropertyIMAPRequiresSSL
+0x1e0dfe338  __DATA_CONST,__const  _ACAccountPropertyIdentityEmailAddress
+0x1e0dfe330  __DATA_CONST,__const  _ACAccountPropertyLastName
+0x1e0dfe328  __DATA_CONST,__const  _ACAccountPropertyManagingOwnerIdentifier
+0x1e0dfe320  __DATA_CONST,__const  _ACAccountPropertyManagingSourceName
+0x1e0dfe318  __DATA_CONST,__const  _ACAccountPropertyMiddleName
+0x1e0dfe310  __DATA_CONST,__const  _ACAccountPropertyNickname
+0x1e0dfe308  __DATA_CONST,__const  _ACAccountPropertyPersonaIdentifier
+0x1e0dfe300  __DATA_CONST,__const  _ACAccountPropertyPortNumber
+0x1e0dfe2f8  __DATA_CONST,__const  _ACAccountPropertyPreventRecentsSyncing
+0x1e0dfe2f0  __DATA_CONST,__const  _ACAccountPropertyRemoteManagingAccountIdentifier
+0x1e0dfe2e8  __DATA_CONST,__const  _ACAccountPropertySMTPHostname
+0x1e0dfe2e0  __DATA_CONST,__const  _ACAccountPropertySMTPPortNumber
+0x1e0dfe2d8  __DATA_CONST,__const  _ACAccountPropertySMTPRequiresSSL
+0x1e0dfe2d0  __DATA_CONST,__const  _ACAccountPropertySSLEnabled
+0x1e0dfe2c8  __DATA_CONST,__const  _ACAccountPropertySSLIsDirect
+0x1e0dfe2c0  __DATA_CONST,__const  _ACAccountPropertySecCertificatePersistentRefs
+0x1e0dfe2b8  __DATA_CONST,__const  _ACAccountPropertySecIdentityPersistentRef
+0x1e0dfe2b0  __DATA_CONST,__const  _ACAccountPropertySendingAccountIdentifier
+0x1e0dfe2a8  __DATA_CONST,__const  _ACAccountPropertyServerPath
+0x1e0dfe2a0  __DATA_CONST,__const  _ACAccountPropertyShouldNeverUseSyncableCredential
+0x1e0dfe298  __DATA_CONST,__const  _ACAccountPropertyUseMailDrop
+0x1e0dfe290  __DATA_CONST,__const  _ACAccountStoreDidChangeNotification
+0x1e0dfe288  __DATA_CONST,__const  _ACAccountTypeIdentifier126
+0x1e0dfe280  __DATA_CONST,__const  _ACAccountTypeIdentifier163
+0x1e0dfe278  __DATA_CONST,__const  _ACAccountTypeIdentifierAIM
+0x1e0dfe270  __DATA_CONST,__const  _ACAccountTypeIdentifierAIMDeprecated
+0x1e0dfe268  __DATA_CONST,__const  _ACAccountTypeIdentifierAol
+0x1e0dfe260  __DATA_CONST,__const  _ACAccountTypeIdentifierAppleAccount
+0x1e0dfe258  __DATA_CONST,__const  _ACAccountTypeIdentifierAppleID
+0x1e0dfe250  __DATA_CONST,__const  _ACAccountTypeIdentifierAppleIDAuthentication
+0x1e0dfe248  __DATA_CONST,__const  _ACAccountTypeIdentifierAppleIDDeprecated
+0x1e0dfe240  __DATA_CONST,__const  _ACAccountTypeIdentifierBookmarkDAV
+0x1e0dfe238  __DATA_CONST,__const  _ACAccountTypeIdentifierCalDAV
+0x1e0dfe230  __DATA_CONST,__const  _ACAccountTypeIdentifierCalDAVLegacy
+0x1e0dfe228  __DATA_CONST,__const  _ACAccountTypeIdentifierCardDAV
+0x1e0dfe220  __DATA_CONST,__const  _ACAccountTypeIdentifierCardDAVLegacy
+0x1e0dfe218  __DATA_CONST,__const  _ACAccountTypeIdentifierCloudKit
+0x1e0dfe210  __DATA_CONST,__const  _ACAccountTypeIdentifierDCA
+0x1e0dfe208  __DATA_CONST,__const  _ACAccountTypeIdentifierDeviceLocator
+0x1e0dfe200  __DATA_CONST,__const  _ACAccountTypeIdentifierExchange
+0x1e0dfe1f8  __DATA_CONST,__const  _ACAccountTypeIdentifierFaceTime
+0x1e0dfe1f0  __DATA_CONST,__const  _ACAccountTypeIdentifierFacebook
+0x1e0dfe1e8  __DATA_CONST,__const  _ACAccountTypeIdentifierFacebookDeprecated
+0x1e0dfe1e0  __DATA_CONST,__const  _ACAccountTypeIdentifierFacebookLegacy
+0x1e0dfe1d8  __DATA_CONST,__const  _ACAccountTypeIdentifierFindMyFriends
+0x1e0dfe1d0  __DATA_CONST,__const  _ACAccountTypeIdentifierFlickr
+0x19fd8c494  __TEXT,__text  _ACAccountTypeIdentifierForASSAccountType
+0x1e0dfe1c8  __DATA_CONST,__const  _ACAccountTypeIdentifierGameCenter
+0x1e0dfe1c0  __DATA_CONST,__const  _ACAccountTypeIdentifierGmail
+0x1e0dfe1b8  __DATA_CONST,__const  _ACAccountTypeIdentifierHolidayCalendar
+0x1e0dfe1b0  __DATA_CONST,__const  _ACAccountTypeIdentifierHotmail
+0x1e0dfe1a8  __DATA_CONST,__const  _ACAccountTypeIdentifierIDMS
+0x1e0dfe1a0  __DATA_CONST,__const  _ACAccountTypeIdentifierIMAP
+0x1e0dfe198  __DATA_CONST,__const  _ACAccountTypeIdentifierIMAPMail
+0x1e0dfe190  __DATA_CONST,__const  _ACAccountTypeIdentifierIMAPNotes
+0x1e0dfe188  __DATA_CONST,__const  _ACAccountTypeIdentifierIdentityServices
+0x1e0dfe180  __DATA_CONST,__const  _ACAccountTypeIdentifierJabber
+0x1e0dfe178  __DATA_CONST,__const  _ACAccountTypeIdentifierKerberosSSO
+0x1e0dfe170  __DATA_CONST,__const  _ACAccountTypeIdentifierKerberosSSODeprecated
+0x1e0dfe168  __DATA_CONST,__const  _ACAccountTypeIdentifierKey
+0x1e0dfe160  __DATA_CONST,__const  _ACAccountTypeIdentifierLDAP
+0x1e0dfe158  __DATA_CONST,__const  _ACAccountTypeIdentifierLinkedInDeprecated
+0x1e0dfe150  __DATA_CONST,__const  _ACAccountTypeIdentifierLinkedInLegacy
+0x1e0dfe148  __DATA_CONST,__const  _ACAccountTypeIdentifierMSO
+0x1e0dfe140  __DATA_CONST,__const  _ACAccountTypeIdentifierMadrid
+0x1e0dfe138  __DATA_CONST,__const  _ACAccountTypeIdentifierOSXServer
+0x1e0dfe130  __DATA_CONST,__const  _ACAccountTypeIdentifierOSXServerDeprecated
+0x1e0dfe128  __DATA_CONST,__const  _ACAccountTypeIdentifierOnMyDevice
+0x1e0dfe120  __DATA_CONST,__const  _ACAccountTypeIdentifierPOP
+0x1e0dfe118  __DATA_CONST,__const  _ACAccountTypeIdentifierPublishedCalendar
+0x1e0dfe110  __DATA_CONST,__const  _ACAccountTypeIdentifierQQ
+0x1e0dfe108  __DATA_CONST,__const  _ACAccountTypeIdentifierRemoteManagement
+0x1e0dfe100  __DATA_CONST,__const  _ACAccountTypeIdentifierSMTP
+0x1e0dfe0f8  __DATA_CONST,__const  _ACAccountTypeIdentifierSinaWeibo
+0x1e0dfe0f0  __DATA_CONST,__const  _ACAccountTypeIdentifierSinaWeiboDeprecated
+0x1e0dfe0e8  __DATA_CONST,__const  _ACAccountTypeIdentifierSingleSignOn
+0x1e0dfe0e0  __DATA_CONST,__const  _ACAccountTypeIdentifierSubscribedCalendar
+0x1e0dfe0d8  __DATA_CONST,__const  _ACAccountTypeIdentifierTencentWeibo
+0x1e0dfe0d0  __DATA_CONST,__const  _ACAccountTypeIdentifierTencentWeiboDeprecated
+0x1e0dfe0c8  __DATA_CONST,__const  _ACAccountTypeIdentifierTudou
+0x1e0dfe0c0  __DATA_CONST,__const  _ACAccountTypeIdentifierTwitter
+0x1e0dfe0b8  __DATA_CONST,__const  _ACAccountTypeIdentifierTwitterDeprecated
+0x1e0dfe0b0  __DATA_CONST,__const  _ACAccountTypeIdentifierVimeo
+0x1e0dfe0a8  __DATA_CONST,__const  _ACAccountTypeIdentifierYahoo
+0x1e0dfe0a0  __DATA_CONST,__const  _ACAccountTypeIdentifierYahooIM
+0x1e0dfe098  __DATA_CONST,__const  _ACAccountTypeIdentifierYelp
+0x1e0dfe090  __DATA_CONST,__const  _ACAccountTypeIdentifierYouku
+0x1e0dfe088  __DATA_CONST,__const  _ACAccountTypeIdentifieriTunesStore
+0x1e0dfe080  __DATA_CONST,__const  _ACAccountTypeIdentifieriTunesStoreSandbox
+0x1e0dfe078  __DATA_CONST,__const  _ACAuthenticationSchemeAPOP
+0x1e0dfe070  __DATA_CONST,__const  _ACAuthenticationSchemeAnyPlainText
+0x1e0dfe068  __DATA_CONST,__const  _ACBackToMyMacTokenKey
+0x1e0dfe060  __DATA_CONST,__const  _ACChangeTypeAdded
+0x1e0dfe058  __DATA_CONST,__const  _ACChangeTypeNone
+0x1e0dfe050  __DATA_CONST,__const  _ACChangeTypeRemoved
+0x1e0dfe048  __DATA_CONST,__const  _ACCloudKitContainerUserIDKey
+0x1e0dfe040  __DATA_CONST,__const  _ACCloudKitTokenKey
+0x1e0dfe038  __DATA_CONST,__const  _ACCloudKitVideoTokenKey
+0x1e0dfe030  __DATA_CONST,__const  _ACContinuationTokenCreationKey
+0x1e0dfe028  __DATA_CONST,__const  _ACContinuationTokenKey
+0x1e0dfe020  __DATA_CONST,__const  _ACCredentialTypeAppleIDAuthentication
+0x1e0dfe018  __DATA_CONST,__const  _ACCredentialTypeHybrid
+0x1e0dfe010  __DATA_CONST,__const  _ACCredentialTypeKerberos
+0x1e0dfe008  __DATA_CONST,__const  _ACCredentialTypeOAuth
+0x1e0dfe000  __DATA_CONST,__const  _ACCredentialTypeOAuth2
+0x1e0dfdff8  __DATA_CONST,__const  _ACCredentialTypePassword
+0x1e0dfdff0  __DATA_CONST,__const  _ACCredentialTypeToken
+0x1e0dfdfe8  __DATA_CONST,__const  _ACCredentialTypeYahooXYMPKI
+0x1e0dfdfe0  __DATA_CONST,__const  _ACDAccountStoreDidChangeNotification
+0x19fd8b628  __TEXT,__text  _ACDGetAdamOrDisplayIDForPID
+0x19fd563f4  __TEXT,__text  _ACDGetProcNameForPID
+0x19fd8b664  __TEXT,__text  _ACDGetStoreOrBundleIDForPID
+0x19fd8b78c  __TEXT,__text  _ACDGetTeamIDForBundleURL
+0x19fd4e994  __TEXT,__text  _ACDataclassEnumSetForACManagedDataclassSet
+0x19fd8bec4  __TEXT,__text  _ACDataclassForACAccountDataclass
+0x19fd8c6d8  __TEXT,__text  _ACDataclassForASSDataclass
+0x1e0dfdfd8  __DATA_CONST,__const  _ACEmailAliasKeyColor
+0x1e0dfdfd0  __DATA_CONST,__const  _ACEmailAliasKeyDisplayName
+0x1e0dfdfc8  __DATA_CONST,__const  _ACEmailAliasKeyEmailAddress
+0x1e0dfdfc0  __DATA_CONST,__const  _ACEmailAliasKeyEmailAddresses
+0x1e0dfdfb8  __DATA_CONST,__const  _ACEmailAliasKeyIsDefault
+0x1e0dfdfb0  __DATA_CONST,__const  _ACEmailAliasKeyIsEnabled
+0x1e0dfdfa8  __DATA_CONST,__const  _ACEmailAliasKeyIsPrimary
+0x1e0dfdfa0  __DATA_CONST,__const  _ACErrorDomain
+0x1e0dfdf98  __DATA_CONST,__const  _ACErrorInvalidPropertiesKey
+0x1e0dfdf90  __DATA_CONST,__const  _ACErrorKeychainDomain
+0x1e0dfdf88  __DATA_CONST,__const  _ACFacebookAppIdKey
+0x1e0dfdf80  __DATA_CONST,__const  _ACFacebookAppIdKeyDeprecated
+0x1e0dfdf78  __DATA_CONST,__const  _ACFacebookAudienceEveryone
+0x1e0dfdf70  __DATA_CONST,__const  _ACFacebookAudienceFriends
+0x1e0dfdf68  __DATA_CONST,__const  _ACFacebookAudienceKey
+0x1e0dfdf60  __DATA_CONST,__const  _ACFacebookAudienceKeyDeprecated
+0x1e0dfdf58  __DATA_CONST,__const  _ACFacebookAudienceOnlyMe
+0x1e0dfdf50  __DATA_CONST,__const  _ACFacebookPermissionsKey
+0x1e0dfdf48  __DATA_CONST,__const  _ACFacebookPermissionsKeyDeprecated
+0x1e0dfdf40  __DATA_CONST,__const  _ACFindMyFriendsAppTokenKey
+0x1e0dfdf38  __DATA_CONST,__const  _ACFindMyFriendsTokenKey
+0x1e0dfdf30  __DATA_CONST,__const  _ACFindMyiPhoneAppTokenKey
+0x1e0dfdf28  __DATA_CONST,__const  _ACFindMyiPhoneSiriTokenKey
+0x1e0dfdf20  __DATA_CONST,__const  _ACFindMyiPhoneTokenKey
+0x1e0dfdf18  __DATA_CONST,__const  _ACGrandslamApplicationIdentifierKey
+0x1e0dfdf10  __DATA_CONST,__const  _ACGrandslamTokenIdentifierKey
+0x1e0dfdf08  __DATA_CONST,__const  _ACHSATokenKey
+0x19fd55278  __TEXT,__text  _ACHashedString
+0x1e0dfdf00  __DATA_CONST,__const  _ACHeartbeatTokenCreationKey
+0x1e0dfdef8  __DATA_CONST,__const  _ACHeartbeatTokenKey
+0x19fd44ef0  __TEXT,__text  _ACIsAccountsd
+0x19fd50f28  __TEXT,__text  _ACIsInternal
+0x1e0dfdef0  __DATA_CONST,__const  _ACKeepPasswordsAround
+0x1e0dfdee8  __DATA_CONST,__const  _ACKeyTransparencyTokenKey
+0x1e0dfdee0  __DATA_CONST,__const  _ACLinkedInAppIdKeyDeprecated
+0x1e0dfded8  __DATA_CONST,__const  _ACLinkedInPermissionsKeyDeprecated
+0x1e0dfded0  __DATA_CONST,__const  _ACLiverpoolContainerIdKey
+0x1e0dfdec8  __DATA_CONST,__const  _ACMDMServerAuthTokenKey
+0x1e0dfdec0  __DATA_CONST,__const  _ACMapsTokenKey
+0x1e0dfdeb8  __DATA_CONST,__const  _ACMonitoredAccountStoreDidChangeNotification
+0x19fd9f888  __TEXT,__const  _ACNotifyCacheEmptyArrayGeneration
+0x19fd9f880  __TEXT,__const  _ACNotifyCacheUnknownGeneration
+0x1e0dfdeb0  __DATA_CONST,__const  _ACOAuthGraphAPITokenKey
+0x1e0dfdea8  __DATA_CONST,__const  _ACOAuthTokenKey
+0x1e0dfdea0  __DATA_CONST,__const  _ACOAuthTokenNoSyncKey
+0x1e0dfde98  __DATA_CONST,__const  _ACOAuthTokenNoSyncSeparator
+0x1e0dfde90  __DATA_CONST,__const  _ACOAuthTokenSecretKey
+0x1e0dfde88  __DATA_CONST,__const  _ACOldPasswordKey
+0x1e0dfde80  __DATA_CONST,__const  _ACPasswordKey
+0x1e0dfde78  __DATA_CONST,__const  _ACPasswordResetTokenBackupKey
+0x1e0dfde70  __DATA_CONST,__const  _ACPasswordResetTokenCreationKey
+0x1e0dfde68  __DATA_CONST,__const  _ACPasswordResetTokenKey
+0x1e0dfde60  __DATA_CONST,__const  _ACPropertyKeyAccountProperties
+0x1e0dfde58  __DATA_CONST,__const  _ACPropertyKeyAccountType
+0x1e0dfde50  __DATA_CONST,__const  _ACPropertyKeyActive
+0x1e0dfde48  __DATA_CONST,__const  _ACPropertyKeyAuthenticated
+0x1e0dfde40  __DATA_CONST,__const  _ACPropertyKeyCredential
+0x1e0dfde38  __DATA_CONST,__const  _ACPropertyKeyDataclassProperties
+0x1e0dfde30  __DATA_CONST,__const  _ACPropertyKeyDate
+0x1e0dfde28  __DATA_CONST,__const  _ACPropertyKeyEnabledDataclasses
+0x1e0dfde20  __DATA_CONST,__const  _ACPropertyKeyParent
+0x1e0dfde18  __DATA_CONST,__const  _ACPropertyKeyProvisionedDataclasses
+0x1e0dfde10  __DATA_CONST,__const  _ACPropertyKeyVisible
+0x1e0dfde08  __DATA_CONST,__const  _ACPropertyKeyWarmingUp
+0x1e0dfde00  __DATA_CONST,__const  _ACPurposeKey
+0x1e0dfddf8  __DATA_CONST,__const  _ACRawPasswordKey
+0x19fd77a18  __TEXT,__text  _ACRedactPIIInObject
+0x1e0dfddf0  __DATA_CONST,__const  _ACRemoteDeviceCommandAddAccount
+0x1e0dfdde8  __DATA_CONST,__const  _ACRemoteDeviceCommandDeleteAccount
+0x1e0dfdde0  __DATA_CONST,__const  _ACRemoteDeviceCommandDeleteAllAccounts
+0x1e0dfddd8  __DATA_CONST,__const  _ACRemoteDeviceCommandFetchAccounts
+0x1e0dfddd0  __DATA_CONST,__const  _ACRemoteDeviceCommandInvalidateFetchedAccountsCache
+0x1e0dfddc8  __DATA_CONST,__const  _ACRemoteDeviceCommandShowCredentialPrompt
+0x1e0dfddc0  __DATA_CONST,__const  _ACRemoteDeviceCommandUpdateAccount
+0x1e0dfddb8  __DATA_CONST,__const  _ACRemoteDeviceCommandUpdateAccountCredential
+0x1e0dfddb0  __DATA_CONST,__const  _ACRemoteDeviceOptionAccountQueryIgnoreCache
+0x1e0dfdda8  __DATA_CONST,__const  _ACRemoteDeviceOptionAskForReply
+0x1e0dfdda0  __DATA_CONST,__const  _ACRemoteDeviceOptionPreloadedPropertiesArray
+0x1e0dfdd98  __DATA_CONST,__const  _ACRemoteDeviceOptionTargetDeviceBTUUID
+0x1e0dfdd90  __DATA_CONST,__const  _ACSearchPartyTokenKey
+0x1e0dfdd88  __DATA_CONST,__const  _ACShouldSuppressPromptsKey
+0x1e0dfdd80  __DATA_CONST,__const  _ACTencentWeiboAppIdKey
+0x1e0dfdd78  __DATA_CONST,__const  _ACTencentWeiboAppIdKeyDeprecated
+0x1e0dfdd70  __DATA_CONST,__const  _ACTencentWeiboClientConsumerKey
+0x1e0dfdd68  __DATA_CONST,__const  _ACTokenExpiryDateKey
+0x1e0dfdd60  __DATA_CONST,__const  _ACTokenKey
+0x1e0dfdd58  __DATA_CONST,__const  _ACTrustedDeviceIDTokenKey
+0x1e0dfdd50  __DATA_CONST,__const  _ACYahooXYMPKICookieCrumbKey
+0x1e0dfdd48  __DATA_CONST,__const  _ACYahooXYMPKICookieTKey
+0x1e0dfdd40  __DATA_CONST,__const  _ACYahooXYMPKICookieYKey
+0x1e0dfdd38  __DATA_CONST,__const  _ACYahooXYMPKITokenKey
+0x1ee0776e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACAccount
+0x1ee077460  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACAccountCredential
+0x1ef708440  __AUTH,__objc_data  _OBJC_CLASS_$_ACAccountMigrationState
+0x1ee0777a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACAccountStore
+0x1ee077348  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACAccountStoreCache
+0x1ee0775f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACAccountStoreClientSideListener
+0x1ee077690  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACAccountType
+0x1ee077258  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACAccountUniquingCache
+0x1ee077230  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACCredentialCache
+0x1ee0774b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACCredentialItem
+0x1ef708418  __AUTH,__objc_data  _OBJC_CLASS_$_ACDManagedAccessOptionsKey
+0x1ef708468  __AUTH,__objc_data  _OBJC_CLASS_$_ACDManagedAccount
+0x1ef708080  __AUTH,__objc_data  _OBJC_CLASS_$_ACDManagedAccountProperty
+0x1ef7083f0  __AUTH,__objc_data  _OBJC_CLASS_$_ACDManagedAccountType
+0x1ef7083c8  __AUTH,__objc_data  _OBJC_CLASS_$_ACDManagedAuthorization
+0x1ef7083a0  __AUTH,__objc_data  _OBJC_CLASS_$_ACDManagedCredentialItem
+0x1ef708378  __AUTH,__objc_data  _OBJC_CLASS_$_ACDManagedDataclass
+0x1ee077668  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACDataclassAction
+0x1ef708350  __AUTH,__objc_data  _OBJC_CLASS_$_ACManagedDefaults
+0x1ee077140  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACMonitoredAccountStore
+0x1ee077190  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACMutableTrackedSet
+0x1ee0772f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACNotifyAccountCache
+0x1ee0772d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACNotifyReader
+0x1ef707c48  __AUTH,__objc_data  _OBJC_CLASS_$_ACNotifyWriter
+0x1ef708058  __AUTH,__objc_data  _OBJC_CLASS_$_ACOAuthSigner
+0x1ef708328  __AUTH,__objc_data  _OBJC_CLASS_$_ACPersonaManager
+0x1ef7084e0  __AUTH,__objc_data  _OBJC_CLASS_$_ACPluginLoader
+0x1ef708300  __AUTH,__objc_data  _OBJC_CLASS_$_ACRateLimiter
+0x1ee0775c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACRemoteAccountStoreInterface
+0x1ee0775a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACRemoteAccountStoreSession
+0x1ef7082d8  __AUTH,__objc_data  _OBJC_CLASS_$_ACSystemConfigManager
+0x1ee077780  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACTimedExpirer
+0x1ee0773e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACTrackedSet
+0x1ee077578  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACTrackedXPCConnection
+0x1ef7084b8  __AUTH,__objc_data  _OBJC_CLASS_$_ACXPCEventSubscriber
+0x1ee0773c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ACZeroingString
+0x1ee0776b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACAccount
+0x1ee077438  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACAccountCredential
+0x1ef7082b0  __AUTH,__objc_data  _OBJC_METACLASS_$_ACAccountMigrationState
+0x1ee0777d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACAccountStore
+0x1ee077320  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACAccountStoreCache
+0x1ee077550  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACAccountStoreClientSideListener
+0x1ee077640  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACAccountType
+0x1ee077208  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACAccountUniquingCache
+0x1ee077280  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACCredentialCache
+0x1ee077488  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACCredentialItem
+0x1ef708288  __AUTH,__objc_data  _OBJC_METACLASS_$_ACDManagedAccessOptionsKey
+0x1ef708260  __AUTH,__objc_data  _OBJC_METACLASS_$_ACDManagedAccount
+0x1ef707e78  __AUTH,__objc_data  _OBJC_METACLASS_$_ACDManagedAccountProperty
+0x1ef708238  __AUTH,__objc_data  _OBJC_METACLASS_$_ACDManagedAccountType
+0x1ef708210  __AUTH,__objc_data  _OBJC_METACLASS_$_ACDManagedAuthorization
+0x1ef7081e8  __AUTH,__objc_data  _OBJC_METACLASS_$_ACDManagedCredentialItem
+0x1ef7081c0  __AUTH,__objc_data  _OBJC_METACLASS_$_ACDManagedDataclass
+0x1ee077618  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACDataclassAction
+0x1ef708198  __AUTH,__objc_data  _OBJC_METACLASS_$_ACManagedDefaults
+0x1ee077118  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACMonitoredAccountStore
+0x1ee077168  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACMutableTrackedSet
+0x1ee077370  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACNotifyAccountCache
+0x1ee0772a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACNotifyReader
+0x1ef707c20  __AUTH,__objc_data  _OBJC_METACLASS_$_ACNotifyWriter
+0x1ef707e50  __AUTH,__objc_data  _OBJC_METACLASS_$_ACOAuthSigner
+0x1ef708170  __AUTH,__objc_data  _OBJC_METACLASS_$_ACPersonaManager
+0x1ef708508  __AUTH,__objc_data  _OBJC_METACLASS_$_ACPluginLoader
+0x1ef708148  __AUTH,__objc_data  _OBJC_METACLASS_$_ACRateLimiter
+0x1ee077528  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACRemoteAccountStoreInterface
+0x1ee077500  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACRemoteAccountStoreSession
+0x1ef708120  __AUTH,__objc_data  _OBJC_METACLASS_$_ACSystemConfigManager
+0x1ee077730  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACTimedExpirer
+0x1ee077410  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACTrackedSet
+0x1ee0774d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACTrackedXPCConnection
+0x1ef708490  __AUTH,__objc_data  _OBJC_METACLASS_$_ACXPCEventSubscriber
+0x1ee077398  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ACZeroingString
+0x19fd5d39c  __TEXT,__text  __ACLogCache
+0x19fd45dd4  __TEXT,__text  __ACLogSystem
+0x19fd586fc  __TEXT,__text  __ACPLogSystem
+0x19fd4600c  __TEXT,__text  __ACSignpostCreate
+0x19fd482ac  __TEXT,__text  __ACSignpostGetNanoseconds
+0x19fd4603c  __TEXT,__text  __ACSignpostLogSystem
+0x19fd8c93c  __TEXT,__text  _createACAccountWithASAccountProperties
+0x19fd8ca24  __TEXT,__text  _createACAccountWithASAccountPropertiesAndACAccountType
+0x1e0dfc4b0  __DATA_CONST,__const  _kACAccountIdentifier
+0x1e0dfc4a8  __DATA_CONST,__const  _kACAllowedSSLCertificatesKey
+0x1e0dfc4a0  __DATA_CONST,__const  _kACDAccountsTestingEntitlement
+0x1e0dfc498  __DATA_CONST,__const  _kACDAllAccountsAccessEntitlement
+0x1e0dfc490  __DATA_CONST,__const  _kACDAppleAccountsFullAccessEntitlement
+0x1e0dfc488  __DATA_CONST,__const  _kACDAppleIDAuthenticationDefaultAccessEntitlement
+0x1e0dfc480  __DATA_CONST,__const  _kACDAppleMediaServicesFullAccessEntitlement
+0x1e0dfc478  __DATA_CONST,__const  _kACDApplicationIDFromPIDEntitlement
+0x1e0dfc470  __DATA_CONST,__const  _kACDAuthenticationDialogHostEntitlement
+0x1e0dfc468  __DATA_CONST,__const  _kACDBundleIDSpoofingEntitlement
+0x1e0dfc460  __DATA_CONST,__const  _kACDConnectBeforeAccountMigrationDidFinishEntitlement
+0x1e0dfc458  __DATA_CONST,__const  _kACDCustomClientAccessInfoEntitlement
+0x1e0dfc450  __DATA_CONST,__const  _kACDDetachedCAFullAccessEntitlement
+0x1e0dfc448  __DATA_CONST,__const  _kACDFacebookAccountsDefaultAccessEntitlement
+0x1e0dfc440  __DATA_CONST,__const  _kACDFlickrAccountsDefaultAccessEntitlement
+0x1e0dfc438  __DATA_CONST,__const  _kACDIDMSAccountFullAccessEntitlement
+0x1e0dfc430  __DATA_CONST,__const  _kACDInactiveAcccountsAccessEntitlement
+0x1e0dfc428  __DATA_CONST,__const  _kACDLinkedInAccountsDefaultAccessEntitlement
+0x1e0dfc420  __DATA_CONST,__const  _kACDOSXServerAccountsDefaultAccessEntitlement
+0x1e0dfc418  __DATA_CONST,__const  _kACDPublishedCalendarFullAccessEntitlement
+0x1e0dfc410  __DATA_CONST,__const  _kACDRemoteManagementFullAccessEntitlement
+0x1e0dfc408  __DATA_CONST,__const  _kACDShouldNotCoalesceRequests
+0x1e0dfc400  __DATA_CONST,__const  _kACDShouldNotUseParentAccount
+0x1e0dfc3f8  __DATA_CONST,__const  _kACDShutdownAccountsDEntitlement
+0x1e0dfc3f0  __DATA_CONST,__const  _kACDTencentWeiboAccountsDefaultAccessEntitlement
+0x1e0dfc3e8  __DATA_CONST,__const  _kACDTudouAccountsDefaultAccessEntitlement
+0x1e0dfc3e0  __DATA_CONST,__const  _kACDTwitterAccountsDefaultAccessEntitlement
+0x1e0dfc3d8  __DATA_CONST,__const  _kACDVimeoAccountsDefaultAccessEntitlement
+0x1e0dfc3d0  __DATA_CONST,__const  _kACDWeiboAccountsDefaultAccessEntitlement
+0x1e0dfc3c8  __DATA_CONST,__const  _kACDYelpAccountsDefaultAccessEntitlement
+0x1e0dfc3c0  __DATA_CONST,__const  _kACDYoukuAccountsDefaultAccessEntitlement
+0x1e0dfc3b8  __DATA_CONST,__const  _kACDiTunesAccountAccessEntitlement
+0x1e0dfc3b0  __DATA_CONST,__const  _kACDiscoverPropertiesDiscoverConnectionPropertiesKey
+0x1e0dfc3a8  __DATA_CONST,__const  _kACDiscoverPropertiesForAccountCreationKey
+0x1e0dfc3a0  __DATA_CONST,__const  _kACDiscoverPropertiesRefreshEmailAliasesKey
+0x1e0dfc398  __DATA_CONST,__const  _kACDiscoverPropertiesRefreshEmailRulesKey
+0x1e0dfc390  __DATA_CONST,__const  _kACDiscoverPropertiesShouldSaveKey
+0x1e0dfc388  __DATA_CONST,__const  _kACIDServiceCommandAccountChanged
+0x1e0dfc380  __DATA_CONST,__const  _kACIDServiceCommandAccountDeleted
+0x1e0dfc378  __DATA_CONST,__const  _kACIDServiceCommandAuthenticateAccount
+0x1e0dfc370  __DATA_CONST,__const  _kACIDServiceCommandNewAccount
+0x1e0dfc368  __DATA_CONST,__const  _kACIDServiceCommandPromptUser
+0x1e0dfc360  __DATA_CONST,__const  _kACRenewCredentialsAppleIDServiceTypeKey
+0x1e0dfc358  __DATA_CONST,__const  _kACRenewCredentialsCallbackURLKey
+0x1e0dfc350  __DATA_CONST,__const  _kACRenewCredentialsLoginURLKey
+0x1e0dfc348  __DATA_CONST,__const  _kACRenewCredentialsProxiedAppBundleIDKey
+0x1e0dfc340  __DATA_CONST,__const  _kACRenewCredentialsReasonStringKey
+0x1e0dfc338  __DATA_CONST,__const  _kACRenewCredentialsServicesKey
+0x1e0dfc330  __DATA_CONST,__const  _kACRenewCredentialsShouldAvoidUIKey
+0x1e0dfc328  __DATA_CONST,__const  _kACRenewCredentialsShouldForceKey
+0x1e0dfc320  __DATA_CONST,__const  _kACRenewCredentialsShouldPromptBeforeRenewKey
+0x1e0dfc318  __DATA_CONST,__const  _kACVerifyCredentialsShouldSaveKey
+0x1e0dfc310  __DATA_CONST,__const  _kASSASChangeAccountChangeTypeKey
+0x1e0dfc308  __DATA_CONST,__const  _kASSASChangeAccountIdentifierKey
+0x1e0dfc300  __DATA_CONST,__const  _kASSASChangeAccountOriginallyEnabledDataclassesKey
+0x1e0dfc2f8  __DATA_CONST,__const  _kASSASChangeAccountTypeKey
+0x1e0dfc2f0  __DATA_CONST,__const  _kASSAccountCalendarsWereMigrated
+0x1e0dfc2e8  __DATA_CONST,__const  _kASSAccountChildAccounts
+0x1e0dfc2e0  __DATA_CONST,__const  _kASSAccountClass
+0x1e0dfc2d8  __DATA_CONST,__const  _kASSAccountDataclassBackup
+0x1e0dfc2d0  __DATA_CONST,__const  _kASSAccountDataclassBookmarks
+0x1e0dfc2c8  __DATA_CONST,__const  _kASSAccountDataclassCalendars
+0x1e0dfc2c0  __DATA_CONST,__const  _kASSAccountDataclassContacts
+0x1e0dfc2b8  __DATA_CONST,__const  _kASSAccountDataclassContactsSearch
+0x1e0dfc2b0  __DATA_CONST,__const  _kASSAccountDataclassDeviceLocator
+0x1e0dfc2a8  __DATA_CONST,__const  _kASSAccountDataclassKeyValue
+0x1e0dfc2a0  __DATA_CONST,__const  _kASSAccountDataclassMail
+0x1e0dfc298  __DATA_CONST,__const  _kASSAccountDataclassMediaStream
+0x1e0dfc290  __DATA_CONST,__const  _kASSAccountDataclassNotes
+0x1e0dfc288  __DATA_CONST,__const  _kASSAccountDataclassReminders
+0x1e0dfc280  __DATA_CONST,__const  _kASSAccountDataclassSharedStreams
+0x1e0dfc278  __DATA_CONST,__const  _kASSAccountDataclassShoebox
+0x1e0dfc270  __DATA_CONST,__const  _kASSAccountDataclassUbiquity
+0x1e0dfc268  __DATA_CONST,__const  _kASSAccountDeleteActionDeleteData
+0x1e0dfc260  __DATA_CONST,__const  _kASSAccountDeleteActionMergeData
+0x1e0dfc258  __DATA_CONST,__const  _kASSAccountDisplayName
+0x1e0dfc250  __DATA_CONST,__const  _kASSAccountEnabledDataclasses
+0x1e0dfc248  __DATA_CONST,__const  _kASSAccountIdentifier
+0x1e0dfc240  __DATA_CONST,__const  _kASSAccountPreventRecentsSyncing
+0x1e0dfc238  __DATA_CONST,__const  _kASSAccountProvisionedDataclasses
+0x1e0dfc230  __DATA_CONST,__const  _kASSAccountShortTypeString
+0x1e0dfc228  __DATA_CONST,__const  _kASSAccountSupportedDataclasses
+0x1e0dfc220  __DATA_CONST,__const  _kASSAccountSyncIdentifier
+0x1e0dfc218  __DATA_CONST,__const  _kASSAccountType
+0x1e0dfc210  __DATA_CONST,__const  _kASSAccountTypeString
+0x1e0dfc208  __DATA_CONST,__const  _kASSAccountUsername
+0x1e0dfc200  __DATA_CONST,__const  _kASSAppleAccountType
+0x1e0dfc1f8  __DATA_CONST,__const  _kASSBookmarkDAVAccountType
+0x1e0dfc1f0  __DATA_CONST,__const  _kASSCalDAVAccountType
+0x1e0dfc1e8  __DATA_CONST,__const  _kASSCalendarsAccountSubscribedCalendars
+0x1e0dfc1e0  __DATA_CONST,__const  _kASSCardDAVAccountType
+0x1e0dfc1d8  __DATA_CONST,__const  _kASSCastleIMAPAccountType
+0x1e0dfc1d0  __DATA_CONST,__const  _kASSDataclassDisplaySwitch
+0x1e0dfc1c8  __DATA_CONST,__const  _kASSDataclassRequiresUserConfirmation
+0x1e0dfc1c0  __DATA_CONST,__const  _kASSDataclassSupportsMultipleStores
+0x1e0dfc1b8  __DATA_CONST,__const  _kASSDataclassToggleActionDeleteLocalData
+0x1e0dfc1b0  __DATA_CONST,__const  _kASSDataclassToggleActionDeleteSyncData
+0x1e0dfc1a8  __DATA_CONST,__const  _kASSDataclassToggleActionKeepLocalData
+0x1e0dfc1a0  __DATA_CONST,__const  _kASSDataclassToggleActionMergeLocalData
+0x1e0dfc198  __DATA_CONST,__const  _kASSDataclassToggleActionMergeSyncData
+0x1e0dfc190  __DATA_CONST,__const  _kASSDataclassToggleActionNone
+0x1e0dfc188  __DATA_CONST,__const  _kASSExchangeAccountType
+0x1e0dfc180  __DATA_CONST,__const  _kASSGmailAccountType
+0x1e0dfc178  __DATA_CONST,__const  _kASSIMAPNotesAccountType
+0x1e0dfc170  __DATA_CONST,__const  _kASSLDAPAccountType
+0x1e0dfc168  __DATA_CONST,__const  _kASSMailAccountType
+0x1e0dfc160  __DATA_CONST,__const  _kASSMobileMeAccountType
+0x1e0dfc158  __DATA_CONST,__const  _kASSOnMyDeviceAccountType
+0x1e0dfc150  __DATA_CONST,__const  _kASSPlistAccountsKey
+0x1e0dfc148  __DATA_CONST,__const  _kASSPlistVersionKey
+0x1e0dfc140  __DATA_CONST,__const  _kASSPropertiesDeleteAccountActions
+0x1e0dfc138  __DATA_CONST,__const  _kASSPropertiesDisableDataclassActions
+0x1e0dfc130  __DATA_CONST,__const  _kASSPropertiesEnableDataclassActions
+0x1e0dfc128  __DATA_CONST,__const  _kASSPropertiesShowRemindersSeparately
+0x1e0dfc120  __DATA_CONST,__const  _kASSPropertiesSupportedDataclasses
+0x1e0dfc118  __DATA_CONST,__const  _kASSSMTPAccountType
+0x1e0dfc110  __DATA_CONST,__const  _kASSSubscribedCalendarAccountType
+0x1e0dfc108  __DATA_CONST,__const  _kASSYahooAccountType
+0x1e0dfc100  __DATA_CONST,__const  _kAccountAuthenticationTypeAppleID
+0x1e0dfc0f8  __DATA_CONST,__const  _kAccountAuthenticationTypeKerberos
+0x1e0dfc0f0  __DATA_CONST,__const  _kAccountAuthenticationTypeNone
+0x1e0dfc0e8  __DATA_CONST,__const  _kAccountAuthenticationTypeOAuth
+0x1e0dfc0e0  __DATA_CONST,__const  _kAccountAuthenticationTypeParent
+0x1e0dfc0d8  __DATA_CONST,__const  _kAccountDataclassAvailability
+0x1e0dfc0d0  __DATA_CONST,__const  _kAccountDataclassBackToMyMac
+0x1e0dfc0c8  __DATA_CONST,__const  _kAccountDataclassBackToMyMacDeprecated
+0x1e0dfc0c0  __DATA_CONST,__const  _kAccountDataclassBackup
+0x1e0dfc0b8  __DATA_CONST,__const  _kAccountDataclassBookmarks
+0x1e0dfc0b0  __DATA_CONST,__const  _kAccountDataclassCKDatabaseService
+0x1e0dfc0a8  __DATA_CONST,__const  _kAccountDataclassCKDeviceService
+0x1e0dfc0a0  __DATA_CONST,__const  _kAccountDataclassCKShareService
+0x1e0dfc098  __DATA_CONST,__const  _kAccountDataclassCalendars
+0x1e0dfc090  __DATA_CONST,__const  _kAccountDataclassCloudDesktop
+0x1e0dfc088  __DATA_CONST,__const  _kAccountDataclassCloudPhotos
+0x1e0dfc080  __DATA_CONST,__const  _kAccountDataclassContacts
+0x1e0dfc078  __DATA_CONST,__const  _kAccountDataclassContactsSearch
+0x1e0dfc070  __DATA_CONST,__const  _kAccountDataclassContent
+0x1e0dfc068  __DATA_CONST,__const  _kAccountDataclassCoreRoutine
+0x1e0dfc060  __DATA_CONST,__const  _kAccountDataclassDeviceLocator
+0x1e0dfc058  __DATA_CONST,__const  _kAccountDataclassHealth
+0x1e0dfc050  __DATA_CONST,__const  _kAccountDataclassHome
+0x1e0dfc048  __DATA_CONST,__const  _kAccountDataclassKeyValue
+0x1e0dfc040  __DATA_CONST,__const  _kAccountDataclassKeychainSync
+0x1e0dfc038  __DATA_CONST,__const  _kAccountDataclassMail
+0x1e0dfc030  __DATA_CONST,__const  _kAccountDataclassMediaStream
+0x1e0dfc028  __DATA_CONST,__const  _kAccountDataclassMessages
+0x1e0dfc020  __DATA_CONST,__const  _kAccountDataclassNetworkVPN
+0x1e0dfc018  __DATA_CONST,__const  _kAccountDataclassNews
+0x1e0dfc010  __DATA_CONST,__const  _kAccountDataclassNotes
+0x1e0dfc008  __DATA_CONST,__const  _kAccountDataclassNotifications
+0x1e0dfc000  __DATA_CONST,__const  _kAccountDataclassPhotos
+0x1e0dfbff8  __DATA_CONST,__const  _kAccountDataclassReminders
+0x1e0dfbff0  __DATA_CONST,__const  _kAccountDataclassServerDocuments
+0x1e0dfbfe8  __DATA_CONST,__const  _kAccountDataclassServerDocumentsDeprecated
+0x1e0dfbfe0  __DATA_CONST,__const  _kAccountDataclassShareLocation
+0x1e0dfbfd8  __DATA_CONST,__const  _kAccountDataclassShareMenu
+0x1e0dfbfd0  __DATA_CONST,__const  _kAccountDataclassSharedStreams
+0x1e0dfbfc8  __DATA_CONST,__const  _kAccountDataclassShoebox
+0x1e0dfbfc0  __DATA_CONST,__const  _kAccountDataclassSiri
+0x1e0dfbfb8  __DATA_CONST,__const  _kAccountDataclassSmartDefaults
+0x1e0dfbfb0  __DATA_CONST,__const  _kAccountDataclassStocks
+0x1e0dfbfa8  __DATA_CONST,__const  _kAccountDataclassUbiquity
+0x1ebcada38  __DATA,__data  _kAccountMigrationLockFilename
+0x19fd8b794  __TEXT,__text  _serializeSecCertificates
+0x19fd8b93c  __TEXT,__text  _serializeSecTrust
+0x19fd8b820  __TEXT,__text  _unserializeSecCertificates
+0x19fd8bb48  __TEXT,__text  _unserializeSecTrust
+```
+
+## Private
+
+```
+0x19fd441e0  __TEXT,__text  ___50+[ACNotificationRebroadcaster sharedRebroadcaster]_block_invoke
+0x19fd44210  __TEXT,__text  -[ACNotificationRebroadcaster init]
+0x19fd442a4  __TEXT,__text  +[ACNotificationRebroadcaster sharedRebroadcaster].cold.1
+0x19fd442b8  __TEXT,__text  -[ACAccountStore init]
+0x19fd442c4  __TEXT,__text  +[ACTimedExpirer expirerWithTimeout:]
+0x19fd442f0  __TEXT,__text  -[ACTimedExpirer init]
+0x19fd44330  __TEXT,__text  -[ACAccountStore initWithRemoteEndpoint:effectiveBundleID:]
+0x19fd44534  __TEXT,__text  +[ACNotificationRebroadcaster sharedRebroadcaster]
+0x19fd4456c  __TEXT,__text  ___30+[ACAccountStore defaultStore]_block_invoke
+0x19fd445b8  __TEXT,__text  +[ACAccountStore defaultStore]
+0x19fd445f0  __TEXT,__text  +[ACAccountStore defaultStore].cold.1
+0x19fd44604  __TEXT,__text  -[ACAccountStore _testCache]
+0x19fd44610  __TEXT,__text  +[ACNotifyAccountCache suffixForAccountsForAccountType:fetchOptions:]
+0x19fd4465c  __TEXT,__text  +[ACAccountStoreCache sharedCache]
+0x19fd44694  __TEXT,__text  -[ACAccountStore _cache]
+0x19fd446ec  __TEXT,__text  +[ACAccountStoreCache sharedCache].cold.1
+0x19fd44700  __TEXT,__text  -[ACCredentialCache initWithValidityDuration:]
+0x19fd447b0  __TEXT,__text  ___34+[ACAccountStoreCache sharedCache]_block_invoke
+0x19fd447e0  __TEXT,__text  -[ACAccountUniquingCache init]
+0x19fd44848  __TEXT,__text  -[ACAccountStoreCache setupMemoryNotifications]
+0x19fd44938  __TEXT,__text  -[ACAccountStoreCache init]
+0x19fd44a04  __TEXT,__text  -[ACAccountStoreCache setCredentialCache:]
+0x19fd44a0c  __TEXT,__text  -[ACAccountStore accountsWithAccountTypeIdentifiers:preloadedProperties:error:]
+0x19fd44d70  __TEXT,__text  ___47-[ACAccountStoreCache cachedAccountsForSuffix:]_block_invoke
+0x19fd44e08  __TEXT,__text  -[ACAccountStoreCache cachedAccountsForSuffix:]
+0x19fd44f28  __TEXT,__text  +[ACNotifyAccountCache _getUID]
+0x19fd44f60  __TEXT,__text  -[ACNotifyAccountCache cachedAccounts]
+0x19fd45048  __TEXT,__text  ___54-[ACAccountUniquingCache cachedAccountsByIdentifiers:]_block_invoke
+0x19fd451f8  __TEXT,__text  _ac_unfair_lock_perform_with_result
+0x19fd45284  __TEXT,__text  _ac_unfair_lock_perform_with_result
+0x19fd45310  __TEXT,__text  _ac_unfair_lock_perform_with_result
+0x19fd4539c  __TEXT,__text  _ac_unfair_lock_perform_with_result
+0x19fd45428  __TEXT,__text  _ac_unfair_lock_perform_with_result
+0x19fd454b4  __TEXT,__text  ___38-[ACNotifyAccountCache cachedAccounts]_block_invoke
+0x19fd455b8  __TEXT,__text  -[ACAccountUniquingCache cachedAccountsByIdentifiers:]
+0x19fd4565c  __TEXT,__text  -[ACAccountStore _cachedAccountsWithAccountTypeIdentifiers:completion:]
+0x19fd45814  __TEXT,__text  -[ACAccountUniquingCache clearAccountsByIdentifiers:]
+0x19fd458f4  __TEXT,__text  ___79-[ACAccountStore accountsWithAccountTypeIdentifiers:preloadedProperties:error:]_block_invoke
+0x19fd45c7c  __TEXT,__text  ___53-[ACAccountUniquingCache clearAccountsByIdentifiers:]_block_invoke
+0x19fd45e0c  __TEXT,__text  _ACIsAccountsd.cold.1
+0x19fd45e20  __TEXT,__text  +[ACNotifyAccountCache _getUID].cold.1
+0x19fd45e34  __TEXT,__text  +[ACNotifyAccountCache cacheKeyForSuffix:]
+0x19fd45edc  __TEXT,__text  ___ACIsAccountsd_block_invoke
+0x19fd45f40  __TEXT,__text  ___31+[ACNotifyAccountCache _getUID]_block_invoke
+0x19fd45fb4  __TEXT,__text  -[ACAccountStore accountsWithAccountTypeIdentifiers:error:]
+0x19fd45fc0  __TEXT,__text  __ACSignpostLogSystem.cold.1
+0x19fd45fd4  __TEXT,__text  ____ACSignpostLogSystem_block_invoke
+0x19fd46074  __TEXT,__text  -[ACAccountStore remoteAccountStoreSession]
+0x19fd460ec  __TEXT,__text  ___43-[ACAccountStore remoteAccountStoreSession]_block_invoke
+0x19fd46228  __TEXT,__text  -[ACAccountStoreClientSideListener init]
+0x19fd46260  __TEXT,__text  -[ACRemoteAccountStoreSession setEffectiveBundleID:]
+0x19fd46368  __TEXT,__text  -[ACAccountStore effectiveBundleID]
+0x19fd46374  __TEXT,__text  ___52-[ACRemoteAccountStoreSession setEffectiveBundleID:]_block_invoke
+0x19fd46390  __TEXT,__text  -[ACTimedExpirer scheduleExpiration:]
+0x19fd46474  __TEXT,__text  __ac_dispatch_remote_sync_try
+0x19fd4659c  __TEXT,__text  _ac_dispatch_remote_sync
+0x19fd46620  __TEXT,__text  +[ACRemoteAccountStoreInterface XPCInterface]
+0x19fd466b4  __TEXT,__text  ___45+[ACRemoteAccountStoreInterface XPCInterface]_block_invoke
+0x19fd466e4  __TEXT,__text  -[ACRemoteAccountStoreSession _connection]
+0x19fd467bc  __TEXT,__text  ___42-[ACRemoteAccountStoreSession _connection]_block_invoke
+0x19fd46a08  __TEXT,__text  ___42-[ACRemoteAccountStoreSession _connection]_block_invoke_2
+0x19fd46a64  __TEXT,__text  -[ACTrackedXPCConnection init]
+0x19fd46af8  __TEXT,__text  ___30-[ACTrackedXPCConnection init]_block_invoke
+0x19fd46ba4  __TEXT,__text  ___37-[ACTimedExpirer scheduleExpiration:]_block_invoke
+0x19fd46ce8  __TEXT,__text  -[ACAccountStoreCache cachedAccountTypeWithIdentifier:]
+0x19fd46d8c  __TEXT,__text  ___55-[ACAccountStoreCache cachedAccountTypeWithIdentifier:]_block_invoke
+0x19fd46dd0  __TEXT,__text  -[ACAccountStore accountTypeWithAccountTypeIdentifier:error:]
+0x19fd47058  __TEXT,__text  -[ACNotifyAccountCache cacheAccounts:clearIfWrong:]
+0x19fd47148  __TEXT,__text  -[ACAccountStoreCache cacheAccounts:forSuffix:clearIfWrong:]
+0x19fd4728c  __TEXT,__text  -[ACAccountUniquingCache cacheAccounts:]
+0x19fd4736c  __TEXT,__text  ___51-[ACNotifyAccountCache cacheAccounts:clearIfWrong:]_block_invoke
+0x19fd47548  __TEXT,__text  ___40-[ACAccountUniquingCache cacheAccounts:]_block_invoke
+0x19fd4767c  __TEXT,__text  ___66-[ACAccountStore _cacheFetchedAccountsOfMixedType:accountTypeIDs:]_block_invoke
+0x19fd47704  __TEXT,__text  ___60-[ACAccountStoreCache cacheAccounts:forSuffix:clearIfWrong:]_block_invoke
+0x19fd477a0  __TEXT,__text  +[ACNotifyAccountCache generationForAccounts:]
+0x19fd478d0  __TEXT,__text  -[ACNotifyAccountCache initWithKey:reader:uniquingCache:]
+0x19fd47984  __TEXT,__text  -[ACNotifyAccountCache setKey:]
+0x19fd47990  __TEXT,__text  -[ACNotifyAccountCache setReader:]
+0x19fd47998  __TEXT,__text  -[ACNotifyAccountCache reader]
+0x19fd479a4  __TEXT,__text  -[ACNotifyReader currentValue]
+0x19fd47b08  __TEXT,__text  -[ACNotifyAccountCache _lock_clearCachedAccounts]
+0x19fd47b40  __TEXT,__text  -[ACNotifyAccountCache initWithKey:uniquingCache:]
+0x19fd47bc8  __TEXT,__text  -[ACNotifyReader initWithKey:updateQueue:updateBlock:]
+0x19fd47d5c  __TEXT,__text  -[ACNotifyReader setCachedValue:]
+0x19fd47d64  __TEXT,__text  -[ACNotifyReader setKey:]
+0x19fd47d70  __TEXT,__text  -[ACAccountStore dealloc]
+0x19fd47dd4  __TEXT,__text  -[ACAccountStore .cxx_destruct]
+0x19fd47e6c  __TEXT,__text  -[ACTimedExpirer dealloc]
+0x19fd47eb4  __TEXT,__text  -[ACTimedExpirer cancelTimer]
+0x19fd47f7c  __TEXT,__text  ___29-[ACTimedExpirer cancelTimer]_block_invoke
+0x19fd47f9c  __TEXT,__text  -[ACTimedExpirer .cxx_destruct]
+0x19fd47fa8  __TEXT,__text  ____ACLogSystem_block_invoke
+0x19fd47fe0  __TEXT,__text  __ACLogSystem.cold.1
+0x19fd47ff4  __TEXT,__text  -[ACAccountStoreCache cacheAccounts:forSuffix:]
+0x19fd47ffc  __TEXT,__text  -[ACAccountStore _cacheFetchedAccountsOfMixedType:accountTypeIDs:]
+0x19fd48310  __TEXT,__text  ____ACSignpostGetNanoseconds_block_invoke
+0x19fd4831c  __TEXT,__text  ___Block_byref_object_copy_
+0x19fd4832c  __TEXT,__text  ___Block_byref_object_copy_
+0x19fd4833c  __TEXT,__text  ___Block_byref_object_copy_
+0x19fd4834c  __TEXT,__text  ___Block_byref_object_copy_
+0x19fd4835c  __TEXT,__text  -[ACAccount .cxx_destruct]
+0x19fd484c8  __TEXT,__text  -[ACAccount dealloc]
+0x19fd48534  __TEXT,__text  -[ACAccountType .cxx_destruct]
+0x19fd485e0  __TEXT,__text  -[ACAccount copyWithZone:]
+0x19fd4894c  __TEXT,__text  __ACSignpostGetNanoseconds.cold.1
+0x19fd48960  __TEXT,__text  ___Block_byref_object_dispose_
+0x19fd48968  __TEXT,__text  ___Block_byref_object_dispose_
+0x19fd48970  __TEXT,__text  ___Block_byref_object_dispose_
+0x19fd48978  __TEXT,__text  ___Block_byref_object_dispose_
+0x19fd48980  __TEXT,__text  -[ACAccount identifier]
+0x19fd489c8  __TEXT,__text  -[ACAccount accountType]
+0x19fd48a10  __TEXT,__text  -[ACAccount _setAccountStore:]
+0x19fd48a9c  __TEXT,__text  -[ACAccount parentAccount]
+0x19fd48ae4  __TEXT,__text  -[ACAccount notifyGenerationID]
+0x19fd48b5c  __TEXT,__text  -[ACAccount _clearCachedCredentials]
+0x19fd48ba4  __TEXT,__text  -[ACAccount _clearCachedChildAccounts]
+0x19fd48bf0  __TEXT,__text  -[ACAccount _clearCachedTrackedSets]
+0x19fd48c48  __TEXT,__text  -[ACAccountUniquingCache _lock_cacheParentChain:]
+0x19fd48d10  __TEXT,__text  -[ACAccount init]
+0x19fd48d18  __TEXT,__text  -[ACAccount initWithAccountType:]
+0x19fd48e40  __TEXT,__text  -[ACAccount _unsafe_markPropertyDirty:]
+0x19fd48eb4  __TEXT,__text  -[ACAccount accountPropertyForKey:]
+0x19fd48f30  __TEXT,__text  -[ACAccount objectForKeyedSubscript:]
+0x19fd48f34  __TEXT,__text  -[ACAccount authenticationType]
+0x19fd48f7c  __TEXT,__text  -[ACAccount username]
+0x19fd48ff0  __TEXT,__text  -[ACAccount _useParentForCredentials]
+0x19fd49034  __TEXT,__text  ___79-[ACAccountStore accountsWithAccountTypeIdentifiers:preloadedProperties:error:]_block_invoke.97
+0x19fd490ac  __TEXT,__text  ___79-[ACAccountStore accountsWithAccountTypeIdentifiers:preloadedProperties:error:]_block_invoke_2
+0x19fd49168  __TEXT,__text  ___65-[ACMonitoredAccountStore _registerAccountMonitorWithCompletion:]_block_invoke_2
+0x19fd49180  __TEXT,__text  ___50-[ACMonitoredAccountStore registerWithCompletion:]_block_invoke
+0x19fd49390  __TEXT,__text  ___65-[ACMonitoredAccountStore _registerAccountMonitorWithCompletion:]_block_invoke
+0x19fd49478  __TEXT,__text  -[ACMonitoredAccountStore registerWithCompletion:]
+0x19fd49684  __TEXT,__text  -[ACMonitoredAccountStore _registerAccountMonitorWithCompletion:]
+0x19fd49860  __TEXT,__text  _ac_dispatch_remote
+0x19fd498f0  __TEXT,__text  __ac_dispatch_remote_try
+0x19fd49a18  __TEXT,__text  ___65-[ACMonitoredAccountStore _registerAccountMonitorWithCompletion:]_block_invoke_3
+0x19fd49a44  __TEXT,__text  ___55-[ACAccountStore accountTypeWithIdentifier:completion:]_block_invoke_3
+0x19fd49b04  __TEXT,__text  ___55-[ACAccountStore accountTypeWithIdentifier:completion:]_block_invoke_4
+0x19fd49bb4  __TEXT,__text  -[ACMonitoredAccountStore registerSynchronouslyWithError:]
+0x19fd49ddc  __TEXT,__text  ___44-[ACMonitoredAccountStore monitoredAccounts]_block_invoke
+0x19fd49e4c  __TEXT,__text  -[ACMonitoredAccountStore monitoredAccounts]
+0x19fd49ecc  __TEXT,__text  -[ACMonitoredAccountStore _registerAccountMonitorSynchronouslyWithCompletion:]
+0x19fd4a048  __TEXT,__text  ___78-[ACMonitoredAccountStore _registerAccountMonitorSynchronouslyWithCompletion:]_block_invoke
+0x19fd4a074  __TEXT,__text  ___58-[ACMonitoredAccountStore registerSynchronouslyWithError:]_block_invoke
+0x19fd4a26c  __TEXT,__text  -[ACAccountStore replyQueue]
+0x19fd4a274  __TEXT,__text  -[ACMonitoredAccountStore _accountsListPopulated:]
+0x19fd4a368  __TEXT,__text  ___50-[ACMonitoredAccountStore _accountsListPopulated:]_block_invoke
+0x19fd4a4bc  __TEXT,__text  -[ACAccount initWithCoder:]
+0x19fd4af00  __TEXT,__text  ___61-[ACAccountStore accountsWithAccountType:options:completion:]_block_invoke
+0x19fd4b09c  __TEXT,__text  ___55-[ACAccountStore accountTypeWithIdentifier:completion:]_block_invoke_2
+0x19fd4b0b4  __TEXT,__text  ___61-[ACAccountStore accountsWithAccountType:options:completion:]_block_invoke_2
+0x19fd4b0cc  __TEXT,__text  -[ACAccount isActive]
+0x19fd4b108  __TEXT,__text  -[ACAccountStore accountsWithAccountType:options:completion:]
+0x19fd4b4fc  __TEXT,__text  -[ACAccountStore accountTypeWithIdentifier:completion:]
+0x19fd4b748  __TEXT,__text  ___55-[ACAccountStore accountTypeWithIdentifier:completion:]_block_invoke
+0x19fd4b824  __TEXT,__text  ___56-[ACAccountStore accountsWithAccountType:options:error:]_block_invoke
+0x19fd4b8dc  __TEXT,__text  -[ACAccountUniquingCache _lock_hydrateParentChain:]
+0x19fd4b9cc  __TEXT,__text  -[ACAccountStore accountsWithAccountType:options:error:]
+0x19fd4c014  __TEXT,__text  -[ACAccountType copyWithZone:]
+0x19fd4c16c  __TEXT,__text  ___61-[ACAccountStore accountTypeWithAccountTypeIdentifier:error:]_block_invoke
+0x19fd4c1ec  __TEXT,__text  -[ACAccountStoreCache cacheAccountType:]
+0x19fd4c2d0  __TEXT,__text  -[ACAccountStoreCache _lock_cacheAccountType:]
+0x19fd4c344  __TEXT,__text  ___40-[ACAccountStoreCache cacheAccountType:]_block_invoke
+0x19fd4c350  __TEXT,__text  ___61-[ACAccountStore accountTypeWithAccountTypeIdentifier:error:]_block_invoke_2
+0x19fd4c428  __TEXT,__text  -[ACAccount _cachedParentAccountID]
+0x19fd4c470  __TEXT,__text  -[ACAccount accountPropertiesTransformer]
+0x19fd4c47c  __TEXT,__text  ___56-[ACAccountStore accountsWithAccountType:options:error:]_block_invoke_2
+0x19fd4c548  __TEXT,__text  -[ACNotifyReader .cxx_destruct]
+0x19fd4c554  __TEXT,__text  -[ACCredentialCache _clearAllCaches]
+0x19fd4c6a8  __TEXT,__text  ___36-[ACCredentialCache _clearAllCaches]_block_invoke
+0x19fd4c6e0  __TEXT,__text  ___36-[ACCredentialCache _clearAllCaches]_block_invoke_2
+0x19fd4c718  __TEXT,__text  -[ACAccountStoreCache credentialCache]
+0x19fd4c724  __TEXT,__text  -[ACCredentialCache cachedCredentials]
+0x19fd4c730  __TEXT,__text  -[ACCredentialCache expirersByCredentialKey]
+0x19fd4c73c  __TEXT,__text  -[ACAccount encodeWithCoder:]
+0x19fd4cc64  __TEXT,__text  -[ACAccount accountProperties]
+0x19fd4ccac  __TEXT,__text  -[ACAccountType identifier]
+0x19fd4ccb4  __TEXT,__text  -[ACAccountStore tetheredSyncSourceTypeForDataclass:]
+0x19fd4d034  __TEXT,__text  ___53-[ACAccountStore tetheredSyncSourceTypeForDataclass:]_block_invoke
+0x19fd4d0a8  __TEXT,__text  ___53-[ACAccountStore tetheredSyncSourceTypeForDataclass:]_block_invoke_2
+0x19fd4d0b8  __TEXT,__text  -[ACAccountStore accountIdentifiersEnabledForDataclass:]
+0x19fd4d438  __TEXT,__text  ___56-[ACAccountStore accountIdentifiersEnabledForDataclass:]_block_invoke
+0x19fd4d4ac  __TEXT,__text  ___56-[ACAccountStore accountIdentifiersEnabledForDataclass:]_block_invoke_2
+0x19fd4d53c  __TEXT,__text  -[ACAccountStore accountWithIdentifier:]
+0x19fd4d544  __TEXT,__text  -[ACAccountStore accountWithIdentifier:error:]
+0x19fd4da1c  __TEXT,__text  -[ACAccountStoreCache cachedAccountForIdentifier:]
+0x19fd4dc8c  __TEXT,__text  ___46-[ACAccountStore accountWithIdentifier:error:]_block_invoke
+0x19fd4dd0c  __TEXT,__text  -[ACRemoteAccountStoreSession dealloc]
+0x19fd4ddf0  __TEXT,__text  ___38-[ACRemoteAccountStoreSession dealloc]_block_invoke
+0x19fd4de4c  __TEXT,__text  -[ACRemoteAccountStoreSession .cxx_destruct]
+0x19fd4de9c  __TEXT,__text  -[ACTrackedXPCConnection dealloc]
+0x19fd4df08  __TEXT,__text  -[ACAccountStore accountsWithAccountType:completion:]
+0x19fd4e2a0  __TEXT,__text  ___53-[ACAccountStore accountsWithAccountType:completion:]_block_invoke
+0x19fd4e43c  __TEXT,__text  ___53-[ACAccountStore accountsWithAccountType:completion:]_block_invoke_2
+0x19fd4e454  __TEXT,__text  -[ACNotifyWriter write:]
+0x19fd4e554  __TEXT,__text  ___24-[ACNotifyWriter write:]_block_invoke
+0x19fd4e6f8  __TEXT,__text  -[ACAccountType initWithManagedAccountType:]
+0x19fd4eb24  __TEXT,__text  -[ACAccount initWithManagedAccount:]
+0x19fd4f240  __TEXT,__text  -[ACRemoteAccountStoreSession _locked_configureRemoteAccountStoreWithConnection:]
+0x19fd4f2d4  __TEXT,__text  -[ACAccountStore accountTypeWithAccountTypeIdentifier:]
+0x19fd4f2dc  __TEXT,__text  -[ACAccountStore accountsWithAccountType:]
+0x19fd4f7fc  __TEXT,__text  ___61-[ACAccountStore accountsWithAccountType:options:completion:]_block_invoke.87
+0x19fd4f8cc  __TEXT,__text  ___61-[ACAccountStore accountsWithAccountType:options:completion:]_block_invoke_2.88
+0x19fd4fab4  __TEXT,__text  -[ACMonitoredAccountStore initWithAccountTypes:propertiesToPrefetch:delegate:]
+0x19fd4facc  __TEXT,__text  -[ACMonitoredAccountStore _registerForApplicationStateDidChangeNotification]
+0x19fd4fbdc  __TEXT,__text  -[ACMonitoredAccountStore initWithAccountTypes:delegate:]
+0x19fd4fbe8  __TEXT,__text  -[ACMonitoredAccountStore _reregisterForAccountType:]
+0x19fd4fd9c  __TEXT,__text  ___76-[ACMonitoredAccountStore _registerForApplicationStateDidChangeNotification]_block_invoke
+0x19fd4fdfc  __TEXT,__text  ___53-[ACMonitoredAccountStore _reregisterForAccountType:]_block_invoke_2
+0x19fd4ff70  __TEXT,__text  ___53-[ACMonitoredAccountStore _reregisterForAccountType:]_block_invoke.25
+0x19fd4ff80  __TEXT,__text  -[ACAccount modificationID]
+0x19fd4ffc8  __TEXT,__text  -[ACAccountStore accountsWithAccountTypeIdentifiers:preloadedProperties:completion:]
+0x19fd501ac  __TEXT,__text  ___84-[ACAccountStore accountsWithAccountTypeIdentifiers:preloadedProperties:completion:]_block_invoke_3
+0x19fd50410  __TEXT,__text  ___84-[ACAccountStore accountsWithAccountTypeIdentifiers:preloadedProperties:completion:]_block_invoke
+0x19fd50628  __TEXT,__text  ___84-[ACAccountStore accountsWithAccountTypeIdentifiers:preloadedProperties:completion:]_block_invoke_2
+0x19fd50640  __TEXT,__text  +[ACPluginLoader pluginBundlesAtSubpath:]
+0x19fd506f4  __TEXT,__text  +[ACPluginLoader _populatePluginBundles:atSubpath:inAppleInternal:]
+0x19fd50a14  __TEXT,__text  +[ACPluginLoader _accountsPluginDirectoryURLs:inAppleInternal:]
+0x19fd50c20  __TEXT,__text  +[ACPluginLoader _validatedBundleAtURL:]
+0x19fd50e74  __TEXT,__text  ___67+[ACPluginLoader _populatePluginBundles:atSubpath:inAppleInternal:]_block_invoke
+0x19fd50f60  __TEXT,__text  _ACIsInternal.cold.1
+0x19fd50f74  __TEXT,__text  ___ACIsInternal_block_invoke
+0x19fd50f9c  __TEXT,__text  ___46-[ACAccountStore accountWithIdentifier:error:]_block_invoke_2
+0x19fd51058  __TEXT,__text  -[ACAccountStoreCache cacheAccount:]
+0x19fd511d4  __TEXT,__text  -[ACNotifyAccountCache .cxx_destruct]
+0x19fd51224  __TEXT,__text  -[ACNotifyReader dealloc]
+0x19fd51288  __TEXT,__text  -[ACAccountType objectID]
+0x19fd51290  __TEXT,__text  ___47-[ACAccountStoreCache setupMemoryNotifications]_block_invoke
+0x19fd512c4  __TEXT,__text  -[ACAccountStoreCache _clearAllCaches]
+0x19fd51430  __TEXT,__text  -[ACAccount setActive:]
+0x19fd5149c  __TEXT,__text  ___38-[ACAccountStoreCache _clearAllCaches]_block_invoke
+0x19fd514b0  __TEXT,__text  ___38-[ACAccountStoreCache _clearAllCaches]_block_invoke_2
+0x19fd514bc  __TEXT,__text  -[ACRemoteAccountStoreSession synchronousRemoteObjectProxyWithErrorHandler:]
+0x19fd5151c  __TEXT,__text  ___31-[NSArray(Accounts) ac_filter:]_block_invoke
+0x19fd51590  __TEXT,__text  -[NSArray(Accounts) ac_filter:]
+0x19fd51694  __TEXT,__text  -[ACRemoteAccountStoreSession initWithListenerEndpoint:]
+0x19fd5172c  __TEXT,__text  +[ACAccount supportsSecureCoding]
+0x19fd51734  __TEXT,__text  -[ACAccountType encodeWithCoder:]
+0x19fd51988  __TEXT,__text  ___30-[ACTrackedXPCConnection init]_block_invoke.cold.1
+0x19fd519d4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19fd519f4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19fd519f4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19fd519f4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19fd519f4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19fd519f4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19fd51a00  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19fd51a20  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x19fd51a20  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x19fd51a20  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x19fd51a20  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x19fd51a20  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x19fd51a34  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19fd51a54  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19fd51a54  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19fd51a54  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19fd51a68  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19fd51a88  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19fd51aa8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19fd51ad0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19fd51ae4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19fd51b0c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19fd51b20  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19fd51b48  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19fd51b68  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19fd51b88  __TEXT,__text  -[ACAccountType isObsolete]
+0x19fd51b90  __TEXT,__text  -[ACAccountType credentialProtectionPolicy]
+0x19fd51c10  __TEXT,__text  -[ACAccount enabledDataclasses]
+0x19fd51d64  __TEXT,__text  -[ACAccount accountDescription]
+0x19fd51ea8  __TEXT,__text  -[ACAccount isEnabledForDataclass:]
+0x19fd51f40  __TEXT,__text  -[ACAccount _unsafe_loadEnabledDataclasses]
+0x19fd52218  __TEXT,__text  _ACAccountDataclassForACDataclass.cold.1
+0x19fd5222c  __TEXT,__text  ___ACAccountDataclassForACDataclass_block_invoke
+0x19fd52544  __TEXT,__text  +[NSSet(ACTrackingSet) setWithTrackedSet:]
+0x19fd525ac  __TEXT,__text  -[NSSet(ACTrackingSet) initWithTrackedSet:]
+0x19fd5261c  __TEXT,__text  -[ACAccount parentAccountIdentifier]
+0x19fd5267c  __TEXT,__text  -[ACAccountStore credentialForAccount:error:]
+0x19fd52bac  __TEXT,__text  +[ACCredentialCache _cacheEnabled]
+0x19fd52bf8  __TEXT,__text  -[ACAccountCredential .cxx_destruct]
+0x19fd52c44  __TEXT,__text  ___45-[ACAccountStore credentialForAccount:error:]_block_invoke_2
+0x19fd52ce8  __TEXT,__text  -[ACCredentialCache cacheCredential:forAccount:serviceID:]
+0x19fd52ef8  __TEXT,__text  -[ACAccountCredential copyWithZone:]
+0x19fd52fa8  __TEXT,__text  ___58-[ACCredentialCache cacheCredential:forAccount:serviceID:]_block_invoke
+0x19fd53004  __TEXT,__text  ___58-[ACCredentialCache cacheCredential:forAccount:serviceID:]_block_invoke_2
+0x19fd53144  __TEXT,__text  -[ACAccount _installCredentialsChangedObserver]
+0x19fd53250  __TEXT,__text  -[ACAccount credential]
+0x19fd53258  __TEXT,__text  -[ACAccount credentialWithError:]
+0x19fd5335c  __TEXT,__text  -[ACAccount childAccountsWithAccountTypeIdentifier:]
+0x19fd53550  __TEXT,__text  -[ACAccountStore childAccountsForAccount:withTypeIdentifier:]
+0x19fd53738  __TEXT,__text  -[ACAccount _cacheParentAccountID]
+0x19fd537bc  __TEXT,__text  ___61-[ACAccountStore childAccountsForAccount:withTypeIdentifier:]_block_invoke
+0x19fd53820  __TEXT,__text  -[ACAccountStore credentialForAccount:]
+0x19fd53828  __TEXT,__text  -[ACCredentialCache cachedCredentialForAccount:serviceID:]
+0x19fd53974  __TEXT,__text  ___58-[ACCredentialCache cachedCredentialForAccount:serviceID:]_block_invoke
+0x19fd539f4  __TEXT,__text  +[ACCredentialCache _credentialKeyForAccount:serviceID:]
+0x19fd53b64  __TEXT,__text  ___45-[ACAccountStore credentialForAccount:error:]_block_invoke
+0x19fd53c14  __TEXT,__text  ___51+[ACPersonaManager performWithinPersona:withBlock:]_block_invoke
+0x19fd53d2c  __TEXT,__text  +[ACPersonaManager _changePersonaContextUsingPersonaID:withCompletion:]
+0x19fd53fa4  __TEXT,__text  -[ACAccount qualifiedUsername]
+0x19fd54218  __TEXT,__text  -[ACAccountCredential init]
+0x19fd54278  __TEXT,__text  -[ACAccount childAccounts]
+0x19fd54330  __TEXT,__text  -[ACAccountStore childAccountsForAccount:error:]
+0x19fd5490c  __TEXT,__text  -[ACAccountStore childAccountsForAccount:]
+0x19fd54914  __TEXT,__text  ___48-[ACAccountStore childAccountsForAccount:error:]_block_invoke
+0x19fd5498c  __TEXT,__text  +[ACPersonaManager performWithinPersonaForAccount:withBlock:]
+0x19fd54ab4  __TEXT,__text  _ACAllocateMemoryPages
+0x19fd54b50  __TEXT,__text  -[ACAccount accountStore]
+0x19fd54bd4  __TEXT,__text  -[ACZeroingString encodeWithCoder:]
+0x19fd54d80  __TEXT,__text  ___37-[ACTimedExpirer scheduleExpiration:]_block_invoke_2
+0x19fd54d90  __TEXT,__text  -[ACAccountType owningBundleID]
+0x19fd54d98  __TEXT,__text  -[ACZeroingString dealloc]
+0x19fd54e14  __TEXT,__text  ___48-[ACAccountStore childAccountsForAccount:error:]_block_invoke_2
+0x19fd54eb4  __TEXT,__text  -[ACMonitoredAccountStore _registerNotifyReaders]
+0x19fd5511c  __TEXT,__text  ___35-[ACZeroingString encodeWithCoder:]_block_invoke
+0x19fd55158  __TEXT,__text  -[ACAccount description]
+0x19fd551e8  __TEXT,__text  _ACDeallocateMemoryPages
+0x19fd552dc  __TEXT,__text  +[ACLoggingHashCache sharedCache]
+0x19fd55314  __TEXT,__text  +[ACLoggingHashCache sharedCache].cold.1
+0x19fd55328  __TEXT,__text  ___33+[ACLoggingHashCache sharedCache]_block_invoke
+0x19fd55360  __TEXT,__text  -[ACLoggingHashCache initWithMaxCapacity:]
+0x19fd553f8  __TEXT,__text  -[ACLoggingHashCache hashedString:]
+0x19fd55524  __TEXT,__text  ___35-[ACLoggingHashCache hashedString:]_block_invoke
+0x19fd55658  __TEXT,__text  -[NSString(ACLoggingHashing) ac_sha512HashString]
+0x19fd557d4  __TEXT,__text  -[ACAccountType setAccountStore:]
+0x19fd557e0  __TEXT,__text  -[ACAccount reload]
+0x19fd55b34  __TEXT,__text  -[NSArray(Accounts) ac_firstObjectPassingTest:]
+0x19fd55bbc  __TEXT,__text  ___50-[ACAccountStoreCache cachedAccountForIdentifier:]_block_invoke
+0x19fd55c00  __TEXT,__text  -[ACAccount owningBundleID]
+0x19fd55c48  __TEXT,__text  -[ACAccount dataclassProperties]
+0x19fd55ca4  __TEXT,__text  -[ACAccount _resetParentAccount:]
+0x19fd55d24  __TEXT,__text  -[ACAccount userFullName]
+0x19fd55e60  __TEXT,__text  -[ACAccount isAuthenticated]
+0x19fd55ee4  __TEXT,__text  -[ACAccount lastCredentialRenewalRejectionDate]
+0x19fd55f58  __TEXT,__text  -[ACAccount isWarmingUp]
+0x19fd55f94  __TEXT,__text  -[ACAccount objectID]
+0x19fd55fdc  __TEXT,__text  -[ACAccount credentialType]
+0x19fd56050  __TEXT,__text  -[ACAccount provisionedEnumDataclasses]
+0x19fd56058  __TEXT,__text  -[ACAccount enabledEnumDataclasses]
+0x19fd56060  __TEXT,__text  -[ACTrackedSet .cxx_destruct]
+0x19fd56098  __TEXT,__text  -[ACAccountType visibility]
+0x19fd560a0  __TEXT,__text  ___84-[ACAccountStore accountsWithAccountTypeIdentifiers:preloadedProperties:completion:]_block_invoke.90
+0x19fd56148  __TEXT,__text  ___43-[ACAccountStore remoteAccountStoreSession]_block_invoke_2
+0x19fd56220  __TEXT,__text  ___43-[ACAccountStore remoteAccountStoreSession]_block_invoke_3
+0x19fd56230  __TEXT,__text  -[ACAccount propertiesForDataclass:]
+0x19fd562ac  __TEXT,__text  ___42-[ACRemoteAccountStoreSession _connection]_block_invoke.52
+0x19fd5632c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19fd5633c  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x19fd5633c  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x19fd5633c  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x19fd56348  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x19fd56348  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x19fd56348  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x19fd56348  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x19fd56348  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x19fd56348  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x19fd56348  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x19fd5635c  __TEXT,__text  +[ACAccount keypathsRequiredForInitialization]
+0x19fd56544  __TEXT,__text  -[ACAccountStore accountIdentifiersEnabledToSyncDataclass:]
+0x19fd568c4  __TEXT,__text  -[ACAccountStore accountIdentifiersEnabledToSyncDataclass:].cold.1
+0x19fd56900  __TEXT,__text  ___59-[ACAccountStore accountIdentifiersEnabledToSyncDataclass:]_block_invoke
+0x19fd56974  __TEXT,__text  ___59-[ACAccountStore accountIdentifiersEnabledToSyncDataclass:]_block_invoke_2
+0x19fd56a04  __TEXT,__text  -[ACAccountStore accountsWithAccountType:].cold.1
+0x19fd56a04  __TEXT,__text  -[ACAccountStore accountsWithAccountType:].cold.1
+0x19fd56a5c  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x19fd56a68  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x19fd56a78  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x19fd56a84  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x19fd56a94  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x19fd56aa0  __TEXT,__text  -[ACAccountUniquingCache _lock_clearParentChains:]
+0x19fd56b58  __TEXT,__text  ___58-[ACCredentialCache cacheCredential:forAccount:serviceID:]_block_invoke_3
+0x19fd56c48  __TEXT,__text  ___58-[ACCredentialCache cacheCredential:forAccount:serviceID:]_block_invoke_4
+0x19fd56c90  __TEXT,__text  -[ACAccountType accountTypeDescription]
+0x19fd56c98  __TEXT,__text  -[ACAccountType supportsAuthentication]
+0x19fd56cd4  __TEXT,__text  -[ACAccountType supportsMultipleAccounts]
+0x19fd56cdc  __TEXT,__text  -[ACAccountType initWithManagedAccountType:accountStore:]
+0x19fd56d38  __TEXT,__text  -[ACAccountType description]
+0x19fd56db8  __TEXT,__text  -[ACAccountStore accountIdentifiersEnabledForDataclass:].cold.1
+0x19fd56df4  __TEXT,__text  -[ACAccountCredential token]
+0x19fd56e00  __TEXT,__text  -[ACAccountCredential credentialItemForKey:]
+0x19fd56e58  __TEXT,__text  -[ACZeroingString length]
+0x19fd56e6c  __TEXT,__text  -[ACZeroingString getCharacters:range:]
+0x19fd56ee8  __TEXT,__text  +[ACAccountType supportsSecureCoding]
+0x19fd56ef0  __TEXT,__text  -[ACAccountType initWithCoder:]
+0x19fd572e4  __TEXT,__text  -[ACNotifyAccountCache cacheAccounts:]
+0x19fd572ec  __TEXT,__text  -[ACAccountCredential _markPropertyDirty:]
+0x19fd57388  __TEXT,__text  -[ACAccountCredential oauthTokenNoSync]
+0x19fd57394  __TEXT,__text  -[ACAccountCredential credentialType]
+0x19fd5739c  __TEXT,__text  -[ACZeroingString replacementObjectForCoder:]
+0x19fd5740c  __TEXT,__text  -[ACZeroingString _allowsDirectEncoding]
+0x19fd57414  __TEXT,__text  -[ACZeroingString classForCoder]
+0x19fd57418  __TEXT,__text  +[ACAccountCredential supportsSecureCoding]
+0x19fd57420  __TEXT,__text  -[ACZeroingString initWithCoder:]
+0x19fd57628  __TEXT,__text  -[ACAccountCredential setCredentialItem:forKey:]
+0x19fd57720  __TEXT,__text  -[ACAccountCredential description]
+0x19fd577b8  __TEXT,__text  -[ACAccountCredential initWithCoder:]
+0x19fd57974  __TEXT,__text  +[ACZeroingString supportsSecureCoding]
+0x19fd5797c  __TEXT,__text  -[ACAccountCredential _setOwningAccount:]
+0x19fd57988  __TEXT,__text  -[ACAccountType credentialType]
+0x19fd57990  __TEXT,__text  -[ACZeroingString initWithString:]
+0x19fd57a8c  __TEXT,__text  -[ACAccountCredential keysForCredentialItems]
+0x19fd57a94  __TEXT,__text  -[ACAccountCredential encodeWithCoder:]
+0x19fd57b40  __TEXT,__text  -[ACAccount initWithManagedAccount:accountStore:]
+0x19fd57b9c  __TEXT,__text  -[ACAccountStore credentialForAccount:error:].cold.1
+0x19fd57bd8  __TEXT,__text  -[ACNotifyWriter key]
+0x19fd57be0  __TEXT,__text  -[ACAccount personaIdentifier]
+0x19fd57cf0  __TEXT,__text  -[ACAccount dirtyProperties]
+0x19fd57d4c  __TEXT,__text  -[ACAccountStore accountsWithAccountType:completion:].cold.1
+0x19fd57d4c  __TEXT,__text  -[ACAccountStore accountsWithAccountType:completion:].cold.1
+0x19fd57d9c  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x19fd57da8  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x19fd57dbc  __TEXT,__text  -[ACAccountStore accountWithIdentifier:error:].cold.1
+0x19fd57e04  __TEXT,__text  ___79-[ACAccountStore accountsWithAccountTypeIdentifiers:preloadedProperties:error:]_block_invoke.cold.1
+0x19fd57e50  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x19fd57e64  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x19fd57e78  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x19fd57e88  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x19fd57e9c  __TEXT,__text  ___56-[ACRemoteAccountStoreSession _setConnectionInterrupted]_block_invoke
+0x19fd57ed8  __TEXT,__text  -[ACRemoteAccountStoreSession _setConnectionInvalidated]
+0x19fd57fa0  __TEXT,__text  -[ACRemoteAccountStoreSession _setConnectionInterrupted]
+0x19fd58068  __TEXT,__text  ___56-[ACRemoteAccountStoreSession _setConnectionInvalidated]_block_invoke
+0x19fd58078  __TEXT,__text  ___42-[ACRemoteAccountStoreSession _connection]_block_invoke_3
+0x19fd580f8  __TEXT,__text  ___84-[ACAccountStore accountsWithAccountTypeIdentifiers:preloadedProperties:completion:]_block_invoke_3.cold.1
+0x19fd58174  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x19fd58180  __TEXT,__text  -[ACAccountStore credentialForAccount:error:].cold.2
+0x19fd581d4  __TEXT,__text  +[ACAccountType allIdentifiers]
+0x19fd5820c  __TEXT,__text  +[ACAccountType allIdentifiers].cold.1
+0x19fd58220  __TEXT,__text  ___31+[ACAccountType allIdentifiers]_block_invoke
+0x19fd584e8  __TEXT,__text  ___34+[ACPersonaManager sharedInstance]_block_invoke
+0x19fd58518  __TEXT,__text  __ACPLogSystem.cold.1
+0x19fd5852c  __TEXT,__text  ____ACPLogSystem_block_invoke
+0x19fd58564  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x19fd58564  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x19fd58578  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x19fd58578  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x19fd58578  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x19fd58588  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x19fd585a0  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x19fd585b0  __TEXT,__text  -[ACPersonaManager _lockedLoadCache].cold.1
+0x19fd585e8  __TEXT,__text  -[ACPersonaManager _lockedLoadCache].cold.2
+0x19fd58628  __TEXT,__text  +[ACPersonaManager sharedInstance].cold.1
+0x19fd5863c  __TEXT,__text  +[ACPersonaManager sharedInstance]
+0x19fd58674  __TEXT,__text  -[ACPersonaManager init]
+0x19fd58734  __TEXT,__text  -[ACPersonaManager _lockedLoadCache]
+0x19fd58af4  __TEXT,__text  -[ACPersonaManager init].cold.1
+0x19fd58b60  __TEXT,__text  ___79-[ACAccountStore accountsWithAccountTypeIdentifiers:preloadedProperties:error:]_block_invoke.cold.2
+0x19fd58bbc  __TEXT,__text  ___53-[ACMonitoredAccountStore _reregisterForAccountType:]_block_invoke
+0x19fd58d4c  __TEXT,__text  ___53-[ACMonitoredAccountStore _reregisterForAccountType:]_block_invoke.24
+0x19fd58d5c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x19fd58d78  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x19fd58d88  __TEXT,__text  ___71-[ACRemoteAccountStoreSession _locked_connection:setEffectiveBundleID:]_block_invoke.65
+0x19fd58e0c  __TEXT,__text  -[ACAccount refresh]
+0x19fd596c4  __TEXT,__text  -[ACNotifyWriter initWithKey:]
+0x19fd5979c  __TEXT,__text  -[ACNotifyWriter setKey:]
+0x19fd597a8  __TEXT,__text  -[ACPersonaManager dataSeparatedPersonasUIDs]
+0x19fd59820  __TEXT,__text  ___45-[ACPersonaManager dataSeparatedPersonasUIDs]_block_invoke
+0x19fd59854  __TEXT,__text  ___84-[ACAccountStore accountsWithAccountTypeIdentifiers:preloadedProperties:completion:]_block_invoke_2.91
+0x19fd59a2c  __TEXT,__text  ___71-[ACRemoteAccountStoreSession _locked_connection:setEffectiveBundleID:]_block_invoke.65.cold.2
+0x19fd59a7c  __TEXT,__text  -[ACAccountStore initWithEffectiveBundleID:]
+0x19fd59a88  __TEXT,__text  -[ACAccountStore childAccountsForAccount:error:].cold.1
+0x19fd59ac4  __TEXT,__text  +[ACAccountCredential credentialPolicyIsMixedForAccountTypeIdentifier:]
+0x19fd59b24  __TEXT,__text  -[ACAccount credentialLocation]
+0x19fd59c08  __TEXT,__text  -[ACAccount propertyForKey:]
+0x19fd59c0c  __TEXT,__text  ___54-[ACNotifyReader initWithKey:updateQueue:updateBlock:]_block_invoke
+0x19fd59c1c  __TEXT,__text  -[ACZeroingString initWithBytes:length:encoding:]
+0x19fd59da4  __TEXT,__text  ___49-[ACMonitoredAccountStore _registerNotifyReaders]_block_invoke
+0x19fd59dec  __TEXT,__text  -[ACAccountStore accountsWithAccountType:].cold.2
+0x19fd59e28  __TEXT,__text  ___42-[ACAccountStore accountsWithAccountType:]_block_invoke
+0x19fd59f98  __TEXT,__text  -[ACMonitoredAccountStore initWithWithRemoteEndpoint:effectiveBundleID:accountTypes:propertiesToPrefetch:delegate:]
+0x19fd5a0dc  __TEXT,__text  -[ACMonitoredAccountStore dealloc]
+0x19fd5a18c  __TEXT,__text  -[ACMonitoredAccountStore monitoredAccountWithIdentifier:]
+0x19fd5a240  __TEXT,__text  ___58-[ACMonitoredAccountStore monitoredAccountWithIdentifier:]_block_invoke
+0x19fd5a290  __TEXT,__text  -[ACMonitoredAccountStore addDelegate:]
+0x19fd5a310  __TEXT,__text  -[ACMonitoredAccountStore removeDelegate:]
+0x19fd5a390  __TEXT,__text  -[ACMonitoredAccountStore _sendNotificationOfChange]
+0x19fd5a3e4  __TEXT,__text  ___65-[ACMonitoredAccountStore _registerAccountMonitorWithCompletion:]_block_invoke_4
+0x19fd5a438  __TEXT,__text  ___78-[ACMonitoredAccountStore _registerAccountMonitorSynchronouslyWithCompletion:]_block_invoke_2
+0x19fd5a48c  __TEXT,__text  -[ACMonitoredAccountStore _lock_processAccountsListForNotifications:forType:]
+0x19fd5a79c  __TEXT,__text  -[ACMonitoredAccountStore _registerForCredentialChangedNotifications]
+0x19fd5a8b4  __TEXT,__text  ___69-[ACMonitoredAccountStore _registerForCredentialChangedNotifications]_block_invoke
+0x19fd5a904  __TEXT,__text  -[ACMonitoredAccountStore credentialsChangedNotification:]
+0x19fd5a9b8  __TEXT,__text  ___58-[ACMonitoredAccountStore credentialsChangedNotification:]_block_invoke
+0x19fd5ab28  __TEXT,__text  -[ACMonitoredAccountStore _allDelegates]
+0x19fd5ab98  __TEXT,__text  -[ACMonitoredAccountStore _lock_accountWasAdded:]
+0x19fd5acf4  __TEXT,__text  ___49-[ACMonitoredAccountStore _lock_accountWasAdded:]_block_invoke
+0x19fd5ae20  __TEXT,__text  -[ACMonitoredAccountStore _lock_accountWasModified:]
+0x19fd5af7c  __TEXT,__text  ___52-[ACMonitoredAccountStore _lock_accountWasModified:]_block_invoke
+0x19fd5b0a8  __TEXT,__text  -[ACMonitoredAccountStore _lock_accountWasRemoved:]
+0x19fd5b1ec  __TEXT,__text  ___51-[ACMonitoredAccountStore _lock_accountWasRemoved:]_block_invoke
+0x19fd5b318  __TEXT,__text  -[ACMonitoredAccountStore .cxx_destruct]
+0x19fd5b3c4  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x19fd5b3d8  __TEXT,__text  -[ACDManagedAccount description]
+0x19fd5b438  __TEXT,__text  +[ACManagedDefaults sharedInstance]
+0x19fd5b470  __TEXT,__text  ___35+[ACManagedDefaults sharedInstance]_block_invoke
+0x19fd5b4a0  __TEXT,__text  -[ACManagedDefaults _readManagedDefaults]
+0x19fd5b4b4  __TEXT,__text  -[ACManagedDefaults _writeManagedDefaults:]
+0x19fd5b4f8  __TEXT,__text  -[ACManagedDefaults valueForManagedDefault:]
+0x19fd5b5b0  __TEXT,__text  -[ACManagedDefaults setValue:forManagedDefault:]
+0x19fd5b678  __TEXT,__text  -[ACProtobufVariableValue hasStringValue]
+0x19fd5b694  __TEXT,__text  -[ACProtobufVariableValue setIntegerValue:]
+0x19fd5b6c0  __TEXT,__text  -[ACProtobufVariableValue setHasIntegerValue:]
+0x19fd5b6ec  __TEXT,__text  -[ACProtobufVariableValue hasIntegerValue]
+0x19fd5b704  __TEXT,__text  -[ACProtobufVariableValue setUnsignedIntegerValue:]
+0x19fd5b730  __TEXT,__text  -[ACProtobufVariableValue setHasUnsignedIntegerValue:]
+0x19fd5b75c  __TEXT,__text  -[ACProtobufVariableValue hasUnsignedIntegerValue]
+0x19fd5b774  __TEXT,__text  -[ACProtobufVariableValue setDoubleValue:]
+0x19fd5b7a0  __TEXT,__text  -[ACProtobufVariableValue setHasDoubleValue:]
+0x19fd5b7c0  __TEXT,__text  -[ACProtobufVariableValue hasDoubleValue]
+0x19fd5b7d8  __TEXT,__text  -[ACProtobufVariableValue hasDataValue]
+0x19fd5b7f4  __TEXT,__text  -[ACProtobufVariableValue hasUuidValue]
+0x19fd5b810  __TEXT,__text  -[ACProtobufVariableValue hasDateValue]
+0x19fd5b82c  __TEXT,__text  -[ACProtobufVariableValue hasUrlValue]
+0x19fd5b848  __TEXT,__text  -[ACProtobufVariableValue hasArrayValue]
+0x19fd5b864  __TEXT,__text  -[ACProtobufVariableValue hasSetValue]
+0x19fd5b880  __TEXT,__text  -[ACProtobufVariableValue hasDictionaryValue]
+0x19fd5b89c  __TEXT,__text  -[ACProtobufVariableValue description]
+0x19fd5b934  __TEXT,__text  -[ACProtobufVariableValue dictionaryRepresentation]
+0x19fd5bbf4  __TEXT,__text  _ACProtobufVariableValueReadFrom
+0x19fd5c254  __TEXT,__text  -[ACProtobufVariableValue readFrom:]
+0x19fd5c25c  __TEXT,__text  -[ACProtobufVariableValue writeTo:]
+0x19fd5c440  __TEXT,__text  -[ACProtobufVariableValue copyTo:]
+0x19fd5c610  __TEXT,__text  -[ACProtobufVariableValue copyWithZone:]
+0x19fd5c830  __TEXT,__text  -[ACProtobufVariableValue isEqual:]
+0x19fd5ca78  __TEXT,__text  -[ACProtobufVariableValue hash]
+0x19fd5cc4c  __TEXT,__text  -[ACProtobufVariableValue mergeFrom:]
+0x19fd5ceb0  __TEXT,__text  -[ACProtobufVariableValue stringValue]
+0x19fd5cec4  __TEXT,__text  -[ACProtobufVariableValue setStringValue:]
+0x19fd5ced8  __TEXT,__text  -[ACProtobufVariableValue integerValue]
+0x19fd5ceec  __TEXT,__text  -[ACProtobufVariableValue unsignedIntegerValue]
+0x19fd5cf00  __TEXT,__text  -[ACProtobufVariableValue doubleValue]
+0x19fd5cf14  __TEXT,__text  -[ACProtobufVariableValue dataValue]
+0x19fd5cf28  __TEXT,__text  -[ACProtobufVariableValue setDataValue:]
+0x19fd5cf3c  __TEXT,__text  -[ACProtobufVariableValue uuidValue]
+0x19fd5cf50  __TEXT,__text  -[ACProtobufVariableValue setUuidValue:]
+0x19fd5cf64  __TEXT,__text  -[ACProtobufVariableValue dateValue]
+0x19fd5cf78  __TEXT,__text  -[ACProtobufVariableValue setDateValue:]
+0x19fd5cf8c  __TEXT,__text  -[ACProtobufVariableValue urlValue]
+0x19fd5cfa0  __TEXT,__text  -[ACProtobufVariableValue setUrlValue:]
+0x19fd5cfb4  __TEXT,__text  -[ACProtobufVariableValue arrayValue]
+0x19fd5cfc8  __TEXT,__text  -[ACProtobufVariableValue setArrayValue:]
+0x19fd5cfdc  __TEXT,__text  -[ACProtobufVariableValue setValue]
+0x19fd5cff0  __TEXT,__text  -[ACProtobufVariableValue setSetValue:]
+0x19fd5d004  __TEXT,__text  -[ACProtobufVariableValue dictionaryValue]
+0x19fd5d018  __TEXT,__text  -[ACProtobufVariableValue setDictionaryValue:]
+0x19fd5d02c  __TEXT,__text  -[ACProtobufVariableValue .cxx_destruct]
+0x19fd5d0ec  __TEXT,__text  ____ac_dispatch_remote_sync_try_block_invoke
+0x19fd5d240  __TEXT,__text  ____ac_dispatch_remote_try_block_invoke
+0x19fd5d390  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x19fd5d3d4  __TEXT,__text  ____ACLogCache_block_invoke
+0x19fd5d40c  __TEXT,__text  -[ACDManagedAccountType description]
+0x19fd5d46c  __TEXT,__text  -[ACDManagedAccountType supportedDataclassStrings]
+0x19fd5d4b8  __TEXT,__text  -[ACDManagedAccountType syncableDataclassStrings]
+0x19fd5d504  __TEXT,__text  -[ACDManagedAccountType _dataclassStringsFromManaged:]
+0x19fd5d640  __TEXT,__text  +[ACPluginLoader _pluginWithName:inSubpath:inAppleInternal:]
+0x19fd5d7a4  __TEXT,__text  +[ACPluginLoader pluginWithName:inSubpath:]
+0x19fd5d86c  __TEXT,__text  +[ACAccountStore _setDefaultStore:]
+0x19fd5d87c  __TEXT,__text  +[ACAccountStore _setConnectionTimeout:]
+0x19fd5d888  __TEXT,__text  -[ACAccountStore initWithRemoteEndpoint:]
+0x19fd5d890  __TEXT,__text  ___59-[ACAccountStore initWithRemoteEndpoint:effectiveBundleID:]_block_invoke
+0x19fd5d94c  __TEXT,__text  ___59-[ACAccountStore initWithRemoteEndpoint:effectiveBundleID:]_block_invoke_2
+0x19fd5d9c8  __TEXT,__text  -[ACAccountStore longLivedRemoteAccountStoreSession]
+0x19fd5da40  __TEXT,__text  ___52-[ACAccountStore longLivedRemoteAccountStoreSession]_block_invoke
+0x19fd5db7c  __TEXT,__text  ___52-[ACAccountStore longLivedRemoteAccountStoreSession]_block_invoke_2
+0x19fd5dc54  __TEXT,__text  ___52-[ACAccountStore longLivedRemoteAccountStoreSession]_block_invoke_3
+0x19fd5dc64  __TEXT,__text  -[ACAccountStore disconnectFromRemoteAccountStore]
+0x19fd5dc68  __TEXT,__text  -[ACAccountStore _connectionFailureError]
+0x19fd5dc88  __TEXT,__text  -[ACAccountStore setNotificationsEnabled:]
+0x19fd5dcf4  __TEXT,__text  ___46-[ACAccountStore accountWithIdentifier:error:]_block_invoke.65
+0x19fd5dd34  __TEXT,__text  -[ACAccountStore accountWithIdentifier:completion:]
+0x19fd5df98  __TEXT,__text  ___51-[ACAccountStore accountWithIdentifier:completion:]_block_invoke
+0x19fd5e080  __TEXT,__text  ___51-[ACAccountStore accountWithIdentifier:completion:]_block_invoke_2
+0x19fd5e098  __TEXT,__text  ___51-[ACAccountStore accountWithIdentifier:completion:]_block_invoke_3
+0x19fd5e210  __TEXT,__text  ___51-[ACAccountStore accountWithIdentifier:completion:]_block_invoke.70
+0x19fd5e3f4  __TEXT,__text  ___51-[ACAccountStore accountWithIdentifier:completion:]_block_invoke.71
+0x19fd5e448  __TEXT,__text  -[ACAccountStore cachedAccountWithIdentifier:completion:]
+0x19fd5e4e8  __TEXT,__text  ___61-[ACAccountStore accountTypeWithAccountTypeIdentifier:error:]_block_invoke.73
+0x19fd5e528  __TEXT,__text  ___55-[ACAccountStore accountTypeWithIdentifier:completion:]_block_invoke.74
+0x19fd5e57c  __TEXT,__text  -[ACAccountStore accounts]
+0x19fd5e9a8  __TEXT,__text  ___26-[ACAccountStore accounts]_block_invoke
+0x19fd5ea1c  __TEXT,__text  ___26-[ACAccountStore accounts]_block_invoke_2
+0x19fd5eaac  __TEXT,__text  ___26-[ACAccountStore accounts]_block_invoke.76
+0x19fd5eaf0  __TEXT,__text  ___42-[ACAccountStore accountsWithAccountType:]_block_invoke_2
+0x19fd5eba0  __TEXT,__text  ___42-[ACAccountStore accountsWithAccountType:]_block_invoke.80
+0x19fd5ebe4  __TEXT,__text  ___56-[ACAccountStore accountsWithAccountType:options:error:]_block_invoke.83
+0x19fd5ec24  __TEXT,__text  ___53-[ACAccountStore accountsWithAccountType:completion:]_block_invoke.84
+0x19fd5ecec  __TEXT,__text  ___53-[ACAccountStore accountsWithAccountType:completion:]_block_invoke_2.85
+0x19fd5eed4  __TEXT,__text  ___53-[ACAccountStore accountsWithAccountType:completion:]_block_invoke.86
+0x19fd5f070  __TEXT,__text  ___61-[ACAccountStore accountsWithAccountType:options:completion:]_block_invoke.89
+0x19fd5f20c  __TEXT,__text  -[ACAccountStore accountsWithAccountTypeIdentifiers:completion:]
+0x19fd5f218  __TEXT,__text  ___84-[ACAccountStore accountsWithAccountTypeIdentifiers:preloadedProperties:completion:]_block_invoke.92
+0x19fd5f3b4  __TEXT,__text  ___79-[ACAccountStore accountsWithAccountTypeIdentifiers:preloadedProperties:error:]_block_invoke.98
+0x19fd5f408  __TEXT,__text  -[ACAccountStore cachedAccountsWithAccountType:options:completion:]
+0x19fd5f40c  __TEXT,__text  -[ACAccountStore accountsOnPairedDeviceWithAccountType:completion:]
+0x19fd5f498  __TEXT,__text  -[ACAccountStore accountsOnPairedDeviceWithAccountTypes:withOptions:completion:]
+0x19fd5f7bc  __TEXT,__text  ___80-[ACAccountStore accountsOnPairedDeviceWithAccountTypes:withOptions:completion:]_block_invoke
+0x19fd5f8a0  __TEXT,__text  ___80-[ACAccountStore accountsOnPairedDeviceWithAccountTypes:withOptions:completion:]_block_invoke_2
+0x19fd5fa1c  __TEXT,__text  ___80-[ACAccountStore accountsOnPairedDeviceWithAccountTypes:withOptions:completion:]_block_invoke.100
+0x19fd5fac8  __TEXT,__text  ___80-[ACAccountStore accountsOnPairedDeviceWithAccountTypes:withOptions:completion:]_block_invoke_2.101
+0x19fd5fc20  __TEXT,__text  ___80-[ACAccountStore accountsOnPairedDeviceWithAccountTypes:withOptions:completion:]_block_invoke.102
+0x19fd5fc74  __TEXT,__text  -[ACAccountStore allDataclasses]
+0x19fd5ffbc  __TEXT,__text  ___32-[ACAccountStore allDataclasses]_block_invoke
+0x19fd60030  __TEXT,__text  ___32-[ACAccountStore allDataclasses]_block_invoke_2
+0x19fd600c0  __TEXT,__text  -[ACAccountStore allAccountTypes]
+0x19fd60514  __TEXT,__text  ___33-[ACAccountStore allAccountTypes]_block_invoke
+0x19fd60588  __TEXT,__text  ___33-[ACAccountStore allAccountTypes]_block_invoke_2
+0x19fd60634  __TEXT,__text  -[ACAccountStore visibleTopLevelAccountsWithAccountTypeIdentifiers:completion:]
+0x19fd60950  __TEXT,__text  ___79-[ACAccountStore visibleTopLevelAccountsWithAccountTypeIdentifiers:completion:]_block_invoke
+0x19fd60a44  __TEXT,__text  ___79-[ACAccountStore visibleTopLevelAccountsWithAccountTypeIdentifiers:completion:]_block_invoke_2
+0x19fd60bc0  __TEXT,__text  ___79-[ACAccountStore visibleTopLevelAccountsWithAccountTypeIdentifiers:completion:]_block_invoke.110
+0x19fd60c60  __TEXT,__text  ___79-[ACAccountStore visibleTopLevelAccountsWithAccountTypeIdentifiers:completion:]_block_invoke_2.111
+0x19fd60db8  __TEXT,__text  ___79-[ACAccountStore visibleTopLevelAccountsWithAccountTypeIdentifiers:completion:]_block_invoke.112
+0x19fd60e0c  __TEXT,__text  -[ACAccountStore hasAccountWithDescription:]
+0x19fd61160  __TEXT,__text  ___44-[ACAccountStore hasAccountWithDescription:]_block_invoke
+0x19fd611d4  __TEXT,__text  ___44-[ACAccountStore hasAccountWithDescription:]_block_invoke_2
+0x19fd611e4  __TEXT,__text  -[ACAccountStore kerberosAccountsForDomainFromURL:completion:]
+0x19fd61498  __TEXT,__text  ___62-[ACAccountStore kerberosAccountsForDomainFromURL:completion:]_block_invoke
+0x19fd61670  __TEXT,__text  ___62-[ACAccountStore kerberosAccountsForDomainFromURL:completion:]_block_invoke.120
+0x19fd617ec  __TEXT,__text  ___62-[ACAccountStore kerberosAccountsForDomainFromURL:completion:]_block_invoke.121
+0x19fd617f8  __TEXT,__text  ___62-[ACAccountStore kerberosAccountsForDomainFromURL:completion:]_block_invoke_2
+0x19fd6184c  __TEXT,__text  -[ACAccountStore isPushSupportedForAccount:]
+0x19fd61ba0  __TEXT,__text  ___44-[ACAccountStore isPushSupportedForAccount:]_block_invoke
+0x19fd61c14  __TEXT,__text  ___44-[ACAccountStore isPushSupportedForAccount:]_block_invoke_2
+0x19fd61c24  __TEXT,__text  +[ACAccountStore accountsWithAccountTypeIdentifierExist:]
+0x19fd61efc  __TEXT,__text  +[ACAccountStore countOfAccountsWithAccountTypeIdentifier:]
+0x19fd62210  __TEXT,__text  -[ACAccountStore insertAccountType:withCompletionHandler:]
+0x19fd62504  __TEXT,__text  ___58-[ACAccountStore insertAccountType:withCompletionHandler:]_block_invoke
+0x19fd625d0  __TEXT,__text  ___58-[ACAccountStore insertAccountType:withCompletionHandler:]_block_invoke_2
+0x19fd6278c  __TEXT,__text  ___58-[ACAccountStore insertAccountType:withCompletionHandler:]_block_invoke.126
+0x19fd6283c  __TEXT,__text  ___58-[ACAccountStore insertAccountType:withCompletionHandler:]_block_invoke_2.127
+0x19fd628b8  __TEXT,__text  ___58-[ACAccountStore insertAccountType:withCompletionHandler:]_block_invoke_3
+0x19fd6290c  __TEXT,__text  -[ACAccountStore removeAccountType:withCompletionHandler:]
+0x19fd62c14  __TEXT,__text  ___58-[ACAccountStore removeAccountType:withCompletionHandler:]_block_invoke
+0x19fd62e0c  __TEXT,__text  ___58-[ACAccountStore removeAccountType:withCompletionHandler:]_block_invoke.128
+0x19fd62e9c  __TEXT,__text  ___58-[ACAccountStore removeAccountType:withCompletionHandler:]_block_invoke_2
+0x19fd62ebc  __TEXT,__text  ___58-[ACAccountStore removeAccountType:withCompletionHandler:]_block_invoke_3
+0x19fd62f10  __TEXT,__text  -[ACAccountStore removeAccount:withDeleteSync:completion:]
+0x19fd62fb4  __TEXT,__text  -[ACAccountStore removeAccount:withCompletionHandler:]
+0x19fd62fc0  __TEXT,__text  -[ACAccountStore removeAccount:withDataclassActions:completion:]
+0x19fd633cc  __TEXT,__text  ___64-[ACAccountStore removeAccount:withDataclassActions:completion:]_block_invoke
+0x19fd63508  __TEXT,__text  ___64-[ACAccountStore removeAccount:withDataclassActions:completion:]_block_invoke.136
+0x19fd63688  __TEXT,__text  ___64-[ACAccountStore removeAccount:withDataclassActions:completion:]_block_invoke.137
+0x19fd63698  __TEXT,__text  ___64-[ACAccountStore removeAccount:withDataclassActions:completion:]_block_invoke_2
+0x19fd636ec  __TEXT,__text  -[ACAccountStore canSaveAccount:withCompletionHandler:]
+0x19fd63a44  __TEXT,__text  ___55-[ACAccountStore canSaveAccount:withCompletionHandler:]_block_invoke
+0x19fd63b80  __TEXT,__text  ___55-[ACAccountStore canSaveAccount:withCompletionHandler:]_block_invoke.138
+0x19fd63d00  __TEXT,__text  ___55-[ACAccountStore canSaveAccount:withCompletionHandler:]_block_invoke.139
+0x19fd63d0c  __TEXT,__text  ___55-[ACAccountStore canSaveAccount:withCompletionHandler:]_block_invoke_2
+0x19fd63d60  __TEXT,__text  +[ACAccountStore canSaveAccountsOfAccountTypeIdentifier:]
+0x19fd64058  __TEXT,__text  -[ACAccountStore saveAccount:withCompletionHandler:]
+0x19fd64068  __TEXT,__text  -[ACAccountStore _saveAccount:verify:dataclassActions:completion:]
+0x19fd645ac  __TEXT,__text  ___66-[ACAccountStore _saveAccount:verify:dataclassActions:completion:]_block_invoke
+0x19fd646e8  __TEXT,__text  ___66-[ACAccountStore _saveAccount:verify:dataclassActions:completion:]_block_invoke.140
+0x19fd64868  __TEXT,__text  ___66-[ACAccountStore _saveAccount:verify:dataclassActions:completion:]_block_invoke.141
+0x19fd649c0  __TEXT,__text  ___66-[ACAccountStore _saveAccount:verify:dataclassActions:completion:]_block_invoke.143
+0x19fd649d4  __TEXT,__text  ___66-[ACAccountStore _saveAccount:verify:dataclassActions:completion:]_block_invoke_2
+0x19fd64a28  __TEXT,__text  -[ACAccountStore saveAccount:withDataclassActions:completion:]
+0x19fd64a38  __TEXT,__text  -[ACAccountStore saveAccount:withDataclassActions:doVerify:completion:]
+0x19fd64a48  __TEXT,__text  -[ACAccountStore saveVerifiedAccount:withCompletionHandler:]
+0x19fd64a58  __TEXT,__text  -[ACAccountStore saveVerifiedAccount:error:]
+0x19fd65014  __TEXT,__text  ___44-[ACAccountStore saveVerifiedAccount:error:]_block_invoke
+0x19fd650c0  __TEXT,__text  ___44-[ACAccountStore saveVerifiedAccount:error:]_block_invoke_2
+0x19fd651f0  __TEXT,__text  ___44-[ACAccountStore saveVerifiedAccount:error:]_block_invoke_3
+0x19fd6523c  __TEXT,__text  -[ACAccountStore updateExistenceCacheOfAccountWithTypeIdentifier:]
+0x19fd65248  __TEXT,__text  -[ACAccountStore _checkSaveRateLimitForAccountType:]
+0x19fd652cc  __TEXT,__text  ___52-[ACAccountStore _checkSaveRateLimitForAccountType:]_block_invoke
+0x19fd6532c  __TEXT,__text  -[ACAccountStore requestAccessToAccountsWithType:withCompletionHandler:]
+0x19fd65338  __TEXT,__text  -[ACAccountStore requestAccessToAccountsWithType:options:completion:]
+0x19fd656c0  __TEXT,__text  ___69-[ACAccountStore requestAccessToAccountsWithType:options:completion:]_block_invoke
+0x19fd6578c  __TEXT,__text  ___69-[ACAccountStore requestAccessToAccountsWithType:options:completion:]_block_invoke_2
+0x19fd65948  __TEXT,__text  ___69-[ACAccountStore requestAccessToAccountsWithType:options:completion:]_block_invoke.155
+0x19fd65a08  __TEXT,__text  ___69-[ACAccountStore requestAccessToAccountsWithType:options:completion:]_block_invoke_2.156
+0x19fd65a6c  __TEXT,__text  ___69-[ACAccountStore requestAccessToAccountsWithType:options:completion:]_block_invoke_3
+0x19fd65ac0  __TEXT,__text  -[ACAccountStore accessKeysForAccountType:]
+0x19fd65e40  __TEXT,__text  ___43-[ACAccountStore accessKeysForAccountType:]_block_invoke
+0x19fd65eb4  __TEXT,__text  ___43-[ACAccountStore accessKeysForAccountType:]_block_invoke_2
+0x19fd65f44  __TEXT,__text  -[ACAccountStore appPermissionsForAccountType:]
+0x19fd662c4  __TEXT,__text  ___47-[ACAccountStore appPermissionsForAccountType:]_block_invoke
+0x19fd66338  __TEXT,__text  ___47-[ACAccountStore appPermissionsForAccountType:]_block_invoke_2
+0x19fd663c8  __TEXT,__text  -[ACAccountStore setPermissionGranted:forBundleID:onAccountType:]
+0x19fd6678c  __TEXT,__text  ___65-[ACAccountStore setPermissionGranted:forBundleID:onAccountType:]_block_invoke
+0x19fd66868  __TEXT,__text  ___65-[ACAccountStore setPermissionGranted:forBundleID:onAccountType:]_block_invoke_2
+0x19fd668d4  __TEXT,__text  ___65-[ACAccountStore setPermissionGranted:forBundleID:onAccountType:]_block_invoke.160
+0x19fd668dc  __TEXT,__text  -[ACAccountStore clearAllPermissionsGrantedForAccountType:]
+0x19fd66be8  __TEXT,__text  ___59-[ACAccountStore clearAllPermissionsGrantedForAccountType:]_block_invoke
+0x19fd66c78  __TEXT,__text  ___59-[ACAccountStore clearAllPermissionsGrantedForAccountType:]_block_invoke_2
+0x19fd66ce4  __TEXT,__text  ___59-[ACAccountStore clearAllPermissionsGrantedForAccountType:]_block_invoke.161
+0x19fd66cec  __TEXT,__text  -[ACAccountStore permissionForAccountType:]
+0x19fd67040  __TEXT,__text  ___43-[ACAccountStore permissionForAccountType:]_block_invoke
+0x19fd670b4  __TEXT,__text  ___43-[ACAccountStore permissionForAccountType:]_block_invoke_2
+0x19fd67134  __TEXT,__text  -[ACAccountStore grantedPermissionsForAccountType:]
+0x19fd674b4  __TEXT,__text  ___51-[ACAccountStore grantedPermissionsForAccountType:]_block_invoke
+0x19fd67528  __TEXT,__text  ___51-[ACAccountStore grantedPermissionsForAccountType:]_block_invoke_2
+0x19fd675b8  __TEXT,__text  -[ACAccountStore clearGrantedPermissionsForAccountType:]
+0x19fd678c4  __TEXT,__text  ___56-[ACAccountStore clearGrantedPermissionsForAccountType:]_block_invoke
+0x19fd67954  __TEXT,__text  ___56-[ACAccountStore clearGrantedPermissionsForAccountType:]_block_invoke_2
+0x19fd679c0  __TEXT,__text  ___56-[ACAccountStore clearGrantedPermissionsForAccountType:]_block_invoke.162
+0x19fd679c8  __TEXT,__text  -[ACAccountStore verifyCredentialsForAccount:withHandler:]
+0x19fd679d4  __TEXT,__text  -[ACAccountStore verifyCredentialsForAccount:saveWhenAuthorized:withHandler:]
+0x19fd67ac4  __TEXT,__text  -[ACAccountStore verifyCredentialsForAccount:options:completion:]
+0x19fd67f88  __TEXT,__text  ___65-[ACAccountStore verifyCredentialsForAccount:options:completion:]_block_invoke
+0x19fd680c8  __TEXT,__text  ___65-[ACAccountStore verifyCredentialsForAccount:options:completion:]_block_invoke.164
+0x19fd68244  __TEXT,__text  ___65-[ACAccountStore verifyCredentialsForAccount:options:completion:]_block_invoke.165
+0x19fd68314  __TEXT,__text  ___65-[ACAccountStore verifyCredentialsForAccount:options:completion:]_block_invoke_2
+0x19fd68410  __TEXT,__text  ___65-[ACAccountStore verifyCredentialsForAccount:options:completion:]_block_invoke_3
+0x19fd68464  __TEXT,__text  -[ACAccountStore renewCredentialsForAccount:options:completion:]
+0x19fd68a48  __TEXT,__text  ___64-[ACAccountStore renewCredentialsForAccount:options:completion:]_block_invoke
+0x19fd68b6c  __TEXT,__text  ___64-[ACAccountStore renewCredentialsForAccount:options:completion:]_block_invoke.166
+0x19fd68cec  __TEXT,__text  ___64-[ACAccountStore renewCredentialsForAccount:options:completion:]_block_invoke.168
+0x19fd68db0  __TEXT,__text  ___64-[ACAccountStore renewCredentialsForAccount:options:completion:]_block_invoke_2
+0x19fd68e84  __TEXT,__text  ___64-[ACAccountStore renewCredentialsForAccount:options:completion:]_block_invoke_3
+0x19fd68ed8  __TEXT,__text  -[ACAccountStore renewCredentialsForAccount:force:reason:completion:]
+0x19fd68fbc  __TEXT,__text  -[ACAccountStore renewCredentialsForAccount:reason:completion:]
+0x19fd68fcc  __TEXT,__text  -[ACAccountStore renewCredentialsForAccount:completion:]
+0x19fd68fdc  __TEXT,__text  -[ACAccountStore renewCredentialsForAccount:services:completion:]
+0x19fd69084  __TEXT,__text  -[ACAccountStore migrateCredentialForAccount:completion:]
+0x19fd693e0  __TEXT,__text  ___57-[ACAccountStore migrateCredentialForAccount:completion:]_block_invoke
+0x19fd69518  __TEXT,__text  ___57-[ACAccountStore migrateCredentialForAccount:completion:]_block_invoke.169
+0x19fd69530  __TEXT,__text  ___57-[ACAccountStore migrateCredentialForAccount:completion:]_block_invoke_2
+0x19fd695f0  __TEXT,__text  ___57-[ACAccountStore migrateCredentialForAccount:completion:]_block_invoke_3
+0x19fd696a4  __TEXT,__text  ___57-[ACAccountStore migrateCredentialForAccount:completion:]_block_invoke_4
+0x19fd696f8  __TEXT,__text  -[ACAccountStore runAccountMigrationPlugins:]
+0x19fd69908  __TEXT,__text  ___45-[ACAccountStore runAccountMigrationPlugins:]_block_invoke
+0x19fd69a40  __TEXT,__text  ___45-[ACAccountStore runAccountMigrationPlugins:]_block_invoke.170
+0x19fd69a58  __TEXT,__text  ___45-[ACAccountStore runAccountMigrationPlugins:]_block_invoke_2
+0x19fd69ae4  __TEXT,__text  ___45-[ACAccountStore runAccountMigrationPlugins:]_block_invoke_3
+0x19fd69af4  __TEXT,__text  ___45-[ACAccountStore runAccountMigrationPlugins:]_block_invoke_4
+0x19fd69b48  __TEXT,__text  ___45-[ACAccountStore credentialForAccount:error:]_block_invoke.172
+0x19fd69b88  __TEXT,__text  -[ACAccountStore credentialForAccount:serviceID:]
+0x19fd69b90  __TEXT,__text  -[ACAccountStore credentialForAccount:serviceID:error:]
+0x19fd6a168  __TEXT,__text  ___55-[ACAccountStore credentialForAccount:serviceID:error:]_block_invoke
+0x19fd6a1e0  __TEXT,__text  ___55-[ACAccountStore credentialForAccount:serviceID:error:]_block_invoke_2
+0x19fd6a284  __TEXT,__text  ___55-[ACAccountStore credentialForAccount:serviceID:error:]_block_invoke.173
+0x19fd6a2c4  __TEXT,__text  -[ACAccountStore setCredential:forAccount:serviceID:error:]
+0x19fd6a7d0  __TEXT,__text  ___59-[ACAccountStore setCredential:forAccount:serviceID:error:]_block_invoke
+0x19fd6a88c  __TEXT,__text  ___59-[ACAccountStore setCredential:forAccount:serviceID:error:]_block_invoke_2
+0x19fd6a908  __TEXT,__text  ___59-[ACAccountStore setCredential:forAccount:serviceID:error:]_block_invoke.175
+0x19fd6a948  __TEXT,__text  -[ACAccountStore credentialForAccount:bundleID:]
+0x19fd6a94c  __TEXT,__text  -[ACAccountStore parentAccountForAccount:]
+0x19fd6a954  __TEXT,__text  -[ACAccountStore parentAccountForAccount:error:]
+0x19fd6ae4c  __TEXT,__text  ___48-[ACAccountStore parentAccountForAccount:error:]_block_invoke
+0x19fd6aec4  __TEXT,__text  ___48-[ACAccountStore parentAccountForAccount:error:]_block_invoke_2
+0x19fd6af64  __TEXT,__text  ___48-[ACAccountStore parentAccountForAccount:error:]_block_invoke.179
+0x19fd6afa4  __TEXT,__text  ___48-[ACAccountStore childAccountsForAccount:error:]_block_invoke.180
+0x19fd6afe4  __TEXT,__text  -[ACAccountStore enabledDataclassesForAccount:]
+0x19fd6afec  __TEXT,__text  -[ACAccountStore enabledDataclassesForAccount:error:]
+0x19fd6b44c  __TEXT,__text  ___53-[ACAccountStore enabledDataclassesForAccount:error:]_block_invoke
+0x19fd6b4fc  __TEXT,__text  ___53-[ACAccountStore enabledDataclassesForAccount:error:]_block_invoke_2
+0x19fd6b59c  __TEXT,__text  ___53-[ACAccountStore enabledDataclassesForAccount:error:]_block_invoke.184
+0x19fd6b5dc  __TEXT,__text  -[ACAccountStore provisionedDataclassesForAccount:]
+0x19fd6b5e4  __TEXT,__text  -[ACAccountStore provisionedDataclassesForAccount:error:]
+0x19fd6ba44  __TEXT,__text  ___57-[ACAccountStore provisionedDataclassesForAccount:error:]_block_invoke
+0x19fd6baf4  __TEXT,__text  ___57-[ACAccountStore provisionedDataclassesForAccount:error:]_block_invoke_2
+0x19fd6bb94  __TEXT,__text  ___57-[ACAccountStore provisionedDataclassesForAccount:error:]_block_invoke.185
+0x19fd6bbd4  __TEXT,__text  -[ACAccountStore supportedDataclassesForAccountType:]
+0x19fd6bf54  __TEXT,__text  ___53-[ACAccountStore supportedDataclassesForAccountType:]_block_invoke
+0x19fd6bfc8  __TEXT,__text  ___53-[ACAccountStore supportedDataclassesForAccountType:]_block_invoke_2
+0x19fd6c058  __TEXT,__text  -[ACAccountStore syncableDataclassesForAccountType:]
+0x19fd6c3d8  __TEXT,__text  ___52-[ACAccountStore syncableDataclassesForAccountType:]_block_invoke
+0x19fd6c44c  __TEXT,__text  ___52-[ACAccountStore syncableDataclassesForAccountType:]_block_invoke_2
+0x19fd6c4dc  __TEXT,__text  -[ACAccountStore displayTypeForAccountWithIdentifier:]
+0x19fd6c868  __TEXT,__text  ___54-[ACAccountStore displayTypeForAccountWithIdentifier:]_block_invoke
+0x19fd6c8e0  __TEXT,__text  ___54-[ACAccountStore displayTypeForAccountWithIdentifier:]_block_invoke_2
+0x19fd6c980  __TEXT,__text  -[ACAccountStore preloadDataclassOwnersWithCompletion:]
+0x19fd6cba4  __TEXT,__text  ___55-[ACAccountStore preloadDataclassOwnersWithCompletion:]_block_invoke
+0x19fd6cc40  __TEXT,__text  ___55-[ACAccountStore preloadDataclassOwnersWithCompletion:]_block_invoke_2
+0x19fd6cd04  __TEXT,__text  ___55-[ACAccountStore preloadDataclassOwnersWithCompletion:]_block_invoke_3
+0x19fd6ce84  __TEXT,__text  ___55-[ACAccountStore preloadDataclassOwnersWithCompletion:]_block_invoke.186
+0x19fd6cf1c  __TEXT,__text  ___55-[ACAccountStore preloadDataclassOwnersWithCompletion:]_block_invoke_2.187
+0x19fd6d0ac  __TEXT,__text  -[ACAccountStore dataclassActionsForAccountSave:]
+0x19fd6d0b4  __TEXT,__text  -[ACAccountStore dataclassActionsForAccountSave:error:]
+0x19fd6d514  __TEXT,__text  ___55-[ACAccountStore dataclassActionsForAccountSave:error:]_block_invoke
+0x19fd6d58c  __TEXT,__text  ___55-[ACAccountStore dataclassActionsForAccountSave:error:]_block_invoke_2
+0x19fd6d62c  __TEXT,__text  ___55-[ACAccountStore dataclassActionsForAccountSave:error:]_block_invoke.188
+0x19fd6d66c  __TEXT,__text  -[ACAccountStore dataclassActionsForAccountDeletion:]
+0x19fd6d674  __TEXT,__text  -[ACAccountStore dataclassActionsForAccountDeletion:error:]
+0x19fd6dad4  __TEXT,__text  ___59-[ACAccountStore dataclassActionsForAccountDeletion:error:]_block_invoke
+0x19fd6db4c  __TEXT,__text  ___59-[ACAccountStore dataclassActionsForAccountDeletion:error:]_block_invoke_2
+0x19fd6dbec  __TEXT,__text  ___59-[ACAccountStore dataclassActionsForAccountDeletion:error:]_block_invoke.189
+0x19fd6dc2c  __TEXT,__text  -[ACAccountStore isPerformingDataclassActionsForAccount:]
+0x19fd6dc34  __TEXT,__text  -[ACAccountStore isPerformingDataclassActionsForAccount:error:]
+0x19fd6e094  __TEXT,__text  ___63-[ACAccountStore isPerformingDataclassActionsForAccount:error:]_block_invoke
+0x19fd6e10c  __TEXT,__text  ___63-[ACAccountStore isPerformingDataclassActionsForAccount:error:]_block_invoke_2
+0x19fd6e190  __TEXT,__text  ___63-[ACAccountStore isPerformingDataclassActionsForAccount:error:]_block_invoke.190
+0x19fd6e1d0  __TEXT,__text  -[ACAccountStore isTetheredSyncingEnabledForDataclass:]
+0x19fd6e548  __TEXT,__text  ___55-[ACAccountStore isTetheredSyncingEnabledForDataclass:]_block_invoke
+0x19fd6e5bc  __TEXT,__text  ___55-[ACAccountStore isTetheredSyncingEnabledForDataclass:]_block_invoke_2
+0x19fd6e5cc  __TEXT,__text  -[ACAccountStore accountIdentifiersEnabledForDataclasses:withAccountTypeIdentifiers:completion:]
+0x19fd6e93c  __TEXT,__text  ___96-[ACAccountStore accountIdentifiersEnabledForDataclasses:withAccountTypeIdentifiers:completion:]_block_invoke
+0x19fd6ea20  __TEXT,__text  ___96-[ACAccountStore accountIdentifiersEnabledForDataclasses:withAccountTypeIdentifiers:completion:]_block_invoke_2
+0x19fd6eb9c  __TEXT,__text  ___96-[ACAccountStore accountIdentifiersEnabledForDataclasses:withAccountTypeIdentifiers:completion:]_block_invoke.198
+0x19fd6ebac  __TEXT,__text  ___96-[ACAccountStore accountIdentifiersEnabledForDataclasses:withAccountTypeIdentifiers:completion:]_block_invoke_2.199
+0x19fd6ec00  __TEXT,__text  -[ACAccountStore clientTokenForAccount:]
+0x19fd6f010  __TEXT,__text  ___40-[ACAccountStore clientTokenForAccount:]_block_invoke
+0x19fd6f0d8  __TEXT,__text  ___40-[ACAccountStore clientTokenForAccount:]_block_invoke_2
+0x19fd6f12c  __TEXT,__text  ___40-[ACAccountStore clientTokenForAccount:]_block_invoke_3
+0x19fd6f134  __TEXT,__text  -[ACAccountStore addClientToken:forAccount:]
+0x19fd6f584  __TEXT,__text  ___44-[ACAccountStore addClientToken:forAccount:]_block_invoke
+0x19fd6f650  __TEXT,__text  ___44-[ACAccountStore addClientToken:forAccount:]_block_invoke_2
+0x19fd6f664  __TEXT,__text  ___44-[ACAccountStore addClientToken:forAccount:]_block_invoke_3
+0x19fd6f66c  __TEXT,__text  -[ACAccountStore discoverPropertiesForAccount:options:completion:]
+0x19fd6fa40  __TEXT,__text  ___66-[ACAccountStore discoverPropertiesForAccount:options:completion:]_block_invoke
+0x19fd6fc4c  __TEXT,__text  ___66-[ACAccountStore discoverPropertiesForAccount:options:completion:]_block_invoke.200
+0x19fd6fc64  __TEXT,__text  ___66-[ACAccountStore discoverPropertiesForAccount:options:completion:]_block_invoke_2
+0x19fd6fd0c  __TEXT,__text  ___66-[ACAccountStore discoverPropertiesForAccount:options:completion:]_block_invoke_3
+0x19fd6fd80  __TEXT,__text  ___66-[ACAccountStore discoverPropertiesForAccount:options:completion:]_block_invoke_4
+0x19fd6fdd4  __TEXT,__text  -[ACAccountStore openAuthenticationURL:forAccount:shouldConfirm:completion:]
+0x19fd70154  __TEXT,__text  ___76-[ACAccountStore openAuthenticationURL:forAccount:shouldConfirm:completion:]_block_invoke
+0x19fd70220  __TEXT,__text  ___76-[ACAccountStore openAuthenticationURL:forAccount:shouldConfirm:completion:]_block_invoke_2
+0x19fd703dc  __TEXT,__text  ___76-[ACAccountStore openAuthenticationURL:forAccount:shouldConfirm:completion:]_block_invoke.204
+0x19fd703f0  __TEXT,__text  ___76-[ACAccountStore openAuthenticationURL:forAccount:shouldConfirm:completion:]_block_invoke_2.205
+0x19fd70444  __TEXT,__text  -[ACAccountStore openAuthenticationURLForAccount:withDelegateClassName:fromBundleAtPath:shouldConfirm:completion:]
+0x19fd70854  __TEXT,__text  ___114-[ACAccountStore openAuthenticationURLForAccount:withDelegateClassName:fromBundleAtPath:shouldConfirm:completion:]_block_invoke
+0x19fd70948  __TEXT,__text  ___114-[ACAccountStore openAuthenticationURLForAccount:withDelegateClassName:fromBundleAtPath:shouldConfirm:completion:]_block_invoke_2
+0x19fd70b04  __TEXT,__text  ___114-[ACAccountStore openAuthenticationURLForAccount:withDelegateClassName:fromBundleAtPath:shouldConfirm:completion:]_block_invoke.213
+0x19fd70b18  __TEXT,__text  ___114-[ACAccountStore openAuthenticationURLForAccount:withDelegateClassName:fromBundleAtPath:shouldConfirm:completion:]_block_invoke_2.214
+0x19fd70b70  __TEXT,__text  -[ACAccountStore notifyRemoteDevicesOfModifiedAccount:]
+0x19fd70b7c  __TEXT,__text  -[ACAccountStore notifyRemoteDevicesOfModifiedAccount:withOptions:]
+0x19fd70b84  __TEXT,__text  -[ACAccountStore notifyRemoteDevicesOfModifiedAccount:withOptions:completion:]
+0x19fd70e40  __TEXT,__text  ___78-[ACAccountStore notifyRemoteDevicesOfModifiedAccount:withOptions:completion:]_block_invoke
+0x19fd70f00  __TEXT,__text  ___78-[ACAccountStore notifyRemoteDevicesOfModifiedAccount:withOptions:completion:]_block_invoke_2
+0x19fd71124  __TEXT,__text  ___78-[ACAccountStore notifyRemoteDevicesOfModifiedAccount:withOptions:completion:]_block_invoke.215
+0x19fd712cc  __TEXT,__text  -[ACAccountStore notifyRemoteDevicesOfUpdatedCredentials:]
+0x19fd712d4  __TEXT,__text  -[ACAccountStore notifyRemoteDevicesOfUpdatedCredentials:withOptions:]
+0x19fd712dc  __TEXT,__text  -[ACAccountStore notifyRemoteDevicesOfUpdatedCredentials:withOptions:completion:]
+0x19fd71598  __TEXT,__text  ___81-[ACAccountStore notifyRemoteDevicesOfUpdatedCredentials:withOptions:completion:]_block_invoke
+0x19fd71658  __TEXT,__text  ___81-[ACAccountStore notifyRemoteDevicesOfUpdatedCredentials:withOptions:completion:]_block_invoke_2
+0x19fd7187c  __TEXT,__text  ___81-[ACAccountStore notifyRemoteDevicesOfUpdatedCredentials:withOptions:completion:]_block_invoke.216
+0x19fd71a24  __TEXT,__text  -[ACAccountStore saveAccount:toPairedDeviceWithOptions:completion:]
+0x19fd71d8c  __TEXT,__text  ___67-[ACAccountStore saveAccount:toPairedDeviceWithOptions:completion:]_block_invoke
+0x19fd71e58  __TEXT,__text  ___67-[ACAccountStore saveAccount:toPairedDeviceWithOptions:completion:]_block_invoke_2
+0x19fd72014  __TEXT,__text  ___67-[ACAccountStore saveAccount:toPairedDeviceWithOptions:completion:]_block_invoke.217
+0x19fd720b4  __TEXT,__text  ___67-[ACAccountStore saveAccount:toPairedDeviceWithOptions:completion:]_block_invoke_2.218
+0x19fd72170  __TEXT,__text  ___67-[ACAccountStore saveAccount:toPairedDeviceWithOptions:completion:]_block_invoke.219
+0x19fd721c4  __TEXT,__text  -[ACAccountStore removeAccountsFromPairedDeviceWithCompletion:]
+0x19fd721d0  __TEXT,__text  -[ACAccountStore removeAccountsFromPairedDeviceWithOptions:completion:]
+0x19fd72488  __TEXT,__text  ___71-[ACAccountStore removeAccountsFromPairedDeviceWithOptions:completion:]_block_invoke
+0x19fd72554  __TEXT,__text  ___71-[ACAccountStore removeAccountsFromPairedDeviceWithOptions:completion:]_block_invoke_2
+0x19fd72710  __TEXT,__text  ___71-[ACAccountStore removeAccountsFromPairedDeviceWithOptions:completion:]_block_invoke.220
+0x19fd727a0  __TEXT,__text  ___71-[ACAccountStore removeAccountsFromPairedDeviceWithOptions:completion:]_block_invoke_2.221
+0x19fd7285c  __TEXT,__text  ___71-[ACAccountStore removeAccountsFromPairedDeviceWithOptions:completion:]_block_invoke.222
+0x19fd728b0  __TEXT,__text  -[ACAccountStore removeAccountFromPairedDevice:withCompletion:]
+0x19fd728bc  __TEXT,__text  -[ACAccountStore removeAccountFromPairedDevice:withOptions:completion:]
+0x19fd72be8  __TEXT,__text  ___71-[ACAccountStore removeAccountFromPairedDevice:withOptions:completion:]_block_invoke
+0x19fd72cb4  __TEXT,__text  ___71-[ACAccountStore removeAccountFromPairedDevice:withOptions:completion:]_block_invoke_2
+0x19fd72e70  __TEXT,__text  ___71-[ACAccountStore removeAccountFromPairedDevice:withOptions:completion:]_block_invoke.223
+0x19fd72f10  __TEXT,__text  ___71-[ACAccountStore removeAccountFromPairedDevice:withOptions:completion:]_block_invoke_2.224
+0x19fd72fcc  __TEXT,__text  ___71-[ACAccountStore removeAccountFromPairedDevice:withOptions:completion:]_block_invoke.225
+0x19fd73020  __TEXT,__text  -[ACAccountStore triggerKeychainMigrationIfNecessary:]
+0x19fd73448  __TEXT,__text  ___54-[ACAccountStore triggerKeychainMigrationIfNecessary:]_block_invoke
+0x19fd734bc  __TEXT,__text  ___54-[ACAccountStore triggerKeychainMigrationIfNecessary:]_block_invoke_2
+0x19fd7357c  __TEXT,__text  ___54-[ACAccountStore triggerKeychainMigrationIfNecessary:]_block_invoke.226
+0x19fd735c8  __TEXT,__text  +[ACAccountStore _obsoleteAccountTypeIDsToRemove]
+0x19fd73600  __TEXT,__text  ___49+[ACAccountStore _obsoleteAccountTypeIDsToRemove]_block_invoke
+0x19fd736f0  __TEXT,__text  -[ACAccountStore removeObsoleteAccounts:]
+0x19fd73918  __TEXT,__text  ___41-[ACAccountStore removeObsoleteAccounts:]_block_invoke
+0x19fd73a3c  __TEXT,__text  ___41-[ACAccountStore removeObsoleteAccounts:]_block_invoke.229
+0x19fd73b08  __TEXT,__text  ___41-[ACAccountStore removeObsoleteAccounts:]_block_invoke_2
+0x19fd73cc4  __TEXT,__text  -[ACAccountStore _removeObsoleteAccountsInternal:completion:]
+0x19fd73fc4  __TEXT,__text  ___61-[ACAccountStore _removeObsoleteAccountsInternal:completion:]_block_invoke
+0x19fd74134  __TEXT,__text  ___61-[ACAccountStore _removeObsoleteAccountsInternal:completion:]_block_invoke.230
+0x19fd743d8  __TEXT,__text  -[ACAccountStore _removeObsoleteOSXServerAccountForMacOS:]
+0x19fd74eb0  __TEXT,__text  -[ACAccountStore _removeObsoleteOSXServerAccountForiOS:]
+0x19fd757e0  __TEXT,__text  -[ACAccountStore _createSMTPAccountForServerAccount:]
+0x19fd75ae0  __TEXT,__text  -[ACAccountStore handleURL:]
+0x19fd75d0c  __TEXT,__text  ___28-[ACAccountStore handleURL:]_block_invoke
+0x19fd75df0  __TEXT,__text  ___28-[ACAccountStore handleURL:]_block_invoke.244
+0x19fd75ef4  __TEXT,__text  -[ACAccountStore reportTelemetryForLandmarkEvent:]
+0x19fd75f7c  __TEXT,__text  -[ACAccountStore scheduleBackupIfNonexistent:]
+0x19fd76200  __TEXT,__text  ___46-[ACAccountStore scheduleBackupIfNonexistent:]_block_invoke
+0x19fd762cc  __TEXT,__text  ___46-[ACAccountStore scheduleBackupIfNonexistent:]_block_invoke_2
+0x19fd76488  __TEXT,__text  ___46-[ACAccountStore scheduleBackupIfNonexistent:]_block_invoke.245
+0x19fd76514  __TEXT,__text  ___46-[ACAccountStore scheduleBackupIfNonexistent:]_block_invoke_2.246
+0x19fd765d0  __TEXT,__text  ___46-[ACAccountStore scheduleBackupIfNonexistent:]_block_invoke.247
+0x19fd76624  __TEXT,__text  -[ACAccountStore resetDatabaseToVersion:withCompletion:]
+0x19fd768dc  __TEXT,__text  ___56-[ACAccountStore resetDatabaseToVersion:withCompletion:]_block_invoke
+0x19fd769a8  __TEXT,__text  ___56-[ACAccountStore resetDatabaseToVersion:withCompletion:]_block_invoke_2
+0x19fd76b64  __TEXT,__text  ___56-[ACAccountStore resetDatabaseToVersion:withCompletion:]_block_invoke.248
+0x19fd76b70  __TEXT,__text  ___56-[ACAccountStore resetDatabaseToVersion:withCompletion:]_block_invoke_2.249
+0x19fd76bc4  __TEXT,__text  -[ACAccountStore setCredentialItemCleanupVolatilityDuration:withCompletion:]
+0x19fd76cd8  __TEXT,__text  ___76-[ACAccountStore setCredentialItemCleanupVolatilityDuration:withCompletion:]_block_invoke
+0x19fd76d74  __TEXT,__text  ___76-[ACAccountStore setCredentialItemCleanupVolatilityDuration:withCompletion:]_block_invoke_2
+0x19fd76d8c  __TEXT,__text  ___76-[ACAccountStore setCredentialItemCleanupVolatilityDuration:withCompletion:]_block_invoke_3
+0x19fd76df8  __TEXT,__text  -[ACAccountStore triggerCredentialItemCleanupWithCompletion:]
+0x19fd76f04  __TEXT,__text  ___61-[ACAccountStore triggerCredentialItemCleanupWithCompletion:]_block_invoke
+0x19fd76f90  __TEXT,__text  ___61-[ACAccountStore triggerCredentialItemCleanupWithCompletion:]_block_invoke_2
+0x19fd76fa8  __TEXT,__text  ___61-[ACAccountStore triggerCredentialItemCleanupWithCompletion:]_block_invoke_3
+0x19fd77014  __TEXT,__text  -[ACAccountStore shutdownAccountsD:]
+0x19fd77298  __TEXT,__text  ___36-[ACAccountStore shutdownAccountsD:]_block_invoke
+0x19fd77364  __TEXT,__text  ___36-[ACAccountStore shutdownAccountsD:]_block_invoke_2
+0x19fd77520  __TEXT,__text  ___36-[ACAccountStore shutdownAccountsD:]_block_invoke.250
+0x19fd7752c  __TEXT,__text  ___36-[ACAccountStore shutdownAccountsD:]_block_invoke_2.251
+0x19fd77580  __TEXT,__text  -[ACAccountStore generationForCacheSuffix:]
+0x19fd775d8  __TEXT,__text  -[ACAccountStore _uidOfAccountsd]
+0x19fd776ac  __TEXT,__text  ___33-[ACAccountStore _uidOfAccountsd]_block_invoke
+0x19fd77720  __TEXT,__text  ___33-[ACAccountStore _uidOfAccountsd]_block_invoke_2
+0x19fd77730  __TEXT,__text  ___33-[ACAccountStore _uidOfAccountsd]_block_invoke_3
+0x19fd77734  __TEXT,__text  -[ACAccountStore _sanitizeOptionsDictionary:]
+0x19fd777d4  __TEXT,__text  -[ACAccountStore _unsanitizeError:]
+0x19fd779fc  __TEXT,__text  -[ACAccountStore _primaryAppleAccountCache]
+0x19fd77a08  __TEXT,__text  -[ACAccountStore set_primaryAppleAccountCache:]
+0x19fd77a10  __TEXT,__text  -[ACAccountStore set_testCache:]
+0x19fd77f48  __TEXT,__text  ___ACRedactPIIInObject_block_invoke
+0x19fd77fb4  __TEXT,__text  ___47-[ACAccount _installCredentialsChangedObserver]_block_invoke
+0x19fd78004  __TEXT,__text  -[ACAccount _initWithProtobuf:]
+0x19fd78514  __TEXT,__text  -[ACAccount _initWithProtobufData:]
+0x19fd785c4  __TEXT,__text  -[ACAccount _encodeProtobuf]
+0x19fd78910  __TEXT,__text  -[ACAccount _encodeProtobufData]
+0x19fd78950  __TEXT,__text  -[ACAccount portableCopy]
+0x19fd7898c  __TEXT,__text  -[ACAccount fullDescription]
+0x19fd78d54  __TEXT,__text  -[ACAccount credentialsChanged:]
+0x19fd78e04  __TEXT,__text  -[ACAccount isDirty]
+0x19fd78e60  __TEXT,__text  -[ACAccount isPropertyDirty:]
+0x19fd78ed4  __TEXT,__text  -[ACAccount markAllPropertiesDirty]
+0x19fd79194  __TEXT,__text  -[ACAccount setDirty:forProperty:]
+0x19fd7921c  __TEXT,__text  -[ACAccount _markPropertyDirty:]
+0x19fd7928c  __TEXT,__text  -[ACAccount _markAccountPropertyDirty:]
+0x19fd792fc  __TEXT,__text  -[ACAccount _unsafe_markAccountPropertyDirty:]
+0x19fd79370  __TEXT,__text  -[ACAccount _markDataclassPropertyDirty:]
+0x19fd793e0  __TEXT,__text  -[ACAccount _unsafe_markDataclassPropertyDirty:]
+0x19fd79454  __TEXT,__text  -[ACAccount _markCredentialDirty]
+0x19fd79460  __TEXT,__text  -[ACAccount _clearDirtyProperties]
+0x19fd795a0  __TEXT,__text  -[ACAccount setIdentifier:]
+0x19fd79628  __TEXT,__text  -[ACAccount setAuthenticationType:]
+0x19fd796b0  __TEXT,__text  -[ACAccount setCredentialType:]
+0x19fd79760  __TEXT,__text  -[ACAccount setUsername:]
+0x19fd79810  __TEXT,__text  -[ACAccount setCredential:]
+0x19fd798fc  __TEXT,__text  -[ACAccount internalCredential]
+0x19fd79970  __TEXT,__text  -[ACAccount setAccountDescription:]
+0x19fd79a10  __TEXT,__text  -[ACAccount setOwningBundleID:]
+0x19fd79a98  __TEXT,__text  -[ACAccount creationDate]
+0x19fd79ae0  __TEXT,__text  -[ACAccount setCreationDate:]
+0x19fd79b64  __TEXT,__text  -[ACAccount setAccountProperties:]
+0x19fd79d8c  __TEXT,__text  -[ACAccount setProperty:forKey:]
+0x19fd79d90  __TEXT,__text  -[ACAccount setAccountProperty:forKey:]
+0x19fd79eb8  __TEXT,__text  -[ACAccount setObject:forKeyedSubscript:]
+0x19fd79ebc  __TEXT,__text  -[ACAccount authenticated]
+0x19fd79ec0  __TEXT,__text  -[ACAccount setAuthenticated:]
+0x19fd79f64  __TEXT,__text  -[ACAccount setLastCredentialRenewalRejectionDate:]
+0x19fd7a010  __TEXT,__text  -[ACAccount setWarmingUp:]
+0x19fd7a07c  __TEXT,__text  -[ACAccount setCredentialLocation:]
+0x19fd7a144  __TEXT,__text  -[ACAccount isVisible]
+0x19fd7a180  __TEXT,__text  -[ACAccount setVisible:]
+0x19fd7a1ec  __TEXT,__text  -[ACAccount supportsAuthentication]
+0x19fd7a250  __TEXT,__text  -[ACAccount setSupportsAuthentication:]
+0x19fd7a2e4  __TEXT,__text  -[ACAccount supportsPush]
+0x19fd7a324  __TEXT,__text  -[ACAccount setAccountType:]
+0x19fd7a3a8  __TEXT,__text  -[ACAccount setParentAccount:]
+0x19fd7a51c  __TEXT,__text  -[ACAccount displayAccount]
+0x19fd7a570  __TEXT,__text  -[ACAccount _setModID:]
+0x19fd7a5cc  __TEXT,__text  -[ACAccount trackedProvisionedDataclasses]
+0x19fd7a628  __TEXT,__text  -[ACAccount changeTypeForProvisionedDataclass:]
+0x19fd7a738  __TEXT,__text  -[ACAccount provisionedDataclasses]
+0x19fd7a890  __TEXT,__text  -[ACAccount _unsafe_loadProvisionedDataclasses]
+0x19fd7a9bc  __TEXT,__text  -[ACAccount setProvisionedDataclasses:]
+0x19fd7aaa4  __TEXT,__text  -[ACAccount isProvisionedForDataclass:]
+0x19fd7aafc  __TEXT,__text  -[ACAccount setProvisioned:forDataclass:]
+0x19fd7ac14  __TEXT,__text  ___41-[ACAccount setProvisioned:forDataclass:]_block_invoke
+0x19fd7ac64  __TEXT,__text  -[ACAccount trackedEnabledDataclasses]
+0x19fd7acc0  __TEXT,__text  -[ACAccount changeTypeForEnabledDataclass:]
+0x19fd7adcc  __TEXT,__text  -[ACAccount setEnabledDataclasses:]
+0x19fd7aee0  __TEXT,__text  -[ACAccount setEnabled:forDataclass:]
+0x19fd7b030  __TEXT,__text  ___37-[ACAccount setEnabled:forDataclass:]_block_invoke
+0x19fd7b080  __TEXT,__text  -[ACAccount isEnabledToSyncDataclass:]
+0x19fd7b100  __TEXT,__text  -[ACAccount setDataclassProperties:]
+0x19fd7b338  __TEXT,__text  -[ACAccount setProperties:forDataclass:]
+0x19fd7b458  __TEXT,__text  -[ACAccount _setObjectID:]
+0x19fd7b4d0  __TEXT,__text  -[ACAccount takeValuesFromModifiedAccount:]
+0x19fd7bbdc  __TEXT,__text  -[ACAccount _loadAllCachedProperties]
+0x19fd7bc4c  __TEXT,__text  -[ACAccount accountByCleaningThirdPartyTransformations]
+0x19fd7bcd0  __TEXT,__text  -[ACAccount clientToken]
+0x19fd7bdd4  __TEXT,__text  -[ACAccount addClientToken:]
+0x19fd7beac  __TEXT,__text  -[ACAccount defaultAutodiscoverDomainForChildType:]
+0x19fd7c134  __TEXT,__text  ___51-[ACAccount defaultAutodiscoverDomainForChildType:]_block_invoke
+0x19fd7c494  __TEXT,__text  -[ACAccount dirtyAccountProperties]
+0x19fd7c4f0  __TEXT,__text  -[ACAccount dirtyDataclassProperties]
+0x19fd7c54c  __TEXT,__text  -[ACAccount shortDebugName]
+0x19fd7c5dc  __TEXT,__text  -[ACAccount _applyDirtyStateFromAccount:]
+0x19fd7c9b8  __TEXT,__text  ___41-[ACAccount _applyDirtyStateFromAccount:]_block_invoke
+0x19fd7ca50  __TEXT,__text  ___41-[ACAccount _applyDirtyStateFromAccount:]_block_invoke_2
+0x19fd7cae8  __TEXT,__text  -[ACAccount _isDifferentFrom:]
+0x19fd7d050  __TEXT,__text  _ACIsEqualOrNil
+0x19fd7d0c0  __TEXT,__text  -[ACAccount setSecIdentity:]
+0x19fd7d200  __TEXT,__text  -[ACAccount copySecIdentity]
+0x19fd7d31c  __TEXT,__text  -[ACAccount setSecCertificates:]
+0x19fd7d520  __TEXT,__text  -[ACAccount secCertificates]
+0x19fd7d760  __TEXT,__text  -[ACAccount isDataSeparatedAccount]
+0x19fd7d8b0  __TEXT,__text  -[ACAccount correctPersonaScopedForAccount]
+0x19fd7d9a8  __TEXT,__text  -[ACAccount childCardDAVAccountIdentifier]
+0x19fd7da50  __TEXT,__text  -[ACAccount setChildCardDAVAccountIdentifier:]
+0x19fd7da5c  __TEXT,__text  -[ACAccount managingOwnerIdentifier]
+0x19fd7dadc  __TEXT,__text  -[ACAccount setManagingOwnerIdentifier:]
+0x19fd7db68  __TEXT,__text  -[ACAccount managingSourceName]
+0x19fd7dbe8  __TEXT,__text  -[ACAccount setManagingSourceName:]
+0x19fd7dc74  __TEXT,__text  -[ACAccount setTrackedProvisionedDataclasses:]
+0x19fd7dc7c  __TEXT,__text  -[ACAccount setProvisionedEnumDataclasses:]
+0x19fd7dc84  __TEXT,__text  -[ACAccount wasProvisionedDataclassesReset]
+0x19fd7dc8c  __TEXT,__text  -[ACAccount setTrackedEnabledDataclasses:]
+0x19fd7dc94  __TEXT,__text  -[ACAccount setEnabledEnumDataclasses:]
+0x19fd7dc9c  __TEXT,__text  -[ACAccount wasEnabledDataclassesReset]
+0x19fd7dca4  __TEXT,__text  -[ACAccount setAccountPropertiesTransformer:]
+0x19fd7dcac  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x19fd7dccc  __TEXT,__text  _OUTLINED_FUNCTION_8
+```
+First 1,000 of 1,996.
+

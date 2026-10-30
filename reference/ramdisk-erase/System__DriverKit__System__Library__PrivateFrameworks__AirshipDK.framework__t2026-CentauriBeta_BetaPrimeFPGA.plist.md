@@ -1,0 +1,369 @@
+# `/System/DriverKit/System/Library/PrivateFrameworks/AirshipDK.framework/t2026-CentauriBeta_BetaPrimeFPGA.plist`
+
+From the erase/recovery restore ramdisk (141-28940-105.dmg, runs restored_external). 17,976 bytes.
+
+- `chipset`: `t2026`
+- `device_info`:
+  - `exec_stage`:
+    - `bank`: `0`
+    - `offset`: `234881304`
+  - `exec_stage_interrupt`: `main`
+- `doorbells`:
+  - `ringdb`:
+    - `ipc_stage`: `os`
+    - `mode`: `index`
+    - `multi`:
+      - `count`: `22`
+    - `register`:
+      - `bank`: `0`
+      - `offset`: `234881024`
+    - `vector`: `0`
+- `driver_ioservice_params`:
+  - `device_power_off_timeout_ms`: `15000`
+  - `device_power_on_timeout_ms`: `5000`
+  - `ipc_power_off_timeout_ms`: `2000`
+  - `ipc_power_on_timeout_ms`: `2000`
+  - `queues`:
+    - `default`:
+      - `roles`:
+        - `main`
+        - `doorbell`
+        - `interrupt`
+- `errata`:
+  - `ring_header_footer_scaling`: `True`
+  - `window_base_mask`: `1099511627775`
+- `exec_stages`:
+  - `abort`:
+    - `value`: `3`
+  - `os`:
+    - `ipc_stage`: `os`
+    - `value`: `2`
+- `interrupts`:
+  - `main`:
+    - `queue`: `interrupt`
+    - `vector`: `0`
+- `limits`:
+  - `doorbell_timer_tolerance_us`: `50`
+  - `nominal_state_dump_size`: `1048576`
+- `main_ipc_stages`:
+  - `os`:
+    - `cr_index_count`: `1`
+    - `ipc_running_timeout`: `20000`
+    - `ipc_status_interrupt`: `main`
+    - `mcr`:
+      - `footer_size`: `16`
+      - `interrupt`: `main`
+      - `ring_size`: `16`
+    - `mtr`:
+      - `debug`:
+        - `completed_transfer_log_depth`: `32`
+        - `dump_pending_transfer_stats`: `True`
+      - `doorbell`:
+        - `name`: `ringdb`
+        - `selector`: `0`
+      - `in_place`: `False`
+      - `interrupt`: `main`
+      - `ring_size`: `16`
+    - `peripheral_info_interrupt`: `main`
+    - `registers`:
+      - `context_info_address_hi`:
+        - `bank`: `0`
+        - `offset`: `234881288`
+      - `context_info_address_lo`:
+        - `bank`: `0`
+        - `offset`: `234881284`
+      - `ipc_control`:
+        - `bank`: `0`
+        - `offset`: `234881148`
+      - `ipc_status`:
+        - `bank`: `0`
+        - `offset`: `234881280`
+      - `sleep_control`:
+        - `bank`: `0`
+        - `offset`: `234881144`
+      - `window_base_hi`:
+        - `bank`: `0`
+        - `offset`: `234881296`
+      - `window_base_lo`:
+        - `bank`: `0`
+        - `offset`: `234881292`
+      - `window_size`:
+        - `bank`: `0`
+        - `offset`: `234881300`
+    - `tr_index_count`: `22`
+    - `version`: `768`
+- `protocol`: `acipc`
+- `resources`:
+  - `acl`: `{}`
+  - `debug`: `{}`
+  - `hci`: `{}`
+  - `le`: `{}`
+  - `lea`: `{}`
+  - `lla`: `{}`
+  - `lmp`: `{}`
+  - `sco`: `{}`
+  - `timesync`: `{}`
+  - `tsi`: `{}`
+- `role`: `CentauriBeta`
+- `transfer_rings`:
+  - `acl-rx`:
+    - `completion_footer_size`: `2592`
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `8`
+    - `doorbell_moderation`:
+      - `interval_usec`: `1000`
+      - `leeway_usec`: `50`
+    - `exec_stage`: `os`
+    - `id`: `8`
+    - `in_place`: `True`
+    - `index_array_vector`: `8`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `acl`
+    - `ring_size`: `9`
+    - `transfer_footer_size`: `2592`
+  - `acl-tx`:
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `2`
+    - `doorbell_moderation`:
+      - `interval_usec`: `1000`
+      - `leeway_usec`: `50`
+    - `exec_stage`: `os`
+    - `id`: `2`
+    - `in_place`: `True`
+    - `index_array_vector`: `2`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `acl`
+    - `ring_size`: `9`
+    - `transfer_footer_size`: `2592`
+  - `debug-rx`:
+    - `completion_footer_size`: `1024`
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `12`
+    - `exec_stage`: `os`
+    - `id`: `12`
+    - `in_place`: `True`
+    - `index_array_vector`: `12`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `debug`
+    - `ring_size`: `128`
+    - `transfer_footer_size`: `1024`
+  - `hci-rx`:
+    - `completion_footer_size`: `260`
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `7`
+    - `doorbell_moderation`:
+      - `interval_usec`: `1000`
+      - `leeway_usec`: `50`
+    - `exec_stage`: `os`
+    - `id`: `7`
+    - `in_place`: `True`
+    - `index_array_vector`: `7`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `hci`
+    - `ring_size`: `17`
+    - `transfer_footer_size`: `260`
+  - `hci-tx`:
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `1`
+    - `doorbell_moderation`:
+      - `interval_usec`: `1000`
+      - `leeway_usec`: `50`
+    - `exec_stage`: `os`
+    - `id`: `1`
+    - `in_place`: `True`
+    - `index_array_vector`: `1`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `hci`
+    - `ring_size`: `5`
+    - `transfer_footer_size`: `260`
+  - `le-rx`:
+    - `completion_footer_size`: `256`
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `10`
+    - `exec_stage`: `os`
+    - `id`: `10`
+    - `in_place`: `True`
+    - `index_array_vector`: `10`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `le`
+    - `ring_size`: `17`
+    - `transfer_footer_size`: `256`
+  - `le-tx`:
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `4`
+    - `exec_stage`: `os`
+    - `id`: `4`
+    - `in_place`: `True`
+    - `index_array_vector`: `4`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `le`
+    - `ring_size`: `17`
+    - `transfer_footer_size`: `256`
+  - `lea-rx`:
+    - `completion_footer_size`: `268`
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `11`
+    - `exec_stage`: `os`
+    - `id`: `11`
+    - `in_place`: `True`
+    - `index_array_vector`: `11`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `lea`
+    - `ring_size`: `9`
+    - `transfer_footer_size`: `268`
+  - `lea-tx`:
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `5`
+    - `exec_stage`: `os`
+    - `id`: `5`
+    - `in_place`: `True`
+    - `index_array_vector`: `5`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `lea`
+    - `ring_size`: `9`
+    - `transfer_footer_size`: `260`
+  - `lla-tx`:
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `6`
+    - `exec_stage`: `os`
+    - `id`: `6`
+    - `in_place`: `True`
+    - `index_array_vector`: `6`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `lla`
+    - `ring_size`: `5`
+    - `transfer_footer_size`: `1024`
+  - `lmp-rx`:
+    - `completion_footer_size`: `260`
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `13`
+    - `exec_stage`: `os`
+    - `id`: `13`
+    - `in_place`: `True`
+    - `index_array_vector`: `13`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `lmp`
+    - `ring_size`: `17`
+    - `transfer_footer_size`: `260`
+  - `sco-rx`:
+    - `completion_footer_size`: `724`
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `9`
+    - `exec_stage`: `os`
+    - `id`: `9`
+    - `in_place`: `True`
+    - `index_array_vector`: `9`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `sco`
+    - `ring_size`: `9`
+    - `transfer_footer_size`: `724`
+  - `sco-tx`:
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `3`
+    - `exec_stage`: `os`
+    - `id`: `3`
+    - `in_place`: `True`
+    - `index_array_vector`: `3`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `sco`
+    - `ring_size`: `9`
+    - `transfer_footer_size`: `724`
+  - `tsi-rx`:
+    - `completion_footer_size`: `1304`
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `15`
+    - `exec_stage`: `os`
+    - `id`: `15`
+    - `in_place`: `True`
+    - `index_array_vector`: `15`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `tsi`
+    - `ring_size`: `9`
+    - `transfer_footer_size`: `1304`
+  - `tsi-tx`:
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `14`
+    - `exec_stage`: `os`
+    - `id`: `14`
+    - `in_place`: `True`
+    - `index_array_vector`: `14`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `tsi`
+    - `ring_size`: `9`
+    - `transfer_footer_size`: `1304`
+- `vendor`: `Centauri`

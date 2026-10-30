@@ -1,0 +1,138 @@
+# GFX (armfw_g19p) only
+   USC Pipe %u State Overview
+%s: !!! Fatal Error: AGFHALTestForCompressionErrors found AGX_CR_DCMP_ERROR != 0!: dcmp_error(%d) dm(%d) kickSlot(%d)
+%s: !!! Fatal Error: All parents of KSM kick queue entry (Queue=%u, TS=0x%010llx) not received. Valid parent mask=0x%llx
+%s: !!! Fatal Error: Deferred TSQ buffer has no free space!
+%s: !!! Fatal Error: Error: Got a starvation interrupt with no irritator enabled
+%s: !!! Fatal Error: Invalid Power Server Kick %llu
+%s: !!! Fatal Error: Lockup Detection: legacy mode not supported when Lockup Hints interrupts are enabled: try using the agf_lockup_hint_irqs=0 boot-arg
+%s: !!! Fatal Error: Recovery: Dependent skip kick call must be for 3D. Queue=%u KickEntry=%p
+%s: !!! Fatal Error: SFE_Tier3 detected!!
+%s: !!! Fatal Error: Thor Hammer Mode detected!! clique_wait_timedout: %u, thm_tier3_active: %u, dpb_watchdog_active: %u, ul1c_watchdog_active: %u, ria_watchdog_active: %u, srs_watchdog_active: %u, ttm_watchdog_active: %u
+%s: !!! Fatal Error: Unexpected recovery type %llu!
+%s: !!! Fatal Error: Unknown message received (event = %llu)
+%s: !!! Fatal Error: Unknown state = %d
+%s: !!! Fatal Error: Unrecognized gtp discard mode
+%s: !!! Fatal Error: Unrecognized remote power kick value 0x%llx
+%s: !!! Fatal Error: unexpected indexing type (%d) for register range 0x%x
+AGFAPowerMetricsServerTask
+AGFASchedulerProcessPowerKick
+AGFASchedulerProcessRecovery
+AGFAcceleratorCheckUSCTHMStatus
+AGFAcceleratorGetStampInfoForCommand
+AGFAcceleratorProcessTimeStampQueue
+AGFCheckProgressGPUInterrupt
+AGFHALCheckProgressPhaseOne
+AGFHALGetVDSIDQuotaLinesUsed
+AGFHALPBDescTableFlush
+AGFHALTestForCompressionErrors
+AGFHALTestForCompressionErrors found AGX_CR_DCMP_ERROR != 0!: dcmp_error(%d) dm(%d) kickSlot(%d)
+AGFHRBCompletionEvent
+AGFKSMCompletionEntryAreParentsReceived
+AGFPMOOMHandler
+AGFSignalPagePoolStarved
+AGFSignalPagePoolStarved(TopSlotsStarvedMask=%#llx)
+AGFSignalPagePoolStarved(found ppid=%i)
+AGX_CR_USC_CDM_DEBUG_STATUS: 0x%llx
+AGX_CR_USC_CDM_SERV: 0x%llx
+AGX_CR_USC_PDM_DEBUG_STATUS: 0x%llx
+AGX_CR_USC_PDM_SERV: 0x%llx
+AGX_CR_USC_VDM_DEBUG_STATUS: 0x%llx
+AGX_CR_USC_VDM_SERV: 0x%llx
+Context Restore Timed Out! QueueId %u
+Context Store Timed Out! DM %u, QueueId %u
+Dumping parents of KSM kick queue entry (Queue=%u, TS=0x%010llx). Valid parent mask=0x%llx
+KSM kick queue %u / dm %u / state %u: Out of order completion within a queue. Last completed TS=0x%llx. Current TS=0x%llx. Delta=%#llx
+NOP command KSM kick queue %u : Last completed TS=0x%llx. Current TS=0x%llx. Stamp index=%u, Stamp=0x%x
+Received command type (%u) in KSM completion queue entry. payload0 = 0x%llx. payload1 = 0x%llx
+Unimplemented. AGFAGXInterruptPMThresholdHandler
+agfKSMCompletionQueueGetFWDMType
+agf_timer_usc_inst_cf is set to %d, FW will do periodic USC instructions cache flush for testing
+# GFX1 (armfw1_g19p) only
+%s: !!! Fatal Error: Cre entry Index is greater than max GRT entries
+%s: !!! Fatal Error: GPU SoCHot interrupt received. Enabled sensor mask = %.16llx. Alarm%u Threshold = %u celsius
+%s: !!! Fatal Error: MTR Alarm interrupts not handled!
+%s: !!! Fatal Error: Received MTR Alarm interrupt from GPU but no match found in MTR hardware! chainID=%u
+%s: !!! Fatal Error: Slew Rate Event! IP Block=GPU MTR_TOP=0 Sensor=MTR_THERMAL%u Direction=%s Temperature=%u.%06uC MaxDelta=%u.%02uC
+%s: !!! Fatal Error: Unknown Power state mode!
+%s: !!! Fatal Error: Unrecognized recovery power cycle event 0x%llx
+%s: CRE disabled by boot arg
+%s: CRE has no restore data and will save registers this run.
+%s: CRE has restored our registers
+%s: Entering CRE critical section as CRE disabled
+%s: Entering CRE critical section for save
+AGFACREEnterCriticalSection
+AGFACREInit
+AGFACRELeaveCriticalSection
+AGFAInitSequence unknown seq type %u
+AGFAPowerHandleMissedIterations
+AGFAPowerProcessRecoveryPowerCycle
+AGFHALCREAddEntry
+AGFHALCREWaitForIdle
+AGFHALThrtlCntrSnapshotAllResidency
+AGFHALWaitForMGPUReqCleared
+AGFHALWaitForPerfState
+AGFMTRHandleTempSlewRateEvent
+AGFSoCHotHandleAlarmInterrupt
+Failed to enable CRE restore as sCRE hasn't been set up by iBoot.
+Slew Rate Event! IP Block=GPU MTR_TOP=0 Sensor=MTR_THERMAL%u Direction=%s Temperature=%u.%06uC MaxDelta=%u.%02uC
+agfMTRAlarmHandler
+# common build banners
+  FW Build running in SKSM Enabled mode
+  FW Build variant: g19p
+  FW Build version: a0
+G18 Firmware initializing
+RTKit_armv8_lightning_Oz_flto_pac-3514.40.18.release
+kAGFIPIORegionTypeADCLKRegisters
+kAGFIPIORegionTypeAFRClkGenRegisters
+kAGFIPIORegionTypeAFRClkGenRegisters1
+kAGFIPIORegionTypeAFRD2DNIRegisters
+kAGFIPIORegionTypeAFRDCPMS
+kAGFIPIORegionTypeAFRRegisters
+kAGFIPIORegionTypeAICBankedRegisters
+kAGFIPIORegionTypeANE0Registers
+kAGFIPIORegionTypeANE1Registers
+kAGFIPIORegionTypeAONPTDSpace
+kAGFIPIORegionTypeAVMRControllerFastRegisters
+kAGFIPIORegionTypeCRERegisters
+kAGFIPIORegionTypeCSRIFPerf
+kAGFIPIORegionTypeDPEPRegisters
+kAGFIPIORegionTypeDVFMAFRRegisters
+kAGFIPIORegionTypeDVFMMgpuRegisters
+kAGFIPIORegionTypeDpwrMXURegisters
+kAGFIPIORegionTypeFenderRegsAFRNIA
+kAGFIPIORegionTypeFenderRegsBumper
+kAGFIPIORegionTypeFenderRegsDFenderCSCfg
+kAGFIPIORegionTypeFenderRegsDFenderMGPUCfg
+kAGFIPIORegionTypeFenderRegsDFenderPowerTransG16G
+kAGFIPIORegionTypeFenderRegsGCPMS
+kAGFIPIORegionTypeFenderRegsGFenderCfg
+kAGFIPIORegionTypeFenderRegsHWL
+kAGFIPIORegionTypeFenderRegsIVDM
+kAGFIPIORegionTypeFenderRegsKSMFE
+kAGFIPIORegionTypeFenderRegsMCW
+kAGFIPIORegionTypeFenderRegsPRC
+kAGFIPIORegionTypeFenderRegsScratchRam
+kAGFIPIORegionTypeGFXCAXI2AFRegisters
+kAGFIPIORegionTypeGFXCLKGENMGPU
+kAGFIPIORegionTypeGMGIFAFRegisters
+kAGFIPIORegionTypeGPCAICSWInt
+kAGFIPIORegionTypeGPUCTLRIFPerf
+kAGFIPIORegionTypeGTIRegisters
+kAGFIPIORegionTypeHAT
+kAGFIPIORegionTypeMCacheRegisters
+kAGFIPIORegionTypeMTRPMSRegisters
+kAGFIPIORegionTypeMTRRegisters
+kAGFIPIORegionTypePMCRegisters
+kAGFIPIORegionTypePMGRScratch
+kAGFIPIORegionTypePMPDoorbell
+kAGFIPIORegionTypePmgrMiscDie0
+kAGFIPIORegionTypePmgrMiscDie1
+kAGFIPIORegionTypePushTelemetryDashboard
+kAGFIPIORegionTypePushTelemetryDashboardConfigSpace
+kAGFIPIORegionTypePushTelemetryDashboardReadSpace
+kAGFIPIORegionTypeSpecialAgentIdleDie0
+kAGFIPIORegionTypeSpecialAgentIdleDie1
+kAGFIPIORegionTypeTempSensorRegister
+kAGFIPIORegionTypeThrtlStatCntrsCSRegisters
+kAGFIPIORegionTypeThrtlStatCntrsRegisters

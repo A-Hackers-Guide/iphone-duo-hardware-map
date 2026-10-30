@@ -1,0 +1,736 @@
+=== /arm-io/gpio0
+  #interrupt-cells: u32: 0x2
+  glitchless: u32: 0x1
+  interrupt-controller: <empty>
+  compatible: 'gpio,t8101'
+  interrupt-parent: 0x2d -> /arm-io/aic
+  #gpio-int-groups: u32: 0x7
+  interrupts: u32: 0x147 0x148 0x149 0x14a 0x14b 0x14c 0x14d
+  reg: u32: 0x9a000000 0x0 0x100000 0x0
+  #gpio-pins: u32: 0xd6
+  AAPL,phandle: u32: 0x35
+  device_type: 'interrupt-controller'
+  #address-cells: u32: 0x0
+  role: 'AP'
+  ie-fix: u32: 0x1
+=== /arm-io/spi1
+  compatible: 'spi-1,spimc'
+  function-spi_cs0: func(0x1 -> , 'null', args=[])
+  interrupt-parent: 0x2d -> /arm-io/aic
+  interrupts: u32: 0x539
+  dma-channels: u32: 0x16 0x0 0x0 0x80 0x40 0x0 0x0 0x0 0x17 0x0 0x0 0x80 0x40 0x0 0x0 0x0
+  reg: u32: 0xa5104000 0x0 0x4000 0x0
+  clock-ids: u32: 0x194
+  AAPL,phandle: u32: 0x4c
+  device_type: 'spi'
+  #size-cells: u32: 0x7
+  #address-cells: u32: 0x1
+  spi-version: u32: 0x1
+  dma-parent: u32: 0x89
+  service-gates: u32: 0x12
+=== /arm-io/spi1/mesa
+  function-ane1_power_func: func(0x14a -> /arm-io/ane1, 'ANPW', args=[])
+  monitor-current-3v0-threshold: u32: 0x82
+  monitor-enable-power-down: u32: 0x0
+  monitor-power-threshold: u32: 0xbe
+  AAPL,phandle: u32: 0x4d
+  function-ane0_power_func: func(0x13e -> /arm-io/ane0, 'ANPW', args=[])
+  function-over-current-detection: func(0x9f -> /arm-io/smc/iop-smc-nub/smc-pmu, 'keyR', args=[0x706d4f43])
+  power-on-delay: u32: 0x7
+  time-between-scans: u32: 0x20000
+  mesaType: u32: 0x2
+  monitor-power-interval: u32: 0x3e8
+  power-off-delay: u32: 0xa
+  monitor-current-3v0-count: u32: 0x3
+  function-monitor-current-3v0: func(0x9f -> /arm-io/smc/iop-smc-nub/smc-pmu, 'pKR8', args=[0x61444352 0x4950646c 0x0])
+  monitor-power-avg-count: u32: 0x14
+  interrupt-parent: 0x73 -> /arm-io/nub-gpio
+  scan-timer-reset-time: u32: 0x9999
+  compatible: 'biosensor,mesa'
+  function-ane_power_func: func(0x13e -> /arm-io/ane0, 'ANPW', args=[])
+  interrupts: u32: 0xc 0x5000003
+  monitor-current-avg-count: u32: 0x1
+  invert-menu-key: u32: 0x1
+  function-hid_event_dispatch: func(0x1c4 -> /buttons, 'ButD', args=[])
+  max-scan-time: u32: 0x13333
+  sensor-id: u32: 0x3358
+  spi-frequency: u32: 0x7a1200
+  device_type: 'mesa'
+  function-mesa_pwr: func(0x9f -> /arm-io/smc/iop-smc-nub/smc-pmu, 'pKW8', args=[0x70634c44 0x0 0xd0000])
+  reg: u32: 0x0 0x1f4 0x8010100 0x0 0x14 0x0 0x0 0x0
+=== /arm-io/aop-gpio
+  wake-no-interrupt-group: u32: 0x4
+  wake-events: u32: 0x1006
+  #gpio-int-groups: u32: 0x7
+  #address-cells: u32: 0x0
+  supported-int-groups: u32: 0x3 0x4 0x5 0x6
+  AAPL,phandle: u32: 0x72
+  ie-fix: u32: 0x1
+  interrupt-parent: 0x2d -> /arm-io/aic
+  interrupt-controller: <empty>
+  compatible: u32: 0x69706700 0x38742c6f 0x313031
+  interrupts: u32: 0x1c8 0x1c9 0x1ca 0x1cb 0x1cc 0x1cd 0x1ce
+  #interrupt-cells: u32: 0x2
+  event_name-mask16: 'baseband'
+  glitchless: u32: 0x1
+  no-resume-restore: u32: 0x1
+  #gpio-pins: u32: 0x5f
+  role: 'AOP'
+  device_type: 'interrupt-controller'
+  reg: u32: 0x90824000 0x0 0x4000 0x0
+=== /arm-io/nub-gpio
+  wake-no-interrupt-group: u32: 0x4
+  wake-events: u32: 0xf06
+  #gpio-int-groups: u32: 0x7
+  #address-cells: u32: 0x0
+  supported-int-groups: u32: 0x4 0x5 0x6
+  AAPL,phandle: u32: 0x73
+  ie-fix: u32: 0x1
+  interrupt-parent: 0x2d -> /arm-io/aic
+  interrupt-controller: <empty>
+  compatible: 'gpio,t8101'
+  interrupts: u32: 0x229 0x22a 0x22b 0x22c 0x22d 0x22e 0x22f
+  #interrupt-cells: u32: 0x2
+  #gpio-pins: u32: 0x20
+  glitchless: u32: 0x1
+  no-resume-restore: u32: 0x1
+  role: 'NUB'
+  event_name-mask15: 'dock'
+  device_type: 'interrupt-controller'
+  reg: u32: 0x881f0000 0x0 0x4000 0x0
+=== /arm-io/smc-gpio
+  #interrupt-cells: u32: 0x2
+  glitchless: u32: 0x1
+  interrupt-controller: <empty>
+  compatible: 'gpio,t8101'
+  interrupt-parent: 0x2d -> /arm-io/aic
+  #gpio-int-groups: u32: 0x7
+  interrupts: u32: 0x25e 0x25f 0x260 0x261 0x262 0x263 0x264
+  no-resume-restore: u32: 0x1
+  #gpio-pins: u32: 0x6
+  reg: u32: 0x8c820000 0x0 0x4000 0x0
+  device_type: 'interrupt-controller'
+  supported-int-groups: u32: 0x5 0x6
+  wake-events: <empty>
+  AAPL,phandle: u32: 0x74
+  #address-cells: u32: 0x0
+  role: 'SMC'
+  ie-fix: u32: 0x1
+=== /arm-io/mtp-gpio
+  #interrupt-cells: u32: 0x2
+  glitchless: u32: 0x1
+  interrupt-controller: <empty>
+  compatible: 'gpio,t8101'
+  interrupt-parent: 0x2d -> /arm-io/aic
+  #gpio-int-groups: u32: 0x7
+  interrupts: u32: 0x570 0x571 0x572 0x573 0x574 0x575 0x576
+  no-resume-restore: u32: 0x1
+  #gpio-pins: u32: 0x12
+  reg: u32: 0x9481c000 0x0 0x4000 0x0
+  device_type: 'interrupt-controller'
+  supported-int-groups: u32: 0x4 0x5 0x6
+  wake-events: <empty>
+  wake-no-interrupt-group: u32: 0x4
+  #address-cells: u32: 0x0
+  AAPL,phandle: u32: 0x75
+  role: 'MTP'
+  ie-fix: u32: 0x1
+=== /arm-io/rsm
+  configuration-string: 'muxNcm'
+  compatible: 'rsm,t8101'
+  iommu-parent: u32: 0x99
+  interrupt-parent: 0x2d -> /arm-io/aic
+  interrupts: u32: 0x173
+  ncm-control-ecid-mac: u32: 0x1
+  clock-gates: <empty>
+  dock-connect-sleep-duration-ms: u32: 0x0
+  reg: u32: 0x89825000 0x0 0x4000 0x0 0x898c0000 0x0 0x4 0x0
+  device_type: 'rsm'
+  rsm-channel-max-ver: u32: 0x2
+  vhci-ports: ' soi'
+  AAPL,phandle: u32: 0xa7
+  port-type: u32: 0x2
+  rsm-channel-min-ver: u32: 0x1
+  port-number: u32: 0x1
+=== /arm-io/dockchannel-uart
+  interrupt-parent: 0x2d -> /arm-io/aic
+  dock-wstat-mask: u32: 0xfff
+  compatible: 'aapl,dock-channels'
+  interrupts: u32: 0x226
+  max-aop-clk: u32: 0x112a8800
+  reg: u32: 0x88128000 0x0 0x10000 0x0 0x8810c000 0x0 0x1000 0x0
+  AAPL,phandle: u32: 0xa8
+  enable-sw-drain: u32: 0x1
+  device_type: 'dockchannel'
+=== /arm-io/uart0
+  service-gates: u32: 0x5
+  compatible: 'uart-1,samsung'
+  clock-ids: u32: 0x19f 0x4
+  interrupt-parent: 0x2d -> /arm-io/aic
+  interrupts: u32: 0x530
+  reg: u32: 0xa5200000 0x0 0x4000 0x0
+  AAPL,phandle: u32: 0xb2
+  device_type: 'uart'
+  no-flow-control: <empty>
+  function-tx: func(0x35 -> /arm-io/gpio0, 'GPIO', args=[0x42 0x102])
+  uart-version: u32: 0x1
+  boot-console: <empty>
+  function-rx: func(0x35 -> /arm-io/gpio0, 'GPIO', args=[0x43 0x102])
+=== /arm-io/uart0/debug-console
+  AAPL,phandle: u32: 0xb3
+=== /arm-io/i2c2
+  gpio-iic_scl: u32: 0xca 0x10102 0x5041
+  compatible: 'i2c,t8101' | 'i2c,s5l8940x' | 'iic,soft'
+  gpio-iic_sda: u32: 0xcb 0x10102 0x5041
+  interrupt-parent: 0x2d -> /arm-io/aic
+  interrupts: u32: 0x542
+  reg: u32: 0xa5018000 0x0 0x4000 0x0
+  clock-ids: u32: 0x4
+  #address-cels: u32: 0x1
+  AAPL,phandle: u32: 0xb4
+  device_type: 'i2c'
+  #size-cells: u32: 0x3
+  service-reset: u32: 0x22
+  service-gates: u32: 0xd
+=== /arm-io/i2c2/audio-codec
+  private: '1'
+  samplerate-default: u32: 0x0 0xbb80
+  listening-mic-mask: u32: 0x5
+  function-Flicker_master: func(0x168 -> /arm-io/iop-audio-controller/audio-flicker/audio-flicker, 'AUD1', args=[0x61703266])
+  interrupt-parent: 0x35 -> /arm-io/gpio0
+  smic-mic: u32: 0x8020802 0x3
+  interrupts: u32: 0x86 0x1
+  Hall: u32: 0x2020102 0x0
+  ASP1: u32: 0x3034818 0x6003
+  int-id: u32: 0x4040404 0x80804
+  adc-gains: u32: 0x6060606 0x86068383 0x8686
+  flicker-config: u32: 0x3
+  function-pdm_rx_control: func(0x174 -> /arm-io/iop-audio-controller/audio-speaker, 'PDMi', args=[])
+  HPMic: u32: 0x4000100 0x0
+  ASP2: u32: 0x4818 0x103
+  fmic-mic: u32: 0x9020903 0x3
+  AAPL,phandle: u32: 0xb5
+  function-Receiver_master: func(0x166 -> /arm-io/iop-audio-controller/audio-receiver/audio-receiver, 'AUD1', args=[0x61703272])
+  LPMic: u32: 0x4060100 0x80
+  int-offset: u32: 0xb090200 0x1000d
+  Receiver: u32: 0x1000000 0x0
+  function-reset: func(0x72 -> /arm-io/aop-gpio, 'GPIO', args=[0x57 0x10001])
+  compatible: 'audio-control,cs42l79'
+  Flicker: u32: 0x2000102 0x0
+  samplerate-subset: u32: 0x0 0xbb80 0x0 0x0
+  halle-calibration [ph]: 'syscfg/PSCl,syscfg-mismatch/PSCl'
+  imic-mic: u32: 0x7020701 0x3
+  ASP3: u32: 0x7074810 0x7
+  device_type: 'audio-control'
+  reg: u32: 0x4a 0x3e8 0x0 0x0
+  ASP4: u32: 0x4818 0x0
+  lmic-mic: u32: 0xa020a04 0x3
+=== /arm-io/i2c3
+  wakeup-device: 'mogul-display' | 'mogul-display2'
+  gpio-iic_scl: u32: 0xc8 0x10102 0x5041
+  compatible: 'i2c,t8101' | 'i2c,s5l8940x' | 'iic,soft'
+  gpio-iic_sda: u32: 0xc9 0x10102 0x5041
+  interrupt-parent: 0x2d -> /arm-io/aic
+  interrupts: u32: 0x543
+  reg: u32: 0xa501c000 0x0 0x4000 0x0
+  clock-ids: u32: 0x4
+  #address-cels: u32: 0x1
+  AAPL,phandle: u32: 0xb6
+  device_type: 'i2c'
+  #size-cells: u32: 0x3
+  service-reset: u32: 0x23
+  service-gates: u32: 0xe
+=== /arm-io/i2c3/display-eeprom
+  compatible: 'eeprom,i2c'
+  reg: u32: 0x52 0x9c4 0x0 0x0
+  #address-cells: u32: 0x1
+  #size-cells: u32: 0x1
+  AAPL,phandle: u32: 0xb7
+  page-size: u32: 0x20
+=== /arm-io/i2c3/display-eeprom/display-eeprom-data
+  diagnostic-data-regions: u32: 0x2
+  reg: u32: 0xc80 0xf380
+  AAPL,phandle: u32: 0xb8
+  compatible: 'diagnostic-data,format1'
+  diagnostic-data-partial-region: u32: 0x0
+=== /arm-io/i2c3/display-eeprom/display-eeprom-generic-data
+  size: u32: 0x32 0x32 0x2 0xc0
+  reg: u32: 0x440 0x126
+  AAPL,phandle: u32: 0xb9
+  compatible: 'display-generic-data,rw'
+  display-index: u32: 0x0
+=== /arm-io/i2c3/display-eeprom-hi
+  compatible: 'eeprom,i2c'
+  reg: u32: 0x53 0x9c4 0x0 0x0
+  #address-cells: u32: 0x1
+  #size-cells: u32: 0x1
+  AAPL,phandle: u32: 0xba
+  page-size: u32: 0x20
+=== /arm-io/i2c3/display-eeprom-hi/display-eeprom-data-hi
+  diagnostic-data-regions: u32: 0x2
+  reg: u32: 0x0 0xe280
+  AAPL,phandle: u32: 0xbb
+  compatible: 'diagnostic-data,format1'
+  diagnostic-data-partial-region: u32: 0x1
+=== /arm-io/i2c3/display-eeprom-2
+  compatible: 'eeprom,i2c'
+  reg: u32: 0x54 0x9c4 0x0 0x0
+  #address-cells: u32: 0x1
+  #size-cells: u32: 0x1
+  AAPL,phandle: u32: 0xbc
+  page-size: u32: 0x20
+=== /arm-io/i2c3/display-eeprom-2/display-eeprom-data-2
+  diagnostic-data-regions: u32: 0x3
+  reg: u32: 0xc80 0xf380
+  AAPL,phandle: u32: 0xbd
+  compatible: 'diagnostic-data,format1'
+  diagnostic-data-partial-region: u32: 0x0
+=== /arm-io/i2c3/display-eeprom-2/display-eeprom-generic-data-2
+  size: u32: 0x32 0x32 0x2 0xc0
+  reg: u32: 0x440 0x126
+  AAPL,phandle: u32: 0xbe
+  compatible: 'display-generic-data,rw'
+  display-index: u32: 0x1
+=== /arm-io/i2c3/display-eeprom-2-hi
+  compatible: 'eeprom,i2c'
+  reg: u32: 0x55 0x9c4 0x0 0x0
+  #address-cells: u32: 0x1
+  #size-cells: u32: 0x1
+  AAPL,phandle: u32: 0xbf
+  page-size: u32: 0x20
+=== /arm-io/i2c3/display-eeprom-2-hi/display-eeprom-data-2-hi
+  diagnostic-data-regions: u32: 0x3
+  reg: u32: 0x0 0xe280
+  AAPL,phandle: u32: 0xc0
+  compatible: 'diagnostic-data,format1'
+  diagnostic-data-partial-region: u32: 0x1
+=== /arm-io/i2c3/mogul-display
+  wakeup-data: u32: 0x0 0x2faf080 0xbb8
+  ic-auth-type: u32: 0x30000
+  compatible: 'mogul,a1222'
+  iboot-auth: <empty>
+  AAPL,phandle: u32: 0xc1
+  component-index: u32: 0x1
+  reg: u32: 0x10 0x9c4 0x0 0x0
+=== /arm-io/i2c3/mogul-display2
+  wakeup-data: u32: 0x0 0x2faf080 0xbb8
+  ic-auth-type: u32: 0x30000
+  compatible: 'mogul,a1222'
+  iboot-auth: <empty>
+  AAPL,phandle: u32: 0xc2
+  component-index: u32: 0x2
+  reg: u32: 0x60 0x9c4 0x0 0x0
+=== /arm-io/i2c4
+  wakeup-device: 'mogul-mlb'
+  gpio-iic_scl: u32: 0xd2 0x10102 0x5041
+  compatible: 'i2c,t8101' | 'i2c,s5l8940x' | 'iic,soft'
+  gpio-iic_sda: u32: 0xd3 0x10102 0x5041
+  interrupt-parent: 0x2d -> /arm-io/aic
+  interrupts: u32: 0x544
+  reg: u32: 0xa5020000 0x0 0x4000 0x0
+  clock-ids: u32: 0x4
+  #address-cels: u32: 0x1
+  AAPL,phandle: u32: 0xc3
+  device_type: 'i2c'
+  #size-cells: u32: 0x3
+  service-reset: u32: 0x24
+  service-gates: u32: 0xf
+=== /arm-io/i2c4/mogul-mlb
+  wakeup-data: u32: 0x0 0x2faf080 0xbb8
+  reg: u32: 0x60 0x9c4 0x0 0x0
+  ic-auth-type: u32: 0x40000
+  compatible: 'mogul,a1222'
+  AAPL,phandle: u32: 0xc4
+=== /arm-io/nub-spmi0
+  #interrupt-cells: u32: 0x1
+  interrupt-controller: <empty>
+  gen: u32: 0x4
+  compatible: 'aapl,spmi'
+  fatal-interrupts: u32: 0x119
+  interrupt-parent: u32: 0xc5 0x2d 0xc5
+  interrupts: u32: 0x100 0x233 0x119 0x104 0x105 0x108 0x109 0x10a 0x10c 0x10d 0x117 0x118 0x11a 0x11b 0x11c 0x11d 0x110 0x111 0x106 0x107 0x10b
+  error-interrupts: u32: 0x104 0x105 0x108 0x109 0x10a 0x10c 0x10d 0x117 0x118 0x11a 0x11b 0x11c 0x11d 0x110 0x111
+  reg: u32: 0x88714000 0x0 0x4000 0x0 0x88704000 0x0 0x4000 0x0 0x88700000 0x0 0x4000 0x0
+  AAPL,phandle: u32: 0xc5
+  device_type: 'interrupt-controller'
+  queue-depth: u32: 0x100 0x100
+  #address-cells: u32: 0x0
+  other-interrupts: u32: 0x106 0x107 0x10b
+=== /arm-io/nub-spmi0/pmu-main
+  info-scrpad_lpm_ctrl: u32: 0xa7dc
+  info-fault_name-11: 'ov,vddmain_ovlo'
+  info-fault_name-16: 'btn_rst,two_finger_rst'
+  info-fault_name-20: 'wdog,reset_in_1'
+  info-leg_scrpad: u32: 0xf800
+  info-fault_name-25: 'ntc_shdn'
+  info-fault_name-6: 'ov,vdd_boost_ovlo'
+  general-config: u32: 0xc800 0x400
+  info-fault_name-43: 'timeout,wdog_fw_timeout'
+  function-get_pdod: func(0x9f -> /arm-io/smc/iop-smc-nub/smc-pmu, 'keyR', args=[0x42444431])
+  info-o2ws_name-2: 'gcb_wakeup'
+  info-o2ws_name-14: 'fw_req_auto_wakeup'
+  info-fault_name-52: 'target_off_conflict'
+  info-fault_name-39: 'mfsm_sgpio'
+  info-fault_name-57: 'ot,tdie_overtemp_idx1'
+  info-fault_name-61: 'ot,tdie_overtemp'
+  info-fault_name-70: 'ov,ldo9b_ov'
+  info-fault_name-66: 'cp_wdog_expiry'
+  hw-name: 'becketts'
+  compatible: 'pmu,spmi' | 'pmu,becketts'
+  ptmu-region-15-data: u32: 0xcc00 0x400
+  ptmu-region-14-data: u32: 0xc800 0x400
+  ptmu-region-13-data: u32: 0xc600 0x200
+  ptmu-region-12-data: u32: 0xc400 0x200
+  info-rtc_irq_mask_offset: u32: 0x200e
+  ptmu-region-10-data: u32: 0xc300 0x80
+  info-o2ws_name-3: 'rtc_alarm_wakeup'
+  info-rtc_alarm_event_mask: u32: 0x2
+  ptmu-region-11-data: u32: 0xc380 0x80
+  is-primary: u32: 0x1
+  info-fault_name-19: 'btn_rst,sec_btn_seq'
+  info-fault_name-23: 'rst_in,reset_in_1_deassert'
+  info-fault_name-28: 'timeout,watchdog_timeout'
+  info-fault_name-32: 'temp_abs_buck0'
+  info-fault_name-41: 'crash,metis_hw_crash'
+  info-o2ws_name-10: 'target_state_wdog_timeout'
+  info-fault_name-37: 'btn_shdn'
+  info-fault_name-50: 'target_off_restart'
+  info-has_phra: u32: 0x1
+  info-o2ws_name-4: 'auto_wakeup'
+  info-scrpad: u32: 0x8000 0x2800
+  fw-mcom-address: u32: 0x2b60
+  info-fault_name-64: 'uv,cp_uvlo'
+  info-fault_name-69: 'uv,ldo9b_uv'
+  fw-mcom-int-index: u32: 0x1
+  info-rtc_alarm_ctrl_en_mask: u32: 0x40
+  info-rtc_alarm_mask: u32: 0x1
+  info-off2wake_source: u32: 0x281b 0x2
+  info-rtc_alarm_ctrl: u32: 0x2000
+  info-o2ws_name-5: 'gcb_crash_wakeup'
+  ptmu-secure-region-0-data: u32: 0xb000 0x400
+  info-fault_name-17: 'crash,crash0_in'
+  info-fault_name-3: 'uv,vddmain_uvlo'
+  info-fault_name-21: 'dbg_rst,reset_in_2'
+  info-fault_name-26: 'timeout,dblclick_timeout'
+  info-fault_name-30: 'crash,crash1_in'
+  info-fault_name-8: 'por'
+  info-fault_name-35: 'otp_crc'
+  ptmu-secure-region-1-data: u32: 0xb400 0x400
+  info-rtc_alarm_event: u32: 0x2000
+  interrupts: u32: 0x2 0x3e
+  info-fault_name-44: 'emerg_shdn'
+  info-o2ws_name-11: 'pgood_wdog_to_error_wakeup'
+  ptmu-secure-region-2-data: u32: 0xb800 0x400
+  ptmu-secure-region-3-data: u32: 0xbc00 0x200
+  info-o2ws_name-6: 'hw_wdog_wakeup'
+  info-fault_name-58: 'ot,tdie_overtemp_idx2'
+  info-fault_name-62: 'ov,ldo_ana_ovp'
+  info-scrpad_socd: u32: 0x8b00 0x800
+  info-fault_name-67: 'uv,ldo9_uv'
+  info-fault_name-71: 'ov,cpneg_dvc'
+  ptmu-secure-region-4-data: u32: 0xbe00 0x200
+  upo-shutdown-delay: u32: 0x0
+  info-o2ws_name-7: 'fw_wdog_wakeup'
+  info-fault_name-10: 'ot,overtemp'
+  info-fault_name-24: 'spmi,spmi_fault'
+  has-lpem-fw-scc: u32: 0x1
+  info-fault_name-33: 'temp_abs_buck1'
+  info-fault_name-9: 'rst'
+  info-fault_name-29: 'sstate,button_dfu_recover'
+  info-fault_name-38: 'xtal_wdog_expiry'
+  info-fault_name-42: 'timeout,target_st_wdog_timeout'
+  info-o2ws_name-12: 'wake2lf_negedge'
+  info-fault_name-51: 'target_off_shutdown'
+  info-fault_name-60: 'ot,tdie_overtemp_idx4'
+  info-rtc_alarm_offset: u32: 0x2008
+  info-fault_name-56: 'ot,tdie_overtemp_idx0'
+  info-fault_name-65: 'ov,cp_ovlo'
+  info-o2ws_name-8: 'dft_ctrl2_wakeup'
+  function-get_vbus_detect: func(0x9f -> /arm-io/smc/iop-smc-nub/smc-pmu, 'keyR', args=[0x56425553])
+  info-fault_log: u32: 0x1000 0x9
+  ptmu-region-9-data: u32: 0xc280 0x80
+  ptmu-region-8-data: u32: 0xc200 0x80
+  info-rtc_alarm_monitor_mask: u32: 0x1
+  ptmu-region-7-data: u32: 0xc1c0 0x40
+  ptmu-region-6-data: u32: 0xc180 0x40
+  ptmu-region-5-data: u32: 0xc140 0x40
+  info-o2ws_name-9: 'pgood_wdog_to_off_wakeup'
+  ptmu-region-4-data: u32: 0xc100 0x40
+  ptmu-region-3-data: u32: 0xc0c0 0x40
+  reg: u32: 0xe 0x3 0x0 0x4 0x0 0x0
+  ptmu-region-2-data: u32: 0xc080 0x40
+  info-fault_name-18: 'btn_rst,btn_seq_reset'
+  info-fault_name-22: 'sochot,reset_in_3'
+  info-fault_name-31: 'sstate,dfu_btn_seq_reset'
+  info-fault_name-5: 'uv,vdd_boost_uvlo'
+  ptmu-region-1-data: u32: 0xc040 0x40
+  info-fault_name-36: 'sgpio'
+  ptmu-region-0-data: u32: 0xc000 0x40
+  info-fault_name-40: 'crash,metis_fw_crash'
+  interrupt-parent: 0xc5 -> /arm-io/nub-spmi0
+  info-o2ws_name-13: 'fw_nonsec_off_wakeup_wdog'
+  info-o2ws_name-0: 'fw_nonsec_off_wakeup_csr'
+  info-clock_offset: u32: 0x2100 0x6
+  info-fault_name-59: 'ot,tdie_overtemp_idx3'
+  info-fault_name-63: 'ov,ldo_dig_ovp'
+  info-fault_name-68: 'ov,ldo9_ov'
+  fw-host-irq-address: u32: 0x2b08
+  function-external_standby: func(0x9f -> /arm-io/smc/iop-smc-nub/smc-pmu, 'keyW', args=[0x4d425345])
+  info-rtc: u32: 0x2002
+  AAPL,phandle: u32: 0xc6
+  info-id: u32: 0x0 0xa
+  has-fw: u32: 0x1
+  info-o2ws_name-1: 'gcb_off_wakeup'
+  info-rtc_scrpad: u32: 0x2100
+  info-scrpad_lpm_log: u32: 0xa780
+=== /arm-io/nub-spmi0/pmu-main/sgpio-bridge-pmu-main
+  AAPL,phandle: u32: 0xc7
+  bridge-offset: u32: 0xdd10
+  compatible: 'sgpio-bridge'
+  sgpio-bus-id: u32: 0x0
+=== /arm-io/nub-spmi0/pmu-main/sgpio-bridge-pmu-main/pmu-secondary
+  compatible: 'pmu,spmi' | 'pmu,fairmont'
+  interrupt-parent: 0xc5 -> /arm-io/nub-spmi0
+  interrupts: u32: 0x7e
+  reg: u32: 0x1 0x3 0x0 0x4 0x0 0x0
+  fw-host-irq-address: u32: 0x2b08
+  AAPL,phandle: u32: 0xc8
+  hw-name: 'fairmont'
+  info-leg_scrpad: u32: 0xf800
+  fw-mcom-int-index: u32: 0x0
+  has-fw: u32: 0x1
+  fw-mcom-address: u32: 0x2b60
+=== /arm-io/nub-spmi0/btm
+  btm-pmu-type: u32: 0xf
+  config-vddmain-data-read: u32: 0x1
+  compatible: 'btm,phone'
+  interrupt-parent: 0xa6 -> /arm-io/aon-ptd
+  function_ptd_read_mult: u32: 0xa6 0x70744d52
+  interrupts: '0mtb1mtb2mtb3mtb'
+  reg: u32: 0xe 0x3 0x0 0x4 0x0 0x0
+  AAPL,phandle: u32: 0xc9
+  config-auto-rate-change-flag: u32: 0x1
+  config-duty-cycle-data-read: u32: 0x1
+  device_type: 'btm'
+  battery-data-clients: u32: 0x1
+  number-of-batteries: u32: 0x2
+  number-of-PMUs: u32: 0x2
+  battery-data-collection: u32: 0x1
+  pack-format-enabled: u32: 0x1
+=== /arm-io/nub-spmi1
+  #interrupt-cells: u32: 0x1
+  interrupt-controller: <empty>
+  gen: u32: 0x4
+  compatible: 'aapl,spmi'
+  fatal-interrupts: u32: 0x119
+  interrupt-parent: u32: 0xca 0x2d 0xca
+  interrupts: u32: 0x100 0x238 0x119 0x104 0x105 0x108 0x109 0x10a 0x10c 0x10d 0x117 0x118 0x11a 0x11b 0x11c 0x11d 0x110 0x111 0x106 0x107 0x10b
+  error-interrupts: u32: 0x104 0x105 0x108 0x109 0x10a 0x10c 0x10d 0x117 0x118 0x11a 0x11b 0x11c 0x11d 0x110 0x111
+  reg: u32: 0x88614000 0x0 0x4000 0x0 0x88604000 0x0 0x4000 0x0 0x88600000 0x0 0x4000 0x0
+  AAPL,phandle: u32: 0xca
+  device_type: 'interrupt-controller'
+  queue-depth: u32: 0x100 0x100
+  #address-cells: u32: 0x0
+  other-interrupts: u32: 0x106 0x107 0x10b
+=== /arm-io/nub-spmi1/shamisen
+  reg: u32: 0xc 0x3 0x0 0x4 0x0 0x0
+  AAPL,phandle: u32: 0xcb
+=== /arm-io/nub-spmi1/stonehenge
+  reg: u32: 0xf 0x3 0x0 0x4 0x0 0x0
+  AAPL,phandle: u32: 0xcc
+=== /arm-io/nub-spmi2
+  #interrupt-cells: u32: 0x1
+  interrupt-controller: <empty>
+  gen: u32: 0x4
+  compatible: 'aapl,spmi'
+  fatal-interrupts: u32: 0x119
+  interrupt-parent: u32: 0xcd 0x2d 0xcd
+  interrupts: u32: 0x100 0x23d 0x119 0x104 0x105 0x108 0x109 0x10a 0x10c 0x10d 0x117 0x118 0x11a 0x11b 0x11c 0x11d 0x110 0x111 0x106 0x107 0x10b
+  error-interrupts: u32: 0x104 0x105 0x108 0x109 0x10a 0x10c 0x10d 0x117 0x118 0x11a 0x11b 0x11c 0x11d 0x110 0x111
+  reg: u32: 0x88914000 0x0 0x4000 0x0 0x88904000 0x0 0x4000 0x0 0x88900000 0x0 0x4000 0x0
+  AAPL,phandle: u32: 0xcd
+  device_type: 'interrupt-controller'
+  queue-depth: u32: 0x100 0x100
+  #address-cells: u32: 0x0
+  other-interrupts: u32: 0x106 0x107 0x10b
+=== /arm-io/nub-spmi2/spmi-hpm0
+  feature-ldcm-arch-version: u32: 0x5
+  features-supported: u32: 0x1 0x2 0x5
+  transports-supported: u32: 0x1 0x2 0x3 0x5
+  compatible: 'usbc,cbtl1702,spmi'
+  interrupt-parent: 0xcd -> /arm-io/nub-spmi2
+  interrupts: u32: 0xb 0x11 0x13
+  aod: u32: 0x1b6
+  dock: u32: 0x1c5
+  interrupt-type: u32: 0x0 0x2 0x3
+  function-ignore_vbus_drop: func(0x1c5 -> /port-usb-c-1, 'igvb', args=[])
+  hpm-class-type: u32: 0xf
+  reg: u32: 0xc 0x3 0x0 0x4 0x0 0x0
+  rid: u32: 0x0
+  AAPL,phandle: u32: 0xce
+  port-type: u32: 0x2
+  feature-ldcm-hw-version: u32: 0x4
+  port-number: u32: 0x1
+=== /arm-io/aop-spmi0
+  #interrupt-cells: u32: 0x1
+  interrupt-controller: <empty>
+  gen: u32: 0x4
+  compatible: 'aapl,spmi'
+  fatal-interrupts: u32: 0x119
+  interrupt-parent: u32: 0xcf 0x2d 0xcf
+  interrupts: u32: 0x100 0x1f1 0x119 0x104 0x105 0x108 0x109 0x10a 0x10c 0x10d 0x117 0x118 0x11a 0x11b 0x11c 0x11d 0x110 0x111 0x106 0x107 0x10b
+  error-interrupts: u32: 0x104 0x105 0x108 0x109 0x10a 0x10c 0x10d 0x117 0x118 0x11a 0x11b 0x11c 0x11d 0x110 0x111
+  reg: u32: 0x90914000 0x0 0x4000 0x0 0x90904000 0x0 0x4000 0x0 0x90900000 0x0 0x4000 0x0
+  AAPL,phandle: u32: 0xcf
+  device_type: 'interrupt-controller'
+  queue-depth: u32: 0x100 0x100
+  #address-cells: u32: 0x0
+  other-interrupts: u32: 0x106 0x107 0x10b
+=== /arm-io/aop-spmi0/wlan-heb
+  reg: u32: 0xe 0x3 0x0 0x4 0x0 0x0
+  AAPL,phandle: u32: 0xd0
+=== /arm-io/aop-spmi0/baseband-heb
+  msg-buffer-address-tx-billboard: u32: 0x20
+  compatible: 'baseband,heb'
+  irq-tx-offset-billboard-send0: u32: 0x12
+  interrupt-parent: 0xcf -> /arm-io/aop-spmi0
+  interrupts: u32: 0x0 0x47 0x41 0x4b 0x1d 0x4c 0x4e
+  reg: u32: 0xd 0x3 0x0 0x4 0x0 0x0
+  AAPL,phandle: u32: 0xd1
+  irq-tx-offset-billboard-send2: u32: 0x1f
+  msg-buffer-address-tx-ocp: u32: 0x1080
+  device_type: 'baseband-heb'
+  msg-buffer-address-rx-ocp: u32: 0xa0
+  irq-tx-offset-ocp-read-complete: u32: 0x1b
+  irq-tx-offset-ocp-send: u32: 0xc
+  irq-tx-offset-billboard-send1: u32: 0x13
+  #num-spmi-interrupts: u32: 0x7
+=== /arm-io/aop-spmi0/stockholm-spmi
+  nfccModel-A0: u32: 0xda
+  compatible: 'nfc,primary,spmi'
+  interrupt-parent: 0xcf -> /arm-io/aop-spmi0
+  interrupts: u32: 0xb0 0xb1 0xb2 0xb3 0xb4 0xb5 0xb6
+  spmiFollowerReset: u32: 0x1
+  reg: u32: 0x8 0x3 0x0 0x4 0x0 0x0
+  AAPL,phandle: u32: 0xd2
+  device_type: 'stockholm-spmi'
+  required-functions: 'support_host_wake_spmi' | 'support_data_over_spmi'
+  skip-spmi-reconfig: <empty>
+  #num-spmi-interrupts: u32: 0x7
+  nfccModel: u32: 0xdf
+=== /arm-io/aop-spmi0/stockholm-spmi/stockholm
+  compatible: 'nfc,primary,gpio'
+  interrupt-parent: 0x35 -> /arm-io/gpio0
+  interrupts: u32: 0x8e 0x2
+  function-se_boot_measurements: func(0x35 -> /arm-io/gpio0, 'GPIO', args=[0x80 0x101])
+  function-enable: func(0x9f -> /arm-io/smc/iop-smc-nub/smc-pmu, 'pKW8', args=[0x7063494f 0x800000 0x150000])
+  AAPL,phandle: u32: 0xd3
+  supports-nfc-reader-mode: <empty>
+  rf-antenna-name: 'RTM8_8'
+  device_type: 'stockholm'
+  function-boot_measurements: func(0x35 -> /arm-io/gpio0, 'GPIO', args=[0x69 0x101])
+  eos-halley-config: u32: 0x1
+  nfcWithRadio: u32: 0x1
+  required-gpios: 'support_venable' | 'support_virtual_gpio' | 'support_boot_measurements' | 'support_bootstop-interrupts'
+  sn450WithLoadSwitch: u32: 0x1
+=== /arm-io/aop-spmi0/hammerfest-spmi
+  compatible: 'nfc,secondary,spmi'
+  interrupt-parent: 0xcf -> /arm-io/aop-spmi0
+  interrupts: u32: 0xa0 0xa1 0xa2 0xa3 0xa4 0xa5 0xa6
+  AAPL,phandle: u32: 0xd4
+  reg: u32: 0xc 0x3 0x0 0x4 0x0 0x0
+  nfccModel_A0: u32: 0xbc
+  device_type: 'hammerfest-spmi'
+  required-functions: 'support_host_wake_spmi' | 'support_data_over_spmi'
+  skip-spmi-reconfig: <empty>
+  #num-spmi-interrupts: u32: 0x7
+  nfccModel: u32: 0xbd
+=== /arm-io/aop-spmi0/hammerfest-spmi/hammerfest
+  required-gpios: 'support_venable' | 'support_virtual_gpio' | 'support_boot_measurements'
+  function-boot_measurements: func(0x35 -> /arm-io/gpio0, 'GPIO', args=[0x83 0x101])
+  compatible: 'nfc,secondary,gpio'
+  rf-antenna-name: 'RTM8_8S'
+  AAPL,phandle: u32: 0xd5
+  supports-nfc-reader-mode: <empty>
+  nfcWithRadio: u32: 0x1
+  device_type: 'hammerfest'
+  function-enable: func(0x72 -> /arm-io/aop-gpio, 'GPIO', args=[0x6 0x101])
+=== /arm-io/aop-spmi0/uwb0
+  reg: u32: 0xf 0x3 0x0 0x4 0x0 0x0
+  AAPL,phandle: u32: 0xd6
+=== /arm-io/aop-spmi1
+  #interrupt-cells: u32: 0x1
+  interrupt-controller: <empty>
+  gen: u32: 0x4
+  compatible: 'aapl,spmi'
+  fatal-interrupts: u32: 0x119
+  interrupt-parent: u32: 0xd7 0x2d 0xd7
+  interrupts: u32: 0x100 0x1f5 0x119 0x104 0x105 0x108 0x109 0x10a 0x10c 0x10d 0x117 0x118 0x11a 0x11b 0x11c 0x11d 0x110 0x111 0x106 0x107 0x10b
+  error-interrupts: u32: 0x104 0x105 0x108 0x109 0x10a 0x10c 0x10d 0x117 0x118 0x11a 0x11b 0x11c 0x11d 0x110 0x111
+  reg: u32: 0x90b14000 0x0 0x4000 0x0 0x90b04000 0x0 0x4000 0x0 0x90b00000 0x0 0x4000 0x0
+  AAPL,phandle: u32: 0xd7
+  device_type: 'interrupt-controller'
+  queue-depth: u32: 0x100 0x100
+  #address-cells: u32: 0x0
+  other-interrupts: u32: 0x106 0x107 0x10b
+=== /arm-io/aop-spmi1/uwb
+  reg: u32: 0xf 0x3 0x0 0x4 0x0 0x0
+  AAPL,phandle: u32: 0xd8
+=== /arm-io/aop-spmi1/wlan-idc
+  irq-tx-offset-accessory: u32: 0x3c
+  billboard-addr-tx-sar-budget: u32: 0x28
+  compatible: 'wlan,idc'
+  billboard-addr-rx-regulatory: u32: 0x60
+  interrupt-parent: 0xd7 -> /arm-io/aop-spmi1
+  interrupts: u32: 0x1c 0x1a 0x1d 0x20
+  reg: u32: 0xe 0x3 0x0 0x4 0x0 0x0
+  AAPL,phandle: u32: 0xd9
+  irq-tx-offset-sar-budget: u32: 0x3d
+  billboard-addr-rx-sar-report: u32: 0x48
+  billboard-addr-rx-rev: u32: 0x20
+  #num-spmi-interrupts: u32: 0x4
+  billboard-addr-tx-accessory: u32: 0xa0
+  billboard-addr-rx-antcluster: u32: 0x80
+=== /arm-io/aop-spmi1/baseband-idc
+  irq-tx-offset-ocp-send: u32: 0xd
+  supported-ap-gpr0-version: u32: 0x206
+  msg-buffer-address-tx-ocp: u32: 0x1080
+  irq-tx-offset-e85mitigation: u32: 0x1a
+  billboard-addr-rx-vswr-report: u32: 0x9c
+  msg-buffer-address-rx-ocp: u32: 0xa0
+  supported-ar-buffer-version: u32: 0x206
+  interrupt-parent: 0xd7 -> /arm-io/aop-spmi1
+  msg-buffer-address-tx-billboard: u32: 0x20
+  supported-all-radio-version: u32: 0x206
+  interrupts: u32: 0x0 0x47 0x41 0x4b 0x1d 0x2 0x6 0x7 0x8 0x9 0x3 0x4 0x59
+  irq-tx-offset-deviceupdate: u32: 0x43
+  billboard-addr-tx-config-vswr: u32: 0x94
+  supports-cellular-boost: u32: 0x0
+  sar-mpe-ant-cluster-config: u32: 0x28
+  irq-tx-offset-accessory: u32: 0x39
+  billboard-addr-rx-e85mitigation: u32: 0xa8
+  irq-tx-offset-sar-budget: u32: 0x38
+  billboard-addr-tx-deviceupdate: u32: 0xb0
+  irq-tx-offset-ocp-read-complete: u32: 0x1b
+  #num-spmi-interrupts: u32: 0xd
+  supports-hsar-cellular: u32: 0x1
+  AAPL,phandle: u32: 0xda
+  irq-tx-offset-config-vswr: u32: 0x3b
+  billboard-addr-rx-sar-report: u32: 0x48
+  billboard-addr-tx-sar-budget: u32: 0x30
+  billboard-addr-rx-regulatory: u32: 0x70
+  billboard-addr-tx-accessory: u32: 0x40
+  irq-tx-offset-billboard-send0: u32: 0x12
+  compatible: 'baseband,idc'
+  irq-tx-offset-wait-time: u32: 0x41
+  device_type: 'baseband-idc'
+  supported-non-radio-version: u32: 0x206
+  billboard-addr-rx-mpe-report: u32: 0x60
+  billboard-addr-tx-e85mitigation: u32: 0xa0
+  billboard-addr-tx-wait-time: u32: 0x78
+  irq-tx-offset-billboard-send1: u32: 0x13
+  reg: u32: 0xd 0x3 0x0 0x4 0x0 0x0
+  arbuffer-addr-rx: u32: 0x80
+  billboard-addr-rx-rev: u32: 0x20
+  supports-hsar-wifi-bt: u32: 0x1
+  irq-tx-offset-billboard-send2: u32: 0x1f

@@ -1,0 +1,271 @@
+# `UICollectionViewLayout`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `_UICollectionViewLayoutOrthogonalScrolling`, `_UICollectionViewLayoutSwipeActions`, `NSCoding`
+- 28 instance variables, 19 properties, 196 instance methods, 2 class methods
+
+## Instance variables
+
+```
+@"UICollectionView" _collectionView;
+{CGSize="width"d"height"d} _collectionViewBoundsSize;
+@"NSMutableDictionary" _initialAnimationLayoutAttributesDict;
+@"NSMutableDictionary" _finalAnimationLayoutAttributesDict;
+@"NSMutableDictionary" _deletedSupplementaryIndexPathsDict;
+@"NSMutableDictionary" _insertedSupplementaryIndexPathsDict;
+@"NSMutableDictionary" _deletedDecorationIndexPathsDict;
+@"NSMutableDictionary" _insertedDecorationIndexPathsDict;
+@"NSMutableDictionary" _decorationViewClassDict;
+@"NSMutableDictionary" _decorationViewNibDict;
+@"NSMutableDictionary" _decorationViewExternalObjectsTables;
+@"UICollectionViewLayout" _transitioningFromLayout;
+@"UICollectionViewLayout" _transitioningToLayout;
+@"UIDynamicAnimator" _animator;
+@"UICollectionViewLayoutInvalidationContext" _invalidationContext;
+@"_UICollectionViewLayoutSwipeActionsModule" _swipeActionsModule;
+{CGRect="origin"{CGPoint="x"d"y"d}"size"{CGSize="width"d"height"d}} _frame;
+@"NSIndexSet" _sections;
+@"NSIndexSet" _items;
+@"NSArray" _elementKinds;
+@"_UICollectionViewCompositionLayout" _compositionLayout;
+@"UICollectionViewLayout" _siblingLayout;
+{CGPoint="x"d"y"d} _layoutOffset;
+Q _layoutOffsetEdges;
+{?="inTransitionFromTransitionLayout"b1"inTransitionToTransitionLayout"b1"prepared"b1"wantsRightToLeftHorizontalMirroringIfNeeded"b1"isEditing"b1} _layoutFlags;
+@"UIColor" _preferredBackgroundColor;
+q _sublayoutType;
+@"_UICollectionViewAnimationContext" _collectionViewAnimationContext;
+```
+
+## Properties
+
+```
+@property (T{CGRect={CGPoint=dd}{CGSize=dd}},N,G_frame,S_setFrame:) frame;
+@property (T@"NSIndexSet",C,N,G_sections,S_setSections:) sections;
+@property (T@"NSIndexSet",C,N,G_items,S_setItems:) items;
+@property (T@"NSArray",C,N,G_elementKinds,S_setElementKinds:) elementKinds;
+@property (T@"_UICollectionViewCompositionLayout",N,G_compositionLayout,S_setCompositionLayout:) compositionLayout;
+@property (T@"UICollectionViewLayout",N,G_siblingLayout,S_setSiblingLayout:) siblingLayout;
+@property (T{CGPoint=dd},N,G_layoutOffset,S_setLayoutOffset:) layoutOffset;
+@property (TQ,N,G_layoutOffsetEdges,S_setLayoutOffsetEdges:) layoutOffsetEdges;
+@property (Tq,N,G_sublayoutType,S_setSublayoutType:,V_sublayoutType) sublayoutType;
+@property (TB,N,G_isPrepared,S_setPrepared:) prepared;
+@property (T@"_UICollectionViewAnimationContext",&,N,G_collectionViewAnimationContext,S_setCollectionViewAnimationContext:,V_collectionViewAnimationContext) collectionViewAnimationContext;
+@property (T@"UIColor",&,N,G_preferredBackgroundColor,S_setPreferredBackgroundColor:,V_preferredBackgroundColor) preferredBackgroundColor;
+@property (T{UIEdgeInsets=dddd},R,N,G_focusFastScrollingIndexBarInsets) focusFastScrollingIndexBarInsets;
+@property (TB,R,N,G_isInLayoutTransition) _isInLayoutTransition;
+@property (T@"UICollectionView",R,N,V_collectionView) collectionView;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Class methods
+
+```
++[UICollectionViewLayout invalidationContextClass];
++[UICollectionViewLayout layoutAttributesClass];
+```
+
+## Instance methods
+
+```
+-[UICollectionViewLayout layoutAttributesForSupplementaryViewOfKind:atIndexPath:];
+-[UICollectionViewLayout targetContentOffsetForProposedContentOffset:];
+-[UICollectionViewLayout _didFinishLayoutTransitionAnimations:];
+-[UICollectionViewLayout invalidationContextForEndingInteractiveMovementOfItemsToFinalIndexPaths:previousIndexPaths:movementCancelled:];
+-[UICollectionViewLayout init];
+-[UICollectionViewLayout layoutAttributesForDecorationViewOfKind:atIndexPath:];
+-[UICollectionViewLayout _willBeginSwiping];
+-[UICollectionViewLayout _trailingSwipeActionsConfigurationForIndexPath:];
+-[UICollectionViewLayout invalidateLayoutWithContext:];
+-[UICollectionViewLayout shouldInvalidateLayoutForBoundsChange:];
+-[UICollectionViewLayout collectionView];
+-[UICollectionViewLayout _frame];
+-[UICollectionViewLayout _setFrame:];
+-[UICollectionViewLayout _shouldScrollToContentBeginningInRightToLeft];
+-[UICollectionViewLayout _dynamicReferenceBounds];
+-[UICollectionViewLayout invalidationContextForBoundsChange:];
+-[UICollectionViewLayout collectionViewContentSize];
+-[UICollectionViewLayout finalLayoutAttributesForDisappearingItemAtIndexPath:];
+-[UICollectionViewLayout setEditing:];
+-[UICollectionViewLayout flipsHorizontallyInOppositeLayoutDirection];
+-[UICollectionViewLayout _leadingSwipeActionsConfigurationForIndexPath:];
+-[UICollectionViewLayout encodeWithCoder:];
+-[UICollectionViewLayout _items];
+-[UICollectionViewLayout layoutAttributesForInteractivelyMovingItemAtIndexPath:withTargetPosition:];
+-[UICollectionViewLayout prepareForCollectionViewUpdates:];
+-[UICollectionViewLayout bounds];
+-[UICollectionViewLayout invalidationContextForInteractivelyMovingItems:withTargetPosition:previousIndexPaths:previousPosition:];
+-[UICollectionViewLayout targetContentOffsetForProposedContentOffset:withScrollingVelocity:];
+-[UICollectionViewLayout initWithCoder:];
+-[UICollectionViewLayout _supportsAdvancedTransitionAnimations];
+-[UICollectionViewLayout invalidateLayout];
+-[UICollectionViewLayout initialLayoutAttributesForAppearingItemAtIndexPath:];
+-[UICollectionViewLayout targetIndexPathForInteractivelyMovingItem:withPosition:];
+-[UICollectionViewLayout isEditing];
+-[UICollectionViewLayout finalizeCollectionViewUpdates];
+-[UICollectionViewLayout _sections];
+-[UICollectionViewLayout prepareLayout];
+-[UICollectionViewLayout layoutAttributesForItemAtIndexPath:];
+-[UICollectionViewLayout layoutAttributesForElementsInRect:];
+-[UICollectionViewLayout _didEndSwiping];
+-[UICollectionViewLayout _collectionViewAnimationContext];
+-[UICollectionViewLayout _estimatesSizes];
+-[UICollectionViewLayout _invalidationContextForUpdatedContentMargins:oldContentMargins:];
+-[UICollectionViewLayout prepareForAnimatedBoundsChange:];
+-[UICollectionViewLayout _hasOrthogonalScrollingSections];
+-[UICollectionViewLayout prepareForTransitionFromLayout:];
+-[UICollectionViewLayout _allowsItemInteractionsToBegin];
+-[UICollectionViewLayout _allowsPanningAcrossConstrainedAxisToBeginMultiSelectInteractionInSection:];
+-[UICollectionViewLayout _anchorForAuxiliaryElementOfKind:];
+-[UICollectionViewLayout _animationForReusableView:toLayoutAttributes:];
+-[UICollectionViewLayout _animationForReusableView:toLayoutAttributes:type:];
+-[UICollectionViewLayout _cellBackgroundOrBottomSeparatorChangedAtIndexPath:separatorOnly:];
+-[UICollectionViewLayout _cellsShouldConferWithAutolayoutEngineForSizingInfo];
+-[UICollectionViewLayout _centerInsertionIndicatorFrame:targetAttributes:axis:edges:];
+-[UICollectionViewLayout _collectionViewWillPerformPendingLayoutBeforeUpdate];
+-[UICollectionViewLayout _compositionLayout];
+-[UICollectionViewLayout _contentFrameForSection:];
+-[UICollectionViewLayout _contentOffsetFromProposedContentOffset:forScrollingToItemAtIndexPath:atScrollPosition:];
+-[UICollectionViewLayout _customContainerSectionIndexes];
+-[UICollectionViewLayout _decorationViewForLayoutAttributes:];
+-[UICollectionViewLayout _didPerformUpdateVisibleCellsPassWithLayoutOffset:];
+-[UICollectionViewLayout _disablesDoubleSidedAnimations];
+-[UICollectionViewLayout _disallowsFadeCellsForBoundsChange];
+-[UICollectionViewLayout _dynamicAnimator];
+-[UICollectionViewLayout _edgesForSafeAreaPropagationToDescendants];
+-[UICollectionViewLayout _elementKinds];
+-[UICollectionViewLayout _estimatesSupplementaryItems];
+-[UICollectionViewLayout _extendedAttributesQueryIncludingOrthogonalScrollingRegions:];
+-[UICollectionViewLayout _fallbackItemSize];
+-[UICollectionViewLayout _finalLayoutAttributesForDisappearingItemAtIndexPath:];
+-[UICollectionViewLayout _finalizeCollectionViewItemAnimations];
+-[UICollectionViewLayout _finalizeCollectionViewUpdate:];
+-[UICollectionViewLayout _finalizeLayoutTransition];
+-[UICollectionViewLayout _focusFastScrollingIndexBarInsets];
+-[UICollectionViewLayout _frameForInsertionIndicatorForTargetFrame:axis:edges:];
+-[UICollectionViewLayout _frameForScrollingToFirstElementInSectionAtIndex:];
+-[UICollectionViewLayout _glassGroupZIndex];
+-[UICollectionViewLayout _indexPathForInsertionIndicatorForTargetAttributes:axis:edges:previousAttributes:nextAttributes:];
+-[UICollectionViewLayout _indexPathsToDeleteForDecorationViewOfKind:];
+-[UICollectionViewLayout _indexPathsToDeleteForSupplementaryViewOfKind:];
+-[UICollectionViewLayout _indexPathsToInsertForDecorationViewOfKind:];
+-[UICollectionViewLayout _indexPathsToInsertForSupplementaryViewOfKind:];
+-[UICollectionViewLayout _initialAppearingLayoutAttributesCanBeOverriddenForEstimatedSizing];
+-[UICollectionViewLayout _initialLayoutAttributesForAppearingItemAtIndexPath:];
+-[UICollectionViewLayout _invalidateLayoutUsingContext:];
+-[UICollectionViewLayout _invalidationContextForBoundsChange:fromOldBounds:];
+-[UICollectionViewLayout _invalidationContextForEndingReorderingItemToFinalIndexPaths:previousIndexPaths:reorderingCancelled:];
+-[UICollectionViewLayout _invalidationContextForRefreshingVisibleElementAttributes];
+-[UICollectionViewLayout _invalidationContextForReorderingTargetPosition:targetIndexPaths:withPreviousPosition:previousIndexPaths:];
+-[UICollectionViewLayout _invalidationContextForUpdatedLayoutMargins:];
+-[UICollectionViewLayout _invalidationContextForUpdatedLayoutMargins:oldMargins:];
+-[UICollectionViewLayout _invalidationContextForUpdatedSafeAreaInsets:oldInsets:];
+-[UICollectionViewLayout _invalidationContextForUpdatedScrollAccessoryInsets:oldInsets:];
+-[UICollectionViewLayout _isInLayoutTransition];
+-[UICollectionViewLayout _isPrepared];
+-[UICollectionViewLayout _layoutAttributesForElementsInProjectedRect:withProjectionVector:projectionDistance:];
+-[UICollectionViewLayout _layoutAttributesForIndelibleElements];
+-[UICollectionViewLayout _layoutAttributesForInsertionIndicatorAtItemWithTargetAttributes:targetPositionEdges:];
+-[UICollectionViewLayout _layoutAttributesForInsertionIndicatorAtTargetIndexPath:];
+-[UICollectionViewLayout _layoutAttributesForInsertionIndicatorAtTargetPosition:sourceIndexPath:];
+-[UICollectionViewLayout _layoutAttributesForItemNearestPosition:maximumDistance:];
+-[UICollectionViewLayout _layoutAttributesForNextItemInDirection:fromIndexPath:constrainedToRect:];
+-[UICollectionViewLayout _layoutAttributesForReorderedItemAtIndexPath:withTargetPosition:];
+-[UICollectionViewLayout _layoutAxis];
+-[UICollectionViewLayout _layoutAxisForAttributes:previousAttributes:nextAttributes:];
+-[UICollectionViewLayout _layoutFrameForSection:];
+-[UICollectionViewLayout _layoutOffset];
+-[UICollectionViewLayout _layoutOffsetEdges];
+-[UICollectionViewLayout _layoutTypeForSection:];
+-[UICollectionViewLayout _needsRecomputeOfPreferredAttributesForVisibleEstimatedItemsDuringUpdate];
+-[UICollectionViewLayout _nextLayoutAttributesForGlobalIndex:];
+-[UICollectionViewLayout _offsetForOrthogonalScrollingSection:];
+-[UICollectionViewLayout _offsetInTopParentLayout:];
+-[UICollectionViewLayout _orthogonalFrameWithOffsetElidedForItemWithLayoutAttributes:frame:];
+-[UICollectionViewLayout _orthogonalScrollingAxis];
+-[UICollectionViewLayout _orthogonalScrollingContentRectForSection:];
+-[UICollectionViewLayout _orthogonalScrollingElementShouldAppearAboveForAttributes:];
+-[UICollectionViewLayout _orthogonalScrollingElementShouldAppearBelowForAttributes:];
+-[UICollectionViewLayout _orthogonalScrollingLayoutRectForSection:];
+-[UICollectionViewLayout _orthogonalScrollingSections];
+-[UICollectionViewLayout _overridesSafeAreaPropagationToDescendants];
+-[UICollectionViewLayout _postProcessPreferredAttributes:forView:];
+-[UICollectionViewLayout _preferredBackgroundColor];
+-[UICollectionViewLayout _preferredLayoutMargins];
+-[UICollectionViewLayout _prepareForCollectionViewUpdates:animated:];
+-[UICollectionViewLayout _prepareForCollectionViewUpdates:withDataSourceTranslator:];
+-[UICollectionViewLayout _prepareForPreferredAttributesQueryForView:withLayoutAttributes:];
+-[UICollectionViewLayout _prepareForTransitionFromLayout:];
+-[UICollectionViewLayout _prepareForTransitionToLayout:];
+-[UICollectionViewLayout _prepareLayout];
+-[UICollectionViewLayout _prepareToAnimateFromCollectionViewItems:atContentOffset:toItems:atContentOffset:];
+-[UICollectionViewLayout _preparedForBoundsChanges];
+-[UICollectionViewLayout _previousLayoutAttributesForGlobalIndex:];
+-[UICollectionViewLayout _propertyAnimatorForCollectionViewUpdates:withCustomAnimator:];
+-[UICollectionViewLayout _reorderingTargetItemIndexPathForPosition:withPreviousIndexPath:];
+-[UICollectionViewLayout _scrollViewLayoutAdjustmentsChanged];
+-[UICollectionViewLayout _sectionDescriptorForSectionIndex:];
+-[UICollectionViewLayout _setCollectionView:];
+-[UICollectionViewLayout _setCollectionViewAnimationContext:];
+-[UICollectionViewLayout _setCollectionViewBoundsSize:];
+-[UICollectionViewLayout _setCompositionLayout:];
+-[UICollectionViewLayout _setDynamicAnimator:];
+-[UICollectionViewLayout _setElementKinds:];
+-[UICollectionViewLayout _setExternalObjectTable:forNibLoadingOfDecorationViewOfKind:];
+-[UICollectionViewLayout _setItems:];
+-[UICollectionViewLayout _setLayoutOffset:];
+-[UICollectionViewLayout _setLayoutOffsetEdges:];
+-[UICollectionViewLayout _setOffset:forOrthogonalScrollingSection:];
+-[UICollectionViewLayout _setPreferredBackgroundColor:];
+-[UICollectionViewLayout _setPrepared:];
+-[UICollectionViewLayout _setSections:];
+-[UICollectionViewLayout _setSiblingLayout:];
+-[UICollectionViewLayout _setSublayoutType:];
+-[UICollectionViewLayout _setWantsRightToLeftHorizontalMirroringIfNeeded:];
+-[UICollectionViewLayout _shouldAddElementToSectionContainer:];
+-[UICollectionViewLayout _shouldAdjustTargetContentOffsetToValidateContentExtents];
+-[UICollectionViewLayout _shouldInvalidateLayoutForDataSourceChange];
+-[UICollectionViewLayout _shouldOrthogonalScrollingSectionDecorationScrollWithContentForIndexPath:elementKind:];
+-[UICollectionViewLayout _shouldOrthogonalScrollingSectionSupplementaryScrollWithContentForIndexPath:elementKind:];
+-[UICollectionViewLayout _shouldPopulateInitialAndFinalLayoutAttributesForAllUpdateItems:];
+-[UICollectionViewLayout _siblingLayout];
+-[UICollectionViewLayout _sublayoutType];
+-[UICollectionViewLayout _supplementaryViewInsetsForScrollingToItemAtIndexPath:];
+-[UICollectionViewLayout _supportsPrefetchingWithEstimatedSizes];
+-[UICollectionViewLayout _supportsSwipeActionsForIndexPath:];
+-[UICollectionViewLayout _targetPositionForInteractiveMovementOfItemAtIndexPath:withProposedTargetPosition:];
+-[UICollectionViewLayout _updateStyleForSwipeActionsConfiguration:indexPath:];
+-[UICollectionViewLayout _wantsAnimationsForOffscreenAuxillaries];
+-[UICollectionViewLayout _wantsBandSelectionVisualsInSection:];
+-[UICollectionViewLayout _wantsCustomSectionContainers];
+-[UICollectionViewLayout _wantsInvalidateLayoutForPreferredLayoutAttributes];
+-[UICollectionViewLayout _wantsRightToLeftHorizontalMirroringIfNeeded];
+-[UICollectionViewLayout _wantsUntrackedAnimationCleanupForAuxillaryItems];
+-[UICollectionViewLayout _wantsUpdateVisibleCellsPassNotifications];
+-[UICollectionViewLayout _willPerformUpdateVisibleCellsPass];
+-[UICollectionViewLayout canBeEdited];
+-[UICollectionViewLayout convertRect:fromLayout:];
+-[UICollectionViewLayout convertRect:toLayout:];
+-[UICollectionViewLayout developmentLayoutDirection];
+-[UICollectionViewLayout finalLayoutAttributesForDisappearingDecorationElementOfKind:atIndexPath:];
+-[UICollectionViewLayout finalLayoutAttributesForDisappearingSupplementaryElementOfKind:atIndexPath:];
+-[UICollectionViewLayout finalizeAnimatedBoundsChange];
+-[UICollectionViewLayout finalizeLayoutTransition];
+-[UICollectionViewLayout indexPathsToDeleteForDecorationViewOfKind:];
+-[UICollectionViewLayout indexPathsToDeleteForSupplementaryViewOfKind:];
+-[UICollectionViewLayout indexPathsToInsertForDecorationViewOfKind:];
+-[UICollectionViewLayout indexPathsToInsertForSupplementaryViewOfKind:];
+-[UICollectionViewLayout initialLayoutAttributesForAppearingDecorationElementOfKind:atIndexPath:];
+-[UICollectionViewLayout initialLayoutAttributesForAppearingSupplementaryElementOfKind:atIndexPath:];
+-[UICollectionViewLayout invalidationContextForPreferredLayoutAttributes:withOriginalAttributes:];
+-[UICollectionViewLayout prepareForTransitionToLayout:];
+-[UICollectionViewLayout registerClass:forDecorationViewOfKind:];
+-[UICollectionViewLayout registerNib:forDecorationViewOfKind:];
+-[UICollectionViewLayout shouldInvalidateLayoutForPreferredLayoutAttributes:withOriginalAttributes:];
+-[UICollectionViewLayout snapshottedLayoutAttributeForItemAtIndexPath:];
+-[UICollectionViewLayout transitionContentOffsetForProposedContentOffset:keyItemIndexPath:];
+```

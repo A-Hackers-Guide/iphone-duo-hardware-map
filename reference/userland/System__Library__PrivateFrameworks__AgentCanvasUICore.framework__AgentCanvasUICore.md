@@ -1,0 +1,78 @@
+# `/System/Library/PrivateFrameworks/AgentCanvasUICore.framework/AgentCanvasUICore`
+
+iOS 27.2 dyld shared cache image, version `3605.10.2.11.9`. Light page: libraries and type names only. **[DSC]**
+
+## Linked libraries (61)
+
+- `/System/Library/PrivateFrameworks/CoreSVG.framework/CoreSVG`
+- `/System/Library/PrivateFrameworks/AssistantUICore.framework/AssistantUICore`
+- `/System/Library/PrivateFrameworks/AgentCanvasFoundation.framework/AgentCanvasFoundation`
+- `/System/Library/PrivateFrameworks/AgentCanvasUIFoundation.framework/AgentCanvasUIFoundation`
+- `/System/Library/PrivateFrameworks/AgentCanvasModel.framework/AgentCanvasModel`
+- `/System/Library/Frameworks/Foundation.framework/Foundation`
+- `/usr/lib/libobjc.A.dylib`
+- `/usr/lib/libSystem.B.dylib`
+- `/System/Library/Frameworks/Accessibility.framework/Accessibility`
+- `/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation`
+- `/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics`
+- `/System/Library/Frameworks/CoreText.framework/CoreText`
+- `/System/Library/Frameworks/CoreTransferable.framework/CoreTransferable`
+- `/System/Library/Frameworks/CryptoKit.framework/CryptoKit`
+- `/System/Library/Frameworks/DataDetection.framework/DataDetection`
+- `/System/Library/Frameworks/ImageIO.framework/ImageIO`
+- `/System/Library/Frameworks/LinkPresentation.framework/LinkPresentation`
+- `/System/Library/Frameworks/PDFKit.framework/PDFKit`
+- `/System/Library/Frameworks/QuartzCore.framework/QuartzCore`
+- `/System/Library/Frameworks/QuickLook.framework/QuickLook`
+- `/System/Library/Frameworks/QuickLookThumbnailing.framework/QuickLookThumbnailing`
+- `/System/Library/Frameworks/SwiftUI.framework/SwiftUI`
+- `/System/Library/Frameworks/Symbols.framework/Symbols`
+- `/System/Library/Frameworks/UIKit.framework/UIKit`
+- `/System/Library/Frameworks/WebKit.framework/WebKit`
+- `/System/Library/Frameworks/_DataDetection_SwiftUI.framework/_DataDetection_SwiftUI`
+- `/System/Library/PrivateFrameworks/BubbleKit.framework/BubbleKit`
+- `/System/Library/PrivateFrameworks/MathTypesetting.framework/MathTypesetting`
+- `/System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet`
+- `/System/Library/PrivateFrameworks/SiriAppIntents.framework/SiriAppIntents`
+- `/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation`
+- `/usr/lib/swift/libswiftAVFoundation.dylib`
+- `/usr/lib/swift/libswiftAccelerate.dylib`
+- `/usr/lib/swift/libswiftCompression.dylib`
+- `/usr/lib/swift/libswiftCore.dylib`
+- `/usr/lib/swift/libswiftCoreAudio.dylib`
+- `/usr/lib/swift/libswiftCoreAudio_Private.dylib`
+- `/usr/lib/swift/libswiftCoreFoundation.dylib`
+- `/usr/lib/swift/libswiftCoreImage.dylib`
+- `/usr/lib/swift/libswiftCoreLocation.dylib`
+- `/usr/lib/swift/libswiftCoreMIDI.dylib`
+- `/usr/lib/swift/libswiftDispatch.dylib`
+- `/usr/lib/swift/libswiftIntents.dylib`
+- `/usr/lib/swift/libswiftMLCompute.dylib`
+- `/usr/lib/swift/libswiftMetal.dylib`
+- `/usr/lib/swift/libswiftMetalKit.dylib`
+- `/usr/lib/swift/libswiftModelIO.dylib`
+- `/usr/lib/swift/libswiftNaturalLanguage.dylib`
+- `/usr/lib/swift/libswiftOSLog.dylib`
+- `/usr/lib/swift/libswiftObjectiveC.dylib`
+- `/usr/lib/swift/libswiftObservation.dylib`
+- `/usr/lib/swift/libswiftQuartzCore.dylib`
+- `/usr/lib/swift/libswiftSpatial.dylib`
+- `/usr/lib/swift/libswiftSynchronization.dylib`
+- `/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib`
+- `/usr/lib/swift/libswiftXPC.dylib`
+- `/usr/lib/swift/libswift_Builtin_float.dylib`
+- `/usr/lib/swift/libswift_Concurrency.dylib`
+- `/usr/lib/swift/libswift_StringProcessing.dylib`
+- `/usr/lib/swift/libswiftos.dylib`
+- `/usr/lib/swift/libswiftsimd.dylib`
+
+## Objective-C: 139 classes, 15 protocols (method count not recorded on light pages)
+
+### Classes
+
+`_TtC17AgentCanvasUICore11ViewContext`, `_TtC17AgentCanvasUICore12ImageManager`, `_TtC17AgentCanvasUICore14CanvasSettings`, `_TtC17AgentCanvasUICore14DemoRepository`, `_TtC17AgentCanvasUICore14ImageDiskCache`, `_TtC17AgentCanvasUICore16ElasticItemModel`, `_TtC17AgentCanvasUICore17DividerAttachment`, `_TtC17AgentCanvasUICore17ElasticityOptions`, `_TtC17AgentCanvasUICore17ElasticityUpdater`, `_TtC17AgentCanvasUICore18DerivedLayoutGuide`, `_TtC17AgentCanvasUICore18FileThumbnailCache`, `_TtC17AgentCanvasUICore18TextViewSizesModel`, `_TtC17AgentCanvasUICore19BasicViewStateStore`, `_TtC17AgentCanvasUICore19ChatBubbleViewModel`, `_TtC17AgentCanvasUICore19SnapshotRenderScope`, `_TtC17AgentCanvasUICore20AttachmentSizeBridge`, `_TtC17AgentCanvasUICore20ImageDownloadManager`, `_TtC17AgentCanvasUICore21ElasticityCoordinator`, `_TtC17AgentCanvasUICore21InternalWindowManager`, `_TtC17AgentCanvasUICore21NestedScrollViewModel`, `_TtC17AgentCanvasUICore21ObservableLayoutGuide`, `_TtC17AgentCanvasUICore21SpectralShaderLibrary`, `_TtC17AgentCanvasUICore22DemoMarkdownRepository`, `_TtC17AgentCanvasUICore22DemoResponseRepository`, `_TtC17AgentCanvasUICore22PendingReferencesModel`, `_TtC17AgentCanvasUICore22RichTextTableViewModel`, `_TtC17AgentCanvasUICore22SnippetSnapshotService`, `_TtC17AgentCanvasUICore23ConversationTitleSource`, `_TtC17AgentCanvasUICore23DemoStreamingController`, `_TtC17AgentCanvasUICore23ReferencesSourceTracker`, `_TtC17AgentCanvasUICore23SendAnimationController`, `_TtC17AgentCanvasUICore23SupplementalRevealModel`, `_TtC17AgentCanvasUICore25CanvasTranscriptViewCache`, `_TtC17AgentCanvasUICore25DemoTextEffectEditorModel`, `_TtC17AgentCanvasUICore25ElasticityScrollContainer`, `_TtC17AgentCanvasUICore25MockDelayedResponseStyler`, `_TtC17AgentCanvasUICore25URLSessionImageDownloader`, `_TtC17AgentCanvasUICore25ViewPresentationWorkQueue`, `_TtC17AgentCanvasUICore26CanvasItemFrameCoordinator`, `_TtC17AgentCanvasUICore26RichTextProducerRepository`, `_TtC17AgentCanvasUICore27DynamicHeightContainerModel`, `_TtC17AgentCanvasUICore27TranscriptBottomSpacerModel`, `_TtC17AgentCanvasUICore28BasicViewPresentationContext`, `_TtC17AgentCanvasUICore28RichTextStreamMarkdownBridge`, `_TtC17AgentCanvasUICore28RichTextStreamingBridgeStore`, `_TtC17AgentCanvasUICore28ScreenshotServiceCoordinator`, `_TtC17AgentCanvasUICore28SpectralLightTextCoordinator`, `_TtC17AgentCanvasUICore29DemoRenderLocalFilesViewModel`, `_TtC17AgentCanvasUICore30DemoCanvasTranscriptDataSource`, `_TtC17AgentCanvasUICore30LoadingSpectralPlaygroundModel`, `_TtC17AgentCanvasUICore31BasicCanvasTranscriptDataSource`, `_TtC17AgentCanvasUICore31ReportAConcernPresentationState`, `_TtC17AgentCanvasUICore31RichTextTableColumnWidthUtility`, `_TtC17AgentCanvasUICore31ThemePromiseBasedResponseStyler`, `_TtC17AgentCanvasUICore32RichTextStreamingIdentityManager`, `_TtC17AgentCanvasUICore32StreamingSpectralTextCoordinator`, `_TtC17AgentCanvasUICore33CanvasItemPayloadTransformContext`, `_TtC17AgentCanvasUICore33CanvasShareActivityViewController`, `_TtC17AgentCanvasUICore33VisualDiagnosticPromiseBasicStore`, `_TtC17AgentCanvasUICore34CanvasConversationTurnShareContext`, `_TtC17AgentCanvasUICore34DemoReferenceFetchHandlerViewModel`, `_TtC17AgentCanvasUICore34RichTextStreamAnimationCoordinator`, `_TtC17AgentCanvasUICore35CanvasTranscriptLayoutGuideProvider`, `_TtC17AgentCanvasUICore35ElasticRichTextElementConfiguration`, `_TtC17AgentCanvasUICore36LoadingSpectralTextEffectCoordinator`, `_TtC17AgentCanvasUICore36StreamingWordSpectralTextCoordinator`, `_TtC17AgentCanvasUICore41HorizontalSwipeControlsDismissCoordinator`, `_TtC17AgentCanvasUICoreP33_02A1C4537580BDCFD81A824D06A789E621AttributedStringCache`, `_TtC17AgentCanvasUICoreP33_02A1C4537580BDCFD81A824D06A789E629AnalyzedAttributedStringCache`, `_TtC17AgentCanvasUICoreP33_189F691C66D2D820D3465D2D0569FD6522QLPreviewItemContainer`, `_TtC17AgentCanvasUICoreP33_189F691C66D2D820D3465D2D0569FD659QLURLItem`, `_TtC17AgentCanvasUICoreP33_19D113DC96D4CB031CADE6EF82C6CDE911ViewLoading`, `_TtC17AgentCanvasUICoreP33_289E49AA5A01AEAD73A06956801BA52216DownloadDelegate`, `_TtC17AgentCanvasUICoreP33_2DF0F407E01393D879B2B45098C3C7608Renderer`, `_TtC17AgentCanvasUICoreP33_2F0A7ABE6968B2EB9C1FE25B3584FCDA19ScrollBarStyleModel`, `_TtC17AgentCanvasUICoreP33_30C52A90D10EC3E233351E1B6BED312E19ResourceBundleClass`, `_TtC17AgentCanvasUICoreP33_314C0D5AC979717213520B494E9D4C7122ShaderLibraryHelper_V2`, `_TtC17AgentCanvasUICoreP33_39BBCE2A81D2A2F275EA76ECCA5176E411Observation`, `_TtC17AgentCanvasUICoreP33_3ABE1E7651D518438E8635D24C668F0414ChunkProcessor`, `_TtC17AgentCanvasUICoreP33_41082139E5F6E3B8E0D4B64588C6160D28SecurityScopedURLAccessModel`, `_TtC17AgentCanvasUICoreP33_4621FD5B2C5E61F11C46726410322F3912MathRenderer`, `_TtC17AgentCanvasUICoreP33_528A02E1C1FBCE20F445A618DEE1B75424TracingEnablementChecker`, `_TtC17AgentCanvasUICoreP33_5513B93CBA3C97EB297DDAEEE28D836134WeakSnapshotEnvironmentProviderBox`, `_TtC17AgentCanvasUICoreP33_55E6A17B0982EE0023332BA594E63BF819ResourceBundleClass`, `_TtC17AgentCanvasUICoreP33_65F8F306B4BFE66F9685AE18760F4B6719ResourceBundleClass`, `_TtC17AgentCanvasUICoreP33_7247DB4C94D4AAA708217A7C689EA37519ResourceBundleClass`, `_TtC17AgentCanvasUICoreP33_756F5FCDE47F0FE968DB16F1F682730335DefaultHorizontalSwipeActionHandler`, `_TtC17AgentCanvasUICoreP33_7A55E70CEE53C037746DED7266DF870A9Prewarmer`, `_TtC17AgentCanvasUICoreP33_848665C0E4A61295DB6128FF7F8DE3CE8MockItem`, `_TtC17AgentCanvasUICoreP33_88CDFD191656248BA5C1B65EA73953AB24AttachmentSizeController`, `_TtC17AgentCanvasUICoreP33_8D7ECBFCC3834E4A412F134779A511BA37simulatingStreamingPayloadTransformer`, `_TtC17AgentCanvasUICoreP33_A4E941E2462015DF763ABD776A009B1328ImageCollectionGeometryModel`, `_TtC17AgentCanvasUICoreP33_ABD81AF2AEDF0403957065BA5C01E00725ContinuousTouchRecognizer`, `_TtC17AgentCanvasUICoreP33_CFC28E282287BF553699C5A317C251C619ResourceBundleClass`, `_TtC17AgentCanvasUICoreP33_D0EF631F80D7C55BF08DBEC6E4850B7816DemoCounterModel`, `_TtC17AgentCanvasUICoreP33_D7B803DE2410A997D765234DCE01F28C19PhotoSaveItemSource`, `_TtC17AgentCanvasUICoreP33_D7B803DE2410A997D765234DCE01F28C21CanvasShareItemSource`, `_TtC17AgentCanvasUICoreP33_EE307E6DA4AE610B1A38E87B3A72815517ImageDownloadTask`, `_TtC17AgentCanvasUICoreP33_FA90CAE15CD41D93296079B3579B18DC8BlockBox`, `_TtC17AgentCanvasUICoreP33_FF9B196A53A8655C6AF666FE5DF1BF2119ResourceBundleClass`, `_TtCC17AgentCanvasUICore11ViewContextP33_1EDB2E86D7947E3D222C9B095F8074B211Placeholder`, `_TtCC17AgentCanvasUICore28RichTextStreamingBridgeStore23BridgeRegistrationState`, `_TtCC17AgentCanvasUICore33CanvasItemPayloadTransformContext12ValueWrapper`, `_TtCC17AgentCanvasUICore33CanvasItemPayloadTransformContext5Model`, `_TtCC17AgentCanvasUICore34RichTextStreamAnimationCoordinator22ElementObservableState`, `_TtCC17AgentCanvasUICore34RichTextStreamAnimationCoordinator24ElementAnimationProgress`, `_TtCC17AgentCanvasUICore34RichTextStreamAnimationCoordinator25CollectionObservableState`, `_TtCC17AgentCanvasUICore34RichTextStreamAnimationCoordinatorP33_503040512EC155C62F98F9727B99616C12ElementState`, `_TtCC17AgentCanvasUICoreP33_2DF0F407E01393D879B2B45098C3C7608Renderer26AsyncRenderingTrackerStore`, `_TtCC17AgentCanvasUICoreP33_39BBCE2A81D2A2F275EA76ECCA5176E411Observation8Observer`, `_TtCE17AgentCanvasUICoreV16AgentCanvasModel8RichText17JSONDataReference`, `_TtCE17AgentCanvasUICoreV16AgentCanvasModel8RichText17SecurityScopedURL`, `_TtCE17AgentCanvasUICoreV16AgentCanvasModel8RichText24JSONDataReferencesSource`, `_TtCE17AgentCanvasUICoreV16AgentCanvasModel8RichText25CompositeReferencesSource`, `_TtCE17AgentCanvasUICoreV16AgentCanvasModel8RichText25ReferenceFetchCoordinator`, `_TtCE17AgentCanvasUICoreVV16AgentCanvasModel8RichText17CustomViewPromiseP33_043BE44574EB1CDDA6D3BA9643BCA5BC20DemoCustomView2Model`, `_TtCE17AgentCanvasUICoreVV16AgentCanvasModel8RichText5Image13GeometryModel`, `_TtCE17AgentCanvasUICoreVV16AgentCanvasModel8RichText9Accordion5Model`, `_TtCO17AgentCanvasUICore14CanvasTextSize5Model`, `_TtCO17AgentCanvasUICore18SyntaxHighlighting11Highlighter`, `_TtCO17AgentCanvasUICore18SyntaxHighlighting19HighlightingSession`, `_TtCO17AgentCanvasUICore24PasteboardRepresentation17BasicPromiseStore`, `_TtCO17AgentCanvasUICore28RichTextPerformanceInspectorP33_C1450920731983A41A686454C2F0478A18RichTextRepository`, `_TtCV17AgentCanvasUICore14AsyncRenderingP33_DFFB9AA1FA0707542E29FE0634B9324A14Implementation`, `_TtCV17AgentCanvasUICore14HybridTextViewP33_FD9AB7A66425B103E7936D5946897DBC5Model`, `_TtCV17AgentCanvasUICore15MultiColumnText5Cache`, `_TtCV17AgentCanvasUICore15TextKitTextViewP33_C4F3DBD880186B29BB82A666AFE26A288TextView`, `_TtCV17AgentCanvasUICore18SVGWebViewRendererP33_83D84F4805524F3BED5F470AF634C02514Implementation`, `_TtCV17AgentCanvasUICore19MultiColumnTextView5Model`, `_TtCV17AgentCanvasUICore19ThemePromisePreviewP33_361D867E7F10C000705B7705B77982915Model`, `_TtCV17AgentCanvasUICore20HorizontalPanGesture11Coordinator`, `_TtCV17AgentCanvasUICore26MarkdownInteractivePreviewP33_D4F2486042302FBD5C512C2FD670D06513MarkdownModel`, `_TtCV17AgentCanvasUICoreP33_189F691C66D2D820D3465D2D0569FD6517PreviewController18PreviewCoordinator`, `_TtCV17AgentCanvasUICoreP33_ABD81AF2AEDF0403957065BA5C01E00723PassthroughTouchGesture11Coordinator`, `_TtCVE17AgentCanvasUICoreV16AgentCanvasModel8RichText16DefaultProcessorP33_16F99D40896B7A8C87AC9A3B85EA8B0814Implementation`, `_TtCVE17AgentCanvasUICoreV16AgentCanvasModel8RichText16DefaultProcessorP33_16F99D40896B7A8C87AC9A3B85EA8B0819ActorImplementation`, `_TtCVE17AgentCanvasUICoreV16AgentCanvasModel8RichText27SourceAttributionsExtractorP33_06485719E1C7691911139AC7D4BF0E5C14Implementation`, `_TtCVV17AgentCanvasUICore15TextKitTextViewP33_C4F3DBD880186B29BB82A666AFE26A287Content11Coordinator`, `_UIActivityItemCustomizationGroup`
+
+### Protocols
+
+`NSObject`, `NSTextLocation`, `NSURLSessionDataDelegate`, `NSURLSessionDelegate`, `NSURLSessionTaskDelegate`, `OS_dispatch_source`, `OS_dispatch_source_memorypressure`, `QLPreviewControllerDataSource`, `QLPreviewControllerDelegate`, `QLPreviewItem`, `UIActivityItemSource`, `UIActivityViewControllerObjectManipulationDelegate`, `UIGestureRecognizerDelegate`, `UIScreenshotServiceDelegate`, `WKNavigationDelegate`
+

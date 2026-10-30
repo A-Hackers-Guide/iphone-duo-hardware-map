@@ -1,0 +1,91 @@
+# `MTLCountersTraceRenderCommandEncoder`
+
+- Image: [`/System/Library/PrivateFrameworks/MetalTools.framework/MetalTools`](../userland/System__Library__PrivateFrameworks__MetalTools.framework__MetalTools.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `MTLCountersTraceCommandEncoder`
+- 0 instance variables, 0 properties, 81 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[MTLCountersTraceRenderCommandEncoder useResources:count:usage:];
+-[MTLCountersTraceRenderCommandEncoder useResource:usage:];
+-[MTLCountersTraceRenderCommandEncoder useHeap:];
+-[MTLCountersTraceRenderCommandEncoder useHeaps:count:];
+-[MTLCountersTraceRenderCommandEncoder setFragmentBuffers:offsets:withRange:];
+-[MTLCountersTraceRenderCommandEncoder setVertexBufferOffset:attributeStride:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder drawPrimitives:vertexStart:vertexCount:instanceCount:baseInstance:];
+-[MTLCountersTraceRenderCommandEncoder drawPatches:patchStart:patchCount:patchIndexBuffer:patchIndexBufferOffset:instanceCount:baseInstance:];
+-[MTLCountersTraceRenderCommandEncoder setVertexBuffers:offsets:withRange:];
+-[MTLCountersTraceRenderCommandEncoder setFrontFacingWinding:];
+-[MTLCountersTraceRenderCommandEncoder setBlendColorRed:green:blue:alpha:];
+-[MTLCountersTraceRenderCommandEncoder setColorStoreAction:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setFragmentSamplerState:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder drawIndexedPatches:patchStart:patchCount:patchIndexBuffer:patchIndexBufferOffset:controlPointIndexBuffer:controlPointIndexBufferOffset:instanceCount:baseInstance:];
+-[MTLCountersTraceRenderCommandEncoder setCullMode:];
+-[MTLCountersTraceRenderCommandEncoder setVisibilityResultMode:offset:];
+-[MTLCountersTraceRenderCommandEncoder setTileSamplerState:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder drawPrimitives:indirectBuffer:indirectBufferOffset:];
+-[MTLCountersTraceRenderCommandEncoder setVertexBuffer:offset:attributeStride:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setVertexSamplerState:lodMinClamp:lodMaxClamp:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setFragmentBuffer:offset:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setRenderPipelineState:];
+-[MTLCountersTraceRenderCommandEncoder setVertexSamplerStates:lodMinClamps:lodMaxClamps:withRange:];
+-[MTLCountersTraceRenderCommandEncoder setVertexBytes:length:attributeStride:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setTileTextures:withRange:];
+-[MTLCountersTraceRenderCommandEncoder setFragmentBufferOffset:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setTileSamplerStates:withRange:];
+-[MTLCountersTraceRenderCommandEncoder drawPatches:patchIndexBuffer:patchIndexBufferOffset:indirectBuffer:indirectBufferOffset:];
+-[MTLCountersTraceRenderCommandEncoder setFragmentTexture:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setTriangleFillMode:];
+-[MTLCountersTraceRenderCommandEncoder drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:];
+-[MTLCountersTraceRenderCommandEncoder setVertexBuffers:offsets:attributeStrides:withRange:];
+-[MTLCountersTraceRenderCommandEncoder setVertexBytes:length:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setTileBuffer:offset:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setTileBuffers:offsets:withRange:];
+-[MTLCountersTraceRenderCommandEncoder setStencilReferenceValue:];
+-[MTLCountersTraceRenderCommandEncoder drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:instanceCount:];
+-[MTLCountersTraceRenderCommandEncoder setViewports:count:];
+-[MTLCountersTraceRenderCommandEncoder setVertexSamplerState:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder useResource:usage:stages:];
+-[MTLCountersTraceRenderCommandEncoder setFragmentSamplerState:lodMinClamp:lodMaxClamp:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setVertexSamplerStates:withRange:];
+-[MTLCountersTraceRenderCommandEncoder drawIndexedPrimitives:indexCount:indexType:indexBuffer:indexBufferOffset:instanceCount:baseVertex:baseInstance:];
+-[MTLCountersTraceRenderCommandEncoder setStencilStoreAction:];
+-[MTLCountersTraceRenderCommandEncoder setFragmentSamplerStates:withRange:];
+-[MTLCountersTraceRenderCommandEncoder setTileSamplerStates:lodMinClamps:lodMaxClamps:withRange:];
+-[MTLCountersTraceRenderCommandEncoder useHeaps:count:stages:];
+-[MTLCountersTraceRenderCommandEncoder setThreadgroupMemoryLength:offset:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setTessellationFactorBuffer:offset:instanceStride:];
+-[MTLCountersTraceRenderCommandEncoder setViewport:];
+-[MTLCountersTraceRenderCommandEncoder setTileBytes:length:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setScissorRects:count:];
+-[MTLCountersTraceRenderCommandEncoder init:];
+-[MTLCountersTraceRenderCommandEncoder setDepthStencilState:];
+-[MTLCountersTraceRenderCommandEncoder setVertexTexture:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setDepthStoreAction:];
+-[MTLCountersTraceRenderCommandEncoder drawPrimitives:vertexStart:vertexCount:];
+-[MTLCountersTraceRenderCommandEncoder useHeap:stages:];
+-[MTLCountersTraceRenderCommandEncoder setTessellationFactorScale:];
+-[MTLCountersTraceRenderCommandEncoder drawPrimitives:vertexStart:vertexCount:instanceCount:];
+-[MTLCountersTraceRenderCommandEncoder setFragmentTextures:withRange:];
+-[MTLCountersTraceRenderCommandEncoder useResources:count:usage:stages:];
+-[MTLCountersTraceRenderCommandEncoder updateFence:afterStages:];
+-[MTLCountersTraceRenderCommandEncoder drawIndexedPatches:patchIndexBuffer:patchIndexBufferOffset:controlPointIndexBuffer:controlPointIndexBufferOffset:indirectBuffer:indirectBufferOffset:];
+-[MTLCountersTraceRenderCommandEncoder setFragmentSamplerStates:lodMinClamps:lodMaxClamps:withRange:];
+-[MTLCountersTraceRenderCommandEncoder drawIndexedPrimitives:indexType:indexBuffer:indexBufferOffset:indirectBuffer:indirectBufferOffset:];
+-[MTLCountersTraceRenderCommandEncoder setTileSamplerState:lodMinClamp:lodMaxClamp:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setDepthClipMode:];
+-[MTLCountersTraceRenderCommandEncoder setDepthBias:slopeScale:clamp:];
+-[MTLCountersTraceRenderCommandEncoder memoryBarrierWithResources:count:afterStages:beforeStages:];
+-[MTLCountersTraceRenderCommandEncoder setScissorRect:];
+-[MTLCountersTraceRenderCommandEncoder setVertexBufferOffset:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setVertexBuffer:offset:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setVertexTextures:withRange:];
+-[MTLCountersTraceRenderCommandEncoder dispatchThreadsPerTile:];
+-[MTLCountersTraceRenderCommandEncoder waitForFence:beforeStages:];
+-[MTLCountersTraceRenderCommandEncoder memoryBarrierWithScope:afterStages:beforeStages:];
+-[MTLCountersTraceRenderCommandEncoder setTileTexture:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setStencilFrontReferenceValue:backReferenceValue:];
+-[MTLCountersTraceRenderCommandEncoder setTileBufferOffset:atIndex:];
+-[MTLCountersTraceRenderCommandEncoder setFragmentBytes:length:atIndex:];
+```

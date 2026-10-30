@@ -1,0 +1,590 @@
+# `/usr/lib/libBasebandCommandDrivers.dylib`
+
+iOS 27.2 dyld shared cache image. Version `1594.0.0.0.0`. **[DSC]**
+
+## Linked libraries (8)
+
+- `/usr/lib/libBasebandSharedServices.dylib`
+- `/usr/lib/libTelephonyCapabilities.dylib`
+- `/System/Library/Frameworks/Foundation.framework/Foundation`
+- `/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation`
+- `/usr/lib/libTelephonyUtilDynamic.dylib`
+- `/usr/lib/libobjc.A.dylib`
+- `/usr/lib/libc++.1.dylib`
+- `/usr/lib/libSystem.B.dylib`
+
+## Strings (571)
+
+```
+com.apple.telephony.abm
+/usr/lib/libBasebandCommandDriversQMI.dylib
+\nLTE: 
+BasebandIMEISV
+BasebandSIMCardPresentState
+kKeyBasebandRootManifest
+kKeyTxPowerCappingStart
+Low_Watermark
+Disabled
+kKeyExtConsecutiveDenialThreshold
+TransparentMessageType
+BasebandSMSCaps
+WCI2TxPowerLimitTimeout
+SetLAAConfig
+, Reference: 0x
+kContinuous
+Online
+KeyRxDiversityTDSCDMA
+ModeOnlyLowPower
+kKeyBasebandSerialNumber
+AntBlockingVoiceBlocking
+coex.drv
+BasebandTDSCDMACalibrationMask
+Upper
+BasebandSIMCardSlotsInfoCardState
+kKeyTxPowerCappingStop
+DirectionMask
+WLANConnectionHandle
+, Component: 0x
+BasebandResetOnQMAPFlowControl
+com.apple.telephony
+DataAggregationProtocol
+APTTable
+kKeyExtTxDenialCABitmap
+ReportBLERStats
+ClientState::kStopped
+BasebandSIMCardEID
+KeyArtd5gSA
+Debug
+Voicecall
+ProductionTest
+Alarm
+kKeyDMFCMType
+kKeyExtAdvanceNoticePowerThreshold
+NGCContinuousTxSubframeDenialsThreshold
+kCommandCPMSPowerLevel
+Power
+kCommandWristState
+LaaGpioThrottlePeriodicity
+BasebandAppStatusDescSubStatus
+KeyuSleepConfig
+kCommandSpeakerState
+kKeyCommandTxPowerSvcType
+SetTimeShareConfig
+kKeyFreqReportSearchFrequency
+FCMBCMAntennaSwitchingBand
+CCEnabled
+RFCalibrationStatus::kPresent
+kBasebandPropertyBasebandVersion
+All
+On
+MetricReportFormat::kLegacyReport
+data.drv
+Hybrid
+BlockCountErrorThreshold
+NPALog
+kBasebandPropertyCoredumpSupported
+KeyRxDiversityWCDMA
+kKeyBasebandProvisioningManifest
+kCommandTxPowerCappingIndicationRegister
+unknown
+BasebandLTEDeepSleepDuration
+BasebandEID
+KeyPosition
+AntBlockingTimeMultiplier
+awd.driver
+KeyMeasurementType
+ContinuousTxSubframeDenialStatus
+LAAConfigDeactTimer
+TimeShareConfigShortDrxCycle
+Dynamic
+High_Watermark
+Log_Mode
+B12@?0B8
+OQC Magic
+enabledV5
+kKeyFreqReportHoppingFrequency
+FactoryCalibrationStatus::Absent
+Key5gEARFCNLock
+Minimal
+LinkPathLossThreshold
+AppID::kFieldTest
+KeySCellBand
+TxPower
+BasebandResetOnModeTransitionError
+BasebandPUK1
+kKeyBasebandProvisioningManifestStatus
+kKeyBasebandBoardId
+kKeyVideoAccessoryStatus
+ControllerPowerLimitingEnable
+TimeShareConfigCoexTech
+Active on AP (ABM)
+TDSCDMABandInformationSet
+HDRBandInformationSet
+kKeyRC1Duration
+BasebandGSMCalibrationStatus
+Audio
+ReportWWANState
+FCMBCMAntennaSwitchingPort
+SetCC1Req
+Limit
+BasebandSIMStatus
+BasebandSIMCardSlotsInfoATR
+BasebandDumpLogsLevel
+cpms.drv
+BasebandAuthAlgoCaps
+BasebandSIMCardPresentStatePresent
+BasebandRFCalibrationBand
+BasebandDumpLogsReason
+NGCTxFrameDenialsParameters
+, PII: 
+LogCollectionType
+BasebandHardwareChipID
+BasebandSIMCardEIDByteIsValid
+Stopped
+CoexTech
+LTECarrierInformationSet
+ - INCORRECT
+kKeyBasebandUidMode
+kKeyTxPowerCappingEnable
+kCommandPowerSourceState
+/usr/lib/libBasebandCommandDriversARI.dylib
+DataFlowControl
+Live_Filter_Setting
+PayloadType::kProfileConfig
+BasebandMSISDNReady
+kKeyFreqReportUplinkFrequency
+BasebandISIMAppIDX
+BasebandDumpLogsUserNotification
+kKeyDMTopEnclosure
+enabled
+TimeShareConfigLongDrxCycle
+vector
+KeyARFCNLock
+OperatingDim
+ReportFailCondition
+BasebandLTECalibrationMask
+Port B
+BasebandSIMCardSlotsInfoICCID
+KeyUARFCNLock
+LowPowerTimeout
+kCommandKeyboardState
+radio.drv
+kCommandAntennaSwitch
+KeySimTestPayload
+LTEBandInformationSet
+SetAntBlocking
+Stewie
+Invalid for ICE
+ARM41 Int Enforce
+TechInstance
+WCDMABandInformationSet
+GpsL5Level
+Shutdown
+BasebandWCDMACalibrationStatus
+Lower
+TxPowerThresholdForAdvTxNotice
+AppID::kPowerlog
+, PII allowed: 
+RFCalibrationStatus::kUnknown
+KeySKU
+kCommandSetDataProperty
+FrameOffset
+desense.drv
+KeyTxAntennaUseNVM
+kKeyBasebandActivationManifest
+KeyRxDiversityLTE
+BlockCount
+LAAConfigDeactStopTimer
+, Submission: 0x
+_ZN23QMICommandDriverFactory21create_default_globalEv
+BasebandAppTLVArray
+KeyWaitForFactoryMode
+kKeyPowerSourceState
+kKeyExtAdvanceNoticeRBThreshold
+BasebandGSMCalibrationMask
+FATP
+ETBFile
+SetWCI2TxAntMap
+AntBlockingAntNum
+basic_string
+ID
+ControllerTxPowerLimit
+awd
+BasebandCDMACalibrationMask
+kCTAntennaSelectionSecondaryLocation
+PollError
+WiFiStatus
+FactoryCalibrationStatus::Unknown
+Key5gSCSLock
+LAAConfigProtectCQIPeriod
+, Location allowed: 
+BasebandFWVersionCustom
+Verbose
+kKeyExtPowerLimitingPowerThreshold
+kKeyTxPowerConfigurationCLTMDutyCycle
+FrameBoundaryOffset
+DLConfig
+RFCalibrationStatus::kAbsent
+Calibration
+disabled
+Application: 
+F3Log
+BasebandPIN1
+KeyEnable
+NGCBandInformationSet
+TimeShareConfigSleepWakeDurScale
+ - CORRECT
+Normal
+ReportTxAntennaState
+???
+BasebandAppStatusDescPin2State
+BasebandSIMCardPresentStateError
+status
+kKeyExtPowerLimitingEnabled
+kKeyBasebandCertID
+LowPowerExit
+kKeyState
+WLANConnectionMode
+ReportWCI2TxAntMap
+AppID::kWirelessInsights
+BLER
+kOneShot
+kKeyTxPowerConfigurationCLTMPercentile
+SINR
+Airplane
+Shipping
+kCommandTxPowerCapping
+Enabled
+Sleep_Log_Mode
+WCI2TxPowerLimitFailure
+, Trigger: 0x
+0x
+BasebandLTECalibrationStatus
+BasebandAppStatusDescAppLabel
+Active ETS
+TimeShareConfigBandInformationSet
+TriggerAntBlocking
+BasebandLTEML1State
+BasebandSIMCardLogicalIDX
+kKeySetRC1Duration
+kKeyFreqReportRplmnFrequency
+KeyBasebandTimeSource
+BasebandAppStatusDescAID
+KeyTxAntenna
+KeyArtd5gNSA
+kKeyBasebandSecurityMode
+LTETDDInformation
+SubframeConfig
+Uplink
+Trigger: 0x
+FactoryCalibrationStatus::kUnknown
+KeyBasebandTimeSeconds
+KeyTestType
+Factory
+Bandwidth
+FactoryCalibrationStatus::Present
+BasebandRFCalibrationPresentStatus
+Invalid
+BasebandATR
+DataAggregationMaxDatagrams
+BasebandAppStatusDescPin1State
+BasebandSIMCardICCID
+ControllerTxPowerLimitTimeout
+BasebandSIMClass
+ChargeOnly
+RedactSensitivePrivate
+KeyBasebandOperatingMode
+BasebandSIMCardPresentStateRestricted
+kKeyHandDetectionState
+LAAConfigCoexEnabled
+WCI2TxAntMapInfoSetAntIdx
+MetricReportFormat::kBatchReport
+KeyArtdHDR
+kDataPowerSave
+AllOff
+FilteredRBThreshold
+SetCC2Req
+_ZN24MipcCommandDriverFactory21create_default_globalEv
+RBFilterAlpha
+Profile: 0x
+Started
+Data
+BasebandRFCalibrationDataArray
+KeyTestTimeout
+kKeyBasebandSKeyStatus
+kCommandTransmitIndicationConfig
+Policy
+MaxDenials
+kTransmitIndicationVersion_v2
+debug.drv
+, mask: 
+kKeyBasebandChipID
+kKeyTxPowerCappingAntennaFreeSpaceConfigLevel
+kKeyExtCriticalULCABitmap
+BasebandProjectName
+KeyArtdCDMA
+TxPowerLimitSuccess
+PayloadType::kDeviceConfig
+KeyCellLockCount
+kCommandWiredPortNotification
+kCTAntennaSelectionSecondary
+kKeyCommand
+RbThresholdForAdvTxNotice
+LAAConfigThresholdIn
+PayloadType::kComponentConfig
+ [ 
+BasebandWCDMACalibrationMask
+BasebandSIMCardSlotsInfo
+kKeyTransportClientStarted
+kKeyDMBCMType
+RedactSensitive
+ClientAntBlockingExtended
+/usr/lib/libBasebandCommandDriversMIPC.dylib
+\nWCDMA: 
+BasebandLTEBands
+KeyEnableSTx
+kKeyBasebandSKeyHash
+AppleBasebandManager-AppleBasebandServices_Manager-1594
+Port A
+BackgroundMode
+WLANBandInfo
+BasebandC_DRX
+PowerThreshold
+KeyArtdLTE
+LaaGpioThrottleEnabled
+BandFilters
+ ]
+BasebandAppStatusDescPin1Replaced
+kKeyWiredPort
+WCI2TxAntMapEnabled
+Offline
+BasebandHardwareVersion
+BasebandSIMCardSlotsInfoLogicalIDX
+BasebandRFCalibrationType
+kKeyBasebandActivationManifestStatus
+kCommandE75AccessoryStatusForARTD
+Passive external AT Only
+AppID::kABMTool
+Enabled_During_Sleep
+kKeyExtCAGroupBitmap
+QMITxPowerLimitFailure
+ReportNRState
+FactoryTest
+BasebandSIMCardEIDByteEID
+PersistentLowPower
+NGCCarrierInformationSet
+AntBlockingInformationSet
+AppID::kWirelessTelemetry
+KeyARFCNRAT
+kCommandGetAntennaPort
+BasebandLTELightSleepDuration
+kCommandTxPowerConfiguration
+Passive With Logging Configuration
+\nCDMA: 
+BasebandFlavorName
+kCommandDeviceMaterial
+kDataAggregationMaxSize
+GpsEnabled
+FactoryCalibrationStatus::Default
+kKeyBasebandPKHash
+rfs.drv
+GPSStateReportingSupported
+LTEOffPeriod
+TimeShareConfigEnabled
+AntBlockingClientId
+CarrierId
+LogCollectionTimeoutSec
+KeyBasebandTimeMicroSeconds
+B12@?0C8
+TDDConfig
+LteInstance
+Alpha
+, Time: 
+BasebandManufacturer
+kKeyBasebandAKeyStatus
+logs.driver.
+kKeySpeakerState
+GetScanFreqBandFilter
+ClientState::kAwake
+BasebandICCID
+KeyCAEnabled
+Passive external through dock
+WWANState
+TriggerAntBlockingEnable
+BasebandTestSIM
+BasebandRFCalibrationRat
+KeyArtdCDMA1X
+kTransmitIndicationVersion_v1
+kCommandGetDataProperty
+DataAggregationMaxSize
+GSMBandInformationSet
+ClientState::kLowPower
+Sleep_Log_Level
+BasebandSIMCardSlotsInfoEID
+KeyPCellBand
+kKeyTxPowerConfigurationCLTMRadioMaxPower
+Streaming
+AntBlockingBandList
+kKeyDMBottomEnclosure
+RedactAllExceptPublic
+Default
+kKeyExtPowerLimitingRBThreshold
+BasebandCDMACalibrationStatus
+BasebandEIDByte
+TxFrameDenialsParameters
+BEDLog
+kStop
+, Type: 
+HarqNackRatioThreshold
+BasebandSIMCardSlotsInfoSlotsState
+ServerError
+LinkQuality
+\nTDSCDMA: 
+BasebandAppStatusDescAppType
+ULConfig
+SetScanFreqBandFilter
+LAAConfigThresholdOut
+KeyBasebandTimeAsString
+KeyArtdGSM
+kKeyBasebandSecurityDomain
+antenna.drv
+KeyEARFCNLock
+kDataAggregationMaxDatagrams
+Critical
+ContinuousTxSubframeDenialsThreshold
+BasebandPUK2
+BasebandFactoryCalibrationStatus
+BasebandDumpLogsIssueCategory
+kCTAntennaSelectionPrimaryLocation
+FCMBCMAntennaSwitchingPortMapList
+TimeShareConfigCallType
+, Metric: 0x
+BasebandFWVersion
+KeyRxDiversityCDMA
+BasebandFWVersionFull
+BasebandSIMCardEIDByte
+kKeyTxPowerConfigurationLimitTimeout
+Unknown
+kDataProperty
+TriggerAntBlockingClientId
+SendTransparentMessageReq
+v8@?0
+EnteringLowPower
+Other
+BasebandSIMCardSlotsState
+SetFCMBCMAntennaMode
+kKeyTransmitIndicationEnable
+kKeyAntennaSwitchARTDConfig
+BasebandPIN2
+kCommandCPMSPowerLevelRequest
+kKeyExtDutyCycleNumeratorRxPrioReq
+WCI2TxAntMapInfoSetWCI2Idx
+KeyArtdWCDMA
+kKeyTxPowerCappingIPhoneBackoffLevel
+kKeyAntennaSwitchConfig
+kCTAntennaSelectionPort
+WLANConnectionBands
+Bandmask
+Port C
+KeyArtdTDSCDMA
+Downlink
+TransparentMessageInformationSet
+CampOnly
+BasebandSIMCardATR
+kCommandTxPowerCappingEnable
+DataPowerSave
+ClientAntBlockingInformationSet
+LowPower
+diag.drv
+kKeyE75AccessoryStatus
+kCommandHandDetectionState
+WLANConnectionState
+TransparentMessage_ByteList
+AppID::kUnknown
+ClientState::kStarted
+driver.factory
+kKeyTimeout
+LTEBandInformation
+SetGnssParamsReq
+Reset
+WLANScanID
+Port D
+kKeyBasebandProductionMode
+kKeyTransmitIndicationVersion
+No Update
+FCMBCMAntennaSwitchingRAT
+ExitingLowPower
+kKeyBasebandRootManifestStatus
+dirty
+Error_Handling
+WCI2TxAntMapEnableMmwTxInfo
+GpsBand
+BasebandSerialNumber
+BasebandAppStatusDescPinStatus
+BasebandSIMCardPresentStateAbsent
+WLANScanState
+kKeyFreqReportDownlinkFrequency
+kBasebandPropertyPowerSequenceIndex
+BasebandDeviceID
+ControllerRBThreshold
+Window
+ScanFreqBandFilter
+ClientAntBlocking
+BasebandNRBands
+DLBandInformation
+SetLaaGpioThrottleReq
+_ZN23ARICommandDriverFactory21create_default_globalEv
+KeyArtdIndexVersion
+KeyBasebandTicket
+StartTimeout
+kKeyE75AccessoryType
+kCTAntennaSelectionPrimary
+Lite
+ULBandInformation
+RBThreshold
+ONEXBandInformationSet
+AppID::kBBDiagnostic
+kKeyFreqReportNeighborFrequency
+KeyPCILock
+KeyArtdWLAN
+kCommandE75AccessoryStatusForRF
+kDataAggregationProtocol
+Service
+BasebandGSMAppIDX
+BasebandAppStatusDescAppState
+RedactOff
+Background
+WCI2TxAntMapDefaultIdx
+WCI2TxAntMapInformationSet
+ForcedSleep
+CenterFrequency
+WCI2TxPowerLimit
+, Location: 
+KeyOverride
+kDataFlowControl
+Log_Level
+\nGSM: 
+BasebandTDSCDMACalibrationStatus
+BasebandLTEStateDuration
+kKeyBasebandScrtPubK
+TriggerAntBlockingDuration
+>>>> Add to batch metric group (AppId: %d, Component: 0x%x, SubmissionId: 0x%x, TriggerId: 0x%x, ProfileId: 0x%x)
+   > Done   (AppId: %d, Component: 0x%x, SubmissionId: 0x%x, TriggerId: 0x%x, ProfileId: 0x%x, Count: %lu)
+%s checked in!
+%s  checked out!
+Loaded ARICommandDriverFactory
+   * Metric (AppId: %d, Component: 0x%x, SubmissionId: 0x%x, TriggerId: 0x%x, ProfileId: 0x%x, MetricId: 0x%x, length=%ld)
+Failed to load ARICommandDriverFactory!
+Detected unknown or unsupported radio vendor: %d
+Library loaded but failed to instantiate factory
+%s
+>>>> Start  (AppId: %d, Component: 0x%x, SubmissionId: 0x%x, TriggerId: 0x%x, ProfileId: 0x%x)
+'NullFactory' instantiated!
+No CommandDriver dylib was loaded!
+Failed to load QMICommandDriverFactory!
+Failed to load MipcCommandDriverFactory!
+Loaded MipcCommandDriverFactory
+Loaded QMICommandDriverFactory
+Fully instantiated!
+Notifying operating mode: %s
+```

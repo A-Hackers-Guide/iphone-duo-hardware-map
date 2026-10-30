@@ -1,0 +1,964 @@
+# `/System/Library/PrivateFrameworks/MobileBluetooth.framework/MobileBluetooth`
+
+iOS 27.2 dyld shared cache image. Version `2701.7.1.0.0`. **[DSC]**
+
+## Linked libraries (4)
+
+- `/usr/lib/libMobileGestalt.dylib`
+- `/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation`
+- `/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit`
+- `/usr/lib/libSystem.B.dylib`
+
+## Strings (949)
+
+```
+BTAccessoryManagerGetAccessoryInfo over XPC
+kCBMsgIdDeviceIsTemporaryPairedMsg reply result:%llx
+BTDeviceSetUserSelectedDeviceType over XPC
+BTLocalDeviceSupportsService over XPC localDevice:%llx service:%d
+BTAccessoryManagerSmartRouteMode over XPC
+Unexpected XPC error: %s
+kCBMsgIdDiscoveryAgentGetDevicesMsg reply result:%llx count:%lx
+kCBMsgIdLocalDeviceRegisterForPowerUpdatesMsg reply result:%llx
+BTAccessoryManagerSetMicMode over XPC
+kCBMsgIdAccessoryGetControlCommandMsg reply result:%llx
+BTAccessoryManagerGetFeatureCapability over XPC
+kCBMsgBTAccessoryGetSmartRouteSupport reply result:%llx
+kCBMsgIdLocalDeviceGetAdvertisingStatusMsg reply result:%llx
+Incorrect Buffer Length for c192
+kCBMsgIdAccessoryGetAccessoryInfoMsg reply result:%llx
+kCBMsgIdLocalDeviceGetDeviceNamesThatMayBeDenylistedMsg reply result:%llx
+i:%lx BTDevie:%llx
+kCBMsgIdDeviceGetMagicPairingStatusMsg reply result:%llx
+BTServiceAddCallbacksWithFilter over XPC
+kCBMsgIdLocalDeviceReadPowerProfileStatisticsMsg reply result:%llx
+_MBTAsyncAttach fwSession:%llx sessionHandle:%llx xpcConnection:%llx queue:%p
+kCBMsgIdAccessorySendRequestPeriodicallyMsg reply result:%llx
+kCBMsgIdAccessoryGetDoubleTapCapabilityMsg reply result:%llx
+kCBMsgIdAccessoryGetNonAppleHAEPairedDevicesMsg reply result:%llx count:%lx
+%s reply result:%llx
+kCBMsgIdDiscoveryAgentAddKeyMsg reply result:%llx
+BTLocalDeviceGetAddressString over XPC
+kCBMsgIdLocalDeviceEnableLeRxTestModeMsg reply result:%llx
+BTAccessoryManagerGetAACPCapabilityBits over XPC
+kCBMsgIdDeviceGetUserSelectedDeviceTypeMsg reply result:%llx
+kCBMsgIdPairingAgentStopMsg reply result:%llx
+kCBMsgIdPairingAgentClearOOBDataForDeviceMsg reply result:%llx
+kCBMsgIdDeviceSetHijackAudioRouteMsg reply result:%llx
+kCBMsgIdLocalDeviceSetModulePowerMsg reply result:%llx
+Failed to get a valid XPC connection for session %llx sessionHandle:%llx
+kCBMsgIdDeviceGetCloudPairingStatusMsg reply result:%llx
+WARNING: discoveryAgentXpcDisconnectedHandler Disconnected from bluetoothd serviceName:%s sessionName:%s
+kCBMsgIdLocalDeviceDisableLeTestModeMsg reply result:%llx
+kCBMsgIdAccessoryGetInEarStatusMsg reply result:%llx
+BTAccessoryManagerGetSettingFeatureBitMask over XPC
+BTAccessoryManagerGetFeatureProxCardStatus over XPC
+BTLocalDeviceSetModulePower over XPC
+BTLocalDeviceGetModulePower over XPC
+BTDeviceSetSyncSettings over XPC
+kCBMsgIdAccessorySetDoubleTapActionMsg reply result:%llx
+BTAccessoryManagerSetupCommand over XPC
+MBFXPC LOG Skipped xpcConnectionInvalid because fwSession for connection %p was NULL
+BTAccessoryManagerReadDeviceVersionInfo over XPC
+BTDeviceGetConnectionStatus over XPC
+BTDeviceUntag over XPC
+BTDeviceGetLowSecurityStatus over XPC
+BTLocalDeviceRemoveCallbacks over XPC
+BTLocalDeviceGetConnectable over XPC localDevice:%llx
+BTDeviceGetSyncSettings over XPC
+Failed to get a valid XPC connection session:%llx
+BTLocalDeviceGetDefault service:%s, sessionName:%s session:%llx sessionID:%llx
+BTLocalDeviceSetDiscoverable over XPC localDevice:%llx discoverable:%d
+MBFXPC LOG Skipped notifyClientsOfDisconnection because fwSession for connection %p was NULL
+could not regist these callbacks
+kCBMsgIdDeviceGetServiceSettingsMsg reply result:%llx
+BTDeviceGetComPortForServiceWithSandboxExtension over XPC
+BTAccessoryManagerGetDeviceBatteryLevel over XPC
+kCBMsgIdDeviceIsAppleAudioDeviceMsg reply result:%llx
+BTAccessoryManagerGetHeadphoneFeatureValue over XPC
+  attachSession service:%s, sessionName:%s
+BTDeviceIsAppleAudioDevice over XPC
+kCBMsgIdPairingAgentGetLocalOOBDataMsg reply result:%llx
+accessoryManagerXpcMsgHandler msg:%s sessionName:%s serviceName:%s manager:%llx cbid:%llx cb:%llx customCbs:%llx
+BTDeviceGetDeviceId over XPC
+kCBMsgIdDeviceSetHIDPropertiesMsg reply result:%llx
+BTDeviceSetACLHighPriority over XPC
+kCBMsgIdLocalDeviceUnregisterForPowerProfileStatisticsMsg reply result:%llx
+Failed to get a valid XPC connection agent:%llx
+kCBMsgIdAccessorySetFeatureProxCardStatusMsg reply result:%llx
+Invalid address string argument
+BTLocalDeviceReadTransportSwitchStatistics over XPC
+Incorrect Buffer Length for r192
+kCBMsgIdDeviceGetNameMsg reply result:%llx
+kCBMsgIdDeviceFromIdentifierMsg reply result:%llx
+could not register these callbacks
+kCBMsgIdDeviceGetVirtualTypeMsg reply result:%llx
+kCBMsgIdLocalDeviceGetSpatialPlatformSupportMsg reply result:%llx
+BTLocalDeviceSetCallScreening over XPC
+_MBTGetAsyncAttachQueue session:%p queue:%p returning client queue
+Failed to get a valid XPC connection localDevice:%llx
+kCBMsgIdLocalDeviceStopHCITracesMsg reply result:%llx
+Failed to get a valid XPC connection for BTAccessoryManager:%llx
+kCBMsgIdAccessoryGetTimeSyncIdMsg reply result:%llx
+BTDeviceServiceRemoveCallbacks over XPC
+kCBMsgIdLocalDeviceAddCallbacksMsg reply result:%llx
+kCBMsgIdPairingAgentAcceptSSPMsg reply result:%llx
+BTAccessoryManagerGetSpatialAudioConfig reply result:%llx
+BTAccessoryManagerIsGenuineAirPods reply result:%llx genuine:%llu
+Failed to get a valid XPC connection device:%llx
+Found %zu LE devices (of %zu total)
+_MBTAsyncAttach previous session found:%llx, disconnecting %s and retrying. xpcConnection is NULL:%d
+kCBMsgIdAccessoryGetJitterBufferLevelMsg reply result:%llx
+BTAccessoryManagerSendControlCommand over XPC
+BTPairingAgentAcceptSSP over XPC
+MBFXPC LOG xpcConnection invalid for XPC connection:%llx
+kCBMsgIdAccessoryUnplugDeviceMsg reply result:%llx
+BTAccessoryManagerGenerateLinkKey over XPC
+BTAccessoryManagerIsGenuineAirPods over XPC
+sendSyncMsg service:%s, sessionName:%s msgId:%s fwSessionPtr:%llx
+sendMessageWithReplySync: xpcConnection is NULL for sessionName:%s msgId:%s — connection already torn down
+kCBMsgIdDeviceGetAdvertisedValueForKeyMsg reply result:%llx
+pairingAgentXpcMsgHandler msg:%s sessionName:%s serviceName:%s agentID:%llx cbid:%llx cbs:%llx
+MBFXPC LOG Unexpected XPC Invalidation
+BTAccessoryManagerSendSetFeatureFlag over XPC
+BTDeviceIsGenuineAirPods over XPC
+kCBMsgBTAccessorySmartRouteMode reply result:%llx
+BTAccessoryManagerSetDeviceSoundProfileAllowed reply result:%llx
+kCBMsgIdDeviceGetGroupsMsg reply result:%llx
+BTDeviceGetServiceSettings over XPC
+kCBMsgIdDeviceGetHIDDeviceBehaviorMsg reply result:%llx
+BTDiscoveryAgentStartScanForAdvertizedData over XPC
+discoveryAgentXpcMsgHandler %s %s sessionName:%s serviceName:%s agentID:%llx cbid:%llx cbs:%llx
+kCBMsgIdLocalDeviceGetPairingStatusMsg reply result:%llx
+BTAccessoryManagerUpdateConnPriorityList over XPC
+kCBMsgIdLocalDeviceMaskCallbacksMsg reply result:%llx
+---------- MBFXPC END SESSION :%s XPC:%p---------- 
+BTDevicePhysicalLinkDisconnect over XPC
+kCBMsgIdLocalDeviceEnableLeTxTestModeMsg reply result:%llx
+BTLocalDeviceGetConnectedLEDevices over XPC
+BTAccessoryManagerSetDoubleTapAction over XPC
+BTDeviceGetPairingStatus over XPC
+kCBMsgIdLocalDeviceGetScanningMsg reply result:%llx
+BTAccessoryManagerGetDoubleTapAction over XPC
+BTAccessoryManagerGetHeadphoneFeatureValue reply result:%llx value:%llu
+BTDeviceSetUserName over XPC
+BTPairingAgentCreate session over XPC
+kCBMsgIdAccessoryRegisterCustomMessageClientMsg reply result:%llx
+MBFXPC LOG Skipped handleConnectionEvent because MBXpcConnection for connection %p was NULL
+BTDeviceGetProductName over XPC
+Invalid tag string argument
+BTDeviceGetHIDDeviceBehavior over XPC
+BTDeviceIsCentral over XPC
+kCBMsgIdLocalDeviceAdvertiseDataMsg reply result:%llx
+kCBMsgIdLocalDeviceDumpExposureNotificationDatabaseMsg reply result:%llx
+BTAccessoryManagerGetAnnounceMessagesSupport over XPC
+BTDeviceConnect over XPC
+BTLocalDeviceEnableLeTxTestMode over XPC localDevice:%llx testFrequency:%d payloadSize:%d payload:%d
+BTAccessoryManagerSetDoubleTapActionEx reply result:%llx
+BTAccessoryManagerGetNonAppleHAEPairedDevices over XPC
+kCBMsgIdDeviceTagMsg reply result:%llx
+kCBMsgIdLocalDeviceGetConnectableMsg reply result:%llx
+BTLocalDeviceGetDenylistEnabled over XPC
+kCBMsgIdPairingAgentStartMsg reply result:%llx
+kCBMsgIdAccessorySensorStreamTimeSyncEnableMsg reply result:%llx
+kCBMsgIdAccessoryGetSpatialAudioAllowed reply result:%llx
+BTAccessoryManagerSetHeadphoneFeatureValue reply result:%llx
+kCBMsgIdDeviceUntagMsg reply result:%llx
+BTLocalDeviceUnregisterForPowerProfileStatistics over XPC
+kCBMsgIdLocalDeviceReadAFHMapMsg reply result:%llx
+kCBMsgIdPairingAgentCancelPairingMsg reply result:%llx
+kCBMsgIdAccessorySendSetFeatureFlagMsg reply result:%llx
+BTDeviceSetVirtualType over XPC
+kCBMsgIdLocalDeviceGetConnectingDevicesMsg reply result:%llx count:%lx
+BTLocalDeviceDisableLeTestMode over XPC localDevice:%llx
+kCBMsgIdPairingAgentDeletePairedDeviceMsg reply result:%llx
+BTAccessoryManagerGetDeviceState over XPC
+BTAccessoryManagerGetSpatialAudioActive over XPC
+BTDeviceSetHIDProperties over XPC
+kCBMsgIdPairingAgentSetOOBDataForDeviceMsg reply result:%llx
+pairingAgentXpcMsgHandler %s %s sessionName:%s serviceName:%s agentID:%llx cbid:%llx cbs:%llx
+kCBMsgIdAccessorySetSecondSettingMsg reply result:%llx
+BTAccessoryManagerSendRequestPeriodically over XPC
+BTAccessoryManagerGetCaseSerialNumbersForAppleProductId over XPC
+  handleReset service:%s, sessionName:%s
+BTDeviceSetGroup over XPC
+kCBMsgIdDeviceGetSupportedServicesMsg reply result:%llx
+BTLocalDevicePowerReset over XPC localDevice:%llx
+BTPairingAgentCancelPairing over XPC
+BTAccessoryManagerAddCallbacks over XPC
+kCBMsgIdAccessorySimulateAACPMsg reply result:%llx
+kCBMsgIdAccessorySetupCommandMsg reply result:%llx
+BTAccessoryManagerSetFeatureProxCardStatus over XPC
+BTDeviceDisconnect over XPC
+kCBMsgIdDeviceSetServiceSettingsMsg reply result:%llx
+BTDeviceMatchesAdvertisedKey over XPC
+BTLocalDeviceReadEnhancedPowerProfileStatistics over XPC
+kCBMsgIdDeviceAddressToStringMsg reply result:%llx
+BTDeviceGetDeviceClass over XPC
+kCBMsgIdDeviceServiceAddCallbacksMsg reply result:%llx
+BTDiscoveryAgentGetDevices over XPC
+BTPairingAgentSetIOCapability over XPC
+MBFXPC LOG disconnect brought to you by xpcConnectionDidReset %p
+BTAccessoryManagerGetTimeSyncId over XPC
+BTAccessoryManagerGetMicMode over XPC
+BTDeviceGetGroups over XPC
+kCBMsgIdDeviceConnectServicesMsg reply result:%llx
+kCBMsgIdAccessorySendCustomMessageMsg reply result:%llx
+kCBMsgIdLocalDeviceReadDetailedPowerProfileStatisticsMsg reply result:%llx
+BTAccessoryManagerGetInEarStatus over XPC
+kCBMsgIdLocalDeviceGetNameMsg reply result:%llx
+BTLocalDeviceGetPairedDevices over XPC
+  handleInvalid service:%s, sessionName:%s
+kCBMsgIdPairingAgentSetIOCapabilityMsg reply result:%llx
+kCBMsgIdLocalDeviceSetDenylistEnabledMsg reply result:%llx
+kCBMsgIdAccessoryGetAACPCapabilityBitsMsg reply result:%llx
+kCBMsgIdAccessoryRemoveCallbacksMsg reply result:%llx
+BTAccessoryManagerIsAccessory over XPC
+kCBMsgIdDeviceSetGroupMsg reply result:%llx
+kCBMsgIdLocalDeviceRemoveCallbacksMsg reply result:%llx
+BTLocalDeviceGetAdvertisingStatus over XPC localDevice:%llx
+MBFXPC LOG BTSessionDetachWithQueue
+BTLocalDeviceGetScanning over XPC localDevice:%llx
+kCBMsgIdAccessoryGetDoubleTapActionExMsg reply result:%llx
+sendMsg service:%s, sessionName:%s msgId:%s fwSessionPtr:%llx
+BTDeviceTag over XPC
+kCBMsgIdAccessoryGetDevicesMsg reply result:%llx count:%lx
+kCBMsgIdAccessoryGetFeatureCapabilityMsg reply result:%llx
+accessoryManagerXpcMsgHandler %s %s sessionName:%s serviceName:%s manager:%llx cbid:%llx cb:%llx customCbs:%llx
+kCBMsgIdDeviceGetPairingStatusMsg reply result:%llx
+BTDeviceIsWirelessSplitterSupported over XPC
+BTDeviceGetConnectedServices over XPC
+BTLocalDevicePowerReset reply result:%llx
+BTDeviceConfigureLinkKey over XPC
+BTAccessoryManagerGetCaseSerialNumbersForAppleProductIds over XPC
+BTAccessoryManagerSendPMEConfigMessage over XPC
+BTAccessoryManagerGetPrimaryBudSide over XPC
+kCBMsgIdDeviceFromAddressMsg reply result:%llx
+kCBMsgIdDeviceGetComPortForServiceMsg reply result:%llx
+deviceServiceXpcMsgHandler msg:%s sessionName:%s serviceName:%s session:%llx cbid:%llx cb:%llx
+BTLocalDeviceGetDefault over XPC
+kCBMsgIdLocalDeviceGetAddressStringMsg reply result:%llx
+BTLocalDeviceAdvertiseData over XPC localDevice:%llx
+kCBMsgIdAccessoryGenerateLinkKeyMsg reply result:%llx
+BTAccessoryManagerRegisterCustomMessageClient over XPC
+BTAccessoryManagerSpatialAudioMode over XPC
+BTAccessoryManagerSpatialAudioAllowed reply result:%llx
+kCBMsgBTAccessoryGetSpatialAudioPlatformSupportMsg reply result:%llx
+BTAccessoryManagerGetGyroInformation over XPC
+MBFXPC LOG Failed to send sendMessageWithReplySync because of XPC ERROR: %s
+BTLocalDeviceReadPowerConsumption over XPC
+BTServiceAddCallbacksWithFilter session :%llx, sessionHandle:%llx, cbid:%llx
+kCBMsgIdDeviceMatchesAdvertisedKeyMsg reply result:%llx
+BTDeviceSetACLHighPriority reply result:%llx
+Incorrect Buffer Length for c256
+_MBTDispachAsyncAttachCompletionBlock session %llx queue:%p
+BTAccessoryManagerRemoveCallbacks over XPC
+BTAccessoryManagerGetControlCommand over XPC
+key cannot be null
+kCBMsgIdLocalDeviceGetDefaultMsg reply deviceID:%llx result:%llx
+BTAccessoryManagerSetDoubleTapActionEx over XPC
+kCBMsgIdDeviceSetVirtualTypeMsg reply result:%llx
+BTAccessoryManagerSendAdaptiveVolumeMessage over XPC
+BTAccessoryManagerGetSmartRouteSupport over XPC
+MBFXPC LOG calling handleReset because %p %s
+BTDeviceIsProController over XPC
+BTDeviceIsTemporaryPaired over XPC
+MBFXPC LOG Skipped xpcConnectionDidReset because fwSession for connection %p was NULL
+kCBMsgIdDeviceIsProControllerMsg reply result:%llx
+kCBMsgIdLocalDeviceReadEnhancedPowerStatsPerCoreMsg reply result:%llx
+kCBMsgIdLocalDeviceStartHCITracesMsg reply result:%llx
+BTPairingAgentDeletePairedDevice over XPC
+Delaying BTSessionAttach by %lldmS. Connection attempt:%llu
+kCBMsgIdPairingAgentSetPincodeMsg reply result:%llx
+BTPairingAgentClearOOBDataForDevice over XPC
+BTAccessoryManagerGetStereoHFPSupport reply result:%llx
+createXpcConnection %s %s queue:%p
+BTDeviceAddressFromString over XPC
+BTLocalDeviceGetConnectionStatus localDevice:%llx
+kCBMsgIdAccessorySendControlCommandMsg reply result:%llx
+kCBMsgIdAccessoryGetDoubleTapActionMsg reply result:%llx
+kCBMsgIdAccessoryRegisterDeviceMsg reply result:%llx
+BTAccessoryManagerSetInEarDetectionEnable over XPC
+BTAccessoryManagerGetDeviceDiagnostics over XPC
+MBFXPC LOG calling handleInvalid because XPC:%p %s
+BTDeviceConnectServices over XPC
+BTDeviceSetUserSelectedDeviceTypeMsg reply result:%llx
+BTAccessoryManagerGetAACPCapabilityInteger reply result:%llx, value:%llu, index: %u
+accessoryManagerXpcMsgHandler msg:%s, clientType:%X, device:%llX, dataLen:%zu sessionName:%s serviceName:%s manager:%llx cbid:%llx cbs:%p customCbs:%p 
+handleConnectionEvent service:%s, sessionName:%s
+kCBMsgIdLocalDeviceSetDiscoverableMsg reply result:%llx
+BTStopHCITraces over XPC
+Incorrect Buffer Length for r256
+BTAccessoryManagerUnplugDevice over XPC
+BTAccessoryManagerSendCustomMessage over XPC
+kCBMsgIdAccessoryGetAnnounceCallsSupportMsg reply result:%llx
+Incorrect Address Size received over XPC
+BTDiscoveryAgentDestroy reply result:%llx
+kCBMsgIdDiscoveryAgentStartScanMsg reply result:%llx
+kCBMsgIdPairingAgentDestroyMsg reply result:%llx
+MBFXPC LOG Failed to attach to the Bluetooth daemon as the XPC connection is invalid
+BTAccessoryManagerDeregisterCustomMessageClient over XPC
+kCBMsgIdAccessoryGetDeviceDiagnosticsMsg reply result:%llx
+MBFXPC LOG disconnect service:%s, sessionName:%s fwSession:%llx
+kCBMsgIdDeviceGetConnectedServicesMsg reply result:%llx
+kCBMsgIdDeviceIsGenuineAirPodsMsg reply result:%llx genuine:%u
+MBFXPC LOG Signalling BT_SESSION_ATTACHED SUCCESS
+MBFXPC LOG Signalling BT_SESSION_ATTACHED BT_ERROR XPC:%p
+_localBTAccessoryManagerAddCallbacks[%d] manager:%p cbid:%llx userData:%p 
+BTAccessoryManagerRemoteTimeSyncEnable over XPC
+BTAccessoryManagerGetWirelessSharingSpatial over XPC
+kCBMsgIdDeviceGetComPortForServiceWithSandboxExtensionMsg reply result:%llx
+BTLocalDeviceGetAirplaneModeStatus over XPC localDevice:%llx
+kCBMsgIdLocalDeviceGetDiscoverableMsg reply result:%llx
+kCBMsgIdLocalDeviceIsSharingEnabledMsg reply result:%llx
+kCBMsgBTAccessorySetDeviceStateOnPeerSrcMsg reply result:%llx
+kCBMsgIdAccessoryGetJitterBufferLevelMsg over XPC
+MBFXPC releaseMBXpcConnection finalizer running for session:%s on queue:%s
+kCBMsgIdDeviceAddressFromStringMsg reply result:%llx address:%x%x%x%x%x%x
+BTDiscoveryAgentStopScan over XPC
+BTDiscoveryAgentRemoveKey over XPC
+BTAccessoryManagerGetAnnounceCallsSupport over XPC
+Failed to get a valid XPC connection for device:%llx
+BTLocalDeviceRegisterForPowerProfileStatistics over XPC
+kCBMsgIdLocalDeviceSetCallScreeningMsg reply result:%llx
+_MBTDispachAsyncAttachCompletionBlock session:%p queue:%p calling on current queue
+BTAccessoryManagerGetDefault service:%s, sessionName:%s session:%llx sessionID:%llx
+BTAccessoryManagerGetDoubleTapActionEx over XPC
+BTDeviceAddressToString over XPC
+kCBMsgIdDeviceGetDeviceTypeMsg reply result:%llx
+BTLocalDeviceEnableLeTxTestMode over XPC localDevice:%llx testFrequency:%d
+kCBMsgIdLocalDeviceSetDelayedWakeMsg reply result:%llx
+MBFXPC LOG releasing Last XPC reference for :%s, sessionName:%s XPC:%p
+BTDeviceGetDefaultName over XPC
+kCBMsgIdDeviceSupportsHSMsg reply result:%llx
+kCBMsgIdDevicePhysicalLinkDisconnectMsg reply result:%llx
+BTDiscoveryAgentDestroy over XPC
+BTLocalDeviceGetDUTModeEnabled over XPC localDevice:%llx
+Failed to get a valid XPC connection localDeviceHandle:%llx
+kCBMsgIdAccessoryAddCallbacksMsg reply result:%llx
+kCBMsgIdAccessoryGetDeviceStateMsg reply result:%llx
+BTAccessoryManagerGetCallManagementConfig over XPC
+BTAccessoryManagerGetDeviceSoundProfileAllowed over XPC
+BTLocalDeviceDumpExposureNotificationDatabase over XPC
+BTDeviceGetDeviceType over XPC
+kCBMsgIdDiscoveryAgentStartScanForAdvertizedDataMsg reply result:%llx
+BTLocalDeviceShowPowerPrompt over XPC
+BTAccessoryManagerGetDevices over XPC
+BTDeviceGetAddressString over XPC
+kCBMsgIdDeviceDisconnectServicesMsg reply result:%llx
+keySize cannot be 0
+BTPairingAgentSetOOBDataForDevice over XPC
+BTAccessoryManagerSpatialAudioAllowed over XPC
+BTLocalDeviceGetPairingStatus over XPC localDevice:%llx
+localDeviceXpcMsgHandler msg:%s sessionName:%s serviceName:%s localDeviceId:%llx cbid:%llx cbs:%llx linkCBs:%llx
+BTServiceAddCallbacks session :%llx
+BTDiscoveryAgentCreate session :%llx
+kCBMsgIdLocalDeviceSupportsServiceMsg reply result:%llx
+kCBMsgIdLocalDeviceReadPowerConsumptionMsg reply result:%llx
+kCBMsgIdPairingAgentCreateMsg reply result:%llx
+kCBMsgIdDeviceGetDefaultNameMsg reply result:%llx
+kCBMsgIdAccessoryPlugInDeviceMsg reply result:%llx
+kCBMsgIdAccessorySetIsHiddenMsg reply result:%llx
+kCBMsgIdAccessoryGetSensorStreamingFrequencyMsg reply result:%llx
+kCBMsgIdDiscoveryAgentStopScanMsg reply result:%llx
+BTLocalDeviceIsSharingEnabled over XPC
+BTAccessoryManagerSetLinkKeyEx over XPC
+BTAccessoryManagerCancelRequestPeriodically over XPC
+BTDeviceGetSupportedServices over XPC
+kCBMsgIdLocalDeviceGetDUTModeEnabledMsg reply result:%llx
+kCBMsgIdAccessoryDeregisterCustomMessageClientMsg reply result:%llx
+BTDeviceGetComPortForService over XPC
+kCBMsgIdDeviceIsCentralMsg reply result:%llx
+kCBMsgIdLocalDeviceGetAirplaneModeStatusMsg reply result:%llx
+BTLocalDeviceGetConnectionStatus reply result:%llx
+BTLocalDeviceGetSharingAddresses over XPC
+kCBMsgIdAccessoryUpdateConnPriorityListMsg reply result:%llx
+kCBMsgIdAccessoryIsAccessoryMsg reply result:%llx
+BTAccessoryManagerGetStereoHFPSupport over XPC
+BTAccessoryManagerGetSensorStreamingFrequency over XPC
+kCBMsgIdDeviceGetDeviceIdMsg reply result:%llx
+Failed to get a valid XPC connection manager:%llx
+kCBMsgIdDeviceGetDeviceClassMsg reply result:%llx
+BTDeviceGetCloudPairingStatus over XPC
+BTDeviceGetUserSelectedDeviceType over XPC
+discoveryAgentXpcMsgHandler msg:%s sessionName:%s serviceName:%s agentID:%llx cbid:%llx cbs:%llx
+BTLocalDeviceGetName over XPC
+BTLocalDeviceReadPowerProfileStatistics over XPC
+BTAccessoryManagerGetCaseSerialNumbersForAppleProductId reply result:%llx
+kCBMsgIdLocalDeviceShowPowerPromptMsg reply result:%llx
+BTAccessoryManagerGetCaseSerialNumbersForAppleProductIds reply result:%llx
+BTDeviceFromIdentifier over XPC
+kCBMsgIdDeviceLinkQualityGetDataMsg reply result:%llx
+kCBMsgIdDeviceHasTagMsg reply result:%llx, _hasTag %d
+kCBMsgIdLocalDeviceGetModulePowerMsg reply with power state: %llx, result: %llx
+BTLocalDeviceReadDetailedPowerProfileStatistics over XPC
+Failed to get a valid XPC connection sessionhandle:%llx
+  attachSession reply session:%llx result:%llx
+kCBMsgIdDeviceSetUserNameMsg reply result:%llx
+accessoryManagerXpcMsgHandler msg:%s, event:%llu, device:%llu, accessoryState:%llu
+BTLocalDeviceSetAFHMap over XPC
+BTLocalDeviceLinkQualityGetData over XPC
+MBFXPC LOG BTSessionDetachWithQueue failed due to invalid Session over XPC
+BTAccessoryManagerSensorStreamTimeSyncEnable over XPC
+kCBMsgIdAccessoryGetDeviceBatteryStatusMsg reply result:%llx
+WARNING: accessoryManagerXpcDisconnectedHandler Disconnected from bluetoothd serviceName:%s sessionName:%s
+BTDeviceConnectServicesWithParameters over XPC
+deviceServiceXpcMsgHandler %s %s sessionName:%s serviceName:%s session:%llx cbid:%llx cb:%llx
+_MBTSignalSessionEvent Session : %llx Event:%d
+kCBMsgIdAccessoryGetDefaultMsg reply accessoryManagerID:%llx result:%llx
+kCBMsgIdAccessoryGetDeviceColorMsg reply result:%llx
+BTDeviceDisconnectServices over XPC
+BTLocalDeviceAddCallbacks over XPC
+kCBMsgIdLocalDeviceReadTransportSwitchStatisticsMsg reply result:%llx
+MBFXPC LOG Signalling BT_SESSION_DETACHED SUCCESS XPC:%p
+BTAccessoryManagerGetInEarDetectionEnable over XPC
+BTLocalDeviceSetDenylistEnabled over XPC
+BTAccessoryManagerGetDeviceBatteryStatus over XPC
+BTAccessoryManagerSetLinkKeyEx invalid argument
+kCBMsgIdAccessoryCancelRequestPeriodicallyMsg reply result:%llx
+BTDeviceGetName over XPC
+WARNING: BTDeviceIsMaster is DEPRECATED. Please use BTDeviceIsCentral instead.
+kCBMsgIdAccessoryGetSettingFeatureBitMaskMsg reply result:%llx
+BTLocalDeviceGetDeviceNamesThatMayBeDenylisted over XPC
+BTPairingAgentStart over XPC
+BTDeviceSetHijackAudioRoute over XPC
+BTPairingAgentSetPincode over XPC
+Invalid message received for session %s
+BTAccessoryManagerSendRelayMsg over XPC
+kCBMsgIdAccessorySetFirstSettingMsg reply result:%llx
+kCBMsgBTAccessoryGetSmartRouteMode reply result:%llx
+MBFXPC LOG Device is not BT Capable.
+kCBMsgIdDeviceSetSyncSettingsMsg reply result:%llx
+kCBMsgIdDeviceGetConnectionStatusMsg reply result:%llx
+kCBMsgIdDeviceConfigureLinkKeyMsg reply result:%llx
+BTPairingAgentStop over XPC
+kCBMsgIdAccessoryGetSecondSettingMsg reply result:%llx
+BTAccessoryManagerSetDeviceStateOnPeerSrc over XPC
+BTDeviceFromAddress over XPC
+BTServiceAddCallbacksWithFilter session :%llx
+kCBMsgIdLocalDeviceSetAFHMapMsg reply result:%llx
+BTPairingAgentGetLocalOOBData over XPC
+BTAccessoryManagerGetSpatialAudioConfig over XPC
+MBFXPC LOG ---------- MBFXPC BEGIN SESSION :%s XPC:%p ---------- 
+BTDeviceSupportsHS over XPC
+kCBMsgIdDeviceIsTemporaryPairedNotInContactsMsg reply result:%llx
+BTLocalDeviceMaskCallbacks over XPC
+BTLocalDeviceReadEnhancedPowerStatsPerCore over XPC
+_MBTGetAsyncAttachQueue session:%p queue:%p returning main queue
+BTDeviceHasTag over XPC
+BTPairingAgentDestroy over XPC
+MBFXPC LOG  xpcConnection Reset for XPC connection:%llx
+kCBMsgIdAccessorySetRemoteTimeSyncMsg reply result:%llx
+BTDeviceSetServiceSettings over XPC
+kCBMsgIdDeviceGetLowSecurityStatusMsg reply result:%llx
+BTDiscoveryAgentAddKey over XPC
+BTLocalDeviceSetDelayedWake over XPC
+_MBTGetAsyncAttachQueue session:%p queue:%p
+BTDeviceGetAdvertisedValueForKey over XPC
+WARNING: deviceServiceXpcDisconnectedHandler Disconnected from bluetoothd serviceName:%s sessionName:%s
+BTLocalDeviceGetConnectingDevices over XPC
+BTAccessoryManagerRegisterDevice over XPC
+BTAccessoryManagerGetSpatialAudioAllowed over XPC
+BTLocalDeviceEnableDUTMode over XPC localDevice:%llx
+BTAccessoryManagerGetSmartRouteMode over XPC
+kCBMsgIdLocalDeviceGetPairedDevicesMsg reply result:%llx count:%lx
+kCBMsgIdLocalDeviceUnregisterForPowerUpdatesMsg reply result:%llx
+kCBMsgIdLocalDeviceGetSharingAddressesMsg reply result:%llx
+WARNING: localDeviceXpcDisconnectedHandler Disconnected from bluetoothd serviceName:%s sessionName:%s
+_MBTDispachAsyncAttachCompletionBlock session:%p queue:%p dispatching on client queue
+BTAccessoryManagerSetIsHidden over XPC
+kCBMsgIdDeviceGetSyncSettingsMsg reply result:%llx
+kCBMsgIdAccessoryGetDeviceBatteryLevelMsg reply result:%llx
+BTDiscoveryAgentCreate reply result:%llx
+BTLocalDeviceUnregisterForPowerUpdates over XPC
+BTLocalDeviceReadPowerConsumption device:%llx
+kCBMsgIdLocalDeviceGetDenylistEnabledMsg reply result:%llx
+BTAccessoryManagerSimulateAACP over XPC
+BTAccessoryManagerGetDeviceSoundProfileSupport over XPC
+BTAccessoryManagerSetDeviceSoundProfileAllowed over XPC
+Invalid product ID parameters. productID = %p, numProductIds = %u
+BTLocalDeviceGetDiscoverable over XPC localDevice:%llx
+localDeviceXpcMsgHandler %s %s sessionName:%s serviceName:%s localDeviceId:%llx cbid:%llx cbs:%llx linkCBs:%llx
+Unexpected XPC type: %@
+Failed to get a valid XPC connection sessionHandle:%llx
+kCBMsgIdDeviceServiceRemoveCallbacksMsg reply result:%llx
+kCBMsgIdDeviceDisconnectMsg reply result:%llx
+BTLocalDeviceReadAFHMap over XPC
+BTAccessoryManagerGetSpatialAudioActive reply result:%llx
+BTAccessoryManagerGetSpatialAudioPlatformSupport over XPC
+Invalid argument
+BTLocalDeviceSetConnectable over XPC localDevice:%llx connectable:%d
+kCBMsgIdLocalDeviceReadEnhancedPowerProfileStatisticsMsg reply result:%llx
+WARNING: pairingAgentXpcDisconnectedHandler Disconnected from bluetoothd serviceName:%s sessionName:%s
+BTAccessoryManagerGetDoubleTapCapability over XPC
+BTStartHCITraces over XPC
+_MBTAsyncAttach with XPC for session %s
+BTAccessoryManagerGetDeviceSoundProfileAllowed reply result:%llx
+kCBMsgIdDeviceConnectServicesWithParametersMsg reply result:%llx
+BTLocalDeviceRegisterForPowerUpdates over XPC
+kCBMsgIdLocalDeviceRegisterForPowerProfileStatisticsMsg reply result:%llx
+accessoryManagerXpcMsgHandler msg:%s sessionName:%s serviceName:%s manager:%llx cbid:%llx cb:%llx customCbs:%llx cb->accevent:%llx
+  handleMsg service:%s, sessionName:%s, msgId:%s
+kCBMsgIdLocalDeviceSetConnectableMsg reply result:%llx
+kCBMsgIdDeviceGetAddressStringMsg reply result:%llx
+kCBMsgIdAccessorySendRelayMsgMsg reply result:%llx
+_localBTAccessoryManagerAddCustomCallbacks[%d] manager:%p cbid:%llx userData:%p clientType:0x%X
+BTAccessoryManagerPlugInDevice over XPC
+kCBMsgIdDeviceConnectMsg reply result:%llx
+kCBMsgIdDeviceIsWirelessSplitterSupportedMsg reply result:%llx
+MBFXPC LOG Signalling BT_SESSION_TERMINATED BT_SUCCESS XPC:%p
+kCBMsgIdDeviceGetProductNameMsg reply result:%llx
+BTAccessoryManagerGetDeviceColor over XPC
+BTLocalDeviceGetConnectedDevices over XPC
+BTLocalDeviceRemoveData over XPC localDevice:%llx
+kCBMsgIdLocalDeviceRemoveDataMsg reply result:%llx
+kCBMsgIdAccessoryReadDeviceVersionInfoMsg reply result:%llx
+Failed to get a valid XPC connection for sessionHandle:%llx
+BTDeviceGetVirtualType over XPC
+kCBMsgIdAccessorySetLinkKeyExMsg reply result:%llx
+BTAccessoryManagerGetWirelessSharingSpatial reply result:%llx spatialSupportedWS:%llu
+BTDeviceIsTemporaryPairedNotInContacts over XPC
+BTDiscoveryAgentStartScan over XPC
+Already registered these callbacks
+BTAccessoryManagerRegisterDevice invalid argument
+kCBMsgIdAccessoryGetFirstSettingMsg reply result:%llx
+BTAccessoryManagerGetAACPCapabilityInteger over XPC
+kCBMsgIdLocalDeviceGetConnectedDevicesMsg reply result:%llx count:%lx
+kCBMsgIdAccessorySpatialAudioModeMsg
+v8@?0
+kCBMsgIdDiscoveryAgentStartScanForAdvertizedDataMsg
+kCBMsgArgDeviceArray
+kCBMsgIdAccessoryGetFeatureCapabilityMsg
+kCBMsgIdAccessoryGetSecondSettingMsg
+kCBMsgArgSubType
+kCBMsgArgDataLength
+kCBMsgIdLocalDeviceGetAddressStringMsg
+kCBMsgIdLocalDeviceEnableDUTModeMsg
+kCBMsgArgStatsReceiving
+kCBMsgIdAccessoryGetDefaultMsg
+kCBMsgIdAccessorySetLinkKeyExMsg
+kCBMsgArgDoubleTapAction
+kCBMsgIdAccessorySetSecondSettingMsg
+kCBMsgArgRelayMsgType
+kCBMsgIdAccessoryGetDeviceSoundProfileSupportMsg
+bluetooth
+kCBMsgArgHIDType
+kCBMsgIdAccessorySensorStreamTimeSyncEnableMsg
+kCBMsgArgClassOfDevice
+kCBMsgIdAccessoryGetSettingFeatureBitMaskMsg
+kCBMsgArgAACPCapabilityInteger
+kCBMsgIdAccessoryGetSensorStreamingFrequencyMsg
+kCBMsgArgUUID
+kCBMsgIdDeviceSetServiceSettingsMsg
+kCBMsgArgVendorIdSource
+kCBMsgIdAccessoryUnplugDeviceMsg
+kCBMsgIdAccessoryGetAnnounceMessagesSupportMsg
+kCBMsgArgSerialNumberBuffSize
+kCBMsgIdAccessorySpatialAudioAllowedMsg
+kCBMsgIdAccessoryCustomMessage
+kCBMsgIdDeviceConnectMsg
+kCBMsgIdDeviceGetServiceSettingsMsg
+kCBMsgIdDiscoveryAgentStopScanMsg
+kCBMsgIdAccessoryUpdateConnPriorityListMsg
+kCBMsgIdAccessoryGetSpatialAudioAllowedMsg
+kCBMsgArgFeatureProxCardStatusMessage
+kCBMsgIdAccessorySendSetFeatureFlagMsg
+kCBMsgIdDeviceSetGroupMsg
+kCBMsgIdLocalDeviceSetModulePowerMsg
+kCBMsgArgSpatialPlatformSupport
+kCBMsgIdLocalDevicePowerResetMsg
+kCBMsgIdAccessoryGetDevicesMsg
+kCBMsgArgBatteryIsChargingLeft
+kCBMsgArgFeature
+kCBMsgArgBufferSize
+kCBMsgIdAccessoryGetStereoHFPSupportMsg
+kCBMsgIdAccessoryCommandStatus
+kCBMsgIdDeviceIsWirelessSplitterSupportedMsg
+kCBMsgArgDiscoveryMode
+kCBMsgArgBatteryPercentRight
+kCBMsgIdDeviceIsTemporaryPairedMsg
+kCBMsgIdLocalDeviceGetScanningMsg
+kCBMsgArgDutModeEnabled
+kCBMsgIdLocalDeviceRegisterForPowerProfileStatisticsMsg
+kCBMsgArgPath
+kCBMsgArgDelay
+kCBMsgArgRetX
+kCBMsgIdAccessorySimulateAACPMsg
+kCBMsgIdAccessoryGetFeatureProxCardStatusMsg
+kCBMsgArgPrimarySide
+kCBMsgIdSessionAttach
+com.apple.server.bluetooth.general.xpc
+kCBMsgArgDiscoverable
+kCBMsgIdLocalDeviceEnableLeTxTestModeMsg
+kCBMsgIdLocalDeviceShowPowerPromptMsg
+kCBMsgArgInEarStatusSecondary
+kCBMsgArgAddressString
+kCBMsgArgWSSpatial
+kCBMsgIdAccessoryGetSmartRouteModeMsg
+kCBMsgArgLowSecurityStatus
+kCBMsgIdLocalDeviceReadPowerProfileStatisticsMsg
+kCBMsgIdLocalDeviceGetSharingAddressesMsg
+kCBMsgIdLocalDeviceAFHMapChangedEvent
+kCBMsgArgAccessoryManagerID
+kCBMsgArgBatteryIsChargingRight
+kCBMsgIdLocalDeviceReadEnhancedPowerStatsPerCoreMsg
+kCBMsgArgUUIDString
+kCBMsgIdPairingAgentAcceptSSPMsg
+kCBMsgIdPairingAgentSetIOCapabilityMsg
+kCBMsgArgR256
+kCBMsgArgModelNumberBuffSize
+kCBMsgIdAccessoryGetTimeSyncIdMsg
+kCBMsgArgAnnounceMsgSupport
+kCBMsgIdDeviceSetHIDPropertiesMsg
+kCBMsgIdServiceEvent
+kCBMsgIdLocalDeviceUnregisterForPowerProfileStatisticsMsg
+kCBMsgArgNoise
+kCBMsgIdPairingAgentStartMsg
+kCBMsgIdAccessoryGetDoubleTapActionExMsg
+kCBMsgIdAccessoryGetNonAppleHAEPairedDevicesMsg
+unknown
+kCBMsgIdDeviceGetComPortForServiceWithSandboxExtensionMsg
+kCBMsgArgStatsDurationSleep
+kCBMsgArgStatsiPATxLE
+kCBMsgIdPairingAgentSetPincodeMsg
+kCBMsgIdPairingAgentClearOOBDataForDeviceMsg
+kCbMsgArgDeviceArrayMaxSize
+kCBMsgIdAccessorySendRelayMsgMsg
+kCBMsgIdDeviceFromAddressMsg
+kCBMSgArgHIDDeviceBehavior
+kCBMsgIdAccessorySetFeatureProxCardStatusMsg
+kCBMsgArgPayloadSize
+kCBMsgIdLocalDeviceSupportsServiceMsg
+kCBMsgIdPairingAgentGetLocalOOBDataMsg
+kCBMsgArgMITM
+v16@?0^v8
+kCBMsgIdAccessoryGetSpatialAudioPlatformSupportMsg
+kCBMsgIdDeviceIsGenuineAirPodsMsg
+kCBMsgArgs
+kCBMsgIdDeviceIsAppleAudioDeviceMsg
+kCBMsgArgStatsTotal
+kCBMsgArgStatsDurationActive
+kCBMsgIdAccessoryGetFirstSettingMsg
+kCBMsgArgGrouIdArraySize
+kCBMsgIdDeviceUntagMsg
+kCBMsgIdLocalDeviceSetConnectableMsg
+kCBMsgIdLocalDeviceGetPairedDevicesMsg
+kCBMsgIdLocalDeviceAdvertiseDataMsg
+kCBMsgArgStatsScanRxBT
+kCBMsgArgRole
+kCBMsgIdAccessorySetFirstSettingMsg
+kCBMsgIdAccessoryCancelRequestPeriodicallyMsg
+kCBMsgArgAccessoryDeviceState
+kCBMsgIdAccessoryGetDeviceSoundProfileAllowedMsg
+kCBMsgIdDeviceGetDeviceTypeMsg
+kCBMsgIdDeviceGetCloudPairingStatusMsg
+kCBMsgArgVendorId
+kCBMsgArgAttributes
+kCBMsgArgAccessoryHeadTrackingStatus
+kCBMsgIdAccessoryGetGyroInformationMsg
+kCBMsgIdAccessoryGetHeadphoneFeatureValueMsg
+kCBMsgArgFeatureFlagCoreID
+kCBMsgIdDeviceSetVirtualTypeMsg
+kCBMsgPowerConsumed
+kCBMsgArgStatsScanRxLE
+kCBMsgIdLocalDeviceSetDelayedWakeMsg
+kCBMsgIdAccessoryGetControlCommandMsg
+kCBMsgIdDeviceGetProductNameMsg
+kCBMsgIdLocalDeviceSetAFHMapMsg
+kCBMsgArgDataRate
+kCBMsgArgIOCapabilities
+kCBMsgArgBatteryPercentLeft
+kCBMsgIdDeviceGetAdvertisedValueForKeyMsg
+kCBMsgIdLocalDeviceGetDiscoverableMsg
+kCBMsgArgBufferName
+kCBMsgIdLocalDeviceLinkModeChangedEvent
+kCBMsgArgR192
+kCBMsgIdPairingAgentAuthorization
+kCBMsgIdAccessoryGetDeviceBatteryStatusMsg
+kCBMsgArgManufacturerBuffSize
+kCBMsgArgHWVersion
+kCBMsgArgAccessoryBundleID
+kCBMsgIdLocalDeviceGetConnectingDevicesMsg
+kCBMsgIdLocalDeviceDisableLeTestModeMsg
+kCBMsgArgBundleIdString
+kCBMsgIdAccessoryGetAnnounceCallsSupportMsg
+kCBMsgArgCustomMessageType
+kCBMsgIdLocalDeviceStopHCITracesMsg
+kCBMsgArgPincode
+kCBMsgArgBatteryIsChargingCombined
+kCBMsgArgDeviceClass
+kCBMsgIdDeviceGetSyncSettingsMsg
+kCBMsgIdDeviceGetConnectedServicesMsg
+kCBMsgIdPairingAgentOOBDataReady
+kCBMsgArgBTDevice
+kCBMsgArgFWVersion
+kCBMsgIdAccessorySetupCommandMsg
+kCBMsgArgSensorStreamingFrequency
+kCBMsgIdDeviceGetAddressStringMsg
+kCBMsgArgDeviceType
+kCBMsgArgBTPowerMode
+kCBMsgArgStatsInvolundaryDowngraded
+kCBMsgArgBatteryPercentSingle
+kCBMsgArgInEarStatusPrimary
+kCBMsgArgHeadphoneFeatureType
+did not handle
+kCBMsgId
+kCBMsgIdDeviceSetUserNameMsg
+kCBMsgIdDeviceSetACLHighPriorityMsg
+kCBMsgIdDeviceSetUserSelectedDeviceTypeMsg
+kCBMsgIdAccessoryGetCallManagementConfigMsg
+kCBMsgIdDeviceMatchesAdvertisedKeyMsg
+kCBMsgIdDiscoveryAgentDiscoveryEvent
+kCBMsgArgAirplaneMode
+kCBMsgIdLocalDeviceDumpExposureNotificationDatabaseMsg
+kCBMsgIdPairingAgentPassKeyDisplay
+kCBMsgIdAccessoryAddCallbacksMsg
+kCBMsgArgClientType
+kCBMsgIdAccessorySendCustomMessageMsg
+kCBMsgArgAddressStringBuffSize
+kCBMsgIdLocalDeviceAddCallbacksMsg
+kCBMsgArgStatsOthers
+kCBMsgIdLocalDeviceStatusEvent
+kCBMsgArgC192
+kCBMsgArgName
+kCBMsgArgAccessoryJBL
+kCBMsgArgProductIds
+kCBMsgIdAccessoryGetPrimaryBudSideMsg
+kCBMsgIdPairingAgentDeletePairedDeviceMsg
+kCBMsgIdAccessoryEvent
+kCBMsgArgStatsiPATxBT
+kCBMsgArgConnectionRole
+kCBMsgArgAddressBytes
+kCBMsgIdAccessoryGetInEarStatusMsg
+kCBMsgIdAccessoryGetDeviceDiagnosticsMsg
+kCBMsgArgValue
+kCBMsgIdDeviceDisconnectServicesMsg
+kCBMsgIdDeviceGetLowSecurityStatusMsg
+kCBMsgIdLocalDeviceGetDeviceNamesThatMayBeDenylistedMsg
+kCBMsgIdPairingAgentStopMsg
+kCBMsgArgBool
+kCBMsgIdDeviceGetUserSelectedDeviceTypeMsg
+kCBMsgIdLocalDeviceGetConnectableMsg
+kCBMsgArgSnr
+kCBMsgIdAccessoryPlugInDeviceMsg
+kCBMsgIdDeviceAddressToStringMsg
+kCBMsgIdDeviceGetDeviceClassMsg
+kCBMsgIdDeviceConnectServicesWithParametersMsg
+kCBMsgIdLocalDeviceRegisterForPowerUpdatesMsg
+kCBMsgArgBatteryIsChargingSingle
+kCBMsgIdAccessoryGenerateLinkKeyMsg
+kCBMsgIdDeviceGetNameMsg
+kCBMsgArgKey
+kCBMsgIdDeviceDisconnectMsg
+kCBMsgIdDeviceSetHijackAudioRouteMsg
+kCBMsgArgDeviceName
+kCBMsgIdLocalDeviceGetConnectionStatusMsg
+kCBMsgIdAccessoryGetDoubleTapCapabilityMsg
+kCBMsgIdAccessoryDeregisterCustomMessageClientMsg
+kCBMsgIdAccessoryGetDeviceColorMsg
+kCBMsgIdDevicePhysicalLinkDisconnectMsg
+kCBMsgIdDiscoveryAgentStatusEvent
+kCBMsgArgStatus
+kCBMsgIdLocalDeviceGetConnectedDevicesMsg
+kCBMsgArgStatsePATxLE
+kCBMsgArgModelNumber
+kCBMsgArgBatteryPercent
+kCBMsgArgState
+kCBMsgArgLinkKey
+kCBMsgIdLocalDeviceReadEnhancedPowerProfileStatisticsMsg
+kCBMsgArgStatsSuccesful
+kCBMsgArgBtBand
+kCBMsgArgBdAddress
+kCBMsgArgID
+kCBMsgIdAccessorySendRequestPeriodicallyMsg
+kCBMsgIdDeviceGetGroupsMsg
+kCBMsgIdDeviceGetConnectionStatusMsg
+kCBMsgArgServiceID
+kCBMsgIdDeviceIsTemporaryPairedNotInContactsMsg
+kCBMsgIdLocalDeviceSetDenylistEnabledMsg
+LE Device
+kCBMsgIdDeviceSupportsHSMsg
+kCBMsgArgCmdReqType
+kCBMsgArgTag
+kCBMsgArgReset
+kCBMsgIdLocalDeviceGetDenylistEnabledMsg
+kCBMsgIdPairingAgentCreateMsg
+kCBMsgArgPairingAgentID
+kCBMsgArgBatteryPercentCombined
+kCBMsgIdAccessorySetIsHiddenMsg
+kCBMsgIdAccessoryGetAccessoryInfoMsg
+kCBMsgIdDiscoveryAgentGetDevicesMsg
+kCBMsgIdPairingAgentSetOOBDataForDeviceMsg
+kCBMsgIdAccessoryGetDeviceBatteryLevelMsg
+kCBMsgIdAccessoryRegisterDeviceMsg
+kCBMsgArgEventType
+kCBMsgIdAccessoryRelayMsgRecv
+kCBMsgIdDiscoveryAgentDestroyMsg
+kCBMsgIdLocalDeviceRemoveDataMsg
+kCBMsgArgStatsePATxBT
+kCBMsgArgC256
+kCBMsgArgBatteryIsChargingCase
+kCBMsgArgHWVersionBuffSize
+kCBMsgArgAnnounceCallsSupport
+kCBMsgIdAccessoryGetCaseSerialNumbersForAppleProductIdsMsg
+kCBMsgArgStatsSleep
+kCBMsgArgAFHMap
+kCBMsgArgNumberOfPackets
+kCBMsgArgIsAccessory
+kCBMsgIdAccessorySetDeviceSoundProfileAllowedMsg
+kCBMsgIdDeviceGetSupportedServicesMsg
+kCBMsgIdLocalDeviceEnableLeRxTestModeMsg
+kCBMsgIdLocalDeviceReadPowerConsumptionMsg
+kCBMsgArgDoubleTapCapability
+kCBMsgArgType
+kCBMsgArgConnectionMode
+kCBMsgIdLocalDeviceGetSpatialPlatformSupportMsg
+kCBMsgArgStatsDurationTotal
+kCBMsgIdDeviceServiceAddCallbacksMsg
+kCBMsgArgNameBuffSize
+kCBMsgIdAccessorySetDoubleTapActionExMsg
+kCBMsgIdAccessoryGetSmartRouteSupportMsg
+kCBMsgIdDeviceGetPairingStatusMsg
+kCBMsgArgDiscoveryAgentID
+kCBMsgArgBTLinkQualityData
+kCBMsgArgMinLength
+kCBMsgIdAccessorySetRemoteTimeSyncMsg
+kCBMsgArgInEarDetect
+com.apple.bluetooth
+kCBMsgIdAccessoryGetAACPCapabilityBitsMsg
+kCBMsgArgFWVersionBuffSize
+kCBMsgIdAccessorySetHeadphoneFeatureValueMsg
+handled
+kCBMsgIdDiscoveryAgentCreateMsg
+kCBMsgArgServiceMask
+kCBMsgArgSupported
+kCBMsgArgAVMsgLen
+kCBMsgArgPMEMsgLen
+kCBMsgArgSetupType
+kCBMsgIdAccessorySetDeviceStateOnPeerSrcMsg
+kCBMsgArgSyncSettings
+kCBMsgIdLocalDeviceGetAirplaneModeStatusMsg
+kCBMsgIdAccessoryGetDeviceStateMsg
+kCBMsgArgDoubleTapActionLeft
+kCBMsgArgStereoHFPSupport
+kCBMsgArgCallManagementMessage
+kCBMsgArgPaired
+kCBMsgArgExtensionToken
+kCBMsgArgStatsConnectedRxBT
+kCBMsgArgStatsTotalPHYCal
+kCBMsgIdAccessoryIsAccessoryMsg
+kCBMsgArgManufacturer
+kCBMsgArgColor
+kCBMsgIdAccessoryGetAdaptiveLatencyJitterBufferLevelMsg
+kCBMsgArgGrouId
+kCBMsgIdDeviceGetVirtualTypeMsg
+kCBMsgIdDeviceIsCentralMsg
+kCBMsgIdDiscoveryAgentAddKeyMsg
+kCBMsgIdAccessorySendPMEConfigMessageMsg
+kCBMsgIdAccessorySetupCommand
+kCBMsgIdDeviceSetSyncSettingsMsg
+kCBMsgIdDeviceServiceRemoveCallbacksMsg
+kCBMsgArgLocalDeviceID
+kCBMsgArgServiceSuppored
+kCBMsgIdLocalDeviceReadDetailedPowerProfileStatisticsMsg
+kCBMsgArgLEDeviceArray
+kCBMsgArgMicMode
+kCBMsgIdAccessorySendAdaptiveVolumeMessageMsg
+kCBMsgIdAccessoryGetSpatialAudioActiveMsg
+kCBMsgIdLocalDeviceIsSharingEnabledMsg
+kCBMsgIdLocalDeviceLinkQualityGetDataMsg
+kCBMsgArgNumberOfFlushes
+kCBMsgIdPairingAgentPincode
+kCBMsgIdDeviceConfigureLinkKeyMsg
+kCBMsgIdLocalDeviceRemoveCallbacksMsg
+kCBMsgIdLocalDeviceGetDUTModeEnabledMsg
+kCBMsgArgStatsDurationIdle
+kCBMsgIdPairingAgentCancelPairingMsg
+kCBMsgIdPairingAgentUserConfirmation
+kCBMsgArgBatteryPercentCase
+kCBMsgIdAccessoryRegisterCustomMessageClientMsg
+kCBMsgArgInterval
+kCBMSgArgFeatureBitMask
+kCBMsgIdAccessoryReadDeviceVersionInfoMsg
+kCBMsgIdAccessoryGetSpatialAudioModeMsg
+kCBMsgArgConnected
+kCBMsgIdDeviceIsProControllerMsg
+kCBMsgIdAccessorySendControlCommandMsg
+kCBMsgArgAccessoryGenericConfigMode
+kCBMsgArgFeatureFlagFeatureID
+kCBMsgIdDeviceAddressFromStringMsg
+kCBMsgArgVersionId
+kCBMsgArgConnectable
+kCBMsgArgStatsDisableCounter
+kCBMsgArgStatsConnectedRxLE
+kCBMsgArgData
+kCBMsgIdDeviceFromIdentifierMsg
+kCBMsgIdDiscoveryAgentRemoveKeyMsg
+kCBMsgArgPayload
+kCBMsgIdLocalDeviceReadTransportSwitchStatisticsMsg
+kCBMsgIdLocalDeviceReadAFHMapMsg
+kCBMsgIdLocalDeviceLETestStoppedEvent
+kCBMsgIdAccessorySetDoubleTapActionMsg
+kCBMsgIdAccessoryGetDoubleTapActionMsg
+kCBMsgArgUserData
+kCBMsgIdDeviceGetMagicPairingStatusMsg
+kCBMsgArgStatsTransmitting
+kCBMsgArgStatsDowngraded
+kCBMsgArgJitterBuffer
+IsSimulator
+kCBMsgArgSerialNumber
+kCBMsgArgEvent
+kCBMsgArgReason
+kCBMsgIdDeviceConnectServicesMsg
+kCBMsgIdDeviceGetDeviceIdMsg
+kCBMsgArgBTPowerModule
+kCBMsgIdLocalDeviceGetPairingStatusMsg
+kCBMsgArgError
+kCBMsgArgOPType
+kCBMsgIdDeviceGetDefaultNameMsg
+kCBMsgIdLocalDeviceGetDefaultMsg
+kCBMsgArgLocalDeviceEventMask
+kCBMsgArgScanning
+kCBMsgIdLocalDeviceGetConnectedLEDevicesMsg
+kCBMsgArgOptimizedState
+kCBMsgIdAccessorySmartRouteModeMsg
+kCBMsgIdDeviceHasTagMsg
+UNKNOWN
+marconi-bt
+MobileBluetoothFramework
+kCBMsgIdDeviceGetHIDDeviceBehaviorMsg
+kCBMsgIdLocalDeviceMaskCallbacks
+kCBMsgArgCodecType
+kCBMsgArgConnectionInterval
+kCBMsgArgSessionID
+kCBMsgArgGrouIdArray
+kCBMsgIdLocalDeviceGetModulePowerMsg
+kCBMsgArgRssi
+kCBMsgIdPairingAgentDestroyMsg
+kCBMsgIdAccessoryGetWirelessSharingSpatialMsg
+kCBMsgArgGenuine
+kCBMsgIdDiscoveryAgentStartScanMsg
+kCBMsgIdLocalDeviceGetAdvertisingStatusMsg
+kCBMsgIdAccessoryGetAACPCapabilityIntegerMsg
+kCBMsgIdDeviceTagMsg
+kCBMsgIdLocalDeviceGetNameMsg
+kCBMsgArgAdvertising
+kCBMsgIdLocalDeviceStartHCITracesMsg
+kCBMsgIdLocalDeviceSetCallScreeningMsg
+kCBMsgArgProductId
+kCBMsgArgHeadphoneFeatureValue
+kCBMsgArgServices
+kCBMsgIdDeviceGetComPortForServiceMsg
+kCBMsgArgAuthStatus
+kCBMsgArgRequesterID
+kCBMsgArgBTDeviceType
+kCBMsgArgResult
+kCBMsgIdAccessoryGetCaseSerialNumbersForAppleProductIdMsg
+kCBMsgIdLocalDeviceSetDiscoverableMsg
+kCBMsgArgTestFrequency
+kCBMsgIdLocalDeviceUnregisterForPowerUpdatesMsg
+kCBMsgArgIsStreaming
+kCBMsgIdPairingAgentStatusEvent
+kCBMsgIdAccessoryRemoveCallbacksMsg
+kCBMsgArgDoubleTapActionRight
+```

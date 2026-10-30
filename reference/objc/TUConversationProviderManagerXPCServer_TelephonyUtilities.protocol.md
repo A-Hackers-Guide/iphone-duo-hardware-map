@@ -1,0 +1,20 @@
+# `TUConversationProviderManagerXPCServer` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities`](../userland/System__Library__PrivateFrameworks__TelephonyUtilities.framework__TelephonyUtilities.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 10 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[TUConversationProviderManagerXPCServer unregisterClient:];
+-[TUConversationProviderManagerXPCServer registerClient:];
+-[TUConversationProviderManagerXPCServer conversationProviderForIdentifier:completionHandler:];
+-[TUConversationProviderManagerXPCServer conversationProviders:];
+-[TUConversationProviderManagerXPCServer doesHandle:correspondToConversationProvider:completionHandler:];
+-[TUConversationProviderManagerXPCServer generatePseudonymHandleForConversationProvider:expiryDuration:URI:completionHandler:];
+-[TUConversationProviderManagerXPCServer registerConversationProvider:completionHandler:];
+-[TUConversationProviderManagerXPCServer registerForCallbacksForProvider:completionHandler:];
+-[TUConversationProviderManagerXPCServer renewPseudonymHandle:forConversationProvider:expirationDate:completionHandler:];
+-[TUConversationProviderManagerXPCServer revokePseudonymHandle:forConversationProvider:completionHandler:];
+```

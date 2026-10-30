@@ -1,0 +1,1845 @@
+# `com.apple.iokit.IODisplayPortFamily`
+
+- Name: IODisplayPortFamily
+- Version: `1.0.0`
+- UUID: `1BE60F93-120B-3206-A2D6-85AA746FFBC8`
+- Source version: `775.40.3.0.0`
+- Depends on: [`com.apple.iokit.IOAVFamily`](com.apple.iokit.IOAVFamily.md) 1.0, [`com.apple.iokit.IOAccessoryManager`](com.apple.iokit.IOAccessoryManager.md) 1.0, [`com.apple.iokit.IOCECFamily`](com.apple.iokit.IOCECFamily.md) 1.0, [`com.apple.iokit.IOHDCPFamily`](com.apple.iokit.IOHDCPFamily.md) 1.0.0, [`com.apple.iokit.IOPortFamily`](com.apple.iokit.IOPortFamily.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0.0b2, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0.0b2, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0.0b2, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0.0b2, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0.0b2
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (6) [KC]
+
+### IODP13Service
+- `CFBundleIdentifier`: `com.apple.iokit.IODisplayPortFamily`
+- `IOClass`: `IODP13Service`
+- `IOPersonalityPublisher`: `com.apple.iokit.IODisplayPortFamily`
+- `IOProviderClass`: `IODPDevice`
+- `Location`: `External`
+- `Revision`:
+  - `Major`: `1`
+  - `Minor`: `4`
+- `Transport`: `DisplayPort`
+
+### IODPCECController
+- `CFBundleIdentifier`: `com.apple.iokit.IODisplayPortFamily`
+- `IOClass`: `IODPCECController`
+- `IOPersonalityPublisher`: `com.apple.iokit.IODisplayPortFamily`
+- `IOProviderClass`: `IODPController`
+- `Location`: `External`
+
+### IODPLegacyDualDVIService
+- `BranchDeviceID`: `m2DVIa`
+- `BranchIEEEOUI`: `16388096`
+- `CFBundleIdentifier`: `com.apple.iokit.IODisplayPortFamily`
+- `IOClass`: `IODPLegacyDualDVIService`
+- `IOPersonalityPublisher`: `com.apple.iokit.IODisplayPortFamily`
+- `IOProviderClass`: `IODPDevice`
+- `Location`: `External`
+- `Transport`: `DisplayPort`
+
+### IODPService
+- `CFBundleIdentifier`: `com.apple.iokit.IODisplayPortFamily`
+- `IOClass`: `IODPService`
+- `IOPersonalityPublisher`: `com.apple.iokit.IODisplayPortFamily`
+- `IOProviderClass`: `IODPDevice`
+- `Location`: `External`
+- `Transport`: `DisplayPort`
+
+### IODPServiceAUXOnly
+- `CFBundleIdentifier`: `com.apple.iokit.IODisplayPortFamily`
+- `IOClass`: `IODPServiceAUXOnly`
+- `IOPersonalityPublisher`: `com.apple.iokit.IODisplayPortFamily`
+- `IOProbeScore`: `99999`
+- `IOProviderClass`: `IODPDevice`
+
+### IODPTXVirtualPort
+- `CFBundleIdentifier`: `com.apple.iokit.IODisplayPortFamily`
+- `IOClass`: `IODPTXVirtualPort`
+- `IONameMatch`:
+  - `AAPL,atc-dpphy`
+  - `AAPL,atc-dpin`
+  - `AAPL,dptx-phy`
+- `IOPersonalityPublisher`: `com.apple.iokit.IODisplayPortFamily`
+- `IOProbeScore`: `1000000`
+- `IOPropertyMatch`:
+  - `VirtualMode`: `1`
+- `IOProviderClass`: `AppleARMIODevice`
+
+
+## C++ classes (36) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `IODP13Service` | 0x860 | IODPService → IOAVService → IOService → IORegistryEntry |
+| `IODPAgileLinkRateTable` | 0x30 | IODPSACAggressorTable |
+| `IODPCECController` | 0xf0 | IOService → IORegistryEntry |
+| `IODPCECInterface` | 0x120 | IOAVCECInterface → IOAVControlInterface → IOAVInterface → IOService → IORegistryEntry |
+| `IODPController` | 0x138 | IOAVController → IOService → IORegistryEntry |
+| `IODPControllerConcreteUserClient` | 0x108 | IODPControllerUserClient → IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IODPControllerUserClient` | 0x108 | IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IODPDevice` | 0x558 | IOAVDevice → IOService → IORegistryEntry |
+| `IODPDeviceConcreteUserClient` | 0x108 | IODPDeviceUserClient → IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IODPDeviceUserClient` | 0x108 | IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IODPEmbeddedDevice` | 0x558 | IODPDevice → IOAVDevice → IOService → IORegistryEntry |
+| `IODPEventLog` | 0x70 | IOAVEventLog |
+| `IODPHDCPMessageTransport` | 0x30 | IOHDCPMessageTransport |
+| `IODPHDCPMessageTransportDelayContentType` | 0x30 | IODPHDCPMessageTransport → IOHDCPMessageTransport |
+| `IODPHDMIPortController` | 0x1b8 | IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `IODPHDMIPortUserClient` | 0xe8 | IOUserClient → IOService → IORegistryEntry |
+| `IODPLegacyDualDVIService` | 0x540 | IODPService → IOAVService → IOService → IORegistryEntry |
+| `IODPLinkRateRangeTable` | 0x20 |  |
+| `IODPPortAnalyticsCollector` | 0x58 |  |
+| `IODPPortService` | 0x10188 | IOService → IORegistryEntry |
+| `IODPPortUserClient` | 0x108 | IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IODPRXPort` | 0xc8 | IOService → IORegistryEntry |
+| `IODPSACAggressorTable` | 0x28 |  |
+| `IODPService` | 0x540 | IOAVService → IOService → IORegistryEntry |
+| `IODPServiceAUXOnly` | 0x548 | IODPService → IOAVService → IOService → IORegistryEntry |
+| `IODPServiceConcreteUserClient` | 0x108 | IODPServiceUserClient → IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IODPServiceUserClient` | 0x108 | IOAVUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IODPSwitch` | 0x148 | IOService → IORegistryEntry |
+| `IODPSwitchAllocationState` | 0x28 |  |
+| `IODPSwitchEventLog` | 0x70 | IOAVEventLog |
+| `IODPSwitchUFP` | 0x260 | IODPTXPort → IOService → IORegistryEntry |
+| `IODPTXPort` | 0x248 | IOService → IORegistryEntry |
+| `IODPTXPortEventLog` | 0x70 | IOAVEventLog |
+| `IODPTXVirtualPort` | 0x270 | IODPTXPort → IOService → IORegistryEntry |
+| `IODPVirtualDevice` | 0x578 | IODPDevice → IOAVDevice → IOService → IORegistryEntry |
+| `IODPVirtualPortService` | 0x10188 | IODPPortService → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x000132c0 off=0x009c7180-0x009da440 addr=0xfffffe00079cb180-0xfffffe00079de440 r--/r--   __TEXT            
+	sz=0x000087cd off=0x009c7898-0x009d0065 addr=0xfffffe00079cb898-0xfffffe00079d4065               __TEXT.__cstring          (CstringLiterals)
+	sz=0x00009f97 off=0x009d0065-0x009d9ffc addr=0xfffffe00079d4065-0xfffffe00079ddffc               __TEXT.__os_log           
+	sz=0x00000440 off=0x009da000-0x009da440 addr=0xfffffe00079de000-0xfffffe00079de440               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x00058d64 off=0x0309ae00-0x030f3b64 addr=0xfffffe000a09ee00-0xfffffe000a0f7b64 r-x/r-x   __TEXT_EXEC       
+	sz=0x00058274 off=0x0309ae00-0x030f3074 addr=0xfffffe000a09ee00-0xfffffe000a0f7074          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000af0 off=0x030f3074-0x030f3b64 addr=0xfffffe000a0f7074-0xfffffe000a0f7b64          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x000006b0 off=0x049ef720-0x049efdd0 addr=0xfffffe000b9f3720-0xfffffe000b9f3dd0 rw-/rw-   __DATA            
+	sz=0x000000c8 off=0x049ef720-0x049ef7e8 addr=0xfffffe000b9f3720-0xfffffe000b9f37e8               __DATA.__data             
+	sz=0x000005d8 off=0x00000000-0x000005d8 addr=0xfffffe000b9f37e8-0xfffffe000b9f3dc0               __DATA.__common           (Zerofill)
+	sz=0x00000010 off=0x00000000-0x00000010 addr=0xfffffe000b9f3dc0-0xfffffe000b9f3dd0               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00012ed8 off=0x0135a7e0-0x0136d6b8 addr=0xfffffe000835e7e0-0xfffffe00083716b8 rw-/rw-   __DATA_CONST      
+	sz=0x00000120 off=0x0135a7e0-0x0135a900 addr=0xfffffe000835e7e0-0xfffffe000835e900         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000118 off=0x0135a900-0x0135aa18 addr=0xfffffe000835e900-0xfffffe000835ea18         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00011a38 off=0x0135aa18-0x0136c450 addr=0xfffffe000835ea18-0xfffffe0008370450         __DATA_CONST.__const            
+	sz=0x00000900 off=0x0136c450-0x0136cd50 addr=0xfffffe0008370450-0xfffffe0008370d50         __DATA_CONST.__kalloc_type      
+	sz=0x00000280 off=0x0136cd50-0x0136cfd0 addr=0xfffffe0008370d50-0xfffffe0008370fd0         __DATA_CONST.__kalloc_var       
+	sz=0x00000578 off=0x0136cfd0-0x0136d548 addr=0xfffffe0008370fd0-0xfffffe0008371548         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000170 off=0x0136d548-0x0136d6b8 addr=0xfffffe0008371548-0xfffffe00083716b8         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 396 at 0x04af1364
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     1BE60F93-120B-3206-A2D6-85AA746FFBC8
+008: LC_SOURCE_VERSION           775.40.3.0.0
+009: LC_FUNCTION_STARTS          offset=0x004abe500 size=0xd38
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `IODisplayPortFamily`
+- `CFBundleIdentifier`: `com.apple.iokit.IODisplayPortFamily`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `IODisplayPortFamily`
+- `CFBundleNumericVersion`: `16809984`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0.0`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1.0.0`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2010-2017 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.0`
+- `OSBundleRequired`: `Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/IODisplayPortFamily.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198895545984`
+- `_PrelinkExecutableRelativePath`: `IODisplayPortFamily`
+- `_PrelinkExecutableSize`: `521644`
+- `_PrelinkExecutableSourceAddr`: `-2198895545984`
+- `_PrelinkKmodInfo`: `-2198828271840`
+
+## Strings (1640) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `waitResult=0x%08x\n`
+- `%s failed to get matchingService\n`
+- `connect_block_invoke`
+- `warning: CR LOST (PARTIALLY) @ loopCount=%u laneCount=%u linkRate=%llu bps\n`
+- `Setting drive settings. ret=0x%08x\n`
+- `capabilities=%lx powerState=%lx whatDevice?=0x%llx _pmRootDomain?=%s\n`
+- `Reading DPCD_ADDR_TEST_PHY reg=0x%02x\n`
+- `PortType`
+- `IODPControllerUserInterfaceSupported`
+- `site.IODPPortAnalyticsCollector`
+- `recvMessage`
+- `error 0x%08x writing LINK_QUAL_LANE%u_SET\n`
+- `IOAVParentMatching() failed\n`
+- `handleActiveSinkDetected`
+- `PanelSelfRefresh`
+- `warning: dfp(0x%llx): dropping interruptRequestOccurred()\n`
+- `UncorrectedBlockErrorCounts`
+- `warning: RX_CAP_CHANGED IRQ\n`
+- `dropping repeated action=%s event\n`
+- `121111121222121211122222222222222222222222222222222222221211121111111112222222222222222222222222222222222111111112222222222222222222222222222222222222222222222222222222222`
+- `sendCECInternal`
+- `setLinkRate_block_invoke`
+- `Scheduling analytics at %llu\n`
+- `ret=0x%08x (ignored)\n`
+- `no available UFP for DFP(0x%llx) on domain%d; It remains pending; continue..\n`
+- `dfp(0x%llx) will wake\n`
+- `LANE_ALIGN_STATUS=0x%02x INTERLANE_ALIGN_DONE=%d\n`
+- `Failed to disable conversion to YCbCr444\n`
+- `setFECErrorCountConfig`
+- `MaxActivePixelRate`
+- `count=%u ret=0x%08x\n`
+- `Sufficient bandwidth available; checking link (linkStatusMask=0x%02x)\n`
+- `Failed to disable conversion to YCbCr420\n`
+- `dprxport`
+- `Pushing FW update...\n`
+- `Failed to set device downspread\n`
+- `EDID UUID`
+- `IODPTXVirtualPort.cpp`
+- `disconnecting ufp(0x%llx) from dfp(0x%llx)\n`
+- `addCECService`
+- `handleStop`
+- `setVirtualMode`
+- `ret = 0x%08x\n`
+- `_setSupportsDownspread`
+- `invalid service\n`
+- `capabilitiesChanged`
+- `displayAllocationEventOccurred_block_invoke`
+- `handleIRQContentProtection`
+- `invalid HDCP message type %d for sending\n`
+- `ignoring inactive sink notification on non-idle port\n`
+- `notice: setting _sinkInactive...\n`
+- `handleCheckLink`
+- `_setMaxLaneCount`
+- `cecInterfacePublishedGated`
+- `Updated`
+- `Unable to set the device adjustment levels\n`
+- `no-sleep-state`
+- `caller=%s; signaling display allocation event source; thread call was pending=%s\n`
+- `didChangeLinkConfiguration`
+- `IODPCECController`
+- `enabling extended lane count control\n`
+- `\"%s::%s(0x%llx): deactivate() incomplete %u seconds after displayRelease()! (check DCPEXT)\\n\" @%s:%d`
+- `ret=0x%08x port=0x%llx\n`
+- `%d:ufp%d,%u-%s%d,%u`
+- `dfpOld->connectTo(null) ret=0x%08x\n`
+- `missing dp-switch-ufp-endpoint\n`
+- `Minor`
+- `Failed to allocate _commandGate\n`
+- `IODPDeviceUserClient`
+- `IOHibernateState`
+- `Automated link test request received: testLaneCount=%d testLinkRate=%llu bps\n`
+- `receiveCEC`
+- `site.IODPServiceUserClient`
+- `WeekOfManufacture`
+- `BranchDeviceID`
+- `DownstreamPortTypes`
+- `Failed to set controller enhanced mode\n`
+- `%s(0x%llx) ret=0x%08x\n`
+- `handleHDCP1IRQ`
+- `   hTotal=%5u vTotal =%4u hStart=%3u vStart =%3u hSync=%3u vSync=%3u\n`
+- `ParityBlockErrorCounts`
+- `setPhysicalAddressGated ret=0x%08x\n`
+- `_ufps = OSArray::withCapacity() failed!\n`
+- `unsupported conversion YCbCr422 to YCbCr420\n`
+- `site.IODPPortService`
+- `setCECInterface failed ret=%08x\n`
+- `site.IODPTXPortEventLog`
+- `DFP Capabilities [%d]: 0x%02X\n`
+- `failed to create work loop!\n`
+- `No automated tests requested.\n`
+- `unsupported conversion YCbCr444 to YCbCr420\n`
+- `Unable to add parent matching criteria`
+- `no dp-switch-parent\n`
+- `checkPMforDarkWake`
+- `without`
+- `Service is inactive`
+- `handleIRQCEC`
+- `refresh`
+- `have LANEx_CR_DONE for %u lanes\n`
+- `Attempting to set quality pattern to 0x%x\n`
+- `no work loop!\n`
+- `handleDisplayRequest`
+- `Downspread`
+- `Command Interrupt received: Ignored.\n`
+- `DownstreamPortCount`
+- `error reading Bcaps (0x%08x); assuming not HDCP 1.x capable\n`
+- `getDSCCapabilitiesDPCD`
+- `failed to create serializer for EnhancedMode\n`
+- `handleStart`
+- `Failed to set controller link rate\n`
+- `DisplayRelease`
+- `Setting quality pattern. ret=0x%08x\n`
+- `Failed to get EDID as OSData\n`
+- `dp-switch-ufp-domain`
+- `MaxBpc`
+- `dp_controller_mask`
+- `handleHDCP2IRQ`
+- `matched %s, expected IODPSwitch\n`
+- `hotPlugDetectChangeOccurred_block_invoke`
+- `ret=0x%08x ufp=0x%llx dfp=0x%llx\n`
+- `handleDeviceNotStarted`
+- `DP Device published %lld..\n`
+- `Link Status Field (DPCD %05Xh):`
+- `Failed to set new levels\n`
+- `1211111212221212112222211`
+- `inhibit`
+- `%s,%u`
+- `handleStartLink`
+- `range has to match if encoding is the same\n`
+- `unsupported pass through YCbCr422\n`
+- `Attempting to %s enhanced mode\n`
+- `MinLinkRate`
+- `trainLinkGated`
+- `getSinkStatus failed, ret=0x%08x\n`
+- `_setSupportsEnhancedMode`
+- `IODPTXPort`
+- `%s(%s)`
+- `getNameList`
+- `setActiveLaneCount`
+- `CR incomplete @ auxAckCount=%u laneCount=%u linkRate=%llu bps\n`
+- `IODPServiceConcreteUserClient`
+- `set-power-before-dpcd-read`
+- `Could not create the CEC Service\n`
+- `Training %s caller-provided training data.\n`
+- `BitErrorCounts`
+- `validateColorFormatConversion`
+- `error 0x%08x writing TRAINING_PATTERN_SET\n`
+- `processCPIRQOccurred`
+- `UpdateMode`
+- `registerInterestedDriver() failed!\n`
+- `forwardDisplayRelease`
+- `ADJUST_REQUEST_LANE%u<voltage,eq>(%d,%d) <minimum>(%d,%d) => <effective>(%d,%d)\n`
+- `trainLink ret=0x%08x\n`
+- `timed out?!\n`
+- `failed to apply block\n`
+- `INTERLANE_ALIGN_DONE=0, _alignmentStatusFailureCount=%u\n`
+- `Failed to set drive levels\n`
+- `deviceNotStarted_block_invoke`
+- `notice: ignoring %s event on inactive port.\n`
+- `IODPSwitchAllocationState::withCapacity failed!\n`
+- `ufp`
+- `updateVideoLinkStatus`
+- `Converting output color depth %d -> %d\n`
+- `IODPHDMIPortController`
+- `HorizontalBlankingExpansionEnabled`
+- `TileX`
+- `MaxW`
+- `SinkDeviceOUI`
+- `setting virtual mode, new=%d, old=%d\n`
+- `handlePortMessage`
+- `failed to add command gate to work loop!\n`
+- `super::handleStart() failed\n`
+- `121111121222121211122222111111111122212222212222222122222122222122222222222222222222222222222222222222222222222222211111111121111111122221111112222222222222222222222221`
+- `init`
+- `Link`
+- `Failed to set controller downspread\n`
+- `Symbol Error Rate Measurement Pattern`
+- `IOAVDevice`
+- `failed to create command gate!\n`
+- `Attempting training with: laneCount=%u linkrate=%llu bps edpASSRMode=%d enhancedMode=%d downspread=%d fast=%d\n`
+- `DriveSettings`
+- `IOAVPHandleMatching() failed\n`
+- `Automated EDID test request received.  %s calculated checksum=0x%02x, response checksum=0x%02x\n`
+- `invalid HDCP message type for receiving\n`
+- `LinkRateScalar`
+- `validateElements`
+- `handleTestRequestPattern`
+- `overflow (%s)\n`
+- `IOPortTransportState::transportMatchingForService() returned NULL - make sure EDT has IOPort properties!`
+- `State`
+- `IODPHDCPMessageTransportDelayContentType`
+- `invalid port %d\n`
+- `warning: ignoring unplug event with no action\n`
+- `handleSystemWillWake`
+- `CR FAIL: no LANEx_CR_DONE on lowest-numbered lane(s) - end training\n`
+- `warning: ignoring display request with no action\n`
+- `Plug`
+- `ignoring redundant sleep notification...\n`
+- `signalCECTXAvailability`
+- `failed to create serializer for Min Link Rate\n`
+- `DFPMaxColorDepth`
+- `resetting _sinkInactive...\n`
+- `Only %d UFP ports are registered out of %d yet so pending allocation\n`
+- `flushUFPsOnHilbernate`
+- `Failed to clear training pattern\n`
+- `Failed to enable conversion to YCbCr420\n`
+- `B24@?0^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}8^{IONotifier=^^?i}16`
+- `failed to create serializer for SupportsASSR\n`
+- `Count`
+- `1211111212221212111111211111212222222211221111111212212`
+- `handleTransportUpdate`
+- `_readDPCD`
+- `SetAction`
+- `Bcaps = 0x%02x\n`
+- `setFECSymbol`
+- `Failed to set controller ASSR mode\n`
+- `TPS2`
+- `Power`
+- `LANE%u_STATUS=0x%02x\n`
+- `CP_IRQ received--unexpected HDCP protocol (%u)\n`
+- `linkRate=%llubps\n`
+- `SupportsALPM`
+- `device`
+- `DFPSupportsPassThroughYCbCr420`
+- `Failed to set controller FEC Ready\n`
+- `messageGated`
+- `Attempting to set max lane count to %u\n`
+- `site.IODPHDMIPortController`
+- `HintsReserved`
+- `IOService::serviceMatching() failed\n`
+- `activate`
+- `link suspended\n`
+- `_setSecureAuxFilter`
+- `Sink`
+- `CP_IRQ: Bstatus=0x%02x:%s%s%s\n`
+- `IODPHDMIControllerPortUserInterfaceSupported`
+- `IODPVirtualPortService`
+- `writeI2C`
+- `TunnelUse`
+- `Valid`
+- `warning: fix up invalid downstream port %02x %02x\n`
+- `MinLinkRateScalar`
+- `FECEnabled`
+- `CP2520 Pattern 1`
+- `domain%d: ufp %s,%d not valid\n`
+- `hibernate state %d\n`
+- `Failed to read DFP[%d] caps, ret=0x%08x\n`
+- `BranchDeviceOUI`
+- `commonSetTrainingPatternAndDriveSettings`
+- `Source`
+- `warning: dfp(0x%llx): dropping hotPlugDetectChangeOccurred(%s)\n`
+- `warning: DSC RC BUFFER UNDERRUN\n`
+- `YCbCr420 can't be converted\n`
+- `site.IODPHDCPMessageTransport`
+- `received notification that system is going to sleep.\n`
+- `ChipRevision`
+- `Timing format conversion validation failed\n`
+- `Configuring Color Format Conversion\n`
+- `site.IODPDeviceUserClient`
+- `failed to clear DEVICE_SERVICE_IRQ_VECTOR_ESI0 ret=0x%08x\n`
+- `HDMIPortID`
+- `handleStart_block_invoke_2`
+- `disabling actions\n`
+- `Requested adjustment levels. ret=0x%08x\n`
+- `failed to add parent matching dictionary\n`
+- `save sleep state\n`
+- `FECErrorCounts`
+- `Test handler returned 0x%08x\n`
+- `handleIRQRxCapChanged`
+- `ManufacturerName`
+- `Failed to get link training data with ret=0x%08x`
+- `site.IODPLinkBitRate`
+- `Passed EDID: data=%p size=%d\n`
+- `dp-switch-ufp-endpoint`
+- `warning: CR LOST (COMPLETELY) @ loopCount=%u laneCount=%u linkRate=%llu bps\n`
+- `Device does not support Horizontal Blanking Expansion\n`
+- `port-type`
+- `EDID`
+- `ALPMEnabled`
+- `readHDMICharacterErrorCounters`
+- `Attempting to set drive settings for lane %u to swing=%d eq=%d\n`
+- `site.IODPServiceAUXOnly`
+- `Failed to set device link rate\n`
+- `init_block_invoke`
+- `failed to clear DEVICE_SERVICE_IRQ_VECTOR ret=0x%08x\n`
+- `121111`
+- `Unknown`
+- `EnhancedMode`
+- `handleTestRequestEDID`
+- `Failed to set controller FEC symbol\n`
+- `warning: Max V-swing without LANEx_CR_DONE: maxVSwingCount=%u laneCount=%u linkRate=%llu bps\n`
+- `oldCount=%d newCount=%d add=%d remove=%d\n`
+- ` H'_AVAILABLE`
+- `Converting %s -> %s\n`
+- `Registering`
+- `Failed to allocate Analytics\n`
+- `warning: unexpected _cecService(0x%llx) != terminatedService(0x%llx) (ignored)\n`
+- `warning: ignoring plug event with no action\n`
+- `dfp`
+- `site.IODP13Service`
+- `failure to parse payload for '%s'\n`
+- `DFPs processed: %u allocated: %u domains: 0x%x\n`
+- `Attempting to %s downspread\n`
+- `Attempting to set min link rate to 0x%x\n`
+- `invalid interface\n`
+- `DisplayRequest`
+- `_dfpEndpointsCount = 0!\n`
+- `\"%s::%s(0x%llx): called from *gated* context.\\n\" @%s:%d`
+- `Link unstable. Retraining\n`
+- `Unexpected state for _videoLinkSynchronizedStatus, 0x%08x\n`
+- `handleTransportMessage`
+- `release transport (_transport: %s - %llu)`
+- `Message`
+- `DFPSupportsConversionToYCbCr420`
+- `None`
+- `updateLinkRate`
+- `failed to create serializer for %s\n`
+- `hints: valid=%s tiled=%s tile=(%u,%u) native=%ux%u mainUFP=0x%08x peerUFP=0x%08x ret=0x%08x\n`
+- `IODPSwitch`
+- `unknown`
+- `ProductAttributes`
+- `IODPAgileLinkRateTable`
+- `TPS3`
+- `PortVariant`
+- `ProductID`
+- `SinkDeviceID`
+- `Unable to read IRQ Status ret=0x%08x\n`
+- `super::start() failed\n`
+- `failed to create serializer for SupportsALPM\n`
+- `waitForDPSwitchParent`
+- `processLinkStateClockRecovery`
+- `Activate`
+- `site.IODPTXPort`
+- `linkRate=%lluGbps ret=0x%08x\n`
+- `sendCECGated`
+- `Failed to get IOAVVideoInterfaceUserInterface with ret=0x%08x\n`
+- `EDID block 0: calculated checksum = 0x%02x, EDID byte 128 = 0x%02x, response checksum = 0x%02x\n`
+- `Command gate not held?!\n`
+- `MaxLinkRate`
+- `SupportsDownspread`
+- `SupportsDSC`
+- `incompatible port roles: %u -> %u\n`
+- `ret=0x%08x, retChecksum=0x%08x, retResponse=0x%08x\n`
+- `_setMinLaneCount`
+- `Failed to set device lane count\n`
+- `Failed to enable color depth conversion\n`
+- `1211111212221212111222221111111111222122222122222221222221222221222222222222222222222222222222222222222222222222222111111111211111111222211111122222222222222222222222211`
+- `Failed to allocate _inactiveSinkDisplayReleaseTimer\n`
+- `laneCount=%u\n`
+- `ret=0x%08x\n`
+- `setLaneCount`
+- `site.IODPTXVirtualPort`
+- `HDCP 1.x capable found\n`
+- `_controller->setDriveSettings() ret=0x%08x\n`
+- `getDownspread`
+- `lcd,edp`
+- `SINK_STATUS (DPCD 000205h): %02x\n`
+- `result=%d ret=0x%08x\n`
+- `site.IODPControllerUserClient`
+- `_setDriveSettings`
+- `Training`
+- `notice: updating %u second _inactiveSinkDisplayReleaseTimer...\n`
+- `ignoring device busy timeout notification on non-idle port\n`
+- `setCECHPDStatusGated ret=0x%08x\n`
+- `SinkActive`
+- `Failed DPCD write\n`
+- `displayAllocationEventOccurred`
+- `Not able to create Property %s\n`
+- `Device FEC unsupported\n`
+- `Unable to attach CEC Service\n`
+- `site.IODPSwitchAllocationState`
+- `processAdjustmentRequest`
+- `dispatched %u actions\n`
+- `%u second _inactiveSinkDisplayReleaseTimer expired, _sinkInactive=%u\n`
+- `triggerDisplayAllocation`
+- `collectFromService`
+- `_setVirtualEDID`
+- `_cecInterface=0x%llx\n`
+- `getMaxTrainingData`
+- `handleStart_block_invoke`
+- `receivePortNotificationThreadCall`
+- `action queue depth reached %u (unexpected). Please file a radar under 'IODisplayPortFamily | all'.\n`
+- `Second color format conversion validation failed\n`
+- `_setMaxLinkRate`
+- `dp-switch-ufp-port`
+- `Year of Manufacture`
+- `IODPPortAnalyticsCollector::init failed\n`
+- `msg_id %d %s\n`
+- `Unregistering`
+- `EQ RETRY with new drive settings @ loopCount=%u laneCount=%u linkRate=%llu bps\n`
+- `reduceLinkRate`
+- `warning: DSC CHUNK LENGTH ERROR\n`
+- `_setLinkRate`
+- `updateDFPCapabilities`
+- `_ufpEndpointNames = OSArray::withCapacity() failed!\n`
+- `failed to register sleep/wake notifier!\n`
+- ` R0'_AVAILABLE`
+- `enable`
+- `Value`
+- `superclass ret=0x%08x\n`
+- `D10.2`
+- `thread call was pending=%s\n`
+- `%08x`
+- `start: result=%d\n`
+- `validateConnection`
+- `site.IODPSwitchUFP`
+- `lowerIRQs=0x%02x\n`
+- `Pushing virtual EDID...\n`
+- `dequeued message=%s\n`
+- `IODPVirtualDevice`
+- `IOAVControlInterface`
+- `Property %s does not exist\n`
+- `no provider!\n`
+- `IOTimerEventSource::timerEventSource(...) failed\n`
+- `failed to create serializer for Scrambling\n`
+- `handleIRQSinkSpecific`
+- `handleTestRequestLink`
+- `IODPEmbeddedDevice`
+- `openServiceMatchingProviderProperty`
+- `searching for inactive UFP with domain-mask %d...\n`
+- `with`
+- `warning: CP_IRQ: RxStatus=0x00: should never occur!\n`
+- `Failed to disable color depth conversion\n`
+- `IOAVController`
+- `notice: force _sinkInactive...\n`
+- `121111121222121211111222221111111111112222222222222222222222222222222222211122`
+- `B16@?0^{OSObject=^^?i}8`
+- `DSCEnabled`
+- `actions disabled\n`
+- `Not enough memory for copying UFPs`
+- `read RxStatus ret=0x%08x\n`
+- `site.IODPRXPort`
+- `cecInterfacePublishedGated failed, ret=%08x\n`
+- `refCon is null\n`
+- `start`
+- `Sink Device Status Field (DPCD %05Xh):`
+- `1211111212221212111112222211111111111122222222222222222222222222222222222`
+- `synthesizing hotPlugDetectChangeOccurred due to _hpdAsserted...\n`
+- `makeInactiveUFPAvailable`
+- `V' Available\n`
+- `unable to clear CEC IRQs ret=0x%08x\n`
+- `%s: not specified; defaulting to 0.\n`
+- ` (default)`
+- `121121`
+- `IODPController`
+- `_controller->clearTrainingPattern() ret=0x%08x\n`
+- `%s: invalid data length: %u; defaulting to 0.\n`
+- `registerPort_block_invoke`
+- `Missing DFP port from nvram configuration\n`
+- `*pEnabled=%u ret=0x%08x\n`
+- `site.IODPCECController`
+- `failed to create serializer for Max Link Rate Scalar\n`
+- `TileNumH`
+- `releasing display...\n`
+- `sender(0x%llx) != dfp(0x%llx)\n`
+- `Link training ret=0x%08x\n`
+- `invalid session handle\n`
+- `warning: invalid MAX_LANE_COUNT 0x%02x\n`
+- `Unit`
+- `New DP transport matched (_transport: %s - %llu)`
+- `1211111212221212111222222222222222222222222222222222222212111211111111122222222222222222222222222222222221111111122222222222222222222222222222222222222222222222222222222221112`
+- `warning: warning: DSC_SUPPORT=1 but DSC_VERSION=0; assuming DSC not supported.\n`
+- `sending action[%u]=%s...\n`
+- `displayWakeOccurred`
+- `DarkWake`
+- `Unable to read ESI Link Service status\n`
+- `addr=%s data=%08x\n`
+- `121111121222121211222221111112`
+- `dfp->connectTo(this) ret=0x%08x\n`
+- `getActiveLaneCount`
+- `warning: AUX_ACK without LANEx_CR_DONE %u times\n`
+- `downstream must be YCbCr420\n`
+- `inactiveSinkDetected`
+- `result=%d\n`
+- `processLinkStateEQTraining`
+- `NULL HDCP message\n`
+- `ignoring device not started notification on non-idle port\n`
+- `Link Training Command`
+- `checkPendingMessages`
+- `ESI0=0x%02x, ESI1=0x%02x, LSESI0=0x%02x\n`
+- `%s failed to get matching\n`
+- `TunnelActive`
+- `TileID`
+- `_ufpsExpected = 0!\n`
+- `*pLinkRate=%lluGbps ret=0x%08x\n`
+- `Automated test interrupt received: TEST_REQUEST=0x%02x\n`
+- `VirtualMode`
+- `Fast`
+- `willChangeLinkConfiguration`
+- `getSupportsDownspread`
+- `messageGated() ret=0x%08x\n`
+- `downsteam must be BT.709\n`
+- `site.IODPSACIndex`
+- `matching`
+- `openServiceMatching`
+- `121111121222121211122222111112111121`
+- `waitForTransportSignalingDeferral release reason %s\n`
+- `_workLoop->addEventSource(_commandGate) failed\n`
+- `ignoring device not responding notification on non-idle port\n`
+- `LinkRate`
+- `domain%d: connectTo ufp %s,%d to dfp %s,%d ret=0x%08x\n`
+- `setDriveSettings`
+- `Training %s caller-provided training data because %s\n`
+- `Dequeue`
+- `Revision`
+- `dp_service_level`
+- `cec specific status=0x%02x\n`
+- `failed to allocate IODPPortService\n`
+- `runAction publishCECInterfaceGated failed, ret=0x%08x\n`
+- `setCECAddressMask`
+- `action=%s; thread call was pending=%s\n`
+- `powerStateDidChangeTo`
+- `\"%s::%s(0x%llx): runActionBlock() failed ret=0x%08x!  Please file a radar under 'IODisplayPortFamily | all'.\\n\" @%s:%d`
+- `TPS1`
+- `load from nvram:`
+- `dfp(0x%llx)\n`
+- `registerService`
+- `Preparing to establish new link\n`
+- `unsupported conversion YCbCr444 to YCbCr422\n`
+- `IODPSACAggressorTable`
+- `dp-switch-dfp-endpoint`
+- `_dfps = OSArray::withCapacity() failed!\n`
+- `SetState`
+- `cacheContentProtectionCapabilities`
+- `Failed to set device FEC Symbol\n`
+- `IODPLegacyDualDVIService`
+- `com.apple.private.ioavfamily.hdmi-port-debug`
+- `_cecService termination failed\n`
+- `MaxLinkRateScalar`
+- `service not matched: \"%s\"; waiting...\n`
+- `maxLaneCount = %ud\n`
+- `_writeDPCD`
+- `D1baba`
+- `Failed to set device extended lane count\n`
+- `handleIRQGated`
+- `AV Device published %lld..\n`
+- `Model Year`
+- `Requesting re-registration of port\n`
+- `inactiveSinkDetected_block_invoke`
+- `configureHorizontalBlankingExpansion`
+- `TileW`
+- `reset from dark wake state\n`
+- `Sink-specific Interrupt received.\n`
+- `enabled=%u ret=0x%08x\n`
+- `warning: CR incomplete - already at minimum link rate\n`
+- `Automated pattern test request received: Test pattern %u.\n`
+- `during RX`
+- `PlugOrientation`
+- `controller`
+- `UFP collection iterator invalidated!\n`
+- `forceInactiveSink_block_invoke`
+- `IOAVCECInterface`
+- `Unable to set the device training and adjustment levels\n`
+- ` MAX_DEVS_EXCEEDED`
+- `sendMessage ret=0x%08x\n`
+- `no_entry`
+- `_dpSwitch=0x%llx _role=%u%s _address.domain=%u%s _address.endpoint=%u%s _address.port=%u%s\n`
+- `unregisterPort_block_invoke`
+- `EQ not done @ loopCount=%u laneCount=%u linkRate=%llu bps\n`
+- `Read of EDID block 0 returned 0x%08x\n`
+- `collectFromDevice`
+- `CEC TX time out\n`
+- `SupportsFEC`
+- `notice: ignoring %s event during system sleep.\n`
+- `message`
+- `Sink video status detected!\n`
+- `Automated phy test request with SEL: %d, ret=0x%08x\n`
+- `transport-index`
+- `site.IODPEventLog`
+- `Major`
+- `EventLog`
+- `Unplug`
+- `ignoring redundant wake notification...\n`
+- `Unable to read ESI IRQ status\n`
+- `setLinkRate`
+- `ufp->validateConnection(dfp(0x%llx)) ret=0x%08x score=%u\n`
+- `ASSREnabled`
+- `warning: failed to read LTTPR ret=0x%08x`
+- `handleDPSwitchWillSleep`
+- `notice: ignoring IRQ_HPD event during system sleep.\n`
+- `RX Message not ACKED, dropping it.\n`
+- `enableCECMessagesGated`
+- `DFPMaxClockRate`
+- `available-ufps`
+- `disconnect_block_invoke`
+- `getMaxLaneCount`
+- `PortNumber`
+- `deviceBusyTimeout_block_invoke`
+- `TileY`
+- `com.apple.private.ioavfamily.hdmi-port`
+- `collectAll`
+- `DFPSupportsColorFormatConversion`
+- `enqueueAction_block_invoke`
+- `Invalid automated test request.\n`
+- `IODPSwitchAllocationState`
+- `Skipping to fast link training\n`
+- `deactivate_block_invoke`
+- `notice: forwarding inactive sink notification on idle port...\n`
+- `Disabling CEC messages...\n`
+- `message queue depth reached %u (unexpected). Please file a radar under 'IODisplayPortFamily | all'.\n`
+- `Unable to allocate matchingDict\n`
+- `sendMessage`
+- `warning: ignoring display release with no action\n`
+- `12112`
+- `service`
+- `setDownspread`
+- `waitForCECTXAvailability`
+- `handleSendCEC`
+- `failed to create serializer for Lane Mapping\n`
+- `[row serialization failed]`
+- `sending frame: %s\n`
+- `Failed to get IOAVServiceUserInterface with ret=0x%08x\n`
+- `Failed to read EDID with ret=0x%08x\n`
+- `checkEDIDGated`
+- `setQualityPattern`
+- `START`
+- `handleSinkCountChanged`
+- `warning: CP_IRQ: Bstatus=0x00: should never occur!\n`
+- ` READY`
+- `handleTransportMatched`
+- `warning: Max link rate %llubps failed validation, reducing to %llubps\n`
+- `before RX`
+- `site.IODPCECInterface`
+- `deviceNotResponding_block_invoke`
+- `current-state`
+- `ApplyState`
+- `cec_snooping_enabled`
+- `Converting RGB444 -> YCbCr444\n`
+- `Unable to set ALP-DP extended device training and adjustment levels\n`
+- `notice: ignoring IRQ_HPD event on inactive port.\n`
+- `Sleeping on commandGate until EDID is available..\n`
+- `applyState_block_invoke_2`
+- `1211111212221212111112222211111111111122222222222222222222222222222222222222`
+- `caller forced link training`
+- `new state=%s (%d) ret=0x%08x\n`
+- `Failed to set training pattern %s and levels\n`
+- `IODP13Service`
+- `failed to create serializer for Min Lane Count\n`
+- `thread_call_allocate_with_options() failed\n`
+- `DisplayHints`
+- `inactiveSinkDisplayReleaseTimerAction`
+- `acknowledgeLinkServiceIRQ`
+- `Enabling HorizontalBlankingExpansion with HTotal: %u  HStart: %u  HSyncWidth: %u  HSyncPolarity: %u\n`
+- `IODPPortUserInterfaceSupported`
+- `12122222111`
+- `Failed to set controller quality pattern\n`
+- `registerPort() ret=0x%08x\n`
+- `warning: dfp(0x%llx): unknown event %s <0x%x>\n`
+- `12111122212222`
+- `checkLinkGated`
+- `MAX_DEVS_EXCEEDED: Aborting.\n`
+- `12111112122212121111111111112`
+- `LaneMapping`
+- `A44606`
+- `error reading RxCaps (0x%08x); assuming not HDCP 2.2 capable\n`
+- `RxCaps=0x%06x\n`
+- `DFPSupportsPassThroughYCbCr422`
+- `makeInactiveUFPAvailable_block_invoke`
+- `port remains active after DisplayRelease; calling disconnectDFP anyway()\n`
+- `collectFromVideoInterface`
+- `prepareLinkGated`
+- `setEnhancedMode`
+- `warning: ignoring redundant deactivate()\n`
+- `getMaxDriveSettings`
+- `failed to create serializer for Max Link Rate\n`
+- `Enqueue`
+- `dp_service_mask`
+- `skipping ufp(%llx) -> noconnect...\n`
+- `loopCount=%d maxCRDone=%d eqDoneCount=%d symbolLockCount=%d interlane_align_done=%d\n`
+- `checkLaneStatusOccurred`
+- `CP_IRQ: Binfo=0x%04x:%s%s\n`
+- `Writing Virtual DPCD bytes - address=0x%x, length=%d, index=%d\n`
+- `IODPSwitchUFP`
+- `handleIRQAutomatedTest`
+- `Validating %s -> %s\n`
+- `site.IODPHDMIPortUserClient`
+- `enqueued message=%s\n`
+- `SupportsEnhancedMode`
+- `Quick`
+- `Unable to read lower IRQs\n`
+- `IODPEventLog`
+- `enabling actions\n`
+- `MaxH`
+- `CRIterations`
+- `failed to create serializer for Downspread\n`
+- `handleDeviceBusyTimeout`
+- `EQ DONE @ loopCount=%u laneCount=%u linkRate=%llu bps\n`
+- `Rows`
+- `_messageQueueLock = IOLockAlloc() failed\n`
+- `enqueuePortMessage`
+- `Failed to UnSerialize DisplayAttributes with ret=0x%08x\n`
+- `unregisterPort() ret=0x%08x\n`
+- `notice: starting %u second _inactiveSinkDisplayReleaseTimer...\n`
+- `failed to get PMRootDomain!\n`
+- `Failed to set training pattern TPS1 and levels\n`
+- `IODPHDMIPortUserClient`
+- `TPS4`
+- `link is inactive`
+- `_waitingVirtualEDID=%d..\n`
+- `site.IODPLinkRateRange`
+- `cecInterfaceTerminateGated`
+- `i8@?0`
+- `setDisplayHints`
+- `site.IODPHDCPMessageTransportDelayContentType`
+- `DFPSupportsConversionToYCbCr422`
+- `checkInitialHPDState_block_invoke`
+- `signaling display wake event source; thread call was pending=%s\n`
+- `could not enable CEC ret=0x%08x\n`
+- `Attempting to set drive settings for all lanes to swing=%d eq=%d\n`
+- `warning: warning: MAX_LANE_COUNT (%u) exceeds kIODPMaxExternalLanes; limiting to %u\n`
+- `hints (re)setting bypassed during reallocation\n`
+- `???`
+- `updatePort`
+- `Failed to set device FEC Ready\n`
+- `activate_block_invoke`
+- `dpxbar`
+- `evaluateNeedForTraining ret=0x%08x trainingRequired=%d\n`
+- `ret=0x%0x\n`
+- `Unable to add value to dictionary\n`
+- `handleInactiveSinkDetected`
+- `domain%d: dfp %s,%d not valid\n`
+- `Failed to enable conversion to YCbCr444\n`
+- `clearTrainingPattern`
+- `getLinkRate`
+- `1211111212221212111222221111111111222122222122222221222221222221222222222222222222222222222222222222222222222222222111111111211111111222211111122222222222222222222222211122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `unsupported downstream color depth (%u)\n`
+- `121111121222121211122222222111211111112`
+- `Location`
+- `reduceLaneCount`
+- `Type`
+- `ufp-count`
+- `forwardHotPlugDetectChange`
+- `MinLaneCount`
+- `A44610`
+- `warning: ignoring IRQ_HPD event with no action\n`
+- `%08X-%04X-%04X-%04X-%04X%08X`
+- `Ignoring %s event, dpTransportAvailable=%s, portActivated=%s\n`
+- `getSupportsLaneMapping`
+- `link unstable, retraining...\n`
+- `cecInterfaceTerminate`
+- `A44602`
+- `DFPPortCount`
+- `CP2520 Pattern 3`
+- `B16@?0^{IODPTXPortConnectionState=b1b1b2b4b4b4b4b4b8}8`
+- `handleDeviceServiceIRQ`
+- `disable`
+- `Failed to UnSerialize EDID with ret=0x%08x\n`
+- `ScramblingInhibited`
+- `Failed to set device ASSR mode\n`
+- `eventOccurredOnDFP`
+- `IODPServiceAUXOnly`
+- `SupportsHorizontalBlankingExpansion`
+- `warning: warning: MAX_LANE_COUNT_EXT (%u) exceeds kALPDPMaxExtendedLanes; limiting to %u\n`
+- `Could not read ALP-DP extended lane status mask registers\n`
+- `dp-switch-dfp-port`
+- `_dfpEndpointNames = OSArray::withCapacity() failed!\n`
+- `ESI0 does not match Device Service IRQ reg ESI=0x%02x, dev=0x%02x\n`
+- `%s failed to create 'index'\n`
+- `_setLaneCount`
+- `SetHints`
+- `disableActions_block_invoke`
+- `MaxTotalPixelRate`
+- `ignoring uninteresting power state notification...\n`
+- `copyAgileLinkRateTable`
+- `handleCECTxInterrupt`
+- `site.IODPEmbeddedDevice`
+- `IODPTXPortEventLog`
+- `IODeviceTree`
+- `handleSystemWillSleep_block_invoke`
+- `CP_IRQ: RxStatus=0x%02x:%s%s%s%s%s\n`
+- `recvMessage ret=0x%08x\n`
+- `dp_device_mask`
+- `ufp-endpoints`
+- `makeInactiveUFPAvailable_block_invoke_2`
+- `retrainLinkGated`
+- `***VGATX clock (%ucsc) exceeds max pixel clock (%ucsc)\n`
+- `failed to clear LINK_SERVICE_IRQ_VECTOR_ESI0 ret=0x%08x\n`
+- `IODPLinkRateRangeTable`
+- `HDCP 2.x capable found\n`
+- `i16@?0^{IODPSwitchAllocationState=^^?i^{OSData}^{IODPTXPortConnectionState}I}8`
+- `applyState_block_invoke`
+- `Sleep`
+- ` MAX_CASCADE_EXCEEDED`
+- `length=%u:\n`
+- `Aggressor`
+- `warning: Ignoring port events from transport for virtual mode\n`
+- `warning: ignoring inactive sink notification on inactive port.\n`
+- `dfp(0x%llx): dropping displayReleaseOccurredOnPort()\n`
+- `SinkIEEEOUI`
+- `handleIRQRemoteCommand`
+- `Attempting to set link rate to 0x%x\n`
+- `RetrainLink`
+- `handleSystemWillSleep`
+- `runLinkTrainingStateMachine`
+- `ParityBitErrorCounts`
+- `site.IODPServiceConcreteUserClient`
+- `Virtual Device`
+- `TileFlag`
+- `_ufpEndpointsCount = 0!\n`
+- `port address not valid\n`
+- `ptr to EDID block is null\n`
+- `IODPControllerUserClient`
+- `1212`
+- `setFECReady`
+- `serviceMatching() failed\n`
+- `read Bstatus ret=0x%08x\n`
+- `handleDSCStatusChanged`
+- `stop`
+- `Min`
+- `notice: detected SINK_COUNT=0, calling inactiveSinkDetected()...`
+- `handleValidateLink`
+- `HorizontalBlankingExpansion not supported\n`
+- `displayAllocationEventOccurred_block_invoke_2`
+- `LANE%d_STATUS=0x%02x: LANE%u_CR_DONE=%d\n`
+- `linkStable=%s\n`
+- `warning: warning: DSC_MAX_SLICE_WIDTH=%u above maximum allowed, clamping to (UINT16_MAX / 320)\n`
+- `evaluateNeedForTraining`
+- `site.IODPSACAggressor`
+- `IODTNVRAM`
+- `receiveCECGated ret=0x%08x\n`
+- `HorizontalBlankingExpansion buffer size is %d pixels\n`
+- `updateLinkStatus`
+- `_controller->setTrainingPattern() ret=0x%08x\n`
+- `\"runActionBlock() ret=0x%08x; failed to dequeue action! Please file a radar under 'IODisplayPortFamily | all'.\\n\" @%s:%d`
+- `Enabling CEC snooping mode`
+- `Done`
+- `Attempting to free resources for pending DFPs..`
+- `Failed to register for interest notifications on %s!`
+- `ALP-DP ver %02xh; elc=%u qlt=%u\n`
+- `IODPSwitchEventLog`
+- `link stable. No need to train\n`
+- `%s event is already pending, dropping\n`
+- `removeCECService failed\n`
+- `failed to init IODPPortService\n`
+- `Starting link in requested mode\n`
+- `colorimetry has to match if encoding is the same\n`
+- `setASSREnabled`
+- `deactivate`
+- `EQIterations`
+- `mask=0x%04x\n`
+- `%s matching for endpoint %u\n`
+- `IODPDeviceUserInterfaceSupported`
+- `SupportsASSR`
+- `IODPTXPort.cpp`
+- `CP2520 Pattern 2`
+- `eventOccurredOnDFP_block_invoke`
+- `CR RETRY with new drive settings @ auxAckCount=%u laneCount=%u linkRate=%llu bps\n`
+- `site.IODPLegacyDualDVIService`
+- `Stopped service\n`
+- `getDownstreamPortCapabilityInfoDPCD`
+- `dfp-endpoints`
+- `domain%d: disconnect ufp %s,%d from dfp %s,%d ret=0x%08x\n`
+- `enter dark wake state\n`
+- `Beginning %s phase of link training: laneCount=%u linkRate=%llu bps fast=%d\n`
+- `_setQualityPattern`
+- `Failed to set device enhanced mode\n`
+- `_workLoop->addEventSource(_deactivateTimeoutSource) failed\n`
+- `publishCECInterfaceGated`
+- `Content Protection Interrupt received.\n`
+- `site.IODPSACAggressorTable`
+- `CP_IRQ timeout: RxStatus=0x%02x:%s%s%s%s%s\n`
+- `wrong service type: \"%s\"  expected: \"%s\"\n`
+- `ConfigChange`
+- `getMaxLinkRate`
+- `ret=0x%08x linkStable=%s\n`
+- ` REAUTH_REQ`
+- `configureColorFormatConversion`
+- `cecInterfacePublished`
+- `%*D`
+- `Restoring virtual mode %d\n`
+- `PreEmphasis`
+- `dfp->validateConnection(ufp(0x%llx)) ret=0x%08x score=%u\n`
+- `read Binfo ret=0x%08x\n`
+- `***HTotal (%u) is less than min (%u)\n`
+- `Failed to set controller lane count\n`
+- `\"runActionBlock() ret=0x%08x; failed to enqueue %s action! Please file a radar under 'IODisplayPortFamily | all'.\\n\" @%s:%d`
+- `IODPService`
+- `IDLE`
+- `linkRate=%u\n`
+- `acknowledgeIRQ`
+- `NoiseWidth`
+- `Attempting to %s scrambling\n`
+- `pending-dfps`
+- `unsupported conversion RGB to YCbCr\n`
+- `IODPPortService`
+- `DFP Type Description`
+- `Failed to get DisplayAttributes as OSDictionary\n`
+- `SupportsFastLinkTraining`
+- `getAddressPropertyWithProvider`
+- `enableActions_block_invoke`
+- `deactivateTimeoutOccurred`
+- `TrainLink`
+- `invalid object (type %s) in collection!\n`
+- `processLinkStateStart`
+- `skipCheckLink=%s\n`
+- `Could not read ALP-DP extended adjustment request registers\n`
+- `notice: calling displayRelease()...\n`
+- `Unsupported video test bit depth: %d\n`
+- `Pushing virtual DPCD...\n`
+- `ALP-DP laneCount=%u, extLaneCount=%u\n`
+- `Unable to update ESI values\n`
+- `IODPServiceUserClient`
+- `setUserClient`
+- `port-number`
+- `setting power level = %d\n`
+- `powerStateWillChangeTo_block_invoke`
+- `CR DONE @ auxAckCount=%u laneCount=%u linkRate=%llu bps\n`
+- `Unable to read DSC status\n`
+- `\"%s::%s(0x%llx): _messageQueue.enqueue(\\\"%s\\\") failed! Please file a radar under 'IODisplayPortFamily | all'.\\n\" @%s:%d`
+- `writing I2C to virtual device i2cAddr=%x, offset=%x, length=%d\n`
+- `DFP Capabilities [%d]: 0x%02X 0x%02X 0x%02X 0x%02X\n`
+- `v16@?0^{IOTimerEventSource=^^?i^{IOEventSource}^{OSObject}^?B^{IOWorkLoop}^v^{ExpansionData}^vQ^{ExpansionData}}8`
+- `error: _receivePortNotificationThreadCall is null!\n`
+- `warning: invalid DPCD_REV 0x%02x\n`
+- `getRequestedDriveSettings`
+- `YES`
+- `Bad`
+- ` LINK_INTEGRITY_FAILURE`
+- `IODPServiceUserInterfaceSupported`
+- `updateLinkSinkDeviceStatus`
+- `handleUnprotectLink error, ret=0x%08x\n`
+- `ManufacturerID`
+- `failed to create serializer for Power\n`
+- `updateLinkSinkDeviceStatus returned 0x%08x\n`
+- `disableCECMessagesGated`
+- `dfp %d:%d not registered\n`
+- `validateHorizontalBlankingExpansion`
+- `Failed to disable conversion to YCbCr422\n`
+- `ModelYear`
+- `Failed to copyDisplayAttributes with ret=0x%08x\n`
+- `121111121222121211111111111112111`
+- `dp_log_level`
+- `device asleep\n`
+- `DP VSC required but not supported\n`
+- `Failed to get IODPDeviceUserInterface with ret=0x%08x`
+- `Action`
+- `failed to create serializer for Max Lane Count\n`
+- `MaxLinkTrainingPattern`
+- `setVirtualMode_block_invoke`
+- `TX send bit still set.\n`
+- `Device ASSR unsupported\n`
+- `dark wake: %d, sleep pending: %d, system sleeping: %d\n`
+- `LANE%d_STATUS=0x%02x: LANE%u_CR_DONE=%d LANE%u_CHANNEL_EQ_DONE=%u, LANE%u_SYMBOL_LOCKED=%u\n`
+- `DFP Type`
+- `site.IODPVirtualDevice`
+- `Could not read adjustment request registers\n`
+- `color depth conversion not supported\n`
+- `MaxLaneCount`
+- `_workLoop->addEventSource(_inactiveSinkDisplayReleaseTimer) failed\n`
+- `hints: valid=%s tiled=%s tile=(%u,%u) native=%ux%u ret=0x%08x\n`
+- `synthesizing message=%s: HPD %u->%u\n`
+- `A44614`
+- `setOwner_block_invoke`
+- `80-bit custom pattern`
+- `Sink video status timeout, proceeding anyway\n`
+- `SinkCount`
+- `sameAdjustmentRequestCount=%u\n`
+- ` PAIRING_AVAILABLE`
+- `IODPRXPort`
+- `site.IODPAgileLinkRateTable`
+- `NULL inMessage\n`
+- `Domain%u: %s %s%u,%u(0x%llx) (%s,%u)\n`
+- `setLaneMap`
+- `site.IODPService`
+- `CorrectedBlockErrorCounts`
+- `dequeuePortMessage`
+- `cecInterfaceTerminateGated failed, ret=%08x\n`
+- `Wake`
+- `***HDMITX character rate (%ucsc) exceeds max TMDS character rate (%ucsc)\n`
+- `handleTestRequestPhy`
+- `checking ufp(%llx) -> dfp(%llx)...\n`
+- `setLinkRate with _transport=0x%llx, linkRate=%u\n`
+- `DFP: count=%d, supportsConversion = %d, YCbCr422 = %d, YCbCr420 = %d, YCbCr444->YCbCr422 = %d, YCbCr444->YCbCr420 = %d, maxClockRate = %ul, maxColorDepth = %d\n`
+- `IODPTXVirtualPort`
+- `Ignoring %s event, dpTransportAvailable=%s, portActivated=%s, _hpdAsserted=%s\n`
+- `received notification that system is going to wake.\n`
+- `handleDeviceNotResponding`
+- `CP_IRQ received--unexpected content protection type (%u)\n`
+- `External`
+- `_%ss->setObject(port) failed!\n`
+- `notice: found sink inactive on dfp(%llx)\n`
+- `SymbolErrorCounts`
+- `CR`
+- `Horizontal Active param is 0\n`
+- `Failed to init Analytics\n`
+- `IODPPortService failed to start\n`
+- `handleSendAction`
+- `dp_device_level`
+- `handleIRQHDMILinkStatusChanged`
+- `av-no-link-support`
+- `setDSCEnabled`
+- `TileNumV`
+- `12111112122212121122222112211111111112111`
+- `connect %d:%s,%u -> %s,%u\n`
+- `Stream clock mismatch! requested=%d, actual=%d\n`
+- `site.IODPLinkRateRangeTable`
+- `VoltageSwing`
+- `forwardInterruptRequest`
+- `signalling\n`
+- `\"_provider not registered with power plane\" @%s:%d`
+- `QueueOp`
+- `synthesizing displayRequest due to !_displayAllocated...\n`
+- `setPhysicalAddress`
+- `setPower`
+- `ok: %u, UFP endpoints: %u, DFP endpoints: %u\n`
+- `Failed connect on %s,%u since it is removed\n`
+- `Unsupported video test color format: %d\n`
+- `IODPPortUserClient`
+- `dp_controller_level`
+- `IOUserClientClass`
+- `IODPDevice`
+- `site.IODPSwitch`
+- `UFP(0x%llx) is not available.\n`
+- `called while dfp == NULL!\n`
+- `Unsupported format conversion\n`
+- `_setScramblingInhibited`
+- `property not found: \"%s\"\n`
+- `TileH`
+- `setAgileLinkRateRanges`
+- `Failed to enable conversion to YCbCr422\n`
+- `Attempting to set max link rate to 0x%x\n`
+- `site.IODPVirtualPortService`
+- `setCECHPDStatus`
+- `upstream must be sRGB\n`
+- `index=%u ret=0x%08x\n`
+- `site.IODPSwitchEventLog`
+- `Week of Manufacture`
+- `IODPCECController.cpp`
+- `BranchIEEEOUI`
+- `dp-switch-parent not matched; waiting...\n`
+- `forceHotPlugDetect`
+- `getDriveSettings`
+- `warning: EQ not done (Loop Count > 5) @ laneCount=%u linkRate=%llu bps\n`
+- `updateLinkSinkDeviceStatus() ret=0x%08x\n`
+- `IODPPortService.cpp`
+- `IRQ`
+- `Branch`
+- `provider property '%s' is not set\n`
+- `forwardDisplayRequest`
+- `site.IODPControllerConcreteUserClient`
+- `AlignmentStatusFailures`
+- `Max`
+- `warning: _cecService=0x%llx\n`
+- `warning: warning: DSC_MAX_SLICE_WIDTH=%u below minimum allowed, promoting to 8\n`
+- `B16@?0^{IODPTXPort=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}^^?^^?^^?^^?i[8I]^{IODPSwitch}^{IOService}^{IODPTXPort}^{IOWorkLoop}^{IOCommandGate}^{IODPTXPortEventLog}^{IOTimerEventSource}^?^?^?^?^{thread_cal`
+- `laneCount=%u ret=0x%08x\n`
+- `EQ`
+- `warning: AUX_ACK without LANEx_CR_DONE with the same ADJ_REQ %u times\n`
+- `SerialNumber`
+- `site.IODPDevice`
+- `sendActions`
+- `setVirtualDPCD`
+- `failed to extract phandle value from property \"%s\"\n`
+- `IOWorkLoop::workLoop() failed\n`
+- `Failed to clear training pattern and send idle pattern\n`
+- `Unable to cast service \"%s\" (0x%llx) to IOAVCECInterface\n`
+- `IODPHDCPMessageTransport`
+- `tryReleaseInactiveSink_block_invoke`
+- `ProductName`
+- `MAX_CASCADE_EXCEEDED: Aborting.\n`
+- `   hWidth=%5u vHeight=%4u misc1=0x%02x misc2=0x%02x numerator=%3u\n`
+- `failed to create serializer for Max Link Training Pattern\n`
+- `NO`
+- `notice: ignoring DisplayRequest during system sleep.\n`
+- `PRBS7`
+- `IODPCECInterface`
+- `Device DSC unsupported\n`
+- `handleCECRxInterrupt`
+- `site.IODPDeviceConcreteUserClient`
+- `startLinkGated`
+- `upstream must be RGB or YCbCr\n`
+- `IODPPortAnalyticsCollector`
+- `dptxport`
+- `getDisplayHints`
+- `dfp(0x%llx) did sleep\n`
+- `unsupported pass through YCbCr420\n`
+- `_setMinLinkRate`
+- `dp-switch-dfp-domain`
+- `IODPControllerConcreteUserClient`
+- `handleProtectLink`
+- `Unable to allocate OSNumber\n`
+- `Failed to allocate eventLog\n`
+- `displayWakeOccurred_block_invoke`
+- `warning: ignoring RX_CAP_CHANGED IRQ (unsupported)\n`
+- `site.IODPController`
+- `getSupportsHPD`
+- `warning: DSC RC BUFFER OVERFLOW\n`
+- `ok=%s\n`
+- `Failed to register for transport matching notifications!`
+- `Done collecting all DP Analytics data...\n`
+- `message=%s dpTransportAvailable=%s\n`
+- `HorizontalBlankingExpansion attributes are the same\n`
+- `Ranges`
+- `cacheCapabilities`
+- `unexpected action value (%u); ignoring\n`
+- `Tiled`
+- `interruptRequestOccurred_block_invoke`
+- `EQ FAILED: Already at minimum link rate - end training\n`
+- `IOAVService`
+- `connectTo`
+- `processSinkCountOccurred`
+- `Unsupported video test pattern: %d\n`
+- `handleIRQConnectedOffEntryRequested`
+- `Attempting to set lane count to %u\n`
+- `FirmwareRevision`
+- `IODPDeviceConcreteUserClient`
+- `applyState`
+- `site.IODPPortUserClient`
+- `connect(ufp(0x%llx), dfp(0x%llx)) ret=0x%08x\n`
+- `TEST_EDID_CHECKSUM write returned 0x%02x\n`
+- `Enabling CEC messages...\n`
+- `LaneCount`
+- `warning: CR RETRY @ laneCount=%u linkRate=%llu bps\n`
+- `Good`
+- `CEC TX Send bit stuck high ret=0x%08x\n`
+- `YearOfManufacture`
+- `Registered`
+- `failed to create serializer for Min Link Rate Scalar\n`
+- `Hibernate`
+- `Link training ret=0x%08x after %d tries time=%lld ms\n`
+- `dp-switch-parent`
+- `removeCECService`
+- `ActionEnabled`
+- `exit dark wake state\n`
+- `Attempting to set min lane count to %u\n`
+
+**[__TEXT.__os_log]**
+
+- `IOAV[%d] %s<0x%llx>::%s: serviceMatching() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set device FEC Ready\n`
+- `IOAV[%d] %s<0x%llx>::%s: getSinkStatus failed, ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Enabling CEC snooping mode`
+- `IOAV[%d] %s<0x%llx>::%s: warning: DSC CHUNK LENGTH ERROR\n`
+- `IOAV[%d] %s<0x%llx>::%s: upstream must be sRGB\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set device link rate\n`
+- `IOAV[%d] %s<0x%llx>::%s: capabilities=%lx powerState=%lx whatDevice?=0x%llx _pmRootDomain?=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for Max Link Rate Scalar\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to init IODPPortService\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to disable conversion to YCbCr422\n`
+- `IOAV[%d] %s<0x%llx>::%s: disabling actions\n`
+- `IOAV[%d] %s<0x%llx>::%s: dfp %d:%d not registered\n`
+- `IOAV[%d] %s<0x%llx>::%s: sender(0x%llx) != dfp(0x%llx)\n`
+- `IOAV[%d] %s<0x%llx>::%s: Sink video status detected!\n`
+- `IOAV[%d] %s<0x%llx>::%s: YCbCr420 can't be converted\n`
+- `IOAV[%d] %s<0x%llx>::%s: Test handler returned 0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: notice: ignoring DisplayRequest during system sleep.\n`
+- `IOAV[%d] %s<0x%llx>::%s: received notification that system is going to sleep.\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to enable conversion to YCbCr444\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set controller FEC Ready\n`
+- `IOAV[%d] %s<0x%llx>::%s: no work loop!\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: ignoring plug event with no action\n`
+- `IOAV[%d] %s<0x%llx>::%s: runAction publishCECInterfaceGated failed, ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: ignoring inactive sink notification on inactive port.\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: AUX_ACK without LANEx_CR_DONE with the same ADJ_REQ %u times\n`
+- `IOAV[%d] %s<0x%llx>::%s: CR FAIL: no LANEx_CR_DONE on lowest-numbered lane(s) - end training\n`
+- `IOAV[%d] %s<0x%llx>::%s: unsupported conversion RGB to YCbCr\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to add parent matching dictionary\n`
+- `IOAV[%d] %s<0x%llx>::%s: EQ FAILED: Already at minimum link rate - end training\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unsupported video test color format: %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Converting %s -> %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to set max lane count to %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for Downspread\n`
+- `IOAV[%d] %s<0x%llx>::%s: Device ASSR unsupported\n`
+- `IOAV[%d] %s<0x%llx>::%s: dfp(0x%llx) will wake\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to set the device training and adjustment levels\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to clear DEVICE_SERVICE_IRQ_VECTOR ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Starting link in requested mode\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for Min Link Rate Scalar\n`
+- `IOAV[%d] %s<0x%llx>::%s: incompatible port roles: %u -> %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Training %s caller-provided training data.\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to read IRQ Status ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: setPhysicalAddressGated ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: missing dp-switch-ufp-endpoint\n`
+- `IOAV[%d] %s<0x%llx>::%s: registerPort() ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: notice: ignoring IRQ_HPD event on inactive port.\n`
+- `IOAV[%d] %s<0x%llx>::%s: _dfpEndpointsCount = 0!\n`
+- `IOAV[%d] %s<0x%llx>::%s: ADJUST_REQUEST_LANE%u<voltage,eq>(%d,%d) <minimum>(%d,%d) => <effective>(%d,%d)\n`
+- `IOAV[%d] %s<0x%llx>::%s: linkStable=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s:    hTotal=%5u vTotal =%4u hStart=%3u vStart =%3u hSync=%3u vSync=%3u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Requesting re-registration of port\n`
+- `IOAV[%d] %s<0x%llx>::%s: Ignoring %s event, dpTransportAvailable=%s, portActivated=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: ignoring redundant deactivate()\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create command gate!\n`
+- `IOAV[%d] %s<0x%llx>::%s: Pushing virtual EDID...\n`
+- `CP_IRQ timeout: RxStatus=0x%02x:%s%s%s%s%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: _controller->setTrainingPattern() ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: DP VSC required but not supported\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: DSC RC BUFFER UNDERRUN\n`
+- `IOAV[%d] %s<0x%llx>::%s: unsupported pass through YCbCr420\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to copyDisplayAttributes with ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for Max Link Training Pattern\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: warning: MAX_LANE_COUNT (%u) exceeds kIODPMaxExternalLanes; limiting to %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Writing Virtual DPCD bytes - address=0x%x, length=%d, index=%d\n`
+- `NULL HDCP message\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for SupportsALPM\n`
+- `IOAV[%d] %s<0x%llx>::%s: notice: ignoring %s event during system sleep.\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to read ESI Link Service status\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to enable conversion to YCbCr420\n`
+- `invalid HDCP message type for receiving\n`
+- `IOAV[%d] %s<0x%llx>::%s: Only %d UFP ports are registered out of %d yet so pending allocation\n`
+- `IOAV[%d] %s<0x%llx>::%s: ignoring inactive sink notification on non-idle port\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: Max V-swing without LANEx_CR_DONE: maxVSwingCount=%u laneCount=%u linkRate=%llu bps\n`
+- `IOAV[%d] %s<0x%llx>::%s: TX send bit still set.\n`
+- `IOAV[%d] %s<0x%llx>::%s: hints: valid=%s tiled=%s tile=(%u,%u) native=%ux%u mainUFP=0x%08x peerUFP=0x%08x ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: notice: starting %u second _inactiveSinkDisplayReleaseTimer...\n`
+- `IOAV[%d] %s<0x%llx>::%s: provider property '%s' is not set\n`
+- `IOAV[%d] %s<0x%llx>::%s: CP_IRQ: RxStatus=0x%02x:%s%s%s%s%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Stream clock mismatch! requested=%d, actual=%d\n`
+- `NULL inMessage\n`
+- `IOAV[%d] %s<0x%llx>::%s: RxCaps=0x%06x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to clear training pattern and send idle pattern\n`
+- `IOAV[%d] %s<0x%llx>::%s: unsupported conversion YCbCr422 to YCbCr420\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to read EDID with ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: failure to parse payload for '%s'\n`
+- `IOAV[%d] %s<0x%llx>::%s: Invalid automated test request.\n`
+- `IOAV[%d] %s<0x%llx>::%s: Configuring Color Format Conversion\n`
+- `IOAV[%d] %s<0x%llx>::%s: domain%d: disconnect ufp %s,%d from dfp %s,%d ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: cec specific status=0x%02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Could not create the CEC Service\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to get IOAVVideoInterfaceUserInterface with ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: setting virtual mode, new=%d, old=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: dfp->connectTo(this) ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to clear training pattern\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to clear LINK_SERVICE_IRQ_VECTOR_ESI0 ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: dequeued message=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: warning: MAX_LANE_COUNT_EXT (%u) exceeds kALPDPMaxExtendedLanes; limiting to %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: linkRate=%lluGbps ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: sameAdjustmentRequestCount=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set device extended lane count\n`
+- `IOAV[%d] %s<0x%llx>::%s: checking ufp(%llx) -> dfp(%llx)...\n`
+- `IOAV[%d] %s<0x%llx>::%s: ret=0x%08x ufp=0x%llx dfp=0x%llx\n`
+- `IOAV[%d] %s<0x%llx>::%s: link stable. No need to train\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to allocate eventLog\n`
+- `IOAV[%d] %s<0x%llx>::%s: ***HDMITX character rate (%ucsc) exceeds max TMDS character rate (%ucsc)\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: warning: DSC_MAX_SLICE_WIDTH=%u above maximum allowed, clamping to (UINT16_MAX / 320)\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: CR LOST (PARTIALLY) @ loopCount=%u laneCount=%u linkRate=%llu bps\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unsupported video test pattern: %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: Ignoring port events from transport for virtual mode\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to add value to dictionary\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set controller enhanced mode\n`
+- `IOAV[%d] %s<0x%llx>::%s: Link training ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to update ESI values\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to read DSC status\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: _cecService=0x%llx\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to cast service \"%s\" (0x%llx) to IOAVCECInterface\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set controller FEC symbol\n`
+- `IOAV[%d] %s<0x%llx>::%s: %s: not specified; defaulting to 0.\n`
+- `IOAV[%d] %s<0x%llx>::%s: action queue depth reached %u (unexpected). Please file a radar under 'IODisplayPortFamily | all'.\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to apply block\n`
+- `IOAV[%d] %s<0x%llx>::%s: Reading DPCD_ADDR_TEST_PHY reg=0x%02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: unsupported downstream color depth (%u)\n`
+- `IOAV[%d] %s<0x%llx>::%s: domain%d: ufp %s,%d not valid\n`
+- `IOAV[%d] %s<0x%llx>::%s: reset from dark wake state\n`
+- `IOAV[%d] %s<0x%llx>::%s: Pushing FW update...\n`
+- `IOAV[%d] %s<0x%llx>::%s: no dp-switch-parent\n`
+- `IOAV[%d] %s<0x%llx>::%s: IOWorkLoop::workLoop() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: ok: %u, UFP endpoints: %u, DFP endpoints: %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: caller=%s; signaling display allocation event source; thread call was pending=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: ignoring uninteresting power state notification...\n`
+- `IOAV[%d] %s<0x%llx>::%s: CR incomplete @ auxAckCount=%u laneCount=%u linkRate=%llu bps\n`
+- `IOAV[%d] %s<0x%llx>::%s: Automated phy test request with SEL: %d, ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Scheduling analytics at %llu\n`
+- `IOAV[%d] %s<0x%llx>::%s: _%ss->setObject(port) failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: HorizontalBlankingExpansion not supported\n`
+- `IOAV[%d] %s<0x%llx>::%s: thread call was pending=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Done collecting all DP Analytics data...\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to get IOAVServiceUserInterface with ret=0x%08x\n`
+- `recvMessage ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to set the device adjustment levels\n`
+- `IOAV[%d] %s<0x%llx>::%s: setting power level = %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: _workLoop->addEventSource(_inactiveSinkDisplayReleaseTimer) failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: notice: updating %u second _inactiveSinkDisplayReleaseTimer...\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: AUX_ACK without LANEx_CR_DONE %u times\n`
+- `IOAV[%d] %s<0x%llx>::%s: trainLink ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: EDID block 0: calculated checksum = 0x%02x, EDID byte 128 = 0x%02x, response checksum = 0x%02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: lowerIRQs=0x%02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: warning: DSC_MAX_SLICE_WIDTH=%u below minimum allowed, promoting to 8\n`
+- `IOAV[%d] %s<0x%llx>::%s: Missing DFP port from nvram configuration\n`
+- `IOAV[%d] %s<0x%llx>::%s: device asleep\n`
+- `IOAV[%d] %s<0x%llx>::%s: Sufficient bandwidth available; checking link (linkStatusMask=0x%02x)\n`
+- `IOAV[%d] %s<0x%llx>::%s: ret=0x%0x\n`
+- `IOAV[%d] %s<0x%llx>::%s: dp-switch-parent not matched; waiting...\n`
+- `IOAV[%d] %s<0x%llx>::%s: releasing display...\n`
+- `IOAV[%d] %s<0x%llx>::%s: linkRate=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: No automated tests requested.\n`
+- `IOAV[%d] %s<0x%llx>::%s: Automated EDID test request received.  %s calculated checksum=0x%02x, response checksum=0x%02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Enabling CEC messages...\n`
+- `IOAV[%d] %s<0x%llx>::%s: waitForTransportSignalingDeferral release reason %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: error 0x%08x writing LINK_QUAL_LANE%u_SET\n`
+- `IOAV[%d] %s<0x%llx>::%s: index=%u ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to attach CEC Service\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set controller link rate\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set device ASSR mode\n`
+- `IOAV[%d] %s<0x%llx>::%s: ignoring device not started notification on non-idle port\n`
+- `IOAV[%d] %s<0x%llx>::%s: ret=0x%08x (ignored)\n`
+- `IOAV[%d] %s<0x%llx>::%s: CP_IRQ received--unexpected HDCP protocol (%u)\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to %s enhanced mode\n`
+- `IOAV[%d] %s<0x%llx>::%s: Requested adjustment levels. ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Device DSC unsupported\n`
+- `IOAV[%d] %s<0x%llx>::%s: Passed EDID: data=%p size=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Ignoring %s event, dpTransportAvailable=%s, portActivated=%s, _hpdAsserted=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: handleUnprotectLink error, ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: loopCount=%d maxCRDone=%d eqDoneCount=%d symbolLockCount=%d interlane_align_done=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: read Bstatus ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: DP Device published %lld..\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to get link training data with ret=0x%08x`
+- `IOAV[%d] %s<0x%llx>::%s: Setting drive settings. ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: colorimetry has to match if encoding is the same\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: invalid DPCD_REV 0x%02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: unexpected action value (%u); ignoring\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: dfp(0x%llx): dropping interruptRequestOccurred()\n`
+- `IOAV[%d] %s<0x%llx>::%s: Automated test interrupt received: TEST_REQUEST=0x%02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: ESI0 does not match Device Service IRQ reg ESI=0x%02x, dev=0x%02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: overflow (%s)\n`
+- `IOAV[%d] %s<0x%llx>::%s: AV Device published %lld..\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for Scrambling\n`
+- `IOAV[%d] %s<0x%llx>::%s: dfp(0x%llx)\n`
+- `IOAV[%d] %s<0x%llx>::%s: updateLinkSinkDeviceStatus returned 0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: ignoring redundant wake notification...\n`
+- `IOAV[%d] %s<0x%llx>::%s: _cecInterface=0x%llx\n`
+- `invalid HDCP message type %d for sending\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to free resources for pending DFPs..`
+- `IOAV[%d] %s<0x%llx>::%s: no provider!\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to allocate IODPPortService\n`
+- `IOAV[%d] %s<0x%llx>::%s: connect(ufp(0x%llx), dfp(0x%llx)) ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to set max link rate to 0x%x\n`
+- `read RxStatus ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: dfp(0x%llx): dropping displayReleaseOccurredOnPort()\n`
+- `IOAV[%d] %s<0x%llx>::%s: Automated pattern test request received: Test pattern %u.\n`
+- `IOAV[%d] %s<0x%llx>::%s: signalling\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to set quality pattern to 0x%x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set controller lane count\n`
+- `IOAV[%d] %s<0x%llx>::%s: _controller->setDriveSettings() ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: synthesizing message=%s: HPD %u->%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to set link rate to 0x%x\n`
+- `IOAV[%d] %s<0x%llx>::%s: IODPPortService failed to start\n`
+- `sendMessage ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: CEC TX time out\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to init Analytics\n`
+- `IOAV[%d] %s<0x%llx>::%s: setCECInterface failed ret=%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: dfp(0x%llx): unknown event %s <0x%x>\n`
+- `IOAV[%d] %s<0x%llx>::%s: DFPs processed: %u allocated: %u domains: 0x%x\n`
+- `IOAV[%d] %s<0x%llx>::%s: _dpSwitch=0x%llx _role=%u%s _address.domain=%u%s _address.endpoint=%u%s _address.port=%u%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for Max Lane Count\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for Min Link Rate\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: IODPSwitchAllocationState::withCapacity failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: count=%u ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: dfp->validateConnection(ufp(0x%llx)) ret=0x%08x score=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed DPCD write\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set controller ASSR mode\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to disable color depth conversion\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting training with: laneCount=%u linkrate=%llu bps edpASSRMode=%d enhancedMode=%d downspread=%d fast=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Property %s does not exist\n`
+- `IOAV[%d] %s<0x%llx>::%s: _workLoop->addEventSource(_commandGate) failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: Not able to create Property %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to add parent matching criteria`
+- `IOAV[%d] %s<0x%llx>::%s: messageGated() ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: result=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: super::start() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: _dfps = OSArray::withCapacity() failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: searching for inactive UFP with domain-mask %d...\n`
+- `IOAV[%d] %s<0x%llx>::%s: dfpOld->connectTo(null) ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: updateLinkSinkDeviceStatus() ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: release transport (_transport: %s - %llu)`
+- `IOAV[%d] %s<0x%llx>::%s: setLinkRate with _transport=0x%llx, linkRate=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set device downspread\n`
+- `IOAV[%d] %s<0x%llx>::%s: %u second _inactiveSinkDisplayReleaseTimer expired, _sinkInactive=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: ufp->validateConnection(dfp(0x%llx)) ret=0x%08x score=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: read Binfo ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to register sleep/wake notifier!\n`
+- `IOAV[%d] %s<0x%llx>::%s: ret=0x%08x linkStable=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: %s event is already pending, dropping\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to UnSerialize EDID with ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to get PMRootDomain!\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: RX_CAP_CHANGED IRQ\n`
+- `IOAV[%d] %s<0x%llx>::%s: error: _receivePortNotificationThreadCall is null!\n`
+- `IOAV[%d] %s<0x%llx>::%s: EQ RETRY with new drive settings @ loopCount=%u laneCount=%u linkRate=%llu bps\n`
+- `IOAV[%d] %s<0x%llx>::%s: Service is inactive`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to allocate OSNumber\n`
+- `IOAV[%d] %s<0x%llx>::%s: HDCP 2.x capable found\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: Max link rate %llubps failed validation, reducing to %llubps\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to set lane count to %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to allocate Analytics\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to get IODPDeviceUserInterface with ret=0x%08x`
+- `IOAV[%d] %s<0x%llx>::%s: Sink video status timeout, proceeding anyway\n`
+- `IOAV[%d] %s<0x%llx>::%s: notice: calling displayRelease()...\n`
+- `IOAV[%d] %s<0x%llx>::%s: signaling display wake event source; thread call was pending=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Not enough memory for copying UFPs`
+- `IOAV[%d] %s<0x%llx>::%s: laneCount=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Read of EDID block 0 returned 0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: maxLaneCount = %ud\n`
+- `IOAV[%d] %s<0x%llx>::%s: actions disabled\n`
+- `IOAV[%d] %s<0x%llx>::%s: setCECHPDStatusGated ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unexpected state for _videoLinkSynchronizedStatus, 0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: oldCount=%d newCount=%d add=%d remove=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Enabling HorizontalBlankingExpansion with HTotal: %u  HStart: %u  HSyncWidth: %u  HSyncPolarity: %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to allocate _inactiveSinkDisplayReleaseTimer\n`
+- `IOAV[%d] %s<0x%llx>::%s: called while dfp == NULL!\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to set drive settings for all lanes to swing=%d eq=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Converting output color depth %d -> %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Link Status Field (DPCD %05Xh): <%s>`
+- `IOAV[%d] %s<0x%llx>::%s: Sink Device Status Field (DPCD %05Xh): <%s>`
+- `IOAV[%d] %s<0x%llx>::%s: Setting quality pattern. ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: could not enable CEC ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: downsteam must be BT.709\n`
+- `IOAV[%d] %s<0x%llx>::%s: service not matched: \"%s\"; waiting...\n`
+- `IOAV[%d] %s<0x%llx>::%s: sending action[%u]=%s...\n`
+- `IOAV[%d] %s<0x%llx>::%s: _ufpsExpected = 0!\n`
+- `IOAV[%d] %s<0x%llx>::%s: %s(0x%llx) ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: CR RETRY with new drive settings @ auxAckCount=%u laneCount=%u linkRate=%llu bps\n`
+- `IOAV[%d] %s<0x%llx>::%s: V' Available\n`
+- `IOAV[%d] %s<0x%llx>::%s: Command gate not held?!\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to %s scrambling\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to set min lane count to %u\n`
+- `IOAV[%d] %s<0x%llx>::%s: port remains active after DisplayRelease; calling disconnectDFP anyway()\n`
+- `IOAV[%d] %s<0x%llx>::%s: CP_IRQ: Bstatus=0x%02x:%s%s%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: port address not valid\n`
+- `IOAV[%d] %s<0x%llx>::%s: Beginning %s phase of link training: laneCount=%u linkRate=%llu bps fast=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: EQ not done @ loopCount=%u laneCount=%u linkRate=%llu bps\n`
+- `IOAV[%d] %s<0x%llx>::%s: mask=0x%04x\n`
+- `IOAV[%d] %s<0x%llx>::%s: cecInterfaceTerminateGated failed, ret=%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to disable conversion to YCbCr444\n`
+- `IOAV[%d] %s<0x%llx>::%s: cecInterfacePublishedGated failed, ret=%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: link suspended\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set training pattern %s and levels\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set new levels\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set drive levels\n`
+- `IOAV[%d] %s<0x%llx>::%s: ret = 0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: ok=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: UFP collection iterator invalidated!\n`
+- `IOAV[%d] %s<0x%llx>::%s: Horizontal Active param is 0\n`
+- `IOAV[%d] %s<0x%llx>::%s: hints: valid=%s tiled=%s tile=(%u,%u) native=%ux%u ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: CP_IRQ: Bstatus=0x00: should never occur!\n`
+- `IOAV[%d] %s<0x%llx>::%s: Device FEC unsupported\n`
+- `IOAV[%d] %s<0x%llx>::%s: enabled=%u ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: CEC TX Send bit stuck high ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to register for transport matching notifications!`
+- `refCon is null\n`
+- `IOAV[%d] %s<0x%llx>::%s: DFP: count=%d, supportsConversion = %d, YCbCr422 = %d, YCbCr420 = %d, YCbCr444->YCbCr422 = %d, YCbCr444->YCbCr420 = %d, maxClockRate = %ul, maxColorDepth = %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: hints (re)setting bypassed during reallocation\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: dfp(0x%llx): dropping hotPlugDetectChangeOccurred(%s)\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unsupported format conversion\n`
+- `IOAV[%d] %s<0x%llx>::%s: Sleeping on commandGate until EDID is available..\n`
+- `IOAV[%d] %s<0x%llx>::%s: UFP(0x%llx) is not available.\n`
+- `IOAV[%d] %s<0x%llx>::%s: Skipping to fast link training\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to set drive settings for lane %u to swing=%d eq=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: ignoring unplug event with no action\n`
+- `IOAV[%d] %s<0x%llx>::%s: notice: force _sinkInactive...\n`
+- `IOAV[%d] %s<0x%llx>::%s: Domain%u: %s %s%u,%u(0x%llx) (%s,%u)\n`
+- `IOAV[%d] %s<0x%llx>::%s: no available UFP for DFP(0x%llx) on domain%d; It remains pending; continue..\n`
+- `IOAV[%d] %s<0x%llx>::%s: invalid port %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: _workLoop->addEventSource(_deactivateTimeoutSource) failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: notice: ignoring %s event on inactive port.\n`
+- `IOAV[%d] %s<0x%llx>::%s: registerInterestedDriver() failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: CR DONE @ auxAckCount=%u laneCount=%u linkRate=%llu bps\n`
+- `invalid service\n`
+- `IOAV[%d] %s<0x%llx>::%s: wrong service type: \"%s\"  expected: \"%s\"\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set training pattern TPS1 and levels\n`
+- `IOAV[%d] %s<0x%llx>::%s: Converting RGB444 -> YCbCr444\n`
+- `IOAV[%d] %s<0x%llx>::%s: super::handleStart() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: EQ not done (Loop Count > 5) @ laneCount=%u linkRate=%llu bps\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to read lower IRQs\n`
+- `IOAV[%d] %s<0x%llx>::%s: range has to match if encoding is the same\n`
+- `IOAV[%d] %s<0x%llx>::%s: action=%s; thread call was pending=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: ret=0x%08x port=0x%llx\n`
+- `IOAV[%d] %s<0x%llx>::%s: laneCount=%u ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: CR incomplete - already at minimum link rate\n`
+- `IOAV[%d] %s<0x%llx>::%s: dropping repeated action=%s event\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to allocate matchingDict\n`
+- `IOAV[%d] %s<0x%llx>::%s: _cecService termination failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to set ALP-DP extended device training and adjustment levels\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for Min Lane Count\n`
+- `IOAV[%d] %s<0x%llx>::%s: result=%d ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set device lane count\n`
+- `IOAV[%d] %s<0x%llx>::%s: IODPPortAnalyticsCollector::init failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: synthesizing displayRequest due to !_displayAllocated...\n`
+- `IOAV[%d] %s<0x%llx>::%s: TEST_EDID_CHECKSUM write returned 0x%02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: removeCECService failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: DFP Capabilities [%d]: 0x%02X 0x%02X 0x%02X 0x%02X\n`
+- `IOAV[%d] %s<0x%llx>::%s: Could not read adjustment request registers\n`
+- `IOAV[%d] %s<0x%llx>::%s: synthesizing hotPlugDetectChangeOccurred due to _hpdAsserted...\n`
+- `IOAV[%d] %s<0x%llx>::%s: disconnecting ufp(0x%llx) from dfp(0x%llx)\n`
+- `IOAV[%d] %s<0x%llx>::%s: Link unstable. Retraining\n`
+- `IOAV[%d] %s<0x%llx>::%s: have LANEx_CR_DONE for %u lanes\n`
+- `IOAV[%d] %s<0x%llx>::%s: Automated link test request received: testLaneCount=%d testLinkRate=%llu bps\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: DSC RC BUFFER OVERFLOW\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: invalid MAX_LANE_COUNT 0x%02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Stopped service\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to set min link rate to 0x%x\n`
+- `IOAV[%d] %s<0x%llx>::%s: message queue depth reached %u (unexpected). Please file a radar under 'IODisplayPortFamily | all'.\n`
+- `invalid session handle\n`
+- `IOAV[%d] %s<0x%llx>::%s: thread_call_allocate_with_options() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: ignoring device busy timeout notification on non-idle port\n`
+- `IOAV[%d] %s<0x%llx>::%s: timed out?!\n`
+- `IOAV[%d] %s<0x%llx>::%s: unable to clear CEC IRQs ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for Lane Mapping\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for SupportsASSR\n`
+- `IOAV[%d] %s<0x%llx>::%s: enabling extended lane count control\n`
+- `IOAV[%d] %s<0x%llx>::%s: ignoring device not responding notification on non-idle port\n`
+- `IOAV[%d] %s<0x%llx>::%s: enter dark wake state\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: CR LOST (COMPLETELY) @ loopCount=%u laneCount=%u linkRate=%llu bps\n`
+- `IOAV[%d] %s<0x%llx>::%s: downstream must be YCbCr420\n`
+- `IOAV[%d] %s<0x%llx>::%s: error reading Bcaps (0x%08x); assuming not HDCP 1.x capable\n`
+- `IOAV[%d] %s<0x%llx>::%s: ALP-DP laneCount=%u, extLaneCount=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: _controller->clearTrainingPattern() ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: matched %s, expected IODPSwitch\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: ignoring IRQ_HPD event with no action\n`
+- `IOAV[%d] %s<0x%llx>::%s: superclass ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: domain%d: connectTo ufp %s,%d to dfp %s,%d ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: invalid object (type %s) in collection!\n`
+- `IOAV[%d] %s<0x%llx>::%s: IOService::serviceMatching() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: notice: forwarding inactive sink notification on idle port...\n`
+- `IOAV[%d] %s<0x%llx>::%s: exit dark wake state\n`
+- `IOAV[%d] %s<0x%llx>::%s: LANE_ALIGN_STATUS=0x%02x INTERLANE_ALIGN_DONE=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Validating %s -> %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to disable conversion to YCbCr420\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unable to read ESI IRQ status\n`
+- `IOAV[%d] %s<0x%llx>::%s: unsupported conversion YCbCr444 to YCbCr420\n`
+- `IOAV[%d] %s<0x%llx>::%s: linkRate=%llubps\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to get EDID as OSData\n`
+- `IOAV[%d] %s<0x%llx>::%s: writing I2C to virtual device i2cAddr=%x, offset=%x, length=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: failed to read LTTPR ret=0x%08x`
+- `IOAV[%d] %s<0x%llx>::%s: MAX_CASCADE_EXCEEDED: Aborting.\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to enable color depth conversion\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: warning: DSC_SUPPORT=1 but DSC_VERSION=0; assuming DSC not supported.\n`
+- `IOAV[%d] %s<0x%llx>::%s: New DP transport matched (_transport: %s - %llu)`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set controller quality pattern\n`
+- `IOAV[%d] %s<0x%llx>::%s: CP_IRQ: Binfo=0x%04x:%s%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: HorizontalBlankingExpansion attributes are the same\n`
+- `IOAV[%d] %s<0x%llx>::%s: ***HTotal (%u) is less than min (%u)\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to get DisplayAttributes as OSDictionary\n`
+- `IOAV[%d] %s<0x%llx>::%s: Could not read ALP-DP extended lane status mask registers\n`
+- `IOAV[%d] %s<0x%llx>::%s: IOAVPHandleMatching() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to clear DEVICE_SERVICE_IRQ_VECTOR_ESI0 ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: ignoring RX_CAP_CHANGED IRQ (unsupported)\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to register for interest notifications on %s!`
+- `msg_id %d %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: INTERLANE_ALIGN_DONE=0, _alignmentStatusFailureCount=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: CP_IRQ: RxStatus=0x00: should never occur!\n`
+- `IOAV[%d] %s<0x%llx>::%s: upstream must be RGB or YCbCr\n`
+- `IOAV[%d] %s<0x%llx>::%s: IOPortTransportState::transportMatchingForService() returned NULL - make sure EDT has IOPort properties!`
+- `IOAV[%d] %s<0x%llx>::%s: ALP-DP ver %02xh; elc=%u qlt=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: notice: detected SINK_COUNT=0, calling inactiveSinkDetected()...`
+- `IOAV[%d] %s<0x%llx>::%s: warning: unexpected _cecService(0x%llx) != terminatedService(0x%llx) (ignored)\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for Max Link Rate\n`
+- `IOAV[%d] %s<0x%llx>::%s: unregisterPort() ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: resetting _sinkInactive...\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to add command gate to work loop!\n`
+- `IOAV[%d] %s<0x%llx>::%s: _ufps = OSArray::withCapacity() failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: EQ DONE @ loopCount=%u laneCount=%u linkRate=%llu bps\n`
+- `IOAV[%d] %s<0x%llx>::%s: CP_IRQ received--unexpected content protection type (%u)\n`
+- `IOAV[%d] %s<0x%llx>::%s: length=%u:\n <%s>`
+- `IOAV[%d] %s<0x%llx>::%s: %s: invalid data length: %u; defaulting to 0.\n`
+- `IOAV[%d] %s<0x%llx>::%s: Restoring virtual mode %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: skipping ufp(%llx) -> noconnect...\n`
+- `IOAV[%d] %s<0x%llx>::%s: Link training ret=0x%08x after %d tries time=%lld ms\n`
+- `IOAV[%d] %s<0x%llx>::%s: new state=%s (%d) ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: CR RETRY @ laneCount=%u linkRate=%llu bps\n`
+- `IOAV[%d] %s<0x%llx>::%s: link unstable, retraining...\n`
+- `IOAV[%d] %s<0x%llx>::%s: _messageQueueLock = IOLockAlloc() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: dfp(0x%llx) did sleep\n`
+- `IOAV[%d] %s<0x%llx>::%s: LANE%d_STATUS=0x%02x: LANE%u_CR_DONE=%d LANE%u_CHANNEL_EQ_DONE=%u, LANE%u_SYMBOL_LOCKED=%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: waitResult=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to read DFP[%d] caps, ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: load from nvram: <%s>`
+- `IOAV[%d] %s<0x%llx>::%s: LANE%d_STATUS=0x%02x: LANE%u_CR_DONE=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: IOTimerEventSource::timerEventSource(...) failed\n`
+- `IOAV[%d] %s<0x%llx>::%s:    hWidth=%5u vHeight=%4u misc1=0x%02x misc2=0x%02x numerator=%3u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Timing format conversion validation failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: addr=%s data=%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: evaluateNeedForTraining ret=0x%08x trainingRequired=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set controller downspread\n`
+- `IOAV[%d] %s<0x%llx>::%s: Preparing to establish new link\n`
+- `IOAV[%d] %s<0x%llx>::%s: ESI0=0x%02x, ESI1=0x%02x, LSESI0=0x%02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set device enhanced mode\n`
+- `IOAV[%d] %s<0x%llx>::%s: enabling actions\n`
+- `IOAV[%d] %s<0x%llx>::%s: dispatched %u actions\n`
+- `IOAV[%d] %s<0x%llx>::%s: Disabling CEC messages...\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to UnSerialize DisplayAttributes with ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: start: result=%d\n`
+- `IOAV[%d] %s<0x%llx>::%s: ignoring redundant sleep notification...\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: ignoring display release with no action\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to set device FEC Symbol\n`
+- `IOAV[%d] %s<0x%llx>::%s: Content Protection Interrupt received.\n`
+- `IOAV[%d] %s<0x%llx>::%s: save sleep state\n`
+- `IOAV[%d] %s<0x%llx>::%s: ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: _ufpEndpointsCount = 0!\n`
+- `IOAV[%d] %s<0x%llx>::%s: SINK_STATUS (DPCD 000205h): %02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: fix up invalid downstream port %02x %02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: notice: setting _sinkInactive...\n`
+- `IOAV[%d] %s<0x%llx>::%s: _dfpEndpointNames = OSArray::withCapacity() failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: Command Interrupt received: Ignored.\n`
+- `IOAV[%d] %s<0x%llx>::%s: color depth conversion not supported\n`
+- `IOAV[%d] %s<0x%llx>::%s: HorizontalBlankingExpansion buffer size is %d pixels\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create work loop!\n`
+- `IOAV[%d] %s<0x%llx>::%s: unsupported pass through YCbCr422\n`
+- `IOAV[%d] %s<0x%llx>::%s: enqueued message=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to extract phandle value from property \"%s\"\n`
+- `IOAV[%d] %s<0x%llx>::%s: notice: ignoring IRQ_HPD event during system sleep.\n`
+- `IOAV[%d] %s<0x%llx>::%s: error reading RxCaps (0x%08x); assuming not HDCP 2.2 capable\n`
+- `IOAV[%d] %s<0x%llx>::%s: Could not read ALP-DP extended adjustment request registers\n`
+- `IOAV[%d] %s<0x%llx>::%s: Training %s caller-provided training data because %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: *pEnabled=%u ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: sending frame: %s\n`
+- `IOAV[%d] %s<0x%llx>::%s: DFP Capabilities [%d]: 0x%02X\n`
+- `IOAV[%d] %s<0x%llx>::%s: domain%d: dfp %s,%d not valid\n`
+- `IOAV[%d] %s<0x%llx>::%s: ***VGATX clock (%ucsc) exceeds max pixel clock (%ucsc)\n`
+- `IOAV[%d] %s<0x%llx>::%s: ptr to EDID block is null\n`
+- `IOAV[%d] %s<0x%llx>::%s: Second color format conversion validation failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: Bcaps = 0x%02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: HDCP 1.x capable found\n`
+- `IOAV[%d] %s<0x%llx>::%s: read RxStatus ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Unsupported video test bit depth: %d\n`
+- `invalid interface\n`
+- `IOAV[%d] %s<0x%llx>::%s: connect %d:%s,%u -> %s,%u\n`
+- `IOAV[%d] %s<0x%llx>::%s: Sink-specific Interrupt received.\n`
+- `IOAV[%d] %s<0x%llx>::%s: Attempting to %s downspread\n`
+- `IOAV[%d] %s<0x%llx>::%s: IOAVParentMatching() failed\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to allocate _commandGate\n`
+- `IOAV[%d] %s<0x%llx>::%s: _ufpEndpointNames = OSArray::withCapacity() failed!\n`
+- `IOAV[%d] %s<0x%llx>::%s: dark wake: %d, sleep pending: %d, system sleeping: %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: notice: found sink inactive on dfp(%llx)\n`
+- `IOAV[%d] %s<0x%llx>::%s: *pLinkRate=%lluGbps ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: LANE%u_STATUS=0x%02x\n`
+- `IOAV[%d] %s<0x%llx>::%s: receiveCECGated ret=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: message=%s dpTransportAvailable=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: hibernate state %d\n`
+- `IOAV[%d] %s<0x%llx>::%s: RX Message not ACKED, dropping it.\n`
+- `IOAV[%d] %s<0x%llx>::%s: Device does not support Horizontal Blanking Expansion\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed to enable conversion to YCbCr422\n`
+- `IOAV[%d] %s<0x%llx>::%s: _waitingVirtualEDID=%d..\n`
+- `IOAV[%d] %s<0x%llx>::%s: MAX_DEVS_EXCEEDED: Aborting.\n`
+- `IOAV[%d] %s<0x%llx>::%s: unsupported conversion YCbCr444 to YCbCr422\n`
+- `IOAV[%d] %s<0x%llx>::%s: error 0x%08x writing TRAINING_PATTERN_SET\n`
+- `IOAV[%d] %s<0x%llx>::%s: warning: ignoring display request with no action\n`
+- `IOAV[%d] %s<0x%llx>::%s: skipCheckLink=%s\n`
+- `IOAV[%d] %s<0x%llx>::%s: failed to create serializer for EnhancedMode\n`
+- `IOAV[%d] %s<0x%llx>::%s: property not found: \"%s\"\n`
+- `IOAV[%d] %s<0x%llx>::%s: Failed connect on %s,%u since it is removed\n`
+- `IOAV[%d] %s<0x%llx>::%s: received notification that system is going to wake.\n`
+- `IOAV[%d] %s<0x%llx>::%s: ret=0x%08x, retChecksum=0x%08x, retResponse=0x%08x\n`
+- `IOAV[%d] %s<0x%llx>::%s: Pushing virtual DPCD...\n`

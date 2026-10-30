@@ -1,0 +1,30 @@
+# `CLLocationManagerDelegate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/CameraUI.framework/CameraUI`](../userland/System__Library__PrivateFrameworks__CameraUI.framework__CameraUI.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 20 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[CLLocationManagerDelegate locationManager:didVisit:];
+-[CLLocationManagerDelegate locationManager:didUpdateLocations:];
+-[CLLocationManagerDelegate locationManager:didFailWithError:];
+-[CLLocationManagerDelegate locationManagerShouldDisplayHeadingCalibration:];
+-[CLLocationManagerDelegate locationManager:didStartMonitoringForRegion:];
+-[CLLocationManagerDelegate locationManager:monitoringDidFailForRegion:withError:];
+-[CLLocationManagerDelegate locationManagerDidPauseLocationUpdates:];
+-[CLLocationManagerDelegate locationManager:didChangeAuthorizationStatus:];
+-[CLLocationManagerDelegate locationManager:didUpdateHeading:];
+-[CLLocationManagerDelegate locationManagerDidChangeAuthorization:];
+-[CLLocationManagerDelegate locationManager:didDetermineState:forRegion:];
+-[CLLocationManagerDelegate locationManagerDidResumeLocationUpdates:];
+-[CLLocationManagerDelegate locationManager:didEnterRegion:];
+-[CLLocationManagerDelegate locationManager:didExitRegion:];
+-[CLLocationManagerDelegate locationManager:didFailRangingBeaconsForConstraint:error:];
+-[CLLocationManagerDelegate locationManager:didFinishDeferredUpdatesWithError:];
+-[CLLocationManagerDelegate locationManager:didRangeBeacons:inRegion:];
+-[CLLocationManagerDelegate locationManager:didRangeBeacons:satisfyingConstraint:];
+-[CLLocationManagerDelegate locationManager:didUpdateToLocation:fromLocation:];
+-[CLLocationManagerDelegate locationManager:rangingBeaconsDidFailForRegion:withError:];
+```

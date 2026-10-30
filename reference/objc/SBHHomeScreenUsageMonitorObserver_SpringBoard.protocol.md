@@ -1,0 +1,33 @@
+# `SBHHomeScreenUsageMonitorObserver` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 23 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregatorDidStartDiscoveringWidgets:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregator:didNoteDataSourceDidAppear:forWidgetIcon:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregator:didNoteDataSourceDidDisappear:forWidgetIcon:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregator:didNoteUserTappedWidgetIcon:withURL:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregatorDidNoteHomeScreenLayoutChanged:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregator:didNoteUserDislikedWidgetIconStackSuggestion:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregator:widgetDiscoverabilityDidRejectSuggestion:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregator:didNoteUserDislikedSiriSuggestionOnWidgetIconStackSuggestion:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregator:didNoteUserAddedWidgetIconStackSuggestion:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregator:widgetDiscoverabilityDidAcceptSuggestion:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregator:didNoteWidgetIconStackChangedActiveWidget:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregator:didNoteCurrentPageIndexChanged:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregatorWidgetDiscoverabilityDidEnterEditingMode:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregator:didNoteRootControllerWillAppearWithPageIndex:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregator:didNoteTodayViewAtLocation:scrolledWithIconVisibility:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregator:didNoteWidgetIconAdded:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregator:didNoteWidgetIconRemoved:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregatorAddWidgetSheetWillPresent:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregatorDidNoteEditingModeEnded:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregatorDidNoteEditingModeEntered:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregatorDidNoteIconStylePickerDidDismiss:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregatorDidNoteInterfaceOrientationChanged:];
+-[SBHHomeScreenUsageMonitorObserver homeScreenUsageAggregatorDidNoteListLayoutProviderChanged:];
+```

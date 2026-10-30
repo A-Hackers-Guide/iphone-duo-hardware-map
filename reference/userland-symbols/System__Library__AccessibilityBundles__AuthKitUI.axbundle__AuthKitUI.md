@@ -1,0 +1,128 @@
+# Symbols: `/System/Library/AccessibilityBundles/AuthKitUI.axbundle/AuthKitUI`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__AccessibilityBundles__AuthKitUI.axbundle__AuthKitUI.md). **[DSC]**
+
+44 public symbols, 68 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1ee318cb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AKAuthorizationButtonAccessibility
+0x1ee318c90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AKAuthorizationInputPaneViewControllerAccessibility
+0x1ee318c68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AKAuthorizationScopeDetailTableViewCellAccessibility
+0x1ee318830  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AKAuthorizationSubPaneConfirmButtonAccessibility
+0x1ee318858  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AKAuthorizationViewControllerAccessibility
+0x1ee318c40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AKBasicLoginAlertControllerAccessibility
+0x1ee318c18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AKBasicLoginContentViewControllerContainerViewAccessibility
+0x1ee318bf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AKCodeEntryViewAccessibility
+0x1ee318bc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AKInlineSignInViewControllerAccessibility
+0x1ee318718  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AKUIUserAvatarViewAccessibility
+0x1ee318d08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXAuthKitGlue
+0x1ee318ba0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___AKAuthorizationButtonAccessibility_super
+0x1ee318b78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___AKAuthorizationInputPaneViewControllerAccessibility_super
+0x1ee318b50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___AKAuthorizationScopeDetailTableViewCellAccessibility_super
+0x1ee318808  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___AKAuthorizationSubPaneConfirmButtonAccessibility_super
+0x1ee3187e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___AKAuthorizationViewControllerAccessibility_super
+0x1ee318b28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___AKBasicLoginAlertControllerAccessibility_super
+0x1ee318b00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___AKBasicLoginContentViewControllerContainerViewAccessibility_super
+0x1ee318ad8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___AKCodeEntryViewAccessibility_super
+0x1ee318ab0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___AKInlineSignInViewControllerAccessibility_super
+0x1ee3186f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___AKUIUserAvatarViewAccessibility_super
+0x1ee318a88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AKAuthorizationButtonAccessibility
+0x1ee318a60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AKAuthorizationInputPaneViewControllerAccessibility
+0x1ee318a38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AKAuthorizationScopeDetailTableViewCellAccessibility
+0x1ee3187b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AKAuthorizationSubPaneConfirmButtonAccessibility
+0x1ee318790  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AKAuthorizationViewControllerAccessibility
+0x1ee318a10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AKBasicLoginAlertControllerAccessibility
+0x1ee3189e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AKBasicLoginContentViewControllerContainerViewAccessibility
+0x1ee3189c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AKCodeEntryViewAccessibility
+0x1ee318998  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AKInlineSignInViewControllerAccessibility
+0x1ee3186c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AKUIUserAvatarViewAccessibility
+0x1ee318ce0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXAuthKitGlue
+0x1ee318970  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___AKAuthorizationButtonAccessibility_super
+0x1ee318948  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___AKAuthorizationInputPaneViewControllerAccessibility_super
+0x1ee318920  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___AKAuthorizationScopeDetailTableViewCellAccessibility_super
+0x1ee318768  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___AKAuthorizationSubPaneConfirmButtonAccessibility_super
+0x1ee318740  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___AKAuthorizationViewControllerAccessibility_super
+0x1ee3188f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___AKBasicLoginAlertControllerAccessibility_super
+0x1ee3188d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___AKBasicLoginContentViewControllerContainerViewAccessibility_super
+0x1ee3188a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___AKCodeEntryViewAccessibility_super
+0x1ee318880  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___AKInlineSignInViewControllerAccessibility_super
+0x1ee3186a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___AKUIUserAvatarViewAccessibility_super
+0x1ee318d30  __DATA_DIRTY,__common  __Failover
+0x189d64adc  __TEXT,__text  _accessibilityLocalizedString
+```
+
+## Private
+
+```
+0x189d63dd0  __TEXT,__text  +[AKAuthorizationButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d63ddc  __TEXT,__text  +[AKAuthorizationButtonAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d63de8  __TEXT,__text  +[AKAuthorizationButtonAccessibility _accessibilityPerformValidations:]
+0x189d63e28  __TEXT,__text  -[AKAuthorizationButtonAccessibility isAccessibilityElement]
+0x189d63e30  __TEXT,__text  -[AKAuthorizationButtonAccessibility accessibilityTraits]
+0x189d63e78  __TEXT,__text  -[AKAuthorizationButtonAccessibility accessibilityLabel]
+0x189d63e84  __TEXT,__text  +[AKAuthorizationInputPaneViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d63e90  __TEXT,__text  +[AKAuthorizationInputPaneViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d63e9c  __TEXT,__text  +[AKAuthorizationInputPaneViewControllerAccessibility _accessibilityPerformValidations:]
+0x189d63f30  __TEXT,__text  -[AKAuthorizationInputPaneViewControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d64068  __TEXT,__text  ___97-[AKAuthorizationInputPaneViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke
+0x189d64118  __TEXT,__text  -[AKAuthorizationInputPaneViewControllerAccessibility _clearButton]
+0x189d64174  __TEXT,__text  ___67-[AKAuthorizationInputPaneViewControllerAccessibility _clearButton]_block_invoke
+0x189d64180  __TEXT,__text  -[AKAuthorizationInputPaneViewControllerAccessibility viewDidLoad]
+0x189d641cc  __TEXT,__text  -[AKAuthorizationInputPaneViewControllerAccessibility viewDidAppear:]
+0x189d642a4  __TEXT,__text  +[AKAuthorizationScopeDetailTableViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d642b0  __TEXT,__text  +[AKAuthorizationScopeDetailTableViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d642bc  __TEXT,__text  +[AKAuthorizationScopeDetailTableViewCellAccessibility _accessibilityPerformValidations:]
+0x189d643a0  __TEXT,__text  -[AKAuthorizationScopeDetailTableViewCellAccessibility isAccessibilityElement]
+0x189d643a8  __TEXT,__text  -[AKAuthorizationScopeDetailTableViewCellAccessibility accessibilityTraits]
+0x189d64424  __TEXT,__text  -[AKAuthorizationScopeDetailTableViewCellAccessibility accessibilityLabel]
+0x189d64430  __TEXT,__text  -[AKAuthorizationScopeDetailTableViewCellAccessibility _accessibilitySupplementaryFooterViews]
+0x189d644cc  __TEXT,__text  +[AKBasicLoginAlertControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d644d8  __TEXT,__text  +[AKBasicLoginAlertControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d644e4  __TEXT,__text  +[AKBasicLoginAlertControllerAccessibility _accessibilityPerformValidations:]
+0x189d64550  __TEXT,__text  -[AKBasicLoginAlertControllerAccessibility _accessibilitySetAlertIdentifier]
+0x189d64600  __TEXT,__text  -[AKBasicLoginAlertControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d6464c  __TEXT,__text  -[AKBasicLoginAlertControllerAccessibility viewDidAppear:]
+0x189d64698  __TEXT,__text  -[AKBasicLoginAlertControllerAccessibility jiggleAView]
+0x189d64708  __TEXT,__text  +[AKBasicLoginContentViewControllerContainerViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d64714  __TEXT,__text  +[AKBasicLoginContentViewControllerContainerViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d64720  __TEXT,__text  +[AKBasicLoginContentViewControllerContainerViewAccessibility _accessibilityPerformValidations:]
+0x189d64740  __TEXT,__text  -[AKBasicLoginContentViewControllerContainerViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d647e0  __TEXT,__text  -[AKBasicLoginContentViewControllerContainerViewAccessibility initWithFrame:]
+0x189d64838  __TEXT,__text  +[AKInlineSignInViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d64844  __TEXT,__text  +[AKInlineSignInViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d64850  __TEXT,__text  +[AKInlineSignInViewControllerAccessibility _accessibilityPerformValidations:]
+0x189d64890  __TEXT,__text  -[AKInlineSignInViewControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d648c8  __TEXT,__text  -[AKInlineSignInViewControllerAccessibility viewDidLoad]
+0x189d64914  __TEXT,__text  +[AXAuthKitGlue accessibilityInitializeBundle]
+0x189d6499c  __TEXT,__text  ___46+[AXAuthKitGlue accessibilityInitializeBundle]_block_invoke
+0x189d649a4  __TEXT,__text  ___46+[AXAuthKitGlue accessibilityInitializeBundle]_block_invoke_2
+0x189d649ec  __TEXT,__text  ___46+[AXAuthKitGlue accessibilityInitializeBundle]_block_invoke_3
+0x189d64b6c  __TEXT,__text  +[AKAuthorizationViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d64b78  __TEXT,__text  +[AKAuthorizationViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d64b84  __TEXT,__text  +[AKAuthorizationViewControllerAccessibility _accessibilityPerformValidations:]
+0x189d64c30  __TEXT,__text  -[AKAuthorizationViewControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d64cfc  __TEXT,__text  -[AKAuthorizationViewControllerAccessibility _presentContainerViewControllerWith:]
+0x189d64d68  __TEXT,__text  -[AKAuthorizationViewControllerAccessibility _axSetupElements:]
+0x189d64ed8  __TEXT,__text  ___63-[AKAuthorizationViewControllerAccessibility _axSetupElements:]_block_invoke
+0x189d64f70  __TEXT,__text  +[AKCodeEntryViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d64f7c  __TEXT,__text  +[AKCodeEntryViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d64f88  __TEXT,__text  +[AKCodeEntryViewAccessibility _accessibilityPerformValidations:]
+0x189d64fa8  __TEXT,__text  -[AKCodeEntryViewAccessibility isAccessibilityElement]
+0x189d64fb0  __TEXT,__text  -[AKCodeEntryViewAccessibility accessibilityTraits]
+0x189d65008  __TEXT,__text  -[AKCodeEntryViewAccessibility accessibilityLabel]
+0x189d650c8  __TEXT,__text  -[AKCodeEntryViewAccessibility accessibilityAttributedValue]
+0x189d6513c  __TEXT,__text  -[AKCodeEntryViewAccessibility _axVerificationCodeString]
+0x189d65148  __TEXT,__text  +[AKAuthorizationSubPaneConfirmButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d65154  __TEXT,__text  +[AKAuthorizationSubPaneConfirmButtonAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d65160  __TEXT,__text  +[AKAuthorizationSubPaneConfirmButtonAccessibility _accessibilityPerformValidations:]
+0x189d651b8  __TEXT,__text  -[AKAuthorizationSubPaneConfirmButtonAccessibility _switchToBioView:withEnabled:showAlert:alertString:]
+0x189d65254  __TEXT,__text  ___103-[AKAuthorizationSubPaneConfirmButtonAccessibility _switchToBioView:withEnabled:showAlert:alertString:]_block_invoke
+0x189d6526c  __TEXT,__text  +[AKUIUserAvatarViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d65278  __TEXT,__text  +[AKUIUserAvatarViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d65284  __TEXT,__text  +[AKUIUserAvatarViewAccessibility _accessibilityPerformValidations:]
+0x189d65288  __TEXT,__text  -[AKUIUserAvatarViewAccessibility isAccessibilityElement]
+0x189d65290  __TEXT,__text  -[AKUIUserAvatarViewAccessibility accessibilityLabel]
+```
+

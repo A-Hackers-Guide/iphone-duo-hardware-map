@@ -1,0 +1,2346 @@
+# `com.apple.AGXG19P`
+
+- Name: AGXG19P Graphics Kernel Extension
+- Version: `362.5`
+- UUID: `F52A8A03-5A1D-397A-B551-E14263ABCA1C`
+- Source version: `362.5.0.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleMobileFileIntegrity`](com.apple.driver.AppleMobileFileIntegrity.md) 1.0.1, [`com.apple.driver.RTBuddy`](com.apple.driver.RTBuddy.md) 1.0.0, [`com.apple.iokit.CoreAnalyticsFamily`](com.apple.iokit.CoreAnalyticsFamily.md) 1.0, [`com.apple.iokit.IOGPUFamily`](com.apple.iokit.IOGPUFamily.md) 2.0.0, [`com.apple.iokit.IOReportFamily`](com.apple.iokit.IOReportFamily.md) 1.0, [`com.apple.iokit.IOSurface`](com.apple.iokit.IOSurface.md) 52.6.0, [`com.apple.kec.Libm`](com.apple.kec.Libm.md) 1.0.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (2) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/sgx`](../devicetree/root__arm-io__sgx.md) | `AGXAcceleratorG19P` | `gpu,t8160` |
+| [`/arm-io/mapper-gfx-asc`](../devicetree/root__arm-io__mapper-gfx-asc.md) | `AGXArmFirmwareMapper` | `iommu-mapper,gfx` |
+
+## IOKit personalities (2) [KC]
+
+### AGXArmFirmwareMapper
+- `CFBundleIdentifier`: `com.apple.AGXG19P`
+- `IOClass`: `AGXArmFirmwareMapper`
+- `IONameMatch`: `iommu-mapper,gfx`
+- `IOPersonalityPublisher`: `com.apple.AGXG19P`
+- `IOProviderClass`: `AppleARMIODevice`
+
+### AGXG19P
+- `CFBundleIdentifier`: `com.apple.AGXG19P`
+- `IOClass`: `AGXAcceleratorG19P`
+- `IOGLESBundleName`: `AppleMetalGLRenderer`
+- `IOMatchCategory`: `IOAcceleratorES`
+- `IONameMatch`:
+  - `gpu,t8160`
+  - `gpu,t8015`
+  - `gpu,t8027`
+  - `gpu,t8030`
+  - `gpu,t8103`
+  - `gpu,t8122`
+- `IOPersonalityPublisher`: `com.apple.AGXG19P`
+- `IOProviderClass`: `AppleARMIODevice`
+- `IOSourceVersion`: `362.5`
+- `MetalPluginName`: `AGXMetalG19P`
+
+
+## C++ classes (119) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AGX3DChannel` | 0x1d8 | AGXChannel → IOGPUChannel |
+| `AGX3DChannelSKSM` | 0x1d8 | AGX3DChannel → AGXChannel → IOGPUChannel |
+| `AGX3DChannelSKSMG19P` | 0x1d8 | AGX·PI_400·P·A0·3DChannelSKSM → AGX3DChannelSKSM → AGX3DChannel → AGXChannel → IOGPUChannel |
+| `AGX3DCommandDescriptor` | 0xcc0 | AGXCommandDescriptor → IOGPUCommandDescriptor → IOGPUObject |
+| `AGX3DWorkQueue` | 0x280 | AGXWorkQueue → IOGPUWorkQueue → IOGPUObject |
+| `AGXAccelerator` | 0x1d160 | IOGPU → IOAcceleratorES → IOService → IORegistryEntry |
+| `AGXAcceleratorG19P` | 0x1d198 | AGX·PI_400·P·A0·AcceleratorP → AGX·PI_400·P·A0·Accelerator → AGXFamilyAccelerator → AGXAccelerator → IOGPU → IOAcceleratorES → IOService → IORegistryEntry |
+| `AGXAllocation` | 0x130 | IOGPUSysMemory → IOGPUMemory → IOGPUObject |
+| `AGXAllocationList2` | 0x98 | IOGPUSegmentResourceList |
+| `AGXArmFirmware` | 0x2080 | AGXFirmware |
+| `AGXArmFirmwareASC` | 0x2080 | AGXArmFirmware → AGXFirmware |
+| `AGXArmFirmwareMapper` | 0x100 | IOMapper → IOService → IORegistryEntry |
+| `AGXAttributionIndexManager` | 0x30 |  |
+| `AGXBlockFence` | 0x158 | IOGPUBlockFence → IOGPUEventFence |
+| `AGXBlockedArray` | 0x50 |  |
+| `AGXCLChannel` | 0x1d0 | AGXChannel → IOGPUChannel |
+| `AGXCLChannelSKSM` | 0x1d0 | AGXCLChannel → AGXChannel → IOGPUChannel |
+| `AGXCLChannelSKSMG19P` | 0x1d0 | AGX·PI_400·P·A0·CLChannelSKSM → AGXCLChannelSKSM → AGXCLChannel → AGXChannel → IOGPUChannel |
+| `AGXCLCommandDescriptor` | 0x900 | AGXCommandDescriptor → IOGPUCommandDescriptor → IOGPUObject |
+| `AGXCLWorkQueue` | 0x240 | AGXWorkQueue → IOGPUWorkQueue → IOGPUObject |
+| `AGXChannel` | 0x1d0 | IOGPUChannel |
+| `AGXCommandBuffer` | 0x17c0 |  |
+| `AGXCommandDescriptor` | 0x200 | IOGPUCommandDescriptor → IOGPUObject |
+| `AGXCommandQueue` | 0x8b0 | IOGPUCommandQueue → IOGPUObject |
+| `AGXCommandQueuePMConfig` | 0x30 |  |
+| `AGXCommandQueueReclaimableState` | 0xf8 |  |
+| `AGXDebugBufferShmem` | 0x70 | IOGPUDeviceShmem → IOGPUKernelMappedMemory → IOGPUObject |
+| `AGXDeviceUserClient` | 0x138 | IOGPUDeviceUserClient → IOUserClient → IOService → IORegistryEntry |
+| `AGXDiagnosisReport` | 0x38 |  |
+| `AGXEnergyAttributor` | 0x8090 |  |
+| `AGXEventMachine` | 0x22258 | IOGPUEventMachine |
+| `AGXFamilyAccelerator` | 0x1d168 | AGXAccelerator → IOGPU → IOAcceleratorES → IOService → IORegistryEntry |
+| `AGXFastRenderTarget` | 0xa0 |  |
+| `AGXFirmware` | 0x1848 |  |
+| `AGXGFXDVAccessor` | 0x30 |  |
+| `AGXGPUMemBlockPool` | 0x68 |  |
+| `AGXGart` | 0x2f0 | IOGPUTask → IOGPUObject |
+| `AGXGartG19P` | 0x340 | AGX·PI_400·P·A0·Gart → AGXSecureGart → AGXGart → IOGPUTask → IOGPUObject |
+| `AGXHWParamBufferManager` | 0xa0 | AGXHardwareBufferBase → IOGPUObject |
+| `AGXHardwareBufferBase` | 0x18 | IOGPUObject |
+| `AGXIOFenceData` | 0x2c0 |  |
+| `AGXIOSurfaceSharedEventCommandDescriptor` | 0x440 | AGXCommandDescriptor → IOGPUCommandDescriptor → IOGPUObject |
+| `AGXImplicitGrowEngine` | 0x20 | IAGXUSCPrivMemGrowEngine → IOGPUObject |
+| `AGXInternalResource` | 0x70 | IOGPUObject |
+| `AGXInvalidChannel` | 0x38 | IOGPUChannel |
+| `AGXKSMKickQueue` | 0xa8 |  |
+| `AGXKSMKickQueueG19P` | 0xb0 | AGX·PI_400·P·A0·KSMKickQueue → AGXKSMKickQueue |
+| `AGXKTelemetry` | 0x48 |  |
+| `AGXLateEvalEvent` | 0x78 | IOGPUMTLLateEvalEvent → IOGPUObject |
+| `AGXLateEvalEventFence` | 0xe0 | IOGPUEventFence |
+| `AGXLateEvalEventResourceManager` | 0x70 |  |
+| `AGXLateEvalEventTable` | 0x38 | IOGPUObject |
+| `AGXLateEvalWait` | 0xc8 |  |
+| `AGXMTLCounterSampler` | 0x28 |  |
+| `AGXMemoryMap` | 0x60 | IOGPUMemoryMap → IOGPUObject |
+| `AGXParameterBufferBlock` | 0x10 |  |
+| `AGXParameterBufferBlockVirtual` | 0x20 | AGXParameterBufferBlock |
+| `AGXParameterManagement` | 0x240 | IOGPUObject |
+| `AGXParameterManagementVirtual` | 0x260 | AGXParameterManagement → IOGPUObject |
+| `AGXParameterMemoryVirtual` | 0xa0 | IOGPUMemory → IOGPUObject |
+| `AGXPeakPowerManager` | 0x38 |  |
+| `AGXPerfCtrSampler` | 0x98 |  |
+| `AGXPerfCtrSamplerGen11` | 0x98 | AGXPerfCtrSampler |
+| `AGXPerfCtrSamplerGen15` | 0x130 | AGXPerfCtrSamplerGen11 → AGXPerfCtrSampler |
+| `AGXQOSManager` | 0xce0 |  |
+| `AGXQOSQueue` | 0x70 | AGXHardwareBufferBase → IOGPUObject |
+| `AGXRemoteIOPPowerNotificationHandler` | 0x428 |  |
+| `AGXRemoteNodeCommandDescriptor` | 0x440 | AGXCommandDescriptor → IOGPUCommandDescriptor → IOGPUObject |
+| `AGXRenderTargetG19P` | 0xa0 | AGX·PI_400·P·A0·RenderTarget → AGXFastRenderTarget |
+| `AGXRenderTargetMemory` | 0x2c8 |  |
+| `AGXRepeatedMemoryDescriptor` | 0x78 | IOMemoryDescriptor |
+| `AGXResource` | 0x180 | IOGPUResource → IOGPUObject |
+| `AGXRestartReport` | 0xc8 |  |
+| `AGXSKSMFlushID` | 0x20 | AGXHardwareBufferBase → IOGPUObject |
+| `AGXScheduler` | 0x250 | IOGPUScheduler |
+| `AGXSecureGart` | 0x340 | AGXGart → IOGPUTask → IOGPUObject |
+| `AGXSecureMemoryMap` | 0x78 | AGXMemoryMap → IOGPUMemoryMap → IOGPUObject |
+| `AGXSecureMonitor` | 0x50 |  |
+| `AGXSecureMonitorG19P` | 0xc0 | AGX·PI_400·P·A0·SecureMonitor → AGXSecureMonitor |
+| `AGXSecureSharedGartTableBacking` | 0x88 | AGXSharedGartTableBacking |
+| `AGXShared` | 0x218 | IOGPUDevice → IOGPUObject |
+| `AGXSharedGartTableBacking` | 0x88 |  |
+| `AGXSharedGartTableBackingG19P` | 0x88 | AGX·PI_400·P·A0·SharedGartTableBacking → AGXSecureSharedGartTableBacking → AGXSharedGartTableBacking |
+| `AGXSpillBufferManager` | 0x80 |  |
+| `AGXStatistics` | 0x1cb0 | IOGPUStatistics |
+| `AGXTAChannel` | 0x1e0 | AGXChannel → IOGPUChannel |
+| `AGXTAChannelSKSM` | 0x1e0 | AGXTAChannel → AGXChannel → IOGPUChannel |
+| `AGXTAChannelSKSMG19P` | 0x1e0 | AGX·PI_400·P·A0·TAChannelSKSM → AGXTAChannelSKSM → AGXTAChannel → AGXChannel → IOGPUChannel |
+| `AGXTACommandDescriptor` | 0x1680 | AGX3DCommandDescriptor → AGXCommandDescriptor → IOGPUCommandDescriptor → IOGPUObject |
+| `AGXTimeStampQueue` | 0x40 |  |
+| `AGXUAT` | 0x3e0 |  |
+| `AGXUATMux` | 0x20 |  |
+| `AGXUATSingleStage` | 0x3e0 | AGXUAT |
+| `AGXUMAAsyncGrowRequest` | 0x40 |  |
+| `AGXUMASharedPoolContainer` | 0x78 |  |
+| `AGXUMASyncNodeCommandDescriptor` | 0x400 | AGXCommandDescriptor → IOGPUCommandDescriptor → IOGPUObject |
+| `AGXUSCPrivMemBlock` | 0x40 |  |
+| `AGXUSCPrivMemFList` | 0x378 | AGXHardwareBufferBase → IOGPUObject |
+| `AGXUSCPrivMemHWMetrics` | 0x38 |  |
+| `AGXUSCPrivMemPool` | 0x240 | IOGPUObject |
+| `AGXUSCPrivMemPoolSMA` | 0x5c8 | AGXUSCPrivMemPool → IOGPUObject |
+| `AGXUSCPrivMemPoolSMAV1` | 0x5c8 | AGXUSCPrivMemPoolSMA → AGXUSCPrivMemPool → IOGPUObject |
+| `AGXUSCPrivMemPoolSMAV2` | 0x5c8 | AGXUSCPrivMemPoolSMA → AGXUSCPrivMemPool → IOGPUObject |
+| `AGXUniqueResourceSet` | 0x30 | IOGPUResourceSet |
+| `AGXVirtualMemory` | 0x138 | IOGPUVirtualMemory → IOGPUMemory → IOGPUObject |
+| `AGXWorkQueue` | 0x240 | IOGPUWorkQueue → IOGPUObject |
+| `AGX·PI_400·P·A0·3DChannelSKSM` | 0x1d8 | AGX3DChannelSKSM → AGX3DChannel → AGXChannel → IOGPUChannel |
+| `AGX·PI_400·P·A0·Accelerator` | 0x1d198 | AGXFamilyAccelerator → AGXAccelerator → IOGPU → IOAcceleratorES → IOService → IORegistryEntry |
+| `AGX·PI_400·P·A0·AcceleratorP` | 0x1d198 | AGX·PI_400·P·A0·Accelerator → AGXFamilyAccelerator → AGXAccelerator → IOGPU → IOAcceleratorES → IOService → IORegistryEntry |
+| `AGX·PI_400·P·A0·CLChannelSKSM` | 0x1d0 | AGXCLChannelSKSM → AGXCLChannel → AGXChannel → IOGPUChannel |
+| `AGX·PI_400·P·A0·Gart` | 0x340 | AGXSecureGart → AGXGart → IOGPUTask → IOGPUObject |
+| `AGX·PI_400·P·A0·KSMKickQueue` | 0xb0 | AGXKSMKickQueue |
+| `AGX·PI_400·P·A0·RenderTarget` | 0xa0 | AGXFastRenderTarget |
+| `AGX·PI_400·P·A0·RenderTargetMemory` | 0x2c8 | AGXRenderTargetMemory |
+| `AGX·PI_400·P·A0·SecureMonitor` | 0xc0 | AGXSecureMonitor |
+| `AGX·PI_400·P·A0·SharedGartTableBacking` | 0x88 | AGXSecureSharedGartTableBacking → AGXSharedGartTableBacking |
+| `AGX·PI_400·P·A0·TAChannelSKSM` | 0x1e0 | AGXTAChannelSKSM → AGXTAChannel → AGXChannel → IOGPUChannel |
+| `AppleAGXFunctionMetrology` | 0x30 | AppleARMFunction |
+| `IAGXUSCPrivMemGrowEngine` | 0x20 | IOGPUObject |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1800)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x00016089 off=0x0011f190-0x00135219 addr=0xfffffe0007123190-0xfffffe0007139219 r--/r--   __TEXT            
+	sz=0x00004374 off=0x0011f900-0x00123c74 addr=0xfffffe0007123900-0xfffffe0007127c74               __TEXT.__const            
+	sz=0x0000110e off=0x00123c74-0x00124d82 addr=0xfffffe0007127c74-0xfffffe0007128d82               __TEXT.__os_log           
+	sz=0x00010497 off=0x00124d82-0x00135219 addr=0xfffffe0007128d82-0xfffffe0007139219               __TEXT.__cstring          (CstringLiterals)
+001: LC_SEGMENT_64 sz=0x000d9d5c off=0x01529760-0x016034bc addr=0xfffffe000852d760-0xfffffe00086074bc r-x/r-x   __TEXT_EXEC       
+	sz=0x000d82cc off=0x01529760-0x01601a2c addr=0xfffffe000852d760-0xfffffe0008605a2c          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00001a90 off=0x01601a2c-0x016034bc addr=0xfffffe0008605a2c-0xfffffe00086074bc          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00004000 off=0x04924610-0x04928610 addr=0xfffffe000b928610-0xfffffe000b92e7b0 rw-/rw-   __DATA            
+	sz=0x00001400 off=0x04924610-0x04925a10 addr=0xfffffe000b928610-0xfffffe000b929a10               __DATA.__data             
+	sz=0x00000010 off=0x00000000-0x00000010 addr=0xfffffe000b929a10-0xfffffe000b929a20               __DATA.__common           (Zerofill)
+	sz=0x00004d90 off=0x00000000-0x00004d90 addr=0xfffffe000b929a20-0xfffffe000b92e7b0               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x000179d0 off=0x00f6a3f0-0x00f81dc0 addr=0xfffffe0007f6e3f0-0xfffffe0007f85dc0 rw-/rw-   __DATA_CONST      
+	sz=0x000003c0 off=0x00f6a3f0-0x00f6a7b0 addr=0xfffffe0007f6e3f0-0xfffffe0007f6e7b0         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x000002f8 off=0x00f6a7b0-0x00f6aaa8 addr=0xfffffe0007f6e7b0-0xfffffe0007f6eaa8         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x000117e0 off=0x00f6aaa8-0x00f7c288 addr=0xfffffe0007f6eaa8-0xfffffe0007f80288         __DATA_CONST.__const            
+	sz=0x00002500 off=0x00f7c288-0x00f7e788 addr=0xfffffe0007f80288-0xfffffe0007f82788         __DATA_CONST.__kalloc_type      
+	sz=0x00002670 off=0x00f7e788-0x00f80df8 addr=0xfffffe0007f82788-0xfffffe0007f84df8         __DATA_CONST.__kalloc_var       
+	sz=0x00000d48 off=0x00f80df8-0x00f81b40 addr=0xfffffe0007f84df8-0xfffffe0007f85b40         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000278 off=0x00f81b40-0x00f81db8 addr=0xfffffe0007f85b40-0xfffffe0007f85db8         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000008 off=0x00f81db8-0x00f81dc0 addr=0xfffffe0007f85db8-0xfffffe0007f85dc0         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 929 at 0x04acf8c4
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     F52A8A03-5A1D-397A-B551-E14263ABCA1C
+008: LC_SOURCE_VERSION           362.5.0.0.0
+009: LC_FUNCTION_STARTS          offset=0x004a94fd8 size=0x11e0
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AGXG19P`
+- `CFBundleIdentifier`: `com.apple.AGXG19P`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AGXG19P Graphics Kernel Extension`
+- `CFBundleNumericVersion`: `0`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `362.5`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `362.5`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2020 Apple Inc. All rights reserved.`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AGXG19P.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198904622704`
+- `_PrelinkExecutableRelativePath`: `AGXG19P`
+- `_PrelinkExecutableSize`: `1104213`
+- `_PrelinkExecutableSourceAddr`: `-2198904622704`
+- `_PrelinkKmodInfo`: `-2198829103600`
+
+## Strings (2088) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__os_log]**
+
+- `AGX: Submitting NOP`
+- `Failed to init PM Queue Config\n`
+- `AGXk: map block failed for fw`
+- `AGXk: map block failed for cpu`
+- `AGXk: block map failed`
+- `Failed to map fActivityResource\n`
+- `Failed to create PM\n`
+- `Failed on call to commandQueueStart\n`
+- `Event ID %u signal value (%llu) will use fallback path since queue is idle`
+- `AGXk: alloc block failed`
+- `AGXk: block alloc failed`
+- `Failed to create GTP channel\n`
+- `Failed to map fKSMKickQueueSharedState\n`
+- `AGXk: failed to grow fw resources`
+- `Failed to get ID for PM resources\n`
+- `Failed to init FRG channel\n`
+- `Failed to init TimeStamp Queue\n`
+- `Failed to create command queue process exit wait timer\n`
+- `Failed to init work queue\n`
+- `protection violation: %016llx -> %016llx -> %016llx`
+- `AGXk: map block failed for gpu`
+- `Failed to create work queue\n`
+- `Protection violation: trace id: 0x%016llx rsrc id: 0x%08x type: 0x%02x internal: %d size: 0x%012llx rsrcProt: 0x%08llx cmdqProt: 0x%08llx %s`
+- `AGX: Channel error %u`
+- `Failed to init Command Buffer State\n`
+- `AGXk: alloc block handle failed`
+- `AGXk: block create failed`
+- `Failed to init GTP channel\n`
+- `AGX: NOP Command: proc %{public}s [%d] command type %d traceID 0x%016llx`
+- `Failed to create command queue FW resources\n`
+- `AGXk: out of fw resources`
+- `Failed to check usage and prepare PM resources\n`
+- `Failed to create FRG channel\n`
+- `Failed to create Render Target Memory\n`
+- `AGX: NOP prepared`
+- `Failed to create Fast Render Target\n`
+- `Failed to share PM\n`
+
+**[__TEXT.__cstring]**
+
+- `const RET *AGXFirmwareRingValidator::validateType(const AGFIFirmwareEventRingEntry *) const [RET = AGFIFirmwareEventProcessExitComplete, FWET1 = kAGFIFirmwareEventTypeProcessExitComplete, FWET2 = kAGFIFirmwareEventNone]`
+- `PBDescriptorTable`
+- `agxk_uma_sync_node_command.cpp`
+- `UMA FW Uncached State`
+- `Probe-time Fender mapping`
+- `gpu-perf-boost-mrc-period`
+- `VDM5`
+- `Ki-1`
+- `1222122111`
+- `H11ANEIn`
+- `INVALID04`
+- `gpu-idleoff-fi-hit`
+- `const RET *AGXFirmwareRingValidator::validateType(const AGFIFirmwareEventRingEntry *) const [RET = AGXSTrace, FWET1 = kAGFIFirmwareEventTypeFWTrace, FWET2 = kAGFIFirmwareEventNone]`
+- `INVALID17`
+- `SMA_CORE`
+- `INVALIDBF`
+- `INVALIDEC`
+- `site.AGXLateEvalEvent *`
+- `transfer_min_clamp`
+- `agxk_3d_channel_sksm.cpp`
+- `AGXGPURawCounterSourceGroup`
+- `MCache registers (unused)`
+- `*`
+- `AGXGrowableArray<IndexTuple>::~AGXGrowableArray() [T = IndexTuple]`
+- `AGXk: %s:%d:%s: !!! AGXArmFirmware:: Power State (%d) must be in external state\n`
+- `IPF4`
+- `Min_Confidence`
+- `AGXUMAAsyncGrowRequest`
+- `GPU CTL RIF Perf Regs`
+- `TE3`
+- `1212222222222222222222111212`
+- `1M`
+- `Avg of Ideal UMA Allocation Size`
+- `site.AGX3DCommandDescriptor`
+- `virtual OSSharedPtr<IOMemoryMap> AGXSecureGart::createRestrictedRangeMapping(IOMemoryDescriptor *, IOGPUNewResourceArgs *)`
+- `High_Confidence`
+- `SetDPECSwitchBudget`
+- `12111112122212121222222222111111`
+- `DCMP3`
+- `IOReturn AGXParameterMemoryVirtual::addMapping(AGXMemoryMap *)`
+- `Throttle Counter Total`
+- `[RC] %d %llu\n`
+- `virtual IOReturn AGXCLCommandDescriptor::prepare(uint32_t)`
+- `gVDM_SSD_0`
+- `12`
+- `GPU UT Engagement centi-%`
+- `AGXk: %s:%d:%s: !!! %s Could not allocate sleep/restart lock\n`
+- `AGXk: %s:%d:%s: !!! Cannot have both gpu-fstp-downgrade and gpu-fstp-downgrade-mask specified at the same time.\n`
+- `virtual void AGXArmFirmware::blockForRingEmpty(uint32_t)`
+- `bif1_fault`
+- `\"Timeout SharedEvent: late eval wait timed out sharedID=%llu waitValue=%llu completedValue=%llu stampIdx=%d stamp=0x%llx\" @%s:%d`
+- `agxk_secure_mmu.cpp`
+- `site.AGXSecureSharedGartTableBacking`
+- `site.AGXKTelemetry`
+- `AGXk: %s:%d:%s: !!! %s: Failed to prepare YUV ColorSpaceConversion table mapping\n`
+- `ID`
+- `FilteredGPUPower`
+- `gpu-avg-power-ki`
+- `dVDM_ILF`
+- `VF6`
+- `VF7`
+- `SL2`
+- `site.AGXTAChannelSKSM`
+- `gpu-pwr-calc-coeff3`
+- `[MS] %llu\n`
+- `virtual void AGXFirmware::setupConfig()`
+- `MaxCSwitch`
+- `INVALID07`
+- `INVALIDF8`
+- `void AGXFirmwareResourceStack<unsigned char, AGXParameterManagement>::releaseElement(ElementOwner *, uint32_t) [FWResourceManagerElement = unsigned char, ElementOwner = AGXParameterManagement, kL1WidthBits = 64, kL2WidthBits = 64]`
+- `fw_power_limit_controller`
+- `121111112221222222222222122112222222221222222222222222222221112212222210`
+- `gpu-avg-power-min-duty-cycle`
+- `UL1C9`
+- `s3`
+- `core_mask_list`
+- `INVALIDFE`
+- `site.AGXQOSManager`
+- `1221111`
+- `G16P`
+- `A1`
+- `SetFabPStateStepSize`
+- `B16@?0^{sBlock=^{AGXMemoryMap}QQq{?=^{sBlock}^^{sBlock}}{IOGPUEvent={?=I[15I]}}}8`
+- `OSSharedPtr<AGXParameterBufferBlock> AGXParameterManagementVirtual::createParameterBufferBlock(bool)`
+- `site.AGXFastRenderTarget`
+- `UMA Page Pool List`
+- `Starting as `
+- `12212222222222222222222222222222222222222222222222222222222222222222222222222222222202`
+- `Deadline`
+- `totalSamples`
+- `virtual bool AGXFirmware::isFWAwake()`
+- `SetDPEImaxWin1`
+- `INVALIDD9`
+- `AGXk: %s:%d:%s: !!! Assertion failed: %s: Invalid element (%d)\n`
+- `agxk_memory_map.h`
+- `agxk_ta_command.cpp`
+- `TA Write`
+- `target`
+- `agxk_fwc_arm_mapper.cpp`
+- `fw_power_boost_controller`
+- `AGXk: %s:%d:%s: !!! PreemptCountBuffer cannot be put into in a sparse FList\n`
+- `AGXk: %s:%d:%s: !!! Verification failed: %s: [%s] Could not map Fender reg range\n`
+- `perf-states-sram`
+- `virtual IOReturn AGXArmFirmwareMapper::iovmUnmapMemory(IOMemoryDescriptor *, IODMACommand *, uint64_t, uint64_t)`
+- `GIPP`
+- `setAGXGameModeKey`
+- `virtual bool AGX·PI_400·P·A0·Accelerator::handleMCWInterrupt(uint32_t *)`
+- `setBudgetToAGXFunction`
+- `gpu-ppm-limit-mrc-period`
+- `GL2CC_META4`
+- `AGX·PI_400·P·A0·SharedGartTableBacking`
+- `PlantFilterFi`
+- `CoreEfficiency`
+- `12222222222222222222`
+- `12112112222222222222222222222222222222222222222222222222222212222211111122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `no-gpc`
+- `enableCoreEfficiency`
+- `kern.sptm.event_counters.UAT_UNMAP_MARKED`
+- `uint32_t AGXChannel::prepareNopResources(IOGPUCommandDescriptor *, AGFIChannelCommandType)`
+- `ConfigKpTargetDelta`
+- `AGXk: %s:%d:%s: !!! Timeout while waiting for the GPU firmware to come up (%us) at timestamp %llu\n`
+- `AGXKSMKickQueue`
+- `site.AGXQOSQueue`
+- `AGXSecureMonitor`
+- `virtual void AGXWorkQueue::submitForFenceComplete(AGXIOFenceData *)`
+- `AGXHardwareWorkLoop`
+- `pi_sg_target_profile_sel`
+- `void AGXRenderHardwareKernelCommand::copyPassthroughData(AGXTACommandDescriptor *const) const`
+- `site.AGXUSCPrivMemFList`
+- `GPUAccumulatedEnergy`
+- `Unknown`
+- `gpu-perf-boost-min-util`
+- `domain`
+- `IPF_CPF7`
+- `source_mask`
+- `AGXUSCPrivMemHWMetrics`
+- `SetDPETrigSteering`
+- `AGXk: %s:%d:%s: !!! queueing too many unmaps (possbile failure to commit)!\n`
+- `void AGXWorkQueue::setPriority(eAGXContextPriorityType, eIOGPUCommandQueueQosLevel)`
+- `Firmware (cached) channel Pool`
+- `IPF9`
+- `INVALIDEF`
+- `bool AGXHWDSIDManager::init(AGXAccelerator *, IOService *)`
+- `AGXRenderTargetMemory`
+- `site.IOBufferMemoryDescriptor **`
+- `gpu_var`
+- `HwPIQuanta`
+- `AGX3DChannelSKSMG19P`
+- `void AGXInternalResource::markAlwaysPurgeableVolatile()`
+- `AGXk: %s:%d:%s: !!! Could not retain UMA fList for valid UMA Pool in %s\n`
+- `A0`
+- `site.MappingInfo`
+- `virtual void AGXFender::clearTimerPowerInterruptStatus()`
+- `PushTelemetryDashboardRegs`
+- `gpu-perf-filter-time-constant`
+- `void AGXFirmwareResourceStack<_AGFISchedulerState, AGXCommandQueue, 64, 256>::releaseElement(ElementOwner *, uint32_t) [FWResourceManagerElement = _AGFISchedulerState, ElementOwner = AGXCommandQueue, kL1WidthBits = 64, kL2WidthBits = 256]`
+- `IPF2`
+- `site.int32_t *`
+- `ptd_features`
+- `INVALIDAB`
+- `AGXIOFenceData`
+- `UMA Metric Mapped Pages Histogram`
+- `G13S`
+- `UVWarn Instances`
+- `agxk_workqueue.cpp`
+- `MMU interrupt`
+- `eIOGPUProtectionLevel agxToIOGPUProtectionLevel(eAGXProtectionOptions)`
+- `Memless Render Failed`
+- `ppm_qp`
+- `PPP3`
+- `AGXRenderTargetG19P`
+- `CDM Round robin`
+- `AGXk: %s:%d:%s: !!! %s Could not allocate trace lock\n`
+- `Write Only`
+- `1212111112221111122211111222111112221111122211111222111112221111122211111222111112221111122211111222111112221111122211111222111112221`
+- `3D`
+- `Max of Minimum UMA Allocation Size`
+- `UMA Metric Reserved Pages Histogram`
+- `void AGXFastRenderHardwareKernelCommand::copyPassthroughData(AGX3DCommandDescriptor *const) const`
+- `site.AGXGFXDVAccessor`
+- `gCDM_CS`
+- `Renderer Utilization %`
+- `GPU Active Time`
+- `AGXk: %s:%d:%s: !!! %s: Failed to allocate IOFence data structures\n`
+- `GPU Hang: `
+- `121121211211112222222222222222222212222211222222122211222122222222222222222222222222222222222222122111111111111111222222222222222212212212121212222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222112221122222222222222222222222222222222000000`
+- `void AGXCommandBuffer::mergeSubmitEventForStage(uint32_t, const sIOGPUEvent *, const sIOGPUEvent *, uint64_t)`
+- `AGXk: %s:%d:%s: !!! Setting AGXArmFirmwareMapper accelerator handle a second time (fAccelerator=0x%p accel=0x%p)!\n`
+- `Throttle Counter Misc `
+- `112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `GPUMaxPower`
+- `AGXUniqueResourceSet`
+- `INVALIDEE`
+- `GLOBAL`
+- `SCMBuildTime`
+- `agxk_command_buffer.cpp`
+- `AGXArmFirmwareMapper`
+- `INVALID8F`
+- `GM_GL2C`
+- `1222222221211`
+- `CDM Kill timeout`
+- `UMA HW Mapped Pages Distribution`
+- `1122`
+- `s1`
+- `se-criteria`
+- `site.AGX·PI_400·P·A0·AcceleratorP`
+- `virtual void AGXInvalidChannel::submitBuffer(IOGPUCommandDescriptor *)`
+- `agxk_parameter_management_virtual.cpp`
+- `AGXShared`
+- `Spill Buffer Metadata Usage Histogram`
+- `interrupts-valid`
+- `MCache registers`
+- `GTP_CORE`
+- `121121212122122`
+- `AGXk: %s:%d:%s: !!! Ring entry contains bad data\n`
+- `211`
+- `site.AGXSpillBufferManager`
+- `void AGXFirmwareResourceStack<_AGFIChannelState, AGXChannel, 64, 256>::releaseElement(ElementOwner *, uint32_t) [FWResourceManagerElement = _AGFIChannelState, ElementOwner = AGXChannel, kL1WidthBits = 64, kL2WidthBits = 256]`
+- `GSL1_2`
+- `const RET *AGXFirmwareRingValidator::validateType(const AGFIFirmwareEventRingEntry *) const [RET = AGFIFirmwareEventStampUpdate, FWET1 = kAGFIFirmwareEventTypeStampsUpdated, FWET2 = kAGFIFirmwareEventNone]`
+- `AGXk: %s:%d:%s: !!! Not all MTR Sensors required for SoCHoT are enabled (en: %.16llx exp: %.16llx)\n`
+- `com.apple.agx.gpurole`
+- `The range of valid memory is too large to be represented by this type, or [begin, end) is not a well-formed range`
+- `Fragment, `
+- `AGXk: %s:%d:%s: !!! Verification failed: %s: [%s] Fender address unknown\n`
+- `AGXCLChannel`
+- `virtual void AGXFirmware::decodeAndPrintSchedulerStatus(AGFSubmitList *)`
+- `AGFIFirmwareEventType AGXFirmwareRingValidator::peekNextEntry(AGFIFirmwareEventRingEntry *) const`
+- `INVALID64`
+- `SplitSceneCount`
+- `Firmware/Driver Shared (uncached, read-only)`
+- `INVALID5F`
+- `site.AGX·PI_400·P·A0·TAChannelSKSM`
+- `perf-states`
+- `valid_perf_states`
+- `gpu-se-filter-time-constant`
+- `42822`
+- `AGXTACommandDescriptor`
+- `setCLPCDeadlineControlEffortKey`
+- `INVALIDDD`
+- `Parameter Scene Allocations (MList, MTileArray, VHeap Table)`
+- `AGXk: %s:%d:%s: !!! Unknown DM type %u\n`
+- `gpu-power-zone-target-offset-0`
+- `agxs_smart_idle_off.h`
+- `site.AGXUSCPrivMemPoolSMAV1`
+- `AGXk: %s:%d:%s: !!! Stamps must always increment monotonically by %u. Stamp index = %d. Current stamp = %u, New stamp = %u\n`
+- `CounterValues`
+- `UL1C2`
+- `INVALID3F`
+- `agxk_render_hardware_kernel_command.cpp`
+- `virtual void AGXSecureGart::free()`
+- `CDM Single`
+- `void AGXAccelerator::populateLinearFrequencyTransferTable(float *, uint32_t)`
+- `measured_ef`
+- `gVDM_TFP_1`
+- `agxk_fender.h`
+- `AGXk: %s:%d:%s: !!! Not supported\n`
+- `AGXk: %s:%d:%s: !!! Assertion failed: %s: GPU HW Buffer replace failed\n`
+- `agxk_stream_validator.h`
+- `IAGXUSCPrivMemGrowEngine`
+- `gpu-power-zone-target-offset-1`
+- `num_gps`
+- `121112111111111111111111111111111111111111122222222222222222222222222222222222211111111111111111111111111111111111112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `UL1C7`
+- `gVDM_MMBR_0`
+- `AGX·PI_400·P·A0·AcceleratorP`
+- `void AGXTACommandDescriptor::clearTAGPUTailPointerMemory()`
+- `121111122`
+- `12121111`
+- `Skipped\n`
+- `coeff_range_mid`
+- `agxk_hal_400_accelerator.h`
+- `AGX.%s_%s_%u`
+- `AGXk: %s:%d:%s: !!! Cannot reserve from unmapped range!\n`
+- `site.AGXImplicitGrowEngine`
+- `AGXk: %s:%d:%s: !!! Verification failed: %s\n`
+- `AbsTimeOffset`
+- `reset-criteria`
+- `INVALIDFA`
+- `quantum_size`
+- `INVALID2F`
+- `virtual bool AGXParameterManagement::checkForShrink(uint64_t)`
+- `CDM vChannel Usage`
+- `ll1_evictions`
+- `VCE5`
+- `DCMP`
+- `AGXk: %s:%d:%s: !!! Firmware wasn't stopped for post-recovery\n`
+- `\t[%d]: %d\n`
+- `free_num`
+- `GPU Hang - Channel Restart`
+- `num_mgpus`
+- `G18G`
+- `t2`
+- `INVALIDAF`
+- `agxk_mmu.cpp`
+- `iofence_list`
+- `DFender CS Regs`
+- `AGXCommandQueue`
+- `G15P_AGX2`
+- `AGXSharedGartTableBacking`
+- `bif%d_fault`
+- `bool AGXUAT::allocPageTables(const IOVirtualAddress, const IOByteCount)`
+- `fenderPhys != 0 || !startFender`
+- `t1`
+- `AGXMetalG19P`
+- `isDPEEnabled()`
+- `gpu-se-dz`
+- `gpu-se-engagement-criteria`
+- `AGXk: %s:%d:%s: !!! unbacked mapping cannot be volatile\n`
+- `virtual bool AGXGart::reserve(uint32_t, uint64_t, uint64_t)`
+- `AGXStatistics`
+- `vChannel Selection`
+- `sensor_indexes`
+- `MDCC_SLICE_MB3`
+- `Firmware Remote Node`
+- `Tg%ua Latest`
+- `DCMP9`
+- `dIPP`
+- `KSMCompletionQueue2`
+- `fw_perf_state_hi`
+- `BIF%d page fault`
+- `GSL1_5`
+- `IPF_CPF5`
+- `APS_USC`
+- `AGXRemoteNodeCommandDescriptor`
+- `site.AGXRestartReport`
+- `site.AGX3DChannelSKSM`
+- `void ProbeConfig::map()`
+- `AGXDebugBufferShmem`
+- `GL2CC_META2`
+- `MPC`
+- `FRG Dependent`
+- `AGXk: %s:%d:%s: !!! CmdDesc stamp index(%u) doesnt match channel (%u)\n`
+- `agxk_usc_priv_mem_f_list.cpp`
+- `void ProbeConfig::synthetizeConfig()`
+- `FenderScratchRam`
+- `SetDPEImaxReactCtrl`
+- `AGXCommandQueueProcessExitWorkLoop`
+- `CLPCSplitHint`
+- `site.AGX·PI_400·P·A0·3DChannelSKSM`
+- `UMAPool`
+- `UL1C5`
+- `ZLS9`
+- `ptd_start`
+- `CoreConfig`
+- `NumFSTPs`
+- `AGX·PI_400·P·A0·RenderTargetMemory`
+- `122122222222222222222222222222222222222222222`
+- `G18P`
+- `TransferOutput`
+- `t0`
+- `ef`
+- `Total submissions`
+- `mtr-enabled`
+- ` DVMR`
+- `SCMVersionNumber`
+- `site.AGXDeviceUserClient`
+- `site.AGXIOFenceData`
+- `CLTMLimit`
+- `gVDM_TFP_0`
+- `site.AGXSharedGartTableBackingG19P`
+- `Count`
+- `Energy Model`
+- `interrupts`
+- `site.struct sAGXIOSurfaces`
+- `idle_tolerance`
+- `AGXParameterMemoryVirtual`
+- `gpu-idleoff-nei-hit`
+- `virtual bool AGXArmFirmware::stopFirmwareForRecoveryInspection(const AGXRestartInfo &)`
+- `DCMP7`
+- `UL1C8`
+- `ta`
+- `void AGXCommandBuffer::generateMTLBarriers(uint32_t, uint32_t)`
+- `gpu-ppm-ki`
+- `AGXk: %s:%d:%s: !!! handleMCWInterrupt: Only DS ID clear completion event is supported. IRQ_PEND_STATUS value = 0x%x\n`
+- `site.AGXHWTimeStampMapTable`
+- `agxk_memory_map.cpp`
+- `agxk_statistics.cpp`
+- `mediaserverd`
+- `MCW Regs`
+- `VF_CPF9`
+- `11111221222222212221222`
+- `UMA Block`
+- `122222111111111`
+- `3.44.12`
+- `AGXk: %s:%d:%s: !!! AGXArmFirmwareMapper::iovmUnmapMemory: unmapping different length than was mapped!\n`
+- `Tg%ua Max`
+- `G14D`
+- `gpu-turbo-mrc-period`
+- `sensor_reset_status`
+- `gpu-sysmem-reserve-percent`
+- `G13C`
+- `SetDPEImaxWin2`
+- `site.AGXRenderTargetG19P`
+- `gmi_stalls`
+- `VF_CPF3`
+- `DIPP`
+- `agxk_internal_resource.cpp`
+- `virtual void AGXTAChannelSKSM::submitBuffer(IOGPUCommandDescriptor *)`
+- `virtual void AGXArmFirmware::resumeFirmwarePreRecovery()`
+- `IPF_CPF4`
+- `KSMCompletionQueue3`
+- `AGXCommandBuffer Submitted Kicks`
+- `GFenderCfg Regs`
+- `coeff_range_high`
+- `samples`
+- `site.AGXRenderTargetMemory`
+- `AGXSpillBufferManager`
+- `Device Utilization %`
+- `site.AGXUSCPrivMemHWMetrics`
+- `site.AGXCLWorkQueue`
+- ` %uFRGSlots`
+- `requestor`
+- `Shared Compute, `
+- `bounded_array_ref: n + m is larger than the size of any bounded_array_ref`
+- `virtual uint32_t AGXAcceleratorRing<AGFIAcceleratorDeviceControlEntry>::getWriteIndex() const [AGXAcceleratorRingEntry = AGFIAcceleratorDeviceControlEntry]`
+- `CMP4`
+- `uint8_t *SKUBufferAllocator::allocateBlock(const sIOGPUEvent *)`
+- `FRG Alloc New`
+- `gpu-se-kp`
+- `threshold_pF`
+- `AGXParameterBufferMaxSizeEverMemless`
+- `gpu-se-ki-1`
+- `IPF6`
+- `agxk_secure_mmu.h`
+- `auto AGXTACommandDescriptor::prepare(uint32_t)::(anonymous class)::operator()(int32_t) const`
+- `121111112221222222222222122112222222221222222222222222222221112212222200`
+- `gpu-power-sample-period`
+- `meta-sw-interrupt`
+- `3D: stamp_idx=%d `
+- `gpu-pwr-calc-coeff1`
+- `FreqPredictionEnabled`
+- `Standby_Timer`
+- `virtual void AGX·PI_400·P·A0·Accelerator::setupFirmwareMapper()`
+- `AppleM2ScalerCSCDriver`
+- `site.AGXGart *`
+- `GPU UT Engagement`
+- `B1`
+- `AGXk: %s:%d:%s: !!! Fetching entry from empty ring\n`
+- `GSL1_6`
+- `KSM_RSM`
+- `AGXk: %s:%d:%s: !!! Assertion failed: %s: Attempt to release an out-of-range element (%d)\n`
+- `Total Restarts`
+- `gpu-noise-suppression`
+- `initTimestamp`
+- `GFXCAXI2AFRegs`
+- `site.AGXLateEvalWait`
+- `Throttle Counter ExtAsync`
+- `AGXk: %s:%d:%s: !!! AGXCLChannelSKSM::submitBuffer: priority_type out of bounds (%u)\n`
+- `Probablity_Init_Val`
+- `INVALIDFF`
+- `1211`
+- `GFXClkGen Regs`
+- `gpu-pwr-calc-coeff4`
+- `1211111111111112122`
+- `AGXk: %s:%d:%s: !!! AGXCLChannelSKSM::submitBuffer: event_flag_idx out of bounds (priority_type=%u, context_id=%u)\n`
+- `base_perf_state`
+- `gpu-se-filter-time-constant-1`
+- `void AGXArmFirmwareMapper::setAccelerator(AGXAccelerator *const)`
+- `ZLS4`
+- `agxk_3d_command.cpp`
+- `Dynamic Power Control Regs`
+- `AGXk: %s:%d:%s: !!! AGXCLChannelSKSM::submitBuffer: context_id is out of range (%u)\n`
+- `virtual uint32_t AGXAcceleratorRing<AGFIAcceleratorDeviceControlEntry>::getReadIndex() const [AGXAcceleratorRingEntry = AGFIAcceleratorDeviceControlEntry]`
+- `UL1C4`
+- `site.AGX·PI_400·P·A0·RenderTargetMemory`
+- `36223`
+- `UMA Page List Backing (`
+- `AGXk: %s:%d:%s: !!! Failed to create ioFence (0x%llx) on ioSurface (0x%llx, id: %d) in sync mode.\n\n`
+- `AGFIChannelState`
+- `AGXk: %s:%d:%s: !!! Not all MTR Sensors required for FastDie are enabled (en: %.16llx exp: %.16llx)\n`
+- `site.AGXFirmwareResourceAllocation`
+- `static Index KernelCalculatedSMAFinalResults::idealTypeToMinType(Index)`
+- `VF1`
+- `AGXk: %s:%d:%s: !!! %s Could not allocate context release lock\n`
+- `virtual uint64_t AGXAccelerator::getAgxCrUmaIdealConstantCount()`
+- `AGXk: %s:%d:%s: !!! FW Ring write_index %x out-of-bounds\n`
+- `gpu-power-zone-target-2`
+- `INVALID97`
+- `Tiler Utilization %`
+- `THM Activation Count`
+- `site.AGXUSCPrivMemBlock`
+- `void AGXComputeHardwareKernelCommand::copyPassthroughData(AGXCLCommandDescriptor *const) const`
+- `16G`
+- `site.AGXDiagnosisReport`
+- `mmuReqsThreshold`
+- `inactive-thresh`
+- `INVALID37`
+- `site.AGXStatistics`
+- `fGPUPerfStateInfo.valid_perf_states <= AGF_MAX_NUM_PMGR_PERF_STATES`
+- `virtual void AGXCLChannelSKSM::submitBuffer(IOGPUCommandDescriptor *)`
+- `1211111221112121111111122212111211122111111111212211221212211112122`
+- `gpu-pwr-integral-gain`
+- `INVALID44`
+- `gCDM_ID`
+- `AFR Power Controller States`
+- `) - Aggregate of UMA Blocks for Pool ID %llu`
+- `VCE3`
+- `timestamp timeout`
+- `ntlb_stalls`
+- `const RET *AGXFirmwareRingValidator::validateType(const AGFIFirmwareEventRingEntry *) const [RET = AGFIFirmwareEventMetrologyAging, FWET1 = kAGFIFirmwareEventTypeMtrResult, FWET2 = kAGFIFirmwareEventNone]`
+- `IPF_CPF8`
+- `MetrologySensor Regs (unused)`
+- `virtual uint64_t AGXAccelerator::halReadKSMFEReg(uint32_t)`
+- `GSL2`
+- `fw_power_substate`
+- `void AGXStatistics::recordStatisticsEntryFromFW(AGFIFirmwareEventRingEntry, const AGXFirmwareRingValidator *)`
+- `gpu-power-zone-filter-tc-3`
+- `SetDPEACLink`
+- `VCE4`
+- `virtual void AGXFender::initConfigRAMOffset()`
+- `gpu-sochot-temp`
+- `SEResetDelayCounter`
+- `s2`
+- `DCDM`
+- `release`
+- `G17A`
+- `Firmware KSM Kick queue config update Pool`
+- `fw_perf_state_lo`
+- `agxk_ta_channel_sksm.cpp`
+- `C0`
+- `PPP0`
+- `agxk_hwdsid_manager.cpp`
+- `AGXPerfCtrSamplerGen11`
+- `Bumper Regs`
+- `AGXk: %s:%d:%s: !!! Invalid Host alloc Request type %d\n`
+- `const RET *AGXFirmwareRingValidator::validateType(const AGFIFirmwareEventRingEntry *) const [RET = AGFIChannelErrorEventArgs, FWET1 = kAGFIFirmwareEventTypeChannelError, FWET2 = kAGFIFirmwareEventNone]`
+- `s0`
+- `VF9`
+- `gIPP_CS`
+- `site.AGXSharedGartTableBacking`
+- `uint32_t AGXUSCPrivMemPool::getMaxParallelStreamsForDM(AGXIOFenceDataMasterType) const`
+- `counter_list`
+- `unknown lockup`
+- `AGXk: %s:%d:%s: !!! Unsupported ideal type\n`
+- `TEST_PAGE_SIZE_16K`
+- `gpu-pwr-calc-static`
+- `agxk_channel.cpp`
+- ` %uGPs`
+- `Invalid DataMaster %u`
+- `AGXk: %s:%d:%s: !!! %s Could not allocate static power transition lock\n`
+- `gpu-pwr-min-duty-cycle`
+- `ErrorIntegral`
+- `Reset_Iterations`
+- `1212122222211121222221111212122222222222111222122221111121`
+- `gpu-pwr-perf-scale2`
+- `Spill Buffer Unused Blocks per Task`
+- `3D Write`
+- `dIPP_CS`
+- `guilty_dm`
+- `Fender State`
+- `Spill Buffer Metadata Usage`
+- `site.IOMemoryDescriptor *`
+- `AGXk: %s:%d:%s: !!! Unsupported command type = %u\n`
+- `FABoost`
+- `1211211111111111111111211221121121121121121121121121121121121121121121121121121121121121121121121121121121121121121121121122`
+- `Kp-1`
+- `TA Read`
+- `G17S`
+- `G19A`
+- `gpu-perf-filter-time-constant2`
+- `AGXk: %s:%d:%s: !!! AGXSecureGart::init\n`
+- `121212222221112122222111121212222222222211122212222111112112`
+- `pi_integral_gain`
+- `AGXk: %s:%d:%s: !!! Unexpectedly handled SAPT interrupt!\n`
+- `virtual void AGXFender::writeTimerSleepControl(uint32_t)`
+- `AGXLateEvalEvent`
+- `AGXk: %s:%d:%s: !!! %s: Failed to prepare DSIDManager\n`
+- `Fender Power Transition Regs (G16G only)`
+- `site.AGXCLCommandDescriptor`
+- `site.AGXFamilyAccelerator`
+- `site.AGXGartG19P`
+- `static uint64_t AGXCommandQueue::getIndexForProtectionOptions(uint64_t)`
+- `G17C`
+- `AGXk: %s:%d:%s: !!! bad logic, should not reach here\n`
+- `ThrottleStateCountersCS`
+- `gKSM_RCE`
+- `gpu-idleoff-prob-init-val`
+- `Firmware Scheduler State (per Command Queue) Pool`
+- `AGXk: %s:%d:%s: !!! AGXArmFirmwareMapper::iovmInsert: insertion into previous mappings not supported!\n`
+- `site.AGXRemoteNodeCommandDescriptor`
+- `AGXk: %s:%d:%s: !!! AGXk: pid=%u name=%s panicking due to submission while the GPU is powered off!\n`
+- `void AGXChannel::addHostKickTraceToRing(uint64_t)`
+- `ConfigIntegralMinClamp`
+- `virtual size_t AGX·PI_400·P·A0·Accelerator::getUMARingBufferSizeMax()`
+- `site.AGXPerfCtrSamplerGen15`
+- `gpu-pwr-integral-min-clamp`
+- `analysis`
+- `ParamBuffer`
+- `B0`
+- `address`
+- `Fender Active Time Histogram`
+- `debugUSC`
+- `SetDefaultFabPStates`
+- `12111221222211121222222222222112112112`
+- `site.AGXUSCPrivMemPoolSMA`
+- `site.AGXDebugBufferShmem`
+- `omu_crs`
+- `121111`
+- `GL2CC_META6`
+- `AGXSharedGartTableBackingG19P`
+- `Fender Active Time`
+- `AGXk: %s:%d:%s: !!! Nop count (%u) >=  KSM kick queue size (%u) is un-supported\n`
+- ` %uGVDMs`
+- `gpu-max-power`
+- `deadzone`
+- `DPWR_GTP`
+- `site.AGFIParameterSceneAllocationState *`
+- `process_name`
+- `MaxGPUAbsolutePower`
+- `GPUUtilization`
+- `VF_CPF1`
+- `GSL1_3`
+- `ppz_qp`
+- `AGX·PI_400·P·A0·Accelerator`
+- `gVDM_MMB_0`
+- `AGXk: %s:%d:%s: !!! Assertion failed: %s: attempting to encode illegal memory range\n`
+- `1221`
+- `%s`
+- `FRG Round robin`
+- `SetMaxGPUAbsolutePower`
+- `gpu-power-zone-filter-tc-2`
+- `1212122`
+- `getFilteredGPUPowerToKernelClientFunction`
+- `AGXk: %s:%d:%s: !!! read_index out of bounds\n`
+- `PMPageMetricsBuffer`
+- `Fender Idle Time`
+- `DM Kill Count`
+- `AGXk: %s:%d:%s: !!! FW MemDesc read_index out-of-bounds\n`
+- `post_sample_idx`
+- `Ki`
+- `gVDM_ILF_1`
+- `static uint64_t AGXMemoryMap::encodeMappingOptions(const uint32_t, const bool, const uint64_t)`
+- `agxk_event_machine.cpp`
+- `gpu-fast-die0-release-temp`
+- `tfc-ms`
+- `ZLS0`
+- `dm`
+- `gpuMap != nullptr`
+- `[%3d]=%8u\t%8u\n`
+- `VDM9`
+- `122111111211112222111221200000002222222222222222`
+- `Channel 2`
+- `virtual IOReturn AGXUMASyncNodeCommandDescriptor::prepare(uint32_t)`
+- `gptbat-ready`
+- `Power Zone Filters`
+- `updateMiscUtQuanta`
+- `ZLS7`
+- `12112112222222222222222222222222222222211111111111111111121211121111212111111111111111222222222212111121`
+- `AGXk: %s:%d:%s: !!! Bad shrink head during PM reinit\n\n`
+- `gpu-idleoff-high-conf`
+- `com.apple.internal.display-params-access-privileged`
+- `fw_power_controller_in_charge`
+- `Active Time Histogram`
+- `Fender Idle Time Histogram`
+- `site.AGXAllocation`
+- `agxk_cl_command.cpp`
+- `G14S`
+- `uint64_t AGXGart::_allocate(uint64_t, uint64_t, uint32_t, uint64_t)`
+- `12222222222222222222202222222222222211122222222222222222122222222222222222222222221222222`
+- `site.AGXTAChannel`
+- `ThrottleStateCounters`
+- `PMGR Misc Die 0`
+- `AGXEventMachine`
+- `AGXFirmware`
+- `gpu-perf-filter-drop-threshold`
+- `min_size <= fMaxPagePoolSize`
+- `enableFreqPrediction`
+- `Min`
+- `downshift`
+- `1222222222222111222222`
+- `SE`
+- `TE9`
+- `virtual bool AGXAccelerator::configureDevice(IOService *)`
+- `12122122222222222222222222222222222222222222222222222222222222222222222222222222222222021222222222222222222222222211122112222211112211212212222222222222222222222222222222222222222222222222222222222222222222222222222222202`
+- `gpu-perf-limiter-filter-time-constant`
+- `GM_GMMU_TWC`
+- `OSBoundedPtr.h`
+- `gpu-perf-tgt-utilization`
+- `GL2CC_MB`
+- `virtual bool AGXMemoryMap::updateGPUPageTable()`
+- `Vertex, `
+- `12111111212112222222222111122211122222111112111222222111122212222122222221`
+- `GPUConfigurationVariable`
+- `GPUPerfMap`
+- `G15G`
+- `VDM2`
+- `INVALIDEA`
+- `void AGXStreamValidatorBase<AGXSharedStreamParser>::assertValid() const [Ts = <AGXSharedStreamParser>]`
+- `SMAMetaDataDescriptorTable`
+- `count`
+- `FastDie`
+- `VCE0`
+- `ptd_vers`
+- `is_sksm`
+- `const RET *AGXFirmwareRingValidator::validateType(const AGFIFirmwareEventRingEntry *) const [RET = AGFIFirmwareEventHWRecovery, FWET1 = kAGFIFirmwareEventTypeGPURestart, FWET2 = kAGFIFirmwareEventNone]`
+- `DCMP6`
+- `deadlineaware_qp`
+- `currPState`
+- `SetDPEImaxBudget`
+- `AGXMemoryMap`
+- `gpu-fstp-downgrade-mask`
+- `void AGXFirmwareResourceStack<AGXCachedFWChannelMem, AGXChannel, 64, 256>::releaseElement(ElementOwner *, uint32_t) [FWResourceManagerElement = AGXCachedFWChannelMem, ElementOwner = AGXChannel, kL1WidthBits = 64, kL2WidthBits = 256]`
+- `USC_SMA_CORE`
+- `KSM Kick Queue %d`
+- `site.AGXRemoteIOPPowerNotificationHandler`
+- `site.AGXSecureMemoryMap`
+- `AGXASCWakeIrritatorWorkLoop`
+- `site.AGXEnergyAttributor`
+- `AGXk: %s:%d:%s: !!! Ring is processing event of incorrect type\n`
+- `AGXk: %s:%d:%s: !!! AGXk: Unsupported grow type %u\n`
+- `GTP vChannel Usage`
+- `ZLS6`
+- `bool AGXSecureGart::initInner(AGXAccelerator *, task_t, uint64_t, bool, AGFIFirmwareRole)`
+- `usc_gen`
+- `void AGXFirmware::drainFirmwareEventRing(AGFIFirmwareRole)`
+- `Spill for`
+- `gCDM_CSR`
+- `Firmware PM Page Metrics Buffer Pool`
+- `AGXParameterBufferMaxSize`
+- `agxk_command_queue.h`
+- `ConfigIntegralMaxClamp`
+- `12221122222222`
+- `ZLS2`
+- `MDCC_SLICE2`
+- `121111222221111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222111111111111111111112222222222222222`
+- `AGXDiagnosisReport`
+- `virtual FSTPBitArray AGXFamilyAccelerator::checkForFSTPDowngrade(AGXGPUCoreConfig &, uint64_t)`
+- `gpu-fa-step-0`
+- `site.AGXCLChannelSKSMG19P`
+- `unknown vendor lockup`
+- `chip-revision`
+- `MDCC_SLICE7`
+- `memStallThreshold`
+- `GPU Discrete Power Zone Residency`
+- `ll1_occupancy`
+- `No Access`
+- `CLTM-induced GPU Performance States`
+- `AGXAllocationList2`
+- `site.AGXAllocationList2`
+- `Firmware Channel State Pool`
+- `gpu-se-kp-1`
+- `VF0`
+- `Min of Ideal UMA Allocation Size`
+- `UMA HW Reserved Pages Distribution`
+- `com.apple.agx.thmcounters`
+- `dPM`
+- `INVALIDDC`
+- `timestamp`
+- `bounded_array_ref: invalid slice provided, the indices are of bounds for the bounded_array_ref`
+- `1211211222122221`
+- `122122222222222222222222222222222`
+- `site.AGX·PI_400·P·A0·CLChannelSKSM`
+- `Total memory of Backup Lists`
+- `AGXGPURawCounterBundle`
+- `]`
+- `GL2CC_META3`
+- `GM GIFAF Regs`
+- `coeff_mid_high`
+- `G19P`
+- `agxk_resource.cpp`
+- `PPMPerfMax`
+- `virtual IOReturn AGXArmFirmwareMapper::iovmInsert(uint32_t, uint64_t, uint64_t, uint64_t, uint64_t)`
+- `GL2CC_META7`
+- `Parameter Stack Free List`
+- `firmware assert`
+- `AGXk: %s:%d:%s: !!! Firmware wasn't stopped for pre-recovery\n`
+- `(`
+- `G17D`
+- `gpu-fender-idle-off-delay-ms`
+- `QOSQueueIDAllocator`
+- `pi_ctrl_enable`
+- `engage-tolerance`
+- `SOFTWARE`
+- `i8@?0`
+- `CounterList`
+- `virtual IOReturn AGXArmFirmwareMapper::iovmMapMemory(IOMemoryDescriptor *, uint64_t, uint64_t, uint32_t, const IODMAMapSpecification *, IODMACommand *, const IODMAMapPageList *, uint64_t *, uint64_t *)`
+- `%s %s (%u)`
+- `VDM7`
+- `AGXSecureMonitorG19P`
+- `restart_reason`
+- `Issue Counts`
+- `PMGR Misc Die 1`
+- `num_agcs`
+- `fastdie_qp`
+- `fw_3d_state`
+- `channel_occupancy`
+- `gpu-pwr-proportional-gain`
+- `SetDPEImaxReactBudget`
+- `bool AGXAccelerator::umaDescIsLoaded(AGXUSCPrivMemFList *) const`
+- `uint32_t AGXChannel::submitNop(IOGPUCommandDescriptor *, AGFIChannelCommandType, AGFIDataMasterType)`
+- `enableHwPiUt`
+- `AGXQOSManager`
+- `site.AGXEventMachine`
+- `UT`
+- `iofence_iosurfaces`
+- `AGXTraceCodeVersion`
+- `Fender MGPU Regs`
+- `kickid_qid_mask`
+- `virtual void AGXAccelerator::halWriteKSMFEReg(uint32_t, uint64_t)`
+- `site.AGXArmFirmwareMapper`
+- `virtual void AGX·PI_400·P·A0·AcceleratorP::populatePowerEstimationConfigData(uint32_t)`
+- `AGXUMASharedPoolContainer`
+- `gpu-fast-die0-integral-gain`
+- `MDCC_SLICE_MB1`
+- `virtual void AGX3DChannelSKSM::submitBuffer(IOGPUCommandDescriptor *)`
+- `AGXEnergyAttributor`
+- `VDM4`
+- `VF_CPF0`
+- `virtual AGXGart *AGXSecureGart::getProtectedContext(uint64_t)`
+- `SEResetTolerance`
+- `AGXk: %s:%d:%s: !!! unimplemented!\n`
+- `void AGXAccelerator::allocateMemoryEvent(IOInterruptEventSource *, int)`
+- `fCurrentMappingsSnapshotEntryCount < fCurrentMappingsSnapshotMaxEntryCount`
+- `DPEEnabled`
+- `gpu-power-zone-target-offset-4`
+- `GM_GMMU_GIF`
+- `tfc`
+- ` %uVCEs`
+- `SetDPEACDshft`
+- `site.AGX·PI_400·P·A0·SharedGartTableBacking`
+- `virtual void AGXResource::calculateIOSurfaceDeviceCacheVRAMBytes(uint64_t *)`
+- `command_buffer_trace_id`
+- `Tg%ua Min`
+- `AGXk: %s:%d:%s: !!! Failed to clear gpu tail pointers\n`
+- `virtual void AGXArmFirmware::submitCLChannel(AGXChannel *const, const AGXChannelSubmitInfo &, uint32_t, uint32_t, const bool)`
+- `AGXk: %s:%d:%s: !!! Unexpected statistic packet value from fender\n`
+- `INVALID54`
+- `cl`
+- `SetLifetimeServoFastDieTemperatureTarget`
+- `Value`
+- `SetDPEDCCompDshiftThresh`
+- `AGXk: %s:%d:%s: !!! Cannot reserve from default range!\n`
+- `IVDM: Max Throttle Percent       `
+- `DeadlineAware`
+- `121`
+- `!populateInitalPoolOnHost`
+- `AGXk: %s:%d:%s: !!! Verification failed: %s: [%s] Could not map GPU reg range\n`
+- `void AGXAccelerator::validateASCWakeupEvent()`
+- `%s_%u`
+- `G13G`
+- `ptd_irq_num`
+- `AGXBlockedArray`
+- `gpu-pwr-filter-time-constant`
+- `SetDPEACCtrl`
+- `VF3`
+- `virtual void AGXParameterManagement::cleanup()`
+- `virtual IOReturn AGXParameterManagement::prepareAndRetain(AGXTACommandDescriptor *, AGXParameterManagerStagedUpdates &)`
+- `GPU Software Performance States`
+- `SetDPEImaxPredWin1`
+- `DCMP5`
+- `site.AGXChannel`
+- `SetDPEDCDshft`
+- `site.PerfCtrCommandGen15`
+- `Shared Render Target Buffer: %d x %d x %d`
+- `UV Warn State`
+- `GCPMS Regs`
+- `se_qp`
+- `DPWR_FRG`
+- `AGXTAChannelSKSMG19P`
+- `Channel 1`
+- `UMA Allocation Size Stats`
+- `site.AGXUATMux`
+- `getCLPCPowerSamplePeriodKey`
+- `gpu-idleoff-standby-timer`
+- `AGXk: %s:%d:%s: !!! AGXArmFirmwareMapper::stop: mapping list not empty!\n`
+- `Idle Time Histogram`
+- `AGXk: %s:%d:%s: !!! unsupported\n`
+- `TA: stamp_idx=%d `
+- `void AGXAccelerator::waitForCommandSubmissionEnabled(const uint32_t, const uint64_t, const eIOGPUCommandQueuePriority)`
+- `AGXCLCommandDescriptor`
+- `bool AGXArmFirmware::waitForFWAlive()`
+- `256M`
+- `void AGXUAT::queueUnmap(IOMemoryDescriptor *, mach_vm_address_t, mach_vm_size_t)`
+- `121111111122222222222222`
+- `GPU Power Zone Filter 1`
+- `CDM Alloc New`
+- `GPU HW Idle`
+- `gpu-perf-base-pstate`
+- `pmp-sw-interrupt`
+- `buckets_threshold_level`
+- `CMP6`
+- `VF8`
+- `void AGX·PI_400·P·A0·RenderTargetMemory::setupRegisters(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint64_t)`
+- `agxk_accelerator_ring.h`
+- `AGX·PI_400·P·A0·3DChannelSKSM`
+- `<invalid>`
+- `PPP7`
+- `VDM1`
+- `coeff_range_low`
+- `void AGXEventMachine::updateStampWrapCount(int32_t, stamp_t)`
+- ` %uFrags`
+- `virtual void AGXParameterManagement::describeDriverAllocationsLocked(IOGPUAllocationInfo *, pid_t)`
+- `pmu_qp`
+- `DCMP0`
+- `VDM0`
+- `site.AGXUMASharedPoolContainer`
+- `transfer`
+- `SFE Tier3 Count`
+- `<unknown>`
+- `pre_sample_idx`
+- `PlantFilterFn`
+- `t3`
+- `INVALID67`
+- `fNumPendingFences == 0`
+- `AGXParameterManagement`
+- `dl00_occupancy`
+- `Target`
+- `site.AGXInternalResource`
+- `GPU Off Abort Counter`
+- `Channel 0`
+- `ce_normalized`
+- `gpu-idleoff-fn-miss`
+- `updateUMAPoolEvent`
+- `site.AGXAcceleratorG19P`
+- `AGXk: %s:%d:%s: !!! growable array is not empty at destruction\n`
+- `AFR NIA Regs`
+- `pi_eval_window`
+- `lowest_trig_threshold`
+- `%uus`
+- `AGXUATSingleStage`
+- `AGXk: %s:%d:%s: !!! [%s] Unsupported number of reg ranges in EDT (%u)\n`
+- `4M`
+- `site.AGXIOSurfaceSharedEventCommandDescriptor`
+- ` CSClkDomain`
+- `void AGXFirmware::handleChannelErrorEvent(const AGFIChannelErrorEventArgs &)`
+- `8e9b50cd04211f53196f`
+- `This bounded_ptr is pointing to memory outside of what can be represented by a native pointer.`
+- `site.AGXUniqueResourceSet`
+- `PMU`
+- `MDCC_SLICE3`
+- `agxk_iofence.cpp`
+- `site.AGX3DWorkQueue`
+- `void ProbeConfig::readDeviceTree()`
+- `GPURawCounterPluginClassName`
+- `PPM`
+- `IOMobileFramebuffer`
+- `virtual const AGXCoreRevision *AGX·PI_400·P·A0·Accelerator::getSupportedRevisions() const`
+- `PMU Loop Lost Performance Reason Code States`
+- `AGX3DChannel`
+- `Quick Process Exit Enable`
+- `121122`
+- `SL1`
+- `AGXk: %s:%d:%s: !!! AGXSecureGart::unmap\n`
+- `THM Counters`
+- `ProportionalGain`
+- `1212111`
+- `Firmware Barrier Pool`
+- `FRG Kill Count`
+- `AvgPerfStateLimiter`
+- `AGXGrowableArray<AGXLateEvalEventResourceManager::AGXLateEvalAgentMaskMaps>::~AGXGrowableArray() [T = AGXLateEvalEventResourceManager::AGXLateEvalAgentMaskMaps]`
+- `void AGXGart::_deallocate(uint64_t, uint64_t, uint32_t, uint64_t)`
+- `fw_ta_state`
+- `%d,`
+- `AGXSecureMemoryMap`
+- `void AGXCommandBuffer::updateBarrierEvent(uint32_t, sIOGPUEvent *, sIOGPUEvent *, uint64_t)`
+- `virtual size_t AGX·PI_400·P·A0·Accelerator::getUMAPoolMaxSize()`
+- `12111222111112`
+- `AGXIOSurfaceSharedEventCommandDescriptor`
+- `Fences\n`
+- `122222`
+- `site.AGXShared`
+- `AGXSKSMFlushID`
+- `AGXk: %s:%d:%s: !!! not implemented!\n`
+- `AGXFWLoggingWorkLoop`
+- `MiscQuanta`
+- `agxk_hwbuffer_id_manager.cpp`
+- `AGXk: %s:%d:%s: !!! OOB idx: %d\n`
+- `virtual void AGXArmFirmware::submitTAChannel(AGXChannel *const, const AGXChannelSubmitInfo &, uint32_t, uint32_t, const bool)`
+- `SetPeriodMSec`
+- `TE4`
+- `virtual OSPtr<IAGXUSCPrivMemGrowEngine> AGX·PI_400·P·A0·Accelerator::halNewUMAGrowEngine(AGFIUMAPoolGrowType)`
+- `256K`
+- `GTP Single`
+- `Spill Buffer Usage`
+- `virtual OSSharedPtr<IOFence> AGXAccelerator::createIOFenceWithTransaction(IOSurface *, uint32_t, IOGPUCommandDescriptor *, IOFenceTransaction *)`
+- `ul1_occupancy`
+- `gpu-ut-mrc-period`
+- `SetPowerZoneIndex`
+- `fw_gpc_perf_state`
+- `site.AGXUMASyncNodeCommandDescriptor`
+- `AGXUSCPrivMemBlock`
+- `LateEvalEventSignal`
+- `Firmware PDM Blit Command Pool`
+- `INVALID57`
+- `UL1C6`
+- `VF_CPF8`
+- `ThrottleStatisticCounterRegs`
+- `AGXk: %s:%d:%s: !!! Failed to register with M$ driver (%d)\n`
+- `AGXk: %s:%d:%s: !!! Assertion failed: %s: stream validator is invalid!\n`
+- `GTP Dependent`
+- `indices`
+- `gpu-avg-power-ki-only`
+- `DPEPRegisters`
+- `AGXParameterBufferMaxSizeNeverMemless`
+- `AGXk: %s:%d:%s: !!! AGXParameterMemoryVirtual: no space for additional mapping\n`
+- `TMB AFR DCPMS`
+- `gpu-fast-die0-target`
+- `buckets_downshift`
+- `MetalPluginClassName`
+- `Throttle Counter DPE  `
+- `INVALIDF9`
+- `fStampResource[kAGXHostMemoryTimestamp]`
+- `Not_Engaged_Count`
+- `void AGXFirmwareResourceStack<AGXUncachedFWChannelMem, AGXChannel, 64, 256>::releaseElement(ElementOwner *, uint32_t) [FWResourceManagerElement = AGXUncachedFWChannelMem, ElementOwner = AGXChannel, kL1WidthBits = 64, kL2WidthBits = 256]`
+- `SetDPEDCDthr`
+- `INVALID14`
+- `site.AGXLateEvalEventTable`
+- `Sum`
+- `NIA Special agent idle register die 1 (unused)`
+- `const RET *AGXFirmwareRingValidator::validateType(const AGFIFirmwareEventRingEntry *) const [RET = AGFIFirmwareEventSMAPPDTUpdateIdle, FWET1 = kAGFIFirmwareEventTypeSMAPPDTUpdateIdle, FWET2 = kAGFIFirmwareEventNone]`
+- `site.AGXLateEvalEventResourceManager`
+- `TempSensorRegs (unused)`
+- `pi_proportional_gain`
+- `site.AGXGPUMemBlockPool`
+- `111`
+- `site.AGXParameterBufferBlockVirtual`
+- `AGXk: %s:%d:%s: !!! AGXSecureGart::unmapWithAddress\n`
+- `UT Engagement centi-%% Histogram for perf state %u`
+- `%d_%uus`
+- `enableDebug`
+- `AGXKSMKickQueueG19P`
+- `site.PerfCtrCommandGen11`
+- `Default Priority, `
+- `AGX3DCommandDescriptor`
+- `\n`
+- `gpu-se-inactive-threshold`
+- `gpu-avg-perf-state-limiter-mrc-period`
+- `AGXUSCPrivMemPoolSMAV2`
+- `1222222222222222222111111`
+- `AGXTAChannel`
+- `SetDPEACDthr`
+- `agxk_hal_400_accelerator.cpp`
+- `Spill Buffer Metadata Unused Blocks Per Task Histogram`
+- `iofence_num_iosurfaces`
+- `virtual FSTPBitArray AGXAccelerator::convertFromGlobalToDmMask(AGXIOFenceDataMasterType, const FSTPBitArray &)`
+- `virtual void AGXFender::writeConfigRAMCommand32(uint16_t, uint32_t, uint8_t)`
+- `16K`
+- `CMP9`
+- `12122222212111221222`
+- `AGXk: %s:%d:%s: !!! Incorrect barrier stage information for CommandBuffer %p fStateIndex %d src_mask %d dst_mask %d\n`
+- `DownsampleCount`
+- `Fn_miss`
+- `site.sBucketConfig`
+- `gKSM_DSFR`
+- `gpu-fa-timer-3`
+- `1G`
+- `SetDPEImaxDthr`
+- `debugData`
+- `enabled_levels`
+- `IPF_CPF6`
+- `FRG Idle`
+- `kern.sptm.event_counters.SWWA_TLBI_ASID`
+- `kern.sptm.event_counters.SWWA_TLBI_ALL`
+- `gpu-pwr-perf-scale3`
+- `AGXAllocation`
+- `virtual void AGXAccelerator::mcacheApertureBufferSetup(AGXCommandHWDSIDData &, int32_t, AGFICommandKSMBufferInfo &, int32_t)`
+- `AGXk: %s:%d:%s: !!! Fender address is unknown\n`
+- `INVALIDDE`
+- `gpu-fast-die0-sensor-mask64`
+- `updateDpeUtQuanta`
+- `site.AGX3DChannel`
+- `virtual IOReturn AGX3DCommandDescriptor::prepare(uint32_t)`
+- `ApplePTD`
+- `AICBankedRegisters (unused)`
+- `Firmware VDM Command Pool`
+- `G14C`
+- `CMP5`
+- `GPU Stats`
+- `AGXk: %s:%d:%s: !!! Non-statistics packet in statistics ring\n`
+- `AGXk: %s:%d:%s: !!! %s Could not allocate sleep power transition lock\n`
+- `agxk_family_accelerator.cpp`
+- `AGX·PI_400·P·A0·Gart`
+- `AGXQOSQueue`
+- `GTP Kill Count`
+- `INVALID1F`
+- `AGXPerfCtrSamplerGen15`
+- `max_us`
+- `getCLPCDynamicSplitRatioDictKey`
+- `const RET *AGXFirmwareRingValidator::validateType(const AGFIFirmwareEventRingEntry *) const [RET = AGFIFirmwareEventRTCompletionInfo, FWET1 = kAGFIFirmwareEventTypeRTCompletionEvent, FWET2 = kAGFIFirmwareEventNone]`
+- `gVDM_CSD_1`
+- `AGXUMASyncNodeCommandDescriptor`
+- `AGXUSCPrivMemFList`
+- ` %uCDMSlots`
+- `CL Read`
+- `AGXk: %s:%d:%s: !!! Handled SAPT interrupt, but no error is pending!\n`
+- `site.AGXArmFenderChinook`
+- `AGXk: %s:%d:%s: !!! Invalid priority level for CommandQueue %d\n`
+- `G17P`
+- `gpu-device-max-power`
+- `const RET *AGXFirmwareRingValidator::validateType(const AGFIFirmwareEventRingEntry *) const [RET = AGFIFirmwareEventSharedEventSignalComplete, FWET1 = kAGFIFirmwareEventTypeSharedEventSignalComplete, FWET2 = kAGFIFirmwareEventNone]`
+- `gpu-se-mrc-period`
+- `virtual uint64_t AGX·PI_400·P·A0·Accelerator::getAgxCrUmaIdealConstantCount()`
+- `ApplePPM`
+- `CDM Kill Count`
+- ` %uTEs`
+- `SetDPEDCCompCondBudget`
+- `site.AGXCommandQueueReclaimableState`
+- `virtual uint32_t AGXAcceleratorRing<AGFIAcceleratorDataMasterEntry>::getReadIndex() const [AGXAcceleratorRingEntry = AGFIAcceleratorDataMasterEntry]`
+- `gpu-idleoff-reset-iter`
+- `virtual void AGXFirmware::submitContextIDBaseAddress(int32_t, uint64_t, uint32_t)`
+- `SurfaceSharedEventAgentMask`
+- `PPP9`
+- `IPF_CPF9`
+- `void AGXParameterManagement::updateAndValidateCookie(AGXHWParamBufferManager *, const AGXTACommandDescriptor *)`
+- `AGXVirtualMemory`
+- `virtual bool AGXAccelerator::setupCSCAllocation()`
+- `afr-perf-states`
+- `AGXk: %s:%d:%s: !!! fLast3DCommandIndex out-of-bounds\n`
+- `site.AGXCommandBuffer`
+- `gpu-ppm-kp`
+- `AGXFirmwareKextG18RTBuddy`
+- `static bool AGXGart::initSharedAllocator()`
+- `AGXSecureSharedGartTableBacking`
+- `Throttle Counter IVDM `
+- `SetDPEImaxPredTrigThresh`
+- `PPP2`
+- `DVD Request States`
+- `GPU Throttler Counters`
+- `NIA Special agent idle register die 0 (unused)`
+- `dl00_evictions`
+- `121111121222121211111111111122112112122`
+- `AGXLateEvalEventFence`
+- `com.apple.private.agx.performance-spi`
+- `Tg%ua Sum Count`
+- `CL`
+- `AGXUATMux`
+- `num_cores`
+- `ria_stalls`
+- `UL1C1`
+- `UMAPagePoolDescriptorTable`
+- `Shared Render, `
+- `perf`
+- `numSamples`
+- `VF4`
+- `121112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222212222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `12122222222222221`
+- `TiledSceneBytes`
+- `12122222212111222112121112221222222222`
+- `AONPTDSpace`
+- `FRG0`
+- `fStampResource[kAGXFWMemoryTimestamp]`
+- `kickid_qid_shift`
+- `coeff_high`
+- `gpu-power-zone-target-3`
+- `enableMiscUt`
+- `site.AGXBitmap<kL2WidthBits>`
+- `site.AGXWorkQueue`
+- `AGXk: %s:%d:%s: !!! %s Fail to allocate fPerfCtrLock\n`
+- `Counter_%u`
+- `perf_qp`
+- `INVALID47`
+- `[%2s %3d], %15s, cq=%3d, wq=%3d, wq_st=%llu, wq_sch=%1d, dm=%1d, st=%3u, pr=%1u, (rd=%u, up=%u, ba=%u, su=%u, wr=%u)\n`
+- `bool AGXFirmwareRingValidator::ringHasOutstandingEntries() const`
+- ` (`
+- `gpu-avg-power-kp`
+- `121111112112222122111111211222212211111121122221221111112112222122122222222222222222211221111111112222222221112112121211212112121121211212112121121211212112121121211212112121121211111122211122211122211122211122211122211122211122211122211122211122211122211122211122211122211122211122211122211122211122`
+- `VDM8`
+- `agxk_firmware_resource_manager.hpp`
+- `sideband`
+- `64K`
+- `AGXAccelerator`
+- `CL: stamp_idx=%d `
+- `virtual void AGXAccelerator::populateMaximumPerformancePower()`
+- `tfc-1`
+- `GTP_GP`
+- `RAS0`
+- `AGX·PI_400·P·A0·SecureMonitor`
+- `site.AGXInvalidChannel`
+- `bool AGXUSCPrivMemFList::populatePagePool(bool32_t)`
+- `gpu-idleoff-min_conf`
+- `PPMGPUPowerMax`
+- `DCMP4`
+- `site.AGXHWTimeStamp`
+- `com.apple.developer.metal.performance-state-assertion`
+- `site.AGXUSCPrivMemPoolSMAV2`
+- `[SC] %d %llu\n`
+- `const RET *AGXFirmwareRingValidator::validateType(const AGFIFirmwareEventRingEntry *) const [RET = AGFIFirmwareEventAlive, FWET1 = kAGFIFirmwareEventTypeFirmwareAlive, FWET2 = kAGFIFirmwareEventNone]`
+- `ConfigData`
+- `gpu-power-zone-target-offset-2`
+- `agxk_growable_array.hpp`
+- `site.AGXMemoryMap *`
+- `1212`
+- `fenderMap != nullptr`
+- `PPP6`
+- `Firmware Parameter Buffer, Scene Objects, and Page List Entries`
+- `Channel 3`
+- `AGXChannel`
+- `G14P`
+- `virtual void AGXAccelerator::halWaitForFenderPowerGate()`
+- `gpu-mrc-quantum-size-aic`
+- `gpu-power-zone-filter-tc-4`
+- `downsample-count`
+- `virtual bool AGXFender::isPoweredOffWaitingForKicks()`
+- `AGXUSCPrivMemPoolSMAV1`
+- `ptd-data-table`
+- `AGXCommandDescriptor`
+- `SEResetCriteria`
+- `nextPState`
+- `VCE7`
+- `12112`
+- `AGXParameterBufferBlockVirtual`
+- `KSMCompletionQueue1`
+- `site.AGXHardwareBufferBase *`
+- `GPUVirtualAddress AGXInternalResource::makeGPUMapping(AGXAccessPermissions, IOGPUTask *, uint64_t)`
+- `AGXGrowableArray<AGXLateEvalEventResourceManager::AGXLateEvalStateMaps>::~AGXGrowableArray() [T = AGXLateEvalEventResourceManager::AGXLateEvalStateMaps]`
+- `Parameter Page List Backing`
+- `site.AGXParameterManagementVirtual`
+- `AGXk: %s:%d:%s: !!! Verification failed: %s: Pool Desired Min Size: %llu > Max SW Limit %llu bytes\n`
+- `Fender HWL Regs`
+- `PPP4`
+- `site.T`
+- `blocked by IOFence (speculative)`
+- `UncachedFWChannelMemory`
+- `AGXk: %s:%d:%s: !!! AGXSecureGart::registerContextID\n`
+- `site.uint64_t *`
+- `AGXk: %s:%d:%s: !!! %s: Failed to initialize fEnergyAttributor\n`
+- `G15P`
+- `dCDM_KS0`
+- `device_state`
+- `v24@?0^v8Q16`
+- `Fi_hit`
+- `G18A`
+- `perf-state-table-count`
+- `bool AGXParameterManagement::createNewHWPBManager()`
+- `4G`
+- `UVWarn Active`
+- `dcmp_stalls`
+- `AGXk: %s:%d:%s: !!! base_perf_state not valid (%d)\n`
+- `GL2CC_META5`
+- `INVALIDFC`
+- `agxk_parameter_management.cpp`
+- `virtual IOByteCount AGXUSCPrivMemPool::getRequiredRTSize(const AGXUMADesc *)`
+- `AGXNonHardwareWorkLoop`
+- `void AGXAccelerator::storeUMADesc(AGXUSCPrivMemFList *)`
+- `gpu-pwr-perf-scale1`
+- `site.AGXResource`
+- `virtual bool AGXSecureGart::unmapWithAddress(IOMemoryDescriptor *, GPUVirtualAddress, IOByteCount, eAGXProtectionOptions)`
+- `site.AGXBitmap<kAGXMaxChannelCount>`
+- `highUtilThreshold`
+- `GPU Power Zone Filter 3`
+- `Invalid`
+- ` CSAFRRailMerged`
+- `site.AGXUATSingleStage`
+- `CRE Regs`
+- `v16@?0^{IOGPUCommandDescriptor=^^?iAI^{IOGPU}^^{OSObject}ii^^{IOGPUMemory}ii{IOGPUIOFenceListHead=^{sIOGPUIOFence}^^{sIOGPUIOFence}}iBC^{IOGPUWorkQueue}^{IOGPUTask}^{IOGPUCommandQueue}^{IOGPUBlockFence}QII{IOGPUEvent={?=I[15I]}}{IOGPUEvent={?=I[15I]}}QQ^^vIiiQQQ}8`
+- `VF2`
+- `%d %d, %d %d\n`
+- `AGXCLWorkQueue`
+- `agxk_cl_channel_sksm.cpp`
+- `VCE9`
+- `site.AGXParameterMemoryVirtual`
+- `GPU Boost Controller Performance States`
+- `Total memory of UMA HW Pools`
+- `virtual void AGXWorkQueue::submitCommand(IOGPUCommandDescriptor *)`
+- `CachedFWChannelMemory`
+- `PlantOutput`
+- `void AGXFirmwareRingValidator::snapshotState()`
+- `AGXSecureGart`
+- `com.apple.agx.ctxswitchlatency`
+- `AGXk: %s:%d:%s: !!! Verification failed: %s: DPE must be enabled on G19P/G19A.\n`
+- `site.AGXTAChannelSKSMG19P`
+- `1212222222221122222221121`
+- `IODeviceTree:`
+- `MDCC_SLICE4`
+- `AGXG19PDevice`
+- `site.AGX·PI_400·P·A0·SecureMonitor`
+- `1211122122221112122`
+- `AGXk: %s:%d:%s: !!! Verification failed: %s: populateInitalPoolOnHost=true is not supported for SMA\n`
+- `SetDPEACWin`
+- `INVALIDBD`
+- `bool AGXSecureGart::mapInThisGart(AGXSecureMemoryMap *, AGXPageTableEntryFlags)`
+- `EffectiveFrequency`
+- `AGX·PI_400·P·A0·KSMKickQueue`
+- `NoiseSuppressionGPUIdlePowerOffState`
+- `PPP8`
+- `AGXCommandQueuePMConfig`
+- `GL2CC_META1`
+- `Temperature`
+- `Firmware PM Grow Pool`
+- `gpu-perf-reset-iters`
+- `High Priority, `
+- `Nei_hit`
+- `VCE6`
+- `agxk_accelerator.h`
+- `12121212`
+- `IPF1`
+- `[Fences]\n`
+- `site.AGXFirmwareResourceStackInstType`
+- `timestamp timeout (locked)`
+- `agxk_firmware_ring_validator.cpp`
+- `CMP0`
+- `AGXMTLCounterSampler`
+- `AGXHWParamBufferManager`
+- `Max of Ideal UMA Allocation Size`
+- `12112121121111222222222222222222221222221122222212221122212121111111111111112222222222222221212121212222222222222222222222222222`
+- `%uMGPUs`
+- `gpu-fa-step-2`
+- `INVALID0F`
+- `setBudgetToKernelClientFunction`
+- `AGXPeakPowerManager`
+- `fw_cl_state`
+- `site.AGXAttributionIndexManager`
+- `gpu-fa-timer-1`
+- `agxk_firmware.h`
+- `AGXArmFirmware`
+- `AGXk: %s:%d:%s: !!! Verification failed: %s: Pool Desired Ideal Size: %llu > Max SW Limit %llu bytes \n`
+- `gpu-power-zone-target-1`
+- `TE5`
+- `MDCC_SLICE0`
+- `INVALIDFD`
+- `AGXk: %s:%d:%s: !!! failed to prepare a descriptor in AGXUAT::unmap()!\n`
+- `desired_pool_size <= fMaxPagePoolSize`
+- `quick_process_exit`
+- `Turbo`
+- `VF5`
+- `void KernelCalculatedSMAFinalResults::calculateIntermediateResults(const AGXSMADesc &, const AGXUSCPrivMemFList &)`
+- ` AFRClkDomain`
+- `INVALID87`
+- `PushTelemetryDashboardReadRegs`
+- `Firmware Page List Entries`
+- `ppmlimit_qp`
+- `IPF3`
+- `gVDM_MMB_1`
+- `site.AGX·PI_400·P·A0·RenderTarget`
+- `CL Write`
+- `Read Only`
+- `AGXRemoteIOPPowerNotificationHandler`
+- `chip-id`
+- `TC`
+- `AGX·PI_400·P·A0·TAChannelSKSM`
+- `AGXGrowableArray<AGXMemoryMap *>::~AGXGrowableArray() [T = AGXMemoryMap *]`
+- `site.AGXScheduler`
+- `%p`
+- `CMP1`
+- `INVALID4F`
+- `Firmware Page List Entries, Parameter Scene statistics`
+- `AON PTD Information`
+- `virtual void AGXArmFirmware::kickFirmware(uint32_t, AGFAMessageType, bool)`
+- `PPP1`
+- `BMPR_GLOBAL`
+- `TE8`
+- `site.AGXUAT`
+- `virtual void AGXChannel::writeChannelCommandPointer(FirmwareVirtualAddress, AGFIChannelCommandType *, uint64_t)`
+- `Unknown reserved`
+- `AGXk: %s:%d:%s: !!! Asking to update mappings, should never happen\n`
+- `Compute, `
+- `[Workqueues]\n`
+- `virtual void AGXArmFirmware::resumeFirmwarePostRecovery()`
+- `HwPIEnabled`
+- `virtual void AGXFender::terminateConfigRAMSequence()`
+- `bounded_ptr<T>::operator+=(n): Adding the specified number of bytes to the offset representing the current position would overflow.`
+- `uint32_t AGXChannel::encodeNops(int32_t, stamp_t)`
+- `gpu-perf-mrc-period`
+- `SetDPEImaxReactWin2`
+- `DCMP2`
+- `VCE2`
+- `GTP Round robin`
+- `AGXk: %s:%d:%s: !!! getGuiltyChannel: Type confusion - invalid AGXChannel for firmware guilty_stamp_index %d\n`
+- `site.AGXBlockFence`
+- `gpu-avg-power-input-filter-tc`
+- `lowUtilThreshold`
+- `isCsw`
+- `AGXk: %s:%d:%s: !!! Cannot deallocate from unmapped range!\n`
+- `AGXFastRenderTarget`
+- `UMA Pool Memory Usage`
+- `agxk_uat.cpp`
+- `dRDE1`
+- `fw_perf_state_select`
+- `gpu-fast-die0-sensor-mask`
+- `agxk_firmware.cpp`
+- `Firmware KSM Kick queue entry signal Pool`
+- `gpu-avg-power-filter-tc-ms`
+- `virtual uint32_t AGXFender::readTimerSleepControl()`
+- `%s CtxSwitch Latency Histogram Bucket %d (<%s)`
+- `MiscEnabled`
+- `site.AGXMTLCounterSampler`
+- `Tg%ua Sum`
+- `GTP Alloc New`
+- `site.sBucket`
+- `VF_CPF4`
+- `KSM Queue %u : Removing kicks when queue if FULL Num Entries = %u, NextTimestamp = 0x%llx`
+- `AGXk: %s:%d:%s: !!! Assertion failed: %s: Invalid ref count (%d %d)\n`
+- `Page Tables`
+- `gpu-ppm-mrc-period`
+- `AGXFirmwareKextRTBuddy - AGXFirmwareKextG18RTBuddy`
+- `gpu-fw-early-wake-timeout-ms`
+- `AGXk: %s:%d:%s: !!! Attempting to map past the end of the descriptor!\n`
+- `AGXG19P`
+- `smaSharedDesc.min.total_pool_size_mem <= smaSharedDesc.ideal.total_pool_size_mem`
+- ` SKSMInGPUCorePowerDomain`
+- `gpu-perf-proportional-gain2`
+- `OutputOverride`
+- `gpu-pwr-sample-period-aic-clks`
+- `debugGM`
+- `1211221112222222222111121212121212121212121212121212121212121212121212121212121212121222`
+- `12111112112212`
+- `AGXk: %s:%d:%s: !!! AGXArmFirmware::kickFirmware: Command submission is disabled!\n`
+- `INVALID7F`
+- `IODeviceTree:/arm-io`
+- `AGXk: %s:%d:%s: !!! Out-of-range command_stage_mask 0x%x\n`
+- `gpu-fa-step-3`
+- `registers`
+- `%s CtxSwitch Latency Histogram Bucket Max (>=%s)`
+- `Firmware KSM NOP signal Pool`
+- `ConfigTransferMinClamp`
+- `SetDPEImaxPredBudget`
+- `ZLS8`
+- `FRG vChannel Usage`
+- `AGXFamilyAccelerator`
+- `buckets_threshold`
+- `MDCC_SLICE_MB7`
+- `AGXk: %s:%d:%s: !!! Attempt to overflow fPrepareCounts for id %d\n`
+- `buckets_csw`
+- `VF_CPF6`
+- `121121211211112222222222222222222212222211222222122211222122222222222222222222222222222222222222222211221111111111111112222222222222222122122122121212121222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222212`
+- `PMGRScratch (unused)`
+- `AGXk: %s:%d:%s: !!! Failed to stop GFX FW for GPU recovery\n`
+- `MDCC_SLICE6`
+- `1211212112111122222222222222222222122222112222221222112221212222222222222222222222222222222211111111111111122222222222222212121212122212`
+- `virtual bool AGXFirmware::isGFXBooted(uint64_t *)`
+- `AGXPerfCtrSampler`
+- `getCLPCPerfCtrlTargetKey`
+- `agxk_accelerator.cpp`
+- ` %uIPFPipes`
+- `ZLS3`
+- `ZLS5`
+- `AGXk: %s:%d:%s: !!! %s: Failed to initialize DSIDManager\n`
+- `Deadzone`
+- `gpu-power-zone-filter-tc-1`
+- `AGXInternalResource`
+- `getCLPCStandbyDurationKey`
+- `IU`
+- `[AC][%u] TA: rd=%d, wr=%d; 3D: rd=%d, wr=%d; CL: rd=%d, wr=%d\n`
+- `Fn_hit`
+- `site.AGX·PI_400·P·A0·Accelerator`
+- `INVALIDB9`
+- `AGXk: %s:%d:%s: !!! No free block found for SKU stream\n`
+- `Average Sum Count`
+- `virtual void AGXFirmware::blockForRingEmpty(uint32_t)`
+- `1212222222222222222222111222212122222222222`
+- `AGXRepeatedMemoryDescriptor`
+- `AGXScheduler`
+- `gpu-perf-boost-ce-step`
+- `SetDebouncePeriods`
+- `gKSM_DSFW`
+- `G14G`
+- `virtual void AGXAccelerator::halSetEventFlags(const AGFIKSMEventFlagMask &)`
+- `virtual uint32_t AGXAcceleratorRing<AGFIAcceleratorDataMasterEntry>::getCFIIndex() const [AGXAcceleratorRingEntry = AGFIAcceleratorDataMasterEntry]`
+- `GSL1_1`
+- `%s__%s`
+- `getCLPCStandbyCountKey`
+- `AGXk: %s:%d:%s: !!! Attempt to get index (%x) for entry out-of-bounds\n`
+- `AGXk: %s:%d:%s: !!! AGXSecureGart::map\n`
+- `Context Switch Latencies`
+- `AGXParameterManagementState AGXParameterManagement::queryParameterState(uint32_t *, uint32_t *)`
+- `AGFITimeStampQueue`
+- `AGXGPUMemBlockPool`
+- `KSM`
+- `12211122211222222111`
+- `AGXUSCPrivMemPoolSMA`
+- `3D Read`
+- `void AGXArmFirmware::insertNewMappingEntry(const AGFAMemDescriptorEntry &)`
+- `IPF_CPF1`
+- `SEEngageTolerance`
+- `UL1C3`
+- `INVALIDE8`
+- `virtual void AGXFender::writeConfigRAMCommand64(uint16_t, uint64_t, uint8_t)`
+- `GM_MDCC_SLICE`
+- `12211`
+- `CMP8`
+- `AGXk: %s:%d:%s: !!! Unsupported protection type\n`
+- `GPUCLPCSharedData`
+- `gpu-perf-integral-gain2`
+- `gpu-deadline-aware-mrc-period`
+- `enablePowerPrediction`
+- `SetDPEBudget`
+- `gpu-pwr-perf-scale4`
+- `[Stamps]\n`
+- `G13P`
+- `SetFabPStateThreshold`
+- ` SWProtoHarvesting`
+- `virtual uint32_t AGXAcceleratorRing<AGFIAcceleratorDataMasterEntry>::getWriteIndex() const [AGXAcceleratorRingEntry = AGFIAcceleratorDataMasterEntry]`
+- `MDCC_SLICE_MB4`
+- `GPU Power Filter`
+- `AGXk: %s:%d:%s: !!! q->getFreeEntries() < AGXK_MAX_KSM_KICK_QUEUE_ENTRIES_PER_CMD\n`
+- `GPUVirtualAddress AGXUSCPrivMemFList::getPreemptCountBufferAddress()`
+- `fw_power_state`
+- `gpu-perf-dz`
+- `numBuckets`
+- `DCMP1`
+- `virtual void AGX·PI_400·P·A0·AcceleratorP::populateSoCHotConfigData(AGXSoCHotConfig *)`
+- `virtual size_t AGX·PI_400·P·A0·Accelerator::getUMARingBufferSizeAlignment()`
+- `USC exception for DM: %d`
+- `agxk_usc_priv_mem_pool.h`
+- ` [`
+- `UnknownRev`
+- `gpu-perf-integral-min-clamp`
+- `gpu-fa-timer-0`
+- `MDCC_SLICE1`
+- `sfe_tier3`
+- `kern.sptm.event_counters.UAT_UNMAP_UNMARKED`
+- `MtrPolynomGFX`
+- `gpu_type`
+- `PPMLimit`
+- `AGXWorkQueue`
+- `No set value for 'perf-states-sram'`
+- `SetDPEImaxDshft`
+- `SetDPEImaxPredCtrl`
+- `VF_CPF2`
+- `IPF_CPF3`
+- `VF_CPF5`
+- `VF_CPF7`
+- `Shaders with only Ideal exceeding HW Max`
+- `RAS1`
+- `AFR Performance States`
+- `12222222222222222222222222111221122222111122112`
+- `uint32_t AGXAcceleratorRing<AGFIAcceleratorDeviceControlEntry>::getRingIndexForEntry(AGXAcceleratorRingEntry *) [AGXAcceleratorRingEntry = AGFIAcceleratorDeviceControlEntry]`
+- `AGXArmFirmwareASC`
+- `ADCLKRegisters`
+- `fSavedIOSurfaces <= AGXK_IOFENCE_DEBUG_MAX_SURFACE_COUNT`
+- `GL2FlushID`
+- `site.AGXPeakPowerManager`
+- `CoreAnalyticsHub`
+- `dVDM_ILD`
+- `Throttle Counter UT      `
+- `duration`
+- `Performance`
+- `AGXHardwareBufferBase`
+- `Max`
+- `gpu-pwr-calc-coeff0`
+- `cs-perf-states`
+- `coeff_mid_low`
+- `AppleGPU`
+- `blocked by IOFence`
+- `has-kf`
+- `ZLS1`
+- `FC`
+- `AGXLateEvalEventTable`
+- `valid_perf_states <= AGF_MAX_NUM_PMGR_PERF_STATES`
+- `AGXBlockFence`
+- `void _expectInner(bool, const char *, const int, const char *, ...)`
+- `ControlEffort`
+- `ConfigTransferGain`
+- `IPF_CPF0`
+- `GCDM`
+- `KSM Queue %u : Configuring queue when it is non empty - Kick count = %hu, Num Entries = %u, NextTimestamp = 0x%llx`
+- `Firmware KSM Kick queue Add kicks Pool`
+- `site.AGXArmFirmware`
+- `CMP7`
+- `site.AGXHWParamBufferManager`
+- `pmu_ce`
+- `AGXk: %s:%d:%s: !!! SAPT access violation! addr=0x%llx sid=%d (ERR_STATUS=0x%x AXI_REQ=0x%x)\n`
+- `GSL1_9`
+- `gVDM_ILF_0`
+- `bounded_ptr<T>::operator*: Dereferencing this pointer would access memory outside of the bounds set originally`
+- `TE0`
+- `AGXCLChannelSKSMG19P`
+- `site.AGXKSMKickQueueG19P`
+- `GTP Idle`
+- `Firmware (uncached) channel Pool`
+- `pmu_ce_clear_status`
+- `virtual FirmwareVirtualAddress AGXParameterManagement::growImmediately()`
+- `AGXk: %s:%d:%s: !!! Accessing ring index that is out of bounds\n`
+- `PMSMetrologySensorRegs`
+- `AGXk: %s:%d:%s: !!! Assertion failed: %s: GPU HW Buffer replace would error\n`
+- `kern.sptm.event_counters.RETYPES`
+- `enableDpeUt`
+- `VDM3`
+- `GPU Power Zone Filter 4`
+- `AGXEnergyAttributionWorkLoop`
+- `gpu-keepalive-perf-mode-threshold`
+- `site.AGXCLChannel`
+- `gpu-ppm-filter-time-constant-ms`
+- `virtual void AGXIOFenceData::free()`
+- `void AGXIOFenceData::saveIOSurfaceInfo(IOSurface *, uint32_t)`
+- `3d`
+- `void KernelCalculatedSMAFinalResults::snapShotEnvironment(const AGXAccelerator &, const AGXUSCPrivMemPoolSMA &, AGXIOFenceDataMasterType)`
+- `Firmware CDM Command Pool`
+- `gVDM_SSD_1`
+- `AGXParameterBufferBlock`
+- `AGXRestartReport`
+- `CDM Idle`
+- `AVMR Ctrl Fast Regs`
+- `Firmware/Driver Shared (uncached, read/write)`
+- `Firmware Timestamp Queue Pool`
+- `virtual uint64_t AGXAccelerator::halGetAgxCrUmaDefaultDupmMinCount() const`
+- `)`
+- `progress timeout`
+- `agxk_usc_priv_mem_pool.cpp`
+- `AGXk: %s:%d:%s: !!! Unimplemented\n`
+- `AGXk: %s:%d:%s: !!! Bucket overflow:: timestamp %llu, frame interval %llu, bucket_size %llu, bucket %u, num buckets %llu\n`
+- `kern.sptm.event_counters.UAT_UNMAP_PROCESSED`
+- `AGXk: %s:%d:%s: !!! ChannelError of unknown type! (%d)\n`
+- `AGXk: %s:%d:%s: !!! FW Ring cfi_index %x out-of-bounds\n`
+- `ConfigTransferMaxClamp`
+- `Fi_miss`
+- `ptd_id`
+- `site.AGXCLChannelSKSM`
+- `site.AppleAGXFunctionMetrology`
+- `virtual bool AGXFirmware::requestGartInval(AGXGart *)`
+- `virtual const IOGPUCommandQueue *AGXFirmware::processFirmwareInitiatedRecovery(AGFIRecoveryInfo *, const eRestartReason)`
+- `121221`
+- `gCDM_CTXW`
+- `Streaming codec registers (unused)`
+- `ContTimeOffset`
+- `GPUMtrMaxOverallTemp`
+- `GSL1_0`
+- `INVALID34`
+- `site.AGX·PI_400·P·A0·KSMKickQueue`
+- `GM_HUB`
+- `AGX·PI_400·P·A0·RenderTarget`
+- `gpu-se-engagement-tolerance`
+- `site.AGX3DChannelSKSMG19P`
+- `TE2`
+- `MDCC_SLICE_MB0`
+- `AGXUSCPrivMemPool`
+- `function-mcc_dataset`
+- `KSM Queue %u : Added kicks when queue is FULL. Num Entries = %u, NextTimestamp = 0x%llx`
+- `FRG Single`
+- `AGXk: %s:%d:%s: !!! %s Could not allocate configuration lock\n`
+- `MDCC_SLICE_MB2`
+- `INVALIDE9`
+- `AGXk: %s:%d:%s: !!! halMCacheApertureSetup returned false. Check if HAL API is implemented\n`
+- `void AGXAccelerator::populateLinearPowerTransferTable(float *, uint32_t)`
+- `enable`
+- `gpu_gen`
+- `AGXk: %s:%d:%s: !!! AGXCLChannelSKSM::submitBuffer: context_id is negative (%d)\n`
+- `gpu-ppz-mrc-period`
+- `ut_qp`
+- `agxk_hal_400_p_accelerator.cpp`
+- `12112122121221`
+- `AGXTAChannelSKSM`
+- `virtual IOGPUChannel *AGX3DWorkQueue::getGuiltyChannel() const`
+- `AGXk: %s:%d:%s: !!! Verification failed: %s: GPU uses 16K page size but CPU does not\n`
+- `AGXCommandBuffer`
+- `is_read`
+- `PRC Regs`
+- `gCDM_CTXR`
+- `site.AGXLateEvalEventFence`
+- `AGXk: %s:%d:%s: !!! Assertion failed: %s: OOB access in GPU Driver Resource\n`
+- `agxk_usc_priv_mem_pool_sma.h`
+- `gpu-clvr-mrc-period`
+- `AGXk: %s:%d:%s: !!! %s Fail to allocate fConsistentPerfStateLock\n`
+- `Firmware Shared Event Command Pool`
+- `PwrZones`
+- `SetDPEImaxReactTrigThresh`
+- `AGXk: %s:%d:%s: !!! Assertion failed: %s: Invalid allocation\n`
+- `INVALIDED`
+- `fw_ta_substate`
+- `41819`
+- `AGXImplicitGrowEngine`
+- `virtual const void AGXFirmware::processFirmwareTACommandsRecovery(AGFIRecoveryInfo *)`
+- `CDM Dependent`
+- `gpu-deadline-mrc-period`
+- `gpu-power-zone-filter-tc-0`
+- `virtual bool AGXFender::didGPUWakeUp()`
+- `KSMCompletionQueue0`
+- `void AGXFirmwareResourceStack<unsigned long long, AGXLateEvalEvent, 64, 256>::releaseElement(ElementOwner *, uint32_t) [FWResourceManagerElement = unsigned long long, ElementOwner = AGXLateEvalEvent, kL1WidthBits = 64, kL2WidthBits = 256]`
+- `buckets`
+- `AF fault`
+- `VCE1`
+- `event_selects_num_max_list`
+- `IntegralGain`
+- `gVDM_MMBR_1`
+- `%s %s`
+- `AGXk: %s:%d:%s: !!! Verification failed: %s: FW mappings descriptor is full (%u) - Too many mappings to record\n`
+- `SECriteria`
+- `PowerPredictionEnabled`
+- `gpu-power-zone-target-0`
+- `virtual void AGXFender::incrementConfigRAMOffset()`
+- `AGXk: %s:%d:%s: !!! Error, fail to allocate fSharedAllocatorLock\n`
+- `AGXk: %s:%d:%s: !!! Verification failed: %s: max pState greater than num supported.\n`
+- `site.AGXBlockedArray`
+- `site.AGXBlockFenceRingEntry`
+- `agxk_parameter_management.h`
+- `support_ipad_pro`
+- `AGX HAT Regs`
+- `agxk_fast_render_hardware_kernel_command.cpp`
+- `virtual void AGXFender::enableGPCPerfStateOverride(bool)`
+- `agxk_compute_hardware_kernel_command.cpp`
+- `Enable`
+- `12121222222111212222211112121222222222221112221222211111212`
+- `AGXTimeStampQueue`
+- `KSM FE Regs`
+- `gpu-cec-mrc-period`
+- `site.AGXLateEvalEvent`
+- `AGXResource`
+- `AGXk: %s:%d:%s: !!! Unrecognized core id\n`
+- `coeff_low`
+- `ptd_entry_irq`
+- `gCDM_CSW`
+- `void AGXStatistics::recordBoostControllerStatisticsEntryFromFW(const AGFIStatisticsPowerControllerState *)`
+- `AGXk: %s:%d:%s: !!! FW Ring read_index %x out-of-bounds\n`
+- `virtual bool AGX·PI_400·P·A0·AcceleratorP::configureDevice(IOService *)`
+- `site.AGXTACommandDescriptor`
+- `Page Invalid`
+- `TE6`
+- `AGXGartG19P`
+- `1211121112112222111121222212222222221212222222222221122222222222211212221121`
+- `site.IOLock *`
+- `GPU Power Zone Filter 0`
+- `1`
+- `bif0_fault`
+- `AGXk: %s:%d:%s: !!! Unknown DM: %u\n`
+- `num_frags`
+- `site.AGXTimeStampQueue`
+- `Avg of Minimum UMA Allocation Size`
+- `agxk_usc_priv_mem_pool_sma.cpp`
+- `active-mcc-bit-vector`
+- `dual-filter`
+- `thresholds_ma`
+- `AGXk: %s:%d:%s: !!! Assertion failed: %s: invalid state!\n`
+- `121222222121112222212111112222122122222`
+- `SECounter`
+- `1211122222222`
+- `CMP3`
+- `INVALID84`
+- `AGXGart`
+- `gpu-pwr-calc-coeff2`
+- `gpu-fast-die0-prop-tgt-delta`
+- `IVDM: Min Active Throttle Percent`
+- `AGXk: %s:%d:%s: !!! handleChannelErrorEvent: Type confusion - invalid AGXChannel for firmware stamp_idx %u\n`
+- `GPU Power Controller States`
+- `UMA Backup Page List`
+- `PMPDoorbell (unused)`
+- `%u)`
+- `AppleAGXFunctionMetrology`
+- `agxk_hal_400_render_target.cpp`
+- `bool AGXUSCPrivMemPool::allocatePages(AGXCommandDescriptor *, AGXUMAData *, uint64_t)`
+- `gpu-keepalive-off-mode-threshold`
+- `virtual void AGXArmFirmware::submit3DChannel(AGXChannel *const, const AGXChannelSubmitInfo &, uint32_t, uint32_t, const bool, const bool)`
+- `GL2CC_META0`
+- `virtual bool AGXFender::isPoweredOffWaitingOnHost()`
+- `DPWR_GTPGP`
+- `site.AGXCommandQueuePMConfig`
+- `UMA Page Pool State`
+- `UL1C0`
+- `site.AGXPerfCtrSampler`
+- `TE1`
+- `1212211`
+- `Average Sum`
+- `GPU Performance States`
+- `121121211211112222222222222222222212222211222222122211222122222222222222222222222222222222222222222211221111111111111112222222222222222122122122121212121222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222212`
+- `INVALID94`
+- `122111111111212222222222222222222222222222222222222222222211112122222222222222222222222222222222222222222221121`
+- `AGXk: %s:%d:%s: !!! %s Could not allocate accelerator lock\n`
+- `targetDelta`
+- `GPU Power Zone Filter 2`
+- `AVMR Offset`
+- `Throttle Counter HWPI `
+- `uint64_t AGXUAT::mapToPhysicalAddress(uint64_t)`
+- `DCMP8`
+- `bool AGXSecureGart::unmapFromThisGart(AGXSecureMemoryMap *)`
+- `thm_activations`
+- `PMSMetrologySensorRegs (unused)`
+- `gpu-se-tgt`
+- `AGXk: %s:%d:%s: !!! Attempting to map into multiple GPU Contexts!\n`
+- `AGXLateEvalEventResourceManager`
+- `void AGXAccelerator::loadUMADesc(AGXUSCPrivMemFList *)`
+- `C1`
+- `Error`
+- `MetrologySensorRegs`
+- `site.AGXSecureMonitorG19P`
+- `site.uint64_t **`
+- `ptd-data-table-dict`
+- `[%3d]=%8u\n`
+- `AGXk: %s:%d:%s: !!! AGXSecureGart::unmap Timed out waiting for FW to process secure unmap after %llu ns\n`
+- `IPF0`
+- `INVALIDAC`
+- `UT_Engagement_Perf_State`
+- `GPUCLPCDynamicSplitRatio`
+- `gpu-fa-step-1`
+- `config`
+- `ThresholdPStateFreq`
+- `virtual void AGXArmFirmware::powerTransitionStart(AGFIFirmwareRole, bool)`
+- `site.AGXParameterBufferBlock *`
+- `UT Engagement centi-% Histogram`
+- `Pool ID %llu`
+- `Real Time Priority, `
+- `site.IAGXUSCPrivMemGrowEngine`
+- `static uint32_t AGXFirmware::getFirmwarePriorityForAGXPriority(eAGXContextPriorityType)`
+- `UnknownCore`
+- `timers`
+- `CMP2`
+- `GSL1_7`
+- `AFRMetrologySensor Regs (unused)`
+- `Shaders with both Min and Ideal exceeding HW Max`
+- `gPM_0`
+- `TPU`
+- `12222222221112`
+- `RGX Regs`
+- ` %uCores`
+- `gpu-fastdie-mrc-period`
+- `Power`
+- `DFender IVDM Regs`
+- `dCDM_KS1`
+- `gIPP`
+- `site.AGXRepeatedMemoryDescriptor`
+- `PerfMaxTarget`
+- `gPM_1`
+- `INVALIDFB`
+- `121121211122112`
+- `Created AGX Protected Contexts for %p\n`
+- `16M`
+- `PowerZone`
+- `dVDM_SSD`
+- `DPWR_USC_RIA`
+- `PB Block`
+- `ptd_size`
+- `fYUVCSCTableMapping`
+- `gpu-se-reset-criteria`
+- `site.AGXParameterBufferBlock`
+- `gpu-perf-integral-gain`
+- `virtual uint32_t AGXAcceleratorRing<AGFIAcceleratorDeviceControlEntry>::getCFIIndex() const [AGXAcceleratorRingEntry = AGFIAcceleratorDeviceControlEntry]`
+- `reset-tolerance`
+- `AGXk: %s:%d:%s: !!! Failed to create matching dictionary for AGXArmFirmwareMapper!\n`
+- `CMP`
+- `GPURawCounterBundleName`
+- `max_pstate < AGF_MAX_NUM_PMGR_PERF_STATES`
+- `DPWR_USC_MXU`
+- `Allocated PB Size`
+- `gpu-idleoff-fi-miss`
+- `Oct 13 2026 23:38:06`
+- `SetDPEImaxPredWin2`
+- `site.AGXPerfCtrSamplerGen11`
+- `agxk_sku_buffer_allocator.h`
+- `64M`
+- `Total Number of UMA Pools`
+- `GPU Discrete Power Zone Engaged`
+- `gpu-avg-power-target-filter-tc`
+- `/arm-io/gfx-asc`
+- `virtual void AGXArmFirmwareMapper::stop(IOService *)`
+- `INVALID27`
+- `IODeviceTree:/chosen`
+- `FRG Kill timeout`
+- `Firmware Add Final GTPC Kick Pool`
+- `AVMR Offset Histogram for perf state %u`
+- `AGXk: %s:%d:%s: !!! Stale recovery packet is received from firmware. Firmware should never send stale recovery packets.\n`
+- `AGFICmdQueueSchedState`
+- `1112`
+- `Kp`
+- `INVALIDDF`
+- `MetalPluginName`
+- `\"%s\" @%s:%d`
+- `void AGXHardwareBufferIDManager::retainIDLocked(int32_t, AGXHardwareBufferBase *)`
+- `122112211222122`
+- `IPF8`
+- `MDCC_SLICE_MB6`
+- `AGX·PI_400·P·A0·CLChannelSKSM`
+- `1211211111111111111211112112212`
+- `VDM6`
+- `virtual size_t AGX·PI_400·P·A0·Accelerator::halGetUMABlockSize()`
+- `G16G`
+- `AGXCLChannelSKSM`
+- `GPU AVMR Offset`
+- `Firmware PM Rebuild Pool`
+- `com.apple.agx.restartreport`
+- `gpu-fstp-downgrade`
+- `IPF_CPF2`
+- `AGXk: %s:%d:%s: !!! AGXSecureGart::createRestrictedRangeMapping\n`
+- `gpu-idleoff-fn-hit`
+- `AICSWIntRegs`
+- `gpu_rev`
+- `Firmware`
+- `gRDE_0`
+- `12222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222221122221111111222222222222222221211122222221122222222222222222112222222222222222222222222222222222222222222222222222222222222111111222211121112211`
+- `SetDPEImaxReactWin1`
+- `site.sBlock`
+- `site.AGX·PI_400·P·A0·Gart`
+- `site.IOBufferMemoryDescriptor *`
+- `SetCLPCDeadlineControlEffort`
+- `AGXk: %s:%d:%s: !!! Host Kick trace buffer is full (w=%u, r=%u, s=%u)\n`
+- `AGXk: %s:%d:%s: !!! Invalid Protection Options\n`
+- `gpu-avmr-mrc-period`
+- `Spill Buffer Usage Histogram`
+- `model-slow`
+- `Invalid interrupt index received\n`
+- `agxk_fwc_arm.cpp`
+- `AGXk: %s:%d:%s: !!! AGXPowerTransitionState (%d) must be in kAGXPowerTransitionStateNone\n`
+- `INVALID6F`
+- `IPF7`
+- `AGXAcceleratorG19P`
+- `virtual bool AGXParameterManagement::buildPageList(AGXParameterManagerStagedUpdates &)`
+- `Firmware PDM Command Pool`
+- `Final`
+- `gRDE_1`
+- `virtual uint32_t AGXFender::readTimerPowerInterruptStatus()`
+- `agxk_invalid_channel.cpp`
+- `site.AGXSecureGart`
+- `AGXk: %s:%d:%s: !!! AGXSecureGart::free\n`
+- `12111111222122222222222212211222222222122222222222222222222111221222221111000000`
+- `power`
+- `INVALID77`
+- `GFX`
+- `[PW] %d %d %d %d %d\n`
+- `control`
+- `virtual void AGXFender::resetGPCSleepStateBits()`
+- `MDCC_SLICE_MB5`
+- `void AGXChannel::updateUMAPoolEvent(sIOGPUEvent *, UMAPoolMergeDirection)`
+- `Firmware Event Signal Pool`
+- `role`
+- `virtual void AGX·PI_400·P·A0·AcceleratorP::populateFastDieDeviceConfigData(AGXFastDieControllerDeviceConfig *)`
+- `virtual IOByteCount AGXUSCPrivMemPool::getSelfReserveSize(const AGXUMADesc *)`
+- `gpu-num-perf-states`
+- `MaxGPUUtilization`
+- `dl01_evictions`
+- `pz_enable`
+- `dCDM_KS2`
+- `FRG1`
+- `virtual void AGXArmFirmware::notifyNewMapping(GPUVirtualAddress, IOPhysicalAddress, bool)`
+- `IOReportLegendPublic`
+- `%s%s`
+- `AbsoluteTarget`
+- `G17G`
+- `INVALIDEB`
+- `SharedEventAgentSignalEnabled`
+- `Min of Minimum UMA Allocation Size`
+- `AGXSPTMTelemetryWorkLoop`
+- `AGXGrowableArray<AGXFirmwareResourceAllocation *>::~AGXGrowableArray() [T = AGXFirmwareResourceAllocation *]`
+- `AGXKTelemetry`
+- `AGXk: %s:%d:%s: !!! Unable to create page directory or page table descriptor\n`
+- `num_omu_metric_entries`
+- `virtual void AGXAccelerator::halResetEventFlags(const AGFIKSMEventFlagMask &)`
+- `AGXk: %s:%d:%s: !!! FW MemDesc write_index out-of-bounds\n`
+- `uint32_t AGXSSIOTimestampToBucket(uint64_t, uint64_t, uint64_t)`
+- `retrieveVMLimits`
+- `PerfCtrPartitionInfoList`
+- `site.AGXCommandQueue`
+- `slot%u`
+- `signature`
+- `Total Number of UMA Pages`
+- `AGXInvalidChannel`
+- `pm_protect`
+- `rif_shadow`
+- `AGXk: %s:%d:%s: !!! AGXArmFirmwareMapper::iovmUnmapMemory: unmapping address that was never mapped!\n`
+- `firmware-detected lockup`
+- `CLTMPerfMax`
+- `InactiveEngagementThreshold`
+- `timestamp timeout (unlocked)`
+- `logs`
+- ` %uGTPSlots`
+- `virtual void AGXAccelerator::handleSAPTInterrupt()`
+- `virtual void AGXSecureGart::registerContextID(const int32_t)`
+- `agx-pmu-loops-unsupported`
+- `GPUMtrAverageTemp`
+- `GSL1_8`
+- `virtual bool AGXFender::isSnoopEnabled()`
+- `1211212112111122222222222222222222122222112222221222112221211122111111111111111222222222222222121212121221222222222222222222222222220000`
+- `TA`
+- `AGXk: %s:%d:%s: !!! ASC Wake took >100ms to wake up\n`
+- `analog_offset`
+- `SetDPESLConfig`
+- `INVALID24`
+- `INVALID9F`
+- `GGTP`
+- `void AGXStreamValidatorBase<AGXSharedStreamParser, AGXSharedStreamParser>::assertValid() const [Ts = <AGXSharedStreamParser, AGXSharedStreamParser>]`
+- `IOReportLegend`
+- `GM_GMMU_NTLB`
+- `AGXk: %s:%d:%s: !!! Cannot allocate from unmapped range!\n`
+- `AGXk: %s:%d:%s: !!! Cannot deallocate from default range!\n`
+- `site.bool`
+- `DSF Pause Timeout`
+- ` on %s`
+- `INVALID74`
+- `site.AGXSKSMFlushID`
+- `gpu-se-ki`
+- `sensor_offsets`
+- `compatible`
+- `mediaserverd Restarts`
+- `virtual bool AGXAccelerator::start(IOService *)`
+- `G15M`
+- `updateHwPiUtQuanta`
+- `VCE8`
+- `agx`
+- `DPEQuanta`
+- `imax_budget`
+- `1222`
+- `GSL1_4`
+- `gVDM_CSD_0`
+- `level`
+- `dl01_occupancy`
+- `AGXCommandQueueReclaimableState`
+- `ID2`
+- `TE7`
+- `dRDE0`
+- `Unable to acquire lock\n`
+- `GTP Only RT Buffers: %d x %d x %d`
+- `deadline_qp`
+- `gpu-power-zone-target-offset-3`
+- `AGXUAT`
+- `ul1_evictions`
+- `AGXk: %s:%d:%s: !!! Using uninitialized validator class\n`
+- `virtual void AGX·PI_400·P·A0·Accelerator::handleSAPTInterrupt()`
+- `MDCC_SLICE5`
+- `AGXk: %s:%d:%s: !!! Cannot allocate from default range!\n`
+- `GPU UT AggD Stats`
+- `site.AGXUMAAsyncGrowRequest`
+- `AGXSDebugBuffer::Event resolveEventForErrorType(const uint32_t)`
+- `const RET *AGXFirmwareRingValidator::validateType(const AGFIFirmwareEventRingEntry *) const [RET = AGFIFirmwareEventSMAStarvedInterrupt, FWET1 = kAGFIFirmwareEventTypeSMAStarvedInterrupt, FWET2 = kAGFIFirmwareEventNone]`
+- `PPM Target as % of Max GPU Power`
+- `Throttle Counter C1PPT   `
+- `Cached Firmware Private`
+- `site.AGXArmFirmwareASC`
+- `AGXk: %s:%d:%s: !!! %s: Failed to allocate fEnergyAttributor\n`
+- `CommandSubmissionEnabled`
+- `AGXAttributionIndexManager`
+- `gpu-fast-die0-proportional-gain`
+- `agxk_workqueue.h`
+- `AGX3DChannelSKSM`
+- `[SL] %d %d %u %llu %llu\n`
+- `PPP5`
+- `AGXParameterManagementVirtual`
+- `AGX.UT_Not_Engaged_Perf_State`
+- ` (Pool ID %llu)`
+- `function-reliability_monitor`
+- `gpu-pwr-perf-scale0`
+- `AGXDeviceUserClient`
+- `restart_reason_desc`
+- `Unknown Restarts`
+- `AppleAGX Parameters`
+- `AGXLateEvalWait`
+- `gpu-idle-off-delay-ms`
+- `PBE`
+- `index`
+- `GPU Energy`
+- `site.IOAddressRange`
+- `FilterOutput`
+- `AGXGFXDVAccessor`
+- `dVDM_CSD`
+- `AGXk: %s:%d:%s: !!! Invalid priority %d used for work queue 0x%p\n`
+- `site.AGXAccelerator`
+- `gpu-fa-timer-2`
+- `void AGXFirmwareResourceStack<_AGFITimeStampQueue, AGXTimeStampQueue, 64, 256>::releaseElement(ElementOwner *, uint32_t) [FWResourceManagerElement = _AGFITimeStampQueue, ElementOwner = AGXTimeStampQueue, kL1WidthBits = 64, kL2WidthBits = 256]`
+- `gpu-power-zone-target-4`
+- `site.AGXVirtualMemory`
+- `AGX3DWorkQueue`
+- `N`
+- `CS RIF Perf Regs`
+- `PrimeResidencyPercent`
+- `registerKernelClientToApplePPMFunction`
+- `GPU Idle Time`
+- `AGXk: %s:%d:%s: !!! queue->getFreeEntries() < AGXK_MAX_KSM_KICK_QUEUE_ENTRIES_PER_CMD\n`
+- `IPF5`
+- `ttbat-phys-addr-base`
+- `12122112`
+- ` (pid=%u)`
+- `Shaders with only Min exceeding HW Max`
+- `gpu-perf-proportional-gain`
+- `const RET *AGXFirmwareRingValidator::validateType(const AGFIFirmwareEventRingEntry *) const [RET = AGFIFirmwareEventPMRequestMemory, FWET1 = kAGFIFirmwareEventTypeAllocatePMMemory, FWET2 = kAGFIFirmwareEventNone]`
+- `gpu-se-reset-tolerance`

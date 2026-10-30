@@ -1,0 +1,72 @@
+# `IOAccessoryHIDDeviceEndpoint`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.iokit.IOAccessoryManager`](../kexts/com.apple.iokit.IOAccessoryManager.md)
+- Object size: `0x118` (280 bytes)
+- Metaclass: `0xfffffe000b9f23a8`; metaclass vtable `0xfffffe0008345c78`; class vtable `0xfffffe00083455d8`
+- Registration (init): `0xfffffe0009ffe93c`
+- Superclasses: [`IOHIDDevice`](IOHIDDevice.md) → [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## Strings in its kext that name it (60)
+
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] :HIDDescriptor errCode %x, len %llu, _useDraftVer=%d \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d), wake sleeping threads \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReportMulti: ep %u, len %llu \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) _receiveDataMsg: commandID %x, %llu bytes, isInactive %d, isInactive %d, status %x \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d), got Descriptor data %d bytes (soFar %d / %d), _getDescriptorsFailed=%d \n`
+- `site.IOAccessoryHIDDeviceEndpoint`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDResponse:HIDDescriptor errCode %x, len %llu, _useDraftVer=%d \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) requestLen %d (0x%04x), requestOffset %d (0x%04x), _userDraftVer %d\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) detachFromParent on IOAccessory plane \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) _receiveDataMsg: commandID %x, data(%llu bytes):%s \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDResponse: errCode %x, respID %u, len %llu \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) Enter \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) RetHIDReportMulti: entryLen %llu, processedDataLen %llu, reportDataLen %llu \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReportMulti: entryLen %llu, reportLen %llu \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d), skip remove0EventSource, commandGate(%d), getWorkLoop(%d), _commandGateOnEventSource(%d) \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) commandID %x, %llu bytes \n`
+- `IOAccessoryHIDDeviceEndpoint::%s endpointID %d \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDResponse:HIDReport wake _descriptorInFlight \n`
+- `IOAccessoryHIDDeviceEndpointDescriptor`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReport: ep %u, reportID %u, len %llu \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) END, isInactive %d, ret=%#x \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d), removeEventSource \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) send GetHIDDescriptor \n`
+- `IOAccessoryHIDDeviceEndpointIdentifier`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) END \n`
+- `IOAccessoryHIDDeviceEndpoint`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) RetHIDReportMulti: report(%llu bytes):%s \n`
+- `IOAccessoryHIDDeviceEndpointID`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s (ep %d), got too may Descriptor bytes (soFar %d > %d) \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d)\n\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReport: call handleReport: InputReport, len %llu \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s HIDDeviceEndpointDescriptorKey set for ep %d! %d bytes \n\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s HIDDeviceEndpointIDKey set! ep %d -> %d \n\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s truncating report from %lu to %lu bytes\n\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) reportType %d, len %llu, _reportActive %d, isInactive %d \n\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDResponse:Generic errCode %x, len %llu \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s Exit %d \n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReportMulti: after handleReport ret %x \n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReportMulti: failed to create report buffer! len %llu \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) HIDDeviceEndpoint _receiveDataMsg: END commandID %x, %llu bytes, isInactive %d, status %x \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDResponse:HIDReport errCode %x, len %llu \n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s get report failed with error 0x%08x\n\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDResponse:HIDDescriptor errCode %x, len %llu, Ignored! \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s:%d (ep %d) after commandSleep, _reportStatus %d, _reportActive %d, isInactive %d \n\n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReport: failed to create report buffer! len %llu \n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) threadRet %d \n\n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) Unknown packet received commandID:%02X payloadLength:%02llX \n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s:%d (ep %d) \n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReportMulti: reportDataLen error! processedDataLen %llu, entryLen %llu, reportDataLen %llu \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) after commandSleep _reportStatus, _reportActive %d, isInactive %d, ret %x \n\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) threadRet %d \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDResponse:HIDReport _reportActive %d, _reportStatus %d \n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s:%d\n\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) _receiveDataMsg: Exit early, commandID %x, %llu bytes, isInactive %d, status %x \n\n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) Failed to GetHIDDescriptor! \n\n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReport: after handleReport ret %x \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s Enter after super::init() \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) threadRet %d\n\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] wake _reportActive \n`

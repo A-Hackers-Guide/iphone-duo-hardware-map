@@ -1,0 +1,23 @@
+# `_UIViewServiceTextEffectsOperator_RemoteViewControllerInterface` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `_UIViewServiceDeputy_UIViewServiceInterface`, `_UIViewServiceUIBehaviorInterface`
+- 0 instance variables, 0 properties, 13 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[_UIViewServiceTextEffectsOperator_RemoteViewControllerInterface __setRemoteTextEffectsWindowMatchesLayerWithContextId:renderId:];
+-[_UIViewServiceTextEffectsOperator_RemoteViewControllerInterface __createHostedTextEffectsWithReplyHandler:];
+-[_UIViewServiceTextEffectsOperator_RemoteViewControllerInterface __hostDidEnterBackground];
+-[_UIViewServiceTextEffectsOperator_RemoteViewControllerInterface __hostDidReceiveGestureDirection:authenticationMessage:];
+-[_UIViewServiceTextEffectsOperator_RemoteViewControllerInterface __hostViewDidMoveToScreenWithNewHostingHandleReplyHandler:];
+-[_UIViewServiceTextEffectsOperator_RemoteViewControllerInterface __hostViewWillAppear:];
+-[_UIViewServiceTextEffectsOperator_RemoteViewControllerInterface __hostViewWillDisappear:];
+-[_UIViewServiceTextEffectsOperator_RemoteViewControllerInterface __hostWillEnterForeground];
+-[_UIViewServiceTextEffectsOperator_RemoteViewControllerInterface __setHostedViewReference:];
+-[_UIViewServiceTextEffectsOperator_RemoteViewControllerInterface __setHostedViewSize:];
+-[_UIViewServiceTextEffectsOperator_RemoteViewControllerInterface __setNextAutomaticOrderOutDirection:duration:];
+-[_UIViewServiceTextEffectsOperator_RemoteViewControllerInterface __setSafeAreaInsets:];
+-[_UIViewServiceTextEffectsOperator_RemoteViewControllerInterface __setWindowOffset:];
+```

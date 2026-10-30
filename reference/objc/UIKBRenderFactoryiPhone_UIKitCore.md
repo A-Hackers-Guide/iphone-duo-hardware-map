@@ -1,0 +1,140 @@
+# `UIKBRenderFactoryiPhone`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `UIKBRenderFactory`
+- 0 instance variables, 0 properties, 124 instance methods, 1 class methods
+
+## Class methods
+
+```
++[UIKBRenderFactoryiPhone _textOffsetHints];
+```
+
+## Instance methods
+
+```
+-[UIKBRenderFactoryiPhone stringKeyFontSizeTamil];
+-[UIKBRenderFactoryiPhone assetIdiom];
+-[UIKBRenderFactoryiPhone fontSizeForStringKey:];
+-[UIKBRenderFactoryiPhone muttitapReverseKeyImageName];
+-[UIKBRenderFactoryiPhone fontSizeForMoreKey:];
+-[UIKBRenderFactoryiPhone dynamicBottomRowMultiplier];
+-[UIKBRenderFactoryiPhone fontOffsetForInternationalKey:];
+-[UIKBRenderFactoryiPhone fontOffsetForDismissKey:];
+-[UIKBRenderFactoryiPhone supportsPaddles];
+-[UIKBRenderFactoryiPhone fontOffsetForMore123Key:];
+-[UIKBRenderFactoryiPhone dynamicInsets];
+-[UIKBRenderFactoryiPhone stringKeyOffsetMalayalam];
+-[UIKBRenderFactoryiPhone fontOffsetForCopyKey:];
+-[UIKBRenderFactoryiPhone keyCornerRadius];
+-[UIKBRenderFactoryiPhone variantSymbolTextOffset];
+-[UIKBRenderFactoryiPhone stringKeyFontSizeOriya];
+-[UIKBRenderFactoryiPhone stringKeyFontSizeMalayalam];
+-[UIKBRenderFactoryiPhone fontOffsetForStringKey:];
+-[UIKBRenderFactoryiPhone thinKeycapsFontNameForKey:];
+-[UIKBRenderFactoryiPhone skinnyKeyThreshold];
+-[UIKBRenderFactoryiPhone stringKeyOffsetBengali];
+-[UIKBRenderFactoryiPhone lightKeycapsFontNameForKey:];
+-[UIKBRenderFactoryiPhone _traitsForKey:onKeyplane:];
+-[UIKBRenderFactoryiPhone _row4ControlSegmentWidthRight];
+-[UIKBRenderFactoryiPhone fontOffsetForDictationKey:];
+-[UIKBRenderFactoryiPhone wideShadowPaddleInsets];
+-[UIKBRenderFactoryiPhone fontOffsetForCutKey:];
+-[UIKBRenderFactoryiPhone fontOffsetForReturnKey:];
+-[UIKBRenderFactoryiPhone fontOffsetForBoldKey:];
+-[UIKBRenderFactoryiPhone variantSymbolFrameInsets];
+-[UIKBRenderFactoryiPhone stringKeyFontSizeBengali];
+-[UIKBRenderFactoryiPhone variantAnnotationTextOffset];
+-[UIKBRenderFactoryiPhone symbolImageControlKeyFontSize];
+-[UIKBRenderFactoryiPhone stringKeyFontSizeGujarati];
+-[UIKBRenderFactoryiPhone fontOffsetForRealEmojiKey:];
+-[UIKBRenderFactoryiPhone stringKeyFontSizeKannada];
+-[UIKBRenderFactoryiPhone fontOffsetForMoreABCKey:];
+-[UIKBRenderFactoryiPhone assistKeyFontSize];
+-[UIKBRenderFactoryiPhone wideShadowPopupMenuInsets];
+-[UIKBRenderFactoryiPhone variantGeometriesForGeometry:variantCount:rowLimit:annotationIndex:];
+-[UIKBRenderFactoryiPhone fontSizeForMoreABCKey:];
+-[UIKBRenderFactoryiPhone stringKeyFontSizeGurmukhi];
+-[UIKBRenderFactoryiPhone lightKeycapsFontFallbackName];
+-[UIKBRenderFactoryiPhone popupFontSize];
+-[UIKBRenderFactoryiPhone isTallPopup];
+-[UIKBRenderFactoryiPhone popupSymbolTextOffset];
+-[UIKBRenderFactoryiPhone fontOffsetForRightArrowKey:];
+-[UIKBRenderFactoryiPhone stringKeyFontSizeDevanagari];
+-[UIKBRenderFactoryiPhone fontOffsetForLeftArrowKey:];
+-[UIKBRenderFactoryiPhone stringKeyFontSizeTelugu];
+-[UIKBRenderFactoryiPhone _row4ControlSegmentWidthLeft];
+-[UIKBRenderFactoryiPhone customizedOffsetForString:isPrimary:withFrame:];
+-[UIKBRenderFactoryiPhone fontOffsetForPasteKey:];
+-[UIKBRenderFactoryiPhone multitapCompleteKeyImageName];
+-[UIKBRenderFactoryiPhone variantPaddedFrameInsets];
+-[UIKBRenderFactoryiPhone dynamicInsetsForNumberOfRows:];
+-[UIKBRenderFactoryiPhone variantDisplayFrameInsets];
+-[UIKBRenderFactoryiPhone carPlayFontSize];
+-[UIKBRenderFactoryiPhone iPadFudgeLayout];
+-[UIKBRenderFactoryiPhone moreABCKeyWideCellOffsetForKey:];
+-[UIKBRenderFactoryiPhone rowLimitForKey:];
+-[UIKBRenderFactoryiPhone spaceKeySecondarySymbolFontName];
+-[UIKBRenderFactoryiPhone deleteKeyOffset];
+-[UIKBRenderFactoryiPhone lightPadKeycapsFontFallbackName];
+-[UIKBRenderFactoryiPhone ZWNJKeyOffset];
+-[UIKBRenderFactoryiPhone _configureTraitsForPopupStyle:withKey:onKeyplane:];
+-[UIKBRenderFactoryiPhone _customizeGeometry:forKey:contents:];
+-[UIKBRenderFactoryiPhone _customizeLetterSymbolStyle:forKey:];
+-[UIKBRenderFactoryiPhone _customizePopupTraits:forKey:onKeyplane:];
+-[UIKBRenderFactoryiPhone _customizeSymbolStyle:forKey:contents:onKeyplane:];
+-[UIKBRenderFactoryiPhone _customizeTraits:forMultiscriptKey:style:];
+-[UIKBRenderFactoryiPhone _customizeTraits:forPredictionCellKey:];
+-[UIKBRenderFactoryiPhone _customizeTraits:forThaiMultiKey:];
+-[UIKBRenderFactoryiPhone _customizeTraits:forZhuyinGridDualStringKey:];
+-[UIKBRenderFactoryiPhone _popupMenuStyleForKey:];
+-[UIKBRenderFactoryiPhone _popupStyleForKey:];
+-[UIKBRenderFactoryiPhone _shouldConfigureSecondarySymbolStyleForSpaceKey:];
+-[UIKBRenderFactoryiPhone _textStyleForSpaceKey];
+-[UIKBRenderFactoryiPhone activeControlKeyTraits];
+-[UIKBRenderFactoryiPhone additionalDynamicDrawingInsets];
+-[UIKBRenderFactoryiPhone carPlaySymbolImageFontSize];
+-[UIKBRenderFactoryiPhone conjunctStringKeyOffsetTelugu];
+-[UIKBRenderFactoryiPhone controlKeyTraits];
+-[UIKBRenderFactoryiPhone customizedOffsetForString:isPrimary:isLandscape:withFrame:];
+-[UIKBRenderFactoryiPhone deleteKeyFontSizeForKey:];
+-[UIKBRenderFactoryiPhone dualStringBottomAdditionalOffsetForDisplayContents:];
+-[UIKBRenderFactoryiPhone gurmukhiEkOnkarFontSize];
+-[UIKBRenderFactoryiPhone gurmukhiEkOnkarOffset];
+-[UIKBRenderFactoryiPhone hintNoneKeyFontSizeForKey:];
+-[UIKBRenderFactoryiPhone iPadSansHomeButtonLayout];
+-[UIKBRenderFactoryiPhone isCustomizedKeyStyle];
+-[UIKBRenderFactoryiPhone lightHighQualityEnabledBlendForm];
+-[UIKBRenderFactoryiPhone lightPadKeycapsFontNameForKey:];
+-[UIKBRenderFactoryiPhone lightTextFontFallbackName];
+-[UIKBRenderFactoryiPhone lightTextFontNameForKey:];
+-[UIKBRenderFactoryiPhone moreABCKeyWideCellFontSizeForKey:];
+-[UIKBRenderFactoryiPhone needsSmallerFontSizeForKey:];
+-[UIKBRenderFactoryiPhone returnKeyFontSizeForKey:];
+-[UIKBRenderFactoryiPhone secondaryShiftKeyOffsetForKey:];
+-[UIKBRenderFactoryiPhone setupLayoutSegments];
+-[UIKBRenderFactoryiPhone shiftDeleteGlyphTraits];
+-[UIKBRenderFactoryiPhone shiftKeyFontSizeForKey:];
+-[UIKBRenderFactoryiPhone shiftKeyOffset];
+-[UIKBRenderFactoryiPhone shiftLockControlKeyTraits];
+-[UIKBRenderFactoryiPhone shiftedControlKeyTraits];
+-[UIKBRenderFactoryiPhone shouldOverlayAlternateTagKey:onKeyplane:];
+-[UIKBRenderFactoryiPhone shouldOverlayDictationKey:onKeyplane:];
+-[UIKBRenderFactoryiPhone smallSymbolImageFontSize];
+-[UIKBRenderFactoryiPhone stringKeyOffsetDevanagari];
+-[UIKBRenderFactoryiPhone stringKeyOffsetGujarati];
+-[UIKBRenderFactoryiPhone stringKeyOffsetGurmukhi];
+-[UIKBRenderFactoryiPhone stringKeyOffsetKannada];
+-[UIKBRenderFactoryiPhone stringKeyOffsetOriya];
+-[UIKBRenderFactoryiPhone stringKeyOffsetTamil];
+-[UIKBRenderFactoryiPhone stringKeyOffsetTelugu];
+-[UIKBRenderFactoryiPhone symbolImageControlKeyOffsetForKey:];
+-[UIKBRenderFactoryiPhone thinKeycapsFontFallbackName];
+-[UIKBRenderFactoryiPhone thinTextFontFallbackName];
+-[UIKBRenderFactoryiPhone thinTextFontNameForKey:];
+-[UIKBRenderFactoryiPhone undoKeyOffsetForKey:];
+-[UIKBRenderFactoryiPhone variantAnnotationTextFontSize];
+-[UIKBRenderFactoryiPhone variantWideShadowWeight];
+-[UIKBRenderFactoryiPhone zhuyinFirstToneKeyFontSize];
+-[UIKBRenderFactoryiPhone zhuyinFirstToneKeyOffset];
+```

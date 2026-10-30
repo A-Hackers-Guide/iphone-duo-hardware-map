@@ -1,0 +1,222 @@
+# `PKSelectionView`
+
+- Image: [`/System/Library/Frameworks/PencilKit.framework/PencilKit`](../userland/System__Library__Frameworks__PencilKit.framework__PencilKit.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `PKAdornmentView`
+- Protocols: `UITextInput`, `UIDragInteractionDelegate_Private`, `UIGestureRecognizerDelegate`, `UIContextMenuInteractionDelegate`
+- 21 instance variables, 55 properties, 125 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"UIDragPreview" _previewProvider;
+{CGRect="origin"{CGPoint="x"d"y"d}"size"{CGSize="width"d"height"d}} _originalStrokeFrame;
+{CGPoint="x"d"y"d} _initialDragPosition;
+{CGPoint="x"d"y"d} _currentScrollOffset;
+{CGAffineTransform="a"d"b"d"c"d"d"d"tx"d"ty"d} _resizeTransform;
+B _hasTranscription;
+B _displayingContextMenu;
+@? _finishDragToAttachmentBlock;
+B _isDragging;
+B _wantsDragPlatter;
+@"UILongPressGestureRecognizer" _dragGR;
+@"UITapGestureRecognizer" _editMenuGR;
+@"UITapGestureRecognizer" _doubleTapGR;
+@"UIDragInteraction" _dragInteraction;
+q _selectionType;
+@"NSString" _writingToolsSelectionText;
+{CGPoint="x"d"y"d} _offsetInTouchView;
+{CGRect="origin"{CGPoint="x"d"y"d}"size"{CGSize="width"d"height"d}} _writingToolsSelectionRect;
+{CGAffineTransform="a"d"b"d"c"d"d"d"tx"d"ty"d} _selectionDrawingTransform;
+{CGAffineTransform="a"d"b"d"c"d"d"d"tx"d"ty"d} _selectionDrawingStrokeTransform;
+{CGAffineTransform="a"d"b"d"c"d"d"d"tx"d"ty"d} _userTransform;
+```
+
+## Properties
+
+```
+@property (T@"UITextRange",C) selectedTextRange;
+@property (T@"UITextRange",R,N) markedTextRange;
+@property (T@"NSDictionary",C,N) markedTextStyle;
+@property (T@"UITextPosition",R,N) beginningOfDocument;
+@property (T@"UITextPosition",R,N) endOfDocument;
+@property (T@"<UITextInputDelegate>",W,N) inputDelegate;
+@property (T@"<UITextInputTokenizer>",R,N) tokenizer;
+@property (T@"UIView",?,R,N) textInputView;
+@property (Tq,?,N) selectionAffinity;
+@property (T@,?,R,N) insertDictationResultPlaceholder;
+@property (TB,?,N) supportsAdaptiveImageGlyph;
+@property (TB,?,R,N,GisEditable) editable;
+@property (T{CGRect={CGPoint=dd}{CGSize=dd}},?,R,N) unobscuredContentRect;
+@property (TB,R,N) hasText;
+@property (Tq,?,N) autocapitalizationType;
+@property (Tq,?,N) autocorrectionType;
+@property (Tq,?,N) spellCheckingType;
+@property (Tq,?,N) smartQuotesType;
+@property (Tq,?,N) smartDashesType;
+@property (Tq,?,N) smartInsertDeleteType;
+@property (Tq,?,N) inlinePredictionType;
+@property (Tq,?,N) mathExpressionCompletionType;
+@property (Tq,?,N) grammarCheckingType;
+@property (Tq,?,N) keyboardType;
+@property (Tq,?,N) keyboardAppearance;
+@property (Tq,?,N) returnKeyType;
+@property (TB,?,N) enablesReturnKeyAutomatically;
+@property (TB,?,N,GisSecureTextEntry) secureTextEntry;
+@property (T@"NSString",?,C,N) textContentType;
+@property (T@"UITextInputPasswordRules",?,C,N) passwordRules;
+@property (Tq,?) writingToolsBehavior;
+@property (TQ,?) allowedWritingToolsResultOptions;
+@property (T@"UIConversationContext",?,&,N) conversationContext;
+@property (TB,?,N) allowsNumberPadPopover;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+@property (T{CGAffineTransform=dddddd},N,V_userTransform) userTransform;
+@property (TB,R,N,V_isDragging) isDragging;
+@property (T{CGPoint=dd},R,N,V_offsetInTouchView) offsetInTouchView;
+@property (T{CGAffineTransform=dddddd},N,V_selectionDrawingTransform) selectionDrawingTransform;
+@property (T{CGAffineTransform=dddddd},N,V_selectionDrawingStrokeTransform) selectionDrawingStrokeTransform;
+@property (TB,N,V_wantsDragPlatter) wantsDragPlatter;
+@property (T@"UILongPressGestureRecognizer",R,N,V_dragGR) dragGR;
+@property (T@"UITapGestureRecognizer",R,N,V_editMenuGR) editMenuGR;
+@property (T@"UITapGestureRecognizer",R,N,V_doubleTapGR) doubleTapGR;
+@property (T@"UIDragInteraction",R,N,V_dragInteraction) dragInteraction;
+@property (Tq,N,V_selectionType) selectionType;
+@property (T@"NSString",C,N,V_writingToolsSelectionText) writingToolsSelectionText;
+@property (T{CGRect={CGPoint=dd}{CGSize=dd}},N,V_writingToolsSelectionRect) writingToolsSelectionRect;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[PKSelectionView markedTextStyle];
+-[PKSelectionView dragInteraction:previewForLiftingItem:session:];
+-[PKSelectionView firstRectForRange:];
+-[PKSelectionView offsetFromPosition:toPosition:];
+-[PKSelectionView endOfDocument];
+-[PKSelectionView tokenizer];
+-[PKSelectionView textInRange:];
+-[PKSelectionView comparePosition:toPosition:];
+-[PKSelectionView selectionRectsForRange:];
+-[PKSelectionView baseWritingDirectionForPosition:inDirection:];
+-[PKSelectionView textRangeFromPosition:toPosition:];
+-[PKSelectionView caretRectForPosition:];
+-[PKSelectionView dragInteraction:itemsForBeginningSession:];
+-[PKSelectionView cut:];
+-[PKSelectionView positionFromPosition:offset:];
+-[PKSelectionView hasText];
+-[PKSelectionView paste:];
+-[PKSelectionView setBaseWritingDirection:forRange:];
+-[PKSelectionView beginningOfDocument];
+-[PKSelectionView selectedTextRange];
+-[PKSelectionView delete:];
+-[PKSelectionView setSelectedTextRange:];
+-[PKSelectionView dragInteraction:sessionWillBegin:];
+-[PKSelectionView replaceRange:withText:];
+-[PKSelectionView dragInteraction:prefersFullSizePreviewsForSession:];
+-[PKSelectionView contextMenuInteraction:willEndForConfiguration:animator:];
+-[PKSelectionView markedTextRange];
+-[PKSelectionView setInputDelegate:];
+-[PKSelectionView inputDelegate];
+-[PKSelectionView insertText:];
+-[PKSelectionView dragInteraction:session:willEndWithOperation:];
+-[PKSelectionView unmarkText];
+-[PKSelectionView contextMenuInteraction:configurationForMenuAtLocation:];
+-[PKSelectionView didDoubleTap];
+-[PKSelectionView dragInteraction];
+-[PKSelectionView _dragInteraction:dataOwnerForSession:];
+-[PKSelectionView dealloc];
+-[PKSelectionView contextMenuInteraction:previewForHighlightingMenuWithConfiguration:];
+-[PKSelectionView hitTest:withEvent:];
+-[PKSelectionView keyCommands];
+-[PKSelectionView contextMenuInteraction:willDisplayMenuForConfiguration:animator:];
+-[PKSelectionView isDragging];
+-[PKSelectionView setSelectionType:];
+-[PKSelectionView willMoveToWindow:];
+-[PKSelectionView copy:];
+-[PKSelectionView setMarkedTextStyle:];
+-[PKSelectionView targetForAction:withSender:];
+-[PKSelectionView setFrame:];
+-[PKSelectionView closestPositionToPoint:withinRange:];
+-[PKSelectionView contextMenuInteraction:willPerformPreviewActionForMenuWithConfiguration:animator:];
+-[PKSelectionView characterRangeByExtendingPosition:inDirection:];
+-[PKSelectionView positionFromPosition:inDirection:offset:];
+-[PKSelectionView positionWithinRange:farthestInDirection:];
+-[PKSelectionView closestPositionToPoint:];
+-[PKSelectionView setMarkedText:selectedRange:];
+-[PKSelectionView canBecomeFirstResponder];
+-[PKSelectionView characterRangeAtPoint:];
+-[PKSelectionView deleteBackward];
+-[PKSelectionView editingInteractionConfiguration];
+-[PKSelectionView _restoreFirstResponder];
+-[PKSelectionView _startWritingToolsWithDictionary:];
+-[PKSelectionView _startWritingToolsWithTool:prompt:sender:];
+-[PKSelectionView _startWritingToolsWithTool:prompt:sender:externalProviderID:];
+-[PKSelectionView _textInputForWritingTools];
+-[PKSelectionView duplicate:];
+-[PKSelectionView translate:];
+-[PKSelectionView selectionType];
+-[PKSelectionView _accessibilityUserTestingChildren];
+-[PKSelectionView _resetDragState];
+-[PKSelectionView refine:];
+-[PKSelectionView selectionDrawingStrokeTransform];
+-[PKSelectionView _cleanupDragState];
+-[PKSelectionView _commitDragToAttachment];
+-[PKSelectionView _currentAttachment];
+-[PKSelectionView _didAddNewAttachment];
+-[PKSelectionView _dragWillBegin];
+-[PKSelectionView _exactlyOneExternalElementSelected];
+-[PKSelectionView _findTranscriptionWithCompletion:];
+-[PKSelectionView _handleDoubleTapInputAtPoint:];
+-[PKSelectionView _selectionViewGestures];
+-[PKSelectionView animateViewToOriginalPosition];
+-[PKSelectionView canConvertToShapeWithAction:withSender:handled:];
+-[PKSelectionView containsPoint:forInputType:];
+-[PKSelectionView convertToShapes:];
+-[PKSelectionView copyTranscription:];
+-[PKSelectionView createSticker:];
+-[PKSelectionView didBeginDraggingSelection];
+-[PKSelectionView didEndGestureWithTranslation:];
+-[PKSelectionView doubleTapGR];
+-[PKSelectionView dragEnded:];
+-[PKSelectionView dragGR];
+-[PKSelectionView dragSelection:];
+-[PKSelectionView editMenuGR];
+-[PKSelectionView editMenuTargetRect];
+-[PKSelectionView generateStrokeImageForPasteAndDND];
+-[PKSelectionView hideStrokeImageView];
+-[PKSelectionView initWithFrame:strokeSelection:selectionController:selectionType:];
+-[PKSelectionView insertSpace:];
+-[PKSelectionView lassoContainsPoint:];
+-[PKSelectionView makeViewAliveAtLocation:];
+-[PKSelectionView offsetInTouchView];
+-[PKSelectionView performDidEndGestureWithTranslation:];
+-[PKSelectionView resetWritingTools];
+-[PKSelectionView selectionDrawingTransform];
+-[PKSelectionView setSelectionDrawingStrokeTransform:];
+-[PKSelectionView setSelectionDrawingTransform:];
+-[PKSelectionView setUserTransform:];
+-[PKSelectionView setWantsDragPlatter:];
+-[PKSelectionView setWritingToolsSelectionRect:];
+-[PKSelectionView setWritingToolsSelectionText:];
+-[PKSelectionView shapeMenuActions];
+-[PKSelectionView shapeSupportCache];
+-[PKSelectionView startWritingTools:transcription:];
+-[PKSelectionView straighten:];
+-[PKSelectionView supportsSnapToShape];
+-[PKSelectionView toggleEditMenu];
+-[PKSelectionView transformBegan];
+-[PKSelectionView transformCancelled];
+-[PKSelectionView transformChanged:];
+-[PKSelectionView transformEnded];
+-[PKSelectionView updateLocationForDrop:];
+-[PKSelectionView userTransform];
+-[PKSelectionView wantsDragPlatter];
+-[PKSelectionView writingToolsSelectionRect];
+-[PKSelectionView writingToolsSelectionText];
+```

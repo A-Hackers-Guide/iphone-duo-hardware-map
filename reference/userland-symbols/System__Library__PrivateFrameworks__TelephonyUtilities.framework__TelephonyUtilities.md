@@ -1,0 +1,2268 @@
+# Symbols: `/System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__PrivateFrameworks__TelephonyUtilities.framework__TelephonyUtilities.md). **[DSC]**
+
+1,251 public symbols, 9,939 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1e0d71cf8  __DATA_CONST,__const  _DefaultAppRelayTelephonySettingChangedNotification
+0x1ee1df3f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUActiveQROnlyParticipant
+0x1ef6d2d60  __AUTH,__objc_data  _OBJC_CLASS_$_TUAdhocResult
+0x1ee1e00c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUAnswerRequest
+0x1ee1df198  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUAudioController
+0x1ee1df170  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUAudioDeviceController
+0x1ef6d3788  __AUTH,__objc_data  _OBJC_CLASS_$_TUAudioFrequencyController
+0x1ee1def40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUAudioRoute
+0x1ee1dea90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUAudioRouteCollectionKey
+0x1ee1df148  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUAudioSystemController
+0x1ef6d2d10  __AUTH,__objc_data  _OBJC_CLASS_$_TUAvailableDevicesHelper
+0x1ef6d22c0  __AUTH,__objc_data  _OBJC_CLASS_$_TUBusinessCallerItem
+0x1ef6d1e88  __AUTH,__objc_data  _OBJC_CLASS_$_TUBusinessServicesMetadataDataProvider
+0x1ee1e14c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCTCapabilitiesState
+0x1ee1e11c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCTCapabilityInfo
+0x1ee1e1088  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCall
+0x1ef6d1e60  __AUTH,__objc_data  _OBJC_CLASS_$_TUCallAcceptRecordingRequest
+0x1ee1e13d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallCapabilities
+0x1ee1e1498  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallCapabilitiesState
+0x1ee1e1470  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallCapabilitiesXPCClient
+0x1ee1e1038  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallCenter
+0x1ee1e0cf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallContainer
+0x1ee1de848  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallContextCardsHolder
+0x1ef6d1e38  __AUTH,__objc_data  _OBJC_CLASS_$_TUCallDTMFUpdate
+0x1ef6d1e10  __AUTH,__objc_data  _OBJC_CLASS_$_TUCallDenyRecordingRequest
+0x1ee1df3c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallDirectoryMetadataCacheDataProvider
+0x1ee1e0778  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallDisplayContext
+0x1ee1dea68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallFilterController
+0x1ef6d3260  __AUTH,__objc_data  _OBJC_CLASS_$_TUCallGroup
+0x1ee1def18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallHistoryController
+0x1ee1deef0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallHistoryControllerXPCClient
+0x1ef6d3738  __AUTH,__objc_data  _OBJC_CLASS_$_TUCallHistoryManager
+0x1ee1df3a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallHistoryManagerXPCClient
+0x1ef6d2ce8  __AUTH,__objc_data  _OBJC_CLASS_$_TUCallHistorySearchModule
+0x1ee1e06b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallModel
+0x1ee1e1060  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallNotificationManager
+0x1ee1e11a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallProvider
+0x1ee1e1150  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallProviderManager
+0x1ee1e0818  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallProviderManagerXPCClient
+0x1ee1e0cc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallRecordingRequest
+0x1ee1e0ac0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallRecordingRunningRequest
+0x1ee1e0480  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallRecordingSession
+0x1ee1e0458  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallRecordingSessionBase
+0x1ee1e0e80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallScreenShareAttributes
+0x1ee1e0ef8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallServicesClientCapabilities
+0x1ee1e1010  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallServicesInterface
+0x1ee1deec8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallSoundPlayer
+0x1ef6d3710  __AUTH,__objc_data  _OBJC_CLASS_$_TUCallSoundPlayerDescriptor
+0x1ef6d1de8  __AUTH,__objc_data  _OBJC_CLASS_$_TUCallStartInternalRecordingRequest
+0x1ee1e0ca0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallStartRecordingRequest
+0x1ee1e0c78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallStopRecordingRequest
+0x1ee1e0a98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallTranslationRequest
+0x1ee1e0a70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallTranslationRequestConfiguration
+0x1ee1e0430  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallTranslationSession
+0x1ee1e0a48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallTranslationStartRequest
+0x1ee1e0a20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallTranslationStopRequest
+0x1ee1e0e08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCallUpdate
+0x1ef6d3238  __AUTH,__objc_data  _OBJC_CLASS_$_TUCaption
+0x1ef6d1dc0  __AUTH,__objc_data  _OBJC_CLASS_$_TUCaptionsClient
+0x1ef6d1d98  __AUTH,__objc_data  _OBJC_CLASS_$_TUCaptionsResult
+0x1ee1e12b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCloudCallingDevice
+0x1ef6d3210  __AUTH,__objc_data  _OBJC_CLASS_$_TUCollaborationInitiator
+0x1ee1df788  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUCollaborationManager
+0x1ef6d2cc0  __AUTH,__objc_data  _OBJC_CLASS_$_TUCollaborationNotice
+0x1ee1dfd78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConfiguration
+0x1ef6d3ad0  __AUTH,__objc_data  _OBJC_CLASS_$_TUConfigurationProvider
+0x1ef6d31e8  __AUTH,__objc_data  _OBJC_CLASS_$_TUConnectionWorkflowTracker
+0x1ef6d31c0  __AUTH,__objc_data  _OBJC_CLASS_$_TUContactImageResponse
+0x1ef6d2c98  __AUTH,__objc_data  _OBJC_CLASS_$_TUContactsAutocompleteSearchModule
+0x1ee1df698  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUContactsDataProvider
+0x1ee1df670  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUContactsDataProviderAppleCareHandles
+0x1ee1df120  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUContactsDataProviderFetchRequest
+0x1ee1df0f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUContactsDataProviderResult
+0x1ef6d1d70  __AUTH,__objc_data  _OBJC_CLASS_$_TUContinuityCall
+0x1ef6d1d48  __AUTH,__objc_data  _OBJC_CLASS_$_TUContinuityCallInfo
+0x1ef6d1d20  __AUTH,__objc_data  _OBJC_CLASS_$_TUContinuityCallRingtoneConfiguration
+0x1ef6d1cf8  __AUTH,__objc_data  _OBJC_CLASS_$_TUContinuityConversation
+0x1ef6d1cd0  __AUTH,__objc_data  _OBJC_CLASS_$_TUContinuityConversationLink
+0x1ef6d1ca8  __AUTH,__objc_data  _OBJC_CLASS_$_TUContinuityFavorite
+0x1ef6d2298  __AUTH,__objc_data  _OBJC_CLASS_$_TUContinuityHandleAnonym
+0x1ef6d1c80  __AUTH,__objc_data  _OBJC_CLASS_$_TUContinuityHandleCapabilities
+0x1ef6d2270  __AUTH,__objc_data  _OBJC_CLASS_$_TUContinuitySessionContact
+0x1ef6d2c70  __AUTH,__objc_data  _OBJC_CLASS_$_TUContinuitySessionInfo
+0x1ee1e0548  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversation
+0x1ee1e0318  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationActivity
+0x1ee1dff58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationActivityAdvertisement
+0x1ef6d36e8  __AUTH,__objc_data  _OBJC_CLASS_$_TUConversationActivityContext
+0x1ef6d36c0  __AUTH,__objc_data  _OBJC_CLASS_$_TUConversationActivityCreateSessionRequest
+0x1ee1dff30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationActivityEvent
+0x1ef6d3698  __AUTH,__objc_data  _OBJC_CLASS_$_TUConversationActivityMetadata
+0x1ef6d3670  __AUTH,__objc_data  _OBJC_CLASS_$_TUConversationActivitySceneAssociationBehavior
+0x1ee1e0200  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationActivitySession
+0x1ee1df9e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationActivitySessionContainer
+0x1ee1dfbe8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationHandoffContext
+0x1ee1dfbc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationHandoffEligibility
+0x1ef6d1c58  __AUTH,__objc_data  _OBJC_CLASS_$_TUConversationInvitationContext
+0x1ee1e0098  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationInvitationPreference
+0x1ee1e02f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationLink
+0x1ef6d3aa8  __AUTH,__objc_data  _OBJC_CLASS_$_TUConversationLinkDescriptor
+0x1ef6d3a80  __AUTH,__objc_data  _OBJC_CLASS_$_TUConversationLinkDescriptorXPCClientDataSource
+0x1ef6d3a58  __AUTH,__objc_data  _OBJC_CLASS_$_TUConversationLinkOriginator
+0x1ee1e0b88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationManager
+0x1ee1e0b60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationManagerXPCClient
+0x1ef6d3648  __AUTH,__objc_data  _OBJC_CLASS_$_TUConversationMediaController
+0x1ee1e02a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationMember
+0x1ee1dfd50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationMemberAssociation
+0x1ee1dff08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationNotice
+0x1ee1e0250  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationParticipant
+0x1ee1dfd28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationParticipantAssociation
+0x1ee1e0138  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationParticipantCapabilities
+0x1ee1df9b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationParticipantCluster
+0x1ef6d1340  __AUTH,__objc_data  _OBJC_CLASS_$_TUConversationParticipantLinkAssociation
+0x1ee1e01d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationParticipantPresentationContext
+0x1ee1dfb98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationPresentationContext
+0x1ee1e0070  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationProvider
+0x1ee1e0048  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationProviderConfiguration
+0x1ee1deea0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationProviderManager
+0x1ee1dee78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationProviderManagerXPCClient
+0x1ef6d2c48  __AUTH,__objc_data  _OBJC_CLASS_$_TUConversationReactionsController
+0x1ee1dfee0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationReport
+0x1ee1dea40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationUnreliableMessengerConfig
+0x1ee1e0020  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationVirtualParticipant
+0x1ee1dea18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUConversationVirtualParticipantConfig
+0x1ee1dee50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUDTMFSoundPlayer
+0x1ef6d2248  __AUTH,__objc_data  _OBJC_CLASS_$_TUDegradationReport
+0x1ee1e10d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUDelegateController
+0x1ee1e1290  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUDialRequest
+0x1ef6d35f8  __AUTH,__objc_data  _OBJC_CLASS_$_TUDiscoverabilitySignal
+0x1ef6d35d0  __AUTH,__objc_data  _OBJC_CLASS_$_TUDynamicCallDisplayContext
+0x1ef6d35a8  __AUTH,__objc_data  _OBJC_CLASS_$_TUEligibilityChecker
+0x1ee1e0c50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUEmergencyMediaItem
+0x1ee1dfb70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUExternalParticipant
+0x1ee1e1538  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUFeatureFlags
+0x1ef6d2220  __AUTH,__objc_data  _OBJC_CLASS_$_TUGameOverlayController
+0x1ee1df378  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUGeoLocationMetadataCacheDataProvider
+0x1ef6d2c20  __AUTH,__objc_data  _OBJC_CLASS_$_TUGroupTitle
+0x1ee1e1308  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUHandle
+0x1ef6d3198  __AUTH,__objc_data  _OBJC_CLASS_$_TUHardwareControlsBroadcaster
+0x1ee1e0750  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUHoldAssistWaitTimePrediction
+0x1ef6d3170  __AUTH,__objc_data  _OBJC_CLASS_$_TUICFInterface
+0x1ef6d3148  __AUTH,__objc_data  _OBJC_CLASS_$_TUICFQueryResult
+0x1ee1de9f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUIDSLookupManager
+0x1ef6d2bf8  __AUTH,__objc_data  _OBJC_CLASS_$_TUIntentController
+0x1ef6d1c30  __AUTH,__objc_data  _OBJC_CLASS_$_TUJoinContinuityConversationRequest
+0x1ee1e0110  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUJoinConversationRequest
+0x1ee1e0de0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TULabeledHandle
+0x1ef6d2bd0  __AUTH,__objc_data  _OBJC_CLASS_$_TULinkShareItem
+0x1ef6d3a30  __AUTH,__objc_data  _OBJC_CLASS_$_TULiveLookupManagerProxy
+0x1ef6d1c08  __AUTH,__objc_data  _OBJC_CLASS_$_TULocalNicknameInfo
+0x1ee1dee00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TULocked
+0x1ef6d2ba8  __AUTH,__objc_data  _OBJC_CLASS_$_TULogging
+0x1ee1de9c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUMapsMetadataCacheDataProvider
+0x1ee1e0520  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUMediaTokens
+0x1ee1df350  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUMetadataCache
+0x1ee1df648  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUMetadataCacheDataProvider
+0x1ee1df0d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUMetadataClientController
+0x1ee1df620  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUMetadataDestinationID
+0x1ef6d3120  __AUTH,__objc_data  _OBJC_CLASS_$_TUMetadataDict
+0x1ef6d3a08  __AUTH,__objc_data  _OBJC_CLASS_$_TUMetadataItem
+0x1ee1de9a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUMomentDescriptor
+0x1ee1df0a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUMomentsCapabilities
+0x1ee1df328  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUMomentsController
+0x1ee1df080  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUMomentsControllerXPCClient
+0x1ef6d1be0  __AUTH,__objc_data  _OBJC_CLASS_$_TUMomentsMediaRecordRequest
+0x1ef6d2b80  __AUTH,__objc_data  _OBJC_CLASS_$_TUMomentsMessageDescriptor
+0x1ef6d2b58  __AUTH,__objc_data  _OBJC_CLASS_$_TUMomentsMessageSendRequest
+0x1ef6d30f8  __AUTH,__objc_data  _OBJC_CLASS_$_TUMomentsProvider
+0x1ef6d30d0  __AUTH,__objc_data  _OBJC_CLASS_$_TUMomentsRawVideoMessageDescriptor
+0x1ef6d2b30  __AUTH,__objc_data  _OBJC_CLASS_$_TUMutableCallContainer
+0x1ef6d3580  __AUTH,__objc_data  _OBJC_CLASS_$_TUMutableCallDisplayContext
+0x1ef6d3558  __AUTH,__objc_data  _OBJC_CLASS_$_TUMutableConversation
+0x1ef6d2b08  __AUTH,__objc_data  _OBJC_CLASS_$_TUMutableConversationActivityCreateSessionRequest
+0x1ef6d2ae0  __AUTH,__objc_data  _OBJC_CLASS_$_TUMutableConversationActivitySession
+0x1ef6d39e0  __AUTH,__objc_data  _OBJC_CLASS_$_TUMutableConversationLinkDescriptor
+0x1ef6d2ab8  __AUTH,__objc_data  _OBJC_CLASS_$_TUMutableConversationParticipant
+0x1ef6d30a8  __AUTH,__objc_data  _OBJC_CLASS_$_TUMutableConversationParticipantCapabilities
+0x1ef6d2a90  __AUTH,__objc_data  _OBJC_CLASS_$_TUMutableParticipant
+0x1ee1dedd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUMutableRoute
+0x1ee1df300  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUNearbyConversationInfo
+0x1ee1dfb48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUNearbyDeviceHandle
+0x1ef6d2a68  __AUTH,__objc_data  _OBJC_CLASS_$_TUNearbyDeviceHandleCapabilities
+0x1ee1df760  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUNearbySuggestion
+0x1ef6d1bb8  __AUTH,__objc_data  _OBJC_CLASS_$_TUNearbySuggestionAdvertisement
+0x1ee1df2d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUNearbySuggestionResult
+0x1ee1dfb20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUNeighborhoodActivityConduit
+0x1ee1dfaf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUNeighborhoodActivityConduitXPCClient
+0x1ee1df5f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUNeighborhoodHandoffContext
+0x1ef6d2a40  __AUTH,__objc_data  _OBJC_CLASS_$_TUNicknamesMetadataCacheDataProvider
+0x1ee1dedb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUNotifyObserver
+0x1ee1df5d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUOptionalObject
+0x1ef6d1b90  __AUTH,__objc_data  _OBJC_CLASS_$_TUPSSimStatusCacheSoftLinking
+0x1ee1e05e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUParticipant
+0x1ee1df738  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUPhoneNumber
+0x1ef6d3b48  __AUTH,__objc_data  _OBJC_CLASS_$_TUPlatformCapabilities
+0x1ee1e0408  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUPodcastRecordingSession
+0x1ee1df878  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUPrivacyManager
+0x1ef6d3080  __AUTH,__objc_data  _OBJC_CLASS_$_TUPrivacyRule
+0x1ef6d2a18  __AUTH,__objc_data  _OBJC_CLASS_$_TUProxyAutocompleteResult
+0x1ee1e0fe8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUProxyCall
+0x1ef6d29f0  __AUTH,__objc_data  _OBJC_CLASS_$_TUProxyRecentCall
+0x1ef6d3058  __AUTH,__objc_data  _OBJC_CLASS_$_TURTCCallReporter
+0x1ef6d29c8  __AUTH,__objc_data  _OBJC_CLASS_$_TURecentsResults
+0x1ee1e03e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUReceptionistSession
+0x1ee1ded88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TURepeatingActor
+0x1ef6d29a0  __AUTH,__objc_data  _OBJC_CLASS_$_TUReplyWithMessageStore
+0x1ef6d2978  __AUTH,__objc_data  _OBJC_CLASS_$_TUResultGroup
+0x1ee1e0fc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TURoute
+0x1ee1df850  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TURouteController
+0x1ef6d39b8  __AUTH,__objc_data  _OBJC_CLASS_$_TUSFSpeechSoftLinking
+0x1ef6d1b68  __AUTH,__objc_data  _OBJC_CLASS_$_TUSIMFocusState
+0x1ee1e0db8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUSandboxExtendedURL
+0x1ee1dfeb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUScreenShareAttributes
+0x1ee1dfad0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUScreenSharingRequest
+0x1ef6d21f8  __AUTH,__objc_data  _OBJC_CLASS_$_TUScreenSharingRequestMetadata
+0x1ef6d21d0  __AUTH,__objc_data  _OBJC_CLASS_$_TUScreeningRequest
+0x1ef6d2950  __AUTH,__objc_data  _OBJC_CLASS_$_TUSearchController
+0x1ef6d2928  __AUTH,__objc_data  _OBJC_CLASS_$_TUSearchModuleManager
+0x1ef6d2900  __AUTH,__objc_data  _OBJC_CLASS_$_TUSearchResults
+0x1ee1e15b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUSenderIdentity
+0x1ee1e1218  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUSenderIdentityCapabilities
+0x1ee1e1510  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUSenderIdentityCapabilitiesState
+0x1ee1df968  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUSenderIdentityClient
+0x1ef6d1b40  __AUTH,__objc_data  _OBJC_CLASS_$_TUSimulatedConversationController
+0x1ef6d1b18  __AUTH,__objc_data  _OBJC_CLASS_$_TUSimulatedConversationControllerXPCClient
+0x1ef6d1af0  __AUTH,__objc_data  _OBJC_CLASS_$_TUSimulatedIDSBatchIDQueryController
+0x1ef6d1ac8  __AUTH,__objc_data  _OBJC_CLASS_$_TUSimulatedIDSIDQueryController
+0x1ef6d1aa0  __AUTH,__objc_data  _OBJC_CLASS_$_TUSimulatedParticipantUpdate
+0x1ee1e07f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUSmartHoldingEvent
+0x1ee1e09f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUSmartHoldingRequest
+0x1ee1e09d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUSmartHoldingSession
+0x1ee1e09a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUSmartHoldingSessionRequest
+0x1ee1e0980  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUSmartHoldingSessionUpdateRequest
+0x1ef6d1300  __AUTH,__objc_data  _OBJC_CLASS_$_TUSnapNameAndPhotoInfo
+0x1ee1df5a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUSplitSessionInfo
+0x1ef6d28d8  __AUTH,__objc_data  _OBJC_CLASS_$_TUStringShareItem
+0x1ef6d3030  __AUTH,__objc_data  _OBJC_CLASS_$_TUSubtitleProvider
+0x1ee1df2b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUSuggestionsMetadataCacheDataProvider
+0x1ef6d1a78  __AUTH,__objc_data  _OBJC_CLASS_$_TUSuggestionsMetadataContactNameWithOrigin
+0x1ee1e1448  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUThumperCTCapabilitiesState
+0x1ef6d1a50  __AUTH,__objc_data  _OBJC_CLASS_$_TUUIContext
+0x1ee1e0700  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUUIXPCClientConnection
+0x1ef6d28b0  __AUTH,__objc_data  _OBJC_CLASS_$_TUUIXPCHost
+0x1ee1dfaa8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUUserConfiguration
+0x1ef6d3508  __AUTH,__objc_data  _OBJC_CLASS_$_TUUserNotificationProviderXPCClient
+0x1ef6d12d8  __AUTH,__objc_data  _OBJC_CLASS_$_TUVRSProviderInstalledApplication
+0x1ef6d12b0  __AUTH,__objc_data  _OBJC_CLASS_$_TUVRSProviderManager
+0x1ee1e0688  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUVideoCallAttributes
+0x1ef6d3990  __AUTH,__objc_data  _OBJC_CLASS_$_TUVideoDeviceController
+0x1ee1dfd00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUVoucher
+0x1ee1ded38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUVouchingEnablementImpl
+0x1ef6d1478  __AUTH,__objc_data  _OBJC_CLASS_$__TUVRSProviderDiscovery
+0x1ef6d14e0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC18TelephonyUtilities14GMAvailability
+0x1ee1df580  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUActiveQROnlyParticipant
+0x1ef6d2860  __AUTH,__objc_data  _OBJC_METACLASS_$_TUAdhocResult
+0x1ee1dfff8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUAnswerRequest
+0x1ee1df058  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUAudioController
+0x1ee1df030  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUAudioDeviceController
+0x1ef6d34e0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUAudioFrequencyController
+0x1ee1ded10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUAudioRoute
+0x1ee1de978  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUAudioRouteCollectionKey
+0x1ee1df008  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUAudioSystemController
+0x1ef6d2810  __AUTH,__objc_data  _OBJC_METACLASS_$_TUAvailableDevicesHelper
+0x1ef6d2108  __AUTH,__objc_data  _OBJC_METACLASS_$_TUBusinessCallerItem
+0x1ef6d19b0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUBusinessServicesMetadataDataProvider
+0x1ee1e13a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCTCapabilitiesState
+0x1ee1e11f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCTCapabilityInfo
+0x1ee1e0f98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCall
+0x1ef6d1988  __AUTH,__objc_data  _OBJC_METACLASS_$_TUCallAcceptRecordingRequest
+0x1ee1e14e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallCapabilities
+0x1ee1e1380  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallCapabilitiesState
+0x1ee1e1358  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallCapabilitiesXPCClient
+0x1ee1e10b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallCenter
+0x1ee1e0d90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallContainer
+0x1ee1e1630  __DATA_DIRTY,__data  _OBJC_METACLASS_$_TUCallContextCardsHolder
+0x1ef6d1960  __AUTH,__objc_data  _OBJC_METACLASS_$_TUCallDTMFUpdate
+0x1ef6d1938  __AUTH,__objc_data  _OBJC_METACLASS_$_TUCallDenyRecordingRequest
+0x1ee1df558  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallDirectoryMetadataCacheDataProvider
+0x1ee1e0728  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallDisplayContext
+0x1ee1de950  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallFilterController
+0x1ef6d3008  __AUTH,__objc_data  _OBJC_METACLASS_$_TUCallGroup
+0x1ee1dece8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallHistoryController
+0x1ee1decc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallHistoryControllerXPCClient
+0x1ef6d3918  __AUTH,__objc_data  _OBJC_METACLASS_$_TUCallHistoryManager
+0x1ee1df288  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallHistoryManagerXPCClient
+0x1ef6d27e8  __AUTH,__objc_data  _OBJC_METACLASS_$_TUCallHistorySearchModule
+0x1ee1e0660  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallModel
+0x1ee1e0f70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallNotificationManager
+0x1ee1e1128  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallProvider
+0x1ee1e1178  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallProviderManager
+0x1ee1e07c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallProviderManagerXPCClient
+0x1ee1e0c28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallRecordingRequest
+0x1ee1e0b38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallRecordingRunningRequest
+0x1ee1e04f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallRecordingSession
+0x1ee1e03b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallRecordingSessionBase
+0x1ee1e0e58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallScreenShareAttributes
+0x1ee1e0f48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallServicesClientCapabilities
+0x1ee1e0ed0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallServicesInterface
+0x1ee1dec98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallSoundPlayer
+0x1ef6d3490  __AUTH,__objc_data  _OBJC_METACLASS_$_TUCallSoundPlayerDescriptor
+0x1ef6d1910  __AUTH,__objc_data  _OBJC_METACLASS_$_TUCallStartInternalRecordingRequest
+0x1ee1e0c00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallStartRecordingRequest
+0x1ee1e0bd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallStopRecordingRequest
+0x1ee1e0b10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallTranslationRequest
+0x1ee1e0958  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallTranslationRequestConfiguration
+0x1ee1e0390  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallTranslationSession
+0x1ee1e0930  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallTranslationStartRequest
+0x1ee1e0908  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallTranslationStopRequest
+0x1ee1e0e30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCallUpdate
+0x1ef6d2fe0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUCaption
+0x1ef6d18e8  __AUTH,__objc_data  _OBJC_METACLASS_$_TUCaptionsClient
+0x1ef6d18c0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUCaptionsResult
+0x1ee1e12e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCloudCallingDevice
+0x1ef6d2fb8  __AUTH,__objc_data  _OBJC_METACLASS_$_TUCollaborationInitiator
+0x1ee1df6e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUCollaborationManager
+0x1ef6d27c0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUCollaborationNotice
+0x1ee1dfa80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConfiguration
+0x1ef6d38f0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUConfigurationProvider
+0x1ef6d2f90  __AUTH,__objc_data  _OBJC_METACLASS_$_TUConnectionWorkflowTracker
+0x1ef6d2f68  __AUTH,__objc_data  _OBJC_METACLASS_$_TUContactImageResponse
+0x1ef6d2798  __AUTH,__objc_data  _OBJC_METACLASS_$_TUContactsAutocompleteSearchModule
+0x1ee1df530  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUContactsDataProvider
+0x1ee1df508  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUContactsDataProviderAppleCareHandles
+0x1ee1dec70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUContactsDataProviderFetchRequest
+0x1ee1dec48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUContactsDataProviderResult
+0x1ef6d1898  __AUTH,__objc_data  _OBJC_METACLASS_$_TUContinuityCall
+0x1ef6d1870  __AUTH,__objc_data  _OBJC_METACLASS_$_TUContinuityCallInfo
+0x1ef6d1848  __AUTH,__objc_data  _OBJC_METACLASS_$_TUContinuityCallRingtoneConfiguration
+0x1ef6d1820  __AUTH,__objc_data  _OBJC_METACLASS_$_TUContinuityConversation
+0x1ef6d17f8  __AUTH,__objc_data  _OBJC_METACLASS_$_TUContinuityConversationLink
+0x1ef6d17d0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUContinuityFavorite
+0x1ef6d20e0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUContinuityHandleAnonym
+0x1ef6d17a8  __AUTH,__objc_data  _OBJC_METACLASS_$_TUContinuityHandleCapabilities
+0x1ef6d20b8  __AUTH,__objc_data  _OBJC_METACLASS_$_TUContinuitySessionContact
+0x1ef6d2770  __AUTH,__objc_data  _OBJC_METACLASS_$_TUContinuitySessionInfo
+0x1ee1e04d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversation
+0x1ee1e0368  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationActivity
+0x1ee1dfe90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationActivityAdvertisement
+0x1ef6d3468  __AUTH,__objc_data  _OBJC_METACLASS_$_TUConversationActivityContext
+0x1ef6d3440  __AUTH,__objc_data  _OBJC_METACLASS_$_TUConversationActivityCreateSessionRequest
+0x1ee1dfe68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationActivityEvent
+0x1ef6d3418  __AUTH,__objc_data  _OBJC_METACLASS_$_TUConversationActivityMetadata
+0x1ef6d33f0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUConversationActivitySceneAssociationBehavior
+0x1ee1e01b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationActivitySession
+0x1ee1df940  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationActivitySessionContainer
+0x1ee1dfcd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationHandoffContext
+0x1ee1dfa58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationHandoffEligibility
+0x1ef6d1780  __AUTH,__objc_data  _OBJC_METACLASS_$_TUConversationInvitationContext
+0x1ee1dfe40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationInvitationPreference
+0x1ee1e02c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationLink
+0x1ef6d38c8  __AUTH,__objc_data  _OBJC_METACLASS_$_TUConversationLinkDescriptor
+0x1ef6d38a0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUConversationLinkDescriptorXPCClientDataSource
+0x1ef6d3878  __AUTH,__objc_data  _OBJC_METACLASS_$_TUConversationLinkOriginator
+0x1ee1e0bb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationManager
+0x1ee1e0ae8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationManagerXPCClient
+0x1ef6d33c8  __AUTH,__objc_data  _OBJC_METACLASS_$_TUConversationMediaController
+0x1ee1e0278  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationMember
+0x1ee1dfe18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationMemberAssociation
+0x1ee1dfdf0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationNotice
+0x1ee1e0228  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationParticipant
+0x1ee1dfcb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationParticipantAssociation
+0x1ee1e0160  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationParticipantCapabilities
+0x1ee1df918  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationParticipantCluster
+0x1ef6d48b8  __AUTH,__data  _OBJC_METACLASS_$_TUConversationParticipantLinkAssociation
+0x1ee1e0188  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationParticipantPresentationContext
+0x1ee1df8f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationPresentationContext
+0x1ee1dffd0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationProvider
+0x1ee1dffa8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationProviderConfiguration
+0x1ee1dec20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationProviderManager
+0x1ee1debf8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationProviderManagerXPCClient
+0x1ef6d2748  __AUTH,__objc_data  _OBJC_METACLASS_$_TUConversationReactionsController
+0x1ee1dfdc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationReport
+0x1ee1de928  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationUnreliableMessengerConfig
+0x1ee1dff80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationVirtualParticipant
+0x1ee1de900  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUConversationVirtualParticipantConfig
+0x1ee1debd0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUDTMFSoundPlayer
+0x1ef6d2090  __AUTH,__objc_data  _OBJC_METACLASS_$_TUDegradationReport
+0x1ee1e1100  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUDelegateController
+0x1ee1e1268  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUDialRequest
+0x1ef6d3378  __AUTH,__objc_data  _OBJC_METACLASS_$_TUDiscoverabilitySignal
+0x1ef6d3350  __AUTH,__objc_data  _OBJC_METACLASS_$_TUDynamicCallDisplayContext
+0x1ef6d3328  __AUTH,__objc_data  _OBJC_METACLASS_$_TUEligibilityChecker
+0x1ee1e0d68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUEmergencyMediaItem
+0x1ee1e1608  __DATA_DIRTY,__data  _OBJC_METACLASS_$_TUExternalParticipant
+0x1ee1e1560  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUFeatureFlags
+0x1ef6d2068  __AUTH,__objc_data  _OBJC_METACLASS_$_TUGameOverlayController
+0x1ee1df4e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUGeoLocationMetadataCacheDataProvider
+0x1ef6d2720  __AUTH,__objc_data  _OBJC_METACLASS_$_TUGroupTitle
+0x1ee1e1420  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUHandle
+0x1ef6d2f40  __AUTH,__objc_data  _OBJC_METACLASS_$_TUHardwareControlsBroadcaster
+0x1ee1e07a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUHoldAssistWaitTimePrediction
+0x1ef6d2f18  __AUTH,__objc_data  _OBJC_METACLASS_$_TUICFInterface
+0x1ef6d2ef0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUICFQueryResult
+0x1ee1deb80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUIDSLookupManager
+0x1ef6d26f8  __AUTH,__objc_data  _OBJC_METACLASS_$_TUIntentController
+0x1ef6d1758  __AUTH,__objc_data  _OBJC_METACLASS_$_TUJoinContinuityConversationRequest
+0x1ee1e00e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUJoinConversationRequest
+0x1ee1e0d40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TULabeledHandle
+0x1ef6d26d0  __AUTH,__objc_data  _OBJC_METACLASS_$_TULinkShareItem
+0x1ee1e15e0  __DATA_DIRTY,__data  _OBJC_METACLASS_$_TULiveLookupManagerProxy
+0x1ef6d1730  __AUTH,__objc_data  _OBJC_METACLASS_$_TULocalNicknameInfo
+0x1ee1defe0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TULocked
+0x1ef6d26a8  __AUTH,__objc_data  _OBJC_METACLASS_$_TULogging
+0x1ee1de8d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUMapsMetadataCacheDataProvider
+0x1ee1e0598  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUMediaTokens
+0x1ee1df4b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUMetadataCache
+0x1ee1df260  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUMetadataCacheDataProvider
+0x1ee1defb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUMetadataClientController
+0x1ee1df490  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUMetadataDestinationID
+0x1ef6d2ec8  __AUTH,__objc_data  _OBJC_METACLASS_$_TUMetadataDict
+0x1ef6d3850  __AUTH,__objc_data  _OBJC_METACLASS_$_TUMetadataItem
+0x1ee1de8b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUMomentDescriptor
+0x1ee1def90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUMomentsCapabilities
+0x1ee1df238  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUMomentsController
+0x1ee1def68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUMomentsControllerXPCClient
+0x1ef6d1708  __AUTH,__objc_data  _OBJC_METACLASS_$_TUMomentsMediaRecordRequest
+0x1ef6d2680  __AUTH,__objc_data  _OBJC_METACLASS_$_TUMomentsMessageDescriptor
+0x1ef6d2658  __AUTH,__objc_data  _OBJC_METACLASS_$_TUMomentsMessageSendRequest
+0x1ef6d2ea0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUMomentsProvider
+0x1ef6d2e78  __AUTH,__objc_data  _OBJC_METACLASS_$_TUMomentsRawVideoMessageDescriptor
+0x1ef6d2630  __AUTH,__objc_data  _OBJC_METACLASS_$_TUMutableCallContainer
+0x1ef6d3300  __AUTH,__objc_data  _OBJC_METACLASS_$_TUMutableCallDisplayContext
+0x1ef6d32d8  __AUTH,__objc_data  _OBJC_METACLASS_$_TUMutableConversation
+0x1ef6d2608  __AUTH,__objc_data  _OBJC_METACLASS_$_TUMutableConversationActivityCreateSessionRequest
+0x1ef6d25e0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUMutableConversationActivitySession
+0x1ef6d3828  __AUTH,__objc_data  _OBJC_METACLASS_$_TUMutableConversationLinkDescriptor
+0x1ef6d25b8  __AUTH,__objc_data  _OBJC_METACLASS_$_TUMutableConversationParticipant
+0x1ef6d2e50  __AUTH,__objc_data  _OBJC_METACLASS_$_TUMutableConversationParticipantCapabilities
+0x1ef6d2590  __AUTH,__objc_data  _OBJC_METACLASS_$_TUMutableParticipant
+0x1ee1deb58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUMutableRoute
+0x1ee1df210  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUNearbyConversationInfo
+0x1ee1dfa30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUNearbyDeviceHandle
+0x1ef6d2568  __AUTH,__objc_data  _OBJC_METACLASS_$_TUNearbyDeviceHandleCapabilities
+0x1ee1df828  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUNearbySuggestion
+0x1ef6d16e0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUNearbySuggestionAdvertisement
+0x1ee1df1e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUNearbySuggestionResult
+0x1ee1dfc88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUNeighborhoodActivityConduit
+0x1ee1dfc60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUNeighborhoodActivityConduitXPCClient
+0x1ee1df468  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUNeighborhoodHandoffContext
+0x1ef6d2540  __AUTH,__objc_data  _OBJC_METACLASS_$_TUNicknamesMetadataCacheDataProvider
+0x1ee1deb30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUNotifyObserver
+0x1ee1df440  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUOptionalObject
+0x1ef6d16b8  __AUTH,__objc_data  _OBJC_METACLASS_$_TUPSSimStatusCacheSoftLinking
+0x1ee1e0570  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUParticipant
+0x1ee1df6c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUPhoneNumber
+0x1ef6d3b20  __AUTH,__objc_data  _OBJC_METACLASS_$_TUPlatformCapabilities
+0x1ee1e0340  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUPodcastRecordingSession
+0x1ee1df800  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUPrivacyManager
+0x1ef6d2e28  __AUTH,__objc_data  _OBJC_METACLASS_$_TUPrivacyRule
+0x1ef6d2518  __AUTH,__objc_data  _OBJC_METACLASS_$_TUProxyAutocompleteResult
+0x1ee1e0f20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUProxyCall
+0x1ef6d24f0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUProxyRecentCall
+0x1ef6d2e00  __AUTH,__objc_data  _OBJC_METACLASS_$_TURTCCallReporter
+0x1ef6d24c8  __AUTH,__objc_data  _OBJC_METACLASS_$_TURecentsResults
+0x1ee1e04a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUReceptionistSession
+0x1ee1deb08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TURepeatingActor
+0x1ef6d24a0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUReplyWithMessageStore
+0x1ef6d2478  __AUTH,__objc_data  _OBJC_METACLASS_$_TUResultGroup
+0x1ee1e0ea8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TURoute
+0x1ee1df7d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TURouteController
+0x1ef6d3800  __AUTH,__objc_data  _OBJC_METACLASS_$_TUSFSpeechSoftLinking
+0x1ef6d46b0  __AUTH,__data  _OBJC_METACLASS_$_TUSIMFocusState
+0x1ee1e0d18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUSandboxExtendedURL
+0x1ee1dfda0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUScreenShareAttributes
+0x1ee1dfa08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUScreenSharingRequest
+0x1ef6d2040  __AUTH,__objc_data  _OBJC_METACLASS_$_TUScreenSharingRequestMetadata
+0x1ef6d2018  __AUTH,__objc_data  _OBJC_METACLASS_$_TUScreeningRequest
+0x1ef6d2450  __AUTH,__objc_data  _OBJC_METACLASS_$_TUSearchController
+0x1ef6d2428  __AUTH,__objc_data  _OBJC_METACLASS_$_TUSearchModuleManager
+0x1ef6d2400  __AUTH,__objc_data  _OBJC_METACLASS_$_TUSearchResults
+0x1ee1e1588  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUSenderIdentity
+0x1ee1e1240  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUSenderIdentityCapabilities
+0x1ee1e13f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUSenderIdentityCapabilitiesState
+0x1ee1df8a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUSenderIdentityClient
+0x1ef6d1690  __AUTH,__objc_data  _OBJC_METACLASS_$_TUSimulatedConversationController
+0x1ef6d1668  __AUTH,__objc_data  _OBJC_METACLASS_$_TUSimulatedConversationControllerXPCClient
+0x1ef6d1640  __AUTH,__objc_data  _OBJC_METACLASS_$_TUSimulatedIDSBatchIDQueryController
+0x1ef6d1618  __AUTH,__objc_data  _OBJC_METACLASS_$_TUSimulatedIDSIDQueryController
+0x1ef6d15f0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUSimulatedParticipantUpdate
+0x1ee1e0840  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUSmartHoldingEvent
+0x1ee1e08e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUSmartHoldingRequest
+0x1ee1e08b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUSmartHoldingSession
+0x1ee1e0890  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUSmartHoldingSessionRequest
+0x1ee1e0868  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUSmartHoldingSessionUpdateRequest
+0x1ef6d1288  __AUTH,__objc_data  _OBJC_METACLASS_$_TUSnapNameAndPhotoInfo
+0x1ee1df418  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUSplitSessionInfo
+0x1ef6d23d8  __AUTH,__objc_data  _OBJC_METACLASS_$_TUStringShareItem
+0x1ef6d2dd8  __AUTH,__objc_data  _OBJC_METACLASS_$_TUSubtitleProvider
+0x1ee1df1c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUSuggestionsMetadataCacheDataProvider
+0x1ef6d15c8  __AUTH,__objc_data  _OBJC_METACLASS_$_TUSuggestionsMetadataContactNameWithOrigin
+0x1ee1e1330  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUThumperCTCapabilitiesState
+0x1ef6d15a0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUUIContext
+0x1ee1e06d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUUIXPCClientConnection
+0x1ef6d23b0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUUIXPCHost
+0x1ee1dfc38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUUserConfiguration
+0x1ef6d3288  __AUTH,__objc_data  _OBJC_METACLASS_$_TUUserNotificationProviderXPCClient
+0x1ef6d1260  __AUTH,__objc_data  _OBJC_METACLASS_$_TUVRSProviderInstalledApplication
+0x1ef6d1238  __AUTH,__objc_data  _OBJC_METACLASS_$_TUVRSProviderManager
+0x1ee1e0638  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUVideoCallAttributes
+0x1ef6d37d8  __AUTH,__objc_data  _OBJC_METACLASS_$_TUVideoDeviceController
+0x1ee1dfc10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUVoucher
+0x1ee1deab8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUVouchingEnablementImpl
+0x1ef6d3fb0  __AUTH,__data  _OBJC_METACLASS_$__TUVRSProviderDiscovery
+0x1ef6d4708  __AUTH,__data  _OBJC_METACLASS_$__TtC18TelephonyUtilities14GMAvailability
+0x1e0d71cf0  __DATA_CONST,__const  _TUActionFilterUnknownCallers
+0x1e0d71d88  __DATA_CONST,__const  _TUActionGetStartedCallAssistant
+0x1e0d71ce8  __DATA_CONST,__const  _TUActionLearnMoreAboutLiveVoicemail
+0x1e0d71ce0  __DATA_CONST,__const  _TUActionLiveVoicemailSettings
+0x1e0d71cd8  __DATA_CONST,__const  _TUActionRecentsOpenAppStore
+0x1e0d71cd0  __DATA_CONST,__const  _TUActionSOSSettingsLearnMore
+0x1e0d71cc8  __DATA_CONST,__const  _TUActionScreenUnknownCallers
+0x1e0d71cc0  __DATA_CONST,__const  _TUActionWaitOnHoldStartHold
+0x19e3c1170  __TEXT,__text  _TUActiveCountryCode
+0x19e407604  __TEXT,__text  _TUAddDarwinObserver
+0x19e4074d4  __TEXT,__text  _TUAddLocalNSObserver
+0x19e4076b0  __TEXT,__text  _TUAddTelephonyCenterObserver
+0x19e4095b0  __TEXT,__text  _TUAllowCallsDuringScreenSharing
+0x19e38c624  __TEXT,__text  _TUAllowLocalVideoRecording
+0x1e0d71cb8  __DATA_CONST,__const  _TUAnalyticsEventFacetimeLink
+0x1e0d71cb0  __DATA_CONST,__const  _TUAnalyticsEventPhoneFavorites
+0x1e0d71ca8  __DATA_CONST,__const  _TUAnalyticsEventPhoneRecentlyDialed
+0x19e40b12c  __TEXT,__text  _TUAppendItemToURLFragment
+0x1e0d71ca0  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierAirPods
+0x1e0d71c98  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierAirPods2
+0x1e0d71c90  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierAirPods3
+0x1e0d71c88  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierAirPodsPro
+0x1e0d71c80  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierB463
+0x1e0d71c78  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierB465
+0x1e0d71c70  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierB487
+0x1e0d71c68  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierB494
+0x1e0d71c60  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierB494b
+0x1e0d71c58  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierB498
+0x1e0d71c50  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierB507
+0x1e0d71c48  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierB515c
+0x1e0d71c40  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierB607
+0x1e0d71c38  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierB688
+0x1e0d71c30  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierB698
+0x1e0d71c28  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierB698c
+0x1e0d71c20  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierB768e
+0x1e0d71c18  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierB768m
+0x1e0d71c10  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierB788
+0x1e0d71c08  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierBeatsFitPro
+0x1e0d71c00  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierBeatsSolo
+0x1e0d71bf8  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierBeatsSoloPro
+0x1e0d71bf0  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierBeatsStudio
+0x1e0d71be8  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierBeatsStudio2
+0x1e0d71be0  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierBeatsStudioBuds
+0x1e0d71bd8  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierBeatsX
+0x1e0d71bd0  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierBeatsX2
+0x1e0d71bc8  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierHeadPods
+0x1e0d71bc0  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierPowerbeats
+0x1e0d71bb8  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierPowerbeats2
+0x1e0d71bb0  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierPowerbeats4
+0x1e0d71ba8  __DATA_CONST,__const  _TUAudioRouteBluetoothProductIdentifierPowerbeatsPro
+0x1e0d71ba0  __DATA_CONST,__const  _TUAudioSystemActiveCategoryVolumeChangedNotification
+0x1e0d71b98  __DATA_CONST,__const  _TUAudioSystemAudioPickableRoutesChanged
+0x1e0d71b90  __DATA_CONST,__const  _TUAudioSystemCategoryKey
+0x1e0d71b88  __DATA_CONST,__const  _TUAudioSystemDownlinkMuteStatusChangedNotification
+0x1e0d71b80  __DATA_CONST,__const  _TUAudioSystemModeKey
+0x1e0d71b78  __DATA_CONST,__const  _TUAudioSystemTTYChangedNotification
+0x1e0d71b70  __DATA_CONST,__const  _TUAudioSystemUplinkMuteStatusChangedNotification
+0x1e0d71b68  __DATA_CONST,__const  _TUBargeCallActiveRemoteParticipantChangedNotification
+0x1e0d71b60  __DATA_CONST,__const  _TUBargeCallImageURLChangedNotification
+0x1e0d71b58  __DATA_CONST,__const  _TUBargeCallNameChangedNotification
+0x1e0d71b50  __DATA_CONST,__const  _TUBargeCallRemoteParticipantHandlesChangedNotification
+0x1e0d71b48  __DATA_CONST,__const  _TUBargeCallServiceStatusChangedNotification
+0x1e0d71b40  __DATA_CONST,__const  _TUBargeCallStatusChangedNotification
+0x1e0d71b38  __DATA_CONST,__const  _TUBargeCallTransmissionModeChangedNotification
+0x1e0d71b30  __DATA_CONST,__const  _TUBargeCallTransmissionStateChangedNotification
+0x1e0d71b28  __DATA_CONST,__const  _TUBargeResolvedCallStatusChangedNotification
+0x19e40a6a8  __TEXT,__text  _TUBinaryGCD
+0x19e408488  __TEXT,__text  _TUBlocklistURL
+0x19e362744  __TEXT,__text  _TUBundle
+0x1e0d71b20  __DATA_CONST,__const  _TUBundleIdentifierCallServicesDaemon
+0x1e0d71b18  __DATA_CONST,__const  _TUBundleIdentifierCloudKitShareBearApplication
+0x1e0d71b10  __DATA_CONST,__const  _TUBundleIdentifierContactsApplication
+0x1e0d71b08  __DATA_CONST,__const  _TUBundleIdentifierDeskViewApplication
+0x1e0d71b00  __DATA_CONST,__const  _TUBundleIdentifierFaceTimeApplication
+0x1e0d71af8  __DATA_CONST,__const  _TUBundleIdentifierFaceTimeConversationXPCService
+0x1e0d71af0  __DATA_CONST,__const  _TUBundleIdentifierFaceTimeLinkTrampolineApplication
+0x1e0d71ae8  __DATA_CONST,__const  _TUBundleIdentifierInCallServiceApplication
+0x1e0d71ae0  __DATA_CONST,__const  _TUBundleIdentifierLivePhotoXPCService
+0x1e0d71ad8  __DATA_CONST,__const  _TUBundleIdentifierMessagesApplication
+0x1e0d71ad0  __DATA_CONST,__const  _TUBundleIdentifierMobilePhoneApplication
+0x1e0d71ac8  __DATA_CONST,__const  _TUBundleIdentifierNameAndPhotoUtilities
+0x1e0d71ac0  __DATA_CONST,__const  _TUBundleIdentifierNanoPhoneApplication
+0x1e0d71ab8  __DATA_CONST,__const  _TUBundleIdentifierNotesApplication
+0x1e0d71ab0  __DATA_CONST,__const  _TUBundleIdentifierPhoneApplication
+0x1e0d71aa8  __DATA_CONST,__const  _TUBundleIdentifierPreferences
+0x1e0d71aa0  __DATA_CONST,__const  _TUBundleIdentifierSafariApplication
+0x1e0d71a98  __DATA_CONST,__const  _TUBundleIdentifierScreenSharingApplication
+0x1e0d71a90  __DATA_CONST,__const  _TUBundleIdentifierSpringBoardAppSwitcher
+0x1e0d71a88  __DATA_CONST,__const  _TUBundleIdentifierSpringBoardApplication
+0x1e0d71a80  __DATA_CONST,__const  _TUBundleIdentifierSpringBoardHomeScreen
+0x1e0d71a78  __DATA_CONST,__const  _TUBundleIdentifierTelephonyUtilitiesCLITool
+0x1e0d71a70  __DATA_CONST,__const  _TUBundleIdentifierTelephonyUtilitiesFramework
+0x1e0d71a68  __DATA_CONST,__const  _TUBundleIdentifierTinCan
+0x1e0d71a60  __DATA_CONST,__const  _TUBundleIdentifierVideoConferenceIdentifier
+0x1e0d71a58  __DATA_CONST,__const  _TUBusinessConnectCallingDisabledKey
+0x19e409a78  __TEXT,__text  _TUBusinessConnectCallingDisabledUserDefault
+0x19e40a4dc  __TEXT,__text  _TUBusinessConnectCallingEnabled
+0x1e0d71a50  __DATA_CONST,__const  _TUCTAvailableLocales
+0x1e0d71a48  __DATA_CONST,__const  _TUCTAvailableLocalesExpansion
+0x1e0d71a40  __DATA_CONST,__const  _TUCTGASRAvailableLanguagesExpansion
+0x1e0d71a38  __DATA_CONST,__const  _TUCTGASRAvailableLocales
+0x1e0d71a30  __DATA_CONST,__const  _TUCTGASRAvailableLocalesExpansion
+0x19e407418  __TEXT,__text  _TUCTServerConnection
+0x1e0d71a28  __DATA_CONST,__const  _TUCallActiveRemoteParticipantChangedNotification
+0x1e0d71a20  __DATA_CONST,__const  _TUCallAnsweringMachineStreamTokenChangedNotification
+0x1e0d71a18  __DATA_CONST,__const  _TUCallAnyRemoteSupportsRequestToScreenShareChangedNotification
+0x19e40c2f8  __TEXT,__text  _TUCallAssistantAvailable
+0x1e0d71a10  __DATA_CONST,__const  _TUCallAssistantEnabledKey
+0x1e0d71a08  __DATA_CONST,__const  _TUCallAudioPropertiesChangedNotification
+0x1e0d71a00  __DATA_CONST,__const  _TUCallAudioStackReadyNotification
+0x1e0d719f8  __DATA_CONST,__const  _TUCallBluetoothAudioFormatChangedNotification
+0x1e0d719f0  __DATA_CONST,__const  _TUCallCameraTypeChangedNotification
+0x1e0d719e8  __DATA_CONST,__const  _TUCallCanAnswerCallChangedNotification
+0x1e0d719e0  __DATA_CONST,__const  _TUCallCapabilitiesCloudCallingDevicesChangedNotification
+0x1e0d719d8  __DATA_CONST,__const  _TUCallCapabilitiesEmergencyCallbackModeChangedNotification
+0x1e0d719d0  __DATA_CONST,__const  _TUCallCapabilitiesEmergencyCallbackPossibleChangedNotification
+0x1e0d719c8  __DATA_CONST,__const  _TUCallCapabilitiesFaceTimeAvailabilityChangedNotification
+0x1e0d719c0  __DATA_CONST,__const  _TUCallCapabilitiesOutgoingRelayCallerIDChangedNotification
+0x1e0d719b8  __DATA_CONST,__const  _TUCallCapabilitiesRelayCallingAvailabilityChangedNotification
+0x1e0d719b0  __DATA_CONST,__const  _TUCallCapabilitiesRelayCallingChangedNotification
+0x1e0d719a8  __DATA_CONST,__const  _TUCallCapabilitiesSupportsFaceTimeAudioCallsChangedNotification
+0x1e0d719a0  __DATA_CONST,__const  _TUCallCapabilitiesSupportsFaceTimeVideoCallsChangedNotification
+0x1e0d71998  __DATA_CONST,__const  _TUCallCapabilitiesSupportsTelephonyCallsChangedNotification
+0x1e0d71990  __DATA_CONST,__const  _TUCallCapabilitiesThumperCallingChangedNotification
+0x1e0d71988  __DATA_CONST,__const  _TUCallCapabilitiesThumperCallingProvisioningURLChangedNotification
+0x1e0d71980  __DATA_CONST,__const  _TUCallCapabilitiesThumperCancelledKey
+0x1e0d71978  __DATA_CONST,__const  _TUCallCapabilitiesThumperFromAliasKey
+0x1e0d71970  __DATA_CONST,__const  _TUCallCapabilitiesThumperPinAlertCompletedNotification
+0x1e0d71968  __DATA_CONST,__const  _TUCallCapabilitiesThumperPinAlertNotification
+0x1e0d71960  __DATA_CONST,__const  _TUCallCapabilitiesThumperPinKey
+0x1e0d71958  __DATA_CONST,__const  _TUCallCapabilitiesThumperSuccessKey
+0x1e0d71950  __DATA_CONST,__const  _TUCallCapabilitiesVoLTECallingChangedNotification
+0x1e0d71948  __DATA_CONST,__const  _TUCallCapabilitiesWiFiCallingChangedNotification
+0x1e0d71940  __DATA_CONST,__const  _TUCallCapabilitiesWiFiCallingProvisioningURLChangedNotification
+0x1ebb9bcf8  __DATA,__data  _TUCallCenterAudioCallHostedOnOrEndpointOnCurrentDevicePredicate
+0x1e0d71938  __DATA_CONST,__const  _TUCallCenterCallConnectedNotification
+0x1e0d71930  __DATA_CONST,__const  _TUCallCenterCallContinuityStateChangedNotification
+0x1e0d71928  __DATA_CONST,__const  _TUCallCenterCallControlErrorCode
+0x1e0d71920  __DATA_CONST,__const  _TUCallCenterCallInvitationSentNotification
+0x1e0d71918  __DATA_CONST,__const  _TUCallCenterCallStartedConnectingNotification
+0x1e0d71910  __DATA_CONST,__const  _TUCallCenterCallStatusChangedInternalNotification
+0x1e0d71908  __DATA_CONST,__const  _TUCallCenterCallStatusChangedNotification
+0x1e0d71900  __DATA_CONST,__const  _TUCallCenterCallWantsHoldMusicChangedNotification
+0x1e0d718f8  __DATA_CONST,__const  _TUCallCenterCallerIDChangedNotification
+0x1e0d718f0  __DATA_CONST,__const  _TUCallCenterConferenceParticipantsChangedNotification
+0x1e0d718e8  __DATA_CONST,__const  _TUCallCenterControlFailureNotification
+0x1e0d718e0  __DATA_CONST,__const  _TUCallCenterDidStartCaptioningNotification
+0x1e0d718d8  __DATA_CONST,__const  _TUCallCenterDidStopCaptioningNotification
+0x1e0d718d0  __DATA_CONST,__const  _TUCallCenterHaveBeenLetInNotification
+0x1ebb9bcf0  __DATA,__data  _TUCallCenterHostedOnOrEndpointOnCurrentDevicePredicate
+0x1e0d718c8  __DATA_CONST,__const  _TUCallCenterInCallServiceAllowRingingCallStatusIndicatorToken
+0x1e0d718c0  __DATA_CONST,__const  _TUCallCenterInCallServiceDialRequestFailureNotification
+0x1e0d718b8  __DATA_CONST,__const  _TUCallCenterInCallServiceDidAppearNotification
+0x1e0d718b0  __DATA_CONST,__const  _TUCallCenterInCallServiceLocalVideoDidAppearNotification
+0x1e0d718a8  __DATA_CONST,__const  _TUCallCenterInCallServiceSuppressInCallStatusBarToken
+0x1e0d718a0  __DATA_CONST,__const  _TUCallCenterIsEmergencyChangedNotification
+0x1e0d71898  __DATA_CONST,__const  _TUCallCenterIsFailureExpectedChangedNotification
+0x1e0d71890  __DATA_CONST,__const  _TUCallCenterIsScreeningChangedNotification
+0x1e0d71888  __DATA_CONST,__const  _TUCallCenterLastReceptionistMessageChangedNotification
+0x1e0d71880  __DATA_CONST,__const  _TUCallCenterModelStateChangedNotification
+0x1e0d71878  __DATA_CONST,__const  _TUCallCenterOldReceptionistStateKey
+0x1e0d71870  __DATA_CONST,__const  _TUCallCenterPendingMemberAddedNotification
+0x1e0d71868  __DATA_CONST,__const  _TUCallCenterReceptionistSessionChangedNotification
+0x1e0d71860  __DATA_CONST,__const  _TUCallCenterReceptionistStateChangedNotification
+0x1e0d71858  __DATA_CONST,__const  _TUCallCenterResetCallStateNotification
+0x1e0d71850  __DATA_CONST,__const  _TUCallCenterResolvedCallStatusChangedInternalNotification
+0x1e0d71848  __DATA_CONST,__const  _TUCallCenterResolvedCallStatusChangedNotification
+0x1e0d71840  __DATA_CONST,__const  _TUCallCenterRestartNotification
+0x1e0d71838  __DATA_CONST,__const  _TUCallCenterSupportsEmergencyFallbackChangedNotification
+0x1e0d71830  __DATA_CONST,__const  _TUCallCenterVideoCallCameraAspectRatioKey
+0x1e0d71828  __DATA_CONST,__const  _TUCallCenterVideoCallCameraOrientationKey
+0x1e0d71820  __DATA_CONST,__const  _TUCallCenterVideoCallInvitationSentNotification
+0x1e0d71818  __DATA_CONST,__const  _TUCallCenterVideoCallMediaPropertiesChangedNotification
+0x1e0d71810  __DATA_CONST,__const  _TUCallCenterVideoCallMediaStalledChangedNotification
+0x1e0d71808  __DATA_CONST,__const  _TUCallCenterVideoCallPauseChangedNotification
+0x1e0d71800  __DATA_CONST,__const  _TUCallCenterVideoCallStatusChangedNotification
+0x1e0d717f8  __DATA_CONST,__const  _TUCallCenterVideoCallVideoQualityChangedNotification
+0x1e0d717f0  __DATA_CONST,__const  _TUCallCenterVideoResolvedCallStatusChangedNotification
+0x1e0d717e8  __DATA_CONST,__const  _TUCallContextCardsChangedNotification
+0x1e0d717e0  __DATA_CONST,__const  _TUCallConversationChangedNotification
+0x1e0d717d8  __DATA_CONST,__const  _TUCallConversationGroupUUIDChangedNotification
+0x19e412090  __TEXT,__text  _TUCallDirectorySignpostLog
+0x1e0d717d0  __DATA_CONST,__const  _TUCallDisplayContextChangedNotification
+0x1e0d717c8  __DATA_CONST,__const  _TUCallDowngradedToAudioNotification
+0x1e0d717c0  __DATA_CONST,__const  _TUCallFaceTimeHandoffRecipientParticipantKey
+0x1e0d717b8  __DATA_CONST,__const  _TUCallFaceTimeIDStatusChangedNotification
+0x1e0d717b0  __DATA_CONST,__const  _TUCallFaceTimeLocalizedHandoffRecipientDeviceCategoryKey
+0x1e0d717a8  __DATA_CONST,__const  _TUCallFaceTimeRemoteIDSDestinationKey
+0x1e0d717a0  __DATA_CONST,__const  _TUCallFaceTimeRemoteMomentsAvailableKey
+0x1e0d71798  __DATA_CONST,__const  _TUCallFaceTimeTransportTypeKey
+0x1e0d71790  __DATA_CONST,__const  _TUCallFilterUnknownCallerAddress
+0x1e0d71788  __DATA_CONST,__const  _TUCallFilteringFaceTimeNewCallersFilterModeKey
+0x1e0d71780  __DATA_CONST,__const  _TUCallFilteringPreferencesContactsOnlyKey
+0x1e0d71778  __DATA_CONST,__const  _TUCallFilteringPreferencesFaceTimeSpamFilterDisabledKey
+0x1e0d71770  __DATA_CONST,__const  _TUCallFilteringPreferencesMaxJunkLevelKey
+0x1e0d71768  __DATA_CONST,__const  _TUCallFilteringPreferencesSilenceUnknownFaceTimeCallersKey
+0x1e0d71760  __DATA_CONST,__const  _TUCallFilteringPreferencesSilenceUnknownVideoMailKey
+0x1e0d71758  __DATA_CONST,__const  _TUCallFilteringUnknownCallersAsNewCallersKey
+0x1e0d71750  __DATA_CONST,__const  _TUCallFilteringUnknownFaceTimeCallersAsNewCallersKey
+0x1e0d71748  __DATA_CONST,__const  _TUCallGroupUUIDChangedNotification
+0x19e407950  __TEXT,__text  _TUCallHandoffActivityType
+0x19e39aab8  __TEXT,__text  _TUCallHapticsEnabled
+0x1e0d71740  __DATA_CONST,__const  _TUCallHapticsEnabledKey
+0x1e0d71738  __DATA_CONST,__const  _TUCallHardPauseDigitsStateChangedNotification
+0x1e0d71730  __DATA_CONST,__const  _TUCallHasBeenRedirectedChangedNotification
+0x1e0d71728  __DATA_CONST,__const  _TUCallHistoryControllerDidFinishBoostNotification
+0x1e0d71720  __DATA_CONST,__const  _TUCallHistoryControllerRecentCallsDidChangeNotification
+0x1e0d71718  __DATA_CONST,__const  _TUCallHistoryControllerUnreadCallCountDidChangeNotification
+0x1e0d71710  __DATA_CONST,__const  _TUCallImageURLChangedNotification
+0x1e0d71708  __DATA_CONST,__const  _TUCallIsOnHoldChangedNotification
+0x1e0d71700  __DATA_CONST,__const  _TUCallIsSendingAudioChangedNotification
+0x1e0d716f8  __DATA_CONST,__const  _TUCallIsSendingVideoChangedNotification
+0x1e0d716f0  __DATA_CONST,__const  _TUCallIsSharePlayCapableChangedNotification
+0x1e0d716e8  __DATA_CONST,__const  _TUCallIsSharingScreenChangedNotification
+0x1e0d716e0  __DATA_CONST,__const  _TUCallIsThirdPartyVideoChangedNotification
+0x1e0d716d8  __DATA_CONST,__const  _TUCallIsUplinkMutedChangedNotification
+0x1e0d716d0  __DATA_CONST,__const  _TUCallIsUsingBasebandChangedNotification
+0x1e0d716c8  __DATA_CONST,__const  _TUCallLocalSenderIdentityAccountUUIDChangedNotification
+0x1e0d716c0  __DATA_CONST,__const  _TUCallMediaTokensChangedNotification
+0x1e0d716b8  __DATA_CONST,__const  _TUCallMixesVoiceWithMediaChangedNotification
+0x1e0d716b0  __DATA_CONST,__const  _TUCallModelChangedNotification
+0x1e0d716a8  __DATA_CONST,__const  _TUCallNearbyModeChangedNotification
+0x1e0d716a0  __DATA_CONST,__const  _TUCallNeedsManualInCallSoundsChangedNotification
+0x19e3999f0  __TEXT,__text  _TUCallPhoneAppHistoryActivityType
+0x1e0d71698  __DATA_CONST,__const  _TUCallPrefersExclusiveAccessToCellularNetworkChangedNotification
+0x1e0d71690  __DATA_CONST,__const  _TUCallProviderContextChangedNotification
+0x1e0d71688  __DATA_CONST,__const  _TUCallProviderManagerProvidersChangedNotification
+0x19e39226c  __TEXT,__text  _TUCallRecordingActivatable
+0x1e0d71680  __DATA_CONST,__const  _TUCallRecordingAvailabilityChangedNotification
+0x1e0d71678  __DATA_CONST,__const  _TUCallRecordingDisabledKey
+0x19e3921e8  __TEXT,__text  _TUCallRecordingEnabled
+0x19e39256c  __TEXT,__text  _TUCallRecordingEnabledMDMProfile
+0x1e0d71670  __DATA_CONST,__const  _TUCallRecordingStateChangedNotification
+0x1e0d71668  __DATA_CONST,__const  _TUCallRemoteAspectRatioChangedNotification
+0x1e0d71660  __DATA_CONST,__const  _TUCallRemoteCameraOrientationChangedNotification
+0x1e0d71658  __DATA_CONST,__const  _TUCallRemoteParticipantHandlesChangedNotification
+0x1e0d71650  __DATA_CONST,__const  _TUCallRemoteScreenAspectRatioChangedNotification
+0x1e0d71648  __DATA_CONST,__const  _TUCallRemoteScreenOrientationChangedNotification
+0x1e0d71640  __DATA_CONST,__const  _TUCallRemoteUnavailableAlternateButton
+0x1e0d71638  __DATA_CONST,__const  _TUCallRemoteUnavailableAlternateButtonURL
+0x1e0d71630  __DATA_CONST,__const  _TUCallRemoteUnavailableMessage
+0x1e0d71628  __DATA_CONST,__const  _TUCallRemoteUnavailableOtherButton
+0x1e0d71620  __DATA_CONST,__const  _TUCallRemoteUnavailableOtherButtonURL
+0x1e0d71618  __DATA_CONST,__const  _TUCallRemoteUnavailableTitle
+0x1e0d71610  __DATA_CONST,__const  _TUCallRemoteUplinkMutedChangedNotification
+0x1e0d71608  __DATA_CONST,__const  _TUCallRemoteVideoContentRectChangedNotification
+0x1e0d71600  __DATA_CONST,__const  _TUCallRingtoneStoppedPlayingNotification
+0x1e0d715f8  __DATA_CONST,__const  _TUCallScreenShareAttributesChangedNotification
+0x19e367a5c  __TEXT,__text  _TUCallScreeningActivatable
+0x1e0d715f0  __DATA_CONST,__const  _TUCallScreeningDidFinishAnnouncementNotification
+0x1e0d715e8  __DATA_CONST,__const  _TUCallScreeningDisabledKey
+0x19e367edc  __TEXT,__text  _TUCallScreeningDisabledUserDefault
+0x19e367eb8  __TEXT,__text  _TUCallScreeningEnabled
+0x19e3918c8  __TEXT,__text  _TUCallScreeningEnabledM3
+0x19e409f08  __TEXT,__text  _TUCallScreeningRTTEnabled
+0x1e0d715e0  __DATA_CONST,__const  _TUCallServiceStatusChangedNotification
+0x1e0d715d8  __DATA_CONST,__const  _TUCallShouldSuppressRingingChangedNotification
+0x1e0d715d0  __DATA_CONST,__const  _TUCallSmartHoldingSessionChangedNotification
+0x1e0d715c8  __DATA_CONST,__const  _TUCallSourceIdentifierCarPlay
+0x1e0d715c0  __DATA_CONST,__const  _TUCallSourceIdentifierHeySiri
+0x1e0d715b8  __DATA_CONST,__const  _TUCallSourceIdentifierKey
+0x1e0d715b0  __DATA_CONST,__const  _TUCallSourceIdentifierMikeyRoute
+0x1e0d715a8  __DATA_CONST,__const  _TUCallSourceIdentifierSpeakerRoute
+0x1e0d715a0  __DATA_CONST,__const  _TUCallSubtypeChangedNotification
+0x1e0d71598  __DATA_CONST,__const  _TUCallSupportsDTMFUpdatesChangedNotification
+0x1e0d71590  __DATA_CONST,__const  _TUCallSupportsTTYWithVoiceChangedNotification
+0x1e0d71588  __DATA_CONST,__const  _TUCallTTYTypeChangedNotification
+0x19e381084  __TEXT,__text  _TUCallTTYTypeForTUDialRequestTTYType
+0x1e0d71580  __DATA_CONST,__const  _TUCallTUStartCallActionDuration
+0x19e438db4  __TEXT,__text  _TUCallTranscriptionAvailability
+0x19e40a334  __TEXT,__text  _TUCallTranscriptionGASRSupportedLanguages
+0x19e40a2c8  __TEXT,__text  _TUCallTranscriptionGASRSupportedLocales
+0x1e0d71578  __DATA_CONST,__const  _TUCallTranscriptionStringChangedNotification
+0x19e40a3b0  __TEXT,__text  _TUCallTranscriptionSupported
+0x19e40a25c  __TEXT,__text  _TUCallTranscriptionSupportedLocales
+0x1e0d71570  __DATA_CONST,__const  _TUCallTranslationAvailabilityChangedNotification
+0x1e0d71568  __DATA_CONST,__const  _TUCallTranslationStateChangedNotification
+0x1e0d71560  __DATA_CONST,__const  _TUCallTransmissionModeChangedNotification
+0x1e0d71558  __DATA_CONST,__const  _TUCallTransmissionStateChangedNotification
+0x1e0d71550  __DATA_CONST,__const  _TUCallUpgradedToVideoNotification
+0x1e0d71548  __DATA_CONST,__const  _TUCallUserActivityDestinationIDKey
+0x1e0d71540  __DATA_CONST,__const  _TUCallUserActivityHandleKey
+0x1e0d71538  __DATA_CONST,__const  _TUCallUserActivityHandoffContextKey
+0x1e0d71530  __DATA_CONST,__const  _TUCallUserActivityProviderIdentifierKey
+0x1e0d71528  __DATA_CONST,__const  _TUCallVideoCaptureModeChangedNotification
+0x19e4773d0  __TEXT,__text  _TUCallVideoCaptureModeIsDual
+0x1e0d71520  __DATA_CONST,__const  _TUCallVideoStreamTokenChangedNotification
+0x19e40c1d8  __TEXT,__text  _TUCanShowContextCards
+0x19e409d48  __TEXT,__text  _TUCanvasSafetyNetEnabled
+0x19e40a484  __TEXT,__text  _TUCaptionsLoggingEnabled
+0x1e0d71518  __DATA_CONST,__const  _TUCaptionsLoggingEnabledKey
+0x1e0d71510  __DATA_CONST,__const  _TUCarPlayHardwareControlEventNotification
+0x19e409890  __TEXT,__text  _TUCheckLuckierDisclosed
+0x19e391b5c  __TEXT,__text  _TUCheckReceptionistDisclosed
+0x19e368284  __TEXT,__text  _TUClarityEnabled
+0x19e40a71c  __TEXT,__text  _TUClosestLandscapeAspect
+0x1e0d71508  __DATA_CONST,__const  _TUCollaborationDictionaryBundleIDKey
+0x1e0d71500  __DATA_CONST,__const  _TUCollaborationDictionaryIdentifierTypeKey
+0x1e0d714f8  __DATA_CONST,__const  _TUCollaborationDictionaryURLKey
+0x19e40a604  __TEXT,__text  _TUCommunicationTrustEnabled
+0x19e38e068  __TEXT,__text  _TUConduitLog
+0x19e4083cc  __TEXT,__text  _TUConnectionTimeoutForCallService
+0x1e0d714f0  __DATA_CONST,__const  _TUContinuityHandleAnonymPrefix
+0x1e0d714e8  __DATA_CONST,__const  _TUConversationActivityContextIdentifierCollaboration
+0x1e0d714e0  __DATA_CONST,__const  _TUConversationActivityContextIdentifierCreateTogether
+0x1e0d714d8  __DATA_CONST,__const  _TUConversationActivityContextIdentifierExploreTogether
+0x1e0d714d0  __DATA_CONST,__const  _TUConversationActivityContextIdentifierGeneric
+0x1e0d714c8  __DATA_CONST,__const  _TUConversationActivityContextIdentifierLearnTogether
+0x1e0d714c0  __DATA_CONST,__const  _TUConversationActivityContextIdentifierListenTogether
+0x1e0d714b8  __DATA_CONST,__const  _TUConversationActivityContextIdentifierPlayTogether
+0x1e0d714b0  __DATA_CONST,__const  _TUConversationActivityContextIdentifierPodcastTogether
+0x1e0d714a8  __DATA_CONST,__const  _TUConversationActivityContextIdentifierReadTogether
+0x1e0d714a0  __DATA_CONST,__const  _TUConversationActivityContextIdentifierScreenSharing
+0x1e0d71498  __DATA_CONST,__const  _TUConversationActivityContextIdentifierShopTogether
+0x1e0d71490  __DATA_CONST,__const  _TUConversationActivityContextIdentifierWatchTogether
+0x1e0d71488  __DATA_CONST,__const  _TUConversationActivityContextIdentifierWorkoutTogether
+0x19e39e094  __TEXT,__text  _TUConversationLinkDeletionLayerFromBundleIdentifier
+0x1e0d71480  __DATA_CONST,__const  _TUConversationLinkQueryKeyLinkName
+0x1e0d71478  __DATA_CONST,__const  _TUConversationLinkQueryKeyNickname
+0x1e0d71470  __DATA_CONST,__const  _TUConversationLinkQueryKeyPseudonym
+0x1e0d71468  __DATA_CONST,__const  _TUConversationLinkQueryKeyPublicKey
+0x1e0d71460  __DATA_CONST,__const  _TUConversationLinkQueryKeyVersion
+0x1e0d71458  __DATA_CONST,__const  _TUConversationManagerCollaborationErrorDomain
+0x1e0d71450  __DATA_CONST,__const  _TUConversationManagerDidBecomeAvailableNotification
+0x1e0d71448  __DATA_CONST,__const  _TUConversationManagerMessagesErrorDomain
+0x1e0d71440  __DATA_CONST,__const  _TUConversationProviderIdentifierKey
+0x19e3d48b0  __TEXT,__text  _TUConversationVideoCaptureModeIsDual
+0x19e4078fc  __TEXT,__text  _TUConvertDestinationIDToLatinNumbers
+0x19e391fb4  __TEXT,__text  _TUCopyIDSCanonicalAddressForDestinationID
+0x19e38c6d8  __TEXT,__text  _TUCopyIDSCanonicalAddressForHandle
+0x19e407238  __TEXT,__text  _TUCopyIDSFromIDForHandle
+0x19e3f3c8c  __TEXT,__text  _TUCopyOrderedPeopleForDestinationIDWithHintInAddressBook
+0x19e3c118c  __TEXT,__text  _TUCountryCodeForIncomingCall
+0x19e369200  __TEXT,__text  _TUCurrentLanguageCode
+0x19e409c00  __TEXT,__text  _TUCurrentLocaleEligibleForCallScreeningOnboarding
+0x19e369140  __TEXT,__text  _TUCurrentLocaleIdentifier
+0x19e461294  __TEXT,__text  _TUCurrentProcessHasEntitlement
+0x1e0d71438  __DATA_CONST,__const  _TUDefaultAppRelayTelephonySettingKey
+0x19e37ec3c  __TEXT,__text  _TUDefaultAppsEnabled
+0x19e357324  __TEXT,__text  _TUDefaultLog
+0x19e40813c  __TEXT,__text  _TUDestinationIDsAreEqual
+0x19e38d870  __TEXT,__text  _TUDeviceHasChinaSKU
+0x19e40b69c  __TEXT,__text  _TUDeviceHasDynamicIsland
+0x19e40b630  __TEXT,__text  _TUDeviceHasHomeButton
+0x19e40bc44  __TEXT,__text  _TUDeviceShouldMitigateSpamByDefault
+0x1ebb9bce8  __DATA,__data  _TUDialAssistDomain
+0x1ebba5360  __DATA,__common  _TUDialAssistEnabledOverride
+0x1ebb9bce0  __DATA,__data  _TUDialAssistUserSettingChanged
+0x19e37f614  __TEXT,__text  _TUDialAssistedDialRequest
+0x1e0d71430  __DATA_CONST,__const  _TUDialRequestErrorDomain
+0x1e0d71428  __DATA_CONST,__const  _TUDialRequestIsFromDefaultDialerKey
+0x1e0d71420  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringContactCard
+0x1e0d71418  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringDialer
+0x1e0d71410  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringECG
+0x1e0d71408  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringEmergencyDialerLockscreen
+0x1e0d71400  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringFaceTimeCreateCall
+0x1e0d713f8  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringFaceTimeLink
+0x1e0d713f0  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringFaceTimeRecents
+0x1e0d713e8  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringFallDetection
+0x1e0d713e0  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringGFTNotification
+0x1e0d713d8  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringMessagesAvatarBar
+0x1e0d713d0  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringMessagesBubble
+0x1e0d713c8  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringMessagesContactCard
+0x1e0d713c0  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringMissedCallNotification
+0x1e0d713b8  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringPhoneFaceTimeOngoing
+0x1e0d713b0  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringPhoneFaceTimeSpotlight
+0x1e0d713a8  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringPhoneFavorites
+0x1e0d713a0  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringPhoneRecents
+0x1e0d71398  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringSideButtonHold
+0x1e0d71390  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringSideButtonPresses
+0x1e0d71388  __DATA_CONST,__const  _TUDialRequestOriginatingUIStringVolumeLockHold
+0x1e0d71380  __DATA_CONST,__const  _TUDialRequestProviderIdentifierKey
+0x1e0d71378  __DATA_CONST,__const  _TUDialRequestQueryItemHandleTypeKey
+0x1e0d71370  __DATA_CONST,__const  _TUDialRequestQueryItemHandleTypeValueEmailAddress
+0x1e0d71368  __DATA_CONST,__const  _TUDialRequestQueryItemHandleTypeValueGeneric
+0x1e0d71360  __DATA_CONST,__const  _TUDialRequestQueryItemHandleTypeValuePhoneNumber
+0x1e0d71358  __DATA_CONST,__const  _TUDialRequestQueryItemNameFaceTimeAddressBookID
+0x1e0d71350  __DATA_CONST,__const  _TUDialRequestQueryItemNameForceAssist
+0x1e0d71348  __DATA_CONST,__const  _TUDialRequestQueryItemNameNoPrompt
+0x1e0d71340  __DATA_CONST,__const  _TUDialRequestQueryItemNameOriginatingUIType
+0x1e0d71338  __DATA_CONST,__const  _TUDialRequestQueryItemNameSuppressAssist
+0x1e0d71330  __DATA_CONST,__const  _TUDialRequestQueryItemNameTelephonyAddressBookID
+0x1e0d71328  __DATA_CONST,__const  _TUDialRequestQueryItemNameVoicemail
+0x1e0d71320  __DATA_CONST,__const  _TUDialRequestQueryItemNameWasAssisted
+0x1e0d71318  __DATA_CONST,__const  _TUDialRequestSchemeFaceTimeAudioPrompt
+0x1e0d71310  __DATA_CONST,__const  _TUDialRequestSchemeFaceTimePrompt
+0x1e0d71308  __DATA_CONST,__const  _TUDialRequestSchemeTelephonyEmergency
+0x1e0d71300  __DATA_CONST,__const  _TUDialRequestSchemeTelephonyLegacy
+0x1e0d712f8  __DATA_CONST,__const  _TUDialRequestSchemeTelephonyPrompt
+0x1e0d712f0  __DATA_CONST,__const  _TUDialRequestShouldBypassInterventionKey
+0x19e409538  __TEXT,__text  _TUDialRequestTTYTypeForTUCallTTYType
+0x1e0d712e8  __DATA_CONST,__const  _TUDialRequestUserActivityTypeAudioCall
+0x1e0d712e0  __DATA_CONST,__const  _TUDialRequestUserActivityTypeCall
+0x1e0d712d8  __DATA_CONST,__const  _TUDialRequestUserActivityTypeVideoCall
+0x1e0d712d0  __DATA_CONST,__const  _TUDialRequestValidityErrorDomain
+0x19e40a5b0  __TEXT,__text  _TUDisableCallRelayIDSServiceMessaging
+0x19e35efd8  __TEXT,__text  _TUDisableLinks
+0x19e40a5fc  __TEXT,__text  _TUDisableMacOSResultsStyling
+0x19e35b8f4  __TEXT,__text  _TUDispatchMainIfNecessary
+0x19e35b988  __TEXT,__text  _TUDispatchMainIfNecessaryAndWait
+0x1e0d712c0  __DATA_CONST,__const  _TUEligibleForReceptionistOnboardingNotificationKey
+0x1e0d712b8  __DATA_CONST,__const  _TUEntitlementsAccessCallProvidersCapability
+0x1e0d712b0  __DATA_CONST,__const  _TUEntitlementsAccessCollaborationCapability
+0x1e0d712a8  __DATA_CONST,__const  _TUEntitlementsAccessCollaborationDisclosuresCapability
+0x1e0d712a0  __DATA_CONST,__const  _TUEntitlementsAccessUIDataSourceCapability
+0x1e0d71298  __DATA_CONST,__const  _TUEntitlementsAccessibilityInterpreter
+0x1e0d71290  __DATA_CONST,__const  _TUEntitlementsBackgroundCallsCapability
+0x1e0d71288  __DATA_CONST,__const  _TUEntitlementsModifyCallsCapability
+0x1e0d71280  __DATA_CONST,__const  _TUEntitlementsModifyPendingCollaborationCapability
+0x1e0d71278  __DATA_CONST,__const  _TUEntitlementsRecordCalls
+0x1e0d71270  __DATA_CONST,__const  _TUEntitlementsScreenSharingRemoteControlCapability
+0x1e0d71268  __DATA_CONST,__const  _TUEntitlementsSmartHolding
+0x1e0d71260  __DATA_CONST,__const  _TUEntitlementsSplitSessionApprovalCapability
+0x1e0d71258  __DATA_CONST,__const  _TUEntitlementsTranslateCalls
+0x1e0d71250  __DATA_CONST,__const  _TUErrorDomain
+0x1e0d71248  __DATA_CONST,__const  _TUFTAUplevelKey
+0x19e40a1fc  __TEXT,__text  _TUFTLiveCaptionsActivatable
+0x1e0d71240  __DATA_CONST,__const  _TUFTLiveCaptionsGASRAvailableLanguagesExpansion
+0x1e0d71238  __DATA_CONST,__const  _TUFTLiveCaptionsGASRAvailableLocales
+0x1e0d71230  __DATA_CONST,__const  _TUFTLiveCaptionsGASRAvailableLocalesExpansion
+0x1e0d71228  __DATA_CONST,__const  _TUFTLiveCaptionsNextGenASRAvailableLanguages
+0x19e40c2b4  __TEXT,__text  _TUFaceTimeAudioServiceName
+0x1e0d71220  __DATA_CONST,__const  _TUFaceTimeHideNotificationsKey
+0x19e40a180  __TEXT,__text  _TUFaceTimeLiveCaptionsGeneralASRSupportedLanguages
+0x19e40a114  __TEXT,__text  _TUFaceTimeLiveCaptionsGeneralASRSupportedLocales
+0x19e40a0c0  __TEXT,__text  _TUFaceTimeLiveCaptionsNextGenASRSupportedLanguages
+0x19e40c22c  __TEXT,__text  _TUFaceTimeServiceName
+0x19e40c270  __TEXT,__text  _TUFaceTimeVideoServiceName
+0x19e409b60  __TEXT,__text  _TUFilterAsNewCallersSeenOnboardingScreenForFaceTime
+0x19e409ac0  __TEXT,__text  _TUFilterAsNewCallersSeenOnboardingScreenForPhone
+0x19e36254c  __TEXT,__text  _TUFormattedPhoneNumber
+0x19e409cfc  __TEXT,__text  _TUGreenTeaLagunaEnabled
+0x19e412170  __TEXT,__text  _TUGreenTeaLogOutgoingSiriCallToHandle
+0x1e0d71218  __DATA_CONST,__const  _TUGroupActivityIdentifierAccessibilityCaptions
+0x1e0d71210  __DATA_CONST,__const  _TUGroupActivityIdentifierPodcastRecording
+0x1e0d71208  __DATA_CONST,__const  _TUGroupActivityIdentifierScreenSharing
+0x19e365a1c  __TEXT,__text  _TUGuaranteeExecutionOnMainThreadAsync
+0x19e406c34  __TEXT,__text  _TUGuaranteeExecutionOnMainThreadSync
+0x19e38c7cc  __TEXT,__text  _TUHandleForIDSCanonicalAddress
+0x19e4072d4  __TEXT,__text  _TUHandleForIDSURI
+0x19e408218  __TEXT,__text  _TUHandlesAreCanonicallyEqual
+0x19e40829c  __TEXT,__text  _TUHandlesAreCanonicallyEqualUsingCountryCodes
+0x19e398c04  __TEXT,__text  _TUHardPauseDigitsDisplayString
+0x1e0d71200  __DATA_CONST,__const  _TUHeadsetHardwareControlEventNotification
+0x19e4098a0  __TEXT,__text  _TUHoldAssistActivatable
+0x1e0d711f8  __DATA_CONST,__const  _TUHoldAssistDetectionEnabledKey
+0x19e383d80  __TEXT,__text  _TUHomeCountryCode
+0x1e0d711f0  __DATA_CONST,__const  _TUIDSLookupManagerStatusChangedNotification
+0x19e35868c  __TEXT,__text  _TUISOCountryCodeForMCC
+0x19e4078f0  __TEXT,__text  _TUInCallRemoteAlertViewControllerClassName
+0x19e40836c  __TEXT,__text  _TUIncomingInvitationTimeout
+0x1e0d711e8  __DATA_CONST,__const  _TUInterpreterRequestErrorDomain
+0x19e40acc0  __TEXT,__text  _TUIsBareMakoAccount
+0x19e40795c  __TEXT,__text  _TUIsCallHandoffActivityType
+0x19e40a3dc  __TEXT,__text  _TUIsCallRecordingStorageDestinationApplicationAvailable
+0x19e407a8c  __TEXT,__text  _TUIsEmergencyNumber
+0x19e4079d4  __TEXT,__text  _TUIsEmergencyNumberOrIsWhiteListed
+0x19e40ac54  __TEXT,__text  _TUIsFaceTimeAppInstalled
+0x19e40ab54  __TEXT,__text  _TUIsIDSAvailableForFaceTime
+0x19e40bc78  __TEXT,__text  _TUIsInternationalHandle
+0x19e40be70  __TEXT,__text  _TUIsInternationalRecentCall
+0x19e380510  __TEXT,__text  _TUIsMMIOrUSSDNumber
+0x19e40b6fc  __TEXT,__text  _TUIsPersonaAvailable
+0x19e40b4a8  __TEXT,__text  _TUIsPhotosSharePlayAvailable
+0x19e40b7a4  __TEXT,__text  _TUIsPressDemoModeEnabled
+0x19e438fb4  __TEXT,__text  _TUIsProfanityAllowedForUseCase
+0x19e40b4b0  __TEXT,__text  _TUIsRequestToScreenShareAvailable
+0x19e40b520  __TEXT,__text  _TUIsRequestToScreenShareAvailableWithAssistiveAccessEnabled
+0x19e409f78  __TEXT,__text  _TUIsSameWiFiNetworkPingCheckEnabled
+0x19e39977c  __TEXT,__text  _TUIsStoreDemoModeEnabled
+0x19e392428  __TEXT,__text  _TUIsTTSAvailable
+0x19e409664  __TEXT,__text  _TUKickMemberTimeout
+0x1e0d711e0  __DATA_CONST,__const  _TULVMGASRAvailableLanguagesExpansion
+0x1e0d711d8  __DATA_CONST,__const  _TULVMGASRAvailableLocales
+0x1e0d711d0  __DATA_CONST,__const  _TULVMGASRAvailableLocalesExpansion
+0x1e0d711c8  __DATA_CONST,__const  _TULVMLocalesWithoutOnboarding
+0x1e0d711c0  __DATA_CONST,__const  _TULVMNextGenASRAvailableLocales
+0x1e0d711b8  __DATA_CONST,__const  _TULVMNextGenASRAvailableLocalesExpansion
+0x1e0d711b0  __DATA_CONST,__const  _TULVMRegionsWithoutMetrics
+0x1e0d711a8  __DATA_CONST,__const  _TULVMSiriSupportedLanguages
+0x19e368dfc  __TEXT,__text  _TULiveVoicemailGeneralASRSupportedLanguages
+0x19e368d90  __TEXT,__text  _TULiveVoicemailGeneralASRSupportedLocales
+0x19e368b34  __TEXT,__text  _TULiveVoicemailNextGenASRSupportedLocales
+0x19e367d40  __TEXT,__text  _TULockdownModeEnabled
+0x19e36791c  __TEXT,__text  _TULoggableStringForHandle
+0x19e37f438  __TEXT,__text  _TULoggableStringForHandles
+0x19e38f588  __TEXT,__text  _TULoggableStringForObject
+0x19e3e299c  __TEXT,__text  _TUMakeNeighborhoodConduitError
+0x19e407da0  __TEXT,__text  _TUMapItemForDestinationID
+0x19e407bfc  __TEXT,__text  _TUMapItemForPhoneNumberRef
+0x19e407e34  __TEXT,__text  _TUMapItemForPhoneNumberRefSync
+0x19e40b430  __TEXT,__text  _TUMaximumNearbyPartyParticipants
+0x1e0d711a0  __DATA_CONST,__const  _TUMaximumNearbyPartyParticipantsKey
+0x1e0d71198  __DATA_CONST,__const  _TUMetadataCacheDidFinishUpdatingNotification
+0x19e40b418  __TEXT,__text  _TUMinimumSupportedSharePlayProtocolVersion
+0x19e40b498  __TEXT,__text  _TUMinimumSupportedVisionFeatureVersion
+0x1ebb9bcd0  __DATA,__data  _TUMobilePhoneDomain
+0x1ebb9bcc8  __DATA,__data  _TUMobilePhoneLogDialAssistKey
+0x19e409554  __TEXT,__text  _TUMultiwayMaxConcurrentStreams
+0x19e40aeac  __TEXT,__text  _TUNameForContactWithFormatterStyle
+0x19e408480  __TEXT,__text  _TUNearbyAlignmentTimeout
+0x19e40b428  __TEXT,__text  _TUNearbyFeatureVersion
+0x19e4083e8  __TEXT,__text  _TUNearbyInvitationTimeout
+0x1e0d71190  __DATA_CONST,__const  _TUNeighborhoodActivityConduitErrorDomain
+0x19e374030  __TEXT,__text  _TUNetworkCountryCode
+0x19e3745b8  __TEXT,__text  _TUNormalizedHandleForTUHandle
+0x1e0d71188  __DATA_CONST,__const  _TUNotificationCategoryIdentifierCallRecording
+0x1e0d71180  __DATA_CONST,__const  _TUNotificationCategoryIdentifierNewVoicemail
+0x1e0d71178  __DATA_CONST,__const  _TUNotificationCategoryIdentifierNewVoicemailNoCallerID
+0x1e0d71170  __DATA_CONST,__const  _TUNotificationCategoryIdentifierNewVoicemailNoVisualVoicemail
+0x1e0d71168  __DATA_CONST,__const  _TUNotificationCategoryIdentifierTranslationReportAConcern
+0x19e409318  __TEXT,__text  _TUNotificationFromTrustedXPCObject
+0x19e409258  __TEXT,__text  _TUNotificationFromXPCObject
+0x19e443b64  __TEXT,__text  _TUNotifyOfRemindMeLater
+0x19e443d74  __TEXT,__text  _TUNotifyOfRemindMeLaterWhenILeave
+0x19e443990  __TEXT,__text  _TUNotifyOfReplyWithMessage
+0x19e3c0ac4  __TEXT,__text  _TUNumberToDial
+0x1ebb9bcc0  __DATA,__data  _TUNumberToDialOptionsSuppressLocalAssistKey
+0x19e406f78  __TEXT,__text  _TUNumberWithOldStylePausesTransformed
+0x19e4080b0  __TEXT,__text  _TUNumbersAreEqualOrNil
+0x19e35d020  __TEXT,__text  _TUObjectsAreEqualOrNil
+0x19e40a9f0  __TEXT,__text  _TUOpenFaceTimeAppWithCompletion
+0x19e40a940  __TEXT,__text  _TUOpenHomeScreenWithCompletion
+0x19e408ee0  __TEXT,__text  _TUOpenSensitiveURL
+0x19e408ed0  __TEXT,__text  _TUOpenURL
+0x19e40a7a0  __TEXT,__text  _TUOpenURLAndActivateWithCompletion
+0x19e39955c  __TEXT,__text  _TUOpenURLWithCompletion
+0x19e408b78  __TEXT,__text  _TUOpenURLWithError
+0x19e4088dc  __TEXT,__text  _TUOpenUserActivityForConversationRequest
+0x19e408374  __TEXT,__text  _TUOutgoingInvitationTimeoutForCallProvider
+0x19e408390  __TEXT,__text  _TUOutgoingInvitationTimeoutForCallProviderAndIsUpgrade
+0x19e411f54  __TEXT,__text  _TUOversizedLog
+0x19e411fc4  __TEXT,__text  _TUOversizedLogQueue
+0x1e0d71160  __DATA_CONST,__const  _TUPodcastRecordingDefaultsForceRecordToPhotos
+0x1e0d71158  __DATA_CONST,__const  _TUPodcastRecordingFolderPrefix
+0x1e0d71150  __DATA_CONST,__const  _TUPodcastRecordingRecordToPhotos
+0x19e358f30  __TEXT,__text  _TUPreferredFaceTimeBundleIdentifier
+0x19e409e80  __TEXT,__text  _TUPreventP2PWithNonContactEnabled
+0x1e0d71148  __DATA_CONST,__const  _TUPrivacyRulesChangedNotification
+0x19e4099c8  __TEXT,__text  _TUReceptionistAvailable
+0x1e0d71140  __DATA_CONST,__const  _TUReceptionistDisabledKey
+0x19e406ef8  __TEXT,__text  _TURecursiveSize
+0x19e40ab04  __TEXT,__text  _TURegisterIDSAvailabilityListener
+0x19e407838  __TEXT,__text  _TURemoveEveryTelephonyCenterObserver
+0x19e40aab4  __TEXT,__text  _TURemoveIDSAvailabilityListener
+0x19e407778  __TEXT,__text  _TURemoveTelephonyCenterObserver
+0x19e40b970  __TEXT,__text  _TUResolvedPhoneResource
+0x19e40b8d4  __TEXT,__text  _TUResolvedPhoneString
+0x1e0d71138  __DATA_CONST,__const  _TURunningBoardAssertionDomainCallservicesDaemon
+0x19e408f98  __TEXT,__text  _TUSanitizedTelephoneNumber
+0x1e0d71130  __DATA_CONST,__const  _TUScreenSharingRequestErrorDomain
+0x19e409bac  __TEXT,__text  _TUSetFilterAsNewCallersSeenOnboardingScreenForFaceTime
+0x19e409b0c  __TEXT,__text  _TUSetFilterAsNewCallersSeenOnboardingScreenForPhone
+0x19e40b408  __TEXT,__text  _TUSharePlayForceDisabled
+0x19e40b410  __TEXT,__text  _TUSharePlayProtocolVersion
+0x1e0d71128  __DATA_CONST,__const  _TUShouldCreateSuperBoxProviderKey
+0x19e358f44  __TEXT,__text  _TUShouldCreateSuperboxProvider
+0x19e408f10  __TEXT,__text  _TUShouldForegroundLaunchForActivity
+0x19e40799c  __TEXT,__text  _TUShouldShowCallHandoff
+0x19e40b58c  __TEXT,__text  _TUShouldUseSuperboxForAllProviders
+0x19e35885c  __TEXT,__text  _TUShouldUseSuperboxTelephonyProvider
+0x19e40b87c  __TEXT,__text  _TUSimulatedModeEnabled
+0x1e0d71ec0  __DATA_CONST,__const  _TUSimulatedModeEnabledKey
+0x1e0d71120  __DATA_CONST,__const  _TUSmartHoldingErrorDomain
+0x19e40c300  __TEXT,__text  _TUSmartVoicemailActionsAvailable
+0x1e0d71118  __DATA_CONST,__const  _TUSmartVoicemailActionsEnabledKey
+0x1e0d71110  __DATA_CONST,__const  _TUSplitSessionErrorDomain
+0x1e0d71108  __DATA_CONST,__const  _TUStartRecordingErrorDomain
+0x1e0d71100  __DATA_CONST,__const  _TUStopRecordingErrorDomain
+0x19e386d74  __TEXT,__text  _TUStringForCallService
+0x19e386d94  __TEXT,__text  _TUStringForCallStatus
+0x19e407124  __TEXT,__text  _TUStringKeyForNetwork
+0x19e4071c0  __TEXT,__text  _TUStringKeyForNetworkAndProduct
+0x19e407200  __TEXT,__text  _TUStringKeyForPlatform
+0x19e40707c  __TEXT,__text  _TUStringKeyForProduct
+0x19e38dc9c  __TEXT,__text  _TUStringsAreCaseInsensitiveEqual
+0x19e4080c8  __TEXT,__text  _TUStringsAreCaseInsensitiveEqualOrNil
+0x19e3691e8  __TEXT,__text  _TUStringsAreEqualOrNil
+0x19e40c660  __TEXT,__text  _TUStripCFCodeFromHandle
+0x1e0d710f8  __DATA_CONST,__const  _TUTelephonySchemeTel
+0x1e0d710f0  __DATA_CONST,__const  _TUTelephonySchemeTelPrompt
+0x19e407b44  __TEXT,__text  _TUThumperCarrierName
+0x1e0d710e8  __DATA_CONST,__const  _TUTipsDefaultDisplayBundleId
+0x1e0d710e0  __DATA_CONST,__const  _TUTipsEventAnnounceCallsEnabled
+0x1e0d710d8  __DATA_CONST,__const  _TUTipsEventBrandedCallReceived
+0x1e0d710d0  __DATA_CONST,__const  _TUTipsEventCallScreened
+0x1e0d710c8  __DATA_CONST,__const  _TUTipsEventCalledNonContact
+0x1e0d710c0  __DATA_CONST,__const  _TUTipsEventCalledNonFavContact
+0x1e0d710b8  __DATA_CONST,__const  _TUTipsEventFacetimeCallLinkCreated
+0x1e0d710b0  __DATA_CONST,__const  _TUTipsEventFacetimeCreatedLink
+0x1e0d710a8  __DATA_CONST,__const  _TUTipsEventJunkCallReceived
+0x1e0d710a0  __DATA_CONST,__const  _TUTipsEventKnownCallerMode
+0x1e0d71098  __DATA_CONST,__const  _TUTipsEventKnownCallerModeDone
+0x1e0d71090  __DATA_CONST,__const  _TUTipsEventKnownCallersExtensionStory
+0x1e0d71088  __DATA_CONST,__const  _TUTipsEventLVMOnboardingViewed
+0x1e0d71080  __DATA_CONST,__const  _TUTipsEventOriginatedCallWithSiri
+0x1e0d71078  __DATA_CONST,__const  _TUTipsEventPhoneAddedFavorite
+0x1e0d71070  __DATA_CONST,__const  _TUTipsEventSavedNumber
+0x1e0d71068  __DATA_CONST,__const  _TUTipsEventUnknownShortCall
+0x1e0d71060  __DATA_CONST,__const  _TUTipsPhoneContactsTabContext
+0x19e3688f0  __TEXT,__text  _TUTranscriptionAvailabilityForUseCase
+0x19e4083e0  __TEXT,__text  _TUTransferTimeout
+0x1e0d71058  __DATA_CONST,__const  _TUTranslationActivityIdentifier
+0x1e0d71050  __DATA_CONST,__const  _TUTranslationErrorDomain
+0x19e409a14  __TEXT,__text  _TUTranslationReportAConcernInternalOrSeed
+0x19e408f18  __TEXT,__text  _TUURLHostForTelephoneNumber
+0x19e406f5c  __TEXT,__text  _TUUnformattedPhoneNumber
+0x19e408f00  __TEXT,__text  _TUUnlockAndOpenSensitiveURL
+0x19e408ef0  __TEXT,__text  _TUUnlockAndOpenURL
+0x19e408d1c  __TEXT,__text  _TUUnlockDeviceWithPromptFrontBoardOptionsDictionary
+0x19e409dd0  __TEXT,__text  _TUUnsafeCallURIAlertEnabled
+0x1e0d71048  __DATA_CONST,__const  _TUUserActivityJoinConversationRequestUserInfoKey
+0x1e0d71040  __DATA_CONST,__const  _TUUserActivityTypeConversationHandoff
+0x1e0d71038  __DATA_CONST,__const  _TUUserActivityTypeCreateCallRecording
+0x1e0d71030  __DATA_CONST,__const  _TUUserActivityTypeFinishedCallRecording
+0x1e0d71028  __DATA_CONST,__const  _TUUserActivityTypeJoinConversationRequest
+0x19e40ba54  __TEXT,__text  _TUUserHasChinesePhoneNumberAssociatedToFaceTime
+0x19e408740  __TEXT,__text  _TUUserManuallySetDefaultCallingApp
+0x1e0d71018  __DATA_CONST,__const  _TUUserManuallySetDefaultCallingAppKey
+0x1e0d71010  __DATA_CONST,__const  _TUUserNotificationActivitySessionGetApp
+0x1e0d71008  __DATA_CONST,__const  _TUUserNotificationActivitySessionIdentifierKey
+0x1e0d71000  __DATA_CONST,__const  _TUUserNotificationConversationGroupIdentifierKey
+0x1e0d70ff8  __DATA_CONST,__const  _TUUserNotificationConversationHandoffDynamicIdentifierKey
+0x1e0d70ff0  __DATA_CONST,__const  _TUUserNotificationConversationIdentifierKey
+0x1e0d70fe8  __DATA_CONST,__const  _TUUserNotificationConversationLinkKey
+0x1e0d70fe0  __DATA_CONST,__const  _TUUserNotificationConversationPendingMemberKey
+0x1e0d70fd8  __DATA_CONST,__const  _TUUserNotificationConversationRemoteMembersKey
+0x1e0d70fd0  __DATA_CONST,__const  _TUUserNotificationConversationSharePlayInCallKey
+0x1e0d70fc8  __DATA_CONST,__const  _TUUserNotificationConversationUUIDKey
+0x1e0d70fc0  __DATA_CONST,__const  _TUUserNotificationMissedCallConversationUUIDKey
+0x1e0d70fb8  __DATA_CONST,__const  _TUUserNotificationMissedCallDestinationKey
+0x1e0d70fb0  __DATA_CONST,__const  _TUUserNotificationMissedCallDialRequestKey
+0x1e0d70fa8  __DATA_CONST,__const  _TUUserNotificationMissedCallHandleKey
+0x1e0d70fa0  __DATA_CONST,__const  _TUUserNotificationMissedCallServiceKey
+0x1e0d70f98  __DATA_CONST,__const  _TUUserNotificationMissedCallUUIDkey
+0x1e0d70f90  __DATA_CONST,__const  _TUUserNotificationPendingMemberNotificationTypeKey
+0x1e0d70f88  __DATA_CONST,__const  _TUUserNotificationSharePlayBundleIDKey
+0x1e0d70f80  __DATA_CONST,__const  _TUUserNotificationSharePlayCallbackURLKey
+0x1e0d70f78  __DATA_CONST,__const  _TUUserNotificationThumperAvailableKey
+0x19e40c3f4  __TEXT,__text  _TUValidateDialRequestForForwardingCodes
+0x1e0d70f70  __DATA_CONST,__const  _TUVideoDeviceControllerAreReactionEffectsEnabledKey
+0x1e0d70f68  __DATA_CONST,__const  _TUVideoDeviceControllerBackgroundReplacementEnabledChangedNotification
+0x1e0d70f60  __DATA_CONST,__const  _TUVideoDeviceControllerCameraBlurEnabledChangedNotification
+0x1e0d70f58  __DATA_CONST,__const  _TUVideoDeviceControllerCinematicFramingAvailabilityChangedNotification
+0x1e0d70f50  __DATA_CONST,__const  _TUVideoDeviceControllerCinematicFramingEnabledChangedNotification
+0x1e0d70f48  __DATA_CONST,__const  _TUVideoDeviceControllerDeviceBecameAvailableDeviceUniqueIDKey
+0x1e0d70f40  __DATA_CONST,__const  _TUVideoDeviceControllerDeviceBecameAvailableNotification
+0x1e0d70f38  __DATA_CONST,__const  _TUVideoDeviceControllerDeviceBecomeInterruptedNotification
+0x1e0d70f30  __DATA_CONST,__const  _TUVideoDeviceControllerDeviceBecomeInterruptedReason
+0x1e0d70f28  __DATA_CONST,__const  _TUVideoDeviceControllerDeviceBecomeInterruptedUniqueIDKey
+0x1e0d70f20  __DATA_CONST,__const  _TUVideoDeviceControllerDeviceDidReceiveErrorDeviceUniqueIDKey
+0x1e0d70f18  __DATA_CONST,__const  _TUVideoDeviceControllerDeviceDidReceiveErrorErrorKey
+0x1e0d70f10  __DATA_CONST,__const  _TUVideoDeviceControllerDeviceDidReceiveErrorNotification
+0x1e0d70f08  __DATA_CONST,__const  _TUVideoDeviceControllerDidChangeLocalCameraUIDDeviceUniqueIDKey
+0x1e0d70f00  __DATA_CONST,__const  _TUVideoDeviceControllerDidChangeLocalCameraUIDNotification
+0x1e0d70ef8  __DATA_CONST,__const  _TUVideoDeviceControllerDidGetSnapshotNotification
+0x1e0d70ef0  __DATA_CONST,__const  _TUVideoDeviceControllerDidPausePreviewNotification
+0x1e0d70ee8  __DATA_CONST,__const  _TUVideoDeviceControllerDidStartPreviewDeviceUniqueIDKey
+0x1e0d70ee0  __DATA_CONST,__const  _TUVideoDeviceControllerDidStartPreviewNotification
+0x1e0d70ed8  __DATA_CONST,__const  _TUVideoDeviceControllerDidStopPreviewNotification
+0x1e0d70ed0  __DATA_CONST,__const  _TUVideoDeviceControllerInputDevicesChangedNotification
+0x1e0d70ec8  __DATA_CONST,__const  _TUVideoDeviceControllerIsBackgroundReplacementEnabledKey
+0x1e0d70ec0  __DATA_CONST,__const  _TUVideoDeviceControllerIsCameraBlurEnabledKey
+0x1e0d70eb8  __DATA_CONST,__const  _TUVideoDeviceControllerIsCinematicFramingAvailableKey
+0x1e0d70eb0  __DATA_CONST,__const  _TUVideoDeviceControllerIsCinematicFramingEnabledKey
+0x1e0d70ea8  __DATA_CONST,__const  _TUVideoDeviceControllerIsStudioLightEnabledKey
+0x1e0d70ea0  __DATA_CONST,__const  _TUVideoDeviceControllerLocalAttributesChangedAspectRatioKey
+0x1e0d70e98  __DATA_CONST,__const  _TUVideoDeviceControllerLocalAttributesChangedNotification
+0x1e0d70e90  __DATA_CONST,__const  _TUVideoDeviceControllerPrimarySessionEnabledDidChangeNotification
+0x1e0d70e88  __DATA_CONST,__const  _TUVideoDeviceControllerPrimarySessionEnabledKey
+0x1e0d70e78  __DATA_CONST,__const  _TUVideoDeviceControllerReactionEffectsEnabledChangedNotification
+0x1e0d70e70  __DATA_CONST,__const  _TUVideoDeviceControllerReceivedFirstPreviewFrameNotification
+0x1e0d70e68  __DATA_CONST,__const  _TUVideoDeviceControllerReceivedFirstSecondaryFrameDeviceUniqueIDKey
+0x1e0d70e60  __DATA_CONST,__const  _TUVideoDeviceControllerReceivedFirstSecondaryFrameNotification
+0x1e0d70e58  __DATA_CONST,__const  _TUVideoDeviceControllerSecondaryAttributesChangedAspectRatioKey
+0x1e0d71d38  __DATA_CONST,__const  _TUVideoDeviceControllerSecondaryAttributesChangedLandscapeAspectRatioKey
+0x1e0d70e50  __DATA_CONST,__const  _TUVideoDeviceControllerSecondaryAttributesChangedNotification
+0x1e0d71d30  __DATA_CONST,__const  _TUVideoDeviceControllerSecondaryAttributesChangedPortraitAspectRatioKey
+0x1e0d70e48  __DATA_CONST,__const  _TUVideoDeviceControllerSecondaryCameraZoomAvailabilityChangedNotification
+0x1e0d70e40  __DATA_CONST,__const  _TUVideoDeviceControllerSecondarySessionEnabledDidChangeNotification
+0x1e0d70e38  __DATA_CONST,__const  _TUVideoDeviceControllerSecondarySessionEnabledKey
+0x1e0d70e30  __DATA_CONST,__const  _TUVideoDeviceControllerSecondaryZoomAvailabilityKey
+0x1e0d70e28  __DATA_CONST,__const  _TUVideoDeviceControllerSensitiveContentAnalysisChangedNotification
+0x1e0d70e20  __DATA_CONST,__const  _TUVideoDeviceControllerSensitiveContentAnalysisKey
+0x1e0d70e18  __DATA_CONST,__const  _TUVideoDeviceControllerSnapshotDataKey
+0x1e0d70e10  __DATA_CONST,__const  _TUVideoDeviceControllerStudioLightEnabledChangedNotification
+0x1e0d70e08  __DATA_CONST,__const  _TUVideoDeviceControllerSystemPreferredCameraChangedNotification
+0x1e0d70e00  __DATA_CONST,__const  _TUVideoDeviceControllerSystemPreferredCameraUIDKey
+0x1e0d70df8  __DATA_CONST,__const  _TUVideoDeviceControllerUserPreferredCameraChangedNotification
+0x1e0d70df0  __DATA_CONST,__const  _TUVideoDeviceControllerUserPreferredCameraUIDKey
+0x1e0d70de8  __DATA_CONST,__const  _TUVideoDeviceControllerZoomAvailableNotification
+0x1e0d70de0  __DATA_CONST,__const  _TUVideoDeviceControllerZoomUnavailableNotification
+0x19e40a538  __TEXT,__text  _TUVideoMessagingEnabled
+0x1e0d70dd8  __DATA_CONST,__const  _TUVideoMirroredChangedNotification
+0x19e40b4a0  __TEXT,__text  _TUVisionCallEstablishmentVersion
+0x19e40b420  __TEXT,__text  _TUVisionFeatureVersion
+0x1e0d70dd0  __DATA_CONST,__const  _TelURLAddressBookUID
+0x1e0d70dc8  __DATA_CONST,__const  _TelURLForceAssist
+0x1e0d70dc0  __DATA_CONST,__const  _TelURLOriginatingUIKey
+0x1e0d70db8  __DATA_CONST,__const  _TelURLSuppressAssist
+0x1e0d70db0  __DATA_CONST,__const  _TelURLWasAssistedKey
+0x19e4073c8  __TEXT,__text  __TUAssertShouldCrashApplication
+0x19e37d85c  __TEXT,__text  __TUDialAssistedDialRequestUsingCountryCodes
+0x19e35f2c4  __TEXT,__text  __TUIsInternalInstall
+0x19e4073bc  __TEXT,__text  __TUIsInternalInstallOrSeed
+0x19e40baa0  __TEXT,__text  __TUUserHasChinesePhoneNumberAssociatedToService
+0x19e40877c  __TEXT,__text  __TUUserManuallySetDefaultCallingApp
+0x19e4085e0  __TEXT,__text  __defaultAppRelayTelephonySetting
+0x19e40849c  __TEXT,__text  __removeDefaultAppRelayTelephonySetting
+0x19e408534  __TEXT,__text  __setDefaultAppRelayTelephonySetting
+0x19e39c2cc  __TEXT,__text  _defaultAppRelayTelephonySetting
+0x19e39c370  __TEXT,__text  _defaultAppRelayTelephonySettingUserDefaultForPad
+0x19e37c674  __TEXT,__text  _defaultCallingAppLSBundleIdentifier
+0x19e4087c4  __TEXT,__text  _defaultDialingAppLSBundleIdentifier
+0x1e0d6ed50  __DATA_CONST,__const  _kFaceTimeAddressBookUIDOption
+0x1e0d6ed48  __DATA_CONST,__const  _kRecentsTranslationReportAConcernUniqueIDOption
+0x1e0d6ed40  __DATA_CONST,__const  _kTUCallHistoryMarkedReadBulletinBoardMessageCallUUIDsKey
+0x1e0d6ed38  __DATA_CONST,__const  _kTUCallHistoryMarkedReadBulletinBoardMessageName
+0x1e0d6ed30  __DATA_CONST,__const  _kTUCarPlayHardwareControlButtonDelete
+0x1e0d6ed28  __DATA_CONST,__const  _kTUCarPlayHardwareControlButtonGreenTelephone
+0x1e0d6ed20  __DATA_CONST,__const  _kTUCarPlayHardwareControlButtonKey
+0x1e0d6ed18  __DATA_CONST,__const  _kTUCarPlayHardwareControlButtonKeypad
+0x1e0d6ed10  __DATA_CONST,__const  _kTUCarPlayHardwareControlButtonMute
+0x1e0d6ed08  __DATA_CONST,__const  _kTUCarPlayHardwareControlButtonRedTelephone
+0x1e0d6ed00  __DATA_CONST,__const  _kTUCarPlayHardwareControlButtonWhiteTelephone
+0x1e0d6ecf8  __DATA_CONST,__const  _kTUCarPlayHardwareControlButtonWhiteTelephoneLongPress
+0x1e0d6ecf0  __DATA_CONST,__const  _kTUCarPlayHardwareControlKeypadValueKey
+0x1e0d6ece8  __DATA_CONST,__const  _kTUConfigurationAnnounceCalls
+0x1e0d6ece0  __DATA_CONST,__const  _kTUConfigurationConversationLinkBaseURL
+0x1e0d6ecd8  __DATA_CONST,__const  _kTUConfigurationSimulateFatalPersistentStoreError
+0x1e0d6ecd0  __DATA_CONST,__const  _kTUConfigurationSimulateInternationalCall
+0x1e0d6ecc8  __DATA_CONST,__const  _kTUHeadsetHardwareControlButtonKey
+0x1e0d6ecc0  __DATA_CONST,__const  _kTUHeadsetHardwareControlButtonWhiteTelephone
+0x1e0d6ecb8  __DATA_CONST,__const  _kTURemindMeLaterBulletinBoardMessageCallBackStringKey
+0x1e0d6ecb0  __DATA_CONST,__const  _kTURemindMeLaterBulletinBoardMessageCallerKey
+0x1e0d6eca8  __DATA_CONST,__const  _kTURemindMeLaterBulletinBoardMessageIsWhenILeaveKey
+0x1e0d6eca0  __DATA_CONST,__const  _kTURemindMeLaterBulletinBoardMessageLocationTextKey
+0x1e0d6ec98  __DATA_CONST,__const  _kTURemindMeLaterBulletinBoardMessageName
+0x1e0d6ec90  __DATA_CONST,__const  _kTURemindMeLaterBulletinBoardMessageReminderIdentifierKey
+0x1e0d6ec88  __DATA_CONST,__const  _kTURemindMeLaterBulletinBoardMessageWhenILeaveStringKey
+0x1e0d6ec80  __DATA_CONST,__const  _kTUReplyWithMessageBulletinBoardMessageDestinationKey
+0x1e0d6ec78  __DATA_CONST,__const  _kTUReplyWithMessageBulletinBoardMessageMessageKey
+0x1e0d6ec70  __DATA_CONST,__const  _kTUReplyWithMessageBulletinBoardMessageName
+0x1e0d6ec68  __DATA_CONST,__const  _kTUReplyWithMessageBulletinBoardMessagePersonIDKey
+0x1e0d6ec60  __DATA_CONST,__const  _kTUReplyWithMessageBulletinBoardMessageRecipientKey
+0x19e4084d4  __TEXT,__text  _removeDefaultAppRelayTelephonySetting
+0x19e408574  __TEXT,__text  _setDefaultAppRelayTelephonySetting
+0x19e39c754  __TEXT,__text  _supportsDefaultAppRelayTelephonySetting
+```
+
+## Private
+
+```
+0x19e356ba8  __TEXT,__text  +[TUCallCenter sharedInstance]
+0x19e356bb8  __TEXT,__text  -[TUCallContainer .cxx_destruct]
+0x19e356bc4  __TEXT,__text  ___HIDTouchEventCallback
+0x19e356fb4  __TEXT,__text  +[TUCallCapabilities initializeCachedValues]
+0x19e356fd4  __TEXT,__text  ___28+[TUCallCapabilities client]_block_invoke
+0x19e357004  __TEXT,__text  -[TUCallCapabilitiesXPCClient init]
+0x19e357120  __TEXT,__text  ___35-[TUCallCapabilitiesXPCClient init]_block_invoke
+0x19e357238  __TEXT,__text  -[TUCallCapabilitiesXPCClient _retrieveState]
+0x19e35735c  __TEXT,__text  +[TUCallCapabilitiesXPCClient callCapabilitiesClientXPCInterface]
+0x19e357394  __TEXT,__text  +[TUCallCapabilitiesXPCClient callCapabilitiesClientXPCInterface].cold.1
+0x19e3573a8  __TEXT,__text  ___TUDefaultLog_block_invoke
+0x19e3573e0  __TEXT,__text  +[TUCallCapabilitiesXPCClient callCapabilitiesServerXPCInterface]
+0x19e357418  __TEXT,__text  +[TUCallCapabilitiesXPCClient callCapabilitiesServerXPCInterface].cold.1
+0x19e35742c  __TEXT,__text  ___65+[TUCallCapabilitiesXPCClient callCapabilitiesServerXPCInterface]_block_invoke
+0x19e357468  __TEXT,__text  +[TUCallCapabilities client]
+0x19e3574a0  __TEXT,__text  ___65+[TUCallCapabilitiesXPCClient callCapabilitiesClientXPCInterface]_block_invoke
+0x19e3574dc  __TEXT,__text  -[TUCallCapabilitiesXPCClient xpcConnection]
+0x19e357710  __TEXT,__text  -[TUCallCenter callContainer]
+0x19e357750  __TEXT,__text  -[TUCallServicesInterface currentCalls]
+0x19e357794  __TEXT,__text  -[TUThumperCTCapabilitiesState init]
+0x19e357804  __TEXT,__text  -[TUCTCapabilitiesState encodeWithCoder:]
+0x19e357a5c  __TEXT,__text  -[TUCTCapabilitiesState publiclyAccessibleCopyWithZone:]
+0x19e357b28  __TEXT,__text  -[TUThumperCTCapabilitiesState .cxx_destruct]
+0x19e357b84  __TEXT,__text  -[TUCTCapabilitiesState .cxx_destruct]
+0x19e357bbc  __TEXT,__text  -[TUCallCapabilitiesState .cxx_destruct]
+0x19e357c0c  __TEXT,__text  -[TUSenderIdentityCapabilitiesState .cxx_destruct]
+0x19e357c68  __TEXT,__text  -[NSXPCConnection(TUCallServicesAdditions) processBundleIdentifier]
+0x19e357cdc  __TEXT,__text  -[TUSenderIdentityCapabilitiesState initWithSenderIdentityUUID:]
+0x19e357da8  __TEXT,__text  -[TUCallContainer currentCallCount]
+0x19e357db4  __TEXT,__text  -[NSXPCConnection(TUCallServicesAdditions) processName]
+0x19e357e60  __TEXT,__text  -[TUCallCapabilitiesState publiclyAccessibleCopy]
+0x19e357e68  __TEXT,__text  -[TUSenderIdentityCapabilitiesState encodeWithCoder:]
+0x19e358008  __TEXT,__text  -[TUCallContainer initWithCalls:]
+0x19e358078  __TEXT,__text  -[TUThumperCTCapabilitiesState encodeWithCoder:]
+0x19e35825c  __TEXT,__text  -[TUCTCapabilitiesState provisioningURL]
+0x19e358264  __TEXT,__text  -[TUCTCapabilitiesState setCurrentlyAvailable:]
+0x19e35826c  __TEXT,__text  -[TUCTCapabilitiesState initWithCoder:]
+0x19e358484  __TEXT,__text  ___45-[TUCallCapabilitiesXPCClient _retrieveState]_block_invoke.12
+0x19e358534  __TEXT,__text  -[TUCallCapabilitiesXPCClient _updateState:]
+0x19e35865c  __TEXT,__text  _TUDefaultLog.cold.1
+0x19e358670  __TEXT,__text  +[TUCallCapabilities client].cold.1
+0x19e358684  __TEXT,__text  -[TUSenderIdentityCapabilitiesState publiclyAccessibleCopy]
+0x19e358788  __TEXT,__text  -[TUCallProviderManagerXPCClient init]
+0x19e358854  __TEXT,__text  -[TUCallProvider setSupportsRecents:]
+0x19e358860  __TEXT,__text  -[TUCallProvider identifier]
+0x19e358868  __TEXT,__text  -[TUCallProviderManager init]
+0x19e358870  __TEXT,__text  ___38-[TUCallProviderManagerXPCClient init]_block_invoke
+0x19e358b08  __TEXT,__text  -[TUCallProvider setBundleIdentifier:]
+0x19e358b10  __TEXT,__text  -[TUCallProvider setLocalizedName:]
+0x19e358b18  __TEXT,__text  -[TUCallProvider setSupportsAudioOnly:]
+0x19e358b20  __TEXT,__text  -[TUCallProvider setSupportsEmergency:]
+0x19e358b28  __TEXT,__text  -[TUCallProvider setSupportsVoicemail:]
+0x19e358b30  __TEXT,__text  -[TUCallProvider initWithIdentifier:]
+0x19e358bfc  __TEXT,__text  -[TUMetadataCacheDataProvider init]
+0x19e358ccc  __TEXT,__text  -[TUCallCenter callServicesInterface]
+0x19e358cd4  __TEXT,__text  -[TUCallProvider setSupportedHandleTypes:]
+0x19e358cdc  __TEXT,__text  +[TUCallProviderManager defaultProviders]
+0x19e358f3c  __TEXT,__text  -[TUCallProvider setSupportsAudioAndVideo:]
+0x19e358fcc  __TEXT,__text  ___46-[TUCallProviderManagerXPCClient setDelegate:]_block_invoke
+0x19e358fd8  __TEXT,__text  _____CUTWeakCXCallDirectoryManagerIdentificationEntriesChangedNotification_block_invoke
+0x19e359010  __TEXT,__text  -[TUSuggestionsMetadataCacheDataProvider init]
+0x19e3591ac  __TEXT,__text  ___55+[TUSuggestionsMetadataCacheDataProvider sharedService]_block_invoke
+0x19e359230  __TEXT,__text  -[TUGeoLocationMetadataCacheDataProvider init]
+0x19e359350  __TEXT,__text  _PhoneNumberResolverLibraryCore
+0x19e359420  __TEXT,__text  ___getPNRPhoneNumberResolverClass_block_invoke
+0x19e3594a4  __TEXT,__text  -[TUMetadataCache initWithDataProviders:]
+0x19e3595a4  __TEXT,__text  ___69-[TUCallProviderManagerXPCClient currentProcessCanAccessInitialState]_block_invoke
+0x19e3595d0  __TEXT,__text  -[TUCallDirectoryMetadataCacheDataProvider init]
+0x19e3597ec  __TEXT,__text  -[TUMetadataCacheDataProvider setDelegate:]
+0x19e3598a0  __TEXT,__text  ___71+[TUCallProviderManagerXPCClient callProviderManagerClientXPCInterface]_block_invoke
+0x19e35999c  __TEXT,__text  -[TUCallContainer _allCalls]
+0x19e3599a0  __TEXT,__text  -[TUConversationManager initWithDataSource:notificationCenter:]
+0x19e359d64  __TEXT,__text  ___38-[TUCallCenter fetchTUUIXPCDataSource]_block_invoke
+0x19e359f94  __TEXT,__text  -[TUCallServicesInterface queue]
+0x19e359f9c  __TEXT,__text  -[TUCallProviderManager telephonyProvider]
+0x19e35a008  __TEXT,__text  -[TUCallProviderManagerXPCClient currentProcessCanAccessInitialState]
+0x19e35a06c  __TEXT,__text  -[TUCallProviderManagerXPCClient currentProcessCanAccessInitialState].cold.1
+0x19e35a080  __TEXT,__text  _TUCurrentProcessHasEntitlementCapability
+0x19e35a1f0  __TEXT,__text  ___64-[TUCallProviderManagerXPCClient blockUntilInitialStateReceived]_block_invoke
+0x19e35a230  __TEXT,__text  -[TUMetadataCacheDataProvider queue]
+0x19e35a238  __TEXT,__text  ___71+[TUCallProviderManagerXPCClient callProviderManagerServerXPCInterface]_block_invoke
+0x19e35a39c  __TEXT,__text  ___62+[TUCallCenter sharedInstanceWithQueue:server:shouldRegister:]_block_invoke
+0x19e35a3d8  __TEXT,__text  -[TUDelegateController init]
+0x19e35a444  __TEXT,__text  -[TUCallCenter initWithQueue:wantsCallNotifications:featureFlags:]
+0x19e35a78c  __TEXT,__text  -[TUCallServicesInterface performBlockOnQueue:andWait:]
+0x19e35a830  __TEXT,__text  ___71+[TUCallCenter callCenterWithQueue:server:shouldRegister:featureFlags:]_block_invoke
+0x19e35a89c  __TEXT,__text  -[TUCallCenter registerWithCompletionHandler:]
+0x19e35a9a8  __TEXT,__text  -[TUCallServicesInterface requestCurrentStateWithCompletionHandler:handleInitialState:]
+0x19e35ab74  __TEXT,__text  -[TUCallServicesInterface setClientCapabilities:]
+0x19e35ac34  __TEXT,__text  -[TUCallServicesInterface _setUpXPCConnection]
+0x19e35ae34  __TEXT,__text  +[NSXPCConnection(TUCallServicesAdditions) callServicesClientXPCInterface].cold.1
+0x19e35ae48  __TEXT,__text  +[NSXPCConnection(TUCallServicesAdditions) callServicesServerXPCInterface]
+0x19e35ae80  __TEXT,__text  +[NSXPCConnection(TUCallServicesAdditions) callServicesServerXPCInterface].cold.1
+0x19e35ae94  __TEXT,__text  ___74+[NSXPCConnection(TUCallServicesAdditions) callServicesServerXPCInterface]_block_invoke
+0x19e35b600  __TEXT,__text  +[NSXPCConnection(TUCallServicesAdditions) callServicesClientXPCInterface]
+0x19e35b638  __TEXT,__text  ___74+[NSXPCConnection(TUCallServicesAdditions) callServicesClientXPCInterface]_block_invoke
+0x19e35b8fc  __TEXT,__text  ___66-[TUCallCenter initWithQueue:wantsCallNotifications:featureFlags:]_block_invoke
+0x19e35ba18  __TEXT,__text  _TUDispatchMainIfNecessaryAndWait.cold.1
+0x19e35ba2c  __TEXT,__text  ___TUDispatchMainIfNecessaryAndWait_block_invoke
+0x19e35ba48  __TEXT,__text  -[TUCallCenter fetchTUUIXPCDataSource]
+0x19e35bb18  __TEXT,__text  ___46-[TUCallCenter registerWithCompletionHandler:]_block_invoke
+0x19e35bb20  __TEXT,__text  -[TUCallServicesInterface fetchAnonymousXPCEndpoint:]
+0x19e35bbdc  __TEXT,__text  -[TUConversationManager init]
+0x19e35bc48  __TEXT,__text  -[TUConversationManagerXPCClient init]
+0x19e35be88  __TEXT,__text  -[TUConversationManager currentProcessCanAccessCollaborations]
+0x19e35bec0  __TEXT,__text  -[TUConversationManager currentProcessCanAccessCollaborations].cold.1
+0x19e35bed4  __TEXT,__text  ___62-[TUConversationManager currentProcessCanAccessCollaborations]_block_invoke
+0x19e35bf00  __TEXT,__text  ___170-[TUAudioController(Internal) _requestUpdatedValueWithBlock:object:isRequestingPointer:forceNewRequest:scheduleTimePointer:notificationString:notificationUserInfo:queue:]_block_invoke
+0x19e35c188  __TEXT,__text  -[TUAudioSystemController _pickableRoutesForVoiceMailWithForceNewRequest:]
+0x19e35c3c8  __TEXT,__text  -[TUAudioSystemController _pickableRoutesForPlayAndRecordVoiceWithForceNewRequest:]
+0x19e35c5b8  __TEXT,__text  -[TUAudioSystemController _pickableRoutesForPlayAndRecordVideoWithForceNewRequest:]
+0x19e35c7a8  __TEXT,__text  -[TUAudioSystemController _pickableRoutesForPhoneCallWithForceNewRequest:]
+0x19e35ca84  __TEXT,__text  -[TUAudioSystemController isTTY]
+0x19e35cb4c  __TEXT,__text  -[TUAudioSystemController _handlePickableRoutesDidChangeNotification:]
+0x19e35cd84  __TEXT,__text  -[TUAudioSystemController _pickableRoutesForPlayAndRecordRemoteVoiceWithForceNewRequest:]
+0x19e35cf74  __TEXT,__text  -[TUAudioRoute .cxx_destruct]
+0x19e35cfd0  __TEXT,__text  -[TURoute .cxx_destruct]
+0x19e35d038  __TEXT,__text  ___32-[TUAudioSystemController isTTY]_block_invoke
+0x19e35d0cc  __TEXT,__text  ___74-[TUAudioSystemController _pickableRoutesForPhoneCallWithForceNewRequest:]_block_invoke
+0x19e35d178  __TEXT,__text  -[TUAudioRoute isBluetooth]
+0x19e35d2c8  __TEXT,__text  -[TUAudioRoute initWithDictionary:]
+0x19e35d62c  __TEXT,__text  -[TUCallServicesInterface waitForInitialStateIfNecessary]
+0x19e35d6d4  __TEXT,__text  -[TUCallContainer countOfCallsPassingTest:]
+0x19e35d7a8  __TEXT,__text  -[TUSenderIdentityCapabilitiesState voLTECallingCapabilitiesState]
+0x19e35d7b0  __TEXT,__text  -[TUCallContainer activeVideoCall]
+0x19e35d7bc  __TEXT,__text  -[TUCallCenter activeVideoCall]
+0x19e35d7fc  __TEXT,__text  -[TUCallCapabilitiesState setAccountsMatchForSecondaryCalling:]
+0x19e35d804  __TEXT,__text  -[TUCallCapabilitiesState supportsTelephonyRelayCalling]
+0x19e35d80c  __TEXT,__text  -[TUCTCapabilitiesState isEnabled]
+0x19e35d814  __TEXT,__text  ___68-[TUCallServicesInterface requestCurrentStateWithCompletionHandler:]_block_invoke_2
+0x19e35d924  __TEXT,__text  -[TUCallCapabilitiesState setCloudCallingDevices:]
+0x19e35d92c  __TEXT,__text  ___66-[TUCallCenter initWithQueue:wantsCallNotifications:featureFlags:]_block_invoke_2
+0x19e35d9a8  __TEXT,__text  -[TUCallServicesInterface _updateCurrentCalls:]
+0x19e35dc18  __TEXT,__text  -[TUCallCapabilitiesState setSenderIdentityCapabilitiesStateByUUID:]
+0x19e35dc20  __TEXT,__text  -[TUCTCapabilitiesState isEmergencySupported]
+0x19e35dc28  __TEXT,__text  -[TUThumperCTCapabilitiesState publiclyAccessibleCopyWithZone:]
+0x19e35dcdc  __TEXT,__text  -[TUCallCapabilitiesState setSupportsDisplayingTelephonyCalls:]
+0x19e35dce4  __TEXT,__text  ___116-[TUConversationLinkDescriptorXPCClientDataSource conversationLinkDescriptorsWithPredicate:limit:offset:completion:]_block_invoke.114
+0x19e35dcfc  __TEXT,__text  -[TUThumperCTCapabilitiesState isAssociated]
+0x19e35dd10  __TEXT,__text  -[TUCallContainer calls]
+0x19e35dd18  __TEXT,__text  ___55-[TUCallProviderManager providersChangedForDataSource:]_block_invoke_2
+0x19e35dd24  __TEXT,__text  -[TUCallProvider emergencyHandles]
+0x19e35dd2c  __TEXT,__text  ___55-[TUCallProviderManager providersChangedForDataSource:]_block_invoke_3
+0x19e35dd80  __TEXT,__text  ___64-[TUConversationManagerXPCClient registerWithCompletionHandler:]_block_invoke
+0x19e35ddc8  __TEXT,__text  ___58-[TUConversationManagerXPCClient conversationsByGroupUUID]_block_invoke
+0x19e35de04  __TEXT,__text  -[TUConversationManagerXPCClient _requestInitialStateWithCompletionHandler:]
+0x19e35e23c  __TEXT,__text  -[TUConversationManager registerWithCompletionHandler:]
+0x19e35e2d8  __TEXT,__text  ___68-[TUCallServicesInterface requestCurrentStateWithCompletionHandler:]_block_invoke
+0x19e35e398  __TEXT,__text  +[TUSuggestionsMetadataCacheDataProvider sharedService].cold.1
+0x19e35e3ac  __TEXT,__text  -[TULocked initWithObject:]
+0x19e35e424  __TEXT,__text  -[TULocked performWhileLocked:]
+0x19e35e498  __TEXT,__text  -[TUConversationManager getActiveLinksWithCreatedOnly:completionHandler:]
+0x19e35e53c  __TEXT,__text  ___71+[TUConversationManagerXPCClient conversationManagerServerXPCInterface]_block_invoke
+0x19e35eb7c  __TEXT,__text  ___71+[TUConversationManagerXPCClient conversationManagerClientXPCInterface]_block_invoke
+0x19e35eeb8  __TEXT,__text  +[TUConversationLink baseURLStrings]
+0x19e35f024  __TEXT,__text  _booleanValueForKeyInServerBag
+0x19e35f090  __TEXT,__text  +[NSPredicate(TUManagedConversationLinkDescriptor) tu_predicateForConversationLinkDescriptorsWithActivated:]
+0x19e35f0c4  __TEXT,__text  +[NSPredicate(TUManagedConversationLinkDescriptor) tu_predicateForConversationLinkDescriptorsIsDeleted:]
+0x19e35f104  __TEXT,__text  -[TUConversationLinkDescriptorXPCClientDataSource conversationLinkDescriptorsWithPredicate:limit:offset:completion:]
+0x19e35f23c  __TEXT,__text  -[TUCallCapabilitiesState isFaceTimeAudioAvailable]
+0x19e35f244  __TEXT,__text  -[TUSenderIdentityCapabilitiesState setVoLTECallingCapabilitiesState:]
+0x19e35f24c  __TEXT,__text  -[TUCallCenter conversationManager]
+0x19e35f2d0  __TEXT,__text  -[TUCallCenter initWithQueue:featureFlags:]
+0x19e35f2dc  __TEXT,__text  ___36-[TUCallCapabilitiesXPCClient state]_block_invoke
+0x19e35f324  __TEXT,__text  -[TUMetadataCacheDataProvider initWithQueue:]
+0x19e35f3cc  __TEXT,__text  +[TUSuggestionsMetadataCacheDataProvider sharedService]
+0x19e35f404  __TEXT,__text  -[TUCallCapabilitiesState copyWithZone:]
+0x19e35f664  __TEXT,__text  -[TUCTCapabilitiesState copyWithZone:]
+0x19e35f6fc  __TEXT,__text  -[TUThumperCTCapabilitiesState copyWithZone:]
+0x19e35f7f0  __TEXT,__text  +[TUCallCapabilities supportsPrimaryCalling]
+0x19e35f840  __TEXT,__text  +[TUMetadataCacheDataProvider classIdentifier]
+0x19e35f8e0  __TEXT,__text  -[TUCallDirectoryMetadataCacheDataProvider init].cold.1
+0x19e35f908  __TEXT,__text  ___43-[TUCallProviderManager addDelegate:queue:]_block_invoke
+0x19e35f960  __TEXT,__text  ___55-[TUCallProviderManager providersChangedForDataSource:]_block_invoke
+0x19e35fb48  __TEXT,__text  -[TUSubtitleProvider initWithMetadataCache:callProviderManager:]
+0x19e35fbf8  __TEXT,__text  -[TUCallProviderManager providerWithIdentifier:]
+0x19e35fc80  __TEXT,__text  ___55-[TUCallProviderManagerXPCClient providersByIdentifier]_block_invoke
+0x19e35fcd4  __TEXT,__text  -[TUCallProvider supportsCurrentPlatform]
+0x19e35fd0c  __TEXT,__text  -[TUCallProviderManagerXPCClient _updateProvidersByIdentifier:localProvidersByIdentifier:pairedHostDeviceProvidersByIdentifier:]
+0x19e35feac  __TEXT,__text  -[TUCallProvider .cxx_destruct]
+0x19e35ff5c  __TEXT,__text  +[TUCallCenter sharedInstanceWithQueue:server:shouldRegister:]
+0x19e360050  __TEXT,__text  ___44-[TUCallHistoryController loadDispatchQueue]_block_invoke
+0x19e3600b4  __TEXT,__text  -[TUCallProvider isFaceTimeProvider]
+0x19e3600f4  __TEXT,__text  _CallHistoryLibrary
+0x19e3601ec  __TEXT,__text  _CallHistoryLibrary
+0x19e3602e4  __TEXT,__text  +[TUCallCapabilities supportsDisplayingFaceTimeAudioCalls]
+0x19e360334  __TEXT,__text  +[TUCallCapabilities supportsDisplayingFaceTimeVideoCalls]
+0x19e360384  __TEXT,__text  +[TUCallHistoryController sharedControllerWithCoalescingStrategy:options:]
+0x19e3603d0  __TEXT,__text  +[TUCallHistoryController callHistoryControllerWithCoalescingStrategy:options:]
+0x19e360408  __TEXT,__text  +[TUCallHistoryController callHistoryControllerWithCoalescingStrategy:options:shouldUpdateMetadataCache:]
+0x19e360450  __TEXT,__text  -[TUCallHistoryControllerXPCClient init]
+0x19e360604  __TEXT,__text  +[TUDispatcher dispatcherWithIdentifier:]
+0x19e360650  __TEXT,__text  -[TUCallProvider initWithCoder:]
+0x19e360cb4  __TEXT,__text  -[TUCallProviderManager addDelegate:queue:]
+0x19e361398  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x19e361398  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x19e361398  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x19e361398  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x19e361398  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x19e361398  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x19e3613c8  __TEXT,__text  -[TUCallHistoryController recentCalls]
+0x19e3614e4  __TEXT,__text  ___Block_byref_object_copy_
+0x19e3614f4  __TEXT,__text  ___Block_byref_object_copy_
+0x19e361504  __TEXT,__text  ___Block_byref_object_copy_
+0x19e361514  __TEXT,__text  ___Block_byref_object_copy_
+0x19e361524  __TEXT,__text  ___Block_byref_object_copy_
+0x19e361534  __TEXT,__text  ___Block_byref_object_copy_
+0x19e361544  __TEXT,__text  ___Block_byref_object_copy_
+0x19e361554  __TEXT,__text  ___Block_byref_object_copy_
+0x19e361564  __TEXT,__text  ___Block_byref_object_copy_
+0x19e361574  __TEXT,__text  ___Block_byref_object_copy_
+0x19e361584  __TEXT,__text  ___Block_byref_object_copy_
+0x19e361594  __TEXT,__text  ___Block_byref_object_copy_
+0x19e3615a4  __TEXT,__text  ___Block_byref_object_copy_
+0x19e3615b4  __TEXT,__text  ___Block_byref_object_copy_
+0x19e3615c4  __TEXT,__text  ___Block_byref_object_copy_
+0x19e3615d4  __TEXT,__text  ___Block_byref_object_copy_
+0x19e3615e4  __TEXT,__text  ___Block_byref_object_copy_
+0x19e3615f4  __TEXT,__text  ___Block_byref_object_copy_
+0x19e361604  __TEXT,__text  ___Block_byref_object_copy_
+0x19e361614  __TEXT,__text  -[TUDispatcher dispatchSynchronousBlock:]
+0x19e361668  __TEXT,__text  +[TUCallCenter callCenterWithQueue:server:shouldRegister:]
+0x19e3616f8  __TEXT,__text  -[TUCallProviderManager providersPassingTest:]
+0x19e361878  __TEXT,__text  ___44-[TUCallHistoryController loadDispatchQueue]_block_invoke_2
+0x19e361898  __TEXT,__text  -[TUCallProvider isSystemProvider]
+0x19e361934  __TEXT,__text  -[TUCallProvider isTelephonyProvider]
+0x19e36198c  __TEXT,__text  -[TUCallProvider isSuperboxProvider]
+0x19e361a14  __TEXT,__text  ___72-[TUCallHistoryController callHistoryManagerInitializationDispatchBlock]_block_invoke
+0x19e361b20  __TEXT,__text  _getkCHCoalescingStrategyRecents
+0x19e361c18  __TEXT,__text  +[TUCallProviderManagerXPCClient callProviderManagerAllowedClasses]
+0x19e361c9c  __TEXT,__text  -[TUConversationManagerXPCClient conversationsByGroupUUID]
+0x19e361dac  __TEXT,__text  -[TUCallCapabilitiesXPCClient queue]
+0x19e361db4  __TEXT,__text  -[TUConversationManagerXPCClient shouldConnectToHost]
+0x19e361e94  __TEXT,__text  -[TUCallHistoryController dispatcher]
+0x19e361e9c  __TEXT,__text  -[TUCallProvider supportsRinging]
+0x19e361ea4  __TEXT,__text  -[TUCallServicesInterface setServer:]
+0x19e361eb0  __TEXT,__text  -[TUHandle value]
+0x19e361eb8  __TEXT,__text  -[TUHandle type]
+0x19e361ec0  __TEXT,__text  -[TUHandle .cxx_destruct]
+0x19e361f10  __TEXT,__text  -[TUHandle initWithType:value:normalizedValue:]
+0x19e361f7c  __TEXT,__text  -[TUCallProvider handoffIdentifiers]
+0x19e361f84  __TEXT,__text  -[TUHandle hash]
+0x19e361ff0  __TEXT,__text  -[TUHandle normalizedValue]
+0x19e361ff8  __TEXT,__text  -[TUHandle initWithType:value:]
+0x19e3620bc  __TEXT,__text  -[TUHandle siriDisplayName]
+0x19e3620c8  __TEXT,__text  -[TUCallProvider maximumCallGroups]
+0x19e3620d0  __TEXT,__text  -[TUCallProviderManager providerForRecentCall:]
+0x19e362334  __TEXT,__text  -[TUCallProvider prioritizedSenderIdentities]
+0x19e36233c  __TEXT,__text  ___43-[TUMetadataCacheDataProvider setDelegate:]_block_invoke
+0x19e362348  __TEXT,__text  -[TUFeatureFlags resizablePhoneAppEnabled]
+0x19e36238c  __TEXT,__text  -[TUCallCenter queue]
+0x19e362394  __TEXT,__text  -[TUCallCenter routeController]
+0x19e36247c  __TEXT,__text  -[TUCallCenter audioDeviceController]
+0x19e362508  __TEXT,__text  -[TUFeatureFlags callHistorySearchEnabled]
+0x19e36251c  __TEXT,__text  -[TUFeatureFlags betterBlockingEnabled]
+0x19e362530  __TEXT,__text  -[TUFeatureFlags increaseCallHistoryEnabled]
+0x19e362544  __TEXT,__text  -[TUSubtitleProvider localizedSubtitleForRecentCall:handle:contact:]
+0x19e36279c  __TEXT,__text  -[TUUserConfiguration isSpamFilterEnabledForFaceTime]
+0x19e362864  __TEXT,__text  -[TUCallCenter contactStore]
+0x19e3628b0  __TEXT,__text  +[CNContactStore(TelephonyUtilities) tu_contactStore]
+0x19e362970  __TEXT,__text  -[NSBundle(TelephonyUtilities) tu_assumedIdentity]
+0x19e3629d0  __TEXT,__text  +[NSBundle(TelephonyUtilities) tu_assumedIdentityForBundleIdentifier:]
+0x19e362a50  __TEXT,__text  -[CNContact(TUSearchUtilities) emailAddressStrings]
+0x19e362a98  __TEXT,__text  _tu_tcc_identity_create
+0x19e362b80  __TEXT,__text  ___gettcc_identity_createSymbolLoc_block_invoke
+0x19e362ca8  __TEXT,__text  +[NSUserDefaults(TelephonyUtilities) tu_defaults]
+0x19e362ce0  __TEXT,__text  +[NSUserDefaults(TelephonyUtilities) tu_defaults].cold.1
+0x19e362cf4  __TEXT,__text  ___49+[NSUserDefaults(TelephonyUtilities) tu_defaults]_block_invoke
+0x19e362d8c  __TEXT,__text  ___43-[TUConversationManager addDelegate:queue:]_block_invoke
+0x19e362dd4  __TEXT,__text  -[TUSubtitleProvider callProviderForRecentCall:]
+0x19e362f00  __TEXT,__text  -[TUSubtitleProvider callProviderManager]
+0x19e362f08  __TEXT,__text  -[TUSubtitleProvider callProviderCache]
+0x19e362f10  __TEXT,__text  -[TUCallServicesInterface callContainer]
+0x19e362f80  __TEXT,__text  -[TUCallCenter currentCallCount]
+0x19e362fb8  __TEXT,__text  -[TUCallContainer enumerateCallsInvokingBlock:forCallsPassingTest:]
+0x19e362fc8  __TEXT,__text  -[TUCallContainer callPassingTest:withOptions:]
+0x19e3630e4  __TEXT,__text  -[TURoute initWithUniqueIdentifier:name:]
+0x19e3631a0  __TEXT,__text  -[NSArray(TelephonyUtilitiesAdditions) tu_firstObjectPassingTest:]
+0x19e363264  __TEXT,__text  -[TUConversationManager notificationCenter]
+0x19e36326c  __TEXT,__text  -[TUConversationManagerXPCClient queue]
+0x19e363274  __TEXT,__text  -[TUCallProviderManager delegateToQueue]
+0x19e36327c  __TEXT,__text  -[TUCallProviderManager initWithDataSource:type:queue:featureFlags:]
+0x19e363368  __TEXT,__text  -[TUUIXPCClientConnection initWithListenerEndpoint:callCenter:]
+0x19e3635ac  __TEXT,__text  +[NSXPCInterface(TUUIXPCClientSupport) hostInterface]
+0x19e3635e4  __TEXT,__text  +[NSXPCInterface(TUUIXPCClientSupport) hostInterface].cold.1
+0x19e3635f8  __TEXT,__text  -[TUCallHistoryController setCallHistoryManager:]
+0x19e363790  __TEXT,__text  ___53+[NSXPCInterface(TUUIXPCClientSupport) hostInterface]_block_invoke
+0x19e3637dc  __TEXT,__text  -[TUCallHistoryController _callHistoryCoalescingStrategyForCoalescingStrategy:]
+0x19e363ae8  __TEXT,__text  -[TUCallHistoryController _updateCallHistoryManagerUsingCurrentOptions]
+0x19e3642bc  __TEXT,__text  -[NSXPCInterface(TUUIXPCClientSupport) setAllowedClassesForHostProtocol]
+0x19e36431c  __TEXT,__text  _getkCHServiceProviderFaceTime
+0x19e364414  __TEXT,__text  +[NSXPCInterface(TUUIXPCClientSupport) clientInterface]
+0x19e36444c  __TEXT,__text  ___69-[TUCallHistoryController callHistoryManagerRecentCallsDispatchBlock]_block_invoke
+0x19e3646f0  __TEXT,__text  +[NSXPCInterface(TUUIXPCClientSupport) clientInterface].cold.1
+0x19e364704  __TEXT,__text  ___55+[NSXPCInterface(TUUIXPCClientSupport) clientInterface]_block_invoke
+0x19e364750  __TEXT,__text  -[NSXPCInterface(TUUIXPCClientSupport) setAllowedClassesForClientProtocol]
+0x19e364754  __TEXT,__text  -[TUUIXPClientConnectionWeakWrapper initWithWrappedObject:]
+0x19e3647bc  __TEXT,__text  -[TUUIXPCClientConnection ping]
+0x19e3647f8  __TEXT,__text  -[TUCallProvider emergencyLabeledHandles]
+0x19e364800  __TEXT,__text  -[TUUIXPCClientConnection hostWithErrorHandler:]
+0x19e364860  __TEXT,__text  -[TUCallProvider supportsAudioAndVideo]
+0x19e364868  __TEXT,__text  -[TUUIXPCClientConnection connection]
+0x19e364870  __TEXT,__text  -[TUCallCenter setUiDataSource:]
+0x19e36487c  __TEXT,__text  -[TUCallProvider supportsAudioOnly]
+0x19e364884  __TEXT,__text  -[TUCallProviderManagerXPCClient queue]
+0x19e36488c  __TEXT,__text  -[TUConversationManagerXPCClient _invokeCompletionHandler:]
+0x19e3648e0  __TEXT,__text  -[TUConfigurationProvider initWithNotifier:]
+0x19e364b54  __TEXT,__text  -[TUUserConfiguration init]
+0x19e364cac  __TEXT,__text  ___35+[TUUserConfiguration userDefaults]_block_invoke
+0x19e364d74  __TEXT,__text  +[TUUserConfiguration registeredDefaults]
+0x19e364dac  __TEXT,__text  -[TUConversationManager refreshActiveConversations]
+0x19e364e30  __TEXT,__text  +[TUUserConfiguration registeredDefaults].cold.1
+0x19e364e44  __TEXT,__text  ___41+[TUUserConfiguration registeredDefaults]_block_invoke
+0x19e364efc  __TEXT,__text  +[TUUserConfiguration featureFlags]
+0x19e364f34  __TEXT,__text  -[TUConfiguration initWithDataSource:]
+0x19e364fc0  __TEXT,__text  +[TUUserConfiguration featureFlags].cold.1
+0x19e364fd4  __TEXT,__text  ___35+[TUUserConfiguration featureFlags]_block_invoke
+0x19e365004  __TEXT,__text  ___getTPSCarrierBundleControllerClass_block_invoke
+0x19e365198  __TEXT,__text  -[TUConfigurationProvider setDelegate:]
+0x19e3651a4  __TEXT,__text  -[TUConfigurationProvider isSpamFilterEnabledForFaceTime]
+0x19e3651dc  __TEXT,__text  -[TUCallProviderManager faceTimeProvider]
+0x19e365248  __TEXT,__text  -[TUConfigurationProvider init]
+0x19e3652a8  __TEXT,__text  -[TUConfigurationProvider userConfiguration]
+0x19e3652b0  __TEXT,__text  +[TUHandle normalizedHandleWithDestinationID:]
+0x19e365350  __TEXT,__text  -[NSString(TelephonyUtilities) destinationIdIsTokenURI]
+0x19e36538c  __TEXT,__text  -[NSString(TelephonyUtilities) destinationIdIsEmailAddress]
+0x19e3653c8  __TEXT,__text  -[NSString(TelephonyUtilities) destinationIdIsPhoneNumber]
+0x19e365428  __TEXT,__text  -[NSString(TelephonyUtilities) destinationIdIsTemporary]
+0x19e36542c  __TEXT,__text  -[TUHandle setHasSetISOCountryCode:]
+0x19e365434  __TEXT,__text  -[NSString(TelephonyUtilities) destinationIdIsPseudonym]
+0x19e365438  __TEXT,__text  +[CNContactStoreConfiguration(TelephonyUtilities) tu_contactStoreConfigurationForBundleIdentifier:]
+0x19e3654e4  __TEXT,__text  -[TUHandle setIsoCountryCode:]
+0x19e3654ec  __TEXT,__text  -[NSString(TelephonyUtilities) destinationIdIsHardware]
+0x19e3654f0  __TEXT,__text  -[CNContactStore(TUSearchUtilities) contactForDestinationId:keysToFetch:]
+0x19e365934  __TEXT,__text  -[TUOptionalObject initWithValue:]
+0x19e3659a8  __TEXT,__text  -[TUHandle isoCountryCode]
+0x19e365a10  __TEXT,__text  -[TUMetadataCache updateCacheWithDestinationIDs:]
+0x19e365aac  __TEXT,__text  _getCHRecentCallClass
+0x19e365b80  __TEXT,__text  -[TUCallProvider bundleIdentifier]
+0x19e365b88  __TEXT,__text  ___getCHRecentCallClass_block_invoke
+0x19e365be0  __TEXT,__text  ___getCHRecentCallClass_block_invoke
+0x19e365d0c  __TEXT,__text  -[TUHandle initWithCoder:]
+0x19e365edc  __TEXT,__text  -[TUDTMFSoundPlayer init]
+0x19e365f3c  __TEXT,__text  -[TUCallHistoryController setThirdPartyCallProviders:]
+0x19e365f44  __TEXT,__text  ___46-[TUCallHistoryController setUnreadCallCount:]_block_invoke
+0x19e365fd4  __TEXT,__text  ___37-[TUDispatcher boostQualityOfService]_block_invoke
+0x19e36604c  __TEXT,__text  -[TUCallProviderManager dealloc]
+0x19e366098  __TEXT,__text  -[TUCallHistoryController providersChangedForProviderManager:]
+0x19e36619c  __TEXT,__text  -[TUCallProviderManager .cxx_destruct]
+0x19e3661ec  __TEXT,__text  ___62-[TUCallHistoryController providersChangedForProviderManager:]_block_invoke
+0x19e3662a4  __TEXT,__text  ___38-[TUCallHistoryController recentCalls]_block_invoke
+0x19e3662b8  __TEXT,__text  ___44-[TUCallProviderManagerXPCClient invalidate]_block_invoke
+0x19e36630c  __TEXT,__text  ___62-[TUCallHistoryController providersChangedForProviderManager:]_block_invoke_2
+0x19e36632c  __TEXT,__text  -[TUCallCapabilitiesState supportsDisplayingFaceTimeAudioCalls]
+0x19e366334  __TEXT,__text  -[TUCallProviderManagerXPCClient dealloc]
+0x19e366388  __TEXT,__text  -[TUCallProviderManagerXPCClient .cxx_destruct]
+0x19e3663ec  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e3663f4  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e3663fc  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e366404  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e36640c  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e366414  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e36641c  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e366424  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e36642c  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e366434  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e36643c  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e366444  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e36644c  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e366454  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e36645c  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e366464  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e36646c  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e366474  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e36647c  __TEXT,__text  ___Block_byref_object_dispose_
+0x19e366484  __TEXT,__text  -[CNContact(TUSearchResultsAdditions) displayName]
+0x19e366498  __TEXT,__text  -[TUMetadataItem .cxx_destruct]
+0x19e3664d0  __TEXT,__text  -[TUMetadataItem init]
+0x19e366550  __TEXT,__text  ___56-[TUMetadataCacheDataProvider metadataForDestinationID:]_block_invoke
+0x19e3665c0  __TEXT,__text  +[TUMetadataDestinationID(CallHistoryAdditions) metadataDestinationIDsForCHRecentCalls:]
+0x19e366920  __TEXT,__text  ___60-[TUMetadataCacheDataProvider metadataDictForDestinationID:]_block_invoke
+0x19e366990  __TEXT,__text  -[TUMetadataDestinationID initWithHandle:]
+0x19e366b34  __TEXT,__text  -[TUMetadataDestinationID hash]
+0x19e366b84  __TEXT,__text  -[TUMetadataCacheDataProvider metadataForDestinationID:]
+0x19e366cbc  __TEXT,__text  -[TUMetadataDestinationID handle]
+0x19e366cc4  __TEXT,__text  -[TUMetadataCacheDataProvider providerDictCache]
+0x19e366ccc  __TEXT,__text  -[TUMetadataDestinationID isEqual:]
+0x19e366d40  __TEXT,__text  -[TUMetadataDestinationID isEqualToMetadataDestinationID:]
+0x19e366da4  __TEXT,__text  -[TUHandle isEquivalentToHandle:]
+0x19e366e88  __TEXT,__text  -[TUMetadataDestinationID .cxx_destruct]
+0x19e366e94  __TEXT,__text  ___80-[TUMetadataCache _updateCacheWithDestinationIDs:onlyEmptyProviders:completion:]_block_invoke
+0x19e366fe8  __TEXT,__text  -[TUFeatureFlags phoneRecentsAvatarsEnabled]
+0x19e366ffc  __TEXT,__text  -[TUMetadataCache updateCacheWithDestinationIDs:completion:]
+0x19e3670a4  __TEXT,__text  -[TUMetadataCacheDataProvider isEmpty]
+0x19e367180  __TEXT,__text  -[TUOptionalObject value]
+0x19e367188  __TEXT,__text  +[TUHandle normalizedPhoneNumberHandleForValue:isoCountryCode:]
+0x19e367274  __TEXT,__text  +[TUMetadataDestinationID(CallHistoryAdditions) metadataDestinationIDsForCHRecentCall:]
+0x19e367320  __TEXT,__text  -[TUSubtitleProvider metadataCache]
+0x19e367328  __TEXT,__text  -[CNContactStore(TUSearchUtilities) contactForDestinationId:keysToFetch:].cold.1
+0x19e367368  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e367368  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e367368  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e367368  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e367368  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e367368  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e367368  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e367368  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e36737c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e36737c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e36737c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e36737c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e36737c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e36738c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e36738c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e3673a0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e3673a0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e3673b0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e3673c4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e3673e4  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x19e3673e4  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x19e3673f0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e367400  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e367414  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e367428  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x19e367428  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x19e36743c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e367450  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e367460  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e367488  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19e367498  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e3674b8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e3674cc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e3674ec  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e36750c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e36752c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e367540  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e367560  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e367574  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e367588  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e3675a8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e3675c8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e3675dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e3675fc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e36761c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e367638  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e367658  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19e36766c  __TEXT,__text  -[TUMetadataCacheDataProvider providerCache]
+0x19e367674  __TEXT,__text  -[TUHandle description]
+0x19e367924  __TEXT,__text  -[TUMetadataCacheDataProvider metadataDictForDestinationID:]
+0x19e367bbc  __TEXT,__text  -[TUMetadataItem metadataForProvider:]
+0x19e367c24  __TEXT,__text  _TUCallScreeningDisabledMDMProfile
+0x19e367c64  __TEXT,__text  -[TUMetadataItem callMetadata]
+0x19e367c6c  __TEXT,__text  _getLockdownModeManagerClass
+0x19e367d84  __TEXT,__text  -[TUCallProvider iconTemplateImageData]
+0x19e367d8c  __TEXT,__text  ___getLockdownModeManagerClass_block_invoke
+0x19e367f24  __TEXT,__text  -[CNContact(TelephonyUtilities) tu_localizedDisplayStringForHandle:]
+0x19e3682bc  __TEXT,__text  -[CNContact(TelephonyUtilities) tu_labeledValueForPhoneNumber:]
+0x19e368434  __TEXT,__text  _TUClarityEnabled.cold.1
+0x19e368434  __TEXT,__text  _TUClarityEnabled.cold.1
+0x19e368438  __TEXT,__text  -[CNLabeledValue(TUAdditions) tuIsSuggested]
+0x19e368480  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x19e368480  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x19e368480  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x19e368480  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x19e36848c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x19e3684b4  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x19e3684cc  __TEXT,__text  ___TUClarityEnabled_block_invoke
+0x19e3685b4  __TEXT,__text  ___getCLFSystemShellSwitcherClass_block_invoke
+0x19e3686e0  __TEXT,__text  ___42-[TUCallHistoryController setRecentCalls:]_block_invoke
+0x19e368738  __TEXT,__text  +[TUMetadataClientController sharedInstance]
+0x19e3687cc  __TEXT,__text  ___44+[TUMetadataClientController sharedInstance]_block_invoke
+0x19e3687f8  __TEXT,__text  -[TUMetadataClientController init]
+0x19e3689a4  __TEXT,__text  _TUPhoneNumberNormalizedPhoneNumberString
+0x19e368a70  __TEXT,__text  __TULiveVoicemailAvailability
+0x19e368ba0  __TEXT,__text  ___52-[TUCallHistoryController dispatcherDidFinishBoost:]_block_invoke
+0x19e368bf4  __TEXT,__text  -[CNContact(TelephonyUtilities) tuHandlesForPhoneNumbers]
+0x19e368e78  __TEXT,__text  __TUTranscriptionAvailability
+0x19e368ff0  __TEXT,__text  -[TUHandle isEqual:]
+0x19e369064  __TEXT,__text  -[TUHandle isEqualToHandle:]
+0x19e369248  __TEXT,__text  ___getSFUtilitiesClass_block_invoke
+0x19e3692a0  __TEXT,__text  -[CNContact(TelephonyUtilities) tuHandlesForEmailAddresses]
+0x19e369410  __TEXT,__text  +[TUSFSpeechSoftLinking isGeneralASRSupportedOnDevice]
+0x19e3694e4  __TEXT,__text  -[TUCallHistoryController featureFlags]
+0x19e3694ec  __TEXT,__text  _SpeechLibrary
+0x19e3695e0  __TEXT,__text  -[TUCallHistoryController callHistoryControllerCallHistoryFetchLimit]
+0x19e369624  __TEXT,__text  +[TUCallCapabilities supportsTelephonyRelayCalling]
+0x19e369674  __TEXT,__text  -[TUSenderIdentityCapabilities initWithSenderIdentityUUID:state:client:]
+0x19e369734  __TEXT,__text  -[TUSenderIdentityCapabilitiesState copyWithZone:]
+0x19e369838  __TEXT,__text  -[TUSenderIdentityCapabilitiesState publiclyAccessibleCopyWithZone:]
+0x19e369964  __TEXT,__text  +[TUCallCapabilities outgoingRelayCallerID]
+0x19e3699bc  __TEXT,__text  -[TUSenderIdentityCapabilitiesState senderIdentityUUID]
+0x19e3699c4  __TEXT,__text  -[TUSenderIdentityCapabilitiesState supportsSimultaneousVoiceAndData]
+0x19e3699cc  __TEXT,__text  -[TUSenderIdentityCapabilitiesState csCallingCapabilitiesState]
+0x19e3699d4  __TEXT,__text  -[TUCTCapabilitiesState isSupported]
+0x19e3699dc  __TEXT,__text  -[TUCTCapabilitiesState setSupported:]
+0x19e3699e4  __TEXT,__text  -[TUCTCapabilitiesState setEnabled:]
+0x19e3699ec  __TEXT,__text  -[TUCTCapabilitiesState isCurrentlyAvailable]
+0x19e3699f4  __TEXT,__text  -[TUCTCapabilitiesState isRoamingSupported]
+0x19e3699fc  __TEXT,__text  -[TUCTCapabilitiesState setRoamingSupported:]
+0x19e369a04  __TEXT,__text  -[TUCTCapabilitiesState isRoamingEnabled]
+0x19e369a0c  __TEXT,__text  -[TUCTCapabilitiesState setRoamingEnabled:]
+0x19e369a14  __TEXT,__text  -[TUCTCapabilitiesState setEmergencySupported:]
+0x19e369a1c  __TEXT,__text  -[TUCTCapabilitiesState isEmergencyCurrentlyAvailable]
+0x19e369a24  __TEXT,__text  -[TUCTCapabilitiesState setEmergencyCurrentlyAvailable:]
+0x19e369a2c  __TEXT,__text  -[TUSenderIdentityCapabilitiesState wiFiCallingCapabilitiesState]
+0x19e369a34  __TEXT,__text  -[TUSenderIdentityCapabilitiesState thumperCallingCapabilitiesState]
+0x19e369a3c  __TEXT,__text  -[TUThumperCTCapabilitiesState isApproved]
+0x19e369a50  __TEXT,__text  -[TUCallContainer enumerateCallsWithOptions:invokingBlock:forCallsPassingTest:]
+0x19e369b30  __TEXT,__text  -[TUCallContainer callPassingTest:]
+0x19e369b38  __TEXT,__text  -[TUThumperCTCapabilitiesState supportsDefaultPairedDevice]
+0x19e369b4c  __TEXT,__text  -[TUCTCapabilitiesState provisioningPostData]
+0x19e369b54  __TEXT,__text  -[TUCTCapabilitiesState provisioningStatus]
+0x19e369b5c  __TEXT,__text  -[TUSenderIdentityCapabilitiesState setCsCallingCapabilitiesState:]
+0x19e369b64  __TEXT,__text  -[TUSenderIdentityCapabilitiesState setWiFiCallingCapabilitiesState:]
+0x19e369b6c  __TEXT,__text  -[TUThumperCTCapabilitiesState accountID]
+0x19e369b80  __TEXT,__text  -[TUThumperCTCapabilitiesState approvedSecondaryDeviceIDs]
+0x19e369b94  __TEXT,__text  -[TUThumperCTCapabilitiesState localDeviceID]
+0x19e369ba8  __TEXT,__text  -[TUSenderIdentityCapabilitiesState setThumperCallingCapabilitiesState:]
+0x19e369bb0  __TEXT,__text  -[NSSet(TelephonyUtilities) tu_containsObjectPassingTest:]
+0x19e369be4  __TEXT,__text  -[NSSet(TelephonyUtilities) tu_anyObjectPassingTest:]
+0x19e369c24  __TEXT,__text  ___45+[TUCallCapabilities isThumperCallingEnabled]_block_invoke
+0x19e369c50  __TEXT,__text  -[TUSenderIdentityCapabilities isThumperCallingEnabled]
+0x19e369ca0  __TEXT,__text  -[TUSenderIdentityCapabilities state]
+0x19e369ca8  __TEXT,__text  -[TUSenderIdentityCapabilities .cxx_destruct]
+0x19e369cf8  __TEXT,__text  -[TUSenderIdentityCapabilities thumperCallingCapabilityInfo]
+0x19e369d50  __TEXT,__text  -[TUCTCapabilitiesState(TUCTCapabilityInfo) ctCapabilityInfo]
+0x19e369e3c  __TEXT,__text  -[TUCTCapabilityInfo setProvisioningStatus:]
+0x19e369e44  __TEXT,__text  -[TUCTCapabilityInfo setProvisioningURL:]
+0x19e369e4c  __TEXT,__text  -[TUCTCapabilityInfo setProvisioningPostData:]
+0x19e369e54  __TEXT,__text  -[TUCTCapabilityInfo setCanEnable:]
+0x19e369e5c  __TEXT,__text  -[TUCTCapabilityInfo setEnabled:]
+0x19e369e64  __TEXT,__text  -[TUCTCapabilityInfo setCanEnableRoaming:]
+0x19e369e6c  __TEXT,__text  -[TUCTCapabilityInfo setRoamingEnabled:]
+0x19e369e74  __TEXT,__text  -[TUCTCapabilityInfo provisioningStatus]
+0x19e369e7c  __TEXT,__text  -[TUCTCapabilityInfo .cxx_destruct]
+0x19e369eb4  __TEXT,__text  -[TUAudioSystemController _handleVolumeDidChangeNotification:]
+0x19e369fc4  __TEXT,__text  ___62-[TUAudioSystemController _handleVolumeDidChangeNotification:]_block_invoke
+0x19e36a01c  __TEXT,__text  -[TUAudioController(Internal) _acquireLock]
+0x19e36a024  __TEXT,__text  -[TUAudioController(Internal) _releaseLock]
+0x19e36a02c  __TEXT,__text  -[TUConversationManagerXPCClient _requestInitialStateIfNecessary]
+0x19e36a084  __TEXT,__text  -[TUConversationManager activeConversations]
+0x19e36a134  __TEXT,__text  -[TUConversationManager dataSource]
+0x19e36a13c  __TEXT,__text  -[TUConversationManagerXPCClient hasRequestedInitialState]
+0x19e36a144  __TEXT,__text  -[TUConversationManager conversationsNotBackedByGroupSessions]
+0x19e36a14c  __TEXT,__text  -[TUAudioController(Internal) _requestUpdatedValueWithBlock:object:isRequestingPointer:forceNewRequest:scheduleTimePointer:notificationString:queue:]
+0x19e36a174  __TEXT,__text  -[TUAudioController(Internal) _requestUpdatedValueWithBlock:object:isRequestingPointer:forceNewRequest:scheduleTimePointer:notificationString:notificationUserInfo:queue:]
+0x19e36a2ac  __TEXT,__text  -[TUCallCapabilitiesXPCClient state]
+0x19e36a3bc  __TEXT,__text  -[TUAudioSystemController delegate]
+0x19e36a3e4  __TEXT,__text  -[TUCallCapabilitiesState supportsPrimaryCalling]
+0x19e36a3ec  __TEXT,__text  ___83-[TUAudioSystemController _pickableRoutesForPlayAndRecordVideoWithForceNewRequest:]_block_invoke_3
+0x19e36a4a4  __TEXT,__text  +[TUAudioSystemController sharedSystemController]
+0x19e36a5d0  __TEXT,__text  +[TUAudioSystemController filteredPickableRoutesFromPickableRoutes:]
+0x19e36a74c  __TEXT,__text  -[TUAudioRoute route]
+0x19e36a760  __TEXT,__text  -[TURoute isEqualToRoute:]
+0x19e36a7e8  __TEXT,__text  -[TURoute isEqualToRouteIgnoringIsRecommended:]
+0x19e36abd8  __TEXT,__text  -[TUAudioRoute isA2DPRoute]
+0x19e36ad1c  __TEXT,__text  -[TURoute isEqual:]
+0x19e36ad90  __TEXT,__text  -[TUAudioRoute isAirTunes]
+0x19e36add0  __TEXT,__text  -[TUAudioRoute isCarAudio]
+0x19e36ae10  __TEXT,__text  -[TUAudioRoute isCurrentlyPicked]
+0x19e36af3c  __TEXT,__text  -[TUAudioRoute isBluetoothLE]
+0x19e36af7c  __TEXT,__text  -[TUAudioRoute isBluetoothManaged]
+0x19e36b0a8  __TEXT,__text  -[TUAudioRoute avAudioRouteName]
+0x19e36b0bc  __TEXT,__text  -[TUAudioRoute bluetoothEndpointType]
+0x19e36b248  __TEXT,__text  -[TURoute isInTipiWithCompanion]
+0x19e36b250  __TEXT,__text  -[TURoute isSmartRoutedTo]
+0x19e36b258  __TEXT,__text  -[TUAudioRoute isDefaultRoute]
+0x19e36b360  __TEXT,__text  -[TUAudioRoute _routeTypeEqualTo:]
+0x19e36b4a4  __TEXT,__text  -[TUAudioRoute deviceType]
+0x19e36b7a8  __TEXT,__text  -[TUAudioRoute mxBluetoothProductIdentifier]
+0x19e36b8cc  __TEXT,__text  -[TURoute isGuest]
+0x19e36b8d4  __TEXT,__text  -[TUAudioRoute identifiersOfOtherConnectedDevices]
+0x19e36bbe4  __TEXT,__text  -[TURoute uniqueIdentifier]
+0x19e36bbec  __TEXT,__text  -[TUAudioRoute isWiredHeadphones]
+0x19e36bc50  __TEXT,__text  -[TUAudioRoute isHeadphoneJackConnected]
+0x19e36bd7c  __TEXT,__text  -[TUAudioRoute isReceiver]
+0x19e36bdbc  __TEXT,__text  -[TUAudioRoute isSpeaker]
+0x19e36bdfc  __TEXT,__text  -[TURoute supportsRelay]
+0x19e36be04  __TEXT,__text  -[TUAudioRoute isInEarDetectionEnabled]
+0x19e36bf48  __TEXT,__text  -[TUAudioRoute isInEarDetectionSupported]
+0x19e36c08c  __TEXT,__text  -[TUAudioRoute isPreferred]
+0x19e36c1b8  __TEXT,__text  -[TUAudioRoute isPreferredAndActive]
+0x19e36c2e4  __TEXT,__text  -[TURoute name]
+0x19e36c2ec  __TEXT,__text  ___74-[TUAudioSystemController _pickableRoutesForVoiceMailWithForceNewRequest:]_block_invoke_3
+0x19e36c370  __TEXT,__text  ___83-[TUAudioSystemController _pickableRoutesForPlayAndRecordVoiceWithForceNewRequest:]_block_invoke_3
+0x19e36c424  __TEXT,__text  ___89-[TUAudioSystemController _pickableRoutesForPlayAndRecordRemoteVoiceWithForceNewRequest:]_block_invoke_3
+0x19e36c4d8  __TEXT,__text  -[TUAudioRoute isWiredHeadset]
+0x19e36c660  __TEXT,__text  -[TUAudioRoute isPartnerRouteRoutable]
+0x19e36c78c  __TEXT,__text  -[TUAudioRoute isSiblingRoutePresent]
+0x19e36c8b8  __TEXT,__text  -[TURoute isRecommended]
+0x19e36c8c0  __TEXT,__text  -[TURoute isDisabled]
+0x19e36c8c8  __TEXT,__text  -[TUAudioRoute isWirelessHeadset]
+0x19e36c9e4  __TEXT,__text  -[TUAudioRoute supportsSharePlay]
+0x19e36cb20  __TEXT,__text  -[TUCallCenter incomingVideoCall]
+0x19e36cb60  __TEXT,__text  -[TUCallContainer incomingVideoCall]
+0x19e36cb70  __TEXT,__text  -[TUCallCapabilitiesState initWithCoder:]
+0x19e36d028  __TEXT,__text  -[TUCallCapabilitiesState init]
+0x19e36d0a8  __TEXT,__text  -[TUCallCapabilitiesState setRelayCallingDisabledForDeviceID:]
+0x19e36d0b0  __TEXT,__text  -[TUCallCapabilitiesState setOutgoingRelayCallerID:]
+0x19e36d0b8  __TEXT,__text  -[TUSenderIdentityCapabilitiesState initWithCoder:]
+0x19e36d38c  __TEXT,__text  ___swift_noop_void_return
+0x19e36dc14  __TEXT,__text  ___swift_instantiateConcreteTypeFromMangledNameV2
+0x19e36dda0  __TEXT,__text  ___swift_project_boxed_opaque_existential_1Tm
+0x19e36dda0  __TEXT,__text  ___swift_project_boxed_opaque_existential_1Tm
+0x19e36dda0  __TEXT,__text  ___swift_project_boxed_opaque_existential_1Tm
+0x19e36ddd0  __TEXT,__text  ___swift_memcpy1_1
+0x19e36dddc  __TEXT,__text  -[TUCallProvider encodeWithCoder:]
+0x19e36e35c  __TEXT,__text  -[TUSandboxExtendedURL encodeWithCoder:]
+0x19e36e5e4  __TEXT,__text  -[TUSandboxExtendedURL sandboxExtensionClass]
+0x19e36e5ec  __TEXT,__text  -[TUCallProvider maximumCallsPerCallGroup]
+0x19e36e5f4  __TEXT,__text  -[TUCallProvider supportsEmergency]
+0x19e36e5fc  __TEXT,__text  -[TUCallProvider supportsVoicemail]
+0x19e36e604  __TEXT,__text  -[TUCallProvider supportsRecents]
+0x19e36e60c  __TEXT,__text  -[TUCallProvider audioSessionID]
+0x19e36e614  __TEXT,__text  -[TUCallProvider supportedHandleTypes]
+0x19e36e61c  __TEXT,__text  -[TUCallProvider bundleURL]
+0x19e36e624  __TEXT,__text  -[TUCallProvider localizedName]
+0x19e36e62c  __TEXT,__text  -[TUCallProvider sandboxExtendedRingtoneSoundURL]
+0x19e36e634  __TEXT,__text  -[TUSandboxExtendedURL URL]
+0x19e36e74c  __TEXT,__text  -[TUSandboxExtendedURL sandboxExtensionToken]
+0x19e36e754  __TEXT,__text  +[TUCallCenter callCenterWithQueue:server:shouldRegister:featureFlags:]
+0x19e36e870  __TEXT,__text  -[TUCallServicesInterface initWithQueue:callCenter:wantsCallNotifications:]
+0x19e36e8f8  __TEXT,__text  -[TUCallServicesInterface initWithQueue:callCenter:wantsCallNotifications:featureFlags:]
+0x19e36eb20  __TEXT,__text  -[TUCallServicesInterface queueContext]
+0x19e36eb24  __TEXT,__text  -[TUCallServicesClientCapabilities setDelegate:]
+0x19e36eb30  __TEXT,__text  -[TUCallNotificationManager initWithNotificationCenter:wantsCallNotifications:]
+0x19e36ebac  __TEXT,__text  -[TUCallServicesInterface performBlockOnQueue:]
+0x19e36ebb4  __TEXT,__text  -[TUCallServicesInterface requestCurrentStateWithCompletionHandler:]
+0x19e36ec64  __TEXT,__text  -[TUCallServicesInterface setHasRequestedInitialState:]
+0x19e36ec6c  __TEXT,__text  -[TUCallServicesInterface callServicesClientCapabilities]
+0x19e36ec74  __TEXT,__text  -[TUCallServicesClientCapabilities save]
+0x19e36ecb8  __TEXT,__text  -[TUCallServicesClientCapabilities delegate]
+0x19e36ecd8  __TEXT,__text  -[TUCallServicesInterface asynchronousServer]
+0x19e36ed50  __TEXT,__text  -[TUCallServicesInterface server]
+0x19e36ed70  __TEXT,__text  -[TUCallServicesInterface xpcConnection]
+0x19e36eda8  __TEXT,__text  -[TUCallProvider originalRingtoneSoundURL]
+0x19e36edb0  __TEXT,__text  -[TUCallProvider isTinCanProvider]
+0x19e36edf0  __TEXT,__text  -[TUCallProvider supportsDynamicSystemUI]
+0x19e36edf8  __TEXT,__text  -[TUCallProvider supportsAudioTranslation]
+0x19e36ee00  __TEXT,__text  +[TUCallProvider supportsSecureCoding]
+0x19e36ee08  __TEXT,__text  +[TUHandle supportsSecureCoding]
+0x19e36ee10  __TEXT,__text  -[TUCallServicesClientCapabilities encodeWithCoder:]
+0x19e36eec0  __TEXT,__text  -[TUCallServicesInterface isServerLocal]
+0x19e36eef4  __TEXT,__text  -[TUCallCapabilitiesState publiclyAccessibleCopyWithZone:]
+0x19e36f214  __TEXT,__text  -[TUCallServicesInterface hasServerLaunched]
+0x19e36f2f0  __TEXT,__text  -[TUCallServicesInterface connectionRequestNotificationToken]
+0x19e36f2f8  __TEXT,__text  -[TUCallServicesInterface asynchronousServerWithErrorHandler:]
+0x19e36f38c  __TEXT,__text  -[TUCallCapabilitiesState setSupportsPrimaryCalling:]
+0x19e36f394  __TEXT,__text  -[TUCallCapabilitiesState supportsBasebandCalling]
+0x19e36f39c  __TEXT,__text  -[TUCallCapabilitiesState setSupportsBasebandCalling:]
+0x19e36f3a4  __TEXT,__text  -[TUCallCapabilitiesState supportsCellularData]
+0x19e36f3ac  __TEXT,__text  -[TUCallCapabilitiesState setSupportsCellularData:]
+0x19e36f3b4  __TEXT,__text  -[TUCallCapabilitiesState supportsDisplayingTelephonyCalls]
+0x19e36f3bc  __TEXT,__text  -[TUConversationManagerXPCClient setDelegate:]
+0x19e36f3c8  __TEXT,__text  -[TUCallCapabilitiesState setSupportsDisplayingFaceTimeAudioCalls:]
+0x19e36f3d0  __TEXT,__text  -[TUCallCapabilitiesState supportsDisplayingFaceTimeVideoCalls]
+0x19e36f3d8  __TEXT,__text  -[TUCallCapabilitiesState setSupportsDisplayingFaceTimeVideoCalls:]
+0x19e36f3e0  __TEXT,__text  -[TUCallCapabilitiesState setFaceTimeAudioAvailable:]
+0x19e36f3e8  __TEXT,__text  -[TUCallCapabilitiesState isFaceTimeVideoAvailable]
+0x19e36f3f0  __TEXT,__text  -[TUCallCapabilitiesState setFaceTimeVideoAvailable:]
+0x19e36f3f8  __TEXT,__text  -[TUCallCapabilitiesState areCTCapabilitiesValid]
+0x19e36f400  __TEXT,__text  -[TUConversationManagerXPCClient registerWithCompletionHandler:]
+0x19e36f4b4  __TEXT,__text  -[TUCallCapabilitiesState setCtCapabilitiesValid:]
+0x19e36f4bc  __TEXT,__text  -[TUCallCapabilitiesState supportsRelayCalling]
+0x19e36f4c4  __TEXT,__text  +[TUCallServicesClientCapabilities supportsSecureCoding]
+0x19e36f4cc  __TEXT,__text  -[TUCallCapabilitiesState setSupportsRelayCalling:]
+0x19e36f4d4  __TEXT,__text  -[TUCallServicesClientCapabilities initWithCoder:]
+0x19e36f5a8  __TEXT,__text  -[TUCallCapabilitiesState accountsMatchForSecondaryCalling]
+0x19e36f5b0  __TEXT,__text  -[TUCallCapabilitiesState accountsSupportSecondaryCalling]
+0x19e36f5b8  __TEXT,__text  -[TUCallCapabilitiesState setAccountsSupportSecondaryCalling:]
+0x19e36f5c0  __TEXT,__text  -[TUConversationManagerXPCClient setHasRequestedInitialState:]
+0x19e36f5c8  __TEXT,__text  -[TUCallCapabilitiesState areRelayCallingFeaturesEnabled]
+0x19e36f5d0  __TEXT,__text  -[TUConversationManagerXPCClient shouldConnectToken]
+0x19e36f5d8  __TEXT,__text  -[TUCallCapabilitiesState setRelayCallingFeaturesEnabled:]
+0x19e36f5e0  __TEXT,__text  -[TUCallCapabilitiesState isRelayCallingEnabled]
+0x19e36f5e8  __TEXT,__text  -[TUCallCapabilitiesState setRelayCallingEnabled:]
+0x19e36f5f0  __TEXT,__text  -[TUCallCapabilitiesState relayCallingAvailability]
+0x19e36f5f8  __TEXT,__text  -[TUCallCapabilitiesState setRelayCallingAvailability:]
+0x19e36f600  __TEXT,__text  -[TUCallCapabilitiesState setSupportsTelephonyRelayCalling:]
+0x19e36f608  __TEXT,__text  -[TUCallCapabilitiesState supportsFaceTimeAudioRelayCalling]
+0x19e36f610  __TEXT,__text  -[TUCallCapabilitiesState setSupportsFaceTimeAudioRelayCalling:]
+0x19e36f618  __TEXT,__text  -[TUCallCapabilitiesState supportsFaceTimeVideoRelayCalling]
+0x19e36f620  __TEXT,__text  -[TUCallCapabilitiesState setSupportsFaceTimeVideoRelayCalling:]
+0x19e36f628  __TEXT,__text  -[TUCallCapabilitiesState senderIdentityCapabilitiesStateByUUID]
+0x19e36f630  __TEXT,__text  -[TUCallCapabilitiesState encodeWithCoder:]
+0x19e36f954  __TEXT,__text  -[TUCallCapabilitiesState relayCallingDisabledForDeviceID]
+0x19e36f95c  __TEXT,__text  -[TUCallCapabilitiesState outgoingRelayCallerID]
+0x19e36f964  __TEXT,__text  -[TUCallCapabilitiesState cloudCallingDevices]
+0x19e36f96c  __TEXT,__text  -[TUCallCapabilitiesState isEmergencyCallbackModeEnabled]
+0x19e36f974  __TEXT,__text  -[TUCallCapabilitiesState isEmergencyCallbackPossible]
+0x19e36f97c  __TEXT,__text  +[TUCallCapabilitiesState supportsSecureCoding]
+0x19e36f984  __TEXT,__text  -[TUCallCapabilitiesState setEmergencyCallbackModeEnabled:]
+0x19e36f98c  __TEXT,__text  -[TUCallCapabilitiesState setEmergencyCallbackPossible:]
+0x19e36f994  __TEXT,__text  -[TUCallCapabilitiesState description]
+0x19e36fe10  __TEXT,__text  -[TUSandboxExtendedURL initWithURL:]
+0x19e36fe84  __TEXT,__text  +[TUSandboxExtendedURL supportsSecureCoding]
+0x19e36fe8c  __TEXT,__text  -[TUSandboxExtendedURL initWithCoder:]
+0x19e36ff64  __TEXT,__text  -[TUCallCenter frontmostCall]
+0x19e36ffa4  __TEXT,__text  -[TUCallContainer callsPassingTest:]
+0x19e3700c0  __TEXT,__text  -[TUCallContainer currentVideoCalls]
+0x19e3700cc  __TEXT,__text  -[TUCallContainer frontmostCall]
+0x19e370140  __TEXT,__text  -[TUCallContainer currentVideoCall]
+0x19e3701c0  __TEXT,__text  -[TUCallCenter currentVideoCall]
+0x19e370200  __TEXT,__text  -[TURoute description]
+0x19e370820  __TEXT,__text  -[TUCallCenter callPassingTest:]
+0x19e370880  __TEXT,__text  -[TUCallCenter(TUBargeCall) bargeCallsPassingTest:]
+0x19e370920  __TEXT,__text  -[TUCallContainer(TUBargeCall) bargeCallsPassingTest:]
+0x19e370a3c  __TEXT,__text  -[TUCallContainer(TUBargeCall) enumerateBargeCallsInvokingBlock:forCallsPassingTest:]
+0x19e370b18  __TEXT,__text  -[TUFeatureFlags dualSIMRingtoneEnabled]
+0x19e370b2c  __TEXT,__text  ___89-[TUAudioSystemController _pickableRoutesForPlayAndRecordRemoteVoiceWithForceNewRequest:]_block_invoke
+0x19e370b70  __TEXT,__text  -[TUAudioRoute customDescription]
+0x19e370c74  __TEXT,__text  -[TURoute isCarKitRoute]
+0x19e370c94  __TEXT,__text  -[TURoute isWiredHeadphones]
+0x19e370c9c  __TEXT,__text  -[TURoute isWiredHeadset]
+0x19e370ca4  __TEXT,__text  -[TURoute isWirelessHeadset]
+0x19e370cac  __TEXT,__text  -[TURoute isPartnerRouteRoutable]
+0x19e370cb4  __TEXT,__text  -[TURoute encodeWithCoder:]
+0x19e3713c8  __TEXT,__text  -[TUAudioSystemController bestGuessPickableRoutesForAnyCall]
+0x19e371420  __TEXT,__text  -[TURoute isBluetoothLE]
+0x19e371428  __TEXT,__text  -[TURoute isPreferred]
+0x19e371430  __TEXT,__text  -[TURoute isReceiver]
+0x19e371438  __TEXT,__text  -[TURoute isSpeaker]
+0x19e371440  __TEXT,__text  -[TURoute identifiersOfOtherConnectedDevices]
+0x19e371448  __TEXT,__text  -[TURoute isInEarDetectionEnabled]
+0x19e371450  __TEXT,__text  -[TURoute isInEarDetectionSupported]
+0x19e371458  __TEXT,__text  -[TURoute isPreferredAndActive]
+0x19e371460  __TEXT,__text  -[TURoute isBluetoothManaged]
+0x19e371468  __TEXT,__text  -[TURoute isDefaultRoute]
+0x19e371470  __TEXT,__text  -[TURoute deviceType]
+0x19e371478  __TEXT,__text  -[TURoute bluetoothEndpointType]
+0x19e371480  __TEXT,__text  -[TURoute isBluetooth]
+0x19e371488  __TEXT,__text  -[TURoute isA2DPRoute]
+0x19e371490  __TEXT,__text  -[TURoute isAirTunes]
+0x19e371498  __TEXT,__text  -[TURoute isCarAudio]
+0x19e3714a0  __TEXT,__text  -[TURoute isCurrentlyPicked]
+0x19e3714a8  __TEXT,__text  -[TURoute isTipiParticipant]
+0x19e3714e4  __TEXT,__text  -[TURoute isTriangleParticipant]
+0x19e371544  __TEXT,__text  -[TURoute customDescription]
+0x19e371550  __TEXT,__text  -[TUCallServicesInterface handleLocalRoutesByUniqueIdentifierUpdated:]
+0x19e3715e4  __TEXT,__text  -[TURoute initWithCoder:]
+0x19e371c1c  __TEXT,__text  -[TURoute isSiblingRoutePresent]
+0x19e371c24  __TEXT,__text  -[TURoute supportsSharePlay]
+0x19e371c2c  __TEXT,__text  ___70-[TUCallServicesInterface handleLocalRoutesByUniqueIdentifierUpdated:]_block_invoke
+0x19e371c74  __TEXT,__text  -[TUCallServicesInterface localRouteController]
+0x19e371c7c  __TEXT,__text  -[TUCallContainer currentAudioAndVideoCalls]
+0x19e371c88  __TEXT,__text  -[TUFeatureFlags expanseBTSwitchingEnabled]
+0x19e371c9c  __TEXT,__text  ___74-[TUAudioSystemController _pickableRoutesForVoiceMailWithForceNewRequest:]_block_invoke
+0x19e371ce0  __TEXT,__text  -[TURouteController handleRoutesByUniqueIdentifierUpdated:]
+0x19e371ebc  __TEXT,__text  -[TURouteController queue]
+0x19e371ec4  __TEXT,__text  -[TURoute setWiredHeadphones:]
+0x19e371ecc  __TEXT,__text  -[TURoute setWiredHeadset:]
+0x19e371ed4  __TEXT,__text  -[TURoute setUniqueIdentifier:]
+0x19e371edc  __TEXT,__text  -[TURoute setReceiver:]
+0x19e371ee4  __TEXT,__text  -[TURoute setSpeaker:]
+0x19e371eec  __TEXT,__text  -[TURoute setWirelessHeadset:]
+0x19e371ef4  __TEXT,__text  -[TURoute setPartnerRouteRoutable:]
+0x19e371efc  __TEXT,__text  -[TURoute setSiblingRoutePresent:]
+0x19e371f04  __TEXT,__text  -[TURoute setSupportsSharePlay:]
+0x19e371f0c  __TEXT,__text  -[TURoute setRecommended:]
+0x19e371f14  __TEXT,__text  -[TURoute mutableCopyWithZone:]
+0x19e371f48  __TEXT,__text  -[TURoute initWithRoute:]
+0x19e37228c  __TEXT,__text  -[TURoute setName:]
+0x19e372294  __TEXT,__text  -[TURoute copyWithZone:]
+0x19e3722c8  __TEXT,__text  -[TURoute setIdentifiersOfOtherConnectedDevices:]
+0x19e3722d0  __TEXT,__text  -[TURoute setA2DPRoute:]
+0x19e3722d8  __TEXT,__text  -[TURoute setBluetooth:]
+0x19e3722e0  __TEXT,__text  -[TURoute setBluetoothEndpointType:]
+0x19e3722e8  __TEXT,__text  -[TURoute setGuest:]
+0x19e3722f0  __TEXT,__text  -[TURoute setCarAudio:]
+0x19e3722f8  __TEXT,__text  -[TURoute setDefaultRoute:]
+0x19e372300  __TEXT,__text  -[TURoute setPreferred:]
+0x19e372308  __TEXT,__text  -[TURoute setAirTunes:]
+0x19e372310  __TEXT,__text  -[TURoute setBluetoothLE:]
+0x19e372318  __TEXT,__text  -[TURoute setBluetoothManaged:]
+0x19e372320  __TEXT,__text  -[TURoute setCurrentlyPicked:]
+0x19e372328  __TEXT,__text  -[TURoute setDeviceType:]
+0x19e372330  __TEXT,__text  -[TURoute setInTipiWithCompanion:]
+0x19e372338  __TEXT,__text  -[TURoute setSmartRoutedTo:]
+0x19e372340  __TEXT,__text  -[TURoute setInEarDetectionEnabled:]
+0x19e372348  __TEXT,__text  -[TURoute setInEarDetectionSupported:]
+0x19e372350  __TEXT,__text  -[TURoute setPreferredAndActive:]
+0x19e372358  __TEXT,__text  -[TURoute setSupportsRelay:]
+0x19e372360  __TEXT,__text  -[TUCall isOnHold]
+0x19e3723b4  __TEXT,__text  -[TUCall provisionalHoldStatus]
+0x19e3723bc  __TEXT,__text  -[TUCall status]
+0x19e37242c  __TEXT,__text  -[TUProxyCall callStatus]
+0x19e372440  __TEXT,__text  -[TUCall transitionStatus]
+0x19e372448  __TEXT,__text  -[TUProxyCall isPTT]
+0x19e37245c  __TEXT,__text  -[TUCallCenter isAmbiguous]
+0x19e372484  __TEXT,__text  -[TUCallCenter countOfCallsPassingTest:]
+0x19e3724dc  __TEXT,__text  -[TUCall dateScreeningEnded]
+0x19e3724e4  __TEXT,__text  -[TUCall callDurationString]
+0x19e3725a4  __TEXT,__text  -[TUCall callDuration]
+0x19e37264c  __TEXT,__text  -[TUCall dateConnected]
+0x19e372654  __TEXT,__text  -[TUCallProviderManager initWithType:]
+0x19e3726c8  __TEXT,__text  -[TUCallProviderManager initWithDataSource:type:queue:]
+0x19e372750  __TEXT,__text  -[TUCallGroup methodSignatureForSelector:]
+0x19e3727e8  __TEXT,__text  -[TUCallGroup calls]
+0x19e3727f0  __TEXT,__text  -[TUCallGroup forwardInvocation:]
+0x19e37289c  __TEXT,__text  -[TUProxyCall provider]
+0x19e3728b0  __TEXT,__text  +[TUUserConfiguration userDefaults]
+0x19e372944  __TEXT,__text  -[TUCallProviderManager dataSource]
+0x19e37294c  __TEXT,__text  -[TUCallProviderManagerXPCClient blockUntilInitialStateReceived]
+0x19e3729d4  __TEXT,__text  -[TUCallProviderManagerXPCClient setRequestedInitialState:]
+0x19e3729dc  __TEXT,__text  -[TUCallProviderManagerXPCClient xpcConnection]
+0x19e372ba4  __TEXT,__text  -[TUCall initWithUniqueProxyIdentifier:endpointOnCurrentDevice:notificationCenter:]
+0x19e372e54  __TEXT,__text  -[TUCall initWithUniqueProxyIdentifier:]
+0x19e372e5c  __TEXT,__text  -[TUCall initWithUniqueProxyIdentifier:endpointOnCurrentDevice:]
+0x19e372ecc  __TEXT,__text  -[TUCall init]
+0x19e372f30  __TEXT,__text  -[TUCallNotificationManager initWithNotificationCenter:]
+0x19e372f38  __TEXT,__text  ___83-[TUAudioSystemController _pickableRoutesForPlayAndRecordVideoWithForceNewRequest:]_block_invoke
+0x19e372f7c  __TEXT,__text  -[TUCallProviderManagerXPCClient setDelegate:]
+0x19e373030  __TEXT,__text  -[TUCallProviderManager queue]
+0x19e373038  __TEXT,__text  -[TUCallProviderManager providersByIdentifier]
+0x19e373118  __TEXT,__text  -[TUCallProviderManagerXPCClient requestedInitialState]
+0x19e373120  __TEXT,__text  -[TUCallProviderManagerXPCClient synchronousServerWithErrorHandler:]
+0x19e3731a4  __TEXT,__text  +[TUCallProviderManagerXPCClient callProviderManagerServerXPCInterface]
+0x19e373238  __TEXT,__text  -[TUCallProviderManager emergencyProvider]
+0x19e37323c  __TEXT,__text  -[TUCallProviderManagerXPCClient _requestInitialState]
+0x19e3732fc  __TEXT,__text  +[CNContactStoreConfiguration(TelephonyUtilities) tu_contactStoreConfigurationForCall:]
+0x19e3733dc  __TEXT,__text  ___83-[TUAudioSystemController _pickableRoutesForPlayAndRecordVoiceWithForceNewRequest:]_block_invoke
+0x19e373420  __TEXT,__text  -[TUCall provider]
+0x19e373478  __TEXT,__text  -[TUCall callCenter]
+0x19e3734b8  __TEXT,__text  -[TUCall callServicesInterface]
+0x19e3734d8  __TEXT,__text  -[TUFeatureFlags junkFilteringEnabled]
+0x19e3734ec  __TEXT,__text  -[TUSenderIdentity hash]
+0x19e3735f4  __TEXT,__text  -[TUSenderIdentity ISOCountryCode]
+0x19e3735fc  __TEXT,__text  -[TUSenderIdentity localizedName]
+0x19e373604  __TEXT,__text  -[TUSenderIdentity localizedShortName]
+0x19e37360c  __TEXT,__text  -[TUSenderIdentity localizedServiceName]
+0x19e373614  __TEXT,__text  -[TURoute supportsHighQualityVoiceWithMedia]
+0x19e37361c  __TEXT,__text  -[TUCallGroup status]
+0x19e373770  __TEXT,__text  -[TUCall smartHoldingSession]
+0x19e373778  __TEXT,__text  -[TUHandle canonicalHandleForISOCountryCode:]
+0x19e3738bc  __TEXT,__text  +[TUPhoneNumber phoneNumberWithDigits:countryCode:]
+0x19e373924  __TEXT,__text  -[TUPhoneNumber initWithDigits:countryCode:]
+0x19e373978  __TEXT,__text  -[TUPhoneNumber initWithCFPhoneNumberRef:]
+0x19e3739e4  __TEXT,__text  -[TUPhoneNumber unformattedInternationalRepresentation]
+0x19e373a18  __TEXT,__text  -[TUFeatureFlags LVMEverywhere]
+0x19e373a2c  __TEXT,__text  -[TUFeatureFlags lvmGeneralASRMigrationEnabled]
+0x19e373a40  __TEXT,__text  -[TUFeatureFlags lvmGeneralASRExpansionEnabled]
+0x19e373a54  __TEXT,__text  -[TUFeatureFlags callScreeningEnabled]
+0x19e373a68  __TEXT,__text  -[TUCall isScreening]
+0x19e373a70  __TEXT,__text  -[TUProxyCall isEmergency]
+0x19e373a84  __TEXT,__text  -[TUCall disconnectedReason]
+0x19e373a8c  __TEXT,__text  -[TUCallCenter activeConversationForCall:]
+0x19e373adc  __TEXT,__text  -[TUProxyCall isConversation]
+0x19e373af0  __TEXT,__text  -[TUCallCenter activeConversationForCall:backedByGroupSession:]
+0x19e373c70  __TEXT,__text  +[TUConversationManager remoteMembersForCall:]
+0x19e373dd4  __TEXT,__text  -[TUProxyCall remoteParticipantHandles]
+0x19e373de8  __TEXT,__text  -[TUConversationMember initWithHandle:nickname:]
+0x19e373df0  __TEXT,__text  -[TUConversationMember initWithHandle:nickname:joinedFromLetMeIn:]
+0x19e37404c  __TEXT,__text  -[TURouteController setRoutesByUniqueIdentifier:]
+0x19e374054  __TEXT,__text  -[TURouteController routesByUniqueIdentifier]
+0x19e3740b0  __TEXT,__text  -[TURouteController delegates]
+0x19e3740b8  __TEXT,__text  -[TURouteController pickedRoute]
+0x19e3741dc  __TEXT,__text  -[TURouteController routes]
+0x19e374238  __TEXT,__text  -[TURouteController receiverRoute]
+0x19e37435c  __TEXT,__text  -[TURouteController speakerRoute]
+0x19e374480  __TEXT,__text  -[TUFeatureFlags isRemoteCallControlOnWatchEnabled]
+0x19e374494  __TEXT,__text  -[TUCallCenter currentAudioAndVideoCalls]
+0x19e3744d4  __TEXT,__text  +[TUCallProviderManagerXPCClient callProviderManagerClientXPCInterface]
+0x19e374568  __TEXT,__text  -[TUPhoneNumber dealloc]
+0x19e374720  __TEXT,__text  -[TUHandle setSiriDisplayName:]
+0x19e374728  __TEXT,__text  -[TUConversationMember hash]
+0x19e374830  __TEXT,__text  -[TUConversationMember handle]
+0x19e374838  __TEXT,__text  -[TUConversationMember lightweightPrimary]
+0x19e374840  __TEXT,__text  -[TUConversationMember lightweightPrimaryParticipantIdentifier]
+0x19e374848  __TEXT,__text  -[TUConversationMember isLightweightMember]
+0x19e374850  __TEXT,__text  -[TUConversationMember association]
+0x19e374858  __TEXT,__text  -[TUConversationMember stableDeviceIdentifier]
+0x19e374860  __TEXT,__text  -[TUProxyCall isVideo]
+0x19e374874  __TEXT,__text  -[TUConversationManager activeConversationWithRemoteMembers:andLink:matchingVideo:backedByGroupSession:]
+0x19e374914  __TEXT,__text  +[TUConversationManager conversationWithRemoteMembers:andLink:fromConversations:matchingVideo:backedByGroupSession:]
+0x19e374a90  __TEXT,__text  +[TUConversationManager conversationsWithRemoteMembers:andLink:fromConversations:]
+0x19e374c00  __TEXT,__text  -[TUConversationMember .cxx_destruct]
+0x19e374c98  __TEXT,__text  -[TUCall isIncoming]
+0x19e374cb4  __TEXT,__text  -[TUProxyCall isOutgoing]
+0x19e374cc8  __TEXT,__text  -[TUProxyCall isFailureExpected]
+0x19e374cdc  __TEXT,__text  -[TUCall hasBeenRedirected]
+0x19e374ce4  __TEXT,__text  -[TUFeatureFlags phoneClassicEnabled]
+0x19e374cf8  __TEXT,__text  ___44-[TUCallCapabilitiesXPCClient _updateState:]_block_invoke
+0x19e374d94  __TEXT,__text  +[TUCallCapabilities _sendNotificationsAndCallbacksAfterRunningBlock:]
+0x19e3759c4  __TEXT,__text  +[TUCallCapabilities supportsTelephonyCalls]
+0x19e3759e4  __TEXT,__text  +[TUCallCapabilities telephonyCallSupport]
+0x19e375a40  __TEXT,__text  +[TUCallCapabilities supportsDisplayingTelephonyCalls]
+0x19e375a90  __TEXT,__text  +[TUCallCapabilities supportsFaceTimeAudioCalls]
+0x19e375ab0  __TEXT,__text  +[TUCallCapabilities faceTimeAudioCallSupport]
+0x19e375b0c  __TEXT,__text  +[TUCallCapabilities isDirectTelephonyCallingCurrentlyAvailable]
+0x19e375b70  __TEXT,__text  -[TUDialRequest isDialAssisted]
+0x19e375b78  __TEXT,__text  +[TUCallCapabilities supportsFaceTimeVideoCalls]
+0x19e375b98  __TEXT,__text  +[TUCallCapabilities faceTimeVideoCallSupport]
+0x19e375be8  __TEXT,__text  +[TUCallCapabilities supportsRelayCalling]
+0x19e375c38  __TEXT,__text  +[TUCallCapabilities isDirectFaceTimeAudioCallingCurrentlyAvailable]
+0x19e375c88  __TEXT,__text  +[TUCallCapabilities isDirectFaceTimeVideoCallingCurrentlyAvailable]
+0x19e375cd8  __TEXT,__text  +[TUCallCapabilities isRelayCallingEnabled]
+0x19e375d4c  __TEXT,__text  +[TUCallCapabilities accountsSupportSecondaryCalling]
+0x19e375d9c  __TEXT,__text  +[TUCallCapabilities areRelayCallingFeaturesEnabled]
+0x19e375dec  __TEXT,__text  +[TUCallCapabilities cloudCallingDevices]
+0x19e375e44  __TEXT,__text  +[TUCallCapabilities relayCallingAvailability]
+0x19e375e94  __TEXT,__text  +[TUCallCapabilities isEmergencyCallbackModeEnabled]
+0x19e375ee4  __TEXT,__text  +[TUCallCapabilities isEmergencyCallbackPossible]
+0x19e375f34  __TEXT,__text  +[TUCallCapabilities _senderIdentityCapabilitiesByUUID]
+0x19e376100  __TEXT,__text  -[TUCallCenter currentCallGroups]
+0x19e376140  __TEXT,__text  -[TUSenderIdentityClient(Emergency) isWhitelistedEmergencyNumberForDigits:senderIdentityUUID:]
+0x19e376234  __TEXT,__text  ___44-[TUCallCapabilitiesXPCClient _updateState:]_block_invoke_2
+0x19e3762e0  __TEXT,__text  ___44-[TUCallCapabilitiesXPCClient _updateState:]_block_invoke_3
+0x19e3762ec  __TEXT,__text  -[TUThumperCTCapabilitiesState initWithCoder:]
+0x19e376598  __TEXT,__text  -[TUCallCapabilitiesXPCClient capabilityStateUpdated:]
+0x19e37664c  __TEXT,__text  ___54-[TUCallCapabilitiesXPCClient capabilityStateUpdated:]_block_invoke
+0x19e3766d0  __TEXT,__text  -[TUSenderIdentityCapabilitiesState description]
+0x19e376820  __TEXT,__text  -[TUCTCapabilitiesState description]
+0x19e376aa0  __TEXT,__text  -[TUThumperCTCapabilitiesState description]
+0x19e376cc0  __TEXT,__text  -[TUSenderIdentityCapabilities _sendNotificationsAndCallbacksComparingToOldSenderIdentityCapabilities:]
+0x19e3774b8  __TEXT,__text  -[TUSenderIdentityCapabilities isWiFiCallingEnabled]
+0x19e377518  __TEXT,__text  -[TUSenderIdentityCapabilities supportsWiFiCalling]
+0x19e377568  __TEXT,__text  -[TUSenderIdentityCapabilities isVoLTECallingEnabled]
+0x19e3775b8  __TEXT,__text  -[TUSenderIdentityCapabilities supportsThumperCalling]
+0x19e377608  __TEXT,__text  -[TUSenderIdentityCapabilities supportsThumperCallingOverCellularData]
+0x19e377658  __TEXT,__text  -[TUSenderIdentityCapabilities client]
+0x19e377660  __TEXT,__text  -[TUCTCapabilityInfo provisioningURL]
+0x19e377668  __TEXT,__text  +[TUCallCapabilities isRelayCallingEnabledForDeviceWithID:]
+0x19e3776fc  __TEXT,__text  -[TUCallCenter anyCallPassesTest:]
+0x19e377754  __TEXT,__text  -[TUCallContainer anyCallPassesTest:]
+0x19e377828  __TEXT,__text  +[NSURL(Telephony) TUDialRequestSchemeForceTelephony]
+0x19e377834  __TEXT,__text  +[TUDialRequest stringForDialType:]
+0x19e377888  __TEXT,__text  -[TUDialRequest contactIdentifier]
+0x19e377890  __TEXT,__text  -[TUDialRequest audioSourceIdentifier]
+0x19e377898  __TEXT,__text  +[TUDialRequest stringForTTYType:]
+0x19e3778ec  __TEXT,__text  -[TUDialRequest uniqueProxyIdentifier]
+0x19e3778f4  __TEXT,__text  -[NSString(TelephonyUtilities) destinationIdIsCallControlCode]
+0x19e377980  __TEXT,__text  -[TUSenderIdentityClient(Emergency) isWhitelistedEmergencyNumberForDigits:senderIdentityUUID:error:]
+0x19e3779f4  __TEXT,__text  -[TUSenderIdentityCapabilities wiFiCallingCapabilityInfo]
+0x19e377a4c  __TEXT,__text  +[TURoute supportsSecureCoding]
+0x19e377a54  __TEXT,__text  _callProviderManagerGeneratorBlock_block_invoke
+0x19e377a78  __TEXT,__text  +[NSURL(Telephony) isDefaultCallingAppScheme:]
+0x19e377b00  __TEXT,__text  +[NSURL(Telephony) TUDialRequestSchemeDefaultAppPrompt]
+0x19e377b0c  __TEXT,__text  -[TUFeatureFlags nudityDetectionEnabled]
+0x19e377b20  __TEXT,__text  -[TUDialRequest localSenderIdentityUUID]
+0x19e377ba4  __TEXT,__text  -[TUCallCenter _isEmergencyDialRequest:]
+0x19e377cb8  __TEXT,__text  -[TUCallCenter localLandscapeAspectRatio]
+0x19e377cc0  __TEXT,__text  -[TUProxyCall initWithUniqueProxyIdentifier:endpointOnCurrentDevice:]
+0x19e377d10  __TEXT,__text  -[TUHandle encodeWithCoder:]
+0x19e377e5c  __TEXT,__text  -[TUCallProvider description]
+0x19e378338  __TEXT,__text  -[TUCallProvider sandboxExtensionHandle]
+0x19e378340  __TEXT,__text  +[TUHandle stringForType:]
+0x19e378398  __TEXT,__text  -[TUCallProviderManagerXPCClient setProvidersByIdentifier:]
+0x19e3783a0  __TEXT,__text  -[TUCallProviderManagerXPCClient setLocalProvidersByIdentifier:]
+0x19e3783a8  __TEXT,__text  -[TUCallProviderManagerXPCClient setPairedHostDeviceProvidersByIdentifier:]
+0x19e3783b0  __TEXT,__text  -[TUCallProviderManager providersChangedForDataSource:]
+0x19e378438  __TEXT,__text  -[TUCallProviderManagerXPCClient providersByIdentifier]
+0x19e378548  __TEXT,__text  -[TUCallProviderManager type]
+0x19e378550  __TEXT,__text  -[TUCallProviderManagerXPCClient invalidate]
+0x19e3785d8  __TEXT,__text  -[TUConfigurationProvider dealloc]
+0x19e378624  __TEXT,__text  -[TUConfigurationProvider .cxx_destruct]
+0x19e378694  __TEXT,__text  -[TUUserConfiguration dealloc]
+0x19e378784  __TEXT,__text  -[TUConfiguration dataSource]
+0x19e37878c  __TEXT,__text  ___47-[TUCallProviderManagerXPCClient xpcConnection]_block_invoke
+0x19e378828  __TEXT,__text  ___47-[TUCallProviderManagerXPCClient xpcConnection]_block_invoke_2
+0x19e3788ac  __TEXT,__text  -[TUUserConfiguration .cxx_destruct]
+0x19e3788c0  __TEXT,__text  -[TUConfiguration .cxx_destruct]
+0x19e3788f8  __TEXT,__text  -[TUDelegateController .cxx_destruct]
+0x19e378904  __TEXT,__text  -[TUMetadataCache _updateCacheWithDestinationIDs:onlyEmptyProviders:completion:]
+0x19e378be0  __TEXT,__text  -[TUDispatcher dispatchQueue]
+0x19e378be8  __TEXT,__text  -[TUCallServicesInterface callNotificationManager]
+0x19e378bf0  __TEXT,__text  -[TUDialRequest destinationIDFromURL:]
+0x19e378d64  __TEXT,__text  -[TUCallCenter fetchCurrentCalls]
+0x19e378de8  __TEXT,__text  ___44-[TUCallServicesInterface fetchCurrentCalls]_block_invoke.26
+0x19e378efc  __TEXT,__text  -[TUCallNotificationManager deferNotificationsUntilAfterPerformingBlock:]
+0x19e3790cc  __TEXT,__text  ___44-[TUCallServicesInterface fetchCurrentCalls]_block_invoke.27
+0x19e3791f0  __TEXT,__text  -[TUCallServicesInterface _updateCurrentCalls:withNotificationsUsingUpdatedCalls:]
+0x19e3793dc  __TEXT,__text  -[NSURL(FaceTime) isShowInCallUIURL]
+0x19e379470  __TEXT,__text  -[NSURL(FaceTime) isShowKeypadURL]
+0x19e3794d0  __TEXT,__text  -[NSURL(FaceTime) isShowSystemCallControlsURL]
+0x19e379530  __TEXT,__text  -[NSURL(FaceTime) isShowIncomingTransmissionNoticeURL]
+0x19e379590  __TEXT,__text  -[NSURL(FaceTime) isRefreshShareableContentURL]
+0x19e3795f0  __TEXT,__text  -[NSURL(FaceTime) isFaceTimeMultiwayURL]
+0x19e379650  __TEXT,__text  +[NSURL(FaceTime) faceTimeMultiwayScheme]
+0x19e37965c  __TEXT,__text  -[NSURL(FaceTime) isLaunchForScreeningURL]
+0x19e3796bc  __TEXT,__text  -[NSURL(QueryParameters) tuQueryParameters]
+0x19e3799a4  __TEXT,__text  -[TUCallServicesInterface fetchCurrentCalls]
+0x19e379adc  __TEXT,__text  -[TUCallServicesInterface _ignorePendingServerDisconnectionHandlers]
+0x19e379b64  __TEXT,__text  -[NSXPCConnection(TUCallServicesAdditions) performBlockOnQueue:]
+0x19e379bb8  __TEXT,__text  -[TUCallServicesInterface synchronousServerWithErrorHandler:]
+0x19e379c4c  __TEXT,__text  -[TUCallServicesInterface setHasReceivedInitialState:]
+0x19e379c54  __TEXT,__text  -[TUCallNotificationManager deferredNotificationBlocks]
+0x19e379c5c  __TEXT,__text  -[TUCallNotificationManager setDeferredNotificationBlocks:]
+0x19e379c68  __TEXT,__text  -[NSURL(FaceTime) isShowHandoffEligibleNearbyURL]
+0x19e379cc8  __TEXT,__text  -[NSURL(FaceTime) isShowLagunaPullConversationURL]
+0x19e379d28  __TEXT,__text  -[NSURL(FaceTime) isShowScreenSharingURL]
+0x19e379d68  __TEXT,__text  -[NSURL(FaceTime) isShowAccessoryButtonEventsNoticeURL]
+0x19e379dc8  __TEXT,__text  -[NSURL(FaceTime) isUpdateForegroundAppURL]
+0x19e379e28  __TEXT,__text  -[NSURL(FaceTime) isFaceTimeOpenLinkURL]
+0x19e379e88  __TEXT,__text  +[NSURL(FaceTime) faceTimeOpenLinkScheme]
+0x19e379e94  __TEXT,__text  -[NSURL(FaceTime) isLaunchForIncomingCallURL]
+0x19e379ef4  __TEXT,__text  -[NSURL(FaceTime) isAnswerRequestURL]
+0x19e379f40  __TEXT,__text  -[NSURL(FaceTime) isFaceTimeNeedsBackgroundLaunchURL]
+0x19e379fa0  __TEXT,__text  -[NSURL(FaceTime) isVideoMessagePlaybackURL]
+0x19e37a018  __TEXT,__text  -[TUDialRequest initWithURL:]
+0x19e37a07c  __TEXT,__text  -[TUDialRequest initWithURL:featureFlags:]
+```
+First 1,000 of 9,939.
+

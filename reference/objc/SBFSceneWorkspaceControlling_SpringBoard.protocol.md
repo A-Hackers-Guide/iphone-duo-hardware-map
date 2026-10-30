@@ -1,0 +1,16 @@
+# `SBFSceneWorkspaceControlling` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 6 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[SBFSceneWorkspaceControlling enumerateScenesWithBlock:];
+-[SBFSceneWorkspaceControlling destroyScenesWithPersistentIdentifiers:processIdentity:completion:];
+-[SBFSceneWorkspaceControlling activateSceneForProcessIdentity:withHandle:options:completion:];
+-[SBFSceneWorkspaceControlling sceneFromIdentityToken:];
+-[SBFSceneWorkspaceControlling sceneWorkspaceControllerForProcessIdentity:];
+-[SBFSceneWorkspaceControlling sceneFromIdentityTokenStringRepresentation:];
+```

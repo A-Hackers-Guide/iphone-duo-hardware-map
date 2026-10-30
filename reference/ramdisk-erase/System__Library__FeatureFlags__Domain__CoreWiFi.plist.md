@@ -1,0 +1,60 @@
+# `/System/Library/FeatureFlags/Domain/CoreWiFi.plist`
+
+From the erase/recovery restore ramdisk (141-28940-105.dmg, runs restored_external). 2,919 bytes.
+
+- `AWDL6E`:
+  - `Enabled`: `True`
+- `BlockedBands`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `BrokenBackhaulPHFallback`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `DisallowCarrierProfileNetworksInLockdownMode`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `EncryptedCloudKVS`:
+  - `Enabled`: `True`
+- `Exclude6GHzByLocation`:
+  - `Enabled`: `True`
+- `HomeNetworkPrioritization`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `LinkDownSuppression`:
+  - `Enabled`: `True`
+- `NearbyAutoJoinAssist`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `NearbyCaptiveAssist`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `NearbyCaptiveAssistRecommendationUI`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `P2P24GHzDwell`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `P2PForULLRTInfra`:
+  - `Enabled`: `True`
+- `RecursiveCopyWithZoneHotpathOnly`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `SSIDTransition`:
+  - `Enabled`: `True`
+- `UnifiedAPI`:
+  - `Enabled`: `True`
+- `UnifiedAutoJoin`:
+  - `Enabled`: `True`
+- `UnifiedKVS`:
+  - `Enabled`: `True`
+- `UnifiedPrivateMAC`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `WiFi6E`:
+  - `Enabled`: `True`
+- `WiFi6EAlwaysFollowup`:
+  - `Enabled`: `True`
+- `WiFi6EDisablement`:
+  - `Enabled`: `True`
+- `WiFi6EMaxCompatibility`:
+  - `Enabled`: `True`
+- `WiFi6EStandalone6GHz`:
+  - `Enabled`: `True`
+- `WiFiCredentialSharing`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `WiFiOTAUpdatePT`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `WiFiOTAUpdatePTDownloadOnly`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `WiFiOTAUpdatePTUseAutoAssetSet`:
+  - `DevelopmentPhase`: `FeatureComplete`

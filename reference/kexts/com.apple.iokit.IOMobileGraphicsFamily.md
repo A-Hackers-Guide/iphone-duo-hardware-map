@@ -1,0 +1,1223 @@
+# `com.apple.iokit.IOMobileGraphicsFamily`
+
+- Name: IOMobileGraphicsFamily
+- Version: `343.0.0`
+- UUID: `34E20A99-9001-325C-8765-4D6C8D9D0674`
+- Source version: `700.50.112.6.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleM2ScalerCSCDriver`](com.apple.driver.AppleM2ScalerCSCDriver.md) 1.0.0, [`com.apple.driver.AppleMobileFileIntegrity`](com.apple.driver.AppleMobileFileIntegrity.md) 1.0.1, [`com.apple.iokit.IOAVFamily`](com.apple.iokit.IOAVFamily.md) 1.0.0, [`com.apple.iokit.IOSurface`](com.apple.iokit.IOSurface.md) 52.7.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.4.1, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 10.0.0d3, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (0) [KC]
+
+
+## C++ classes (12) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleARMParamFIFO` | 0x88 | IOService → IORegistryEntry |
+| `IOAVHandler` | 0x40 |  |
+| `IOAVHandlerInternalDisplay` | 0x50 | IOAVHandler |
+| `IOMFBEvtMonTrampoline` | 0x18 |  |
+| `IOMFBSwapIORequest` | 0xd48 |  |
+| `IOMobileFramebuffer` | 0x90 | IOService → IORegistryEntry |
+| `IOMobileFramebufferLegacy` | 0x1de0 | IOMobileFramebufferService → IOMobileFramebuffer → IOService → IORegistryEntry |
+| `IOMobileFramebufferService` | 0x90 | IOMobileFramebuffer → IOService → IORegistryEntry |
+| `IOMobileFramebufferUserClient` | 0x958 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `InterruptEventSourceBridge` | 0x18 |  |
+| `TimerEventSourceBridge` | 0x18 |  |
+| `UPAsynchronousScheduler` | 0xb060 |  |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1560)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0000a3d4 off=0x00a0c600-0x00a169d4 addr=0xfffffe0007a10600-0xfffffe0007a1a9d4 r--/r--   __TEXT            
+	sz=0x00009283 off=0x00a0cc78-0x00a15efb addr=0xfffffe0007a10c78-0xfffffe0007a19efb               __TEXT.__cstring          (CstringLiterals)
+	sz=0x00000ad4 off=0x00a15f00-0x00a169d4 addr=0xfffffe0007a19f00-0xfffffe0007a1a9d4               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x0002253c off=0x03244e10-0x0326734c addr=0xfffffe000a248e10-0xfffffe000a26b34c r-x/r-x   __TEXT_EXEC       
+	sz=0x000219ec off=0x03244e10-0x032667fc addr=0xfffffe000a248e10-0xfffffe000a26a7fc          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000b50 off=0x032667fc-0x0326734c addr=0xfffffe000a26a7fc-0xfffffe000a26b34c          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00004000 off=0x049f6110-0x049fa110 addr=0xfffffe000b9fa110-0xfffffe000ba16b58 rw-/rw-   __DATA            
+	sz=0x00000100 off=0x049f6110-0x049f6210 addr=0xfffffe000b9fa110-0xfffffe000b9fa210               __DATA.__data             
+	sz=0x0001c92c off=0x00000000-0x0001c92c addr=0xfffffe000b9fa210-0xfffffe000ba16b3c               __DATA.__common           (Zerofill)
+	sz=0x00000018 off=0x00000000-0x00000018 addr=0xfffffe000ba16b40-0xfffffe000ba16b58               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00008120 off=0x013a6e28-0x013aef48 addr=0xfffffe00083aae28-0xfffffe00083b2f48 rw-/rw-   __DATA_CONST      
+	sz=0x00000050 off=0x013a6e28-0x013a6e78 addr=0xfffffe00083aae28-0xfffffe00083aae78         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000050 off=0x013a6e78-0x013a6ec8 addr=0xfffffe00083aae78-0xfffffe00083aaec8         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00006f00 off=0x013a6ec8-0x013addc8 addr=0xfffffe00083aaec8-0xfffffe00083b1dc8         __DATA_CONST.__const            
+	sz=0x00000ac0 off=0x013addc8-0x013ae888 addr=0xfffffe00083b1dc8-0xfffffe00083b2888         __DATA_CONST.__kalloc_type      
+	sz=0x000005a8 off=0x013ae888-0x013aee30 addr=0xfffffe00083b2888-0xfffffe00083b2e30         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000118 off=0x013aee30-0x013aef48 addr=0xfffffe00083b2e30-0xfffffe00083b2f48         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 397 at 0x04af407c
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     34E20A99-9001-325C-8765-4D6C8D9D0674
+008: LC_SOURCE_VERSION           700.50.112.6.0
+009: LC_FUNCTION_STARTS          offset=0x004ac1d40 size=0x590
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `IOMobileGraphicsFamily`
+- `CFBundleIdentifier`: `com.apple.iokit.IOMobileGraphicsFamily`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `IOMobileGraphicsFamily`
+- `CFBundleNumericVersion`: `0`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `343.0.0`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `343.0.0`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91018`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91018`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2009 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/IOMobileGraphicsFamily.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198895262208`
+- `_PrelinkExecutableRelativePath`: `IOMobileGraphicsFamily`
+- `_PrelinkExecutableSize`: `332920`
+- `_PrelinkExecutableSourceAddr`: `-2198895262208`
+- `_PrelinkKmodInfo`: `-2198828244720`
+
+## Strings (1104) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `disableDBSR`
+- `display-presentation`
+- `displayMaxRefreshIntervalMachTime`
+- `iomfb_GamutConversionLocation_Pipe0`
+- `DisablePCC2DBrc`
+- `Last Swap Layer Allocation Size`
+- `%s: IOAVVideoInterface prepareLink() failed with 0x%x\n`
+- `iomfb_RuntimeProperty_enableAPT_PRC`
+- `iomfb_RuntimeProperty_PDCExitCount`
+- `d4`
+- `IOMFB: %s : getMemoryRegion Failed for Surface = 0x%p, sid = %d\n`
+- `UPAAFProxy.cpp`
+- `%s  dont allow disp off when clamshell is closed but the call is for internal display\n`
+- `iomfb_RuntimeProperty_PTUCTempOverride`
+- `void IOMobileFramebufferLegacy::surface_complete(IOMFBDisplayedData *, uint32_t)`
+- `IOMFB: WARNING: FB User Client freed without a stop call! Force releasing memory \n`
+- `%s: dropped HDCP packet notification\n`
+- `%s: Couldn't create command gate\n`
+- `iomfb_RuntimeProperty_enableTBICAlphaOverride`
+- `IOMFBPODBoost`
+- `CCPixelCaptureLocation`
+- `enablePixelCapture`
+- `112222222212111`
+- `1211`
+- `iomfb_RuntimeProperty_contrastEnhancerCorrectionFactor`
+- `IOReturn IOMobileFramebufferLegacy::hdcp_send_request_gated(const uint8_t *, size_t, IOMFBNotifyRequestArgs *)`
+- `%s: memory error\n`
+- `iomfb_RuntimeProperty_enableLinearToPanel`
+- `SkipRegion`
+- `%s: something really bad happened (%d)...bailing out\n`
+- `n66`
+- `IOUserClientEntitlements`
+- `brightnessCorrection`
+- `IOMFBDigitalDimmingLevel`
+- `EnableEven60FPSFrames`
+- `PCCStabilityThreshold`
+- `hid-input`
+- `%s:\n`
+- `iomfb_RuntimeProperty_defaultTemperatureCorrectionValue`
+- `iomfb_RuntimeProperty_DBVInterval`
+- `iomfb_RuntimeProperty_calibrationType`
+- `APTPanicOnStuckPolarity`
+- `segData[0].fLength (%d) < pBuffMD[i]->getLength() (%d)\n`
+- `src_y`
+- `Last Swap Layer Width`
+- `%s: IOAVVideoInterface stopLink() failed with 0x%x\n`
+- `DisplayWallTiming`
+- `IOMFBBrightnessLevelMA`
+- `UPAsynchronousScheduler.cpp`
+- `request_power_change`
+- `iomd-cache-ttl`
+- `Current Display`
+- `virtual void IOMobileFramebufferUserClient::stop(IOService *)`
+- `iomfb_RuntimeProperty_GenXHandlerTestCase`
+- `disableSystemCachingInput`
+- `RuntimeProperty::FIRST_GAMUT_CONVERSION_LOCATION`
+- `iomfb_RuntimeProperty_enableVideoCaching`
+- `overdriveCompCutoff`
+- `%s Buffer height (%d) doesn't cover read region(y = %d, h = %d)\n`
+- `%s UserClient display type is %d \n`
+- `iomfb_IdleDetectorIndex_System_threshold`
+- `enableTBIC`
+- `DisableTempComp`
+- `iomfb_abort_swap_disable`
+- `j31`
+- `\"%s Failed to parse registry for device\" @%s:%d`
+- `iomfb_RuntimeProperty_enableRRBP`
+- `RTPLCEnableRT`
+- `virtual IOMFBStatus IOMobileFramebufferLegacy::swap_submit(IOMFBSwap *, IOUserClient *, uint32_t *)`
+- `iomfb_RuntimeProperty_PCCBLCPixelCaptureLocation`
+- `uniformity2D`
+- `clockRatio`
+- `%s: argument id %u already notified!\n`
+- `virtual bool IOMobileFramebufferLegacy::start(IOService *)`
+- `%s: createAUPPacketAsync failed with: 0x%x\n`
+- `\"%s called with %s\" @%s:%d`
+- `BitDepth::COUNT`
+- `iomfb_RuntimeProperty_enableGPDeringing`
+- `enablePowerGateDCS`
+- `RTPLCEnableNitsCap`
+- `iomfb_RuntimeProperty_enableWhitePointCorrection`
+- `iomfb_RuntimeProperty_uniformity2D`
+- `IOMFB ERROR: ioDataQueueMemDesc->createMappingInTask Failed\n`
+- `iomfb_RuntimeProperty_PCC2DLedAccelOut`
+- `defaultTemperatureCorrectionValue`
+- `FrameInfoForRepeats`
+- `IOMFBSupportsICC`
+- `ClearUSPUCData`
+- `121111111112`
+- `%s: cannot create a workloop\n`
+- `iomfb_RuntimeProperty_isHiloDevice`
+- `IOMFBBrightnessLevelIDAC`
+- `ChargeValuesPublish`
+- `IOAVVideoInterface`
+- `%s, no mapper on this platform\n`
+- `Type`
+- `1`
+- `UPEvtMgr::add - Event monitor index %d too large.\n`
+- `iomfb_RuntimeProperty_RDLCAngleOverride`
+- `iomfb_RuntimeProperty_DCPResetLoopMaxCount`
+- `LPFControl2Value`
+- `brightnessCorrectionB`
+- `iomfb_RuntimeProperty_enableBIC`
+- `iomfb_RuntimeProperty_RTPLCBLNitsCap`
+- `%s: HDCP reply was never collected\n`
+- `iomfb_RuntimeProperty_DPBDriverLPFMaxSlopeValue`
+- `iomfb_RuntimeProperty_enablePCCTrinity`
+- `iomfb_RuntimeProperty_BLMVLEDManual`
+- `iomfb_RuntimeProperty_enableDBM`
+- `TLSCEnable`
+- `RTPLCEnableFDBicMult`
+- `PDCEntryTime`
+- `site.IOMobileFramebufferLegacy`
+- `site.iOSSvcProx`
+- `iomfb_RuntimeProperty_resTransitionStrength`
+- `121111121222121212122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `WPCPixelCaptureLocation`
+- `site.UPAsynchronousScheduler`
+- `%s  allow ext disp off  \n`
+- `iomfb_RuntimeProperty_enableDBTH`
+- `iomfb_RuntimeProperty_allowAnnouncingPTS`
+- `iomfb_RuntimeProperty_PDCCutoffLux`
+- `DebugUInt32`
+- `iomfb_RuntimeProperty_SupportsHeadOfLineSwaps`
+- `IOMFBYUVSupportKey`
+- `VSHHistVal`
+- `%s Buffer width (%d) doesn't cover read region (x = %d, w = %d)\n`
+- `enableBLMSloper`
+- `%s: failed to allocate fHDCPContext.lock\n`
+- `IOMFB: dropped release buffer info message from DCP for swapID = 0x%x\n`
+- `Last Swap Written Registers`
+- `IOUserClientDefaultLocking`
+- `APTEnableEvents`
+- `VRRDivisor`
+- `GCPRangeMapGamma`
+- `PTUCAvgTempOption`
+- `void IOMobileFramebufferLegacy::disp_has_no_clients_gated()`
+- `site.WorkLoop`
+- `SystemIdlenessThreshold`
+- `iomfb_RuntimeProperty_IRDCFrameMaxResetCount`
+- `APTResetCA`
+- `iomfb_RuntimeProperty_CMPixelCaptureLocation`
+- `video-tx`
+- `IOMFB: swap_wait_gated retried > 2 times, clearing swaps and return\n`
+- `iomfb_set_block_debug`
+- `iomfb_RuntimeProperty_ccParamsVersion`
+- `iomfb_RuntimeProperty_supportsAOT1HzOptimizations`
+- `iomfb_RuntimeProperty_enableBLMAHOutputLog`
+- `iomfb_RuntimeProperty_DSCBpp`
+- `DCPIndex`
+- `DisableBConBoot`
+- `SupportsAOTPowerSaving`
+- `iomfb_RuntimeProperty_enableAPT_CA`
+- `iomfb_RuntimeProperty_aotmultiRefresh`
+- `j4`
+- `iomfb_RuntimeProperty_LAST_GAMUT_CONVERSION_LOCATION`
+- `enableGPAlphaDiv`
+- `iomfb_RuntimeProperty_enableFrameInfoForRepeats`
+- `enablePartialUpdate`
+- `%s: ERROR: entry is NULL\n`
+- `iomfb_RuntimeProperty_enableQETC`
+- `iomfb_RuntimeProperty_enablePulseWidthMaximization`
+- `null descs_ptr\n`
+- `iomfb_RuntimeProperty_enableRTR`
+- `iomfb_RuntimeProperty_pccLumaGammaFactor`
+- `Temp Queue`
+- `site.IOAVHandlerInternalDisplay`
+- `BLMVLEDManual`
+- `IOReturn iomfb_CreateAUPPacketCallback(OSObject *, OSData *, void *)`
+- `iomfb_IdleDetectorIndex_VRR_enabled`
+- `iomfb_RuntimeProperty_DisplayWallTiming`
+- `iomfb_RuntimeProperty_HBLDDimmingFactorMin`
+- `iomfb_RuntimeProperty_supportLFC`
+- `APTEnableLogs`
+- `IRDCFrameMaxResetCount`
+- `Display disabled using boot-arg %s\n`
+- `swap_submit`
+- `iomfb_RuntimeProperty_disablePCC2DBrc`
+- `enableWhitePointCorrection`
+- `%s: complete failed with 0x%x\n`
+- `dot-pitch`
+- `iomfb_RuntimeProperty_IRDCFrameReset`
+- `12111112122212121111111111112122221111111111112212222112111111111111221222211211111111111122122221121111111111112212222112111111111111221222211211111111111122122221121111111111112212222112111111111111221222211211111111111122122221121111111111112212222112111111111111221222211211111111111122122221122`
+- `iomfb_RuntimeProperty_publishChargeValues`
+- `ExternalAppleLook`
+- `QETCEnable`
+- `displayMaxRefreshInterval`
+- `artwork-display-gamut`
+- `iomfb_RuntimeProperty_requestPixelBacklightModulation`
+- `iomfb_RuntimeProperty_enableBLMStandby`
+- `\"missed notification\" @%s:%d`
+- `iomfb_RuntimeProperty_enableAPri`
+- `enableTBICAlphaOverride`
+- `\"%s: could not cast pointer to IOAVVideoInterface *\" @%s:%d`
+- `%s::start() Initialization of fClientUpdateLock failed.\n`
+- `d3`
+- `src_width`
+- `iomfb_RuntimeProperty_PCCNormBrightOut`
+- `iomfb_RuntimeProperty_enableIRDC`
+- `ForceEnableACSSGenXSensing`
+- `display-frame-generation`
+- `IOMFB: %s : layout_buffers - failed for Surface = 0x%p, sid = %d\n`
+- `%s: no hdcp reply available while not pending\n`
+- `iomfb_RuntimeProperty_enablePCCCabal`
+- `IOMFBSupportsHeadOfLineSwaps`
+- `IOMFBAsyncSwapDisabledKey`
+- `PCCBLCPixelCaptureLocation`
+- `RuntimeProperty::UNKNOWN`
+- `IOAVHandler`
+- `%s: more than %d current instances of IOMobileFramebuffer!\n`
+- `iomfb_RuntimeProperty_DPBDriverLPFControlValue`
+- `iomfb_RuntimeProperty_indicatorBrightnessNits`
+- `iomfb_RuntimeProperty_M3DiagsTimeout`
+- `ExportCRCAtVBI`
+- `DynamicSageLogging`
+- `site.IOMobileFramebufferService`
+- `iomfb_RuntimeProperty_GCPRangeMapGamma`
+- `RuntimeProperty::frameInfoTraceEnable`
+- `IOMFBDisableFlip`
+- `BLMAHUPCount`
+- `BitDepth::SixBits`
+- `iomfb_RuntimeProperty_secureIndicatorFactor`
+- `iomfb_RuntimeProperty_supportICCProfile`
+- `iomfb_RuntimeProperty_disableSystemCachingInput`
+- `iomfb_RuntimeProperty_DisableBConBoot`
+- `PCCEnableLogs`
+- `j21`
+- `IOMFB %s: failed to allocate dictionary\n`
+- `VRRBurnInCooldownThreshold`
+- `iomfb_RuntimeProperty_resTransitionType`
+- `n56`
+- `j18`
+- `BBBBBBBBBBGGGGGGGGGGRRRRRRRRRR`
+- `Global`
+- `displayRefreshStep`
+- `add`
+- `iomfb_RuntimeProperty_brightnessLevel`
+- `PDCSaveRepeatUnstablePCC`
+- `MaxUABoost`
+- `RuntimeProperty::FIRST_IDLE_DETECTOR`
+- `IOMFBKernelTestsArguments size mismatch\n`
+- `iomfb_bics_daemon`
+- `iomfb_RuntimeProperty_enableSBIM`
+- `iomfb_RuntimeProperty_PDCSaveRepeatUnstablePCC`
+- `\"%s, fDartActiveCount is zero when disable is specified\" @%s:%d`
+- `function-clpc_enabled`
+- `iomfb_RuntimeProperty_ambientBrightness`
+- `iomfb_RuntimeProperty_allocateDefaultFramebuffer`
+- `iomfb_RuntimeProperty_GCPEnabled`
+- `enableAmbientLightSensorStatistics`
+- `%s: found no suitable timing element in IOAVVideoInterface\n`
+- `VRRBurnInThreshold`
+- `VUCEnable`
+- `IOMobileFramebufferLegacy`
+- `format`
+- `site.IOMFBEvtMonTrampoline`
+- `framebuffer-width`
+- `n84`
+- `static IOReturn IOMobileFramebufferUserClient::s_hdcp_send_request(IOMobileFramebufferUserClient *, void *, IOExternalMethodArguments *)`
+- `RuntimeProperty::registerTraceEnable`
+- `GCPManuallyControlled`
+- `DisplayWallIdleThreshold`
+- `iomfb_RuntimeProperty_GCPManuallyControlled`
+- `iomfb_RuntimeProperty_BLMAHOutputFreq`
+- `PCC2DLedAccelOut`
+- `RTPLCEnablePredThreshCross`
+- `IOMFBStatus UPAsynchronousScheduler_::prepareThread(ArgumentID *, void *, void *, void *, void *)`
+- `site.UPEventMonitor`
+- `Last Swap Layer Surface ID`
+- `iomfb_RuntimeProperty_PTUCAvgTempOption`
+- `IOMFB ERROR: IOSharedDataQueue::withCapacity Failed\n`
+- `iomfb_RuntimeProperty_vrrVersion`
+- `IRDCACCEnable`
+- `swap_signal on a layer that is already marked as completed\n`
+- `%s: cannot use flag KeepOnScreen when blending\n`
+- `iomfb_RuntimeProperty_set0DTempSensorValue`
+- `RuntimeProperty::COUNT`
+- `UPAsynchronousScheduler`
+- `%s fId %u second_external %d powerstate %d fdisplaytype %d\n`
+- `GamutConversionLocation IOMFB::getGamutConversionLocationFromRTP(RuntimeProperty)`
+- `j172`
+- `%s: get_timing_attributes_gated failed\n`
+- `iomfb_IdleDetectorIndex_DisplayWall_enabled`
+- `iomfb_RuntimeProperty_debugUInt32`
+- `iomfb_RuntimeProperty_enableGPAlphaDiv`
+- `ERROR: passthrough layers must be fullscreen: (%d, %d) != (%d, %d)\n`
+- `ADCLLoadAll`
+- `IOMFB %s: Lock::sleep was interrupted, aborting\n`
+- `iomfb_GamutConversionLocation_Pipe1`
+- `BLMStandbyEnable`
+- `Average Written Registers`
+- `%s: failed when gathering power info\n`
+- `%s: warning: IOAVVideoInterface ID %llu stopping pre-configured video link, which does not match selected timing/color mode (tm=%llu cm=%llu)\n`
+- `iomfb_IdleDetectorIndex_VRRBurnInPreventionCooldown_enabled`
+- `RTPLCEnable`
+- `void UPAsynchronousScheduler_::releaseArgumentEntry(ArgumentEntry *, bool)`
+- `iomfb_RuntimeProperty_enableReplayInVMAOD`
+- `enableFiltersNoRewriteMode`
+- `setActive`
+- `BitDepth::FourteenBits`
+- `iomfb_RuntimeProperty_brightnessCorrectionB`
+- `APTPanicOnChargeOOB`
+- `LTHSaveDispPerfBoostEnable`
+- `iomfb_RuntimeProperty_CMDegammaMethod`
+- `iomfb_RuntimeProperty_doPODBoost`
+- `IOMFBTemperatureCompensationEnable`
+- `enableGamutMapper`
+- `PDCSaveLongFrames`
+- `framebuffer-height`
+- `\"bad IOFence callback\" @%s:%d`
+- `%s: found no suitable color element in IOAVVideoInterface\n`
+- `iomfb_RuntimeProperty_pccStabilityThresholdAOT`
+- `iomfb_RuntimeProperty_isRGBMultiPlaneSupportEnabled`
+- `ChargeValuesReset`
+- `n104`
+- `iomfb_RuntimeProperty_APTDefaultGrayValue`
+- `iomfb_RuntimeProperty_PDCEntryTime`
+- `iomfb_RuntimeProperty_supportHWSecureAnimation`
+- `IOMFBSecureContentFactor`
+- `GCPBypassesEDRPixels`
+- `BlendPixelCaptureLocation`
+- `DCPResetLoopMaxCount`
+- `create_default_fb_surface`
+- `121111`
+- `iomfb_RuntimeProperty_maxCompressedSrcSurfaceWidth`
+- `iomfb_RuntimeProperty_sclCursorSwapFailed`
+- `iomfb_RuntimeProperty_enablePCC`
+- `iomfb_RuntimeProperty_PTUCAvgTempGridPos`
+- `IRDCOverrideTemp`
+- `UPAsynchronousScheduler_::ArgumentEntry *UPAsynchronousScheduler_::createArgumentEntry()`
+- `Data`
+- `com.apple.private.iomfb.set-block`
+- `iomfb_RuntimeProperty_ammoliteStrength`
+- `iomfb_RuntimeProperty_enableAPT_CDFD`
+- `iomfb_RuntimeProperty_PODBoost`
+- `IOMFBAPTQuanta`
+- `IOMFBApplyBrightnessProps`
+- `overrideLPFControls`
+- `RDLCAngleOverride`
+- `HBLDDimmingFactorMin`
+- `iomfb_RuntimeProperty_BLNitsCap`
+- `iomfb_RuntimeProperty_asyncSwapDisabled`
+- `DisplayWallConfig`
+- `backboardd`
+- `iomfb_RuntimeProperty_enablePLCMode`
+- `iomfb_RuntimeProperty_proxScanPosition`
+- `iomfb_RuntimeProperty_GP0PixelCaptureLocation`
+- `BypassPCC2DLed`
+- `DBVValue`
+- `%s: IOAVVideoInterface startLink() failed with 0x%x\n`
+- `iomfb_RuntimeProperty_enableAPTLogs`
+- `%s: Couldn't create a work loop\n`
+- `maxAverageBpp`
+- `AppleARMParamFIFO`
+- `iomfb_RuntimeProperty_panicOnHungSwap`
+- `IOMFBSecureIndicatorSDRFactor`
+- `APTDefaultGrayValue`
+- `RDLCEnable`
+- `%s: IOAVVideoInterface didStartLink() failed with 0x%x\n`
+- `iomfb_RuntimeProperty_forceEnableLPRSwaps`
+- `iomfb_RuntimeProperty_proxScanPlan`
+- `enableLatLeakComp`
+- `BLMAHMode`
+- `iomfb_enable_edr_scaling`
+- `%s: IOAVVideoInterface completeLink() failed with 0x%x\n`
+- `iomfb_internal_tool`
+- `122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `%s: bad argument(s): %p %lu\n`
+- `%s: ERROR: pool size exhausted\n`
+- `IRDCFrameMinResetCount`
+- `dst_x`
+- `iomfb_RuntimeProperty_enable2DTemperatureCorrection`
+- `iomfb_RuntimeProperty_APTEventsMaskHi`
+- `enablePLCMode`
+- `%s: Couldn't create power state change interrupt event source\n`
+- `iomfb_RuntimeProperty_AODWaitForWalkdown`
+- `iomfb_RuntimeProperty_enableRRBPGainOverride`
+- `IOMFBSupportsGPLite`
+- `BLMAHOutputFreq`
+- `Last Swap Completion State`
+- `%s: IOAVVideoInterface open failed\n`
+- `iomfb_RuntimeProperty_DisplayWallAvailFBs`
+- `iomfb_RuntimeProperty_PDCAlwaysOnNits`
+- `IOMFBBlendDisabledKey`
+- `ModeBlm`
+- `site.IOAVHandler`
+- `static IOReturn IOAVHandler::IOAVEvent_async(void *, void *, void *)`
+- `isSetBlockEnumAllowed`
+- `iomfb_IdleDetectorIndex_DisplayWall_threshold`
+- `iomfb_RuntimeProperty_TriggerDCPResetRequestFromM3`
+- `\"%s: could not cast IOService to IOAVVideoInterface\" @%s:%d`
+- `iomfb_RuntimeProperty_enableLatLeakComp`
+- `\"UPAAFProxy::withServiceAsync: function name too long\" @%s:%d`
+- `VRRIdleEnabled`
+- `iomfb_RuntimeProperty_IRDCACCEnable`
+- `PixelCaptureBlockMask`
+- `ERROR: passthrough layer has to be the only layer enabled\n`
+- `CEA-861:Type1`
+- `set_notify rejected — ilk %d >= ARRAY_SIZE %lu\n`
+- `iomfb_RuntimeProperty_useBAEForSBIM`
+- `iomfb_RuntimeProperty_enableRTPLCPTC`
+- `DPBLPFMaxSlopeValue`
+- `RCAEnable`
+- `%s: IOSurfaceRoot not available or of the wrong class\n`
+- `site.GateWrapper`
+- `enableDither`
+- `IOMFBSupportsHDR10Plus`
+- `j171`
+- `RCAWLDisable`
+- `GCPDisablesTwilightLumaComp`
+- `DCPUtils.cpp`
+- `%s: max argument count (%d) reached. Notify a few first.\n`
+- `iomfb_RuntimeProperty_supportGPLite`
+- `PCC0DBLCEnable`
+- `%s: no default action for argument relying on it\n`
+- `enabled`
+- `completed`
+- `PowerGateADPIdleEnabled`
+- `iomfb_RuntimeProperty_enableRegammaRRSupport`
+- `NESREnable`
+- `%s: invalid layer: %d\n`
+- `forceEnableLPRSwaps`
+- `PCCStabilityThresholdAOT`
+- `IOReturn IOMobileFramebufferLegacy::spinner_surface_alloc(IOSurface **)`
+- `VRRBurnInCooldownEnabled`
+- `requestPixelBacklightModulation`
+- `enableABGMode`
+- `CMPixelCaptureLocation`
+- `RegammaRREnable`
+- `%03d: 0x%03x\n`
+- `%s  dont allow ext disp off  \n`
+- `IOReturn IOMobileFramebufferUserClient::hdcp_get_reply(const uint8_t *, size_t *)`
+- `%s: invalid bytes received from property %s\n`
+- `iomfb_RuntimeProperty_enable2DUniformityCorrection`
+- `BlendOutputCSCMethod`
+- `ApriBrightOverride`
+- `SystemConsoleMode`
+- `iomfb_RuntimeProperty_panicOnChargeParity`
+- `iomfb_RuntimeProperty_enableGenLock`
+- `enableLinearToPanel`
+- `\"Missing 'delete' overload\" @%s:%d`
+- `iomfb_RuntimeProperty_DCPResetLoopWindowSec`
+- `twilightStrength`
+- `site.TimerEventSourceBridge`
+- `\"%s: unknown property %s\\n\" @%s:%d`
+- `limit_max_physical_brightness`
+- `IOMFBPreserveContents`
+- `src_buffer_Id`
+- `iomfb_RuntimeProperty_enableAmbientLightSensorStatistics`
+- `IOMFBAllowAnnouncingPTS`
+- `%s: Couldn't add swap expiration timer event source to work loop.\n`
+- `src_height`
+- `%s set power on pending \n`
+- `iomfb_RuntimeProperty_supportsCursorOnSCLregion`
+- `IOMFBRGBSupportsCursorOnSCLregionKey`
+- `HBLDNitsRRMax`
+- `IOMobileFramebuffer`
+- `IdleDetectorIndex IOMFB::getIdleDetectorFromRTP(RuntimeProperty)`
+- `iomfb_RuntimeProperty_RTPLCNitsThresh`
+- `ccMinNitsConfig`
+- `APTLimitRefreshRate`
+- `IOMFB Block mgr %s: Redundant handler for block type %d (ignored)\n`
+- `iomfb_RuntimeProperty_clearUSPUCData`
+- `APTPanicOnChargeParity`
+- `RPMEnable`
+- `RRBPEnable`
+- `site.RefCounted`
+- `BLMPowergateEnable`
+- `iommu-parent`
+- `PurpleGfxMem`
+- `site.aaf_async_args_t`
+- `%s: hdcp_get_reply failed with 0x%x\n`
+- `iomfb_RuntimeProperty_DPBDriverBacklightValue`
+- `iomfb_RuntimeProperty_enablePCC2D`
+- `PDCExitTime`
+- `iomfb_RuntimeProperty_enableABGDynamicMap`
+- `iomfb_RuntimeProperty_overdriveCompCutoff`
+- `BLNitsCap`
+- `ProxScanPosition`
+- `\"%s: IODMACommand::prepare failed with 0x%x\\n\" @%s:%d`
+- `dst_y`
+- `iomfb_RuntimeProperty_ConfigureQMSVRR`
+- `EmissionFrequency`
+- `IOAVHandler.cpp`
+- `width`
+- `RefCounted.h`
+- `iomfb_RuntimeProperty_LTHSaveDispPerfBoostEnable`
+- `iomfb_RuntimeProperty_forceEnableACSS`
+- `IOMFBSupportsSecureIndicator`
+- `BLMAHStatsLogEnable`
+- `\"DISPLAY DRIVER FAILED TO LOAD\" @%s:%d`
+- `IOMFBStatus UPAsynchronousScheduler_::startThreadWithAction(Action, ArgumentID *, void *, void *, void *, void *)`
+- `IOMFB %s: setObject failed\n`
+- `IOMFB: WARNING: reserved user client function called\n`
+- `IOMobileFramebufferRuntimeProperties.cpp`
+- `iomfb_RuntimeProperty_enableLAC`
+- `iomfb_RuntimeProperty_emissionFrequency`
+- `iomfb_RuntimeProperty_TBICSPixelCaptureLocation`
+- `PCCEnable`
+- `iomfb_fdr_loader`
+- `iomfb_RuntimeProperty_limitRefreshRate`
+- `IOMFBYUVPackedUnSupported`
+- `RREnable`
+- `disableBLKSFComp`
+- `RuntimeProperty::LAST_IDLE_DETECTOR`
+- `n13`
+- `swapId`
+- `iomfb_RuntimeProperty_resetAPT_CA`
+- `%s: clearMemoryDescriptor failed with 0x%x\n`
+- `site.TimerEventSource`
+- `startThreadWithActionSync`
+- `\"%s::Exceeded aborted swap limit\" @%s:%d`
+- `enableSWS`
+- `%s: NULL pID passed\n`
+- `bool IOMobileFramebufferLegacy::verifyKeepOnScreen_gated(IOMFBSwapIORequest *)`
+- `IOMFBStatus UPAsynchronousScheduler_::prepareThreadWithAction(Action, ArgumentID *, void *, void *, void *, void *)`
+- `NormalModeEnable`
+- `PDCExitCount`
+- `IOAVHandlerInternalDisplay`
+- `uint8_t IOMFB::getBitDepthValue(BitDepth)`
+- `VRRBurnInEnabled`
+- `iomfb_RuntimeProperty_PDCSaveLongFrames`
+- `iomfb_RuntimeProperty_IRDCFrameMinResetCount`
+- `iomfb_RuntimeProperty_disableDisplayOptimize`
+- `RTPLCRecoveryCoeff`
+- `IOMFBSwapIORequest`
+- `ERROR: timestamp create failed\n `
+- `UPEvtMgr::add - Event monitor registered with duplicate index(%d)\n`
+- `iomfb_RuntimeProperty_enableABG`
+- `iomfb_RuntimeProperty_DBVValue`
+- `PTUCOverrideTemp`
+- `\"%s: IOMemoryDescriptor::prepare failed with 0x%x\\n\" @%s:%d`
+- `enableDefaultTemperatureCorrection`
+- `useBAEForSBIM`
+- `void IOMobileFramebufferLegacy::record_swap_info_gated(IOMFBSwapIORequest *, IOMFBSwapCompletionState)`
+- `iomfb_RuntimeProperty_enableGammaCorrection`
+- `iomfb_RuntimeProperty_enableTLSC`
+- `iomfb_RuntimeProperty_enableDarkEnhancer`
+- `backlightValue`
+- `%s: trying to display default transaction when default framebuffer has not been allocated\n`
+- `Last Swaps Array`
+- `BitDepth::UNKNOWN`
+- `iomfb_GamutConversionLocation_PostBlend`
+- `iomfb_RuntimeProperty_enableDefaultTemperatureCorrection`
+- `iomfb_RuntimeProperty_clockRatio`
+- `iomfb_RuntimeProperty_GP1PixelCaptureLocation`
+- `PCC2DLedAccelLog`
+- `UIVibrancyEnable`
+- `DSCBpp`
+- `iomfb_RuntimeProperty_enableSWS`
+- `iomfb_RuntimeProperty_enablePartialUpdate`
+- `12`
+- `iomfb_RuntimeProperty_maxPeakBpp`
+- `\"%s: argument queue not empty!\" @%s:%d`
+- `\"%s: ERROR: entry is not in the pool\\n\" @%s:%d`
+- ` * IOMFB: Could not set the memory descriptor for theDMA command (error:%d)\n`
+- `IOMFBContrastEnhancerStrength`
+- `AODWaitForWalkdown`
+- `CalCLutPixelCaptureLocation`
+- `\"init failed\" @%s:%d`
+- `com.apple.private.allow-explicit-graphics-priority`
+- `enableMockALSSCapture`
+- `%s: dropping callback for non pending notification\n`
+- `IOReturn IOAVHandler::linkShutdown_gated()`
+- `InterruptEventSourceBridge`
+- `virtual void IOAVHandlerInternalDisplay::plugEvent_async_gated(IOAVVideoInterface *)`
+- `%s: hdcp_client_will_stop failed with 0x%x\n`
+- `enableDarkEnhancer`
+- `VRRVersion`
+- `PanicOnHungSwap`
+- `displayMinRefreshInterval`
+- `iomfb_RuntimeProperty_enableRTPLCFD`
+- `iomfb_RuntimeProperty_HBLDNitsRRMax`
+- `enableSBIM`
+- `QoSDebug`
+- `PDCAlwaysOnNits`
+- `P3`
+- `iomfb_RuntimeProperty_apriBrightOverride`
+- `iomfb_RuntimeProperty_support2DBL`
+- `iomfb_RuntimeProperty_PCC2DLedLog`
+- `iomfb_RuntimeProperty_DisableCalClut`
+- `splxMapAwareMode`
+- `valueTBICAlphaOverride`
+- `ForceAOTARMode`
+- `IOMFB: %s: No Default FB Surface found. Return error\n`
+- `iomfb_RuntimeProperty_brightnessCompensationEnable`
+- `iomfb_RuntimeProperty_IdleCachingMethod`
+- `iomfb_RuntimeProperty_pccStabilityThreshold`
+- `dummySystemWantsCaching`
+- `UIVibrancyBoost`
+- `IOMFBStatus UPAsynchronousScheduler_::notifyThread(ArgumentID, void *, void *, void *, void *)`
+- `RTPLCPixelCaptureLocation`
+- `iomfb_RuntimeProperty_isYUVSupportEnabled`
+- `iomfb_RuntimeProperty_enableAPT_PDC_Repeat`
+- `t72`
+- `IOMFB power info panel`
+- `IOMFB ERROR: ioDataQueue->getMemoryDescripto Failed\n`
+- `iomfb_RuntimeProperty_APTFixedRR`
+- `iomfb_RuntimeProperty_forceEnableACSSGenXSensing`
+- `APTEnableDefaultGray`
+- `BLMAHOutputLogEnable`
+- `iomfb_RuntimeProperty_panicOnStuckPolarity`
+- `iomfb_RuntimeProperty_enablePowerTrace`
+- `enableABGDynamicMap`
+- `APTEventsMaskHi`
+- `APTPDCEnable`
+- `usePodBoostAtRTPLCFDLUT`
+- `IOMFB %s: Lock::sleep timed out, aborting\n`
+- `IOMFB: %s:  CommandWake didn't happen even after 5 seconds.                       Seems system in bad state, cancelling swaps\n`
+- `com.apple.private.gain-map-access`
+- `surface_complete`
+- `iomfb_rack_debug`
+- `\"%s: property %s is not an idle detector\\n\" @%s:%d`
+- `iomfb_RuntimeProperty_twilightStrength`
+- `IOMFBSCLCursorSwapFailedKey`
+- `site.AppleARMParamFIFO`
+- `iomfb_RuntimeProperty_enableALSSFCAMStats`
+- `iomfb_RuntimeProperty_enableStats`
+- `IOMFBWideGamutPassthrough`
+- `RRBPGainOverride`
+- `iomfb_RuntimeProperty_limit_max_physical_brightness`
+- `BICSPixelCaptureLocation`
+- `resTransitionStrength`
+- `\"%s: client cannot execute this enum %d client type: %d index: %d\\n\" @%s:%d`
+- `overrideDPBMaxSlopes`
+- `IOMFBIndicatorNitsCap`
+- `1211111`
+- `function-frame_swap`
+- `%s: client cannot execute this enum %d client type: %d index: %d\n`
+- `%s: message size is zero\n`
+- `IOMFB: driver commit: %s\n`
+- `site.iOSAAFProxy`
+- `IOUserClientDefaultLockingSetProperties`
+- `iomfb_RuntimeProperty_secureIndicatorSDRFactor`
+- `IOMFB %s: startThreadWithAction failed with 0x%x\n`
+- `void IOMobileFramebufferLegacy::surface_complete(IOMFBSwapIORequest *, uint32_t, bool)`
+- `IOMFB power info`
+- `iomfb_RuntimeProperty_enableTBIC`
+- `%s: applying boot-arg RTP %s with value 0x%x returned 0x%x\n`
+- `iomfb_RuntimeProperty_bthrbOverride`
+- `iomfb_RuntimeProperty_exportCRCAtVBI`
+- `iomfb_RuntimeProperty_proxOcclusionLevel`
+- `IOMFB: swap_wait_gated blocked so cleared up swaps\n`
+- `iomfb_RuntimeProperty_splxMapAwareMode`
+- `iomfb_RuntimeProperty_vrrDivisor`
+- `TemperatureStructVersion2D`
+- `SupportsAOT1HzOptimizations`
+- `ReplayInVMAODEnable`
+- `iomfb_RuntimeProperty_enableKernelTests`
+- `iomfb_RuntimeProperty_RTPLCBLNitsScaler`
+- `iomfb_RuntimeProperty_panicOnChargeOOB`
+- `IOMFBEnableProxSensing`
+- `AoD1HzPanicThreshold`
+- `void UPAsynchronousScheduler::performActions_gated()`
+- `IOMFB: Unsupported format for spinner \n`
+- `iomfb_RuntimeProperty_PixelCaptureBlockMask`
+- `EnableApri`
+- `IOMFBCompressedSourceSurfaceWidth`
+- `IOMFBAPTQuantaTransitionTimeoutMs`
+- `%s: argument %u relies on a default action`
+- `%s srcRect.x (%d) less than zero\n`
+- `iomfb_RuntimeProperty_DisplayWallFBs`
+- `iomfb_RuntimeProperty_applyBrightnessProps`
+- `%s: argument id %u already notified, it's too late to abort!\n`
+- `IOMFB power info controller`
+- `1211111211`
+- `iomfb_RuntimeProperty_selectABGDynamicMap`
+- `LPFControlValue`
+- `ProxScanPlan`
+- `PTUCAvgTempGridPos`
+- `SCMBuildInfo_AppleDisplayPipe`
+- `%s: no map or size passed\n`
+- `iomfb_RuntimeProperty_enableNESR`
+- `IOMFBYUV420UnSupported`
+- `AOTEnable`
+- `site.IOMobileFramebuffer`
+- `iomfb_RuntimeProperty_brightnessCorrection`
+- `iomfb_RuntimeProperty_enableAPT_PDC`
+- `M3DiagsTimeout`
+- `GP0PixelCaptureLocation`
+- `enableALSSFCAMStats`
+- `enableDBMMode`
+- `BthgOverride`
+- `iomfb_RuntimeProperty_disableRCAWL`
+- `RTPLCNitsThresh`
+- `ccParamsVersion`
+- `IOMFBTestBacklightDimValue`
+- `IOMobileFramebufferService`
+- `iomfb_RuntimeProperty_valueTBICAlphaOverride`
+- `%s: NULL pAction passed\n`
+- `IOMFBStatus UPAsynchronousScheduler::abortThread(ArgumentID)`
+- `iomfb_RuntimeProperty_enableGamutMapper`
+- `iomfb_RuntimeProperty_enableAPT_PDC_PM`
+- `iomfb_RuntimeProperty_enableBLMAHStatsLog`
+- `iomfb_RuntimeProperty_enableRTPLCNitsCap`
+- `iomfb_RuntimeProperty_FIRST_GAMUT_CONVERSION_LOCATION`
+- `%s System error: Mismatched data size\n`
+- `site.iOSMemoryDescriptor`
+- `iomfb_RuntimeProperty_pixelBacklightModulationForceState`
+- `iomfb_RuntimeProperty_indicatorNitsCap`
+- `iomfb_RuntimeProperty_IRDCTempOverride`
+- `iomfb_RuntimeProperty_BlendPixelCaptureLocation`
+- `enableSubPixelLayoutCompensation`
+- `ApriTempOverride`
+- `iomfb_RuntimeProperty_TemperatureStructVersion2D`
+- `iomfb_RuntimeProperty_ccMinNitsConfig`
+- `iomfb_RuntimeProperty_isBlendDisabled`
+- `iomfb_RuntimeProperty_enablePTUC`
+- `iomfb_RuntimeProperty_PixelCaptureConfig`
+- `iomfb_RuntimeProperty_dynamicSageLogging`
+- `debugHardPowerEvent`
+- `RTREnable`
+- `iomfb_RuntimeProperty_enablePCC0DBLC`
+- `iomfb_RuntimeProperty_hgodCutoff`
+- `iomfb_RuntimeProperty_AoD1HzPanicThreshold`
+- `HingeAngleOverrideValue`
+- `dst_height`
+- `Last Swap Layer Height`
+- `122122`
+- `iomfb_RuntimeProperty_registerTraceEnable`
+- `RTPLCBLNitsCap`
+- `IRDCFrameReset`
+- `setParameter`
+- `IOAVHandlerInternalDisplay.cpp`
+- `VRRIdleThreshold`
+- `iomfb_RuntimeProperty_resetChargeValues`
+- `DisableCalClut`
+- `virtual bool IOMobileFramebufferLegacy::init(OSDictionary *)`
+- `PDCGlobalTemp`
+- `iomfb_RuntimeProperty_enableADBEColorManager`
+- `iomfb_RuntimeProperty_GCPBypassesEDRPixels`
+- `%s: provider was not AppleARMIODevice.\n`
+- `iomfb_RuntimeProperty_apriTempOverride`
+- `iomfb_RuntimeProperty_isYUV420UnSupported`
+- `IOMFBSetConsoleMode`
+- `BitDepth::EightBits`
+- `j32`
+- `%s: failed when gathering last completed swap transactions\n`
+- `gamutConversionPipe0`
+- `gamutConversionPipe1`
+- `iomfb_RuntimeProperty_SupportsSecureIndicator`
+- `DisplayWallFBs`
+- `edrScaleinGP`
+- `iomfb_panic_on_boot_failure`
+- `site.Lock`
+- `iomfb_IdleDetectorIndex_PowerGateFrontEnd_threshold`
+- `EnableKernelTests`
+- `QMSVRREnableConfig`
+- `Last Swap Layers Array`
+- `iomfb_IdleDetectorIndex_VRRBurnInPrevention_threshold`
+- `iomfb_RuntimeProperty_DisplayWallConfig`
+- `CMDegammaMethod`
+- `%s: Couldn't add power state change interrupt event source to work loop.\n`
+- `iomd-early-reclaim`
+- `%s  return success for ext disp on \n`
+- `use0DSensorFor2DTemp`
+- `allocateDefaultFramebuffer`
+- `APTEnableCDFD`
+- `\"%s: implementation error for %s\" @%s:%d`
+- `displayMinRefreshIntervalMachTime`
+- `IdleDetectorRTPType IOMFB::getIdleDetectorRTPTypeForIdleDetectorRTP(RuntimeProperty)`
+- `iomfb_RuntimeProperty_disableDBSR`
+- `GCPStrength`
+- `light-em-up`
+- `d21`
+- `virtual IOMFBStatus IOMobileFramebufferLegacy::hdcp_get_reply(IOMemoryMap *, size_t *)`
+- `static IOReturn IOMobileFramebufferUserClient::s_hdcp_get_reply(IOMobileFramebufferUserClient *, void *, IOExternalMethodArguments *)`
+- `TimerEventSourceBridge`
+- `totalSwaps`
+- `iomfb_RuntimeProperty_digitalDimmingLevel`
+- `iomfb_RuntimeProperty_enableAPTEvents`
+- `iomfb_RuntimeProperty_enableRTPLC`
+- `IOMFBSupports2DBL`
+- `calibrationType`
+- `2222222222222222222222211`
+- `IOMFBEvtMonTrampoline`
+- `DSCState`
+- `%s: buffer allocation failed\n`
+- `%s: ERROR: mode is NULL\n`
+- `iomfb_RuntimeProperty_bypassPCC2DLed`
+- `iomfb_RuntimeProperty_enableHingeAngleOverride`
+- `site.InterruptSource`
+- `bool IOMobileFramebufferLegacy::setDisplayRefreshProperties()`
+- `iomfb_RuntimeProperty_darkBoot`
+- `iomfb_RuntimeProperty_PDCExitTime`
+- `d11`
+- `site.iOSBufferDescriptor`
+- `void IOMobileFramebufferLegacy::getCurrentActiveRegions_gated(uint32_t, const IOMFBRect **, uint32_t *) const`
+- `set_bool_prop`
+- `../`
+- `IOMFBProxOcclusionLevel`
+- `virtual void UPAsynchronousScheduler::free()`
+- `n14`
+- `iomfb_RuntimeProperty_BLMPLimitCfg`
+- `iomfb_RuntimeProperty_vshHistVal`
+- `hgodCutoff`
+- `PTUCEnable`
+- `iomfb_RuntimeProperty_ESDThresholdMS`
+- `iomfb_RuntimeProperty_enableMockALSSCapture`
+- `iomfb_RuntimeProperty_enableAPTDefaultGray`
+- `iomfb_RuntimeProperty_enableProxSensing`
+- `iomfb_RuntimeProperty_supportsAOTPowerSaving`
+- `iomfb_RuntimeProperty_CalCLutPixelCaptureLocation`
+- `enableGPDeringing`
+- `GCPEnabled`
+- `AdobeRGB`
+- `iomfb_RuntimeProperty_enableRDLC`
+- `d79`
+- `APTFixedRR`
+- `\"%s: could not cast pointer to IOAVHandler *\" @%s:%d`
+- `totalVBLs`
+- `site.IOMobileFramebufferUserClient`
+- `iomfb_RuntimeProperty_aptQuanta`
+- `DCPResetLoopWindowSec`
+- `compatible`
+- `IOUserClientDefaultLockingSingleThreadExternalMethod`
+- `iomfb_RuntimeProperty_DPBDriverOverrideMaxSlopes`
+- `const char *IOMFB::get_RTP_boot_arg_name(RuntimeProperty)`
+- `RuntimeProperty::LAST_GAMUT_CONVERSION_LOCATION`
+- `APTEnableCA`
+- `site.IOMFBSwapInfo`
+- `thermal_monitor`
+- `iomfb_RuntimeProperty_dummySystemWantsCaching`
+- `enableGammaCorrection`
+- `12111112122212121`
+- `\"RefCounted: reference count underflow\" @%s:%d`
+- `121111121222121212`
+- `\"%s: property %s is not a gamut conversion location\\n\" @%s:%d`
+- `iomfb_RuntimeProperty_isYUVPackedUnSupported`
+- `virtual IOMFBStatus UPAsynchronousScheduler::checkAndQueueArgument(ArgumentEntry *)`
+- `121`
+- `iomfb_RuntimeProperty_UIVibrancyBoost`
+- `gamutConversionPostBlend`
+- `iomfb_RuntimeProperty_DPBDriverOverrideLPFControls`
+- `enableVideoCaching`
+- `APTEnablePRC`
+- `GPLiteMaxSrcSz`
+- `CollectStatistics`
+- `iomfb_RuntimeProperty_usePodBoostAtRTPLCFDLUT`
+- `iomfb_RuntimeProperty_secureContentFactor`
+- `iomfb_RuntimeProperty_enableRTPLCRT`
+- `ammoliteStrength`
+- `BLMPLimitCfg`
+- `12111112`
+- `IOMFB %s: swapId = %d, options = 0x%x, noBlock = 0x%x, HPD = %d, DPLink = %d,                    TimingEnable = %d, PowerStates-Cntr = %d, Display =%d\n`
+- `IOMFB: %s : Freeing up Default Temp surface - Surface = 0x%p\n`
+- `iomfb_IdleDetectorIndex_System_enabled`
+- `iomfb_RuntimeProperty_genLockFrequency`
+- `iomfb_RuntimeProperty_forceSecureAnimationUpdate`
+- `iomfb_swap_reject_panic`
+- `\"IOMFB: swap rejected\" @%s:%d`
+- `Pending Swap`
+- `iomfb_RuntimeProperty_enableHighGrayOD`
+- `iomfb_RuntimeProperty_ExternalAppleLook`
+- `CECorrectionFactor`
+- `../../../product`
+- `iomfb_RuntimeProperty_modeBlm`
+- `DriverCommonFunctions.cpp`
+- `BitDepth::TwelveBits`
+- `iomfb_RuntimeProperty_BLMAHMode`
+- `\"%s: IODMACommand::setMemoryDescriptor failed with 0x%x\\n\" @%s:%d`
+- `CLCDTransaction size mismatch.  Returning error 0x%X.\n`
+- `iomfb_RuntimeProperty_APTEventsMask`
+- `iomfb_RuntimeProperty_SWSTemp`
+- `enableBICUpdates`
+- `APTEnableConfigExpired`
+- `IOReturn unmap_memory_dart(IOMapper *, IOMemoryDescriptor *, IODMACommand *)`
+- `IOMFBDoPODBoost`
+- `%s: hdcp reply is not ready\n`
+- `src_x`
+- `PDCContentSwitchCount`
+- `use-legacy-DART`
+- `ERROR: not more than one passthrough layer allowed, given %d\n`
+- `IOSurfaceDisplayTimes`
+- `i28@?0^{PBTBlockHandlerGeneric=^^?II^{DCPLink}Bi{?=^{PBTBlockHandlerGeneric}^^{PBTBlockHandlerGeneric}}III}8^v16I24`
+- `IOMFBSupportHWSecureAnimation`
+- `%s: IOAVVideoInterface willStopLink() failed with 0x%x\n`
+- `factory_toolbox`
+- `\"IOMFB: swap_wait_gated blocked for more than 5 seconds. Should not happen. Panicking\\n\" @%s:%d`
+- `IOMFB %s: setProperties failed with 0x%x\n`
+- `DisplayWallIdleEnabled`
+- `iomfb_RuntimeProperty_GCPStrength`
+- `iomfb_RuntimeProperty_QoSDebug`
+- `iomfb_RuntimeProperty_PDCGlobalTemp`
+- `iomfb_drop_noop_swap`
+- `iomfb_RuntimeProperty_enableAPTConfigExpired`
+- `iomfb_RuntimeProperty_hingeAngleOverrideValue`
+- `enableBICMode`
+- `virtual void IOMobileFramebufferLegacy::writeDebugInfo_gated(OSDictionary *)`
+- `iomfb_RuntimeProperty_UIVibrancy`
+- `PCC2DEnable`
+- `swap_wait_gated`
+- `Last Swaps Dictionary`
+- `iomfb_RuntimeProperty_bthgOverride`
+- `iomfb_RuntimeProperty_supportHDR`
+- `iomfb_RuntimeProperty_BLMPowergateEnable`
+- `iomfb_RuntimeProperty_IRDCEMPEnable`
+- `IOMFBSetDispIntGPIO`
+- `%s: can't find argument with id %u!\n`
+- `iomfb_RuntimeProperty_StatsTapPoint`
+- `iomfb_RuntimeProperty_forceAOTARMode`
+- `enable2DTemperatureCorrection`
+- `displayRefreshStepMachTime`
+- `iomfb_RuntimeProperty_enablePCCLogs`
+- `site.IOMFBSwapIORequest`
+- `\"%s: IODMACommand::genIOVMSegments failed with 0x%x\\n\" @%s:%d`
+- `IOMFBStatsTapPoint`
+- `IdleCachingMethod`
+- `pccLumaGammaFactor`
+- `bool IOAVHandler::IOAVEvent(IOAVEventType, IOService *)`
+- `DisableDisplayOptimize`
+- `%s: cannot create a lock\n`
+- `dst_width`
+- `void IOMobileFramebufferLegacy::parse_RTP_boot_args()`
+- `%s System error: Failure to allocate memory descriptor\n`
+- `iomfb_RuntimeProperty_enableRR`
+- `iomfb_RuntimeProperty_enableHBLD`
+- `%s: Couldn't create swap expiration timer event source\n`
+- `Last Swap Intent`
+- `iomfb_RuntimeProperty_contrastEnhancerStrength`
+- `iomfb_RuntimeProperty_enableBLMSloper`
+- `iomfb_RuntimeProperty_MaxUABoost`
+- `iomfb_RuntimeProperty_enablePixelCapture`
+- `AODFixedRR`
+- `iomfb_RuntimeProperty_enableRCA`
+- `iomfb_RuntimeProperty_RTPLCRecoveryCoeff`
+- `iomfb_RuntimeProperty_disableBLKSFComp`
+- `RTPLCBLNitsScaler`
+- `forceEnableACSS`
+- `iomfb_RuntimeProperty_enableNormalMode`
+- `%s: IOMFB_SWAP_SUBMIT_LOST, transaction->swapID: %d, transaction->enabled: %d, transaction->completed: %d\n`
+- `1221`
+- `iomfb_RuntimeProperty_DSCState`
+- `PCCTrinityEnable`
+- `iomfb_RuntimeProperty_sharedDisplay`
+- `iomfb_RuntimeProperty_enable0DBLCTrinity`
+- `iomfb_RuntimeProperty_setDispIntGPIO`
+- `iomfb_RuntimeProperty_enableSPUC`
+- `EnableDBTH`
+- `genLockFrequency`
+- `IOMFBSupportsLFC`
+- `enableStats`
+- `enablePulseWidthMaximization`
+- `virtual bool UPAsynchronousScheduler::init(const char *, uintptr_t, size_t, uint32_t)`
+- `iomfb_drop_obsolete_swap`
+- `%s: verify_swap failed for swap id: %d\n`
+- `IOMobileFramebufferUserClient.cpp`
+- `windowserver`
+- `PCC0DBLCTrinityEnable`
+- `APTPDCEnablePM`
+- `SPUCEnable`
+- `IOMobileFramebufferLegacy.cpp`
+- `%s:  failed to map surface %d\n`
+- `121222`
+- `11111211122`
+- `iomfb_RuntimeProperty_DPBDriverOverrideBacklight`
+- `IOMFB: resizing canvas: %d %d\n`
+- `site.GateInstance`
+- `SystemIdlenessEnabled`
+- `iomfb_RuntimeProperty_BLMAHUPCount`
+- `iomfb_RuntimeProperty_PDCSettleCount`
+- `IOMFBIndicatorBrightnessNits`
+- `GenXHandlerTestCase`
+- `%s: cannot create an interrupt source\n`
+- `Last Swap Layer Format`
+- `iomfb_RuntimeProperty_enableEven60FPSFrames`
+- `iomfb_RuntimeProperty_fakeTconESDEvent`
+- `iomfb_RuntimeProperty_edrScaleinGP`
+- `IRDCEMPEnable`
+- `enableDisplayTMDpc`
+- `iomfb_RuntimeProperty_DPBDriverMaxSlopeValue`
+- `PixelCaptureConfig`
+- `void IOMobileFramebufferLegacy::setSystemConsoleMode_gated(bool)`
+- `src_stride`
+- `iomfb_RuntimeProperty_enablePowerGateDCS`
+- `iomfb_RuntimeProperty_AODFixedRR`
+- `forcePixelBacklightModulation`
+- `enableADBEColorManager`
+- `enableGenLock`
+- `enablePowerTrace`
+- `\"IOMFB ERROR: IOSharedDataQueue Enqueue Failure\\n\" @%s:%d`
+- `PCCCabalEnable`
+- `SWSTemp`
+- `%s\n`
+- `IOMFB: attempt to use invalid PBT type %d\n`
+- `resTransitionType`
+- `PerformanceStatistics`
+- `IOReturn IOMobileFramebufferLegacy::updateBufferMappingCount_gated(bool)`
+- `static IOReturn IOMobileFramebufferUserClient::s_map_display_type(IOMobileFramebufferUserClient *, void *, IOExternalMethodArguments *)`
+- `iomfb_IdleDetectorIndex_VRRBurnInPrevention_enabled`
+- `iomfb_IdleDetectorIndex_VRRBurnInPreventionCooldown_threshold`
+- `iomfb_RuntimeProperty_PDCContentSwitchCount`
+- `iomfb_RuntimeProperty_disableTempComp`
+- `iomfb_RuntimeProperty_aptQuantaTransitionTimeoutMs`
+- `iomfb_RuntimeProperty_enableRTPLCFDBicMult`
+- `\"%s: can't get boot-arg for property %s\\n\" @%s:%d`
+- `enableLAC`
+- `iomfb_aaf_async`
+- `iomfb_RuntimeProperty_DCPIndex`
+- `iomfb_RuntimeProperty_enableDither`
+- `iomfb_RuntimeProperty_use0DSensorFor2DTemp`
+- `iomfb_RuntimeProperty_DisableInternalAppleLook`
+- `RTPLCEnableFD`
+- `iomfb_disable_display`
+- `DisableInternalAppleLook`
+- `IOMFB Debug Info`
+- `display-complete`
+- `RTPLCEnableFixedKnee`
+- `site.InterruptEventSourceBridge`
+- `%s: invalid layerID: %d\n`
+- `bool IOMobileFramebufferLegacy::isDevice(char *)`
+- `iomfb_IdleDetectorIndex_VRR_threshold`
+- `iomfb_RuntimeProperty_wideGamutPassthrough`
+- `APTEventsMask`
+- `USPUCDefaultData`
+- `iomfb_RuntimeProperty_ADCLLoadAll`
+- `set0DTempSensorValue`
+- `ESDThresholdMS`
+- `AOTMultiRefresh`
+- `ERROR: passthrough layers cannot have dest offsets: (%d, %d) != (0, 0)\n`
+- `RuntimePropertyType IOMFB::getRuntimePropertyType(RuntimeProperty)`
+- `iomfb_RuntimeProperty_DPBDriverLPFControl2Value`
+- `iomfb_RuntimeProperty_USPUCDefaultData`
+- `iomfb_RuntimeProperty_WPCPixelCaptureLocation`
+- `selectABGDynamicMap`
+- `PDCSettleCount`
+- `TBICSPixelCaptureLocation`
+- `IOMFBBrightnessCompensationEnable`
+- `maxPeakBpp`
+- `HBLDEnable`
+- `rotation`
+- `\"%s: layer too large\" @%s:%d`
+- `RefCounted.cpp`
+- `PowerGateADPIdleThreshold`
+- `enableHighGrayOD`
+- `FakeTconESDEvent`
+- `IOMFBRGBMultiPlaneSupportKey`
+- `Swap Queue`
+- `iomfb_RuntimeProperty_enableRTPLCFixedKnee`
+- `ForceSecureAnimation`
+- `IOMFBDisplayRefresh`
+- `IOMobileFramebufferUserClient`
+- `iomfb_finfo_enqueue_panic_enable`
+- `iomfb_RuntimeProperty_brightnessLevelMA`
+- `iomfb_RuntimeProperty_maxAvgBpp`
+- `iomfb_RuntimeProperty_enableVUC`
+- `iomfb_RuntimeProperty_enableSubPixelLayoutCompensation`
+- `iomfb_RuntimeProperty_enableDisplayTMDpc`
+- `IOCoreSurfaceRoot`
+- `virtual IOMFBStatus IOMobileFramebufferLegacy::get_color_remap_mode(DisplayColorRemapMode *) const`
+- `IOMFBBrightnessLevel`
+- `IOMFBIntDcpUsedForExtWhenLidClose`
+- `%s srcRect.y (%d) less than zero\n`
+- `height`
+- `iomfb_RuntimeProperty_GPLiteMaxSrcSz`
+- `APTPDCEnableRepeat`
+- `IRDCEnable`
+- `IOMFBSkipSpinner`
+- `iomfb_RuntimeProperty_isFlipDisabled`
+- `iomfb_RuntimeProperty_enableAOT`
+- `IOMFBSecureIndicatorFactor`
+- `iomfb_IdleDetectorIndex_PowerGateFrontEnd_enabled`
+- `iomfb_RuntimeProperty_enableBICUpdates`
+- `iomfb_RuntimeProperty_CCPixelCaptureLocation`
+- `DPBMaxSlopeValue`
+- `EnableHingeAngleOverride`
+- `TriggerDCPResetRequestFromM3`
+- `kIOSurfaceTouchEventTimes`
+- `%s: property %s not found in EDT, assumed false.\n`
+- `default_fb_surface`
+- `iomfb_RuntimeProperty_GCPDisablesTwilightLumaComp`
+- `iomfb_RuntimeProperty_BICSPixelCaptureLocation`
+- `iomfb_RuntimeProperty_frameInfoTraceEnable`
+- `AmbientBrightness`
+- `PDCCutoffLux`
+- `\"%s: arguments may not be null\" @%s:%d`
+- `iomfb_RuntimeProperty_enableFiltersNoRewriteMode`
+- `iomfb_RuntimeProperty_HardPowerEvent`
+- `iomfb_RuntimeProperty_midporchRegion`
+- `iomfb_RuntimeProperty_RTPLCPixelCaptureLocation`
+- `overrideBacklight`
+- `@`
+- `iomfb_RuntimeProperty_brightnessLevelIDAC`
+- `iomfb_RuntimeProperty_enableRPM`
+- `void IOAVHandler::IOAVEvent_async_gated(void *, void *)`
+- `%s System error: Failure to prepare memory descriptor\n`
+- `bool IOMobileFramebufferLegacy::isLayerValidForSwap(uint32_t, IOMFBSwapIORequest *)`
+- `com.apple.private.iomfb.set-block-client-profile`
+- `iomfb_RuntimeProperty_blendOutCSCMethod`
+- `DisplayWallAvailFBs`
+- `darkBoot`
+- `BthrbOverride`
+- `IOMFBIsHiloDevice`
+- `%s: Couldn't add command gate to work loop.\n`
+- `static bool IOMobileFramebufferLegacy::readDataInEDT(IOService *, bool, const char *, const uint32_t, uint32_t *)`
+- `GP1PixelCaptureLocation`
+- `DBVInterval`
+- `IOReturn map_memory_dart(IOMapper *, IOMemoryDescriptor *, IODirection, IODMACommand **, dva_t *)`
+- `IOMFBStatus UPAsynchronousScheduler_::setDefaultAction(Action)`
+- `\"%s: no default action for argument %u!\" @%s:%d`
+- `iomfb_RuntimeProperty_temperatureCompensationEnable`
+- `start_hardware failed\n`
+- `BitDepth::TenBits`
+- `site.iOSMemoryMap`

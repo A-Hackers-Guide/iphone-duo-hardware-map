@@ -1,0 +1,211 @@
+# `usr/standalone/firmware/USB-C_HPM,43.bin`
+
+- File size: 158,016 bytes
+
+## Payload [FW]
+
+- Size after IM4P unwrap / decompression: 158,016 bytes
+- Format: raw binary
+
+## Identity strings (versions, build tags) [FW]
+
+- `Apple Inc.`
+
+## Strings (192) [FW]
+
+Printable runs of 6+ characters with at least three letters, in file order, with payload offset. For RTKit co-processor firmware these are the log formats, task names, endpoint names and assertions that describe what the processor does.
+
+```
+00004820  Apple Inc.
+00005820  Apple Inc.
+000060c0  94d45a0f55b91be4a2abbe559553a15c6386fa7f_04242022
+00006541  C aLH0"
+000068d2  Arrx1F
+0000699e  NHp`(x)F@
+00006a3a  pr+pjp
+00006a5d   (phpI 
+00006cda  zIi`(r
+00006d80    iFHp
+00007069  uAHDI 0
+00007157   !CMD,
+0000715f   DFUfM
+000071a3  $5Mtphk5O@
+00007382  hFA]8F
+00007557   APP \2
+0000756f   DFUfUSBwp
+000075b6  zHzI@h
+000077c7   CFUmCFUa
+000077df   LDCMEPRmRDCl!CMD
+0000781d  rfJ(#@2
+00007c10  CJDI+ 
+00007c1a  CHCNE`
+00007c37  q=IIxAp
+000083bc  fJoH@:
+00008663  3\CACYC
+00008c96  xh!irJ
+00008d3b  qDqX!NH
+00008e53   DFUfz
+00008f6b  x9FGx?
+000091bb  iaa`rAK
+0000953c  nHsOlN
+0000955c  mJnIM 
+00009a34  BI?MIx
+00009b4f   !CMDr
+00009f45   pGPz@
+0000a13c  rMlNrL = 6
+0000a8f7   AC0FHCd!
+0000b39c  $!HCkI@
+0000b867  1HCF!l
+0000bcb7  qAq@JIKQx
+0000c4de  uJkFRh
+0000c6df   SRDOSRDY
+0000cc2d   (pyHxI
+0000cf57   0UkH`8
+0000d291    p`pxx
+0000d3dc  SFWiJC
+0000d44d  cRO8h @
+0000d92b  !HCVI@
+0000d95f  !HCJID
+0000d9fd   #IpCD
+0000dd5b   USBwx
+0000ddc4  DISCUFPfDFUf`%
+0000e9e2  {L$! }zMHCA
+0000ea44  iHbM 8
+0000ea95  g)}$"QCMJ
+0000ee66  (}$"PChN
+0000ef75   !FYC8O
+0000f03b   IECSCFUsCFUaHIPDCFUm
+0000f776  IKEHl3
+0000fad7  u!'$ ECrH
+0000fcbc  CFUm`%
+0000fcd3   CFUp,
+0000fcdb   APP CFUaCFUsIECSQ
+0000fe8d  =(}WOHC
+0000fed1  }$ ACJJ
+0000fef7  >$ !FAC<H
+00010288  2!HCkI
+000102a8  aHAj?"R
+000102b1  CAbAjb
+00010b14  CH@}CIbF
+00010b3c  jFRxIx
+00010fcd  C8p`pXH!!
+00011089  qHq8x@!
+000111cf  pHHLIA`
+00012f5f  CD3217   HW     FW000.000.00 RACE2-AC              
+00014083   Ha'H%IAe&I
+000140d8  da24b935e89f61cf6e719375d7f4cff6d37ccb3e_04202022
+000144af  FpGPhpG
+00014e80  Arrx1F
+000152e1  sax*xI
+0001546c  !CMDxj
+00015785  pApFH@
+000157b8  EHpGHh
+000158af   DFUfV$
+000158cf   !CMDT$
+00015973   !CMDDFUfp
+00015a07  $AMtphkAO@
+00015aa0  "HtqAk!H9C40
+00015c10  hFA]8F
+00015dc3   APP t6
+00015ddf   DFUfUSBw
+00016023  CHb0h@
+00016047  CHbph@
+000161c8  GSkXDFUmDFUdDRSTEUSBEURrDPMcVOUTLDCMRDCl!CMD
+00016397  !!uau@!
+00016748  iFh|I|
+000167dd   0piFhyIy
+00016bab   CFUmCFUa
+00016be3   SFWiBISTDBMaPDOf
+00016bf7   AMBy%>
+00016bff   FvbsFvin
+00016c0b   CFUpAPP VOUTUFPfDFUf
+00016dab   BOOTV8
+00016f9b   CRYm`
+000172bd  hWhC@O@;CZ
+00017329  CxwbHl0
+00017873  x9FGx?
+00017d13  FbHdJ 8
+00017d3e  bK^MVO
+00018133  HzIBz@1
+000181cc  GLYI 4
+000185c4  bHaIbJ
+00018743   HRST!CMD
+000192be  OHYL 0
+00019403   APP PDOf!CMD '
+0001a113   APP E8
+0001a384  XCfIgK
+0001a3ff   AC0FHCd!
+0001abfb  FoNpO]M
+0001b039  @ alH@8
+0001b1e3   !CMD`'
+0001b8e0  PIRK 9Ih ;
+0001b992  3O3J>xRx
+0001ba1b   SRDOSRDY
+0001c13b  syHAx@y
+0001c1b5  1HCF!I
+0001d38f  pjFPp/H
+0001de0f   Not Supported
+0001dff7  $ 0@zDO
+0001e353   (UrH@8
+0001e55b  @!CMD@)
+0001e5c4  Hh[IIx
+0001e7c5  pQpdHfIA`
+0001e84a  DMDL$=
+0001ec78   "hIfH
+0001ec8e   "bIaH
+0001ed13  "(F"p6JBK
+0001f243   SFWiV8
+0001f509  Cxb"H@8Fa!H
+0001f619  cRO8h @
+0001fe19  Ce`ehv
+0001fe21  Ce`ehv
+0001fe39  Ce`ehv
+0001fe49  Ce`ehv
+0001fe51  Ce`ehv
+0001fe59  Ce`ehv
+0001fe6d  Cc`bhs
+0001fef3  crL@4"j
+0001ff07  `a`BkI
+0001ff20  wIxJpH
+0001ffef  C b=HCJ
+0002038b   VOUTp
+000203c1  !HCEI@
+00020651  $%FvO8i
+000206e7  aC`UMUI(h
+00020701   xpKH`0
+00020858  APP DISCUFPfDFUf
+0002112b   DFUf(0
+00021577   DFUfX
+0002181e  yL$! xxMHCA
+0002189b  xHCZI@
+000218d5  xHCKI@
+00021b17  N$!0xHC
+00021c8c  0x$"PCiM
+00021cf6  1x$"QCJ
+00021d38  0x$!HCA
+00021d6e  1x$"QCI
+00021d96  <x$#!FYC
+00021e5f   IECSCFUsCFUaHIPDCFUm
+00022574  WKXHl3
+000225c9  x$ ACAH
+000229d5  '@:SdD2J`
+00022ae7   HIPD m
+00022af4  CFUm(0
+00022aff   !CMDl
+00022b0f   CFUp\
+00022b17   APP CFUaCFUsIECSQ
+00022bcd  x$!ACl:
+00022bf3  N=x$ ECl>
+00022c90  ZL_O x$!HCl?
+00022cd5  x$ ACl;IJ
+000230eb  C8p`pPH!!
+000230f7  pWJXI. 
+00023195  qHq8x !
+000232d9  HAj?"R
+000232e1  CAbAjb
+00023a93   DFUf@'
+00023cf4  jFRxIy
+0002409e  BHlF"8
+00025e18  CD3217   HW     FW000.000.00 ZACE2-AC              
+000267ca  psp?c#^
+```

@@ -1,0 +1,80 @@
+# `MTLRenderCommandEncoderSPI` (protocol)
+
+- Image: [`/System/Library/Extensions/AGXMetalG19P.bundle/AGXMetalG19P`](../userland/System__Library__Extensions__AGXMetalG19P.bundle__AGXMetalG19P.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `MTLCommandEncoderSPI`, `MTLRenderCommandEncoder`
+- 0 instance variables, 0 properties, 70 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[MTLRenderCommandEncoderSPI setLineWidth:];
+-[MTLRenderCommandEncoderSPI setMeshSamplerStates:lodMinClamps:lodMaxClamps:withRange:];
+-[MTLRenderCommandEncoderSPI useResidencySet:];
+-[MTLRenderCommandEncoderSPI setObjectBufferOffset:atIndex:];
+-[MTLRenderCommandEncoderSPI useResidencySets:count:];
+-[MTLRenderCommandEncoderSPI drawMeshThreadgroupsWithIndirectBuffer:indirectBufferOffset:threadsPerObjectThreadgroup:threadsPerMeshThreadgroup:];
+-[MTLRenderCommandEncoderSPI setObjectSamplerState:atIndex:];
+-[MTLRenderCommandEncoderSPI setObjectBuffer:offset:atIndex:];
+-[MTLRenderCommandEncoderSPI setMeshBuffer:offset:atIndex:];
+-[MTLRenderCommandEncoderSPI setObjectBuffers:offsets:withRange:];
+-[MTLRenderCommandEncoderSPI setMeshSamplerState:atIndex:];
+-[MTLRenderCommandEncoderSPI drawMeshThreadgroups:threadsPerObjectThreadgroup:threadsPerMeshThreadgroup:];
+-[MTLRenderCommandEncoderSPI setObjectSamplerStates:withRange:];
+-[MTLRenderCommandEncoderSPI setMeshBufferOffset:atIndex:];
+-[MTLRenderCommandEncoderSPI setObjectSamplerState:lodMinClamp:lodMaxClamp:atIndex:];
+-[MTLRenderCommandEncoderSPI setMeshTextures:withRange:];
+-[MTLRenderCommandEncoderSPI setMeshBuffers:offsets:withRange:];
+-[MTLRenderCommandEncoderSPI setFragmentTexture:atTextureIndex:samplerState:atSamplerIndex:];
+-[MTLRenderCommandEncoderSPI setObjectTexture:atIndex:];
+-[MTLRenderCommandEncoderSPI setObjectThreadgroupMemoryLength:atIndex:];
+-[MTLRenderCommandEncoderSPI setObjectTextures:withRange:];
+-[MTLRenderCommandEncoderSPI setDepthClipModeSPI:];
+-[MTLRenderCommandEncoderSPI setMeshSamplerStates:withRange:];
+-[MTLRenderCommandEncoderSPI setObjectBytes:length:atIndex:];
+-[MTLRenderCommandEncoderSPI setMeshTexture:atIndex:];
+-[MTLRenderCommandEncoderSPI setObjectSamplerStates:lodMinClamps:lodMaxClamps:withRange:];
+-[MTLRenderCommandEncoderSPI drawMeshThreads:threadsPerObjectThreadgroup:threadsPerMeshThreadgroup:];
+-[MTLRenderCommandEncoderSPI isMemorylessRender];
+-[MTLRenderCommandEncoderSPI setMeshSamplerState:lodMinClamp:lodMaxClamp:atIndex:];
+-[MTLRenderCommandEncoderSPI setMeshBytes:length:atIndex:];
+-[MTLRenderCommandEncoderSPI setMeshVisibleFunctionTable:atBufferIndex:];
+-[MTLRenderCommandEncoderSPI setMeshVisibleFunctionTables:withBufferRange:];
+-[MTLRenderCommandEncoderSPI setObjectVisibleFunctionTable:atBufferIndex:];
+-[MTLRenderCommandEncoderSPI setObjectVisibleFunctionTables:withBufferRange:];
+-[MTLRenderCommandEncoderSPI setToolsDispatchBufferSPI:atIndex:stages:];
+-[MTLRenderCommandEncoderSPI setVertexAmplificationMode:value:];
+-[MTLRenderCommandEncoderSPI addSplitHandler:];
+-[MTLRenderCommandEncoderSPI setMeshIntersectionFunctionTables:withBufferRange:];
+-[MTLRenderCommandEncoderSPI setObjectAccelerationStructure:atBufferIndex:];
+-[MTLRenderCommandEncoderSPI setStencilCleared];
+-[MTLRenderCommandEncoderSPI setPointSize:];
+-[MTLRenderCommandEncoderSPI setObjectIntersectionFunctionTables:withBufferRange:];
+-[MTLRenderCommandEncoderSPI setObjectIntersectionFunctionTable:atBufferIndex:];
+-[MTLRenderCommandEncoderSPI setMeshAccelerationStructure:atBufferIndex:];
+-[MTLRenderCommandEncoderSPI setDepthCleared];
+-[MTLRenderCommandEncoderSPI setMeshIntersectionFunctionTable:atBufferIndex:];
+-[MTLRenderCommandEncoderSPI dispatchThreadsPerTile:inRegion:];
+-[MTLRenderCommandEncoderSPI dispatchThreadsPerTile:inRegion:withRenderTargetArrayIndex:];
+-[MTLRenderCommandEncoderSPI enableNullBufferBinds:];
+-[MTLRenderCommandEncoderSPI setCommandDataCorruptModeSPI:];
+-[MTLRenderCommandEncoderSPI dispatchThreadsPerTile:inRegion:withRenderTargetArrayIndex:withCondition:];
+-[MTLRenderCommandEncoderSPI dispatchThreadsPerTile:withCondition:];
+-[MTLRenderCommandEncoderSPI resetTileCondition];
+-[MTLRenderCommandEncoderSPI setAlphaTestReferenceValue:];
+-[MTLRenderCommandEncoderSPI setClipPlane:p2:p3:p4:atIndex:];
+-[MTLRenderCommandEncoderSPI setColorResolveTexture:slice:depthPlane:level:atIndex:];
+-[MTLRenderCommandEncoderSPI setColorResolveTexture:slice:depthPlane:level:yInvert:atIndex:];
+-[MTLRenderCommandEncoderSPI setDepthResolveTexture:slice:depthPlane:level:];
+-[MTLRenderCommandEncoderSPI setDepthResolveTexture:slice:depthPlane:level:yInvert:];
+-[MTLRenderCommandEncoderSPI setFragmentSamplerState:lodMinClamp:lodMaxClamp:lodBias:atIndex:];
+-[MTLRenderCommandEncoderSPI setPrimitiveRestartEnabled:];
+-[MTLRenderCommandEncoderSPI setPrimitiveRestartEnabled:index:];
+-[MTLRenderCommandEncoderSPI setProvokingVertexMode:];
+-[MTLRenderCommandEncoderSPI setStencilResolveTexture:slice:depthPlane:level:];
+-[MTLRenderCommandEncoderSPI setStencilResolveTexture:slice:depthPlane:level:yInvert:];
+-[MTLRenderCommandEncoderSPI setTransformFeedbackState:];
+-[MTLRenderCommandEncoderSPI setTriangleFrontFillMode:backFillMode:];
+-[MTLRenderCommandEncoderSPI setVertexSamplerState:lodMinClamp:lodMaxClamp:lodBias:atIndex:];
+-[MTLRenderCommandEncoderSPI setViewportTransformEnabled:];
+-[MTLRenderCommandEncoderSPI useResourceGroup:usage:stages:];
+```

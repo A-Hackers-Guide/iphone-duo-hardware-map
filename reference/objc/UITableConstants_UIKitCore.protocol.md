@@ -1,0 +1,131 @@
+# `UITableConstants` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 115 instance methods, 1 class methods
+
+## Class methods
+
+```
++[UITableConstants sharedConstants];
+```
+
+## Instance methods
+
+```
+-[UITableConstants defaultCheckmarkImageForCell:];
+-[UITableConstants defaultHeaderFooterBackgroundPropertiesForTableViewStyle:cellConfigurationState:traitCollection:floating:];
+-[UITableConstants minimumContentViewHeightForFont:traitCollection:isSidebarStyle:];
+-[UITableConstants reorderControlHoverEffectInsets];
+-[UITableConstants defaultAccessoryBackgroundColorForAccessorySystemType:header:sidebarStyle:cellConfigurationState:traitCollection:];
+-[UITableConstants defaultAccessoryTintColorForAccessorySystemType:header:sidebarStyle:cellConfigurationState:traitCollection:inheritedTintColor:];
+-[UITableConstants defaultAlphaForDraggingCell:inTableView:];
+-[UITableConstants defaultAlphaForReorderingCell];
+-[UITableConstants defaultCellBackgroundPropertiesForTableViewStyle:state:traitCollection:];
+-[UITableConstants defaultCellContentLeadingPaddingForSidebar:];
+-[UITableConstants defaultCellContentTrailingPadding];
+-[UITableConstants defaultCellCornerRadiusForTableViewStyle:isSidebarStyle:isHeaderFooter:traitCollection:];
+-[UITableConstants defaultCellCornerRadiusForTableViewStyle:isSidebarStyle:isSwipedCell:isHeaderFooter:traitCollection:];
+-[UITableConstants defaultCellLayoutMarginsForTableStyle:cellStyle:isSidebarStyle:textLabelFont:rawLayoutMargins:];
+-[UITableConstants defaultContentAccessoryPadding];
+-[UITableConstants defaultContentEditPaddingForCell:inTableView:];
+-[UITableConstants defaultContentReorderPaddingForCell:inTableView:];
+-[UITableConstants defaultDeleteImageForCell:];
+-[UITableConstants defaultDeleteImageWithTintColor:backgroundColor:];
+-[UITableConstants defaultDeleteMinusRectForCell:inTableView:];
+-[UITableConstants defaultDetailAccessoryImage];
+-[UITableConstants defaultDetailTextColorForCellStyle:traitCollection:state:];
+-[UITableConstants defaultDetailTextFontForCellStyle:];
+-[UITableConstants defaultDetailTextLabelFontSizeForCellStyle:];
+-[UITableConstants defaultDisclosureImageForCell:withAccessoryBaseColor:];
+-[UITableConstants defaultDisclosureLayoutWidthForView:];
+-[UITableConstants defaultEditControlPaddingForCell:inTableView:];
+-[UITableConstants defaultEditControlSizeForCell:inTableView:];
+-[UITableConstants defaultFocusedHorizontalOutsetForTableView:];
+-[UITableConstants defaultFocusedShadowRadiusForTableView:];
+-[UITableConstants defaultFooterFontForTableViewStyle:];
+-[UITableConstants defaultFooterTextColorForTableViewStyle:focused:];
+-[UITableConstants defaultHeaderFontForTableViewStyle:];
+-[UITableConstants defaultHeaderFooterLayoutMarginsForTableViewStyle:isHeader:isFirstSection:];
+-[UITableConstants defaultHeaderTextColorForTableViewStyle:focused:];
+-[UITableConstants defaultImageSymbolConfigurationForTraitCollection:];
+-[UITableConstants defaultImageTintColorForState:traitCollection:];
+-[UITableConstants defaultImageToTextPaddingForSidebar:];
+-[UITableConstants defaultImageViewSymbolImageAndAccessoryLayoutWidthForSidebar:traitCollection:];
+-[UITableConstants defaultImageViewSymbolImageLayoutHeightForTraitCollection:];
+-[UITableConstants defaultIndentationWidthForSidebarStyle:];
+-[UITableConstants defaultInsertImageForCell:];
+-[UITableConstants defaultInsertImageWithTintColor:backgroundColor:];
+-[UITableConstants defaultInterAccessoryPaddingForCell:trailingAccessoryGroup:];
+-[UITableConstants defaultLabelAllowsTighteningForTruncationForSidebar:traitCollection:];
+-[UITableConstants defaultLabelMinimumScaleFactorForSidebar:traitCollection:];
+-[UITableConstants defaultLabelNumberOfLinesForSidebar:traitCollection:];
+-[UITableConstants defaultLayoutMarginsForCell:inTableView:];
+-[UITableConstants defaultLeadingCellMarginWidthForTableView:];
+-[UITableConstants defaultListCellAccessoryImageSymbolConfigurationForTraitCollection:accessoryType:];
+-[UITableConstants defaultMaskGradientHeightForTableView:];
+-[UITableConstants defaultMultiSelectBackgroundColorForCell:inTableView:];
+-[UITableConstants defaultMultiSelectNotSelectedImageForCellStyle:traitCollection:accessoryBaseColor:checkmarkColor:backgroundColor:];
+-[UITableConstants defaultMultiSelectSelectedImageForCellStyle:traitCollection:checkmarkColor:backgroundColor:];
+-[UITableConstants defaultPlainFirstSectionHeaderHeightForTableView:];
+-[UITableConstants defaultPlainHeaderLabelYPositionForTableView:headerBounds:textRect:isHeader:];
+-[UITableConstants defaultReorderControlImageForTraitCollection:withAccessoryBaseColor:isTracking:];
+-[UITableConstants defaultReorderControlSizeForCell:withAccessoryBaseColor:];
+-[UITableConstants defaultRowHeightDependsOnCellStyle];
+-[UITableConstants defaultRowHeightForTableView:];
+-[UITableConstants defaultRowHeightForTableView:cellStyle:];
+-[UITableConstants defaultRowHeightForTableView:cellStyle:hasDetailText:];
+-[UITableConstants defaultSectionFooterHeightForTableView:];
+-[UITableConstants defaultSectionFooterHeightForTableViewStyle:screen:];
+-[UITableConstants defaultSectionHeaderHeightForTableView:];
+-[UITableConstants defaultSectionHeaderHeightForTableViewStyle:screen:];
+-[UITableConstants defaultSidebarCellBackgroundPropertiesForStyle:state:traitCollection:];
+-[UITableConstants defaultSidebarHeaderBackgroundPropertiesWithState:traitCollection:];
+-[UITableConstants defaultSpaceBetweenEditAndReorderControlsForCell:inTableView:];
+-[UITableConstants defaultTextColorForCellStyle:traitCollection:tintColor:state:];
+-[UITableConstants defaultTextLabelFontForCellStyle:];
+-[UITableConstants defaultTextLabelFontSizeForCellStyle:];
+-[UITableConstants defaultTextToSubtitlePaddingForCellStyle:];
+-[UITableConstants defaultTrailingCellMarginWidthForTableView:];
+-[UITableConstants defaultVerticalAccessorySeparatorReplacementPaddingWidth];
+-[UITableConstants imageViewOffsetByLayoutMarginsForCell:inTableView:];
+-[UITableConstants inactiveAccessoryTintColorOverrideForAccessorySystemType:traitCollection:];
+-[UITableConstants interspaceBetweenInnerAccessoryIdentifier:outerAccessoryIdentifier:forCell:trailingAccessoryGroup:];
+-[UITableConstants reorderControlHoverEffectCornerRadius];
+-[UITableConstants reorderingCellWantsShadows];
+-[UITableConstants shouldAnimatePropertyInContentViewWithKey:];
+-[UITableConstants shouldUppercaseHeaderFooterTextForTableStyle:isHeader:];
+-[UITableConstants shouldUseMonochromaticTreatmentForCellAccessorySystemType:sidebarStyle:cellConfigurationState:traitCollection:];
+-[UITableConstants sidebarVariant];
+-[UITableConstants supportsUserInterfaceStyles];
+-[UITableConstants variantForActive:];
+-[UITableConstants applyBoldSidebarStylingToContentProperties:traitCollection:];
+-[UITableConstants contentClipCornersForCell:inTableView:];
+-[UITableConstants contentPropertiesForSidebarElementWithTraitCollection:state:isHeader:cellStyle:sidebarStyle:];
+-[UITableConstants defaultAccessoryColorForCell:inTableView:];
+-[UITableConstants defaultDetailTextColorForUserInterfaceStyle:];
+-[UITableConstants defaultFocusedAccessoryColorForCell:inTableView:];
+-[UITableConstants defaultFocusedCheckmarkImageForCell:inTableView:];
+-[UITableConstants defaultFocusedDeleteImageForCell:inTableView:];
+-[UITableConstants defaultFocusedDetailTextColorForCell:inTableView:];
+-[UITableConstants defaultFocusedDisclosureImageForCell:inTableView:];
+-[UITableConstants defaultFocusedInsertImageForCell:inTableView:];
+-[UITableConstants defaultFocusedMultiSelectNotSelectedImageForCell:inTableView:];
+-[UITableConstants defaultFocusedMultiSelectSelectedImageForCell:inTableView:];
+-[UITableConstants defaultFocusedReorderControlImageForCell:inTableView:];
+-[UITableConstants defaultFocusedTextColorForCell:inTableView:];
+-[UITableConstants defaultHeaderFooterBackgroundViewClassForTableViewStyle:];
+-[UITableConstants defaultInsetGroupedHeaderFontForExtraProminentStyle:secondaryText:];
+-[UITableConstants defaultInsetGroupedHeaderLayoutMarginsForExtraProminentStyle:outAxesPreservingSuperviewLayoutMargins:];
+-[UITableConstants defaultOutlineDisclosureImageForView:];
+-[UITableConstants defaultPopUpMenuIndicatorImageForTraitCollection:];
+-[UITableConstants defaultSidebarDetailTextLabelFontForCellStyle:];
+-[UITableConstants defaultSidebarHeaderFont];
+-[UITableConstants defaultSidebarImageTintColorForTraitCollection:state:isHeader:style:];
+-[UITableConstants defaultSidebarLayoutMarginsForElementsInsideSection];
+-[UITableConstants defaultSidebarTextColorForTraitCollection:state:isHeader:isSecondaryText:style:];
+-[UITableConstants defaultTextColorForUserInterfaceStyle:];
+-[UITableConstants fallbackHeaderTextColorForTableViewStyle:userInterfaceStyle:];
+-[UITableConstants headerFooterOffsetFromContentInsetForTableView:];
+-[UITableConstants shouldUseRoundedGroupsForTableViewStyle:backgroundInsets:];
+```

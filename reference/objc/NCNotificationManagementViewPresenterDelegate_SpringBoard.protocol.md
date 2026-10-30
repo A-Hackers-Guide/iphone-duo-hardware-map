@@ -1,0 +1,20 @@
+# `NCNotificationManagementViewPresenterDelegate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 10 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[NCNotificationManagementViewPresenterDelegate notificationManagementViewPresenter:setAllowsCriticalAlerts:forNotificationRequest:withSectionIdentifier:];
+-[NCNotificationManagementViewPresenterDelegate notificationManagementViewPresenter:setAllowsTimeSensitive:forNotificationRequest:withSectionIdentifier:];
+-[NCNotificationManagementViewPresenterDelegate notificationManagementViewPresenter:setDeliverQuietly:forNotificationRequest:withSectionIdentifier:];
+-[NCNotificationManagementViewPresenterDelegate notificationManagementViewPresenter:sectionSettingsForSectionIdentifier:];
+-[NCNotificationManagementViewPresenterDelegate notificationManagementViewPresenter:setAllowsNotifications:forNotificationRequest:withSectionIdentifier:];
+-[NCNotificationManagementViewPresenterDelegate notificationManagementViewPresenterWillPresentManagementView:];
+-[NCNotificationManagementViewPresenterDelegate notificationManagementViewPresenter:setMuted:untilDate:forNotificationRequest:withSectionIdentifier:threadIdentifier:];
+-[NCNotificationManagementViewPresenterDelegate notificationManagementViewPresenterRequestsSystemSettings:];
+-[NCNotificationManagementViewPresenterDelegate notificationManagementViewPresenter:setScheduledDelivery:forNotificationRequest:withSectionIdentifier:];
+-[NCNotificationManagementViewPresenterDelegate notificationManagementViewPresenterDidDismissManagementView:];
+```

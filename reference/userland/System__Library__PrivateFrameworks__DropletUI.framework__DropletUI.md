@@ -1,0 +1,42 @@
+# `/System/Library/PrivateFrameworks/DropletUI.framework/DropletUI`
+
+iOS 27.2 dyld shared cache image, version `104.100.0.0.0`. Light page: libraries and type names only. **[DSC]**
+
+## Linked libraries (25)
+
+- `/System/Library/Frameworks/Foundation.framework/Foundation`
+- `/usr/lib/libobjc.A.dylib`
+- `/usr/lib/libSystem.B.dylib`
+- `/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics`
+- `/System/Library/Frameworks/QuartzCore.framework/QuartzCore`
+- `/System/Library/Frameworks/UIKit.framework/UIKit`
+- `/System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard`
+- `/System/Library/PrivateFrameworks/PrototypeTools.framework/PrototypeTools`
+- `/System/Library/PrivateFrameworks/SystemUIAnimationKit.framework/SystemUIAnimationKit`
+- `/usr/lib/swift/libswiftCore.dylib`
+- `/usr/lib/swift/libswiftCoreAudio.dylib`
+- `/usr/lib/swift/libswiftCoreFoundation.dylib`
+- `/usr/lib/swift/libswiftCoreImage.dylib`
+- `/usr/lib/swift/libswiftCoreLocation.dylib`
+- `/usr/lib/swift/libswiftDispatch.dylib`
+- `/usr/lib/swift/libswiftMetal.dylib`
+- `/usr/lib/swift/libswiftOSLog.dylib`
+- `/usr/lib/swift/libswiftObjectiveC.dylib`
+- `/usr/lib/swift/libswiftQuartzCore.dylib`
+- `/usr/lib/swift/libswiftSpatial.dylib`
+- `/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib`
+- `/usr/lib/swift/libswiftXPC.dylib`
+- `/usr/lib/swift/libswift_Builtin_float.dylib`
+- `/usr/lib/swift/libswiftos.dylib`
+- `/usr/lib/swift/libswiftsimd.dylib`
+
+## Objective-C: 21 classes, 5 protocols (method count not recorded on light pages)
+
+### Classes
+
+`DRPDropletAnimationCoordinator`, `DRPDropletContainerView`, `DRPDropletContextAdaptiveKeylineStyle`, `DRPDropletContextIntelligentEdgeLightKeylineStyle`, `DRPDropletContextSolidColorKeylineStyle`, `DRPDropletContextView`, `DRPDropletPrototypeSettings`, `DRPDropletPrototypeSettingsDomain`, `DRPDropletViewConfiguration`, `_TtC9DropletUI11BlurredView`, `_TtC9DropletUI12GradientView`, `_TtC9DropletUI16DropletGroupView`, `_TtC9DropletUI16DropletShapeView`, `_TtC9DropletUI17DropletEffectView`, `_TtC9DropletUI19DropletBoundaryView`, `_TtC9DropletUI21DropletBackgroundView`, `_TtC9DropletUI22DropletParticipantView`, `_TtC9DropletUI25AnimatableIntelligentView`, `_TtC9DropletUI30DropletParticipantTrackingView`, `_TtC9DropletUI33AnimatableAdaptiveColorMatrixView`, `_TtC9DropletUIP33_1A307C73748F469B76839B7113A1F63419AnimatableLightView`
+
+### Protocols
+
+`BSInvalidatable`, `DRPDropletContextKeylineStyle`, `NSObject`, `PTSettingsKeyObserver`, `UIViewSpringAnimationBehaviorDescribing`
+

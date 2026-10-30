@@ -1,0 +1,54 @@
+# `_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server`
+
+- Image: [`/System/Library/PrivateFrameworks/TextComposerRuntime.framework/TextComposerRuntime`](../userland/System__Library__PrivateFrameworks__TextComposerRuntime.framework__TextComposerRuntime.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `TCTextCompositionXPCProtocol`
+- 5 instance variables, 0 properties, 33 instance methods, 0 class methods
+
+## Instance variables
+
+```
+_$sSSSg clientApplicationIdentifier;
+Swift.Int32 clientProcessIdentifier;
+GenerativeFunctionsInstrumentation.EventReporter eventReporter;
+GenerativeFunctionsInstrumentation.AsyncFIFOQueue asyncQueue;
+TextComposerRuntime.Requests requests;
+```
+
+## Instance methods
+
+```
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server init];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server executePQAQueries:timeout:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server cancelRequestWithUuid:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server cancelRewritingFor:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server cancelWithToken:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server confirmRewritingFor:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server decrementRewriteStepFor:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server getSessionSnapshotFor:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server incrementRewriteStepFor:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server markFollowUpsAsSeenFor:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server prewarmSmartRepliesWithDocumentType:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server prewarmSmartRepliesWithDocumentType:options:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server prewarmWithFeature:options:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server prewarmWithInput:rewritingTypes:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server prewarmWithRewritingTypes:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server processWritingAssistantRequest:requestUUID:delegate:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server requestBasicLongFormRepliesAndQuestionnaireWithInputContextHistory:documentType:replyType:options:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server requestCalendarEventFromOCRInput:inputOptions:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server requestCopyEditWithInput:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server requestEditExplanationsWithInput:edited:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server requestFollowUpsFor:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server requestLongFormSmartRepliesWithInputContextHistory:documentType:replyType:baseResponse:userFilledQuestionnaire:options:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server requestLongFormSmartRepliesWithInputContextHistory:documentType:replyType:options:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server requestLongFormSmartRepliesWithInputContextHistory:documentType:replyType:userFilledQuestionnaire:options:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server requestShortFormSmartRepliesWithInputContextHistory:documentType:options:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server requestShortFormSmartResponsesWithInputContextHistory:replyToMessageID:documentType:responseTypes:contextBeforeCursor:options:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server requestUserQuestionnaireWithInputContextHistory:documentType:replyType:baseResponse:options:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server requestUserQuestionnaireWithInputContextHistory:documentType:replyType:options:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server reviewWithInput:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server reviewWithString:range:options:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server rewriteWithInput:rewritingType:request:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server rewriteWithInput:rewritingType:with:];
+-[_TtCC19TextComposerRuntime26TCTextCompositionXPCServer6Server rewriteWithString:range:rewritingType:options:with:];
+```

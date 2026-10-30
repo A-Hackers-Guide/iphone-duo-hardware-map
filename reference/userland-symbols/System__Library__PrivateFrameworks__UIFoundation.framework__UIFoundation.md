@@ -1,0 +1,1738 @@
+# Symbols: `/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__PrivateFrameworks__UIFoundation.framework__UIFoundation.md). **[DSC]**
+
+721 public symbols, 5,360 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1eb9b2e20  __DATA,__data  _NSAccessibilitySpellingStateAttributeName
+0x1e0b90820  __DATA_CONST,__const  _NSAdaptiveImageGlyphAttributeName
+0x1eb9b2e18  __DATA,__data  _NSAllRomanInputSourcesLocaleIdentifier
+0x1e0b90818  __DATA_CONST,__const  _NSAppearanceDocumentAttribute
+0x1e0b90810  __DATA_CONST,__const  _NSAttachmentAttributeName
+0x1eb9b2e10  __DATA,__data  _NSAttachmentEditableDataAttributeName
+0x1eb9b2e08  __DATA,__data  _NSAttachmentEditableDataTypeIdentifierAttributeName
+0x1e0b90808  __DATA_CONST,__const  _NSAuthorDocumentAttribute
+0x1e0b90800  __DATA_CONST,__const  _NSBackgroundColorAttributeName
+0x1e0b907f8  __DATA_CONST,__const  _NSBackgroundColorDocumentAttribute
+0x1eb9b2e00  __DATA,__data  _NSBackgroundLayoutTrace
+0x1eb9b2df8  __DATA,__data  _NSBaseURLDocumentOption
+0x1e0b907f0  __DATA_CONST,__const  _NSBaseWritingDirectionPolicyDocumentOption
+0x1e0b907e8  __DATA_CONST,__const  _NSBaselineOffsetAttributeName
+0x1e0b907e0  __DATA_CONST,__const  _NSBottomMarginDocumentAttribute
+0x1e0b907d8  __DATA_CONST,__const  _NSCategoryDocumentAttribute
+0x1e0b907d0  __DATA_CONST,__const  _NSCharacterEncodingDocumentAttribute
+0x1e0b907c8  __DATA_CONST,__const  _NSCharacterEncodingDocumentOption
+0x1eb9b2df0  __DATA,__data  _NSCharacterShapeAttributeName
+0x1eb9b2de8  __DATA,__data  _NSCocoaRTFVersionDocumentAttribute
+0x1e0b907c0  __DATA_CONST,__const  _NSCocoaVersionDocumentAttribute
+0x1e0b907b8  __DATA_CONST,__const  _NSCommentDocumentAttribute
+0x1e0b907b0  __DATA_CONST,__const  _NSCompanyDocumentAttribute
+0x1eb9b2de0  __DATA,__data  _NSContainerTrace
+0x1eb9b2dd8  __DATA,__data  _NSConvertedDocumentAttribute
+0x1e0b907a8  __DATA_CONST,__const  _NSCopyrightDocumentAttribute
+0x1e0b907a0  __DATA_CONST,__const  _NSCreationTimeDocumentAttribute
+0x1eb9b2dd0  __DATA,__data  _NSCursorAttributeName
+0x1eb9b2dc8  __DATA,__data  _NSDataDetectionAttributeName
+0x1e0b90798  __DATA_CONST,__const  _NSDefaultAttributesDocumentAttribute
+0x1e0b90790  __DATA_CONST,__const  _NSDefaultAttributesDocumentOption
+0x19472f1fc  __TEXT,__text  _NSDefaultFont
+0x1e0b90788  __DATA_CONST,__const  _NSDefaultFontExcludedDocumentAttribute
+0x1e0b90780  __DATA_CONST,__const  _NSDefaultTabIntervalDocumentAttribute
+0x1eb9b2dc0  __DATA,__data  _NSDisplayNameDocumentAttribute
+0x1e0b90778  __DATA_CONST,__const  _NSDocFormatTextDocumentType
+0x1e0b90770  __DATA_CONST,__const  _NSDocumentTypeDocumentAttribute
+0x1e0b90768  __DATA_CONST,__const  _NSDocumentTypeDocumentOption
+0x1e0b90760  __DATA_CONST,__const  _NSDominantLanguageAttributeName
+0x1e0b90758  __DATA_CONST,__const  _NSDominantScriptAttributeName
+0x1e0b90750  __DATA_CONST,__const  _NSEditorDocumentAttribute
+0x1e0b90748  __DATA_CONST,__const  _NSEmojiImageContentTypeDefault
+0x1e0b90740  __DATA_CONST,__const  _NSExcludedElementsDocumentAttribute
+0x1e0b90738  __DATA_CONST,__const  _NSExpansionAttributeName
+0x1e0b90730  __DATA_CONST,__const  _NSFileTypeDocumentAttribute
+0x1eb9b2db8  __DATA,__data  _NSFileTypeDocumentOption
+0x1eb9b2db0  __DATA,__data  _NSFirstLineHeadIndentRulerMarkerTag
+0x1e0b90728  __DATA_CONST,__const  _NSFontAttributeName
+0x1eb9b2da8  __DATA,__data  _NSFontTraitAttributeName
+0x1e0b90720  __DATA_CONST,__const  _NSForegroundColorAttributeName
+0x1eb9b2da0  __DATA,__data  _NSGeneratorDocumentAttribute
+0x1eb9b2d98  __DATA,__data  _NSGlyphDisplayInvalidationTrace
+0x1eb9b2d90  __DATA,__data  _NSGlyphGenerationTrace
+0x1eb9b2d88  __DATA,__data  _NSGlyphGeometryTrace
+0x1eb9b2d80  __DATA,__data  _NSGlyphInfoAttributeName
+0x1eb9b2d78  __DATA,__data  _NSGrammarLeftOffsetAttributeName
+0x1eb9b2d70  __DATA,__data  _NSGrammarRightOffsetAttributeName
+0x1e0b90718  __DATA_CONST,__const  _NSHTMLAllowNetworkAccess
+0x1e0b90710  __DATA_CONST,__const  _NSHTMLTextDocumentType
+0x1eb9b2d68  __DATA,__data  _NSHeadIndentRulerMarkerTag
+0x1e0b90708  __DATA_CONST,__const  _NSHyphenationFactorDocumentAttribute
+0x1eb9b2d60  __DATA,__data  _NSIgnoringSubstitutionAttributeName
+0x1e0b90700  __DATA_CONST,__const  _NSKernAttributeName
+0x1e0b906f8  __DATA_CONST,__const  _NSKeywordsDocumentAttribute
+0x1eb9b2d58  __DATA,__data  _NSLanguageAttributeName
+0x1e0b906f0  __DATA_CONST,__const  _NSLeftMarginDocumentAttribute
+0x1e0b906e8  __DATA_CONST,__const  _NSLigatureAttributeName
+0x1948236c8  __TEXT,__const  _NSLineBreakContextNull
+0x1e0b906e0  __DATA_CONST,__const  _NSLinkAttributeName
+0x1e0b906d8  __DATA_CONST,__const  _NSMacSimpleTextDocumentType
+0x1e0b906d0  __DATA_CONST,__const  _NSManagerDocumentAttribute
+0x1eb9b2d50  __DATA,__data  _NSMarkedClauseSegmentAttributeName
+0x1e0b906c8  __DATA_CONST,__const  _NSMarkedTextSelectionAttributeName
+0x1e0b906c0  __DATA_CONST,__const  _NSMarkedTextStyleAttributeName
+0x1e0b906b8  __DATA_CONST,__const  _NSModificationTimeDocumentAttribute
+0x1eb9b2d48  __DATA,__data  _NSNoIndexDocumentAttribute
+0x1e0b906b0  __DATA_CONST,__const  _NSObliquenessAttributeName
+0x1e0b906a8  __DATA_CONST,__const  _NSOfficeOpenXMLTextDocumentType
+0x1e0b906a0  __DATA_CONST,__const  _NSOpenDocumentTextDocumentType
+0x1e0b90698  __DATA_CONST,__const  _NSOriginalFontAttributeName
+0x1eb9b2d40  __DATA,__data  _NSOrthographyAttributeName
+0x1eb9b2d30  __DATA,__data  _NSPOSIXLocaleIdentifier
+0x1e0b90690  __DATA_CONST,__const  _NSPaperMarginDocumentAttribute
+0x1e0b90688  __DATA_CONST,__const  _NSPaperSizeDocumentAttribute
+0x1eb9b2d28  __DATA,__data  _NSParagraphAttachmentAttributeName
+0x1e0b90680  __DATA_CONST,__const  _NSParagraphStyleAttributeName
+0x1e0b90678  __DATA_CONST,__const  _NSPlainTextDocumentType
+0x1e0b90670  __DATA_CONST,__const  _NSPrefixSpacesDocumentAttribute
+0x1e0b90668  __DATA_CONST,__const  _NSRTFDTextDocumentType
+0x1eb9b2d20  __DATA,__data  _NSRTFException
+0x1e0b90660  __DATA_CONST,__const  _NSRTFTextDocumentType
+0x1e0b90658  __DATA_CONST,__const  _NSReadOnlyDocumentAttribute
+0x1eb9b2d18  __DATA,__data  _NSReaderDelegateDocumentOption
+0x1eb9b2d10  __DATA,__data  _NSReplacedStringAttributeName
+0x1e0b90650  __DATA_CONST,__const  _NSRightMarginDocumentAttribute
+0x1e0b90648  __DATA_CONST,__const  _NSShadowAttributeName
+0x1eb9b2d08  __DATA,__data  _NSSmallCapsAttributeName
+0x1e0b90640  __DATA_CONST,__const  _NSSourceTextScalingDocumentAttribute
+0x1e0b90638  __DATA_CONST,__const  _NSSourceTextScalingDocumentOption
+0x1e0b90630  __DATA_CONST,__const  _NSSourceTextScalingDocumentReadingOption
+0x1e0b90628  __DATA_CONST,__const  _NSSpellingStateAttributeName
+0x1eb9b2d00  __DATA,__data  _NSStrikeThroughAttributeName
+0x1e0b90620  __DATA_CONST,__const  _NSStrikethroughColorAttributeName
+0x1e0b90618  __DATA_CONST,__const  _NSStrikethroughStyleAttributeName
+0x1e0b90610  __DATA_CONST,__const  _NSStrokeColorAttributeName
+0x1e0b90608  __DATA_CONST,__const  _NSStrokeWidthAttributeName
+0x1e0b90600  __DATA_CONST,__const  _NSSubjectDocumentAttribute
+0x1e0b905f8  __DATA_CONST,__const  _NSSuperscriptAttributeName
+0x1e0b905f0  __DATA_CONST,__const  _NSTabColumnTerminatorsAttributeName
+0x1eb9b2cf8  __DATA,__data  _NSTailIndentRulerMarkerTag
+0x1e0b905e8  __DATA_CONST,__const  _NSTargetTextScalingDocumentOption
+0x1e0b905e0  __DATA_CONST,__const  _NSTargetTextScalingDocumentReadingOption
+0x1eb9b2cf0  __DATA,__data  _NSTemporaryTextCorrectionAttributeName
+0x1947172f8  __TEXT,__text  _NSTextAlignmentFromCTTextAlignment
+0x19471995c  __TEXT,__text  _NSTextAlignmentToCTTextAlignment
+0x1e0b905d8  __DATA_CONST,__const  _NSTextAlternativesAttributeName
+0x1e0b905d0  __DATA_CONST,__const  _NSTextAlternativesDisplayStyleAttributeName
+0x1e0b905c8  __DATA_CONST,__const  _NSTextAlternativesSelectedAlternativeKey
+0x1e0b905c0  __DATA_CONST,__const  _NSTextAlternativesSelectedAlternativeStringNotification
+0x1e0b905b8  __DATA_CONST,__const  _NSTextAnimationAttributeName
+0x1eb9b2ce8  __DATA,__data  _NSTextCheckedAttributeName
+0x1eb9b2ce0  __DATA,__data  _NSTextContentManagerUnsupportedAttributeNotification
+0x1947dfaec  __TEXT,__text  _NSTextContentStorageBreakOnEnumerateWhileEditing
+0x1eb9b2cd8  __DATA,__data  _NSTextContentStorageUnsupportedAttributeAddedNotification
+0x1eb9b2cd0  __DATA,__data  _NSTextCorrectionAttributeName
+0x1eb9b2cc8  __DATA,__data  _NSTextDrawingTrace
+0x1eb9b2cc0  __DATA,__data  _NSTextEditedAttributeName
+0x1e0b905b0  __DATA_CONST,__const  _NSTextEffectAttributeName
+0x1e0b905a8  __DATA_CONST,__const  _NSTextEffectLetterpressStyle
+0x1e0b905a0  __DATA_CONST,__const  _NSTextEncodingNameDocumentAttribute
+0x1eb9b2cb8  __DATA,__data  _NSTextEncodingNameDocumentOption
+0x1e0b90598  __DATA_CONST,__const  _NSTextHighlightAttributeName
+0x1e0b90590  __DATA_CONST,__const  _NSTextHighlightColorSchemeAttributeName
+0x1e0b90588  __DATA_CONST,__const  _NSTextHighlightColorSchemeBlue
+0x1e0b90580  __DATA_CONST,__const  _NSTextHighlightColorSchemeDefault
+0x1e0b90578  __DATA_CONST,__const  _NSTextHighlightColorSchemeMint
+0x1e0b90570  __DATA_CONST,__const  _NSTextHighlightColorSchemeOrange
+0x1e0b90568  __DATA_CONST,__const  _NSTextHighlightColorSchemePink
+0x1e0b90560  __DATA_CONST,__const  _NSTextHighlightColorSchemePurple
+0x1e0b90558  __DATA_CONST,__const  _NSTextHighlightOutlineColorAttributeName
+0x1e0b90550  __DATA_CONST,__const  _NSTextHighlightStyleAttributeName
+0x1e0b90548  __DATA_CONST,__const  _NSTextHighlightStyleDefault
+0x1e0b90540  __DATA_CONST,__const  _NSTextHighlightStyleOutlined
+0x1e0b90538  __DATA_CONST,__const  _NSTextHighlightStyleSystemDefault
+0x1eb9b2cb0  __DATA,__data  _NSTextKeyTrace
+0x1e0b90530  __DATA_CONST,__const  _NSTextKit1ListMarkerFormatDocumentOption
+0x1947a4450  __TEXT,__text  _NSTextLayoutManagerBreakOnNilContentManager
+0x1e0b90528  __DATA_CONST,__const  _NSTextLayoutSectionOrientation
+0x1e0b90520  __DATA_CONST,__const  _NSTextLayoutSectionRange
+0x1e0b90518  __DATA_CONST,__const  _NSTextLayoutSectionsAttribute
+0x1e0b90510  __DATA_CONST,__const  _NSTextListMarkerAttachment
+0x1e0b90508  __DATA_CONST,__const  _NSTextListMarkerBox
+0x1e0b90500  __DATA_CONST,__const  _NSTextListMarkerCheck
+0x1e0b904f8  __DATA_CONST,__const  _NSTextListMarkerCircle
+0x1e0b904f0  __DATA_CONST,__const  _NSTextListMarkerDecimal
+0x1e0b904e8  __DATA_CONST,__const  _NSTextListMarkerDiamond
+0x1e0b904e0  __DATA_CONST,__const  _NSTextListMarkerDisc
+0x1e0b904d8  __DATA_CONST,__const  _NSTextListMarkerHyphen
+0x1e0b904d0  __DATA_CONST,__const  _NSTextListMarkerLowercaseAlpha
+0x1e0b904c8  __DATA_CONST,__const  _NSTextListMarkerLowercaseHexadecimal
+0x1e0b904c0  __DATA_CONST,__const  _NSTextListMarkerLowercaseLatin
+0x1e0b904b8  __DATA_CONST,__const  _NSTextListMarkerLowercaseRoman
+0x1e0b904b0  __DATA_CONST,__const  _NSTextListMarkerOctal
+0x1e0b904a8  __DATA_CONST,__const  _NSTextListMarkerSquare
+0x1e0b904a0  __DATA_CONST,__const  _NSTextListMarkerUppercaseAlpha
+0x1e0b90498  __DATA_CONST,__const  _NSTextListMarkerUppercaseHexadecimal
+0x1e0b90490  __DATA_CONST,__const  _NSTextListMarkerUppercaseLatin
+0x1e0b90488  __DATA_CONST,__const  _NSTextListMarkerUppercaseRoman
+0x1eb9b2ca8  __DATA,__data  _NSTextLocationTypeCountable
+0x1eb9b2ca0  __DATA,__data  _NSTextMouseTrace
+0x1e0b90480  __DATA_CONST,__const  _NSTextParagraphAnchoredAttachmentAttributeName
+0x1eb9b2c98  __DATA,__data  _NSTextRevertedAttributeName
+0x1e0b90478  __DATA_CONST,__const  _NSTextScaleAttributeName
+0x1e0b90470  __DATA_CONST,__const  _NSTextScaleSecondary
+0x1e0b90468  __DATA_CONST,__const  _NSTextScalingDocumentAttribute
+0x1e0b90460  __DATA_CONST,__const  _NSTextScalingOverrideDocumentReadingOption
+0x1eb9b2c90  __DATA,__data  _NSTextSizeMultiplierDocumentOption
+0x1e0b90458  __DATA_CONST,__const  _NSTextStorageDidProcessEditingNotification
+0x1e0b90450  __DATA_CONST,__const  _NSTextStorageWillProcessEditingNotification
+0x1eb9b2c88  __DATA,__data  _NSTextViewDidChangeSelectionNotification
+0x1eb9b2c80  __DATA,__data  _NSTextViewDidChangeTypingAttributesNotification
+0x1e0b90448  __DATA_CONST,__const  _NSTextViewWillChangeNotifyingTextViewNotification
+0x1eb9b2c78  __DATA,__data  _NSTimeoutDocumentOption
+0x1e0b90440  __DATA_CONST,__const  _NSTitleDocumentAttribute
+0x1eb9b2c70  __DATA,__data  _NSToolTipAttributeName
+0x1e0b90438  __DATA_CONST,__const  _NSTopMarginDocumentAttribute
+0x1e0b90430  __DATA_CONST,__const  _NSTrackingAttributeName
+0x1eb9b2c68  __DATA,__data  _NSTypesettingTrace
+0x1eb9b2c60  __DATA,__data  _NSTypographyFeatureAttributeName
+0x1eb9b2c58  __DATA,__data  _NSUTIDocumentAttribute
+0x1eb9b2ec8  __DATA,__data  _NSUnderlineByWordMask
+0x1e0b90428  __DATA_CONST,__const  _NSUnderlineColorAttributeName
+0x1eb9b2ed8  __DATA,__data  _NSUnderlineSpellingMask
+0x1eb9b2ed0  __DATA,__data  _NSUnderlineStrikethroughMask
+0x1e0b90420  __DATA_CONST,__const  _NSUnderlineStyleAttributeName
+0x1e0b90418  __DATA_CONST,__const  _NSVerticalGlyphFormAttributeName
+0x1e0b90410  __DATA_CONST,__const  _NSViewModeDocumentAttribute
+0x1e0b90408  __DATA_CONST,__const  _NSViewSizeDocumentAttribute
+0x1e0b90400  __DATA_CONST,__const  _NSViewZoomDocumentAttribute
+0x1e0b903f8  __DATA_CONST,__const  _NSWebArchiveTextDocumentType
+0x1eb9b2c50  __DATA,__data  _NSWebPreferencesDocumentOption
+0x1eb9b2c48  __DATA,__data  _NSWebResourceLoadDelegateDocumentOption
+0x1e0b903f0  __DATA_CONST,__const  _NSWordMLTextDocumentType
+0x1e0b903e8  __DATA_CONST,__const  _NSWritingDirectionAttributeName
+0x1e0b903e0  __DATA_CONST,__const  _NSWritingToolsExclusionAttributeName
+0x1e0b903d8  __DATA_CONST,__const  _NSZipTextDocumentType
+0x1ee102018  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSATSGlyphStorage
+0x1ee101ff0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSATSLineFragment
+0x1ee102978  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSATSTypesetter
+0x1ee101988  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSAdaptiveImageGlyph
+0x1ee103288  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSAttributeDictionary
+0x1ee102ea0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSAttributeDictionaryEnumerator
+0x1ef641810  __AUTH,__objc_data  _OBJC_CLASS_$_NSCIDGlyphInfo
+0x1ef6417e8  __AUTH,__objc_data  _OBJC_CLASS_$_NSCTGlyphInfo
+0x1ef640eb0  __AUTH,__objc_data  _OBJC_CLASS_$_NSConcreteGlyphGenerator
+0x1ee102748  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSConcreteNotifyingMutableAttributedString
+0x1ee1025e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSConcreteTextStorage
+0x1ee103008  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSCoreTypesetter
+0x1ee102568  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSCountableTextLocation
+0x1ee102428  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSCountableTextRange
+0x1ef641cc0  __AUTH,__objc_data  _OBJC_CLASS_$_NSDataAsset
+0x0006fac48  indirect  _OBJC_CLASS_$_NSEmojiImageAsset
+0x0006fac89  indirect  _OBJC_CLASS_$_NSEmojiImageStrike
+0x1ef6417c0  __AUTH,__objc_data  _OBJC_CLASS_$_NSEmojiImageTextAttachment
+0x1ee1020b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSExtraLMData
+0x1ee102158  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSFont
+0x1ee101fc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSGlyphGenerator
+0x1ee101bb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSGlyphInfo
+0x1ef641798  __AUTH,__objc_data  _OBJC_CLASS_$_NSGlyphNameGlyphInfo
+0x1ef641b30  __AUTH,__objc_data  _OBJC_CLASS_$_NSHTMLReader
+0x1ef641b08  __AUTH,__objc_data  _OBJC_CLASS_$_NSHTMLWebDelegate
+0x1ef641770  __AUTH,__objc_data  _OBJC_CLASS_$_NSHTMLWriter
+0x1ee102090  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSIdRunStorage
+0x1ef641748  __AUTH,__objc_data  _OBJC_CLASS_$_NSIdentityGlyphInfo
+0x1ee101d48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSInsertionPointHelper
+0x1ee102dd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSLayoutManager
+0x1ef641720  __AUTH,__objc_data  _OBJC_CLASS_$_NSLayoutManagerTextBlockHelper
+0x1ef6416f8  __AUTH,__objc_data  _OBJC_CLASS_$_NSLayoutManagerTextBlockRowArrayCache
+0x1ee102860  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSLineFragmentRenderingContext
+0x1ee103148  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSMutableParagraphStyle
+0x1ef640e88  __AUTH,__objc_data  _OBJC_CLASS_$_NSNotATextLocation
+0x1ee102b80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSParagraphArbitrator
+0x1ee103170  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSParagraphStyle
+0x1ee102db0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSParagraphStyleExtraData
+0x1ef641a40  __AUTH,__objc_data  _OBJC_CLASS_$_NSRTFReader
+0x1ef6416d0  __AUTH,__objc_data  _OBJC_CLASS_$_NSRTFReaderTableState
+0x1ef6419f0  __AUTH,__objc_data  _OBJC_CLASS_$_NSRTFWriter
+0x1ee102720  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSRunStorage
+0x1ee102b58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSShadow
+0x1ee102888  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSSingleLineTypesetter
+0x1ee1026f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSStorage
+0x1ee102d38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSStringDrawingContext
+0x1ee102f18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSStringDrawingTextStorage
+0x1ef6419c8  __AUTH,__objc_data  _OBJC_CLASS_$_NSStringDrawingTextStorageSettings
+0x1ef6416a8  __AUTH,__objc_data  _OBJC_CLASS_$_NSSubstituteWebResource
+0x1ee103210  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTempAttributeDictionary
+0x1ee101c58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextAlternatives
+0x1ef641130  __AUTH,__objc_data  _OBJC_CLASS_$_NSTextAnimationContext
+0x1ee102ce8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextAttachment
+0x1ee101848  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextAttachmentViewProvider
+0x1ee1017f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextBlock
+0x1ef641680  __AUTH,__objc_data  _OBJC_CLASS_$_NSTextBlockLayoutHelper
+0x1ee102798  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextContainer
+0x1ee1024a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextContentManager
+0x1ee102478  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextContentStorage
+0x1ef641bd0  __AUTH,__objc_data  _OBJC_CLASS_$_NSTextCorrectionMarkerRendering
+0x1ee102388  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextElement
+0x1ee102ae0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextGraphicsContextProvider
+0x1ef641108  __AUTH,__objc_data  _OBJC_CLASS_$_NSTextHighlightShapeProvider
+0x1ee102360  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextLayoutFragment
+0x1ee1028d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextLayoutManager
+0x1ee102338  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextLineFragment
+0x1ee102518  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextList
+0x1ef641a90  __AUTH,__objc_data  _OBJC_CLASS_$_NSTextListElement
+0x1ee102310  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextParagraph
+0x1ef640e60  __AUTH,__objc_data  _OBJC_CLASS_$_NSTextParagraphAnchoredAttachment
+0x1ef640e38  __AUTH,__objc_data  _OBJC_CLASS_$_NSTextPhraseAnimationController
+0x1ee102400  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextRange
+0x1ee101e88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextSelection
+0x1ee101fa0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextSelectionNavigation
+0x1ee102fe0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextStorage
+0x1ee101c08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextTab
+0x1ef641b80  __AUTH,__objc_data  _OBJC_CLASS_$_NSTextTable
+0x1ee1017d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextTableBlock
+0x1ee1021f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTextViewportLayoutController
+0x1ee102fb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_NSTypesetter
+0x1ef640dc0  __AUTH,__objc_data  _OBJC_CLASS_$_NSWritingToolsContextState
+0x1ef6410e0  __AUTH,__objc_data  _OBJC_CLASS_$_NSWritingToolsEditTracker
+0x1ef6410b8  __AUTH,__objc_data  _OBJC_CLASS_$_NSWritingToolsProofreadingController
+0x1ef641090  __AUTH,__objc_data  _OBJC_CLASS_$_NSWritingToolsProofreadingSuggestion
+0x1ef641658  __AUTH,__objc_data  _OBJC_CLASS_$_UIBoxcarFilterPointFIFO
+0x1ee1030a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICTFont
+0x1ee1030d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UICTFontDescriptor
+0x1ee1031c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIFont
+0x1ee103080  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIFontDescriptor
+0x1ef641630  __AUTH,__objc_data  _OBJC_CLASS_$_UINibCoderValue
+0x1ee101a28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UINibDecoder
+0x1ef641950  __AUTH,__objc_data  _OBJC_CLASS_$_UINibEncoder
+0x1ee1019d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UINibStringIDTable
+0x1ef641608  __AUTH,__objc_data  _OBJC_CLASS_$_UIPointFIFO
+0x1ef6415e0  __AUTH,__objc_data  _OBJC_CLASS_$_UIQuadCurvePointFIFO
+0x1ee102130  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__NSATSTypesetterGuts
+0x1ef6415b8  __AUTH,__objc_data  _OBJC_CLASS_$__NSAttributeRun
+0x1ef641590  __AUTH,__objc_data  _OBJC_CLASS_$__NSAttributedStringAsyncReadReply
+0x1ee102590  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__NSAttributedStringIntentResolver
+0x1ef641928  __AUTH,__objc_data  _OBJC_CLASS_$__NSAttributedStringWithResolvedIntents
+0x1ef641568  __AUTH,__objc_data  _OBJC_CLASS_$__NSAttributes
+0x1ee102838  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__NSCachedAttributedString
+0x1ef640d98  __AUTH,__objc_data  _OBJC_CLASS_$__NSCustomTextRenderingDisplayLinkInfo
+0x1ee101b18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__NSOptimalLineBreaker
+0x1ee1026d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__NSTextStorageSideData
+0x1ee102e00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UICache
+0x1ee102c48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFontCacheKey
+0x1ee102bf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFontDescriptorCacheKey
+0x1ee102950  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFontNameCacheKey
+0x1ee1029c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFontSystemCacheKey
+0x1ee102a68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIFontTextStyleCacheKey
+0x1ee101f78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___NSATSStringSegment
+0x1ee102e50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___NSFontExtraData
+0x1eb9b1078  __DATA,__objc_ivar  OBJC_IVAR_$_NSAttributeDictionaryEnumerator.dictionary
+0x1eb9b107c  __DATA,__objc_ivar  OBJC_IVAR_$_NSAttributeDictionaryEnumerator.nextElement
+0x1eb9b1274  __DATA,__objc_ivar  OBJC_IVAR_$_NSConcreteGlyphGenerator.bidiLevels
+0x1eb9b1270  __DATA,__objc_ivar  OBJC_IVAR_$_NSConcreteGlyphGenerator.bidiTypes
+0x1eb9b1e34  __DATA,__objc_ivar  OBJC_IVAR_$_NSHTMLWebDelegate._baseURL
+0x1eb9b1e2c  __DATA,__objc_ivar  OBJC_IVAR_$_NSHTMLWebDelegate._loadDidFinish
+0x1eb9b1e30  __DATA,__objc_ivar  OBJC_IVAR_$_NSHTMLWebDelegate._loadDidSucceed
+0x1eb9b127c  __DATA,__objc_ivar  OBJC_IVAR_$_NSIdentityGlyphInfo._font
+0x1eb9b1280  __DATA,__objc_ivar  OBJC_IVAR_$_NSIdentityGlyphInfo._glyph
+0x1eb9b1d10  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._attributeInfo
+0x1eb9b1d14  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._attributeInfoStack
+0x1eb9b1cd4  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._attributesStack
+0x1eb9b1d24  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._bMargin
+0x1eb9b1d3c  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._cachedRTFFontTable
+0x1eb9b1dc0  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._cocoaPlatform
+0x1eb9b1cfc  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._cocoaSubVersion
+0x1eb9b1dbc  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._cocoaTextScaling
+0x1eb9b1cf8  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._cocoaVersion
+0x1eb9b1d08  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._colorTblColorSpace
+0x1eb9b1cd0  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._curAttributedString
+0x1eb9b1cd8  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._curAttributes
+0x1eb9b1da0  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._currentBorderEdge
+0x1eb9b1da4  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._currentBorderIsTable
+0x1eb9b1d90  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._currentColumn
+0x1eb9b1d94  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._currentDefinitionColumn
+0x1eb9b1db0  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._currentListLevel
+0x1eb9b1dac  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._currentListNumber
+0x1eb9b1d8c  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._currentRow
+0x1eb9b1d84  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._currentRowArray
+0x1eb9b1d98  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._currentRowIsLast
+0x1eb9b1d7c  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._currentTable
+0x1eb9b1d44  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._defaultTabInterval
+0x1eb9b1d0c  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._defaultToUniCharEncoding
+0x1eb9b1ce8  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._document
+0x1eb9b1d48  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._documentBackgroundColor
+0x1eb9b1d2c  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._documentInfoDictionary
+0x1eb9b1d54  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._explicitCharSetEncountered
+0x1eb9b1dcc  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._finalTextScaling
+0x1eb9b1db8  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._fontAttributesTable
+0x1eb9b1ce4  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._fontTable
+0x1eb9b1db4  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._gregorianCalendar
+0x1eb9b1d40  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._hyphenationFactor
+0x1eb9b1d58  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._isRTLDocument
+0x1eb9b1d1c  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._lMargin
+0x1eb9b1d6c  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._layoutOrientationSections
+0x1eb9b1cdc  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._level
+0x1eb9b1d64  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._limitReached
+0x1eb9b1da8  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._listDefinitions
+0x1eb9b1d78  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._nestedTables
+0x1eb9b1d18  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._paperSize
+0x1eb9b1d88  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._previousRowArray
+0x1eb9b1d80  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._previousTable
+0x1eb9b1d4c  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._private
+0x1eb9b1d20  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._rMargin
+0x1eb9b1d5c  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._readLimit
+0x1eb9b1d00  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._readOnly
+0x1eb9b1ce0  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._rtfData
+0x1eb9b1cf4  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._rtfVersion
+0x1eb9b1d9c  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._setTableCells
+0x1eb9b1dc8  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._sourceTextScaling
+0x1eb9b1d28  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._tMargin
+0x1eb9b1dc4  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._targetTextScaling
+0x1eb9b1d74  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._textBlocks
+0x1eb9b1cec  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._textBuffer
+0x1eb9b1d50  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._textBufferContentsIsFat
+0x1eb9b1cf0  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._textBufferIndex
+0x1eb9b1d68  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._textFlow
+0x1eb9b1d60  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._thumbnailLimit
+0x1eb9b1ccc  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._topAttributedString
+0x1eb9b1d04  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._usesScreenFonts
+0x1eb9b1d70  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._verticalOrientationLocation
+0x1eb9b1d38  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._viewKind
+0x1eb9b1d34  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._viewScale
+0x1eb9b1d30  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReader._viewSize
+0x1eb9b1cc0  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReaderTableState._currentColumn
+0x1eb9b1cc4  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReaderTableState._currentDefinitionColumn
+0x1eb9b1cbc  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReaderTableState._currentRow
+0x1eb9b1cb4  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReaderTableState._currentRowArray
+0x1eb9b1cc8  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReaderTableState._currentRowIsLast
+0x1eb9b1cac  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReaderTableState._currentTable
+0x1eb9b1cb8  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReaderTableState._previousRowArray
+0x1eb9b1cb0  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFReaderTableState._previousTable
+0x1eb9b1fb8  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._attachmentData
+0x1eb9b1f60  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._attrString
+0x1eb9b1f64  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._attrStringLength
+0x1eb9b1f74  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._colors
+0x1eb9b1f88  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._curBackgroundColor
+0x1eb9b1f94  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._curBaselineOffset
+0x1eb9b1fa4  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._curEncoding
+0x1eb9b1f80  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._curFont
+0x1eb9b1f84  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._curForegroundColor
+0x1eb9b1f90  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._curKern
+0x1eb9b1f8c  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._curParagraphStyle
+0x1eb9b1f98  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._curSuperscript
+0x1eb9b1fa0  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._curTraits
+0x1eb9b1f9c  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._curUnderlineStyle
+0x1eb9b1fb0  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._docAttrs
+0x1eb9b1f68  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._document
+0x1eb9b1f6c  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._fontNames
+0x1eb9b1f70  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._fontObjects
+0x1eb9b1f78  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._indexedColors
+0x1eb9b1fb4  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._layoutSections
+0x1eb9b1f7c  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._listRanges
+0x1eb9b1f5c  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._output
+0x1eb9b1fac  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._rightMargin
+0x1eb9b1fa8  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._rwFlags
+0x1eb9b1fbc  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._textScalingConversionSource
+0x1eb9b1fc0  __DATA,__objc_ivar  OBJC_IVAR_$_NSRTFWriter._textScalingConversionTarget
+0x1eb9b1a18  __DATA,__objc_ivar  OBJC_IVAR_$_NSStringDrawingTextStorageSettings._settings
+0x1eb9b1e18  __DATA,__objc_ivar  OBJC_IVAR_$_NSSubstituteWebResource._data
+0x1eb9b1e28  __DATA,__objc_ivar  OBJC_IVAR_$_NSSubstituteWebResource._frameName
+0x1eb9b1e20  __DATA,__objc_ivar  OBJC_IVAR_$_NSSubstituteWebResource._mimeType
+0x1eb9b1e24  __DATA,__objc_ivar  OBJC_IVAR_$_NSSubstituteWebResource._textEncodingName
+0x1eb9b1e1c  __DATA,__objc_ivar  OBJC_IVAR_$_NSSubstituteWebResource._url
+0x1eb9b1bc8  __DATA,__objc_ivar  OBJC_IVAR_$_UIBoxcarFilterPointFIFO._spacing
+0x1eb9b1bc4  __DATA,__objc_ivar  OBJC_IVAR_$_UIBoxcarFilterPointFIFO._width
+0x1eb9b1de4  __DATA,__objc_ivar  OBJC_IVAR_$_UINibEncoder.data
+0x1eb9b1e14  __DATA,__objc_ivar  OBJC_IVAR_$_UINibEncoder.delegate
+0x1eb9b1df8  __DATA,__objc_ivar  OBJC_IVAR_$_UINibEncoder.encodedObjects
+0x1eb9b1e10  __DATA,__objc_ivar  OBJC_IVAR_$_UINibEncoder.nextObjectID
+0x1eb9b1dec  __DATA,__objc_ivar  OBJC_IVAR_$_UINibEncoder.objectIDsToObjects
+0x1eb9b1e04  __DATA,__objc_ivar  OBJC_IVAR_$_UINibEncoder.objectsReplacedWithNil
+0x1eb9b1de8  __DATA,__objc_ivar  OBJC_IVAR_$_UINibEncoder.objectsToObjectIDs
+0x1eb9b1e0c  __DATA,__objc_ivar  OBJC_IVAR_$_UINibEncoder.recursiveState
+0x1eb9b1df0  __DATA,__objc_ivar  OBJC_IVAR_$_UINibEncoder.replacements
+0x1eb9b1df4  __DATA,__objc_ivar  OBJC_IVAR_$_UINibEncoder.values
+0x1eb9b155c  __DATA,__objc_ivar  OBJC_IVAR_$_UINibStringIDTable.buckets
+0x1eb9b1564  __DATA,__objc_ivar  OBJC_IVAR_$_UINibStringIDTable.count
+0x1eb9b1560  __DATA,__objc_ivar  OBJC_IVAR_$_UINibStringIDTable.hashMask
+0x1eb9b1558  __DATA,__objc_ivar  OBJC_IVAR_$_UINibStringIDTable.table
+0x1eb9b1bc0  __DATA,__objc_ivar  OBJC_IVAR_$_UIPointFIFO._nextFIFO
+0x1eb9b1bec  __DATA,__objc_ivar  OBJC_IVAR_$_UIQuadCurvePointFIFO._controlPoints
+0x1eb9b1be0  __DATA,__objc_ivar  OBJC_IVAR_$_UIQuadCurvePointFIFO._emissionHandler
+0x1eb9b1bd4  __DATA,__objc_ivar  OBJC_IVAR_$_UIQuadCurvePointFIFO._emitInterpolatedPoints
+0x1eb9b1bf0  __DATA,__objc_ivar  OBJC_IVAR_$_UIQuadCurvePointFIFO._lastPoint
+0x1eb9b1bdc  __DATA,__objc_ivar  OBJC_IVAR_$_UIQuadCurvePointFIFO._lineWidth
+0x1eb9b1bd8  __DATA,__objc_ivar  OBJC_IVAR_$_UIQuadCurvePointFIFO._path
+0x1eb9b1be8  __DATA,__objc_ivar  OBJC_IVAR_$_UIQuadCurvePointFIFO._points
+0x1eb9b1be4  __DATA,__objc_ivar  OBJC_IVAR_$_UIQuadCurvePointFIFO._prevPoints
+0x1eb9b1bd0  __DATA,__objc_ivar  OBJC_IVAR_$_UIQuadCurvePointFIFO._unitScale
+0x1eb9b1bf4  __DATA,__objc_ivar  OBJC_IVAR_$_UIQuadCurvePointFIFO._view
+0x1eb9b157c  __DATA,__objc_ivar  OBJC_IVAR_$__NSAttributedStringWithResolvedIntents._resolver
+0x1eb9b1578  __DATA,__objc_ivar  OBJC_IVAR_$__NSAttributedStringWithResolvedIntents._string
+0x1eb9b18e0  __DATA,__objc_ivar  OBJC_IVAR_$__NSCachedAttributedString._allocedRunsSize
+0x1eb9b18d4  __DATA,__objc_ivar  OBJC_IVAR_$__NSCachedAttributedString._baseAttributes
+0x1eb9b18cc  __DATA,__objc_ivar  OBJC_IVAR_$__NSCachedAttributedString._contents
+0x1eb9b18e4  __DATA,__objc_ivar  OBJC_IVAR_$__NSCachedAttributedString._hashValue
+0x1eb9b18d0  __DATA,__objc_ivar  OBJC_IVAR_$__NSCachedAttributedString._length
+0x1eb9b18e8  __DATA,__objc_ivar  OBJC_IVAR_$__NSCachedAttributedString._numHits
+0x1eb9b18dc  __DATA,__objc_ivar  OBJC_IVAR_$__NSCachedAttributedString._numRuns
+0x1eb9b18d8  __DATA,__objc_ivar  OBJC_IVAR_$__NSCachedAttributedString._runs
+0x1eb9b2058  __DATA,__objc_ivar  OBJC_IVAR_$__UIFontCacheKey._hash
+0x1eb9b1604  __DATA,__objc_ivar  OBJC_IVAR_$___NSFontExtraData._ascender
+0x1eb9b160c  __DATA,__objc_ivar  OBJC_IVAR_$___NSFontExtraData._fFlags
+0x1eb9b1608  __DATA,__objc_ivar  OBJC_IVAR_$___NSFontExtraData._lineHeight
+0x1eb9b1618  __DATA,__objc_ivar  OBJC_IVAR_$___NSFontExtraData._maximumPointSizeAfterScaling
+0x1eb9b1614  __DATA,__objc_ivar  OBJC_IVAR_$___NSFontExtraData._pointSizeForScaling
+0x1eb9b1610  __DATA,__objc_ivar  OBJC_IVAR_$___NSFontExtraData._textStyleForScaling
+0x1ee101f50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSATSGlyphStorage
+0x1ee101f28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSATSLineFragment
+0x1ee102900  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSATSTypesetter
+0x1ee101960  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSAdaptiveImageGlyph
+0x1ee103260  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSAttributeDictionary
+0x1ee102ef0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSAttributeDictionaryEnumerator
+0x1ef6414c8  __AUTH,__objc_data  _OBJC_METACLASS_$_NSCIDGlyphInfo
+0x1ef6414a0  __AUTH,__objc_data  _OBJC_METACLASS_$_NSCTGlyphInfo
+0x1ef640cd0  __AUTH,__objc_data  _OBJC_METACLASS_$_NSConcreteGlyphGenerator
+0x1ee1026a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSConcreteNotifyingMutableAttributedString
+0x1ee102680  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSConcreteTextStorage
+0x1ee102f68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSCoreTypesetter
+0x1ee102540  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSCountableTextLocation
+0x1ee1023d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSCountableTextRange
+0x1ef641c98  __AUTH,__objc_data  _OBJC_METACLASS_$_NSDataAsset
+0x0006fd6d2  indirect  _OBJC_METACLASS_$_NSEmojiImageAsset
+0x0006fd71b  indirect  _OBJC_METACLASS_$_NSEmojiImageStrike
+0x1ef641478  __AUTH,__objc_data  _OBJC_METACLASS_$_NSEmojiImageTextAttachment
+0x1ee102068  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSExtraLMData
+0x1ee102108  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSFont
+0x1ee101f00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSGlyphGenerator
+0x1ee101af0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSGlyphInfo
+0x1ef641450  __AUTH,__objc_data  _OBJC_METACLASS_$_NSGlyphNameGlyphInfo
+0x1ef641ae0  __AUTH,__objc_data  _OBJC_METACLASS_$_NSHTMLReader
+0x1ef641ab8  __AUTH,__objc_data  _OBJC_METACLASS_$_NSHTMLWebDelegate
+0x1ef641428  __AUTH,__objc_data  _OBJC_METACLASS_$_NSHTMLWriter
+0x1ee102040  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSIdRunStorage
+0x1ef641400  __AUTH,__objc_data  _OBJC_METACLASS_$_NSIdentityGlyphInfo
+0x1ee101d20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSInsertionPointHelper
+0x1ee102d60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSLayoutManager
+0x1ef6413d8  __AUTH,__objc_data  _OBJC_METACLASS_$_NSLayoutManagerTextBlockHelper
+0x1ef6413b0  __AUTH,__objc_data  _OBJC_METACLASS_$_NSLayoutManagerTextBlockRowArrayCache
+0x1ee102810  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSLineFragmentRenderingContext
+0x1ee103120  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSMutableParagraphStyle
+0x1ef640ca8  __AUTH,__objc_data  _OBJC_METACLASS_$_NSNotATextLocation
+0x1ee102ba8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSParagraphArbitrator
+0x1ee103198  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSParagraphStyle
+0x1ee102d88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSParagraphStyleExtraData
+0x1ef641a18  __AUTH,__objc_data  _OBJC_METACLASS_$_NSRTFReader
+0x1ef641388  __AUTH,__objc_data  _OBJC_METACLASS_$_NSRTFReaderTableState
+0x1ef6419a0  __AUTH,__objc_data  _OBJC_METACLASS_$_NSRTFWriter
+0x1ee102658  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSRunStorage
+0x1ee102b30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSShadow
+0x1ee1027e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSSingleLineTypesetter
+0x1ee102630  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSStorage
+0x1ee102d10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSStringDrawingContext
+0x1ee102ec8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSStringDrawingTextStorage
+0x1ef641978  __AUTH,__objc_data  _OBJC_METACLASS_$_NSStringDrawingTextStorageSettings
+0x1ef641360  __AUTH,__objc_data  _OBJC_METACLASS_$_NSSubstituteWebResource
+0x1ee103238  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTempAttributeDictionary
+0x1ee101c30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextAlternatives
+0x1ef640ff0  __AUTH,__objc_data  _OBJC_METACLASS_$_NSTextAnimationContext
+0x1ee102c20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextAttachment
+0x1ee101820  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextAttachmentViewProvider
+0x1ee1017a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextBlock
+0x1ef641338  __AUTH,__objc_data  _OBJC_METACLASS_$_NSTextBlockLayoutHelper
+0x1ee102770  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextContainer
+0x1ee102450  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextContentManager
+0x1ee1024c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextContentStorage
+0x1ef641ba8  __AUTH,__objc_data  _OBJC_METACLASS_$_NSTextCorrectionMarkerRendering
+0x1ee1022e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextElement
+0x1ee102b08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextGraphicsContextProvider
+0x1ef640fc8  __AUTH,__objc_data  _OBJC_METACLASS_$_NSTextHighlightShapeProvider
+0x1ee1022c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextLayoutFragment
+0x1ee1028b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextLayoutManager
+0x1ee102298  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextLineFragment
+0x1ee1024f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextList
+0x1ef641a68  __AUTH,__objc_data  _OBJC_METACLASS_$_NSTextListElement
+0x1ee102270  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextParagraph
+0x1ef640c80  __AUTH,__objc_data  _OBJC_METACLASS_$_NSTextParagraphAnchoredAttachment
+0x1ef640c58  __AUTH,__objc_data  _OBJC_METACLASS_$_NSTextPhraseAnimationController
+0x1ee1023b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextRange
+0x1ee101e60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextSelection
+0x1ee101ed8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextSelectionNavigation
+0x1ee102f90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextStorage
+0x1ee101be0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextTab
+0x1ef641b58  __AUTH,__objc_data  _OBJC_METACLASS_$_NSTextTable
+0x1ee101780  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextTableBlock
+0x1ee1021a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTextViewportLayoutController
+0x1ee102f40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_NSTypesetter
+0x1ef640be0  __AUTH,__objc_data  _OBJC_METACLASS_$_NSWritingToolsContextState
+0x1ef640fa0  __AUTH,__objc_data  _OBJC_METACLASS_$_NSWritingToolsEditTracker
+0x1ef640f78  __AUTH,__objc_data  _OBJC_METACLASS_$_NSWritingToolsProofreadingController
+0x1ef640f50  __AUTH,__objc_data  _OBJC_METACLASS_$_NSWritingToolsProofreadingSuggestion
+0x1ef641310  __AUTH,__objc_data  _OBJC_METACLASS_$_UIBoxcarFilterPointFIFO
+0x1ee103030  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICTFont
+0x1ee103058  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UICTFontDescriptor
+0x1ee1031e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIFont
+0x1ee1030f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIFontDescriptor
+0x1ef6412e8  __AUTH,__objc_data  _OBJC_METACLASS_$_UINibCoderValue
+0x1ee101a00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UINibDecoder
+0x1ef6418b0  __AUTH,__objc_data  _OBJC_METACLASS_$_UINibEncoder
+0x1ee1019b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UINibStringIDTable
+0x1ef6412c0  __AUTH,__objc_data  _OBJC_METACLASS_$_UIPointFIFO
+0x1ef641298  __AUTH,__objc_data  _OBJC_METACLASS_$_UIQuadCurvePointFIFO
+0x1ee1020e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__NSATSTypesetterGuts
+0x1ef641270  __AUTH,__objc_data  _OBJC_METACLASS_$__NSAttributeRun
+0x1ef641248  __AUTH,__objc_data  _OBJC_METACLASS_$__NSAttributedStringAsyncReadReply
+0x1ee1025b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__NSAttributedStringIntentResolver
+0x1ef641888  __AUTH,__objc_data  _OBJC_METACLASS_$__NSAttributedStringWithResolvedIntents
+0x1ef641220  __AUTH,__objc_data  _OBJC_METACLASS_$__NSAttributes
+0x1ee1027c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__NSCachedAttributedString
+0x1ef640bb8  __AUTH,__objc_data  _OBJC_METACLASS_$__NSCustomTextRenderingDisplayLinkInfo
+0x1ee101a50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__NSOptimalLineBreaker
+0x1ee102608  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__NSTextStorageSideData
+0x1ee102e78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__UICache
+0x1ee102c70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__UIFontCacheKey
+0x1ee102bd0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__UIFontDescriptorCacheKey
+0x1ee102928  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__UIFontNameCacheKey
+0x1ee1029a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__UIFontSystemCacheKey
+0x1ee102a40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__UIFontTextStyleCacheKey
+0x1ee101eb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___NSATSStringSegment
+0x1ee102e28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___NSFontExtraData
+0x1947ebf24  __TEXT,__text  _UIAppendBytesForValueToData
+0x19479d9b4  __TEXT,__text  _UIAppendVInt32ToData
+0x194823998  __TEXT,__const  _UIArchiveHeaderIdentifier
+0x1947ec090  __TEXT,__text  _UICreateOrderedAndStrippedCoderValues
+0x194823994  __TEXT,__const  _UICurrentCoderVersion
+0x1947ebd34  __TEXT,__text  _UIDataLooksLikeNibArchive
+0x19472848c  __TEXT,__text  _UIFixedByteLengthForType
+0x1e0b903d0  __DATA_CONST,__const  _UIFontDescriptorCascadeListAttribute
+0x1e0b903c8  __DATA_CONST,__const  _UIFontDescriptorCharacterSetAttribute
+0x1e0b903c0  __DATA_CONST,__const  _UIFontDescriptorFaceAttribute
+0x1e0b903b8  __DATA_CONST,__const  _UIFontDescriptorFamilyAttribute
+0x1e0b903b0  __DATA_CONST,__const  _UIFontDescriptorFeatureSettingsAttribute
+0x1e0b903a8  __DATA_CONST,__const  _UIFontDescriptorFixedAdvanceAttribute
+0x1e0b903a0  __DATA_CONST,__const  _UIFontDescriptorMatrixAttribute
+0x1e0b90398  __DATA_CONST,__const  _UIFontDescriptorNameAttribute
+0x1e0b90390  __DATA_CONST,__const  _UIFontDescriptorOpticalSizeAttribute
+0x1e0b90388  __DATA_CONST,__const  _UIFontDescriptorPostScriptNameAttribute
+0x1e0b90380  __DATA_CONST,__const  _UIFontDescriptorSizeAttribute
+0x1e0b90378  __DATA_CONST,__const  _UIFontDescriptorSystemDesignDefault
+0x1e0b90370  __DATA_CONST,__const  _UIFontDescriptorSystemDesignMonospaced
+0x1e0b90368  __DATA_CONST,__const  _UIFontDescriptorSystemDesignRounded
+0x1e0b90360  __DATA_CONST,__const  _UIFontDescriptorSystemDesignSerif
+0x1e0b90358  __DATA_CONST,__const  _UIFontDescriptorTextStyleAttribute
+0x1e0b90350  __DATA_CONST,__const  _UIFontDescriptorTextStyleCaption1
+0x1e0b90348  __DATA_CONST,__const  _UIFontDescriptorTextStyleCaption2
+0x1e0b90340  __DATA_CONST,__const  _UIFontDescriptorTraitsAttribute
+0x1e0b90338  __DATA_CONST,__const  _UIFontDescriptorVariationAttribute
+0x1e0b90330  __DATA_CONST,__const  _UIFontDescriptorVisibleNameAttribute
+0x1e0b90328  __DATA_CONST,__const  _UIFontDesignDefault
+0x1e0b90320  __DATA_CONST,__const  _UIFontDesignTrait
+0x1e0b90318  __DATA_CONST,__const  _UIFontFeatureSelectorIdentifierKey
+0x1e0b90310  __DATA_CONST,__const  _UIFontFeatureSelectorIdentifierKey_ForNewSwiftAPI
+0x1e0b90308  __DATA_CONST,__const  _UIFontFeatureSelectorKey
+0x1e0b90300  __DATA_CONST,__const  _UIFontFeatureTypeIdentifierKey
+0x1e0b902f8  __DATA_CONST,__const  _UIFontFeatureTypeIdentifierKey_ForNewSwiftAPI
+0x1e0b902f0  __DATA_CONST,__const  _UIFontFeatureTypeKey
+0x1e0b902e8  __DATA_CONST,__const  _UIFontSlantTrait
+0x1e0b902e0  __DATA_CONST,__const  _UIFontSymbolicTrait
+0x1e0b902d8  __DATA_CONST,__const  _UIFontSystemFontDesignAlternate
+0x1e0b902d0  __DATA_CONST,__const  _UIFontSystemFontDesignCompact
+0x1e0b902c8  __DATA_CONST,__const  _UIFontSystemFontDesignCondensed
+0x1e0b902c0  __DATA_CONST,__const  _UIFontSystemFontDesignDefault
+0x1e0b902b8  __DATA_CONST,__const  _UIFontSystemFontDesignMonospaced
+0x1e0b902b0  __DATA_CONST,__const  _UIFontSystemFontDesignRounded
+0x1e0b902a8  __DATA_CONST,__const  _UIFontSystemFontDesignSerif
+0x1e0b902a0  __DATA_CONST,__const  _UIFontSystemFontDesignTrait
+0x1e0b90298  __DATA_CONST,__const  _UIFontSystemFontGradeTrait
+0x1e0b90290  __DATA_CONST,__const  _UIFontTextStyleBody
+0x1e0b90288  __DATA_CONST,__const  _UIFontTextStyleCallout
+0x1e0b90280  __DATA_CONST,__const  _UIFontTextStyleCaption1
+0x1e0b90278  __DATA_CONST,__const  _UIFontTextStyleCaption2
+0x1e0b90270  __DATA_CONST,__const  _UIFontTextStyleExtraLargeTitle
+0x1e0b90268  __DATA_CONST,__const  _UIFontTextStyleExtraLargeTitle2
+0x1e0b90260  __DATA_CONST,__const  _UIFontTextStyleFootnote
+0x1e0b90258  __DATA_CONST,__const  _UIFontTextStyleHeadline
+0x1e0b90250  __DATA_CONST,__const  _UIFontTextStyleLargeTitle
+0x1e0b90248  __DATA_CONST,__const  _UIFontTextStyleSubhead
+0x1e0b90240  __DATA_CONST,__const  _UIFontTextStyleSubheadline
+0x1e0b90238  __DATA_CONST,__const  _UIFontTextStyleTitle0
+0x1e0b90230  __DATA_CONST,__const  _UIFontTextStyleTitle1
+0x1e0b90228  __DATA_CONST,__const  _UIFontTextStyleTitle2
+0x1e0b90220  __DATA_CONST,__const  _UIFontTextStyleTitle3
+0x1e0b90218  __DATA_CONST,__const  _UIFontTextStyleTitle4
+0x1e0b90210  __DATA_CONST,__const  _UIFontTextStyleTitle5
+0x1948235c8  __TEXT,__const  _UIFontWeightBlack
+0x1948235b8  __TEXT,__const  _UIFontWeightBold
+0x1948235c0  __TEXT,__const  _UIFontWeightHeavy
+0x194823598  __TEXT,__const  _UIFontWeightLight
+0x1948235a8  __TEXT,__const  _UIFontWeightMedium
+0x1948235a0  __TEXT,__const  _UIFontWeightRegular
+0x1948235b0  __TEXT,__const  _UIFontWeightSemibold
+0x194823590  __TEXT,__const  _UIFontWeightThin
+0x1e0b90208  __DATA_CONST,__const  _UIFontWeightTrait
+0x194823588  __TEXT,__const  _UIFontWeightUltraLight
+0x1948235d0  __TEXT,__const  _UIFontWidthCompressed
+0x1948235d8  __TEXT,__const  _UIFontWidthCondensed
+0x1948235e8  __TEXT,__const  _UIFontWidthExpanded
+0x1948235e0  __TEXT,__const  _UIFontWidthStandard
+0x1e0b90200  __DATA_CONST,__const  _UIFontWidthTrait
+0x1e0b901f8  __DATA_CONST,__const  _UIInlinedValueMarker
+0x194823990  __TEXT,__const  _UIMaximumCompatibleFormatVersion
+0x1947ebdf0  __TEXT,__text  _UINibArchiveIndexFromNumber
+0x1947a9e8c  __TEXT,__text  _UINibCoderValueTypeToString
+0x1947ebde0  __TEXT,__text  _UINumberWithNibArchiveIndex
+0x1947ebe74  __TEXT,__text  _UIRetainedIdentityArrayCallbacks
+0x1947ebdf4  __TEXT,__text  _UIRetainedIdentityKeyDictionaryCallbacks
+0x1947ebe48  __TEXT,__text  _UIRetainedIdentitySetCallbacks
+0x1947ebe20  __TEXT,__text  _UIRetainedIdentityValueDictionaryCallbacks
+0x1947ebe9c  __TEXT,__text  _UIRetainedValueUniquingSetCallbacks
+0x1947cc62c  __TEXT,__text  _UISystemFontBoldForSize
+0x1947cc544  __TEXT,__text  _UISystemFontCreate
+0x1947cc574  __TEXT,__text  _UISystemFontForSize
+0x1947ec2f4  __TEXT,__text  _UIWriteArchiveToData
+0x1947ee3fc  __TEXT,__text  __CFArrayApplyBlock
+0x1947ee4d4  __TEXT,__text  __CFArraySortValuesWithBlock
+0x1947ee38c  __TEXT,__text  __CFDictionaryApplyBlock
+0x1947ee480  __TEXT,__text  __CFSetApplyBlock
+0x1947aafa4  __TEXT,__text  __NSAttachmentCharacterSet
+0x1947ab070  __TEXT,__text  __NSBidiControlCharacterSet
+0x1947ab02c  __TEXT,__text  __NSBidiEmbeddingAndOverrideCharSet
+0x19473e82c  __TEXT,__text  __NSBlockNumberForIndex
+0x1947e2844  __TEXT,__text  __NSCalculateContainerOrigin
+0x1947ae1fc  __TEXT,__text  __NSFontAttributeNames
+0x1947ab1e8  __TEXT,__text  __NSHTMLEncoding
+0x1e0b90190  __DATA_CONST,__const  __NSLayoutManagerObservedTextViewChangeNotification
+0x1e0b90188  __DATA_CONST,__const  __NSNewTextView
+0x1947aafe8  __TEXT,__text  __NSNonAttachmentCharacterSet
+0x1e0b90180  __DATA_CONST,__const  __NSOldTextView
+0x1eb9b2c38  __DATA,__data  __NSOriginalFontAttributeName
+0x1947b0270  __TEXT,__text  __NSReadAttributedStringFromData
+0x1947b0288  __TEXT,__text  __NSReadAttributedStringFromURL
+0x194748c90  __TEXT,__text  __NSReadAttributedStringFromURLOrData
+0x1947b0254  __TEXT,__text  __NSReadAttributedStringFromURLOrDataAgent
+0x1947ad488  __TEXT,__text  __NSReadAttributedStringFromURLOrDataAsync
+0x1947afe04  __TEXT,__text  __NSReadAttributedStringFromURLOrDataSync
+0x1947175b4  __TEXT,__text  __NSStringDrawingCore
+0x1947e0de8  __TEXT,__text  __NSStringHasRightToLeftBaseWritingDirectionAtIndex
+0x194732d54  __TEXT,__text  __NSStringHasRightToLeftCharactersInRange
+0x19473b20c  __TEXT,__text  __NSStringImputedBaseWritingDirectionAtIndex
+0x1eb9b2c30  __DATA,__data  __NSTextAnimatorPhaseDefault
+0x1eb9b2c28  __DATA,__data  __NSTextAnimatorPhaseOff
+0x1eb9b2c20  __DATA,__data  __NSTextAnimatorPhaseOn
+0x1947ab0b4  __TEXT,__text  __NSXMLEncoding
+0x1947d0b1c  __TEXT,__text  __UIFoundationRoundedInverseTextScalingFactor
+0x1947d0b10  __TEXT,__text  __UIFoundationRoundedTextScalingFactor
+0x1947cb0e4  __TEXT,__text  __UISystemFontName
+0x1947107a4  __TEXT,__text  ___CTFontGetExtraData
+0x194723e54  __TEXT,__text  ___NSLineBreakStrategyStandardActualOptions
+0x19472bde0  __TEXT,__text  ___NSTokenizerLanguageSet
+0x194823248  __TEXT,__const  _kUIFoundationUIFoundationVersionNumber
+0x194823210  __TEXT,__const  _kUIFoundationUIFoundationVersionString
+```
+
+## Private
+
+```
+0x1947106b0  __TEXT,__text  -[UICTFont retain]
+0x1947106d8  __TEXT,__text  -[UICTFont release]
+0x1947106dc  __TEXT,__text  -[UIFont copyWithZone:]
+0x1947106e0  __TEXT,__text  ___33-[_UICache retainedObjectForKey:]_block_invoke
+0x19471071c  __TEXT,__text  ___29-[_UICache setObject:forKey:]_block_invoke
+0x194710730  __TEXT,__text  -[NSParagraphStyle mutableCopyWithZone:]
+0x194710770  __TEXT,__text  -[UICTFontDescriptor retain]
+0x194710774  __TEXT,__text  -[UICTFontDescriptor release]
+0x194710778  __TEXT,__text  -[UIFont textStyleForScaling]
+0x1947107e8  __TEXT,__text  -[NSStringDrawingContext init]
+0x19471084c  __TEXT,__text  __NSTextScalingTypeForCurrentEnvironment
+0x19471084c  __TEXT,__text  __NSTextScalingTypeForCurrentEnvironment
+0x19471084c  __TEXT,__text  __NSTextScalingTypeForCurrentEnvironment
+0x194710854  __TEXT,__text  -[NSParagraphStyle dealloc]
+0x1947108a8  __TEXT,__text  -[NSParagraphStyleExtraData dealloc]
+0x19471090c  __TEXT,__text  _attributeDictionaryHash
+0x194710b48  __TEXT,__text  ___NSStringDrawingEngine
+0x194711c84  __TEXT,__text  -[UICTFont hash]
+0x194711cc4  __TEXT,__text  -[NSAttributeDictionary isEqualToDictionary:]
+0x1947120e0  __TEXT,__text  -[NSCoreTypesetter _NSFastDrawString:length:attributes:paragraphStyle:typesetterBehavior:lineBreakMode:rect:padding:graphicsContext:baselineRendering:usesFontLeading:usesScreenFont:scrollable:syncAlignment:mirrored:boundingRectPointer:baselineOffsetPointer:drawingContext:]
+0x1947134d0  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1947134e4  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1947134e4  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1947134f8  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x19471350c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x194713524  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x194713530  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x194713540  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x194713554  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x194713564  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x194713578  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x194713584  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x194713590  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1947135a8  __TEXT,__text  -[_NSCoreTypesetterLayoutCache getCount:glyphs:advances:elasticAdvances:resolvedFont:textAlignment:]
+0x194713628  __TEXT,__text  ___NSUltraFastLineBreakFinder
+0x194713988  __TEXT,__text  -[NSCoreTypesetter _stringDrawingCoreTextEngineWithOriginalString:rect:padding:graphicsContext:forceClipping:attributes:stringDrawingOptions:drawingContext:stringDrawingInterface:]
+0x194716fe0  __TEXT,__text  _attributeDictionaryIsEqual
+0x194717050  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x194717078  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19471708c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1947170a0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1947170b8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1947170d8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1947170f8  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1947170f8  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1947170f8  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19471710c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19471712c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x19471714c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x194717160  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x194717174  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x194717180  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x194717194  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1947171a8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1947171bc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1947171c8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1947171d8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1947171ec  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1947171f8  __TEXT,__text  -[NSString(NSExtendedStringDrawing) boundingRectWithSize:options:attributes:context:]
+0x1947172ec  __TEXT,__text  -[NSParagraphStyle alignment]
+0x194717318  __TEXT,__text  +[NSParagraphStyle _defaultWritingDirection]
+0x1947174a0  __TEXT,__text  +[NSParagraphStyle defaultWritingDirectionForLanguage:]
+0x1947174ec  __TEXT,__text  -[NSString(NSExtendedStringDrawing) drawWithRect:options:attributes:context:]
+0x194717684  __TEXT,__text  -[_NSUIKitTextGraphicsContext CGContext]
+0x194717690  __TEXT,__text  -[_UIFontSystemCacheKey dealloc]
+0x1947176e4  __TEXT,__text  -[NSCoreTypesetter init]
+0x194717804  __TEXT,__text  -[NSTypesetter _getAuxData]
+0x194717878  __TEXT,__text  ___131-[NSCoreTypesetter _getLineMetricsForRange:attributes:attributedString:applySpacing:usesSystemFontLeading:usesNegativeFontLeading:]_block_invoke
+0x194717b68  __TEXT,__text  -[UIFont lineHeight]
+0x194717b94  __TEXT,__text  -[UIFont ascender]
+0x194717bc0  __TEXT,__text  -[NSStringDrawingContext dealloc]
+0x194717c24  __TEXT,__text  -[NSCoreTypesetter dealloc]
+0x194717cf0  __TEXT,__text  -[NSTypesetter dealloc]
+0x194717d68  __TEXT,__text  -[_NSCoreTypesetterLayoutCache dealloc]
+0x194717ddc  __TEXT,__text  -[NSCoreTypesetter _getLineMetricsForRange:attributes:attributedString:applySpacing:usesSystemFontLeading:usesNegativeFontLeading:]
+0x194718270  __TEXT,__text  -[_NSCoreTypesetterLayoutCache setCount:glyphs:advances:elasticAdvances:resolvedFont:textAlignment:]
+0x194718358  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x194718370  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x194718384  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x194718394  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1947183a0  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1947183b8  __TEXT,__text  -[NSStringDrawingContext copyWithZone:]
+0x19471854c  __TEXT,__text  -[NSAttributedString(NSExtendedStringDrawing) boundingRectWithSize:options:context:]
+0x194718c34  __TEXT,__text  -[NSAttributeDictionaryEnumerator dealloc]
+0x194718c8c  __TEXT,__text  -[UIFont(UIFont_AttributedStringDrawing) _getLatin1Glyphs:advanceWidths:]
+0x194718c98  __TEXT,__text  +[UIFont systemFontOfSize:weight:]
+0x194718cd4  __TEXT,__text  -[NSParagraphStyle usesDefaultHyphenation]
+0x194718cf4  __TEXT,__text  -[NSParagraphStyle _lineBoundsOptions]
+0x194718d90  __TEXT,__text  -[NSParagraphStyle isEqual:]
+0x194719770  __TEXT,__text  -[NSMutableParagraphStyle setLineBreakMode:]
+0x1947197c4  __TEXT,__text  ___CTFontGetExtraData.cold.1
+0x194719848  __TEXT,__text  __NSCTTextAlignmentToHorizontalAlignment
+0x1947198c8  __TEXT,__text  +[UIFont systemFontOfSize:traits:]
+0x194719900  __TEXT,__text  -[NSParagraphStyle init]
+0x194719908  __TEXT,__text  -[_UIFontDescriptorCacheKey dealloc]
+0x19471997c  __TEXT,__text  -[NSParagraphStyle(_NSParagraphStyleMarkdownSettings) _listIntentOrdinal]
+0x194719994  __TEXT,__text  -[NSParagraphStyle lineBreakStrategy]
+0x1947199ac  __TEXT,__text  -[NSParagraphStyle _allocExtraData]
+0x194719b2c  __TEXT,__text  -[NSParagraphStyle lineHeightMultiple]
+0x194719b5c  __TEXT,__text  -[NSParagraphStyle(_NSParagraphStyleMarkdownSettings) codeBlockIntentLanguageHint]
+0x194719b78  __TEXT,__text  +[UIFont _preferredFontForTextStyle:weight:]
+0x194719bd0  __TEXT,__text  +[UIFont systemFontOfSize:]
+0x194719bd8  __TEXT,__text  ___26+[UIFont _sharedFontCache]_block_invoke
+0x194719c00  __TEXT,__text  -[NSShadow shadowOffset]
+0x194719c08  __TEXT,__text  -[NSShadow shadowColor]
+0x194719c6c  __TEXT,__text  -[NSCoreTypesetter setTextContainerSize:]
+0x194719cac  __TEXT,__text  +[UIFont _preferredFontForTextStyle:design:weight:symbolicTraits:maximumContentSizeCategory:compatibleWithTraitCollection:pointSize:pointSizeForScaling:]
+0x194719dec  __TEXT,__text  -[NSMutableParagraphStyle setAlignment:]
+0x194719e60  __TEXT,__text  -[_UIFontTextStyleCacheKey dealloc]
+0x194719eb4  __TEXT,__text  ___UIFontForTextStyle
+0x19471a014  __TEXT,__text  +[UIFont preferredFontForTextStyle:]
+0x19471a02c  __TEXT,__text  +[UIFont _sharedFontCache]
+0x19471a064  __TEXT,__text  +[UIFont _fontWithDescriptor:size:textStyleForScaling:pointSizeForScaling:maximumPointSizeAfterScaling:forIB:legibilityWeight:]
+0x19471a2c0  __TEXT,__text  -[UICTFontDescriptor copyWithZone:]
+0x19471a2e8  __TEXT,__text  -[NSParagraphStyle _initWithParagraphStyle:]
+0x19471aac4  __TEXT,__text  ___UIFontDescriptorWithTextStyle
+0x19471ac2c  __TEXT,__text  -[__NSFontExtraData initWithFont:]
+0x19471ad44  __TEXT,__text  -[NSParagraphStyle baselineIntervalType]
+0x19471ad5c  __TEXT,__text  +[UIFont _sharedFontCache].cold.1
+0x19471ad70  __TEXT,__text  -[NSAttributeDictionary dealloc]
+0x19471ae10  __TEXT,__text  -[_UICache init]
+0x19471af10  __TEXT,__text  _UINewFont
+0x19471b344  __TEXT,__text  -[UICTFont retainWeakReference]
+0x19471b364  __TEXT,__text  +[NSParagraphStyle initialize]
+0x19471b508  __TEXT,__text  -[NSParagraphStyle baseWritingDirection]
+0x19471b51c  __TEXT,__text  -[UIFont fontDescriptor]
+0x19471b538  __TEXT,__text  _UIApplicationDidEnterBackgroundNotificationFunction
+0x19471b544  __TEXT,__text  _UIApplicationDidEnterBackgroundNotificationFunction
+0x19471b550  __TEXT,__text  -[_UICache setClearsCacheOnApplicationBackground:]
+0x19471b644  __TEXT,__text  ___NSGetFrameworkReference.cold.1
+0x19471b648  __TEXT,__text  ___NSGetFrameworkReference
+0x19471b748  __TEXT,__text  _initUIApplicationDidEnterBackgroundNotification
+0x19471b79c  __TEXT,__text  _initUIApplicationDidEnterBackgroundNotification
+0x19471b7f0  __TEXT,__text  _____NSGetFrameworkReference_block_invoke
+0x19471b818  __TEXT,__text  ___NSLoadFramework
+0x19471b8f8  __TEXT,__text  -[NSCoreTypesetter isSimpleRectangularTextContainerForStartingCharacterAtIndex:]
+0x19471b988  __TEXT,__text  -[UIFont __isSystemFont]
+0x19471b9b8  __TEXT,__text  -[NSMutableParagraphStyle setLineBreakStrategy:]
+0x19471ba2c  __TEXT,__text  -[NSParagraphStyle paragraphSpacingBefore]
+0x19471ba44  __TEXT,__text  -[NSParagraphStyle tighteningFactorForTruncation]
+0x19471ba68  __TEXT,__text  -[NSParagraphStyle headerLevel]
+0x19471ba80  __TEXT,__text  -[NSParagraphStyle baselineInterval]
+0x19471ba98  __TEXT,__text  -[NSParagraphStyle compositionLanguage]
+0x19471bab0  __TEXT,__text  -[NSParagraphStyle _alignmentFollowsWritingDirection]
+0x19471bac4  __TEXT,__text  -[NSParagraphStyle spansAllLines]
+0x19471bad8  __TEXT,__text  -[NSParagraphStyle(_NSParagraphStyleMarkdownSettings) listIntentOrdinal]
+0x19471badc  __TEXT,__text  -[NSParagraphStyle secondaryLineBreakMode]
+0x19471baf4  __TEXT,__text  -[NSMutableParagraphStyle copyWithZone:]
+0x19471bb34  __TEXT,__text  -[NSShadow init]
+0x19471bb6c  __TEXT,__text  +[NSShadow initialize]
+0x19471bbb4  __TEXT,__text  +[UIFont fontWithName:size:]
+0x19471bbbc  __TEXT,__text  +[UIFont fontWithName:size:traits:]
+0x19471bbf4  __TEXT,__text  -[NSParagraphStyle allowsDefaultTighteningForTruncation]
+0x19471bc00  __TEXT,__text  +[UIFont _isSupportedDynamicFontTextStyle:]
+0x19471bc58  __TEXT,__text  +[UIFont labelFontSize]
+0x19471bc64  __TEXT,__text  -[UIFont _isTextStyleFont]
+0x19471bc68  __TEXT,__text  -[UIFont _fontAdjustedForContentSizeCategoryCompatibleWithTraitCollection:]
+0x19471bfa8  __TEXT,__text  +[_UIFontCacheKey newFontCacheKeyWithTextStyle:contentSizeCategory:textLegibility:]
+0x19471c014  __TEXT,__text  -[NSMutableParagraphStyle setAllowsDefaultTighteningForTruncation:]
+0x19471c034  __TEXT,__text  -[_UIFontCacheKey hash]
+0x19471c03c  __TEXT,__text  -[_UIFontCacheKey isEqual:]
+0x19471c0c8  __TEXT,__text  -[UIFont _textStyle]
+0x19471c0cc  __TEXT,__text  +[NSString(NSStringDrawing) typesetterBehavior]
+0x19471c12c  __TEXT,__text  -[UIFont isIBTextStyleFont]
+0x19471c194  __TEXT,__text  -[NSParagraphStyle hash]
+0x19471c28c  __TEXT,__text  -[NSParagraphStyle horizontalAlignment]
+0x19471c2b4  __TEXT,__text  -[NSParagraphStyle(_NSParagraphStyleMarkdownSettings) _presentationIntents]
+0x19471c2d0  __TEXT,__text  -[NSParagraphStyle isFullyJustified]
+0x19471c2f8  __TEXT,__text  -[NSParagraphStyle lineBreakMode]
+0x19471c308  __TEXT,__text  -[UIFont pointSize]
+0x19471c30c  __TEXT,__text  -[_UICache retainedObjectForKey:]
+0x19471c3e0  __TEXT,__text  -[NSShadow isEqual:]
+0x19471c538  __TEXT,__text  +[_UIFontCacheKey newFontCacheKeyWithFontDescriptor:pointSize:textStyleForScaling:pointSizeForScaling:maximumPointSizeAfterScaling:textLegibility:]
+0x19471c5e4  __TEXT,__text  +[NSTextAttachment initialize]
+0x19471c638  __TEXT,__text  +[NSAttributeDictionary newWithDictionary:]
+0x19471c9e0  __TEXT,__text  +[NSAttributeDictionary initialize]
+0x19471cd10  __TEXT,__text  -[NSMutableParagraphStyle setBaseWritingDirection:]
+0x19471cdb4  __TEXT,__text  +[NSTextStorage initialize]
+0x19471ce70  __TEXT,__text  -[UIFont _scaledValueForValue:useLanguageAwareScaling:]
+0x19471cfdc  __TEXT,__text  -[UIFont _scaledValueForValue:useLanguageAwareScaling:].cold.1
+0x19471cff0  __TEXT,__text  -[UIFont _scaledValueForValue:]
+0x19471cff8  __TEXT,__text  -[UIFont _bodyLeading]
+0x19471d034  __TEXT,__text  +[NSAttributeDictionary emptyAttributeDictionary]
+0x19471d040  __TEXT,__text  -[NSShadow setShadowOffset:]
+0x19471d048  __TEXT,__text  -[NSShadow setShadowColor:]
+0x19471d0c0  __TEXT,__text  -[NSShadow setShadowBlurRadius:]
+0x19471d0c8  __TEXT,__text  -[UIFont capHeight]
+0x19471d0cc  __TEXT,__text  -[NSParagraphStyleExtraData init]
+0x19471d110  __TEXT,__text  -[NSCoreTypesetter requiresCTLineRef]
+0x19471d128  __TEXT,__text  -[__NSFontExtraData hash]
+0x19471d170  __TEXT,__text  -[_UICache objectForKey:]
+0x19471d18c  __TEXT,__text  -[NSTypesetter setAttributedString:]
+0x19471d1c8  __TEXT,__text  +[_UIFontCacheKey newSystemFontCacheKeyWithDesign:weight:width:pointSize:monospacedDigits:]
+0x19471d270  __TEXT,__text  +[NSTextGraphicsContextProvider textGraphicsContextProviderClass]
+0x19471d2a8  __TEXT,__text  +[_NSUIKitTextGraphicsContext sharedContext]
+0x19471d2e0  __TEXT,__text  +[NSTextGraphicsContextProvider textGraphicsContextProviderClass].cold.1
+0x19471d2f4  __TEXT,__text  +[_NSUIKitTextGraphicsContext sharedContext].cold.1
+0x19471d308  __TEXT,__text  -[_NSCoreTypesetterLayoutCache getCTLine:attachmentLayoutContext:lineValidForDrawing:]
+0x19471d370  __TEXT,__text  ___attributedStringAtKeyframe_block_invoke
+0x19471d38c  __TEXT,__text  ___NSCoreTypesetterCreateBaseLineFromAttributedString
+0x19471d824  __TEXT,__text  ___NSValidateCoreTextAttributes
+0x19471db5c  __TEXT,__text  -[NSAttributeDictionary __apply:context:]
+0x19471dc00  __TEXT,__text  -[UIFont renderingMode]
+0x19471dc08  __TEXT,__text  __flushFactorFromAlignment
+0x19471dcb4  __TEXT,__text  ___NSCoreTypesetterTruncateLine
+0x19471e0a0  __TEXT,__text  ___NSCoreTypesetterRenderLineAndAttachments
+0x19471e338  __TEXT,__text  __NSCoreTypesetterRenderLine
+0x19471e578  __TEXT,__text  -[_NSCoreTypesetterLayoutCache setCTLine:attachmentLayoutContext:validForDrawing:]
+0x19471e5f8  __TEXT,__text  -[UICTFont isEqual:]
+0x19471e678  __TEXT,__text  -[NSAttributedString(NSExtendedStringDrawing) drawWithRect:options:context:]
+0x19471e73c  __TEXT,__text  _____NSStringDrawingEngine_block_invoke
+0x19471e7b8  __TEXT,__text  +[UIFontDescriptor _createMungledDictionary:]
+0x19471e88c  __TEXT,__text  -[UIFontDescriptor initWithFontAttributes:]
+0x19471e894  __TEXT,__text  -[UIFontDescriptor dealloc]
+0x19471e8e0  __TEXT,__text  +[UIFontDescriptor fontDescriptorWithFontAttributes:]
+0x19471e910  __TEXT,__text  +[_NSAttributedStringIntentResolver attributedStringByResolvingString:]
+0x19471e96c  __TEXT,__text  +[NSStringDrawingTextStorage _hasCustomSettings]
+0x19471e978  __TEXT,__text  +[UIFont preferredFontForTextStyle:compatibleWithTraitCollection:]
+0x19471e9d0  __TEXT,__text  -[UIFontDescriptor _swapWithFontAttributes:options:]
+0x19471ea20  __TEXT,__text  ___NSStringDrawingEngine.cold.2
+0x19471ea34  __TEXT,__text  ___NSUltraFastLineBreakFinder.cold.1
+0x19471ea48  __TEXT,__text  -[NSCoreTypesetter isSimpleRectangularTextContainerForStartingCharacterAtIndex:].cold.1
+0x19471ea5c  __TEXT,__text  +[NSCoreTypesetter _allowsFontOverridingTextAttachmentVerticalMetricsForStringDrawing].cold.1
+0x19471ea70  __TEXT,__text  +[NSCoreTypesetter resolvesIndentationWritingDirectionWithBaseWritingDirection]
+0x19471eaa8  __TEXT,__text  +[NSCoreTypesetter _allowsFontOverridingTextAttachmentVerticalMetricsForStringDrawing]
+0x19471eae0  __TEXT,__text  +[NSCoreTypesetter resolvesIndentationWritingDirectionWithBaseWritingDirection].cold.1
+0x19471eaf4  __TEXT,__text  -[UIFont _defaultLineHeightForUILayout]
+0x19471eaf8  __TEXT,__text  -[NSParagraphStyle minimumLineHeight]
+0x19471eb00  __TEXT,__text  -[NSParagraphStyle firstLineHeadIndent]
+0x19471eb08  __TEXT,__text  -[NSParagraphStyle maximumLineHeight]
+0x19471eb10  __TEXT,__text  -[NSParagraphStyle _isSuitableForFastStringDrawingWithAlignment:mirrorsTextAlignment:lineBreakMode:tighteningFactorForTruncation:]
+0x19471ee84  __TEXT,__text  -[NSParagraphStyle hyphenationFactor]
+0x19471eef8  __TEXT,__text  +[UIFont fontWithDescriptor:size:]
+0x19471ef10  __TEXT,__text  -[NSAttributeDictionary objectForKey:]
+0x19471f06c  __TEXT,__text  +[NSParagraphStyle defaultParagraphStyle]
+0x19471f0a4  __TEXT,__text  +[NSParagraphStyle defaultParagraphStyle].cold.1
+0x19471f0b8  __TEXT,__text  -[NSTextLayoutManager enumerateTextLayoutFragmentsFromLocation:options:usingBlock:]
+0x19471f860  __TEXT,__text  ___83-[NSTextLayoutManager enumerateTextLayoutFragmentsFromLocation:options:usingBlock:]_block_invoke
+0x19471ff20  __TEXT,__text  -[NSTextLayoutManager ensureLayoutForRange:]
+0x194720044  __TEXT,__text  -[NSTextLayoutManager textContainerForLocation:]
+0x1947200a8  __TEXT,__text  -[NSTextLayoutManager maximumNumberOfLinesForLastContainer]
+0x194720114  __TEXT,__text  ___83-[NSTextLayoutManager enumerateTextLayoutFragmentsFromLocation:options:usingBlock:]_block_invoke_3
+0x194720510  __TEXT,__text  ___NSTextLayoutManagerGetTextContainerEntryAndIndexForLocation
+0x19472065c  __TEXT,__text  ___76-[NSTextLayoutManager enumerateTextSegmentsInRange:type:options:usingBlock:]_block_invoke
+0x19472066c  __TEXT,__text  -[NSTextLayoutManager _enumerateTextSegmentAndCategoryInRange:type:options:allowsZeroWidthExtensions:usingBlock:]
+0x194720d3c  __TEXT,__text  ___NSTextLayoutManagerFillSoftInvalidationToLocation
+0x19472132c  __TEXT,__text  ___44-[NSTextLayoutManager ensureLayoutForRange:]_block_invoke
+0x194721334  __TEXT,__text  ___113-[NSTextLayoutManager _enumerateTextSegmentAndCategoryInRange:type:options:allowsZeroWidthExtensions:usingBlock:]_block_invoke_6
+0x1947213d4  __TEXT,__text  ___82-[NSTextLayoutManager enumerateTextLayoutFragmentsInTextRange:options:usingBlock:]_block_invoke
+0x1947214d8  __TEXT,__text  -[NSStringDrawingContext applicationFrameworkContext]
+0x1947214e4  __TEXT,__text  +[UIFontDescriptor preferredFontDescriptorWithTextStyle:]
+0x194721530  __TEXT,__text  -[NSString(NSStringDrawing) sizeWithAttributes:]
+0x1947215c0  __TEXT,__text  -[NSStringDrawingContext setBaselineOffset:]
+0x1947215c8  __TEXT,__text  -[UIFontDescriptor fontDescriptorWithSymbolicTraits:]
+0x1947215d0  __TEXT,__text  +[_NSCachedAttributedString allocWithZone:]
+0x19472167c  __TEXT,__text  -[_NSCachedAttributedString release]
+0x1947217f0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1947217fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x194721814  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x194721828  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x194721834  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x194721840  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x194721854  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x19472186c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x194721880  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x19472188c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1947218a0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1947218bc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1947218d0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1947218e4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1947218fc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x194721908  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19472191c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x194721930  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19472193c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x194721950  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19472195c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x194721970  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x194721984  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x19472199c  __TEXT,__text  ___NSStringDrawingEngine.cold.1
+0x1947219b0  __TEXT,__text  _____NSSharedStringDrawingContext_block_invoke
+0x1947219d8  __TEXT,__text  ___41+[NSParagraphStyle defaultParagraphStyle]_block_invoke
+0x194721a04  __TEXT,__text  -[NSShadow copyWithZone:]
+0x194721a3c  __TEXT,__text  -[UICTFontDescriptor isEqual:]
+0x194721a80  __TEXT,__text  -[UICTFontDescriptor fontDescriptorByAddingAttributes:]
+0x194721acc  __TEXT,__text  -[NSStringDrawingContext setLayout:]
+0x194721ad4  __TEXT,__text  +[_UIFontCacheKey newSystemFontCacheKeyWithTraits:pointSize:width:]
+0x194721b5c  __TEXT,__text  ___55-[UIFont _scaledValueForValue:useLanguageAwareScaling:]_block_invoke
+0x194721bcc  __TEXT,__text  +[UIFontDescriptor preferredFontDescriptorWithTextStyle:compatibleWithTraitCollection:]
+0x194721c2c  __TEXT,__text  ___UIGetLegibilityWeight
+0x194721c3c  __TEXT,__text  +[UIFont _readableWidth]
+0x194721cfc  __TEXT,__text  ___24+[UIFont _readableWidth]_block_invoke
+0x194721da4  __TEXT,__text  _initUIContentSizeCategoryDidChangeNotification
+0x194721df8  __TEXT,__text  ___24+[UIFont _readableWidth]_block_invoke_2
+0x194721e48  __TEXT,__text  -[UIFont readableWidth]
+0x194721fcc  __TEXT,__text  -[NSShadow hash]
+0x194722004  __TEXT,__text  _____NSUltraFastLineBreakFinder_block_invoke
+0x19472207c  __TEXT,__text  +[NSTypesetter initialize]
+0x194722198  __TEXT,__text  +[NSLayoutManager initialize]
+0x194722340  __TEXT,__text  +[NSStringDrawingTextStorage initialize]
+0x19472238c  __TEXT,__text  ___79+[NSCoreTypesetter resolvesIndentationWritingDirectionWithBaseWritingDirection]_block_invoke
+0x1947223d8  __TEXT,__text  ___86+[NSCoreTypesetter _allowsFontOverridingTextAttachmentVerticalMetricsForStringDrawing]_block_invoke
+0x194722400  __TEXT,__text  ___80-[NSCoreTypesetter isSimpleRectangularTextContainerForStartingCharacterAtIndex:]_block_invoke
+0x194722434  __TEXT,__text  ___65+[NSTextGraphicsContextProvider textGraphicsContextProviderClass]_block_invoke
+0x194722474  __TEXT,__text  ___44+[_NSUIKitTextGraphicsContext sharedContext]_block_invoke
+0x19472249c  __TEXT,__text  _initUIGraphicsGetCurrentContext
+0x1947224dc  __TEXT,__text  _initUIGraphicsGetCurrentContext
+0x19472251c  __TEXT,__text  -[UIFont(UIFont_AttributedStringDrawing) applyToGraphicsContext:]
+0x1947225e8  __TEXT,__text  -[UIFont(UIFont_AttributedStringDrawing) _textMatrixTransformForContext:]
+0x194722688  __TEXT,__text  -[UIFont isVertical]
+0x19472268c  __TEXT,__text  -[NSTypesetter applicationFrameworkContext]
+0x1947226bc  __TEXT,__text  ___180-[NSCoreTypesetter _stringDrawingCoreTextEngineWithOriginalString:rect:padding:graphicsContext:forceClipping:attributes:stringDrawingOptions:drawingContext:stringDrawingInterface:]_block_invoke
+0x1947226d8  __TEXT,__text  ___180-[NSCoreTypesetter _stringDrawingCoreTextEngineWithOriginalString:rect:padding:graphicsContext:forceClipping:attributes:stringDrawingOptions:drawingContext:stringDrawingInterface:]_block_invoke_4
+0x19472275c  __TEXT,__text  -[NSCoreTypesetter forcedLineBreaks]
+0x19472276c  __TEXT,__text  -[NSParagraphStyle textLists]
+0x19472278c  __TEXT,__text  ___NSValidateCoreTextAttributes.cold.1
+0x1947227a0  __TEXT,__text  -[NSParagraphStyle textBlocks]
+0x1947227c0  __TEXT,__text  -[NSParagraphStyle tailIndent]
+0x1947227c8  __TEXT,__text  -[NSMutableParagraphStyle setHorizontalAlignment:]
+0x194722844  __TEXT,__text  -[NSParagraphStyle defaultTabInterval]
+0x19472284c  __TEXT,__text  -[NSParagraphStyle copyWithZone:]
+0x194722850  __TEXT,__text  _rangeOfParagraphSeparatorAtIndex
+0x1947229d0  __TEXT,__text  -[NSCoreTypesetter _shouldShowLineBadges]
+0x194722a08  __TEXT,__text  -[NSCoreTypesetter _shouldShowLineBadges].cold.1
+0x194722a1c  __TEXT,__text  -[UIFont _leading]
+0x194722a20  __TEXT,__text  -[NSParagraphStyle lineSpacing]
+0x194722a28  __TEXT,__text  -[_UICache setObject:forKey:]
+0x194722aa0  __TEXT,__text  +[NSTypesetter defaultStringDrawingTypesetterBehavior]
+0x194722aac  __TEXT,__text  -[NSStringDrawingContext setMaximumNumberOfLines:]
+0x194722ab4  __TEXT,__text  -[NSTypesetter _allocateAuxData]
+0x194722b0c  __TEXT,__text  -[NSCoreTypesetter laidOutLineFragment]
+0x194722b1c  __TEXT,__text  -[NSStringDrawingContext layout]
+0x194722b24  __TEXT,__text  -[NSCoreTypesetter setLayoutOrientation:]
+0x194722b38  __TEXT,__text  +[NSTypesetter defaultTypesetterBehavior]
+0x194722b44  __TEXT,__text  +[NSParagraphArbitrator _languageCategoryForLanguageCode:]
+0x194722d08  __TEXT,__text  -[NSParagraphArbitrator _preferredLanguageForCharacterAtIndex:]
+0x194722e20  __TEXT,__text  +[NSParagraphArbitrator _lineBreakStyleForFont:]
+0x194722f64  __TEXT,__text  -[NSParagraphArbitrator _shouldUseOptimalLayout]
+0x194723110  __TEXT,__text  -[NSParagraphArbitrator adjustedLineBreakIndexForProposedIndex:]
+0x1947231c4  __TEXT,__text  -[NSParagraphArbitrator _firstFitLineBreakContextBeforeIndex:lineFragmentWidth:range:]
+0x194723b08  __TEXT,__text  -[NSParagraphArbitrator _lineBreakStyleForLastResortHyphenation:]
+0x194723c5c  __TEXT,__text  __NSDisposeBreakIterator
+0x194723d30  __TEXT,__text  -[NSParagraphArbitrator resetBreaker]
+0x194723d80  __TEXT,__text  +[NSParagraphArbitrator _hyphenatesAsLastResort]
+0x194723db8  __TEXT,__text  ___NSCreateNormalizedLanguage
+0x194723e80  __TEXT,__text  __NSCopyBreakIterator
+0x19472419c  __TEXT,__text  _defaultBreakLanguage
+0x1947241d4  __TEXT,__text  -[NSParagraphArbitrator prepareBreakIteratorForCharacterAtIndex:]
+0x194724308  __TEXT,__text  +[NSParagraphArbitrator _lineBreakStyleForFont:].cold.1
+0x19472431c  __TEXT,__text  -[NSParagraphArbitrator _lineBreakStyleForLastResortHyphenation:].cold.1
+0x194724330  __TEXT,__text  -[NSParagraphArbitrator _shouldUseOptimalLayout].cold.1
+0x194724344  __TEXT,__text  -[NSParagraphArbitrator adjustedLineBreakIndexForProposedIndex:].cold.1
+0x194724358  __TEXT,__text  -[NSParagraphArbitrator _preferredLanguageForCharacterAtIndex:].cold.1
+0x19472436c  __TEXT,__text  -[NSParagraphArbitrator _firstFitLineBreakContextBeforeIndex:lineFragmentWidth:range:].cold.1
+0x194724380  __TEXT,__text  +[NSParagraphArbitrator _hyphenatesAsLastResort].cold.1
+0x194724394  __TEXT,__text  __NSCopyBreakIterator.cold.1
+0x1947243a8  __TEXT,__text  _defaultBreakLanguage.cold.1
+0x1947243bc  __TEXT,__text  -[NSTextContainer isSimpleRectangularTextContainer]
+0x19472443c  __TEXT,__text  -[NSTextRange initWithLocation:endLocation:].cold.1
+0x194724450  __TEXT,__text  -[NSTextLayoutManager usesContiguousLayout]
+0x1947244fc  __TEXT,__text  -[NSTextContentStorage attributedString]
+0x19472451c  __TEXT,__text  -[NSTextRange initWithLocation:endLocation:]
+0x1947246e8  __TEXT,__text  -[NSTextContentManager synchronizeTextLayoutManagers:]
+0x194724790  __TEXT,__text  ___54-[NSTextContentManager synchronizeTextLayoutManagers:]_block_invoke
+0x194724804  __TEXT,__text  ___NSTextLayoutManagerGetTextContainerEntryAtIndex
+0x194724890  __TEXT,__text  -[NSTextRange dealloc]
+0x1947248e4  __TEXT,__text  -[NSTextStorage coordinateReading:]
+0x194724948  __TEXT,__text  -[NSTextLayoutManager textContainers]
+0x194724a5c  __TEXT,__text  ___NSConcreteTextStorageLockedForwarding
+0x194724b3c  __TEXT,__text  -[NSTextContainer textViewportLayoutController]
+0x194724bb4  __TEXT,__text  -[NSTextStorage coordinateEditing:]
+0x194724c34  __TEXT,__text  -[NSConcreteTextStorage addAttribute:value:range:]
+0x194724ca8  __TEXT,__text  ___50-[NSConcreteTextStorage addAttribute:value:range:]_block_invoke
+0x194724d74  __TEXT,__text  -[NSTextLayoutManager delegate]
+0x194724db0  __TEXT,__text  -[NSTextContainer exclusionPaths]
+0x194724dc8  __TEXT,__text  -[NSTextLayoutManager applicationFrameworkContext]
+0x194724dfc  __TEXT,__text  -[NSTextLayoutManager documentRange]
+0x194724e94  __TEXT,__text  -[NSTextLayoutManager textContainerChangedGeometry:]
+0x1947251c8  __TEXT,__text  +[UIFont systemFontSize]
+0x1947251d4  __TEXT,__text  -[NSTextStorage editedMask]
+0x1947251e8  __TEXT,__text  -[NSTextContentStorage _hasAnchoredTextAttachments]
+0x1947251f4  __TEXT,__text  -[NSTextLayoutManager _invalidateTextParagraphForEmptyDocument]
+0x1947252b0  __TEXT,__text  -[NSTextContainer setTextView:]
+0x1947253c4  __TEXT,__text  -[NSTextLayoutManager hasNonSimpleRectangularTextContainer]
+0x1947254b4  __TEXT,__text  -[NSTextLayoutManager textContainer]
+0x1947254d0  __TEXT,__text  -[NSTextContainer _resizeAccordingToTextView:]
+0x194725574  __TEXT,__text  -[NSConcreteTextStorage setAttributes:range:]
+0x1947255e4  __TEXT,__text  ___45-[NSConcreteTextStorage setAttributes:range:]_block_invoke
+0x1947256ec  __TEXT,__text  -[NSTextLayoutManager setBreaksLinesForInteractiveText:]
+0x1947256f4  __TEXT,__text  -[NSTextLayoutManager invalidateLayoutForRange:]
+0x194725740  __TEXT,__text  -[NSTextLayoutManager textContentManager]
+0x194725748  __TEXT,__text  -[NSTextLayoutManager textViewportLayoutController]
+0x194725764  __TEXT,__text  -[NSTextLayoutManager _textViewportLayoutControllerForTextContainer:]
+0x1947257e8  __TEXT,__text  -[NSTextLayoutManager setPlatformDelegate:]
+0x194725878  __TEXT,__text  -[NSTextLayoutManager setLimitsLayoutForSuspiciousContents:]
+0x1947258e4  __TEXT,__text  -[NSTextLayoutManager setResolvesNaturalAlignmentWithBaseWritingDirection:]
+0x1947258ec  __TEXT,__text  -[NSTextContainer setLineFragmentPadding:]
+0x194725944  __TEXT,__text  -[NSTextStorage setEnsuresFixingAttributes:]
+0x194725958  __TEXT,__text  -[NSTextContainer _commonInit]
+0x1947259d0  __TEXT,__text  -[NSTextStorage setTextStorageObserver:]
+0x194725a5c  __TEXT,__text  +[NSTextContainer initialize]
+0x194725ab4  __TEXT,__text  +[NSCountableTextLocation initialize]
+0x194725b08  __TEXT,__text  -[NSTextContainer maximumNumberOfLines]
+0x194725b10  __TEXT,__text  -[NSTextStorage endEditing]
+0x194725bc0  __TEXT,__text  -[NSTextStorage textStorageObserver]
+0x194725bd0  __TEXT,__text  -[NSTextStorage beginEditing]
+0x194725c2c  __TEXT,__text  -[NSTextStorage ensuresFixingAttributes]
+0x194725c44  __TEXT,__text  -[NSTextStorage _lockForWriting]
+0x194725c4c  __TEXT,__text  -[NSTextContainer size]
+0x194725c54  __TEXT,__text  -[NSTextContainer textView]
+0x194725c5c  __TEXT,__text  -[NSTextContainer setTextLayoutManager:]
+0x194725d18  __TEXT,__text  -[NSTextContainer textLayoutManager]
+0x194725d20  __TEXT,__text  -[NSTextContainer initWithSize:]
+0x194725d88  __TEXT,__text  -[NSAttributedString(NSAttributedStringUIFoundationAdditions) _isStringDrawingTextStorage]
+0x194725d90  __TEXT,__text  +[NSTextContentStorage _includesTextListMarkers].cold.1
+0x194725da4  __TEXT,__text  -[NSConcreteTextStorage init]
+0x194725e5c  __TEXT,__text  +[NSTextStorage allocWithZone:]
+0x194725eb4  __TEXT,__text  -[NSTextStorage init]
+0x194725ff8  __TEXT,__text  +[NSTextContentStorage _includesTextListMarkers]
+0x194726030  __TEXT,__text  -[NSTextContentStorage init]
+0x1947260a4  __TEXT,__text  -[NSTextContentManager init]
+0x194726108  __TEXT,__text  +[NSTextContentManager defaultBaseWritingDirectionResolutionStrategy].cold.1
+0x19472611c  __TEXT,__text  +[NSTextContentManager defaultBaseWritingDirectionResolutionStrategy]
+0x194726154  __TEXT,__text  -[NSTextContentStorage setTextStorage:]
+0x194726208  __TEXT,__text  -[NSTextContentStorage setAttributedString:]
+0x1947263ec  __TEXT,__text  ___NSTextContentStorageEnumerateCachedElementsInElementIndexRange
+0x1947264bc  __TEXT,__text  -[NSTextStorage _setShouldSetOriginalFontAttribute:]
+0x1947264d0  __TEXT,__text  ___43+[NSConcreteTextStorage _writerCountTSDKey]_block_invoke
+0x194726510  __TEXT,__text  +[NSStorage initialize]
+0x19472655c  __TEXT,__text  +[NSTextList includesTextListMarkers]
+0x194726594  __TEXT,__text  -[NSTextStorage _isSwiftAttributedString]
+0x1947265ac  __TEXT,__text  -[NSTextLayoutManager init]
+0x194726618  __TEXT,__text  -[NSTextLayoutManager setDelegate:]
+0x194726714  __TEXT,__text  +[NSTextLayoutManager usesHyphenation]
+0x19472674c  __TEXT,__text  -[NSTextLayoutManager _removeTextContainersToCondition:]
+0x194726858  __TEXT,__text  -[NSTextLayoutManager _commonInit]
+0x194726894  __TEXT,__text  -[NSTextLayoutManager setTextContainer:]
+0x1947268f4  __TEXT,__text  -[NSTextLayoutManager setTextContentManager:]
+0x1947269d0  __TEXT,__text  -[NSTextLayoutManager _addTextContainer:]
+0x194726a4c  __TEXT,__text  ___NSTextLayoutManagerAddTextContainerEntry
+0x194726b30  __TEXT,__text  +[NSTextLayoutManager usesHyphenation].cold.1
+0x194726b44  __TEXT,__text  -[NSTextLayoutManager setUsesFontLeading:]
+0x194726bb0  __TEXT,__text  ___45-[NSTextLayoutManager setTextContentManager:]_block_invoke
+0x194726bfc  __TEXT,__text  +[NSRunStorage initialize]
+0x194726c48  __TEXT,__text  ___48+[NSTextContentStorage _includesTextListMarkers]_block_invoke
+0x194726cb0  __TEXT,__text  +[NSTextList initialize]
+0x194726cf8  __TEXT,__text  ___37+[NSTextList includesTextListMarkers]_block_invoke
+0x194726d68  __TEXT,__text  +[NSTextList includesTextListMarkers].cold.1
+0x194726d7c  __TEXT,__text  ___69+[NSTextContentManager defaultBaseWritingDirectionResolutionStrategy]_block_invoke
+0x194726dbc  __TEXT,__text  ___38+[NSTextLayoutManager usesHyphenation]_block_invoke
+0x194726df0  __TEXT,__text  +[NSCountableTextRange initialize]
+0x194726e44  __TEXT,__text  ___44-[NSTextRange initWithLocation:endLocation:]_block_invoke
+0x194726e80  __TEXT,__text  -[NSTextContentStorage offsetFromLocation:toLocation:]
+0x194726f8c  __TEXT,__text  -[NSTextContentManager setPrimaryTextLayoutManager:]
+0x194727018  __TEXT,__text  -[NSTextContentStorage endEditingTransaction]
+0x194727020  __TEXT,__text  -[NSTextContentStorage beginEditingTransaction]
+0x194727028  __TEXT,__text  -[NSTextContentStorage synchronizeTextLayoutManagers:]
+0x194727188  __TEXT,__text  -[NSTextContentStorage documentRange]
+0x194727208  __TEXT,__text  -[NSTextContentStorage _commonInitialization]
+0x1947272c4  __TEXT,__text  -[NSTextContentManager addTextLayoutManager:]
+0x194727340  __TEXT,__text  -[NSTextContentStorage _supportsTextAttributesInRange:]
+0x1947274a4  __TEXT,__text  -[NSTextContentStorage textStorage]
+0x1947274ac  __TEXT,__text  -[UINibDecoder initForReadingWithData:error:]
+0x194727600  __TEXT,__text  -[UINibDecoder validateAndIndexData:error:]
+0x194727874  __TEXT,__text  -[UINibDecoder validateAndIndexClasses:length:]
+0x194727c28  __TEXT,__text  -[UINibStringIDTable initWithKeysTransferingOwnership:count:]
+0x194727d28  __TEXT,__text  _UIReadNibArchiveVInt32
+0x194727ea4  __TEXT,__text  -[UINibDecoder validateAndIndexKeys:length:]
+0x1947280cc  __TEXT,__text  -[UINibDecoder validateAndIndexValues:length:]
+0x1947284ac  __TEXT,__text  -[UINibDecoder decodeObjectForKey:]
+0x19472862c  __TEXT,__text  _UINibDecoderDecodeObjectForValue
+0x194728c2c  __TEXT,__text  -[UINibDecoder containsValueForKey:]
+0x194728d90  __TEXT,__text  -[UINibDecoder decodeBytesForKey:returnedLength:]
+0x194728f74  __TEXT,__text  -[UINibStringIDTable lookupKey:identifier:]
+0x19472903c  __TEXT,__text  +[NSGlyphInfo initialize]
+0x194729090  __TEXT,__text  _UINibDecoderDecodeDictionary
+0x1947292e4  __TEXT,__text  -[UINibDecoder decodeUIEdgeInsetsForKey:]
+0x194729358  __TEXT,__text  -[UINibDecoder validateAndIndexObjects:length:]
+0x194729718  __TEXT,__text  -[UINibStringIDTable count]
+0x194729720  __TEXT,__text  -[UINibDecoder replaceObject:withObject:]
+0x194729784  __TEXT,__text  -[UINibDecoder decodeBoolForKey:]
+0x19472999c  __TEXT,__text  -[UINibDecoder decodeIntegerForKey:]
+0x194729bac  __TEXT,__text  -[UINibDecoder decodeCGRectForKey:]
+0x194729c20  __TEXT,__text  -[UINibDecoder decodeArrayOfCGFloats:count:forKey:]
+0x194729d28  __TEXT,__text  -[UINibDecoder decodeCGPointForKey:]
+0x194729d94  __TEXT,__text  -[UINibDecoder decodeCGAffineTransformForKey:]
+0x194729e24  __TEXT,__text  -[UINibDecoder allowsKeyedCoding]
+0x194729e2c  __TEXT,__text  +[UIFont _preferredFontForTextStyle:variant:]
+0x194729e40  __TEXT,__text  +[UIFont _preferredFontForTextStyle:design:variant:maximumContentSizeCategory:compatibleWithTraitCollection:]
+0x194729e58  __TEXT,__text  +[UIFont _preferredFontForTextStyle:design:variant:weight:maximumContentSizeCategory:compatibleWithTraitCollection:pointSize:pointSizeForScaling:]
+0x194729ea0  __TEXT,__text  -[UICTFontDescriptor hash]
+0x194729ea4  __TEXT,__text  -[UIFontDescriptor fontDescriptorWithDesign:]
+0x19472a068  __TEXT,__text  +[NSConcreteTextStorage _writerCountTSDKey]
+0x19472a0f8  __TEXT,__text  _initUIContentSizeCategoryUnspecified
+0x19472a14c  __TEXT,__text  +[UIFont _preferredFontForTextStyle:maximumContentSizeCategory:]
+0x19472a154  __TEXT,__text  +[UIFont _preferredFontForTextStyle:maximumContentSizeCategory:compatibleWithTraitCollection:]
+0x19472a1e8  __TEXT,__text  _UIContentSizeCategoryUnspecifiedFunction
+0x19472a1f4  __TEXT,__text  -[NSStringDrawingContext setCuiStyleEffects:]
+0x19472a1fc  __TEXT,__text  -[NSStringDrawingContext setWantsNumberOfLineFragments:]
+0x19472a210  __TEXT,__text  -[NSStringDrawingContext setWantsScaledLineHeight:]
+0x19472a230  __TEXT,__text  -[_UIFontDescriptorCacheKey setPointSize:]
+0x19472a238  __TEXT,__text  +[NSTextAttachment registerTextAttachmentClass:forFileType:]
+0x19472a2c8  __TEXT,__text  -[UIFont pointSizeForScaling]
+0x19472a2f4  __TEXT,__text  -[UIFont maximumPointSizeAfterScaling]
+0x19472a320  __TEXT,__text  -[UINibDecoder finishDecoding]
+0x19472a3ac  __TEXT,__text  -[UINibDecoder dealloc]
+0x19472a544  __TEXT,__text  _UIFreeMissingClasses
+0x19472a5a0  __TEXT,__text  -[UINibStringIDTable dealloc]
+0x19472a620  __TEXT,__text  -[UINibDecoder decodeFloatForKey:]
+0x19472a7e4  __TEXT,__text  -[NSTypesetter setTypesetterBehavior:]
+0x19472a824  __TEXT,__text  -[NSStringDrawingContext activeRenderers]
+0x19472a830  __TEXT,__text  -[NSStringDrawingContext setWrapsForTruncationMode:]
+0x19472a850  __TEXT,__text  -[NSCoreTypesetter allowsFontSubstitutionAffectingVerticalMetrics]
+0x19472a868  __TEXT,__text  -[NSStringDrawingContext numberOfLineFragments]
+0x19472a870  __TEXT,__text  -[NSStringDrawingContext baselineOffset]
+0x19472a878  __TEXT,__text  -[NSStringDrawingContext wantsBaselineOffset]
+0x19472a884  __TEXT,__text  -[NSStringDrawingContext firstBaselineOffset]
+0x19472a88c  __TEXT,__text  -[NSStringDrawingContext wantsNumberOfLineFragments]
+0x19472a898  __TEXT,__text  -[NSStringDrawingContext maximumNumberOfLines]
+0x19472a8a0  __TEXT,__text  -[NSStringDrawingContext setFirstBaselineOffset:]
+0x19472a8a8  __TEXT,__text  -[NSCoreTypesetter truncatedRanges]
+0x19472a8b8  __TEXT,__text  -[NSShadow initWithShadow:]
+0x19472a990  __TEXT,__text  -[NSCoreTypesetter setFallbackBaseWritingDirection:]
+0x19472a9a4  __TEXT,__text  -[NSStringDrawingContext wantsMultilineDeviceMetrics]
+0x19472a9b0  __TEXT,__text  -[NSCoreTypesetter _paragraphStyleFromAttributes:]
+0x19472aa00  __TEXT,__text  -[NSShadow dealloc]
+0x19472aa4c  __TEXT,__text  -[NSCoreTypesetter containerBreakMode]
+0x19472aa60  __TEXT,__text  -[NSStringDrawingContext cachesLayout]
+0x19472aa6c  __TEXT,__text  ___84-[NSAttributedString(NSExtendedStringDrawing) boundingRectWithSize:options:context:]_block_invoke
+0x19472aa94  __TEXT,__text  -[NSAttributedString(NSExtendedStringDrawing) boundingRectWithSize:options:context:].cold.1
+0x19472aabc  __TEXT,__text  -[NSTypesetter setApplicationFrameworkContext:]
+0x19472ab08  __TEXT,__text  -[UIFontDescriptor pointSize]
+0x19472ab3c  __TEXT,__text  -[_UIFontSystemCacheKey setPointSize:]
+0x19472ab44  __TEXT,__text  +[UIFont boldSystemFontOfSize:]
+0x19472ab4c  __TEXT,__text  -[NSTypesetter usesFontLeading]
+0x19472ab7c  __TEXT,__text  -[UIFont _fontScaledLikeTextStyle:maximumPointSize:compatibleWithTraitCollection:forIB:]
+0x19472ad24  __TEXT,__text  +[UIFont _pointSize:scaledLikeTextStyle:maximumPointSize:compatibleWithTraitCollection:]
+0x19472ad2c  __TEXT,__text  +[UIFont _pointSize:scaledLikeTextStyle:maximumPointSize:compatibleWithTraitCollection:roundSize:]
+0x19472ad8c  __TEXT,__text  -[NSStringDrawingContext setCachesLayout:]
+0x19472adc4  __TEXT,__text  -[UIFontDescriptor symbolicTraits]
+0x19472adc8  __TEXT,__text  -[NSAttributeDictionary count]
+0x19472addc  __TEXT,__text  -[NSCoreTypesetter _fallbackWritingDirection]
+0x19472ae30  __TEXT,__text  -[NSAttributedString _ui_attributedStringScaledByScaleFactor:]
+0x19472aef8  __TEXT,__text  ___87-[NSAttributedString(NSExtendedStringDrawing) _ui_attributedStringScaledByScaleFactor:]_block_invoke
+0x19472afbc  __TEXT,__text  -[NSStringDrawingContext setMinimumScaleFactor:]
+0x19472afc4  __TEXT,__text  -[NSMutableParagraphStyle setFullyJustified:]
+0x19472b034  __TEXT,__text  -[NSMutableParagraphStyle setSpansAllLines:]
+0x19472b074  __TEXT,__text  -[NSMutableParagraphStyle setMaximumLineHeight:]
+0x19472b07c  __TEXT,__text  -[NSMutableParagraphStyle setLineSpacing:]
+0x19472b084  __TEXT,__text  -[NSMutableParagraphStyle setLineHeightMultiple:]
+0x19472b198  __TEXT,__text  -[NSMutableParagraphStyle setFirstLineHeadIndent:]
+0x19472b1a0  __TEXT,__text  -[NSMutableParagraphStyle setHyphenationFactor:]
+0x19472b220  __TEXT,__text  -[NSMutableParagraphStyle setMinimumLineHeight:]
+0x19472b228  __TEXT,__text  -[NSMutableParagraphStyle setSecondaryLineBreakMode:]
+0x19472b268  __TEXT,__text  -[NSMutableParagraphStyle setCompositionLanguage:]
+0x19472b2b0  __TEXT,__text  -[NSMutableParagraphStyle setParagraphSpacing:]
+0x19472b2b8  __TEXT,__text  -[NSCoreTypesetter allowsFontOverridingTextAttachmentVerticalMetrics]
+0x19472b2d0  __TEXT,__text  -[NSCoreTypesetter setEnforcesMinimumTextLineFragment:]
+0x19472b2e4  __TEXT,__text  -[NSTextAttachment init]
+0x19472b2f0  __TEXT,__text  -[NSAttributedString(NSAttributedStringAttachmentConveniences) initWithAttachment:attributes:]
+0x19472b36c  __TEXT,__text  +[NSTextAttachment imageCache]
+0x19472b3a4  __TEXT,__text  +[NSTextAttachment imageCache].cold.1
+0x19472b3b8  __TEXT,__text  ___31-[_UICache removeObjectForKey:]_block_invoke
+0x19472b3c4  __TEXT,__text  -[NSTextAttachment initWithData:ofType:]
+0x19472b488  __TEXT,__text  ___NSCoreTypesetterAdjustLineHeightAndBaselineForTextAttachments
+0x19472b5bc  __TEXT,__text  ___NSTextAttachmentLayoutInfoGetAscent
+0x19472b5ec  __TEXT,__text  -[_NSTextAttachmentLayoutContext initWithDelegate:]
+0x19472b650  __TEXT,__text  -[NSTextAttachment setImage:]
+0x19472b710  __TEXT,__text  _____NSCoreTypesetterCreateBaseLineFromAttributedString_block_invoke
+0x19472b918  __TEXT,__text  -[_NSTextAttachmentLayoutContext init]
+0x19472b920  __TEXT,__text  -[NSTextAttachment usesTextAttachmentView]
+0x19472b96c  __TEXT,__text  ___NSTextAttachmentLayoutInfoGetWidth
+0x19472b99c  __TEXT,__text  ___NSTextAttachmentLayoutInfoGetDescent
+0x19472b9d0  __TEXT,__text  -[NSTextContainer dealloc]
+0x19472ba80  __TEXT,__text  -[NSTextContainer .cxx_destruct]
+0x19472ba88  __TEXT,__text  -[_NSTextAttachmentLayoutInfo dealloc]
+0x19472baf0  __TEXT,__text  -[_NSTextAttachmentLayoutContext dealloc]
+0x19472bb4c  __TEXT,__text  -[_NSTextAttachmentLayoutContext .cxx_destruct]
+0x19472bb54  __TEXT,__text  -[NSTextAttachment dealloc]
+0x19472bc2c  __TEXT,__text  -[NSParagraphArbitrator raggednessWithCharIndexAsLineBreak:inRange:]
+0x19472bce8  __TEXT,__text  ___180-[NSCoreTypesetter _stringDrawingCoreTextEngineWithOriginalString:rect:padding:graphicsContext:forceClipping:attributes:stringDrawingOptions:drawingContext:stringDrawingInterface:]_block_invoke_6
+0x19472be24  __TEXT,__text  -[NSAttributedString(NSAttributedStringUIFoundationAdditions) nextWordFromIndex:forward:]
+0x19472c7b8  __TEXT,__text  ___NSShouldUseTokenizerForPushOut
+0x19472c824  __TEXT,__text  -[NSParagraphArbitrator prepareTokenizerForPreferredLanguage:]
+0x19472c92c  __TEXT,__text  -[NSAttributedString(NSAttributedStringUIFoundationAdditions) lineBreakByHyphenatingBeforeIndex:withinRange:]
+0x19472ca04  __TEXT,__text  -[NSTypesetter setUsesFontLeading:]
+0x19472ca54  __TEXT,__text  -[__NSFontExtraData dealloc]
+0x19472caa0  __TEXT,__text  -[_NSCachedAttributedString dealloc]
+0x19472cb68  __TEXT,__text  ___NSScaledTextOversized
+0x19472cc88  __TEXT,__text  -[NSAttributedString _ui_scaledStringWithAttributes:font:scale:]
+0x19472cd48  __TEXT,__text  +[NSTextLayoutManager _fallbackBaseWritingDirectionForApplicationFrameworkContext:]
+0x19472cd68  __TEXT,__text  -[NSCoreTypesetter isBeginningOfDocument]
+0x19472cd80  __TEXT,__text  -[NSStringDrawingContext setActiveRenderers:]
+0x19472cd98  __TEXT,__text  ___NSCoreTypesetterTruncationTokenContextDeallocate
+0x19472cde0  __TEXT,__text  -[NSAttributeDictionary mutableCopyWithZone:]
+0x19472cecc  __TEXT,__text  +[NSParagraphArbitrator _languageCategoryForLanguageCode:].cold.1
+0x19472cee0  __TEXT,__text  _____NSCoreTypesetterTruncateLine_block_invoke
+0x19472d1d8  __TEXT,__text  -[UIFont(UIFont_AttributedStringDrawing) boundingRectForFont]
+0x19472d1dc  __TEXT,__text  -[NSParagraphStyle headIndent]
+0x19472d1e4  __TEXT,__text  ___180-[NSCoreTypesetter _stringDrawingCoreTextEngineWithOriginalString:rect:padding:graphicsContext:forceClipping:attributes:stringDrawingOptions:drawingContext:stringDrawingInterface:]_block_invoke_8
+0x19472d27c  __TEXT,__text  ___180-[NSCoreTypesetter _stringDrawingCoreTextEngineWithOriginalString:rect:padding:graphicsContext:forceClipping:attributes:stringDrawingOptions:drawingContext:stringDrawingInterface:]_block_invoke_11
+0x19472d300  __TEXT,__text  -[NSParagraphArbitrator validateLineBreakContext]
+0x19472d30c  __TEXT,__text  -[NSCoreTypesetter wantsExtraLineFragment]
+0x19472d324  __TEXT,__text  -[NSCoreTypesetter _updateBidiLevelsAndBaseWritingDirectionForAttributedString:paragraphRange:]
+0x19472d4b8  __TEXT,__text  ___273-[NSCoreTypesetter _NSFastDrawString:length:attributes:paragraphStyle:typesetterBehavior:lineBreakMode:rect:padding:graphicsContext:baselineRendering:usesFontLeading:usesScreenFont:scrollable:syncAlignment:mirrored:boundingRectPointer:baselineOffsetPointer:drawingContext:]_block_invoke
+0x19472d4e0  __TEXT,__text  -[UIFont(UIFont_AttributedStringDrawing) coveredCharacterSet]
+0x19472d4fc  __TEXT,__text  -[UIFont(UIFont_AttributedStringDrawing) getAdvancements:forCGGlyphs:count:]
+0x19472d510  __TEXT,__text  -[NSCoreTypesetter layoutOrientation]
+0x19472d524  __TEXT,__text  ___NSTokenizerLanguageSet.cold.1
+0x19472d538  __TEXT,__text  ____createTokenizerLanguageSet_block_invoke
+0x19472d590  __TEXT,__text  +[NSParagraphArbitrator initialize]
+0x19472d5bc  __TEXT,__text  +[NSParagraphArbitrator initialize].cold.1
+0x19472d5d0  __TEXT,__text  ___35+[NSParagraphArbitrator initialize]_block_invoke
+0x19472d5fc  __TEXT,__text  +[NSParagraphArbitrator paragraphArbitratorWithAttributedString:range:]
+0x19472d78c  __TEXT,__text  ___41-[NSCoreTypesetter _shouldShowLineBadges]_block_invoke
+0x19472d7c0  __TEXT,__text  +[_NSCachedAttributedString initialize]
+0x19472d860  __TEXT,__text  _____NSValidateCoreTextAttributes_block_invoke
+0x19472d97c  __TEXT,__text  -[NSAttributedString(NSAttributedStringUIFoundationAdditions) lineBreakByHyphenatingBeforeIndex:withinRange:].cold.1
+0x19472d990  __TEXT,__text  -[NSParagraphStyle paragraphSpacing]
+0x19472d998  __TEXT,__text  -[NSTextContainer layoutManager]
+0x19472d9e4  __TEXT,__text  -[NSTextContainer _textViewAllowsMigratingToLayoutManager]
+0x19472da20  __TEXT,__text  ___64-[NSParagraphArbitrator adjustedLineBreakIndexForProposedIndex:]_block_invoke
+0x19472da68  __TEXT,__text  ___65-[NSParagraphArbitrator _lineBreakStyleForLastResortHyphenation:]_block_invoke
+0x19472da9c  __TEXT,__text  ___48+[NSParagraphArbitrator _lineBreakStyleForFont:]_block_invoke
+0x19472dac4  __TEXT,__text  ___63-[NSParagraphArbitrator _preferredLanguageForCharacterAtIndex:]_block_invoke
+0x19472daf4  __TEXT,__text  ___48-[NSParagraphArbitrator _shouldUseOptimalLayout]_block_invoke
+0x19472db28  __TEXT,__text  ___58+[NSParagraphArbitrator _languageCategoryForLanguageCode:]_block_invoke
+0x19472db70  __TEXT,__text  ___48+[NSParagraphArbitrator _hyphenatesAsLastResort]_block_invoke
+0x19472dba4  __TEXT,__text  ___72-[NSParagraphArbitrator _attributedStringOverridesLineBreakBeforeIndex:]_block_invoke
+0x19472dbe0  __TEXT,__text  ___86-[NSParagraphArbitrator _firstFitLineBreakContextBeforeIndex:lineFragmentWidth:range:]_block_invoke
+0x19472dc14  __TEXT,__text  ___shouldUseHangulWordPriorityWithLineBreakStrategy_block_invoke
+0x19472dcb0  __TEXT,__text  ___defaultBreakLanguage_block_invoke
+0x19472dd6c  __TEXT,__text  +[NSAttributedString(NSAttributedStringAttachmentConveniences) attributedStringWithAttachment:]
+0x19472de24  __TEXT,__text  +[NSAttributedString(NSAttributedStringAttachmentConveniences) attributedStringWithAttachment:].cold.1
+0x19472de38  __TEXT,__text  -[NSTextAttachment _setupAPIPreferences]
+0x19472e000  __TEXT,__text  -[NSTextAttachment setEmbeddingType:]
+0x19472e044  __TEXT,__text  -[NSTextAttachment setStandaloneAlignment:]
+0x19472e088  __TEXT,__text  -[NSTextAttachment setAllowsTextAttachmentView:]
+0x19472e0c8  __TEXT,__text  -[NSTextAttachment _setAllocatesTextContainer:]
+0x19472e0e8  __TEXT,__text  -[NSTextAttachment adaptiveImageGlyph]
+0x19472e20c  __TEXT,__text  -[NSTextAttachment _isEmojiImage]
+0x19472e214  __TEXT,__text  -[NSTextAttachment _cacheKey]
+0x19472e264  __TEXT,__text  -[NSTextAttachment _invalidateWrapperView]
+0x19472e298  __TEXT,__text  ___30+[NSTextAttachment imageCache]_block_invoke
+0x19472e2c0  __TEXT,__text  ___95+[NSAttributedString(NSAttributedStringAttachmentConveniences) attributedStringWithAttachment:]_block_invoke
+0x19472e2e8  __TEXT,__text  -[NSTextAttachment lineLayoutPadding]
+0x19472e2f0  __TEXT,__text  -[NSTextAttachment attachmentCell]
+0x19472e354  __TEXT,__text  -[NSTextAttachment image]
+0x19472e3a0  __TEXT,__text  -[NSTextAttachment attachmentBoundsForAttributes:location:textContainer:proposedLineFragment:position:]
+0x19472e76c  __TEXT,__text  -[NSTextAttachment bounds]
+0x19472e778  __TEXT,__text  -[NSTextAttachment textAttachmentViewProviderClass]
+0x19472e7d0  __TEXT,__text  -[NSTextAttachment fileType]
+0x19472e7d8  __TEXT,__text  -[NSTextAttachment allowsTextAttachmentView]
+0x19472e7e4  __TEXT,__text  -[NSTextAttachment _hasTextAttachmentViewCell]
+0x19472e7ec  __TEXT,__text  -[NSTextAttachment _image]
+0x19472ea18  __TEXT,__text  -[NSTextStorage setDelegate:]
+0x19472ea58  __TEXT,__text  -[NSTextStorage delegate]
+0x19472ea7c  __TEXT,__text  -[NSConcreteTextStorage dealloc]
+0x19472eb0c  __TEXT,__text  -[NSTextStorage dealloc]
+0x19472ec44  __TEXT,__text  -[_NSTextStorageSideData dealloc]
+0x19472ec94  __TEXT,__text  -[UIFontDescriptor fontDescriptorWithSymbolicTraits:mask:]
+0x19472ecb8  __TEXT,__text  -[NSTextLayoutFragment dealloc]
+0x19472ed90  __TEXT,__text  -[NSTextLineFragment dealloc]
+0x19472ee28  __TEXT,__text  -[NSTextLineFragment .cxx_destruct]
+0x19472ee30  __TEXT,__text  -[NSTextLayoutFragment .cxx_destruct]
+0x19472ee60  __TEXT,__text  -[NSTextParagraph dealloc]
+0x19472efb4  __TEXT,__text  -[NSTextElement dealloc]
+0x19472f008  __TEXT,__text  -[NSTextContainer setSize:]
+0x19472f11c  __TEXT,__text  -[NSTextContainer(NSPrivate) invalidateTextContainerOrigin]
+0x19472f138  __TEXT,__text  -[NSTextContainer layoutOrientation]
+0x19472f188  __TEXT,__text  -[NSTextContainer lineFragmentPadding]
+0x19472f190  __TEXT,__text  -[_UIFontNameCacheKey dealloc]
+0x19472f1dc  __TEXT,__text  -[NSTextContainer attributesForExtraLineFragment]
+0x19472f1e4  __TEXT,__text  _NSDefaultFont.cold.1
+0x19472f234  __TEXT,__text  -[NSTextSelectionNavigation initWithDataSource:]
+0x19472f2ec  __TEXT,__text  -[NSTextLayoutManager textSelectionNavigation]
+0x19472f354  __TEXT,__text  -[NSTextLayoutManager _estimatedTextLocationForVerticalOffset:originLocation:originOffset:deltaFromOffset:]
+0x19472fae0  __TEXT,__text  ___NSTextLayoutManagerGetLayoutFragmentForPosition
+0x19472fd94  __TEXT,__text  ___45-[NSTextLayoutManager ensureLayoutForBounds:]_block_invoke_2
+0x19472fe04  __TEXT,__text  -[NSTextLayoutManager ensureLayoutForBounds:]
+0x19473000c  __TEXT,__text  ___45-[NSTextLayoutManager ensureLayoutForBounds:]_block_invoke
+0x19473006c  __TEXT,__text  ___NSTextLayoutManagerRemoveTextLayoutFragmentsInTextRange
+0x19473052c  __TEXT,__text  -[NSTextLayoutManager usageBoundsForTextContainer]
+0x194730530  __TEXT,__text  -[NSTextLayoutManager usageBoundsForLastTextContainer]
+0x194730538  __TEXT,__text  -[NSTextLayoutManager usageBoundsInTextContainerAtIndex:]
+0x1947306e8  __TEXT,__text  ___48-[NSTextViewportLayoutController layoutViewport]_block_invoke
+0x19473072c  __TEXT,__text  ___91-[NSTextViewportLayoutController enumerateViewportElementsFromLocation:options:usingBlock:]_block_invoke
+0x1947307b8  __TEXT,__text  ___48-[NSTextViewportLayoutController layoutViewport]_block_invoke_4
+0x194730b2c  __TEXT,__text  -[NSTextLayoutManager _textContainerForCurrentEnumeratedElement]
+0x194730b50  __TEXT,__text  -[NSTextLayoutManager _textAnimationContextForLocation:]
+0x194730c58  __TEXT,__text  -[NSTextContainer textContainerOrigin]
+0x194730cd4  __TEXT,__text  -[NSConcreteTextStorage length]
+0x194730ce8  __TEXT,__text  -[NSTextLayoutManager setTextSelections:]
+0x194730ed4  __TEXT,__text  +[NSTextLayoutFragment coordinateSystemCompatibilityFor2022AndEarlierSDKEnabled]
+0x194730f0c  __TEXT,__text  -[NSTextContainer setAttributesForExtraLineFragment:]
+0x194731068  __TEXT,__text  -[NSTextLayoutManager enumerateTextLayoutFragmentsInTextRange:options:usingBlock:]
+0x194731134  __TEXT,__text  -[NSTextLayoutManager enumerateTextSegmentsInRange:type:options:usingBlock:]
+0x1947311a4  __TEXT,__text  -[NSTextLayoutManager _fallbackWritingDirection]
+0x1947311fc  __TEXT,__text  -[NSCountableTextLocation characterIndex]
+0x194731204  __TEXT,__text  +[NSTextLayoutFragment coordinateSystemCompatibilityFor2022AndEarlierSDKEnabled].cold.1
+0x194731218  __TEXT,__text  -[NSTextLayoutManager baseLocation]
+0x194731238  __TEXT,__text  -[NSTextStorage editedRange]
+0x19473124c  __TEXT,__text  -[_NSTextLayoutFragmentStorage revalidateLayoutFragmentRangeForLocation:]
+0x194731444  __TEXT,__text  -[NSTextElement initWithTextContentManager:]
+0x1947314ac  __TEXT,__text  -[NSTextElement setElementRange:]
+0x1947314b4  __TEXT,__text  ___NSTextElementGetFirstRepresentableChild
+0x1947315bc  __TEXT,__text  ___NSCoreTypesetterProcessTextLineFragment
+0x194731760  __TEXT,__text  -[NSTextElement isEndOfDocument]
+0x1947317bc  __TEXT,__text  -[_NSTextRunStorage _rangeFromTextRange:]
+0x1947318ac  __TEXT,__text  -[_NSTextRunStorage setObject:forRange:]
+0x1947319e4  __TEXT,__text  ___40-[_NSTextRunStorage setObject:forRange:]_block_invoke
+0x194731aa4  __TEXT,__text  -[_NSTextRunStorage _performCountableRunStorageOperation:]
+0x194731b4c  __TEXT,__text  ___55-[_NSTextLayoutFragmentStorage setTextLayoutFragments:]_block_invoke
+0x194731ba4  __TEXT,__text  -[NSCoreTypesetter layoutWithYOrigin:]
+0x194732070  __TEXT,__text  ___Block_byref_object_copy_
+0x194732080  __TEXT,__text  ___Block_byref_object_copy_
+0x194732090  __TEXT,__text  ___Block_byref_object_copy_
+0x1947320a0  __TEXT,__text  ___Block_byref_object_copy_
+0x1947320b0  __TEXT,__text  ___Block_byref_object_copy_
+0x1947320c0  __TEXT,__text  ___Block_byref_object_copy_
+0x1947320d0  __TEXT,__text  ___Block_byref_object_copy_
+0x1947320e0  __TEXT,__text  ___Block_byref_object_copy_
+0x1947320f0  __TEXT,__text  ___Block_byref_object_copy_
+0x194732100  __TEXT,__text  ___Block_byref_object_copy_
+0x19473210c  __TEXT,__text  ___Block_byref_object_copy_
+0x19473211c  __TEXT,__text  ___Block_byref_object_copy_
+0x19473212c  __TEXT,__text  ___Block_byref_object_copy_
+0x19473213c  __TEXT,__text  ___Block_byref_object_copy_
+0x19473214c  __TEXT,__text  ___Block_byref_object_copy_
+0x19473215c  __TEXT,__text  ___Block_byref_object_copy_
+0x19473216c  __TEXT,__text  ___Block_byref_object_copy_
+0x19473217c  __TEXT,__text  ___Block_byref_object_copy_
+0x19473218c  __TEXT,__text  ___Block_byref_object_copy_
+0x19473219c  __TEXT,__text  ___Block_byref_object_copy_
+0x1947321ac  __TEXT,__text  ___38-[NSCoreTypesetter layoutWithYOrigin:]_block_invoke
+0x19473248c  __TEXT,__text  ___38-[NSCoreTypesetter layoutWithYOrigin:]_block_invoke_2
+0x1947324b0  __TEXT,__text  -[_NSTextRunStorage _indexFromTextLocation:]
+0x194732540  __TEXT,__text  -[NSTextLineFragment initWithAttributedString:range:]
+0x1947326b4  __TEXT,__text  ___31-[NSTextLayoutFragment _layout]_block_invoke_6
+0x194732820  __TEXT,__text  ___31-[NSTextLayoutFragment _layout]_block_invoke_7
+0x194732898  __TEXT,__text  ___NSTextLayoutFragmentUpdateTotalBoundsWithTypographicBounds
+0x194732b84  __TEXT,__text  -[NSTextParagraph _resolvedBaseWritingDirectionWithFallbackDirection:]
+0x194733024  __TEXT,__text  -[NSTextLayoutManager updateLayoutWithTextLayoutFragment:addition:]
+0x19473373c  __TEXT,__text  -[_NSTextRunStorage enumerateObjectsFromLocation:options:usingBlock:]
+0x194733918  __TEXT,__text  ___69-[_NSTextRunStorage enumerateObjectsFromLocation:options:usingBlock:]_block_invoke_2
+0x194733a5c  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733a68  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733a74  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733a80  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733a8c  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733a98  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733aa4  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733ab0  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733ab8  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733ac4  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733acc  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733ad8  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733ae4  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733af0  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733afc  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733b08  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733b14  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733b20  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733b2c  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733b38  __TEXT,__text  ___Block_byref_object_dispose_
+0x194733b44  __TEXT,__text  -[NSTextLayoutManager textSelections]
+0x194733b98  __TEXT,__text  -[NSTextLayoutManager _configureCoreTypesetter:forTextParagraph:textContainer:]
+0x194733cec  __TEXT,__text  -[NSTextLayoutManager allowsFontSubstitutionAffectingVerticalMetrics]
+0x194733d20  __TEXT,__text  -[NSTextLayoutManager usesHyphenation]
+0x194733d54  __TEXT,__text  -[NSTextLayoutManager limitsLayoutForSuspiciousContents]
+0x194733d88  __TEXT,__text  -[NSTextLayoutManager requiresCTLineRef]
+0x194733d94  __TEXT,__text  -[NSTextLayoutManager _prepareAttributedString:forTextLayoutFragment:]
+0x194733d98  __TEXT,__text  -[_NSTextRunStorage baseLocation]
+0x194733da0  __TEXT,__text  -[NSTextLayoutManager breaksLinesForInteractiveText]
+0x194733dac  __TEXT,__text  -[_NSTextLayoutFragmentStorage setTextLayoutFragments:]
+0x194733e20  __TEXT,__text  -[_NSTextRunStorage initWithDataSource:]
+0x194733f14  __TEXT,__text  -[NSTextLayoutManager isCountableDataSource]
+0x194733f30  __TEXT,__text  -[NSTextLayoutManager _textParagraphForEmptyDocument]
+0x19473403c  __TEXT,__text  -[NSTextLayoutManager lastContainerFilled]
+0x1947340d4  __TEXT,__text  -[NSTextLayoutManager usesFontLeading]
+0x194734108  __TEXT,__text  -[NSTextLayoutManager _setSoftInvalidationLocation:onlyIfUpstream:]
+0x1947341a8  __TEXT,__text  -[NSTextContainer lineBreakMode]
+0x1947341b4  __TEXT,__text  -[NSAttributeDictionary copyWithZone:]
+0x1947341b8  __TEXT,__text  -[_NSTextRunStorage baseIndex]
+0x1947341e8  __TEXT,__text  -[NSTextLayoutFragment _layout]
+0x1947359d4  __TEXT,__text  -[NSTextContainer defaultParagraphStyle]
+0x194735a24  __TEXT,__text  -[NSTextViewportLayoutController textLayoutFragmentsInRect:]
+0x194735c4c  __TEXT,__text  ___60-[NSTextViewportLayoutController textLayoutFragmentsInRect:]_block_invoke
+0x194735c9c  __TEXT,__text  -[NSTextSelection dealloc]
+0x194735d00  __TEXT,__text  -[UIFont descender]
+0x194735d1c  __TEXT,__text  -[UIFont fontWithSize:]
+0x194735e08  __TEXT,__text  -[UIFont(UIFont_AttributedStringDrawing) _totalAdvancementForNativeGlyphs:count:]
+0x194735e24  __TEXT,__text  -[NSTextRange location]
+0x194735e30  __TEXT,__text  -[NSCountableTextLocation isEndOfDocument]
+0x194735e44  __TEXT,__text  -[_UIFontDescriptorCacheKey setFontDescriptor:]
+0x194735e4c  __TEXT,__text  +[NSCoreTypesetter _maximumAscentAndDescentForRuns:ascender:descender:]
+0x194735f04  __TEXT,__text  -[NSTextLayoutFragment layoutSize]
+0x194735f24  __TEXT,__text  -[NSTextLayoutFragment layoutPoint]
+0x194735f28  __TEXT,__text  -[NSTextLayoutFragment textLineFragments]
+0x194735f34  __TEXT,__text  -[_UIFontCacheKey _precalculateHash]
+0x194735f5c  __TEXT,__text  -[NSStringDrawingContext setApplicationFrameworkContext:]
+0x194735f94  __TEXT,__text  -[NSStringDrawingContext setWantsBaselineOffset:]
+0x194735fb4  __TEXT,__text  -[_UIFontDescriptorCacheKey setPointSizeForScaling:]
+0x194735fbc  __TEXT,__text  +[UIFontDescriptor preferredFontDescriptorWithTextStyle:addingSymbolicTraits:options:]
+0x194736010  __TEXT,__text  -[NSTextElement elementRange]
+0x19473601c  __TEXT,__text  -[NSTypesetter typesetterBehavior]
+0x19473604c  __TEXT,__text  -[_UIFontTextStyleCacheKey setTextLegibility:]
+0x194736054  __TEXT,__text  -[NSCountableTextLocation isEqual:]
+0x1947360e0  __TEXT,__text  -[UIFont leading]
+0x19473612c  __TEXT,__text  -[NSAttributeDictionaryEnumerator initWithAttributeDictionary:]
+0x1947361a0  __TEXT,__text  -[NSTextLayoutManager canSendViewProviderInvalidationNotification]
+0x1947361e0  __TEXT,__text  -[NSTextLayoutManager _delegateCanSendViewProviderInvalidationNotification]
+0x194736224  __TEXT,__text  -[NSTextLayoutManager _platformDelegateCanSendViewProviderInvalidationNotification]
+0x194736268  __TEXT,__text  -[NSTextLayoutManager platformDelegate]
+0x1947362a4  __TEXT,__text  -[_NSTextRunStorage dealloc]
+0x19473630c  __TEXT,__text  ___NSTextRunStorageReleaseElementContentsInRange
+0x19473636c  __TEXT,__text  +[NSTextSelectionNavigation initialize]
+0x194736398  __TEXT,__text  -[NSTextSelectionNavigation initWithDataSource:].cold.1
+0x1947363c0  __TEXT,__text  -[NSTextLayoutManager textLayoutFragmentForPosition:inTextContainerAtIndex:avoidsAdditionalLayout:]
+0x1947365c8  __TEXT,__text  -[NSTextLayoutManager textLayoutFragmentForPosition:inTextContainerAtIndex:]
+0x1947365d0  __TEXT,__text  ___visualBidiSelectionEnabled_block_invoke
+0x194736604  __TEXT,__text  -[NSTextLayoutManager rangeForTextContainerAtIndex:]
+0x19473666c  __TEXT,__text  +[NSTextViewportLayoutController flushesCachedViewportElements]
+0x1947366a4  __TEXT,__text  +[NSTextViewportLayoutController flushesCachedViewportElements].cold.1
+0x1947366b8  __TEXT,__text  ___63+[NSTextViewportLayoutController flushesCachedViewportElements]_block_invoke
+0x1947366f0  __TEXT,__text  ___NSDefaultFont_block_invoke
+0x194736764  __TEXT,__text  ___80+[NSTextLayoutFragment coordinateSystemCompatibilityFor2022AndEarlierSDKEnabled]_block_invoke
+0x1947367b4  __TEXT,__text  -[NSTextLayoutFragment textAttachmentViewProviders]
+0x1947367e0  __TEXT,__text  -[NSCountableTextLocation compare:]
+0x1947368f8  __TEXT,__text  -[NSTextRange endLocation]
+0x194736904  __TEXT,__text  -[NSTypesetter setLineFragmentPadding:]
+0x194736940  __TEXT,__text  +[NSCoreTypesetter _lineMetricsForAttributes:typesetterBehavior:usesFontLeading:applySpacings:usesSystemFontLeading:usesNegativeFontLeading:layoutOrientation:lineHeight:baselineOffset:spacing:]
+0x194736a24  __TEXT,__text  -[NSStringDrawingContext wrapsForTruncationMode]
+0x194736a30  __TEXT,__text  -[NSParagraphArbitrator attributedString]
+0x194736a38  __TEXT,__text  -[NSTextContentStorage isCountableDataSource]
+0x194736a40  __TEXT,__text  -[NSTextLayoutFragment setLayoutFragmentFrame:]
+0x194736a94  __TEXT,__text  -[NSTextLayoutFragment setState:]
+0x194736a9c  __TEXT,__text  -[NSTextLayoutFragment setTextElement:]
+0x194736b38  __TEXT,__text  -[NSTextLayoutFragment initWithTextElement:range:]
+0x194736c34  __TEXT,__text  -[NSTextLayoutFragment setTextLayoutManager:]
+0x194736c8c  __TEXT,__text  -[NSTextContentStorage enumerateTextElementsFromLocation:options:usingBlock:]
+0x194737e74  __TEXT,__text  -[NSTextLayoutFragment rangeInElement]
+0x194737f8c  __TEXT,__text  -[NSTextLayoutFragment state]
+0x194737f94  __TEXT,__text  -[NSTextLayoutFragment textElement]
+0x194737f9c  __TEXT,__text  -[NSTextLayoutFragment textLayoutManager]
+0x194737fa4  __TEXT,__text  -[NSTextLayoutFragment layoutFragmentFrame]
+0x194737ff8  __TEXT,__text  -[NSTextLineFragment setApplicationFrameworkContext:]
+0x194738000  __TEXT,__text  -[NSTextLayoutFragment setLayoutFragmentFrameOrigin:]
+0x194738064  __TEXT,__text  -[NSTextLayoutFragment estimateSize]
+0x194738234  __TEXT,__text  -[NSTextLayoutFragment representedRange]
+0x194738238  __TEXT,__text  -[NSTextLayoutFragment setLayoutPoint:]
+0x19473823c  __TEXT,__text  -[NSTextLayoutFragment renderingSurfaceBounds]
+0x194738498  __TEXT,__text  -[NSTextLineFragment boundsWithType:options:]
+0x194738700  __TEXT,__text  -[NSTextLineFragment imageBounds]
+0x194738a3c  __TEXT,__text  -[NSTextLayoutFragment layoutFragmentFrameOrigin]
+0x194738a40  __TEXT,__text  -[NSTextLineFragment glyphOrigin]
+0x194738a80  __TEXT,__text  -[NSTextLayoutFragment setExtraLineFragmentAttributes:]
+0x194738a88  __TEXT,__text  -[NSTextLineFragment typographicBounds]
+0x194738adc  __TEXT,__text  -[NSTextLineFragment characterRange]
+0x194738b18  __TEXT,__text  -[NSTextLayoutFragment leadingPadding]
+0x194738b20  __TEXT,__text  -[NSTextLayoutFragment trailingPadding]
+0x194738b28  __TEXT,__text  -[NSTextLayoutFragment layoutQueue]
+0x194738b34  __TEXT,__text  -[NSTextLayoutFragment rendersTextCorrectionMarkers]
+0x194738b40  __TEXT,__text  -[NSTextLayoutFragment topMargin]
+0x194738b48  __TEXT,__text  -[NSTextLayoutFragment bottomMargin]
+0x194738b50  __TEXT,__text  -[NSTextLayoutFragment layout]
+0x194738c04  __TEXT,__text  -[NSTextContentStorage baseWritingDirectionResolutionStrategy]
+0x194738c0c  __TEXT,__text  -[NSTextLayoutFragment extraLineFragmentAttributes]
+0x194738c18  __TEXT,__text  -[NSTextLayoutFragment keyframe]
+0x194738c24  __TEXT,__text  -[NSTextLayoutFragment forcedLineBreaks]
+0x194738c30  __TEXT,__text  -[NSTextLayoutFragment textParagraph]
+0x194738c4c  __TEXT,__text  -[NSTextLayoutFragment _textContainerAtStringIndex:]
+0x194738d3c  __TEXT,__text  -[NSTextLineFragment setRendersTextCorrectionMarkers:]
+0x194738d50  __TEXT,__text  -[NSTextLineFragment set_renderingAttributeOverridesProvider:]
+0x194738d58  __TEXT,__text  -[NSTextLineFragment invalidateCache]
+0x194738d74  __TEXT,__text  -[NSTextLineFragment setGlyphOrigin:]
+0x194738dc4  __TEXT,__text  -[NSTextLineFragment setTypographicBounds:]
+0x194738e28  __TEXT,__text  -[NSTextLineFragment setPadding:]
+0x194738e30  __TEXT,__text  -[NSTextLineFragment setTextLayoutFragment:]
+0x194738e3c  __TEXT,__text  -[NSTextLayoutFragment _createTruncatedTextRangesFromRanges:characterIndexDelta:]
+0x194739030  __TEXT,__text  -[NSTextLayoutFragment setTextLineFragments:]
+0x194739038  __TEXT,__text  -[NSTextLayoutFragment setHasPartialLayout:]
+0x194739040  __TEXT,__text  -[NSTextLayoutFragment hasPartialLayout]
+0x19473904c  __TEXT,__text  -[NSMutableParagraphStyle setHeadIndent:]
+0x194739054  __TEXT,__text  ___defaultTabStops_block_invoke
+0x194739128  __TEXT,__text  +[NSTextTab initialize]
+0x1947391c8  __TEXT,__text  -[NSMutableParagraphStyle setParagraphSpacingBefore:]
+0x19473924c  __TEXT,__text  -[NSMutableParagraphStyle setDefaultTabInterval:]
+0x194739254  __TEXT,__text  -[NSParagraphStyle tabStops]
+0x194739298  __TEXT,__text  -[NSParagraphStyle tabStops].cold.1
+0x194739298  __TEXT,__text  -[NSParagraphStyle tabStops].cold.1
+0x194739298  __TEXT,__text  -[NSParagraphStyle tabStops].cold.1
+0x19473929c  __TEXT,__text  -[NSTextTab isEqual:]
+0x1947393b4  __TEXT,__text  -[NSTextTab initWithTextAlignment:location:options:]
+0x194739540  __TEXT,__text  -[NSMutableParagraphStyle setTabStops:]
+0x194739608  __TEXT,__text  -[NSTextTab alignment]
+0x194739614  __TEXT,__text  -[NSTextStorage edited:range:changeInLength:]
+0x1947397c8  __TEXT,__text  ___54-[NSTextContentManager synchronizeTextLayoutManagers:]_block_invoke_2
+0x194739800  __TEXT,__text  -[NSTextLayoutManager _invalidateLayoutForTextRange:hard:]
+0x19473a290  __TEXT,__text  -[NSMutableParagraphStyle setTextLists:]
+0x19473a348  __TEXT,__text  -[NSAttributeDictionary newWithKey:object:]
+0x19473a7f0  __TEXT,__text  -[NSStringDrawingContext wantsScaledLineHeight]
+0x19473a7fc  __TEXT,__text  -[NSStringDrawingContext actualScaleFactor]
+0x19473a804  __TEXT,__text  -[NSMutableAttributedString(NSMutableAttributedStringKitAdditions) convertWritingDirectionToBidiControlCharactersForParagraphAtIndex:]
+0x19473ab34  __TEXT,__text  -[NSStringDrawingContext minimumScaleFactor]
+0x19473ab3c  __TEXT,__text  -[NSStringDrawingContext wantsScaledBaselineOffset]
+0x19473ab48  __TEXT,__text  -[NSAttributedString(NSAttributedStringUIFoundationAdditions) _lineBreakBeforeIndex:withinRange:lineBreakStrategy:]
+0x19473b1b0  __TEXT,__text  -[NSMutableAttributedString(NSMutableAttributedStringKitAdditions) convertWritingDirectionToBidiControlCharacters]
+0x19473b854  __TEXT,__text  -[NSStringDrawingContext scaledBaselineOffset]
+0x19473b85c  __TEXT,__text  -[NSStringDrawingContext scaledLineHeight]
+0x19473b864  __TEXT,__text  -[NSConcreteTextStorage replaceCharactersInRange:withAttributedString:]
+0x19473b8d4  __TEXT,__text  ___71-[NSConcreteTextStorage replaceCharactersInRange:withAttributedString:]_block_invoke
+0x19473b910  __TEXT,__text  ___54-[NSTextContentStorage synchronizeTextLayoutManagers:]_block_invoke
+0x19473b924  __TEXT,__text  -[NSTextLayoutManager _fixSelectionAfterChangeInCharacterRange:changeInLength:]
+0x19473b9f0  __TEXT,__text  -[NSTextStorage fixFontAttributeInRange:]
+0x19473ba48  __TEXT,__text  -[NSTextContentStorage _applyEditedRangeAdjustmentsToRange:]
+0x19473bbdc  __TEXT,__text  -[NSTextContentManager recordEditActionInRange:newTextRange:]
+0x19473bca0  __TEXT,__text  -[NSTextStorage processEditing]
+0x19473be20  __TEXT,__text  -[NSTextStorage _fixAttributesInRange:]
+0x19473bed8  __TEXT,__text  -[NSTextStorage _shouldFixFontAttributes]
+0x19473bf60  __TEXT,__text  -[NSTextStorage layoutManagers]
+0x19473bf74  __TEXT,__text  -[NSTextStorage fixGlyphInfoAttributeInRange:]
+0x19473bfcc  __TEXT,__text  -[NSTextLayoutManager processLayoutInvalidationForTextRange:synchronizing:]
+0x19473bfd4  __TEXT,__text  -[NSTextStorage _intentResolver]
+0x19473c02c  __TEXT,__text  -[NSTextContentStorage processEditingForTextStorage:edited:range:changeInLength:invalidatedRange:]
+0x19473cb70  __TEXT,__text  -[NSMutableAttributedString(NSMutableAttributedStringKitAdditions) fixAttributesInRange:]
+0x19473cc6c  __TEXT,__text  +[_NSAttributedStringIntentResolver resolveAttributedString:inRange:]
+0x19473cd3c  __TEXT,__text  -[NSTextStorage invalidateAttributesInRange:]
+0x19473ce28  __TEXT,__text  -[NSMutableAttributedString(NSMutableAttributedStringKitAdditions) fixParagraphStyleAttributeInRange:]
+0x19473cff0  __TEXT,__text  -[NSMutableAttributedString(NSMutableAttributedStringKitAdditions) fixAttachmentAttributeInRange:]
+0x19473d5fc  __TEXT,__text  -[NSTextStorage _notifyEdited:range:changeInLength:invalidatedRange:]
+0x19473d6d0  __TEXT,__text  -[UIFontDescriptor initWithCoder:]
+0x19473d83c  __TEXT,__text  -[UIFontDescriptor initWithCoder:].cold.1
+0x19473d850  __TEXT,__text  ___34-[UIFontDescriptor initWithCoder:]_block_invoke
+0x19473d910  __TEXT,__text  ___NSTextContentStorageChildElementsEnumerationCacheGetNextElement
+0x19473dc94  __TEXT,__text  +[UIFont _systemFontOfSize:width:traits:]
+0x19473dccc  __TEXT,__text  -[UINibDecoder decodeIntForKey:]
+0x19473dee4  __TEXT,__text  -[UINibDecoder decodeDoubleForKey:]
+0x19473e0a8  __TEXT,__text  -[UIFont traits]
+0x19473e180  __TEXT,__text  ___40-[NSTextAttachment _setupAPIPreferences]_block_invoke
+0x19473e220  __TEXT,__text  -[NSTextList setMarkerTextAttachment:]
+0x19473e228  __TEXT,__text  -[NSTextStorage fixesAttributesLazily]
+0x19473e230  __TEXT,__text  -[NSTextStorage _attributeFixingInProgress]
+0x19473e238  __TEXT,__text  +[NSTextLayoutManager viewportLayoutControllerClass]
+0x19473e244  __TEXT,__text  -[NSTextStorage _setForceFixAttributes:]
+0x19473e248  __TEXT,__text  -[NSTextContentStorage setIncludesTextListMarkers:]
+0x19473e250  __TEXT,__text  -[NSTextContentStorage setBaseWritingDirectionResolutionStrategy:]
+0x19473e258  __TEXT,__text  +[NSTextAttachment registerTextAttachmentViewProviderClass:forFileType:]
+0x19473e2e8  __TEXT,__text  -[NSTextStorage _lockForWritingWithExceptionHandler:]
+0x19473e2f0  __TEXT,__text  -[NSTextStorage changeInLength]
+0x19473e304  __TEXT,__text  -[NSTextStorage _unlock]
+0x19473e308  __TEXT,__text  -[NSTextList initWithMarkerFormat:options:]
+0x19473e310  __TEXT,__text  -[NSTextList initWithMarkerFormat:options:startingItemNumber:]
+0x19473e3a0  __TEXT,__text  -[NSCoreTypesetter setAllowsFontSubstitutionAffectingVerticalMetrics:]
+0x19473e3b4  __TEXT,__text  -[NSStringDrawingContext setNumberOfLineFragments:]
+0x19473e3bc  __TEXT,__text  -[NSTextLayoutFragment _bidiLevelsAndResolvedBaseWritingDirectionPointer:]
+0x19473e420  __TEXT,__text  -[UIFont fontName]
+0x19473e43c  __TEXT,__text  ___55-[NSTextContentStorage _supportsTextAttributesInRange:]_block_invoke
+0x19473e4ac  __TEXT,__text  -[NSTextLayoutManager _addTextContainerForLocation:]
+0x19473e544  __TEXT,__text  -[NSTextLayoutManager templateTextContainer]
+0x19473e550  __TEXT,__text  -[NSTextContentStorage locationFromLocation:withOffset:]
+0x19473e66c  __TEXT,__text  -[NSTextStorage _setAttributeFixingInProgress:]
+0x19473e670  __TEXT,__text  -[NSRunStorage insertElement:range:coalesceRuns:]
+0x19473e690  __TEXT,__text  -[NSTextContainer setMaximumNumberOfLines:]
+0x19473e6dc  __TEXT,__text  -[NSTextContainer setLineBreakMode:]
+0x19473eaf4  __TEXT,__text  -[NSTextStorage _setIntentResolver:]
+0x19473eb08  __TEXT,__text  -[NSTextStorage setDelegate:].cold.1
+0x19473ec80  __TEXT,__text  -[NSTextContentStorage setDelegate:]
+0x19473ecb8  __TEXT,__text  -[NSTextContentManager setDelegate:]
+0x19473ecc4  __TEXT,__text  -[NSCountableTextLocation hash]
+0x19473eccc  __TEXT,__text  -[NSTextContentStorage dealloc]
+0x19473ed30  __TEXT,__text  -[NSRunStorage dealloc]
+0x19473ed84  __TEXT,__text  -[NSStorage dealloc]
+0x19473edd0  __TEXT,__text  -[NSTextContentManager dealloc]
+0x19473ee38  __TEXT,__text  -[NSTextLayoutManager dealloc]
+0x19473ef50  __TEXT,__text  ___NSTextLayoutManagerClearTextContainerEntry
+0x19473efa4  __TEXT,__text  -[NSTextLayoutManager .cxx_destruct]
+0x19473efdc  __TEXT,__text  -[NSTextContentManager .cxx_destruct]
+0x19473efe4  __TEXT,__text  -[NSTextViewportLayoutController dealloc]
+0x19473f07c  __TEXT,__text  -[NSTextViewportLayoutController .cxx_destruct]
+0x19473f0b4  __TEXT,__text  -[NSTextContentStorage delegate]
+0x19473f0ec  __TEXT,__text  -[NSTextContentManager delegate]
+0x19473f0f4  __TEXT,__text  ___NSTextContentStorageFlushUncachedTextElements
+0x19473f634  __TEXT,__text  ___83-[NSTextLayoutManager enumerateTextLayoutFragmentsFromLocation:options:usingBlock:]_block_invoke_7
+0x19473f790  __TEXT,__text  __UIFoundationAssert
+0x19473f8d4  __TEXT,__text  __UIFoundationAssert.cold.1
+0x19473f8e8  __TEXT,__text  ___31-[NSTextLayoutFragment _layout]_block_invoke_2
+0x19473fcd8  __TEXT,__text  ___31-[NSTextLayoutFragment _layout]_block_invoke
+0x19473fe1c  __TEXT,__text  +[NSTextTab allocWithZone:]
+0x19473fe7c  __TEXT,__text  -[NSTextContentManager maximumNumberOfUncachedElements]
+0x19473fe84  __TEXT,__text  ___NSTextContentStorageQueryDocumentLocationDeltaForLocation
+0x19473ff6c  __TEXT,__text  +[NSTextContentStorage _usesTextListElements]
+0x19473ffa4  __TEXT,__text  +[NSTextContentStorage _usesTextListElements].cold.1
+0x19473ffb8  __TEXT,__text  ____UIFoundationAssert_block_invoke
+0x19474002c  __TEXT,__text  ___45+[NSTextContentStorage _usesTextListElements]_block_invoke
+0x194740084  __TEXT,__text  -[NSAttributedString(NSAttributedStringUIFoundationAdditions) containsAttachmentsInRange:]
+0x1947401bc  __TEXT,__text  -[NSAttributedString(NSAttributedStringUIFoundationAdditions) containsAttachmentsInRange:].cold.1
+0x1947401d0  __TEXT,__text  ___90-[NSAttributedString(NSAttributedStringUIFoundationAdditions) containsAttachmentsInRange:]_block_invoke
+0x194740214  __TEXT,__text  -[NSAttributedString(NSAttributedStringUIFoundationAdditions) prefersRTFDInRange:]
+0x1947402f8  __TEXT,__text  -[NSStorage insertElements:count:atIndex:]
+```
+First 1,000 of 5,360.
+

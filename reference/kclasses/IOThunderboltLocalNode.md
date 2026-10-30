@@ -1,0 +1,72 @@
+# `IOThunderboltLocalNode`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.iokit.IOThunderboltFamily`](../kexts/com.apple.iokit.IOThunderboltFamily.md)
+- Object size: `0xe8` (232 bytes)
+- Metaclass: `0xfffffe000ba1ce08`; metaclass vtable `0xfffffe0008414258`; class vtable `0xfffffe0008413c40`
+- Registration (init): `0xfffffe000a540474`
+- Superclasses: [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## Strings in its kext that name it (60)
+
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainROMReadRequest - did not find a matching link, rescan \n`
+- `%lldus IOThunderboltLocalNode<%p>::initWithController - could not inherit EFI's Domain UUID, generate a new one`
+- `%lldus IOThunderboltLocalNode<%p>::newXDomainResponseCommand - command = %p, status = 0x%x\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainROMChangedRequest = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainLinkStateStatusRequest = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::createPropertiesCacheCopy - An error (%x) occurred while get a copy of the properties cache\n`
+- `%lldus IOThunderboltLocalNode<%p>::free\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - dispatchAsync( IOThunderboltLocalNode<%p>::linkStateChange )\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - XDomain Request packet unknown domain\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainPathCapabilitiesRequest = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - publishing newRootDirectory into newRootPropertiesCache, publish = %u\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - building newRootPropertiesCache properties tree, publish = %u\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - done, publish = %u, error = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDService - done, error = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::createResponseCommands - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::setPropertiesBytes - cacheBytes result=0x%x\n`
+- `%lldus IOThunderboltLocalNode<%p>::configCommandCallback - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainUUIDRequestV2 = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - (1) Check if service key exists, publish = %u, service key = '%s', error = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainROMReadRequest = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::unpublishXDService\n`
+- `%lldus IOThunderboltLocalNode<%p>::createResources - building fPropertiesCache properties tree\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainPathSetupRequest = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - found an existing service with key = '%s', existingkey64 = 0x%08llx, new service key = '%s', key64 = 0x%08llx, publish = %u\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDService - removing existing service with ID '%s', publish = %u\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - send kIOThunderboltXDomainLinkStateStatusResponse max_link_width = 0x%x supported_link_speeds = 0x%x\n`
+- `%lldus IOThunderboltLocalNode<%p>::linkStateChange - context = %p port = %p alt_port = %p link_width = 0x%x\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDService - adding new service with key '%s', publish = %u\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - currentCacheServiceEntries has %u items, publish = %u\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainPathSetupCompleteRequest = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDService - creating service directory using dictionary\n`
+- `%lldus IOThunderboltLocalNode<%p>::createPropertiesCacheCopy - will cacheBytes %p of size quads 0x%x\n`
+- `%lldus IOThunderboltLocalNode<%p>::registerService\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - XDomain Request packet src uuid = %s\n`
+- `%lldus IOThunderboltLocalNode<%p>::createPropertiesCacheCopy - cacheBytes result=0x%x\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainLinkStateStatusRequest not ready\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - (3) Update local properties cache with modified root directory, publish = %u, error = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - done publish + buildPropertiesTree, publish = %u, error = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDService - removing debug property of existing service with ID '%s', publish = %u\n`
+- `%lldus IOThunderboltLocalNode<%p>::createResources - product = '%s'\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainLinkStateChangeRequest = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - length = 0x%08x, crc_error = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::setPropertiesCache - \n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - discovery_protocol = %d, path_protocol = %d, packet_type = %d, status = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::createResources - root directory publish+buildPropertiesTree result=0x%x\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainUUIDRequest = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDService - adding debug property of new service with ID '%s', publish = %u\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - send kIOThunderboltXDomainLinkStateChangeRequest\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - crc = 0x%08x, calc_crc = 0x%08x crc_error = %d\n`
+- `%lldus IOThunderboltLocalNode<%p>::createPropertiesCacheCopy - \n`
+- `%lldus IOThunderboltLocalNode<%p>::setPropertiesCache - New ROM %p Generation %u\n`
+- `%lldus IOThunderboltLocalNode<%p>::sendROMChangedNotifications\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - publish = %u\n`
+- `%lldus IOThunderboltLocalNode<%p>::findXDomainLink - compare uuid = %s, link uuid = %s\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - command = %p status = 0%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - IOThunderboltXDomainLinkStateChangeResponseStruct not ready\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - incoming_route = 0x%llx\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDServiceDictionary - working on service with key '%s', publish = %u\n`
+- `%lldus IOThunderboltLocalNode<%p>::publishXDService - Create a new dictionary describing the new service, error = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::finalize\n`

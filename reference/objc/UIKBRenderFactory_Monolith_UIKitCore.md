@@ -1,0 +1,76 @@
+# `UIKBRenderFactory_Monolith`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `UIKBRenderFactory`
+- 0 instance variables, 0 properties, 66 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[UIKBRenderFactory_Monolith assetIdiom];
+-[UIKBRenderFactory_Monolith disabledTextColor];
+-[UIKBRenderFactory_Monolith scaledValueForValue:];
+-[UIKBRenderFactory_Monolith _traitsForKey:onKeyplane:];
+-[UIKBRenderFactory_Monolith shadowOpacity];
+-[UIKBRenderFactory_Monolith highlightedTextColor];
+-[UIKBRenderFactory_Monolith shadowRadius];
+-[UIKBRenderFactory_Monolith variantKeySymbolHeightThreshold];
+-[UIKBRenderFactory_Monolith _highlightedTraitsForLetterKey:];
+-[UIKBRenderFactory_Monolith activeTextColor];
+-[UIKBRenderFactory_Monolith keyplaneSwitcherBackgroundColor];
+-[UIKBRenderFactory_Monolith variantKeyWidth];
+-[UIKBRenderFactory_Monolith _activeTraitsForControlKey:];
+-[UIKBRenderFactory_Monolith _activeTraitsForKey:];
+-[UIKBRenderFactory_Monolith _activeTraitsForLetterKey:];
+-[UIKBRenderFactory_Monolith _disabledTraitsForControlKey:];
+-[UIKBRenderFactory_Monolith _disabledTraitsForKey:];
+-[UIKBRenderFactory_Monolith _disabledTraitsForLetterKey:];
+-[UIKBRenderFactory_Monolith _enabledTraitsForControlKey:];
+-[UIKBRenderFactory_Monolith _enabledTraitsForKey:];
+-[UIKBRenderFactory_Monolith _enabledTraitsForLetterKey:];
+-[UIKBRenderFactory_Monolith _highlightedTraitsForControlKey:];
+-[UIKBRenderFactory_Monolith _highlightedTraitsForKey:];
+-[UIKBRenderFactory_Monolith _secondaryTextOffsetForKey:];
+-[UIKBRenderFactory_Monolith _textOffsetForKey:];
+-[UIKBRenderFactory_Monolith _variantTraitsForControlKey:onKeyplane:];
+-[UIKBRenderFactory_Monolith _variantTraitsForLetterKey:onKeyplane:];
+-[UIKBRenderFactory_Monolith backgroundTraitsForKeyplane:];
+-[UIKBRenderFactory_Monolith configureCornersOnGeometry:forKey:];
+-[UIKBRenderFactory_Monolith configureGeometry:forControlKey:];
+-[UIKBRenderFactory_Monolith configureSymbolStyle:forControlKey:];
+-[UIKBRenderFactory_Monolith configureSymbolStyles:forLetterKey:];
+-[UIKBRenderFactory_Monolith controlKeyFocusBaseSize:];
+-[UIKBRenderFactory_Monolith controlKeyFocusIncreaseSize];
+-[UIKBRenderFactory_Monolith controlKeyFontSize];
+-[UIKBRenderFactory_Monolith controlKeyFontWeight];
+-[UIKBRenderFactory_Monolith controlKeyRectCornerRadius];
+-[UIKBRenderFactory_Monolith controlPlatterCornerRadius];
+-[UIKBRenderFactory_Monolith deleteKeyFontSize];
+-[UIKBRenderFactory_Monolith displayContentsForKey:];
+-[UIKBRenderFactory_Monolith enabledTextColor];
+-[UIKBRenderFactory_Monolith forceVariantsInsideKeyplane];
+-[UIKBRenderFactory_Monolith highlightedVariantBackgroundColor];
+-[UIKBRenderFactory_Monolith highlightedVariantTextColor];
+-[UIKBRenderFactory_Monolith keyRectCornerRadius];
+-[UIKBRenderFactory_Monolith keyplaneSwitcherDividerColor];
+-[UIKBRenderFactory_Monolith letterKeyFocusIncreaseSize];
+-[UIKBRenderFactory_Monolith letterKeyFontSize];
+-[UIKBRenderFactory_Monolith letterKeyFontTextStyle];
+-[UIKBRenderFactory_Monolith letterKeyFontWeight];
+-[UIKBRenderFactory_Monolith letterKeySecondaryFontSize];
+-[UIKBRenderFactory_Monolith letterKeyTwoLineFontSize];
+-[UIKBRenderFactory_Monolith letterKeyTwoLineFontWeight];
+-[UIKBRenderFactory_Monolith lowQualityTraits:];
+-[UIKBRenderFactory_Monolith shadowColorString];
+-[UIKBRenderFactory_Monolith shadowVerticalOffset];
+-[UIKBRenderFactory_Monolith shouldUpdateFocusSizeForContentSizeCategory];
+-[UIKBRenderFactory_Monolith tldKeyFontSize];
+-[UIKBRenderFactory_Monolith tldKeyFontWeight];
+-[UIKBRenderFactory_Monolith variantKeyFocusIncrease];
+-[UIKBRenderFactory_Monolith variantKeyFocusRectRadius];
+-[UIKBRenderFactory_Monolith variantKeyHeight];
+-[UIKBRenderFactory_Monolith variantKeySymbolMinSideMargin];
+-[UIKBRenderFactory_Monolith variantPlatterBackgroundColor];
+-[UIKBRenderFactory_Monolith variantPlatterCornerRadius];
+-[UIKBRenderFactory_Monolith variantTextColor];
+```

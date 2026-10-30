@@ -1,0 +1,4018 @@
+# Symbols: `/System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__PrivateFrameworks__PassKitCore.framework__PassKitCore.md). **[DSC]**
+
+12,235 public symbols, 43,025 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1a419fd18  __TEXT,__text  _AMPEnrollmentDismissedKeyForPass
+0x1a44da950  __TEXT,__text  _AnalyticsRelevancyTypeForPass
+0x1a44da8c8  __TEXT,__text  _AnalyticsVASErrorTypeForError
+0x1a44da8a8  __TEXT,__text  _AnalyticsVASReferralSource
+0x1a451c930  __TEXT,__text  _DIIdentityDocumentDescriptorFromPKIdentityDocumentDescriptor
+0x1e0e2d1a0  __DATA_CONST,__const  _DiscoveryManifestsURL
+0x1a472656c  __TEXT,__text  _FKPaymentTransactionStatusFromPKPaymentTransactionStatus
+0x1a4726578  __TEXT,__text  _FKPaymentTransactionTypeFromPKPaymentTransactionType
+0x1ef728ae8  __AUTH,__objc_data  _OBJC_CLASS_$_CdQwUTvJnDEPQgR8
+0x1ef728ac0  __AUTH,__objc_data  _OBJC_CLASS_$_FZf7GLuluME5TMqw
+0x1ef723458  __AUTH,__objc_data  _OBJC_CLASS_$_G60QjbNQktkzwMIh
+0x1ef728a98  __AUTH,__objc_data  _OBJC_CLASS_$_LZHbEqKhcixce9PA
+0x1ef728a70  __AUTH,__objc_data  _OBJC_CLASS_$_ODEF66BPvkL9lz2w
+0x1ef728a48  __AUTH,__objc_data  _OBJC_CLASS_$_PDAssertion
+0x1ef728a20  __AUTH,__objc_data  _OBJC_CLASS_$_PDAssertionCoordinator
+0x1ef7289f8  __AUTH,__objc_data  _OBJC_CLASS_$_PDAssertionRequest
+0x1ef7289d0  __AUTH,__objc_data  _OBJC_CLASS_$_PDCloudStoreCounterpartRecordParser
+0x1ef7289a8  __AUTH,__objc_data  _OBJC_CLASS_$_PDCloudStoreCounterpartRecordParserIdentifiers
+0x1ef728980  __AUTH,__objc_data  _OBJC_CLASS_$_PDCloudStoreCounterpartRecordParserZones
+0x1ee330048  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PDScheduledActivityClient
+0x1ee330020  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PDScheduledActivityCriteria
+0x1ee32fff8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PDScheduledActivityRegistration
+0x1ef723430  __AUTH,__objc_data  _OBJC_CLASS_$_PDXPCApplicationInfo
+0x1ee32ffd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PDXPCService
+0x1ef72a2f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKACAccountChange
+0x1ef723408  __AUTH,__objc_data  _OBJC_CLASS_$_PKAMPCardInfoForMerchantRequest
+0x1ee331df8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAMPCardRegistrationResponse
+0x1ef728958  __AUTH,__objc_data  _OBJC_CLASS_$_PKAMPEnrollmentManager
+0x1ef7233e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAMSTopUpController
+0x1ee332118  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKASCAssociatedReaderID
+0x1ef7233b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccessoryDevice
+0x1ee32ffa8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccessoryDeviceMonitor
+0x1ee333f90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccount
+0x1ef723390  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountAction
+0x1ef72d660  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountAdditionalPushTopics
+0x1ef72d638  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountAssistanceProgramMessage
+0x1ef728930  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountAttestationRequest
+0x1ef723368  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountBeneficiary
+0x1ef723340  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountBeneficiaryInfo
+0x1ef723318  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountBillPaymentController
+0x1ef728908  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountCardAvailabilityInfo
+0x1ef7232f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountCredential
+0x1ef72d610  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountCreditTermsUpdate
+0x1ef7232c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountDailyCashDestination
+0x1ee331308  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountDailyCashDestinationsSummary
+0x1ef72d5e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountDetails
+0x1ef7288e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountDeviceEventReporter
+0x1ee3312e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountEnhancedMerchant
+0x1ee3312b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountEnhancedMerchantBehavior
+0x1ef7288b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountEnhancedMerchantsFetcher
+0x1ee331290  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountEntityOrdering
+0x1ee331dd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountEvent
+0x1ef7232a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountExportedTransactionInfo
+0x1ef72d5c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountFeatureDescriptor
+0x1ef72d598  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountFetchPeriods
+0x1ee333518  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountFundingSourceVerification
+0x1ef728890  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountFundingSourceVerificationAction
+0x1ee332ca8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountFundingSourceVerificationAttempt
+0x1ee331268  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountHistoricalBalance
+0x1ee331858  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountHold
+0x1ef72b6d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountLocation
+0x1ef72b6a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountMinimumOSPolicy
+0x1ef72d570  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountMinimumOSVersions
+0x1ee3341e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountPayment
+0x1ee3334f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountPaymentFundingDetails
+0x1ef723278  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountPaymentFundingDetailsApplePayCash
+0x1ee3334c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountPaymentFundingDetailsBankAccount
+0x1ef723250  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountPaymentFundingDetailsSavings
+0x1ee333f68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountPaymentFundingSource
+0x1ef72d548  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountPaymentReminder
+0x1ef72d520  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountPaymentScheduleDetails
+0x1ee331240  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountPendingFamilyMember
+0x1ee331218  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountPhysicalCardExpirationMessagingInfo
+0x1ef72d4f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountPhysicalCardShippingUpdate
+0x1ef72d4d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountPhysicalCardStatusUpdate
+0x1ef723228  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountPostProvisioningContent
+0x1ee3311f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountPromotion
+0x1ee3311c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountPromotionBehavior
+0x1ef72a2d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountPromotionCompletionStep
+0x1ef723200  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountProvisioningController
+0x1ef7231d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountReferenceCredential
+0x1ef7231b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountReport
+0x1ef72d4a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountRewards
+0x1ee3311a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountRewardsTierSummary
+0x1ef723188  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountScheduledPayment
+0x1ef723160  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountScheduledPaymentList
+0x1ef723138  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountScheduledTransfer
+0x1ef723110  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountScheduledTransferList
+0x1ee3308b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountService
+0x1ef7230e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountServiceAccountResolutionConfiguration
+0x1ef72a2a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountServicePaymentMethod
+0x1ef72b680  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountServiceTransferRequest
+0x1ef72d480  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountServiceUnavailablePeriod
+0x1ef72d458  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountServicingEvent
+0x1ef72a280  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountServicingEventStatusDetails
+0x1ee331178  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountStatementMetadata
+0x1ef7230c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountStatementMetadataItem
+0x1ef723098  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountStatementMetadataReport
+0x1ef723070  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountSupportTopic
+0x1ef723048  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountSupportTopicExplanation
+0x1ef723020  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountSupportTopicExplanationContent
+0x1ef722ff8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountSupportTopicExplanationLink
+0x1ee331150  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountTaxForm
+0x1ef722fd0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountTransactionSyncReport
+0x1ef728868  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountTransactionSyncReportItem
+0x1ee32ff80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountTransfer
+0x1ef72b658  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountTransferExternalAccount
+0x1ef72b630  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountTransferScheduleDetails
+0x1ee331128  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountUser
+0x1ef72b608  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountUserCollection
+0x1ee331100  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountUserInfo
+0x1ef72d430  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountUserInfoUpdate
+0x1ef72b5e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountUserNotificationSettings
+0x1ef72b5b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountUserPreferences
+0x1ef72d408  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountVirtualCardStatusUpdate
+0x1ef722fa8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceAccountActionRequest
+0x1ef728840  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceAccountDeleteRequest
+0x1ef728818  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceAccountRequest
+0x1ef7287f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceAccountResponse
+0x1ef722f80  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceAccountTransactionAnswerRequest
+0x1ef722f58  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceAccountUpdateUserInfoRequest
+0x1ef722f30  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceAccountUserInfoRequest
+0x1ef722f08  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceAccountUsersRequest
+0x1ef722ee0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceAccountUsersResponse
+0x1ef7287c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceAccountsRequest
+0x1ef7287a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceAccountsResponse
+0x1ef722eb8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceAddFundingSourceRequest
+0x1ef722e90  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceAddFundingSourceResponse
+0x1ef722e68  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceApplePayTrustRequest
+0x1ef722e40  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceAuthenticationTokenRequest
+0x1ef722e18  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceAuthenticationTokenResponse
+0x1ef728778  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceBalanceHistoryRequest
+0x1ef728750  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceBalanceHistoryResponse
+0x1ef722df0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceBankLookupRequest
+0x1ef722dc8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceBankLookupResponse
+0x1ef722da0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceCancelPaymentRequest
+0x1ef722d78  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceCertificatesRequest
+0x1ef722d50  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceCertificatesResponse
+0x1ef722d28  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceCreateVirtualCardRequest
+0x1ef722d00  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceCreatedZoneRequest
+0x1ef722cd8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceCreditRecoveryPaymentPlansRequest
+0x1ef722cb0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceCreditRecoveryPaymentPlansResponse
+0x1ef722c88  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceCustomizePhysicalCardResponse
+0x1ef722c60  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceDailyCashEligibilityRequest
+0x1ef722c38  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceDailyCashEligibilityResponse
+0x1ef722c10  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceDeleteAccountUserRequest
+0x1ef722be8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceDeleteBeneficiaryRequest
+0x1ef722bc0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceDeleteFundingSourceRequest
+0x1ef722b98  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceDocumentActionRequest
+0x1ef722b70  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceDocumentActionResponse
+0x1ef722b48  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceDocumentRequest
+0x1ef728728  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceEmptyResponse
+0x1ef728700  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceEnhancedMerchantsRequest
+0x1ef7286d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceEnhancedMerchantsResponse
+0x1ef722b20  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceExportTransactionDataRequest
+0x1ef722af8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceExportTransactionDataResponse
+0x1ef7286b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceFundingSourcesRequest
+0x1ef728688  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceFundingSourcesResponse
+0x1ef722ad0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceGenerateTopUpTokenRequest
+0x1ef722aa8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceGenerateTopUpTokenResponse
+0x1ef722a80  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceInstallmentAuthorizationRequest
+0x1ef722a58  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceInstallmentAuthorizationResponse
+0x1ef722a30  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceInstallmentBindRequest
+0x1ef722a08  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServicePaginatedRequest
+0x1ef7229e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServicePassDetailsRequest
+0x1ef7229b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServicePassDetailsResponse
+0x1ef728660  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServicePaymentsRequest
+0x1ef728638  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServicePaymentsResponse
+0x1ee3310d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountWebServicePhysicalCardActionRequest
+0x1ef722990  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServicePhysicalCardActionResponse
+0x1ef722968  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServicePhysicalCardsRequest
+0x1ef722940  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServicePhysicalCardsResponse
+0x1ef728610  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServicePromotionsRequest
+0x1ef7285e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServicePromotionsResponse
+0x1ef7285c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceReportDeviceEventRequest
+0x1ef722918  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceReportRequest
+0x1ee3310b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceRequest
+0x1ef7228f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceRequestPhysicalCardRequest
+0x1ef7228c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceRequestPhysicalCardResponse
+0x1ef7228a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceResolveStorefrontCountryMismatchRequest
+0x1ef72a258  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceResponse
+0x1ef722878  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceSavingsStatementsResponse
+0x1ef722850  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceSavingsUserInfoResponse
+0x1ef722828  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceSchedulePaymentRequest
+0x1ef722800  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceSchedulePaymentResponse
+0x1ef7227d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceScheduleTransferRequest
+0x1ef7227b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceSharedAccountCloudStoreRequest
+0x1ef722788  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceSharedAccountCloudStoreResponse
+0x1ef728598  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceStatementsRequest
+0x1ef728570  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceStatementsResponse
+0x1ef722760  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceSupportTopicsRequest
+0x1ef722738  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceSupportTopicsResponse
+0x1ef722710  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceTaxFormsResponse
+0x1ef7226e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceTermsDataRequest
+0x1ef7226c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceTermsDataResponse
+0x1ef722698  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceTermsRequest
+0x1ef722670  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceTransferEligibilityRequest
+0x1ef722648  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceTransferEligibilityResponse
+0x1ef722620  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceTransfersRequest
+0x1ef7225f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceTransfersResponse
+0x1ef7225d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceUpdateAccountUserPreferencesRequest
+0x1ef7225a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceUpdateAccountUserPreferencesResponse
+0x1ef722580  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceVirtualCardLegacyCredentialsRequest
+0x1ef722558  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceVirtualCardListRequest
+0x1ef722530  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceVirtualCardListResponse
+0x1ef722508  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceVirtualCardManageRequest
+0x1ef7224e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceVirtualCardResponse
+0x1ef7224b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebServiceVirtualCardSecurityCodeActivityRequest
+0x1ef722490  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebserviceCustomizePhysicalCardRequest
+0x1ef722468  __AUTH,__objc_data  _OBJC_CLASS_$_PKAccountWebserviceInstallmentBindResponse
+0x1ef722440  __AUTH,__objc_data  _OBJC_CLASS_$_PKActionGroup
+0x1ef722418  __AUTH,__objc_data  _OBJC_CLASS_$_PKActivityEvent
+0x1ef7223f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKActivityEventPeerPaymentTransaction
+0x1ef7223c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKActivityEventTransaction
+0x1ee335188  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAddCarKeyPassConfiguration
+0x1ef72a230  __AUTH,__objc_data  _OBJC_CLASS_$_PKAddHomeKeyPassConfiguration
+0x1ee335020  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAddIdentityDocumentConfiguration
+0x1ef7223a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAddIdentityDocumentMetadata
+0x1ef722378  __AUTH,__objc_data  _OBJC_CLASS_$_PKAddPassMetadataPreview
+0x1ef722350  __AUTH,__objc_data  _OBJC_CLASS_$_PKAddPaymentPassController
+0x1ef72d3e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAddPaymentPassRequest
+0x1ef72d3b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAddPaymentPassRequestConfiguration
+0x1ee335728  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAddSecureElementPassConfiguration
+0x1ee335368  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAddShareablePassConfiguration
+0x1ef72a208  __AUTH,__objc_data  _OBJC_CLASS_$_PKAddressFormatConfiguration
+0x1ef722328  __AUTH,__objc_data  _OBJC_CLASS_$_PKAddressSearchModel
+0x1ef722300  __AUTH,__objc_data  _OBJC_CLASS_$_PKAddressSearchRequest
+0x1ef728548  __AUTH,__objc_data  _OBJC_CLASS_$_PKAggregateDictionary
+0x1ef7222d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAirport
+0x1ef728520  __AUTH,__objc_data  _OBJC_CLASS_$_PKAliroCompatibilityManifest
+0x1ee334ff8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAliroHomeAuxiliaryCapabilityDescriptor
+0x1ee32eb80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAnalyticsReporter
+0x1ef7222b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAnonymizedAnalyticsSecret
+0x1ef722288  __AUTH,__objc_data  _OBJC_CLASS_$_PKAnonymizedAnalyticsSecretFetcher
+0x1ef722260  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppAuthorizationInfo
+0x1ef70fdf0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppIntentUtilities
+0x1ef72d390  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppProtectionApp
+0x1ef72d368  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppProtectionCoordinator
+0x1ee335340  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAppleAccountChange
+0x1ee332078  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAppleAccountInformation
+0x1ee3323e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAppleAccountManager
+0x1ee335318  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAppleAccountState
+0x1ef72d340  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppleBalanceAccountDetails
+0x1ef72d318  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppleBalanceAccountFeatureDescriptor
+0x1ef72d2f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppleBalanceAccountSummary
+0x1ef722238  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppleBalanceCredential
+0x1ef722210  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppleBalanceDirectTopUpConfiguration
+0x1ef7221e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppleBalanceDirectTopUpConfigurationDenomination
+0x1ef7221c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppleBalanceInStoreTopUpToken
+0x1ef722198  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppleBalanceMockUtilities
+0x1ef722170  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppleBalancePromotionConfiguration
+0x1ef722148  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppleCardApplyExperiment
+0x1ef722120  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppleCardOfferExperiment
+0x1ef7220f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppleCardWelcomeExperiment
+0x1ef7220d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplePayTrustHashResponse
+0x1ef7284f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplePayTrustKey
+0x1ef7284d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplePayTrustKeyRequest
+0x1ef7284a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplePayTrustRegistrationRequest
+0x1ef728480  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplePayTrustSession
+0x1ee3315d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKApplePayTrustSignature
+0x1ee331830  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKApplePayTrustSignatureRequest
+0x1ee3354a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAppletSubcredential
+0x1ef7220a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppletSubcredentialAccountAttestationRequest
+0x1ef728458  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppletSubcredentialManagementSession
+0x1ef722080  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppletSubcredentialPairingSession
+0x1ee3323c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAppletSubcredentialSharingConfiguration
+0x1ee333f40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAppletSubcredentialSharingInvitation
+0x1ef722058  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppletSubcredentialSharingInvitationMetadata
+0x1ee330890  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAppletSubcredentialSharingInvitationRequest
+0x1ef722030  __AUTH,__objc_data  _OBJC_CLASS_$_PKAppletSubcredentialSharingSession
+0x1ef722008  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationAuthorizationHandle
+0x1ef721fe0  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationAuthorizationHandleRequest
+0x1ef721fb8  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationAuthorizationHandleRequest_Physical
+0x1ef721f90  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationAuthorizationHandleRequest_Virtual
+0x1ee3334a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKApplicationMessage
+0x1ef72b590  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationMessageAction
+0x1ef728430  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationMessageActionPresentation
+0x1ef721f68  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationMessageActionURL
+0x1ef72b568  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationMessageContent
+0x1ef72b540  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationMessageContentDefault
+0x1ef72b518  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationMessageGroupDescriptor
+0x1ef72b4f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationMessageIcon
+0x1ee333478  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKApplicationMessageKey
+0x1ef721f40  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationMessageNode
+0x1ef721f18  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationMessageNodeGroupBranch
+0x1ef721ef0  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationMessageNodeMultipleGroupBranch
+0x1ef721ec8  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationMessageNodeTerminal
+0x1ef72b4c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationMessageRegistration
+0x1ef728408  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationMessageRequest
+0x1ef721ea0  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplicationRegistry
+0x1ef721e78  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyActionContent
+0x1ef721e50  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyActionContentActionItem
+0x1ef721e28  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyActionContentTextItem
+0x1ef721e00  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyActionContentTextItemODIDetail
+0x1ef721dd8  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyDocumentUploadPage
+0x1ef72d2c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyFooterContent
+0x1ef72b4a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyFooterContentLink
+0x1ef721db0  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyRequiredFieldsPage
+0x1ef721d88  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyVerificationInformation
+0x1ef721d60  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyVerificationPage
+0x1ee330868  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceApplicationDeleteRequest
+0x1ef721d38  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceApplicationDeleteResponse
+0x1ef7283e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceApplicationsRequest
+0x1ef7283b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceApplicationsResponse
+0x1ee330840  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceApplyRequest
+0x1ee330818  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceApplyResponse
+0x1ef721d10  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceApplyStepInfo
+0x1ef721ce8  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceAugmentedProductRequest
+0x1ee32fa08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceAugmentedProductResponse
+0x1ef721cc0  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceCreateRequest
+0x1ee3307f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceDocumentSubmissionRequest
+0x1ef721c98  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceFeatureTermsDataRequest
+0x1ee3307c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceRequest
+0x1ef721c70  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceRequestAuthenticationContext
+0x1ee3307a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceResponse
+0x1ef721c48  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceShownTermsRequest
+0x1ef721c20  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceTermsDataRequest
+0x1ef721bf8  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceTermsDataResponse
+0x1ee330778  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceTermsRequest
+0x1ef721bd0  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceVerificationResendRequest
+0x1ef721ba8  __AUTH,__objc_data  _OBJC_CLASS_$_PKApplyWebServiceVerificationSubmissionRequest
+0x1ef728390  __AUTH,__objc_data  _OBJC_CLASS_$_PKAssertion
+0x1ef728368  __AUTH,__objc_data  _OBJC_CLASS_$_PKAssertionCoordinator
+0x1ee32eb58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAsyncCache
+0x1ee32eb30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAsyncCacheRetrievalInfo
+0x1ef721b80  __AUTH,__objc_data  _OBJC_CLASS_$_PKAsyncFactory
+0x1ef721b58  __AUTH,__objc_data  _OBJC_CLASS_$_PKAsyncFactoryOperationContainer
+0x1ee32eb08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAsyncOperationState
+0x1ee32f9e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAsyncUnaryOperationComposer
+0x1ee32f9b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAsyncUnaryOperationEvaluator
+0x1ef728340  __AUTH,__objc_data  _OBJC_CLASS_$_PKAuthenticatorEvaluationResponse
+0x1ef72a1e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAuthorizedPeerPaymentQuote
+0x1ef721b30  __AUTH,__objc_data  _OBJC_CLASS_$_PKAutoBugCaptureReporter
+0x1ef728318  __AUTH,__objc_data  _OBJC_CLASS_$_PKAutoFillAppleCashCardDescriptor
+0x1ef721b08  __AUTH,__objc_data  _OBJC_CLASS_$_PKAutoFillCardCredential
+0x1ee332c80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAutoFillCardDescriptor
+0x1ef72d2a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAutoFillCardManager
+0x1ef7282f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAutoFillVirtualCardDescriptor
+0x1ef721ae0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAutoReloadPaymentMethod
+0x1ef721ab8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAutoTopUpActionItem
+0x1ef721a90  __AUTH,__objc_data  _OBJC_CLASS_$_PKAutomaticPassPresentationSuppressor
+0x1ef72b478  __AUTH,__objc_data  _OBJC_CLASS_$_PKAutomaticReloadPaymentRequest
+0x1ef721a68  __AUTH,__objc_data  _OBJC_CLASS_$_PKAutomaticReloadPaymentRequestValidator
+0x1ef72d278  __AUTH,__objc_data  _OBJC_CLASS_$_PKAutomaticReloadPaymentSummaryItem
+0x1ef721a40  __AUTH,__objc_data  _OBJC_CLASS_$_PKAutomaticReloadPaymentSummaryItemValidator
+0x1ef721a18  __AUTH,__objc_data  _OBJC_CLASS_$_PKAuxiliaryCapabilityFetchBarcodeRequest
+0x1ef7219f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAuxiliaryCapabilityFetchBarcodeResponse
+0x1ef7219c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAuxiliaryCapabilityKeyCreationMetadataRequest
+0x1ef7219a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAuxiliaryCapabilityKeyCreationMetadataRequestCapabilityState
+0x1ef721978  __AUTH,__objc_data  _OBJC_CLASS_$_PKAuxiliaryCapabilityKeyCreationMetadataResponse
+0x1ef721950  __AUTH,__objc_data  _OBJC_CLASS_$_PKAuxiliaryCapabilityKeyCreationMetadataResponseEntry
+0x1ef7282c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAuxiliaryCapabilityRegisterRequest
+0x1ef7282a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAuxiliaryCapabilityRegisterResponse
+0x1ef728278  __AUTH,__objc_data  _OBJC_CLASS_$_PKAuxiliaryCapabilityRegistrationStateRequest
+0x1ef728250  __AUTH,__objc_data  _OBJC_CLASS_$_PKAuxiliaryCapabilityRegistrationStateResponse
+0x1ee334fd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKAuxiliaryCapabilityRequirementKeyMaterial
+0x1ef728228  __AUTH,__objc_data  _OBJC_CLASS_$_PKAuxiliaryCapabilityRequirementKeyMaterialContent
+0x1ef728200  __AUTH,__objc_data  _OBJC_CLASS_$_PKAuxiliaryCapabilityUnregisteredRequirements
+0x1ef7281d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKAuxiliaryCapabilityWebServiceRequest
+0x1ef7281b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKAuxiliaryCapabilityWebServiceResponse
+0x1ef721928  __AUTH,__objc_data  _OBJC_CLASS_$_PKAuxiliaryItemMerchantLookupSource
+0x1ef721900  __AUTH,__objc_data  _OBJC_CLASS_$_PKBCBPBarcodeFlight
+0x1ef7218d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKBCBPBarcodeFlightLeg
+0x1ee334fa8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKBadgeCountItem
+0x1ef7218b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKBalanceSummary
+0x1ef721888  __AUTH,__objc_data  _OBJC_CLASS_$_PKBalanceSummaryFetcher
+0x1ef721860  __AUTH,__objc_data  _OBJC_CLASS_$_PKBankAccountDataItem
+0x1ef72d250  __AUTH,__objc_data  _OBJC_CLASS_$_PKBankAccountInformation
+0x1ef72a1b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKBannerHandle
+0x1ef72b450  __AUTH,__objc_data  _OBJC_CLASS_$_PKBannerHandleRequest
+0x1ef728188  __AUTH,__objc_data  _OBJC_CLASS_$_PKBannerHandleResponse
+0x1ef72b428  __AUTH,__objc_data  _OBJC_CLASS_$_PKBannerHandleServerState
+0x1ef72b400  __AUTH,__objc_data  _OBJC_CLASS_$_PKBannerHandleState
+0x1ee331fd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKBarcode
+0x1ef721838  __AUTH,__objc_data  _OBJC_CLASS_$_PKBarcodeCredential
+0x1ef721810  __AUTH,__objc_data  _OBJC_CLASS_$_PKBarcodeEventConfigurationRequest
+0x1ef7217e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKBarcodeEventMetadataRequest
+0x1ef7217c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKBarcodeEventMetadataResponse
+0x1ef721798  __AUTH,__objc_data  _OBJC_CLASS_$_PKBarcodeEventSignatureRequest
+0x1ef721770  __AUTH,__objc_data  _OBJC_CLASS_$_PKBarcodeEventSignatureResponse
+0x1ee330750  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKBarcodePaymentEvent
+0x1ee334aa8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKBeacon
+0x1ef72d228  __AUTH,__objc_data  _OBJC_CLASS_$_PKBillPaymentSelectedSuggestedAmountData
+0x1ef721748  __AUTH,__objc_data  _OBJC_CLASS_$_PKBillPaymentSuggestedAmount
+0x1ef721720  __AUTH,__objc_data  _OBJC_CLASS_$_PKBillPaymentSuggestedAmountController
+0x1ef7216f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKBillPaymentSuggestedAmountList
+0x1ef7216d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKBillPaymentSuggestedAmountMessage
+0x1ef72a190  __AUTH,__objc_data  _OBJC_CLASS_$_PKBitmapContext
+0x1ef72a168  __AUTH,__objc_data  _OBJC_CLASS_$_PKBitmapConversionDescriptor
+0x1ef728160  __AUTH,__objc_data  _OBJC_CLASS_$_PKBluetoothMonitorer
+0x1ef728138  __AUTH,__objc_data  _OBJC_CLASS_$_PKBroadwayBankAccountInformation
+0x1ee335700  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKBundleResourceDescriptor
+0x1ef72a140  __AUTH,__objc_data  _OBJC_CLASS_$_PKCAAnimatedLayoutTracker
+0x1ef7216a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKCacheRecipientItem
+0x1ef721680  __AUTH,__objc_data  _OBJC_CLASS_$_PKCacheScoreItem
+0x1ef721658  __AUTH,__objc_data  _OBJC_CLASS_$_PKCampaignAttributionSessionManager
+0x1ef721630  __AUTH,__objc_data  _OBJC_CLASS_$_PKCarKeyCredentialRegistrationMetadata
+0x1ef721608  __AUTH,__objc_data  _OBJC_CLASS_$_PKCarKeyPairingProxCardRequest
+0x1ef7215e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKCarKeyTerminalPairingCredential
+0x1ee333450  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKCarShareAcceptanceResponse
+0x1ee335160  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKCarUnlockSupportedTerminal
+0x1ee3356d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKCatalog
+0x1ee332050  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKCatalogGroup
+0x1ee333f18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKCategoryVisualizationMagnitude
+0x1ef728110  __AUTH,__objc_data  _OBJC_CLASS_$_PKChangeHistoryEvent
+0x1ef7280e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudDeletedRecord
+0x1ef7215b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudRecordAccount
+0x1ef7280c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudRecordAccountEvent
+0x1ef728098  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudRecordArray
+0x1ef728070  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudRecordArrayDatabase
+0x1ef728048  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudRecordArrayDatabaseZone
+0x1ef728020  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudRecordAssetURL
+0x1ef721590  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudRecordCloudStoreZoneShareLock
+0x1ef721568  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudRecordCounterpartImageData
+0x1ef721540  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudRecordIssuerMessagingFlag
+0x1ef727ff8  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudRecordObject
+0x1ef727fd0  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudRecordPass
+0x1ef721518  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudRecordPassCatalog
+0x1ef7214f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudRecordPendingRequest
+0x1ef7214c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudRecordRecurringPaymentMemo
+0x1ef7214a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudRecordTransaction
+0x1ef727fa8  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudStoreContainerChangeEvent
+0x1ef721478  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudStoreContainerDiagnosticSnapshot
+0x1ef721450  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudStoreContainerDiagnostics
+0x1ee32f990  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKCloudStoreError
+0x1ef727f80  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudStoreRecord
+0x1ef727f58  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudStoreRecordFetchTask
+0x1ef721428  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudStoreService
+0x1ef727f30  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudStoreUploadItemConfiguration
+0x1ee32f968  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKCloudStoreZone
+0x1ef721400  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudStoreZoneInvitation
+0x1ef7213d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudStoreZoneInvitationRequest
+0x1ef7213b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudStoreZoneInvitationResponse
+0x1ef727f08  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudStoreZoneQueryConfiguration
+0x1ef721388  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudStoreZoneShareLock
+0x1ef721360  __AUTH,__objc_data  _OBJC_CLASS_$_PKCloudStoreZoneShareParticipant
+0x1ef727ee0  __AUTH,__objc_data  _OBJC_CLASS_$_PKCoarseLocationMonitor
+0x1ee334c88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKColor
+0x1ef721338  __AUTH,__objc_data  _OBJC_CLASS_$_PKCompoundInterestCalculator
+0x1ef721310  __AUTH,__objc_data  _OBJC_CLASS_$_PKCompoundInterestCalculatorConfiguration
+0x1ee335958  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKContact
+0x1ef72a118  __AUTH,__objc_data  _OBJC_CLASS_$_PKContactFieldConfiguration
+0x1ef72a0f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKContactFormatConfiguration
+0x1ef72a0c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKContactFormatValidator
+0x1ef7212e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKContactInformation
+0x1ef7212c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKContactInformationRequest
+0x1ef721298  __AUTH,__objc_data  _OBJC_CLASS_$_PKContactInformationResponse
+0x1ef72a0a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKContactPickerItem
+0x1ee3315b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKContactResolver
+0x1ef727eb8  __AUTH,__objc_data  _OBJC_CLASS_$_PKContactlessCardIngester
+0x1ef72a078  __AUTH,__objc_data  _OBJC_CLASS_$_PKContactlessInterfaceSession
+0x1ef727e90  __AUTH,__objc_data  _OBJC_CLASS_$_PKContactlessInterfaceSessionDefaultBehavior
+0x1ef727e68  __AUTH,__objc_data  _OBJC_CLASS_$_PKContactlessInterfaceTransactionContext
+0x1ee335458  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKContent
+0x1ef721270  __AUTH,__objc_data  _OBJC_CLASS_$_PKContinuityPaymentCoordinator
+0x1ef721248  __AUTH,__objc_data  _OBJC_CLASS_$_PKContinuityPaymentService
+0x1ef721220  __AUTH,__objc_data  _OBJC_CLASS_$_PKContinuityProximityAdvertisement
+0x1ef7211f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKContinuityProximityBLEAdvertisement
+0x1ef7211d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKContinuityProximityBLEVerification
+0x1ef7211a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKContinuityProximityCBAdvertisement
+0x1ef721180  __AUTH,__objc_data  _OBJC_CLASS_$_PKContinuityProximityCBVerification
+0x1ef721158  __AUTH,__objc_data  _OBJC_CLASS_$_PKContinuityProximityNWAdvertisement
+0x1ef721130  __AUTH,__objc_data  _OBJC_CLASS_$_PKContinuityProximityNWVerification
+0x1ef721108  __AUTH,__objc_data  _OBJC_CLASS_$_PKContinuityProximityVerification
+0x1ef72b3d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKCoreSpotlightUtilities
+0x1ef7210e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKCredentialRegistrationMetadata
+0x1ef72d200  __AUTH,__objc_data  _OBJC_CLASS_$_PKCreditAccountBalanceSummary
+0x1ef72a050  __AUTH,__objc_data  _OBJC_CLASS_$_PKCreditAccountController
+0x1ef72d1d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKCreditAccountDebtSaleSummary
+0x1ef72d1b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKCreditAccountDetails
+0x1ef72d188  __AUTH,__objc_data  _OBJC_CLASS_$_PKCreditAccountFeatureDescriptor
+0x1ef7210b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKCreditAccountIncomeDetails
+0x1ef72d160  __AUTH,__objc_data  _OBJC_CLASS_$_PKCreditAccountMergeSummary
+0x1ef721090  __AUTH,__objc_data  _OBJC_CLASS_$_PKCreditAccountMergeSummaryAccountDetails
+0x1ef72d138  __AUTH,__objc_data  _OBJC_CLASS_$_PKCreditAccountRates
+0x1ee331808  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKCreditAccountStatement
+0x1ef72d110  __AUTH,__objc_data  _OBJC_CLASS_$_PKCreditAccountSummary
+0x1ef72d0e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKCreditAccountUserActivity
+0x1ef721068  __AUTH,__objc_data  _OBJC_CLASS_$_PKCreditAccountUserInfo
+0x1ef721040  __AUTH,__objc_data  _OBJC_CLASS_$_PKCreditAccountWebServiceAccountUserInfoResponse
+0x1ee334288  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKCreditInstallmentPlan
+0x1ef721018  __AUTH,__objc_data  _OBJC_CLASS_$_PKCreditInstallmentPlanLineItem
+0x1ee32f940  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKCreditInstallmentPlanPayment
+0x1ef720ff0  __AUTH,__objc_data  _OBJC_CLASS_$_PKCreditInstallmentPlanProduct
+0x1ee331088  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKCreditRecoveryPaymentPlan
+0x1ee333428  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKCrossPlatformShareURL
+0x1ee3341c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKCurrencyAmount
+0x1ee32ff58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDAManager
+0x1ee32f918  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDAPairingSessionManager
+0x1ef727e40  __AUTH,__objc_data  _OBJC_CLASS_$_PKDASession
+0x1ee32f8f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDASessionManager
+0x1ef727e18  __AUTH,__objc_data  _OBJC_CLASS_$_PKDSPContext
+0x1ef727df0  __AUTH,__objc_data  _OBJC_CLASS_$_PKDashboardTransactionFetcher
+0x1ee334a80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDataAccessor
+0x1ef727dc8  __AUTH,__objc_data  _OBJC_CLASS_$_PKDateComponentsRange
+0x1ef720fc8  __AUTH,__objc_data  _OBJC_CLASS_$_PKDateComponentsRangeFormatter
+0x1ef720fa0  __AUTH,__objc_data  _OBJC_CLASS_$_PKDateContainer
+0x1ee32f8c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDeallocationGuard
+0x1ef72b3b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKDeferredPaymentRequest
+0x1ef720f78  __AUTH,__objc_data  _OBJC_CLASS_$_PKDeferredPaymentRequestValidator
+0x1ef72d0c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKDeferredPaymentSummaryItem
+0x1ef720f50  __AUTH,__objc_data  _OBJC_CLASS_$_PKDeferredPaymentSummaryItemValidator
+0x1ef720f28  __AUTH,__objc_data  _OBJC_CLASS_$_PKDeleteMerchantTokenRequest
+0x1ef720f00  __AUTH,__objc_data  _OBJC_CLASS_$_PKDemoTransactionGenerator
+0x1ef720ed8  __AUTH,__objc_data  _OBJC_CLASS_$_PKDemoTransactionGeneratorConfiguration
+0x1ef720eb0  __AUTH,__objc_data  _OBJC_CLASS_$_PKDemoTransactionGeneratorInsertionConfiguration
+0x1ef727da0  __AUTH,__objc_data  _OBJC_CLASS_$_PKDeviceEnvironment
+0x1ef720e88  __AUTH,__objc_data  _OBJC_CLASS_$_PKDeviceRegistrationService
+0x1ef727d78  __AUTH,__objc_data  _OBJC_CLASS_$_PKDeviceScorer
+0x1ee331060  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDeviceSharingCapabilities
+0x1ef720e60  __AUTH,__objc_data  _OBJC_CLASS_$_PKDeviceSharingCapabilitiesFetchStatus
+0x1ef720e38  __AUTH,__objc_data  _OBJC_CLASS_$_PKDeviceSharingCapabilitiesManager
+0x1ef727d50  __AUTH,__objc_data  _OBJC_CLASS_$_PKDeviceVersion
+0x1ef727d28  __AUTH,__objc_data  _OBJC_CLASS_$_PKDeviceVersionRange
+0x1ef720e10  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiagnostics
+0x1ee334468  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDiff
+0x1ef720de8  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiffHunk
+0x1ef720dc0  __AUTH,__objc_data  _OBJC_CLASS_$_PKDigitalIssuanceServiceProviderItem
+0x1ef720d98  __AUTH,__objc_data  _OBJC_CLASS_$_PKDigitalIssuanceServiceProviderProduct
+0x1ee3302c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDirectoryCoordinator
+0x1ef72b388  __AUTH,__objc_data  _OBJC_CLASS_$_PKDisbursementPaymentRequest
+0x1ef720d70  __AUTH,__objc_data  _OBJC_CLASS_$_PKDisbursementPaymentRequestValidator
+0x1ef720d48  __AUTH,__objc_data  _OBJC_CLASS_$_PKDisbursementRequest
+0x1ef72b360  __AUTH,__objc_data  _OBJC_CLASS_$_PKDisbursementSummaryItem
+0x1ef720d20  __AUTH,__objc_data  _OBJC_CLASS_$_PKDisbursementSummaryItemValidator
+0x1ee32f8a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDiscoveryArticleLayout
+0x1ef720cf8  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryArticleLayoutResponse
+0x1ee32eae0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDiscoveryCallToAction
+0x1ef72d098  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryCallToActionShelf
+0x1ef720cd0  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryCallToActionURL
+0x1ee32eab8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDiscoveryCard
+0x1ef72b338  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryDataSource
+0x1ee32f878  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDiscoveryEngagementMessage
+0x1ef727d00  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryEngagementMessageAction
+0x1ef72d070  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryInlineMediaShelf
+0x1ee32f850  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDiscoveryItem
+0x1ef727cd8  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryManifest
+0x1ef727cb0  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryManifestResponse
+0x1ee32ea90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDiscoveryMedia
+0x1ef720ca8  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryMediaContentsRect
+0x1ef720c80  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryMediaLayout
+0x1ef720c58  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryMediaPoint
+0x1ef72d048  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryMediaRemoteAsset
+0x1ef720c30  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryMediaSize
+0x1ef727c88  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryMessagesManifest
+0x1ef727c60  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryMessagesMetadata
+0x1ef727c38  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryNotification
+0x1ee32f828  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDiscoveryObject
+0x1ef72d020  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryRelevantDateRange
+0x1ee32ea68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDiscoveryService
+0x1ee32ea40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDiscoveryShelf
+0x1ee32ea18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDiscoverySpacerShelf
+0x1ee32e9f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDiscoveryTextBlockShelf
+0x1ef727c10  __AUTH,__objc_data  _OBJC_CLASS_$_PKDiscoveryWebServiceResponse
+0x1ee335430  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDisplayProfile
+0x1ee3348f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDisplayTraitCollection
+0x1ee333400  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDisplayablePassEntitlement
+0x1ef720c08  __AUTH,__objc_data  _OBJC_CLASS_$_PKDocumentRequest
+0x1ef727be8  __AUTH,__objc_data  _OBJC_CLASS_$_PKDownloadRemoteAssetConfiguration
+0x1ef727bc0  __AUTH,__objc_data  _OBJC_CLASS_$_PKDynamicAssetIndex
+0x1ee331588  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDynamicLayerConfiguration
+0x1ee32f800  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDynamicLayerCrossDissolveConfiguration
+0x1ee32e9c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDynamicLayerEmitterConfiguration
+0x1ee32f7d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKDynamicLayerTransactionEffectConfiguration
+0x1ef720be0  __AUTH,__objc_data  _OBJC_CLASS_$_PKDynamicProvisioningFieldsPageContent
+0x1ef727b98  __AUTH,__objc_data  _OBJC_CLASS_$_PKDynamicProvisioningPageContent
+0x1ef720bb8  __AUTH,__objc_data  _OBJC_CLASS_$_PKDynamicProvisioningPageLearnMoreContent
+0x1ef72a028  __AUTH,__objc_data  _OBJC_CLASS_$_PKDynamicTemplateLayout
+0x1ee330728  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKEncryptedDataObject
+0x1ef720b90  __AUTH,__objc_data  _OBJC_CLASS_$_PKEncryptedPaymentSetupFieldSubmissionContainer
+0x1ee333ef0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKEncryptedPushProvisioningTarget
+0x1ef720b68  __AUTH,__objc_data  _OBJC_CLASS_$_PKEncryptedVPANPaymentCredentials
+0x1ef727b70  __AUTH,__objc_data  _OBJC_CLASS_$_PKEngagementBatchPropertyRequest
+0x1ef72a000  __AUTH,__objc_data  _OBJC_CLASS_$_PKEngagementEventTrigger
+0x1ee32e9a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKEngagementPropertyRequest
+0x1ee32e978  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKEngagementPropertyResponse
+0x1ef720b40  __AUTH,__objc_data  _OBJC_CLASS_$_PKEnteredValueActionFeeCalculationFlat
+0x1ef720b18  __AUTH,__objc_data  _OBJC_CLASS_$_PKEnteredValueActionFeeCalculationRate
+0x1ef720af0  __AUTH,__objc_data  _OBJC_CLASS_$_PKEnteredValueActionItem
+0x1ee32ff30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKEntitlementWhitelist
+0x1ef720ac8  __AUTH,__objc_data  _OBJC_CLASS_$_PKEventDateInfo
+0x1ef720aa0  __AUTH,__objc_data  _OBJC_CLASS_$_PKExistingCardAuthorizationCredential
+0x1ef720a78  __AUTH,__objc_data  _OBJC_CLASS_$_PKExistingCardAuthorizationDiscoveryAvailability
+0x1ee332c58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKExistingCardAuthorizationDiscoveryRequestMessage
+0x1ee332c30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKExistingCardAuthorizationDiscoveryResponseMessage
+0x1ef720a50  __AUTH,__objc_data  _OBJC_CLASS_$_PKExistingCardAuthorizationRequestCarKeyGroup
+0x1ef720a28  __AUTH,__objc_data  _OBJC_CLASS_$_PKExistingCardAuthorizationRequestDestinationDeviceSignature
+0x1ef720a00  __AUTH,__objc_data  _OBJC_CLASS_$_PKExistingCardAuthorizationRequestEntry
+0x1ef7209d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKExistingCardAuthorizationRequestGroup
+0x1ee332c08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKExistingCardAuthorizationRequestMessage
+0x1ef7209b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKExistingCardAuthorizationRequestPaymentCardGroup
+0x1ef720988  __AUTH,__objc_data  _OBJC_CLASS_$_PKExistingCardAuthorizationResponseCarKeyGroup
+0x1ef720960  __AUTH,__objc_data  _OBJC_CLASS_$_PKExistingCardAuthorizationResponseGroup
+0x1ee332be0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKExistingCardAuthorizationResponseMessage
+0x1ef720938  __AUTH,__objc_data  _OBJC_CLASS_$_PKExistingCardAuthorizationResponsePaymentCardEntry
+0x1ef720910  __AUTH,__objc_data  _OBJC_CLASS_$_PKExistingCardAuthorizationResponsePaymentCardGroup
+0x1ef7208e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKExistingCardAuthorizationSecureElementService
+0x1ef729fd8  __AUTH,__objc_data  _OBJC_CLASS_$_PKExperiment
+0x1ee3333d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKExpressPassConfiguration
+0x1ef729fb0  __AUTH,__objc_data  _OBJC_CLASS_$_PKExpressPassController
+0x1ee32e950  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKExpressPassCredentialEntry
+0x1ee334198  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKExpressPassInformation
+0x1ef729f88  __AUTH,__objc_data  _OBJC_CLASS_$_PKExpressTransactionBannerHandleRequest
+0x1ef729f60  __AUTH,__objc_data  _OBJC_CLASS_$_PKExpressTransactionBannerHandleState
+0x1ee333ec8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKExpressTransactionState
+0x1ef7208c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKExtension
+0x1ef720898  __AUTH,__objc_data  _OBJC_CLASS_$_PKExtensionBaseContext
+0x1ef720870  __AUTH,__objc_data  _OBJC_CLASS_$_PKExtensionHostContext
+0x1ef720848  __AUTH,__objc_data  _OBJC_CLASS_$_PKExtensionProvider
+0x1ef720820  __AUTH,__objc_data  _OBJC_CLASS_$_PKExtensionRequestHandler
+0x1ef7207f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKExtensionVendorContext
+0x1ef7207d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKExternalDestinationDevice
+0x1ef7207a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKExternalDeviceMigrationCardEntry
+0x1ef720780  __AUTH,__objc_data  _OBJC_CLASS_$_PKExternalDeviceMigrationExportController
+0x1ef720758  __AUTH,__objc_data  _OBJC_CLASS_$_PKExternalDeviceMigrationManifest
+0x1ef720730  __AUTH,__objc_data  _OBJC_CLASS_$_PKExternalDeviceMigrationManifestEntry
+0x1ef720708  __AUTH,__objc_data  _OBJC_CLASS_$_PKExternalDeviceMigrationPaymentDetails
+0x1ef7206e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKExternalProvisioningOptions
+0x1ef7206b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKExternalProvisioningPolicy
+0x1ef720690  __AUTH,__objc_data  _OBJC_CLASS_$_PKFPANCardCanSaveResult
+0x1ee332bb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKFPANCardDescriptor
+0x1ef720668  __AUTH,__objc_data  _OBJC_CLASS_$_PKFPANCardDescriptorCredentialPair
+0x1ee332b90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKFPANCredential
+0x1ef729f38  __AUTH,__objc_data  _OBJC_CLASS_$_PKFaceIDBannerHandleRequest
+0x1ef729f10  __AUTH,__objc_data  _OBJC_CLASS_$_PKFaceIDBannerHandleState
+0x1ee333ea0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKFamilyMember
+0x1ef729ee8  __AUTH,__objc_data  _OBJC_CLASS_$_PKFamilyMemberCollection
+0x1ee333e78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKFeatureApplication
+0x1ef720640  __AUTH,__objc_data  _OBJC_CLASS_$_PKFeatureApplicationDeclineDetails
+0x1ef720618  __AUTH,__objc_data  _OBJC_CLASS_$_PKFeatureApplicationInvitationDetails
+0x1ef7205f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKFeatureApplicationOfferDetails
+0x1ef7205c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKFeatureApplicationOfferDetailsInfo
+0x1ef7205a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKFeatureFailure
+0x1ef720578  __AUTH,__objc_data  _OBJC_CLASS_$_PKFeatureFailureCollection
+0x1ef720550  __AUTH,__objc_data  _OBJC_CLASS_$_PKFelicaAppletHistory
+0x1ef720528  __AUTH,__objc_data  _OBJC_CLASS_$_PKFelicaAppletHistoryRecord
+0x1ef720500  __AUTH,__objc_data  _OBJC_CLASS_$_PKFelicaGreenCarTicket
+0x1ef7204d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKFelicaPassProperties
+0x1ef7204b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKFelicaShinkansenTicket
+0x1ef720488  __AUTH,__objc_data  _OBJC_CLASS_$_PKFelicaShinkansenTrain
+0x1ef720460  __AUTH,__objc_data  _OBJC_CLASS_$_PKFelicaTransitAppletState
+0x1ee331fb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKFidoProfile
+0x1ee32f7b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKFieldDetector
+0x1ee334440  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKFieldMetadata
+0x1ee334be8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKFieldProperties
+0x1ef720438  __AUTH,__objc_data  _OBJC_CLASS_$_PKFieldPropertiesProbe
+0x1ef72b310  __AUTH,__objc_data  _OBJC_CLASS_$_PKFileDataAccessor
+0x1ee335778  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKFileDescriptorXPCContainer
+0x1ef70d7e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKFinanceKitForegroundHook
+0x1ee334d78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKFlight
+0x1ef70ff70  __AUTH,__objc_data  _OBJC_CLASS_$_PKFlightJourney
+0x1ef720410  __AUTH,__objc_data  _OBJC_CLASS_$_PKFlightShareInvitation
+0x1ef7203e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKFlightStep
+0x1ee334d50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKFlightSubscription
+0x1ef7203c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKGenericBankAccountInformation
+0x1ef729ec0  __AUTH,__objc_data  _OBJC_CLASS_$_PKGroup
+0x1ee3359d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKGroupsController
+0x1ee3352f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKGroupsControllerSnapshot
+0x1ee3352c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKGroupsControllerSnapshotFetchOptions
+0x1ef720398  __AUTH,__objc_data  _OBJC_CLASS_$_PKHMAccessory
+0x1ef720370  __AUTH,__objc_data  _OBJC_CLASS_$_PKHMHomeManager
+0x1ef72cff8  __AUTH,__objc_data  _OBJC_CLASS_$_PKHardwareVersionRange
+0x1ef727b48  __AUTH,__objc_data  _OBJC_CLASS_$_PKHideMyEmailManager
+0x1ef720348  __AUTH,__objc_data  _OBJC_CLASS_$_PKHomeKeyCredential
+0x1ef727b20  __AUTH,__objc_data  _OBJC_CLASS_$_PKHomeScreenWidgetController
+0x1ef727af8  __AUTH,__objc_data  _OBJC_CLASS_$_PKHowToUseWalletCard
+0x1ef727ad0  __AUTH,__objc_data  _OBJC_CLASS_$_PKHowToUseWalletManager
+0x1ef727aa8  __AUTH,__objc_data  _OBJC_CLASS_$_PKHowToUseWalletModel
+0x1ef727a80  __AUTH,__objc_data  _OBJC_CLASS_$_PKHowToUseWalletRequirements
+0x1ef727a58  __AUTH,__objc_data  _OBJC_CLASS_$_PKHowToUseWalletSection
+0x1ef720320  __AUTH,__objc_data  _OBJC_CLASS_$_PKIDSBatchIDQueryControllerWrapper
+0x1ef7202f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKIDSDestination
+0x1ef7202d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKIDSIDQueryManager
+0x1ee32f788  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKIDSManager
+0x1ef727a30  __AUTH,__objc_data  _OBJC_CLASS_$_PKIDSService
+0x1ef727a08  __AUTH,__objc_data  _OBJC_CLASS_$_PKIDSServiceDelegateEntry
+0x1ef7279e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKIDSServiceListener
+0x1ef7279b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKIDSServiceListenerRegistrationKey
+0x1ee32f760  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKISO18013DataElements
+0x1ef7202a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKISO18013DataReleaseRequest
+0x1ef720280  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityAnyOfDescriptor
+0x1ef720258  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityAuthorizationController
+0x1ef720230  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityDataReleasePresentmentArbiter
+0x1ef720208  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityDocument
+0x1ef7201e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityDocumentMetadata
+0x1ef7201b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityDriversLicenseDescriptor
+0x1ef720190  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityElement
+0x1ef720168  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityIntentToStore
+0x1ef720140  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityNationalIDCardDescriptor
+0x1ef727990  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityPassCredentialProperty
+0x1ef720118  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityPhotoIDDescriptor
+0x1ef729e98  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityPresentmentManager
+0x1ef7200f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityProofingConfiguration
+0x1ef7200c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityProofingDisplayMessage
+0x1ef7200a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityProofingDisplayMessageAction
+0x1ee331038  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKIdentityProvisioningAttestations
+0x1ef720078  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityProvisioningSupplementalData
+0x1ef720050  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityProvisioningTransactionKey
+0x1ef720028  __AUTH,__objc_data  _OBJC_CLASS_$_PKIdentityRequest
+0x1ee331010  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKImage
+0x1ef72b2e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKImageDescriptor
+0x1ef72b2c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKImageDescriptorBitmap
+0x1ef720000  __AUTH,__objc_data  _OBJC_CLASS_$_PKImageDescriptorSymbol
+0x1ef727968  __AUTH,__objc_data  _OBJC_CLASS_$_PKImageResizingConstraints
+0x1ee335408  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKImageSet
+0x1ee334b48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKImageSetXPCContainer
+0x1ef71ffd8  __AUTH,__objc_data  _OBJC_CLASS_$_PKInAppPaymentEntitlement
+0x1ef72cfd0  __AUTH,__objc_data  _OBJC_CLASS_$_PKInAppPaymentPresentationHostContext
+0x1ee3317e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKInAppPaymentService
+0x1ef727940  __AUTH,__objc_data  _OBJC_CLASS_$_PKInAppPaymentSession
+0x1ef727918  __AUTH,__objc_data  _OBJC_CLASS_$_PKInAppPaymentSessionAuthorizationRequest
+0x1ef7278f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKInAppPaymentSessionAuthorizeParamaters
+0x1ef71ffb0  __AUTH,__objc_data  _OBJC_CLASS_$_PKInstallmentPlanMerchant
+0x1ef71ff88  __AUTH,__objc_data  _OBJC_CLASS_$_PKInstallmentPlanSummary
+0x1ef72b298  __AUTH,__objc_data  _OBJC_CLASS_$_PKInstantFundsOutFeeSummaryItem
+0x1ef71ff60  __AUTH,__objc_data  _OBJC_CLASS_$_PKInstantFundsOutFeeSummaryItemValidator
+0x1ef71ff38  __AUTH,__objc_data  _OBJC_CLASS_$_PKIssuerBindingData
+0x1ef7278c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKIssuerMessagingFlag
+0x1ef7278a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKIssuerProvisioningExtensionConsumerContext
+0x1ef727878  __AUTH,__objc_data  _OBJC_CLASS_$_PKIssuerProvisioningExtensionConsumerCoordinator
+0x1ef72b270  __AUTH,__objc_data  _OBJC_CLASS_$_PKIssuerProvisioningExtensionHandler
+0x1ef72cfa8  __AUTH,__objc_data  _OBJC_CLASS_$_PKIssuerProvisioningExtensionPassEntry
+0x1ef71ff10  __AUTH,__objc_data  _OBJC_CLASS_$_PKIssuerProvisioningExtensionPaymentPassEntry
+0x1ef72b248  __AUTH,__objc_data  _OBJC_CLASS_$_PKIssuerProvisioningExtensionProviderContext
+0x1ef72cf80  __AUTH,__objc_data  _OBJC_CLASS_$_PKIssuerProvisioningExtensionStatus
+0x1ef71fee8  __AUTH,__objc_data  _OBJC_CLASS_$_PKJapanIndividualNumberCardMetadata
+0x1ee32e928  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKKeychainItemWrapper
+0x1ee3359f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKLabeledValue
+0x1ee32e900  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKLayerNullActionDelegate
+0x1ef729e70  __AUTH,__objc_data  _OBJC_CLASS_$_PKLayoutAssetImage
+0x1ef729e48  __AUTH,__objc_data  _OBJC_CLASS_$_PKLayoutAssetLink
+0x1ef729e20  __AUTH,__objc_data  _OBJC_CLASS_$_PKLayoutAssetString
+0x1ef71fec0  __AUTH,__objc_data  _OBJC_CLASS_$_PKLiveRenderedShaderSet
+0x1ee335548  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKLocation
+0x1ef71fe98  __AUTH,__objc_data  _OBJC_CLASS_$_PKLongTermPrivacyKey
+0x1ef71fe70  __AUTH,__objc_data  _OBJC_CLASS_$_PKMAEntitlementTemplateManager
+0x1ef727850  __AUTH,__objc_data  _OBJC_CLASS_$_PKMapContainer
+0x1ee32f738  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKMapsBrand
+0x1ee334170  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKMapsMerchant
+0x1ef71fe48  __AUTH,__objc_data  _OBJC_CLASS_$_PKMembershipProgram
+0x1ee334148  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKMerchant
+0x1ef727828  __AUTH,__objc_data  _OBJC_CLASS_$_PKMerchantCategoryCodeMap
+0x1ef71fe20  __AUTH,__objc_data  _OBJC_CLASS_$_PKMerchantCategoryDomainLookup
+0x1ef727800  __AUTH,__objc_data  _OBJC_CLASS_$_PKMerchantLookupRequest
+0x1ef7277d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKMerchantLookupResponse
+0x1ef71fdf8  __AUTH,__objc_data  _OBJC_CLASS_$_PKMerchantToken
+0x1ef71fdd0  __AUTH,__objc_data  _OBJC_CLASS_$_PKMerchantTokenDemoData
+0x1ef71fda8  __AUTH,__objc_data  _OBJC_CLASS_$_PKMerchantTokenUsageMetadata
+0x1ef72cf58  __AUTH,__objc_data  _OBJC_CLASS_$_PKMicaLayer
+0x1ef72cf30  __AUTH,__objc_data  _OBJC_CLASS_$_PKMiniDiscoveryCard
+0x1ee32ff08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKMobileAssetManager
+0x1ef71fd80  __AUTH,__objc_data  _OBJC_CLASS_$_PKMockPeerPaymentController
+0x1ef71fd58  __AUTH,__objc_data  _OBJC_CLASS_$_PKMutableAccountUserNotificationSettings
+0x1ef71fd30  __AUTH,__objc_data  _OBJC_CLASS_$_PKMutableAccountUserPreferences
+0x1ef71fd08  __AUTH,__objc_data  _OBJC_CLASS_$_PKMutableAutofillCardCredential
+0x1ef71fce0  __AUTH,__objc_data  _OBJC_CLASS_$_PKMutablePassEntitlementCapabilitySet
+0x1ef7277b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKMutablePassTileDescriptorState
+0x1ee334a58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKNFCPayload
+0x1ef71fcb8  __AUTH,__objc_data  _OBJC_CLASS_$_PKNFCTag
+0x1ef71fc90  __AUTH,__objc_data  _OBJC_CLASS_$_PKNFCTagReaderSession
+0x1ef729df8  __AUTH,__objc_data  _OBJC_CLASS_$_PKNameComponentFormatConfiguration
+0x1ef71fc68  __AUTH,__objc_data  _OBJC_CLASS_$_PKNearbyPeerPaymentReceiverCoordinator
+0x1ef71fc40  __AUTH,__objc_data  _OBJC_CLASS_$_PKNearbyPeerPaymentReceiverResponseMetadata
+0x1ee335908  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKNotifyRegistration
+0x1ee3358e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKNotifySubregistration
+0x1ef71fc18  __AUTH,__objc_data  _OBJC_CLASS_$_PKNumericSuggestion
+0x1ef71fbf0  __AUTH,__objc_data  _OBJC_CLASS_$_PKNumericSuggestionLastInput
+0x1ef71fbc8  __AUTH,__objc_data  _OBJC_CLASS_$_PKNumericSuggestionsAlgorithm
+0x1ef71fba0  __AUTH,__objc_data  _OBJC_CLASS_$_PKNumericSuggestionsEnterValueAlgorithm
+0x1ef727788  __AUTH,__objc_data  _OBJC_CLASS_$_PKODIAssessment
+0x1ef71fb78  __AUTH,__objc_data  _OBJC_CLASS_$_PKODIServiceProviderAssessment
+0x1ef727760  __AUTH,__objc_data  _OBJC_CLASS_$_PKODITransactionAssessment
+0x1ee32fee0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKOSVersionRequirement
+0x1ee330700  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKOSVersionRequirementRange
+0x1ee335ae8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKObject
+0x1ef72cf08  __AUTH,__objc_data  _OBJC_CLASS_$_PKObjectDownload
+0x1ef72cee0  __AUTH,__objc_data  _OBJC_CLASS_$_PKObjectDownloader
+0x1ef71fb50  __AUTH,__objc_data  _OBJC_CLASS_$_PKObjectProperty
+0x1ef71fb28  __AUTH,__objc_data  _OBJC_CLASS_$_PKOpaqueDataServiceProviderOrder
+0x1ee332398  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKOverlayableWebServiceRequest
+0x1ef71fb00  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaginatedAccountWebServiceResponse
+0x1ef71fad8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaginatedPaymentWebServiceResponse
+0x1ef71fab0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaginatedWebServiceResponse
+0x1ee3333b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPartialShareInvitation
+0x1ee335ac0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPass
+0x1ee3317b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassAnnotations
+0x1ee335138  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassAutomaticSelectionCriterion
+0x1ee3302a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassAuxiliaryCapabilityDecryptionISO18013KeyCreationMetadata
+0x1ee330278  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassAuxiliaryCapabilityKeyCreationMetadata
+0x1ee32feb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassAuxiliaryCapabilitySignatureAliroHomeKeyCreationMetadata
+0x1ee32fe90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassAuxiliaryCapabilitySignatureAliroHydraKeyCreationMetadata
+0x1ee32fe68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassAuxiliaryCapabilitySignatureCarConnectivityConsortiumKeyCreationMetadata
+0x1ee32fe40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassAuxiliaryCapabilitySignatureFidoKeyCreationMetadata
+0x1ee32fe18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassAuxiliaryCapabilitySignatureIdentityAccountKeyCreationMetadata
+0x1ee32fdf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassAuxiliaryCapabilitySignatureUnifiedAccessHomeKeyCreationMetadata
+0x1ee32fdc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassAuxiliaryCapabilitySignatureUnifiedAccessHydraKeyCreationMetadata
+0x1ee331da8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassAuxiliaryPassInformation
+0x1ee331560  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassAuxiliaryPassInformationItem
+0x1ef71fa88  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassAuxiliaryPassInformationItemNavigationItem
+0x1ee334f80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassAuxiliaryRegistrationDecryptionRequirement
+0x1ee334f58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassAuxiliaryRegistrationRequirement
+0x1ee331538  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassAuxiliaryRegistrationRequirements
+0x1ee334f30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassAuxiliaryRegistrationSignatureRequirement
+0x1ee331d80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassBalance
+0x1ee331d58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassBalanceModel
+0x1ee331f88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassBarcodeSettings
+0x1ee3348c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassContent
+0x1ef71fa60  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassCredentialShare
+0x1ee330250  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassDateField
+0x1ef71fa38  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassDateRangeField
+0x1ee331d30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassDetailSection
+0x1ee3348a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassDetailsImageSet
+0x1ee334a30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassDisplayProfile
+0x1ee334f08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassDynamicState
+0x1ee334878  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassEntitlement
+0x1ef71fa10  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassEntitlementCapabilitySet
+0x1ef71f9e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassEntitlementTemplate
+0x1ef71f9c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassEntitlementsComposer
+0x1ef71f998  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassEntitlementsComposerEntitlementEntryNode
+0x1ef71f970  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassEntitlementsComposerEntry
+0x1ef71f948  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassEntitlementsComposerEntryNode
+0x1ef71f920  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassEntitlementsComposerPredefinedEntryNode
+0x1ef71f8f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassEntitlementsComposerPredefinedSelectionEntry
+0x1ee334850  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassEventGuideImageSet
+0x1ee331d08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassFeatureConfiguration
+0x1ee331790  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassFeaturedAction
+0x1ee3342d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassField
+0x1ee331ce0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassFieldImage
+0x1ee334828  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassFrontFaceImageSet
+0x1ef71f8d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassGrayPlaceholderKey
+0x1ee334800  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassImageSet
+0x1ee335110  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassIngestionPayload
+0x1ef71f8a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassIngestionProperties
+0x1ee333838  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassLegalAgreement
+0x1ee335598  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassLibrary
+0x1ef72ceb8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassLibraryDefaultDataProvider
+0x1ee331f60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassLiveDataConfiguration
+0x1ee331cb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassLiveRender
+0x1ee3347d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassLiveRenderedArmedStateImageSet
+0x1ee3347b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassLiveRenderedImageSet
+0x1ee334788  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassLogoImageSet
+0x1ef71f880  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassNumberField
+0x1ef71f858  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassOwnershipToken
+0x1ef71f830  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassPersonNameField
+0x1ee331f38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassPersonalization
+0x1ee334760  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassPersonalizationImageSet
+0x1ee334738  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassPlaceHolderImageSet
+0x1ef727738  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassPreferencesManager
+0x1ee334710  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassPreviewImageSet
+0x1ee334418  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassProvisioningMetadata
+0x1ee331c90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassRelevancyModel
+0x1ee3346e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassRelevantDate
+0x1ef71f808  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassSectionDetailDrillInField
+0x1ef71f7e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassSecurePreviewContext
+0x1ee331c68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassSemantic
+0x1ee333388  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassShare
+0x1ef71f7b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassShareActivationOption
+0x1ee332370  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassShareActivationOptions
+0x1ef71f790  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassShareInitiationActivationConfiguration
+0x1ef71f768  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassShareTimeConfiguration
+0x1ef71f740  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassShareTimeSchedule
+0x1ef71f718  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassSharedEntitlement
+0x1ee333360  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassTile
+0x1ef71f6f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileAccessory
+0x1ef71f6c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileAccessoryButton
+0x1ef71f6a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileAccessoryImage
+0x1ef71f678  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileAccessorySpinner
+0x1ef729dd0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileDescriptor
+0x1ef727710  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileDescriptorState
+0x1ef71f650  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileImage
+0x1ef729da8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileMetadata
+0x1ef729d80  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileMetadataHorizontalFlowGroup
+0x1ef71f628  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileMetadataVehicleFunction
+0x1ef71f600  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileMetadataVerticalFlowGroup
+0x1ef729d58  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileState
+0x1ef71f5d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileStateCheckIn
+0x1ef71f5b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileStateDefault
+0x1ef71f588  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileStateDefaultV2
+0x1ef71f560  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileStateForeignView
+0x1ef729d30  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileStateGroup
+0x1ef729d08  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileStateMetadata
+0x1ef71f538  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileStateMetadataVehicleFunction
+0x1ef729ce0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileStatePaymentOfferSelector
+0x1ef71f510  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileValue
+0x1ef71f4e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileValueDate
+0x1ef71f4c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileValueForeignReference
+0x1ef71f498  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileValueImage
+0x1ef71f470  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileValueNumber
+0x1ef71f448  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassTileValueText
+0x1ee332b68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassTransactionActivitySummary
+0x1ee331f10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassUpcomingPassInformation
+0x1ef71f420  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassUpcomingPassInformationEntry
+0x1ef71f3f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassUpcomingPassInformationEntryContent
+0x1ef71f3d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassUpcomingPassInformationEntryContentEvent
+0x1ef71f3a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassUpcomingPassInformationEntryMetadata
+0x1ef71f380  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassUpcomingPassInformationEntryMetadataEvent
+0x1ef71f358  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassUpcomingPassInformationGroup
+0x1ef71f330  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassUpcomingPassInformationImageManifest
+0x1ef71f308  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassUpcomingPassInformationImageManifestItem
+0x1ef71f2e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassUpgradeController
+0x1ee32f710  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassUpgradeControllerBase
+0x1ee331510  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassUpgradeExpressAutomaticSelectionCriteriaRequest
+0x1ef71f2b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassUpgradePrecursorPassAction
+0x1ef71f290  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassUpgradePrecursorPassDPANIDSignatureAction
+0x1ef71f268  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassUpgradePrecursorPassExistingCardAuthorizationAction
+0x1ef71f240  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassUpgradePrecursorPassGenericReprovisionAction
+0x1ef71f218  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassUpgradePrecursorPassIssuerAppAction
+0x1ef71f1f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassUpgradePrecursorPassProofingAction
+0x1ee330fe8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassUpgradePrecursorPassRequest
+0x1ee3314e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassUpgradeRequest
+0x1ef72ce90  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassVerificationAppClipMethod
+0x1ef72ce68  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassVerificationCardTapMethod
+0x1ef72ce40  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassVerificationFieldsMethod
+0x1ef72ce18  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassVerificationIssuerAppMethod
+0x1ef72cdf0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassVerificationMethod
+0x1ef72cdc8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassVerificationMethodGroup
+0x1ef72cda0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassVerificationOneTimePinMethod
+0x1ef72cd78  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassVerificationPhoneCallMethod
+0x1ef72cd50  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassVerificationURLMethod
+0x1ef71f1c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPassbookFairPlayEvaluator
+0x1ee32e8d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPasscodeLockManager
+0x1ee334b20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPassesXPCContainer
+0x1ee331c40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPayLaterMerchandisingConfiguration
+0x1ef71f1a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPayLaterMerchandisingUtilities
+0x1ee333e50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPayment
+0x1ef71f178  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAccountAttesationResponse
+0x1ef71f150  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentActivationResponse
+0x1ee3354f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentApplication
+0x1ee333338  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentApplicationAssociatedReader
+0x1ef71f128  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentApplicationAssociatedReaderCA
+0x1ee330fc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentApplicationStateMessageOverride
+0x1ee332348  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentApplicationUsageSummary
+0x1ef7276e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAugmentBaseRequest
+0x1ef7276c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAugmentBaseResponse
+0x1ef71f100  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAugmentSessionRequest
+0x1ef71f0d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAugmentSessionResponse
+0x1ef727698  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAuthorizationAuthorizeStateParam
+0x1ef727670  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAuthorizationAuthorizedStateParam
+0x1ef727648  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAuthorizationClientCallbackStateParam
+0x1ef71f0b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAuthorizationContinuitySendParam
+0x1ee32f6e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentAuthorizationCoordinator
+0x1ef72b220  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAuthorizationCoordinatorExportedObject
+0x1ef727620  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAuthorizationDataModel
+0x1ef7275f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAuthorizationErrorStateParam
+0x1ef71f088  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAuthorizationInvalidDataStateParam
+0x1ef7275d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAuthorizationNonceStateParam
+0x1ef71f060  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAuthorizationPrepareTransactionDetailsStateParam
+0x1ef71f038  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAuthorizationRequest
+0x1ef72cd28  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAuthorizationResult
+0x1ef7275a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAuthorizationRewrapStateParam
+0x1ef727580  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAuthorizationStateMachine
+0x1ef727558  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAuthorizationStateParam
+0x1ef727530  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAuthorizationSuccessStateParam
+0x1ef71f010  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAvailableDevicesRequest
+0x1ef71efe8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAvailableDevicesResponse
+0x1ef71efc0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentAvailableDevicesResponseCardItem
+0x1ee32f6c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentAvailableProductsRequest
+0x1ee3306d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentAvailableProductsResponse
+0x1ef727508  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentBackgroundDownloadRecord
+0x1ef7274e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentBackgroundRegisterCredentialRecord
+0x1ee334bc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentBalance
+0x1ee3306b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentBalanceReminder
+0x1ef71ef98  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentBillingAgreementDataItem
+0x1ef71ef70  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentBrowseableBankAppsRequest
+0x1ef71ef48  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentBrowseableBankAppsResponse
+0x1ef7274b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentButtonAnalytics
+0x1ef727490  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentButtonsExperiment
+0x1ef727468  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentCardDataItem
+0x1ef71ef20  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentCheckMerchantRequest
+0x1ef71eef8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentCheckMerchantResponse
+0x1ef71eed0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentClientUpdate
+0x1ef71eea8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentCloudStoreZoneCreationManager
+0x1ef727440  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentCommonAvailableProductsRequest
+0x1ee333810  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentCommutePlanDetail
+0x1ee330688  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentCommutePlanReminder
+0x1ef71ee80  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentCompleteSessionRequest
+0x1ef71ee58  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentCompleteSessionResponse
+0x1ef72cd00  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentConfigurationRequest
+0x1ef72ccd8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentConfigurationResponse
+0x1ef71ee30  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentContactlessProductCredential
+0x1ef727418  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentContentDataItem
+0x1ee32f698  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentContentItem
+0x1ef72b1f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentContentItemValidator
+0x1ef71ee08  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentCouponCodeDataItem
+0x1ef71ede0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentCreateVehicleShareRequest
+0x1ee333e28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentCredential
+0x1ef71edb8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentCredentialAccountAttestationRequest
+0x1ef71ed90  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentCredentialMetadata
+0x1ef71ed68  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentCredentialMetadataCurrency
+0x1ef71ed40  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentCredentialMetadataDate
+0x1ef71ed18  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentCredentialMetadataText
+0x1ef71ecf0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentCredentialNonceRequest
+0x1ef71ecc8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentCredentialProvisioningMethod
+0x1ef7273f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentDataItem
+0x1ef71eca0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentDateDataItem
+0x1ef72ccb0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentDefaultDataProvider
+0x1ef71ec78  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentDeleteRequest
+0x1ef7273c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentDeprovisionRequest
+0x1ee32e8b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentDevice
+0x1ef7273a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentDeviceCheckInResponse
+0x1ef727378  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentDeviceCheckinDownloadRecord
+0x1ef727350  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentDeviceCheckinRequest
+0x1ef72cc88  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentDeviceConfigurationData
+0x1ef71ec50  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentDeviceLocationSession
+0x1ee330f98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentDeviceMetadata
+0x1ef71ec28  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentDeviceMetadataFetchTask
+0x1ef727328  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentDevicePassesRequest
+0x1ef727300  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentDevicePlatfomData
+0x1ef71ec00  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentDeviceProvisioningData
+0x1ef7272d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentDeviceRegistrationData
+0x1ef71ebd8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentDigitalIssuanceMetadata
+0x1ef71ebb0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentDigitalIssuanceProductCredential
+0x1ef71eb88  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentEligibilityFIDOProfile
+0x1ef71eb60  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentEligibilityRequest
+0x1ef71eb38  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentEligibilityResponse
+0x1ef71eb10  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentEligibilitySupplementaryData
+0x1ef71eae8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentExternalOfferCredential
+0x1ef71eac0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentFetchPassLegalAgreementRequest
+0x1ef71ea98  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentFetchPassLegalAgreementResponse
+0x1ee32e888  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentHardwareStatus
+0x1ef72cc60  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentHeroImage
+0x1ef71ea70  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentHeroImageController
+0x1ee331768  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentHeroImageManifest
+0x1ef72cc38  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentHeroImageModel
+0x1ef72cc10  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentHeroImageSet
+0x1ee32f670  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentHostEndpointRegistry
+0x1ef71ea48  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentHostUpdate
+0x1ef71ea20  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentIdentityCredential
+0x1ef71e9f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentInformationEventExtension
+0x1ef71e9d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentInformationEventExtensionBaseContext
+0x1ef71e9a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentInformationEventExtensionContext
+0x1ef71e980  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentInformationEventExtensionHostContext
+0x1ef71e958  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentInitiateExternalProvisioningRequest
+0x1ef71e930  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentInitiateExternalProvisioningRequestDPANAuthorization
+0x1ee334120  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentInstallmentConfiguration
+0x1ef71e908  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentInstallmentItem
+0x1ef71e8e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentInstructions
+0x1ef71e8b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentIssuerProvisioningCertificatesRequest
+0x1ef71e890  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentIssuerProvisioningCertificatesResponse
+0x1ef71e868  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentIssuerProvisioningExtensionCredential
+0x1ef71e840  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentLocalAppletSubcredentialPassCredential
+0x1ef71e818  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentLocalPassCredential
+0x1ee3343f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentMarket
+0x1ef7272b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentMarketCircularGeoFence
+0x1ef727288  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentMarketsConfiguration
+0x1ef727260  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentMerchantData
+0x1ee32f648  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentMerchantSession
+0x1ee333e00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentMessage
+0x1ee333310  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentMethod
+0x1ef71e7f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentMultiTokenDataItem
+0x1ef71e7c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentNetworkCardImagesManifestRequest
+0x1ef727238  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentNonceRequest
+0x1ef727210  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentNonceResponse
+0x1ef71e7a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentNotificationActionRequest
+0x1ef71e778  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentNotificationActionResponse
+0x1ef71e750  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentNotifyIssuerAppletDirtyRequest
+0x1ef7271e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferAction
+0x1ef71e728  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferActionResult
+0x1ef71e700  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferAssessmentCollection
+0x1ef71e6d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferBalanceLocalizedContent
+0x1ef72b1d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferCapability
+0x1ef72cbe8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferCatalog
+0x1ef7271c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferConfirmationRecord
+0x1ef72cbc0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferCriteria
+0x1ef729cb8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferCriteriaIneligibleDetails
+0x1ef72cb98  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferDynamicContent
+0x1ef72b1a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferDynamicContentCustomLayout
+0x1ef727198  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferDynamicContentCustomLayoutItem
+0x1ef71e6b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferDynamicContentCustomLayoutItemTextDetails
+0x1ef72cb70  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferDynamicContentIcon
+0x1ef72cb48  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferDynamicContentIconVariant
+0x1ef72cb20  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferDynamicContentPage
+0x1ef727170  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferInstallmentAssessment
+0x1ef727148  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferInstallmentAssessmentOffer
+0x1ef72caf8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferInstallmentCriteria
+0x1ef729c90  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferInstallmentCriteriaEligibilityConfiguration
+0x1ef71e688  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferInstallmentDownpaymentDetails
+0x1ef71e660  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferInstallmentFeeDetailItem
+0x1ef71e638  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferInstallmentFeeDetails
+0x1ef71e610  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferInstallmentInterestDetailItem
+0x1ef71e5e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferInstallmentInterestDetails
+0x1ef71e5c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferInstallmentMerchantDetails
+0x1ef727120  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferMerchandisingOffer
+0x1ee332b40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentOfferMerchandisingOfferDetails
+0x1ef71e598  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferMerchandisingOfferItem
+0x1ef71e570  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferPayInFullConfirmationRecord
+0x1ef7270f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferRewardsCriteria
+0x1ef71e548  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferRewardsCriteriaEligibilityConfiguration
+0x1ef71e520  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferRewardsRedemptionIntent
+0x1ef71e4f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferSelectedConfirmationRecord
+0x1ef71e4d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferSetupInstallmentsPostPurchaseConfirmationRecord
+0x1ef71e4a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferTopUpLocalizedContent
+0x1ef71e480  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceCancel
+0x1ef71e458  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceCancelResponse
+0x1ef7270d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceCatalogRequest
+0x1ef7270a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceCatalogResponse
+0x1ef71e430  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceConfirmOffer
+0x1ef71e408  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceConfirmResponse
+0x1ef71e3e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceDynamicContentRequest
+0x1ef71e3b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceDynamicContentResponse
+0x1ef71e390  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceMerchandisingRequest
+0x1ef71e368  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceMerchandisingResponse
+0x1ef71e340  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceMerchandisingWidgetRequest
+0x1ef71e318  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceMerchandisingWidgetResponse
+0x1ef71e2f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServicePaymentOffers
+0x1ef71e2c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServicePaymentOffersResponse
+0x1ef71e2a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServicePaymentStatus
+0x1ef71e278  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServicePaymentStatusResponse
+0x1ef727080  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceRequest
+0x1ef727058  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceResponse
+0x1ef71e250  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceRewardsBalancesRequest
+0x1ef71e228  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceRewardsBalancesResponse
+0x1ef71e200  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceRewardsRedemptionsRequest
+0x1ef71e1d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceRewardsRedemptionsResponse
+0x1ef71e1b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceSelectedOffer
+0x1ef71e188  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOfferWebServiceSelectedOfferResponse
+0x1ef729c68  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOffersController
+0x1ef71e160  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOffersControllerLoadingDetails
+0x1ef71e138  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOffersControllerMerchandisingRequest
+0x1ef727030  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOffersControllerRequest
+0x1ef729c40  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOffersControllerSelectedOfferDetails
+0x1ee332b18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentOffersSessionDetails
+0x1ef71e110  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOffersSessionTransactionDetails
+0x1ee32e860  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentOptionsDefaults
+0x1ef727008  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOptionsRecents
+0x1ee32e838  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentOptionsSynchronization
+0x1ef72b180  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentOrderDetails
+0x1ee3357c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentPass
+0x1ee330f70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentPassAction
+0x1ef71e0e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPassActionBundle
+0x1ef71e0c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPassActionExternalActionContent
+0x1ee330f48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentPassActionGroup
+0x1ef71e098  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPassActionRemoteConfiguration
+0x1ef71e070  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPassActionSummaryItemsRequest
+0x1ef71e048  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPassActionSummaryItemsResponse
+0x1ef726fe0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPassBackgroundDownloadRecord
+0x1ee3346c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentPassContent
+0x1ef71e020  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPassRequest
+0x1ef726fb8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPassesResponse
+0x1ef71dff8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPaymentOfferDataItem
+0x1ef726f90  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPreference
+0x1ef71dfd0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPreferenceBankAccount
+0x1ef71dfa8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPreferenceCard
+0x1ef71df80  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPreferenceCardEntry
+0x1ef726f68  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPreferenceContact
+0x1ef71df58  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPreferenceName
+0x1ef71df30  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPreferenceRemoteDevice
+0x1ef71df08  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPreferenceShippingMethod
+0x1ef71dee0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPreferenceUsePeerPaymentBalanceSwitch
+0x1ef71deb8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPrepareToProvisionRequest
+0x1ef71de90  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPrepareTransactionDetailsRequest
+0x1ef71de68  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPrepareTransactionDetailsResponse
+0x1ee330660  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentProductsActionRequest
+0x1ef71de40  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentProvisionPrecursorPassRequest
+0x1ef71de18  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentProvisionPrecursorPassResponse
+0x1ef726f40  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentProvisioningController
+0x1ef71ddf0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentProvisioningControllerCredentialQueue
+0x1ef71ddc8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentProvisioningMethodMetadata
+0x1ef71dda0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentProvisioningMethodMetadataRequest
+0x1ef71dd78  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentProvisioningMethodMetadataResponse
+0x1ef71dd50  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentProvisioningNonceRequest
+0x1ef71dd28  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentProvisioningNonceResponse
+0x1ef71dd00  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentProvisioningPassData
+0x1ef71dcd8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentProvisioningRequest
+0x1ef71dcb0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentProvisioningResponse
+0x1ef71dc88  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentProvisioningTracker
+0x1ef71dc60  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPurchasedProductCredential
+0x1ee3332e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentPushProvisioningCredential
+0x1ef71dc38  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPushProvisioningProvideEncryptedPushProvisioningTargetRequest
+0x1ef71dc10  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPushProvisioningSharingIdentifiersRequest
+0x1ef71dbe8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPushProvisioningSharingIdentifiersResponse
+0x1ef71dbc0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPushProvisioningSharingStatusRequest
+0x1ef71db98  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentPushProvisioningSharingStatusResponse
+0x1ef71db70  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRegisterCredentialRequest
+0x1ef71db48  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRegisterCredentialResponse
+0x1ef71db20  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRegisterPreTrackCredentialRequest
+0x1ef71daf8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRegisterTrackCredentialRequest
+0x1ef726f18  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRegistrationRequest
+0x1ef726ef0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRegistrationResponse
+0x1ee32e810  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentRegistrationUtilities
+0x1ef726ec8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRemoteAssetDownloadRecord
+0x1ef71dad0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRemoteContentPassActionGroupRequest
+0x1ef71daa8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRemoteContentPassActionGroupResponse
+0x1ef71da80  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRemoteContentPassActionRequest
+0x1ef71da58  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRemoteContentPassActionResponse
+0x1ef71da30  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRemoteCredential
+0x1ef71da08  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRemoteCredentialFIDOProfile
+0x1ef71d9e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRemoteCredentialsRequest
+0x1ef71d9b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRemoteCredentialsResponse
+0x1ef71d990  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRemoteCredentialsUpdateResponse
+0x1ef71d968  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRemotePassesRequest
+0x1ef71d940  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRemotePaymentInstrumentDataItem
+0x1ef71d918  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRepopulateZonesRequest
+0x1ee334cd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentRequest
+0x1ef726ea0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRequestCouponCodeUpdate
+0x1ef729c18  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRequestMerchantSessionUpdate
+0x1ef71d8f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRequestPassUpdateRequest
+0x1ef71d8c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRequestPassUpdateResponse
+0x1ef72b158  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRequestPaymentMethodUpdate
+0x1ef72b130  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRequestShippingContactUpdate
+0x1ef72b108  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRequestShippingMethodUpdate
+0x1ef729bf0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRequestSupportedQuery
+0x1ef72b0e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRequestUpdate
+0x1ef72cad0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRequestValidator
+0x1ef71d8a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRequirementsRequest
+0x1ef71d878  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRequirementsResponse
+0x1ef71d850  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRevokeSharedCredentialRequest
+0x1ef71d828  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRevokeSharedCredentialResponse
+0x1ee332af0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentRewardsBalance
+0x1ee3332c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentRewardsRedemption
+0x1ef71d800  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRewardsRedemptionDetails
+0x1ef71d7d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRewardsRedemptionTransactionDetails
+0x1ef71d7b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRewardsRedemptionUnit
+0x1ef726e78  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRewrapRequest
+0x1ef726e50  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRewrapRequestBase
+0x1ef726e28  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRewrapResponse
+0x1ef726e00  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentRewrapResponseBase
+0x1ef71d788  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSendOwnershipTokensRequest
+0x1ee3337e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentService
+0x1ef71d760  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentServiceProviderPerformActionRequest
+0x1ef71d738  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentServiceProviderPerformActionResponse
+0x1ef71d710  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentServiceProviderPerformPaymentRequest
+0x1ef71d6e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentServiceProviderPerformPaymentResponse
+0x1ef71d6c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentServiceProviderPurchaseRequest
+0x1ef71d698  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentServiceProviderPurchasesRequest
+0x1ef71d670  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentServiceProviderPurchasesResponse
+0x1ef72b0b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSession
+0x1ef72b090  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSessionHandle
+0x1ef71d648  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupAssistantCoreController
+0x1ef71d620  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupAssistantCoreCredential
+0x1ef71d5f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupAssistantCoreProvisioningContext
+0x1ef71d5d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupAssistantRegistrationUtilities
+0x1ee3356b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentSetupConfiguration
+0x1ee335688  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFeature
+0x1ef726dd8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupField
+0x1ef71d5a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInAboutCreditReporting
+0x1ef71d580  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInAddressLine1
+0x1ef71d558  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInAddressLine2
+0x1ef71d530  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInAdministrativeArea
+0x1ef71d508  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInBalance
+0x1ef71d4e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInCardExpiration
+0x1ef71d4b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInCardOnFilePrimaryAccountNumber
+0x1ef71d490  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInCardPinCode
+0x1ef71d468  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInCardSecurityCode
+0x1ef71d440  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInCardholderName
+0x1ef71d418  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInCitizenship
+0x1ef71d3f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInCity
+0x1ef71d3c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInCountryCode
+0x1ef71d3a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInDateOfBirth
+0x1ef71d378  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInDescription
+0x1ef71d350  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInEmail
+0x1ef71d328  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInFirstName
+0x1ef71d300  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInLastName
+0x1ef71d2d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInMonthlySpendLimit
+0x1ef71d2b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInOTPCode
+0x1ef71d288  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInPhoneNumber
+0x1ef71d260  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInPostalCode
+0x1ef71d238  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInPrimaryAccountNumber
+0x1ef71d210  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInSSN
+0x1ef71d1e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInSSNSuffix
+0x1ef71d1c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInState
+0x1ef71d198  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInSubLocality
+0x1ef71d170  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInTotalAssets
+0x1ef71d148  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInTotalAssetsPicker
+0x1ef71d120  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInTotalIncome
+0x1ef71d0f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInTransactionLimit
+0x1ef71d0d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInYearlyIncome
+0x1ef71d0a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldBuiltInYearlyIncomeLabel
+0x1ef71d080  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldDate
+0x1ef726db0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldFooter
+0x1ef71d058  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldFormatter
+0x1ef726d88  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldLabel
+0x1ef71d030  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldPicker
+0x1ef71d008  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldPickerItem
+0x1ef71cfe0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldRequirement
+0x1ef71cfb8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldText
+0x1ef71cf90  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupFieldsModel
+0x1ee333dd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentSetupMoreInfoItem
+0x1ef726d60  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupPartner
+0x1ef729bc8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupProduct
+0x1ef726d38  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupProductCategory
+0x1ef729ba0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupProductConfiguration
+0x1ef726d10  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupProductImageAssetURLs
+0x1ef726ce8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupProductImageAssets
+0x1ef726cc0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupProductModel
+0x1ef726c98  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupProductPaymentOption
+0x1ef726c70  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupProductRegionData
+0x1ef726c48  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupProductRegionDataCoordinate
+0x1ef726c20  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSetupProductSection
+0x1ee3343c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentSetupRequest
+0x1ee333db0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentShareableCredential
+0x1ef72d688  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSheetApplePayButtonTapAttribution
+0x1ef71cf68  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSheetApplePayMerchandisingAttribution
+0x1ef729b78  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSheetAttribution
+0x1ef726bf8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentShippingAddressDataItem
+0x1ef71cf40  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentShippingContactDataItem
+0x1ef71cf18  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentShippingMethodDataItem
+0x1ef71cef0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSubmitActivationCodeRequest
+0x1ee330638  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentSummaryItem
+0x1ef72caa8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSummaryItemValidator
+0x1ef726bd0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentSummaryItemsDataItem
+0x1ef71cec8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentTapToProvisionConfigurationRequest
+0x1ef71cea0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentTapToProvisionConfigurationResponse
+0x1ef71ce78  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentTapToProvisionData
+0x1ee333298  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentToken
+0x1ef72b068  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentTokenContext
+0x1ef72ca80  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentTokenContextValidator
+0x1ee334260  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentTransaction
+0x1ee32f620  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionAmountModifier
+0x1ef726ba8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionArchive
+0x1ef726b80  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionArchiveLocation
+0x1ee32f5f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionAward
+0x1ee32f5d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionBankConnectMetadata
+0x1ef71ce50  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionFeeItem
+0x1ee32f5a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionFees
+0x1ee32f580  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionForeignExchangeInformation
+0x1ee333d88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionGroup
+0x1ef72b040  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionPresentation
+0x1ef729b50  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionPresentationInformation
+0x1ee32f558  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionQuestion
+0x1ee333d60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionRequest
+0x1ef726b58  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionRequestAmountComparison
+0x1ee32f530  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionRewards
+0x1ee32e7e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionRewardsItem
+0x1ee333270  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionTag
+0x1ef71ce28  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentTransactionToDeleteFromFinance
+0x1ef726b30  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentUnregisterRequest
+0x1ef726b08  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentUpdateRegistrationDataRequest
+0x1ef72b018  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentValidationCache
+0x1ef72aff0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentValidationCacheEntry
+0x1ef72afc8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentValidationCacheKey
+0x1ef71ce00  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentVehicleManufacturerRequest
+0x1ef71cdd8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentVehicleManufacturerResponse
+0x1ef71cdb0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentVerificationObserver
+0x1ef71cd88  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentVerificationOptionsRequest
+0x1ef71cd60  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentVerificationSubmitMethodEntry
+0x1ef71cd38  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentVerificationUpdateRequest
+0x1ee331c18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentWebService
+0x1ef729b28  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentWebServiceBackgroundContext
+0x1ee331bf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentWebServiceConfiguration
+0x1ee3320f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentWebServiceContext
+0x1ef71cd10  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentWebServiceLocalProxyTargetDevice
+0x1ef71cce8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentWebServicePaginatedRequest
+0x1ef71ccc0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentWebServiceProxyTargetDeviceDebugHelper
+0x1ee331bc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentWebServiceRegion
+0x1ef71cc98  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentWebServiceRemoteProxyTargetDevice
+0x1ee332320  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentWebServiceRequest
+0x1ef71cc70  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentWebServiceRequestBuilder
+0x1ee3314c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentWebServiceResponse
+0x1ef71cc48  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaymentWebServiceSecureRequestBuilder
+0x1ee331740  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaymentWebServiceTargetDevice
+0x1ef71cc20  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAcceptTermsRequest
+0x1ef71cbf8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAcceptableDocumentsRequest
+0x1ee32fda0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAccount
+0x1ef72ca58  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAccountFeatureDescriptor
+0x1ef72afa0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAccountInvitation
+0x1ef726ae0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAccountRequest
+0x1ef71cbd0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAccountResolutionControllerConfiguration
+0x1ef726ab8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAccountResponse
+0x1ef71cba8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAddAssociatedAccountRequest
+0x1ef71cb80  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAddAssociatedAccountResponse
+0x1ef72ca30  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAdditionalPushTopics
+0x1ef726a90  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAddress
+0x1ef71cb58  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAssociatedAccountActionRequest
+0x1ef71cb30  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAssociatedAccountActionResponse
+0x1ef72ca08  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAssociatedAccountInformation
+0x1ef72af78  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAssociatedAccountRemovalRecord
+0x1ef726a68  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAssociatedAccountsRequest
+0x1ef726a40  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentAssociatedAccountsResponse
+0x1ef71cb08  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentBankAccountInformation
+0x1ef71cae0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentBankLookupRequest
+0x1ef71cab8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentBankLookupResponse
+0x1ef71ca90  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentCardDataItem
+0x1ef729b00  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentContactResolver
+0x1ef71ca68  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentController
+0x1ef71ca40  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentControllerInternalState
+0x1ee32fd78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPeerPaymentCounterpartHandleFormatter
+0x1ee32f508  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPeerPaymentCounterpartImageData
+0x1ef71ca18  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentCredential
+0x1ef726a18  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentDeviceRegistrationData
+0x1ef71c9f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentDeviceScoreAttributes
+0x1ef7269f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentDeviceScoreEncryptedPayloadManager
+0x1ef71c9c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentDocumentSubmissionRequest
+0x1ef71c9a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentDocumentSubmissionResponse
+0x1ef71c978  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentDynamicFraudAlertContent
+0x1ef71c950  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentDynamicFraudContent
+0x1ef71c928  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentDynamicFraudPage
+0x1ef71c900  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentDynamicFraudPageBodyBulletedListContent
+0x1ef71c8d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentDynamicFraudPageBodyBulletedListLine
+0x1ef71c8b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentDynamicFraudPageBodyContent
+0x1ef71c888  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentDynamicFraudPageBodyLinkContent
+0x1ef71c860  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentDynamicFraudPageBodyTextContent
+0x1ef71c838  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentDynamicFraudTitleMessageContent
+0x1ef71c810  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentEmailTermsAccountRequest
+0x1ef7269c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentEncryptionCertificate
+0x1ef7269a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentEncryptionCertificatesRequest
+0x1ef726978  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentEncryptionCertificatesResponse
+0x1ef72c9e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentEncryptionCertificatesVersions
+0x1ef71c7e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentFailureDiagnostic
+0x1ef71c7c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentFailureDiagnosticRequest
+0x1ef71c798  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentIdentityRequest
+0x1ef71c770  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentIdentityVerificationRequest
+0x1ef71c748  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentIdentityVerificationRequiredResponse
+0x1ef71c720  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentIdentityVerificationResponse
+0x1ef71c6f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentInformalRequestToken
+0x1ee32e7c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPeerPaymentMessageFileTransferDetails
+0x1ef71c6d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentMessageLocalProperties
+0x1ef726950  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentOnDeviceProvisioningCheck
+0x1ef71c6a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPassDetailsRequest
+0x1ef71c680  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPassDetailsResponse
+0x1ef72c9b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPaymentModeIdentifiers
+0x1ee32f4e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPendingRequest
+0x1ef71c658  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPendingRequestPerformActionRequest
+0x1ef71c630  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPendingRequestPerformActionResponse
+0x1ef71c608  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPendingRequestSummary
+0x1ef71c5e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPendingRequestsRequest
+0x1ef71c5b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPendingRequestsResponse
+0x1ef71c590  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPerformActionRequest
+0x1ef71c568  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPerformActionResponse
+0x1ef71c540  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPerformRequest
+0x1ef71c518  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPerformResponse
+0x1ee32f4b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPreferences
+0x1ef729ad8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPreferencesNotification
+0x1ef72af50  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPreferencesProfileAppearance
+0x1ef726928  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPreferencesRequest
+0x1ef726900  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPreferencesResponse
+0x1ef729ab0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPreferencesRestriction
+0x1ef71c4f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentProfileAppearanceData
+0x1ef71c4c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentPurchaseData
+0x1ef7268d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentQuote
+0x1ef71c4a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentQuoteCertificatesRequest
+0x1ef71c478  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentQuoteCertificatesResponse
+0x1ef71c450  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentQuoteConfiguration
+0x1ef7268b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentQuoteItem
+0x1ef71c428  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentQuoteRequest
+0x1ef71c400  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentQuoteResponse
+0x1ef71c3d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentReOpenAccountRequest
+0x1ef70d7b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentReceiptImageManager
+0x1ef71c3b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRecipient
+0x1ef726888  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRecipientCache
+0x1ef71c388  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRecipientRequest
+0x1ef71c360  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRecipientResponse
+0x1ef71c338  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRecipientsRequest
+0x1ef71c310  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRecipientsResponse
+0x1ee333248  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRecurringPayment
+0x1ef71c2e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRecurringPaymentActionRequest
+0x1ef71c2c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRecurringPaymentActionResponse
+0x1ef71c298  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRecurringPaymentFundingSource
+0x1ee32f490  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRecurringPaymentMemo
+0x1ef71c270  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRecurringPaymentTransaction
+0x1ef726860  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRecurringPaymentsRequest
+0x1ef726838  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRecurringPaymentsResponse
+0x1ee32e798  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRequest
+0x1ef71c248  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRequestToken
+0x1ef71c220  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRequestTokenRequest
+0x1ef71c1f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRequestTokenResponse
+0x1ef71c1d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentRequiredFieldsPage
+0x1ee330228  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPeerPaymentService
+0x1ef726810  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentServiceRegistrationRequest
+0x1ef7267e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentServiceRegistrationResponse
+0x1ef7267c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentServiceUnregisterRequest
+0x1ef71c1a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentSession
+0x1ef71c180  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentStatementRequest
+0x1ef71c158  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentStatementResponse
+0x1ef71c130  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentStatusRequest
+0x1ef71c108  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentStatusResponse
+0x1ef71c0e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentSubmitDeviceScoreIdentifiersRequest
+0x1ef71c0b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentTermsAcceptanceResponse
+0x1ef71c090  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentTransactionAnswerRequest
+0x1ef729a88  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentTransactionMetadata
+0x1ef71c068  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentUpdatePreferencesRequest
+0x1ef71c040  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentUpdatePreferencesResponse
+0x1ef71c018  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentUpdateUserInfoRequest
+0x1ef71bff0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentUpdateUserInfoResponse
+0x1ee32e770  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPeerPaymentUserInfo
+0x1ef71bfc8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentUserInfoRequest
+0x1ef71bfa0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentUserInfoResponse
+0x1ee330200  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPeerPaymentWebService
+0x1ef71bf78  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentWebServiceBadRequestResponse
+0x1ee330f20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPeerPaymentWebServiceContext
+0x1ef726798  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentWebServiceRequest
+0x1ef726770  __AUTH,__objc_data  _OBJC_CLASS_$_PKPeerPaymentWebServiceResponse
+0x1ee3301d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPeerPaymentWebServiceTargetDevice
+0x1ee3337c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPendingAccountCredential
+0x1ee333798  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPendingCarKeyProvisioning
+0x1ee333220  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPendingIdentityCredential
+0x1ef71bf50  __AUTH,__objc_data  _OBJC_CLASS_$_PKPendingInvitationRequest
+0x1ef71bf28  __AUTH,__objc_data  _OBJC_CLASS_$_PKPendingPassUpgrade
+0x1ee333770  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPendingPaymentRemoteCredential
+0x1ef726748  __AUTH,__objc_data  _OBJC_CLASS_$_PKPendingPaymentTransaction
+0x1ef72af28  __AUTH,__objc_data  _OBJC_CLASS_$_PKPendingPrecursorPassCredential
+0x1ee333748  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPendingProvisioning
+0x1ee332ac8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPendingProvisioningChange
+0x1ee332aa0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPendingProvisioningReceipt
+0x1ee333720  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPendingShareableCredential
+0x1ee3331f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPendingStatefulTransferProvisioning
+0x1ee3331d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPendingStatefulTransferProvisioningReference
+0x1ee330ef8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPhysicalCard
+0x1ee330ed0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPhysicalCardAction
+0x1ef71bf00  __AUTH,__objc_data  _OBJC_CLASS_$_PKPhysicalCardArtworkOption
+0x1ef71bed8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPhysicalCardOrder
+0x1ef726720  __AUTH,__objc_data  _OBJC_CLASS_$_PKPhysicalCardOrderActivityEvent
+0x1ef71beb0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPhysicalCardPriceOption
+0x1ef729a60  __AUTH,__objc_data  _OBJC_CLASS_$_PKPickerContactFieldConfiguration
+0x1ee330610  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPlaceholderPassConfiguration
+0x1ef71be88  __AUTH,__objc_data  _OBJC_CLASS_$_PKPlaceholderPassGenerator
+0x1ef71be60  __AUTH,__objc_data  _OBJC_CLASS_$_PKPrecursorPassCredential
+0x1ef70d790  __AUTH,__objc_data  _OBJC_CLASS_$_PKPrecursorPassManager
+0x1ef70d768  __AUTH,__objc_data  _OBJC_CLASS_$_PKPrecursorPassReprovisionCredential
+0x1ef729a38  __AUTH,__objc_data  _OBJC_CLASS_$_PKPrecursorPassUpgradeController
+0x1ef71be38  __AUTH,__objc_data  _OBJC_CLASS_$_PKPrecursorPassUpgradeRequestAction
+0x1ef71be10  __AUTH,__objc_data  _OBJC_CLASS_$_PKPrecursorPassUpgradeRequestDescription
+0x1ef71bde8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPredefinedSharedEntitlementSelection
+0x1ef71bdc0  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufAppletSubcredentialSharingInvitation
+0x1ef71bd98  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufAutomaticReloadPaymentRequest
+0x1ef71bd70  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufAutomaticReloadPaymentSummaryItem
+0x1ef71bd48  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufCloudStoreZoneInvitation
+0x1ef71bd20  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufCloudStoreZoneInvitationRequest
+0x1ef71bcf8  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufCloudStoreZoneInvitationResponse
+0x1ef71bcd0  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufCommonSharingMessage
+0x1ef71bca8  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufCommonSharingMessageTypeChecker
+0x1ef71bc80  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufCustomPrecisionAmount
+0x1ef71bc58  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufDeferredPaymentRequest
+0x1ef71bc30  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufDeferredPaymentSummaryItem
+0x1ef71bc08  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufDeviceSharingCapabilities
+0x1ef71bbe0  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufDisbursementSummaryItem
+0x1ef71bbb8  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufFlightShareMessage
+0x1ef71bb90  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufIDSSharingMessageWrapper
+0x1ef71bb68  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufInstantFundsOutFeeSummaryItem
+0x1ef71bb40  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufMessageFileTransferDetails
+0x1ef71bb18  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufNSDecimalNumber
+0x1ef71baf0  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPayment
+0x1ef71bac8  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentApplication
+0x1ef71baa0  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentCancellation
+0x1ef71ba78  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentClientUpdate
+0x1ef71ba50  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentContentItem
+0x1ef71ba28  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentDeviceRequest
+0x1ef71ba00  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentDeviceResponse
+0x1ef71b9d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentHostUpdate
+0x1ef71b9b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentInstrument
+0x1ef71b988  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentInstrumentThumbnailRequest
+0x1ef71b960  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentInstrumentThumbnailResponse
+0x1ef71b938  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentMerchantSession
+0x1ef71b910  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentMethod
+0x1ef71b8e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentRequest
+0x1ef71b8c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentSetupFeature
+0x1ef71b898  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentSetupRequest
+0x1ef71b870  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentStatus
+0x1ef71b848  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentSummaryItem
+0x1ef71b820  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentToken
+0x1ef71b7f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPaymentTokenContext
+0x1ef71b7d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPeerPaymentMessage
+0x1ef71b7a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPeerPaymentMessageReceiptDetails
+0x1ef71b780  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufPromptDetailsForVirtualCard
+0x1ef71b758  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufRecurringPaymentRequest
+0x1ef71b730  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufRecurringPaymentSummaryItem
+0x1ef71b708  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufRelaySharingMessage
+0x1ef71b6e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufRemotePaymentRequest
+0x1ef71b6b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufRemotePaymentResponse
+0x1ef71b690  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufRemoteRegistrationRequest
+0x1ef71b668  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufRemoteRegistrationRequestResult
+0x1ef71b640  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufShareableCredential
+0x1ef71b618  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufShareableCredentialMessage
+0x1ef71b5f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufShippingMethod
+0x1ef71b5c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKProtobufShippingMethods
+0x1ef71b5a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisionedPassBundle
+0x1ef71b578  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningAnalyticsArchive
+0x1ef71b550  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningAnalyticsSession
+0x1ef71b528  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningAnalyticsSessionCampaignAttributionSubjectHandle
+0x1ef71b500  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningAnalyticsSessionMarketingSubjectHandle
+0x1ef71b4d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningAnalyticsSessionPreflightReporter
+0x1ef71b4b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningAnalyticsSessionPreflightToken
+0x1ef71b488  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningAnalyticsSessionProvisioningSubjectHandle
+0x1ef71b460  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningAnalyticsSessionReporter
+0x1ef71b438  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningAnalyticsSessionStepReporter
+0x1ef71b410  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningAnalyticsSessionSubjectHandle
+0x1ef71b3e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningAnalyticsSessionUIReporter
+0x1ef71b3c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningAnalyticsState
+0x1ef71b398  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningAssetManager
+0x1ef7266f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningBackgroundCoordinator
+0x1ef70fe58  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningCarKeyStepTrackKeyTrackedPass
+0x1ef71b370  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningContext
+0x1ee332a78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKProvisioningContinuityDiscoveryRequestMessage
+0x1ee332a50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKProvisioningContinuityDiscoveryResponseMessage
+0x1ef71b348  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningError
+0x1ef71b320  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningExistingCardAuthorization
+0x1ef71b2f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningExistingCardAuthorizationDestinationDeviceSignature
+0x1ef71b2d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningExistingCardAuthorizationEntry
+0x1ef70d820  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningExistingCardAuthorizationPreflightCoordinator
+0x1ef71b2a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningExistingCardAuthorizationResult
+0x1ef71b280  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningExistingCardAuthorizationStoreRequest
+0x1ef71b258  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningExistingCardAuthorizationStoreResponse
+0x1ef71b230  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningJPKISupportData
+0x1ef71b208  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningPaymentApplication
+0x1ef71b1e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningProximitySetupAssistantMessage
+0x1ef7266d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningRequirementOracle
+0x1ef7266a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningRequirementsContainer
+0x1ef71b1b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningRestrictionsProfile
+0x1ef726680  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningSEStorageManager
+0x1ee332a28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKProvisioningSEStorageSnapshot
+0x1ee332a00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKProvisioningSupportData
+0x1ef71b190  __AUTH,__objc_data  _OBJC_CLASS_$_PKProvisioningUtility
+0x1ef71b168  __AUTH,__objc_data  _OBJC_CLASS_$_PKProxCardRequest
+0x1ee32f468  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKProximityAdvertiser
+0x1ef71b140  __AUTH,__objc_data  _OBJC_CLASS_$_PKProximityDetector
+0x1ef71b118  __AUTH,__objc_data  _OBJC_CLASS_$_PKProximitySetupLiaison
+0x1ef71b0f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKProximitySetupSourceClient
+0x1ef71b0c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKPurchaseNewActionItem
+0x1ef71b0a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPushProvisioningSharingMetadata
+0x1ee333d38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPushProvisioningTarget
+0x1ef71b078  __AUTH,__objc_data  _OBJC_CLASS_$_PKPushTokenFetcher
+0x1ef71b050  __AUTH,__objc_data  _OBJC_CLASS_$_PKRecentContact
+0x1ef72af00  __AUTH,__objc_data  _OBJC_CLASS_$_PKRecurringPaymentRequest
+0x1ef71b028  __AUTH,__objc_data  _OBJC_CLASS_$_PKRecurringPaymentRequestValidator
+0x1ef72c990  __AUTH,__objc_data  _OBJC_CLASS_$_PKRecurringPaymentSummaryItem
+0x1ef71b000  __AUTH,__objc_data  _OBJC_CLASS_$_PKRecurringPaymentSummaryItemValidator
+0x1ef71afd8  __AUTH,__objc_data  _OBJC_CLASS_$_PKRefreshVPANPaymentCredentialRequest
+0x1ef729a10  __AUTH,__objc_data  _OBJC_CLASS_$_PKRegionalContactFormatConfiguration
+0x1ef71afb0  __AUTH,__objc_data  _OBJC_CLASS_$_PKRegisterMerchantTokenPublicKeyRequest
+0x1ef71af88  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemoteAlertPresentationTarget
+0x1ef7299e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemoteAssetManager
+0x1ef726658  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemoteAssetManifest
+0x1ef726630  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemoteAssetManifestItem
+0x1ef726608  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemoteCloudStoreAssetManifestItem
+0x1ee334a08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKRemoteDataAccessor
+0x1ef71af60  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemoteDevice
+0x1ef72aed8  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemoteImage
+0x1ef71af38  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemoteImagePreparer
+0x1ef72aeb0  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemoteImageSet
+0x1ef7265e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemoteNetworkPaymentCoordinator
+0x1ef72ae88  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemoteNetworkPaymentHandoffConfiguration
+0x1ef71af10  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemoteNetworkPaymentHandoffStageConfiguration
+0x1ef71aee8  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemoteNetworkPaymentHostSessionCoordinator
+0x1ef7299c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemotePaymentInstrument
+0x1ef71aec0  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemotePaymentRequest
+0x1ee32e748  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKRemoteRegistrationRequest
+0x1ef71ae98  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemoteThumbnailKey
+0x1ef729998  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemoveableAnimationTracker
+0x1ef729970  __AUTH,__objc_data  _OBJC_CLASS_$_PKRemoveableAnimationTrackerStore
+0x1ef70d740  __AUTH,__objc_data  _OBJC_CLASS_$_PKRestrictionsDeviceAssessmentRecoveryOption
+0x1ef71ae70  __AUTH,__objc_data  _OBJC_CLASS_$_PKRestrictionsProfile
+0x1ef7265b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKRestrictionsProfileItem
+0x1ef71ae48  __AUTH,__objc_data  _OBJC_CLASS_$_PKRestrictionsProfileRequest
+0x1ef71ae20  __AUTH,__objc_data  _OBJC_CLASS_$_PKRestrictionsProfileRequestRecoveryReviewRequest
+0x1ef71adf8  __AUTH,__objc_data  _OBJC_CLASS_$_PKRestrictionsProfileResponse
+0x1ef71add0  __AUTH,__objc_data  _OBJC_CLASS_$_PKRestrictionsRecoveryOption
+0x1ef71ada8  __AUTH,__objc_data  _OBJC_CLASS_$_PKRetrieveMerchantTokensRequest
+0x1ef726590  __AUTH,__objc_data  _OBJC_CLASS_$_PKRetrieveMerchantTokensResponse
+0x1ef726568  __AUTH,__objc_data  _OBJC_CLASS_$_PKRetrieveMerchantTokensUnifiedListRequest
+0x1ef71ad80  __AUTH,__objc_data  _OBJC_CLASS_$_PKRetrieveVPANPaymentCredentialRequest
+0x1ef71ad58  __AUTH,__objc_data  _OBJC_CLASS_$_PKRewardsSummaryFetcher
+0x1ef71ad30  __AUTH,__objc_data  _OBJC_CLASS_$_PKRewardsTierEducationSection
+0x1ef71ad08  __AUTH,__objc_data  _OBJC_CLASS_$_PKRoundedPath
+0x1ee32f440  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKRule
+0x1ef726540  __AUTH,__objc_data  _OBJC_CLASS_$_PKSEConsistencyCheckDeviceCredential
+0x1ef726518  __AUTH,__objc_data  _OBJC_CLASS_$_PKSEConsistencyCheckDeviceCredentialAppletProperties
+0x1ef7264f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSEConsistencyCheckDeviceCredentialISO18013Properties
+0x1ef7264c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSEConsistencyCheckPassCredential
+0x1ef71ace0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSEConsistencyCheckRequestedAction
+0x1ef7264a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSEConsistencyCheckResultCollector
+0x1ef726478  __AUTH,__objc_data  _OBJC_CLASS_$_PKSECredentialAddress
+0x1ef71acb8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSTSTapToProvisionParameters
+0x1ef71ac90  __AUTH,__objc_data  _OBJC_CLASS_$_PKSTSTapToProvisionReader
+0x1ef71ac68  __AUTH,__objc_data  _OBJC_CLASS_$_PKSTSTapToProvisionResult
+0x1ef726450  __AUTH,__objc_data  _OBJC_CLASS_$_PKSafariCardNotificationManager
+0x1ef71ac40  __AUTH,__objc_data  _OBJC_CLASS_$_PKSafariCredentialsUtilities
+0x1ef71ac18  __AUTH,__objc_data  _OBJC_CLASS_$_PKSavingsAccountAssessmentManager
+0x1ef72c968  __AUTH,__objc_data  _OBJC_CLASS_$_PKSavingsAccountDetails
+0x1ef72ae60  __AUTH,__objc_data  _OBJC_CLASS_$_PKSavingsAccountFeatureDescriptor
+0x1ee330ea8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSavingsAccountStatement
+0x1ef72ae38  __AUTH,__objc_data  _OBJC_CLASS_$_PKSavingsAccountStepUpDetails
+0x1ef72ae10  __AUTH,__objc_data  _OBJC_CLASS_$_PKSavingsAccountSummary
+0x1ef71abf0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSavingsAccountUserInfo
+0x1ef71abc8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSavingsMockUtilities
+0x1ef71aba0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchAccountResult
+0x1ef71ab78  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchAmountResult
+0x1ef71ab50  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchDateResult
+0x1ef71ab28  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchDisplayNameResult
+0x1ef71ab00  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchHistoryResult
+0x1ef71aad8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchObjectTypeResult
+0x1ef71aab0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchOrderResult
+0x1ef71aa88  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchPassResult
+0x1ef71aa60  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchPaymentSetupProductResult
+0x1ef71aa38  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchPendingPeerPaymentRequestResult
+0x1ef726428  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchQuery
+0x1ef71aa10  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchResults
+0x1ef71a9e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchService
+0x1ef71a9c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchTagResult
+0x1ef71a998  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchTransactionGroupResult
+0x1ef71a970  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchTransactionPeerPaymentSubTypeResult
+0x1ef71a948  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchTransactionResult
+0x1ef71a920  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchTransactionRewardsResult
+0x1ef71a8f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchTransactionSourceResult
+0x1ef71a8d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchTransactionStatusResult
+0x1ef71a8a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSearchTransactionTypeResult
+0x1ef71a880  __AUTH,__objc_data  _OBJC_CLASS_$_PKSeat
+0x1ef71a858  __AUTH,__objc_data  _OBJC_CLASS_$_PKSeatingInformation
+0x1ee331ba0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSecureElement
+0x1ef729948  __AUTH,__objc_data  _OBJC_CLASS_$_PKSecureElementApplet
+0x1ef729920  __AUTH,__objc_data  _OBJC_CLASS_$_PKSecureElementCertificateSet
+0x1ef726400  __AUTH,__objc_data  _OBJC_CLASS_$_PKSecureElementConsistencyCheckDeviceState
+0x1ef7263d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSecureElementConsistencyCheckResult
+0x1ef7263b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSecureElementConsistencyChecker
+0x1ee335a48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSecureElementPass
+0x1ef71a830  __AUTH,__objc_data  _OBJC_CLASS_$_PKSecureElementPassField
+0x1ef726388  __AUTH,__objc_data  _OBJC_CLASS_$_PKSecureElementPassFieldCollection
+0x1ee3336f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSecureElementPassRemoteNetworkPaymentOverrides
+0x1ef71a808  __AUTH,__objc_data  _OBJC_CLASS_$_PKSecureElementProvisioningState
+0x1ee3352a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSecureElementSignatureInfo
+0x1ef726360  __AUTH,__objc_data  _OBJC_CLASS_$_PKSecureElement_HWManagerEventListener
+0x1ef71a7e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSelectedItemActionItem
+0x1ee3329d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSelectedPaymentOffer
+0x1ee3329b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSelectedPaymentOfferInstallment
+0x1ef71a7b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSelectedPaymentOfferPaymentPassDetails
+0x1ee332988  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSelectedPaymentOfferRewards
+0x1ef726338  __AUTH,__objc_data  _OBJC_CLASS_$_PKSerializedDataAccessor
+0x1ef71a790  __AUTH,__objc_data  _OBJC_CLASS_$_PKServiceProviderOrder
+0x1ef7298f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKServiceProviderPaymentRequest
+0x1ef7298d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKServiceProviderPurchase
+0x1ef71a768  __AUTH,__objc_data  _OBJC_CLASS_$_PKServiceProviderPurchaseAction
+0x1ef71a740  __AUTH,__objc_data  _OBJC_CLASS_$_PKServiceProviderPurchaseData
+0x1ef726310  __AUTH,__objc_data  _OBJC_CLASS_$_PKSettingsDeepLinkController
+0x1ef70dee0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSetupAssistantRequirementsCheckResult
+0x1ef70e188  __AUTH,__objc_data  _OBJC_CLASS_$_PKSetupAssistantRequirementsChecker
+0x1ef71a718  __AUTH,__objc_data  _OBJC_CLASS_$_PKSetupAssistantUtilityContext
+0x1ef7298a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSetupProductMethod
+0x1ef71a6f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSetupProductMethodAppClip
+0x1ef7262e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSetupProductMethodAppExtension
+0x1ef71a6c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSetupProductMethodCameraCapture
+0x1ef7262c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSetupProductMethodDigitalIssuance
+0x1ef726298  __AUTH,__objc_data  _OBJC_CLASS_$_PKSetupProductMethodInApp
+0x1ef726270  __AUTH,__objc_data  _OBJC_CLASS_$_PKSetupProductMethodReaderMode
+0x1ef71a6a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSetupProductMethodWeb
+0x1ef71a678  __AUTH,__objc_data  _OBJC_CLASS_$_PKShapeLayerPathState
+0x1ef71a650  __AUTH,__objc_data  _OBJC_CLASS_$_PKShareAuthorizationSession
+0x1ef71a628  __AUTH,__objc_data  _OBJC_CLASS_$_PKShareAuthorizer
+0x1ee333d10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKShareableCredential
+0x1ee330e80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKShareablePassMetadata
+0x1ef71a600  __AUTH,__objc_data  _OBJC_CLASS_$_PKShareablePassMetadataPreview
+0x1ef726248  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharedAccountCloudStore
+0x1ef726220  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharedAccountCloudStoreZone
+0x1ef71a5d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharedPassSharesController
+0x1ee32f418  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSharedPaymentWebServiceArchiver
+0x1ef72ade8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharedPeerPaymentWebServiceArchiver
+0x1ee3331a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSharingCarKeyInvitation
+0x1ee333180  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSharingCarKeyMessage
+0x1ef71a5b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharingChannelDescriptor
+0x1ef71a588  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharingChannelHandle
+0x1ef71a560  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharingChannelHandleMessageWaiter
+0x1ef71a538  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharingChannelHandle_Client
+0x1ef71a510  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharingDestination
+0x1ef71a4e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharingExistingChannelDescriptor
+0x1ee332960  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSharingExternalInvitationRequestMessage
+0x1ee333158  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSharingGenericMessage
+0x1ee333130  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSharingHomeInvitation
+0x1ef71a4c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharingIDSChannelDescriptor
+0x1ee32f3f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSharingIDSManager
+0x1ef71a498  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharingIDSManagerHandlerConfiguration
+0x1ef71a470  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharingIDSManagerHandlerDetails
+0x1ee332938  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSharingInvitationRequestMessage
+0x1ef71a448  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharingLocalChannelDescriptor
+0x1ef71a420  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharingMesageProprietaryData
+0x1ee333108  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSharingMessage
+0x1ef71a3f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharingMessageDisplayInformation
+0x1ef71a3d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharingMessageDisplayInformationManager
+0x1ef71a3a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharingProximityChannelDescriptor
+0x1ee3330e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSharingPushProvisioningInvitation
+0x1ef71a380  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharingRelayChannelDescriptor
+0x1ef71a358  __AUTH,__objc_data  _OBJC_CLASS_$_PKSharingTransferChannelDescriptor
+0x1ee332910  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSharingURLMessage
+0x1ee32fd50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKShippingMethod
+0x1ef72c940  __AUTH,__objc_data  _OBJC_CLASS_$_PKShippingMethodValidator
+0x1ef72c918  __AUTH,__objc_data  _OBJC_CLASS_$_PKShippingMethods
+0x1ef71a330  __AUTH,__objc_data  _OBJC_CLASS_$_PKSimulatorPaymentPass
+0x1ee330e58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSiriIntentsConfiguration
+0x1ef7261f8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSpendingInsightTrend
+0x1ef7261d0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSpendingInsightTrendCollection
+0x1ef7261a8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSpendingInsightsFetcher
+0x1ee3336d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSpendingSummary
+0x1ef729880  __AUTH,__objc_data  _OBJC_CLASS_$_PKSpendingSummaryFetcher
+0x1ef726180  __AUTH,__objc_data  _OBJC_CLASS_$_PKSpendingSummaryFetcherRequest
+0x1ef71a308  __AUTH,__objc_data  _OBJC_CLASS_$_PKSpendingSummaryGenerator
+0x1ef72adc0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSpotlightBaseDocumentProcessor
+0x1ef71a2e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSpotlightBoardingPassDocumentProcessor
+0x1ef72ad98  __AUTH,__objc_data  _OBJC_CLASS_$_PKSpotlightDocumentDonationHandler
+0x1ef71a2b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSpotlightDocumentMatchingResult
+0x1ef72ad70  __AUTH,__objc_data  _OBJC_CLASS_$_PKSpotlightPaymentCardDocumentProcessor
+0x1ee32f3c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSpringAnimationFactory
+0x1ef71a290  __AUTH,__objc_data  _OBJC_CLASS_$_PKStandaloneTransactionBannerHandleRequest
+0x1ef71a268  __AUTH,__objc_data  _OBJC_CLASS_$_PKStatefulTransferCredential
+0x1ef71a240  __AUTH,__objc_data  _OBJC_CLASS_$_PKStoredValuePassBalance
+0x1ee3340f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKStoredValuePassProperties
+0x1ee3322f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSubcredentialEncryptedContainer
+0x1ef71a218  __AUTH,__objc_data  _OBJC_CLASS_$_PKSubcredentialProvisioningAcceptInvitationConfiguration
+0x1ef71a1f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSubcredentialProvisioningConfiguration
+0x1ef71a1c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKSubcredentialProvisioningController
+0x1ef71a1a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKSubcredentialSharingAnalyticsData
+0x1ef71a178  __AUTH,__objc_data  _OBJC_CLASS_$_PKSuicaPassProperties
+0x1ef72ad48  __AUTH,__objc_data  _OBJC_CLASS_$_PKSystemIconConfiguration
+0x1ef71a150  __AUTH,__objc_data  _OBJC_CLASS_$_PKSystemIconConfigurationColor
+0x1ef71a128  __AUTH,__objc_data  _OBJC_CLASS_$_PKTCCCoordinator
+0x1ef726158  __AUTH,__objc_data  _OBJC_CLASS_$_PKTPSDiscoverabilitySignal
+0x1ef71a100  __AUTH,__objc_data  _OBJC_CLASS_$_PKTapToRadarPrompt
+0x1ee333ce8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKTapToRadarRequest
+0x1ef729858  __AUTH,__objc_data  _OBJC_CLASS_$_PKTextContactFieldConfiguration
+0x1ee3301b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKTicket
+0x1ef71a0d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKTicketConcessionScheme
+0x1ef71a0b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKTicketContactInfo
+0x1ef71a088  __AUTH,__objc_data  _OBJC_CLASS_$_PKTicketDetails
+0x1ef71a060  __AUTH,__objc_data  _OBJC_CLASS_$_PKTicketStationDetails
+0x1ee32f3a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKTransactionAmount
+0x1ee32f378  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKTransactionAuthenticationContext
+0x1ef71a038  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransactionAuthenticationResult
+0x1ee32f350  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKTransactionCommutePlanUnit
+0x1ef726130  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransactionMerchantLookupSource
+0x1ee333cc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKTransactionReceipt
+0x1ef726108  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransactionReceiptAuthorizationRequest
+0x1ef7260e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransactionReceiptAuthorizationResponse
+0x1ef729830  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransactionReceiptHeaderField
+0x1ef729808  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransactionReceiptLineItem
+0x1ef7260b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransactionReceiptRequest
+0x1ef726090  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransactionReceiptSummaryItem
+0x1ee32f328  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKTransactionReleasedData
+0x1ef71a010  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransactionReleasedDataApplication
+0x1ef719fe8  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransactionReleasedDataElement
+0x1ef719fc0  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransactionSearchQuery
+0x1ef7297e0  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransactionSessionWrapper
+0x1ef7297b8  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransactionSource
+0x1ef729790  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransactionSourceCollection
+0x1ef719f98  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransitAppletAmount
+0x1ef719f70  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransitAppletBalance
+0x1ef719f48  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransitAppletCommutePlan
+0x1ee333c98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKTransitAppletHistory
+0x1ef719f20  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransitAppletHistoryRecord
+0x1ef719ef8  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransitAppletPlan
+0x1ee330e30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKTransitAppletState
+0x1ef719ed0  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransitAppletStateDirty
+0x1ef719ea8  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransitBalanceModel
+0x1ee333c70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKTransitCommutePlan
+0x1ef729768  __AUTH,__objc_data  _OBJC_CLASS_$_PKTransitCommutePlanPackage
+0x1ee334c60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKTransitPartner
+0x1ee3340d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKTransitPassProperties
+0x1ef719e80  __AUTH,__objc_data  _OBJC_CLASS_$_PKTrustedDeviceEnrollmentInfo
+0x1ef719e58  __AUTH,__objc_data  _OBJC_CLASS_$_PKTrustedDeviceEnrollmentInfoProvider
+0x1ef729740  __AUTH,__objc_data  _OBJC_CLASS_$_PKUIAnimationDelegate
+0x1ee334ee0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKUnifiedAccessHomeAuxiliaryCapabilityDescriptor
+0x1ef719e30  __AUTH,__objc_data  _OBJC_CLASS_$_PKUniqueAddressField
+0x1ee32e720  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKUsageNotificationClient
+0x1ee32f300  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKUsageNotificationServer
+0x1ee330e08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKUserLegalAgreementConsent
+0x1ef719e08  __AUTH,__objc_data  _OBJC_CLASS_$_PKUserNotificationAgent
+0x1ef72ad20  __AUTH,__objc_data  _OBJC_CLASS_$_PKUserNotificationAuthorizationController
+0x1ee3328e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKUserNotificationReceipt
+0x1ef719de0  __AUTH,__objc_data  _OBJC_CLASS_$_PKVPANNonceResponse
+0x1ef719db8  __AUTH,__objc_data  _OBJC_CLASS_$_PKVPANPaymentCredentialResponse
+0x1ef719d90  __AUTH,__objc_data  _OBJC_CLASS_$_PKVPANPaymentSessionRequest
+0x1ef72acf8  __AUTH,__objc_data  _OBJC_CLASS_$_PKValueAddedMerchant
+0x1ee333c48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKValueAddedServiceTransaction
+0x1ef719d68  __AUTH,__objc_data  _OBJC_CLASS_$_PKValueAddedServiceWebService
+0x1ef719d40  __AUTH,__objc_data  _OBJC_CLASS_$_PKVehicleConnectionSession
+0x1ef719d18  __AUTH,__objc_data  _OBJC_CLASS_$_PKVehicleInitiatedPairingProxCardRequest
+0x1ee3305e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKVerificationChannel
+0x1ee331b78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKVerificationRequestRecord
+0x1ef719cf0  __AUTH,__objc_data  _OBJC_CLASS_$_PKVerificationRequiredCredential
+0x1ee333c20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKVirtualCard
+0x1ef72c8f0  __AUTH,__objc_data  _OBJC_CLASS_$_PKVirtualCardCredentials
+0x1ef719cc8  __AUTH,__objc_data  _OBJC_CLASS_$_PKVirtualCardEncryptionFields
+0x1ef72c8c8  __AUTH,__objc_data  _OBJC_CLASS_$_PKVirtualCardEnrollmentRequest
+0x1ef719ca0  __AUTH,__objc_data  _OBJC_CLASS_$_PKVirtualCardEnrollmentResponse
+0x1ef72c8a0  __AUTH,__objc_data  _OBJC_CLASS_$_PKVirtualCardManager
+0x1ef729718  __AUTH,__objc_data  _OBJC_CLASS_$_PKWalletTransactionSignal
+0x1ee3328c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKWalletVisibility
+0x1ee331b50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKWebService
+0x1ef72c878  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceCarAccessFeature
+0x1ee3322d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKWebServiceContext
+0x1ef719c78  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceDisbursementFeature
+0x1ef719c50  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceForbiddenResponse
+0x1ef719c28  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceIssuerBindingFeature
+0x1ee32e6f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKWebServiceLoggableHeaders
+0x1ee32e6d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKWebServiceLoggableRequestBody
+0x1ef72c850  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceMMORFeature
+0x1ef72c828  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceMerchantCategoryCodesFeature
+0x1ef72c800  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceMerchantTokensFeature
+0x1ef72c7d8  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServicePaymentOffersFeature
+0x1ef719c00  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceProvisioningCardReaderFeature
+0x1ef719bd8  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceProvisioningCardReaderNetworkConfiguration
+0x1ef72c7b0  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceRegionFeature
+0x1ef726068  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceRemoteNetworkPaymentFeature
+0x1ee3322a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKWebServiceRequest
+0x1ee32e6a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKWebServiceRequestMetadata
+0x1ee331498  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKWebServiceResponse
+0x1ef72c788  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceSharingActivationConfiguration
+0x1ef72c760  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceSharingFeature
+0x1ef72c738  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceStaticContentDataSourceFeature
+0x1ef719bb0  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceTicketingFeature
+0x1ef72c710  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceTorinoFeature
+0x1ef72c6e8  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceVirtualCardFeature
+0x1ef72c6c0  __AUTH,__objc_data  _OBJC_CLASS_$_PKWebServiceVirtualCardFeatureNetwork
+0x1ee332898  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKWorldRegion
+0x1ef726040  __AUTH,__objc_data  _OBJC_CLASS_$_PKWrappedPayment
+0x1ee3358b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKXPCForwarder
+0x1ee335890  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKXPCService
+0x1ef719b88  __AUTH,__objc_data  _OBJC_CLASS_$_PKZeroingDataContainer
+0x1ef719b60  __AUTH,__objc_data  _OBJC_CLASS_$_PKZipArchiver
+0x1ef726018  __AUTH,__objc_data  _OBJC_CLASS_$_PawuKFL8icsLHMZd
+0x1ef725ff0  __AUTH,__objc_data  _OBJC_CLASS_$_VD9LmqazgfzMqjuy
+0x1ef70f898  __AUTH,__objc_data  _OBJC_CLASS_$__PKAccountDeviceEventReporter
+0x1ef70fb50  __AUTH,__objc_data  _OBJC_CLASS_$__PKAppProtectionCoordinator
+0x1ef70df60  __AUTH,__objc_data  _OBJC_CLASS_$__PKNearbyPeerPaymentReceiverCoordinator
+0x1ef70dad8  __AUTH,__objc_data  _OBJC_CLASS_$__PKNearbyPeerPaymentReceiverResponseMetadata
+0x1ef719b38  __AUTH,__objc_data  _OBJC_CLASS_$__PKPassImageConstruction_ImageRepresentation
+0x1ef70e380  __AUTH,__objc_data  _OBJC_CLASS_$__PKProvisioningBackgroundCoordinator
+0x1ef70f148  __AUTH,__objc_data  _OBJC_CLASS_$__PKProvisioningRequirementOracle
+0x1ef70e2c0  __AUTH,__objc_data  _OBJC_CLASS_$__PKProvisioningRequirementsContainer
+0x1ef70f468  __AUTH,__objc_data  _OBJC_CLASS_$__PKProvisioningSEStorageManager
+0x1ef70f068  __AUTH,__objc_data  _OBJC_CLASS_$__PKProvisioningSEStorageSnapshot
+0x1ef70ec08  __AUTH,__objc_data  _OBJC_CLASS_$__PKRemoteNetworkPaymentCoordinator
+0x1ef70d9c8  __AUTH,__objc_data  _OBJC_CLASS_$__PKRemoteNetworkPaymentHostSessionCoordinator
+0x1ef719b10  __AUTH,__objc_data  _OBJC_CLASS_$__SharedPKHMHomeManager
+0x1ef70fbf0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC11PassKitCore19SEProvisionedPasses
+0x1ef70fa58  __AUTH,__objc_data  _OBJC_CLASS_$__TtC11PassKitCore24ProvisioningStepLostMode
+0x1ef70f928  __AUTH,__objc_data  _OBJC_CLASS_$__TtC11PassKitCore24ProvisioningStepReadCard
+0x1ef70f3e0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC11PassKitCore28ProvisioningStepSetupAccount
+0x1ef70f238  __AUTH,__objc_data  _OBJC_CLASS_$__TtC11PassKitCore28StartRemotePaymentDispatcher
+0x1ef70ef58  __AUTH,__objc_data  _OBJC_CLASS_$__TtC11PassKitCore30ProvisioningCarKeyStepTransact
+0x1ef70e9a8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC11PassKitCore32NearbyPeerPaymentSenderUtilities
+0x1ef70e860  __AUTH,__objc_data  _OBJC_CLASS_$__TtC11PassKitCore32ProvisioningCarKeyStepFindReader
+0x1ef70e788  __AUTH,__objc_data  _OBJC_CLASS_$__TtC11PassKitCore32ProvisioningCarKeyStepFindSource
+0x1ef70e670  __AUTH,__objc_data  _OBJC_CLASS_$__TtC11PassKitCore32ProvisioningSEStorageSheetHandle
+0x1ef70e5a0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC11PassKitCore32ProvisioningStepStoreSupportData
+0x1ef70e218  __AUTH,__objc_data  _OBJC_CLASS_$__TtC11PassKitCore33ProvisioningStepAcquireAssertions
+0x1ef70e0c0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC11PassKitCore35ProvisioningCarKeyStepRequestInvite
+0x1ef70e028  __AUTH,__objc_data  _OBJC_CLASS_$__TtC11PassKitCore36LocalProvisioningRequirementsChecker
+0x1ef70fef0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC11PassKitCore36PKIdentityAddPassRequirementsChecker
+0x1ef70ddd0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC11PassKitCore38ProvisioningContinuityCarClientManager
+0x1ef70d940  __AUTH,__objc_data  _OBJC_CLASS_$__TtC11PassKitCore48ProvisioningCarKeyStepGenerateBindingAttestation
+0x1ef725fc8  __AUTH,__objc_data  _OBJC_CLASS_$_jprL7AuZZkLkFoBK
+0x1ebd2d2b8  __DATA,__objc_ivar  OBJC_IVAR_$_PKAssertionCoordinator._acquiredAssertions
+0x1ebd2d2c0  __DATA,__objc_ivar  OBJC_IVAR_$_PKAssertionCoordinator._coordinatorSerialQueue
+0x1ebd2d2bc  __DATA,__objc_ivar  OBJC_IVAR_$_PKAssertionCoordinator._remoteService
+0x1ebd2a3ac  __DATA,__objc_ivar  OBJC_IVAR_$_PKAutoBugCaptureReporter.sdrReporter
+0x1ebd2f194  __DATA,__objc_ivar  OBJC_IVAR_$_PKKeychainItemWrapper.genericPasswordQuery
+0x1ebd2f190  __DATA,__objc_ivar  OBJC_IVAR_$_PKKeychainItemWrapper.keychainItemData
+0x1ebd2a388  __DATA,__objc_ivar  OBJC_IVAR_$_PKNFCTag._underlyingTag
+0x1ebd2ad5c  __DATA,__objc_ivar  OBJC_IVAR_$_PKPassField._value
+0x1ebd2c84c  __DATA,__objc_ivar  OBJC_IVAR_$_PKPaymentRegisterCredentialRequest._credentialIdentifier
+0x1ebd2c850  __DATA,__objc_ivar  OBJC_IVAR_$_PKPaymentRegisterCredentialRequest._metadata
+0x1ebd2e5c8  __DATA,__objc_ivar  OBJC_IVAR_$_PKPaymentRequestUpdate._availableShippingMethods
+0x1ebd2b144  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.accountName
+0x1ebd2b148  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.accountNumber
+0x1ebd2b178  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.analyticsBillSplitContext
+0x1ebd2b174  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.analyticsMessagesContext
+0x1ebd2b134  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.authorizedQuote
+0x1ebd2b15c  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.frequency
+0x1ebd2b168  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.messagesContext
+0x1ebd2b11c  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.mode
+0x1ebd2b120  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.peerPaymentType
+0x1ebd2b138  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.performQuoteResponse
+0x1ebd2b130  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.quote
+0x1ebd2b140  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.quoteCertificatesResponse
+0x1ebd2b150  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.quoteRequest
+0x1ebd2b128  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.recipient
+0x1ebd2b170  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.recipientAddresses
+0x1ebd2b16c  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.recipients
+0x1ebd2b154  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.recurringPaymentIdentifier
+0x1ebd2b12c  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.requestToken
+0x1ebd2b14c  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.routingNumber
+0x1ebd2b124  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.senderAddress
+0x1ebd2b158  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.startDate
+0x1ebd2b118  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.state
+0x1ebd2b164  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.supportsGroupMessage
+0x1ebd2b13c  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.supportsPreserveCurrentBalance
+0x1ebd2b160  __DATA,__objc_ivar  OBJC_IVAR_$_PKPeerPaymentControllerInternalState.threshold
+0x1ef725fa0  __AUTH,__objc_data  _OBJC_METACLASS_$_CdQwUTvJnDEPQgR8
+0x1ef725f78  __AUTH,__objc_data  _OBJC_METACLASS_$_FZf7GLuluME5TMqw
+0x1ef719ae8  __AUTH,__objc_data  _OBJC_METACLASS_$_G60QjbNQktkzwMIh
+0x1ef725f50  __AUTH,__objc_data  _OBJC_METACLASS_$_LZHbEqKhcixce9PA
+0x1ef725f28  __AUTH,__objc_data  _OBJC_METACLASS_$_ODEF66BPvkL9lz2w
+0x1ef725f00  __AUTH,__objc_data  _OBJC_METACLASS_$_PDAssertion
+0x1ef725ed8  __AUTH,__objc_data  _OBJC_METACLASS_$_PDAssertionCoordinator
+0x1ef725eb0  __AUTH,__objc_data  _OBJC_METACLASS_$_PDAssertionRequest
+0x1ef725e88  __AUTH,__objc_data  _OBJC_METACLASS_$_PDCloudStoreCounterpartRecordParser
+0x1ef725e60  __AUTH,__objc_data  _OBJC_METACLASS_$_PDCloudStoreCounterpartRecordParserIdentifiers
+0x1ef725e38  __AUTH,__objc_data  _OBJC_METACLASS_$_PDCloudStoreCounterpartRecordParserZones
+0x1ee32fd28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PDScheduledActivityClient
+0x1ee32fd00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PDScheduledActivityCriteria
+0x1ee32fcd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PDScheduledActivityRegistration
+0x1ef719ac0  __AUTH,__objc_data  _OBJC_METACLASS_$_PDXPCApplicationInfo
+0x1ee32fcb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PDXPCService
+0x1ef7296f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKACAccountChange
+0x1ef719a98  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAMPCardInfoForMerchantRequest
+0x1ee331b28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAMPCardRegistrationResponse
+0x1ef725e10  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAMPEnrollmentManager
+0x1ef719a70  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAMSTopUpController
+0x1ee3320c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKASCAssociatedReaderID
+0x1ef719a48  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccessoryDevice
+0x1ee32fc88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccessoryDeviceMonitor
+0x1ee333bf8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccount
+0x1ef719a20  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountAction
+0x1ef72c698  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountAdditionalPushTopics
+0x1ef72c670  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountAssistanceProgramMessage
+0x1ef725de8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountAttestationRequest
+0x1ef7199f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountBeneficiary
+0x1ef7199d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountBeneficiaryInfo
+0x1ef7199a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountBillPaymentController
+0x1ef725dc0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountCardAvailabilityInfo
+0x1ef719980  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountCredential
+0x1ef72c648  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountCreditTermsUpdate
+0x1ef719958  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountDailyCashDestination
+0x1ee330de0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountDailyCashDestinationsSummary
+0x1ef72c620  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountDetails
+0x1ef725d98  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountDeviceEventReporter
+0x1ee330db8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountEnhancedMerchant
+0x1ee330d90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountEnhancedMerchantBehavior
+0x1ef725d70  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountEnhancedMerchantsFetcher
+0x1ee330d68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountEntityOrdering
+0x1ee331b00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountEvent
+0x1ef719930  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountExportedTransactionInfo
+0x1ef72c5f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountFeatureDescriptor
+0x1ef72c5d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountFetchPeriods
+0x1ee3330b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountFundingSourceVerification
+0x1ef725d48  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountFundingSourceVerificationAction
+0x1ee332870  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountFundingSourceVerificationAttempt
+0x1ee330d40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountHistoricalBalance
+0x1ee331718  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountHold
+0x1ef72acd0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountLocation
+0x1ef72aca8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountMinimumOSPolicy
+0x1ef72c5a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountMinimumOSVersions
+0x1ee3340a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountPayment
+0x1ee333090  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountPaymentFundingDetails
+0x1ef719908  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountPaymentFundingDetailsApplePayCash
+0x1ee333068  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountPaymentFundingDetailsBankAccount
+0x1ef7198e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountPaymentFundingDetailsSavings
+0x1ee333bd0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountPaymentFundingSource
+0x1ef72c580  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountPaymentReminder
+0x1ef72c558  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountPaymentScheduleDetails
+0x1ee330d18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountPendingFamilyMember
+0x1ee330cf0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountPhysicalCardExpirationMessagingInfo
+0x1ef72c530  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountPhysicalCardShippingUpdate
+0x1ef72c508  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountPhysicalCardStatusUpdate
+0x1ef7198b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountPostProvisioningContent
+0x1ee330cc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountPromotion
+0x1ee330ca0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountPromotionBehavior
+0x1ef7296c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountPromotionCompletionStep
+0x1ef719890  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountProvisioningController
+0x1ef719868  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountReferenceCredential
+0x1ef719840  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountReport
+0x1ef72c4e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountRewards
+0x1ee330c78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountRewardsTierSummary
+0x1ef719818  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountScheduledPayment
+0x1ef7197f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountScheduledPaymentList
+0x1ef7197c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountScheduledTransfer
+0x1ef7197a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountScheduledTransferList
+0x1ee3305c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountService
+0x1ef719778  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountServiceAccountResolutionConfiguration
+0x1ef7296a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountServicePaymentMethod
+0x1ef72ac80  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountServiceTransferRequest
+0x1ef72c4b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountServiceUnavailablePeriod
+0x1ef72c490  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountServicingEvent
+0x1ef729678  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountServicingEventStatusDetails
+0x1ee330c50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountStatementMetadata
+0x1ef719750  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountStatementMetadataItem
+0x1ef719728  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountStatementMetadataReport
+0x1ef719700  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountSupportTopic
+0x1ef7196d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountSupportTopicExplanation
+0x1ef7196b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountSupportTopicExplanationContent
+0x1ef719688  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountSupportTopicExplanationLink
+0x1ee330c28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountTaxForm
+0x1ef719660  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountTransactionSyncReport
+0x1ef725d20  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountTransactionSyncReportItem
+0x1ee32fc60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountTransfer
+0x1ef72ac58  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountTransferExternalAccount
+0x1ef72ac30  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountTransferScheduleDetails
+0x1ee330c00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountUser
+0x1ef72ac08  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountUserCollection
+0x1ee330bd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountUserInfo
+0x1ef72c468  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountUserInfoUpdate
+0x1ef72abe0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountUserNotificationSettings
+0x1ef72abb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountUserPreferences
+0x1ef72c440  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountVirtualCardStatusUpdate
+0x1ef719638  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceAccountActionRequest
+0x1ef725cf8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceAccountDeleteRequest
+0x1ef725cd0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceAccountRequest
+0x1ef725ca8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceAccountResponse
+0x1ef719610  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceAccountTransactionAnswerRequest
+0x1ef7195e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceAccountUpdateUserInfoRequest
+0x1ef7195c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceAccountUserInfoRequest
+0x1ef719598  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceAccountUsersRequest
+0x1ef719570  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceAccountUsersResponse
+0x1ef725c80  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceAccountsRequest
+0x1ef725c58  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceAccountsResponse
+0x1ef719548  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceAddFundingSourceRequest
+0x1ef719520  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceAddFundingSourceResponse
+0x1ef7194f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceApplePayTrustRequest
+0x1ef7194d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceAuthenticationTokenRequest
+0x1ef7194a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceAuthenticationTokenResponse
+0x1ef725c30  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceBalanceHistoryRequest
+0x1ef725c08  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceBalanceHistoryResponse
+0x1ef719480  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceBankLookupRequest
+0x1ef719458  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceBankLookupResponse
+0x1ef719430  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceCancelPaymentRequest
+0x1ef719408  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceCertificatesRequest
+0x1ef7193e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceCertificatesResponse
+0x1ef7193b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceCreateVirtualCardRequest
+0x1ef719390  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceCreatedZoneRequest
+0x1ef719368  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceCreditRecoveryPaymentPlansRequest
+0x1ef719340  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceCreditRecoveryPaymentPlansResponse
+0x1ef719318  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceCustomizePhysicalCardResponse
+0x1ef7192f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceDailyCashEligibilityRequest
+0x1ef7192c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceDailyCashEligibilityResponse
+0x1ef7192a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceDeleteAccountUserRequest
+0x1ef719278  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceDeleteBeneficiaryRequest
+0x1ef719250  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceDeleteFundingSourceRequest
+0x1ef719228  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceDocumentActionRequest
+0x1ef719200  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceDocumentActionResponse
+0x1ef7191d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceDocumentRequest
+0x1ef725be0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceEmptyResponse
+0x1ef725bb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceEnhancedMerchantsRequest
+0x1ef725b90  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceEnhancedMerchantsResponse
+0x1ef7191b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceExportTransactionDataRequest
+0x1ef719188  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceExportTransactionDataResponse
+0x1ef725b68  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceFundingSourcesRequest
+0x1ef725b40  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceFundingSourcesResponse
+0x1ef719160  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceGenerateTopUpTokenRequest
+0x1ef719138  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceGenerateTopUpTokenResponse
+0x1ef719110  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceInstallmentAuthorizationRequest
+0x1ef7190e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceInstallmentAuthorizationResponse
+0x1ef7190c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceInstallmentBindRequest
+0x1ef719098  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServicePaginatedRequest
+0x1ef719070  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServicePassDetailsRequest
+0x1ef719048  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServicePassDetailsResponse
+0x1ef725b18  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServicePaymentsRequest
+0x1ef725af0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServicePaymentsResponse
+0x1ee330bb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountWebServicePhysicalCardActionRequest
+0x1ef719020  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServicePhysicalCardActionResponse
+0x1ef718ff8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServicePhysicalCardsRequest
+0x1ef718fd0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServicePhysicalCardsResponse
+0x1ef725ac8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServicePromotionsRequest
+0x1ef725aa0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServicePromotionsResponse
+0x1ef725a78  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceReportDeviceEventRequest
+0x1ef718fa8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceReportRequest
+0x1ee330b88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceRequest
+0x1ef718f80  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceRequestPhysicalCardRequest
+0x1ef718f58  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceRequestPhysicalCardResponse
+0x1ef718f30  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceResolveStorefrontCountryMismatchRequest
+0x1ef729650  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceResponse
+0x1ef718f08  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceSavingsStatementsResponse
+0x1ef718ee0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceSavingsUserInfoResponse
+0x1ef718eb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceSchedulePaymentRequest
+0x1ef718e90  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceSchedulePaymentResponse
+0x1ef718e68  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceScheduleTransferRequest
+0x1ef718e40  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceSharedAccountCloudStoreRequest
+0x1ef718e18  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceSharedAccountCloudStoreResponse
+0x1ef725a50  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceStatementsRequest
+0x1ef725a28  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceStatementsResponse
+0x1ef718df0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceSupportTopicsRequest
+0x1ef718dc8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceSupportTopicsResponse
+0x1ef718da0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceTaxFormsResponse
+0x1ef718d78  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceTermsDataRequest
+0x1ef718d50  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceTermsDataResponse
+0x1ef718d28  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceTermsRequest
+0x1ef718d00  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceTransferEligibilityRequest
+0x1ef718cd8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceTransferEligibilityResponse
+0x1ef718cb0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceTransfersRequest
+0x1ef718c88  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceTransfersResponse
+0x1ef718c60  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceUpdateAccountUserPreferencesRequest
+0x1ef718c38  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceUpdateAccountUserPreferencesResponse
+0x1ef718c10  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceVirtualCardLegacyCredentialsRequest
+0x1ef718be8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceVirtualCardListRequest
+0x1ef718bc0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceVirtualCardListResponse
+0x1ef718b98  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceVirtualCardManageRequest
+0x1ef718b70  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceVirtualCardResponse
+0x1ef718b48  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebServiceVirtualCardSecurityCodeActivityRequest
+0x1ef718b20  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebserviceCustomizePhysicalCardRequest
+0x1ef718af8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAccountWebserviceInstallmentBindResponse
+0x1ef718ad0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKActionGroup
+0x1ef718aa8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKActivityEvent
+0x1ef718a80  __AUTH,__objc_data  _OBJC_METACLASS_$_PKActivityEventPeerPaymentTransaction
+0x1ef718a58  __AUTH,__objc_data  _OBJC_METACLASS_$_PKActivityEventTransaction
+0x1ee3350e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAddCarKeyPassConfiguration
+0x1ef729628  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAddHomeKeyPassConfiguration
+0x1ee334eb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAddIdentityDocumentConfiguration
+0x1ef718a30  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAddIdentityDocumentMetadata
+0x1ef718a08  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAddPassMetadataPreview
+0x1ef7189e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAddPaymentPassController
+0x1ef72c418  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAddPaymentPassRequest
+0x1ef72c3f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAddPaymentPassRequestConfiguration
+0x1ee335660  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAddSecureElementPassConfiguration
+0x1ee335278  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAddShareablePassConfiguration
+0x1ef729600  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAddressFormatConfiguration
+0x1ef7189b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAddressSearchModel
+0x1ef718990  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAddressSearchRequest
+0x1ef725a00  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAggregateDictionary
+0x1ef718968  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAirport
+0x1ef7259d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAliroCompatibilityManifest
+0x1ee334e90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAliroHomeAuxiliaryCapabilityDescriptor
+0x1ee32e680  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAnalyticsReporter
+0x1ef7259b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAnonymizedAnalyticsSecret
+0x1ef718940  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAnonymizedAnalyticsSecretFetcher
+0x1ef718918  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppAuthorizationInfo
+0x1ef733038  __AUTH,__data  _OBJC_METACLASS_$_PKAppIntentUtilities
+0x1ef72c3c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppProtectionApp
+0x1ef72c3a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppProtectionCoordinator
+0x1ee335250  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAppleAccountChange
+0x1ee332028  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAppleAccountInformation
+0x1ee332280  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAppleAccountManager
+0x1ee335228  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAppleAccountState
+0x1ef72c378  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppleBalanceAccountDetails
+0x1ef72c350  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppleBalanceAccountFeatureDescriptor
+0x1ef72c328  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppleBalanceAccountSummary
+0x1ef7188f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppleBalanceCredential
+0x1ef7188c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppleBalanceDirectTopUpConfiguration
+0x1ef7188a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppleBalanceDirectTopUpConfigurationDenomination
+0x1ef718878  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppleBalanceInStoreTopUpToken
+0x1ef718850  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppleBalanceMockUtilities
+0x1ef718828  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppleBalancePromotionConfiguration
+0x1ef718800  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppleCardApplyExperiment
+0x1ef7187d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppleCardOfferExperiment
+0x1ef7187b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppleCardWelcomeExperiment
+0x1ef718788  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplePayTrustHashResponse
+0x1ef725988  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplePayTrustKey
+0x1ef725960  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplePayTrustKeyRequest
+0x1ef725938  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplePayTrustRegistrationRequest
+0x1ef725910  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplePayTrustSession
+0x1ee331470  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKApplePayTrustSignature
+0x1ee3316f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKApplePayTrustSignatureRequest
+0x1ee335480  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAppletSubcredential
+0x1ef718760  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppletSubcredentialAccountAttestationRequest
+0x1ef7258e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppletSubcredentialManagementSession
+0x1ef718738  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppletSubcredentialPairingSession
+0x1ee332258  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAppletSubcredentialSharingConfiguration
+0x1ee333ba8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAppletSubcredentialSharingInvitation
+0x1ef718710  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppletSubcredentialSharingInvitationMetadata
+0x1ee330598  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAppletSubcredentialSharingInvitationRequest
+0x1ef7186e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAppletSubcredentialSharingSession
+0x1ef7186c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationAuthorizationHandle
+0x1ef718698  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationAuthorizationHandleRequest
+0x1ef718670  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationAuthorizationHandleRequest_Physical
+0x1ef718648  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationAuthorizationHandleRequest_Virtual
+0x1ee333040  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKApplicationMessage
+0x1ef72ab90  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationMessageAction
+0x1ef7258c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationMessageActionPresentation
+0x1ef718620  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationMessageActionURL
+0x1ef72ab68  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationMessageContent
+0x1ef72ab40  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationMessageContentDefault
+0x1ef72ab18  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationMessageGroupDescriptor
+0x1ef72aaf0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationMessageIcon
+0x1ee333018  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKApplicationMessageKey
+0x1ef7185f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationMessageNode
+0x1ef7185d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationMessageNodeGroupBranch
+0x1ef7185a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationMessageNodeMultipleGroupBranch
+0x1ef718580  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationMessageNodeTerminal
+0x1ef72aac8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationMessageRegistration
+0x1ef725898  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationMessageRequest
+0x1ef718558  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplicationRegistry
+0x1ef718530  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyActionContent
+0x1ef718508  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyActionContentActionItem
+0x1ef7184e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyActionContentTextItem
+0x1ef7184b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyActionContentTextItemODIDetail
+0x1ef718490  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyDocumentUploadPage
+0x1ef72c300  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyFooterContent
+0x1ef72aaa0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyFooterContentLink
+0x1ef718468  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyRequiredFieldsPage
+0x1ef718440  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyVerificationInformation
+0x1ef718418  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyVerificationPage
+0x1ee330570  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceApplicationDeleteRequest
+0x1ef7183f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceApplicationDeleteResponse
+0x1ef725870  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceApplicationsRequest
+0x1ef725848  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceApplicationsResponse
+0x1ee330548  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceApplyRequest
+0x1ee330520  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceApplyResponse
+0x1ef7183c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceApplyStepInfo
+0x1ef7183a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceAugmentedProductRequest
+0x1ee32f2d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceAugmentedProductResponse
+0x1ef718378  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceCreateRequest
+0x1ee3304f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceDocumentSubmissionRequest
+0x1ef718350  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceFeatureTermsDataRequest
+0x1ee3304d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceRequest
+0x1ef718328  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceRequestAuthenticationContext
+0x1ee3304a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceResponse
+0x1ef718300  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceShownTermsRequest
+0x1ef7182d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceTermsDataRequest
+0x1ef7182b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceTermsDataResponse
+0x1ee330480  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceTermsRequest
+0x1ef718288  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceVerificationResendRequest
+0x1ef718260  __AUTH,__objc_data  _OBJC_METACLASS_$_PKApplyWebServiceVerificationSubmissionRequest
+0x1ef725820  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAssertion
+0x1ef7257f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAssertionCoordinator
+0x1ee32e658  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAsyncCache
+0x1ee32e630  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAsyncCacheRetrievalInfo
+0x1ef718238  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAsyncFactory
+0x1ef718210  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAsyncFactoryOperationContainer
+0x1ee32e608  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAsyncOperationState
+0x1ee32f2b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAsyncUnaryOperationComposer
+0x1ee32f288  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAsyncUnaryOperationEvaluator
+0x1ef7257d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAuthenticatorEvaluationResponse
+0x1ef7295d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAuthorizedPeerPaymentQuote
+0x1ef7181e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAutoBugCaptureReporter
+0x1ef7257a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAutoFillAppleCashCardDescriptor
+0x1ef7181c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAutoFillCardCredential
+0x1ee332848  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAutoFillCardDescriptor
+0x1ef72c2d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAutoFillCardManager
+0x1ef725780  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAutoFillVirtualCardDescriptor
+0x1ef718198  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAutoReloadPaymentMethod
+0x1ef718170  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAutoTopUpActionItem
+0x1ef718148  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAutomaticPassPresentationSuppressor
+0x1ef72aa78  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAutomaticReloadPaymentRequest
+0x1ef718120  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAutomaticReloadPaymentRequestValidator
+0x1ef72c2b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAutomaticReloadPaymentSummaryItem
+0x1ef7180f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAutomaticReloadPaymentSummaryItemValidator
+0x1ef7180d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAuxiliaryCapabilityFetchBarcodeRequest
+0x1ef7180a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAuxiliaryCapabilityFetchBarcodeResponse
+0x1ef718080  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAuxiliaryCapabilityKeyCreationMetadataRequest
+0x1ef718058  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAuxiliaryCapabilityKeyCreationMetadataRequestCapabilityState
+0x1ef718030  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAuxiliaryCapabilityKeyCreationMetadataResponse
+0x1ef718008  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAuxiliaryCapabilityKeyCreationMetadataResponseEntry
+0x1ef725758  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAuxiliaryCapabilityRegisterRequest
+0x1ef725730  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAuxiliaryCapabilityRegisterResponse
+0x1ef725708  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAuxiliaryCapabilityRegistrationStateRequest
+0x1ef7256e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAuxiliaryCapabilityRegistrationStateResponse
+0x1ee334e68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKAuxiliaryCapabilityRequirementKeyMaterial
+0x1ef7256b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAuxiliaryCapabilityRequirementKeyMaterialContent
+0x1ef725690  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAuxiliaryCapabilityUnregisteredRequirements
+0x1ef725668  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAuxiliaryCapabilityWebServiceRequest
+0x1ef725640  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAuxiliaryCapabilityWebServiceResponse
+0x1ef717fe0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKAuxiliaryItemMerchantLookupSource
+0x1ef717fb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBCBPBarcodeFlight
+0x1ef717f90  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBCBPBarcodeFlightLeg
+0x1ee334e40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKBadgeCountItem
+0x1ef717f68  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBalanceSummary
+0x1ef717f40  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBalanceSummaryFetcher
+0x1ef717f18  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBankAccountDataItem
+0x1ef72c288  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBankAccountInformation
+0x1ef7295b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBannerHandle
+0x1ef72aa50  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBannerHandleRequest
+0x1ef725618  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBannerHandleResponse
+0x1ef72aa28  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBannerHandleServerState
+0x1ef72aa00  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBannerHandleState
+0x1ee331ee8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKBarcode
+0x1ef717ef0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBarcodeCredential
+0x1ef717ec8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBarcodeEventConfigurationRequest
+0x1ef717ea0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBarcodeEventMetadataRequest
+0x1ef717e78  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBarcodeEventMetadataResponse
+0x1ef717e50  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBarcodeEventSignatureRequest
+0x1ef717e28  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBarcodeEventSignatureResponse
+0x1ee330458  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKBarcodePaymentEvent
+0x1ee3349e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKBeacon
+0x1ef72c260  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBillPaymentSelectedSuggestedAmountData
+0x1ef717e00  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBillPaymentSuggestedAmount
+0x1ef717dd8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBillPaymentSuggestedAmountController
+0x1ef717db0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBillPaymentSuggestedAmountList
+0x1ef717d88  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBillPaymentSuggestedAmountMessage
+0x1ef729588  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBitmapContext
+0x1ef729560  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBitmapConversionDescriptor
+0x1ef7255f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBluetoothMonitorer
+0x1ef7255c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKBroadwayBankAccountInformation
+0x1ee335638  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKBundleResourceDescriptor
+0x1ef729538  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCAAnimatedLayoutTracker
+0x1ef717d60  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCacheRecipientItem
+0x1ef717d38  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCacheScoreItem
+0x1ef717d10  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCampaignAttributionSessionManager
+0x1ef717ce8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCarKeyCredentialRegistrationMetadata
+0x1ef717cc0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCarKeyPairingProxCardRequest
+0x1ef717c98  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCarKeyTerminalPairingCredential
+0x1ee332ff0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKCarShareAcceptanceResponse
+0x1ee3350c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKCarUnlockSupportedTerminal
+0x1ee335610  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKCatalog
+0x1ee332000  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKCatalogGroup
+0x1ee333b80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKCategoryVisualizationMagnitude
+0x1ef7255a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKChangeHistoryEvent
+0x1ef725578  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudDeletedRecord
+0x1ef717c70  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudRecordAccount
+0x1ef725550  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudRecordAccountEvent
+0x1ef725528  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudRecordArray
+0x1ef725500  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudRecordArrayDatabase
+0x1ef7254d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudRecordArrayDatabaseZone
+0x1ef7254b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudRecordAssetURL
+0x1ef717c48  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudRecordCloudStoreZoneShareLock
+0x1ef717c20  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudRecordCounterpartImageData
+0x1ef717bf8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudRecordIssuerMessagingFlag
+0x1ef725488  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudRecordObject
+0x1ef725460  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudRecordPass
+0x1ef717bd0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudRecordPassCatalog
+0x1ef717ba8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudRecordPendingRequest
+0x1ef717b80  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudRecordRecurringPaymentMemo
+0x1ef717b58  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudRecordTransaction
+0x1ef725438  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudStoreContainerChangeEvent
+0x1ef717b30  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudStoreContainerDiagnosticSnapshot
+0x1ef717b08  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudStoreContainerDiagnostics
+0x1ee32f260  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKCloudStoreError
+0x1ef725410  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudStoreRecord
+0x1ef7253e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudStoreRecordFetchTask
+0x1ef717ae0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudStoreService
+0x1ef7253c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudStoreUploadItemConfiguration
+0x1ee32f238  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKCloudStoreZone
+0x1ef717ab8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudStoreZoneInvitation
+0x1ef717a90  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudStoreZoneInvitationRequest
+0x1ef717a68  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudStoreZoneInvitationResponse
+0x1ef725398  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudStoreZoneQueryConfiguration
+0x1ef717a40  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudStoreZoneShareLock
+0x1ef717a18  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCloudStoreZoneShareParticipant
+0x1ef725370  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCoarseLocationMonitor
+0x1ee334c38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKColor
+0x1ef7179f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCompoundInterestCalculator
+0x1ef7179c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCompoundInterestCalculatorConfiguration
+0x1ee335930  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKContact
+0x1ef729510  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContactFieldConfiguration
+0x1ef7294e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContactFormatConfiguration
+0x1ef7294c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContactFormatValidator
+0x1ef7179a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContactInformation
+0x1ef717978  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContactInformationRequest
+0x1ef717950  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContactInformationResponse
+0x1ef729498  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContactPickerItem
+0x1ee331448  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKContactResolver
+0x1ef725348  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContactlessCardIngester
+0x1ef729470  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContactlessInterfaceSession
+0x1ef725320  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContactlessInterfaceSessionDefaultBehavior
+0x1ef7252f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContactlessInterfaceTransactionContext
+0x1ee3353e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKContent
+0x1ef717928  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContinuityPaymentCoordinator
+0x1ef717900  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContinuityPaymentService
+0x1ef7178d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContinuityProximityAdvertisement
+0x1ef7178b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContinuityProximityBLEAdvertisement
+0x1ef717888  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContinuityProximityBLEVerification
+0x1ef717860  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContinuityProximityCBAdvertisement
+0x1ef717838  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContinuityProximityCBVerification
+0x1ef717810  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContinuityProximityNWAdvertisement
+0x1ef7177e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContinuityProximityNWVerification
+0x1ef7177c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKContinuityProximityVerification
+0x1ef72a9d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCoreSpotlightUtilities
+0x1ef717798  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCredentialRegistrationMetadata
+0x1ef72c238  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCreditAccountBalanceSummary
+0x1ef729448  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCreditAccountController
+0x1ef72c210  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCreditAccountDebtSaleSummary
+0x1ef72c1e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCreditAccountDetails
+0x1ef72c1c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCreditAccountFeatureDescriptor
+0x1ef717770  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCreditAccountIncomeDetails
+0x1ef72c198  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCreditAccountMergeSummary
+0x1ef717748  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCreditAccountMergeSummaryAccountDetails
+0x1ef72c170  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCreditAccountRates
+0x1ee3316c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKCreditAccountStatement
+0x1ef72c148  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCreditAccountSummary
+0x1ef72c120  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCreditAccountUserActivity
+0x1ef717720  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCreditAccountUserInfo
+0x1ef7176f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCreditAccountWebServiceAccountUserInfoResponse
+0x1ee334238  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKCreditInstallmentPlan
+0x1ef7176d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCreditInstallmentPlanLineItem
+0x1ee32f210  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKCreditInstallmentPlanPayment
+0x1ef7176a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKCreditInstallmentPlanProduct
+0x1ee330b60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKCreditRecoveryPaymentPlan
+0x1ee332fc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKCrossPlatformShareURL
+0x1ee334080  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKCurrencyAmount
+0x1ee32fc38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDAManager
+0x1ee32f1e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDAPairingSessionManager
+0x1ef7252d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDASession
+0x1ee32f1c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDASessionManager
+0x1ef7252a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDSPContext
+0x1ef725280  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDashboardTransactionFetcher
+0x1ee3349b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDataAccessor
+0x1ef725258  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDateComponentsRange
+0x1ef717680  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDateComponentsRangeFormatter
+0x1ef717658  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDateContainer
+0x1ee32f198  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDeallocationGuard
+0x1ef72a9b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDeferredPaymentRequest
+0x1ef717630  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDeferredPaymentRequestValidator
+0x1ef72c0f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDeferredPaymentSummaryItem
+0x1ef717608  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDeferredPaymentSummaryItemValidator
+0x1ef7175e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDeleteMerchantTokenRequest
+0x1ef7175b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDemoTransactionGenerator
+0x1ef717590  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDemoTransactionGeneratorConfiguration
+0x1ef717568  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDemoTransactionGeneratorInsertionConfiguration
+0x1ef725230  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDeviceEnvironment
+0x1ef717540  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDeviceRegistrationService
+0x1ef725208  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDeviceScorer
+0x1ee330b38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDeviceSharingCapabilities
+0x1ef717518  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDeviceSharingCapabilitiesFetchStatus
+0x1ef7174f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDeviceSharingCapabilitiesManager
+0x1ef7251e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDeviceVersion
+0x1ef7251b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDeviceVersionRange
+0x1ef7174c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiagnostics
+0x1ee3343a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDiff
+0x1ef7174a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiffHunk
+0x1ef717478  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDigitalIssuanceServiceProviderItem
+0x1ef717450  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDigitalIssuanceServiceProviderProduct
+0x1ee330188  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDirectoryCoordinator
+0x1ef72a988  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDisbursementPaymentRequest
+0x1ef717428  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDisbursementPaymentRequestValidator
+0x1ef717400  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDisbursementRequest
+0x1ef72a960  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDisbursementSummaryItem
+0x1ef7173d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDisbursementSummaryItemValidator
+0x1ee32f170  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDiscoveryArticleLayout
+0x1ef7173b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryArticleLayoutResponse
+0x1ee32e5e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDiscoveryCallToAction
+0x1ef72c0d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryCallToActionShelf
+0x1ef717388  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryCallToActionURL
+0x1ee32e5b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDiscoveryCard
+0x1ef72a938  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryDataSource
+0x1ee32f148  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDiscoveryEngagementMessage
+0x1ef725190  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryEngagementMessageAction
+0x1ef72c0a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryInlineMediaShelf
+0x1ee32f120  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDiscoveryItem
+0x1ef725168  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryManifest
+0x1ef725140  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryManifestResponse
+0x1ee32e590  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDiscoveryMedia
+0x1ef717360  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryMediaContentsRect
+0x1ef717338  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryMediaLayout
+0x1ef717310  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryMediaPoint
+0x1ef72c080  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryMediaRemoteAsset
+0x1ef7172e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryMediaSize
+0x1ef725118  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryMessagesManifest
+0x1ef7250f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryMessagesMetadata
+0x1ef7250c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryNotification
+0x1ee32f0f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDiscoveryObject
+0x1ef72c058  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryRelevantDateRange
+0x1ee32e568  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDiscoveryService
+0x1ee32e540  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDiscoveryShelf
+0x1ee32e518  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDiscoverySpacerShelf
+0x1ee32e4f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDiscoveryTextBlockShelf
+0x1ef7250a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDiscoveryWebServiceResponse
+0x1ee3353b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDisplayProfile
+0x1ee334698  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDisplayTraitCollection
+0x1ee332fa0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDisplayablePassEntitlement
+0x1ef7172c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDocumentRequest
+0x1ef725078  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDownloadRemoteAssetConfiguration
+0x1ef725050  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDynamicAssetIndex
+0x1ee331420  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDynamicLayerConfiguration
+0x1ee32f0d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDynamicLayerCrossDissolveConfiguration
+0x1ee32e4c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDynamicLayerEmitterConfiguration
+0x1ee32f0a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKDynamicLayerTransactionEffectConfiguration
+0x1ef717298  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDynamicProvisioningFieldsPageContent
+0x1ef725028  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDynamicProvisioningPageContent
+0x1ef717270  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDynamicProvisioningPageLearnMoreContent
+0x1ef729420  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDynamicTemplateLayout
+0x1ee330430  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKEncryptedDataObject
+0x1ef717248  __AUTH,__objc_data  _OBJC_METACLASS_$_PKEncryptedPaymentSetupFieldSubmissionContainer
+0x1ee333b58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKEncryptedPushProvisioningTarget
+0x1ef717220  __AUTH,__objc_data  _OBJC_METACLASS_$_PKEncryptedVPANPaymentCredentials
+0x1ef725000  __AUTH,__objc_data  _OBJC_METACLASS_$_PKEngagementBatchPropertyRequest
+0x1ef7293f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKEngagementEventTrigger
+0x1ee32e4a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKEngagementPropertyRequest
+0x1ee32e478  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKEngagementPropertyResponse
+0x1ef7171f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKEnteredValueActionFeeCalculationFlat
+0x1ef7171d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKEnteredValueActionFeeCalculationRate
+0x1ef7171a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKEnteredValueActionItem
+0x1ee32fc10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKEntitlementWhitelist
+0x1ef717180  __AUTH,__objc_data  _OBJC_METACLASS_$_PKEventDateInfo
+0x1ef717158  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExistingCardAuthorizationCredential
+0x1ef717130  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExistingCardAuthorizationDiscoveryAvailability
+0x1ee332820  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKExistingCardAuthorizationDiscoveryRequestMessage
+0x1ee3327f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKExistingCardAuthorizationDiscoveryResponseMessage
+0x1ef717108  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExistingCardAuthorizationRequestCarKeyGroup
+0x1ef7170e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExistingCardAuthorizationRequestDestinationDeviceSignature
+0x1ef7170b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExistingCardAuthorizationRequestEntry
+0x1ef717090  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExistingCardAuthorizationRequestGroup
+0x1ee3327d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKExistingCardAuthorizationRequestMessage
+0x1ef717068  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExistingCardAuthorizationRequestPaymentCardGroup
+0x1ef717040  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExistingCardAuthorizationResponseCarKeyGroup
+0x1ef717018  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExistingCardAuthorizationResponseGroup
+0x1ee3327a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKExistingCardAuthorizationResponseMessage
+0x1ef716ff0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExistingCardAuthorizationResponsePaymentCardEntry
+0x1ef716fc8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExistingCardAuthorizationResponsePaymentCardGroup
+0x1ef716fa0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExistingCardAuthorizationSecureElementService
+0x1ef7293d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExperiment
+0x1ee332f78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKExpressPassConfiguration
+0x1ef7293a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExpressPassController
+0x1ee32e450  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKExpressPassCredentialEntry
+0x1ee334058  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKExpressPassInformation
+0x1ef729380  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExpressTransactionBannerHandleRequest
+0x1ef729358  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExpressTransactionBannerHandleState
+0x1ee333b30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKExpressTransactionState
+0x1ef716f78  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExtension
+0x1ef716f50  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExtensionBaseContext
+0x1ef716f28  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExtensionHostContext
+0x1ef716f00  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExtensionProvider
+0x1ef716ed8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExtensionRequestHandler
+0x1ef716eb0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExtensionVendorContext
+0x1ef716e88  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExternalDestinationDevice
+0x1ef716e60  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExternalDeviceMigrationCardEntry
+0x1ef716e38  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExternalDeviceMigrationExportController
+0x1ef716e10  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExternalDeviceMigrationManifest
+0x1ef716de8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExternalDeviceMigrationManifestEntry
+0x1ef716dc0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExternalDeviceMigrationPaymentDetails
+0x1ef716d98  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExternalProvisioningOptions
+0x1ef716d70  __AUTH,__objc_data  _OBJC_METACLASS_$_PKExternalProvisioningPolicy
+0x1ef716d48  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFPANCardCanSaveResult
+0x1ee332780  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKFPANCardDescriptor
+0x1ef716d20  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFPANCardDescriptorCredentialPair
+0x1ee332758  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKFPANCredential
+0x1ef729330  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFaceIDBannerHandleRequest
+0x1ef729308  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFaceIDBannerHandleState
+0x1ee333b08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKFamilyMember
+0x1ef7292e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFamilyMemberCollection
+0x1ee333ae0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKFeatureApplication
+0x1ef716cf8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFeatureApplicationDeclineDetails
+0x1ef716cd0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFeatureApplicationInvitationDetails
+0x1ef716ca8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFeatureApplicationOfferDetails
+0x1ef716c80  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFeatureApplicationOfferDetailsInfo
+0x1ef716c58  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFeatureFailure
+0x1ef716c30  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFeatureFailureCollection
+0x1ef716c08  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFelicaAppletHistory
+0x1ef716be0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFelicaAppletHistoryRecord
+0x1ef716bb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFelicaGreenCarTicket
+0x1ef716b90  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFelicaPassProperties
+0x1ef716b68  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFelicaShinkansenTicket
+0x1ef716b40  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFelicaShinkansenTrain
+0x1ef716b18  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFelicaTransitAppletState
+0x1ee331ec0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKFidoProfile
+0x1ee32f080  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKFieldDetector
+0x1ee334378  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKFieldMetadata
+0x1ee334b98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKFieldProperties
+0x1ef716af0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFieldPropertiesProbe
+0x1ef72a910  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFileDataAccessor
+0x1ee335750  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKFileDescriptorXPCContainer
+0x1ef72d7e0  __AUTH,__data  _OBJC_METACLASS_$_PKFinanceKitForegroundHook
+0x1ee334d28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKFlight
+0x1ef731cc0  __AUTH,__data  _OBJC_METACLASS_$_PKFlightJourney
+0x1ef716ac8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFlightShareInvitation
+0x1ef716aa0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKFlightStep
+0x1ee334d00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKFlightSubscription
+0x1ef716a78  __AUTH,__objc_data  _OBJC_METACLASS_$_PKGenericBankAccountInformation
+0x1ef7292b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKGroup
+0x1ee3359a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKGroupsController
+0x1ee335200  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKGroupsControllerSnapshot
+0x1ee3351d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKGroupsControllerSnapshotFetchOptions
+0x1ef716a50  __AUTH,__objc_data  _OBJC_METACLASS_$_PKHMAccessory
+0x1ef716a28  __AUTH,__objc_data  _OBJC_METACLASS_$_PKHMHomeManager
+0x1ef72c030  __AUTH,__objc_data  _OBJC_METACLASS_$_PKHardwareVersionRange
+0x1ef724fd8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKHideMyEmailManager
+0x1ef716a00  __AUTH,__objc_data  _OBJC_METACLASS_$_PKHomeKeyCredential
+0x1ef724fb0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKHomeScreenWidgetController
+0x1ef724f88  __AUTH,__objc_data  _OBJC_METACLASS_$_PKHowToUseWalletCard
+0x1ef724f60  __AUTH,__objc_data  _OBJC_METACLASS_$_PKHowToUseWalletManager
+0x1ef724f38  __AUTH,__objc_data  _OBJC_METACLASS_$_PKHowToUseWalletModel
+0x1ef724f10  __AUTH,__objc_data  _OBJC_METACLASS_$_PKHowToUseWalletRequirements
+0x1ef724ee8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKHowToUseWalletSection
+0x1ef7169d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIDSBatchIDQueryControllerWrapper
+0x1ef7169b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIDSDestination
+0x1ef716988  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIDSIDQueryManager
+0x1ee32f058  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKIDSManager
+0x1ef724ec0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIDSService
+0x1ef724e98  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIDSServiceDelegateEntry
+0x1ef724e70  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIDSServiceListener
+0x1ef724e48  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIDSServiceListenerRegistrationKey
+0x1ee32f030  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKISO18013DataElements
+0x1ef716960  __AUTH,__objc_data  _OBJC_METACLASS_$_PKISO18013DataReleaseRequest
+0x1ef716938  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIdentityAnyOfDescriptor
+0x1ef716910  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIdentityAuthorizationController
+0x1ef7325f0  __AUTH,__data  _OBJC_METACLASS_$_PKIdentityDataReleasePresentmentArbiter
+0x1ef7168e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIdentityDocument
+0x1ef7168c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIdentityDocumentMetadata
+0x1ef716898  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIdentityDriversLicenseDescriptor
+0x1ef716870  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIdentityElement
+0x1ef716848  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIdentityIntentToStore
+0x1ef716820  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIdentityNationalIDCardDescriptor
+0x1ef724e20  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIdentityPassCredentialProperty
+0x1ef7167f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIdentityPhotoIDDescriptor
+0x1ef733010  __AUTH,__data  _OBJC_METACLASS_$_PKIdentityPresentmentManager
+0x1ef7167d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIdentityProofingConfiguration
+0x1ef7167a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIdentityProofingDisplayMessage
+0x1ef716780  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIdentityProofingDisplayMessageAction
+0x1ee330b10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKIdentityProvisioningAttestations
+0x1ef716758  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIdentityProvisioningSupplementalData
+0x1ef716730  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIdentityProvisioningTransactionKey
+0x1ef716708  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIdentityRequest
+0x1ee330ae8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKImage
+0x1ef72a8e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKImageDescriptor
+0x1ef72a8c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKImageDescriptorBitmap
+0x1ef7166e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKImageDescriptorSymbol
+0x1ef724df8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKImageResizingConstraints
+0x1ee335390  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKImageSet
+0x1ee334af8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKImageSetXPCContainer
+0x1ef7166b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKInAppPaymentEntitlement
+0x1ef72c008  __AUTH,__objc_data  _OBJC_METACLASS_$_PKInAppPaymentPresentationHostContext
+0x1ee3316a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKInAppPaymentService
+0x1ef724dd0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKInAppPaymentSession
+0x1ef724da8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKInAppPaymentSessionAuthorizationRequest
+0x1ef724d80  __AUTH,__objc_data  _OBJC_METACLASS_$_PKInAppPaymentSessionAuthorizeParamaters
+0x1ef716690  __AUTH,__objc_data  _OBJC_METACLASS_$_PKInstallmentPlanMerchant
+0x1ef716668  __AUTH,__objc_data  _OBJC_METACLASS_$_PKInstallmentPlanSummary
+0x1ef72a898  __AUTH,__objc_data  _OBJC_METACLASS_$_PKInstantFundsOutFeeSummaryItem
+0x1ef716640  __AUTH,__objc_data  _OBJC_METACLASS_$_PKInstantFundsOutFeeSummaryItemValidator
+0x1ef716618  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIssuerBindingData
+0x1ef724d58  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIssuerMessagingFlag
+0x1ef724d30  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIssuerProvisioningExtensionConsumerContext
+0x1ef724d08  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIssuerProvisioningExtensionConsumerCoordinator
+0x1ef72a870  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIssuerProvisioningExtensionHandler
+0x1ef72bfe0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIssuerProvisioningExtensionPassEntry
+0x1ef7165f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIssuerProvisioningExtensionPaymentPassEntry
+0x1ef72a848  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIssuerProvisioningExtensionProviderContext
+0x1ef72bfb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKIssuerProvisioningExtensionStatus
+0x1ef7165c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKJapanIndividualNumberCardMetadata
+0x1ee32e428  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKKeychainItemWrapper
+0x1ee335980  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKLabeledValue
+0x1ee32e400  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKLayerNullActionDelegate
+0x1ef729290  __AUTH,__objc_data  _OBJC_METACLASS_$_PKLayoutAssetImage
+0x1ef729268  __AUTH,__objc_data  _OBJC_METACLASS_$_PKLayoutAssetLink
+0x1ef729240  __AUTH,__objc_data  _OBJC_METACLASS_$_PKLayoutAssetString
+0x1ef7165a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKLiveRenderedShaderSet
+0x1ee335520  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKLocation
+0x1ef716578  __AUTH,__objc_data  _OBJC_METACLASS_$_PKLongTermPrivacyKey
+0x1ef716550  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMAEntitlementTemplateManager
+0x1ef724ce0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMapContainer
+0x1ee32f008  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKMapsBrand
+0x1ee334030  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKMapsMerchant
+0x1ef716528  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMembershipProgram
+0x1ee334008  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKMerchant
+0x1ef724cb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMerchantCategoryCodeMap
+0x1ef716500  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMerchantCategoryDomainLookup
+0x1ef724c90  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMerchantLookupRequest
+0x1ef724c68  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMerchantLookupResponse
+0x1ef7164d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMerchantToken
+0x1ef7164b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMerchantTokenDemoData
+0x1ef716488  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMerchantTokenUsageMetadata
+0x1ef72bf90  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMicaLayer
+0x1ef72bf68  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMiniDiscoveryCard
+0x1ee32fbe8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKMobileAssetManager
+0x1ef716460  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMockPeerPaymentController
+0x1ef716438  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMutableAccountUserNotificationSettings
+0x1ef716410  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMutableAccountUserPreferences
+0x1ef7163e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMutableAutofillCardCredential
+0x1ef7163c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMutablePassEntitlementCapabilitySet
+0x1ef724c40  __AUTH,__objc_data  _OBJC_METACLASS_$_PKMutablePassTileDescriptorState
+0x1ee334990  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKNFCPayload
+0x1ef716398  __AUTH,__objc_data  _OBJC_METACLASS_$_PKNFCTag
+0x1ef716370  __AUTH,__objc_data  _OBJC_METACLASS_$_PKNFCTagReaderSession
+0x1ef729218  __AUTH,__objc_data  _OBJC_METACLASS_$_PKNameComponentFormatConfiguration
+0x1ef716348  __AUTH,__objc_data  _OBJC_METACLASS_$_PKNearbyPeerPaymentReceiverCoordinator
+0x1ef716320  __AUTH,__objc_data  _OBJC_METACLASS_$_PKNearbyPeerPaymentReceiverResponseMetadata
+0x1ee335868  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKNotifyRegistration
+0x1ee335840  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKNotifySubregistration
+0x1ef7162f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKNumericSuggestion
+0x1ef7162d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKNumericSuggestionLastInput
+0x1ef7162a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKNumericSuggestionsAlgorithm
+0x1ef716280  __AUTH,__objc_data  _OBJC_METACLASS_$_PKNumericSuggestionsEnterValueAlgorithm
+0x1ef724c18  __AUTH,__objc_data  _OBJC_METACLASS_$_PKODIAssessment
+0x1ef716258  __AUTH,__objc_data  _OBJC_METACLASS_$_PKODIServiceProviderAssessment
+0x1ef724bf0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKODITransactionAssessment
+0x1ee32fbc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKOSVersionRequirement
+0x1ee330408  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKOSVersionRequirementRange
+0x1ee335a98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKObject
+0x1ef72bf40  __AUTH,__objc_data  _OBJC_METACLASS_$_PKObjectDownload
+0x1ef72bf18  __AUTH,__objc_data  _OBJC_METACLASS_$_PKObjectDownloader
+0x1ef716230  __AUTH,__objc_data  _OBJC_METACLASS_$_PKObjectProperty
+0x1ef716208  __AUTH,__objc_data  _OBJC_METACLASS_$_PKOpaqueDataServiceProviderOrder
+0x1ee332230  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKOverlayableWebServiceRequest
+0x1ef7161e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaginatedAccountWebServiceResponse
+0x1ef7161b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaginatedPaymentWebServiceResponse
+0x1ef716190  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaginatedWebServiceResponse
+0x1ee332f50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPartialShareInvitation
+0x1ee335a70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPass
+0x1ee331678  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassAnnotations
+0x1ee335098  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassAutomaticSelectionCriterion
+0x1ee330160  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassAuxiliaryCapabilityDecryptionISO18013KeyCreationMetadata
+0x1ee330138  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassAuxiliaryCapabilityKeyCreationMetadata
+0x1ee32fb98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassAuxiliaryCapabilitySignatureAliroHomeKeyCreationMetadata
+0x1ee32fb70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassAuxiliaryCapabilitySignatureAliroHydraKeyCreationMetadata
+0x1ee32fb48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassAuxiliaryCapabilitySignatureCarConnectivityConsortiumKeyCreationMetadata
+0x1ee32fb20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassAuxiliaryCapabilitySignatureFidoKeyCreationMetadata
+0x1ee32faf8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassAuxiliaryCapabilitySignatureIdentityAccountKeyCreationMetadata
+0x1ee32fad0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassAuxiliaryCapabilitySignatureUnifiedAccessHomeKeyCreationMetadata
+0x1ee32faa8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassAuxiliaryCapabilitySignatureUnifiedAccessHydraKeyCreationMetadata
+0x1ee331ad8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassAuxiliaryPassInformation
+0x1ee3313f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassAuxiliaryPassInformationItem
+0x1ef716168  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassAuxiliaryPassInformationItemNavigationItem
+0x1ee334e18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassAuxiliaryRegistrationDecryptionRequirement
+0x1ee334df0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassAuxiliaryRegistrationRequirement
+0x1ee3313d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassAuxiliaryRegistrationRequirements
+0x1ee334dc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassAuxiliaryRegistrationSignatureRequirement
+0x1ee331ab0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassBalance
+0x1ee331a88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassBalanceModel
+0x1ee331e98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassBarcodeSettings
+0x1ee334670  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassContent
+0x1ef716140  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassCredentialShare
+0x1ee330110  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassDateField
+0x1ef716118  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassDateRangeField
+0x1ee331a60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassDetailSection
+0x1ee334648  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassDetailsImageSet
+0x1ee334968  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassDisplayProfile
+0x1ee335070  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassDynamicState
+0x1ee334620  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassEntitlement
+0x1ef7160f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassEntitlementCapabilitySet
+0x1ef7160c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassEntitlementTemplate
+0x1ef7160a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassEntitlementsComposer
+0x1ef716078  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassEntitlementsComposerEntitlementEntryNode
+0x1ef716050  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassEntitlementsComposerEntry
+0x1ef716028  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassEntitlementsComposerEntryNode
+0x1ef716000  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassEntitlementsComposerPredefinedEntryNode
+0x1ef715fd8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassEntitlementsComposerPredefinedSelectionEntry
+0x1ee3345f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassEventGuideImageSet
+0x1ee331a38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassFeatureConfiguration
+0x1ee331650  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassFeaturedAction
+0x1ee3342b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassField
+0x1ee331a10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassFieldImage
+0x1ee3345d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassFrontFaceImageSet
+0x1ef715fb0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassGrayPlaceholderKey
+0x1ee3345a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassImageSet
+0x1ee335048  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassIngestionPayload
+0x1ef715f88  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassIngestionProperties
+0x1ee3336a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassLegalAgreement
+0x1ee335570  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassLibrary
+0x1ef72bef0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassLibraryDefaultDataProvider
+0x1ee331e70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassLiveDataConfiguration
+0x1ee3319e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassLiveRender
+0x1ee334580  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassLiveRenderedArmedStateImageSet
+0x1ee334558  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassLiveRenderedImageSet
+0x1ee334530  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassLogoImageSet
+0x1ef715f60  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassNumberField
+0x1ef715f38  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassOwnershipToken
+0x1ef715f10  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassPersonNameField
+0x1ee331e48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassPersonalization
+0x1ee334508  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassPersonalizationImageSet
+0x1ee3344e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassPlaceHolderImageSet
+0x1ef724bc8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassPreferencesManager
+0x1ee3344b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassPreviewImageSet
+0x1ee334350  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassProvisioningMetadata
+0x1ee3319c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassRelevancyModel
+0x1ee334490  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassRelevantDate
+0x1ef715ee8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassSectionDetailDrillInField
+0x1ef715ec0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassSecurePreviewContext
+0x1ee331998  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassSemantic
+0x1ee332f28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassShare
+0x1ef715e98  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassShareActivationOption
+0x1ee332208  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassShareActivationOptions
+0x1ef715e70  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassShareInitiationActivationConfiguration
+0x1ef715e48  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassShareTimeConfiguration
+0x1ef715e20  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassShareTimeSchedule
+0x1ef715df8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassSharedEntitlement
+0x1ee332f00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassTile
+0x1ef715dd0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileAccessory
+0x1ef715da8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileAccessoryButton
+0x1ef715d80  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileAccessoryImage
+0x1ef715d58  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileAccessorySpinner
+0x1ef7291f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileDescriptor
+0x1ef724ba0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileDescriptorState
+0x1ef715d30  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileImage
+0x1ef7291c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileMetadata
+0x1ef7291a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileMetadataHorizontalFlowGroup
+0x1ef715d08  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileMetadataVehicleFunction
+0x1ef715ce0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileMetadataVerticalFlowGroup
+0x1ef729178  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileState
+0x1ef715cb8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileStateCheckIn
+0x1ef715c90  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileStateDefault
+0x1ef715c68  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileStateDefaultV2
+0x1ef715c40  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileStateForeignView
+0x1ef729150  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileStateGroup
+0x1ef729128  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileStateMetadata
+0x1ef715c18  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileStateMetadataVehicleFunction
+0x1ef729100  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileStatePaymentOfferSelector
+0x1ef715bf0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileValue
+0x1ef715bc8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileValueDate
+0x1ef715ba0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileValueForeignReference
+0x1ef715b78  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileValueImage
+0x1ef715b50  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileValueNumber
+0x1ef715b28  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassTileValueText
+0x1ee332730  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassTransactionActivitySummary
+0x1ee331e20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassUpcomingPassInformation
+0x1ef715b00  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassUpcomingPassInformationEntry
+0x1ef715ad8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassUpcomingPassInformationEntryContent
+0x1ef715ab0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassUpcomingPassInformationEntryContentEvent
+0x1ef715a88  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassUpcomingPassInformationEntryMetadata
+0x1ef715a60  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassUpcomingPassInformationEntryMetadataEvent
+0x1ef715a38  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassUpcomingPassInformationGroup
+0x1ef715a10  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassUpcomingPassInformationImageManifest
+0x1ef7159e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassUpcomingPassInformationImageManifestItem
+0x1ef7159c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassUpgradeController
+0x1ee32efe0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassUpgradeControllerBase
+0x1ee3313a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassUpgradeExpressAutomaticSelectionCriteriaRequest
+0x1ef715998  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassUpgradePrecursorPassAction
+0x1ef715970  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassUpgradePrecursorPassDPANIDSignatureAction
+0x1ef715948  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassUpgradePrecursorPassExistingCardAuthorizationAction
+0x1ef715920  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassUpgradePrecursorPassGenericReprovisionAction
+0x1ef7158f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassUpgradePrecursorPassIssuerAppAction
+0x1ef7158d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassUpgradePrecursorPassProofingAction
+0x1ee330ac0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassUpgradePrecursorPassRequest
+0x1ee331380  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassUpgradeRequest
+0x1ef72bec8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassVerificationAppClipMethod
+0x1ef72bea0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassVerificationCardTapMethod
+0x1ef72be78  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassVerificationFieldsMethod
+0x1ef72be50  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassVerificationIssuerAppMethod
+0x1ef72be28  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassVerificationMethod
+0x1ef72be00  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassVerificationMethodGroup
+0x1ef72bdd8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassVerificationOneTimePinMethod
+0x1ef72bdb0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassVerificationPhoneCallMethod
+0x1ef72bd88  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassVerificationURLMethod
+0x1ef7158a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPassbookFairPlayEvaluator
+0x1ee32e3d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPasscodeLockManager
+0x1ee334ad0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPassesXPCContainer
+0x1ee331970  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPayLaterMerchandisingConfiguration
+0x1ef715880  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPayLaterMerchandisingUtilities
+0x1ee333888  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPayment
+0x1ef715858  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAccountAttesationResponse
+0x1ef715830  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentActivationResponse
+0x1ee3354d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentApplication
+0x1ee332ed8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentApplicationAssociatedReader
+0x1ef715808  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentApplicationAssociatedReaderCA
+0x1ee330a98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentApplicationStateMessageOverride
+0x1ee3321e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentApplicationUsageSummary
+0x1ef724b78  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAugmentBaseRequest
+0x1ef724b50  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAugmentBaseResponse
+0x1ef7157e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAugmentSessionRequest
+0x1ef7157b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAugmentSessionResponse
+0x1ef724b28  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAuthorizationAuthorizeStateParam
+0x1ef724b00  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAuthorizationAuthorizedStateParam
+0x1ef724ad8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAuthorizationClientCallbackStateParam
+0x1ef715790  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAuthorizationContinuitySendParam
+0x1ee32efb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentAuthorizationCoordinator
+0x1ef72a820  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAuthorizationCoordinatorExportedObject
+0x1ef724ab0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAuthorizationDataModel
+0x1ef724a88  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAuthorizationErrorStateParam
+0x1ef715768  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAuthorizationInvalidDataStateParam
+0x1ef724a60  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAuthorizationNonceStateParam
+0x1ef715740  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAuthorizationPrepareTransactionDetailsStateParam
+0x1ef715718  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAuthorizationRequest
+0x1ef72bd60  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAuthorizationResult
+0x1ef724a38  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAuthorizationRewrapStateParam
+0x1ef724a10  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAuthorizationStateMachine
+0x1ef7249e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAuthorizationStateParam
+0x1ef7249c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAuthorizationSuccessStateParam
+0x1ef7156f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAvailableDevicesRequest
+0x1ef7156c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAvailableDevicesResponse
+0x1ef7156a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentAvailableDevicesResponseCardItem
+0x1ee32ef90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentAvailableProductsRequest
+0x1ee3303e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentAvailableProductsResponse
+0x1ef724998  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentBackgroundDownloadRecord
+0x1ef724970  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentBackgroundRegisterCredentialRecord
+0x1ee334b70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentBalance
+0x1ee3303b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentBalanceReminder
+0x1ef715678  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentBillingAgreementDataItem
+0x1ef715650  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentBrowseableBankAppsRequest
+0x1ef715628  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentBrowseableBankAppsResponse
+0x1ef724948  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentButtonAnalytics
+0x1ef724920  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentButtonsExperiment
+0x1ef7248f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentCardDataItem
+0x1ef715600  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentCheckMerchantRequest
+0x1ef7155d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentCheckMerchantResponse
+0x1ef7155b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentClientUpdate
+0x1ef715588  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentCloudStoreZoneCreationManager
+0x1ef7248d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentCommonAvailableProductsRequest
+0x1ee333680  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentCommutePlanDetail
+0x1ee330390  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentCommutePlanReminder
+0x1ef715560  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentCompleteSessionRequest
+0x1ef715538  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentCompleteSessionResponse
+0x1ef72bd38  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentConfigurationRequest
+0x1ef72bd10  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentConfigurationResponse
+0x1ef715510  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentContactlessProductCredential
+0x1ef7248a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentContentDataItem
+0x1ee32ef68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentContentItem
+0x1ef72a7f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentContentItemValidator
+0x1ef7154e8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentCouponCodeDataItem
+0x1ef7154c0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentCreateVehicleShareRequest
+0x1ee333ab8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentCredential
+0x1ef715498  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentCredentialAccountAttestationRequest
+0x1ef715470  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentCredentialMetadata
+0x1ef715448  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentCredentialMetadataCurrency
+0x1ef715420  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentCredentialMetadataDate
+0x1ef7153f8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentCredentialMetadataText
+0x1ef7153d0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentCredentialNonceRequest
+0x1ef7153a8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentCredentialProvisioningMethod
+0x1ef724880  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentDataItem
+0x1ef715380  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentDateDataItem
+0x1ef72bce8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentDefaultDataProvider
+0x1ef715358  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentDeleteRequest
+0x1ef724858  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentDeprovisionRequest
+0x1ee32e3b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentDevice
+0x1ef724830  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentDeviceCheckInResponse
+0x1ef724808  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentDeviceCheckinDownloadRecord
+0x1ef7247e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentDeviceCheckinRequest
+0x1ef72bcc0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentDeviceConfigurationData
+0x1ef715330  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentDeviceLocationSession
+0x1ee330a70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentDeviceMetadata
+0x1ef715308  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentDeviceMetadataFetchTask
+0x1ef7247b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentDevicePassesRequest
+0x1ef724790  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentDevicePlatfomData
+0x1ef7152e0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentDeviceProvisioningData
+0x1ef724768  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentDeviceRegistrationData
+0x1ef7152b8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentDigitalIssuanceMetadata
+0x1ef715290  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentDigitalIssuanceProductCredential
+0x1ef715268  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentEligibilityFIDOProfile
+0x1ef715240  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentEligibilityRequest
+0x1ef715218  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentEligibilityResponse
+0x1ef7151f0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentEligibilitySupplementaryData
+0x1ef7151c8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentExternalOfferCredential
+0x1ef7151a0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentFetchPassLegalAgreementRequest
+0x1ef715178  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentFetchPassLegalAgreementResponse
+0x1ee32ef40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentHardwareStatus
+0x1ef72bc98  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentHeroImage
+0x1ef715150  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentHeroImageController
+0x1ee331628  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentHeroImageManifest
+0x1ef72bc70  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentHeroImageModel
+0x1ef72bc48  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentHeroImageSet
+0x1ee32ef18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentHostEndpointRegistry
+0x1ef715128  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentHostUpdate
+0x1ef715100  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentIdentityCredential
+0x1ef7150d8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentInformationEventExtension
+0x1ef7150b0  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentInformationEventExtensionBaseContext
+0x1ef715088  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentInformationEventExtensionContext
+0x1ef715060  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentInformationEventExtensionHostContext
+0x1ef715038  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentInitiateExternalProvisioningRequest
+0x1ef715010  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaymentInitiateExternalProvisioningRequestDPANAuthorization
+0x1ee333860  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaymentInstallmentConfiguration
+```
+First 3,000 of 12,235.
+
+## Private
+
+```
+0x1a4089190  __TEXT,__text  __CreateBitmapContext
+0x1a4089598  __TEXT,__text  ___BufferAllocate_block_invoke
+0x1a40895a8  __TEXT,__text  __PKCreateBitmapContext
+0x1a4089750  __TEXT,__text  _BitmapContextReleaseCallback
+0x1a408987c  __TEXT,__text  -[PKAsyncUnaryOperationComposer init]
+0x1a40898e4  __TEXT,__text  -[PKAsyncUnaryOperationComposer addOperation:]
+0x1a4089950  __TEXT,__text  -[PKAnalyticsReporter sendEvent:withCategory:]
+0x1a408a180  __TEXT,__text  -[PKAnalyticsReporter initWithParentToken:subject:]
+0x1a408a50c  __TEXT,__text  ___51-[PKAnalyticsReporter initWithParentToken:subject:]_block_invoke
+0x1a408a620  __TEXT,__text  -[PKAsyncUnaryOperationEvaluator _performOperation]
+0x1a408aaa8  __TEXT,__text  ___51-[PKAsyncUnaryOperationEvaluator _performOperation]_block_invoke
+0x1a408ac40  __TEXT,__text  ___51-[PKAsyncUnaryOperationEvaluator _performOperation]_block_invoke_3
+0x1a408aca8  __TEXT,__text  +[PKFieldProperties(NearField) fieldPropertiesForFieldNotification:]
+0x1a408afb4  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408afbc  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408afc4  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408afcc  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408afd4  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408afdc  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408afe4  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408afec  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408aff4  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408affc  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b004  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b00c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b014  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b01c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b024  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b02c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b034  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b03c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b044  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b04c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b054  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b05c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b064  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b06c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b074  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b07c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b084  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b08c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b094  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b09c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b0a4  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b0ac  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b0b4  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b0bc  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b0c4  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b0cc  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b0d4  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b0dc  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b0e4  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b0ec  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b0f4  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b0fc  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b104  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b10c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b114  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b11c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b124  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b12c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b134  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b13c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b144  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b14c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b154  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b15c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b164  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b16c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b174  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b17c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b184  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b18c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b194  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b19c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b1a4  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b1ac  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b1b4  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b1bc  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b1c4  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b1cc  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b1d4  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b1dc  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b1e4  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b1ec  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b1f4  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b1fc  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b204  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b20c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b214  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b21c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b224  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b22c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b234  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b23c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b244  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b24c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b254  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b25c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b264  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b26c  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b274  __TEXT,__text  ___Block_byref_object_dispose_
+0x1a408b498  __TEXT,__text  _PDDefaultPassesQueue
+0x1a408b528  __TEXT,__text  ___PDDefaultPaymentPassUniqueIdentifier_block_invoke
+0x1a408b608  __TEXT,__text  -[PKNotifyRegistration initWithName:]
+0x1a408b840  __TEXT,__text  -[PKUserNotificationAuthorizationController addDelegate:]
+0x1a408b890  __TEXT,__text  +[PKPassLibrary sharedInstance]
+0x1a408b924  __TEXT,__text  -[PKPassLibrary _initWithRemote:]
+0x1a408bb54  __TEXT,__text  -[PKPassLibrary initWithMachServiceName:resumeNotificationName:interfaceType:]
+0x1a408bc84  __TEXT,__text  ___PKRunningInRemoteContext_block_invoke
+0x1a408bcf0  __TEXT,__text  +[NSHashTable(PKAdditions) pk_weakObjectsHashTableUsingPointerPersonality]
+0x1a408bd20  __TEXT,__text  +[PKXPCService setForegroundActiveArbiter:]
+0x1a408bd30  __TEXT,__text  +[PKUserNotificationAuthorizationController sharedInstance]
+0x1a408bd78  __TEXT,__text  ___59+[PKUserNotificationAuthorizationController sharedInstance]_block_invoke
+0x1a408bda8  __TEXT,__text  -[PKUserNotificationAuthorizationController init]
+0x1a408bed0  __TEXT,__text  ___PKRunningInPassbook_block_invoke
+0x1a408bf38  __TEXT,__text  ___PDPaymentServiceExtendedInterface_block_invoke
+0x1a408ca14  __TEXT,__text  __ConfigurePDPaymentServiceInterface
+0x1a408eca8  __TEXT,__text  +[PKPaymentService paymentService]
+0x1a408ed18  __TEXT,__text  ___PKPaymentServiceInterface_block_invoke
+0x1a408f040  __TEXT,__text  -[PKPaymentService init]
+0x1a408f048  __TEXT,__text  -[PKPaymentService initWithDelegate:]
+0x1a408f218  __TEXT,__text  ___PKLogFacilityTypeGetObject_block_invoke
+0x1a408f288  __TEXT,__text  -[PKXPCService initWithMachServiceName:remoteObjectInterface:exportedObjectInterface:exportedObject:serviceResumedNotificationName:options:]
+0x1a408f784  __TEXT,__text  -[PKXPCForwarder _initWithTarget:targetClass:]
+0x1a408f948  __TEXT,__text  -[PKPassLibraryDefaultDataProvider init]
+0x1a408f994  __TEXT,__text  ___31+[PKPassLibrary sharedInstance]_block_invoke
+0x1a408fa10  __TEXT,__text  ___57-[PKPassLibrary passWithPassTypeIdentifier:serialNumber:]_block_invoke
+0x1a408fa20  __TEXT,__text  -[PKRemoteDataAccessor .cxx_destruct]
+0x1a408fa68  __TEXT,__text  -[PKDirectoryCoordinator performCoordinatedAction:]
+0x1a408fb1c  __TEXT,__text  ___28-[PKFileDataAccessor bundle]_block_invoke
+0x1a408fb74  __TEXT,__text  -[NSDictionary(PKPlistTypeSafety) PKStringForKey:]
+0x1a408fbcc  __TEXT,__text  +[PKPass classForDictionary:bundle:]
+0x1a408fc50  __TEXT,__text  +[PKPass isValidObjectWithFileDataAccessor:validationOptions:warnings:error:signingDate:passDictionary:]
+0x1a4091804  __TEXT,__text  __PKFetchSigningDate
+0x1a40919f0  __TEXT,__text  -[PKPass initWithDictionary:bundle:]
+0x1a4093040  __TEXT,__text  -[PKDisplayProfile initWithDictionary:bundle:]
+0x1a4093078  __TEXT,__text  -[PKPassDisplayProfile initWithDictionary:bundle:]
+0x1a4094828  __TEXT,__text  -[NSDictionary(PKPlistTypeSafety) PKColorForKey:]
+0x1a4094ac8  __TEXT,__text  +[PKImage URLForImageNamed:inBundle:scale:preferredScreenScale:suffix:]
+0x1a409518c  __TEXT,__text  ___71+[PKImage URLForImageNamed:inBundle:scale:preferredScreenScale:suffix:]_block_invoke
+0x1a40952c4  __TEXT,__text  -[NSData(PKDataAdditions) SHA1Hash]
+0x1a4095358  __TEXT,__text  -[NSDictionary(PKPlistTypeSafety) PKArrayForKey:]
+0x1a40953b0  __TEXT,__text  -[PKPassDisplayProfile passStyle]
+0x1a40953b8  __TEXT,__text  -[PKSecureElementPass initWithDictionary:bundle:]
+0x1a4095e18  __TEXT,__text  __PKValidateAutomaticSelectionCriteriaDict
+0x1a40961b8  __TEXT,__text  -[PKAsyncUnaryOperationComposer evaluateWithInput:completion:]
+0x1a4096220  __TEXT,__text  -[PKDeallocationGuard dealloc]
+0x1a4096284  __TEXT,__text  -[PKEntitlementWhitelist paymentAllAccess]
+0x1a4096290  __TEXT,__text  -[PKFieldProperties setAuthenticationRequired:]
+0x1a4096298  __TEXT,__text  -[PKFieldProperties setReaderIdentifier:]
+0x1a40962a0  __TEXT,__text  -[PKFieldProperties terminalType]
+0x1a4096318  __TEXT,__text  -[PKDeallocationGuard .cxx_destruct]
+0x1a4096324  __TEXT,__text  -[PKAsyncOperationState .cxx_destruct]
+0x1a4096330  __TEXT,__text  -[PKFieldProperties technology]
+0x1a4096338  __TEXT,__text  -[PKFieldProperties valueAddedServiceMode]
+0x1a4096340  __TEXT,__text  -[PKFieldMetadata initWithAssociatedPassIdentifiers:shouldIgnoreField:foundExplicitlyRequestedPass:]
+0x1a40963cc  __TEXT,__text  -[PKFieldMetadata shouldIgnoreField]
+0x1a40963d4  __TEXT,__text  +[PKAnalyticsReporter subject:sendEvent:]
+0x1a40963e0  __TEXT,__text  -[PKFieldProperties accessTerminalSubtype]
+0x1a40963e8  __TEXT,__text  -[PKFieldProperties backgroundTransaction]
+0x1a40963f0  __TEXT,__text  -[PKFieldProperties merchantIdentifiers]
+0x1a40963f8  __TEXT,__text  -[PKFieldProperties encodeWithCoder:]
+0x1a4096570  __TEXT,__text  +[PKAnalyticsReporter beginSubjectReporting:]
+0x1a4096788  __TEXT,__text  +[PKAnalyticsReporter clientTypeForSubject:]
+0x1a4096818  __TEXT,__text  -[PDXPCService remoteObjectProxy]
+0x1a4096820  __TEXT,__text  -[PDXPCService remoteObjectProxyWithErrorHandler:]
+0x1a40968ac  __TEXT,__text  -[PKFidoProfile .cxx_destruct]
+0x1a4097618  __TEXT,__text  -[PKXPCService synchronousRemoteObjectProxyWithErrorHandler:]
+0x1a4097698  __TEXT,__text  -[PKXPCService _connection]
+0x1a40976f4  __TEXT,__text  -[PKXPCService _createConnectionIfPossible:]
+0x1a4097ac8  __TEXT,__text  -[PKXPCService _newWrappedErrorHandlerForHandler:]
+0x1a4097b9c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097bac  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097bbc  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097bcc  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097bdc  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097bec  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097bfc  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097c0c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097c1c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097c2c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097c3c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097c4c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097c5c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097c6c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097c7c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097c8c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097c9c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097cac  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097cbc  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097ccc  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097cdc  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097cec  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097cfc  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097d0c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097d1c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097d2c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097d3c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097d4c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097d78  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097d88  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097d98  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097da8  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097db8  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097dc8  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097df4  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097e04  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097e14  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097e24  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097e34  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097e44  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097e54  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097e64  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097e74  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097e84  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097e94  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097ea4  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097eb4  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097ec4  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097ed4  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097ee4  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097f10  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097f20  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097f30  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097f40  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097f50  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097f60  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097f70  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097f80  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097f90  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097fa0  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097fb0  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097fc0  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097fd0  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097fe0  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4097ff0  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4098000  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4098010  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4098020  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4098030  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4098040  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4098050  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4098060  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4098070  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4098080  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4098090  __TEXT,__text  ___Block_byref_object_copy_
+0x1a40980bc  __TEXT,__text  ___Block_byref_object_copy_
+0x1a40980cc  __TEXT,__text  ___Block_byref_object_copy_
+0x1a40980dc  __TEXT,__text  ___Block_byref_object_copy_
+0x1a40980ec  __TEXT,__text  ___Block_byref_object_copy_
+0x1a40980fc  __TEXT,__text  ___Block_byref_object_copy_
+0x1a409810c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a409811c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a409812c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a409813c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a409814c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a409815c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a409816c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a409817c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a409818c  __TEXT,__text  ___Block_byref_object_copy_
+0x1a4098280  __TEXT,__text  -[PDXPCService initWithConnection:]
+0x1a4098364  __TEXT,__text  -[PKEntitlementWhitelist initWithConnection:]
+0x1a4098404  __TEXT,__text  -[PKPaymentWebService context]
+0x1a4098464  __TEXT,__text  ___PDPassLibraryExtendedInterface_block_invoke
+0x1a4099498  __TEXT,__text  __PDPassLibraryApplyBaseInterface
+0x1a40996b8  __TEXT,__text  __PDPassLibraryApplyInAppInterface
+0x1a4099a04  __TEXT,__text  ___PKPassLibraryInterface_block_invoke
+0x1a4099b4c  __TEXT,__text  -[PKPassLibraryDefaultDataProvider initWithPassLibrary:]
+0x1a4099bc0  __TEXT,__text  -[PKGroupsController init]
+0x1a4099c0c  __TEXT,__text  -[PKGroupsController initWithPassLibrary:]
+0x1a4099dbc  __TEXT,__text  ____InstallPassSettingsChangedObserverIfNecessary_block_invoke
+0x1a4099e18  __TEXT,__text  +[PKSecureElement isInFailForward]
+0x1a4099e60  __TEXT,__text  ___34+[PKSecureElement isInFailForward]_block_invoke
+0x1a409a10c  __TEXT,__text  ____InstallGlobalPreferencesObserverIfNecessary_block_invoke
+0x1a409a23c  __TEXT,__text  ___PKSecureElementIsAvailable_block_invoke
+0x1a409a3d0  __TEXT,__text  ___PKGetClassNFHardwareManager_block_invoke
+0x1a409a420  __TEXT,__text  ___PKLoadNearField_block_invoke
+0x1a409a4b8  __TEXT,__text  ___PKRunningInPassd_block_invoke
+0x1a409a520  __TEXT,__text  +[PKPaymentWebService sharedService]
+0x1a409a6c8  __TEXT,__text  -[PKSharingIDSManager addDelegate:]
+0x1a409a740  __TEXT,__text  -[PDXPCService activated]
+0x1a409a744  __TEXT,__text  -[PKObject initWithDictionary:bundle:]
+0x1a409a7a4  __TEXT,__text  +[PKColor colorFromString:]
+0x1a409a998  __TEXT,__text  __ColorWithColorSpaceAndComponents
+0x1a409adfc  __TEXT,__text  __GetRGBValue
+0x1a409aecc  __TEXT,__text  __GetIntValue
+0x1a409b048  __TEXT,__text  -[PKPassDisplayProfile setDrawCardHolderImageOnArtwork:]
+0x1a409b050  __TEXT,__text  -[PKNFCPayload .cxx_destruct]
+0x1a409b088  __TEXT,__text  -[PKObject setDisplayProfile:]
+0x1a409b094  __TEXT,__text  -[PKPass setPassTypeIdentifier:]
+0x1a409b1c8  __TEXT,__text  -[NSString(PKAdditions) pk_decodeHexadecimal]
+0x1a409b298  __TEXT,__text  __AnyDisplay
+0x1a409b438  __TEXT,__text  -[NSDictionary(PKPlistTypeSafety) PKNumberForKey:]
+0x1a409b5ac  __TEXT,__text  __PKVerifyDictionaryKey
+0x1a409b6a8  __TEXT,__text  -[PKPaymentApplication initWithPaymentApplicationDictionary:auxiliaryApplication:]
+0x1a409c234  __TEXT,__text  -[PKPassAutomaticSelectionCriterion initWithDictionary:]
+0x1a409c52c  __TEXT,__text  ___56-[PKPassAutomaticSelectionCriterion initWithDictionary:]_block_invoke
+0x1a409c6c0  __TEXT,__text  -[NSMutableSet(PKSetAdditions) pk_safelyAddObject:]
+0x1a409c6cc  __TEXT,__text  -[PKPaymentApplication hash]
+0x1a409ca5c  __TEXT,__text  ___PKCombinedHash_block_invoke
+0x1a409caa4  __TEXT,__text  -[PKSecureElementPass setPrimaryAccountIdentifier:]
+0x1a409cb9c  __TEXT,__text  -[PKExpressPassConfiguration initWithPassInformation:isNFCExpressEnabled:isUWBExpressEnabled:]
+0x1a409cc58  __TEXT,__text  -[PKXPCService remoteObjectProxyWithErrorHandler:]
+0x1a409ccd8  __TEXT,__text  ___EncodeV2Format_block_invoke
+0x1a409cd58  __TEXT,__text  _PKDeepCopyDeduplicatedWithHashTable
+0x1a409d1a4  __TEXT,__text  ___PKDeepCopyDeduplicatedWithHashTable_block_invoke
+0x1a409d22c  __TEXT,__text  -[PKPaymentWebServiceContext initWithCoder:]
+0x1a409d85c  __TEXT,__text  +[PKPaymentWebServiceTargetDevice localTargetDevice]
+0x1a409d8a4  __TEXT,__text  ___52+[PKPaymentWebServiceTargetDevice localTargetDevice]_block_invoke
+0x1a409d8d4  __TEXT,__text  -[PKPaymentWebServiceTargetDevice init]
+0x1a409d960  __TEXT,__text  -[PKWebService initWithTapToRadarDelegate:]
+0x1a409dd98  __TEXT,__text  -[PKPaymentWebServiceTargetDevice paymentSupportedInCurrentRegionForWebService:]
+0x1a409de94  __TEXT,__text  -[PKPaymentWebServiceTargetDevice osVersion]
+0x1a409dec0  __TEXT,__text  -[PKPaymentWebServiceTargetDevice deviceClass]
+0x1a409deec  __TEXT,__text  -[PKPaymentWebServiceTargetDevice deviceRegion]
+0x1a409e110  __TEXT,__text  -[PKGroupsController setShouldSeparatePaymentPasses:]
+0x1a409e118  __TEXT,__text  -[PKGroupsController setDelegate:]
+0x1a409e124  __TEXT,__text  -[PKGroupsController loadGroupsSynchronously]
+0x1a409e1c8  __TEXT,__text  -[PKGroupsController _snapshotFetchOptions]
+0x1a409e254  __TEXT,__text  -[PKGroupsControllerSnapshotFetchOptions setLimitResults:]
+0x1a409e25c  __TEXT,__text  -[PKGroupsControllerSnapshotFetchOptions setIncludeRelevancy:]
+0x1a409e264  __TEXT,__text  -[PKGroupsControllerSnapshotFetchOptions setAllowedPassType:]
+0x1a409e26c  __TEXT,__text  -[PKGroupsControllerSnapshotFetchOptions encodeWithCoder:]
+0x1a409e304  __TEXT,__text  -[PDXPCService serviceSuspended]
+0x1a409e3c0  __TEXT,__text  -[PKGroupsControllerSnapshotFetchOptions allowedPassType]
+0x1a409e3c8  __TEXT,__text  -[PKGroupsControllerSnapshotFetchOptions limitResults]
+0x1a409e3d0  __TEXT,__text  -[PKCatalog init]
+0x1a409e438  __TEXT,__text  -[PKCatalogGroup init]
+0x1a409e4d4  __TEXT,__text  -[PKCatalogGroup setIsUbiquitous:]
+0x1a409e4dc  __TEXT,__text  -[PKCatalogGroup setGroupID:]
+0x1a409e4e8  __TEXT,__text  -[PKCatalog groups]
+0x1a409e530  __TEXT,__text  -[PKCatalogGroup uniqueIDs]
+0x1a409e578  __TEXT,__text  -[PKPass setDrawCardHolderImageOnArtwork:]
+0x1a409e58c  __TEXT,__text  -[PKPass setMerchandiseURL:]
+0x1a409e5d4  __TEXT,__text  -[PKPass setModifiedDate:]
+0x1a409e5e8  __TEXT,__text  -[PKPaymentWebServiceConfiguration initWithCoder:]
+0x1a409e6a4  __TEXT,__text  -[PKPass paymentPass]
+0x1a409e738  __TEXT,__text  +[PKSharedPaymentWebServiceArchiver sharedPaymentWebServiceArchiver]
+0x1a409e758  __TEXT,__text  -[PKWebService resetWebServiceSessionMarker]
+0x1a409e8bc  __TEXT,__text  +[PKPaymentRegistrationUtilities _isPaymentSetupSupportedForWebService:]
+0x1a409e8e0  __TEXT,__text  -[PKCatalogGroup groupID]
+0x1a409e8e8  __TEXT,__text  +[PKPass classForPassType:]
+0x1a409e924  __TEXT,__text  -[PKObject init]
+0x1a409e930  __TEXT,__text  -[PKPass setPassType:]
+0x1a409e974  __TEXT,__text  -[PKPass setRevoked:]
+0x1a409e988  __TEXT,__text  -[PKPass setSerialNumber:]
+0x1a409e994  __TEXT,__text  -[PKEntitlementWhitelist _copyValueOfEntitlement:fromSecTask:]
+0x1a409ea78  __TEXT,__text  -[PKPass setHasStoredValue:]
+0x1a409ea8c  __TEXT,__text  -[PKPaymentWebServiceConfiguration supportedRegionsForOSVersion:deviceClass:]
+0x1a409ea94  __TEXT,__text  -[PKEntitlementWhitelist passesAllAccess]
+0x1a409ebd0  __TEXT,__text  -[NSSet(PKSetAdditions) pk_arrayCopy]
+0x1a409ec20  __TEXT,__text  -[PKObject uniqueID]
+0x1a409ec28  __TEXT,__text  -[PKPass setLiveRenderType:]
+0x1a409ec3c  __TEXT,__text  _EnumerateApplicationsForSEIDs
+0x1a409edbc  __TEXT,__text  -[PKGroupsControllerSnapshotFetchOptions includeRelevancy]
+0x1a409ef70  __TEXT,__text  -[PKKeychainItemWrapper initWithIdentifier:accessGroup:serviceName:type:invisible:]
+0x1a409ef78  __TEXT,__text  -[PKKeychainItemWrapper initWithIdentifier:accessGroup:serviceName:type:invisible:accessibility:]
+0x1a409f164  __TEXT,__text  -[PKKeychainItemWrapper applySynchronizableValueToDictionary:]
+0x1a409f234  __TEXT,__text  -[PKKeychainItemWrapper resetKeychainItem]
+0x1a409f23c  __TEXT,__text  -[PKKeychainItemWrapper .cxx_destruct]
+0x1a409f280  __TEXT,__text  -[PKKeychainItemWrapper _resetKeychainItem:]
+0x1a409f3bc  __TEXT,__text  -[PKSecureElementPass setIdentityAccountKeyIdentifier:]
+0x1a409f3c8  __TEXT,__text  -[PKSecureElementPass setOriginalProvisioningDate:]
+0x1a409f3dc  __TEXT,__text  -[PKSecureElementPass setAssociatedAccountServiceAccountIdentifier:]
+0x1a409f3e8  __TEXT,__text  -[PKSecureElementPass setSpeakableMake:]
+0x1a409f684  __TEXT,__text  ___34-[PKFileDataAccessor manifestHash]_block_invoke
+0x1a409f6d4  __TEXT,__text  -[PKSecureElementPass updateDevicePaymentApplicationsWithSecureElementIdentifiers:]
+0x1a409fce0  __TEXT,__text  ___83-[PKSecureElementPass updateDevicePaymentApplicationsWithSecureElementIdentifiers:]_block_invoke
+0x1a409fd64  __TEXT,__text  ___83-[PKSecureElementPass updateDevicePaymentApplicationsWithSecureElementIdentifiers:]_block_invoke_3
+0x1a409fd6c  __TEXT,__text  -[PKSecureElementPass sortedPaymentApplications:ascending:]
+0x1a409fe34  __TEXT,__text  -[PKXPCService _establishServiceConnection]
+0x1a409fe78  __TEXT,__text  -[PKSecureElementPass devicePaymentApplications]
+0x1a409ff78  __TEXT,__text  -[PKExpressPassInformation initForPaymentPass:withTechologyTest:]
+0x1a40a0424  __TEXT,__text  +[PKSecureElement hardwareSupportsExpressForAutomaticSelectionTechnologyType:outError:]
+0x1a40a0668  __TEXT,__text  -[PKSecureElementPass contactlessActivationGroupingType]
+0x1a40a067c  __TEXT,__text  -[PKExpressPassConfiguration initWithPassInformation:forPaymentApplications:]
+0x1a40a0828  __TEXT,__text  ___57-[PKExpressPassInformation paymentApplicationIdentifiers]_block_invoke
+0x1a40a087c  __TEXT,__text  ___EncodeV1Format_block_invoke
+0x1a40a09a4  __TEXT,__text  -[PKExpressPassInformation encodeWithCoder:]
+0x1a40a0c78  __TEXT,__text  _ExtractV0Format
+0x1a40a0e04  __TEXT,__text  ___ExtractV0Format_block_invoke
+0x1a40a0fdc  __TEXT,__text  -[PKExpressPassConfiguration .cxx_destruct]
+0x1a40a1014  __TEXT,__text  -[PKExpressPassInformation .cxx_destruct]
+0x1a40a1058  __TEXT,__text  -[PKExpressPassCredentialEntry .cxx_destruct]
+0x1a40a109c  __TEXT,__text  -[PKObject dealloc]
+0x1a40a110c  __TEXT,__text  -[PKSecureElementPass .cxx_destruct]
+0x1a40a13e4  __TEXT,__text  -[PKPaymentApplication .cxx_destruct]
+0x1a40a1554  __TEXT,__text  -[PKAppletSubcredential .cxx_destruct]
+0x1a40a164c  __TEXT,__text  -[PKPassAutomaticSelectionCriterion .cxx_destruct]
+0x1a40a16b4  __TEXT,__text  -[PKPass .cxx_destruct]
+0x1a40a1a6c  __TEXT,__text  -[PKObject .cxx_destruct]
+0x1a40a1b2c  __TEXT,__text  -[PKPassDisplayProfile .cxx_destruct]
+0x1a40a1bac  __TEXT,__text  -[PKColor dealloc]
+0x1a40a1c00  __TEXT,__text  -[PKFileDataAccessor dealloc]
+0x1a40a1d24  __TEXT,__text  -[PKFileDataAccessor .cxx_destruct]
+0x1a40a1d9c  __TEXT,__text  -[PKDirectoryCoordinator .cxx_destruct]
+0x1a40a1da8  __TEXT,__text  -[PKKeychainItemWrapper setKeychainItemData:]
+0x1a40a1db4  __TEXT,__text  +[PKPassRelevantDate findDateFromDates:option:]
+0x1a40a1fa4  __TEXT,__text  -[PKKeychainItemWrapper setLabel:]
+0x1a40a1fac  __TEXT,__text  -[PKPassAnnotations setArchivedTimestamp:]
+0x1a40a1fb8  __TEXT,__text  -[PKKeychainItemWrapper objectForKey:]
+0x1a40a1fc0  __TEXT,__text  -[PKPassAnnotations setSortingState:]
+0x1a40a1fc8  __TEXT,__text  -[PKPass secureElementPass]
+0x1a40a2014  __TEXT,__text  -[PKPassAnnotations sortingState]
+0x1a40a201c  __TEXT,__text  -[PKPassAnnotations archivedTimestamp]
+0x1a40a2024  __TEXT,__text  -[PKGroupsControllerSnapshot initWithPasses:states:annotations:catalog:relevantGroups:passes:]
+0x1a40a2180  __TEXT,__text  -[PKObject encodeWithCoder:]
+0x1a40a2380  __TEXT,__text  -[PKObject webServiceURL]
+0x1a40a2388  __TEXT,__text  -[PKObject displayProfile]
+0x1a40a2390  __TEXT,__text  -[PKDisplayProfile encodeWithCoder:]
+0x1a40a2394  __TEXT,__text  -[PKObject manifestHash]
+0x1a40a239c  __TEXT,__text  -[PKGroupsControllerSnapshot encodeWithCoder:]
+0x1a40a244c  __TEXT,__text  -[PKObject signingDate]
+0x1a40a2454  __TEXT,__text  -[PKPass encodeWithCoder:]
+0x1a40a2c1c  __TEXT,__text  -[PKPassDisplayProfile encodeWithCoder:]
+0x1a40a2dd8  __TEXT,__text  -[PKBeacon minor]
+0x1a40a2de0  __TEXT,__text  -[PKGroupsControllerSnapshot .cxx_destruct]
+0x1a40a2e48  __TEXT,__text  -[PKPassAnnotations .cxx_destruct]
+0x1a40a2e54  __TEXT,__text  -[PKColor encodeWithCoder:]
+0x1a40a2ef4  __TEXT,__text  -[PKCatalog .cxx_destruct]
+0x1a40a2f2c  __TEXT,__text  -[PKCatalogGroup .cxx_destruct]
+0x1a40a2f64  __TEXT,__text  -[PKPassDynamicState .cxx_destruct]
+0x1a40a2fc0  __TEXT,__text  -[PKPassBalanceModel .cxx_destruct]
+0x1a40a2fcc  __TEXT,__text  -[PKPassBalanceModel encodeWithCoder:]
+0x1a40a2fe4  __TEXT,__text  -[PKCatalog encodeWithCoder:]
+0x1a40a3044  __TEXT,__text  -[PKPassRelevantDate .cxx_destruct]
+0x1a40a307c  __TEXT,__text  -[PKBeacon .cxx_destruct]
+0x1a40a30d8  __TEXT,__text  -[PKLocation .cxx_destruct]
+0x1a40a3110  __TEXT,__text  -[PKObject initWithCoder:]
+0x1a40a3500  __TEXT,__text  -[PKObject setContent:]
+0x1a40a3544  __TEXT,__text  -[PKDisplayProfile initWithCoder:]
+0x1a40a357c  __TEXT,__text  -[PKPass initWithCoder:]
+0x1a40a429c  __TEXT,__text  -[PKBeacon setProximityUUID:]
+0x1a40a42a8  __TEXT,__text  -[PKLocation initWithCoder:]
+0x1a40a440c  __TEXT,__text  -[PKBeacon initWithCoder:]
+0x1a40a4580  __TEXT,__text  -[PKPassDynamicState initWithCoder:]
+0x1a40a46f4  __TEXT,__text  -[PKPassBalanceModel initWithCoder:]
+0x1a40a47c8  __TEXT,__text  -[PKGroupsControllerSnapshot passes]
+0x1a40a47d0  __TEXT,__text  ___45-[PKGroupsController loadGroupsSynchronously]_block_invoke
+0x1a40a47e0  __TEXT,__text  -[PKGroupsControllerSnapshot relevantGroups]
+0x1a40a47e8  __TEXT,__text  -[PKGroupsControllerSnapshot catalog]
+0x1a40a47f0  __TEXT,__text  -[PKObject setShareCount:]
+0x1a40a47f8  __TEXT,__text  -[PKPass setPurchaseWifiURL:]
+0x1a40a4804  __TEXT,__text  -[PKPass setEntertainmentURL:]
+0x1a40a4810  __TEXT,__text  -[PKPass setPurchaseAdditionalBaggageURL:]
+0x1a40a481c  __TEXT,__text  -[PKPass setTeamID:]
+0x1a40a4828  __TEXT,__text  -[PKPass setPurchaseLoungeAccessURL:]
+0x1a40a4834  __TEXT,__text  -[PKPass setSharingText:]
+0x1a40a4840  __TEXT,__text  -[PKPass setPurchaseParkingURL:]
+0x1a40a484c  __TEXT,__text  -[PKPass setTransitProviderPhoneNumberURL:]
+0x1a40a4858  __TEXT,__text  -[PKPass setBagPolicyURL:]
+0x1a40a4864  __TEXT,__text  -[PKPass setTransitProviderEmailURL:]
+0x1a40a4870  __TEXT,__text  -[PKPass setTransitProviderWebsiteURL:]
+0x1a40a487c  __TEXT,__text  -[PKPass setManagementURL:]
+0x1a40a4888  __TEXT,__text  -[PKPass setTransferURL:]
+0x1a40a4894  __TEXT,__text  -[PKObject setAuthenticationToken:]
+0x1a40a489c  __TEXT,__text  -[PKPass setCloudKitMetadata:]
+0x1a40a48e0  __TEXT,__text  __GetAValue
+0x1a40a49bc  __TEXT,__text  -[PKPassDisplayProfile setManifestHash:]
+0x1a40a49c8  __TEXT,__text  -[PKPassDisplayProfile setHasBackgroundImage:]
+0x1a40a49d0  __TEXT,__text  -[PKPass setEmbeddedLocationsArray:]
+0x1a40a49dc  __TEXT,__text  -[NSSet(PKSetAdditions) pk_mutableArrayCopy]
+0x1a40a4b28  __TEXT,__text  -[PKNFCPayload setMessage:]
+0x1a40a4b30  __TEXT,__text  -[PKNFCPayload setPayloadState:]
+0x1a40a4b38  __TEXT,__text  -[PKPass setNFCPayload:]
+0x1a40a4b44  __TEXT,__text  -[PKPass setAssociatedPassTypeIdentifiers:]
+0x1a40a4b50  __TEXT,__text  -[PKPassBalanceModel initWithBalances:]
+0x1a40a4be4  __TEXT,__text  -[NSArray(PKArrayAdditions) pk_indexDictionaryByApplyingBlock:]
+0x1a40a4d34  __TEXT,__text  -[PKLocation init]
+0x1a40a4d6c  __TEXT,__text  -[PKLocation setLongitude:]
+0x1a40a4d7c  __TEXT,__text  -[PKPassRelevantDate initWithRelevantDate:]
+0x1a40a4e04  __TEXT,__text  -[PKBeacon setMajor:]
+0x1a40a4e80  __TEXT,__text  -[PKPass setDeviceName:]
+0x1a40a4e8c  __TEXT,__text  -[PKPass setCloudKitSecureMetadata:]
+0x1a40a4ea0  __TEXT,__text  -[PKPass setStandbyListURL:]
+0x1a40a4eac  __TEXT,__text  -[NSMutableArray(PKMutableArrayAdditions) safelyAddObject:]
+0x1a40a4eb8  __TEXT,__text  -[PKPass setPassLibraryMachServiceName:]
+0x1a40a4ec4  __TEXT,__text  -[PKSecureElement secureElementIdentifiers]
+0x1a40a4f5c  __TEXT,__text  -[PKSecureElement primarySecureElementIdentifier]
+0x1a40a5054  __TEXT,__text  -[PKDirectoryCoordinator initWithURL:]
+0x1a40a50ec  __TEXT,__text  +[PKColor colorWithR:G:B:A:]
+0x1a40a5164  __TEXT,__text  -[PKPassDynamicState _init]
+0x1a40a519c  __TEXT,__text  -[PKPassDynamicState setLiveRender:]
+0x1a40a51a8  __TEXT,__text  -[PKPassDynamicState setBalanceModel:]
+0x1a40a51b4  __TEXT,__text  -[PKPassDynamicState setRelevancyModel:]
+0x1a40a51c0  __TEXT,__text  -[PKPassDynamicState setAgreements:]
+0x1a40a51cc  __TEXT,__text  -[PKPassDynamicState setFlight:]
+0x1a40a51d8  __TEXT,__text  -[PKGroupsController _processFetchedSnapshot:notify:completion:]
+0x1a40a54b4  __TEXT,__text  -[PKGroupsControllerSnapshot relevantPasses]
+0x1a40a54bc  __TEXT,__text  -[PKGroupsControllerSnapshot states]
+0x1a40a54c4  __TEXT,__text  -[PKGroupsControllerSnapshot annotations]
+0x1a40a54cc  __TEXT,__text  -[PKGroupsController _updateStateWithCatalog:passes:states:annotations:notify:]
+0x1a40a6bbc  __TEXT,__text  -[PKPassAnnotations isArchived]
+0x1a40a6bd0  __TEXT,__text  -[PKPass nfcPayload]
+0x1a40a6be4  __TEXT,__text  ___77-[PKGroupsController _updateAndCreateGroupsWithCatalog:passes:states:notify:]_block_invoke
+0x1a40a6e44  __TEXT,__text  -[PKGroup initWithCatalogGroup:passes:states:consumedPasses:]
+0x1a40a7094  __TEXT,__text  -[PKGroup containsPasses]
+0x1a40a70e0  __TEXT,__text  -[PKGroup .cxx_destruct]
+0x1a40a7130  __TEXT,__text  ___77-[PKGroupsController _updateAndCreateGroupsWithCatalog:passes:states:notify:]_block_invoke_2
+0x1a40a7194  __TEXT,__text  -[PKCatalog allGroupIDs]
+0x1a40a72d8  __TEXT,__text  -[PKGroupsController groupAtIndex:]
+0x1a40a7328  __TEXT,__text  -[PKPass setUserInfo:]
+0x1a40a7334  __TEXT,__text  -[PKPass setSharingURL:]
+0x1a40a7340  __TEXT,__text  -[PKObject setSigningDate:]
+0x1a40a7348  __TEXT,__text  -[PKPass setVoided:]
+0x1a40a735c  __TEXT,__text  -[PKPass setOrderFoodURL:]
+0x1a40a7368  __TEXT,__text  -[PKPass setIsCloudKitSecurelyArchived:]
+0x1a40a737c  __TEXT,__text  -[PKPass setOrganizationName:]
+0x1a40a7388  __TEXT,__text  -[PKPass setTransitInformationURL:]
+0x1a40a7394  __TEXT,__text  -[PKPass setSellURL:]
+0x1a40a73a0  __TEXT,__text  -[PKPass setLiveRenderingRequiresEnablement:]
+0x1a40a73b4  __TEXT,__text  -[PKPass setContactVenueEmail:]
+0x1a40a73c0  __TEXT,__text  -[PKPass setPartnerAddOnURL:]
+0x1a40a73cc  __TEXT,__text  -[PKObject setManifestHash:]
+0x1a40a73d4  __TEXT,__text  -[PKPass setSharingMethod:]
+0x1a40a73e8  __TEXT,__text  -[PKPass setIsCloudKitArchived:]
+0x1a40a73fc  __TEXT,__text  -[PKPass setProvisioningCredentialHash:]
+0x1a40a7408  __TEXT,__text  -[PKPass setDirectionsInformationURL:]
+0x1a40a7414  __TEXT,__text  -[PKPass setSupportsCategoryVisualization:]
+0x1a40a7428  __TEXT,__text  -[PKPass setExpirationDate:]
+0x1a40a7434  __TEXT,__text  -[PKPass setParkingInformationURL:]
+0x1a40a7440  __TEXT,__text  -[PKPass setSequenceCounter:]
+0x1a40a744c  __TEXT,__text  -[PKPass setHomeKeyLiveRenderType:]
+0x1a40a7460  __TEXT,__text  -[PKPass setContactVenueWebsite:]
+0x1a40a746c  __TEXT,__text  -[PKPass setAccessibilityURL:]
+0x1a40a7478  __TEXT,__text  -[PKPass setUpgradeURL:]
+0x1a40a7484  __TEXT,__text  -[PKPass setChangeSeatURL:]
+0x1a40a7490  __TEXT,__text  -[PKObject setUniqueID:]
+0x1a40a7498  __TEXT,__text  -[PKObject setWebServiceURL:]
+0x1a40a74a0  __TEXT,__text  -[PKPass setIngestedDate:]
+0x1a40a74b4  __TEXT,__text  -[PKPass setReportLostBagURL:]
+0x1a40a74c0  __TEXT,__text  -[PKPass setContactVenuePhoneNumber:]
+0x1a40a74cc  __TEXT,__text  -[PKPass setRequestWheelchairURL:]
+0x1a40a74d8  __TEXT,__text  -[PKPass setRegisterServiceAnimalURL:]
+0x1a40a74e4  __TEXT,__text  -[PKPass setTrackBagsURL:]
+0x1a40a74f0  __TEXT,__text  -[PKPass setMuteReadyForUseNotification:]
+0x1a40a7504  __TEXT,__text  -[PKPassDisplayProfile setBackgroundColor:]
+0x1a40a7510  __TEXT,__text  -[PKPassDisplayProfile setSupportsAutomaticForegroundVibrancy:]
+0x1a40a7518  __TEXT,__text  -[PKPassDisplayProfile setForegroundColor:]
+0x1a40a7524  __TEXT,__text  -[PKPassDisplayProfile setHasStripImage:]
+0x1a40a752c  __TEXT,__text  -[PKPassDisplayProfile setSecondaryBackgroundColor:]
+0x1a40a7538  __TEXT,__text  -[PKPassDisplayProfile setFooterBackgroundColor:]
+0x1a40a7544  __TEXT,__text  -[PKPassDisplayProfile setSuppressesHeaderDarkening:]
+0x1a40a754c  __TEXT,__text  -[PKPassDisplayProfile setPassStyle:]
+0x1a40a7554  __TEXT,__text  -[PKPassDisplayProfile setSupportsAutomaticLabelVibrancy:]
+0x1a40a755c  __TEXT,__text  -[PKPassDisplayProfile setStripColor:]
+0x1a40a7568  __TEXT,__text  -[PKPassDisplayProfile setTallCode:]
+0x1a40a7570  __TEXT,__text  -[PKPassDisplayProfile setSizeClass:]
+0x1a40a7578  __TEXT,__text  -[PKPassDisplayProfile setLabelColor:]
+0x1a40a7584  __TEXT,__text  -[PKPass setEmbeddedBeacons:]
+0x1a40a7590  __TEXT,__text  -[PKNFCPayload setRequiresAuthentication:]
+0x1a40a7598  __TEXT,__text  -[PKNFCPayload setEncryptionPublicKeyData:]
+0x1a40a75a0  __TEXT,__text  -[PKNFCPayload copyWithZone:]
+0x1a40a761c  __TEXT,__text  -[PKPass setRelevantDates:]
+0x1a40a7628  __TEXT,__text  -[PKLocation setMaxDistance:]
+0x1a40a7630  __TEXT,__text  -[PKLocation setRelevantText:]
+0x1a40a766c  __TEXT,__text  -[PKLocation setLatitude:]
+0x1a40a767c  __TEXT,__text  -[PKLocation setName:]
+0x1a40a76b8  __TEXT,__text  -[PKBeacon setMinor:]
+0x1a40a76c4  __TEXT,__text  -[PKBeacon setRelevantText:]
+0x1a40a76d0  __TEXT,__text  -[PKBeacon setName:]
+0x1a40a76dc  __TEXT,__text  -[PKBeacon setProximityUUIDWithString:]
+0x1a40a7748  __TEXT,__text  -[PKLocation setAltitude:]
+0x1a40a7810  __TEXT,__text  -[PKPass setRemotePass:]
+0x1a40a7824  __TEXT,__text  +[PKPass defaultSettings]
+0x1a40a782c  __TEXT,__text  -[PKObject setSettingsWithoutUpdatingDataAccessor:]
+0x1a40a7834  __TEXT,__text  -[PKPass passType]
+0x1a40a7848  __TEXT,__text  -[PKFileDataAccessor initWithFileURL:error:coordinator:]
+0x1a40a7944  __TEXT,__text  -[PKFileDataAccessor setExplicitDataTypeIdentifier:]
+0x1a40a7950  __TEXT,__text  -[PKObject setDataAccessor:]
+0x1a40a795c  __TEXT,__text  -[PKGroupsController _placeGroup:atIndex:notify:]
+0x1a40a7a0c  __TEXT,__text  -[PKGroupsController indexOfGroup:]
+0x1a40a7a54  __TEXT,__text  -[PKGroup groupID]
+0x1a40a7a5c  __TEXT,__text  -[PKGroupsController _indexOfGroupID:]
+0x1a40a7ab8  __TEXT,__text  -[PKGroupsController _insertGroup:atIndex:notify:]
+0x1a40a7b74  __TEXT,__text  -[PKGroupsController _fixIndicesFrom:]
+0x1a40a7bbc  __TEXT,__text  -[PKGroupsController groupCount]
+0x1a40a7bc4  __TEXT,__text  -[PKGroupsController _fixIndex:]
+0x1a40a7c60  __TEXT,__text  ___38+[PKPeerPaymentService sharedInstance]_block_invoke
+0x1a40a7c8c  __TEXT,__text  +[PKPeerPaymentService sharedInstance]
+0x1a40a7d20  __TEXT,__text  -[PKPeerPaymentService init]
+0x1a40a7f3c  __TEXT,__text  ___PDPeerPaymentServiceInterface_block_invoke
+0x1a40a8714  __TEXT,__text  ___PKPeerPaymentServiceInterface_block_invoke
+0x1a40a8750  __TEXT,__text  -[PKAutoFillCardManager init]
+0x1a40a879c  __TEXT,__text  -[PKAutoFillCardManager initWithPaymentService:]
+0x1a40a8844  __TEXT,__text  -[PKVirtualCardManager init]
+0x1a40a8890  __TEXT,__text  -[PKVirtualCardManager initWithPaymentService:]
+0x1a40a8954  __TEXT,__text  -[PKInAppPaymentService init]
+0x1a40a8a58  __TEXT,__text  ___PDInAppPaymentServiceInterface_block_invoke
+0x1a40a8b8c  __TEXT,__text  ___PKInAppPaymentServiceInterface_block_invoke
+0x1a40a8bc8  __TEXT,__text  ___34+[PKAccountService sharedInstance]_block_invoke
+0x1a40a8bf4  __TEXT,__text  +[PKAccountService sharedInstance]
+0x1a40a8c88  __TEXT,__text  -[PKAccountService init]
+0x1a40a8e04  __TEXT,__text  ___PDAccountServiceInterface_block_invoke
+0x1a40aa36c  __TEXT,__text  ___PKAccountServiceInterface_block_invoke
+0x1a40aa668  __TEXT,__text  -[PKDiscoveryDataSource initWithDelegate:]
+0x1a40aa7c0  __TEXT,__text  +[PKDiscoveryService sharedInstance]
+0x1a40aa854  __TEXT,__text  ___36+[PKDiscoveryService sharedInstance]_block_invoke
+0x1a40aa880  __TEXT,__text  -[PKDiscoveryService init]
+0x1a40aaa20  __TEXT,__text  ___PDDiscoveryServiceInterface_block_invoke
+0x1a40aafa8  __TEXT,__text  ___PKDiscoveryServiceInterface_block_invoke
+0x1a40ab0b8  __TEXT,__text  -[PKDiscoveryService addObserver:]
+0x1a40ab108  __TEXT,__text  -[PKDiscoveryDataSource updateArticleLayouts]
+0x1a40ab1ac  __TEXT,__text  +[PKContactResolver defaultContactResolver]
+0x1a40ab308  __TEXT,__text  ___45-[PKDiscoveryDataSource updateArticleLayouts]_block_invoke
+0x1a40ab434  __TEXT,__text  -[PKDiscoveryDataSource _updateArticlesWithCompletion:]
+0x1a40ab598  __TEXT,__text  -[PKDiscoveryService discoveryArticleLayoutsWithCompletion:]
+0x1a40ab6d4  __TEXT,__text  -[PKDiscoveryService errorHandlerForMethod:completion:]
+0x1a40ab78c  __TEXT,__text  -[PKDiscoveryService _remoteObjectProxyWithErrorHandler:]
+0x1a40ab794  __TEXT,__text  _initCNAvatarView
+0x1a40ab7dc  __TEXT,__text  ___LoadContactsUI_block_invoke
+0x1a40ab808  __TEXT,__text  _initCNAvatarCardController
+0x1a40ab850  __TEXT,__text  _initCNContactViewController
+0x1a40ab898  __TEXT,__text  -[PKDiscoveryService dismissedDiscoveryItems:]
+0x1a40aba44  __TEXT,__text  -[PKContactResolver initWithContactStore:keysToFetch:]
+0x1a40abba4  __TEXT,__text  +[PKPaymentDefaultDataProvider defaultDataProvider]
+0x1a40abc14  __TEXT,__text  -[PKPaymentDefaultDataProvider init]
+0x1a40abc90  __TEXT,__text  +[PKSecureElement sharedSecureElement]
+0x1a40abd00  __TEXT,__text  -[PKSecureElement init]
+0x1a40abecc  __TEXT,__text  -[PKEntitlementWhitelist _boolValueOfEntitlement:fromSecTask:]
+0x1a40abf34  __TEXT,__text  ___PKGetClassNFSecureElement_block_invoke
+0x1a40abf84  __TEXT,__text  -[PKPaymentDefaultDataProvider initWithPaymentService:secureElement:]
+0x1a40ac058  __TEXT,__text  ___46-[PKDiscoveryService dismissedDiscoveryItems:]_block_invoke_2
+0x1a40ac194  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac1d4  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac214  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac254  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac294  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac2d4  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac314  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac354  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac394  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac3d4  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac414  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac454  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac494  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac4d4  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac514  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac554  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac594  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac5d4  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac614  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac654  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac694  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac6d4  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac714  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac754  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac794  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac7d4  __TEXT,__text  ___dispatch_async_ar_block_invoke
+0x1a40ac814  __TEXT,__text  ___60-[PKDiscoveryService discoveryArticleLayoutsWithCompletion:]_block_invoke_2
+0x1a40ac950  __TEXT,__text  ___46-[PKDiscoveryService dismissedDiscoveryItems:]_block_invoke_3
+0x1a40ac968  __TEXT,__text  ___55-[PKDiscoveryDataSource _updateArticlesWithCompletion:]_block_invoke.28
+0x1a40acaa4  __TEXT,__text  ___60-[PKDiscoveryService discoveryArticleLayoutsWithCompletion:]_block_invoke_3
+0x1a40acac4  __TEXT,__text  ___55-[PKDiscoveryDataSource _updateArticlesWithCompletion:]_block_invoke
+0x1a40acbc8  __TEXT,__text  ___55-[PKDiscoveryDataSource _updateArticlesWithCompletion:]_block_invoke_2
+0x1a40accb4  __TEXT,__text  -[PKDiscoveryDataSource _queue_updateArticleLayouts:]
+0x1a40acd64  __TEXT,__text  ___45-[PKDiscoveryDataSource updateArticleLayouts]_block_invoke.23
+0x1a40ace54  __TEXT,__text  ___45-[PKDiscoveryDataSource updateArticleLayouts]_block_invoke.24
+0x1a40acf04  __TEXT,__text  -[PKAsyncUnaryOperationComposer .cxx_destruct]
+0x1a40acf10  __TEXT,__text  -[PKGroupsController passes]
+0x1a40ad048  __TEXT,__text  -[PKGroup passes]
+0x1a40ad050  __TEXT,__text  -[NSArray(PKArrayAdditions) pk_containsObjectPassingTest:]
+0x1a40ad100  __TEXT,__text  ___58-[NSArray(PKArrayAdditions) pk_containsObjectPassingTest:]_block_invoke
+0x1a40ad13c  __TEXT,__text  -[PKGroupsController expiredSectionPassesCount]
+0x1a40ad144  __TEXT,__text  -[NSArray(PKArrayAdditions) pk_objectsPassingTest:]
+0x1a40ad190  __TEXT,__text  -[PKPaymentService familyMembersWithCompletion:]
+0x1a40ad19c  __TEXT,__text  -[PKPaymentService familyMembersIgnoringCache:completion:]
+0x1a40ad39c  __TEXT,__text  ___PKPassKitBundle_block_invoke
+0x1a40ad45c  __TEXT,__text  ___58-[PKPaymentService familyMembersIgnoringCache:completion:]_block_invoke_2
+0x1a40ad47c  __TEXT,__text  -[NSArray(PKArrayAdditions) pk_arrayByApplyingBlock:]
+0x1a40ad498  __TEXT,__text  -[NSArray(PKArrayAdditions) pk_createArrayByApplyingBlock:]
+0x1a40ad620  __TEXT,__text  __PKLocalizedStringForLocalizationFromTableInBundleWithValidFormatSpecifiersAndDefaultValue
+0x1a40ad86c  __TEXT,__text  ___PKIsPad_block_invoke
+0x1a40ad8b0  __TEXT,__text  -[PKDiscoveryObject setIdentifier:]
+0x1a40ad8b8  __TEXT,__text  ___PKStoreDemoModeEnabled_block_invoke
+0x1a40ad92c  __TEXT,__text  -[PKDiscoveryArticleLayout initWithDictionary:]
+0x1a40adc6c  __TEXT,__text  -[NSDictionary(PKPlistTypeSafety) PKIntegerForKey:]
+0x1a40adca4  __TEXT,__text  ___39+[PKAppleAccountManager sharedInstance]_block_invoke
+0x1a40adcd4  __TEXT,__text  -[PKAppleAccountManager init]
+0x1a40add38  __TEXT,__text  -[PKAppleAccountManager appleAccountInformation]
+0x1a40adfe8  __TEXT,__text  -[NSDictionary(PKPlistTypeSafety) PKDictionaryForKey:]
+0x1a40ae040  __TEXT,__text  -[PKDiscoveryCard initWithDictionary:]
+0x1a40ae40c  __TEXT,__text  -[PKAppleAccountInformation .cxx_destruct]
+0x1a40ae4a4  __TEXT,__text  ___38-[PKDiscoveryCard initWithDictionary:]_block_invoke
+0x1a40ae52c  __TEXT,__text  -[PKAsyncUnaryOperationEvaluator .cxx_destruct]
+0x1a40ae6ec  __TEXT,__text  -[PKDiscoveryMedia initWithDictionary:]
+0x1a40ae9e8  __TEXT,__text  -[PKAsyncUnaryOperationEvaluator dealloc]
+0x1a40aea64  __TEXT,__text  -[NSDictionary(PKPlistTypeSafety) PKDoubleForKey:]
+0x1a40aeaa4  __TEXT,__text  ____InstallStockholmPreferencesObserverIfNecessary_block_invoke
+0x1a40aeb10  __TEXT,__text  -[NSMutableDictionary(PKMutableDictionaryAdditions) safelySetObject:forKey:]
+0x1a40aebc0  __TEXT,__text  -[PKDiscoveryCallToAction initWithDictionary:]
+0x1a40aef2c  __TEXT,__text  -[PKGroupsController indexOfSeparationGroup]
+0x1a40af0f4  __TEXT,__text  -[PKGroup passAtIndex:]
+0x1a40af17c  __TEXT,__text  -[PKDiscoveryCallToAction setForegroundContentMode:]
+0x1a40af18c  __TEXT,__text  -[PKMiniDiscoveryCard initWithDictionary:]
+0x1a40af218  __TEXT,__text  -[PKPass style]
+0x1a40af2d0  __TEXT,__text  -[NSDictionary(PKPlistTypeSafety) PKArrayContaining:forKey:]
+0x1a40af3f0  __TEXT,__text  -[PKGroupsController shouldSeparatePaymentPasses]
+0x1a40af3f8  __TEXT,__text  +[PKDiscoveryShelf shelfWithDictionary:]
+0x1a40af4f0  __TEXT,__text  -[PKDiscoverySpacerShelf initWithDictionary:]
+0x1a40af5f8  __TEXT,__text  ___72-[PKPaymentService(PendingProvisioning) hasPendingProvisioningsOfTypes:]_block_invoke.18
+0x1a40af608  __TEXT,__text  -[PKDiscoveryDataSource articleLayouts]
+0x1a40af658  __TEXT,__text  -[PKDiscoveryShelf setType:]
+0x1a40af660  __TEXT,__text  -[PKDiscoveryTextBlockShelf initWithDictionary:]
+0x1a40af780  __TEXT,__text  ___54-[PKPaymentService applicationMessagesWithCompletion:]_block_invoke_2
+0x1a40af790  __TEXT,__text  -[PKDiscoveryArticleLayout setItem:]
+0x1a40af91c  __TEXT,__text  -[PKDiscoveryObject identifier]
+0x1a40af924  __TEXT,__text  -[PKDiscoveryObject viewCount]
+0x1a40af92c  __TEXT,__text  +[PKSpringAnimationFactory springAnimationWithKeyPath:]
+0x1a40af99c  __TEXT,__text  -[PKDiscoveryItem shouldBadge]
+0x1a40af9b0  __TEXT,__text  ___InitializeStaticVariables_block_invoke
+0x1a40afa20  __TEXT,__text  +[PKSpringAnimationFactory createDefaultFactory]
+0x1a40afa80  __TEXT,__text  -[PKDiscoveryItem priority]
+0x1a40afa94  __TEXT,__text  -[PKDiscoveryItem entitledToForceLargeCard]
+0x1a40afaa8  __TEXT,__text  -[PKSpringAnimationFactory initWithMass:stiffness:damping:]
+0x1a40afab0  __TEXT,__text  -[PKSpringAnimationFactory initWithSpringState:]
+0x1a40afb24  __TEXT,__text  -[PKDiscoveryItem hasHitMaxLargeViewCount]
+0x1a40afb68  __TEXT,__text  -[PKDiscoveryObject maxViewCountLargeCard]
+0x1a40afbb8  __TEXT,__text  -[PKDiscoveryCard setItem:]
+0x1a40afc20  __TEXT,__text  ___PKMagicCurve_block_invoke
+0x1a40afc70  __TEXT,__text  -[PKDiscoveryCallToAction setItem:]
+0x1a40afccc  __TEXT,__text  -[PKSpringAnimationFactory setTiming:]
+0x1a40afd30  __TEXT,__text  -[PKDiscoveryArticleLayout setItemIdentifier:]
+0x1a40afd3c  __TEXT,__text  -[PKSpringAnimationFactory setTiming:withDynamicDurationProvider:]
+0x1a40afdbc  __TEXT,__text  -[PKDiscoveryArticleLayout setPriority:]
+0x1a40afdc4  __TEXT,__text  -[PKSpringAnimationFactory springAnimationWithKeyPath:]
+0x1a40afdf8  __TEXT,__text  -[PKDiscoveryArticleLayout localizeWithBundle:table:]
+0x1a40afef8  __TEXT,__text  -[PKSpringAnimationFactory _createSpringAnimationWithKeyPath:]
+0x1a40aff90  __TEXT,__text  -[PKDiscoveryArticleLayout _updatePreferredLocalizationWithBundle:]
+0x1a40b0104  __TEXT,__text  -[PKSpringAnimationFactory _createReferenceSpringAnimationWithKeyPath:]
+0x1a40b0178  __TEXT,__text  -[PKSpringAnimationFactory _durationWithReferenceSpring:]
+0x1a40b025c  __TEXT,__text  -[PKDiscoveryCard localizeWithBundle:table:]
+0x1a40b0330  __TEXT,__text  -[PKDiscoveryCallToAction localizeWithBundle:table:]
+0x1a40b03fc  __TEXT,__text  +[PKContent createWithFileURL:dataTypeIdentifier:]
+0x1a40b06d8  __TEXT,__text  ___53-[PKDiscoveryArticleLayout localizeWithBundle:table:]_block_invoke
+0x1a40b06e4  __TEXT,__text  -[PKContent initWithDictionary:bundle:privateBundle:passType:]
+0x1a40b0958  __TEXT,__text  -[PKDiscoveryShelf localizeWithBundle:table:]
+0x1a40b0a64  __TEXT,__text  -[PKDiscoveryTextBlockShelf localizeWithBundle:table:]
+0x1a40b0b30  __TEXT,__text  __FieldForTypeWithDictionaryAndBundle
+0x1a40b1c1c  __TEXT,__text  -[PKPassContent initWithDictionary:bundle:privateBundle:passType:]
+0x1a40b3334  __TEXT,__text  ___66-[PKPassContent initWithDictionary:bundle:privateBundle:passType:]_block_invoke
+0x1a40b3d54  __TEXT,__text  ___118-[PKPassLibrary _fetchImageSetContainerForUniqueID:ofType:displayProfile:suffix:usingSynchronousProxy:withCompletion:]_block_invoke_2
+0x1a40b3ddc  __TEXT,__text  -[PKPaymentWebServiceConfiguration paymentSetupBrowsableProductTypesForRegion:]
+0x1a40b41a0  __TEXT,__text  -[PKAsyncCacheRetrievalInfo synchronouslyRetrieve:outDeliveryBlocks:]
+0x1a40b4548  __TEXT,__text  __PKObjectDictionaryWithError
+0x1a40b47f4  __TEXT,__text  ___118-[PKPassLibrary _fetchImageSetContainerForUniqueID:ofType:displayProfile:suffix:usingSynchronousProxy:withCompletion:]_block_invoke
+0x1a40b4954  __TEXT,__text  ___118-[PKPassLibrary _fetchImageSetContainerForUniqueID:ofType:displayProfile:suffix:usingSynchronousProxy:withCompletion:]_block_invoke_5
+0x1a40b4ff4  __TEXT,__text  -[PKPaymentWebServiceTargetDevice felicaSecureElementIsAvailable]
+0x1a40b509c  __TEXT,__text  ___79-[PKPassLibrary _fetchContentForUniqueID:usingSynchronousProxy:withCompletion:]_block_invoke.234
+0x1a40b50ac  __TEXT,__text  ___PKFelicaSecureElementIsAvailable_block_invoke
+0x1a40b513c  __TEXT,__text  ___118-[PKPassLibrary _fetchImageSetContainerForUniqueID:ofType:displayProfile:suffix:usingSynchronousProxy:withCompletion:]_block_invoke_3
+0x1a40b5178  __TEXT,__text  ___PKPearlIsAvailable_block_invoke
+0x1a40b51a8  __TEXT,__text  -[PKAsyncCache retrieveItemForKey:synchronous:retrievalBlock:deliveryBlock:]
+0x1a40b5488  __TEXT,__text  -[PKPassField init]
+0x1a40b54d4  __TEXT,__text  -[PKPassField setLink:]
+0x1a40b55a8  __TEXT,__text  -[PKPassField setDataDetectorTypes:]
+0x1a40b55b0  __TEXT,__text  -[PKAsyncCacheRetrievalInfo init]
+0x1a40b5618  __TEXT,__text  -[PKDiscoveryArticleLayout shelves]
+0x1a40b5620  __TEXT,__text  -[PKLayerNullActionDelegate actionForLayer:forKey:]
+0x1a40b562c  __TEXT,__text  -[PKDiscoveryTextBlockShelf setLocalizedBody:]
+0x1a40b5638  __TEXT,__text  -[PKPassContent setFrontFieldBuckets:]
+0x1a40b5640  __TEXT,__text  -[PKDiscoveryArticleLayout priority]
+0x1a40b577c  __TEXT,__text  -[PKPassBarcodeSettings .cxx_destruct]
+0x1a40b5788  __TEXT,__text  -[PKDiscoveryArticleLayout mediumCard]
+0x1a40b5790  __TEXT,__text  -[PKImageSetXPCContainer initWithCoder:]
+0x1a40b590c  __TEXT,__text  -[PKPassPreviewImageSet initWithCoder:]
+0x1a40b5a0c  __TEXT,__text  -[PKDiscoveryArticleLayout card]
+0x1a40b5a14  __TEXT,__text  -[PKPassContent setFidoProfile:]
+0x1a40b5a20  __TEXT,__text  -[PKPasscodeLockManager init]
+0x1a40b5af4  __TEXT,__text  -[PKDiscoveryArticleLayout miniCard]
+0x1a40b5afc  __TEXT,__text  -[PKContent encodeWithCoder:]
+0x1a40b5bfc  __TEXT,__text  -[PKDiscoveryCard backgroundMedia]
+0x1a40b5c0c  __TEXT,__text  -[PKImage _queue_createImageRefIfNecessary]
+0x1a40b5d84  __TEXT,__text  -[PKObject contentLoadedIfNeeded]
+0x1a40b5db0  __TEXT,__text  -[PKPassContent initWithCoder:]
+0x1a40b640c  __TEXT,__text  -[PKDiscoveryCard largeCardTemplateType]
+0x1a40b6500  __TEXT,__text  -[PKMiniDiscoveryCard miniCardTemplateType]
+0x1a40b6508  __TEXT,__text  -[PKContent initWithCoder:]
+0x1a40b6804  __TEXT,__text  -[PKDiscoveryCard backgroundMediaExpanded]
+0x1a40b6938  __TEXT,__text  ___36-[PKPassLibrary contentForUniqueID:]_block_invoke
+0x1a40b6948  __TEXT,__text  ___69-[PKAsyncCacheRetrievalInfo synchronouslyRetrieve:outDeliveryBlocks:]_block_invoke
+0x1a40b6958  __TEXT,__text  -[PKDiscoveryCard backgroundMediaCropped]
+0x1a40b6968  __TEXT,__text  -[PKDiscoveryCard backgroundColor]
+0x1a40b6970  __TEXT,__text  _PKPassLibraryImageSetCache
+0x1a40b69b8  __TEXT,__text  -[PKContent barcode]
+0x1a40b69f8  __TEXT,__text  -[PKColor CGColor]
+0x1a40b6ac0  __TEXT,__text  -[PKPass croppedCardHolderPicture]
+0x1a40b6b04  __TEXT,__text  -[PKContent barcodes]
+0x1a40b6b0c  __TEXT,__text  ____InitializeRGBColorSpace_block_invoke
+0x1a40b6b80  __TEXT,__text  -[PKImageSet initWithCoder:]
+0x1a40b6c20  __TEXT,__text  -[PKDiscoveryCard title]
+0x1a40b6d08  __TEXT,__text  -[PKDiscoveryCard heading]
+0x1a40b6d94  __TEXT,__text  -[PKPass localizedDescription]
+0x1a40b6dd4  __TEXT,__text  -[PKDiscoveryCard callToAction]
+0x1a40b6ddc  __TEXT,__text  -[PKDiscoveryArticleLayout itemIdentifier]
+0x1a40b6de4  __TEXT,__text  -[PKContent localizedDescription]
+0x1a40b6dec  __TEXT,__text  -[PKDiscoveryCallToAction backgroundBlurStyle]
+0x1a40b6df4  __TEXT,__text  -[PKImageSetXPCContainer .cxx_destruct]
+0x1a40b6e2c  __TEXT,__text  -[PKAsyncCacheRetrievalInfo .cxx_destruct]
+0x1a40b6e64  __TEXT,__text  +[PKImageSet shouldCache]
+0x1a40b6e6c  __TEXT,__text  -[PKDiscoveryCallToAction localizedTitle]
+0x1a40b6e74  __TEXT,__text  ___66-[PKPassLibrary imageSetForUniqueID:ofType:displayProfile:suffix:]_block_invoke
+0x1a40b6e84  __TEXT,__text  -[PKDiscoveryCallToAction localizedSubtitle]
+0x1a40b6e8c  __TEXT,__text  -[PKDiscoveryCallToAction localizedButtonText]
+0x1a40b6e94  __TEXT,__text  -[PKDiscoveryCallToAction action]
+0x1a40b6e9c  __TEXT,__text  -[PKImageSetXPCContainer invalidate]
+0x1a40b6ef8  __TEXT,__text  -[PKDiscoveryCard foregroundContentMode]
+0x1a40b6f00  __TEXT,__text  ____PreheatOptions_block_invoke
+0x1a40b7084  __TEXT,__text  ____PNGRestrictOptions_block_invoke
+0x1a40b71bc  __TEXT,__text  ____PNGRestrictOptions_block_invoke
+0x1a40b7274  __TEXT,__text  -[PKDiscoveryMedia type]
+0x1a40b727c  __TEXT,__text  ___38+[PKPasscodeLockManager sharedManager]_block_invoke
+0x1a40b72ac  __TEXT,__text  -[PKDiscoveryMedia bundleImageName]
+0x1a40b72b4  __TEXT,__text  -[PKDiscoveryMedia bundle]
+0x1a40b7338  __TEXT,__text  ___41-[PKImageSetXPCContainer consumeImageSet]_block_invoke
+0x1a40b7404  __TEXT,__text  -[PKObject loadContentSync]
+0x1a40b7478  __TEXT,__text  -[PKImage init]
+0x1a40b74c0  __TEXT,__text  -[PKObject content]
+0x1a40b7554  __TEXT,__text  -[PKImageSetXPCContainer consumeImageSet]
+0x1a40b783c  __TEXT,__text  -[PKPass barcode]
+0x1a40b787c  __TEXT,__text  +[PKPassPreviewImageSet imageSetType]
+0x1a40b7910  __TEXT,__text  -[PKPass liveRenderingRequiresEnablement]
+0x1a40b7924  __TEXT,__text  -[PKPass supportsCategoryVisualization]
+0x1a40b7938  __TEXT,__text  ___47-[PKPassLibrary _copyPassesOfType:withRetries:]_block_invoke_2
+0x1a40b7988  __TEXT,__text  -[PKPass iconImage]
+0x1a40b79cc  __TEXT,__text  -[NSArray(PKArrayAdditions) pk_firstObjectPassingTest:]
+0x1a40b7a9c  __TEXT,__text  -[PKImage imageData]
+0x1a40b7c54  __TEXT,__text  -[PKObject isContentLoaded]
+0x1a40b7c94  __TEXT,__text  -[PKPassPreviewImageSet iconImage]
+0x1a40b7c9c  __TEXT,__text  -[PKPass frontFaceImage]
+0x1a40b7ce0  __TEXT,__text  -[PKImage orientation]
+0x1a40b7d20  __TEXT,__text  -[PKImage imageRef]
+0x1a40b7d60  __TEXT,__text  -[PKImage scale]
+0x1a40b7dd0  __TEXT,__text  -[PKImage tiles]
+0x1a40b7dd8  __TEXT,__text  -[PKPassFrontFaceImageSet faceImage]
+0x1a40b7de0  __TEXT,__text  -[PKImage capInsets]
+0x1a40b7ec4  __TEXT,__text  -[PKPass frontFaceImageAverageColor]
+0x1a40b7f4c  __TEXT,__text  -[PKPassFrontFaceImageSet faceImageAverageColor]
+0x1a40b7f54  __TEXT,__text  -[PKPassFrontFaceImageSet faceShadowImage]
+0x1a40b7f6c  __TEXT,__text  -[PKPass frontFaceShadowImage]
+0x1a40b7fb0  __TEXT,__text  +[PKPasscodeLockManager sharedManager]
+0x1a40b7ff8  __TEXT,__text  -[PKPassDisplayProfile showsBackgroundImage]
+0x1a40b8030  __TEXT,__text  -[PKPassDisplayProfile backgroundColor]
+0x1a40b8038  __TEXT,__text  +[PKBarcode barcodesWithPassDictionary:bundle:]
+0x1a40b851c  __TEXT,__text  -[PKObject imageSetLoadedIfNeeded:]
+0x1a40b8554  __TEXT,__text  -[PKPassDisplayProfile foregroundColor]
+0x1a40b855c  __TEXT,__text  -[PKObject loadImageSetSync:preheat:]
+0x1a40b864c  __TEXT,__text  -[PKPassDisplayProfile labelColor]
+0x1a40b8654  __TEXT,__text  __PKEnumValueFromStringVAList
+0x1a40b8840  __TEXT,__text  -[PKObject isImageSetLoaded:]
+0x1a40b8888  __TEXT,__text  -[PKPassDisplayProfile showsStripImage]
+0x1a40b88cc  __TEXT,__text  -[PKObject dataAccessor]
+0x1a40b8a1c  __TEXT,__text  -[PKObject preferredImageScale]
+0x1a40b8a24  __TEXT,__text  -[PKObject preferredImageSuffix]
+0x1a40b8a2c  __TEXT,__text  +[PKColor supportsSecureCoding]
+0x1a40b8a34  __TEXT,__text  +[PKPassImageSet classForImageSetType:]
+0x1a40b8a74  __TEXT,__text  -[PKImageSetXPCContainer imageSetHash]
+0x1a40b8a7c  __TEXT,__text  -[PKObject setImageSet:forImageSetType:]
+0x1a40b8ad0  __TEXT,__text  -[PKPass frontFieldBuckets]
+0x1a40b8b10  __TEXT,__text  -[PKPasscodeLockManager addObserver:]
+0x1a40b8b58  __TEXT,__text  -[PKPassDynamicState relevancyModel]
+0x1a40b8b60  __TEXT,__text  -[PKPassContent frontFieldBuckets]
+0x1a40b8b68  __TEXT,__text  -[PKPass supportsNFC]
+0x1a40b8ba0  __TEXT,__text  -[PKPass primaryFields]
+0x1a40b8be0  __TEXT,__text  -[PKPassContent primaryFields]
+0x1a40b8c2c  __TEXT,__text  -[PKBarcode encodeWithCoder:]
+0x1a40b8d00  __TEXT,__text  -[PKPass isExpired]
+0x1a40b8d64  __TEXT,__text  -[PKPassContent .cxx_destruct]
+0x1a40b8e8c  __TEXT,__text  -[PKPassDisplayProfile hasStripImage]
+0x1a40b8e94  __TEXT,__text  -[PKPass expirationDate]
+0x1a40b8ea8  __TEXT,__text  -[PKPass isVoided]
+0x1a40b8ebc  __TEXT,__text  -[PKPass isUserPass]
+0x1a40b8ef4  __TEXT,__text  -[PKPassField .cxx_destruct]
+0x1a40b8fbc  __TEXT,__text  -[PKPass liveRenderType]
+0x1a40b8fd0  __TEXT,__text  -[PKPass passTypeIdentifier]
+0x1a40b8fe4  __TEXT,__text  -[PKContent .cxx_destruct]
+0x1a40b9064  __TEXT,__text  -[PKBarcode .cxx_destruct]
+0x1a40b9160  __TEXT,__text  -[PKPassField foreignReferenceType]
+0x1a40b9168  __TEXT,__text  -[PKPass cobrandLogoRect]
+0x1a40b91cc  __TEXT,__text  -[PKBarcode initWithCoder:]
+0x1a40b932c  __TEXT,__text  -[PKPassFrontFaceImageSet cobrandLogoRect]
+0x1a40b9338  __TEXT,__text  +[NSMapTable(PKAdditions) pk_createStrongPointerPersonalityToStrongObjects]
+0x1a40b93f4  __TEXT,__text  -[PKPassDisplayProfile sizeClass]
+0x1a40b93fc  __TEXT,__text  -[PKPass logoText]
+0x1a40b943c  __TEXT,__text  -[PKPassDisplayProfile stripColor]
+0x1a40b9444  __TEXT,__text  -[PKPassDisplayProfile supportsAutomaticForegroundVibrancy]
+0x1a40b944c  __TEXT,__text  -[PKPassContent logoText]
+0x1a40b9454  __TEXT,__text  -[PKPassDisplayProfile supportsAutomaticLabelVibrancy]
+0x1a40b945c  __TEXT,__text  -[PKPass logoSystemImageName]
+0x1a40b949c  __TEXT,__text  -[PKPassDisplayProfile footerBackgroundColor]
+0x1a40b94a4  __TEXT,__text  -[PKPassDisplayProfile type]
+0x1a40b94ac  __TEXT,__text  +[PKImageSet createXPCContainerForImageSetWithType:displayProfile:screenScale:screenSize:suffix:fileURL:cacheURL:]
+0x1a40b94b4  __TEXT,__text  -[PKPass linksToApp]
+0x1a40b9520  __TEXT,__text  -[PKPass storeIdentifiers]
+0x1a40b9560  __TEXT,__text  -[PKDisplayTraitCollection init]
+0x1a40b9598  __TEXT,__text  -[PKDisplayTraitCollection canvasSize]
+0x1a40b95a0  __TEXT,__text  -[PKContent storeIdentifiers]
+0x1a40b95a8  __TEXT,__text  +[PKPassFrontFaceImageSet imageSetType]
+0x1a40b95b0  __TEXT,__text  -[PKPass systemAppBundleIdentifiers]
+0x1a40b95f0  __TEXT,__text  +[PKImageSet cachedXPCContainerForImageSetWithType:displayProfile:displayTraits:cacheURL:]
+0x1a40b9704  __TEXT,__text  _PKLoadXPCDataWithURL
+0x1a40b99dc  __TEXT,__text  -[PKPassFrontFaceImageSet croppedCardHolderPicture]
+0x1a40b99e4  __TEXT,__text  -[PKContent systemAppBundleIdentifiers]
+0x1a40b99ec  __TEXT,__text  -[PKPass appLaunchURL]
+0x1a40b9a2c  __TEXT,__text  -[PKPassDisplayProfile drawCardHolderImageOnArtwork]
+0x1a40b9a34  __TEXT,__text  -[PKContent appLaunchURL]
+0x1a40b9a3c  __TEXT,__text  -[PKPass logoRect]
+0x1a40b9ab8  __TEXT,__text  -[PKPassFrontFaceImageSet logoRect]
+0x1a40b9ac4  __TEXT,__text  -[PKPassField isSentinel]
+0x1a40b9acc  __TEXT,__text  -[PKAnalyticsReporter initWithSubject:]
+0x1a40b9ad8  __TEXT,__text  -[PKAnalyticsReporter initWithParent:subject:]
+0x1a40b9ae4  __TEXT,__text  ___44+[PKAnalyticsReporter clientTypeForSubject:]_block_invoke
+0x1a40b9c10  __TEXT,__text  +[PKAnalyticsReporter subjectDictionary]
+0x1a40b9c58  __TEXT,__text  +[PKAnalyticsReporter subjectSessionStateDateDictionary]
+0x1a40b9ca0  __TEXT,__text  -[PKXPCService foregroundActiveArbiter:didUpdateForegroundActiveState:]
+0x1a40b9cac  __TEXT,__text  -[PKXPCService _sendResumed]
+0x1a40b9d54  __TEXT,__text  -[PKDiscoveryService beginReporingDiscoveryAnalytics]
+0x1a40b9e08  __TEXT,__text  -[PKDiscoveryService processDiscoveryItemsAndMessagesWithCompletion:]
+0x1a40b9f8c  __TEXT,__text  ___PKPassKitCoreBundle_block_invoke
+0x1a40ba04c  __TEXT,__text  -[PDXPCService serviceResumed]
+0x1a40ba1e8  __TEXT,__text  _PKTimeProfileQueue
+0x1a40ba230  __TEXT,__text  ___PKTimeProfileBegin_block_invoke
+0x1a40ba2c8  __TEXT,__text  ___53-[PKDiscoveryService beginReporingDiscoveryAnalytics]_block_invoke
+0x1a40ba3bc  __TEXT,__text  ___53-[PKDiscoveryService beginReporingDiscoveryAnalytics]_block_invoke_2
+0x1a40ba4a8  __TEXT,__text  _PKSharedCacheGetObjectForKeyOfClass
+0x1a40ba5c4  __TEXT,__text  __SharedCacheQueue
+0x1a40ba60c  __TEXT,__text  ____SharedCacheQueue_block_invoke
+0x1a40ba640  __TEXT,__text  __SharedCacheDictionary
+0x1a40ba76c  __TEXT,__text  ___PKSharedCacheGetObjectForKeyOfClass_block_invoke
+0x1a40ba8b0  __TEXT,__text  -[PKPassField label]
+0x1a40baa58  __TEXT,__text  -[PKPassField textAlignment]
+0x1a40baa60  __TEXT,__text  ___PKSharedCacheCreateFileURLReadOnly_block_invoke
+0x1a40baabc  __TEXT,__text  -[PKPassField value]
+0x1a40baaf8  __TEXT,__text  ____CanReadFromSharedCache_block_invoke
+0x1a40bab50  __TEXT,__text  ____SharedCacheDictionary_block_invoke
+0x1a40bab94  __TEXT,__text  -[NSString(PKAdditions) pk_uppercaseStringForPreferredLocale]
+0x1a40babe8  __TEXT,__text  ____SharedCacheDictionary_block_invoke_2
+0x1a40bac54  __TEXT,__text  +[NSLocale(PKAdditions) pk_preferredLocale]
+0x1a40bacd4  __TEXT,__text  ___PKUserIntentIsAvailable_block_invoke
+0x1a40bacfc  __TEXT,__text  -[PKSpringAnimationFactory duration]
+0x1a40bad04  __TEXT,__text  -[PKSpringAnimationFactory dealloc]
+0x1a40bad3c  __TEXT,__text  -[PKSpringAnimationFactory .cxx_destruct]
+0x1a40bad7c  __TEXT,__text  ___57-[PKPaymentService remoteService:didEstablishConnection:]_block_invoke
+0x1a40bad8c  __TEXT,__text  ___40-[PKPassLibrary passesPendingActivation]_block_invoke
+0x1a40badcc  __TEXT,__text  -[PKPaymentService _accessDelegate:]
+0x1a40baf34  __TEXT,__text  ___57-[PKPaymentService remoteService:didEstablishConnection:]_block_invoke_2
+0x1a40baf78  __TEXT,__text  ___79-[PKUserNotificationAuthorizationController authorizationStatusWithCompletion:]_block_invoke
+0x1a40bb034  __TEXT,__text  ___94-[PKUserNotificationAuthorizationController _authorizationStatusRequiresPromptWithCompletion:]_block_invoke
+0x1a40bb0fc  __TEXT,__text  +[PKAnalyticsReporter subjects:sendEvent:]
+0x1a40bb108  __TEXT,__text  ___97-[PKUserNotificationAuthorizationController shouldOfferAuthorizationPromptWithPasses:completion:]_block_invoke_3
+0x1a40bb1bc  __TEXT,__text  +[PKAnalyticsReporter subjects:category:sendEvent:]
+0x1a40bb2ec  __TEXT,__text  +[PKAnalyticsReporter reporterForSubject:]
+0x1a40bb364  __TEXT,__text  -[PKPassField encodeWithCoder:]
+0x1a40bb5e0  __TEXT,__text  -[PKPassField initWithCoder:]
+0x1a40bbaf4  __TEXT,__text  +[PKSpringAnimationFactory highFrameRateSpringAnimationWithKeyPath:reason:]
+0x1a40bbb74  __TEXT,__text  -[PKSpringAnimationFactory highFrameRateSpringAnimationWithKeyPath:reason:]
+0x1a40bbbd0  __TEXT,__text  -[CABasicAnimation(PKCAUtilities) pkui_updateForAdditiveAnimationFromPoint:toPoint:]
+0x1a40bbbdc  __TEXT,__text  -[CABasicAnimation(PKCAUtilities) pkui_updateForAdditiveAnimationFromPoint:toPoint:withLayerPoint:]
+0x1a40bbc74  __TEXT,__text  -[CALayer(PKCAUtilities) pkui_addAdditiveAnimation:]
+0x1a40bbc7c  __TEXT,__text  -[CALayer(PKCAUtilities) pkui_addAdditiveAnimation:withKeyPath:]
+0x1a40bbce8  __TEXT,__text  -[CALayer(PKCAUtilities) _pkui_createNextAdditiveAnimationKeyWithKeyPath:]
+0x1a40bbea8  __TEXT,__text  -[CALayer(PKCAUtilities) pkui_additiveAnimationKeyPrefixForKeyPath:]
+0x1a40bbf10  __TEXT,__text  -[PKRemoveableAnimationTrackerStore init]
+0x1a40bbf74  __TEXT,__text  -[PKPass isRevoked]
+0x1a40bbf88  __TEXT,__text  -[PKBarcode altText]
+0x1a40bbf90  __TEXT,__text  -[PKPass altImage]
+0x1a40bbfd4  __TEXT,__text  -[PKPassLibrary _fetchImageSetContainerForUniqueID:ofType:displayProfile:suffix:usingSynchronousProxy:withCompletion:]
+0x1a40bc338  __TEXT,__text  _GenerateKeyImageSetCacheKey
+0x1a40bc3d0  __TEXT,__text  +[PKPassLogoImageSet shouldCache]
+0x1a40bc3d8  __TEXT,__text  -[PKPassDisplayProfile manifestHash]
+0x1a40bc3e0  __TEXT,__text  -[NSData(PKDataAdditions) SHA256Hash]
+0x1a40bc474  __TEXT,__text  ___118-[PKPassLibrary _fetchImageSetContainerForUniqueID:ofType:displayProfile:suffix:usingSynchronousProxy:withCompletion:]_block_invoke_7
+0x1a40bc64c  __TEXT,__text  -[PKImageSet initWithDisplayProfile:fileURL:screenScale:suffix:]
+0x1a40bc6ac  __TEXT,__text  +[PKImage imageNamed:inBundle:screenScale:suffix:]
+0x1a40bc6c8  __TEXT,__text  +[PKImage newImageNamed:inBundle:screenScale:suffix:]
+0x1a40bc7d8  __TEXT,__text  -[PKPassLogoImageSet setBackgroundImage:]
+0x1a40bc7e4  __TEXT,__text  -[PKPassLogoImageSet setStripImage:]
+0x1a40bc7f0  __TEXT,__text  +[PKPassLogoImageSet supportsSecureCoding]
+0x1a40bc7f8  __TEXT,__text  -[PKImageSet encodeWithCoder:]
+0x1a40bc858  __TEXT,__text  -[PKPassLogoImageSet .cxx_destruct]
+0x1a40bc920  __TEXT,__text  -[PKImage dealloc]
+0x1a40bc96c  __TEXT,__text  -[PKImage .cxx_destruct]
+0x1a40bc978  __TEXT,__text  -[PKImageSet .cxx_destruct]
+0x1a40bc984  __TEXT,__text  ___118-[PKPassLibrary _fetchImageSetContainerForUniqueID:ofType:displayProfile:suffix:usingSynchronousProxy:withCompletion:]_block_invoke_10
+0x1a40bcac4  __TEXT,__text  ___118-[PKPassLibrary _fetchImageSetContainerForUniqueID:ofType:displayProfile:suffix:usingSynchronousProxy:withCompletion:]_block_invoke_8
+0x1a40bcb4c  __TEXT,__text  -[PKPassLogoImageSet initWithCoder:]
+0x1a40bce30  __TEXT,__text  +[PKPassLogoImageSet imageSetType]
+0x1a40bce38  __TEXT,__text  ___118-[PKPassLibrary _fetchImageSetContainerForUniqueID:ofType:displayProfile:suffix:usingSynchronousProxy:withCompletion:]_block_invoke_12
+0x1a40bce48  __TEXT,__text  -[PKPassLogoImageSet altImage]
+0x1a40bce50  __TEXT,__text  -[PKBarcode format]
+0x1a40bce58  __TEXT,__text  -[PKDeallocationGuard invalidate]
+0x1a40bce98  __TEXT,__text  ___76+[PKPaymentRegistrationUtilities configureWebServiceIfNecessary:completion:]_block_invoke_3
+0x1a40bceac  __TEXT,__text  ___97-[PKUserNotificationAuthorizationController shouldOfferAuthorizationPromptWithPasses:completion:]_block_invoke_4
+0x1a40bcf04  __TEXT,__text  ___97-[PKUserNotificationAuthorizationController shouldOfferAuthorizationPromptWithPasses:completion:]_block_invoke_10
+0x1a40bd0c8  __TEXT,__text  -[PDXPCService clearConnectionReference]
+0x1a40bd104  __TEXT,__text  -[PKEntitlementWhitelist .cxx_destruct]
+0x1a40bd16c  __TEXT,__text  -[PDXPCService .cxx_destruct]
+0x1a40bd1b0  __TEXT,__text  -[PKXPCForwarder .cxx_destruct]
+0x1a40bd1b8  __TEXT,__text  ___47-[PKXPCService _invalidateConnectionIfPossible]_block_invoke
+```
+First 1,000 of 43,025.
+

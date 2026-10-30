@@ -1,0 +1,4018 @@
+# Symbols: `/System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__PrivateFrameworks__MediaRemote.framework__MediaRemote.md). **[DSC]**
+
+5,233 public symbols, 19,260 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1a6f1c788  __TEXT,__text  _MRAVAirPlaySecuritySettingsCreate
+0x1a6f1c818  __TEXT,__text  _MRAVAirPlaySecuritySettingsCreateExternalRepresentation
+0x1a6f1c7e4  __TEXT,__text  _MRAVAirPlaySecuritySettingsCreateFromExternalRepresentation
+0x1a6f1c760  __TEXT,__text  _MRAVAirPlaySecuritySettingsGetPassword
+0x1a6f1c764  __TEXT,__text  _MRAVAirPlaySecuritySettingsGetSecurityMode
+0x1a70857cc  __TEXT,__text  _MRAVCopyOutputDevicesSubstitutingLocalDevice
+0x1a6ff557c  __TEXT,__text  _MRAVEndpointAddOutputDevices
+0x1a6ff8250  __TEXT,__text  _MRAVEndpointAddOutputDevicesToGroup
+0x1a6ff8264  __TEXT,__text  _MRAVEndpointAddOutputDevicesToGroupFromSource
+0x1a6ff5590  __TEXT,__text  _MRAVEndpointAddOutputDevicesWithInitiator
+0x1a6ff8514  __TEXT,__text  _MRAVEndpointCanModifyGroupMembership
+0x1e0f8c4c0  __DATA_CONST,__const  _MRAVEndpointCarPlayVideoIsActiveDidChangeNotification
+0x1e0f8c4b8  __DATA_CONST,__const  _MRAVEndpointCarPlayVideoIsAllowedDidChangeNotification
+0x1a6ff50dc  __TEXT,__text  _MRAVEndpointCopyDesignatedGroupLeader
+0x1a6ff49d8  __TEXT,__text  _MRAVEndpointCopyLocalizedName
+0x1a6ff4c10  __TEXT,__text  _MRAVEndpointCopyOrigin
+0x1a6ff4928  __TEXT,__text  _MRAVEndpointCopyOutputDevices
+0x1a6ff4980  __TEXT,__text  _MRAVEndpointCopyPersonalOutputDevices
+0x1a6ff4a30  __TEXT,__text  _MRAVEndpointCopyUniqueIdentifier
+0x1a6e7a684  __TEXT,__text  _MRAVEndpointCreateUniqueIdentifier
+0x1a6ff4c2c  __TEXT,__text  _MRAVEndpointCreateWithDevices
+0x1a6ff4c34  __TEXT,__text  _MRAVEndpointCreateWithDevicesAsync
+0x1e0f8c4b0  __DATA_CONST,__const  _MRAVEndpointDeviceInfoDidChangeNotification
+0x1e0f8c4a8  __DATA_CONST,__const  _MRAVEndpointDeviceInfoUserInfoKey
+0x1e0f8c4a0  __DATA_CONST,__const  _MRAVEndpointDidAddOutputDeviceNotification
+0x1e0f8c498  __DATA_CONST,__const  _MRAVEndpointDidBecomeStaleNotification
+0x1e0f8c490  __DATA_CONST,__const  _MRAVEndpointDidChangeOutputDeviceNotification
+0x1e0f8c488  __DATA_CONST,__const  _MRAVEndpointDidConnectNotification
+0x1e0f8c480  __DATA_CONST,__const  _MRAVEndpointDidDisconnectNotification
+0x1e0f8c478  __DATA_CONST,__const  _MRAVEndpointDidRemoveOutputDeviceNotification
+0x1a6ff5160  __TEXT,__text  _MRAVEndpointForceEnableRemoteControllability
+0x1a7049c28  __TEXT,__text  _MRAVEndpointGetActiveSystemEndpointUID
+0x1a6ff8644  __TEXT,__text  _MRAVEndpointGetClass
+0x1a6ff4bd0  __TEXT,__text  _MRAVEndpointGetConnectionType
+0x1a6ff5120  __TEXT,__text  _MRAVEndpointGetDesignatedGroupLeader
+0x1a6ff48e8  __TEXT,__text  _MRAVEndpointGetExternalDevice
+0x1a6ff4b48  __TEXT,__text  _MRAVEndpointGetLocalEndpoint
+0x1a6ff4a88  __TEXT,__text  _MRAVEndpointGetLocalizedName
+0x1a6ff8650  __TEXT,__text  _MRAVEndpointGetMyGroupLeaderWithTimeout
+0x1a6e6b354  __TEXT,__text  _MRAVEndpointGetOutputDeviceUIDVolume
+0x1a6e698c0  __TEXT,__text  _MRAVEndpointGetOutputDeviceUIDVolumeControlCapabilities
+0x1a6ff536c  __TEXT,__text  _MRAVEndpointGetOutputDeviceVolume
+0x1a6ff5268  __TEXT,__text  _MRAVEndpointGetOutputDeviceVolumeControlCapabilities
+0x1a6ff4ac8  __TEXT,__text  _MRAVEndpointGetUniqueIdentifier
+0x1a6e6b344  __TEXT,__text  _MRAVEndpointGetVolume
+0x1a6e698b0  __TEXT,__text  _MRAVEndpointGetVolumeControlCapabilities
+0x1a6ff4ea8  __TEXT,__text  _MRAVEndpointGroupDevicesAndSendCommand
+0x1a6ff4c90  __TEXT,__text  _MRAVEndpointGroupDevicesAndSendCommandWithResult
+0x1e0f8c470  __DATA_CONST,__const  _MRAVEndpointGroupSessionHostingEligibilityDidChangeNotification
+0x1e0f8c468  __DATA_CONST,__const  _MRAVEndpointGroupSessionInfoDidChangeNotification
+0x1e0f8c460  __DATA_CONST,__const  _MRAVEndpointGroupSessionInfoUserInfoKey
+0x1a6ff4b08  __TEXT,__text  _MRAVEndpointIsLocalEndpoint
+0x1a6ff5364  __TEXT,__text  _MRAVEndpointIsOutputDeviceVolumeControlAvailable
+0x1a6ff4b90  __TEXT,__text  _MRAVEndpointIsProxyGroupPlayer
+0x1a6ff8554  __TEXT,__text  _MRAVEndpointMigrate
+0x1a6ff8428  __TEXT,__text  _MRAVEndpointMoveOutputGroupToDevices
+0x1a6ff843c  __TEXT,__text  _MRAVEndpointMoveOutputGroupToDevicesFromSource
+0x1a6f93fdc  __TEXT,__text  _MRAVEndpointObserverAddEndpointChangedCallback
+0x1a6f93fe4  __TEXT,__text  _MRAVEndpointObserverBegin
+0x1a6f93fa8  __TEXT,__text  _MRAVEndpointObserverCreateWithOutputDeviceUID
+0x1a6f93fe8  __TEXT,__text  _MRAVEndpointObserverEnd
+0x1e0f8c458  __DATA_CONST,__const  _MRAVEndpointOutputDeviceDataUserInfoKey
+0x1e0f8c450  __DATA_CONST,__const  _MRAVEndpointOutputDeviceUserInfoKey
+0x1e0f8c448  __DATA_CONST,__const  _MRAVEndpointOutputDevicesDidChangeNotification
+0x1a6ff5038  __TEXT,__text  _MRAVEndpointPredictGroupLeader
+0x1e0f8c440  __DATA_CONST,__const  _MRAVEndpointPreviousDeviceInfoUserInfoKey
+0x1a6ff56d4  __TEXT,__text  _MRAVEndpointRemoveOutputDevices
+0x1a6ff833c  __TEXT,__text  _MRAVEndpointRemoveOutputDevicesFromGroup
+0x1a6ff8350  __TEXT,__text  _MRAVEndpointRemoveOutputDevicesFromGroupFromSource
+0x1a6ff56e8  __TEXT,__text  _MRAVEndpointRemoveOutputDevicesWithInitiator
+0x1a704a034  __TEXT,__text  _MRAVEndpointResolveActiveSystemEndpoint
+0x1a704a03c  __TEXT,__text  _MRAVEndpointResolveActiveSystemEndpointWithTimeout
+0x1a6eb9824  __TEXT,__text  _MRAVEndpointResolveActiveSystemEndpointWithType
+0x1a704a0c8  __TEXT,__text  _MRAVEndpointResolveActiveSystemEndpointWithTypeReturningError
+0x1a70cc1ac  __TEXT,__text  _MRAVEndpointResolveOutputDeviceUID
+0x1a70cc2b4  __TEXT,__text  _MRAVEndpointResolveOutputDeviceUIDs
+0x1a6ff5480  __TEXT,__text  _MRAVEndpointSetOutputDeviceUIDVolume
+0x1a6ff5174  __TEXT,__text  _MRAVEndpointSetOutputDeviceVolume
+0x1a6ff582c  __TEXT,__text  _MRAVEndpointSetOutputDevices
+0x1a6ff5840  __TEXT,__text  _MRAVEndpointSetOutputDevicesWithInitiator
+0x1a6ff5164  __TEXT,__text  _MRAVEndpointSetVolume
+0x1a7049d14  __TEXT,__text  _MRAVEndpointUpdateActiveSystemEndpoint
+0x1a7049edc  __TEXT,__text  _MRAVEndpointUpdateActiveSystemEndpointForOutputDeviceUIDWithChangeType
+0x1a7049ec8  __TEXT,__text  _MRAVEndpointUpdateActiveSystemEndpointForOutputDeviceUIDWithReason
+0x1a7049d28  __TEXT,__text  _MRAVEndpointUpdateActiveSystemEndpointWithReason
+0x1e0f8c438  __DATA_CONST,__const  _MRAVEndpointVolumeControlCapabilitiesDidChangeNotification
+0x1e0f8c430  __DATA_CONST,__const  _MRAVEndpointVolumeControlCapabilitiesUserInfoKey
+0x1e0f8c428  __DATA_CONST,__const  _MRAVEndpointVolumeDidChangeNotification
+0x1e0f8c420  __DATA_CONST,__const  _MRAVEndpointVolumeMutedDidChangeNotification
+0x1e0f8c418  __DATA_CONST,__const  _MRAVEndpointVolumeMutedUserInfoKey
+0x1e0f8c410  __DATA_CONST,__const  _MRAVEndpointVolumeUserInfoKey
+0x1a6edebd4  __TEXT,__text  _MRAVOutputContextAddOutputDevice
+0x1a6edeca0  __TEXT,__text  _MRAVOutputContextAddOutputDeviceWithInitiator
+0x1a6eded74  __TEXT,__text  _MRAVOutputContextAddOutputDevices
+0x1a6ededec  __TEXT,__text  _MRAVOutputContextAddOutputDevicesWithInitiator
+0x1a6e976e4  __TEXT,__text  _MRAVOutputContextCopyOutputDevices
+0x1a6e9773c  __TEXT,__text  _MRAVOutputContextCopyPredictedOutputDevice
+0x1a6ede808  __TEXT,__text  _MRAVOutputContextCopyUniqueIdentifier
+0x1a6ede778  __TEXT,__text  _MRAVOutputContextCreateRoutingContext
+0x1a6ede734  __TEXT,__text  _MRAVOutputContextCreateiTunesAudioContext
+0x1e0f8c408  __DATA_CONST,__const  _MRAVOutputContextDidAddLocalDeviceNotification
+0x1e0f8c400  __DATA_CONST,__const  _MRAVOutputContextDidAddOutputDeviceNotification
+0x1e0f8c3f8  __DATA_CONST,__const  _MRAVOutputContextDidAddPersonalDeviceNotification
+0x1e0f8c3f0  __DATA_CONST,__const  _MRAVOutputContextDidBeginModificationNotification
+0x1e0f8c3e8  __DATA_CONST,__const  _MRAVOutputContextDidChangeNotification
+0x1e0f8c3e0  __DATA_CONST,__const  _MRAVOutputContextDidFinishModificationNotification
+0x1e0f8c3d8  __DATA_CONST,__const  _MRAVOutputContextDidRemoveLocalDeviceNotification
+0x1e0f8c3d0  __DATA_CONST,__const  _MRAVOutputContextDidRemoveOutputDeviceNotification
+0x1e0f8c3c8  __DATA_CONST,__const  _MRAVOutputContextDidRemovePersonalDeviceNotification
+0x1e0f8c3c0  __DATA_CONST,__const  _MRAVOutputContextExistingOutputDeviceIdentifiersUserInfoKey
+0x1a6ede674  __TEXT,__text  _MRAVOutputContextGetSharedAudioPresentationContext
+0x1a6ede6b4  __TEXT,__text  _MRAVOutputContextGetSharedSystemAudioContext
+0x1a6ede6f4  __TEXT,__text  _MRAVOutputContextGetSharedSystemScreenContext
+0x1a6ede7c8  __TEXT,__text  _MRAVOutputContextGetType
+0x1a702a754  __TEXT,__text  _MRAVOutputContextGetUniqueIdentifier
+0x1e0f8c3b8  __DATA_CONST,__const  _MRAVOutputContextLocalDeviceDidChangeNotification
+0x1e0f8c3b0  __DATA_CONST,__const  _MRAVOutputContextManagerLocalDeviceDidChangeOutputContextNotification
+0x1e0f8c3a8  __DATA_CONST,__const  _MRAVOutputContextModificationErrorUserInfoKey
+0x1e0f8c3a0  __DATA_CONST,__const  _MRAVOutputContextModificationIdentifierUserInfoKey
+0x1e0f8c398  __DATA_CONST,__const  _MRAVOutputContextModificationInitiatorUserInfoKey
+0x1e0f8c390  __DATA_CONST,__const  _MRAVOutputContextModificationOutputDeviceIdentifiersUserInfoKey
+0x1e0f8c388  __DATA_CONST,__const  _MRAVOutputContextModificationRequestToAddLocalDeviceNotification
+0x1e0f8c380  __DATA_CONST,__const  _MRAVOutputContextModificationRequestToAddOutputDeviceNotification
+0x1e0f8c378  __DATA_CONST,__const  _MRAVOutputContextModificationRequestToClearPredictedRoutesNotifications
+0x1e0f8c370  __DATA_CONST,__const  _MRAVOutputContextModificationRequestToRemoveLocalDeviceNotification
+0x1e0f8c368  __DATA_CONST,__const  _MRAVOutputContextModificationRequestToRemoveOutputDeviceNotification
+0x1e0f8c360  __DATA_CONST,__const  _MRAVOutputContextModificationTypeUserInfoKey
+0x1e0f8c358  __DATA_CONST,__const  _MRAVOutputContextModificationWillAddLocalDeviceNotification
+0x1e0f8c350  __DATA_CONST,__const  _MRAVOutputContextModificationWillAddOutputDeviceNotification
+0x1e0f8c348  __DATA_CONST,__const  _MRAVOutputContextModificationWillRemoveLocalDeviceNotification
+0x1e0f8c340  __DATA_CONST,__const  _MRAVOutputContextModificationWillRemoveOutputDeviceNotification
+0x1e0f8c338  __DATA_CONST,__const  _MRAVOutputContextOutputDeviceDidChangeNotification
+0x1e0f8c330  __DATA_CONST,__const  _MRAVOutputContextOutputDeviceUserInfoKey
+0x1e0f8c328  __DATA_CONST,__const  _MRAVOutputContextOutputDevicesDidChangeNotification
+0x1a6edf114  __TEXT,__text  _MRAVOutputContextRemoveAllDevices
+0x1a6edee74  __TEXT,__text  _MRAVOutputContextRemoveOutputDevice
+0x1a6edef40  __TEXT,__text  _MRAVOutputContextRemoveOutputDeviceWithInitiator
+0x1a6edf014  __TEXT,__text  _MRAVOutputContextRemoveOutputDevices
+0x1a6edf08c  __TEXT,__text  _MRAVOutputContextRemoveOutputDevicesWithInitiator
+0x1a6edf1c4  __TEXT,__text  _MRAVOutputContextResetPredictedOutputDevice
+0x1a6ede860  __TEXT,__text  _MRAVOutputContextSetOutputDevice
+0x1a6ede92c  __TEXT,__text  _MRAVOutputContextSetOutputDeviceWithInitiator
+0x1a6edea00  __TEXT,__text  _MRAVOutputContextSetOutputDeviceWithPassword
+0x1a6edead4  __TEXT,__text  _MRAVOutputContextSetOutputDevices
+0x1a6edeb4c  __TEXT,__text  _MRAVOutputContextSetOutputDevicesWithInitiator
+0x1a6edf184  __TEXT,__text  _MRAVOutputContextSupportsMultipleBluetoothOutputDevices
+0x1a6e35550  __TEXT,__text  _MRAVOutputContextTypeCopyDescription
+0x1e0f8c320  __DATA_CONST,__const  _MRAVOutputContextVolumeControlCapabilitiesDidChangeNotification
+0x1e0f8c318  __DATA_CONST,__const  _MRAVOutputContextVolumeControlCapabilitiesUserInfoKey
+0x1e0f8c310  __DATA_CONST,__const  _MRAVOutputContextVolumeDidChangeNotification
+0x1e0f8c308  __DATA_CONST,__const  _MRAVOutputContextVolumeMutedDidChangeNotification
+0x1e0f8c300  __DATA_CONST,__const  _MRAVOutputContextVolumeMutedUserInfoKey
+0x1e0f8c2f8  __DATA_CONST,__const  _MRAVOutputContextVolumeUserInfoKey
+0x1a7085c90  __TEXT,__text  _MRAVOutputDeviceAllowsHeadTrackedSpatialAudio
+0x1e0f8c2f0  __DATA_CONST,__const  _MRAVOutputDeviceAppleDisplayModelID
+0x1a70846a4  __TEXT,__text  _MRAVOutputDeviceArrayContainsLocalDevice
+0x1a70848b8  __TEXT,__text  _MRAVOutputDeviceArrayContainsOnlyAirPlayDevices
+0x1a70849d0  __TEXT,__text  _MRAVOutputDeviceArrayContainsOnlyGroupableDevices
+0x1a70847a4  __TEXT,__text  _MRAVOutputDeviceArrayContainsOnlyLocalDevices
+0x1a7084c48  __TEXT,__text  _MRAVOutputDeviceArrayDescription
+0x1a7084ae4  __TEXT,__text  _MRAVOutputDeviceArrayNumberOfLogicalDevices
+0x1e0f8c2e8  __DATA_CONST,__const  _MRAVOutputDeviceB238ModelIDPrefix
+0x1e0f8c2e0  __DATA_CONST,__const  _MRAVOutputDeviceB515CWiredModelID
+0x1e0f8c2d8  __DATA_CONST,__const  _MRAVOutputDeviceB515DWiredModelID
+0x1e0f8c2d0  __DATA_CONST,__const  _MRAVOutputDeviceB520ModelID
+0x1e0f8c2c8  __DATA_CONST,__const  _MRAVOutputDeviceB520ModelIDPrefix
+0x1e0f8c2c0  __DATA_CONST,__const  _MRAVOutputDeviceB525ModelID
+0x1e0f8c2b8  __DATA_CONST,__const  _MRAVOutputDeviceB525ModelIDPrefix
+0x1e0f8c2b0  __DATA_CONST,__const  _MRAVOutputDeviceB620ModelIDPrefix
+0x1e0f8c2a8  __DATA_CONST,__const  _MRAVOutputDeviceB825ModelID
+0x1e0f8c2a0  __DATA_CONST,__const  _MRAVOutputDeviceBeatsHeadphonesModelID
+0x1e0f8c298  __DATA_CONST,__const  _MRAVOutputDeviceBeatsPillModelID
+0x1a7085478  __TEXT,__text  _MRAVOutputDeviceCanAccessAppleMusic
+0x1a70850f0  __TEXT,__text  _MRAVOutputDeviceCanAccessRemoteAssets
+0x1a70854f8  __TEXT,__text  _MRAVOutputDeviceCanFetchMediaDataFromSender
+0x1a70854b8  __TEXT,__text  _MRAVOutputDeviceCanPlayEncryptedProgressiveDownloadAssets
+0x1a7085170  __TEXT,__text  _MRAVOutputDeviceCanRelayCommunicationChannel
+0x1a7079994  __TEXT,__text  _MRAVOutputDeviceClusterTypeFromAVClusterType
+0x1a7085c0c  __TEXT,__text  _MRAVOutputDeviceCopyAvailableBluetoothListeningMode
+0x1a70858c8  __TEXT,__text  _MRAVOutputDeviceCopyBluetoothID
+0x1a708590c  __TEXT,__text  _MRAVOutputDeviceCopyCurrentBluetoothListeningMode
+0x1a7085e18  __TEXT,__text  _MRAVOutputDeviceCopyDNSNames
+0x1a7084f10  __TEXT,__text  _MRAVOutputDeviceCopyFirmwareVersion
+0x1a7084fa8  __TEXT,__text  _MRAVOutputDeviceCopyGroupIdentifier
+0x1a7085d90  __TEXT,__text  _MRAVOutputDeviceCopyHeadTrackedSpatialAudioMode
+0x1a6e89d2c  __TEXT,__text  _MRAVOutputDeviceCopyLocalDeviceLocalizedName
+0x1a7084df8  __TEXT,__text  _MRAVOutputDeviceCopyLogicalDeviceID
+0x1a7085040  __TEXT,__text  _MRAVOutputDeviceCopyMACAddress
+0x1a6e8a314  __TEXT,__text  _MRAVOutputDeviceCopyModelID
+0x1a6e8efac  __TEXT,__text  _MRAVOutputDeviceCopyModelSpecificInformation
+0x1a6e8ef54  __TEXT,__text  _MRAVOutputDeviceCopyName
+0x1a7085098  __TEXT,__text  _MRAVOutputDeviceCopyPlayingPairedDeviceName
+0x1a6e8a24c  __TEXT,__text  _MRAVOutputDeviceCopySourceInfo
+0x1a6ebe230  __TEXT,__text  _MRAVOutputDeviceCopyUniqueIdentifier
+0x1a7085640  __TEXT,__text  _MRAVOutputDeviceCreateFromAVOutputDevice
+0x1a7085638  __TEXT,__text  _MRAVOutputDeviceCreateLocalDevice
+0x1a708576c  __TEXT,__text  _MRAVOutputDeviceGetAVOutputDevice
+0x1a7085430  __TEXT,__text  _MRAVOutputDeviceGetBatteryLevel
+0x1a70857c8  __TEXT,__text  _MRAVOutputDeviceGetEndpoint
+0x1a7084f68  __TEXT,__text  _MRAVOutputDeviceGetGroupIdentifier
+0x1a7085000  __TEXT,__text  _MRAVOutputDeviceGetMACAddress
+0x1a7084ed0  __TEXT,__text  _MRAVOutputDeviceGetModelID
+0x1a7085578  __TEXT,__text  _MRAVOutputDeviceGetModelSpecificInformation
+0x1a7084e50  __TEXT,__text  _MRAVOutputDeviceGetName
+0x1a7085718  __TEXT,__text  _MRAVOutputDeviceGetRecentAVOutputDeviceUIDs
+0x1a6ecfbe4  __TEXT,__text  _MRAVOutputDeviceGetSubtype
+0x1a6e8a2d4  __TEXT,__text  _MRAVOutputDeviceGetType
+0x1a7084e90  __TEXT,__text  _MRAVOutputDeviceGetUniqueIdentifier
+0x1a7085230  __TEXT,__text  _MRAVOutputDeviceGroupContainsGroupLeader
+0x1a6e8f004  __TEXT,__text  _MRAVOutputDeviceHasBatteryLevel
+0x1a7085dd4  __TEXT,__text  _MRAVOutputDeviceHeadTrackedSpatialAudioActive
+0x1a7085888  __TEXT,__text  _MRAVOutputDeviceIsAddedToHomeKit
+0x1a70851f0  __TEXT,__text  _MRAVOutputDeviceIsGroupLeader
+0x1a6ecfba4  __TEXT,__text  _MRAVOutputDeviceIsGroupable
+0x1a6e8a294  __TEXT,__text  _MRAVOutputDeviceIsLocalDevice
+0x1a70853b0  __TEXT,__text  _MRAVOutputDeviceIsPickedOnPairedDevice
+0x1a7085370  __TEXT,__text  _MRAVOutputDeviceIsProxyGroupPlayer
+0x1a7085130  __TEXT,__text  _MRAVOutputDeviceIsRemoteControllable
+0x1a70853f0  __TEXT,__text  _MRAVOutputDeviceIsVolumeControlAvailable
+0x1e0f8c290  __DATA_CONST,__const  _MRAVOutputDeviceJ490ModelID
+0x1e0f8c288  __DATA_CONST,__const  _MRAVOutputDeviceJ491ModelID
+0x1a70852b0  __TEXT,__text  _MRAVOutputDeviceParentGroupContainsDiscoverableLeader
+0x1a70852f0  __TEXT,__text  _MRAVOutputDeviceParentGroupIdentifier
+0x1a7085538  __TEXT,__text  _MRAVOutputDevicePresentsOptimizedUserInterfaceWhenPlayingFetchedAudioOnlyAssets
+0x1a70857d4  __TEXT,__text  _MRAVOutputDeviceRemoveFromParentGroup
+0x1a70855f8  __TEXT,__text  _MRAVOutputDeviceRequiresAuthorization
+0x1a7085cd0  __TEXT,__text  _MRAVOutputDeviceSetAllowsHeadTrackedSpatialAudio
+0x1a7085950  __TEXT,__text  _MRAVOutputDeviceSetCurrentBluetoothListeningMode
+0x1a70856b4  __TEXT,__text  _MRAVOutputDeviceSetRecentAVOutputDeviceUID
+0x1a6f7c3c4  __TEXT,__text  _MRAVOutputDeviceSourceInfoCopyRoutingContextUID
+0x1a6e8a290  __TEXT,__text  _MRAVOutputDeviceSourceInfoMultipleBuiltInDevices
+0x1e0f8c280  __DATA_CONST,__const  _MRAVOutputDeviceStudioDisplayModelID
+0x1e0f8c278  __DATA_CONST,__const  _MRAVOutputDeviceStudioDisplayXDRModelID
+0x1a702a7fc  __TEXT,__text  _MRAVOutputDeviceSubstituteLocalDevice
+0x1a6e4ce10  __TEXT,__text  _MRAVOutputDeviceSubtypeCopyDescription
+0x1a6e3ef2c  __TEXT,__text  _MRAVOutputDeviceSubtypeFromAVSubtype
+0x1a7085330  __TEXT,__text  _MRAVOutputDeviceSupportsBluetoothSharing
+0x1a70851b0  __TEXT,__text  _MRAVOutputDeviceSupportsBufferedAirPlay
+0x1a70855b8  __TEXT,__text  _MRAVOutputDeviceSupportsExternalScreen
+0x1a7085e14  __TEXT,__text  _MRAVOutputDeviceSupportsHAP
+0x1a7085c50  __TEXT,__text  _MRAVOutputDeviceSupportsHeadTrackedSpatialAudio
+0x1a7085848  __TEXT,__text  _MRAVOutputDeviceSupportsRapport
+0x1a6e4cf0c  __TEXT,__text  _MRAVOutputDeviceTypeCopyDescription
+0x1a6e3cd94  __TEXT,__text  _MRAVOutputDeviceTypeFromAVType
+0x1a7085270  __TEXT,__text  _MRAVOutputDeviceisAirPlayReceiverSessionActive
+0x1a710093c  __TEXT,__text  _MRAVReconnaissanceSessionBeginEndpointsSearch
+0x1a7100808  __TEXT,__text  _MRAVReconnaissanceSessionBeginSearch
+0x1a7100a70  __TEXT,__text  _MRAVReconnaissanceSessionCancelSearch
+0x1a713903c  __TEXT,__text  _MRAVReconnaissanceSessionCreate
+0x1a713912c  __TEXT,__text  _MRAVReconnaissanceSessionCreateWithEndpointFeatures
+0x1a71390e4  __TEXT,__text  _MRAVReconnaissanceSessionCreateWithMatchingLogicalDeviceIDs
+0x1a7139074  __TEXT,__text  _MRAVReconnaissanceSessionCreateWithMatchingOutputGroupID
+0x1a71390ac  __TEXT,__text  _MRAVReconnaissanceSessionCreateWithMatchingOutputGroupIDFeatures
+0x1a7100804  __TEXT,__text  _MRAVReconnaissanceSessionGetMatchingOutputDeviceUIDs
+0x1a7139164  __TEXT,__text  _MRAVReconnaissanceSessionSetExpectedLogicalDevices
+0x1a71007fc  __TEXT,__text  _MRAVReconnaissanceSessionSetReturnPartialResults
+0x1a7100a74  __TEXT,__text  _MRAVReconnaissanceSessionSetTargetAudioSessionID
+0x1a71007e0  __TEXT,__text  _MRAVReconnaissanceSessionSetUseWeakMatching
+0x1a71007ec  __TEXT,__text  _MRAVReconnaissanceSessionSetWaitForCompleteClusters
+0x1a71007f4  __TEXT,__text  _MRAVReconnaissanceSessionSetWaitForUnanimousEndpoints
+0x1a71007dc  __TEXT,__text  _MRAVReconnaissanceSessionUseWeakMatching
+0x1a71007e8  __TEXT,__text  _MRAVReconnaissanceSessionWaitForCompleteClusters
+0x1a7006e2c  __TEXT,__text  _MRAVRouteQueryCreate
+0x1a7006e6c  __TEXT,__text  _MRAVRouteQueryCreateExternalRepresentation
+0x1a7006e38  __TEXT,__text  _MRAVRouteQueryCreateFromExternalRepresentation
+0x1a7006ea4  __TEXT,__text  _MRAVRouteQueryGetRouteUID
+0x1a7006ea8  __TEXT,__text  _MRAVRouteQuerySetRouteUID
+0x1a6f9df58  __TEXT,__text  _MRAVRoutingDiscoverySessionAddEndpointsChangedCallback
+0x1a6f9e078  __TEXT,__text  _MRAVRoutingDiscoverySessionAddOutputDevicesChangedCallback
+0x1a6f9dc78  __TEXT,__text  _MRAVRoutingDiscoverySessionAlwaysAllowUpdates
+0x1a6f9dea8  __TEXT,__text  _MRAVRoutingDiscoverySessionCopyAvailableEndpoints
+0x1a6f9df00  __TEXT,__text  _MRAVRoutingDiscoverySessionCopyAvailableOutputDevices
+0x1a6f9dd88  __TEXT,__text  _MRAVRoutingDiscoverySessionCopyRoutingContextUID
+0x1a6f9db28  __TEXT,__text  _MRAVRoutingDiscoverySessionCreate
+0x1a6f9db74  __TEXT,__text  _MRAVRoutingDiscoverySessionCreateRemoteControlThrottled
+0x1a6f9de28  __TEXT,__text  _MRAVRoutingDiscoverySessionDevicePresenceDetected
+0x1a6f9dbf0  __TEXT,__text  _MRAVRoutingDiscoverySessionGetDiscoveryMode
+0x1a6f9dbb0  __TEXT,__text  _MRAVRoutingDiscoverySessionGetEndpointFeatures
+0x1a6f9dd00  __TEXT,__text  _MRAVRoutingDiscoverySessionGetTargetAudioSessionID
+0x1a6f9de68  __TEXT,__text  _MRAVRoutingDiscoverySessionHasAvailableEndpoints
+0x1a6f9e030  __TEXT,__text  _MRAVRoutingDiscoverySessionRemoveEndpointsChangedCallback
+0x1a6f9e150  __TEXT,__text  _MRAVRoutingDiscoverySessionRemoveOutputDevicesChangedCallback
+0x1a6f9dcb8  __TEXT,__text  _MRAVRoutingDiscoverySessionSetAlwaysAllowUpdates
+0x1a6f9dc30  __TEXT,__text  _MRAVRoutingDiscoverySessionSetDiscoveryMode
+0x1a6f9dde0  __TEXT,__text  _MRAVRoutingDiscoverySessionSetRoutingContextUID
+0x1a6f9dd40  __TEXT,__text  _MRAVRoutingDiscoverySessionSetTargetAudioSessionID
+0x1e0f8c270  __DATA_CONST,__const  _MRAVVolumeClientEndpointVolumeCategoryDidChangeNotification
+0x1a704a1c8  __TEXT,__text  _MRActiveEndpointTypeForBundleIdentifier
+0x1a6e718dc  __TEXT,__text  _MRActiveEndpointTypeForCurrentApplication
+0x1e0f8c268  __DATA_CONST,__const  _MRActiveGroupSessionInfoDidChangeNotification
+0x1e0f8c260  __DATA_CONST,__const  _MRActiveGroupSessionInfoUserInfoKey
+0x1e0f8c258  __DATA_CONST,__const  _MRActivityAttributesKeyDiscoveredGroupSessionData
+0x1e0f8c250  __DATA_CONST,__const  _MRActivityAttributesKeyGroupSessionIdentifier
+0x1e0f8c248  __DATA_CONST,__const  _MRActivityAttributesKeyRelevanceScore
+0x1e0f8c240  __DATA_CONST,__const  _MRActivityAttributesKeyRouteIdentifier
+0x1e0f8c238  __DATA_CONST,__const  _MRActivityAttributesKeyUIContext
+0x1e0f8c230  __DATA_CONST,__const  _MRActivityDynamicAttributesKeyNowPlayingActivitySuppressedBundleIdentifiers
+0x1e0f8c228  __DATA_CONST,__const  _MRActivityDynamicAttributesKeyNowPlayingActivityUIState
+0x1e0f8c220  __DATA_CONST,__const  _MRActivityDynamicAttributesKeyNowPlayingActivityUIStateLastUpdate
+0x1a6fa85d0  __TEXT,__text  _MRAddApplicationActivityToXPCMessage
+0x1a6e933cc  __TEXT,__text  _MRAddArrayToXPCMessage
+0x1a6e7a908  __TEXT,__text  _MRAddClientErrorToXPCMessage
+0x1a6e890a8  __TEXT,__text  _MRAddClientToXPCMessage
+0x1a6fa87d0  __TEXT,__text  _MRAddCommandResultToXPCMessage
+0x1a6fa9128  __TEXT,__text  _MRAddContentItemsToUserInfo
+0x1a6fa801c  __TEXT,__text  _MRAddContentItemsToXPCMessage
+0x1a6e3b91c  __TEXT,__text  _MRAddDataToXPCMessage
+0x1a6e49ad4  __TEXT,__text  _MRAddDeviceInfoToUserInfo
+0x1a6e45548  __TEXT,__text  _MRAddDeviceInfoToXPCMessage
+0x1a6fa86c8  __TEXT,__text  _MRAddDiagnosticToXPCMessage
+0x1a6ebba9c  __TEXT,__text  _MRAddDistantEndpointToXPCMessage
+0x1a6e798e8  __TEXT,__text  _MRAddEndpointUIDToXPCMessage
+0x1a6e45538  __TEXT,__text  _MRAddErrorToXPCMessage
+0x1a6fa8644  __TEXT,__text  _MRAddNowPlayingStateToXPCMessage
+0x1a6e93b40  __TEXT,__text  _MRAddOriginToXPCMessage
+0x1a6fa8080  __TEXT,__text  _MRAddOriginsToXPCMessage
+0x1a6e404e8  __TEXT,__text  _MRAddPlaybackQueueCapabilitiesToXPCMessage
+0x1a6e8760c  __TEXT,__text  _MRAddPlaybackQueueRequestToXPCMessage
+0x1a6e9f734  __TEXT,__text  _MRAddPlaybackQueueToXPCMessage
+0x1a6fa8758  __TEXT,__text  _MRAddPlaybackSessionToXPCMessage
+0x1a6e41eb0  __TEXT,__text  _MRAddPlayerPathToUserInfo
+0x1a6e3714c  __TEXT,__text  _MRAddPlayerPathToXPCMessage
+0x1a6fa8158  __TEXT,__text  _MRAddPlayerToXPCMessage
+0x1a6e3b054  __TEXT,__text  _MRAddPropertyListToXPCMessage
+0x1a6e4ad3c  __TEXT,__text  _MRAddProtobufToXPCMessage
+0x1a6eb9cb8  __TEXT,__text  _MRAddRequestDetailsToXPCMessage
+0x1a6fa826c  __TEXT,__text  _MRAddSendCommandToXPCMessage
+0x1a6e70318  __TEXT,__text  _MRAddStringToXPCMessage
+0x1a6fa8260  __TEXT,__text  _MRAddSupportedCommandsDataToXPCMessage
+0x1a6fa81ec  __TEXT,__text  _MRAddSupportedCommandsToXPCMessage
+0x1a6fa8360  __TEXT,__text  _MRAddVideoThumbnailRequestToXPCMessage
+0x1a6fa8438  __TEXT,__text  _MRAddVideoThumbnailsToXPCMessage
+0x1a6e74194  __TEXT,__text  _MRAnalyticsAppBundleIDStringToInt
+0x1a6ff23d4  __TEXT,__text  _MRAnalyticsCompositionForDeviceClass
+0x1a6ff23b8  __TEXT,__text  _MRAnalyticsCompositionForDeviceInfo
+0x1a6ff20e0  __TEXT,__text  _MRAnalyticsCompositionForEndpoint
+0x1a6ff21dc  __TEXT,__text  _MRAnalyticsCompositionForLocalDevice
+0x1a6ff2214  __TEXT,__text  _MRAnalyticsCompositionForOutputDevice
+0x1a6ff2270  __TEXT,__text  _MRAnalyticsCompositionForOutputDevices
+0x1a6ff1fbc  __TEXT,__text  _MRAnalyticsDeviceCompositionDescription
+0x1a6e804b4  __TEXT,__text  _MRAnalyticsSendEvent
+0x1a6ff248c  __TEXT,__text  _MRAnalyticsTrackTopologyChangeEvent
+0x1a7105a80  __TEXT,__text  _MRApplicationActivityBegin
+0x1a7105c64  __TEXT,__text  _MRApplicationActivityCopyPrimaryAppDisplayID
+0x1a7105c9c  __TEXT,__text  _MRApplicationActivityCopySecondaryAppDisplayID
+0x1a7105c00  __TEXT,__text  _MRApplicationActivityCopyUniqueIdentifier
+0x1a7105a44  __TEXT,__text  _MRApplicationActivityCreate
+0x1a7105b9c  __TEXT,__text  _MRApplicationActivityEnd
+0x1a7105ce4  __TEXT,__text  _MRApplicationActivityGetCreatorProcessID
+0x1a7105b48  __TEXT,__text  _MRApplicationActivityGetCurrentActivity
+0x1a7105ce0  __TEXT,__text  _MRApplicationActivityGetStatus
+0x1a7105cdc  __TEXT,__text  _MRApplicationActivitySetShouldPrepareAppPlaybackQueue
+0x1a7105cd4  __TEXT,__text  _MRApplicationActivityShouldPrepareAppPlaybackQueue
+0x1a71056ac  __TEXT,__text  _MRApplicationActivityStatusCopyDescription
+0x1a6f8bc40  __TEXT,__text  _MRApplicationConnectionGetQueue
+0x1a701b9d4  __TEXT,__text  _MRArrayCopySingleLineDescription
+0x1a6eea858  __TEXT,__text  _MRAudioBufferCreate
+0x1a6eea8a4  __TEXT,__text  _MRAudioBufferGetFormatSettings
+0x1a6eea95c  __TEXT,__text  _MRAudioBufferGetMutableContentsPtr
+0x1a6eea994  __TEXT,__text  _MRAudioBufferGetMutablePacketDescriptionsArrayPtr
+0x1a6eea8a8  __TEXT,__text  _MRAudioBufferGetPacketCapacity
+0x1a6eea8e0  __TEXT,__text  _MRAudioBufferGetPacketCount
+0x1a6eea918  __TEXT,__text  _MRAudioBufferSetPacketCount
+0x1a6fd6868  __TEXT,__text  _MRAudioDataBlockCreate
+0x1a6fd68c4  __TEXT,__text  _MRAudioDataBlockCreateExternalRepresentation
+0x1a6fd6874  __TEXT,__text  _MRAudioDataBlockCreateFromExternalRepresentation
+0x1a6fd68a8  __TEXT,__text  _MRAudioDataBlockGetBuffer
+0x1a6fd68bc  __TEXT,__text  _MRAudioDataBlockGetGain
+0x1a6fd68b4  __TEXT,__text  _MRAudioDataBlockGetTimestamp
+0x1a6fd68ac  __TEXT,__text  _MRAudioDataBlockSetBuffer
+0x1a6fd68c0  __TEXT,__text  _MRAudioDataBlockSetGain
+0x1a6fd68b8  __TEXT,__text  _MRAudioDataBlockSetTimestamp
+0x1a6eee128  __TEXT,__text  _MRBannerEventDescription
+0x1a6fef3d4  __TEXT,__text  _MRBroadcastCommandResponseGetBundleIdentifier
+0x1a6fef384  __TEXT,__text  _MRBroadcastCommandResponseGetPID
+0x1a6e33f80  __TEXT,__text  _MRBundlePermittedForGroupSessions
+0x1a70be0ac  __TEXT,__text  _MRBundlePermittedForJoiningGroupSessions
+0x1a6fa805c  __TEXT,__text  _MRCFErrorCreateExternalRepresentation
+0x1e0f8c218  __DATA_CONST,__const  _MRCSurfaceAmbient
+0x1e0f8c210  __DATA_CONST,__const  _MRCSurfaceMirrorModule
+0x1e0f8c208  __DATA_CONST,__const  _MRCSurfaceVolumeCC
+0x1e0f8c200  __DATA_CONST,__const  _MRCSurfaceVolumeLockScreen
+0x1a6fdcb68  __TEXT,__text  _MRClassSwizzleMethod
+0x1a6fe305c  __TEXT,__text  _MRColorCopyDescription
+0x1a6fa9054  __TEXT,__text  _MRColorFromXPCMessage
+0x1a6fe30b8  __TEXT,__text  _MRColorIsEqual
+0x1a6fe30fc  __TEXT,__text  _MRColorIsNull
+0x1a7166cb8  __TEXT,__const  _MRColorNull
+0x1e0f8c1f8  __DATA_CONST,__const  _MRCompanionLinkClientActiveSystemEndpointUIDUserInfoKey
+0x1e0f8c1f0  __DATA_CONST,__const  _MRCompanionLinkClientEventAirplayActiveChanged
+0x1e0f8c1e8  __DATA_CONST,__const  _MRCompanionLinkClientEventIsPlaying
+0x1e0f8c1e0  __DATA_CONST,__const  _MRCompanionLinkClientEventOutputContextChanged
+0x1e0f8c1d8  __DATA_CONST,__const  _MRCompanionLinkClientEventPlaybackSessionChanged
+0x1e0f8c1d0  __DATA_CONST,__const  _MRCompanionLinkClientEventShouldUpdateActiveSystemEndpoint
+0x1e0f8c1c8  __DATA_CONST,__const  _MRCompanionLinkClientEventUpdateActiveSystemEndpoint
+0x1e0f8c1c0  __DATA_CONST,__const  _MRCompanionLinkClientRequestNowPlayingState
+0x1e0f8c1b8  __DATA_CONST,__const  _MRCompanionLinkClientRequestPlaybackSession
+0x1a6e78e04  __TEXT,__text  _MRComputeBaseGroupID
+0x1a6e97780  __TEXT,__text  _MRComputeBaseRouteUID
+0x1a6e3bdac  __TEXT,__text  _MRComputeBaseRouteUIDWithDefaultSuffixes
+0x1a6e3bc3c  __TEXT,__text  _MRComputeBaseRouteUIDWithSuffixes
+0x1a701e1dc  __TEXT,__text  _MRComputeClusterMemberID
+0x1a6e78c10  __TEXT,__text  _MRComputeGroupContextID
+0x1a701e318  __TEXT,__text  _MRComputeGroupID
+0x1a701e218  __TEXT,__text  _MRComputeGroupIDWithDeviceInfo
+0x1a7025054  __TEXT,__text  _MRConnectionStateFromProtobuf
+0x1e0f8c1b0  __DATA_CONST,__const  _MRContentItemAnimatedArtworkFormatSquare
+0x1e0f8c1a8  __DATA_CONST,__const  _MRContentItemAnimatedArtworkFormatTall
+0x1e0f8c1a0  __DATA_CONST,__const  _MRContentItemArtworkFormatStandard
+0x1a70abc60  __TEXT,__text  _MRContentItemCalculatedPlaybackPositionIsEqual
+0x1a6ea4008  __TEXT,__text  _MRContentItemCopy
+0x1a70a4cf0  __TEXT,__text  _MRContentItemCopyAlbumYear
+0x1a70aa4f0  __TEXT,__text  _MRContentItemCopyAppMetrics
+0x1a70abc10  __TEXT,__text  _MRContentItemCopyAuxiliaryNowPlayingInfo
+0x1a70aab70  __TEXT,__text  _MRContentItemCopyCollectionInfo
+0x1a70abefc  __TEXT,__text  _MRContentItemCopyDeviceSpecificUserInfo
+0x1a70ac378  __TEXT,__text  _MRContentItemCopyExtractedIdentifierFromNowPlayingInfo
+0x1a6ea8068  __TEXT,__text  _MRContentItemCopyMinimalReadableDescription
+0x1a6eaa9e8  __TEXT,__text  _MRContentItemCopyNowPlayingInfo
+0x1a70ac4e8  __TEXT,__text  _MRContentItemCopyReadableDescription
+0x1a70aad1c  __TEXT,__text  _MRContentItemCopyTransitionInfo
+0x1a70abd50  __TEXT,__text  _MRContentItemCopyUserInfo
+0x1a70ac540  __TEXT,__text  _MRContentItemCopyWithIdentifier
+0x1a6ebef88  __TEXT,__text  _MRContentItemCreate
+0x1a70ac2ac  __TEXT,__text  _MRContentItemCreateExternalRepresentation
+0x1a70ac278  __TEXT,__text  _MRContentItemCreateFromExternalRepresentation
+0x1a70ac23c  __TEXT,__text  _MRContentItemCreateFromNowPlayingInfo
+0x1a6ea400c  __TEXT,__text  _MRContentItemCreateFromRequest
+0x1a70ac50c  __TEXT,__text  _MRContentItemCreateMergedItem
+0x1a6ec31a8  __TEXT,__text  _MRContentItemCreateSkeletonFrom
+0x1a70ac270  __TEXT,__text  _MRContentItemEqualToItem
+0x1a70a50d0  __TEXT,__text  _MRContentItemGetAlbumArtistName
+0x1a6ecc5fc  __TEXT,__text  _MRContentItemGetAlbumName
+0x1a70ab7c0  __TEXT,__text  _MRContentItemGetAncestorIdentifier
+0x1a702a770  __TEXT,__text  _MRContentItemGetAppMetrics
+0x1a70a829c  __TEXT,__text  _MRContentItemGetArtworkData
+0x1a70a892c  __TEXT,__text  _MRContentItemGetArtworkDataHeight
+0x1a70a88f4  __TEXT,__text  _MRContentItemGetArtworkDataWidth
+0x1a70a84bc  __TEXT,__text  _MRContentItemGetArtworkIdentifier
+0x1a70a86d8  __TEXT,__text  _MRContentItemGetArtworkMIMEType
+0x1a70a9230  __TEXT,__text  _MRContentItemGetArtworkURL
+0x1a70a92a0  __TEXT,__text  _MRContentItemGetArtworkURLTemplates
+0x1a70a80ec  __TEXT,__text  _MRContentItemGetAssetURL
+0x1a70a8be8  __TEXT,__text  _MRContentItemGetAvailableLanguageOptions
+0x1a70ab738  __TEXT,__text  _MRContentItemGetBrandIdentifier
+0x1a6ea8348  __TEXT,__text  _MRContentItemGetCalculatedPlaybackPosition
+0x1a70a490c  __TEXT,__text  _MRContentItemGetClassicalWork
+0x1a70aa954  __TEXT,__text  _MRContentItemGetCollectionIdentifier
+0x1a702a7e0  __TEXT,__text  _MRContentItemGetCollectionInfo
+0x1a70a5a80  __TEXT,__text  _MRContentItemGetComposer
+0x1a70aaf70  __TEXT,__text  _MRContentItemGetContentIdentifier
+0x1a70a8e04  __TEXT,__text  _MRContentItemGetCurrentLanguageOptions
+0x1a70a6ac8  __TEXT,__text  _MRContentItemGetCurrentPlaybackDate
+0x1a70a66b8  __TEXT,__text  _MRContentItemGetDefaultPlaybackRate
+0x1a702a7c4  __TEXT,__text  _MRContentItemGetDeviceSpecificUserInfo
+0x1a70a5508  __TEXT,__text  _MRContentItemGetDirectorName
+0x1a70a5c9c  __TEXT,__text  _MRContentItemGetDiscNumber
+0x1a70aa3f8  __TEXT,__text  _MRContentItemGetDownloadProgress
+0x1a70aa30c  __TEXT,__text  _MRContentItemGetDownloadState
+0x1a6ecc544  __TEXT,__text  _MRContentItemGetDuration
+0x1a70a7960  __TEXT,__text  _MRContentItemGetDurationStringLocalizationKey
+0x1a70a7e34  __TEXT,__text  _MRContentItemGetEditingStyleFlags
+0x1a6ecc584  __TEXT,__text  _MRContentItemGetElapsedTime
+0x1a70a6344  __TEXT,__text  _MRContentItemGetElapsedTimeTimestamp
+0x1a70a580c  __TEXT,__text  _MRContentItemGetEpisodeNumber
+0x1a70ab83c  __TEXT,__text  _MRContentItemGetEpisodeType
+0x1a70a6b1c  __TEXT,__text  _MRContentItemGetGenre
+0x1a70a83d4  __TEXT,__text  _MRContentItemGetHasArtworkData
+0x1a70a6124  __TEXT,__text  _MRContentItemGetHasDuration
+0x1a70a630c  __TEXT,__text  _MRContentItemGetHasElapsedTime
+0x1a70a8998  __TEXT,__text  _MRContentItemGetHasInfo
+0x1a6ea3f94  __TEXT,__text  _MRContentItemGetHasLanguageOptions
+0x1a70a97f4  __TEXT,__text  _MRContentItemGetHasLyrics
+0x1a6e9cdc0  __TEXT,__text  _MRContentItemGetHasMetadata
+0x1a70a8b00  __TEXT,__text  _MRContentItemGetHasTranscriptAlignments
+0x1a70abbd8  __TEXT,__text  _MRContentItemGetITunesStoreAlbumArtistIdentifier
+0x1a70aa07c  __TEXT,__text  _MRContentItemGetITunesStoreAlbumIdentifier
+0x1a70a9f94  __TEXT,__text  _MRContentItemGetITunesStoreArtistIdentifier
+0x1a6ecc6f8  __TEXT,__text  _MRContentItemGetITunesStoreIdentifier
+0x1a70a9eac  __TEXT,__text  _MRContentItemGetITunesStoreSubscriptionIdentifier
+0x1a6ea803c  __TEXT,__text  _MRContentItemGetIdentifier
+0x1a6ec73a8  __TEXT,__text  _MRContentItemGetInferredTimestamp
+0x1a70a8964  __TEXT,__text  _MRContentItemGetInfo
+0x1a70aa69c  __TEXT,__text  _MRContentItemGetIsAdvertisement
+0x1a70a765c  __TEXT,__text  _MRContentItemGetIsAlwaysLive
+0x1a70a70ec  __TEXT,__text  _MRContentItemGetIsContainer
+0x1a70a603c  __TEXT,__text  _MRContentItemGetIsCurrentlyPlaying
+0x1a70a7b7c  __TEXT,__text  _MRContentItemGetIsExplicitItem
+0x1a70a7d4c  __TEXT,__text  _MRContentItemGetIsInTransition
+0x1a70a7574  __TEXT,__text  _MRContentItemGetIsInWishList
+0x1a70a748c  __TEXT,__text  _MRContentItemGetIsLiked
+0x1a70a7c64  __TEXT,__text  _MRContentItemGetIsLoading
+0x1a70a71d4  __TEXT,__text  _MRContentItemGetIsPlayable
+0x1a70a73a4  __TEXT,__text  _MRContentItemGetIsSharable
+0x1a70aa784  __TEXT,__text  _MRContentItemGetIsSteerable
+0x1a70a72bc  __TEXT,__text  _MRContentItemGetIsStreamingContent
+0x1a70aa86c  __TEXT,__text  _MRContentItemGetLegacyUniqueIdentifier
+0x1a70a6d38  __TEXT,__text  _MRContentItemGetLocalizedContentRating
+0x1a70a7744  __TEXT,__text  _MRContentItemGetLocalizedDurationString
+0x1a70a97e8  __TEXT,__text  _MRContentItemGetLyrics
+0x1a70abaf0  __TEXT,__text  _MRContentItemGetLyricsAdamID
+0x1a70a95e4  __TEXT,__text  _MRContentItemGetLyricsURL
+0x1a70a7004  __TEXT,__text  _MRContentItemGetMediaSubType
+0x1a6eaa544  __TEXT,__text  _MRContentItemGetMediaType
+0x1a702a78c  __TEXT,__text  _MRContentItemGetNowPlayingInfo
+0x1a70a9148  __TEXT,__text  _MRContentItemGetNumberOfSections
+0x1a70ab78c  __TEXT,__text  _MRContentItemGetParentIdentifier
+0x1a6ecc5c4  __TEXT,__text  _MRContentItemGetPlayCount
+0x1a70a6214  __TEXT,__text  _MRContentItemGetPlaybackProgress
+0x1a70a67b0  __TEXT,__text  _MRContentItemGetPlaybackRate
+0x1a70a7f1c  __TEXT,__text  _MRContentItemGetPlaylistType
+0x1a70aaf1c  __TEXT,__text  _MRContentItemGetProfileIdentifier
+0x1a70aa164  __TEXT,__text  _MRContentItemGetPurchaseInfoData
+0x1a70a9d14  __TEXT,__text  _MRContentItemGetRadioStationIdentifier
+0x1a70a98dc  __TEXT,__text  _MRContentItemGetRadioStationName
+0x1a70a9af8  __TEXT,__text  _MRContentItemGetRadioStationString
+0x1a70a8004  __TEXT,__text  _MRContentItemGetRadioStationType
+0x1a6ecc6a4  __TEXT,__text  _MRContentItemGetReleaseDate
+0x1a70aba08  __TEXT,__text  _MRContentItemGetReportingAdamID
+0x1a70ab924  __TEXT,__text  _MRContentItemGetRequestIdentifier
+0x1a70a5724  __TEXT,__text  _MRContentItemGetSeasonNumber
+0x1a70a90c8  __TEXT,__text  _MRContentItemGetSections
+0x1a70a52ec  __TEXT,__text  _MRContentItemGetSeriesName
+0x1a70ab18c  __TEXT,__text  _MRContentItemGetServiceIdentifier
+0x1a70a65c0  __TEXT,__text  _MRContentItemGetStartTime
+0x1a70a46f0  __TEXT,__text  _MRContentItemGetSubtitle
+0x1a6ea82f4  __TEXT,__text  _MRContentItemGetTitle
+0x1a70a5d84  __TEXT,__text  _MRContentItemGetTotalDiscCount
+0x1a70a5e6c  __TEXT,__text  _MRContentItemGetTotalTrackCount
+0x1a6ecc650  __TEXT,__text  _MRContentItemGetTrackArtistName
+0x1a70a5f54  __TEXT,__text  _MRContentItemGetTrackNumber
+0x1a70a8a80  __TEXT,__text  _MRContentItemGetTranscriptAlignments
+0x1a70aaec8  __TEXT,__text  _MRContentItemGetTransitionInfo
+0x1a702a7a8  __TEXT,__text  _MRContentItemGetUserInfo
+0x1a70a67f0  __TEXT,__text  _MRContentItemHasPlaybackRate
+0x1a6ec6ecc  __TEXT,__text  _MRContentItemIdentifierIsEqual
+0x1a6ea3e50  __TEXT,__text  _MRContentItemIsEmpty
+0x1a6ec6f4c  __TEXT,__text  _MRContentItemMerge
+0x1a6fe3704  __TEXT,__text  _MRContentItemRepresentationForIdentity
+0x1a70a5124  __TEXT,__text  _MRContentItemSetAlbumArtistName
+0x1a70a4b28  __TEXT,__text  _MRContentItemSetAlbumName
+0x1a70a4d40  __TEXT,__text  _MRContentItemSetAlbumYear
+0x1a70ab834  __TEXT,__text  _MRContentItemSetAncestorIdentifier
+0x1a70aa540  __TEXT,__text  _MRContentItemSetAppMetrics
+0x1a70a82f0  __TEXT,__text  _MRContentItemSetArtworkData
+0x1a70a8364  __TEXT,__text  _MRContentItemSetArtworkDataSize
+0x1a70ac0a8  __TEXT,__text  _MRContentItemSetArtworkFileURL
+0x1a70a8510  __TEXT,__text  _MRContentItemSetArtworkIdentifier
+0x1a70a872c  __TEXT,__text  _MRContentItemSetArtworkMIMEType
+0x1a70a9450  __TEXT,__text  _MRContentItemSetArtworkURL
+0x1a70a92f4  __TEXT,__text  _MRContentItemSetArtworkURLTemplates
+0x1a70a8140  __TEXT,__text  _MRContentItemSetAssetURL
+0x1a70a8c14  __TEXT,__text  _MRContentItemSetAvailableLanguageOptions
+0x1a70ab570  __TEXT,__text  _MRContentItemSetBrandIdentifier
+0x1a70a4960  __TEXT,__text  _MRContentItemSetClassicalWork
+0x1a70aa9a8  __TEXT,__text  _MRContentItemSetCollectionIdentifier
+0x1a70aabc0  __TEXT,__text  _MRContentItemSetCollectionInfo
+0x1a70a5ad4  __TEXT,__text  _MRContentItemSetComposer
+0x1a70aafc4  __TEXT,__text  _MRContentItemSetContentIdentifier
+0x1a70a8e30  __TEXT,__text  _MRContentItemSetCurrentLanguageOptions
+0x1a70a696c  __TEXT,__text  _MRContentItemSetCurrentPlaybackDate
+0x1a70a66f8  __TEXT,__text  _MRContentItemSetDefaultPlaybackRate
+0x1a70abf4c  __TEXT,__text  _MRContentItemSetDeviceSpecificUserInfo
+0x1a70a555c  __TEXT,__text  _MRContentItemSetDirectorName
+0x1a70a5cd4  __TEXT,__text  _MRContentItemSetDiscNumber
+0x1a70aa438  __TEXT,__text  _MRContentItemSetDownloadProgress
+0x1a70aa344  __TEXT,__text  _MRContentItemSetDownloadState
+0x1a70a615c  __TEXT,__text  _MRContentItemSetDuration
+0x1a70a79b4  __TEXT,__text  _MRContentItemSetDurationStringLocalizationKey
+0x1a70a7e6c  __TEXT,__text  _MRContentItemSetEditingStyleFlags
+0x1a70a647c  __TEXT,__text  _MRContentItemSetElapsedTime
+0x1a70a63c4  __TEXT,__text  _MRContentItemSetElapsedTimeTimestamp
+0x1a70a5844  __TEXT,__text  _MRContentItemSetEpisodeNumber
+0x1a70ab874  __TEXT,__text  _MRContentItemSetEpisodeType
+0x1a70a7bb4  __TEXT,__text  _MRContentItemSetExplicitItem
+0x1a70a6b70  __TEXT,__text  _MRContentItemSetGenre
+0x1a70a840c  __TEXT,__text  _MRContentItemSetHasArtworkData
+0x1a70a89d0  __TEXT,__text  _MRContentItemSetHasInfo
+0x1a70a9018  __TEXT,__text  _MRContentItemSetHasLanguageOptions
+0x1a70a982c  __TEXT,__text  _MRContentItemSetHasLyrics
+0x1a70a8b38  __TEXT,__text  _MRContentItemSetHasTranscriptAlignments
+0x1a70abb28  __TEXT,__text  _MRContentItemSetITunesStoreAlbumArtistIdentifier
+0x1a70aa0b4  __TEXT,__text  _MRContentItemSetITunesStoreAlbumIdentifier
+0x1a70a9fcc  __TEXT,__text  _MRContentItemSetITunesStoreArtistIdentifier
+0x1a70a9dfc  __TEXT,__text  _MRContentItemSetITunesStoreIdentifier
+0x1a70a9ee4  __TEXT,__text  _MRContentItemSetITunesStoreSubscriptionIdentifier
+0x1a6ec77fc  __TEXT,__text  _MRContentItemSetInferredTimestamp
+0x1a70a8990  __TEXT,__text  _MRContentItemSetInfo
+0x1a70aa6d4  __TEXT,__text  _MRContentItemSetIsAdvertisement
+0x1a70a7694  __TEXT,__text  _MRContentItemSetIsAlwaysLive
+0x1a70a7124  __TEXT,__text  _MRContentItemSetIsContainer
+0x1a70a6074  __TEXT,__text  _MRContentItemSetIsCurrentlyPlaying
+0x1a70a7d84  __TEXT,__text  _MRContentItemSetIsInTransition
+0x1a70a75ac  __TEXT,__text  _MRContentItemSetIsInWishList
+0x1a70a74c4  __TEXT,__text  _MRContentItemSetIsLiked
+0x1a70a7c9c  __TEXT,__text  _MRContentItemSetIsLoading
+0x1a70a73dc  __TEXT,__text  _MRContentItemSetIsSharable
+0x1a70aa7bc  __TEXT,__text  _MRContentItemSetIsSteerable
+0x1a70a72f4  __TEXT,__text  _MRContentItemSetIsStreamingContent
+0x1a70aa8a4  __TEXT,__text  _MRContentItemSetLegacyUniqueIdentifier
+0x1a70a6d8c  __TEXT,__text  _MRContentItemSetLocalizedContentRating
+0x1a70a7798  __TEXT,__text  _MRContentItemSetLocalizedDurationString
+0x1a70a97f0  __TEXT,__text  _MRContentItemSetLyrics
+0x1a70aba40  __TEXT,__text  _MRContentItemSetLyricsAdamID
+0x1a70a9654  __TEXT,__text  _MRContentItemSetLyricsURL
+0x1a70a703c  __TEXT,__text  _MRContentItemSetMediaSubType
+0x1a70a6f54  __TEXT,__text  _MRContentItemSetMediaType
+0x1a70abd40  __TEXT,__text  _MRContentItemSetNowPlayingInfo
+0x1a70a9180  __TEXT,__text  _MRContentItemSetNumberOfSections
+0x1a70ab7b8  __TEXT,__text  _MRContentItemSetParentIdentifier
+0x1a70a59d0  __TEXT,__text  _MRContentItemSetPlayCount
+0x1a70a720c  __TEXT,__text  _MRContentItemSetPlayable
+0x1a70a6254  __TEXT,__text  _MRContentItemSetPlaybackProgress
+0x1a70a6828  __TEXT,__text  _MRContentItemSetPlaybackRate
+0x1a70a7f54  __TEXT,__text  _MRContentItemSetPlaylistType
+0x1a70ab3a8  __TEXT,__text  _MRContentItemSetProfileIdentifier
+0x1a70aa1b8  __TEXT,__text  _MRContentItemSetPurchaseInfoData
+0x1a70a9d4c  __TEXT,__text  _MRContentItemSetRadioStationIdentifier
+0x1a70a9930  __TEXT,__text  _MRContentItemSetRadioStationName
+0x1a70a9b4c  __TEXT,__text  _MRContentItemSetRadioStationString
+0x1a70a803c  __TEXT,__text  _MRContentItemSetRadioStationType
+0x1a70a58f4  __TEXT,__text  _MRContentItemSetReleaseDate
+0x1a70ab958  __TEXT,__text  _MRContentItemSetReportingAdamID
+0x1a70ab950  __TEXT,__text  _MRContentItemSetRequestIdentifier
+0x1a70a575c  __TEXT,__text  _MRContentItemSetSeasonNumber
+0x1a70a90f4  __TEXT,__text  _MRContentItemSetSections
+0x1a70a5340  __TEXT,__text  _MRContentItemSetSeriesName
+0x1a70ab1e0  __TEXT,__text  _MRContentItemSetServiceIdentifier
+0x1a70a6600  __TEXT,__text  _MRContentItemSetStartTime
+0x1a70a4744  __TEXT,__text  _MRContentItemSetSubtitle
+0x1a70a44c8  __TEXT,__text  _MRContentItemSetTitle
+0x1a70a5dbc  __TEXT,__text  _MRContentItemSetTotalDiscCount
+0x1a70a5ea4  __TEXT,__text  _MRContentItemSetTotalTrackCount
+0x1a70a4f08  __TEXT,__text  _MRContentItemSetTrackArtistName
+0x1a70a5f8c  __TEXT,__text  _MRContentItemSetTrackNumber
+0x1a70a8aac  __TEXT,__text  _MRContentItemSetTranscriptAlignments
+0x1a70aad6c  __TEXT,__text  _MRContentItemSetTransitionInfo
+0x1a70abda0  __TEXT,__text  _MRContentItemSetUserInfo
+0x1a70ac3a0  __TEXT,__text  _MRContentItemsCopyIdentifiers
+0x1a6e7e074  __TEXT,__text  _MRContentItemsCopyMinimalReadableDescription
+0x1a70ac504  __TEXT,__text  _MRContentItemsCopyReadableDescription
+0x1a70ac344  __TEXT,__text  _MRContentItemsCreateExternalRepresentation
+0x1a70ac2cc  __TEXT,__text  _MRContentItemsCreateFromExternalRepresentation
+0x1a6e7d950  __TEXT,__text  _MRContentItemsCreateFromRequest
+0x1a701d37c  __TEXT,__text  _MRCopyDeviceInfoPath
+0x1a701e3b4  __TEXT,__text  _MRCopyDeviceName
+0x1a701d274  __TEXT,__text  _MRCopyMediaRemoteLibraryDirectory
+0x1a6e3ec70  __TEXT,__text  _MRCopyPossibleRouteUIDSuffixes
+0x1a701da2c  __TEXT,__text  _MRCopyRegisteredTransactionDescriptions
+0x1a701d474  __TEXT,__text  _MRCreateASCIIRepresentationFromImageData
+0x1a7025128  __TEXT,__text  _MRCreateAllowedNowPlayingInfo
+0x1a6fa8ed0  __TEXT,__text  _MRCreateAppActivityFromXPCMessage
+0x1a6e93d64  __TEXT,__text  _MRCreateArrayFromData
+0x1a6fa8874  __TEXT,__text  _MRCreateArrayFromXPCMessage
+0x1a6fa8a80  __TEXT,__text  _MRCreateClientArrayFromXPCMessage
+0x1a6e7aab0  __TEXT,__text  _MRCreateClientErrorFromExternalRepresentation
+0x1a6e4200c  __TEXT,__text  _MRCreateClientErrorFromXPCMessage
+0x1a6e89208  __TEXT,__text  _MRCreateClientFromXPCMessage
+0x1a6fa8f90  __TEXT,__text  _MRCreateCommandResultFromXPCMessage
+0x1a6fa8848  __TEXT,__text  _MRCreateContentItemsFromXPCMessage
+0x1a6f9c008  __TEXT,__text  _MRCreateCryptoError
+0x1a6e93170  __TEXT,__text  _MRCreateDataFromArray
+0x1a6e92390  __TEXT,__text  _MRCreateDataFromObject
+0x1a6e3d248  __TEXT,__text  _MRCreateDataFromXPCMessage
+0x1a6e37978  __TEXT,__text  _MRCreateDecodedUserInfo
+0x1a6e4459c  __TEXT,__text  _MRCreateDeviceInfoFromXPCMessage
+0x1a6fa90b4  __TEXT,__text  _MRCreateDiagnosticFromXPCMessage
+0x1a6e7a9bc  __TEXT,__text  _MRCreateDistantExternalDeviceFromXPCMessage
+0x1a6e39a30  __TEXT,__text  _MRCreateDonatedQosBlock
+0x1a701d3bc  __TEXT,__text  _MRCreateDurationStringRepresentation
+0x1a6e3ab90  __TEXT,__text  _MRCreateEncodedUserInfo
+0x1a6fa910c  __TEXT,__text  _MRCreateEndpointFromXPCMessage
+0x1a6e4b5e8  __TEXT,__text  _MRCreateFormattedDebugDescriptionFromClass
+0x1a6e3ee68  __TEXT,__text  _MRCreateFromData
+0x1a6e4b4b8  __TEXT,__text  _MRCreateIndentedDebugDescriptionFromArray
+0x1a701d6e8  __TEXT,__text  _MRCreateIndentedDebugDescriptionFromDictionary
+0x1a6e52950  __TEXT,__text  _MRCreateIndentedDebugDescriptionFromObject
+0x1a7024fb8  __TEXT,__text  _MRCreateNowPlayingInfoFromProtobuf
+0x1a6f19464  __TEXT,__text  _MRCreateNowPlayingSessionError
+0x1a6fa8c2c  __TEXT,__text  _MRCreateNowPlayingStateFromXPCMessage
+0x1a6fa8a08  __TEXT,__text  _MRCreateOriginArrayFromXPCMessage
+0x1a6e93654  __TEXT,__text  _MRCreateOriginFromXPCMessage
+0x1a6e47b68  __TEXT,__text  _MRCreatePlaybackQueueCapabilitiesFromXPCMessage
+0x1a6eb463c  __TEXT,__text  _MRCreatePlaybackQueueFromXPCMessage
+0x1a6e87c10  __TEXT,__text  _MRCreatePlaybackQueueRequestFromXPCMessage
+0x1a6fa8f1c  __TEXT,__text  _MRCreatePlaybackSessionFromXPCMessage
+0x1a6fa8b54  __TEXT,__text  _MRCreatePlayerArrayFromXPCMessage
+0x1a6fa8af8  __TEXT,__text  _MRCreatePlayerFromXPCMessage
+0x1a6fa8bcc  __TEXT,__text  _MRCreatePlayerPathArrayFromXPCMessage
+0x1a6e3dce0  __TEXT,__text  _MRCreatePlayerPathFromXPCMessage
+0x1a6e38e54  __TEXT,__text  _MRCreatePropertyListFromXPCMessage
+0x1a7024f64  __TEXT,__text  _MRCreateProtobufFromNowPlayingInfo
+0x1a7024738  __TEXT,__text  _MRCreateProtobufFromSupportedCommands
+0x1a6e5df3c  __TEXT,__text  _MRCreateProtobufFromXPCMessage
+0x1a6ebaa38  __TEXT,__text  _MRCreateRequestDetailsFromXPCMessage
+0x1a6e391ac  __TEXT,__text  _MRCreateStringFromXPCMessage
+0x1a6fa89fc  __TEXT,__text  _MRCreateSupportedCommandsDataFromXPCMessage
+0x1a70247cc  __TEXT,__text  _MRCreateSupportedCommandsFromProtobuf
+0x1a6fa89b0  __TEXT,__text  _MRCreateSupportedCommandsFromXPCMessage
+0x1a6fa8994  __TEXT,__text  _MRCreateUserInfoFromXPCMessage
+0x1a6fa8d6c  __TEXT,__text  _MRCreateVideoThumbnailsFromXPCMessage
+0x1a6e34528  __TEXT,__text  _MRCreateXPCMessage
+0x1e0f8c198  __DATA_CONST,__const  _MRCriticalSectionTransitionKey
+0x1e0f8c190  __DATA_CONST,__const  _MRCriticalSectionTransitionNotification
+0x1a6ed18c0  __TEXT,__text  _MRDataCreateStringRepresentation
+0x1a6eb63ec  __TEXT,__text  _MRDecodeObjectWithEncoding
+0x1a6e44ecc  __TEXT,__text  _MRDeviceClassFromProtobuf
+0x1a6e47ac0  __TEXT,__text  _MRDeviceSupportsExternalTouchBarUI
+0x1a7083198  __TEXT,__text  _MRDeviceSupportsSystemAperture
+0x1a70ece78  __TEXT,__text  _MRDiagnosticCopyDateCreated
+0x1a70eceac  __TEXT,__text  _MRDiagnosticCopyInfo
+0x1a70ecd98  __TEXT,__text  _MRDiagnosticCreate
+0x1a70ece40  __TEXT,__text  _MRDiagnosticCreateExternalRepresentation
+0x1a70ece0c  __TEXT,__text  _MRDiagnosticCreateFromExternalRepresentation
+0x1a6e91c80  __TEXT,__text  _MRDictionaryCalculateDeltas
+0x1a6eb20b4  __TEXT,__text  _MREncodeObjectWithEncoding
+0x1e0f8c188  __DATA_CONST,__const  _MREndpointConnectionCorrelationIDUserInfoKey
+0x1e0f8c180  __DATA_CONST,__const  _MREndpointConnectionReasonUserInfoKey
+0x1a6ebbc40  __TEXT,__text  _MREndpointFromXPCMessage
+0x1a6f7c3cc  __TEXT,__text  _MREqualPlayerPaths
+0x1a701b9b4  __TEXT,__text  _MRErrorCopyDescription
+0x1a6fa8988  __TEXT,__text  _MRErrorFromXPCMessage
+0x1ebeb68a8  __DATA,__data  _MRExternalDeviceAuthenticatedConnectionTimeout
+0x1a7076aa8  __TEXT,__text  _MRExternalDeviceConnect
+0x1a7076b7c  __TEXT,__text  _MRExternalDeviceConnectEx
+0x1a707747c  __TEXT,__text  _MRExternalDeviceConnectOptionsCopyDescription
+0x1e0f8c178  __DATA_CONST,__const  _MRExternalDeviceConnectionClientBundleIDUserInfoKey
+0x1e0f8c170  __DATA_CONST,__const  _MRExternalDeviceConnectionCorrelationIDUserInfoKey
+0x1e0f8c168  __DATA_CONST,__const  _MRExternalDeviceConnectionReasonUserInfoKey
+0x1a6e7f728  __TEXT,__text  _MRExternalDeviceConnectionStateCopyDescription
+0x1a707648c  __TEXT,__text  _MRExternalDeviceCopyCustomOrigin
+0x1a7076368  __TEXT,__text  _MRExternalDeviceCopyDeviceInfo
+0x1a7076244  __TEXT,__text  _MRExternalDeviceCopyHostName
+0x1a70761e0  __TEXT,__text  _MRExternalDeviceCopyName
+0x1a70762a8  __TEXT,__text  _MRExternalDeviceCopySystemBuildVersion
+0x1a707616c  __TEXT,__text  _MRExternalDeviceCopyUniqueIdentifier
+0x1a7077070  __TEXT,__text  _MRExternalDeviceDeletePairedDevice
+0x1e0f8c160  __DATA_CONST,__const  _MRExternalDeviceDeviceInfoDidChangeNotification
+0x1e0f8c158  __DATA_CONST,__const  _MRExternalDeviceDeviceInfoUserInfoKey
+0x1a7076c54  __TEXT,__text  _MRExternalDeviceDisconnect
+0x1a7076cc0  __TEXT,__text  _MRExternalDeviceGetConnectionState
+0x1a707631c  __TEXT,__text  _MRExternalDeviceGetNetworkPort
+0x1a707663c  __TEXT,__text  _MRExternalDeviceGetOutputDeviceUIDVolume
+0x1a707671c  __TEXT,__text  _MRExternalDeviceGetOutputDeviceVolume
+0x1a7076ef0  __TEXT,__text  _MRExternalDeviceGetPairedDevices
+0x1a707662c  __TEXT,__text  _MRExternalDeviceGetVolume
+0x1a7076a58  __TEXT,__text  _MRExternalDeviceIsConnected
+0x1a7076ee4  __TEXT,__text  _MRExternalDeviceIsPaired
+0x1a7076e04  __TEXT,__text  _MRExternalDeviceIsPairingAllowed
+0x1a707644c  __TEXT,__text  _MRExternalDeviceIsValid
+0x1a70773e4  __TEXT,__text  _MRExternalDevicePing
+0x1e0f8c150  __DATA_CONST,__const  _MRExternalDevicePreviousDeviceInfoUserInfoKey
+0x1a7077100  __TEXT,__text  _MRExternalDeviceRequestOutputContextModification
+0x1a70769fc  __TEXT,__text  _MRExternalDeviceSendButtonEvent
+0x1a7077370  __TEXT,__text  _MRExternalDeviceSendCustomData
+0x1a7076d0c  __TEXT,__text  _MRExternalDeviceSetConnectionStateCallback
+0x1a70772f4  __TEXT,__text  _MRExternalDeviceSetCustomDataCallback
+0x1a7076448  __TEXT,__text  _MRExternalDeviceSetName
+0x1a70763cc  __TEXT,__text  _MRExternalDeviceSetNameCallback
+0x1a70767d4  __TEXT,__text  _MRExternalDeviceSetOutputDeviceUIDVolume
+0x1a70768c4  __TEXT,__text  _MRExternalDeviceSetOutputDeviceVolume
+0x1a7076e68  __TEXT,__text  _MRExternalDeviceSetPairingAllowedCallback
+0x1a7076d88  __TEXT,__text  _MRExternalDeviceSetPairingCallback
+0x1a70767c4  __TEXT,__text  _MRExternalDeviceSetVolume
+0x1a7076980  __TEXT,__text  _MRExternalDeviceSetVolumeChangedCallback
+0x1a7076530  __TEXT,__text  _MRExternalDeviceSetWantsNowPlayingArtworkUpdates
+0x1a70764dc  __TEXT,__text  _MRExternalDeviceSetWantsNowPlayingUpdates
+0x1a70765d8  __TEXT,__text  _MRExternalDeviceSetWantsOutputDeviceUpdates
+0x1a7076584  __TEXT,__text  _MRExternalDeviceSetWantsVolumeUpdates
+0x1e0f8c148  __DATA_CONST,__const  _MRExternalDeviceTransportDeviceInfoDidChangeNotification
+0x1e0f8c140  __DATA_CONST,__const  _MRExternalDeviceTransportNewDeviceInfoUserInfoKey
+0x1e0f8c138  __DATA_CONST,__const  _MRExternalDeviceTransportOldDeviceInfoUserInfoKey
+0x1a7076eec  __TEXT,__text  _MRExternalDeviceUnpair
+0x1a6f622c8  __TEXT,__text  _MRGameControllerAccelerationCopy
+0x1a6f622cc  __TEXT,__text  _MRGameControllerAccelerationCopyF
+0x1a6f620f8  __TEXT,__text  _MRGameControllerAccelerationCreate
+0x1a6f6218c  __TEXT,__text  _MRGameControllerAccelerationCreate4
+0x1a6f62228  __TEXT,__text  _MRGameControllerAccelerationCreate4F
+0x1a6f63728  __TEXT,__text  _MRGameControllerAccelerationCreateDescription
+0x1a6f62220  __TEXT,__text  _MRGameControllerAccelerationCreateF
+0x1a6f62624  __TEXT,__text  _MRGameControllerAccelerationCreateWithLegacyAcceleration
+0x1a6f62548  __TEXT,__text  _MRGameControllerAccelerationGetW
+0x1a6f62338  __TEXT,__text  _MRGameControllerAccelerationGetX
+0x1a6f623e8  __TEXT,__text  _MRGameControllerAccelerationGetY
+0x1a6f62498  __TEXT,__text  _MRGameControllerAccelerationGetZ
+0x1a6f63764  __TEXT,__text  _MRGameControllerAccelerationMake
+0x1a6f627e4  __TEXT,__text  _MRGameControllerButtonsCreate
+0x1a6f63210  __TEXT,__text  _MRGameControllerButtonsCreateDescription
+0x1a6f627f0  __TEXT,__text  _MRGameControllerButtonsCreateWithLegacyButtons
+0x1a6f6334c  __TEXT,__text  _MRGameControllerButtonsExtendedCreateDescription
+0x1a6f637a4  __TEXT,__text  _MRGameControllerButtonsExtendedMake
+0x1a6f62a9c  __TEXT,__text  _MRGameControllerButtonsGetA
+0x1a6f62aa0  __TEXT,__text  _MRGameControllerButtonsGetB
+0x1a6f62a94  __TEXT,__text  _MRGameControllerButtonsGetDPadX
+0x1a6f62a98  __TEXT,__text  _MRGameControllerButtonsGetDPadY
+0x1a6f62aac  __TEXT,__text  _MRGameControllerButtonsGetLeftShoulder
+0x1a6f62ab4  __TEXT,__text  _MRGameControllerButtonsGetLeftThumbstickX
+0x1a6f62ab8  __TEXT,__text  _MRGameControllerButtonsGetLeftThumbstickY
+0x1a6f62ac4  __TEXT,__text  _MRGameControllerButtonsGetLeftTrigger
+0x1a6f62acc  __TEXT,__text  _MRGameControllerButtonsGetPause
+0x1a6f62ab0  __TEXT,__text  _MRGameControllerButtonsGetRightShoulder
+0x1a6f62abc  __TEXT,__text  _MRGameControllerButtonsGetRightThumbstickX
+0x1a6f62ac0  __TEXT,__text  _MRGameControllerButtonsGetRightThumbstickY
+0x1a6f62ac8  __TEXT,__text  _MRGameControllerButtonsGetRightTrigger
+0x1a6f62aa4  __TEXT,__text  _MRGameControllerButtonsGetX
+0x1a6f62aa8  __TEXT,__text  _MRGameControllerButtonsGetY
+0x1a6f63790  __TEXT,__text  _MRGameControllerButtonsMake
+0x1a6f62a58  __TEXT,__text  _MRGameControllerButtonsSetA
+0x1a6f62a6c  __TEXT,__text  _MRGameControllerButtonsSetB
+0x1a6f62a64  __TEXT,__text  _MRGameControllerButtonsSetDPadX
+0x1a6f62a68  __TEXT,__text  _MRGameControllerButtonsSetDPadY
+0x1a6f62a74  __TEXT,__text  _MRGameControllerButtonsSetLeftShoulder
+0x1a6f62a7c  __TEXT,__text  _MRGameControllerButtonsSetLeftThumbstickX
+0x1a6f62a80  __TEXT,__text  _MRGameControllerButtonsSetLeftThumbstickY
+0x1a6f62a8c  __TEXT,__text  _MRGameControllerButtonsSetLeftTrigger
+0x1a6f62a60  __TEXT,__text  _MRGameControllerButtonsSetPause
+0x1a6f62a78  __TEXT,__text  _MRGameControllerButtonsSetRightShoulder
+0x1a6f62a84  __TEXT,__text  _MRGameControllerButtonsSetRightThumbstickX
+0x1a6f62a88  __TEXT,__text  _MRGameControllerButtonsSetRightThumbstickY
+0x1a6f62a90  __TEXT,__text  _MRGameControllerButtonsSetRightTrigger
+0x1a6f62a5c  __TEXT,__text  _MRGameControllerButtonsSetX
+0x1a6f62a70  __TEXT,__text  _MRGameControllerButtonsSetY
+0x1a6f62ad0  __TEXT,__text  _MRGameControllerDigitizerCreate
+0x1a6f636c0  __TEXT,__text  _MRGameControllerDigitizerCreateDescription
+0x1a6f62b5c  __TEXT,__text  _MRGameControllerDigitizerCreateWithHIDTouchEvent
+0x1a6f62adc  __TEXT,__text  _MRGameControllerDigitizerCreateWithLegacyDigitizer
+0x1a6f62bd8  __TEXT,__text  _MRGameControllerDigitizerGetTimestamp
+0x1a6f62bd4  __TEXT,__text  _MRGameControllerDigitizerGetTouchDown
+0x1a6f62bcc  __TEXT,__text  _MRGameControllerDigitizerGetX
+0x1a6f62bd0  __TEXT,__text  _MRGameControllerDigitizerGetY
+0x1a6f637c4  __TEXT,__text  _MRGameControllerDigitizerMake
+0x1a6f62b54  __TEXT,__text  _MRGameControllerDigitizerSetTimestamp
+0x1a6f62b4c  __TEXT,__text  _MRGameControllerDigitizerSetTouchDown
+0x1a6f62b44  __TEXT,__text  _MRGameControllerDigitizerSetX
+0x1a6f62b48  __TEXT,__text  _MRGameControllerDigitizerSetY
+0x1a6f63044  __TEXT,__text  _MRGameControllerEventCreateDescription
+0x1a6f62c18  __TEXT,__text  _MRGameControllerEventCreateWithButtons
+0x1a6f62c54  __TEXT,__text  _MRGameControllerEventCreateWithDigitizer
+0x1a6f62c90  __TEXT,__text  _MRGameControllerEventCreateWithLegacyEvent
+0x1a6f62bdc  __TEXT,__text  _MRGameControllerEventCreateWithMotion
+0x1a6f637e4  __TEXT,__text  _MRGameControllerEventMake
+0x1a6f63020  __TEXT,__text  _MRGameControllerEventTypeCreateDescription
+0x1a6f62f6c  __TEXT,__text  _MRGameControllerInputModeCreateDescription
+0x1a7025014  __TEXT,__text  _MRGameControllerInputModeFromProtobuf
+0x1a6f6263c  __TEXT,__text  _MRGameControllerMotionCopy
+0x1a6f62640  __TEXT,__text  _MRGameControllerMotionCopyF
+0x1a6f62630  __TEXT,__text  _MRGameControllerMotionCreate
+0x1a6f63164  __TEXT,__text  _MRGameControllerMotionCreateDescription
+0x1a6f62758  __TEXT,__text  _MRGameControllerMotionCreateWithLegacyMotion
+0x1a6f627dc  __TEXT,__text  _MRGameControllerMotionGetAttitude
+0x1a6f627d4  __TEXT,__text  _MRGameControllerMotionGetGravity
+0x1a6f627e0  __TEXT,__text  _MRGameControllerMotionGetRotation
+0x1a6f627d8  __TEXT,__text  _MRGameControllerMotionGetUserAcceleration
+0x1a6f63778  __TEXT,__text  _MRGameControllerMotionMake
+0x1a6f62748  __TEXT,__text  _MRGameControllerMotionSetAttitude
+0x1a6f62738  __TEXT,__text  _MRGameControllerMotionSetGravity
+0x1a6f62750  __TEXT,__text  _MRGameControllerMotionSetRotation
+0x1a6f62740  __TEXT,__text  _MRGameControllerMotionSetUserAcceleration
+0x1a6f62ffc  __TEXT,__text  _MRGameControllerPlayerIndexCreateDescription
+0x1a7025030  __TEXT,__text  _MRGameControllerProfileFromProtobuf
+0x1a6f62dc0  __TEXT,__text  _MRGameControllerPropertiesCopyVendorName
+0x1a6f62d38  __TEXT,__text  _MRGameControllerPropertiesCreate
+0x1a6f62d84  __TEXT,__text  _MRGameControllerPropertiesGetButtonAUpDelay
+0x1a6f62d78  __TEXT,__text  _MRGameControllerPropertiesGetPlayerIndex
+0x1a6f62da8  __TEXT,__text  _MRGameControllerPropertiesGetProfile
+0x1a6f62db4  __TEXT,__text  _MRGameControllerPropertiesGetSupportsExtendedMotion
+0x1a6f62d7c  __TEXT,__text  _MRGameControllerPropertiesSetButtonAUpDelay
+0x1a6f62d70  __TEXT,__text  _MRGameControllerPropertiesSetPlayerIndex
+0x1a6f62da0  __TEXT,__text  _MRGameControllerPropertiesSetProfile
+0x1a6f62dac  __TEXT,__text  _MRGameControllerPropertiesSetSupportsExtendedMotion
+0x1a6f62db8  __TEXT,__text  _MRGameControllerPropertiesSetVendorName
+0x1a6f62df8  __TEXT,__text  _MRGameControllerServerGetRemoteInputMode
+0x1a6f62e80  __TEXT,__text  _MRGameControllerServerSetRemoteInputMode
+0x1e0f8c130  __DATA_CONST,__const  _MRGenericMessageSetNameKey
+0x1a6e560f4  __TEXT,__text  _MRGetClientFromUserInfo
+0x1a6fa9168  __TEXT,__text  _MRGetContentItemsFromUserInfo
+0x1a6fa91d0  __TEXT,__text  _MRGetDeviceInfoFromUserInfo
+0x1a701d8bc  __TEXT,__text  _MRGetDiscoveryDebugEnabled
+0x1a6e47e00  __TEXT,__text  _MRGetOriginFromUserInfo
+0x1a6e55998  __TEXT,__text  _MRGetPlayerFromUserInfo
+0x1a6e3aadc  __TEXT,__text  _MRGetPlayerPathFromUserInfo
+0x1a6e36894  __TEXT,__text  _MRGetSharedService
+0x1a70c751c  __TEXT,__text  _MRGroupCompositionForMRGroupSessionRouteType
+0x1a6ec1324  __TEXT,__text  _MRGroupSessionAllowsMigrationForEndpoint
+0x1a70c65e0  __TEXT,__text  _MRGroupSessionContactAutoApprovalEnabled
+0x1e0f8c128  __DATA_CONST,__const  _MRGroupSessionEligibilityDidChangeNotification
+0x1e0f8c120  __DATA_CONST,__const  _MRGroupSessionEligibilityStatusUserInfoKey
+0x1e0f8c118  __DATA_CONST,__const  _MRGroupSessionError
+0x1e0f8c110  __DATA_CONST,__const  _MRGroupSessionEventOptionAssertionIdentifier
+0x1e0f8c108  __DATA_CONST,__const  _MRGroupSessionEventOptionDiscoveredSessionIdentifier
+0x1e0f8c100  __DATA_CONST,__const  _MRGroupSessionEventOptionEventType
+0x1e0f8c0f8  __DATA_CONST,__const  _MRGroupSessionEventOptionLaunchInBackground
+0x1e0f8c0f0  __DATA_CONST,__const  _MRGroupSessionEventOptionSessionIdentifier
+0x1a70c02f8  __TEXT,__text  _MRGroupSessionJoinSessionWithToken
+0x1a70c096c  __TEXT,__text  _MRGroupSessionLeaveSessionWithIdentifier
+0x1a70c6514  __TEXT,__text  _MRGroupSessionNearbyContactDiscoveryEnabled
+0x1e0f8c0e8  __DATA_CONST,__const  _MRGroupSessionNearbyContactDiscoveryPreferenceDidChangeNotification
+0x1a70bf908  __TEXT,__text  _MRGroupSessionRouteMakeName
+0x1a70c13b0  __TEXT,__text  _MRGroupSessionRouteTypeDescription
+0x1a70c72a4  __TEXT,__text  _MRGroupSessionRouteTypeForOutputDevices
+0x1a70be104  __TEXT,__text  _MRGroupSessionRouteTypeFromModelIdentifier
+0x1a70c6c70  __TEXT,__text  _MRGroupSessionRouteTypeLocalizedString
+0x1a70be1b8  __TEXT,__text  _MRGroupSessionRouteTypeToModelIdentifier
+0x1a70c32f8  __TEXT,__text  _MRGroupSessionSendEvent
+0x1a70c0d30  __TEXT,__text  _MRGroupSessionSubsystemGetNotificationQueue
+0x1a70c043c  __TEXT,__text  _MRGroupSessionSubsystemGetQueue
+0x1a70be6f8  __TEXT,__text  _MRGroupSessionTokenCreateWithInvitationData
+0x1a7166f38  __TEXT,__const  _MRGroupSessionTokenVersion
+0x1a70d484c  __TEXT,__text  _MRGroupTopologyModificationRequestProtocolSelectionBehaviorDescription
+0x1a70d4874  __TEXT,__text  _MRGroupTopologyModificationRequestProtocolSelectionBehaviorFromDescription
+0x1a70d4080  __TEXT,__text  _MRGroupTopologyModificationRequestTypeDescription
+0x1a70545f8  __TEXT,__text  _MRHIDButtonEventCopyDescription
+0x1a7054580  __TEXT,__text  _MRHIDTouchEventCopyDescription
+0x1a7054560  __TEXT,__text  _MRHIDTouchPhaseCopyDescription
+0x1e0f8c0e0  __DATA_CONST,__const  _MRIDSCompanionConnectionDeviceDidConnect
+0x1e0f8c0d8  __DATA_CONST,__const  _MRIDSCompanionConnectionDeviceDidDisconnect
+0x1e0f8c0d0  __DATA_CONST,__const  _MRIDSServiceMessageExternalDeviceConnectOptionsUserInfoKey
+0x1e0f8c0c8  __DATA_CONST,__const  _MRIDSServiceMessageTypeConnectRemoteControl
+0x1e0f8c0c0  __DATA_CONST,__const  _MRIDSServiceMessageTypeDisconnectRemoteControl
+0x1e0f8c0b8  __DATA_CONST,__const  _MRIDSServiceMessageTypeDiscovery
+0x1e0f8c0b0  __DATA_CONST,__const  _MRIDSServiceMessageTypeProtobuf
+0x1e0f8c0a8  __DATA_CONST,__const  _MRIDSServiceMessageTypeRemoteControl
+0x1e0f8c0a0  __DATA_CONST,__const  _MRIDSServiceMessageTypeResetConnection
+0x1a70b6aac  __TEXT,__text  _MRIRRouteBuiltInSpeakerIdentifier
+0x1e0f8c098  __DATA_CONST,__const  _MRIRRouteDeviceSpeakerRoute
+0x1e0f8c090  __DATA_CONST,__const  _MRIRServiceTokenIdentifier
+0x1a6fe37f8  __TEXT,__text  _MRIdentityRepresentationForParticipantItem
+0x1e0f8c088  __DATA_CONST,__const  _MRImageUtilitiesError
+0x1a701d8f0  __TEXT,__text  _MRInvalidateTransactions
+0x1a701de80  __TEXT,__text  _MRIsObjectOfClass
+0x1a7035488  __TEXT,__text  _MRLanguageOptionCopyCharacteristics
+0x1a70354c0  __TEXT,__text  _MRLanguageOptionCopyDisplayName
+0x1a70354f8  __TEXT,__text  _MRLanguageOptionCopyIdentifier
+0x1a7035450  __TEXT,__text  _MRLanguageOptionCopyLanguageTag
+0x1a70352ec  __TEXT,__text  _MRLanguageOptionCreate
+0x1a7035378  __TEXT,__text  _MRLanguageOptionCreateAutomaticLanguageOptionForType
+0x1a703555c  __TEXT,__text  _MRLanguageOptionCreateExternalRepresentation
+0x1a70355a4  __TEXT,__text  _MRLanguageOptionCreateFromExternalRepresentation
+0x1a703544c  __TEXT,__text  _MRLanguageOptionGetType
+0x1a703593c  __TEXT,__text  _MRLanguageOptionGroupCopyLanguageOptions
+0x1a70358d8  __TEXT,__text  _MRLanguageOptionGroupCreate
+0x1a70359a8  __TEXT,__text  _MRLanguageOptionGroupCreateExternalRepresentation
+0x1a70359f0  __TEXT,__text  _MRLanguageOptionGroupCreateFromExternalRepresentation
+0x1a70359a4  __TEXT,__text  _MRLanguageOptionGroupGetAllowEmptySelection
+0x1a7035974  __TEXT,__text  _MRLanguageOptionGroupGetDefaultLanguageOption
+0x1a70359cc  __TEXT,__text  _MRLanguageOptionGroupsCreateExternalRepresentation
+0x1a7035bb8  __TEXT,__text  _MRLanguageOptionGroupsCreateFromExternalRepresentation
+0x1a7035394  __TEXT,__text  _MRLanguageOptionIsAutomaticLanguageOptionForType
+0x1a7035d24  __TEXT,__text  _MRLanguageOptionIsEqualToLanguageOption
+0x1a7035530  __TEXT,__text  _MRLanguageOptionTypeCopyDescription
+0x1a7035580  __TEXT,__text  _MRLanguageOptionsCreateExternalRepresentation
+0x1a703576c  __TEXT,__text  _MRLanguageOptionsCreateFromExternalRepresentation
+0x1e0f8c080  __DATA_CONST,__const  _MRLocalGroupSessionInfoDidChangeNotification
+0x1e0f8c078  __DATA_CONST,__const  _MRLocalGroupSessionInfoUserInfoKey
+0x1a6eca0dc  __TEXT,__text  _MRLocalizedString
+0x1a6ecaf28  __TEXT,__text  _MRLocalizedStringFromTable
+0x1a6fe2db0  __TEXT,__text  _MRLocalizedStringWithFormat
+0x1a6e64160  __TEXT,__text  _MRLogCategoryConnections
+0x1a6e51298  __TEXT,__text  _MRLogCategoryDiscovery
+0x1a6e616c0  __TEXT,__text  _MRLogCategoryDiscoveryOversize
+0x1a6e6455c  __TEXT,__text  _MRLogCategoryDiscoveryUpdates
+0x1a6ec8328  __TEXT,__text  _MRLogCategoryMediaControl
+0x1a6eeac54  __TEXT,__text  _MRLogCategoryMigrationOversize
+0x1a6e95fe4  __TEXT,__text  _MRLogCategoryOutputContextUpdates
+0x1a70daf74  __TEXT,__text  _MRLyricsEventCreateBegin
+0x1a70dafd0  __TEXT,__text  _MRLyricsEventCreateEnd
+0x1a70db0c4  __TEXT,__text  _MRLyricsEventCreateExternalRepresentation
+0x1a70db0e0  __TEXT,__text  _MRLyricsEventCreateFromExternalRepresentation
+0x1a702a848  __TEXT,__text  _MRLyricsEventGetEndDate
+0x1a702a818  __TEXT,__text  _MRLyricsEventGetStartDate
+0x1a70db094  __TEXT,__text  _MRLyricsEventGetToken
+0x1a70dad28  __TEXT,__text  _MRLyricsItemCreate
+0x1a70dad8c  __TEXT,__text  _MRLyricsItemGetLyrics
+0x1a70dadc0  __TEXT,__text  _MRLyricsItemGetToken
+0x1a70dadbc  __TEXT,__text  _MRLyricsItemIsUserProvided
+0x1a70dadf0  __TEXT,__text  _MRLyricsItemTokenCreate
+0x1a70db044  __TEXT,__text  _MRLyricsItemTokenCreateExternalRepresentation
+0x1a70db060  __TEXT,__text  _MRLyricsItemTokenCreateFromExternalRepresentation
+0x1a70dae58  __TEXT,__text  _MRLyricsItemTokenCreateWithData
+0x1a70daeac  __TEXT,__text  _MRLyricsItemTokenGetIdentifier
+0x1a70daedc  __TEXT,__text  _MRLyricsItemTokenGetUserInfo
+0x1a701cf38  __TEXT,__text  _MRMediaRemoteAVOutputDeviceIsLocalForAirPlay
+0x1a6ec81b0  __TEXT,__text  _MRMediaRemoteActiveEndpointChangeTypeCopyDescription
+0x1a7049c04  __TEXT,__text  _MRMediaRemoteActiveEndpointOperationCopyDescription
+0x1a6e702c0  __TEXT,__text  _MRMediaRemoteActiveEndpointTypeCopyDescription
+0x1a6ff321c  __TEXT,__text  _MRMediaRemoteAddAsyncCommandHandlerBlock
+0x1a6ff3228  __TEXT,__text  _MRMediaRemoteAddAsyncCommandHandlerBlockForOrigin
+0x1a6ff3088  __TEXT,__text  _MRMediaRemoteAddAsyncCommandHandlerBlockForPlayer
+0x1a6ff2f24  __TEXT,__text  _MRMediaRemoteAddCommandHandlerBlock
+0x1a6ff2f80  __TEXT,__text  _MRMediaRemoteAddCommandHandlerBlockForOrigin
+0x1a6ff2fec  __TEXT,__text  _MRMediaRemoteAddCommandHandlerBlockForPlayer
+0x1a6ff2ac0  __TEXT,__text  _MRMediaRemoteAddCommandHandlerForPlayer
+0x1a6e843dc  __TEXT,__text  _MRMediaRemoteAddPlayerPathInvalidationHandler
+0x1a701cf84  __TEXT,__text  _MRMediaRemoteAddVirtualOutputDevice
+0x1a7101af0  __TEXT,__text  _MRMediaRemoteAdjustMediaPlaybackVolume
+0x1a7101a54  __TEXT,__text  _MRMediaRemoteAdjustMediaPlaybackVolumeWithAdjustment
+0x1a6e9b45c  __TEXT,__text  _MRMediaRemoteAirPlayReceiverCopyAirPlayGroupIdentity
+0x1a701ca04  __TEXT,__text  _MRMediaRemoteAirPlayReceiverCopyAirPlayLeaderInfoData
+0x1a701ca0c  __TEXT,__text  _MRMediaRemoteAirPlayReceiverCopyAuthorizationString
+0x1a6e9b410  __TEXT,__text  _MRMediaRemoteAirPlayReceiverCopyGroupIdentity
+0x1a6e97ee0  __TEXT,__text  _MRMediaRemoteAirPlayReceiverCopyPairingIdentity
+0x1a6e980d4  __TEXT,__text  _MRMediaRemoteAirPlayReceiverGetIsGroupLeader
+0x1a6e81a74  __TEXT,__text  _MRMediaRemoteApplicationIsAirPlayReceiver
+0x1a6ecf800  __TEXT,__text  _MRMediaRemoteApplicationIsSystemAppleTVApplication
+0x1a70307e0  __TEXT,__text  _MRMediaRemoteApplicationIsSystemApplication
+0x1a6e819f4  __TEXT,__text  _MRMediaRemoteApplicationIsSystemBooksApplication
+0x1a7030674  __TEXT,__text  _MRMediaRemoteApplicationIsSystemClassicalRoomApplication
+0x1a6e34f08  __TEXT,__text  _MRMediaRemoteApplicationIsSystemMediaApplication
+0x1a6e353d4  __TEXT,__text  _MRMediaRemoteApplicationIsSystemPodcastApplication
+0x1a7055b9c  __TEXT,__text  _MRMediaRemoteApplicationSupportsBrowsableContent
+0x1a7055d5c  __TEXT,__text  _MRMediaRemoteApplicationSupportsImmediatePlayback
+0x1a7055d1c  __TEXT,__text  _MRMediaRemoteApplicationSupportsSectionedBrowsing
+0x1a7055d9c  __TEXT,__text  _MRMediaRemoteBeginLoadingBrowsableContent
+0x1a6fc212c  __TEXT,__text  _MRMediaRemoteBroadcastCommand
+0x1a7055f78  __TEXT,__text  _MRMediaRemoteBrowsableContentGetNowPlayingContentIdentifiers
+0x1a70563dc  __TEXT,__text  _MRMediaRemoteBrowsableContentSupportsPlaybackProgress
+0x1a6eca0e8  __TEXT,__text  _MRMediaRemoteBundle
+0x1a6eef9d4  __TEXT,__text  _MRMediaRemoteCanBecomeActivePlayer
+0x1a7101504  __TEXT,__text  _MRMediaRemoteClearAllAVRoutePasswords
+0x1a6efda14  __TEXT,__text  _MRMediaRemoteClearDefaultSupportedCommandsForApp
+0x1a70ecf38  __TEXT,__text  _MRMediaRemoteCollectClientDiagnostics
+0x1a70ecee4  __TEXT,__text  _MRMediaRemoteCollectDiagnostic
+0x1a6f4f668  __TEXT,__text  _MRMediaRemoteCommandCreateDescription
+0x1a6f4f2a4  __TEXT,__text  _MRMediaRemoteCommandCreateExternalRepresentation
+0x1a6f4f338  __TEXT,__text  _MRMediaRemoteCommandFromExternalRepresentation
+0x1a7022dd8  __TEXT,__text  _MRMediaRemoteCommandFromProtobuf
+0x1a701abf4  __TEXT,__text  _MRMediaRemoteCommandInfoCopyOptions
+0x1a701ad54  __TEXT,__text  _MRMediaRemoteCommandInfoCopySupportedCommandsWithPredicate
+0x1a6e80848  __TEXT,__text  _MRMediaRemoteCommandInfoCopyValueForKey
+0x1a701af90  __TEXT,__text  _MRMediaRemoteCommandInfoCreate
+0x1a701afd0  __TEXT,__text  _MRMediaRemoteCommandInfoCreateExternalRepresentation
+0x1a701af9c  __TEXT,__text  _MRMediaRemoteCommandInfoCreateFromExternalRepresentation
+0x1a701ac38  __TEXT,__text  _MRMediaRemoteCommandInfoEnumerateSupportedCommandsWithHandler
+0x1a701ac18  __TEXT,__text  _MRMediaRemoteCommandInfoGetBooleanValueForKey
+0x1a701abc4  __TEXT,__text  _MRMediaRemoteCommandInfoGetCommand
+0x1a701abdc  __TEXT,__text  _MRMediaRemoteCommandInfoGetEnabled
+0x1a6e7f95c  __TEXT,__text  _MRMediaRemoteCommandInfoGetIntegerValueForKey
+0x1a701abc8  __TEXT,__text  _MRMediaRemoteCommandInfoSetCommand
+0x1a701abd0  __TEXT,__text  _MRMediaRemoteCommandInfoSetEnabled
+0x1a701ac10  __TEXT,__text  _MRMediaRemoteCommandInfoSetOptions
+0x1a701ae74  __TEXT,__text  _MRMediaRemoteCommandInfoSupportedCommandIsEnabled
+0x1a6f4f3e0  __TEXT,__text  _MRMediaRemoteCommandIsContextual
+0x1a6f4f400  __TEXT,__text  _MRMediaRemoteCommandIsLegacy
+0x1a6f4f3f0  __TEXT,__text  _MRMediaRemoteCommandIsNavigational
+0x1a7023080  __TEXT,__text  _MRMediaRemoteCommandOptionsFromProtobuf
+0x1a7022ff0  __TEXT,__text  _MRMediaRemoteCommandOptionsToProtobuf
+0x1a6f4f45c  __TEXT,__text  _MRMediaRemoteCommandRequiresDestinationPositionOption
+0x1a6f4f478  __TEXT,__text  _MRMediaRemoteCommandRequiresNowPlayingItemValidation
+0x1a6f4f468  __TEXT,__text  _MRMediaRemoteCommandRequiresOptions
+0x1a6f4f44c  __TEXT,__text  _MRMediaRemoteCommandRequiresSourcePositionOption
+0x1a6f92388  __TEXT,__text  _MRMediaRemoteCommandSupportsAttribution
+0x1a7022bc8  __TEXT,__text  _MRMediaRemoteCommandToProtobuf
+0x1a7102210  __TEXT,__text  _MRMediaRemoteCompletePairingHandler
+0x1a701c8e8  __TEXT,__text  _MRMediaRemoteCopyAirPlayGroupUID
+0x1a701bbf0  __TEXT,__text  _MRMediaRemoteCopyApplicationEntitlements
+0x1a7058098  __TEXT,__text  _MRMediaRemoteCopyBrowsableContentAPIMaskDescription
+0x1a7002264  __TEXT,__text  _MRMediaRemoteCopyCachedDeviceInfo
+0x1a6ef324c  __TEXT,__text  _MRMediaRemoteCopyClientVisibilityDescription
+0x1a6e80498  __TEXT,__text  _MRMediaRemoteCopyCommandDescription
+0x1a6f4ef54  __TEXT,__text  _MRMediaRemoteCopyCommandHandlerStatusDescription
+0x1a6f4f488  __TEXT,__text  _MRMediaRemoteCopyCommandHandlerStatusesDescription
+0x1a6f4ee0c  __TEXT,__text  _MRMediaRemoteCopyCommandsDescription
+0x1a700228c  __TEXT,__text  _MRMediaRemoteCopyDeviceInfo
+0x1a6e7a810  __TEXT,__text  _MRMediaRemoteCopyDeviceUID
+0x1a6f4f270  __TEXT,__text  _MRMediaRemoteCopyDisabledReasonDescription
+0x1a6e4535c  __TEXT,__text  _MRMediaRemoteCopyEntitlements
+0x1a701c64c  __TEXT,__text  _MRMediaRemoteCopyGroupUID
+0x1a6f4f238  __TEXT,__text  _MRMediaRemoteCopyHardwareRemoteBehaviorDescription
+0x1a6e97ed8  __TEXT,__text  _MRMediaRemoteCopyLocalAirPlayGroupName
+0x1a6e98020  __TEXT,__text  _MRMediaRemoteCopyLocalAirPlayReceiverClusterType
+0x1a6e97e78  __TEXT,__text  _MRMediaRemoteCopyLocalAirPlayReceiverTightSyncIdentity
+0x1a6e97e88  __TEXT,__text  _MRMediaRemoteCopyLocalAirPlaySenderDefaultGroupIdentity
+0x1a6e97ee8  __TEXT,__text  _MRMediaRemoteCopyLocalClusterID
+0x1a6e97f84  __TEXT,__text  _MRMediaRemoteCopyLocalClusterLeaderIdentity
+0x1a6e6e690  __TEXT,__text  _MRMediaRemoteCopyLocalDeviceAirPlayReceiverBundleID
+0x1a6e9816c  __TEXT,__text  _MRMediaRemoteCopyLocalDeviceAirPlayReceiverDisplayID
+0x1a7030844  __TEXT,__text  _MRMediaRemoteCopyLocalDeviceSystemAppleTVApplicationDisplayID
+0x1a6e980bc  __TEXT,__text  _MRMediaRemoteCopyLocalDeviceSystemBooksApplicationDisplayID
+0x1a703082c  __TEXT,__text  _MRMediaRemoteCopyLocalDeviceSystemClassicalRoomApplicationDisplayID
+0x1a6e55564  __TEXT,__text  _MRMediaRemoteCopyLocalDeviceSystemMediaApplicationDisplayID
+0x1a6e348b4  __TEXT,__text  _MRMediaRemoteCopyLocalDeviceSystemPodcastApplicationDisplayID
+0x1a7030a0c  __TEXT,__text  _MRMediaRemoteCopyLocalizedDisplayID
+0x1a6ef2dd4  __TEXT,__text  _MRMediaRemoteCopyNowPlayingNotifications
+0x1a6ef1a54  __TEXT,__text  _MRMediaRemoteCopyNowPlayingVisibilityDescription
+0x1a6efcf90  __TEXT,__text  _MRMediaRemoteCopyPendingCommands
+0x1a6e4b4b0  __TEXT,__text  _MRMediaRemoteCopyPickableRoutes
+0x1a6e4d47c  __TEXT,__text  _MRMediaRemoteCopyPickableRoutesForCategory
+0x1a7100c88  __TEXT,__text  _MRMediaRemoteCopyPickableRoutesForCategory_Async
+0x1a7100c78  __TEXT,__text  _MRMediaRemoteCopyPickableRoutes_Async
+0x1a6fd3d28  __TEXT,__text  _MRMediaRemoteCopyPlaybackQueueInsertionPositionDescription
+0x1a6e47a98  __TEXT,__text  _MRMediaRemoteCopyPlaybackStateDescription
+0x1a701d0e0  __TEXT,__text  _MRMediaRemoteCopyReadableDictionaryDescription
+0x1a6f4f204  __TEXT,__text  _MRMediaRemoteCopyRepeatModeDescription
+0x1a6e538cc  __TEXT,__text  _MRMediaRemoteCopyRouteDiscoveryModeDescription
+0x1a6f4f12c  __TEXT,__text  _MRMediaRemoteCopySendCommandErrorDescription
+0x1a701ce0c  __TEXT,__text  _MRMediaRemoteCopySenderDefaultGroupUID
+0x1a7102120  __TEXT,__text  _MRMediaRemoteCopySetPickedRouteOptionsDescription
+0x1a6f4f1d0  __TEXT,__text  _MRMediaRemoteCopyShuffleModeDescription
+0x1a6efc5e4  __TEXT,__text  _MRMediaRemoteCopySupportedCommands
+0x1a6efc5f4  __TEXT,__text  _MRMediaRemoteCopySupportedCommandsForOrigin
+0x1a6ed3aac  __TEXT,__text  _MRMediaRemoteCopySystemMediaApplicationDefaultSetPlaybackQueueCommandOptions
+0x1a6ed391c  __TEXT,__text  _MRMediaRemoteCopySystemMediaApplicationDefaultSupportedCommands
+0x1a701cfc8  __TEXT,__text  _MRMediaRemoteCopyVirtualOutputDevices
+0x1a6e9b224  __TEXT,__text  _MRMediaRemoteCreateError
+0x1a701b1fc  __TEXT,__text  _MRMediaRemoteCreateErrorExternalRepresentation
+0x1a701b488  __TEXT,__text  _MRMediaRemoteCreateErrorFromExternalRepresentation
+0x1a6ec7bdc  __TEXT,__text  _MRMediaRemoteCreateErrorWithDescription
+0x1a6e885dc  __TEXT,__text  _MRMediaRemoteCreateErrorWithUserInfo
+0x1a70308b8  __TEXT,__text  _MRMediaRemoteCurrentApplicationIsAirPlayReceiver
+0x1e0f8c070  __DATA_CONST,__const  _MRMediaRemoteDidUnregisterForNowPlayingNotification
+0x1a6f91a14  __TEXT,__text  _MRMediaRemoteDismissMediaControlsCommand
+0x1a6e53a1c  __TEXT,__text  _MRMediaRemoteEndpointFeaturesDescription
+0x1a701bbe0  __TEXT,__text  _MRMediaRemoteErrorCodeIsInformational
+0x1a6e7a64c  __TEXT,__text  _MRMediaRemoteErrorCopyDescription
+0x1a6f4f7dc  __TEXT,__text  _MRMediaRemoteErrorFromCommandStatuses
+0x1a701bb58  __TEXT,__text  _MRMediaRemoteErrorIsInformational
+0x1a7100eec  __TEXT,__text  _MRMediaRemoteFindAndPickRoute
+0x1a7058cb0  __TEXT,__text  _MRMediaRemoteFinishedPlaybackInitialization
+0x1a6e82718  __TEXT,__text  _MRMediaRemoteGetActiveOrigin
+0x1a6eefff8  __TEXT,__text  _MRMediaRemoteGetActivePlayerPathsForOrigin
+0x1a6fbddec  __TEXT,__text  _MRMediaRemoteGetAnyApplicationIsPlaying
+0x1a6fbdd60  __TEXT,__text  _MRMediaRemoteGetAnyApplicationIsPlayingForOrigin
+0x1a70581dc  __TEXT,__text  _MRMediaRemoteGetAppsSupportingBrowsableContentAPIs
+0x1a710ab18  __TEXT,__text  _MRMediaRemoteGetAvailableOrigins
+0x1a7056e1c  __TEXT,__text  _MRMediaRemoteGetBrowsableContentChildItems
+0x1a6ef040c  __TEXT,__text  _MRMediaRemoteGetClientProperties
+0x1a70574b0  __TEXT,__text  _MRMediaRemoteGetContentItemsForIdentifiers
+0x1a70568fc  __TEXT,__text  _MRMediaRemoteGetCountOfBrowsableContentChildItems
+0x1a704c0b8  __TEXT,__text  _MRMediaRemoteGetDefaultNowPlayingPlayer
+0x1a70021a0  __TEXT,__text  _MRMediaRemoteGetDeviceInfo
+0x1a701c4b8  __TEXT,__text  _MRMediaRemoteGetDeviceUIDWithRetryIntervals
+0x1a6ef2320  __TEXT,__text  _MRMediaRemoteGetElectedPlayerPath
+0x1a71013cc  __TEXT,__text  _MRMediaRemoteGetExternalScreenType
+0x1a701cf30  __TEXT,__text  _MRMediaRemoteGetIsAirPlayActive
+0x1a701cb8c  __TEXT,__text  _MRMediaRemoteGetIsGroupLeader
+0x1a6ef2b48  __TEXT,__text  _MRMediaRemoteGetLiveAppEntityDonationsEnabled
+0x1a6e9b31c  __TEXT,__text  _MRMediaRemoteGetLocalClusterSize
+0x1a71015d0  __TEXT,__text  _MRMediaRemoteGetLocalDeviceIsGroupLeader
+0x1a6e98174  __TEXT,__text  _MRMediaRemoteGetLocalGroupContainsDiscoverableGroupLeader
+0x1a6e97e80  __TEXT,__text  _MRMediaRemoteGetLocalIsProxyGroupPlayer
+0x1a704c080  __TEXT,__text  _MRMediaRemoteGetLocalNowPlayingClient
+0x1a704c0f0  __TEXT,__text  _MRMediaRemoteGetLocalNowPlayingPlayerPath
+0x1a710aa50  __TEXT,__text  _MRMediaRemoteGetLocalOrigin
+0x1a7101578  __TEXT,__text  _MRMediaRemoteGetLocalReceiverGroupingIdentity
+0x1a7101574  __TEXT,__text  _MRMediaRemoteGetLocalReceiverPairingIdentity
+0x1a71010c8  __TEXT,__text  _MRMediaRemoteGetLocalVolumeControlCapabilities
+0x1a6ef2b9c  __TEXT,__text  _MRMediaRemoteGetMediaAppIsInstalled
+0x1a6e48bc8  __TEXT,__text  _MRMediaRemoteGetMediaPlaybackVolume
+0x1a6fbda20  __TEXT,__text  _MRMediaRemoteGetNowPlayingApplicationDisplayID
+0x1a6fbda0c  __TEXT,__text  _MRMediaRemoteGetNowPlayingApplicationDisplayIDForOrigin
+0x1a6fbdc4c  __TEXT,__text  _MRMediaRemoteGetNowPlayingApplicationDisplayName
+0x1a6fbdd50  __TEXT,__text  _MRMediaRemoteGetNowPlayingApplicationIsPlaying
+0x1a6fbdb28  __TEXT,__text  _MRMediaRemoteGetNowPlayingApplicationPID
+0x1a6e8141c  __TEXT,__text  _MRMediaRemoteGetNowPlayingApplicationPlaybackState
+0x1a6ed36d8  __TEXT,__text  _MRMediaRemoteGetNowPlayingApplicationPlaybackStateForOrigin
+0x1a6fbdfd8  __TEXT,__text  _MRMediaRemoteGetNowPlayingArtwork
+0x1a6e883e4  __TEXT,__text  _MRMediaRemoteGetNowPlayingClient
+0x1a6e88618  __TEXT,__text  _MRMediaRemoteGetNowPlayingClientForOrigin
+0x1a6ef0060  __TEXT,__text  _MRMediaRemoteGetNowPlayingClients
+0x1a6ef00e0  __TEXT,__text  _MRMediaRemoteGetNowPlayingClientsForOrigin
+0x1a6fbdfc8  __TEXT,__text  _MRMediaRemoteGetNowPlayingInfo
+0x1a6fbe1c8  __TEXT,__text  _MRMediaRemoteGetNowPlayingInfoForApp
+0x1a6e957e0  __TEXT,__text  _MRMediaRemoteGetNowPlayingInfoForClient
+0x1a6fbde7c  __TEXT,__text  _MRMediaRemoteGetNowPlayingInfoForOrigin
+0x1a6e95878  __TEXT,__text  _MRMediaRemoteGetNowPlayingInfoForPlayer
+0x1a6e97b68  __TEXT,__text  _MRMediaRemoteGetNowPlayingInfoWithOptionalArtwork
+0x1a6eeff40  __TEXT,__text  _MRMediaRemoteGetNowPlayingPlayer
+0x1a6eeff54  __TEXT,__text  _MRMediaRemoteGetNowPlayingPlayerForClient
+0x1a6e9817c  __TEXT,__text  _MRMediaRemoteGetParentGroupContainsDiscoverableGroupLeader
+0x1a7100f90  __TEXT,__text  _MRMediaRemoteGetPickedRouteHasVolumeControl
+0x1a7101004  __TEXT,__text  _MRMediaRemoteGetPickedRouteHasVolumeControlForOrigin
+0x1a6e4a62c  __TEXT,__text  _MRMediaRemoteGetPickedRoutedVolumeControlCapabilities
+0x1a6eef774  __TEXT,__text  _MRMediaRemoteGetPictureInPictureStatusForPlayer
+0x1a6e81430  __TEXT,__text  _MRMediaRemoteGetPlaybackStateForClient
+0x1a6e6f868  __TEXT,__text  _MRMediaRemoteGetPlaybackStateForPlayer
+0x1a6eefb18  __TEXT,__text  _MRMediaRemoteGetPlayerPathForMXSessionIDFromLocalClient
+0x1a6ef1a80  __TEXT,__text  _MRMediaRemoteGetPlayerProperties
+0x1a6ef027c  __TEXT,__text  _MRMediaRemoteGetPlayers
+0x1a6ef0290  __TEXT,__text  _MRMediaRemoteGetPlayersForClient
+0x1a6ef23f0  __TEXT,__text  _MRMediaRemoteGetProactiveRecommendedPlayer
+0x1a6efc2c4  __TEXT,__text  _MRMediaRemoteGetProxiableSupportedCommandsForPlayer
+0x1a710157c  __TEXT,__text  _MRMediaRemoteGetReceiverAirPlaySecuritySettings
+0x1a7101420  __TEXT,__text  _MRMediaRemoteGetSavedAVRoutePassword
+0x1a7057b34  __TEXT,__text  _MRMediaRemoteGetSupportedBrowsableContentAPIs
+0x1a6efc0e0  __TEXT,__text  _MRMediaRemoteGetSupportedCommands
+0x1a6efc0f4  __TEXT,__text  _MRMediaRemoteGetSupportedCommandsForApp
+0x1a6efc194  __TEXT,__text  _MRMediaRemoteGetSupportedCommandsForClient
+0x1a6efc180  __TEXT,__text  _MRMediaRemoteGetSupportedCommandsForOrigin
+0x1a6e6f40c  __TEXT,__text  _MRMediaRemoteGetSupportedCommandsForPlayer
+0x1a6efc454  __TEXT,__text  _MRMediaRemoteGetSyncableSupportedCommandsForPlayer
+0x1a6e4a984  __TEXT,__text  _MRMediaRemoteGetSystemVolumeMuted
+0x1a7055ed8  __TEXT,__text  _MRMediaRemoteIndexPathCopyDescription
+0x1a70ee7d8  __TEXT,__text  _MRMediaRemoteInsertSystemAppPlaybackQueue
+0x1a70ee878  __TEXT,__text  _MRMediaRemoteInsertSystemAppPlaybackQueueForApp
+0x1a70eea20  __TEXT,__text  _MRMediaRemoteInsertSystemAppPlaybackQueueForPlayer
+0x1a70ee948  __TEXT,__text  _MRMediaRemoteInsertSystemAppPlaybackQueueWithOptions
+0x1a7058828  __TEXT,__text  _MRMediaRemoteInvalidateBrowsableContent
+0x1a6ef2c14  __TEXT,__text  _MRMediaRemoteIsBooksAppInstalled
+0x1a6e980b0  __TEXT,__text  _MRMediaRemoteIsClusterLeader
+0x1a6ef2c4c  __TEXT,__text  _MRMediaRemoteIsMediaAppInstalled
+0x1a6ef2c30  __TEXT,__text  _MRMediaRemoteIsMusicAppInstalled
+0x1e0f8c068  __DATA_CONST,__const  _MRMediaRemoteLockScreenControlsDidChangeDistributedNotification
+0x1a7101dfc  __TEXT,__text  _MRMediaRemoteMuteSystemVolume
+0x1a6ef3490  __TEXT,__text  _MRMediaRemoteNowPlayingBless
+0x1a704c534  __TEXT,__text  _MRMediaRemoteNowPlayingCopyResolvedPlayerPath
+0x1a704bb60  __TEXT,__text  _MRMediaRemoteNowPlayingGetResolvedPlayerPathIsLocal
+0x1a704bd44  __TEXT,__text  _MRMediaRemoteNowPlayingGetResolvedPlayerPathIsLocalSync
+0x1a701b65c  __TEXT,__text  _MRMediaRemoteNowPlayingInfoIsEmpty
+0x1a701b5cc  __TEXT,__text  _MRMediaRemoteNowPlayingInfoIsEqual
+0x1a6ec7db8  __TEXT,__text  _MRMediaRemoteNowPlayingPing
+0x1a700886c  __TEXT,__text  _MRMediaRemoteNowPlayingPlaybackQueueContentItemsChanged
+0x1a6e883f4  __TEXT,__text  _MRMediaRemoteNowPlayingPlayerPathCreateError
+0x1a6e6e3ac  __TEXT,__text  _MRMediaRemoteNowPlayingResolvePlayerPath
+0x1a6e53dc0  __TEXT,__text  _MRMediaRemoteNowPlayingResolvePlayerPathWithID
+0x1a6ef34ac  __TEXT,__text  _MRMediaRemoteNowPlayingWakePlayerServiceProcess
+0x1e0f8c060  __DATA_CONST,__const  _MRMediaRemoteOptionPrepareForSetQueueProactiveReasonType
+0x1e0f8c058  __DATA_CONST,__const  _MRMediaRemoteOptionSystemAppPlaybackQueue
+0x1a6e98184  __TEXT,__text  _MRMediaRemoteParentGroupSupportsGroupCohesion
+0x1a6e501a4  __TEXT,__text  _MRMediaRemotePickedRouteVolumeControlCapabilitiesCopyDescription
+0x1e0f8c050  __DATA_CONST,__const  _MRMediaRemotePickedRouteVolumeMutedDidChangeNotification
+0x1a6fd7244  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddContentItemArtworkCallback
+0x1a6e40964  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddContentItemArtworkCallbackForPlayer
+0x1a6fd7458  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddContentItemAvailableArtworkFormatsCallback
+0x1a6fd7364  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddContentItemAvailableArtworkFormatsCallbackForPlayer
+0x1a6fd72d4  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddContentItemFormattedArtworkCallback
+0x1a6e40a58  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddContentItemFormattedArtworkCallbackForPlayer
+0x1a6fd7094  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddContentItemInfoCallback
+0x1a6e3ff00  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddContentItemInfoCallbackForPlayer
+0x1a6fd6e40  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddContentItemLanguageOptionsCallback
+0x1a6fd6ed0  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddContentItemLanguageOptionsCallbackForPlayer
+0x1a6fd71b4  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddContentItemLyricsCallback
+0x1a6e40b4c  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddContentItemLyricsCallbackForPlayer
+0x1a6fd6db0  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddContentItemMetadataCallback
+0x1a6e40870  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddContentItemMetadataCallbackForPlayer
+0x1a6fd7124  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddContentItemTranscriptAlignmentsCallback
+0x1a6e3fff4  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddContentItemTranscriptAlignmentsCallbackForPlayer
+0x1a6fd6d20  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddCreateChildContentItemCallback
+0x1a6e4077c  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddCreateChildContentItemCallbackForPlayer
+0x1a6fd6b5c  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddCreateContentItemCallback
+0x1a6fd6bec  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddCreateContentItemCallbackForPlayer
+0x1a6e40598  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddCreateContentItemForIdentifierCallbackForPlayer
+0x1a6fd6fc4  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddCreateParticipantsCallback
+0x1a6fd702c  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddCreateParticipantsCallbackForPlayer
+0x1a6fd6acc  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddCreatePlaybackQueueForRequestCallback
+0x1a6e3f804  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceAddCreatePlaybackQueueForRequestCallbackForPlayer
+0x1a7008794  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceContentItemChanged
+0x1a7008990  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceContentItemChangedForPlayer
+0x1a7008a08  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceContentItemChangedWithRequest
+0x1a7008c84  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceContentItemChangedWithRequestForPlayer
+0x1a700880c  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceContentItemsChanged
+0x1a7008870  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceContentItemsChangedForPlayer
+0x1a7008a88  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceContentItemsChangedWithRequest
+0x1a7008af8  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceContentItemsChangedWithRequestForPlayer
+0x1a702de60  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceInvalidate
+0x1a702deb4  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceInvalidateForPlayer
+0x1a702df14  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceInvalidateWithNowPlayingContentItemForPlayer
+0x1a702dfe8  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceInvalidateWithPlaybackQueueForPlayer
+0x1a6fd74e8  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceRemoveCallback
+0x1a6fd7540  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceRemoveCallbackForPlayer
+0x1a7008550  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceSendContentItemsChangedForPlayer
+0x1a6fd68e0  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceSetRequestCallback
+0x1a6e406cc  __TEXT,__text  _MRMediaRemotePlaybackQueueDataSourceSourceAddCallbackToList
+0x1a6ed617c  __TEXT,__text  _MRMediaRemotePlaybackQueueResetRequestsWithDataForPlayer
+0x1a7025104  __TEXT,__text  _MRMediaRemotePlaybackQueueTypeFromProtobuf
+0x1a70250e0  __TEXT,__text  _MRMediaRemotePlaybackQueueTypeToProtobuf
+0x1a6f67258  __TEXT,__text  _MRMediaRemotePlaybackSessionIsMigrationPossible
+0x1a6f64a98  __TEXT,__text  _MRMediaRemotePlaybackSessionIsMigrationPossibleForPlayer
+0x1a6f76538  __TEXT,__text  _MRMediaRemotePlaybackSessionMigrateEndpointOptionsCopyDescription
+0x1a6f765fc  __TEXT,__text  _MRMediaRemotePlaybackSessionMigrateEndpointOptionsGetDefault
+0x1a6f63914  __TEXT,__text  _MRMediaRemotePlaybackSessionMigrateForDevice
+0x1a6f64758  __TEXT,__text  _MRMediaRemotePlaybackSessionMigrateForOriginWithRequest
+0x1a6f6469c  __TEXT,__text  _MRMediaRemotePlaybackSessionMigrateFromOriginToOrigin
+0x1a6f7647c  __TEXT,__text  _MRMediaRemotePlaybackSessionMigratePlayerOptionsCopyDescription
+0x1a6f765f4  __TEXT,__text  _MRMediaRemotePlaybackSessionMigratePlayerOptionsGetDefault
+0x1a6fb9ddc  __TEXT,__text  _MRMediaRemotePlaybackSessionRequest
+0x1a6fb94ec  __TEXT,__text  _MRMediaRemotePlaybackSessionRequestWithResponse
+0x1a6ee367c  __TEXT,__text  _MRMediaRemotePlaybackSessionSetMigrateBeginCallback
+0x1a6ee3708  __TEXT,__text  _MRMediaRemotePlaybackSessionSetMigrateBeginCallbackForOrigin
+0x1a6ee3790  __TEXT,__text  _MRMediaRemotePlaybackSessionSetMigrateEndCallback
+0x1a6ee381c  __TEXT,__text  _MRMediaRemotePlaybackSessionSetMigrateEndCallbackForOrigin
+0x1a6ee3898  __TEXT,__text  _MRMediaRemotePlaybackSessionSetMigrateFinalizeCallback
+0x1a6ee3930  __TEXT,__text  _MRMediaRemotePlaybackSessionSetMigrateFinalizeCallbackForOrigin
+0x1a6ee39b8  __TEXT,__text  _MRMediaRemotePlaybackSessionSetMigratePostCallback
+0x1a6ee3a50  __TEXT,__text  _MRMediaRemotePlaybackSessionSetMigratePostCallbackForOrigin
+0x1a6ee3568  __TEXT,__text  _MRMediaRemotePlaybackSessionSetRequestCallback
+0x1a6ee35f4  __TEXT,__text  _MRMediaRemotePlaybackSessionSetRequestCallbackForOrigin
+0x1a6e47ad0  __TEXT,__text  _MRMediaRemotePlaybackStateIsAdvancing
+0x1a705747c  __TEXT,__text  _MRMediaRemotePostBrowsableContentNotification
+0x1a701b040  __TEXT,__text  _MRMediaRemotePostClientNotification
+0x1a701b0b0  __TEXT,__text  _MRMediaRemotePostDelayedNotification
+0x1a701b120  __TEXT,__text  _MRMediaRemotePostOriginClientNotification
+0x1a701b190  __TEXT,__text  _MRMediaRemotePostPlayerClientNotification
+0x1a6f919ac  __TEXT,__text  _MRMediaRemotePresentMediaControlsCommand
+0x1a6f9195c  __TEXT,__text  _MRMediaRemotePrewarmMediaControlsCommand
+0x1e0f8c048  __DATA_CONST,__const  _MRMediaRemoteProactiveRecommendedPlayerDidChangeNotification
+0x1e0f8c040  __DATA_CONST,__const  _MRMediaRemoteProactiveRecommendedPlayerReasonUserInfoKey
+0x1a6ee88a0  __TEXT,__text  _MRMediaRemoteRegisterAgentHandlers
+0x1a6ed95cc  __TEXT,__text  _MRMediaRemoteRegisterForElapsedTimeChangesWithHandler
+0x1a6ef2ca0  __TEXT,__text  _MRMediaRemoteRegisterForNowPlayingNotifications
+0x1a6ed98e4  __TEXT,__text  _MRMediaRemoteRegisterForPlaybackSpeedChangesWithHandler
+0x1a6ed9bfc  __TEXT,__text  _MRMediaRemoteRegisterForRepeatModeChangesWithHandler
+0x1a6ed9f18  __TEXT,__text  _MRMediaRemoteRegisterForShuffleModeChangesWithHandler
+0x1a7102148  __TEXT,__text  _MRMediaRemoteRegisterPairingHandler
+0x1a6ed94e0  __TEXT,__text  _MRMediaRemoteRegisterWantsSystemAppDidSkipTrackNotifications
+0x1a70db324  __TEXT,__text  _MRMediaRemoteRemoteSendLyricsEvent
+0x1a70db38c  __TEXT,__text  _MRMediaRemoteRemoteSendLyricsEventForPlayer
+0x1a6ef0180  __TEXT,__text  _MRMediaRemoteRemoveClientForOrigin
+0x1a6ff37f0  __TEXT,__text  _MRMediaRemoteRemoveCommandHandlerBlock
+0x1a6ff37fc  __TEXT,__text  _MRMediaRemoteRemoveCommandHandlerBlockForOrigin
+0x1a6ff3858  __TEXT,__text  _MRMediaRemoteRemoveCommandHandlerBlockForPlayer
+0x1a6ff2b7c  __TEXT,__text  _MRMediaRemoteRemoveCommandHandlerForPlayer
+0x1a6ef0334  __TEXT,__text  _MRMediaRemoteRemovePlayer
+0x1a6e853b4  __TEXT,__text  _MRMediaRemoteRemovePlayerPathInvalidationHandler
+0x1a70230e8  __TEXT,__text  _MRMediaRemoteRepeatModeFromProtobuf
+0x1a70230d8  __TEXT,__text  _MRMediaRemoteRepeatModeToProtobuf
+0x1a70250cc  __TEXT,__text  _MRMediaRemoteReplaceIntentFromProtobuf
+0x1a70250bc  __TEXT,__text  _MRMediaRemoteReplaceIntentToProtobuf
+0x1a70eec6c  __TEXT,__text  _MRMediaRemoteReportPlaybackError
+0x1a701c76c  __TEXT,__text  _MRMediaRemoteRequestAirPlayGroupUID
+0x1a6ef3130  __TEXT,__text  _MRMediaRemoteRequestAudioAmplitudeSamples
+0x1a6ef31cc  __TEXT,__text  _MRMediaRemoteRequestAudioAmplitudeSamplesForPlayer
+0x1a701bda8  __TEXT,__text  _MRMediaRemoteRequestDeviceUID
+0x1a701c4d0  __TEXT,__text  _MRMediaRemoteRequestGroupUID
+0x1a701ca14  __TEXT,__text  _MRMediaRemoteRequestIsGroupLeader
+0x1a6fe9b50  __TEXT,__text  _MRMediaRemoteRequestNowPlayingPlaybackQueue
+0x1a6fe9c04  __TEXT,__text  _MRMediaRemoteRequestNowPlayingPlaybackQueueCapabilities
+0x1a6fe9c14  __TEXT,__text  _MRMediaRemoteRequestNowPlayingPlaybackQueueCapabilitiesForPlayer
+0x1a6e6d6ec  __TEXT,__text  _MRMediaRemoteRequestNowPlayingPlaybackQueueForPlayer
+0x1a6e6d6e8  __TEXT,__text  _MRMediaRemoteRequestNowPlayingPlaybackQueueForPlayerSync
+0x1a6e81760  __TEXT,__text  _MRMediaRemoteRequestNowPlayingPlaybackQueueSync
+0x1a6efc6e4  __TEXT,__text  _MRMediaRemoteRequestPendingCommands
+0x1a7057370  __TEXT,__text  _MRMediaRemoteRequestPlaybackInitialization
+0x1a701cc90  __TEXT,__text  _MRMediaRemoteRequestSenderDefaultGroupUID
+0x1a6ef2fe4  __TEXT,__text  _MRMediaRemoteRequestVideoThumbnails
+0x1a6ef3098  __TEXT,__text  _MRMediaRemoteRequestVideoThumbnailsForPlayer
+0x1a6f91a30  __TEXT,__text  _MRMediaRemoteResolveCommandOptions
+0x1a6fc2b10  __TEXT,__text  _MRMediaRemoteRestrictCommandClients
+0x1e0f8c038  __DATA_CONST,__const  _MRMediaRemoteRouteStatusErrorDomain
+0x1a6ef326c  __TEXT,__text  _MRMediaRemoteSelectSourceWithID
+0x1a6fc090c  __TEXT,__text  _MRMediaRemoteSendCommand
+0x1a6f4f1b4  __TEXT,__text  _MRMediaRemoteSendCommandErrorDescription
+0x1a6fc09e8  __TEXT,__text  _MRMediaRemoteSendCommandForOrigin
+0x1a6fc0afc  __TEXT,__text  _MRMediaRemoteSendCommandForOriginWithReply
+0x1a6fc093c  __TEXT,__text  _MRMediaRemoteSendCommandToApp
+0x1a6fc0be0  __TEXT,__text  _MRMediaRemoteSendCommandToClient
+0x1a6fc0c8c  __TEXT,__text  _MRMediaRemoteSendCommandToPlayer
+0x1a6fc2110  __TEXT,__text  _MRMediaRemoteSendCommandToPlayerWithResult
+0x1a6fc0a24  __TEXT,__text  _MRMediaRemoteSendCommandWithReply
+0x1a6f4fa1c  __TEXT,__text  _MRMediaRemoteSendErrorFromError
+0x1a6f92164  __TEXT,__text  _MRMediaRemoteSendImplicitCommandsForOptions
+0x1a6f64f74  __TEXT,__text  _MRMediaRemoteSendPlaybackSession
+0x1a6f654ec  __TEXT,__text  _MRMediaRemoteSendPlaybackSessionMigrateBegin
+0x1a6f65978  __TEXT,__text  _MRMediaRemoteSendPlaybackSessionMigrateEnd
+0x1a6f65e18  __TEXT,__text  _MRMediaRemoteSendPlaybackSessionMigrateFinalize
+0x1a6f77cf4  __TEXT,__text  _MRMediaRemoteSendPlaybackSessionMigratePost
+0x1e0f8c030  __DATA_CONST,__const  _MRMediaRemoteServiceDidInvalidateNotification
+0x1a6f2d330  __TEXT,__text  _MRMediaRemoteServicePresentRouteAuthorizationStatus
+0x1a6f2d318  __TEXT,__text  _MRMediaRemoteServicePromptRouteAuthorization
+0x1a6f2b87c  __TEXT,__text  _MRMediaRemoteServiceSetOriginClientProperties
+0x1a6f2b164  __TEXT,__text  _MRMediaRemoteServiceSetPlayerClientProperties
+0x1a6eefeb4  __TEXT,__text  _MRMediaRemoteSetAVAudioSessionOpaqueSessionIDForPlayer
+0x1a710ab80  __TEXT,__text  _MRMediaRemoteSetActiveOrigin
+0x1a70ee418  __TEXT,__text  _MRMediaRemoteSetAppPlaybackQueue
+0x1a70ee534  __TEXT,__text  _MRMediaRemoteSetAppPlaybackQueueForPlayer
+0x1a70ee268  __TEXT,__text  _MRMediaRemoteSetAppPlaybackQueueWithContext
+0x1a7100bd8  __TEXT,__text  _MRMediaRemoteSetApplicationPickedRoutes
+0x1a6ef3394  __TEXT,__text  _MRMediaRemoteSetAudioAmplitudeSamplesRequestCallback
+0x1a6ef3404  __TEXT,__text  _MRMediaRemoteSetAudioAmplitudeSamplesRequestCallbackForPlayer
+0x1a70db114  __TEXT,__text  _MRMediaRemoteSetBeginLyricsEventCallback
+0x1a70db190  __TEXT,__text  _MRMediaRemoteSetBeginLyricsEventCallbackForPlayer
+0x1a7057a24  __TEXT,__text  _MRMediaRemoteSetBrowsableContentEndpoint
+0x1a6eeefec  __TEXT,__text  _MRMediaRemoteSetCanBeNowPlayingApplication
+0x1a6e800bc  __TEXT,__text  _MRMediaRemoteSetCanBeNowPlayingForPlayer
+0x1a6ef0c74  __TEXT,__text  _MRMediaRemoteSetClientProperties
+0x1a701cf28  __TEXT,__text  _MRMediaRemoteSetClusterLeader
+0x1a6ff2c2c  __TEXT,__text  _MRMediaRemoteSetCommandHandler
+0x1a6ff2cb4  __TEXT,__text  _MRMediaRemoteSetCommandHandlerBlock
+0x1a6ff2cc0  __TEXT,__text  _MRMediaRemoteSetCommandHandlerBlockForOrigin
+0x1a6ff2d48  __TEXT,__text  _MRMediaRemoteSetCommandHandlerBlockForPlayer
+0x1a6ff33e4  __TEXT,__text  _MRMediaRemoteSetCommandHandlerCallback
+0x1a6ff35f0  __TEXT,__text  _MRMediaRemoteSetCommandHandlerCallbackForOrigin
+0x1a6efd8f4  __TEXT,__text  _MRMediaRemoteSetDefaultSupportedCommands
+0x1a6efd90c  __TEXT,__text  _MRMediaRemoteSetDefaultSupportedCommandsForClient
+0x1a6fbddfc  __TEXT,__text  _MRMediaRemoteSetDisplayNameForClient
+0x1a6fc2804  __TEXT,__text  _MRMediaRemoteSetElapsedTime
+0x1a70db21c  __TEXT,__text  _MRMediaRemoteSetEndLyricsEventCallback
+0x1a70db298  __TEXT,__text  _MRMediaRemoteSetEndLyricsEventCallbackForPlayer
+0x1a6f918f0  __TEXT,__text  _MRMediaRemoteSetHardwareRemoteBehavior
+0x1a6eefd54  __TEXT,__text  _MRMediaRemoteSetMXSessionIDForPlayer
+0x1a7101748  __TEXT,__text  _MRMediaRemoteSetMediaPlaybackVolume
+0x1a7100c44  __TEXT,__text  _MRMediaRemoteSetNearbyDevice
+0x1a6eef25c  __TEXT,__text  _MRMediaRemoteSetNowPlayingApplicationOverrideEnabled
+0x1a6ef24e0  __TEXT,__text  _MRMediaRemoteSetNowPlayingApplicationPlaybackStateForOrigin
+0x1a6eef39c  __TEXT,__text  _MRMediaRemoteSetNowPlayingClientForOrigin
+0x1a6fbf62c  __TEXT,__text  _MRMediaRemoteSetNowPlayingInfo
+0x1a6fbf624  __TEXT,__text  _MRMediaRemoteSetNowPlayingInfoForOrigin
+0x1a6fbe260  __TEXT,__text  _MRMediaRemoteSetNowPlayingInfoForOriginWithMergePolicy
+0x1a6fbe2d4  __TEXT,__text  _MRMediaRemoteSetNowPlayingInfoForPlayer
+0x1a6fbf5d0  __TEXT,__text  _MRMediaRemoteSetNowPlayingInfoWithMergePolicy
+0x1a6eef480  __TEXT,__text  _MRMediaRemoteSetNowPlayingPlayer
+0x1a6eef598  __TEXT,__text  _MRMediaRemoteSetNowPlayingPlayerIfPossible
+0x1a6ef1964  __TEXT,__text  _MRMediaRemoteSetNowPlayingTintColor
+0x1a6ef18e8  __TEXT,__text  _MRMediaRemoteSetNowPlayingVisibility
+0x1a6eef2ec  __TEXT,__text  _MRMediaRemoteSetOverriddenNowPlayingApplication
+0x1a6ef1860  __TEXT,__text  _MRMediaRemoteSetParentApplication
+0x1a71012f4  __TEXT,__text  _MRMediaRemoteSetPickedRouteHasVolumeControlForOrigin
+0x1a71012f8  __TEXT,__text  _MRMediaRemoteSetPickedRouteVolumeControlCapabilities
+0x1a7100e70  __TEXT,__text  _MRMediaRemoteSetPickedRouteWithPassword
+0x1a7100ea8  __TEXT,__text  _MRMediaRemoteSetPickedRouteWithPasswordAndOptions
+0x1a6eef8c8  __TEXT,__text  _MRMediaRemoteSetPictureInPictureStatusForPlayer
+0x1a6fea3f0  __TEXT,__text  _MRMediaRemoteSetPlaybackQueue
+0x1a6e402d8  __TEXT,__text  _MRMediaRemoteSetPlaybackQueueCapabilities
+0x1a6fc28c4  __TEXT,__text  _MRMediaRemoteSetPlaybackSpeed
+0x1a6ef24f8  __TEXT,__text  _MRMediaRemoteSetPlaybackStateForClient
+0x1a6ef25e8  __TEXT,__text  _MRMediaRemoteSetPlaybackStateForPlayer
+0x1a6ef26cc  __TEXT,__text  _MRMediaRemoteSetPlaybackStateForPlayerWithTimestamp
+0x1a6ef224c  __TEXT,__text  _MRMediaRemoteSetPlayerProperties
+0x1a6fc2988  __TEXT,__text  _MRMediaRemoteSetRepeatMode
+0x1a6ebe288  __TEXT,__text  _MRMediaRemoteSetRouteDiscoveryMode
+0x1a7101498  __TEXT,__text  _MRMediaRemoteSetSavedAVRoutePassword
+0x1a6fc2a4c  __TEXT,__text  _MRMediaRemoteSetShuffleMode
+0x1a7058718  __TEXT,__text  _MRMediaRemoteSetSupportedBrowsableContentAPIs
+0x1a6efd674  __TEXT,__text  _MRMediaRemoteSetSupportedCommands
+0x1a6efd688  __TEXT,__text  _MRMediaRemoteSetSupportedCommandsForClient
+0x1a6efd778  __TEXT,__text  _MRMediaRemoteSetSupportedCommandsForPlayer
+0x1a70ee154  __TEXT,__text  _MRMediaRemoteSetSystemAppPlaybackQueue
+0x1a70ee168  __TEXT,__text  _MRMediaRemoteSetSystemAppPlaybackQueueWithContext
+0x1a6ef3298  __TEXT,__text  _MRMediaRemoteSetVideoThumbnailsRequestCallback
+0x1a6ef3308  __TEXT,__text  _MRMediaRemoteSetVideoThumbnailsRequestCallbackForPlayer
+0x1a7100b48  __TEXT,__text  _MRMediaRemoteSetWantsExternalScreenTypeChangeNotifications
+0x1a6e81304  __TEXT,__text  _MRMediaRemoteSetWantsNowPlayingNotifications
+0x1a710aa88  __TEXT,__text  _MRMediaRemoteSetWantsOriginChangeNotifications
+0x1a70eed4c  __TEXT,__text  _MRMediaRemoteSetWantsPlaybackErrorNotifications
+0x1a7100ab8  __TEXT,__text  _MRMediaRemoteSetWantsRouteChangeNotifications
+0x1a6efd5e8  __TEXT,__text  _MRMediaRemoteSetWantsSupportedCommandsChangedNotifications
+0x1a6e4aec4  __TEXT,__text  _MRMediaRemoteSetWantsVolumeControlNotifications
+0x1a6ef2e3c  __TEXT,__text  _MRMediaRemoteSetWantsWakingNowPlayingNotifications
+0x1a6f4fc04  __TEXT,__text  _MRMediaRemoteShouldWakeSystemForCommand
+0x1a7023108  __TEXT,__text  _MRMediaRemoteShuffleModeFromProtobuf
+0x1a70230f8  __TEXT,__text  _MRMediaRemoteShuffleModeToProtobuf
+0x1a701b018  __TEXT,__text  _MRMediaRemoteSupportedCommandsCreateExternalRepresentation
+0x1a701aff0  __TEXT,__text  _MRMediaRemoteSupportedCommandsCreateFromExternalRepresentation
+0x1a6ed9508  __TEXT,__text  _MRMediaRemoteSupportedCommandsHaveChanged
+0x1a6ed9510  __TEXT,__text  _MRMediaRemoteSupportedCommandsHaveChangedForOrigin
+0x1a6efdb1c  __TEXT,__text  _MRMediaRemoteSupportsCommand
+0x1a6ef159c  __TEXT,__text  _MRMediaRemoteSyncClientProperties
+0x1a7030968  __TEXT,__text  _MRMediaRemoteSystemMediaApplicationIsRunning
+0x1a703094c  __TEXT,__text  _MRMediaRemoteSystemMediaApplicationWake
+0x1a7101520  __TEXT,__text  _MRMediaRemoteUnpickAirPlayAVRoutes
+0x1a6ed9844  __TEXT,__text  _MRMediaRemoteUnregisterForElapsedTimeChanges
+0x1a6ef2d80  __TEXT,__text  _MRMediaRemoteUnregisterForNowPlayingNotifications
+0x1a6ed9b5c  __TEXT,__text  _MRMediaRemoteUnregisterForPlaybackSpeedChanges
+0x1a6ed9e78  __TEXT,__text  _MRMediaRemoteUnregisterForRepeatModeChanges
+0x1a6eda194  __TEXT,__text  _MRMediaRemoteUnregisterForShuffleModeChanges
+0x1a71021ac  __TEXT,__text  _MRMediaRemoteUnregisterPairingHandler
+0x1a7058a34  __TEXT,__text  _MRMediaRemoteUpdateBrowsableContentItems
+0x1a6ef1108  __TEXT,__text  _MRMediaRemoteUpdateClientProperties
+0x1a70588e0  __TEXT,__text  _MRMediaRemoteUpdateNowPlayingIdentifiers
+0x1a6eefde0  __TEXT,__text  _MRMediaRemoteUpdatePlayerProperties
+0x1a6f91e5c  __TEXT,__text  _MRMediaRemoteValidateIncomingCommandOptions
+0x1a6f91c14  __TEXT,__text  _MRMediaRemoteValidateOutgoingCommandOptions
+0x1a6f813b8  __TEXT,__text  _MRMediaRemoteVolumeControlAdjustmentDescription
+0x1a6e6b328  __TEXT,__text  _MRMediaRemoteVolumeControlCapabilitiesDescription
+0x1a6ff9a1c  __TEXT,__text  _MRMusicHandoffSessionGetQueue
+0x1a6e377f4  __TEXT,__text  _MRNotificationServiceClientPostNotificationCallback
+0x1e0f8c028  __DATA_CONST,__const  _MRNowPlayingActivityActiveRouteIdentifier
+0x1e0f8c020  __DATA_CONST,__const  _MRNowPlayingActivityLocalRouteIdentifier
+0x1a7089b80  __TEXT,__text  _MRNowPlayingArtworkCopyIOSurface
+0x1a7089b7c  __TEXT,__text  _MRNowPlayingArtworkCopyImageData
+0x1a7089b3c  __TEXT,__text  _MRNowPlayingArtworkCreateWithImageData
+0x1a7089b78  __TEXT,__text  _MRNowPlayingArtworkGetType
+0x1a6fb2c70  __TEXT,__text  _MRNowPlayingBestAvailableAudioFormatDescription
+0x1a704ab54  __TEXT,__text  _MRNowPlayingClientAppendBundleIdentifier
+0x1a704a478  __TEXT,__text  _MRNowPlayingClientCopy
+0x1a704ac20  __TEXT,__text  _MRNowPlayingClientCopyAppIconURL
+0x1a6e5782c  __TEXT,__text  _MRNowPlayingClientCopyBundleIdentifierExtendedHierarchy
+0x1a6e92e28  __TEXT,__text  _MRNowPlayingClientCopyBundleIdentifierHierarchy
+0x1a704a38c  __TEXT,__text  _MRNowPlayingClientCreate
+0x1a704a3fc  __TEXT,__text  _MRNowPlayingClientCreateExternalRepresentation
+0x1a704a3c8  __TEXT,__text  _MRNowPlayingClientCreateFromExternalRepresentation
+0x1a704a540  __TEXT,__text  _MRNowPlayingClientCreateSkeletonFrom
+0x1a704acbc  __TEXT,__text  _MRNowPlayingClientEqualToClient
+0x1a6e89278  __TEXT,__text  _MRNowPlayingClientGetBundleIdentifier
+0x1a704ab24  __TEXT,__text  _MRNowPlayingClientGetDisplayName
+0x1a704ac58  __TEXT,__text  _MRNowPlayingClientGetHasAuxillaryProperties
+0x1a704a838  __TEXT,__text  _MRNowPlayingClientGetNowPlayingVisibility
+0x1a704a688  __TEXT,__text  _MRNowPlayingClientGetParentAppBundleIdentifier
+0x1a704a4dc  __TEXT,__text  _MRNowPlayingClientGetProcessIdentifier
+0x1a704a90c  __TEXT,__text  _MRNowPlayingClientGetTintColor
+0x1a704a764  __TEXT,__text  _MRNowPlayingClientGetUserIdentifier
+0x1a704bb5c  __TEXT,__text  _MRNowPlayingClientHasPlaceholder
+0x1a704ad78  __TEXT,__text  _MRNowPlayingClientMerge
+0x1a704ac18  __TEXT,__text  _MRNowPlayingClientSetAppIconURL
+0x1a704a618  __TEXT,__text  _MRNowPlayingClientSetBundleIdentifier
+0x1a704ab1c  __TEXT,__text  _MRNowPlayingClientSetDisplayName
+0x1a704a89c  __TEXT,__text  _MRNowPlayingClientSetNowPlayingVisibility
+0x1a704a6f4  __TEXT,__text  _MRNowPlayingClientSetParentAppBundleIdentifier
+0x1a704a5a8  __TEXT,__text  _MRNowPlayingClientSetProcessIdentifier
+0x1a704aa2c  __TEXT,__text  _MRNowPlayingClientSetTintColor
+0x1a704a7c8  __TEXT,__text  _MRNowPlayingClientSetUserIdentifier
+0x1a701e6e0  __TEXT,__text  _MRNowPlayingCreateDerivedIdentifier
+0x1e0f8c018  __DATA_CONST,__const  _MRNowPlayingInfoContentTypeBook
+0x1e0f8c010  __DATA_CONST,__const  _MRNowPlayingInfoContentTypeGeneric
+0x1e0f8c008  __DATA_CONST,__const  _MRNowPlayingInfoContentTypeHomeMedia
+0x1e0f8c000  __DATA_CONST,__const  _MRNowPlayingInfoContentTypeMovie
+0x1e0f8bff8  __DATA_CONST,__const  _MRNowPlayingInfoContentTypeMusic
+0x1e0f8bff0  __DATA_CONST,__const  _MRNowPlayingInfoContentTypePodcast
+0x1e0f8bfe8  __DATA_CONST,__const  _MRNowPlayingInfoContentTypeRadio
+0x1e0f8bfe0  __DATA_CONST,__const  _MRNowPlayingInfoContentTypeTVShow
+0x1e0f8bfd8  __DATA_CONST,__const  _MRNowPlayingInfoDurationStringLocalizationKeyContinuous
+0x1e0f8bfd0  __DATA_CONST,__const  _MRNowPlayingInfoDurationStringLocalizationKeyLive
+0x1e0f8bfc8  __DATA_CONST,__const  _MRNowPlayingInfoMediaTypeAudio
+0x1e0f8bfc0  __DATA_CONST,__const  _MRNowPlayingInfoMediaTypeVideo
+0x1e0f8bfb8  __DATA_CONST,__const  _MRNowPlayingPlaybackQueueNowPlayingItemChangedNotification
+0x1a704b1c0  __TEXT,__text  _MRNowPlayingPlayerAudioSessionTypeCopyDescription
+0x1a704ae68  __TEXT,__text  _MRNowPlayingPlayerCopy
+0x1a704ae2c  __TEXT,__text  _MRNowPlayingPlayerCreate
+0x1a704b278  __TEXT,__text  _MRNowPlayingPlayerCreateExternalRepresentation
+0x1a704b244  __TEXT,__text  _MRNowPlayingPlayerCreateFromExternalRepresentation
+0x1a704aecc  __TEXT,__text  _MRNowPlayingPlayerCreateSkeletonFrom
+0x1a704b294  __TEXT,__text  _MRNowPlayingPlayerEqualToPlayer
+0x1a704b15c  __TEXT,__text  _MRNowPlayingPlayerGetAudioSessionType
+0x1a704b0f0  __TEXT,__text  _MRNowPlayingPlayerGetDisplayName
+0x1a704b1e0  __TEXT,__text  _MRNowPlayingPlayerGetHasAuxillaryProperties
+0x1a704b084  __TEXT,__text  _MRNowPlayingPlayerGetIdentifier
+0x1a704b350  __TEXT,__text  _MRNowPlayingPlayerMerge
+0x1a704b95c  __TEXT,__text  _MRNowPlayingPlayerPathClientEqualToPlayerPathClient
+0x1a704b450  __TEXT,__text  _MRNowPlayingPlayerPathCopy
+0x1a704bf60  __TEXT,__text  _MRNowPlayingPlayerPathCopyStringRepresentation
+0x1a704b404  __TEXT,__text  _MRNowPlayingPlayerPathCreate
+0x1a704b838  __TEXT,__text  _MRNowPlayingPlayerPathCreateExternalRepresentation
+0x1a704b804  __TEXT,__text  _MRNowPlayingPlayerPathCreateFromExternalRepresentation
+0x1a704b4b4  __TEXT,__text  _MRNowPlayingPlayerPathCreateSkeletonFrom
+0x1a704b8a0  __TEXT,__text  _MRNowPlayingPlayerPathEqualToPlayerPath
+0x1a704b51c  __TEXT,__text  _MRNowPlayingPlayerPathGetClient
+0x1a704ba90  __TEXT,__text  _MRNowPlayingPlayerPathGetIsResolved
+0x1a704bb58  __TEXT,__text  _MRNowPlayingPlayerPathGetIsSystemMediaApplication
+0x1a6ecbe0c  __TEXT,__text  _MRNowPlayingPlayerPathGetOrigin
+0x1a704b588  __TEXT,__text  _MRNowPlayingPlayerPathGetPlayer
+0x1a704baf4  __TEXT,__text  _MRNowPlayingPlayerPathIsLocal
+0x1a704bfc8  __TEXT,__text  _MRNowPlayingPlayerPathResolveExternalDevicePlayerPath
+0x1a704b6a4  __TEXT,__text  _MRNowPlayingPlayerPathSetClient
+0x1a704b5f4  __TEXT,__text  _MRNowPlayingPlayerPathSetOrigin
+0x1a704b754  __TEXT,__text  _MRNowPlayingPlayerPathSetPlayer
+0x1a704b014  __TEXT,__text  _MRNowPlayingPlayerSetAudioSessionType
+0x1a704afa4  __TEXT,__text  _MRNowPlayingPlayerSetDisplayName
+0x1a704af34  __TEXT,__text  _MRNowPlayingPlayerSetIdentifier
+0x1e0f8bfb0  __DATA_CONST,__const  _MRNowPlayingRequestLocalRouteIdentifier
+0x1e0f8bfa8  __DATA_CONST,__const  _MRNowPlayingSessionErrorDomain
+0x1e0f8bfa0  __DATA_CONST,__const  _MRNowPlayingSessionManagerActiveSessionWillBeHijackedByNativePlayback
+0x1a6fba578  __TEXT,__text  _MRNowPlayingSessionManagerDataSourceGenerateSetGeneratePlayerIDCallback
+0x1a6fba4d0  __TEXT,__text  _MRNowPlayingSessionManagerDataSourceSetCreatePlayerCallback
+0x1a6fba520  __TEXT,__text  _MRNowPlayingSessionManagerDataSourceSetDestroyPlayerCallback
+0x1a6fbbde4  __TEXT,__text  _MRNowPlayingSessionManagerIsSilentPrimary
+0x1e0f8bf98  __DATA_CONST,__const  _MRNowPlayingSessionManagerIsSilentPrimaryDidChange
+0x1a6fbb7c0  __TEXT,__text  _MRNowPlayingSessionManagerLocalDeviceRoutingContextID
+0x1e0f8bf90  __DATA_CONST,__const  _MRNowPlayingSessionManagerLocalDeviceRoutingContextIDDidChange
+0x1a6fba5d0  __TEXT,__text  _MRNowPlayingSessionManagerStartSession
+0x1a6fbb344  __TEXT,__text  _MRNowPlayingSessionManagerStopSession
+0x1a6f1b9e0  __TEXT,__text  _MROpenApplicationWithBundleID
+0x1a710a7a4  __TEXT,__text  _MROriginCopy
+0x1a710a808  __TEXT,__text  _MROriginCreateSkeletonFrom
+0x1a710a870  __TEXT,__text  _MROriginEqualToOrigin
+0x1a710a91c  __TEXT,__text  _MROriginGetDisplayName
+0x1a710a988  __TEXT,__text  _MROriginGetOriginType
+0x1a710a9ec  __TEXT,__text  _MROriginGetUniqueIdentifier
+0x1a6ecbe78  __TEXT,__text  _MROriginIsLocalOrigin
+0x1e0f8bf88  __DATA_CONST,__const  _MROriginNowPlayingPlaybackQueueNowPlayingItemChangedNotification
+0x1e0f8bf80  __DATA_CONST,__const  _MROutputContextDataSourceDidAddOutputDeviceNotification
+0x1e0f8bf78  __DATA_CONST,__const  _MROutputContextDataSourceDidChangeOutputDeviceNotification
+0x1e0f8bf70  __DATA_CONST,__const  _MROutputContextDataSourceDidChangePredictedOutputDeviceNotification
+0x1e0f8bf68  __DATA_CONST,__const  _MROutputContextDataSourceDidReloadNotification
+0x1e0f8bf60  __DATA_CONST,__const  _MROutputContextDataSourceDidRemoveOutputDeviceNotification
+0x1e0f8bf58  __DATA_CONST,__const  _MROutputContextDataSourceOutputDeviceDidChangeVolumeControlCapabilitiesNotification
+0x1e0f8bf50  __DATA_CONST,__const  _MROutputContextDataSourceOutputDeviceDidChangeVolumeMutedNotification
+0x1e0f8bf48  __DATA_CONST,__const  _MROutputContextDataSourceOutputDeviceDidChangeVolumeNotification
+0x1e0f8bf40  __DATA_CONST,__const  _MROutputContextDataSourceOutputDeviceUserInfoKey
+0x1e0f8bf38  __DATA_CONST,__const  _MROutputContextDataSourceVolumeCapabilitiesUserInfoKey
+0x1e0f8bf30  __DATA_CONST,__const  _MROutputContextDataSourceVolumeMutedUserInfoKey
+0x1e0f8bf28  __DATA_CONST,__const  _MROutputContextDataSourceVolumeUserInfoKey
+0x1a6e3bad4  __TEXT,__text  _MROutputDeviceIsAVOutputDeviceLocal
+0x1a6e3eee0  __TEXT,__text  _MROutputDeviceIsAVOutputDeviceLocalWithDeviceInfo
+0x1a70c6d50  __TEXT,__text  _MROutputDeviceSubtypeFromGroupSessionRoute
+0x1a70c6d28  __TEXT,__text  _MROutputDeviceTypeFromGroupSessionRoute
+0x1a7002028  __TEXT,__text  _MRPairedDeviceCopyAirPlayReceivers
+0x1a7001ed0  __TEXT,__text  _MRPairedDeviceCopyBluetoothAddress
+0x1a7001a8c  __TEXT,__text  _MRPairedDeviceCopyBuildVersion
+0x1a7001ac4  __TEXT,__text  _MRPairedDeviceCopyBundleIdentifier
+0x1a7001afc  __TEXT,__text  _MRPairedDeviceCopyBundleVersion
+0x1a700240c  __TEXT,__text  _MRPairedDeviceCopyDeltaDescription
+0x1a700242c  __TEXT,__text  _MRPairedDeviceCopyDeltaMinimalDescription
+0x1a70022b4  __TEXT,__text  _MRPairedDeviceCopyDescription
+0x1a7001bb4  __TEXT,__text  _MRPairedDeviceCopyDeviceUID
+0x1a7001c24  __TEXT,__text  _MRPairedDeviceCopyGroupName
+0x1a7001bec  __TEXT,__text  _MRPairedDeviceCopyGroupUID
+0x1a7001f84  __TEXT,__text  _MRPairedDeviceCopyGroupedDevices
+0x1a7001a1c  __TEXT,__text  _MRPairedDeviceCopyIdentifier
+0x1a7002060  __TEXT,__text  _MRPairedDeviceCopyLinkAgent
+0x1a7001bd0  __TEXT,__text  _MRPairedDeviceCopyLocalReceiverPairingIdentity
+0x1a7001a54  __TEXT,__text  _MRPairedDeviceCopyLocalizedModelName
+0x1a7001c94  __TEXT,__text  _MRPairedDeviceCopyManagedConfigDeviceID
+0x1a70022d0  __TEXT,__text  _MRPairedDeviceCopyMinimalDescription
+0x1a70019e4  __TEXT,__text  _MRPairedDeviceCopyName
+0x1a7001c5c  __TEXT,__text  _MRPairedDeviceCopySenderDefaultGroupUID
+0x1a7001b34  __TEXT,__text  _MRPairedDeviceCopySystemMediaApplication
+0x1a7001d38  __TEXT,__text  _MRPairedDeviceCopyTightSyncUID
+0x1a7001df4  __TEXT,__text  _MRPairedDeviceCreate
+0x1a70019c4  __TEXT,__text  _MRPairedDeviceCreateCopy
+0x1a7002100  __TEXT,__text  _MRPairedDeviceCreateExternalRepresentation
+0x1a700211c  __TEXT,__text  _MRPairedDeviceCreateFromExternalRepresentation
+0x1a70019c8  __TEXT,__text  _MRPairedDeviceCreateSkeletonFrom
+0x1a7001b6c  __TEXT,__text  _MRPairedDeviceEqualToPairedDevice
+0x1a7001cd8  __TEXT,__text  _MRPairedDeviceGetDeviceClass
+0x1a7001f10  __TEXT,__text  _MRPairedDeviceGetGroupLogicalDeviceCount
+0x1a7001fd0  __TEXT,__text  _MRPairedDeviceGetIsAirPlayActive
+0x1a7001fc4  __TEXT,__text  _MRPairedDeviceGetIsGroupLeader
+0x1a7001cd4  __TEXT,__text  _MRPairedDeviceGetProtocolVersion
+0x1a7001d88  __TEXT,__text  _MRPairedDeviceGetSharedQueueVersion
+0x1a7001dd8  __TEXT,__text  _MRPairedDeviceIsConnected
+0x1a7001d70  __TEXT,__text  _MRPairedDeviceIsPairingAllowed
+0x1a7001ddc  __TEXT,__text  _MRPairedDeviceIsProxyGroupPlayer
+0x1a7001cdc  __TEXT,__text  _MRPairedDeviceIsTightlySyncedGroup
+0x1a700207c  __TEXT,__text  _MRPairedDeviceMerge
+0x1a7001fd4  __TEXT,__text  _MRPairedDeviceSetAirPlayReceivers
+0x1a7001f08  __TEXT,__text  _MRPairedDeviceSetBluetoothAddress
+0x1a7001e18  __TEXT,__text  _MRPairedDeviceSetBuildVersion
+0x1a7001e20  __TEXT,__text  _MRPairedDeviceSetBundleIdentifier
+0x1a7001e28  __TEXT,__text  _MRPairedDeviceSetBundleVersion
+0x1a7001e38  __TEXT,__text  _MRPairedDeviceSetDeviceClass
+0x1a7001bac  __TEXT,__text  _MRPairedDeviceSetDeviceUID
+0x1a7001f28  __TEXT,__text  _MRPairedDeviceSetGroupLogicalDeviceCount
+0x1a7001e98  __TEXT,__text  _MRPairedDeviceSetGroupName
+0x1a7001e90  __TEXT,__text  _MRPairedDeviceSetGroupUID
+0x1a7001f30  __TEXT,__text  _MRPairedDeviceSetGroupedDevices
+0x1a7001e08  __TEXT,__text  _MRPairedDeviceSetIdentifier
+0x1a7001fc8  __TEXT,__text  _MRPairedDeviceSetIsAirPlayActive
+0x1a7001ec8  __TEXT,__text  _MRPairedDeviceSetIsConnected
+0x1a7001fbc  __TEXT,__text  _MRPairedDeviceSetIsGroupLeader
+0x1a7001ea8  __TEXT,__text  _MRPairedDeviceSetIsPairingAllowed
+0x1a7001de0  __TEXT,__text  _MRPairedDeviceSetIsProxyGroupPlayer
+0x1a7001e10  __TEXT,__text  _MRPairedDeviceSetLocalizedModelName
+0x1a7001ccc  __TEXT,__text  _MRPairedDeviceSetManagedConfigDeviceID
+0x1a7001e00  __TEXT,__text  _MRPairedDeviceSetName
+0x1a7001e30  __TEXT,__text  _MRPairedDeviceSetProtocolVersion
+0x1a7001ea0  __TEXT,__text  _MRPairedDeviceSetSenderDefaultGroupUID
+0x1a7001d80  __TEXT,__text  _MRPairedDeviceSetSharedQueueVersion
+0x1a7001eb8  __TEXT,__text  _MRPairedDeviceSetSupportsACL
+0x1a7001de8  __TEXT,__text  _MRPairedDeviceSetSupportsExtendedMotion
+0x1a7001ec0  __TEXT,__text  _MRPairedDeviceSetSupportsSharedQueue
+0x1a7001eb0  __TEXT,__text  _MRPairedDeviceSetSupportsSystemPairing
+0x1a7001b9c  __TEXT,__text  _MRPairedDeviceSetSystemMediaApplication
+0x1a7001ba4  __TEXT,__text  _MRPairedDeviceSetSystemPodcastApplication
+0x1a7001e40  __TEXT,__text  _MRPairedDeviceSetTightSyncUID
+0x1a7001d78  __TEXT,__text  _MRPairedDeviceSupportsACL
+0x1a7001df0  __TEXT,__text  _MRPairedDeviceSupportsExtendedMotion
+0x1a7001d7c  __TEXT,__text  _MRPairedDeviceSupportsSharedQueue
+0x1a7001d74  __TEXT,__text  _MRPairedDeviceSupportsSystemPairing
+0x1a70022ec  __TEXT,__text  _MRPairedDevicesCopyDescription
+0x1a700237c  __TEXT,__text  _MRPairedDevicesCopyMinimalDescription
+0x1a7002150  __TEXT,__text  _MRPairedDevicesCreateExternalRepresentation
+0x1a7002178  __TEXT,__text  _MRPairedDevicesCreateFromExternalRepresentation
+0x1a701df6c  __TEXT,__text  _MRPerformAsyncOperationsUntilError
+0x1a701e0d0  __TEXT,__text  _MRPerformAsyncOperationsUntilSuccess
+0x1a6e553a0  __TEXT,__text  _MRPlaybackQueueCapabilitiesCopyDescription
+0x1a6ef81e8  __TEXT,__text  _MRPlaybackQueueCapabilitiesCreateExternalRepresentation
+0x1a6ef8190  __TEXT,__text  _MRPlaybackQueueCapabilitiesFromExternalRepresentation
+0x1a6ed5f04  __TEXT,__text  _MRPlaybackQueueCopy
+0x1a6ed6020  __TEXT,__text  _MRPlaybackQueueCopyContentItemIdentifiers
+0x1a6eaa950  __TEXT,__text  _MRPlaybackQueueCopyContentItems
+0x1a6ed60cc  __TEXT,__text  _MRPlaybackQueueCopyMinimalReadableDescription
+0x1a6ed5fd8  __TEXT,__text  _MRPlaybackQueueCopyReadableDescription
+0x1a6ed5c58  __TEXT,__text  _MRPlaybackQueueCreate
+0x1a6ed5ed8  __TEXT,__text  _MRPlaybackQueueCreateEmpty
+0x1a6ed5f70  __TEXT,__text  _MRPlaybackQueueCreateExternalRepresentation
+0x1a6e85b08  __TEXT,__text  _MRPlaybackQueueCreateFromCache
+0x1a6ed5fa4  __TEXT,__text  _MRPlaybackQueueCreateFromExternalRepresentation
+0x1a6ed5e14  __TEXT,__text  _MRPlaybackQueueCreateFromNowPlayingInfo
+0x1a6e7d7c0  __TEXT,__text  _MRPlaybackQueueCreateFromRequest
+0x1a6ed5c94  __TEXT,__text  _MRPlaybackQueueCreateWithContentItem
+0x1a6ed5d38  __TEXT,__text  _MRPlaybackQueueCreateWithContentItems
+0x1a6ed5d6c  __TEXT,__text  _MRPlaybackQueueCreateWithNowPlayingContentItem
+0x1a6fd75c8  __TEXT,__text  _MRPlaybackQueueDataSourceSetMaxConcurrentRequestCount
+0x1a6ed60bc  __TEXT,__text  _MRPlaybackQueueGetContentItemAtOffset
+0x1a6ed60c4  __TEXT,__text  _MRPlaybackQueueGetContentItemForIdentifier
+0x1a6ed5f38  __TEXT,__text  _MRPlaybackQueueGetContentItemsCount
+0x1a6ed608c  __TEXT,__text  _MRPlaybackQueueGetQueueID
+0x1a6eaa988  __TEXT,__text  _MRPlaybackQueueGetRange
+0x1a6ed6054  __TEXT,__text  _MRPlaybackQueueGetRequestID
+0x1a6ed5f08  __TEXT,__text  _MRPlaybackQueueGetResolvedPlayerPath
+0x1a6ed6178  __TEXT,__text  _MRPlaybackQueueHasRange
+0x1e0f8bf20  __DATA_CONST,__const  _MRPlaybackQueueParticipantsDidChangeForPlayerNotification
+0x1a6ed5f8c  __TEXT,__text  _MRPlaybackQueueQueueIsEqualToPlaybackQueue
+0x1a70bd118  __TEXT,__text  _MRPlaybackQueueRequestContainsNonDefaultAssets
+0x1a70bc8d8  __TEXT,__text  _MRPlaybackQueueRequestCopy
+0x1a70bcd68  __TEXT,__text  _MRPlaybackQueueRequestCopyDescription
+0x1a70bc99c  __TEXT,__text  _MRPlaybackQueueRequestCopyWithCurrentState
+0x1a70bc92c  __TEXT,__text  _MRPlaybackQueueRequestCopyWithRange
+0x1a6e816c0  __TEXT,__text  _MRPlaybackQueueRequestCreate
+0x1a70bd5b4  __TEXT,__text  _MRPlaybackQueueRequestCreateAssetsFrom
+0x1a70bc8b4  __TEXT,__text  _MRPlaybackQueueRequestCreateDefault
+0x1a70bd4d8  __TEXT,__text  _MRPlaybackQueueRequestCreateDefaultWithRange
+0x1a70bd1c4  __TEXT,__text  _MRPlaybackQueueRequestCreateExternalRepresentation
+0x1a70bd270  __TEXT,__text  _MRPlaybackQueueRequestCreateFromExternalRepresentation
+0x1a70bd4a4  __TEXT,__text  _MRPlaybackQueueRequestCreateFromTransactionName
+0x1a70bca3c  __TEXT,__text  _MRPlaybackQueueRequestCreateMergedRequest
+0x1a70bd16c  __TEXT,__text  _MRPlaybackQueueRequestCreateSkeletonFrom
+0x1a70bc868  __TEXT,__text  _MRPlaybackQueueRequestCreateWithCurrentState
+0x1a70bc834  __TEXT,__text  _MRPlaybackQueueRequestCreateWithIdentifiers
+0x1a70bd01c  __TEXT,__text  _MRPlaybackQueueRequestGetArtworkHeight
+0x1a70bcfc8  __TEXT,__text  _MRPlaybackQueueRequestGetArtworkWidth
+0x1a6e9f008  __TEXT,__text  _MRPlaybackQueueRequestGetIncludeArtwork
+0x1a6e9f6e0  __TEXT,__text  _MRPlaybackQueueRequestGetIncludeInfo
+0x1a6e9f68c  __TEXT,__text  _MRPlaybackQueueRequestGetIncludeLanguageOptions
+0x1a70bcf74  __TEXT,__text  _MRPlaybackQueueRequestGetIncludeLyrics
+0x1a6e9e34c  __TEXT,__text  _MRPlaybackQueueRequestGetIncludeMetadata
+0x1a6e9efb4  __TEXT,__text  _MRPlaybackQueueRequestGetIncludeSections
+0x1a70bd560  __TEXT,__text  _MRPlaybackQueueRequestGetIsLegacyNowPlayingInfoRequest
+0x1a70bce1c  __TEXT,__text  _MRPlaybackQueueRequestGetLabel
+0x1a6ebef0c  __TEXT,__text  _MRPlaybackQueueRequestGetRange
+0x1a70bcca8  __TEXT,__text  _MRPlaybackQueueRequestGetRequestID
+0x1a70bce80  __TEXT,__text  _MRPlaybackQueueRequestGetRequestedIdentifiers
+0x1a70bd49c  __TEXT,__text  _MRPlaybackQueueRequestGetReturnContentItemAssetsInUserCompletion
+0x1a70bd21c  __TEXT,__text  _MRPlaybackQueueRequestHasRange
+0x1a70bd3ec  __TEXT,__text  _MRPlaybackQueueRequestIsExactMatch
+0x1a70bd334  __TEXT,__text  _MRPlaybackQueueRequestMatch
+0x1a70bd2a4  __TEXT,__text  _MRPlaybackQueueRequestMerge
+0x1a70bcee4  __TEXT,__text  _MRPlaybackQueueRequestRangeContainsNowPlayingItem
+0x1a70bcab0  __TEXT,__text  _MRPlaybackQueueRequestSetIdentifiers
+0x1a70bcbc4  __TEXT,__text  _MRPlaybackQueueRequestSetIncludeAlignments
+0x1a70bcc20  __TEXT,__text  _MRPlaybackQueueRequestSetIncludeArtwork
+0x1a70bcb68  __TEXT,__text  _MRPlaybackQueueRequestSetIncludeInfo
+0x1a6e816fc  __TEXT,__text  _MRPlaybackQueueRequestSetIncludeLanguageOptions
+0x1a70bcb58  __TEXT,__text  _MRPlaybackQueueRequestSetIncludeLyrics
+0x1a6e81758  __TEXT,__text  _MRPlaybackQueueRequestSetIncludeMetadata
+0x1a70bcb60  __TEXT,__text  _MRPlaybackQueueRequestSetIncludeSections
+0x1a70bd504  __TEXT,__text  _MRPlaybackQueueRequestSetIsLegacyNowPlayingInfoRequest
+0x1a70bcdc0  __TEXT,__text  _MRPlaybackQueueRequestSetLabel
+0x1a70bcd0c  __TEXT,__text  _MRPlaybackQueueRequestSetRequestID
+0x1a70bd498  __TEXT,__text  _MRPlaybackQueueRequestSetReturnContentItemAssetsInUserCompletion
+0x1a70bd070  __TEXT,__text  _MRPlaybackQueueRequestShouldRequestItem
+0x1a70bd0c4  __TEXT,__text  _MRPlaybackQueueRequestShouldRequestItemNotConsideringMetadata
+0x1a6ed6084  __TEXT,__text  _MRPlaybackQueueSetQueueID
+0x1a6ed604c  __TEXT,__text  _MRPlaybackQueueSetRequestID
+0x1a6ed6044  __TEXT,__text  _MRPlaybackQueueSetResolvedPlayerPath
+0x1a6fa9148  __TEXT,__text  _MRPlaybackQueueToUserInfo
+0x1a6ee0c04  __TEXT,__text  _MRPlaybackSessionCopyIdentifier
+0x1a6ee0c74  __TEXT,__text  _MRPlaybackSessionCopyPlaybackSessionData
+0x1a6ee0c3c  __TEXT,__text  _MRPlaybackSessionCopyType
+0x1a6ee0bb0  __TEXT,__text  _MRPlaybackSessionCreate
+0x1a6ee0c90  __TEXT,__text  _MRPlaybackSessionCreateExternalRepresentation
+0x1a6ee0cac  __TEXT,__text  _MRPlaybackSessionCreateFromExternalRepresentation
+0x1a6f76464  __TEXT,__text  _MRPlaybackSessionMigrateFallbackReasonFromMRMediaRemoteError
+0x1a7004b9c  __TEXT,__text  _MRPlaybackSessionRequestCopyIdentifier
+0x1a7004b64  __TEXT,__text  _MRPlaybackSessionRequestCopyRequestID
+0x1a7004bd4  __TEXT,__text  _MRPlaybackSessionRequestCopyType
+0x1e0f8bf18  __DATA_CONST,__const  _MRPlayerPlaybackQueueNowPlayingItemChangedNotification
+0x1a707a394  __TEXT,__text  _MRPowerLogConnectionTransportTypeFromTransport
+0x1a707a35c  __TEXT,__text  _MRPowerLogDeviceTypeFromDeviceInfo
+0x1e0f8bf10  __DATA_CONST,__const  _MRPowerLogEventRemoteControlSession
+0x1e0f8bf08  __DATA_CONST,__const  _MRPowerLogInfoKeyClientBundleID
+0x1e0f8bf00  __DATA_CONST,__const  _MRPowerLogInfoKeyDeviceType
+0x1e0f8bef8  __DATA_CONST,__const  _MRPowerLogInfoKeyReason
+0x1e0f8bef0  __DATA_CONST,__const  _MRPowerLogInfoKeyRemoteControlConnectionID
+0x1e0f8bee8  __DATA_CONST,__const  _MRPowerLogInfoKeyRemoteControlConnectionIsActive
+0x1e0f8bee0  __DATA_CONST,__const  _MRPowerLogInfoKeyRemoteControlConnectionTransportType
+0x1a7084328  __TEXT,__text  _MRPrefersExpandedLockScreenPlatter
+0x1a701e40c  __TEXT,__text  _MRProcessIDForApplication
+0x1a701b7b0  __TEXT,__text  _MRProcessIsAirPlayDaemon
+0x1a701b8f8  __TEXT,__text  _MRProcessIsHomePodCannedDemo
+0x1a6e3b798  __TEXT,__text  _MRProcessIsMediaRemoteDaemon
+0x1a701b710  __TEXT,__text  _MRProcessIsMediaServerDaemon
+0x1a701b858  __TEXT,__text  _MRProcessIsUIService
+0x1a7025044  __TEXT,__text  _MRProtobufFromConnectionState
+0x1a702500c  __TEXT,__text  _MRProtobufFromGameControllerInputMode
+0x1a702501c  __TEXT,__text  _MRProtobufFromGameControllerProfile
+0x1a7025064  __TEXT,__text  _MRProtobufFromSendCommandAppOptions
+0x1a6e51480  __TEXT,__text  _MRRegisterTransaction
+0x1a701d02c  __TEXT,__text  _MRReplyToXPCMessageWithHandler
+0x1e0f8bed8  __DATA_CONST,__const  _MRRequestDetailsInitiatorAccessory
+0x1e0f8bed0  __DATA_CONST,__const  _MRRequestDetailsInitiatorAirPlay
+0x1e0f8bec8  __DATA_CONST,__const  _MRRequestDetailsInitiatorAirPlaySessionController
+0x1e0f8bec0  __DATA_CONST,__const  _MRRequestDetailsInitiatorAlarm
+0x1e0f8beb8  __DATA_CONST,__const  _MRRequestDetailsInitiatorAutomation
+0x1e0f8beb0  __DATA_CONST,__const  _MRRequestDetailsInitiatorBanner
+0x1e0f8bea8  __DATA_CONST,__const  _MRRequestDetailsInitiatorCLI
+0x1e0f8bea0  __DATA_CONST,__const  _MRRequestDetailsInitiatorCorianderLockScreen
+0x1e0f8be98  __DATA_CONST,__const  _MRRequestDetailsInitiatorFollowMyMusic
+0x1e0f8be90  __DATA_CONST,__const  _MRRequestDetailsInitiatorInfer
+0x1e0f8be88  __DATA_CONST,__const  _MRRequestDetailsInitiatorIntent
+0x1e0f8be80  __DATA_CONST,__const  _MRRequestDetailsInitiatorInternalWorkLoad
+0x1e0f8be78  __DATA_CONST,__const  _MRRequestDetailsInitiatorNowPlayingPlatter
+0x1e0f8be70  __DATA_CONST,__const  _MRRequestDetailsInitiatorPrewarming
+0x1e0f8be68  __DATA_CONST,__const  _MRRequestDetailsInitiatorProximity
+0x1e0f8be60  __DATA_CONST,__const  _MRRequestDetailsInitiatorRoutePicker
+0x1e0f8be58  __DATA_CONST,__const  _MRRequestDetailsInitiatorShortcut
+0x1e0f8be50  __DATA_CONST,__const  _MRRequestDetailsInitiatorSiri
+0x1e0f8be48  __DATA_CONST,__const  _MRRequestDetailsInitiatorStateRestoration
+0x1e0f8be40  __DATA_CONST,__const  _MRRequestDetailsInitiatorSystemEndpointHelper
+0x1e0f8be38  __DATA_CONST,__const  _MRRequestDetailsInitiatorTopCap
+0x1e0f8be30  __DATA_CONST,__const  _MRRequestDetailsInitiatorUnknownAPIUsage
+0x1e0f8be28  __DATA_CONST,__const  _MRRequestDetailsInitiatorVolumeSlider
+0x1e0f8be20  __DATA_CONST,__const  _MRRequestDetailsInitiatorWorkout
+0x1a70250a4  __TEXT,__text  _MRSendCommandAppOptionsFromProtobuf
+0x1a6fe29e0  __TEXT,__text  _MRServiceClientRemoteCommandCallback
+0x1a6fe208c  __TEXT,__text  _MRServiceClientRemotePlayerPathCommandCallback
+0x1a6fe3700  __TEXT,__text  _MRSetApplicationUserIdentity
+0x1a70c6554  __TEXT,__text  _MRSetGroupSessionContactAutoApprovalEnabled
+0x1a70c6488  __TEXT,__text  _MRSetGroupSessionNearbyContactDiscoveryEnabled
+0x1a7084368  __TEXT,__text  _MRSetPrefersExpandedLockScreenPlatter
+0x1a70843b4  __TEXT,__text  _MRSetUIServiceRelayEndpoint
+0x1a701b6c8  __TEXT,__text  _MRShouldUseLegacyMusicApplicationAsSystemMediaApp
+0x1e0f8be18  __DATA_CONST,__const  _MRSuggestionContextHome
+0x1e0f8be10  __DATA_CONST,__const  _MRSuggestionContextHomeScreen
+0x1a6efdc34  __TEXT,__text  _MRSupportedCommandsCalculateDeltas
+0x1a6e81038  __TEXT,__text  _MRSupportedCommandsIsEqual
+0x1a701c4c8  __TEXT,__text  _MRSupportsMediaControlReceiver
+0x1a7084408  __TEXT,__text  _MRSupportsSystemUIActivities
+0x1ebeb7268  __DATA,__common  _MRSupportsSystemUIActivitiesBlock
+0x1a6fdcc28  __TEXT,__text  _MRSwizzleClassMethod
+0x1a6fd2b54  __TEXT,__text  _MRSystemAppPlaybackQueueCopy
+0x1a6fd3c88  __TEXT,__text  _MRSystemAppPlaybackQueueCopyCustomData
+0x1a6fd3bcc  __TEXT,__text  _MRSystemAppPlaybackQueueCopyCustomDataIdentifier
+0x1a6fd2ea8  __TEXT,__text  _MRSystemAppPlaybackQueueCopyDescription
+0x1a6fd3208  __TEXT,__text  _MRSystemAppPlaybackQueueCopyFeatureName
+0x1a6fd37e0  __TEXT,__text  _MRSystemAppPlaybackQueueCopyGenericTrackIdentifiers
+0x1a6fd3abc  __TEXT,__text  _MRSystemAppPlaybackQueueCopyGeniusSeedTrack
+0x1a6fd3728  __TEXT,__text  _MRSystemAppPlaybackQueueCopyRadioStationStringIdentifier
+0x1a6fd37dc  __TEXT,__text  _MRSystemAppPlaybackQueueCopyTracklistStoreIDs
+0x1a6fd3090  __TEXT,__text  _MRSystemAppPlaybackQueueCopyTypeDescription
+0x1a6fd2a84  __TEXT,__text  _MRSystemAppPlaybackQueueCreate
+0x1a6fd3d48  __TEXT,__text  _MRSystemAppPlaybackQueueCreateExternalRepresentation
+0x1a6fd41f0  __TEXT,__text  _MRSystemAppPlaybackQueueCreateFromExternalRepresentation
+0x1a6fd4968  __TEXT,__text  _MRSystemAppPlaybackQueueCreateFromProtobuf
+0x1a6fd2d60  __TEXT,__text  _MRSystemAppPlaybackQueueDestroy
+0x1a6fd38a4  __TEXT,__text  _MRSystemAppPlaybackQueueGetFirstItemGenericTrackIdentifier
+0x1a6fd33dc  __TEXT,__text  _MRSystemAppPlaybackQueueGetLocalQueryData
+0x1a6fd48ec  __TEXT,__text  _MRSystemAppPlaybackQueueGetLocalQueryEncodingType
+0x1a6fd3470  __TEXT,__text  _MRSystemAppPlaybackQueueGetLocalQueryFirstItemMultiverseIDData
+0x1a6fd3504  __TEXT,__text  _MRSystemAppPlaybackQueueGetLocalQueryFirstItemPID
+0x1a6fd35c4  __TEXT,__text  _MRSystemAppPlaybackQueueGetLocalQueryRepeatMode
+0x1a6fd3564  __TEXT,__text  _MRSystemAppPlaybackQueueGetLocalQueryShuffleMode
+0x1a6fd3624  __TEXT,__text  _MRSystemAppPlaybackQueueGetRadioStationIDType
+0x1a6fd36ac  __TEXT,__text  _MRSystemAppPlaybackQueueGetRadioStationIntegerPID
+0x1a6fd3314  __TEXT,__text  _MRSystemAppPlaybackQueueGetReplaceIntent
+0x1a6fd3194  __TEXT,__text  _MRSystemAppPlaybackQueueGetSiriAssetInfo
+0x1a6fd3120  __TEXT,__text  _MRSystemAppPlaybackQueueGetSiriRecommendationIdentifier
+0x1a6fd327c  __TEXT,__text  _MRSystemAppPlaybackQueueGetSiriWHAMetricsInfo
+0x1a6fd3a20  __TEXT,__text  _MRSystemAppPlaybackQueueGetTracklistCollectionIdentifierSetData
+0x1a6fd39b8  __TEXT,__text  _MRSystemAppPlaybackQueueGetTracklistRepeatMode
+0x1a6fd3950  __TEXT,__text  _MRSystemAppPlaybackQueueGetTracklistShuffleMode
+0x1a6fd30cc  __TEXT,__text  _MRSystemAppPlaybackQueueGetType
+0x1a6fd3368  __TEXT,__text  _MRSystemAppPlaybackQueueGetUserInfo
+0x1a6fd4964  __TEXT,__text  _MRSystemAppPlaybackQueueInternalPrepareBundleIDForPlayback
+0x1a6fd30e8  __TEXT,__text  _MRSystemAppPlaybackQueueIsRequestingImmediatePlayback
+0x1a6fd3cc8  __TEXT,__text  _MRSystemAppPlaybackQueueSetCustomData
+0x1a6fd3c1c  __TEXT,__text  _MRSystemAppPlaybackQueueSetCustomDataIdentifier
+0x1a6fd3224  __TEXT,__text  _MRSystemAppPlaybackQueueSetFeatureName
+0x1a6fd38d8  __TEXT,__text  _MRSystemAppPlaybackQueueSetFirstItemGenericTrackIdentifier
+0x1a6fd3838  __TEXT,__text  _MRSystemAppPlaybackQueueSetGenericTrackIdentifiers
+0x1a6fd3b40  __TEXT,__text  _MRSystemAppPlaybackQueueSetGeniusSeedTrack
+0x1a6fd3104  __TEXT,__text  _MRSystemAppPlaybackQueueSetIsRequestingImmediatePlayback
+0x1a6fd340c  __TEXT,__text  _MRSystemAppPlaybackQueueSetLocalQueryData
+0x1a6fd34a0  __TEXT,__text  _MRSystemAppPlaybackQueueSetLocalQueryFirstItemMultiverseIDData
+0x1a6fd3534  __TEXT,__text  _MRSystemAppPlaybackQueueSetLocalQueryFirstItemPID
+0x1a6fd35f4  __TEXT,__text  _MRSystemAppPlaybackQueueSetLocalQueryRepeatMode
+0x1a6fd3594  __TEXT,__text  _MRSystemAppPlaybackQueueSetLocalQueryShuffleMode
+0x1a6fd3644  __TEXT,__text  _MRSystemAppPlaybackQueueSetRadioStationIDType
+0x1a6fd36e8  __TEXT,__text  _MRSystemAppPlaybackQueueSetRadioStationIntegerPID
+0x1a6fd3764  __TEXT,__text  _MRSystemAppPlaybackQueueSetRadioStationStringIdentifier
+0x1a6fd334c  __TEXT,__text  _MRSystemAppPlaybackQueueSetReplaceIntent
+0x1a6fd3330  __TEXT,__text  _MRSystemAppPlaybackQueueSetShouldOverrideManuallyCuratedQueue
+0x1a6fd31b0  __TEXT,__text  _MRSystemAppPlaybackQueueSetSiriAssetInfo
+0x1a6fd313c  __TEXT,__text  _MRSystemAppPlaybackQueueSetSiriRecommendationIdentifier
+0x1a6fd3298  __TEXT,__text  _MRSystemAppPlaybackQueueSetSiriWHAMetricsInfo
+0x1a6fd3a54  __TEXT,__text  _MRSystemAppPlaybackQueueSetTracklistCollectionIdentifierSetData
+0x1a6fd39ec  __TEXT,__text  _MRSystemAppPlaybackQueueSetTracklistRepeatMode
+0x1a6fd3984  __TEXT,__text  _MRSystemAppPlaybackQueueSetTracklistShuffleMode
+0x1a6fd3834  __TEXT,__text  _MRSystemAppPlaybackQueueSetTracklistStoreIDs
+0x1a6fd3384  __TEXT,__text  _MRSystemAppPlaybackQueueSetUserInfo
+0x1a6fd32f0  __TEXT,__text  _MRSystemAppPlaybackQueueShouldOverrideManuallyCuratedQueue
+0x1a6f8fd04  __TEXT,__text  _MRTelevisionConnect
+0x1a6ff4634  __TEXT,__text  _MRTelevisionControllerBeginDiscovery
+0x1a6ff4464  __TEXT,__text  _MRTelevisionControllerCreate
+0x1a6ff466c  __TEXT,__text  _MRTelevisionControllerEndDiscovery
+0x1a6ff44a4  __TEXT,__text  _MRTelevisionControllerIsDiscoveringDevices
+0x1a6ff44e4  __TEXT,__text  _MRTelevisionControllerSetDiscoveryCallback
+0x1a6ff458c  __TEXT,__text  _MRTelevisionControllerSetRemovalCallback
+0x1a6f8fcf0  __TEXT,__text  _MRTelevisionCopyCustomOrigin
+0x1a6f8fcdc  __TEXT,__text  _MRTelevisionCopyHostName
+0x1a6f8fcd8  __TEXT,__text  _MRTelevisionCopyName
+0x1a6f8fce0  __TEXT,__text  _MRTelevisionCopySystemBuildVersion
+0x1a6f8fcd4  __TEXT,__text  _MRTelevisionCopyUniqueIdentifier
+0x1a6f8fd2c  __TEXT,__text  _MRTelevisionDeletePairedDevice
+0x1a6f8fd08  __TEXT,__text  _MRTelevisionDisconnect
+0x1a6f8fd0c  __TEXT,__text  _MRTelevisionGetConnectionState
+0x1a6f8f298  __TEXT,__text  _MRTelevisionGetCurrentRTISourceSession
+0x1a6f8eed4  __TEXT,__text  _MRTelevisionGetCurrentTextEditingSession
+0x1a6f8f9a8  __TEXT,__text  _MRTelevisionGetGameControllerInputMode
+0x1a6f8eb8c  __TEXT,__text  _MRTelevisionGetHiliteMode
+0x1a6f8fce4  __TEXT,__text  _MRTelevisionGetNetworkPort
+0x1a6f8fd28  __TEXT,__text  _MRTelevisionGetPairedTelevisions
+0x1a6f8fc18  __TEXT,__text  _MRTelevisionGetVoiceRecordingState
+0x1a6f8fd00  __TEXT,__text  _MRTelevisionIsConnected
+0x1a6f8fd20  __TEXT,__text  _MRTelevisionIsPaired
+0x1a6f8fd18  __TEXT,__text  _MRTelevisionIsPairingAllowed
+0x1a6f8fd38  __TEXT,__text  _MRTelevisionPing
+0x1a6f8fc20  __TEXT,__text  _MRTelevisionProcessVirtualVoiceInputAudioData
+0x1a6f8f46c  __TEXT,__text  _MRTelevisionRegisterGameController
+0x1a6f8f528  __TEXT,__text  _MRTelevisionRegisterGameControllerWithProperties
+0x1a6f8ec84  __TEXT,__text  _MRTelevisionRegisterVirtualTouchDevice
+0x1a6f8fa2c  __TEXT,__text  _MRTelevisionRegisterVirtualVoiceInputDevice
+0x1a6f8eb18  __TEXT,__text  _MRTelevisionRequestHiliteModeExit
+0x1a6f8fd3c  __TEXT,__text  _MRTelevisionSendButtonEvent
+0x1a6f8fd34  __TEXT,__text  _MRTelevisionSendCustomData
+0x1a6f8f850  __TEXT,__text  _MRTelevisionSendGameControllerEvent
+0x1a6f8f8ec  __TEXT,__text  _MRTelevisionSendGameControllerEventV2
+0x1a6f8ee58  __TEXT,__text  _MRTelevisionSendHIDEvent
+0x1a6f8edbc  __TEXT,__text  _MRTelevisionSendVirtualTouchEvent
+0x1a7000028  __TEXT,__text  _MRTelevisionServiceDeletePairedDevice
+0x1a6ffff80  __TEXT,__text  _MRTelevisionServiceDeletePairingIdentity
+0x1a7000100  __TEXT,__text  _MRTelevisionServiceGetEndpoint
+0x1a6ffffd4  __TEXT,__text  _MRTelevisionServiceGetPairedDevices
+0x1a7000214  __TEXT,__text  _MRTelevisionServiceSendCustomData
+0x1a700019c  __TEXT,__text  _MRTelevisionServiceSetCustomDataCallback
+0x1a70000b8  __TEXT,__text  _MRTelevisionServiceSetEndpoint
+0x1a700008c  __TEXT,__text  _MRTelevisionServiceSetMessageLogging
+0x1a6f8fd10  __TEXT,__text  _MRTelevisionSetConnectionStateCallback
+0x1a6f8fd30  __TEXT,__text  _MRTelevisionSetCustomDataCallback
+0x1a6f8f6f8  __TEXT,__text  _MRTelevisionSetGameControllerInputModeCallback
+0x1a6f8f7a4  __TEXT,__text  _MRTelevisionSetGameControllerPropertiesCallback
+0x1a6f8ea6c  __TEXT,__text  _MRTelevisionSetHiliteModeCallback
+0x1a6f8fcec  __TEXT,__text  _MRTelevisionSetName
+0x1a6f8fce8  __TEXT,__text  _MRTelevisionSetNameCallback
+0x1a6f8fd1c  __TEXT,__text  _MRTelevisionSetPairingAllowedCallback
+0x1a6f8fd14  __TEXT,__text  _MRTelevisionSetPairingCallback
+0x1a6f8e8f4  __TEXT,__text  _MRTelevisionSetPinPairingCallback
+0x1a6f8f3c0  __TEXT,__text  _MRTelevisionSetRTICallback
+0x1a6f8effc  __TEXT,__text  _MRTelevisionSetTextEditingCallback
+0x1a6f8fb6c  __TEXT,__text  _MRTelevisionSetVoiceRecordingStateCallback
+0x1a6f8fcf8  __TEXT,__text  _MRTelevisionSetWantsNowPlayingArtworkUpdates
+0x1a6f8fcf4  __TEXT,__text  _MRTelevisionSetWantsNowPlayingUpdates
+0x1a6f8fcfc  __TEXT,__text  _MRTelevisionSetWantsVolumeControlAvailabilityUpdates
+0x1a6f8f224  __TEXT,__text  _MRTelevisionTextEditingClearText
+0x1a6f8f1b0  __TEXT,__text  _MRTelevisionTextEditingDeleteBackward
+0x1a6f8f0a8  __TEXT,__text  _MRTelevisionTextEditingInsert
+0x1a6f8f12c  __TEXT,__text  _MRTelevisionTextEditingSetText
+0x1a6f8fd24  __TEXT,__text  _MRTelevisionUnpair
+0x1a6f8f674  __TEXT,__text  _MRTelevisionUnregisterGameController
+0x1a6f8ec10  __TEXT,__text  _MRTelevisionWake
+0x1a70f7e30  __TEXT,__text  _MRTextEditingAttributesCreate
+0x1a70f7e74  __TEXT,__text  _MRTextEditingAttributesGetInputTraits
+0x1a70f7e70  __TEXT,__text  _MRTextEditingAttributesGetPrompt
+0x1a70f7e6c  __TEXT,__text  _MRTextEditingAttributesGetTitle
+0x1a70f7e98  __TEXT,__text  _MRTextEditingAttributesSetInputTraits
+0x1a70f7f1c  __TEXT,__text  _MRTextEditingSessionCreate
+0x1a70f7f64  __TEXT,__text  _MRTextEditingSessionGetAttributes
+0x1a70f7f5c  __TEXT,__text  _MRTextEditingSessionGetText
+0x1a70f7f58  __TEXT,__text  _MRTextEditingSessionGetUniqueIdentifier
+0x1a70f7f60  __TEXT,__text  _MRTextEditingSessionIsEditing
+0x1a70163ec  __TEXT,__text  _MRTimeUtilitiesGetProcessorTimeScale
+0x1a70164b8  __TEXT,__text  _MRTimeUtilsGetCurrentMilliseconds
+0x1a7016468  __TEXT,__text  _MRTimeUtilsGetCurrentNanoseconds
+0x1a70164e4  __TEXT,__text  _MRTimeUtilsGetCurrentSeconds
+0x1a70214c0  __TEXT,__text  _MRTransactionNameGetDescription
+0x1a7021708  __TEXT,__text  _MRTransactionPacketsCreateExternalRepresentation
+0x1a7021dd0  __TEXT,__text  _MRTransactionPacketsCreateFromExternalRepresentation
+0x1a7021860  __TEXT,__text  _MRTransactionPacketsGetKeys
+0x1a7020b58  __TEXT,__text  _MRTransactionPacketsGetShallowCopy
+0x1a6ee5aec  __TEXT,__text  _MRTypeAuditNowPlayingInfoDictionary
+0x1e0f8be08  __DATA_CONST,__const  _MRUIContextGroupSession
+0x1e0f8be00  __DATA_CONST,__const  _MRUIContextGroupSessionNearby
+0x1e0f8bdf8  __DATA_CONST,__const  _MRUIContextNowPlaying
+0x1e0f8bdf0  __DATA_CONST,__const  _MRUIContextRouteRecommendation
+0x1e0f8bde8  __DATA_CONST,__const  _MRUIContextScreenMirroring
+0x1e0f8bde0  __DATA_CONST,__const  _MRUIContextUnknown
+0x1a6fa7fb8  __TEXT,__text  _MRUniversalTrackIdentifierBaseIDIntegerFromURL
+0x1a6fa7fb4  __TEXT,__text  _MRUniversalTrackIdentifierCopyBaseIDFromURL
+0x1a6fa7fec  __TEXT,__text  _MRUniversalTrackIdentifierCopyTypeDescription
+0x1a6fa7e38  __TEXT,__text  _MRUniversalTrackIdentifierCreateURL
+0x1a6fa7ecc  __TEXT,__text  _MRUniversalTrackIdentifierCreateURLWithIntegerBaseID
+0x1a6fa7f2c  __TEXT,__text  _MRUniversalTrackIdentifierTypeFromURL
+0x1e0f8bdd8  __DATA_CONST,__const  _MRUpdateActiveSystemEndpointRequestUserInfoKey
+0x1a70844c8  __TEXT,__text  _MRUseInternalUI
+0x1e0f8bdd0  __DATA_CONST,__const  _MRUserSettingsSystemVolumeCapabilitiesOverrideDidChange
+0x1e0f8bdc8  __DATA_CONST,__const  _MRUserSettingsSystemVolumeOverrideDidChange
+0x1a6ef3f48  __TEXT,__text  _MRVideoThumbnailCreate
+0x1a6ef3fd0  __TEXT,__text  _MRVideoThumbnailCreateExternalRepresentation
+0x1a6ef3f9c  __TEXT,__text  _MRVideoThumbnailCreateFromExternalRepresentation
+0x1a6ef4008  __TEXT,__text  _MRVideoThumbnailGetImageData
+0x1a6ef400c  __TEXT,__text  _MRVideoThumbnailGetTime
+0x1a6fa8c88  __TEXT,__text  _MRVideoThumbnailRequestFromXPCMessage
+0x1a70ecfbc  __TEXT,__text  _MRVirtualTouchDeviceDescriptorCreate
+0x1a70ecfe0  __TEXT,__text  _MRVirtualTouchDeviceDescriptorGetScreenSize
+0x1a70ecfc8  __TEXT,__text  _MRVirtualTouchDeviceDescriptorIsAbsolute
+0x1a70ecfd4  __TEXT,__text  _MRVirtualTouchDeviceDescriptorIsDisplayIntegrated
+0x1a70ecfd8  __TEXT,__text  _MRVirtualTouchDeviceDescriptorSetDisplayIntegrated
+0x1a70ecfcc  __TEXT,__text  _MRVirtualTouchDeviceDescriptorSetIsAbsolute
+0x1a70ecfe4  __TEXT,__text  _MRVirtualTouchDeviceDescriptorSetScreenSize
+0x1a6fd4ea4  __TEXT,__text  _MRVirtualVoiceInputDeviceCreate
+0x1a6fd4f18  __TEXT,__text  _MRVirtualVoiceInputDeviceCreateExternalRepresentation
+0x1a6fd4ed8  __TEXT,__text  _MRVirtualVoiceInputDeviceCreateWithExternalRepresentation
+0x1a710eff8  __TEXT,__text  _MRVirtualVoiceInputDeviceDescriptorCopyDefaultFormat
+0x1a710ef88  __TEXT,__text  _MRVirtualVoiceInputDeviceDescriptorCopySupportedFormats
+0x1a710ef48  __TEXT,__text  _MRVirtualVoiceInputDeviceDescriptorCreate
+0x1a710f084  __TEXT,__text  _MRVirtualVoiceInputDeviceDescriptorCreateExternalRepresentation
+0x1a710ef54  __TEXT,__text  _MRVirtualVoiceInputDeviceDescriptorCreateFromExternalRepresentation
+0x1a710f030  __TEXT,__text  _MRVirtualVoiceInputDeviceDescriptorSetDefaultAudioFormat
+0x1a710efa4  __TEXT,__text  _MRVirtualVoiceInputDeviceDescriptorSetSupportedFormats
+0x1a6fd4f10  __TEXT,__text  _MRVirtualVoiceInputDeviceGetDescriptor
+0x1a6fd4f14  __TEXT,__text  _MRVirtualVoiceInputDeviceGetRecordingState
+0x1a6fd4f0c  __TEXT,__text  _MRVirtualVoiceInputDeviceGetUniqueIdentifier
+0x1a70acea4  __TEXT,__text  _MRVirtualVoiceInputGetDevices
+0x1a70ad058  __TEXT,__text  _MRVirtualVoiceInputProcessAudioData
+0x1a70acef8  __TEXT,__text  _MRVirtualVoiceInputRegisterDevice
+0x1a70ace0c  __TEXT,__text  _MRVirtualVoiceInputSetRecordingEndpoint
+0x1a70ace38  __TEXT,__text  _MRVirtualVoiceInputSetRecordingState
+0x1a70acfc0  __TEXT,__text  _MRVirtualVoiceInputSetRecordingStateCallback
+0x1a70acf5c  __TEXT,__text  _MRVirtualVoiceInputUnregisterDevice
+0x1a6fd4f34  __TEXT,__text  _MRVoiceRecordingStateCopyDescription
+0x1a6f177f0  __TEXT,__text  _NSStringFromMRAVDistantExternalDeviceCallbackFlags
+0x1a6f178ac  __TEXT,__text  _NSStringFromMRAVDistantExternalDeviceNotificationFlags
+0x1a6e633e4  __TEXT,__text  _NSStringFromMRAVEndpointConnectionType
+0x1a70222f8  __TEXT,__text  _NSStringFromMRClientVisibility
+0x1a7083058  __TEXT,__text  _NSStringFromMRNowPlayingActivityUIDuration
+0x1a70830b0  __TEXT,__text  _NSStringFromMRNowPlayingActivityUIState
+0x1a6f374b0  __TEXT,__text  _NSStringFromMROriginType
+0x1a7082db8  __TEXT,__text  _NSStringFromMRPlayerAudioSessionType
+0x1ee900230  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVClusterController
+0x1ee8ffb78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVConcreteOutputContext
+0x1ee8fffd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVConcreteOutputDevice
+0x1ef7b7cd0  __AUTH,__objc_data  _OBJC_CLASS_$_MRAVConcreteOutputDeviceDescriptionImpl
+0x1ee8ffe20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVConcreteRoutingDiscoverySession
+0x1ee8fd828  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVDiscoverySessionHelper
+0x1ee8ffdf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVDistantEndpoint
+0x1ee8ff830  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVDistantExternalDeviceFactory
+0x1ee8ffb50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVDistantOutputDevice
+0x1ef7b7ca8  __AUTH,__objc_data  _OBJC_CLASS_$_MRAVDistantOutputDeviceDescriptionImpl
+0x1ee8fec28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVDistantRoutingDiscoverySession
+0x1ee900398  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVEndpoint
+0x1ee8fd800  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVEndpointObserver
+0x1ee8fef48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVLightweightReconnaissanceSession
+0x1ee8fd7d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVLocalControlCenterEndpoint
+0x1ee8ffb28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVLocalEndpoint
+0x1ee8ffdd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVOutputContext
+0x1ee8ff970  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVOutputContextEndpoint
+0x1ee8fd7b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVOutputContextModification
+0x1ee900208  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVOutputDevice
+0x1ef7b7c58  __AUTH,__objc_data  _OBJC_CLASS_$_MRAVOutputDeviceDescription
+0x1ee8fffb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVOutputDeviceSourceInfo
+0x1ee8fdf08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVOutputDeviceSymbolProvider
+0x1ee8fd788  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVOutputDeviceTransport
+0x1ee8fdb98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVReconnaissanceSession
+0x1ef7b7c30  __AUTH,__objc_data  _OBJC_CLASS_$_MRAVRoomOutputDevice
+0x1ee8fff38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVRoutingDiscoverySession
+0x1ee8ff768  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVRoutingDiscoverySessionConfiguration
+0x1ef7b7c08  __AUTH,__objc_data  _OBJC_CLASS_$_MRAVRoutingDiscoverySessionOperation
+0x1ef7b7be0  __AUTH,__objc_data  _OBJC_CLASS_$_MRAVRoutingDiscoverySessionOperationReport
+0x1ee8ff740  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVRoutingDiscoverySessionWrapper
+0x1ef7b7bb8  __AUTH,__objc_data  _OBJC_CLASS_$_MRAVVirtualOutputDevice
+0x1ee8fd760  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAVVolumeClientEndpoint
+0x1ef7b7b90  __AUTH,__objc_data  _OBJC_CLASS_$_MRAVXPCPipeTransport
+0x1ef7b7b68  __AUTH,__objc_data  _OBJC_CLASS_$_MRActiveRoutesObserver
+0x1ef7b7b18  __AUTH,__objc_data  _OBJC_CLASS_$_MRActiveSystemEndpointAssertion
+0x1ef7b7af0  __AUTH,__objc_data  _OBJC_CLASS_$_MRAdjustVolumeMessage
+0x1ee8fd738  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAirPlayTransportConnection
+0x1ef7b7ac8  __AUTH,__objc_data  _OBJC_CLASS_$_MRAnimatedArtwork
+0x1ee8ff178  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRAppEntityPath
+0x1ee900050  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRApplicationActivity
+0x1ef7b7aa0  __AUTH,__objc_data  _OBJC_CLASS_$_MRApplicationConnection
+0x1ef7b7a78  __AUTH,__objc_data  _OBJC_CLASS_$_MRApplicationConnectionContext
+0x1ef7b7a50  __AUTH,__objc_data  _OBJC_CLASS_$_MRApplicationConnectionListener
+0x1ef7b7a28  __AUTH,__objc_data  _OBJC_CLASS_$_MRApplicationConnectionMessage
+0x1ef7b7a00  __AUTH,__objc_data  _OBJC_CLASS_$_MRApplicationConnectionMessageHeader
+0x1ef7b79d8  __AUTH,__objc_data  _OBJC_CLASS_$_MRApplicationConnectionProtocolMessage
+0x1ef7b79b0  __AUTH,__objc_data  _OBJC_CLASS_$_MRApplicationConnectionRequestInfo
+0x1ee8fff10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRArtwork
+0x1ef7b7988  __AUTH,__objc_data  _OBJC_CLASS_$_MRAudioBuffer
+0x1ef7b7938  __AUTH,__objc_data  _OBJC_CLASS_$_MRAudioFadeMessage
+0x1ef7b7910  __AUTH,__objc_data  _OBJC_CLASS_$_MRAudioFadeResponseMessage
+0x1ef7b78e8  __AUTH,__objc_data  _OBJC_CLASS_$_MRAudioIntentController
+0x1ef7b78c0  __AUTH,__objc_data  _OBJC_CLASS_$_MRAudioIntentDetails
+0x1ef7b7898  __AUTH,__objc_data  _OBJC_CLASS_$_MRBannerCenter
+0x1ee8fdb70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRBaseBannerRequest
+0x1ee8ff948  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRBlockGuard
+0x1ee8fe868  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRCBProductInfo
+0x1ee900c80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRClient
+0x1ee8fd710  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRClientUpdatesConfigMessage
+0x1ee8fdb48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRCodableGroupSessionParticipant
+0x1ee900870  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRColorComponents
+0x1ee9005c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRCommandInfo
+0x1ee8feac0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRCommandResult
+0x1ee8fdee0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRCompanionLinkClient
+0x1ee8fd6e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRCompositeMessage
+0x1ee8fd6c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRConcreteEndpoint
+0x1ee8fd698  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRConfigureConnectionMessage
+0x1ef7b77f8  __AUTH,__objc_data  _OBJC_CLASS_$_MRConfigureConnectionServiceMessage
+0x1ee8ffda8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRContentItem
+0x1ee8ffd80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRContentItemMetadata
+0x1ee8ff358  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRContentItemMetadataAudioFormat
+0x1ee8ff330  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRContentItemMetadataAudioRoute
+0x1ee8fdeb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRCoreUtilsPairingSession
+0x1ee8fde90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRCoreUtilsSystemPairingSession
+0x1ef7b77d0  __AUTH,__objc_data  _OBJC_CLASS_$_MRCreateApplicationConnectionMessage
+0x1ef7b77a8  __AUTH,__objc_data  _OBJC_CLASS_$_MRCreateHostedEndpointRequestMessage
+0x1ef7b7780  __AUTH,__objc_data  _OBJC_CLASS_$_MRCreateHostedEndpointResponseMessage
+0x1ee8fde68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRCriticalSectionCoordinator
+0x1ef7b7758  __AUTH,__objc_data  _OBJC_CLASS_$_MRCriticalSectionMonitor
+0x1ef7b7730  __AUTH,__objc_data  _OBJC_CLASS_$_MRCriticalSectionToken
+0x1ef7b7708  __AUTH,__objc_data  _OBJC_CLASS_$_MRCryptoPairingIdentity
+0x1ef7b76e0  __AUTH,__objc_data  _OBJC_CLASS_$_MRCryptoPairingMessage
+0x1ee8fde40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRCryptoPairingSession
+0x1ef7b76b8  __AUTH,__objc_data  _OBJC_CLASS_$_MRCryptoPairingSessionBlockDelegate
+0x1ef7b7690  __AUTH,__objc_data  _OBJC_CLASS_$_MRDataArtwork
+0x1ee8ff678  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRDestination
+0x1ee8fee58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRDestinationResolver
+0x1ee8fee30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRDestinationResolverDependencies
+0x1ee8fe3e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRDeviceIdentifierSymbolProvider
+0x1ee900708  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRDeviceInfo
+0x1ee8fd670  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRDeviceInfoMessage
+0x1ee8fd648  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRDeviceInfoOutputDevice
+0x1ee900370  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRDeviceInfoRequest
+0x1ee8fd620  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRDeviceInfoUpdateMessage
+0x1ee8fdb20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRDiscoveredGroupSession
+0x1ef7b7668  __AUTH,__objc_data  _OBJC_CLASS_$_MRDiscoveryUpdateEndpointsMessage
+0x1ee8fd5f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRDiscoveryUpdateOutputDevicesMessage
+0x1ee8fe3b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRDistantExternalDevice
+0x1ef7b7640  __AUTH,__objc_data  _OBJC_CLASS_$_MREmulatedGameController
+0x1ee8fea98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRExpanseManager
+0x1ee8fd5d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRExternalClientConnection
+0x1ee8fe390  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRExternalDevice
+0x1ee8fdaf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRExternalDeviceConnectionDetails
+0x1ef7b7578  __AUTH,__objc_data  _OBJC_CLASS_$_MRExternalDevicePairingSession
+0x1ee8fde18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRExternalDeviceTransport
+0x1ee8fd5a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRExternalDeviceTransportConnection
+0x1ef7b7550  __AUTH,__objc_data  _OBJC_CLASS_$_MRExternalDeviceTransportConnectionHandle
+0x1ef7b7528  __AUTH,__objc_data  _OBJC_CLASS_$_MRExternalJSONClientConnection
+0x1ee8fe368  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRExternalOutputContextDataSource
+0x1ef7b7500  __AUTH,__objc_data  _OBJC_CLASS_$_MRFetchableArtwork
+0x1ef7b74d8  __AUTH,__objc_data  _OBJC_CLASS_$_MRGameControllerMessage
+0x1ef7b74b0  __AUTH,__objc_data  _OBJC_CLASS_$_MRGameControllerPropertiesMessage
+0x1ef7b7488  __AUTH,__objc_data  _OBJC_CLASS_$_MRGenericMessage
+0x1ef7b7460  __AUTH,__objc_data  _OBJC_CLASS_$_MRGetKeyboardSessionMessage
+0x1ef7b7438  __AUTH,__objc_data  _OBJC_CLASS_$_MRGetRemoteTextInputSessionMessage
+0x1ef7b7410  __AUTH,__objc_data  _OBJC_CLASS_$_MRGetVoiceInputDevicesMessage
+0x1ef7b73e8  __AUTH,__objc_data  _OBJC_CLASS_$_MRGetVoiceInputDevicesResponseMessage
+0x1ef7b73c0  __AUTH,__objc_data  _OBJC_CLASS_$_MRGetVolumeControlCapabilitiesMessage
+0x1ef7b7398  __AUTH,__objc_data  _OBJC_CLASS_$_MRGetVolumeControlCapabilitiesResultMessage
+0x1ef7b7370  __AUTH,__objc_data  _OBJC_CLASS_$_MRGetVolumeMessage
+0x1ef7b7348  __AUTH,__objc_data  _OBJC_CLASS_$_MRGetVolumeMutedMessage
+0x1ee8ff498  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRGetVolumeMutedResultMessage
+0x1ef7b7320  __AUTH,__objc_data  _OBJC_CLASS_$_MRGetVolumeResultMessage
+0x1ee8fe340  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRGroupComposition
+0x1ef7b72f8  __AUTH,__objc_data  _OBJC_CLASS_$_MRGroupSessionAssertion
+0x1ef7b72d0  __AUTH,__objc_data  _OBJC_CLASS_$_MRGroupSessionBannerRequest
+0x1ee8fd580  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRGroupSessionDiscovery
+0x1ee8fd558  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRGroupSessionEligibilityMonitor
+0x1ee900500  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRGroupSessionEligibilityStatus
+0x1ef7b72a8  __AUTH,__objc_data  _OBJC_CLASS_$_MRGroupSessionHandoffCoordinator
+0x1ef7b7280  __AUTH,__objc_data  _OBJC_CLASS_$_MRGroupSessionHandoffDevice
+0x1ee8fe318  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRGroupSessionHostInfo
+0x1ee9004d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRGroupSessionInfo
+0x1ef7b7258  __AUTH,__objc_data  _OBJC_CLASS_$_MRGroupSessionProvider
+0x1ee8fe2f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRGroupSessionToken
+0x1ee8fe2c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRGroupSymbolProvider
+0x1ee8fd508  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRGroupTopologyModificationRequest
+0x1ef7b7230  __AUTH,__objc_data  _OBJC_CLASS_$_MRHeadphonesRouteDetectorDataSource
+0x1ee8fd4e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRIDSClientConnection
+0x1ee8fd4b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRIDSCompanionConnection
+0x1ee8fd490  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRIDSCompanionMessage
+0x1ef7b7208  __AUTH,__objc_data  _OBJC_CLASS_$_MRIDSCompanionTransport
+0x1ee8fd468  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRIDSCompanionTransportConnection
+0x1ee8fdad0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRIRNode
+0x1ee8fdaa8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRIRRoute
+0x1ee8fec00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRImageUtilities
+0x1ef7b71e0  __AUTH,__objc_data  _OBJC_CLASS_$_MRInvalidateApplicationConnectionMessage
+0x1ef7b71b8  __AUTH,__objc_data  _OBJC_CLASS_$_MRKeyboardMessage
+0x1ee8ff088  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRLanguageOption
+0x1ee8ff060  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRLanguageOptionGroup
+0x1ef7b7190  __AUTH,__objc_data  _OBJC_CLASS_$_MRLazyProxy
+0x1ef7b7168  __AUTH,__objc_data  _OBJC_CLASS_$_MRLegacyController
+0x1ef7b7140  __AUTH,__objc_data  _OBJC_CLASS_$_MRLegacySendHIDEventMessage
+0x1ee8fd440  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRLegacyVolumeControlCapabilitiesDidChangeMessage
+0x1ef7b7118  __AUTH,__objc_data  _OBJC_CLASS_$_MRLocalVolumeHUDPresentationRequest
+0x1ee8fd418  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRLogBuffer
+0x1ef7b70f0  __AUTH,__objc_data  _OBJC_CLASS_$_MRMediaControls
+0x1ef7b70c8  __AUTH,__objc_data  _OBJC_CLASS_$_MRMediaControlsConfiguration
+0x1ef7b70a0  __AUTH,__objc_data  _OBJC_CLASS_$_MRMediaControlsCustomRow
+0x1ee900b18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRMediaRemoteService
+0x1ee900af0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRMediaRemoteServiceClient
+0x1ee8fe6b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRMediaSuggestion
+0x1ef7b7078  __AUTH,__objc_data  _OBJC_CLASS_$_MRMediaSuggestionController
+0x1ef7b7050  __AUTH,__objc_data  _OBJC_CLASS_$_MRMediaSuggestionElectedDeviceObserver
+0x1ee8fe688  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRMediaSuggestionPreferences
+0x1ee8fe660  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRMediaSuggestionRequest
+0x1ee8fe2a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRMediaSuggestionRequestOptions
+0x1ee9004b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRMediaUserState
+0x1ef7b7028  __AUTH,__objc_data  _OBJC_CLASS_$_MRMicrophoneConnectionRequestMessage
+0x1ef7b7000  __AUTH,__objc_data  _OBJC_CLASS_$_MRMicrophoneConnectionResponseMessage
+0x1ef7b6f88  __AUTH,__objc_data  _OBJC_CLASS_$_MRModifyOutputContextRequestMessage
+0x1ef7b6f60  __AUTH,__objc_data  _OBJC_CLASS_$_MRMusicHandoffEvent
+0x1ef7b6f38  __AUTH,__objc_data  _OBJC_CLASS_$_MRMusicHandoffSession
+0x1ee900028  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRMutableApplicationActivity
+0x1ef7b6ee8  __AUTH,__objc_data  _OBJC_CLASS_$_MRMutableTextEditingAttributes
+0x1ef7b6ec0  __AUTH,__objc_data  _OBJC_CLASS_$_MRMutableTextEditingSession
+0x1ef7b6e70  __AUTH,__objc_data  _OBJC_CLASS_$_MRMutableVirtualVoiceInputDeviceDescriptor
+0x1ef7b6e48  __AUTH,__objc_data  _OBJC_CLASS_$_MRMuteVolumeMessage
+0x1ee900ac8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNotificationClient
+0x1ef7b6df8  __AUTH,__objc_data  _OBJC_CLASS_$_MRNotificationMessage
+0x1ee900aa0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNotificationServiceClient
+0x1ef7b6dd0  __AUTH,__objc_data  _OBJC_CLASS_$_MRNowPlayingAnimatedArtwork
+0x1ee8fe548  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingArtwork
+0x1ee8fe520  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingArtworkImage
+0x1ee8fd3c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingAudioFormatApplication
+0x1ee8fda80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingAudioFormatContentInfo
+0x1ee8fd3a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingAudioFormatController
+0x1ee900348  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingClient
+0x1ee900168  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingClientRequests
+0x1ee8ff470  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingController
+0x1ee8ff3a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingControllerConfiguration
+0x1ee8fede0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingControllerDestination
+0x1ee8fecc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingControllerHelper
+0x1ee900438  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingOriginClient
+0x1ee900a78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingOriginClientManager
+0x1ee900668  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingOriginClientRequests
+0x1ee900320  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingPlayerClient
+0x1ee8feca0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingPlayerResponse
+0x1ef7b6d80  __AUTH,__objc_data  _OBJC_CLASS_$_MRNowPlayingPushTokenManager
+0x1ee8ff150  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingRequest
+0x1ef7b6d58  __AUTH,__objc_data  _OBJC_CLASS_$_MRNowPlayingSession
+0x1ee8fd378  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingSessionConfiguration
+0x1ef7b6d30  __AUTH,__objc_data  _OBJC_CLASS_$_MRNowPlayingSessionController
+0x1ee8fd350  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingSessionDevice
+0x1ee8fd328  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRNowPlayingState
+0x1ee8fda58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MROSTransaction
+0x1ee900c58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MROrigin
+0x1ee8fd300  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MROriginClientPropertiesMessage
+0x1ee8ffb00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MROutputContextController
+0x1ee8ffad8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MROutputContextDataSource
+0x1ef7b6ce0  __AUTH,__objc_data  _OBJC_CLASS_$_MRPasscodeCredentials
+0x1ee8fd2d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPersistentTimer
+0x1ee8ffee8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPlaybackQueue
+0x1ee8fddf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPlaybackQueueClient
+0x1ee8fe4f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPlaybackQueueParticipant
+0x1ee8fe278  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPlaybackQueueParticipantRequest
+0x1ee9000a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPlaybackQueueRequest
+0x1ee8fd2b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPlaybackQueueRequestMessage
+0x1ee9007a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPlaybackQueueSubscriptionController
+0x1ee8fd288  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPlaybackSession
+0x1ef7b6c90  __AUTH,__objc_data  _OBJC_CLASS_$_MRPlaybackSessionMigrateBeginMessage
+0x1ef7b6c68  __AUTH,__objc_data  _OBJC_CLASS_$_MRPlaybackSessionMigrateEndMessage
+0x1ef7b6c40  __AUTH,__objc_data  _OBJC_CLASS_$_MRPlaybackSessionMigratePostMessage
+0x1ee8fd260  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPlaybackSessionMigrateRequest
+0x1ef7b6c18  __AUTH,__objc_data  _OBJC_CLASS_$_MRPlaybackSessionMigrateRequestMessage
+0x1ef7b6bf0  __AUTH,__objc_data  _OBJC_CLASS_$_MRPlaybackSessionMigrateResponseMessage
+0x1ee8fd238  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPlaybackSessionRequest
+0x1ee8fd210  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPlaybackSessionRequestMessage
+0x1ee8fd1e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPlaybackSessionResponseMessage
+0x1ee900c30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPlayer
+0x1ee8fd1c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPlayerClientParticipantsUpdateMessage
+0x1ee8fd198  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPlayerClientPropertiesMessage
+0x1ee900c08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPlayerPath
+0x1ee8fd170  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRPowerLogger
+0x1ef7b6bc8  __AUTH,__objc_data  _OBJC_CLASS_$_MRPresentRouteAuthorizationStatusMessage
+0x1ef7b6ba0  __AUTH,__objc_data  _OBJC_CLASS_$_MRPromptForRouteAuthorizationMessage
+0x1ef7b6b78  __AUTH,__objc_data  _OBJC_CLASS_$_MRPromptForRouteAuthorizationResponseMessage
+0x1ef7b6b50  __AUTH,__objc_data  _OBJC_CLASS_$_MRProtobufSerialization
+0x1ee8fd148  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRProtocolClientConnection
+0x1ee8ff628  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRProtocolMessage
+0x1ee8fd120  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRProtocolMessageLogger
+0x1ee8fd0f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRProtocolMessageOptions
+0x1ee8fd0d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRProximityProvider
+0x1ee8fddc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRRapportTransport
+0x1ef7b6ad8  __AUTH,__objc_data  _OBJC_CLASS_$_MRRapportTransportConnection
+0x1ee8fe4d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRRateLimiter
+0x1ef7b6ab0  __AUTH,__objc_data  _OBJC_CLASS_$_MRRegisterForGameControllerEventsMessage
+0x1ef7b6a88  __AUTH,__objc_data  _OBJC_CLASS_$_MRRegisterGameControllerMessage
+0x1ef7b6a60  __AUTH,__objc_data  _OBJC_CLASS_$_MRRegisterGameControllerResponseMessage
+0x1ef7b6a38  __AUTH,__objc_data  _OBJC_CLASS_$_MRRegisterHIDDeviceMessage
+0x1ef7b6a10  __AUTH,__objc_data  _OBJC_CLASS_$_MRRegisterHIDDeviceResultMessage
+0x1ef7b69e8  __AUTH,__objc_data  _OBJC_CLASS_$_MRRegisterVoiceInputDeviceMessage
+0x1ef7b69c0  __AUTH,__objc_data  _OBJC_CLASS_$_MRRegisterVoiceInputDeviceResponseMessage
+0x1ef7b6998  __AUTH,__objc_data  _OBJC_CLASS_$_MRRelevantRouteDetector
+0x1ee8fda30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRRemoteArtwork
+0x1ef7b6920  __AUTH,__objc_data  _OBJC_CLASS_$_MRRemoteTextInputMessage
+0x1ee8fd0a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRRemoveClientMessage
+0x1ef7b68f8  __AUTH,__objc_data  _OBJC_CLASS_$_MRRemoveFromParentGroupMessage
+0x1ef7b68d0  __AUTH,__objc_data  _OBJC_CLASS_$_MRRemovePlayerMessage
+0x1ef7b68a8  __AUTH,__objc_data  _OBJC_CLASS_$_MRRemoveSyncedEndpointsMessage
+0x1ee8fd080  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRRemoveSyncedOutputDevicesMessage
+0x1ee8fef20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRRequestDetails
+0x1ef7b6880  __AUTH,__objc_data  _OBJC_CLASS_$_MRRequestGroupSessionMessage
+0x1ef7b6858  __AUTH,__objc_data  _OBJC_CLASS_$_MRResultReason
+0x1ee8fe840  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRRollingWindowActivityTracker
+0x1ef7b6830  __AUTH,__objc_data  _OBJC_CLASS_$_MRRouteBannerRequest
+0x1ee8fd058  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRScreenMirroringObserver
+0x1ef7b6808  __AUTH,__objc_data  _OBJC_CLASS_$_MRSendButtonEventMessage
+0x1ee8fd008  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRSendCommandHandlerDialog
+0x1ee8fcfe0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRSendCommandHandlerDialogAction
+0x1ef7b67e0  __AUTH,__objc_data  _OBJC_CLASS_$_MRSendCommandHandlerEvent
+0x1ef7b67b8  __AUTH,__objc_data  _OBJC_CLASS_$_MRSendCommandMessage
+0x1ef7b6790  __AUTH,__objc_data  _OBJC_CLASS_$_MRSendCommandResultMessage
+0x1ee8fea70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRSendCommandResultStatus
+0x1ef7b6768  __AUTH,__objc_data  _OBJC_CLASS_$_MRSendLyricsEventMessage
+0x1ef7b6740  __AUTH,__objc_data  _OBJC_CLASS_$_MRSendPackedVirtualTouchEventMessage
+0x1ef7b6718  __AUTH,__objc_data  _OBJC_CLASS_$_MRSendVirtualTouchEventMessage
+0x1ef7b66f0  __AUTH,__objc_data  _OBJC_CLASS_$_MRSendVoiceInputMessage
+0x1ef7b66c8  __AUTH,__objc_data  _OBJC_CLASS_$_MRSetArtworkMessage
+0x1ee8fcfb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRSetConnectionStateMessage
+0x1ef7b66a0  __AUTH,__objc_data  _OBJC_CLASS_$_MRSetConversationDetectionEnabledMessage
+0x1ee8fcf90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRSetDefaultSupportedCommandsMessage
+0x1ee8fcf68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRSetDiscoveryModeMessage
+0x1ef7b6678  __AUTH,__objc_data  _OBJC_CLASS_$_MRSetHiliteModeMessage
+0x1ef7b6650  __AUTH,__objc_data  _OBJC_CLASS_$_MRSetListeningModeMessage
+0x1ee8fcf40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRSetNowPlayingClientMessage
+0x1ee8fcf18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRSetNowPlayingPlayerMessage
+0x1ef7b6628  __AUTH,__objc_data  _OBJC_CLASS_$_MRSetReadyStateMessage
+0x1ef7b6600  __AUTH,__objc_data  _OBJC_CLASS_$_MRSetRecordingStateMessage
+0x1ee8fcef0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRSetStateMessage
+0x1ef7b65d8  __AUTH,__objc_data  _OBJC_CLASS_$_MRSetVolumeMessage
+0x1ee9001b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRSharedSettings
+0x1ef7b65b0  __AUTH,__objc_data  _OBJC_CLASS_$_MRStaticRouteBannerRequest
+0x1ef7b6588  __AUTH,__objc_data  _OBJC_CLASS_$_MRStreamTransportConnection
+0x1ee8fcec8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRSupportedProtocolMessages
+0x1ef7b6560  __AUTH,__objc_data  _OBJC_CLASS_$_MRSuspendDisconnectionPauseConfiguration
+0x1ee8fcea0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRSyncOutputDevicesMessage
+0x1ee8fea48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRSystemMediaBundles
+0x1ef7b64e8  __AUTH,__objc_data  _OBJC_CLASS_$_MRTextEditingAttributes
+0x1ef7b64c0  __AUTH,__objc_data  _OBJC_CLASS_$_MRTextEditingSession
+0x1ef7b6498  __AUTH,__objc_data  _OBJC_CLASS_$_MRTextInputMessage
+0x1ee8fce78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRTimer
+0x1ef7b6470  __AUTH,__objc_data  _OBJC_CLASS_$_MRTransactionDestination
+0x1ef7b6448  __AUTH,__objc_data  _OBJC_CLASS_$_MRTransactionMessage
+0x1ef7b6420  __AUTH,__objc_data  _OBJC_CLASS_$_MRTransactionPacket
+0x1ef7b63d0  __AUTH,__objc_data  _OBJC_CLASS_$_MRTransactionPacketizer
+0x1ef7b63a8  __AUTH,__objc_data  _OBJC_CLASS_$_MRTransactionSource
+0x1ee8fe250  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRTranscriptAlignment
+0x1ee8fce28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRUIControllerProvider
+0x1ef7b6380  __AUTH,__objc_data  _OBJC_CLASS_$_MRUnregisterGameControllerMessage
+0x1ee8fea20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRUpdateActiveSystemEndpointMessage
+0x1ee8fe9f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRUpdateActiveSystemEndpointRequest
+0x1ee8fe228  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRUpdateActiveSystemEndpointResponse
+0x1ee8fce00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRUpdateClientMessage
+0x1ee8fcdd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRUpdateContentItemArtworkMessage
+0x1ee8fcdb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRUpdateContentItemMessage
+0x1ee8fcd88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRUpdatePlayerMessage
+0x1ef7b6358  __AUTH,__objc_data  _OBJC_CLASS_$_MRUpdateSyncedEndpointsMessage
+0x1ee900488  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRUserIdentity
+0x1ee900758  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRUserSettings
+0x1ef7b6330  __AUTH,__objc_data  _OBJC_CLASS_$_MRV1NowPlayingController
+0x1ee8fedb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRV2NowPlayingController
+0x1ef7b6308  __AUTH,__objc_data  _OBJC_CLASS_$_MRV3NowPlayingController
+0x1ef7b62b8  __AUTH,__objc_data  _OBJC_CLASS_$_MRVirtualOutputContext
+0x1ef7b6240  __AUTH,__objc_data  _OBJC_CLASS_$_MRVirtualVoiceInputDevice
+0x1ef7b6218  __AUTH,__objc_data  _OBJC_CLASS_$_MRVirtualVoiceInputDeviceDescriptor
+0x1ee8fcd60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRVolumeControlCapabilitiesDidChangeMessage
+0x1ee8fcd38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRVolumeDidChangeMessage
+0x1ee8fcd10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRVolumeHUDPresentationRequest
+0x1ef7b61f0  __AUTH,__objc_data  _OBJC_CLASS_$_MRVolumeMutedDidChangeMessage
+0x1ef7b61c8  __AUTH,__objc_data  _OBJC_CLASS_$_MRWakeDeviceMessage
+0x1ee8febb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRWeakProxy
+0x1ee900a50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MRXPCConnection
+0x1ee8fcce8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRAVAirPlaySecuritySettingsProtobuf
+0x1ee8feef8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRAVEndpointDescriptorProtobuf
+0x1ef7b61a0  __AUTH,__objc_data  _OBJC_CLASS_$__MRAVModifyOutputContextRequestProtobuf
+0x1ee8ffab0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRAVOutputDeviceDescriptorProtobuf
+0x1ee8ffa88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRAVOutputDeviceSourceInfoProtobuf
+0x1ef7b6178  __AUTH,__objc_data  _OBJC_CLASS_$__MRAVRouteQueryProtobuf
+0x1ef7b6150  __AUTH,__objc_data  _OBJC_CLASS_$__MRAdjustVolumeMessageProtobuf
+0x1ef7b6128  __AUTH,__objc_data  _OBJC_CLASS_$__MRAirPlayLeaderInfoProtobuf
+0x1ef7b6100  __AUTH,__objc_data  _OBJC_CLASS_$__MRAnimatedArtworkProtobuf
+0x1ee8ff128  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRAppEntityPathProtobuf
+0x1ef7b60d8  __AUTH,__objc_data  _OBJC_CLASS_$__MRApplicationConnectionContextProtobuf
+0x1ef7b60b0  __AUTH,__objc_data  _OBJC_CLASS_$__MRApplicationConnectionMessageHeaderProtobuf
+0x1ef7b6088  __AUTH,__objc_data  _OBJC_CLASS_$__MRApplicationConnectionMessageProtobuf
+0x1ef7b6060  __AUTH,__objc_data  _OBJC_CLASS_$__MRApplicationConnectionProtocolMessageProtobuf
+0x1ef7b6038  __AUTH,__objc_data  _OBJC_CLASS_$__MRApplicationConnectionRequestInfoProtobuf
+0x1ef7b6010  __AUTH,__objc_data  _OBJC_CLASS_$__MRAudioBufferProtobuf
+0x1ef7b5fe8  __AUTH,__objc_data  _OBJC_CLASS_$__MRAudioDataBlockProtobuf
+0x1ef7b5fc0  __AUTH,__objc_data  _OBJC_CLASS_$__MRAudioFadeMessageProtobuf
+0x1ef7b5f98  __AUTH,__objc_data  _OBJC_CLASS_$__MRAudioFadeResponseMessageProtobuf
+0x1ee8ff308  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRAudioFormatProtobuf
+0x1ef7b5f70  __AUTH,__objc_data  _OBJC_CLASS_$__MRAudioFormatSettingsProtobuf
+0x1ee8ff2e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRAudioRouteProtobuf
+0x1ef7b5f48  __AUTH,__objc_data  _OBJC_CLASS_$__MRAudioStreamPacketDescriptionProtobuf
+0x1ef7b5f20  __AUTH,__objc_data  _OBJC_CLASS_$__MRAudioTimeProtobuf
+0x1ee8fccc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRClientUpdatesConfigurationProtobuf
+0x1ef7b5ef8  __AUTH,__objc_data  _OBJC_CLASS_$__MRColorProtobuf
+0x1ee8fcc98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRCommandInfoProtobuf
+0x1ef7b5ed0  __AUTH,__objc_data  _OBJC_CLASS_$__MRCommandOptionsProtobuf
+0x1ee8fcc70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRConfigureConnectionMessageProtobuf
+0x1ee8ffd58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRContentItemMetadataProtobuf
+0x1ee8ffd30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRContentItemProtobuf
+0x1ef7b5ea8  __AUTH,__objc_data  _OBJC_CLASS_$__MRCreateApplicationConnectionMessageProtobuf
+0x1ef7b5e80  __AUTH,__objc_data  _OBJC_CLASS_$__MRCreateHostedEndpointRequestProtobuf
+0x1ef7b5e58  __AUTH,__objc_data  _OBJC_CLASS_$__MRCreateHostedEndpointResponseProtobuf
+0x1ef7b5e30  __AUTH,__objc_data  _OBJC_CLASS_$__MRCryptoPairingMessageProtobuf
+0x1ef7b5e08  __AUTH,__objc_data  _OBJC_CLASS_$__MRDataArtworkProtobuf
+0x1ef7b5de0  __AUTH,__objc_data  _OBJC_CLASS_$__MRDestinationProtobuf
+0x1ee900618  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRDeviceInfoMessageProtobuf
+0x1ee8ff920  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRDiagnosticProtobuf
+0x1ee8ff5d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRDictionaryProtobuf
+0x1ee8fe818  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRDiscoverySessionConfigurationProtobuf
+0x1ef7b5db8  __AUTH,__objc_data  _OBJC_CLASS_$__MRDiscoveryUpdateEndpointsProtobufMessage
+0x1ee8fcc48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRDiscoveryUpdateOutputDevicesProtobufMessage
+0x1ee8fdd78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRErrorProtobuf
+0x1ef7b5d90  __AUTH,__objc_data  _OBJC_CLASS_$__MRGameControllerAccelerationProtobuf
+0x1ef7b5d68  __AUTH,__objc_data  _OBJC_CLASS_$__MRGameControllerButtonsProtobuf
+0x1ef7b5d40  __AUTH,__objc_data  _OBJC_CLASS_$__MRGameControllerDigitizerProtobuf
+0x1ef7b5d18  __AUTH,__objc_data  _OBJC_CLASS_$__MRGameControllerMessageProtobuf
+0x1ef7b5cf0  __AUTH,__objc_data  _OBJC_CLASS_$__MRGameControllerMotionProtobuf
+0x1ef7b5cc8  __AUTH,__objc_data  _OBJC_CLASS_$__MRGameControllerPropertiesMessageProtobuf
+0x1ef7b5ca0  __AUTH,__objc_data  _OBJC_CLASS_$__MRGameControllerPropertiesProtobuf
+0x1ef7b5c78  __AUTH,__objc_data  _OBJC_CLASS_$__MRGenericMessageProtobuf
+0x1ef7b5c50  __AUTH,__objc_data  _OBJC_CLASS_$__MRGetKeyboardSessionProtobuf
+0x1ef7b5c28  __AUTH,__objc_data  _OBJC_CLASS_$__MRGetRemoteTextInputSessionProtobuf
+0x1ef7b5c00  __AUTH,__objc_data  _OBJC_CLASS_$__MRGetStateMessageProtobuf
+0x1ef7b5bd8  __AUTH,__objc_data  _OBJC_CLASS_$__MRGetVoiceInputDevicesMessageProtobuf
+0x1ef7b5bb0  __AUTH,__objc_data  _OBJC_CLASS_$__MRGetVoiceInputDevicesResponseMessageProtobuf
+0x1ef7b5b88  __AUTH,__objc_data  _OBJC_CLASS_$__MRGetVolumeControlCapabilitiesMessageProtobuf
+0x1ef7b5b60  __AUTH,__objc_data  _OBJC_CLASS_$__MRGetVolumeControlCapabilitiesResultMessageProtobuf
+0x1ef7b5b38  __AUTH,__objc_data  _OBJC_CLASS_$__MRGetVolumeMessageProtobuf
+0x1ef7b5b10  __AUTH,__objc_data  _OBJC_CLASS_$__MRGetVolumeMutedMessageProtobuf
+0x1ee8ff448  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRGetVolumeMutedResultMessageProtobuf
+0x1ef7b5ae8  __AUTH,__objc_data  _OBJC_CLASS_$__MRGetVolumeResultMessageProtobuf
+0x1ef7b5ac0  __AUTH,__objc_data  _OBJC_CLASS_$__MRGroupSessionErrorReplyMessageProtobuf
+0x1ef7b5a98  __AUTH,__objc_data  _OBJC_CLASS_$__MRGroupSessionFastSyncMessageProtobuf
+0x1ef7b5a70  __AUTH,__objc_data  _OBJC_CLASS_$__MRGroupSessionIdentityShareMessageProtobuf
+0x1ef7b5a48  __AUTH,__objc_data  _OBJC_CLASS_$__MRGroupSessionIdentityShareReplyMessageProtobuf
+0x1ef7b5a20  __AUTH,__objc_data  _OBJC_CLASS_$__MRGroupSessionInfoProtobuf
+0x1ef7b59f8  __AUTH,__objc_data  _OBJC_CLASS_$__MRGroupSessionJoinRequestProtobuf
+0x1ef7b59d0  __AUTH,__objc_data  _OBJC_CLASS_$__MRGroupSessionJoinResponseMessageProtobuf
+0x1ef7b59a8  __AUTH,__objc_data  _OBJC_CLASS_$__MRGroupSessionJoinResponseProtobuf
+0x1ef7b5980  __AUTH,__objc_data  _OBJC_CLASS_$__MRGroupSessionLeaderDiscoveryMessageProtobuf
+0x1ef7b5958  __AUTH,__objc_data  _OBJC_CLASS_$__MRGroupSessionMemberSyncMessageProtobuf
+0x1ef7b5930  __AUTH,__objc_data  _OBJC_CLASS_$__MRGroupSessionParticipantProtobuf
+0x1ef7b5908  __AUTH,__objc_data  _OBJC_CLASS_$__MRGroupSessionRemoveRequestProtobuf
+0x1ef7b58e0  __AUTH,__objc_data  _OBJC_CLASS_$__MRGroupSessionTokenProtobuf
+0x1ee8fcc20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRGroupTopologyModificationRequestProtobuf
+0x1ee8ff2b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRKeyValuePairProtobuf
+0x1ef7b58b8  __AUTH,__objc_data  _OBJC_CLASS_$__MRKeyboardMessageProtobuf
+0x1ee8ff038  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRLanguageOptionGroupProtobuf
+0x1ee8ff010  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRLanguageOptionProtobuf
+0x1ef7b5890  __AUTH,__objc_data  _OBJC_CLASS_$__MRLyricsEventProtobuf
+0x1ef7b5868  __AUTH,__objc_data  _OBJC_CLASS_$__MRLyricsItemProtobuf
+0x1ef7b5840  __AUTH,__objc_data  _OBJC_CLASS_$__MRLyricsTokenProtobuf
+0x1ee8fda08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRMRNowPlayingAudioFormatContentInfoProtobuf
+0x1ee8ff588  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRMediaRemoteMessageProtobuf
+0x1ef7b5818  __AUTH,__objc_data  _OBJC_CLASS_$__MRMicrophoneConnectionRequestMessageProtobuf
+0x1ef7b57f0  __AUTH,__objc_data  _OBJC_CLASS_$__MRMicrophoneConnectionResponseMessageProtobuf
+0x1ef7b57c8  __AUTH,__objc_data  _OBJC_CLASS_$__MRMusicHandoffEventProtobuf
+0x1ef7b57a0  __AUTH,__objc_data  _OBJC_CLASS_$__MRMusicHandoffSessionProtobuf
+0x1ef7b5778  __AUTH,__objc_data  _OBJC_CLASS_$__MRNotificationMessageProtobuf
+0x1ee900848  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRNowPlayingClientProtobuf
+0x1ef7b5750  __AUTH,__objc_data  _OBJC_CLASS_$__MRNowPlayingInfoProtobuf
+0x1ee900a28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRNowPlayingPlayerPathProtobuf
+0x1ee900820  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRNowPlayingPlayerProtobuf
+0x1ee8fcbf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MROriginClientPropertiesMessageProtobuf
+0x1ee900a00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MROriginProtobuf
+0x1ee8fcba8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRPlaybackQueueCapabilitiesProtobuf
+0x1ef7b5728  __AUTH,__objc_data  _OBJC_CLASS_$__MRPlaybackQueueContextProtobuf
+0x1ee8fe200  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRPlaybackQueueParticipantProtobuf
+0x1ee8ffd08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRPlaybackQueueProtobuf
+0x1ee8ff8f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRPlaybackQueueRequestProtobuf
+0x1ef7b5700  __AUTH,__objc_data  _OBJC_CLASS_$__MRPlaybackSessionMigrateBeginMessageProtobuf
+0x1ef7b56d8  __AUTH,__objc_data  _OBJC_CLASS_$__MRPlaybackSessionMigrateEndMessageProtobuf
+0x1ef7b56b0  __AUTH,__objc_data  _OBJC_CLASS_$__MRPlaybackSessionMigratePostMessageProtobuf
+0x1ee8fcb80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRPlaybackSessionMigrateRequestEventProtobuf
+0x1ef7b5688  __AUTH,__objc_data  _OBJC_CLASS_$__MRPlaybackSessionMigrateRequestMessageProtobuf
+0x1ee8fcb58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRPlaybackSessionMigrateRequestProtobuf
+0x1ef7b5660  __AUTH,__objc_data  _OBJC_CLASS_$__MRPlaybackSessionMigrateResponseMessageProtobuf
+0x1ef7b5638  __AUTH,__objc_data  _OBJC_CLASS_$__MRPlaybackSessionProtobuf
+0x1ee8fcb30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRPlaybackSessionRequestMessageProtobuf
+0x1ee8fcb08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRPlaybackSessionRequestProtobuf
+0x1ee8fcae0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRPlaybackSessionResponseMessageProtobuf
+0x1ee8fcab8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRPlayerClientParticipantsUpdateMessageProtobuf
+0x1ee8fca90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRPlayerClientPropertiesMessageProtobuf
+0x1ee8fca68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRPreloadedPlaybackSessionInfo
+0x1ef7b5610  __AUTH,__objc_data  _OBJC_CLASS_$__MRPresentRouteAuthorizationStatusMessageProtobuf
+0x1ef7b55e8  __AUTH,__objc_data  _OBJC_CLASS_$__MRPromptForRouteAuthorizationMessageProtobuf
+0x1ef7b55c0  __AUTH,__objc_data  _OBJC_CLASS_$__MRPromptForRouteAuthorizationResponseMessageProtobuf
+0x1ef7b5598  __AUTH,__objc_data  _OBJC_CLASS_$__MRReceivedCommandAppOptionsProtobuf
+0x1ef7b5570  __AUTH,__objc_data  _OBJC_CLASS_$__MRReceivedCommandProtobuf
+0x1ef7b5548  __AUTH,__objc_data  _OBJC_CLASS_$__MRRegisterForGameControllerEventsMessageProtobuf
+0x1ef7b5520  __AUTH,__objc_data  _OBJC_CLASS_$__MRRegisterGameControllerMessageProtobuf
+0x1ef7b54f8  __AUTH,__objc_data  _OBJC_CLASS_$__MRRegisterGameControllerResponseMessageProtobuf
+0x1ef7b54d0  __AUTH,__objc_data  _OBJC_CLASS_$__MRRegisterHIDDeviceMessageProtobuf
+0x1ef7b54a8  __AUTH,__objc_data  _OBJC_CLASS_$__MRRegisterHIDDeviceResultMessageProtobuf
+0x1ef7b5480  __AUTH,__objc_data  _OBJC_CLASS_$__MRRegisterVoiceInputDeviceMessageProtobuf
+0x1ef7b5458  __AUTH,__objc_data  _OBJC_CLASS_$__MRRegisterVoiceInputDeviceResponseMessageProtobuf
+0x1ee8fca40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRRemoteArtworkProtobuf
+0x1ef7b5430  __AUTH,__objc_data  _OBJC_CLASS_$__MRRemoteTextInputMessageProtobuf
+0x1ee8fca18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRRemoveClientMessageProtobuf
+0x1ef7b5408  __AUTH,__objc_data  _OBJC_CLASS_$__MRRemoveEndpointsMessageProtobuf
+0x1ee8fc9f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRRemoveOutputDevicesMessageProtobuf
+0x1ef7b53e0  __AUTH,__objc_data  _OBJC_CLASS_$__MRRemovePlayerMessageProtobuf
+0x1ee8fe1d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRRequestDetailsProtobuf
+0x1ef7b53b8  __AUTH,__objc_data  _OBJC_CLASS_$__MRRequestGroupSessionMessageProtobuf
+0x1ef7b5390  __AUTH,__objc_data  _OBJC_CLASS_$__MRSendButtonEventMessageProtobuf
+0x1ef7b5368  __AUTH,__objc_data  _OBJC_CLASS_$__MRSendCommandMessageProtobuf
+0x1ef7b5340  __AUTH,__objc_data  _OBJC_CLASS_$__MRSendCommandResultHandlerDialogActionProtobuf
+0x1ef7b5318  __AUTH,__objc_data  _OBJC_CLASS_$__MRSendCommandResultHandlerDialogProtobuf
+0x1ef7b52f0  __AUTH,__objc_data  _OBJC_CLASS_$__MRSendCommandResultMessageProtobuf
+0x1ee8fe7f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRSendCommandResultProtobuf
+0x1ee8fe7c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRSendCommandResultStatusProtobuf
+0x1ef7b52c8  __AUTH,__objc_data  _OBJC_CLASS_$__MRSendHIDEventMessageProtobuf
+0x1ef7b52a0  __AUTH,__objc_data  _OBJC_CLASS_$__MRSendHIDReportMessageProtobuf
+0x1ef7b5278  __AUTH,__objc_data  _OBJC_CLASS_$__MRSendLyricsEventMessageProtobuf
+0x1ef7b5250  __AUTH,__objc_data  _OBJC_CLASS_$__MRSendPackedVirtualTouchEventMessageProtobuf
+0x1ef7b5228  __AUTH,__objc_data  _OBJC_CLASS_$__MRSendVirtualTouchEventMessageProtobuf
+0x1ef7b5200  __AUTH,__objc_data  _OBJC_CLASS_$__MRSendVoiceInputMessageProtobuf
+0x1ef7b51d8  __AUTH,__objc_data  _OBJC_CLASS_$__MRSetArtworkMessageProtobuf
+0x1ee8fc9c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRSetConnectionStateMessageProtobuf
+0x1ef7b51b0  __AUTH,__objc_data  _OBJC_CLASS_$__MRSetConversationDetectionEnabledMessageProtobuf
+0x1ee8fc9a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRSetDiscoveryModeProtobufMessage
+0x1ef7b5188  __AUTH,__objc_data  _OBJC_CLASS_$__MRSetHiliteModeMessageProtobuf
+0x1ef7b5160  __AUTH,__objc_data  _OBJC_CLASS_$__MRSetListeningModeMessageProtobuf
+0x1ee8fc978  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRSetNowPlayingClientMessageProtobuf
+0x1ee8fc950  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRSetNowPlayingPlayerMessageProtobuf
+0x1ef7b5138  __AUTH,__objc_data  _OBJC_CLASS_$__MRSetReadyStateMessageProtobuf
+0x1ef7b5110  __AUTH,__objc_data  _OBJC_CLASS_$__MRSetRecordingStateMessageProtobuf
+0x1ee8fc928  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRSetStateMessageProtobuf
+0x1ef7b50e8  __AUTH,__objc_data  _OBJC_CLASS_$__MRSetVolumeMessageProtobuf
+0x1ef7b50c0  __AUTH,__objc_data  _OBJC_CLASS_$__MRSetVolumeMutedMessageProtobuf
+0x1ee8fc900  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRSupportedCommandsProtobuf
+0x1ef7b5098  __AUTH,__objc_data  _OBJC_CLASS_$__MRSystemPlaybackCustomDataQueueProtobuf
+0x1ef7b5070  __AUTH,__objc_data  _OBJC_CLASS_$__MRSystemPlaybackGenericTracklistQueueProtobuf
+0x1ef7b5048  __AUTH,__objc_data  _OBJC_CLASS_$__MRSystemPlaybackQueueProtobuf
+0x1ef7b4ff8  __AUTH,__objc_data  _OBJC_CLASS_$__MRTextEditingAttributesProtobuf
+0x1ef7b4fd0  __AUTH,__objc_data  _OBJC_CLASS_$__MRTextInputMessageProtobuf
+0x1ef7b4fa8  __AUTH,__objc_data  _OBJC_CLASS_$__MRTextInputTraitsProtobuf
+0x1ef7b4f80  __AUTH,__objc_data  _OBJC_CLASS_$__MRTransactionKeyProtobuf
+0x1ef7b4f58  __AUTH,__objc_data  _OBJC_CLASS_$__MRTransactionMessageProtobuf
+0x1ef7b4f30  __AUTH,__objc_data  _OBJC_CLASS_$__MRTransactionPacketProtobuf
+0x1ef7b4f08  __AUTH,__objc_data  _OBJC_CLASS_$__MRTransactionPacketsProtobuf
+0x1ee8fe1b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRTranscriptAlignmentProtobuf
+0x1ef7b4ee0  __AUTH,__objc_data  _OBJC_CLASS_$__MRUnregisterGameControllerMessageProtobuf
+0x1ee8fe9d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRUpdateActiveSystemEndpointMessageProtobuf
+0x1ee8fe9a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRUpdateActiveSystemEndpointRequestProtobuf
+0x1ee8fc8d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRUpdateClientMessageProtobuf
+0x1ee8fc8b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRUpdateContentItemArtworkMessageProtobuf
+0x1ee8fc888  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRUpdateContentItemMessageProtobuf
+0x1ef7b4eb8  __AUTH,__objc_data  _OBJC_CLASS_$__MRUpdateEndpointsMessageProtobuf
+0x1ee8fc860  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRUpdateOutputDevicesMessageProtobuf
+0x1ee8fc838  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRUpdatePlayerMessageProtobuf
+0x1ee8fe188  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRUserIdentityProtobuf
+0x1ee8ff290  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRValueProtobuf
+0x1ef7b4e90  __AUTH,__objc_data  _OBJC_CLASS_$__MRVideoThumbnailProtobuf
+0x1ef7b4e68  __AUTH,__objc_data  _OBJC_CLASS_$__MRVideoThumbnailRequestProtobuf
+0x1ef7b4e40  __AUTH,__objc_data  _OBJC_CLASS_$__MRVirtualTouchDeviceDescriptorProtobuf
+0x1ef7b4e18  __AUTH,__objc_data  _OBJC_CLASS_$__MRVirtualTouchEventProtobuf
+0x1ef7b4df0  __AUTH,__objc_data  _OBJC_CLASS_$__MRVoiceInputDevice
+0x1ef7b4dc8  __AUTH,__objc_data  _OBJC_CLASS_$__MRVoiceInputDeviceDescriptorProtobuf
+0x1ee8fc810  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRVolumeControlAvailabilityProtobuf
+0x1ee8fc7e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRVolumeControlCapabilitiesDidChangeMessageProtobuf
+0x1ee8fc7c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MRVolumeDidChangeMessageProtobuf
+0x1ef7b4da0  __AUTH,__objc_data  _OBJC_CLASS_$__MRVolumeMutedDidChangeMessageProtobuf
+0x1ef7b4d78  __AUTH,__objc_data  _OBJC_CLASS_$__MRWakeDeviceMessageProtobuf
+0x1ebeb3e24  __DATA,__objc_ivar  OBJC_IVAR_$_MRAVConcreteOutputDevice._avOutputDevice
+0x1ebeb3e48  __DATA,__objc_ivar  OBJC_IVAR_$_MRAVConcreteOutputDevice._groupContainsGroupLeaderOverride
+0x1ebeb3e34  __DATA,__objc_ivar  OBJC_IVAR_$_MRAVConcreteOutputDevice._groupUIDOverride
+0x1ebeb3e40  __DATA,__objc_ivar  OBJC_IVAR_$_MRAVConcreteOutputDevice._isAirPlayActiveOverride
+0x1ebeb3e3c  __DATA,__objc_ivar  OBJC_IVAR_$_MRAVConcreteOutputDevice._isGroupLeaderOverride
+0x1ebeb3e44  __DATA,__objc_ivar  OBJC_IVAR_$_MRAVConcreteOutputDevice._isProxyGroupPlayerOverride
+0x1ebeb3e4c  __DATA,__objc_ivar  OBJC_IVAR_$_MRAVConcreteOutputDevice._parentGroupContainsGroupLeaderOverride
+0x1ebeb3e38  __DATA,__objc_ivar  OBJC_IVAR_$_MRAVConcreteOutputDevice._parentGroupUIDOverride
+0x1ebeb3e28  __DATA,__objc_ivar  OBJC_IVAR_$_MRAVConcreteOutputDevice._sourceInfo
+0x1ebeb3e50  __DATA,__objc_ivar  OBJC_IVAR_$_MRAVConcreteOutputDevice._supportsMultiplayerOverride
+0x1ebeb3e30  __DATA,__objc_ivar  OBJC_IVAR_$_MRAVConcreteOutputDevice._uidOverride
+0x1ebeb4ab0  __DATA,__objc_ivar  OBJC_IVAR_$_MRApplicationActivity._creatorProcessID
+0x1ebeb4aa4  __DATA,__objc_ivar  OBJC_IVAR_$_MRApplicationActivity._primaryApplicationDisplayID
+0x1ebeb4aa8  __DATA,__objc_ivar  OBJC_IVAR_$_MRApplicationActivity._secondaryApplicationDisplayID
+0x1ebeb4aac  __DATA,__objc_ivar  OBJC_IVAR_$_MRApplicationActivity._status
+0x1ebeb4aa0  __DATA,__objc_ivar  OBJC_IVAR_$_MRApplicationActivity._uniqueIdentifier
+0x1ebeb4934  __DATA,__objc_ivar  OBJC_IVAR_$_MRTextEditingAttributes._inputTraits
+0x1ebeb4930  __DATA,__objc_ivar  OBJC_IVAR_$_MRTextEditingAttributes._prompt
+0x1ebeb492c  __DATA,__objc_ivar  OBJC_IVAR_$_MRTextEditingAttributes._title
+0x1ebeb4940  __DATA,__objc_ivar  OBJC_IVAR_$_MRTextEditingSession._attributes
+0x1ebeb493c  __DATA,__objc_ivar  OBJC_IVAR_$_MRTextEditingSession._editing
+0x1ebeb4938  __DATA,__objc_ivar  OBJC_IVAR_$_MRTextEditingSession._text
+0x1ebeb4b78  __DATA,__objc_ivar  OBJC_IVAR_$_MRVirtualVoiceInputDeviceDescriptor._defaultFormat
+0x1ebeb4b74  __DATA,__objc_ivar  OBJC_IVAR_$_MRVirtualVoiceInputDeviceDescriptor._supportedFormats
+0x1ebeb22e0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVAirPlaySecuritySettingsProtobuf._has
+0x1ebeb22dc  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVAirPlaySecuritySettingsProtobuf._password
+0x1ebeb22e4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVAirPlaySecuritySettingsProtobuf._securityType
+0x1ebeb2bac  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVEndpointDescriptorProtobuf._canModifyGroupMembership
+0x1ebeb2ba8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVEndpointDescriptorProtobuf._connectionType
+0x1ebeb2b94  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVEndpointDescriptorProtobuf._designatedGroupLeader
+0x1ebeb2b98  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVEndpointDescriptorProtobuf._has
+0x1ebeb2ba0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVEndpointDescriptorProtobuf._instanceIdentifier
+0x1ebeb2b9c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVEndpointDescriptorProtobuf._isLocalEndpoint
+0x1ebeb2ba4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVEndpointDescriptorProtobuf._isProxyGroupPlayer
+0x1ebeb2b88  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVEndpointDescriptorProtobuf._name
+0x1ebeb2b90  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVEndpointDescriptorProtobuf._outputDevices
+0x1ebeb2bb0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVEndpointDescriptorProtobuf._personalOutputDevices
+0x1ebeb2b8c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVEndpointDescriptorProtobuf._uniqueIdentifier
+0x1ebeb4ba0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVModifyOutputContextRequestProtobuf._addingOutputDeviceUIDs
+0x1ebeb4bac  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVModifyOutputContextRequestProtobuf._clusterAwareAddingOutputDeviceUIDs
+0x1ebeb4bb0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVModifyOutputContextRequestProtobuf._clusterAwareRemovingOutputDeviceUIDs
+0x1ebeb4bb4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVModifyOutputContextRequestProtobuf._clusterAwareSettingOutputDeviceUIDs
+0x1ebeb4b98  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVModifyOutputContextRequestProtobuf._has
+0x1ebeb4b9c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVModifyOutputContextRequestProtobuf._outputContextType
+0x1ebeb4ba4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVModifyOutputContextRequestProtobuf._removingOutputDeviceUIDs
+0x1ebeb4bb8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVModifyOutputContextRequestProtobuf._request
+0x1ebeb4ba8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVModifyOutputContextRequestProtobuf._settingOutputDeviceUIDs
+0x1ebeb488c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._activatedClusterMembers
+0x1ebeb487c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._airPlayGroupID
+0x1ebeb48b0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._allClusterMembers
+0x1ebeb48e0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._allowsHeadTrackedSpatialAudio
+0x1ebeb48f0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._alternateTransportType
+0x1ebeb490c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._alternativeOutputDevices
+0x1ebeb486c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._availableBluetoothListeningModes
+0x1ebeb47e4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._batteryLevel
+0x1ebeb4848  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._bluetoothID
+0x1ebeb4818  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._canAccessAppleMusic
+0x1ebeb47c8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._canAccessRemoteAssets
+0x1ebeb481c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._canAccessiCloudMusicLibrary
+0x1ebeb482c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._canFetchMediaDataFromSender
+0x1ebeb4828  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._canPlayEncryptedProgressiveDownloadAssets
+0x1ebeb4800  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._canRelayCommunicationChannel
+0x1ebeb4854  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._clusterCompositions
+0x1ebeb4898  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._clusterID
+0x1ebeb4858  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._clusterType
+0x1ebeb4860  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._configuredClusterSize
+0x1ebeb48b8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._conversationDetectionEnabled
+0x1ebeb4868  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._currentBluetoothListeningMode
+0x1ebeb4910  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._customProtocolIconIdentifier
+0x1ebeb48cc  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._deviceEnclosureColor
+0x1ebeb48f4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._deviceIsPlaying
+0x1ebeb47dc  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._deviceSubType
+0x1ebeb47d8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._deviceType
+0x1ebeb4914  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._disabled
+0x1ebeb4888  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._discoveredOnSameInfra
+0x1ebeb4884  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._distance
+0x1ebeb48ec  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._dnsNames
+0x1ebeb48bc  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._engageOnClusterActivate
+0x1ebeb480c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._firmwareVersion
+0x1ebeb4820  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._groupContainsGroupLeader
+0x1ebeb47b8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._groupID
+0x1ebeb48c4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._groupSessionInfo
+0x1ebeb47c4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._has
+0x1ebeb48e8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._headTrackedSpatialAudioMode
+0x1ebeb4878  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._hostDeviceClass
+0x1ebeb4840  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._isAddedToHomeKit
+0x1ebeb4834  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._isAirPlayReceiverSessionActive
+0x1ebeb48a0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._isAppleAccessory
+0x1ebeb489c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._isClusterLeader
+0x1ebeb47fc  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._isDeviceGroupable
+0x1ebeb47d0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._isGroupLeader
+0x1ebeb47d4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._isGroupable
+0x1ebeb48e4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._isHeadTrackedSpatialAudioActive
+0x1ebeb47e8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._isLocalDevice
+0x1ebeb48d8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._isPickedOnPairedDevice
+0x1ebeb4908  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._isPreferredProtocol
+0x1ebeb4808  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._isProxyGroupPlayer
+0x1ebeb47cc  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._isRemoteControllable
+0x1ebeb4814  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._isVolumeControlAvailable
+0x1ebeb4804  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._logicalDeviceID
+0x1ebeb47c0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._macAddress
+0x1ebeb47bc  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._modelID
+0x1ebeb47e0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._modelSpecificInfoData
+0x1ebeb47b0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._name
+0x1ebeb483c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._parentGroupContainsDiscoverableLeader
+0x1ebeb4838  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._parentGroupIdentifier
+0x1ebeb48a4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._parentUniqueIdentifier
+0x1ebeb4890  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._pickable
+0x1ebeb48d0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._playingPairedDeviceName
+0x1ebeb4830  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._presentsOptimizedUserInterfaceWhenPlayingFetchedAudioOnlyAssets
+0x1ebeb485c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._primaryUID
+0x1ebeb4874  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._producesLowFidelityAudio
+0x1ebeb4900  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._protocolName
+0x1ebeb4904  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._protocolUID
+0x1ebeb48fc  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._representsUGLSender
+0x1ebeb47f0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._requiresAuthorization
+0x1ebeb48a8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._roomID
+0x1ebeb48ac  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._roomName
+0x1ebeb47f4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._shouldForceRemoteControlabillity
+0x1ebeb47f8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._sourceInfo
+0x1ebeb48c8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._supportsBluetoothSharing
+0x1ebeb4824  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._supportsBufferedAirPlay
+0x1ebeb48b4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._supportsConversationDetection
+0x1ebeb47ec  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._supportsExternalScreen
+0x1ebeb484c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._supportsHAP
+0x1ebeb48dc  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._supportsHeadTrackedSpatialAudio
+0x1ebeb4870  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._supportsMultiplayer
+0x1ebeb48d4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._supportsRapport
+0x1ebeb4864  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._supportsRapportRemoteControlTransport
+0x1ebeb4880  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._supportsSharePlayHandoff
+0x1ebeb4894  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._transportType
+0x1ebeb47b4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._uniqueIdentifier
+0x1ebeb4850  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._usingJSONProtocol
+0x1ebeb4810  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._volume
+0x1ebeb4844  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._volumeCapabilities
+0x1ebeb48c0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._volumeMuted
+0x1ebeb48f8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceDescriptorProtobuf._wasDiscoveredInCache
+0x1ebeb32e4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceSourceInfoProtobuf._has
+0x1ebeb32e8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceSourceInfoProtobuf._multipleBuiltInDevices
+0x1ebeb32e0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVOutputDeviceSourceInfoProtobuf._routingContextUID
+0x1ebeb22d8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAVRouteQueryProtobuf._routeUID
+0x1ebeb2f1c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAdjustVolumeMessageProtobuf._adjustment
+0x1ebeb2f24  __DATA,__objc_ivar  OBJC_IVAR_$__MRAdjustVolumeMessageProtobuf._details
+0x1ebeb2f18  __DATA,__objc_ivar  OBJC_IVAR_$__MRAdjustVolumeMessageProtobuf._has
+0x1ebeb2f20  __DATA,__objc_ivar  OBJC_IVAR_$__MRAdjustVolumeMessageProtobuf._outputDeviceUID
+0x1ebeb4ab4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAirPlayLeaderInfoProtobuf._deviceInfo
+0x1ebeb23c8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAnimatedArtworkProtobuf._assetFileURLData
+0x1ebeb23c4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAnimatedArtworkProtobuf._type
+0x1ebeb19a4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAppEntityPathProtobuf._bundleIdentifier
+0x1ebeb19ac  __DATA,__objc_ivar  OBJC_IVAR_$__MRAppEntityPathProtobuf._instanceIdentifier
+0x1ebeb19a8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAppEntityPathProtobuf._typeIdentifier
+0x1ebeb2b80  __DATA,__objc_ivar  OBJC_IVAR_$__MRApplicationConnectionContextProtobuf._destinationPlayerPath
+0x1ebeb2b78  __DATA,__objc_ivar  OBJC_IVAR_$__MRApplicationConnectionContextProtobuf._identifier
+0x1ebeb2b7c  __DATA,__objc_ivar  OBJC_IVAR_$__MRApplicationConnectionContextProtobuf._serviceName
+0x1ebeb2b70  __DATA,__objc_ivar  OBJC_IVAR_$__MRApplicationConnectionMessageProtobuf._header
+0x1ebeb2b74  __DATA,__objc_ivar  OBJC_IVAR_$__MRApplicationConnectionMessageProtobuf._underlyingMessage
+0x1ebeb217c  __DATA,__objc_ivar  OBJC_IVAR_$__MRApplicationConnectionProtocolMessageProtobuf._applicationMessage
+0x1ebeb2180  __DATA,__objc_ivar  OBJC_IVAR_$__MRApplicationConnectionProtocolMessageProtobuf._context
+0x1ebeb2144  __DATA,__objc_ivar  OBJC_IVAR_$__MRApplicationConnectionRequestInfoProtobuf._client
+0x1ebeb2140  __DATA,__objc_ivar  OBJC_IVAR_$__MRApplicationConnectionRequestInfoProtobuf._deviceInfo
+0x1ebeb43a8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioBufferProtobuf._contents
+0x1ebeb4394  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioBufferProtobuf._formatSettings
+0x1ebeb4398  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioBufferProtobuf._has
+0x1ebeb43a0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioBufferProtobuf._maximumPacketSize
+0x1ebeb439c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioBufferProtobuf._packetCapacity
+0x1ebeb43a4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioBufferProtobuf._packetCount
+0x1ebeb43ac  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioBufferProtobuf._packetDescriptions
+0x1ebeb45f4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioDataBlockProtobuf._buffer
+0x1ebeb4600  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioDataBlockProtobuf._gain
+0x1ebeb45fc  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioDataBlockProtobuf._has
+0x1ebeb45f8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioDataBlockProtobuf._time
+0x1ebeb4548  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFadeMessageProtobuf._fadeType
+0x1ebeb4544  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFadeMessageProtobuf._has
+0x1ebeb4540  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFadeMessageProtobuf._playerPath
+0x1ebeb2610  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFadeResponseMessageProtobuf._fadeDuration
+0x1ebeb260c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFadeResponseMessageProtobuf._has
+0x1ebeb28d8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFormatProtobuf._audioChannelLayoutDescription
+0x1ebeb28c4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFormatProtobuf._bitDepth
+0x1ebeb28bc  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFormatProtobuf._bitrate
+0x1ebeb28d4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFormatProtobuf._channelLayout
+0x1ebeb28c8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFormatProtobuf._codec
+0x1ebeb28dc  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFormatProtobuf._groupID
+0x1ebeb28b4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFormatProtobuf._has
+0x1ebeb28d0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFormatProtobuf._multiChannel
+0x1ebeb28e4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFormatProtobuf._renderingMode
+0x1ebeb28c0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFormatProtobuf._sampleRate
+0x1ebeb28cc  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFormatProtobuf._spatialized
+0x1ebeb28e0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFormatProtobuf._stableVariantID
+0x1ebeb28b8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFormatProtobuf._tier
+0x1ebeb4b44  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioFormatSettingsProtobuf._formatSettingsPlistData
+0x1ebeb2fa8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioRouteProtobuf._has
+0x1ebeb2fb0  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioRouteProtobuf._name
+0x1ebeb2fb8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioRouteProtobuf._spatializationEnabled
+0x1ebeb2fb4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioRouteProtobuf._supportsSpatialization
+0x1ebeb2fac  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioRouteProtobuf._type
+0x1ebeb4700  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioStreamPacketDescriptionProtobuf._dataByteSize
+0x1ebeb46f4  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioStreamPacketDescriptionProtobuf._has
+0x1ebeb46f8  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioStreamPacketDescriptionProtobuf._startOffset
+0x1ebeb46fc  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioStreamPacketDescriptionProtobuf._variableFramesInPacket
+0x1ebeb4b1c  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioTimeProtobuf._has
+0x1ebeb4b24  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioTimeProtobuf._sampleRate
+0x1ebeb4b20  __DATA,__objc_ivar  OBJC_IVAR_$__MRAudioTimeProtobuf._timestamp
+0x1ebeb42a4  __DATA,__objc_ivar  OBJC_IVAR_$__MRClientUpdatesConfigurationProtobuf._artworkUpdates
+0x1ebeb429c  __DATA,__objc_ivar  OBJC_IVAR_$__MRClientUpdatesConfigurationProtobuf._has
+0x1ebeb42ac  __DATA,__objc_ivar  OBJC_IVAR_$__MRClientUpdatesConfigurationProtobuf._keyboardUpdates
+0x1ebeb42a0  __DATA,__objc_ivar  OBJC_IVAR_$__MRClientUpdatesConfigurationProtobuf._nowPlayingUpdates
+0x1ebeb42b0  __DATA,__objc_ivar  OBJC_IVAR_$__MRClientUpdatesConfigurationProtobuf._outputDeviceUpdates
+0x1ebeb42b8  __DATA,__objc_ivar  OBJC_IVAR_$__MRClientUpdatesConfigurationProtobuf._subscribedPlayerPaths
+0x1ebeb42b4  __DATA,__objc_ivar  OBJC_IVAR_$__MRClientUpdatesConfigurationProtobuf._systemEndpointUpdates
+0x1ebeb42a8  __DATA,__objc_ivar  OBJC_IVAR_$__MRClientUpdatesConfigurationProtobuf._volumeUpdates
+0x1ebeb4b8c  __DATA,__objc_ivar  OBJC_IVAR_$__MRColorProtobuf._alpha
+0x1ebeb4b88  __DATA,__objc_ivar  OBJC_IVAR_$__MRColorProtobuf._blue
+0x1ebeb4b84  __DATA,__objc_ivar  OBJC_IVAR_$__MRColorProtobuf._green
+0x1ebeb4b7c  __DATA,__objc_ivar  OBJC_IVAR_$__MRColorProtobuf._has
+0x1ebeb4b80  __DATA,__objc_ivar  OBJC_IVAR_$__MRColorProtobuf._red
+0x1ebeb367c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._active
+0x1ebeb36a8  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._canScrub
+0x1ebeb3674  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._command
+0x1ebeb36bc  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._currentPlaybackSessionTypes
+0x1ebeb36c4  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._currentQueueEndAction
+0x1ebeb36f4  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._dialogOptions
+0x1ebeb36c8  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._disabledReason
+0x1ebeb3678  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._enabled
+0x1ebeb366c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._extendedSupportedRates
+0x1ebeb3670  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._has
+0x1ebeb36f8  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._lastSectionContentItemID
+0x1ebeb3684  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._localizedShortTitle
+0x1ebeb3680  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._localizedTitle
+0x1ebeb368c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._maximumRating
+0x1ebeb3688  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._minimumRating
+0x1ebeb36a0  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._numAvailableSkips
+0x1ebeb36c0  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._playbackSessionIdentifier
+0x1ebeb3700  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._playbackSessionRequirements
+0x1ebeb3658  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._preferredIntervals
+0x1ebeb36b4  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._preferredPlaybackRate
+0x1ebeb3698  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._presentationStyle
+0x1ebeb36d0  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._proactiveCommandOptions
+0x1ebeb3690  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._repeatMode
+0x1ebeb3694  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._shuffleMode
+0x1ebeb36a4  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._skipFrequency
+0x1ebeb369c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._skipInterval
+0x1ebeb36f0  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._sleepTimerFireDate
+0x1ebeb36ec  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._sleepTimerStopMode
+0x1ebeb36e8  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._sleepTimerTime
+0x1ebeb36ac  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._supportedCustomQueueIdentifiers
+0x1ebeb3664  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._supportedInsertionPositions
+0x1ebeb3660  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._supportedPlaybackQueueTypes
+0x1ebeb36cc  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._supportedPlaybackSessionIdentifiers
+0x1ebeb36b8  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._supportedPlaybackSessionTypes
+0x1ebeb3668  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._supportedQueueEndActions
+0x1ebeb365c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._supportedRates
+0x1ebeb36fc  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._supportsReferencePosition
+0x1ebeb3704  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._transitionStyle
+0x1ebeb36b0  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._upNextItemCount
+0x1ebeb36d4  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._vocalsControlActive
+0x1ebeb36e4  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._vocalsControlContinuous
+0x1ebeb36d8  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._vocalsControlLevel
+0x1ebeb36dc  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._vocalsControlMaxLevel
+0x1ebeb36e0  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandInfoProtobuf._vocalsControlMinLevel
+0x1ebeb416c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._alwaysAllowDuringPhoneCalls
+0x1ebeb4100  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._alwaysIgnoreDuringCall
+0x1ebeb4104  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._alwaysIgnoreDuringSharePlay
+0x1ebeb4124  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._applicationUserIdentity
+0x1ebeb40f0  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._assistantCommandSendTimestamp
+0x1ebeb40ec  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._assistantTTSEndTimestamp
+0x1ebeb4140  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._associatedParticipantIdentifier
+0x1ebeb4090  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._beginSeek
+0x1ebeb4150  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._clientPreferredLanguages
+0x1ebeb4084  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._commandID
+0x1ebeb4108  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._commandSequenceUUID
+0x1ebeb40e8  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._commandTimeout
+0x1ebeb4064  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._contentItemID
+0x1ebeb4034  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._contextID
+0x1ebeb4158  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._delegateAccountData
+0x1ebeb415c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._delegateAccountDataType
+0x1ebeb40fc  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._desiredSessionID
+0x1ebeb4048  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._destinationAppDisplayID
+0x1ebeb40f8  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._destinationDeviceUIDs
+0x1ebeb414c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._dialogOptions
+0x1ebeb4094  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._endSeek
+0x1ebeb4160  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._enhanceDialogueActive
+0x1ebeb40e0  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._eventNoticeIdentifier
+0x1ebeb40dc  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._eventNoticeType
+0x1ebeb4014  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._externalPlayerCommand
+0x1ebeb4010  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._has
+0x1ebeb40b4  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._homeKitUserIdentifier
+0x1ebeb4078  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._insertAfterContentItemID
+0x1ebeb40a0  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._insertBeforeContentItemID
+0x1ebeb4070  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._languageOption
+0x1ebeb400c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._mediaType
+0x1ebeb4024  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._negative
+0x1ebeb407c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._nowPlayingContentItemID
+0x1ebeb410c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._originatedFromRemoteDevice
+0x1ebeb40f4  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._originatingDeviceUID
+0x1ebeb4164  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._playbackAccountID
+0x1ebeb40d8  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._playbackAuthorizationToken
+0x1ebeb4028  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._playbackPosition
+0x1ebeb4074  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._playbackQueueContext
+0x1ebeb406c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._playbackQueueDestinationOffset
+0x1ebeb4060  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._playbackQueueInsertionPosition
+0x1ebeb4068  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._playbackQueueOffset
+0x1ebeb401c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._playbackRate
+0x1ebeb4098  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._playbackSession
+0x1ebeb40c4  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._playbackSessionFilePath
+0x1ebeb40bc  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._playbackSessionIdentifier
+0x1ebeb40cc  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._playbackSessionMetadata
+0x1ebeb40c0  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._playbackSessionPriority
+0x1ebeb40c8  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._playbackSessionRevision
+0x1ebeb40d0  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._playbackSessionType
+0x1ebeb4118  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._prepareForSetQueueIsProactive
+0x1ebeb411c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._prepareForSetQueueProactiveReason
+0x1ebeb4120  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._prepareForSetQueueProactiveReasonType
+0x1ebeb40b0  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._preservesQueueEndAction
+0x1ebeb40a8  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._preservesRepeatMode
+0x1ebeb40ac  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._preservesShuffleMode
+0x1ebeb40a4  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._queueEndAction
+0x1ebeb4040  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._radioStationHash
+0x1ebeb403c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._radioStationID
+0x1ebeb4020  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._rating
+0x1ebeb4154  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._referencePosition
+0x1ebeb408c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._remoteControlInterface
+0x1ebeb402c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._repeatMode
+0x1ebeb4080  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._replaceIntent
+0x1ebeb4050  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._requestDefermentToPlaybackQueuePosition
+0x1ebeb4170  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._requestDetails
+0x1ebeb404c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._sendOptions
+0x1ebeb4088  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._senderID
+0x1ebeb40e4  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._sharedPlaybackSessionIdentifier
+0x1ebeb405c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._shouldBeginRadioPlayback
+0x1ebeb4054  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._shouldOverrideManuallyCuratedQueue
+0x1ebeb4030  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._shuffleMode
+0x1ebeb4114  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._siriSearchDataSetIdentifier
+0x1ebeb4110  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._siriTurnIdentifier
+0x1ebeb4018  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._skipInterval
+0x1ebeb4148  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._sleepTimerStopMode
+0x1ebeb4144  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._sleepTimerTime
+0x1ebeb4008  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._sourceID
+0x1ebeb4058  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._stationURL
+0x1ebeb4128  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._systemAppPlaybackQueue
+0x1ebeb4044  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._systemAppPlaybackQueueData
+0x1ebeb4038  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._trackID
+0x1ebeb40d4  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._trueCompletion
+0x1ebeb4168  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._userActionTimestamp
+0x1ebeb409c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._userIdentityData
+0x1ebeb40b8  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._verifySupportedCommands
+0x1ebeb412c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._vocalsControlActive
+0x1ebeb413c  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._vocalsControlContinuous
+0x1ebeb4130  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._vocalsControlLevel
+0x1ebeb4138  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._vocalsControlMaxLevel
+0x1ebeb4134  __DATA,__objc_ivar  OBJC_IVAR_$__MRCommandOptionsProtobuf._vocalsControlMinLevel
+0x1ebeb2974  __DATA,__objc_ivar  OBJC_IVAR_$__MRConfigureConnectionMessageProtobuf._destinationOutputDeviceUID
+0x1ebeb2964  __DATA,__objc_ivar  OBJC_IVAR_$__MRConfigureConnectionMessageProtobuf._groupID
+0x1ebeb2968  __DATA,__objc_ivar  OBJC_IVAR_$__MRConfigureConnectionMessageProtobuf._serviceName
+0x1ebeb2970  __DATA,__objc_ivar  OBJC_IVAR_$__MRConfigureConnectionMessageProtobuf._sourceOutputDeviceName
+0x1ebeb296c  __DATA,__objc_ivar  OBJC_IVAR_$__MRConfigureConnectionMessageProtobuf._sourceOutputDeviceUID
+0x1ebeb3124  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._activeFormat
+0x1ebeb3128  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._activeFormatJustification
+0x1ebeb2fe8  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._albumArtistName
+0x1ebeb2fe0  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._albumName
+0x1ebeb3118  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._albumTraits
+0x1ebeb3110  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._albumYear
+0x1ebeb3134  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._alternativeFormats
+0x1ebeb30ac  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._appMetricsData
+0x1ebeb3014  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._artworkAvailable
+0x1ebeb30e8  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._artworkDataHeightDeprecated
+0x1ebeb30e4  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._artworkDataWidthDeprecated
+0x1ebeb3104  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._artworkFileURL
+0x1ebeb30f0  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._artworkIdentifier
+0x1ebeb3040  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._artworkMIMEType
+0x1ebeb30c8  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._artworkURL
+0x1ebeb30f8  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._artworkURLTemplatesData
+0x1ebeb3044  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._assetURLString
+0x1ebeb3130  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._audioRoute
+0x1ebeb3108  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._brandIdentifier
+0x1ebeb3060  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._chapterCount
+0x1ebeb3148  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._classicalWork
+0x1ebeb3034  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._collectionIdentifier
+0x1ebeb30d4  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._collectionInfoData
+0x1ebeb3048  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._composer
+0x1ebeb3070  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._contentIdentifier
+0x1ebeb30ec  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._currentPlaybackDateData
+0x1ebeb30a0  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._defaultPlaybackRate
+0x1ebeb30d0  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._deviceSpecificUserInfoData
+0x1ebeb2fec  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._directorName
+0x1ebeb304c  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._discNumber
+0x1ebeb30a8  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._downloadProgress
+0x1ebeb30a4  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._downloadState
+0x1ebeb3000  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._duration
+0x1ebeb3158  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._durationStringLocalizationKey
+0x1ebeb3028  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._editingStyleFlags
+0x1ebeb3050  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._elapsedTime
+0x1ebeb30d8  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._elapsedTimeTimestamp
+0x1ebeb3178  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._entityPaths
+0x1ebeb2ff4  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._episodeNumber
+0x1ebeb3100  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._episodeType
+0x1ebeb3168  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._excludeFromSuggestions
+0x1ebeb312c  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._formatTierPreference
+0x1ebeb3054  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._genre
+0x1ebeb2fd0  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._has
+0x1ebeb313c  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._hasAlternativeFormats
+0x1ebeb3154  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._iTunesStoreAlbumArtistIdentifier
+0x1ebeb3098  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._iTunesStoreAlbumIdentifier
+0x1ebeb3094  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._iTunesStoreArtistIdentifier
+0x1ebeb308c  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._iTunesStoreIdentifier
+0x1ebeb3090  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._iTunesStoreSubscriptionIdentifier
+0x1ebeb30dc  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._inferredTimestamp
+0x1ebeb3018  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._infoAvailable
+0x1ebeb3160  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._internationalStandardRecordingCode
+0x1ebeb3138  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._isAdvertisement
+0x1ebeb3058  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._isAlwaysLive
+0x1ebeb2fd4  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._isContainer
+0x1ebeb3030  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._isCurrentlyPlaying
+0x1ebeb3008  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._isExplicitItem
+0x1ebeb3164  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._isInTransition
+0x1ebeb307c  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._isInWishList
+0x1ebeb3078  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._isLiked
+0x1ebeb30f4  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._isLoading
+0x1ebeb2fd8  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._isPlayable
+0x1ebeb315c  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._isResolvableParticipant
+0x1ebeb3074  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._isSharable
+0x1ebeb30c4  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._isSteerable
+0x1ebeb302c  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._isStreamingContent
+0x1ebeb301c  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._languageOptionsAvailable
+0x1ebeb30fc  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._legacyUniqueIdentifier
+0x1ebeb3004  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._localizedContentRating
+0x1ebeb310c  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._localizedDurationString
+0x1ebeb3150  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._lyricsAdamID
+0x1ebeb3024  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._lyricsAvailable
+0x1ebeb30cc  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._lyricsURL
+0x1ebeb30b8  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._mediaSubType
+0x1ebeb30b4  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._mediaType
+0x1ebeb30bc  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._nowPlayingInfoData
+0x1ebeb3020  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._numberOfSections
+0x1ebeb3144  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._participantIdentifier
+0x1ebeb3140  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._participantName
+0x1ebeb2ffc  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._playCount
+0x1ebeb2fdc  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._playbackProgress
+0x1ebeb305c  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._playbackRate
+0x1ebeb311c  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._playlistTraits
+0x1ebeb300c  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._playlistType
+0x1ebeb3120  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._preferredFormat
+0x1ebeb3038  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._profileIdentifier
+0x1ebeb309c  __DATA,__objc_ivar  OBJC_IVAR_$__MRContentItemMetadataProtobuf._purchaseInfoData
+```
+First 3,000 of 5,233.
+
+## Private
+
+```
+0x1a6e32b40  __TEXT,__text  ___41-[MRNowPlayingAudioFormatController init]_block_invoke
+0x1a6e32bd0  __TEXT,__text  ___41-[MRNowPlayingAudioFormatController init]_block_invoke_2
+0x1a6e32c04  __TEXT,__text  ___61-[MRNowPlayingAudioFormatController updateForegroundBundleID]_block_invoke
+0x1a6e32d9c  __TEXT,__text  -[MRNowPlayingAudioFormatController setForegroundBundleID:]
+0x1a6e32ec0  __TEXT,__text  ___62-[MRNowPlayingAudioFormatController updateSelectedContentInfo]_block_invoke
+0x1a6e32fb8  __TEXT,__text  +[MRUserSettings currentSettings]
+0x1a6e32ff0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e32ff0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e32ff0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e32ff0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e32ff0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e32ff0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e32ff0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e32ff0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e32ff0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e32ff0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e32ff0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e32ff0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e32ff0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e32ff0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e32ff0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33004  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33004  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33004  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33004  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33004  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33004  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e33024  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e33040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33054  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e33054  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e33054  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e33054  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e33054  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e33054  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e33054  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e33054  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e33054  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e33054  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e33054  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e33064  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e33064  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e33064  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e33064  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e33064  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e33064  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e33080  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x1a6e33080  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x1a6e33080  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x1a6e33080  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x1a6e33080  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x1a6e33080  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x1a6e33080  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x1a6e33090  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33090  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33090  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33090  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33090  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33090  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33090  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33090  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33090  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33090  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33090  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33090  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33090  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e330a4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e330a4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e330a4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e330c4  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e330c4  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e330dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e330dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e330dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e330dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e330dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e330dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e330dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e330dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e330dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e330dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e330dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e330dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e330dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e330dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e330e8  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e330f8  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33110  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33110  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33110  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33110  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33110  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33110  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e33120  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33120  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33120  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33154  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33164  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e33164  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e33164  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e33174  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33174  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33188  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e331b0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e331e4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33214  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e3322c  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x1a6e3322c  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x1a6e3322c  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x1a6e3323c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33254  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33254  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33254  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33254  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33264  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33264  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33284  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33298  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e332b8  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e332cc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e332ec  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e332ec  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33300  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33300  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e3331c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e3333c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33350  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33360  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33368  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33380  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e333a0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e333b4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e333cc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e333ec  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e333ec  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e333fc  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e333fc  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33414  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33434  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33454  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33468  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33478  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33498  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e334b8  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e334d0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e334e4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1a6e33500  __TEXT,__text  -[MRNowPlayingAudioFormatController updateForegroundBundleID]
+0x1a6e335f8  __TEXT,__text  -[MRUserSettings groupSessionNearbyBanner]
+0x1a6e33604  __TEXT,__text  -[MRUserSettings _boolValueForKey:usingDefaultValue:]
+0x1a6e33670  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33670  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33670  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33690  __TEXT,__text  _OUTLINED_FUNCTION_15
+0x1a6e336a0  __TEXT,__text  _OUTLINED_FUNCTION_15
+0x1a6e336b0  __TEXT,__text  _OUTLINED_FUNCTION_15
+0x1a6e336cc  __TEXT,__text  _OUTLINED_FUNCTION_15
+0x1a6e336dc  __TEXT,__text  _OUTLINED_FUNCTION_15
+0x1a6e336e8  __TEXT,__text  -[MROrigin copyWithZone:]
+0x1a6e337d8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e337f8  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e337f8  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e33818  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33848  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e33848  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e33848  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e33848  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e3385c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33870  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e3387c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e3389c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e338bc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e338dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e338fc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e3391c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e3393c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33980  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e339a0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e339a0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e339c0  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e339c0  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e339c0  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e339c0  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e339d4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33a00  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33a18  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33a38  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33a4c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33a74  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33aa0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33ad4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33ae8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33b10  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33b30  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33b50  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33b68  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33b88  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33b94  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33bbc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33bc4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33be4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33c04  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33c1c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33c30  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33c50  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33c64  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33c84  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33c98  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33cac  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33ccc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33ce4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33cf8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33d18  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33d44  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33d54  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33d70  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33d7c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33da4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33dbc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33ddc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33dfc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33e14  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33e34  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33e60  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33e80  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33ea0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33ec0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33edc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33ef4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33f08  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33f28  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1a6e33f48  __TEXT,__text  +[MRMediaRemoteServiceClient sharedServiceClient]
+0x1a6e34000  __TEXT,__text  +[MRAVLocalEndpoint sharedLocalEndpointForRoutingContextWithUID:]
+0x1a6e34158  __TEXT,__text  +[MRAVLocalEndpoint sharedLocalEndpointForRoutingContextWithUID:].cold.1
+0x1a6e3416c  __TEXT,__text  ___65+[MRAVLocalEndpoint sharedLocalEndpointForRoutingContextWithUID:]_block_invoke
+0x1a6e341e0  __TEXT,__text  +[MRAVOutputContext sharedAudioPresentationContext]
+0x1a6e341ec  __TEXT,__text  +[MRAVConcreteOutputContext sharedAudioPresentationContext]
+0x1a6e34224  __TEXT,__text  +[MRAVConcreteOutputContext sharedAudioPresentationContext].cold.1
+0x1a6e34238  __TEXT,__text  ___59+[MRAVConcreteOutputContext sharedAudioPresentationContext]_block_invoke
+0x1a6e343c0  __TEXT,__text  +[MRSharedSettings currentSettings]
+0x1a6e343f8  __TEXT,__text  +[MRUserSettings currentSettings].cold.1
+0x1a6e3440c  __TEXT,__text  ___33+[MRUserSettings currentSettings]_block_invoke
+0x1a6e3443c  __TEXT,__text  -[MRUserSettings init]
+0x1a6e344ac  __TEXT,__text  +[MRNowPlayingOriginClientManager sharedManager]
+0x1a6e344e4  __TEXT,__text  -[MRPlayerPath .cxx_destruct]
+0x1a6e34574  __TEXT,__text  +[MROrigin localOrigin]
+0x1a6e34608  __TEXT,__text  ___23+[MROrigin localOrigin]_block_invoke
+0x1a6e34690  __TEXT,__text  ___23+[MROrigin localOrigin]_block_invoke_2
+0x1a6e346cc  __TEXT,__text  ___23+[MRClient localClient]_block_invoke
+0x1a6e34794  __TEXT,__text  ___MRMediaRemoteApplicationIsSystemMediaApplication_block_invoke
+0x1a6e34818  __TEXT,__text  ___MRMediaRemoteApplicationIsSystemPodcastApplication_block_invoke
+0x1a6e3487c  __TEXT,__text  +[MRPlayer defaultPlayer]
+0x1a6e34918  __TEXT,__text  ___38-[MRUserSettings sonicPodcastsEnabled]_block_invoke
+0x1a6e34948  __TEXT,__text  +[MRClient localClient]
+0x1a6e349dc  __TEXT,__text  -[MRClient isSystemMediaApplication]
+0x1a6e34a14  __TEXT,__text  -[MRClient bundleIdentifier]
+0x1a6e34a1c  __TEXT,__text  -[MRClient isSystemPodcastsApplication]
+0x1a6e34a54  __TEXT,__text  -[MRNowPlayingOriginClientManager originClientForPlayerPath:]
+0x1a6e34c20  __TEXT,__text  -[MRNowPlayingOriginClientManager _createOriginClientForPlayerPath:routingContextID:]
+0x1a6e34d60  __TEXT,__text  ___58-[MRNowPlayingOriginClient nowPlayingClientForPlayerPath:]_block_invoke
+0x1a6e34f50  __TEXT,__text  _MRMediaRemoteApplicationIsSystemMediaApplication.cold.1
+0x1a6e34f64  __TEXT,__text  -[MRClient copyWithZone:]
+0x1a6e3510c  __TEXT,__text  -[MRPlayer copyWithZone:]
+0x1a6e35240  __TEXT,__text  -[MRPlayer .cxx_destruct]
+0x1a6e35290  __TEXT,__text  -[MRClient .cxx_destruct]
+0x1a6e352f8  __TEXT,__text  -[MRPlayerPath copyWithZone:]
+0x1a6e3541c  __TEXT,__text  _MRMediaRemoteApplicationIsSystemPodcastApplication.cold.1
+0x1a6e35430  __TEXT,__text  -[MRUserSettings supportsSystemMusicOutputContext]
+0x1a6e35468  __TEXT,__text  -[MRUserSettings supportsSystemMusicOutputContext].cold.1
+0x1a6e3547c  __TEXT,__text  ___50-[MRUserSettings supportsSystemMusicOutputContext]_block_invoke
+0x1a6e3548c  __TEXT,__text  +[MRAVClusterController sharedController]
+0x1a6e35520  __TEXT,__text  ___35+[MRSharedSettings currentSettings]_block_invoke
+0x1a6e35570  __TEXT,__text  -[MRAVOutputContext init]
+0x1a6e356a0  __TEXT,__text  +[MRAVOutputContext notificationQueue]
+0x1a6e356d8  __TEXT,__text  ___38+[MRAVOutputContext notificationQueue]_block_invoke
+0x1a6e35730  __TEXT,__text  +[MRAVOutputContext notificationQueue].cold.1
+0x1a6e35744  __TEXT,__text  ___41+[MRAVClusterController sharedController]_block_invoke
+0x1a6e35770  __TEXT,__text  -[MRAVClusterController init]
+0x1a6e3593c  __TEXT,__text  ___42-[MRAVClusterController registerObserver:]_block_invoke
+0x1a6e35948  __TEXT,__text  -[MRAVConcreteOutputContext setAvOutputContext:]
+0x1a6e35c84  __TEXT,__text  ___48-[MRAVConcreteOutputContext setAvOutputContext:]_block_invoke
+0x1a6e35d14  __TEXT,__text  -[MRAVConcreteOutputContext _unregisterNotifications]
+0x1a6e35d9c  __TEXT,__text  -[MRAVConcreteOutputDevice initWithAVOutputDevice:outputContext:]
+0x1a6e35e34  __TEXT,__text  ____MRLogForCategory_block_invoke
+0x1a6e3603c  __TEXT,__text  ___48+[MRNowPlayingOriginClientManager sharedManager]_block_invoke
+0x1a6e3606c  __TEXT,__text  -[MRNowPlayingOriginClientManager init]
+0x1a6e360e4  __TEXT,__text  ___44-[MRUserSettings verboseOriginClientLogging]_block_invoke
+0x1a6e36114  __TEXT,__text  -[MRAVConcreteOutputContext _addNotifications:name:object:]
+0x1a6e361f8  __TEXT,__text  -[MRAVConcreteOutputContext _registerNotificationsForOutputContext:]
+0x1a6e36408  __TEXT,__text  ___MRProcessIsMediaRemoteDaemon_block_invoke
+0x1a6e36470  __TEXT,__text  +[MRDeviceInfoRequest deviceInfoForOrigin:]
+0x1a6e3654c  __TEXT,__text  -[MRNowPlayingOriginClientRequests initWithOrigin:]
+0x1a6e36710  __TEXT,__text  -[MRNowPlayingOriginClientRequests initWithOrigin:].cold.1
+0x1a6e36738  __TEXT,__text  ___51-[MRNowPlayingOriginClientRequests initWithOrigin:]_block_invoke
+0x1a6e36790  __TEXT,__text  ___49+[MRDeviceInfoRequest cachedDeviceInfoForOrigin:]_block_invoke
+0x1a6e36858  __TEXT,__text  +[MRSharedSettings currentSettings].cold.1
+0x1a6e3686c  __TEXT,__text  +[MRNowPlayingOriginClientManager sharedManager].cold.1
+0x1a6e36880  __TEXT,__text  __MRLogForCategory.cold.1
+0x1a6e368d4  __TEXT,__text  +[MRMediaRemoteServiceClient sharedServiceClient].cold.1
+0x1a6e368e8  __TEXT,__text  -[MRPlayerPath protobuf]
+0x1a6e369b8  __TEXT,__text  -[MRPlayer protobuf]
+0x1a6e36b94  __TEXT,__text  -[MRPlaybackQueueClient initWithQueue:]
+0x1a6e36cd8  __TEXT,__text  ___46-[MRMediaRemoteServiceClient activePlayerPath]_block_invoke
+0x1a6e36d18  __TEXT,__text  _MRMediaRemoteServiceResolvePlayerPath
+0x1a6e36df0  __TEXT,__text  -[MRMediaRemoteService resolvePlayerPath:queue:completion:]
+0x1a6e36ef4  __TEXT,__text  -[MRMediaRemoteServiceClient _initializeConnectionWithCompletion:]
+0x1a6e3701c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e3701c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e3701c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e3701c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e3701c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e37028  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e37028  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e37028  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e37034  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e37034  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e37040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e37040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e37040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e37040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e37040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e37040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e37040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e37040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e37040  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e3704c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e37064  __TEXT,__text  _OUTLINED_FUNCTION_21
+0x1a6e37064  __TEXT,__text  _OUTLINED_FUNCTION_21
+0x1a6e37070  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e37084  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x1a6e37084  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x1a6e37084  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x1a6e37084  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x1a6e37084  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x1a6e37098  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e370a8  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e370a8  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e370bc  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e370d0  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e370e4  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e370ec  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e370ec  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e370f8  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e370f8  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e370f8  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e370f8  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e37104  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e3712c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e37140  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x1a6e3720c  __TEXT,__text  -[MRNowPlayingOriginClientManager existingOriginClientForPlayerPath:]
+0x1a6e372f8  __TEXT,__text  -[MRNowPlayingOriginClientManager _allowLocalOriginUsage]
+0x1a6e37354  __TEXT,__text  ___79-[MRNowPlayingPlayerClientCallbacks setPlaybackSessionMigrateFinalizeCallback:]_block_invoke
+0x1a6e3738c  __TEXT,__text  ___75-[MRNowPlayingPlayerClientCallbacks setPlaybackSessionMigratePostCallback:]_block_invoke
+0x1a6e373c4  __TEXT,__text  -[MRXPCConnection initWithConnection:queue:defaultReplyQueue:]
+0x1a6e374c4  __TEXT,__text  -[MRXPCConnection _registerCallbacks]
+0x1a6e37594  __TEXT,__text  _MRMediaRemoteServiceStart
+0x1a6e376bc  __TEXT,__text  ___34-[MRMediaRemoteServiceClient init]_block_invoke
+0x1a6e376f4  __TEXT,__text  -[MRClient visibility]
+0x1a6e376fc  __TEXT,__text  -[MRNowPlayingAudioFormatApplication isEqual:]
+0x1a6e377bc  __TEXT,__text  -[MRNowPlayingAudioFormatApplication .cxx_destruct]
+0x1a6e38040  __TEXT,__text  -[MRNotificationClient _postNotification:userInfo:object:withHandler:]
+0x1a6e38264  __TEXT,__text  ____MRServiceHandleClientMessage_block_invoke
+0x1a6e38c60  __TEXT,__text  __MRDecodeObjectForKey
+0x1a6e38d44  __TEXT,__text  ____MRServiceHandlePostNotification_block_invoke
+0x1a6e38da8  __TEXT,__text  __MRUnarchiveObjectForKey
+0x1a6e38f08  __TEXT,__text  ___57-[MRNotificationClient postNotification:userInfo:object:]_block_invoke
+0x1a6e38fb0  __TEXT,__text  ___70-[MRNotificationClient _postNotification:userInfo:object:withHandler:]_block_invoke_2
+0x1a6e3912c  __TEXT,__text  ___MRNotificationServiceClientPostNotificationCallback_block_invoke
+0x1a6e3918c  __TEXT,__text  ___41-[MRNotificationClient notificationQueue]_block_invoke
+0x1a6e391ec  __TEXT,__text  ___MRMediaRemoteServiceStart_block_invoke_2
+0x1a6e39850  __TEXT,__text  ___MRMediaRemoteServiceStart_block_invoke
+0x1a6e39914  __TEXT,__text  ___70-[MRNotificationClient _postNotification:userInfo:object:withHandler:]_block_invoke
+0x1a6e399a0  __TEXT,__text  -[MRUserSettings checkXPCConnectionStatusDefaultInterval]
+0x1a6e39a7c  __TEXT,__text  __processNotification
+0x1a6e39b24  __TEXT,__text  -[MRMediaSuggestionPreferences _updateGlobalToggleState]
+0x1a6e39d38  __TEXT,__text  -[MRMediaSuggestionPreferences dictionaryRepresentation]
+0x1a6e39e24  __TEXT,__text  -[MRMediaSuggestionPreferences globalDisplayPreferencesForContexts]
+0x1a6e39e8c  __TEXT,__text  -[MRMediaSuggestionPreferences disabledBundlesForContexts]
+0x1a6e39ef4  __TEXT,__text  -[MRMediaSuggestionPreferences bundlesDisabledInAllContexts]
+0x1a6e3a094  __TEXT,__text  -[MRNowPlayingAudioFormatApplication initWithBundleID:displayName:]
+0x1a6e3a12c  __TEXT,__text  -[MRNowPlayingAudioFormatApplication displayName]
+0x1a6e3a134  __TEXT,__text  ___68-[MRAVRoutingClientController _pickableRoutesDidChangeNotification:]_block_invoke
+0x1a6e3a140  __TEXT,__text  -[MRAVOutputDevice description]
+0x1a6e3a8ac  __TEXT,__text  ___85-[NSArray(MRAdditions) changeDescriptionTo:keyBlock:isUpdatedBlock:descriptionBlock:]_block_invoke
+0x1a6e3a984  __TEXT,__text  -[NSArray(MRAdditions) mr_filter:]
+0x1a6e3aaec  __TEXT,__text  ___MRCreateEncodedUserInfo_block_invoke_11
+0x1a6e3b128  __TEXT,__text  -[MRAVConcreteOutputDevice _loadLocalOverridesWithOutputContext:outputDevice:]
+0x1a6e3b7d0  __TEXT,__text  -[MRAVConcreteOutputDevice initWithAVOutputDevice:sourceInfo:outputContext:]
+0x1a6e3b918  __TEXT,__text  _MRProcessIsMediaRemoteDaemon.cold.1
+0x1a6e3b918  __TEXT,__text  _MRProcessIsMediaRemoteDaemon.cold.1
+0x1a6e3b918  __TEXT,__text  _MRProcessIsMediaRemoteDaemon.cold.1
+0x1a6e3b918  __TEXT,__text  _MRProcessIsMediaRemoteDaemon.cold.1
+0x1a6e3b918  __TEXT,__text  _MRProcessIsMediaRemoteDaemon.cold.1
+0x1a6e3b918  __TEXT,__text  _MRProcessIsMediaRemoteDaemon.cold.1
+0x1a6e3b918  __TEXT,__text  _MRProcessIsMediaRemoteDaemon.cold.1
+0x1a6e3b918  __TEXT,__text  _MRProcessIsMediaRemoteDaemon.cold.1
+0x1a6e3b918  __TEXT,__text  _MRProcessIsMediaRemoteDaemon.cold.1
+0x1a6e3b918  __TEXT,__text  _MRProcessIsMediaRemoteDaemon.cold.1
+0x1a6e3b918  __TEXT,__text  _MRProcessIsMediaRemoteDaemon.cold.1
+0x1a6e3b918  __TEXT,__text  _MRProcessIsMediaRemoteDaemon.cold.1
+0x1a6e3b918  __TEXT,__text  _MRProcessIsMediaRemoteDaemon.cold.1
+0x1a6e3b918  __TEXT,__text  _MRProcessIsMediaRemoteDaemon.cold.1
+0x1a6e3b918  __TEXT,__text  _MRProcessIsMediaRemoteDaemon.cold.1
+0x1a6e3b9ac  __TEXT,__text  __MREncodeObjectForKey
+0x1a6e3ba88  __TEXT,__text  -[MRAVConcreteOutputDevice playingPairedDeviceName]
+0x1a6e3bb50  __TEXT,__text  -[MRAVConcreteOutputDevice isLocalDevice]
+0x1a6e3bb88  __TEXT,__text  -[MRAVConcreteOutputDevice deviceType]
+0x1a6e3bbc4  __TEXT,__text  -[MRAVConcreteOutputDevice uid]
+0x1a6e3be04  __TEXT,__text  -[MRAVDistantOutputDevice initWithDescriptor:]
+0x1a6e3c110  __TEXT,__text  ___45-[NSArray(MRAVAdditions) mr_allOutputDevices]_block_invoke
+0x1a6e3c1f0  __TEXT,__text  -[MRAVConcreteOutputDevice deviceSubtype]
+0x1a6e3c22c  __TEXT,__text  -[MRAVOutputDevice descriptor]
+0x1a6e3cdb4  __TEXT,__text  -[MRXPCConnection connection]
+0x1a6e3cdbc  __TEXT,__text  -[MRXPCConnection pid]
+0x1a6e3cdc4  __TEXT,__text  -[MROrigin isEqual:]
+0x1a6e3ce74  __TEXT,__text  -[MRPlayerPath origin]
+0x1a6e3ce7c  __TEXT,__text  -[MRPlayerPath client]
+0x1a6e3ce84  __TEXT,__text  -[MRPlayerPath player]
+0x1a6e3ce8c  __TEXT,__text  -[MRDeviceInfo clusterID]
+0x1a6e3ce94  __TEXT,__text  -[MRDeviceInfo systemPodcastApplication]
+0x1a6e3ce9c  __TEXT,__text  -[MRAVConcreteOutputDevice avOutputDevice]
+0x1a6e3ceb0  __TEXT,__text  -[MRDeviceInfo systemMediaApplication]
+0x1a6e3ceb8  __TEXT,__text  -[MRDeviceInfo setGroupedDevices:]
+0x1a6e3cec0  __TEXT,__text  -[MRDeviceInfo isClusterAware]
+0x1a6e3cec8  __TEXT,__text  -[MRDeviceInfo hasConfiguredClusterSize]
+0x1a6e3ced0  __TEXT,__text  -[MRDeviceInfo setLastSupportedClusterType:]
+0x1a6e3cee0  __TEXT,__text  -[MRDeviceInfo hasLastSupportedClusterType]
+0x1a6e3cee8  __TEXT,__text  -[MRDeviceInfo setBuildVersion:]
+0x1a6e3cef0  __TEXT,__text  -[MRDeviceInfo setDeviceUID:]
+0x1a6e3cef8  __TEXT,__text  -[MRDeviceInfo tightSyncUID]
+0x1a6e3cf00  __TEXT,__text  -[MRDeviceInfo airPlayGroupUID]
+0x1a6e3cf08  __TEXT,__text  -[MRDeviceInfo setAllClusteredDevices:]
+0x1a6e3cf10  __TEXT,__text  -[MRDeviceInfo groupSessionToken]
+0x1a6e3cf18  __TEXT,__text  -[MRDeviceInfo setLeaderDeviceInfo:]
+0x1a6e3cf20  __TEXT,__text  ___37-[MRXPCConnection _registerCallbacks]_block_invoke
+0x1a6e3d1b8  __TEXT,__text  ___37-[MRXPCConnection _registerCallbacks]_block_invoke_2
+0x1a6e3d28c  __TEXT,__text  -[MRDeviceInfo copyWithZone:]
+0x1a6e3ddcc  __TEXT,__text  -[_MRNowPlayingPlayerPathProtobuf .cxx_destruct]
+0x1a6e3de28  __TEXT,__text  -[_MROriginProtobuf .cxx_destruct]
+0x1a6e3de70  __TEXT,__text  -[MRDeviceInfo .cxx_destruct]
+0x1a6e3e004  __TEXT,__text  -[MRDeviceInfo clusteredDevices]
+0x1a6e3e020  __TEXT,__text  -[MROrigin .cxx_destruct]
+0x1a6e3e02c  __TEXT,__text  -[MRPlayer initWithProtobuf:]
+0x1a6e3e494  __TEXT,__text  -[_MRNowPlayingPlayerPathProtobuf readFrom:]
+0x1a6e3ea10  __TEXT,__text  -[MRPlayerPath initWithProtobuf:]
+0x1a6e3eb30  __TEXT,__text  -[MRAVConcreteOutputDevice _playingPairedDeviceNameForAVOutputDevice:]
+0x1a6e3eca8  __TEXT,__text  ___78-[MRAVConcreteOutputDevice _loadLocalOverridesWithOutputContext:outputDevice:]_block_invoke_4
+0x1a6e3ed04  __TEXT,__text  ___78-[MRAVConcreteOutputDevice _loadLocalOverridesWithOutputContext:outputDevice:]_block_invoke_2
+0x1a6e3ef50  __TEXT,__text  -[MRNowPlayingOriginClient initWithOrigin:routingContextID:]
+0x1a6e3f20c  __TEXT,__text  ___67-[MRNowPlayingPlayerClientCallbacks addCommandHandlerBlock:forKey:]_block_invoke
+0x1a6e3f260  __TEXT,__text  +[MRPlayer defaultPlayer].cold.1
+0x1a6e3f274  __TEXT,__text  ___25+[MRPlayer defaultPlayer]_block_invoke
+0x1a6e3f2b8  __TEXT,__text  ___78-[MRNowPlayingPlayerClientCallbacks setPlaybackSessionMigrateRequestCallback:]_block_invoke
+0x1a6e3f2f0  __TEXT,__text  ___getAVSystemControllerClass_block_invoke
+0x1a6e3f348  __TEXT,__text  ___getAVSystemControllerClass_block_invoke
+0x1a6e3f3a0  __TEXT,__text  ___66-[MRNowPlayingClient reevaluateActivePlayerWithReason:completion:]_block_invoke
+0x1a6e3f41c  __TEXT,__text  _getAVSystemControllerClass
+0x1a6e3f4f0  __TEXT,__text  _getAVSystemControllerClass
+0x1a6e3f5c4  __TEXT,__text  ___47-[MRNowPlayingPlayerClient activeRequestedDate]_block_invoke
+0x1a6e3f5d8  __TEXT,__text  -[NSArray(MRAdditions) mr_first:]
+0x1a6e3f700  __TEXT,__text  ___66-[MRNowPlayingClient reevaluateActivePlayerWithReason:completion:]_block_invoke_3
+0x1a6e3f754  __TEXT,__text  -[MRClient setDisplayName:]
+0x1a6e3f75c  __TEXT,__text  ___64-[MRNowPlayingPlayerClientCallbacks setPlaybackSessionCallback:]_block_invoke
+0x1a6e3f794  __TEXT,__text  ___76-[MRNowPlayingPlayerClientCallbacks setPlaybackSessionMigrateBeginCallback:]_block_invoke
+0x1a6e3f7cc  __TEXT,__text  ___74-[MRNowPlayingPlayerClientCallbacks setPlaybackSessionMigrateEndCallback:]_block_invoke
+0x1a6e3f938  __TEXT,__text  -[MRClient setBundleIdentifier:]
+0x1a6e3f940  __TEXT,__text  -[MRXPCConnection uid]
+0x1a6e3f948  __TEXT,__text  -[MRClient setExtendedBundleIdentifierHierarchy:]
+0x1a6e3f950  __TEXT,__text  -[MRClient isEqual:]
+0x1a6e3fae4  __TEXT,__text  -[MRPlayer audioSessionID]
+0x1a6e3faec  __TEXT,__text  -[MRClient extendedBundleIdentifierHierarchy]
+0x1a6e3faf4  __TEXT,__text  -[MRPlayer appIcon]
+0x1a6e3fafc  __TEXT,__text  ___41-[MRNowPlayingClient initWithPlayerPath:]_block_invoke
+0x1a6e3fc18  __TEXT,__text  _MediaExperienceLibrary
+0x1a6e3fd10  __TEXT,__text  _MediaExperienceLibrary
+0x1a6e3fe08  __TEXT,__text  _MediaExperienceLibrary
+0x1a6e400e8  __TEXT,__text  _getAVSystemController_ServerConnectionDiedNotification
+0x1a6e401e0  __TEXT,__text  _getAVSystemController_SubscribeToNotificationsAttribute
+0x1a6e403a4  __TEXT,__text  _MRMediaRemoteServiceSetNowPlayingPlaybackQueueCapabilities
+0x1a6e40500  __TEXT,__text  __MRServiceCreateErrorHandlerBlock
+0x1a6e4073c  __TEXT,__text  ___49-[MRNowPlayingPlayerClientCallbacks capabilities]_block_invoke
+0x1a6e40770  __TEXT,__text  ___44-[MRNowPlayingPlayerClient setCapabilities:]_block_invoke
+0x1a6e40c40  __TEXT,__text  -[_MRNowPlayingPlayerProtobuf dealloc]
+0x1a6e40c94  __TEXT,__text  -[_MRNowPlayingPlayerProtobuf .cxx_destruct]
+0x1a6e40cf0  __TEXT,__text  -[_MRNowPlayingClientProtobuf .cxx_destruct]
+0x1a6e40d88  __TEXT,__text  -[MRClient setParentApplicationBundleIdentifier:]
+0x1a6e40d90  __TEXT,__text  -[MRClient setProcessUserIdentifier:]
+0x1a6e40d98  __TEXT,__text  -[MRClient parentApplicationBundleIdentifier]
+0x1a6e40da0  __TEXT,__text  -[MRClient processIdentifier]
+0x1a6e40da8  __TEXT,__text  -[MRClient displayName]
+0x1a6e40db0  __TEXT,__text  -[MROrigin isLocallyHosted]
+0x1a6e41b54  __TEXT,__text  ___50-[MRMediaRemoteServiceClient setActivePlayerPath:]_block_invoke
+0x1a6e41b98  __TEXT,__text  ___MRMediaRemoteServiceResolvePlayerPath_block_invoke
+0x1a6e41ba8  __TEXT,__text  ___66-[MRMediaRemoteServiceClient _initializeConnectionWithCompletion:]_block_invoke
+0x1a6e41c3c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41c58  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41c64  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41c78  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41c90  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e41c90  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e41c90  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e41c90  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e41ca4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41cc0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41cd8  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41ce8  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41d0c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41d2c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41d3c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41d5c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41d68  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41d74  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41d74  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41d80  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41da0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41dc0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41dd4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41df4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41e14  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41e20  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41e40  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e41e40  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1a6e41e54  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41e74  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e41e74  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1a6e41e88  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41ea0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1a6e41f40  __TEXT,__text  ___59-[MRMediaRemoteService resolvePlayerPath:queue:completion:]_block_invoke
+0x1a6e42114  __TEXT,__text  -[_MRNowPlayingPlayerPathProtobuf origin]
+0x1a6e42128  __TEXT,__text  -[MRPlayerPath initWithOrigin:client:player:]
+0x1a6e42284  __TEXT,__text  ___77-[MRMediaRemoteServiceClient processPlayerPathInvalidationHandlersWithBlock:]_block_invoke
+0x1a6e42288  __TEXT,__text  -[MRMediaRemoteServiceClient _onQueue_processPlayerPathInvalidationHandlersWithBlock:]
+0x1a6e4231c  __TEXT,__text  ___49+[MRMediaRemoteServiceClient sharedServiceClient]_block_invoke
+0x1a6e4234c  __TEXT,__text  -[MRMediaRemoteServiceClient init]
+0x1a6e42604  __TEXT,__text  _MRMediaRemoteServiceCreate
+0x1a6e42810  __TEXT,__text  -[MRNotificationClient init]
+0x1a6e42ef8  __TEXT,__text  ___46-[MRXPCConnection addCustomXPCHandler:forKey:]_block_invoke
+0x1a6e42fec  __TEXT,__text  -[MRXPCConnection setMessageHandler:]
+0x1a6e42ff4  __TEXT,__text  -[MRXPCConnection setInvalidationHandler:]
+0x1a6e42ffc  __TEXT,__text  _MRMediaRemoteServiceSetClientModule
+0x1a6e43004  __TEXT,__text  -[MRMediaRemoteServiceClient _registerCallbacks]
+0x1a6e432b4  __TEXT,__text  _MRMediaRemoteServiceSetInvalidationHandler
+0x1a6e433b4  __TEXT,__text  _MRMediaRemoteServiceSetResumeHandler
+0x1a6e434e8  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e434fc  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e4350c  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x1a6e4350c  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x1a6e4350c  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x1a6e4350c  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x1a6e4350c  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x1a6e43520  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e43530  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e4353c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e43550  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e43564  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e43578  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e43580  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e4358c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e4359c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e435b0  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e435c4  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e435ec  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e435fc  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e4360c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1a6e43624  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e4364c  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e4365c  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e4366c  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e4366c  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e4366c  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e43678  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e43684  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e4369c  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e436bc  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e436cc  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e436dc  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e436f0  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x1a6e436fc  __TEXT,__text  _MRCopyPossibleRouteUIDSuffixes.cold.1
+0x1a6e43710  __TEXT,__text  -[MRUserSettings supportMultiplayerHost]
+0x1a6e43750  __TEXT,__text  -[NSArray(MRAdditions) mr_map:]
+0x1a6e438dc  __TEXT,__text  -[MRSharedSettings isMultiplayerHost]
+0x1a6e43914  __TEXT,__text  -[MRDeviceInfo deviceUID]
+0x1a6e4391c  __TEXT,__text  -[MRDeviceInfo supportsSystemPairing]
+0x1a6e43924  __TEXT,__text  -[MRDeviceInfo protobuf]
+0x1a6e44324  __TEXT,__text  -[_MRDeviceInfoMessageProtobuf .cxx_destruct]
+0x1a6e445ec  __TEXT,__text  -[MRMediaRemoteService getDeviceInfoForPlayerPath:queue:completion:]
+0x1a6e44700  __TEXT,__text  -[MRDeviceInfo initWithProtobuf:]
+0x1a6e44ee0  __TEXT,__text  -[MRGroupSessionEligibilityStatus copyWithZone:]
+0x1a6e45028  __TEXT,__text  ___MRCreateEncodedUserInfo_block_invoke_10
+0x1a6e45040  __TEXT,__text  ___60+[MRDeviceInfoRequest deviceInfoForOrigin:queue:completion:]_block_invoke_4
+0x1a6e45054  __TEXT,__text  ___60+[MRDeviceInfoRequest deviceInfoForOrigin:queue:completion:]_block_invoke
+0x1a6e451a4  __TEXT,__text  -[MRNowPlayingOriginClientRequests handleDeviceInfoRequestWithCompletion:]
+0x1a6e453b0  __TEXT,__text  _MRMediaRemoteServiceCopyDeviceInfo
+0x1a6e454f8  __TEXT,__text  ___MRMediaRemoteServiceCopyDeviceInfo_block_invoke
+0x1a6e45528  __TEXT,__text  _MRMediaRemoteServiceGetDeviceInfo
+0x1a6e455b0  __TEXT,__text  -[_MRDeviceInfoMessageProtobuf readFrom:]
+0x1a6e476f0  __TEXT,__text  -[MRDeviceInfo supportsSharedQueue]
+0x1a6e476f8  __TEXT,__text  -[MRDeviceInfo setLinkAgent:]
+0x1a6e47700  __TEXT,__text  -[MRDeviceInfo hasSupportsSystemPairing]
+0x1a6e47708  __TEXT,__text  -[MRDeviceInfo protocolVersion]
+0x1a6e47710  __TEXT,__text  -[MRDeviceInfo groupUID]
+0x1a6e47718  __TEXT,__text  -[_MRDeviceInfoMessageProtobuf setHasPreferredEncoding:]
+0x1a6e47744  __TEXT,__text  -[MRDeviceInfo hasProxyGroupPlayer]
+0x1a6e4774c  __TEXT,__text  -[MRDeviceInfo sharedQueueVersion]
+0x1a6e47754  __TEXT,__text  -[_MRDeviceInfoMessageProtobuf setProtocolVersion:]
+0x1a6e47780  __TEXT,__text  -[_MRNowPlayingPlayerPathProtobuf client]
+0x1a6e47794  __TEXT,__text  -[MRPlayerPath setOrigin:]
+0x1a6e4780c  __TEXT,__text  -[MROrigin isLocal]
+0x1a6e4781c  __TEXT,__text  -[MRPlayerPath description]
+0x1a6e47988  __TEXT,__text  -[MRPlaybackQueueSubscriptionController initWithPlayerPath:]
+0x1a6e47a90  __TEXT,__text  -[MRPlayer identifier]
+0x1a6e47ac8  __TEXT,__text  -[MRPlayer displayName]
+0x1a6e47ae0  __TEXT,__text  -[MRPlayer audioSessionType]
+0x1a6e47ae8  __TEXT,__text  -[MRPlayer mxSessionIDs]
+0x1a6e47af0  __TEXT,__text  -[MRPlayerPath setClient:]
+0x1a6e47b74  __TEXT,__text  -[MRGroupSessionEligibilityStatus encodeWithCoder:]
+0x1a6e47cf8  __TEXT,__text  -[MRGroupSessionEligibilityStatus .cxx_destruct]
+0x1a6e47d30  __TEXT,__text  ____MRUnarchiveObjectForKey_block_invoke
+0x1a6e47e80  __TEXT,__text  -[MRAVOutputDevice isPersonalRoute]
+0x1a6e47ea0  __TEXT,__text  ___64-[MRAVOutputContext _scheduleOutputContextDidChangeNotification]_block_invoke
+0x1a6e47ef4  __TEXT,__text  ___65+[MRAVConcreteOutputContext _initializeAVFNotificationForwarding]_block_invoke_2
+0x1a6e48030  __TEXT,__text  -[MRGroupSessionEligibilityStatus setRouteType:]
+0x1a6e48038  __TEXT,__text  ___78-[MRAVConcreteOutputDevice _loadLocalOverridesWithOutputContext:outputDevice:]_block_invoke_3
+0x1a6e4809c  __TEXT,__text  ___54-[MRAVConcreteOutputContext setConcreteOutputDevices:]_block_invoke
+0x1a6e48118  __TEXT,__text  ___MRCopyPossibleRouteUIDSuffixes_block_invoke
+0x1a6e48154  __TEXT,__text  -[MRAVOutputDevice groupID]
+0x1a6e481b0  __TEXT,__text  -[MRAVOutputDevice shouldBeLocallyHosted]
+0x1a6e48220  __TEXT,__text  -[MRAVOutputDevice hostDeviceClass]
+0x1a6e48228  __TEXT,__text  ___68-[MRMediaRemoteService getDeviceInfoForPlayerPath:queue:completion:]_block_invoke
+0x1a6e48324  __TEXT,__text  -[MRAVClusterController deviceInfoDidChangeNotification:]
+0x1a6e48384  __TEXT,__text  -[MRAVOutputDevice isVolumeControlAvailable]
+0x1a6e483a0  __TEXT,__text  -[MRAVEndpoint _init]
+0x1a6e483d8  __TEXT,__text  -[MRAVOutputDevice roomsLookupTable]
+0x1a6e48550  __TEXT,__text  -[MRAVOutputDevice roomID]
+0x1a6e48558  __TEXT,__text  -[MRAVOutputDevice isUsingJSONProtocol]
+0x1a6e48560  __TEXT,__text  -[MRAVOutputDevice primaryID]
+0x1a6e48564  __TEXT,__text  -[MRAVOutputDevice isPickable]
+0x1a6e4856c  __TEXT,__text  -[MRAVOutputDevice parentUID]
+0x1a6e48574  __TEXT,__text  -[MRAVOutputDevice roomName]
+0x1a6e4857c  __TEXT,__text  -[NSArray(MRAVAdditions) mr_allOutputDevices]
+0x1a6e48588  __TEXT,__text  ___38-[MRAVConcreteOutputContext contextID]_block_invoke
+0x1a6e485a8  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x1a6e485a8  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x1a6e485a8  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x1a6e485b4  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x1a6e485cc  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x1a6e485e4  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x1a6e485ec  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x1a6e48604  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x1a6e48618  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x1a6e48624  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x1a6e48630  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x1a6e48644  __TEXT,__text  -[MRAVConcreteOutputContext setPredictedOutputDevice:]
+0x1a6e487dc  __TEXT,__text  ___54-[MRAVConcreteOutputContext setPredictedOutputDevice:]_block_invoke
+0x1a6e48878  __TEXT,__text  -[MRAVConcreteOutputContext initWithAVOutputContext:type:]
+0x1a6e48a34  __TEXT,__text  +[MROutputContextController sharedOutputContextController]
+0x1a6e48a6c  __TEXT,__text  +[MROutputContextController sharedOutputContextController].cold.1
+0x1a6e48a80  __TEXT,__text  ___58+[MROutputContextController sharedOutputContextController]_block_invoke
+0x1a6e48aec  __TEXT,__text  -[MROutputContextController initWithOutputContext:]
+0x1a6e48c3c  __TEXT,__text  _MRMediaRemoteServiceGetMediaPlaybackVolume
+0x1a6e48d50  __TEXT,__text  ___82-[MRNowPlayingOriginClientRequests handleVolumeCapabilitiesRequestWithCompletion:]_block_invoke
+0x1a6e48e88  __TEXT,__text  _MRMediaRemoteServiceGetPickedRouteVolumeControlCapabilities
+0x1a6e48fb4  __TEXT,__text  -[MRAVOutputContextEndpoint setOutputContext:]
+0x1a6e490b4  __TEXT,__text  -[MRAVOutputContextEndpoint _reloadOutputDevicesFromContext]
+0x1a6e49134  __TEXT,__text  -[MRAVOutputContextEndpoint updateOutputDevices:outputDevicesSnapshot:]
+0x1a6e4949c  __TEXT,__text  -[MRAVOutputDevice setEndpoint:]
+0x1a6e494a8  __TEXT,__text  -[MRAVEndpoint scheduleEndpointOutputDevicesDidChangeNotification]
+0x1a6e4954c  __TEXT,__text  +[MRAVEndpoint _notificationSerialQueue]
+0x1a6e49588  __TEXT,__text  +[MRAVEndpoint _notificationSerialQueue].cold.1
+0x1a6e4959c  __TEXT,__text  ___40+[MRAVEndpoint _notificationSerialQueue]_block_invoke
+0x1a6e495f4  __TEXT,__text  -[MRAVLocalEndpoint registerNotifications]
+0x1a6e49660  __TEXT,__text  ___74-[MRNowPlayingOriginClientRequests handleDeviceInfoRequestWithCompletion:]_block_invoke_2
+0x1a6e497ec  __TEXT,__text  ___60+[MRDeviceInfoRequest deviceInfoForOrigin:queue:completion:]_block_invoke_2
+0x1a6e498dc  __TEXT,__text  ___60+[MRDeviceInfoRequest deviceInfoForOrigin:queue:completion:]_block_invoke_3
+0x1a6e498f4  __TEXT,__text  ___49+[MRDeviceInfoRequest cachedDeviceInfoForOrigin:]_block_invoke_2
+0x1a6e499d4  __TEXT,__text  ___49+[MRDeviceInfoRequest cachedDeviceInfoForOrigin:]_block_invoke_3
+0x1a6e49af4  __TEXT,__text  -[MRAVOutputContext shouldLog]
+0x1a6e49b34  __TEXT,__text  +[MRAVConcreteOutputContext _initializeAVFNotificationForwarding]
+0x1a6e49b68  __TEXT,__text  ___65+[MRAVConcreteOutputContext _initializeAVFNotificationForwarding]_block_invoke
+0x1a6e49ca8  __TEXT,__text  -[MRAVLocalEndpoint initWithOutputContext:]
+0x1a6e49d64  __TEXT,__text  -[MRAVOutputContextEndpoint initWithOutputContext:uniqueIdentifier:]
+0x1a6e49e30  __TEXT,__text  -[MROutputContextController initVolume]
+0x1a6e4a15c  __TEXT,__text  -[MROutputContextDataSource setShouldLog:]
+0x1a6e4a164  __TEXT,__text  _MRMediaRemoteGetMediaPlaybackVolumeForOrigin
+0x1a6e4a480  __TEXT,__text  ___MRMediaRemoteGetMediaPlaybackVolumeForOrigin_block_invoke_2
+0x1a6e4a4fc  __TEXT,__text  ___70-[MRNowPlayingOriginClientRequests handleVolumeRequestWithCompletion:]_block_invoke
+0x1a6e4a950  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x1a6e4a964  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x1a6e4a964  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x1a6e4a970  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x1a6e4ab4c  __TEXT,__text  _MRMediaRemoteServiceGetSystemIsMuted
+0x1a6e4abfc  __TEXT,__text  __MRMediaRemoteServiceProtobuf
+0x1a6e4ad9c  __TEXT,__text  -[MROutputContextController _registerNotifications]
+0x1a6e4af54  __TEXT,__text  -[MRAVEndpoint setOutputContextDataSource:]
+0x1a6e4b1a8  __TEXT,__text  _MRMediaRemoteServiceCopyPickableRoutes
+0x1a6e4b2e0  __TEXT,__text  ___73-[MRAVRoutingClientController fetchPickableRoutesForCategory:completion:]_block_invoke
+0x1a6e4b6a0  __TEXT,__text  ___93-[MRAVConcreteRoutingDiscoverySession _onReloadQueue_createOutputDevicesFromAVOutputDevices:]_block_invoke_2
+0x1a6e4b744  __TEXT,__text  -[MRAVConcreteOutputDevice initWithAVOutputDevice:sourceInfo:]
+0x1a6e4b754  __TEXT,__text  -[NSArray(MRAdditions) changeDescriptionTo:keyBlock:isUpdatedBlock:descriptionBlock:]
+0x1a6e4bfcc  __TEXT,__text  ___63-[MRAVConcreteRoutingDiscoverySession _aggregateOutputDevices:]_block_invoke
+0x1a6e4c0e0  __TEXT,__text  ___85+[MRAVRoutingDiscoverySession _determineModifiedOutputDevices:previousOutputDevices:]_block_invoke
+0x1a6e4c368  __TEXT,__text  ___61-[MRAVConcreteRoutingDiscoverySession initWithConfiguration:]_block_invoke
+0x1a6e4c39c  __TEXT,__text  ___72-[MRAVRoutingDiscoverySession logOutputDevicesChanged:oldOutputDevices:]_block_invoke_3
+0x1a6e4c6a8  __TEXT,__text  ___72-[MRAVRoutingDiscoverySession logOutputDevicesChanged:oldOutputDevices:]_block_invoke_2
+0x1a6e4c6b0  __TEXT,__text  ___49-[NSArray(MRAVAdditions) mr_distantOutputDevices]_block_invoke
+0x1a6e4c720  __TEXT,__text  -[MRAVRoutingClientController _flushPendingCompletionHandlersWithPickableRoutes:forCategory:]
+0x1a6e4c938  __TEXT,__text  ___73-[MRAVRoutingClientController fetchPickableRoutesForCategory:completion:]_block_invoke_2
+0x1a6e4c984  __TEXT,__text  ___MRMediaRemoteServiceCopyPickableRoutes_block_invoke
+0x1a6e4cad8  __TEXT,__text  -[MRAVOutputDevice outputDeviceWithAlternativeOutputDevices]
+0x1a6e4cb88  __TEXT,__text  -[MRAVOutputDevice batteryDescription]
+0x1a6e4ce30  __TEXT,__text  ___72-[MRAVRoutingDiscoverySession logOutputDevicesChanged:oldOutputDevices:]_block_invoke_4
+0x1a6e4ce38  __TEXT,__text  ___48-[MRAVOutputDevice availableProtocolDescription]_block_invoke
+0x1a6e4cf2c  __TEXT,__text  -[MRAVOutputDevice availableProtocolDescription]
+0x1a6e4cfa0  __TEXT,__text  -[MRDeviceInfo airPlayReceivers]
+0x1a6e4cfa8  __TEXT,__text  -[MRAVConcreteOutputDevice .cxx_destruct]
+0x1a6e4d0c8  __TEXT,__text  -[MRAVOutputDevice isEqual:]
+0x1a6e4d220  __TEXT,__text  ___72-[MRAVRoutingDiscoverySession logOutputDevicesChanged:oldOutputDevices:]_block_invoke
+0x1a6e4d228  __TEXT,__text  ___65-[MRAVConcreteRoutingDiscoverySession setAvailableOutputDevices:]_block_invoke
+0x1a6e4d270  __TEXT,__text  ___52-[MRAVConcreteRoutingDiscoverySession discoveryMode]_block_invoke
+0x1a6e4d290  __TEXT,__text  ___93-[MRAVConcreteRoutingDiscoverySession _onReloadQueue_createOutputDevicesFromAVOutputDevices:]_block_invoke
+0x1a6e4d2b4  __TEXT,__text  ___52-[MRAVRoutingDiscoverySession outputDevicesSnapshot]_block_invoke
+0x1a6e4d2f4  __TEXT,__text  ___60-[MRAVRoutingDiscoverySession outputDevicesRemovedCallbacks]_block_invoke
+0x1a6e4d334  __TEXT,__text  ___60-[MRAVRoutingDiscoverySession outputDevicesChangedCallbacks]_block_invoke
+0x1a6e4d374  __TEXT,__text  ___58-[MRAVRoutingDiscoverySession outputDevicesAddedCallbacks]_block_invoke
+0x1a6e4d3b4  __TEXT,__text  ___61-[MRAVRoutingDiscoverySession outputDevicesModifiedCallbacks]_block_invoke
+0x1a6e4d3f4  __TEXT,__text  -[MRAVConcreteRoutingDiscoverySession _availableOutputDevicesDidChangeNotification:]
+0x1a6e4d3f8  __TEXT,__text  -[MRDeviceInfo configuredClusterSize]
+0x1a6e4d400  __TEXT,__text  -[MRDeviceInfo setActiveSystemEndpointUID:]
+0x1a6e4d408  __TEXT,__text  -[MRAVRoutingClientController _pickableRoutesDidChangeNotification:]
+0x1a6e4d594  __TEXT,__text  ___MRMediaRemoteCopyPickableRoutesForCategory_block_invoke
+0x1a6e4d5d8  __TEXT,__text  ___71-[MRAVRoutingClientController _cacheFetchedPickableRoutes:forCategory:]_block_invoke
+0x1a6e4d5f8  __TEXT,__text  ___93-[MRAVRoutingClientController _flushPendingCompletionHandlersWithPickableRoutes:forCategory:]_block_invoke
+0x1a6e4d65c  __TEXT,__text  -[MRAVRoutingClientController _cacheFetchedPickableRoutes:forCategory:]
+0x1a6e4d720  __TEXT,__text  -[MRUserSettings disableAWDLRoutes]
+0x1a6e4d7b0  __TEXT,__text  -[MRDeviceInfo buildVersion]
+0x1a6e4d7b8  __TEXT,__text  -[MROutputContextController _onSerialQueue_localOutputDevice]
+0x1a6e4d948  __TEXT,__text  _OUTLINED_FUNCTION_26
+0x1a6e4d958  __TEXT,__text  _OUTLINED_FUNCTION_26
+0x1a6e4d964  __TEXT,__text  ___61-[MROutputContextController _onSerialQueue_localOutputDevice]_block_invoke_3
+0x1a6e4d968  __TEXT,__text  -[MROutputContextController _onSerialQueue_isLocalOutputDevice:]
+0x1a6e4daac  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x1a6e4dac0  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x1a6e4dae4  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x1a6e4daf4  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x1a6e4db00  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x1a6e4db0c  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x1a6e4db30  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x1a6e4db50  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x1a6e4db60  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x1a6e4db90  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x1a6e4dba0  __TEXT,__text  ___50-[MRAVConcreteOutputContext supportsVolumeControl]_block_invoke
+0x1a6e4dbc0  __TEXT,__text  ___64-[MROutputContextController _onSerialQueue_isLocalOutputDevice:]_block_invoke
+0x1a6e4dc1c  __TEXT,__text  ___61-[MROutputContextController _onSerialQueue_localOutputDevice]_block_invoke
+0x1a6e4dd28  __TEXT,__text  -[MROutputContextController _onSerialQueue_calculateGroupVolumeMuted]
+0x1a6e4ddf0  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x1a6e4de0c  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x1a6e4de2c  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x1a6e4de40  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x1a6e4de48  __TEXT,__text  _OUTLINED_FUNCTION_13
+0x1a6e4de54  __TEXT,__text  ___42-[MROutputContextController outputDevices]_block_invoke
+0x1a6e4dfa0  __TEXT,__text  ___42-[MROutputContextController outputDevices]_block_invoke_2
+0x1a6e4e02c  __TEXT,__text  _OUTLINED_FUNCTION_29
+0x1a6e4e038  __TEXT,__text  _OUTLINED_FUNCTION_29
+0x1a6e4e044  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x1a6e4e050  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x1a6e4e064  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x1a6e4e070  __TEXT,__text  _OUTLINED_FUNCTION_38
+0x1a6e4e080  __TEXT,__text  _OUTLINED_FUNCTION_33
+0x1a6e4e08c  __TEXT,__text  _OUTLINED_FUNCTION_33
+0x1a6e4e098  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x1a6e4e098  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x1a6e4e0a8  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x1a6e4e0bc  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x1a6e4e0d0  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x1a6e4e0e4  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x1a6e4e0f0  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x1a6e4e0fc  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x1a6e4e108  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x1a6e4e114  __TEXT,__text  -[MROutputContextController setLocalVolumeMuted:].cold.2
+0x1a6e4e224  __TEXT,__text  -[MRProtocolMessage clientConnection]
+0x1a6e4e244  __TEXT,__text  ___MRCreateEncodedUserInfo_block_invoke_4
+0x1a6e4e24c  __TEXT,__text  -[MROutputContextController _onSerialQueue_reevaluateGroupVolumeMuted]
+0x1a6e4e2a0  __TEXT,__text  -[MRProtocolMessage dealloc]
+0x1a6e4e39c  __TEXT,__text  -[MRProtocolMessage .cxx_destruct]
+0x1a6e4e40c  __TEXT,__text  ___66-[MRAVEndpoint scheduleEndpointOutputDevicesDidChangeNotification]_block_invoke
+0x1a6e4e46c  __TEXT,__text  -[_MRAVOutputDeviceDescriptorProtobuf copyWithZone:]
+0x1a6e4f7c8  __TEXT,__text  -[_MRAVOutputDeviceDescriptorProtobuf .cxx_destruct]
+0x1a6e4fa68  __TEXT,__text  -[_MRAVOutputDeviceSourceInfoProtobuf .cxx_destruct]
+0x1a6e4fa7c  __TEXT,__text  -[MRAVOutputDevice .cxx_destruct]
+0x1a6e4fc00  __TEXT,__text  -[MRAVDistantOutputDevice .cxx_destruct]
+0x1a6e4fcc0  __TEXT,__text  -[MRDeviceInfo setClusteredDevices:]
+0x1a6e4fcc8  __TEXT,__text  -[MRUserSettings supportNowPlayingPIP]
+0x1a6e4fccc  __TEXT,__text  -[MRDeviceInfo parentGroupContainsDiscoverableGroupLeader]
+0x1a6e4fcd4  __TEXT,__text  -[MRDeviceInfo setHasGroupLogicalDeviceCount:]
+0x1a6e4fcdc  __TEXT,__text  -[MRAVEndpoint localizedName]
+0x1a6e4fce8  __TEXT,__text  -[MRAVEndpoint _createLocalizedNameWithBuiltInDeviceNameBlock:]
+0x1a6e50178  __TEXT,__text  -[MRAVEndpoint isLocalEndpoint]
+0x1a6e50198  __TEXT,__text  ___29-[MRAVEndpoint localizedName]_block_invoke
+0x1a6e50268  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x1a6e50274  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x1a6e50280  __TEXT,__text  ___32-[MRAVLocalEndpoint groupLeader]_block_invoke
+0x1a6e502cc  __TEXT,__text  -[MRAVOutputContext uniqueIdentifier]
+0x1a6e502d0  __TEXT,__text  -[MRPlayer setAudioSessionID:]
+0x1a6e502d8  __TEXT,__text  -[MRDeviceInfo setName:]
+0x1a6e502e0  __TEXT,__text  -[MRPlayer isEqual:]
+0x1a6e50380  __TEXT,__text  -[MRAVOutputContextEndpoint outputDevices]
+0x1a6e503e8  __TEXT,__text  -[MRAVOutputContextEndpoint _handleDeviceInfoDidChange:]
+0x1a6e504ec  __TEXT,__text  -[MRDeviceInfo groupLogicalDeviceCount]
+0x1a6e504f4  __TEXT,__text  -[_MRNowPlayingClientProtobuf setTintColor:]
+0x1a6e50508  __TEXT,__text  -[MRAVDistantRoutingDiscoverySession availableEndpoints]
+0x1a6e50554  __TEXT,__text  -[MRAVDistantRoutingDiscoverySession distantEndpoints]
+0x1a6e50664  __TEXT,__text  ___54-[MRAVDistantRoutingDiscoverySession distantEndpoints]_block_invoke
+0x1a6e506b0  __TEXT,__text  -[MRAVDistantRoutingDiscoverySession _resolveDistantEndpoints:]
+0x1a6e5072c  __TEXT,__text  -[MRAVDistantRoutingDiscoverySession _resolveEndpoints:]
+0x1a6e507a8  __TEXT,__text  ___MRMediaRemoteServiceGetHostedRoutingXPCEndpoint_block_invoke
+0x1a6e50894  __TEXT,__text  ___87-[MRAVDistantRoutingDiscoverySession _initializeHostedRoutingConnectionWithCompletion:]_block_invoke
+0x1a6e50a84  __TEXT,__text  -[MRAVDistantRoutingDiscoverySession setHostedRoutingSessionConnection:]
+0x1a6e50b48  __TEXT,__text  ___72-[MRAVDistantRoutingDiscoverySession setHostedRoutingSessionConnection:]_block_invoke
+0x1a6e50edc  __TEXT,__text  -[MRRollingWindowActivityTracker setEnabledSince:]
+0x1a6e50ee8  __TEXT,__text  -[MRRollingWindowActivityTracker _onQueue_scheduleThresholdTimer]
+0x1a6e51004  __TEXT,__text  -[MRRollingWindowActivityTracker queue]
+0x1a6e5100c  __TEXT,__text  -[MRClient bundleIdentifierHierarchy]
+0x1a6e5110c  __TEXT,__text  -[MRRollingWindowActivityTracker thresholdTimer]
+0x1a6e51114  __TEXT,__text  -[MRRollingWindowActivityTracker setThresholdTimer:]
+0x1a6e51120  __TEXT,__text  -[MRAVDistantRoutingDiscoverySession availableOutputDevices]
+0x1a6e51124  __TEXT,__text  -[MRAVDistantRoutingDiscoverySession distantOutputDevices]
+0x1a6e51214  __TEXT,__text  ___58-[MRAVDistantRoutingDiscoverySession distantOutputDevices]_block_invoke
+0x1a6e51260  __TEXT,__text  ___55-[MRUserSettings verboseDiscoverySessionWrapperLogging]_block_invoke
+0x1a6e51290  __TEXT,__text  -[MRSharedSettings supportNanoStandalone]
+0x1a6e512d0  __TEXT,__text  -[MRUserSettings persistantDiscoveryModeDetectionDuration]
+0x1a6e51360  __TEXT,__text  -[MRUserSettings persistantDiscoveryModeDetectionWindowDuration]
+0x1a6e513f0  __TEXT,__text  -[MROSTransaction initWithName:]
+0x1a6e51534  __TEXT,__text  ___MRRegisterTransaction_block_invoke
+0x1a6e51560  __TEXT,__text  ___61-[MRAVConcreteRoutingDiscoverySession availableOutputDevices]_block_invoke
+0x1a6e515cc  __TEXT,__text  +[MRPlayerPath anyPlayerPath]
+0x1a6e51668  __TEXT,__text  -[MRAVRoutingDiscoverySession notifyOutputDevicesChanged:]
+0x1a6e51ae4  __TEXT,__text  -[MRAVRoutingDiscoverySession outputDevicesAddedCallbacks]
+0x1a6e51bc8  __TEXT,__text  -[MRDeviceInfo setBluetoothAddress:]
+0x1a6e51bd0  __TEXT,__text  -[_MRAVOutputDeviceDescriptorProtobuf setLogicalDeviceID:]
+0x1a6e51be4  __TEXT,__text  -[MRAVOutputDeviceSourceInfo sourceType]
+0x1a6e51bec  __TEXT,__text  -[MRAVConcreteRoutingDiscoverySession _onReloadQueue_createOutputDevicesFromAVOutputDevices:]
+0x1a6e51e0c  __TEXT,__text  -[MRDeviceInfo groupContainsDiscoverableGroupLeader]
+0x1a6e51e14  __TEXT,__text  ___35-[MRUserSettings disableAWDLRoutes]_block_invoke
+0x1a6e51e44  __TEXT,__text  -[MRAVConcreteRoutingDiscoverySession _aggregateOutputDevices:]
+0x1a6e5202c  __TEXT,__text  -[MRAVRoutingDiscoverySession configuration]
+0x1a6e52034  __TEXT,__text  ___52-[MRAVRoutingDiscoverySession setEndpointsSnapshot:]_block_invoke
+0x1a6e52040  __TEXT,__text  ___56-[MRAVRoutingDiscoverySession endpointsRemovedCallbacks]_block_invoke
+0x1a6e52080  __TEXT,__text  ___56-[MRAVRoutingDiscoverySession endpointsChangedCallbacks]_block_invoke
+0x1a6e520c0  __TEXT,__text  ___54-[MRAVRoutingDiscoverySession endpointsAddedCallbacks]_block_invoke
+0x1a6e52100  __TEXT,__text  ___57-[MRAVRoutingDiscoverySession endpointsModifiedCallbacks]_block_invoke
+0x1a6e52140  __TEXT,__text  ___77+[MRAVRoutingDiscoverySession _determineModifiedEndpoints:previousEndpoints:]_block_invoke
+0x1a6e521c0  __TEXT,__text  ___64-[MRAVRoutingDiscoverySession logEndpointsChanged:oldEndpoints:]_block_invoke
+0x1a6e521c8  __TEXT,__text  ___64-[MRAVRoutingDiscoverySession logEndpointsChanged:oldEndpoints:]_block_invoke_2
+0x1a6e52238  __TEXT,__text  ___64-[MRAVRoutingDiscoverySession logEndpointsChanged:oldEndpoints:]_block_invoke_3
+0x1a6e52240  __TEXT,__text  -[MRNowPlayingAudioFormatController contentInfoForBundleID:contentInfos:]
+0x1a6e523a4  __TEXT,__text  -[MRNowPlayingAudioFormatController updateSelectedContentInfo]
+0x1a6e529e8  __TEXT,__text  -[MRNowPlayingAudioFormatController audioFormatContentInfo]
+0x1a6e52acc  __TEXT,__text  -[MRNowPlayingAudioFormatContentInfo .cxx_destruct]
+0x1a6e52b28  __TEXT,__text  -[MRDeviceInfo supportsExtendedMotion]
+0x1a6e52b30  __TEXT,__text  ___MRCreateDecodedUserInfo_block_invoke
+0x1a6e52b7c  __TEXT,__text  ___MRCreateDecodedUserInfo_block_invoke_2
+0x1a6e52bc8  __TEXT,__text  ___MRCreateDecodedUserInfo_block_invoke_3
+0x1a6e52c14  __TEXT,__text  -[MRClient setProcessIdentifier:]
+0x1a6e52c1c  __TEXT,__text  -[MRAVConcreteRoutingDiscoverySession _scheduleReload]
+0x1a6e52c34  __TEXT,__text  -[MRDeviceInfo isAirPlayActive]
+0x1a6e52c3c  __TEXT,__text  -[NSArray(MRAdditions) arrayByReorderingAccordingToSourceOrder:]
+0x1a6e52e88  __TEXT,__text  -[MRAVOutputDevice hash]
+0x1a6e52ec0  __TEXT,__text  -[MRDeviceInfo setGroupLeader:]
+0x1a6e52ed0  __TEXT,__text  -[MRRollingWindowActivityTracker _onQueue_timeRemainingUntilThreshold]
+0x1a6e52f3c  __TEXT,__text  -[MRRollingWindowActivityTracker _onQueue_timeSpentInWindow]
+0x1a6e531c8  __TEXT,__text  -[MRRollingWindowActivityTracker windowDuration]
+0x1a6e531d0  __TEXT,__text  -[MRRollingWindowActivityTracker enabledPeriods]
+0x1a6e531d8  __TEXT,__text  -[MRRollingWindowActivityTracker enabledSince]
+0x1a6e531e0  __TEXT,__text  -[MRRollingWindowActivityTracker maxAllowedTime]
+0x1a6e531e8  __TEXT,__text  -[MRRollingWindowActivityTracker startActivityTracking]
+0x1a6e531f0  __TEXT,__text  -[MRRollingWindowActivityTracker startActivityTrackingWithContext:]
+0x1a6e532a4  __TEXT,__text  -[MRRollingWindowActivityTracker setMostRecentContext:]
+0x1a6e532b0  __TEXT,__text  ___55-[MRAVRoutingDiscoverySessionWrapper setDiscoveryMode:]_block_invoke
+0x1a6e532b8  __TEXT,__text  -[MRAVDistantRoutingDiscoverySession _reloadHostedRoutingServiceDiscoveryMode]
+0x1a6e5341c  __TEXT,__text  ___62-[MRAVDistantRoutingDiscoverySession _hostedRoutingConnection]_block_invoke
+0x1a6e5345c  __TEXT,__text  ___51-[MRAVDistantRoutingDiscoverySession discoveryMode]_block_invoke
+0x1a6e5347c  __TEXT,__text  -[MRAVConcreteRoutingDiscoverySession _onReloadQueue_reload]
+0x1a6e536a4  __TEXT,__text  -[MRAVConcreteRoutingDiscoverySession _onReloadQueue_reloadAvailableOutputDevices]
+0x1a6e53718  __TEXT,__text  -[MRAVConcreteRoutingDiscoverySession _onReloadQueue_fetchOutputDevicesFromDiscoverySession:]
+0x1a6e53854  __TEXT,__text  -[MRUserSettings supportsNativeThirdPartyApps]
+0x1a6e53870  __TEXT,__text  ___59-[MRAVRoutingDiscoverySession addEndpointsChangedCallback:]_block_invoke_2
+0x1a6e538f0  __TEXT,__text  -[MRRollingWindowActivityTracker initWithActivityName:maxAllowedTime:windowDuration:repeats:handler:]
+0x1a6e53af8  __TEXT,__text  -[MRWeakProxy forwardInvocation:]
+0x1a6e53b94  __TEXT,__text  ___74-[MRNotificationClient registerForNowPlayingNotificationsWithQueue:force:]_block_invoke
+0x1a6e53c98  __TEXT,__text  -[MRMediaRemoteServiceClient addPlayerPathInvalidationHandler:]
+0x1a6e54144  __TEXT,__text  ___63-[MRMediaRemoteServiceClient addPlayerPathInvalidationHandler:]_block_invoke
+0x1a6e542f8  __TEXT,__text  ___MRMediaRemoteNowPlayingResolvePlayerPathWithID_block_invoke_2
+0x1a6e54550  __TEXT,__text  -[MRClient resolvePlaceholdersForDeviceInfo:]
+0x1a6e54720  __TEXT,__text  ___MRMediaRemoteNowPlayingResolvePlayerPathWithID_block_invoke_6
+0x1a6e54960  __TEXT,__text  ___MRMediaRemoteNowPlayingResolvePlayerPathWithID_block_invoke
+0x1a6e54d34  __TEXT,__text  -[MRColorComponents initWithProtobuf:]
+0x1a6e54de4  __TEXT,__text  -[MRMediaRemoteServiceClient setActivePlayerPath:]
+0x1a6e54e7c  __TEXT,__text  ___MRMediaRemoteNowPlayingResolvePlayerPathWithID_block_invoke_5
+0x1a6e54ee4  __TEXT,__text  -[_MRAVOutputDeviceDescriptorProtobuf setCurrentBluetoothListeningMode:]
+0x1a6e54ef8  __TEXT,__text  -[MRAVConcreteOutputDevice wasDiscoveredInCache]
+0x1a6e54f68  __TEXT,__text  -[MRDeviceInfo setDeviceClass:]
+0x1a6e54f78  __TEXT,__text  -[MRDeviceInfo setHasSupportsACL:]
+0x1a6e54f80  __TEXT,__text  -[_MRNowPlayingClientProtobuf writeTo:]
+0x1a6e551d4  __TEXT,__text  -[MRDeviceInfo setAirPlayGroupUID:]
+0x1a6e551dc  __TEXT,__text  -[MRPlayer setIdentifier:]
+0x1a6e551e4  __TEXT,__text  -[_MRDeviceInfoMessageProtobuf setHasDeviceClass:]
+0x1a6e55210  __TEXT,__text  -[MRDeviceInfo hasParentGroupContainsDiscoverableGroupLeader]
+0x1a6e55218  __TEXT,__text  -[MRDeviceInfo setBundleIdentifier:]
+0x1a6e55220  __TEXT,__text  +[MRDeviceInfoRequest cachedDeviceInfoForOrigin:]
+0x1a6e55374  __TEXT,__text  -[_MRAVOutputDeviceDescriptorProtobuf setGroupContainsGroupLeader:]
+0x1a6e55464  __TEXT,__text  -[MRPlayerPath setPlayer:]
+0x1a6e554dc  __TEXT,__text  ___MRCreateEncodedUserInfo_block_invoke_5
+0x1a6e554e4  __TEXT,__text  -[MRClient initWithProcessIdentifier:bundleIdentifier:]
+0x1a6e555c8  __TEXT,__text  -[MRClient isValid]
+0x1a6e55620  __TEXT,__text  ___86-[MRNotificationServiceClient _processApplicationInvalidationHandlersForNotification:]_block_invoke
+0x1a6e55714  __TEXT,__text  -[MRClient processUserIdentifier]
+0x1a6e5571c  __TEXT,__text  -[MRNotificationServiceClient _handlePlayerDidRegisterNotification:]
+0x1a6e557d0  __TEXT,__text  -[MRNotificationServiceClient _processPlayerInvalidationHandlersForNotification:]
+0x1a6e55a18  __TEXT,__text  ___81-[MRNotificationServiceClient _processPlayerInvalidationHandlersForNotification:]_block_invoke
+0x1a6e55b44  __TEXT,__text  -[MRNotificationServiceClient _handlePlayerPlaybackStateDidChangeNotification:]
+0x1a6e55cf4  __TEXT,__text  -[MRNotificationServiceClient _handlePlayerIsPlayingDidChangeNotification:]
+0x1a6e55ef8  __TEXT,__text  -[MRNotificationServiceClient _handleApplicationDidRegisterNotification:]
+0x1a6e55fac  __TEXT,__text  -[MRNotificationServiceClient _processApplicationInvalidationHandlersForNotification:]
+0x1a6e56174  __TEXT,__text  -[MRNotificationServiceClient _handleApplicationClientStateDidChangeNotification:]
+0x1a6e562f4  __TEXT,__text  -[MRNotificationServiceClient _handleApplicationDisplayNameDidChangeNotification:]
+0x1a6e563a0  __TEXT,__text  -[MRNotificationServiceClient _handleActivePlayerDidChangeNotification:]
+0x1a6e56490  __TEXT,__text  ___82-[MRNowPlayingOriginClientRequests existingNowPlayingClientRequestsForPlayerPath:]_block_invoke
+0x1a6e565e4  __TEXT,__text  -[MRNotificationServiceClient _handlePlayerPlaybackQueueDidChangeNotification:]
+0x1a6e567e4  __TEXT,__text  ____MRServiceCreateErrorHandlerBlock_block_invoke
+0x1a6e5686c  __TEXT,__text  -[MRNotificationServiceClient _handlePlayerNowPlayingInfoDidChangeNotification:]
+0x1a6e56918  __TEXT,__text  -[MRNotificationServiceClient _handlePlayerSupportedCommandsDidChangeNotification:]
+0x1a6e56abc  __TEXT,__text  ___87-[MRNotificationServiceClient _processActivePlayerInvalidationHandlersForNotification:]_block_invoke
+0x1a6e56bf0  __TEXT,__text  -[_MROriginProtobuf identifier]
+0x1a6e56c04  __TEXT,__text  -[MRDeviceInfo setHasSharedQueueVersion:]
+0x1a6e56c0c  __TEXT,__text  ___MRCreateEncodedUserInfo_block_invoke_6
+0x1a6e56c14  __TEXT,__text  ___86-[MRMediaRemoteServiceClient _onQueue_processPlayerPathInvalidationHandlersWithBlock:]_block_invoke
+0x1a6e56c9c  __TEXT,__text  ___MRMediaRemoteServiceSetNowPlayingPlaybackQueueCapabilities_block_invoke
+0x1a6e56ce0  __TEXT,__text  -[MRNotificationServiceClient _handlePlayerStateDidChangeNotification:]
+0x1a6e56e48  __TEXT,__text  -[MRNotificationServiceClient _processActivePlayerInvalidationHandlersForNotification:]
+0x1a6e57010  __TEXT,__text  -[MRMediaRemoteServiceClient notificationClient]
+0x1a6e57018  __TEXT,__text  -[MRDeviceInfo isGroupLeader]
+0x1a6e57020  __TEXT,__text  -[MRDeviceInfo setHasDeviceClass:]
+0x1a6e57028  __TEXT,__text  -[MRAVConcreteOutputContext setConcreteOutputDevices:]
+0x1a6e570cc  __TEXT,__text  -[MRDeviceInfo hasSupportsExtendedMotion]
+0x1a6e570d4  __TEXT,__text  -[_MRAVOutputDeviceDescriptorProtobuf setTransportType:]
+0x1a6e57100  __TEXT,__text  -[MRXPCConnection sendMessage:queue:reply:]
+0x1a6e5720c  __TEXT,__text  -[MRPlayer setAudioSessionType:]
+0x1a6e57214  __TEXT,__text  +[MRAVRoutingDiscoverySession discoverySessionWithConfiguration:]
+0x1a6e5729c  __TEXT,__text  ___56+[MRAVRoutingDiscoverySession discoverySessionFactories]_block_invoke
+0x1a6e572cc  __TEXT,__text  -[MRAVConcreteRoutingDiscoverySession initWithConfiguration:]
+0x1a6e5781c  __TEXT,__text  -[MROrigin identifier]
+0x1a6e57824  __TEXT,__text  -[MRPlayer setAppIcon:]
+0x1a6e57894  __TEXT,__text  -[MRClient tintColor]
+0x1a6e5789c  __TEXT,__text  -[MRClient appIcon]
+0x1a6e578a4  __TEXT,__text  -[_MRAVOutputDeviceSourceInfoProtobuf copyWithZone:]
+0x1a6e57948  __TEXT,__text  -[MRGetVolumeMutedResultMessage initWithMuted:]
+0x1a6e579c8  __TEXT,__text  -[MRProtocolMessage init]
+0x1a6e57a40  __TEXT,__text  -[_MRMediaRemoteMessageProtobuf .cxx_destruct]
+0x1a6e58280  __TEXT,__text  ___39-[MROutputContextController initVolume]_block_invoke.315
+0x1a6e582b4  __TEXT,__text  -[MROutputContextController _onSerialQueue_reevaluateGroupVolumeControlCapabilities]
+0x1a6e58308  __TEXT,__text  -[MROutputContextController _onSerialQueue_reevaluateGroupVolume]
+0x1a6e5836c  __TEXT,__text  ___MRMediaRemoteServiceGetMediaPlaybackVolume_block_invoke
+0x1a6e583fc  __TEXT,__text  ___70-[MRNowPlayingOriginClientRequests handleVolumeRequestWithCompletion:]_block_invoke_2
+0x1a6e5854c  __TEXT,__text  ___46-[MRNowPlayingOriginClientRequests setVolume:]_block_invoke
+0x1a6e58558  __TEXT,__text  ___MRMediaRemoteGetMediaPlaybackVolumeForOrigin_block_invoke
+0x1a6e58948  __TEXT,__text  -[MRAVRoutingDiscoverySession initWithConfiguration:]
+0x1a6e58c74  __TEXT,__text  -[MRNowPlayingClient setActivePlayerPath:reason:completion:]
+0x1a6e59090  __TEXT,__text  _MRMediaRemoteServiceSetNowPlayingPlayer
+0x1a6e591b0  __TEXT,__text  -[MRClient setAppIcon:]
+0x1a6e591b8  __TEXT,__text  +[MRAVRoutingDiscoverySession discoverySessionFactories]
+0x1a6e591f0  __TEXT,__text  +[MRAVRoutingDiscoverySession discoverySessionFactories].cold.1
+0x1a6e59204  __TEXT,__text  ___MRMediaRemoteServiceSetNowPlayingPlayer_block_invoke
+0x1a6e592a8  __TEXT,__text  ___60-[MRNowPlayingClient setActivePlayerPath:reason:completion:]_block_invoke
+0x1a6e594d0  __TEXT,__text  ___MRMediaRemoteSetNowPlayingPlayer_block_invoke
+0x1a6e59580  __TEXT,__text  -[MRNotificationServiceClient _processNeedsNonPlayerPathBasedNotificationsForBackwardCompatabilitySupport]
+0x1a6e595b8  __TEXT,__text  -[MRNotificationServiceClient _processNeedsNonPlayerPathBasedNotificationsForBackwardCompatabilitySupport].cold.1
+0x1a6e595cc  __TEXT,__text  ___106-[MRNotificationServiceClient _processNeedsNonPlayerPathBasedNotificationsForBackwardCompatabilitySupport]_block_invoke
+0x1a6e5969c  __TEXT,__text  ___MRMediaRemoteSetNowPlayingPlayer_block_invoke_2
+0x1a6e596b0  __TEXT,__text  -[MRAVRoutingDiscoverySessionConfiguration copyWithZone:]
+0x1a6e59740  __TEXT,__text  ___58-[MRUserSettings persistantDiscoveryModeDetectionDuration]_block_invoke
+0x1a6e59774  __TEXT,__text  -[MRUserSettings _doubleValueForKey:usingDefaultValue:]
+0x1a6e597f0  __TEXT,__text  ___64-[MRUserSettings persistantDiscoveryModeDetectionWindowDuration]_block_invoke
+0x1a6e59824  __TEXT,__text  -[MRAVConcreteRoutingDiscoverySession _loadDefaults]
+0x1a6e59d04  __TEXT,__text  -[MRAVDistantRoutingDiscoverySession initWithConfiguration:]
+```
+First 1,000 of 19,260.
+

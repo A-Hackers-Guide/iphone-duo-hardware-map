@@ -1,0 +1,1598 @@
+# Symbols: `/System/Library/PrivateFrameworks/ChronoServices.framework/ChronoServices`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__PrivateFrameworks__ChronoServices.framework__ChronoServices.md). **[DSC]**
+
+581 public symbols, 3,247 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1e093add0  __DATA_CONST,__const  _CHSBaseDescriptorCodingKeyInternal
+0x1eb550748  __DATA,__data  _CHSChronodStartupNotification
+0x18bdfeddc  __TEXT,__text  _CHSColorSchemesIsValid
+0x18bdce684  __TEXT,__text  _CHSCurrentPlatform
+0x18bdeef28  __TEXT,__text  _CHSDefaultTestFamily
+0x18bdeef20  __TEXT,__text  _CHSDefaultTestFamilyMaskMultiple
+0x18bdeef18  __TEXT,__text  _CHSDefaultTestFamilyMaskSingle
+0x18bde1570  __TEXT,__text  _CHSDescriptionForWidgetVisibility
+0x18bdd571c  __TEXT,__text  _CHSEdgeInsetsCompare
+0x18bdd560c  __TEXT,__text  _CHSEdgeInsetsDescription
+0x18be27b48  __TEXT,__text  _CHSEdgeInsetsEqualToEdgeInsets
+0x18bdcd410  __TEXT,__text  _CHSEdgeInsetsFromRect
+0x18be27b44  __TEXT,__text  _CHSEdgeInsetsMake
+0x18becbc00  __TEXT,__const  _CHSEdgeInsetsZero
+0x1e093adc8  __DATA_CONST,__const  _CHSErrorDomain
+0x18bdf66e4  __TEXT,__text  _CHSFlushPowerlog
+0x1e093adc0  __DATA_CONST,__const  _CHSInlineTextParametersDefaultDateFormat
+0x18be27800  __TEXT,__text  _CHSIsWidgetExtensionPoint
+0x18bdc91f0  __TEXT,__text  _CHSLogChronoServices
+0x18be22af4  __TEXT,__text  _CHSLogClientSnapshots
+0x18bdccd94  __TEXT,__text  _CHSLogSubscriptions
+0x18be22b64  __TEXT,__text  _CHSLogWidgetHosts
+0x18becb5a0  __TEXT,__const  _CHSMaxIntentRecommendationsPerDescriptor
+0x1e093adb8  __DATA_CONST,__const  _CHSNSURLSessiondServiceInfoKeyIsHighPriority
+0x1e093adb0  __DATA_CONST,__const  _CHSNSURLSessiondServiceInfoKeySessionIdentifier
+0x18bdeef30  __TEXT,__text  _CHSNonDefaultTestFamily
+0x1e093ada8  __DATA_CONST,__const  _CHSOpenApplicationDebugOptionKeyWidgetFamily
+0x1e093ada0  __DATA_CONST,__const  _CHSOpenApplicationDebugOptionKeyWidgetKind
+0x1e093ad98  __DATA_CONST,__const  _CHSOpenApplicationDebugOptionKeyWidgetLocation
+0x1e093ad90  __DATA_CONST,__const  _CHSOpenApplicationDebugOptionWidgetLocationAutomatic
+0x1e093ad88  __DATA_CONST,__const  _CHSOpenApplicationDebugOptionWidgetLocationDomino
+0x1e093ad80  __DATA_CONST,__const  _CHSOpenApplicationDebugOptionWidgetLocationLockScreen
+0x1e093ad78  __DATA_CONST,__const  _CHSOpenApplicationDebugOptionWidgetLocationToday
+0x18bdce984  __TEXT,__text  _CHSPlatformFromDYLDPlatform
+0x18bdcd4bc  __TEXT,__text  _CHSRectFromEdgeInsets
+0x1e093ad70  __DATA_CONST,__const  _CHSSupplementalActivityFamiliesDocumentPageURL
+0x18bdeef38  __TEXT,__text  _CHSTintFilterStyleSupportsVibrancy
+0x1e093ad68  __DATA_CONST,__const  _CHSUnknownSDKVersionString
+0x1e093ad60  __DATA_CONST,__const  _CHSWidgetBackgroundAPIDocumentPageURL
+0x18be1e2ec  __TEXT,__text  _CHSWidgetColorSchemesIsValid
+0x18bdf673c  __TEXT,__text  _CHSWidgetEnvironmentDataForBundleIdentifier
+0x1e093ad58  __DATA_CONST,__const  _CHSWidgetEventServicePublisherEntitlement
+0x18bdcfa20  __TEXT,__text  _CHSWidgetFamilyDescription
+0x18be275ec  __TEXT,__text  _CHSWidgetFamilyFromString
+0x18be275dc  __TEXT,__text  _CHSWidgetFamilyIsAccessory
+0x18bdd0d3c  __TEXT,__text  _CHSWidgetFamilyIsValid
+0x18be275ac  __TEXT,__text  _CHSWidgetFamilyMaskContainsFamily
+0x18bde1064  __TEXT,__text  _CHSWidgetFamilyMaskDescription
+0x18bde1208  __TEXT,__text  _CHSWidgetFamilyMaskEnumerateFamilies
+0x18be27588  __TEXT,__text  _CHSWidgetFamilyMaskFromWidgetFamily
+0x18bdd549c  __TEXT,__text  _CHSWidgetFontStyleDescription
+0x18be277ac  __TEXT,__text  _CHSWidgetFontStyleFromTextSizeAdjustment
+0x18be3227c  __TEXT,__text  _CHSWidgetLocationDescription
+0x18be27b24  __TEXT,__text  _CHSWidgetLocationStyleMaskFromStyle
+0x18be3216c  __TEXT,__text  _CHSWidgetRelevanceServiceCacheDirectory
+0x18be26df8  __TEXT,__text  _CHSWidgetRenderingModesIsValid
+0x18be277d4  __TEXT,__text  _CHSWidgetTextSizeAdjustmentDescription
+0x18be277c0  __TEXT,__text  _CHSWidgetTextSizeAdjustmentFromFontStyle
+0x1e093ad50  __DATA_CONST,__const  _CHSWidgetVisibilityKey
+0x18be27ff8  __TEXT,__text  _CHS_DowncastedCGFloat
+0x18bdfb6bc  __TEXT,__text  _CHS_DowncastedCGRect
+0x18be28004  __TEXT,__text  _CHS_DowncastedCGSize
+0x1e093ad48  __DATA_CONST,__const  _ChronoLoggingSubsystem
+0x18becb4c0  __TEXT,__const  _ChronoServicesVersionNumber
+0x18becb490  __TEXT,__const  _ChronoServicesVersionString
+0x18bdd52c8  __TEXT,__text  _NSStringFromCHSColorScheme
+0x18bdfede8  __TEXT,__text  _NSStringFromCHSColorSchemes
+0x18bdfe974  __TEXT,__text  _NSStringFromCHSControlContentType
+0x18bdff008  __TEXT,__text  _NSStringFromCHSControlSize
+0x18bdfe94c  __TEXT,__text  _NSStringFromCHSControlType
+0x18bdfe990  __TEXT,__text  _NSStringFromCHSControlVisibility
+0x18be2b070  __TEXT,__text  _NSStringFromCHSDataProtectionLevel
+0x18be31198  __TEXT,__text  _NSStringFromCHSDisplayGamut
+0x18be28018  __TEXT,__text  _NSStringFromCHSDynamicTextSupport
+0x18be34440  __TEXT,__text  _NSStringFromCHSExtensionRestrictions
+0x18bddf95c  __TEXT,__text  _NSStringFromCHSTintFilterStyle
+0x18bdded98  __TEXT,__text  _NSStringFromCHSWidgetBackgroundViewPolicy
+0x18be24960  __TEXT,__text  _NSStringFromCHSWidgetClipBehavior
+0x18be1e2f0  __TEXT,__text  _NSStringFromCHSWidgetColorSchemes
+0x18be2780c  __TEXT,__text  _NSStringFromCHSWidgetContentType
+0x18be00440  __TEXT,__text  _NSStringFromCHSWidgetHostActivationState
+0x18be27838  __TEXT,__text  _NSStringFromCHSWidgetLocationStyleMask
+0x18bdf9e70  __TEXT,__text  _NSStringFromCHSWidgetProximities
+0x18bdf9e54  __TEXT,__text  _NSStringFromCHSWidgetProximity
+0x18bdded74  __TEXT,__text  _NSStringFromCHSWidgetRenderingMode
+0x18be26e04  __TEXT,__text  _NSStringFromCHSWidgetRenderingModes
+0x18bde1598  __TEXT,__text  _NSStringFromCHSWidgetSpatialChromeStyles
+0x18bde1678  __TEXT,__text  _NSStringFromCHSWidgetSpatialSurface
+0x18bdcf8bc  __TEXT,__text  _NSStringFromWidgetFamily
+0x18be32280  __TEXT,__text  _NSStringFromWidgetLocation
+0x1ef52f678  __AUTH,__objc_data  _OBJC_CLASS_$_CHSActivityService
+0x1ef52fe48  __AUTH,__objc_data  _OBJC_CLASS_$_CHSAppIntentsXPCListenerEndpointProvider
+0x1ef52fe20  __AUTH,__objc_data  _OBJC_CLASS_$_CHSApplicationProcessStateChangeConsumer
+0x1ef5318b0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSArrayBox
+0x1ee006478  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSAvocadoDescriptor
+0x1ee006450  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSBaseDescriptor
+0x1ef52f650  __AUTH,__objc_data  _OBJC_CLASS_$_CHSBezierPath
+0x1ef52fdf8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSChronoEventServiceListener
+0x1ee006298  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSChronoServicesConnection
+0x1ee006180  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSChronoWidgetServiceSpecification
+0x1ef530e38  __AUTH,__objc_data  _OBJC_CLASS_$_CHSColorSchemePolicy
+0x1ef530e10  __AUTH,__objc_data  _OBJC_CLASS_$_CHSConfiguredWidgetContainerDescriptor
+0x1ef5314a0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSConfiguredWidgetContainerDescriptorsBox
+0x1ef530de8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSConfiguredWidgetDescriptor
+0x1ef531568  __AUTH,__objc_data  _OBJC_CLASS_$_CHSControlActionMetadata
+0x1ef530b18  __AUTH,__objc_data  _OBJC_CLASS_$_CHSControlConfiguration
+0x1ef530af0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSControlConfigurationHostsBox
+0x1ef530500  __AUTH,__objc_data  _OBJC_CLASS_$_CHSControlConfigurationItem
+0x1ef52fdd0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSControlConfigurationReader
+0x1ee006270  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSControlDescriptor
+0x1ef5313b0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSControlDescriptorsPredicate
+0x1ef52fda8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSControlHost
+0x1ef530fc8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSControlIdentity
+0x1ef5304d8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSControlInstanceIdentity
+0x1ef530988  __AUTH,__objc_data  _OBJC_CLASS_$_CHSControlService
+0x1ef531798  __AUTH,__objc_data  _OBJC_CLASS_$_CHSDescriptorEnablementChangeRequest
+0x1ef52fd80  __AUTH,__objc_data  _OBJC_CLASS_$_CHSDescriptorService
+0x1ef531888  __AUTH,__objc_data  _OBJC_CLASS_$_CHSDictionaryBox
+0x1ef531478  __AUTH,__objc_data  _OBJC_CLASS_$_CHSDynamicColor
+0x1ef530fa0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSEntitlementCollection
+0x1ef5312c0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSEquivalentBundleIdentifierResolver
+0x1ee0062e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSExtensionIdentity
+0x1ef5311a8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSFeatureFlag
+0x1ef5305a0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSFontSpecification
+0x1ef530258  __AUTH,__objc_data  _OBJC_CLASS_$_CHSFontSpecificationFontFeature
+0x1ef52f628  __AUTH,__objc_data  _OBJC_CLASS_$_CHSGaugeParameters
+0x1ef5304b0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSGlassOptions
+0x1ef531338  __AUTH,__objc_data  _OBJC_CLASS_$_CHSIconResolver
+0x1ef530960  __AUTH,__objc_data  _OBJC_CLASS_$_CHSInlineTextParameters
+0x1ef5315b8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSIntentRecommendation
+0x1ef530f28  __AUTH,__objc_data  _OBJC_CLASS_$_CHSIntentRecommendationsContainer
+0x1ee005ed8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSIntentReference
+0x1ef530488  __AUTH,__objc_data  _OBJC_CLASS_$_CHSInteractionEventService
+0x1ef52f600  __AUTH,__objc_data  _OBJC_CLASS_$_CHSKeepAliveService
+0x1ee006018  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSLiveActivityDescriptor
+0x1ef530f00  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableAvocadoDescriptor
+0x1ef530dc0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableConfiguredWidgetDescriptor
+0x1ef531388  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableControlActionMetadata
+0x1ef52f5d8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableControlConfiguration
+0x1ef530460  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableControlConfigurationItem
+0x1ef5314f0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableControlDescriptor
+0x1ef531068  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableDynamicColor
+0x1ef52fd58  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableEntitlementCollection
+0x1ef52fd30  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableGlassOptions
+0x1ef52f5b0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableRemoteDevice
+0x1ef530938  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableScreenshotPresentationAttributes
+0x1ef531158  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableSessionPlatterDescriptor
+0x1ef52f588  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableWatchComplicationsCurvedLabelMetrics
+0x1ef530b68  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableWidgetConfiguration
+0x1ee005f50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSMutableWidgetDescriptor
+0x1ef530d98  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableWidgetExtension
+0x1ef52f560  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableWidgetExtensionInfo
+0x1ef530910  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableWidgetMetricsSpecification
+0x1ef530230  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableWidgetRenderScheme
+0x1ef530208  __AUTH,__objc_data  _OBJC_CLASS_$_CHSMutableWidgetTintParameters
+0x1ef530438  __AUTH,__objc_data  _OBJC_CLASS_$_CHSNSURLSessiondService
+0x1ee006108  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSPlaceholderRequest
+0x1ef530410  __AUTH,__objc_data  _OBJC_CLASS_$_CHSProactiveService
+0x1ef52f538  __AUTH,__objc_data  _OBJC_CLASS_$_CHSReaperRequest
+0x1ef52f510  __AUTH,__objc_data  _OBJC_CLASS_$_CHSReaperResult
+0x1ef52f4e8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSRelevanceEntry
+0x1ef52fd08  __AUTH,__objc_data  _OBJC_CLASS_$_CHSRemoteDevice
+0x1ef530c30  __AUTH,__objc_data  _OBJC_CLASS_$_CHSRemoteDevicePredicate
+0x1ef52f4c0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSRemoteDeviceService
+0x1ef531770  __AUTH,__objc_data  _OBJC_CLASS_$_CHSRemoteDevicesBox
+0x1ef5308e8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSScreenshotManager
+0x1ef5308c0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSScreenshotPresentationAttributes
+0x1ee0060e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSServerSubscription
+0x1ef531130  __AUTH,__objc_data  _OBJC_CLASS_$_CHSServerSubscriptionResult
+0x1ef5303e8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSSnapshotContext
+0x1ef531928  __AUTH,__objc_data  _OBJC_CLASS_$_CHSTimelineController
+0x1ef52f498  __AUTH,__objc_data  _OBJC_CLASS_$_CHSTimelineEntryRelevance
+0x1ef531748  __AUTH,__objc_data  _OBJC_CLASS_$_CHSTimelineEntryRelevanceBox
+0x1ee005ff0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSTimelineReloadRequest
+0x1ef52fce0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSToolServiceConnection
+0x1ef52fcb8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSToolServiceSpecification
+0x1ef52fc90  __AUTH,__objc_data  _OBJC_CLASS_$_CHSToolSupportService
+0x1ee005f28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSURLSessionToken
+0x1ef530898  __AUTH,__objc_data  _OBJC_CLASS_$_CHSVersionedWidgetMetrics
+0x1ef52fc68  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWatchComplicationsCurvedLabelMetrics
+0x1ee006388  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSWidget
+0x1ee006068  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSWidgetConfiguration
+0x1ef531860  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetConfigurationHostsBox
+0x1ef530ac8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetConfigurationReader
+0x1ee0063b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSWidgetDescriptor
+0x1ef530870  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetDescriptorProvider
+0x1ef531900  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetDescriptorsBox
+0x1ef531360  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetDescriptorsPredicate
+0x1ee0061d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSWidgetDisplayProperties
+0x1ef5301e0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetEventServiceListener
+0x1ef52f470  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetEventServicePublisher
+0x1ef5301b8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetEventServiceSpecification
+0x1ef5319c8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetExtension
+0x1ef531108  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetExtensionContainer
+0x1ef52f448  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetExtensionInfo
+0x1ef531298  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetExtensionProvider
+0x1ee006130  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSWidgetExtensionProviderOptions
+0x1ef531270  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetExtensionSet
+0x1ef531978  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetExtensionsBox
+0x1ef5303c0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetHost
+0x1ef52f420  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetIcon
+0x1ef530398  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetKey
+0x1ef52f3f8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetKeysBox
+0x1ee006220  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSWidgetMargins
+0x1ee006338  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHSWidgetMetrics
+0x1ef52fc40  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetMetricsDiff
+0x1ef531658  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetMetricsSpecification
+0x1ef530c08  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetRateLimit
+0x1ef530be0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetRateLimitPolicy
+0x1ef530d70  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetRefreshStrategyFactory
+0x1ef5319f0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetRelevance
+0x1ef530848  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetRelevanceAttribute
+0x1ef52fc18  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetRelevanceGroupAttribute
+0x1ef530190  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetRelevanceKey
+0x1ef531608  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetRelevanceProperties
+0x1ef530820  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetRelevanceRelevantContextAttribute
+0x1ef52fbf0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetRelevanceService
+0x1ef531720  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetRelevanceServiceEvent
+0x1ef5310b8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetRenderScheme
+0x1ef5307f8  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetService
+0x1ef530aa0  __AUTH,__objc_data  _OBJC_CLASS_$_CHSWidgetTintParameters
+0x1ef52fbc8  __AUTH,__objc_data  _OBJC_CLASS_$__CHSControlConfigurationHost
+0x1ef52fba0  __AUTH,__objc_data  _OBJC_CLASS_$__CHSControlConfigurationReference
+0x1ef530ed8  __AUTH,__objc_data  _OBJC_CLASS_$__CHSDynamicColorCache
+0x1ef531400  __AUTH,__objc_data  _OBJC_CLASS_$__CHSDynamicColorKey
+0x1ef530168  __AUTH,__objc_data  _OBJC_CLASS_$__CHSExtensionIdentityBuf
+0x1ef52fb78  __AUTH,__objc_data  _OBJC_CLASS_$__CHSExtensionIdentityBufBuilder
+0x1ef52f3d0  __AUTH,__objc_data  _OBJC_CLASS_$__CHSExtensionIdentityBufChanges
+0x1ef52f3a8  __AUTH,__objc_data  _OBJC_CLASS_$__CHSIntentReferenceBuf
+0x1ef52f380  __AUTH,__objc_data  _OBJC_CLASS_$__CHSIntentReferenceBufBuilder
+0x1ef52f358  __AUTH,__objc_data  _OBJC_CLASS_$__CHSIntentReferenceBufChanges
+0x1ef530140  __AUTH,__objc_data  _OBJC_CLASS_$__CHSRelevanceCacheBuf
+0x1ef52fb50  __AUTH,__objc_data  _OBJC_CLASS_$__CHSRelevanceCacheBufBuilder
+0x1ef52f330  __AUTH,__objc_data  _OBJC_CLASS_$__CHSRelevanceCacheBufChanges
+0x1ef530d48  __AUTH,__objc_data  _OBJC_CLASS_$__CHSSimpleWidgetRefreshStrategy
+0x1ef530a00  __AUTH,__objc_data  _OBJC_CLASS_$__CHSWidgetConfigurationHost
+0x1ef530118  __AUTH,__objc_data  _OBJC_CLASS_$__CHSWidgetHostForConnection
+0x1ef5300f0  __AUTH,__objc_data  _OBJC_CLASS_$__CHSWidgetRelevanceBuf
+0x1ef52fb28  __AUTH,__objc_data  _OBJC_CLASS_$__CHSWidgetRelevanceBufBuilder
+0x1ef52f308  __AUTH,__objc_data  _OBJC_CLASS_$__CHSWidgetRelevanceBufChanges
+0x1ef5300c8  __AUTH,__objc_data  _OBJC_CLASS_$__CHSWidgetRelevancePropertiesBuf
+0x1ef52fb00  __AUTH,__objc_data  _OBJC_CLASS_$__CHSWidgetRelevancePropertiesBufBuilder
+0x1ef52f2e0  __AUTH,__objc_data  _OBJC_CLASS_$__CHSWidgetRelevancePropertiesBufChanges
+0x1ef52dc38  __AUTH,__objc_data  _OBJC_CLASS_$__TtC14ChronoServices14ControlsClient
+0x1ef52ed78  __AUTH,__objc_data  _OBJC_CLASS_$__TtC14ChronoServices16StateCaptureItem
+0x1ef52ebc0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC14ChronoServices18AuditedFileManager
+0x1ef52eac8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC14ChronoServices19StateCaptureService
+0x1ef52e900  __AUTH,__objc_data  _OBJC_CLASS_$__TtC14ChronoServices32LiveActivityDescriptorsPredicate
+0x1ef52e868  __AUTH,__objc_data  _OBJC_CLASS_$__TtC14ChronoServices33CHSRemoteActivityLaunchController
+0x1eb54ebc8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._configurationAccentColor
+0x1eb54ebc4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._configurationBackgroundColor
+0x1eb54eb88  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._displayName
+0x1eb54ebb8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._enablement
+0x1eb54eb90  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._eventMachServiceName
+0x1eb54eb80  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._extensionIdentity
+0x1eb54ebb0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._hiddenBySensitiveUI
+0x1eb54eba0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._internal
+0x1eb54ebcc  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._isRemoteConfigurable
+0x1eb54eb94  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._localeToken
+0x1eb54eb84  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._nativeContainerBundleIdentifier
+0x1eb54ebac  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._platform
+0x1eb54eb98  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._preferredBackgroundStyle
+0x1eb54ebb4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._promptsForUserConfiguration
+0x1eb54ebc0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._requestedDataProtection
+0x1eb54ebbc  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._requiredFeatureFlags
+0x1eb54eba8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._sdkVersion
+0x1eb54eb9c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._supportsVibrantContent
+0x1eb54eba4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._version
+0x1eb54eb8c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSBaseDescriptor._widgetDescription
+0x1eb54e9f4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSConfiguredWidgetDescriptor._allowsContentPreferredColorSchemes
+0x1eb54ea04  __DATA,__objc_ivar  OBJC_IVAR_$_CHSConfiguredWidgetDescriptor._displayProperties
+0x1eb54ea10  __DATA,__objc_ivar  OBJC_IVAR_$_CHSConfiguredWidgetDescriptor._idealizedDateComponents
+0x1eb54ea08  __DATA,__objc_ivar  OBJC_IVAR_$_CHSConfiguredWidgetDescriptor._refreshStrategy
+0x1eb54ea00  __DATA,__objc_ivar  OBJC_IVAR_$_CHSConfiguredWidgetDescriptor._showsWidgetLabel
+0x1eb54e9e8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSConfiguredWidgetDescriptor._suggestion
+0x1eb54e9f0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSConfiguredWidgetDescriptor._supportedColorSchemes
+0x1eb54ea0c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSConfiguredWidgetDescriptor._supportedProximities
+0x1eb54e9f8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSConfiguredWidgetDescriptor._supportedRenderSchemes
+0x1eb54e9fc  __DATA,__objc_ivar  OBJC_IVAR_$_CHSConfiguredWidgetDescriptor._supportsLowLuminance
+0x1eb54e9ec  __DATA,__objc_ivar  OBJC_IVAR_$_CHSConfiguredWidgetDescriptor._systemConfigured
+0x1eb54ec84  __DATA,__objc_ivar  OBJC_IVAR_$_CHSControlActionMetadata._intentType
+0x1eb54ec8c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSControlActionMetadata._isCameraCapture
+0x1eb54ec88  __DATA,__objc_ivar  OBJC_IVAR_$_CHSControlActionMetadata._isLauncher
+0x1eb54ec2c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSControlDescriptor._actionMetadata
+0x1eb54ec14  __DATA,__objc_ivar  OBJC_IVAR_$_CHSControlDescriptor._controlType
+0x1eb54ec24  __DATA,__objc_ivar  OBJC_IVAR_$_CHSControlDescriptor._controlVersion
+0x1eb54ec40  __DATA,__objc_ivar  OBJC_IVAR_$_CHSControlDescriptor._defaultIntentReference
+0x1eb54ec3c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSControlDescriptor._disablesControlStateCaching
+0x1eb54ec28  __DATA,__objc_ivar  OBJC_IVAR_$_CHSControlDescriptor._disfavoredLocations
+0x1eb54ec30  __DATA,__objc_ivar  OBJC_IVAR_$_CHSControlDescriptor._hiddenControl
+0x1eb54ec1c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSControlDescriptor._intentType
+0x1eb54ec18  __DATA,__objc_ivar  OBJC_IVAR_$_CHSControlDescriptor._kind
+0x1eb54ec44  __DATA,__objc_ivar  OBJC_IVAR_$_CHSControlDescriptor._preferredControlSize
+0x1eb54ec38  __DATA,__objc_ivar  OBJC_IVAR_$_CHSControlDescriptor._showsContextualMenu
+0x1eb54ec34  __DATA,__objc_ivar  OBJC_IVAR_$_CHSControlDescriptor._supportsForwardingToRemoteDevices
+0x1eb54ec48  __DATA,__objc_ivar  OBJC_IVAR_$_CHSControlDescriptor._supportsPush
+0x1eb54ec20  __DATA,__objc_ivar  OBJC_IVAR_$_CHSControlDescriptor._visibility
+0x1eb54ebf0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSDynamicColor._colors
+0x1eb54ebec  __DATA,__objc_ivar  OBJC_IVAR_$_CHSDynamicColor._sameColor
+0x1eb54e750  __DATA,__objc_ivar  OBJC_IVAR_$_CHSEntitlementCollection._canKeepAlive
+0x1eb54e74c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSEntitlementCollection._canOpenSystemURLs
+0x1eb54e754  __DATA,__objc_ivar  OBJC_IVAR_$_CHSEntitlementCollection._invalidatesOnStorefrontChange
+0x1eb54e748  __DATA,__objc_ivar  OBJC_IVAR_$_CHSEntitlementCollection._usesEventService
+0x1eb54e558  __DATA,__objc_ivar  OBJC_IVAR_$_CHSGlassOptions._backdropGroupName
+0x1eb54e55c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSGlassOptions._wantsHighlightsDisplayAngle
+0x1eb54e550  __DATA,__objc_ivar  OBJC_IVAR_$_CHSGlassOptions._wantsSubduedGlass
+0x1eb54e554  __DATA,__objc_ivar  OBJC_IVAR_$_CHSGlassOptions._wantsWhitePointBoost
+0x1eb54e704  __DATA,__objc_ivar  OBJC_IVAR_$_CHSLiveActivityDescriptor._accentedRenderingModeActivityFamilies
+0x1eb54e700  __DATA,__objc_ivar  OBJC_IVAR_$_CHSLiveActivityDescriptor._activityAttributesType
+0x1eb54e8b8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSRemoteDevice._currentSupportedVersion
+0x1eb54e8b4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSRemoteDevice._deviceID
+0x1eb54e8cc  __DATA,__objc_ivar  OBJC_IVAR_$_CHSRemoteDevice._deviceType
+0x1eb54e8c0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSRemoteDevice._isPossibleSource
+0x1eb54e8c8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSRemoteDevice._lastConnectionDate
+0x1eb54e8bc  __DATA,__objc_ivar  OBJC_IVAR_$_CHSRemoteDevice._minSupportedVersion
+0x1eb54e8ac  __DATA,__objc_ivar  OBJC_IVAR_$_CHSRemoteDevice._name
+0x1eb54e8c4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSRemoteDevice._pairingState
+0x1eb54e8b0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSRemoteDevice._relationshipID
+0x1eb54e768  __DATA,__objc_ivar  OBJC_IVAR_$_CHSScreenshotPresentationAttributes._additionalSettingsContext
+0x1eb54e75c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSScreenshotPresentationAttributes._allowsContentPreferredColorScheme
+0x1eb54e760  __DATA,__objc_ivar  OBJC_IVAR_$_CHSScreenshotPresentationAttributes._allowsPrivacySensitiveContent
+0x1eb54e758  __DATA,__objc_ivar  OBJC_IVAR_$_CHSScreenshotPresentationAttributes._colorScheme
+0x1eb54e770  __DATA,__objc_ivar  OBJC_IVAR_$_CHSScreenshotPresentationAttributes._idealizedDateComponents
+0x1eb54e76c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSScreenshotPresentationAttributes._tintParameters
+0x1eb54e764  __DATA,__objc_ivar  OBJC_IVAR_$_CHSScreenshotPresentationAttributes._userWantsWidgetDataWhenPasscodeLocked
+0x1eb54e634  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWatchComplicationsCurvedLabelMetrics._accessoryMaxSize
+0x1eb54e630  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWatchComplicationsCurvedLabelMetrics._accessoryPadding
+0x1eb54e62c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWatchComplicationsCurvedLabelMetrics._accessoryPlacement
+0x1eb54e618  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWatchComplicationsCurvedLabelMetrics._bezierPath
+0x1eb54e614  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWatchComplicationsCurvedLabelMetrics._centerAngle
+0x1eb54e608  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWatchComplicationsCurvedLabelMetrics._circleCenter
+0x1eb54e60c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWatchComplicationsCurvedLabelMetrics._circleRadius
+0x1eb54e624  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWatchComplicationsCurvedLabelMetrics._fontSize
+0x1eb54e61c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWatchComplicationsCurvedLabelMetrics._interior
+0x1eb54e610  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWatchComplicationsCurvedLabelMetrics._maximumAngularWidth
+0x1eb54e628  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWatchComplicationsCurvedLabelMetrics._textColor
+0x1eb54e620  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWatchComplicationsCurvedLabelMetrics._tracking
+0x1eb54e570  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetConfiguration._automaticallyOrphaned
+0x1eb54e560  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetConfiguration._containerDescriptors
+0x1eb54e578  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetConfiguration._expirationTimeout
+0x1eb54e564  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetConfiguration._metricsSpecification
+0x1eb54e574  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetConfiguration._preventsEagerPlaceholderGeneration
+0x1eb54e568  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetConfiguration._rateLimitPolicies
+0x1eb54e56c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetConfiguration._replicationPredicate
+0x1eb54e5e0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._associatedKind
+0x1eb54e5bc  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._backgroundRemovable
+0x1eb54e5f4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._defaultIntentProvider
+0x1eb54e5ec  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._defaultIntentReference
+0x1eb54e5f0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._didMigrateToRecommendationsContainer
+0x1eb54e5cc  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._disfavoredLocations
+0x1eb54e5e4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._enablesMultipleTapTargets
+0x1eb54e5f8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._fetchDefaultIntentCompletions
+0x1eb54e5dc  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._hasSnapshotSensitiveContent
+0x1eb54e5e8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._intentRecommendationsContainer
+0x1eb54e5b0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._intentType
+0x1eb54e5ac  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._kind
+0x1eb54e5c4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._relevanceBacked
+0x1eb54e5d4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._spatialChromeStyles
+0x1eb54e5d0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._spatialSurface
+0x1eb54e5a8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._supportedFamilies
+0x1eb54e5c0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._supportsAccentedContent
+0x1eb54e5b8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._supportsInteraction
+0x1eb54e5c8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._supportsPush
+0x1eb54e5d8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._wantsLiveScene
+0x1eb54e5b4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetDescriptor._widgetVisibility
+0x1eb54e6d4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtension._containerBundleLocalizedDisplayName
+0x1eb54e6ec  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtension._dataProtectionLevel
+0x1eb54e6e8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtension._entitlements
+0x1eb54e6f8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtension._hasValidHash
+0x1eb54e6f4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtension._hashValue
+0x1eb54e6d8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtension._identity
+0x1eb54e6e4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtension._liveActivityDescriptors
+0x1eb54e6d0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtension._localizedDisplayName
+0x1eb54e6e0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtension._orderedControlDescriptors
+0x1eb54e6dc  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtension._orderedWidgetDescriptors
+0x1eb54e6f0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtension._restrictions
+0x1eb54eae4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._activityURLs
+0x1eb54eab0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._allowsMixedLocalizations
+0x1eb54eaac  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._availableLocalizations
+0x1eb54ea7c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._bundleIdentifier
+0x1eb54ea90  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._bundleURL
+0x1eb54ea80  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._containerBundleIdentifier
+0x1eb54ea94  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._containerURL
+0x1eb54eac4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._controlConfigurations
+0x1eb54eac8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._controlTemplates
+0x1eb54ea9c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._dataProtectionLevel
+0x1eb54eabc  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._descriptors
+0x1eb54eaa0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._disablesImplicitDiscovery
+0x1eb54ea84  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._effectiveContainerBundleIdentifier
+0x1eb54eab8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._entitlements
+0x1eb54eaa4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._isDevelopmentExtension
+0x1eb54ea8c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._lastModifiedDate
+0x1eb54ead8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._liveControlURLs
+0x1eb54eadc  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._livePlaceholderControlURLs
+0x1eb54eae8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._nominatedContainerBundleIdentifiers
+0x1eb54ead0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._placeholderURLs
+0x1eb54eae0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._previewControlURLs
+0x1eb54eab4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._sdkVersion
+0x1eb54eacc  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._snapshotURLs
+0x1eb54ea98  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._systemDataContainerURL
+0x1eb54ead4  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._timelineURLs
+0x1eb54ea88  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._version
+0x1eb54eaa8  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._wantsLocation
+0x1eb54eac0  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetExtensionInfo._widgetConfigurations
+0x1eb54ec00  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetRelevanceProperties._relevanceFunction
+0x1eb54eb18  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetRenderScheme._backgroundViewPolicy
+0x1eb54eb14  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetRenderScheme._renderingMode
+0x1eb54eb1c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetRenderScheme._renderingModes
+0x1eb54e660  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetTintParameters._accentedAlternateBackground
+0x1eb54e664  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetTintParameters._accentedDesaturatedMode
+0x1eb54e658  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetTintParameters._filterStyle
+0x1eb54e65c  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetTintParameters._fraction
+0x1eb54e668  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetTintParameters._glassOptions
+0x1eb54e650  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetTintParameters._primaryTintColor
+0x1eb54e654  __DATA,__objc_ivar  OBJC_IVAR_$_CHSWidgetTintParameters._secondaryTintColor
+0x1ef534380  __AUTH,__data  _OBJC_METACLASS_$_CHSActivityService
+0x1ef52fad8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSAppIntentsXPCListenerEndpointProvider
+0x1ef52fab0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSApplicationProcessStateChangeConsumer
+0x1ef531838  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSArrayBox
+0x1ee006428  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSAvocadoDescriptor
+0x1ee006400  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSBaseDescriptor
+0x1ef52f2b8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSBezierPath
+0x1ef52fa88  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSChronoEventServiceListener
+0x1ee006248  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSChronoServicesConnection
+0x1ee006158  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSChronoWidgetServiceSpecification
+0x1ef535008  __AUTH,__data  _OBJC_METACLASS_$_CHSColorSchemePolicy
+0x1ef530d20  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSConfiguredWidgetContainerDescriptor
+0x1ef531450  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSConfiguredWidgetContainerDescriptorsBox
+0x1ef530cf8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSConfiguredWidgetDescriptor
+0x1ef531540  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSControlActionMetadata
+0x1ef534f58  __AUTH,__data  _OBJC_METACLASS_$_CHSControlConfiguration
+0x1ef530a78  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSControlConfigurationHostsBox
+0x1ef534c30  __AUTH,__data  _OBJC_METACLASS_$_CHSControlConfigurationItem
+0x1ef52fa60  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSControlConfigurationReader
+0x1ee0062c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSControlDescriptor
+0x1ef535220  __AUTH,__data  _OBJC_METACLASS_$_CHSControlDescriptorsPredicate
+0x1ef534810  __AUTH,__data  _OBJC_METACLASS_$_CHSControlHost
+0x1ef530f78  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSControlIdentity
+0x1ef534c08  __AUTH,__data  _OBJC_METACLASS_$_CHSControlInstanceIdentity
+0x1ef534e88  __AUTH,__data  _OBJC_METACLASS_$_CHSControlService
+0x1ef5316f8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSDescriptorEnablementChangeRequest
+0x1ef52fa38  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSDescriptorService
+0x1ef531810  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSDictionaryBox
+0x1ef531428  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSDynamicColor
+0x1ef530f50  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSEntitlementCollection
+0x1ef535100  __AUTH,__data  _OBJC_METACLASS_$_CHSEquivalentBundleIdentifierResolver
+0x1ee006698  __DATA_DIRTY,__data  _OBJC_METACLASS_$_CHSExtensionIdentity
+0x1ef5311d0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSFeatureFlag
+0x1ef530578  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSFontSpecification
+0x1ef5300a0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSFontSpecificationFontFeature
+0x1ef52f290  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSGaugeParameters
+0x1ef530370  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSGlassOptions
+0x1ef535150  __AUTH,__data  _OBJC_METACLASS_$_CHSIconResolver
+0x1ef5307d0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSInlineTextParameters
+0x1ef531590  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSIntentRecommendation
+0x1ef530eb0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSIntentRecommendationsContainer
+0x1ee005eb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSIntentReference
+0x1ef530348  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSInteractionEventService
+0x1ef52f268  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSKeepAliveService
+0x1ee005fc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSLiveActivityDescriptor
+0x1ef530e88  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSMutableAvocadoDescriptor
+0x1ef530cd0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSMutableConfiguredWidgetDescriptor
+0x1ef5314c8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSMutableControlActionMetadata
+0x1ef534358  __AUTH,__data  _OBJC_METACLASS_$_CHSMutableControlConfiguration
+0x1ef534be0  __AUTH,__data  _OBJC_METACLASS_$_CHSMutableControlConfigurationItem
+0x1ef531518  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSMutableControlDescriptor
+0x1ef531040  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSMutableDynamicColor
+0x1ef52fa10  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSMutableEntitlementCollection
+0x1ef52f9e8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSMutableGlassOptions
+0x1ef52f240  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSMutableRemoteDevice
+0x1ef5307a8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSMutableScreenshotPresentationAttributes
+0x1ef531180  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSMutableSessionPlatterDescriptor
+0x1ef52f218  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSMutableWatchComplicationsCurvedLabelMetrics
+0x1ef530b40  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSMutableWidgetConfiguration
+0x1ee005fa0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSMutableWidgetDescriptor
+0x1ef530ca8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSMutableWidgetExtension
+0x1ef52f1f0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSMutableWidgetExtensionInfo
+0x1ef530780  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSMutableWidgetMetricsSpecification
+0x1ef530078  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSMutableWidgetRenderScheme
+0x1ef530050  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSMutableWidgetTintParameters
+0x1ef530320  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSNSURLSessiondService
+0x1ee0060b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSPlaceholderRequest
+0x1ef5302f8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSProactiveService
+0x1ef52f1c8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSReaperRequest
+0x1ef52f1a0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSReaperResult
+0x1ef52f178  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSRelevanceEntry
+0x1ef52f9c0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSRemoteDevice
+0x1ef534fb0  __AUTH,__data  _OBJC_METACLASS_$_CHSRemoteDevicePredicate
+0x1ef52f150  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSRemoteDeviceService
+0x1ef5316d0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSRemoteDevicesBox
+0x1ef530758  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSScreenshotManager
+0x1ef530730  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSScreenshotPresentationAttributes
+0x1ee006090  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSServerSubscription
+0x1ef5310e0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSServerSubscriptionResult
+0x1ef5302d0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSSnapshotContext
+0x1ef5317e8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSTimelineController
+0x1ef52f128  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSTimelineEntryRelevance
+0x1ef5316a8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSTimelineEntryRelevanceBox
+0x1ee005f78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSTimelineReloadRequest
+0x1ef52f998  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSToolServiceConnection
+0x1ef52f970  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSToolServiceSpecification
+0x1ef52f948  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSToolSupportService
+0x1ee005f00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSURLSessionToken
+0x1ef530708  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSVersionedWidgetMetrics
+0x1ef52f920  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWatchComplicationsCurvedLabelMetrics
+0x1ee006360  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSWidget
+0x1ee006040  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSWidgetConfiguration
+0x1ef5317c0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetConfigurationHostsBox
+0x1ef530a50  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetConfigurationReader
+0x1ee0063d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSWidgetDescriptor
+0x1ef5306e0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetDescriptorProvider
+0x1ef5318d8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetDescriptorsBox
+0x1ef5351f0  __AUTH,__data  _OBJC_METACLASS_$_CHSWidgetDescriptorsPredicate
+0x1ee0061a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSWidgetDisplayProperties
+0x1ef530028  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetEventServiceListener
+0x1ef52f100  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetEventServicePublisher
+0x1ef530000  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetEventServiceSpecification
+0x1ef5319a0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetExtension
+0x1ef535088  __AUTH,__data  _OBJC_METACLASS_$_CHSWidgetExtensionContainer
+0x1ef52f0d8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetExtensionInfo
+0x1ef531248  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetExtensionProvider
+0x1ee006580  __DATA_DIRTY,__data  _OBJC_METACLASS_$_CHSWidgetExtensionProviderOptions
+0x1ef5350d8  __AUTH,__data  _OBJC_METACLASS_$_CHSWidgetExtensionSet
+0x1ef531950  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetExtensionsBox
+0x1ef5302a8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetHost
+0x1ef534328  __AUTH,__data  _OBJC_METACLASS_$_CHSWidgetIcon
+0x1ef530280  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetKey
+0x1ef52f0b0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetKeysBox
+0x1ee0061f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSWidgetMargins
+0x1ee006310  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHSWidgetMetrics
+0x1ef52f8f8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetMetricsDiff
+0x1ef531630  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetMetricsSpecification
+0x1ef530bb8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetRateLimit
+0x1ef530b90  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetRateLimitPolicy
+0x1ef530c80  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetRefreshStrategyFactory
+0x1ef531a18  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetRelevance
+0x1ef5306b8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetRelevanceAttribute
+0x1ef52f8d0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetRelevanceGroupAttribute
+0x1ef52ffd8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetRelevanceKey
+0x1ef5315e0  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetRelevanceProperties
+0x1ef5309d8  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetRelevanceRelevantContextAttribute
+0x1ef5347e8  __AUTH,__data  _OBJC_METACLASS_$_CHSWidgetRelevanceService
+0x1ef531680  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetRelevanceServiceEvent
+0x1ef531090  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetRenderScheme
+0x1ef534e60  __AUTH,__data  _OBJC_METACLASS_$_CHSWidgetService
+0x1ef530a28  __AUTH,__objc_data  _OBJC_METACLASS_$_CHSWidgetTintParameters
+0x1ef52f8a8  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSControlConfigurationHost
+0x1ef52f880  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSControlConfigurationReference
+0x1ef530e60  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSDynamicColorCache
+0x1ef5313d8  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSDynamicColorKey
+0x1ef52ffb0  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSExtensionIdentityBuf
+0x1ef52f858  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSExtensionIdentityBufBuilder
+0x1ef52f088  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSExtensionIdentityBufChanges
+0x1ef52f060  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSIntentReferenceBuf
+0x1ef52f038  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSIntentReferenceBufBuilder
+0x1ef52f010  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSIntentReferenceBufChanges
+0x1ef52ff88  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSRelevanceCacheBuf
+0x1ef52f830  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSRelevanceCacheBufBuilder
+0x1ef52efe8  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSRelevanceCacheBufChanges
+0x1ef530c58  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSSimpleWidgetRefreshStrategy
+0x1ef5309b0  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSWidgetConfigurationHost
+0x1ef52ff60  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSWidgetHostForConnection
+0x1ef52ff38  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSWidgetRelevanceBuf
+0x1ef52f808  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSWidgetRelevanceBufBuilder
+0x1ef52efc0  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSWidgetRelevanceBufChanges
+0x1ef52ff10  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSWidgetRelevancePropertiesBuf
+0x1ef52f7e0  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSWidgetRelevancePropertiesBufBuilder
+0x1ef52ef98  __AUTH,__objc_data  _OBJC_METACLASS_$__CHSWidgetRelevancePropertiesBufChanges
+0x1ef534f08  __AUTH,__data  _OBJC_METACLASS_$__TtC14ChronoServices14ControlsClient
+0x1ef534d70  __AUTH,__data  _OBJC_METACLASS_$__TtC14ChronoServices16StateCaptureItem
+0x1ef534300  __AUTH,__data  _OBJC_METACLASS_$__TtC14ChronoServices18AuditedFileManager
+0x1ef534d20  __AUTH,__data  _OBJC_METACLASS_$__TtC14ChronoServices19StateCaptureService
+0x1ef535030  __AUTH,__data  _OBJC_METACLASS_$__TtC14ChronoServices32LiveActivityDescriptorsPredicate
+0x1ef5342d8  __AUTH,__data  _OBJC_METACLASS_$__TtC14ChronoServices33CHSRemoteActivityLaunchController
+0x18be2b064  __TEXT,__text  __CHSDataProtectionClassIsValid
+0x18be2b058  __TEXT,__text  __CHSEnablementIsValid
+0x18be01228  __TEXT,__text  __CHSRestartChronod
+0x18bdce3ac  __TEXT,__text  __CHSSystemVersionStringToCompareAgainstFromSDKAndPlatform
+0x18be344cc  __TEXT,__text  __CHSUniqueWidgetRateLimitConfigurationName
+0x18be34be4  __TEXT,__text  _chs_debugDescriptionForErrorCode
+0x18be27230  __TEXT,__text  _getDeviceIDFromBundleID
+```
+
+## Private
+
+```
+0x18bdc74c0  __TEXT,__text  -[CHSWidgetExtensionProvider _widgetExtensionSet]
+0x18bdc75dc  __TEXT,__text  ___49-[CHSWidgetExtensionProvider _widgetExtensionSet]_block_invoke
+0x18bdc7684  __TEXT,__text  +[CHSAvocadoDescriptor load]
+0x18bdc7b70  __TEXT,__text  ___swift_project_boxed_opaque_existential_1
+0x18bdc7b70  __TEXT,__text  ___swift_project_boxed_opaque_existential_1
+0x18bdc7b70  __TEXT,__text  ___swift_project_boxed_opaque_existential_1
+0x18bdc7ba0  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_1
+0x18bdc7ba0  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_1
+0x18bdc7ba0  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_1
+0x18bdc7ba0  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_1
+0x18bdc7ba0  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_1
+0x18bdc7ba0  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_1
+0x18bdc7ba0  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_1
+0x18bdc7ba0  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_1
+0x18bdc7ba0  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_1
+0x18bdc7bd0  __TEXT,__text  ___swift_instantiateConcreteTypeFromMangledNameV2
+0x18bdc8054  __TEXT,__text  __swift_stdlib_malloc_size
+0x18bdc8398  __TEXT,__text  -[CHSWidgetExtensionProvider widgetExtensionContainerForContainerBundleIdentifier:]
+0x18bdc913c  __TEXT,__text  -[CHSInteractionEventService applicationEnteredForegroundWithBundleID:]
+0x18bdc9228  __TEXT,__text  ___88-[CHSChronoServicesConnection reloadDescriptorsForContainerBundleIdentifier:completion:]_block_invoke
+0x18bdc935c  __TEXT,__text  -[CHSWidgetExtension identity]
+0x18bdca31c  __TEXT,__text  +[CHSChronoServicesConnection sharedInstance]
+0x18bdca354  __TEXT,__text  +[CHSChronoServicesConnection sharedInstance].cold.1
+0x18bdca368  __TEXT,__text  ___45+[CHSChronoServicesConnection sharedInstance]_block_invoke
+0x18bdca3a8  __TEXT,__text  -[CHSChronoServicesConnection _initWithMachServiceName:listenForReconnect:]
+0x18bdcaa68  __TEXT,__text  -[CHSServerSubscription initWithIdentifier:serverSubscriptionBlock:]
+0x18bdcab38  __TEXT,__text  ___75-[CHSChronoServicesConnection allWidgetConfigurationsByHostWithCompletion:]_block_invoke
+0x18bdcac30  __TEXT,__text  -[CHSChronoServicesConnection _queue_remoteTargetCreatingConnectionIfNecessary:]
+0x18bdcacdc  __TEXT,__text  +[CHSChronoWidgetServiceSpecification identifier]
+0x18bdcace8  __TEXT,__text  _CHSLogChronoServices.cold.1
+0x18bdcacfc  __TEXT,__text  ___CHSLogChronoServices_block_invoke
+0x18bdcae10  __TEXT,__text  ___71-[CHSInteractionEventService applicationEnteredForegroundWithBundleID:]_block_invoke
+0x18bdcb154  __TEXT,__text  -[CHSBaseDescriptor isInternal]
+0x18bdcb15c  __TEXT,__text  -[CHSWidgetDescriptor kind]
+0x18bdcb2ec  __TEXT,__text  -[CHSServerSubscription resubscribeIfNecessary]
+0x18bdcb560  __TEXT,__text  -[CHSWidgetMargins initWithCoder:]
+0x18bdcbd1c  __TEXT,__text  ___54-[CHSChronoServicesConnection _queue_createConnection]_block_invoke_2
+0x18bdcc268  __TEXT,__text  -[CHSWidgetMargins encodeWithCoder:]
+0x18bdcc328  __TEXT,__text  ___67-[CHSWidgetConfigurationReader allConfiguredWidgetsWithCompletion:]_block_invoke
+0x18bdccd84  __TEXT,__text  -[CHSBaseDescriptor isEnabled]
+0x18bdcce04  __TEXT,__text  ___swift_memcpy1_1
+0x18bdccf60  __TEXT,__text  -[CHSServerSubscription _lock_createServerSubscriptionIfNecessary:forcing:]
+0x18bdcd06c  __TEXT,__text  -[CHSWidgetMargins initWithSafeAreaInsets:layoutInsets:contentMargins:backgroundRemovedContentMargins:]
+0x18bdcd168  __TEXT,__text  -[CHSWidgetRateLimit initWithMaximumRefreshes:perWindow:]
+0x18bdcd294  __TEXT,__text  -[CHSWidgetRateLimitPolicy initWithIdentifier:rateLimits:]
+0x18bdcd4c0  __TEXT,__text  ___swift_noop_void_return
+0x18bdcd968  __TEXT,__text  ___47-[CHSServerSubscription resubscribeIfNecessary]_block_invoke
+0x18bdcd9d4  __TEXT,__text  _CHSLogSubscriptions.cold.1
+0x18bdcd9e8  __TEXT,__text  -[CHSWidgetMetricsSpecification copyWithZone:]
+0x18bdcdb00  __TEXT,__text  -[CHSWidgetMargins copyWithZone:]
+0x18bdcdb04  __TEXT,__text  -[CHSWidgetRateLimitPolicy hash]
+0x18bdcdc38  __TEXT,__text  ___50-[CHSWidgetConfigurationReader _transformResults:]_block_invoke
+0x18bdcde8c  __TEXT,__text  -[CHSWidgetConfigurationHostsBox .cxx_destruct]
+0x18bdcde98  __TEXT,__text  -[CHSWidgetConfiguration .cxx_destruct]
+0x18bdcdee8  __TEXT,__text  -[CHSWidgetRateLimitPolicy .cxx_destruct]
+0x18bdcdf2c  __TEXT,__text  -[_CHSWidgetConfigurationHost .cxx_destruct]
+0x18bdcdf70  __TEXT,__text  -[CHSWidgetMetricsSpecification .cxx_destruct]
+0x18bdcdfa8  __TEXT,__text  -[CHSWidgetMetrics .cxx_destruct]
+0x18bdcdfec  __TEXT,__text  -[CHSWidgetConfigurationReader .cxx_destruct]
+0x18bdce04c  __TEXT,__text  ___CHSLogSubscriptions_block_invoke
+0x18bdce2a8  __TEXT,__text  -[CHSBaseDescriptor isLinkedOnOrAfter:]
+0x18bdce530  __TEXT,__text  -[_CHSDynamicColorCache cachedObjectForObject:]
+0x18bdce6a0  __TEXT,__text  -[CHSWidget kind]
+0x18bdce6a8  __TEXT,__text  ___47-[_CHSDynamicColorCache cachedObjectForObject:]_block_invoke
+0x18bdce718  __TEXT,__text  ___23-[CHSDynamicColor hash]_block_invoke
+0x18bdce77c  __TEXT,__text  -[CHSBaseDescriptor initWithExtensionIdentity:]
+0x18bdce94c  __TEXT,__text  -[CHSDynamicColor .cxx_destruct]
+0x18bdce9a8  __TEXT,__text  -[CHSBaseDescriptor initWithCoder:]
+0x18bdcf240  __TEXT,__text  -[CHSDynamicColor isEqual:]
+0x18bdcf32c  __TEXT,__text  -[CHSWidgetDescriptor .cxx_destruct]
+0x18bdcf3ec  __TEXT,__text  -[CHSBaseDescriptor .cxx_destruct]
+0x18bdcf484  __TEXT,__text  ___33-[CHSDynamicColor initWithCoder:]_block_invoke_2
+0x18bdcf5a0  __TEXT,__text  ___37-[CHSDynamicColor _areColorsTheSame:]_block_invoke
+0x18bdcf6d8  __TEXT,__text  -[CHSWidget _loggingIdentifierWithMetrics:prefix:includeIntent:]
+0x18bdcf9c8  __TEXT,__text  ___51-[CHSIntentReference appendDescriptionToFormatter:]_block_invoke
+0x18bdcfb38  __TEXT,__text  ___47-[CHSWidgetMargins isEqualTo:using32BitFloats:]_block_invoke_5
+0x18bdcfb54  __TEXT,__text  ___47-[CHSWidgetMargins isEqualTo:using32BitFloats:]_block_invoke_2
+0x18bdcfb70  __TEXT,__text  -[CHSWidgetMargins hashUsing32BitFloats:]
+0x18bdcfcc8  __TEXT,__text  ___41-[CHSWidgetMargins hashUsing32BitFloats:]_block_invoke
+0x18bdcfd24  __TEXT,__text  ___47-[CHSWidgetMargins isEqualTo:using32BitFloats:]_block_invoke
+0x18bdcfd80  __TEXT,__text  -[CHSWidgetMargins isEqualTo:using32BitFloats:]
+0x18bdd0218  __TEXT,__text  -[CHSWidget initWithBSXPCCoder:]
+0x18bdd0894  __TEXT,__text  ___35-[CHSWidgetTintParameters isEqual:]_block_invoke_5
+0x18bdd08a0  __TEXT,__text  ___35-[CHSWidgetTintParameters isEqual:]_block_invoke_4
+0x18bdd08ac  __TEXT,__text  ___35-[CHSWidgetTintParameters isEqual:]_block_invoke_3
+0x18bdd08b8  __TEXT,__text  ___35-[CHSWidgetTintParameters isEqual:]_block_invoke_6
+0x18bdd08c4  __TEXT,__text  ___35-[CHSWidgetTintParameters isEqual:]_block_invoke
+0x18bdd08d0  __TEXT,__text  ___35-[CHSWidgetTintParameters isEqual:]_block_invoke_2
+0x18bdd08dc  __TEXT,__text  ___35-[CHSWidgetTintParameters isEqual:]_block_invoke_7
+0x18bdd0ad0  __TEXT,__text  ___21-[CHSWidget isEqual:]_block_invoke_2
+0x18bdd0ad8  __TEXT,__text  ___21-[CHSWidget isEqual:]_block_invoke_4
+0x18bdd0ae4  __TEXT,__text  ___21-[CHSWidget isEqual:]_block_invoke_5
+0x18bdd0aec  __TEXT,__text  ___21-[CHSWidget isEqual:]_block_invoke_6
+0x18bdd0af4  __TEXT,__text  ___21-[CHSWidget isEqual:]_block_invoke
+0x18bdd0afc  __TEXT,__text  ___21-[CHSWidget isEqual:]_block_invoke_3
+0x18bdd0b28  __TEXT,__text  ___47-[CHSWidgetMargins isEqualTo:using32BitFloats:]_block_invoke_4
+0x18bdd0b44  __TEXT,__text  ___47-[CHSWidgetMetrics isEqualTo:using32BitFloats:]_block_invoke_4
+0x18bdd0b58  __TEXT,__text  ___47-[CHSWidgetMargins isEqualTo:using32BitFloats:]_block_invoke_3
+0x18bdd0b74  __TEXT,__text  ___47-[CHSWidgetMetrics isEqualTo:using32BitFloats:]_block_invoke_5
+0x18bdd0b80  __TEXT,__text  ___47-[CHSWidgetMetrics isEqualTo:using32BitFloats:]_block_invoke_6
+0x18bdd0b8c  __TEXT,__text  ___47-[CHSWidgetMetrics isEqualTo:using32BitFloats:]_block_invoke_7
+0x18bdd0b98  __TEXT,__text  ___47-[CHSWidgetMetrics isEqualTo:using32BitFloats:]_block_invoke_8
+0x18bdd0ba4  __TEXT,__text  ___47-[CHSWidgetMetrics isEqualTo:using32BitFloats:]_block_invoke_9
+0x18bdd0bb0  __TEXT,__text  ___47-[CHSWidgetMetrics isEqualTo:using32BitFloats:]_block_invoke_10
+0x18bdd0bbc  __TEXT,__text  ___47-[CHSWidgetMetrics isEqualTo:using32BitFloats:]_block_invoke_11
+0x18bdd0bc4  __TEXT,__text  -[CHSWidgetMargins initWithXPCDictionary:]
+0x18bdd175c  __TEXT,__text  -[CHSWidgetExtension hash]
+0x18bdd188c  __TEXT,__text  -[CHSWidget .cxx_destruct]
+0x18bdd1f94  __TEXT,__text  -[CHSWidgetDescriptor wantsMaterialBackgroundForFamily:]
+0x18bdd1fb4  __TEXT,__text  -[CHSGlassOptions .cxx_destruct]
+0x18bdd1fc0  __TEXT,__text  -[CHSWidgetTintParameters .cxx_destruct]
+0x18bdd2004  __TEXT,__text  ___33-[CHSWidgetRenderScheme isEqual:]_block_invoke
+0x18bdd2010  __TEXT,__text  ___33-[CHSWidgetRenderScheme isEqual:]_block_invoke_2
+0x18bdd201c  __TEXT,__text  -[CHSWidgetMargins encodeWithXPCDictionary:]
+0x18bdd218c  __TEXT,__text  -[CHSBaseDescriptor isEqual:]
+0x18bdd2368  __TEXT,__text  -[CHSMutableWidgetTintParameters init]
+0x18bdd23a0  __TEXT,__text  -[CHSWidgetTintParameters init]
+0x18bdd23a8  __TEXT,__text  -[CHSWidgetTintParameters initWithFilterStyle:]
+0x18bdd257c  __TEXT,__text  -[CHSWidgetExtensionProvider initWithOptions:]
+0x18bdd262c  __TEXT,__text  -[CHSWidgetExtensionProvider initWithConnection:providerOptions:eduProvider:]
+0x18bdd2828  __TEXT,__text  -[CHSWidgetExtensionProvider initWithConnection:providerOptions:eduProvider:].cold.1
+0x18bdd283c  __TEXT,__text  ___77-[CHSWidgetExtensionProvider initWithConnection:providerOptions:eduProvider:]_block_invoke
+0x18bdd2abc  __TEXT,__text  ___swift_allocate_value_buffer
+0x18bdd2b0c  __TEXT,__text  ___swift_project_value_buffer
+0x18bdd3934  __TEXT,__text  ___41-[CHSChronoServicesConnection addClient:]_block_invoke
+0x18bdd42b0  __TEXT,__text  -[CHSWidgetExtensionProvider extensions]
+0x18bdd4380  __TEXT,__text  ___swift_instantiateConcreteTypeFromMangledNameAbstractV2
+0x18bdd43dc  __TEXT,__text  -[CHSWidgetExtensionProvider _lock_loadContentInitiallySynchronouslyIfNecessary]
+0x18bdd469c  __TEXT,__text  ___46-[CHSWidgetExtensionProvider initWithOptions:]_block_invoke
+0x18bdd47f4  __TEXT,__text  -[CHSWidgetExtensionProvider _isEDUMode]
+0x18bdd4c20  __TEXT,__text  -[CHSSnapshotContext .cxx_destruct]
+0x18bdd4c64  __TEXT,__text  -[CHSWidgetRenderScheme backgroundViewPolicy]
+0x18bdd4c6c  __TEXT,__text  -[CHSScreenshotManager finalFileNameForWidget:metrics:attributes:]
+0x18bdd4f68  __TEXT,__text  -[CHSIntentReference encodeWithBSXPCCoder:]
+0x18bdd5098  __TEXT,__text  __unifiedIntentDataIfPossible
+0x18bdd5164  __TEXT,__text  -[CHSScreenshotPresentationAttributes .cxx_destruct]
+0x18bdd51a8  __TEXT,__text  ___51-[CHSWidget descriptionBuilderWithMultilinePrefix:]_block_invoke
+0x18bdd52f4  __TEXT,__text  ___58-[CHSWidgetMetrics descriptionBuilderWithMultilinePrefix:]_block_invoke
+0x18bdd54f4  __TEXT,__text  ___58-[CHSWidgetMargins descriptionBuilderWithMultilinePrefix:]_block_invoke
+0x18bdd5660  __TEXT,__text  -[CHSWidgetMargins compare:]
+0x18bdd576c  __TEXT,__text  ___33-[CHSWidgetRenderScheme isEqual:]_block_invoke_3
+0x18bdd5778  __TEXT,__text  -[CHSIntentReference stableHash]
+0x18bdd5784  __TEXT,__text  -[CHSMutableGlassOptions init]
+0x18bdd57bc  __TEXT,__text  -[CHSGlassOptions init]
+0x18bdd5820  __TEXT,__text  -[CHSGlassOptions copyWithZone:]
+0x18bdd5854  __TEXT,__text  -[CHSWidgetTintParameters copyWithZone:]
+0x18bdd5a88  __TEXT,__text  ___swift_instantiateGenericMetadata
+0x18bdd605c  __TEXT,__text  +[CHSIntentReference supportsBSXPCSecureCoding]
+0x18bdd6064  __TEXT,__text  -[CHSWidgetExtension isEqual:]
+0x18bdd6190  __TEXT,__text  -[CHSWidget activityIdentifier]
+0x18bdd6198  __TEXT,__text  -[CHSWidgetMargins isEqual:]
+0x18bdd61f8  __TEXT,__text  -[CHSIntentReference initWithBSXPCCoder:]
+0x18bdd63a0  __TEXT,__text  -[CHSWidgetMetrics isEqualTo:using32BitFloats:]
+0x18bdd6a68  __TEXT,__text  ___27-[CHSGlassOptions isEqual:]_block_invoke
+0x18bdd6a74  __TEXT,__text  ___27-[CHSGlassOptions isEqual:]_block_invoke_2
+0x18bdd6a80  __TEXT,__text  ___27-[CHSGlassOptions isEqual:]_block_invoke_3
+0x18bdd6a8c  __TEXT,__text  ___27-[CHSGlassOptions isEqual:]_block_invoke_4
+0x18bdd6a98  __TEXT,__text  -[CHSWidgetTintParameters mutableCopyWithZone:]
+0x18bdd6acc  __TEXT,__text  -[CHSWidgetTintParameters wantsSubduedGlass]
+0x18bdd6ad4  __TEXT,__text  -[CHSGlassOptions mutableCopyWithZone:]
+0x18bdd74b0  __TEXT,__text  -[CHSWidget initWithCoder:]
+0x18bdd7fac  __TEXT,__text  -[CHSWidget extensionIdentity]
+0x18bdd7fb4  __TEXT,__text  -[CHSScreenshotPresentationAttributes init]
+0x18bdd8004  __TEXT,__text  -[CHSScreenshotManager URLForWidget:metrics:attributes:createIntermediateDirectories:]
+0x18bdd818c  __TEXT,__text  -[CHSScreenshotManager indexingDirectoryNameForWidget:]
+0x18bdd82ec  __TEXT,__text  -[CHSScreenshotManager _baseFileNameFromWidget:]
+0x18bdd8424  __TEXT,__text  -[CHSIntentReference .cxx_destruct]
+0x18bdd8474  __TEXT,__text  -[CHSWidgetMetrics nestedContentMetrics]
+0x18bdd8594  __TEXT,__text  +[NSProcessInfo(ChronoServices) chs_isWatchFacesWidgetRendererProcess]
+0x18bdd85cc  __TEXT,__text  -[CHSWidgetDisplayProperties scale]
+0x18bdd85d4  __TEXT,__text  -[CHSWidgetDisplayProperties initWithScale:colorGamut:]
+0x18bdd8638  __TEXT,__text  -[CHSWidgetMetrics initWithSize:cornerRadius:scaleFactor:fontStyle:margins:supportsDynamicText:widgetGroupMargins:nestedContentMetrics:]
+0x18bdd8860  __TEXT,__text  ___38-[CHSWidgetDisplayProperties isEqual:]_block_invoke_2
+0x18bdd891c  __TEXT,__text  ___38-[CHSWidgetDisplayProperties isEqual:]_block_invoke
+0x18bdd987c  __TEXT,__text  -[CHSWidget isEqual:]
+0x18bdda50c  __TEXT,__text  -[CHSServerSubscription _lock_updateSubscription:]
+0x18bdda724  __TEXT,__text  ___75-[CHSChronoServicesConnection _initWithMachServiceName:listenForReconnect:]_block_invoke_2
+0x18bdda72c  __TEXT,__text  ___53-[CHSChronoServicesConnection _subscribeToExtensions]_block_invoke
+0x18bdda930  __TEXT,__text  +[NSError(ChronoServices) serverUnavailable]
+0x18bddaa1c  __TEXT,__text  -[CHSServerSubscriptionResult setError:]
+0x18bddaa28  __TEXT,__text  -[CHSServerSubscriptionResult assertion]
+0x18bddaa30  __TEXT,__text  -[CHSServerSubscriptionResult value]
+0x18bddaa38  __TEXT,__text  -[CHSServerSubscriptionResult error]
+0x18bddaa40  __TEXT,__text  -[CHSServerSubscriptionResult .cxx_destruct]
+0x18bddb1f8  __TEXT,__text  ___90-[CHSChronoServicesConnection subscribeToExtensions:fromClient:withOptions:outExtensions:]_block_invoke
+0x18bddb3ac  __TEXT,__text  -[CHSServerSubscription subscribeWithResult:forcingServerUpdate:error:]
+0x18bddb660  __TEXT,__text  ___71-[CHSServerSubscription subscribeWithResult:forcingServerUpdate:error:]_block_invoke.27
+0x18bddb82c  __TEXT,__text  ___Block_byref_object_copy_
+0x18bddb83c  __TEXT,__text  ___Block_byref_object_copy_
+0x18bddb84c  __TEXT,__text  ___Block_byref_object_copy_
+0x18bddb85c  __TEXT,__text  ___Block_byref_object_copy_
+0x18bddb86c  __TEXT,__text  ___Block_byref_object_copy_
+0x18bddb87c  __TEXT,__text  ___Block_byref_object_copy_
+0x18bddb88c  __TEXT,__text  ___Block_byref_object_copy_
+0x18bddb89c  __TEXT,__text  ___Block_byref_object_copy_
+0x18bddb8ac  __TEXT,__text  ___Block_byref_object_copy_
+0x18bddb944  __TEXT,__text  -[CHSWidgetDescriptor matches:]
+0x18bddbb68  __TEXT,__text  -[CHSBaseDescriptor extensionIdentity]
+0x18bddbcc8  __TEXT,__text  -[CHSWidgetMargins isDawnCompatible]
+0x18bddc868  __TEXT,__text  -[CHSWidgetExtensionProvider _lock_widgetExtensionsDidChange:postNotification:reason:]
+0x18bddca18  __TEXT,__text  +[CHSWidgetExtensionProvider _computeIconVersionsByForExtensions:withIconResolver:]
+0x18bddca3c  __TEXT,__text  -[CHSWidgetExtension orderedWidgetDescriptors]
+0x18bddca44  __TEXT,__text  -[CHSWidget hash]
+0x18bddcb94  __TEXT,__text  -[CHSGlassOptions _initWithGlassOptions:]
+0x18bddcc24  __TEXT,__text  -[CHSWidgetMetrics _effectiveCornerRadius]
+0x18bddccdc  __TEXT,__text  +[CHSVersionedWidgetMetrics currentWidgetMetricsVersion]
+0x18bddd3e4  __TEXT,__text  -[CHSWidgetTintParameters isEqual:]
+0x18bddd8a0  __TEXT,__text  -[CHSWidgetRenderScheme initWithRenderingMode:backgroundViewPolicy:]
+0x18bddd8f0  __TEXT,__text  -[CHSGlassOptions wantsSubduedGlass]
+0x18bddd8f8  __TEXT,__text  -[CHSWidgetExtension dataProtectionLevel]
+0x18bddd900  __TEXT,__text  -[CHSWidgetMargins safeAreaInsets]
+0x18bddd90c  __TEXT,__text  -[CHSConfiguredWidgetContainerDescriptor widgets]
+0x18bddd968  __TEXT,__text  -[CHSWidgetKey initWithWidget:metrics:]
+0x18bddd970  __TEXT,__text  -[CHSGlassOptions isEqual:]
+0x18bdddc68  __TEXT,__text  -[CHSWidgetMetrics _stringKeyRepresentationForVersion:]
+0x18bdddce8  __TEXT,__text  -[CHSWidgetMetrics size]
+0x18bdddcf0  __TEXT,__text  -[CHSWidgetMetrics isEqual:]
+0x18bdde594  __TEXT,__text  -[CHSWidget succinctDescriptionBuilder]
+0x18bdde6d4  __TEXT,__text  -[CHSWidgetMetrics succinctDescriptionBuilder]
+0x18bddeba0  __TEXT,__text  -[CHSGlassOptions description]
+0x18bddec78  __TEXT,__text  -[CHSWidgetRenderScheme description]
+0x18bddedc0  __TEXT,__text  -[CHSWidgetMetrics hash]
+0x18bddf684  __TEXT,__text  ___swift_memcpy0_1
+0x18bddf7c8  __TEXT,__text  -[CHSBaseDescriptor supportsVibrantContent]
+0x18bddf7d0  __TEXT,__text  -[CHSWidgetDescriptor enablesMultipleTapTargets]
+0x18bddf7e4  __TEXT,__text  -[CHSWidgetDescriptor supportsInteraction]
+0x18bddf878  __TEXT,__text  -[CHSWidget intentReference]
+0x18bddf880  __TEXT,__text  ___38-[CHSWidgetTintParameters description]_block_invoke
+0x18bddf980  __TEXT,__text  ___30-[CHSGlassOptions description]_block_invoke
+0x18bddfa6c  __TEXT,__text  -[CHSWidgetRenderScheme renderingMode]
+0x18bddfa74  __TEXT,__text  -[CHSConfiguredWidgetDescriptor container]
+0x18bddfa94  __TEXT,__text  -[CHSWidgetDisplayProperties description]
+0x18bddfbb4  __TEXT,__text  -[CHSWidgetDescriptor spatialSurface]
+0x18bddfd78  __TEXT,__text  ___24-[CHSWidgetKey isEqual:]_block_invoke
+0x18bddfd84  __TEXT,__text  ___24-[CHSWidgetKey isEqual:]_block_invoke_2
+0x18bddfd90  __TEXT,__text  ___24-[CHSWidgetKey isEqual:]_block_invoke_3
+0x18bddfd9c  __TEXT,__text  -[CHSWidget descriptionBuilderWithMultilinePrefix:]
+0x18bde0214  __TEXT,__text  -[CHSWidget personaIdentifier]
+0x18bde03c4  __TEXT,__text  -[CHSWidgetRenderScheme isEqual:]
+0x18bde0638  __TEXT,__text  -[CHSWidget family]
+0x18bde0640  __TEXT,__text  -[CHSWidgetMargins hash]
+0x18bde0678  __TEXT,__text  +[CHSExtensionIdentity(Codings) supportsBSXPCSecureCoding]
+0x18bde0680  __TEXT,__text  -[CHSWidgetTintParameters wantsGlassMaterial]
+0x18bde0694  __TEXT,__text  -[CHSWidgetKey .cxx_destruct]
+0x18bde06d8  __TEXT,__text  _get_enum_tag_for_layout_string 14ChronoServices11ImageFormatO
+0x18bde06f4  __TEXT,__text  -[CHSWidgetMetrics copyWithZone:]
+0x18bde06f8  __TEXT,__text  -[CHSWidget copyWithZone:]
+0x18bde06fc  __TEXT,__text  -[CHSWidget description]
+0x18bde0700  __TEXT,__text  -[CHSWidget succinctDescription]
+0x18bde0750  __TEXT,__text  -[CHSWidgetDescriptor description]
+0x18bde0758  __TEXT,__text  -[CHSWidgetDescriptor descriptionWithMultilinePrefix:]
+0x18bde07a8  __TEXT,__text  -[CHSWidgetDescriptor descriptionBuilderWithMultilinePrefix:]
+0x18bde0894  __TEXT,__text  ___61-[CHSWidgetDescriptor descriptionBuilderWithMultilinePrefix:]_block_invoke
+0x18bde13b0  __TEXT,__text  ___CHSWidgetFamilyMaskEnumerateFamilies_block_invoke
+0x18bde1474  __TEXT,__text  ___CHSWidgetFamilyMaskDescription_block_invoke
+0x18bde1528  __TEXT,__text  ___Block_byref_object_dispose_
+0x18bde1530  __TEXT,__text  ___Block_byref_object_dispose_
+0x18bde1538  __TEXT,__text  ___Block_byref_object_dispose_
+0x18bde1540  __TEXT,__text  ___Block_byref_object_dispose_
+0x18bde1548  __TEXT,__text  ___Block_byref_object_dispose_
+0x18bde1550  __TEXT,__text  ___Block_byref_object_dispose_
+0x18bde1558  __TEXT,__text  ___Block_byref_object_dispose_
+0x18bde1560  __TEXT,__text  ___Block_byref_object_dispose_
+0x18bde1568  __TEXT,__text  ___Block_byref_object_dispose_
+0x18bde169c  __TEXT,__text  -[CHSBaseDescriptor extensionBundleIdentifier]
+0x18bde16a4  __TEXT,__text  -[CHSWidgetDescriptor supportedFamilies]
+0x18bde1f00  __TEXT,__text  ___swift_closure_destructor
+0x18bde1f34  __TEXT,__text  ___swift_closure_destructor
+0x18bde1f68  __TEXT,__text  ___swift_closure_destructor
+0x18bde1f9c  __TEXT,__text  ___swift_closure_destructor
+0x18bde1fac  __TEXT,__text  ___swift_closure_destructor
+0x18bde1fe8  __TEXT,__text  ___swift_closure_destructor
+0x18bde2014  __TEXT,__text  ___swift_closure_destructor
+0x18bde2040  __TEXT,__text  ___swift_closure_destructor
+0x18bde206c  __TEXT,__text  ___swift_closure_destructor
+0x18bde2098  __TEXT,__text  ___swift_closure_destructor
+0x18bde20c4  __TEXT,__text  ___swift_closure_destructor
+0x18bde216c  __TEXT,__text  ___swift_closure_destructor
+0x18bde2198  __TEXT,__text  ___swift_closure_destructor
+0x18bde21cc  __TEXT,__text  ___swift_closure_destructor
+0x18bde2218  __TEXT,__text  ___swift_closure_destructor
+0x18bde22b4  __TEXT,__text  ___swift_closure_destructor
+0x18bde22e0  __TEXT,__text  ___swift_closure_destructor
+0x18bde2314  __TEXT,__text  ___swift_closure_destructor
+0x18bde2340  __TEXT,__text  ___swift_closure_destructor
+0x18bde24e4  __TEXT,__text  -[CHSIntentReference initWithIntentData:configData:schemaData:stableHash:]
+0x18bde26ac  __TEXT,__text  +[CHSWidgetMetrics use32BitFloats]
+0x18bde26b8  __TEXT,__text  -[CHSWidgetDescriptor isEqual:]
+0x18bde29c0  __TEXT,__text  -[CHSBaseDescriptor preferredBackgroundStyle]
+0x18bde2a48  __TEXT,__text  -[CHSWidgetMetrics cornerRadius]
+0x18bde2a50  __TEXT,__text  ___54-[CHSChronoServicesConnection _queue_createConnection]_block_invoke
+0x18bde2bf8  __TEXT,__text  ___48+[CHSChronoWidgetServiceSpecification interface]_block_invoke
+0x18bde2cdc  __TEXT,__text  -[CHSWidget initWithExtensionIdentity:kind:family:intentReference:activityIdentifier:personaIdentifier:]
+0x18bde2ed8  __TEXT,__text  +[CHSWidget supportsBSXPCSecureCoding]
+0x18bde2ee0  __TEXT,__text  -[CHSChronoServicesConnection _queue_createConnection]
+0x18bde3004  __TEXT,__text  -[CHSBaseDescriptor requiredFeatureFlags]
+0x18bde50a8  __TEXT,__text  +[CHSGlassOptions withSubduedGlass]
+0x18bde5104  __TEXT,__text  +[CHSGlassOptions withWhitePointBoost]
+0x18bde5160  __TEXT,__text  -[CHSGlassOptions hash]
+0x18bde5204  __TEXT,__text  +[CHSGlassOptions supportsBSXPCSecureCoding]
+0x18bde520c  __TEXT,__text  -[CHSGlassOptions encodeWithBSXPCCoder:]
+0x18bde52a4  __TEXT,__text  -[CHSGlassOptions initWithBSXPCCoder:]
+0x18bde5384  __TEXT,__text  -[CHSGlassOptions wantsWhitePointBoost]
+0x18bde538c  __TEXT,__text  -[CHSGlassOptions backdropGroupName]
+0x18bde5394  __TEXT,__text  -[CHSGlassOptions wantsHighlightsDisplayAngle]
+0x18bde539c  __TEXT,__text  -[CHSMutableGlassOptions setWantsWhitePointBoost:]
+0x18bde53a4  __TEXT,__text  -[CHSMutableGlassOptions setWantsSubduedGlass:]
+0x18bde53ac  __TEXT,__text  -[CHSMutableGlassOptions setBackdropGroupName:]
+0x18bde53b8  __TEXT,__text  -[CHSMutableGlassOptions setWantsHighlightsDisplayAngle:]
+0x18bde53c0  __TEXT,__text  +[CHSWidgetConfiguration new]
+0x18bde5438  __TEXT,__text  -[CHSWidgetConfiguration init]
+0x18bde54c0  __TEXT,__text  -[CHSWidgetConfiguration initWithContainerDescriptors:metricsSpecification:]
+0x18bde55b8  __TEXT,__text  -[CHSWidgetConfiguration initWithConfiguration:]
+0x18bde56ac  __TEXT,__text  +[CHSWidgetConfiguration defaultRemoteDevicePredicate]
+0x18bde56b8  __TEXT,__text  -[CHSWidgetConfiguration isEqual:]
+0x18bde5b24  __TEXT,__text  ___34-[CHSWidgetConfiguration isEqual:]_block_invoke
+0x18bde5b30  __TEXT,__text  ___34-[CHSWidgetConfiguration isEqual:]_block_invoke_2
+0x18bde5b3c  __TEXT,__text  ___34-[CHSWidgetConfiguration isEqual:]_block_invoke_3
+0x18bde5b48  __TEXT,__text  ___34-[CHSWidgetConfiguration isEqual:]_block_invoke_4
+0x18bde5b54  __TEXT,__text  ___34-[CHSWidgetConfiguration isEqual:]_block_invoke_5
+0x18bde5b60  __TEXT,__text  ___34-[CHSWidgetConfiguration isEqual:]_block_invoke_6
+0x18bde5b6c  __TEXT,__text  ___34-[CHSWidgetConfiguration isEqual:]_block_invoke_7
+0x18bde5b78  __TEXT,__text  -[CHSWidgetConfiguration hash]
+0x18bde5c58  __TEXT,__text  -[CHSWidgetConfiguration description]
+0x18bde5c60  __TEXT,__text  -[CHSWidgetConfiguration succinctDescription]
+0x18bde5cb0  __TEXT,__text  -[CHSWidgetConfiguration succinctDescriptionBuilder]
+0x18bde5d7c  __TEXT,__text  ___52-[CHSWidgetConfiguration succinctDescriptionBuilder]_block_invoke
+0x18bde601c  __TEXT,__text  -[CHSWidgetConfiguration descriptionWithMultilinePrefix:]
+0x18bde606c  __TEXT,__text  -[CHSWidgetConfiguration descriptionBuilderWithMultilinePrefix:]
+0x18bde6158  __TEXT,__text  ___64-[CHSWidgetConfiguration descriptionBuilderWithMultilinePrefix:]_block_invoke
+0x18bde63d0  __TEXT,__text  -[CHSWidgetConfiguration copyWithZone:]
+0x18bde63d4  __TEXT,__text  -[CHSWidgetConfiguration mutableCopyWithZone:]
+0x18bde6408  __TEXT,__text  +[CHSWidgetConfiguration supportsSecureCoding]
+0x18bde6410  __TEXT,__text  -[CHSWidgetConfiguration encodeWithCoder:]
+0x18bde6994  __TEXT,__text  -[CHSWidgetConfiguration initWithCoder:]
+0x18bde6d60  __TEXT,__text  -[CHSWidgetConfiguration containerDescriptors]
+0x18bde6d68  __TEXT,__text  -[CHSWidgetConfiguration metricsSpecification]
+0x18bde6d70  __TEXT,__text  -[CHSWidgetConfiguration rateLimitPolicies]
+0x18bde6d78  __TEXT,__text  -[CHSWidgetConfiguration replicationPredicate]
+0x18bde6d80  __TEXT,__text  -[CHSWidgetConfiguration automaticallyOrphaned]
+0x18bde6d88  __TEXT,__text  -[CHSWidgetConfiguration preventsEagerPlaceholderGeneration]
+0x18bde6d90  __TEXT,__text  -[CHSWidgetConfiguration expirationTimeout]
+0x18bde6d98  __TEXT,__text  -[CHSMutableWidgetConfiguration setContainerDescriptors:]
+0x18bde6df4  __TEXT,__text  -[CHSMutableWidgetConfiguration setMetricsSpecification:]
+0x18bde6e50  __TEXT,__text  -[CHSMutableWidgetConfiguration setRateLimitPolicies:]
+0x18bde6eac  __TEXT,__text  -[CHSMutableWidgetConfiguration setReplicationPredicate:]
+0x18bde6f08  __TEXT,__text  -[CHSMutableWidgetConfiguration setAutomaticallyOrphaned:]
+0x18bde6f10  __TEXT,__text  -[CHSMutableWidgetConfiguration setPreventsEagerPlaceholderGeneration:]
+0x18bde6f18  __TEXT,__text  -[CHSMutableWidgetConfiguration setExpirationTimeout:]
+0x18bde6f20  __TEXT,__text  -[CHSMutableWidgetConfiguration copyWithZone:]
+0x18bde6f54  __TEXT,__text  -[CHSWidgetDescriptorProvider initIncludingIntents:]
+0x18bde6f5c  __TEXT,__text  -[CHSWidgetDescriptorProvider initIncludingIntents:relevanceBacked:]
+0x18bde706c  __TEXT,__text  -[CHSWidgetDescriptorProvider initWithIncludeDefaultIntents:]
+0x18bde7070  __TEXT,__text  -[CHSWidgetDescriptorProvider init]
+0x18bde7078  __TEXT,__text  -[CHSWidgetDescriptorProvider initWithConnection:extensionProvider:]
+0x18bde714c  __TEXT,__text  -[CHSWidgetDescriptorProvider initWithConnection:extensionProvider:providerOptions:]
+0x18bde7300  __TEXT,__text  ___84-[CHSWidgetDescriptorProvider initWithConnection:extensionProvider:providerOptions:]_block_invoke
+0x18bde7358  __TEXT,__text  ___84-[CHSWidgetDescriptorProvider initWithConnection:extensionProvider:providerOptions:]_block_invoke_2
+0x18bde7418  __TEXT,__text  -[CHSWidgetDescriptorProvider dealloc]
+0x18bde74f4  __TEXT,__text  ___38-[CHSWidgetDescriptorProvider dealloc]_block_invoke
+0x18bde7500  __TEXT,__text  -[CHSWidgetDescriptorProvider descriptorsByExtensionIdentifier]
+0x18bde7624  __TEXT,__text  ___63-[CHSWidgetDescriptorProvider descriptorsByExtensionIdentifier]_block_invoke
+0x18bde76bc  __TEXT,__text  -[CHSWidgetDescriptorProvider descriptors]
+0x18bde775c  __TEXT,__text  -[CHSWidgetDescriptorProvider descriptorForPersonality:]
+0x18bde7894  __TEXT,__text  ___56-[CHSWidgetDescriptorProvider descriptorForPersonality:]_block_invoke
+0x18bde78a0  __TEXT,__text  -[CHSWidgetDescriptorProvider addObserver:]
+0x18bde796c  __TEXT,__text  ___43-[CHSWidgetDescriptorProvider addObserver:]_block_invoke
+0x18bde79c4  __TEXT,__text  -[CHSWidgetDescriptorProvider removeObserver:]
+0x18bde7a90  __TEXT,__text  ___46-[CHSWidgetDescriptorProvider removeObserver:]_block_invoke
+0x18bde7a9c  __TEXT,__text  -[CHSWidgetDescriptorProvider reloadDescriptorsForContainerIdentifier:completion:]
+0x18bde7aa0  __TEXT,__text  -[CHSWidgetDescriptorProvider fetchDescriptorsForContainerIdentifier:completion:]
+0x18bde7ba4  __TEXT,__text  ___81-[CHSWidgetDescriptorProvider fetchDescriptorsForContainerIdentifier:completion:]_block_invoke
+0x18bde7bb4  __TEXT,__text  -[CHSWidgetDescriptorProvider description]
+0x18bde7bbc  __TEXT,__text  -[CHSWidgetDescriptorProvider succinctDescription]
+0x18bde7c0c  __TEXT,__text  -[CHSWidgetDescriptorProvider succinctDescriptionBuilder]
+0x18bde7c1c  __TEXT,__text  -[CHSWidgetDescriptorProvider descriptionWithMultilinePrefix:]
+0x18bde7c6c  __TEXT,__text  -[CHSWidgetDescriptorProvider descriptionBuilderWithMultilinePrefix:]
+0x18bde7d54  __TEXT,__text  ___69-[CHSWidgetDescriptorProvider descriptionBuilderWithMultilinePrefix:]_block_invoke
+0x18bde7e18  __TEXT,__text  ___69-[CHSWidgetDescriptorProvider descriptionBuilderWithMultilinePrefix:]_block_invoke_2
+0x18bde7e9c  __TEXT,__text  -[CHSWidgetDescriptorProvider extensionsDidChangeForExtensionProvider:]
+0x18bde7fac  __TEXT,__text  ___71-[CHSWidgetDescriptorProvider extensionsDidChangeForExtensionProvider:]_block_invoke
+0x18bde8000  __TEXT,__text  -[CHSWidgetDescriptorProvider _descriptorsFromExtensions:]
+0x18bde8128  __TEXT,__text  ___58-[CHSWidgetDescriptorProvider _descriptorsFromExtensions:]_block_invoke
+0x18bde81ec  __TEXT,__text  -[CHSWidgetDescriptorProvider _isEDUMode]
+0x18bde8204  __TEXT,__text  -[CHSWidgetDescriptorProvider _lock_reloadContentAsynchronouslyForContainerIdentifier:completion:]
+0x18bde8338  __TEXT,__text  ___98-[CHSWidgetDescriptorProvider _lock_reloadContentAsynchronouslyForContainerIdentifier:completion:]_block_invoke
+0x18bde8530  __TEXT,__text  ___98-[CHSWidgetDescriptorProvider _lock_reloadContentAsynchronouslyForContainerIdentifier:completion:]_block_invoke.14
+0x18bde853c  __TEXT,__text  -[CHSWidgetDescriptorProvider _lock_addNewDescriptorsFromDescriptors:]
+0x18bde8740  __TEXT,__text  ___70-[CHSWidgetDescriptorProvider _lock_addNewDescriptorsFromDescriptors:]_block_invoke
+0x18bde8800  __TEXT,__text  -[CHSWidgetDescriptorProvider _lock_notifyObserversDescriptorsDidChange]
+0x18bde8998  __TEXT,__text  ___72-[CHSWidgetDescriptorProvider _lock_notifyObserversDescriptorsDidChange]_block_invoke
+0x18bde89a4  __TEXT,__text  -[CHSWidgetDescriptorProvider extensionProvider]
+0x18bde89ac  __TEXT,__text  -[CHSWidgetDescriptorProvider setExtensionProvider:]
+0x18bde89b8  __TEXT,__text  -[CHSWidgetDescriptorProvider eduModeProvider]
+0x18bde89c0  __TEXT,__text  -[CHSWidgetDescriptorProvider setEduModeProvider:]
+0x18bde89c8  __TEXT,__text  -[CHSWidgetDescriptorProvider .cxx_destruct]
+0x18bde8a24  __TEXT,__text  +[CHSFeatureFlag new]
+0x18bde8a9c  __TEXT,__text  -[CHSFeatureFlag init]
+0x18bde8b24  __TEXT,__text  -[CHSFeatureFlag initWithDomain:featureName:]
+0x18bde8c14  __TEXT,__text  -[CHSFeatureFlag dealloc]
+0x18bde8c68  __TEXT,__text  +[CHSFeatureFlag isFeatureFlagEnabled:]
+0x18bde8c70  __TEXT,__text  -[CHSFeatureFlag hash]
+0x18bde8cac  __TEXT,__text  -[CHSFeatureFlag isEqual:]
+0x18bde8d68  __TEXT,__text  -[CHSFeatureFlag description]
+0x18bde8e40  __TEXT,__text  ___29-[CHSFeatureFlag description]_block_invoke
+0x18bde8e8c  __TEXT,__text  +[CHSFeatureFlag supportsSecureCoding]
+0x18bde8e94  __TEXT,__text  -[CHSFeatureFlag encodeWithCoder:]
+0x18bde8f04  __TEXT,__text  -[CHSFeatureFlag initWithCoder:]
+0x18bde8ffc  __TEXT,__text  -[CHSFeatureFlag domain]
+0x18bde9004  __TEXT,__text  -[CHSFeatureFlag featureName]
+0x18bde900c  __TEXT,__text  -[CHSFeatureFlag .cxx_destruct]
+0x18bde9044  __TEXT,__text  -[CHSWidgetDescriptor initWithExtensionIdentity:kind:supportedFamilies:intentType:]
+0x18bde9224  __TEXT,__text  -[CHSWidgetDescriptor initFromDescriptor:includeIntents:]
+0x18bde94a0  __TEXT,__text  -[CHSWidgetDescriptor _initWithDescriptor:]
+0x18bde94a8  __TEXT,__text  -[CHSWidgetDescriptor intentRecommendations]
+0x18bde94bc  __TEXT,__text  -[CHSWidgetDescriptor defaultIntent]
+0x18bde94d0  __TEXT,__text  -[CHSWidgetDescriptor widgetForFamily:intent:]
+0x18bde95c0  __TEXT,__text  -[CHSWidgetDescriptor isConfigurable]
+0x18bde95dc  __TEXT,__text  -[CHSWidgetDescriptor hash]
+0x18bde98ac  __TEXT,__text  -[CHSWidgetDescriptor succinctDescription]
+0x18bde98fc  __TEXT,__text  -[CHSWidgetDescriptor succinctDescriptionBuilder]
+0x18bde99c4  __TEXT,__text  ___49-[CHSWidgetDescriptor succinctDescriptionBuilder]_block_invoke
+0x18bde9a88  __TEXT,__text  ___61-[CHSWidgetDescriptor descriptionBuilderWithMultilinePrefix:]_block_invoke_2
+0x18bde9b68  __TEXT,__text  ___61-[CHSWidgetDescriptor descriptionBuilderWithMultilinePrefix:]_block_invoke_3
+0x18bde9c64  __TEXT,__text  -[CHSWidgetDescriptor copyWithZone:]
+0x18bde9c68  __TEXT,__text  -[CHSWidgetDescriptor copyWithoutIntents]
+0x18bde9ca0  __TEXT,__text  -[CHSWidgetDescriptor mutableCopyWithZone:]
+0x18bde9cd8  __TEXT,__text  -[CHSWidgetDescriptor hasIntents]
+0x18bde9d50  __TEXT,__text  +[CHSWidgetDescriptor supportsSecureCoding]
+0x18bde9d58  __TEXT,__text  -[CHSWidgetDescriptor encodeWithCoder:]
+0x18bde9ffc  __TEXT,__text  -[CHSWidgetDescriptor initWithCoder:]
+0x18bdeab3c  __TEXT,__text  -[CHSWidgetDescriptor _intentDescription]
+0x18bdeabdc  __TEXT,__text  -[CHSWidgetDescriptor _evaluateSupportsAccentedContent]
+0x18bdeac40  __TEXT,__text  -[CHSWidgetDescriptor isTransparent]
+0x18bdead38  __TEXT,__text  ___36-[CHSWidgetDescriptor isTransparent]_block_invoke
+0x18bdead78  __TEXT,__text  -[CHSWidgetDescriptor isTransparentForFamily:]
+0x18bdead98  __TEXT,__text  -[CHSWidgetDescriptor locationsDisfavoredByFamily:]
+0x18bdeae28  __TEXT,__text  -[CHSWidgetDescriptor disfavoredFamiliesForLocation:]
+0x18bdeaf04  __TEXT,__text  ___53-[CHSWidgetDescriptor disfavoredFamiliesForLocation:]_block_invoke
+0x18bdeafb4  __TEXT,__text  -[CHSWidgetDescriptor setDefaultIntent:]
+0x18bdeb04c  __TEXT,__text  -[CHSWidgetDescriptor setDefaultIntentReference:]
+0x18bdeb0ac  __TEXT,__text  -[CHSWidgetDescriptor initWithExtensionBundleIdentifier:kind:supportedFamilies:intentType:]
+0x18bdeb0c0  __TEXT,__text  -[CHSWidgetDescriptor initWithExtensionBundleIdentifier:containerBundleIdentifier:kind:supportedFamilies:intentType:]
+0x18bdeb1a8  __TEXT,__text  -[CHSWidgetDescriptor intentType]
+0x18bdeb1bc  __TEXT,__text  -[CHSWidgetDescriptor widgetVisibility]
+0x18bdeb1d0  __TEXT,__text  -[CHSWidgetDescriptor isBackgroundRemovable]
+0x18bdeb1e4  __TEXT,__text  -[CHSWidgetDescriptor defaultIntentReference]
+0x18bdeb1f8  __TEXT,__text  -[CHSWidgetDescriptor wantsLiveScene]
+0x18bdeb20c  __TEXT,__text  -[CHSWidgetDescriptor hasSnapshotSensitiveContent]
+0x18bdeb220  __TEXT,__text  -[CHSWidgetDescriptor disfavoredLocations]
+0x18bdeb234  __TEXT,__text  -[CHSWidgetDescriptor intentRecommendationsContainer]
+0x18bdeb248  __TEXT,__text  -[CHSWidgetDescriptor _didMigrateToRecommendationsContainer]
+0x18bdeb25c  __TEXT,__text  -[CHSWidgetDescriptor supportsAccentedContent]
+0x18bdeb270  __TEXT,__text  -[CHSWidgetDescriptor isRelevanceBacked]
+0x18bdeb284  __TEXT,__text  -[CHSWidgetDescriptor supportsPush]
+0x18bdeb298  __TEXT,__text  -[CHSWidgetDescriptor spatialChromeStyles]
+0x18bdeb2ac  __TEXT,__text  -[CHSWidgetDescriptor associatedKind]
+0x18bdeb2c0  __TEXT,__text  -[CHSMutableWidgetDescriptor setExtensionIdentity:]
+0x18bdeb32c  __TEXT,__text  -[CHSMutableWidgetDescriptor setNativeContainerBundleIdentifier:]
+0x18bdeb398  __TEXT,__text  -[CHSMutableWidgetDescriptor setKind:]
+0x18bdeb400  __TEXT,__text  -[CHSMutableWidgetDescriptor setDisplayName:]
+0x18bdeb46c  __TEXT,__text  -[CHSMutableWidgetDescriptor setSupportedFamilies:]
+0x18bdeb480  __TEXT,__text  -[CHSMutableWidgetDescriptor setIntentType:]
+0x18bdeb4e8  __TEXT,__text  -[CHSMutableWidgetDescriptor setIntentRecommendationsContainer:]
+0x18bdeb4fc  __TEXT,__text  -[CHSMutableWidgetDescriptor setWidgetDescription:]
+0x18bdeb568  __TEXT,__text  -[CHSMutableWidgetDescriptor setWidgetVisibility:]
+0x18bdeb57c  __TEXT,__text  -[CHSMutableWidgetDescriptor setDisfavoredLocations:]
+0x18bdeb590  __TEXT,__text  -[CHSMutableWidgetDescriptor setDisfavoredLocations:on:]
+0x18bdeb658  __TEXT,__text  -[CHSMutableWidgetDescriptor setLocaleToken:]
+0x18bdeb6c4  __TEXT,__text  -[CHSMutableWidgetDescriptor setEventMachServiceName:]
+0x18bdeb730  __TEXT,__text  -[CHSMutableWidgetDescriptor setTransparent:]
+0x18bdeb768  __TEXT,__text  -[CHSMutableWidgetDescriptor setPreferredBackgroundStyle:]
+0x18bdeb780  __TEXT,__text  -[CHSMutableWidgetDescriptor setSupportsVibrantContent:]
+0x18bdeb798  __TEXT,__text  -[CHSMutableWidgetDescriptor setSupportsAccentedContent:]
+0x18bdeb7d8  __TEXT,__text  -[CHSMutableWidgetDescriptor setRelevanceBacked:]
+0x18bdeb7ec  __TEXT,__text  -[CHSMutableWidgetDescriptor setSupportsPush:]
+0x18bdeb800  __TEXT,__text  -[CHSMutableWidgetDescriptor setAssociatedKind:]
+0x18bdeb868  __TEXT,__text  -[CHSMutableWidgetDescriptor setSupportsInteraction:]
+0x18bdeb87c  __TEXT,__text  -[CHSMutableWidgetDescriptor setSdkVersion:]
+0x18bdeb894  __TEXT,__text  -[CHSMutableWidgetDescriptor setPlatform:]
+0x18bdeb8ac  __TEXT,__text  -[CHSMutableWidgetDescriptor setEnablesMultipleTapTargets:]
+0x18bdeb8c0  __TEXT,__text  -[CHSMutableWidgetDescriptor setBackgroundRemovable:]
+0x18bdeb8d4  __TEXT,__text  -[CHSMutableWidgetDescriptor setHiddenBySensitiveUI:]
+0x18bdeb8ec  __TEXT,__text  -[CHSMutableWidgetDescriptor setPromptsForUserConfiguration:]
+0x18bdeb904  __TEXT,__text  -[CHSMutableWidgetDescriptor setEnablement:]
+0x18bdeb91c  __TEXT,__text  -[CHSMutableWidgetDescriptor setRequiredFeatureFlags:]
+0x18bdeb988  __TEXT,__text  -[CHSMutableWidgetDescriptor setSpatialSurface:]
+0x18bdeb99c  __TEXT,__text  -[CHSMutableWidgetDescriptor setSpatialChromeStyles:]
+0x18bdeb9b0  __TEXT,__text  -[CHSMutableWidgetDescriptor setWantsLiveScene:]
+0x18bdeb9c4  __TEXT,__text  -[CHSMutableWidgetDescriptor setHasSnapshotSensitiveContent:]
+0x18bdeb9d8  __TEXT,__text  -[CHSMutableWidgetDescriptor setRequestedDataProtection:]
+0x18bdeb9f0  __TEXT,__text  -[CHSMutableWidgetDescriptor setConfigurationBackgroundColor:]
+0x18bdeba08  __TEXT,__text  -[CHSMutableWidgetDescriptor setConfigurationAccentColor:]
+0x18bdeba20  __TEXT,__text  -[CHSMutableWidgetDescriptor copyWithZone:]
+0x18bdeba58  __TEXT,__text  -[CHSMutableWidgetDescriptor setExtensionBundleIdentifier:]
+0x18bdebb50  __TEXT,__text  -[CHSMutableWidgetDescriptor setContainerBundleIdentifier:]
+0x18bdebc48  __TEXT,__text  -[CHSWidgetDescriptor(Deprecated) initWithExtensionBundleIdentifier:containerBundleIdentifier:kind:displayName:intentType:supportedSizeClasses:widgetDescription:widgetVisibility:]
+0x18bdebddc  __TEXT,__text  -[CHSWidgetDescriptor(Deprecated) supportedSizeClasses]
+0x18bdebdf0  __TEXT,__text  -[CHSWidgetDescriptor(Deprecated) cachedDefaultIntent]
+0x18bdebdf4  __TEXT,__text  -[CHSWidgetDescriptor(Deprecated) loadDefaultIntent:]
+0x18bdec0c0  __TEXT,__text  ___53-[CHSWidgetDescriptor(Deprecated) loadDefaultIntent:]_block_invoke
+0x18bdec18c  __TEXT,__text  ___53-[CHSWidgetDescriptor(Deprecated) loadDefaultIntent:]_block_invoke_2
+0x18bdec3d4  __TEXT,__text  -[CHSWidgetDescriptor(Deprecated) matchesPersonality:]
+0x18bdec4f0  __TEXT,__text  -[CHSWidgetRelevanceServiceEvent initWithEventType:keys:extensionIdentities:]
+0x18bdec5c4  __TEXT,__text  +[CHSWidgetRelevanceServiceEvent reloadEvent]
+0x18bdec5f0  __TEXT,__text  +[CHSWidgetRelevanceServiceEvent addOrUpdateEventWithRelevanceKeys:]
+0x18bdec650  __TEXT,__text  +[CHSWidgetRelevanceServiceEvent removeEventWithExtensionIdentities:]
+0x18bdec6b0  __TEXT,__text  -[CHSWidgetRelevanceServiceEvent description]
+0x18bdec7c0  __TEXT,__text  -[CHSWidgetRelevanceServiceEvent hash]
+0x18bdec800  __TEXT,__text  -[CHSWidgetRelevanceServiceEvent isEqual:]
+0x18bdec894  __TEXT,__text  -[CHSWidgetRelevanceServiceEvent copyWithZone:]
+0x18bdec898  __TEXT,__text  +[CHSWidgetRelevanceServiceEvent supportsSecureCoding]
+0x18bdec8a0  __TEXT,__text  -[CHSWidgetRelevanceServiceEvent encodeWithCoder:]
+0x18bdec924  __TEXT,__text  -[CHSWidgetRelevanceServiceEvent initWithCoder:]
+0x18bdecb48  __TEXT,__text  -[CHSWidgetRelevanceServiceEvent eventType]
+0x18bdecb50  __TEXT,__text  -[CHSWidgetRelevanceServiceEvent keys]
+0x18bdecb58  __TEXT,__text  -[CHSWidgetRelevanceServiceEvent extensionIdentities]
+0x18bdecb60  __TEXT,__text  -[CHSWidgetRelevanceServiceEvent .cxx_destruct]
+0x18bdecb98  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics init]
+0x18bdecc64  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics _initWithInstance:]
+0x18bdecd60  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics description]
+0x18bdece3c  __TEXT,__text  ___54-[CHSWatchComplicationsCurvedLabelMetrics description]_block_invoke
+0x18bdecfd4  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics isEqual:]
+0x18bded68c  __TEXT,__text  ___51-[CHSWatchComplicationsCurvedLabelMetrics isEqual:]_block_invoke
+0x18bded694  __TEXT,__text  ___51-[CHSWatchComplicationsCurvedLabelMetrics isEqual:]_block_invoke_2
+0x18bded69c  __TEXT,__text  ___51-[CHSWatchComplicationsCurvedLabelMetrics isEqual:]_block_invoke_3
+0x18bded6a4  __TEXT,__text  ___51-[CHSWatchComplicationsCurvedLabelMetrics isEqual:]_block_invoke_4
+0x18bded6ac  __TEXT,__text  ___51-[CHSWatchComplicationsCurvedLabelMetrics isEqual:]_block_invoke_5
+0x18bded6b4  __TEXT,__text  ___51-[CHSWatchComplicationsCurvedLabelMetrics isEqual:]_block_invoke_6
+0x18bded6bc  __TEXT,__text  ___51-[CHSWatchComplicationsCurvedLabelMetrics isEqual:]_block_invoke_7
+0x18bded6c4  __TEXT,__text  ___51-[CHSWatchComplicationsCurvedLabelMetrics isEqual:]_block_invoke_8
+0x18bded6cc  __TEXT,__text  ___51-[CHSWatchComplicationsCurvedLabelMetrics isEqual:]_block_invoke_9
+0x18bded6d4  __TEXT,__text  ___51-[CHSWatchComplicationsCurvedLabelMetrics isEqual:]_block_invoke_10
+0x18bded6dc  __TEXT,__text  ___51-[CHSWatchComplicationsCurvedLabelMetrics isEqual:]_block_invoke_11
+0x18bded6e4  __TEXT,__text  ___51-[CHSWatchComplicationsCurvedLabelMetrics isEqual:]_block_invoke_12
+0x18bded6ec  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics hash]
+0x18bded830  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics copyWithZone:]
+0x18bded834  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics mutableCopyWithZone:]
+0x18bded868  __TEXT,__text  +[CHSWatchComplicationsCurvedLabelMetrics supportsSecureCoding]
+0x18bded870  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics encodeWithCoder:]
+0x18bdeda04  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics initWithCoder:]
+0x18bdedc68  __TEXT,__text  +[CHSWatchComplicationsCurvedLabelMetrics supportsBSXPCSecureCoding]
+0x18bdedc70  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics encodeWithBSXPCCoder:]
+0x18bdedda8  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics initWithBSXPCCoder:]
+0x18bdedf88  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics _filenameSafeStableHash]
+0x18bdee050  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics _filenameSafeStableHashFromData:]
+0x18bdee1a8  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics circleCenter]
+0x18bdee1b0  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics circleRadius]
+0x18bdee1b8  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics maximumAngularWidth]
+0x18bdee1c0  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics centerAngle]
+0x18bdee1c8  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics bezierPath]
+0x18bdee1d0  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics interior]
+0x18bdee1d8  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics tracking]
+0x18bdee1e0  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics fontSize]
+0x18bdee1e8  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics textColor]
+0x18bdee1f0  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics accessoryPlacement]
+0x18bdee1f8  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics accessoryPadding]
+0x18bdee200  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics accessoryMaxSize]
+0x18bdee208  __TEXT,__text  -[CHSWatchComplicationsCurvedLabelMetrics .cxx_destruct]
+0x18bdee240  __TEXT,__text  -[CHSMutableWatchComplicationsCurvedLabelMetrics copyWithZone:]
+0x18bdee274  __TEXT,__text  -[CHSMutableWatchComplicationsCurvedLabelMetrics setCircleCenter:]
+0x18bdee27c  __TEXT,__text  -[CHSMutableWatchComplicationsCurvedLabelMetrics setCircleRadius:]
+0x18bdee284  __TEXT,__text  -[CHSMutableWatchComplicationsCurvedLabelMetrics setMaximumAngularWidth:]
+0x18bdee28c  __TEXT,__text  -[CHSMutableWatchComplicationsCurvedLabelMetrics setCenterAngle:]
+0x18bdee294  __TEXT,__text  -[CHSMutableWatchComplicationsCurvedLabelMetrics setBezierPath:]
+0x18bdee2f0  __TEXT,__text  -[CHSMutableWatchComplicationsCurvedLabelMetrics setInterior:]
+0x18bdee2f8  __TEXT,__text  -[CHSMutableWatchComplicationsCurvedLabelMetrics setTracking:]
+0x18bdee300  __TEXT,__text  -[CHSMutableWatchComplicationsCurvedLabelMetrics setFontSize:]
+0x18bdee308  __TEXT,__text  -[CHSMutableWatchComplicationsCurvedLabelMetrics setTextColor:]
+0x18bdee364  __TEXT,__text  -[CHSMutableWatchComplicationsCurvedLabelMetrics setAccessoryPlacement:]
+0x18bdee36c  __TEXT,__text  -[CHSMutableWatchComplicationsCurvedLabelMetrics setAccessoryPadding:]
+0x18bdee374  __TEXT,__text  -[CHSMutableWatchComplicationsCurvedLabelMetrics setAccessoryMaxSize:]
+0x18bdee37c  __TEXT,__text  -[CHSWidget init]
+0x18bdee404  __TEXT,__text  -[CHSWidget initWithExtensionIdentity:kind:family:intent:activityIdentifier:]
+0x18bdee40c  __TEXT,__text  -[CHSWidget initWithExtensionIdentity:kind:family:intent:activityIdentifier:personaIdentifier:]
+0x18bdee518  __TEXT,__text  -[CHSWidget initWithExtensionIdentity:kind:family:intentReference:activityIdentifier:]
+0x18bdee520  __TEXT,__text  -[CHSWidget initWithWidgetIdentity:family:intent:activityIdentifier:]
+0x18bdee60c  __TEXT,__text  -[CHSWidget widgetByReplacingIntent:]
+0x18bdee72c  __TEXT,__text  -[CHSWidget widgetByRemovingPersona]
+0x18bdee828  __TEXT,__text  -[CHSWidget matches:]
+0x18bdee920  __TEXT,__text  -[CHSWidget matchesPersonality:]
+0x18bdeea3c  __TEXT,__text  -[CHSWidget descriptionWithMultilinePrefix:]
+0x18bdeea8c  __TEXT,__text  +[CHSWidget supportsSecureCoding]
+0x18bdeea94  __TEXT,__text  -[CHSWidget encodeWithCoder:]
+0x18bdeeb54  __TEXT,__text  -[CHSWidget encodeWithBSXPCCoder:]
+0x18bdeec3c  __TEXT,__text  -[CHSWidget _loggingIdentifierWithoutMetrics]
+0x18bdeec44  __TEXT,__text  -[CHSWidget _loggingIdentifierWithoutMetricsOrIntent]
+0x18bdeec54  __TEXT,__text  -[CHSWidget _loggingIdentifierWithMetrics:]
+0x18bdeec78  __TEXT,__text  -[CHSWidget _loggingIdentifierWithMetrics:prefix:]
+0x18bdeec9c  __TEXT,__text  -[CHSWidget initWithExtensionBundleIdentifier:kind:family:intent:]
+0x18bdeecb4  __TEXT,__text  -[CHSWidget initWithExtensionBundleIdentifier:containerBundleIdentifier:kind:family:intent:]
+0x18bdeecbc  __TEXT,__text  -[CHSWidget initWithExtensionBundleIdentifier:containerBundleIdentifier:kind:family:intent:activityIdentifier:]
+0x18bdeedf0  __TEXT,__text  -[CHSWidget initWithPersonality:family:intent:]
+0x18bdeeef8  __TEXT,__text  -[CHSWidget extensionBundleIdentifier]
+0x18bdeef00  __TEXT,__text  -[CHSWidget containerBundleIdentifier]
+0x18bdeef08  __TEXT,__text  -[CHSWidget sourceDeviceIdentifier]
+0x18bdeef10  __TEXT,__text  -[CHSWidget intent]
+0x18bdeef50  __TEXT,__text  -[CHSWidgetTintParameters _initWithTintParameters:]
+0x18bdef000  __TEXT,__text  -[CHSWidgetTintParameters initWithFilterStyle:primaryTintColor:secondaryTintColor:]
+0x18bdef008  __TEXT,__text  -[CHSWidgetTintParameters initWithFilterStyle:primaryTintColor:secondaryTintColor:fraction:]
+0x18bdef0d8  __TEXT,__text  -[CHSWidgetTintParameters initWithPrimaryTintColor:secondaryTintColor:filterStyle:fallbackFilterStyle:fraction:]
+0x18bdef0ec  __TEXT,__text  -[CHSWidgetTintParameters copyWithFilterStyle:]
+0x18bdef114  __TEXT,__text  -[CHSWidgetTintParameters isClearGlass]
+0x18bdef128  __TEXT,__text  -[CHSWidgetTintParameters isAccentedGlass]
+0x18bdef13c  __TEXT,__text  -[CHSWidgetTintParameters hash]
+0x18bdef21c  __TEXT,__text  -[CHSWidgetTintParameters description]
+0x18bdef2f4  __TEXT,__text  -[CHSWidgetTintParameters effectiveRenderingMode]
+0x18bdef318  __TEXT,__text  +[CHSWidgetTintParameters supportsBSXPCSecureCoding]
+0x18bdef320  __TEXT,__text  -[CHSWidgetTintParameters encodeWithBSXPCCoder:]
+0x18bdef3f4  __TEXT,__text  -[CHSWidgetTintParameters initWithBSXPCCoder:]
+0x18bdef55c  __TEXT,__text  -[CHSWidgetTintParameters primaryTintColor]
+0x18bdef564  __TEXT,__text  -[CHSWidgetTintParameters secondaryTintColor]
+0x18bdef56c  __TEXT,__text  -[CHSWidgetTintParameters filterStyle]
+0x18bdef574  __TEXT,__text  -[CHSWidgetTintParameters fraction]
+0x18bdef57c  __TEXT,__text  -[CHSWidgetTintParameters accentedAlternateBackground]
+0x18bdef584  __TEXT,__text  -[CHSWidgetTintParameters accentedDesaturatedMode]
+0x18bdef58c  __TEXT,__text  -[CHSWidgetTintParameters glassOptions]
+0x18bdef594  __TEXT,__text  -[CHSMutableWidgetTintParameters initWithFilterStyle:]
+0x18bdef5cc  __TEXT,__text  -[CHSMutableWidgetTintParameters setPrimaryTintColor:]
+0x18bdef5d8  __TEXT,__text  -[CHSMutableWidgetTintParameters setSecondaryTintColor:]
+0x18bdef5e4  __TEXT,__text  -[CHSMutableWidgetTintParameters setFilterStyle:]
+0x18bdef5ec  __TEXT,__text  -[CHSMutableWidgetTintParameters setFraction:]
+0x18bdef5f4  __TEXT,__text  -[CHSMutableWidgetTintParameters setAccentedAlternateBackground:]
+0x18bdef5fc  __TEXT,__text  -[CHSMutableWidgetTintParameters setAccentedDesaturatedMode:]
+0x18bdef604  __TEXT,__text  -[CHSMutableWidgetTintParameters setGlassOptions:]
+0x18bdef660  __TEXT,__text  -[CHSMutableWidgetTintParameters wantsSubduedGlass]
+0x18bdef698  __TEXT,__text  -[CHSMutableWidgetTintParameters setWantsSubduedGlass:]
+0x18bdef75c  __TEXT,__text  -[CHSKeepAliveService init]
+0x18bdef7cc  __TEXT,__text  -[CHSKeepAliveService initWithConnection:]
+0x18bdef850  __TEXT,__text  -[CHSKeepAliveService acquireKeepAliveAssertionForExtensionBundleIdentifier:reason:error:]
+0x18bdef874  __TEXT,__text  -[CHSKeepAliveService .cxx_destruct]
+0x18bdef880  __TEXT,__text  +[CHSChronoWidgetServiceSpecification serviceQuality]
+0x18bdef88c  __TEXT,__text  +[CHSChronoWidgetServiceSpecification interface]
+0x18bdef920  __TEXT,__text  +[CHSDictionaryBox boxedValue:]
+0x18bdef978  __TEXT,__text  -[CHSDictionaryBox initWithValue:]
+0x18bdef9fc  __TEXT,__text  +[CHSDictionaryBox supportsSecureCoding]
+0x18bdefa04  __TEXT,__text  -[CHSDictionaryBox encodeWithCoder:]
+0x18bdefa1c  __TEXT,__text  -[CHSDictionaryBox initWithCoder:]
+0x18bdefabc  __TEXT,__text  ___plistableTypes
+0x18bdefaf4  __TEXT,__text  -[CHSDictionaryBox value]
+0x18bdefafc  __TEXT,__text  -[CHSDictionaryBox setValue:]
+0x18bdefb08  __TEXT,__text  -[CHSDictionaryBox .cxx_destruct]
+0x18bdefb14  __TEXT,__text  +[CHSArrayBox boxedValue:]
+0x18bdefb6c  __TEXT,__text  -[CHSArrayBox initWithValue:]
+0x18bdefbf0  __TEXT,__text  +[CHSArrayBox supportsSecureCoding]
+0x18bdefbf8  __TEXT,__text  -[CHSArrayBox encodeWithCoder:]
+0x18bdefc10  __TEXT,__text  -[CHSArrayBox initWithCoder:]
+0x18bdefcb0  __TEXT,__text  -[CHSArrayBox value]
+0x18bdefcb8  __TEXT,__text  -[CHSArrayBox setValue:]
+0x18bdefcc4  __TEXT,__text  -[CHSArrayBox .cxx_destruct]
+0x18bdefcd0  __TEXT,__text  _____plistableTypes_block_invoke
+0x18bdefd98  __TEXT,__text  -[CHSTimelineEntryRelevance initWithDate:]
+0x18bdefe24  __TEXT,__text  -[CHSTimelineEntryRelevance initWithDate:score:duration:]
+0x18bdefec4  __TEXT,__text  -[CHSTimelineEntryRelevance initWithTimelineEntryRelevance:]
+0x18bdeff54  __TEXT,__text  -[CHSTimelineEntryRelevance hash]
+0x18bdefff8  __TEXT,__text  -[CHSTimelineEntryRelevance isEqual:]
+0x18bdf0294  __TEXT,__text  ___37-[CHSTimelineEntryRelevance isEqual:]_block_invoke
+0x18bdf02a0  __TEXT,__text  ___37-[CHSTimelineEntryRelevance isEqual:]_block_invoke_2
+0x18bdf02ac  __TEXT,__text  ___37-[CHSTimelineEntryRelevance isEqual:]_block_invoke_3
+0x18bdf02b8  __TEXT,__text  ___37-[CHSTimelineEntryRelevance isEqual:]_block_invoke_4
+0x18bdf02c4  __TEXT,__text  -[CHSTimelineEntryRelevance description]
+0x18bdf03a4  __TEXT,__text  -[CHSTimelineEntryRelevance copyWithZone:]
+0x18bdf03a8  __TEXT,__text  -[CHSTimelineEntryRelevance initWithCoder:]
+0x18bdf04a4  __TEXT,__text  -[CHSTimelineEntryRelevance encodeWithCoder:]
+0x18bdf053c  __TEXT,__text  +[CHSTimelineEntryRelevance supportsSecureCoding]
+0x18bdf0544  __TEXT,__text  -[CHSTimelineEntryRelevance date]
+0x18bdf054c  __TEXT,__text  -[CHSTimelineEntryRelevance hasRelevance]
+0x18bdf0554  __TEXT,__text  -[CHSTimelineEntryRelevance score]
+0x18bdf055c  __TEXT,__text  -[CHSTimelineEntryRelevance duration]
+0x18bdf0564  __TEXT,__text  -[CHSTimelineEntryRelevance .cxx_destruct]
+0x18bdf0570  __TEXT,__text  -[CHSRelevanceEntry initWithTimelineEntryRelevance:]
+0x18bdf05a8  __TEXT,__text  -[CHSWidgetExtensionProvider initIncludingIntents:]
+0x18bdf0650  __TEXT,__text  -[CHSWidgetExtensionProvider init]
+0x18bdf06f4  __TEXT,__text  -[CHSWidgetExtensionProvider dealloc]
+0x18bdf07d0  __TEXT,__text  ___37-[CHSWidgetExtensionProvider dealloc]_block_invoke
+0x18bdf07dc  __TEXT,__text  -[CHSWidgetExtensionProvider options]
+0x18bdf07fc  __TEXT,__text  -[CHSWidgetExtensionProvider containers]
+0x18bdf0880  __TEXT,__text  -[CHSWidgetExtensionProvider widgetDescriptorForWidget:]
+0x18bdf08a0  __TEXT,__text  -[CHSWidgetExtensionProvider widgetDescriptorForIdentifiable:]
+0x18bdf09d4  __TEXT,__text  -[CHSWidgetExtensionProvider controlDescriptorForControl:]
+0x18bdf09f4  __TEXT,__text  -[CHSWidgetExtensionProvider widgetExtensionForExtensionIdentity:]
+0x18bdf0a70  __TEXT,__text  -[CHSWidgetExtensionProvider controlDescriptorForIdentifiable:]
+0x18bdf0ba4  __TEXT,__text  -[CHSWidgetExtensionProvider widgetExtensionContainerForExtensionBundleIdentifier:]
+0x18bdf0c20  __TEXT,__text  -[CHSWidgetExtensionProvider shouldDeleteWidget:]
+0x18bdf0dcc  __TEXT,__text  -[CHSWidgetExtensionProvider shouldDeleteControl:]
+0x18bdf0f30  __TEXT,__text  -[CHSWidgetExtensionProvider _shouldKeepHostedItem:]
+0x18bdf0ffc  __TEXT,__text  -[CHSWidgetExtensionProvider registerObserver:]
+0x18bdf10c8  __TEXT,__text  ___47-[CHSWidgetExtensionProvider registerObserver:]_block_invoke
+0x18bdf11dc  __TEXT,__text  -[CHSWidgetExtensionProvider unregisterObserver:]
+0x18bdf12a8  __TEXT,__text  ___49-[CHSWidgetExtensionProvider unregisterObserver:]_block_invoke
+0x18bdf13a8  __TEXT,__text  -[CHSWidgetExtensionProvider invalidate]
+0x18bdf1440  __TEXT,__text  ___40-[CHSWidgetExtensionProvider invalidate]_block_invoke
+0x18bdf1494  __TEXT,__text  -[CHSWidgetExtensionProvider description]
+0x18bdf149c  __TEXT,__text  -[CHSWidgetExtensionProvider succinctDescription]
+0x18bdf14ec  __TEXT,__text  -[CHSWidgetExtensionProvider succinctDescriptionBuilder]
+0x18bdf1668  __TEXT,__text  ___56-[CHSWidgetExtensionProvider succinctDescriptionBuilder]_block_invoke
+0x18bdf16d0  __TEXT,__text  ___56-[CHSWidgetExtensionProvider succinctDescriptionBuilder]_block_invoke_2
+0x18bdf1734  __TEXT,__text  -[CHSWidgetExtensionProvider descriptionWithMultilinePrefix:]
+0x18bdf1784  __TEXT,__text  -[CHSWidgetExtensionProvider descriptionBuilderWithMultilinePrefix:]
+0x18bdf1868  __TEXT,__text  ___68-[CHSWidgetExtensionProvider descriptionBuilderWithMultilinePrefix:]_block_invoke
+0x18bdf18ec  __TEXT,__text  -[CHSWidgetExtensionProvider widgetExtensionsDidChange:]
+0x18bdf19b8  __TEXT,__text  ___56-[CHSWidgetExtensionProvider widgetExtensionsDidChange:]_block_invoke
+0x18bdf19d0  __TEXT,__text  +[CHSWidgetExtensionProvider _makeWidgetExtensionSetWithExtensions:iconResolver:]
+0x18bdf1a78  __TEXT,__text  -[CHSWidgetExtensionProvider _lock_notifyObserversExtensionsDidChange]
+0x18bdf1c10  __TEXT,__text  ___70-[CHSWidgetExtensionProvider _lock_notifyObserversExtensionsDidChange]_block_invoke
+0x18bdf1c1c  __TEXT,__text  -[CHSWidgetExtensionProvider connection]
+0x18bdf1c24  __TEXT,__text  -[CHSWidgetExtensionProvider setConnection:]
+0x18bdf1c30  __TEXT,__text  -[CHSWidgetExtensionProvider eduModeProvider]
+0x18bdf1c38  __TEXT,__text  -[CHSWidgetExtensionProvider setEduModeProvider:]
+0x18bdf1c40  __TEXT,__text  -[CHSWidgetExtensionProvider .cxx_destruct]
+0x18bdf1cc0  __TEXT,__text  ___getUMUserManagerClass_block_invoke
+0x18bdf1ef0  __TEXT,__text  ___UserManagementLibraryCore_block_invoke
+0x18bdf1f64  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18bdf1f84  __TEXT,__text  -[CHSWidgetEventServicePublisher dealloc]
+0x18bdf1ffc  __TEXT,__text  -[CHSWidgetEventServicePublisher description]
+0x18bdf204c  __TEXT,__text  -[CHSWidgetEventServicePublisher initWithMachServiceName:]
+0x18bdf220c  __TEXT,__text  -[CHSWidgetEventServicePublisher activate]
+0x18bdf222c  __TEXT,__text  -[CHSWidgetEventServicePublisher deactivate]
+0x18bdf2230  __TEXT,__text  -[CHSWidgetEventServicePublisher publishOpenEventWithURL:]
+0x18bdf22cc  __TEXT,__text  -[CHSWidgetEventServicePublisher publishOpenEventWithUserActivity:]
+0x18bdf2528  __TEXT,__text  ___67-[CHSWidgetEventServicePublisher publishOpenEventWithUserActivity:]_block_invoke
+0x18bdf25a4  __TEXT,__text  -[CHSWidgetEventServicePublisher _activeConnection]
+0x18bdf2708  __TEXT,__text  ___51-[CHSWidgetEventServicePublisher _activeConnection]_block_invoke
+0x18bdf293c  __TEXT,__text  ___51-[CHSWidgetEventServicePublisher _activeConnection]_block_invoke_2
+0x18bdf2a20  __TEXT,__text  ___51-[CHSWidgetEventServicePublisher _activeConnection]_block_invoke.21
+0x18bdf2b2c  __TEXT,__text  ___51-[CHSWidgetEventServicePublisher _activeConnection]_block_invoke.22
+0x18bdf2c24  __TEXT,__text  -[CHSWidgetEventServicePublisher _invalidateConnection]
+0x18bdf2ca4  __TEXT,__text  -[CHSWidgetEventServicePublisher isActive]
+0x18bdf2cac  __TEXT,__text  -[CHSWidgetEventServicePublisher .cxx_destruct]
+0x18bdf2cf0  __TEXT,__text  +[CHSToolServiceConnection sharedInstance]
+0x18bdf2d28  __TEXT,__text  ___42+[CHSToolServiceConnection sharedInstance]_block_invoke
+0x18bdf2d5c  __TEXT,__text  -[CHSToolServiceConnection init]
+0x18bdf2de4  __TEXT,__text  -[CHSToolServiceConnection _init]
+0x18bdf2ecc  __TEXT,__text  -[CHSToolServiceConnection addClient:]
+0x18bdf2f64  __TEXT,__text  ___38-[CHSToolServiceConnection addClient:]_block_invoke
+0x18bdf2f94  __TEXT,__text  -[CHSToolServiceConnection removeClient:]
+0x18bdf302c  __TEXT,__text  ___41-[CHSToolServiceConnection removeClient:]_block_invoke
+0x18bdf3038  __TEXT,__text  -[CHSToolServiceConnection refreshDescriptorsForExtensionBundleIdentifier:completion:]
+0x18bdf30fc  __TEXT,__text  ___86-[CHSToolServiceConnection refreshDescriptorsForExtensionBundleIdentifier:completion:]_block_invoke
+0x18bdf3258  __TEXT,__text  ___86-[CHSToolServiceConnection refreshDescriptorsForExtensionBundleIdentifier:completion:]_block_invoke_2
+0x18bdf3304  __TEXT,__text  -[CHSToolServiceConnection allCachedSnapshotURLsWithCompletion:]
+0x18bdf339c  __TEXT,__text  ___64-[CHSToolServiceConnection allCachedSnapshotURLsWithCompletion:]_block_invoke
+0x18bdf3518  __TEXT,__text  ___64-[CHSToolServiceConnection allCachedSnapshotURLsWithCompletion:]_block_invoke_2
+0x18bdf3528  __TEXT,__text  -[CHSToolServiceConnection listStateCaptureIdentifiersWithCompletion:]
+0x18bdf35c0  __TEXT,__text  ___70-[CHSToolServiceConnection listStateCaptureIdentifiersWithCompletion:]_block_invoke
+0x18bdf371c  __TEXT,__text  ___70-[CHSToolServiceConnection listStateCaptureIdentifiersWithCompletion:]_block_invoke_2
+0x18bdf372c  __TEXT,__text  -[CHSToolServiceConnection fetchStateWithCompletion:]
+0x18bdf37c4  __TEXT,__text  ___53-[CHSToolServiceConnection fetchStateWithCompletion:]_block_invoke
+0x18bdf3920  __TEXT,__text  ___53-[CHSToolServiceConnection fetchStateWithCompletion:]_block_invoke_2
+0x18bdf3930  __TEXT,__text  -[CHSToolServiceConnection fetchStateForItemWithIdentifier:completion:]
+0x18bdf39f4  __TEXT,__text  ___71-[CHSToolServiceConnection fetchStateForItemWithIdentifier:completion:]_block_invoke
+0x18bdf3b54  __TEXT,__text  ___71-[CHSToolServiceConnection fetchStateForItemWithIdentifier:completion:]_block_invoke_2
+0x18bdf3b64  __TEXT,__text  -[CHSToolServiceConnection extensionInfoForBundleIdentifier:completion:]
+0x18bdf3c28  __TEXT,__text  ___72-[CHSToolServiceConnection extensionInfoForBundleIdentifier:completion:]_block_invoke
+0x18bdf3db4  __TEXT,__text  ___72-[CHSToolServiceConnection extensionInfoForBundleIdentifier:completion:]_block_invoke_2
+0x18bdf3e9c  __TEXT,__text  -[CHSToolServiceConnection extensionInfo:]
+0x18bdf3f34  __TEXT,__text  ___42-[CHSToolServiceConnection extensionInfo:]_block_invoke
+0x18bdf408c  __TEXT,__text  ___42-[CHSToolServiceConnection extensionInfo:]_block_invoke_2
+0x18bdf4130  __TEXT,__text  -[CHSToolServiceConnection widgetsWithTimelines:]
+0x18bdf41c8  __TEXT,__text  ___49-[CHSToolServiceConnection widgetsWithTimelines:]_block_invoke
+0x18bdf4320  __TEXT,__text  ___49-[CHSToolServiceConnection widgetsWithTimelines:]_block_invoke_2
+0x18bdf43ac  __TEXT,__text  -[CHSToolServiceConnection timelineForWidgetKey:completion:]
+0x18bdf4470  __TEXT,__text  ___60-[CHSToolServiceConnection timelineForWidgetKey:completion:]_block_invoke
+0x18bdf4610  __TEXT,__text  ___60-[CHSToolServiceConnection timelineForWidgetKey:completion:]_block_invoke_2
+0x18bdf4734  __TEXT,__text  -[CHSToolServiceConnection resetCaches:completion:]
+0x18bdf47dc  __TEXT,__text  ___51-[CHSToolServiceConnection resetCaches:completion:]_block_invoke
+0x18bdf4950  __TEXT,__text  ___51-[CHSToolServiceConnection resetCaches:completion:]_block_invoke_2
+0x18bdf49d8  __TEXT,__text  -[CHSToolServiceConnection deleteExtensionDataForBundleIdentifiers:completion:]
+0x18bdf4a9c  __TEXT,__text  ___79-[CHSToolServiceConnection deleteExtensionDataForBundleIdentifiers:completion:]_block_invoke
+0x18bdf4c14  __TEXT,__text  ___79-[CHSToolServiceConnection deleteExtensionDataForBundleIdentifiers:completion:]_block_invoke_2
+0x18bdf4cc0  __TEXT,__text  -[CHSToolServiceConnection setExtensionHidden:forExtensionBundleIdentifiers:completion:]
+0x18bdf4d8c  __TEXT,__text  ___88-[CHSToolServiceConnection setExtensionHidden:forExtensionBundleIdentifiers:completion:]_block_invoke
+0x18bdf4f2c  __TEXT,__text  ___88-[CHSToolServiceConnection setExtensionHidden:forExtensionBundleIdentifiers:completion:]_block_invoke_2
+0x18bdf5014  __TEXT,__text  -[CHSToolServiceConnection reloadControlsOfKind:containedIn:reason:completion:]
+0x18bdf5124  __TEXT,__text  ___79-[CHSToolServiceConnection reloadControlsOfKind:containedIn:reason:completion:]_block_invoke
+0x18bdf52a4  __TEXT,__text  ___79-[CHSToolServiceConnection reloadControlsOfKind:containedIn:reason:completion:]_block_invoke_2
+0x18bdf5330  __TEXT,__text  -[CHSToolServiceConnection reloadTimelinesOfKind:containedIn:reason:completion:]
+0x18bdf5440  __TEXT,__text  ___80-[CHSToolServiceConnection reloadTimelinesOfKind:containedIn:reason:completion:]_block_invoke
+0x18bdf55c0  __TEXT,__text  ___80-[CHSToolServiceConnection reloadTimelinesOfKind:containedIn:reason:completion:]_block_invoke_2
+0x18bdf564c  __TEXT,__text  -[CHSToolServiceConnection expireLocationGracePeriods]
+0x18bdf56c0  __TEXT,__text  ___54-[CHSToolServiceConnection expireLocationGracePeriods]_block_invoke
+0x18bdf5760  __TEXT,__text  -[CHSToolServiceConnection contentURLForActivityID:completion:]
+0x18bdf5824  __TEXT,__text  ___63-[CHSToolServiceConnection contentURLForActivityID:completion:]_block_invoke
+0x18bdf58a8  __TEXT,__text  -[CHSToolServiceConnection runReaper:completion:]
+0x18bdf596c  __TEXT,__text  ___49-[CHSToolServiceConnection runReaper:completion:]_block_invoke
+0x18bdf59f0  __TEXT,__text  -[CHSToolServiceConnection fetchWidgetSceneInfoWithCompletion:]
+0x18bdf5a88  __TEXT,__text  ___63-[CHSToolServiceConnection fetchWidgetSceneInfoWithCompletion:]_block_invoke
+0x18bdf5b0c  __TEXT,__text  -[CHSToolServiceConnection fetchRendererStateCaptureWithCompletion:]
+0x18bdf5ba4  __TEXT,__text  ___68-[CHSToolServiceConnection fetchRendererStateCaptureWithCompletion:]_block_invoke
+0x18bdf5c74  __TEXT,__text  -[CHSToolServiceConnection subscribeToTaskServiceStateWithDelegate:completion:]
+0x18bdf5d38  __TEXT,__text  ___79-[CHSToolServiceConnection subscribeToTaskServiceStateWithDelegate:completion:]_block_invoke
+0x18bdf5e20  __TEXT,__text  -[CHSToolServiceConnection taskServiceStateDidChange:]
+0x18bdf5eb8  __TEXT,__text  ___54-[CHSToolServiceConnection taskServiceStateDidChange:]_block_invoke
+0x18bdf5f7c  __TEXT,__text  ___54-[CHSToolServiceConnection taskServiceStateDidChange:]_block_invoke_2
+0x18bdf60bc  __TEXT,__text  -[CHSToolServiceConnection _queue_remoteTarget]
+0x18bdf610c  __TEXT,__text  -[CHSToolServiceConnection _queue_createConnection]
+0x18bdf6230  __TEXT,__text  ___51-[CHSToolServiceConnection _queue_createConnection]_block_invoke
+0x18bdf6314  __TEXT,__text  ___51-[CHSToolServiceConnection _queue_createConnection]_block_invoke_2
+0x18bdf637c  __TEXT,__text  ___51-[CHSToolServiceConnection _queue_createConnection]_block_invoke.39
+0x18bdf63e4  __TEXT,__text  ___51-[CHSToolServiceConnection _queue_createConnection]_block_invoke.42
+0x18bdf644c  __TEXT,__text  -[CHSToolServiceConnection _queue_invalidateConnection]
+0x18bdf6498  __TEXT,__text  -[CHSToolServiceConnection _queue_addClient:]
+0x18bdf6564  __TEXT,__text  -[CHSToolServiceConnection _queue_removeClient:]
+0x18bdf6630  __TEXT,__text  -[CHSToolServiceConnection .cxx_destruct]
+0x18bdf6680  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18bdf6694  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18bdf66c4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18bdf66c4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18bdf66c4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18bdf66d4  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x18bdf67b8  __TEXT,__text  -[CHSWidgetExtension _init]
+0x18bdf67f0  __TEXT,__text  -[CHSWidgetExtension initFromExtension:includeIntents:]
+0x18bdf6be8  __TEXT,__text  -[CHSWidgetExtension initFromExtension:]
+0x18bdf6bf0  __TEXT,__text  -[CHSWidgetExtension controlDescriptorForKind:]
+0x18bdf6ec0  __TEXT,__text  ___47-[CHSWidgetExtension controlDescriptorForKind:]_block_invoke
+0x18bdf6f14  __TEXT,__text  -[CHSWidgetExtension widgetDescriptorForKind:]
+0x18bdf71e4  __TEXT,__text  ___46-[CHSWidgetExtension widgetDescriptorForKind:]_block_invoke
+0x18bdf7238  __TEXT,__text  -[CHSWidgetExtension copyWithZone:]
+0x18bdf723c  __TEXT,__text  -[CHSWidgetExtension mutableCopyWithZone:]
+0x18bdf7270  __TEXT,__text  +[CHSWidgetExtension supportsSecureCoding]
+0x18bdf7278  __TEXT,__text  -[CHSWidgetExtension encodeWithCoder:]
+0x18bdf7398  __TEXT,__text  -[CHSWidgetExtension initWithCoder:]
+0x18bdf77a0  __TEXT,__text  -[CHSWidgetExtension isLinkedOnOrAfter:]
+0x18bdf7a14  __TEXT,__text  -[CHSWidgetExtension description]
+0x18bdf7a1c  __TEXT,__text  -[CHSWidgetExtension copyFilteredToOptions:]
+0x18bdf7e80  __TEXT,__text  -[CHSWidgetExtension orderedDescriptors]
+0x18bdf7e88  __TEXT,__text  -[CHSWidgetExtension descriptors]
+0x18bdf7e9c  __TEXT,__text  -[CHSWidgetExtension extensionBundleIdentifier]
+0x18bdf7ea4  __TEXT,__text  -[CHSWidgetExtension containerBundleIdentifier]
+0x18bdf7eac  __TEXT,__text  -[CHSWidgetExtension sourceDeviceIdentifier]
+0x18bdf7eb4  __TEXT,__text  -[CHSWidgetExtension succinctDescription]
+0x18bdf7f04  __TEXT,__text  -[CHSWidgetExtension succinctDescriptionWithBundleIDWithoutFullIdentity]
+0x18bdf7f58  __TEXT,__text  -[CHSWidgetExtension succinctDescriptionBuilder]
+0x18bdf7f60  __TEXT,__text  -[CHSWidgetExtension succinctDescriptionBuilderWithBundleIDInsteadOfFullIdentity:]
+0x18bdf8030  __TEXT,__text  ___82-[CHSWidgetExtension succinctDescriptionBuilderWithBundleIDInsteadOfFullIdentity:]_block_invoke
+0x18bdf8140  __TEXT,__text  -[CHSWidgetExtension descriptionWithMultilinePrefix:]
+0x18bdf8190  __TEXT,__text  -[CHSWidgetExtension descriptionBuilderWithMultilinePrefix:]
+0x18bdf827c  __TEXT,__text  ___60-[CHSWidgetExtension descriptionBuilderWithMultilinePrefix:]_block_invoke
+0x18bdf83bc  __TEXT,__text  -[CHSWidgetExtension localizedDisplayName]
+0x18bdf83c4  __TEXT,__text  -[CHSWidgetExtension containerBundleLocalizedDisplayName]
+0x18bdf83cc  __TEXT,__text  -[CHSWidgetExtension restrictions]
+0x18bdf83d4  __TEXT,__text  -[CHSWidgetExtension orderedControlDescriptors]
+0x18bdf83dc  __TEXT,__text  -[CHSWidgetExtension entitlements]
+0x18bdf83e4  __TEXT,__text  -[CHSWidgetExtension liveActivityDescriptors]
+0x18bdf83ec  __TEXT,__text  -[CHSWidgetExtension .cxx_destruct]
+0x18bdf8460  __TEXT,__text  -[CHSMutableWidgetExtension init]
+0x18bdf8464  __TEXT,__text  -[CHSMutableWidgetExtension copyWithZone:]
+0x18bdf8498  __TEXT,__text  -[CHSMutableWidgetExtension setIdentity:]
+0x18bdf84f8  __TEXT,__text  -[CHSMutableWidgetExtension setLocalizedDisplayName:]
+0x18bdf8558  __TEXT,__text  -[CHSMutableWidgetExtension setContainerBundleLocalizedDisplayName:]
+0x18bdf85b8  __TEXT,__text  -[CHSMutableWidgetExtension setLiveActivityDescriptors:]
+0x18bdf8618  __TEXT,__text  -[CHSMutableWidgetExtension setOrderedWidgetDescriptors:]
+0x18bdf8678  __TEXT,__text  -[CHSMutableWidgetExtension setOrderedControlDescriptors:]
+0x18bdf86d8  __TEXT,__text  -[CHSMutableWidgetExtension setEntitlements:]
+0x18bdf8738  __TEXT,__text  -[CHSMutableWidgetExtension setDataProtectionLevel:]
+0x18bdf8744  __TEXT,__text  -[CHSMutableWidgetExtension setRestrictions:]
+0x18bdf8750  __TEXT,__text  -[CHSApplicationProcessStateChangeConsumer init]
+0x18bdf87c0  __TEXT,__text  -[CHSApplicationProcessStateChangeConsumer initWithConnection:]
+0x18bdf8844  __TEXT,__text  -[CHSApplicationProcessStateChangeConsumer applicationWithBundleIdentifierEnteredForeground:]
+0x18bdf88f8  __TEXT,__text  ___93-[CHSApplicationProcessStateChangeConsumer applicationWithBundleIdentifierEnteredForeground:]_block_invoke
+0x18bdf8a1c  __TEXT,__text  -[CHSApplicationProcessStateChangeConsumer .cxx_destruct]
+0x18bdf8a28  __TEXT,__text  -[CHSLiveActivityDescriptor initWithExtensionIdentity:activityAttributesType:]
+0x18bdf8adc  __TEXT,__text  -[CHSLiveActivityDescriptor _initWithDescriptor:]
+0x18bdf8cc8  __TEXT,__text  -[CHSLiveActivityDescriptor widgetForFamily:activityIdentifier:]
+0x18bdf8d70  __TEXT,__text  -[CHSLiveActivityDescriptor supportsAccentedRenderingModeForFamily:]
+0x18bdf8d84  __TEXT,__text  -[CHSLiveActivityDescriptor isEqual:]
+0x18bdf8fd4  __TEXT,__text  ___37-[CHSLiveActivityDescriptor isEqual:]_block_invoke
+0x18bdf8fec  __TEXT,__text  ___37-[CHSLiveActivityDescriptor isEqual:]_block_invoke_2
+0x18bdf9004  __TEXT,__text  -[CHSLiveActivityDescriptor hash]
+0x18bdf90d4  __TEXT,__text  -[CHSLiveActivityDescriptor description]
+0x18bdf90dc  __TEXT,__text  -[CHSLiveActivityDescriptor succinctDescription]
+0x18bdf912c  __TEXT,__text  -[CHSLiveActivityDescriptor succinctDescriptionBuilder]
+0x18bdf91f4  __TEXT,__text  ___55-[CHSLiveActivityDescriptor succinctDescriptionBuilder]_block_invoke
+0x18bdf921c  __TEXT,__text  -[CHSLiveActivityDescriptor descriptionWithMultilinePrefix:]
+0x18bdf926c  __TEXT,__text  -[CHSLiveActivityDescriptor descriptionBuilderWithMultilinePrefix:]
+0x18bdf9358  __TEXT,__text  ___67-[CHSLiveActivityDescriptor descriptionBuilderWithMultilinePrefix:]_block_invoke
+0x18bdf9588  __TEXT,__text  -[CHSLiveActivityDescriptor copyWithZone:]
+0x18bdf958c  __TEXT,__text  -[CHSLiveActivityDescriptor mutableCopyWithZone:]
+0x18bdf95c0  __TEXT,__text  +[CHSLiveActivityDescriptor supportsSecureCoding]
+0x18bdf95c8  __TEXT,__text  -[CHSLiveActivityDescriptor encodeWithCoder:]
+0x18bdf966c  __TEXT,__text  -[CHSLiveActivityDescriptor initWithCoder:]
+0x18bdf9794  __TEXT,__text  -[CHSLiveActivityDescriptor activityAttributesType]
+0x18bdf97a8  __TEXT,__text  -[CHSLiveActivityDescriptor .cxx_destruct]
+0x18bdf97f0  __TEXT,__text  -[CHSMutableSessionPlatterDescriptor setExtensionIdentity:]
+0x18bdf985c  __TEXT,__text  -[CHSMutableSessionPlatterDescriptor setDisplayName:]
+0x18bdf98c8  __TEXT,__text  -[CHSMutableSessionPlatterDescriptor setWidgetDescription:]
+0x18bdf9934  __TEXT,__text  -[CHSMutableSessionPlatterDescriptor setLocaleToken:]
+0x18bdf99a0  __TEXT,__text  -[CHSMutableSessionPlatterDescriptor setEventMachServiceName:]
+0x18bdf9a0c  __TEXT,__text  -[CHSMutableSessionPlatterDescriptor setActivityAttributesType:]
+0x18bdf9a74  __TEXT,__text  -[CHSMutableSessionPlatterDescriptor setPreferredBackgroundStyle:]
+0x18bdf9a8c  __TEXT,__text  -[CHSMutableSessionPlatterDescriptor setSupportsVibrantContent:]
+0x18bdf9aa4  __TEXT,__text  -[CHSMutableSessionPlatterDescriptor setSdkVersion:]
+0x18bdf9abc  __TEXT,__text  -[CHSMutableSessionPlatterDescriptor setPlatform:]
+0x18bdf9ad4  __TEXT,__text  -[CHSMutableSessionPlatterDescriptor setRequestedDataProtection:]
+0x18bdf9aec  __TEXT,__text  -[CHSMutableSessionPlatterDescriptor setAccentedRenderingModeActivityFamilies:]
+0x18bdf9b54  __TEXT,__text  -[CHSMutableSessionPlatterDescriptor copyWithZone:]
+0x18bdf9b88  __TEXT,__text  -[CHSMutableSessionPlatterDescriptor setExtensionBundleIdentifier:]
+0x18bdf9c60  __TEXT,__text  -[CHSMutableSessionPlatterDescriptor setContainerBundleIdentifier:]
+0x18bdf9d38  __TEXT,__text  -[CHSWidgetRelevanceAttribute init]
+0x18bdf9e08  __TEXT,__text  -[CHSWidgetRelevanceAttribute _init]
+0x18bdf9e40  __TEXT,__text  -[CHSWidgetRelevanceAttribute copyWithZone:]
+0x18bdf9e44  __TEXT,__text  +[CHSWidgetRelevanceAttribute supportsSecureCoding]
+0x18bdf9e4c  __TEXT,__text  -[CHSWidgetRelevanceAttribute initWithCoder:]
+0x18bdf9e50  __TEXT,__text  -[CHSWidgetRelevanceAttribute encodeWithCoder:]
+0x18bdf9fa4  __TEXT,__text  ___NSStringFromCHSWidgetProximities_block_invoke
+0x18bdf9fd4  __TEXT,__text  -[CHSDescriptorEnablementChangeRequest initWithExtensionBundleIdentifier:kind:enabled:]
+0x18bdfa088  __TEXT,__text  +[CHSDescriptorEnablementChangeRequest supportsBSXPCSecureCoding]
+0x18bdfa090  __TEXT,__text  -[CHSDescriptorEnablementChangeRequest encodeWithBSXPCCoder:]
+0x18bdfa114  __TEXT,__text  -[CHSDescriptorEnablementChangeRequest initWithBSXPCCoder:]
+0x18bdfa200  __TEXT,__text  -[CHSDescriptorEnablementChangeRequest extensionBundleIdentifier]
+0x18bdfa208  __TEXT,__text  -[CHSDescriptorEnablementChangeRequest kind]
+0x18bdfa210  __TEXT,__text  -[CHSDescriptorEnablementChangeRequest enabled]
+0x18bdfa218  __TEXT,__text  -[CHSDescriptorEnablementChangeRequest .cxx_destruct]
+0x18bdfa250  __TEXT,__text  -[CHSWidgetConfigurationHostsBox initWithConfigurationsByHost:]
+0x18bdfa2d4  __TEXT,__text  +[CHSWidgetConfigurationHostsBox supportsSecureCoding]
+0x18bdfa2dc  __TEXT,__text  -[CHSWidgetConfigurationHostsBox encodeWithCoder:]
+0x18bdfa2f4  __TEXT,__text  -[CHSWidgetConfigurationHostsBox initWithCoder:]
+0x18bdfa408  __TEXT,__text  -[CHSWidgetConfigurationHostsBox configurationsByHost]
+0x18bdfa410  __TEXT,__text  -[CHSReaperRequest initWithDryRun:scenario:]
+0x18bdfa41c  __TEXT,__text  +[CHSReaperRequest supportsSecureCoding]
+0x18bdfa424  __TEXT,__text  -[CHSReaperRequest encodeWithCoder:]
+0x18bdfa494  __TEXT,__text  -[CHSReaperRequest initWithCoder:]
+0x18bdfa51c  __TEXT,__text  +[CHSReaperRequest supportsBSXPCSecureCoding]
+0x18bdfa524  __TEXT,__text  -[CHSReaperRequest encodeWithBSXPCCoder:]
+0x18bdfa594  __TEXT,__text  -[CHSReaperRequest initWithBSXPCCoder:]
+0x18bdfa61c  __TEXT,__text  -[CHSReaperRequest dryRun]
+0x18bdfa624  __TEXT,__text  -[CHSReaperRequest scenario]
+0x18bdfa62c  __TEXT,__text  -[CHSAppIntentsXPCListenerEndpointProvider initWithBundleIdentifier:]
+0x18bdfa6e0  __TEXT,__text  -[CHSAppIntentsXPCListenerEndpointProvider getAppIntentsXPCListenerEndpointWithCompletion:]
+0x18bdfa6f0  __TEXT,__text  -[CHSAppIntentsXPCListenerEndpointProvider .cxx_destruct]
+0x18bdfa728  __TEXT,__text  -[CHSWidgetRateLimitPolicy isEqual:]
+0x18bdfa7e4  __TEXT,__text  -[CHSWidgetRateLimitPolicy appendDescriptionToFormatter:]
+0x18bdfa890  __TEXT,__text  ___57-[CHSWidgetRateLimitPolicy appendDescriptionToFormatter:]_block_invoke
+0x18bdfa8ec  __TEXT,__text  -[CHSWidgetRateLimitPolicy description]
+0x18bdfa8fc  __TEXT,__text  +[CHSWidgetRateLimitPolicy supportsSecureCoding]
+0x18bdfa904  __TEXT,__text  -[CHSWidgetRateLimitPolicy encodeWithCoder:]
+0x18bdfa994  __TEXT,__text  -[CHSWidgetRateLimitPolicy initWithCoder:]
+0x18bdfab64  __TEXT,__text  -[CHSWidgetRateLimitPolicy identifier]
+0x18bdfab6c  __TEXT,__text  -[CHSWidgetRateLimitPolicy rateLimits]
+0x18bdfab74  __TEXT,__text  -[CHSWidgetDescriptorsBox initWithDescriptors:]
+0x18bdfac14  __TEXT,__text  -[CHSWidgetDescriptorsBox descriptors]
+0x18bdfac9c  __TEXT,__text  -[CHSWidgetDescriptorsBox _performValidation]
+0x18bdfad14  __TEXT,__text  ___45-[CHSWidgetDescriptorsBox _performValidation]_block_invoke
+0x18bdfb29c  __TEXT,__text  +[CHSWidgetDescriptorsBox supportsSecureCoding]
+0x18bdfb2a4  __TEXT,__text  -[CHSWidgetDescriptorsBox encodeWithCoder:]
+0x18bdfb30c  __TEXT,__text  -[CHSWidgetDescriptorsBox initWithCoder:]
+0x18bdfb448  __TEXT,__text  ___41-[CHSWidgetDescriptorsBox initWithCoder:]_block_invoke
+0x18bdfb6a8  __TEXT,__text  -[CHSWidgetDescriptorsBox descriptorsByExtensionIdentifier]
+0x18bdfb6b0  __TEXT,__text  -[CHSWidgetDescriptorsBox .cxx_destruct]
+0x18bdfb6e0  __TEXT,__text  -[CHSWidgetMargins description]
+0x18bdfb6e4  __TEXT,__text  -[CHSWidgetMargins succinctDescription]
+0x18bdfb734  __TEXT,__text  -[CHSWidgetMargins succinctDescriptionBuilder]
+0x18bdfb7fc  __TEXT,__text  ___46-[CHSWidgetMargins succinctDescriptionBuilder]_block_invoke
+0x18bdfb914  __TEXT,__text  -[CHSWidgetMargins descriptionWithMultilinePrefix:]
+0x18bdfb964  __TEXT,__text  -[CHSWidgetMargins descriptionBuilderWithMultilinePrefix:]
+0x18bdfba50  __TEXT,__text  +[CHSWidgetMargins supportsSecureCoding]
+0x18bdfba58  __TEXT,__text  -[CHSWidgetMargins layoutInsets]
+0x18bdfba64  __TEXT,__text  -[CHSWidgetMargins contentMargins]
+0x18bdfba70  __TEXT,__text  -[CHSWidgetMargins backgroundRemovedContentMargins]
+0x18bdfba7c  __TEXT,__text  -[CHSEntitlementCollection _initFromCollection:]
+0x18bdfbb08  __TEXT,__text  -[CHSEntitlementCollection isEqual:]
+0x18bdfbbcc  __TEXT,__text  -[CHSEntitlementCollection hash]
+0x18bdfbbfc  __TEXT,__text  -[CHSEntitlementCollection copyWithZone:]
+0x18bdfbc00  __TEXT,__text  -[CHSEntitlementCollection mutableCopyWithZone:]
+0x18bdfbc34  __TEXT,__text  +[CHSEntitlementCollection supportsSecureCoding]
+0x18bdfbc3c  __TEXT,__text  -[CHSEntitlementCollection encodeWithCoder:]
+0x18bdfbcd4  __TEXT,__text  -[CHSEntitlementCollection initWithCoder:]
+0x18bdfbdb0  __TEXT,__text  -[CHSEntitlementCollection description]
+0x18bdfbdb8  __TEXT,__text  -[CHSEntitlementCollection succinctDescription]
+0x18bdfbdbc  __TEXT,__text  -[CHSEntitlementCollection succinctDescriptionBuilder]
+0x18bdfbdc4  __TEXT,__text  -[CHSEntitlementCollection descriptionWithMultilinePrefix:]
+0x18bdfbe14  __TEXT,__text  -[CHSEntitlementCollection descriptionBuilderWithMultilinePrefix:]
+0x18bdfbedc  __TEXT,__text  ___66-[CHSEntitlementCollection descriptionBuilderWithMultilinePrefix:]_block_invoke
+0x18bdfbf70  __TEXT,__text  -[CHSEntitlementCollection usesEventService]
+0x18bdfbf78  __TEXT,__text  -[CHSEntitlementCollection canOpenSystemURLs]
+0x18bdfbf80  __TEXT,__text  -[CHSEntitlementCollection canKeepAlive]
+0x18bdfbf88  __TEXT,__text  -[CHSEntitlementCollection invalidatesOnStorefrontChange]
+0x18bdfbf90  __TEXT,__text  -[CHSMutableEntitlementCollection copyWithZone:]
+0x18bdfbfc4  __TEXT,__text  -[CHSMutableEntitlementCollection setUsesEventService:]
+0x18bdfbfcc  __TEXT,__text  -[CHSMutableEntitlementCollection setCanOpenSystemURLs:]
+0x18bdfbfd4  __TEXT,__text  -[CHSMutableEntitlementCollection setCanKeepAlive:]
+0x18bdfbfdc  __TEXT,__text  -[CHSMutableEntitlementCollection setInvalidatesOnStorefrontChange:]
+0x18bdfbfe4  __TEXT,__text  -[CHSScreenshotPresentationAttributes hash]
+0x18bdfc06c  __TEXT,__text  -[CHSScreenshotPresentationAttributes isEqual:]
+0x18bdfc4e0  __TEXT,__text  ___47-[CHSScreenshotPresentationAttributes isEqual:]_block_invoke
+0x18bdfc4ec  __TEXT,__text  ___47-[CHSScreenshotPresentationAttributes isEqual:]_block_invoke_2
+0x18bdfc4f8  __TEXT,__text  ___47-[CHSScreenshotPresentationAttributes isEqual:]_block_invoke_3
+0x18bdfc504  __TEXT,__text  ___47-[CHSScreenshotPresentationAttributes isEqual:]_block_invoke_4
+0x18bdfc510  __TEXT,__text  ___47-[CHSScreenshotPresentationAttributes isEqual:]_block_invoke_5
+0x18bdfc51c  __TEXT,__text  ___47-[CHSScreenshotPresentationAttributes isEqual:]_block_invoke_6
+0x18bdfc528  __TEXT,__text  ___47-[CHSScreenshotPresentationAttributes isEqual:]_block_invoke_7
+0x18bdfc534  __TEXT,__text  -[CHSScreenshotPresentationAttributes colorScheme]
+0x18bdfc53c  __TEXT,__text  -[CHSScreenshotPresentationAttributes allowsContentPreferredColorScheme]
+0x18bdfc544  __TEXT,__text  -[CHSScreenshotPresentationAttributes allowsPrivacySensitiveContent]
+0x18bdfc54c  __TEXT,__text  -[CHSScreenshotPresentationAttributes userWantsWidgetDataWhenPasscodeLocked]
+0x18bdfc554  __TEXT,__text  -[CHSScreenshotPresentationAttributes tintParameters]
+0x18bdfc55c  __TEXT,__text  -[CHSScreenshotPresentationAttributes additionalSettingsContext]
+0x18bdfc564  __TEXT,__text  -[CHSScreenshotPresentationAttributes idealizedDateComponents]
+0x18bdfc56c  __TEXT,__text  -[CHSMutableScreenshotPresentationAttributes setColorScheme:]
+0x18bdfc574  __TEXT,__text  -[CHSMutableScreenshotPresentationAttributes setAllowsContentPreferredColorScheme:]
+```
+First 1,000 of 3,247.
+

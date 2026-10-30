@@ -1,0 +1,1612 @@
+# `com.apple.driver.AppleBasebandINT1`
+
+- Name: AppleBasebandINT1
+- Version: `1.0.0d1`
+- UUID: `BF7B7CD0-A74A-3F21-BEF2-9820F7DF7CB3`
+- Source version: `1120.0.0.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleEmbeddedPCIE`](com.apple.driver.AppleEmbeddedPCIE.md) 1.0.0, [`com.apple.driver.AppleOnboardSerial`](com.apple.driver.AppleOnboardSerial.md) 1.0, [`com.apple.driver.AppleSMC`](com.apple.driver.AppleSMC.md) 1.0.0, [`com.apple.iokit.CoreAnalyticsFamily`](com.apple.iokit.CoreAnalyticsFamily.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (3) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/aop-spmi0/baseband-heb`](../devicetree/root__arm-io__aop-spmi0__baseband-heb.md) | `AppleBasebandSPMIHEB` | `baseband,heb` |
+| [`/arm-io/aop-spmi1/baseband-idc`](../devicetree/root__arm-io__aop-spmi1__baseband-idc.md) | `AppleBasebandSPMIHEB` | `baseband,idc` |
+| [`/baseband`](../devicetree/root__baseband.md) | `AppleBasebandINT1` | `baseband,int1` |
+
+## IOKit personalities (3) [KC]
+
+### AppleBasebandINT1
+- `CFBundleIdentifier`: `com.apple.driver.AppleBasebandINT1`
+- `IOClass`: `AppleBasebandINT1`
+- `IOMatchCategory`: `AppleBaseband`
+- `IONameMatch`: `baseband,int1`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleBasebandINT1`
+- `IOProviderClass`: `IOPlatformDevice`
+- `IOUserClientClass`: `AppleBasebandUserClient`
+
+### AppleBasebandSPMIHEB
+- `CFBundleIdentifier`: `com.apple.driver.AppleBasebandINT1`
+- `IOClass`: `AppleBasebandSPMIHEB`
+- `IOMatchCategory`: `AppleBasebandSPMIHEB`
+- `IONameMatch`: `baseband,heb`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleBasebandINT1`
+- `IOProviderClass`: `AppleARMSPMIDevice`
+
+### AppleBasebandSPMIIDC
+- `CFBundleIdentifier`: `com.apple.driver.AppleBasebandINT1`
+- `IOClass`: `AppleBasebandSPMIHEB`
+- `IOMatchCategory`: `AppleBasebandSPMIHEB`
+- `IONameMatch`: `baseband,idc`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleBasebandINT1`
+- `IOProviderClass`: `AppleARMSPMIDevice`
+
+
+## C++ classes (16) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleBaseband` | 0xd8 | IOService → IORegistryEntry |
+| `AppleBasebandBackpowering` | 0x98 | IOService → IORegistryEntry |
+| `AppleBasebandINT1` | 0x3e8 | AppleBasebandPCIEDevice → AppleBasebandPlatform → AppleBaseband → IOService → IORegistryEntry |
+| `AppleBasebandLogging` | 0x10 |  |
+| `AppleBasebandPCIEDevice` | 0x350 | AppleBasebandPlatform → AppleBaseband → IOService → IORegistryEntry |
+| `AppleBasebandPPM` | 0x100 | IOService → IORegistryEntry |
+| `AppleBasebandPlatform` | 0x308 | AppleBaseband → IOService → IORegistryEntry |
+| `AppleBasebandSPMI` | 0x140 | IOService → IORegistryEntry |
+| `AppleBasebandSPMIHEB` | 0x150 | AppleBasebandSPMI → IOService → IORegistryEntry |
+| `AppleBasebandSPMITransport` | 0x100 | IOService → IORegistryEntry |
+| `AppleBasebandUserClient` | 0x128 | IOUserClient → IOService → IORegistryEntry |
+| `PPMClient` | 0x58 |  |
+| `PPMClientDAL` | 0x60 | PPMClient |
+| `PPMClientINT` | 0x58 | PPMClient |
+| `PPMClientMAV` | 0x58 | PPMClient |
+| `SPMIInterruptBufferHelper` | 0x20 |  |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x00013bb8 off=0x00395cd0-0x003a9888 addr=0xfffffe0007399cd0-0xfffffe00073ad888 r--/r--   __TEXT            
+	sz=0x0000a080 off=0x003963e8-0x003a0468 addr=0xfffffe000739a3e8-0xfffffe00073a4468               __TEXT.__cstring          (CstringLiterals)
+	sz=0x00009146 off=0x003a0468-0x003a95ae addr=0xfffffe00073a4468-0xfffffe00073ad5ae               __TEXT.__os_log           
+	sz=0x000002d8 off=0x003a95b0-0x003a9888 addr=0xfffffe00073ad5b0-0xfffffe00073ad888               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x00045c30 off=0x019a6f40-0x019ecb70 addr=0xfffffe00089aaf40-0xfffffe00089f0b70 r-x/r-x   __TEXT_EXEC       
+	sz=0x00045690 off=0x019a6f40-0x019ec5d0 addr=0xfffffe00089aaf40-0xfffffe00089f05d0          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000005a0 off=0x019ec5d0-0x019ecb70 addr=0xfffffe00089f05d0-0xfffffe00089f0b70          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00000731 off=0x04933590-0x04933cc1 addr=0xfffffe000b937590-0xfffffe000b937cc1 rw-/rw-   __DATA            
+	sz=0x000001f0 off=0x04933590-0x04933780 addr=0xfffffe000b937590-0xfffffe000b937780               __DATA.__data             
+	sz=0x000002a0 off=0x00000000-0x000002a0 addr=0xfffffe000b937780-0xfffffe000b937a20               __DATA.__common           (Zerofill)
+	sz=0x000002a1 off=0x00000000-0x000002a1 addr=0xfffffe000b937a20-0xfffffe000b937cc1               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00006840 off=0x00fef9d0-0x00ff6210 addr=0xfffffe0007ff39d0-0xfffffe0007ffa210 rw-/rw-   __DATA_CONST      
+	sz=0x00000088 off=0x00fef9d0-0x00fefa58 addr=0xfffffe0007ff39d0-0xfffffe0007ff3a58         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000088 off=0x00fefa58-0x00fefae0 addr=0xfffffe0007ff3a58-0xfffffe0007ff3ae0         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00005aa8 off=0x00fefae0-0x00ff5588 addr=0xfffffe0007ff3ae0-0xfffffe0007ff9588         __DATA_CONST.__const            
+	sz=0x00000540 off=0x00ff5588-0x00ff5ac8 addr=0xfffffe0007ff9588-0xfffffe0007ff9ac8         __DATA_CONST.__kalloc_type      
+	sz=0x000003c0 off=0x00ff5ac8-0x00ff5e88 addr=0xfffffe0007ff9ac8-0xfffffe0007ff9e88         __DATA_CONST.__kalloc_var       
+	sz=0x000002d0 off=0x00ff5e88-0x00ff6158 addr=0xfffffe0007ff9e88-0xfffffe0007ffa158         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000b8 off=0x00ff6158-0x00ff6210 addr=0xfffffe0007ffa158-0xfffffe0007ffa210         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 203 at 0x04ad3b10
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     BF7B7CD0-A74A-3F21-BEF2-9820F7DF7CB3
+008: LC_SOURCE_VERSION           1120.0.0.0.0
+009: LC_FUNCTION_STARTS          offset=0x004a9a618 size=0x490
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleBasebandINT1`
+- `CFBundleIdentifier`: `com.apple.driver.AppleBasebandINT1`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleBasebandINT1`
+- `CFBundleNumericVersion`: `16785409`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0.0`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1.0.0d1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2021 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.0d1`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+  - `2`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleBasebandINT1.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198902039344`
+- `_PrelinkExecutableRelativePath`: `AppleBasebandINT1`
+- `_PrelinkExecutableSize`: `395097`
+- `_PrelinkExecutableSourceAddr`: `-2198902039344`
+- `_PrelinkKmodInfo`: `-2198829042288`
+
+## Strings (1454) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__os_log]**
+
+- `%06ld.%06d %s::%s: Updating power measurement report period to %u\n`
+- `%06ld.%06d %s::%s: \tPopulating power measurement value: %u\n`
+- `%06ld.%06d %s::%s: invalid baseband device ID = %u, populating baseband with unknown values\n`
+- `%06ld.%06d %s::%s: Got data of unknown type (%u)\n`
+- `%06ld.%06d %s::%s: Admission check on %s's client failed (ret = %d)\n`
+- `%06ld.%06d %s::%s: Disabling port\n`
+- `%06ld.%06d %s::%s: Found matching SPMI device: %s`
+- `%06ld.%06d %s::%s: Failed to get matching dictionary for %s!`
+- `%06ld.%06d %s::%s: [IDC] Failed to read SPMI data @ (0x%x), result: 0x%x\n`
+- `%06ld.%06d %s::%s: SPMI-Ready signal was detected\n`
+- `%06ld.%06d %s::%s: [%s] Failed to get SPMI object!\n`
+- `%06ld.%06d %s::%s: Initialized client %s\n`
+- `%06ld.%06d %s::%s: Power off timer cancelled\n`
+- `%06ld.%06d %s::%s: Could not find pcie_port_control function!\n`
+- `%06ld.%06d %s::%s: Initial Values: Max Budget: %u mW, Idle Budget: %u mW, Low Budget: %u mW\n`
+- `%06ld.%06d %s::%s: Invalid OCP data (ret: 0x%x): Unable to print data: needed %u bytes (data size = %u bytes with %u bytes needed to print each byte) and but only have %u bytes available\n`
+- `%06ld.%06d %s::%s: SPMI-Ready signal was not detected yet!\n`
+- `%06ld.%06d %s::%s: Thermal budget of zero detected, reporting brick mode\n`
+- `%s: %s failed to allocate deviceIDmap\n`
+- `%06ld.%06d %s::%s: Failed to trigger GPR0 (0x%x) for interrupt index (%d) with ret (0x%x)\n`
+- `%06ld.%06d %s::%s: clearFreqListInstGated, instance bitmask is set to 0`
+- `%06ld.%06d %s::%s: Triggering coredump via user client\n`
+- `%06ld.%06d %s::%s: Sending billboard WAKE_1 interrupt\n`
+- `%06ld.%06d %s::%s: Failed to get %s matching dictionary\n`
+- `%06ld.%06d %s::%s: Failed to find %s device!`
+- `%06ld.%06d %s::%s: Unknown interface ID: %u\n`
+- `%06ld.%06d %s::%s: Invalid OCP data (ret: 0x%x): Received Payload: %s\n`
+- `%06ld.%06d %s::%s: Interrupt Index %d is attaching\n`
+- `%06ld.%06d %s::%s: Number of budgets for client %s: %u\n`
+- `%06ld.%06d %s::%s: baseband warm-reset delay ms=%u\n`
+- `%06ld.%06d %s::%s: Done, success = %d\n`
+- `%06ld.%06d %s::%s: Failed to send OCP data to %s\n`
+- `%06ld.%06d %s::%s: Aborting SPMI data write due to NULL data`
+- `%06ld.%06d %s::%s: port left enabled during speed change, bailing\n`
+- `%06ld.%06d %s::%s: SPMI retry attempt: %u\n`
+- `%06ld.%06d %s::%s: Succeeded sending billboard data\n`
+- `%s: Failed to get baseband chip set string.\n`
+- `%06ld.%06d %s::%s: Baseband SPMI is not ready, not sending budget yet\n`
+- `%06ld.%06d %s::%s: Billboard writing interrupt source is not ready yet\n`
+- `%06ld.%06d %s::%s: radio already powered ON, `
+- `%06ld.%06d %s::%s: Number of budgets: %u\n`
+- `%06ld.%06d %s::%s: Wake state - param: %u index: %d, wake: %sACTIVE, pull-down: %s, interrupt source: not-available\n`
+- `%06ld.%06d %s::%s: Nothing to send billboard region\n`
+- `%06ld.%06d %s::%s: device missing\n`
+- `%06ld.%06d %s::%s: coredump ready\n`
+- `%06ld.%06d %s::%s: Number of updates: %u\n`
+- `%06ld.%06d %s::%s: Received billboard INIT_DONE interrupt\n`
+- `%06ld.%06d %s::%s: thread has been called already!\n`
+- `%06ld.%06d %s::%s: Delay 1 msec between WAKE and PAYLOAD`
+- `%06ld.%06d %s::%s: No config data found\n`
+- `%06ld.%06d %s::%s: Not implemented\n`
+- `%06ld.%06d %s::%s: HEB driver is not ready, returning without writing to billboard\n`
+- `%06ld.%06d %s::%s: The number of sensor (%u) cannot be exceeded to the max of SMC (%u)\n`
+- `%06ld.%06d %s::%s: Primary Provider = %p: %s\n`
+- `%06ld.%06d %s::%s: Updating budget for client %s`
+- `%06ld.%06d %s::%s: \tPower estimation - thermal 4 average power: %umW\n`
+- `%06ld.%06d %s::%s: %d\n`
+- `%06ld.%06d %s::%s: radio not found\n`
+- `%06ld.%06d %s::%s: Reporting Power Esitmation\n`
+- `%06ld.%06d %s::%s: Received NULL OCP data\n`
+- `%06ld.%06d %s::%s: failed port enable (0x%x), power cycling and retrying\n`
+- `%06ld.%06d %s::%s: Unable to handle unknown budget update reason (%d)\n`
+- `%06ld.%06d %s::%s: Invalid workloop\n`
+- `%06ld.%06d %s::%s: Sensor report is not available.`
+- `%06ld.%06d %s::%s: Update report is not supported for this vendor\n`
+- `%06ld.%06d %s::%s: \tThermal sensor ID %u, value: %u\n`
+- `%06ld.%06d %s::%s: Successfully received a fresh budget from client %s\n`
+- `%06ld.%06d %s::%s: Failed to get updateDict for client %s\n`
+- `%06ld.%06d %s::%s: Failed to allocate power off timer\n`
+- `%06ld.%06d %s::%s: link bandwidth changed\n`
+- `%06ld.%06d %s::%s: Reporting Thermal Data\n`
+- `%06ld.%06d %s::%s: budgetDict is NULL`
+- `%06ld.%06d %s::%s: Not updating policy because it's already %s\n`
+- `%06ld.%06d %s::%s: Unable to send wake signal, ret: 0x%x\n`
+- `%06ld.%06d %s::%s: using sw warm reset\n`
+- `%06ld.%06d %s::%s: Updating thermal report period to %u\n`
+- `%06ld.%06d %s::%s: Registering PPM\n`
+- `%06ld.%06d %s::%s: \tPower measurement - averaged power: %umW\n`
+- `%06ld.%06d %s::%s: failed to drive BB_PMU_PON pin HIGH, error: 0x%08x\n`
+- `%06ld.%06d %s::%s: Received power measurement report\n`
+- `%06ld.%06d %s::%s: Received NULL report pointer\n`
+- `%06ld.%06d %s::%s: Could not find wake interrupt\n`
+- `%06ld.%06d %s::%s: Invalid SPMI HEB object, coredump will not be triggered\n`
+- `%06ld.%06d %s::%s: Failed to create SPMI interrupt event for %s\n`
+- `%06ld.%06d %s::%s: Error while writing to billboard, resetting billboard ready flag to true\n`
+- `%06ld.%06d %s::%s: Failed to setup CPMS service!\n`
+- `%06ld.%06d %s::%s: Failed to get client %s\n`
+- `%06ld.%06d %s::%s: Current Baseband Power State: %s\n`
+- `%06ld.%06d %s::%s: Baseband woke AP\n`
+- `%06ld.%06d %s::%s: bailing\n`
+- `%06ld.%06d %s::%s: \tPower estimation - 1 millisecond average power: %umW\n`
+- `%06ld.%06d %s::%s: Invalid wake dual-config EDT entries\n`
+- `%06ld.%06d %s::%s: options: 0x%08X, portTransitionDelayMilliseconds: %llu\n`
+- `%06ld.%06d %s::%s: Failed to communicate with SAR Service KEXT instance (ret: 0x%x)\n`
+- `%06ld.%06d %s::%s: Failed reading data\n`
+- `%06ld.%06d %s::%s: \tPower estimation - thermal 2 average power: %umW\n`
+- `%06ld.%06d %s::%s: Wake interrupt source changed: %s -> enabled\n`
+- `%06ld.%06d %s::%s: Received billboard WAKE_DONE interrupt\n`
+- `%06ld.%06d %s::%s: Updating power estimate report period to %u\n`
+- `%06ld.%06d %s::%s: Provider = %p: %s\n`
+- `%s: Failed to get \"%s\" property name!\n\n`
+- `%06ld.%06d %s::%s: Succeeded reading data\n`
+- `%06ld.%06d %s::%s: Output parameter, result is NULL!\n`
+- `%06ld.%06d %s::%s: Failed to create client dictionary`
+- `%06ld.%06d %s::%s: Marking client %s's data as stale`
+- `%06ld.%06d %s::%s: Triggering a coredump via kernel\n`
+- `%06ld.%06d %s::%s: Failed to trigger SPMI coredump interrupt, ret = 0x%x\n`
+- `%06ld.%06d %s::%s: PPM instance is gone\n`
+- `%06ld.%06d %s::%s: Unknown type (0x%02x) to report SMC!\n`
+- `%06ld.%06d %s::%s: SPMI setup has already been done\n`
+- `%06ld.%06d %s::%s: AP awake interrupt triggered successfully\n`
+- `%06ld.%06d %s::%s: failed to crash modem with spmi, error: 0x%08x\n`
+- `%06ld.%06d %s::%s: Already broadcast kAppleBasebandMessageStewieTransmitLowPower`
+- `%06ld.%06d %s::%s: radio already powered OFF, `
+- `%06ld.%06d %s::%s: Received SPMI Write Ready!\n`
+- `%06ld.%06d %s::%s: HEB SPMI Device is NULL!\n`
+- `%06ld.%06d %s::%s: Failed to get SMC driver!\n`
+- `%06ld.%06d %s::%s: %s service is registered for the userclient receiver\n`
+- `%06ld.%06d %s::%s: SPMI driver has not been created yet? (index: %d)\n`
+- `%06ld.%06d %s::%s: [%s] Reading Message Buffer with OCP\n`
+- `%06ld.%06d %s::%s: null command\n`
+- `%06ld.%06d %s::%s: Billboard buffer is not ready yet\n`
+- `%06ld.%06d %s::%s: Performing async budget update\n`
+- `%06ld.%06d %s::%s: Failed to setup thread %s`
+- `%06ld.%06d %s::%s: Billboard writing interrupt source has been removed due to driver shutdown\n`
+- `%s: AppleBasebandSPMITransport: %s fired!\n`
+- `%06ld.%06d %s::%s: Loaded baseband-dynamic-vdd-clk=%u\n`
+- `%06ld.%06d %s::%s: AP already in brick mode, not updating data`
+- `%06ld.%06d %s::%s: radio already powered OFF\n`
+- `%06ld.%06d %s::%s: updating Baseband Power State from %s to %s\n`
+- `%06ld.%06d %s::%s: Manager state changing: %s -> %s\n`
+- `%06ld.%06d %s::%s: Wake signal sent successfully\n`
+- `%06ld.%06d %s::%s: enable %u, failure fatal: %u\n`
+- `%06ld.%06d %s::%s: [%s] Succeeded triggering SPMI event 0x%x\n`
+- `%06ld.%06d %s::%s: 0x%x type cannot be handled!\n`
+- `%06ld.%06d %s::%s: Client Owner: %d, count: %d\n`
+- `%06ld.%06d %s::%s: Failed to trigger AP sleep interrupt, ret = 0x%x\n`
+- `%06ld.%06d %s::%s: Could not find optional %s\n`
+- `%06ld.%06d %s::%s: [%s] Writing billboard with sequence number: %u\n`
+- `%06ld.%06d %s::%s: \tPower estimation - 1 second average power: %umW\n`
+- `%06ld.%06d %s::%s: Returning without performing any action because the buffer is not ready yet\n`
+- `%06ld.%06d %s::%s: Failed to register client %s\n`
+- `%06ld.%06d %s::%s: property \"radio-devid-chipid-map\" devid %x, chipid %x\n`
+- `%06ld.%06d %s::%s: Sequence Number: %u\n`
+- `%06ld.%06d %s::%s: [%s] [try: %u] Writing SPMI data to BB at 0x%x:\n`
+- `%06ld.%06d %s::%s: All CommCenter clients are gone, powering radio off\n`
+- `%06ld.%06d %s::%s: Enabling port\n`
+- `%06ld.%06d %s::%s: warm reset via precise PMU toggle succeeded (desired assert time: %u ms)\n`
+- `%06ld.%06d %s::%s: Failed writing the data to SMC: %d\n`
+- `%06ld.%06d %s::%s: [%s] Reading SPMI data from BB with size of %lu at 0x%x:\n`
+- `%06ld.%06d %s::%s: Current baseband mode is off, skipping admission check\n`
+- `%06ld.%06d %s::%s: Broadcasting message %s to user space\n`
+- `%06ld.%06d %s::%s: Could not find reset detect interrupt\n`
+- `%06ld.%06d %s::%s: %s\n`
+- `%06ld.%06d %s::%s: Number of Data: %u\n`
+- `%06ld.%06d %s::%s: [%s] Succeeded writing SPMI data @ (0x%x)\n`
+- `%06ld.%06d %s::%s: nothing to do: fPortPower is already %u\n`
+- `%06ld.%06d %s::%s: Failed to register PPM: client registration attempt returned 0x%08x\n`
+- `%06ld.%06d %s::%s: Updating %s, array count: %u`
+- `%06ld.%06d %s::%s: \"%s\"\n`
+- `%06ld.%06d %s::%s: %s: %d\n`
+- `%06ld.%06d %s::%s: Device is in brick mode, skipping report config update`
+- `%06ld.%06d %s::%s: Already broadcast kAppleBasebandMessageStewieTransmit`
+- `%06ld.%06d %s::%s: Received SPMI HEB Ready Interrupt Handler signal\n`
+- `%06ld.%06d %s::%s: [%s] The OCP buffer payload length (%u) should not be beyond %u\n`
+- `%06ld.%06d %s::%s: \tPower estimation - thermal 1 average power: %umW\n`
+- `%s: Failed to get \"%s\" property\n\n`
+- `%06ld.%06d %s::%s: Failed to trigger coredump via user client (ret: 0x%x), falling back to kernel method\n`
+- `%06ld.%06d %s::%s: Succeeded in writing the data to SMC\n`
+- `%06ld.%06d %s::%s: OCP Magic Word does not match! OCP Magic Word: (0x%x)(expect: 0x%x) (0x%x)(expect: 0x%x) (0x%x)(expect: 0x%x)\n`
+- `%06ld.%06d %s::%s: SAR Service instance is registered already\n`
+- `%06ld.%06d %s::%s: [%s] Failed to write SPMI data @ (0x%x), result: 0x%x\n`
+- `%06ld.%06d %s::%s: The number of budgets (%u) exceeds the max billboard payload number (%u) for client %s\n`
+- `%06ld.%06d %s::%s: set chipset unknown property? %d\n`
+- `%06ld.%06d %s::%s: The number of budgets (%u) exceeds the max billboard payload number (%u)\n`
+- `%06ld.%06d %s::%s: Budget parameter is NULL\n`
+- `%06ld.%06d %s::%s: %d - callFunction delay %llu ns\n`
+- `%06ld.%06d %s::%s: Not supported`
+- `%06ld.%06d %s::%s: AP is going to sleep, will detach all SPMI interrupts`
+- `%06ld.%06d %s::%s: using hw warm reset\n`
+- `%06ld.%06d %s::%s: failed to drive BB_PMU_PON pin LOW, error: 0x%08x\n`
+- `%06ld.%06d %s::%s: Successfully created %s\n`
+- `%s: deviceID %x did not match any entry in static map; setting unknown properties\n\n`
+- `%06ld.%06d %s::%s: ignoring\n`
+- `%06ld.%06d %s::%s: options: 0x%08X, pulseWidth: %llu, portTransitionDelayMilliseconds: %llu\n`
+- `%06ld.%06d %s::%s: PPM instance gone!`
+- `%06ld.%06d %s::%s: Wrote billboard data successfully\n`
+- `%06ld.%06d %s::%s: Received Tx start\n`
+- `%06ld.%06d %s::%s: Requested budget for client %u, peak power budget: %u, %u, %u\n`
+- `%06ld.%06d %s::%s: Wake GPIO dual-config missing in EDT`
+- `%06ld.%06d %s::%s: Failed to find the interrupt helper for the index, %d\n`
+- `%06ld.%06d %s::%s: Registered\n`
+- `%06ld.%06d %s::%s: failed first port enable -- assume baseband is missing and populate baseband node with unknown values\n`
+- `%06ld.%06d %s::%s: Failed to get PPMClient class for %s\n`
+- `%06ld.%06d %s::%s: addFreqListInstGated, instance bitmask is set to 0`
+- `%06ld.%06d %s::%s: Manager state never settled, powering radio off\n`
+- `%s: property \"radio-devid-chipid-map\" does not have the expected type. it is a %s\n\n`
+- `%06ld.%06d %s::%s: enable: %u, ret: 0x%08x\n`
+- `%06ld.%06d %s::%s: AP sleep interrupt triggered successfully, detaching all SPMI interrupts now\n`
+- `%06ld.%06d %s::%s: invalid operation, cannot warm reset from Off state\n`
+- `%06ld.%06d %s::%s: interface (%d) is not ready. IRQ (0x%x) is rejected.\n`
+- `%06ld.%06d %s::%s: [%s] The OCP buffer payload Length (%u) should not be beyond %u\n`
+- `%06ld.%06d %s::%s: Unable to handle unknown timescale (%d)\n`
+- `%06ld.%06d %s::%s: SMC driver is not ready!`
+- `%s: Failed to get product\n\n`
+- `%06ld.%06d %s::%s: Failed writing data\n`
+- `%06ld.%06d %s::%s: failed port enable, but not panicking\n`
+- `%06ld.%06d %s::%s: Crashing baseband due to %u failed billboard transactions\n`
+- `%06ld.%06d %s::%s: 0x%x type is not supported\n`
+- `%06ld.%06d %s::%s: Updating budget of unrecognized client %s\n`
+- `%06ld.%06d %s::%s: Failed to send billboard data\n`
+- `%06ld.%06d %s::%s: Baseband reset detected but endpoint is missing! Ignoring...\n`
+- `%06ld.%06d %s::%s: powercycling baseband\n`
+- `%06ld.%06d %s::%s: AP absolute time before rising GPIO: %llu. After rising GPIO: %llu\n`
+- `%06ld.%06d %s::%s: Resetting endpoint missing variable\n`
+- `%06ld.%06d %s::%s: [%s] Writing Message Buffer with OCP\n`
+- `%06ld.%06d %s::%s: Triggering %s interrupt\n`
+- `%06ld.%06d %s::%s: reset detected, baseband power: %s\n`
+- `%06ld.%06d %s::%s: baseband cold-reset delay ms=%u\n`
+- `%06ld.%06d %s::%s: Current Baseband Power State: %s, force: %s\n`
+- `%06ld.%06d %s::%s: Failed to proceed the buffer address, 0x%x (buffer: %p, bufferSize: %lu)\n`
+- `%06ld.%06d %s::%s: sleeping until PCI driver finds me\n`
+- `%06ld.%06d %s::%s: baseband already in warm reset state\n`
+- `%06ld.%06d %s::%s: warm reset falling back to software GPIO assertion (%u ms)\n`
+- `%06ld.%06d %s::%s: Not in skipper stack, skipping interrupt handling`
+- `%06ld.%06d %s::%s: Billboard update available but BB is asleep, sending wake signal now\n`
+- `%06ld.%06d %s::%s: ID: %d, Status: %s, Reporting Thermal Data: %f (0x%x)`
+- `%06ld.%06d %s::%s: Failed to get timescale for client %s`
+- `%s: Failed to get baseband information\n`
+- `%06ld.%06d %s::%s: Failed to read buffer address (0x%x) for interrupt index (%d) with ret (0x%x)\n`
+- `%06ld.%06d %s::%s: [%s] baseband OCP sequence number is %u while expecting number %u. Updating the next expecting number to %u\n`
+- `%06ld.%06d %s::%s: wake asserted\n`
+- `%06ld.%06d %s::%s: enable sleep %u\n`
+- `%06ld.%06d %s::%s: Aborting billboard write due to %s state\n`
+- `%06ld.%06d %s::%s: Warning: Client IOService is not registered yet!\n`
+- `%06ld.%06d %s::%s: Baseband state check: %s\n`
+- `%06ld.%06d %s::%s: failed to set desired link speed: 0x%08x\n`
+- `%06ld.%06d %s::%s: Sleeping for %llu ms after powering on\n`
+- `%06ld.%06d %s::%s: \n`
+- `%06ld.%06d %s::%s: Requesting thermal data report\n`
+- `%s: There is no data to copy for the property, \"%s\"\n`
+- `%06ld.%06d %s::%s: Could not find matching %s device!`
+- `%06ld.%06d %s::%s: Failed to call client (ret: 0x%x)\n`
+- `%06ld.%06d %s::%s: Requesting power estimation report\n`
+- `%06ld.%06d %s::%s: data type: %s, mask: 0x%x`
+- `%06ld.%06d %s::%s: Found %s at %p\n`
+- `%06ld.%06d %s::%s: Failed to get client %s`
+- `%06ld.%06d %s::%s: Received NULL bytes pointer\n`
+- `%06ld.%06d %s::%s: PCI driver is not up, error: 0x%08x\n`
+- `%06ld.%06d %s::%s: Failed to get updateArray\n`
+- `%06ld.%06d %s::%s: Setting panic enabled to %s\n`
+- `%06ld.%06d %s::%s: Unable to handle unknown report type 0x%x\n`
+- `%06ld.%06d %s::%s: Failed to create copy array for client %s`
+- `%s: Failed to allocate radio info memory.\n`
+- `%06ld.%06d %s::%s: Invalid SPMI HEB object`
+- `%s: %s fired with NULL transport object\n`
+- `%06ld.%06d %s::%s: Failed waiting for %s\n`
+- `%06ld.%06d %s::%s: Changing policy from %s to %s`
+- `%06ld.%06d %s::%s: pci service is %p\n`
+- `%06ld.%06d %s::%s: Coredump triggered successfully via kernel\n`
+- `%06ld.%06d %s::%s: Loaded baseband-auto-on=%u\n`
+- `%06ld.%06d %s::%s: Invalid SPMI bus\n`
+- `%06ld.%06d %s::%s: Failed to report to SMC (ret: 0x%x)\n`
+- `%06ld.%06d %s::%s: Updating Stewie state from %s to %s\n`
+- `%06ld.%06d %s::%s: %u\n`
+- `%06ld.%06d %s::%s: Received a WAKE_DONE signal from BB when in %s state, dropping the signal\n`
+- `%06ld.%06d %s::%s: All checks passed, proceeding to write a billboard message to the buffer\n`
+- `%06ld.%06d %s::%s: Succeeded getting SPMI HEB Ready interrupt source! (%p)\n`
+- `%06ld.%06d %s::%s: Version: %u\n`
+- `%06ld.%06d %s::%s: Received thermal data report\n`
+- `%06ld.%06d %s::%s: Got NULL client for key %s\n`
+- `%06ld.%06d %s::%s: HEB driver is not ready, not sending budget yet\n`
+- `%06ld.%06d %s::%s: Failed to get %s!\n`
+- `%06ld.%06d %s::%s: thread call failed with 0x%08x\n`
+- `%06ld.%06d %s::%s: Failed to receive OCP data\n`
+- `%s: Succeeded reading property of %s with the value (0x%x)\n`
+- `%06ld.%06d %s::%s: wake de-asserted\n`
+- `%06ld.%06d %s::%s: Billboard update available but already triggered a wake, returning without performing any action\n`
+- `%06ld.%06d %s::%s: [IDC] Failed to write SPMI data @ (0x%x), result: 0x%x\n`
+- `%06ld.%06d %s::%s: No isr is registered!\n`
+- `%06ld.%06d %s::%s: Failed to prepare ppm budget parameters`
+- `%06ld.%06d %s::%s: clientBudgetUpdates is NULL\n`
+- `%06ld.%06d %s::%s: null CoreAnalytics service\n`
+- `%06ld.%06d %s::%s: SAR Service KEXT instance is not ready\n`
+- `%06ld.%06d %s::%s: Could not find matching SPMI device: %s\n`
+- `%06ld.%06d %s::%s: Received NULL input struct`
+- `%06ld.%06d %s::%s: Received power estimation report\n`
+- `%06ld.%06d %s::%s: Requesting power measurement report\n`
+- `%06ld.%06d %s::%s: Failed to get coalescedBudgetUpdates\n`
+- `%06ld.%06d %s::%s: Failed to write billboard data\n`
+- `%06ld.%06d %s::%s: Failed to get SPMI HEB Ready interrupt source!\n`
+- `%06ld.%06d %s::%s: Failed to write reset reason over HEB SPMI, result: 0x%x\n`
+- `%06ld.%06d %s::%s: Failed to start providers start\n`
+- `%06ld.%06d %s::%s: [%s] Failed to get %s\n`
+- `%06ld.%06d %s::%s: Could not find required %s\n`
+- `%06ld.%06d %s::%s: Manager state: %s, forcing baseband to be OFF\n`
+- `%06ld.%06d %s::%s: null argument\n`
+- `%06ld.%06d %s::%s: Wake interrupt source changed: %s -> disabled\n`
+- `%06ld.%06d %s::%s: Error: 0x%x\n`
+- `%06ld.%06d %s::%s: Aborting billboard transaction failure processing due to %s state`
+- `%06ld.%06d %s::%s: [%s] OCP Read Ready GPR0 has not been reached yet. (Baseband did not send OCP data yet.)`
+- `%06ld.%06d %s::%s: OCP Magic Word does not matched! OCP Magic Word: (0x%x)(expect: 0x%x) (0x%x)(expect: 0x%x) (0x%x)(expect: 0x%x)\n`
+- `%06ld.%06d %s::%s: \tPower estimation - 100 millisecond average power: %umW\n`
+- `%06ld.%06d %s::%s: Could not create backpowering protection class\n`
+- `%06ld.%06d %s::%s: reset_detect now asserted\n`
+- `%06ld.%06d %s::%s: No billboard update and BB is asleep, returning without performing any action\n`
+- `%06ld.%06d %s::%s: Received unsupported function key: %s\n`
+- `%06ld.%06d %s::%s: Failed to create return dictionary for parsing budget`
+- `%06ld.%06d %s::%s: removeFreqListInstGated, instance bitmask is set to 0`
+- `%06ld.%06d %s::%s: Error = 0x%x\n`
+- `%06ld.%06d %s::%s: Triggering coredump due to a SPMI error\n`
+- `%06ld.%06d %s::%s: Failed to get Billboard Writing Interrupt Source\n`
+- `%06ld.%06d %s::%s: budget_mw is %d, fInBrickMode: %d`
+- `%06ld.%06d %s::%s: Failed to get PPM provider from PPM kext\n`
+- `%06ld.%06d %s::%s: Wake state - index %d, error: 0x%x\n`
+- `%06ld.%06d %s::%s: Succeeded receiving OCP data\n`
+- `%06ld.%06d %s::%s: Expecting the baseband OCP sequence number to be %d, and received %u\n`
+- `%06ld.%06d %s::%s: numConfigs: %u, structInputSize: %u\n`
+- `%06ld.%06d %s::%s: Preparing to register client %s\n`
+- `%s: One of given parameters is NULL:\nprovider: %p, propertyName: %p\n\n`
+- `%s: Data length (%u) is not the 32-bit size for the property, \"%s\"\n`
+- `%06ld.%06d %s::%s: Failed to get budget array for client %s`
+- `%06ld.%06d %s::%s: Received Tx done\n`
+- `%06ld.%06d %s::%s: Failed to allocate SPMI read timer\n`
+- `%06ld.%06d %s::%s: Baseband Power State already %s\n`
+- `%06ld.%06d %s::%s: [%s] Protocol size (%u) cannot exceed more than max OCP size (%lu)`
+- `%06ld.%06d %s::%s: Client: %s\n`
+- `%06ld.%06d %s::%s: EDT options: 0x%x\n`
+- `%06ld.%06d %s::%s: [%s] Failed to trigger SPMI event 0x%x, result: 0x%x\n`
+- `%06ld.%06d %s::%s: Updating power measurement monitor period to %u\n`
+- `%06ld.%06d %s::%s: Non-zero thermal budget detected, exiting brick mode\n`
+- `%06ld.%06d %s::%s: No fresh data to write, preparing baseband to sleep\n`
+- `%s: One of given parameters is NULL:\nprovider: %p, propertyName: %p, propertyExpectingValue: %p\n\n`
+- `%06ld.%06d %s::%s: nothing to do: fPortDeepSleep is already %u\n`
+- `%06ld.%06d %s::%s: Resetting billboard ready flag because of a successful write\n`
+- `%06ld.%06d %s::%s: ID: %d, Power Estimation Data: %d.%02u (%d, 0x%x)\n`
+- `%06ld.%06d %s::%s: CPMS kernel wrapper is missing, failed to do admission check for client %s`
+- `%06ld.%06d %s::%s: reset_detect not asserted, will wait %d ms and confirm\n`
+- `%06ld.%06d %s::%s: AP is waking up, attaching all SPMI interrupts now`
+- `%06ld.%06d %s::%s: radio already powered ON\n`
+- `%06ld.%06d %s::%s: Unable to print data: needed %u bytes (data size = %u bytes with %u bytes needed to print each byte) and but only have %u bytes available\n`
+- `%06ld.%06d %s::%s: buffer helper is not ready for OCP data\n`
+- `%06ld.%06d %s::%s: Initial admission check for client %s, PPM budget: %d %d %d`
+- `%06ld.%06d %s::%s: on %u\n`
+- `%06ld.%06d %s::%s: pci link error: %d\n`
+- `%06ld.%06d %s::%s: Updating wake status from %s to %s\n`
+- `%06ld.%06d %s::%s: [%s] Succeeded trggering SPMI event 0x%x\n`
+- `%06ld.%06d %s::%s: Failed to get reason for client %s`
+- `%06ld.%06d %s::%s: SAC Generic=%s, Jasper=%s\n`
+- `%06ld.%06d %s::%s: Wake state - param: %u index: %d, wake: %sACTIVE, pull-down: %s, interrupt source: %s\n`
+- `%06ld.%06d %s::%s: baseband device ID = %u\n`
+- `%06ld.%06d %s::%s: pci driver up, found: %u\n`
+- `%06ld.%06d %s::%s: device is target coalesced? %d\n`
+- `%06ld.%06d %s::%s: Nothing to write and BB is awake, sending sleep signal now\n`
+- `%06ld.%06d %s::%s: setProperty success? RadioType: %d | ChipID: %d\n`
+- `%06ld.%06d %s::%s: Succeeded sending OCP data to %s\n`
+- `%06ld.%06d %s::%s: [%s] Service is stopping\n`
+- `%06ld.%06d %s::%s: Received budget[%u]: reason %u (%s), value %d mW\n`
+- `%06ld.%06d %s::%s: Failed to get new policy %s's client instance`
+- `%06ld.%06d %s::%s: Failed to get current policy %s's client instance`
+- `%06ld.%06d %s::%s: Warning! Received an extra WAKE_DONE signal from BB when already is %s state\n`
+- `%06ld.%06d %s::%s: Expecting the baseband OCP sequence number is %d, and received %u\n`
+- `%06ld.%06d %s::%s: [%s] %s: %d (0x%x)\n`
+- `%06ld.%06d %s::%s: Pulse width value of %llu ms exceeds max value; using unsigned max instead\n`
+- `%06ld.%06d %s::%s: Invalid state because a wake should not have been triggered for an empty cache\n`
+- `%06ld.%06d %s::%s: time scale unsupported, skipping`
+- `%06ld.%06d %s::%s: baseband port-enable delay ms=%u\n`
+- `%06ld.%06d %s::%s: Interrupt event source object is NULL!\n`
+- `%06ld.%06d %s::%s: [%s] Received CRC16 (0x%x) does not match the CRC16 from the data (0x%x)\n`
+- `%06ld.%06d %s::%s: Loaded baseband-no-toggle-vdd-clk=%u\n`
+- `%06ld.%06d %s::%s: Failed to register PPM: PPM kernel client wrapper is NULL\n`
+- `%06ld.%06d %s::%s: Querying budget from client %s\n`
+- `%06ld.%06d %s::%s: Manager state: %s\n`
+- `%06ld.%06d %s::%s: fix device tree property \"radio-devid-chipid-map\"; choosing static mappings`
+- `%06ld.%06d %s::%s: Started SPMI read timer with delay (%d ms)\n`
+- `%06ld.%06d %s::%s: Number of budgets in update[%u]: %u\n`
+- `%06ld.%06d %s::%s: on=%d, (0x%x)\n`
+- `%06ld.%06d %s::%s: Failed to initializing!\n`
+- `%06ld.%06d %s::%s: [%s] Failed validating OCP data!\n`
+- `%06ld.%06d %s::%s: Granted budget timescale: %d, power level: %d`
+- `%06ld.%06d %s::%s: Failed to trigger AP awake interrupt, ret = 0x%x\n`
+- `%06ld.%06d %s::%s: failed to warm reset via precise PMU toggle, error: 0x%08x\n`
+- `%06ld.%06d %s::%s: [%s] Failed to read SPMI data @ (0x%x): %p (%lu bytes), result: 0x%x\n`
+- `%06ld.%06d %s::%s: Re-initializing budget for client %s\n`
+- `%06ld.%06d %s::%s: Failed to get clientBudgetUpdates\n`
+- `%06ld.%06d %s::%s: New budget update from CPMS for client %s, number of updates: %u\n`
+- `%06ld.%06d %s::%s: Failed to cast CoreAnalyticsHub \n`
+- `%06ld.%06d %s::%s: radio state unknown\n`
+- `%06ld.%06d %s::%s: CPMS provider is not registered\n`
+- `%06ld.%06d %s::%s: Received a WAKE_DONE signal from BB, updating state from %s to %s`
+- `%06ld.%06d %s::%s: Input parameter is NULL!\n`
+- `%06ld.%06d %s::%s: \tPopulating power estimate index %u value: %u\n`
+- `%06ld.%06d %s::%s: failed to initialize\n`
+- `%06ld.%06d %s::%s: Failed to setup HEB service!\n`
+- `%06ld.%06d %s::%s: Data size (%lu) is greater than the max structure size (%u)\n`
+- `%06ld.%06d %s::%s: [%s] data value is NULL\n`
+- `%06ld.%06d %s::%s: [%s] Succeeded reading SPMI data @ (0x%x)\n`
+- `%06ld.%06d %s::%s: start link speed change sequence with %d ms delay\n`
+- `%06ld.%06d %s::%s: Interrupt Index %d is detaching\n`
+- `%06ld.%06d %s::%s: Received budget[%u]: reason %d (%s), timescale %d (%s), value %d mW\n`
+- `%06ld.%06d %s::%s: Failed to bind SPMI to PPM's transport`
+- `%06ld.%06d %s::%s: set link speed %u (dynamic %d)\n`
+- `%06ld.%06d %s::%s: Sending billboard WAKE_0 interrupt\n`
+- `%06ld.%06d %s::%s: msg id: %u, stale data: %s, type: %s, mask: 0X%x, thermal report period: %u, power estimation report period: %u, power measurement report period: %u, power measurement monitor period: %u\n`
+- `%06ld.%06d %s::%s: Failed to crash baseband, continuing with billboard protocol\n`
+- `%06ld.%06d %s::%s: Failed to create %s helper!\n`
+- `%06ld.%06d %s::%s: The number of sensors (%u) is not supported\n`
+- `%06ld.%06d %s::%s: [%s] Succeeded in triggering GPR0 (0x%x)\n`
+- `%06ld.%06d %s::%s: reset_detect still not asserted\n`
+- `%06ld.%06d %s::%s: ISR fired count: %d\n`
+- `%06ld.%06d %s::%s: [%s] Protocol size (%u) is too small (minimum: %lu)\n`
+- `%06ld.%06d %s::%s: Current mode is %s, skip sending non-emergency skipper's budget`
+- `%06ld.%06d %s::%s: Port transition delay value of %llu ms exceeds max value; using unsigned max instead\n`
+- `%06ld.%06d %s::%s: Received type (0x%02x: %s) to report SMC\n`
+- `%06ld.%06d %s::%s: nothing to do for speed %u\n`
+- `%06ld.%06d %s::%s: msg id: %u, stale data: %s, type: %s, mask: 0X%x, peak power budgets: %u, %u, %u, thermal: %u, %u, %u, %u, %u, %u, %u, %u\n`
+- `%06ld.%06d %s::%s: HEB driver is not ready yet!\n`
+- `%06ld.%06d %s::%s: Looking for %s\n`
+- `%06ld.%06d %s::%s: Cannot identify the protocol type`
+- `%06ld.%06d %s::%s: Failed to register PPM: service parameter is NULL\n`
+- `%06ld.%06d %s::%s: Unblocking blocked clients\n`
+- `%06ld.%06d %s::%s: Received billboard READY_TO_FILL interrupt\n`
+- `%06ld.%06d %s::%s: Warning! Received a WAKE_DONE signal from BB without AP sending a WAKE signal, updating state from %s to %s\n`
+- `%06ld.%06d %s::%s: [%s] Failed reading OCP data!\n`
+- `%06ld.%06d %s::%s: NULL dictionary for index [%u] for client %s`
+- `%06ld.%06d %s::%s: port enable: %u, perst assertion delay: %u ms\n`
+- `%06ld.%06d %s::%s: Setting fBillboardReadyToFill back to true due to a READY_TO_FILL timeout\n`
+- `%06ld.%06d %s::%s: Failed to setup SMC driver!\n`
+- `%06ld.%06d %s::%s: Failed to proceed the buffer address, 0x%x (bufferQueue: %p)\n`
+- `%06ld.%06d %s::%s: Billboard message CRC calculation: %u\n`
+- `%06ld.%06d %s::%s: Already broadcast kAppleBasebandMessageStewieTransmitComplete`
+- `%06ld.%06d %s::%s: \tPopulating thermal sensor ID %u, value: %u\n`
+- `%06ld.%06d %s::%s: Failed to create copy dictionary for %s`
+- `%06ld.%06d %s::%s: port left disabled during speed change, bailing\n`
+- `%06ld.%06d %s::%s: Failed to get %s\n`
+- `%06ld.%06d %s::%s: Failed to allocate setup SPMI service thread\n`
+- `%06ld.%06d %s::%s: Received input struct of incorrect size (expected %d bytes, received %d bytes)`
+- `%06ld.%06d %s::%s: [%s] baseband OCP sequence number is %u while expecting number is %u. Updating the next expecting number to %u\n`
+- `%06ld.%06d %s::%s: radio alive\n`
+- `%06ld.%06d %s::%s: Sleeping for %llu ms before powering off\n`
+- `%06ld.%06d %s::%s: SPMI bus setup is completed`
+- `%06ld.%06d %s::%s: Power off timer started with delay: %d ms\n`
+- `%06ld.%06d %s::%s: Unable to send sleep signal, ret: 0x%x\n`
+- `%06ld.%06d %s::%s: Succeeded in registering!\n`
+- `%06ld.%06d %s::%s: Current mode is %s, skip sending emergency skipper's budget`
+- `%06ld.%06d %s::%s: Could not register pciErrorHandler!\n`
+- `%06ld.%06d %s::%s: Writing Data: `
+- `%06ld.%06d %s::%s: SMC Service is not available in this product!\n`
+- `%06ld.%06d %s::%s: [%s] Failed to initialize super class\n`
+- `%06ld.%06d %s::%s: Failed to get budgetmw for client %s`
+- `%06ld.%06d %s::%s: SPMI event list is not allocated yet!\n`
+- `%06ld.%06d %s::%s: [%s] Protocol size (%u) is too small (minimum: %lu)`
+- `%06ld.%06d %s::%s: Client %s does not require admission check, skipping`
+- `%06ld.%06d %s::%s: \tPower estimation - thermal 3 average power: %umW\n`
+- `%06ld.%06d %s::%s: Baseband Auto-ON: %d, ret = 0x%x\n`
+- `%06ld.%06d %s::%s: Sleep signal sent successfully\n`
+- `%06ld.%06d %s::%s: Interface ID: %u\n`
+- `%06ld.%06d %s::%s: Reading Data: `
+- `%s: Property \"%s\" does not have the expected type. It is a %s\n\n`
+
+**[__TEXT.__cstring]**
+
+- `AppleSNE`
+- `%06ld.%06d %s::%s: Failed to crash baseband, continuing with billboard protocol\n`
+- `%06ld.%06d %s::%s: Failed to register PPM: service parameter is NULL\n`
+- `getBudget`
+- `%06ld.%06d %s::%s: Unable to send sleep signal, ret: 0x%x\n`
+- `baseband-heb`
+- `Stewie Non-Emergency Policy`
+- `%06ld.%06d %s::%s: null CoreAnalytics service\n`
+- `debugWarmReset`
+- `%06ld.%06d %s::%s: Billboard buffer is not ready yet\n`
+- `%06ld.%06d %s::%s: AP is waking up, attaching all SPMI interrupts now`
+- `Power Estimation Report`
+- `irq-tx-offset-ocp-send`
+- `%06ld.%06d %s::%s: Got NULL client for key %s\n`
+- `%06ld.%06d %s::%s: Current baseband mode is off, skipping admission check\n`
+- `Baseband Alive`
+- `Baseband Powered On`
+- `kBasebandStateReset`
+- `evaluateTxNotification`
+- `updateBudgetsToClientsGated`
+- `enableTraceMuxGated`
+- `651`
+- `%06ld.%06d %s::%s: port left enabled during speed change, bailing\n`
+- `%06ld.%06d %s::%s: Invalid state because a wake should not have been triggered for an empty cache\n`
+- `%06ld.%06d %s::%s: Looking for %s\n`
+- `spmiRawWriteGated`
+- `%06ld.%06d %s::%s: Updating power measurement monitor period to %u\n`
+- `%06ld.%06d %s::%s: Not updating policy because it's already %s\n`
+- `multiClientSupport`
+- `%06ld.%06d %s::%s: Client %s does not require admission check, skipping`
+- `%06ld.%06d %s::%s: Changing policy from %s to %s`
+- `pmuExtOnConfigGated`
+- `12222221111`
+- `bounded_ptr<T>::operator*: Dereferencing this pointer would access memory outside of the bounds set originally`
+- `%06ld.%06d %s::%s: Failed to get SMC driver!\n`
+- `%06ld.%06d %s::%s: Cannot identify the protocol type`
+- `spmiGNSSWakeAckCommonGated`
+- `PPMClientINT`
+- `%06ld.%06d %s::%s: \tThermal sensor ID %u, value: %u\n`
+- `BasebandRadioType`
+- `%06ld.%06d %s::%s: Failed to report to SMC (ret: 0x%x)\n`
+- `%s: Failed to get baseband chip set string.\n`
+- `radio-devid-chipid-map`
+- `free`
+- `%06ld.%06d %s::%s: Failed to setup CPMS service!\n`
+- `irq-tx-offset-billboard-send0`
+- `%06ld.%06d %s::%s: Loaded baseband-dynamic-vdd-clk=%u\n`
+- `%06ld.%06d %s::%s: Number of budgets for client %s: %u\n`
+- `function-bb_ldo`
+- `%06ld.%06d %s::%s: wake asserted\n`
+- `%06ld.%06d %s::%s: Sleeping for %llu ms before powering off\n`
+- `%06ld.%06d %s::%s: Failed to communicate with SAR Service KEXT instance (ret: 0x%x)\n`
+- `%06ld.%06d %s::%s: Warning: Client IOService is not registered yet!\n`
+- `startModemThread`
+- `addFreqListInstGated`
+- `Hot spot Budget 8`
+- `%06ld.%06d %s::%s: [%s] Writing Message Buffer with OCP\n`
+- `AppleBasebandUserClient`
+- `%06ld.%06d %s::%s: Failed to get budgetmw for client %s`
+- `site.PPMClientMAV`
+- `%06ld.%06d %s::%s: Invalid SPMI HEB object, coredump will not be triggered\n`
+- `%06ld.%06d %s::%s: Could not create backpowering protection class\n`
+- `Billboard WAKE_DONE interrupt`
+- `%06ld.%06d %s::%s: Failed to write billboard data\n`
+- `WAKING`
+- `%06ld.%06d %s::%s: budgetDict is NULL`
+- `site.AppleBasebandLogging`
+- `%06ld.%06d %s::%s: Baseband SPMI is not ready, not sending budget yet\n`
+- `ColdReset`
+- `%06ld.%06d %s::%s: Updating power estimate report period to %u\n`
+- `0x%02x `
+- `mav`
+- `function-bb_on`
+- `%06ld.%06d %s::%s: Setting panic enabled to %s\n`
+- `AppleBaseband: skipping aliased backpowering function name whose length (%u) exceeds the maximum allowed (%u)\n`
+- `setBudgetToKernelClientFunction`
+- `HEB`
+- `kBasebandStateError`
+- `Billboard TX_START interrupt`
+- `%06ld.%06d %s::%s: baseband already in warm reset state\n`
+- `SAR Message Request`
+- `%06ld.%06d %s::%s: [%s] Writing billboard with sequence number: %u\n`
+- `BudgetTypeLevel`
+- `ReportConfig`
+- `baseband-warm-reset-delay-ms`
+- `%06ld.%06d %s::%s: warm reset via precise PMU toggle succeeded (desired assert time: %u ms)\n`
+- `readProperty`
+- `spmiErrorToKernelClientFunction`
+- `addEvent`
+- `%06ld.%06d %s::%s: Client: %s\n`
+- `getPeakPowerBudget_block_invoke`
+- `baseband-pcie-ld-panic`
+- `BasebandChipID`
+- `_getBasebandChipset`
+- `ClientRequested`
+- `%06ld.%06d %s::%s: Manager state: %s, forcing baseband to be OFF\n`
+- `Sensor is not present`
+- `%06ld.%06d %s::%s: Failed to start providers start\n`
+- `AppleBaseband: found total of %u backpowering pins\n`
+- `spmiGNSSTrapAckCommonGated`
+- `%06ld.%06d %s::%s: 0x%x type cannot be handled!\n`
+- `%06ld.%06d %s::%s: nothing to do: fPortPower is already %u\n`
+- `%06ld.%06d %s::%s: Succeeded in registering!\n`
+- `%06ld.%06d %s::%s: Failed to setup HEB service!\n`
+- `%06ld.%06d %s::%s: failed to drive BB_PMU_PON pin LOW, error: 0x%08x\n`
+- `kBasebandStateBootError`
+- `basebandResetDetectGated`
+- `%06ld.%06d %s::%s: failed to crash modem with spmi, error: 0x%08x\n`
+- `%06ld.%06d %s::%s: [%s] Failed to read SPMI data @ (0x%x): %p (%lu bytes), result: 0x%x\n`
+- `%06ld.%06d %s::%s: [%s] Protocol size (%u) is too small (minimum: %lu)`
+- `%06ld.%06d %s::%s: Could not find required %s\n`
+- `SPMIInterruptBufferHelper`
+- `idc`
+- `AppleBaseband: lookup of aliased backpowering function \"%s\" succeeded (\"%s\")\n`
+- `isDal`
+- `%06ld.%06d %s::%s: wake de-asserted\n`
+- `site.PPMClient`
+- `readBudgetFromEDT`
+- `%06ld.%06d %s::%s: Crashing baseband due to %u failed billboard transactions\n`
+- `The offset of the pointer inside its valid memory range can't be represented using int32_t`
+- `PCIPortDesiredLinkSpeed`
+- `%06ld.%06d %s::%s: Enabling port\n`
+- `%06ld.%06d %s::%s: Received type (0x%02x: %s) to report SMC\n`
+- `userland`
+- `parseCPMSBudgetThreadCall`
+- `674`
+- `%06ld.%06d %s::%s: Aborting SPMI data write due to NULL data`
+- `Crashed`
+- `%06ld.%06d %s::%s: Failed to proceed the buffer address, 0x%x (bufferQueue: %p)\n`
+- `AppleBaseband: no provider supplied for finding backpowering pins\n`
+- `121111121222121212222222221`
+- `WarmReset`
+- `readFromBasebandOCPGated`
+- `%06ld.%06d %s::%s: budget_mw is %d, fInBrickMode: %d`
+- `function-pmu_exton_config_v2`
+- `AppleBasebandLogging`
+- `AppleBaseband: Data length (%u) is not the 32-bit size for the property, \"%s\"`
+- `%06ld.%06d %s::%s: Updating wake status from %s to %s\n`
+- `%06ld.%06d %s::%s: Failed to trigger GPR0 (0x%x) for interrupt index (%d) with ret (0x%x)\n`
+- `setResetPinGated`
+- `billboardWriteDalGated`
+- `CoreAnalyticsHub`
+- `%06ld.%06d %s::%s: All checks passed, proceeding to write a billboard message to the buffer\n`
+- `powerCycleModemGated`
+- `%06ld.%06d %s::%s: Received budget[%u]: reason %d (%s), timescale %d (%s), value %d mW\n`
+- `timeSyncGated`
+- `%06ld.%06d %s::%s: SAR Service instance is registered already\n`
+- `ApplePPM`
+- `AppleBasebandUserClient: could not get baseband provider\n`
+- `%06ld.%06d %s::%s: Failed to create client dictionary`
+- `%06ld.%06d %s::%s: Initial admission check for client %s, PPM budget: %d %d %d`
+- `1211111212221212122222222211111111111111111111111121111111111111111111111111111111111111111112221`
+- `Yes`
+- `%06ld.%06d %s::%s: Error while writing to billboard, resetting billboard ready flag to true\n`
+- `Off`
+- `%06ld.%06d %s::%s: Failed to allocate SPMI read timer\n`
+- `%06ld.%06d %s::%s: Wake interrupt source changed: %s -> disabled\n`
+- `%06ld.%06d %s::%s: Could not register pciErrorHandler!\n`
+- `Failed to create interrupt source for index %u\n`
+- `readyToFillTimerExpired`
+- `baseband`
+- `Baseband PCI Bad Request`
+- `%06ld.%06d %s::%s: Preparing to register client %s\n`
+- `%06ld.%06d %s::%s: SPMI retry attempt: %u\n`
+- `%06ld.%06d %s::%s: Warning! Received a WAKE_DONE signal from BB without AP sending a WAKE signal, updating state from %s to %s\n`
+- `%06ld.%06d %s::%s: Invalid SPMI HEB object`
+- `%06ld.%06d %s::%s: Not in skipper stack, skipping interrupt handling`
+- `triggerBillboardWriteInterrupt`
+- `PCIDriverIsUp`
+- `%06ld.%06d %s::%s: Received a WAKE_DONE signal from BB when in %s state, dropping the signal\n`
+- `markDataAsStaleGated`
+- `%06ld.%06d %s::%s: ignoring\n`
+- `%06ld.%06d %s::%s: Failed to read buffer address (0x%x) for interrupt index (%d) with ret (0x%x)\n`
+- `Hot spot Budget 4`
+- `%06ld.%06d %s::%s: SMC Service is not available in this product!\n`
+- `%06ld.%06d %s::%s: Loaded baseband-auto-on=%u\n`
+- `%s not found in boot-args\n`
+- `%06ld.%06d %s::%s: fix device tree property \"radio-devid-chipid-map\"; choosing static mappings`
+- `%06ld.%06d %s::%s: Failed to get %s\n`
+- `%06ld.%06d %s::%s: The number of sensors (%u) is not supported\n`
+- `%06ld.%06d %s::%s: [%s] Succeeded reading SPMI data @ (0x%x)\n`
+- `%06ld.%06d %s::%s: Failed to get current policy %s's client instance`
+- `enabled`
+- `debugPowerOn`
+- `%06ld.%06d %s::%s: Received a WAKE_DONE signal from BB, updating state from %s to %s`
+- `spmiRawReadGated`
+- `%06ld.%06d %s::%s: \tPower measurement - averaged power: %umW\n`
+- `%06ld.%06d %s::%s: Wake state - index %d, error: 0x%x\n`
+- `%06ld.%06d %s::%s: Could not find pcie_port_control function!\n`
+- `%06ld.%06d %s::%s: Billboard writing interrupt source has been removed due to driver shutdown\n`
+- `%06ld.%06d %s::%s: failed to warm reset via precise PMU toggle, error: 0x%08x\n`
+- `reason`
+- `NOT `
+- `%06ld.%06d %s::%s: powercycling baseband\n`
+- `%06ld.%06d %s::%s: msg id: %u, stale data: %s, type: %s, mask: 0X%x, peak power budgets: %u, %u, %u, thermal: %u, %u, %u, %u, %u, %u, %u, %u\n`
+- `spmiInterruptHandler`
+- `%06ld.%06d %s::%s: reset detected, baseband power: %s\n`
+- `%06ld.%06d %s::%s: Triggering coredump due to a SPMI error\n`
+- `%06ld.%06d %s::%s: Failed to create SPMI interrupt event for %s\n`
+- `%06ld.%06d %s::%s: Failed to send OCP data to %s\n`
+- `%06ld.%06d %s::%s: \tPopulating power measurement value: %u\n`
+- `Unknown Event`
+- `setVoltageGated`
+- `Baseband Coredump Ready`
+- `attachAllInterruptSources`
+- `%06ld.%06d %s::%s: [%s] baseband OCP sequence number is %u while expecting number %u. Updating the next expecting number to %u\n`
+- `function-uart1_rts`
+- `AppleBaseband: lookup of aliased backpowering function \"%s\" failed (\"%s\")\n`
+- `%06ld.%06d %s::%s: Already broadcast kAppleBasebandMessageStewieTransmit`
+- `irq-tx-offset-billboard-send`
+- `kBasebandStateCoredumpFinished`
+- `%06ld.%06d %s::%s: Successfully received a fresh budget from client %s\n`
+- `Baseband PCI Link Resume Fail`
+- `%s: Data length (%u) is not the 32-bit size for the property, \"%s\"\n`
+- `%06ld.%06d %s::%s: %d - callFunction delay %llu ns\n`
+- `AWAKE`
+- `%06ld.%06d %s::%s: Interrupt Index %d is detaching\n`
+- `site.AppleBasebandSPMIHEB`
+- `%06ld.%06d %s::%s: clientBudgetUpdates is NULL\n`
+- `getThermalPowerReport_block_invoke`
+- `removeFreqListInstGated`
+- `\"%s:%s\" @%s:%d`
+- `ppmRegistration`
+- `%06ld.%06d %s::%s: AP absolute time before rising GPIO: %llu. After rising GPIO: %llu\n`
+- `shutdown`
+- `ppm-max-budget`
+- `%06ld.%06d %s::%s: 0x%x type is not supported\n`
+- `dataRead`
+- `baseband-no-toggle-vdd-clk`
+- `%06ld.%06d %s::%s: CPMS kernel wrapper is missing, failed to do admission check for client %s`
+- `getClientGated`
+- `Baseband PCI Link Down`
+- `%06ld.%06d %s::%s: HEB driver is not ready yet!\n`
+- `setBasebandPowerStateGated`
+- `com.apple.telephony.abm`
+- `%06ld.%06d %s::%s: Unknown interface ID: %u\n`
+- `%06ld.%06d %s::%s: reset_detect not asserted, will wait %d ms and confirm\n`
+- `AppleBaseband: Property \"%s\" does not have the expected type. It is a %s\n`
+- `AppleBaseband: skipping aliased, non-null-terminated backpowering function name whose length (%u) equals or exceeds the maximum allowed (%u)\n`
+- `backpowering-alias-count`
+- `kBasebandStateBooted`
+- `%06ld.%06d %s::%s: Baseband state check: %s\n`
+- `%s: deviceID %x did not match any entry in static map; setting unknown properties\n\n`
+- `updateTxState`
+- `%06ld.%06d %s::%s: [%s] baseband OCP sequence number is %u while expecting number is %u. Updating the next expecting number to %u\n`
+- `site.ARMFunctionPtr`
+- `%06ld.%06d %s::%s: Non-zero thermal budget detected, exiting brick mode\n`
+- `Baseband Stewie Transmit`
+- `%06ld.%06d %s::%s: Unblocking blocked clients\n`
+- `%06ld.%06d %s::%s: reset_detect now asserted\n`
+- `%06ld.%06d %s::%s: Unable to handle unknown timescale (%d)\n`
+- `CPMS via SPMI: %s\n`
+- `%06ld.%06d %s::%s: Failed to get new policy %s's client instance`
+- `%06ld.%06d %s::%s: Received SPMI Write Ready!\n`
+- `%06ld.%06d %s::%s: AP already in brick mode, not updating data`
+- `updatePCIDriverIsUp`
+- `%06ld.%06d %s::%s: Current Baseband Power State: %s\n`
+- `findSPMIDevice`
+- `%06ld.%06d %s::%s: Invalid wake dual-config EDT entries\n`
+- `%06ld.%06d %s::%s: SPMI event list is not allocated yet!\n`
+- `kBasebandStateShutdownError`
+- `requester`
+- `%06ld.%06d %s::%s: HEB SPMI Device is NULL!\n`
+- `setClockGated`
+- `baseband-pcie-nolu-panic`
+- `spmiReadyToFillCallbackGated`
+- `%06ld.%06d %s::%s: Found matching SPMI device: %s`
+- `%06ld.%06d %s::%s: Started SPMI read timer with delay (%d ms)\n`
+- `%06ld.%06d %s::%s: [%s] Failed to trigger SPMI event 0x%x, result: 0x%x\n`
+- `site.AsyncParams`
+- `function-radio_on`
+- `Alive`
+- `AppleBaseband: no backpowering aliases\n`
+- `Baseband Wake Asserted`
+- `spmiWakeDoneCallbackGated`
+- `resetModemGated`
+- `AppleBaseband: skipping zero-length aliased backpowering function name\n`
+- `%s: Failed to allocate radio info memory.\n`
+- `function-bb_rst`
+- `AppleBaseband`
+- `PPMClient`
+- `%06ld.%06d %s::%s: Received NULL input struct`
+- `reportToSMCGated`
+- `PCIPortEnableFailureFatal`
+- `%06ld.%06d %s::%s: sleeping until PCI driver finds me\n`
+- `debugSetPanicEnabled`
+- `budget`
+- `%06ld.%06d %s::%s: AP awake interrupt triggered successfully\n`
+- `%06ld.%06d %s::%s: coredump ready\n`
+- `%06ld.%06d %s::%s: Delay 1 msec between WAKE and PAYLOAD`
+- `%06ld.%06d %s::%s: [%s] Protocol size (%u) is too small (minimum: %lu)\n`
+- `budgetArray`
+- `product`
+- `checkOCPPacketValid`
+- `function-pmu_exton_config`
+- `%06ld.%06d %s::%s: Unable to send wake signal, ret: 0x%x\n`
+- `kBasebandStateBooting`
+- `setThermalPowerReportDalGated`
+- `registerKernelClientToAppleBasebandFunction`
+- `Peak Power Budget`
+- `getCurrentTxState`
+- `updateWakeStatusGated`
+- `sendSPMIReadySignal`
+- `%06ld.%06d %s::%s: Updating power measurement report period to %u\n`
+- `%06ld.%06d %s::%s: Number of budgets: %u\n`
+- `%s: Succeeded reading property of %s with the value (0x%x)\n`
+- `%06ld.%06d %s::%s: No billboard update and BB is asleep, returning without performing any action\n`
+- `site.AppleBasebandPlatform`
+- `%06ld.%06d %s::%s: Could not find reset detect interrupt\n`
+- `%06ld.%06d %s::%s: Baseband reset detected but endpoint is missing! Ignoring...\n`
+- `static bool AppleBasebandLogging::create()`
+- `Failed to create SPMI Buffer Helper instance\n`
+- `%06ld.%06d %s::%s: Current Baseband Power State: %s, force: %s\n`
+- `Baseband Off Policy`
+- `Baseband Power Debug Unblock`
+- `default-options`
+- `PPMClientMAV`
+- `sendSleepSignalGated`
+- `%06ld.%06d %s::%s: Failed writing data\n`
+- `reinitializeBudgets_block_invoke`
+- `debugPCIePortDisable`
+- `%06ld.%06d %s::%s: baseband cold-reset delay ms=%u\n`
+- `%06ld.%06d %s::%s: Failed to get %s matching dictionary\n`
+- `crashModemWithSPMIWithReasonGated`
+- `%06ld.%06d %s::%s: Received Tx done\n`
+- `ASLEEP`
+- `%06ld.%06d %s::%s: Output parameter, result is NULL!\n`
+- `AppleSMC`
+- `%06ld.%06d %s::%s: Interrupt event source object is NULL!\n`
+- `dal`
+- `Cannot allocate the event buffer queue [%d]\n`
+- `AppleBaseband: failed to convert backpowering pin count data\n`
+- `%06ld.%06d %s::%s: Sleeping for %llu ms after powering on\n`
+- `spmiReadyToKernelClientFunction`
+- `%06ld.%06d %s::%s: SPMI setup has already been done\n`
+- `%06ld.%06d %s::%s: SPMI-Ready signal was detected\n`
+- `bounded_array_ref: Can't construct from a size greater than UINT32_MAX`
+- `AppleBaseband: unable to get aliased backpowering function name data corresponding to \"%s\"\n`
+- `site.AppleBasebandUserClient`
+- `coredumpModemGated`
+- `PCIPortSleepEnable`
+- `off`
+- `debugPowerOff`
+- `setProperties`
+- `setupSPMIServiceGated`
+- `\"%s::%s: port enable failed\" @%s:%d`
+- `%06ld.%06d %s::%s: radio already powered ON, `
+- `%06ld.%06d %s::%s: Updating %s, array count: %u`
+- `broadcastToUserSpace`
+- `resetModem`
+- `spmiInitDoneCallbackGated`
+- `setCPMSBudgetPolicy_block_invoke`
+- `baseband-chipset`
+- `%06ld.%06d %s::%s: radio already powered OFF\n`
+- `AppleBasebandSPMIIDC`
+- `supported`
+- `%06ld.%06d %s::%s: Nothing to write and BB is awake, sending sleep signal now\n`
+- `%s%u`
+- `%06ld.%06d %s::%s: Updating Stewie state from %s to %s\n`
+- `started`
+- `notifyCompletionTimeoutAsync`
+- `%06ld.%06d %s::%s: Setting fBillboardReadyToFill back to true due to a READY_TO_FILL timeout\n`
+- `%06ld.%06d %s::%s: Unknown type (0x%02x) to report SMC!\n`
+- `%06ld.%06d %s::%s: ISR fired count: %d\n`
+- `prepPPMRegistrationDict`
+- `Unknown Client`
+- `Baseband OCP Read Ready`
+- `%06ld.%06d %s::%s: radio alive\n`
+- `findPCIControl`
+- `%06ld.%06d %s::%s: radio not found\n`
+- `setupSPMIServiceGated_block_invoke`
+- `1211111212221212122222222211111111111111111111111121111111111111111111111111111111111111111112221211112212`
+- `Unknown Policy`
+- `isInt`
+- `%06ld.%06d %s::%s: Wake state - param: %u index: %d, wake: %sACTIVE, pull-down: %s, interrupt source: %s\n`
+- `%06ld.%06d %s::%s: pci service is %p\n`
+- `registerKernelClientToApplePPMFunction`
+- `%06ld.%06d %s::%s: Performing async budget update\n`
+- `%06ld.%06d %s::%s: Unable to handle unknown budget update reason (%d)\n`
+- `%06ld.%06d %s::%s: Failed to bind SPMI to PPM's transport`
+- `%06ld.%06d %s::%s: Baseband Auto-ON: %d, ret = 0x%x\n`
+- `ocpDataReadyToKernelClientFunction`
+- `%06ld.%06d %s::%s: Budget parameter is NULL\n`
+- `%06ld.%06d %s::%s: time scale unsupported, skipping`
+- `baseband.kext`
+- `%06ld.%06d %s::%s: Disabling port\n`
+- `%06ld.%06d %s::%s: Failed to send billboard data\n`
+- `%06ld.%06d %s::%s: Failed to create copy array for client %s`
+- `Hot spot Budget 6`
+- `%06ld.%06d %s::%s: Succeeded in writing the data to SMC\n`
+- `%06ld.%06d %s::%s: Successfully created %s\n`
+- `%06ld.%06d %s::%s: radio already powered OFF, `
+- `triggerBillboardWritingInterruptSource`
+- `%06ld.%06d %s::%s: [%s] Failed to initialize super class\n`
+- `%06ld.%06d %s::%s: set chipset unknown property? %d\n`
+- `doAdmissionCheck`
+- `%06ld.%06d %s::%s: Done, success = %d\n`
+- `100 msec`
+- `1000 msec`
+- `%06ld.%06d %s::%s: Failed to allocate setup SPMI service thread\n`
+- `%06ld.%06d %s::%s: Failed to get matching dictionary for %s!`
+- `%06ld.%06d %s::%s: [%s] Service is stopping\n`
+- `Baseband CPMS Brick Enabled`
+- `isMav`
+- `stateChangedGated`
+- `%06ld.%06d %s::%s: Invalid workloop\n`
+- `markSPMIReady_block_invoke`
+- `%06ld.%06d %s::%s: [%s] Succeeded triggering SPMI event 0x%x\n`
+- `wakeInterrupt`
+- `%06ld.%06d %s::%s: [%s] Reading Message Buffer with OCP\n`
+- `%06ld.%06d %s::%s: [%s] Received CRC16 (0x%x) does not match the CRC16 from the data (0x%x)\n`
+- `%06ld.%06d %s::%s: Port transition delay value of %llu ms exceeds max value; using unsigned max instead\n`
+- `%06ld.%06d %s::%s: %s: %d\n`
+- `GNSS Wake interrupt`
+- `Baseband PCI Link BW Notification`
+- `AppleBasebandPCIEDevice`
+- `%06ld.%06d %s::%s: port enable: %u, perst assertion delay: %u ms\n`
+- `%06ld.%06d %s::%s: Found %s at %p\n`
+- `%06ld.%06d %s::%s: Error = 0x%x\n`
+- `baseband-debug`
+- `BasebandDeviceID`
+- `enablePCIPort`
+- `debugColdReset`
+- `%06ld.%06d %s::%s: Not implemented\n`
+- `%06ld.%06d %s::%s: bailing\n`
+- `%06ld.%06d %s::%s: Warning! Received an extra WAKE_DONE signal from BB when already is %s state\n`
+- `%06ld.%06d %s::%s: Expecting the baseband OCP sequence number to be %d, and received %u\n`
+- `updateBudgetBrickModeHandler`
+- `%06ld.%06d %s::%s: Failed to cast CoreAnalyticsHub \n`
+- `checkBasebandState`
+- `Coredump interrupt`
+- `baseband-dynamic-vdd-clk`
+- `%06ld.%06d %s::%s: Received NULL OCP data\n`
+- `Baseband Up`
+- `%s: One of given parameters is NULL:\nprovider: %p, propertyName: %p, propertyExpectingValue: %p\n\n`
+- `details`
+- `enablePCIPortSleep`
+- `%06ld.%06d %s::%s: baseband warm-reset delay ms=%u\n`
+- `%06ld.%06d %s::%s: Failed to setup SMC driver!\n`
+- `%06ld.%06d %s::%s: Unable to print data: needed %u bytes (data size = %u bytes with %u bytes needed to print each byte) and but only have %u bytes available\n`
+- `%06ld.%06d %s::%s: \tPopulating thermal sensor ID %u, value: %u\n`
+- `function-bb_warm_reset`
+- `spmiRegister0WriteGated`
+- `Sensor is present but not available`
+- `Tx Start in Power Constraint`
+- `msg-buffer-address-rx-ocp`
+- `%s not found in EDT\n`
+- `%s: One of given parameters is NULL:\nprovider: %p, propertyName: %p\n\n`
+- `%06ld.%06d %s::%s: Wake GPIO dual-config missing in EDT`
+- `site.SPMIInterruptBufferHelper`
+- `%06ld.%06d %s::%s: Initial Values: Max Budget: %u mW, Idle Budget: %u mW, Low Budget: %u mW\n`
+- `%06ld.%06d %s::%s: Succeeded sending OCP data to %s\n`
+- `%06ld.%06d %s::%s: Requesting power estimation report\n`
+- `/Library/Caches/com.apple.xbs/9F7B3BD6-4DA9-4005-B500-E4D80F7549F2/TemporaryDirectory.wJIn0J/Sources/AppleBaseband/AppleBaseband/AppleBasebandPCIEDevice.cpp`
+- `site.AppleBasebandPCIEDevice`
+- `%06ld.%06d %s::%s: Received billboard READY_TO_FILL interrupt\n`
+- `%06ld.%06d %s::%s: Nothing to send billboard region\n`
+- `msg-buffer-address-tx-ocp`
+- `%06ld.%06d %s::%s: Power off timer started with delay: %d ms\n`
+- `radioOnGated`
+- `%06ld.%06d %s::%s: Requesting power measurement report\n`
+- `checkPCIDriverIsUp`
+- `spmiOCPReadGated`
+- `1211111212221212111112121212121212121212`
+- `Failed to initialize SPMI Buffer Helper\n`
+- `reinitializeBudget`
+- `%06ld.%06d %s::%s: Failed to get timescale for client %s`
+- `setDesiredLinkSpeed`
+- `site.AppleBasebandSPMITransport`
+- `%s: AppleBasebandSPMITransport: %s fired!\n`
+- `billboardTransactionFailure`
+- `%06ld.%06d %s::%s: Updating budget of unrecognized client %s\n`
+- `supports-cpms-via-spmi`
+- `handleInterrupt`
+- `loadBootArguments`
+- `%06ld.%06d %s::%s: \tPower estimation - thermal 1 average power: %umW\n`
+- `%06ld.%06d %s::%s: Failed to allocate power off timer\n`
+- `checkOCPPacketValidDAL`
+- `site.AppleBasebandPPM`
+- `notifyInterruptGated`
+- `%06ld.%06d %s::%s: thread has been called already!\n`
+- `%06ld.%06d %s::%s: Failed to get updateArray\n`
+- `function-vdd_1v8_ap`
+- `clientCheckInGated`
+- `%06ld.%06d %s::%s: Failed reading data\n`
+- `Hot spot Budget 1`
+- `ABORT`
+- `%06ld.%06d %s::%s: [%s] Failed validating OCP data!\n`
+- `%06ld.%06d %s::%s: Number of updates: %u\n`
+- `baseband-cold-reset-delay-ms`
+- `%06ld.%06d %s::%s: Interrupt Index %d is attaching\n`
+- `CommCenter`
+- `%s: Property \"%s\" does not have the expected type. It is a %s\n\n`
+- `setPowerOnBBPMUPinGated`
+- `%06ld.%06d %s::%s: Current mode is %s, skip sending emergency skipper's budget`
+- `%06ld.%06d %s::%s: reset_detect still not asserted\n`
+- `Unknown Timescale`
+- `%06ld.%06d %s::%s: Sending billboard WAKE_0 interrupt\n`
+- `billboardWriteGated`
+- `%06ld.%06d %s::%s: SPMI-Ready signal was not detected yet!\n`
+- `This bounded_ptr is pointing to memory outside of what can be represented by a native pointer.`
+- `false`
+- `12111112122212121222222222111111111111111111111111211111111111111111111111111111111111111111122212111122121111111211111112212`
+- `1212`
+- `markStale`
+- `Instantaneous`
+- `%06ld.%06d %s::%s: Data size (%lu) is greater than the max structure size (%u)\n`
+- `%06ld.%06d %s::%s: ID: %d, Power Estimation Data: %d.%02u (%d, 0x%x)\n`
+- `spmiGetEventsGated`
+- `%06ld.%06d %s::%s: Received NULL bytes pointer\n`
+- `Cellular Policy`
+- `%06ld.%06d %s::%s: removeFreqListInstGated, instance bitmask is set to 0`
+- `%06ld.%06d %s::%s: device missing\n`
+- `%06ld.%06d %s::%s: [IDC] Failed to read SPMI data @ (0x%x), result: 0x%x\n`
+- `%06ld.%06d %s::%s: Received power measurement report\n`
+- `%06ld.%06d %s::%s: failed port enable (0x%x), power cycling and retrying\n`
+- `%06ld.%06d %s::%s: [%s] Failed to write SPMI data @ (0x%x), result: 0x%x\n`
+- `kBasebandStateInvalid`
+- `kern.wakereason`
+- `IOPlatformDevice`
+- `%06ld.%06d %s::%s: Sleep signal sent successfully\n`
+- `%06ld.%06d %s::%s: Failed to get SPMI HEB Ready interrupt source!\n`
+- `AppleBaseband: the IOService provider for backpowering is not ready\n`
+- `%s: property \"radio-devid-chipid-map\" does not have the expected type. it is a %s\n\n`
+- `%06ld.%06d %s::%s: Billboard update available but already triggered a wake, returning without performing any action\n`
+- `1`
+- `AppleBasebandPlatform`
+- `AppleBaseband: Failed to get \"%s\" property\n`
+- `updateConfig`
+- `AppleBasebandBackpowering`
+- `Tx Start`
+- `%06ld.%06d %s::%s: Failed to get coalescedBudgetUpdates\n`
+- `setUnknownProperties`
+- `%06ld.%06d %s::%s: %s\n`
+- `attachCoreAnalyticsService`
+- `%06ld.%06d %s::%s: addFreqListInstGated, instance bitmask is set to 0`
+- `register0Write`
+- `%06ld.%06d %s::%s: Failed to register PPM: client registration attempt returned 0x%08x\n`
+- `ppm-idle-budget`
+- `%06ld.%06d %s::%s: Billboard update available but BB is asleep, sending wake signal now\n`
+- `SPMI interrupt source for index (%d) has been installed\n`
+- `helper is not given for index %u\n`
+- `%06ld.%06d %s::%s: %s service is registered for the userclient receiver\n`
+- `on`
+- `%06ld.%06d %s::%s: radio state unknown\n`
+- `baseband-pcie-bw-panic`
+- `%06ld.%06d %s::%s: AP sleep interrupt triggered successfully, detaching all SPMI interrupts now\n`
+- `site.AppleBasebandINT1`
+- `AppleBaseband: failed to restore backpowering pin %u\n`
+- `%06ld.%06d %s::%s: Registered\n`
+- `numSubClients`
+- `%06ld.%06d %s::%s: clearFreqListInstGated, instance bitmask is set to 0`
+- `unknown`
+- `%06ld.%06d %s::%s: using hw warm reset\n`
+- `%06ld.%06d %s::%s: Already broadcast kAppleBasebandMessageStewieTransmitLowPower`
+- `The range of valid memory is too large to be represented by this type, or [begin, end) is not a well-formed range`
+- `%06ld.%06d %s::%s: HEB driver is not ready, not sending budget yet\n`
+- `%06ld.%06d %s::%s: Could not find optional %s\n`
+- `\"%s::%s: hw reset function not found\" @%s:%d`
+- `AppleBaseband: failed to get backpowering pin count data\n`
+- `%06ld.%06d %s::%s: Initialized client %s\n`
+- `%06ld.%06d %s::%s: Updating thermal report period to %u\n`
+- `%06ld.%06d %s::%s: Failed to get updateDict for client %s\n`
+- `212121212121212122`
+- `%06ld.%06d %s::%s: Resetting billboard ready flag because of a successful write\n`
+- `%06ld.%06d %s::%s: Failed to call client (ret: 0x%x)\n`
+- `AppleBaseband: no provider supplied for finding backpowering aliases\n`
+- `%06ld.%06d %s::%s: No fresh data to write, preparing baseband to sleep\n`
+- `PowerCycleModem`
+- `pciErrorHandler`
+- `AppleBaseband: no non-aliased backpowering pins\n`
+- `%06ld.%06d %s::%s: \tPopulating power estimate index %u value: %u\n`
+- `%06ld.%06d %s::%s: All CommCenter clients are gone, powering radio off\n`
+- `%06ld.%06d %s::%s: Baseband woke AP\n`
+- `%06ld.%06d %s::%s: failed first port enable -- assume baseband is missing and populate baseband node with unknown values\n`
+- `%06ld.%06d %s::%s: port left disabled during speed change, bailing\n`
+- `%06ld.%06d %s::%s: Succeeded getting SPMI HEB Ready interrupt source! (%p)\n`
+- `function-bb_ap_time_sync`
+- `%06ld.%06d %s::%s: baseband device ID = %u\n`
+- `triggerCoredumpViaKernel`
+- `powerStateWillChangeTo_block_invoke`
+- `wakeDoneTimerExpired`
+- `registerSARServiceKEXTInstance_block_invoke`
+- `Sensor is present and valid`
+- `%06ld.%06d %s::%s: Current mode is %s, skip sending non-emergency skipper's budget`
+- `function-reset_det`
+- `%06ld.%06d %s::%s: Could not find wake interrupt\n`
+- `setManagerState`
+- `%06ld.%06d %s::%s: set link speed %u (dynamic %d)\n`
+- `dataWrite`
+- `irq-tx-offset-billboard-send1`
+- `initialize`
+- `heb`
+- `%06ld.%06d %s::%s: [%s] The OCP buffer payload Length (%u) should not be beyond %u\n`
+- `i8@?0`
+- `Baseband Reset Detected`
+- `Baseband GNSS Wake ACK`
+- `getBasebandInfo`
+- `%06ld.%06d %s::%s: Already broadcast kAppleBasebandMessageStewieTransmitComplete`
+- `Stewie Emergency Policy`
+- `parseForMultiClient`
+- `clearFreqListInstGated`
+- `%06ld.%06d %s::%s: on=%d, (0x%x)\n`
+- `%06ld.%06d %s::%s: setProperty success? RadioType: %d | ChipID: %d\n`
+- `%06ld.%06d %s::%s: \n`
+- `Hot spot Budget 3`
+- `function-sw_sdn`
+- `%06ld.%06d %s::%s: Error: 0x%x\n`
+- `%06ld.%06d %s::%s: link bandwidth changed\n`
+- `%06ld.%06d %s::%s: Reporting Thermal Data\n`
+- `setupPPMServiceGated`
+- `%s: Failed to get \"%s\" property\n\n`
+- `AppleSE`
+- `12111112122212121112111111112112`
+- `%06ld.%06d %s::%s: Failed to trigger AP sleep interrupt, ret = 0x%x\n`
+- `AppleBasebandSPMI`
+- `kBasebandStateCoredumpError`
+- `triggerCoredump`
+- `AppleBaseband: lookup of backpowering pin function \"%s\" succeeded\n`
+- `updateArray`
+- `AppleBaseband: memory allocation failed for backpowering aliases\n`
+- `%06ld.%06d %s::%s: Failed to setup thread %s`
+- `%06ld.%06d %s::%s: Aborting billboard write due to %s state\n`
+- `function-bb_usb_mux`
+- `%06ld.%06d %s::%s: SAR Service KEXT instance is not ready\n`
+- `spmiTxStartGated`
+- `%06ld.%06d %s::%s: Failed to receive OCP data\n`
+- `%06ld.%06d %s::%s: The number of sensor (%u) cannot be exceeded to the max of SMC (%u)\n`
+- `%06ld.%06d %s::%s: [%s] Failed to get %s\n`
+- `%06ld.%06d %s::%s: Requesting thermal data report\n`
+- `%06ld.%06d %s::%s: The number of budgets (%u) exceeds the max billboard payload number (%u)\n`
+- `checkProperty`
+- `crashModemWithSPMIGated`
+- `%06ld.%06d %s::%s: Failed to get PPMClient class for %s\n`
+- `%06ld.%06d %s::%s: nothing to do: fPortDeepSleep is already %u\n`
+- `OSBoundedPtr.h`
+- `cellular baseband supported`
+- `kBasebandStateCoredumpStarted`
+- `site.struct deviceIDmap`
+- `powerStateDidChangeTo_block_invoke`
+- `spmiOCPWriteGated`
+- `%06ld.%06d %s::%s: Baseband Power State already %s\n`
+- `AppleBaseband: lookup of backpowering pin function \"%s\" failed\n`
+- `BasebandInReset`
+- `AppleBasebandSPMITransport`
+- `%06ld.%06d %s::%s: Received Tx start\n`
+- `asyncWorker`
+- `int`
+- `%06ld.%06d %s::%s: Manager state changing: %s -> %s\n`
+- `Client`
+- `triggerBillboardWriteInterrupt_block_invoke`
+- `%06ld.%06d %s::%s: Billboard message CRC calculation: %u\n`
+- `AppleBasebandINT1.cpp`
+- `sendWakeSignalGated`
+- `%06ld.%06d %s::%s: Received input struct of incorrect size (expected %d bytes, received %d bytes)`
+- `466`
+- `boot-args: %s: %u\n`
+- `clientBudgetAckEnabled`
+- `%06ld.%06d %s::%s: \"%s\"\n`
+- `AppleBaseband: warning! functionNameData is not null-terminated\n`
+- `122222211112`
+- `12111112122212121111111222221211`
+- `%06ld.%06d %s::%s: Failed to register client %s\n`
+- `radioAliveExtendedGated`
+- `writeToBasebandBillboard`
+- `%06ld.%06d %s::%s: Marking client %s's data as stale`
+- `powerDebugUnblockGated`
+- `startGuardTimer`
+- `%06ld.%06d %s::%s: Sensor report is not available.`
+- `resetDetectedExtendedGated`
+- `IDC`
+- `%06ld.%06d %s::%s: PPM instance gone!`
+- `spmiOCPReceiverGated`
+- `spmiCoreDumpCommonGated`
+- `%06ld.%06d %s::%s: Received SPMI HEB Ready Interrupt Handler signal\n`
+- `%06ld.%06d %s::%s: [%s] Succeeded writing SPMI data @ (0x%x)\n`
+- `%06ld.%06d %s::%s: SPMI driver has not been created yet? (index: %d)\n`
+- `%06ld.%06d %s::%s: Manager state never settled, powering radio off\n`
+- `config`
+- `%06ld.%06d %s::%s: Sequence Number: %u\n`
+- `Baseband PCIAER`
+- `radioUsbOnGated`
+- `stopping`
+- `%06ld.%06d %s::%s: Got data of unknown type (%u)\n`
+- `smc-thermal-report-version`
+- `Baseband Powering Down`
+- `PCIPortEnable`
+- `%06ld.%06d %s::%s: msg id: %u, stale data: %s, type: %s, mask: 0X%x, thermal report period: %u, power estimation report period: %u, power measurement report period: %u, power measurement monitor period: %u\n`
+- `%06ld.%06d %s::%s: Aborting billboard transaction failure processing due to %s state`
+- `%06ld.%06d %s::%s: Could not find matching %s device!`
+- `None`
+- `%06ld.%06d %s::%s: pci link error: %d\n`
+- `%06ld.%06d %s::%s: Failed to register PPM: PPM kernel client wrapper is NULL\n`
+- `%06ld.%06d %s::%s: \tPower estimation - 1 second average power: %umW\n`
+- `setSoftwareShutdownPinGated`
+- `getPmuExtOnGated`
+- `%06ld.%06d %s::%s: Not supported`
+- `site.AppleBasebandSPMI`
+- `AppleBaseband: failed to quiesce backpowering pin %u\n`
+- `%06ld.%06d %s::%s: Querying budget from client %s\n`
+- `clientPowerCallBack`
+- `%06ld.%06d %s::%s: [%s] Failed to get SPMI object!\n`
+- `%06ld.%06d %s::%s: Failed to get client %s\n`
+- `12`
+- `%06ld.%06d %s::%s: EDT options: 0x%x\n`
+- `%06ld.%06d %s::%s: buffer helper is not ready for OCP data\n`
+- `Hot spot Budget 7`
+- `not supported`
+- `com.apple.Telephony.metricsCCDriverBasebandReset`
+- `quiesceBackpoweringPins`
+- `clientCheckOutGated`
+- `%06ld.%06d %s::%s: using sw warm reset\n`
+- `BB`
+- `site.PPMClientDAL`
+- `%06ld.%06d %s::%s: Requested budget for client %u, peak power budget: %u, %u, %u\n`
+- `%s: Failed to get baseband information\n`
+- `%06ld.%06d %s::%s: Interface ID: %u\n`
+- `%06ld.%06d %s::%s: Writing Data: `
+- `auto-on-disabled`
+- `%06ld.%06d %s::%s: \tPower estimation - 100 millisecond average power: %umW\n`
+- `%06ld.%06d %s::%s: warm reset falling back to software GPIO assertion (%u ms)\n`
+- `%06ld.%06d %s::%s: Reporting Power Esitmation\n`
+- `Baseband Wake De-asserted`
+- `ocpErrorToKernelClientFunction`
+- `%06ld.%06d %s::%s: SMC driver is not ready!`
+- `Helper`
+- `Baseband Down`
+- `Baseband Stewie Transmit Low Power`
+- `Error`
+- `callPlatformFunction_block_invoke`
+- `%06ld.%06d %s::%s: Failed to find the interrupt helper for the index, %d\n`
+- `-restore`
+- `%06ld.%06d %s::%s: New budget update from CPMS for client %s, number of updates: %u\n`
+- `%06ld.%06d %s::%s: %d\n`
+- `%06ld.%06d %s::%s: [%s] [try: %u] Writing SPMI data to BB at 0x%x:\n`
+- `%s: Failed to get product\n\n`
+- `resetDetectInterrupt`
+- `PCIPortLinkSpeedChange`
+- `AppleBaseband: There is no data to copy for the property, \"%s\"`
+- `%06ld.%06d %s::%s: Sending billboard WAKE_1 interrupt\n`
+- `%s: %s fired with NULL transport object\n`
+- `%06ld.%06d %s::%s: Re-initializing budget for client %s\n`
+- `%06ld.%06d %s::%s: Admission check on %s's client failed (ret = %d)\n`
+- `action`
+- `%06ld.%06d %s::%s: Reading Data: `
+- `%06ld.%06d %s::%s: Version: %u\n`
+- `%06ld.%06d %s::%s: OCP Magic Word does not match! OCP Magic Word: (0x%x)(expect: 0x%x) (0x%x)(expect: 0x%x) (0x%x)(expect: 0x%x)\n`
+- `Loaded debug arguments with mask 0x%08X, serial log: %s\n`
+- `AppleBasebandINT1`
+- `ppm-low-budget`
+- `%06ld.%06d %s::%s: thread call failed with 0x%08x\n`
+- `EDT: %s: %u\n`
+- `%06ld.%06d %s::%s: Received budget[%u]: reason %u (%s), value %d mW\n`
+- `linkSpeedChangeThreadGated`
+- `%06ld.%06d %s::%s: Failed writing the data to SMC: %d\n`
+- `Unknown Type`
+- `getCPMSBudgetPolicy_block_invoke`
+- `function-jasper-sac`
+- `%06ld.%06d %s::%s: Triggering a coredump via kernel\n`
+- `%06ld.%06d %s::%s: Failed to trigger AP awake interrupt, ret = 0x%x\n`
+- `site.AppleBaseband`
+- `kBasebandStateShuttingDown`
+- `SMC`
+- `%06ld.%06d %s::%s: Failed to proceed the buffer address, 0x%x (buffer: %p, bufferSize: %lu)\n`
+- `%06ld.%06d %s::%s: [%s] The OCP buffer payload length (%u) should not be beyond %u\n`
+- `%06ld.%06d %s::%s: Failed to get PPM provider from PPM kext\n`
+- `basebandResetDetected_block_invoke`
+- `result`
+- `%06ld.%06d %s::%s: Wake interrupt source changed: %s -> enabled\n`
+- `billboardTransactionFailureGated`
+- `%06ld.%06d %s::%s: Expecting the baseband OCP sequence number is %d, and received %u\n`
+- `BB_TO_AP_STEWIE_ACTIVE`
+- `%06ld.%06d %s::%s: Failed to write reset reason over HEB SPMI, result: 0x%x\n`
+- `client interrupt event source is NULL!\n`
+- `%06ld.%06d %s::%s: [%s] Protocol size (%u) cannot exceed more than max OCP size (%lu)`
+- `%06ld.%06d %s::%s: Failed to create copy dictionary for %s`
+- `setRadioOnPinGated`
+- `stopped`
+- `baseband-spmi-retry`
+- `Thermal Data Report`
+- `%06ld.%06d %s::%s: [%s] OCP Read Ready GPR0 has not been reached yet. (Baseband did not send OCP data yet.)`
+- `1211111212221212111111111111222222222`
+- `budget_mw`
+- `spmiTxDoneGated`
+- `detachAllInterruptSources`
+- `121111121222121211111212121212121212121222`
+- `function-refclk`
+- `Hot spot Budget 5`
+- `AppleConvergedIPCLedaBBControl`
+- `%06ld.%06d %s::%s: Invalid OCP data (ret: 0x%x): Unable to print data: needed %u bytes (data size = %u bytes with %u bytes needed to print each byte) and but only have %u bytes available\n`
+- `%06ld.%06d %s::%s: [%s] Reading SPMI data from BB with size of %lu at 0x%x:\n`
+- `timescale`
+- `shutting`
+- `%06ld.%06d %s::%s: enable: %u, ret: 0x%08x\n`
+- `%06ld.%06d %s::%s: failed to drive BB_PMU_PON pin HIGH, error: 0x%08x\n`
+- `\"%s\" @%s:%d`
+- `Billboard READY_TO_FILL interrupt`
+- `stale`
+- `%06ld.%06d %s::%s: Invalid OCP data (ret: 0x%x): Received Payload: %s\n`
+- `spmiHEBReadyInterruptHandlerGated`
+- `Baseband CPMS Brick Disabled`
+- `%06ld.%06d %s::%s: \tPower estimation - thermal 4 average power: %umW\n`
+- `%06ld.%06d %s::%s: Failed to create %s helper!\n`
+- `Failed to allocate interrupt helper for index %u\n`
+- `setupSPMIService`
+- `%06ld.%06d %s::%s: interface (%d) is not ready. IRQ (0x%x) is rejected.\n`
+- `stop`
+- `baseband-auto-on`
+- `setThermalPowerReportDal_block_invoke`
+- `baseband-linkspeedchange-delay-ms`
+- `%06ld.%06d %s::%s: PCI driver is not up, error: 0x%08x\n`
+- `%06ld.%06d %s::%s: Failed to get Billboard Writing Interrupt Source\n`
+- `%06ld.%06d %s::%s: Failed to get %s!\n`
+- `backpowering-pin-count`
+- `%06ld.%06d %s::%s: SAC Generic=%s, Jasper=%s\n`
+- `disabled`
+- `%06ld.%06d %s::%s: Received billboard INIT_DONE interrupt\n`
+- `Baseband Billboard is Ready`
+- `Baseband GNSS Trap Ack`
+- `readPropertyUInt32`
+- `%06ld.%06d %s::%s: on %u\n`
+- `Billboard INIT_DONE interrupt`
+- `Baseband OCP Write Ready`
+- `%06ld.%06d %s::%s: property \"radio-devid-chipid-map\" devid %x, chipid %x\n`
+- `%06ld.%06d %s::%s: Wrote billboard data successfully\n`
+- `%06ld.%06d %s::%s: Returning without performing any action because the buffer is not ready yet\n`
+- `%06ld.%06d %s::%s: The number of budgets (%u) exceeds the max billboard payload number (%u) for client %s\n`
+- `%06ld.%06d %s::%s: failed port enable, but not panicking\n`
+- `Hot spot Budget 2`
+- `spmiBillboardWriteGated`
+- `%06ld.%06d %s::%s: Received power estimation report\n`
+- `ResetModem`
+- `%06ld.%06d %s::%s: baseband port-enable delay ms=%u\n`
+- `%06ld.%06d %s::%s: invalid operation, cannot warm reset from Off state\n`
+- `bounded_ptr<T>::operator+=(n): Adding the specified number of bytes to the offset representing the current position would overflow.`
+- `callPlatformFunction`
+- `Baseband PCICpl Timeout`
+- `baseband-retry-port-en`
+- `Unknown budget reason`
+- `AppleBasebandSPMIHEB`
+- `%06ld.%06d %s::%s: Succeeded sending billboard data\n`
+- `%06ld.%06d %s::%s: Thermal budget of zero detected, reporting brick mode\n`
+- `%06ld.%06d %s::%s: failed to set desired link speed: 0x%08x\n`
+- `%06ld.%06d %s::%s: Primary Provider = %p: %s\n`
+- `site.AppleBasebandBackpowering`
+- `%06ld.%06d %s::%s: NULL dictionary for index [%u] for client %s`
+- `%06ld.%06d %s::%s: Failed to get reason for client %s`
+- `%06ld.%06d %s::%s: %u\n`
+- `GNSS Trap interrupt`
+- `AppleBasebandPPM`
+- `%06ld.%06d %s::%s: Received thermal data report\n`
+- `baseband-port-en-delay-ms`
+- `%06ld.%06d %s::%s: SPMI bus setup is completed`
+- `compatible`
+- `isInt1`
+- `%06ld.%06d %s::%s: Client Owner: %d, count: %d\n`
+- `%06ld.%06d %s::%s: Triggering coredump via user client\n`
+- `%06ld.%06d %s::%s: Received billboard WAKE_DONE interrupt\n`
+- `AppleBaseband: failed to get backpowering alias count data\n`
+- `%06ld.%06d %s::%s: Manager state: %s\n`
+- `%06ld.%06d %s::%s: options: 0x%08X, pulseWidth: %llu, portTransitionDelayMilliseconds: %llu\n`
+- `Failed to init from OSObject\n`
+- `irq-tx-offset-billboard-send2`
+- `sendCoreAnalyticsEventBasebandReset`
+- `%06ld.%06d %s::%s: AP is going to sleep, will detach all SPMI interrupts`
+- `%06ld.%06d %s::%s: numConfigs: %u, structInputSize: %u\n`
+- `%06ld.%06d %s::%s: HEB driver is not ready, returning without writing to billboard\n`
+- `%06ld.%06d %s::%s: No config data found\n`
+- `%06ld.%06d %s::%s: Failed to get client %s`
+- `%06ld.%06d %s::%s: Failed to prepare ppm budget parameters`
+- `Unknown`
+- `powerOffTimerCleanUp`
+- `%06ld.%06d %s::%s: Power off timer cancelled\n`
+- `%06ld.%06d %s::%s: [%s] Succeeded in triggering GPR0 (0x%x)\n`
+- `%06ld.%06d %s::%s: No isr is registered!\n`
+- `%s: Failed to get \"%s\" property name!\n\n`
+- `restoreBackpoweringPins`
+- `%06ld.%06d %s::%s: [IDC] Failed to write SPMI data @ (0x%x), result: 0x%x\n`
+- `site.PPMClientINT`
+- `getBudgetGated`
+- `%06ld.%06d %s::%s: null command\n`
+- `%06ld.%06d %s::%s: Number of Data: %u\n`
+- `%06ld.%06d %s::%s: enable sleep %u\n`
+- `%06ld.%06d %s::%s: start link speed change sequence with %d ms delay\n`
+- `baseband-idc`
+- `function-coredump`
+- `function-sac`
+- `%06ld.%06d %s::%s: [%s] Succeeded trggering SPMI event 0x%x\n`
+- `%06ld.%06d %s::%s: Registering PPM\n`
+- `%06ld.%06d %s::%s: enable %u, failure fatal: %u\n`
+- `triggerCoredumpViaUserClient`
+- `AppleBaseband: failed to convert backpowering alias count data\n`
+- `PPMClientDAL`
+- `643`
+- `%06ld.%06d %s::%s: PPM instance is gone\n`
+- `%06ld.%06d %s::%s: Invalid SPMI bus\n`
+- `%06ld.%06d %s::%s: Succeeded receiving OCP data\n`
+- `%06ld.%06d %s::%s: updating Baseband Power State from %s to %s\n`
+- `%06ld.%06d %s::%s: Failed to initializing!\n`
+- `function-pmu_exton`
+- `%06ld.%06d %s::%s: Wake signal sent successfully\n`
+- `site.T`
+- `getCoredumpReadyStatusGated`
+- `%06ld.%06d %s::%s: Unable to handle unknown report type 0x%x\n`
+- `powerOffTimerCallback`
+- `%06ld.%06d %s::%s: Granted budget timescale: %d, power level: %d`
+- `%06ld.%06d %s::%s: Failed to get clientBudgetUpdates\n`
+- `AppleBaseband: memory allocation failed for backpowering pins\n`
+- `%06ld.%06d %s::%s: Number of budgets in update[%u]: %u\n`
+- `getWorkLoop`
+- `%06ld.%06d %s::%s: \tPower estimation - thermal 2 average power: %umW\n`
+- `debugPCIePortEnable`
+- `%06ld.%06d %s::%s: Provider = %p: %s\n`
+- `I`
+- `%06ld.%06d %s::%s: Failed to get budget array for client %s`
+- `AppleBasebandPCIEDevice.cpp`
+- `%06ld.%06d %s::%s: pci driver up, found: %u\n`
+- `SAR Message Response`
+- `%06ld.%06d %s::%s: [%s] data value is NULL\n`
+- `%06ld.%06d %s::%s: Updating budget for client %s`
+- `%06ld.%06d %s::%s: Received unsupported function key: %s\n`
+- `577`
+- `loadEDTConfig`
+- `%06ld.%06d %s::%s: Received NULL report pointer\n`
+- `debugPCIeResetEndPointMissing`
+- `Tx Complete`
+- `site.CircularBufferQueue`
+- `updateBudget`
+- `%06ld.%06d %s::%s: data type: %s, mask: 0x%x`
+- `1112`
+- `msg-buffer-address-tx-billboard`
+- `1211111212221212121`
+- `%06ld.%06d %s::%s: \tPower estimation - thermal 3 average power: %umW\n`
+- `starting`
+- `%06ld.%06d %s::%s: invalid baseband device ID = %u, populating baseband with unknown values\n`
+- `%s: warning: singleton is not NULL!\n`
+- `multi-cellular-platform`
+- `%06ld.%06d %s::%s: Succeeded reading data\n`
+- `%06ld.%06d %s::%s: Loaded baseband-no-toggle-vdd-clk=%u\n`
+- `%06ld.%06d %s::%s: Triggering %s interrupt\n`
+- `powerCycleModem`
+- `Billboard TX_DONE interrupt`
+- `%06ld.%06d %s::%s: Billboard writing interrupt source is not ready yet\n`
+- `%06ld.%06d %s::%s: Failed to find %s device!`
+- `Unknown Status`
+- `updateConfigs_block_invoke`
+- `function-bb_tx_inhibit`
+- `%06ld.%06d %s::%s: device is target coalesced? %d\n`
+- `11`
+- `baseband-state-check`
+- `%06ld.%06d %s::%s: options: 0x%08X, portTransitionDelayMilliseconds: %llu\n`
+- `%06ld.%06d %s::%s: Failed to trigger coredump via user client (ret: 0x%x), falling back to kernel method\n`
+- `%s: %s failed to allocate deviceIDmap\n`
+- `true`
+- `kBasebandStateCrashed`
+- `modemThreadMainLoop`
+- `%06ld.%06d %s::%s: Coredump triggered successfully via kernel\n`
+- `%06ld.%06d %s::%s: Could not find matching SPMI device: %s\n`
+- `No`
+- `%06ld.%06d %s::%s: Failed waiting for %s\n`
+- `findSMCDevice`
+- `%06ld.%06d %s::%s: ID: %d, Status: %s, Reporting Thermal Data: %f (0x%x)`
+- `start`
+- `%06ld.%06d %s::%s: Update report is not supported for this vendor\n`
+- `%06ld.%06d %s::%s: Failed to create return dictionary for parsing budget`
+- `basebandResetDetected`
+- `%06ld.%06d %s::%s: Failed to trigger SPMI coredump interrupt, ret = 0x%x\n`
+- `%06ld.%06d %s::%s: failed to initialize\n`
+- `562`
+- `irq-tx-offset-ocp-read-complete`
+- `function-pcie_port_control`
+- `%06ld.%06d %s::%s: radio already powered ON\n`
+- `%06ld.%06d %s::%s: null argument\n`
+- `OCP Buffer Receiver (int)`
+- `%06ld.%06d %s::%s: [%s] %s: %d (0x%x)\n`
+- `%06ld.%06d %s::%s: Broadcasting message %s to user space\n`
+- `BB_TO_AP_STEWIE_INACTIVE`
+- `%06ld.%06d %s::%s: Resetting endpoint missing variable\n`
+- `SAR Message Indication`
+- `kBasebandStateHasShutdown`
+- `%06ld.%06d %s::%s: Device is in brick mode, skipping report config update`
+- `%06ld.%06d %s::%s: Wake state - param: %u index: %d, wake: %sACTIVE, pull-down: %s, interrupt source: not-available\n`
+- `getWakeReason`
+- `%06ld.%06d %s::%s: nothing to do for speed %u\n`
+- `%s: There is no data to copy for the property, \"%s\"\n`
+- `%06ld.%06d %s::%s: Pulse width value of %llu ms exceeds max value; using unsigned max instead\n`
+- `%06ld.%06d %s::%s: CPMS provider is not registered\n`
+- `B24@?0^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}8^{IONotifier=^^?i}16`
+- `%06ld.%06d %s::%s: OCP Magic Word does not matched! OCP Magic Word: (0x%x)(expect: 0x%x) (0x%x)(expect: 0x%x) (0x%x)(expect: 0x%x)\n`
+- `%06ld.%06d %s::%s: Input parameter is NULL!\n`
+- `writeToBasebandOCP`
+- `%06ld.%06d %s::%s: \tPower estimation - 1 millisecond average power: %umW\n`
+- `Baseband Stewie Transmit Complete`
+- `%06ld.%06d %s::%s: [%s] Failed reading OCP data!\n`
+- `parseForSingleClient`

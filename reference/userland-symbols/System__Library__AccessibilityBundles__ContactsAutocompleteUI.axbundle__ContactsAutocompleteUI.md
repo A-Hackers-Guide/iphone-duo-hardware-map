@@ -1,0 +1,191 @@
+# Symbols: `/System/Library/AccessibilityBundles/ContactsAutocompleteUI.axbundle/ContactsAutocompleteUI`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__AccessibilityBundles__ContactsAutocompleteUI.axbundle__ContactsAutocompleteUI.md). **[DSC]**
+
+68 public symbols, 107 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1ee318108  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXContactsAutocompleteUIGlue
+0x1ee3180b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNAtomTextViewAccessibility
+0x1ee318090  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNAtomViewAccessibility
+0x1ee318068  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNAutocompleteDisambiguatingTableViewCellAccessibility
+0x1ee318040  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNAutocompleteResultsTableViewAccessibility
+0x1ee318018  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNAutocompleteResultsTableViewControllerAccessibility
+0x1ee317758  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNAutocompleteSearchControllerAccessibility
+0x1ee317ff0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNAutocompleteSuggestionsCellAccessibility
+0x1ee3177f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNAutocompleteSuggestionsViewSectionHeaderAccessibility
+0x1ee317fc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNComposeHeaderLabelViewAccessibility
+0x1ee317fa0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNComposeRecipientAtomAccessibility
+0x1ee317f78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNComposeRecipientTableViewCellAccessibility
+0x1ee317f50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNComposeRecipientTextViewAccessibility
+0x1ee317f28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNComposeTableViewCellAccessibility
+0x1ee317f00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CNAtomFieldEditorAccessibility
+0x1ee317ed8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CNAtomTextAttachmentAccessibility
+0x1ee317eb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CNAtomTextViewAccessibility
+0x1ee317e88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CNAtomTextViewAccessibility_super
+0x1ee317e60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CNAtomViewAccessibility_super
+0x1ee317e38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CNAutocompleteDisambiguatingTableViewCellAccessibility_super
+0x1ee317e10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CNAutocompleteResultsTableViewAccessibility_super
+0x1ee317de8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CNAutocompleteResultsTableViewControllerAccessibility_super
+0x1ee317730  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CNAutocompleteSearchControllerAccessibility_super
+0x1ee317dc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CNAutocompleteSuggestionsCellAccessibility_super
+0x1ee3177d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CNAutocompleteSuggestionsViewSectionHeaderAccessibility_super
+0x1ee317d98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CNComposeHeaderLabelViewAccessibility_super
+0x1ee317d70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CNComposeRecipientAtomAccessibility_super
+0x1ee317d48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CNComposeRecipientTableViewCellAccessibility_super
+0x1ee317d20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CNComposeRecipientTextViewAccessibility_super
+0x1ee317cf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CNComposeTableViewCellAccessibility_super
+0x1ee317cd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$____CNAtomFieldEditorAccessibility_super
+0x1ee317ca8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$____CNAtomTextAttachmentAccessibility_super
+0x1ee317c80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$____CNAtomTextViewAccessibility_super
+0x1ee3180e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXContactsAutocompleteUIGlue
+0x1ee317c58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNAtomTextViewAccessibility
+0x1ee317c30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNAtomViewAccessibility
+0x1ee317c08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNAutocompleteDisambiguatingTableViewCellAccessibility
+0x1ee317be0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNAutocompleteResultsTableViewAccessibility
+0x1ee317bb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNAutocompleteResultsTableViewControllerAccessibility
+0x1ee317708  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNAutocompleteSearchControllerAccessibility
+0x1ee317b90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNAutocompleteSuggestionsCellAccessibility
+0x1ee3177a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNAutocompleteSuggestionsViewSectionHeaderAccessibility
+0x1ee317b68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNComposeHeaderLabelViewAccessibility
+0x1ee317b40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNComposeRecipientAtomAccessibility
+0x1ee317b18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNComposeRecipientTableViewCellAccessibility
+0x1ee317af0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNComposeRecipientTextViewAccessibility
+0x1ee317ac8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNComposeTableViewCellAccessibility
+0x1ee317aa0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CNAtomFieldEditorAccessibility
+0x1ee317a78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CNAtomTextAttachmentAccessibility
+0x1ee317a50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CNAtomTextViewAccessibility
+0x1ee317a28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CNAtomTextViewAccessibility_super
+0x1ee317a00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CNAtomViewAccessibility_super
+0x1ee3179d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CNAutocompleteDisambiguatingTableViewCellAccessibility_super
+0x1ee3179b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CNAutocompleteResultsTableViewAccessibility_super
+0x1ee317988  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CNAutocompleteResultsTableViewControllerAccessibility_super
+0x1ee3176e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CNAutocompleteSearchControllerAccessibility_super
+0x1ee317960  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CNAutocompleteSuggestionsCellAccessibility_super
+0x1ee317780  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CNAutocompleteSuggestionsViewSectionHeaderAccessibility_super
+0x1ee317938  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CNComposeHeaderLabelViewAccessibility_super
+0x1ee317910  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CNComposeRecipientAtomAccessibility_super
+0x1ee3178e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CNComposeRecipientTableViewCellAccessibility_super
+0x1ee3178c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CNComposeRecipientTextViewAccessibility_super
+0x1ee317898  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CNComposeTableViewCellAccessibility_super
+0x1ee317870  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$____CNAtomFieldEditorAccessibility_super
+0x1ee317848  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$____CNAtomTextAttachmentAccessibility_super
+0x1ee317820  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$____CNAtomTextViewAccessibility_super
+0x189d341b0  __TEXT,__text  _accessibilityLocalizedString
+0x189d3410c  __TEXT,__text  _accessibilityLocalizedStringStewie
+```
+
+## Private
+
+```
+0x189d33ec0  __TEXT,__text  +[AXContactsAutocompleteUIGlue accessibilityInitializeBundle]
+0x189d33f48  __TEXT,__text  ___61+[AXContactsAutocompleteUIGlue accessibilityInitializeBundle]_block_invoke
+0x189d33f50  __TEXT,__text  ___61+[AXContactsAutocompleteUIGlue accessibilityInitializeBundle]_block_invoke_2
+0x189d33fa4  __TEXT,__text  ___61+[AXContactsAutocompleteUIGlue accessibilityInitializeBundle]_block_invoke_3
+0x189d34254  __TEXT,__text  +[CNAutocompleteSearchControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d34260  __TEXT,__text  +[CNAutocompleteSearchControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3426c  __TEXT,__text  +[CNAutocompleteSearchControllerAccessibility _accessibilityPerformValidations:]
+0x189d342f4  __TEXT,__text  -[CNAutocompleteSearchControllerAccessibility autocompleteResultsController:didSelectRecipient:atIndex:]
+0x189d3436c  __TEXT,__text  +[CNAutocompleteSuggestionsCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d34378  __TEXT,__text  +[CNAutocompleteSuggestionsCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d34384  __TEXT,__text  +[CNAutocompleteSuggestionsCellAccessibility _accessibilityPerformValidations:]
+0x189d343c4  __TEXT,__text  -[CNAutocompleteSuggestionsCellAccessibility isAccessibilityElement]
+0x189d343cc  __TEXT,__text  -[CNAutocompleteSuggestionsCellAccessibility accessibilityLabel]
+0x189d343d8  __TEXT,__text  -[CNAutocompleteSuggestionsCellAccessibility accessibilityTraits]
+0x189d34420  __TEXT,__text  +[CNAutocompleteResultsTableViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d3442c  __TEXT,__text  +[CNAutocompleteResultsTableViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d34438  __TEXT,__text  +[CNAutocompleteResultsTableViewControllerAccessibility _accessibilityPerformValidations:]
+0x189d34480  __TEXT,__text  -[CNAutocompleteResultsTableViewControllerAccessibility selectRowAtIndexPath:]
+0x189d34584  __TEXT,__text  +[CNAutocompleteSuggestionsViewSectionHeaderAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d34590  __TEXT,__text  +[CNAutocompleteSuggestionsViewSectionHeaderAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3459c  __TEXT,__text  +[CNAutocompleteSuggestionsViewSectionHeaderAccessibility _accessibilityPerformValidations:]
+0x189d3461c  __TEXT,__text  -[CNAutocompleteSuggestionsViewSectionHeaderAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d3468c  __TEXT,__text  -[CNAutocompleteSuggestionsViewSectionHeaderAccessibility initWithFrame:]
+0x189d346ec  __TEXT,__text  +[CNAtomTextViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d346f8  __TEXT,__text  +[CNAtomTextViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d34704  __TEXT,__text  +[CNAtomTextViewAccessibility _accessibilityPerformValidations:]
+0x189d347a8  __TEXT,__text  -[CNAtomTextViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d34858  __TEXT,__text  -[CNAtomTextViewAccessibility accessibilityPlaceholderValue]
+0x189d34864  __TEXT,__text  -[CNAtomTextViewAccessibility initWithFrame:]
+0x189d348bc  __TEXT,__text  +[CNAtomViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d348c8  __TEXT,__text  +[CNAtomViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d348d4  __TEXT,__text  +[CNAtomViewAccessibility _accessibilityPerformValidations:]
+0x189d34948  __TEXT,__text  -[CNAtomViewAccessibility accessibilityLabel]
+0x189d34a30  __TEXT,__text  -[CNAtomViewAccessibility accessibilityHint]
+0x189d34a3c  __TEXT,__text  -[CNAtomViewAccessibility accessibilityTraits]
+0x189d34a4c  __TEXT,__text  +[CNAutocompleteDisambiguatingTableViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d34a58  __TEXT,__text  +[CNAutocompleteDisambiguatingTableViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d34a64  __TEXT,__text  +[CNAutocompleteDisambiguatingTableViewCellAccessibility _accessibilityPerformValidations:]
+0x189d34aa4  __TEXT,__text  -[CNAutocompleteDisambiguatingTableViewCellAccessibility accessibilityTraits]
+0x189d34b20  __TEXT,__text  +[CNAutocompleteResultsTableViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d34b2c  __TEXT,__text  +[CNAutocompleteResultsTableViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d34b38  __TEXT,__text  +[CNAutocompleteResultsTableViewAccessibility _accessibilityPerformValidations:]
+0x189d34bc0  __TEXT,__text  -[CNAutocompleteResultsTableViewAccessibility accessibilityLabel]
+0x189d34bcc  __TEXT,__text  +[CNComposeHeaderLabelViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d34bd8  __TEXT,__text  +[CNComposeHeaderLabelViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d34be4  __TEXT,__text  +[CNComposeHeaderLabelViewAccessibility _accessibilityPerformValidations:]
+0x189d34be8  __TEXT,__text  -[CNComposeHeaderLabelViewAccessibility accessibilityRespondsToUserInteraction]
+0x189d34c5c  __TEXT,__text  -[CNComposeHeaderLabelViewAccessibility accessibilityHint]
+0x189d34ce4  __TEXT,__text  +[CNComposeRecipientAtomAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d34cf0  __TEXT,__text  +[CNComposeRecipientAtomAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d34cfc  __TEXT,__text  +[CNComposeRecipientAtomAccessibility _accessibilityPerformValidations:]
+0x189d34eec  __TEXT,__text  -[CNComposeRecipientAtomAccessibility isAccessibilityElement]
+0x189d34ef4  __TEXT,__text  -[CNComposeRecipientAtomAccessibility accessibilityHint]
+0x189d34f4c  __TEXT,__text  -[CNComposeRecipientAtomAccessibility accessibilityTraits]
+0x189d34f5c  __TEXT,__text  -[CNComposeRecipientAtomAccessibility accessibilityLabel]
+0x189d35158  __TEXT,__text  -[CNComposeRecipientAtomAccessibility _accessibilityElementHelp]
+0x189d35198  __TEXT,__text  -[CNComposeRecipientAtomAccessibility accessibilityCustomActions]
+0x189d3531c  __TEXT,__text  ___65-[CNComposeRecipientAtomAccessibility accessibilityCustomActions]_block_invoke
+0x189d353d8  __TEXT,__text  ___65-[CNComposeRecipientAtomAccessibility accessibilityCustomActions]_block_invoke_2
+0x189d35480  __TEXT,__text  -[CNComposeRecipientAtomAccessibility _axMFAddressIsSafeDomain]
+0x189d3552c  __TEXT,__text  -[CNComposeRecipientAtomAccessibility _axIsScreenLocked]
+0x189d35570  __TEXT,__text  +[CNComposeRecipientTableViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d3557c  __TEXT,__text  +[CNComposeRecipientTableViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d35588  __TEXT,__text  +[CNComposeRecipientTableViewCellAccessibility _accessibilityPerformValidations:]
+0x189d3561c  __TEXT,__text  -[CNComposeRecipientTableViewCellAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d35790  __TEXT,__text  ___90-[CNComposeRecipientTableViewCellAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke
+0x189d358b8  __TEXT,__text  ___90-[CNComposeRecipientTableViewCellAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_2
+0x189d3596c  __TEXT,__text  ___90-[CNComposeRecipientTableViewCellAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_3
+0x189d359a0  __TEXT,__text  -[CNComposeRecipientTableViewCellAccessibility isAccessibilityElement]
+0x189d359a8  __TEXT,__text  -[CNComposeRecipientTableViewCellAccessibility accessibilityTraits]
+0x189d359f0  __TEXT,__text  -[CNComposeRecipientTableViewCellAccessibility actionButtonTapped]
+0x189d35a3c  __TEXT,__text  +[CNComposeRecipientTextViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d35a48  __TEXT,__text  +[CNComposeRecipientTextViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d35a54  __TEXT,__text  +[CNComposeRecipientTextViewAccessibility _accessibilityPerformValidations:]
+0x189d35bb0  __TEXT,__text  -[CNComposeRecipientTextViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d35c68  __TEXT,__text  -[CNComposeRecipientTextViewAccessibility automationElements]
+0x189d35d2c  __TEXT,__text  -[CNComposeRecipientTextViewAccessibility _ensureInactiveTextView]
+0x189d35d78  __TEXT,__text  -[CNComposeRecipientTextViewAccessibility initWithFrame:]
+0x189d35dd0  __TEXT,__text  +[CNComposeTableViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d35ddc  __TEXT,__text  +[CNComposeTableViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d35de8  __TEXT,__text  +[CNComposeTableViewCellAccessibility _accessibilityPerformValidations:]
+0x189d35f1c  __TEXT,__text  -[CNComposeTableViewCellAccessibility accessibilityLabel]
+0x189d36184  __TEXT,__text  +[_CNAtomFieldEditorAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d36190  __TEXT,__text  +[_CNAtomFieldEditorAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3619c  __TEXT,__text  +[_CNAtomFieldEditorAccessibility _accessibilityPerformValidations:]
+0x189d36238  __TEXT,__text  -[_CNAtomFieldEditorAccessibility _axAtomTextViewAncestor]
+0x189d362c0  __TEXT,__text  -[_CNAtomFieldEditorAccessibility accessibilityTraits]
+0x189d36340  __TEXT,__text  -[_CNAtomFieldEditorAccessibility accessibilityPlaceholderValue]
+0x189d363f8  __TEXT,__text  -[_CNAtomFieldEditorAccessibility _accessibilityCanBeFirstResponder]
+0x189d364d8  __TEXT,__text  ___68-[_CNAtomFieldEditorAccessibility _accessibilityCanBeFirstResponder]_block_invoke
+0x189d36500  __TEXT,__text  +[_CNAtomTextAttachmentAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d3650c  __TEXT,__text  +[_CNAtomTextAttachmentAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d36518  __TEXT,__text  +[_CNAtomTextAttachmentAccessibility _accessibilityPerformValidations:]
+0x189d36558  __TEXT,__text  -[_CNAtomTextAttachmentAccessibility accessibilityLabel]
+0x189d36564  __TEXT,__text  +[_CNAtomTextViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d36570  __TEXT,__text  +[_CNAtomTextViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3657c  __TEXT,__text  +[_CNAtomTextViewAccessibility _accessibilityPerformValidations:]
+0x189d36610  __TEXT,__text  -[_CNAtomTextViewAccessibility _accessibilityOverridesInvisibility]
+0x189d36618  __TEXT,__text  -[_CNAtomTextViewAccessibility accessibilityLabel]
+0x189d3676c  __TEXT,__text  -[_CNAtomTextViewAccessibility accessibilityActivationPoint]
+0x189d367e4  __TEXT,__text  -[_CNAtomTextViewAccessibility accessibilityValue]
+0x189d368a0  __TEXT,__text  -[_CNAtomTextViewAccessibility accessibilityAttributedValue]
+0x189d36a44  __TEXT,__text  ___60-[_CNAtomTextViewAccessibility accessibilityAttributedValue]_block_invoke
+0x189d36b40  __TEXT,__text  -[_CNAtomTextViewAccessibility _accessibilityUseInactiveTextViewValueForParent:]
+0x189d36ba8  __TEXT,__text  -[_CNAtomTextViewAccessibility accessibilityTraits]
+0x189d36bf0  __TEXT,__text  -[_CNAtomTextViewAccessibility _accessibilitySelectedTextRange]
+0x189d36cac  __TEXT,__text  -[_CNAtomTextViewAccessibility _accessibilityBoundsForRange:]
+```
+

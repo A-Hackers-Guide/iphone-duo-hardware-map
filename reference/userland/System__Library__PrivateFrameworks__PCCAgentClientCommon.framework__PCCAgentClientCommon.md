@@ -1,0 +1,28 @@
+# `/System/Library/PrivateFrameworks/PCCAgentClientCommon.framework/PCCAgentClientCommon`
+
+iOS 27.2 dyld shared cache image, version `65.0.0.0.0`. Light page: libraries and type names only. **[DSC]**
+
+## Linked libraries (15)
+
+- `/System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf`
+- `/System/Library/Frameworks/Foundation.framework/Foundation`
+- `/usr/lib/libobjc.A.dylib`
+- `/usr/lib/libSystem.B.dylib`
+- `/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation`
+- `/System/Library/PrivateFrameworks/AppleIntelligenceReporting.framework/AppleIntelligenceReporting`
+- `/usr/lib/swift/libswiftCore.dylib`
+- `/usr/lib/swift/libswiftCoreFoundation.dylib`
+- `/usr/lib/swift/libswiftDispatch.dylib`
+- `/usr/lib/swift/libswiftOSLog.dylib`
+- `/usr/lib/swift/libswiftObjectiveC.dylib`
+- `/usr/lib/swift/libswiftXPC.dylib`
+- `/usr/lib/swift/libswift_Builtin_float.dylib`
+- `/usr/lib/swift/libswift_Concurrency.dylib`
+- `/usr/lib/swift/libswiftos.dylib`
+
+## Objective-C: 20 classes, 0 protocols (method count not recorded on light pages)
+
+### Classes
+
+`_TtC20PCCAgentClientCommon9Stopwatch`, `_TtCV20PCCAgentClientCommon15Tie_ModelConfigP33_85820DA0ACD2201EBA5E96FEF1C064C913_StorageClass`, `_TtCV20PCCAgentClientCommon17Tie_FinalResponseP33_85820DA0ACD2201EBA5E96FEF1C064C913_StorageClass`, `_TtCV20PCCAgentClientCommon17Tie_VGModelConfigP33_85820DA0ACD2201EBA5E96FEF1C064C913_StorageClass`, `_TtCV20PCCAgentClientCommon18Tie_StatusResponseP33_85820DA0ACD2201EBA5E96FEF1C064C913_StorageClass`, `_TtCV20PCCAgentClientCommon19Tie_GenerateRequestP33_85820DA0ACD2201EBA5E96FEF1C064C913_StorageClass`, `_TtCV20PCCAgentClientCommon20Tie_InferenceMetricsP33_85820DA0ACD2201EBA5E96FEF1C064C913_StorageClass`, `_TtCV20PCCAgentClientCommon27Tie_VisualGenerationMetricsP33_85820DA0ACD2201EBA5E96FEF1C064C913_StorageClass`, `_TtCV20PCCAgentClientCommon28Tie_InferenceEnvironmentInfoP33_85820DA0ACD2201EBA5E96FEF1C064C913_StorageClass`, `_TtCV20PCCAgentClientCommon28Tie_MultiTurnRequestMetadataP33_85820DA0ACD2201EBA5E96FEF1C064C913_StorageClass`, `_TtCV20PCCAgentClientCommon31Promptkit_Wireformat_JSONSchemaP33_762753C4AD5C4DD925184C396B2BA02613_StorageClass`, `_TtCV20PCCAgentClientCommon35Tie_VisualGenerationEnvironmentInfoP33_85820DA0ACD2201EBA5E96FEF1C064C913_StorageClass`, `_TtCV20PCCAgentClientCommon36Promptkit_Wireformat_JSONSchemaArrayP33_762753C4AD5C4DD925184C396B2BA02613_StorageClass`, `_TtCV20PCCAgentClientCommon37Promptkit_Wireformat_GenerationSchemaP33_762753C4AD5C4DD925184C396B2BA02613_StorageClass`, `_TtCV20PCCAgentClientCommon38Promptkit_Wireformat_InferenceResponseP33_632CAEEF94B4CA613400870693E0F6B813_StorageClass`, `_TtCV20PCCAgentClientCommon41Promptkit_Wireformat_JSONSchemaDictionaryP33_762753C4AD5C4DD925184C396B2BA02613_StorageClass`, `_TtCVV20PCCAgentClientCommon15Tie_ModelConfig17GenerationOptionsP33_85820DA0ACD2201EBA5E96FEF1C064C913_StorageClass`, `_TtCVV20PCCAgentClientCommon17Tie_FinalResponse9DebugInfoP33_85820DA0ACD2201EBA5E96FEF1C064C913_StorageClass`, `_TtCVV20PCCAgentClientCommon52TieVisualGeneration_VisualGenerationInferenceRequest16GenerationRecipeP33_0DBD46CE630BCEB27417F96DFAFE12B113_StorageClass`, `_TtCVV20PCCAgentClientCommon53TieVisualGeneration_VisualGenerationInferenceResponse14GeneratedImageP33_0DBD46CE630BCEB27417F96DFAFE12B113_StorageClass`
+

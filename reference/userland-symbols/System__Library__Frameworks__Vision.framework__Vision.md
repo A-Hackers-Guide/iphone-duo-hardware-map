@@ -1,0 +1,1941 @@
+# Symbols: `/System/Library/Frameworks/Vision.framework/Vision`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__Frameworks__Vision.framework__Vision.md). **[DSC]**
+
+924 public symbols, 11,425 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1a5a11b58  __TEXT,__text  _CCRectLowLevel
+0x1ee995958  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VN1JC7R3k4455fKQz0dY1VhQ
+0x1ef77c480  __AUTH,__objc_data  _OBJC_CLASS_$_VN1vLyVSh30UQ26TGBoV8MHv
+0x1ef77c458  __AUTH,__objc_data  _OBJC_CLASS_$_VN3XKGTKNBvy6h4RFtpxLyW
+0x1ee996970  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VN5kJNH3eYuyaLxNpZr5Z7zi
+0x1ef77c408  __AUTH,__objc_data  _OBJC_CLASS_$_VN6Ac6Cyl5O5oK19HboyMBR
+0x1ef77c3e0  __AUTH,__objc_data  _OBJC_CLASS_$_VN6B8mkraBUpwUqskMYPtS3
+0x1ee995930  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VN6Mb1ME89lyW3HpahkEygIG
+0x1ef77c3b8  __AUTH,__objc_data  _OBJC_CLASS_$_VN6kBnCOr2mZlSV6yV1dLwB
+0x1ef77ec30  __AUTH,__objc_data  _OBJC_CLASS_$_VNAlignFaceRectangleRequest
+0x1ef77c340  __AUTH,__objc_data  _OBJC_CLASS_$_VNAnimalBodyPoseObservation
+0x1ef77c318  __AUTH,__objc_data  _OBJC_CLASS_$_VNAnimalObservation
+0x1ef77c2f0  __AUTH,__objc_data  _OBJC_CLASS_$_VNAnimalprint
+0x1ef77fc20  __AUTH,__objc_data  _OBJC_CLASS_$_VNBarcodeObservation
+0x1ee994378  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNCalculateImageAestheticsScoresRequest
+0x1ee993450  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNCanceller
+0x1ef77c1d8  __AUTH,__objc_data  _OBJC_CLASS_$_VNCircle
+0x1ef77c1b0  __AUTH,__objc_data  _OBJC_CLASS_$_VNClassificationCustomHierarchy
+0x1ee993888  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNClassificationObservation
+0x1ee9957a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNClassifyCityNatureImageRequest
+0x1ee996a88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNClassifyFaceAttributesRequest
+0x1ee996858  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNClassifyImageAestheticsRequest
+0x1ee995778  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNClassifyImageRequest
+0x1ee996ec0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNClassifyJunkImageRequest
+0x1ef77c160  __AUTH,__objc_data  _OBJC_CLASS_$_VNClassifyMemeImageRequest
+0x1ee995750  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNClassifyPotentialLandmarkRequest
+0x1ef77c110  __AUTH,__objc_data  _OBJC_CLASS_$_VNCluster
+0x1ef77c0e8  __AUTH,__objc_data  _OBJC_CLASS_$_VNClusterObservation
+0x1ef77ebe0  __AUTH,__objc_data  _OBJC_CLASS_$_VNClustererBuilder
+0x1ef77d830  __AUTH,__objc_data  _OBJC_CLASS_$_VNClustererBuilderOptions
+0x1ef77d7e0  __AUTH,__objc_data  _OBJC_CLASS_$_VNClustererOptions
+0x1ef77d7b8  __AUTH,__objc_data  _OBJC_CLASS_$_VNClustererQuery
+0x1ef77c0c0  __AUTH,__objc_data  _OBJC_CLASS_$_VNClustererQueryOptions
+0x1ef77fbf8  __AUTH,__objc_data  _OBJC_CLASS_$_VNContour
+0x1ef77fbd0  __AUTH,__objc_data  _OBJC_CLASS_$_VNContoursObservation
+0x1ef77c048  __AUTH,__objc_data  _OBJC_CLASS_$_VNCoreMLFeatureValueObservation
+0x1ef77c020  __AUTH,__objc_data  _OBJC_CLASS_$_VNCoreMLModel
+0x1ef77bff8  __AUTH,__objc_data  _OBJC_CLASS_$_VNCoreMLRequest
+0x1ee996e70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNCreateAnimalprintRequest
+0x1ef77be90  __AUTH,__objc_data  _OBJC_CLASS_$_VNCreateDetectionprintRequest
+0x1ef77be40  __AUTH,__objc_data  _OBJC_CLASS_$_VNCreateFaceRegionMapRequest
+0x1ee996a60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNCreateFaceprintRequest
+0x1ee995638  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNCreateImageFingerprintsRequest
+0x1ef77d6f0  __AUTH,__objc_data  _OBJC_CLASS_$_VNCreateImageprintRequest
+0x1ef77bdc8  __AUTH,__objc_data  _OBJC_CLASS_$_VNCreateNeuralHashprintRequest
+0x1ee996a38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNCreateSceneprintRequest
+0x1ef77bd78  __AUTH,__objc_data  _OBJC_CLASS_$_VNCreateSmartCamprintRequest
+0x1ef77f4f0  __AUTH,__objc_data  _OBJC_CLASS_$_VNCreateTorsoprintRequest
+0x1ef77bd00  __AUTH,__objc_data  _OBJC_CLASS_$_VNDataDetectorResult
+0x1ef77bcd8  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectAnimalBodyPoseRequest
+0x1ef77e578  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectBarcodesRequest
+0x1ef77f068  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectContoursRequest
+0x1ef77bc88  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectDocumentSegmentationRequest
+0x1ef77bc60  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectFace3DLandmarksRequest
+0x1ef77f4c8  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectFaceCaptureQualityRequest
+0x1ef77eb90  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectFaceExpressionsRequest
+0x1ef77d6c8  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectFaceGazeRequest
+0x1ee993428  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNDetectFaceLandmarksRequest
+0x1ef77f798  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectFacePoseRequest
+0x1ee996b50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNDetectFaceRectanglesRequest
+0x1ef77bc10  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectHorizonRequest
+0x1ef7780d8  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectHumanBodyPose3DRequest
+0x1ef77bbe8  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectHumanBodyPoseRequest
+0x1ef77bb98  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectHumanHandPoseRequest
+0x1ee995610  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNDetectHumanHeadRectanglesRequest
+0x1ee9955e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNDetectHumanRectanglesRequest
+0x1ef777930  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectLensSmudgeRequest
+0x1ef77d678  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectRectanglesRequest
+0x1ef77baf8  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectScreenGazeRequest
+0x1ef77baa8  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectTextRectanglesRequest
+0x1ef77ba58  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectTrajectoriesRequest
+0x1ee994198  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNDetectedObjectObservation
+0x1ef77ba08  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectedPoint
+0x1ef77b9e0  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectionprint
+0x1ef77b990  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectionprintObservation
+0x1ef77b968  __AUTH,__objc_data  _OBJC_CLASS_$_VNDetectionprintTensor
+0x1ee993b58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNDocumentObservation
+0x1ef77e528  __AUTH,__objc_data  _OBJC_CLASS_$_VNEntityIdentificationModel
+0x1ef77e500  __AUTH,__objc_data  _OBJC_CLASS_$_VNEntityIdentificationModelAlgorithm
+0x1ef77e4d8  __AUTH,__objc_data  _OBJC_CLASS_$_VNEntityIdentificationModelAlgorithmVIPv2
+0x1ef77b918  __AUTH,__objc_data  _OBJC_CLASS_$_VNEntityIdentificationModelAlgorithmVIPv3
+0x1ef77e4b0  __AUTH,__objc_data  _OBJC_CLASS_$_VNEntityIdentificationModelConfiguration
+0x1ef77b8f0  __AUTH,__objc_data  _OBJC_CLASS_$_VNEntityIdentificationModelInformation
+0x1ef77b8c8  __AUTH,__objc_data  _OBJC_CLASS_$_VNEntityIdentificationModelPrediction
+0x1ef77e488  __AUTH,__objc_data  _OBJC_CLASS_$_VNEntityIdentificationModelReadOptions
+0x1ef77b850  __AUTH,__objc_data  _OBJC_CLASS_$_VNEntityIdentificationModelWriteOptions
+0x1ee993f90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNEspressoModelImageprint
+0x1ef77e398  __AUTH,__objc_data  _OBJC_CLASS_$_VNFaceAttributeCategory
+0x1ef77eb68  __AUTH,__objc_data  _OBJC_CLASS_$_VNFaceAttributes
+0x1ef77e370  __AUTH,__objc_data  _OBJC_CLASS_$_VNFaceGaze
+0x1ef77eb40  __AUTH,__objc_data  _OBJC_CLASS_$_VNFaceLandmarkRegion
+0x1ef77eb18  __AUTH,__objc_data  _OBJC_CLASS_$_VNFaceLandmarkRegion2D
+0x1ef77b828  __AUTH,__objc_data  _OBJC_CLASS_$_VNFaceLandmarkRegion3D
+0x1ef77eaf0  __AUTH,__objc_data  _OBJC_CLASS_$_VNFaceLandmarks
+0x1ef77eac8  __AUTH,__objc_data  _OBJC_CLASS_$_VNFaceLandmarks2D
+0x1ef77b800  __AUTH,__objc_data  _OBJC_CLASS_$_VNFaceLandmarks3D
+0x1ef77b7d8  __AUTH,__objc_data  _OBJC_CLASS_$_VNFaceLegacyFaceCore
+0x1ee993748  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNFaceObservation
+0x1ef77e348  __AUTH,__objc_data  _OBJC_CLASS_$_VNFaceRegionMap
+0x1ef77e320  __AUTH,__objc_data  _OBJC_CLASS_$_VNFaceScreenGaze
+0x1ef77e2f8  __AUTH,__objc_data  _OBJC_CLASS_$_VNFaceSegments
+0x1ef77fb80  __AUTH,__objc_data  _OBJC_CLASS_$_VNFaceTorsoprint
+0x1ef77fe78  __AUTH,__objc_data  _OBJC_CLASS_$_VNFaceprint
+0x1ef77d628  __AUTH,__objc_data  _OBJC_CLASS_$_VNFaceprintInferenceNetworkDescriptor
+0x1ef77fe50  __AUTH,__objc_data  _OBJC_CLASS_$_VNFeaturePrintObservation
+0x1ef77b760  __AUTH,__objc_data  _OBJC_CLASS_$_VNFingerprintHash
+0x1ef777700  __AUTH,__objc_data  _OBJC_CLASS_$_VNFrameworkResourceDescriptor
+0x1ee994328  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNGenerateAnimalSegmentationRequest
+0x1ee9965b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNGenerateAttentionBasedSaliencyImageRequest
+0x1ef77e2d0  __AUTH,__objc_data  _OBJC_CLASS_$_VNGenerateFaceSegmentsRequest
+0x1ef77b710  __AUTH,__objc_data  _OBJC_CLASS_$_VNGenerateForegroundInstanceMaskRequest
+0x1ee9954a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNGenerateGlassesSegmentationRequest
+0x1ee995480  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNGenerateHumanAttributesSegmentationRequest
+0x1ee995458  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNGenerateImageFeaturePrintRequest
+0x1ef778010  __AUTH,__objc_data  _OBJC_CLASS_$_VNGenerateImageSegmentationRequest
+0x1ef778628  __AUTH,__objc_data  _OBJC_CLASS_$_VNGenerateInstanceMaskGatingRequest
+0x1ef77b670  __AUTH,__objc_data  _OBJC_CLASS_$_VNGenerateInstanceMaskRequest
+0x1ee995408  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNGenerateObjectnessBasedSaliencyImageRequest
+0x1ef77b648  __AUTH,__objc_data  _OBJC_CLASS_$_VNGenerateOpticalFlowRequest
+0x1ef7776d8  __AUTH,__objc_data  _OBJC_CLASS_$_VNGeneratePersonInstanceMaskRequest
+0x1ee9953e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNGeneratePersonSegmentationRequest
+0x1ee9953b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNGenerateSegmentationRequest
+0x1ee995390  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNGenerateSkySegmentationRequest
+0x1ef77b5a8  __AUTH,__objc_data  _OBJC_CLASS_$_VNGeometryUtils
+0x1ef77b580  __AUTH,__objc_data  _OBJC_CLASS_$_VNHomographicImageRegistrationRequest
+0x1ef77b530  __AUTH,__objc_data  _OBJC_CLASS_$_VNHorizonObservation
+0x1ef7785d8  __AUTH,__objc_data  _OBJC_CLASS_$_VNHumanBodyPose3DObservation
+0x1ef77b508  __AUTH,__objc_data  _OBJC_CLASS_$_VNHumanBodyPoseObservation
+0x1ef777f98  __AUTH,__objc_data  _OBJC_CLASS_$_VNHumanBodyRecognizedPoint3D
+0x1ef77b4e0  __AUTH,__objc_data  _OBJC_CLASS_$_VNHumanHandPoseObservation
+0x1ef77b4b8  __AUTH,__objc_data  _OBJC_CLASS_$_VNHumanObservation
+0x1ef77b490  __AUTH,__objc_data  _OBJC_CLASS_$_VNIdentifyJunkRequest
+0x1ef77efa0  __AUTH,__objc_data  _OBJC_CLASS_$_VNImageAestheticsObservation
+0x1ef777f70  __AUTH,__objc_data  _OBJC_CLASS_$_VNImageAestheticsScoresObservation
+0x1ef77d588  __AUTH,__objc_data  _OBJC_CLASS_$_VNImageAlignmentObservation
+0x1ee996fd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNImageBasedRequest
+0x1ef77d4c0  __AUTH,__objc_data  _OBJC_CLASS_$_VNImageBlurObservation
+0x1ef77ef50  __AUTH,__objc_data  _OBJC_CLASS_$_VNImageBlurScoreRequest
+0x1ef77d470  __AUTH,__objc_data  _OBJC_CLASS_$_VNImageBrightnessObservation
+0x1ee995a20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNImageBuffer
+0x1ef77ea28  __AUTH,__objc_data  _OBJC_CLASS_$_VNImageExposureScoreRequest
+0x1ef77b418  __AUTH,__objc_data  _OBJC_CLASS_$_VNImageFingerprintsObservation
+0x1ef77b3f0  __AUTH,__objc_data  _OBJC_CLASS_$_VNImageHomographicAlignmentObservation
+0x1ef77b3c8  __AUTH,__objc_data  _OBJC_CLASS_$_VNImageNeuralHashprintObservation
+0x1ef77b3a0  __AUTH,__objc_data  _OBJC_CLASS_$_VNImageProcessingSession
+0x1ef77d420  __AUTH,__objc_data  _OBJC_CLASS_$_VNImageRegistrationRequest
+0x1ee994030  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNImageRequestHandler
+0x1ef77b378  __AUTH,__objc_data  _OBJC_CLASS_$_VNImageSaliencyObservation
+0x1ef77d3d0  __AUTH,__objc_data  _OBJC_CLASS_$_VNImageScoreObservation
+0x1ef77d358  __AUTH,__objc_data  _OBJC_CLASS_$_VNImageTranslationAlignmentObservation
+0x1ef77d330  __AUTH,__objc_data  _OBJC_CLASS_$_VNImageprint
+0x1ef77b350  __AUTH,__objc_data  _OBJC_CLASS_$_VNImageprintObservation
+0x1ef77f748  __AUTH,__objc_data  _OBJC_CLASS_$_VNInstanceMaskObservation
+0x1ef7775e8  __AUTH,__objc_data  _OBJC_CLASS_$_VNLensSmudgeObservation
+0x1ef777570  __AUTH,__objc_data  _OBJC_CLASS_$_VNModelResourceDescriptor
+0x1ef77b238  __AUTH,__objc_data  _OBJC_CLASS_$_VNMutableEntityIdentificationModel
+0x1ef77b210  __AUTH,__objc_data  _OBJC_CLASS_$_VNMutablePersonsModel
+0x1ef77b1e8  __AUTH,__objc_data  _OBJC_CLASS_$_VNNOPRequest
+0x1ee996380  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNObservation
+0x1ef77ea00  __AUTH,__objc_data  _OBJC_CLASS_$_VNPersonsModel
+0x1ef77e1b8  __AUTH,__objc_data  _OBJC_CLASS_$_VNPersonsModelAlgorithm
+0x1ef77e190  __AUTH,__objc_data  _OBJC_CLASS_$_VNPersonsModelAlgorithmVIPv2
+0x1ef77b0a8  __AUTH,__objc_data  _OBJC_CLASS_$_VNPersonsModelAlgorithmVIPv3
+0x1ef77e168  __AUTH,__objc_data  _OBJC_CLASS_$_VNPersonsModelConfiguration
+0x1ef77b030  __AUTH,__objc_data  _OBJC_CLASS_$_VNPersonsModelInformation
+0x1ef77b008  __AUTH,__objc_data  _OBJC_CLASS_$_VNPersonsModelPrediction
+0x1ef77e9d8  __AUTH,__objc_data  _OBJC_CLASS_$_VNPersonsModelReadOptions
+0x1ef77afe0  __AUTH,__objc_data  _OBJC_CLASS_$_VNPersonsModelWriteOptions
+0x1ee9933d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNPixelBufferObservation
+0x1ef77af90  __AUTH,__objc_data  _OBJC_CLASS_$_VNPoint
+0x1ef777ed0  __AUTH,__objc_data  _OBJC_CLASS_$_VNPoint3D
+0x1ef77d290  __AUTH,__objc_data  _OBJC_CLASS_$_VNProcessingDescriptor
+0x1ee9959f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNProcessingDevice
+0x1ee9951d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNRecognizeAnimalFacesRequest
+0x1ee9951b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNRecognizeAnimalHeadsRequest
+0x1ee995188  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNRecognizeAnimalsRequest
+0x1ee995160  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNRecognizeDocumentElementsRequest
+0x1ef77af18  __AUTH,__objc_data  _OBJC_CLASS_$_VNRecognizeDocumentElementsRequestElementConfiguration
+0x1ee993dd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNRecognizeDocumentsRequest
+0x1ee995138  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNRecognizeFoodAndDrinkRequest
+0x1ee995110  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNRecognizeObjectsRequest
+0x1ee9950e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNRecognizeSportBallsRequest
+0x1ee993a18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNRecognizeTextRequest
+0x1ef77fab8  __AUTH,__objc_data  _OBJC_CLASS_$_VNRecognizedObjectObservation
+0x1ef77ae50  __AUTH,__objc_data  _OBJC_CLASS_$_VNRecognizedPoint
+0x1ef777ea8  __AUTH,__objc_data  _OBJC_CLASS_$_VNRecognizedPoint3D
+0x1ef778498  __AUTH,__objc_data  _OBJC_CLASS_$_VNRecognizedPoints3DObservation
+0x1ef77ae28  __AUTH,__objc_data  _OBJC_CLASS_$_VNRecognizedPointsObservation
+0x1ee9936d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNRecognizedText
+0x1ef77fe28  __AUTH,__objc_data  _OBJC_CLASS_$_VNRecognizedTextBlock
+0x1ee993928  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNRecognizedTextBlockObservation
+0x1ee993b30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNRecognizedTextObservation
+0x1ee993f40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNRectangleObservation
+0x1ef77add8  __AUTH,__objc_data  _OBJC_CLASS_$_VNRemoveBackgroundRequest
+0x1ee996fb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNRequest
+0x1ef77ad88  __AUTH,__objc_data  _OBJC_CLASS_$_VNRequestForensics
+0x1ee9942b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNRequestInstanceCreator
+0x1ee996f10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNRequestSpecifier
+0x1ef777520  __AUTH,__objc_data  _OBJC_CLASS_$_VNResourceDescriptor
+0x1ef77d268  __AUTH,__objc_data  _OBJC_CLASS_$_VNResourceVersion
+0x1ef77fe00  __AUTH,__objc_data  _OBJC_CLASS_$_VNSaliencyImageObservation
+0x1ee995020  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNSceneClassificationRequest
+0x1ef77e0a0  __AUTH,__objc_data  _OBJC_CLASS_$_VNSceneFeaturePrint
+0x1ef77fdd8  __AUTH,__objc_data  _OBJC_CLASS_$_VNSceneObservation
+0x1ee993db0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNSceneprint
+0x1ef77f388  __AUTH,__objc_data  _OBJC_CLASS_$_VNSequenceRequestHandler
+0x1ee996dd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNSession
+0x1ef77e028  __AUTH,__objc_data  _OBJC_CLASS_$_VNSizeRange
+0x1ef77ac98  __AUTH,__objc_data  _OBJC_CLASS_$_VNSmartCamObservation
+0x1ef77ac70  __AUTH,__objc_data  _OBJC_CLASS_$_VNSmartCamprint
+0x1ee996b78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNStatefulRequest
+0x1ef77e000  __AUTH,__objc_data  _OBJC_CLASS_$_VNSupportedImageSize
+0x1ef77d1f0  __AUTH,__objc_data  _OBJC_CLASS_$_VNTargetedImageRequest
+0x1ef77ac20  __AUTH,__objc_data  _OBJC_CLASS_$_VNTextObservation
+0x1ef77fa40  __AUTH,__objc_data  _OBJC_CLASS_$_VNTorsoprint
+0x1ef77ab30  __AUTH,__objc_data  _OBJC_CLASS_$_VNTrackHomographicImageRegistrationRequest
+0x1ef77ab08  __AUTH,__objc_data  _OBJC_CLASS_$_VNTrackHomographyRequest
+0x1ef77aab8  __AUTH,__objc_data  _OBJC_CLASS_$_VNTrackLegacyFaceCoreObjectRequest
+0x1ef77aa68  __AUTH,__objc_data  _OBJC_CLASS_$_VNTrackMaskRequest
+0x1ef77aa18  __AUTH,__objc_data  _OBJC_CLASS_$_VNTrackObjectRequest
+0x1ef77a9f0  __AUTH,__objc_data  _OBJC_CLASS_$_VNTrackOpticalFlowRequest
+0x1ef77a9a0  __AUTH,__objc_data  _OBJC_CLASS_$_VNTrackRectangleRequest
+0x1ef77a978  __AUTH,__objc_data  _OBJC_CLASS_$_VNTrackTranslationalImageRegistrationRequest
+0x1ef77a950  __AUTH,__objc_data  _OBJC_CLASS_$_VNTrackingRequest
+0x1ef77a928  __AUTH,__objc_data  _OBJC_CLASS_$_VNTrajectoryObservation
+0x1ef77d1a0  __AUTH,__objc_data  _OBJC_CLASS_$_VNTranslationalImageRegistrationRequest
+0x1ee994f08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VNVYvzEtX1JlUdu8xx5qhDI
+0x1ef77a860  __AUTH,__objc_data  _OBJC_CLASS_$_VNVector
+0x1ef77a838  __AUTH,__objc_data  _OBJC_CLASS_$_VNVideoProcessor
+0x1ef77a810  __AUTH,__objc_data  _OBJC_CLASS_$_VNVideoProcessorCadence
+0x1ef77a7e8  __AUTH,__objc_data  _OBJC_CLASS_$_VNVideoProcessorFrameRateCadence
+0x1ef77a7c0  __AUTH,__objc_data  _OBJC_CLASS_$_VNVideoProcessorRequestProcessingOptions
+0x1ef77a798  __AUTH,__objc_data  _OBJC_CLASS_$_VNVideoProcessorTimeIntervalCadence
+0x1ee994eb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VN1JC7R3k4455fKQz0dY1VhQ
+0x1ef77a590  __AUTH,__objc_data  _OBJC_METACLASS_$_VN1vLyVSh30UQ26TGBoV8MHv
+0x1ef77a568  __AUTH,__objc_data  _OBJC_METACLASS_$_VN3XKGTKNBvy6h4RFtpxLyW
+0x1ee9961f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VN5kJNH3eYuyaLxNpZr5Z7zi
+0x1ef77a518  __AUTH,__objc_data  _OBJC_METACLASS_$_VN6Ac6Cyl5O5oK19HboyMBR
+0x1ef77a4f0  __AUTH,__objc_data  _OBJC_METACLASS_$_VN6B8mkraBUpwUqskMYPtS3
+0x1ee994e90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VN6Mb1ME89lyW3HpahkEygIG
+0x1ef77a4c8  __AUTH,__objc_data  _OBJC_METACLASS_$_VN6kBnCOr2mZlSV6yV1dLwB
+0x1ef77e910  __AUTH,__objc_data  _OBJC_METACLASS_$_VNAlignFaceRectangleRequest
+0x1ef77a450  __AUTH,__objc_data  _OBJC_METACLASS_$_VNAnimalBodyPoseObservation
+0x1ef77a428  __AUTH,__objc_data  _OBJC_METACLASS_$_VNAnimalObservation
+0x1ef77a400  __AUTH,__objc_data  _OBJC_METACLASS_$_VNAnimalprint
+0x1ef77f9c8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNBarcodeObservation
+0x1ee994cd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNCalculateImageAestheticsScoresRequest
+0x1ee993310  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNCanceller
+0x1ef77a2e8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNCircle
+0x1ef77a2c0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNClassificationCustomHierarchy
+0x1ee993810  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNClassificationObservation
+0x1ee994cb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNClassifyCityNatureImageRequest
+0x1ee996a10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNClassifyFaceAttributesRequest
+0x1ee9960d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNClassifyImageAestheticsRequest
+0x1ee994c88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNClassifyImageRequest
+0x1ee997000  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNClassifyJunkImageRequest
+0x1ef77a270  __AUTH,__objc_data  _OBJC_METACLASS_$_VNClassifyMemeImageRequest
+0x1ee994c60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNClassifyPotentialLandmarkRequest
+0x1ef77a220  __AUTH,__objc_data  _OBJC_METACLASS_$_VNCluster
+0x1ef77a1f8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNClusterObservation
+0x1ef77e8c0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNClustererBuilder
+0x1ef77d088  __AUTH,__objc_data  _OBJC_METACLASS_$_VNClustererBuilderOptions
+0x1ef77d038  __AUTH,__objc_data  _OBJC_METACLASS_$_VNClustererOptions
+0x1ef77d010  __AUTH,__objc_data  _OBJC_METACLASS_$_VNClustererQuery
+0x1ef77a1d0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNClustererQueryOptions
+0x1ef77f9a0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNContour
+0x1ef77f978  __AUTH,__objc_data  _OBJC_METACLASS_$_VNContoursObservation
+0x1ef77a158  __AUTH,__objc_data  _OBJC_METACLASS_$_VNCoreMLFeatureValueObservation
+0x1ef77a130  __AUTH,__objc_data  _OBJC_METACLASS_$_VNCoreMLModel
+0x1ef77a108  __AUTH,__objc_data  _OBJC_METACLASS_$_VNCoreMLRequest
+0x1ee996e98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNCreateAnimalprintRequest
+0x1ef779fa0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNCreateDetectionprintRequest
+0x1ef779f50  __AUTH,__objc_data  _OBJC_METACLASS_$_VNCreateFaceRegionMapRequest
+0x1ee9969e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNCreateFaceprintRequest
+0x1ee994b20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNCreateImageFingerprintsRequest
+0x1ef77cf48  __AUTH,__objc_data  _OBJC_METACLASS_$_VNCreateImageprintRequest
+0x1ef779ed8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNCreateNeuralHashprintRequest
+0x1ee9969c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNCreateSceneprintRequest
+0x1ef779e88  __AUTH,__objc_data  _OBJC_METACLASS_$_VNCreateSmartCamprintRequest
+0x1ef77f338  __AUTH,__objc_data  _OBJC_METACLASS_$_VNCreateTorsoprintRequest
+0x1ef779e10  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDataDetectorResult
+0x1ef779de8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectAnimalBodyPoseRequest
+0x1ef77df60  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectBarcodesRequest
+0x1ef77ed98  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectContoursRequest
+0x1ef779d98  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectDocumentSegmentationRequest
+0x1ef779d70  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectFace3DLandmarksRequest
+0x1ef77f310  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectFaceCaptureQualityRequest
+0x1ef77e870  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectFaceExpressionsRequest
+0x1ef77cf20  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectFaceGazeRequest
+0x1ee9932e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNDetectFaceLandmarksRequest
+0x1ef77f658  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectFacePoseRequest
+0x1ee996b00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNDetectFaceRectanglesRequest
+0x1ef779d20  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectHorizonRequest
+0x1ef777e08  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectHumanBodyPose3DRequest
+0x1ef779cf8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectHumanBodyPoseRequest
+0x1ef779ca8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectHumanHandPoseRequest
+0x1ee994af8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNDetectHumanHeadRectanglesRequest
+0x1ee994ad0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNDetectHumanRectanglesRequest
+0x1ef777250  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectLensSmudgeRequest
+0x1ef779c30  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectRectanglesRequest
+0x1ef779be0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectScreenGazeRequest
+0x1ef779b90  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectTextRectanglesRequest
+0x1ef779b40  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectTrajectoriesRequest
+0x1ee994120  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNDetectedObjectObservation
+0x1ef779af0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectedPoint
+0x1ef779ac8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectionprint
+0x1ef779a78  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectionprintObservation
+0x1ef779a50  __AUTH,__objc_data  _OBJC_METACLASS_$_VNDetectionprintTensor
+0x1ee993ab8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNDocumentObservation
+0x1ef77df10  __AUTH,__objc_data  _OBJC_METACLASS_$_VNEntityIdentificationModel
+0x1ef77dee8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNEntityIdentificationModelAlgorithm
+0x1ef77dec0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNEntityIdentificationModelAlgorithmVIPv2
+0x1ef779a00  __AUTH,__objc_data  _OBJC_METACLASS_$_VNEntityIdentificationModelAlgorithmVIPv3
+0x1ef77de98  __AUTH,__objc_data  _OBJC_METACLASS_$_VNEntityIdentificationModelConfiguration
+0x1ef7799d8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNEntityIdentificationModelInformation
+0x1ef7799b0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNEntityIdentificationModelPrediction
+0x1ef77de70  __AUTH,__objc_data  _OBJC_METACLASS_$_VNEntityIdentificationModelReadOptions
+0x1ef779938  __AUTH,__objc_data  _OBJC_METACLASS_$_VNEntityIdentificationModelWriteOptions
+0x1ee993ef0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNEspressoModelImageprint
+0x1ef77dd80  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFaceAttributeCategory
+0x1ef77e848  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFaceAttributes
+0x1ef77dd58  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFaceGaze
+0x1ef77e820  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFaceLandmarkRegion
+0x1ef77e7f8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFaceLandmarkRegion2D
+0x1ef779910  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFaceLandmarkRegion3D
+0x1ef77e7d0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFaceLandmarks
+0x1ef77e7a8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFaceLandmarks2D
+0x1ef7798e8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFaceLandmarks3D
+0x1ef7798c0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFaceLegacyFaceCore
+0x1ee9935b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNFaceObservation
+0x1ef77dd30  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFaceRegionMap
+0x1ef77dd08  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFaceScreenGaze
+0x1ef77dce0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFaceSegments
+0x1ef77f928  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFaceTorsoprint
+0x1ef77fd60  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFaceprint
+0x1ef77cea8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFaceprintInferenceNetworkDescriptor
+0x1ef77fd38  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFeaturePrintObservation
+0x1ef779848  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFingerprintHash
+0x1ef777020  __AUTH,__objc_data  _OBJC_METACLASS_$_VNFrameworkResourceDescriptor
+0x1ee994238  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNGenerateAnimalSegmentationRequest
+0x1ee995e30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNGenerateAttentionBasedSaliencyImageRequest
+0x1ef77dcb8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNGenerateFaceSegmentsRequest
+0x1ef7797f8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNGenerateForegroundInstanceMaskRequest
+0x1ee9949b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNGenerateGlassesSegmentationRequest
+0x1ee994990  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNGenerateHumanAttributesSegmentationRequest
+0x1ee994968  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNGenerateImageFeaturePrintRequest
+0x1ef777d40  __AUTH,__objc_data  _OBJC_METACLASS_$_VNGenerateImageSegmentationRequest
+0x1ef778380  __AUTH,__objc_data  _OBJC_METACLASS_$_VNGenerateInstanceMaskGatingRequest
+0x1ef779758  __AUTH,__objc_data  _OBJC_METACLASS_$_VNGenerateInstanceMaskRequest
+0x1ee994918  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNGenerateObjectnessBasedSaliencyImageRequest
+0x1ef779730  __AUTH,__objc_data  _OBJC_METACLASS_$_VNGenerateOpticalFlowRequest
+0x1ef776ff8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNGeneratePersonInstanceMaskRequest
+0x1ee9948f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNGeneratePersonSegmentationRequest
+0x1ee9948c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNGenerateSegmentationRequest
+0x1ee9948a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNGenerateSkySegmentationRequest
+0x1ef779690  __AUTH,__objc_data  _OBJC_METACLASS_$_VNGeometryUtils
+0x1ef779668  __AUTH,__objc_data  _OBJC_METACLASS_$_VNHomographicImageRegistrationRequest
+0x1ef779618  __AUTH,__objc_data  _OBJC_METACLASS_$_VNHorizonObservation
+0x1ef778330  __AUTH,__objc_data  _OBJC_METACLASS_$_VNHumanBodyPose3DObservation
+0x1ef7795f0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNHumanBodyPoseObservation
+0x1ef777cc8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNHumanBodyRecognizedPoint3D
+0x1ef7795c8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNHumanHandPoseObservation
+0x1ef7795a0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNHumanObservation
+0x1ef779578  __AUTH,__objc_data  _OBJC_METACLASS_$_VNIdentifyJunkRequest
+0x1ef77ecd0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNImageAestheticsObservation
+0x1ef777ca0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNImageAestheticsScoresObservation
+0x1ef77ce08  __AUTH,__objc_data  _OBJC_METACLASS_$_VNImageAlignmentObservation
+0x1ee997028  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNImageBasedRequest
+0x1ef77cd40  __AUTH,__objc_data  _OBJC_METACLASS_$_VNImageBlurObservation
+0x1ef77eca8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNImageBlurScoreRequest
+0x1ef77ccf0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNImageBrightnessObservation
+0x1ee995cc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNImageBuffer
+0x1ef77e6e0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNImageExposureScoreRequest
+0x1ef779500  __AUTH,__objc_data  _OBJC_METACLASS_$_VNImageFingerprintsObservation
+0x1ef7794d8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNImageHomographicAlignmentObservation
+0x1ef7794b0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNImageNeuralHashprintObservation
+0x1ef779488  __AUTH,__objc_data  _OBJC_METACLASS_$_VNImageProcessingSession
+0x1ef77cca0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNImageRegistrationRequest
+0x1ee994080  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNImageRequestHandler
+0x1ef779460  __AUTH,__objc_data  _OBJC_METACLASS_$_VNImageSaliencyObservation
+0x1ef77cc50  __AUTH,__objc_data  _OBJC_METACLASS_$_VNImageScoreObservation
+0x1ef77cbd8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNImageTranslationAlignmentObservation
+0x1ef77cbb0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNImageprint
+0x1ef779438  __AUTH,__objc_data  _OBJC_METACLASS_$_VNImageprintObservation
+0x1ef77f608  __AUTH,__objc_data  _OBJC_METACLASS_$_VNInstanceMaskObservation
+0x1ef776f08  __AUTH,__objc_data  _OBJC_METACLASS_$_VNLensSmudgeObservation
+0x1ef776e90  __AUTH,__objc_data  _OBJC_METACLASS_$_VNModelResourceDescriptor
+0x1ef779320  __AUTH,__objc_data  _OBJC_METACLASS_$_VNMutableEntityIdentificationModel
+0x1ef7792f8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNMutablePersonsModel
+0x1ef7792d0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNNOPRequest
+0x1ee995bd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNObservation
+0x1ef77e6b8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNPersonsModel
+0x1ef77dba0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNPersonsModelAlgorithm
+0x1ef77db78  __AUTH,__objc_data  _OBJC_METACLASS_$_VNPersonsModelAlgorithmVIPv2
+0x1ef779190  __AUTH,__objc_data  _OBJC_METACLASS_$_VNPersonsModelAlgorithmVIPv3
+0x1ef77db50  __AUTH,__objc_data  _OBJC_METACLASS_$_VNPersonsModelConfiguration
+0x1ef779118  __AUTH,__objc_data  _OBJC_METACLASS_$_VNPersonsModelInformation
+0x1ef7790f0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNPersonsModelPrediction
+0x1ef77e690  __AUTH,__objc_data  _OBJC_METACLASS_$_VNPersonsModelReadOptions
+0x1ef7790c8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNPersonsModelWriteOptions
+0x1ee993298  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNPixelBufferObservation
+0x1ef779078  __AUTH,__objc_data  _OBJC_METACLASS_$_VNPoint
+0x1ef777c00  __AUTH,__objc_data  _OBJC_METACLASS_$_VNPoint3D
+0x1ef77cb10  __AUTH,__objc_data  _OBJC_METACLASS_$_VNProcessingDescriptor
+0x1ee995980  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNProcessingDevice
+0x1ee9946c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNRecognizeAnimalFacesRequest
+0x1ee994698  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNRecognizeAnimalHeadsRequest
+0x1ee994670  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNRecognizeAnimalsRequest
+0x1ee994648  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNRecognizeDocumentElementsRequest
+0x1ef779000  __AUTH,__objc_data  _OBJC_METACLASS_$_VNRecognizeDocumentElementsRequestElementConfiguration
+0x1ee993d88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNRecognizeDocumentsRequest
+0x1ee994620  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNRecognizeFoodAndDrinkRequest
+0x1ee9945f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNRecognizeObjectsRequest
+0x1ee9945d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNRecognizeSportBallsRequest
+0x1ee993978  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNRecognizeTextRequest
+0x1ef77f860  __AUTH,__objc_data  _OBJC_METACLASS_$_VNRecognizedObjectObservation
+0x1ef778f38  __AUTH,__objc_data  _OBJC_METACLASS_$_VNRecognizedPoint
+0x1ef777bd8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNRecognizedPoint3D
+0x1ef7781f0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNRecognizedPoints3DObservation
+0x1ef778f10  __AUTH,__objc_data  _OBJC_METACLASS_$_VNRecognizedPointsObservation
+0x1ee993540  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNRecognizedText
+0x1ef77fd10  __AUTH,__objc_data  _OBJC_METACLASS_$_VNRecognizedTextBlock
+0x1ee9938d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNRecognizedTextBlockObservation
+0x1ee993a90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNRecognizedTextObservation
+0x1ee993ea0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNRectangleObservation
+0x1ef778ec0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNRemoveBackgroundRequest
+0x1ee996f88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNRequest
+0x1ef778e70  __AUTH,__objc_data  _OBJC_METACLASS_$_VNRequestForensics
+0x1ee9941e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNRequestInstanceCreator
+0x1ee996f60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNRequestSpecifier
+0x1ef776e40  __AUTH,__objc_data  _OBJC_METACLASS_$_VNResourceDescriptor
+0x1ef77cae8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNResourceVersion
+0x1ef77fce8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNSaliencyImageObservation
+0x1ee994508  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNSceneClassificationRequest
+0x1ef77da60  __AUTH,__objc_data  _OBJC_METACLASS_$_VNSceneFeaturePrint
+0x1ef77fcc0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNSceneObservation
+0x1ee993d38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNSceneprint
+0x1ef77f1d0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNSequenceRequestHandler
+0x1ee996e48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNSession
+0x1ef77d9e8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNSizeRange
+0x1ef778d80  __AUTH,__objc_data  _OBJC_METACLASS_$_VNSmartCamObservation
+0x1ef778d58  __AUTH,__objc_data  _OBJC_METACLASS_$_VNSmartCamprint
+0x1ee996ab0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNStatefulRequest
+0x1ef77d9c0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNSupportedImageSize
+0x1ef77ca70  __AUTH,__objc_data  _OBJC_METACLASS_$_VNTargetedImageRequest
+0x1ef778d08  __AUTH,__objc_data  _OBJC_METACLASS_$_VNTextObservation
+0x1ef77f7e8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNTorsoprint
+0x1ef778c18  __AUTH,__objc_data  _OBJC_METACLASS_$_VNTrackHomographicImageRegistrationRequest
+0x1ef778bf0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNTrackHomographyRequest
+0x1ef778ba0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNTrackLegacyFaceCoreObjectRequest
+0x1ef778b50  __AUTH,__objc_data  _OBJC_METACLASS_$_VNTrackMaskRequest
+0x1ef778b00  __AUTH,__objc_data  _OBJC_METACLASS_$_VNTrackObjectRequest
+0x1ef778ad8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNTrackOpticalFlowRequest
+0x1ef778a88  __AUTH,__objc_data  _OBJC_METACLASS_$_VNTrackRectangleRequest
+0x1ef778a60  __AUTH,__objc_data  _OBJC_METACLASS_$_VNTrackTranslationalImageRegistrationRequest
+0x1ef778a38  __AUTH,__objc_data  _OBJC_METACLASS_$_VNTrackingRequest
+0x1ef778a10  __AUTH,__objc_data  _OBJC_METACLASS_$_VNTrajectoryObservation
+0x1ef77ca20  __AUTH,__objc_data  _OBJC_METACLASS_$_VNTranslationalImageRegistrationRequest
+0x1ee9943f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VNVYvzEtX1JlUdu8xx5qhDI
+0x1ef778948  __AUTH,__objc_data  _OBJC_METACLASS_$_VNVector
+0x1ef778920  __AUTH,__objc_data  _OBJC_METACLASS_$_VNVideoProcessor
+0x1ef7788f8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNVideoProcessorCadence
+0x1ef7788d0  __AUTH,__objc_data  _OBJC_METACLASS_$_VNVideoProcessorFrameRateCadence
+0x1ef7788a8  __AUTH,__objc_data  _OBJC_METACLASS_$_VNVideoProcessorRequestProcessingOptions
+0x1ef778880  __AUTH,__objc_data  _OBJC_METACLASS_$_VNVideoProcessorTimeIntervalCadence
+0x1e0eac138  __DATA_CONST,__const  _VN0af6454e97767772ce64a19ddaf61f0c
+0x1e0eac130  __DATA_CONST,__const  _VN1HsiXmKrxTsH8TYOuN5s7G3uHSP75iYS
+0x1e0eac128  __DATA_CONST,__const  _VN1I7oR8JHxER2i7d6nQxNtHhGXxkJuH7c
+0x1e0eac120  __DATA_CONST,__const  _VN1PwKd46IDZj2ErCN9d1fTn3FuN3h4d9p
+0x1e0eac118  __DATA_CONST,__const  _VN1VQUXOcXrfZPXtaGgfZBhujM6uH6hvmI
+0x1e0eac110  __DATA_CONST,__const  _VN1kD4zwSpSn6esc2wHjyAeZ2IRmwqjgtt
+0x1e0eac108  __DATA_CONST,__const  _VN1yPD9G185LIMKFd9RgandG6vUu4B3DZk
+0x1e0eac100  __DATA_CONST,__const  _VN21VM8NbCJMJjpepNo1kZkxteFybpDwlB
+0x1e0eac0f8  __DATA_CONST,__const  _VN220a6626eb3cb51295a4e250ad9da319
+0x1e0eac0f0  __DATA_CONST,__const  _VN2AhEqI0IOCJAaCX6zovlg85aFZ80JfES
+0x1e0eac0e8  __DATA_CONST,__const  _VN2DSYD77FUMKqtcogofprEd
+0x1e0eac0e0  __DATA_CONST,__const  _VN2TVJG6FfNTt72vwVKOv1Jf5dWtEHvQIS
+0x1e0eac0d8  __DATA_CONST,__const  _VN2X5h7waRTqk71pInqK4dnT6sZ6dRElxe
+0x1e0eac0d0  __DATA_CONST,__const  _VN2eECeAuLQ8wnXvvNNkc5XEtpjqyiYvIp
+0x1e0eac0c8  __DATA_CONST,__const  _VN2nEhtfck4KB7KsvJeCeSEPcGLfKzeUKi
+0x1e0eac0c0  __DATA_CONST,__const  _VN2vIWnsZbk4Su55oeWfKDq1
+0x1e0eac0b8  __DATA_CONST,__const  _VN31UxDngUK44hDexm8CSuZnlLxECLb0yU
+0x1e0eac0b0  __DATA_CONST,__const  _VN34LMYSFC7onytwsvH0y6uz2QaYvqY9qi
+0x1e0eac0a8  __DATA_CONST,__const  _VN35FOB1QhtSfYGRIJvTgtTq
+0x1e0eac0a0  __DATA_CONST,__const  _VN3FNQUJVIs2puI1uPc9mxh7
+0x1e0eac098  __DATA_CONST,__const  _VN3WbFaDRN3PTBiMaMEq5ttCx7hmmfySmR
+0x1e0eac090  __DATA_CONST,__const  _VN3rKrpi4DELvo8AgM5Y3C68ryFlgB1grk
+0x1e0eac088  __DATA_CONST,__const  _VN42tJSMaSWdsAnZKXv8XcZg2j2AIS7gjm
+0x1e0eac080  __DATA_CONST,__const  _VN465E5iEqlR2tknJ0qZkyAn3yIDrmUpJw
+0x1e0eac078  __DATA_CONST,__const  _VN4MFjUmPIIWefw2ZktBTwVB
+0x1e0eac070  __DATA_CONST,__const  _VN4QuphG8kE4qDaDycivBkX5
+0x1e0eac068  __DATA_CONST,__const  _VN4bzonkXHYlzBnJNXcyyPd8WLw1wAI1Pv
+0x1e0eac060  __DATA_CONST,__const  _VN4lC1NTVMt6oWugtej0fqgS3z5p60aMup
+0x1e0eac058  __DATA_CONST,__const  _VN4lCLwxDV30rFLSeoihd8yM1zdbka3cVu
+0x1e0eac050  __DATA_CONST,__const  _VN4oD9MSPBdmmSq6KG3k7nYqdSMT5aNp6p
+0x1e0eac048  __DATA_CONST,__const  _VN4qKg9nfl3p0M4juXFIsbUb7tpfCv9epx
+0x1e0eac040  __DATA_CONST,__const  _VN5JBEfctS0JUWeTVUxBAKOSXCUuMqPxTg
+0x1e0eac038  __DATA_CONST,__const  _VN5SpoOVxahuTheCrHGepAYKTVB1baFLhQ
+0x1e0eac030  __DATA_CONST,__const  _VN5iEOkR2NrIkLsZRvJTn61k1ovk3hvuxY
+0x1e0eac028  __DATA_CONST,__const  _VN5ijZTfHVHp6ubCHBh4oIZR1SW4xbvQ00
+0x1e0eac020  __DATA_CONST,__const  _VN607hNga4JKRc1ljftiy9QfPCqbXQmLP4
+0x1e0eac018  __DATA_CONST,__const  _VN62b042cc67e0a7d589ecdb58232fe23d
+0x1e0eac010  __DATA_CONST,__const  _VN6LhAjooMZpZkrkhS48XbQt7602EpEAxv
+0x1e0eac008  __DATA_CONST,__const  _VN6XNMvaRunPpzWjGa9uUHD6
+0x1e0eac000  __DATA_CONST,__const  _VN6YAJH4UBXYDBoH6cemKhJR7fPi2dt5Qd
+0x1e0eabff8  __DATA_CONST,__const  _VN6ZsEIQ9ri2eF1vhsxw5COm
+0x1e0eabff0  __DATA_CONST,__const  _VN6a4sQBuQ5pSiUEd6p9iQflpz8xkWOnD2
+0x1e0eabfe8  __DATA_CONST,__const  _VN6cM1E1jfvMnUZoEeDjinPOtJKpacqIpr
+0x1e0eabfe0  __DATA_CONST,__const  _VN6i04vrZluouTItkCUMtS916cLgTyvODX
+0x1e0eabfd8  __DATA_CONST,__const  _VN6lDi9hTBjr2vdjAJ5rwdun4YEH09u5F5
+0x1e0eabfd0  __DATA_CONST,__const  _VN6pbJdmseepvIGYzcDyryle1xGdZEWhHN
+0x1e0eabfc8  __DATA_CONST,__const  _VN79a8f83d9d55eb4eb2c9695902c47b53
+0x1e0eabfc0  __DATA_CONST,__const  _VN7CY11MLEimaE8WoiQ4opgi5HOi84j0UH
+0x1e0eabfb8  __DATA_CONST,__const  _VN7ICFqxCpgr8BTWkFrFGYTQ3INUhxhYXR
+0x1e0eabfb0  __DATA_CONST,__const  _VN7ar6bR0PqRvM9BZ0nqEdwh61tXzue1Ut
+0x1e0eabfa8  __DATA_CONST,__const  _VN7gQUejje8mmnE9GSTsVBVV
+0x1e0eabfa0  __DATA_CONST,__const  _VN7ja3fTi9TZDyKN8NdYJaWqla1NRFdcRX
+0x1e0eabf98  __DATA_CONST,__const  _VN7vELTVTtPH26ptfCYi9dUHH8NxJ7O3cF
+0x1e0eabf90  __DATA_CONST,__const  _VN7yMsLB9ggBYLDbJYIMGMSW6YBgi5uH2p
+0x1e0eabf88  __DATA_CONST,__const  _VN81aedeb999c79d74e79af7f1c922cf97
+0x1e0eabf80  __DATA_CONST,__const  _VN9bdc36cda32be948a5089e37392596ec
+0x1e0eabf78  __DATA_CONST,__const  _VN9f5b8e9dc1b3c824d79372f87b072ee3
+0x1a58f7484  __TEXT,__text  _VNANEArchitectureName
+0x1a5b48ea4  __TEXT,__text  _VNANEArchitectureSubTypeProductVariantName
+0x1a5b48e3c  __TEXT,__text  _VNANEArchitectureSubTypeVariantName
+0x1a5b490c4  __TEXT,__text  _VNANEComputeDeviceSupportsExecution
+0x1a5b48f0c  __TEXT,__text  _VNANEGenerationNumberForArchitectureName
+0x1a5b2cf90  __TEXT,__text  _VNAffineTransformForVisionToTopLeftOriginOrientation
+0x1e0eabf20  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameLeftBackElbow
+0x1e0eabf18  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameLeftBackKnee
+0x1e0eabf10  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameLeftBackPaw
+0x1e0eabf08  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameLeftEarBottom
+0x1e0eabf00  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameLeftEarMiddle
+0x1e0eabef8  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameLeftEarTop
+0x1e0eabef0  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameLeftEye
+0x1e0eabee8  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameLeftFrontElbow
+0x1e0eabee0  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameLeftFrontKnee
+0x1e0eabed8  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameLeftFrontPaw
+0x1e0eabed0  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameNeck
+0x1e0eabec8  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameNose
+0x1e0eabec0  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameRightBackElbow
+0x1e0eabeb8  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameRightBackKnee
+0x1e0eabeb0  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameRightBackPaw
+0x1e0eabea8  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameRightEarBottom
+0x1e0eabea0  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameRightEarMiddle
+0x1e0eabe98  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameRightEarTop
+0x1e0eabe90  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameRightEye
+0x1e0eabe88  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameRightFrontElbow
+0x1e0eabe80  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameRightFrontKnee
+0x1e0eabe78  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameRightFrontPaw
+0x1e0eabe70  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameTailBottom
+0x1e0eabe68  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameTailMiddle
+0x1e0eabe60  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointNameTailTop
+0x1e0eabe58  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointsGroupNameAll
+0x1e0eabe50  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointsGroupNameForelegs
+0x1e0eabe48  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointsGroupNameHead
+0x1e0eabe40  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointsGroupNameHindlegs
+0x1e0eabe38  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointsGroupNameTail
+0x1e0eabe30  __DATA_CONST,__const  _VNAnimalBodyPoseObservationJointsGroupNameTrunk
+0x1e0eabe28  __DATA_CONST,__const  _VNAnimalFaceIdentifierCatFace
+0x1e0eabe20  __DATA_CONST,__const  _VNAnimalFaceIdentifierDogFace
+0x1e0eabe18  __DATA_CONST,__const  _VNAnimalHeadIdentifierCatHead
+0x1e0eabe10  __DATA_CONST,__const  _VNAnimalHeadIdentifierDogHead
+0x1e0eabe08  __DATA_CONST,__const  _VNAnimalIdentifierCat
+0x1e0eabe00  __DATA_CONST,__const  _VNAnimalIdentifierDog
+0x1e0eabde0  __DATA_CONST,__const  _VNBarcodeSymbologyAppClipCode
+0x1e0eabdd8  __DATA_CONST,__const  _VNBarcodeSymbologyAztec
+0x1e0eabdd0  __DATA_CONST,__const  _VNBarcodeSymbologyCodabar
+0x1e0eabdc8  __DATA_CONST,__const  _VNBarcodeSymbologyCode128
+0x1e0eabdc0  __DATA_CONST,__const  _VNBarcodeSymbologyCode39
+0x1e0eabdb8  __DATA_CONST,__const  _VNBarcodeSymbologyCode39Checksum
+0x1e0eabdb0  __DATA_CONST,__const  _VNBarcodeSymbologyCode39FullASCII
+0x1e0eabda8  __DATA_CONST,__const  _VNBarcodeSymbologyCode39FullASCIIChecksum
+0x1e0eabda0  __DATA_CONST,__const  _VNBarcodeSymbologyCode93
+0x1e0eabd98  __DATA_CONST,__const  _VNBarcodeSymbologyCode93i
+0x1e0eabd90  __DATA_CONST,__const  _VNBarcodeSymbologyDataMatrix
+0x1e0eabd88  __DATA_CONST,__const  _VNBarcodeSymbologyEAN13
+0x1e0eabd80  __DATA_CONST,__const  _VNBarcodeSymbologyEAN8
+0x1e0eabd78  __DATA_CONST,__const  _VNBarcodeSymbologyGS1DataBar
+0x1e0eabd70  __DATA_CONST,__const  _VNBarcodeSymbologyGS1DataBarExpanded
+0x1e0eabd68  __DATA_CONST,__const  _VNBarcodeSymbologyGS1DataBarLimited
+0x1e0eabd60  __DATA_CONST,__const  _VNBarcodeSymbologyI2of5
+0x1e0eabd58  __DATA_CONST,__const  _VNBarcodeSymbologyI2of5Checksum
+0x1e0eabd50  __DATA_CONST,__const  _VNBarcodeSymbologyITF14
+0x1e0eabd48  __DATA_CONST,__const  _VNBarcodeSymbologyMSIPlessey
+0x1e0eabd40  __DATA_CONST,__const  _VNBarcodeSymbologyMicroPDF417
+0x1e0eabd38  __DATA_CONST,__const  _VNBarcodeSymbologyMicroQR
+0x1e0eabd30  __DATA_CONST,__const  _VNBarcodeSymbologyPDF417
+0x1e0eabd28  __DATA_CONST,__const  _VNBarcodeSymbologyQR
+0x1e0eabd20  __DATA_CONST,__const  _VNBarcodeSymbologyUPCE
+0x1e0eabd00  __DATA_CONST,__const  _VNBodyLandmarkKeyLeftAnkle
+0x1e0eabcf8  __DATA_CONST,__const  _VNBodyLandmarkKeyLeftEar
+0x1e0eabcf0  __DATA_CONST,__const  _VNBodyLandmarkKeyLeftElbow
+0x1e0eabce8  __DATA_CONST,__const  _VNBodyLandmarkKeyLeftEye
+0x1e0eabce0  __DATA_CONST,__const  _VNBodyLandmarkKeyLeftHip
+0x1e0eabcd8  __DATA_CONST,__const  _VNBodyLandmarkKeyLeftKnee
+0x1e0eabcd0  __DATA_CONST,__const  _VNBodyLandmarkKeyLeftShoulder
+0x1e0eabcc8  __DATA_CONST,__const  _VNBodyLandmarkKeyLeftWrist
+0x1e0eabcc0  __DATA_CONST,__const  _VNBodyLandmarkKeyNeck
+0x1e0eabcb8  __DATA_CONST,__const  _VNBodyLandmarkKeyNose
+0x1e0eabcb0  __DATA_CONST,__const  _VNBodyLandmarkKeyRightAnkle
+0x1e0eabca8  __DATA_CONST,__const  _VNBodyLandmarkKeyRightEar
+0x1e0eabca0  __DATA_CONST,__const  _VNBodyLandmarkKeyRightElbow
+0x1e0eabc98  __DATA_CONST,__const  _VNBodyLandmarkKeyRightEye
+0x1e0eabc90  __DATA_CONST,__const  _VNBodyLandmarkKeyRightHip
+0x1e0eabc88  __DATA_CONST,__const  _VNBodyLandmarkKeyRightKnee
+0x1e0eabc80  __DATA_CONST,__const  _VNBodyLandmarkKeyRightShoulder
+0x1e0eabc78  __DATA_CONST,__const  _VNBodyLandmarkKeyRightWrist
+0x1e0eabc70  __DATA_CONST,__const  _VNBodyLandmarkKeyRoot
+0x1e0eabc68  __DATA_CONST,__const  _VNBodyLandmarkRegionKeyFace
+0x1e0eabc60  __DATA_CONST,__const  _VNBodyLandmarkRegionKeyLeftArm
+0x1e0eabc58  __DATA_CONST,__const  _VNBodyLandmarkRegionKeyLeftLeg
+0x1e0eabc50  __DATA_CONST,__const  _VNBodyLandmarkRegionKeyRightArm
+0x1e0eabc48  __DATA_CONST,__const  _VNBodyLandmarkRegionKeyRightLeg
+0x1e0eabc40  __DATA_CONST,__const  _VNBodyLandmarkRegionKeyTorso
+0x1a5b488ec  __TEXT,__text  _VNCheckRatioMismatch
+0x1e0eabbc0  __DATA_CONST,__const  _VNCleanupLevel_Complete
+0x1e0eabbb8  __DATA_CONST,__const  _VNCleanupLevel_Partial
+0x1e0eabbb0  __DATA_CONST,__const  _VNCleanupPurgeAll
+0x1e0eabba8  __DATA_CONST,__const  _VNClusteringAlgorithm_Greedy
+0x1e0eabba0  __DATA_CONST,__const  _VNClusteringAlgorithm_GreedyWithTorso
+0x1e0eabb98  __DATA_CONST,__const  _VNComputeStageMain
+0x1e0eabb90  __DATA_CONST,__const  _VNComputeStagePostProcessing
+0x1a5945888  __TEXT,__text  _VNCropAndScaleFromURLToPixelBuffers
+0x1a5944db4  __TEXT,__text  _VNCropAndScalePixelBufferToPixelBuffers
+0x1e0eabae0  __DATA_CONST,__const  _VNDGCsUiwnQwGz0qSSQPGGd177EyoSaoGN
+0x1a5b47d30  __TEXT,__text  _VNDebugBoundingBoxColor
+0x1a5b47bc0  __TEXT,__text  _VNDebugColorFromValues
+0x1a5b47c10  __TEXT,__text  _VNDebugContrastOutlineColor
+0x1a5b48930  __TEXT,__text  _VNDebugFallbackSizeWhenImagesizeIsUnknown
+0x1a5b47d90  __TEXT,__text  _VNDebugFeatureColor
+0x1a5b4892c  __TEXT,__text  _VNDebugImageFromCGImage
+0x1a5b48adc  __TEXT,__text  _VNDebugImageRenderNormalizedCGPathOnImage
+0x1a5b48a24  __TEXT,__text  _VNDebugImageSizeFromObject
+0x1a5b47c70  __TEXT,__text  _VNDebugPathColor
+0x1a5b48940  __TEXT,__text  _VNDebugPathFromNormalizedCGPath
+0x1a5b47cd0  __TEXT,__text  _VNDebugQuadColor
+0x1e0eabad8  __DATA_CONST,__const  _VNDetectBarcodesLocateModeCenterFiveEachDirection
+0x1e0eabad0  __DATA_CONST,__const  _VNDetectBarcodesLocateModeCenterOneEachDirection
+0x1e0eabac8  __DATA_CONST,__const  _VNDetectBarcodesLocateModeCenterOneHorizontal
+0x1e0eabac0  __DATA_CONST,__const  _VNDetectBarcodesLocateModeCenterOneHorizontalThick
+0x1e0eabab8  __DATA_CONST,__const  _VNDetectBarcodesLocateModeCenterOneVertical
+0x1e0eabab0  __DATA_CONST,__const  _VNDetectBarcodesLocateModeCenterOneVerticalThick
+0x1e0eabaa8  __DATA_CONST,__const  _VNDetectBarcodesLocateModeCenterThreeEachDirection
+0x1e0eabaa0  __DATA_CONST,__const  _VNDetectBarcodesLocateModeCenterThreeEachDirectionAndCoverageAndDiagonals
+0x1e0eaba98  __DATA_CONST,__const  _VNDetectBarcodesLocateModeCenterThreeHorizontal
+0x1e0eaba90  __DATA_CONST,__const  _VNDetectBarcodesLocateModeCenterThreeHorizontalAndCoverageAndDiagonals
+0x1e0eaba88  __DATA_CONST,__const  _VNDetectBarcodesLocateModeCenterThreeHorizontalCrossed
+0x1e0eaba80  __DATA_CONST,__const  _VNDetectBarcodesLocateModeCenterThreeVertical
+0x1e0eaba78  __DATA_CONST,__const  _VNDetectBarcodesLocateModeCenterThreeVerticalAndCoverageAndDiagonals
+0x1e0eaba70  __DATA_CONST,__const  _VNDetectBarcodesLocateModeCenterThreeVerticalCrossed
+0x1e0eaba68  __DATA_CONST,__const  _VNDetectBarcodesLocateModeFastSearch
+0x1e0eaba60  __DATA_CONST,__const  _VNDetectBarcodesLocateModeRegularIntervalHorizontal
+0x1e0eaba58  __DATA_CONST,__const  _VNDetectBarcodesLocateModeRegularIntervalVertical
+0x1a59461f4  __TEXT,__text  _VNDetectionPrintShapes
+0x1a59461d0  __TEXT,__text  _VNDetectionPrintSupportedRevisions
+0x1a5946688  __TEXT,__text  _VNDetectionPrintsFromPixelBuffers
+0x1a5946d34  __TEXT,__text  _VNDetectionPrintsFromPixelBuffersUsesCPUOnly
+0x1e0eaba48  __DATA_CONST,__const  _VNDetectionprintTensorKeyMixed2
+0x1e0eaba40  __DATA_CONST,__const  _VNDetectionprintTensorKeyMixed6
+0x1e0eaba38  __DATA_CONST,__const  _VNDetectionprintTensorKeyStride16FeatureMap
+0x1e0eaba30  __DATA_CONST,__const  _VNDetectionprintTensorKeyStride8FeatureMap
+0x1a5945f58  __TEXT,__text  _VNElementCountForScenePrintRequestRevision
+0x1a5b47830  __TEXT,__text  _VNElementTypeSize
+0x1e0eab9b0  __DATA_CONST,__const  _VNEntityIdentificationModelErrorDomain
+0x1a599a1f0  __TEXT,__text  _VNEntityIdentificationModelObservationConformingClasses
+0x1a599a180  __TEXT,__text  _VNEntityIdentificationModelObservationConformingObject
+0x1a5999e18  __TEXT,__text  _VNEntityIdentificationModelPrintConformingClasses
+0x1a5999da8  __TEXT,__text  _VNEntityIdentificationModelPrintConformingObject
+0x1e0eab9a8  __DATA_CONST,__const  _VNErrorDomain
+0x1e0eab998  __DATA_CONST,__const  _VNExpressionFaceDisgusted
+0x1e0eab990  __DATA_CONST,__const  _VNExpressionFaceNeutral
+0x1e0eab988  __DATA_CONST,__const  _VNExpressionFaceScreaming
+0x1e0eab980  __DATA_CONST,__const  _VNExpressionFaceSmiling
+0x1e0eab978  __DATA_CONST,__const  _VNExpressionFaceSurprised
+0x1e0eab970  __DATA_CONST,__const  _VNExpressionFaceSuspicious
+0x1e0eab940  __DATA_CONST,__const  _VNFaceAttributeAgeAdult
+0x1e0eab938  __DATA_CONST,__const  _VNFaceAttributeAgeBaby
+0x1e0eab930  __DATA_CONST,__const  _VNFaceAttributeAgeChild
+0x1e0eab928  __DATA_CONST,__const  _VNFaceAttributeAgeSenior
+0x1e0eab920  __DATA_CONST,__const  _VNFaceAttributeAgeYoungAdult
+0x1e0eab918  __DATA_CONST,__const  _VNFaceAttributeBald
+0x1e0eab910  __DATA_CONST,__const  _VNFaceAttributeEyesClosed
+0x1e0eab908  __DATA_CONST,__const  _VNFaceAttributeEyesOpen
+0x1e0eab900  __DATA_CONST,__const  _VNFaceAttributeFaceHairBeard
+0x1e0eab8f8  __DATA_CONST,__const  _VNFaceAttributeFaceHairGoatee
+0x1e0eab8f0  __DATA_CONST,__const  _VNFaceAttributeFaceHairMoustache
+0x1e0eab8e8  __DATA_CONST,__const  _VNFaceAttributeFaceHairStubble
+0x1e0eab8e0  __DATA_CONST,__const  _VNFaceAttributeFaceHairUnsure
+0x1e0eab8d8  __DATA_CONST,__const  _VNFaceAttributeFacemask
+0x1e0eab8d0  __DATA_CONST,__const  _VNFaceAttributeFacemaskNone
+0x1e0eab8c8  __DATA_CONST,__const  _VNFaceAttributeGlassesNone
+0x1e0eab8c0  __DATA_CONST,__const  _VNFaceAttributeGlassesPrescription
+0x1e0eab8b8  __DATA_CONST,__const  _VNFaceAttributeGlassesSunglasses
+0x1e0eab8b0  __DATA_CONST,__const  _VNFaceAttributeHairColorBlack
+0x1e0eab8a8  __DATA_CONST,__const  _VNFaceAttributeHairColorBlonde
+0x1e0eab8a0  __DATA_CONST,__const  _VNFaceAttributeHairColorBrown
+0x1e0eab898  __DATA_CONST,__const  _VNFaceAttributeHairColorGray
+0x1e0eab890  __DATA_CONST,__const  _VNFaceAttributeHairColorRed
+0x1e0eab888  __DATA_CONST,__const  _VNFaceAttributeHairColorWhite
+0x1e0eab880  __DATA_CONST,__const  _VNFaceAttributeMakeupEyes
+0x1e0eab878  __DATA_CONST,__const  _VNFaceAttributeMakeupEyesNone
+0x1e0eab870  __DATA_CONST,__const  _VNFaceAttributeMakeupEyesUnsure
+0x1e0eab868  __DATA_CONST,__const  _VNFaceAttributeMakeupLips
+0x1e0eab860  __DATA_CONST,__const  _VNFaceAttributeMakeupLipsNone
+0x1e0eab858  __DATA_CONST,__const  _VNFaceAttributeMakeupLipsUnsure
+0x1e0eab850  __DATA_CONST,__const  _VNFaceAttributeNotBald
+0x1e0eab848  __DATA_CONST,__const  _VNFaceAttributeNotSmiling
+0x1e0eab840  __DATA_CONST,__const  _VNFaceAttributeSmiling
+0x1e0eab7c0  __DATA_CONST,__const  _VNFaceLegacyFaceCoreFeature_LeftEyeClosedScore
+0x1e0eab7b8  __DATA_CONST,__const  _VNFaceLegacyFaceCoreFeature_RightEyeClosedScore
+0x1e0eab7b0  __DATA_CONST,__const  _VNFaceLegacyFaceCoreFeature_SmileScore
+0x1e0eab790  __DATA_CONST,__const  _VNFaceprintInferenceNetworkHeadIdentifierFaceAttributes
+0x1e0eab788  __DATA_CONST,__const  _VNFaceprintInferenceNetworkHeadIdentifierFaceprint
+0x1e0eab780  __DATA_CONST,__const  _VNFoodAndDrinkIdentifierDrink
+0x1e0eab778  __DATA_CONST,__const  _VNFoodAndDrinkIdentifierFood
+0x1e0eac550  __DATA_CONST,__const  _VNGenerateAnimalSegmentationRequestFeatureCat
+0x1e0eac548  __DATA_CONST,__const  _VNGenerateAnimalSegmentationRequestFeatureDog
+0x1a5b486a4  __TEXT,__text  _VNGetRequestConcurrentTasksProcessingPolicy
+0x1a5b47e58  __TEXT,__text  _VNGetRequestConcurrentTasksProcessingPolicyLimits
+0x1a5b48920  __TEXT,__text  _VNGetRequestConcurrentTasksProcessingTimeout
+0x1e0eab708  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointNameCenterHead
+0x1e0eab700  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointNameCenterShoulder
+0x1e0eab6f8  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointNameLeftAnkle
+0x1e0eab6f0  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointNameLeftElbow
+0x1e0eab6e8  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointNameLeftHip
+0x1e0eab6e0  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointNameLeftKnee
+0x1e0eab6d8  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointNameLeftShoulder
+0x1e0eab6d0  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointNameLeftWrist
+0x1e0eab6c8  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointNameRightAnkle
+0x1e0eab6c0  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointNameRightElbow
+0x1e0eab6b8  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointNameRightHip
+0x1e0eab6b0  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointNameRightKnee
+0x1e0eab6a8  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointNameRightShoulder
+0x1e0eab6a0  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointNameRightWrist
+0x1e0eab698  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointNameRoot
+0x1e0eab690  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointNameSpine
+0x1e0eab688  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointNameTopHead
+0x1e0eab680  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointsGroupNameAll
+0x1e0eab678  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointsGroupNameHead
+0x1e0eab670  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointsGroupNameLeftArm
+0x1e0eab668  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointsGroupNameLeftLeg
+0x1e0eab660  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointsGroupNameRightArm
+0x1e0eab658  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointsGroupNameRightLeg
+0x1e0eab650  __DATA_CONST,__const  _VNHumanBodyPose3DObservationJointsGroupNameTorso
+0x1e0eab638  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameLeftAnkle
+0x1e0eab630  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameLeftEar
+0x1e0eab628  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameLeftElbow
+0x1e0eab620  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameLeftEye
+0x1e0eab618  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameLeftHip
+0x1e0eab610  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameLeftKnee
+0x1e0eab608  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameLeftShoulder
+0x1e0eab600  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameLeftWrist
+0x1e0eab5f8  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameNeck
+0x1e0eab5f0  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameNose
+0x1e0eab5e8  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameRightAnkle
+0x1e0eab5e0  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameRightEar
+0x1e0eab5d8  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameRightElbow
+0x1e0eab5d0  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameRightEye
+0x1e0eab5c8  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameRightHip
+0x1e0eab5c0  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameRightKnee
+0x1e0eab5b8  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameRightShoulder
+0x1e0eab5b0  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameRightWrist
+0x1e0eab5a8  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointNameRoot
+0x1e0eac558  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointsGroupNameAll
+0x1e0eab5a0  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointsGroupNameFace
+0x1e0eab598  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointsGroupNameLeftArm
+0x1e0eab590  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointsGroupNameLeftLeg
+0x1e0eab588  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointsGroupNameRightArm
+0x1e0eab580  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointsGroupNameRightLeg
+0x1e0eab578  __DATA_CONST,__const  _VNHumanBodyPoseObservationJointsGroupNameTorso
+0x1e0eab560  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameIndexDIP
+0x1e0eab558  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameIndexMCP
+0x1e0eab550  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameIndexPIP
+0x1e0eab548  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameIndexTip
+0x1e0eab540  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameLittleDIP
+0x1e0eab538  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameLittleMCP
+0x1e0eab530  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameLittlePIP
+0x1e0eab528  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameLittleTip
+0x1e0eab520  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameMiddleDIP
+0x1e0eab518  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameMiddleMCP
+0x1e0eab510  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameMiddlePIP
+0x1e0eab508  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameMiddleTip
+0x1e0eab500  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameRingDIP
+0x1e0eab4f8  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameRingMCP
+0x1e0eab4f0  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameRingPIP
+0x1e0eab4e8  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameRingTip
+0x1e0eab4e0  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameThumbCMC
+0x1e0eab4d8  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameThumbIP
+0x1e0eab4d0  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameThumbMP
+0x1e0eab4c8  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameThumbTip
+0x1e0eab4c0  __DATA_CONST,__const  _VNHumanHandPoseObservationJointNameWrist
+0x1e0eac560  __DATA_CONST,__const  _VNHumanHandPoseObservationJointsGroupNameAll
+0x1e0eab4b8  __DATA_CONST,__const  _VNHumanHandPoseObservationJointsGroupNameIndexFinger
+0x1e0eab4b0  __DATA_CONST,__const  _VNHumanHandPoseObservationJointsGroupNameLittleFinger
+0x1e0eab4a8  __DATA_CONST,__const  _VNHumanHandPoseObservationJointsGroupNameMiddleFinger
+0x1e0eab4a0  __DATA_CONST,__const  _VNHumanHandPoseObservationJointsGroupNameRingFinger
+0x1e0eab498  __DATA_CONST,__const  _VNHumanHandPoseObservationJointsGroupNameThumb
+0x1e0eab410  __DATA_CONST,__const  _VNImageBufferAugmentationApplePipeline
+0x1e0eab408  __DATA_CONST,__const  _VNImageBufferAugmentationBlur
+0x1e0eab400  __DATA_CONST,__const  _VNImageBufferAugmentationExposure
+0x1e0eab3f8  __DATA_CONST,__const  _VNImageBufferAugmentationFlipHorizontal
+0x1e0eab3f0  __DATA_CONST,__const  _VNImageBufferAugmentationFlipVertical
+0x1e0eab3e8  __DATA_CONST,__const  _VNImageBufferAugmentationNoise
+0x1e0eab3e0  __DATA_CONST,__const  _VNImageBufferAugmentationOptionMaxRange
+0x1e0eab3d8  __DATA_CONST,__const  _VNImageBufferAugmentationOptionMinRange
+0x1e0eab3d0  __DATA_CONST,__const  _VNImageBufferAugmentationOptionNumberOfBuffers
+0x1e0eab3c8  __DATA_CONST,__const  _VNImageBufferAugmentationOptionRandomSeed
+0x1e0eab3c0  __DATA_CONST,__const  _VNImageBufferAugmentationRandomCrop
+0x1e0eab3b8  __DATA_CONST,__const  _VNImageBufferAugmentationRotation
+0x1e0eab3b0  __DATA_CONST,__const  _VNImageBufferAugmentationShear
+0x1e0eab3a0  __DATA_CONST,__const  _VNImageBufferOption_DownscaleCGInterpolationQuality
+0x1e0eab390  __DATA_CONST,__const  _VNImageBufferOption_RequiresDepth
+0x1e0eab388  __DATA_CONST,__const  _VNImageBufferOption_UpscaleCGInterpolationQuality
+0x1e0eab380  __DATA_CONST,__const  _VNImageOptionCIContext
+0x1e0eab378  __DATA_CONST,__const  _VNImageOptionCameraIntrinsics
+0x1e0eab370  __DATA_CONST,__const  _VNImageOptionProperties
+0x1a5b46f18  __TEXT,__text  _VNImagePointForFaceLandmarkPoint
+0x1a5b46ce4  __TEXT,__text  _VNImagePointForNormalizedPoint
+0x1a5b46ce8  __TEXT,__text  _VNImagePointForNormalizedPointUsingRegionOfInterest
+0x1a5b46d3c  __TEXT,__text  _VNImageRectForNormalizedRect
+0x1a5b46d58  __TEXT,__text  _VNImageRectForNormalizedRectUsingRegionOfInterest
+0x1e0eab368  __DATA_CONST,__const  _VNImageSegmentationCategoryShadow
+0x1e0eab360  __DATA_CONST,__const  _VNImageSegmentationCategoryStrand
+0x1e0eab358  __DATA_CONST,__const  _VNImageSegmentationFeatureBackground
+0x1e0eab350  __DATA_CONST,__const  _VNImageSegmentationFeatureForeground
+0x1e0eab348  __DATA_CONST,__const  _VNImageSegmentationFeatureScene
+0x1e0eab330  __DATA_CONST,__const  _VNInferenceNetworkHeadIdentifierAesthetics
+0x1e0eab328  __DATA_CONST,__const  _VNInferenceNetworkHeadIdentifierFeatureExtractor
+0x1e0eab320  __DATA_CONST,__const  _VNInferenceNetworkHeadIdentifierFingerprinting
+0x1e0eab318  __DATA_CONST,__const  _VNInferenceNetworkHeadIdentifierObjDetNet
+0x1e0eab310  __DATA_CONST,__const  _VNInferenceNetworkHeadIdentifierSaliencyA
+0x1e0eab308  __DATA_CONST,__const  _VNInferenceNetworkHeadIdentifierSaliencyO
+0x1e0eab300  __DATA_CONST,__const  _VNInferenceNetworkHeadIdentifierSceneClassification
+0x1e0eab2f8  __DATA_CONST,__const  _VNInferenceNetworkHeadIdentifierSceneprint
+0x1e0eab2f0  __DATA_CONST,__const  _VNInferenceNetworkHeadIdentifierSliderNet
+0x1e0eab2e8  __DATA_CONST,__const  _VNInferenceNetworkIdentifierFaceprint
+0x1e0eab2e0  __DATA_CONST,__const  _VNInferenceNetworkIdentifierSceneNet
+0x1e0eab2d8  __DATA_CONST,__const  _VNInferenceNetworkIdentifierSceneNetObjDetNetSliderNet
+0x1e0eab2d0  __DATA_CONST,__const  _VNInferenceNetworkIdentifierSmartCam
+0x1e0eab2c8  __DATA_CONST,__const  _VNInferenceNetworkIdentifierStandaloneSceneprint
+0x1a5b470b8  __TEXT,__text  _VNIntersectionOverUnion
+0x1a5b46ff0  __TEXT,__text  _VNLargestCentralSquareOfRect
+0x1a5946010  __TEXT,__text  _VNLengthInBytesForScenePrintRequestRevision
+0x1a5b46eec  __TEXT,__text  _VNNormalizedFaceBoundingBoxPointForLandmarkPoint
+0x1a5f9f460  __TEXT,__const  _VNNormalizedIdentityRect
+0x1a5b47024  __TEXT,__text  _VNNormalizedImageRectForNormalizedRegionOfInterestRect
+0x1a5b46cf4  __TEXT,__text  _VNNormalizedPointForImagePoint
+0x1a5b46cf8  __TEXT,__text  _VNNormalizedPointForImagePointUsingRegionOfInterest
+0x1a5b46dc0  __TEXT,__text  _VNNormalizedRectForImageRect
+0x1a5b46e04  __TEXT,__text  _VNNormalizedRectForImageRectUsingRegionOfInterest
+0x1a5b46f60  __TEXT,__text  _VNNormalizedRectForPixelRectInBounds
+0x1a5b46cd0  __TEXT,__text  _VNNormalizedRectIsIdentityRect
+0x1e0eab238  __DATA_CONST,__const  _VNPdH78Lr962vQvRIq2JApX2QJZtbR3fvi
+0x1e0eab230  __DATA_CONST,__const  _VNPersonsModelErrorDomain
+0x1e0eab228  __DATA_CONST,__const  _VNPixelBufferObservationHumanAttributeNameFacialHair
+0x1e0eab220  __DATA_CONST,__const  _VNPixelBufferObservationHumanAttributeNameHair
+0x1e0eab218  __DATA_CONST,__const  _VNPixelBufferObservationHumanAttributeNameSkin
+0x1e0eab210  __DATA_CONST,__const  _VNPixelBufferObservationHumanAttributeNameTeeth
+0x1a5b46fa0  __TEXT,__text  _VNPixelRectForNormalizedRectInBounds
+0x1e0eab208  __DATA_CONST,__const  _VNPotentialLandmarkIdentifier
+0x1e0eab200  __DATA_CONST,__const  _VNRecognizeDocumentElementIdentifierAppCode
+0x1e0eab1f8  __DATA_CONST,__const  _VNRecognizeDocumentElementIdentifierDocument
+0x1e0eab1f0  __DATA_CONST,__const  _VNRecognizeDocumentElementIdentifierQRCode
+0x1e0eab1e8  __DATA_CONST,__const  _VNRecognizeDocumentElementIdentifierText
+0x1e0eab1e0  __DATA_CONST,__const  _VNRecognizedPoint3DGroupKeyAll
+0x1e0eab1d8  __DATA_CONST,__const  _VNRecognizedPointGroupKeyAll
+0x1e0eab180  __DATA_CONST,__const  _VNRequestHandlerCleanupOption_AllPipelines
+0x1e0eab178  __DATA_CONST,__const  _VNRequestHandlerCleanupOption_FacePipeline
+0x1e0eab170  __DATA_CONST,__const  _VNRequestHandlerCleanupOption_ImageBuffers
+0x1e0eab168  __DATA_CONST,__const  _VNRequestHandlerCleanupOption_JunkPipeline
+0x1e0eab160  __DATA_CONST,__const  _VNRequestHandlerCleanupOption_ScenePipeline
+0x1e0eab158  __DATA_CONST,__const  _VNRequestHandlerCleanupOption_SmartCamPipeline
+0x1a598c7b8  __TEXT,__text  _VNRequestRevisionIsPrivate
+0x1e0eab150  __DATA_CONST,__const  _VNRequestWarningBlinkDetectionFailure
+0x1e0eab148  __DATA_CONST,__const  _VNRequestWarningImageMinimumLongDimension
+0x1e0eab140  __DATA_CONST,__const  _VNRequestWarningImageMinimumShortDimension
+0x1e0eab138  __DATA_CONST,__const  _VNRequestWarningImageTooSmall
+0x1e0eab130  __DATA_CONST,__const  _VNRequestWarningImageTooSmallForFaceObservations
+0x1e0eab128  __DATA_CONST,__const  _VNRequestWarningTiledAnalysis
+0x1e0eab120  __DATA_CONST,__const  _VNSY8t4EoTztuqIL02g8uVA0
+0x1a594587c  __TEXT,__text  _VNScenePrintsFromPixelBuffers
+0x1a5945870  __TEXT,__text  _VNScenePrintsFromPixelBuffersUsesCPUOnly
+0x1a5945f30  __TEXT,__text  _VNScenePrintsFromURL
+0x1a5945f08  __TEXT,__text  _VNScenePrintsFromURLUsesCPUOnly
+0x1a59460c8  __TEXT,__text  _VNSceneprintSupportedRevisions
+0x1a5b487e8  __TEXT,__text  _VNSetRequestConcurrentTasksProcessingPolicy
+0x1a58e2950  __TEXT,__text  _VNSetRequestConcurrentTasksProcessingTimeout
+0x1a58e2960  __TEXT,__text  _VNSetRequiresHighQoS
+0x1a58e2970  __TEXT,__text  _VNSetTargetDispatchQueue
+0x1e0eab050  __DATA_CONST,__const  _VNSportBallIdentifierGenericSportBall
+0x1e0eab048  __DATA_CONST,__const  _VNTextRecognitionOptionASCIICharacterSet
+0x1e0eab040  __DATA_CONST,__const  _VNTextRecognitionOptionDanishCharacterSet
+0x1e0eab038  __DATA_CONST,__const  _VNTextRecognitionOptionDutchCharacterSet
+0x1e0eab030  __DATA_CONST,__const  _VNTextRecognitionOptionEnglishCharacterSet
+0x1e0eab028  __DATA_CONST,__const  _VNTextRecognitionOptionFrenchCharacterSet
+0x1e0eab020  __DATA_CONST,__const  _VNTextRecognitionOptionGermanCharacterSet
+0x1e0eab018  __DATA_CONST,__const  _VNTextRecognitionOptionIcelandicCharacterSet
+0x1e0eab010  __DATA_CONST,__const  _VNTextRecognitionOptionItalianCharacterSet
+0x1e0eab008  __DATA_CONST,__const  _VNTextRecognitionOptionNone
+0x1e0eab000  __DATA_CONST,__const  _VNTextRecognitionOptionNorwegianCharacterSet
+0x1e0eaaff8  __DATA_CONST,__const  _VNTextRecognitionOptionPortugueseCharacterSet
+0x1e0eaaff0  __DATA_CONST,__const  _VNTextRecognitionOptionSpanishCharacterSet
+0x1e0eaafe8  __DATA_CONST,__const  _VNTextRecognitionOptionSwedishCharacterSet
+0x1a5b47f04  __TEXT,__text  _VNUpgradeFaceprint
+0x1a5b482d4  __TEXT,__text  _VNUpgradeTorsoprint
+0x1a5b46f54  __TEXT,__text  _VNVerticallyFlippedImagePoint
+0x1a5b46f5c  __TEXT,__text  _VNVerticallyFlippedImageRect
+0x1a5b46f4c  __TEXT,__text  _VNVerticallyFlippedNormalizedPoint
+0x1a5b46f58  __TEXT,__text  _VNVerticallyFlippedNormalizedRect
+0x1e0eaaf38  __DATA_CONST,__const  _VNVideoProcessingOptionFrameCadence
+0x1e0eaaf30  __DATA_CONST,__const  _VNVideoProcessingOptionTimeInterval
+0x1a5f86590  __TEXT,__const  _VNVisionVersionNumber
+0x1e0eaaf28  __DATA_CONST,__const  _VNa0c07362d05e1dafb35b96d20d5ce42d
+0x1e0eaaf20  __DATA_CONST,__const  _VNa9xpOJNvRoaW9plFGZ9Eo0
+0x1e0eaaf18  __DATA_CONST,__const  _VNacdca02f0900c2cb198193f3eec7b6c9
+0x1e0eaaf10  __DATA_CONST,__const  _VNbe5c67b06e95370f5a7b67b13e73637c
+0x1e0eaaf08  __DATA_CONST,__const  _VNeeab04670e53ebeb25150a31963a1aa6
+0x1e0eaaf00  __DATA_CONST,__const  _VNmNJnu0xlW8CZXt6hJ7Rpb0
+0x1ebe51af4  __DATA,__common  __swift_FORCE_LOAD_$_swiftVision
+0x1a5a14260  __TEXT,__text  _createPerMeshForFFTSIZE
+0x1a5a63e6c  __TEXT,__text  _horizonDetectionFFT
+0x1a5a63f54  __TEXT,__text  _horizonDetectionFFTAngles
+0x1a5a142b0  __TEXT,__text  _initializePerMesh
+```
+
+## Private
+
+```
+0x1a58e2980  __TEXT,__text  -[VNRequest init]
+0x1a58e2988  __TEXT,__text  +[VNRequest frameworkClass]
+0x1a58e298c  __TEXT,__text  +[VNProcessingDevice defaultCPUDevice]
+0x1a58e2a38  __TEXT,__text  +[VNClassRegistrar getClassCode:forClass:error:]
+0x1a58e2a98  __TEXT,__text  -[VNImageBasedRequestConfiguration initWithRequestClass:]
+0x1a58e2af0  __TEXT,__text  -[VNRequestConfiguration initWithRequestClass:]
+0x1a58e2b94  __TEXT,__text  -[VNAsyncStatus init]
+0x1a58e2ba0  __TEXT,__text  -[VNRequest cancellerAndReturnError:]
+0x1a58e2c98  __TEXT,__text  -[VNRequestConfiguration memoryPoolId]
+0x1a58e2ca0  __TEXT,__text  __validateRequestClass
+0x1a58e2d44  __TEXT,__text  _VNRequestClassFromClientSubclass
+0x1a58e2dfc  __TEXT,__text  -[VNRequest frameworkClass]
+0x1a58e2e18  __TEXT,__text  +[VNRequestSpecifier specifierForRequestClass:revision:error:]
+0x1a58e2ed8  __TEXT,__text  +[VNDetector _detectorClassForDetectorType:options:detectorCreationOptions:error:]
+0x1a58e2fc8  __TEXT,__text  +[VNComputeDeviceUtilities _decreasingPerformanceSortedComputeDevices:]
+0x1a58e3024  __TEXT,__text  ___60+[VNComputeDeviceUtilities _decreasingPerformanceComparator]_block_invoke
+0x1a58e307c  __TEXT,__text  ___55+[VNComputeDeviceUtilities computeDevices:passingTest:]_block_invoke
+0x1a58e308c  __TEXT,__text  ___51+[VNComputeDeviceUtilities computeDevices:ofTypes:]_block_invoke
+0x1a58e309c  __TEXT,__text  -[VNProcessingDeviceComputeDeviceBridge .cxx_destruct]
+0x1a58e30a8  __TEXT,__text  -[VNRequest setRevision:]
+0x1a58e31b0  __TEXT,__text  vision::mod::readBinSerializedModelValues(__sFILE*, char const*, vision::mod::BinSerializedModelFileInfo const&, vision::mod::ModelValues&, bool)
+0x1a58e36b8  __TEXT,__text  vision::mod::readBinSerializedModelValues(char const*, char const*, vision::mod::BinSerializedModelFileInfo const&, vision::mod::ModelValues&, bool)
+0x1a58e378c  __TEXT,__text  vision::mod::ModelValues::setModelValues(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::shared_ptr<float const> const&, unsigned long long)
+0x1a58e3848  __TEXT,__text  _BinSerializer_freadInFloat
+0x1a58e3a38  __TEXT,__text  std::__1::__hash_const_iterator<std::__1::__hash_node<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, void*>*> std::__1::__hash_table<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::hash<std::__1::basic_string<ch
+0x1a58e3a38  __TEXT,__text  std::__1::__hash_const_iterator<std::__1::__hash_node<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, void*>*> std::__1::__hash_table<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::hash<std::__1::basic_string<ch
+0x1a58e3a38  __TEXT,__text  std::__1::__hash_const_iterator<std::__1::__hash_node<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, void*>*> std::__1::__hash_table<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::hash<std::__1::basic_string<ch
+0x1a58e3a38  __TEXT,__text  std::__1::__hash_const_iterator<std::__1::__hash_node<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, void*>*> std::__1::__hash_table<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::hash<std::__1::basic_string<ch
+0x1a58e3b20  __TEXT,__text  -[VNFaceLandmarkDetector loadRefinersAndReturnError:]
+0x1a58e3ce8  __TEXT,__text  +[VNDetector detectorClassAndConfigurationOptions:forDetectorType:options:error:]
+0x1a58e3d18  __TEXT,__text  +[VNEspressoHelpers _locateFrameworkBundleForResourceWithName:resourceDirectory:error:]
+0x1a58e3d6c  __TEXT,__text  +[VNValidationUtilities originatingRequestSpecifierInOptions:error:]
+0x1a58e3e10  __TEXT,__text  _VNExecuteBlock
+0x1a58e41ac  __TEXT,__text  vision::mod::LandmarkAttributes::LandmarkAttributes(char const*, bool)
+0x1a58e42a4  __TEXT,__text  ___53-[VNFaceLandmarkDetector loadRefinersAndReturnError:]_block_invoke
+0x1a58e4524  __TEXT,__text  +[VNComputeDeviceUtilities allComputeDevices]
+0x1a58e4570  __TEXT,__text  _VNFrameworkBundle
+0x1a58e45b8  __TEXT,__text  ___81+[VNEspressoModelFileBasedDetector supportedComputeStageDevicesForOptions:error:]_block_invoke
+0x1a58e46e0  __TEXT,__text  +[VNDetector recordDefaultConfigurationOptionsInDictionary:]
+0x1a58e476c  __TEXT,__text  +[VNDetector fullyPopulateConfigurationOptions:]
+0x1a58e47d0  __TEXT,__text  ___51+[VNRequest _runtimeAvailableRevisionsOfRevisions:]_block_invoke
+0x1a58e4870  __TEXT,__text  _BinSerializer_convertFloats
+0x1a58e49a0  __TEXT,__text  -[VNRequestConfiguration setResolvedRevision:]
+0x1a58e49a8  __TEXT,__text  _BinSerializer_fseek
+0x1a58e4a88  __TEXT,__text  -[VNRequestSpecifier isEqual:]
+0x1a58e4b40  __TEXT,__text  +[VNComputeDeviceUtilities mostPerformantNeuralEngineComputeDevice]
+0x1a58e4b8c  __TEXT,__text  +[VNRequest supportedPrivateRevisions]
+0x1a58e4bf8  __TEXT,__text  +[VNRequest supportedRevisionsAreFilteredBasedOnAvailableComputeDevices]
+0x1a58e4c00  __TEXT,__text  -[VNRequestInstanceCreator init]
+0x1a58e4c08  __TEXT,__text  -[VNRequestInstanceCreator newRequestInstanceOfClass:withCompletionHandler:revision:error:]
+0x1a58e4edc  __TEXT,__text  -[VNRequestInstanceCreator _isValidRequestClass:]
+0x1a58e4f50  __TEXT,__text  -[VNRequestInstanceCreator _newVNRequestInstanceOfClass:withCompletionHandler:revision:error:]
+0x1a58e5008  __TEXT,__text  -[VNRequest _setResolvedRevision:]
+0x1a58e5058  __TEXT,__text  -[VNRequestSpecifier .cxx_destruct]
+0x1a58e5064  __TEXT,__text  -[VNRequest .cxx_destruct]
+0x1a58e50e4  __TEXT,__text  -[VNAsyncStatus .cxx_destruct]
+0x1a58e50f0  __TEXT,__text  -[VNDetectFaceRectanglesRequestConfiguration .cxx_destruct]
+0x1a58e5160  __TEXT,__text  -[VNImageBasedRequestConfiguration .cxx_destruct]
+0x1a58e51a8  __TEXT,__text  -[VNRequestConfiguration .cxx_destruct]
+0x1a58e51ec  __TEXT,__text  -[VNRequestInstanceCreator .cxx_destruct]
+0x1a58e51f4  __TEXT,__text  -[VNRequest initWithCompletionHandler:]
+0x1a58e52f0  __TEXT,__text  -[VNRequest newDefaultDetectorOptionsForRequestRevision:session:]
+0x1a58e552c  __TEXT,__text  +[VNValidationUtilities originatingRequestSpecifierForKey:inOptions:error:]
+0x1a58e55e0  __TEXT,__text  +[VNValidationUtilities originatingRequestSpecifierForKey:inOptions:specifyingRequestClass:error:]
+0x1a58e5698  __TEXT,__text  _validateRequestSpecifierRequestClass(VNRequestSpecifier*, objc_class*, NSString*, NSError* __autoreleasing*)
+0x1a58e57ac  __TEXT,__text  -[VNRequest resolvedRevisionDidChangeFromRevision:]
+0x1a58e57b0  __TEXT,__text  -[VNDetectFaceLandmarksRequestConfiguration .cxx_destruct]
+0x1a58e57c4  __TEXT,__text  -[VNRequestConfiguration processingDevice]
+0x1a58e57cc  __TEXT,__text  -[VNANEProcessingDevice computeDevice]
+0x1a58e57d8  __TEXT,__text  +[VNRequest _runtimeAvailableRevisionsOfRevisions:]
+0x1a58e59e8  __TEXT,__text  -[VNRequestConfiguration modelFileBackingStore]
+0x1a58e59f0  __TEXT,__text  ___98+[VNEspressoModelFileBasedDetector espressoModelWeightsFilePathInfoForConfigurationOptions:error:]_block_invoke_2
+0x1a58e5ad0  __TEXT,__text  -[VNProcessingDeviceComputeDeviceBridge initWithProcessingDevice:]
+0x1a58e5b44  __TEXT,__text  -[VNControlledCapacityTasksQueue currentQueueIsSynchronizationQueue]
+0x1a58e5b98  __TEXT,__text  +[VNShotflowNetworkANODv4 modelName]
+0x1a58e5ba4  __TEXT,__text  +[VNEspressoModelFileBasedDetector espressoModelWeightsFilePathInfoForConfigurationOptions:error:]
+0x1a58e5cf4  __TEXT,__text  +[VNEspressoHelpers pathForEspressoNetworkModelFileWithName:error:]
+0x1a58e5d20  __TEXT,__text  -[VisionCoreInferenceNetworkDescriptor(VNInternalAdditions) URLForComputeDevice:error:]
+0x1a58e5db4  __TEXT,__text  +[VNControlledCapacityTasksQueue setTasksTimeout:]
+0x1a58e5df4  __TEXT,__text  +[VNEspressoModelFileBasedDetector supportedComputeStageDevicesForOptions:error:]
+0x1a58e6018  __TEXT,__text  +[VNDetector fullyPopulatedConfigurationOptionsWithOverridingOptions:populateComputeDevice:]
+0x1a58e6110  __TEXT,__text  -[VNRequest setIoSurfaceMemoryPoolId:]
+0x1a58e6118  __TEXT,__text  ___53-[VNRequest warmUpApplicableDetectorInSession:error:]_block_invoke
+0x1a58e612c  __TEXT,__text  _VNBinModelFilePathFromModelNameAndThrow
+0x1a58e6208  __TEXT,__text  cvml::util::binserialized_table_of_contents::init(void const*, unsigned long)
+0x1a58e6714  __TEXT,__text  -[VNModelFileImpl baseAddress]
+0x1a58e6734  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, vision::mod::ImageClassfier_GraphNode*>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__
+0x1a58e6734  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, vision::mod::ImageClassfier_GraphNode*>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__
+0x1a58e6734  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, vision::mod::ImageClassfier_GraphNode*>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__
+0x1a58e6734  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, vision::mod::ImageClassfier_GraphNode*>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__
+0x1a58e681c  __TEXT,__text  -[VNModelFilesCache load:]
+0x1a58e703c  __TEXT,__text  -[VNFaceBBoxAligner completeInitializationForSession:error:]
+0x1a58e7160  __TEXT,__text  -[VNShotflowNetworkANSTv1 initializeBuffers]
+0x1a58e7760  __TEXT,__text  std::__1::shared_ptr<vision::mod::ImageAnalyzer_CustomClassifier>* std::__1::vector<std::__1::shared_ptr<vision::mod::ImageAnalyzer_CustomClassifier>, std::__1::allocator<std::__1::shared_ptr<vision::mod::ImageAnalyzer_CustomClassifier> > >::__emplace_back_slow_path<std::__1::shared_ptr<vision::mod:
+0x1a58e7760  __TEXT,__text  std::__1::shared_ptr<vision::mod::ImageAnalyzer_CustomClassifier>* std::__1::vector<std::__1::shared_ptr<vision::mod::ImageAnalyzer_CustomClassifier>, std::__1::allocator<std::__1::shared_ptr<vision::mod::ImageAnalyzer_CustomClassifier> > >::__emplace_back_slow_path<std::__1::shared_ptr<vision::mod:
+0x1a58e7850  __TEXT,__text  -[VNShotflowDetector initWithNetwork:]
+0x1a58e7908  __TEXT,__text  -[VNSession _locateDetectorOfClass:configuredWithOptions:allowingCreation:error:]
+0x1a58e7a14  __TEXT,__text  -[VNSession _frameworkManagerWithError:]
+0x1a58e7a7c  __TEXT,__text  -[VNSession detectorOfClass:configuredWithOptions:error:]
+0x1a58e7bd0  __TEXT,__text  +[VNDetector isReentrant]
+0x1a58e7bd8  __TEXT,__text  -[VNDetector completeInitializationForSession:error:]
+0x1a58e7d04  __TEXT,__text  -[VNTasksQueueCache _queueWithUniqueAppendix:queueClass:]
+0x1a58e7e4c  __TEXT,__text  ___60-[VNFaceBBoxAligner completeInitializationForSession:error:]_block_invoke
+0x1a58e83c8  __TEXT,__text  +[VNRequest newConfigurationInstance]
+0x1a58e8408  __TEXT,__text  -[VNRequest warmUpSession:error:]
+0x1a58e84f8  __TEXT,__text  ___76+[VNDetector runSuccessReportingBlockSynchronously:detector:qosClass:error:]_block_invoke
+0x1a58e8560  __TEXT,__text  -[VNDetector canBehaveAsDetectorOfClass:withConfiguration:]
+0x1a58e86bc  __TEXT,__text  -[VNDetectorCache evictDetectorsPassingTest:]
+0x1a58e8910  __TEXT,__text  +[VNValidationUtilities getEspressoPriority:forKey:inOptions:withDefaultValue:error:]
+0x1a58e8a0c  __TEXT,__text  -[VNEspressoModelFileBasedDetector completeInitializationForSession:error:]
+0x1a58e8aa4  __TEXT,__text  +[VNDetector keyForDetectorWithConfigurationOptions:]
+0x1a58e8cec  __TEXT,__text  -[VNHomologousObservationClassCompoundRequest .cxx_destruct]
+0x1a58e8d00  __TEXT,__text  -[VNCompoundRequest .cxx_destruct]
+0x1a58e8d48  __TEXT,__text  -[VNANFDDetectorCompoundRequestConfiguration .cxx_destruct]
+0x1a58e8da4  __TEXT,__text  +[VNComputeDeviceUtilities isNeuralEngineComputeDevice:]
+0x1a58e8dc4  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, vision::mod::ModelValues::ValueInfo>, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std:
+0x1a58e8e24  __TEXT,__text  ___88-[VNDetectorCache releaseDetectorsThatCanBeReplacedByDetectorOfClass:withConfiguration:]_block_invoke
+0x1a58e8e30  __TEXT,__text  std::__1::__shared_ptr_pointer<unsigned char const*, cvml::util::binserialized_table_of_contents::blob_info::blob_info(unsigned char const*, _BinSerializer_blobHeader_ const&)::{lambda(unsigned char const*)#1}, std::__1::allocator<unsigned char> >::__on_zero_shared()
+0x1a58e8e34  __TEXT,__text  std::__1::__shared_ptr_pointer<unsigned char const*, cvml::util::binserialized_table_of_contents::blob_info::blob_info(unsigned char const*, _BinSerializer_blobHeader_ const&)::{lambda(unsigned char const*)#1}, std::__1::allocator<unsigned char> >::__on_zero_shared_weak()
+0x1a58e8e38  __TEXT,__text  +[VNFaceAnalyzerMultiDetectorBase keyForDetectorWithConfigurationOptions:]
+0x1a58e8f64  __TEXT,__text  -[VNRequestConfiguration setProcessingDevice:]
+0x1a58e8fa4  __TEXT,__text  -[VNRequest setProcessingDevice:]
+0x1a58e90b0  __TEXT,__text  -[VNImageAnalyzerMultiDetectorAnalysisConfiguration initWithObservationsRecipient:]
+0x1a58e9134  __TEXT,__text  ___123-[VNFaceDetector internalProcessUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]_block_invoke_4
+0x1a58e937c  __TEXT,__text  -[VNShotflowDetection smartDistance]
+0x1a58e93c0  __TEXT,__text  ___46-[VNShotflowNetwork processVImage:inputIsBGR:]_block_invoke
+0x1a58e942c  __TEXT,__text  -[VNShotflowDetection box]
+0x1a58e9438  __TEXT,__text  +[VNShotflowNetwork numberBinsRoll]
+0x1a58e9440  __TEXT,__text  +[VNShotflowNetwork numberBinsYaw]
+0x1a58e9448  __TEXT,__text  +[VNShotflowNetworkANFDv1 importantClasses]
+0x1a58e9490  __TEXT,__text  -[VNShotflowDetection initWithBox:defaultBox:confidence:scale:rotationAngle:yawAngle:hasLabel:label:]
+0x1a58e94d0  __TEXT,__text  ___46-[VNShotflowNetwork processVImage:inputIsBGR:]_block_invoke_2
+0x1a58e953c  __TEXT,__text  +[VNRequest defaultRevision]
+0x1a58e9574  __TEXT,__text  -[VNRequest setPreferBackgroundProcessing:]
+0x1a58e957c  __TEXT,__text  std::__1::vector<bool, std::__1::allocator<bool> >::vector(unsigned long, bool const&)
+0x1a58e95d8  __TEXT,__text  -[VNFaceDetector internalProcessUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]
+0x1a58ea184  __TEXT,__text  ___53-[VNShotflowDetector sortBoxes:filterThresholdIndex:]_block_invoke
+0x1a58ea1bc  __TEXT,__text  +[VNRequest supportsPrivateRevision:]
+0x1a58ea20c  __TEXT,__text  -[VNShotflowDetector smartMergeBoxes:]
+0x1a58ea8a4  __TEXT,__text  -[VNShotflowNetwork processVImage:inputIsBGR:]
+0x1a58eb34c  __TEXT,__text  ___123-[VNFaceDetector internalProcessUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]_block_invoke_3
+0x1a58eb6bc  __TEXT,__text  ___123-[VNFaceDetector internalProcessUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]_block_invoke
+0x1a58eb940  __TEXT,__text  -[VNFaceBBoxAligner .cxx_construct]
+0x1a58eb954  __TEXT,__text  +[VNDetector computeDeviceForComputeStage:configurationOptions:error:]
+0x1a58ebc54  __TEXT,__text  cvml::util::mapped_model_file_open::base_address() const
+0x1a58ebc5c  __TEXT,__text  +[VNDetector detectorKeyComponentForDetectorConfigurationOptionKey:value:]
+0x1a58ebc64  __TEXT,__text  -[VNEspressoModelFileBasedDetector bindBuffer:toNetworkOutputBlobName:error:]
+0x1a58ebd00  __TEXT,__text  -[VNImageBasedRequestConfiguration regionOfInterest]
+0x1a58ebd18  __TEXT,__text  +[VNGenerateInstanceMaskDetector espressoModelInputImageDimensionsBlobNameForConfigurationOptions:]
+0x1a58ebd24  __TEXT,__text  -[VNEspressoModelFileBasedDetector espressoResources]
+0x1a58ebd38  __TEXT,__text  -[VNEspressoModelFileBasedDetector _bindBuffer:toNetworkBlobName:bindMode:bindPtr:forModel:error:]
+0x1a58ebe20  __TEXT,__text  -[VNGenerateInstanceMaskDetector createRegionOfInterestCrop:options:qosClass:warningRecorder:pixelBuffer:error:progressHandler:]
+0x1a58ebf34  __TEXT,__text  -[VNEspressoModelFileBasedDetector createRegionOfInterestCrop:options:qosClass:warningRecorder:pixelBuffer:error:progressHandler:]
+0x1a58ec0e0  __TEXT,__text  -[VNDetector validatedImageBufferFromOptions:error:]
+0x1a58ec1f0  __TEXT,__text  -[VNEspressoModelFileBasedDetector networkRequiredInputImageWidth]
+0x1a58ec204  __TEXT,__text  +[VNValidationUtilities validateArray:named:hasElementsOfClass:requiredMinimumCount:allowedMaximumCount:error:]
+0x1a58ec528  __TEXT,__text  -[VNDetector validateImageBuffer:error:]
+0x1a58ec604  __TEXT,__text  -[VNEspressoModelFileBasedDetector networkRequiredInputImageHeight]
+0x1a58ec618  __TEXT,__text  _VNRecordImageTooSmallWarningWithImageMinimumShortDimension
+0x1a58ec6a0  __TEXT,__text  -[VNWarningRecorder recordWarning:value:]
+0x1a58ec9f8  __TEXT,__text  +[VNGenerateInstanceMaskDetector networkRequiredInputImagePixelFormatForConfigurationOptions:]
+0x1a58eca04  __TEXT,__text  void vision::mod::(anonymous namespace)::readTypedVectorFromBytesHelper<float>(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, vision::mod::ModelValues const&, std::__1::vector<float, std::__1::allocator<float> >&)
+0x1a58ecbbc  __TEXT,__text  vision::mod::FaceBoxPoseAligner<signed char>::loadDefaultPixelValue(vision::mod::ModelValues const&, unsigned char*)
+0x1a58ecdac  __TEXT,__text  void vision::mod::(anonymous namespace)::readTypedVectorFromBytesHelper<unsigned char>(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, vision::mod::ModelValues const&, std::__1::vector<unsigned char, std::__1::allocator<unsigned char> >&)
+0x1a58ecf64  __TEXT,__text  std::__1::vector<unsigned char, std::__1::allocator<unsigned char> >::resize(unsigned long)
+0x1a58ed070  __TEXT,__text  vision::mod::FaceBoxPoseAligner<signed char>::loadDefaultFeatureValue(vision::mod::ModelValues const&, signed char*)
+0x1a58ed3e8  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long long, cvml::util::binserialized_table_of_contents::blob_info>, std::__1::__unordered_map_hasher<unsigned long long, std::__1::pair<unsigned long long const, cvml::util::binserialized_table_of_contents::blob_info>, std::__1::hash<unsign
+0x1a58ed44c  __TEXT,__text  -[VNFaceSegmentGenerator .cxx_construct]
+0x1a58ed460  __TEXT,__text  std::__1::__split_buffer<std::__1::vector<long long, std::__1::allocator<long long> >, std::__1::allocator<std::__1::vector<long long, std::__1::allocator<long long> > >&>::~__split_buffer()
+0x1a58ed460  __TEXT,__text  std::__1::__split_buffer<std::__1::vector<long long, std::__1::allocator<long long> >, std::__1::allocator<std::__1::vector<long long, std::__1::allocator<long long> > >&>::~__split_buffer()
+0x1a58ed460  __TEXT,__text  std::__1::__split_buffer<std::__1::vector<long long, std::__1::allocator<long long> >, std::__1::allocator<std::__1::vector<long long, std::__1::allocator<long long> > >&>::~__split_buffer()
+0x1a58ed460  __TEXT,__text  std::__1::__split_buffer<std::__1::vector<long long, std::__1::allocator<long long> >, std::__1::allocator<std::__1::vector<long long, std::__1::allocator<long long> > >&>::~__split_buffer()
+0x1a58ed460  __TEXT,__text  std::__1::__split_buffer<std::__1::vector<long long, std::__1::allocator<long long> >, std::__1::allocator<std::__1::vector<long long, std::__1::allocator<long long> > >&>::~__split_buffer()
+0x1a58ed460  __TEXT,__text  std::__1::__split_buffer<std::__1::vector<long long, std::__1::allocator<long long> >, std::__1::allocator<std::__1::vector<long long, std::__1::allocator<long long> > >&>::~__split_buffer()
+0x1a58ed4c4  __TEXT,__text  -[VNRequest recordWarning:value:]
+0x1a58ed554  __TEXT,__text  vision::mod::FaceBoxPoseAligner<signed char>::loadGlobalShifts(vision::mod::ModelValues const&, std::__1::vector<float, std::__1::allocator<float> >&)
+0x1a58ed66c  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::resize(unsigned long)
+0x1a58ed66c  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::resize(unsigned long)
+0x1a58ed66c  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::resize(unsigned long)
+0x1a58ed774  __TEXT,__text  vision::mod::(anonymous namespace)::readSizeFromBytesHelper(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, vision::mod::ModelValues const&)
+0x1a58ed9fc  __TEXT,__text  vision::mod::FaceBoxPoseAligner<signed char>::loadXYPairs(vision::mod::ModelValues const&, std::__1::vector<float, std::__1::allocator<float> >&)
+0x1a58edb64  __TEXT,__text  -[VNImageAnalyzerCompoundRequestGroupingConfigurations .cxx_destruct]
+0x1a58edb70  __TEXT,__text  -[VNCoreSceneUnderstandingCompoundRequestDetectorConfigurations init]
+0x1a58edbec  __TEXT,__text  +[VNImageAnalyzerMultiDetector modelForRequestClass:revision:]
+0x1a58edc98  __TEXT,__text  +[VNCoreSceneUnderstandingDetector _sceneNetV5ConfigurationRevisionForRequestClass:revision:]
+0x1a58edd98  __TEXT,__text  +[VNCoreSceneUnderstandingDetector handlesRequestClass:revision:]
+0x1a58eddc0  __TEXT,__text  +[VNFaceAnalyzerCompoundRequest compoundRequestsForOriginalRequests:withPerformingContext:error:]
+0x1a58ee514  __TEXT,__text  ___97+[VNFaceAnalyzerCompoundRequest compoundRequestsForOriginalRequests:withPerformingContext:error:]_block_invoke_2
+0x1a58ee77c  __TEXT,__text  -[VNEspressoModelFileBasedDetector getWidth:height:ofEspressoModelNetworkBlobNamed:error:]
+0x1a58ee908  __TEXT,__text  -[VNRequestInstanceCreator initWithDelegate:]
+0x1a58ee970  __TEXT,__text  -[VNDetector configurationOptions]
+0x1a58ee97c  __TEXT,__text  vision::mod::FaceBoxPoseAligner<signed char>::loadERTModel(vision::mod::ModelValues const&)
+0x1a58ef3e4  __TEXT,__text  +[VNRequest _defaultRevisionForBuildVersion:]
+0x1a58ef4bc  __TEXT,__text  -[VNRequestConfiguration resolvedRevision]
+0x1a58ef4c4  __TEXT,__text  -[VNWarningRecorder init]
+0x1a58ef54c  __TEXT,__text  +[VNDetector VNClassCode]
+0x1a58ef588  __TEXT,__text  +[VNValidationUtilities getArray:forKey:inOptions:withElementsOfClass:requiredMinimumCount:allowedMaximumCount:error:]
+0x1a58ef6e4  __TEXT,__text  -[VNDetector internalProcessUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]
+0x1a58efb14  __TEXT,__text  _VNValidatedLog
+0x1a58efbf0  __TEXT,__text  ___119-[VNDetector internalProcessUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]_block_invoke
+0x1a58efe4c  __TEXT,__text  ___119-[VNDetector internalProcessUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]_block_invoke_3
+0x1a58f00f0  __TEXT,__text  -[VNImageBasedRequest regionOfInterest]
+0x1a58f0160  __TEXT,__text  -[VNDetector signPostAdditionalParameter]
+0x1a58f0168  __TEXT,__text  -[VNDetector processUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]
+0x1a58f03c4  __TEXT,__text  ___111-[VNDetector processUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]_block_invoke
+0x1a58f052c  __TEXT,__text  ___119-[VNDetector internalProcessUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]_block_invoke_2
+0x1a58f0558  __TEXT,__text  -[VNSaliencyHeatmapBoundingBoxGenerator warmUpSession:withOptions:error:]
+0x1a58f0818  __TEXT,__text  +[VNCVPixelBufferHelper createPixelBufferUsingIOSurfaceWithWidth:height:pixelFormatType:error:]
+0x1a58f0870  __TEXT,__text  -[VNDetector warmUpSession:withOptions:error:]
+0x1a58f0878  __TEXT,__text  -[VNCoreSceneUnderstandingDetector warmUpSession:withOptions:error:]
+0x1a58f0be8  __TEXT,__text  -[VNCoreSceneUnderstandingDetector _warmUpTaxonomiesForOptions:inSession:error:]
+0x1a58f0de0  __TEXT,__text  _VNCVPixelBufferCreateUsingIOSurface
+0x1a58f0f04  __TEXT,__text  +[VNDetector detectorClassForDetectorType:configuredWithOptions:error:]
+0x1a58f0f30  __TEXT,__text  ___68-[VNCoreSceneUnderstandingDetector warmUpSession:withOptions:error:]_block_invoke
+0x1a58f0ff4  __TEXT,__text  ___119-[VNDetector internalProcessUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]_block_invoke_4
+0x1a58f11f0  __TEXT,__text  +[VNCoreSceneUnderstandingDetector _getSceneNetV5ConfigurationRevision:forConfigurationOptions:error:]
+0x1a58f14b8  __TEXT,__text  ___119-[VNDetector internalProcessUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]_block_invoke_5
+0x1a58f15ac  __TEXT,__text  -[VNSaliencyHeatmapBoundingBoxGenerator _observationsForOneComponent32FloatPixelBuffer:options:regionOfInterest:error:]
+0x1a58f1c54  __TEXT,__text  std::__1::__shared_ptr_pointer<unsigned char*, void (*)(void*), std::__1::allocator<unsigned char> >::__on_zero_shared()
+0x1a58f1c74  __TEXT,__text  std::__1::__shared_ptr_pointer<unsigned char*, void (*)(void*), std::__1::allocator<unsigned char> >::__on_zero_shared_weak()
+0x1a58f1c78  __TEXT,__text  +[VNCoreSceneUnderstandingDetector keyForDetectorWithConfigurationOptions:]
+0x1a58f1d48  __TEXT,__text  -[VNImageBuffer dealloc]
+0x1a58f1de0  __TEXT,__text  -[VNCoreSceneUnderstandingDetectorFeatureConfiguration observationsRecipient]
+0x1a58f1de8  __TEXT,__text  std::__1::__shared_ptr_pointer<float*, void (*)(void*), std::__1::allocator<float> >::__on_zero_shared_weak()
+0x1a58f1dec  __TEXT,__text  std::__1::__shared_ptr_pointer<float*, void (*)(void*), std::__1::allocator<float> >::__on_zero_shared()
+0x1a58f1e0c  __TEXT,__text  -[VNWarningRecorder .cxx_destruct]
+0x1a58f1e18  __TEXT,__text  -[VNImageBuffer .cxx_destruct]
+0x1a58f1e68  __TEXT,__text  +[VNCoreSceneUnderstandingDetector supportedComputeStageDevicesForOptions:error:]
+0x1a58f21c8  __TEXT,__text  ___102+[VNCoreSceneUnderstandingDetector _getSceneNetV5ConfigurationRevision:forConfigurationOptions:error:]_block_invoke
+0x1a58f238c  __TEXT,__text  +[VNCoreSceneUnderstandingDetector _sceneNetV5ConfigurationRevisionForRequestSpecifier:]
+0x1a58f241c  __TEXT,__text  vision::mod::LandmarkDetectorDNN_Options::getBlobNamesOutput() const
+0x1a58f263c  __TEXT,__text  vision::mod::LandmarkDetectorDNN_Options::getBlobNamesOutput(bool) const
+0x1a58f27ec  __TEXT,__text  std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >* std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >
+0x1a58f2928  __TEXT,__text  std::__1::map<vision::mod::_constellationType, std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::less<vision::mod::_constellationType>, std::__1::allocator<std::__1::pair<vision::mod::_constellationType const, std::__1::pair<std::_
+0x1a58f2a0c  __TEXT,__text  vision::mod::LandmarkDetectorDNN_Options::LandmarkDetectorDNN_Options(vision::mod::LandmarkDetectorDNN_Version, espresso_engine_t, int, espresso_storage_type_t, int)
+0x1a58f2fa8  __TEXT,__text  +[VNFaceLandmarkDetectorDNN outputBlobNames]
+0x1a58f30cc  __TEXT,__text  std::__1::map<vision::mod::_constellationType, std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::less<vision::mod::_constellationType>, std::__1::allocator<std::__1::pair<vision::mod::_constellationType const, std::__1::pair<std::_
+0x1a58f30cc  __TEXT,__text  std::__1::map<vision::mod::_constellationType, std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::less<vision::mod::_constellationType>, std::__1::allocator<std::__1::pair<vision::mod::_constellationType const, std::__1::pair<std::_
+0x1a58f311c  __TEXT,__text  std::__1::__split_buffer<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >&>::~__split_buffer()
+0x1a58f3180  __TEXT,__text  +[VNFaceLandmarkDetectorDNN inputBlobNames]
+0x1a58f32dc  __TEXT,__text  -[VNFaceLandmarkDetector .cxx_construct]
+0x1a58f32f0  __TEXT,__text  -[VNFaceLandmarkDetectorDNN .cxx_construct]
+0x1a58f3318  __TEXT,__text  -[VNDetector shouldBeReplacedByDetectorOfClass:withConfiguration:]
+0x1a58f3320  __TEXT,__text  -[VNDetector initWithConfigurationOptions:]
+0x1a58f3438  __TEXT,__text  +[VNFaceLandmarkDetectorDNN recordDefaultConfigurationOptionsInDictionary:]
+0x1a58f351c  __TEXT,__text  -[VNRequestPerformer .cxx_destruct]
+0x1a58f356c  __TEXT,__text  +[VNValidationUtilities getBOOLValue:forKey:inOptions:withDefaultValue:error:]
+0x1a58f364c  __TEXT,__text  +[VNValidationUtilities validateAsyncStatusState:error:]
+0x1a58f3744  __TEXT,__text  +[VNFaceAnalyzerMultiDetector supportedComputeStageDevicesForOptions:error:]
+0x1a58f3898  __TEXT,__text  +[VNDetector loadedInstanceWithComputeDevice:boundToComputeStage:canBeUsedForProcessingDeviceBridge:]
+0x1a58f392c  __TEXT,__text  ___37+[VNRuntimeUtilities linkTimeVersion]_block_invoke
+0x1a58f3954  __TEXT,__text  ___36+[VNRuntimeUtilities runTimeVersion]_block_invoke
+0x1a58f397c  __TEXT,__text  -[VNRequestSpecifier requestClassName]
+0x1a58f3984  __TEXT,__text  +[VNComputeDeviceUtilities allCPUComputeDevices]
+0x1a58f398c  __TEXT,__text  +[VNFaceAnalyzerMultiDetectorBase detectorClassForConfigurationOptions:error:]
+0x1a58f3b7c  __TEXT,__text  -[VNFaceAnalyzerMultiDetectorBase .cxx_construct]
+0x1a58f3b90  __TEXT,__text  -[VNFaceAnalyzerMultiDetector .cxx_construct]
+0x1a58f3ba4  __TEXT,__text  -[VNFaceAnalyzerMultiDetectorBase completeInitializationForSession:error:]
+0x1a58f5960  __TEXT,__text  +[VNError errorWithVisionCoreError:]
+0x1a58f5a44  __TEXT,__text  -[VNSession detectorOfType:configuredWithOptions:error:]
+0x1a58f5b00  __TEXT,__text  -[VNFaceSegmentGenerator completeInitializationForSession:error:]
+0x1a58f5df0  __TEXT,__text  std::__1::__shared_ptr_pointer<float*, vision::mod::readBinSerializedModelValues(__sFILE*, char const*, vision::mod::BinSerializedModelFileInfo const&, vision::mod::ModelValues&, bool)::$_0, std::__1::allocator<float> >::__on_zero_shared()
+0x1a58f5df8  __TEXT,__text  std::__1::__shared_ptr_pointer<float*, vision::mod::readBinSerializedModelValues(__sFILE*, char const*, vision::mod::BinSerializedModelFileInfo const&, vision::mod::ModelValues&, bool)::$_0, std::__1::allocator<float> >::__on_zero_shared_weak()
+0x1a58f5dfc  __TEXT,__text  std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__init_copy_ctor_external(char const*, unsigned long)
+0x1a58f5e34  __TEXT,__text  vision::mod::LandmarkAttributes::LandmarkAttributes(vision::mod::ModelValues const&, bool)
+0x1a58f5ee4  __TEXT,__text  std::__1::__shared_ptr_pointer<float*, std::__1::default_delete<float []>, std::__1::allocator<float> >::__on_zero_shared()
+0x1a58f5f04  __TEXT,__text  vision::mod::LandmarkAttributes::init(vision::mod::ModelValues const&, bool)
+0x1a58f6250  __TEXT,__text  +[VNGenerateFaceSegmentsRequestConfiguration expansionRatioWithinValidRange:]
+0x1a58f62a4  __TEXT,__text  -[VNRequestPerformingContext .cxx_destruct]
+0x1a58f6308  __TEXT,__text  std::__1::__shared_ptr_pointer<float*, std::__1::default_delete<float []>, std::__1::allocator<float> >::__on_zero_shared_weak()
+0x1a58f630c  __TEXT,__text  +[VNFaceLandmarkDetectorDNN configurationOptionKeysForDetectorKey]
+0x1a58f63a0  __TEXT,__text  -[VNCoreSceneUnderstandingCompoundRequest .cxx_destruct]
+0x1a58f63b4  __TEXT,__text  -[VNCoreSceneUnderstandingCompoundRequestConfiguration .cxx_destruct]
+0x1a58f6410  __TEXT,__text  -[VNCoreSceneUnderstandingCompoundRequestDetectorConfiguration .cxx_destruct]
+0x1a58f6454  __TEXT,__text  +[VNShotflowDetector modelName]
+0x1a58f6470  __TEXT,__text  -[MLNeuralEngineComputeDevice(VNAdditions) VNComputeDevicePerformanceScore]
+0x1a58f6478  __TEXT,__text  -[MLGPUComputeDevice(VNAdditions) VNComputeDevicePerformanceScore]
+0x1a58f6480  __TEXT,__text  -[MLCPUComputeDevice(VNAdditions) VNComputeDevicePerformanceScore]
+0x1a58f6488  __TEXT,__text  +[VNEspressoModelFileBasedDetector espressoModelPathForConfigurationOptions:error:]
+0x1a58f6590  __TEXT,__text  +[VNANFDMultiDetector detectorClassForConfigurationOptions:error:]
+0x1a58f6678  __TEXT,__text  +[VNShotflowDetectorANODv4 VNShotflowNetworkClass]
+0x1a58f6684  __TEXT,__text  ___VNFrameworkBundle_block_invoke
+0x1a58f66d4  __TEXT,__text  +[VNError VNAssert:log:]
+0x1a58f6744  __TEXT,__text  -[VNEspressoModelWeightsFileInfo weightsFileExists]
+0x1a58f6750  __TEXT,__text  ___98+[VNEspressoModelFileBasedDetector espressoModelWeightsFilePathInfoForConfigurationOptions:error:]_block_invoke
+0x1a58f6780  __TEXT,__text  -[VNEspressoModelWeightsFileInfo initWithFilePath:exists:isRegular:]
+0x1a58f681c  __TEXT,__text  +[VNValidationUtilities requiredObjectOfClass:forKey:inOptions:error:]
+0x1a58f6884  __TEXT,__text  -[VNProcessingDeviceComputeDeviceBridge computeDevice]
+0x1a58f688c  __TEXT,__text  +[VNComputeDeviceUtilities computeDevicesOfTypes:]
+0x1a58f68e8  __TEXT,__text  +[VNComputeDeviceUtilities allNeuralEngineComputeDevices]
+0x1a58f68f0  __TEXT,__text  +[VNComputeDeviceUtilities computeDevices:ofTypes:]
+0x1a58f6964  __TEXT,__text  +[VNComputeDeviceUtilities computeDevices:passingTest:]
+0x1a58f6a30  __TEXT,__text  +[VNComputeDeviceUtilities computeDevice:isOneTypeOfTypes:]
+0x1a58f6a74  __TEXT,__text  -[VNRequestConfiguration setMemoryPoolId:]
+0x1a58f6a7c  __TEXT,__text  +[VNComputeDeviceUtilities mostPerformantComputeDeviceOfComputeDevices:]
+0x1a58f6ae8  __TEXT,__text  -[VNRequest processingDevice]
+0x1a58f6af0  __TEXT,__text  -[MLNeuralEngineComputeDevice(VNAdditions) VNComputeDeviceType]
+0x1a58f6af8  __TEXT,__text  +[VNFaceBBoxAligner supportedComputeStageDevicesForOptions:error:]
+0x1a58f6bb0  __TEXT,__text  -[VNShotflowNetwork .cxx_construct]
+0x1a58f6bd8  __TEXT,__text  -[VNShotflowNetworkANODv4 initializeBuffers]
+0x1a58f71d8  __TEXT,__text  -[MLGPUComputeDevice(VNAdditions) VNComputeDeviceType]
+0x1a58f71e0  __TEXT,__text  -[MLCPUComputeDevice(VNAdditions) VNComputeDeviceType]
+0x1a58f71e8  __TEXT,__text  -[VNRequest setModelFileBackingStore:]
+0x1a58f71f0  __TEXT,__text  -[VNRequestConfiguration setModelFileBackingStore:]
+0x1a58f71f8  __TEXT,__text  ___65+[VNDetectFaceRectanglesRequest(Revisioning) privateRevisionsSet]_block_invoke
+0x1a58f72dc  __TEXT,__text  ___46+[VNANFDMultiDetectorANSTv1 supportsExecution]_block_invoke
+0x1a58f74ec  __TEXT,__text  get_ANEDeviceInfoClass()
+0x1a58f75c0  __TEXT,__text  invocation function for block in get_ANEDeviceInfoClass()
+0x1a58f7714  __TEXT,__text  -[VNRequest setRevision:error:]
+0x1a58f77d4  __TEXT,__text  +[VNGenerateFaceSegmentsRequestConfiguration defaultFaceBoundingBoxExpansionRatio]
+0x1a58f77e0  __TEXT,__text  cvml::util::binserialized_contents::init_model_values(cvml::util::binserialized_table_of_contents const&, char const*, vision::mod::BinSerializedModelFileInfo const&)
+0x1a58f7df4  __TEXT,__text  std::__1::__hash_const_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned long long, cvml::util::binserialized_table_of_contents::blob_info>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<unsigned long long, cvml::util::binserialized_table_of_contents::blob_info>, std:
+0x1a58f7e98  __TEXT,__text  +[VNDetector _computeStageDeviceBindingsForConfiguration:error:]
+0x1a58f8094  __TEXT,__text  +[VNHomeAppFaceAnalyzerMultiDetectorFPrev3_1FArev1_3_MD3 espressoModelFileNameForConfigurationOptions:]
+0x1a58f80a0  __TEXT,__text  +[VNHomeAppFaceAnalyzerMultiDetectorANFRv4_MD2 espressoModelPathForConfigurationOptions:error:]
+0x1a58f817c  __TEXT,__text  +[VNHomeAppFaceAnalyzerMultiDetectorANFRv4_MD2 _inferenceDescriptorForModelConfiguredWithOptions:error:]
+0x1a58f81a8  __TEXT,__text  +[VNDetector detectorWithConfigurationOptions:forSession:error:]
+0x1a58f82a0  __TEXT,__text  +[VNFaceLandmarkDetector detectorClassForConfigurationOptions:error:]
+0x1a58f83ac  __TEXT,__text  -[VNControlledCapacityTasksQueue initWithDispatchQueueLabel:maximumTasksCount:]
+0x1a58f8560  __TEXT,__text  -[VisionCoreEspressoNetworkDescriptor(VNInternalAdditions) modelPathForComputeDevice:error:]
+0x1a58f85c4  __TEXT,__text  -[VNSequenceRequestHandler .cxx_destruct]
+0x1a58f85fc  __TEXT,__text  -[VNSequenceRequestHandler dealloc]
+0x1a58f8770  __TEXT,__text  -[VNRequest copyStateOfRequest:]
+0x1a58f8860  __TEXT,__text  -[VNImageBuffer initWithCVPixelBuffer:orientation:options:session:]
+0x1a58f89cc  __TEXT,__text  -[VNImageBuffer initWithSession:options:]
+0x1a58f8ac0  __TEXT,__text  +[VNImageBuffer initializeVisionCoreImageBufferResources:options:error:]
+0x1a58f8c04  __TEXT,__text  +[VNImageBuffer visionCoreImageBufferOptionsFromOptions:]
+0x1a58f8ca0  __TEXT,__text  +[VNImageBuffer _imageOrientationForOrientation:options:]
+0x1a58f8dcc  __TEXT,__text  -[VNRequestSpecifier requestClassAndReturnError:]
+0x1a58f8e40  __TEXT,__text  -[VNFaceAnalyzerCompoundRequestConfiguration .cxx_destruct]
+0x1a58f8e9c  __TEXT,__text  +[VNANFDMultiDetector _printDebugInfo:detectedObjectsRaw:faceDetectorBGRAImage:tempImage:session:]
+0x1a58f9168  __TEXT,__text  -[VNCompoundRequest originalRequests]
+0x1a58f917c  __TEXT,__text  -[VNCoreSceneUnderstandingDetectorFeatureConfiguration .cxx_destruct]
+0x1a58f9188  __TEXT,__text  +[VNShotflowDetector inputLayerName]
+0x1a58f91a4  __TEXT,__text  ___26+[VNSession globalSession]_block_invoke
+0x1a58f91d4  __TEXT,__text  +[VNSession globalSession]
+0x1a58f921c  __TEXT,__text  -[VNSession init]
+0x1a58f9224  __TEXT,__text  ___29+[VNFrameworkManager manager]_block_invoke
+0x1a58f9254  __TEXT,__text  -[VNFrameworkManager init]
+0x1a58f9378  __TEXT,__text  -[VNDetectorCache init]
+0x1a58f93f4  __TEXT,__text  -[VNRPNTrackerEspressoResourcesCache init]
+0x1a58f94a0  __TEXT,__text  -[VNCIContextManager init]
+0x1a58f94f4  __TEXT,__text  -[VNTrackerManager init]
+0x1a58f9770  __TEXT,__text  -[VNRequest resolvedComputeStageDeviceAssignments]
+0x1a58f9778  __TEXT,__text  +[VNRequest initialize]
+0x1a58f97c0  __TEXT,__text  ___62+[VNImageAnalyzerMultiDetector modelForRequestClass:revision:]_block_invoke
+0x1a58f9cb4  __TEXT,__text  std::__1::map<std::__1::tuple<objc_class* __strong, unsigned long>, CSUSceneNetV5ConfigurationRevision, std::__1::less<std::__1::tuple<objc_class* __strong, unsigned long> >, std::__1::allocator<std::__1::pair<std::__1::tuple<objc_class* __strong, unsigned long> const, CSUSceneNetV5ConfigurationRevi
+0x1a58f9cb4  __TEXT,__text  std::__1::map<std::__1::tuple<objc_class* __strong, unsigned long>, CSUSceneNetV5ConfigurationRevision, std::__1::less<std::__1::tuple<objc_class* __strong, unsigned long> >, std::__1::allocator<std::__1::pair<std::__1::tuple<objc_class* __strong, unsigned long> const, CSUSceneNetV5ConfigurationRevi
+0x1a58f9d68  __TEXT,__text  -[VNCompoundRequest initWithOriginalRequests:]
+0x1a58f9f1c  __TEXT,__text  ___49-[VNRequestPerformer orderedRequestsForRequests:]_block_invoke
+0x1a58f9f94  __TEXT,__text  _VNRequestDependencyProcessingOrdinalityAdjustedForConfiguredRequest
+0x1a58fa014  __TEXT,__text  -[VNRequestPerformer init]
+0x1a58fa0f8  __TEXT,__text  -[VNANFDDetectorCompoundRequestConfigurationGroups .cxx_destruct]
+0x1a58fa104  __TEXT,__text  ___88-[VNRequestPerformer dependencyAnalyzedRequestsForRequests:withPerformingContext:error:]_block_invoke
+0x1a58fa140  __TEXT,__text  -[VNCoreSceneUnderstandingCompoundRequestDetectorConfigurations .cxx_destruct]
+0x1a58fa14c  __TEXT,__text  -[VNFaceAnalyzerCompoundRequestConfigurationGroups init]
+0x1a58fa1e8  __TEXT,__text  -[VNFaceAnalyzerFaceObservationGrouping .cxx_destruct]
+0x1a58fa1f4  __TEXT,__text  -[VNFaceAnalyzerCompoundRequestConfigurationGroups .cxx_destruct]
+0x1a58fa22c  __TEXT,__text  -[VNANFDDetectorCompoundRequestConfigurationGroups init]
+0x1a58fa2b0  __TEXT,__text  -[VNRequestConfiguration setComputeDevice:forComputeStage:]
+0x1a58fa360  __TEXT,__text  -[VNRequestConfiguration setModelExecutionPriority:]
+0x1a58fa368  __TEXT,__text  +[VNCoreSceneUnderstandingCompoundRequest compoundRequestsForOriginalRequests:withPerformingContext:error:]
+0x1a58fa6cc  __TEXT,__text  -[VNRequest specifier]
+0x1a58fa720  __TEXT,__text  -[VNRequestConfiguration modelExecutionPriority]
+0x1a58fa728  __TEXT,__text  -[VNRequestConfiguration preferBackgroundProcessing]
+0x1a58fa730  __TEXT,__text  +[VNMultiDetectorOriginalRequestInfo requestKeyFromRequest:]
+0x1a58fa780  __TEXT,__text  -[VNRequest resolvedRevision]
+0x1a58fa7e4  __TEXT,__text  -[VNRequest modelFileBackingStore]
+0x1a58fa7ec  __TEXT,__text  -[VNSequenceRequestHandler init]
+0x1a58fa888  __TEXT,__text  -[VNDetectFaceRectanglesRequest dependencyProcessingOrdinality]
+0x1a58fa894  __TEXT,__text  +[VNComputeDeviceUtilities performanceScoreForComputeDevice:]
+0x1a58fa89c  __TEXT,__text  -[VNANFDDetectorCompoundRequest dependencyProcessingOrdinality]
+0x1a58fa8a8  __TEXT,__text  +[VNControlledCapacityTasksQueue requiresHighQoS]
+0x1a58fa8b4  __TEXT,__text  -[VNRequest revision]
+0x1a58fa8bc  __TEXT,__text  +[VNDetectorSyncTasksQueueCache sharedCache]
+0x1a58fa904  __TEXT,__text  ___52+[VNClassRegistrar getClassCode:forClassName:error:]_block_invoke
+0x1a58fa9f0  __TEXT,__text  ___149-[VNRequest processFaceObservations:revision:regionOfInterest:detectorType:detectorOptions:shouldAlignFaceBBox:shouldRunDetectorBlock:context:error:]_block_invoke.141
+0x1a58fab80  __TEXT,__text  -[VNRequest processFaceObservations:revision:regionOfInterest:detectorType:detectorOptions:shouldAlignFaceBBox:shouldRunDetectorBlock:context:error:]
+0x1a58fb648  __TEXT,__text  -[VNFaceBBoxAligner processRegionOfInterest:croppedPixelBuffer:options:qosClass:warningRecorder:error:progressHandler:]
+0x1a58fc344  __TEXT,__text  -[VNDetectFaceRectanglesRequest applyConfigurationOfRequest:]
+0x1a58fc4d0  __TEXT,__text  -[VNRequest resetAsyncStatus]
+0x1a58fc4dc  __TEXT,__text  ___73-[VNRequest performInContextAsync:asyncDispatchQueue:asyncDispatchGroup:]_block_invoke
+0x1a58fc620  __TEXT,__text  -[VNImageBasedRequest willAcceptCachedResultsFromRequestWithConfiguration:]
+0x1a58fca20  __TEXT,__text  _VNFaceObservationsCollectionIsSubsetOfFaceObservationsCollection
+0x1a58fccb0  __TEXT,__text  -[VNRequest willAcceptCachedResultsFromRequestWithConfiguration:]
+0x1a58fcd60  __TEXT,__text  std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, float, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a58fcdfc  __TEXT,__text  -[VNFaceAnalyzerMultiDetectorBase _addFaceAnalysisResultsFromMap:toFaceAttributeObject:forOriginatingRequestSpecifier:]
+0x1a5901574  __TEXT,__text  -[VNFaceAttributes setFacemaskCategory:]
+0x1a59015d4  __TEXT,__text  -[VNFaceAttributes setVN3iT1YRjjnIuELobV1olJiO1vvItN6Kdq:]
+0x1a5901634  __TEXT,__text  ___53-[VNCompoundRequest recordWarningsInOriginalRequests]_block_invoke
+0x1a5901750  __TEXT,__text  -[VNRequestConfiguration copyWithZone:]
+0x1a5901824  __TEXT,__text  -[VNFaceObservation faceprint]
+0x1a590182c  __TEXT,__text  -[VNCompoundRequest allowsCachingOfResults]
+0x1a5901834  __TEXT,__text  -[VNFaceAttributeCategory copyWithZone:]
+0x1a5901838  __TEXT,__text  +[VNControlledCapacityTasksQueue tasksTimeout]
+0x1a5901844  __TEXT,__text  -[VNRequest setAsyncStatus:error:]
+0x1a59018c8  __TEXT,__text  -[VNFaceAnalyzerMultiDetectorBase processRegionOfInterest:croppedPixelBuffer:options:qosClass:warningRecorder:error:progressHandler:]
+0x1a590323c  __TEXT,__text  -[VNObservation initWithOriginatingRequestSpecifier:]
+0x1a5903308  __TEXT,__text  ___149-[VNRequest processFaceObservations:revision:regionOfInterest:detectorType:detectorOptions:shouldAlignFaceBBox:shouldRunDetectorBlock:context:error:]_block_invoke
+0x1a59033c4  __TEXT,__text  ___Block_byref_object_dispose_.140
+0x1a59033cc  __TEXT,__text  -[VNControlledCapacityTasksQueue dispatchReportBlockCompletion]
+0x1a5903414  __TEXT,__text  -[VNRequest copyWithZone:]
+0x1a5903460  __TEXT,__text  +[VNRequest applicableRevisionForDependentRequestOfClass:beingPerformedByRevision:]
+0x1a5903664  __TEXT,__text  ___149-[VNRequest processFaceObservations:revision:regionOfInterest:detectorType:detectorOptions:shouldAlignFaceBBox:shouldRunDetectorBlock:context:error:]_block_invoke_3
+0x1a5903830  __TEXT,__text  -[VNRequest applyConfigurationOfRequest:]
+0x1a5903954  __TEXT,__text  -[VNRequest metalContextPriority]
+0x1a590395c  __TEXT,__text  -[VNRequestConfiguration metalContextPriority]
+0x1a5903964  __TEXT,__text  -[VNImageBasedRequestConfiguration copyWithZone:]
+0x1a5903a10  __TEXT,__text  -[VNRequestConfiguration setPreferBackgroundProcessing:]
+0x1a5903a18  __TEXT,__text  ___62-[VNRequestPerformer _performOrderedRequests:inContext:error:]_block_invoke_2
+0x1a5903c14  __TEXT,__text  -[VNRequestPerformer _performOrderedRequests:inContext:error:]
+0x1a5904508  __TEXT,__text  -[VNAsyncStatus copyWithZone:]
+0x1a590450c  __TEXT,__text  +[VNValidationUtilities getNSUIntegerValue:forKey:inOptions:withDefaultValue:error:]
+0x1a59045ec  __TEXT,__text  -[VNImageBasedRequest inputDetectedObjectObservations]
+0x1a590463c  __TEXT,__text  -[VNImageBasedRequest applyConfigurationOfRequest:]
+0x1a590472c  __TEXT,__text  -[VNImageBasedRequest setInputFaceObservations:]
+0x1a59047b4  __TEXT,__text  -[VNRequest newDuplicateInstance]
+0x1a59047e4  __TEXT,__text  -[VNImageBasedRequest setInputDetectedObjectObservations:]
+0x1a590486c  __TEXT,__text  -[VNRequest results]
+0x1a5904874  __TEXT,__text  -[VNRequest warnings]
+0x1a59048a8  __TEXT,__text  -[VNDetectFaceRectanglesRequest _setPrecisionRecallThresholdOverride:]
+0x1a5904920  __TEXT,__text  -[VNRequestConfiguration detectionLevel]
+0x1a5904928  __TEXT,__text  -[VNANFDMultiDetector internalProcessUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]
+0x1a5905a1c  __TEXT,__text  ___128-[VNANFDMultiDetector internalProcessUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]_block_invoke_3
+0x1a5905e14  __TEXT,__text  ___128-[VNANFDMultiDetector internalProcessUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]_block_invoke_5
+0x1a5905f04  __TEXT,__text  ___128-[VNANFDMultiDetector internalProcessUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]_block_invoke
+0x1a5906188  __TEXT,__text  ___128-[VNANFDMultiDetector internalProcessUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]_block_invoke_4
+0x1a59063d8  __TEXT,__text  +[VNShotflowDetectorANSTv1 filterThresholdsArrayForFilterThresholds:error:]
+0x1a5906524  __TEXT,__text  +[VNValidationUtilities getOptionalOriginatingRequestSpecifier:forKey:inOptions:specifyingRequestClass:error:]
+0x1a5906628  __TEXT,__text  -[VNANFDMultiDetector processRegionOfInterest:croppedPixelBuffer:options:qosClass:warningRecorder:error:progressHandler:]
+0x1a590702c  __TEXT,__text  ___121-[VNANFDMultiDetector processRegionOfInterest:croppedPixelBuffer:options:qosClass:warningRecorder:error:progressHandler:]_block_invoke
+0x1a5907844  __TEXT,__text  -[VNANFDMultiDetector processDetectedObject:originatingRequestSpecifier:objectBoundingBox:objectGroupId:imageBuffer:qosClass:session:warningRecorder:detectedObjectResults:error:]
+0x1a5907eb8  __TEXT,__text  -[VNDetector recordImageCropQuickLookInfoToOptions:cacheKey:imageBuffer:]
+0x1a5907fb8  __TEXT,__text  +[VNShotflowDetector _filterThresholdsArrayFromKeys:inFilterThresholds:error:]
+0x1a59081d4  __TEXT,__text  ___121-[VNANFDMultiDetector processRegionOfInterest:croppedPixelBuffer:options:qosClass:warningRecorder:error:progressHandler:]_block_invoke_2
+0x1a5908230  __TEXT,__text  -[VNShotflowDetector detectAndProcessObjects:filterThresholds:inputIsBGR:]
+0x1a59082cc  __TEXT,__text  -[VNShotflowNetwork resizeAndProcessVImage:inputIsBGR:]
+0x1a5908944  __TEXT,__text  -[VNANFDDetectedObject labelKey]
+0x1a5908958  __TEXT,__text  -[VNDetectedObjectObservation initWithOriginatingRequestSpecifier:boundingBox:]
+0x1a5908960  __TEXT,__text  _ImageProcessing_reallocVImageBuffer
+0x1a59089dc  __TEXT,__text  _ImageProcessing_rect2DMakefromImage
+0x1a5908a38  __TEXT,__text  _ImageProcessing_getPointerToPoint
+0x1a5908aa8  __TEXT,__text  _Geometry2D_intersectRect2D
+0x1a5908b68  __TEXT,__text  vision::mod::ImageDescriptorAugmenterFlip::flipLR(vImage_Buffer const*, _ImageProcessing_ImageType, vImage_Buffer*)
+0x1a5908bc8  __TEXT,__text  -[VNFaceAnalyzerMultiDetector prepare_vImageBufferForCVPixelBuffer:error:]
+0x1a5909008  __TEXT,__text  vision::mod::ImageDescriptorAugmenterFlip::augmentImage(vImage_Buffer const&, _ImageProcessing_ImageType, std::__1::vector<vImage_Buffer*, std::__1::allocator<vImage_Buffer*> > const&)
+0x1a590920c  __TEXT,__text  vImage_Buffer* std::__1::vector<vImage_Buffer, std::__1::allocator<vImage_Buffer> >::__emplace_back_slow_path<vImage_Buffer const&>(vImage_Buffer const&)
+0x1a59092bc  __TEXT,__text  vision::mod::ImageDescriptorAugmenterAbstract::getAugmentedImages() const
+0x1a590939c  __TEXT,__text  vision::mod::ImageDescriptorAugmenterAbstract::augment(vImage_Buffer const&, _ImageProcessing_ImageType)
+0x1a5909428  __TEXT,__text  vision::mod::ImageDescriptorAugmenterAbstract::augment(std::__1::vector<vImage_Buffer, std::__1::allocator<vImage_Buffer> > const&, _ImageProcessing_ImageType)
+0x1a590976c  __TEXT,__text  _ImageProcessing_copyVImageBufferData
+0x1a5909884  __TEXT,__text  -[VNRequest ioSurfaceMemoryPoolId]
+0x1a590988c  __TEXT,__text  -[VNRequestPerformingContext cachedObservationsAcceptedByRequest:]
+0x1a5909998  __TEXT,__text  -[VNRequest setProcessedResults:]
+0x1a59099f4  __TEXT,__text  -[VNObservation setTimeRange:]
+0x1a5909a08  __TEXT,__text  -[VNDetectFaceLandmarksRequestConfiguration copyWithZone:]
+0x1a5909af8  __TEXT,__text  +[VNValidationUtilities _validateFaceObservations:withMinimumCount:forOptionalRequest:error:]
+0x1a5909c14  __TEXT,__text  -[VNImageBasedRequest inputFaceObservations]
+0x1a5909c64  __TEXT,__text  -[VNRequest configuration]
+0x1a5909c6c  __TEXT,__text  -[VNMultiDetectorOriginalRequestInfo originatingRequestSpecifierKey]
+0x1a5909c74  __TEXT,__text  -[VNRequest preferBackgroundProcessing]
+0x1a5909c7c  __TEXT,__text  +[VNControlledCapacityTasksQueue targetHighPriorityQueue]
+0x1a5909c88  __TEXT,__text  ___42-[VNCompoundRequest ioSurfaceMemoryPoolId]_block_invoke
+0x1a5909d6c  __TEXT,__text  -[VNFaceAnalyzerCompoundRequest dependencyProcessingOrdinality]
+0x1a5909d78  __TEXT,__text  -[VNRequest setResults:]
+0x1a5909df0  __TEXT,__text  -[VNClassifyFaceAttributesRequest dependencyProcessingOrdinality]
+0x1a5909dfc  __TEXT,__text  -[VNRequest dumpIntermediateImages]
+0x1a5909e04  __TEXT,__text  -[VNDetectedObjectObservation boundingBox]
+0x1a5909e10  __TEXT,__text  -[VNRequest cancellationTriggered]
+0x1a5909e18  __TEXT,__text  CGRect* std::__1::vector<CGRect, std::__1::allocator<CGRect> >::__emplace_back_slow_path<CGRect const&>(CGRect const&)
+0x1a5909e18  __TEXT,__text  CGRect* std::__1::vector<CGRect, std::__1::allocator<CGRect> >::__emplace_back_slow_path<CGRect const&>(CGRect const&)
+0x1a5909ec8  __TEXT,__text  -[VNDetectedObjectObservation encodeWithCoder:]
+0x1a5909fb4  __TEXT,__text  +[VNFaceDetector calculateTilesForRegionOfInterest:imageWidth:imageHeight:tileSizeInPixels:overlapFraction:aspectRatioThreshold:columns:rows:tiles:error:]
+0x1a590a438  __TEXT,__text  -[VNRequest warmUpApplicableDetectorInSession:error:]
+0x1a590a5cc  __TEXT,__text  -[VNRequest applicableDetectorAndOptions:forRevision:loadedInSession:error:]
+0x1a590a6bc  __TEXT,__text  -[VNCompoundRequest ioSurfaceMemoryPoolId]
+0x1a590a7e4  __TEXT,__text  -[VNCompoundRequest dumpIntermediateImages]
+0x1a590a7ec  __TEXT,__text  -[VNSupportedImageSize .cxx_destruct]
+0x1a590a824  __TEXT,__text  -[VNImageAnalyzerMultiDetectorAnalysisConfiguration .cxx_destruct]
+0x1a590a830  __TEXT,__text  ___93+[VNCoreSceneUnderstandingDetector _sceneNetV5ConfigurationRevisionForRequestClass:revision:]_block_invoke
+0x1a590b214  __TEXT,__text  -[VNCoreSceneUnderstandingCompoundRequestDetectorConfigurations allConfigurations]
+0x1a590b264  __TEXT,__text  -[VNImageBasedRequest getOptionalValidatedInputFaceObservations:clippedToRegionOfInterest:error:]
+0x1a590b328  __TEXT,__text  -[VNImageBasedRequestConfiguration inputFaceObservations]
+0x1a590b33c  __TEXT,__text  ___66+[VNANFDMultiDetectorANODv4 detectedObjectRequestKeyToRequestInfo]_block_invoke
+0x1a590b5bc  __TEXT,__text  ___60+[VNANFDMultiDetector detectedObjectRequestKeyToRequestInfo]_block_invoke
+0x1a590b828  __TEXT,__text  +[VNANFDMultiDetector detectedObjectRequestKeyToRequestInfo]
+0x1a590b870  __TEXT,__text  -[VNMultiDetectorOriginalRequestInfo initWithOriginatingRequestSpecifierProcessingOptionKey:originalRequestResultsIndex:]
+0x1a590b914  __TEXT,__text  ___67+[VNANFDDetectorCompoundRequest compoundRequestRevisionForRequest:]_block_invoke
+0x1a590bd28  __TEXT,__text  +[VNRequest resolvedRevisionForRevision:]
+0x1a590bd80  __TEXT,__text  -[VNRequest modelExecutionPriority]
+0x1a590bd88  __TEXT,__text  -[VNRequestConfiguration resolvedComputeStageDeviceAssignments]
+0x1a590be78  __TEXT,__text  +[VNCompoundRequest computeStageDeviceAssignmentsForOriginalRequests:]
+0x1a590c068  __TEXT,__text  +[VNCompoundRequest planPriorityForOriginalRequests:]
+0x1a590c170  __TEXT,__text  +[VNANFDDetectorCompoundRequest configurationClass]
+0x1a590c17c  __TEXT,__text  -[VNANFDDetectorCompoundRequestConfiguration setDetectorType:]
+0x1a590c188  __TEXT,__text  +[VNGenerateSemanticSegmentationCompoundRequest compoundRequestsForOriginalRequests:withPerformingContext:error:]
+0x1a590c66c  __TEXT,__text  -[NSObject(VNAdditions) VNComputeDevicePerformanceScore]
+0x1a590c674  __TEXT,__text  -[VNDetectFaceLandmarksRequest dependencyProcessingOrdinality]
+0x1a590c6e0  __TEXT,__text  -[VNSession releaseCachedResources]
+0x1a590c7f0  __TEXT,__text  -[VNSession _releaseAllDetectors]
+0x1a590c8c8  __TEXT,__text  -[VNDetectorCache evictAllDetectors]
+0x1a590c9d4  __TEXT,__text  -[VNDetectorCache _reportEvictedDetectors:]
+0x1a590cb2c  __TEXT,__text  -[VNEspressoResources network]
+0x1a590cb68  __TEXT,__text  -[VNEspressoResources .cxx_destruct]
+0x1a590cba0  __TEXT,__text  -[VNDetector .cxx_destruct]
+0x1a590cbf0  __TEXT,__text  -[VNDetector dealloc]
+0x1a590cc84  __TEXT,__text  -[VNANFDMultiDetector .cxx_destruct]
+0x1a590cccc  __TEXT,__text  -[VNShotflowDetector .cxx_destruct]
+0x1a590ccd8  __TEXT,__text  -[VNShotflowNetwork dealloc]
+0x1a590cd70  __TEXT,__text  -[VNShotflowNetwork .cxx_destruct]
+0x1a590cdb8  __TEXT,__text  std::__1::__shared_ptr_emplace<espresso_buffer_t, std::__1::allocator<espresso_buffer_t> >::__on_zero_shared()
+0x1a590cdbc  __TEXT,__text  std::__1::__shared_ptr_emplace<espresso_buffer_t, std::__1::allocator<espresso_buffer_t> >::__on_zero_shared_weak()
+0x1a590cdc0  __TEXT,__text  -[VNEspressoModelFileBasedDetector .cxx_destruct]
+0x1a590cdd4  __TEXT,__text  -[VNEspressoResources dealloc]
+0x1a590ce4c  __TEXT,__text  -[VNFaceSegmentGenerator .cxx_destruct]
+0x1a590ce68  __TEXT,__text  std::__1::__shared_ptr_emplace<vision::mod::FaceSegmenterDNN, std::__1::allocator<vision::mod::FaceSegmenterDNN> >::__on_zero_shared()
+0x1a590cf4c  __TEXT,__text  std::__1::__shared_ptr_emplace<vision::mod::FaceSegmenterDNN, std::__1::allocator<vision::mod::FaceSegmenterDNN> >::__on_zero_shared_weak()
+0x1a590cf50  __TEXT,__text  -[VNFaceBBoxAligner dealloc]
+0x1a590d034  __TEXT,__text  -[VNModelFilesCache unload:]
+0x1a590d14c  __TEXT,__text  cvml::util::mapped_model_file_open::advise(int) const
+0x1a590d194  __TEXT,__text  -[VNFaceBBoxAligner .cxx_destruct]
+0x1a590d1ec  __TEXT,__text  std::__1::__shared_ptr_emplace<vision::mod::FaceBoxPoseAligner<signed char>, std::__1::allocator<vision::mod::FaceBoxPoseAligner<signed char> > >::__on_zero_shared()
+0x1a590d248  __TEXT,__text  ___73-[VNFaceAnalyzerCompoundRequest internalPerformRevision:inContext:error:]_block_invoke_2
+0x1a590d374  __TEXT,__text  +[VNComputeDeviceUtilities espressoV1ModelComputeDevices]
+0x1a590d3c4  __TEXT,__text  +[VNDetector detectorClassForConfigurationOptions:error:]
+0x1a590d3c8  __TEXT,__text  -[VNRequest originatingRequestSpecifier]
+0x1a590d3cc  __TEXT,__text  -[VNDetectFaceLandmarksRequest setPerformBlinkDetection:]
+0x1a590d424  __TEXT,__text  -[VNAsyncStatus error]
+0x1a590d42c  __TEXT,__text  -[VNFaceObservation setAlignedMeanShape:]
+0x1a590d438  __TEXT,__text  -[VNFaceObservation setAlignedRotationAngle:]
+0x1a590d440  __TEXT,__text  -[VNCoreSceneUnderstandingCompoundRequestDetectorConfiguration cacheResultsInRequestPerformingContext:]
+0x1a590d750  __TEXT,__text  -[VNCoreSceneUnderstandingDetector _processJunkConfigurations:VN5kJNH3eYuyaLxNpZr5Z7ziConfigurations:significantEventConfigurations:cityNatureConfigurations:forSceneNetOutput:collectedObservations:error:]
+0x1a590da38  __TEXT,__text  -[VNImageBuffer cropAndScaleBufferWithWidth:height:cropRect:format:imageCropAndScaleOption:options:error:calculatedNormalizedOriginOffset:calculatedScaleX:calculatedScaleY:pixelBufferRepsCacheKey:]
+0x1a590db78  __TEXT,__text  -[VNCoreSceneUnderstandingDetector _processSceneNetOutput:regionOfInterest:options:qosClass:error:]
+0x1a590fb7c  __TEXT,__text  ___134-[VNCoreSceneUnderstandingDetector processRegionOfInterest:croppedPixelBuffer:options:qosClass:warningRecorder:error:progressHandler:]_block_invoke
+0x1a590fc54  __TEXT,__text  -[VNRequest setResults:assignedWithOriginatingSpecifier:]
+0x1a590fd08  __TEXT,__text  -[VNRequest supportedComputeStageDevicesAndReturnError:]
+0x1a590fdb4  __TEXT,__text  -[VNRequest applicableDetectorClassAndOptions:forRevision:error:]
+0x1a590fea4  __TEXT,__text  ___51+[VNDetectFaceLandmarksRequest privateRevisionsSet]_block_invoke
+0x1a590ff34  __TEXT,__text  -[VNRequest resultsAreAssignedWithOriginatingRequestSpecifier]
+0x1a590ff3c  __TEXT,__text  -[NSArray(VNObservationAdditions) VNObservationsWithOriginatingRequestSpecifier:]
+0x1a5910108  __TEXT,__text  -[VNGenerateFaceSegmentsRequest dependencyProcessingOrdinality]
+0x1a5910114  __TEXT,__text  +[VNShotflowNetworkANSTv1 modelName]
+0x1a5910120  __TEXT,__text  -[VNGenerateFaceSegmentsRequest faceBoundingBoxExpansionRatio]
+0x1a5910170  __TEXT,__text  -[VNGenerateFaceSegmentsRequestConfiguration faceBoundingBoxExpansionRatio]
+0x1a5910184  __TEXT,__text  vision::mod::ModelValues::setModelValues(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::shared_ptr<unsigned char const> const&, unsigned long long)
+0x1a5910240  __TEXT,__text  _VNCloneFaceObservationFromOptions
+0x1a59102ec  __TEXT,__text  ___72-[VNDetectFaceLandmarksRequest internalPerformRevision:inContext:error:]_block_invoke_2
+0x1a5910324  __TEXT,__text  ___149-[VNRequest processFaceObservations:revision:regionOfInterest:detectorType:detectorOptions:shouldAlignFaceBBox:shouldRunDetectorBlock:context:error:]_block_invoke_4
+0x1a5910450  __TEXT,__text  +[VNValidationUtilities requiredSessionInOptions:error:]
+0x1a59104f4  __TEXT,__text  -[VNDetectedObjectObservation vn_cloneObject]
+0x1a5910578  __TEXT,__text  -[VNObservation vn_cloneObject]
+0x1a591060c  __TEXT,__text  -[VNImageBasedRequest _faceObservationsForRegionOfInterestContainingFaceObservations:]
+0x1a591070c  __TEXT,__text  -[VNImageBasedRequest isFullCoverageRegionOfInterest]
+0x1a5910738  __TEXT,__text  vision::mod::LandmarkDetectorDNN::run(__CVBuffer*, _Geometry2D_rect2D_ const&)
+0x1a591080c  __TEXT,__text  -[VNFaceLandmarkDetectorDNN processRegionOfInterest:croppedPixelBuffer:options:qosClass:warningRecorder:error:progressHandler:]
+0x1a5910b04  __TEXT,__text  _ImageProcessing_getCVPixelBufferImageType
+0x1a5910b98  __TEXT,__text  -[VNFaceLandmarkDetector normalizedFaceBBoxForLandmarks:]
+0x1a5910c38  __TEXT,__text  +[VNSceneprint confidenceTypeForOriginatingRequestSpecifier:]
+0x1a5910cac  __TEXT,__text  -[VNFaceObservation .cxx_destruct]
+0x1a5910e10  __TEXT,__text  +[VNDetector computeStagesToBindForConfigurationOptions:]
+0x1a5910e84  __TEXT,__text  +[VNFaceLandmarkDetectorRevision3 espressoModelFileNameForConfigurationOptions:]
+0x1a5910e90  __TEXT,__text  +[VNShotflowNetworkANODv4 inputLayerName]
+0x1a5910e9c  __TEXT,__text  +[VNShotflowDetector networkThreshold]
+0x1a5910ea8  __TEXT,__text  -[VNShotflowDetectorANODv4 initWithNetwork:]
+0x1a5910f08  __TEXT,__text  +[VNRequest publicRevisionsSet]
+0x1a59110b8  __TEXT,__text  +[VNValidationUtilities getOptionalFaceObservations:inOptions:error:]
+0x1a59111bc  __TEXT,__text  -[VNHomologousObservationClassCompoundRequest initWithSubrequests:]
+0x1a5911460  __TEXT,__text  -[VNFaceLandmarkDetector completeInitializationForSession:error:]
+0x1a5911530  __TEXT,__text  -[VNDetector boundComputeStageDevices]
+0x1a5911538  __TEXT,__text  +[VNRequest supportsRevision:]
+0x1a5911588  __TEXT,__text  -[VNFaceLandmarks pointsData]
+0x1a5911594  __TEXT,__text  -[VNObservation initWithRequestRevision:]
+0x1a5911620  __TEXT,__text  +[VNObservation defaultOriginatingRequestSpecifierForRevision:]
+0x1a591175c  __TEXT,__text  -[VNRequestPerformingContext requestForensics]
+0x1a5911764  __TEXT,__text  -[VNRequestSpecifier copyWithZone:]
+0x1a5911768  __TEXT,__text  std::__1::__shared_ptr_emplace<vision::mod::ImageDescriptorBufferFloat32, std::__1::allocator<vision::mod::ImageDescriptorBufferFloat32> >::__on_zero_shared()
+0x1a5911784  __TEXT,__text  ___103-[VNCoreSceneUnderstandingCompoundRequestDetectorConfiguration cacheResultsInRequestPerformingContext:]_block_invoke
+0x1a59118cc  __TEXT,__text  ___131-[VNCoreSceneUnderstandingDetector _runSceneNetCustomClassifiers:onSceneprintBuffer:forConfigurations:collectedObservations:error:]_block_invoke
+0x1a5911c24  __TEXT,__text  -[VNCoreSceneUnderstandingDetector _processSaliencyConfiguration:fromSaliencyMapProvidedBySelector:ofSceneNetOutput:regionOfInterest:options:qosClass:saliencyGeneratorType:error:]
+0x1a59120bc  __TEXT,__text  ___131-[VNCoreSceneUnderstandingDetector _runSceneNetCustomClassifiers:onSceneprintBuffer:forConfigurations:collectedObservations:error:]_block_invoke_2
+0x1a5912154  __TEXT,__text  -[VNCoreSceneUnderstandingDetector _runSceneNetCustomClassifiers:onSceneprintBuffer:forConfigurations:collectedObservations:error:]
+0x1a59125ac  __TEXT,__text  -[VNCreateSceneprintRequestConfiguration copyWithZone:]
+0x1a5912654  __TEXT,__text  -[VNClassifyJunkImageRequestConfiguration copyWithZone:]
+0x1a59126cc  __TEXT,__text  +[VNEspressoHelpers _alternatePathForEspressoResource:ofType:error:]
+0x1a5912838  __TEXT,__text  +[VNFrameworkManager manager]
+0x1a5912880  __TEXT,__text  -[VNObservation setRequestImageBuffersCacheKeys:]
+0x1a591288c  __TEXT,__text  -[VNPixelBufferObservation initWithOriginatingRequestSpecifier:featureName:CVPixelBuffer:]
+0x1a5912954  __TEXT,__text  -[VNRegionOfInterestTiling .cxx_destruct]
+0x1a5912960  __TEXT,__text  ___VNDefaultClassificationObservationsSortingComparator_block_invoke
+0x1a5912a50  __TEXT,__text  -[VNObservation setConfidence:]
+0x1a5912a58  __TEXT,__text  +[VNCreateSceneprintRequest privateRevisionsSet]
+0x1a5912aa0  __TEXT,__text  -[VNRequest allowsCachingOfResults]
+0x1a5912aa8  __TEXT,__text  -[NSCoder(VNAdditions) vn_encodeCodingVersion:forKey:]
+0x1a5912aac  __TEXT,__text  +[VNValidationUtilities validateVNConfidenceRange:error:]
+0x1a5912b50  __TEXT,__text  long long* std::__1::vector<long long, std::__1::allocator<long long> >::__emplace_back_slow_path<long long>(long long&&)
+0x1a5912b50  __TEXT,__text  long long* std::__1::vector<long long, std::__1::allocator<long long> >::__emplace_back_slow_path<long long>(long long&&)
+0x1a5912b50  __TEXT,__text  long long* std::__1::vector<long long, std::__1::allocator<long long> >::__emplace_back_slow_path<long long>(long long&&)
+0x1a5912b50  __TEXT,__text  long long* std::__1::vector<long long, std::__1::allocator<long long> >::__emplace_back_slow_path<long long>(long long&&)
+0x1a5912b50  __TEXT,__text  long long* std::__1::vector<long long, std::__1::allocator<long long> >::__emplace_back_slow_path<long long>(long long&&)
+0x1a5912b50  __TEXT,__text  long long* std::__1::vector<long long, std::__1::allocator<long long> >::__emplace_back_slow_path<long long>(long long&&)
+0x1a5912bfc  __TEXT,__text  -[VNFaceLandmarkDetectorRevision3 processRegionOfInterest:croppedPixelBuffer:options:qosClass:warningRecorder:error:progressHandler:]
+0x1a5913330  __TEXT,__text  -[VNFaceLandmarkDetectorRevision3 normalizedFaceBBoxForLandmarks:]
+0x1a5913418  __TEXT,__text  ___116+[VNEspressoModelImageprint(VNCoreSceneUnderstandingDetector) printFromCSUBuffer:originatingRequestSpecifier:error:]_block_invoke
+0x1a5913484  __TEXT,__text  std::__1::__shared_ptr_emplace<vision::mod::LandmarkDetectorDNN, std::__1::allocator<vision::mod::LandmarkDetectorDNN> >::__on_zero_shared()
+0x1a5913524  __TEXT,__text  vision::mod::ImageProcessing_Preprocessor::~ImageProcessing_Preprocessor()
+0x1a5913570  __TEXT,__text  -[VNFaceLandmarkDetectorDNN releaseResources]
+0x1a59135c0  __TEXT,__text  -[VNFaceLandmarkDetectorDNN getLandmarkErrorEstimates:forRequestConstellation:error:]
+0x1a5913724  __TEXT,__text  vision::mod::LandmarkDetectorDNN::getLandmarksErrorEstimate(vision::mod::_constellationType)
+0x1a59137e8  __TEXT,__text  +[VNValidationUtilities getNSUIntegerValue:forKey:inOptions:error:]
+0x1a59138bc  __TEXT,__text  -[VNFaceLandmarkDetectorDNN getLandmarkPoints:forRequestConstellation:error:]
+0x1a5913a4c  __TEXT,__text  vision::mod::ImageProcessing_Preprocessor::mapCoordinatesDestinationToSource(Geometry2D_cart2D const&) const
+0x1a5913ce8  __TEXT,__text  vision::mod::LandmarkDetectorDNN::getLandmarks(vision::mod::_constellationType)
+0x1a5913e98  __TEXT,__text  std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::vector<float, std::__1::allocator<float> >, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::_
+0x1a5913e98  __TEXT,__text  std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::vector<float, std::__1::allocator<float> >, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::_
+0x1a5913ec8  __TEXT,__text  vision::mod::ImageProcessing_Preprocessor::ImageProcessing_Preprocessor(vision::mod::ImageProcessing_PreprocessorOptions const&)
+0x1a5914140  __TEXT,__text  std::__1::__tree<std::__1::__value_type<vision::mod::_constellationType, std::__1::pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool> >, std::__1::__map_value_compare<vision::mod::_constellationType, std::__1::pair<vision::mod::_constellationType const,
+0x1a59141b8  __TEXT,__text  vision::mod::LandmarkDetectorDNN::checkConstellation(unsigned long, vision::mod::_constellationType) const
+0x1a59141fc  __TEXT,__text  _Geometry2D_copyCart2D
+0x1a5914290  __TEXT,__text  _Geometry2D_mallocCart2D
+0x1a591432c  __TEXT,__text  std::__1::__shared_ptr_emplace<vision::mod::LandmarkDetectorDNN, std::__1::allocator<vision::mod::LandmarkDetectorDNN> >::__on_zero_shared_weak()
+0x1a5914330  __TEXT,__text  -[VNRequest requestTasksQueue]
+0x1a5914390  __TEXT,__text  ___73-[VNFaceAnalyzerCompoundRequest internalPerformRevision:inContext:error:]_block_invoke
+0x1a5914398  __TEXT,__text  -[VNFaceAnalyzerMultiDetectorBase createRegionOfInterestCrop:options:qosClass:warningRecorder:pixelBuffer:error:progressHandler:]
+0x1a591453c  __TEXT,__text  _VNSetFaceOrientationInOptionsDictionary
+0x1a591463c  __TEXT,__text  +[VNFaceAnalyzerMultiDetector faceBoundingBoxScalingFactorForFaceObservation:]
+0x1a5914680  __TEXT,__text  vision::mod::ImageDescriptorBufferFloat32::~ImageDescriptorBufferFloat32()
+0x1a59146cc  __TEXT,__text  std::__1::__shared_ptr_emplace<vision::mod::ImageDescriptorBufferFloat32, std::__1::allocator<vision::mod::ImageDescriptorBufferFloat32> >::__on_zero_shared_weak()
+0x1a59146d0  __TEXT,__text  -[VNSession cvPixelBufferPoolManager]
+0x1a59146d8  __TEXT,__text  +[VNRequestPerformer _requestPerformingQueuePriorityGroup1]
+0x1a59147ac  __TEXT,__text  -[VNDetector recordImageCropQuickLookInfoToOptionsSafe:cacheKey:imageBuffer:]
+0x1a5914868  __TEXT,__text  +[VNDetector runSuccessReportingBlockSynchronously:detector:qosClass:error:]
+0x1a5914a6c  __TEXT,__text  -[VNDetector synchronizationQueue]
+0x1a5914a74  __TEXT,__text  -[VNDetector currentQueueIsSynchronizationQueue]
+0x1a5914a84  __TEXT,__text  -[VNDetectorCache detectorOfClass:configuredWithOptions:error:]
+0x1a5914c80  __TEXT,__text  -[VNRequest validateConfigurationAndReturnError:]
+0x1a5914de4  __TEXT,__text  -[VNRequestPerformer _groupOrderedRequests:ordinality:ordinalityAndPriorityGroups:]
+0x1a5915170  __TEXT,__text  ___83-[VNRequestPerformer _groupOrderedRequests:ordinality:ordinalityAndPriorityGroups:]_block_invoke
+0x1a5915320  __TEXT,__text  ___89-[VNRequestPerformer _groupsRequestsWithTheSameOrdinality:priorityGroup1:priorityGroup2:]_block_invoke_3
+0x1a5915550  __TEXT,__text  ___89-[VNRequestPerformer _groupsRequestsWithTheSameOrdinality:priorityGroup1:priorityGroup2:]_block_invoke
+0x1a5915714  __TEXT,__text  ___89-[VNRequestPerformer _groupsRequestsWithTheSameOrdinality:priorityGroup1:priorityGroup2:]_block_invoke_2
+0x1a59157d0  __TEXT,__text  ___62-[VNRequestPerformer _performOrderedRequests:inContext:error:]_block_invoke
+0x1a5915868  __TEXT,__text  -[VNAsyncTasksQueueCache queueWithUniqueAppendix:]
+0x1a59158ec  __TEXT,__text  +[VNFaceSegmentGenerator espressoModelFileNameForConfigurationOptions:]
+0x1a5915934  __TEXT,__text  -[VNClassificationObservation initWithOriginatingRequestSpecifier:identifier:confidence:]
+0x1a591593c  __TEXT,__text  -[VNAsyncStatus initWithStatus:error:]
+0x1a5915a88  __TEXT,__text  -[VNObservationsCache .cxx_destruct]
+0x1a5915a94  __TEXT,__text  ___Block_byref_object_copy_.139
+0x1a5915aa4  __TEXT,__text  -[VNCoreSceneUnderstandingCompoundRequestDetectorConfiguration addJunkConfigurationForOriginalRequest:]
+0x1a5915b14  __TEXT,__text  -[VNCoreSceneUnderstandingCompoundRequestDetectorConfigurations configurationForRequest:]
+0x1a5915d68  __TEXT,__text  -[VNCoreSceneUnderstandingCompoundRequestDetectorConfiguration addImageSaliencyAConfigurationForOriginalRequest:]
+0x1a5915dd8  __TEXT,__text  -[VNCoreSceneUnderstandingCompoundRequestDetectorConfiguration _addFeatureConfigurationOfClass:forOriginalRequest:storedInOptionsKey:]
+0x1a5915ed0  __TEXT,__text  -[VNClassifyJunkImageRequest imageCropAndScaleOption]
+0x1a5915f18  __TEXT,__text  -[VNCreateSceneprintRequest imageCropAndScaleOption]
+0x1a5915f60  __TEXT,__text  -[VNControlledCapacityTasksQueue dispatchGroupAsyncByPreservingQueueCapacity:block:]
+0x1a5915fd0  __TEXT,__text  -[VNRequest hasCancellationHook]
+0x1a5915fd8  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<objc_class* __strong, objc_selector*>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<objc_class* __strong, objc_selector*>, std::__1::__unordered_map_hasher<objc_class* __strong, std::__1::pair<objc_class* cons
+0x1a5915fd8  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<objc_class* __strong, objc_selector*>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<objc_class* __strong, objc_selector*>, std::__1::__unordered_map_hasher<objc_class* __strong, std::__1::pair<objc_class* cons
+0x1a59160b4  __TEXT,__text  +[VNCoreSceneUnderstandingCompoundRequest _evaluateOriginalVNClassifyJunkImageRequest:configurations:]
+0x1a5916168  __TEXT,__text  +[VNCoreSceneUnderstandingCompoundRequest _evaluateOriginalVNCreateSceneprintRequest:configurations:]
+0x1a5916220  __TEXT,__text  +[VNClassRegistrar validateRequestClassName:error:]
+0x1a591635c  __TEXT,__text  -[VNRequest performInContextAsync:asyncDispatchQueue:asyncDispatchGroup:]
+0x1a59164f4  __TEXT,__text  +[VNValidationUtilities originatingRequestSpecifierInOptions:specifyingRequestClass:error:]
+0x1a5916528  __TEXT,__text  -[VNRequest asyncStatus]
+0x1a591656c  __TEXT,__text  +[VNFaceDetector shouldDumpDebugIntermediates]
+0x1a59165b4  __TEXT,__text  -[VNDetectFaceLandmarksRequest internalPerformRevision:inContext:error:]
+0x1a59167a8  __TEXT,__text  ___72-[VNDetectFaceLandmarksRequest internalPerformRevision:inContext:error:]_block_invoke
+0x1a59167c8  __TEXT,__text  +[VNRequestAsyncTasksQueueCache sharedCache]
+0x1a5916810  __TEXT,__text  -[VNFaceLandmarks2D initWithOriginatingRequestSpecifier:pointsData:pointCount:constellation:precisionEstimatesPerPoint:userFacingBBox:alignedBBox:landmarkScore:]
+0x1a5916964  __TEXT,__text  vision::mod::ImageDescriptorBufferAbstract::ImageDescriptorBufferAbstract(std::__1::vector<long long, std::__1::allocator<long long> > const&, void*, unsigned long, unsigned long, bool)
+0x1a5916bb4  __TEXT,__text  std::__1::map<long long, int, std::__1::less<long long>, std::__1::allocator<std::__1::pair<long long const, int> > >::operator[](long long const&)
+0x1a5916c78  __TEXT,__text  vision::mod::ImageDescriptorBufferAbstract::createDeepCopy() const
+0x1a5916ebc  __TEXT,__text  vision::mod::ImageDescriptorBufferFloat32::createEmptyCopy() const
+0x1a5916f48  __TEXT,__text  long long* std::__1::vector<long long, std::__1::allocator<long long> >::__emplace_back_slow_path<long long const&>(long long const&)
+0x1a5916ff8  __TEXT,__text  std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::shared_ptr<vision::mod::ImageDescriptorBufferAbstract>, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1:
+0x1a5917138  __TEXT,__text  std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::shared_ptr<float>, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, st
+0x1a5917278  __TEXT,__text  -[VNFaceLandmarks initWithOriginatingRequestSpecifier:pointsData:pointCount:userFacingBBox:alignedBBox:landmarkScore:]
+0x1a59173f4  __TEXT,__text  -[VNShotflowNetwork threshold]
+0x1a59173fc  __TEXT,__text  std::__1::__tree<std::__1::__value_type<long long, int>, std::__1::__map_value_compare<long long, std::__1::pair<long long const, int>, std::__1::less<long long> >, std::__1::allocator<std::__1::pair<long long const, int> > >::__insert_node_at(std::__1::__tree_end_node<std::__1::__tree_node_base<voi
+0x1a59173fc  __TEXT,__text  std::__1::__tree<std::__1::__value_type<long long, int>, std::__1::__map_value_compare<long long, std::__1::pair<long long const, int>, std::__1::less<long long> >, std::__1::allocator<std::__1::pair<long long const, int> > >::__insert_node_at(std::__1::__tree_end_node<std::__1::__tree_node_base<voi
+0x1a59173fc  __TEXT,__text  std::__1::__tree<std::__1::__value_type<long long, int>, std::__1::__map_value_compare<long long, std::__1::pair<long long const, int>, std::__1::less<long long> >, std::__1::allocator<std::__1::pair<long long const, int> > >::__insert_node_at(std::__1::__tree_end_node<std::__1::__tree_node_base<voi
+0x1a59173fc  __TEXT,__text  std::__1::__tree<std::__1::__value_type<long long, int>, std::__1::__map_value_compare<long long, std::__1::pair<long long const, int>, std::__1::less<long long> >, std::__1::allocator<std::__1::pair<long long const, int> > >::__insert_node_at(std::__1::__tree_end_node<std::__1::__tree_node_base<voi
+0x1a59173fc  __TEXT,__text  std::__1::__tree<std::__1::__value_type<long long, int>, std::__1::__map_value_compare<long long, std::__1::pair<long long const, int>, std::__1::less<long long> >, std::__1::allocator<std::__1::pair<long long const, int> > >::__insert_node_at(std::__1::__tree_end_node<std::__1::__tree_node_base<voi
+0x1a59173fc  __TEXT,__text  std::__1::__tree<std::__1::__value_type<long long, int>, std::__1::__map_value_compare<long long, std::__1::pair<long long const, int>, std::__1::less<long long> >, std::__1::allocator<std::__1::pair<long long const, int> > >::__insert_node_at(std::__1::__tree_end_node<std::__1::__tree_node_base<voi
+0x1a59173fc  __TEXT,__text  std::__1::__tree<std::__1::__value_type<long long, int>, std::__1::__map_value_compare<long long, std::__1::pair<long long const, int>, std::__1::less<long long> >, std::__1::allocator<std::__1::pair<long long const, int> > >::__insert_node_at(std::__1::__tree_end_node<std::__1::__tree_node_base<voi
+0x1a59173fc  __TEXT,__text  std::__1::__tree<std::__1::__value_type<long long, int>, std::__1::__map_value_compare<long long, std::__1::pair<long long const, int>, std::__1::less<long long> >, std::__1::allocator<std::__1::pair<long long const, int> > >::__insert_node_at(std::__1::__tree_end_node<std::__1::__tree_node_base<voi
+0x1a59173fc  __TEXT,__text  std::__1::__tree<std::__1::__value_type<long long, int>, std::__1::__map_value_compare<long long, std::__1::pair<long long const, int>, std::__1::less<long long> >, std::__1::allocator<std::__1::pair<long long const, int> > >::__insert_node_at(std::__1::__tree_end_node<std::__1::__tree_node_base<voi
+0x1a59173fc  __TEXT,__text  std::__1::__tree<std::__1::__value_type<long long, int>, std::__1::__map_value_compare<long long, std::__1::pair<long long const, int>, std::__1::less<long long> >, std::__1::allocator<std::__1::pair<long long const, int> > >::__insert_node_at(std::__1::__tree_end_node<std::__1::__tree_node_base<voi
+0x1a59173fc  __TEXT,__text  std::__1::__tree<std::__1::__value_type<long long, int>, std::__1::__map_value_compare<long long, std::__1::pair<long long const, int>, std::__1::less<long long> >, std::__1::allocator<std::__1::pair<long long const, int> > >::__insert_node_at(std::__1::__tree_end_node<std::__1::__tree_node_base<voi
+0x1a59173fc  __TEXT,__text  std::__1::__tree<std::__1::__value_type<long long, int>, std::__1::__map_value_compare<long long, std::__1::pair<long long const, int>, std::__1::less<long long> >, std::__1::allocator<std::__1::pair<long long const, int> > >::__insert_node_at(std::__1::__tree_end_node<std::__1::__tree_node_base<voi
+0x1a59173fc  __TEXT,__text  std::__1::__tree<std::__1::__value_type<long long, int>, std::__1::__map_value_compare<long long, std::__1::pair<long long const, int>, std::__1::less<long long> >, std::__1::allocator<std::__1::pair<long long const, int> > >::__insert_node_at(std::__1::__tree_end_node<std::__1::__tree_node_base<voi
+0x1a59173fc  __TEXT,__text  std::__1::__tree<std::__1::__value_type<long long, int>, std::__1::__map_value_compare<long long, std::__1::pair<long long const, int>, std::__1::less<long long> >, std::__1::allocator<std::__1::pair<long long const, int> > >::__insert_node_at(std::__1::__tree_end_node<std::__1::__tree_node_base<voi
+0x1a59173fc  __TEXT,__text  std::__1::__tree<std::__1::__value_type<long long, int>, std::__1::__map_value_compare<long long, std::__1::pair<long long const, int>, std::__1::less<long long> >, std::__1::allocator<std::__1::pair<long long const, int> > >::__insert_node_at(std::__1::__tree_end_node<std::__1::__tree_node_base<voi
+0x1a5917450  __TEXT,__text  vision::mod::ImageDescriptorBufferAbstract::initBufferWithData(void*, unsigned long, unsigned long, bool)
+0x1a59174c8  __TEXT,__text  +[VNANFDMultiDetector configurationOptionKeysForDetectorKey]
+0x1a591755c  __TEXT,__text  -[VNObservationsCache init]
+0x1a59175d0  __TEXT,__text  vision::mod::ImageDescriptorBufferAbstract::~ImageDescriptorBufferAbstract()
+0x1a5917640  __TEXT,__text  -[VNANFDDetectorCompoundRequest internalPerformRevision:inContext:error:]
+0x1a5917858  __TEXT,__text  -[VNClassificationObservation .cxx_destruct]
+0x1a591789c  __TEXT,__text  -[VNEspressoModelImageprint encodeWithCoder:]
+0x1a5917a08  __TEXT,__text  +[VNRequest setsTimeRangeOnResults]
+0x1a5917a10  __TEXT,__text  -[VNObservation .cxx_destruct]
+0x1a5917a60  __TEXT,__text  -[VNDetectedObjectObservation .cxx_destruct]
+0x1a5917ab0  __TEXT,__text  -[VNObservation encodeWithCoder:]
+0x1a5917b64  __TEXT,__text  -[VNPixelBufferObservation encodeWithCoder:]
+0x1a5917bf0  __TEXT,__text  +[VNImageBuffer VNImageCropAndScaleOptionToVisionCoreImageCropAndScaleOption:]
+0x1a5917c34  __TEXT,__text  -[VNRequest cancellationTriggeredAndReturnError:]
+0x1a5917c90  __TEXT,__text  -[VNFaceAttributes .cxx_destruct]
+0x1a5917d94  __TEXT,__text  -[VNFaceAttributeCategory .cxx_destruct]
+0x1a5917dcc  __TEXT,__text  -[VNRequestConfiguration requestClass]
+0x1a5917dd4  __TEXT,__text  -[VNFaceLandmarks2D .cxx_destruct]
+0x1a5917e9c  __TEXT,__text  -[VNFaceLandmarks .cxx_destruct]
+0x1a5917ed4  __TEXT,__text  _VNRequestRevisionString
+0x1a5917f88  __TEXT,__text  -[VNCoreSceneUnderstandingCompoundRequestDetectorConfiguration addSceneprintConfigurationForOriginalRequest:]
+0x1a5917ff8  __TEXT,__text  -[VNCoreSceneUnderstandingCompoundRequestDetectorConfiguration addImageAestheticsConfigurationForOriginalRequest:]
+0x1a5918068  __TEXT,__text  -[VNRequest dependencyProcessingOrdinality]
+0x1a5918074  __TEXT,__text  -[VNRequestConfiguration maximumProcessingDimensionOnTheLongSide]
+0x1a591807c  __TEXT,__text  -[VNCoreSceneUnderstandingDetectorFeatureConfiguration initWithObservationsRecipient:]
+0x1a5918100  __TEXT,__text  -[VNCoreSceneUnderstandingCompoundRequest initWithDetectorType:configuration:]
+0x1a59183a0  __TEXT,__text  +[VNCoreSceneUnderstandingCompoundRequest _evaluateOriginalVNClassifyImageAestheticsRequest:configurations:]
+0x1a5918454  __TEXT,__text  +[VNCoreSceneUnderstandingCompoundRequest _evaluateOriginalVNGenerateAttentionBasedSaliencyImageRequest:configurations:]
+0x1a591850c  __TEXT,__text  -[VNCanceller init]
+0x1a5918564  __TEXT,__text  -[VNANFDMultiDetectorANODv4 processDetectedObject:originatingRequestSpecifier:objectBoundingBox:objectGroupId:imageBuffer:qosClass:session:warningRecorder:detectedObjectResults:error:]
+0x1a5918974  __TEXT,__text  -[VNDetectedObjectObservation initWithOriginatingRequestSpecifier:boundingBox:groupId:]
+0x1a5918a30  __TEXT,__text  -[VNSaliencyImageObservation .cxx_destruct]
+0x1a5918a44  __TEXT,__text  -[VNPixelBufferObservation .cxx_destruct]
+0x1a5918a50  __TEXT,__text  -[VNDetectFaceRectanglesRequestConfiguration copyWithZone:]
+0x1a5918b70  __TEXT,__text  vision::mod::ImageDescriptorBufferAbstract::appendDescriptors(vision::mod::ImageDescriptorBufferAbstract const&)
+0x1a5918e58  __TEXT,__text  vision::mod::ImageDescriptorBufferAbstract::resizeForDescriptorsCount(unsigned long, bool)
+0x1a5919028  __TEXT,__text  vision::mod::ImageDescriptorBufferFloat32::getDescriptorLengthInBytes() const
+0x1a5919034  __TEXT,__text  vision::mod::ImageDescriptorBufferAbstract::getDataForKthDescriptor(unsigned long) const
+0x1a591907c  __TEXT,__text  -[VNPixelBufferObservation dealloc]
+0x1a59190f8  __TEXT,__text  +[VNEspressoModelImageprint validateDescriptorData:elementType:elementCount:error:]
+0x1a591925c  __TEXT,__text  _validateVNElementType(VNElementType, NSError* __autoreleasing*)
+0x1a5919314  __TEXT,__text  -[VNEspressoModelImageprint initWithDescriptorData:elementType:elementCount:originatingRequestSpecifier:]
+0x1a5919428  __TEXT,__text  +[VNFaceprint confidenceTypeForOriginatingRequestSpecifier:]
+0x1a5919430  __TEXT,__text  -[VNSceneObservation .cxx_destruct]
+0x1a5919468  __TEXT,__text  -[VNSceneprint .cxx_destruct]
+0x1a591947c  __TEXT,__text  -[VNImageAestheticsObservation tastefullyBlurredScore]
+0x1a5919490  __TEXT,__text  -[VNEspressoModelImageprint .cxx_destruct]
+0x1a59194d4  __TEXT,__text  -[VNImageAestheticsObservation pleasantPatternScore]
+0x1a59194e8  __TEXT,__text  -[VNDetectedObjectObservation initWithCoder:]
+0x1a5919650  __TEXT,__text  -[VNObservation initWithCoder:]
+0x1a59198f4  __TEXT,__text  +[VNSceneprint currentVersion]
+0x1a5919900  __TEXT,__text  +[VNHeatMapUtilities smoothedFloat32ImageBuffer:fromImageBuffer:originalImageSize:sigmaX:sigmaY:nStd:]
+0x1a5919b64  __TEXT,__text  _ImageProcessing_smoothGaussian_createKernelForPlanarF
+0x1a5919cfc  __TEXT,__text  -[VNPixelBufferObservation initWithCoder:]
+0x1a5919e00  __TEXT,__text  -[NSCoder(VNAdditions) vn_decodePixelBufferForKey:]
+0x1a5919eb0  __TEXT,__text  +[VNCVPixelBufferConversionHelpers createCVPixelBufferRefFromDictionaryRepresentation:]
+0x1a591a310  __TEXT,__text  _mergeKeysAndValuesIntoTargetCFMutableDictionary(void const*, void const*, void*)
+0x1a591a324  __TEXT,__text  -[VNEspressoModelImageprint initWithCoder:]
+0x1a591a3c8  __TEXT,__text  -[VNHeatMapExtrema init]
+0x1a591a43c  __TEXT,__text  -[VNObservation confidence]
+0x1a591a444  __TEXT,__text  vision::mod::FaceprintAndAttributes::getFaceAttributesOutput(std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, float, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__
+0x1a591a5b0  __TEXT,__text  std::__1::__shared_ptr_pointer<vision::mod::ImageDescriptorBufferAbstract*, std::__1::shared_ptr<vision::mod::ImageDescriptorBufferAbstract>::__shared_ptr_default_delete<vision::mod::ImageDescriptorBufferAbstract, vision::mod::ImageDescriptorBufferAbstract>, std::__1::allocator<vision::mod::ImageDes
+0x1a591a5d8  __TEXT,__text  vision::mod::ImageDescriptorAugmenterFlip::combine(vision::mod::ImageDescriptorBufferAbstract const&, vision::mod::ImageDescriptorBufferAbstract&)
+0x1a591a7ac  __TEXT,__text  std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::shared_ptr<vision::mod::ImageDescriptorBufferFloat32>, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::
+0x1a591a8ec  __TEXT,__text  ___128-[VNANFDMultiDetector internalProcessUsingQualityOfServiceClass:options:regionOfInterest:warningRecorder:error:progressHandler:]_block_invoke_2
+0x1a591a918  __TEXT,__text  _VNRecordImageTilingWarning
+0x1a591aa40  __TEXT,__text  +[VNFaceLandmarkDetector allLandmarksPointsIndexesForConstellation:]
+0x1a591ab40  __TEXT,__text  -[VNFaceLandmarkRegion initWithOriginatingRequestSpecifier:faceBoundingBox:pointCount:]
+0x1a591abfc  __TEXT,__text  -[VNShotflowDetectorANSTv1 nmsBoxes:usingThresholds:]
+0x1a591ae94  __TEXT,__text  std::__1::__shared_ptr_pointer<vision::mod::ImageDescriptorBufferAbstract*, std::__1::shared_ptr<vision::mod::ImageDescriptorBufferAbstract>::__shared_ptr_default_delete<vision::mod::ImageDescriptorBufferAbstract, vision::mod::ImageDescriptorBufferAbstract>, std::__1::allocator<vision::mod::ImageDes
+0x1a591ae98  __TEXT,__text  -[VNObservationsCache setObservations:forKey:]
+0x1a591af58  __TEXT,__text  +[VNANFDMultiDetectorOriginalRequestInfo originatingRequestSpecifierToDetectorClassMap]
+0x1a591afa0  __TEXT,__text  ___50-[VNShotflowDetector filterBoxes:usingThresholds:]_block_invoke
+0x1a591b010  __TEXT,__text  ___63-[VNShotflowDetectorANSTv1 getIndexBoxes:filterThresholdIndex:]_block_invoke
+0x1a591b048  __TEXT,__text  ___46-[VNShotflowDetectorANODBase mergeHeadsBoxes:]_block_invoke
+0x1a591b06c  __TEXT,__text  ___46-[VNShotflowDetectorANODBase mergeHeadsBoxes:]_block_invoke_2
+0x1a591b090  __TEXT,__text  ___46-[VNShotflowDetectorANODBase mergeHeadsBoxes:]_block_invoke_3
+0x1a591b0b4  __TEXT,__text  -[VNShotflowDetector processBoxes:withHeight:andWidth:filterThresholds:]
+0x1a591b354  __TEXT,__text  -[VNEspressoDetectedObject initWithObjectType:boundingBox:confidence:]
+0x1a591b3e8  __TEXT,__text  -[VNShotflowDetector nmsThreshold]
+0x1a591b3f0  __TEXT,__text  -[VNShotflowDetector enforceSquareFaces:withHeight:andWidth:]
+0x1a591b5d4  __TEXT,__text  +[VNShotflowDetectorANSTv1 supportedLabelKeys]
+0x1a591b668  __TEXT,__text  -[VNDetector recordImageCropQuickLookInfoFromOptions:toObservation:]
+0x1a591b73c  __TEXT,__text  -[VNRequest maximumProcessingDimensionOnTheLongSide]
+0x1a591b744  __TEXT,__text  -[VNFaceAttributeCategory setAllLabelsWithConfidences:]
+0x1a591b7a8  __TEXT,__text  -[VNFaceLandmarkRegion2D .cxx_destruct]
+0x1a591b7e0  __TEXT,__text  -[VNFaceLandmarkRegion .cxx_destruct]
+0x1a591b7ec  __TEXT,__text  -[VNFaceLandmarkRegion2D dealloc]
+0x1a591b838  __TEXT,__text  -[VNRegionOfInterestTilingOptions regionOfInterestAspectRatioThreshold]
+0x1a591b840  __TEXT,__text  -[VNFaceTorsoprint .cxx_destruct]
+0x1a591b888  __TEXT,__text  -[VNImageAestheticsObservation pleasantCompositionScore]
+0x1a591b89c  __TEXT,__text  +[VNShotflowDetectorANSTv1 defaultFilterThresholds]
+0x1a591b8e4  __TEXT,__text  +[VNRuntimeUtilities linkTimeVersion]
+0x1a591b92c  __TEXT,__text  +[VNShotflowNetwork inputImageMinDimension]
+0x1a591b950  __TEXT,__text  -[VNSequenceRequestHandler performRequests:onCVPixelBuffer:orientation:error:]
+0x1a591b95c  __TEXT,__text  -[VNFaceLandmarks2D _initLocks]
+0x1a591b994  __TEXT,__text  -[VNAsyncStatus completed]
+0x1a591b99c  __TEXT,__text  -[VNSession vnciContextManager]
+0x1a591b9a4  __TEXT,__text  +[VNShotflowDetector inputImageMinDimension]
+0x1a591b9c0  __TEXT,__text  ___73-[VNANFDDetectorCompoundRequest internalPerformRevision:inContext:error:]_block_invoke
+0x1a591bb30  __TEXT,__text  vision::mod::ImageDescriptorBufferFloat32::~ImageDescriptorBufferFloat32()
+0x1a591bb90  __TEXT,__text  -[VNCompoundRequest regionOfInterest]
+0x1a591bd1c  __TEXT,__text  -[VNRequestPerformingContext serialNumber]
+0x1a591bd24  __TEXT,__text  -[VNRequestSpecifier initWithCoder:]
+0x1a591be60  __TEXT,__text  +[VNDetectorAsyncTasksQueueCache sharedCache]
+0x1a591bea8  __TEXT,__text  -[VNRequestSpecifier initWithRequestClass:name:code:revision:]
+0x1a591bf40  __TEXT,__text  +[VNImageAnalyzerMultiDetector configurationOptionKeysForDetectorKey]
+0x1a591bfd4  __TEXT,__text  -[VNCanceller .cxx_destruct]
+0x1a591bfe0  __TEXT,__text  -[VNSaliencyHeatmapBoundingBoxGenerator createRegionOfInterestCrop:options:qosClass:warningRecorder:pixelBuffer:error:progressHandler:]
+0x1a591c104  __TEXT,__text  vision::mod::FaceprintAndAttributes::normalizeFacePrintData(void const*, int, bool, float*)
+0x1a591c1bc  __TEXT,__text  +[VNFaceAnalyzerMultiDetectorBase configurationOptionKeysForDetectorKey]
+0x1a591c250  __TEXT,__text  +[VNValidationUtilities validateAsyncStatusResults:error:]
+0x1a591c390  __TEXT,__text  +[VNClassificationObservation supportsSecureCoding]
+0x1a591c398  __TEXT,__text  +[VNClassRegistrar getClassCode:forClassName:error:]
+0x1a591c480  __TEXT,__text  +[VNCVPixelBufferConversionHelpers createDictionaryRepresentationOfCVPixelBuffer:]
+0x1a591c864  __TEXT,__text  -[VNFaceLandmarkDetectorDNN createRegionOfInterestCrop:options:qosClass:warningRecorder:pixelBuffer:error:progressHandler:]
+0x1a591cb24  __TEXT,__text  +[VNRequestSpecifier supportsSecureCoding]
+0x1a591cb2c  __TEXT,__text  -[VNFaceprint initWithRawData:elementCount:elementType:lengthInBytes:confidence:requestRevision:]
+0x1a591ccdc  __TEXT,__text  -[VNFaceTorsoprint initWithFaceprint:torsoprint:]
+0x1a591cda0  __TEXT,__text  +[VNFaceprint emptyFaceprintDataForRevision:]
+0x1a591cde8  __TEXT,__text  -[VNImageAestheticsObservation wellFramedSubjectScore]
+0x1a591cdfc  __TEXT,__text  -[VNFaceObservation roll]
+0x1a591ce04  __TEXT,__text  -[VNEspressoModelImageprint serializedLength]
+0x1a591ce24  __TEXT,__text  -[VNEspressoModelImageprint serializeStateIntoData:startingAtByteOffset:error:]
+0x1a591d08c  __TEXT,__text  +[VNFaceprint serializationMagicNumber]
+0x1a591d098  __TEXT,__text  -[VNEspressoModelImageprint _VNEspressoModelImageprintSerializedLength]
+0x1a591d0e4  __TEXT,__text  _calculateChecksumMD5
+0x1a591d17c  __TEXT,__text  -[VNFaceprint serializeStateIntoData:startingAtByteOffset:error:]
+0x1a591d2d4  __TEXT,__text  -[VNFaceTorsoprint serializeStateIntoData:startingAtByteOffset:error:]
+0x1a591d56c  __TEXT,__text  -[VNEspressoModelImageprint copyWithZone:]
+0x1a591d570  __TEXT,__text  -[VNPixelBufferObservation pixelBuffer]
+0x1a591d578  __TEXT,__text  +[VNFaceTorsoprint defaultOriginatingRequestClassNameForRequestRevision:]
+0x1a591d598  __TEXT,__text  -[VNObservation observationWithOriginatingRequestSpecifier:]
+0x1a591d624  __TEXT,__text  +[VNRequestPerformingPriorityGroup2AsyncTasksQueueCache sharedCache]
+0x1a591d66c  __TEXT,__text  +[VNANFDMultiDetectorANODv4 recognizedAnimalHeadObjectClassToAnimalHeadCategoryName]
+0x1a591d6b4  __TEXT,__text  -[VNFaceObservation faceAttributes]
+0x1a591d6bc  __TEXT,__text  -[VNSceneprint encodeWithCoder:]
+0x1a591d768  __TEXT,__text  -[VNImageBasedRequestConfiguration inputDetectedObjectObservations]
+0x1a591d77c  __TEXT,__text  +[VNComputeDeviceUtilities typeOfComputeDevice:]
+0x1a591d784  __TEXT,__text  -[VNClassifyFaceAttributesRequest resultsAreAssignedWithOriginatingRequestSpecifier]
+0x1a591d78c  __TEXT,__text  std::__1::vector<_Geometry2D_point2D_, std::__1::allocator<_Geometry2D_point2D_> >::resize(unsigned long)
+0x1a591d874  __TEXT,__text  -[VNFaceAttributes facemaskCategory]
+0x1a591d87c  __TEXT,__text  ___149-[VNRequest processFaceObservations:revision:regionOfInterest:detectorType:detectorOptions:shouldAlignFaceBBox:shouldRunDetectorBlock:context:error:]_block_invoke_2
+0x1a591d970  __TEXT,__text  -[VNImageBuffer orientation]
+0x1a591d978  __TEXT,__text  -[VNRequestPerformingContext qosClass]
+0x1a591d980  __TEXT,__text  +[VNShotflowNetworkANSTv1 hasPose]
+0x1a591d988  __TEXT,__text  -[VNCreateSceneprintRequest newDefaultDetectorOptionsForRequestRevision:session:]
+0x1a591dbe8  __TEXT,__text  +[VNVersionParser isMajorVersion:equalToMajorVersion:]
+0x1a591dbf8  __TEXT,__text  +[VNHeatMapUtilities maximumValueFromFloat32ImageBuffer:]
+0x1a591dcc4  __TEXT,__text  -[VNHeatMapExtrema computeRectFromExtremaUsingThreshold:vImage:]
+0x1a591df9c  __TEXT,__text  -[NSCoder(VNAdditions) vn_decodeValidatedConfidenceForKey:]
+0x1a591e0ac  __TEXT,__text  -[VNFaceObservation _initLocks]
+0x1a591e0bc  __TEXT,__text  -[VNFaceObservation yaw]
+0x1a591e0c4  __TEXT,__text  -[VNEspressoModelImageprint descriptorData]
+0x1a591e0d0  __TEXT,__text  -[NSCoder(VNAdditions) vn_decodeCodingVersionForKey:]
+0x1a591e0d4  __TEXT,__text  -[NSCoder(VNAdditions) vn_decodeTimeRangeForKey:]
+0x1a591e1b0  __TEXT,__text  +[VNEspressoModelImageprint originatingRequestSpecifierForRequestRevision:error:]
+0x1a591e37c  __TEXT,__text  +[VNSaliencyImageObservation supportsSecureCoding]
+0x1a591e384  __TEXT,__text  -[VNHeatMapExtrema updateExtrema:x:y:]
+0x1a591e8b8  __TEXT,__text  ___swift_instantiateConcreteTypeFromMangledNameAbstractV2
+0x1a5922144  __TEXT,__text  invocation function for block in _detectorTypeToClassDictionary()
+0x1a59227f8  __TEXT,__text  -[VNDetectBarcodesRequest warmUpSession:error:]
+0x1a592295c  __TEXT,__text  -[VNDetectBarcodesRequest applicableDetectorTypeForRevision:error:]
+0x1a59229f4  __TEXT,__text  +[VNDetector detectorClassForDetectorType:error:]
+0x1a5922afc  __TEXT,__text  +[VNMRCDetector espressoModelFileNameForConfigurationOptions:]
+0x1a5922b9c  __TEXT,__text  _computeEdge1Squared16x16_NEON
+0x1a5922be0  __TEXT,__text  _PixelSumASM
+0x1a5922e70  __TEXT,__text  _MemDiff32
+0x1a5922eb0  __TEXT,__text  _MemDiffZeroMean32
+0x1a5922f08  __TEXT,__text  _MemSum32
+0x1a5929258  __TEXT,__text  -[VNRecognizedBodyPointsSpecifier initWithVCPPersonObservation:originatingRequestSpecifier:]
+0x1a5929624  __TEXT,__text  -[VNRecognizedBodyPointsSpecifier hash]
+0x1a5929684  __TEXT,__text  -[VNRecognizedBodyPointsSpecifier isEqual:]
+0x1a5929734  __TEXT,__text  -[VNRecognizedBodyPointsSpecifier availableGroupKeys]
+0x1a592977c  __TEXT,__text  ___53-[VNRecognizedBodyPointsSpecifier availableGroupKeys]_block_invoke
+0x1a5929834  __TEXT,__text  -[VNRecognizedBodyPointsSpecifier pointKeyGroupLabelsMapping]
+0x1a592987c  __TEXT,__text  ___61-[VNRecognizedBodyPointsSpecifier pointKeyGroupLabelsMapping]_block_invoke
+0x1a5929ad0  __TEXT,__text  -[VNRecognizedBodyPointsSpecifier populatedMLMultiArrayAndReturnError:]
+0x1a5929ecc  __TEXT,__text  +[VNRecognizedBodyPointsSpecifier supportsSecureCoding]
+0x1a5929ed4  __TEXT,__text  -[VNRecognizedBodyPointsSpecifier encodeWithCoder:]
+0x1a5929f54  __TEXT,__text  -[VNRecognizedBodyPointsSpecifier initWithCoder:]
+0x1a592a098  __TEXT,__text  -[VNRecognizedBodyPointsSpecifier .cxx_destruct]
+0x1a592a0ac  __TEXT,__text  +[VNCreateNeuralHashprintRequest configurationClass]
+0x1a592a0b8  __TEXT,__text  -[VNCreateNeuralHashprintRequest applicableDetectorTypeForRevision:error:]
+0x1a592a0c4  __TEXT,__text  +[VNCreateNeuralHashprintRequest warmUpSession:error:]
+0x1a592a17c  __TEXT,__text  -[VNCreateNeuralHashprintRequest internalPerformRevision:inContext:error:]
+0x1a592a3c8  __TEXT,__text  +[VNCreateNeuralHashprintRequest(Revisioning) revisionAvailability]
+0x1a592a3d4  __TEXT,__text  -[VNDetectHumanHeadRectanglesRequestConfiguration copyWithZone:]
+0x1a592a44c  __TEXT,__text  -[VNDetectHumanHeadRectanglesRequestConfiguration precisionRecallThresholdOverride]
+0x1a592a460  __TEXT,__text  -[VNDetectHumanHeadRectanglesRequestConfiguration setPrecisionRecallThresholdOverride:]
+0x1a592a46c  __TEXT,__text  -[VNDetectHumanHeadRectanglesRequestConfiguration .cxx_destruct]
+0x1a592a480  __TEXT,__text  +[VNDetectHumanHeadRectanglesRequest configurationClass]
+0x1a592a48c  __TEXT,__text  -[VNDetectHumanHeadRectanglesRequest applyConfigurationOfRequest:]
+0x1a592a54c  __TEXT,__text  -[VNDetectHumanHeadRectanglesRequest _setPrecisionRecallThresholdOverride:]
+0x1a592a5c4  __TEXT,__text  -[VNDetectHumanHeadRectanglesRequest applicableDetectorTypeForRevision:error:]
+0x1a592a640  __TEXT,__text  -[VNDetectHumanHeadRectanglesRequest dependencyProcessingOrdinality]
+0x1a592a64c  __TEXT,__text  +[VNDetectHumanHeadRectanglesRequest revisionsSupportingPrecisionRecallThresholdOverride]
+0x1a592a710  __TEXT,__text  ___89+[VNDetectHumanHeadRectanglesRequest revisionsSupportingPrecisionRecallThresholdOverride]_block_invoke
+0x1a592a79c  __TEXT,__text  -[VNDetectHumanHeadRectanglesRequest canOverridePrecisionRecallThreshold]
+0x1a592a898  __TEXT,__text  -[VNDetectHumanHeadRectanglesRequest precisionRecallThresholdOverride]
+0x1a592a8e8  __TEXT,__text  -[VNDetectHumanHeadRectanglesRequest precisionRecallThreshold]
+0x1a592aa40  __TEXT,__text  -[VNDetectHumanHeadRectanglesRequest setPrecisionRecallThreshold:]
+0x1a592aac4  __TEXT,__text  -[VNDetectHumanHeadRectanglesRequest resetPrecisionRecallThreshold]
+0x1a592aacc  __TEXT,__text  -[VNDetectHumanHeadRectanglesRequest internalPerformRevision:inContext:error:]
+0x1a592abc8  __TEXT,__text  +[VNDetectHumanHeadRectanglesRequest(Revisioning) revisionAvailability]
+0x1a592abd4  __TEXT,__text  +[VNDetectHumanHeadRectanglesRequest(Revisioning) privateRevisionsSet]
+0x1a592ac1c  __TEXT,__text  ___70+[VNDetectHumanHeadRectanglesRequest(Revisioning) privateRevisionsSet]_block_invoke
+0x1a592acd0  __TEXT,__text  +[VNDetectHumanHeadRectanglesRequest(Revisioning) descriptionForPrivateRevision:]
+0x1a592ad34  __TEXT,__text  vision::mod::ImageDescriptorBufferJoint::computeDistanceBetweenDescriptors(vision::mod::ImageDescriptorBufferJoint const*, vision::mod::ImageDescriptorBufferJoint const*, float&) const
+0x1a592af18  __TEXT,__text  vision::mod::ImageDescriptorBufferJoint::computeSelfDistances() const
+0x1a592afb0  __TEXT,__text  vision::mod::ImageDescriptorBufferJoint::resizeForDescriptorsCount(unsigned long, bool)
+0x1a592b0c8  __TEXT,__text  std::__1::vector<bool, std::__1::allocator<bool> >::resize(unsigned long, bool)
+0x1a592b244  __TEXT,__text  vision::mod::ImageDescriptorBufferJoint::getRepresentative(vision::mod::ImageDescriptorBufferAbstractRepresentativeMode, long long) const
+0x1a592b5cc  __TEXT,__text  vision::mod::ImageDescriptorBufferJoint::~ImageDescriptorBufferJoint()
+0x1a592b5d0  __TEXT,__text  vision::mod::ImageDescriptorBufferJoint::~ImageDescriptorBufferJoint()
+0x1a592b5fc  __TEXT,__text  vision::mod::ImageDescriptorBufferJoint::createEmptyCopy() const
+0x1a592b690  __TEXT,__text  vision::mod::ImageDescriptorBufferJoint::print()
+0x1a592bb24  __TEXT,__text  vision::mod::ImageDescriptorBufferJoint::getDescriptorLengthInBytes() const
+0x1a592bb30  __TEXT,__text  vision::mod::ImageDescriptorBufferJoint::setToReferenceToKthDescriptor(vision::mod::ImageDescriptorBufferAbstract&, unsigned long) const
+0x1a592bc04  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::vector[abi:fqe220106](unsigned long)
+0x1a592bc70  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__vallocate[abi:fqe220106](unsigned long)
+0x1a592bc70  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__vallocate[abi:fqe220106](unsigned long)
+0x1a592bc70  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__vallocate[abi:fqe220106](unsigned long)
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcb0  __TEXT,__text  std::__1::vector<float, std::__1::allocator<float> >::__throw_length_error[abi:fqe220106]()
+0x1a592bcc8  __TEXT,__text  std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<float> >::pointer, std::__1::allocator_traits<std::__1::allocator<float> >::size_type> std::__1::__allocate_at_least[abi:fqe220106]<std::__1::allocator<float>, std::__1::allocator_traits<std::__1::allocator<float> > >(std::
+0x1a592bcc8  __TEXT,__text  std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<float> >::pointer, std::__1::allocator_traits<std::__1::allocator<float> >::size_type> std::__1::__allocate_at_least[abi:fqe220106]<std::__1::allocator<float>, std::__1::allocator_traits<std::__1::allocator<float> > >(std::
+0x1a592bcc8  __TEXT,__text  std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<float> >::pointer, std::__1::allocator_traits<std::__1::allocator<float> >::size_type> std::__1::__allocate_at_least[abi:fqe220106]<std::__1::allocator<float>, std::__1::allocator_traits<std::__1::allocator<float> > >(std::
+0x1a592bd10  __TEXT,__text  std::__1::__throw_length_error[abi:fqe220106](char const*)
+0x1a592bd6c  __TEXT,__text  std::length_error::length_error[abi:fqe220106](char const*)
+0x1a592bda0  __TEXT,__text  std::__1::vector<bool, std::__1::allocator<bool> >::vector(std::__1::vector<bool, std::__1::allocator<bool> > const&)
+0x1a592be0c  __TEXT,__text  std::__1::vector<bool, std::__1::allocator<bool> >::__vallocate[abi:fqe220106](unsigned long)
+0x1a592be50  __TEXT,__text  std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<unsigned long> >::pointer, std::__1::allocator_traits<std::__1::allocator<unsigned long> >::size_type> std::__1::__allocate_at_least[abi:fqe220106]<std::__1::allocator<unsigned long>, std::__1::allocator_traits<std::__1::al
+```
+First 1,000 of 11,425.
+

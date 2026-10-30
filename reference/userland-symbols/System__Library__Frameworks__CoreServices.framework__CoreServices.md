@@ -1,0 +1,1668 @@
+# Symbols: `/System/Library/Frameworks/CoreServices.framework/CoreServices`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__Frameworks__CoreServices.framework__CoreServices.md). **[DSC]**
+
+651 public symbols, 9,822 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x186de847c  __TEXT,__text  _CSIdentityAuthorityCopyLocalizedName
+0x186de8460  __TEXT,__text  _CSIdentityAuthorityGetTypeID
+0x186de86c4  __TEXT,__text  _CSIdentityCreateCopy
+0x186de8788  __TEXT,__text  _CSIdentityCreatePersistentReference
+0x186de8754  __TEXT,__text  _CSIdentityGetAuthority
+0x186de874c  __TEXT,__text  _CSIdentityGetClass
+0x186de8714  __TEXT,__text  _CSIdentityGetFullName
+0x186de8730  __TEXT,__text  _CSIdentityGetPosixName
+0x186de86a8  __TEXT,__text  _CSIdentityGetTypeID
+0x186de8b14  __TEXT,__text  _CSIdentityQueryCopyResults
+0x186de89c4  __TEXT,__text  _CSIdentityQueryCreateForName
+0x186de8a18  __TEXT,__text  _CSIdentityQueryCreateForPersistentReference
+0x186de8b30  __TEXT,__text  _CSIdentityQueryExecute
+0x186de8b60  __TEXT,__text  _CSIdentityQueryExecuteAsynchronously
+0x186de89a8  __TEXT,__text  _CSIdentityQueryGetTypeID
+0x186de8c18  __TEXT,__text  _CSIdentityQueryStop
+0x186cac388  __TEXT,__text  _FSEventStreamCopyDescription
+0x186cac6b4  __TEXT,__text  _FSEventStreamCopyPathsBeingWatched
+0x186c829d4  __TEXT,__text  _FSEventStreamCreate
+0x186cac85c  __TEXT,__text  _FSEventStreamCreateRelativeToDevice
+0x186cace8c  __TEXT,__text  _FSEventStreamFlushAsync
+0x186cacf44  __TEXT,__text  _FSEventStreamFlushSync
+0x186cac664  __TEXT,__text  _FSEventStreamGetDeviceBeingWatched
+0x186cac614  __TEXT,__text  _FSEventStreamGetLatestEventId
+0x186cabd70  __TEXT,__text  _FSEventStreamInvalidate
+0x186c8d224  __TEXT,__text  _FSEventStreamRelease
+0x186c8d1d8  __TEXT,__text  _FSEventStreamRetain
+0x186cac8ec  __TEXT,__text  _FSEventStreamScheduleWithRunLoop
+0x186c83670  __TEXT,__text  _FSEventStreamSetDispatchQueue
+0x186c83530  __TEXT,__text  _FSEventStreamSetExclusionPaths
+0x186cad778  __TEXT,__text  _FSEventStreamShow
+0x186c84cec  __TEXT,__text  _FSEventStreamStart
+0x186cabf40  __TEXT,__text  _FSEventStreamStop
+0x186cacd80  __TEXT,__text  _FSEventStreamUnscheduleFromRunLoop
+0x186cad45c  __TEXT,__text  _FSEventsCopyUUIDForDevice
+0x186cad410  __TEXT,__text  _FSEventsGetCurrentEventId
+0x186cad570  __TEXT,__text  _FSEventsGetLastEventIdForDeviceBeforeTime
+0x186cad5dc  __TEXT,__text  _FSEventsPurgeEventsForDeviceUpToEventId
+0x186cb0ab0  __TEXT,__text  _FSNodeCreateWithURL
+0x1e07219d0  __DATA_CONST,__const  _LSApplicationSINFKey
+0x1e07219c8  __DATA_CONST,__const  _LSApplicationWorkspaceErrorDomain
+0x1e07219c0  __DATA_CONST,__const  _LSApplicationsChangedNotificationName
+0x1e07219b8  __DATA_CONST,__const  _LSApplyURLOverridesForContacts
+0x1e07219b0  __DATA_CONST,__const  _LSBlockUntilCompleteKey
+0x1e07219a0  __DATA_CONST,__const  _LSContinuityErrorDomain
+0x186d7188c  __TEXT,__text  _LSDefaultAppCategoryCopyName
+0x186d73028  __TEXT,__text  _LSDefaultAppCategoryForMask
+0x186d71964  __TEXT,__text  _LSDefaultAppCategoryGetFromName
+0x186d73034  __TEXT,__text  _LSDefaultAppCategoryMaskForCategory
+0x1e0721998  __DATA_CONST,__const  _LSDefaultApplicationManagementDomain
+0x1e0721990  __DATA_CONST,__const  _LSDefaultIconName
+0x1e0721988  __DATA_CONST,__const  _LSDisableURLOverrides
+0x1e0721980  __DATA_CONST,__const  _LSDocumentTypesChangedNotificationName
+0x1e0721970  __DATA_CONST,__const  _LSFileProviderStringKey
+0x1e0721968  __DATA_CONST,__const  _LSGeoJSONKey
+0x1e0721960  __DATA_CONST,__const  _LSHiddenAppType
+0x1e0721958  __DATA_CONST,__const  _LSIncludeAppLinksForCallingApplicationKey
+0x186d6a870  __TEXT,__text  _LSInit
+0x1e0721950  __DATA_CONST,__const  _LSInstallTypeKey
+0x1e0721948  __DATA_CONST,__const  _LSInternalApplicationType
+0x1e0721940  __DATA_CONST,__const  _LSMoveDocumentOnOpenKey
+0x1e0721938  __DATA_CONST,__const  _LSNewsstandArtworkKey
+0x1e0721930  __DATA_CONST,__const  _LSOneTapOpenBehaviorKey
+0x1e0721928  __DATA_CONST,__const  _LSOpenApplicationPayloadOptionsKey
+0x1e0721920  __DATA_CONST,__const  _LSOpenInBackgroundKey
+0x1e0721918  __DATA_CONST,__const  _LSPackageTypeCarrierBundle
+0x1e0721910  __DATA_CONST,__const  _LSPackageTypeCustomer
+0x1e0721908  __DATA_CONST,__const  _LSPackageTypeDeveloper
+0x1e0721900  __DATA_CONST,__const  _LSPackageTypeKey
+0x1e07218f8  __DATA_CONST,__const  _LSPackageTypePlaceholder
+0x186cfd480  __TEXT,__text  _LSPersonaTypeForMask
+0x186dd5ab8  __TEXT,__text  _LSPersonaTypeForUMUserPersonaType
+0x186cfd494  __TEXT,__text  _LSPersonaTypeMaskForType
+0x1e07218f0  __DATA_CONST,__const  _LSPlugInKitType
+0x1e07218e8  __DATA_CONST,__const  _LSReferrerURLKey
+0x1e07218e0  __DATA_CONST,__const  _LSRequireOpenInPlaceKey
+0x1e07218d8  __DATA_CONST,__const  _LSRestrictedKey
+0x186ccb5e8  __TEXT,__text  _LSRestrictionReasonMaskForRestrictionReason
+0x1e07218d0  __DATA_CONST,__const  _LSSetHandlerOnDocumentOpenKey
+0x1e07218c8  __DATA_CONST,__const  _LSSimulatorRootPathKey
+0x1e07218c0  __DATA_CONST,__const  _LSSimulatorUserPathKey
+0x1e07218b8  __DATA_CONST,__const  _LSSupressNotificationKey
+0x1e07218b0  __DATA_CONST,__const  _LSSystemApplicationType
+0x1e07218a8  __DATA_CONST,__const  _LSSystemPlaceholderType
+0x1e07218a0  __DATA_CONST,__const  _LSTargetBSServiceConnectionEndpointKey
+0x1e0721898  __DATA_CONST,__const  _LSTypeDeclarationsChangedNotificationName
+0x186dd5b04  __TEXT,__text  _LSUMUserPersonaTypeForLSPersonaType
+0x1e0721890  __DATA_CONST,__const  _LSURLTypesChangedNotificationName
+0x1e0721888  __DATA_CONST,__const  _LSUninstallUserDataOnly
+0x1e0721880  __DATA_CONST,__const  _LSUpdatePlaceholderIconKey
+0x1e0721878  __DATA_CONST,__const  _LSUserActivityAlwaysEligibleKey
+0x1e0721870  __DATA_CONST,__const  _LSUserActivityAlwaysPickKey
+0x1e0721868  __DATA_CONST,__const  _LSUserActivityHasWebPageURLOptionKey
+0x1e0721860  __DATA_CONST,__const  _LSUserActivityIsForPairedDeviceOptionKey
+0x1e0721858  __DATA_CONST,__const  _LSUserActivityIsHighPriorityOptionKey
+0x1e0721850  __DATA_CONST,__const  _LSUserActivityIsNotificationOptionKey
+0x1e0721848  __DATA_CONST,__const  _LSUserActivityManagerActivityContinuationIsEnabledChangedNotification
+0x1e0721840  __DATA_CONST,__const  _LSUserActivityTypeNowPlaying
+0x1e0721838  __DATA_CONST,__const  _LSUserActivityTypeSiri
+0x1e0721830  __DATA_CONST,__const  _LSUserActivityTypeTeamIDOverideKey
+0x1e0721828  __DATA_CONST,__const  _LSUserApplicationType
+0x1e0721820  __DATA_CONST,__const  _LSUserInitiatedUninstall
+0x1e0721818  __DATA_CONST,__const  _LSVPNPluginType
+0x1e0721810  __DATA_CONST,__const  _LSiTunesArtworkKey
+0x1e0721808  __DATA_CONST,__const  _LSiTunesMetadataKey
+0x1ee001228  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_FSNode
+0x1ef497f38  __AUTH,__objc_data  _OBJC_CLASS_$_LSAltIconManager
+0x1ee000328  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSAppClipMetadata
+0x1edfffbf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSAppLink
+0x1ee000df0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSApplicationExtensionRecord
+0x1ef498870  __AUTH,__objc_data  _OBJC_CLASS_$_LSApplicationIdentity
+0x1ef4971c8  __AUTH,__objc_data  _OBJC_CLASS_$_LSApplicationIdentityMigrationResult
+0x1ef4971a0  __AUTH,__objc_data  _OBJC_CLASS_$_LSApplicationIdentityMigrator
+0x1ee0005a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSApplicationProxy
+0x1ee000a30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSApplicationRecord
+0x1ee0003a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSApplicationRestrictionsManager
+0x1ee0007d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSApplicationWorkspace
+0x1edfffd60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSApplicationWorkspaceObserver
+0x1ef498758  __AUTH,__objc_data  _OBJC_CLASS_$_LSBundleIdentity
+0x1ef498c58  __AUTH,__objc_data  _OBJC_CLASS_$_LSBundleInfoCachedValues
+0x1ef497178  __AUTH,__objc_data  _OBJC_CLASS_$_LSBundlePersonaRecordMap
+0x1ee0010c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSBundleProxy
+0x1ee0011b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSBundleRecord
+0x1ef498d48  __AUTH,__objc_data  _OBJC_CLASS_$_LSClaimBinding
+0x1ef498aa0  __AUTH,__objc_data  _OBJC_CLASS_$_LSClaimBindingBindable
+0x1ef498bb8  __AUTH,__objc_data  _OBJC_CLASS_$_LSClaimBindingConfiguration
+0x1ee0009b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSClaimRecord
+0x1ef496408  __AUTH,__objc_data  _OBJC_CLASS_$_LSContainerCache
+0x1edfffea0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSDatabaseContext
+0x1ee000bc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSDefaultApplicationQueryResult
+0x1ee000f58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSDocumentProxy
+0x1ef498618  __AUTH,__objc_data  _OBJC_CLASS_$_LSEligibilityPredicate
+0x1ef4985f0  __AUTH,__objc_data  _OBJC_CLASS_$_LSEligibilityPredicateEvaluator
+0x1ee000030  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSEnumerator
+0x1ef496340  __AUTH,__objc_data  _OBJC_CLASS_$_LSExtensionLaunchConfiguration
+0x1ef496278  __AUTH,__objc_data  _OBJC_CLASS_$_LSExtensionLaunchConfigurationResolver
+0x1ee000170  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSExtensionPoint
+0x1ee0012a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSExtensionPointRecord
+0x1ef498a00  __AUTH,__objc_data  _OBJC_CLASS_$_LSFeatureFlagPredicate
+0x1ef4989d8  __AUTH,__objc_data  _OBJC_CLASS_$_LSFeatureFlagPredicateEvaluator
+0x1ef497df8  __AUTH,__objc_data  _OBJC_CLASS_$_LSHRNSupport
+0x1ef498f50  __AUTH,__objc_data  _OBJC_CLASS_$_LSObserver
+0x1ef4980f0  __AUTH,__objc_data  _OBJC_CLASS_$_LSOperationRequestContext
+0x1ee000b98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSPlugInKitProxy
+0x1ee000120  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSPlugInQuery
+0x1ee0000a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSPlugInQueryWithIdentifier
+0x1ef4987d0  __AUTH,__objc_data  _OBJC_CLASS_$_LSPlugInQueryWithQueryDictionary
+0x1ef498730  __AUTH,__objc_data  _OBJC_CLASS_$_LSPlugInQueryWithURL
+0x1ef4982a8  __AUTH,__objc_data  _OBJC_CLASS_$_LSPrecondition
+0x1ee000d28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSPropertyList
+0x1ee0012f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSRecord
+0x1ef497c68  __AUTH,__objc_data  _OBJC_CLASS_$_LSRecordBuilder
+0x1ef498b18  __AUTH,__objc_data  _OBJC_CLASS_$_LSRecordPromise
+0x1ef498280  __AUTH,__objc_data  _OBJC_CLASS_$_LSRegistrationInfo
+0x1ee001110  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSResourceProxy
+0x1ef498e88  __AUTH,__objc_data  _OBJC_CLASS_$_LSSettingsStore
+0x1ef497088  __AUTH,__objc_data  _OBJC_CLASS_$_LSSpotlightAction
+0x1ef497060  __AUTH,__objc_data  _OBJC_CLASS_$_LSSystemBundleIdentity
+0x1ee0009e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LSTransmissibleExtensionLaunchConfiguration
+0x1ef497bf0  __AUTH,__objc_data  _OBJC_CLASS_$_LSVPNPluginProxy
+0x1ef4968b8  __AUTH,__objc_data  _OBJC_CLASS_$_LSWorkPipe
+0x000114466  indirect  _OBJC_CLASS_$_NSUserActivity
+0x1ee001160  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UTTypeRecord
+0x1ef498410  __AUTH,__objc_data  _OBJC_CLASS_$__LSApplicationProxyForIdentifierQuery
+0x1ee0008c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__LSApplicationState
+0x1ef496a98  __AUTH,__objc_data  _OBJC_CLASS_$__LSDAppProtectionService
+0x1ee001278  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__LSDefaults
+0x1ee000f08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__LSDiskUsage
+0x1edfffdd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__LSDisplayNameConstructor
+0x1ee000cb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__LSLazyPropertyList
+0x1ef498a78  __AUTH,__objc_data  _OBJC_CLASS_$__LSOpenConfiguration
+0x1ee000530  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__LSPersonaWithAttributes
+0x1ee000ee0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__LSQuery
+0x1ee0004e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__LSQueryContext
+0x1ee000fa8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__LSQueryResult
+0x1edffffe0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__LSRecordEnumerator
+0x1ef498370  __AUTH,__objc_data  _OBJC_CLASS_$__LSStringLocalizer
+0x1ef498d70  __AUTH,__objc_data  _OBJC_CLASS_$__LSURLOverride
+0x1ee000620  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UTDeclaredTypeRecord
+0x1ee0011d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_FSNode
+0x1ef497858  __AUTH,__objc_data  _OBJC_METACLASS_$_LSAltIconManager
+0x1ee000378  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSAppClipMetadata
+0x1edfffba8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSAppLink
+0x1ee000e18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSApplicationExtensionRecord
+0x1ef498938  __AUTH,__objc_data  _OBJC_METACLASS_$_LSApplicationIdentity
+0x1ef496e30  __AUTH,__objc_data  _OBJC_METACLASS_$_LSApplicationIdentityMigrationResult
+0x1ef496e08  __AUTH,__objc_data  _OBJC_METACLASS_$_LSApplicationIdentityMigrator
+0x1ee000580  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSApplicationProxy
+0x1ee000a58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSApplicationRecord
+0x1ee0003c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSApplicationRestrictionsManager
+0x1ee000828  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSApplicationWorkspace
+0x1edfffd88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSApplicationWorkspaceObserver
+0x1ef4986b8  __AUTH,__objc_data  _OBJC_METACLASS_$_LSBundleIdentity
+0x1ef498c30  __AUTH,__objc_data  _OBJC_METACLASS_$_LSBundleInfoCachedValues
+0x1ef496de0  __AUTH,__objc_data  _OBJC_METACLASS_$_LSBundlePersonaRecordMap
+0x1ee001138  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSBundleProxy
+0x1ee001318  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSBundleRecord
+0x1ef498d20  __AUTH,__objc_data  _OBJC_METACLASS_$_LSClaimBinding
+0x1ef498a50  __AUTH,__objc_data  _OBJC_METACLASS_$_LSClaimBindingBindable
+0x1ef498b90  __AUTH,__objc_data  _OBJC_METACLASS_$_LSClaimBindingConfiguration
+0x1ee000990  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSClaimRecord
+0x1ef495f30  __AUTH,__objc_data  _OBJC_METACLASS_$_LSContainerCache
+0x1edfffec8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSDatabaseContext
+0x1ee000c60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSDefaultApplicationQueryResult
+0x1ee000eb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSDocumentProxy
+0x1ef498578  __AUTH,__objc_data  _OBJC_METACLASS_$_LSEligibilityPredicate
+0x1ef4987a8  __AUTH,__objc_data  _OBJC_METACLASS_$_LSEligibilityPredicateEvaluator
+0x1edffffb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSEnumerator
+0x1ef495e68  __AUTH,__objc_data  _OBJC_METACLASS_$_LSExtensionLaunchConfiguration
+0x1ef495da0  __AUTH,__objc_data  _OBJC_METACLASS_$_LSExtensionLaunchConfigurationResolver
+0x1ee000198  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSExtensionPoint
+0x1ee001250  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSExtensionPointRecord
+0x1ef498910  __AUTH,__objc_data  _OBJC_METACLASS_$_LSFeatureFlagPredicate
+0x1ef498b68  __AUTH,__objc_data  _OBJC_METACLASS_$_LSFeatureFlagPredicateEvaluator
+0x1ef497740  __AUTH,__objc_data  _OBJC_METACLASS_$_LSHRNSupport
+0x1edfff9c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSObserver
+0x1ef498028  __AUTH,__objc_data  _OBJC_METACLASS_$_LSOperationRequestContext
+0x1ee000b70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSPlugInKitProxy
+0x1ee000148  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSPlugInQuery
+0x1ee000080  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSPlugInQueryWithIdentifier
+0x1ef498820  __AUTH,__objc_data  _OBJC_METACLASS_$_LSPlugInQueryWithQueryDictionary
+0x1ef498690  __AUTH,__objc_data  _OBJC_METACLASS_$_LSPlugInQueryWithURL
+0x1ef4981e0  __AUTH,__objc_data  _OBJC_METACLASS_$_LSPrecondition
+0x1ee000d00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSPropertyList
+0x1ee0012c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSRecord
+0x1ef4975d8  __AUTH,__objc_data  _OBJC_METACLASS_$_LSRecordBuilder
+0x1ef498ac8  __AUTH,__objc_data  _OBJC_METACLASS_$_LSRecordPromise
+0x1ef4981b8  __AUTH,__objc_data  _OBJC_METACLASS_$_LSRegistrationInfo
+0x1ee001048  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSResourceProxy
+0x1ef498e60  __AUTH,__objc_data  _OBJC_METACLASS_$_LSSettingsStore
+0x1ef496cf0  __AUTH,__objc_data  _OBJC_METACLASS_$_LSSpotlightAction
+0x1ef496cc8  __AUTH,__objc_data  _OBJC_METACLASS_$_LSSystemBundleIdentity
+0x1ee000a08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LSTransmissibleExtensionLaunchConfiguration
+0x1ef497560  __AUTH,__objc_data  _OBJC_METACLASS_$_LSVPNPluginProxy
+0x1ef496660  __AUTH,__objc_data  _OBJC_METACLASS_$_LSWorkPipe
+0x000117d5f  indirect  _OBJC_METACLASS_$_NSUserActivity
+0x1ee001188  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UTTypeRecord
+0x1ef4983e8  __AUTH,__objc_data  _OBJC_METACLASS_$__LSApplicationProxyForIdentifierQuery
+0x1ee0008a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__LSApplicationState
+0x1ef496a48  __AUTH,__objc_data  _OBJC_METACLASS_$__LSDAppProtectionService
+0x1ee001200  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__LSDefaults
+0x1ee000e40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__LSDiskUsage
+0x1edfffdb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__LSDisplayNameConstructor
+0x1ee000cd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__LSLazyPropertyList
+0x1ef498a28  __AUTH,__objc_data  _OBJC_METACLASS_$__LSOpenConfiguration
+0x1ee000558  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__LSPersonaWithAttributes
+0x1ee000e90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__LSQuery
+0x1ee000508  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__LSQueryContext
+0x1ee0010e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__LSQueryResult
+0x1edffff68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__LSRecordEnumerator
+0x1ef498438  __AUTH,__objc_data  _OBJC_METACLASS_$__LSStringLocalizer
+0x1ef498d98  __AUTH,__objc_data  _OBJC_METACLASS_$__LSURLOverride
+0x1ee000648  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__UTDeclaredTypeRecord
+0x186c82724  __TEXT,__text  _UTTypeConformsTo
+0x186c77a4c  __TEXT,__text  _UTTypeCopyAllTagsWithClass
+0x186dcda3c  __TEXT,__text  _UTTypeCopyChildIdentifiers
+0x186dcde3c  __TEXT,__text  _UTTypeCopyDeclaration
+0x186dcdef0  __TEXT,__text  _UTTypeCopyDeclaringBundleURL
+0x186dcdce0  __TEXT,__text  _UTTypeCopyDescription
+0x186dcd960  __TEXT,__text  _UTTypeCopyParentIdentifiers
+0x186c743ac  __TEXT,__text  _UTTypeCopyPreferredTagWithClass
+0x186dcd5fc  __TEXT,__text  _UTTypeCreateAllIdentifiersForTag
+0x186c8267c  __TEXT,__text  _UTTypeCreatePreferredIdentifierForTag
+0x186c50d14  __TEXT,__text  _UTTypeEqual
+0x186dcdd78  __TEXT,__text  _UTTypeIsDeclared
+0x186c8ab08  __TEXT,__text  _UTTypeIsDynamic
+0x186dce6dc  __TEXT,__text  _UTTypeShow
+0x186de281c  __TEXT,__text  __AppleIDAuthenticationAddAppleID
+0x186de26d4  __TEXT,__text  __AppleIDAuthenticationAddAppleIDWithBlock
+0x186de2e9c  __TEXT,__text  __AppleIDAuthenticationCopyAppleIDs
+0x186de32b0  __TEXT,__text  __AppleIDAuthenticationCopyCertificateInfo
+0x186de3038  __TEXT,__text  __AppleIDAuthenticationCopyCertificateInfoWithBlock
+0x186de35a0  __TEXT,__text  __AppleIDAuthenticationCopyMyInfo
+0x186de3454  __TEXT,__text  __AppleIDAuthenticationCopyMyInfoWithBlock
+0x186de3ad8  __TEXT,__text  __AppleIDAuthenticationFindPerson
+0x186de3760  __TEXT,__text  __AppleIDAuthenticationFindPersonWithBlock
+0x186de2b0c  __TEXT,__text  __AppleIDAuthenticationForgetAppleID
+0x186de29c4  __TEXT,__text  __AppleIDAuthenticationForgetAppleIDWithBlock
+0x186de3ea4  __TEXT,__text  __AppleIDCopyDSIDForCertificate
+0x186de3cf0  __TEXT,__text  __AppleIDCopySecIdentityForAppleIDAccount
+0x186de49b4  __TEXT,__text  __AppleIDUpdateLinkedIdentityProvisioning
+0x186de488c  __TEXT,__text  __AppleIDUpdateLinkedIdentityProvisioningWithBlock
+0x186de5670  __TEXT,__text  __CSAddAppleIDAccount
+0x186de5590  __TEXT,__text  __CSAddAppleIDAccountUsingCompletionBlock
+0x186de8c4c  __TEXT,__text  __CSBackToMyMacCopyDomain
+0x186de8d7c  __TEXT,__text  __CSBackToMyMacCopyDomains
+0x186de59e4  __TEXT,__text  __CSCopyAccountIdentifierForAppleIDCertificate
+0x186de5ab4  __TEXT,__text  __CSCopyAccountIdentifierForAppleIDCertificateChain
+0x186de578c  __TEXT,__text  __CSCopyAccountInfoForAppleID
+0x186de5790  __TEXT,__text  __CSCopyAccountStatusForAppleID
+0x186de5b0c  __TEXT,__text  __CSCopyAppleIDAccountForAppleIDCertificate
+0x186de5780  __TEXT,__text  __CSCopyAppleIDAccounts
+0x186de90f4  __TEXT,__text  __CSCopyCommentForServerName
+0x186de5cb0  __TEXT,__text  __CSCopyDefaultSharingSecIdentities
+0x186de9628  __TEXT,__text  __CSCopyLocalHostnameForComputerName
+0x186de5b00  __TEXT,__text  __CSCopySecIdentityForAppleID
+0x186de5960  __TEXT,__text  __CSCreateAppleIDIdentityWithCertificate
+0x186de5a30  __TEXT,__text  __CSCreateAppleIDIdentityWithCertificateChain
+0x186de58e8  __TEXT,__text  __CSCreateAppleIDIdentityWithNameAndAccountIdentifier
+0x186de9448  __TEXT,__text  __CSCreatePosixNameFromString
+0x186de88c8  __TEXT,__text  __CSDefaultLog
+0x186de8f1c  __TEXT,__text  __CSDeviceSupportsAirDrop
+0x186de90ec  __TEXT,__text  __CSDisassociateWireless
+0x186de90e4  __TEXT,__text  __CSEnableWirelessP2P
+0x186de8498  __TEXT,__text  __CSGetAppleIDIdentityAuthority
+0x186de87f0  __TEXT,__text  __CSIdentityAuthenticateUsingCertificate
+0x186de87b8  __TEXT,__text  __CSIdentityAuthenticateUsingCertificateChain
+0x186de84d0  __TEXT,__text  __CSIdentityAuthorityCopyIdentityWithName
+0x186de8884  __TEXT,__text  __CSIdentityUpdateLinkedIdentityProvisioning
+0x186de90d4  __TEXT,__text  __CSIsComputerToComputerEnabled
+0x186de90dc  __TEXT,__text  __CSIsWirelessAccessPointEnabled
+0x186de5588  __TEXT,__text  __CSLinkCurrentUserToAppleIDWithVerifiedAccountIdentifier
+0x186de5774  __TEXT,__text  __CSRemoveAppleIDAccount
+0x186de576c  __TEXT,__text  __CSUnlinkCurrentUserFromAppleID
+0x186ca80c0  __TEXT,__text  __LSAdvertisementBytesKind
+0x186cf03d8  __TEXT,__text  __LSAppRemovalServiceXPCInterface
+0x1e0721800  __DATA_CONST,__const  __LSAppStateBlockedKey
+0x1e07217f8  __DATA_CONST,__const  __LSAppStateInstalledKey
+0x1e07217f0  __DATA_CONST,__const  __LSAppStatePlaceholderKey
+0x1e07217e8  __DATA_CONST,__const  __LSAppStateRemovedKey
+0x1e07217e0  __DATA_CONST,__const  __LSAppStateRestrictedKey
+0x1e07217d8  __DATA_CONST,__const  __LSAppStateValidKey
+0x186dedc24  __TEXT,__text  __LSApplicationRestrictionsManagerAllowlistedBundleIDs
+0x186ccb618  __TEXT,__text  __LSApplicationRestrictionsManagerGetSharedInstance
+0x186dedc28  __TEXT,__text  __LSApplicationRestrictionsManagerIsAdTrackingEnabled
+0x186dedc2c  __TEXT,__text  __LSApplicationRestrictionsManagerIsAllowlistEnabled
+0x186dedc30  __TEXT,__text  __LSApplicationRestrictionsManagerIsAppExtensionRestricted
+0x186dedc34  __TEXT,__text  __LSApplicationRestrictionsManagerIsApplicationRestricted
+0x186dedc40  __TEXT,__text  __LSApplicationRestrictionsManagerIsApplicationRestrictedCheckingBundleFlags
+0x186dedc44  __TEXT,__text  __LSApplicationRestrictionsManagerIsOpenInRestrictionInEffect
+0x186dedc48  __TEXT,__text  __LSApplicationRestrictionsManagerIsRatingAllowedForBundleIdentifier
+0x186dedc4c  __TEXT,__text  __LSApplicationRestrictionsManagerMaximumRating
+0x186ccb5fc  __TEXT,__text  __LSApplicationRestrictionsManagerReasonForApplicationRestriction
+0x186dedc50  __TEXT,__text  __LSApplicationRestrictionsManagerRestrictedBundleIDs
+0x186cf4d50  __TEXT,__text  __LSBindingSetLogFile
+0x186cf4d44  __TEXT,__text  __LSBindingSetReasonTrackingEnabled
+0x186caafcc  __TEXT,__text  __LSCompareHashedBytesFromAdvertisingStrings
+0x186d6be54  __TEXT,__text  __LSCopyActivityTypesClaimedHashedAdvertisingStrings
+0x186d6b248  __TEXT,__text  __LSCopyAdvertisementStringForTeamIdentifierAndActivityType
+0x186d6b34c  __TEXT,__text  __LSCopyClaimedActivityIdentifiersAndDomains
+0x186d6bba8  __TEXT,__text  __LSCopyUserActivityDomainNamesForBundleID
+0x186ca9324  __TEXT,__text  __LSCreateDatabaseLookupStringFromHashedBytesForAdvertising
+0x186dcebb4  __TEXT,__text  __LSCreateDeviceTypeIdentifierWithModelCode
+0x186dcebbc  __TEXT,__text  __LSCreateDeviceTypeIdentifierWithModelCodeAndColorComponents
+0x186caacdc  __TEXT,__text  __LSCreateHashedBytesForAdvertisingFromString
+0x186d6ad34  __TEXT,__text  __LSCreatePackageExtensionsArray
+0x186da79a0  __TEXT,__text  __LSCreateRegistrationData
+0x186c6237c  __TEXT,__text  __LSDServiceGetXPCProxyForServiceClass
+0x186d30144  __TEXT,__text  __LSDatabaseContextSetDetachProxyObjects
+0x186d6c3e0  __TEXT,__text  __LSDatabaseCopyURLForUser
+0x186d6b22c  __TEXT,__text  __LSDebugAdvertismentValue
+0x186c3fcb8  __TEXT,__text  __LSDefaultLog
+0x186d3af2c  __TEXT,__text  __LSDispatchWithTimeout
+0x186d6c428  __TEXT,__text  __LSDisplayData
+0x186ca6ee0  __TEXT,__text  __LSExtensionsLog
+0x186cfd420  __TEXT,__text  __LSGetDescriptionForPersonaType
+0x186d6ab50  __TEXT,__text  __LSGetStatus
+0x186c69c40  __TEXT,__text  __LSGetVersionFromString
+0x1e07217c0  __DATA_CONST,__const  __LSHandlerRankAlternate
+0x1e07217b8  __DATA_CONST,__const  __LSHandlerRankDefault
+0x1e07217b0  __DATA_CONST,__const  __LSHandlerRankNone
+0x1e07217a8  __DATA_CONST,__const  __LSHandlerRankOwner
+0x186dcbae4  __TEXT,__text  __LSIconDictionarySupportsAssetCatalogs
+0x186df7388  __TEXT,__text  __LSLazyPropertyListGetPropertyList
+0x186d76220  __TEXT,__text  __LSLazyPropertyListWithLazyPropertyLists
+0x186d7624c  __TEXT,__text  __LSLazyPropertyListWithPropertyList
+0x186d76278  __TEXT,__text  __LSLazyPropertyListWithPropertyListData
+0x186dedc54  __TEXT,__text  __LSMakeUseValuesStateProvider
+0x186dccbb0  __TEXT,__text  __LSMakeVersionNumber
+0x186d85b00  __TEXT,__text  __LSPersistentIdentifierCompare
+0x186d85d54  __TEXT,__text  __LSPersistentIdentifierGetDebugDescription
+0x186d85fd4  __TEXT,__text  __LSPersistentIdentifierGetKnowledgeUUID4CoreDevice
+0x186d86018  __TEXT,__text  __LSPersistentIdentifierGetSequenceNumber4CoreDevice
+0x186d86350  __TEXT,__text  __LSPlistCompact
+0x186c41e34  __TEXT,__text  __LSPlistDataGetHint
+0x186c42d40  __TEXT,__text  __LSPlistDataGetValueForKey
+0x186c44970  __TEXT,__text  __LSPlistRestore
+0x1e0721788  __DATA_CONST,__const  __LSPrimaryPersonaIdentifier
+0x186c57d40  __TEXT,__text  __LSRegisterFilePropertyProvider
+0x186db2104  __TEXT,__text  __LSServerMain
+0x186d642ac  __TEXT,__text  __LSSetContentTypeHandler
+0x186d63e30  __TEXT,__text  __LSSetDatabaseIsSeeded
+0x186d6b0e4  __TEXT,__text  __LSSetDefaultWebBrowserWithBundleIdentifierAndVersion
+0x186d64510  __TEXT,__text  __LSSetSchemeHandler
+0x1e0721780  __DATA_CONST,__const  __LSURLBindingReasonKey
+0x1e0721778  __DATA_CONST,__const  __LSUserActivityContainsFileProviderURLKey
+0x1e0721770  __DATA_CONST,__const  __LSUserActivityContainsUnsynchronizedCloudDocsKey
+0x1e0721768  __DATA_CONST,__const  __LSUserActivityOptionInvalidateAfterFetchKey
+0x1eb1fc150  __DATA,__data  __LSUserActivityTypeBrowsingWebUnused
+0x186c3cd84  __TEXT,__text  __LSVersionNumberCompare
+0x186dccb60  __TEXT,__text  __LSVersionNumberCopyStringRepresentation
+0x186dccba8  __TEXT,__text  __LSVersionNumberGetBugFixComponent
+0x186dccb18  __TEXT,__text  __LSVersionNumberGetCurrentSystemVersion
+0x186dccbd4  __TEXT,__text  __LSVersionNumberGetDYLDVersion
+0x186c8d9d8  __TEXT,__text  __LSVersionNumberGetMajorComponent
+0x186dccba0  __TEXT,__text  __LSVersionNumberGetMinorComponent
+0x186c38208  __TEXT,__text  __LSVersionNumberGetStringRepresentation
+0x186dccb8c  __TEXT,__text  __LSVersionNumberHash
+0x186dccbbc  __TEXT,__text  __LSVersionNumberMakeWithDYLDVersion
+0x186c69b48  __TEXT,__text  __LSVersionNumberMakeWithString
+0x186cee1dc  __TEXT,__text  __LSWriteApplicationPlaceholderToURL
+0x186dce6e0  __TEXT,__text  __UTCopyDeclaredTypeIdentifiers
+0x186dce8f4  __TEXT,__text  __UTTypeCopyDescriptionLocalizationDictionary
+0x186dce224  __TEXT,__text  __UTTypeCopyDynamicIdentifiersForTags
+0x186dce0b4  __TEXT,__text  __UTTypeCopyGlyphName
+0x186dce16c  __TEXT,__text  __UTTypeCopyIconName
+0x186dceab4  __TEXT,__text  __UTTypeCopyKindStringDictionaryForNonMaterializedItem
+0x186dce9ac  __TEXT,__text  __UTTypeCopyKindStringForNonMaterializedItem
+0x186dce578  __TEXT,__text  __UTTypeCopyPedigree
+0x186dce658  __TEXT,__text  __UTTypeCopyPedigreeSet
+0x186dcd230  __TEXT,__text  __UTTypeCreateDynamicIdentifierForTaggedPointerObject
+0x186dcd7c4  __TEXT,__text  __UTTypeCreateSuggestedFilename
+0x186dcdd98  __TEXT,__text  __UTTypeGetStatus
+0x186dcd7b4  __TEXT,__text  __UTTypeHash
+0x186c78d74  __TEXT,__text  __UTTypeIdentifierIsValid
+0x186dcd8d4  __TEXT,__text  __UTTypeIsWildcard
+0x186dcd884  __TEXT,__text  __UTTypePrecachePropertiesOfIdentifiers
+0x186c378c8  __TEXT,__text  ___LSDefaultsGetSharedInstance
+0x1e071b4d0  __DATA_CONST,__const  __kCSAppleIDAccountAllEmailAddresses
+0x1e071b4c8  __DATA_CONST,__const  __kCSAppleIDAccountAppleID
+0x1e071b4c0  __DATA_CONST,__const  __kCSAppleIDAccountCertificateExpirationDate
+0x1e071b4b8  __DATA_CONST,__const  __kCSAppleIDAccountCertificateSerialNumber
+0x1e071b4b0  __DATA_CONST,__const  __kCSAppleIDAccountFirstName
+0x1e071b4a8  __DATA_CONST,__const  __kCSAppleIDAccountLastName
+0x1e071b4a0  __DATA_CONST,__const  __kCSAppleIDAccountStateCertificateAssumedOK
+0x1e071b498  __DATA_CONST,__const  __kCSAppleIDAccountStateCertificateExpired
+0x1e071b490  __DATA_CONST,__const  __kCSAppleIDAccountStateCertificateMustBeRenewed
+0x1e071b488  __DATA_CONST,__const  __kCSAppleIDAccountStateCertificateOK
+0x1e071b480  __DATA_CONST,__const  __kCSAppleIDAccountStateCertificatePending
+0x1e071b478  __DATA_CONST,__const  __kCSAppleIDAccountStateCertificateRevoked
+0x1e071b470  __DATA_CONST,__const  __kCSAppleIDAccountStateCertificateShouldBeRenewed
+0x1e071b468  __DATA_CONST,__const  __kCSAppleIDAccountStateNoCertificate
+0x1e071b460  __DATA_CONST,__const  __kCSAppleIDAccountStateNoEncodedDSID
+0x1e071b458  __DATA_CONST,__const  __kCSAppleIDAccountStatePasswordInaccessibleInKeychain
+0x1e071b450  __DATA_CONST,__const  __kCSAppleIDAccountStatePasswordInvalid
+0x1e071b448  __DATA_CONST,__const  __kCSAppleIDAccountStateUnknown
+0x1e071b440  __DATA_CONST,__const  __kCSAppleIDAccountStatusAccountStateKey
+0x1e071b438  __DATA_CONST,__const  __kCSAppleIDAccountStatusNextActionTimeKey
+0x1e071b430  __DATA_CONST,__const  __kCSAppleIDAccountStatusRequiresUserActionKey
+0x1e071b428  __DATA_CONST,__const  __kCSAppleIDAccountStatusValidationDateKey
+0x1e071b420  __DATA_CONST,__const  __kCSAppleIDAccountVerifiedEmailAddresses
+0x1e071b418  __DATA_CONST,__const  __kCSAppleIDAccountVerifiedPhoneNumbers
+0x1e071b410  __DATA_CONST,__const  __kCSAppleIDOptionDeferServerCheck
+0x1e071b408  __DATA_CONST,__const  __kCSAppleIDOptionForceServerCheck
+0x1e071b400  __DATA_CONST,__const  __kCSAppleIDOptionSkipServerCheck
+0x1e071b3f0  __DATA_CONST,__const  __kLSURLApplicationShouldBeHiddenBySystemPreferenceKey
+0x1e071b3e8  __DATA_CONST,__const  __kLSURLCanSetApplicationShouldBeHiddenBySystemPreferenceKey
+0x1e071b3d0  __DATA_CONST,__const  __kUTTypeGlyphNameKey
+0x1e071b3c8  __DATA_CONST,__const  __kUTTypeIconNameKey
+0x1e071b3b8  __DATA_CONST,__const  __kUTTypePassBundle
+0x1e071b3b0  __DATA_CONST,__const  __kUTTypePassData
+0x1e071b3a8  __DATA_CONST,__const  _kAppleIDAccountAddedOrRemovedNotificationKey
+0x1e071b3a0  __DATA_CONST,__const  _kAppleIDAccountConfigurationChangeNotificationKey
+0x1e071b398  __DATA_CONST,__const  _kAppleIDEncodedDSIDCertificateType
+0x1e071b390  __DATA_CONST,__const  _kAppleIDValidatedItemsRecordDataCertificateType
+0x1e071b388  __DATA_CONST,__const  _kAppleIDValidationRecordOptionDoNotCheckValidAsOfDateKey
+0x1e071b380  __DATA_CONST,__const  _kAppleIDValidationRecordOptionDoNotCheckVersionKey
+0x1e071b378  __DATA_CONST,__const  _kAppleIDValidationRecordOptionDoNotEvaluateTrustRefKey
+0x1e071b370  __DATA_CONST,__const  _kAppleIDValidationRecordOptionOverrideSuggestedDurationValueKey
+0x1e071b368  __DATA_CONST,__const  _kCSIdentityErrorDomain
+0x1e071b288  __DATA_CONST,__const  _kLSClientAllowedToRequestLSDExit
+0x186e0c308  __TEXT,__const  _kLSCurrentDeviceModelCode
+0x1e071b280  __DATA_CONST,__const  _kLSDefaultLocalizedValueKey
+0x1e071b1e8  __DATA_CONST,__const  _kLSNotificationDatabaseSeedingComplete
+0x1e071b1e0  __DATA_CONST,__const  _kLSNotificationDatabaseSeedingStart
+0x186e0c2e4  __TEXT,__const  _kLSVersionNumberNull
+0x1e071b198  __DATA_CONST,__const  _kUTExportedTypeDeclarationsKey
+0x1e071b190  __DATA_CONST,__const  _kUTImportedTypeDeclarationsKey
+0x1e071b188  __DATA_CONST,__const  _kUTTagClassDeviceModelCode
+0x1e071b180  __DATA_CONST,__const  _kUTTagClassFilenameExtension
+0x1e071b178  __DATA_CONST,__const  _kUTTagClassMIMEType
+0x1e071b170  __DATA_CONST,__const  _kUTType3DContent
+0x1e071b160  __DATA_CONST,__const  _kUTTypeAVIMovie
+0x1e071b158  __DATA_CONST,__const  _kUTTypeAliasFile
+0x1e071b150  __DATA_CONST,__const  _kUTTypeAliasRecord
+0x1e071b148  __DATA_CONST,__const  _kUTTypeAppCategory
+0x1e071b140  __DATA_CONST,__const  _kUTTypeAppCategoryActionGames
+0x1e071b138  __DATA_CONST,__const  _kUTTypeAppCategoryAdventureGames
+0x1e071b130  __DATA_CONST,__const  _kUTTypeAppCategoryArcadeGames
+0x1e071b128  __DATA_CONST,__const  _kUTTypeAppCategoryBoardGames
+0x1e071b120  __DATA_CONST,__const  _kUTTypeAppCategoryBusiness
+0x1e071b118  __DATA_CONST,__const  _kUTTypeAppCategoryCardGames
+0x1e071b110  __DATA_CONST,__const  _kUTTypeAppCategoryCasinoGames
+0x1e071b108  __DATA_CONST,__const  _kUTTypeAppCategoryDeveloperTools
+0x1e071b100  __DATA_CONST,__const  _kUTTypeAppCategoryDiceGames
+0x1e071b0f8  __DATA_CONST,__const  _kUTTypeAppCategoryEducation
+0x1e071b0f0  __DATA_CONST,__const  _kUTTypeAppCategoryEducationalGames
+0x1e071b0e8  __DATA_CONST,__const  _kUTTypeAppCategoryEntertainment
+0x1e071b0e0  __DATA_CONST,__const  _kUTTypeAppCategoryFamilyGames
+0x1e071b0d8  __DATA_CONST,__const  _kUTTypeAppCategoryFinance
+0x1e071b0d0  __DATA_CONST,__const  _kUTTypeAppCategoryGames
+0x1e071b0c8  __DATA_CONST,__const  _kUTTypeAppCategoryGraphicsDesign
+0x1e071b0c0  __DATA_CONST,__const  _kUTTypeAppCategoryHealthcareFitness
+0x1e071b0b8  __DATA_CONST,__const  _kUTTypeAppCategoryKidsGames
+0x1e071b0b0  __DATA_CONST,__const  _kUTTypeAppCategoryLifestyle
+0x1e071b0a8  __DATA_CONST,__const  _kUTTypeAppCategoryMedical
+0x1e071b0a0  __DATA_CONST,__const  _kUTTypeAppCategoryMusic
+0x1e071b098  __DATA_CONST,__const  _kUTTypeAppCategoryMusicGames
+0x1e071b090  __DATA_CONST,__const  _kUTTypeAppCategoryNews
+0x1e071b088  __DATA_CONST,__const  _kUTTypeAppCategoryPhotography
+0x1e071b080  __DATA_CONST,__const  _kUTTypeAppCategoryProductivity
+0x1e071b078  __DATA_CONST,__const  _kUTTypeAppCategoryPuzzleGames
+0x1e071b070  __DATA_CONST,__const  _kUTTypeAppCategoryRacingGames
+0x1e071b068  __DATA_CONST,__const  _kUTTypeAppCategoryReference
+0x1e071b060  __DATA_CONST,__const  _kUTTypeAppCategoryRolePlayingGames
+0x1e071b058  __DATA_CONST,__const  _kUTTypeAppCategorySimulationGames
+0x1e071b050  __DATA_CONST,__const  _kUTTypeAppCategorySocialNetworking
+0x1e071b048  __DATA_CONST,__const  _kUTTypeAppCategorySports
+0x1e071b040  __DATA_CONST,__const  _kUTTypeAppCategorySportsGames
+0x1e071b038  __DATA_CONST,__const  _kUTTypeAppCategoryStrategyGames
+0x1e071b030  __DATA_CONST,__const  _kUTTypeAppCategoryTravel
+0x1e071b028  __DATA_CONST,__const  _kUTTypeAppCategoryTriviaGames
+0x1e071b020  __DATA_CONST,__const  _kUTTypeAppCategoryUtilities
+0x1e071b018  __DATA_CONST,__const  _kUTTypeAppCategoryVideo
+0x1e071b010  __DATA_CONST,__const  _kUTTypeAppCategoryWeather
+0x1e071b008  __DATA_CONST,__const  _kUTTypeAppCategoryWordGames
+0x1e071b000  __DATA_CONST,__const  _kUTTypeAppleICNS
+0x1e0721a28  __DATA_CONST,__const  _kUTTypeAppleMac
+0x1e071aff8  __DATA_CONST,__const  _kUTTypeAppleProtectedMPEG4Audio
+0x1e071aff0  __DATA_CONST,__const  _kUTTypeAppleProtectedMPEG4Video
+0x1e071afe8  __DATA_CONST,__const  _kUTTypeAppleScript
+0x1e071afe0  __DATA_CONST,__const  _kUTTypeApplication
+0x1e071afd8  __DATA_CONST,__const  _kUTTypeApplicationBundle
+0x1e071afd0  __DATA_CONST,__const  _kUTTypeApplicationFile
+0x1e071afc8  __DATA_CONST,__const  _kUTTypeArchive
+0x1e071afc0  __DATA_CONST,__const  _kUTTypeAssemblyLanguageSource
+0x1e071afb8  __DATA_CONST,__const  _kUTTypeAudio
+0x1e071afb0  __DATA_CONST,__const  _kUTTypeAudioInterchangeFileFormat
+0x1e071afa8  __DATA_CONST,__const  _kUTTypeAudiovisualContent
+0x1e071afa0  __DATA_CONST,__const  _kUTTypeBMP
+0x1e071af98  __DATA_CONST,__const  _kUTTypeBinaryPropertyList
+0x1e071af90  __DATA_CONST,__const  _kUTTypeBookmark
+0x1e071af88  __DATA_CONST,__const  _kUTTypeBundle
+0x1e071af80  __DATA_CONST,__const  _kUTTypeBzip2Archive
+0x1e071af78  __DATA_CONST,__const  _kUTTypeCHeader
+0x1e071af70  __DATA_CONST,__const  _kUTTypeCPlusPlusHeader
+0x1e071af68  __DATA_CONST,__const  _kUTTypeCPlusPlusSource
+0x1e071af60  __DATA_CONST,__const  _kUTTypeCSource
+0x1e071af58  __DATA_CONST,__const  _kUTTypeCalendarEvent
+0x1e0721a18  __DATA_CONST,__const  _kUTTypeCommaSeparatedText
+0x1e071af50  __DATA_CONST,__const  _kUTTypeCompositeContent
+0x1e071af48  __DATA_CONST,__const  _kUTTypeComputer
+0x1e071af40  __DATA_CONST,__const  _kUTTypeConformsToKey
+0x1e071af28  __DATA_CONST,__const  _kUTTypeContact
+0x1e071af20  __DATA_CONST,__const  _kUTTypeContent
+0x1e0721a10  __DATA_CONST,__const  _kUTTypeData
+0x1e071af18  __DATA_CONST,__const  _kUTTypeDatabase
+0x1e071af10  __DATA_CONST,__const  _kUTTypeDelimitedText
+0x1e071af08  __DATA_CONST,__const  _kUTTypeDescriptionKey
+0x1e071af00  __DATA_CONST,__const  _kUTTypeDevice
+0x1e071aef8  __DATA_CONST,__const  _kUTTypeDirectory
+0x1e071aef0  __DATA_CONST,__const  _kUTTypeDiskImage
+0x1e071aee8  __DATA_CONST,__const  _kUTTypeElectronicPublication
+0x1e071aee0  __DATA_CONST,__const  _kUTTypeEmailMessage
+0x1e071aed8  __DATA_CONST,__const  _kUTTypeExecutable
+0x1e071aed0  __DATA_CONST,__const  _kUTTypeFileURL
+0x1e071aec8  __DATA_CONST,__const  _kUTTypeFlatRTFD
+0x1e071aec0  __DATA_CONST,__const  _kUTTypeFolder
+0x1e071aeb8  __DATA_CONST,__const  _kUTTypeFont
+0x1e071aeb0  __DATA_CONST,__const  _kUTTypeFramework
+0x1e071aea8  __DATA_CONST,__const  _kUTTypeGIF
+0x1e071aea0  __DATA_CONST,__const  _kUTTypeGNUZipArchive
+0x1e0721a08  __DATA_CONST,__const  _kUTTypeGenericPC
+0x1e0721a00  __DATA_CONST,__const  _kUTTypeHTML
+0x1e071ae98  __DATA_CONST,__const  _kUTTypeICO
+0x1e071ae90  __DATA_CONST,__const  _kUTTypeIconFileKey
+0x1e071ae88  __DATA_CONST,__const  _kUTTypeIdentifierKey
+0x1e071ae80  __DATA_CONST,__const  _kUTTypeImage
+0x1e071ae78  __DATA_CONST,__const  _kUTTypeInkText
+0x1e071ae70  __DATA_CONST,__const  _kUTTypeInternetLocation
+0x1e071ae68  __DATA_CONST,__const  _kUTTypeItem
+0x1e071ae60  __DATA_CONST,__const  _kUTTypeJPEG
+0x1e071ae58  __DATA_CONST,__const  _kUTTypeJPEG2000
+0x1e071ae50  __DATA_CONST,__const  _kUTTypeJSON
+0x1e071ae48  __DATA_CONST,__const  _kUTTypeJavaArchive
+0x1e071ae40  __DATA_CONST,__const  _kUTTypeJavaClass
+0x1e071ae38  __DATA_CONST,__const  _kUTTypeJavaScript
+0x1e071ae30  __DATA_CONST,__const  _kUTTypeJavaSource
+0x1e071ae28  __DATA_CONST,__const  _kUTTypeLivePhoto
+0x1e071ae20  __DATA_CONST,__const  _kUTTypeLog
+0x1e071ae18  __DATA_CONST,__const  _kUTTypeM3UPlaylist
+0x1e071ae10  __DATA_CONST,__const  _kUTTypeMIDIAudio
+0x1e071ae08  __DATA_CONST,__const  _kUTTypeMP3
+0x1e071ae00  __DATA_CONST,__const  _kUTTypeMPEG
+0x1e071adf8  __DATA_CONST,__const  _kUTTypeMPEG2TransportStream
+0x1e071adf0  __DATA_CONST,__const  _kUTTypeMPEG2Video
+0x1e071ade8  __DATA_CONST,__const  _kUTTypeMPEG4
+0x1e071ade0  __DATA_CONST,__const  _kUTTypeMPEG4Audio
+0x1e071add8  __DATA_CONST,__const  _kUTTypeMessage
+0x1e071add0  __DATA_CONST,__const  _kUTTypeMountPoint
+0x1e071adc8  __DATA_CONST,__const  _kUTTypeMovie
+0x1e071adc0  __DATA_CONST,__const  _kUTTypeOSAScript
+0x1e071adb8  __DATA_CONST,__const  _kUTTypeOSAScriptBundle
+0x1e071adb0  __DATA_CONST,__const  _kUTTypeObjectiveCPlusPlusSource
+0x1e071ada8  __DATA_CONST,__const  _kUTTypeObjectiveCSource
+0x1e071ada0  __DATA_CONST,__const  _kUTTypePDF
+0x1e071ad98  __DATA_CONST,__const  _kUTTypePHPScript
+0x1e071ad90  __DATA_CONST,__const  _kUTTypePICT
+0x1e071ad88  __DATA_CONST,__const  _kUTTypePKCS12
+0x1e071ad80  __DATA_CONST,__const  _kUTTypePNG
+0x1e071ad78  __DATA_CONST,__const  _kUTTypePackage
+0x1e071ad70  __DATA_CONST,__const  _kUTTypePerlScript
+0x1e07219f8  __DATA_CONST,__const  _kUTTypePlainText
+0x1e071ad68  __DATA_CONST,__const  _kUTTypePlaylist
+0x1e071ad60  __DATA_CONST,__const  _kUTTypePluginBundle
+0x1e071ad58  __DATA_CONST,__const  _kUTTypePresentation
+0x1e071ad50  __DATA_CONST,__const  _kUTTypePropertyList
+0x1e071ad48  __DATA_CONST,__const  _kUTTypePythonScript
+0x1e071ad40  __DATA_CONST,__const  _kUTTypeQuickLookGenerator
+0x1e071ad38  __DATA_CONST,__const  _kUTTypeQuickTimeImage
+0x1e071ad30  __DATA_CONST,__const  _kUTTypeQuickTimeMovie
+0x1e071ad28  __DATA_CONST,__const  _kUTTypeRTF
+0x1e071ad20  __DATA_CONST,__const  _kUTTypeRTFD
+0x1e071ad18  __DATA_CONST,__const  _kUTTypeRawImage
+0x1e071ad10  __DATA_CONST,__const  _kUTTypeReferenceURLKey
+0x1e071ad08  __DATA_CONST,__const  _kUTTypeResolvable
+0x1e071ad00  __DATA_CONST,__const  _kUTTypeRubyScript
+0x1e071acf8  __DATA_CONST,__const  _kUTTypeScalableVectorGraphics
+0x1e071acf0  __DATA_CONST,__const  _kUTTypeScript
+0x1e071ace8  __DATA_CONST,__const  _kUTTypeShellScript
+0x1e071ace0  __DATA_CONST,__const  _kUTTypeSourceCode
+0x1e071acd8  __DATA_CONST,__const  _kUTTypeSpotlightImporter
+0x1e071acd0  __DATA_CONST,__const  _kUTTypeSpreadsheet
+0x1e071acc8  __DATA_CONST,__const  _kUTTypeSwiftSource
+0x1e071acc0  __DATA_CONST,__const  _kUTTypeSymLink
+0x1e071acb8  __DATA_CONST,__const  _kUTTypeSystemPreferencesPane
+0x1e071acb0  __DATA_CONST,__const  _kUTTypeTIFF
+0x1e071aca8  __DATA_CONST,__const  _kUTTypeTXNTextAndMultimediaData
+0x1e07219f0  __DATA_CONST,__const  _kUTTypeTabSeparatedText
+0x1e071aca0  __DATA_CONST,__const  _kUTTypeTagSpecificationKey
+0x1e07219e8  __DATA_CONST,__const  _kUTTypeText
+0x1e071ac98  __DATA_CONST,__const  _kUTTypeToDoItem
+0x1e071ac90  __DATA_CONST,__const  _kUTTypeURL
+0x1e071ac88  __DATA_CONST,__const  _kUTTypeURLBookmarkData
+0x1e071ac80  __DATA_CONST,__const  _kUTTypeUTF16ExternalPlainText
+0x1e071ac78  __DATA_CONST,__const  _kUTTypeUTF16PlainText
+0x1e07219e0  __DATA_CONST,__const  _kUTTypeUTF8PlainText
+0x1e071ac70  __DATA_CONST,__const  _kUTTypeUTF8TabSeparatedText
+0x1e071ac68  __DATA_CONST,__const  _kUTTypeUnixExecutable
+0x1e071ac60  __DATA_CONST,__const  _kUTTypeVCard
+0x1e071ac58  __DATA_CONST,__const  _kUTTypeVersionKey
+0x1e071ac50  __DATA_CONST,__const  _kUTTypeVideo
+0x1e071ac48  __DATA_CONST,__const  _kUTTypeVolume
+0x1e071ac40  __DATA_CONST,__const  _kUTTypeWaveformAudio
+0x1e071ac38  __DATA_CONST,__const  _kUTTypeWebArchive
+0x1e071ac30  __DATA_CONST,__const  _kUTTypeWindowsExecutable
+0x1e071ac28  __DATA_CONST,__const  _kUTTypeX509Certificate
+0x1e07219d8  __DATA_CONST,__const  _kUTTypeXML
+0x1e071ac20  __DATA_CONST,__const  _kUTTypeXMLPropertyList
+0x1e071ac18  __DATA_CONST,__const  _kUTTypeXPCService
+0x1e071ac10  __DATA_CONST,__const  _kUTTypeZipArchive
+```
+
+## Private
+
+```
+0x186c366c0  __TEXT,__text  LaunchServices::DatabaseContext::getPerThreadStateReference()
+0x186c36744  __TEXT,__text  __LSDatabaseContextGetCurrentContext
+0x186c36760  __TEXT,__text  -[LSRecord .cxx_construct]
+0x186c36768  __TEXT,__text  -[LSApplicationRecord _initWithNode:bundleIdentifier:placeholderBehavior:systemPlaceholder:itemID:forceInBundleContainer:context:error:]
+0x186c36bcc  __TEXT,__text  __LSContextInitWithOptions
+0x186c36bd0  __TEXT,__text  _LSContextInitCommon(LSContext*, _LSDServiceDomain*, unsigned long, NSError* __autoreleasing*)
+0x186c37668  __TEXT,__text  +[_LSDServiceDomain defaultServiceDomain]
+0x186c376a4  __TEXT,__text  LaunchServices::Database::Context::_get(_LSDServiceDomain*, unsigned long)
+0x186c3778c  __TEXT,__text  ___LAUNCH_SERVICES_IS_ABORTING_BECAUSE_THIS_PROCESS_MAY_NOT_MAP_THE_DATABASE__
+0x186c377b8  __TEXT,__text  ___LAUNCH_SERVICES_IS_GENERATING_A_SANDBOX_EXCEPTION_BECAUSE_THIS_PROCESS_MAY_NOT_MAP_THE_DATABASE__
+0x186c377e0  __TEXT,__text  -[_LSDServiceDomain resolvedSessionKey]
+0x186c37818  __TEXT,__text  getIsCurrentThreadInLSContextInitReference()
+0x186c37890  __TEXT,__text  __LSCurrentProcessMayMapDatabase
+0x186c37900  __TEXT,__text  -[_LSDServiceDomain resolvedDomainUID]
+0x186c37a5c  __TEXT,__text  __LSCopyLocalDatabase
+0x186c37c44  __TEXT,__text  __LSCopyStringForOSType
+0x186c37c8c  __TEXT,__text  _LSGetSession(LSSessionKey)
+0x186c37d4c  __TEXT,__text  ___LSRECORD_IS_PERFORMING_IO_FOR_A_CALLER__
+0x186c37d6c  __TEXT,__text  __LSBundleFindWithInfoAndNo_IOFilter
+0x186c38118  __TEXT,__text  LaunchServices::BindingEvaluator::BindingEvaluator()
+0x186c38238  __TEXT,__text  LaunchServices::VersionNumber::copyStringRepresentation() const
+0x186c38478  __TEXT,__text  LaunchServices::BindingEvaluator::CreateWithBundleInfo(NSString*, NSString*, unsigned int, LSVersionNumber, bool)
+0x186c3867c  __TEXT,__text  __LSBindingLog
+0x186c386b4  __TEXT,__text  _LSDatabaseNotificationCheck(LSSessionKey)
+0x186c387b4  __TEXT,__text  _LSGetSessions()
+0x186c38800  __TEXT,__text  _LSDatabaseNeedsUpdate(_LSDatabase*)
+0x186c38890  __TEXT,__text  LaunchServices::notifyd::NotifyToken::checkValue()
+0x186c388d4  __TEXT,__text  ___136-[LSApplicationRecord _initWithNode:bundleIdentifier:placeholderBehavior:systemPlaceholder:itemID:forceInBundleContainer:context:error:]_block_invoke
+0x186c38b08  __TEXT,__text  __LSFindBundleWithInfo_NoIOFiltered
+0x186c39168  __TEXT,__text  LaunchServices::BindingEvaluation::logToFile(NSString*, ...)
+0x186c39284  __TEXT,__text  LaunchServices::BindingEvaluator::BindingEvaluator(LaunchServices::BindingEvaluator const&)
+0x186c393b8  __TEXT,__text  LaunchServices::BindingEvaluator::~BindingEvaluator()
+0x186c393bc  __TEXT,__text  LaunchServices::BindingEvaluator::~BindingEvaluator()
+0x186c394f4  __TEXT,__text  LaunchServices::BindingEvaluator::setLimit(unsigned long)
+0x186c39508  __TEXT,__text  LaunchServices::BindingEvaluator::setOptions(unsigned int)
+0x186c39510  __TEXT,__text  LaunchServices::BindingEvaluator::setAllowedBundleClasses(std::__1::vector<LSBundleClass, std::__1::allocator<LSBundleClass> > const&)
+0x186c39574  __TEXT,__text  LaunchServices::BindingEvaluator::getBestBinding(LSContext*, UTTypeRecord* __strong*, NSError* __autoreleasing*) const
+0x186c39710  __TEXT,__text  LaunchServices::BindingEvaluator::getBestBinding(LSContext*, NSError* __autoreleasing*) const
+0x186c3971c  __TEXT,__text  LaunchServices::BindingEvaluation::State::State(LSContext*, LaunchServices::BindingEvaluator const&)
+0x186c39a58  __TEXT,__text  LaunchServices::BindingEvaluation::runEvaluator(LaunchServices::BindingEvaluation::State&, NSError* __autoreleasing*)
+0x186c3a41c  __TEXT,__text  LaunchServices::BindingEvaluation::calculateUTI(LSContext*, LaunchServices::BindingEvaluator const&, NSString* __strong*, unsigned int*, _UTTypeData const**)
+0x186c3a650  __TEXT,__text  LaunchServices::BindingEvaluation::addAndEvaluate(LaunchServices::BindingEvaluation::State&, void (*)(LaunchServices::BindingEvaluation::State&), std::__1::vector<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::MallocZoneAllocator<LaunchServices::BindingEvaluation::ExtendedBindin
+0x186c3b284  __TEXT,__text  LaunchServices::BindingEvaluation::BindingEligibilityChecker::eligibleToAddWeakBindingForDefaultAppClaims(LaunchServices::BindingEvaluation::State const&)
+0x186c3b2d8  __TEXT,__text  LaunchServices::BindingEvaluation::addUserPreferences(LaunchServices::BindingEvaluation::State&)
+0x186c3b860  __TEXT,__text  LaunchServices::BindingEvaluation::addStrongBinding(LaunchServices::BindingEvaluation::State&)
+0x186c3bb64  __TEXT,__text  LaunchServices::BindingEvaluation::State::getDefaultAppCategoryBeingBound() const
+0x186c3bbc4  __TEXT,__text  LaunchServices::BindingEvaluation::ensureBundlePointersInBindings(std::__1::vector<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::MallocZoneAllocator<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::BindingEvaluation::BindingMallocZone> > const&)
+0x186c3bc78  __TEXT,__text  std::__1::__hash_table<unsigned int, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int>, LaunchServices::MallocZoneAllocator<unsigned int, LaunchServices::BindingEvaluation::BindingMallocZone> >::~__hash_table()
+0x186c3bcc8  __TEXT,__text  LaunchServices::BindingEvaluation::addBundles(LaunchServices::BindingEvaluation::State&)
+0x186c3bdc0  __TEXT,__text  void std::__1::__hash_table<unsigned int, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int>, LaunchServices::MallocZoneAllocator<unsigned int, LaunchServices::BindingEvaluation::BindingMallocZone> >::__rehash<true>(unsigned long)
+0x186c3be94  __TEXT,__text  std::__1::vector<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::MallocZoneAllocator<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::BindingEvaluation::BindingMallocZone> >::__vdeallocate()
+0x186c3bf14  __TEXT,__text  std::__1::vector<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::MallocZoneAllocator<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::BindingEvaluation::BindingMallocZone> >::reserve(unsigned long)
+0x186c3c000  __TEXT,__text  __LSDatabaseGetStringForCFString
+0x186c3c108  __TEXT,__text  -[LSBundleRecord dealloc]
+0x186c3c174  __TEXT,__text  -[LSRecord dealloc]
+0x186c3c1d8  __TEXT,__text  -[LSApplicationRecord .cxx_destruct]
+0x186c3c1ec  __TEXT,__text  -[LSBundleRecord .cxx_destruct]
+0x186c3c270  __TEXT,__text  -[LSRecord .cxx_destruct]
+0x186c3c278  __TEXT,__text  -[FSNode .cxx_destruct]
+0x186c3c284  __TEXT,__text  _XCFBufInitWithCFStringRange
+0x186c3c47c  __TEXT,__text  LaunchServices::BindingEvaluation::addBundlesInBindingMap(LaunchServices::BindingEvaluation::State&, LSBindingMapID, unsigned int)
+0x186c3c500  __TEXT,__text  __LSDatabaseEnumeratingBindingMap
+0x186c3c594  __TEXT,__text  invocation function for block in LaunchServices::BindingEvaluation::addBundlesInBindingMap(LaunchServices::BindingEvaluation::State&, LSBindingMapID, unsigned int)
+0x186c3c6b0  __TEXT,__text  __LSBundleGet
+0x186c3c7c0  __TEXT,__text  -[_LSBoundIconInfo iconsDictionary]
+0x186c3c7c0  __TEXT,__text  -[_LSBoundIconInfo iconsDictionary]
+0x186c3c7cc  __TEXT,__text  -[_LSDatabase schema]
+0x186c3c7dc  __TEXT,__text  LaunchServices::BindingEvaluation::isBindingOK_NoIO(LaunchServices::BindingEvaluation::State&, LaunchServices::BindingEvaluation::ExtendedBinding const&)
+0x186c3cc80  __TEXT,__text  LaunchServices::BindingEvaluation::pushBackBinding(LaunchServices::BindingEvaluation::State&, std::__1::vector<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::MallocZoneAllocator<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::BindingEvaluation::BindingMallocZ
+0x186c3cdd0  __TEXT,__text  -[_LSBindingForLog .cxx_construct]
+0x186c3cdec  __TEXT,__text  __LSBundleDataGetUnsupportedFormatFlag
+0x186c3cdec  __TEXT,__text  __LSBundleDataGetUnsupportedFormatFlag
+0x186c3cdf4  __TEXT,__text  LaunchServices::BindingEvaluation::checkApplicationIdentifier(LaunchServices::BindingEvaluation::State&, LaunchServices::BindingEvaluation::ExtendedBinding const&)
+0x186c3cee4  __TEXT,__text  -[_LSBindingForLog .cxx_destruct]
+0x186c3cf20  __TEXT,__text  LaunchServices::BindingEvaluation::ExtendedBinding* std::__1::vector<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::MallocZoneAllocator<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::BindingEvaluation::BindingMallocZone> >::__emplace_back_slow_path<LaunchSer
+0x186c3d04c  __TEXT,__text  std::__1::__split_buffer<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::MallocZoneAllocator<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::BindingEvaluation::BindingMallocZone>&>::~__split_buffer()
+0x186c3d094  __TEXT,__text  std::__1::__split_buffer<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::MallocZoneAllocator<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::BindingEvaluation::BindingMallocZone>&>::__split_buffer(unsigned long, unsigned long, LaunchServices::MallocZoneAllocat
+0x186c3d120  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned i
+0x186c3d120  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned i
+0x186c3d120  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned i
+0x186c3d120  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned i
+0x186c3d120  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned i
+0x186c3d120  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned i
+0x186c3d120  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned i
+0x186c3d120  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned i
+0x186c3d120  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned i
+0x186c3d120  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned i
+0x186c3d1cc  __TEXT,__text  void std::__1::__hash_table<unsigned int, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int>, LaunchServices::MallocZoneAllocator<unsigned int, LaunchServices::BindingEvaluation::BindingMallocZone> >::__do_rehash<true>(unsigned long)
+0x186c3d31c  __TEXT,__text  LaunchServices::BindingEvaluation::isBindingOK(LaunchServices::BindingEvaluation::State&, LaunchServices::BindingEvaluation::ExtendedBinding const&)
+0x186c3da34  __TEXT,__text  LaunchServices::BindingEvaluation::BindingEligibilityChecker::checkBindingIsEligibile(LaunchServices::BindingEvaluation::State const&, LaunchServices::BindingEvaluation::ExtendedBinding const&)
+0x186c3dcd0  __TEXT,__text  void std::__1::__split_buffer<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::MallocZoneAllocator<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::BindingEvaluation::BindingMallocZone>&>::__construct_at_end_with_size<std::__1::__wrap_iter<LaunchServices::Bindin
+0x186c3dd88  __TEXT,__text  std::__1::vector<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::MallocZoneAllocator<LaunchServices::BindingEvaluation::ExtendedBinding, LaunchServices::BindingEvaluation::BindingMallocZone> >::__swap_out_circular_buffer(std::__1::__split_buffer<LaunchServices::BindingEvaluation:
+0x186c3de50  __TEXT,__text  ___98-[LSApplicationRecord _initWithNode:bundleIdentifier:context:tableID:unitID:bundleBaseData:error:]_block_invoke
+0x186c3ded8  __TEXT,__text  -[LSApplicationRecord _initWithNode:bundleIdentifier:context:tableID:unitID:bundleBaseData:error:]
+0x186c3e0f0  __TEXT,__text  __LSBundleCopyNode
+0x186c3e0fc  __TEXT,__text  __LSContainerGet
+0x186c3e174  __TEXT,__text  __LSAliasGet
+0x186c3e328  __TEXT,__text  __LSAliasCopyResolvedNode
+0x186c3e44c  __TEXT,__text  __LSContainerCheckState
+0x186c3e530  __TEXT,__text  -[LSBundleRecord _initWithNode:bundleIdentifier:context:tableID:unitID:bundleBaseData:error:]
+0x186c3e8b4  __TEXT,__text  __LSGetNSErrorFromOSStatusImpl
+0x186c3e994  __TEXT,__text  -[LSRecord _initWithContext:tableID:unitID:]
+0x186c3ea30  __TEXT,__text  __LSContextDestroy
+0x186c3ea80  __TEXT,__text  objc_object* __strong __LSRECORD_GETTER__<objc_object* __strong>(LSRecord*, objc_selector*, objc_selector*)
+0x186c3ec28  __TEXT,__text  -[LSApplicationRecord applicationState]
+0x186c3ec34  __TEXT,__text  LaunchServices::Record::getCachedPropertyValue(LSRecord*, objc_selector*)
+0x186c3ec78  __TEXT,__text  -[LSApplicationRecord _rawBundleFlags]
+0x186c3ec84  __TEXT,__text  unsigned long long __LSRECORD_GETTER__<unsigned long long>(LSRecord*, objc_selector*, objc_selector*)
+0x186c3ee40  __TEXT,__text  -[LSApplicationRecord applicationStateWithContext:tableID:unitID:unitBytes:]
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3ef00  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3efd4  __TEXT,__text  -[LSApplicationRecord _rawBundleFlagsWithContext:tableID:unitID:unitBytes:]
+0x186c3efdc  __TEXT,__text  LaunchServices::Record::setCachedPropertyValue(LSRecord*, objc_selector*, objc_object*)
+0x186c3f054  __TEXT,__text  _XCFBufDestroy
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f09c  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unorde
+0x186c3f1d8  __TEXT,__text  -[_LSApplicationState restrictionReason]
+0x186c3f258  __TEXT,__text  +[LSApplicationRestrictionsManager sharedInstance]
+0x186c3f294  __TEXT,__text  -[LSApplicationRecord initWithBundleIdentifier:fetchingPlaceholder:error:]
+0x186c3f2d4  __TEXT,__text  -[_LSApplicationState restrictionReasonWithStateProvider:]
+0x186c3f384  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x186c3f398  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x186c3f3a4  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x186c3f3b8  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c3f3b8  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c3f3c4  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x186c3f3e4  __TEXT,__text  -[_LSApplicationState _isRestrictedByRatingRankWithStateProvider:]
+0x186c3f490  __TEXT,__text  -[_LSApplicationState _isRatingRankActive]
+0x186c3f4ec  __TEXT,__text  -[LSAskManagerMCStateProvider .cxx_destruct]
+0x186c3f4f8  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unordered_m
+0x186c3f4f8  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unordered_m
+0x186c3f4f8  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, LSApplicationRecord* __strong>, std::__1::__unordered_map_hasher<unsigned int, std::__1::pair<unsigned int const, LSApplicationRecord* __strong>, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int> >, std::__1::__unordered_m
+0x186c3f534  __TEXT,__text  -[_LSApplicationState .cxx_destruct]
+0x186c3f540  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<_opaque_pthread_t*, std::__1::shared_ptr<LaunchServices::PerThreadContext> >, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<_opaque_pthread_t*, std::__1::shared_ptr<LaunchServices::PerThreadContext> >, std::__1
+0x186c3f540  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<_opaque_pthread_t*, std::__1::shared_ptr<LaunchServices::PerThreadContext> >, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<_opaque_pthread_t*, std::__1::shared_ptr<LaunchServices::PerThreadContext> >, std::__1
+0x186c3f540  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<_opaque_pthread_t*, std::__1::shared_ptr<LaunchServices::PerThreadContext> >, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<_opaque_pthread_t*, std::__1::shared_ptr<LaunchServices::PerThreadContext> >, std::__1
+0x186c3f540  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<_opaque_pthread_t*, std::__1::shared_ptr<LaunchServices::PerThreadContext> >, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<_opaque_pthread_t*, std::__1::shared_ptr<LaunchServices::PerThreadContext> >, std::__1
+0x186c3f540  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<_opaque_pthread_t*, std::__1::shared_ptr<LaunchServices::PerThreadContext> >, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<_opaque_pthread_t*, std::__1::shared_ptr<LaunchServices::PerThreadContext> >, std::__1
+0x186c3f540  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<_opaque_pthread_t*, std::__1::shared_ptr<LaunchServices::PerThreadContext> >, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<_opaque_pthread_t*, std::__1::shared_ptr<LaunchServices::PerThreadContext> >, std::__1
+0x186c3f620  __TEXT,__text  __LSPlistGet
+0x186c3f710  __TEXT,__text  -[LSApplicationRecord exactBundleVersion]
+0x186c3f71c  __TEXT,__text  __LSContextInit
+0x186c3f7ec  __TEXT,__text  __LSDatabaseGetSequenceNumber
+0x186c3f840  __TEXT,__text  -[LSApplicationRestrictionsManager defaultStateProvider]
+0x186c3f894  __TEXT,__text  -[LSAskManagerMCStateProvider initWithRestrictionsManager:]
+0x186c3f90c  __TEXT,__text  -[LSApplicationRestrictionsManager reasonForApplicationRestriction:checkAppStateFlags:stateProvider:]
+0x186c3f928  __TEXT,__text  _LSDatabaseGetHeader(_LSDatabase*)
+0x186c3f9d8  __TEXT,__text  unsigned char __LSRECORD_GETTER__<unsigned char>(LSRecord*, objc_selector*, objc_selector*)
+0x186c3fb94  __TEXT,__text  __LSDatabaseGetCacheGUID
+0x186c3fc08  __TEXT,__text  +[_LSLazyPropertyList(LSDatabaseUnits) lazyPropertyListWithDatabase:unit:]
+0x186c3fcf0  __TEXT,__text  +[_LSLazyPropertyList lazyPropertyListWithPropertyListData:]
+0x186c3fd54  __TEXT,__text  -[_LSDataBackedPropertyList .cxx_construct]
+0x186c3fd68  __TEXT,__text  -[_LSLazyPropertyList init]
+0x186c3fda0  __TEXT,__text  -[LSPropertyList _init]
+0x186c3fdd8  __TEXT,__text  -[_LSPlistHint completeDictionary]
+0x186c3fe0c  __TEXT,__text  __LSDatabaseGetStringArray
+0x186c3ff50  __TEXT,__text  _computeApplicationRestrictionReasonWithMCStateProvider
+0x186c400c0  __TEXT,__text  -[LSApplicationRestrictionsManager isAllowlistEnabled]
+0x186c40170  __TEXT,__text  -[LSAskManagerMCStateProvider isAllowlistEnabled]
+0x186c40178  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x186c40178  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x186c40188  __TEXT,__text  _OUTLINED_FUNCTION_17
+0x186c40188  __TEXT,__text  _OUTLINED_FUNCTION_17
+0x186c40188  __TEXT,__text  _OUTLINED_FUNCTION_17
+0x186c40188  __TEXT,__text  _OUTLINED_FUNCTION_17
+0x186c40188  __TEXT,__text  _OUTLINED_FUNCTION_17
+0x186c40188  __TEXT,__text  _OUTLINED_FUNCTION_17
+0x186c40188  __TEXT,__text  _OUTLINED_FUNCTION_17
+0x186c40188  __TEXT,__text  _OUTLINED_FUNCTION_17
+0x186c40194  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c40194  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c40194  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c401a4  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x186c401b0  __TEXT,__text  _OUTLINED_FUNCTION_17
+0x186c401b0  __TEXT,__text  _OUTLINED_FUNCTION_17
+0x186c401b0  __TEXT,__text  _OUTLINED_FUNCTION_17
+0x186c401b0  __TEXT,__text  _OUTLINED_FUNCTION_17
+0x186c401bc  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x186c401d0  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x186c401ec  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x186c401ec  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x186c401ec  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x186c401ec  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x186c401ec  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x186c401ec  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x186c401ec  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x186c401ec  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x186c401ec  __TEXT,__text  _OUTLINED_FUNCTION_14
+0x186c401fc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c401fc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c401fc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c401fc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c401fc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c4020c  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c4020c  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c4020c  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c4020c  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c4020c  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c4020c  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c4020c  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c4020c  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c4020c  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c4020c  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c4020c  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c4020c  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c4021c  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x186c40230  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x186c40240  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x186c4024c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40270  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x186c40270  __TEXT,__text  _OUTLINED_FUNCTION_10
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c40280  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x186c4028c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c4028c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c4028c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c4028c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c4028c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c4028c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c402a0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c402c0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c402d4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c402e8  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c402e8  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c40308  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c40308  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c40308  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c40308  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c40308  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c40308  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c40308  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c40308  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c40308  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c40308  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c40308  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c4031c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40330  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40344  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40368  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c4037c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c4037c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c4037c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c40390  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c403b0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c403d4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c403f4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c403f4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c403f4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c403f4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c403f4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c40414  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40414  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40414  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c40414  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c4042c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x186c4042c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x186c4042c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x186c4042c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x186c4042c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x186c4042c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x186c4042c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x186c4042c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x186c40440  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40448  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40464  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40488  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c404a8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c404c8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c404e4  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c404e4  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x186c404f8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c4050c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40524  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40524  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40524  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40524  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40538  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40558  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40574  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40588  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c405a8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c405bc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c405dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c405f4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40608  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40628  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40648  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c4065c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c4067c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40690  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c406a8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c406b8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c406cc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c406e0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40700  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40714  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40728  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x186c40740  __TEXT,__text  __LSLazyLoadObjectWithLock
+0x186c407e0  __TEXT,__text  -[LSApplicationRestrictionsManager restrictedBundleIDs]
+0x186c40808  __TEXT,__text  -[LSAskManagerMCStateProvider restrictedBundleIDs]
+0x186c40810  __TEXT,__text  __LSIsNewsBundleIdentifier
+0x186c40870  __TEXT,__text  -[LSApplicationRecord initWithBundleIdentifier:allowPlaceholder:error:]
+0x186c40878  __TEXT,__text  +[LSBundleProxy canInstantiateFromDatabase]
+0x186c408a4  __TEXT,__text  +[LSBundleRecord bundleRecordWithBundleIdentifier:allowPlaceholder:error:]
+0x186c40a60  __TEXT,__text  ____LSDatabaseGetStringArray_block_invoke
+0x186c40ad4  __TEXT,__text  -[LSBundleRecord(InfoPlist) infoDictionary]
+0x186c40ae0  __TEXT,__text  __LSFindBundleWithInfo
+0x186c40b0c  __TEXT,__text  -[LSApplicationRecord exactBundleVersionWithContext:tableID:unitID:unitBytes:]
+0x186c40b44  __TEXT,__text  -[LSApplicationRecord _rawIconFlags]
+0x186c40b50  __TEXT,__text  -[LSApplicationRecord _rawIconFlagsWithContext:tableID:unitID:unitBytes:]
+0x186c40b58  __TEXT,__text  -[LSBundleRecord URL]
+0x186c40b6c  __TEXT,__text  -[_LSDataBackedPropertyList .cxx_destruct]
+0x186c40bb4  __TEXT,__text  -[LSApplicationProxy _initWithContext:bundleUnit:applicationRecord:bundleID:resolveAndDetach:]
+0x186c40f90  __TEXT,__text  _LSPlistRestoreString(NSString*, bool*)
+0x186c41084  __TEXT,__text  _LSPlistCreateTransformed(NSDictionary<NSString*, objc_object*>*, NSString* (*)(NSString*, bool*), bool*)
+0x186c411d8  __TEXT,__text  _LSPlistLookUpCompactedStringByIndex(unsigned long)
+0x186c41240  __TEXT,__text  invocation function for block in _LSPlistCreateTransformed(NSDictionary<NSString*, objc_object*>*, NSString* (*)(NSString*, bool*), bool*)
+0x186c415e8  __TEXT,__text  ____LSPlistDataGetValuesForKeys_block_invoke
+0x186c41680  __TEXT,__text  -[_LSPlistHint setCachedValue:forKey:]
+0x186c41700  __TEXT,__text  invocation function for block in _LSPlistCreateTransformedValue(objc_object*, NSString* (*)(NSString*, bool*), bool*)
+0x186c417b8  __TEXT,__text  +[_LSQueryContext(Internal) simulateLimitedMappingForXCTests]
+0x186c417f4  __TEXT,__text  +[LSApplicationProxy applicationProxyForBundleType:identifier:isCompanion:URL:itemID:bundleUnit:]
+0x186c41b34  __TEXT,__text  -[LSApplicationRecord _initWithContext:bundleID:bundleData:error:]
+0x186c41c98  __TEXT,__text  -[LSRecord _performBlockWithContext:]
+0x186c41dc8  __TEXT,__text  ___94-[LSApplicationProxy _initWithContext:bundleUnit:applicationRecord:bundleID:resolveAndDetach:]_block_invoke
+0x186c41e0c  __TEXT,__text  -[LSApplicationRecord _iconFileNames]
+0x186c41e18  __TEXT,__text  -[LSApplicationRecord _iconFileNamesWithContext:tableID:unitID:unitBytes:]
+0x186c41e24  __TEXT,__text  -[LSBundleRecord(InfoPlist) infoDictionaryWithContext:tableID:unitID:unitBytes:]
+0x186c41f60  __TEXT,__text  -[_LSDataBackedPropertyList _plistHint]
+0x186c42008  __TEXT,__text  _LSPlistGetSubdataForFCF(NSData*, bool*)
+0x186c420a8  __TEXT,__text  _LSPlistDataIsBinary(NSData*, bool*)
+0x186c42150  __TEXT,__text  -[_LSPlistHint initWithKeys:compacted:]
+0x186c421f8  __TEXT,__text  __LSPlistDataGetValuesForKeys
+0x186c42b84  __TEXT,__text  _LSPlistLookUpIndexOfCompactedString(NSString*)
+0x186c42c04  __TEXT,__text  _LSPlistGetCommonStrings()
+0x186c42c3c  __TEXT,__text  -[_LSPlistHint cachedValueForKey:]
+0x186c42c74  __TEXT,__text  -[_LSDataBackedPropertyList _getValue:forPropertyListKey:]
+0x186c42df4  __TEXT,__text  _LSPlistCompactString(NSString*, bool*)
+0x186c42f68  __TEXT,__text  -[LSBundleProxy _initWithBundleUnit:context:bundleType:bundleID:localizedName:bundleContainerURL:resourcesDirectoryURL:iconsDictionary:iconFileNames:version:]
+0x186c438a8  __TEXT,__text  ___90-[LSApplicationRecord(Containers) bundleContainerURLWithContext:tableID:unitID:unitBytes:]_block_invoke
+0x186c4392c  __TEXT,__text  -[LSApplicationRecord(Containers) bundleContainerURLWithContext:tableID:unitID:unitBytes:]
+0x186c43a2c  __TEXT,__text  invocation function for block in _LSPlistCreateTransformedValue(objc_object*, NSString* (*)(NSString*, bool*), bool*)
+0x186c43af8  __TEXT,__text  +[_LSLazyPropertyList lazyPropertyListWithPropertyList:]
+0x186c43b7c  __TEXT,__text  -[LSApplicationRecord(Containers) bundleContainerURL]
+0x186c43b88  __TEXT,__text  -[LSRecord _resolveAllProperties]
+0x186c43dac  __TEXT,__text  -[LSRecord(Private) _resolvingMethods]
+0x186c44068  __TEXT,__text  -[_LSQueryResult(Internal) _init]
+0x186c440a0  __TEXT,__text  -[LSResourceProxy _initWithLocalizedName:]
+0x186c4416c  __TEXT,__text  -[_LSBoundIconInfo setContainerURL:]
+0x186c4417c  __TEXT,__text  -[_LSBoundIconInfo setIconsDictionary:]
+0x186c44190  __TEXT,__text  -[_LSLazyPropertyList copyWithZone:]
+0x186c44194  __TEXT,__text  -[_LSBoundIconInfo setCacheKey:]
+0x186c441a8  __TEXT,__text  __LSDatabaseContextGetDetachProxyObjects
+0x186c441cc  __TEXT,__text  -[_LSBoundIconInfo setFileNames:]
+0x186c441e0  __TEXT,__text  -[_LSBoundIconInfo setPrerendered:]
+0x186c441ec  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve__rawIconFlags]
+0x186c441f0  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) VPNPlugins]
+0x186c441fc  __TEXT,__text  +[_LSDDeviceIdentifierService vendorNameForDeviceIdentifiersWithContext:bundleUnit:bundleData:]
+0x186c443ec  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve__rawMoreFlags]
+0x186c443f0  __TEXT,__text  -[LSApplicationRecord _rawMoreFlags]
+0x186c443fc  __TEXT,__text  -[LSApplicationRecord _personasWithAttributesWithContext:tableID:unitID:unitBytes:]
+0x186c44494  __TEXT,__text  __LSBundleCopyPersonasWithAttributes
+0x186c44688  __TEXT,__text  ____LSBundleCopyPersonasWithAttributes_block_invoke
+0x186c446dc  __TEXT,__text  -[_LSPersonaWithAttributes initWithPersonaType:personaUniqueString:]
+0x186c4477c  __TEXT,__text  -[LSApplicationRecord shortVersionString]
+0x186c44788  __TEXT,__text  -[LSApplicationRecord shortVersionStringWithContext:tableID:unitID:unitBytes:]
+0x186c447c0  __TEXT,__text  -[LSApplicationRecord appClipMetadata]
+0x186c447cc  __TEXT,__text  -[LSApplicationRecord appClipMetadataWithContext:tableID:unitID:unitBytes:]
+0x186c448a4  __TEXT,__text  -[LSApplicationRecord _personasWithAttributes]
+0x186c448b0  __TEXT,__text  os_eligibility_answer_t* std::__1::vector<os_eligibility_answer_t, std::__1::allocator<os_eligibility_answer_t> >::__emplace_back_slow_path<os_eligibility_answer_t>(os_eligibility_answer_t&&)
+0x186c448b0  __TEXT,__text  os_eligibility_answer_t* std::__1::vector<os_eligibility_answer_t, std::__1::allocator<os_eligibility_answer_t> >::__emplace_back_slow_path<os_eligibility_answer_t>(os_eligibility_answer_t&&)
+0x186c448b0  __TEXT,__text  os_eligibility_answer_t* std::__1::vector<os_eligibility_answer_t, std::__1::allocator<os_eligibility_answer_t> >::__emplace_back_slow_path<os_eligibility_answer_t>(os_eligibility_answer_t&&)
+0x186c448b0  __TEXT,__text  os_eligibility_answer_t* std::__1::vector<os_eligibility_answer_t, std::__1::allocator<os_eligibility_answer_t> >::__emplace_back_slow_path<os_eligibility_answer_t>(os_eligibility_answer_t&&)
+0x186c448b0  __TEXT,__text  os_eligibility_answer_t* std::__1::vector<os_eligibility_answer_t, std::__1::allocator<os_eligibility_answer_t> >::__emplace_back_slow_path<os_eligibility_answer_t>(os_eligibility_answer_t&&)
+0x186c44aa0  __TEXT,__text  -[LSiTunesMetadata _initWithContext:bundleData:]
+0x186c44f08  __TEXT,__text  -[LSApplicationRecord(iTunesMetadata) iTunesMetadata]
+0x186c44f14  __TEXT,__text  -[LSApplicationRecord(iTunesMetadata) iTunesMetadataWithContext:tableID:unitID:unitBytes:]
+0x186c44f54  __TEXT,__text  __LSPlistDataGetDictionary
+0x186c44fd8  __TEXT,__text  -[_LSPlistHint setCompleteDictionary:]
+0x186c45028  __TEXT,__text  -[LSApplicationRecord userActivityTypes]
+0x186c45034  __TEXT,__text  -[LSApplicationRecord(MobileInstall) sensitiveDataProxy]
+0x186c45040  __TEXT,__text  -[LSApplicationRecord(MobileInstall) installType]
+0x186c4504c  __TEXT,__text  -[LSApplicationRecord(MobileInstall) installSessionIdentifier]
+0x186c45058  __TEXT,__text  -[LSApplicationRecord(InstallMachineryPrivate) typeForInstallMachinery]
+0x186c45064  __TEXT,__text  -[LSBundleRecord isLinkEnabled]
+0x186c45070  __TEXT,__text  -[LSBundleRecord _bundleDataContainerMapFromDatabase]
+0x186c4507c  __TEXT,__text  -[LSBundleRecord _localizedName]
+0x186c45088  __TEXT,__text  -[LSApplicationRecord applicationExtensionRecords]
+0x186c45094  __TEXT,__text  -[LSApplicationRecord applicationExtensionRecordsWithContext:tableID:unitID:unitBytes:]
+0x186c451a0  __TEXT,__text  -[LSBundleRecord(MobileInstallation) codeSignatureVersion]
+0x186c451ac  __TEXT,__text  -[LSBundleRecord claimRecords]
+0x186c451b8  __TEXT,__text  -[LSBundleRecord _bundleVersionWithContext:tableID:unitID:unitBytes:]
+0x186c451c8  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve__contextualFeatureUsageDescriptions]
+0x186c451e8  __TEXT,__text  -[LSBundleRecord _contextualFeatureUsageDescriptions]
+0x186c451f4  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve__bundleDataContainerMapFromDatabase]
+0x186c45214  __TEXT,__text  -[LSBundleRecord _bundleDataContainerMapFromDatabaseWithContext:tableID:unitID:unitBytes:]
+0x186c45228  __TEXT,__text  -[LSBundleRecord _bundleVersion]
+0x186c45234  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve__bundleVersion]
+0x186c45284  __TEXT,__text  +[LSBundleDataContainerMap containerMapWithDatabase:bundleBaseData:]
+0x186c454d0  __TEXT,__text  -[LSBundleDataContainerMap _initPrivately]
+0x186c45508  __TEXT,__text  +[_LSSingleContainerMap singleContainerMapWithPath:]
+0x186c455a0  __TEXT,__text  -[LSBundleRecord _contextualFeatureUsageDescriptionsWithContext:tableID:unitID:unitBytes:]
+0x186c456b0  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve__localizedName]
+0x186c456d0  __TEXT,__text  -[LSBundleRecord _localizedShortName]
+0x186c456dc  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve__localizedShortName]
+0x186c456fc  __TEXT,__text  -[LSBundleRecord _localizedShortNameWithContext:tableID:unitID:unitBytes:]
+0x186c45714  __TEXT,__text  -[LSBundleRecord _profileValidationState]
+0x186c45720  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve__profileValidationState]
+0x186c45724  __TEXT,__text  -[LSBundleRecord _rawGroupContainerURLMap]
+0x186c45730  __TEXT,__text  -[LSBundleRecord _profileValidationStateWithContext:tableID:unitID:unitBytes:]
+0x186c45738  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve__rawGroupContainerURLMap]
+0x186c45758  __TEXT,__text  -[LSBundleRecord _rawGroupContainerURLMapWithContext:tableID:unitID:unitBytes:]
+0x186c4576c  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve_claimRecords]
+0x186c4578c  __TEXT,__text  -[LSBundleRecord claimRecordsWithContext:tableID:unitID:unitBytes:]
+0x186c458bc  __TEXT,__text  -[LSBundleRecord(MobileInstallation) _LSRecord_resolve_codeSignatureVersion]
+0x186c458c0  __TEXT,__text  -[LSBundleRecord(MobileInstallation) codeSignatureVersionWithContext:tableID:unitID:unitBytes:]
+0x186c458c8  __TEXT,__text  -[LSBundleRecord(Entitlements) _LSRecord_resolve_entitlements]
+0x186c458e8  __TEXT,__text  -[LSBundleRecord execSDKVersion]
+0x186c458f4  __TEXT,__text  -[LSBundleRecord exportedTypeRecords]
+0x186c45900  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve_execSDKVersion]
+0x186c45950  __TEXT,__text  -[LSBundleRecord execSDKVersionWithContext:tableID:unitID:unitBytes:]
+0x186c45960  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve_isLinkEnabled]
+0x186c45964  __TEXT,__text  -[LSBundleRecord isLinkEnabledWithContext:tableID:unitID:unitBytes:]
+0x186c45970  __TEXT,__text  LSVersionNumber __LSRECORD_GETTER__<LSVersionNumber>(LSRecord*, objc_selector*, objc_selector*)
+0x186c45b98  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve_executableURL]
+0x186c45bb8  __TEXT,__text  -[LSBundleRecord executableURLWithContext:tableID:unitID:unitBytes:]
+0x186c45cd4  __TEXT,__text  -[LSBundleRecord developerType]
+0x186c45cf8  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve_developerType]
+0x186c45cfc  __TEXT,__text  LSBundleBaseFlags __LSRECORD_GETTER__<LSBundleBaseFlags>(LSRecord*, objc_selector*, objc_selector*)
+0x186c45ec8  __TEXT,__text  -[LSBundleRecord _baseFlags]
+0x186c45ed4  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve__baseFlags]
+0x186c45ed8  __TEXT,__text  -[LSBundleRecord _baseFlagsWithContext:tableID:unitID:unitBytes:]
+0x186c45ee0  __TEXT,__text  -[LSApplicationRecord userActivityTypesWithContext:tableID:unitID:unitBytes:]
+0x186c45f50  __TEXT,__text  -[LSApplicationRecord(MobileInstall) uniqueInstallIdentifier]
+0x186c45f5c  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) requiredDeviceCapabilities]
+0x186c45f68  __TEXT,__text  -[LSApplicationRecord(Gaming) supportedGameControllers]
+0x186c45f74  __TEXT,__text  -[LSBundleRecord developerTypeWithContext:tableID:unitID:unitBytes:]
+0x186c46094  __TEXT,__text  LaunchServices::LocalizedString::Get(_LSDatabase*, unsigned int)
+0x186c4619c  __TEXT,__text  ___86-[LSApplicationRecord _localizedNamesWithContextWithContext:tableID:unitID:unitBytes:]_block_invoke
+0x186c46260  __TEXT,__text  -[_LSLocalizedStringRecord _initWithContext:unitID:]
+0x186c462f8  __TEXT,__text  -[LSBundleRecord _localizedNameWithContext:tableID:unitID:unitBytes:]
+0x186c46310  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve__personasWithAttributes]
+0x186c46330  __TEXT,__text  _isFeatureAllowed
+0x186c46384  __TEXT,__text  _getSharedMCProfileConnection
+0x186c463ec  __TEXT,__text  _MCProfileConnectionFunction
+0x186c463f8  __TEXT,__text  -[LSApplicationRestrictionsManager isSystemAppDeletionEnabled]
+0x186c46454  __TEXT,__text  _MCFeatureSystemAppRemovalAllowedFunction
+0x186c46460  __TEXT,__text  -[LSApplicationRestrictionsManager isFeatureAllowed:]
+0x186c46468  __TEXT,__text  -[_LSPlistHint .cxx_destruct]
+0x186c464a0  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve__iconFileNames]
+0x186c464c0  __TEXT,__text  -[LSApplicationRecord _rawMoreFlagsWithContext:tableID:unitID:unitBytes:]
+0x186c464c8  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve__bundleModTime]
+0x186c464cc  __TEXT,__text  unsigned int __LSRECORD_GETTER__<unsigned int>(LSRecord*, objc_selector*, objc_selector*)
+0x186c46688  __TEXT,__text  -[LSApplicationRecord _defaultCategoryTypeIdentifiers]
+0x186c46694  __TEXT,__text  -[LSApplicationRecord _defaultCategoryTypeIdentifiersWithContext:tableID:unitID:unitBytes:]
+0x186c46778  __TEXT,__text  LSBundleMoreFlags __LSRECORD_GETTER__<LSBundleMoreFlags>(LSRecord*, objc_selector*, objc_selector*)
+0x186c46944  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) _LSRecord_resolve_VPNPlugins]
+0x186c46964  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) VPNPluginsWithContext:tableID:unitID:unitBytes:]
+0x186c46ac8  __TEXT,__text  -[LSApplicationRecord _bundleModTime]
+0x186c46ad4  __TEXT,__text  -[LSApplicationRecord _bundleModTimeWithContext:tableID:unitID:unitBytes:]
+0x186c46adc  __TEXT,__text  __LSBundleDataGetModTime
+0x186c46ae0  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve__defaultCategoryTypeIdentifiers]
+0x186c46b00  __TEXT,__text  -[LSApplicationRecord _deviceIdentifierVendorName]
+0x186c46b0c  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve__deviceIdentifierVendorName]
+0x186c46b2c  __TEXT,__text  -[LSApplicationRecord _deviceIdentifierVendorNameWithContext:tableID:unitID:unitBytes:]
+0x186c46b40  __TEXT,__text  -[LSBundleRecord(Entitlements) entitlements]
+0x186c46b4c  __TEXT,__text  -[LSBundleRecord(Entitlements) entitlementsWithContext:tableID:unitID:unitBytes:]
+0x186c46bf8  __TEXT,__text  -[LSApplicationRecord _linkedParentApplicationBundleID]
+0x186c46c04  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve__linkedParentApplicationBundleID]
+0x186c46c24  __TEXT,__text  -[LSApplicationRecord _linkedParentApplicationBundleIDWithContext:tableID:unitID:unitBytes:]
+0x186c46c5c  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve__localizedNamesWithContext]
+0x186c46c7c  __TEXT,__text  -[LSApplicationRecord _localizedNamesWithContext]
+0x186c46c88  __TEXT,__text  -[LSApplicationRecord _localizedNamesWithContextWithContext:tableID:unitID:unitBytes:]
+0x186c46d88  __TEXT,__text  __LSBundleDisplayNameContextEnumerate
+0x186c46e50  __TEXT,__text  -[LSApplicationRecord(InstallMachineryPrivate) typeForInstallMachineryWithContext:tableID:unitID:unitBytes:]
+0x186c46e88  __TEXT,__text  -[LSApplicationRecord(InstallMachineryPrivate) _LSRecord_resolve_typeForInstallMachinery]
+0x186c46ea8  __TEXT,__text  -[LSApplicationRecord(MobileInstall) _LSRecord_resolve_uniqueInstallIdentifier]
+0x186c46ec8  __TEXT,__text  -[LSApplicationRecord(MobileInstall) uniqueInstallIdentifierWithContext:tableID:unitID:unitBytes:]
+0x186c46f30  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_userActivityTypes]
+0x186c46f50  __TEXT,__text  -[LSBundleRecord executableURL]
+0x186c46f5c  __TEXT,__text  -[LSApplicationRecord(MobileInstall) _LSRecord_resolve_sensitiveDataProxy]
+0x186c46f7c  __TEXT,__text  -[LSApplicationRecord(MobileInstall) sensitiveDataProxyWithContext:tableID:unitID:unitBytes:]
+0x186c46fcc  __TEXT,__text  -[LSApplicationRecord(MobileInstall) serializedPlaceholderURL]
+0x186c46fd8  __TEXT,__text  -[LSApplicationRecord(MobileInstall) _LSRecord_resolve_serializedPlaceholderURL]
+0x186c46ff8  __TEXT,__text  -[LSApplicationRecord(MobileInstall) serializedPlaceholderURLWithContext:tableID:unitID:unitBytes:]
+0x186c47074  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_shortVersionString]
+0x186c47094  __TEXT,__text  -[LSApplicationRecord(MobileInstall) stashedAppMetadata]
+0x186c470a0  __TEXT,__text  -[LSApplicationRecord(MobileInstall) _LSRecord_resolve_stashedAppMetadata]
+0x186c470c0  __TEXT,__text  -[LSApplicationRecord(MobileInstall) stashedAppMetadataWithContext:tableID:unitID:unitBytes:]
+0x186c47110  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) staticShortcutItems]
+0x186c4711c  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) _LSRecord_resolve_staticShortcutItems]
+0x186c4713c  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) staticShortcutItemsWithContext:tableID:unitID:unitBytes:]
+0x186c471c8  __TEXT,__text  -[LSApplicationRecord(Gaming) _LSRecord_resolve_supportedGameControllers]
+0x186c471e8  __TEXT,__text  -[LSApplicationRecord(Gaming) supportedGameControllersWithContext:tableID:unitID:unitBytes:]
+0x186c472e4  __TEXT,__text  -[LSApplicationRecord isSystemPlaceholder]
+0x186c472f0  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_isSystemPlaceholder]
+0x186c472f4  __TEXT,__text  -[LSApplicationRecord isSystemPlaceholderWithContext:tableID:unitID:unitBytes:]
+0x186c47304  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_managementDomain]
+0x186c47324  __TEXT,__text  -[LSApplicationRecord managementDomainWithContext:tableID:unitID:unitBytes:]
+0x186c47370  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_maximumSystemVersion]
+0x186c47390  __TEXT,__text  -[LSApplicationRecord maximumSystemVersionWithContext:tableID:unitID:unitBytes:]
+0x186c473f0  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_minimumSystemVersion]
+0x186c47410  __TEXT,__text  -[LSApplicationRecord minimumSystemVersionWithContext:tableID:unitID:unitBytes:]
+0x186c47474  __TEXT,__text  -[LSApplicationRecord(MobileInstall) _LSRecord_resolve_placeholderFailureReason]
+0x186c47478  __TEXT,__text  -[LSApplicationRecord(MobileInstall) placeholderFailureReasonWithContext:tableID:unitID:unitBytes:]
+0x186c47480  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) regulatoryPrivacyDisclosureVersionWithContext:tableID:unitID:unitBytes:]
+0x186c4751c  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) _LSRecord_resolve_requiredDeviceCapabilities]
+0x186c4753c  __TEXT,__text  -[LSApplicationRecord _preferredLaunchArchitecture]
+0x186c47548  __TEXT,__text  -[LSApplicationRecord _preferredLaunchArchitectureWithContext:tableID:unitID:unitBytes:]
+0x186c47554  __TEXT,__text  __LSBundleGetPreferredLaunchArchitecture
+0x186c47604  __TEXT,__text  __LSBundleCopyArchitecturesValidOnCurrentSystem
+0x186c47918  __TEXT,__text  _LSBundleCopyArchitectures_Common(LSBundleData const*, NSArray<NSString*>*)
+0x186c47b84  __TEXT,__text  __LSEnumerateSliceMask
+0x186c47c38  __TEXT,__text  invocation function for block in _LSBundleCopyArchitectures_Common(LSBundleData const*, NSArray<NSString*>*)
+0x186c47c8c  __TEXT,__text  void std::__1::__introsort<std::__1::_ClassicAlgPolicy, _LSBundleCopyArchitectures_Common(LSBundleData const*, NSArray<NSString*>*)::$_0&, LSSliceData*, false>(LSSliceData*, LSSliceData*, _LSBundleCopyArchitectures_Common(LSBundleData const*, NSArray<NSString*>*)::$_0&, std::__1::iterator_traits<LSS
+0x186c4883c  __TEXT,__text  __LSGetCPUType
+0x186c48874  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) appTags]
+0x186c48880  __TEXT,__text  -[LSApplicationRecord _rawPlistFlagsWithContext:tableID:unitID:unitBytes:]
+0x186c48888  __TEXT,__text  -[LSApplicationRecord minimumSystemVersion]
+0x186c48894  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) regulatoryPrivacyDisclosureVersion]
+0x186c488a0  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve__preferredLaunchArchitecture]
+0x186c488c0  __TEXT,__text  -[LSApplicationRecord(MobileInstall) placeholderFailureReason]
+0x186c488cc  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) _LSRecord_resolve_regulatoryPrivacyDisclosureVersion]
+0x186c488ec  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x186c48900  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x186c48910  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x186c48924  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x186c48938  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x186c48938  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x186c48944  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x186c48950  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x186c48964  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x186c48970  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x186c48994  __TEXT,__text  __LSBundleGetSystemApplicationTypes
+0x186c489cc  __TEXT,__text  _LSPlistGetValueForKey(_LSDatabase*, unsigned int, NSString*, _LSPlistHint*)
+0x186c48a54  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve__rawBundleFlags]
+0x186c48a58  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_appClipMetadata]
+0x186c48a78  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_appProtectionHidden]
+0x186c48a7c  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_appProtectionLocked]
+0x186c48a80  __TEXT,__text  -[LSApplicationRecord appStoreToolsBuildVersion]
+0x186c48a8c  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) _LSRecord_resolve_appTags]
+0x186c48aac  __TEXT,__text  -[LSApplicationRecord _rawPlistFlags]
+0x186c48ab8  __TEXT,__text  bool __LSRECORD_GETTER__<bool>(LSRecord*, objc_selector*, objc_selector*)
+0x186c48cac  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) requiredDeviceCapabilitiesWithContext:tableID:unitID:unitBytes:]
+0x186c48ef8  __TEXT,__text  -[LSApplicationRecord appProtectionLocked]
+0x186c48f04  __TEXT,__text  __LSGetCurrentSystemVersion
+0x186c48f4c  __TEXT,__text  -[LSApplicationRecord(AlternateIconsInternal) _LSRecord_resolve__rawIconDictionary]
+0x186c48f6c  __TEXT,__text  -[LSApplicationRecord(AlternateIconsInternal) _rawIconDictionary]
+0x186c48f78  __TEXT,__text  -[LSApplicationRecord(AlternateIconsInternal) _rawIconDictionaryWithContext:tableID:unitID:unitBytes:]
+0x186c48f88  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve__rawPlistFlags]
+0x186c48f8c  __TEXT,__text  -[LSApplicationRecord appProtectionHidden]
+0x186c48f98  __TEXT,__text  -[LSApplicationRecord appProtectionHiddenWithContext:tableID:unitID:unitBytes:]
+0x186c48fa4  __TEXT,__text  -[LSApplicationRecord appProtectionLockedWithContext:tableID:unitID:unitBytes:]
+0x186c48fb0  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_appStoreToolsBuildVersion]
+0x186c48fd0  __TEXT,__text  -[LSApplicationRecord appStoreToolsBuildVersionWithContext:tableID:unitID:unitBytes:]
+0x186c49028  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) appTagsWithContext:tableID:unitID:unitBytes:]
+0x186c490bc  __TEXT,__text  -[LSApplicationRecord(watchOS) companionBundleIdentifier]
+0x186c490c8  __TEXT,__text  -[LSApplicationRecord compatibilityState]
+0x186c490d4  __TEXT,__text  -[LSApplicationRecord compatibilityStateWithContext:tableID:unitID:unitBytes:]
+0x186c490e0  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_counterpartIdentifiers]
+0x186c49100  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) _LSRecord_resolve_deviceFamilies]
+0x186c49120  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) deviceFamiliesWithContext:tableID:unitID:unitBytes:]
+0x186c49218  __TEXT,__text  -[LSApplicationRecord counterpartIdentifiers]
+0x186c49224  __TEXT,__text  -[LSApplicationRecord counterpartIdentifiersWithContext:tableID:unitID:unitBytes:]
+0x186c49230  __TEXT,__text  -[LSApplicationRecord(IconServices) _LSRecord_resolve_iconDictionary]
+0x186c49250  __TEXT,__text  -[LSApplicationRecord(MobileInstall) _LSRecord_resolve_installSessionIdentifier]
+0x186c49270  __TEXT,__text  -[LSApplicationRecord(MobileInstall) installSessionIdentifierWithContext:tableID:unitID:unitBytes:]
+0x186c492d8  __TEXT,__text  -[LSApplicationRecord(MobileInstall) _LSRecord_resolve_installType]
+0x186c492dc  __TEXT,__text  -[LSApplicationRecord(MobileInstall) installTypeWithContext:tableID:unitID:unitBytes:]
+0x186c492e4  __TEXT,__text  -[LSApplicationRecord(IconServices) iconDictionary]
+0x186c492f0  __TEXT,__text  -[LSApplicationRecord(IconServices) iconDictionaryWithContext:tableID:unitID:unitBytes:]
+0x186c49548  __TEXT,__text  -[LSApplicationRecord isAppStoreVendable]
+0x186c49554  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_isAppStoreVendable]
+0x186c49558  __TEXT,__text  -[LSApplicationRecord isAppStoreVendableWithContext:tableID:unitID:unitBytes:]
+0x186c49658  __TEXT,__text  -[LSApplicationRecord maximumSystemVersion]
+0x186c49664  __TEXT,__text  -[LSApplicationRecord managementDomain]
+0x186c49670  __TEXT,__text  -[LSApplicationRecord diskUsage]
+0x186c4967c  __TEXT,__text  -[LSApplicationRecord carPlayInstrumentClusterURLSchemes]
+0x186c49688  __TEXT,__text  -[LSApplicationRecord equivalentBundleIdentifiers]
+0x186c49694  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_applicationExtensionRecords]
+0x186c496b4  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_applicationState]
+0x186c496d4  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) audioComponents]
+0x186c496e0  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) _LSRecord_resolve_audioComponents]
+0x186c49700  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) audioComponentsWithContext:tableID:unitID:unitBytes:]
+0x186c49794  __TEXT,__text  -[LSApplicationRecord backgroundTaskSchedulerPermittedIdentifiers]
+0x186c497a0  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_backgroundTaskSchedulerPermittedIdentifiers]
+0x186c497c0  __TEXT,__text  -[LSApplicationRecord backgroundTaskSchedulerPermittedIdentifiersWithContext:tableID:unitID:unitBytes:]
+0x186c49810  __TEXT,__text  -[LSApplicationRecord(Containers) _LSRecord_resolve_bundleContainerURL]
+0x186c49830  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_carPlayInstrumentClusterURLSchemes]
+0x186c49850  __TEXT,__text  -[LSApplicationRecord carPlayInstrumentClusterURLSchemesWithContext:tableID:unitID:unitBytes:]
+0x186c498a0  __TEXT,__text  -[LSApplicationRecord(watchOS) _LSRecord_resolve_companionBundleIdentifier]
+0x186c498c0  __TEXT,__text  -[LSApplicationRecord(watchOS) companionBundleIdentifierWithContext:tableID:unitID:unitBytes:]
+0x186c498c8  __TEXT,__text  unsigned long __LSRECORD_GETTER__<unsigned long>(LSRecord*, objc_selector*, objc_selector*)
+0x186c49a84  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_compatibilityState]
+0x186c49a88  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) deviceFamilies]
+0x186c49a94  __TEXT,__text  ___93-[LSApplicationRecord(InfoPlistRarities) deviceFamiliesWithContext:tableID:unitID:unitBytes:]_block_invoke
+0x186c49af8  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) _LSRecord_resolve_directionsModes]
+0x186c49b18  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) directionsModes]
+0x186c49b24  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) directionsModesWithContext:tableID:unitID:unitBytes:]
+0x186c49bb8  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_diskUsage]
+0x186c49bd8  __TEXT,__text  -[LSApplicationRecord diskUsageWithContext:tableID:unitID:unitBytes:]
+0x186c49d4c  __TEXT,__text  -[LSApplicationRecord driverExtensionPaths]
+0x186c49d58  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_driverExtensionPaths]
+0x186c49d78  __TEXT,__text  -[LSApplicationRecord driverExtensionPathsWithContext:tableID:unitID:unitBytes:]
+0x186c49d84  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_equivalentBundleIdentifiers]
+0x186c49da4  __TEXT,__text  -[LSApplicationRecord equivalentBundleIdentifiersWithContext:tableID:unitID:unitBytes:]
+0x186c49db0  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_exactBundleVersion]
+0x186c49dd0  __TEXT,__text  -[LSApplicationRecord extensionPointRecords]
+0x186c49ddc  __TEXT,__text  -[LSApplicationRecord _LSRecord_resolve_extensionPointRecords]
+0x186c49dfc  __TEXT,__text  -[LSApplicationRecord extensionPointRecordsWithContext:tableID:unitID:unitBytes:]
+0x186c49ef8  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) externalAccessoryProtocols]
+0x186c49f04  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) _LSRecord_resolve_externalAccessoryProtocols]
+0x186c49f24  __TEXT,__text  -[LSApplicationRecord(InfoPlistRarities) externalAccessoryProtocolsWithContext:tableID:unitID:unitBytes:]
+0x186c49fb8  __TEXT,__text  -[LSApplicationRecord(iTunesMetadata) _LSRecord_resolve_iTunesMetadata]
+0x186c49fd8  __TEXT,__text  -[LSBundleRecord _cachedDataContainerURLMap]
+0x186c4a17c  __TEXT,__text  -[LSApplicationRecord additionalEnvironmentVariables]
+0x186c4a1c8  __TEXT,__text  __LSCopyCacheableDataContainerMapForBundleWithIdentifier
+0x186c4a320  __TEXT,__text  -[_LSPersonaWithAttributes personaType]
+0x186c4a32c  __TEXT,__text  -[LSBundleRecord(Containers) dataContainerURL]
+0x186c4a360  __TEXT,__text  -[LSBundleRecord(Redaction) isRedacted]
+0x186c4a378  __TEXT,__text  -[LSApplicationRecord _containerClass]
+0x186c4a380  __TEXT,__text  __LSCopyEnvironmentVariablesFromDataContainerURL
+0x186c4a50c  __TEXT,__text  -[LSApplicationRecord managedPersonas]
+0x186c4a5b8  __TEXT,__text  XNSArrayByMappingBlock(NSArray*, objc_object*  block_pointer(objc_object*))
+0x186c4a760  __TEXT,__text  -[LSRecord persistentIdentifier]
+0x186c4a774  __TEXT,__text  __LSDatabaseGetCacheGUIDBytes
+0x186c4a7d4  __TEXT,__text  -[LSApplicationRecord _persistentIdentifierWithContext:tableID:unitID:unitBytes:]
+0x186c4a878  __TEXT,__text  __LSPersistentIdentifierDataMake
+0x186c4a894  __TEXT,__text  -[LSRecord(SubclassResponsibilities) _persistentIdentifierWithContext:tableID:unitID:unitBytes:]
+0x186c4a918  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x186c4a924  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x186c4a924  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x186c4a934  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x186c4a940  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x186c4a940  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x186c4a954  __TEXT,__text  -[LSDatabaseContext canAccess]
+0x186c4a974  __TEXT,__text  -[LSApplicationWorkspace getKnowledgeUUID:andSequenceNumber:]
+0x186c4ab9c  __TEXT,__text  __LSMakeNSErrorImpl
+0x186c4accc  __TEXT,__text  _LSMakeNSErrorDomainUserInfoWithExtras(char const*, char const*, int)
+0x186c4ae64  __TEXT,__text  ___44-[LSBundleRecord _cachedDataContainerURLMap]_block_invoke
+0x186c4ae6c  __TEXT,__text  -[LSApplicationRecord jobLabel]
+0x186c4ae78  __TEXT,__text  -[LSBundleRecord(Containers) getDataContainerURL:error:]
+0x186c4b0a4  __TEXT,__text  -[LSApplicationRecord _containerized]
+0x186c4b0c0  __TEXT,__text  __LSPreferDataContainerURLFromDatabase
+0x186c4b224  __TEXT,__text  -[LSApplicationRecord(AlternateIcons) alternateIconName]
+0x186c4b344  __TEXT,__text  -[_LSApplicationState isInstalled]
+0x186c4b350  __TEXT,__text  -[_LSDefaults isServer]
+0x186c4b35c  __TEXT,__text  -[FSNode(BookmarkData) initByResolvingBookmarkData:options:relativeToNode:bookmarkDataIsStale:error:]
+0x186c4b558  __TEXT,__text  __LSShouldAbortPersonaRequest
+0x186c4b718  __TEXT,__text  -[LSApplicationExtensionRecord initWithBundleIdentifier:error:]
+0x186c4b728  __TEXT,__text  -[LSApplicationExtensionRecord initWithBundleIdentifier:requireValid:platform:error:]
+0x186c4b7b8  __TEXT,__text  -[LSApplicationExtensionRecord _initWithUUID:node:bundleIdentifier:platform:context:requireValid:allowRedacted:error:]
+0x186c4ba1c  __TEXT,__text  findPluginDataInContext(LSContext*, NSUUID*, FSNode*, NSString*, bool, unsigned int, unsigned int*, NSError* __autoreleasing*)
+0x186c4bb74  __TEXT,__text  invocation function for block in findPluginDataInContext(LSContext*, NSUUID*, FSNode*, NSString*, bool, unsigned int, unsigned int*, NSError* __autoreleasing*)
+0x186c4bc24  __TEXT,__text  __LSPluginFindWithPlatformInfo
+0x186c4c458  __TEXT,__text  _XCFBufInit
+0x186c4c478  __TEXT,__text  -[LSApplicationExtensionRecord .cxx_destruct]
+0x186c4c488  __TEXT,__text  -[LSiTunesMetadata .cxx_destruct]
+0x186c4c52c  __TEXT,__text  -[LSRecord detach]
+0x186c4c6cc  __TEXT,__text  -[LSRecord _resolvedPropertyValueForGetter:nullPlaceholder:]
+0x186c4c778  __TEXT,__text  +[LSApplicationProxy applicationProxyForIdentifier:]
+0x186c4c794  __TEXT,__text  -[_LSPersonaWithAttributes .cxx_destruct]
+0x186c4c7a0  __TEXT,__text  -[_LSPersonaWithAttributes personaUniqueString]
+0x186c4c7ac  __TEXT,__text  -[_LSApplicationState isValid]
+0x186c4c7b8  __TEXT,__text  -[LSApplicationRecord(Identities) identities]
+0x186c4ca54  __TEXT,__text  ___45-[LSApplicationRecord(Identities) identities]_block_invoke
+0x186c4ca94  __TEXT,__text  -[LSApplicationIdentity initForRecord:personaWithAttributes:]
+0x186c4cba0  __TEXT,__text  computeIdentityBookmark(LSApplicationRecord*)
+0x186c4cc10  __TEXT,__text  -[LSBundleIdentity isEqual:]
+0x186c4ccb8  __TEXT,__text  computeIdentityString(LSApplicationRecord*, _LSPersonaWithAttributes*)
+0x186c4cd70  __TEXT,__text  computeIdentityString(NSString*, NSURL*, _LSPersonaWithAttributes*)
+0x186c4cf44  __TEXT,__text  -[LSBundleIdentity initWithIdentityString:personaUniqueString:personaType:]
+0x186c4cfe8  __TEXT,__text  -[LSBundleIdentity hash]
+0x186c4cff0  __TEXT,__text  -[LSApplicationRecord isPlaceholder]
+0x186c4d00c  __TEXT,__text  -[_LSDefaults hasServer]
+0x186c4d030  __TEXT,__text  +[LSBundleGroupContainerMap containerMapWithDatabase:bundleBaseData:]
+0x186c4d1e4  __TEXT,__text  -[_LSDefaults isInXCTestRigInsecure]
+0x186c4d1ec  __TEXT,__text  +[LSDatabaseContext sharedDatabaseContext]
+0x186c4d224  __TEXT,__text  -[FSNode URL]
+0x186c4d2b8  __TEXT,__text  -[LSBundleRecord isEqual:]
+0x186c4d388  __TEXT,__text  -[_LSBindingForLog initWithState:binding:]
+0x186c4d41c  __TEXT,__text  +[FSNode(BookmarkData) getFileSystemRepresentation:forBookmarkData:]
+0x186c4d4a8  __TEXT,__text  -[LSBundleRecord hash]
+0x186c4d4f0  __TEXT,__text  -[LSRecord _resolvedPropertyValueForGetter:]
+0x186c4d4f8  __TEXT,__text  -[_LSLazyGroupContainerMap initWithLazyPropertyList:]
+0x186c4d57c  __TEXT,__text  -[LSApplicationProxy appState]
+0x186c4d620  __TEXT,__text  -[_LSDefaults proxyUIDForCurrentEffectiveUID]
+0x186c4d6e0  __TEXT,__text  -[FSNode(BookmarkData) initByResolvingBookmarkData:relativeToNode:bookmarkDataIsStale:error:]
+0x186c4d6f4  __TEXT,__text  -[_LSApplicationState initWithBundleIdentifier:stateFlags:ratingRank:ratingRankEligibilityDomain:installType:]
+0x186c4d7b4  __TEXT,__text  -[LSApplicationIdentity findApplicationRecordWithError:]
+0x186c4d7c0  __TEXT,__text  +[_LSLazyPropertyList(LSDatabaseUnits) lazyPropertyListWithContext:unit:]
+0x186c4d7cc  __TEXT,__text  -[FSNode initWithURL:flags:error:]
+0x186c4dbd8  __TEXT,__text  -[LSBundleRecord bundleIdentifier]
+0x186c4dbe8  __TEXT,__text  _UMUserManagerFunction
+0x186c4dbf4  __TEXT,__text  _UMUserManagerFunction
+0x186c4dc00  __TEXT,__text  ___38-[LSApplicationRecord managedPersonas]_block_invoke
+0x186c4dc08  __TEXT,__text  -[_LSDService replacementObjectForXPCConnection:encoder:object:]
+0x186c4dc10  __TEXT,__text  __LSDServiceGetXPCConnection
+0x186c4dde0  __TEXT,__text  LaunchServices::_LSLazyLoadObjectForKeyWithLock(NSMutableDictionary*, objc_object*, LaunchServices::unfair_lock_mutex&, objc_object*  block_pointer())
+0x186c4dee4  __TEXT,__text  __LSNSXPCConnectionMayMapDatabase_Cached
+0x186c4dfb4  __TEXT,__text  _LSDServiceReplaceObject(objc_object*)
+0x186c4e070  __TEXT,__text  -[_LSDServiceDomain connectionConfigurationStateForServiceClass:]
+0x186c4e268  __TEXT,__text  invocation function for block in _LSSessionInitMemoryWarningListener()
+0x186c4e308  __TEXT,__text  __LSSchemaClearLocalizedCaches
+0x186c4e314  __TEXT,__text  __LSSchemaCacheWrite
+0x186c4e39c  __TEXT,__text  ____LSSchemaClearLocalizedCaches_block_invoke
+0x186c4e3a0  __TEXT,__text  __UTTypeGetTypeWindowsExecutable
+0x186c4e404  __TEXT,__text  _UTTypeGetCachedType(_LSDatabase*, __CFString const*, unsigned int*)
+0x186c4e46c  __TEXT,__text  +[LSApplicationWorkspace defaultWorkspace]
+0x186c4e500  __TEXT,__text  -[LSApplicationRecord(AlternateIcons) supportsAlternateIconNames]
+0x186c4e51c  __TEXT,__text  -[LSApplicationExtensionRecord extensionPointRecord]
+0x186c4e528  __TEXT,__text  -[LSApplicationExtensionRecord extensionPointRecordWithContext:tableID:unitID:unitBytes:]
+0x186c4e5b0  __TEXT,__text  __LSExtensionPointFindWithStringID
+0x186c4e838  __TEXT,__text  ____LSExtensionPointFindWithStringID_block_invoke
+0x186c4e8f8  __TEXT,__text  __LSGetExtensionPointData
+0x186c4e980  __TEXT,__text  -[LSExtensionPointRecord identifier]
+0x186c4e98c  __TEXT,__text  -[LSExtensionPointRecord identifierWithContext:tableID:unitID:unitBytes:]
+0x186c4e9c4  __TEXT,__text  -[LSApplicationExtensionRecord uniqueIdentifier]
+0x186c4e9d0  __TEXT,__text  __LSCopyExecutableURLForAuditToken
+0x186c4ead0  __TEXT,__text  -[FSNode isDirectory]
+0x186c4eb00  __TEXT,__text  +[LSBundleRecord _bundleRecordForAuditToken:checkNSBundleMainBundle:error:]
+0x186c4eff8  __TEXT,__text  __LSCopyBundleURLForAuditToken
+0x186c4f13c  __TEXT,__text  ___75+[LSBundleRecord _bundleRecordForAuditToken:checkNSBundleMainBundle:error:]_block_invoke
+0x186c4f1c4  __TEXT,__text  +[LSBundleRecord _getBundleRecordFinderForNode:]
+0x186c4f2c0  __TEXT,__text  ___48+[LSBundleRecord _getBundleRecordFinderForNode:]_block_invoke
+0x186c4f2f8  __TEXT,__text  __LSGetBundleClassForNode
+0x186c4f5b4  __TEXT,__text  _FSNodeGetSimpleBoolValue(FSNode*, NSString*, unsigned long long, unsigned long long)
+0x186c4f7d4  __TEXT,__text  -[LSiTunesMetadata genreIdentifier]
+0x186c4f7dc  __TEXT,__text  -[LSBundleProxy bundleExecutable]
+0x186c4f7f0  __TEXT,__text  -[FSNode getResourceValue:forKey:options:error:]
+0x186c4fb38  __TEXT,__text  -[LSClaimRecord handlerRank]
+0x186c4fb44  __TEXT,__text  -[LSClaimRecord URLSchemes]
+0x186c4fb50  __TEXT,__text  -[LSClaimRecord role]
+0x186c4fb5c  __TEXT,__text  -[LSiTunesMetadata genre]
+0x186c4fb64  __TEXT,__text  ___69-[LSBundleRecord exported:typesWithContext:tableID:unitID:unitBytes:]_block_invoke
+0x186c4fc30  __TEXT,__text  __UTTypeGet
+0x186c4fca8  __TEXT,__text  -[_UTDeclaredTypeRecord identifier]
+0x186c4fcb4  __TEXT,__text  -[_UTDeclaredTypeRecord identifierWithContext:tableID:unitID:unitBytes:]
+0x186c4fcec  __TEXT,__text  ___87-[LSApplicationRecord applicationExtensionRecordsWithContext:tableID:unitID:unitBytes:]_block_invoke
+0x186c4fdd0  __TEXT,__text  __LSGetPlugin
+0x186c4fe58  __TEXT,__text  -[LSApplicationExtensionRecord _initWithContext:pluginID:pluginData:error:]
+0x186c4ffc0  __TEXT,__text  ___93-[LSBundleRecord _initWithNode:bundleIdentifier:context:tableID:unitID:bundleBaseData:error:]_block_invoke
+0x186c50040  __TEXT,__text  invocation function for block in _LSPlistCreateTransformedValue(objc_object*, NSString* (*)(NSString*, bool*), bool*)
+0x186c500c8  __TEXT,__text  __LSClaimGet
+0x186c50140  __TEXT,__text  ___67-[LSBundleRecord claimRecordsWithContext:tableID:unitID:unitBytes:]_block_invoke
+0x186c501f8  __TEXT,__text  -[_LSDataBackedPropertyList allKeys]
+0x186c502b0  __TEXT,__text  __LSPlistHintCopyRestoredKeys
+0x186c502cc  __TEXT,__text  -[LSBundleGroupContainerMap _initPrivately]
+0x186c50304  __TEXT,__text  invocation function for block in _LSPlistCreateTransformedValue(objc_object*, NSString* (*)(NSString*, bool*), bool*)
+0x186c50390  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve_exportedTypeRecords]
+0x186c503b0  __TEXT,__text  -[LSBundleRecord exportedTypeRecordsWithContext:tableID:unitID:unitBytes:]
+0x186c503c8  __TEXT,__text  -[LSBundleRecord exported:typesWithContext:tableID:unitID:unitBytes:]
+0x186c50508  __TEXT,__text  -[LSBundleRecord importedTypeRecords]
+0x186c50514  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve_importedTypeRecords]
+0x186c50534  __TEXT,__text  -[LSBundleRecord importedTypeRecordsWithContext:tableID:unitID:unitBytes:]
+0x186c5054c  __TEXT,__text  -[LSBundleRecord(Intents) intentDefinitionURLsWithContext:tableID:unitID:unitBytes:]
+0x186c50674  __TEXT,__text  -[LSBundleRecord(Intents) intentDefinitionURLs]
+0x186c50680  __TEXT,__text  -[LSBundleRecord(InfoPlist) _LSRecord_resolve_infoDictionary]
+0x186c506a0  __TEXT,__text  -[LSBundleRecord(Intents) _LSRecord_resolve_intentDefinitionURLs]
+0x186c506c0  __TEXT,__text  -[LSBundleRecord isAppleInternalWithContext:tableID:unitID:unitBytes:]
+0x186c506cc  __TEXT,__text  -[LSBundleRecord machOUUIDs]
+0x186c506d8  __TEXT,__text  -[_LSDataBackedPropertyList _getPropertyList:]
+0x186c50790  __TEXT,__text  -[_LSLazyPropertyList propertyList]
+0x186c507c8  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve_isAppleInternal]
+0x186c507cc  __TEXT,__text  -[LSBundleRecord isAppleInternal]
+0x186c507d8  __TEXT,__text  ___84-[LSBundleRecord(Intents) intentDefinitionURLsWithContext:tableID:unitID:unitBytes:]_block_invoke
+0x186c5085c  __TEXT,__text  -[LSBundleRecord(MobileInstallation) _LSRecord_resolve_signerIdentity]
+0x186c5087c  __TEXT,__text  -[LSBundleRecord(MobileInstallation) signerIdentityWithContext:tableID:unitID:unitBytes:]
+0x186c508b4  __TEXT,__text  -[LSBundleRecord platform]
+0x186c508c0  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve_machOUUIDs]
+0x186c508e0  __TEXT,__text  -[LSBundleRecord machOUUIDsWithContext:tableID:unitID:unitBytes:]
+0x186c50ae0  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve_platform]
+0x186c50ae4  __TEXT,__text  -[LSBundleRecord platformWithContext:tableID:unitID:unitBytes:]
+0x186c50aec  __TEXT,__text  -[LSBundleRecord registrationDate]
+0x186c50af8  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve_registrationDate]
+0x186c50b18  __TEXT,__text  -[LSBundleRecord(MobileInstallation) signerOrganization]
+0x186c50b24  __TEXT,__text  -[LSBundleRecord(MobileInstallation) signerOrganizationWithContext:tableID:unitID:unitBytes:]
+0x186c50b5c  __TEXT,__text  -[LSClaimRecord _rawFlags]
+0x186c50b68  __TEXT,__text  -[LSBundleDataContainerMap .cxx_destruct]
+0x186c50b74  __TEXT,__text  -[_LSDiskUsage .cxx_destruct]
+0x186c50bb8  __TEXT,__text  -[_LSLocalizedStringRecord _allUnsanitizedStringValues]
+0x186c50bc4  __TEXT,__text  ___90-[LSBundleRecord _contextualFeatureUsageDescriptionsWithContext:tableID:unitID:unitBytes:]_block_invoke
+0x186c50c78  __TEXT,__text  -[UTTypeRecord isEqual:]
+0x186c50d48  __TEXT,__text  __XCFStringEqualCaseInsensitive
+0x186c50d6c  __TEXT,__text  -[LSBundleRecord(MobileInstallation) signerIdentity]
+0x186c50d78  __TEXT,__text  -[LSBundleRecord registrationDateWithContext:tableID:unitID:unitBytes:]
+0x186c50db4  __TEXT,__text  -[LSBundleRecord(MobileInstallation) _LSRecord_resolve_signerOrganization]
+0x186c50dd4  __TEXT,__text  -[LSBundleRecord teamIdentifier]
+0x186c50de0  __TEXT,__text  -[LSBundleRecord _LSRecord_resolve_teamIdentifier]
+0x186c50e00  __TEXT,__text  -[LSBundleRecord teamIdentifierWithContext:tableID:unitID:unitBytes:]
+0x186c50e38  __TEXT,__text  -[LSBundleRecord _detachFromContext:tableID:unitID:unitBytes:]
+0x186c5126c  __TEXT,__text  -[_LSLocalizedStringRecord _allUnsanitizedStringValuesWithContext:tableID:unitID:unitBytes:]
+0x186c51284  __TEXT,__text  -[_LSLocalizedStringRecord _missingBundleLocs]
+0x186c51290  __TEXT,__text  -[_LSLocalizedStringRecord _missingBundleLocsWithContext:tableID:unitID:unitBytes:]
+0x186c51448  __TEXT,__text  -[LSRecord(SubclassResponsibilities) _detachFromContext:tableID:unitID:unitBytes:]
+0x186c5144c  __TEXT,__text  +[LSBundleRecord bundleRecordForCurrentProcess]
+0x186c5166c  __TEXT,__text  -[_LSSingleContainerMap .cxx_destruct]
+0x186c51678  __TEXT,__text  __LSDatabaseGetStringArrayWithNullValues
+0x186c5177c  __TEXT,__text  LaunchServices::LocalizedString::getAllUnsafeLocalizations(_LSDatabase*, NSString*, bool*, bool*) const
+0x186c51e10  __TEXT,__text  LaunchServices::LocalizedString::getBundleLocs(_LSDatabase*) const
+0x186c51f14  __TEXT,__text  -[LSApplicationProxy .cxx_destruct]
+0x186c51f70  __TEXT,__text  -[LSBundleProxy .cxx_destruct]
+0x186c52080  __TEXT,__text  -[LSResourceProxy .cxx_destruct]
+0x186c520dc  __TEXT,__text  -[_LSBoundIconInfo .cxx_destruct]
+0x186c52144  __TEXT,__text  -[_LSDictionaryBackedPropertyList .cxx_destruct]
+0x186c52158  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c52174  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c52184  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c52198  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c521ac  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c521ac  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c521ac  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c521ac  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c521ac  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c521ac  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x186c521c0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c521c0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x186c521dc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c521f8  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c52208  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c52220  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c52234  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c5225c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c52274  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c52284  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c52298  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c522a4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c522b8  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c522c0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c522d4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c522e8  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c52304  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c5231c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c52338  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c5234c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x186c52360  __TEXT,__text  ____LSDatabaseGetStringArrayWithNullValues_block_invoke
+0x186c523e4  __TEXT,__text  __LSBindingListGetEntryWithClass
+0x186c52478  __TEXT,__text  __LSBindingListGetEntryWithClass.cold.1
+0x186c52520  __TEXT,__text  LaunchServices::BindingEvaluation::compareBindings(LaunchServices::BindingEvaluation::State&, LaunchServices::BindingEvaluation::ExtendedBinding const&, LaunchServices::BindingEvaluation::ExtendedBinding const&)
+0x186c52984  __TEXT,__text  LaunchServices::BindingEvaluation::logComparison(LaunchServices::BindingEvaluation::State&, LaunchServices::BindingEvaluation::ExtendedBinding const&, LaunchServices::BindingEvaluation::ExtendedBinding const&, char const*, LSRelativePriority)
+0x186c52ac0  __TEXT,__text  LaunchServices::BindingEvaluation::compareVendorsAndBundleClass(LaunchServices::BindingEvaluation::State&, bool, LaunchServices::BindingEvaluation::ExtendedBinding const&, LaunchServices::BindingEvaluation::ExtendedBinding const&)
+0x186c52e34  __TEXT,__text  __LSCreateResolvedURL
+0x186c53074  __TEXT,__text  __LSBundleFindWithNode
+0x186c53604  __TEXT,__text  LaunchServices::BindingEvaluator::setFilter(NSString*, bool  block_pointer(LSContext*, LSBinding const&))
+0x186c53650  __TEXT,__text  ____LSBundleFindWithNode_block_invoke
+0x186c53688  __TEXT,__text  _LSBundleMatchesNode(_LSDatabase*, unsigned int, LSBundleData const*, objc_object objcproto23FSNodePropertyProviding*, unsigned long long)
+0x186c53720  __TEXT,__text  __LSAliasAndInodeOnContainerMatchesNode
+0x186c53810  __TEXT,__text  __LSAliasCompareToNode
+0x186c5389c  __TEXT,__text  __LSAliasMatchesNode
+0x186c5393c  __TEXT,__text  __LSAliasDataMatchesPath_NoIO
+0x186c53b00  __TEXT,__text  __LSPathMatchesPath_NoIO
+0x186c53dac  __TEXT,__text  __LSBalanceBiDiControlCharacters
+0x186c53db0  __TEXT,__text  +[_LSLocalizedStringRecord sanitizeString:]
+0x186c53e28  __TEXT,__text  _LSDNCBalanceBiDiControlCharacters(NSString*)
+0x186c53f7c  __TEXT,__text  -[FSNode isVolume]
+0x186c53fdc  __TEXT,__text  -[FSNode isMountTrigger]
+0x186c53ff4  __TEXT,__text  __LSGetBundleClassForExtensionInlineBuffer
+0x186c542cc  __TEXT,__text  +[LSBundleRecord _getBundleRecordFinderForNode:]::$_1::__invoke(LaunchServices::Database::Context&, FSNode*, NSError* __autoreleasing*)
+0x186c543dc  __TEXT,__text  getAppRecordForApplicationNode(LSContext*, FSNode*, NSError* __autoreleasing*)
+0x186c54444  __TEXT,__text  -[LSRecord _ifAttached:else:]
+0x186c54558  __TEXT,__text  _LSDNCWithInlineBuffer(NSString*, void  block_pointer(CFStringInlineBuffer*, unsigned long))
+0x186c54610  __TEXT,__text  invocation function for block in _LSDNCBalanceBiDiControlCharacters(NSString*)
+0x186c547cc  __TEXT,__text  _LSDNCBalanceBiDiControlCharacterInString(unsigned short, NSString*, long)
+0x186c54900  __TEXT,__text  __LSReplaceForbiddenCharacters
+0x186c54904  __TEXT,__text  _LSDNCReplaceForbiddenCharacters(NSString*, unsigned int)
+0x186c54a7c  __TEXT,__text  _LSDNCGetForbiddenCharacters(unsigned int)
+0x186c54ad4  __TEXT,__text  invocation function for block in _LSDNCReplaceForbiddenCharacters(NSString*, unsigned int)
+0x186c54c5c  __TEXT,__text  _LSDNCCharacterSetContainsCharacterFromInlineBuffer(NSCharacterSet*, unsigned short, CFStringInlineBuffer*, long)
+0x186c54e2c  __TEXT,__text  -[LSBundleRecord(LocalizedName) localizedName]
+0x186c54eac  __TEXT,__text  postprocessLocalizedNameishStringFromStringRecord(LSBundleRecord*, NSString*)
+0x186c54f14  __TEXT,__text  __LSGetAuditTokenForSelf
+0x186c54f4c  __TEXT,__text  ___66-[_LSLocalizedStringRecord stringValueWithPreferredLocalizations:]_block_invoke
+0x186c54f94  __TEXT,__text  LaunchServices::LocalizedString::localizeUnsafely(_LSDatabase*, NSArray<NSString*>*) const
+0x186c55510  __TEXT,__text  LaunchServices::URLPropertyProvider::getUTTypeClass()
+0x186c55548  __TEXT,__text  -[LSApplicationRecord categoryTypesWithError:]
+0x186c5588c  __TEXT,__text  __LSCopyApplicationCategoriesForApplicationNode
+0x186c55ab0  __TEXT,__text  ___46-[LSApplicationRecord categoryTypesWithError:]_block_invoke
+0x186c55ab8  __TEXT,__text  __LSGetValidApplicationCategoryTypeSet
+0x186c55f18  __TEXT,__text  __LSGetUTTypeClass
+0x186c55f1c  __TEXT,__text  ___LAUNCH_SERVICES_IS_GETTING_ENTITLEMENTS_FROM_THE_KERNEL__
+0x186c56144  __TEXT,__text  -[LSClaimRecord _LSRecord_resolve__rawFlags]
+0x186c56148  __TEXT,__text  -[LSClaimRecord URLSchemesWithContext:tableID:unitID:unitBytes:]
+0x186c56224  __TEXT,__text  ____LSEnumerateClaimedSchemes_block_invoke
+0x186c562a0  __TEXT,__text  ___64-[LSClaimRecord URLSchemesWithContext:tableID:unitID:unitBytes:]_block_invoke
+0x186c562ac  __TEXT,__text  -[LSClaimRecord _claimingBundleRecord]
+0x186c562b8  __TEXT,__text  -[LSClaimRecord _LSRecord_resolve__claimingBundleRecord]
+0x186c562d8  __TEXT,__text  -[LSClaimRecord _claimingBundleRecordWithContext:tableID:unitID:unitBytes:]
+0x186c563a0  __TEXT,__text  -[LSClaimRecord _localizedName]
+0x186c563ac  __TEXT,__text  -[LSClaimRecord _LSRecord_resolve__localizedName]
+0x186c563cc  __TEXT,__text  -[LSClaimRecord _localizedNameWithContext:tableID:unitID:unitBytes:]
+0x186c5640c  __TEXT,__text  -[LSClaimRecord _LSRecord_resolve_handlerRank]
+0x186c5642c  __TEXT,__text  -[LSClaimRecord handlerRankWithContext:tableID:unitID:unitBytes:]
+0x186c5644c  __TEXT,__text  __LSCopyHandlerRankStringFromNumericHandlerRank
+0x186c564e4  __TEXT,__text  -[LSClaimRecord(ForIconServicesOnly) iconDictionary]
+0x186c564f0  __TEXT,__text  -[LSClaimRecord(ForIconServicesOnly) _LSRecord_resolve_iconDictionary]
+0x186c56510  __TEXT,__text  -[LSClaimRecord(ForIconServicesOnly) iconDictionaryWithContext:tableID:unitID:unitBytes:]
+0x186c56690  __TEXT,__text  -[LSClaimRecord(ForIconServicesOnly) iconResourceBundleURL]
+0x186c5669c  __TEXT,__text  -[LSClaimRecord(ForIconServicesOnly) _LSRecord_resolve_iconResourceBundleURL]
+0x186c566bc  __TEXT,__text  -[LSClaimRecord(ForIconServicesOnly) iconResourceBundleURLWithContext:tableID:unitID:unitBytes:]
+0x186c567e4  __TEXT,__text  -[LSClaimRecord _LSRecord_resolve_role]
+0x186c567e8  __TEXT,__text  -[LSClaimRecord roleWithContext:tableID:unitID:unitBytes:]
+0x186c567f0  __TEXT,__text  -[LSClaimRecord typeIdentifiers]
+0x186c567fc  __TEXT,__text  -[LSClaimRecord _LSRecord_resolve_typeIdentifiers]
+0x186c5681c  __TEXT,__text  __LSEnumerateClaimedTypes
+0x186c56a08  __TEXT,__text  -[_LSLazyGroupContainerMap .cxx_destruct]
+0x186c56a14  __TEXT,__text  -[LSApplicationExtensionRecord uniqueIdentifierWithContext:tableID:unitID:unitBytes:]
+0x186c56a8c  __TEXT,__text  +[LSBundleRecord bundleRecordForAuditToken:error:]
+```
+First 1,000 of 9,822.
+

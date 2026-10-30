@@ -1,0 +1,14 @@
+# `SDUDisplayRegionBlankingClientToServerInterface` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SystemUIDisplayUtilities.framework/SystemUIDisplayUtilities`](../userland/System__Library__PrivateFrameworks__SystemUIDisplayUtilities.framework__SystemUIDisplayUtilities.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 4 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[SDUDisplayRegionBlankingClientToServerInterface acquireDisplayRegionBlankingAssertionWithUniqueIdentifier:forDisplayRegion:reason:restrictingToBundleIDs:];
+-[SDUDisplayRegionBlankingClientToServerInterface blankingStateForDisplayRegion:];
+-[SDUDisplayRegionBlankingClientToServerInterface invalidateDisplayRegionBlankingAssertionWithUniqueIdentifier:forDisplayRegion:];
+-[SDUDisplayRegionBlankingClientToServerInterface setBlankingStateObservationEnabled:forDisplayRegion:];
+```

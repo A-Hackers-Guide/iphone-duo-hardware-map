@@ -1,0 +1,26 @@
+# `CAFTestComplexNestedItemCharacteristic`
+
+- Image: [`/System/Library/PrivateFrameworks/CarAccessoryFramework.framework/CarAccessoryFramework`](../userland/System__Library__PrivateFrameworks__CarAccessoryFramework.framework__CarAccessoryFramework.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `CAFDictionaryCharacteristic`
+- 0 instance variables, 1 properties, 3 instance methods, 2 class methods
+
+## Properties
+
+```
+@property (T@"CAFTestComplexNestedItem",C,N) testComplexNestedItemValue;
+```
+
+## Class methods
+
+```
++[CAFTestComplexNestedItemCharacteristic primaryCharacteristicFormat];
++[CAFTestComplexNestedItemCharacteristic secondaryCharacteristicFormats];
+```
+
+## Instance methods
+
+```
+-[CAFTestComplexNestedItemCharacteristic formattedValue];
+-[CAFTestComplexNestedItemCharacteristic setTestComplexNestedItemValue:];
+-[CAFTestComplexNestedItemCharacteristic testComplexNestedItemValue];
+```

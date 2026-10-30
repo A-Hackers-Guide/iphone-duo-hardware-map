@@ -1,0 +1,82 @@
+# `BWIntelligentDistortionCorrectionProcessorControllerConfiguration`
+
+- Image: [`/System/Library/PrivateFrameworks/CMCapture.framework/CMCapture`](../userland/System__Library__PrivateFrameworks__CMCapture.framework__CMCapture.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `BWStillImageProcessorControllerConfiguration`
+- 16 instance variables, 16 properties, 30 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"NSArray" _portTypesWithGeometricDistortionCorrectionEnabled;
+@"NSArray" _portTypesWithIntelligentDistortionCorrectionEnabled;
+{?="width"i"height"i} _geometricDistortionCorrectionExpandedImageDimensions;
+{CGPoint="x"d"y"d} _geometricDistortionCorrectionInputCropOffset;
+i _intelligentDistortionCorrectionVersion;
+B _intelligentDistortionCorrectionAppliesFinalDimensions;
+i _horizontalSensorBinningFactor;
+i _verticalSensorBinningFactor;
+{?="width"i"height"i} _stereoPhotoOutputDimensions;
+{?="maximumImageWidth"I"maximumImageHeight"I"maximumPersonMaskWidth"I"maximumPersonMaskHeight"I} _processorConfig;
+@"NSDictionary" _providedInferenceAttachedMediaByMode;
+B _depthDataCorrectionEnabled;
+@"BWVideoFormat" _primaryFormat;
+@"BWVideoFormat" _depthFormat;
+i _baseDepthRotationDegrees;
+B _replicatePixelsOutsideOfFinalImageDimensions;
+```
+
+## Properties
+
+```
+@property (T@"NSArray",&,N,V_portTypesWithGeometricDistortionCorrectionEnabled) portTypesWithGeometricDistortionCorrectionEnabled;
+@property (T@"NSArray",&,N,V_portTypesWithIntelligentDistortionCorrectionEnabled) portTypesWithIntelligentDistortionCorrectionEnabled;
+@property (T{?=ii},N,V_geometricDistortionCorrectionExpandedImageDimensions) geometricDistortionCorrectionExpandedImageDimensions;
+@property (T{CGPoint=dd},N,V_geometricDistortionCorrectionInputCropOffset) geometricDistortionCorrectionInputCropOffset;
+@property (Ti,N,V_intelligentDistortionCorrectionVersion) intelligentDistortionCorrectionVersion;
+@property (TB,N,V_intelligentDistortionCorrectionAppliesFinalDimensions) intelligentDistortionCorrectionAppliesFinalDimensions;
+@property (Ti,N,V_horizontalSensorBinningFactor) horizontalSensorBinningFactor;
+@property (Ti,N,V_verticalSensorBinningFactor) verticalSensorBinningFactor;
+@property (T{?=ii},N,V_stereoPhotoOutputDimensions) stereoPhotoOutputDimensions;
+@property (T{?=IIII},N,V_processorConfig) processorConfig;
+@property (T@"NSDictionary",&,N,V_providedInferenceAttachedMediaByMode) providedInferenceAttachedMediaByMode;
+@property (TB,R,N,V_depthDataCorrectionEnabled) depthDataCorrectionEnabled;
+@property (T@"BWVideoFormat",R,N,V_primaryFormat) primaryFormat;
+@property (T@"BWVideoFormat",R,N,V_depthFormat) depthFormat;
+@property (Ti,R,N,V_baseDepthRotationDegrees) baseDepthRotationDegrees;
+@property (TB,N,V_replicatePixelsOutsideOfFinalImageDimensions) replicatePixelsOutsideOfFinalImageDimensions;
+```
+
+## Instance methods
+
+```
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration portTypesWithIntelligentDistortionCorrectionEnabled];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration verticalSensorBinningFactor];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration setHorizontalSensorBinningFactor:];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration setReplicatePixelsOutsideOfFinalImageDimensions:];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration horizontalSensorBinningFactor];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration setProcessorConfig:];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration portTypesWithGeometricDistortionCorrectionEnabled];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration setPortTypesWithGeometricDistortionCorrectionEnabled:];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration setVerticalSensorBinningFactor:];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration setPortTypesWithIntelligentDistortionCorrectionEnabled:];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration setStereoPhotoOutputDimensions:];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration replicatePixelsOutsideOfFinalImageDimensions];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration setDepthDataCorrectionEnabled:primaryFormat:depthFormat:baseDepthRotationDegrees:];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration primaryFormat];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration stereoPhotoOutputDimensions];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration setGeometricDistortionCorrectionInputCropOffset:];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration dealloc];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration geometricDistortionCorrectionExpandedImageDimensions];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration setIntelligentDistortionCorrectionVersion:];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration geometricDistortionCorrectionInputCropOffset];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration setIntelligentDistortionCorrectionAppliesFinalDimensions:];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration setProvidedInferenceAttachedMediaByMode:];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration intelligentDistortionCorrectionVersion];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration setGeometricDistortionCorrectionExpandedImageDimensions:];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration baseDepthRotationDegrees];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration depthDataCorrectionEnabled];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration intelligentDistortionCorrectionAppliesFinalDimensions];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration depthFormat];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration processorConfig];
+-[BWIntelligentDistortionCorrectionProcessorControllerConfiguration providedInferenceAttachedMediaByMode];
+```

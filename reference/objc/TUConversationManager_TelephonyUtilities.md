@@ -1,0 +1,277 @@
+# `TUConversationManager`
+
+- Image: [`/System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities`](../userland/System__Library__PrivateFrameworks__TelephonyUtilities.framework__TelephonyUtilities.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `TUConversationManagerDataSourceDelegate`, `TUCollaborationManagerDelegate`
+- 15 instance variables, 40 properties, 178 instance methods, 18 class methods
+
+## Instance variables
+
+```
+B _shouldCreateConversationsForCallsNotBackedByGroupSessions;
+@"TUConversationMediaController" _mediaController;
+@"TUConversationReactionsController" _reactionsController;
+@"NSObject<OS_dispatch_queue>" _queue;
+@"<TUConversationManagerDataSource>" _dataSource;
+@"NSMapTable" _delegateToQueue;
+@"NSObject<OS_dispatch_queue>" _nonSessionBackedConversationCreationQueue;
+@"NSMutableSet" _callsNotBackedByGroupSessionsPendingUpgrade;
+@"NSMutableDictionary" _cachedMessagesGroupPhotoData;
+@"NSMutableSet" _conversationsNotBackedByGroupSessions;
+Q _nonSessionBackedConversationCreationMode;
+@"TUCollaborationManager" _collaborationManager;
+@"<TUConversationMessagesGroupProviding>" _messagesGroupProvider;
+@"NSNotificationCenter" _notificationCenter;
+@? _overriddenCallForGroupUUID;
+```
+
+## Properties
+
+```
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_queue) queue;
+@property (T@"<TUConversationManagerDataSource>",R,N,V_dataSource) dataSource;
+@property (T@"NSMapTable",R,N,V_delegateToQueue) delegateToQueue;
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_nonSessionBackedConversationCreationQueue) nonSessionBackedConversationCreationQueue;
+@property (T@"NSMutableSet",&,N,V_callsNotBackedByGroupSessionsPendingUpgrade) callsNotBackedByGroupSessionsPendingUpgrade;
+@property (T@"NSMutableDictionary",&,N,V_cachedMessagesGroupPhotoData) cachedMessagesGroupPhotoData;
+@property (T@"NSMutableSet",&,N,V_conversationsNotBackedByGroupSessions) conversationsNotBackedByGroupSessions;
+@property (TB,N,V_shouldCreateConversationsForCallsNotBackedByGroupSessions) shouldCreateConversationsForCallsNotBackedByGroupSessions;
+@property (TQ,N,V_nonSessionBackedConversationCreationMode) nonSessionBackedConversationCreationMode;
+@property (T@"TUConversationMediaController",R,N,V_mediaController) mediaController;
+@property (T@"TUConversationReactionsController",R,N,V_reactionsController) reactionsController;
+@property (T@"TUCollaborationManager",&,N,V_collaborationManager) collaborationManager;
+@property (T@"<TUConversationMessagesGroupProviding>",W,N,V_messagesGroupProvider) messagesGroupProvider;
+@property (T@"NSNotificationCenter",R,N,V_notificationCenter) notificationCenter;
+@property (T@?,C,N,V_overriddenCallForGroupUUID) overriddenCallForGroupUUID;
+@property (T@"NSMutableSet",&,N) conversationsNotBackedByGroupSessions;
+@property (TB,N) shouldCreateConversationsForCallsNotBackedByGroupSessions;
+@property (TQ,N) nonSessionBackedConversationCreationMode;
+@property (T@"TUConversationMediaController",R,N) mediaController;
+@property (T@"TUConversationReactionsController",R,N) reactionsController;
+@property (T@"TUCollaborationManager",&,N) collaborationManager;
+@property (T@"<TUConversationMessagesGroupProviding>",W,N) messagesGroupProvider;
+@property (T@"NSNotificationCenter",R,N) notificationCenter;
+@property (T@?,C,N) overriddenCallForGroupUUID;
+@property (T@"NSSet",R,C,N) activeConversations;
+@property (T@"NSSet",R,C,N) incomingPendingConversations;
+@property (T@"NSDictionary",R,C,N) activityAuthorizedBundleIdentifiers;
+@property (T@"NSSet",R,C,N) activeAdvertisements;
+@property (TB,N) autoSharePlayEnabled;
+@property (TB,N) nearbyContactDiscoveryEnabled;
+@property (TB,R,N,GisSharePlayAvailable) sharePlayAvailable;
+@property (TB,R,N,GisScreenSharingAvailable) screenSharingAvailable;
+@property (T@"TUConversation",R,C,N) handoffEligibleConversation;
+@property (T@"TUConversation",R,C,N) avLessConversation;
+@property (T@"TUScreenSharingRemoteController",R,N) screenSharingRemoteController;
+@property (T@"NSSet",R,C,N) activatedConversationLinks;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Class methods
+
+```
++[TUConversationManager memorySize];
++[TUConversationManager maximumNumberOfInvitedMembers];
++[TUConversationManager supportsEffects];
++[TUConversationManager activeRemoteParticipantsForCall:remoteMembers:];
++[TUConversationManager allowsPortraitBlurWhenCaptionsEnabled];
++[TUConversationManager allowsScreenSharing];
++[TUConversationManager allowsScreenSharingWithVideo];
++[TUConversationManager allowsVideo];
++[TUConversationManager conversationStateForCall:];
++[TUConversationManager conversationWithPseudonym:fromConversations:];
++[TUConversationManager conversationWithRemoteMembers:andLink:fromConversations:];
++[TUConversationManager conversationWithRemoteMembers:andLink:fromConversations:matchingVideo:backedByGroupSession:];
++[TUConversationManager conversationWithUUID:fromConversations:];
++[TUConversationManager conversationsWithRemoteMembers:andLink:fromConversations:];
++[TUConversationManager isAddPersonEnabled];
++[TUConversationManager pendingConversationWithLink:fromConversations:];
++[TUConversationManager remoteMembersForCall:];
++[TUConversationManager supportsConversations];
+```
+
+## Instance methods
+
+```
+-[TUConversationManager leaveConversationWithUUID:];
+-[TUConversationManager initWithDataSource:];
+-[TUConversationManager conversation:receivedActivitySessionEvent:];
+-[TUConversationManager notificationCenter];
+-[TUConversationManager removeDelegate:];
+-[TUConversationManager denyExternalParticipants:];
+-[TUConversationManager handoffEligibleConversation];
+-[TUConversationManager joinRequestForApplicableConversationWithHandoffEligibility:];
+-[TUConversationManager removeCollaborationIdentifier:forConversation:];
+-[TUConversationManager startAlignmentTimeOutForNearbySessionForConversation:];
+-[TUConversationManager getInactiveLinkWithCompletionHandler:];
+-[TUConversationManager addScreenSharingType:forConversation:];
+-[TUConversationManager mediaController];
+-[TUConversationManager collaborationForConversation:];
+-[TUConversationManager currentProcessCanAccessCollaborations];
+-[TUConversationManager activeConversations];
+-[TUConversationManager addDelegate:queue:];
+-[TUConversationManager updateConversationsNotBackedByGroupSessionWithCall:conversationsByGroupUUID:creationQueue:];
+-[TUConversationManager setLinkName:forConversationLink:completionHandler:];
+-[TUConversationManager conversation:collaborationStateChanged:highlightIdentifier:];
+-[TUConversationManager setPresentationAspectRatioStyle:conversation:];
+-[TUConversationManager screenSharingRemoteController];
+-[TUConversationManager setLocalParticipantAudioVideoMode:forConversationUUID:];
+-[TUConversationManager delegateToQueue];
+-[TUConversationManager addCollaborationDictionary:forConversation:fromMe:];
+-[TUConversationManager avLessConversation];
+-[TUConversationManager removeConversationNoticeWithUUID:];
+-[TUConversationManager isSharePlayAvailable];
+-[TUConversationManager updateConversationsNotBackedByGroupSessionWithCall:];
+-[TUConversationManager incomingPendingConversations];
+-[TUConversationManager conversationManagerDataSource:didChangeActivatedConversationLinks:];
+-[TUConversationManager buzzMember:conversation:];
+-[TUConversationManager updateURLWithDugongTokenIfNeeded:collaboration:handle:completion:];
+-[TUConversationManager launchAppForInterpreterRequestForConversationUUID:bundleID:requestID:completionHandler:];
+-[TUConversationManager conversationsChangedForDataSource:conversationsByGroupUUID:oldConversationsByGroupUUID:];
+-[TUConversationManager setLocalParticipantCluster:forConversation:];
+-[TUConversationManager setUsingAirplay:onActivitySession:onConversation:];
+-[TUConversationManager kickMember:conversation:];
+-[TUConversationManager updateRemoteControlStatus:onConversation:];
+-[TUConversationManager addedCollaborationDictionary:forConversation:];
+-[TUConversationManager reportDualCaptureMetric:forConversationGroupUUID:];
+-[TUConversationManager init];
+-[TUConversationManager activeConversationWithRemoteMembers:andLink:];
+-[TUConversationManager activatedConversationLinks];
+-[TUConversationManager getLatestRemoteScreenShareAttributesWithCompletionHandler:];
+-[TUConversationManager isScreenSharingAvailable];
+-[TUConversationManager updateExternalParticipants:];
+-[TUConversationManager startInterpreterRequestWithBundleID:conversationUUID:requestID:completionHandler:];
+-[TUConversationManager _fetchMessagesGroupPhotoDataForConversation:];
+-[TUConversationManager stopInterpreterRequestForConversationUUID:bundleID:requestID:completionHandler:];
+-[TUConversationManager dealloc];
+-[TUConversationManager createActivitySession:onConversation:options:];
+-[TUConversationManager screenSharingAvailableChanged:];
+-[TUConversationManager activeConversationWithUUID:];
+-[TUConversationManager setScreenEnabled:withScreenShareAttributes:forConversationWithUUID:];
+-[TUConversationManager registerWithCompletionHandler:];
+-[TUConversationManager collaborationManager];
+-[TUConversationManager sharePlayAvailableChanged:];
+-[TUConversationManager conversation:addedMembersLocally:];
+-[TUConversationManager setActivityAuthorization:forBundleIdentifier:];
+-[TUConversationManager serverDisconnectedForDataSource:oldConversationsByGroupUUID:];
+-[TUConversationManager activeAdvertisements];
+-[TUConversationManager cachedMessagesGroupPhotoData];
+-[TUConversationManager queue];
+-[TUConversationManager approveExternalParticipants:];
+-[TUConversationManager linkSyncStateIncludeLinks:WithCompletion:];
+-[TUConversationManager activeConversationWithGroupUUID:];
+-[TUConversationManager pendingConversationWithLink:];
+-[TUConversationManager setNearbyContactDiscoveryEnabled:];
+-[TUConversationManager setDownlinkMuted:forParticipants:inConversation:completionHandler:];
+-[TUConversationManager renewLink:expirationDate:reason:completionHandler:];
+-[TUConversationManager conversation:participant:addedCollaborationNotice:];
+-[TUConversationManager fetchMessagesGroupPhotoDataForConversation:];
+-[TUConversationManager generateLinkWithInvitedMemberHandles:completionHandler:];
+-[TUConversationManager setNonSessionBackedConversationCreationMode:];
+-[TUConversationManager activateConversationNoticeWithActionURL:bundleIdentifier:];
+-[TUConversationManager callPropertiesChanged:];
+-[TUConversationManager collaborationChanged:forConversation:collaborationState:];
+-[TUConversationManager requestParticipantToShareScreen:forConversation:];
+-[TUConversationManager remoteScreenShareEndedWithReason:];
+-[TUConversationManager activateLink:completionHandler:];
+-[TUConversationManager conversation:participant:addedNotice:];
+-[TUConversationManager nearbyContactDiscoveryEnabled];
+-[TUConversationManager checkLinkValidity:completionHandler:];
+-[TUConversationManager conversationsChangedForDataSource:oldConversationsByGroupUUID:newConversationsByGroupUUID:creationQueue:];
+-[TUConversationManager overriddenCallForGroupUUID];
+-[TUConversationManager buzzMember:destinationID:invitationContext:conversation:];
+-[TUConversationManager addCollaboration:forConversation:];
+-[TUConversationManager ckBundleIDForCollaborationIdentifier:];
+-[TUConversationManager receivedTrackedPendingMember:forConversationLink:];
+-[TUConversationManager launchApplicationForActivitySessionUUID:completionHandler:];
+-[TUConversationManager dataSource];
+-[TUConversationManager didChangeConversationAdvertisement:];
+-[TUConversationManager approvePendingMember:forConversation:];
+-[TUConversationManager conversation:didChangeSceneAssociationForActivitySession:];
+-[TUConversationManager reactionsController];
+-[TUConversationManager setShouldCreateConversationsForCallsNotBackedByGroupSessions:];
+-[TUConversationManager addRemoteMembers:otherInvitedHandles:invitationPreferences:toConversation:];
+-[TUConversationManager addDisclosedCollaborationInitiator:toConversationUUID:];
+-[TUConversationManager conversation:buzzedMember:];
+-[TUConversationManager joinConversationWithRequest:];
+-[TUConversationManager pruneConversationsPendingUpgradeInConversationsWithGroupUUID:];
+-[TUConversationManager getActiveLinksWithCreatedOnly:completionHandler:];
+-[TUConversationManager launchApplicationForActivitySession:authorizedExternally:completionHandler:];
+-[TUConversationManager requestScreenShareFromMember:conversation:];
+-[TUConversationManager accessibilityLinkPseudonymsAmongPseudonyms:completionHandler:];
+-[TUConversationManager interpreterRequestWithID:didUpdateToState:];
+-[TUConversationManager conversationsChangedForDataSource:updatedIncomingPendingConversationsByGroupUUID:];
+-[TUConversationManager setDownlinkMuted:forRemoteParticipantsInConversation:];
+-[TUConversationManager setCallsNotBackedByGroupSessionsPendingUpgrade:];
+-[TUConversationManager collaborationStateForConversation:];
+-[TUConversationManager setIgnoreLMIRequests:forConversation:];
+-[TUConversationManager getMessagesGroupDetailsForConversationUUID:completionHandler:];
+-[TUConversationManager setSharePlayHandedOff:onConversationWithUUID:];
+-[TUConversationManager addTestActiveQRParticipant:identifier:tuConversation:];
+-[TUConversationManager setCollaborationManager:];
+-[TUConversationManager setNonSessionBackedConversationCreationQueue:];
+-[TUConversationManager addRemoteMembers:toConversation:];
+-[TUConversationManager conversation:screenSharingChangedForParticipant:];
+-[TUConversationManager autoSharePlayEnabled];
+-[TUConversationManager setAutoSharePlayEnabled:];
+-[TUConversationManager prepareConversationWithUUID:withHandoffContext:];
+-[TUConversationManager conversation:didChangeStateForActivitySession:];
+-[TUConversationManager conversationUpdateMessagesGroupPhoto:];
+-[TUConversationManager nonSessionBackedConversationCreationQueue];
+-[TUConversationManager refreshActiveConversations];
+-[TUConversationManager interpreterRequestWithID:debugSendLink:toHandle:];
+-[TUConversationManager cleanupInterpreterRequestsFor:];
+-[TUConversationManager setLocalMemberNickname:forConversationUUID:reason:];
+-[TUConversationManager generateLinkWithInvitedMemberHandles:linkLifetimeScope:completionHandler:];
+-[TUConversationManager conversation:participant:didUpdateNickname:reason:];
+-[TUConversationManager activeConversationWithRemoteMembers:andLink:matchingVideo:backedByGroupSession:];
+-[TUConversationManager createActivitySession:onConversation:];
+-[TUConversationManager registerMessagesGroupUUIDForConversationUUID:];
+-[TUConversationManager callsNotBackedByGroupSessionsPendingUpgrade];
+-[TUConversationManager updateLocalParticipantToAVLessWithPresentationMode:forConversationUUID:];
+-[TUConversationManager conversationManagerDataSource:messagesGroupDetailsForMessagesGroupId:completionHandler:];
+-[TUConversationManager launchApplicationForActivitySession:completionHandler:];
+-[TUConversationManager setMessagesGroupProvider:];
+-[TUConversationManager startTrackingCollaboration:forConversation:completionHandler:];
+-[TUConversationManager conversationsChangedFromOldConversationsByGroupUUID:newConversationsByGroupUUID:];
+-[TUConversationManager launchApplicationForActivitySessionUUID:forceBackground:completionHandler:];
+-[TUConversationManager cancelOrDenyScreenShareRequest:forConversation:];
+-[TUConversationManager activityAuthorizedBundleIdentifiers];
+-[TUConversationManager createConversationForCallNotBackedByGroupSession:];
+-[TUConversationManager messagesGroupProvider];
+-[TUConversationManager leaveActivitySession:onConversation:];
+-[TUConversationManager handoffEligibleConversationForEligibility:];
+-[TUConversationManager conversationManagerDataSource:conversation:appLaunchState:forActivitySession:];
+-[TUConversationManager conversationUpdatedMessagesGroupPhoto:];
+-[TUConversationManager addInvitedMemberHandles:toConversationLink:completionHandler:];
+-[TUConversationManager shouldCreateConversationsForCallsNotBackedByGroupSessions];
+-[TUConversationManager invalidateLink:completionHandler:];
+-[TUConversationManager startAlignmentTimeOutForNearbyMembers:forConversation:];
+-[TUConversationManager activeConversationWithLinkForCall:];
+-[TUConversationManager setCachedMessagesGroupPhotoData:];
+-[TUConversationManager getNeedsDisclosureOfCollaborationInitiator:forConversationUUID:completionHandler:];
+-[TUConversationManager addCollaborationIdentifier:forConversation:];
+-[TUConversationManager fetchUpcomingNoticeWithCompletionHandler:];
+-[TUConversationManager setGridDisplayMode:conversation:];
+-[TUConversationManager setConversationsNotBackedByGroupSessions:];
+-[TUConversationManager activeParticipant:removedHighlightFromConversation:highlightIdentifier:];
+-[TUConversationManager callPendingUpgradeInConversationsWithGroupUUID:];
+-[TUConversationManager initWithDataSource:notificationCenter:];
+-[TUConversationManager presentDismissalAlertForActivitySession:onConversation:];
+-[TUConversationManager activityAuthorizationsChangedForDataSource:oldActivityAuthorizedBundleIdentifiers:];
+-[TUConversationManager nonSessionBackedConversationCreationMode];
+-[TUConversationManager scheduleConversationLinkCheckInInitial:];
+-[TUConversationManager activeParticipant:addedHighlightToConversation:highlightIdentifier:oldHighlightIdentifier:isFirstAdd:];
+-[TUConversationManager openCollaborationWithIdentifier:forConversation:];
+-[TUConversationManager addRemoteMembers:otherInvitedHandles:toConversation:];
+-[TUConversationManager updateMessagesGroupName:onConversation:];
+-[TUConversationManager conversationsNotBackedByGroupSessions];
+-[TUConversationManager generateLinkForConversation:completionHandler:];
+-[TUConversationManager setOverriddenCallForGroupUUID:];
+-[TUConversationManager rejectPendingMember:forConversation:];
+-[TUConversationManager remoteScreenShareAttributesChanged:isLocallySharing:];
+-[TUConversationManager endActivitySession:onConversation:];
+```

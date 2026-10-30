@@ -1,0 +1,25 @@
+# `_UIClickPresentationInteractionDelegateInternal` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `_UIClickPresentationInteractionDelegate`
+- 0 instance variables, 0 properties, 15 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[_UIClickPresentationInteractionDelegateInternal _clickPresentationInteractionShouldPlayFeedback:];
+-[_UIClickPresentationInteractionDelegateInternal _clickPresentationInteraction:dragSessionDidEndForItems:];
+-[_UIClickPresentationInteractionDelegateInternal _clickPresentationInteraction:interactionEffectForTargetedPreview:];
+-[_UIClickPresentationInteractionDelegateInternal _clickPresentationInteraction:item:willAnimateDragCancelWithAnimator:];
+-[_UIClickPresentationInteractionDelegateInternal _clickPresentationInteraction:liveDragPreviewForPresentation:dragItem:];
+-[_UIClickPresentationInteractionDelegateInternal _clickPresentationInteraction:previewForCancellingDragItem:];
+-[_UIClickPresentationInteractionDelegateInternal _clickPresentationInteraction:shouldBeDelayedByGestureRecognizer:];
+-[_UIClickPresentationInteractionDelegateInternal _clickPresentationInteraction:shouldBeginWithTouch:completion:];
+-[_UIClickPresentationInteractionDelegateInternal _clickPresentationInteraction:shouldMaintainKeyboardAssertionForFirstResponder:presentation:];
+-[_UIClickPresentationInteractionDelegateInternal _clickPresentationInteraction:shouldPresentWithCompletion:];
+-[_UIClickPresentationInteractionDelegateInternal _clickPresentationInteractionEnded:forPresentation:reason:];
+-[_UIClickPresentationInteractionDelegateInternal _clickPresentationInteractionShouldAllowDragAfterDismiss:];
+-[_UIClickPresentationInteractionDelegateInternal _clickPresentationInteractionShouldAllowRapidRestart:];
+-[_UIClickPresentationInteractionDelegateInternal _clickPresentationInteractionShouldAssociateWithDrag:];
+-[_UIClickPresentationInteractionDelegateInternal _secondaryPreviewsForClickPresentationInteraction:];
+```

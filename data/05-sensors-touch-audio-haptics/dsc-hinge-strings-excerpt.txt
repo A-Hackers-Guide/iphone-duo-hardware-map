@@ -1,0 +1,150 @@
++[CMMagicPoseManager sharedManager]_block_invoke
+-[CMAngleManager setAngleHandler:interval:]
+-[CMAngleManagerInternal cancelPendingAngleUpdate]
+-[CMAngleManagerInternal isAngleActive]
+-[CMAngleManagerInternal notifyAngleChange:]
+-[CMAngleManagerInternal onAngleChange:]
+-[CMAngleManagerInternal scheduleAngleUpdate]_block_invoke
+-[CMAngleManagerInternal setAngleUpdateIntervalPrivate:]
+-[CMAngleManagerInternal startAngleUpdatesPrivateToQueue:handler:]
+-[CMAngleManagerInternal stopAngleUpdatesPrivate]
+-[CMMagicPoseManager createMagicPoseEventFromDeviceStateEvent:]
+-[CMMagicPoseManager dispatchMagicPoseEvent:error:onQueue:toHandler:]
+-[CMMagicPoseManager initWithName:]
+-[CMMagicPoseManager startUpdatesToQueue:withHandler:]
+-[UIHinge init]
+-[UIHingeInteraction _createRegistrationInteractionIfNeeded]_block_invoke
+-[UIHingeInteraction _performRegistrationWithTargetWindowHostingScene:]
+-[UIHingeInteraction init]
+-[UIHingeInteractionUpdate init]
+-[_UIHingeState init]
+-[_UISceneHingeState init]
+-[_UISceneHingeStateHostComponent setHingeAngle:]
+-[_UISceneHingeStateHostComponent setMagicPose:]
+-[_UISceneHingeStateHostComponent setNextStatus:]
+-[_UISceneHingeStateHostComponent setProgress:]
+-[_UISceneHingeStateHostComponent setStatus:]
+@"<BSInvalidatable>"24@0:8@"<_UISceneHingeStateClientObserver>"16
+@"<_UISceneHingeStateClientObserver>"
+@"CMAngleManager"
+@"CMMagicPoseManager"
+@"PUIHingeState"
+@"UIHinge"
+@"UIHingeInteraction"
+@"UIHingeInteractionUpdate"
+@"_UIHingeInteraction"
+@"_UIHingeState"16@0:8
+@"_UISceneHingeState"
+@"_UISceneHingeState"16@0:8
+@"_UISceneHingeStateClientComponent"
+B24@?0@"_UIHingeState"8^B16
+CBCE5: refusing inference for NaN hingeAngle - returning nil
+CEOverride: extended input (xdxt: %@, hingeAngle: %f)
+CLAngleNotifier
+CLAngleNotifier.mm
+CLAngleNotifier::isAvailable()
+CLLidAngleNotifier
+CLLidAngleNotifier.mm
+CMAngleManager
+CMAngleManager Update
+CMAngleManager and CMMagicPoseManager not wanted or not available
+CMAngleManager.isAvailable
+CMAngleManager.mm
+CMAngleManagerInternal
+CMAngleManagerShim
+CMMagicPose surface orientation changed: cover %{public}@ -> %{public}@, inner %{public}@ -> %{public}@
+CMMagicPoseEvent
+CMMagicPoseManager
+CMMagicPoseManager Update
+Error receiving CMMagicPoseEvent : %{public}p
+IOHIDEventGetType(event) == kIOHIDEventTypeHingeAngle
+N16CLMotionNotifier18CallbackDispatcherIN15CLAngleNotifier9AngleDataEEE
+NUIHingeStatus
+PUIHingeState
+SBContinuousFoldController
+SBFDevicePoseDefaults
+SBFDevicePoseLastKnownCMAngle
+SBFDevicePoseLastKnownCMMagicPose
+SBFDevicePoseLikelyTransitionDelegate
+SBFDevicePosePTSettings
+SBFDevicePosePTSettingsDomain
+SBFDevicePoseProvider
+SBFDevicePoseProviderObserver
+So14CMAngleManagerC
+So18CMAngleManagerShimC
+So18UIHingeInteractionCSg
+So19_UIHingeInteractionCSg
+So7UIHingeCSg
+T@"<_UISceneHingeStateClient>",R,N
+T@"<_UISceneHingeStateHost>",R,N
+T@"PUIHingeState",&,N,V_hingeState
+T@"UIHinge",R,C,N,V_hinge
+T@"_UIHingeState",R,N
+T@"_UISceneHingeState",C,N
+T@"_UISceneHingeState",R,C,N
+T@"_UISceneHingeState",R,C,N,V_sceneHingeState
+T@"_UISceneHingeStateClientComponent",R,N
+Td,R,N,V_hingeAngle
+Tf,N,V_hingeAngle
+UIHinge
+UIHinge.m
+UIHingeInteraction
+UIHingeInteraction.m
+UIHingeInteractionUpdate
+[CLAngleNotifier] %{public}s : phase=%{public}s, state=%{public}s, angle=%{public}f, mechanicalAngle=%{public}f, velocity=%{public}f, timestamp=%{public}lf (%{public}llu), continuousTimestamp=%{public}lf (%{public}llu), gestureBeganContinuousTimestamp=%{public}f (%{public}llu), messageSentContinuousTimestamp=%{public}f (%{public}llu), isWakeEvent=%{public}d
+[CLAngleNotifier] Event ref invalid
+[CLAngleNotifier] Skipping open for physical HID device on VM/Simulator
+[CLAngleNotifier] Unrecognized phase 0x%{public}x
+[CLAngleNotifier] Unrecognized update interval notification %{public}d
+[CLAngleNotifier] copied event is invalid
+[CLAngleNotifier] copyEvent returned invalid event ref
+[CLAngleNotifier] copyEvent: no HID device available
+[CMAngleManager] Unrecognized phase 0x%{public}x
+[static_cast<id>(info) isKindOfClass:CMAngleManagerInternal.class]
+[ySo13_UIHingeStateC_G
+_UIHingeInteraction
+_UIHingeInteractionUpdate
+_UIHingeState
+_UIHingeState.m
+_UISceneHingeState
+_UISceneHingeState.m
+_UISceneHingeStateClient
+_UISceneHingeStateClientComponent
+_UISceneHingeStateClientComponent.m
+_UISceneHingeStateClientObserver
+_UISceneHingeStateClientSettings
+_UISceneHingeStateConfiguration
+_UISceneHingeStateConfiguring
+_UISceneHingeStateExtension
+_UISceneHingeStateHost
+_UISceneHingeStateHostComponent
+_UISceneHingeStateHostComponent.m
+_UISceneHingeStateObserverRegistration
+_UISceneHingeStateSettings
+_hingeAngle
+_hingeAngleDegreesBeforePin
+_hingeAngleHUDView
+_hingeAngleHUDViews
+_hingeAngleIsLive
+bool CLLidAngleNotifier::LidAngleSensor::open()
+hingeAngle
+hingeAngleAngleDegrees
+hingeAngleMechanicalAngleDegrees
+hingeAngleState
+hingeAngleVelocityDegreesPerSecond
+hingeState >= kCMMagicPoseHingeStateType_Ambiguous && hingeState < kCMMagicPoseHingeStateType_Max
+lastKnownCMMagicPose
+lastKnownCMMagicPoseDictionary
+magicPose >= 0 && magicPose <= _UIHingeMagicPoseMaxValue
+nextStatus >= 0 && nextStatus <= _UIHingeStatusMaxValue
+orientation >= kCMMagicPoseDeviceOrientationType_Ambiguous && orientation < kCMMagicPoseDeviceOrientationType_Max
+orientation0 >= kCMMagicPoseDeviceOrientationType_Ambiguous && orientation0 < kCMMagicPoseDeviceOrientationType_Max
+orientation1 >= kCMMagicPoseDeviceOrientationType_Ambiguous && orientation1 < kCMMagicPoseDeviceOrientationType_Max
+setLastKnownCMMagicPose:
+setLastKnownCMMagicPoseDictionary:
+stableOrientationState >= kCMMagicPoseStableOrientationStateType_Ambiguous && stableOrientationState < kCMMagicPoseStableOrientationStateType_Max
+status >= 0 && status <= _UIHingeStatusMaxValue
+std::optional<AngleData> CLAngleNotifier::copyEvent(CLIoHidInterface::Device::NeedsEventUpdate)
+std::optional<AngleData> CLAngleNotifier::copyEvent(CLIoHidInterface::Device::NeedsEventUpdate)_block_invoke
+std::optional<double> CLLidAngleNotifier::LidAngleSensor::lidAngle() const
+tabletopPose >= kCMMagicPoseTabletopPoseType_Ambiguous && tabletopPose < kCMMagicPoseTabletopPoseType_Max

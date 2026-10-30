@@ -1,0 +1,32 @@
+# `_TtC15FindMyBluetoothP33_88C8B7AD69F25579A35CBE68F364F20C53DelegateTrampoline_CBPeripheralManagerPrivateDelegate`
+
+- Image: [`/System/Library/PrivateFrameworks/FindMyBluetooth.framework/FindMyBluetooth`](../userland/System__Library__PrivateFrameworks__FindMyBluetooth.framework__FindMyBluetooth.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `CBPeripheralManagerPrivateDelegate`
+- 2 instance variables, 0 properties, 14 instance methods, 0 class methods
+
+## Instance variables
+
+```
+v48@0:8@"NSURLSession"16@"NSURLSessionDataTask"24@"NSData"32@?<v@?>40 delegateQueue;
+v48@0:8@"NSURLSession"16@"NSURLSessionDataTask"24@"NSData"32@?<v@?>40 peripheralManager;
+```
+
+## Instance methods
+
+```
+-[_TtC15FindMyBluetoothP33_88C8B7AD69F25579A35CBE68F364F20C53DelegateTrampoline_CBPeripheralManagerPrivateDelegate peripheralManagerDidUpdateState:];
+-[_TtC15FindMyBluetoothP33_88C8B7AD69F25579A35CBE68F364F20C53DelegateTrampoline_CBPeripheralManagerPrivateDelegate init];
+-[_TtC15FindMyBluetoothP33_88C8B7AD69F25579A35CBE68F364F20C53DelegateTrampoline_CBPeripheralManagerPrivateDelegate peripheralManager:didAddService:error:];
+-[_TtC15FindMyBluetoothP33_88C8B7AD69F25579A35CBE68F364F20C53DelegateTrampoline_CBPeripheralManagerPrivateDelegate peripheralManager:didPublishL2CAPChannel:error:];
+-[_TtC15FindMyBluetoothP33_88C8B7AD69F25579A35CBE68F364F20C53DelegateTrampoline_CBPeripheralManagerPrivateDelegate peripheralManager:didOpenL2CAPChannel:error:];
+-[_TtC15FindMyBluetoothP33_88C8B7AD69F25579A35CBE68F364F20C53DelegateTrampoline_CBPeripheralManagerPrivateDelegate peripheralManager:didUnpublishL2CAPChannel:error:];
+-[_TtC15FindMyBluetoothP33_88C8B7AD69F25579A35CBE68F364F20C53DelegateTrampoline_CBPeripheralManagerPrivateDelegate peripheralManager:didReceiveReadRequest:];
+-[_TtC15FindMyBluetoothP33_88C8B7AD69F25579A35CBE68F364F20C53DelegateTrampoline_CBPeripheralManagerPrivateDelegate peripheralManager:didReceiveWriteRequests:];
+-[_TtC15FindMyBluetoothP33_88C8B7AD69F25579A35CBE68F364F20C53DelegateTrampoline_CBPeripheralManagerPrivateDelegate peripheralManagerIsReadyToUpdateSubscribers:];
+-[_TtC15FindMyBluetoothP33_88C8B7AD69F25579A35CBE68F364F20C53DelegateTrampoline_CBPeripheralManagerPrivateDelegate peripheralManager:central:didUnsubscribeFromCharacteristic:];
+-[_TtC15FindMyBluetoothP33_88C8B7AD69F25579A35CBE68F364F20C53DelegateTrampoline_CBPeripheralManagerPrivateDelegate peripheralManagerDidStartAdvertising:error:];
+-[_TtC15FindMyBluetoothP33_88C8B7AD69F25579A35CBE68F364F20C53DelegateTrampoline_CBPeripheralManagerPrivateDelegate peripheralManager:central:didSubscribeToCharacteristic:];
+-[_TtC15FindMyBluetoothP33_88C8B7AD69F25579A35CBE68F364F20C53DelegateTrampoline_CBPeripheralManagerPrivateDelegate peripheralManager:didStartPeriodicAdvertising:];
+-[_TtC15FindMyBluetoothP33_88C8B7AD69F25579A35CBE68F364F20C53DelegateTrampoline_CBPeripheralManagerPrivateDelegate peripheralManager:didStopPeriodicAdvertising:];
+```

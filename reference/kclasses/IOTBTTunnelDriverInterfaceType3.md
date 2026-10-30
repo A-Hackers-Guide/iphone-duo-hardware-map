@@ -1,0 +1,72 @@
+# `IOTBTTunnelDriverInterfaceType3`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.iokit.IOThunderboltFamily`](../kexts/com.apple.iokit.IOThunderboltFamily.md)
+- Object size: `0xa0` (160 bytes)
+- Metaclass: `0xfffffe000ba1c6f8`; metaclass vtable `0xfffffe0008408f88`; class vtable `0xfffffe0008408c98`
+- Registration (init): `0xfffffe000a45ef28`
+- Superclasses: [`IOTBTTunnelDriverInterface`](IOTBTTunnelDriverInterface.md)
+
+## Strings in its kext that name it (60)
+
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::allocateActivationStatePerPort - entered\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::setTunnelStartWithTransportPort - activationState = %p transportPort=0x%x fTunnelIsStarted = %d fPendingPorts->getCount() = 0x%x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidActivateWithTransportPort - transportPort=0x%x changed=%d return\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::setAllocatedAndActivatedWithTransportPort - transportPort=0x%x fActualTunnelIsAllocated = %d fActualTunnelIsActivated = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::setAllocatedAndActivatedWithTransportPort - transportPort=0x%x fTunnelIsAllocated = %d fTunnelIsActivated = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::messagePortClientsWithTransportPort - msg = 0x%08x activationState=%p \n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::areAllClientsAsleep isAsleep=%d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelWillSleepPerTransportPort transportPort=0x%x - waiting for clients to sleep\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelDeallocateWithTransportPort - transportPort=0x%x woke up fActualTunnelIsAllocated = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelSleepWithTransportPort - transportPort=0x%x sleep on fReadyToReleaseClient = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::messagePortClientsWithTransportPort - sending message to destination port at (%x:%llx:%x)\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelDeallocateWithTransportPort transportPort=0x%x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidDeallocateWithTransportPort transportPort=0x%x - clear allocated and activated\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::sendStateChangeNotificationWithTransportPort - transportPort=0x%x ioportIndex=0x%x isAllocateOp=%d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelWakeWithTransportPort - transportPort=0x%x fTunnelIsAllocated = %d fTunnelIsActivated = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::countActiveClients activeClients=0x%x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelWakeWithTransportPort transportPort=0x%x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelWillSleepPerTransportPort transportPort=0x%x - changed=%d return\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidActivateWithTransportPort - set activated and allocated\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelWillDeactivateWithTransportPort - transportPort=0x%x changed=%d return\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidActivateWithTransportPort transportPort=0x%x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::getAvailableTBTPorts - srcPort=%p dstPort = %p\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::unsetTransportPortToIOPortIndex  status=0x%x - transportPort=0x%x \n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelDeallocateWithTransportPort - transportPort=0x%x sleep on fActualTunnelIsAllocated = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::setAllocatedAndActivatedWithTransportPort - transportPort=0x%x changed = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::allocateActivationStatePerPort - exiting status=0x%x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelSleepWithTransportPort transportPort=0x%x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::addAvailableTBTPorts - success = %d srcPort=%p dstPort = %p\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::countActiveClients fTunnelActivationStatePerPort=%p\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidWake - transportPort=0x%x  fIsSleeping = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::setTransportPortToIOPortIndex  status=0x%x - transportPort=0x%x ioPortIndex=0x%x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::copyDestinationPortWithTransportPort - return tbtPort = %p\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::allocateActivationStatePerPort - allocated succssfully\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::keyForPort - %s\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidDeallocateWithTransportPort transportPort=0x%x - return\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelSleepWithTransportPort - transportPort=0x%x woke up fReadyToReleaseClient = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::countUsingClients usingClients=0x%x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::getTransportPortToIOPortIndex  status=0x%x - transportPort=0x%x ioPortIndex=0x%x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelWillSleep transportPort=0x%x \n`
+- `%lldus IOTBTTunnelDriverInterfaceType3<%p>::initWithManager\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForClientStopWithTransportPort transportPort=0x%x - return status = 0x%08x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelDeallocateWithTransportPort - transportPort=0x%x fTunnelIsAllocated = %d fTunnelIsActivated = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidWake - transportPort=0x%x  We're awake. Tell the current tunnel state.\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidDeallocateWithTransportPort port=0x%x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::getAvailablePort - transportPort = 0x%x fPendingPorts->getCount() = 0x%x status=0x%x\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForClientStopWithTransportPort transportPort=0x%x - sleep on fTunnelIsStarted = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::isTunnelInitializedWithTransportPort - port=0x%x tunnelWillActivated=%d tunnelIsStarted=%d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidDeallocateWithTransportPort transportPort=0x%x - waiting for clients to stop using tunnel or to sleep\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelWillSleepPerTransportPort transportPort=0x%x \n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::copySourcePortWithTransportPort - return port = %p\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::messagePortClientsWithTransportPort - sending message to source port at (%x:%llx:%x)\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForClientStopWithTransportPort transportPort=0x%x \n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::allocateActivationStatePerPort - port_key found\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidWake - transportPort=0x%x fIsSleeping = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::setAllocatedAndActivatedWithTransportPort - transportPort=0x%x prev_tunnel_is_allocated = %d prev_tunnel_is_activated = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::tunnelDidDeallocateWithTransportPort transportPort=0x%x - unblock clients that were waiting for deallocation\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelWakeWithTransportPort - transportPort=0x%x sleep on fTunnelIsActivated = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelSleepWithTransportPort - transportPort=0x%x fReadyToReleaseClient = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::setAllocatedAndActivatedWithTransportPort - activationState = %p transportPort=0x%x allocated = %d activated = %d\n`
+- `%lldus IOTBTTunnelDriverInterfaceType3(%d)<%p>::waitForTunnelWakeWithTransportPort - transportPort=0x%x return status = 0x%08x\n`

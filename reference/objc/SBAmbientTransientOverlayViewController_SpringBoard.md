@@ -1,0 +1,199 @@
+# `SBAmbientTransientOverlayViewController`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBTransientOverlayViewController`
+- Protocols: `SBActivityAmbientObserverDelegate`, `AMUIAmbientViewControllerDelegate`, `SBActivityAmbientViewControllerDelegate`, `SBFMobileKeyBagObserver`, `AMAuthenticationHandling`, `AMUIOnboardingViewControllerDelegate`, `SBFBacklightEnvironmentSceneProviding`, `SBAmbientAssistantPresenterDelegate`, `BSInvalidatable`
+- 27 instance variables, 13 properties, 138 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"AMUIAmbientViewController" _ambientViewController;
+@"SBActivityAmbientObserver" _ambientActivityObserver;
+@"SBAmbientSettings" _ambientSettings;
+@"MTMaterialView" _backgroundBlurMaterialView;
+@"MTMaterialView" _contentBlurMaterialView;
+@"MTMaterialView" _activityBlurMaterialView;
+Q _transitionAnimationCount;
+Q _activityPresentationAnimationCount;
+@"SBActivityManager" _activityManager;
+B _isPerformingPresentationAnimation;
+@"SBActivityAmbientViewController" _activityViewController;
+@"AMAmbientDefaults" _ambientDefaults;
+@"AMUIOnboardingViewController" _onboardingViewController;
+@"<BSDefaultObserver>" _defaultObserver;
+@"SBAmbientProudLockViewController" _proudLockViewController;
+@"<BSInvalidatable>" _lockElementBloomSuppressionAssertion;
+@"<BSInvalidatable>" _extendedWakeGesturesAssertion;
+@"SBActivityAlert" _activeAlert;
+@"AMUIHostSceneCoordinator" _hostSceneCoordinator;
+@"SBAmbientAssistantPresenter" _assistantPresenter;
+@"SBAmbientAssistantViewController" _assistantViewController;
+B _hasCommittedFluidDismissal;
+B _ambientBatteryChargingUIVisible;
+B _compactActivityOverlaySuppressed;
+B _configuringUIVisible;
+@"<SBFIdleTimerBehaviorProviding>" _ambientIdleTimerBehaviorProvider;
+@"<SBAmbientTransientOverlayViewControllerDelegate>" _delegate;
+```
+
+## Properties
+
+```
+@property (TB,N,GisConfiguringUIVisible,V_configuringUIVisible) configuringUIVisible;
+@property (T@"<SBAmbientTransientOverlayViewControllerDelegate>",W,N,V_delegate) delegate;
+@property (TQ,N) notificationCount;
+@property (T@"<SBFIdleTimerBehaviorProviding>",&,N,V_ambientIdleTimerBehaviorProvider) ambientIdleTimerBehaviorProvider;
+@property (T@"SBAmbientAssistantPresenter",R,N,V_assistantPresenter) assistantPresenter;
+@property (TB,R,N) wantsIdleTimerDisabled;
+@property (TB,R,N) isForegroundActive;
+@property (T@"PRSPosterConfiguration",R,N) activeConfiguration;
+@property (T@"NSDictionary",R,N) activeConfigurationMetadata;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[SBAmbientTransientOverlayViewController scenesForBacklightSession];
+-[SBAmbientTransientOverlayViewController preferredUnlockedGestureDismissalStyle];
+-[SBAmbientTransientOverlayViewController supportsAlwaysOnDisplay];
+-[SBAmbientTransientOverlayViewController activeConfiguration];
+-[SBAmbientTransientOverlayViewController handleGestureDismissal];
+-[SBAmbientTransientOverlayViewController newTransientOverlayPresentationTransitionCoordinator];
+-[SBAmbientTransientOverlayViewController preferredDisplayLayoutElementIdentifier];
+-[SBAmbientTransientOverlayViewController init];
+-[SBAmbientTransientOverlayViewController viewWillDisappear:];
+-[SBAmbientTransientOverlayViewController _backlightLuminanceDidChange:previousTraitCollection:];
+-[SBAmbientTransientOverlayViewController associatedSceneIdentifiersToSuppressInSystemAperture];
+-[SBAmbientTransientOverlayViewController supportedInterfaceOrientations];
+-[SBAmbientTransientOverlayViewController dealloc];
+-[SBAmbientTransientOverlayViewController audioCategoriesDisablingVolumeHUD];
+-[SBAmbientTransientOverlayViewController idleTimerDuration];
+-[SBAmbientTransientOverlayViewController newTransientOverlayDismissalTransitionCoordinator];
+-[SBAmbientTransientOverlayViewController viewDidLoad];
+-[SBAmbientTransientOverlayViewController viewDidLayoutSubviews];
+-[SBAmbientTransientOverlayViewController shouldAutorotate];
+-[SBAmbientTransientOverlayViewController associatedBundleIdentifiersToSuppressInSystemAperture];
+-[SBAmbientTransientOverlayViewController viewWillAppear:];
+-[SBAmbientTransientOverlayViewController invalidate];
+-[SBAmbientTransientOverlayViewController _canShowWhileLocked];
+-[SBAmbientTransientOverlayViewController setDelegate:];
+-[SBAmbientTransientOverlayViewController viewDidMoveToWindow:shouldAppearOrDisappear:];
+-[SBAmbientTransientOverlayViewController viewDidAppear:];
+-[SBAmbientTransientOverlayViewController isContentOpaque];
+-[SBAmbientTransientOverlayViewController preferredLockedGestureDismissalStyle];
+-[SBAmbientTransientOverlayViewController _supportsPortraitOrientation];
+-[SBAmbientTransientOverlayViewController handleInteractionHIDEvent:];
+-[SBAmbientTransientOverlayViewController keybag:extendedStateDidChange:];
+-[SBAmbientTransientOverlayViewController loadView];
+-[SBAmbientTransientOverlayViewController assistantPresenter];
+-[SBAmbientTransientOverlayViewController delegate];
+-[SBAmbientTransientOverlayViewController notificationCount];
+-[SBAmbientTransientOverlayViewController viewDidDisappear:];
+-[SBAmbientTransientOverlayViewController _stopAlertingForActivityIdentifier:];
+-[SBAmbientTransientOverlayViewController idleTimerMode];
+-[SBAmbientTransientOverlayViewController allowsStackingOverlayContentAbove];
+-[SBAmbientTransientOverlayViewController preferredStatusBarStyle];
+-[SBAmbientTransientOverlayViewController prefersStatusBarHidden];
+-[SBAmbientTransientOverlayViewController prefersEmbeddedDisplayPresentation];
+-[SBAmbientTransientOverlayViewController idleWarnMode];
+-[SBAmbientTransientOverlayViewController containerParticipant];
+-[SBAmbientTransientOverlayViewController handleHomeButtonPress];
+-[SBAmbientTransientOverlayViewController setNotificationCount:];
+-[SBAmbientTransientOverlayViewController wantsIdleTimerDisabled];
+-[SBAmbientTransientOverlayViewController _onboardingPose];
+-[SBAmbientTransientOverlayViewController activityAmbientViewControllerCanBeginFullOverlayDismissGesture:];
+-[SBAmbientTransientOverlayViewController _preferredGestureDismissalStyle];
+-[SBAmbientTransientOverlayViewController ambientViewController:isApplicationVisibleWithBundleIdentifier:];
+-[SBAmbientTransientOverlayViewController _addActivityViewControllerWithPrimaryItem:withOverlayMode:completion:];
+-[SBAmbientTransientOverlayViewController _addNewPrimaryActivityWithItem:forOngoingActivity:];
+-[SBAmbientTransientOverlayViewController _addProudLockViewControllerIfNecessary];
+-[SBAmbientTransientOverlayViewController _animateDismissalOfActivityView:withCompletion:];
+-[SBAmbientTransientOverlayViewController _animatePresentationOfActivityView:];
+-[SBAmbientTransientOverlayViewController _canAddPrimaryActivityItem];
+-[SBAmbientTransientOverlayViewController _canAddSecondaryActivityItem:];
+-[SBAmbientTransientOverlayViewController _clearContentBlurMaterialViewIfNecessary];
+-[SBAmbientTransientOverlayViewController _configureActivityViewBlurMaterialWithInitialWeighting:parentView:];
+-[SBAmbientTransientOverlayViewController _configureBlurMaterialView:withParentView:];
+-[SBAmbientTransientOverlayViewController _configureTransitionAnimationBackgroundBlurMaterialViewWithInitialWeighting:];
+-[SBAmbientTransientOverlayViewController _configureTransitionAnimationContentBlurMaterialViewWithInitialWeighting:];
+-[SBAmbientTransientOverlayViewController _decrementActivityPresentationAnimationCountAndPerformAnimationCleanUpIfNecessaryForActivityView:withCompletion:];
+-[SBAmbientTransientOverlayViewController _decrementTransitionAnimationCountAndPerformAnimationCleanUpIfNecessary];
+-[SBAmbientTransientOverlayViewController _dismissActivityViewController];
+-[SBAmbientTransientOverlayViewController _incrementActivityPresentationAnimationCount];
+-[SBAmbientTransientOverlayViewController _incrementTransitionAnimationCount];
+-[SBAmbientTransientOverlayViewController _isFirstPresentation];
+-[SBAmbientTransientOverlayViewController _isPresentingOnboardingView];
+-[SBAmbientTransientOverlayViewController _isShowingFullActivityOverlay];
+-[SBAmbientTransientOverlayViewController _isShowingFullActivityOverlayForItem:];
+-[SBAmbientTransientOverlayViewController _itemIsFirstPartyActivity:];
+-[SBAmbientTransientOverlayViewController _needsNarrowOnboardingBounds];
+-[SBAmbientTransientOverlayViewController _newBackgroundBlurMaterialViewWithInitialWeighting:parentView:];
+-[SBAmbientTransientOverlayViewController _newContentBlurMaterialViewWithInitialWeighting:parentView:];
+-[SBAmbientTransientOverlayViewController _registerForFirstPresentationStateChange];
+-[SBAmbientTransientOverlayViewController _removeActivityViewBlurMaterialView];
+-[SBAmbientTransientOverlayViewController _removeBackgroundBlurMaterialView];
+-[SBAmbientTransientOverlayViewController _removeContentBlurMaterialView];
+-[SBAmbientTransientOverlayViewController _removeProudLockViewController];
+-[SBAmbientTransientOverlayViewController _requestZStackParticipantPreferencesUpdate];
+-[SBAmbientTransientOverlayViewController _resetContentDismissalEffectsToRestState];
+-[SBAmbientTransientOverlayViewController _setActivityViewHidden:];
+-[SBAmbientTransientOverlayViewController _setProudLockAuthenticated:];
+-[SBAmbientTransientOverlayViewController _setupAmbientDefaults];
+-[SBAmbientTransientOverlayViewController _shouldDisableIdleTimer];
+-[SBAmbientTransientOverlayViewController _updateCompactActivityOverlaySuppression];
+-[SBAmbientTransientOverlayViewController _updateContentViewEdgeFeatherMaskForProgress:];
+-[SBAmbientTransientOverlayViewController _updateOnboardingContentBounds];
+-[SBAmbientTransientOverlayViewController activeConfigurationMetadata];
+-[SBAmbientTransientOverlayViewController activityAmbientViewController:addPendingItem:];
+-[SBAmbientTransientOverlayViewController activityAmbientViewController:isActiveActivityItem:];
+-[SBAmbientTransientOverlayViewController activityAmbientViewController:removePendingItem:];
+-[SBAmbientTransientOverlayViewController activityAmbientViewControllerDidUpdateAudioCategoriesDisablingVolumeHUD:];
+-[SBAmbientTransientOverlayViewController activityAmbientViewControllerDidUpdateVisibleActivityItems:];
+-[SBAmbientTransientOverlayViewController activityAmbientViewControllerNextPendingActivityItem:];
+-[SBAmbientTransientOverlayViewController activityAmbientViewControllerResetIdleTimerBehavior:];
+-[SBAmbientTransientOverlayViewController addActivityItem:forOngoingActivity:];
+-[SBAmbientTransientOverlayViewController ambientDefaultsForAmbientViewController:];
+-[SBAmbientTransientOverlayViewController ambientIdleTimerBehaviorProvider];
+-[SBAmbientTransientOverlayViewController ambientViewController:didSetBiometricAuthenticationDisabled:];
+-[SBAmbientTransientOverlayViewController ambientViewController:didSetInlineAuthenticationViewVisible:];
+-[SBAmbientTransientOverlayViewController ambientViewController:didUpdateActiveConfiguration:withMetadata:];
+-[SBAmbientTransientOverlayViewController ambientViewController:didUpdateBatteryChargingUIVisible:];
+-[SBAmbientTransientOverlayViewController ambientViewController:isTransitioningSettled:];
+-[SBAmbientTransientOverlayViewController ambientViewController:requestsUnlock:withCompletion:];
+-[SBAmbientTransientOverlayViewController ambientViewController:wantsBiometricAuthenticationBlockedForDeepUserInteraction:];
+-[SBAmbientTransientOverlayViewController ambientViewControllerAuthenticationHandler:];
+-[SBAmbientTransientOverlayViewController ambientViewControllerIsAuthenticated:];
+-[SBAmbientTransientOverlayViewController ambientViewControllerRequestsConnectedChargerId:];
+-[SBAmbientTransientOverlayViewController ambientViewControllerShouldHandOffBatteryChargingUISpace:];
+-[SBAmbientTransientOverlayViewController ambientViewControllerWillBeginConfiguration:];
+-[SBAmbientTransientOverlayViewController ambientViewControllerWillEndConfiguration:];
+-[SBAmbientTransientOverlayViewController ambientViewControllerWillResumePresentationTrigger:];
+-[SBAmbientTransientOverlayViewController ambientViewControllerWillSuspendPresentationTrigger:];
+-[SBAmbientTransientOverlayViewController attemptUnlockForSender:forBioUnlock:completion:];
+-[SBAmbientTransientOverlayViewController defaultWidgetDescriptorStacksForAmbientViewController:];
+-[SBAmbientTransientOverlayViewController dismissAmbientActivityAlert:];
+-[SBAmbientTransientOverlayViewController displayTransientProudLock];
+-[SBAmbientTransientOverlayViewController homeAffordanceSuppression];
+-[SBAmbientTransientOverlayViewController initWithHostSceneCoordinator:];
+-[SBAmbientTransientOverlayViewController isConfiguringUIVisible];
+-[SBAmbientTransientOverlayViewController isForegroundActive];
+-[SBAmbientTransientOverlayViewController onboardingViewController:requestsDismissalWithUserIntent:];
+-[SBAmbientTransientOverlayViewController presentAmbientActivityAlert:];
+-[SBAmbientTransientOverlayViewController presenter:requestsAssistantPresentationWithViewController:];
+-[SBAmbientTransientOverlayViewController presenterRequestsAssistantDismissal:];
+-[SBAmbientTransientOverlayViewController preventsClippingToBounds];
+-[SBAmbientTransientOverlayViewController preventsDismissalOnLockForInactiveScreen];
+-[SBAmbientTransientOverlayViewController preventsSystemApertureSuppressionFromBelow];
+-[SBAmbientTransientOverlayViewController removeActivityItem:];
+-[SBAmbientTransientOverlayViewController setAmbientIdleTimerBehaviorProvider:];
+-[SBAmbientTransientOverlayViewController setConfiguringUIVisible:];
+-[SBAmbientTransientOverlayViewController setNeedsIdleTimerReset];
+-[SBAmbientTransientOverlayViewController setPresentationContentTransform:];
+-[SBAmbientTransientOverlayViewController transientOverlayViewControllerDidUpdateFluidDismissalState:];
+-[SBAmbientTransientOverlayViewController widgetHostManagerForAmbientViewController:];
+```

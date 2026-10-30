@@ -1,0 +1,223 @@
+# `/System/Library/PreferenceBundles/MobileSafariSettings.bundle/Safari.plist`
+
+From the small APFS image 141-28395-106.dmg. 4,136 bytes.
+
+- `items`:
+  -
+    - `cell`: `PSGroupCell`
+    - `footerCellClass`: `PSFooterHyperlinkView`
+    - `id`: `SEARCH`
+    - `label`: `Search Group Title`
+  -
+    - `cell`: `PSLinkListCell`
+    - `defaults`: `com.apple.mobilesafarishared`
+    - `detail`: `SearchEngineSettingsController`
+    - `id`: `SEARCH_ENGINE_SETTING`
+    - `key`: `SearchEngineStringSetting`
+    - `label`: `Search Engine`
+  -
+    - `cell`: `PSSwitchCell`
+    - `containerBundleID`: `com.apple.mobilesafari`
+    - `default`: `0`
+    - `defaults`: `com.apple.mobilesafari`
+    - `id`: `SEARCH_SUGGESTION_SETTING`
+    - `key`: `SuppressSearchSuggestions`
+    - `label`: `Search Suggestions`
+    - `negate`: `True`
+    - `set`: `setSearchSuggestionsEnabled:forSpecifier:`
+  -
+    - `cell`: `PSSwitchCell`
+    - `containerBundleID`: `com.apple.mobilesafari`
+    - `default`: `1`
+    - `defaults`: `com.apple.mobilesafari`
+    - `id`: `SIRI_SUGGESTIONS`
+    - `key`: `SpotlightSuggestionsEnabled`
+    - `label`: `Safari Suggestions`
+  -
+    - `cell`: `PSLinkListCell`
+    - `detail`: `SafariQuickWebsiteSearchSettingsController`
+    - `get`: `siteSpecificSearchSettingsEnabledString`
+    - `id`: `SITE_SPECIFIC_SEARCH`
+    - `label`: `Quick Website Search (Header Label)`
+  -
+    - `cell`: `PSSwitchCell`
+    - `containerBundleID`: `com.apple.mobilesafari`
+    - `default`: `1`
+    - `defaults`: `com.apple.mobilesafari`
+    - `id`: `ENABLE_PREFETCHING`
+    - `key`: `SpeculativeLoading`
+    - `label`: `Preload Top Hit`
+  -
+    - `cell`: `PSGroupCell`
+    - `label`: `General`
+  -
+    - `cell`: `PSLinkListCell`
+    - `detail`: `SafariAutoFillSettingsController`
+    - `id`: `AUTO_FILL`
+    - `label`: `AutoFill`
+    - `safariAvailable`: `isAutoFillAvailable:`
+    - `safariRestricted`: `isAutoFillRestricted:`
+  -
+    - `cell`: `PSLinkListCell`
+    - `detail`: `SafariFavoritesFolderPickerContoller`
+    - `get`: `favoritesFolderTitle`
+    - `id`: `FAVORITES_FOLDER`
+    - `label`: `Start Page Favorites`
+    - `safariRestricted`: `isFavoritesFolderRestricted:`
+  -
+    - `cell`: `PSSwitchCell`
+    - `containerBundleID`: `com.apple.mobilesafari`
+    - `default`: `0`
+    - `defaults`: `com.apple.mobilesafari`
+    - `id`: `ALWAYS_SHOW_BOOKMARKS_BAR`
+    - `key`: `AlwaysShowBookmarksBar`
+    - `label`: `Show Favorites Bar`
+    - `safariAvailable`: `isShowFavoritesBarAvailable:`
+  -
+    - `cell`: `PSSwitchCell`
+    - `containerBundleID`: `com.apple.mobilesafari`
+    - `default`: `0`
+    - `defaults`: `com.apple.mobilesafari`
+    - `id`: `SHOW_WEBPAGE_STATUS_BAR`
+    - `key`: `ShowsWebpageStatusBar`
+    - `label`: `Show Links on Hover`
+    - `safariAvailable`: `supportsWebpageStatusBar:`
+  -
+    - `cell`: `PSSwitchCell`
+    - `containerBundleID`: `com.apple.mobilesafari`
+    - `defaults`: `com.apple.mobilesafari`
+    - `get`: `isBlockPopUpsEnabled:`
+    - `id`: `BLOCK_POPUPS`
+    - `key`: `JavaScriptCanOpenWindowsAutomatically`
+    - `label`: `Block Pop-ups`
+    - `negate`: `True`
+    - `safariRestricted`: `isBlockPopUpsRestricted:`
+  -
+    - `cell`: `PSGroupCell`
+    - `id`: `TABS`
+    - `label`: `Tabs Group Title`
+  -
+    - `cell`: `PSSwitchCell`
+    - `containerBundleID`: `com.apple.mobilesafari`
+    - `default`: `1`
+    - `defaults`: `com.apple.mobilesafari`
+    - `id`: `SHOW_TAB_BAR`
+    - `key`: `ShowTabBar`
+    - `label`: `Show Tab Bar`
+    - `safariAvailable`: `isTabBarAvailable:`
+  -
+    - `cell`: `PSSwitchCell`
+    - `containerBundleID`: `com.apple.mobilesafari`
+    - `defaults`: `com.apple.mobilesafari`
+    - `get`: `isHideBarsWhileScrollingEnabled`
+    - `id`: `HIDE_BARS_WHEN_SCROLLING`
+    - `key`: `HideBarsWhenScrolling`
+    - `label`: `Hide Tab Bar While Scrolling`
+    - `safariAvailable`: `isHideBarsWhileScrollingSettingAvailable:`
+  -
+    - `cell`: `PSSwitchCell`
+    - `containerBundleID`: `com.apple.mobilesafari`
+    - `default`: `1`
+    - `defaults`: `com.apple.mobilesafari`
+    - `id`: `OPEN_LINKS_IN_BACKGROUND_IPAD`
+    - `key`: `OpenLinksInBackground`
+    - `label`: `Open New Tabs in Background`
+    - `safariAvailable`: `userInterfaceIdiomIsPad:`
+  -
+    - `cell`: `PSLinkListCell`
+    - `containerBundleID`: `com.apple.mobilesafari`
+    - `default`: `0`
+    - `defaults`: `com.apple.mobilesafari`
+    - `detail`: `SafariSettingsUpdatableListItemsController`
+    - `id`: `OPEN_LINKS_IN_BACKGROUND_IPHONE`
+    - `key`: `OpenLinksInBackground`
+    - `label`: `Open Links`
+    - `safariAvailable`: `userInterfaceIdiomIsPhone:`
+    - `validTitles`:
+      - `In New Tab`
+      - `In Background`
+    - `validValues`:
+      - `0`
+      - `1`
+  -
+    - `cell`: `PSGroupCell`
+    - `footerCellClass`: `PSFooterHyperlinkView`
+    - `id`: `PRIVACY`
+    - `label`: `Privacy`
+  -
+    - `cell`: `PSSwitchCell`
+    - `get`: `trackerProtectionEnabled`
+    - `id`: `TRACKER_PROTECTION`
+    - `label`: `Prevent Cross-Site Tracking`
+    - `safariRestricted`: `isTrackerProtectionRestricted:`
+    - `set`: `safariToggleTrackerProtection:forSpecifier:`
+  -
+    - `cell`: `PSSwitchCell`
+    - `get`: `blockAllNewWebsiteDataEnabled`
+    - `id`: `BLOCK_ALL_NEW_COOKIES`
+    - `label`: `Block All Cookies`
+    - `safariRestricted`: `isBlockAllNewWebsiteDataRestricted:`
+    - `set`: `safariToggleBlockAllNewWebsiteData:forSpecifier:`
+  -
+    - `cell`: `PSSwitchCell`
+    - `containerBundleID`: `com.apple.mobilesafari`
+    - `defaults`: `com.apple.mobilesafari`
+    - `get`: `isSafariFraudWarningEnabled:`
+    - `id`: `WARN_ABOUT_FRAUDULENT_WEBSITES`
+    - `key`: `WarnAboutFraudulentWebsites`
+    - `label`: `Fraudulent Website Warning`
+    - `safariRestricted`: `isSafariFraudWarningRestricted:`
+    - `set`: `safariFraudWarningsToggled:forSpecifier:`
+  -
+    - `cell`: `PSSwitchCell`
+    - `containerBundleID`: `com.apple.mobilesafari`
+    - `default`: `1`
+    - `defaults`: `com.apple.mobilesafari`
+    - `id`: `PRIVATE_CLICK_MEASUREMENT`
+    - `key`: `PrivateClickMeasurementEnabled`
+    - `label`: `Privacy Preserving Ad Measurement`
+    - `set`: `safariTogglePrivateClickMeasurement:forSpecifier:`
+  -
+    - `cell`: `PSSwitchCell`
+    - `containerBundleID`: `com.apple.mobilesafari`
+    - `default`: `1`
+    - `defaults`: `com.apple.mobilesafari`
+    - `id`: `APPLE_PAY_DISCLOSURE_ALLOWED`
+    - `key`: `SafariApplePayDisclosureAllowed`
+    - `label`: `Check for Apple Pay`
+    - `set`: `safariToggleApplePayDisclosureAllowed:forSpecifier:`
+  -
+    - `cell`: `PSGroupCell`
+    - `id`: `HISTORY_AND_WEBSITE_DATA`
+  -
+    - `buttonAction`: `showClearHistoryAndDataConfirmation:`
+    - `cell`: `PSButtonCell`
+    - `id`: `CLEAR_HISTORY_AND_DATA`
+    - `label`: `Clear History and Data Button Title`
+    - `safariRestricted`: `isClearHistoryRestricted:`
+  -
+    - `cell`: `PSGroupCell`
+    - `id`: `ACCESSIBILITY`
+    - `label`: `Accessibility`
+  -
+    - `cell`: `PSGroupCell`
+    - `footerText`: `Reading List Automatic Download Footer Text`
+    - `label`: `Reading List`
+    - `safariAvailable`: `isOfflineReadingListAvailable:`
+  -
+    - `cell`: `PSSwitchCell`
+    - `default`: `0`
+    - `get`: `_valueForAutomaticallyDownloadReadingListItems`
+    - `id`: `OFFLINE_READING_LIST`
+    - `label`: `Automatically Save Offline`
+    - `safariAvailable`: `isOfflineReadingListAvailable:`
+    - `set`: `_setSafariAutomaticallyDownloadReadingListItems:forSpecifier:`
+  -
+    - `cell`: `PSGroupCell`
+  -
+    - `cell`: `PSLinkCell`
+    - `detail`: `SafariDeveloperSettingsController`
+    - `id`: `ADVANCED`
+    - `label`: `Advanced Button Title`
+    - `searchPlist`: `Developer`
+- `title`: `Safari`

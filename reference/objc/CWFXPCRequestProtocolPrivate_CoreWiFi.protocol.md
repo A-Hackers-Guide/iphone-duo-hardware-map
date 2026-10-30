@@ -1,0 +1,79 @@
+# `CWFXPCRequestProtocolPrivate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/CoreWiFi.framework/CoreWiFi`](../userland/System__Library__PrivateFrameworks__CoreWiFi.framework__CoreWiFi.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `CWFXPCRequestProtocolPrivateReadonly`
+- 0 instance variables, 0 properties, 69 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[CWFXPCRequestProtocolPrivate setBackgroundScanConfiguration:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate reportQuickProbeResult:networkProfile:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setWiFiNetworkSharingAskToShareStatus:networkID:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setRangeable:peerList:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setCarPlayInternet:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setAutoJoinDenyListForNetwork:reason:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate resetInternetSharingStatsWithRequestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setAutoHotspotMode:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate startUIScanWithRequestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setFamilyHotspotPreferences:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate updateKnownNetworkProfile:properties:OSSpecificKeys:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setPrivateMACAddressUserJoinFailureUIState:networkProfile:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate disassociateWithReason:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate requestWiFiNetworkSharingAuthorizationWithRequestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setThermalIndex:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate removeKnownBSS:knownNetworkProfile:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setLQMConfiguration:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate acknowledgeWiFiNetworkSharingConnectedAPUpdate:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setUserAutoJoinState:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate performRangingWithPeerList:timeout:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate performAutoJoinWithParameters:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setUCMExtProfile:requestParams:error:];
+-[CWFXPCRequestProtocolPrivate endActivityWithUUID:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setShareMyPersonalHotspotMode:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate configureSensing:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setUserSettings:properties:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setCompanionCountryCode:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setInternetSharingState:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate provideDTCStats:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate beginActivity:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setPower:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate addKnownBSS:knownNetworkProfile:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate askToShareWiFiNetworkSharingNetworkFromAppexWithRequestParams:reply:];
+-[CWFXPCRequestProtocolPrivate performScanWithParameters:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate resetAutoJoinStatisticsWithRequestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setInternetSharingDiscoveryStateExt:request:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate endAllActivitiesWithRequestParams:reply:];
+-[CWFXPCRequestProtocolPrivate performANQPWithParameters:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate updateKnownBSS:knownNetworkProfile:properties:OSSpecificKeys:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate performUIBeaconCacheQuery:reply:];
+-[CWFXPCRequestProtocolPrivate setRangingIdentifier:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate startHostAPModeWithConfiguration:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate stopHostAPModeWithRequestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setPrivateMACAddressMode:networkProfile:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setPrivateMACAddressModeSystemSetting:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setInternetSharingDiscoveryState:immediateDisable:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate stopUIScanWithRequestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setBTCoexActiveProfileName:requestParams:error:];
+-[CWFXPCRequestProtocolPrivate associateWithParameters:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate performNearbyDeviceDiscovery:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate removeKnownNetworkProfile:reason:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate askToShareWiFiNetworkSharingNetworkFromAppWithRequestParams:reply:];
+-[CWFXPCRequestProtocolPrivate acknowledgeWiFiNetworkSharingNetworkListUpdate:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setBlockedBands:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate addKnownNetworkProfile:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate updateSoftAPBand:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setChannel:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate stopAWDLPeerAssistedDiscoveryWithRequestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setInternetSharingPassword:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setInternetSharingNetworkName:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setPassword:knownNetworkProfile:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setCaptivePortalCredentials:knownNetworkProfile:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setSensingEnabled:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate clearAutoJoinDenyListForNetwork:reason:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate startAWDLPeerAssistedDiscoveryWithParameters:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setMISDiscoveryState:immediateDisable:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setMISDiscoveryStateExt:request:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setMISPassword:requestParams:reply:];
+-[CWFXPCRequestProtocolPrivate setMISState:requestParams:reply:];
+```

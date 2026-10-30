@@ -1,0 +1,1448 @@
+# `com.apple.driver.AppleSmartBatteryManagerEmbedded`
+
+- Name: AppleSmartBatteryManager-Embedded
+- Version: `1`
+- UUID: `886AAB5F-6488-39B1-84B5-FDBEB9E7AE5B`
+- Source version: `2043.40.52.0.2`
+- Depends on: [`com.apple.driver.AppleAuthCP`](com.apple.driver.AppleAuthCP.md) 1.0.0, [`com.apple.driver.AppleSMC`](com.apple.driver.AppleSMC.md) 1.0.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.3.1, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.3.1, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.3.1, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.3.1, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (1) [KC]
+
+### AppleSmartBatteryManagerEmbedded
+- `CFBundleIdentifier`: `com.apple.driver.AppleSmartBatteryManagerEmbedded`
+- `IOClass`: `AppleSmartBatteryManager`
+- `IOMatchCategory`: `AppleSmartBatteryManager`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSmartBatteryManagerEmbedded`
+- `IOProviderClass`: `AppleSMC`
+
+
+## C++ classes (19) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleBatteryAuth` | 0x118 | AppleAuthCPRelayInterface → IOService → IORegistryEntry |
+| `AppleBeadsBatteryAuth` | 0x120 | AppleAuthCPRelayInterface → IOService → IORegistryEntry |
+| `AppleChargerData` | 0xc8 | IOService → IORegistryEntry |
+| `AppleGasGaugeBeadsUpdate` | 0xc8 | IOService → IORegistryEntry |
+| `AppleGasGaugeBeadsUpdateUserClient` | 0xe0 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `AppleGasGaugeUpdate` | 0xc0 | IOService → IORegistryEntry |
+| `AppleGasGaugeUpdateUserClient` | 0xe0 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `AppleSmartBattery` | 0x258 | IOPMPowerSource → IOService → IORegistryEntry |
+| `AppleSmartBatteryBank` | 0xf0 | IOService → IORegistryEntry |
+| `AppleSmartBatteryCell` | 0xa8 | IOService → IORegistryEntry |
+| `AppleSmartBatteryHFDataClient` | 0x40 |  |
+| `AppleSmartBatteryManager` | 0xc8 | IOService → IORegistryEntry |
+| `AppleSmartBatteryManagerUserClient` | 0xf0 | IOUserClient → IOService → IORegistryEntry |
+| `AppleSmartBatteryPack` | 0x148 | IOService → IORegistryEntry |
+| `AppleSmartBatteryUserClient` | 0xe8 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `OSValueObject<streamCallbackArgs>` | 0x18 |  |
+| `OSValueObject<streamKeyInfo>` | 0x18 |  |
+| `OSValueObject<streamQueueCollect>` | 0x18 |  |
+| `OSValueObject<streamTimerEvent>` | 0x18 |  |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0000dcdb off=0x00782c70-0x0079094b addr=0xfffffe0007786c70-0xfffffe000779494b r--/r--   __TEXT            
+	sz=0x00008657 off=0x00783388-0x0078b9df addr=0xfffffe0007787388-0xfffffe000778f9df               __TEXT.__cstring          (CstringLiterals)
+	sz=0x00002670 off=0x0078b9e0-0x0078e050 addr=0xfffffe000778f9e0-0xfffffe0007792050               __TEXT.__const            
+	sz=0x000028fb off=0x0078e050-0x0079094b addr=0xfffffe0007792050-0xfffffe000779494b               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x00032078 off=0x02729810-0x0275b888 addr=0xfffffe000972d810-0xfffffe000975f888 r-x/r-x   __TEXT_EXEC       
+	sz=0x000318b8 off=0x02729810-0x0275b0c8 addr=0xfffffe000972d810-0xfffffe000975f0c8          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000007c0 off=0x0275b0c8-0x0275b888 addr=0xfffffe000975f0c8-0xfffffe000975f888          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00004000 off=0x0499a570-0x0499e570 addr=0xfffffe000b99e570-0xfffffe000b9a43a0 rw-/rw-   __DATA            
+	sz=0x000001f0 off=0x0499a570-0x0499a760 addr=0xfffffe000b99e570-0xfffffe000b99e760               __DATA.__data             
+	sz=0x000004d8 off=0x00000000-0x000004d8 addr=0xfffffe000b99e760-0xfffffe000b99ec38               __DATA.__common           (Zerofill)
+	sz=0x00005768 off=0x00000000-0x00005768 addr=0xfffffe000b99ec38-0xfffffe000b9a43a0               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x000073b8 off=0x01228480-0x0122f838 addr=0xfffffe000822c480-0xfffffe0008233838 rw-/rw-   __DATA_CONST      
+	sz=0x000000a0 off=0x01228480-0x01228520 addr=0xfffffe000822c480-0xfffffe000822c520         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000078 off=0x01228520-0x01228598 addr=0xfffffe000822c520-0xfffffe000822c598         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00005d58 off=0x01228598-0x0122e2f0 addr=0xfffffe000822c598-0xfffffe00082322f0         __DATA_CONST.__const            
+	sz=0x00000700 off=0x0122e2f0-0x0122e9f0 addr=0xfffffe00082322f0-0xfffffe00082329f0         __DATA_CONST.__kalloc_type      
+	sz=0x00000960 off=0x0122e9f0-0x0122f350 addr=0xfffffe00082329f0-0xfffffe0008233350         __DATA_CONST.__kalloc_var       
+	sz=0x000003e0 off=0x0122f350-0x0122f730 addr=0xfffffe0008233350-0xfffffe0008233730         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000108 off=0x0122f730-0x0122f838 addr=0xfffffe0008233730-0xfffffe0008233838         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 281 at 0x04ae6de8
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     886AAB5F-6488-39B1-84B5-FDBEB9E7AE5B
+008: LC_SOURCE_VERSION           2043.40.52.0.2
+009: LC_FUNCTION_STARTS          offset=0x004ab2db8 size=0x3c0
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleExecutable`: `AppleSmartBatteryManager-Embedded`
+- `CFBundleGetInfoString`: `2.9, Copyright © 2017 Apple Inc. All rights reserved.`
+- `CFBundleIdentifier`: `com.apple.driver.AppleSmartBatteryManagerEmbedded`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleSmartBatteryManager-Embedded`
+- `CFBundleNumericVersion`: `16809984`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `OSBundleCompatibleVersion`: `1.0`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+  - `2`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleSmartBatteryManager-Embedded.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198897922960`
+- `_PrelinkExecutableRelativePath`: `AppleSmartBatteryManager-Embedded`
+- `_PrelinkExecutableSize`: `315195`
+- `_PrelinkExecutableSourceAddr`: `-2198897922960`
+- `_PrelinkKmodInfo`: `-2198828620432`
+
+## Strings (1310) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `PackCurrentAccumulator`
+- `FlashWriteCount`
+- `AppleBeadsBatteryAuth: failed to read key '%c%c%c%c' rc:%#x=%s\n`
+- `BatteryCycleCntLastQmax`
+- `AppleSmartBatteryBank.cpp`
+- `AppleBatteryAuth[%d]: DBG: Command: %d, RetCode: %d\n`
+- `AdapterEfficiencyLoss`
+- `AccumulatedAdapterEfficiencyLoss`
+- `PortControllerFetStatus`
+- `PortControllerSurpriseAckCount`
+- `RebalanceData`
+- `AppleGasGaugeUpdate ERROR: Failed to set command 'read info'. rc:0x%x=%s\n`
+- `MiscStatus`
+- `AppleSmartBatteryPack: ID: %d Failed to update Error Condition\n`
+- `TrustedBatteryLastTimePassed`
+- `Block`
+- `ChargerCount`
+- `built-in`
+- `12111112122212121111111111111`
+- `InstantBootGGReady`
+- `MultiFreqMag4`
+- `BatteryMaxDeltaVoltage`
+- `root`
+- `PowerNegotiable`
+- `FedDualRolePower`
+- `ChemicalWeightedRa`
+- `MfgData`
+- `LowVoltageResidencyCounters`
+- `PTATFaultCounter`
+- `AppleBeadsBatteryAuth: Failed to challenge ioret=%#x\n`
+- `FirmwareStatus`
+- `ConfiguredCurrent`
+- `RebalanceNotRebalancingReason`
+- `1222`
+- `ResetDataHardware`
+- `PowerPotential`
+- `BatteryPowerAccumulatorCount`
+- `WeightedRa`
+- `UpdateTime`
+- `AppleBeadsBatteryAuth: Failed to get signature. ioret:%#x\n`
+- `AdapterLimited`
+- `DesignCapacity`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: invalid provider\n`
+- `1`
+- `AuthMinorVersion`
+- `PrechargeCount`
+- `ObjectType`
+- `site.AppleSmartBatteryHFDataClient`
+- `QmaxUpdSuccessCount`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: no Algo chem ID in bank batteryData\n`
+- `ChemID`
+- `MaximumFCC`
+- `12111112122212121211111111211222111`
+- `QmaxUpdateDisqualified`
+- `AccumulatorErrorCount`
+- `ShutDownFilteredCurrent`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: failed to read key '%c%c%c%c' rc:%#x=%s\n`
+- `AppleSmartBatteryPack: ID: %d failed to enable Carrier Mode(%d) %x=%s\n`
+- `121111121222121212111111112122211122`
+- `AuthServiceVersion`
+- `RebalanceTimeSeconds`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: data payloadSize too large payloadSize = %d maxPayloadSize = %d\n`
+- `MinimumTemperature`
+- `PTxType`
+- `FilteredPower`
+- `IPDWattageOverride`
+- `Battery`
+- `InductiveEspSignpostParameters`
+- `BootVoltage`
+- `PortControllerSurpriseNackCount`
+- `1211111212221212112121212`
+- `AppleGasGaugeUpdate ERROR: error in gas gauge communication (%x)\n`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: invalid notification data: expected OSNumber\n`
+- `AppleGasGaugeUpdateUserClient ERROR: invalid length in MD input:%llu\n`
+- `DischargingOverCurrentHW1`
+- `Ra14`
+- `AppleBeadsBatteryAuth: Force publishing of data due to boot arg\n`
+- `AvgTimeToFull`
+- `BankID`
+- `BatteryID`
+- `AppleGasGaugeUpdate: writeData checkpoint: transfer done\n`
+- `ITMiscStatus`
+- `ResetCnt`
+- `site.struct batt_auth_cmd`
+- `AppleBeadsBatteryAuth: getSignedData: Invalid read command readback:%d != expected:%d\n`
+- `AvgTimeToEmpty`
+- `SystemCurrentIn`
+- `AppleGasGaugeUpdate ERROR: Operation '%u' failed at offset:%zu. rc:0x%x=%s\n`
+- `FeatureFlags`
+- `AppleBatteryAuth[%d]: auth co-processor error:%u\n`
+- `PowerTelemetryData`
+- `AccumulatedBatteryPower`
+- `AccumulatedSystemLoad`
+- `AppleBeadsBatteryAuth: timeout: waiting for command '%u'\n`
+- `ShutDownTimestamp`
+- `FilteredCurrentRc3`
+- `AppleGasGaugeUpdate ERROR: Failed to read UID. rc:0x%x=%s\n`
+- `TemperatureSamples`
+- `ChargerConfiguration`
+- `OrionExternalConnected`
+- `InductiveData`
+- `PTxPower`
+- `BatteryModelID`
+- `VmaxNcc`
+- `ChargeInhibit`
+- `ModDepth`
+- `site.AppleBeadsBatteryAuth`
+- `SlowChargingReason`
+- `RebalanceInrushCurrentDebug`
+- `21`
+- `Temperature`
+- `AppleBatteryAuth[%d]: invalid notification\n`
+- `MinimumQmax`
+- `I2CLogData`
+- `ApplePPMCPMS`
+- `AppleBeadsBatteryAuth: Invalid input. rc:%#x\n`
+- `ShutDownSWFcc`
+- `TxGain2`
+- `SystemPowerInAccumulatorCount`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: timeout: waiting for command '%u'\n`
+- `1211111212221212111111111111`
+- `com.apple.private.powersource-read`
+- `AppleGasGaugeBeadsUpdate ID %d: invalid notification\n`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: failed to register notifier\n`
+- `ChargingOverTemperature`
+- `AppleBatteryAuth[%d]: Failed to create SMC data key\n`
+- `IlimFrzReason`
+- `VID`
+- `2221222212222122221222212222122221222212222122221222212222122221222212222122221222212222122221222212222122221222212222122221222212222122221222212222122221222212222122221222212`
+- `MinimumFCC`
+- `AppleBeadsBatteryAuth: Failed to set up beadsTrustedDataMap at %d\n`
+- `StartBatteryVoltage`
+- `ChargeSuspend`
+- `IPDBatteryDemand`
+- `site.AppleBatteryAuth`
+- `AppleBatteryAuth[%d]: DBG: kAuthCommandIDGetCert resp: %d\n`
+- `AppleBeadsBatteryAuth: Failed to write traceID command. ioret:%#x\n`
+- `NumLDCMCollisions`
+- `\"AppleSmartBattery: not inside workloop gate\" @%s:%d`
+- `batman`
+- `CarrierModeHighVoltage`
+- `MaximumDeltaVoltage`
+- `SMCBootManagementPayload`
+- `WallEnergyEstimate`
+- `1122`
+- `MinimumRa0-8`
+- `ChargerVBUS`
+- `AppleBeadsBatteryAuth: Failed to get service version. ioret:%#x\n`
+- `HostRequestedCloak`
+- `HighAvgCurrentLastRun`
+- `ShutDownSWRemcap`
+- `RectifierCurrent`
+- `BatteryminRa8`
+- `Ra05`
+- `CurrentCapacity`
+- `AppleSmartBatteryPack: ID: %d failed to read shutdownData for pack %d\n`
+- `Ra02`
+- `AppleGasGaugeUpdate ERROR: timeout: waiting for command '%u'\n`
+- `MainCurrent`
+- `PortType`
+- `PortControllerSlpWakIsSleepEnabled`
+- `ResetDataFirmware`
+- `MinimumRa8`
+- `ShutDownDynamicSOCVcut`
+- `1211111212221212111111222`
+- `AppleBatteryAuth[%d]: DBG: Send kBatteryAuthOpSetAuthStatus Command to SMC`
+- `PowerProfile`
+- `PortControllerIrqCntldcm`
+- `IPDChargingAllowed`
+- `DownstreamAdapterFamily`
+- `AppleSMC`
+- `Soc1Voltage`
+- `DataFlashWriteCount`
+- `DischargingUnderTemperature`
+- `PortControllerSlpWakDisTime`
+- `PortControllerIrqCntRxSnkCap`
+- `OSValueObject<streamQueueCollect>`
+- `111`
+- `Qmax`
+- `MinimumPackVoltage`
+- `RDISCnt`
+- `AppleSmartBatteryPack: ID: %d failed to set Carrier Mode lower limit(%d) %x=%s\n`
+- `ShipChargeLimitEnabled`
+- `ChargerPathSelected`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: error in gas gauge communication (0x%x)\n`
+- `DeviceResetCount`
+- `CPMSBudget`
+- `PortControllerSrdyCount`
+- `ShutDownDataError`
+- `site.AppleGasGaugeUpdateUserClient`
+- `AppleGasGaugeUpdateUserClient ERROR: no data or MD\n`
+- `SimRate`
+- `PowerState`
+- `FwVersion`
+- `BatteryMaxRa8`
+- `ShutDownVoltage`
+- `IDSN`
+- `OCV`
+- `PortControllerNPDOs`
+- `AppleGasGaugeUpdate ERROR: error in gas gauge update (%x)\n`
+- `AppleGasGaugeBeadsUpdateUserClient ERROR: no output buffer for getStatus\n`
+- `InstantBootFailure`
+- `InductiveReceivePower`
+- `PortControllerElectionFailReason`
+- `InductiveEspContinuousParameters`
+- `LTOCVRestCounterHsp`
+- `kPPMTempInReq`
+- `kPPMDODInReq`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: failed to write impedence key (%c%c%c%c), raw=%d,ret=%d\n`
+- `AppleBatteryAuth[%d]: DBG: kBatteryAuthOpGetCertSerial resp: %d\n`
+- `AppleBeadsBatteryAuth`
+- `AppleRawExternalConnected`
+- `PortControllerHardResetCount`
+- `AppleRawCurrentCapacity`
+- `AppleGasGaugeUpdate ERROR: invalid notification data: expected OSNumber\n`
+- `AppleBeadsBatteryAuth: Failed to send command. rc:%#x=%s\n`
+- `AppleBeadsBatteryAuth: Failed to get traceID. ioret:%#x\n`
+- `ShipChargeLimitComplianceStatePending`
+- `FedPortPowerRole`
+- `BatteryQmaxUpdateFailCnt`
+- `AppleSmartBatteryUserClient ERROR: super::start failed\n`
+- `IsDevFused`
+- `OSValueObject<streamCallbackArgs>`
+- `AppleGasGaugeUpdate ERROR: Failed to pass image types '%u'. rc:0x%x=%s\n`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: failed to create UserClient\n`
+- `QmaxUpdFailCount`
+- `AppleBatteryAuth[%d]: DBG: Processing Command: %d\n`
+- `DiffAmpEnable`
+- `ChargingVoltage`
+- `NCCMax`
+- `DischargingOverTemperature`
+- `AppleBatteryAuth[%d]: DBG: Send kBatteryAuthOpSetChallenge Command to SMC\n`
+- `PortControllerDataRoleSwapFailCount`
+- `PowerDistribution`
+- `AppleChargerData: ID: %d failed to read key '%c%c%c%c' rc:%#x=%s\n`
+- `AppleGasGaugeBeadsUpdateUserClient ERROR: no output buffer for readData\n`
+- `MagnetAttach`
+- `BatteryAvgTemp`
+- `PortControllerUvdmStatus`
+- `FedExternalConnected`
+- `AppleGasGaugeUpdate: invalid notification\n`
+- `MaximumOverChargedCapacity`
+- `DischargingOverCurrentLevel1`
+- `PortControllerDnSt`
+- `AppleGasGaugeUpdate ERROR: failed to write key '%c%c%c%c' rc:%#x=%s\n`
+- `MaximumOverDischargedCapacity`
+- `DeviceNonce`
+- `InductiveReceiveCurrent`
+- `ChargeModeConfigured`
+- `AppleGasGaugeUpdate ERROR: failed to read key '%c%c%c%c' rc:%#x=%s\n`
+- `IOUserClientDefaultLockingSingleThreadExternalMethod`
+- `readAccessoryInfo`
+- `AppleGasGaugeBeadsUpdateUserClient ERROR: invalid length in MD input:%llu\n`
+- `Ra13`
+- `RSS`
+- `ShelfLifeModeAutoEntry`
+- `carrier-max-limit`
+- `ShipChargeLimitSupported`
+- `AppleBeadsBatteryAuth: input data missing\n`
+- `PortControllerWakeTimeoutCount`
+- `site.AppleSmartBatteryManagerUserClient`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: failed to get key info '%c%c%c%c' rc:%#x=%s\n`
+- `AverageCurrent`
+- `AppleBatteryAuth[%d]: failed to register notifier %d=%s\n`
+- `DesignCycleCount9C`
+- `site.smcToRegistry`
+- `AppleBatteryAuth[%d]: DBG: WriteSMCKey attempt %lu/%u\n`
+- `DriverState`
+- `ChargerPower`
+- `AppleBatteryAuth[%d]: error in auth co-processor (%x)\n`
+- `AdapterVoltage`
+- `BatteryResetCnt`
+- `Dod0AtQualifiedQmax`
+- `ChargePowerPath`
+- `OPDDualChargerState`
+- `AppleGasGaugeUpdate`
+- `AppleBeadsBatteryAuth: Failed to read status. rc:%#x=%s\n`
+- `CoexPowerBudget`
+- `OrionActiveRDOIndex`
+- `IPDRatioOverride`
+- `CellCurrent`
+- `PassedChargeLowVoltage`
+- `DischargingOverCurrentHW2`
+- `Status`
+- `PowerTelemetryErrorCount`
+- `PortControllerSrdyRejectCount`
+- `PortControllerIrqCntPlg`
+- `MaxCurrent`
+- `MaximumInternalTemperature`
+- `TimeOnCharger`
+- `InstantBootCount`
+- `PowerProfSwitch`
+- `RxPwrLimitReason`
+- `PortControllerAttachCount`
+- `InstantAmperage`
+- `AppleGasGaugeUpdateUserClient ERROR: invalid length:%llu>%llu\n`
+- `AppleGasGaugeBeadsUpdateUserClient ERROR: output buffer too small for getInfo: %u < %zu\n`
+- `AppleBatteryAuth[%d]: DBG: PollAuthStatus started\n`
+- `CellData`
+- `min-charge-voltage`
+- `AppleBeadsBatteryAuth: DBG: Received Command: %d\n`
+- `AppleBeadsBatteryAuth: Trusted data path is enabled`
+- `SerialNumber`
+- `BatteryData`
+- `AppleGasGaugeUpdate WARN: Failed to read updater status. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate ERROR: Failed to set command 'read nonce'. rc:0x%x\n`
+- `CellCurrentRatio`
+- `ID`
+- `SKTMData`
+- `PortControllerPortPDO`
+- `RebalanceEnableStatus`
+- `AdapterPowerTier`
+- `TrueRemainingCapacity`
+- `ShutDownPrevFullChargeCapacity`
+- `AccumulatedWallEnergyEstimate`
+- `PID`
+- `DODatEOC`
+- `AppleBeadsBatteryAuth: Failed to get public key. ioret:%#x\n`
+- `PortControllerInfo`
+- `MaximumRa0-8`
+- `NccpFiltered`
+- `AppleBatteryAuth[%d]: Auth Passed. Publishing trusted data nonce\n`
+- `SystemEnergyConsumed`
+- `PortControllerLoserReason`
+- `PortControllerPwrRoleSwapFailCount`
+- `PortControllerHvEnRecoveryCount`
+- `AbsoluteCapacity`
+- `AppleRawMaxCapacity`
+- `AgingTlcTime`
+- `AppleBatteryAuth[%d]: Invalid certificate length '%u'\n`
+- `DesignCycleCount70`
+- `InductiveEspPowerPolicyParameters`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: Failed to get key info\n`
+- `ResetDataWatchDog`
+- `I2CLog`
+- `PowerTarget`
+- `AppleSmartBatteryUserClient`
+- `WatchdogDebugDump`
+- `KioskModeHighSocDays`
+- `PortControllerSleepCmdFailCount`
+- `BootPathUpdated`
+- `ChargeAccum`
+- `ShutDownUpoReboot`
+- `AppleGasGaugeUpdate ERROR: Failed to set command 'start update'. rc:0x%x=%s\n`
+- `AppleBatteryAuth[%d]: failed to write key '%c%c%c%c' rc:%u=%s\n`
+- `PackID`
+- `Ra08`
+- `AppleGasGaugeUpdate: writeData checkpoint: init done\n`
+- `com.apple.private.gasgauge-update`
+- `AppleGasGaugeUpdateUserClient ERROR: invalid length in struct input:%u, %llu\n`
+- `kPPMChemIdReq`
+- `FirmwareVersion`
+- `PoutNotAllowedReason`
+- `IPDRatio`
+- `site.AppleSmartBattery`
+- `AppleBatteryAuth[%d]: DBG: kBatteryAuthOpGetSignature resp: %d\n`
+- `WirelessChargingMode`
+- `ChargerData`
+- `ShutDownRaTableRaw`
+- `KioskModeMode`
+- `RSSFiltered`
+- `EngageCloak`
+- `CellVoltage`
+- `Ra04`
+- `ShutDownPrevVoltage`
+- `ShutDownMaxDischargeCurrent`
+- `PMUConfiguration`
+- `PackCurrentAccumulatorCount`
+- `ChargingUnderTemperature`
+- `LPEMData`
+- `DeviceID`
+- `DockMask`
+- `ShutDownPrevAverageCurrent`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: failed to write key '%c%c%c%c' retry:%zu rc:%#x=%s\n`
+- `FullyCharged`
+- `BatteryNeedsRest`
+- `PMUConfigured`
+- `BatteryTempSamples`
+- `readFedInfo`
+- `ChargerInhibitReason`
+- `MaximumWRdc`
+- `PortControllerIrqCntRxSrcCap`
+- `ChargerHwIlimBackoffReason`
+- `AppleSmartBatteryHFDataClient`
+- `GasGaugeFirmwareVersion`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: PPM returned all-zero impedance array, skipping SMC write\n`
+- `DeadBatteryBootData`
+- `RaTableRaw`
+- `CarrierMode`
+- `LTQmaxUpdateCounterHsp`
+- `PowerOutDetails`
+- `FedDetails`
+- `PowerLimitReason`
+- `RebalanceErrorFlags`
+- `CriticalAcOverride`
+- `AppleGasGaugeUpdate ERROR: Failed to read nonce. rc:0x%x=%s\n`
+- `AppleBeadsBatteryAuth: Failed to write authServiceVersion request. ioret:%#x\n`
+- `DeviceName`
+- `IsCharging`
+- `AppleGasGaugeUpdate ERROR: Failed to pass signature2 for command '%u'. rc:0x%x=%s\n`
+- `iMaxAndSocSmoothTable`
+- `DailyMaxSoc`
+- `FccComp2`
+- `AppleBeadsBatteryAuth: output data pointer missing\n`
+- `IPDInputPower`
+- `BatteryMinDeltaVoltage`
+- `1211111212221212121111212`
+- `TotalOperatingTime`
+- `Charger Communication Failure`
+- `SkipperNEIgnoreAtCritical`
+- `BatteryPackCount`
+- `site.AppleSmartBatteryUserClient`
+- `AppleBeadsBatteryAuth: Auth Passed. Publishing trusted data nonce\n`
+- `ValleyFreq`
+- `FilteredCurrentRc4`
+- `NCCMin`
+- `LTQmaxUpdateCounter`
+- `carrier-min-limit`
+- `TimeSinceLastOCV`
+- `BatteryRDISCnt`
+- `CarrierModeLowVoltage`
+- `FaultType`
+- `Frequency`
+- `PortIndex`
+- `PortControllerDetachCount`
+- `AppleGasGaugeUpdate ERROR: Failed to create SMC control key\n`
+- `IdealCRate`
+- `AccumulatedPower`
+- `AppleGasGaugeUpdate ERROR: Failed to poll updater status. op:%u offset:%zu rc:0x%x\n`
+- `IOUserClientDefaultLocking`
+- `carrier-mode`
+- `PDPowermW`
+- `SafetyFaultCounter`
+- `AppleBatteryAuth[%d]: Failed to write auth data for op '%u', rc:0x%x=%s, retry:%zu\n`
+- `AppleBatteryAuth[%d]: failure communicating with gas gauge:%u\n`
+- `AppleBatteryAuth[%d]: Trusted data path is enabled\n`
+- `AppleBeadsBatteryAuth: error in smc communication received command:(%d)\n`
+- `PortControllerNEprPDOs`
+- `AppleGasGaugeUpdate ERROR: Failed to set command 'read updater status'. rc:0x%x=%s\n`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: no batteryData in bank\n`
+- `AppleGasGaugeBeadsUpdateUserClient ERROR: no output buffer for getInfo\n`
+- `AppleSmartBatteryCell`
+- `%s%u`
+- `AppleGasGaugeBeadsUpdateUserClient ERROR: invalid length in struct input:%u, %u\n`
+- `PortControllerEvtBuffer`
+- `AppleGasGaugeUpdate ERROR: timeout: waiting for UID\n`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: failed to get impedence key (%c%c%c%c) data, ret=%d\n`
+- `AppleBatteryAuth[%d]: Auth Failed.\n`
+- `AuthMajorVersion`
+- `BestAdapterIndex`
+- `valid`
+- `kPPMInterfaceAPIReq`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: failed to get impedance array from PPM output\n`
+- `wrdc_bank2`
+- `AppleBeadsBatteryAuth: invalid notification data: expected OSNumber at index 2\n`
+- `PortControllerIrqCntPdStsUpd`
+- `CarrierModeStatus`
+- `AppleGasGaugeUpdateUserClient`
+- `AppleSmartBatteryPack: ID: %d failed to set Carrier Mode upper voltage(%d) %x=%s\n`
+- `BatteryShutdownReason`
+- `BatteryMaxPackVoltage`
+- `AppleBeadsBatteryAuth: Failed to get signature ioret=%#x\n`
+- `RebalanceOutputStruct`
+- `I`
+- `ShutDownUISoc`
+- `FailureCounters`
+- `DischargingOverCurrentLevel2`
+- `AppleBeadsBatteryAuth: Notify Clients about change in data\n`
+- `PortControllerIrqCntRxRdo`
+- `ShutDownPrevRemainingCapacity`
+- `AppleGasGaugeBeadsUpdateUserClient ERROR: no length or MD\n`
+- `BatteryMinTemp`
+- `BatteryMaxRa0-8`
+- `DailyMinSoc`
+- `AppleSmartBatteryPack: ID: %d Battery pack is pending/missing/bad\n`
+- `SystemEffectiveTotalLoad`
+- `PortControllerShortDetectCount`
+- `PortControllerI2cErrCount`
+- `AppleSmartBatteryUserClient ERROR: dataClient does not exist\n`
+- `ShutDownLpemSocfThresh`
+- `AppleGasGaugeUpdate ERROR: failed to create UserClient\n`
+- `FreeAirSTDDev`
+- `AppleGasGaugeUpdate ERROR: failed to initialize UserClient\n`
+- `wrdc_bank3`
+- `ResetDataSoftware`
+- `Count`
+- `ChargerIBus0`
+- `AppleSmartBatteryHFDataClient ERROR: Could not get the memory descriptor for the data queue`
+- `AppleSMCFamily`
+- `Version`
+- `kPPMOutImpdDataR0`
+- `DOFU`
+- `site.typeof(local_cmd)`
+- `BatteryDischargeCurrent`
+- `StickyCapacityOverride`
+- `Peak2Mag`
+- `Model`
+- `AppleGasGaugeUpdate ERROR: failed to register notifier\n`
+- `PassedCharge`
+- `BatteryPfCommsFailure`
+- `AppleBatteryAuth`
+- `PortControllerIrqCntPwrStsUpd`
+- `ChargerAccumEfficiencyCount`
+- `SubclassId`
+- `ChargeLimitTBATMAX50`
+- `AppleGasGaugeUpdate: writeData checkpoint: start\n`
+- `AppleGasGaugeUpdate ERROR: Failed to set command 'commit image'. rc:0x%x\n`
+- `NotChargingReason`
+- `site.AppleSmartBatteryCell`
+- `site.AppleGasGaugeUpdate`
+- `AppleGasGaugeBeadsUpdateUserClient ERROR: no self\n`
+- `AppleBeadsBatteryAuth: DBG: ReadSMCKey attempt %lu/%u\n`
+- `AppleBeadsBatteryAuth: failed to get key info '%c%c%c%c' rc:%#x=%s\n`
+- `AppleBeadsBatteryAuth: Failed to append signed data to nonce ioret=%#x\n`
+- `StartBatteryCapacity`
+- `Peak1Freq`
+- `PortControllerPortMode`
+- `BatteryHealthMetric`
+- `AppleSmartBatteryPack: DBG: ID: %d Gauge reports no lifetime failure counters\n`
+- `CoexAggressorMask`
+- `Watts`
+- `PortControllerIrqCntRxIdSop`
+- `AppleSmartBatteryManagerUserClient`
+- `DynamicSoc1Vcut`
+- `AppleBeadsBatteryAuth: invalid notification data: expected OSNumber at index 0\n`
+- `InstantTimeToEmpty`
+- `OrionInfo`
+- `AdapterRevision`
+- `Ra09`
+- `ShutDownDynSdSoc`
+- `ResetData`
+- `OrionPresenceStatus`
+- `Ra06`
+- `ShutDownSocAlarm`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: Failed to read status. rc:0x%x=%s\n`
+- `MaximumChargeCurrent`
+- `AppleBatteryAuth[%d]: DBG: kBatteryAuthOpSetChallenge resp: %d\n`
+- `AppleBeadsBatteryAuth: getSignedData: Num of indices mismatch readback:%d != expected:%d\n`
+- `SystemLoad`
+- `VConnCurrent`
+- `PortControllerIrqCntHrdRst`
+- `ShutDownFullChargeCapacity`
+- `AppleBeadsBatteryAuth: data payloadSize too large payloadSize = %u maxPayloadSize = %u\n`
+- `AppleBeadsBatteryAuth: Failed to create header. cmd%u rc:%#x\n`
+- `OperationStatus`
+- `AppleChargeRateLimitIndex`
+- `IsWireless`
+- `readOrionInfo`
+- `SOCFThreshold`
+- `AppleGasGaugeUpdate ERROR: failed to read key '%c%c%c%c' retry:%zu rc:%#x=%s\n`
+- `AppleSmartBatteryPack`
+- `Ra12`
+- `max-charge-voltage`
+- `AppleSmartBatteryPack: ID: %d Battery data read aborted. ltd:%d kiosk:%d carrier:%d\n`
+- `FedStateOfCharge`
+- `BatteryChargeCurrent`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: Failed to get updater info ret=%x using default data buffer size: %u\n`
+- `wrdc_bank1`
+- `isSigned`
+- `FODetected`
+- `QiPacketResult`
+- `MultiFreqMag3`
+- `ThermalPowerBudget`
+- `FilteredCurrent`
+- `PresentDOD`
+- `CellDisconnect`
+- `AppleGasGaugeUpdate ERROR: Failed to set command 'read UID'. rc:0x%x\n`
+- `TxGain4`
+- `VConnPower`
+- `Description`
+- `ShutdownDataCriticalFlagsKey`
+- `AppleGasGaugeUpdate ERROR: Failed to pass data for command '%u'at offset:%zu. rc:0x%x=%s\n`
+- `SMCInterfaceVersion`
+- `RectifierVoltage`
+- `ValleyMag`
+- `SystemDisconnectCountScrPad`
+- `SignalStrength`
+- `Peak1Mag`
+- `AppleGasGaugeUpdate ERROR: Failed to pass image type '%u' for command '%u'. rc:0x%x=%s\n`
+- `MultiFreqMag1`
+- `OSValueObject<streamKeyInfo>`
+- `KioskMode`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: failed to read temp key, ret=%d\n`
+- `RetryWithGGResetCnt`
+- `AverageBattSkinTemp`
+- `AccSOC`
+- `VbusType`
+- `AccumulatedSystemEnergyConsumed`
+- `ErrorFlags`
+- `AppleGasGaugeUpdate ERROR: updater error:%u, op:%u\n`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: invalid notification data: expected OSArray\n`
+- `AppleBatteryAuth[%d]: received notification for op:%u, expected op:%u\n`
+- `Voltage`
+- `ShutDownTemperature`
+- `CoProcError`
+- `ShutDownResScale`
+- `Ok2SwitchCount`
+- `Attached`
+- `AppleGasGaugeUpdate ERROR: Failed to set command '%u' at offset:%zu. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdateUserClient ERROR: invalid type:%llu\n`
+- `AppleBatteryAuth[%d]: Trusted data path isnt enabled, nothing to do here\n`
+- `ErrorPhase`
+- `uiSOC`
+- `power-state-notify`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: failure communicating with gas gauge:%x, cmd:%u\n`
+- `FETOverTemperature`
+- `TrustedBatteryEnabled`
+- `AppleBeadsBatteryAuth: Invalid getInfo maxPayloadSize = %d\n`
+- `GeneralPayload`
+- `PortControllerIrqCntAppLd`
+- `BatteryCycleCount`
+- `AppleSmartBatteryUserClient ERROR: unknown memory type in clientMemoryForType()`
+- `RebalanceHWBypassFETStatus`
+- `121111121222121211111122`
+- `PowerBudget`
+- `InductiveChargingParameters`
+- `CkSum`
+- `TrustedBatteryDataRaw`
+- `AppleBeadsBatteryAuth: Failed to get key info\n`
+- `MultiFreqMag2`
+- `VConnAccumulatorErrorCount`
+- `PortControllerPwrRoleSwapCount`
+- `FieldDiagsInflowInhibit`
+- `smc-charger`
+- `AppleGasGaugeUpdate ERROR: updater in invalid state '%u'\n`
+- `ChargingOverCurrentHW`
+- `AppleSmartBatteryPack: ID: %d !bd\n`
+- `Vbatt Fault`
+- `AppleBeadsBatteryAuth: Supported maxPayloadSize is greater than max buffer size\n`
+- `RaUpdateDisqualified`
+- `NominalChargeCapacity`
+- `AppleGasGaugeUpdate ERROR: invalid provider\n`
+- `AppleGasGaugeBeadsUpdate`
+- `AppleBeadsBatteryAuth: getSignedData: Unexpected idx: %d\n`
+- `PortControllerIrqCntAlert`
+- `SharedSource`
+- `Permanent Battery Failure`
+- `PortControllerCapMismatch`
+- `IPDInputVoltage`
+- `BatteryOverDischargedCurrent`
+- `AppleGasGaugeUpdate ERROR: Failed to read info3. rc:0x%x=%s\n`
+- `OverVoltage`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: PPM API call failed, ret=%d\n`
+- `BatteryInvalidWakeSeconds`
+- `LTDataCorruptionOffset`
+- `AppleSmartBatteryPack: ID: %d Failed to create shutdown reason symbol\n`
+- `AppleBeadsBatteryAuth: failed to write key '%c%c%c%c' rc:%#x=%s\n`
+- `Inductive2PPPromotionState`
+- `BatteryTotalOperatingTime`
+- `MaxCapacity`
+- `PermanentFailureStatus`
+- `3PPDPDelay`
+- `ChargeLimitVoltage`
+- `3PPAuthFailCount`
+- `FamilyCode`
+- `Ra00`
+- `AppleGasGaugeUpdate ERROR: invalid notification data\n`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: Failed to send command. rc:0x%x=%s\n`
+- `ManufactureDate`
+- `AppleBeadsBatteryAuth: Failed to get traceID readCmd mismatch. ioret:%#x\n`
+- `VMID`
+- `BatteryRsenseOpenCount`
+- `AppleBatteryAuth[%d]: Notify Clients about change in data\n`
+- `AppleBeadsBatteryAuth: Failed to get nonce. ioret:%#x\n`
+- `AverageBattVirtualTemp`
+- `UpdaterStatus`
+- `AppleGasGaugeUpdate ERROR: Failed to pass length for command '%u'. rc:0x%x=%s\n`
+- `AppleBatteryAuth[%d]: DBG: _getInfo attempt %lu/%u\n`
+- `CloakReason`
+- `ShutDownPrevNominalChargeCapacity`
+- `AppleBatteryAuth[%d]: Failed to read GG reset count. rc:0x%x=%s\n`
+- `PortControllerMaxPower`
+- `AppleSmartBattery`
+- `TxVersion`
+- `site.T`
+- `AppleChargerData`
+- `AppleBeadsBatteryAuth: invalid notification data: expected OSArray\n`
+- `OSValueObject<streamTimerEvent>`
+- `MaxPayloadSize`
+- `ActivePayloads`
+- `AppleBeadsBatteryAuth: failed to write key '%c%c%c%c', retry:%zu\n`
+- `AppleBeadsBatteryAuth: Status payload size mismatch read:%d != expected:%lu`
+- `PortControllerBootFlags`
+- `StatusFlags`
+- `ShutDownLPEMMode`
+- `AppleBeadsBatteryAuth: Failed to create SMC key\n`
+- `FedPwrPolicySt`
+- `TimeToEmptyDbgData`
+- `PassedChargeHighVoltage`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: failed to read DOD key, ret=%d\n`
+- `AppleBatteryAuth[%d]: failed to write key '%c%c%c%c', retry:%zu\n`
+- `SystemVoltageIn`
+- `AppleSmartBattery.cpp`
+- `com.apple.private.powersource-write-all`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: Invalid user input. rc:0x%x\n`
+- `OVPCount`
+- `CellCurrentAccumulator`
+- `AppleBeadsBatteryAuth: failed to get key info '%c%c%c%c' retry:%zu rc:%#x=%s\n`
+- `AccumulatorCount`
+- `PortControllerIrqCntUsb2Plg`
+- `AppleGasGaugeUpdate ERROR: Failed to set command 'read info 2'. rc:0x%x=%s\n`
+- `RawA`
+- `DischargingShortCircuitHW`
+- `AppleSmartBatteryPack: ID: %d Failed to read shutdown nominal capacity\n`
+- `GetSignatureRetryCnt`
+- `AppleBeadsBatteryAuth: error in gas gauge communication (%#x)\n`
+- `PortControllerSrcTypes`
+- `AlgoCycleCountDbgData`
+- `AppleSmartBatteryPack: ID: %d failed to write key '%c%c%c%c' rc:%u=%s\n`
+- `AppleGasGaugeBeadsUpdateUserClient ERROR: failed to map memory\n`
+- `AppleBatteryAuth[%d]: error in auth co-processor communication (%x)\n`
+- `InductiveSignalStrength`
+- `GetCertificateRetryCnt`
+- `PortControllerIrqCntWakeAck`
+- `OrionVoltageConstraint`
+- `BatteryHighAvgCurrentLastRun`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: failed to read key '%c%c%c%c' retry:%zu rc:%#x=%s\n`
+- `CellCurrentAccumulatorCount`
+- `RxQippVer`
+- `site.AppleSmartBatteryManager`
+- `CoeffV`
+- `AppleGasGaugeUpdate ERROR: timeout: waiting for op '%u'\n`
+- `site.AppleSmartBatteryBank*`
+- `AppleSmartBatteryPack: DBG: ID: %d Lifetime failure counter mask has slots this kext does not publish:%#llx\n`
+- `average iBus value not ready: ret=0x%X, nowAccumulator=%lld, lastAccumulator=%lld, nowTime=%llu, lastTime=%llu\n`
+- `CellWom`
+- `ShutDownRSS`
+- `AppleGasGaugeUpdate ERROR: Failed to pass signature1 for command '%u'. rc:0x%x=%s\n`
+- `HighFreq`
+- `site.AppleSmartBatteryPack*`
+- `LifetimeData`
+- `AppleBeadsBatteryAuth: invalid notification\n`
+- `UsbHvcMenu`
+- `site.AppleGasGaugeBeadsUpdate`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: Failed to create header. cmd%u rc:0x%x\n`
+- `AppleGasGaugeBeadsUpdate: failed to initialize smcKey from packId: %d\n`
+- `PortControllerPDst`
+- `PortControllerVdoFailCount`
+- `IOUserClientDefaultLockingSetProperties`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: error in smc communication received command:(%d)\n`
+- `AuthFodStatus`
+- `AppleGasGaugeUpdate ERROR: Failed to set command '%u'. rc:0x%x=%s\n`
+- `QmaxDisqualificationReason`
+- `AppleBeadsBatteryAuth: getSignedData: Failed to read signed data. ioret:%#x\n`
+- `IlimHeadroom`
+- `CoeffSoc`
+- `AppleGasGaugeUpdate: _sendData: type=%llu, length=%llu\n`
+- `IOUserClientEntitlements`
+- `AppleBatteryAuth[%d]: DBG: Send kBatteryAuthOpGetCertSerial Command to SMC\n`
+- `AppleGasGaugeUpdate ERROR: unexpected updater status: actual:%u expected:%u op:%u\n`
+- `GgDataFlashUpdate`
+- `BatteryOverChargedCurrent`
+- `AppleSmartBatteryBank`
+- `FccComp1`
+- `AppleBeadsBatteryAuth: getSignedData: Request id mismatch readback:%d != expected:%d\n`
+- `Raw`
+- `AppleGasGaugeBeadsUpdateUserClient ERROR: invalid payload size: %u > %llu\n`
+- `ChargerVBus0`
+- `readEnergyTelemetryInfo`
+- `ChargerID`
+- `ChargingOverCurrentLevel2`
+- `PortControllerFwVersion`
+- `PortControllerSrdoCount`
+- `PostChargeWaitSeconds`
+- `TimeAtHighSoc`
+- `12111111`
+- `AppleGasGaugeBeadsUpdateUserClient ERROR: memory descriptor too large: %llu\n`
+- `AppleBeadsBatteryAuth: Failed to get nonce ioret=%#x\n`
+- `Prect`
+- `DateOfFirstUse`
+- `AppleSmartBatteryPack: ID: %d Lifetime failure counter payload is %u bytes, expected %zu\n`
+- `AppleBatteryAuth[%d]: invalid notification data: expected OSArray\n`
+- `PortControllerPowerState`
+- `AppleGasGaugeUpdate ERROR: timeout: waiting for image commit\n`
+- `Cell Check Fault`
+- `12`
+- `VoltageTarget`
+- `CommStatus`
+- `PostDischargeWaitSeconds`
+- `BatteryminRa0-8`
+- `SystemDisconnectCount`
+- `SystemLoadAccumulatorCount`
+- `ChargerAccumulatedEfficiency`
+- `AppleGasGaugeUpdate ERROR: Failed to set command 'read info 3'. rc:0x%x=%s\n`
+- `EPTDelay`
+- `CPMSPowerBudget`
+- `ChargingOverride`
+- `BatteryMinPackVoltage`
+- `pid`
+- `ResetDataComms`
+- `IlimTarget`
+- `ConfiguredPowerBudget`
+- `Current`
+- `Index`
+- `readAdapterInfo`
+- `ChargerVBus1`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: Failed to read data. rc:0x%x=%s\n`
+- `AppleBeadsBatteryAuth: Failed to get auth service version ret=%x\n`
+- `UUID`
+- `AdapterEfficiencyLossAccumulatorCount`
+- `AppleGasGaugeUpdate ERROR: timeout: waiting for command '%u' at offset %zu\n`
+- `AppleBatteryAuth[%d]: DBG: kBatteryAuthOpSetAuthStatus resp: %d\n`
+- `AppleBeadsBatteryAuth: getSignedData: Failed to send signed data rx cmd. ioret:%#x\n`
+- `BatteryFlashWriteCnt`
+- `AverageChargingCurrent`
+- `BatteryPower`
+- `PackIndex`
+- `CycleCountLastQmax`
+- `AppleBatteryAuth[%d]: DBG: Received Command: %d\n`
+- `Peak2Freq`
+- `BatteryState`
+- `DutyCycleChargingEnabled`
+- `BatteryChemID`
+- `KioskModeFullChargeVoltage`
+- `SystemPower`
+- `MaximumPackVoltage`
+- `AppleBeadsBatteryAuth: Failed to read data. rc:%#x=%s\n`
+- `AppleBeadsBatteryAuth: Failed to get auth info ret=%x using default data buffer size: %u\n`
+- `EfficiencyPercent`
+- `VConnAccumulatedPower`
+- `ChargingCurrent`
+- `AlgoTemperature`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: input data missing\n`
+- `AppleBatteryAuth[%d]: Failed to create SMC control key\n`
+- `DeviceVersion`
+- `AppleBeadsBatteryAuth: status indicates failure. rc:%#x, breakdown: cmdStatus:%d cmd:%d state:%d error:%d\n`
+- `FirmwareSerialNumber`
+- `HighPoweriBootCount`
+- `FedSrcConfReason`
+- `ShutDownDOD0`
+- `com.apple.private.powersource-write`
+- `Inflow Disabled`
+- `CellID`
+- `Signature`
+- `AppleBeadsBatteryAuth: Failed to get signed data ioret=%#x\n`
+- `PRxPowerReceived`
+- `AccumSystemEffectiveTotalLoad`
+- `AppleSmartBatteryBank: Pack ID: %d Bank ID: %d failed to write key '%c%c%c%c' rc:%u=%s\n`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: failed to initialize UserClient\n`
+- `UnderVoltage`
+- `Charged Too Long`
+- `DPPowerSetting`
+- `AdapterID`
+- `AppleSmartBatteryUserClient ERROR: Provider invalid in start\n`
+- `Ra07`
+- `MaximumRa8`
+- `AppleRawBatteryVoltage`
+- `ShelfLifeModeExitCounters`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: rebalancing not supported, ret=%d\n`
+- `GetCertSnRetryCnt`
+- `AppleBeadsBatteryAuth: DBG: WriteSMCKey attempt %lu/%u\n`
+- `Mask`
+- `BatteryMinFCC`
+- `Ra03`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: failed to get key info '%c%c%c%c' retry:%zu rc:%#x=%s\n`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: cmd '%u' failed rc:0x%x=%s\n`
+- `AppleBatteryAuth[%d]: DBG: Send kBatteryAuthOpGetNonce Command to SMC\n`
+- `ShippingChargeLimitSystemStatus`
+- `FedRemainingCapacity`
+- `site.AppleChargerData`
+- `FlashFailureCounter`
+- `PortControllerStuckCmdCount`
+- `KioskModeLastHighSocHours`
+- `AlgoChemID`
+- `AppleBatteryAuth[%d]: DBG: ReadSMCKey attempt %lu/%u\n`
+- `AppleBeadsBatteryAuth: Failed to get traceID size mismatch. read:%d != expected:%lu\n`
+- `SkinTemperature`
+- `InstantBootAdapterReady`
+- `TxGain1`
+- `Ra11`
+- `AppleBatteryAuth[%d]: invalid notification data: expected OSNumber\n`
+- `MaxVoltage`
+- `FedVendorID`
+- `readPowerOutInfo`
+- `Mode`
+- `CycleCount`
+- `AppleGasGaugeUpdate ERROR: Failed to read info. rc:0x%x=%s\n`
+- `GaugeFlagRaw`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: no bank instance\n`
+- `AppleSmartBatteryManager`
+- `AppleGasGaugeBeadsUpdateUserClient ERROR: arguments missing\n`
+- `AppleBeadsBatteryAuth: Failed to getInfo. rc:%#x=%s\n`
+- `Ra10`
+- `LPEM`
+- `Flags`
+- `ShutDownRemainingCapacity`
+- `AppleBeadsBatteryAuth: cmd '%u' failed rc:%#x=%s\n`
+- `AppleSmartBatteryUserClient ERROR: Error in data collection request\n`
+- `BatteryQmaxUpdateSuccessCnt`
+- `BankCount`
+- `AppleSmartBatteryPack: ID: %d failed to set Carrier Mode lower voltage(%d) %x=%s\n`
+- `AppleBatteryAuth[%d]: DBG: Send kBatteryAuthOpGetInfo Command to SMC\n`
+- `BatteryMaxQmax`
+- `BatteryNominalChargeCapacity`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: failed to write key '%c%c%c%c' rc:%#x=%s\n`
+- `AccumulatedBatteryDischarge`
+- `AccumulatedSystemPowerIn`
+- `TimeChargingThermallyLimited`
+- `site.AppleSmartBatteryPack`
+- `SkinTemperatureVirtual`
+- `PortControllerIrqCntUvdmEnum`
+- `OrionChargeCapable`
+- `FedDesignCapacity`
+- `UserVisiblePathUpdated`
+- `VirtualTemperature`
+- `LTFailureCounterData`
+- `AppleBatteryAuth[%d]: DBG: _getCertificate attempt %lu/%u\n`
+- `VConnMaxCurrent`
+- `InflowOverride`
+- `AppleGasGaugeUpdate: writeDataData checkpoint: start transfer of %zu bytes\n`
+- `ChargerIBUS`
+- `Amperage`
+- `UsableBottomOcv`
+- `RetryCount`
+- `PortControllerActiveContractRdo`
+- `AppleGasGaugeBeadsUpdateUserClient`
+- `GetInfoRetryCnt`
+- `InductiveCoexStatus`
+- `BatteryMaxTemp`
+- `AppleSmartBatteryUserClient ERROR: dataClient start failed\n`
+- `SOCAlarm`
+- `AppleGasGaugeBeadsUpdateUserClient ERROR: invalid selector: %u >= %u\n`
+- `AppleBatteryAuth[%d]: DBG: Send kAuthCommandIDGetCert Command to SMC\n`
+- `IOHibernateState`
+- `ShutDownSocSoc2`
+- `AppleGasGaugeUpdate ERROR: received notification for op:%u, expected op:%u\n`
+- `FlashEraseCounter`
+- `AppleBatteryAuth[%d]: DBG: Send kBatteryAuthOpGetSignature Command to SMC\n`
+- `InductiveReceiveVoltage`
+- `InductiveReceiveFrequency`
+- `NotCloakReason`
+- `TargetPowerBudget`
+- `ChargingParameters`
+- `site.AppleChargerData*`
+- `CommunicationError`
+- `AverageTemperature`
+- `AppleBeadsBatteryAuth: Auth Failed.\n`
+- `ShipChargeLimitCompliant`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: Invalid getInfo maxPayloadSize = %d\n`
+- `AppleSmartBatteryPack: ID: %d Failed to read shutdown data error flags\n`
+- `AccumSystemEffectiveTotalLoadCount`
+- `ShutDownNominalChargeCapacity`
+- `AppleSmartBatteryPack: ID: %d failed to set Carrier Mode upper limit(%d) %x=%s\n`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: failed to allocate dataIn\n`
+- `CoreMotionActivityState`
+- `AdapterDetails`
+- `ChargingOverCurrentLevel1`
+- `AppleBeadsBatteryAuth: Failed to get public key ioret=%#x\n`
+- `MaxErr`
+- `IPDInputCurrent`
+- `AccessoryDetails`
+- `AdapterPower`
+- `AppleGasGaugeBeadsUpdateUserClient ERROR: output buffer too small for readData: %u < %zu\n`
+- `BatteryAuthPassed`
+- `DplossLastTgt`
+- `3PPDPFailCount`
+- `PortControllerSlpWakDisCause`
+- `Source`
+- `AppleGasGaugeUpdateUserClient ERROR: no self\n`
+- `AppleBatteryAuth[%d]: DBG: kBatteryAuthOpGetNonce resp: %d\n`
+- `TxGain3`
+- `FreeAirMag`
+- `FedSnkConfReason`
+- `AppleSmartBatteryHFDataClient ERROR: Could not allocate data queue`
+- `Info`
+- `AppleGasGaugeUpdateUserClient ERROR: no length or MD\n`
+- `Qstart`
+- `ApplePPMInterfaceAPIFunction`
+- `AppleBeadsBatteryAuth: failed to register notifier %d=%s\n`
+- `SystemPowerBudget`
+- `PortControllerSrdoRetryCount`
+- `FullChargeCapacity`
+- `APBootCount`
+- `MultiFreqMag5`
+- `OCVData`
+- `PortControllerWakeFailCount`
+- `Name`
+- `12111112122212121111111112111111122221112`
+- `VacVoltageLimit`
+- `SlowChargerReason`
+- `UsbHvcHvcIndex`
+- `FullPathUpdated`
+- `ISS`
+- `AppleGasGaugeUpdate ERROR: failed to write key '%c%c%c%c' retry:%zu rc:%#x=%s\n`
+- `AppleGasGaugeUpdate ERROR: Failed to read info2. rc:0x%x=%s\n`
+- `AppleBeadsBatteryAuth: getSignedData: Data size mismatch readback:%d != expected:%d\n`
+- `AppleBeadsBatteryAuth: DBG: Command: %d, RetCode: %#x\n`
+- `DisplayTimeBootCount`
+- `DriverStatusBits`
+- `BatteryDischargeAccumulatorCount`
+- `ResScale`
+- `ShutDownPresentDOD`
+- `Ibatt MinFault`
+- `BatteryAuth`
+- `FirmwareMode`
+- `PowerConverterStatus`
+- `PortControllerDataRoleSwapCount`
+- `AppleRawAdapterDetails`
+- `AppleBatteryAuth[%d]: Failed to read auth data for op '%u', rc:0x%x=%s, retry:%zu\n`
+- `AppleBeadsBatteryAuth: received notification for cmd:%u, expected cmd:%u\n`
+- `DOD0`
+- `121111121222121211211`
+- `AppleBeadsBatteryAuth: cmd '%u' failed rc:%#x\n`
+- `PortControllerInpFetEnFailCount`
+- `PortControllerIrqCntUvdmStsUpd`
+- `OrionEvtBuffer`
+- `PortControllerIrqCntUsb2Wak`
+- `ShutDownAverageCurrent`
+- `AppleGasGaugeUpdate ERROR: invalid notification data: expected OSArray\n`
+- `CurrentSenseMonitorStatus`
+- `GaugeResetCounter`
+- `AppleGasGaugeBeadsUpdateUserClient ERROR: no data or MD\n`
+- `AdapterType`
+- `site.AppleSmartBatteryCell*`
+- `PackReserve`
+- `AppleBatteryAuth[%d]: failed to read key '%c%c%c%c' rc:%u=%s\n`
+- `USBSleepPoolPowermW`
+- `BatteryMaxFCC`
+- `ChargerStatus`
+- `ShutDownPassedCharge`
+- `KioskModeHighSocSeconds`
+- `ConfiguredVoltage`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: received notification for cmd:%u, expected cmd:%u\n`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: Supported maxPayloadSize is greater than max buffer size\n`
+- `AppleGasGaugeUpdateUserClient ERROR: no owner\n`
+- `LTOCVRestCounter`
+- `AppleGasGaugeBeadsUpdateUserClient ERROR: output buffer too small for getStatus: %u < %zu\n`
+- `121111121222121211211111112222`
+- `Ra01`
+- `AppleGasGaugeUpdate: writeData checkpoint: done\n`
+- `MaximumTemperature`
+- `SetTrustStatusRetryCnt`
+- `AppleSmartBatteryUserClient ERROR: dataClient openClient failed\n`
+- `RemainingCapacity`
+- `Serial`
+- `StateOfCharge`
+- `BatteryCellDisconnectCount`
+- `Error`
+- `PortControllerIrqCntStsUpd`
+- `readPortControllerInfo`
+- `width`
+- `AppleBatteryAuth[%d]: DBG: kBatteryAuthOpGetInfo resp: %d\n`
+- `AppleBeadsBatteryAuth: failure communicating with gas gauge: i2cStatus=%#x, cmd:%u\n`
+- `CloakEntryCount`
+- `ChargerEfficiency`
+- `ChargeLimitDisplayOn`
+- `com.apple.private.applesmartbattery-smcdatastream`
+- `AppleGasGaugeUpdate WARN: timeout: waiting for updater status\n`
+- `AppleGasGaugeUpdate ERROR: unexpected updater status: actual:%u expected:%u op:%u offset:%zu\n`
+- `MaximumDischargeCurrent`
+- `PPMParametersHF`
+- `TxKest`
+- `FedPdSpecRevision`
+- `AppleGasGaugeUpdate ERROR: Failed to create SMC data key\n`
+- `AppleSmartBatteryPack: ID: %d failed to read key '%c%c%c%c' rc:%#x=%s\n`
+- `AppleBatteryAuth[%d]: timeout: op '%u'\n`
+- `121111121222121212111111111111111111111111212212122112111111211112212121122`
+- `ChargerResetCounter`
+- `ChargeFrequency`
+- `Manufacturer`
+- `type`
+- `MaximumQmax`
+- `AppleGasGaugeUpdate ERROR: timeout: waiting for nonce\n`
+- `AppleGasGaugeBeadsUpdate ID %d ERROR: Failed to getInfo. rc:0x%x=%s\n`
+- `AppleSmartBatteryPack: ID: %d Failed to clear shutdown data. rc:0x%x=%s\n`
+- `USBWakePoolPowermW`
+- `SerialString`
+- `BatteryMinQMax`
+- `AppleGasGaugeUpdateUserClient ERROR: failed to map memory\n`
+- `site.AppleGasGaugeBeadsUpdateUserClient`
+- `PortControllerSrdoRejectCount`
+- `LowAvgCurrentLastRun`
+- `122`
+- `UISoc`
+- `AppleGasGaugeUpdate: writeData checkpoint: status OK\n`
+- `AppleBatteryAuth[%d]: Failed to set op '%u', rc:0x%x=%s, retry:%zu\n`
+- `ManufacturerData`
+- `MultiFreqMag6`
+- `ShipChargeLimitData`
+- `BatteryIDChanged`
+- `ShutDownDynSdVoltage`
+- `RawB`
+- `AppleSmartBatteryPack: ID: %d No battery shutdown data for pack %d\n`
+- `DplossStat`
+- `HwVersion`
+- `121111121222121211111111111112`
+- `AppleSmartBatteryUserClient ERROR: _dataQueue does not exist`
+- `AppleBatteryAuth[%d]: Force publishing of data due to boot arg\n`
+- `AppleBeadsBatteryAuth: invalid notification data: expected OSNumber at index 1\n`
+- `AppleBeadsBatteryAuth: Failed to get TraceID ioret=%#x authServiceVersion:%d\n`
+- `VConnAccumulatorCount`
+- `PortControllerIrqCntConSrc`
+- `FedProductID`
+- `BatteryLowAvgCurrentLastRun`
+- `site.AppleSmartBatteryBank`
+- `AppleBatteryAuth[%d]: DBG: PollAuthStatus resp: %d\n`
+- `AppleBeadsBatteryAuth: Trusted data path isnt enabled, nothing to do here\n`
+- `Fault`
+- `SystemPowerIn`
+- `Dock`
+- `battery-factory-id`
+- `AppleGasGaugeUpdate ERROR: failure communicating with gas gauge:%x, op:%u\n`
+- `MinimumDeltaVoltage`
+- `Phase`
+- `RxID`
+- `PortControllerWakeCmdFailCount`
+
+**[__TEXT.__os_log]**
+
+- `Failed to allocate poll control lock\n`
+- `Starting poll type %d\n`
+- `Port:%d nominalV: %d\n`
+- `SmartBattery: finished polling type %d\n`
+- `smcReadKeyHostEndian for cmd 0x%x (key %c%c%c%c) %d\n`
+- `Iterating to find queue`
+- `Failed to serialize dictionary in stream timer callback\n`
+- `Failed to read powerRole key %c%c%c%c. powerrole:%d rc:0x%x=%s\n`
+- `Failed to read the adapter count. ret:0x%x\n`
+- `Failed to read nominal voltage rating key %c%c%c%c. voltage:%d rc:0x%x=%s\n`
+- `Port:%d Adapter type: %d\n`
+- `Port:%d sharedSource: %d\n`
+- `Port:%d Name: %s\n`
+- `Failed to read dual role power key %c%c%c%c. drp:%d rc:0x%x=%s\n`
+- `Port:%d pdSpecRev: %d\n`
+- `Invalid energy dictionary\n`
+- `Process not allowed to set properties\n`
+- `Port:%d AdapterID: %d\n`
+- `Clearing out battery data\n`
+- `invalid key size for %c%c%c%c\n`
+- `powerpath: %u\n`
+- `Failed to instantiate battery auth support\n`
+- `Task not permitted to read params\n`
+- `failed to allocate UserClient timer set\n`
+- `Rate charge limit index: %d\n`
+- `Properties is not a dictionary\n`
+- `Port:%d dualRolePower: %d\n`
+- `Failed to allocate memory for sets in stream timer callback\n`
+- `Failed to read idx:%d for a single idx auth\n`
+- `Write to set charging override(key %c%c%c%c) failed with error 0x%x=%s\n`
+- `Write to set charge limit(key %c%c%c%c) failed with error 0x%x=%s\n`
+- `System write the shipping charge limit data rc:%d\n`
+- `Non-root processes only allowed to set ChargePowerPath\n`
+- `AppleSmartBattery::pollBatteryState was stalled by an exclusive user client.\n`
+- `No USB-C ports found\n`
+- `Failed to read shipping charge limit system status smcResult:%d\n`
+- `Failed to read family code key rc:0x%x=%s\n`
+- `Failed to read pd3 message keys:%#x=%s\n`
+- `SmartBattery: Error state %x not expected\n`
+- `Failed to allocate memory within dictionary in stream timer callback\n`
+- `SMCGetKeyInfo cmd 0x%x(key %c%c%c%c) size 0x%0x\n`
+- `Received unexpected data for date of first use\n`
+- `powerOut[%u]: power:%u filteredPower:%d current:%d voltage:%u configuredCurrent:%u voltageConfigured:%u, powerAccum:%u, powerAccumCount: %u, powerAccumErrCount: %u, vConnCurrentMax %u, vConnCurrent %u, vConnPower %d, vConnPowerAccumulator %d, vConnPowerAccumCount %d, vConnPowerAccumErrorCount %d, pw`
+- `Use AC state for critical battery\n`
+- `Failed to instantiate gas gauge update support\n`
+- `Prev ts %llu current ts %llu time stamp diff: %llu\n`
+- `Unsupported property: %s\n`
+- `%s without SMC driver\n`
+- `Read %c%c%c%c key failed! (ret:%s)\n`
+- `Capacity override is set to false\n`
+- `Unexpected arg1 type for subType %#x from SMC\n`
+- `Write to set DOFU (key %c%c%c%c) failed with error 0x%x (%s)\n`
+- `Failed to read product id key %c%c%c%c. pid:%d rc:0x%x=%s\n`
+- `Failed to read vendor id key %c%c%c%c. vid:%d rc:0x%x=%s\n`
+- `Port:%d powerRole: %d\n`
+- `Failed to read pdSpecRev key %c%c%c%c. rev:%d rc:0x%x=%s\n`
+- `Failed to allocate memory for osdata in stream timer callback\n`
+- `Failed to instantiate SMC thread call\n`
+- `Write to set connectivity override(key %c%c%c%c) failed with error 0x%x=%s\n`
+- `Port:%d Description: %s\n`
+- `Reading fed details at port %d\n`
+- `Port:%d vendorId: %d\n`
+- `Read ATC%d key failed! (ret:%s)\n`
+- `SmartBattery: battery removed\n`
+- `SmartBattery: abort polling\n`
+- `Write to set cloak(key %c%c%c%c) failed with error 0x%x=%s\n`
+- `Failed to read key %c%c%c%c. rc:0x%x=%s\n`
+- `Failed to read ibus accumulator key (ret=0x%X):%s\n`
+- `Transaction triggered Starting poll type %d\n`
+- `Port:%d power tier: %d\n`
+- `Key ANWP is not supported\n`
+- `Failed to read number of USB-C ports. ret:0x%x=%s\n`
+- `Failed to create matching dictionary to find smc-charger\n`
+- `Reading adapter details at port %d\n`
+- `setChargeLimitDisplay: %d\n`
+- `Port:%d current: %d\n`
+- `Failed to read battInfo key %c%c%c%c. rc:0x%x=%s\n`
+- `Failed to read shipping charge limit UISOC smcResult:%d\n`
+- `Failed to complete polling of all data within %d ms\n`
+- `Not restarting poll type %d while system is sleeping\n`
+- `smcKeysToDictionary: Reading SMC key %c%c%c%c val:0x%llx\n`
+- `useAcForCritical:%d\n`
+- `Port:%d vendor: %s\n`
+- `Failed to read snkConfReason key %c%c%c%c. val:%d rc:0x%x=%s\n`
+- `Port:%d srcConfReason: %d\n`
+- `smcReadKeyHostEndian for cmd 0x%x (key %c%c%c%c) 0x%llx\n`
+- `Battery remaining capacity is set to 0\n`
+- `Failed to read SMC keys in stream timer callback\n`
+- `Failed to allocate memory for dictionary in stream timer callback\n`
+- `Task not permitted to read power source\n`
+- `Restart poll type %d\n`
+- `Port:%d HVC index : %d\n`
+- `Port:%d externallyPowered: %d\n`
+- `Aborting transactions as system is sleeping\n`
+- `Size not handled for key %c%c%c%c\n`
+- `Failed to allocate iterator in remove queue\n`
+- `Unknown message %s from SMC\n`
+- `Set DOFU:%llu\n`
+- `Failed to set carrier mode upper voltage limit. rc:%#x\n`
+- `Port:%d Firmware ver: %s\n`
+- `failed to read GgDfUpd data\n`
+- `SmartBattery: battery inserted!\n`
+- `Failed to allocate memory for serializer in stream timer callback\n`
+- `key %s is not in global streamQueueDict upon attempted removal\n`
+- `Provider is not AppleSMCFamily\n`
+- `Failed to set carrier mode. rc:%#x\n`
+- `Port:%d Family Code: 0x%x\n`
+- `Failed to read srcConfReason key %c%c%c%c. val:%d rc:0x%x=%s\n`
+- `Failed to find the active adapter index. rc=0x%x=%s\n`
+- `Energy telemetry data not supported rc:%d size:%lu %lu %zu %d %d\n`
+- `Failed to init dictionary due to no memory\n`
+- `Capacity override is set to true\n`
+- `Failed to instantiate battery data support\n`
+- `Port:%d Fed DesignCap: %d RemCap: %d SOC: %d\n`
+- `Port:%d snkConfReason: %d\n`
+- `smcKeysToDictionary without SMC driver\n`
+- `Unexpected subType data from SMC\n`
+- `failed to read pack count (%#x: %s)\n`
+- `Failed to start timer event\n`
+- `Failed to read sourceId (%#x)=%s\n`
+- `Failed to set battery shutdown timestamp. rc:0x%x=%s\n`
+- `Received message type %#x from SMC. arg1:%#x arg2:%#x\n`
+- `SMC key %c%c%c%c for cmd 0x%x is not supported\n`
+- `Failed to read selected powerpath. rc:0x%x=%s\n`
+- `Port:%d SourceId: %d\n`
+- `Failed to read power tier (%#x)=%s\n`
+- `Port:%d Serial: %s\n`
+- `Received unexpected data for shipping charge limit\n`
+- `Received battery removed notification\n`
+- `SmartBattery: final acknowledge of wake after reading all regs\n`
+- `AppleSmartBattery::pollBatteryState already polling (%d <= %d). Restarting poll\n`
+- `Failed to read bank configuration\n`
+- `Received unexpected data for Charge rate limit index\n`
+- `Active adapter index: %u\n`
+- `Failed to allocate mem fedArray\n`
+- `Invalid arguments to removeClient\n`
+- `SMC read called for cmd 0x%x wih no-op key\n`
+- `Port:%d pwrRolePolicySt: %d\n`
+- `Read D%dMP key failed (ret:%s)!\n`
+- `Capacity override is true\n`
+- `Inflow override state: %d\n`
+- `Failed to set demo mode. rc:%#x\n`
+- `Unable to obtain average charging current (ret=0x%X)\n`
+- `Port:%d productId: %d\n`
+- `Failed to read externally Powered key %c%c%c%c. pid:%d rc:0x%x=%s\n`
+- `Accessory[%u]: soc:%u charging:%u tethered:%u vid:pid:%x:%x\n`
+- `Read %c%c%c%c and %c%c%c%c key failed! krc:%s brc:%s\n`
+- `Failed to read keyInfo %c%c%c%c. rc:0x%x=%s\n`
+- `Write to disable chg limit display(key %c%c%c%c) failed with error 0x%x=%s\n`
+- `Failed to allocate ppmParamsHF lock\n`
+- `Failed to allocate memory for iterator in stream timer callback\n`
+- `getKeyInfo: key:%c%c%c%c keyInfo.dataType:%#x size:%#x\n`
+- `BatteryInstalled=%u packs:%d\n`
+- `Provider is AppleSMCFamily\n`
+- `Charger efficiency key failed to create\n`
+- `Failed to set carrier mode lower voltage limit. rc:%#x\n`
+- `Failed to read current rating key %c%c%c%c. current:%d rc:0x%x=%s\n`
+- `Failed to read PMUConfiguration. rc:0x%x=%s\n`
+- `Too many transaction errors, abort poll\n`
+- `Failed to allocate memory within set in stream timer callback\n`
+- `DOFU not supported\n`
+- `setWirelessCloak: %d\n`
+- `Setting DiffAmp to '%u' failed with error 0x%x=%s\n`
+- `Adapter telemetry data not supported rc:%d\n`
+- `Failed to read dead battery boot data error flags %d=%s\n`
+- `Ignoring SMC message type %#x while system is sleeping\n`
+- `Failed to instantiate AppleSmartBattery\n`
+- `Charger efficiency key failed to read. rc:0x%x=%s\n`
+- `Failed to start debounce timer event\n`
+- `Port:%d Model: %s\n`
+- `Reporter adapter count: %u\n`
+- `Failed to write shipping charge limit data smcResult:%d\n`
+- `Failed to read shipping charge limit data smcResult:%d\n`
+- `Failed to allocate dictionary for ship charge limit data\n`
+- `ChargerState:%d ExtConnected:%d ChargeCapable:%d\n`
+- `Data queue is full, enqueue failed in stream timer callback\n`
+- `failed to allocate UserClient queue dictionary\n`
+- `Charging override state: %d\n`
+- `Failed to read sharedSource (0x%x)=%s\n`
+- `PD3 messages not supported\n`
+- `SMC Key %c%c%c%c is not supported.\n`
+- `Failed to add key for next pull in stream timer callback\n`
+- `smcReadKeyHostEndian for cmd 0x%x (key %c%c%c%c) failed with error 0x%x=%s\n`
+- `AppleSmartBatteryManager started\n`
+- `failed to create UserClient\n`
+- `failed to initialize UserClient\n`
+- `Port:%d PMUConfiguration: %d\n`
+- `Read ATP%d key failed! (ret:%s)\n`
+- `invalid type\n`
+- `Failed to allocate memory for iterator in kernel client callback\n`
+- `Port:%d ErrorFlags: 0x%x\n`
+- `Failed to read AdapterID (0x%x)=%s\n`
+- ` HVC index:%d i:%d v:%d\n`
+- `Failed to read pwrRolePolicySt key %c%c%c%c. val:%d rc:0x%x=%s\n`
+- `Attempt:%d to read ANWP key failed!\n`
+- `SMC Key %c%c%c%c is not supported. rc:%s\n`
+- `Failed to start stream request timer\n`
+- `Failed to create an iterator\n`
+- `SmartBattery: handleSystemSleepWake(%d) = %u\n`
+- `Port:%d Hardware ver: %s\n`
+- `Restarting poll type %d\n`
+- `Too many keys requested\n`
+- `Unexpected arg2 type for subType %#x from SMC\n`
+- `SMC read for cmd 0x%x with key %c%c%c%c failed with error 0x%x\n`

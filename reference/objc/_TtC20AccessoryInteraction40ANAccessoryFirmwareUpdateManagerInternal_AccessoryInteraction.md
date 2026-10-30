@@ -1,0 +1,38 @@
+# `_TtC20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerInternal`
+
+- Image: [`/System/Library/PrivateFrameworks/AccessoryInteraction.framework/AccessoryInteraction`](../userland/System__Library__PrivateFrameworks__AccessoryInteraction.framework__AccessoryInteraction.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `_TtC20AccessoryInteraction32ANAccessoryFirmwareUpdateManager`
+- Protocols: `_TtP20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerProtocol_`
+- 7 instance variables, 0 properties, 15 instance methods, 0 class methods
+
+## Instance variables
+
+```
+_$sSh -> Foundation.UUID devicesUndergoingFirmwareUpdate;
+_$sSS isLocalDeviceMeDevice;
+AccessoryFirmwareUpdate.AccessoryFirmwareUpdateManager ? acccessoryFirmwareUpdateManager;
+(objc_protocol 0x23b0aacd0) ? durianService;
+_$sSo15CUSystemMonitorC meDeviceMonitoring;
+_$sSo15SPBeaconManagerC beaconManager;
+DispatchQueue queue;
+```
+
+## Instance methods
+
+```
+-[_TtC20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerInternal init];
+-[_TtC20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerInternal initWithDelegate:queue:];
+-[_TtC20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerInternal dealloc];
+-[_TtC20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerInternal attemptConnectionWithDeviceUuid:];
+-[_TtC20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerInternal didCompleteTaskWithDeviceUuid:];
+-[_TtC20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerInternal didConnectToDeviceWithDeviceUuid:];
+-[_TtC20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerInternal didDisconnectFromDeviceWithDeviceUuid:error:];
+-[_TtC20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerInternal didFailToCompleteTaskWithDeviceUuid:error:];
+-[_TtC20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerInternal didFailToConnectDeviceWithDeviceUuid:error:];
+-[_TtC20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerInternal didReceiveUarpMessageWithDeviceUuid:uarpMsg:];
+-[_TtC20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerInternal notifyMaintenanceStateForAccessoryWithBeacon:isMaintained:];
+-[_TtC20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerInternal sendUARPMessageToAccessoryWithDeviceUuid:uarpMsg:];
+-[_TtC20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerInternal startMonitoringAccessoryForFirmwareUpdateWithBeacon:];
+-[_TtC20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerInternal stopMonitoringAccessoryForFirmwareUpdateWithDeviceUuid:];
+-[_TtC20AccessoryInteraction40ANAccessoryFirmwareUpdateManagerInternal teardownConnectionWithDeviceUuid:];
+```

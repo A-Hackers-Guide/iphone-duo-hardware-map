@@ -1,0 +1,64 @@
+# `SBButterflyRegionDividerAnimationWindowingModifier`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBWindowingModifier`
+- 5 instance variables, 2 properties, 37 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"SBAppsRegionModel" _initialAppsRegionModel;
+@"SBAppsRegionModel" _toAppsRegionModel;
+B _isGestureInitiated;
+B _suppressesRegionDividerUsingOpacity;
+@"SBAppLayout" _appLayoutToKeepAboveRegionDivider;
+```
+
+## Properties
+
+```
+@property (TB,N,V_suppressesRegionDividerUsingOpacity) suppressesRegionDividerUsingOpacity;
+@property (T@"SBAppLayout",&,N,V_appLayoutToKeepAboveRegionDivider) appLayoutToKeepAboveRegionDivider;
+```
+
+## Instance methods
+
+```
+-[SBButterflyRegionDividerAnimationWindowingModifier init];
+-[SBButterflyRegionDividerAnimationWindowingModifier transitionWillBegin:];
+-[SBButterflyRegionDividerAnimationWindowingModifier regionDividerOpacity];
+-[SBButterflyRegionDividerAnimationWindowingModifier animationAttributesForItem:];
+-[SBButterflyRegionDividerAnimationWindowingModifier wantsRegionDivider];
+-[SBButterflyRegionDividerAnimationWindowingModifier regionDividerOptions];
+-[SBButterflyRegionDividerAnimationWindowingModifier topMostItems];
+-[SBButterflyRegionDividerAnimationWindowingModifier _isTransitioningFromFullScreenAppLayoutToNonFullScreenAppLayout];
+-[SBButterflyRegionDividerAnimationWindowingModifier _isTransitioningFromNonFullScreenAppLayoutToFullScreenAppLayout];
+-[SBButterflyRegionDividerAnimationWindowingModifier initWithInitialAppsRegionModel:];
+-[SBButterflyRegionDividerAnimationWindowingModifier _isTransitioningFromNoAppLayout];
+-[SBButterflyRegionDividerAnimationWindowingModifier _effectiveAppLayoutToKeepAboveRegionDivider];
+-[SBButterflyRegionDividerAnimationWindowingModifier _effectiveRegionDividerOpacity];
+-[SBButterflyRegionDividerAnimationWindowingModifier _fromItemCount];
+-[SBButterflyRegionDividerAnimationWindowingModifier _fromLeftAppLayout];
+-[SBButterflyRegionDividerAnimationWindowingModifier _fromRightAppLayout];
+-[SBButterflyRegionDividerAnimationWindowingModifier _isChangingLeftAppLayoutWithSteadyRightAppLayout];
+-[SBButterflyRegionDividerAnimationWindowingModifier _isChangingRightAppLayoutWithSteadyLeftAppLayout];
+-[SBButterflyRegionDividerAnimationWindowingModifier _isKeepingAppLayoutAboveRegionDivider];
+-[SBButterflyRegionDividerAnimationWindowingModifier _isStayingInNonFullScreenAppLayout];
+-[SBButterflyRegionDividerAnimationWindowingModifier _isSwappingAppLayouts];
+-[SBButterflyRegionDividerAnimationWindowingModifier _isTransitioningFromFullScreenAppLayout];
+-[SBButterflyRegionDividerAnimationWindowingModifier _isTransitioningFromNoAppLayoutToNonFullScreenAppLayout];
+-[SBButterflyRegionDividerAnimationWindowingModifier _isTransitioningFromNonFullScreenAppLayout];
+-[SBButterflyRegionDividerAnimationWindowingModifier _isTransitioningFromNonFullScreenAppLayoutToNoAppLayout];
+-[SBButterflyRegionDividerAnimationWindowingModifier _isTransitioningToFullScreenAppLayout];
+-[SBButterflyRegionDividerAnimationWindowingModifier _isTransitioningToNoAppLayout];
+-[SBButterflyRegionDividerAnimationWindowingModifier _isTransitioningToNonFullScreenAppLayout];
+-[SBButterflyRegionDividerAnimationWindowingModifier _regionDividerOpacitySettings];
+-[SBButterflyRegionDividerAnimationWindowingModifier _toItemCount];
+-[SBButterflyRegionDividerAnimationWindowingModifier _toLeftAppLayout];
+-[SBButterflyRegionDividerAnimationWindowingModifier _toRightAppLayout];
+-[SBButterflyRegionDividerAnimationWindowingModifier appLayoutToKeepAboveRegionDivider];
+-[SBButterflyRegionDividerAnimationWindowingModifier setAppLayoutToKeepAboveRegionDivider:];
+-[SBButterflyRegionDividerAnimationWindowingModifier setSuppressesRegionDividerUsingOpacity:];
+-[SBButterflyRegionDividerAnimationWindowingModifier suppressesRegionDividerUsingOpacity];
+-[SBButterflyRegionDividerAnimationWindowingModifier transitionDidComplete:];
+```

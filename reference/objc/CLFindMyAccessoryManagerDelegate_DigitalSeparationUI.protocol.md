@@ -1,0 +1,83 @@
+# `CLFindMyAccessoryManagerDelegate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/DigitalSeparationUI.framework/DigitalSeparationUI`](../userland/System__Library__PrivateFrameworks__DigitalSeparationUI.framework__DigitalSeparationUI.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 73 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFailWithError:forDevice:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchAISBatteryType:fromDevice:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didInitRangingOnDevice:withStatus:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchAISProductData:fromDevice:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didCompleteAggressiveAdvertisingOnDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didCompleteHawkeyeTaskWithOpcode:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didCompletePlayingSoundOnDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didCompletePlayingUnauthorizedSoundOnDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didCompleteRangingOnDevice:withStatus:endReason:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didConfigureRangingOnDevice:withStatus:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didConnectDevice:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didConnectDevice:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didDeinitRangingOnDevice:withStatus:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didDetectCrashOnDevice:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didDisconnectDevice:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didDumpLogData:ofType:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchAISAccessoryCapabilities:fromDevice:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchAISAccessoryCategory:fromDevice:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchAISBatteryLevel:fromDevice:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchAISFirmwareVersion:fromDevice:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchAISManufacturerName:fromDevice:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchAISModelName:fromDevice:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchAISNetworkID:fromDevice:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchAISProtocolImplementation:fromDevice:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchAISSerialNumber:fromDevice:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchAccessoryInformationForDevice:ownershipType:communicationProtocol:accessoryTypeName:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchBatteryStatus:forDevice:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchBatteryStatus:forDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchConnectionState:forDevice:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchFindingCapabilitiesOnDevice:withFindingCapabilities:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchFirmwareVersion:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchHawkeyeAISAccessoryCapabilities:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchHawkeyeAISAccessoryCategory:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchHawkeyeAISBatteryType:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchHawkeyeAISFindMyVersion:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchHawkeyeAISManufacturerName:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchHawkeyeAISModelColorCode:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchHawkeyeAISModelName:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchHawkeyeAISProductData:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchHawkeyeCurrentPrimaryKey:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchHawkeyeSerialNumber:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchHawkeyeiCloudIdentifier:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchStatusOfUTEnablementRequirementsWithStatus:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchTxPower:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchUserStats:forDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didFetchUserStats:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didGetMultiStatus:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didHaveRangingMovementOnDevice:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didObserveAdvertisementWithDate:address:advertisementData:status:rssi:reserved:uuid:ownershipType:channel:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didPlayUnauthorizedSoundOnDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didPrepareRangingOnDevice:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didPrepareRangingOnDevice:withConnInterval:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didReceiveGroupRelationStatus:maintenanceStatus:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didReceiveKeyRollIndex:fromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didReceiveRangingErrorFromDevice:withStatus:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didReceiveRangingTimestampFromDevice:status:rtt:tat:cycleIndex:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didRollWildKeyOnDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didSetDeviceTypeOnDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didSetHawkeyeUTMotionConfigForDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didSetNearOwnerTimeoutOnDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didSetObfuscatedIdentifierOnDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didSetUnauthorizedPlaySoundRateLimitFromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didSetWildConfigurationOnDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didStartAggressiveAdvertisingOnDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didStartPlayingSoundOnDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didStartPlayingUnauthorizedSoundOnDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didStartRangingOnDevice:error:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didStartUnauthorizedAggressiveAdvertisingOnDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didStopAggressiveAdvertisingOnDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didStopPlayingSoundOnDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didStopPlayingUnauthorizedSoundOnDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didUnpairFromDevice:withError:];
+-[CLFindMyAccessoryManagerDelegate findMyAccessoryManager:didSetBatteryStatusForDevice:];
+```

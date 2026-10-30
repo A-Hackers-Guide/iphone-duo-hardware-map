@@ -1,0 +1,24 @@
+# `/System/Library/AccessibilityBundles/WidgetRenderer.axbundle/WidgetRenderer`
+
+iOS 27.2 dyld shared cache image, version `3050.3.8.0.0`. Light page: libraries and type names only. **[DSC]**
+
+## Linked libraries (11)
+
+- `/usr/lib/libAccessibility.dylib`
+- `/System/Library/PrivateFrameworks/AXRuntime.framework/AXRuntime`
+- `/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics`
+- `/System/Library/Frameworks/UIKit.framework/UIKit`
+- `/System/Library/PrivateFrameworks/UIAccessibility.framework/UIAccessibility`
+- `/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities`
+- `/usr/lib/libAXSafeCategoryBundle.dylib`
+- `/System/Library/Frameworks/Foundation.framework/Foundation`
+- `/usr/lib/libobjc.A.dylib`
+- `/usr/lib/libSystem.B.dylib`
+- `/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation`
+
+## Objective-C: 9 classes, 0 protocols, 25 methods
+
+### Classes
+
+`AXWidgetRendererGlue`, `AccessibilityNodeAccessibility__WidgetRenderer__SwiftUI`, `SystemApertureElementViewControllerAccessibility`, `TouchPassThroughViewAccessibility`, `WidgetSceneContentViewControllerAccessibility`, `__AccessibilityNodeAccessibility__WidgetRenderer__SwiftUI_super`, `__SystemApertureElementViewControllerAccessibility_super`, `__TouchPassThroughViewAccessibility_super`, `__WidgetSceneContentViewControllerAccessibility_super`
+

@@ -1,0 +1,13 @@
+# `_UISlidingPopoverLayoutInfo`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `_UIPopoverLayoutInfo`
+- 0 instance variables, 0 properties, 3 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[_UISlidingPopoverLayoutInfo init];
+-[_UISlidingPopoverLayoutInfo _popoverViewSizeForContentSize:arrowDirection:];
+-[_UISlidingPopoverLayoutInfo _updateOutputs];
+```

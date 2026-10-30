@@ -1,0 +1,72 @@
+# `AppleARMPerformanceController`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.driver.AppleARMPlatform`](../kexts/com.apple.driver.AppleARMPlatform.md)
+- Object size: `0x7b0` (1,968 bytes)
+- Metaclass: `0xfffffe000b9343a0`; metaclass vtable `0xfffffe0007fba548`; class vtable `0xfffffe0007fb9da8`
+- Registration (init): `0xfffffe000870ad04`
+- Superclasses: [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## Strings in its kext that name it (60)
+
+- `AppleARMPerformanceControllerDVBBoostTimeoutUS3`
+- `AppleARMPerformanceControllerPerformanceDomainCount`
+- `AppleARMPerformanceControllerDVBPeriodUS3`
+- `AppleARMPerformanceController::traceBufferEnable: Trace is %sabled\n`
+- `AppleARMPerformanceControllerFunctionAssertReset`
+- `AppleARMPerformanceControllerDVCGracePeriodUS1`
+- `AppleARMPerformanceController.cpp`
+- `AppleARMPerformanceController: TurboLag Enabled on Performance Domain %u with %uus timeout\n`
+- `AppleARMPerformanceControllerTraceBufferNomenclature`
+- `\"AppleARMPerformanceController: PD%u performance state set higher then limit voltage supports\" @%s:%d`
+- `AppleARMPerformanceController`
+- `AppleARMPerformanceController: Dynamic Voltage Control Enabled on Performance Domain %u with %uus activity timeout and %uus grace period\n`
+- `AppleARMPerformanceControllerDVBRelaxTimeoutUS1`
+- `AppleARMPerformanceController Code Profiling`
+- `AppleARMPerformanceController: Pseudo-CPU Policy Enabled\n`
+- `AppleARMPerformanceControllerDVDThresholdUS3`
+- `site.AppleARMPerformanceControllerFunctionPerfAdvise`
+- `AppleARMPerformanceControllerTurboLagTimeoutUS1`
+- `AppleARMPerformanceControllerVoltageStates`
+- `site.AppleARMPerformanceControllerFunctionCPUIdle`
+- `AppleARMPerformanceControllerCodeProfiling`
+- `AppleARMPerformanceControllerTurboLagTimeoutUS2`
+- `AppleARMPerformanceControllerDVBPeriodUS2`
+- `AppleARMPerformanceControllerPerformanceDomainDVC`
+- `AppleARMPerformanceControllerPerformanceDomainDPSM`
+- `AppleARMPerformanceControllerPerformanceStates`
+- `\"AppleARMPerformanceController::initVoltageAndPerformanceStates: provider is missing voltage-states%u property\" @%s:%d`
+- `AppleARMPerformanceControllerDVDPeriodUS1`
+- `AppleARMPerformanceControllerDVBRelaxTimeoutUS3`
+- `site.AppleARMPerformanceControllerFunctionAssertReset`
+- `AppleARMPerformanceController: Dynamic Performance State Management Enabled on Performance Domain %u\n`
+- `AppleARMPerformanceController configured with %.2u Performance Domains\n`
+- `AppleARMPerformanceControllerPerformanceDomains`
+- `AppleARMPerformanceControllerDVDPeriodUS3`
+- `AppleARMPerformanceControllerFunctionCLPCEnabled`
+- `AppleARMPerformanceControllerFunctionPowerGate`
+- `AppleARMPerformanceControllerDVBPeriodUS0`
+- `AppleARMPerformanceController::attachToChild : child -> %p\n`
+- `AppleARMPerformanceControllerDVCGracePeriodUS0`
+- `site.AppleARMPerformanceControllerFunctionClockGate`
+- `site.AppleARMPerformanceController`
+- `\"AppleARMPerformanceController::initVoltageAndPerformanceStates: provider is missing performance-domain-features property\" @%s:%d`
+- `AppleARMPerformanceController: Dynamic Voltage Dithering Enabled on Performance Domain %u with %uus period and %uus threshold\n`
+- `AppleARMPerformanceControllerCLPCNub`
+- `AppleARMPerformanceControllerDVCActiveTimeoutUS3`
+- `site.AppleARMPerformanceControllerFunctionPowerGate`
+- `\"AppleARMPerformanceController::initVoltageAndPerformanceStates: Failed to find voltage requirement for performance state %.2u\" @%s:%d`
+- `\"AppleARMPerformanceController::start: pcDeviceClockIDMax (%u) must not be greater then kAppleARMPerformanceControllerDeviceClockIDMax (%d)\" @%s:%d`
+- `AppleARMPerformanceControllerDeviceClockNames`
+- `AppleARMPerformanceControllerFunctionPerfAdvise`
+- `site.AppleARMPerformanceControllerFunctionCLPCEnabled`
+- `AppleARMPerformanceControllerDVBBoostTimeoutUS0`
+- `AppleARMPerformanceControllerDVCGracePeriodUS3`
+- `AppleARMPerformanceControllerDVDFactor1`
+- `AppleARMPerformanceControllerDVBRelaxTimeoutUS2`
+- `AppleARMPerformanceController: Dynamic Voltage Boost Enabled on Performance Domain %u with %uus boost timeout and %uus relax timeout\n`
+- `AppleARMPerformanceControllerDVBBoostTimeoutUS1`
+- `AppleARMPerformanceControllerDVCActiveTimeoutUS2`
+- `\"AppleARMPerformanceController::start: pcDeviceClockIDMin (%u) and pcDeviceClockIDMax (%u) must be non zero\" @%s:%d`
+- `AppleARMPerformanceControllerDeviceEnables`

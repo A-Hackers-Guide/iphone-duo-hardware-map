@@ -1,0 +1,3188 @@
+# `com.apple.driver.AppleCamera`
+
+- Name: AppleCamera
+- Version: `20.112`
+- UUID: `CA04DBEC-1EC5-3083-92BA-142FDD5B5E62`
+- Source version: `20.112.0.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleAuthCP`](com.apple.driver.AppleAuthCP.md) 1.0.0, [`com.apple.driver.AppleH10PearlCameraInterface`](com.apple.driver.AppleH10PearlCameraInterface.md) 1.0.0, [`com.apple.driver.IODARTFamily`](com.apple.driver.IODARTFamily.md) 1.0.0, [`com.apple.driver.RTBuddy`](com.apple.driver.RTBuddy.md) 1.0.0, [`com.apple.iokit.IOReportFamily`](com.apple.iokit.IOReportFamily.md) 1.0.0, [`com.apple.iokit.IOSurface`](com.apple.iokit.IOSurface.md) 52.6.0, [`com.apple.kec.corecrypto`](com.apple.kec.corecrypto.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (2) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/isp`](../devicetree/root__arm-io__isp.md) | `AppleCamera` | `isp,isp-generic-ex` |
+| [`/arm-io/isp-exclave-proxy`](../devicetree/root__arm-io__isp-exclave-proxy.md) | `AppleExclaveCameraProxy` | `isp,isp-exclave-proxy` |
+
+## IOKit personalities (4) [KC]
+
+### RTBuddyBringup
+- `CFBundleIdentifier`: `com.apple.driver.AppleCamera`
+- `IOClass`: `AppleCamera`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleCamera`
+- `IOPropertyMatch`:
+  - `role`: `ISP`
+- `IOProviderClass`: `RTBuddyService`
+
+### generic
+- `CFBundleIdentifier`: `com.apple.driver.AppleCamera`
+- `IOClass`: `AppleCamera`
+- `IONameMatch`: `isp,isp-generic-1`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleCamera`
+- `IOProviderClass`: `AppleARMIODevice`
+
+### generic-ex
+- `CFBundleIdentifier`: `com.apple.driver.AppleCamera`
+- `IOClass`: `AppleCamera`
+- `IOExclaveProxy`: `True`
+- `IONameMatch`: `isp,isp-generic-ex`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleCamera`
+- `IOProbeScore`: `10000`
+- `IOProviderClass`: `AppleARMIODevice`
+
+### isp-exclave
+- `CFBundleIdentifier`: `com.apple.driver.AppleCamera`
+- `IOClass`: `AppleExclaveCameraProxy`
+- `IOExclaveProxy`: `True`
+- `IONameMatch`: `isp,isp-exclave-proxy`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleCamera`
+- `IOProbeScore`: `10000`
+- `IOProviderClass`: `AppleARMIODevice`
+
+
+## C++ classes (38) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleAuth` | 0xd0 | AppleAuthCPRelayInterface → IOService → IORegistryEntry |
+| `AppleCamera` | 0x84a28 | IOService → IORegistryEntry |
+| `AppleCameraFrameMetadata` | 0x230 |  |
+| `AppleCameraFrameReceiver` | 0x90 |  |
+| `AppleCameraFrameReceiverBuffer` | 0x50 |  |
+| `AppleCameraFrameReceiverBufferPool` | 0x98 |  |
+| `AppleCameraUserClient` | 0x120 | IOUserClient → IOService → IORegistryEntry |
+| `AppleCameraVMAllocator` | 0x68 | IODARTVMAllocatorGeneric → IODARTVMAllocator |
+| `AppleCameraWorkLoop` | 0x50 | IOWorkLoop |
+| `AppleDisplayPseudoStandbyFunction` | 0x38 | AppleARMFunction |
+| `AppleExclaveCameraProxy` | 0xb8 | IOService → IORegistryEntry |
+| `AppleMPMMapMemoryFunction` | 0x38 | AppleARMFunction |
+| `AppleMPMUnmapMemoryFunction` | 0x38 | AppleARMFunction |
+| `ApplePearlCam` | 0xf50 | AppleH10PearlCamInterface → IOService → IORegistryEntry |
+| `ApplePearlCamQMsgFunction` | 0x38 | AppleARMFunction |
+| `ApplePearlCamUserClient` | 0x120 | IOUserClient → IOService → IORegistryEntry |
+| `ISPClientMappedSurface` | 0x38 |  |
+| `ISPClientMappedSurfaceArray` | 0x28 | OSArray → OSCollection |
+| `ISPCoredump` | 0x270 |  |
+| `ISPErrorEventSource` | 0x48 | IOEventSource |
+| `ISPExclaveEventSource` | 0x48 | IOEventSource |
+| `ISPLoggerEventSource` | 0x58 | IOEventSource |
+| `ISPMPMMemoryParamArray` | 0x38 | OSArray → OSCollection |
+| `ISPMPMMemoryParams` | 0x30 |  |
+| `ISPMainWorkLoopEventSource` | 0x48 | IOEventSource |
+| `ISPSharedClientBufferArgs` | 0xd0 |  |
+| `ISPSharedMemorySurfaceParamArray` | 0x40 | OSArray → OSCollection |
+| `ISPSharedMemorySurfaceParams` | 0x60 |  |
+| `OSValueObject<AppleCameraFirmwareWorkProcessorParams>` | 0x18 |  |
+| `OSValueObject<AppleCameraFirmwareWorkProcessorRPCRequest>` | 0x18 |  |
+| `OSValueObject<CameraChannelDataFileParams>` | 0x18 |  |
+| `OSValueObject<ISPClientContext>` | 0x18 |  |
+| `OSValueObject<ISPCommandArgs>` | 0x18 |  |
+| `OSValueObject<ISPCoredumpSection>` | 0x18 |  |
+| `OSValueObject<ISPExclaveMessage>` | 0x18 |  |
+| `OSValueObject<ISPOverrideNVMParams>` | 0x18 |  |
+| `PearlCamEventSource` | 0x48 | IOEventSource |
+| `client_log_buffer_t` | 0x40 |  |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1800)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0003b39d off=0x003be740-0x003f9add addr=0xfffffe00073c2740-0xfffffe00073fdadd r--/r--   __TEXT            
+	sz=0x0000a2b0 off=0x003beeb0-0x003c9160 addr=0xfffffe00073c2eb0-0xfffffe00073cd160               __TEXT.__const            
+	sz=0x0001a70a off=0x003c9160-0x003e386a addr=0xfffffe00073cd160-0xfffffe00073e786a               __TEXT.__cstring          (CstringLiterals)
+	sz=0x00016273 off=0x003e386a-0x003f9add addr=0xfffffe00073e786a-0xfffffe00073fdadd               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x000a2560 off=0x01a32fb0-0x01ad5510 addr=0xfffffe0008a36fb0-0xfffffe0008ad9510 r-x/r-x   __TEXT_EXEC       
+	sz=0x000a1400 off=0x01a32fb0-0x01ad43b0 addr=0xfffffe0008a36fb0-0xfffffe0008ad83b0          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00001160 off=0x01ad43b0-0x01ad5510 addr=0xfffffe0008ad83b0-0xfffffe0008ad9510          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x000009f0 off=0x049361b8-0x04936ba8 addr=0xfffffe000b93a1b8-0xfffffe000b93aba8 rw-/rw-   __DATA            
+	sz=0x000002a8 off=0x049361b8-0x04936460 addr=0xfffffe000b93a1b8-0xfffffe000b93a460               __DATA.__data             
+	sz=0x00000540 off=0x00000000-0x00000540 addr=0xfffffe000b93a460-0xfffffe000b93a9a0               __DATA.__common           (Zerofill)
+	sz=0x00000208 off=0x00000000-0x00000208 addr=0xfffffe000b93a9a0-0xfffffe000b93aba8               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00018e78 off=0x01006cd8-0x0101fb50 addr=0xfffffe000800acd8-0xfffffe0008023b50 rw-/rw-   __DATA_CONST      
+	sz=0x00000098 off=0x01006cd8-0x01006d70 addr=0xfffffe000800acd8-0xfffffe000800ad70         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000058 off=0x01006d70-0x01006dc8 addr=0xfffffe000800ad70-0xfffffe000800adc8         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x000164d8 off=0x01006dc8-0x0101d2a0 addr=0xfffffe000800adc8-0xfffffe00080212a0         __DATA_CONST.__const            
+	sz=0x000013c0 off=0x0101d2a0-0x0101e660 addr=0xfffffe00080212a0-0xfffffe0008022660         __DATA_CONST.__kalloc_type      
+	sz=0x00000a50 off=0x0101e660-0x0101f0b0 addr=0xfffffe0008022660-0xfffffe00080230b0         __DATA_CONST.__kalloc_var       
+	sz=0x000008b0 off=0x0101f0b0-0x0101f960 addr=0xfffffe00080230b0-0xfffffe0008023960         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000001d8 off=0x0101f960-0x0101fb38 addr=0xfffffe0008023960-0xfffffe0008023b38         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000018 off=0x0101fb38-0x0101fb50 addr=0xfffffe0008023b38-0xfffffe0008023b50         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 615 at 0x04ad477c
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     CA04DBEC-1EC5-3083-92BA-142FDD5B5E62
+008: LC_SOURCE_VERSION           20.112.0.0.0
+009: LC_FUNCTION_STARTS          offset=0x004a9b420 size=0x9b0
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleCamera`
+- `CFBundleIdentifier`: `com.apple.driver.AppleCamera`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleCamera`
+- `CFBundleNumericVersion`: `0`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `20.112`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `20.112`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2016-2017 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.0`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleCamera.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198901872832`
+- `_PrelinkExecutableRelativePath`: `AppleCamera`
+- `_PrelinkExecutableSize`: `1012069`
+- `_PrelinkExecutableSourceAddr`: `-2198901872832`
+- `_PrelinkKmodInfo`: `-2198829030984`
+
+## Strings (3563) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+First 3000 of 3563.
+
+**[__TEXT.__cstring]**
+
+- `AppleCamera:%s - Failed to instantiate camera auth support\n`
+- `[%02d:%02d:%02d.%06d] %s`
+- `function-saca4`
+- `function-saca4b`
+- `    fSensorLDOControl0 = %s\n`
+- `cleanupEndpoints`
+- `EnableSensorRefClockForChannel`
+- `AppleCamera:%s - I2C slave error, smsta=0x%08x\n`
+- `AppleCamera:%s - Error: Overlapping end of copy offset memcpy\n`
+- `AppleCamera:%s - Registering exclave isp upcall for strobe control with notification Id: %u\n`
+- `AppleCamera:%s - Couldn't create ISPLoggerEventSource.\n`
+- `AppleCamera:%s - messageClients(kISPTailspinAEReqLate, 0x%016llx)\n`
+- `SavagePubKey`
+- `sacActionChannel0_FreqArray0`
+- `    fSensorExtClkFunction0 = %s\n`
+- `GetState`
+- `AppleCamera:%s - Enable ANE IPC service endpoint on platform: 0x%x\n`
+- `AppleCamera:%s - wired client surface-id:0x%08X, w=%-4u, h=%-4u, fmt=%-3u, poolID=%-4u, dartMapBase=%#llX\n`
+- `Number BANE CF_NVM_AREA_CRC_CALCULATION_FAULT`
+- `Errors: Skipped ISP coredump because ...\n`
+- `AppleCamera:%s - [Exclaves] ISP_InitializeExclave took %lld usec\n\n`
+- `powerStateWillChangeTo_gated`
+- `AppleCamera:%s - Could not change power state to %d: ret=0x%08X\n`
+- `ISP_SetupFirmwareLogging`
+- `pre-loaded`
+- `AppleCamera:%s - Could not create IOSurface for ISPCPU firmware buffer\n`
+- `newUserClient`
+- `AppleCamera:%s - optical-dev-card-id is present in the IORegistry. val=???\n`
+- `IOCoreSurfaceRoot`
+- `AppleCamera:%s - Not destroying session, at least one camera is active\n`
+- `CISP_CMD_SUSPEND failed`
+- `Number Rgl INT_FAULT_MAXDC_CLKLP_BBA_LATCH`
+- `freeDeletionPendingAllocations`
+- `function-saca3`
+- `AppleCamera:%s - CISP_CMD_RPC_ENABLE failed!\n`
+- `122121111211`
+- `v24@?0{applecamera_exclavecoreispeng_ispengineexclavecore_ispengineoff__result_s=C(?={applecamera_exclavesispshared_exclavesisperror_s=Q})}8`
+- `AppleCamera:%s - Error: The client's rawBuffer does not have the necessary privilege!\n\n`
+- `function-saca5`
+- `AppleCamera:%s - Releasing ISP LTR override on power-up\n`
+- `AppleCamera:%s - initializeEndpoint failed %d, 0x%08x\n`
+- `BackCameraSNUM`
+- `    fAOPMotionStateSet = %s\n`
+- `    PMPBandwidthControlFunction - intGenBit = %u, intGenReg = %#llx (len:%d)\n`
+- `PearlCamStatisticsString_DenseFrames`
+- `AppleCamera:%s - Unable to start more than one channel at a time (channelMask=%8x)\n`
+- `AppleCamera::client_log_buffer_t:%s - IOSurface ID %#x has insufficient size: %#zx bytes\n\n`
+- `AppleCamera:%s - init IDL call failed\n`
+- `AppleCamera:%s - Error: mcache request message exceeds message size limit!\n`
+- `AppleCamera:%s - Invalid buffer return: 0x%llX\n`
+- `function-saca2c`
+- `AppleCamera:%s - mapFwCTRRRegion segment-ranges is not in the device tree\n`
+- `IspAneIPCEndPoints:%s - failed to retrieve peer endpoint configuration,  returned 0x%08x\n`
+- `AppleCamera:%s - [Exclaves] fExclaveInitializationStatus: FAIL\n`
+- `Exiting`
+- `Multi-camera configuration\n`
+- `RTKit magic key not written`
+- `AppleCamera:%s - EC NVM Read - mask: 0x%06X, ret: 0x%08X\n`
+- `fDeletionPendingSharedMemoryTotalSize = %llu (%u allocations)\n`
+- `12111112122212121212111111`
+- `IOSurfacePlaneBase`
+- `PearlCamDoBioCaptureOptionsString_Nonce`
+- `AppleCamera:%s - registerInterestedDriver: 0x%08lx (service=%s)\n`
+- `SendSendBuffersMessageToClient`
+- `AppleCamera:%s - Exclaves not supported on this platform\n`
+- `AppleCamera`
+- `function-cam_dvdd_gpio`
+- `AppleCamera:%s - ISP_Init failed: 0x%08X\n`
+- `AppleCamera:%s - willChange: dev=%s state=%lu isSPU=%d isRTB=%d\n`
+- `fNonPersistentSharedMemoryTotalSize = %llu (%u allocations)\n`
+- `AppleCamera:%s - CISP_CMD_SUSPEND was NOT sent as res=0x%x\n`
+- `getPeerEPConfig`
+- `AppleCamera:%s - starting\n`
+- `AppleCamera:%s - Statistics: NonPersistentMemory:%llu, PersistentMemory:%llu, DeletionPendingMemory:%llu, NonPersistentMemoryMax:%llu, PersistentMemoryMax:%llu\n`
+- `ispIgp0rr`
+- `PearlCamStatisticsString_SparseFrames`
+- `IOSurfaceHeight`
+- `ISP_GetAuthResponse_gated: ERROR: SENSOR_SECURE_INFO failed 0x%x\n`
+- `AppleCamera:%s - Unable to retrieve endpoint configuration from AOP\n`
+- `AppleCamera::%s: Could not allocate memory for ioreg data\n`
+- `endpointSendMessage`
+- `role`
+- `AppleCamera:%s - AllocateHeapMemorySurface: 0x%x, heap size: 0x%x\n`
+- `Number SAC Action1 FreqArray2`
+- `PearlCamDoSecretPatternOptionsString_LFSRE`
+- `ISP_StartCamera_gated`
+- `AppleCamera::%s: CISP_CMD_CH_SENSOR_BOOT failed, result = 0x%x\n`
+- `initWithCameraInterface`
+- `Enroll`
+- `AppleCamera:%s - clientContext or session is NULL\n`
+- `ISPMainWorkLoopEventSource:%s - Could not get the main workloop message queue, exiting\n`
+- `camEnableSerialFWLogging`
+- `AppleCamera:%s - Could not find a matching dictionary for the AOP RTBuddy Service\n`
+- `ISP_PowerOnCamera_gated`
+- `AppleCamera:%s - ISP Logging Buffer Reallocation!. Current ISP firmware log message size (%d) does match driver's expectation (%d)\n`
+- `perType`
+- `site.AppleCameraVMAllocator`
+- `AppleCamera:%s - Error: Overlapping start of copy offset memcpy\n`
+- `AppleCamera:%s - ISPFW print buffer is invalid after address translation!\n`
+- `IPC_initEndPoint`
+- `\"TB_FATAL: \" \"invalid result returned from notifyFirmwareTearDown\" @%s:%d`
+- `GetPlatformInfo`
+- `AppleCamera:%s - Could not get a matching provider, exiting\n`
+- `AppleCamera:%s - Statistics: Starts:%lld, Resumes:%lld, SuspendSuccesses:%lld, SuspendFails:%lld, ResumeFails:%lld, DeInits:%lld\n`
+- `free`
+- `AppleAuth::authInit - ERROR: Couldn't add command gate to work loop\n`
+- `AppleCamera:%s - Could not get the matching provider, exiting\n`
+- `AppleCamera:%s - MotionStateSet(true)\n`
+- `Number Rgl INT_FAULT_MAXDC_CLKLP_BBB_LATCH`
+- `IspAneIPCEndPoints:%s - pIspAneNetworkSurface->surface is zero\n`
+- `1111111111222`
+- `AppleAuth::authSendData - ERROR: Unknown command 0x%02x\n`
+- `PearlCamStatisticsString_FloodFrames`
+- `PearlCamSendBuffersInfoString_Pitch`
+- `RearCameraAuthICPubKeyHmac`
+- `AppleCamera:%s - Timed out waiting for the dartErrorHandler to complete\n`
+- `com.apple.driver.AppleCamera.PearlCamBuffer`
+- `PearlCamSendBuffersInfoString_AllocatedPPMBudget`
+- `AppleCamera:%s - couldn't prepare consolidated memory descriptor: 0x%x\n`
+- `12`
+- `ECPrepareToStrobeAck`
+- `AppleCamera:%s - Failed to initialize ISP-ANE IPC\n`
+- `ISP_CPU_CORE0_PS On Time (ms)`
+- `AppleCamera:%s - kIOMessageSystemWillSleep fSystemSleepInProgress=%d. Setting fSystemSleepInProgress to false\n`
+- `AppleCamera:%s - Could not map registers: PSExt0\n`
+- `Number YB FAULT_C`
+- `AppleCameraChannel:%s - sensor %d does not support hardware enable\n`
+- `function-cam2_ldo`
+- `ISPCPU: %s`
+- `OSValueObject<AppleCameraFirmwareWorkProcessorRPCRequest>`
+- `AppleCamera:%s - Timedout waiting for ISPCPU to write to IGP0RR register after CISP_CMD_POWER_DOWN.. Continue with power down\n`
+- `Number SAC Action0 FreqArray1`
+- `Number Rgl INT_FAULT_BBB_OVC_LATCH`
+- `222212222212221212122212121222121212221212122212121222121212221212122212121222121212221212122212121222121212221212122212121222121212221212122212121222121212221212122212121222121212221212122212121222121212221212122212121222121212221212122212121222121212221212122212121222121212221212122212121222121212`
+- `AppleAuth::authInit - ERROR: Could not create AppleAuth work-loop\n`
+- `AppleCamera::%s: Couldn't create a new memory descriptor for name\n`
+- `    fSensorAVDDGPIOControl = %s\n`
+- `Number SAC Action0`
+- `AppleCamera:%s - ctrr-disabled is set\n`
+- `yes`
+- `AppleCamera:%s - GIC data exceeds maximum allowed size\n`
+- `AppleCamera:%s - Channel %u metaBufferPoolId: %u\n`
+- `ISPCPU Log Messages`
+- `Number Rgl INT_SUPPLY_LATCH`
+- `IspAneIPCEndPoints:%s - AppleARMFunction match for '%s' timed out (%llu ns)\n`
+- `AppleCamera:%s - optical-dev-card-id is present in the IORegistry. val=%d\n`
+- `AppleCamera:%s - EXT_SW_GEN_SET ADDR: %016llX, BITMASK: %08X\n`
+- `    fSensorExtClkFunction1 = %s\n`
+- `PearlCamDoBioCaptureOptionsString_SecretPatternOrder`
+- `BackTeleCameraModuleSerialNumString`
+- `AppleCamera:%s - s2r flag addr offset = 0x%llx, expected value = 0x%llx\n\n`
+- `AppleCamera:%s - Timedout waiting for ISPCPU to write to IGP0RR register after CISP_CMD_SUSPEND.. Continue with power down\n`
+- `            ... crashlog endpoint was not found.\n`
+- `PearlCamStatisticsString_TotalFrameCount`
+- `AppleCamera:%s - CISP_CMD_POWER_DOWN was NOT sent as res=0x%x\n`
+- `     IsWrite= %s\n`
+- `mcacheEnableStream`
+- `AppleCamera:%s - Warning: No fSensorExtClkFunction3 found\n`
+- `AppleCamera:%s - WARNING: fISPMainWorkLoopEvent is NULL!\n`
+- `AppleCamera:%s - before release surface, ISP-ANE networks surface ID: 0x%x, has RetainCount: %d\n`
+- `    fSensorDVDDGPIOControl = %s\n`
+- `AppleCamera:%s - RTKit magic key not written, current value = 0x%x, expected = 0x%x\n\n`
+- `AppleCamera:%s - CIC data exceeds maximum allowed size\n`
+- `    fSensorAVDDLDOControl1 = %s\n`
+- `PrintFwDebugPoolInfo`
+- `ISP_STS0_PS On Time (ms)`
+- `DPE_CVD_LaccMatchWrap High`
+- `Number Rgl INT_FAULT_XEF1`
+- `IspAneIPCEndPoints:%s - Unable to retrieve endpoint configuration from ANE\n`
+- `false`
+- `ECReadNVMData`
+- `AppleCamera:%s - number of %s supported MIPI frequencies for chan %d: %d (aggressorFreqDivider=%d)\n`
+- `removeObject`
+- `PearlCamStartOptionsString_UnwrapInputData`
+- `AppleCamera:%s - ANE1 used for IPC communication\n`
+- `AppleCamera:%s - exit shm=%d enableFn=%s endpointsEnabled=%d\n`
+- `AppleCamera:%s - no sensor found on chan %d (%s)\n`
+- `     Client: %s\n`
+- `AppleCamera:%s - CPU1_UTTDBG_PCSAMPLE: %#08X\n`
+- `PearlCamStartOptionsString_AttestationNonce`
+- `AppleCamera:%s - cam-connections-scheme is present in the IORegistry. val=%d\n`
+- `AppleCamera:%s - couldn't map command memory descriptor\n`
+- `IOReportLegendPublic`
+- `meta`
+- `ISPLoggerEventSource:%s - freeing\n`
+- `YonkersSNUM`
+- `AppleCamera:%s - Error: camChannel(%u) >= fNumChannels(%u) || !pChannels\n`
+- `AppleCamera:%s - GPBuffers h2tBuf: inputParameter tag=%#llx\n`
+- `AppleCamera:%s - ISP_CacheChannelConfigs command completed: res=0x%08X\n`
+- `Number Rgl INT_FAULT_OTP_LATCH`
+- `ISP_SendALSPowerCommand`
+- `2`
+- `active-mcc-bit-vector`
+- `Total Number of WorkProcessorMappedSurfaces: %u\n`
+- `AppleCamera::client_log_buffer_t:%s - Could not map memory for logging database\n\n`
+- `            ... ISP only crashlogs when it panics.\n`
+- `\"TB_FATAL: \" \"invalid result returned from forceCleanup\" @%s:%d`
+- `ISPLoggerEventSource:%s - disabling\n`
+- `withOptions`
+- `persistent`
+- `AppleCamera:%s - ISPFW print buffer is out of the virtual memory bounds!\n`
+- `AppleCamera:%s - CIC data is invalid\n`
+- `fuse_aciphy_2`
+- `AppleCamera:%s - Releasing ISP BWR override on power-up\n`
+- `Succeeded!`
+- `ApplePPM`
+- `AppleCamera:%s - disabling sensor ref clock 1\n`
+- `function-ane1_data_param_get`
+- `findStreamObjectByID`
+- `EnableFWPowerGating`
+- `v24@?0{applecamera_exclavecoreispeng_ispengineexclavecore_endstrobeack__result_s=C(?={applecamera_exclavesispshared_exclavesisperror_s=Q})}8`
+- `    fSensorResetFunction1 = %s\n`
+- `AppleAuth::authThread - ERROR: Invalid command gate\n`
+- `site.PearlCamEventSource`
+- `AppleCamera:%s - CISP_CMD_CH_SET_FILE_LOAD command (chan=%d) completed: res=0x%08X\n`
+- `AppleCamera:%s - Could not map the [%s] IOBMD memory descriptor, size 0x%llX\n`
+- `AppleCamera:%s - pending: 0x%08X\n`
+- `AppleCamera:%s - Booting firmware in buffer-based logging mode\n`
+- `DPE_AISP_SIFFE_PIPE1_IspPipeSIfFE Low`
+- `PearlCamMessageHandler_Notification`
+- `v24@?0{applecamera_exclavecoreispeng_ispengineexclavecore_readnvmdata__result_s=C(?={applecamera_exclavesispshared_exclavesisperror_s=Q})}8`
+- `AppleCamera:%s - Found FirmwareWorkProcessor to un-register\n`
+- `processTargetToHostIOCommand`
+- `AppleCamera:%s - Request for strobe mode OFF->ON transition\n`
+- `FrontCameraModuleFocusActuatorID`
+- `AppleCamera:%s - (camChan=%d)\n`
+- `Number BANE TI_NVM_AREA_CRC_CALCULATION_FAULT`
+- `PearlCamPearlSURDataString_SensorTag`
+- `AppleCamera:%s - MotionDataDisable: skip endpoint %d (not enabled)\n`
+- `AppleCamera:%s - couldn't send datafile to firmware\n`
+- `ValidationStatus`
+- `AppleCamera:%s - ISPCPU IPC numIPCChannels=%d, ipcQueueSize=%d\n`
+- `AppleCameraUserClient`
+- `PearlCamStateEntryProc_SECRET_DONE`
+- `AppleCamera:%s - kIOMessageSystemWillPowerOn fSystemSleepInProgress=%d\n`
+- `YonkersIR2DeviceID`
+- `     Surface ID:          %u     \n`
+- `ISPExclaveEventSource:%s - Could not get a message queue lock, exiting\n`
+- `site.T`
+- `ISP_SelectBestPixClockFrequencyIndex_gated`
+- `CreateSendBuffersInfoDict`
+- `AppleCamera:%s - Could not create IOSurface for InterProcessorCommunication buffer\n`
+- `AppleCamera:%s - PTD ID found: %c%c%c%c (0x%08X)\n`
+- `Number BANE TRACE_RESISTANCE_HIGH_HARD_FAULT`
+- `drainEndpointsMessage`
+- `AppleCamera:%s - CISP_CMD_PMP_CTRL_SET command completed: res=0x%08X\n`
+- `SendFaceDetectStatusMessageToClient`
+- `AppleCamera:%s - disabling sensor ref clock 2\n`
+- `Registered clients\n`
+- `Number SAC Action2`
+- `CmPMValidationStatus`
+- `AppleARMFunctions\n`
+- `AppleCamera:%s - [Exclaves] Return fExclaveEnabled=%d\n\n`
+- `AppleCamera:%s - CISP_CMD_CH_PROPERTY_WRITE failed!. Property = 0x5A0\n`
+- `site.ISPLoggerEventSource`
+- `site.sCIspCmdChDataFileMultipleLoad.sCIspDataFileInfo`
+- `AppleCamera:%s - disabling sensor ref clock 3\n`
+- `clientDied`
+- `AppleCamera::%s: BootErrorFlags(0xB9) = 0x%04x, ProvErrorFlags(0xBB) = 0x%02x, DebugErrorFlags(0xBD) = 0x%04x, DebugEntitlementStatus(0xB5) = 0x%04x, FlowWrapStatus(0x07F2) = 0x%04x, FlowAuthStatus(0x07F3) = 0x%04x, FlowUnWrapStatus(0x07F4) = 0x%04x, \n`
+- `AppleCamera:%s - Requested firmware heap size=%d\n`
+- `AppleCamera:%s - ApplePPM service is not available\n`
+- `AppleCamera:%s - Failed to get state on index: 0x%08X\n\n`
+- `Attn`
+- `createReporters`
+- `SendSetfileToFirmware`
+- `AppleCamera:%s - Mcache update message exceeds message size!\n`
+- `AppleCamera:%s - ANE will power up, self state: %u\n`
+- `ISPCPU Response Packet Received:\n`
+- `Number Rgl INT_FAULT_LS_OVC_LATCH`
+- `PearlCamStatisticsString_SparseLowPowerFrames`
+- `function-campmu_reset2`
+- `ISP_PowerOnSecureSensor_gated`
+- `Run deferred early FW for bin firmware\n`
+- `AppleCamera:%s - firmware teardown notification returned error=0x%llx\n`
+- `AppleCamera:%s -  %s (fPowerEvent=%d, fOutstandingPowerUpRequests=%d, fSystemSleepInProgress=%d)\n`
+- `AppleCamera:%s - Error: The client's output buffer does not have the necessary privilege!\n\n`
+- `FrontCameraModuleSerialNumString`
+- `Data-Files:\n`
+- `     0x%04X:     \n`
+- `AppleCamera::client_log_buffer_t:%s - Could not obtain IOMemoryDescriptor for IOSurface with ID %#x\n\n`
+- `11`
+- `isp-ane-endpoint-cfg`
+- `ISPMainWorkLoopEventSource:%s - Failed to allocate ISPMainWorkLoopEventSource\n`
+- `     L2Index= 0x%08X\n`
+- `PearlCamStartOptionsString_ADNetworkParameters`
+- `AppleCamera:%s - CISP_CMD_CH_POWER_CONTROL, pChPowerControl->vnom = %d\n`
+- `AppleCamera:%s - timed out waiting for the EC to power on\n\n`
+- `ISP_SetBestMIPIFrequencyIndex_gated`
+- `Number Rgl INT_FAULT_BBB_OVP_LATCH`
+- `420v`
+- `PearlCamSendBuffersInfoString_SequenceID`
+- `     HwError= %s\n`
+- `SwitchState`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - freed deletionPending shared surface. surface-id=%#08X, size=%llu, dartMapBase=%#llX\n`
+- `AppleCamera:%s - focus driver init failed\n`
+- `AppleCamera:%s - couldn't prepare memory descriptor\n`
+- `AppleCamera:%s - Error: Too many buffers specified in RPC command\n`
+- `IspAneIPCEndPoints:%s - fPeerGetDataCallFunction is NULL\n`
+- `112`
+- `    fIODMACommandCount = %u\n`
+- `ISP_ChannelSpecificFirmwareInitialization`
+- `function-ane1_ep_control`
+- `112122222222222222222222`
+- `IODeviceTree:/`
+- `Number Rgl INT_FAULT_TAMP_LATCH`
+- `AppleCameraFrameReceiverBuffer`
+- `AllocateSurface`
+- `AppleCamera:%s - SKIPPED gate failed (enableFn=%s aopPwr=%d)\n`
+- `v32@?0{applecamera_exclavecoreispeng_ispengineexclavecore_exclaveisphardwareirq__result_s=C(?={applecamera_exclavesispshared_exclavesisperror_s=Q}{applecamera_exclavecoreispeng_exclaveisphardwareirqreturn_s=QBI})}8`
+- `AppleCamera:%s - Could not start IOService, exiting\n`
+- `AppleCamera:%s - DVA = 0x%llx, pVisibleMemory = %p\n`
+- `AppleCamera:%s - channel=%d, sensorID:0x%08X\n`
+- `AppleCamera:%s - disable timer\n`
+- `AppleCamera:%s - Couldn't create command gate\n`
+- `FWCOMP= %lld usec\n`
+- `ISP_GeneralProcess_gated`
+- `enable`
+- `OSValueObject<ISPExclaveMessage>`
+- `function-sensor_extclk2`
+- `ISP_InitializeIPCWithANE`
+- `ISPCPU Responses Received`
+- `Number BANE TRACE_RESISTANCE_OUT_OF_RANGE_HIGH_FAULT`
+- `AppleCamera:%s - [ISPRTB] Error! Failed to retrieve endpoint: %d from service\n`
+- `AppleCamera:%s - Could not initialize class variables, exiting\n`
+- `AppleCamera:%s - Logger command buffer exceeds the message size limit!\n`
+- `JasperSNUM`
+- `AppleCamera::%s: ISP_Init failed, result = 0x%08x\n`
+- `function-saca1b`
+- `CispCmdStopFailed`
+- `PearlCamPearlSURDataString_EphemeralPublicKeyX`
+- `Deferred `
+- `FreqArray2`
+- `AppleCamera:%s - FW __DATA segment phy: 0x%llx, virt: 0x%llx, remap: 0x%llx, size: 0x%x\n`
+- `Number Rgl INT_FAULT_STBYDLY_LATCH`
+- `Number BANE TEMPERATURE_LOW_FAULT`
+- `AppleCamera:%s - dartMapMemoryDescriptor failed, res = 0x%x\n`
+- `[BufferPool empty!]`
+- `AppleCamera:%s - optical-dev-card-id is NOT present in the IORegistry\n`
+- `ISP_ScheduleWork_gated`
+- `Yes!`
+- `PearlCamDoBioCaptureOptionsString_DoubleOrder`
+- `forMapper`
+- `AppleExclaveCameraProxy:%s - Booting in legacy mode, will not register\n\n`
+- `AppleCamera:%s - sendcmdnotifyfirmwareteardown idl call failed=%d\n`
+- `ISP_GetAuthResponse_gated: ERROR: First SENSOR_BOOT failed 0x%x\n`
+- `sacActionChannel0_FreqArray1`
+- `       writeRingBufferLen:               0x%08x \n`
+- `Number Rgl INT_MODE1_LATCH`
+- `function-cam_avdd_ldo`
+- `ISP Firmware Buffer Log Status: Unknown (%d)\n`
+- `AppleCamera:%s - other type of message\n`
+- `ECSendCommandHWIRQ`
+- `AppleAuth::authInit - ERROR: Failed to allocate thread call\n`
+- `AppleCamera:%s - Couldn't create command gate for exclaves\n`
+- `AppleCamera:%s - No SAC PRI/PLL indices selected: 0x%X\n`
+- `AppleCamera:%s - Firmware confirmed safe.\n`
+- `AppleMPMMapMemoryFunction`
+- `No`
+- `Number SAC Action5 ToFClock`
+- `Number MB MODID_ECC_ERR`
+- `McacheDriverClient:%s - No MCstream Object with stream id: 0x%x\n`
+- `site.Triplet*`
+- `AppleCamera:%s - No set-file loaded for camera channel %d\n`
+- `sphere-extended-stroke-range`
+- `AppleCamera:%s - Bad configured firmware size: 0x%x, mapped region length = %llx\n`
+- `     L3Index= 0x%08X\n`
+- `PearlCamPearlSURDataString_EphemeralPublicKeySignature`
+- `PearlCamDoBioCaptureOptionsString_LFSRE`
+- `Number YB FAULT_D`
+- `RingDoorbell`
+- `\"TB_FATAL: \" \"invalid value: unexpected case value, %llx\" @%s:%d`
+- `AppleCamera:%s - Couldn't create ISPMainWorkLoopEventSource\n`
+- `ISP_SelectBestChargePumpFrequencyIndex_gated`
+- `AppleCamera:%s - %s psuedo-standby, result=0x%08X\n`
+- `McacheDriverClient:%s - Couldn't register AppleCamera with M$ driver\n`
+- `IOSurfacePlaneWidth`
+- `PearlCamStatisticsString_NoProjectorFrames`
+- `AppleCamera:%s - ApplePTD is unavailable\n`
+- `site.ISPSharedMemorySurfaceParams`
+- `vmAlloc`
+- `camEnableSerialLogging`
+- `    readRingBufferLen  :              0x%08x \n`
+- `1212212`
+- `PearlCamSendBuffersInfoString_StbDIE_Temperature`
+- `AppleExclaveCameraProxy:%s - [%d] assert - aborting!\n`
+- `AppleCamera:%s - enableFn=%s aopPwr=%d\n`
+- `AppleCamera:%s - [Exclaves] Exclave is already initialized\n`
+- `YonkersDATFileStatus`
+- `AppleCamera:%s - Got ISP-ANE AFPP netowrks but ISP is powered on\n`
+- `AppleCamera:%s - bypassing firmware shutdown\n`
+- `AppleCamera:%s - CISP_CMD_FLICKER_SENSOR_SET command completed: res=0x%08X\n`
+- `    _numISPResumeFirmware: %llu\n`
+- `lpdprx_cfg_fuse1`
+- `AppleCamera:%s - Couldn't register ApplePearlCam as AppleARMFunction parent\n`
+- `AppleCamera:%s - startAuth - Villanova auth only supported on V68, skipping\n`
+- `AppleCamera:%s - CISP_CMD_MCACHE_REQUEST for streamID(%d) is assigned size: 0x%x,numofdsids: %d, ispMsgAddress: 0x%llx, messagesize:%llu, messageExtra:%llu\n`
+- `JasmineIRPubKeyHmac`
+- `    Read Buffer (TX)\n`
+- `            ... ISP was not running.\n`
+- `AppleCamera:%s - releasing fWorkProcessorInProgressRequests item that was never completed\n`
+- `com.apple.driver.AppleCamera.NonPersistent`
+- `CmClValidationStatus`
+- `AppleCamera:%s - couldn't send datafiles to firmware\n`
+- `site.PearlCamWorkProcessorRefCon`
+- `PearlCamSendBuffersInfoString_HasUnsupportedGlasses`
+- `site.AppleCameraFrameMetadata`
+- `ISPEngineECInterface_tightbeam_C.c`
+- `AppleCamera:%s - timed out waiting for the EC to ack FW Teardown notification\n\n`
+- `RearCameraAuthICUID`
+- `Number YB FAULT_NVM`
+- `AppleCamera:%s - failed to gen segments: 0x%08X\n`
+- `AppleCamera:%s - no power on clients still connected, power off the ISP\n`
+- `IspAneIPCEndPoints:%s - ANEEP using ANE%d\n`
+- `AppleCamera:%s - Failed to write power gate register offset 0x%08X with value:0x%08X, current value:0x%08X [FID state:0x%08X]\n`
+- `PearlCamSendBuffersInfoString_HasUnsupportedGlassesForUnlock`
+- `ConfigureAONPTDTable`
+- `PearlCamRect_H`
+- `AppleCamera:%s - Warning: could not map GPIOCFG register map!\n`
+- `ApplAppleCamera::%s: Could not load firmware, result = 0x%x\n`
+- `HandleFirmwareTimeout`
+- `AppleCamera:%s - Failed to vote on index: 0x%08X with value: 0x%08X for active state: 0x%08Xres = 0x%08x\n\n`
+- `AppleCamera:%s - channel: %d, name: %s, state: %d, priority: %d\n`
+- `AppleCamera:%s - Error: signpost notification message exceeds message size limit!\n`
+- `exclaveIspStrobeControlHandlingOff`
+- `PearlCamSendBuffersInfoString_StbNTC_Temperature`
+- `AppleCamera.cpp`
+- `AppleCamera:%s - Loading default triplet bank\n`
+- `AppleCamera:%s - unable to create a multicam session while a channel is active\n`
+- `_ppmRearStrobeArrivalNotificationHandler`
+- `AppleCamera:%s - t2hBuf: pool=%d, tag=%#llx - isPreMappedClientSurface: %d\n`
+- `RearCameraAuthICChipID`
+- `    fStrobePowerFunction0 = %s\n`
+- `\"AppleCamera::%s - CISP_CMDCH_ERROR_NOTIFICAITON_ERROR_SOURCE_ASYNCH_ERROR, L2C_ERR_STS(0x%x), L2C_ERR_ADR(0x%x), L2C_ERR_INF(0x%x), \t\t\t\t  MMU_ERR_STS(0x%x), LSU_ERR_STS(0x%x), LSU_ERR_CTL(0x%x), FED_ERR_STS(0x%x), FED_ERR_CTL(0x%x)\\n\" @%s:%d`
+- `DisableSensor`
+- `enableFWIPCEP_gated`
+- `IspAneIPCEndPoints:%s - sending ISP-ANE networks surfaceID: 0x%x and update flag: %d\n`
+- `site.ToFSACAnalytics`
+- `YonkersIR2PubKeyHmac`
+- `site.UInt64`
+- `init`
+- `ISPMPMMemoryParams`
+- `\"AppleCamera::%s: Failed to allocate IOBMD for extra heap, size = 0x%llX\\n\" @%s:%d`
+- `AppleCamera:%s - Channel %u metaStillCaptureBufferPoolId: %u\n`
+- `AppleH10CamIn`
+- `            ... crashlog was not received.\n`
+- `ReleaseFwHeapMemorySurface`
+- `AppleCamera:%s - Warning: No fSensorExtClkFunction0 found\n`
+- `AppleCamera:%s - enabling sensor ref clock 3\n`
+- `setPowerStateGated`
+- `AppleCamera:%s - propertyNum: %d, value: %d\n`
+- `function-saca2b`
+- `    Fake sensor installed for channel %d, (0x%08X)\n`
+- `priorTimeoutPending`
+- `ISPMainWorkLoopEventSource:%s - Not enabled, exiting\n`
+- `/Replay/BioCap%d-1`
+- `AppleCamera:%s - Peridot SAC parameters sent to ISPFW with return code 0x%X\n`
+- `AppleCamera:%s - extendedStroke: %d\n`
+- `IspFirmwarePanic`
+- `IspAneIPCEndPoints:%s - fPeerIPCCtrlCallFunction is NULL\n`
+- `ISPLoggerEventSource`
+- `registerKernelClientToApplePPMFunction`
+- `AppleCamera:%s - Could not register patchbay callback, result = 0x%x\n`
+- `HandleSystemWillPowerOnMessage`
+- `PearlCamSendBuffersInfoString_HardwareEvents`
+- `exclaveIspMailboxInterruptHandler`
+- `\"AppleCamera::%s:%d rISP_ASCWRAP_EXT_SW_GEN is not initialized!\\n\" @%s:%d`
+- `AppleCamera:%s - Peridot selection algorithm returned %u %s\n`
+- `AppleCamera:%s - Error: Unexpected IORVBAR: 0x%llx\n\n`
+- `[%s:%d] [CIL] CH:%u / faceId:%d / enabled:%d / prevStatus0x%08x\n`
+- `SendDatafilesToFirmware`
+- `None`
+- `    _numFailedISPResumes: %llu\n`
+- `AppleCamera:%s - Sent Exclave on: TBErr=%U\n`
+- `FrameReceivedTimeOut`
+- `AppleCamera:%s - startAuth - withAuthChip succeeded\n`
+- `AppleCamera:%s - IPC EPSM memory allocation done with size: 0x%llx, return back to FW\n`
+- `Entering`
+- `AppleCamera:%s - Firmware Unit-Test mode!\n`
+- `Number Rgl INT_FAULT_BBA_UDC_LATCH`
+- `l2cLsuFedMmuErrorReporting`
+- `PearlCamStatisticsString_StandbyTimeInMicroSeconds`
+- `AppleCamera:%s - Wrong FW malloc command: ISP driver doens't support surface remap for now\n`
+- `AppleCamera:%s - MotionDataEnable: shm=%d enableFn=%s aopPwr=%d alreadyEn=%d\n`
+- `sacActionChannel1_FreqArray1`
+- `XXXXXXXX`
+- `ISP_PowerOffExclaveCore_gated`
+- `AppleCamera:%s - insufficient memory to initialize FFW infrastructure\n`
+- `IOSurfacePreallocPages`
+- `startAuth`
+- `function-ane1_data_param_set`
+- `AppleCamera:%s - [ISPRTB] ISP not ready %d\n`
+- `[wired] `
+- `AppleCamera:%s - Coredump Init Success\n`
+- `ISP_I2CRead`
+- `ISP_LoadIspAneAFPPFile_gated`
+- `  %4d: surface-id=%#08X, task: %p, refCount=%u\n`
+- `    fSensorResetFunction4 = %s\n`
+- `AppleCamera:%s - ispcpuSoftwareInterruptRegisterAddress: 0x%llx, ispcpuSoftwareInterruptRegisterBitmask: 0x%x\n\n`
+- `AppleCamera:%s - timed out waiting for the EC to power off\n\n`
+- `RearCameraAuthICDeviceID`
+- `AppleCamera:%s - Calling ECNotifyFirmwareTearDown\n`
+- `driverInterface`
+- `12111112122212121121111`
+- `SavageFabRevision`
+- `AppleCamera:%s - Error: The Input2 buffer does not have the necessary privilege!\n\n`
+- `       writeRingBufferAddr: (DART):      0x%08llx \n`
+- `AppleCamera:%s - This platform doesn't support Exclave (fPlatformType:%x)\n`
+- `site.AppleDisplayPseudoStandbyFunction`
+- `%02X `
+- `PearlCamMessageHandler_FaceDetectStatus`
+- `osenvironment`
+- `AppleCamera:%s - Error: power control message exceeds message size limit!\n`
+- `ISP_SendFirmwarePeridotClockParams_gated`
+- `restorecameraispd`
+- `StrobeState`
+- `com.apple.driver.AppleCamera.Endpoint`
+- `AppleCamera:%s - SPU service will power down\n`
+- `ISP_SensorFusing_gated`
+- `AppleCamera:%s - Could not create IOSurface for set-file buffer\n`
+- `AppleCamera:%s - iovmInsert failed for __TEXT: 0x%x\n`
+- `GetPeerIOService`
+- `PearlCamPearlSURDataString_AttestationNonceSignature`
+- `ISP_IsPearlCamProjectorSafe_gated`
+- `AppleCamera:%s - Removing kernel data file reference - chan: %d, type: 0x%08X\n`
+- `\"Incorrect endpoint\" @%s:%d`
+- `ISP_GetAuthResponse_gated: ERROR: SET_AUTH_CHALLENGE failed 0x%x\n`
+- `AppleCamera:%s - WARNING: fISPMainWorkLoopMessageQueue is NULL!\n`
+- `AppleCamera:%s - Timed out waiting for Initial EC clean up to complete\n\n`
+- `AppleCamera::%s: SysWakeupStatus(0xA7) = 0x%02x, SecureBootStatus(0xA8) = 0x%04x, SysModeStatus(0xAC) = 0x%02x, ProvStatus(0xB8) = 0x%02x \n \n`
+- `Number SAC Action2 ChargePump`
+- `PearlCamMessageHandler_DoBioCapture`
+- `AppleCamera:%s - Primary selection failed with kIOReturnNotFound\n`
+- `AppleCamera:%s - Less than %d triplets were found\n`
+- `PearlCam_QueuePearlCamMessage`
+- `function-cam_avdd_ldo3`
+- `AppleCamera:%s - couldn't create dedicated shared memory buffer for command\n`
+- `AppleCamera:%s - Invalid RPC request ID(s) - Aborting\n`
+- `Override`
+- `AppleCamera:%s - LogDARTErrorInfo - Begin Logging\n`
+- `AppleAuth::authSendData - ERROR: Not initialized (no owner)\n`
+- `ReleaseStreamingBuffers_gated`
+- `PearlCamStatisticsString_InvalidFrames`
+- `ISP_InstallFakeSensor_gated`
+- `    fAOPMotionDataEnable = %s\n`
+- `cameraispdarwind`
+- `AppleCamera:%s - fAOPIsPowered: 1->0 (SPU unavailable)\n`
+- `ISP_PreMapClientSurface_gated`
+- `YonkersIR1DeviceID`
+- `AppleCamera:%s - FW Channel %d is %s clock params to fw\n`
+- `AppleCamera:%s - WorkProcessorMappedSurfaces\n`
+- `AppleCamera:%s - RecoveryOS — ANE unavailable, Skipping ANE IPC setup.\n`
+- `AppleCamera:%s - Warning: No fSensorExtClkFunction1 found\n`
+- `ISPFirmwareLinkDate`
+- `       readRingBufferAddr : (DART):      0x%08llx \n`
+- `ispCmdSend`
+- `AppleAuth::authSendData - ERROR: SetTrustStatus data length mismatch (expected %u, got %u)\n`
+- `FirmwareLoaded`
+- `CispCmdPowerDownFailed`
+- `AppleCamera:%s - Invalid Ref Clock Value for Channel\n`
+- `ISP_SECURE_PS On Time (ms)`
+- `PearlCamStartOptionsString_EnableADNetwork`
+- `PearlCamSendBuffersInfoString_Roll`
+- `AppleCamera:%s - [Exclave] SendCmdSecureM3Isr returned 0x%x, result = 0x%x\n`
+- `AppleCamera:%s - Registering\n`
+- `    PMPBandwidthControlFunction - scratchReg = %#llx (len:%d)\n`
+- `AppleCamera:%s - WARN aopPwr flag=%d but SPU getPowerState()=%lu — divergence\n`
+- `121`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - Successfully allocated surface. surface-id=%#08X, surface address: 0x%p, size=%llu, dartMapBase=%#llX\n`
+- `AppleCamera:%s - Couldn't add isp interrupt event source to work loop\n`
+- `    fFrontCamForcePWMModeFunction = %s\n`
+- `AppleCameraFrameReceiver`
+- `AppleCamera:%s - 0x%08X\n`
+- `McacheDriverClient:%s - Failed to enable streams, bad arguments. streamInfo: 0x%llx, mcDriverStreamObj: 0x%llx\n`
+- `true`
+- `NULL`
+- `AppleCamera:%s - DRV= %lld usec\n`
+- `AppleCamera:%s - [Exclaves] No valid PDP Config found, res 0x%08x\n`
+- `AppleCamera:%s - XHatch data exceeds maximum allowed size\n`
+- `Number Rgl INT_FAULT_CC`
+- `site.AppleMPMMapMemoryFunction`
+- `\"AppleCamera::%s: Incorrect endpoint\\n\" @%s:%d`
+- `%s: Sensor wrap keys fetching - result = 0x%08X, keysize = %d \n`
+- `AppleCamera:%s - channel: %u, PRIs per bank: %u, number of banks: %u, pllidx=%u\n`
+- `Number Rgl INT_FAULT_SHORTANODE_LATCH`
+- `McacheDriverClient:%s - stream Id :%d is not found, add new stream\n`
+- `bounded_array_ref: Can't construct from a size greater than UINT32_MAX`
+- `PearlCamSendBuffersInfoString_DistanceToUserInMM`
+- `121222222222221211`
+- `AppleCamera:%s - ISP Core 0 power state: %spowered\n`
+- `function-saca0c`
+- `%s. res = 0x%08x\n`
+- `PearlCamStatisticsString_Num800mSecCoolDownPeriods`
+- `AppleCamera:%s - fExclaveStrobeControlClient handler is NULL\n`
+- `AppleCamera:%s -  %s (fPowerEvent=%d, fOutstandingPowerUpRequests=%d)\n`
+- `AppleCamera:%s - Error: T287 is running.\n`
+- `PearlCamSendBuffersInfoString_CropRectScaleFactorNumerator`
+- `AppleCamera:%s - enabling sensor ref clock 0\n`
+- `DeviceNonce`
+- `function-cam_avdd_ldo4`
+- `IOSurfaceBytesPerRow`
+- `AppleCamera:%s - MotionStateSet(false)\n`
+- `SavagePubKeyHmac`
+- `Number Rgl INT_FAULT_BBA_WDG_SFST_LATCH`
+- `bounded_array_ref: invalid slice provided, the indices are of bounds for the bounded_array_ref`
+- `AppleCamera:%s - Couldn't create firmware logging buffer lock\n`
+- `ISPPoolMan`
+- `ISP Unrecoverable`
+- `PearlCamSendBuffersInfoString_FrameCount`
+- `AppleCamera:%s - enable camera PMU\n`
+- `ANE ISP IPC EP Timeout`
+- `CreatePearlSURUnwrapOutputDictionary`
+- `PearlCamRect_Y`
+- `PearlCam_MetaBufferDARTAddress`
+- `JasmineIRUID`
+- `SavageDeviceID`
+- `SavageChipID`
+- `ISP_DeviceOpen`
+- `AppleCamera:%s - ret=%#x, surfaceID=%u, size=%llu, dartMapBase=%#llx\n`
+- `       Group %d: Channel mask %d, Sync %d\n`
+- `AppleCamera:%s - ANE power state is not ready, shut down ISP\n`
+- `PearlCamDoSecretPatternOptionsString_HostMainKeyIndex`
+- `EnableFwCTRR:%d / CamEarlyFW:%d\n`
+- `AppleCamera:%s - ispCmdSend kISPUserClientCommand_GeneralProcessBuffers status 0x%x cmdOutSize %u\n`
+- `PearlCamMessageHandler_PowerOn`
+- `AppleCamera:%s - kIOMessageSystemHasPoweredOn. fSystemSleepInProgress=%d. Setting fSystemSleepInProgress to false\n`
+- `AppleCamera:%s - Disable ANE IPC service endpoint in ramdisk\n`
+- `SavageWrapOutputHmac`
+- `    _numISPDeInits: %llu\n`
+- `AppleCamera:%s - Firmware Unit Test Mode!\n`
+- `AppleCamera:%s - Failed to send CISP_CMD_ALS_SENSOR_POWER_SET command\n`
+- `ISPErrorEventSource`
+- `AppleCamera:%s - Disabling CPU power gating\n`
+- `AppleCamera:%s - DartErrorHandlerInProgress\n`
+- `enableFwCore`
+- `bounded_ptr<T>::operator*: Dereferencing this pointer would access memory outside of the bounds set originally`
+- `AppleCamera:%s - retrying mapping after flushing inactive cache entries, result=0x%08x\n`
+- `ReadAndPublishSensorInfoToIOReg`
+- `MVFY`
+- `PearlCamStatisticsString_ProbeDenseFrames`
+- `AOP`
+- `AppleCamera:%s - Invalid mapper\n`
+- `AppleCamera:%s - Set fPowerEvent from %d to PowerOffPending because fOutstandingPowerUpRequests is zero\n`
+- `    fSensorAVDDLDOControl0 = %s\n`
+- `AppleCamera:%s - CPU0_UTTDBG_PCSAMPLE: %#08X\n`
+- `ISP_GetCurrentToFClockBanks_gated`
+- `AppleCamera:%s - enable IPC EP\n`
+- `PrintFwCmdTimeoutDebugInfo`
+- `AppleCamera:%s - FW __TEXT segment phy: 0x%llx, virt: 0x%llx, remap: 0x%llx, size: 0x%x\n`
+- `PearlCam_GazePointX`
+- `sensor-type`
+- `AppleCamera:%s - Could not read the data section copy offset\n`
+- `Streaming`
+- `Number Rgl INT_FAULT_BBA_OVP_LATCH`
+- `BioCap`
+- `PearlCamSendBuffersInfoString_SensorTemperature`
+- `AppleCamera:%s - (turn off) - change fPowerEvent from %d to PowerOffPending, HasActiveKernelClients=%d\n`
+- `12111111114111222221212212`
+- `PearlCamStartOptionsString_KDFNonce`
+- `AppleCamera:%s - ISP_InitPeerCommunication - boot-args override of ISP<->ANE communication: %d\n`
+- `AppleCamera:%s - Setting up exclave isp upcall for strobe control notify event source failed\n`
+- `AppleCamera:%s - rISP_INTR2AXI_CURRENT_STATUS_0 = 0x%x\n`
+- `PearlCamStartOptionsString_DeliverFDFramesAfterFaceFound`
+- `PearlCamSendBuffersInfoString_LuxLevel`
+- `AppleCamera:%s - Could not read the data section start offset\n`
+- `MotionDataEnable`
+- `AppleSPUSphereDriver`
+- `AppleCamera:%s - Unable to allocate shared memory for fAOPEndpoints[i].txBuffer\n`
+- `AppleAuth`
+- `AppleCamera:%s - Error: The Output buffer metadata does not have the necessary privilege!\n\n`
+- `Number YB FAULT_OV`
+- `priorTimeoutType`
+- `AppleAuth::authThreadGated - GetInfo: ERROR: RearCameraAuthICUID not found in registry\n`
+- `AppleCamera:%s - fNonPersistentSharedMemoryIOBMDs count: %d\n`
+- `TERMINAL`
+- `function-saca0`
+- `AppleCamera:%s - couldn't create memory map\n`
+- `AppleCamera:%s - sent=%d skipped=%d failed=%d\n`
+- `AllocateFwMemorySurface`
+- `ISPExclaveEventSource:%s - thread=%p\n`
+- `function-cam0_ldo`
+- `ctrr-unlocked`
+- `AppleCamera:%s - ISP command not permitted\n`
+- `AppleAuth::authSendData - ERROR: SetTrustStatus requires data\n`
+- `1211222222222121112`
+- `StopDeferredPowerDownTimer`
+- `PearlCamStartOptionsString_TimeOutInMilliseconds`
+- `PearlCamSendBuffersInfoString_HasEyeOcclusion`
+- `v24@?0{applecamera_exclavecoreispeng_ispengineexclavecore_forcecleanup__result_s=C(?={applecamera_exclavesispshared_exclavesisperror_s=Q})}8`
+- `setActive`
+- `AppleCamera:%s - IOSurfaceRoot not available or of the wrong class\n`
+- `DisableFHSi`
+- `AppleCamera:%s - Power on transition time-out\n`
+- `AppleCamera:%s - Error: The client's buffer does not have the necessary privilege!\n\n`
+- `ISP_ConfigureSAC`
+- `BackTeleCameraSNUM`
+- `AppleCamera:%s - Writing 1 to GPR6 so that FW boots in legacy mode\n`
+- `AppleCamera:%s - disable self IPC EP\n`
+- `Number SAC Action4 FreqArray1`
+- `AppleCamera:%s - Unable to create reporters\n`
+- `Number BANE RBIST_HIGH_FAULT`
+- `_ppmArrivalNotificationHandler`
+- `    mappedWriteNotifierBit:           0x%08x \n`
+- `\"TB_FATAL: \" \"invalid value: unexpected bits, 0x%llx\" @%s:%d`
+- `AppleCamera::%s: Could not map the data buffer in the kernel\n`
+- `AppleCamera:%s - Error: The client's input buffer does not have the necessary privilege!\n\n`
+- `\"Variable read size (%ld) does not match patch variable size(%d)\" @%s:%d`
+- `bounded_array_ref: n + m is larger than the size of any bounded_array_ref`
+- `/Pearl/%s-%llu/%s%d-%d.%s`
+- `IOSurfaceHostOnly`
+- `AppleCamera:%s - ISP-ANE health check timer is %d secs\n`
+- `AppleCamera:%s - Could not create ISPLogger work-loop\n`
+- `AppleCamera:%s - CISP_CMD_START command completed: res=0x%08X\n`
+- `Number Rgl INT_FAULT_BBB_OVV_LATCH`
+- `StateTimeOut`
+- `AppleCamera:%s - Couldn't create state timeout timer event source.\n`
+- `AppleCamera:%s - Successfully created PearlCamera object\n`
+- `AppleCamera:%s - Unable to read FHSi device, I2C status 0x%08x\n`
+- `ISP_MemoryPressureNotification_gated`
+- `site.sCIspCmdChAPSRecalibrationSet.uint8_t`
+- `Number Rgl INT_FAULT_MAXPW_CLKLP_BBB_LATCH`
+- `\"ApplePearlCam::SendReportErrorMessageToClient - PearlCam fatal error = %d\\n\" @%s:%d`
+- `AppleCamera:%s - Client/Session mismatch - epoch:%u PowerUps:%llu\n`
+- `     Client: %s (pid %d)\n`
+- `DPE_AISP_SIFFE_PIPE2_IspPipeSIfFE High`
+- `DebugPrint`
+- `function-cam_avdd_gpio`
+- `function-focus_ldo`
+- `function-motion_data_param_set`
+- `AppleCamera:%s - fSACSelect is NULL\n`
+- `powerOffMcacheRequest`
+- `Debug`
+- `AppleCamera:%s - Failed to initiate async power on for strobe control: 0x%x\n`
+- `T2H IO Commands`
+- `PearlCamSendBuffersInfoString_StateIteration`
+- `AppleCamera:%s - EC did not complete force reset\n`
+- `releaseSurface`
+- `AppleCamera:%s - failed to call ISP_CILRequestPerChannel error: 0x%08X (%u/false)\n`
+- `ExternalClient`
+- `PearlCamSendBuffersInfoString_DARTData`
+- `AppleCamera:%s - ISP-ANE networks, no DART remapping for ISP side during poweron\n`
+- `SavageAuthPubKeyHmac`
+- `cameraispd`
+- `AppleCamera:%s - Calling ECSendCommandOff\n`
+- `AppleCamera:%s - DirtyShutdown captured: type=%u cmdId=0x%x pc=0x%llx igp0=0x%x igp6=0x%x reason='%s' total=%u\n`
+- `    writeRingBufferAddr: (DART):      0x%08llx \n`
+- `powerEvent`
+- `PearlCam_GetBufferBufferUseStatistics`
+- `AppleCamera:%s - [Exclaves] fExclaveEnabledPlatform = %s / fExclaveInitializationStatus = %u / fKextEKSupportEnabled = %s\n`
+- `FwCmdTimeout_Legacy`
+- `FirmwareVersion`
+- `AppleCamera:%s - chan: %d, ChargePump freq-index:%d, freq: %llu, aggressor: %lld, width: %d\n`
+- `AppleCamera:%s - Failed to power on ISP, res = 0x%08X\n`
+- `1222822`
+- `OSValueObject<ISPCoredumpSection>`
+- `/Replay/Face%d-%d`
+- `AutoFlow`
+- `ISP_InitializeSoCParameters`
+- `AppleCamera:%s - ISPCPU Ready. About to enable ISP interrupts\n`
+- `Number BANE CLOCK_FAIL_FAULT`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - Shared memory region mapped at DART translated address: %#llX, visible memory: %p\n`
+- `camEnableAneIsp`
+- `AppleCamera:%s - - ISP_ChangePowerState - kISPPowerStateSuspend\n`
+- `MB Armed`
+- `Pass`
+- `site.sCIspCmdChOisVideoExtendedStrokeSet`
+- `BackTeleCamera`
+- `PearlCamSendBuffersInfoString_CropRectScaleFactorDenominator`
+- `\"ISP didnt power-up cleanly\" @%s:%d`
+- `AppleCamera:%s - register force idle failed (cpuCatControl = 0x%x, vsocCatControl = 0x%x) - No Ack (either wait for Ack or Nack) us\n`
+- `YonkersIR1ChipID`
+- `ISP_ctrrReloadFw`
+- `FrontCameraRenoModuleFocusActuatorID`
+- `site.AppleMPMUnmapMemoryFunction`
+- `enableDataStream`
+- `AppleCamera:%s - Querying channel index failed, tberr: 0x%08X\n`
+- `AppleCamera::startAuth - ERROR: Unable to add AppleAuth to client list\n`
+- `AppleCamera:%s - Firmware did not confirm safe. (0x%08X, %d)\n`
+- `PearlCamSendBuffersInfoString_AttentionScore`
+- `AppleCamera:%s - FFW_INTERPROC_MSG_MSG\n`
+- `AppleCamera:%s - Remap missing DART address for persistent shared memory\n`
+- `ISP_PreMapClientSurface_alt_gated`
+- `AppleCamera:%s - couldn't prepare memory descriptor for ISP-ANE AFPP netoworks\n`
+- `ISP_ResumeFirmware`
+- `Number SAC Action1`
+- `RestoreMode`
+- `AppleCamera:%s - AOP RTBuddyService state changed  to %lu\n`
+- `AppleCamera:%s - Didn't initiate HW power down. powerRefCnt=%d, fPowerEvent=%d, fOutstandingPowerUpRequests = %d, isPowered: %d\n`
+- `AppleCamera:%s - request length: 0x%x, new FW size: 0x%x, current size: 0x%llx\n`
+- `AppleCamera:%s - DSC data is invalid\n`
+- `ECSendCommandOff`
+- `AppleCamera:%s - Exited do-while block, res=%d, fRegisteredService=%d\n`
+- `back-camera-autofocus-recal`
+- `AppleCamera:%s - bypassing panic, disabled by boot-args. ISP Firmware Timed out - Type %s, command ID 0x%x\n\n`
+- `H2T Buffer Responses`
+- `function-frontcam_forcepwm`
+- `ISP Firmware panic (recovered)`
+- `DisableCamPMU`
+- `ApplePTD`
+- `AppleCamera:%s - Command CISP_CMD_TUNABLE_APPLY completed, res = 0x%x\n`
+- `ffw_calloc`
+- `makeMemoryVisible`
+- `AppleCamera:%s - SPU did power up\n`
+- `ISP_SelectBestMIPIFrequencyIndex_gated`
+- `function-saca0d`
+- `front-auto-focus`
+- `    fSensorLDOControl1 = %s\n`
+- `AppleCamera:%s - Attempting to dump ISPCPU firmware ISPPoolMan debug logs\n`
+- `\"AppleCamera::%s - CISP_CMD_SUSPEND failed with command 0x%08x \\n\" @%s:%d`
+- `JasmineIRAuthResponse`
+- `CispCmdSuspendFailed`
+- `Number SAC Action0 FreqArray2`
+- `Number BANE RBIST_LOW_FAULT`
+- `AppleCamera:%s - Could not power off the EC, result = 0x%x\n`
+- `site.ISPSharedClientBufferArgs`
+- `_messageHandler`
+- `haltedCpuPC`
+- `AppleCamera:%s - Coredump Init failed\n`
+- `SendEarlyBootDatafilesToFirmware`
+- `YonkersIR1UID`
+- `AppleCamera:%s - channel: %d, index: %d\n`
+- `AppleCamera:%s - Error: LSC get failed - res=0x%08X\n`
+- `AppleCamera:%s - Could not create IOSurface for data-file buffer\n`
+- `PearlCamStatisticsString_SequenceID`
+- `PearlCamSendBuffersInfoString_GazePointData`
+- `not `
+- `com.apple.driver.AppleCamera.NonPersistentIOBMD`
+- `IOSurfacePixelFormat`
+- `FrontIRCameraModuleSerialNumString`
+- `ISP_CopySetfile_gated`
+- `containsObject`
+- `AppleCamera:%s - %s\n`
+- `AppleCamera:%s - map() failed make fEnableFwReload false\n`
+- `Number Rgl INT_FAULT_SHORTANODE_ACT_LATCH`
+- `LogDARTErrorInfo`
+- `PearlCamPowerOnDataString_SensorNonce`
+- `AppleCamera:%s - Auth: ISP in use (isPowered=%d, fPowerEvent=%d, powerUpRequests=%d), reporting busy\n`
+- `AppleCamera:%s - fAOPIsPowered: 1->0 (shm disabled)\n`
+- `AppleCamera:%s - Could not register DART exception handler (result=0x%08X)\n`
+- `AppleCamera:%s - fCamISPInitFailDebug == true, leave power on\n`
+- `BackSuperWideCameraModuleFocusActuatorID`
+- `AppleAuth::authSendData - ERROR: Failed to allocate command structure\n`
+- `Invalid`
+- `AppleCamera:%s - AppleSPUSphereDriver is unavailable\n`
+- `AppleCamera:%s - Power-off did not complete within 1s (fPowerEvent=%d). Return busy\n`
+- `ISP_SavageAuth_gated`
+- `AppleCamera:%s - Error: Too many dependencies specified in RPC command\n`
+- `AppleCamera:%s - read NVM error for channel %d: 0x%08X\n`
+- `ISP_DetectFaces_gated`
+- `AppleAuth::withAuthChip - ERROR: Invalid auth chip type\n`
+- `ISP_UserClientClose_gated`
+- `AppleCamera:%s - requesting ISP power down\n`
+- `YonkersIR1Nonce`
+- `back-camera-tilt-and-rotation`
+- `AppleCamera:%s - Error: Unable to allocate IPC queue memory\n`
+- `AppleCamera:%s - Setting CTRR to false, expected?\n`
+- `AppleCamera:%s - Failed to write power gate register rPMGR_PWR_ISP_CPU_CORE0_CFG0, offset 0x%08X, error = 0x%08X\n`
+- `YonkersChipID`
+- `PearlCam_ReferenceBufferDARTAddress`
+- `AppleCamera:%s - listName: %s, channelMask: 0x%x, propName: %s\n`
+- `Number MB PASS_KEY_ECC_ERR_FATAL`
+- `211`
+- `processCommandResponse`
+- `AppleCamera:%s - InitializeAOPMotionDataParams succeeded\n`
+- `    _numSucessfulISPSuspends: %llu\n`
+- `SendSphereExtendedStrokeRangeToFirmware`
+- `AppleCamera:%s - failure timeout waiting for ISPCPU to be ready for coredump, gpr6: 0x%x\n`
+- `121222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `AppleCamera:%s - Could not force power off the EC, proceeding to disable mappers, tberr = 0x%x\n\n`
+- `AppleCamera:%s - processing comannd response\n`
+- `Number BANE EEPROM_READY_FAULT`
+- `site.AppleExclaveCameraProxy`
+- `AppleCamera:%s - ISP Memory allocation request, %llx bytes\n`
+- `SavageAuthResponse`
+- `SavageAuthSalt`
+- `AppleCamera:%s - Error: clientContext == NULL\n`
+- `    fSensorLDOControl2 = %s\n`
+- `AppleCamera:%s - AFPP surface is not available, no ISP-ANE IPC\n`
+- `sendEPConfigToPeer`
+- `ECNotifyFirmwareTearDown_block_invoke`
+- `SavageAuthPubKey`
+- `AppleCamera:%s - sent ToF SAC parameters to firmware with return code 0x%X\n`
+- `AppleCamera:%s - ispCmdSend kISPUserClientCommand_GeneralProcessBuffers size %u ptr %p\n`
+- `activeClientCount`
+- `ANEISP:%s - %s::Found peer service(%p)\n`
+- `AppleAuth::init - ERROR: Could not allocate submit lock\n`
+- `PearlCamStartOptionsString_UnwrapInputMac`
+- `AppleCamera:%s - releasing fWorkProcessorPendingRequests item that was never completed\n`
+- `AppleCamera:%s - Could not create IOSurface for APFF networks\n`
+- `  %4u:  channel:%u, type:%u, filesize:%u surfacesize:%llu surface-id:%#08X, dartMapBase=%#llX (EarlyBoot)\n`
+- `AppleCamera:%s - Ignoring re-entrant FW timeout (type=%u cmdId=0x%x) - already handling\n`
+- `ISPCPU Command Packet Sent:\n`
+- `1211222221`
+- `PearlCamMessageHandler_SendBuffers`
+- `AppleExclaveCameraProxy`
+- `AppleCamera:%s - ISP already in the requested power state %d\n`
+- `site.ISPExclaveEventSource`
+- `PearlCamStatisticsString_Num400mSecCoolDownPeriods`
+- `PearlCamSendBuffersInfoString_ActNTC_Temperature`
+- `Authentication`
+- `YonkersSignature`
+- `AppleCamera:%s - coredump extra_heap_base: 0x%llx, extra_heap_size: %llu, shared_mem_base: %llx, shared_mem_size: %llu\n`
+- `IspAneIPCEndPoints:%s - send CISP_CMD_IPC_ENDPOINT_SET2 to FW! readRingBuffer:0x%llx, readRingLen: 0x%x, writeRingBuffer:0x%llx, writeRingLen: 0x%x\n`
+- `CAT register force-idle failed`
+- `AppleCamera:%s - AppleARMFunctionSlowAdaptiveClockingAggressor for chan %d: %s\n`
+- `ISP_SetDriverProperty_gated`
+- `AppleCamera:%s - number of supported PixClock frequencies for chan %d: %d\n`
+- `AppleCamera:%s - fSharedMemorySurfaces.persistentList count: %u\n`
+- `GMC`
+- `AppleH16CamIn::H16ISPSharedMemorySurfaces:%s - remap allowed surface\n`
+- `AppleCamera:%s - Unable to allocate shared memory for fAOPEndpoints[i].rxBuffer\n`
+- `AppleCamera:%s - I2C bus jam!  smsta=0x%08x\n`
+- `       mappedWriteNotifierBit:           0x%08x \n`
+- `AppleCamera:%s - Error: Too many IPC channels\n`
+- `AppleCamera_MemoryPressureMonitorThread`
+- `Number Rgl INT_FAULT_MAXPW_CLKSAF_BBA_LATCH`
+- `PearlCamStartOptionsString_HostSignature`
+- `AppleCamera:%s - Couldn't add command gate to exclave work loop.\n`
+- `AppleCamera:%s - fPowerEvent=%d, fw timeout=%d. Return busy (firmware timeout)\n`
+- `YonkersPubKey`
+- `Driver Interface Selected: %d\n`
+- `Number SAC Action4`
+- `strobe`
+- `IspAneIPCEndPoints:%s - fANEEndpoints[%d] is not ready\n`
+- `ApplePearlCam`
+- `AllocateStreamingBuffers_gated`
+- `AppleCamera:%s - Error: could not create EC endpoint!\n`
+- `AppleCamera:%s - CISP_CMD_MCACHE_RELEASE of streamID(%d)\n`
+- `NoSync`
+- `     size:                0x%08x \n`
+- `IOProcessorSend`
+- `McacheDriverClient:%s - fMcacheHandle is NULL\n`
+- `122111122222222222222222222222222222222222222222222222222222222222222222222212`
+- `PearlCamStartOptionsString_3dOcclusionDetection`
+- `AppleCamera:%s - FW is sending bad message, buffer count = %llu is greater than FFW_INTERPROC_BUFF_TOT\n`
+- `  %4d: surface-id=0x%08X, size=%llu, dartMapBase=0x%008X, usage='%c%c%c%c', cacheMode=0x%08X\n`
+- `DPE_AISP_SIFFE_PIPE0_IspPipeSIfFE High`
+- `ISP_InitializeArmIODeviceClient`
+- `AppleCamera:%s - Could not create camera driver work-loop\n`
+- `AppleCamera:%s - sent debug command to isp. opcode: 0x%04X\n`
+- `Number YB FAULT_UV`
+- `SendNotificationMessageToClient`
+- `ECInit`
+- `AppleExclaveCameraProxy:%s - Platform ID: 0x%X\n`
+- `ISP: Firmware allocation: %c%c%c%c`
+- `recovery`
+- `AppleCamera:%s - - CISP_CMD_CIL_BREAKER_ACTIVATED , cilStatus = %d, fidStatus = %d\n`
+- `AppleCamera:%s - Error:0x%08X\n`
+- `PearlCamSendBuffersInfoString_ActDIE_Temperature`
+- `\"AppleCamera::%s:%d - Expected value [#v] not initialized!\" @%s:%d`
+- `AppleCamera::%s: Could not prepare the memory descriptor for name\n`
+- `AppleCamera:%s - Using Token. currentTime=0x%016llX, fTokenExpirationTime=0x%016llX\n`
+- `ISP_GeneralProcessBuffers_gated`
+- `ISP_PowerOnExclaveCore_gated`
+- `function-focus_subdev`
+- `IOSurfaceUseReserve`
+- `Expected`
+- `_adjustPeakPowerBudget`
+- `RearCameraAuthICAuthResponse`
+- `Number spmi1 ERRORS`
+- `IOSurfacePlaneOffset`
+- `PearlCamStartOptionsString_HMACKey2E`
+- `AppleCamera:%s - CISP_CMD_CH_FACE_DETECTION_CAMERA_EXTRINSICS failed! res=%#08X\n`
+- `AppleCamera:%s - ISPCPU not in WFI after CISP_CMD_POWER_DOWN\n`
+- `site.IspAneIPCEndPoints`
+- `getObject`
+- `    fSensorResetFunction3 = %s\n`
+- `PrintTempestRegisters`
+- `DPE_AISP_DEMPROC_PIPE_DemProc High`
+- `PearlCamMessageHandler_TimerTimeout`
+- `PearlCamSendBuffersInfoString_PixelIntensityDiffThreshold`
+- `AppleCamera:%s - Could not power off Exclave core, proceeding to disable mappers, tberr = 0x%x\n`
+- `ISPCoredumpInit`
+- `AppleCamera:%s - CISP_CMD_SET_DSID_CLR_MULTI_BC_REG_BASE command error: res=0x%08X\n`
+- `Number Rgl INT_DEVICE_IN_TEST_MODE`
+- `function-sensor_reset1`
+- `recoveryos`
+- `AppleCamera:%s - Could not find a matching service for AOP RTBuddy\n`
+- `PearlCamStartOptionsString_StartPrepareSession`
+- `AppleCamera:%s - Loaded configuration %d\n`
+- `lpdprx_phy2_efuse`
+- `AppleCamera:%s - peer failed to enable EP, cnt: %d\n`
+- `Number L2C Errors`
+- `processDebugLoggingRequest`
+- `AppleCamera:%s - Ramdisk has no AOP support\n`
+- `AppleCamera:%s - Sending CISP_CMD_SET_DSID_CLR_MULTI_BC_REG_BASE with %d AMCC Plane BC base addresses with regRange: %d\n`
+- `DPE_AISP_MSBEPROC_PIPE_MsProcBE Low`
+- `AppleCamera:%s - Enabling CPU power gating\n`
+- `SavageMNS`
+- `AppleCamera:%s - fAdjustMIPIClockFrequencyInSACCallback = %s\n`
+- `AppleCamera:%s - [ISPRTB] endpoint: %ld draining %d msg\n`
+- `PearlCamSendBuffersInfoString_BioCaptureGroup`
+- `function-sensor_reset3`
+- `SavageDATFileStatus`
+- `SavageKCV`
+- `AppleCamera:%s - firmware reported %d channels, but driver support is limited to %d channels\n`
+- `CreatePowerOnResponseDictionary`
+- `v24@?0{applecamera_exclavecoreispeng_ispengineexclavecore_querychannelindex__result_s=C(?={applecamera_exclavesispshared_exclavesisperror_s=Q}I)}8`
+- `AppleCamera::ISP_ShowSharedMemoryAllocations_gated:\n`
+- `    Groups:\n`
+- `AppleCamera:%s - Failed to power off ISP, res = 0x%08X\n`
+- `AppleCamera:%s - Failed to write PS register offset 0x%08X with value:0x%08X, current value:0x%08X [FID state:0x%08X]\n`
+- `clocksAndPowerOn`
+- `ANEISP:%s - %s::Peer matching failed\n`
+- `1222222222222`
+- `ISP Firmware Buffer Log Status: CLOGGER_LOGBUFFER_STATUS_RED (counter:%d, nLogsInFlight:%d)\n`
+- `EnableCamPMU`
+- `ISP_Init`
+- `site.ISPSharedMemorySurfaceParamArray`
+- `ApplePearlCamUserClient`
+- `PearlCamMessageHandler_DoRetry`
+- `AppleCamera:%s - set fPowerEvent from %d to kISPPowerEventType_PowerOffPending, fOutstandingPowerUpRequests = %d isPowered: %d\n`
+- `AppleCamera::%s: Invalid arguments, name = %p, data = %p, stringLength = %lld, length = %lld\n`
+- `Number Rgl INT_FAULT_MAXPW_CLKSAF_BBB_LATCH`
+- `site.client_log_buffer_t`
+- `AppleCamera::client_log_buffer_t:%s - Could not obtain physical memory address for IOSurface with ID %#x\n\n`
+- `AppleCamera:%s - ffw_calloc failed: size mismatch (%zu != %zu)\n`
+- `PearlCamStateEntryProc_BIO_DONE`
+- `Unknown`
+- `AppleCamera:%s - bad buffer size specified (%d)\n`
+- `AppleCamera:%s - sent command to isp. opcode: 0x%04X\n`
+- `Number Rgl INT_FAULT_BBA_OVC_LATCH`
+- `FrontRenoCamera`
+- `PearlCamPearlSURDataString_EphemeralPublicKeyY`
+- `ECQueryChannelIndex`
+- `AppleCamera:%s - (turn on) - change fPowerEvent from %d to PowerOnPending\n`
+- `ISP_ReleasePreMappedClientSurface_gated`
+- `AppleCamera:%s - Token Expired.\n`
+- `site.McacheDriverClient`
+- `AppleCamera:%s - CTRR firmware is loaded, size: 0x%x\n`
+- `JasmineIRNonce`
+- `YonkersIR2FabRevision`
+- `ISPMainWorkLoopEventSource:%s - Could not get message queue lock, exiting\n`
+- `Premap`
+- `AppleCamera:%s - Auth: ISP power on failed 0x%x (channel %u)\n`
+- `JasmineIRPubKey`
+- `%02x`
+- `lpdprx_phy1_efuse`
+- `Sensor0 Power`
+- `AppleCamera:%s - Forcing registration!\n`
+- `ISP_PPMActivityStopped_gated`
+- `AppleCamera:%s - Secure sensor power on failed - bootOpt:%d ch:%d sleep:%ums res:%#X\n`
+- `BUF_H2T`
+- `PearlCamStatisticsString_ProbeDenseLowPowerFrames`
+- `AppleCamera:%s - Could not locate the exclave assigned property\n\n`
+- `%s: Unwrap entitlement found \n`
+- `    fFocusSubDevFunction = %s\n`
+- `AppleCamera:%s - Detected that ISP did not get power-cycled from the last ISP_deInit. Performing work-around now.\n`
+- `isp`
+- `ISP_PowerOffSecureSensor_gated`
+- `Total Number of Data-Files loaded: %u (total-size=%u)\n`
+- `AppleCamera:%s - ISP Engine sendcmdon IDL call failed\n`
+- `PrintFwDebugInfo`
+- `AppleCamera:%s - retries=%d ASCWRAP_IDLE_STATUS = 0x%x\n`
+- `Memory Alloc Requests`
+- `AppleMPMUnmapMemoryFunction`
+- `AppleCamera:%s - Error: The output buffer does not have the necessary privilege!\n\n`
+- `site.UInt32`
+- `Unsupported`
+- `ISPCPU (%s:%d:%d:%d): %s`
+- `site.DeviceMemoryManager`
+- `validatePSReg`
+- `PearlCamStartOptionsString_UnwrapInputIV`
+- `StopReceive`
+- `AppleCamera:%s - No name matching IOCoreSurfaceRoot\n`
+- `SavageNonce`
+- `FrontIRCameraModuleFocusActuatorID`
+- `AppleCamera:%s - Channel %d is RTBuddy mode, doorbell %d\n`
+- `ISP_DPRX_PS On Time (ms)`
+- `AppleCamera:%s - [Exclaves] fExclaveInitializationStatus: COMPLETE, fExclaveEnabled: true\n`
+- `ISP_SensorPreFusing_gated`
+- `AppleCamera:%s - new session is incompatible with existing session\n`
+- `AppleCamera:%s - Configuration of IPC end point\n`
+- `AppleCamera:%s - CISP_CMDCH_ERROR_NOTIFICAITON_ERROR_SOURCE_ASYNCH_ERROR, L2C_ERR_STS(0x%x), L2C_ERR_ADR(0x%x), L2C_ERR_INF(0x%x), \t\t\tMMU_ERR_STS(0x%x), LSU_ERR_STS(0x%x), LSU_ERR_CTL(0x%x), FED_ERR_STS(0x%x), FED_ERR_CTL(0x%x)\n`
+- `FaceNotFound`
+- `PearlCamSendBuffersInfoString_MetadataSize`
+- `\"TB_FATAL: \" \"invalid result returned from queryChannelIndex\" @%s:%d`
+- `ISP_InitializeRtBuddyClient`
+- `enabled - sending`
+- `    Channel %d: reserved (kernel)\n`
+- `AppleCamera:%s - Couldn't get ANE service, shut down ISP\n`
+- `ISPCPU Commands Sent`
+- `12111211112`
+- `AppleCamera:%s - Registering exclave isp upcall for strobe control notify failed\n`
+- `AppleCamera:%s - Not enough memory for exclaveData\n`
+- `AppleCamera:%s - fAOPIsPowered: 1->0 (SPU will power down)\n`
+- `AppleCamera:%s - 0x%016llX, %d\n`
+- `AppleCamera:%s - Error: The operations buffer does not have the necessary privilege!\n\n`
+- `AppleCamera:%s - ProjUse: D=%d, DLP=%d, S=%d, SLP=%d, F=%d, PA=%d, PB=%d, SB=%d, CD100=%d, CD250=%d, CD400=%d, FAE=%d\n`
+- `function-ane_ep_control`
+- `function-sensor_extclk4`
+- `rd`
+- `sacActionChannel2_ChargePump`
+- `AppleCamera:%s - Packed PLLFREQ [U11.16: %u = %u.%u]\n`
+- `AppleCamera:%s - Creating multicam session: Client=%s NumGroups=%d ExclaveMode=%d SecureFID=%d MicRecording=%d\n`
+- `AppleCamera:%s - Destroying multicam session: Client=%s (numClientsWithSession=%d)\n`
+- `AppleCamera:%s - Overriding ISP LTR\n`
+- `StartFrameReceiver`
+- `AppleCamera:%s - Couldn't add isp interrupt event source to exclave work loop\n`
+- `ISP_SecureCheckRPCCommands`
+- `AppleAuth::start - ERROR: Provider is not AppleCamera\n`
+- `PearlCamStateEntryProc_FACE_NOT_FOUND`
+- `ECEndStrobeAck`
+- `ISP_ShowSharedMemoryAllocations_gated`
+- `Number BANE EEPROM_ABORT_FAULT`
+- `ISPSharedClientBufferArgs`
+- `IOSurfaceAllocateFromSuperbuffer`
+- `\"AppleCamera::ISPSharedMemorySurfaces::%s - allocation failure: %#08X\" @%s:%d`
+- `freeSurface`
+- `ISP_StopCamera_gated`
+- `sacActionChannel1_FreqArray2`
+- `IOSurfaceCacheMode`
+- `AppleCamera:%s - Could not map registers: PwrGate\n`
+- `AppleCamera:%s - Packed PRIs B%u, score*%u=%u\n`
+- `AppleCamera:%s - ISP is not fully powered ON, can't proceed with a forced shutdown\n`
+- `PearlCamDoSecretPatternOptionsString_IVE`
+- `disabled`
+- `\n\n`
+- `AppleCamera:%s - ISP_PPMAdmissionCheck (budgetAlloc = %d)\n`
+- `AppleCamera:%s - Failed to turn off ALS power, res = 0x%08X\n`
+- `PearlCamPearlSURDataString_UnwrapOutputData`
+- `AppleCamera:%s - Sensor frame-done timeout reported by firmware\n`
+- `AppleCamera:%s - Secure sensor power off - chan: %d, res: 0x%08X\n`
+- `AppleCamera:%s - AppleARMFunctionSlowAdaptiveClockingAggressor for %s raw, chan %d: %s\n`
+- `AppleCamera:%s - Data file for ISP-ANE networks but ISP_ANE IPC is disabled\n`
+- `Channel status\n`
+- `isp-mobile-defect`
+- `AppleCamera:%s - Memory map failed: 0x%08x\n`
+- `\"AppleCamera::%s - CISP_CMD_POWER_DOWN failed with command 0x%08x \\n\" @%s:%d`
+- `AppleAuth::authThread - GetSignature: ISP not idle (0x%x), skipping\n`
+- `\"AppleCamera::%s:%d - Expected SoC register [#r] value not initialized!\" @%s:%d`
+- `/arm-io/ane0`
+- `drainIOProcessorChannelMessageQueues`
+- `sets of triplets`
+- `FwCmdTimeout_Rtbuddy`
+- `function-ane_data_param_get`
+- `PearlCamPearlSURDataString_SensorNonce`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - Memory map failed: %#08X\n`
+- `set`
+- `AppleCamera:%s - fFWTraceID=%d\n`
+- `    Channel %d: reserved (pid %d)\n`
+- `    Latency:\n`
+- `Number Rgl INT_FAULT_MAXPW_CLKLP_BBA_LATCH`
+- `T`
+- `YonkersNonce`
+- `site.hdr_ty.McacheDriverStreamObject`
+- `12222`
+- `    fSensorAVDDLDOControl3 = %s\n`
+- `ISP_MapMPMMemoryAtOffset`
+- `AppleCamera:%s - [ISPRTB] ISP not ready %d, %d\n`
+- `AppleCamera:%s - Unable to stop empty channel mask\n`
+- `YonkersIR2SNUM`
+- `AppleCamera:%s - CISP_CMD_CH_MC_AOP_ISP_ENDPOINT_INFO_SET2 failed!\n`
+- `AppleCamera:%s - AON PTD supported\n`
+- `ISPExclaveEventSource:%s - Not enabled, exiting\n`
+- `AppleCamera:%s - ISP version from platform struct %d does not match rISP_ISPVERSION register value %d\n`
+- `ISP_SendStart`
+- `DPE_CVD_LaccMatchWrap Low`
+- `AppleCamera:%s - messageClients(kISPChannelTransferred, 0x%08llx)\n`
+- `AppleCamera:%s - Sent Exclave off: TBErr=%U\n`
+- `AppleCamera:%s - ISP-ANE IPC is not active.\n`
+- `mapFwCTRRRegion`
+- `optical-dev-card-id`
+- `AppleCamera:%s - Before registerFunctionParent: %p\n`
+- `YonkersIR2ChipID`
+- `         isPowered: %s\n`
+- `AppleCamera:%s - GPR4: 0x%08X, GPR5: 0x%08X, GPR6: 0x%08X, GPR7: 0x%08X\n`
+- `PrintFwPanicDebugInfo`
+- `%02X  \n`
+- `Number Rgl INT_ADC_READY_LATCH`
+- `AppleCamera:%s - Couldn't add command gate to work loop.\n`
+- `AppleCamera:%s - bad message address: %llx\n`
+- `YonkersIR1PubKey`
+- `Number Rmyo NTC`
+- `MatchFunctionBounded`
+- `site.hdr_ty.AppleCameraChannel`
+- `initInProgress`
+- `IOSurfaceWidth`
+- `AppleCamera:%s - Couldn't register %s as AppleARMFunction parent\n`
+- `    writeRingBufferLen:               0x%08x \n`
+- `AppleCamera:%s - FW Timed out, ignoring DART exceptions till the next hardware power on\n`
+- `AppleCamera:%s - Found channel %d in the channel table. Type=%d (%s), Source=%d, size: %d entry desc ch = %llx\n`
+- `ISP_deInit`
+- `AppleCamera:%s - Setting up isp interrupt event source for exclaves failed\n`
+- `YonkersIR2Nonce`
+- `cacheFlushInactive`
+- `  %4d: size=%llu, dartMapBase=0x%llX, usage='%c%c%c%c', cacheMode=0x%08X\n`
+- `site.ISPErrorEventSource`
+- `OSValueObject<ISPCommandArgs>`
+- `AppleCamera:%s - Error: Group count (%d) exceeded max (%d)\n`
+- `PearlCamSendBuffersInfoString_ProjectorSubMode`
+- `PearlCamStateEntryProc_FACE_FOUND`
+- `rootdev`
+- `AppleCamera:%s - Sent SEAR approved Exclave HWIRQ: TBErr=%U\n`
+- `ISP_PublishInfoToRegistry`
+- `resetCILRequest`
+- `AppleCamera::%s: No wake signal from ISPCPU`
+- `ISPSharedMemorySurfaceParamArray`
+- `AppleCamera:%s - Disable ANE IPC network in ramdisk\n`
+- `AppleCamera:%s - exclaveStart failed\n`
+- `AppleCamera:%s - bad message address: %p\n`
+- `AppleCamera:%s - Error - ispcpuSoftwareInterruptRegisterAddress is NULL\n`
+- `HardwareSync`
+- `ISPLoggerEventSource:%s - initializing with options\n`
+- `ISPSharedMemorySurfaceParams`
+- `site.ApplePearlCam`
+- `AppleCamera:%s - total persistent shared allocation size: %u\n`
+- `powerOnMcacheRequest`
+- `AppleCamera:%s - [ISPRTB] Draining endpoint: %ld\n`
+- `IOSurfacePlaneBytesPerRow`
+- `\"TB_FATAL: \" \"invalid result returned from secureM3Isr\" @%s:%d`
+- `AppleCamera:%s - Error: Firmware Back Channel RPC Request has too many commands: %d\n`
+- `AppleCamera:%s - Mcache target to host command(%d) is not supported\n`
+- `sacActionChannel1_FreqArray0`
+- `AppleCamera:%s - channel: %d (process: %s)\n`
+- `    mappedWriteNotifierRegisterAddr:  0x%08llx \n`
+- `no`
+- `AppleCamera:%s - Client %s is requesting ISP power up\n`
+- `AppleCamera:%s - kISPPearlDriverProperty_RetainFaceIDBuffersHint: %d\n`
+- `Number Rgl INT_FAULT_VIN_OVV_LATCH`
+- `AppleCamera:%s - FFW IPC message exceeds the message size limit!\n`
+- `AppleCamera:%s - Timeout Waiting for SMBSYS_REG_SMSTA__XEN\n`
+- `AppleCamera:%s - Timeout waiting for data to arrive - num_bytes_available = 0x%08x\n`
+- `AppleCamera:%s - map() failed for ISP-ANE AFPP networks\n`
+- `AppleCamera:%s - returning fWorkProcessorInProgressRequests item that was never completed\n`
+- `AppleCamera:%s - - ISP_ChangePowerState - kISPPowerStateOff\n`
+- `AppleCamera:%s - Unable to identify FHSi device, I2C status 0x%08x\n`
+- `Number SB IVFM`
+- `AppleCameraVMAllocator`
+- `AppleCamera:%s - Override ISP platformID in the registry to 0x%08X\n`
+- `AppleCamera:%s - called with retain count 0 for surfaceID=%d. Returning error 0x%x to caller\n`
+- `ISP_ReserveChannel_gated`
+- `AppleCamera:%s - Could not retrieve addr for the S2R flag\n`
+- `PearlCamStatisticsString_EngagementInfo`
+- `function-sensor_reset4`
+- `dartMapMemoryDescriptor`
+- `DisableFWPowerGating`
+- `sendMessageToExclaveWorkLoop`
+- `function-motion_data_param_get`
+- `RecoveryOSMode`
+- `AppleCamera:%s - Invalid RPC buffer found\n`
+- `AppleCamera:%s - ack %d error on command\n`
+- `ISPMainWorkLoopEventSource:%s - Init() failed for ISPMainWorkLoopEventSource\n`
+- `PearlCamRect_W`
+- `AppleCamera:%s - GPBuffers h2tBuf: outputMetaData tag=%#llx\n`
+- `Number spmi0 ERRORS`
+- `ISPMainWorkLoopEventSource`
+- `PearlCamStatisticsString_DenseLowPowerFrames`
+- `PearlCamSendBuffersInfoString_BuffersType`
+- `\"AppleCamera::%s: Unsupported ISP Revision 0x%x for version 0x%X\\n\" @%s:%d`
+- `ISP: FDNK`
+- `     TTBRIndex= 0x%08X\n`
+- `AppleCamera:%s - XHatch data is invalid\n`
+- `unexpected`
+- `IspAneIPCEndPoints:%s - OSSymbol alloc failed for '%s'\n`
+- `McacheDriverClient:%s - not finding stream object with Id :%d\n`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - creating kernel mapping for surface %d, usage='%c%c%c%c'\n`
+- `Number Rgl INT_I2CWDG_LATCH`
+- `disable`
+- `PearlCamDoBioCaptureOptionsString_HostMainKeyIndex`
+- `AppleCamera:%s - Failed to stop reserved channel (res=0x%08X)\n`
+- `Number Rgl INT_FAULT_BBB_WDG_SFST_LATCH`
+- `ISP_I2CInit`
+- `ApplePearlCamera`
+- `IspAneIPCEndPoints:%s - Unable to allocate shared memory for fAEndpoints[i].rxBuffer\n`
+- `PearlCamMessageHandler_ReportError`
+- `AppleCamera:%s - Could not allocate memory for exclave client\n`
+- `AppleCamera:%s - clientID=%d, subClientID=%d; channel=%d; budgetReq=%d; budgetAlloc=%d; result=0x%08x\n`
+- `RtkitMagicKeyMissing`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - called with NULL pointer, nothing to free\n`
+- `ISP_PearlCamProjectorSafe_gated`
+- `SHAREDMALLOC`
+- `     HwClass= %s\n`
+- `PearlCamStatisticsString_ProbeSparseFrames`
+- `PearlCamSendBuffersInfoString_ExposureTimeInMicroseconds`
+- `ISP_CreateMultiCameraSession_gated`
+- `AppleCamera:%s - CISP_CMD_MULTICAM_SESSION_DESTROY error: 0x%08X\n`
+- `AuthMajorVersion`
+- `site.DeviceMemorySegment`
+- `function-sensor_extclk3`
+- `AppleCamera:%s - FWACK= %lld usec\n`
+- `ISP_CILManager_gated`
+- `ISP_SecureStreamConfig_gated`
+- `AppleCamera:%s - Command CISP_CMD_CED_DISABLE completed, res = 0x%x\n`
+- `lastSeen_abs`
+- `Number BANE CRITICAL_TO_SAFE_PARAMETER_FAULT`
+- `IspAneIPCEndPoints:%s - EP is not in enabled state, don't need to UNSET\n`
+- `%s%s`
+- `     Group=%d: ChannelMask=0x%08X SyncType=%s ClockLeader=%d\n`
+- `    PMPClockSpeedControlFunction - scratchReg = %#llx (len:%d)\n`
+- `McacheDriverClient:%s - failed to remove ISP data streams(ID: %d) from Mcache driver\n`
+- `AppleCamera:%s - Dropping client logging buffer message!\n`
+- `priorTimeoutCmdId`
+- `AppleAuth::authSendData - ERROR: GetSignature challenge too short (need %u, got %u)\n`
+- `2222212`
+- `AppleCamera:%s - Received %u messages on channel %s after Suspend is completed\n`
+- `AppleCamera:%s - Error: The fd buffer surface does not have the necessary privilege!\n\n`
+- `L2cAsyncError`
+- `validatePwrGateReg`
+- `AppleCamera:%s - [Exclave] SendCmdPrepareStrobeAck (post power-on) returned 0x%x, result = 0x%x\n`
+- `     SID= 0x%08X\n`
+- `ECDirtyShutdown`
+- `AppleCamera:%s - Setting up isp mailbox interrupt event source for exclaves failed\n`
+- `AppleCamera:%s - Error: Invalid LSC bit-depth received - bitDepth=%d\n`
+- `camera-strobe-color-cal`
+- `\"AppleCamera::%s - CISP_CMD_STOP failed with command 0x%08x \\n\" @%s:%d`
+- `PearlCamStatisticsString_ProbeSparseLowPowerFrames`
+- `PearlCamSendBuffersInfoString_HasGlasses`
+- `v24@?0{applecamera_exclavecoreispeng_ispengineexclavecore_preparetostrobeack__result_s=C(?={applecamera_exclavesispshared_exclavesisperror_s=Q})}8`
+- `function-saca1c`
+- `    fSensorAVDDLDOControl2 = %s\n`
+- `    fCamPMUResetFunction = %s\n`
+- `site.sCIspCmdChCameraAlignmentCalSet.uint8_t`
+- `BUF_T2H`
+- `AppleCamera:%s - Statistics: NonPersistentMemory:%llu, PersistentMemory:%llu, DeletionPendingMemory:%llu, NonPersistentMemoryMax:%llu, PersistentMemoryMax:%llu, NumJetsamTriggeredISPDeInits:%llu\n`
+- `     Address= 0x%08X\n`
+- `/chosen`
+- `YonkersPubKeyHmac`
+- `AppleCamera:%s - fSharedMemorySurfaces.deletionPendingList count: %u\n`
+- `111112`
+- `AppleCamera:%s - RTBuddy endpoint panic handler!\n`
+- `start() runs early FW for CTRR\n`
+- `AppleCamera:%s - fAOPMotionStateSet status=0x%08x\n`
+- `AppleCamera::%s: ISP_StartFirmware returned 0x%08x\n`
+- `PearlCamStateEntryProc_IDLE`
+- `AppleCamera:%s - Could not allocate main workloop message queue\n`
+- `AppleCamera:%s - called with retain count 0 for poolID=%d. Returning error 0x%x to caller\n`
+- `%s: Sensor auth keys fetching - result = 0x%08X, keysize = %d \n`
+- `ISP_ConfigureToFClockSAC`
+- `BackCameraModuleFocusActuatorID`
+- `IspAneIPCEndPoints:%s - pIspAneNetworkSurface is NULL\n`
+- `Assert`
+- `ISP_MapSubBlockRegisters`
+- `AppleCamera:%s - h2tBuf: pool=%d, tag=%#llx, addr=%#llx, len=%d, DART=%#llx\n`
+- `ISPLoggerEventSource:%s - enabling\n`
+- `AppleCamera:%s - Unknown notification from FW (0x%08X)\n`
+- `AppleCamera:%s - Enabling for Endpoint %d\n`
+- `AppleCamera:%s - Calling ECSendCommandOn\n`
+- `AppleCamera:%s - ISP-ANE EP is not created even after start() finish ?\n`
+- `Number MB ARM_MB_STATE`
+- `allocateIOBMD`
+- `AppleCamera:%s - ERROR: ISP requesting more memory than we have left (%llx)\n`
+- `AppleCamera:%s - CISP_CMD_CH_TAILSPIN_NOTIFICATION ch %u tailspinSource %d tailspinCode 0x%x\n`
+- `AppleCamera:%s - couldn't create memory map for ISP-ANE networks\n`
+- `AppleCamera:%s - resume failed, but not de-initing becasue fResumeFailRecovery is false\n`
+- `AppleCamera:%s - MotionDataEnable: done, %d endpoint(s) enabled\n`
+- `AppleCamera:%s - CISP_CMD_PRINT_ENABLE command completed: res=0x%08X\n`
+- `AppleCamera:%s - GPR0: 0x%08X, GPR1: 0x%08X, GPR2: 0x%08X, GPR3: 0x%08X\n`
+- `IspAneIPCEndPoints:%s - Failed to get ANE IPC ARM functions\n`
+- `     AXI_ID[%d]= 0x%08X\n`
+- `reason`
+- `PearlCamMessageHandler_Stop`
+- `DisableFaceDetect`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - in CTRR region: physicalAddress: %llu, fFWCTRRMemSurface.physicalAddress: %llu, size: %#llxn\n`
+- `AppleCamera:%s - failed to get fMcacheHandle\n`
+- `AppleCamera::%s: Could not prepare the memory descriptor for data\n`
+- `ISPCoredump`
+- `ISP Firmware Buffer Log Status: CLOGGER_LOGBUFFER_STATUS_YELLOW (counter:%d, nLogsInFlight:%d)\n`
+- `fuse_aciphy_0`
+- `McacheDriverClient:%s - success send the Mcache Quota request for stream id: %d got size: 0x%x\n`
+- `%s%d`
+- `AppleCamera:%s - registered: %s, started: %s\n`
+- `AppleCamera:%s - powering off hardware\n`
+- `InitializeAONPTD`
+- `ISP_EnableS2R_gated`
+- `No!`
+- `PearlCamStartOptionsString_Nonce`
+- `<unknown>`
+- `PearlCamPearlSURDataString_UnwrapOutputMac`
+- `v24@?0{applecamera_exclavecoreispeng_ispengineexclavecore_forcereset__result_s=C(?={applecamera_exclavesispshared_exclavesisperror_s=Q})}8`
+- `ISP_AuthTryAcquire_gated`
+- `AppleCamera:%s - [Exclaves] Core power on status: %d exclaves enabled: %d fKextEKSupportEnabled: %d\n`
+- `function-ane_data_param_set`
+- `PearlCamMessageHandler_DoSecretPattern`
+- `AppleCamera:%s - EC HWIRQ IDL returned an error: req passed = %d, tberr = 0x%x, idlReturn=%d\n\n`
+- `AppleCamera:%s - Error: The next frame's metadata buffer does not have the necessary privilege!\n\n`
+- `PearlCamMessageHandler_FrameReceiverFrames`
+- `v24@?0{applecamera_exclavecoreispeng_ispengineexclavecore_securem3isr__result_s=C(?={applecamera_exclavesispshared_exclavesisperror_s=Q})}8`
+- `AppleCameraWorkLoop`
+- `AppleCamera:%s - - Could not allocate a message queue\n`
+- `AppleCamera:%s - Can't read the devicetree node entry\n`
+- `/arm-io/isp-exclave-proxy`
+- `AppleCamera:%s - total DeletionPending allocation size: %u\n`
+- `AppleCamera:%s - iovmInsert failed for __DATA: 0x%x\n`
+- `AppleCamera:%s - Querying channel index failed, tberr: 0x%08X, res: 0x%08X\n`
+- `AppleCamera:%s - MotionDataDisable: shm=%d enableFn=%s aopPwr=%d wasEn=%d\n`
+- `AppleCamera:%s - AOP RTBuddyService state will change to %lu, ret=%d, fIsPowered=%d, fPowerEvent=%d\n`
+- `Number Rsln NTC`
+- `ISPClientMappedSurfaceArray`
+- `AppleCamera:%s - Successfully vote on index: 0x%08X with value: 0x%08X for active state: 0x%08X\n\n`
+- `AppleAuth::authInit - ERROR: Invalid owner or callback\n`
+- `start`
+- `sacActionChannel2_FreqArray0`
+- `AppleCamera:%s - called back with [%u] chosen frequency indices - sending processing to command gate\n`
+- `BackSuperWideCameraSNUM`
+- `AppleCamera:%s - map() failed\n`
+- `Number MB MRI_ECC_ERR`
+- `ISPLoggerEventSource:%s - Error: provider is not AppleCamera\n`
+- `PearlCamDoBioCaptureOptionsString_IVE`
+- `com.apple.driver.AppleCamera.Persistent`
+- `IOSurfacePrefetchPages`
+- `AppleCamera:%s - rISPRev = 0x%x\n`
+- `\"AppleCamera::%s - CISP_CMD_CH_ERROR_NOTIFICATION, errorSource = %d, errorCode = 0x%x\\n\" @%s:%d`
+- `ISP_SetCurrentToFClockBanks_gated`
+- `ISP_ProcessRawImagePrepare_gated`
+- `AppleCamera:%s - Error: Kernel Client with power assertion present\n`
+- `AppleCamera:%s - ISP_init start IPC timer\n`
+- `AppleExclaveCameraProxy:%s - registered: %s\n`
+- `RomeoStatus`
+- `AppleCamera:%s - Retrieving endpoint configuration returned 0x%08x\n`
+- `DEBUG`
+- `com.apple.camera.iokit-user-access`
+- `SavagePearlSURPairingKey`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - failed to allocate shared memory surface\n`
+- `AppleCamera:%s - Error: error notification message exceeds message size limit!\n`
+- `DPE_AISP_BAYERPROC_PIPE_BayerProc High`
+- `ispIgp6rr`
+- `RefSurface`
+- `ApplePearlCamera.cpp`
+- `PearlCamSendBuffersInfoString_ERDataValid`
+- `AppleCamera:%s - Got second int from ISPCPU (channel description table ready)\n`
+- `Number Rgl INT_FAULT_THSD_LATCH`
+- `AppleCamera:%s - PPM throttling for kernelClientID=%s, subClient=%d: revised budget = %d\n`
+- `UpdateSensorStateInIORegForChannel`
+- `UpdateMultiCameraListInIOReg`
+- `AppleCamera:%s - (turn on) - Transitioned fPowerEvent from %d to onPending\n`
+- `AppleCamera:%s - Error: The input buffer does not have the necessary privilege!\n\n`
+- `RTBuddy Crash Notification`
+- `YonkersUID`
+- `AppleCamera:%s - fISPCPUFirmwareLoaded done\n`
+- `AppleCamera:%s - Could not allocate firmware heap. Size=%d\n`
+- `1211111212`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - %s%sfreeing %s shared surface. surface-id=%#08X, size=%llu, dartMapBase=%#llX, fSystemSleepInProgress=%d, fIsDartActive=%d\n`
+- `sacActionChannel3_FreqArray0`
+- `AppleCamera:%s - [ISPRTB][Fatal] Device memory allocation failed\n`
+- `AppleCamera:%s - Logging Buffer Corruption detected - ringBuf=%#llx, head=%u, tail=%u, logMessageSize=%u, logBufferSize=%u - resetting\n`
+- `ReserveChannels`
+- `AppleCamera:%s - fAOPIsPowered: 0->1 (SPU did power up)\n`
+- `FW cmd timeout during ISP_Init`
+- `\"TB_FATAL: \" \"invalid result returned from ispEngineOff\" @%s:%d`
+- `AppleCameraPowerChangeHandler_gated`
+- `AppleCamera:%s - Could not create IOSurface for ISPLogger buffer\n`
+- `PearlCamStartOptionsString_SequenceIsRetry`
+- `AppleCamera:%s - Couldn't create timer event source.\n`
+- `AppleCamera:%s - InitializeAONPTD status - 0x%08x\n`
+- `ptd-data-table`
+- `AppleCamera:%s - couldn't map memory descriptor\n`
+- `AppleCamera:%s - IOSlowAdaptiveClockingAggressorActionList configuration for ToF: %s\n`
+- `ISPFirmwareVersion`
+- `AppleCamera:%s - firmware returned %d pool ids, which more than %d pool ids for channel %d\n`
+- `AppleCamera:%s - [ISPRTB] Error! Failed to get ISP endpoint: %d service\n`
+- `IOSurfaceName`
+- `lpdprx_phy_efuse`
+- `SendReportErrorMessageToClient`
+- `PearlCamSendBuffersInfoString_FaceRect`
+- `PearlCamSendBuffersInfoString_UserEngagementStatus`
+- `PearlCamSendBuffersInfoString_ERDistance`
+- `AllocateSharedMemoryForEndpoint`
+- `function-saca1`
+- `ReleaseFirmwareWorkProcessor`
+- `AppleCamera:%s - Matched ptd table, ptr: %p, size: %dB, entries: %zu\n`
+- `ISP_GetFirmwareWorkProcessorItem_gated`
+- `ConfigureChannel`
+- `AppleCamera:%s - Disable ANE IPC service endpoint on platform: 0x%x\n`
+- `AppleCamera:%s - camChannel=%d, clockRefCount=%d\n`
+- `powerStateDidChangeTo_gated`
+- `ISP Power`
+- `AppleCamera:%s - Error: could not initialize EC!\n`
+- `AppleCamera:%s - disabling sensor ref clock 0\n`
+- `AppleCamera:%s - couldn't create command memory descriptor\n`
+- `fuse_aciphy_1`
+- `initializeEndpoint`
+- `PearlCamSendBuffersInfoString_FaceDetectionScore`
+- `T2H Buffer Notifications`
+- `AppleCamera:%s - Disabling for Endpoint %d\n`
+- `ProcessToFClockSACCallback_gated`
+- `Number Power Ups`
+- `AppleAuth::authInit - ERROR: Couldn't create command gate\n`
+- `IOSurfacePlaneSize`
+- `\"AppleCamera::ISPSharedMemorySurfaces::%s - Failed to map shared memory descriptor (IOSurface size: %llu, DART address: %#08X)\\n\" @%s:%d`
+- `fNonPersistentSharedMemoryIOBMDTotalSize = %llu (%u allocations)\n`
+- `PrintSharedBuffer`
+- `AppleCamera:%s - Could not create client: %s, error = 0x%08x\n`
+- `AppleCamera:%s - CISP_CMD_CIL_BREAKER_ACTIVATED skipped - strobe control active\n`
+- `AppleCamera:%s - couldn't allocate kernel command buffer\n`
+- `sacActionChannel0_PixClock`
+- `AppleCamera:%s - No magic nubmer 1 from ISPCPU\n`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - usable mapped memory exceeds surface boundary!\n`
+- `AppleCamera:%s - unknown tailspinSource %d)\n`
+- `AppleCamera:%s - enabling sensor ref clock 1\n`
+- `AppleCamera:%s - SensorSN = %02X%02X%02X%02X%02X%02X%02X%02X, ModuleSN = %s, SimulateMissingSensor = %s\n`
+- `111111112211211112112221122222221121`
+- `total`
+- `\"TB_FATAL: \" \"invalid result returned from endStrobeAck\" @%s:%d`
+- `AppleCameraChannel:%s - sensor %d does not support hardware disable\n`
+- `AppleCamera:%s - subClientID=%d; channelMask=0x%x; budgetReq=%d; budgetAlloc=%d; result=0x%08x; numPreviewFrames=%u; numStillCaptureFrames=%u\n`
+- `AppleCamera:%s - failed to allocate memory descriptor\n`
+- `PearlCamStartOptionsString_SkipFaceDetect`
+- `AppleCamera:%s - EC failed to read sensor NVM\n`
+- `rosaline-serial-num`
+- `ISP_SendCommand_gated`
+- `triplet`
+- `AppleCamera:%s -  failed to allocate shared memory surface\n`
+- `PearlCamStateEntryProc_BIO_CHECK`
+- `ISP_Handle_FW_Crash_Notification`
+- `function-sensor_reset0`
+- `AppleCamera:%s - Couldn't add logger timer to logger work loop.\n`
+- `AppleCamera:%s - System sleep is in progress. Returning from ISP_PowerOnCamera_gated with res=0x%x\n`
+- `AppleCamera:%s - Sending Peridot clock banks to FW - res: 0x%08X\n`
+- `    Firmware Memory Mapping: %d \n`
+- `Statistics\n`
+- `site.ISPClientMappedSurfaceArray`
+- `AppleCamera:%s - Couldn't add timer event source to work loop.\n`
+- `setAllocator`
+- `ispInterruptHandler`
+- `AppleCamera:%s - didChange: dev=%s state=%lu isSPU=%d isRTB=%d\n`
+- `JasmineIRWrapOutputIV`
+- `AppleCamera:%s - CISP_CMD_CH_STOP [%d] command completed: res=0x%08X\n`
+- `PearlCamMessageHandler_PowerOff`
+- `PearlCamBufferType_Metadata`
+- `AppleCamera:%s - ANE-ISP end point communication enable flag is set: %d, APFF enable: %d\n`
+- `Number BANE SWITCH_ILIM_FAULT`
+- `12211112`
+- `AppleAuth::authThreadGated - GetSignature: No valid response from ISP\n`
+- `YonkersFabRevision`
+- `AppleCamera:%s - exclaves_sensor_stop(FACEID) returned error (ret:0x%x / status:%u)\n`
+- `probe`
+- `Auth`
+- `PearlCamSendBuffersInfoString_FrameIndex`
+- `PearlCamSendBuffersInfoString_IdleDIE_Temperature`
+- `RTBuddyService`
+- `AppleCamera:%s - fEnableFwCTRR: %d, fEnableFwReload: %d\n`
+- `processSharedMallocRequest`
+- `sacActionChannel5_PeridotClock`
+- `BackCameraModuleSerialNumString`
+- `    fSensorResetFunction0 = %s\n`
+- `    fSensorExtClkFunction2 = %s\n`
+- `AppleCamera:%s - Forcing ISP shutdown\n`
+- `RTBuddy(AOP)`
+- `AppleCamera:%s - GPBuffers h2tBuf: ioBuffers[%d] tag=%#llx\n`
+- `site.sCIspCmdChSysCfgKeySet.uint8_t`
+- `122211`
+- `IOClass`
+- `AppleCamera:%s - couldn't allocate CISP_CMD_CH_DATA_FILE_MULTIPLE_LOAD command buffer\n`
+- `AppleCamera:%s - Unable to add PearlCamera object to client list\n`
+- `AppleCamera:%s - Error: RPC command size exceeds message size limit!\n`
+- `AppleCamera:%s - receive IPC error code: %d from firmware, trigger HandleFirmwareTimeout\n`
+- `FreqArray0`
+- `AppleCamera:%s - %s: EC did not cleanup after a conclave crash\n`
+- `AppleCamera:%s - kIOMessageSystemWillSleep fSystemSleepInProgress=%d. Setting fSystemSleepInProgress to true\n`
+- `function-saca0b`
+- `RTBuddyPatchBay.h`
+- `PearlCamSendBuffersInfoString_IdleNTC_Temperature`
+- `isp-horizon`
+- `AppleCamera:%s - Primary selection failed due to a zero count\n`
+- `AppleCamera:%s - IPC EPSM memory allocation with size: 0x%llx from FW\n`
+- `AppleCamera:%s - CISP_CMD_MCACHE_UPDATE for streamID(%d) is assigned size: 0x%x\n`
+- `exclaveIspStrobeControlNotificationHandler`
+- `AppleCamera:%s -  - FW timeout, RTBuddy handling forcePowerOff(false)\n`
+- `AppleCamera:%s - exclaves_sensor_start(CAM) returned error (ret:0x%x / status:%u)\n`
+- `AppleCamera:%s - Got fMcacheHandle\n`
+- `sacActionChannel4_FreqArray2`
+- `ISP_CacheChannelConfigs`
+- `PearlCamSendBuffersInfoString_UserOrientation`
+- `ISP_ReleaseChannel_gated`
+- `Number MB MRI_ECC_ERR_FATAL`
+- `mcacheUpdateRequest`
+- `LoadExclaveCameraHandler`
+- `AppleCamera:%s - Failed to return unusued buffers(res=0x%08X)\n`
+- `JasmineIRWrapOutputKey`
+- `ISP_ConfigureChargePumpSAC`
+- `ISPExclaveEventSource`
+- `lpdprx_cfg_fuse2`
+- `Number BANE SWITCH_OVER_VOLTAGE_FAULT`
+- `ReplayCommand`
+- `AppleCamera:%s - CISP_CMD_CH_ERROR_NOTIFICATION, errorSource = %d, errorCode = 0x%x\n`
+- `AppleCamera:%s - fAOPMotionDataEnable status=0x%08x\n`
+- `ApplAppleCamera::%s: Could not forget firmware, result = 0x%x\n`
+- `raw`
+- `/Replay/ProbeCap%d-%d`
+- `sacActionChannel4_FreqArray1`
+- `       mappedWriteNotifierRegisterAddr:  0x%08llx \n`
+- `AppleCamera:%s - channel %d already reserved (current owner: %s, priority: %d)\n`
+- `AppleCamera:%s - No wake signal from ISPCPU\n`
+- `AppleCamera:%s - Incorrect SPMI index = %d\n`
+- `function-motion_state_set`
+- `Failed!`
+- `segment-ranges`
+- `ECCreateEndpoint`
+- `ISP Firmware Buffer Log Status: CLOGGER_LOGBUFFER_STATUS_FULL (counter:%d, nLogsInFlight:%d)\n`
+- `AppleCamera:%s - Disabling camera PMU\n`
+- `AppleCamera::%s: no sensor found on chan %d (%s)`
+- `AppleCamera:%s - Wired Client Surfaces:\n`
+- `Number BANE TRACE_RESISTANCE_LOW_HARD_FAULT`
+- `/arm-io/ane`
+- `ISP_PPMAdmissionCheck_gated`
+- `AOP Endpoint: ID %d\n`
+- `lpdprx_cfg_fuse0`
+- `Number Rgl INT_FAULT_TSD_WARN_LATCH`
+- `HandleSystemWillSleepMessage_gated`
+- `The offset of the pointer inside its valid memory range can't be represented using int32_t`
+- `AppleCamera:%s - t2hBuf: pool=%d, tag=%#llx\n`
+- `BackTeleCameraModuleFocusActuatorID`
+- `\"ISP Firmware Timed out - Type %s, command ID 0x%x\\n\" @%s:%d`
+- `ECStart`
+- `kext`
+- `AppleCamera:%s - WARNING: expected camera sensor not detected on channel %d\n`
+- `AppleCamera:%s - [Exclave] SendCmdEndStrobeAck returned 0x%x, result = 0x%x\n`
+- `ISP_ReadPatchBayVariables`
+- `DPE_AISP_BAYERPROC_PIPE_BayerProc Low`
+- `stop`
+- `site.AppleCameraWorkLoop`
+- `AppleCamera:%s - AOP motion data init already complete; skipping (aopPwr=%d)\n`
+- `[%s:%d] [CIL] Finished exclaves_sensor_start(FACEID) (ret:0x%x / status:%u)\n`
+- `AppleCamera:%s - command (opcode: 0x%04X) took %lld usec res=0x%08X ack=0x%08X\n`
+- `AppleCamera:%s - MotionDataDisable: SKIPPED gate failed (shm=%d enableFn=%s aopPwr=%d)\n`
+- `sacActionChannel3_ChargePump`
+- `AppleCamera:%s - Error: The output buffer surface does not have the necessary privilege!\n\n`
+- `12228`
+- `PearlCam_GazePointScore`
+- `AppleCameraDirtyShutdownStats`
+- `DPE_AISP_SIFFE_PIPE1_IspPipeSIfFE High`
+- `ProbeCap`
+- `AppleCamera:%s - EDT doesn't have CTRR firmware segment information( error 0x%x). Aborting..\n`
+- `YonkersEphemeralPubKey`
+- `McacheDriverClient:%s - Failed to alloc data stream info object\n`
+- `ISP_RegisterFirmwareWorkProcessor_gated`
+- `ISP_GetExclaveEnablementStatus_gated`
+- `Number SAC Action2 FreqArray2`
+- `ApplePearlCamQMsgFunction`
+- `\"AppleCamera::%s [SharedClientSurface] - SurfaceID is out of range (surfaceID:%u / Max:%u)\\n\" @%s:%d`
+- `AuthMinorVersion`
+- `com.apple.pearl.iokit-user-access`
+- `            ... coredump segment information was not received.\n`
+- `AppleCamera:%s - Could not allocate a message queue lock\n`
+- `AppleCamera:%s - enableMotion=%d shm=%d ramdisk=%d\n`
+- `  %4d: surface-id=0x%08X, size=%llu, dartMapBase=0x%llX, usage='%c%c%c%c', cacheMode=0x%08X\n`
+- `cmdId`
+- `site.ApplePearlCamUserClient`
+- `EnableFaceDetect`
+- `FDRDataEncryptionWrappedKey`
+- `AppleCamera:%s - channel: %d, currentFreqArrayIndex: %d, index: %d\n`
+- `ringHead`
+- `peerEPCtrlMsg`
+- `PearlCamDoSecretPatternOptionsString_Nonce`
+- `AppleCamera:%s - chan: %d, PixClock freq-index:%d, freq: %llu, aggressor: %lld, width: %d\n`
+- `P`
+- `AppleCamera:%s - PTD data table returned NULL\n`
+- `ISP Power State`
+- `McacheDriverClient:%s - mcacheEnableStream with id: %d failed\n`
+- `site.struct rcam_auth_cmd`
+- `ISP_InitializeClocksAndSensors`
+- `AppleCamera:%s - ANE Peer service is not available\n`
+- `AppleCamera:%s - heapMemorySurface is NULL, skipping heap coredump registration (rdar://177535365)\n`
+- `Allocated Shared Memory`
+- `False`
+- `IOSurfacePlaneHeight`
+- `PearlCamPearlSURDataString_PearlSURPairingKey`
+- `function-cam1_ldo`
+- `exclaveIspStrobeControlHandlingOn`
+- `SavageUID`
+- `AppleCamera:%s - Requested unsupported power state: %d\n`
+- `cam-connections-scheme`
+- `[%s:%d] [CIL] Call ISP_CILManager (%u/false/false)\n`
+- `AppleCamera:%s - Allocated firmware logging buffer (size:%d)\n`
+- `AppleCamera:%s - Failed to create strobe control client context\n`
+- `AppleCamera:%s - rISP_DPE_VSOC_CAT_CONTROL2 control: 0x%x\n`
+- `AppleCamera::%s: Could not map the name buffer in the kernel\n`
+- `AppleCamera:%s - exclaves_sensor_start(FACEID) returned error (ret:0x%x / status:%u)\n`
+- `AppleCamera:%s - Starting firmware\n`
+- `AppleCamera:%s - Reading sensor NVM failed, tberr: 0x%08X, res: 0x%08X\n`
+- `AppleCamera:%s - (turn on) - change fPowerEvent from %d to None. PowerUps:%llu\n`
+- `%s: Auth entitlement found \n`
+- `AppleCamera:%s - channel: %u, bank: %u bank score*%u: %u, ccprd %u, index %u\n`
+- `ISP_FE_PS On Time (ms)`
+- `site.ApplePearlCamQMsgFunction`
+- `PearlCamSendBuffersInfoString_SequenceType`
+- `AppleCamera:%s - Error: The Input buffer surface does not have the necessary privilege!\n\n`
+- `Indeterminate`
+- `ISPExclaveEventSource:%s - Could not get the exclave message queue, exiting\n`
+- `kPearlCamStartOptionsString_EnableMD`
+- `AppleCamera:%s - Error: T287 running. Returning kIOReturnBusy\n`
+- `ISP_STS1_PS On Time (ms)`
+- `RTBuddy`
+- `AppleCamera:%s - waitISPCPUReadyCount = %d\n`
+- `IspAneIPCEndPoints:%s - CISP_CMD_IPC_ENDPOINT_SET2 mismatch ring buffer structure from firmware: readRingBuffer:0x%llx, readRingLen: 0x%x, writeRingBuffer:0x%llx, writeRingLen: 0x%x\n`
+- `AppleCamera:%s - firmware teardown notification idl call failed=%d\n`
+- `AppleCamera:%s - [ISPRTB] Error! Failed to get dictionary of IOServices\n`
+- `AppleCamera:%s - admission check: clientIndex=%d, subClientID=%d; budgetReq=%d; budgetAlloc=%d; result=0x%08x\n`
+- `Number MB PASS_KEY_ECC_ERR`
+- `AppleCamera:%s - Resetting client logging buffer tail\n`
+- `site.applecamera_exclavecoreispeng_ispengineexclavecore_s`
+- `AppleCamera:%s - Failed to power on ISP for strobe control: 0x%x (fPowerEvent=%d, fIsPowered=%d)\n`
+- `    Write Buffer (RX)\n`
+- `AppleCamera:%s - Failed to write ISP register offset 0x%08X with value:0x%08X, current value:0x%08X [FID state:0x%08X]\n`
+- `AppleCamera:%s - Uninitialized message queue lock\n`
+- `YonkersIR2PubKey`
+- `AppleCamera:%s - get lsc info failed\n`
+- `     Type= %s\n`
+- `Kernel`
+- `ISP_SetLowMemoryMode_gated`
+- `    fPMPClockSpeedControlFunction = %s\n`
+- `RearCameraAuthICNonce`
+- `AppleCamera:%s - Packed PRIs B%u, CCPRD %u=[%u]\n`
+- `AppleCamera:%s - Deferring AOP Motion Data Processing because SPUSphere service is not currerntly powered on\n`
+- `AppleCamera:%s - CISP_CMD_POWER_DOWN command completed: res=0x%08X\n`
+- `AppleCamera:%s - Missing FW segments in EDT, #of segment in EDT: %d\n`
+- `Number SAC Action1 FreqArray1`
+- `client_log_buffer_t`
+- `PearlCamMessageHandler_Start`
+- `camAneIspTimer`
+- `AppleCamera:%s - Memory map failed: 0x%08X\n`
+- `YonkersIR2UID`
+- `AppleCamera:%s - channel %d has %zu configs, driver supports %d\n`
+- `Number Rgl INT_FAULT_BBA_OVV_LATCH`
+- `\"TB_FATAL: \" \"invalid result returned from ispEngineDirtyOff\" @%s:%d`
+- `AppleCamera:%s - Could not cast the provider to RTBuddy Service, exiting\n`
+- `AppleCamera:%s - endpoint platformInfo: motion=%d pearl=%d ctrl=%d fullRate=%d secondary=%d\n`
+- `ISP_FlushInactiveDARTMappings_gated`
+- `ECAsyncNotifyRegister`
+- `AppleExclaveCameraProxy:%s - Serial logging has been enabled\n`
+- `McacheDriverClient:%s - Found MCstream Object with stream id: 0x%x with index: %d\n`
+- `currentPowerState`
+- `AppleCamera:%s - RPC msgaddr: %p, param (%d, %d): %p, valid: %d\n`
+- `aop-isp-endpoint-cfg`
+- `YonkersDeviceID`
+- `fPersistentSharedMemoryTotalSize = %llu (%u allocations)\n`
+- `\"TB_FATAL: \" \"invalid result returned from prepareToStrobeAck\" @%s:%d`
+- `ISP`
+- `AppleCamera:%s - Couldn't create client logging buffer lock\n`
+- `AppleCamera:%s - DSC data exceeds maximum allowed size\n`
+- `AppleCamera:%s - AMCC%d regBase: 0x%llx\n`
+- `AppleCamera:%s - done (%lld usec)\n`
+- `firstSeen_abs`
+- `PearlCam_GazePointY`
+- `ISP_ChangePowerState`
+- `YonkersIR1SNUM`
+- `AppleCamera:%s - found sensor on chan %d: 0x%04X\n`
+- `AppleCamera::%s: Handling FW timeout\n`
+- `FwCmdTimeoutDuringInit`
+- `AppleCamera:%s - Cannot allocate IOBMD\n`
+- `PearlCamPowerOnOptionsString_SkipFDRCheck`
+- `PearlCamSendBuffersInfoString_MDData`
+- `AppleCamera:%s - allocating surface for FW\n`
+- `Number BANE TRACE_INTERMEDIATE_HIGH_FAULT`
+- `ReleasePremap`
+- `PearlCamPearlSURDataString_UnwrapOutputIV`
+- `PearlCamPowerOffCamera`
+- `site.AppleAuth`
+- `ISP: PearlCam streaming buffer`
+- `ReleaseChannels`
+- `    _numISPStartFirmware: %llu\n`
+- `AppleCamera:%s - [%s:%d] [CIL] Force to turn off CIL (fCILRequestStatus:0x%x)\n`
+- `AppleCamera::%s: ISP_ResumeFirmware returned 0x%08x\n`
+- `CISP_CMD_POWER_DOWN failed`
+- `PearlCamStatisticsString_Num250mSecCoolDownPeriods`
+- `CmdChErrorNotification`
+- `PearlCamStateEntryProc_OFF`
+- `ReFillFirmwareBufferPools`
+- `AppleCamera:%s - Error: firmwareDataSectionEndOffset is less than firmwareDataSectionStartOffset\n`
+- `AppleCamera:%s - Serial logging has been enabled\n`
+- `AppleCamera:%s - %d\n`
+- `YonkersIR2MNS`
+- `AppleCamera:%s - Coredump IOPHeapVirtualAddress: 0x%llx, APHeapVirtualAddress: 0x%llx, HeapLength: 0x%llx\n`
+- `AppleCamera:%s - ISP Memory free request\n`
+- `AppleCamera:%s - surfaceID=%u, size=%llu, dartMapBase=%#llx %s\n`
+- `enabled`
+- `AppleCamera:%s - ANE power state is not ready - waited = %llu mS retries=%d res=0x%x sleepResult=0x%x\n`
+- `validateISPReg`
+- `AppleCamera:%s - addr=0x%llX, offset=0x%X, size=%d, memMap=0x%llX, memMapLen=0x%llX\n`
+- `RearCameraAuthICMNS`
+- `AppleCamera:%s - logEntrySize=%d, logStringOffset=%d\n`
+- `Memory Free Requests`
+- `BackSuperWideCamera`
+- `cameracaptured`
+- `site.AppleCamera`
+- `Note: ISP did not crashlog; emitting minimal dump.\n`
+- `OSValueObject<AppleCameraFirmwareWorkProcessorParams>`
+- `    fAOPMotionDataParameterSet = %s\n`
+- `IspAneIPCEndPoints:%s - enableFWIPCEP_gated - CISP_CMD_IPC_ENDPOINT_SET2/UNSET2 failed: 0x%x!\n`
+- `McacheDriverClient:%s - remove ISP data streams from Mcache driver with streamId: %d\n`
+- `ISPClientMappedSurface`
+- `DeferredPowerDownTimeOut`
+- `v24@?0{applecamera_exclavecoreispeng_ispengineexclavecore_notifyfirmwareteardown__result_s=C(?={applecamera_exclavesispshared_exclavesisperror_s=Q})}8`
+- `AppleCamera:%s - fExclaveStrobeControlClient is NULL\n`
+- `AppleCamera:%s - channel: %d, priority: %d (process: %s)\n`
+- `initWithOptions`
+- `ISPLoggerEventSource:%s - Error: could not init base object\n`
+- `121111121222121211211111111111222122222222212111222222222222222222222211122111222222222222222222222222222222222222222222222222222222222222222222222222222222222211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `ECForceCleanup`
+- `AppleCamera:%s - startAuth - ENTERED\n`
+- `AppleCamera:%s - total MPM Alloocation Size %llx\n`
+- `ISP: IHEP`
+- `AppleCamera:%s - Could not allocate an IOBMD for [%s] of size 0x%llX\n`
+- `AppleCamera:%s - Platform ID: 0x%X\n`
+- `MotionDataDisable`
+- `Number YB FAULT_E`
+- `setObject`
+- `AppleCamera:%s - Couldn't create ISPExclaveEventSource\n`
+- `ISP: Endpoint`
+- `AppleCamera:%s - exclaves_sensor_stop(CAM) returned error (ret:0x%x / status:%u)\n`
+- `inRamdisk`
+- `ISP: PearlCam allocated surface`
+- `AppleCamera:%s - AOP fns: Get=%s Set=%s Enable=%s StateSet=%s\n`
+- `    Channel %d: free\n`
+- `AppleCamera:%s - CISP_CMD_AON_PTD_SET failed!\n`
+- `AppleCamera:%s - ISP is not powered on\n`
+- `AppleCamera:%s - Creating IOMultiMemoryDescriptor failed!!\n`
+- `signalDoorbell`
+- `IDSN`
+- `AppleCamera:%s - Could not create Exclave IOWorkLoop\n`
+- `AppleCamera:%s - Error: The client's metadata buffer does not have the necessary privilege!\n\n`
+- `AppleCamera:%s - memory allocation fail on pChannels[%d].fExclaveConfigs, allocation size=%d\n`
+- `[%s:%d] [CIL] prevStatus:0x%08x / Updated fCILRequestStatus:0x%08x\n`
+- `AppleCamera:%s - [SharedClientSurface] - entry is NULL\n`
+- `ISP_SetBestPixClockFrequencyIndex_gated`
+- `ISP_UnregisterFirmwareWorkProcessor_gated`
+- `PearlCamSendBuffersInfoString_FrameTimeStamp`
+- `AppleCamera:%s - Could not get the provider's name, exiting\n`
+- `PrintGPRegisters`
+- `mcacheReleaseStream`
+- `PearlCamDoBioCaptureOptionsString_SecretPatternType`
+- `ISP_LoadOverrideNVM_gated`
+- `AppleCamera:%s - Error: The yuv buffer surface does not have the necessary privilege!\n\n`
+- `Number BANE TEMPERATURE_HIGH_FAULT`
+- `AppleCamera:%s - Couldn't add isp mailbox interrupt event source to exclave work loop\n`
+- `ISP_CompleteFirmwareWorkProcessorItem_gated`
+- `=====================================================\n`
+- `    _numFailedISPSuspends: %llu\n`
+- `Number BANE AVDD_UNDERVOLTAGE_FAULT`
+- `AppleCamera:%s - [ISPRTB] Error! Failed to initialize endpoint: %d\n`
+- `The range of valid memory is too large to be represented by this type, or [begin, end) is not a well-formed range`
+- `mediaserverd`
+- `H11ANEIn`
+- `Number Rmyo Fail`
+- `1211112`
+- `PearlCamBufferType_ReferenceImage`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - Failed to map shared memory descriptor\n`
+- `AppleCamera:%s - messageClients(kISPTailspinExclaveEmptyQueue, 0x%016llx)\n`
+- `AppleCamera:%s - h2tBuf: pool=%d, tag=%#llx, addr0=%#llx, len0=%d, addr1=%#llx, len1=%d, DART=%#llx\n`
+- `ISP_GeneralProcess_Generic_gated`
+- `FrontIRStructuredLightProjectorSerialNumString`
+- `AppleCamera:%s - FrontIR sensor not detected\n`
+- `AppleCamera:%s - heapMemoryDescriptor iovmInsert failed: 0x%x, dmaAddress: 0x%llx, phyAddr: 0x%llx, length: 0x%llx\n`
+- `IspAneIPCEndPoints:%s - Unable to allocate shared memory for fANEEndpoints[i].txBuffer\n`
+- `AppleCamera:%s - CISP_CMD_MCACHE_RELEASE(%d) is not supported\n`
+- `AppleCamera:%s - [ch%u] err=0x%08x: failed to fetch LSC polynomial coefficients for configIdx=%u\n`
+- `Total Interrupts`
+- `site.AppleCameraUserClient`
+- `1211111111111111111111111111111111111111111111111111111111111111111111`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - Failed to get shared memory buffer memory descriptor\n`
+- `AppleCamera:%s - Default triplets loaded in clocking table\n`
+- `AppleCamera:%s - GIC data is invalid\n`
+- `ISP_DisplayPseudoStandby_gated`
+- `camPlatform`
+- `OSValueObject<CameraChannelDataFileParams>`
+- `RamdiskMode`
+- `AppleCamera:%s - CISP_CMD_CH_BUFFER_RETURN [%d] command completed: res=0x%08X\n`
+- `AppleCamera:%s - [ISPRTB] endpoint is nullptr, do nothing\n`
+- `PearlCamEventSource`
+- `ISP_CPU_PS On Time (ms)`
+- `site.IODART::capability_t`
+- `AppleCamera:%s - ISP_LoadOverrideNVM_gated returned 0x%08X\n`
+- `AppleCamera:%s - EC did not ack the firmware teardown notification\n`
+- `_LogKeyBuffer: %s = 0x%s (error = 0x%08X) \n`
+- `Print`
+- `RecordFrames`
+- `B`
+- `PearlCamStateEntryProc_SECRET_PATTERN`
+- `\"AppleCamera::%s: Unsupported ISP Version 0x%x\\n\" @%s:%d`
+- `function-mcc_dataset`
+- `SavageSNUM`
+- `DPE_AISP_SIFFE_PIPE3_IspPipeSIfFE High`
+- `AppleCamera:%s - Unable to register as ApplePPMKernelClient: result=0x%X\n`
+- `AppleCamera:%s - Could not get a mapper\n`
+- `AppleCamera:%s - result=0x%08X\n`
+- `YonkersIR1PubKeyHmac`
+- `ISP_Suspend`
+- `Number MB NON_ZERO_PASS_KEY`
+- `OSBoundedPtr.h`
+- `OSValueObject<ISPClientContext>`
+- `AppleCamera:%s - Could not match with a known ISP Revision.\n`
+- `AppleCamera::startAuth - withAuthChip FAILED, returned NULL\n`
+- `StartReceive`
+- `    fSensorResetFunction2 = %s\n`
+- `AppleCamera:%s - CISP_CMD_SUSPEND command completed: res=0x%08X\n`
+- `FrontCamera`
+- `1`
+- `Log`
+- `AppleCamera:%s - ISP-ANE IPC is disabled\n`
+- `Number SAC Action2 FreqArray1`
+- `site.AppleCameraFrameReceiverBuffer`
+- `AppleCamera:%s - %s (didDeInit=%s)\n`
+- `AppleCamera:%s - Coredump IOPFwVirtualAddress: 0x%llx, APFwVirtualAddress: 0x%llx, FirmwareLength: 0x%llx\n`
+- `v24@?0{applecamera_exclavecoreispeng_ispengineexclavecore_ispenginedirtyoff__result_s=C(?={applecamera_exclavesispshared_exclavesisperror_s=Q})}8`
+- `ISP_PowerOffCamera_gated`
+- `SavageWrapOutputIV`
+- `pmgr_aon_fuse65`
+- `ISP_MapMPMMemory_gated`
+- `IspAneIPCEndPoints:%s - send CISP_CMD_IPC_ENDPOINT_UNSET2 to FW, self state: %d\n`
+- `site.ISPMainWorkLoopEventSource`
+- `power_on_hardware`
+- `AppleCamera:%s - (camChan=%d, type=%d, validityStatus=0x%08X, isEarlyBootDataFile=%s)\n`
+- `ISP_LoadDataFile_gated`
+- `       readRingBufferLen  :              0x%08x \n`
+- `setNextAllocation`
+- `AppleCamera:%s - Could not make memory visible to ISP\n`
+- `SavageNVMRev`
+- `sacActionChannel4_FreqArray0`
+- `ISP Events`
+- `22222223312322`
+- `AppleCamera:%s - Setting up isp interrupt event source failed\n`
+- `AppleCamera:%s - time to start: %llums\n`
+- `Success`
+- `EnableISPCPUMotionDataProcessing`
+- `CISP_CMD_STOP failed`
+- `AppleCamera:%s - allocated surface at DVA %llx\n`
+- `12228221`
+- `site.ISPMPMMemoryParams`
+- `disabled - exiting without sending`
+- `Valid`
+- `Number BANE TRACE_INTERMEDIATE_LOW_FAULT`
+- `clientClose`
+- `AppleCameraFrameMetadata`
+- `AppleCamera:%s - bypassing panic, disabled by boot-args\n`
+- `AppleCamera:%s - Handling FW timeout\n`
+- `            ... crashlog buffer was not available.\n`
+- `ShowBuffers`
+- `PearlCamSendBuffersInfoString_HasOcclusion`
+- `getEndpointFromEndpointService`
+- `function-clock_req_interrupt`
+- `CISP_CMD_CH_ERROR_NOTIFICATION`
+- `AppleCamera:%s - Not enough memory for mainWorkLoopData\n`
+- `AppleCamera:%s - MotionDataEnable: skip endpoint %d (not enabled)\n`
+- `AppleCamera:%s - Couldn't remove RTBuddy endpoint %d from work loop\n`
+- `StartDeferredPowerDownTimer`
+- `com.apple.isp`
+- `AppleCamera:%s - Couldn't add isp strobe control upcall notify event source to exclave work loop\n`
+- `AppleCamera:%s - chan: %d, %s raw mipi-freq-index:%d, freq: %llu, aggressor: %lld, width: %d\n`
+- `AppleCamera:%s - total non-persistent IOBMD allocation size: %u\n`
+- `AppleCamera:%s - result = 0x%08X, _numFailedISPResumes: %lld\n`
+- `site.ISPMPMMemoryParamArray`
+- `AppleCamera:%s - ANE0 used for IPC communication\n`
+- `AppleCamera:%s - Error: signpost notification group message exceeds message size limit!\n`
+- `ForceISPDPEIdle`
+- `AppleCamera:%s - fCurrentPowerState=%d\n`
+- `\n AppleCamera::%s: ErrorCode(0x60) = 0x%04x, \n WarningCode(0x62) = 0x%04x, \n SecurityInfo(0x282) = 0x%04x, \n Entitlements(0x28C) = 0x%04x, \n HPRstatus(0x284) = 0x%02x, \n ECDHstatus(0x285) = 0x%02x, \n FlowWrapStatus(0x286) = 0x%02x, \n FlowAuthStatus(0x287) = 0x%02x, \n FlowUnWrapStatus(0x288)`
+- `ISP_ConfigurePixClockSAC`
+- `dumpEPConfiguration`
+- `ECSendCommandMboxIRQ`
+- `AppleCamera:%s - Could not locate the isp-exclave-proxy node in the ioreg\n\n`
+- `AppleCamera:%s - Error: couldn't create pDeviceMemoryManager\n`
+- `ISPMPMMemoryParamArray`
+- `PearlCamStartOptionsString_EnableER`
+- `function-sensor_extclk`
+- `AppleCamera:%s - Client %s is requesting ISP power down\n`
+- `AppleCamera:%s - could not allocate buffer for NVM reading on channel %d\n`
+- `ISP_LoadSetfile_gated`
+- `AppleCamera:%s - No %s ipc channel found\n`
+- `AppleCamera:%s - ISP firmware serial logging has been enabled\n`
+- `allocateSurface`
+- `AppleCamera:%s - Undefined /obsolete status 0x%x returned by exclaves get status\n`
+- `AppleCamera:%s - Subset index %u, freq=%llu, pll=%u.%u, ccprd=%u\n`
+- `AppleCamera:%s - Could not power on the EC, result = 0x%x\n`
+- `AppleCamera:%s - Could not setup firmware logging\n`
+- `AppleCamera:%s - Transitioning from Suspend to DeInit to free memory\n`
+- `site.ISPClientMappedSurface`
+- `PearlCamStateEntryProc_FACE_DETECT`
+- `AppleCamera::%s: No second int from ISPCPU`
+- `Number BANE AVDD_OVERVOLTAGE_FAULT`
+- `121112111`
+- `AppleCamera::client_log_buffer_t:%s - Unable to lock surface - %#x\n\n`
+- `\"%s\" @%s:%d`
+- `PearlCam_RawBufferDARTAddress`
+- `site.AppleCameraFrameReceiver`
+- `setBudgetToKernelClientFunction`
+- `AppleCamera:%s - MotionDataEnable: SKIPPED gate failed (shm=%d enableFn=%s aopPwr=%d).\n`
+- `AppleCamera:%s - fPowerEvent=%d (PowerOffPending), waiting for power-off to complete before power-on\n`
+- `AppleCamera:%s - channel %d failed to release (current owner: %s)\n`
+- `Fail`
+- `AppleCamera:%s - Detected %d configurations for channel %d\n`
+- `AppleCamera:%s - fSharedMemorySurfaces.nonPersistentList count: %u\n`
+- `This bounded_ptr is pointing to memory outside of what can be represented by a native pointer.`
+- `function-sensor_reset2`
+- `FCClValidationStatus`
+- `AppleCamera:%s - About to register service\n`
+- `AppleCamera:%s - Uninitialized main workloop message queue lock\n`
+- `IspAneIPCEndPoints:%s - readRingBuffer:0x%llx, readRingLen: 0x%x, writeRingBuffer:0x%llx, writeRingLen: 0x%x\n`
+- `/product`
+- `AppleCameraFrameReceiverBufferPool`
+- `/Replay/Face1-1`
+- `\"AppleCamera::%s - ISP_Init failed: 0x%08X\\n\" @%s:%d`
+- `AppleCamera:%s - CISP_CMD_MULTICAM_SESSION_CREATE error: 0x%08X\n`
+- `Number Rgl INT_FAULT_MAXDC_CLKSAF_BBB_LATCH`
+- `ISPEndpoint`
+- `     HwStatus= 0x%08X\n`
+- `FrontIRCamera`
+- `site.struct sIOProcessorChannelDescriptor`
+- `AppleCamera:%s - Auth: ISP unavailable (fw timeout=%d, fw loaded=%d), reporting busy\n`
+- `null`
+- `function-saca2`
+- `ForceIdleFailed`
+- `v24@?0{applecamera_exclavecoreispeng_ispengineexclavecore_ispengineon__result_s=C(?={applecamera_exclavesispshared_exclavesisperror_s=Q})}8`
+- `AppleCamera:%s - Could not allocate main workloop message queue lock\n`
+- `AppleCamera:%s - Strobe control client not found in client list\n`
+- `AppleCamera:%s - Didn't set fPowerEvent to PowerOffPending because fOutstandingPowerUpRequests is %d and fPowerEvent=%d\n`
+- `AppleCamera:%s - called back with [%u] chosen frequency indices\n`
+- `AppleCamera:%s - Error: channel %d in process of ownership transfer, cannot reserve now\n`
+- `Number Power Downs`
+- `AppleCamera:%s - enabling sensor ref clock 2\n`
+- `FrontIRCameraMode`
+- `Number Rgl INT_FAULT_MAXPC_LATCH`
+- `fw`
+- `AppleCamera:%s - Changing state from %d to %d\n`
+- `exclaveIspInterruptHandler`
+- `MultiCameraSession`
+- `AppleDisplayPseudoStandbyFunction`
+- `power_off_hardware`
+- `ISP_SendBuffers_gated`
+- `AppleCamera:%s - Memory allocation fail on pChannels[%d] configs, allocation size=%d\n`
+- `Number Rgl INT_FAULT_VINUVLO_LATCH`
+- `AppleAuth::authThreadGated - ERROR: NULL fCameraProvider\n`
+- `AppleCamera::%s: Could not power off the ISP after 10 seconds\n`
+- `Total Persistent + NonPersistent = %llu\n\n`
+- `AppleCamera:%s - - FW reporting crash, RTBuddy handling in ISP_Handle_FW_Crash_Notification forcePowerOff(true)\n`
+- `DPE_AISP_MSBEPROC_PIPE_MsProcBE High`
+- `AppleCamera:%s - ISP SMBC configuration not found\n`
+- `AppleCamera:%s - result: 0x%08X\n`
+- `function-saca2d`
+- `/product/camera`
+- `PearlCamSendBuffersInfoString_RequestedPPMBudget`
+- `AppleCamera:%s - No action, AP panicked\n`
+- `processTargetToHostBufferNotification`
+- `Number Rgl INT_FAULT_BBB_UDC_LATCH`
+- `restoreMode`
+- `CreateStartPrepareResponseDictionary`
+- `AppleCamera:%s - Changed ISP power state to %d\n`
+- `\"ISP Firmware panic\\n\" @%s:%d`
+- `AppleCamera:%s - Power-off completed (fPowerEvent=%d), proceeding with power-on\n`
+- `AppleCamera:%s - Booting firmware in interrupt-based logging mode\n`
+- `Number YB FAULT_A`
+- `AppleCamera:%s - Failed to turn on ALS power, res = 0x%08X\n`
+- `AppleCamera:%s - LogDARTErrorInfo - End Logging\n`
+- `site.PeridotAgileClocking`
+- `exclave-assigned`
+- `PearlCamStatisticsString_Num100mSecCoolDownPeriods`
+- `ECSendCommandOn`
+- `ISP_ECReadNVMSequence`
+- `Number Rgl INT_FAULT_MAXDC_CLKSAF_BBA_LATCH`
+- `Number Rgl INT_FAULT_STROBE_SHORT_LATCH`
+- `FaceFound`
+- `registerErrorHandler`
+- `AppleCamera::%s: Could not power on the ISP after 10 seconds\n`
+- `%s`
+- `FrontCameraRenoModuleSerialNumString`
+- `function-torch_enable`
+- `function-motion_data_enable`
+- `PearlCamSendBuffersInfoString_ProjectorMode`
+- `InitializeAOPMotionDataParams`
+- `AppleCamera:%s - NVM LSC data is larger than allocated space\n`
+- `AppleCamera:%s - CISP_CMD_STOP failed with command 0x%08x\n`
+- `AppleCamera:%s - [SharedClientSurface] - SHARED_CLIENT_SURFACE_SIZE:%u\n`
+- `YonkersMNS`
+- `AppleCamera:%s - Could not create IOSurface for over-ride NVM buffer\n`
+- `BackDepthCamera`
+- `ECNotifyFirmwareTearDown`
+- `PearlCamPowerOnOptionsString_GetSensorNonce`
+- `/arm-io/isp`
+- `AppleCamera:%s - Found client with existing session, Client=%s NumGroups=%d\n`
+- `AppleCamera:%s - Notify firmware about dart error\n`
+- `IPCEndPointTimerHandler`
+- `PearlCamSendBuffersInfoString_Yaw`
+- `AppleCamera:%s - Couldn't add ISPLoggerEventSource to logger work loop.\n`
+- `AppleCamera:%s - Calling ISP_PowerOnExclaveCore\n`
+- `            ... crashlog message was not received.\n`
+- `PearlCamStartOptionsString_HostTag`
+- `as expected`
+- `AppleCamera:%s - fISPVersion=%d\n`
+- `AppleCamera::%s: Channel:%d: - This function's execution time is %lld usec\n`
+- `Skip deferred early FW (%d)\n`
+- `    fSensorExtClkFunction3 = %s\n`
+- `AppleExclaveCameraProxy:%s - Override ISP platformID in the registry to 0x%08X\n`
+- `DisableSensorRefClockForChannel`
+- `PearlCamSendBuffersInfoString_UserFeedback`
+- `ISP Firmware Buffer Log Status: CLOGGER_LOGBUFFER_STATUS_GREEN (counter:%d, nLogsInFlight:%d)\n`
+- `AppleCamera:%s - activity stopped: clientIndex=%d, subClientID=%d; budgetAlloc=%d; result=0x%08x\n`
+- `ISP_SensorPrePersonalize_gated`
+- `[%s:%d] [CIL] Finished exclaves_sensor_stop(CAM) (ret:0x%x / status:%u)\n`
+- `AppleCamera:%s - ISP_GeneralFirmwareInitialization failure\n`
+- `ComponentIndex`
+- `camisp`
+- `\"TB_FATAL: \" \"invalid result returned from forceReset\" @%s:%d`
+- `IOSurfaceDisableMapperFlush`
+- `CamService`
+- `AppleCamera:%s - Setting endpoint configuration returned 0x%08x\n`
+- `sacActionChannel2_FreqArray2`
+- `AppleCamera:%s - Error: The Input buffer does not have the necessary privilege!\n\n`
+- `ISP_StartFirmware`
+- `AppleCameraDirtyShutdownHistory`
+- `AppleCamera:%s - suspending\n`
+- `    readRingBufferAddr : (DART):      0x%08llx \n`
+- `AppleCamera:%s - physical start: 0x%llx, heap size: 0x%x\n`
+- `site.ISPCoredump`
+- `function-torch_enable2`
+- `AppleCamera:%s - Denied Access to RPC ID [%d]\n`
+- `AppleCamera:%s - IPC PowerOn ANE\n`
+- `registerMcacheClient`
+- `AppleCamera:%s - rISP_DPE_CPU_VSOC_CAT_CONTROL2 control: 0x%x\n`
+- `AppleCamera:%s - (turn off) - change fPowerEvent from %d to None. PowerDowns:%llu\n`
+- `AppleCamera:%s - Notify firmware about cmd timeout: cmdId=0x%04x\n`
+- `site.AppleCameraFrameReceiverBufferPool`
+- `AppleCamera:%s - couldn't create OSData\n`
+- `AppleCamera:%s - ANE powered up successfully - waited = %llu mS retries=%d\n`
+- `ANE ISP IPC Error`
+- `sendMessageToMainWorkLoop`
+- `ISP_PreMapClientSurface_gated_common`
+- `ISP_DestroyMultiCameraSession_gated`
+- `AppleCamera:%s - Reading sensor NVM failed, tberr: 0x%08X\n`
+- `AppleCamera:%s - Loaded Exclave Camera Proxy handle\n`
+- `ISP_InitializeExclave`
+- `JasmineIRWrapOutputHmac`
+- `ISP_InitialSensorDetection`
+- `AppleCamera:%s -  Illegal Afpp file\n`
+- `IOSurfacePlaneInfo`
+- `AppleCamera:%s - Error matching %s with the devicetree, exiting\n`
+- `AppleCamera:%s - Failed to write power gate register rPMGR_PWR_ISP_CPU_CFG0, offset 0x%08X, error = 0x%08X\n`
+- `YonkersIR1MNS`
+- `hasActiveKernelClient`
+- `AppleCamera::releaseSurface:%s - Error: called on surface %#x with no references\n`
+- `AppleCamera:%s - setAllocator returned 0x%x\n`
+- `\"TB_FATAL: \" \"invalid result returned from ispEngineOn\" @%s:%d`
+- `ECForceReset`
+- `Active`
+- `EnableSensor`
+- `AppleCamera:%s - Couldn't add ISPExclaveEventSource to Exclave IOWorkLoop\n`
+- `AppleCamera:%s - Platform has no AOP support\n`
+- `AppleCamera::%s: opMode = %#x, sysConfig = %#llx, errCode = %#x, \n`
+- `AppleCamera:%s - Trying to re-register an already registered port\n`
+- `AppleCamera:%s - GPBuffers h2tBuf: ioBuffer[%d] tag=%#llx\n`
+- `YonkersIR1FabRevision`
+- `AppleCamera:%s - get luma timed out!\n`
+- `    fCamPMUResetFunction2 = %s\n`
+- `AppleCamera:%s - fCamEarlyFW boot. Skipping ANE IPC setup.\n`
+- `ane-isp-endpoint-cfg`
+- `Signature`
+- `sCoredumpSaveThreadState`
+- `Face`
+- `ReleaseIspAneNetworkMemorySurface`
+- `AppleCamera:%s - Address translation memory map params are invalid!\n`
+- `AppleCamera:%s - Request for strobe mode ON->OFF transition\n`
+- `AppleCamera:%s - unregistering\n`
+- `AppleCamera:%s - total non-persistent shared allocation size: %u\n`
+- `IspAneIPCEndPoints:%s - ANE is in timed out or diable state(state: %d), call ISP firmware timeout\n`
+- `PearlCamStartOptionsString_DeliverFDFramesDuringBioCap`
+- `PearlCamRect_X`
+- `AppleCamera:%s - Interrupt based log here is un-expected\n`
+- `AppleCamera::%s: Couldn't create a new memory descriptor for data\n`
+- `AppleCamera:%s - Releasing FW heap\n`
+- `DPE_AISP_SIFFE_PIPE0_IspPipeSIfFE Low`
+- `Number YB FAULT_B`
+- `SavageAttestationNonceSign`
+- `PearlCamStartOptionsString_DeliverGMCFrame`
+- `PearlCamBufferType_SensorRaw`
+- `function-boost_rail_en`
+- `AppleCamera:%s - Couldn't add ISPMainWorkLoopEventSource to main IOWorkLoop\n`
+- `AppleCamera:%s - virtuall address is 0 for ISP-ANE AFPP networks\n`
+- `AppleCamera:%s - Attempting to dump ISPCPU firmware debug logs\n`
+- `True`
+- `PearlCamStartOptionsString_EnablePeriocular`
+- `\"TB_FATAL: \" \"invalid result returned from readNvmData\" @%s:%d`
+- `AppleCamera:%s - (turn on) - fPowerEvent is PowerOffPending. Did NOT set to None. PowerUps:%llu\n`
+- `AppleCamera:%s - Client %s not found in client lookup, res = 0x%08X\n`
+- `AppleCamera:%s - Platform has no AON PTD support\n`
+- `AppleCamera:%s - number of supported ChargePump frequencies for chan %d: %d\n`
+- `ISP_ForceShutdown`
+- `DPE_AISP_DEMPROC_PIPE_DemProc Low`
+- `Number Rgl INT_FAULT_XEF0`
+- `checkForWork_block_invoke_3`
+- `AppleCamera:%s -  failed to create ISP<->ANE %s endpoint service\n`
+- `AppleCamera:%s - DeviceMemoryManager Usage\n`
+- `PearlCamSendBuffersInfoString_GlassesScore`
+- `IOSurfaceAllocSize`
+- `AppleCamera:%s - acknowledging to AOP that ISP power state changed\n`
+- `AppleCamera:%s - No second int from ISPCPU\n`
+- `ok`
+- `AppleCamera:%s - Timed out waiting for ISPCPU to be shutdown, gpr6 = 0x%x\n`
+- `AppleCamera:%s - fInRamdisk=%d\n`
+- `SavageDeviceRev`
+- `AppleCamera:%s - index=%d, fAdjustMIPIClockFrequencyInSACCallback=%s\n`
+- `      CTRR Firmware Image:      size=%-8u\n`
+- `Error`
+- `type`
+- `AppleCamera:%s - Shared memory  region mapped at DART translated address: 0x%08X\n`
+- `AppleCamera:%s - channel: %u, bank: %u, ccprd %u: %u\n`
+- `Number Rgl INT_FAULT_LVT_LATCH`
+- `AppleCamera:%s - invalid channel %d\n`
+- `AppleCamera:%s - ISP Not Powered.\n`
+- `AppleCamera:%s - bypassing session create due to active channel\n`
+- `AppleCamera:%s - %4d: DVA=0x%8llx OffsetFromVmBase=0x%8llx size=%8lx\n`
+- `AppleCamera:%s - DirtyShutdown context: clocks=%u init=%u priorTimeout=%u(type=%u,cmd=0x%x) pwrState=%u pwrEvent=%u kclient=%u clients=%u\n`
+- `L2C/MMU/LSU/FED async error`
+- `/Replay/ProbeCap%d-1`
+- `AppleCamera:%s - Could not cast rtbuddy service provider, exiting\n`
+- `AppleCamera:%s - tb_endpoint is null\n`
+- `AppleCamera:%s - InitializeAOPMotionDataParams status - 0x%08x\n`
+- `- is currently in ISP possession`
+- `BackSuperWideCameraModuleSerialNumString`
+- `Yes`
+- `ISP_CopyChannelConfigCache_gated`
+- `AppleCamera:%s - Resuming firmware\n`
+- `function-campmu_reset`
+- `FreqArray1`
+- `       Channel %d: %d\n`
+- `ISP_GeneralFirmwareInitialization`
+- `AppleCameraLastDirtyShutdown`
+- `Number MB EN_FORCE_LOW`
+- `PearlCamStartOptionsString_SequenceID`
+- `SetLoggingMode`
+- `targetPhysicalAddressToHostVirtualAddress`
+- `function-cam_avdd_ldo2`
+- `RearCameraAuthICPubKey`
+- `FrontCameraRenoSNUM`
+- `LidarState`
+- `AppleCamera:%s - Failed to power off ISP for strobe client: 0x%x\n`
+- `AppleCamera:%s - Timed out waiting for Final EC clean up to complete\n\n`
+- `[%s:%d] [CIL] Finished exclaves_sensor_stop(FACEID) (ret:0x%x / status:%u)\n`
+- `IO_T2H`
+- `DPE_AISP_SIFFE_PIPE2_IspPipeSIfFE Low`
+- `PearlCamStartOptionsString_DeliverFDFrames`
+- `PearlCamMessageHandler_Abort`
+- `1122`
+- `AppleCamera:%s - can not set initial Peridot SAC parameter indices - 0x%X\n`
+- `PearlCamSendBuffersInfoString_IsCameraObstructed`
+- `\"TB_FATAL: \" \"invalid result returned from exclaveIspHardwareIrq\" @%s:%d`
+- `AppleCamera:%s - Error: could not get the Exclave Camera proxy handle [0x%08X]\n`
+- `AppleCamera:%s - Could not get an exclave mapper at index %d\n`
+- `sacActionChannel0_FreqArray2`
+- `    fStrobePowerFunction1 = %s\n`
+- `site.sCIspCmdChLpdpHsReceiverTuningSet.uint8_t`
+- `AppleCamera:%s - Overriding ISP BWR\n`
+- `%s: Wrap entitlement found \n`
+- `AppleCamera:: AFPP SHA256 : `
+- `AppleCamera:%s - Could not allocate at the requested dva, res = 0x%x\n`
+- `AppleAuth::authThreadGated - ERROR: NULL cmd parameter\n`
+- `121111121222121211111111111121222112`
+- `F`
+- `AppleCamera:%s - firmware passed us a buffer with an invalid tag: %p\n`
+- `AppleCamera:%s - Failed to write power gate register rPMGR_PWR_ISP_CPU_CORE1_CFG0, offset 0x%08X, error = 0x%08X\n`
+- `function-saca3b`
+- `IOReportLegend`
+- `PearlCamStartOptionsString_BioKitLoggingEnabled`
+- `AppleCamera:%s - No default configuration found for this platform\n`
+- `AppleCamera:%s - Sets of triplets=%u\n`
+- `AppleCamera:%s - Error: The output buffer metadata does not have the necessary privilege!\n\n`
+- `AppleCamera:%s - get cic failed\n`
+- `[%s:%d] [CIL] Finished exclaves_sensor_start(CAM) (ret:0x%x / status:%u)\n`
+- `vote`
+- `/Replay/BioCap%d-%d`
+- `1211111111112`
+- `ISP Command Timeout`
+- `OSValueObject<ISPOverrideNVMParams>`
+- `ISP_InitializeClassVariables`
+- `AppleCamera:%s - debug message cross the surface boundary! overflow = %llu\n`
+- `AppleCamera:%s - Firmware timeout: %d, type: %d, cmdID: %#x, res: %#x, isISPCPUNotInWFI: %d indicate dirty shutdown to DART driver\n`
+- `SavageWrapOutputKey`
+- `AppleCamera:%s - Selected parameter indices for bank set [%d], score*%u [%u]: PRI index %u\n`
+- `function-saca4c`
+- `AppleCamera:%s - ISP_CILRequestPerChannel got a wrong CH ID (%u/%u)\n`
+- `221`
+- `timestamp_abs`
+- `AppleCamera:%s - Could not map registers\n`
+- `AppleCamera:%s - Could not map registers: PwrGateExt0\n`
+- `AppleCamera:%s - (turn on) - Did NOT transition fPowerEvent to onPending. fPowerEvent=%d\n`
+- `AppleCamera:%s - Not Safe. (0x%016llX, %d)\n`
+- `Number SAC Action4 FreqArray2`
+- `ISP_CPU_CORE1_PS On Time (ms)`
+- `AppleCamera:%s - Configuration for Endpoint %d \n`
+- `21`
+- `  %4u:  channel:%u, type:%u, filesize:%u surfacesize:%llu surface-id:%#08X, dartMapBase=%#llX\n`
+- `AppleCamera:%s - Writing 0 to GPR6 so that FW boots in RTBuddy mode\n`
+- `CaptureDirtyShutdown`
+- `AppleAuth::authSendData - ERROR: GetSignature requires challenge data\n`
+- `ctrr-disabled`
+- `AppleCamera:%s - Error: command header exceeds message size limit!\n`
+- `DeviceID`
+- `PearlCamSendBuffersInfoString_Yogi_Temperature`
+- `    fPMPBandwidthControlFunction = %s\n`
+- `PearlCamSendBuffersInfoString_OcclusionDetectionScore`
+- `PearlCamSendBuffersInfoString_ERStatus`
+- `AppleCamera:%s - Platform [0x%X] is disallowed from registration!\n`
+- `AppleCamera:%s - pressureLevel=%d\n`
+- `AppleCamera:%s - released %d buffers that were never passed back to the user-space client (incuding %d that we returned to kernel client)\n`
+- `Number MB EN_PIN_STATE`
+- `Number MB ARM_MB_NOREAD`
+- `function-bw_req_interrupt`
+- `DPE_AISP_SIFFE_PIPE3_IspPipeSIfFE Low`
+- `IO`
+- `No RefSurface`
+- `non-persistent`
+- `AppleCamera:%s - Warning: No fSensorExtClkFunction2 found\n`
+- `AppleCamera:%s - couldn't create memory descriptor for ISP-ANE AFPP netoworks\n`
+- `    fAOPMotionDataParameterGet = %s\n`
+- `    fBootRailEnFunction = %s\n`
+- `site.ISPMultiCameraSessionStruct`
+- `getEndpointService`
+- `    PMPClockSpeedControlFunction - intGenBit = %u, intGenReg = %#llx (len:%d)\n`
+- `Sensor1 Power`
+- `checkForWork`
+- `bounded_ptr<T>::operator+=(n): Adding the specified number of bytes to the offset representing the current position would overflow.`
+- `ISP_SetBestChargePumpFrequencyIndex_gated`
+- `AppleCamera:%s - %s low memory mode - res:0x%08X\n`
+- `AppleCamera:%s - couldn't create memory descriptor\n`
+- `Number Rgl INT_FAULT_THROT_LATCH`
+- `BackCamera`
+- `AppleCamera:%s - Rejecting power-on request from %s - strobe control is active\n`
+- `sacActionChannel2_FreqArray1`
+- `Number Rgl INT_BBSAT_LATCH`
+- `Number BANE TRACE_RESISTANCE_OUT_OF_RANGE_LOW_FAULT`
+- `DeviceVersion`
+- `AppleCamera:%s - Could not read the data section end offset\n`
+- `AppleCamera:%s - Could not allocate strobe control completion lock\n`
+- `McacheDriverClient:%s - failed to send Mcache Quota request for size: 0x%x\n`
+- `\"AppleCamera::%s: Doorbell number exceeds maximum number of supported ISP doorbells\\n\" @%s:%d`
+- `AppleCamera:%s - fISPVersion: 0x%X, fISPRevision: 0x%x\n`
+
+**[__TEXT.__os_log]**
+
+- `AppleCamera:%s - Could not read the data section start offset\n`
+- `AppleCamera:%s - Could not find a matching service for AOP RTBuddy\n`
+- `AppleCamera:%s - Mcache target to host command(%d) is not supported\n`
+- `AppleCamera:%s - fCurrentPowerState=%d\n`
+- `AppleCamera:%s - ISP-ANE networks, no DART remapping for ISP side during poweron\n`
+- `AppleCamera:%s - Failed to write power gate register rPMGR_PWR_ISP_CPU_CFG0, offset 0x%08X, error = 0x%08X\n`
+- `AppleCamera:%s - CISP_CMD_SUSPEND was NOT sent as res=0x%x\n`
+- `ISPLoggerEventSource:%s - initializing with options\n`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - %s%sfreeing %s shared surface. surface-id=%#08X, size=%llu, dartMapBase=%#llX, fSystemSleepInProgress=%d, fIsDartActive=%d\n`
+- `AppleCamera:%s - Could not allocate memory for exclave client\n`
+- `AppleCamera:%s - Trying to re-register an already registered port\n`
+- `AppleCamera:%s - DSC data is invalid\n`
+- `ISPCPU Response Packet Received:\n`
+- `AppleCamera:%s - [ISPRTB] Draining endpoint: %ld\n`
+- `ApplePearlCam:%s - ISP_SendCommand Error: 0x%08X\n`
+- `AppleCamera:%s - Before registerFunctionParent: %p\n`
+- `AppleCamera:%s - IPC EPSM memory allocation with size: 0x%llx from FW\n`
+- `AppleCamera:%s - Default triplets loaded in clocking table\n`
+- `AppleCamera:%s - Attempting to dump ISPCPU firmware debug logs\n`
+- `AppleCamera:%s - iovmInsert failed for __TEXT: 0x%x\n`
+- `AppleCamera:%s - PPM throttling for kernelClientID=%s, subClient=%d: revised budget = %d\n`
+- `ApplePearlCamUserClient:%s - start\n`
+- `AppleCamera:%s - enabling sensor ref clock 2\n`
+- `AppleCamera:%s - Unable to read FHSi device, I2C status 0x%08x\n`
+- `AppleCamera:%s - WARNING: expected camera sensor not detected on channel %d\n`
+- `AppleCamera:%s - Attempting to dump ISPCPU firmware ISPPoolMan debug logs\n`
+- `AppleCamera:%s - Could not allocate at the requested dva, res = 0x%x\n`
+- `AppleCamera:%s - Logging Buffer Corruption detected - ringBuf=%#llx, head=%u, tail=%u, logMessageSize=%u, logBufferSize=%u - resetting\n`
+- `AppleCamera:%s - ISP firmware serial logging has been enabled\n`
+- `AppleCamera:%s - fAOPIsPowered: 0->1 (SPU did power up)\n`
+- `AppleCamera:%s -  %s (fPowerEvent=%d, fOutstandingPowerUpRequests=%d)\n`
+- `AppleCamera:%s - Error: The Output buffer metadata does not have the necessary privilege!\n\n`
+- `AppleCamera:%s - Could not map the [%s] IOBMD memory descriptor, size 0x%llX\n`
+- `AppleCamera:%s - MotionDataDisable: SKIPPED gate failed (shm=%d enableFn=%s aopPwr=%d)\n`
+- `AppleCamera:%s - GPR4: 0x%08X, GPR5: 0x%08X, GPR6: 0x%08X, GPR7: 0x%08X\n`
+- `ApplePearlCam:%s - Not releasing pools (fState=%d, fSystemSleepInProgress=%d)\n`
+- `AppleCamera:%s - Could not register DART exception handler (result=0x%08X)\n`
+- `AppleCamera:%s - Error: The client's metadata buffer does not have the necessary privilege!\n\n`
+- `AppleCamera:%s - no sensor found on chan %d (%s)\n`
+- `AppleCamera:%s - channel %d has %zu configs, driver supports %d\n`
+- `AppleCamera:%s - ISP_InitPeerCommunication - boot-args override of ISP<->ANE communication: %d\n`
+- `AppleCamera:%s - fISPVersion=%d\n`
+- `AppleCamera:%s - EXT_SW_GEN_SET ADDR: %016llX, BITMASK: %08X\n`
+- `AppleCamera:%s - firmware returned %d pool ids, which more than %d pool ids for channel %d\n`
+- `AppleCamera:%s - Bad configured firmware size: 0x%x, mapped region length = %llx\n`
+- `IspAneIPCEndPoints:%s - readRingBuffer:0x%llx, readRingLen: 0x%x, writeRingBuffer:0x%llx, writeRingLen: 0x%x\n`
+- `AppleCameraFrameReceiver:%s - Could not enable sensor: 0x%08X\n`
+- `AppleCamera:%s - ISP Core 0 power state: %spowered\n`
+- `AppleCamera:%s - Strobe control client not found in client list\n`
+- `AppleCamera:%s - Transitioning from Suspend to DeInit to free memory\n`
+- `ISPLoggerEventSource:%s - enabling\n`
+- `ISPCoredump:%s - kern_register_coredump_helper failed. ret: 0x%x\n`
+- `ApplePearlCam:%s - start\n`
+- `AppleCamera:%s - Invalid RPC buffer found\n`
+- `AppleCamera:%s - get cic failed\n`
+- `  %4u:  channel:%u, type:%u, filesize:%u surfacesize:%llu surface-id:%#08X, dartMapBase=%#llX\n`
+- `       mappedWriteNotifierRegisterAddr:  0x%08llx \n`
+- `AppleCamera:%s - bypassing firmware shutdown\n`
+- `AppleCamera:%s - [SharedClientSurface] - entry is NULL\n`
+- `AppleCamera:%s - timed out waiting for the EC to ack FW Teardown notification\n\n`
+- `    fSensorExtClkFunction1 = %s\n`
+- `AppleExclaveCameraProxy:%s - registered: %s\n`
+- `AppleCamera:%s - requesting ISP power down\n`
+- `    writeRingBufferLen:               0x%08x \n`
+- `AppleCamera:%s - Warning: No fSensorExtClkFunction2 found\n`
+- `AppleCamera:%s - MotionStateSet(true)\n`
+- `AppleCamera:%s - ret=%#x, surfaceID=%u, size=%llu, dartMapBase=%#llx\n`
+- `AppleCamera:%s - Timedout waiting for ISPCPU to write to IGP0RR register after CISP_CMD_SUSPEND.. Continue with power down\n`
+- `AppleCamera:%s -  failed to create ISP<->ANE %s endpoint service\n`
+- `AppleCamera:%s - fFWTraceID=%d\n`
+- `AppleCamera:%s - 0x%08X\n`
+- `AppleCamera:%s - [Exclaves] Exclave is already initialized\n`
+- `AppleCamera:%s - Unable to add PearlCamera object to client list\n`
+- `AppleCamera:%s - Failed to power on ISP for strobe control: 0x%x (fPowerEvent=%d, fIsPowered=%d)\n`
+- `AppleCamera:%s - MotionDataDisable: skip endpoint %d (not enabled)\n`
+- `AppleCamera:%s - (turn on) - change fPowerEvent from %d to PowerOnPending\n`
+- `AppleCamera:%s - fNonPersistentSharedMemoryIOBMDs count: %d\n`
+- `AppleCamera:%s - Handling FW timeout\n`
+- `ISPExclaveEventSource:%s - Could not get a message queue lock, exiting\n`
+- `AppleCamera:%s - No set-file loaded for camera channel %d\n`
+- `AppleCamera:%s - Couldn't create ISPExclaveEventSource\n`
+- `AppleCamera:%s - exclaveStart failed\n`
+- `AppleCameraFrameReceiverBufferPool:%s - Premapping pool (poolID:%u TotalNumBuffers:%u [free:%u inUse:%u] IsPreMapped:%u)\n`
+- `ApplePearlCam:%s - Pool %d allocation size: %d\n`
+- `ApplePearlCam:%s - Error: CISP_CMD_CH_SENSOR_PUBLIC_KEY failed - req=%#x res=%#x\n`
+- `AppleCameraChannel:%s - sensor %d does not support hardware enable\n`
+- `AppleCamera:%s - Setting up isp mailbox interrupt event source for exclaves failed\n`
+- `AppleCamera:%s - Error: The next frame's metadata buffer does not have the necessary privilege!\n\n`
+- `AppleCamera:%s - Sending CISP_CMD_SET_DSID_CLR_MULTI_BC_REG_BASE with %d AMCC Plane BC base addresses with regRange: %d\n`
+- `AppleCamera:%s - physical start: 0x%llx, heap size: 0x%x\n`
+- `McacheDriverClient:%s - mcacheEnableStream with id: %d failed\n`
+- `ApplePearlCam:%s - withValidData not set in pMetaDataSharedAttention (frameCount=%d)\n`
+- `AppleCamera:%s - Setting up isp interrupt event source for exclaves failed\n`
+- `Registered clients\n`
+- `AppleCamera:%s - fAOPIsPowered: 1->0 (SPU will power down)\n`
+- `AppleCamera:%s - Subset index %u, freq=%llu, pll=%u.%u, ccprd=%u\n`
+- `AppleCamera:%s - timed out waiting for the EC to power on\n\n`
+- `AppleCamera:%s - Failed to stop reserved channel (res=0x%08X)\n`
+- `AppleCamera:%s - Requested firmware heap size=%d\n`
+- `ApplePearlCam:%s - Pool %d new allocation size: %d\n`
+- `ApplePearlCam:%s - Error: Couldn't allocate dict. res=%#x\n`
+- `AppleCamera:%s - Selected parameter indices for bank set [%d], score*%u [%u]: PRI index %u\n`
+- `AppleCamera:%s - total persistent shared allocation size: %u\n`
+- `ApplePearlCam:%s - Unable to get replay descriptor\n`
+- `ApplePearlCam:%s - %d buffers received.\n`
+- `AppleCamera:%s - Timed out waiting for Initial EC clean up to complete\n\n`
+- `    fAOPMotionDataParameterGet = %s\n`
+- `AppleCamera:%s - ISP_init start IPC timer\n`
+- `ApplePearlCam:%s - Failed to allocate surface\n`
+- `ApplePearlCam:%s - Error: client requested too many bio-capture doubles: %d\n`
+- `AppleCamera:%s - Remap missing DART address for persistent shared memory\n`
+- `AppleCamera:%s - MotionDataEnable: shm=%d enableFn=%s aopPwr=%d alreadyEn=%d\n`
+- `AppleCamera:%s - Packed PLLFREQ [U11.16: %u = %u.%u]\n`
+- `AppleCamera:%s - Firmware timeout: %d, type: %d, cmdID: %#x, res: %#x, isISPCPUNotInWFI: %d indicate dirty shutdown to DART driver\n`
+- `AppleCameraFrameReceiver:%s - disable illuminators\n`
+- `AppleCamera:%s - Data file for ISP-ANE networks but ISP_ANE IPC is disabled\n`
+- `       readRingBufferAddr : (DART):      0x%08llx \n`
+- `    fSensorAVDDLDOControl0 = %s\n`
+- `ApplePearlCam:%s - PearlCamStateEntryProc_FACE_FOUND\n`
+- `AppleCameraFrameReceiver:%s - IR FaceDetect not supported via PearlCam! en=%#x\n`
+- `AppleCamera:%s - Error: could not create EC endpoint!\n`
+- `AppleCamera:%s - CISP_CMD_CH_ERROR_NOTIFICATION, errorSource = %d, errorCode = 0x%x\n`
+- `AppleCamera:%s - channel: %d, index: %d\n`
+- `AppleCamera:%s - result: 0x%08X\n`
+- `AppleCamera:%s - GIC data exceeds maximum allowed size\n`
+- `AppleCamera:%s - Not enough memory for exclaveData\n`
+- `AppleCamera:%s - XHatch data is invalid\n`
+- `AppleCamera:%s - CISP_CMD_START command completed: res=0x%08X\n`
+- `AppleCamera:%s - Unable to create reporters\n`
+- `IspAneIPCEndPoints:%s - Unable to retrieve endpoint configuration from ANE\n`
+- `ApplePearlCam:%s - Transition to sleep in progress, so no release now\n`
+- `AppleCamera:%s - Error: The client's buffer does not have the necessary privilege!\n\n`
+- `AppleCamera:%s - Error: The Input buffer does not have the necessary privilege!\n\n`
+- `     Address= 0x%08X\n`
+- `ApplePearlCam:%s - StopDeferredPowerDownTimer\n`
+- `AppleCamera:%s - Error: Overlapping end of copy offset memcpy\n`
+- `AppleCamera:%s - Exclaves not supported on this platform\n`
+- `AppleCamera:%s - Unable to allocate shared memory for fAOPEndpoints[i].txBuffer\n`
+- `AppleCamera:%s - chan: %d, %s raw mipi-freq-index:%d, freq: %llu, aggressor: %lld, width: %d\n`
+- `ApplePearlCam:%s - Couldn't add command gate to work loop.\n`
+- `AppleCamera:%s - clientID=%d, subClientID=%d; channel=%d; budgetReq=%d; budgetAlloc=%d; result=0x%08x\n`
+- `IspAneIPCEndPoints:%s - pIspAneNetworkSurface is NULL\n`
+- `AppleCamera:%s - Querying channel index failed, tberr: 0x%08X\n`
+- `AppleCamera:%s - Failed to get state on index: 0x%08X\n\n`
+- `AppleCamera:%s - firmware passed us a buffer with an invalid tag: %p\n`
+- `AppleCamera:%s - %s low memory mode - res:0x%08X\n`
+- `AppleCamera:%s - Statistics: NonPersistentMemory:%llu, PersistentMemory:%llu, DeletionPendingMemory:%llu, NonPersistentMemoryMax:%llu, PersistentMemoryMax:%llu\n`
+- `ApplePearlCam:%s - Error: Failed to create PearlSUR Unwrap output dict: %#x\n`
+- `AppleCamera:%s - IPC EPSM memory allocation done with size: 0x%llx, return back to FW\n`
+- `AppleCamera:%s - Disabling for Endpoint %d\n`
+- `AppleCamera:%s - called back with [%u] chosen frequency indices - sending processing to command gate\n`
+- `[%s:%d] [CIL] Finished exclaves_sensor_stop(CAM) (ret:0x%x / status:%u)\n`
+- `AppleCamera:%s - initializeEndpoint failed %d, 0x%08x\n`
+- `AppleCamera:%s - failed to allocate memory descriptor\n`
+- `ApplePearlCam:%s - Not allocating pools (fState=%d, fSystemSleepInProgress=%d)\n`
+- `ApplePearlCam:%s - patternType=%d, optionsDict=%s\n`
+- `AppleCamera:%s - Platform has no AOP support\n`
+- `    fSensorAVDDLDOControl3 = %s\n`
+- `McacheDriverClient:%s - not finding stream object with Id :%d\n`
+- `ApplePearlCam:%s - numDoubles=%d, optionsDict=%s\n`
+- `AppleCamera:%s - Error: camChannel(%u) >= fNumChannels(%u) || !pChannels\n`
+- `AppleCamera:%s - Wrong FW malloc command: ISP driver doens't support surface remap for now\n`
+- `AppleCamera:%s - Failed to power off ISP for strobe client: 0x%x\n`
+- `[%s:%d] [CIL] prevStatus:0x%08x / Updated fCILRequestStatus:0x%08x\n`
+- `AppleCamera:%s - heapMemoryDescriptor iovmInsert failed: 0x%x, dmaAddress: 0x%llx, phyAddr: 0x%llx, length: 0x%llx\n`
+- `AppleCamera:%s - Mcache update message exceeds message size!\n`
+- `AppleCamera:%s - set fPowerEvent from %d to kISPPowerEventType_PowerOffPending, fOutstandingPowerUpRequests = %d isPowered: %d\n`
+- `IspAneIPCEndPoints:%s - sending ISP-ANE networks surfaceID: 0x%x and update flag: %d\n`
+- `AppleCamera:%s - Could not find a matching dictionary for the AOP RTBuddy Service\n`
+- `AppleCamera:%s - CISP_CMD_CH_TAILSPIN_NOTIFICATION ch %u tailspinSource %d tailspinCode 0x%x\n`
+- `AppleCamera:%s - fExclaveStrobeControlClient is NULL\n`
+- `AppleCamera:%s - Error: The operations buffer does not have the necessary privilege!\n\n`
+- `AppleCamera:%s - Got second int from ISPCPU (channel description table ready)\n`
+- `ApplePearlCam:%s - ER feature=%d state=%d\n`
+- `AppleCameraFrameReceiver:%s - Could not ReFillFirmwareBufferPools: 0x%08X\n`
+- `AppleCamera:%s - messageClients(kISPTailspinAEReqLate, 0x%016llx)\n`
+- `AppleCamera:%s - Request for strobe mode ON->OFF transition\n`
+- `AppleCamera:%s - Error: The client's input buffer does not have the necessary privilege!\n\n`
+- `AppleCamera:%s - Error: Kernel Client with power assertion present\n`
+- `AppleCamera:%s - Creating IOMultiMemoryDescriptor failed!!\n`
+- `AppleCameraUserClient:%s - Client is mediaserverd\n`
+- `AppleCamera:%s - DSC data exceeds maximum allowed size\n`
+- `AppleCamera:%s - %s (didDeInit=%s)\n`
+- `McacheDriverClient:%s - success send the Mcache Quota request for stream id: %d got size: 0x%x\n`
+- `AppleCamera:%s - ISP already in the requested power state %d\n`
+- `AppleCamera:%s - InitializeAONPTD status - 0x%08x\n`
+- `AppleCamera:%s - Failed to write power gate register rPMGR_PWR_ISP_CPU_CORE0_CFG0, offset 0x%08X, error = 0x%08X\n`
+- `AppleCamera:%s - [Exclaves] No valid PDP Config found, res 0x%08x\n`
+- `IspAneIPCEndPoints:%s - ANEEP using ANE%d\n`
+- `ApplePearlCam:%s - BioLoggingEnabled. Adding %d buffers to poolID %d. Old count=%d. New count=%d\n`
+- `ApplePearlCam:%s - warning: timeout occurred while not in kPearlCamState_OFF state\n`
+- `AppleCamera:%s - can not set initial Peridot SAC parameter indices - 0x%X\n`
+- `AppleCamera:%s - [ISPRTB] Error! Failed to get ISP endpoint: %d service\n`
+- `ApplePearlCam:%s - failed! ret=%#x\n`
+- `segments=%d allocatedSegmentsCount=%d freeSegmentsCount=%d allocatedBytesCount=%d freeBytesCount=%d minBytesCount=%d maxBytesCount=%d\n\n`
+- `AppleCamera:%s - Could not power off Exclave core, proceeding to disable mappers, tberr = 0x%x\n`
+- `AppleCamera:%s - Reading sensor NVM failed, tberr: 0x%08X\n`
+- `AppleCamera:%s - Failed to write PS register offset 0x%08X with value:0x%08X, current value:0x%08X [FID state:0x%08X]\n`
+- `ApplePearlCam:%s - retryMode=%d\n`
+- `PearlCam Pool: poolID=%d, inUseCount=%d, freeCount=%d, totalCount=%d, fNumBuffersSentToFirmware=%d, totalMemoryAllocated: %d\n\n`
+- `AppleCamera:%s - ISP Memory free request\n`
+- `AppleCamera:%s - channel: %d, currentFreqArrayIndex: %d, index: %d\n`
+- `AppleCamera:%s - ispCmdSend kISPUserClientCommand_GeneralProcessBuffers status 0x%x cmdOutSize %u\n`
+- `AppleCamera:%s - mapFwCTRRRegion segment-ranges is not in the device tree\n`
+- `AppleCameraFrameReceiver:%s - failed to call ISP_CILManager error: 0x%08X (true/false)\n`
+- `AppleCamera:%s - WARNING: fISPMainWorkLoopMessageQueue is NULL!\n`
+- `AppleCamera:%s - h2tBuf: pool=%d, tag=%#llx, addr0=%#llx, len0=%d, addr1=%#llx, len1=%d, DART=%#llx\n`
+- `AppleCamera:%s - total DeletionPending allocation size: %u\n`
+- `    fSensorDVDDGPIOControl = %s\n`
+- `AppleCamera:%s - ffw_calloc failed: size mismatch (%zu != %zu)\n`
+- `ApplePearlCam:%s - PearlCamStateEntryProc_IDLE\n`
+- `ApplePearlCam:%s - notificationType=%d\n`
+- `AppleCamera:%s - Primary selection failed with kIOReturnNotFound\n`
+- `AppleCamera:%s - FW Channel %d is %s clock params to fw\n`
+- `AppleCamera:%s - Peridot SAC parameters sent to ISPFW with return code 0x%X\n`
+- `AppleCamera:%s - channel: %d (process: %s)\n`
+- `AppleCamera:%s - returning fWorkProcessorInProgressRequests item that was never completed\n`
+- `ISPCPU (%s:%d:%d:%d): %s`
+- `ApplePearlCam:%s - using packed raw10\n`
+- `AppleCamera:%s - Couldn't create command gate for exclaves\n`
+- `AppleCamera:%s - MotionDataEnable: skip endpoint %d (not enabled)\n`
+- `AppleCamera:%s - willChange: dev=%s state=%lu isSPU=%d isRTB=%d\n`
+- `AppleCamera:%s - (turn on) - fPowerEvent is PowerOffPending. Did NOT set to None. PowerUps:%llu\n`
+- `%02X  \n`
+- `AppleCamera:%s - Failed to power off ISP, res = 0x%08X\n`
+- `     Type= %s\n`
+- `ApplePearlCam:%s - unable to release daemon (res=0x%08X)\n`
+- `start() runs early FW for CTRR\n`
+- `AppleCamera:%s - [Exclaves] ISP_InitializeExclave took %lld usec\n\n`
+- `AppleCamera:%s -  %s (fPowerEvent=%d, fOutstandingPowerUpRequests=%d, fSystemSleepInProgress=%d)\n`
+- `AppleCamera:%s - h2tBuf: pool=%d, tag=%#llx, addr=%#llx, len=%d, DART=%#llx\n`
+- `AppleCamera:%s - Coredump IOPHeapVirtualAddress: 0x%llx, APHeapVirtualAddress: 0x%llx, HeapLength: 0x%llx\n`
+- `ApplePearlCam:%s - Unknown Message\n`
+- `ApplePearlCam:%s - buffers received, but no meta-data buffer found\n`
+- `ApplePearlCam:%s - timerType=%d, state=%d\n`
+- `AppleH16CamIn::H16ISPSharedMemorySurfaces:%s - remap allowed surface\n`
+- `AppleCamera:%s - NVM LSC data is larger than allocated space\n`
+- `ApplePearlCam Statistics (%s): T=%d, N=%d, F=%d, Se=%d, D=%d, SLP=%d, DLP=%d, PS=%d, PD=%d, PSLP=%d, PDLP=%d, IV=%d\n\n`
+- `AppleCamera:%s - Retrieving endpoint configuration returned 0x%08x\n`
+- `    fSensorAVDDGPIOControl = %s\n`
+- `McacheDriverClient:%s - failed to remove ISP data streams(ID: %d) from Mcache driver\n`
+- `AppleCameraFrameReceiverBufferPool:%s - Releasing Premapped pool (poolID:%u TotalNumBuffers:%u [free:%u inUse:%u] IsPreMapped:%u)\n`
+- `AppleCamera:%s - Not enough memory for mainWorkLoopData\n`
+- `AppleCamera:%s - I2C slave error, smsta=0x%08x\n`
+- `AppleCamera:%s - couldn't create memory descriptor\n`
+- `AppleCamera:%s - wired client surface-id:0x%08X, w=%-4u, h=%-4u, fmt=%-3u, poolID=%-4u, dartMapBase=%#llX\n`
+- `AppleCamera::client_log_buffer_t:%s - Unable to lock surface - %#x\n\n`
+- `AppleCamera:%s - [ISPRTB] ISP not ready %d, %d\n`
+- `\nDeviceMemory SEGMENT LIST INCONSISTENCY: segment-start=%d count=%d next-segment-start=%d\n\n`
+- `AppleExclaveCameraProxy:%s - Platform ID: 0x%X\n`
+- `AppleCamera:%s - Could not cast the provider to RTBuddy Service, exiting\n`
+- `ApplePearlCam:%s - fFaceDetectTimeoutInMilliseconds=%d\n`
+- `AppleCameraFrameReceiver:%s - Could not configure channel: 0x%08X\n`
+- `AppleCamera:%s - Registering exclave isp upcall for strobe control notify failed\n`
+- `AppleCamera:%s - System sleep is in progress. Returning from ISP_PowerOnCamera_gated with res=0x%x\n`
+- `AppleCamera:%s - Packed PRIs B%u, CCPRD %u=[%u]\n`
+- `AppleCamera:%s -  Illegal Afpp file\n`
+- `    fAOPMotionStateSet = %s\n`
+- `AppleCameraUserClient:%s - Client is cameraispdarwind\n`
+- `ApplePearlCam:%s - Fake sending FaceDetectStatus of %d to client, then continue auto-flow\n`
+- `    PMPBandwidthControlFunction - intGenBit = %u, intGenReg = %#llx (len:%d)\n`
+- `AppleCamera:%s - Error: Unexpected IORVBAR: 0x%llx\n\n`
+- `AppleCamera:%s - CISP_CMD_MCACHE_UPDATE for streamID(%d) is assigned size: 0x%x\n`
+- `AppleCamera:%s - (camChan=%d, type=%d, validityStatus=0x%08X, isEarlyBootDataFile=%s)\n`
+- `fNonPersistentSharedMemoryIOBMDTotalSize = %llu (%u allocations)\n`
+- `AppleCamera:%s - No second int from ISPCPU\n`
+- `AppleCamera:%s - No magic nubmer 1 from ISPCPU\n`
+- `AppleCamera:%s - retries=%d ASCWRAP_IDLE_STATUS = 0x%x\n`
+- `IspAneIPCEndPoints:%s - Unable to allocate shared memory for fAEndpoints[i].rxBuffer\n`
+- `     SID= 0x%08X\n`
+- `AppleCamera:%s - didChange: dev=%s state=%lu isSPU=%d isRTB=%d\n`
+- `AppleCamera:%s - unregistering\n`
+- `AppleCamera:%s - channel: %u, bank: %u, ccprd %u: %u\n`
+- `AppleCamera:%s - couldn't prepare consolidated memory descriptor: 0x%x\n`
+- `AppleCamera:%s - map() failed\n`
+- `AppleCamera:%s - firmware teardown notification returned error=0x%llx\n`
+- `AppleCamera:%s - Couldn't add timer event source to work loop.\n`
+- `AppleCamera:%s - Could not create IOSurface for ISPCPU firmware buffer\n`
+- `AppleCamera:%s - insufficient memory to initialize FFW infrastructure\n`
+- `AppleCamera:%s - [ISPRTB] ISP not ready %d\n`
+- `ApplePearlCam:%s - PearlCamMessageHandler_PowerOff\n`
+- `AppleCamera:%s - Auth: ISP power on failed 0x%x (channel %u)\n`
+- `AppleCamera:%s - Firmware Unit Test Mode!\n`
+- `ApplePearlCam:%s - Couldn't add frame-receive timeout timer event source to work loop.\n`
+- `AppleCamera:%s - Error: clientContext == NULL\n`
+- `AppleCamera:%s - RTKit magic key not written, current value = 0x%x, expected = 0x%x\n\n`
+- `AppleCamera:%s - EC did not complete force reset\n`
+- `AppleCamera:%s - Coredump Init Success\n`
+- `AppleCamera:%s - ctrr-disabled is set\n`
+- `AppleCamera:%s - t2hBuf: pool=%d, tag=%#llx - isPreMappedClientSurface: %d\n`
+- `AppleCamera:%s - Error: Unable to allocate IPC queue memory\n`
+- `AppleCamera:%s - Coredump IOPFwVirtualAddress: 0x%llx, APFwVirtualAddress: 0x%llx, FirmwareLength: 0x%llx\n`
+- `IspAneIPCEndPoints:%s - OSSymbol alloc failed for '%s'\n`
+- `McacheDriverClient:%s - Found MCstream Object with stream id: 0x%x with index: %d\n`
+- `AppleCamera:%s - [Exclave] SendCmdPrepareStrobeAck (post power-on) returned 0x%x, result = 0x%x\n`
+- `AppleCamera:%s - Could not start IOService, exiting\n`
+- `AppleCamera:%s - Could not get the provider's name, exiting\n`
+- `AppleCamera:%s - Unable to stop empty channel mask\n`
+- `AppleCamera:%s - Error: LSC get failed - res=0x%08X\n`
+- `AppleCameraUserClient:%s - Rejecting device open from cameracaptured - strobe control is active\n`
+- `ApplePearlCam:%s - pending PearlCamPowerOnMessage at queue index:%d\n`
+- `ApplePearlCam:%s - Unable to get frame descriptor\n`
+- `AppleCamera:%s - focus driver init failed\n`
+- `AppleCamera:%s - CISP_CMD_MCACHE_RELEASE of streamID(%d)\n`
+- `AppleCamera:%s - couldn't create OSData\n`
+- `fPersistentSharedMemoryTotalSize = %llu (%u allocations)\n`
+- `AppleCamera:%s - Error: The output buffer surface does not have the necessary privilege!\n\n`
+- `IspAneIPCEndPoints:%s - send CISP_CMD_IPC_ENDPOINT_SET2 to FW! readRingBuffer:0x%llx, readRingLen: 0x%x, writeRingBuffer:0x%llx, writeRingLen: 0x%x\n`
+- `ApplePearlCam:%s - Cound not create the AppleCameraFrameReceiver\n`
+- `    Read Buffer (TX)\n`
+- `ApplePearlCam:%s - fState is not a valid state enum entry\n`
+- `AppleCamera:%s - Unable to retrieve endpoint configuration from AOP\n`
+- `AppleCamera:%s - disable timer\n`
+- `AppleCameraFrameReceiver:%s - StopFID Error: 0x%08X\n`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - failed to allocate shared memory surface\n`
+- `AppleCamera:%s - bypassing panic, disabled by boot-args\n`
+- `AppleCamera:%s - Couldn't create state timeout timer event source.\n`
+- `AppleCamera:%s - Configuration for Endpoint %d \n`
+- `ApplePearlCam:%s - probe\n`
+- `AppleCamera:%s - number of supported ChargePump frequencies for chan %d: %d\n`
+- `AppleCamera:%s - %s psuedo-standby, result=0x%08X\n`
+- `ApplePearlCamUserClient:%s - clientClose\n`
+- `ApplePearlCam:%s - PearlCamStateEntryProc_BIO_DONE\n`
+- `AppleCamera:%s - - Could not allocate a message queue\n`
+- `AppleCamera:%s - XHatch data exceeds maximum allowed size\n`
+- `AppleCamera:%s - CISP_CMD_SET_DSID_CLR_MULTI_BC_REG_BASE command error: res=0x%08X\n`
+- `AppleCamera:%s - [Exclaves] fExclaveEnabledPlatform = %s / fExclaveInitializationStatus = %u / fKextEKSupportEnabled = %s\n`
+- `AppleCamera:%s - ANE0 used for IPC communication\n`
+- `AppleCamera:%s - Couldn't add isp interrupt event source to work loop\n`
+- `AppleCamera:%s - addr=0x%llX, offset=0x%X, size=%d, memMap=0x%llX, memMapLen=0x%llX\n`
+- `    fStrobePowerFunction0 = %s\n`
+- `    fFocusSubDevFunction = %s\n`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - freed deletionPending shared surface. surface-id=%#08X, size=%llu, dartMapBase=%#llX\n`
+- `AppleCamera:%s - Couldn't add command gate to work loop.\n`
+- `AppleCamera:%s - messageClients(kISPTailspinExclaveEmptyQueue, 0x%016llx)\n`
+- `AppleCamera:%s - debug message cross the surface boundary! overflow = %llu\n`
+- `AppleCamera:%s - Found client with existing session, Client=%s NumGroups=%d\n`
+- `AppleCamera:%s - GIC data is invalid\n`
+- `AppleCamera:%s - ANE power state is not ready, shut down ISP\n`
+- `AppleCamera:%s - ISP-ANE health check timer is %d secs\n`
+- `AppleCamera:%s - ISP version from platform struct %d does not match rISP_ISPVERSION register value %d\n`
+- `AppleCamera:%s - CISP_CMD_CIL_BREAKER_ACTIVATED skipped - strobe control active\n`
+- `AppleCamera:%s - AOP RTBuddyService state changed  to %lu\n`
+- `AppleCamera:%s - invalid channel %d\n`
+- `AppleCamera:%s - ISP Not Powered.\n`
+- `AppleCamera:%s - Calling ECSendCommandOff\n`
+- `AppleCamera:%s - [ISPRTB] Error! Failed to retrieve endpoint: %d from service\n`
+- `AppleCamera:%s - Didn't initiate HW power down. powerRefCnt=%d, fPowerEvent=%d, fOutstandingPowerUpRequests = %d, isPowered: %d\n`
+- `AppleCamera:%s - %s\n`
+- `ApplePearlCam:%s - Couldn't create PearlCamEventSource.\n`
+- `AppleCamera:%s - PTD data table returned NULL\n`
+- `ApplePearlCam:%s - camera failed to power on after\n`
+- `ApplePearlCam:%s - PearlCamStateEntryProc_FACE_NOT_FOUND\n`
+- `DeviceMemoryManager:%s - Begin\n`
+- `AppleCameraFrameReceiver:%s - StartFID error: 0x%08X\n`
+- `AppleCamera:%s - Could not map registers\n`
+- `AppleCamera:%s - Could not locate the exclave assigned property\n\n`
+- `AppleCamera:%s - unknown tailspinSource %d)\n`
+- `AppleCamera:%s - Resuming firmware\n`
+- `AppleCamera:%s - Starting firmware\n`
+- `AppleCamera:%s - Overriding ISP BWR\n`
+- `ApplePearlCam:%s - DeferredPowerDown early due to system sleep\n`
+- `ApplePearlCam:%s - Error: Failed to ECDH Boot sensor. res=%#x size=%u\n`
+- `    Write Buffer (RX)\n`
+- `AppleCamera:%s - sent debug command to isp. opcode: 0x%04X\n`
+- `ApplePearlCamUserClient:%s - New UserClient for process: %s (pid %d)\n`
+- `ApplePearlCam:%s - Provider is not AppleCamera\n`
+- `ApplePearlCam:%s - Error: FDR not validated\n`
+- `ApplePearlCam:%s - DeferredPowerDown pending, but ISP is already off.\n`
+- `AppleCamera:%s - Could not get the matching provider, exiting\n`
+- `AOP Endpoint: ID %d\n`
+- `AppleCamera:%s - Failed to write power gate register offset 0x%08X with value:0x%08X, current value:0x%08X [FID state:0x%08X]\n`
+- `AppleCamera:%s - Could not cast rtbuddy service provider, exiting\n`
+- `AppleCamera:%s - Error: Firmware Back Channel RPC Request has too many commands: %d\n`
+- `AppleCamera:%s - Address translation memory map params are invalid!\n`
+- `AppleCamera:%s - Sets of triplets=%u\n`
+- `AppleCamera:%s - Cannot allocate IOBMD\n`
+- `McacheDriverClient:%s - failed to send Mcache Quota request for size: 0x%x\n`
+- `AppleCameraFrameReceiver:%s - After ISP_SendBuffers error, returned %d buffers back to pool %d\n`
+- `AppleCamera:%s - other type of message\n`
+- `AppleCamera:%s - Invalid Ref Clock Value for Channel\n`
+- `AppleCamera:%s - register force idle failed (cpuCatControl = 0x%x, vsocCatControl = 0x%x) - No Ack (either wait for Ack or Nack) us\n`
+- `AppleCamera:%s - I2C bus jam!  smsta=0x%08x\n`
+- `AppleCamera:%s - couldn't allocate kernel command buffer\n`
+- `AppleCamera:%s - init IDL call failed\n`
+- `AppleCamera:%s - Could not locate the isp-exclave-proxy node in the ioreg\n\n`
+- `ISP Firmware Buffer Log Status: CLOGGER_LOGBUFFER_STATUS_FULL (counter:%d, nLogsInFlight:%d)\n`
+- `       Group %d: Channel mask %d, Sync %d\n`
+- `AppleCamera:%s - Booting firmware in interrupt-based logging mode\n`
+- `AppleCamera:%s - allocating surface for FW\n`
+- `AppleCamera:%s - Invalid buffer return: 0x%llX\n`
+- `AppleCamera:%s - WARNING: fISPMainWorkLoopEvent is NULL!\n`
+- `AppleCamera:%s - memory allocation fail on pChannels[%d].fExclaveConfigs, allocation size=%d\n`
+- `    Latency:\n`
+- `AppleCamera:%s - Could not retrieve addr for the S2R flag\n`
+- `AppleCamera:%s - could not allocate virtual space - forMapper=%p, allocatedPages=%u, requestedPages=%u, offset=%u, alignment=%u, tailPadding=%u, persistent=%d\n`
+- `AppleCamera:%s - Error: RPC command size exceeds message size limit!\n`
+- `AppleCamera:%s - ISPFW print buffer is invalid after address translation!\n`
+- `ApplePearlCam:%s - %d messages in queue\n`
+- `ApplePearlCam:%s - ER - distance:%u status:%u frameCount=%u\n`
+- `       readRingBufferLen  :              0x%08x \n`
+- `AppleCamera:%s - Calling ISP_PowerOnExclaveCore\n`
+- `AppleCamera:%s - LogDARTErrorInfo - End Logging\n`
+- `AppleCamera:%s - Error: could not get the Exclave Camera proxy handle [0x%08X]\n`
+- `Run deferred early FW for bin firmware\n`
+- `[%s:%d] [CIL] Finished exclaves_sensor_stop(FACEID) (ret:0x%x / status:%u)\n`
+- `AppleCamera:%s - fAOPIsPowered: 1->0 (SPU unavailable)\n`
+- `AppleCamera:%s - index=%d, fAdjustMIPIClockFrequencyInSACCallback=%s\n`
+- `AppleCamera:%s - Sent Exclave on: TBErr=%U\n`
+- `ISPCoredump:%s - synthesized PC from UTTDBG_PCSAMPLE: 0x%llx\n`
+- `AppleCamera:%s - Could not allocate main workloop message queue lock\n`
+- `AppleCamera:%s - Unknown notification from FW (0x%08X)\n`
+- `AppleCamera:%s - Found channel %d in the channel table. Type=%d (%s), Source=%d, size: %d entry desc ch = %llx\n`
+- `AppleCamera:%s - Changing state from %d to %d\n`
+- `AppleCamera:%s - Warning: No fSensorExtClkFunction0 found\n`
+- `AppleCamera:%s - Could not match with a known ISP Revision.\n`
+- `AppleCamera:%s - Could not setup firmware logging\n`
+- `AppleCamera:%s - CISP_CMD_MULTICAM_SESSION_DESTROY error: 0x%08X\n`
+- `AppleCamera:%s - exclaves_sensor_stop(FACEID) returned error (ret:0x%x / status:%u)\n`
+- `IspAneIPCEndPoints:%s - Unable to allocate shared memory for fANEEndpoints[i].txBuffer\n`
+- `AppleCamera:%s - Could not get a mapper\n`
+- `ApplePearlCam:%s - Couldn't create frame-receive timeout timer event source.\n`
+- `AppleCamera:%s - ISP_CacheChannelConfigs command completed: res=0x%08X\n`
+- `ApplePearlCam:%s - Allocating pools\n`
+- `ApplePearlCam:%s - Couldn't create state timeout timer event source.\n`
+- `[%s:%d] [CIL] Call ISP_CILManager (true/true)\n\n`
+- `AppleCamera:%s - Error: firmwareDataSectionEndOffset is less than firmwareDataSectionStartOffset\n`
+- `AppleCamera:%s - EC NVM Read - mask: 0x%06X, ret: 0x%08X\n`
+- `AppleCamera:%s - (turn on) - Did NOT transition fPowerEvent to onPending. fPowerEvent=%d\n`
+- `AppleCamera:%s - Peridot selection algorithm returned %u %s\n`
+- `AppleCamera:%s - Enabling for Endpoint %d\n`
+- `AppleCamera:%s - found sensor on chan %d: 0x%04X\n`
+- `Data-Files:\n`
+- `Statistics\n`
+- `ApplePearlCam:%s - unable to power on camera (res=0x%08X)\n`
+- `ApplePearlCam:%s - Transition to sleep in progress, so no allocation now\n`
+- `    fSensorExtClkFunction2 = %s\n`
+- `AppleCamera:%s - disable self IPC EP\n`
+- `AppleCamera:%s - SPU service will power down\n`
+- `[%s:%d] [CIL] Call ISP_CILManager (%u/false/false)\n`
+- `%s. res = 0x%08x\n`
+- `     size:                0x%08x \n`
+- `AppleCamera:%s - ISP-ANE EP is not created even after start() finish ?\n`
+- `AppleCameraUserClient:%s - client died\n`
+- `FWCOMP= %lld usec\n`
+- `AppleCamera:%s - WARN aopPwr flag=%d but SPU getPowerState()=%lu — divergence\n`
+- `ApplePearlCam:%s - Error: Camera sensor not detected on channel %d\n`
+- `AppleCamera:%s - disabling sensor ref clock 0\n`
+- `AppleCamera:%s - admission check: clientIndex=%d, subClientID=%d; budgetReq=%d; budgetAlloc=%d; result=0x%08x\n`
+- `AppleCamera:%s - Error: The client's output buffer does not have the necessary privilege!\n\n`
+- `[%s:%d] [CIL] Finished exclaves_sensor_start(FACEID) (ret:0x%x / status:%u)\n`
+- `AppleCamera:%s - CISP_CMD_CH_PROPERTY_WRITE failed!. Property = 0x5A0\n`
+- `AppleCamera:%s - CISP_CMD_SUSPEND command completed: res=0x%08X\n`
+- `AppleCamera:%s - fPowerEvent=%d, fw timeout=%d. Return busy (firmware timeout)\n`
+- `AppleCamera:%s - fPowerEvent=%d (PowerOffPending), waiting for power-off to complete before power-on\n`
+- `AppleCamera:%s - Firmware confirmed safe.\n`
+- `AppleCamera:%s - waitISPCPUReadyCount = %d\n`
+- `AppleCamera:%s - messageClients(kISPChannelTransferred, 0x%08llx)\n`
+- `AppleCamera:%s - could not allocate buffer for NVM reading on channel %d\n`
+- `IspAneIPCEndPoints:%s - AppleARMFunction match for '%s' timed out (%llu ns)\n`
+- `McacheDriverClient:%s - remove ISP data streams from Mcache driver with streamId: %d\n`
+- `     AXI_ID[%d]= 0x%08X\n`
+- `AppleCamera:%s - Could not allocate strobe control completion lock\n`
+- `AppleCamera:%s - bad message address: %llx\n`
+- `AppleCamera:%s - channel %d failed to release (current owner: %s)\n`
+- `      CTRR Firmware Image:      size=%-8u\n`
+- `McacheDriverClient:%s - No MCstream Object with stream id: 0x%x\n`
+- `AppleCamera:%s - firmware teardown notification idl call failed=%d\n`
+- `AppleCamera:%s - Couldn't add isp strobe control upcall notify event source to exclave work loop\n`
+- `AppleCamera:%s - fISPVersion: 0x%X, fISPRevision: 0x%x\n`
+- `AppleCamera:%s - DVA = 0x%llx, pVisibleMemory = %p\n`
+- `         isPowered: %s\n`
+- `AppleCamera:%s - Releasing FW heap\n`
+- `AppleCamera:%s - LogDARTErrorInfo - Begin Logging\n`
+- `ApplePearlCam:%s - Success\n`
+- `AppleCamera:%s - Warning: could not map GPIOCFG register map!\n`
+- `AppleCamera:%s - [SharedClientSurface] - SHARED_CLIENT_SURFACE_SIZE:%u\n`
+- `  %4d: surface-id=0x%08X, size=%llu, dartMapBase=0x%008X, usage='%c%c%c%c', cacheMode=0x%08X\n`
+- `  %4u:  channel:%u, type:%u, filesize:%u surfacesize:%llu surface-id:%#08X, dartMapBase=%#llX (EarlyBoot)\n`
+- `IspAneIPCEndPoints:%s - pIspAneNetworkSurface->surface is zero\n`
+- `AppleCamera:%s - [ISPRTB] endpoint: %ld draining %d msg\n`
+- `AppleCamera:%s - pressureLevel=%d\n`
+- `AppleCamera:%s - Successfully vote on index: 0x%08X with value: 0x%08X for active state: 0x%08X\n\n`
+- `AppleCamera:%s - CISP_CMD_MCACHE_RELEASE(%d) is not supported\n`
+- `AppleCamera:%s - Set fPowerEvent from %d to PowerOffPending because fOutstandingPowerUpRequests is zero\n`
+- `AppleCamera:%s - peer failed to enable EP, cnt: %d\n`
+- `AppleCamera:%s - done (%lld usec)\n`
+- `ISPMainWorkLoopEventSource:%s - Could not get the main workloop message queue, exiting\n`
+- `AppleCamera:%s - EC failed to read sensor NVM\n`
+- `AppleCamera:%s - Error: The Input2 buffer does not have the necessary privilege!\n\n`
+- `Multi-camera configuration\n`
+- `[%s:%d] [CIL] CH:%u / faceId:%d / enabled:%d / prevStatus0x%08x\n`
+- `AppleCamera:%s - total non-persistent IOBMD allocation size: %u\n`
+- `AppleCamera:%s - Error: Too many IPC channels\n`
+- `ApplePearlCam:%s - kPearlCamStartOptionsString_SkipFaceDetect\n`
+- `    fSensorResetFunction0 = %s\n`
+- `IspAneIPCEndPoints:%s - ANE is in timed out or diable state(state: %d), call ISP firmware timeout\n`
+- `ApplePearlCam:%s - Could not create camera ApplePearlCam work-loop\n`
+- `AppleCamera:%s - CISP_CMD_CH_POWER_CONTROL, pChPowerControl->vnom = %d\n`
+- `AppleCamera:%s - CISP_CMD_PRINT_ENABLE command completed: res=0x%08X\n`
+- `AppleCamera:%s - ISP-ANE IPC is not active.\n`
+- `AppleCamera:%s - couldn't send datafiles to firmware\n`
+- `AppleCamera:%s - InitializeAOPMotionDataParams status - 0x%08x\n`
+- `AppleCamera:%s - channel: %d, name: %s, state: %d, priority: %d\n`
+- `AppleCamera:%s - Memory allocation fail on pChannels[%d] configs, allocation size=%d\n`
+- `AppleCamera:%s - ISPCPU Ready. About to enable ISP interrupts\n`
+- `AppleCamera:%s - Releasing ISP BWR override on power-up\n`
+- `AppleCamera:%s - Error: mcache request message exceeds message size limit!\n`
+- `AppleCamera:%s - Error: Group count (%d) exceeded max (%d)\n`
+- `Total Persistent + NonPersistent = %llu\n\n`
+- `AppleCamera:%s - This platform doesn't support Exclave (fPlatformType:%x)\n`
+- `ApplePearlCam:%s - Sending %d notification to client\n`
+- `ApplePearlCam:%s - Could not configure multicamera session: 0x%08X\n`
+- `AppleCameraFrameReceiver:%s - DisableFaceDetect Error: 0x%08X\n`
+- `AppleCamera:%s - Couldn't create client logging buffer lock\n`
+- `AppleCamera:%s - Error matching %s with the devicetree, exiting\n`
+- `AppleCamera:%s - Logger command buffer exceeds the message size limit!\n`
+- `AppleCamera:%s - enabling sensor ref clock 1\n`
+- `AppleCamera:%s - Creating multicam session: Client=%s NumGroups=%d ExclaveMode=%d SecureFID=%d MicRecording=%d\n`
+- `AppleCamera:%s - AppleARMFunctionSlowAdaptiveClockingAggressor for chan %d: %s\n`
+- `AppleCamera:%s - Detected %d configurations for channel %d\n`
+- `AppleCamera:%s - couldn't create memory map\n`
+- `AppleCamera:%s - kIOMessageSystemWillPowerOn fSystemSleepInProgress=%d\n`
+- `AppleCamera:%s - Changed ISP power state to %d\n`
+- `AppleCamera:%s - Setting up exclave isp upcall for strobe control notify event source failed\n`
+- `AppleCamera:%s - camChannel=%d, clockRefCount=%d\n`
+- `AppleCamera:%s - channel: %d, priority: %d (process: %s)\n`
+- `AppleCamera:%s - ANE powered up successfully - waited = %llu mS retries=%d\n`
+- `AppleCamera:%s - Client %s not found in client lookup, res = 0x%08X\n`
+- `IspAneIPCEndPoints:%s - fPeerIPCCtrlCallFunction is NULL\n`
+- `AppleCamera:%s - IOSurfaceRoot not available or of the wrong class\n`
+- `AppleCamera:%s - Setting CTRR to false, expected?\n`
+- `AppleCamera:%s - Ramdisk has no AOP support\n`
+- `AppleCamera:%s - CIC data exceeds maximum allowed size\n`
+- `AppleCameraFrameReceiver:%s - ER feature=%d state=%d\n`
+- `McacheDriverClient:%s - fMcacheHandle is NULL\n`
+- `ApplePearlCam:%s - pending PearlCamPowerOffMessage at queue index:%d\n`
+- `ApplePearlCam:%s - ISP_PPMAdmissionCheck returned no available power (fPPMAllocatedBudget=0x%08X)\n`
+- `PearlCamFrameReceived - isFaceDetected=%d, isBracketedCaptureFrame=%d, isUserEngaged=%d, hasAttention=%d, hasGlasses=%d, hasOcclusion=%d, hasEyeOcclusion=%d, fIDfsmFDStatus=%d , sensorTemp=%d, isFIDValidFrame=%d, isERDataValid=%d, isMDDataValid=%d, isAttnDataValid=%d\n`
+- `AppleCamera:%s - Could not allocate an IOBMD for [%s] of size 0x%llX\n`
+- `AppleCamera:%s - ISP_LoadOverrideNVM_gated returned 0x%08X\n`
+- `Total Number of WorkProcessorMappedSurfaces: %u\n`
+- `AppleCamera:%s - Sent Exclave off: TBErr=%U\n`
+- `ANEISP:%s - %s::Peer matching failed\n`
+- `AppleCamera:%s - Error: T287 is running.\n`
+- `AppleCameraUserClient:%s - Freeing UserClient for process: %s (pid %d)\n`
+- `AppleCamera:%s - Invalid RPC request ID(s) - Aborting\n`
+- `AppleCamera:%s - couldn't map memory descriptor\n`
+- `AppleCamera:%s - Removing kernel data file reference - chan: %d, type: 0x%08X\n`
+- `fDeletionPendingSharedMemoryTotalSize = %llu (%u allocations)\n`
+- `ApplePearlCamUserClient:%s - clientDied\n`
+- `ApplePearlCam:%s - Frame buffer pools are not present\n`
+- `AppleCamera:%s - called with retain count 0 for poolID=%d. Returning error 0x%x to caller\n`
+- `AppleCamera:%s - Warning: No fSensorExtClkFunction1 found\n`
+- `AppleCamera:%s - time to start: %llums\n`
+- `AppleCamera:%s - startAuth - ENTERED\n`
+- `AppleCamera:%s - Auth: ISP unavailable (fw timeout=%d, fw loaded=%d), reporting busy\n`
+- `AppleCamera:%s - bad message address: %p\n`
+- `AppleCamera:%s - Incorrect SPMI index = %d\n`
+- `AppleCamera:%s - sent=%d skipped=%d failed=%d\n`
+- `AppleCamera:%s - starting\n`
+- `AppleCamera:%s - FFW IPC message exceeds the message size limit!\n`
+- `AppleCamera:%s - [Exclave] SendCmdSecureM3Isr returned 0x%x, result = 0x%x\n`
+- `AppleCamera:%s - Firmware did not confirm safe. (0x%08X, %d)\n`
+- `    PMPBandwidthControlFunction - scratchReg = %#llx (len:%d)\n`
+- `AppleCamera:%s - CISP_CMD_AON_PTD_SET failed!\n`
+- `AppleCamera:%s - Command CISP_CMD_TUNABLE_APPLY completed, res = 0x%x\n`
+- `AppleCamera:%s - allocated surface at DVA %llx\n`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - called with NULL pointer, nothing to free\n`
+- `AppleCamera:%s - Loaded configuration %d\n`
+- `ISPMainWorkLoopEventSource:%s - Not enabled, exiting\n`
+- `AppleCamera::client_log_buffer_t:%s - IOSurface ID %#x has insufficient size: %#zx bytes\n\n`
+- `ApplePearlCam:%s - Sequence aborted! sequence ID=%u, Type=%u, State=%u\n`
+- `AppleCamera:%s - Failed to instantiate camera auth support\n`
+- `AppleCamera:%s - Failed to return unusued buffers(res=0x%08X)\n`
+- `AppleCamera:%s - channel %d already reserved (current owner: %s, priority: %d)\n`
+- `PearlCamFrameReceived - referenceImageType=%d (%s), projectorMode=%d, projectorSubMode=%d, projectorProbeMode=%d, fIDPowerProfile=%d, bracketingMode=%d\n`
+- `%d: PearlCamMessageType=%s\n\n`
+- `AppleCamera:%s - ISP Memory allocation request, %llx bytes\n`
+- `AppleCamera:%s - Unable to identify FHSi device, I2C status 0x%08x\n`
+- `AppleCamera:%s - Timed out waiting for Final EC clean up to complete\n\n`
+- `AppleCamera:%s - AppleARMFunctionSlowAdaptiveClockingAggressor for %s raw, chan %d: %s\n`
+- `AppleCamera::ISP_ShowSharedMemoryAllocations_gated:\n`
+- `AppleCamera::client_log_buffer_t:%s - Could not obtain physical memory address for IOSurface with ID %#x\n\n`
+- `AppleCamera:%s - Resetting client logging buffer tail\n`
+- `ApplePearlCam:%s - dequeued PearlCamPowerOffMessage\n`
+- `ApplePearlCam:%s - Discontinuity detected! expected=0x%08X, actual=0x%08X\n`
+- `ApplePearlCam:%s - PearlCamStateEntryProc_OFF\n`
+- `AppleCameraChannel:%s - sensor %d does not support hardware disable\n`
+- `AppleCamera:%s - couldn't prepare memory descriptor\n`
+- `Skip deferred early FW (%d)\n`
+- `AppleCamera:%s - Ignoring re-entrant FW timeout (type=%u cmdId=0x%x) - already handling\n`
+- `ApplePearlCam:%s - did ISP_PowerOnCamera() delay/retry %d times)\n`
+- `ApplePearlCam:%s - Unexpected SecretPatternType requested: 0x%08X\n`
+- `AppleCamera:%s - Memory map failed: 0x%08x\n`
+- `AppleCamera:%s - Command CISP_CMD_CED_DISABLE completed, res = 0x%x\n`
+- `AppleCamera:%s - ispcpuSoftwareInterruptRegisterAddress: 0x%llx, ispcpuSoftwareInterruptRegisterBitmask: 0x%x\n\n`
+- `ApplePearlCam:%s - (%s)\n`
+- `ApplePearlCam:%s - Warning: Invalid key length: %d\n`
+- `AppleCamera:%s - Uninitialized message queue lock\n`
+- `AppleCamera:%s - Power on transition time-out\n`
+- `AppleCamera:%s - bypassing session create due to active channel\n`
+- `AppleCamera:%s - enableFn=%s aopPwr=%d\n`
+- `ISPLoggerEventSource:%s - freeing\n`
+- `ApplePearlCam:%s - Failed to replay memory manager\n`
+- `ApplePearlCam:%s - Error: pPearlCamFrameReceiver already exists\n`
+- `ApplePearlCam:%s - Unrecognized poolType: %d\n`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - Memory map failed: %#08X\n`
+- `AppleCamera:%s - unable to create a multicam session while a channel is active\n`
+- `    fIODMACommandCount = %u\n`
+- `AppleCameraUserClient:%s - Client is cameraispd\n`
+- `AppleCamera:%s - logEntrySize=%d, logStringOffset=%d\n`
+- `ApplePearlCam:%s - Couldn't add deferred power down timeout timer event source to work loop.\n`
+- `ApplePearlCam:%s - ISP_PPMAdmissionCheck error (res=0x%08X)\n`
+- `    _numFailedISPResumes: %llu\n`
+- `AppleCamera:%s - Allocated firmware logging buffer (size:%d)\n`
+- `    _numFailedISPSuspends: %llu\n`
+- `AppleCamera:%s - Could not map registers: PwrGateExt0\n`
+- `AppleCamera:%s - FFW_INTERPROC_MSG_MSG\n`
+- `ISPMainWorkLoopEventSource:%s - Init() failed for ISPMainWorkLoopEventSource\n`
+- `AppleCameraFrameReceiver:%s - ISP_SendBuffers failed: 0x%08X\n`
+- `AppleCameraFrameReceiver:%s - Could not enable AE: 0x%08X\n`
+- `ApplePearlCam:%s - No name matching IOCoreSurfaceRoot\n`
+- `ApplePearlCam:%s - status=%s\n`
+- `ApplePearlCam:%s - Discontinuity in bracketed capture sequence. exp: %d, act:%d\n`
+- `AppleCamera:%s - Error - ispcpuSoftwareInterruptRegisterAddress is NULL\n`
+- `AppleCamera:%s - Error: The Input buffer surface does not have the necessary privilege!\n\n`
+- `AppleCamera:%s - optical-dev-card-id is present in the IORegistry. val=???\n`
+- `AppleCamera:%s - CPU0_UTTDBG_PCSAMPLE: %#08X\n`
+- `AppleCamera:%s - Uninitialized main workloop message queue lock\n`
+- `AppleCamera:%s - fSharedMemorySurfaces.deletionPendingList count: %u\n`
+- `     Client: %s (pid %d)\n`
+- `AppleCamera:%s - heapMemorySurface is NULL, skipping heap coredump registration (rdar://177535365)\n`
+- `McacheDriverClient:%s - Couldn't register AppleCamera with M$ driver\n`
+- `AppleCamera:%s - Calling ECNotifyFirmwareTearDown\n`
+- `ApplePearlCam:%s - Stopping with pending probe-capture frames\n`
+- `\n\n`
+- `  %4d: size=%llu, dartMapBase=0x%llX, usage='%c%c%c%c', cacheMode=0x%08X\n`
+- `AppleCamera:%s - Error: T287 running. Returning kIOReturnBusy\n`
+- `    Groups:\n`
+- `AppleCamera:%s - Failed to send CISP_CMD_ALS_SENSOR_POWER_SET command\n`
+- `AppleCamera:%s - Memory map failed: 0x%08X\n`
+- `AppleCamera:%s - - ISP_ChangePowerState - kISPPowerStateOff\n`
+- `AppleCamera:%s - propertyNum: %d, value: %d\n`
+- `AppleCamera:%s - fISPCPUFirmwareLoaded done\n`
+- `ApplePearlCam:%s - IOSurfaceRoot not available or of the wrong class\n`
+- `AppleCamera:%s - could not fetch the DART capability object\n`
+- `AppleCamera:%s - No action, AP panicked\n`
+- `AppleCamera:%s - Can't read the devicetree node entry\n`
+- `AppleCamera:%s - Error: signpost notification message exceeds message size limit!\n`
+- `AppleCamera:%s - Enabling CPU power gating\n`
+- `AppleCamera:%s - enable IPC EP\n`
+- `AppleCameraUserClient:%s - New UserClient for process: %s (pid %d)\n`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - Shared memory region mapped at DART translated address: %#llX, visible memory: %p\n`
+- `AppleCamera:%s - Could not allocate a message queue lock\n`
+- `AppleCamera:%s - Notify firmware about dart error\n`
+- `AppleCamera:%s - [Exclave] SendCmdEndStrobeAck returned 0x%x, result = 0x%x\n`
+- `ApplePearlCam:%s - fState=%d\n`
+- `AppleCamera:%s - Found FirmwareWorkProcessor to un-register\n`
+- `AppleCamera:%s - kIOMessageSystemWillSleep fSystemSleepInProgress=%d. Setting fSystemSleepInProgress to true\n`
+- `AppleCamera:%s - acknowledging to AOP that ISP power state changed\n`
+- `AppleCamera:%s - read NVM error for channel %d: 0x%08X\n`
+- `AppleCamera:%s - ISPCPU not in WFI after CISP_CMD_POWER_DOWN\n`
+- `ApplePearlCam:%s - init\n`
+- `ApplePearlCam:%s - Sending %u:%d (%s) error to client\n`
+- `AppleCameraFrameReceiver:%s - failed to call ISP_CILManager error: 0x%08X (true/true)\n`
+- `AppleCamera:%s -  - FW timeout, RTBuddy handling forcePowerOff(false)\n`
+- `AppleCamera:%s - no power on clients still connected, power off the ISP\n`
+- `AppleCamera:%s - fCamISPInitFailDebug == true, leave power on\n`
+- `AppleCamera:%s - No default configuration found for this platform\n`
+- `AppleCamera:%s - DeviceMemoryManager Usage\n`
+- `AppleCamera:%s - called back with [%u] chosen frequency indices\n`
+- `AppleCamera:%s - Primary selection failed due to a zero count\n`
+- `AppleCamera:%s - GPBuffers h2tBuf: inputParameter tag=%#llx\n`
+- `AppleCamera:%s - firmware reported %d channels, but driver support is limited to %d channels\n`
+- `AppleCamera:%s - Could not make memory visible to ISP\n`
+- `AppleCamera::ISPSharedMemorySurfaces:%s - usable mapped memory exceeds surface boundary!\n`

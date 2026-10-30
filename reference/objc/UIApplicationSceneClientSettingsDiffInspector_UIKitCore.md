@@ -1,0 +1,53 @@
+# `UIApplicationSceneClientSettingsDiffInspector`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `FBSSceneClientSettingsDiffInspector`
+- 0 instance variables, 0 properties, 43 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[UIApplicationSceneClientSettingsDiffInspector observeStatusBarAlphaWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeStatusBarModernStyleWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeDefaultStatusBarHiddenWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector _observeOtherSetting:withBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeReachabilitySupportedWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeDeviceOrientationEventsEnabledWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeUserInterfaceStyleWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeSceneTitleWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeWantsExclusiveForegroundWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeActivationConditionsDataWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeStatusBarStyleWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeDefaultStatusBarStyleWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeScreenEdgesDeferringSystemGesturesWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeWhitePointAdaptivityStyleWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeHomeIndicatorAutoHiddenWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeStatusBarContextIDWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeBrightnessLevelWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeCanvasTitleWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeSupportedInterfaceOrientationsWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observePrefersStatusBarHiddenWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeInterfaceOrientationWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeCompatibilityModeWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeEditingInteractionConfigurationWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeWindowOverlayInsetsWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeStatusBarHiddenWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeNotificationCenterRevealModeWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observePreferredPointerLockStateWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeWindowFocusedFrameWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeDefaultPNGNameWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeInterfaceOrientationChangesDisabledWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeVisibleMiniAlertCountWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeControlCenterAmbiguousActivationMargin:];
+-[UIApplicationSceneClientSettingsDiffInspector observeIdleModeVisualEffectsEnabledWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeStatusBarPartStylesWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeProximityDetectionModesWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeStatusBarAxisWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeSceneActivationBiasWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeDefaultPNGExpirationTimeWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeIdleTimerDisabledWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeControlCenterRevealModeWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeBackgroundStyleWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observeAudioCategoriesDisablingVolumeHUDWithBlock:];
+-[UIApplicationSceneClientSettingsDiffInspector observePhysicalButtonConfigurationsWithBlock:];
+```

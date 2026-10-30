@@ -1,0 +1,19 @@
+# `_UIMainMenuCommandInvocationNotificationAction`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `_UIMainMenuHostAction`
+- 0 instance variables, 1 properties, 3 instance methods, 0 class methods
+
+## Properties
+
+```
+@property (T@"_UIMainMenuCommandInvocationNotification",R,N) commandInvocationNotification;
+```
+
+## Instance methods
+
+```
+-[_UIMainMenuCommandInvocationNotificationAction abortForUsageViolation:];
+-[_UIMainMenuCommandInvocationNotificationAction commandInvocationNotification];
+-[_UIMainMenuCommandInvocationNotificationAction initWithCommandInvocationNotification:];
+```

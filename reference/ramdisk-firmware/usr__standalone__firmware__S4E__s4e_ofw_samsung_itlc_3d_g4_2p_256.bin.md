@@ -1,0 +1,292 @@
+# `usr/standalone/firmware/S4E/s4e_ofw_samsung_itlc_3d_g4_2p_256.bin`
+
+- File size: 434,176 bytes
+
+## Payload [FW]
+
+- Size after IM4P unwrap / decompression: 434,176 bytes
+- Format: raw binary
+
+## Identity strings (versions, build tags) [FW]
+
+- `AppleMSPS4-75.35~1`
+
+## Strings (273) [FW]
+
+Printable runs of 6+ characters with at least three letters, in file order, with payload offset. For RTKit co-processor firmware these are the log formats, task names, endpoint names and assertions that describe what the processor does.
+
+```
+0000063e  63FWUe
+00000670  msp_core_samsung_itlc_3d_g4_2p_256-75.35.0
+00001115  !*die+e
+00001b6d  F60AFrFKF
+00001b86  XF2FSF
+00001c1c  BToCFWLDETOC
+00001f1d  ehFAFO
+00002214  msp_rom_extension-75.35.0
+00002378  app_main
+0000306a  r`ETOC
+000035e0  Undefined
+000035f0  Software Int
+00003600  Prefetch Abort
+00003610  Data Abort
+00003620  Reserved Exception
+00003692  hFqFzF
+0000488f   1F*FCF
+00004b9b   1F*FCF
+00004bdf   1F*FCF
+00005175  ` FAF*F,
+000051ff  ` FAF*F,
+00005a82  )hRF2`
+000060de  {KAF]FO
+00007aac  -xevEE
+00009404  ,`vLt`
+00009487  #kP]Ksc
+000094fd  phPCH0e
+0000950d  `hP@Hpe
+00009931  1)ahagN1x
+00009963  0(aia#
+00009ae0  OFWB8J
+0000a627  CJr3CK`
+0000a889  a_JZa_J
+0000a8b6  WIHaWH
+0000aa58  5t1Ftt
+0000ad85  HH00ata"
+0000b039  11`p`PNPH
+0000b05c  LM(hLI
+0000b0e4  (DAFRF
+0000b35e  (DQFBF
+0000b5d0  DaXF)hjh
+0000b5fe  1a5apa
+0000b62c  1a5apa
+0000b671  `nHl00aO
+0000ba67  09CCN:H
+0000bca2  SHD]D,
+0000c103  FpS FJF
+0000c115  h`haiC
+0000c52c  $IBFSF
+0000c8b7  rIhA`pG
+0000cb36  &w Fix
+0000cc82   FQFuF
+0000cc8e   FAFZF
+0000dc5d  FrT1DJx
+0000ddf2  0FQFBF#F
+0000de2c  0FQFBF
+0000de9c  EtYxEs
+0000ea58  )FZF3F
+0000eb7d  `PFYF)
+0000ee6e   FYF2F
+0000f714  hC1hZJ
+000101c9  F hFh:H
+00010316  fh "5MPF)F
+00010fe4  !qoHBx
+00012a83  FPF1F#F
+00013b66  0F)FBF
+00013c3a  YF"FCF
+0001427a  WJU\NIo
+000143f5  FMN"hMI
+00014998  `B)hhhB
+000157e9  RaJ+hnh
+00016e11  2bE5F#FIF
+000171c4  qH&hyI
+00017365  a1arxO
+00017a21  2*a(aia
+00017a87  /ZIMHch
+00017e23  kYF+F@
+00017e56  d aIPC
+0001add7  C``KHKI
+0001b6c0  0sBLsCO
+0001b8b7  F(FQFBF
+0001c0db  11`hCu`
+0001ce79  9^qVF16[y&`
+0001dcf5  FOLLHMI
+0001e2f8  *J FAFSF%
+0001ec06   FQFBF
+0001ed77  rpp0F0
+000201c2  @h!xbxo
+00020202  @hQFbx
+0002089b  GEIs1#h`h)`O
+00021f9c  EBTCBToC
+0002296f  Fhh1IO
+000230c9  h!`Aha`
+000230d9  i!aAiaa
+000230e9  j!bAjab
+000230f9  k!cAkac
+000234d0   FQF*F3F
+00023ebf  GmJlKu2
+00023f90  Rhqy+`O
+0002484c  J`[FBh
+00025048   FQF*F[F
+0002533c  PFBF3F
+0002577c  (F1F"FCF
+0002611e  :M.ala
+000261a0  (F!FZFCF
+000261b5  `(FZFCF
+0002624e   F1F*FCF
+0002631a  *ahaPF
+000266bd  `(`ihh`
+00027124  AHM0 `
+00027314  rKqJv2
+00027e54  (FYF%F
+00027f65   AFSFO
+00027fd5  F'H'LYhJh
+00028370  )FBmCn
+00028382  1}DJs}
+0002982d  Pqh.3#`!`
+00029852  phcI!`
+00029a78  TDe]uT
+00029e98  p f`LNF
+00029fe8  'M%I%Jhh
+0002a0c5   pe0fud
+0002a219  22M2Kah h
+0002a5cb  `M`cm%nbl+C
+0002a6ab   putcrb1
+0002ab94  PF1F*FCF
+0002aeb7  2BafFO
+0002b2b6  +j0Fjj
+0002b630   F1FRFCF
+0002ba8c  ETOC4J
+0002c1f2  - AppG
+0002c3c8  ZLVI h
+0002c9fe  )oho!D
+0002cb4c  X` FAF]
+0002d9e3  bbb!a b
+0002dd8d  F hbhO
+0002e455  F^aVho
+0002e90d  D `)hnh
+0002f592   FYF0D*F
+0002fdaa  1h Frh
+0003043f  b,c3Mmh
+0003045b  <^`VFP
+00030e5c  SM,hhh @
+0003162c  BHDb>H
+00031658  7HDe4HD`4H
+00031669  e1HDa1H
+0003195e  yMvI(h
+000321cd  C*`lhY
+00032cf9  c HAhA
+00032e64  PF!FBF
+00033b5c  TUUU03338
+00033f70  RIVFRJ
+0003414f  MvF(xc@
+00034c60  (xkx)i
+00034dcf   !F"FCF
+00035093  FmF`x)
+000353c2   xax%i
+00036082  )xjx5L
+000360ca  XF1FBF
+000367a0  !i xbj
+000369c5  FlF4" F
+00036f28   xaxBF
+00036f32   x"Fax
+0003798d  F xax"N
+00037a48  0xqx"F
+00037a52  5xvx(F1F
+00037fd0  (FQFBF
+00037ffa  (FQFBF
+0003801a  (FQFBF
+000380cc  `xnF*I2F
+000386a1  Gax FO
+00038794  pGpGpG
+000387b1  *;>IUZ`j`y
+00038919  hRhX@Q@
+00039256  2FVF,`
+00039430  SHTJUI
+00039e03  "@FQF[F
+0003a176  )FBF3F
+0003a1ea  1F*FSF
+0003a2c6  )FBF3F
+0003a474  QFBF3F
+0003bc32  }HyJxI
+0003bc6b  &nHkJlI
+0003cbdb  "XFQF#F
+0003d8fb  m0F)FRF
+0003df1d  D}H)FBm0F
+0003e79a  @F)FRF
+0003e8b4  PF!FJF+F
+0003ed7f  hvJM22`
+0003ef10  xi!FZFSF
+0003f7e3  0UMRJ.hPM*`.`
+00040143  c hahfl:J
+00041e24  @FTxVF
+000424d0  kHiJgI
+00042524  VHTJRI
+0004283a  r]XFQF+F
+00044050   hSFah
+00044728  #$%&'DEF()*+,-./0123456789:;<=>?@AGBC
+000447af   $(,048<@DHLP`lpt
+00044958  REXTFWLDR5FWXTRAPTSDHBTCPBBT$4BDBToC
+00044f7e  AppleMspAsiDriver-1.62
+00045097  KLMNOPQSU
+00045110  012ABC
+0004665a  @DHLPTX\
+0004666c  hlptx|
+00047668  c.'>*GAq{g
+00047697  lEq0E"
+000476e0  ffffffff
+00047768  UUUUUUUU
+00047780  msp_core_samsung_itlc_3d_g4_2p_256-75.35.0
+000478f0  app_main
+00047900  ASI Device Info
+00047910  itlc_3d_v5_2p_256
+00047928  AppleMSPS4-75.35~1
+0004ed4b   !"0@PRTXYZ`p
+0004f668  DCCBCCC
+0004f6a1  DDD$"""
+0004f729  DDDD"""
+000538cd  H f(Fff
+00053b59  HVFZFV
+00054542   FRFCF
+00055cd9  Npi DpaXF
+00056089   pGHipG
+00056881  #EJ0hqhML
+00056956  (F1FRF
+000569c4  pGpGpGpG
+00056c1e  (F1FRF
+00056e2e   F1FRF
+00057b64  0DAp h
+000582dc  emi_ext
+000589ef  pslf-P
+00058e72  zSZ^w$
+000598c5  a(j D(bhF
+00059c3f  !1dqdo
+0005a58f   2D<HSF
+0005b459  DKk)Fpm
+0005bbb0  def_appl_ext
+0005cbc0  pts_update_ext
+0005d1a3  `PDBh F1F
+0005d1bc  (h!FPDBh0F
+0005d5d0  tlv_utils_ext
+0005dc64   FZF+F
+0005de5c  cpc_ut_ext
+0005e01b  @ETOC>
+0005ed43  fBX2@B
+0005ed4a  p"BPBX
+0005f5c9  `jHjI6
+0005fa17  ``Hpa`H0a`H
+0006009f  !``pHpM
+000600c3  QD`ZPO
+0006058a  gHgI:0
+000605e5  raqYI q
+0006074c  OFWB8 
+000608b8  pG`GpG
+0006106d  F^Heh "
+000618f8   8AKKWCH
+0006268a  1h Frh
+000635df  rhp(F0
+00064f8a  #i5`5FVF
+00065e17  HRF0`4`u`
+0006681b   !F"FCF
+00066970   xax"}
+00067024  pGpGpG
+00067041  *;>IUZ`l`{
+000671b9  hRhX@Q@
+00067c2c  msp_fw_loader_samsung_itlc_3d_g4_2p_256-75.35.0
+00067d4c  #$%&'DEF()*+,-./0123456789:;<=>?@AGBC
+00067dc4  REXTFWLDR5FWXTRAPTSDHBTCPBBT$4BDBToC
+0006803c  (2<FAppleMspAsiDriver-1.62
+000682a8  app_main
+000684d0  DCCBCCC
+00068509  DDD$"""
+00068591  DDDD"""
+```

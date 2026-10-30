@@ -1,0 +1,807 @@
+# `/System/Library/AppleUSBDevice/USBDeviceConfiguration.plist`
+
+From the erase/recovery restore ramdisk (141-28940-105.dmg, runs restored_external). 6,546 bytes.
+
+- `configurations`:
+  - `AppleUSBTestDevice`:
+    -
+      - `DefaultConfiguration`: `True`
+      - `Description`: `Apple Mobile Device`
+      - `Interfaces`:
+        - `AppleUSBMux`
+    -
+      - `Description`: `Apple USB Test Configuration`
+      - `Interfaces`:
+        - `AppleUSBTestInterface`
+  - `AudioVideoMetadataNCM`:
+    -
+      - `Description`: `UVCMJPEG ADC20002 HID`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Studio Display Camera`
+          - `FirstInterface`: `0`
+          - `InterfaceCount`: `2`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Audio`
+          - `FirstInterface`: `2`
+          - `InterfaceCount`: `3`
+      - `Interfaces`:
+        - `UVCControlInterfaceDefaultVideo`
+        - `UVCStreamInterfaceDefaultVideoMJPEG`
+        - `ADC2AudioControl0002`
+        - `ADC2AudioIN0002`
+        - `ADC2AudioOUT0002`
+        - `SiriHIDDevice`
+        - `TCONControl002`
+        - `brightness`
+        - `als`
+        - `HIDOrientation`
+    -
+      - `Description`: `UVCMJPEG NCM ADC20002 HID`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Studio Display Camera`
+          - `FirstInterface`: `0`
+          - `InterfaceCount`: `2`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Audio`
+          - `FirstInterface`: `4`
+          - `InterfaceCount`: `3`
+      - `Interfaces`:
+        - `UVCControlInterfaceDefaultVideo`
+        - `UVCStreamInterfaceDefaultVideoMJPEG`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+        - `ADC2AudioControl0002`
+        - `ADC2AudioIN0002`
+        - `ADC2AudioOUT0002`
+        - `SiriHIDDevice`
+        - `TCONControl002`
+        - `brightness`
+        - `als`
+        - `HIDOrientation`
+    -
+      - `Description`: `UVCALLHEVC NCM ADC20003 HID`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Studio Display Camera`
+          - `FirstInterface`: `0`
+          - `InterfaceCount`: `2`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Desk View Camera`
+          - `FirstInterface`: `2`
+          - `InterfaceCount`: `2`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Metadata Camera`
+          - `FirstInterface`: `4`
+          - `InterfaceCount`: `1`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Audio`
+          - `FirstInterface`: `7`
+          - `InterfaceCount`: `5`
+      - `Interfaces`:
+        - `UVCControlInterfaceDefaultVideo`
+        - `UVCStreamInterfaceDefaultVideo`
+        - `UVCControlInterfaceDeskcamVideo`
+        - `UVCStreamInterfaceDeskcamVideo`
+        - `UVCStreamInterfaceMetadata`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+        - `ADC2AudioControl0003`
+        - `ADC2AudioIN0003-1`
+        - `ADC2AudioIN0003-2`
+        - `ADC2AudioIN0003-3`
+        - `ADC2AudioOUT0003`
+        - `SiriHIDDevice`
+        - `TCONControl`
+        - `brightness`
+        - `als`
+        - `HIDOrientation`
+  - `AudioVideoMetadataNCMLoopback`:
+    -
+      - `Description`: `UVCMJPEG ADC20002 HID`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Studio Display Camera`
+          - `FirstInterface`: `0`
+          - `InterfaceCount`: `2`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Audio`
+          - `FirstInterface`: `2`
+          - `InterfaceCount`: `3`
+      - `Interfaces`:
+        - `UVCControlInterfaceDefaultVideo`
+        - `UVCStreamInterfaceDefaultVideoMJPEG`
+        - `ADC2AudioControl0002`
+        - `ADC2AudioIN0002`
+        - `ADC2AudioOUT0002`
+        - `SiriHIDDevice`
+        - `TCONControl002`
+        - `brightness`
+        - `als`
+        - `HIDOrientation`
+    -
+      - `Description`: `UVCMJPEG NCM ADC20002 HID`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Studio Display Camera`
+          - `FirstInterface`: `0`
+          - `InterfaceCount`: `2`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Audio`
+          - `FirstInterface`: `4`
+          - `InterfaceCount`: `3`
+      - `Interfaces`:
+        - `UVCControlInterfaceDefaultVideo`
+        - `UVCStreamInterfaceDefaultVideoMJPEG`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+        - `ADC2AudioControl0002`
+        - `ADC2AudioIN0002`
+        - `ADC2AudioOUT0002`
+        - `SiriHIDDevice`
+        - `TCONControl002`
+        - `brightness`
+        - `als`
+        - `HIDOrientation`
+    -
+      - `Description`: `UVCALLHEVC NCM ADC20003 HID`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Studio Display Camera`
+          - `FirstInterface`: `0`
+          - `InterfaceCount`: `2`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Desk View Camera`
+          - `FirstInterface`: `2`
+          - `InterfaceCount`: `2`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Metadata Camera`
+          - `FirstInterface`: `4`
+          - `InterfaceCount`: `1`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Audio`
+          - `FirstInterface`: `7`
+          - `InterfaceCount`: `5`
+      - `Interfaces`:
+        - `UVCControlInterfaceDefaultVideo`
+        - `UVCStreamInterfaceDefaultVideo`
+        - `UVCControlInterfaceDeskcamVideo`
+        - `UVCStreamInterfaceDeskcamVideo`
+        - `UVCStreamInterfaceMetadata`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+        - `ADC2AudioControl0003`
+        - `ADC2AudioIN0003-1`
+        - `ADC2AudioIN0003-2`
+        - `ADC2AudioIN0003-3`
+        - `ADC2AudioOUT0003`
+        - `SiriHIDDevice`
+        - `TCONControl`
+        - `brightness`
+        - `als`
+        - `HIDOrientation`
+    -
+      - `Description`: `UVCALLHEVC NCM ADC20004 HID`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Studio Display Camera`
+          - `FirstInterface`: `0`
+          - `InterfaceCount`: `2`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Desk View Camera`
+          - `FirstInterface`: `2`
+          - `InterfaceCount`: `2`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Metadata Camera`
+          - `FirstInterface`: `4`
+          - `InterfaceCount`: `1`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Audio Loopback`
+          - `FirstInterface`: `7`
+          - `InterfaceCount`: `3`
+      - `Interfaces`:
+        - `UVCControlInterfaceDefaultVideo`
+        - `UVCStreamInterfaceDefaultVideo`
+        - `UVCControlInterfaceDeskcamVideo`
+        - `UVCStreamInterfaceDeskcamVideo`
+        - `UVCStreamInterfaceMetadata`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+        - `ADC2AudioControl0004`
+        - `ADC2AudioIN0004`
+        - `ADC2AudioOUT0004`
+        - `SiriHIDDevice`
+        - `TCONControl`
+        - `brightness`
+        - `als`
+        - `HIDOrientation`
+  - `AudioVideoNCM`:
+    -
+      - `Description`: `UVCB ADC20002 HID`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Studio Display Camera`
+          - `FirstInterface`: `0`
+          - `InterfaceCount`: `2`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Audio`
+          - `FirstInterface`: `2`
+          - `InterfaceCount`: `3`
+      - `Interfaces`:
+        - `UVCControlInterfaceB`
+        - `UVCStreamInterfaceB`
+        - `ADC2AudioControl0002`
+        - `ADC2AudioIN0002`
+        - `ADC2AudioOUT0002`
+        - `SiriHIDDevice`
+        - `TCONControl002`
+        - `brightness`
+        - `als`
+        - `HIDOrientation`
+    -
+      - `Description`: `UVCB NCM ADC20002 HID`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Studio Display Camera`
+          - `FirstInterface`: `0`
+          - `InterfaceCount`: `2`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Audio`
+          - `FirstInterface`: `4`
+          - `InterfaceCount`: `3`
+      - `Interfaces`:
+        - `UVCControlInterface`
+        - `UVCStreamInterface`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+        - `ADC2AudioControl0002`
+        - `ADC2AudioIN0002`
+        - `ADC2AudioOUT0002`
+        - `SiriHIDDevice`
+        - `TCONControl002`
+        - `brightness`
+        - `als`
+        - `HIDOrientation`
+    -
+      - `Description`: `UVCA NCM ADC20003 HID`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Studio Display Camera`
+          - `FirstInterface`: `0`
+          - `InterfaceCount`: `3`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Audio`
+          - `FirstInterface`: `5`
+          - `InterfaceCount`: `5`
+      - `Interfaces`:
+        - `UVCControlInterface`
+        - `UVCStreamInterface`
+        - `UVCStreamInterfaceA`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+        - `ADC2AudioControl0003`
+        - `ADC2AudioIN0003-1`
+        - `ADC2AudioIN0003-2`
+        - `ADC2AudioIN0003-3`
+        - `ADC2AudioOUT0003`
+        - `SiriHIDDevice`
+        - `TCONControl`
+        - `brightness`
+        - `als`
+        - `HIDOrientation`
+  - `AudioVideoNCMLoopback`:
+    -
+      - `Description`: `UVCB ADC20002 HID`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Studio Display Camera`
+          - `FirstInterface`: `0`
+          - `InterfaceCount`: `2`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Audio`
+          - `FirstInterface`: `2`
+          - `InterfaceCount`: `3`
+      - `Interfaces`:
+        - `UVCControlInterfaceB`
+        - `UVCStreamInterfaceB`
+        - `ADC2AudioControl0002`
+        - `ADC2AudioIN0002`
+        - `ADC2AudioOUT0002`
+        - `SiriHIDDevice`
+        - `TCONControl002`
+        - `brightness`
+        - `als`
+        - `HIDOrientation`
+    -
+      - `Description`: `UVCB NCM ADC20002 HID`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Studio Display Camera`
+          - `FirstInterface`: `0`
+          - `InterfaceCount`: `2`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Audio`
+          - `FirstInterface`: `4`
+          - `InterfaceCount`: `3`
+      - `Interfaces`:
+        - `UVCControlInterface`
+        - `UVCStreamInterface`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+        - `ADC2AudioControl0002`
+        - `ADC2AudioIN0002`
+        - `ADC2AudioOUT0002`
+        - `SiriHIDDevice`
+        - `TCONControl002`
+        - `brightness`
+        - `als`
+        - `HIDOrientation`
+    -
+      - `Description`: `UVCA NCM ADC20003 HID`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Studio Display Camera`
+          - `FirstInterface`: `0`
+          - `InterfaceCount`: `3`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Studio Display Audio`
+          - `FirstInterface`: `5`
+          - `InterfaceCount`: `5`
+      - `Interfaces`:
+        - `UVCControlInterface`
+        - `UVCStreamInterface`
+        - `UVCStreamInterfaceA`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+        - `ADC2AudioControl0003`
+        - `ADC2AudioIN0003-1`
+        - `ADC2AudioIN0003-2`
+        - `ADC2AudioIN0003-3`
+        - `ADC2AudioOUT0003`
+        - `SiriHIDDevice`
+        - `TCONControl`
+        - `brightness`
+        - `als`
+        - `HIDOrientation`
+    -
+      - `Description`: `UVCA NCM ADC20004 HID`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Studio Display Camera`
+          - `FirstInterface`: `0`
+          - `InterfaceCount`: `3`
+          - `OverrideSubClass`: `3`
+        -
+          - `Description`: `Audio Loopback`
+          - `FirstInterface`: `5`
+          - `InterfaceCount`: `3`
+      - `Interfaces`:
+        - `UVCControlInterface`
+        - `UVCStreamInterface`
+        - `UVCStreamInterfaceA`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+        - `ADC2AudioControl0004`
+        - `ADC2AudioIN0004`
+        - `ADC2AudioOUT0004`
+        - `SiriHIDDevice`
+        - `TCONControl`
+        - `brightness`
+        - `als`
+        - `HIDOrientation`
+  - `DeviceModeCarplay`:
+    -
+      - `DefaultConfiguration`: `True`
+      - `Description`: `Carplay`
+      - `Interfaces`:
+        - `AppleUSBNCMControlDirect`
+        - `AppleUSBNCMData`
+        - `IapOverUsbHid`
+  - `DeviceModeCarplay2`:
+    -
+      - `DefaultConfiguration`: `True`
+      - `Description`: `Carplay`
+      - `Interfaces`:
+        - `AppleUSBNCMControlDirect`
+        - `AppleUSBNCMData`
+        - `IapOverUsbHid`
+        - `AppleUSBMux`
+  - `USBDeviceTester`:
+    -
+      - `Description`: `Apple USB Device Tester`
+      - `Interfaces`:
+        - `USBDeviceTester`
+  - `emptyComposite`:
+    -
+      - `Description`: `Apple Charging Device`
+      - `Interfaces`: `[]`
+  - `iBridgeBringup`:
+    -
+      - `Description`: `Apple Mobile Device + NCM`
+      - `Interfaces`:
+        - `AppleUSBMux`
+        - `AppleUSBNCMControl`
+        - `AppleUSBNCMData`
+  - `muxNcm`:
+    -
+      - `Description`: `Apple Mobile Device + NCM`
+      - `Interfaces`:
+        - `AppleUSBMux`
+        - `AppleUSBNCMControl`
+        - `AppleUSBNCMData`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+  - `muxNcmAux`:
+    -
+      - `Description`: `Apple Mobile Device + NCM Aux`
+      - `Interfaces`:
+        - `AppleUSBMux`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+  - `muxNcmAuxVideo`:
+    -
+      - `Description`: `Apple Mobile Device + Video`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Studio Display Camera`
+          - `FirstInterface`: `0`
+          - `InterfaceCount`: `3`
+          - `OverrideSubClass`: `3`
+      - `Interfaces`:
+        - `UVCControlInterface`
+        - `UVCStreamInterface`
+        - `UVCStreamInterfaceA`
+        - `AppleUSBMux`
+    -
+      - `Description`: `Apple Mobile Device + NCM + Video`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Studio Display Camera`
+          - `FirstInterface`: `0`
+          - `InterfaceCount`: `3`
+          - `OverrideSubClass`: `3`
+      - `Interfaces`:
+        - `UVCControlInterface`
+        - `UVCStreamInterface`
+        - `UVCStreamInterfaceA`
+        - `AppleUSBMux`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+  - `muxNcmVal`:
+    -
+      - `DefaultConfiguration`: `True`
+      - `Description`: `Apple Mobile Device + NCM`
+      - `Interfaces`:
+        - `AppleUSBMux`
+        - `AppleUSBNCMControl`
+        - `AppleUSBNCMData`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+    -
+      - `Description`: `Apple Mobile Device + NCM + Valeria`
+      - `ExtendedConfiguration`: `True`
+      - `Interfaces`:
+        - `AppleUSBMux`
+        - `AppleUSBNCMControl`
+        - `AppleUSBNCMData`
+        - `Valeria`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+  - `ncmAuxBringup`:
+    -
+      - `Description`: `NCM Aux`
+      - `Interfaces`:
+        - `AppleUSBNCMControl`
+        - `AppleUSBNCMData`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+  - `ncmBringup`:
+    -
+      - `Description`: `NCM`
+      - `Interfaces`:
+        - `AppleUSBNCMControl`
+        - `AppleUSBNCMData`
+  - `standardBringup`:
+    -
+      - `Description`: `Apple Mobile Device`
+      - `Interfaces`:
+        - `AppleUSBMux`
+  - `standardIMG`:
+    -
+      - `DefaultConfiguration`: `True`
+      - `Description`: `Nero`
+      - `Interfaces`:
+        - `iAP`
+        - `Nero`
+  - `standardKeyboard`:
+    -
+      - `DefaultConfiguration`: `True`
+      - `Description`: `Standard Keyboard`
+      - `Interfaces`:
+        - `AppleUSBMux`
+        - `Keyboard`
+  - `standardMuxEthernet`:
+    -
+      - `Description`: `Apple Mobile Device + Ethernet`
+      - `Interfaces`:
+        - `AppleUSBMux`
+        - `AppleUSBEthernet`
+  - `standardMuxOnly`:
+    -
+      - `Description`: `Apple Mobile Device`
+      - `Interfaces`:
+        - `AppleUSBMux`
+  - `standardMuxPTP`:
+    -
+      - `Description`: `PTP`
+      - `Interfaces`:
+        - `PTP`
+    -
+      - `AccessoryResistorSwap`: `True`
+      - `Description`: `iPod USB Interface`
+      - `Interfaces`:
+        - `USBAudioControl`
+        - `USBAudioStreaming`
+        - `IapOverUsbHid`
+    -
+      - `DefaultConfiguration`: `True`
+      - `Description`: `PTP + Apple Mobile Device`
+      - `Interfaces`:
+        - `PTP`
+        - `AppleUSBMux`
+  - `standardMuxPTPEthernet`:
+    -
+      - `Description`: `PTP`
+      - `Interfaces`:
+        - `PTP`
+    -
+      - `AccessoryResistorSwap`: `True`
+      - `Description`: `iPod USB Interface`
+      - `Interfaces`:
+        - `USBAudioControl`
+        - `USBAudioStreaming`
+        - `IapOverUsbHid`
+    -
+      - `DefaultConfiguration`: `True`
+      - `Description`: `PTP + Apple Mobile Device`
+      - `Interfaces`:
+        - `PTP`
+        - `AppleUSBMux`
+    -
+      - `Description`: `PTP + Apple Mobile Device + Apple USB Ethernet`
+      - `Interfaces`:
+        - `PTP`
+        - `AppleUSBMux`
+        - `AppleUSBEthernet`
+  - `standardMuxPTPEthernetUVC`:
+    -
+      - `Description`: `PTP`
+      - `Interfaces`:
+        - `PTP`
+    -
+      - `AccessoryResistorSwap`: `True`
+      - `Description`: `iPod USB Interface`
+      - `Interfaces`:
+        - `USBAudioControl`
+        - `USBAudioStreaming`
+        - `IapOverUsbHid`
+    -
+      - `DefaultConfiguration`: `True`
+      - `Description`: `PTP + Apple Mobile Device + Apple USB Ethernet + UVC Camera + NCM`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Camera`
+          - `FirstInterface`: `3`
+          - `InterfaceCount`: `2`
+          - `OverrideSubClass`: `3`
+      - `Interfaces`:
+        - `PTP`
+        - `AppleUSBMux`
+        - `AppleUSBEthernet`
+        - `UVCControlInterfaceI`
+        - `UVCStreamInterfaceI`
+        - `AppleUSBNCMControl`
+        - `AppleUSBNCMData`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+  - `standardMuxPTPEthernetValeria`:
+    -
+      - `Description`: `PTP`
+      - `Interfaces`:
+        - `PTP`
+    -
+      - `AccessoryResistorSwap`: `True`
+      - `Description`: `iPod USB Interface`
+      - `Interfaces`:
+        - `USBAudioControl`
+        - `USBAudioStreaming`
+        - `IapOverUsbHid`
+    -
+      - `DefaultConfiguration`: `True`
+      - `Description`: `PTP + Apple Mobile Device`
+      - `Interfaces`:
+        - `PTP`
+        - `AppleUSBMux`
+    -
+      - `Description`: `PTP + Apple Mobile Device + Apple USB Ethernet`
+      - `Interfaces`:
+        - `PTP`
+        - `AppleUSBMux`
+        - `AppleUSBEthernet`
+    -
+      - `Description`: `PTP + Apple Mobile Device + Valeria`
+      - `ExtendedConfiguration`: `True`
+      - `Interfaces`:
+        - `PTP`
+        - `AppleUSBMux`
+        - `Valeria`
+  - `standardRestore`:
+    -
+      - `DefaultConfiguration`: `True`
+      - `Description`: `Apple Mobile Device`
+      - `Interfaces`:
+        - `AppleUSBMux`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+    -
+      - `Description`: `Reserved 1 + Apple Mobile Device`
+      - `Interfaces`:
+        - `Reserved`
+        - `AppleUSBMux`
+    -
+      - `Description`: `Reserved 2 + Apple Mobile Device`
+      - `Interfaces`:
+        - `Reserved`
+        - `AppleUSBMux`
+    -
+      - `Description`: `Reserved 3 + Apple Mobile Device`
+      - `Interfaces`:
+        - `Reserved`
+        - `AppleUSBMux`
+  - `stdMuxIAPVal`:
+    -
+      - `DefaultConfiguration`: `True`
+      - `Description`: `Apple Mobile Device`
+      - `Interfaces`:
+        - `AppleUSBMux`
+    -
+      - `Description`: `Apple Mobile Device + iAP`
+      - `Interfaces`:
+        - `AppleUSBMux`
+        - `IapOverUsbHid`
+    -
+      - `Description`: `Apple Mobile Device + Valeria`
+      - `ExtendedConfiguration`: `True`
+      - `Interfaces`:
+        - `AppleUSBMux`
+        - `Valeria`
+  - `stdMuxIDA`:
+    -
+      - `DefaultConfiguration`: `True`
+      - `Description`: `Apple Mobile Device`
+      - `Interfaces`:
+        - `AppleUSBMux`
+    -
+      - `Description`: `Apple Mobile Device + Interdevice Audio`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Interdevice Audio Interfaces`
+          - `FirstInterface`: `1`
+          - `InterfaceCount`: `4`
+      - `Interfaces`:
+        - `AppleUSBMux`
+        - `USBAudio2Control`
+        - `USBAudio2StreamIN`
+        - `USBAudio2StreamOUT`
+        - `IDAMInterface`
+      - `LockedConfiguration`: `True`
+  - `stdMuxPTPEthValIDA`:
+    -
+      - `Description`: `PTP`
+      - `Interfaces`:
+        - `PTP`
+    -
+      - `AccessoryResistorSwap`: `True`
+      - `Description`: `iPod USB Interface`
+      - `Interfaces`:
+        - `USBAudioControl`
+        - `USBAudioStreaming`
+        - `IapOverUsbHid`
+    -
+      - `DefaultConfiguration`: `True`
+      - `Description`: `PTP + Apple Mobile Device`
+      - `Interfaces`:
+        - `PTP`
+        - `AppleUSBMux`
+    -
+      - `Description`: `PTP + Apple Mobile Device + Apple USB Ethernet`
+      - `Interfaces`:
+        - `PTP`
+        - `AppleUSBMux`
+        - `AppleUSBEthernet`
+    -
+      - `Description`: `PTP + Apple Mobile Device + NCM`
+      - `ExtendedConfiguration`: `True`
+      - `Interfaces`:
+        - `PTP`
+        - `AppleUSBMux`
+        - `AppleUSBNCMControl`
+        - `AppleUSBNCMData`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+    -
+      - `Description`: `PTP + Apple Mobile Device + Valeria`
+      - `ExtendedConfiguration`: `True`
+      - `Interfaces`:
+        - `PTP`
+        - `AppleUSBMux`
+        - `Valeria`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+    -
+      - `Description`: `Apple Mobile Device + Interdevice Audio`
+      - `InterfaceAssociation`:
+        -
+          - `Description`: `Interdevice Audio Interfaces`
+          - `FirstInterface`: `1`
+          - `InterfaceCount`: `4`
+      - `Interfaces`:
+        - `AppleUSBMux`
+        - `USBAudio2Control`
+        - `USBAudio2StreamIN`
+        - `USBAudio2StreamOUT`
+        - `IDAMInterface`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+      - `LockedConfiguration`: `True`
+    -
+      - `Description`: `PTP + Apple Mobile Device + Apple USB Ethernet + NCM`
+      - `ExtendedConfiguration`: `True`
+      - `Interfaces`:
+        - `PTP`
+        - `AppleUSBMux`
+        - `AppleUSBEthernet`
+        - `AppleUSBNCMControl`
+        - `AppleUSBNCMData`
+        - `AppleUSBNCMControlAux`
+        - `AppleUSBNCMDataAux`
+    -
+      - `Description`: `NCM Direct Only`
+      - `ExtendedConfiguration`: `True`
+      - `Interfaces`:
+        - `AppleUSBNCMControlDirect`
+        - `AppleUSBNCMData`
+  - `unknownHardware`:
+    -
+      - `Description`: `Unknown Hardware - Apple Mobile Device`
+      - `Interfaces`:
+        - `AppleUSBMux`
+        - `PTP`
+  - `usbiotest`:
+    -
+      - `Description`: `usbiotest`
+      - `Interfaces`:
+        - `AppleUSBMux`
+        - `AppleUSBTestControlInterface`
+        - `AppleUSBTestBulkInterface`
+        - `AppleUSBTestInterruptInterface`

@@ -1,0 +1,263 @@
+# Symbols: `/System/Library/AccessibilityBundles/ControlCenterUIKit.axbundle/ControlCenterUIKit`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__AccessibilityBundles__ControlCenterUIKit.axbundle__ControlCenterUIKit.md). **[DSC]**
+
+61 public symbols, 186 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1ef4e32a8  __AUTH,__objc_data  _OBJC_CLASS_$_AXCCMenuModuleElement
+0x1ee3176b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXControlCenterUIKitGlue
+0x1ee317610  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CCUIAppLauncherViewControllerAccessibility
+0x1ee3175e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CCUIBaseSliderViewAccessibility
+0x1ee3175c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CCUIButtonModuleViewAccessibility
+0x1ee317598  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CCUIButtonModuleViewControllerAccessibility
+0x1ee317570  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CCUIContinuousSliderViewAccessibility
+0x1ee316e40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CCUIControlTemplateViewAccessibility
+0x1ee317548  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CCUILabeledRoundButtonAccessibility
+0x1ee317520  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CCUILabeledRoundButtonViewControllerAccessibility
+0x1ee3174f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CCUIMenuModuleItemViewAccessibility
+0x1ee3174d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CCUIMenuModuleStackViewAccessibility
+0x1ee3174a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CCUIMenuModuleViewControllerAccessibility
+0x1ee317480  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CCUIRoundButtonAccessibility
+0x1ee317458  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CCUISteppedSliderViewAccessibility
+0x1ee317430  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CCUIToggleViewControllerAccessibility
+0x1ee317408  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CCUIAppLauncherViewControllerAccessibility_super
+0x1ee3173e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CCUIBaseSliderViewAccessibility_super
+0x1ee3173b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CCUIButtonModuleViewAccessibility_super
+0x1ee317390  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CCUIButtonModuleViewControllerAccessibility_super
+0x1ee317368  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CCUIContinuousSliderViewAccessibility_super
+0x1ee316e18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CCUIControlTemplateViewAccessibility_super
+0x1ee317340  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CCUILabeledRoundButtonAccessibility_super
+0x1ee317318  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CCUILabeledRoundButtonViewControllerAccessibility_super
+0x1ee3172f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CCUIMenuModuleItemViewAccessibility_super
+0x1ee3172c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CCUIMenuModuleStackViewAccessibility_super
+0x1ee3172a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CCUIMenuModuleViewControllerAccessibility_super
+0x1ee317278  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CCUIRoundButtonAccessibility_super
+0x1ee317250  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CCUISteppedSliderViewAccessibility_super
+0x1ee317228  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CCUIToggleViewControllerAccessibility_super
+0x1ef4e3280  __AUTH,__objc_data  _OBJC_METACLASS_$_AXCCMenuModuleElement
+0x1ee317688  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXControlCenterUIKitGlue
+0x1ee317200  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CCUIAppLauncherViewControllerAccessibility
+0x1ee3171d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CCUIBaseSliderViewAccessibility
+0x1ee3171b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CCUIButtonModuleViewAccessibility
+0x1ee317188  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CCUIButtonModuleViewControllerAccessibility
+0x1ee317160  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CCUIContinuousSliderViewAccessibility
+0x1ee316df0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CCUIControlTemplateViewAccessibility
+0x1ee317138  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CCUILabeledRoundButtonAccessibility
+0x1ee317110  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CCUILabeledRoundButtonViewControllerAccessibility
+0x1ee317660  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CCUIMenuModuleItemViewAccessibility
+0x1ee3170e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CCUIMenuModuleStackViewAccessibility
+0x1ee317638  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CCUIMenuModuleViewControllerAccessibility
+0x1ee3170c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CCUIRoundButtonAccessibility
+0x1ee317098  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CCUISteppedSliderViewAccessibility
+0x1ee317070  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CCUIToggleViewControllerAccessibility
+0x1ee317048  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CCUIAppLauncherViewControllerAccessibility_super
+0x1ee317020  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CCUIBaseSliderViewAccessibility_super
+0x1ee316ff8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CCUIButtonModuleViewAccessibility_super
+0x1ee316fd0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CCUIButtonModuleViewControllerAccessibility_super
+0x1ee316fa8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CCUIContinuousSliderViewAccessibility_super
+0x1ee316dc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CCUIControlTemplateViewAccessibility_super
+0x1ee316f80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CCUILabeledRoundButtonAccessibility_super
+0x1ee316f58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CCUILabeledRoundButtonViewControllerAccessibility_super
+0x1ee316f30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CCUIMenuModuleItemViewAccessibility_super
+0x1ee316f08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CCUIMenuModuleStackViewAccessibility_super
+0x1ee316ee0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CCUIMenuModuleViewControllerAccessibility_super
+0x1ee316eb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CCUIRoundButtonAccessibility_super
+0x1ee316e90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CCUISteppedSliderViewAccessibility_super
+0x1ee316e68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CCUIToggleViewControllerAccessibility_super
+0x189db3378  __TEXT,__text  _accessibilityLocalizedString
+```
+
+## Private
+
+```
+0x189db3048  __TEXT,__text  +[AXControlCenterUIKitGlue accessibilityBundles]
+0x189db3050  __TEXT,__text  +[AXControlCenterUIKitGlue accessibilityInitializeBundle]
+0x189db3078  __TEXT,__text  ___57+[AXControlCenterUIKitGlue accessibilityInitializeBundle]_block_invoke
+0x189db3104  __TEXT,__text  ___57+[AXControlCenterUIKitGlue accessibilityInitializeBundle]_block_invoke_2
+0x189db310c  __TEXT,__text  ___57+[AXControlCenterUIKitGlue accessibilityInitializeBundle]_block_invoke_3
+0x189db3160  __TEXT,__text  ___57+[AXControlCenterUIKitGlue accessibilityInitializeBundle]_block_invoke_4
+0x189db32a0  __TEXT,__text  ___57+[AXControlCenterUIKitGlue accessibilityInitializeBundle]_block_invoke_5
+0x189db32f8  __TEXT,__text  ___57+[AXControlCenterUIKitGlue accessibilityInitializeBundle]_block_invoke_6
+0x189db3320  __TEXT,__text  ___57+[AXControlCenterUIKitGlue accessibilityInitializeBundle]_block_invoke_7
+0x189db3374  __TEXT,__text  ___57+[AXControlCenterUIKitGlue accessibilityInitializeBundle]_block_invoke_8
+0x189db340c  __TEXT,__text  +[CCUIControlTemplateViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189db3418  __TEXT,__text  +[CCUIControlTemplateViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189db3424  __TEXT,__text  +[CCUIControlTemplateViewAccessibility _accessibilityPerformValidations:]
+0x189db356c  __TEXT,__text  -[CCUIControlTemplateViewAccessibility accessibilityLabel]
+0x189db3578  __TEXT,__text  -[CCUIControlTemplateViewAccessibility accessibilityValue]
+0x189db3584  __TEXT,__text  -[CCUIControlTemplateViewAccessibility accessibilityHint]
+0x189db3590  __TEXT,__text  -[CCUIControlTemplateViewAccessibility accessibilityTraits]
+0x189db3618  __TEXT,__text  -[CCUIControlTemplateViewAccessibility isAccessibilityElement]
+0x189db363c  __TEXT,__text  -[CCUIControlTemplateViewAccessibility accessibilityActivate]
+0x189db38c8  __TEXT,__text  ___61-[CCUIControlTemplateViewAccessibility accessibilityActivate]_block_invoke
+0x189db3918  __TEXT,__text  +[CCUIAppLauncherViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189db3924  __TEXT,__text  +[CCUIAppLauncherViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189db3930  __TEXT,__text  +[CCUIAppLauncherViewControllerAccessibility _accessibilityPerformValidations:]
+0x189db3a74  __TEXT,__text  -[CCUIAppLauncherViewControllerAccessibility _accessibilityControlCenterShouldExpandContentModule]
+0x189db3b74  __TEXT,__text  -[CCUIAppLauncherViewControllerAccessibility _accessibilityControlCenterButtonLabel]
+0x189db3bc4  __TEXT,__text  -[CCUIAppLauncherViewControllerAccessibility _accessibilityControlCenterButtonIdentifier]
+0x189db3c14  __TEXT,__text  +[CCUIBaseSliderViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189db3c20  __TEXT,__text  +[CCUIBaseSliderViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189db3c2c  __TEXT,__text  +[CCUIBaseSliderViewAccessibility _accessibilityPerformValidations:]
+0x189db3c44  __TEXT,__text  -[CCUIBaseSliderViewAccessibility _accessibilityAbsoluteValue]
+0x189db3c7c  __TEXT,__text  -[CCUIBaseSliderViewAccessibility isAccessibilityElement]
+0x189db3cac  __TEXT,__text  -[CCUIBaseSliderViewAccessibility accessibilityTraits]
+0x189db3d84  __TEXT,__text  -[CCUIBaseSliderViewAccessibility accessibilityCustomActions]
+0x189db3e00  __TEXT,__text  +[CCUIButtonModuleViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189db3e0c  __TEXT,__text  +[CCUIButtonModuleViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189db3e18  __TEXT,__text  +[CCUIButtonModuleViewAccessibility _accessibilityPerformValidations:]
+0x189db3e80  __TEXT,__text  -[CCUIButtonModuleViewAccessibility accessibilityPath]
+0x189db3f78  __TEXT,__text  -[CCUIButtonModuleViewAccessibility isAccessibilityElement]
+0x189db4044  __TEXT,__text  -[CCUIButtonModuleViewAccessibility _accesibilityRawTraits]
+0x189db40f8  __TEXT,__text  -[CCUIButtonModuleViewAccessibility accessibilityTraits]
+0x189db4154  __TEXT,__text  -[CCUIButtonModuleViewAccessibility accessibilityCustomActions]
+0x189db41d0  __TEXT,__text  +[CCUIContinuousSliderViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189db41dc  __TEXT,__text  +[CCUIContinuousSliderViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189db41e8  __TEXT,__text  +[CCUIContinuousSliderViewAccessibility _accessibilityPerformValidations:]
+0x189db42f8  __TEXT,__text  -[CCUIContinuousSliderViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x189db4354  __TEXT,__text  -[CCUIContinuousSliderViewAccessibility accessibilityValue]
+0x189db442c  __TEXT,__text  -[CCUIContinuousSliderViewAccessibility accessibilityPath]
+0x189db44d8  __TEXT,__text  -[CCUIContinuousSliderViewAccessibility accessibilityIncrement]
+0x189db44e0  __TEXT,__text  -[CCUIContinuousSliderViewAccessibility accessibilityDecrement]
+0x189db44e8  __TEXT,__text  -[CCUIContinuousSliderViewAccessibility _axVolumeValue]
+0x189db44f4  __TEXT,__text  -[CCUIContinuousSliderViewAccessibility _axSetVolumeValue:]
+0x189db4500  __TEXT,__text  -[CCUIContinuousSliderViewAccessibility _accessibilityAdjustSliderValueInForwardDirection:]
+0x189db45b8  __TEXT,__text  ___91-[CCUIContinuousSliderViewAccessibility _accessibilityAdjustSliderValueInForwardDirection:]_block_invoke
+0x189db46b0  __TEXT,__text  -[CCUIContinuousSliderViewAccessibility accessibilityTraits]
+0x189db46f8  __TEXT,__text  -[CCUIContinuousSliderViewAccessibility _accessibilityIsVerticalAdjustableElement]
+0x189db4700  __TEXT,__text  +[CCUILabeledRoundButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189db470c  __TEXT,__text  +[CCUILabeledRoundButtonAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189db4718  __TEXT,__text  +[CCUILabeledRoundButtonAccessibility _accessibilityPerformValidations:]
+0x189db47ec  __TEXT,__text  -[CCUILabeledRoundButtonAccessibility _axLabelsVisible]
+0x189db47f8  __TEXT,__text  -[CCUILabeledRoundButtonAccessibility isAccessibilityElement]
+0x189db484c  __TEXT,__text  -[CCUILabeledRoundButtonAccessibility accessibilityLabel]
+0x189db48d0  __TEXT,__text  -[CCUILabeledRoundButtonAccessibility accessibilityHint]
+0x189db4954  __TEXT,__text  -[CCUILabeledRoundButtonAccessibility accessibilityValue]
+0x189db49d8  __TEXT,__text  -[CCUILabeledRoundButtonAccessibility accessibilityTraits]
+0x189db4a5c  __TEXT,__text  -[CCUILabeledRoundButtonAccessibility accessibilityActivationPoint]
+0x189db4ae4  __TEXT,__text  -[CCUILabeledRoundButtonAccessibility _accessibilityLoadAccessibilityInformation]
+0x189db4b70  __TEXT,__text  -[CCUILabeledRoundButtonAccessibility initWithGlyphImage:highlightColor:]
+0x189db4bc8  __TEXT,__text  +[CCUILabeledRoundButtonViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189db4bd4  __TEXT,__text  +[CCUILabeledRoundButtonViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189db4be0  __TEXT,__text  +[CCUILabeledRoundButtonViewControllerAccessibility _accessibilityPerformValidations:]
+0x189db4ce4  __TEXT,__text  -[CCUILabeledRoundButtonViewControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x189db5170  __TEXT,__text  ___95-[CCUILabeledRoundButtonViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke
+0x189db5210  __TEXT,__text  ___95-[CCUILabeledRoundButtonViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_2
+0x189db52d8  __TEXT,__text  ___95-[CCUILabeledRoundButtonViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_3
+0x189db53a4  __TEXT,__text  ___95-[CCUILabeledRoundButtonViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_4
+0x189db54b0  __TEXT,__text  ___95-[CCUILabeledRoundButtonViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_5
+0x189db54f0  __TEXT,__text  ___95-[CCUILabeledRoundButtonViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_6
+0x189db5550  __TEXT,__text  ___95-[CCUILabeledRoundButtonViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_7
+0x189db5590  __TEXT,__text  -[CCUILabeledRoundButtonViewControllerAccessibility _accessibilityControlCenterButtonFrame]
+0x189db5660  __TEXT,__text  -[CCUILabeledRoundButtonViewControllerAccessibility _accessibilityControlCenterButtonPath]
+0x189db5668  __TEXT,__text  -[CCUILabeledRoundButtonViewControllerAccessibility _accessibilityControlCenterButtonLabel]
+0x189db56dc  __TEXT,__text  -[CCUILabeledRoundButtonViewControllerAccessibility _accessibilityControlCenterButtonHint]
+0x189db56e4  __TEXT,__text  -[CCUILabeledRoundButtonViewControllerAccessibility _accessibilityControlCenterButtonIsToggle]
+0x189db5708  __TEXT,__text  -[CCUILabeledRoundButtonViewControllerAccessibility _accessibilityControlCenterButtonIdentifier]
+0x189db5710  __TEXT,__text  -[CCUILabeledRoundButtonViewControllerAccessibility _accessibilityControlCenterButtonWillExpand]
+0x189db5718  __TEXT,__text  -[CCUILabeledRoundButtonViewControllerAccessibility viewWillAppear:]
+0x189db5764  __TEXT,__text  +[CCUIMenuModuleItemViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189db5770  __TEXT,__text  +[CCUIMenuModuleItemViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189db577c  __TEXT,__text  +[CCUIMenuModuleItemViewAccessibility _accessibilityPerformValidations:]
+0x189db5860  __TEXT,__text  -[CCUIMenuModuleItemViewAccessibility isAccessibilityElement]
+0x189db58c0  __TEXT,__text  -[CCUIMenuModuleItemViewAccessibility accessibilityLabel]
+0x189db5908  __TEXT,__text  -[CCUIMenuModuleItemViewAccessibility accessibilityValue]
+0x189db5950  __TEXT,__text  -[CCUIMenuModuleItemViewAccessibility accessibilityTraits]
+0x189db59b8  __TEXT,__text  -[CCUIMenuModuleItemViewAccessibility description]
+0x189db5a68  __TEXT,__text  +[CCUIMenuModuleStackViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189db5a74  __TEXT,__text  +[CCUIMenuModuleStackViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189db5a80  __TEXT,__text  +[CCUIMenuModuleStackViewAccessibility _accessibilityPerformValidations:]
+0x189db5a84  __TEXT,__text  -[CCUIMenuModuleStackViewAccessibility shouldGroupAccessibilityChildren]
+0x189db5a8c  __TEXT,__text  -[AXCCMenuModuleElement accessibilityLabel]
+0x189db5af4  __TEXT,__text  -[AXCCMenuModuleElement accessibilityFrame]
+0x189db5b74  __TEXT,__text  -[AXCCMenuModuleElement accessibilityValue]
+0x189db5bdc  __TEXT,__text  -[AXCCMenuModuleElement accessibilityTraits]
+0x189db5c3c  __TEXT,__text  -[AXCCMenuModuleElement accessibilityHint]
+0x189db5ca4  __TEXT,__text  -[AXCCMenuModuleElement isAccessibilityElement]
+0x189db5d04  __TEXT,__text  -[AXCCMenuModuleElement index]
+0x189db5d18  __TEXT,__text  -[AXCCMenuModuleElement setIndex:]
+0x189db5d2c  __TEXT,__text  -[AXCCMenuModuleElement provider]
+0x189db5d40  __TEXT,__text  -[AXCCMenuModuleElement setProvider:]
+0x189db5d4c  __TEXT,__text  -[AXCCMenuModuleElement .cxx_destruct]
+0x189db5d60  __TEXT,__text  +[CCUIMenuModuleViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189db5d6c  __TEXT,__text  +[CCUIMenuModuleViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189db5d78  __TEXT,__text  +[CCUIMenuModuleViewControllerAccessibility _accessibilityPerformValidations:]
+0x189db5e88  __TEXT,__text  -[CCUIMenuModuleViewControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x189db6038  __TEXT,__text  ___87-[CCUIMenuModuleViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke
+0x189db6078  __TEXT,__text  ___87-[CCUIMenuModuleViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_2
+0x189db60b8  __TEXT,__text  -[CCUIMenuModuleViewControllerAccessibility _accessibilityControlCenterButtonLabel]
+0x189db61f4  __TEXT,__text  -[CCUIMenuModuleViewControllerAccessibility _accessibilityControlCenterButtonIdentifier]
+0x189db6268  __TEXT,__text  -[CCUIMenuModuleViewControllerAccessibility _accessibilityControlCenterButtonHint]
+0x189db6270  __TEXT,__text  -[CCUIMenuModuleViewControllerAccessibility _accessibilityControlCenterShouldExpandContentModule]
+0x189db62b4  __TEXT,__text  -[CCUIMenuModuleViewControllerAccessibility _accessibilityControlCenterButtonFrame]
+0x189db63f4  __TEXT,__text  -[CCUIMenuModuleViewControllerAccessibility viewDidLoad]
+0x189db6440  __TEXT,__text  -[CCUIMenuModuleViewControllerAccessibility _accessibilityModuleViewElements]
+0x189db6690  __TEXT,__text  ___77-[CCUIMenuModuleViewControllerAccessibility _accessibilityModuleViewElements]_block_invoke
+0x189db67a8  __TEXT,__text  -[CCUIMenuModuleViewControllerAccessibility _accessibilityControlCenterMenuItemAtIndexIsValid:]
+0x189db67b0  __TEXT,__text  +[CCUIRoundButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189db67bc  __TEXT,__text  +[CCUIRoundButtonAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189db67c8  __TEXT,__text  +[CCUIRoundButtonAccessibility _accessibilityPerformValidations:]
+0x189db67e0  __TEXT,__text  -[CCUIRoundButtonAccessibility accessibilityPath]
+0x189db67e4  __TEXT,__text  -[CCUIRoundButtonAccessibility isAccessibilityElement]
+0x189db6814  __TEXT,__text  -[CCUIRoundButtonAccessibility _accesibilityRawTraits]
+0x189db68c8  __TEXT,__text  -[CCUIRoundButtonAccessibility accessibilityTraits]
+0x189db6924  __TEXT,__text  -[CCUIRoundButtonAccessibility accessibilityCustomActions]
+0x189db69a0  __TEXT,__text  -[CCUIRoundButtonAccessibility _accessibilityServesAsFirstElement]
+0x189db69a8  __TEXT,__text  +[CCUISteppedSliderViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189db69b4  __TEXT,__text  +[CCUISteppedSliderViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189db69c0  __TEXT,__text  +[CCUISteppedSliderViewAccessibility _accessibilityPerformValidations:]
+0x189db6ad8  __TEXT,__text  -[CCUISteppedSliderViewAccessibility isAccessibilityElement]
+0x189db6b1c  __TEXT,__text  -[CCUISteppedSliderViewAccessibility accessibilityValue]
+0x189db6c18  __TEXT,__text  -[CCUISteppedSliderViewAccessibility accessibilityActivate]
+0x189db6cc4  __TEXT,__text  ___59-[CCUISteppedSliderViewAccessibility accessibilityActivate]_block_invoke
+0x189db6d14  __TEXT,__text  ___59-[CCUISteppedSliderViewAccessibility accessibilityActivate]_block_invoke_2
+0x189db6d4c  __TEXT,__text  -[CCUISteppedSliderViewAccessibility accessibilityIncrement]
+0x189db6d54  __TEXT,__text  -[CCUISteppedSliderViewAccessibility accessibilityDecrement]
+0x189db6d5c  __TEXT,__text  -[CCUISteppedSliderViewAccessibility _accessibilityAdjustSliderValueInForwardDirection:]
+0x189db6e24  __TEXT,__text  ___88-[CCUISteppedSliderViewAccessibility _accessibilityAdjustSliderValueInForwardDirection:]_block_invoke
+0x189db6e70  __TEXT,__text  -[CCUISteppedSliderViewAccessibility accessibilityCustomActions]
+0x189db6eec  __TEXT,__text  -[CCUISteppedSliderViewAccessibility setNumberOfSteps:]
+0x189db6f94  __TEXT,__text  -[CCUISteppedSliderViewAccessibility _axIsButtonModuleWhenCollapsed]
+0x189db6fd4  __TEXT,__text  ___68-[CCUISteppedSliderViewAccessibility _axIsButtonModuleWhenCollapsed]_block_invoke
+0x189db7048  __TEXT,__text  +[CCUIToggleViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189db7054  __TEXT,__text  +[CCUIToggleViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189db7060  __TEXT,__text  +[CCUIToggleViewControllerAccessibility _accessibilityPerformValidations:]
+0x189db7128  __TEXT,__text  -[CCUIToggleViewControllerAccessibility _accessibilityControlCenterButtonLabel]
+0x189db7240  __TEXT,__text  ___79-[CCUIToggleViewControllerAccessibility _accessibilityControlCenterButtonLabel]_block_invoke
+0x189db72a8  __TEXT,__text  -[CCUIToggleViewControllerAccessibility _accessibilityControlCenterButtonIdentifier]
+0x189db73c0  __TEXT,__text  ___84-[CCUIToggleViewControllerAccessibility _accessibilityControlCenterButtonIdentifier]_block_invoke
+0x189db7428  __TEXT,__text  -[CCUIToggleViewControllerAccessibility _accessibilityControlCenterButtonHint]
+0x189db7540  __TEXT,__text  ___78-[CCUIToggleViewControllerAccessibility _accessibilityControlCenterButtonHint]_block_invoke
+0x189db75a8  __TEXT,__text  -[CCUIToggleViewControllerAccessibility _accessibilityControlCenterButtonIsToggle]
+0x189db7604  __TEXT,__text  -[CCUIToggleViewControllerAccessibility _accessibilityControlCenterShouldExpandContentModule]
+0x189db760c  __TEXT,__text  +[CCUIButtonModuleViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189db7618  __TEXT,__text  +[CCUIButtonModuleViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189db7624  __TEXT,__text  +[CCUIButtonModuleViewControllerAccessibility _accessibilityPerformValidations:]
+0x189db7790  __TEXT,__text  -[CCUIButtonModuleViewControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x189db7e3c  __TEXT,__text  ___89-[CCUIButtonModuleViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke
+0x189db7e7c  __TEXT,__text  ___89-[CCUIButtonModuleViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_2
+0x189db7f24  __TEXT,__text  ___89-[CCUIButtonModuleViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_3
+0x189db7ff8  __TEXT,__text  ___89-[CCUIButtonModuleViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_4
+0x189db80dc  __TEXT,__text  ___89-[CCUIButtonModuleViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_5
+0x189db811c  __TEXT,__text  ___89-[CCUIButtonModuleViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_6
+0x189db817c  __TEXT,__text  ___89-[CCUIButtonModuleViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_7
+0x189db81bc  __TEXT,__text  ___89-[CCUIButtonModuleViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_8
+0x189db81fc  __TEXT,__text  ___89-[CCUIButtonModuleViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_9
+0x189db820c  __TEXT,__text  ___89-[CCUIButtonModuleViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_10
+0x189db824c  __TEXT,__text  ___89-[CCUIButtonModuleViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_11
+0x189db837c  __TEXT,__text  -[CCUIButtonModuleViewControllerAccessibility _accessibilityControlCenterButtonFrame]
+0x189db844c  __TEXT,__text  -[CCUIButtonModuleViewControllerAccessibility _accessibilityControlCenterButtonPath]
+0x189db8454  __TEXT,__text  -[CCUIButtonModuleViewControllerAccessibility _accessibilityControlCenterRoundButtonIdentifier]
+0x189db8514  __TEXT,__text  -[CCUIButtonModuleViewControllerAccessibility _accessibilityControlCenterButtonIdentifier]
+0x189db851c  __TEXT,__text  -[CCUIButtonModuleViewControllerAccessibility _accessibilityControlCenterButtonLabel]
+0x189db85bc  __TEXT,__text  -[CCUIButtonModuleViewControllerAccessibility _accessibilityControlCenterButtonHint]
+0x189db85c4  __TEXT,__text  -[CCUIButtonModuleViewControllerAccessibility _accessibilityControlCenterButtonIsToggle]
+0x189db85cc  __TEXT,__text  -[CCUIButtonModuleViewControllerAccessibility _accessibilityControlCenterButtonAdditionalTraits]
+0x189db85dc  __TEXT,__text  -[CCUIButtonModuleViewControllerAccessibility _accessibilityControlCenterElementToFocusAfterClose]
+0x189db85e8  __TEXT,__text  -[CCUIButtonModuleViewControllerAccessibility viewDidLoad]
+0x189db8634  __TEXT,__text  -[CCUIButtonModuleViewControllerAccessibility viewWillAppear:]
+```
+

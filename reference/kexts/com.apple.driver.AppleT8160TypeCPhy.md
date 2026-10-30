@@ -1,0 +1,832 @@
+# `com.apple.driver.AppleT8160TypeCPhy`
+
+- Name: AppleT8160TypeCPhy
+- Version: `1`
+- UUID: `78923C1B-4A22-3717-86F8-A11BB02F1826`
+- Source version: `317.40.3.0.0`
+- Depends on: [`com.apple.driver.AppleTypeCPhy`](com.apple.driver.AppleTypeCPhy.md) 1.0, [`com.apple.iokit.IOAccessoryManager`](com.apple.iokit.IOAccessoryManager.md) 1.0, [`com.apple.iokit.IOPortFamily`](com.apple.iokit.IOPortFamily.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 19.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 19.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 19.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 19.0
+
+## Device-tree nodes it binds (1) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/atc-phy0`](../devicetree/root__arm-io__atc-phy0.md) | `AppleT8160TypeCPhy` | `atc-phy,t8160` |
+
+## IOKit personalities (1) [KC]
+
+### AppleT8160TypeCPhy
+- `CFBundleIdentifier`: `com.apple.driver.AppleT8160TypeCPhy`
+- `IOClass`: `AppleT8160TypeCPhy`
+- `IONameMatch`: `atc-phy,t8160`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleT8160TypeCPhy`
+- `IOProbeScore`: `10000`
+- `IOProviderClass`: `AppleARMIODevice`
+
+
+## C++ classes (1) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleT8160TypeCPhy` | 0xf00 | AppleTypeCPhy → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1560)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x000130f6 off=0x008b67f0-0x008c98e6 addr=0xfffffe00078ba7f0-0xfffffe00078cd8e6 r--/r--   __TEXT            
+	sz=0x00000048 off=0x008b6e68-0x008b6eb0 addr=0xfffffe00078bae68-0xfffffe00078baeb0               __TEXT.__const            
+	sz=0x0000769f off=0x008b6eb0-0x008be54f addr=0xfffffe00078baeb0-0xfffffe00078c254f               __TEXT.__cstring          (CstringLiterals)
+	sz=0x0000b397 off=0x008be54f-0x008c98e6 addr=0xfffffe00078c254f-0xfffffe00078cd8e6               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x0003401c off=0x02a66e80-0x02a9ae9c addr=0xfffffe0009a6ae80-0xfffffe0009a9ee9c r-x/r-x   __TEXT_EXEC       
+	sz=0x00033e8c off=0x02a66e80-0x02a9ad0c addr=0xfffffe0009a6ae80-0xfffffe0009a9ed0c          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000190 off=0x02a9ad0c-0x02a9ae9c addr=0xfffffe0009a9ed0c-0xfffffe0009a9ee9c          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00000660 off=0x049cf988-0x049cffe8 addr=0xfffffe000b9d3988-0xfffffe000b9d3fe8 rw-/rw-   __DATA            
+	sz=0x00000628 off=0x049cf988-0x049cffb0 addr=0xfffffe000b9d3988-0xfffffe000b9d3fb0               __DATA.__data             
+	sz=0x00000038 off=0x00000000-0x00000038 addr=0xfffffe000b9d3fb0-0xfffffe000b9d3fe8               __DATA.__common           (Zerofill)
+003: LC_SEGMENT_64 sz=0x000009e0 off=0x012948a0-0x01295280 addr=0xfffffe00082988a0-0xfffffe0008299280 rw-/rw-   __DATA_CONST      
+	sz=0x00000008 off=0x012948a0-0x012948a8 addr=0xfffffe00082988a0-0xfffffe00082988a8         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000008 off=0x012948a8-0x012948b0 addr=0xfffffe00082988a8-0xfffffe00082988b0         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00000898 off=0x012948b0-0x01295148 addr=0xfffffe00082988b0-0xfffffe0008299148         __DATA_CONST.__const            
+	sz=0x00000040 off=0x01295148-0x01295188 addr=0xfffffe0008299148-0xfffffe0008299188         __DATA_CONST.__kalloc_type      
+	sz=0x000000c8 off=0x01295188-0x01295250 addr=0xfffffe0008299188-0xfffffe0008299250         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000030 off=0x01295250-0x01295280 addr=0xfffffe0008299250-0xfffffe0008299280         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 56 at 0x04aeae78
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     78923C1B-4A22-3717-86F8-A11BB02F1826
+008: LC_SOURCE_VERSION           317.40.3.0.0
+009: LC_FUNCTION_STARTS          offset=0x004ab68a0 size=0xe8
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleExecutable`: `AppleT8160TypeCPhy`
+- `CFBundleIdentifier`: `com.apple.driver.AppleT8160TypeCPhy`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleT8160TypeCPhy`
+- `CFBundleNumericVersion`: `16809984`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `OSBundleCompatibleVersion`: `1.0`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleTypeCPhy.kext/PlugIns/AppleT8160TypeCPhy.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198896662544`
+- `_PrelinkExecutableRelativePath`: `AppleT8160TypeCPhy`
+- `_PrelinkExecutableSize`: `295250`
+- `_PrelinkExecutableSourceAddr`: `-2198896662544`
+- `_PrelinkKmodInfo`: `-2198828402296`
+
+## Strings (713) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `TTE_%d_%d`
+- `%s@%s: %s::%s: AUSBC_CORE_EVT_BLK_C0_USB2_CTL = 0x%08x\n`
+- `%s@%s: %s::%s: \n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.FBDIVN_HALF = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_SLEEP_B_SML_IN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ROTATION_H1DAC_ODDD_ADAPTED_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `121111121222121211111111212121212111211112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222211221122112211221122112211221122112211221122112211221122112211221122112211221122112211221122112211221122112211221122112211221122112211221122112211221122112211221122`
+- `dp-training-table`
+- `hbr`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.LFSDM_DIV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_LANE0.LN0_AHB_RESET_N = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_DX_BLK_CFG_DX_DCK_OFFSET_RATE2.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_AEQ_CTRL_DFE_ADAPT_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_CFG2.H3_LOAD_EN = 0x%x (reg 0x%08x)\n`
+- `hbr2`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RX_MC_INTF_PCTRL_REGS_BLK_PMA_RXA_RXTX_DIV2_4_EN_PCTRL_SETTINGS_REG0.PMA_RXA_RXTX_DIV2_4_EN_EN_VAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_VREG_CTRL_REG0.PMA_TXA_VREG_PRIMARY_ADJUST_OV = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG1.CMD_PERIODIC_CAL_SEL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_CLOCK_CAL = 0x%x (reg 0x%08x)\n`
+- `tunable_LN0_CTLE_EQ_REGS_USB`
+- `aciophy_s2r_entry_step_13`
+- `%s@%s: %s::%s: voltage %d eq %d: eq_voltage_swing 0x%05x, eq_tx_deepmph 0x%05x, eq_tx_preepmph 0x%05x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB_CTL.USB_MODE = 0x%x\n`
+- `aciophy_dptx_main_shutdown`
+- `aciophy_apply_tunables`
+- `aciophy_apply_usb_tunables`
+- `tunable_LN1_CTLE_EQ_REGS_DFLT`
+- `tunable_LN1_SMGR_REGS_USB`
+- `usb2PhyPortReset`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.SDM_SSC_EN = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_RESET_N = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_CIO20G_POSTEQ_CAL = 0x%x (reg 0x%08x)\n`
+- `aciophy_phy_usb_s2r_exit`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_DCC_BLK_CFG_DCC_DCK_OVRD.DCK_GEN2 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_MISC_TUNE.USB2PHY_REFCLK_GATEOFF = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_USB5G_POSTEQ_CAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ROTATION_SAVTHDAC_ODDD_ADAPTED_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `tunable_USB2PHY_DFLT`
+- `%s@%s: %s::%s: ACIOPHY_BIST_BLK_MAC_USBPHY_CFG_OV2 = 0x%08x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.DCO_DITH_EN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_LANE1.CLAMP_EN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_USB_PCS_BLK_PCSFSM_SAS_REG1.SAS_PCS_RX_STATE = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_ACCAP_BLK_CFG_ACCAPAZ_CALRES.OFFSETN_0 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_CFG2.H2_LOAD_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_RXTX_REGS_ASDC_TXD_CFG_BLK_ASDC_TXD_CFG_BLK_TXEQ_2.SWING_OV_GEN1 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ATTN_CTRL_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_DCC2_REG0.PMA_TXA_DCC_MON_SML_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG4.CMD_RATEBASED_CAL_RATE4_SEL = 0x%x (reg 0x%08x)\n`
+- `tunable_LN0_TX_ASDC_TXSPL_DFLT`
+- `%s@%s: %s::%s: var regValue field ASDC_TXD_CFG_BLK_TXEQ_7.FIR_COEFF_RATE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_CALCP_EI_RX_RET_BLK_CALCP_EICAL_CFG5.CFG_CALCP_MCI_EIDAC_VLOW_WU = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_CTLE_OFFSET_BLK_CFG_CTLECAL_CTLE1_LP_R8_OVRD.CTLE1_LP_R8_VOS = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_DCC_BLK_CFG_DCC_DCK_OVRD.DCK_GEN1 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_AEQ_CTRL_R_ADAPT_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.PCLK_DIV_SEL = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.DCO_RO_STR = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.VREG0_POWER_MODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_SEQ_CFG_BLK_CFG_TXSEQ.DCC_INITIAL_CALIBRATION_BYPASS_P1 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_CIO10G_POSTEQ_CAL = 0x%x (reg 0x%08x)\n`
+- `tunable_LN1_ARBITER_REGS_DFLT`
+- `tunable_LN1_TX_ASDC_TXSPL_DFLT`
+- `tunable_L1_RXCALACC_EDSKEW_DFLT`
+- `tunable_LN1_RX_PCTRL_REGS_DFLT`
+- `aciophy_phy_cio_s2r_exit`
+- `aciophy_s2r_exit_step_7`
+- `aciophy_s2r_exit_step_14`
+- `%s@%s: %s::%s: timed out waiting for ACIOPHY_USB_PCS_BLK_PCSFSM_SAS_REG2.SAS_UC_TAKE_CONTROL_REQ = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_ACCAP_BLK_CFG_ACCAPAZ_CALRES.OFFSETP_2 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ATTN_ACCAP_HSLS_ATTN_EN_S2R.ATTN_CTLE1_RSV_CTRL_S2R = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_AEQ_CTRL_C_ADAPT_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `site.AppleT8160TypeCPhy`
+- `%s@%s: %s::%s: ACIOPHY_BIST_BLK_MAC_USBPHY_CFG_OV1.MAC_USBPHY_PWR_DOWN_OV_VAL = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_WAKE_TIMER_CTRL.WAKE_SW_TIMER = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_VREGDT_CTRL_REG0.PMA_TXA_VREG_DT_SECONDARY_TRIM_OV = 0x%x (reg 0x%08x)\n`
+- `tunable_ACIOPHY_USBC0_USB`
+- `tunable_LN1_RX_TOP_REGS_DFLT`
+- `aciophy_s2r_entry_step_19`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_DX_BLK_CFG_DX_DCK_OFFSET_RATE1.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_VREGDT_CTRL_REG0.PMA_TXA_VREG_DT_SECONDARY_TRIM = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_LANE1.LN1_AHB_RESET_N = 0x%x\n`
+- `aciophy_s2r_exit_step_22`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_AEQ_CTRL_SAVTHDAC_ADAPT_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_CCA_H0DIV_CODE_CALC_RANGE_HIGH_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_CCA_H0DIV_CODE_CALC_RANGE_LOW_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `loadS2RStepBConstants`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_CFG2.H0_LOAD_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: timed out waiting for ACIOPHY_BIST_BLK_USBPHY_MAC_STATUS1.USBPHY_MAC_PHY_STATUS = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_TX_DP_CTRL0.DPTX_RATE = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_DCC2_REG0.PMA_TXA_DCC_MON_COMP_MODE = 0x%x (reg 0x%08x)\n`
+- `tunable_ATC0AXI2AF`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_CTLE_OFFSET_BLK_CFG_CTLECAL_CTLE1_HG_R8_OVRD.CTLE1_HG_R8_VOS = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: found register range %d at 0x%016llx (0x%016llx)\n`
+- `tunable_USB2PHY_HOST`
+- `tunable_DPPLL_TOP_DFLT`
+- `tunable_LN0_TXSEQ_REGS_USB`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_AEQ_CTRL_DCK_DTC_ADAPT_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_AEQ_CTRL_ROTATION_ADAPT_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.NMOS_WASTE_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_BOOT_CAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_CCA_H2_CALC_RANGE_LOW_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_LOAD_CFG0.H0O_LOAD_VAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_LOAD_CFG2.H5_LOAD_VAL = 0x%x (reg 0x%08x)\n`
+- `dp-training-table-hbr3`
+- `tunable_LN1_TX_TXD_CFG_DP`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_SEQ_CFG_BLK_CFG_TXSEQ.LDOCAL_BYPASS_WAKEUP = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_USB10G_RATE_CAL = 0x%x (reg 0x%08x)\n`
+- `tunable_LN1_DIV40_REGS_DFLT`
+- `aciophy_s2r_entry_step_2`
+- `%s@%s: %s::%s: falling back to compatible register ranges defined by tRegisterSpaces\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_MISC_TUNE.USB2PHY_APBCLK_GATEOFF = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.FREQINIT_COUNT_TARGET = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.KI_EXP = 0x%x\n`
+- `tunable_ATC_COMMON_CFG`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_SAMPLER_OFFSET_BLK_CFG_REG11.CFG_VTH_OFFSET_CODE_EVEND_RATE4321 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_SAMPLER_OFFSET_BLK_CFG_REG12.CFG_VTH_OFFSET_CODE_EVENE_RATE4321 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ATTN_DFE_ADAPT_EN_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_BIST_BLK_BIST_CFG0.BIST_CLOCK_EN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_WAKE_TIMER_CTRL.WAKE_ALPM_TIMER = 0x%x\n`
+- `aciophy_aux_shutdown`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_CLE_LOWPEAK_EN_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_CTL.USB2PHY_APB_RESETN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_TXD_REGS_BLK_ASDC_TXD_CFG_BLK_TXEQ_0.RCAL_SCALE_SEL_LFPS = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_B.FBDIVN_FRAC_DEN = 0x%x\n`
+- `tunable_L0_RXCALACC_HALFUI_DFLT`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_ACCAP_BLK_CFG_ACCAPAZ_CALRES.OFFSETN_1 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_CTLE_OFFSET_BLK_CFG_CTLECAL_CTLE1_LP_R0_OVRD.CTLE1_LP_R0_VOS = 0x%x (reg 0x%08x)\n`
+- `rbr`
+- `%s@%s: %s::%s: C0_UTMI_CLK_ACTIVE.EVT_CNT is 0\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_TX_DP_CTRL0.DPTXPHY_PMA_LANE_RESET_N = 0x%x\n`
+- `tunable_LN1_RXAEQ_TOP_REGS_DFLT`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_ACCAP_BLK_CFG_ACCAPAZ_CALRES.OFFSETP_3 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_DCC_BLK_CFG_DCC_XCK_OVRD.XCK_GEN1 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: var regValue field ACIOPHY_BIST_BLK_MAC_USBPHY_CFG_OV1.MAC_USBPHY_PIPE_RESET_N_OV_VAL = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_CMD_FD_CONTROL.CFG_PLL_VCLK_STOP_DIRECT_CONTROL = 0x%x\n`
+- `tunable_LN1_DETECTOR_REGS_USB`
+- `eusb2phy_shutdown`
+- `eusb2phy_s2r_enter`
+- `eusb2phy_s2r_exit`
+- `aciophy_pipe_bist_override`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_LANE_TOP_CFG_BLK_CFG_PSEQ_RW0.IS_PMARX_DP_LANE = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.VREGCK_BYPASS = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG2.CMD_RATEBASED_CAL_RATE0_SEL = 0x%x (reg 0x%08x)\n`
+- `tunable_LN0_TX_SHM_AHB_DFLT`
+- `AppleT8160TypeCPhy.cpp`
+- `aciophy_dp_configure_logical_lane0`
+- `aciophy_phy_init_partC`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_LANE0.CLAMP_EN = 0x%x\n`
+- `tunable_LN0_RXAEQ_TOP_REGS_DFLT`
+- `tunable_LN1_DIV40_REGS_USB`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_CTLE_OFFSET_BLK_CFG_CTLECAL_CTLE1_HG_R0_OVRD.CTLE1_HG_R0_VOS = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_SAMPLER_OFFSET_BLK_CFG_REG11.CFG_VTH_OFFSET_CODE_ODDD_RATE4321 = 0x%x (reg 0x%08x)\n`
+- `aciophy_drive_dptx_pma_lane_reset`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_XBAR.PROTOCOL_MODE_SEL = 0x%x\n`
+- `tunable_ACIOPHY_CMN_DFLT`
+- `aciophy_s2r_exit_step_16`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREGDT_VOUT_TRIM = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_TXSPL_TXDCC_BLK_CFG_TX_DCC_SAVED_CODE_REG.CFG_DCC_SAVED_CODE = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_SEQ_CFG_BLK_CFG_TXSEQ4.DP_ALPM_IS_LOGICAL_LANE0 = 0x%x (reg 0x%08x)\n`
+- `tunable_LN1_TXSEQ_REGS_DFLT`
+- `aciophy_s2r_entry_step_9`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_EDSKEW_BLK_CFG_ED_ECK_OFFSET_RATE1.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_HALFUI_BLK_CFG_DTC_MAX_CODE_RATE0.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ROTATION_H1DAC_EVEND_ADAPTED_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_CFG2.H4_LOAD_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: PHY lane %d DP lane %d\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RX_MC_INTF_SHM_REGS_BLK_APB_OVERRIDE_REG_REG64.PMA_RXA_RXTX_DCC_MON_SML_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_EQ0.BYPASS_FULL_EQ_USB10G = 0x%x (reg 0x%08x)\n`
+- `tunable_DPPLL_CORE_DFLT`
+- `tunable_LN0_RXAEQ_TOP_REGS_USB`
+- `aciophy_s2r_entry_step_11`
+- `aciophy_s2r_exit_step_13`
+- `%s@%s: %s::%s: LANE%d_ASDC_CALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREG_CK_SECONDARY = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: failed to find required register ranges\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_SIG.VBUS_VALID_EXT_FORCE_VAL = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_EQ0.BYPASS_FULL_EQ_USB5G = 0x%x (reg 0x%08x)\n`
+- `tunable_LN0_RX_PCTRL_REGS_DFLT`
+- `tunable_LN0_DIV40_REGS_USB`
+- `tunable_LN1_SMGR_REGS_DFLT`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_TXD_REGS_BLK_ASDC_TXD_CFG_BLK_TXEQ_2.SWING_OV_GEN1 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_USB_PCS_BLK_PCSFSM_SAS_REG1.SAS_UC_TAKE_CONTROL_ACK = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_DCC2_REG0.PMA_TXA_DCC_MON_SML_EN_OV = 0x%x (reg 0x%08x)\n`
+- `aciophy_drive_dptx_wake_cmd`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.DCO_RO_ENCAP = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_USB5G_SPDCHG_BOOT_CAL = 0x%x (reg 0x%08x)\n`
+- `tunable_ATCAXI2AF_LOCK_LOCK`
+- `tunable_LN0_RX_SHM_REGS_DFLT`
+- `tunable_ASDC_AUX_SHM_DFLT`
+- `%s@%s: %s::%s: var regValue field ASDC_TXD_CFG_BLK_TXEQ_7.PREEPMPH_OV_GEN1 = 0x%x\n`
+- `%s@%s: %s::%s: var value field AUSBC_CORE_EVT_BLK_C0_USB2_CTL.LOAD_CNT = 0x%x\n`
+- `usb2PhyPortReset_block_invoke`
+- `aciophy_cfg_dptx_pll`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.VREGCAL_REF_SEL = 0x%x\n`
+- `%s@%s: %s::%s: timed out waiting for ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_1.ACIOPHY_SLEEP_B_BIG_OUT = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_VREGCK_CTRL_REG0.PMA_TXA_VREG_CK_SECONDARY_TRIM_OV = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG0.CMD_CLOCK1_CAL_SEL = 0x%x (reg 0x%08x)\n`
+- `tunable_LN0_TXSPL_TXDCC_DFLT`
+- `displayPortDriveSettingsChange_block_invoke`
+- `eusb2phy_init`
+- `%s@%s: %s::%s: var regValue field ACIOPHY_BIST_BLK_MAC_USBPHY_CFG_OV2.MAC_USBPHY_PWR_DOWN_OV = 0x%x\n`
+- `tunable_LN0_TX_TXD_CFG_DP`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG2.CMD_RATEBASED_CAL_RATE1_SEL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_TXSPL_CM_BLK_CMFC_REG_2.CFG_CM_TIMEOUT = 0x%x (reg 0x%08x)\n`
+- `aciophy_lane_ahb_reset`
+- `aciophy_s2r_exit_step_18`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_USB5G_RATE_CAL = 0x%x (reg 0x%08x)\n`
+- `aciophy_phy_init_partB`
+- `%s@%s: %s::%s: var regValue field ASDC_TXD_CFG_BLK_TXEQ_7.DEEPMPH_OV_GEN1 = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_CALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREG_PRIMARY = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_CALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREG_DT_SECONDARY = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_EDSKEW_BLK_CFG_ED_ECK_OFFSET_RATE2.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ROTATION_SAVTHDAC_EVEND_ADAPTED_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_CCA_ATTN_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_CORE_DPPLL_CFG_MC_CLKOUT_0.PLLA_PCLKDRVL_EN = 0x%x\n`
+- `aciophy_phy_powerup_rst`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_CIO20G_RATE_CAL = 0x%x (reg 0x%08x)\n`
+- `tunable_ACIOPHY_USBC0_DFLT`
+- `tunable_LN1_ASDC_TXSPL_CM_DFLT`
+- `%s@%s: %s::%s: index %d offset 0x%08x invalid (rangeLength 0x%08llx)\n`
+- `%s@%s: %s::%s: ACIOPHY_USB_PCS_BLK_PCSFSM_SAS_REG1.SAS_FSM_STATES = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_CALCP_EI_RX_RET_BLK_CALCP_EICAL_CFG5.CFG_CALCP_MCI_EIDAC_VHIGH_WU = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_CTL.USB2PHY_PORT_RESET = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG0.CMD_NOCLOCK_CAL_SEL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_CALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREF = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ROTATION_SAVTHDAC_EVENE_OFFSET_APP_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_LOAD_CFG1.H1E_LOAD_VAL = 0x%x (reg 0x%08x)\n`
+- `dp-training-table-hbr`
+- `tunable_CIOPLL_CORE_DFLT`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_LANE0.SLEEP_B_SML_IN_AON2LANE = 0x%x\n`
+- `tunable_LN1_TX_SHM_AHB_DFLT`
+- `aciophy_s2r_entry_step_21`
+- `loadS2RStepB`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ATTN_ACCAP_HSLS_ATTN_EN_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_LOAD_CFG2.H3_LOAD_VAL = 0x%x (reg 0x%08x)\n`
+- ` @%s:%d`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_WAKE_FSM_CTRL.WAKE = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.FREQINIT_STEP_SIZE = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_LANE0.SLEEP_B_BIG_IN_AON2LANE = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_CORE2MC_SLP_CTRL_2.AUX_SML = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_BIST_BLK_BIST_CFG0.BIST_ACIOPHY_RESET_N_OV = 0x%x\n`
+- `aciophy_s2r_exit_step_6`
+- `aciophy_s2r_exit_step_21`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_LANE_TOP_CFG_BLK_CFG_PSEQ_RW0.IS_PMATX_DP_LANE = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_B.FBDIVN_FRAC_NUM = 0x%x\n`
+- `%s@%s: %s::%s: var regValue field ACIOPHY_TOP_BLK_CFG0_XBAR.DP_SINGLE_PMA = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_CORE2MC_SLP_CTRL_2.RXA_SLEEP_B_LFPS_SML_IN_FINAL1 = 0x%x\n`
+- `tunable_L1_RXCALACC_HALFUI_DFLT`
+- `loadS2RStepAConstants`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_CFG2.H5_LOAD_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_CFG2.H1_LOAD_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: applying %s\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_CTL.USB2PHY_RESET = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_DP_CLKSWITCH_SELECT_CONTROL_REGS.SWITCH1_CLK_SELECT = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_DCC2_REG0.PMA_TXA_DCC_MON_BIG_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_SEQ_CFG_BLK_CFG_TXSEQ3.MCI_ARBITER_OUT_PULL_MODE = 0x%x (reg 0x%08x)\n`
+- `tunable_LN0_RX_DFE_REGS_DFLT`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_SPARE_REGISTERS_0.CFG_S2R_FSM_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_RC_DRIVE_CS_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXTX_SEQ_CFG_BLK_SEQ_FSM_0_REG.RXTXSEQ_LOGICAL_LANE0 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.SDM_SSC_STEP = 0x%x\n`
+- `tunable_ATCAXI2AF_WR_DIS`
+- `%s@%s: %s::%s: LANE%d_RXTX_REGS_ASDC_TXD_CFG_BLK_ASDC_TXD_CFG_BLK_TXEQ_7 = 0x%08x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_AEQ_CTRL_PEAK_ADAPT_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_LOAD_CFG0.H0E_LOAD_VAL = 0x%x (reg 0x%08x)\n`
+- `loadS2RStepCConstants`
+- `hbr3`
+- `%s@%s: %s::%s: ACIOPHY_BIST_BLK_BIST_CFG2.USBPHY_MAC_PHY_STATUS_RE = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.SSC_FF_STEP = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_XBAR = 0x%08x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREF_ADJUST = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_DCC_BLK_CFG_DCC_ECK_OVRD.ECK_GEN1 = 0x%x (reg 0x%08x)\n`
+- `dp-training-table-hbr2`
+- `%s@%s: %s::%s: var regValue field ACIOPHY_BIST_BLK_MAC_USBPHY_CFG_OV1.MAC_USBPHY_PWR_DOWN_OV_VAL = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_VREF_CTRL_REG0.PMA_TXA_VREF_ADJUST = 0x%x (reg 0x%08x)\n`
+- `aciophy_mc_pwrdn_seq_sub`
+- `tunable_LN0_DIV40_REGS_DFLT`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREGDT_ADJUST = 0x%x (reg 0x%08x)\n`
+- `loadS2RStepC`
+- `%s@%s: %s::%s: found boot-arg %s=%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_XBAR.DP_LOGICAL_LANE_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_CIO10G_RATE_CAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_CORE2MC_SLP_CTRL_2.RXA_SLEEP_B_LFPS_BIG_IN_FINAL1 = 0x%x\n`
+- `aciophy_aux_init`
+- `tunable_LN0_ARBITER_REGS_DFLT`
+- `tunable_LN0_RX_TOP_REGS_DFLT`
+- `%s@%s: %s::%s: timed out waiting for ATCPHY_CFG_BLK_ATCPHY_SPARE_REGISTERS_1.CFG_S2R_FSM_BUSY = 0x%x\n`
+- `AppleT8160TypeCPhy`
+- `%s@%s: %s::%s: LANE%d_ASDC_TXSPL_TXDCC_BLK_CFG_TX_DCC_REG_2.CFG_DCC_IDLE_MON_SEL = 0x%x (reg 0x%08x)\n`
+- `aciophy_phy_deassert_aciophy_reset`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_ACCAP_BLK_CFG_ACCAPAZ_CALRES.OFFSETP_0 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_HALFUI_BLK_CFG_DTC_MAX_CODE_RATE2.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_CCA_H2_CALC_RANGE_HIGH_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `aciophy_dp_wakeup_alpm_timer`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.VCLK_OP_DIVN = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_CORE_DPPLL_CFG_MC_CLKOUT_0.PLLA_REFBUFCLK_DIVN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_SEQ_CFG_BLK_CFG_TXSEQ.DCC_INITIAL_CALIBRATION_BYPASS_P0 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_VREG_CTRL_REG0.PMA_TXA_VREG_PRIMARY_ADJUST = 0x%x (reg 0x%08x)\n`
+- `tunable_LN0_SMGR_REGS_DFLT`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_TXD_REGS_BLK_ASDC_TXD_CFG_BLK_TXEQ_7 = 0x%08x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_LOAD_CFG1.H1O_LOAD_VAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RX_MC_INTF_SHM_REGS_BLK_APB_OVERRIDE_REG_REG64.PMA_RXA_RXTX_DCC_MON_SML_EN_OV = 0x%x (reg 0x%08x)\n`
+- `aciophy_phy_shutdown`
+- `tunable_LN0_DETECTOR_REGS_USB`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_SAMPLER_OFFSET_BLK_CFG_REG10.CFG_VTH_OFFSET_CODE_EVENX_RATE4321 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_SIG.VBUS_VALID_EXT_FORCE_EN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_TX_DP_CTRL0.DPTX_PCLK1_SELECT = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_TX_DP_CTRL0.DPTXPHY_PMA_LANE_RESET_N_OV = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.DCO_BIASDAC_CODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_USB10G_POSTEQ_CAL = 0x%x (reg 0x%08x)\n`
+- `tunable_LN0_TXSEQ_REGS_DFLT`
+- `tunable_LN1_RX_DFE_REGS_DFLT`
+- `%s@%s: %s::%s: LANE%d_ASDC_TXSPL_TXDCC_BLK_CFG_TX_DCC_REG_3.CFG_DCC_BYPASS = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_EQ0.BYPASS_FULL_EQ_CIO20G = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_ACCAP_BLK_CFG_ACCAPAZ_CALRES.OFFSETN_3 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.DCO_ROLS_STR = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_TX_DP_CTRL0.DPTX_PCLK2_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_CLAMP_EN = 0x%x\n`
+- `tunable_LN0_SMGR_REGS_USB`
+- `aciophy_s2r_entry_step_17`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_LOAD_CFG2.H4_LOAD_VAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: var regValue field ACIOPHY_TOP_BLK_CFG0_XBAR.PROTOCOL_MODE_SEL = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_AHB_RESET_N = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_EQ0.BYPASS_FULL_EQ_CIO10G = 0x%x (reg 0x%08x)\n`
+- `tunable_ATC_FABRIC`
+- `tunable_CIOPLL_TOP_DFLT`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREGCK_ADJUST = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_TXSPL_TXDCC_BLK_CFG_TX_DCC_SAVED_CODE_REG.CFG_DCC_SAVED_CODE_RATE1 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_LOAD_CFG2.H2_LOAD_VAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_BIST_BLK_MAC_USBPHY_CFG_OV1 = 0x%08x\n`
+- `tunable_LN1_RXTX_TXD_CFG_DP`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RX_MC_INTF_SHM_REGS_BLK_APB_OVERRIDE_REG_REG64.PMA_RXA_RXTX_DCC_MON_BIG_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_TX_DP_CTRL0.DPTX_PCLK1_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_EQ0.FULL_EQ_MEASURE_FOM_CIO = 0x%x (reg 0x%08x)\n`
+- `getTrainingTableEntry`
+- `displayPortDriveSettingsOverride`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_DP_CLKSWITCH_ENABLE_CONTROL_REGS.SWITCH1_PCLK1_EN = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.KP_EXP = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_SLEEP_B_BIG_IN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_VREF_CTRL_REG0.PMA_TXA_VREF_ADJUST_OV = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_CORE2MC_SLP_CTRL_2.RXA_SLEEP_B_LFPS_BIG_IN_FINAL0 = 0x%x\n`
+- `tunable_LN1_TXSEQ_REGS_USB`
+- `%s@%s: %s::%s: var regValue field ACIOPHY_BIST_BLK_MAC_USBPHY_CFG_OV2.MAC_USBPHY_PIPE_RESET_N_OV = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_CMD_CMDOVERRIDE.PLL_STOP_VCLK_SYNC_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_RXTX_REGS_ASDC_TXD_CFG_BLK_ASDC_TXD_CFG_BLK_TXEQ_0.RCAL_SCALE_SEL_LFPS = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.KP_MAN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG3.CMD_RATEBASED_CAL_RATE2_SEL = 0x%x (reg 0x%08x)\n`
+- `tunable_LN0_TX_TXD_CFG_USB`
+- `aciophy_dptx_set_txeq_tx_preset`
+- `aciophy_dptx_set_txeq_rx_preset`
+- `start`
+- `aciophy_phy_efuse_load`
+- `%s@%s: %s::%s: LANE%d_ASDC_TXSPL_CM_BLK_CMFC_REG_3.CFG_CM_TIMER_BASED_THRESH = 0x%x (reg 0x%08x)\n`
+- `tunable_LN0_CTLE_EQ_REGS_DFLT`
+- `aciophy_s2r_exit_step_9`
+- `applyTunables`
+- `%s@%s: %s::%s: PA 0x%llx mask 0x%08x value 0x%08x (read 0x%08x wrote 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_HALFUI_BLK_CFG_DTC_MAX_CODE_RATE1.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: device memory range 0x%016llx - 0x%016llx\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_DCC2_REG0.PMA_TXA_DCC_MON_BIG_EN_OV = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_RXTX_ASDC_TXSPL_TXDCC_BLK_ASDC_TXSPL_TXDCC_BLK_CFG_TX_DCC_REG_2.CFG_DCC_IDLE_MON_SEL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RX_MC_INTF_SHM_REGS_BLK_APB_OVERRIDE_REG_REG65.PMA_RXA_RXTX_DCC_MON_BIG_EN_OV = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_CORE_DPPLL_CFG_MC_CLKOUT_0.PLLA_REFBUFCLKDRVL_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG3.CMD_RATEBASED_CAL_RATE3_SEL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_CORE2MC_SLP_CTRL_2.AUX_BIG = 0x%x\n`
+- `tunable_LN0_ASDC_TXSPL_CM_DFLT`
+- `aciophy_dptx_main_init`
+- `aciophy_dp_clk_enable`
+- `aciophy_apply_dptx_tunables`
+- `aciophy_phy_cio_s2r_entry`
+- `aciophy_s2r_entry_step_8`
+- `aciophy_s2r_entry_step_15`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_ACCAP_BLK_CFG_ACCAPAZ_CALRES.OFFSETN_2 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ATTN_ACCAP_HSLS_ATTN_EN_S2R.ATTN_DFE_H2_H5_RANGE_ADJ_S2R = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: found an override for voltage %d eq %d\n`
+- `tunable_LN1_CTLE_EQ_REGS_USB`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREGRO_ADJUST = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_TXSPL_TXDCC_BLK_CFG_TX_DCC_SAVED_CODE_REG.CFG_DCC_SAVED_CODE_RATE3 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ROTATION_SAVTHDAC_ODDE_OFFSET_APP_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `TTE_%s_%d_%d`
+- `tunable_USB2PHY_DEV`
+- `%s@%s: %s::%s: var value field AUSBC_CORE_EVT_BLK_C0_USB2_CTL.EVT_EN = 0x%x\n`
+- `tunable_LN1_TX_TXD_CFG_USB`
+- `%s@%s: %s::%s: No S2R save state\n`
+- `aciophy_s2r_exit_step_11`
+- `%s@%s: %s::%s: ACIOPHY_USB_PCS_BLK_PCSFSM_SAS_REG2.SAS_UC_RELEASE_CONTROL = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_SAMPLER_OFFSET_BLK_CFG_REG12.CFG_VTH_OFFSET_CODE_ODDE_RATE4321 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: PHY lane %d for DP lane %d is not ready\n`
+- `%s@%s: %s::%s: ACIOPHY_BIST_BLK_MAC_USBPHY_CFG_OV2.MAC_USBPHY_PWR_DOWN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_DCC2_REG0.PMA_TXA_DCC_MON_COMP_MODE_OV = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: timed out waiting for ATCPHY_CFG_BLK_ATCPHY_DP_CLKSWITCH_STATUS_REGS.SWITCH1_PCLK1_EN_STATUS = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG1.CMD_CLOCK2_CAL_SEL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_SPARE_REGISTERS_0.CFG_S2R_USB_LN_SWAP = 0x%x\n`
+- `tunable_LN1_RX_SHM_REGS_DFLT`
+- `%s@%s: %s::%s: PA 0x%llx mask 0x%08x value 0x%08x already set (read 0x%08x)\n`
+- `%s@%s: %s::%s: failed to find register range %d\n`
+- `aciophy_apply_dptx_pma_tunables`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_SEQ_CFG_BLK_CFG_TXSEQ.MCI_ARBITER_HIZ = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_LANE1.SLEEP_B_SML_IN_AON2LANE = 0x%x\n`
+- `tunable_L0_RXCALACC_EDSKEW_DFLT`
+- `%s@%s: %s::%s: LANE%d_ASDC_TXSPL_TXDCC_BLK_CFG_TX_DCC_SAVED_CODE_REG.CFG_DCC_SAVED_CODE_RATE2 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_RC_DRIVE_RS_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `i8@?0`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_CTL.USB2PHY_SIDDQ = 0x%x\n`
+- `%s@%s: %s::%s: timed out waiting for ACIOPHY_BIST_BLK_USBPHY_MAC_STATUS1.USBPHY_MAC_PHY_STATUS_2 = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_TX_DP_CTRL0.DPRX_PCLK_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_VREGCK_CTRL_REG0.PMA_TXA_VREG_CK_SECONDARY_TRIM = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_USB10G_SPDCHG_BOOT_CAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_CORE2MC_SLP_CTRL_2.RXA_SLEEP_B_LFPS_SML_IN_FINAL0 = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_LANE1.SLEEP_B_BIG_IN_AON2LANE = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_BIST_BLK_BIST_CFG0.BIST_USB_REGSYNC = 0x%x\n`
+- `%s@%s: %s::%s: timed out waiting for ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_1.ACIOPHY_SLEEP_B_SML_OUT = 0x%x\n`
+- `aciophy_lane_pwrup_seq_sub`
+- `tunable_LN1_TXSPL_TXDCC_DFLT`
+- `tunable_LN1_RXAEQ_TOP_REGS_USB`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_ACCAP_BLK_CFG_ACCAPAZ_CALRES.OFFSETP_1 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_DCC_BLK_CFG_DCC_XCK_OVRD.XCK_GEN2 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_IQA_DTC_DCK_POS_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `dp-training-table-rbr`
+- `tunable_LN0_RXTX_TXD_CFG_DP`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_S2R_AON_SYNC_RST_N.S2R_AON_SYNC_RST_N = 0x%x\n`
+- `aciophy_s2r_exit_step_25`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_SEQ_CFG_BLK_CFG_TXSEQ.DIV2_4_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.DCO_DAC_REF_DIODE_SIZE = 0x%x\n`
+- `aciophy_xbar_config`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_SAMPLER_OFFSET_BLK_CFG_REG10.CFG_VTH_OFFSET_CODE_ODDX_RATE4321 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_DCC_BLK_CFG_DCC_ECK_OVRD.ECK_GEN2 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_AEQ_CTRL_ATTN_ADAPT_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_CCA_CS_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_CCA_RS_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: var regValue field ACIOPHY_TOP_BLK_CFG0_XBAR.DP_BOTH_PMA = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_CORE2MC_SLP_CTRL_2.AUX_CLAMPEN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_CTLE_OFFSET_BLK_CFG_CTLECAL_CTLE1_HG_R15_OVRD.CTLE1_HG_R15_VOS = 0x%x (reg 0x%08x)\n`
+
+**[__TEXT.__os_log]**
+
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_IQA_DTC_DCK_POS_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_TX_DP_CTRL0.DPTX_PCLK1_SELECT = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.VREG0_POWER_MODE = 0x%x\n`
+- `%s@%s: %s::%s: var regValue field ACIOPHY_TOP_BLK_CFG0_XBAR.DP_SINGLE_PMA = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_CIO10G_POSTEQ_CAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_LANE1.LN1_AHB_RESET_N = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_ACCAP_BLK_CFG_ACCAPAZ_CALRES.OFFSETP_0 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: var regValue field ACIOPHY_BIST_BLK_MAC_USBPHY_CFG_OV1.MAC_USBPHY_PIPE_RESET_N_OV_VAL = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.FBDIVN_HALF = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.SDM_SSC_EN = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_CORE_DPPLL_CFG_MC_CLKOUT_0.PLLA_REFBUFCLK_DIVN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG3.CMD_RATEBASED_CAL_RATE2_SEL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_HALFUI_BLK_CFG_DTC_MAX_CODE_RATE2.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_LOAD_CFG0.H0O_LOAD_VAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_CTL.USB2PHY_RESET = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_RXTX_REGS_ASDC_TXD_CFG_BLK_ASDC_TXD_CFG_BLK_TXEQ_7 = 0x%08x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_SPARE_REGISTERS_0.CFG_S2R_FSM_EN = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_CORE_DPPLL_CFG_MC_CLKOUT_0.PLLA_PCLKDRVL_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_CALCP_EI_RX_RET_BLK_CALCP_EICAL_CFG5.CFG_CALCP_MCI_EIDAC_VHIGH_WU = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_SAMPLER_OFFSET_BLK_CFG_REG11.CFG_VTH_OFFSET_CODE_EVEND_RATE4321 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_BIST_BLK_MAC_USBPHY_CFG_OV1.MAC_USBPHY_PWR_DOWN_OV_VAL = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_CALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREG_DT_SECONDARY = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREGDT_ADJUST = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_DCC_BLK_CFG_DCC_DCK_OVRD.DCK_GEN1 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ROTATION_H1DAC_EVEND_ADAPTED_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_RC_DRIVE_RS_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_MISC_TUNE.USB2PHY_APBCLK_GATEOFF = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.DCO_ROLS_STR = 0x%x\n`
+- `%s@%s: %s::%s: var regValue field ACIOPHY_TOP_BLK_CFG0_XBAR.DP_BOTH_PMA = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_CTLE_OFFSET_BLK_CFG_CTLECAL_CTLE1_LP_R8_OVRD.CTLE1_LP_R8_VOS = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ROTATION_SAVTHDAC_ODDD_ADAPTED_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_RC_DRIVE_CS_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ATTN_ACCAP_HSLS_ATTN_EN_S2R.ATTN_DFE_H2_H5_RANGE_ADJ_S2R = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: \n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_VREGCK_CTRL_REG0.PMA_TXA_VREG_CK_SECONDARY_TRIM_OV = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_USB5G_RATE_CAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_TXSPL_TXDCC_BLK_CFG_TX_DCC_SAVED_CODE_REG.CFG_DCC_SAVED_CODE_RATE3 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_BIST_BLK_MAC_USBPHY_CFG_OV2 = 0x%08x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RX_MC_INTF_SHM_REGS_BLK_APB_OVERRIDE_REG_REG64.PMA_RXA_RXTX_DCC_MON_SML_EN_OV = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_ACCAP_BLK_CFG_ACCAPAZ_CALRES.OFFSETN_3 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_DCC_BLK_CFG_DCC_ECK_OVRD.ECK_GEN1 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_BIST_BLK_MAC_USBPHY_CFG_OV2.MAC_USBPHY_PWR_DOWN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_DCC2_REG0.PMA_TXA_DCC_MON_BIG_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_TX_DP_CTRL0.DPRX_PCLK_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_LANE1.SLEEP_B_BIG_IN_AON2LANE = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ATTN_CTRL_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: timed out waiting for ACIOPHY_BIST_BLK_USBPHY_MAC_STATUS1.USBPHY_MAC_PHY_STATUS = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_TX_DP_CTRL0.DPTX_PCLK1_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.DCO_RO_STR = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_SAMPLER_OFFSET_BLK_CFG_REG10.CFG_VTH_OFFSET_CODE_ODDX_RATE4321 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_LOAD_CFG2.H5_LOAD_VAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_CTL.USB2PHY_PORT_RESET = 0x%x\n`
+- `%s@%s: %s::%s: var value field AUSBC_CORE_EVT_BLK_C0_USB2_CTL.EVT_EN = 0x%x\n`
+- `%s@%s: %s::%s: var regValue field ACIOPHY_BIST_BLK_MAC_USBPHY_CFG_OV2.MAC_USBPHY_PWR_DOWN_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_CORE2MC_SLP_CTRL_2.AUX_BIG = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_DCC_BLK_CFG_DCC_DCK_OVRD.DCK_GEN2 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_CCA_RS_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: found register range %d at 0x%016llx (0x%016llx)\n`
+- `%s@%s: %s::%s: var regValue field ASDC_TXD_CFG_BLK_TXEQ_7.DEEPMPH_OV_GEN1 = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_CFG2.H0_LOAD_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: var regValue field ACIOPHY_TOP_BLK_CFG0_XBAR.PROTOCOL_MODE_SEL = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG1.CMD_PERIODIC_CAL_SEL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_ACCAP_BLK_CFG_ACCAPAZ_CALRES.OFFSETP_3 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_LOAD_CFG1.H1E_LOAD_VAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_CTL.USB2PHY_APB_RESETN = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.DCO_BIASDAC_CODE = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_LANE0.CLAMP_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_CALCP_EI_RX_RET_BLK_CALCP_EICAL_CFG5.CFG_CALCP_MCI_EIDAC_VLOW_WU = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_ACCAP_BLK_CFG_ACCAPAZ_CALRES.OFFSETN_2 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_AEQ_CTRL_ATTN_ADAPT_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: timed out waiting for ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_1.ACIOPHY_SLEEP_B_BIG_OUT = 0x%x\n`
+- `%s@%s: %s::%s: var regValue field ACIOPHY_BIST_BLK_MAC_USBPHY_CFG_OV2.MAC_USBPHY_PIPE_RESET_N_OV = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.KP_EXP = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_CFG2.H5_LOAD_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: PHY lane %d for DP lane %d is not ready\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.DCO_DITH_EN = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.SSC_FF_STEP = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG2.CMD_RATEBASED_CAL_RATE0_SEL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_USB10G_POSTEQ_CAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_EQ0.BYPASS_FULL_EQ_USB5G = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_CALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREF = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_ACCAP_BLK_CFG_ACCAPAZ_CALRES.OFFSETP_1 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_SEQ_CFG_BLK_CFG_TXSEQ.DIV2_4_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_SEQ_CFG_BLK_CFG_TXSEQ.MCI_ARBITER_HIZ = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREF_ADJUST = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_XBAR.PROTOCOL_MODE_SEL = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_CORE2MC_SLP_CTRL_2.RXA_SLEEP_B_LFPS_SML_IN_FINAL1 = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_USB_PCS_BLK_PCSFSM_SAS_REG1.SAS_PCS_RX_STATE = 0x%x\n`
+- `%s@%s: %s::%s: failed to find required register ranges\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_XBAR.DP_LOGICAL_LANE_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG2.CMD_RATEBASED_CAL_RATE1_SEL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_TXSPL_TXDCC_BLK_CFG_TX_DCC_SAVED_CODE_REG.CFG_DCC_SAVED_CODE_RATE2 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: falling back to compatible register ranges defined by tRegisterSpaces\n`
+- `%s@%s: %s::%s: PHY lane %d DP lane %d\n`
+- `%s@%s: %s::%s: ACIOPHY_BIST_BLK_MAC_USBPHY_CFG_OV1 = 0x%08x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_RESET_N = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_USB_PCS_BLK_PCSFSM_SAS_REG2.SAS_UC_RELEASE_CONTROL = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_USB_PCS_BLK_PCSFSM_SAS_REG1.SAS_FSM_STATES = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_CTLE_OFFSET_BLK_CFG_CTLECAL_CTLE1_HG_R8_OVRD.CTLE1_HG_R8_VOS = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_CCA_H0DIV_CODE_CALC_RANGE_LOW_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: timed out waiting for ATCPHY_CFG_BLK_ATCPHY_DP_CLKSWITCH_STATUS_REGS.SWITCH1_PCLK1_EN_STATUS = 0x%x\n`
+- `%s@%s: %s::%s: var regValue field ASDC_TXD_CFG_BLK_TXEQ_7.PREEPMPH_OV_GEN1 = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_SAMPLER_OFFSET_BLK_CFG_REG10.CFG_VTH_OFFSET_CODE_EVENX_RATE4321 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_TXSPL_TXDCC_BLK_CFG_TX_DCC_SAVED_CODE_REG.CFG_DCC_SAVED_CODE = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_TXSPL_TXDCC_BLK_CFG_TX_DCC_REG_3.CFG_DCC_BYPASS = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG1.CMD_CLOCK2_CAL_SEL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_CORE2MC_SLP_CTRL_2.RXA_SLEEP_B_LFPS_SML_IN_FINAL0 = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_LANE1.SLEEP_B_SML_IN_AON2LANE = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.PCLK_DIV_SEL = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.NMOS_WASTE_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ATTN_ACCAP_HSLS_ATTN_EN_S2R.ATTN_CTLE1_RSV_CTRL_S2R = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_CTL.USB2PHY_SIDDQ = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_DP_CLKSWITCH_ENABLE_CONTROL_REGS.SWITCH1_PCLK1_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RX_MC_INTF_SHM_REGS_BLK_APB_OVERRIDE_REG_REG65.PMA_RXA_RXTX_DCC_MON_BIG_EN_OV = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_VREG_CTRL_REG0.PMA_TXA_VREG_PRIMARY_ADJUST_OV = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_VREGDT_CTRL_REG0.PMA_TXA_VREG_DT_SECONDARY_TRIM_OV = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_CIO10G_RATE_CAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_CORE2MC_SLP_CTRL_2.AUX_SML = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_TXD_REGS_BLK_ASDC_TXD_CFG_BLK_TXEQ_7 = 0x%08x\n`
+- `%s@%s: %s::%s: var regValue field ACIOPHY_BIST_BLK_MAC_USBPHY_CFG_OV1.MAC_USBPHY_PWR_DOWN_OV_VAL = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_XBAR = 0x%08x\n`
+- `%s@%s: %s::%s: timed out waiting for ATCPHY_CFG_BLK_ATCPHY_SPARE_REGISTERS_1.CFG_S2R_FSM_BUSY = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_EDSKEW_BLK_CFG_ED_ECK_OFFSET_RATE2.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: found boot-arg %s=%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_USB5G_SPDCHG_BOOT_CAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_SAMPLER_OFFSET_BLK_CFG_REG12.CFG_VTH_OFFSET_CODE_ODDE_RATE4321 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_B.FBDIVN_FRAC_DEN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_VREG_CTRL_REG0.PMA_TXA_VREG_PRIMARY_ADJUST = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_CIO20G_POSTEQ_CAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_CALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREG_PRIMARY = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_CTLE_OFFSET_BLK_CFG_CTLECAL_CTLE1_HG_R0_OVRD.CTLE1_HG_R0_VOS = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_HALFUI_BLK_CFG_DTC_MAX_CODE_RATE1.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_CLE_LOWPEAK_EN_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_DCC2_REG0.PMA_TXA_DCC_MON_COMP_MODE_OV = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXTX_SEQ_CFG_BLK_SEQ_FSM_0_REG.RXTXSEQ_LOGICAL_LANE0 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.DCO_DAC_REF_DIODE_SIZE = 0x%x\n`
+- `%s@%s: %s::%s: timed out waiting for ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_1.ACIOPHY_SLEEP_B_SML_OUT = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_SEQ_CFG_BLK_CFG_TXSEQ.DCC_INITIAL_CALIBRATION_BYPASS_P1 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_SEQ_CFG_BLK_CFG_TXSEQ.DCC_INITIAL_CALIBRATION_BYPASS_P0 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_USB5G_POSTEQ_CAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_LOAD_CFG0.H0E_LOAD_VAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_DP_CLKSWITCH_SELECT_CONTROL_REGS.SWITCH1_CLK_SELECT = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_LANE_TOP_CFG_BLK_CFG_PSEQ_RW0.IS_PMARX_DP_LANE = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: PA 0x%llx mask 0x%08x value 0x%08x (read 0x%08x wrote 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREGCK_ADJUST = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_MISC_TUNE.USB2PHY_REFCLK_GATEOFF = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_TX_DP_CTRL0.DPTXPHY_PMA_LANE_RESET_N = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_CLAMP_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_CCA_H2_CALC_RANGE_HIGH_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_LOAD_CFG2.H4_LOAD_VAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_TX_DP_CTRL0.DPTX_PCLK2_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_S2R_AON_SYNC_RST_N.S2R_AON_SYNC_RST_N = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_CORE2MC_SLP_CTRL_2.AUX_CLAMPEN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_TX_DP_CTRL0.DPTX_RATE = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RX_MC_INTF_SHM_REGS_BLK_APB_OVERRIDE_REG_REG64.PMA_RXA_RXTX_DCC_MON_SML_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.FREQINIT_COUNT_TARGET = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG0.CMD_CLOCK1_CAL_SEL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_DCC_BLK_CFG_DCC_XCK_OVRD.XCK_GEN2 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_VREF_CTRL_REG0.PMA_TXA_VREF_ADJUST = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_USB_PCS_BLK_PCSFSM_SAS_REG1.SAS_UC_TAKE_CONTROL_ACK = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_CALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREG_CK_SECONDARY = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_BIST_BLK_BIST_CFG0.BIST_CLOCK_EN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_WAKE_TIMER_CTRL.WAKE_SW_TIMER = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.LFSDM_DIV = 0x%x\n`
+- `%s@%s: %s::%s: PA 0x%llx mask 0x%08x value 0x%08x already set (read 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_CTLE_OFFSET_BLK_CFG_CTLECAL_CTLE1_HG_R15_OVRD.CTLE1_HG_R15_VOS = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_BIST_BLK_BIST_CFG2.USBPHY_MAC_PHY_STATUS_RE = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.FREQINIT_STEP_SIZE = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_VREGCK_CTRL_REG0.PMA_TXA_VREG_CK_SECONDARY_TRIM = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_BOOT_CAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_RXTX_REGS_ASDC_TXD_CFG_BLK_ASDC_TXD_CFG_BLK_TXEQ_2.SWING_OV_GEN1 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: index %d offset 0x%08x invalid (rangeLength 0x%08llx)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_LOAD_CFG2.H2_LOAD_VAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_CIO20G_RATE_CAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_EQ0.BYPASS_FULL_EQ_CIO10G = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_LANE0.SLEEP_B_SML_IN_AON2LANE = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ROTATION_SAVTHDAC_EVEND_ADAPTED_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_BIST_BLK_BIST_CFG0.BIST_USB_REGSYNC = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_TX_DP_CTRL0.DPTXPHY_PMA_LANE_RESET_N_OV = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_SLEEP_B_BIG_IN = 0x%x\n`
+- `%s@%s: %s::%s: timed out waiting for ACIOPHY_USB_PCS_BLK_PCSFSM_SAS_REG2.SAS_UC_TAKE_CONTROL_REQ = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_ACCAP_BLK_CFG_ACCAPAZ_CALRES.OFFSETP_2 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_CFG2.H1_LOAD_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: found an override for voltage %d eq %d\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_SIG.VBUS_VALID_EXT_FORCE_VAL = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.KI_EXP = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_ACCAP_BLK_CFG_ACCAPAZ_CALRES.OFFSETN_0 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_AEQ_CTRL_SAVTHDAC_ADAPT_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_CCA_CS_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_CMD_CMDOVERRIDE.PLL_STOP_VCLK_SYNC_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RX_MC_INTF_SHM_REGS_BLK_APB_OVERRIDE_REG_REG64.PMA_RXA_RXTX_DCC_MON_BIG_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_SEQ_CFG_BLK_CFG_TXSEQ4.DP_ALPM_IS_LOGICAL_LANE0 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.VCLK_OP_DIVN = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_AHB_RESET_N = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_DCC_BLK_CFG_DCC_XCK_OVRD.XCK_GEN1 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ROTATION_SAVTHDAC_ODDE_OFFSET_APP_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_AEQ_CTRL_DFE_ADAPT_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_CMD_FD_CONTROL.CFG_PLL_VCLK_STOP_DIRECT_CONTROL = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_DCC2_REG0.PMA_TXA_DCC_MON_BIG_EN_OV = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREGDT_VOUT_TRIM = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_SAMPLER_OFFSET_BLK_CFG_REG11.CFG_VTH_OFFSET_CODE_ODDD_RATE4321 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_HALFUI_BLK_CFG_DTC_MAX_CODE_RATE0.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ROTATION_H1DAC_ODDD_ADAPTED_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_CCA_ATTN_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_SLEEP_B_SML_IN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_CCA_H0DIV_CODE_CALC_RANGE_HIGH_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: failed to find register range %d\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_USB10G_SPDCHG_BOOT_CAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_AEQ_CTRL_PEAK_ADAPT_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_LOAD_CFG2.H3_LOAD_VAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.VREGCK_BYPASS = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ROTATION_SAVTHDAC_EVENE_OFFSET_APP_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_TXD_REGS_BLK_ASDC_TXD_CFG_BLK_TXEQ_0.RCAL_SCALE_SEL_LFPS = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: device memory range 0x%016llx - 0x%016llx\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.VREGCAL_REF_SEL = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_EQ0.BYPASS_FULL_EQ_USB10G = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: voltage %d eq %d: eq_voltage_swing 0x%05x, eq_tx_deepmph 0x%05x, eq_tx_preepmph 0x%05x\n`
+- `%s@%s: %s::%s: C0_UTMI_CLK_ACTIVE.EVT_CNT is 0\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_LANE_TOP_CFG_BLK_CFG_PSEQ_RW0.IS_PMATX_DP_LANE = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_SEQ_CFG_BLK_CFG_TXSEQ3.MCI_ARBITER_OUT_PULL_MODE = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_TXSPL_TXDCC_BLK_CFG_TX_DCC_SAVED_CODE_REG.CFG_DCC_SAVED_CODE_RATE1 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_AEQ_CTRL_DCK_DTC_ADAPT_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_SIG.VBUS_VALID_EXT_FORCE_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG3.CMD_RATEBASED_CAL_RATE3_SEL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: var regValue field ASDC_TXD_CFG_BLK_TXEQ_7.FIR_COEFF_RATE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ATTN_DFE_ADAPT_EN_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_CLOCK_CAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_EQ0.BYPASS_FULL_EQ_CIO20G = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_TXD_REGS_BLK_ASDC_TXD_CFG_BLK_TXEQ_2.SWING_OV_GEN1 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_ACCAP_BLK_CFG_ACCAPAZ_CALRES.OFFSETN_1 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_SAMPLER_OFFSET_BLK_CFG_REG12.CFG_VTH_OFFSET_CODE_EVENE_RATE4321 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_RXTX_ASDC_TXSPL_TXDCC_BLK_ASDC_TXSPL_TXDCC_BLK_CFG_TX_DCC_REG_2.CFG_DCC_IDLE_MON_SEL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_CTLE_OFFSET_BLK_CFG_CTLECAL_CTLE1_LP_R0_OVRD.CTLE1_LP_R0_VOS = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_ATTN_ACCAP_HSLS_ATTN_EN_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_CFG2.H4_LOAD_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_CFG2.H3_LOAD_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_DCC2_REG0.PMA_TXA_DCC_MON_SML_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_B.FBDIVN_FRAC_NUM = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB_CTL.USB_MODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_DCC2_REG0.PMA_TXA_DCC_MON_COMP_MODE = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_TXSPL_TXDCC_BLK_CFG_TX_DCC_REG_2.CFG_DCC_IDLE_MON_SEL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG4.CMD_RATEBASED_CAL_RATE4_SEL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_WAKE_TIMER_CTRL.WAKE_ALPM_TIMER = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_DPTX_SHIM_CFG_BLK_WAKE_FSM_CTRL.WAKE = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_TXSPL_CM_BLK_CMFC_REG_3.CFG_CM_TIMER_BASED_THRESH = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_SPARE_REGISTERS_0.CFG_S2R_USB_LN_SWAP = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALACC_EDSKEW_BLK_CFG_ED_ECK_OFFSET_RATE1.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_AEQ_CTRL_ROTATION_ADAPT_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: var value field AUSBC_CORE_EVT_BLK_C0_USB2_CTL.LOAD_CNT = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RX_MC_INTF_PCTRL_REGS_BLK_PMA_RXA_RXTX_DIV2_4_EN_PCTRL_SETTINGS_REG0.PMA_RXA_RXTX_DIV2_4_EN_EN_VAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.KP_MAN = 0x%x\n`
+- `%s@%s: %s::%s: DPPLL_CORE_DPPLL_CFG_MC_CLKOUT_0.PLLA_REFBUFCLKDRVL_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_CAL0.BYPASS_USB10G_RATE_CAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_CCA_H2_CALC_RANGE_LOW_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_DCC2_REG0.PMA_TXA_DCC_MON_SML_EN_OV = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_RXTX_REGS_ASDC_TXD_CFG_BLK_ASDC_TXD_CFG_BLK_TXEQ_0.RCAL_SCALE_SEL_LFPS = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_VREGDT_CTRL_REG0.PMA_TXA_VREG_DT_SECONDARY_TRIM = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_LANE0.SLEEP_B_BIG_IN_AON2LANE = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_CORE2MC_SLP_CTRL_2.RXA_SLEEP_B_LFPS_BIG_IN_FINAL1 = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_BIST_BLK_BIST_CFG0.BIST_ACIOPHY_RESET_N_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_AEQ_CTRL_R_ADAPT_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_SEQ_CFG_BLK_CFG_TXSEQ.LDOCAL_BYPASS_WAKEUP = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_TXSPL_CM_BLK_CMFC_REG_2.CFG_CM_TIMEOUT = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_LANE0.LN0_AHB_RESET_N = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_ASDC_RXAEQ_TOP_REGS_BLK_AEQ_CTRL_C_ADAPT_S2R.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: AUSBC_CORE_EVT_BLK_C0_USB2_CTL = 0x%08x\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_D.DCO_RO_ENCAP = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_RXSEQ_CFG_BLK_CFG_EQ0.FULL_EQ_MEASURE_FOM_CIO = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_VREG_BLK_VREG_WU.CFG_WRITE_VALUE_VREGRO_ADJUST = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_DCC_BLK_CFG_DCC_ECK_OVRD.ECK_GEN2 = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: No S2R save state\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_DX_BLK_CFG_DX_DCK_OFFSET_RATE2.FLD = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_LOAD_CFG1.H1O_LOAD_VAL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: timed out waiting for ACIOPHY_BIST_BLK_USBPHY_MAC_STATUS1.USBPHY_MAC_PHY_STATUS_2 = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_LIB_RXCAL_SEQ_CFG_BLK_CFG0.CMD_NOCLOCK_CAL_SEL = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_CORE2MC_SLP_CTRL_2.RXA_SLEEP_B_LFPS_BIG_IN_FINAL0 = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_AON_BLK_CFG_LANE1.CLAMP_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXAEQ_DFE_CFG_BLK_LMS_CFG2.H2_LOAD_EN = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: DPPLL_TOP_DPPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.SDM_SSC_STEP = 0x%x\n`
+- `%s@%s: %s::%s: LANE%d_ACIOPHY_PMA_TX_MCI_SHM_REGS_BLK_SHM_VREF_CTRL_REG0.PMA_TXA_VREF_ADJUST_OV = 0x%x (reg 0x%08x)\n`
+- `%s@%s: %s::%s: applying %s\n`
+- `%s@%s: %s::%s: LANE%d_ASDC_RXCALAZ_DX_BLK_CFG_DX_DCK_OFFSET_RATE1.FLD = 0x%x (reg 0x%08x)\n`

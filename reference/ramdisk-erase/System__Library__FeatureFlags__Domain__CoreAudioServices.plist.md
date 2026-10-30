@@ -1,0 +1,76 @@
+# `/System/Library/FeatureFlags/Domain/CoreAudioServices.plist`
+
+From the erase/recovery restore ramdisk (141-28940-105.dmg, runs restored_external). 4,234 bytes.
+
+- `AQMetadataAudioConverter`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `Atmos_9_1_6_Decoder`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AudioCallTranslationLocalFeedback`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AudioCallTranslationRemoteFeedback`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AudioMetadata`:
+  - `Enabled`: `True`
+- `Enable3PSpatialAudioExtension_iOS`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `EnhanceDialogue_Accessibility`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `EnhanceDialogue_ios`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `EnhanceDialogue_tvos_HDMI_Bluetooth`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `LoudnessManager`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `LoudnessManagerV2`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `MAT28Channels`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `MATLock`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `MixToUplinkAPI_AUVP`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `MixToUplinkAPI_AUVP_BypassMicMute`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `MixToUplinkAPI_AUVP_BypassUserCheck`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `MixToUplinkAPI_TCC`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `MixToUplinkAPI_VisionOS`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `ScheduledSlicePlayerV2`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `SpatialOnAggregateDevices`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `SpatialPhaseIO`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `SubmixTap`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `UseSessionVolume`:
+  - `Enabled`: `True`
+- `ahap_for_sss`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `apac_converters_out_of_process`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `audio_converter_high_capacity_service`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `audio_decoders_out_of_process`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `audiomxd`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `haptic_engine_cpms`:
+  - `Enabled`: `True`
+- `haptic_rt_notification`:
+  - `Enabled`: `True`
+- `haptics_power_optimized`:
+  - `Enabled`: `True`
+- `matrix_mixmap_nsc`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `pool_audio_decoder_renderers`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `secure_mtd`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `tvOSAudioOnlySpatialization`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `wav_chna_based_channel_layouts`:
+  - `DevelopmentPhase`: `FeatureComplete`

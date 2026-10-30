@@ -1,0 +1,1233 @@
+# `com.apple.driver.AppleT8103TypeCPhy`
+
+- Name: AppleT8103TypeCPhy
+- Version: `1`
+- UUID: `52EFEDD6-058B-3AFB-9742-A0D2191ADDFD`
+- Source version: `317.40.3.0.0`
+- Depends on: [`com.apple.driver.AppleTypeCPhy`](com.apple.driver.AppleTypeCPhy.md) 1.0, [`com.apple.iokit.IOAccessoryManager`](com.apple.iokit.IOAccessoryManager.md) 1.0, [`com.apple.iokit.IOPortFamily`](com.apple.iokit.IOPortFamily.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 19.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 19.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 19.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 19.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (1) [KC]
+
+### AppleT8103TypeCPhy
+- `CFBundleIdentifier`: `com.apple.driver.AppleT8103TypeCPhy`
+- `IOClass`: `AppleT8103TypeCPhy`
+- `IONameMatch`: `atc-phy,t8103`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleT8103TypeCPhy`
+- `IOProbeScore`: `10000`
+- `IOProviderClass`: `AppleARMIODevice`
+
+
+## C++ classes (2) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleT8103TypeCPhy` | 0x3f8 | AppleTypeCPhy → IOService → IORegistryEntry |
+| `AppleT8310TypeCPhy` | 0x180 | AppleTypeCPhy → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1560)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0001a062 off=0x0089c780-0x008b67e2 addr=0xfffffe00078a0780-0xfffffe00078ba7e2 r--/r--   __TEXT            
+	sz=0x000001a0 off=0x0089cdf8-0x0089cf98 addr=0xfffffe00078a0df8-0xfffffe00078a0f98               __TEXT.__const            
+	sz=0x0000aaec off=0x0089cf98-0x008a7a84 addr=0xfffffe00078a0f98-0xfffffe00078aba84               __TEXT.__cstring          (CstringLiterals)
+	sz=0x0000ed5e off=0x008a7a84-0x008b67e2 addr=0xfffffe00078aba84-0xfffffe00078ba7e2               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x000431ec off=0x02a23c90-0x02a66e7c addr=0xfffffe0009a27c90-0xfffffe0009a6ae7c r-x/r-x   __TEXT_EXEC       
+	sz=0x0004304c off=0x02a23c90-0x02a66cdc addr=0xfffffe0009a27c90-0xfffffe0009a6acdc          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000001a0 off=0x02a66cdc-0x02a66e7c addr=0xfffffe0009a6acdc-0xfffffe0009a6ae7c          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00000138 off=0x049cf850-0x049cf988 addr=0xfffffe000b9d3850-0xfffffe000b9d3988 rw-/rw-   __DATA            
+	sz=0x000000d8 off=0x049cf850-0x049cf928 addr=0xfffffe000b9d3850-0xfffffe000b9d3928               __DATA.__data             
+	sz=0x00000060 off=0x00000000-0x00000060 addr=0xfffffe000b9d3928-0xfffffe000b9d3988               __DATA.__common           (Zerofill)
+003: LC_SEGMENT_64 sz=0x00001328 off=0x01293578-0x012948a0 addr=0xfffffe0008297578-0xfffffe00082988a0 rw-/rw-   __DATA_CONST      
+	sz=0x00000010 off=0x01293578-0x01293588 addr=0xfffffe0008297578-0xfffffe0008297588         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000010 off=0x01293588-0x01293598 addr=0xfffffe0008297588-0xfffffe0008297598         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00001170 off=0x01293598-0x01294708 addr=0xfffffe0008297598-0xfffffe0008298708         __DATA_CONST.__const            
+	sz=0x00000080 off=0x01294708-0x01294788 addr=0xfffffe0008298708-0xfffffe0008298788         __DATA_CONST.__kalloc_type      
+	sz=0x000000d0 off=0x01294788-0x01294858 addr=0xfffffe0008298788-0xfffffe0008298858         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000048 off=0x01294858-0x012948a0 addr=0xfffffe0008298858-0xfffffe00082988a0         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 61 at 0x04aead84
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     52EFEDD6-058B-3AFB-9742-A0D2191ADDFD
+008: LC_SOURCE_VERSION           317.40.3.0.0
+009: LC_FUNCTION_STARTS          offset=0x004ab67c0 size=0xe0
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleExecutable`: `AppleT8103TypeCPhy`
+- `CFBundleIdentifier`: `com.apple.driver.AppleT8103TypeCPhy`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleT8103TypeCPhy`
+- `CFBundleNumericVersion`: `16809984`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `OSBundleCompatibleVersion`: `1.0`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleTypeCPhy.kext/PlugIns/AppleT8103TypeCPhy.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198896769152`
+- `_PrelinkExecutableRelativePath`: `AppleT8103TypeCPhy`
+- `_PrelinkExecutableSize`: `386734`
+- `_PrelinkExecutableSourceAddr`: `-2198896769152`
+- `_PrelinkKmodInfo`: `-2198828402608`
+
+## Strings (1115) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__os_log]**
+
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_PMAFSM_REG4.PCS_PMAFSM_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.RXA_CLAMP_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_BYPASS_SML = 0x%x\n`
+- `%s@%s: %s::%s: failed waiting for ATCPHY_POWER_DOWN_CONTROL_1:SLEEP_B_BIG_OUT to be set\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_CTLE_CTRL2.PMA_RXA_CTLEVOS_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_MARGIN_PRE_LSB_OV = 0x%x\n`
+- `%s@%s: %s::%s: USB2PHY_AUX_CFG_BLK_AUX_POWER_DOWN_CONTROL_0.CFG_AUX_TXTERM_CODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EIDAC_VLOW_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_ACIOPHY_MODE.LANE0_RX_MODE = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_XBAR.DP_BOTH_PMA = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_PMAFSM_REG4.PCS_PMAFSM_REQ = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_ADJUST_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EI_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_SAVOSDAC_RANGE = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_CTL.USB2PHY_RESET = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL11.PMA_RXA_DTVREG_BIG_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CFG_RX_TXMODE.RX_TXMODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_CTLE_CTRL2.PMA_RXA_CTLEVOS_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EIDAC_VLOW_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_CTLE_CTRL2.PMA_RXA_CTLEVOS_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_CIOPHY_CFG0 = 0x%08x\n`
+- `%s@%s: %s::%s: phyLanesMask 0x%08x TransportType lane[0] %d lane[1] %d failed with error 0x%08x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_SEL_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_CLR_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_P1_LSB_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_PRE_CODE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_EVENE_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_RW_RSV0 = 0x%08x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DCO_CTRL8.PMA_RXA_DCOVREG_ADJUST = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_TX_PRE_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_PMAFSM_REG4.PCS_PMAFSM_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.KI_MAN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_CAL_CTRL = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_BYTECLK_RESET_SYNC_EN = 0x%x\n`
+- `%s@%s: %s::%s: Applying EDT tunable overrides for %s block\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_EN_BIG_OV = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_SPARE_REGISTERS_0.CFG_S2R_USB_LN_SWAP = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_SIG.VBUS_DETECT_FORCE_EN = 0x%x\n`
+- `%s@%s: %s::%s: changing USB mode to isolation\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DPTXPHY_PMA_LANE_RESET_N = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_CTLE_CTRL0.PMA_RXA_TX_CLK_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_TX_PST1_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_HRCLK_SEL_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_P1_LSB = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_CLKOUT_DIVIDER.PLLA_REFBUFCLK_DIVN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_4R = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL10.PMA_RXA_DTVREG_ADJUST = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_P1_CODE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_TEST_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EI_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_ODDD_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: Configuring PCLK(%u) at link rate: %llu\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_HIZ_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_APB_CMD_CMDOVERRIDE.APB_OVERRIDE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_BYPASS_SML = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_TEST_RXLPBKDT_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_TX_PST1_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_RXTERM_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_FRACN_CAN.DLL_CAL_START_CAPCODE_EFUSE = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DPTX_PCLK1_SELECT = 0x%x\n`
+- `%s@%s: %s::%s: powerLevel %d returning 0x%08x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_CLK_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL11.PMA_RXA_DTVREG_SML_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2PHY_MISC_TUNE.EUSB2PHY_REFCLK_GATEOFF = 0x%x\n`
+- `%s@%s: %s::%s: Unsupported link rate: %llu\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_RXTERM_PULLUP_LEAK_EN = 0x%x\n`
+- `%s@%s: %s::%s: LPDPTX_AUX_SHM_CFG_BLK_AUX_CTRL_REG0.PMA_AUX_SEL_LF_DATA = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EI_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG1.SAMPCAL_MASK = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_TX_CAL_CODE = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_ACIOPHY_MODE = 0x%08x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_EVENX_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_TEST_RXLPBKDT_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_BOOST_EN = 0x%x\n`
+- `%s@%s: %s::%s: Timeout waiting for APB_COMMAND(0x%08x) to be ACKed\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_5.PMA_RXA_DCOPI_XCLKB_POS_GRAY_GEN3 = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_4R_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_ACCAP_CTRL23.PMA_RXA_ACCAP_ATTN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG_SLP_CTRL.TXA_SLEEP_B_SML_IN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_RXTERM_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL10.PMA_RXA_DTVREG_ADJUST = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_4.PMA_RXA_DCOPI_DCLK_POS_GRAY_GEN3 = 0x%x\n`
+- `%s@%s: %s::%s: CIO3PLL_CORE_CIO3PLL_CFG_CLKOUT_MASTER.PLLA_PCLKDRVL_EN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.CMN_SLEEP_B_BIG_IN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_TX_PRE_EN = 0x%x\n`
+- `%s@%s: %s::%s: failed waiting for ACIOPHY_LANE_DP_CFG_BLK:ACIOPHY_DP_PCLK_STATUS:AUSPLL_LOCK to be set\n`
+- `%s@%s: %s::%s: _phySelect: %08x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG2.PMA_TXA_MARGIN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_4R_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_TX_PST1_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: Unconfiguring PCLK(%u)\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_4.PMA_RXA_DCOPI_DCLK_POS_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_OV_CFG.BIST_USB0_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CFG_RX_TXMODE.RX_TXMODE = 0x%x\n`
+- `%s@%s: %s::%s: USB2PHY_AUX_CFG_BLK_AUX_POWER_DOWN_CONTROL_0.AUX_SLEEP_B_BIG_IN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_BOOST_EN = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_CLKOUT_DTC_VREG.DTC_VREG_ADJUST_EFUSE = 0x%x\n`
+- `%s@%s: %s::%s: LPDPTX_AUX_CFG_BLK_AUX_MARGIN.RCAL_RXOFFSET_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG1.SAMPCAL_MASK = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG11.EDSKCAL_OFFSET0_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_5.PMA_RXA_DCOPI_XCLKB_POS_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_EVENE_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DIV2_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_TX_CAL_CODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_HRCLK_SEL_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_P1_LSB = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_OV_CFG = 0x%08x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_CTL.USB2PHY_PORT_RESET = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.VCO_PRE_DIVN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_2.PMA_RXA_DFEH3DAC_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: timed out waiting for PHY_LN0_MAC_PHY_STATUS\n`
+- `%s@%s: %s::%s: initialized\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_EN_BIG = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_BYPASS_BIG_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_TEST_EN = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_SPARE_REGISTERS_0.S2R_AON_SYNC_RST_N = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_CLR = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_CAL_CTRL_BASE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_4R_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_AFE_CTRL1.CLK_LANE_RX_DIV20_SYNC_RESET_N_VAL = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_4.PMA_RXA_DCOPI_DCLK_POS_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_SAVOSDAC_ODDX_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: Timeout waiting for ACIOPHY_LANE_DP_CFG_BLK:ACIOPHY_DP_PCLK_STATUS:AUSPLL_LOCK to be set\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_CAL_CTRL_BASE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DIV2_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_P1_LSB_CODE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_MARGIN_PRE_OV = 0x%x\n`
+- `%s@%s: %s::%s: CIO3PLL_CORE_CIO3PLL_CFG_CLKOUT_MASTER.PLLA_REFBUFCLKDRVL_EN = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2PHY_CTL.USB2PHY_RESET = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_APB_RESET_N = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_2R_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_PRE_LSB_CODE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_4.PMA_RXA_DCOPI_DCLK_POS_GRAY_GEN3 = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_EVENX_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2PHY_SIG.VBUS_VALID_EXT_FORCE_EN = 0x%x\n`
+- `%s@%s: %s::%s: index %d out of range\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG_SLP_CTRL.TXA_CLAMP_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DIV2_RST_OV = 0x%x\n`
+- `%s@%s: %s::%s: USB2PHY_AUX_CFG_BLK_AUX_POWER_DOWN_CONTROL_0.CFG_AUX_CLAMP_EN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.CMN_CLAMP_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_DIV2_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_DIV2_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_2R = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_EN_SML_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_CTLE_CTRL0.PMA_RXA_TX_CLK_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DPTX_PCLK1_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DIV2_RST_OV = 0x%x\n`
+- `%s@%s: %s::%s: LPDPTX_AUX_SHM_CFG_BLK_AUX_CTRL_REG1.PMA_AUX_HYS_ADJ_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2HOST0_CFG.USB2HOST0_OHCI_PREFETCH_CTRL = 0x%x\n`
+- `%s@%s: %s::%s: C0_UTMI_CLK_ACTIVE.EVT_CNT is 0\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_XBAR.DP_SINGLE_PMA = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_CAL_CTRL_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_TEST_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_P1_CODE_OV = 0x%x\n`
+- `%s@%s: %s::%s: power %s\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_4R_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_ADJUST_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DP_PMA_BYTECLK_RESET = 0x%x\n`
+- `%s@%s: %s::%s: failed to get register map at index %d\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DLY_CTRL_TAPGEN = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_BGR.PLLA_BGR_CTRL_AVAIL = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_2R_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_2.PMA_RXA_DFEH3DAC_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL14.PMA_RXA_SAVOSDAC_EVEND_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: falling back to compatible register ranges defined by tRegisterSpaces\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_CLKOUT_MASTER.PLLA_PCLKDRVR_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_EN_BIG = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_4R = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_APB_CMD_FD_CONTROL.APB_PLL_VCLK_STOP_DIRECT_CONTROL = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_EN_BIG_OV = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_RESET_N = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_MARGIN_PRE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_CLK_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_BOOST_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_TEST_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: failed to find register range %d\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_ACCAP_CTRL23.PMA_RXA_ACCAP_ATTN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_SAVOSDAC_RANGE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_DIV2_RESET_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_BYTECLK_RESET_SYNC_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_DTVREG_ADJUST_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.LPBKIN_RECOVERED_DATA = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_AUSB_UTMI_MUX_SELECT.EUSB2PHY_SEL = 0x%x\n`
+- `%s@%s: %s::%s: \n`
+- `%s@%s: %s::%s: AUSBC_CORE_EVT_BLK_C0_USB2_CTL.LOAD_CNT = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_BYTECLK_RESET_SYNC_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_PLL_TOP_BLK_AUSPLL_PCTL_FSM_CTRL1.APB_REQ_OV_SEL = 0x%x\n`
+- `%s@%s: %s::%s: USB2PHY_AUX_CFG_BLK_AUX_POWER_DOWN_CONTROL_0.CFG_AUX_TXTERM_CODEMSB = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG11.EDSKCAL_OFFSET1_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.SDM_SSC_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_MARGIN_PRE_LSB = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_HIZ = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_PLL_TOP_BLK_ACIOPHY_PLL_SPARE_IN.APB_SPARE_IN_5G = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_CIOPHY_CFG0.CLOCK_EN = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.FBDIVN_HALF = 0x%x\n`
+- `%s@%s: %s::%s: PA 0x%llx mask 0x%08x value 0x%08x already set (read 0x%08x)\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG11.EDSKCAL_OFFSET2_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN = 0x%x\n`
+- `%s@%s: %s::%s: LPDPTX_AUX_CFG_BLK_AUX_CTRL.AUX_RXOFFSET = 0x%x\n`
+- `%s@%s: %s::%s: No PHY configuration needed\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DIV2_RST = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_TEST_RXLPBKDT_EN = 0x%x\n`
+- `%s@%s: %s::%s: changing USB mode to device\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_PMAFSM_REG4.PCS_PMAFSM_REQ = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_LSB = 0x%x\n`
+- `%s@%s: %s::%s: LPDPTX_AUX_CFG_BLK_AUX_MARGIN.RCAL_TXSWING = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_ODDD_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG2.PMA_TXA_MARGIN_2R_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG2.PMA_TXA_MARGIN_2R_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_P1 = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_PHY_CFG0.MAC_PHY_LN0_RESET_N = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2PHY_MISC_TUNE.EUSB2PHY_APBCLK_GATEOFF = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_P1_CODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EIDAC_VHIGH_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_RW_RSV0 = 0x%08x\n`
+- `%s@%s: %s::%s: failed waiting for kACIOPHY_CMN_SHM_CMN_STS_REG_0::CMN_READY to be set\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.KP_MAN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_RXTERM_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.LPBKIN_RECOVERED_DATA = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_CTLE_CTRL0.PMA_RXA_TX_CLK_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_3.PMA_RXA_DFEH5DAC_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_PMAFSM_REG2.EDSKCAL_EN = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.KP_EXP = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_AFE_CTRL1.CLK_LANE_RX_DIV20_SYNC_RESET_N_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DP_MAC_DIV20_CLK_SEL = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EI_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG1.EICAL_MASK = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_4R = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_BYPASS_BIG = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG12.EDSKCAL_OFFSET_OV_SEL = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2PHY_SIG.VBUS_VALID_EXT_FORCE_VAL = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_FREQINIT_1.REFCLK_FREQ = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_EN = 0x%x\n`
+- `%s@%s: %s::%s: mode %d phyLanesMask 0x%08x\n`
+- `%s@%s: %s::%s: ACIOPHY_PLL_TOP_BLK_ACIOPHY_PLL_COMMON_CTRL.APB_WAIT_FOR_CMN_READY_BEFORE_PLL_RESET_EXIT = 0x%x\n`
+- `%s@%s: %s::%s: 0:%d 1:%d orientation %d\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_B.FBDIVN_FRAC_NUM = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL14.PMA_RXA_SAVOSDAC_EVEND_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_DIV2_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_CLKOUT_MASTER.PLLA_REFBUFCLKDRVR_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_BYPASS_BIG_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2PHY_CTL.USB2PHY_SIDDQ = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_EN_SML = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_PRE_LSB_CODE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_PRE_CODE = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.SDM_SSC_STEP = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_BYTECLK_RESET_SYNC_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DCO_CTRL8.PMA_RXA_DCOVREG_ADJUST_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2HOST0_CTL.USB2HOST0_HW_CLK_GATE_OFF_EN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.CMN_CLAMP_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_4.PMA_RXA_DCOPI_DCLKB_POS_GRAY_GEN3 = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_ACIOPHY_MODE.LANE1_TX_MODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EIDAC_VHIGH_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_AFE_CTRL1.CLK_LANE_RX_DIV20_SYNC_RESET_N_VAL = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_TX_CAL_CODE_OV = 0x%x\n`
+- `%s@%s: %s::%s: CIO3PLL_CORE_CIO3PLL_CFG_DCO_NCTRL.DCO_COARSEBIN_EFUSE1 = 0x%x\n`
+- `%s@%s: %s::%s: LPDPTX_AUX_CFG_BLK_AUX_LDO_CTRL.AUX_HYS_ADJ = 0x%x\n`
+- `%s@%s: %s::%s: failed to find required register ranges\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_EN_SML = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_P1 = 0x%x\n`
+- `%s@%s: %s::%s: USB2PHY_AUX_CFG_BLK_AUX_POWER_DOWN_CONTROL_0.AUX_SLEEP_B_SML_IN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG11.EDSKCAL_OFFSET3_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_CLR = 0x%x\n`
+- `%s@%s: %s::%s: CIO3PLL_CORE_CIO3PLL_CFG_CLKOUT_DTC_VREG.DTC_VREG_ADJUST_EFUSE = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DPRX_PCLK_SELECT = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_HIZ = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_RXTERM_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_ODDE_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_DIV2_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_SAVOSDAC_ODDX_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_XBAR = 0x%08x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_4.PMA_RXA_DCOPI_DCLKB_POS_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: invalid power level (%d) for kAppleTypeCPhyTransportTypeUnknown\n`
+- `%s@%s: %s::%s: unable to identify client for lane mask 0x%08x\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DPTXPHY_PMA_LANE_RESET_N_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.PCLK_DIV_SEL = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL11.PMA_RXA_DTVREG_BIG_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_BOOST_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_RXTERM_PULLUP_LEAK_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_OV_CFG.BIST_MAC_PHY_LN0_RESET_N_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_LSB = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_3.PMA_RXA_DFEH5DAC_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: EDT lists %d register maps, max %d supported\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.LFCLK_CTRL = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2HOST0_CFG.USB2HOST0_OHCI_PREFETCH_EN = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_CTL.USB2PHY_APB_RESETN = 0x%x\n`
+- `%s@%s: %s::%s: LPDPTX_AUX_SHM_CFG_BLK_AUX_CTRL_REG1.PMA_AUX_HYS_ADJ = 0x%x\n`
+- `%s@%s: %s::%s: value %d range %d result %d\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.RXA_CLAMP_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_CLKOUT_DTC_VREG.PLLA_CLKOUT_VREG_BYPASS = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_CLK_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DLY_CTRL_TAPGEN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DIV2_RST = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_MISC_TUNE.USB2PHY_APBCLK_GATEOFF = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_DIV2_RESET = 0x%x\n`
+- `%s@%s: %s::%s: AUS_CMN_SHM_BLK_VREG_REG_0.VREG_TRIM = 0x%x\n`
+- `%s@%s: %s::%s: failed waiting for ATCPHY_SPARE_REGISTERS_1:CFG_S2R_FSM_BUSY to be cleared\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_OV_CFG.MAC_USBPHY_LN0_PWR_DOWN_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.KPKI_SCALE_HBW = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG2.PMA_TXA_MARGIN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_DIV2_RESET_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_MARGIN_PRE = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_CLAMP_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_MARGIN_PRE_LSB = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL11.PMA_RXA_DTVREG_SML_EN = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_APB_CMD_CMDOVERRIDE = 0x%08x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_SLEEP_B_SML_IN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_5.PMA_RXA_DCOPI_XCLK_POS_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG12.EDSKCAL_OFFSET_OV_SEL = 0x%x\n`
+- `%s@%s: %s::%s: 0x%08x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_CAL_CTRL_BASE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_BYTECLK_RESET_SYNC_CLR = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_BIAS_SEL_OV = 0x%x\n`
+- `%s@%s: %s::%s: failed waiting for ATCPHY_POWER_DOWN_CONTROL_1:SLEEP_B_BIG_OUT to be cleared\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG11.EDSKCAL_OFFSET0_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_DTVREG_ADJUST_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_PBIAS_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_5.PMA_RXA_DCOPI_XCLK_POS_GRAY_GEN3 = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG_SLP_CTRL.TXA_SLEEP_B_BIG_IN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_ODDD_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_BYPASS_SML_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_DIV2_RESET = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_SAVOSDAC_ODDX_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2PHY_CTL.USB2PHY_APB_RESET = 0x%x\n`
+- `%s@%s: %s::%s: Applying %s tunables\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.RXA_SLEEP_B_SML_IN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_HRCLK_SEL = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_APB_CMD_CMDOVERRIDE.APB_REQ = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_2.PMA_RXA_DFEH2DAC_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_EVENX_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.VCLK_OP_DIVN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_RXTERM_PULLUP_LEAK_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL11.PMA_RXA_DTVREG_SML_EN = 0x%x\n`
+- `%s@%s: %s::%s: USB2PHY_AUX_CFG_BLK_AUX_POWER_DOWN_CONTROL_0.CFG_AUX_PWRDN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_1.PMA_RXA_DFEH1DAC_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: powerLevel %d -> %d\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_3.PMA_RXA_DFEH4DAC_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG_SLP_CTRL.TXA_CLAMP_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_B.FBDIVN_FRAC_DEN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_4R = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_BYTECLK_RESET_SYNC_CLR_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_EN = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_DCO_EFUSE_SPARE.RODCO_ENCAP_EFUSE = 0x%x\n`
+- `%s@%s: %s::%s: device memory range 0x%016llx - 0x%016llx\n`
+- `%s@%s: %s::%s: unexpected transition from %d -> %d\n`
+- `%s@%s: %s::%s: failed waiting for ATCPHY_POWER_DOWN_CONTROL_1:SLEEP_B_SML_OUT to be reset\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL14.PMA_RXA_SAVOSDAC_EVEND_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_READ_CONTROL_CFG.PHY_LN0_MAC_PHY_STATUS_RE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_TX_CAL_CODE_OV = 0x%x\n`
+- `%s@%s: %s::%s: CIO3PLL_CORE_CIO3PLL_CFG_DCO_NCTRL.DCO_COARSEBIN_EFUSE0 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DCO_CTRL8.PMA_RXA_DCOVREG_ADJUST_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB_CTL.USB_MODE = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DPRX_PCLK_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_ACIOPHY_MODE.LANE1_RX_MODE = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.RXA_SLEEP_B_SML_IN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.RXA_SLEEP_B_BIG_IN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_CAL_CTRL_OV = 0x%x\n`
+- `%s@%s: %s::%s: LPDPTX_AUX_CFG_BLK_AUX_CTRL.PWRDN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_CLK_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_P1_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_APB_CMD_CMDOVERRIDE.PLL_STOP_VCLK_SYNC_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_SPARE_REGISTERS_0.CFG_S2R_FSM_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_ADJUST_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_MARGIN_PRE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_BIAS_SEL = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_BYTECLK_RESET_SYNC_CLR_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_ACCAP_CTRL23.PMA_RXA_ACCAP_ATTN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG1.VREGCAL_MASK = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_CAL_CTRL = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_PBIAS_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_PBIAS_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EIDAC_VHIGH_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.LFSDM_DIV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_5.PMA_RXA_DCOPI_XCLKB_POS_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EIDAC_VLOW_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_CIOPHY_CFG0.BIST_CIO_EN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.CMN_SLEEP_B_SML_IN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.CMN_SLEEP_B_BIG_IN = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_CLKOUT_MASTER.PLLA_PCLK2DRVR_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_BYPASS_BIG = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_1.PMA_RXA_DFEH1DAC_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EIDAC_VHIGH_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_ODDD_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_P1_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_2.PMA_RXA_DFEH2DAC_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL14.PMA_RXA_SAVOSDAC_EVEND_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_ODDE_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: timed out waiting for PHY_LN0_MAC_PHY_STATUS_2\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_SAVOSDAC_ODDX_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: changing USB mode to host\n`
+- `%s@%s: %s::%s: mode mismatch: lane0 [%d] lane1 [%d]\n modes do not match requested mode %d\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.CMN_SLEEP_B_SML_IN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_2R = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_PRE_CODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL11.PMA_RXA_DTVREG_BIG_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.KI_EXP = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_CLR_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_PBIAS_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_CTLE_CTRL0.PMA_RXA_TX_CLK_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_ACCAP_CTRL23.PMA_RXA_ACCAP_ATTN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_3.PMA_RXA_DFEH4DAC_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_5.PMA_RXA_DCOPI_XCLK_POS_GRAY_GEN3 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG1.VREGCAL_MASK = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_SEL_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_HRCLK_SEL = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_P1_CODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_RXTERM_PULLUP_LEAK_EN = 0x%x\n`
+- `%s@%s: %s::%s: PA 0x%llx mask 0x%08x value 0x%08x (read 0x%08x wrote 0x%08x)\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG2.PMA_TXA_MARGIN_2R = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_2R = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_5.PMA_RXA_DCOPI_XCLKB_POS_GRAY_GEN3 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG1.EICAL_MASK = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_SIG.VBUS_VALID_EXT_FORCE_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_BIAS_SEL = 0x%x\n`
+- `%s@%s: %s::%s: client %s requesting link rate 0x%02x options 0x%08x pclk %d completed with 0x%08x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_5.PMA_RXA_DCOPI_XCLK_POS_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: found register range %d at 0x%016llx (0x%016llx)\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_BYTECLK_RESET_SYNC_CLR = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_PMAFSM_REG2.EDSKCAL_EN = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CORE_EVT_BLK_C0_USB2_CTL.EVT_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_P1_LSB_CODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL11.PMA_RXA_DTVREG_SML_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_DCO_EFUSE_SPARE.RODCO_BIASADJ_EFUSE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_TEST_RXLPBKDT_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DIV2_EN = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_CTL.USB2PHY_SIDDQ = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_PRE_LSB_CODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG1.CTLECAL_MASK = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.RXA_SLEEP_B_BIG_IN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG2.PMA_TXA_MARGIN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_TX_PRE_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: failed waiting for ATCPHY_POWER_DOWN_CONTROL_1:SLEEP_B_SML_OUT to be set\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_4.PMA_RXA_DCOPI_DCLKB_POS_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_MISC_TUNE.USB2PHY_REFCLK_GATEOFF = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_BIAS_SEL_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_AFE_CTRL1.CLK_LANE_RX_DIV20_SYNC_RESET_N_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_LSB_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_EVENX_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: register space [%d] PADDR 0x%llx VADDR 0x%llx\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_P1_LSB_OV = 0x%x\n`
+- `%s@%s: %s::%s: CIO3PLL_CORE_CIO3PLL_CFG_FRACN_CAN.DLL_CAL_START_CAPCODE_EFUSE = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_SLEEP_B_BIG_IN = 0x%x\n`
+- `%s@%s: %s::%s: Simulated target\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_2R = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_LSB_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_TX_PST1_EN = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.REF_DIVN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_2R_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_P1_LSB_CODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_SAVOSDAC_RANGE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG11.EDSKCAL_OFFSET1_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_2R_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DPTX_PCLK2_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_ACIOPHY_MODE.LANE0_TX_MODE = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_XBAR.PROTOCOL_MODE_SEL = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG_SLP_CTRL.TXA_SLEEP_B_BIG_IN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_BYPASS_SML_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_SAVOSDAC_RANGE_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_SIG.VBUS_VALID_EXT_FORCE_VAL = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG2.PMA_TXA_MARGIN_2R = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_4.PMA_RXA_DCOPI_DCLKB_POS_GRAY_GEN3 = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG1.CTLECAL_MASK = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_HIZ_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DIV2_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_PRE_LSB_CODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_CTLE_CTRL2.PMA_RXA_CTLEVOS_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG11.EDSKCAL_OFFSET2_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG_SLP_CTRL.TXA_SLEEP_B_SML_IN = 0x%x\n`
+- `%s@%s: %s::%s: unsupported crossbar configuration (0:%d 1:%d)\n`
+- `%s@%s: %s::%s: failed to apply applyACIOPHYTunables for lane %d\n`
+- `%s@%s: %s::%s: index %d offset 0x%08x invalid (rangeLength 0x%08llx)\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_CAL_CTRL_BASE = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_SIG.VBUS_DETECT_FORCE_VAL = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG2.PMA_TXA_MARGIN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL11.PMA_RXA_DTVREG_BIG_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EIDAC_VLOW_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DPTX_PCLK2_SELECT = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_TX_PRE_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_PRE_CODE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG11.EDSKCAL_OFFSET3_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.FREQINIT_COUNT_TARGET = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_P1_LSB_CODE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_ADJUST_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DCO_CTRL8.PMA_RXA_DCOVREG_ADJUST = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_PHY_CFG1.MAC_PHY_LN0_PWR_DOWN = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_AUSB_UTMI_MUX_SELECT.UTMI_MUX_SEL = 0x%x\n`
+- `%s@%s: %s::%s: phyLanesMask 0x%08x 0:%d 1:%d\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_EN_SML_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_MARGIN_PRE_LSB_OV = 0x%x\n`
+
+**[__TEXT.__cstring]**
+
+- `\"Unsupported Link rate %lld\" @%s:%d`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_DIV2_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_PRE_LSB_CODE = 0x%x\n`
+- `initRegisterSpaces`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_EN_BIG = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_AFE_CTRL1.CLK_LANE_RX_DIV20_SYNC_RESET_N_VAL = 0x%x\n`
+- `AUSPLL_TOP`
+- `%s@%s: %s::%s: failed waiting for ACIOPHY_LANE_DP_CFG_BLK:ACIOPHY_DP_PCLK_STATUS:AUSPLL_LOCK to be set\n`
+- `%s@%s: %s::%s: CIO3PLL_CORE_CIO3PLL_CFG_CLKOUT_MASTER.PLLA_PCLKDRVL_EN = 0x%x\n`
+- `%s@%s: %s::%s: mode mismatch: lane0 [%d] lane1 [%d]\n modes do not match requested mode %d\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_LSB_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_CTLE_CTRL0.PMA_RXA_TX_CLK_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.SDM_SSC_STEP = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_TEST_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_BOOST_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_MARGIN_PRE = 0x%x\n`
+- `ATC_FABRIC`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_SLEEP_B_SML_IN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EIDAC_VHIGH_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: unexpected transition from %d -> %d\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DPTX_PCLK1_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_BYPASS_BIG_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_P1_LSB_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_TX_PRE_EN = 0x%x\n`
+- `CIO_LN1_AUSPMA_RX_SHM`
+- `clearACIOPhySleepBSmlBig`
+- `acioPhyExitS2R`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_AUSB_UTMI_MUX_SELECT.EUSB2PHY_SEL = 0x%x\n`
+- `%s@%s: %s::%s: EDT lists %d register maps, max %d supported\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_DIV2_RESET = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_PBIAS_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_BIAS_SEL_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DP_MAC_DIV20_CLK_SEL = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_APB_CMD_CMDOVERRIDE = 0x%08x\n`
+- `eusb2phy_shutdown`
+- `%s@%s: %s::%s: phyLanesMask 0x%08x TransportType lane[0] %d lane[1] %d failed with error 0x%08x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.CMN_CLAMP_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG_SLP_CTRL.TXA_SLEEP_B_SML_IN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_CAL_CTRL_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_P1_OV = 0x%x\n`
+- `DP_LN0_AUSPMA_TX_TOP`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_5.PMA_RXA_DCOPI_XCLK_POS_GRAY_GEN3 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_AFE_CTRL1.CLK_LANE_RX_DIV20_SYNC_RESET_N_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_BOOST_EN_OV = 0x%x\n`
+- `USB_LN0_AUSPMA_RX_EQ`
+- `%s@%s: %s::%s: USB2PHY_AUX_CFG_BLK_AUX_POWER_DOWN_CONTROL_0.AUX_SLEEP_B_SML_IN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL11.PMA_RXA_DTVREG_SML_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL11.PMA_RXA_DTVREG_SML_EN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DP_PMA_BYTECLK_RESET = 0x%x\n`
+- `%s@%s: %s::%s: client %s requesting link rate 0x%02x options 0x%08x pclk %d completed with 0x%08x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL14.PMA_RXA_SAVOSDAC_EVEND_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_SIG.VBUS_DETECT_FORCE_VAL = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_TX_PST1_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_TX_PST1_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_TX_PST1_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: failed waiting for ATCPHY_POWER_DOWN_CONTROL_1:SLEEP_B_BIG_OUT to be set\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_4.PMA_RXA_DCOPI_DCLKB_POS_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_AUSB_UTMI_MUX_SELECT.UTMI_MUX_SEL = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_RXTERM_PULLUP_LEAK_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EI_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_SAVOSDAC_RANGE = 0x%x\n`
+- `%s@%s: %s::%s: PA 0x%llx mask 0x%08x value 0x%08x already set (read 0x%08x)\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_SEL_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_RXTERM_EN_OV = 0x%x\n`
+- `displayPortTunnelLinkRateChange`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EI_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_EN_SML_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.SDM_SSC_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_CAL_CTRL_BASE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_LSB = 0x%x\n`
+- `CIO3PLL_CORE`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_SAVOSDAC_RANGE = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_CTL.USB2PHY_PORT_RESET = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_MISC_TUNE.USB2PHY_REFCLK_GATEOFF = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_DIV2_RESET_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_EN_BIG = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL11.PMA_RXA_DTVREG_SML_EN_OV = 0x%x\n`
+- `USB_LN1_AUSPMA_RX_SHM`
+- `CIO_LN0_AUSPMA_RX_TOP`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG11.EDSKCAL_OFFSET2_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_ACCAP_CTRL23.PMA_RXA_ACCAP_ATTN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_ACCAP_CTRL23.PMA_RXA_ACCAP_ATTN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG11.EDSKCAL_OFFSET3_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_READ_CONTROL_CFG.PHY_LN0_MAC_PHY_STATUS_RE = 0x%x\n`
+- `%s@%s: %s::%s: device memory range 0x%016llx - 0x%016llx\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_SIG.VBUS_VALID_EXT_FORCE_VAL = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_2R_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL11.PMA_RXA_DTVREG_SML_EN_OV = 0x%x\n`
+- `\"ACIOPHY failed to enter S2R: 0x%08x\" @%s:%d`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG1.CTLECAL_MASK = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_ACIOPHY_MODE.LANE0_RX_MODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG1.VREGCAL_MASK = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_ODDE_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EIDAC_VLOW_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG2.PMA_TXA_MARGIN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_P1_LSB_OV = 0x%x\n`
+- `AUS_CMN_SHM`
+- `CIO_CIO3PLL_TOP`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_DCO_EFUSE_SPARE.RODCO_ENCAP_EFUSE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_5.PMA_RXA_DCOPI_XCLK_POS_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: CIO3PLL_CORE_CIO3PLL_CFG_CLKOUT_MASTER.PLLA_REFBUFCLKDRVL_EN = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.FBDIVN_HALF = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_DIV2_RESET = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_2R_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL11.PMA_RXA_DTVREG_BIG_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL11.PMA_RXA_DTVREG_BIG_EN = 0x%x\n`
+- `%s@%s: %s::%s: Timeout waiting for APB_COMMAND(0x%08x) to be ACKed\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EIDAC_VHIGH_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_CLK_EN = 0x%x\n`
+- `CIO_LN1_AUSPMA_TX_TOP`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG12.EDSKCAL_OFFSET_OV_SEL = 0x%x\n`
+- `%s@%s: %s::%s: 0x%08x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_XBAR.DP_SINGLE_PMA = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.FREQINIT_COUNT_TARGET = 0x%x\n`
+- `%s@%s: %s::%s: index %d out of range\n`
+- `tunable-postreset`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_4R_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_RXTERM_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_P1_LSB_CODE_OV = 0x%x\n`
+- `usb2PhyPortReset_block_invoke`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_5.PMA_RXA_DCOPI_XCLKB_POS_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_ODDD_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_ACIOPHY_MODE.LANE0_TX_MODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DLY_CTRL_TAPGEN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_P1_LSB_CODE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_BYTECLK_RESET_SYNC_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_SEL_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_CAL_CTRL_BASE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_AFE_CTRL1.CLK_LANE_RX_DIV20_SYNC_RESET_N_VAL = 0x%x\n`
+- `%s@%s: %s::%s: CIO3PLL_CORE_CIO3PLL_CFG_FRACN_CAN.DLL_CAL_START_CAPCODE_EFUSE = 0x%x\n`
+- `down`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG1.CTLECAL_MASK = 0x%x\n`
+- `%s@%s: %s::%s: changing USB mode to device\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_BYPASS_SML = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG1.VREGCAL_MASK = 0x%x\n`
+- `start`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_SIG.VBUS_DETECT_FORCE_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_4R_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL10.PMA_RXA_DTVREG_ADJUST = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL10.PMA_RXA_DTVREG_ADJUST = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_BYTECLK_RESET_SYNC_CLR = 0x%x\n`
+- `%s@%s: %s::%s: LPDPTX_AUX_CFG_BLK_AUX_MARGIN.RCAL_RXOFFSET_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_RW_RSV0 = 0x%08x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_CLR = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_BYTECLK_RESET_SYNC_CLR_OV = 0x%x\n`
+- `AUS_CMN_TOP`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_ODDD_GRAY = 0x%x\n`
+- `applyUSBGen1WA`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_B.FBDIVN_FRAC_DEN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_P1 = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_CTL.USB2PHY_SIDDQ = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_EN_BIG_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_ACIOPHY_MODE.LANE1_RX_MODE = 0x%x\n`
+- `%s@%s: %s::%s: 0:%d 1:%d orientation %d\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_APB_CMD_CMDOVERRIDE.APB_REQ = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2PHY_SIG.VBUS_VALID_EXT_FORCE_EN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG_SLP_CTRL.TXA_CLAMP_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_2R = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_PRE_LSB_CODE_OV = 0x%x\n`
+- `usb2PhyEnterS2R`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_5.PMA_RXA_DCOPI_XCLKB_POS_GRAY_GEN3 = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_CTLE_CTRL2.PMA_RXA_CTLEVOS_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_EVENX_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2PHY_CTL.USB2PHY_APB_RESET = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_TEST_RXLPBKDT_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_BIAS_SEL = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_EVENX_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.LFCLK_CTRL = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_BYTECLK_RESET_SYNC_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_RXTERM_PULLUP_LEAK_EN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.RXA_CLAMP_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_BYPASS_SML_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_TEST_RXLPBKDT_EN = 0x%x\n`
+- `%s@%s: %s::%s: CIO3PLL_CORE_CIO3PLL_CFG_DCO_NCTRL.DCO_COARSEBIN_EFUSE0 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_3.PMA_RXA_DFEH5DAC_GRAY_GEN4 = 0x%x\n`
+- `eusb2phy_init`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_MISC_TUNE.USB2PHY_APBCLK_GATEOFF = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_APB_RESET_N = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.VCO_PRE_DIVN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_DIV2_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_HRCLK_SEL_OV = 0x%x\n`
+- `USB_LN0_AUSPMA_TX_TOP`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_4.PMA_RXA_DCOPI_DCLK_POS_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_PMAFSM_REG2.EDSKCAL_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG11.EDSKCAL_OFFSET1_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG12.EDSKCAL_OFFSET_OV_SEL = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2HOST0_CFG.USB2HOST0_OHCI_PREFETCH_EN = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_CTL.USB2PHY_RESET = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_PRE_CODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_CTLE_CTRL0.PMA_RXA_TX_CLK_EN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_CIOPHY_CFG0.BIST_CIO_EN = 0x%x\n`
+- `%s@%s: %s::%s: failed to find register range %d\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DPTXPHY_PMA_LANE_RESET_N = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG_SLP_CTRL.TXA_CLAMP_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_TX_PRE_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_EN = 0x%x\n`
+- `%s@%s: %s::%s: failed waiting for ATCPHY_POWER_DOWN_CONTROL_1:SLEEP_B_SML_OUT to be reset\n`
+- `%s@%s: %s::%s: found register range %d at 0x%016llx (0x%016llx)\n`
+- `usb2PhyPortReset`
+- `%s@%s: %s::%s: AUSBC_CORE_EVT_BLK_C0_USB2_CTL.EVT_EN = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_SPARE_REGISTERS_0.CFG_S2R_USB_LN_SWAP = 0x%x\n`
+- `performDPPhyResetRelease`
+- `CIO_LN0_AUSPMA_RX_SHM`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.PCLK_DIV_SEL = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_P1_LSB = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_P1_CODE_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_APB_CMD_CMDOVERRIDE.APB_OVERRIDE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG2.PMA_TXA_MARGIN_2R = 0x%x\n`
+- `setAUSPLLFrequencyDescriptor`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_HRCLK_SEL = 0x%x\n`
+- `unconfigureDPAltMode`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_3.PMA_RXA_DFEH5DAC_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_SAVOSDAC_ODDX_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: unable to identify client for lane mask 0x%08x\n`
+- `setACIOPhyPowerLevel`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_DIV2_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_TEST_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: USB2PHY_AUX_CFG_BLK_AUX_POWER_DOWN_CONTROL_0.CFG_AUX_TXTERM_CODE = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_XBAR = 0x%08x\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DPTX_PCLK1_SELECT = 0x%x\n`
+- `%s@%s: %s::%s: value %d range %d result %d\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_PRE_CODE = 0x%x\n`
+- `USB_LN0_AUSPMA_RX_TOP`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_CLK_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.LPBKIN_RECOVERED_DATA = 0x%x\n`
+- `acioPhyEnterS2R`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_5.PMA_RXA_DCOPI_XCLKB_POS_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_PMAFSM_REG2.EDSKCAL_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_CTLE_CTRL2.PMA_RXA_CTLEVOS_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_CLR = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EI_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_5.PMA_RXA_DCOPI_XCLK_POS_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL14.PMA_RXA_SAVOSDAC_EVEND_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_SIG.VBUS_VALID_EXT_FORCE_EN = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_B.FBDIVN_FRAC_NUM = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.VCLK_OP_DIVN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_BOOST_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DIV2_RST = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_2.PMA_RXA_DFEH2DAC_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: initialized\n`
+- `%s@%s: %s::%s: Applying EDT tunable overrides for %s block\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_3.PMA_RXA_DFEH4DAC_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DCO_CTRL8.PMA_RXA_DCOVREG_ADJUST_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_RW_RSV0 = 0x%08x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EIDAC_VLOW_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2PHY_CTL.USB2PHY_RESET = 0x%x\n`
+- `powerDownSleepControl`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DIV2_RST = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_C.LFSDM_DIV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DCO_CTRL8.PMA_RXA_DCOVREG_ADJUST_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.KPKI_SCALE_HBW = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_CLKOUT_MASTER.PLLA_REFBUFCLKDRVR_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_BYTECLK_RESET_SYNC_CLR_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_OV_CFG.BIST_USB0_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_PMAFSM_REG4.PCS_PMAFSM_REQ = 0x%x\n`
+- `configureDPPhyRXTX`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_TEST_RXLPBKDT_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: timed out waiting for PHY_LN0_MAC_PHY_STATUS_2\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_ACIOPHY_MODE.LANE1_TX_MODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_BIAS_SEL_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_PBIAS_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_TX_PRE_EN_OV = 0x%x\n`
+- `applyACIOPHYTunables`
+- `configureDPTunnelMode`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_ODDD_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_HIZ_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_XBAR.PROTOCOL_MODE_SEL = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_4R_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DLY_CTRL_TAPGEN = 0x%x\n`
+- `%s@%s: %s::%s: _phySelect: %08x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG2.PMA_TXA_MARGIN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_P1_CODE_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_OV_CFG.BIST_MAC_PHY_LN0_RESET_N_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DPRX_PCLK_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_4R = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DPTXPHY_PMA_LANE_RESET_N_OV = 0x%x\n`
+- `USB_ACIOPHY_TOP`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_2.PMA_RXA_DFEH2DAC_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: register space [%d] PADDR 0x%llx VADDR 0x%llx\n`
+- `applyLegacyTunables`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_EN_SML_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.CMN_SLEEP_B_SML_IN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.CMN_SLEEP_B_BIG_IN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_HRCLK_SEL = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_LSB_OV = 0x%x\n`
+- `%s@%s: %s::%s: power %s\n`
+- `applyTunables`
+- `adjustUSBCalibration`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_CTLE_CTRL0.PMA_RXA_TX_CLK_EN = 0x%x\n`
+- `USB_LN1_AUSPMA_RX_TOP`
+- `sendAPBCommand`
+- `up`
+- `setACIOPhySleepBSmlBig`
+- `%s@%s: %s::%s: failed waiting for ATCPHY_POWER_DOWN_CONTROL_1:SLEEP_B_SML_OUT to be set\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_2R_OV = 0x%x\n`
+- `CIO_LN0_AUSPMA_TX_TOP`
+- `%s@%s: %s::%s: LPDPTX_AUX_SHM_CFG_BLK_AUX_CTRL_REG1.PMA_AUX_HYS_ADJ = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_ACCAP_CTRL23.PMA_RXA_ACCAP_ATTN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_4.PMA_RXA_DCOPI_DCLK_POS_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.RXA_SLEEP_B_SML_IN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_RXTERM_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_3.PMA_RXA_DFEH4DAC_GRAY_GEN4 = 0x%x\n`
+- `overrideUSBControllerSignals_block_invoke`
+- `phy-select`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.RXA_CLAMP_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_MARGIN_PRE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG1.SAMPCAL_MASK = 0x%x\n`
+- `AppleT8103TypeCPhy.cpp`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_RXTERM_PULLUP_LEAK_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_P1_OV = 0x%x\n`
+- `DP_LN1_AUSPMA_TX_TOP`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_EVENE_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG11.EDSKCAL_OFFSET0_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_ODDD_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2PHY_MISC_TUNE.EUSB2PHY_APBCLK_GATEOFF = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG2.PMA_TXA_MARGIN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_4R = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_EN_SML = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_ACIOPHY_MODE = 0x%08x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL14.PMA_RXA_SAVOSDAC_EVEND_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG2.PMA_TXA_MARGIN_2R = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_ADJUST_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_CIOPHY_CFG0 = 0x%08x\n`
+- `%s@%s: %s::%s: failed to get register map at index %d\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.REF_DIVN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_BYPASS_BIG = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_AFE_CTRL1.CLK_LANE_RX_DIV20_SYNC_RESET_N_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_CTLE_CTRL2.PMA_RXA_CTLEVOS_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: index %d offset 0x%08x invalid (rangeLength 0x%08llx)\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_CAL_CTRL = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_TX_CAL_CODE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_BOOST_EN = 0x%x\n`
+- `%s@%s: %s::%s: LPDPTX_AUX_SHM_CFG_BLK_AUX_CTRL_REG0.PMA_AUX_SEL_LF_DATA = 0x%x\n`
+- `%s@%s: %s::%s: No PHY configuration needed\n`
+- `%s@%s: %s::%s: ACIOPHY_PLL_TOP_BLK_ACIOPHY_PLL_COMMON_CTRL.APB_WAIT_FOR_CMN_READY_BEFORE_PLL_RESET_EXIT = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_2R = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL11.PMA_RXA_DTVREG_BIG_EN_OV = 0x%x\n`
+- `\"Invalid pclkIndex %lld\" @%s:%d`
+- `performEFuseProgramming`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_ODDE_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EIDAC_VHIGH_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_CLK_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_CLKOUT_MASTER.PLLA_PCLK2DRVR_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_TEST_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_TX_CAL_CODE_OV = 0x%x\n`
+- `USB_LN0_AUSPMA_RX_SHM`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_5.PMA_RXA_DCOPI_XCLKB_POS_GRAY_GEN3 = 0x%x\n`
+- `AppleT8103TypeCPhy`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.CMN_SLEEP_B_SML_IN_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.CMN_SLEEP_B_BIG_IN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_BYPASS_BIG_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DIV2_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL11.PMA_RXA_DTVREG_BIG_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_PBIAS_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUS_CMN_SHM_BLK_VREG_REG_0.VREG_TRIM = 0x%x\n`
+- `tunable-device`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_CLR_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_HIZ = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG2.PMA_TXA_MARGIN_2R_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG1.EICAL_MASK = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2PHY_SIG.VBUS_VALID_EXT_FORCE_VAL = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2HOST0_CFG.USB2HOST0_OHCI_PREFETCH_CTRL = 0x%x\n`
+- `%s@%s: %s::%s: PA 0x%llx mask 0x%08x value 0x%08x (read 0x%08x wrote 0x%08x)\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_CLKOUT_DTC_VREG.PLLA_CLKOUT_VREG_BYPASS = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_PRE_LSB_CODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CFG_RX_TXMODE.RX_TXMODE = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_SPARE_REGISTERS_0.CFG_S2R_FSM_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG1.SAMPCAL_MASK = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_BYTECLK_RESET_SYNC_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DIV2_EN = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_APB_CMD_CMDOVERRIDE.PLL_STOP_VCLK_SYNC_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: changing USB mode to host\n`
+- `%s@%s: %s::%s: Timeout waiting for ACIOPHY_LANE_DP_CFG_BLK:ACIOPHY_DP_PCLK_STATUS:AUSPLL_LOCK to be set\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_SAVOSDAC_ODDX_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB2PHY_CTL.USB2PHY_APB_RESETN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_P1_LSB = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2HOST0_CTL.USB2HOST0_HW_CLK_GATE_OFF_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_EN_BIG_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_HIZ = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_EN = 0x%x\n`
+- `%s@%s: %s::%s: Applying %s tunables\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_OV_CFG = 0x%08x\n`
+- `i8@?0`
+- `configureDPPLLFrequency`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_2R_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DCO_CTRL8.PMA_RXA_DCOVREG_ADJUST = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DCO_CTRL8.PMA_RXA_DCOVREG_ADJUST = 0x%x\n`
+- `usb2PhyExitS2R`
+- `%s@%s: %s::%s: AUSBC_CFG_USB2PHY_BLK_USB_CTL.USB_MODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_PMAFSM_REG4.PCS_PMAFSM_REQ = 0x%x\n`
+- `%s@%s: %s::%s: Configuring PCLK(%u) at link rate: %llu\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_EVENE_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: AUSBC_CORE_EVT_BLK_C0_USB2_CTL.LOAD_CNT = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_CTLE_CTRL0.PMA_RXA_TX_CLK_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_SPARE_REGISTERS_0.S2R_AON_SYNC_RST_N = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_RESET_N = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_MARGIN_PRE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_TX_PST1_EN = 0x%x\n`
+- `CIO_ACIOPHY_TOP`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2PHY_CTL.USB2PHY_SIDDQ = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.CMN_CLAMP_EN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG_SLP_CTRL.TXA_SLEEP_B_BIG_IN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_P1_LSB_CODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_P1_LSB_CODE = 0x%x\n`
+- `%s@%s: %s::%s: USB2PHY_AUX_CFG_BLK_AUX_POWER_DOWN_CONTROL_0.CFG_AUX_CLAMP_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_4R = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_APB_CMD_FD_CONTROL.APB_PLL_VCLK_STOP_DIRECT_CONTROL = 0x%x\n`
+- `CIO_LN1_AUSPMA_RX_TOP`
+- `%s@%s: %s::%s: LPDPTX_AUX_CFG_BLK_AUX_MARGIN.RCAL_TXSWING = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_EN_SML = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_RXTERM_EN = 0x%x\n`
+- `%s@%s: %s::%s: USB2PHY_AUX_CFG_BLK_AUX_POWER_DOWN_CONTROL_0.AUX_SLEEP_B_BIG_IN = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_PHY_CFG1.MAC_PHY_LN0_PWR_DOWN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_TEST_RXLPBKDT_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_P1_CODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_SAVOSDAC_RANGE_OV = 0x%x\n`
+- `%s@%s: %s::%s: \n`
+- `site.AppleT8103TypeCPhy`
+- `resetACIOPhy`
+- `configureACIOPhyLaneMode`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_4R = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DIV2_EN_OV = 0x%x\n`
+- `configurePhyCrossbar`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.KP_MAN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_HRCLK_SEL_OV = 0x%x\n`
+- `CIO_LN1_AUSPMA_RX_EQ`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG11.EDSKCAL_OFFSET1_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_CLKOUT_MASTER.PLLA_PCLKDRVR_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_CAL_CTRL = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_FRACN_CAN.DLL_CAL_START_CAPCODE_EFUSE = 0x%x\n`
+- `%s@%s: %s::%s: failed waiting for ATCPHY_SPARE_REGISTERS_1:CFG_S2R_FSM_BUSY to be cleared\n`
+- `%s@%s: %s::%s: failed to apply applyACIOPHYTunables for lane %d\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_4.PMA_RXA_DCOPI_DCLK_POS_GRAY_GEN3 = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_4.PMA_RXA_DCOPI_DCLKB_POS_GRAY_GEN3 = 0x%x\n`
+- `%s@%s: %s::%s: mode %d phyLanesMask 0x%08x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EI_EN_OV = 0x%x\n`
+- `121111121222121211111111212121212111211112211222`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.RXA_SLEEP_B_SML_IN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG0.PMA_TXA_BYTECLK_RESET_SYNC_CLR_OV = 0x%x\n`
+- `configureDPTunnelModePLLFrequency`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG_SLP_CTRL.TXA_SLEEP_B_BIG_IN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG2.PMA_TXA_MARGIN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_LSB = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_PRE_LSB_CODE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_EN_OV = 0x%x\n`
+- `AUSPLL_CORE`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_SAVOSDAC_RANGE_OV = 0x%x\n`
+- `configureLanes`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_DIV2_RESET_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_CAL_CTRL_BASE_OV = 0x%x\n`
+- `%s@%s: %s::%s: failed waiting for ATCPHY_POWER_DOWN_CONTROL_1:SLEEP_B_BIG_OUT to be cleared\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_2.PMA_RXA_DFEH3DAC_GRAY_GEN4 = 0x%x\n`
+- `fastsim`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_HIZ_OV = 0x%x\n`
+- `configureDPAltMode`
+- `CIO3PLL_TOP`
+- `unconfigureDPTunnelMode`
+- `enableCIO3PLL`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_XBAR.DP_BOTH_PMA = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_DIV2_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_TX_CAL_CODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_TX_CAL_CODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG11.EDSKCAL_OFFSET3_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_BYPASS_BIG = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN = 0x%x\n`
+- `AppleTypeCPhyDownspreadCapability`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG11.EDSKCAL_OFFSET2_OV = 0x%x\n`
+- ` @%s:%d`
+- `tunable-host`
+- `%s@%s: %s::%s: unsupported crossbar configuration (0:%d 1:%d)\n`
+- `%s@%s: %s::%s: LPDPTX_AUX_CFG_BLK_AUX_CTRL.AUX_RXOFFSET = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_4.PMA_RXA_DCOPI_DCLKB_POS_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_SAVOSDAC_ODDX_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL14.PMA_RXA_SAVOSDAC_EVEND_GRAY = 0x%x\n`
+- `tunable-%s`
+- `%s@%s: %s::%s: ACIOPHY_PLL_TOP_BLK_AUSPLL_PCTL_FSM_CTRL1.APB_REQ_OV_SEL = 0x%x\n`
+- `%s@%s: %s::%s: failed to find required register ranges\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_CAL_CTRL_BASE_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_CIOPHY_CFG0.CLOCK_EN = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.KP_EXP = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_4R_OV = 0x%x\n`
+- `1211111212221212111111112121212121112111122211111111111111111111111111111111111111111111111111111111112222222222222222222111222`
+- `%s@%s: %s::%s: invalid power level (%d) for kAppleTypeCPhyTransportTypeUnknown\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_ADJUST_GRAY_OV = 0x%x\n`
+- `tunable_%s`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.RXA_SLEEP_B_BIG_IN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG2.PMA_TXA_MARGIN_2R_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_BYTECLK_RESET_SYNC_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_2.PMA_RXA_DFEH3DAC_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_BYPASS_SML_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_CLKOUT_DIVIDER.PLLA_REFBUFCLK_DIVN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG0.PMA_TXA_CAL_CTRL_OV = 0x%x\n`
+- `USB_LN1_AUSPMA_RX_EQ`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_EVENX_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DPTX_PCLK2_SELECT = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.KI_MAN = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_POST_2R = 0x%x\n`
+- `%s@%s: %s::%s: LPDPTX_AUX_CFG_BLK_AUX_LDO_CTRL.AUX_HYS_ADJ = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_ACCAP_CTRL23.PMA_RXA_ACCAP_ATTN_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSB_CTL_REG_BLK_USB2PHY_MISC_TUNE.EUSB2PHY_REFCLK_GATEOFF = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_CFG_MAIN_REG1.PMA_TXA_CLK_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN_P1 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG1.EICAL_MASK = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EIDAC_VLOW_GRAY_OV = 0x%x\n`
+- `site.AppleT8310TypeCPhy`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DPRX_PCLK_SELECT = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_TX_PRE_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_CFG_RX_TXMODE.RX_TXMODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_BIAS_SEL = 0x%x\n`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_SLEEP_B_BIG_IN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_5.PMA_RXA_DCOPI_XCLK_POS_GRAY_GEN3 = 0x%x\n`
+- `configureUSB2`
+- `configureAPAuxChennel`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_OV_CFG.MAC_USBPHY_LN0_PWR_DOWN_OV = 0x%x\n`
+- `%s@%s: %s::%s: falling back to compatible register ranges defined by tRegisterSpaces\n`
+- `%s@%s: %s::%s: powerLevel %d returning 0x%08x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE_2R = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_P1_CODE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_MARGIN_PRE_LSB_OV = 0x%x\n`
+- `applySDBTunables`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DIV2_EN = 0x%x\n`
+- `%s@%s: %s::%s: timed out waiting for PHY_LN0_MAC_PHY_STATUS\n`
+- `%s@%s: %s::%s: changing USB mode to isolation\n`
+- `%s@%s: %s::%s: AUSPLL_TOP_AUSPLL_FREQ_DESC_FREQDESCRIPTOR_0_A.KI_EXP = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_ADJUST_GRAY_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DIV2_RST_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_1.PMA_RXA_DFEH1DAC_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: phyLanesMask 0x%08x 0:%d 1:%d\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_RXTERM_PULLUP_LEAK_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_CLK_DIV2_RST_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_PBIAS_EN = 0x%x\n`
+- `USB_LN1_AUSPMA_TX_TOP`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_4.PMA_RXA_DCOPI_DCLKB_POS_GRAY_GEN3 = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL15.PMA_RXA_SAVOSDAC_EVENX_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_DTVREG_ADJUST_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_CLKOUT_DTC_VREG.DTC_VREG_ADJUST_EFUSE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EIDAC_VHIGH_GRAY = 0x%x\n`
+- `configureSleepControl`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_MARGIN_PRE_LSB_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: LPDPTX_AUX_SHM_CFG_BLK_AUX_CTRL_REG1.PMA_AUX_HYS_ADJ_OV = 0x%x\n`
+- `%s@%s: %s::%s: powerLevel %d -> %d\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_PMAFSM_REG4.PCS_PMAFSM_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG_SLP_CTRL.TXA_SLEEP_B_SML_IN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL13.PMA_RXA_DTVREG_ADJUST_OV = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_PLL_TOP_BLK_ACIOPHY_PLL_SPARE_IN.APB_SPARE_IN_5G = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_TOP_TJ_BLK_CAL_CFG_REG11.EDSKCAL_OFFSET0_OV = 0x%x\n`
+- `\"Invalid pclkIndex 0x%llu\" @%s:%d`
+- `%s@%s: %s::%s: ATCPHY_CFG_BLK_ATCPHY_POWER_DOWN_CONTROL_0.ACIOPHY_CLAMP_EN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_IMP_REG3.PMA_TXA_MARGIN_PRE = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_DCO_EFUSE_SPARE.RODCO_BIASADJ_EFUSE = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_BIST_PHY_CFG0.MAC_PHY_LN0_RESET_N = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_TOP_TJ_BLK_PMAFSM_REG4.PCS_PMAFSM_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_TX_SHM_BLK_TXA_LDOCLK_REG.PMA_TXA_LDOCLK_BYPASS_SML = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL17.PMA_RXA_TX_MARGIN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_MARGIN_PRE_LSB = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_PRE_CODE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_PRE_CODE_OV = 0x%x\n`
+- `%s@%s: %s::%s: LPDPTX_AUX_CFG_BLK_AUX_CTRL.PWRDN = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_1.PMA_RXA_DFEH1DAC_GRAY_GEN4 = 0x%x\n`
+- `%s@%s: %s::%s: ACIOPHY_TOP_BLK_CFG0_TOP.RXA_SLEEP_B_BIG_IN_OV = 0x%x\n`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_FREQINIT_1.REFCLK_FREQ = 0x%x\n`
+- `%s@%s: %s::%s: Unconfiguring PCLK(%u)\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_EI_CTRL12.PMA_RXA_EIDAC_VLOW_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: failed waiting for kACIOPHY_CMN_SHM_CMN_STS_REG_0::CMN_READY to be set\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.PMA_RXA_VREF_ADJUST_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_MARGIN_PRE_LSB = 0x%x\n`
+- `displayPortLinkRateChange`
+- `%s@%s: %s::%s: USB2PHY_AUX_CFG_BLK_AUX_POWER_DOWN_CONTROL_0.CFG_AUX_TXTERM_CODEMSB = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_EQ_CTRL_G3G4_4.PMA_RXA_DCOPI_DCLK_POS_GRAY_GEN3 = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_CTLE_CTRL2.PMA_RXA_CTLEVOS_GRAY_OV = 0x%x\n`
+- `LinkInactiveReason`
+- `%s@%s: %s::%s: Simulated target\n`
+- `%s@%s: %s::%s: C0_UTMI_CLK_ACTIVE.EVT_CNT is 0\n`
+- `%s@%s: %s::%s: ACIOPHY_LANE_DP_CFG_BLK_TX_DP_CTRL0.DPTX_PCLK2_ENABLE = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TERM_CTRL19.PMA_RXA_TX_TEST_EN_OV = 0x%x\n`
+- `%s@%s: %s::%s: USB2PHY_AUX_CFG_BLK_AUX_POWER_DOWN_CONTROL_0.CFG_AUX_PWRDN = 0x%x\n`
+- `%s@%s: %s::%s: Unsupported link rate: %llu\n`
+- `%s@%s: %s::%s: CIO3PLL_CORE_CIO3PLL_CFG_DCO_NCTRL.DCO_COARSEBIN_EFUSE1 = 0x%x\n`
+- `AppleT8310TypeCPhy`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_VREF_CTRL22.LPBKIN_RECOVERED_DATA = 0x%x\n`
+- `CIO_LN0_AUSPMA_RX_EQ`
+- `%s@%s: %s::%s: CIO3PLL_CORE_CIO3PLL_CFG_CLKOUT_DTC_VREG.DTC_VREG_ADJUST_EFUSE = 0x%x\n`
+- `%s@%s: %s::%s: LANE1_AUSPMA_RX_SHM_TJ_BLK_RXA_SAVOS_CTRL16.PMA_RXA_SAVOSDAC_ODDX_GRAY = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_TX_CTRL18.PMA_RXA_TX_MARGIN_PRE_OV = 0x%x\n`
+- `ATC0AXI2AF`
+- `%s@%s: %s::%s: AUSPLL_CORE_AUSPLL_CFG_BGR.PLLA_BGR_CTRL_AVAIL = 0x%x\n`
+- `%s@%s: %s::%s: LANE0_AUSPMA_RX_SHM_TJ_BLK_RXA_DFE_CTRL12.PMA_RXA_TX_BYTECLK_RESET_SYNC_CLR = 0x%x\n`

@@ -1,0 +1,211 @@
+# `_UICollectionViewShadowUpdatesController`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `UICollectionViewDragDestination_Internal`
+- 4 instance variables, 8 properties, 178 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"UICollectionView" _collectionView;
+@"_UIDataSourceSnapshotter" _initialSnapshot;
+@"_UIDataSourceUpdateMap" _updateMap;
+@"NSMutableArray" __shadowUpdates;
+```
+
+## Properties
+
+```
+@property (T@"UICollectionView",W,N,V_collectionView) collectionView;
+@property (T@"_UIDataSourceSnapshotter",&,N,V_initialSnapshot) initialSnapshot;
+@property (T@"_UIDataSourceUpdateMap",&,N,V_updateMap) updateMap;
+@property (T@"NSMutableArray",&,N,V__shadowUpdates) _shadowUpdates;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[_UICollectionViewShadowUpdatesController collectionView:shouldSpringLoadItemAtIndexPath:withContext:];
+-[_UICollectionViewShadowUpdatesController collectionView:previewForHighlightingContextMenuWithConfiguration:];
+-[_UICollectionViewShadowUpdatesController collectionView:dropPreviewParametersForItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:tableLayout:heightForRowAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:canHandleDropSesson:];
+-[_UICollectionViewShadowUpdatesController initWithCollectionView:];
+-[_UICollectionViewShadowUpdatesController collectionView:dragSessionAllowsMoveOperation:];
+-[_UICollectionViewShadowUpdatesController collectionView:contextMenuConfiguration:dismissalPreviewForItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:didHighlightItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:willPerformPreviewActionForMenuWithConfiguration:animator:];
+-[_UICollectionViewShadowUpdatesController collectionView:layout:insetForSectionAtIndex:];
+-[_UICollectionViewShadowUpdatesController collectionView:didEndDisplayingCell:forItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:targetIndexPathForMoveOfItemFromOriginalIndexPath:atCurrentIndexPath:toProposedIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:dropSessionDidExit:];
+-[_UICollectionViewShadowUpdatesController collectionView:dragSessionWillBegin:];
+-[_UICollectionViewShadowUpdatesController sectionIndexAfterShadowUpdates:allowingAppendingInserts:];
+-[_UICollectionViewShadowUpdatesController indexPathForPreferredFocusedViewInCollectionView:];
+-[_UICollectionViewShadowUpdatesController updateMap];
+-[_UICollectionViewShadowUpdatesController collectionView:contextMenuConfiguration:highlightPreviewForItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:canFocusItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:didUnhighlightItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:tableLayout:estimatedHeightForRowAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:dropSessionDidUpdate:withDestinationIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:contextMenuConfigurationForItemAtIndexPath:point:];
+-[_UICollectionViewShadowUpdatesController setInitialSnapshot:];
+-[_UICollectionViewShadowUpdatesController collectionView:dropSessionDidEnter:];
+-[_UICollectionViewShadowUpdatesController _dci_collectionView:contextMenuConfigurationForSelectedItemsAtIndexPaths:point:];
+-[_UICollectionViewShadowUpdatesController _collectionView:dragDestinationTargetIndexPathForProposedIndexPath:currentIndexPath:dropSession:];
+-[_UICollectionViewShadowUpdatesController _collectionView:dataOwnerForDragSession:atIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:tableLayout:heightForHeaderInSection:];
+-[_UICollectionViewShadowUpdatesController collectionView:dragPreviewParametersForItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:numberOfItemsInSection:];
+-[_UICollectionViewShadowUpdatesController _collectionView:canMoveItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:canHandleDropSession:];
+-[_UICollectionViewShadowUpdatesController indexPathForElementWithModelIdentifier:inView:];
+-[_UICollectionViewShadowUpdatesController collectionView:indexPathForIndexTitle:atIndex:];
+-[_UICollectionViewShadowUpdatesController collectionView:willDisplayCell:forItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:layout:flowLayoutRowAlignmentOptionsForSection:];
+-[_UICollectionViewShadowUpdatesController indexPathsBeforeShadowUpdates:];
+-[_UICollectionViewShadowUpdatesController _collectionView:dragSessionDidEnd:];
+-[_UICollectionViewShadowUpdatesController collectionView:didSelectItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:canPerformPrimaryActionForItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:dataOwnerForDropSession:withDestinationIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:shouldSpringLoadItemAtIndexPath:withContext:];
+-[_UICollectionViewShadowUpdatesController collectionView:previewForDismissingContextMenuWithConfiguration:];
+-[_UICollectionViewShadowUpdatesController collectionView:willEndContextMenuInteractionWithConfiguration:animator:];
+-[_UICollectionViewShadowUpdatesController collectionView:cellForItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:typeSelectStringForItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:shouldShowMenuForItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:dropSessionDidExit:];
+-[_UICollectionViewShadowUpdatesController collectionView:dragSessionDidEnd:];
+-[_UICollectionViewShadowUpdatesController numberOfSectionsInCollectionView:];
+-[_UICollectionViewShadowUpdatesController collectionView:dragSessionIsRestrictedToDraggingApplication:];
+-[_UICollectionViewShadowUpdatesController _rebasedShadowUpdatesForUpdate:initialSnapshot:shadowUpdates:];
+-[_UICollectionViewShadowUpdatesController collectionView:layout:minimumInteritemSpacingForSectionAtIndex:];
+-[_UICollectionViewShadowUpdatesController _indexPathOfReferenceItemForLayoutTransitionInCollectionView:];
+-[_UICollectionViewShadowUpdatesController collectionView:dropSessionDidEnd:];
+-[_UICollectionViewShadowUpdatesController _collectionView:updateTypeSelectResultForCell:atIndexPath:withItemResult:animator:];
+-[_UICollectionViewShadowUpdatesController indexPathAfterShadowUpdates:allowingAppendingInserts:];
+-[_UICollectionViewShadowUpdatesController setUpdateMap:];
+-[_UICollectionViewShadowUpdatesController collectionView];
+-[_UICollectionViewShadowUpdatesController collectionView:tableLayout:leadingSwipeActionsForRowAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController _dci_collectionView:contextMenuConfiguration:previewForDismissingToItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:layout:sizesForItemsInSection:];
+-[_UICollectionViewShadowUpdatesController collectionView:canMoveItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:heightForHeaderViewInTableLayout:];
+-[_UICollectionViewShadowUpdatesController collectionView:performAction:forItemAtIndexPath:withSender:];
+-[_UICollectionViewShadowUpdatesController collectionView:contextMenuConfigurationForItemsAtIndexPaths:point:];
+-[_UICollectionViewShadowUpdatesController _findShadowUpdateForIdentifier:inShadowUpdates:];
+-[_UICollectionViewShadowUpdatesController collectionView:tableLayout:estimatedHeightForHeaderInSection:];
+-[_UICollectionViewShadowUpdatesController shadowUpdates];
+-[_UICollectionViewShadowUpdatesController reset];
+-[_UICollectionViewShadowUpdatesController collectionView:layout:referenceSizeForHeaderInSection:];
+-[_UICollectionViewShadowUpdatesController _shouldPerformTranslationForDelegateBasedFlowLayoutSizing];
+-[_UICollectionViewShadowUpdatesController _collectionView:accessoriesForContextMenuWithConfiguration:layoutAnchor:];
+-[_UICollectionViewShadowUpdatesController collectionView:shouldDeselectItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:shouldSelectItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController _rebaseForUpdateMap:];
+-[_UICollectionViewShadowUpdatesController collectionView:shouldHighlightItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:tableLayout:accessoryButtonTappedForRowWithIndexPath:];
+-[_UICollectionViewShadowUpdatesController indexPathsAfterShadowUpdates:];
+-[_UICollectionViewShadowUpdatesController _collectionView:canEditItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:layout:sizeForItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:dropSessionDidEnter:];
+-[_UICollectionViewShadowUpdatesController collectionView:tableLayout:heightForFooterInSection:];
+-[_UICollectionViewShadowUpdatesController indexPathBeforeShadowUpdates:];
+-[_UICollectionViewShadowUpdatesController collectionView:tableLayout:indentationLevelForRowAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController setCollectionView:];
+-[_UICollectionViewShadowUpdatesController _collectionView:itemsForAddingToDragSession:atIndexPath:point:];
+-[_UICollectionViewShadowUpdatesController collectionView:prefetchItemsAtIndexPaths:];
+-[_UICollectionViewShadowUpdatesController collectionView:tableLayout:willBeginEditingRowAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:tableLayout:estimatedHeightForFooterInSection:];
+-[_UICollectionViewShadowUpdatesController collectionView:selectionFollowsFocusForItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:cancelPrefetchingForItemsAtIndexPaths:];
+-[_UICollectionViewShadowUpdatesController set_shadowUpdates:];
+-[_UICollectionViewShadowUpdatesController collectionView:canEditItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:didUpdateFocusInContext:withAnimationCoordinator:];
+-[_UICollectionViewShadowUpdatesController collectionView:layout:referenceSizeForFooterInSection:];
+-[_UICollectionViewShadowUpdatesController collectionView:didEndDisplayingSupplementaryView:forElementOfKind:atIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:performDropWithCoordinator:];
+-[_UICollectionViewShadowUpdatesController _pruneAndRebaseShadowUpdatesForShadowInsertWithIdentifier:];
+-[_UICollectionViewShadowUpdatesController _collectionView:sceneActivationConfigurationForItemAtIndexPath:point:];
+-[_UICollectionViewShadowUpdatesController collectionView:targetIndexPathForMoveFromItemAtIndexPath:toProposedIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:itemsForBeginningDragSession:atIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:prefersFullSizePreviewsForDragSession:];
+-[_UICollectionViewShadowUpdatesController _rebasedUpdateMapForUpdates:];
+-[_UICollectionViewShadowUpdatesController collectionView:tableLayout:editingStyleForRowAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController _sectionIndexTitlesForCollectionView:];
+-[_UICollectionViewShadowUpdatesController _shadowUpdateReuseIdentifierForItemItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:tableLayout:commitEditingStyle:forRowAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController sectionIndexBeforeShadowUpdates:];
+-[_UICollectionViewShadowUpdatesController computeRevertShadowUpdates];
+-[_UICollectionViewShadowUpdatesController collectionView:tableLayout:didEndEditingRowAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:shouldUpdateFocusFromItemAtIndexPath:toView:heading:];
+-[_UICollectionViewShadowUpdatesController rebaseForUpdates:];
+-[_UICollectionViewShadowUpdatesController _dci_collectionView:contextMenuConfigurationForItemsAtIndexPaths:point:];
+-[_UICollectionViewShadowUpdatesController _collectionView:canHandleDropSesson:];
+-[_UICollectionViewShadowUpdatesController collectionView:tableLayout:leadingSwipeActionsConfigurationForRowAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController _coalesceUpdatesIfPossible:];
+-[_UICollectionViewShadowUpdatesController indexPathAfterShadowUpdates:];
+-[_UICollectionViewShadowUpdatesController collectionView:shouldUpdateFocusInContext:];
+-[_UICollectionViewShadowUpdatesController shouldRebaseForUpdates];
+-[_UICollectionViewShadowUpdatesController _expandCollapseAnimationContextForCollectionView:];
+-[_UICollectionViewShadowUpdatesController collectionView:viewForSupplementaryElementOfKind:atIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:itemsForBeginningDragSession:atIndexPath:];
+-[_UICollectionViewShadowUpdatesController _findInsertShadowUpdateForFinalIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:didFocusItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:tableLayout:trailingSwipeActionsForRowAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:didFocusItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:shouldApplyTransitionContentOffset:contentSize:];
+-[_UICollectionViewShadowUpdatesController collectionView:willDisplaySupplementaryView:forElementKind:atIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:dropSessionDidUpdate:withDestinationIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:sectionIndexTitlesTrimmedToCount:];
+-[_UICollectionViewShadowUpdatesController indexTitlesForCollectionView:];
+-[_UICollectionViewShadowUpdatesController collectionView:sceneActivationConfigurationForItemAtIndexPath:point:];
+-[_UICollectionViewShadowUpdatesController _collectionView:moveItemAtIndexPath:toIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:indexPathForSectionIndexTitle:atIndex:];
+-[_UICollectionViewShadowUpdatesController indexPathForPreferredFocusedItemForCollectionView:];
+-[_UICollectionViewShadowUpdatesController _updateCellIfNeeded:atIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:targetContentOffsetForProposedContentOffset:];
+-[_UICollectionViewShadowUpdatesController _collectionView:dropSessionDidEnd:];
+-[_UICollectionViewShadowUpdatesController collectionView:canPerformAction:forItemAtIndexPath:withSender:];
+-[_UICollectionViewShadowUpdatesController _collectionView:typeSelectResultDidUpdate:];
+-[_UICollectionViewShadowUpdatesController modelIdentifierForElementAtIndexPath:inView:];
+-[_UICollectionViewShadowUpdatesController collectionView:willDisplayContextMenuWithConfiguration:animator:];
+-[_UICollectionViewShadowUpdatesController _collectionView:canFocusItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:tableLayout:trailingSwipeActionsConfigurationForRowAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:liftingPreviewParametersForItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController _shadowUpdatesAreSimpleInsertWithOptionalMoveSequenceForIndexPath:];
+-[_UICollectionViewShadowUpdatesController _dci_collectionView:contextMenuConfiguration:previewForHighlightingItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:dragSessionWillBegin:];
+-[_UICollectionViewShadowUpdatesController collectionView:performPrimaryActionForItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController appendShadowUpdate:];
+-[_UICollectionViewShadowUpdatesController collectionView:performDropWithCoordinator:];
+-[_UICollectionViewShadowUpdatesController _collectionView:flowLayoutRowAlignmentOptionsForSection:];
+-[_UICollectionViewShadowUpdatesController _shadowUpdates];
+-[_UICollectionViewShadowUpdatesController collectionView:itemsForAddingToDragSession:atIndexPath:point:];
+-[_UICollectionViewShadowUpdatesController sectionIndexAfterShadowUpdates:];
+-[_UICollectionViewShadowUpdatesController _collectionView:indexPathOfReferenceItemToPreserveContentOffsetWithProposedReference:];
+-[_UICollectionViewShadowUpdatesController _regenerateUpdateMap];
+-[_UICollectionViewShadowUpdatesController initialSnapshot];
+-[_UICollectionViewShadowUpdatesController collectionView:didDeselectItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:horizontalIndexTitleBar:selectedEntry:];
+-[_UICollectionViewShadowUpdatesController _collectionView:styleForContextMenuWithConfiguration:];
+-[_UICollectionViewShadowUpdatesController _indexPathsBeforeShadowUpdates:];
+-[_UICollectionViewShadowUpdatesController collectionView:tableLayout:shouldIndentWhileEditingRowAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:layout:minimumLineSpacingForSectionAtIndex:];
+-[_UICollectionViewShadowUpdatesController collectionView:didUnfocusItemAtIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:transitionLayoutForOldLayout:newLayout:];
+-[_UICollectionViewShadowUpdatesController _collectionView:willPerformUpdates:];
+-[_UICollectionViewShadowUpdatesController _collectionView:dragSessionPropertiesForSession:];
+-[_UICollectionViewShadowUpdatesController collectionView:moveItemAtIndexPath:toIndexPath:];
+-[_UICollectionViewShadowUpdatesController _collectionView:targetIndexPathForMoveFromItemAtIndexPath:toProposedIndexPath:];
+-[_UICollectionViewShadowUpdatesController collectionView:heightForFooterViewInTableLayout:];
+-[_UICollectionViewShadowUpdatesController _collectionView:orthogonalScrollViewDidScroll:section:];
+-[_UICollectionViewShadowUpdatesController _collectionView:targetContentOffsetForProposedContentOffset:];
+-[_UICollectionViewShadowUpdatesController _supplementaryIndexPathBeforeShadowUpdates:];
+-[_UICollectionViewShadowUpdatesController _collectionView:dragSessionSupportsSystemDrag:];
+```

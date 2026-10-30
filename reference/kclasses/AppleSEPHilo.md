@@ -1,0 +1,72 @@
+# `AppleSEPHilo`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.driver.AppleSEPManager`](../kexts/com.apple.driver.AppleSEPManager.md)
+- Object size: `0x130` (304 bytes)
+- Metaclass: `0xfffffe000b99a4e8`; metaclass vtable `0xfffffe00081f0638`; class vtable `0xfffffe00081f04f8`
+- Registration (init): `0xfffffe0009627974`
+- Superclasses: [`AppleSEPEndpoint`](AppleSEPEndpoint.md) → [`IOSlaveEndpoint`](IOSlaveEndpoint.md) → [`IOEventSource`](IOEventSource.md)
+
+## Strings in its kext that name it (60)
+
+- `IOReturn AppleSEPHilo::_loadLthBackupGated(const void *, hilo_opcode *)`
+- `IOReturn AppleSEPHilo::_getNumValidTiledBimTilesGated(uint32_t *)`
+- `hilo_opcode AppleSEPHilo::calculateGainsAlphasAndBims(uint16_t **, double *, hilo_bim_v1_t *, hilo_tiled_bim_v1_t *)`
+- `void AppleSEPHilo::_allocateMappedBounceBuffer(AppleSEPManager *)`
+- `IOReturn AppleSEPHilo::_getDisasterRecoveryLthBackupGated(void *, hilo_opcode *)`
+- `IOReturn AppleSEPHilo::_mapMemoryDescriptor(IOMemoryDescriptor *, size_t, bool, IOMemoryMap **, void **)`
+- `site.AppleSEPHiloService`
+- `IOReturn AppleSEPHilo::loadLthTransferMessage(const uint8_t *, size_t)`
+- `IOReturn AppleSEPHilo::_sendData(const void *, size_t, hilo_opcode, hilo_opcode *)`
+- `void AppleSEPHilo::getParams(hilo_display_params_msg_t *)`
+- `IOReturn AppleSEPHilo::_receiveData(void *, size_t, hilo_opcode, hilo_opcode *)`
+- `bool AppleSEPHilo::supportsDisasterRecoveryLth()`
+- `IOReturn AppleSEPHilo::_hiloEnableAsyncGated()`
+- `IOReturn AppleSEPHilo::_updateElapsedTimeGated(hilo_opcode *)`
+- `hilo_opcode AppleSEPHilo::loadLthRaw(const void **)`
+- `hilo_opcode AppleSEPHilo::loadLthBackup(const void *)`
+- `IOReturn AppleSEPHilo::_advanceGainRestrictionPhaseGated()`
+- `IOReturn AppleSEPHilo::_calculateGainsAlphasAndBimsGated(hilo_gains_alphas_and_bims_args_t *)`
+- `uint32_t AppleSEPHilo::getNumValidTiledBimTiles()`
+- `IOReturn AppleSEPHilo::_loadLthRawGated(const void **, hilo_opcode *)`
+- `IOReturn AppleSEPHilo::getLthTransferAttestation(hilo_lth_transfer_key_attestation_v1_t *)`
+- `void AppleSEPHilo::_cleanflushBounceBuffer()`
+- `hilo_opcode AppleSEPHilo::getDisasterRecoveryLthBackup(void *)`
+- `void AppleSEPHilo::_getBounceBuffer(AppleSEPManager *)`
+- `site.AppleSEPHilo`
+- `AppleSEPHiloService`
+- `void AppleSEPHilo::_startOperationGated(bool)`
+- `IOReturn AppleSEPHilo::_getLthBackupGated(void *, hilo_opcode *)`
+- `IOReturn AppleSEPHilo::_checkGainTestPatternGated(hilo_gain_param_set_t)`
+- `IOReturn AppleSEPHilo::_accumulateTestPatternGated(hilo_bis_bpsp_t)`
+- `void AppleSEPHilo::_msgReceived(void *, void *)`
+- `IOReturn AppleSEPHilo::_getParamsGated(hilo_display_params_msg_t *)`
+- `IOReturn AppleSEPHilo::loadDisasterRecoveryLthBackupIomd(IOMemoryDescriptor *)`
+- `IOReturn AppleSEPHilo::_getLthRawIomdGated(IOMemoryDescriptor *)`
+- `void AppleSEPHilo::_getChannel(void *, const uint8_t *, size_t *, size_t)`
+- `void AppleSEPHilo::_getBounceBufferFromDeviceTree()`
+- `IOReturn AppleSEPHilo::_loadLthBackupIomdGated(IOMemoryDescriptor *)`
+- `IOReturn AppleSEPHilo::_loadDisasterRecoveryLthBackupGated(const void *, hilo_opcode *)`
+- `hilo_opcode AppleSEPHilo::calculateGainsAndBims(uint16_t **, double *, hilo_bim_v1_t *, hilo_tiled_bim_v1_t *)`
+- `hilo_opcode AppleSEPHilo::getLthRaw(void **)`
+- `IOReturn AppleSEPHilo::_sendMessageGated(const HiloMessage *, hilo_opcode *)`
+- `IOReturn AppleSEPHilo::_setGainParamSetGated(hilo_gain_param_set_t, hilo_opcode *)`
+- `IOReturn AppleSEPHilo::_accumulateGated(const void **, hilo_bis_bpsp_t, hilo_opcode *)`
+- `hilo_opcode AppleSEPHilo::accumulate(const void **, hilo_bis_bpsp_t)`
+- `AppleSEPHilo.cpp`
+- `IOReturn AppleSEPHilo::_loadLthRawIomdGated(IOMemoryDescriptor *)`
+- `bool AppleSEPHilo::_init(AppleSEPDeviceService *)`
+- `IOReturn AppleSEPHilo::getDisasterRecoveryLthBackupIomd(IOMemoryDescriptor *)`
+- `IOReturn AppleSEPHilo::_getLthTransferMessageGated(hilo_get_lth_transfer_message_args_t *)`
+- `IOReturn AppleSEPHilo::_getLthTransferAttestationGated(hilo_lth_transfer_key_attestation_v1_t *, hilo_opcode *)`
+- `void AppleSEPHilo::_mapBounceBufferGated(uint64_t, hilo_opcode *)`
+- `bool AppleSEPHilo::_tryComputeGain()`
+- `void AppleSEPHilo::_getParamsFromSepGated()`
+- `IOReturn AppleSEPHilo::_getLthBackupIomdGated(IOMemoryDescriptor *)`
+- `IOReturn AppleSEPHilo::_getLthRawGated(void **, hilo_opcode *)`
+- `AppleSEPHilo`
+- `hilo_opcode AppleSEPHilo::loadDisasterRecoveryLthBackup(const void *)`
+- `IOReturn AppleSEPHilo::_testLthTransferAttestationGated(const uint8_t *, hilo_opcode *)`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPHilo.cpp`
+- `void AppleSEPHilo::_takeChannelGains(void *, const uint8_t *, size_t *, size_t)`

@@ -1,0 +1,1000 @@
+# `com.apple.security.AppleImage4`
+
+- Name: Image4
+- Version: `7.0.0`
+- UUID: `FF498073-CECB-35C6-A168-2881004C3709`
+- Source version: `374.0.0.0.0`
+- Depends on: [`com.apple.iokit.IOCryptoAcceleratorFamily`](com.apple.iokit.IOCryptoAcceleratorFamily.md) 1.0.0, [`com.apple.kec.corecrypto`](com.apple.kec.corecrypto.md) 1.0.0, [`com.apple.kext.CoreTrust`](com.apple.kext.CoreTrust.md) 1.0.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 18.0.0, [`com.apple.kpi.dsep`](com.apple.kpi.dsep.md) 21.0.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 18.0.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 18.0.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 18.0.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 18.0.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 18.0.0
+
+## Device-tree nodes it binds (1) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/defaults`](../devicetree/root__defaults.md) | `AppleImage4` | `defaults` |
+
+## IOKit personalities (1) [KC]
+
+### AppleImage4
+- `CFBundleIdentifier`: `com.apple.security.AppleImage4`
+- `IOClass`: `AppleImage4`
+- `IOMatchCategory`: `AppleImage4`
+- `IONameMatch`: `defaults`
+- `IOPersonalityPublisher`: `com.apple.security.AppleImage4`
+- `IOProviderClass`: `IOPlatformDevice`
+- `IOUserClientClass`: `AppleImage4UserClient`
+
+
+## C++ classes (2) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleImage4` | 0x88 | IOService → IORegistryEntry |
+| `AppleImage4UserClient` | 0xe8 | IOUserClient → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1800)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x000158bb off=0x005236a0-0x00538f5b addr=0xfffffe00075276a0-0xfffffe000753cf5b r--/r--   __TEXT            
+	sz=0x0000e83a off=0x00523e10-0x0053264a addr=0xfffffe0007527e10-0xfffffe000753664a               __TEXT.__const            
+	sz=0x0000642b off=0x0053264c-0x00538a77 addr=0xfffffe000753664c-0xfffffe000753ca77               __TEXT.__cstring          (CstringLiterals)
+	sz=0x000004e4 off=0x00538a77-0x00538f5b addr=0xfffffe000753ca77-0xfffffe000753cf5b               __TEXT.__info_plist       
+001: LC_SEGMENT_64 sz=0x00024cc0 off=0x02023090-0x02047d50 addr=0xfffffe0009027090-0xfffffe000904bd50 r-x/r-x   __TEXT_EXEC       
+	sz=0x00024510 off=0x02023090-0x020475a0 addr=0xfffffe0009027090-0xfffffe000904b5a0          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000007b0 off=0x020475a0-0x02047d50 addr=0xfffffe000904b5a0-0xfffffe000904bd50          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00000a90 off=0x0494d880-0x0494e310 addr=0xfffffe000b951880-0xfffffe000b952310 rw-/rw-   __DATA            
+	sz=0x00000738 off=0x0494d880-0x0494dfb8 addr=0xfffffe000b951880-0xfffffe000b951fb8               __DATA.__data             
+	sz=0x000002ce off=0x00000000-0x000002ce addr=0xfffffe000b951fb8-0xfffffe000b952286               __DATA.__bss              (Zerofill)
+	sz=0x00000088 off=0x00000000-0x00000088 addr=0xfffffe000b952288-0xfffffe000b952310               __DATA.__common           (Zerofill)
+003: LC_SEGMENT_64 sz=0x0000da58 off=0x01114510-0x01121f68 addr=0xfffffe0008118510-0xfffffe0008125f68 rw-/rw-   __DATA_CONST      
+	sz=0x00000010 off=0x01114510-0x01114520 addr=0xfffffe0008118510-0xfffffe0008118520         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000010 off=0x01114520-0x01114530 addr=0xfffffe0008118520-0xfffffe0008118530         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x0000d360 off=0x01114530-0x01121890 addr=0xfffffe0008118530-0xfffffe0008125890         __DATA_CONST.__const            
+	sz=0x00000200 off=0x01121890-0x01121a90 addr=0xfffffe0008125890-0xfffffe0008125a90         __DATA_CONST.__kalloc_type      
+	sz=0x00000010 off=0x01121a90-0x01121aa0 addr=0xfffffe0008125a90-0xfffffe0008125aa0         __DATA_CONST.__image4_exp       
+	sz=0x000003d8 off=0x01121aa0-0x01121e78 addr=0xfffffe0008125aa0-0xfffffe0008125e78         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000a0 off=0x01121e78-0x01121f18 addr=0xfffffe0008125e78-0xfffffe0008125f18         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000050 off=0x01121f18-0x01121f68 addr=0xfffffe0008125f18-0xfffffe0008125f68         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 266 at 0x04add5a4
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     FF498073-CECB-35C6-A168-2881004C3709
+008: LC_SOURCE_VERSION           374.0.0.0.0
+009: LC_FUNCTION_STARTS          offset=0x004aa55c8 size=0x5f8
+```
+
+## Info.plist keys [KC]
+
+- `AppleSecurityExtension`: `True`
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleExecutable`: `AppleImage4`
+- `CFBundleIdentifier`: `com.apple.security.AppleImage4`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `Image4`
+- `CFBundleNumericVersion`: `117473280`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `7.0.0`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `7.0.0`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `IOKitPersonalities_x86_64`:
+  - `AppleImage4`:
+    - `CFBundleIdentifier`: `com.apple.security.AppleImage4`
+    - `IOClass`: `AppleImage4`
+    - `IOMatchCategory`: `AppleImage4`
+    - `IOPersonalityPublisher`: `com.apple.security.AppleImage4`
+    - `IOProviderClass`: `IOResources`
+    - `IOResourceMatch`: `IOBSD`
+    - `IOUserClientClass`: `AppleImage4UserClient`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2017-2021 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `3.0.0`
+- `OSBundleLibraries_x86_64`:
+  - `com.apple.kec.corecrypto`: `1.0`
+  - `com.apple.kext.CoreTrust`: `1.0.0`
+  - `com.apple.kpi.bsd`: `18.0.0`
+  - `com.apple.kpi.dsep`: `21.0.0`
+  - `com.apple.kpi.iokit`: `18.0.0`
+  - `com.apple.kpi.libkern`: `18.0.0`
+  - `com.apple.kpi.mach`: `18.0.0`
+  - `com.apple.kpi.private`: `18.0.0`
+  - `com.apple.kpi.unsupported`: `18.0.0`
+- `OSBundleRequired`: `Local-Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleImage4.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198900410720`
+- `_PrelinkExecutableRelativePath`: `AppleImage4`
+- `_PrelinkExecutableSize`: `297571`
+- `_PrelinkExecutableSourceAddr`: `-2198900410720`
+- `_PrelinkKmodInfo`: `-2198828935040`
+
+## Strings (858) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `failed to read os environment: %d`
+- `esdm-fuses`
+- `secureboot-key-scheme`
+- `panic: attempt to destroy already destroyed buffer`
+- `ASSET_BRAIN`
+- `failed to copy in os release type: %d`
+- `function not implemented in this configuration`
+- `HACKTIVATE_ECDSA`
+- `ignition-failure`
+- `_pmap_cs_runtime_get_identifier_digest`
+- `CHIP_CRYPTEX1_MOBILE_ASSET_VMA2`
+- `panic: iteration overflow: idx = 0x%lx, %lu`
+- `p->p_constraint->pc_code`
+- `EL0`
+- `vma2`
+- `odometer[%s]: Img4DecodeGetPropertyInteger: %d`
+- `cryptex1 mobile asset dfu`
+- `CHIP_CRYPTEX1_BOOT_VMA2_CLONE`
+- `_pmap_cs_runtime_dealloc_type`
+- `slot[%s]: caller not entitled to peek at nonce hash: %d`
+- `sysctl opaque handler failed: %d`
+- `%s:%s`
+- `stale`
+- `panic: failed to get chosen node: %d`
+- `pti->pt_switchable`
+- `CHIP_CRYPTEX1_BOOT_AP`
+- `panic: no more property record slots`
+- `_pmap_cs_runtime_get_identifier_cstr`
+- `odometer[%s:%s]: failed to query live nonce: %d`
+- `odometer[%s:%s]: failed to query boot nonce hash: %d`
+- `RELEASE`
+- `panic: trust chaining not supported for evaluation: %s`
+- `_xnu_runtime_dealloc_type`
+- `secure_boot`
+- `none`
+- `property failed to impose on environment: %s: %d`
+- `magazine[%s]: failed to find nonce slot for chip: %d`
+- `get chip instance`
+- `magazine[%s]: failed retry write of slot: %d`
+- `/chosen`
+- `failed to fetch input struct: %d`
+- `Img4DecodeGetPropertyInteger: %d`
+- `failed to get boot nonce from callback: %d`
+- `odometer[%s:%s]: failed to query nonce: %d`
+- `secure enclave processor`
+- `img4`
+- `X86_`
+- `/chosen/asmb`
+- `info`
+- `magazine[%s]: failed to query storage for nonce magazine: %d`
+- `entitlement check failed: %s`
+- `failed to get secure boot level: %d`
+- `chip-id`
+- `uint64`
+- `  🔥🌸 `
+- `asn1type`
+- `odometer[%s]: Img4DecodeGetPropertyBoolean: %d`
+- `cannot select chip with first-stage boots`
+- `success`
+- `x86 certificate production status`
+- `user buffer insufficient for payload: actual = %lu, expected >= %lu, trap = %s: %d`
+- `failed to write ignition failure key: %s: %d`
+- `failed to get boot uuid: %d`
+- `panic: multiple expert finalizations`
+- `security.mac.image4.image.copy_active`
+- `panic: integer cast overflow: v = %s, actual = %llu, expected <= %llu`
+- `MOBILE_ASSET`
+- `CHIP_CRYPTEX1_MOBILE_ASSET_CODE_LOAD_AP`
+- `personalized disk image`
+- `unexpected tag found while decoding`
+- `cps->cps_type`
+- `vma3`
+- `IOAESAccelerator`
+- `srdp cryptex`
+- `panic: insufficient memory for platform: actual = %lu, expected >= %lu`
+- `panic: failed to allocate mutex`
+- `trap failed: %s: %d`
+- `_xnu_runtime_set_nonce`
+- `research-enabled`
+- `>`
+- `read legacy blob header: version = %u, length = %lu`
+- `copy_hash`
+- `boot uuid already set: %d`
+- `panic: failed to get chosen node`
+- `object`
+- `magazine[%s]: failed to query boot manifest hash: %d`
+- `magazine[%s]: magazine data too small for version: actual = %lu, expected >= %lu`
+- `failed to impose manifest for boot: %d`
+- `com.apple.private.img4.nonce.cryptex1.generic.erm`
+- `di->output_size`
+- `panic: kmod expert type unsupported: %#llx`
+- `panic: illegal chip definition: sideload and pivot policies defined: %s`
+- `ignition_failure_blob`
+- `failed to resolve %s handle: %s%s%s`
+- `AP-SECURE-BOOT`
+- `panic: illegal chip definition: anti-reply and sideload policies defined: %s`
+- `peek_hash`
+- `mix-n-match-prevention-status`
+- `expert magic`
+- `@(#)VERSION:Darwin Image4 Extension Version 7.0.0: Tue Oct 13 23:20:27 PDT 2026; root:AppleImage4-374~16525/AppleImage4/RELEASE_ARM64E`
+- `slot[%s]: failed to query production fuse: %d`
+- `copy_abi_version`
+- `remote`
+- `unexpected out-of-line structure output`
+- `error`
+- `slot[%s]: failed to get consumed nonce: %d`
+- `com.apple.private.img4.nonce.cryptex1.generic`
+- `AP [software ff06]`
+- `_pmap_cs_runtime_get_identifier_uint32`
+- `bootpc`
+- `-`
+- `get slot lock`
+- `2211122222222221221222222222222`
+- `n_len`
+- `panic: illegal chip/expert configuration`
+- `boot-type`
+- `apfs-preboot-uuid`
+- `&`
+- `odometer[%s]: restore info has no boot nonce`
+- `%s: failed to impose manifest for activation: %d`
+- `cryptex1 generic ephemeral`
+- `generate_proposal`
+- `get magazine`
+- `<=`
+- `exception level`
+- `MOBILE_ASSET_CODE_LOAD`
+- `IODTNVRAM`
+- `ignition_blob`
+- `panic: version property iterated during identification: p = %s, fourcc = %s`
+- `lp-smb0`
+- `security.mac.image4.image.activate`
+- `image4_gl2_log_level`
+- `panic: illegal chip definition: no static decode implementation: %s`
+- `SHA2_256`
+- `nonce slot`
+- `set boot uuid`
+- `_xnu_runtime_get_identifier_uint64`
+- `level`
+- `magazine[%s]: magazine data has invalid manifest hash length: actual = %u, expected <= %lu`
+- `374`
+- `panic: attempt to deallocate loaned buffer without returning`
+- `d_len`
+- `%6s  %-36s : 0x%llx`
+- `nonce length not appropriate for entanglement: length = %lu, expected %% 16 == 0: %d`
+- `%s: DERDecodeItem: %d`
+- `BOOT_STATIC`
+- `Img4DecodeInitAsManifest: %d`
+- `cryptex1 product class`
+- `fourcc = %s`
+- `40A0DDD2-77F8-4392-B4A3-1E7304206516:krn.`
+- `odometer[%s]: Img4DecodeGetPropertyData: %d`
+- `payload properties`
+- `panic: object overflows buffer: object = firmware, length = %lu, required = %lu`
+- `SEP_`
+- `sb`
+- `odometer[%s:%s]: failed to query restore info nonce: %d`
+- `set release type`
+- `panic: failed to get secure boot level: %d`
+- `image initialization failed: %d`
+- `panic: illegal chip definition: no dynamic decode implementation: %s | %d`
+- `certificate epoch`
+- `object digest`
+- `panic: Img4DecodeGetManifest: %d`
+- `cryptex1 mobile asset code load`
+- `AP [software ff00]`
+- `no slot for handle: %llx: %d`
+- `AP-DIGEST`
+- `%s: enforcing length[%s %s %s]: %lu %s %lu: %d`
+- `0x%llx`
+- `panic: non-%s property set: property = %s, type = %s`
+- `%s: unexpected payload type: actual = %s, expected = %s`
+- `failed to query manifest hash identifier: %d`
+- `SHA2_224`
+- `certificate security mode`
+- `cryptex1 boot nonce`
+- `FF06`
+- `/chosen/manifest-properties`
+- `love`
+- `ns->ns_desc->nd_epoch`
+- `_pmap_cs_runtime_get_identifier_bool`
+- `release type already set: %d`
+- `user buffer length is zero: trap = %#llx: %d`
+- `certificate`
+- `p->p_container`
+- `magazine[%s]: future magazine is bogus: version = %u, actual = %lu, expected >= %lu`
+- `VMA2_ACDC`
+- `panic: digest length overflow: actual = %lu, expected >= %lu`
+- `_xnu_runtime_get_identifier_bool`
+- `monitor type`
+- `panic: nonce too large: actual = %lu, expected <= %ld`
+- `object properties`
+- `pmap log level`
+- `magazine[%s]: cannot entangle nonce; value inconsistent: %d`
+- `restore info`
+- `panic: illegal chip definition: provided static decode implementation: %s`
+- `buffer overflow`
+- `panic: failed to free thread call`
+- `panic: failed to parse uuid string: %s: %d`
+- `panic: insufficient memory for expert: actual = %lu, expected >= %lu`
+- `zine`
+- `/Library/Caches/com.apple.xbs/57EC2135-55FF-454D-9678-7A47105D59A9/TemporaryDirectory.xRtg0j/Binaries/AppleImage4/install/Symbols/Image4`
+- `CHAIN_MANIFEST`
+- `vnode_ref: %d`
+- `%s: read: bad read: actual = %d, requested = %d, chunk length = %lu: %d`
+- `PDI-VMA2`
+- `magazine[%s]: failed to set supervisor nonce: %d`
+- `Darwin Kernel [arm64]`
+- `internal-use-only-unit`
+- `__DATA_CONST`
+- `Cryptex1 mobile asset code install [AP host]`
+- `21121111122111211121121212121212121212121212222222121212121212222222222222121211111211122121212121212121212121222222212121212121222222222222212122121212121`
+- `crypto accelerator not yet available: %d`
+- `ankr`
+- `d->d_len`
+- `panic: illegal chip definition: invalid manifest type for dynamic selection: %s`
+- `_pmap_cs_runtime_alloc_type`
+- `SEP`
+- `environment not supported: coprocessor = %s, handle = %llx: %d`
+- `%s: vnode_getattr: %d`
+- `entangle nonces`
+- `factory-prerelease-global-trust`
+- `panic: illegal property definition: %s`
+- `CHIP_VMA2_DDI`
+- `cryptex1 generic`
+- `%s: vnode_getwithref: %d`
+- `os environment`
+- `effective-security-mode-ap`
+- `board-id`
+- `manifest replay denied: %d`
+- `VMA2`
+- `expert`
+- `GL1`
+- `%s constraint violated: property = %s, type = %s: %d`
+- `magazine[%s]: failed to sync storage: %d`
+- `VMA2_DDI`
+- `srd nonce hash`
+- `custom chip`
+- `trap input version not supported, dylib and kext out of sync: actual = %hx, expected = %hx, trap = %s: %d`
+- `%s: activation failed: %d`
+- `DDI`
+- `buff_len`
+- `.`
+- `magazine[%s]: failed to write nonce data: %d`
+- `com.apple.private.img4.nonce.cryptex`
+- `cryptex1 generic erm`
+- `Cryptex1 boot [vma2 host]`
+- `kcinstall nonce hash`
+- `_pmap_cs_runtime_log_handle`
+- `VMA3`
+- `finalize`
+- `use-ddi-secure-boot`
+- `v`
+- `cryptex1`
+- `nonce proposal generate`
+- `get userspace cork`
+- `panic: failed to get product node`
+- `panic: writing anti-replay state not supported in this environment`
+- `magazine[%s]: failed to write nonce magazine data: %d`
+- `VMA2_`
+- `Cryptex1 mobile asset code load [AP host]`
+- `com.apple.private.img4.nonce.cryptex1.asset`
+- `/IOPowerConnection/IOPMrootDomain`
+- `asmb`
+- `argv_out_len`
+- `com.apple.private.security.AppleImage4.user-client`
+- `magazine[%s]: failed to nuke legacy blob: %d`
+- `panic: error not set to valid posix code: %d`
+- `loanee`
+- `slot[%s]: failed to compute nonce hash: %d`
+- `n/a`
+- `SHA2_384`
+- `slot[%s]: slot cannot export nonce value: %d`
+- `application processor`
+- `panic: failed to prepare memory descriptor: 0x%lx`
+- `external method dispatch failure: p = %s, selector = %u, expected argument size = %u, actual argument size = %u: 0x%lx`
+- `wrap`
+- `cryptex1 asset brain`
+- `panic: illegal nonce descriptor configuration`
+- `%s: failed to activate image: %d`
+- `%s.%d`
+- `root power domain not yet available: %d`
+- `i/o strategy`
+- `init`
+- `CHAIN_FUTURE`
+- `boot uuid not a string: %d`
+- `magazine[%s]: could not find nonce slot: chip = %s, domain = 0x%x: %d`
+- `panic: IOAESAccelerator`
+- `failed to entangle nonce: %d`
+- `cryptex1 chip identifier`
+- `panic: failed to read property: %s: %d`
+- `panic: no cryptex1 guests for %s`
+- `trap failed: %s`
+- `nonce set`
+- `failed to derive nonce digest: nonce = %s: %d`
+- `digest`
+- `failed to read legacy blob: buffer length = %lu: %d`
+- `panic: pmap and kext data length inconsistency: actual = %lu, expected >= %lu`
+- `local policy`
+- `_pmap_cs_runtime_init`
+- `FF01`
+- `get lock group`
+- `panic: no random number generator in guarded context`
+- `incoming parameter error`
+- `stack failsafe`
+- `odometer[%s]: failed to query odometer cylinder: %s: %d`
+- `%s: decoded payload too large: actual = %lu, expected <= %lu, payload type = 0x%llx: %d`
+- `BOOT`
+- `40A0DDD2-77F8-4392-B4A3-1E7304206516:ignition-failure-code`
+- `_xnu_runtime_roll_nonce`
+- `universal device identifier`
+- `security-domain`
+- `panic: bogus nonce length: actual = %lu, expected <= %lu`
+- `legacy blob version unsupported: actual = %u, expected = %u`
+- `panic: thread call already pending`
+- `AppleImage4.image`
+- `site.decode_context_t`
+- `221111111111111112111121112212121212121212121212122222221212121212122222222222221212212112211121112112121212121212121212121222222212121212121222222222222212122222211122211122211122211122211122211122211122211122211122211122211122211112`
+- `panic: invalid pmap trap number: %llx`
+- `allow-hactivation`
+- `\n`
+- `uses-avp-root-ca`
+- `SAFARI_DOWNLEVEL`
+- `panic: length not expressible as ssize_t: %lu`
+- `p_len`
+- `copyin failed: length = %lu, trap = %s: %d`
+- `user output buffer is null: trap = %s: %d`
+- `AppleImage4UserClient`
+- `Img4DecodeGetPropertyData: %d`
+- `cryptex1 auxilliary boot nonce hash`
+- `%s: caller not entitled to activate image: %d`
+- `user buffer is null: trap = %s: %d`
+- `panic: failed to get defaults node`
+- `%s does not exist`
+- `object property failed to impose on environment: %d`
+- `odometer[%s]: failed to query restore info for boot nonce: %d`
+- `no boot uuid set: %d`
+- `CHIP_CRYPTEX1_MOBILE_ASSET_AP`
+- `112221`
+- `_xnu_runtime_get_identifier_digest`
+- `_xnu_runtime_get_identifier_cstr`
+- `lvl`
+- `_t_preference`
+- `pmap_cs_log_level`
+- `rsa4096`
+- `generic`
+- `sign`
+- `panic: unreachable`
+- `%s: vn_rdwr: %d`
+- `%s:%s%s\n`
+- `INFO`
+- `expert state`
+- `decode failure`
+- `end of sequence or set`
+- `manifest boot failed: %s: %d`
+- `p_where`
+- `panic: failed to init ignition blob: %d`
+- `cryptex1 certificate format`
+- `panic: null coprocessor handle`
+- `/defaults`
+- `certificate-production-status`
+- `loan`
+- `darwin kernel`
+- `, `
+- `magazine[%s]: demand magazine i/o failed: %d`
+- `image4-allow-magazine-updates`
+- `security.mac.image4.nonce.peek_hash`
+- `failed to prepare anti-replay: %d`
+- `default`
+- `slot[%s]: failed to query research fuse: %d`
+- `research mode`
+- `md`
+- `chip-epoch`
+- `panic: nonce cannot fit into 64-bit integer: actual = %lu, expected <= %lu`
+- `*=`
+- `EL2`
+- `panic: illegal magazine slot: %s`
+- `failed to parse manifest: %d`
+- `panic: critical trust evaluation failure: chip = %s, p = %s, payload = %s`
+- `panic: iteration underflow: idx = 0x%lx, %ld`
+- `panic: failed to match crypto accelerator`
+- `BootSessionUUID`
+- `%s.%s`
+- `sha2-384`
+- `chip environment not booted: %s: %d`
+- `panic: attempt to deallocate loaned buffer`
+- `failed to parse manifest for boot: %d`
+- `failed to query mix-n-match identifier: %d`
+- `panic: trust chain length exceeded: %lu`
+- `AppleImage4.kmod`
+- `slot[%s]: caller not entitled to roll nonce: %d`
+- `supervisor activation failed: %d`
+- `copyout failed: length = %lu, trap = %s: %d`
+- `CHIP_AP_SOFTWARE_FF01`
+- `com.apple.private.image4.dfu.mobile-asset`
+- `audit`
+- `40A0DDD2-77F8-4392-B4A3-1E7304206516:ignition-failure-reason`
+- `failed to copy kcinstall nonce hash: %d`
+- `magazine[%s]: failed to write priority slot: %d`
+- `panic: digest length overflow: actual = %u, expected >= %lu`
+- `panic: cstring is not a fourcc: length = %lu`
+- `com.apple.private.img4.nonce.cryptex1.simulator`
+- `CHIP_CRYPTEX1_MOBILE_ASSET_DFU_VMA2`
+- `kmod`
+- `sblvl`
+- `X86`
+- `site.nonce_magazine_t`
+- `lp-smb1`
+- `sha1`
+- `board identifier`
+- `perform diagnostic trust evaluation`
+- `panic: pmap data misaligned: p = %p, aligned = %#lx`
+- `com.apple.private.img4.nonce.cryptex1.boot`
+- `panic: failed to query expert: expert = %s, p = %s, fourcc = %s, code = %llu: %d`
+- `panic: unsupported struct version: actual = %hu, expected <= %u`
+- `boot command`
+- `%6s  %-36s : %s`
+- `PDI`
+- `CRYPTEX1-BOOT-SECURE-BOOT`
+- `misc. decoding error (badly formatted DER)`
+- `generic error`
+- `nonce`
+- `**`
+- `%s %-36s : 0x%x`
+- `magazine[%s]: failed to write slot: %d`
+- `panic: length not expressible as unsigned 32-bit integer: %lu`
+- `com.apple.private.img4.nonce.ddi`
+- `VMA3_`
+- `odometer[%s:%s]: manifest inconsistent with restore info: %d`
+- `site.image4_environment_t`
+- `magazine[%s]: magazine data cannot be written: %d`
+- `panic: failed to get product node: %d`
+- `rsa1024`
+- `ACDC`
+- `GENERIC_CRYPTEX0`
+- `CHIP_CRYPTEX1_MOBILE_ASSET_DFU_AP`
+- `BOOTPC_`
+- `pdi nonce hash`
+- `com.apple.private.img4.ignition-blob`
+- `40A0DDD2-77F8-4392-B4A3-1E7304206516:recovery-boot-mode`
+- `slot[%s]: future slot is bogus: version = %u, actual = %lu, expected >= %lu`
+- `expert does not have a nonce magazine: %d`
+- `panic: bogus digest length: %lu`
+- `AppleImage4.nonce`
+- `panic: buffer not sufficient for digest: actual = %lu, expected >= %lu`
+- `INIT`
+- `,`
+- `odometer[%s]: failed to query chip boot: %s: %d`
+- `%s: failed to parse payload: %d`
+- `_pmap_cs_runtime_get_identifier_uint64`
+- `_xnu_runtime_copy_nonce`
+- `panic: property is not constrainable: %s`
+- `Cryptex1 boot verification [AP host]`
+- `panic: boot object has no restore info`
+- `copy_version`
+- `darwinos-ramdisk`
+- `pseudo`
+- `panic: failed to get defaults node: %d`
+- `AP_`
+- `panic: should never be called`
+- `BNCH`
+- `effective-production-status-ap`
+- `sysctlbyname: %s: %d`
+- `%s: failed to execute object: %d`
+- `CHIP_CRYPTEX1_GENERIC_AP`
+- `pi->p_type->pt_switchable`
+- `0.0.0.0.0,0`
+- `effective production status`
+- `boot nonce`
+- `Img4DecodeGetPropertyInteger64: %s: %d`
+- `%s: failed to query anchor: 0x%llx: %d`
+- `CHIP_AP_UNSUPPORTED`
+- `IONVRAM-FORCESYNCNOW-PROPERTY`
+- `FF00`
+- `cryptex1 key scheme`
+- `p->p_type->pt_switchable`
+- `chip has no static or dynamic decode implementation: %s`
+- `cryptex1 boot`
+- `KCINSTALL`
+- `failed to read boot command: %d`
+- `panic: unexpected expert: op = %s, actual = %s, expected = %s`
+- `boot chip`
+- `unprivileged limit`
+- `kernel supervisor has no boot nonce: %d`
+- `AppleImage4`
+- `magazine pseudo-descriptor`
+- `AP_LOCAL`
+- `image4`
+- `40A0DDD2-77F8-4392-B4A3-1E7304206516:ignition-failure-volume`
+- `|>`
+- `ERROR`
+- `magazine[%s]: invalid nonce slot data: %d`
+- `CHIP_AP_PDI_SHA2_384`
+- `com.apple.security.`
+- `site.img4_firmware_struct_t`
+- `SRDP`
+- `odometer[%s]: Img4DecodeGetPropertyInteger64: %d`
+- `no legacy blob present`
+- `legacy blob manifest hash length overflow: actual = %lu, expected <= %lu`
+- `Darwin Image4 Extension Version 7.0.0: Tue Oct 13 23:20:27 PDT 2026; root:AppleImage4-374~16525/AppleImage4/RELEASE_ARM64E`
+- `/options`
+- `boot nonce hash`
+- `pqc validation flags`
+- `panic: invalid coprocessor handle: actual = %llu, expected < %u`
+- `DEBUG`
+- `Cryptex1 boot verification [VMA2 host]`
+- `Img4DecodeGetPropertyInteger64: %d`
+- `%s: chip has no dfu image`
+- `odometer[%s:%s]: failed to entangle nonce: %d`
+- `no nonce slot for handle: %llx: %d`
+- `IODTNVRAM::setProperties: 0x%lx`
+- `trap input has unexpected length: actual = %lu, expected <= %lu, trap = %s: %d`
+- `im4m`
+- `%s: enforcing[%s %s %s]: 0x%llx %s 0x%llx: %d`
+- `chained manifest hash`
+- `panic: illegal chip configuration: %s`
+- `_xnu_runtime_init`
+- `!=`
+- `legacy nonce blob length cannot accommodate header: actual = %lu, expected >= %lu`
+- `%s: failed to parse manifest: %d`
+- `boot manifest`
+- `chip`
+- `CHAIN`
+- `va.va_data_size`
+- `%s: enforcing[%s %s %s]: 0x%x %s 0x%x: %d`
+- `firmware`
+- `panic: attempt to deallocate static buffer`
+- `cryptex1-product-class`
+- `bool`
+- `%#llx`
+- `VMA2_PDI`
+- `legacy nonce blob has no Cryptex1 boot nonce: v = %hx, length = %lu`
+- `BOOT_FLASH_SECONDARY`
+- `11122222122222222221222222222212222222222322222222222222122222222223222222222222232222222222222322222222222222122222222222`
+- `GL2`
+- `panic: nonce slot prefix overflow: actual = %lu, expected <= %lu`
+- `cfg`
+- `trust evaluation failed: coprocessor = %s, sequence number = %lu, chain length = %lu: %d`
+- `allow mix-n-match`
+- `x86`
+- `CHIP_CRYPTEX1_ASSET_BRAIN_AP`
+- `magazine[%s]: failed to entangle nonce: %d`
+- `vmm-present`
+- `demand`
+- `cryptex1 simulator`
+- `_pmap_cs_runtime_log`
+- `CHIP_VMA2_PDI`
+- `dfu`
+- `40A0DDD2-77F8-4392-B4A3-1E7304206516:ignition-failure-stage`
+- `_xnu_runtime_log`
+- `CHIP_AP_SRDP`
+- `cs_type`
+- `developer disk image`
+- `QA`
+- `N`
+- `copyout failed: trap = %s: %d`
+- `slot[%s]: caller not entitled to copy nonce hash: %d`
+- `user buffer exceeds maximum bounds: actual = %lu, expected <= %lu, trap = %s: %d`
+- `panic: failed to allocate memory descriptor: len = %lu`
+- `panic: non-sensical property digest specification: %s`
+- `panic`
+- `no manifest with which to select chip`
+- `panic: failed to allocate thread: 0x%lx`
+- `40A0DDD2-77F8-4392-B4A3-1E7304206516:ignition-failure-boot`
+- `panic: could not resolve chip for environment`
+- `slot[%s]: slot data has incorrect length: version = %u, actual = %lu, expected = %lu`
+- `caller not entitled: p = %s, entitlement = %s`
+- `EL1`
+- `%s: failed to query nonce domain from chip: %d`
+- `CHIP_AP_SHA2_384`
+- `panic: insufficient nonce buffer length: actual = %lu, expected >= %lu`
+- `cryptex1 mobile asset code install`
+- `panic: MAC policy init failed: %d`
+- `CHAIN_SIDELOAD`
+- `handle = %#llx`
+- `nonce roll`
+- `no options node: %d`
+- `engineering-use-only-unit`
+- `slot[%s]: slot data too small for slot version: actual = %lu, expected >= %lu`
+- `Img4DecodePerformManifestTrustEvaluationWithCallbacks: %d`
+- `panic: bogus property container input: actual = %u, expected < %u`
+- `Img4DecodeGetPropertyBoolean: %d`
+- `panic: failed to query mix-n-match policy: %d`
+- `magazine[%s]: initial demand write failed: %d`
+- `odometer[%s:%s]: boot chain integrity violation: %d`
+- `effective security mode`
+- `_xnu_runtime_copy_object`
+- `magazine[%s]: magazine data has incorrect length: version = %u, actual = %lu, expected = %lu`
+- `magazine[%s]: failed to read nonce slot data: %d`
+- `panic: illegal odometer consumption configuration`
+- `panic: failed to get manifest properties: %d`
+- `kern.osreleasetype`
+- `IONVRAM-SYNCNOW-PROPERTY`
+- `%s: caller not entitled to dfu chip: %d`
+- `image activate`
+- `PDI-DIGEST`
+- `execute`
+- `magazine[%s]: magazine write failed; may be expected: %d`
+- `boot-command`
+- `CHIP_CRYPTEX1_BOOT_VMA2`
+- `__image4_exp`
+- `BOOT_SIDELOAD`
+- `HOST`
+- `trap output has unexpected length: actual = %lu, expected >= %lu, trap = %s: %d`
+- `panic: invalid secure boot state: %#x`
+- `crypto-hash-method`
+- `site.AppleImage4UserClient`
+- `BOOT_EPHEMERAL`
+- `null`
+- `BOOT_PRECOMP`
+- `trap input has unexpected length: actual = %lu, expected = %lu, trap = %#llx: %d`
+- `cryptex1-certificate-format`
+- `unexpected out-of-line structure input`
+- `uint32`
+- `bounds safety`
+- `CHIP_VMA2_CLONE`
+- `%s: chip has no associated dfu policy: %d`
+- `SHA2_512`
+- `Cryptex1 boot verification [VMA2 clone host]`
+- `secureboot certificate format`
+- `debug`
+- `use AVP secure boot`
+- `40A0DDD2-77F8-4392-B4A3-1E7304206516:nonce-seeds`
+- `AppleImage4.legacy`
+- `user output buffer length is zero: trap = %s: %d`
+- `failed to query original ecid: %d`
+- `site.image4_trust_t`
+- `secure boot`
+- `trust evaluation: dr = %d, ct = 0x%x, error = %d`
+- `%s%s`
+- `im4c`
+- `panic: function should never be called: %s`
+- `panic: msleep: %d`
+- `caller not entitled to set failure blob: %d`
+- `magazine[%s]: failed to get nonce: %d`
+- `stale nvram`
+- `magazine[%s]: failed to write magazine data: %d`
+- `chp->chp_type`
+- `%s\n`
+- `panic: operation not supported on this structure version: actual = %hu, expected >= %hu`
+- `certificate production status`
+- `security.mac.image4.nonce.copy_hash`
+- `i4p->type`
+- `panic: unsupported container for posting: %u`
+- `%s: Img4DecodeInitAsPayload: %d`
+- `0`
+- `cryptex1 boot nonce hash`
+- `user buffer is null: trap = %#llx: %d`
+- `osenvironment`
+- `trust evaluation failed: %d`
+- `12111112122212121`
+- `cryptex1 chip type`
+- `panic: invalid sync type: %#llx`
+- `panic: non-sensical crypto hash method: %s`
+- `cryptex1 chip subtype`
+- `static`
+- `com.apple.private.img4.nonce.cryptex1.mobile-asset.code-load`
+- `panic: failed to resolve expert for runtime`
+- `panic: object overflows buffer: object = chip, length = %lu, required = %lu`
+- `id4->id_p->p_type->pt_switchable`
+- `boot-manifest-hash`
+- `cryptex1-key-scheme`
+- `NULL`
+- `unique chip identifier`
+- `ACDC-VMA2`
+- `word size`
+- `security.mac.image4.nonce.roll`
+- `==`
+- `magazine[%s]: failed to read legacy nonce blob header: %d`
+- `panic: no anti-replay policy selected`
+- `Cryptex1 boot [AP host]`
+- `IONVRAM-DELETE-PROPERTY`
+- `magazine[%s]: failed to write slot after rolling: %d`
+- `failed to instantiate expert chip: %d`
+- `panic: illegal %s property: %s`
+- `Img4DecodeGetPropertyData: %s: %d`
+- `preflight`
+- `roll`
+- `magazine[%s]: failed retry write of magazine: %d`
+- `user buffer length is zero: trap = %s: %d`
+- `actbf.bf_len`
+- `u32`
+- `cryptex1 auxilliary boot nonce`
+- `panic: unsupported digest type: oid len = %lu`
+- `AppleImage4 hooks`
+- `panic: illegal coprocessor map: canonical handle has no static or dynamic decode implementation`
+- `IONVRAM`
+- `caller not entitled to get ignition blob: %d`
+- `secureboot-certificate-format`
+- `panic: no decode implementation available for chip: %s`
+- `panic: version property iterated during instantiation: p = %s, fourcc = %s`
+- `pmap data`
+- `CHIP_AP_SOFTWARE_FF06`
+- `boot manifest hash`
+- `debug level`
+- `panic: invalid offset: %lld`
+- `hybridscheme3`
+- `len`
+- `site.AppleImage4`
+- `BOOTPC`
+- `entangle-nonce`
+- `security.mac.image4.nonce.generate_proposal`
+- `Img4DecodeGetPropertyBoolean: %s: %d`
+- `panic: digest length overflow: actual = %lu, expected <= %lu`
+- `supervisor`
+- `MOBILE_ASSET_CODE_INSTALL`
+- `Cryptex1 generic content [AP host]`
+- `magazine[%s]: failed to roll supervisor nonce: %d`
+- `failed to allocate buffer: length = %lu, trap = %s: %d`
+- `lp-spih`
+- `12111112122212121111111111111`
+- `%#x`
+- `panic: Img4DecodeCopyPayloadDigest: %d`
+- `cryptex1 live nonce hash`
+- `set specialist`
+- `set supervisor`
+- `activate`
+- `panic: failed to get manifest properties`
+- ` `
+- `allow-ecid-mismatch`
+- `panic: failed to get options node: %d`
+- `failed to get nonce digest from callback: %d`
+- `panic: buffer too small for nonce slot data: actual = %lu, expected >= %lu`
+- `%s: failed to parse root: %d`
+- `panic: expert boot failed: %s: %d`
+- `failed to set boot uuid in supervisor: %d`
+- `CHAIN_PIVOT`
+- `rsa3072`
+- `Cryptex1 asset brain [AP host]`
+- `>=`
+- `%s %-36s`
+- `failed to query property: %s: %d`
+- `MUST EXIST`
+- `MUST NOT EXIST`
+- `legacy blob manifest hash version unsupported: actual = %u, expected = %u`
+- `GENERIC`
+- `%s: failed to retrieve consumed nonce: %d`
+- `_pmap_cs_runtime_dealloc`
+- `BOOT_FLASH`
+- `_xnu_runtime_execute_object`
+- `BATS_NVRAM_REINITIALIZED`
+- `invalid user client selector: p = %s, actual = %#x, expected < %#x`
+- `panic: property not present in chip instance: %s`
+- `booter environment not supported: %s: %d`
+- `pin diagnostic root`
+- `_xnu_runtime_log_handle`
+- `boot type`
+- `unique-chip-id`
+- `panic: nonce length overflow: actual = %lu, expected >= %lu`
+- `version`
+- `0x%x`
+- `panic: integer cast underflow: v = %s, actual = %lld, expected >= 0`
+- `failed to set os release type: %d`
+- `HACKTIVATE_RSA`
+- `CHIP_CRYPTEX1_BOOT_AP_VERIFICATION`
+- `Cryptex1 mobile asset [VMA2 host]`
+- `panic: failed to complete memory descriptor: 0x%lx`
+- `%s: no nonce slot for chip`
+- `panic: type not available`
+- `BOOT_LIVE`
+- `long os version`
+- `HOST_`
+- `copyin failed: trap = %s: %d`
+- `allow hacktivation`
+- `manifest properties`
+- `odometer[%s:%s]: failed to query expert: p = %s: %d`
+- `Page Protection Layer`
+- `panic: illegal chip definition: anti-replay and static lifetime policies defined: %s`
+- `Cryptex1 mobile asset [AP host]`
+- `CHIP_VMA3`
+- `slot[%s]: failed to compute nonce proposal hash: %d`
+- `copy_active`
+- `failed to forcibly sync nvram: %d`
+- `failed to decode property: container = %s, type = %x, p = %s: %d`
+- `%s: Img4DecodeGetPayloadType: %d`
+- `panic: unexpected trust evaluation entry: i = %lu`
+- `certificate-security-mode`
+- `diagnostic level`
+- `odometer[%s:%s]: constraint violation: %s: %d`
+- `CHIP_CRYPTEX1_BOOT_VMA2_VERIFICATION`
+- `image`
+- `user buffer exceeds maximum bounds: actual = %lu, expected <= %lu, trap = %#llx: %d`
+- `panic: failed to get options node`
+- `odp->odp_type`
+- `manifest`
+- `panic: Img4DecodeGetPayload: %d`
+- `secureboot key scheme`
+- `security domain`
+- `boot uuid`
+- `x509`
+- `panic: illegal chip definition: trust store cannot override static decode implementation: %s`
+- `%s: failed to dfu image: %d`
+- `panic: optional not set`
+- `com.apple.private.image4.nonce.propose.mobile-asset`
+- `failed to parse payload: %d`
+- `no image for handle: %llx: %d`
+- `CRYPTEX0`
+- `id4->id_p->p_constraint->pc_code`
+- `Cryptex1 boot [vma2 host clone]`
+- `_xnu_runtime_get_identifier_uint32`
+- `no boot uuid available: %d`
+- `non-executable privilege level`
+- `nonce domain`
+- `extended security domain`
+- `failed to read nvram property: %s: %d`
+- `site.odometer_t`
+- `magazine[%s]: failed to nuke legacy nonce blob: %d`
+- `failed to check for %s: %d`
+- `preserve`
+- `%s`
+- `odometer[%s:%s]: anti-replay violation: %d`
+- `CRYPTEX1_`
+- `211212211`
+- `%s: stalled out: %d`
+- `panic: encryption failed: 0x%lx`
+- `^~`
+- `panic: buffer not large enough for digest: actual = %lu, expected >= %lu`
+- `panic: unreachable case: %s = 0x%llx`
+- `CHIP_AP_SOFTWARE_FF00`
+- `CHIP_AP_DDI_SHA2_384`
+- `CHIP_CRYPTEX1_MOBILE_ASSET_CODE_INSTALL_AP`
+- `Img4DecodePerformTrustEvaluationWithCallbacks: %d`
+- `read legacy blob: version = %u, length = %lu`
+- `boot`
+- `AP_LOCAL_`
+- `_pmap_cs_runtime_alloc`
+- `slot[%s]: caller not entitled to generate proposal nonce: %d`
+- `panic: invalid secure boot level: actual = %llu, expected <= %llu`
+- `pqc-validation-flags`
+- `legacy nonce blob length insufficient: actual = %lu, expected >= %lu`
+- `%s: failed to initialize image: %d`
+- `CHIP_VMA2`
+- `com.apple.private.img4.nonce.pdi`
+- `set resolver`
+- `panic: failed to get secure boot: %d`
+- `panic: incomplete coprocessor map: handle = %lld, expected < %lld`
+- `host application processor`
+- `failed to fetch output struct: %d`
+- `magazine[%s]: failed to compute nonce digest for sideload chip: %s: %d`
+- `<`
+- `AP`
+- `normalize`
+- `chip identifier`
+- `_xnu_runtime_alloc_type`
+- `panic: Img4DecodeRestoreInfoExists: %d`
+- `virtual machine monitor present`
+- `pc`
+- `CHIP_AP_KCINSTALL`
+- `incomplete sequence`
+- `/product`
+- `%s: enforcing[%s %s %s]: %s %s %s: %d`
+- `GL0`
+- `panic: Img4DecodeCopyManifestDigest: %d`
+- `panic: invalid min/max: min = %u, max = %u`
+- `AP [software ff01]`
+- `com.apple.private.img4.nonce.cryptex1.mobile-asset.code-install`
+- `1`
+- `CHIP_CRYPTEX1_BOOT_VMA2_CLONE_VERIFICATION`
+- `ECID`

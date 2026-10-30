@@ -1,0 +1,6913 @@
+# `com.apple.driver.AppleTopCaseDriverV2`
+
+- Name: AppleTopCaseDriverV2
+- Version: `1000.22`
+- Depends on: [`com.apple.driver.AppleMultitouchDriver`](com.apple.driver.AppleMultitouchDriver.md) 237.1, [`com.apple.iokit.IOHIDFamily`](com.apple.iokit.IOHIDFamily.md) 1.4, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 9.6.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 9.6.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 9.6.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 9.6.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 9.6.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (101) [KC]
+
+### AppleUSBHostBulkHIDDevice - TopCase - 666
+- `CFBundleIdentifier`: `com.apple.driver.usb.IOUSBHostHIDDevice`
+- `IOClass`: `AppleUSBHostBulkHIDDevice`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProbeScore`: `100000`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `2`
+- `idProductArray`:
+  - `666`
+- `idVendor`: `1452`
+
+### AppleUSBHostBulkHIDDevice - TopCase - 671
+- `CFBundleIdentifier`: `com.apple.driver.usb.IOUSBHostHIDDevice`
+- `IOClass`: `AppleUSBHostBulkHIDDevice`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProbeScore`: `100000`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `2`
+- `idProductArray`:
+  - `671`
+- `idVendor`: `1452`
+
+### AppleUSBHostBulkHIDDevice - TopCase - 801
+- `CFBundleIdentifier`: `com.apple.driver.usb.IOUSBHostHIDDevice`
+- `IOClass`: `AppleUSBHostBulkHIDDevice`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProbeScore`: `100000`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `2`
+- `idProductArray`:
+  - `801`
+- `idVendor`: `1452`
+
+### AppleUSBHostBulkHIDDevice - TopCase - 802
+- `CFBundleIdentifier`: `com.apple.driver.usb.IOUSBHostHIDDevice`
+- `IOClass`: `AppleUSBHostBulkHIDDevice`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProbeScore`: `100000`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `2`
+- `idProductArray`:
+  - `802`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Keyboard - DM - TopCase - 666
+- `Accessory Category`: `Keyboard`
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `ExtendedData`:
+  - `50399649`
+  - `50465185`
+  - `50530721`
+  - `50596257`
+  - `53741985`
+  - `61868449`
+  - `61933985`
+  - `61999521`
+  - `62065057`
+  - `62261665`
+  - `62720417`
+  - `64227745`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `0`
+- `idProductArray`:
+  - `666`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Keyboard - DM - TopCase - 668
+- `Accessory Category`: `Keyboard`
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `ExtendedData`:
+  - `50399649`
+  - `50465185`
+  - `50530721`
+  - `50596257`
+  - `53741985`
+  - `61868449`
+  - `61933985`
+  - `61999521`
+  - `62065057`
+  - `62261665`
+  - `62720417`
+  - `64227745`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `0`
+- `idProductArray`:
+  - `668`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Keyboard - DM - TopCase - 671
+- `Accessory Category`: `Keyboard`
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `ExtendedData`:
+  - `50399649`
+  - `50465185`
+  - `50530721`
+  - `50596257`
+  - `53741985`
+  - `61868449`
+  - `61933985`
+  - `61999521`
+  - `62065057`
+  - `62261665`
+  - `62720417`
+  - `64227745`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `0`
+- `idProductArray`:
+  - `671`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Keyboard - DM - TopCase - 800
+- `Accessory Category`: `Keyboard`
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `ExtendedData`:
+  - `50399649`
+  - `50465185`
+  - `50530721`
+  - `50596257`
+  - `53741985`
+  - `61868449`
+  - `61933985`
+  - `61999521`
+  - `62065057`
+  - `62261665`
+  - `62720417`
+  - `64227745`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `0`
+- `idProductArray`:
+  - `800`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Keyboard - DM - TopCase - 801
+- `Accessory Category`: `Keyboard`
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `ExtendedData`:
+  - `50399649`
+  - `50465185`
+  - `50530721`
+  - `50596257`
+  - `53741985`
+  - `61868449`
+  - `61933985`
+  - `61999521`
+  - `62065057`
+  - `62261665`
+  - `62720417`
+  - `64227745`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `0`
+- `idProductArray`:
+  - `801`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Keyboard - DM - TopCase - 802
+- `Accessory Category`: `Keyboard`
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `ExtendedData`:
+  - `50399649`
+  - `50465185`
+  - `50530721`
+  - `50596257`
+  - `53741985`
+  - `61868449`
+  - `61933985`
+  - `61999521`
+  - `62065057`
+  - `62261665`
+  - `62720417`
+  - `64227745`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `0`
+- `idProductArray`:
+  - `802`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Keyboard - TopCase - 666
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `1`
+- `idProductArray`:
+  - `666`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Keyboard - TopCase - 668
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `1`
+- `idProductArray`:
+  - `668`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Keyboard - TopCase - 671
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `1`
+- `idProductArray`:
+  - `671`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Keyboard - TopCase - 800
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `1`
+- `idProductArray`:
+  - `800`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Keyboard - TopCase - 801
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `1`
+- `idProductArray`:
+  - `801`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Keyboard - TopCase - 802
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `1`
+- `idProductArray`:
+  - `802`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Mouse - DM - TopCase - 617
+- `Accessory Category`: `Mouse`
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `ExtendedData`:
+  - `50399649`
+  - `50465185`
+  - `50530721`
+  - `50596257`
+  - `53741985`
+  - `61868449`
+  - `61933985`
+  - `61999521`
+  - `62065057`
+  - `62261665`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `0`
+- `idProductArray`:
+  - `617`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Mouse - DM - TopCase - 803
+- `Accessory Category`: `Mouse`
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `ExtendedData`:
+  - `50399649`
+  - `50465185`
+  - `50530721`
+  - `50596257`
+  - `53741985`
+  - `61868449`
+  - `61933985`
+  - `61999521`
+  - `62065057`
+  - `62261665`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `0`
+- `idProductArray`:
+  - `803`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Mouse - TopCase - 617
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `*`
+- `idProductArray`:
+  - `617`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Mouse - TopCase - 803
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `*`
+- `idProductArray`:
+  - `803`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Trackpad - DM - TopCase - 613
+- `Accessory Category`: `Trackpad`
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `ExtendedData`:
+  - `50399649`
+  - `50465185`
+  - `50530721`
+  - `50596257`
+  - `53741985`
+  - `61868449`
+  - `61933985`
+  - `61999521`
+  - `62065057`
+  - `62261665`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `0`
+- `idProductArray`:
+  - `613`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Trackpad - DM - TopCase - 804
+- `Accessory Category`: `Trackpad`
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `ExtendedData`:
+  - `50399649`
+  - `50465185`
+  - `50530721`
+  - `50596257`
+  - `53741985`
+  - `61868449`
+  - `61933985`
+  - `61999521`
+  - `62065057`
+  - `62261665`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `0`
+- `idProductArray`:
+  - `804`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Trackpad - MT - TopCase - 613
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `ExtendedData`:
+  - `60358656`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `1`
+- `idProductArray`:
+  - `613`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Trackpad - MT - TopCase - 804
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `ExtendedData`:
+  - `60358656`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `1`
+- `idProductArray`:
+  - `804`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Trackpad - TopCase - 613
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `*`
+- `idProductArray`:
+  - `613`
+- `idVendor`: `1452`
+
+### AppleUSBTopCaseHIDDriver Trackpad - TopCase - 804
+- `CFBundleIdentifier`: `com.apple.driver.AppleUSBTopCaseDriver`
+- `IOClass`: `AppleUSBTopCaseHIDDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOUSBHostInterface`
+- `bConfigurationValue`: `1`
+- `bInterfaceNumber`: `*`
+- `idProductArray`:
+  - `804`
+- `idVendor`: `1452`
+
+### Extended Magic Keyboard with Touch ID BT Event Driver - TopCase - 671
+- `AlternateLongPressHandling`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `DualTransport`: `True`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LongPressTimeout`: `100000`
+- `PressCountDoublePressTimeout`: `300000`
+- `PressCountTrackingEnabled`: `True`
+- `PressCountTriplePressTimeout`: `600000`
+- `PressCountUsagePairs`:
+  - `786496`
+- `ProductIDArray`:
+  - `671`
+- `SupportsGlobeKey`: `True`
+- `SupportsSiriKey`: `True`
+- `VendorID`: `76`
+
+### Extended Magic Keyboard with Touch ID BT Event Driver - TopCase - 802
+- `AlternateLongPressHandling`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `DualTransport`: `True`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LongPressTimeout`: `100000`
+- `PressCountDoublePressTimeout`: `300000`
+- `PressCountTrackingEnabled`: `True`
+- `PressCountTriplePressTimeout`: `600000`
+- `PressCountUsagePairs`:
+  - `786496`
+- `ProductIDArray`:
+  - `802`
+- `SupportsGlobeKey`: `True`
+- `SupportsSiriKey`: `True`
+- `VendorID`: `76`
+
+### Extended Magic Keyboard with Touch ID USB Event Driver - TopCase - 671
+- `AlternateLongPressHandling`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `DualTransport`: `True`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LongPressTimeout`: `100000`
+- `PressCountDoublePressTimeout`: `300000`
+- `PressCountTrackingEnabled`: `True`
+- `PressCountTriplePressTimeout`: `600000`
+- `PressCountUsagePairs`:
+  - `786496`
+- `ProductIDArray`:
+  - `671`
+- `SupportsGlobeKey`: `True`
+- `SupportsSiriKey`: `True`
+- `VendorID`: `1452`
+
+### Extended Magic Keyboard with Touch ID USB Event Driver - TopCase - 802
+- `AlternateLongPressHandling`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `DualTransport`: `True`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LongPressTimeout`: `100000`
+- `PressCountDoublePressTimeout`: `300000`
+- `PressCountTrackingEnabled`: `True`
+- `PressCountTriplePressTimeout`: `600000`
+- `PressCountUsagePairs`:
+  - `786496`
+- `ProductIDArray`:
+  - `802`
+- `SupportsGlobeKey`: `True`
+- `SupportsSiriKey`: `True`
+- `VendorID`: `1452`
+
+### Keyboard Touch ID Remap iOS/tvOS - TopCase - 666
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOClass`: `IOHIDProviderPropertyMerger`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOPropertyMatch`:
+  - `ProductID`: `666`
+- `IOProviderClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOProviderMergeProperties`:
+  - `HIDEventServiceProperties`:
+    - `HIDKeyboardModifierMappingPairs`:
+      -
+        - `HIDKeyboardModifierMappingDst`: `280375465082955`
+        - `HIDKeyboardModifierMappingSrc`: `51539607616`
+
+### Keyboard Touch ID Remap iOS/tvOS - TopCase - 671
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOClass`: `IOHIDProviderPropertyMerger`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOPropertyMatch`:
+  - `ProductID`: `671`
+- `IOProviderClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOProviderMergeProperties`:
+  - `HIDEventServiceProperties`:
+    - `HIDKeyboardModifierMappingPairs`:
+      -
+        - `HIDKeyboardModifierMappingDst`: `280375465082955`
+        - `HIDKeyboardModifierMappingSrc`: `51539607616`
+
+### Keyboard Touch ID Remap iOS/tvOS - TopCase - 801
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOClass`: `IOHIDProviderPropertyMerger`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOPropertyMatch`:
+  - `ProductID`: `801`
+- `IOProviderClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOProviderMergeProperties`:
+  - `HIDEventServiceProperties`:
+    - `HIDKeyboardModifierMappingPairs`:
+      -
+        - `HIDKeyboardModifierMappingDst`: `280375465082955`
+        - `HIDKeyboardModifierMappingSrc`: `51539607616`
+
+### Keyboard Touch ID Remap iOS/tvOS - TopCase - 802
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOClass`: `IOHIDProviderPropertyMerger`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOPropertyMatch`:
+  - `ProductID`: `802`
+- `IOProviderClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOProviderMergeProperties`:
+  - `HIDEventServiceProperties`:
+    - `HIDKeyboardModifierMappingPairs`:
+      -
+        - `HIDKeyboardModifierMappingDst`: `280375465082955`
+        - `HIDKeyboardModifierMappingSrc`: `51539607616`
+
+### Magic Keyboard BT Event Driver - TopCase - 668
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `DualTransport`: `True`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+  - `LockKeyDelay`: `150`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `NumLockKeyboardUsageMap`: `0x00070029,0x00070029,0x0007002a,0x0007002a,0x0007002b,0x0007002b,0x0007003a,0x0007003a,0x0007003b,0x0007003b,0x0007003c,0x0007003c,0x0007003d,0x0007003d,0x0007003e,0x0007003e,0x0007003f,0x0007003f,0x00070040,0x00070040,0x00070041,0x00070041,0x00070042,0x00070042,0x00070043,0x00070043,0x00070044,0x00070044,0x00070045,0x00070045,0x0007004a,0x0007004a,0x0007004b,0x0007004b,0x0007004c,0x0007004c,0x0007004d,0x0007004d,0x0007004e,0x0007004e,0x0007004f,0x0007004f,0x00070050,0x00070050,0x00070051,0x00070051,0x00070052,0x00070052,0x0007000d,0x00070059,0x0007000e,0x0007005a,0x0007000f,0x0007005b,0x00070018,0x0007005c,0x0007000c,0x0007005d,0x00070012,0x0007005e,0x00070024,0x0007005f,0x00070025,0x00070060,0x00070026,0x00070061,0x00070010,0x00070062,0x00070037,0x00070063,0x00070082,0x00070082,0x000700e0,0x000700e0,0x000700e1,0x000700e1,0x000700e2,0x000700e2,0x000700e3,0x000700e3,0x000700e4,0x000700e4,0x000700e5,0x000700e5,0x000700e6,0x000700e6,0x000700e7,0x000700e7`
+- `ProductIDArray`:
+  - `668`
+- `SupportsGlobeKey`: `True`
+- `SupportsSiriKey`: `True`
+- `VendorID`: `76`
+
+### Magic Keyboard BT Event Driver - TopCase - 800
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `DualTransport`: `True`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+  - `LockKeyDelay`: `150`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `NumLockKeyboardUsageMap`: `0x00070029,0x00070029,0x0007002a,0x0007002a,0x0007002b,0x0007002b,0x0007003a,0x0007003a,0x0007003b,0x0007003b,0x0007003c,0x0007003c,0x0007003d,0x0007003d,0x0007003e,0x0007003e,0x0007003f,0x0007003f,0x00070040,0x00070040,0x00070041,0x00070041,0x00070042,0x00070042,0x00070043,0x00070043,0x00070044,0x00070044,0x00070045,0x00070045,0x0007004a,0x0007004a,0x0007004b,0x0007004b,0x0007004c,0x0007004c,0x0007004d,0x0007004d,0x0007004e,0x0007004e,0x0007004f,0x0007004f,0x00070050,0x00070050,0x00070051,0x00070051,0x00070052,0x00070052,0x0007000d,0x00070059,0x0007000e,0x0007005a,0x0007000f,0x0007005b,0x00070018,0x0007005c,0x0007000c,0x0007005d,0x00070012,0x0007005e,0x00070024,0x0007005f,0x00070025,0x00070060,0x00070026,0x00070061,0x00070010,0x00070062,0x00070037,0x00070063,0x00070082,0x00070082,0x000700e0,0x000700e0,0x000700e1,0x000700e1,0x000700e2,0x000700e2,0x000700e3,0x000700e3,0x000700e4,0x000700e4,0x000700e5,0x000700e5,0x000700e6,0x000700e6,0x000700e7,0x000700e7`
+- `ProductIDArray`:
+  - `800`
+- `SupportsGlobeKey`: `True`
+- `SupportsSiriKey`: `True`
+- `VendorID`: `76`
+
+### Magic Keyboard BT iOS/tvOS - DM - TopCase - 666
+- `Accessory Category`: `Keyboard`
+- `BatteryFaultNotificationType`: `KBBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `666`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `76`
+
+### Magic Keyboard BT iOS/tvOS - DM - TopCase - 668
+- `Accessory Category`: `Keyboard`
+- `BatteryFaultNotificationType`: `KBBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `668`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `76`
+
+### Magic Keyboard BT iOS/tvOS - DM - TopCase - 671
+- `Accessory Category`: `Keyboard`
+- `BatteryFaultNotificationType`: `KBBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `671`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `76`
+
+### Magic Keyboard BT iOS/tvOS - DM - TopCase - 800
+- `Accessory Category`: `Keyboard`
+- `BatteryFaultNotificationType`: `KBBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `ColorIDMapping`:
+  -
+    - `From`: `32`
+    - `To`: `35`
+  -
+    - `From`: `36`
+    - `To`: `42`
+  -
+    - `From`: `37`
+    - `To`: `43`
+  -
+    - `From`: `38`
+    - `To`: `44`
+  -
+    - `From`: `39`
+    - `To`: `45`
+  -
+    - `From`: `40`
+    - `To`: `46`
+  -
+    - `From`: `41`
+    - `To`: `47`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `800`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `76`
+
+### Magic Keyboard BT iOS/tvOS - DM - TopCase - 801
+- `Accessory Category`: `Keyboard`
+- `BatteryFaultNotificationType`: `KBBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `ColorIDMapping`:
+  -
+    - `From`: `32`
+    - `To`: `35`
+  -
+    - `From`: `36`
+    - `To`: `42`
+  -
+    - `From`: `37`
+    - `To`: `43`
+  -
+    - `From`: `38`
+    - `To`: `44`
+  -
+    - `From`: `39`
+    - `To`: `45`
+  -
+    - `From`: `40`
+    - `To`: `46`
+  -
+    - `From`: `41`
+    - `To`: `47`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `801`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `76`
+
+### Magic Keyboard BT iOS/tvOS - DM - TopCase - 802
+- `Accessory Category`: `Keyboard`
+- `BatteryFaultNotificationType`: `KBBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `ColorIDMapping`:
+  -
+    - `From`: `32`
+    - `To`: `35`
+  -
+    - `From`: `36`
+    - `To`: `42`
+  -
+    - `From`: `37`
+    - `To`: `43`
+  -
+    - `From`: `38`
+    - `To`: `44`
+  -
+    - `From`: `39`
+    - `To`: `45`
+  -
+    - `From`: `40`
+    - `To`: `46`
+  -
+    - `From`: `41`
+    - `To`: `47`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `802`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `76`
+
+### Magic Keyboard USB Event Driver - TopCase - 668
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `DualTransport`: `True`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+  - `LockKeyDelay`: `150`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `NumLockKeyboardUsageMap`: `0x00070029,0x00070029,0x0007002a,0x0007002a,0x0007002b,0x0007002b,0x0007003a,0x0007003a,0x0007003b,0x0007003b,0x0007003c,0x0007003c,0x0007003d,0x0007003d,0x0007003e,0x0007003e,0x0007003f,0x0007003f,0x00070040,0x00070040,0x00070041,0x00070041,0x00070042,0x00070042,0x00070043,0x00070043,0x00070044,0x00070044,0x00070045,0x00070045,0x0007004a,0x0007004a,0x0007004b,0x0007004b,0x0007004c,0x0007004c,0x0007004d,0x0007004d,0x0007004e,0x0007004e,0x0007004f,0x0007004f,0x00070050,0x00070050,0x00070051,0x00070051,0x00070052,0x00070052,0x0007000d,0x00070059,0x0007000e,0x0007005a,0x0007000f,0x0007005b,0x00070018,0x0007005c,0x0007000c,0x0007005d,0x00070012,0x0007005e,0x00070024,0x0007005f,0x00070025,0x00070060,0x00070026,0x00070061,0x00070010,0x00070062,0x00070037,0x00070063,0x00070082,0x00070082,0x000700e0,0x000700e0,0x000700e1,0x000700e1,0x000700e2,0x000700e2,0x000700e3,0x000700e3,0x000700e4,0x000700e4,0x000700e5,0x000700e5,0x000700e6,0x000700e6,0x000700e7,0x000700e7`
+- `ProductIDArray`:
+  - `668`
+- `SupportsGlobeKey`: `True`
+- `SupportsSiriKey`: `True`
+- `VendorID`: `1452`
+
+### Magic Keyboard USB Event Driver - TopCase - 800
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `DualTransport`: `True`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+  - `LockKeyDelay`: `150`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `NumLockKeyboardUsageMap`: `0x00070029,0x00070029,0x0007002a,0x0007002a,0x0007002b,0x0007002b,0x0007003a,0x0007003a,0x0007003b,0x0007003b,0x0007003c,0x0007003c,0x0007003d,0x0007003d,0x0007003e,0x0007003e,0x0007003f,0x0007003f,0x00070040,0x00070040,0x00070041,0x00070041,0x00070042,0x00070042,0x00070043,0x00070043,0x00070044,0x00070044,0x00070045,0x00070045,0x0007004a,0x0007004a,0x0007004b,0x0007004b,0x0007004c,0x0007004c,0x0007004d,0x0007004d,0x0007004e,0x0007004e,0x0007004f,0x0007004f,0x00070050,0x00070050,0x00070051,0x00070051,0x00070052,0x00070052,0x0007000d,0x00070059,0x0007000e,0x0007005a,0x0007000f,0x0007005b,0x00070018,0x0007005c,0x0007000c,0x0007005d,0x00070012,0x0007005e,0x00070024,0x0007005f,0x00070025,0x00070060,0x00070026,0x00070061,0x00070010,0x00070062,0x00070037,0x00070063,0x00070082,0x00070082,0x000700e0,0x000700e0,0x000700e1,0x000700e1,0x000700e2,0x000700e2,0x000700e3,0x000700e3,0x000700e4,0x000700e4,0x000700e5,0x000700e5,0x000700e6,0x000700e6,0x000700e7,0x000700e7`
+- `ProductIDArray`:
+  - `800`
+- `SupportsGlobeKey`: `True`
+- `SupportsSiriKey`: `True`
+- `VendorID`: `1452`
+
+### Magic Keyboard USB iOS/tvOS - DM - TopCase - 666
+- `Accessory Category`: `Keyboard`
+- `BatteryFaultNotificationType`: `KBBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `666`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### Magic Keyboard USB iOS/tvOS - DM - TopCase - 668
+- `Accessory Category`: `Keyboard`
+- `BatteryFaultNotificationType`: `KBBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `668`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### Magic Keyboard USB iOS/tvOS - DM - TopCase - 671
+- `Accessory Category`: `Keyboard`
+- `BatteryFaultNotificationType`: `KBBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `671`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### Magic Keyboard USB iOS/tvOS - DM - TopCase - 800
+- `Accessory Category`: `Keyboard`
+- `BatteryFaultNotificationType`: `KBBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `ColorIDMapping`:
+  -
+    - `From`: `32`
+    - `To`: `35`
+  -
+    - `From`: `36`
+    - `To`: `42`
+  -
+    - `From`: `37`
+    - `To`: `43`
+  -
+    - `From`: `38`
+    - `To`: `44`
+  -
+    - `From`: `39`
+    - `To`: `45`
+  -
+    - `From`: `40`
+    - `To`: `46`
+  -
+    - `From`: `41`
+    - `To`: `47`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `800`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### Magic Keyboard USB iOS/tvOS - DM - TopCase - 801
+- `Accessory Category`: `Keyboard`
+- `BatteryFaultNotificationType`: `KBBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `ColorIDMapping`:
+  -
+    - `From`: `32`
+    - `To`: `35`
+  -
+    - `From`: `36`
+    - `To`: `42`
+  -
+    - `From`: `37`
+    - `To`: `43`
+  -
+    - `From`: `38`
+    - `To`: `44`
+  -
+    - `From`: `39`
+    - `To`: `45`
+  -
+    - `From`: `40`
+    - `To`: `46`
+  -
+    - `From`: `41`
+    - `To`: `47`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `801`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### Magic Keyboard USB iOS/tvOS - DM - TopCase - 802
+- `Accessory Category`: `Keyboard`
+- `BatteryFaultNotificationType`: `KBBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `ColorIDMapping`:
+  -
+    - `From`: `32`
+    - `To`: `35`
+  -
+    - `From`: `36`
+    - `To`: `42`
+  -
+    - `From`: `37`
+    - `To`: `43`
+  -
+    - `From`: `38`
+    - `To`: `44`
+  -
+    - `From`: `39`
+    - `To`: `45`
+  -
+    - `From`: `40`
+    - `To`: `46`
+  -
+    - `From`: `41`
+    - `To`: `47`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `802`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### Magic Keyboard with Touch ID BT Event Driver - TopCase - 666
+- `AlternateLongPressHandling`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `DualTransport`: `True`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LongPressTimeout`: `100000`
+- `NumLockKeyboardUsageMap`: `0x00070029,0x00070029,0x0007002a,0x0007002a,0x0007002b,0x0007002b,0x0007003a,0x0007003a,0x0007003b,0x0007003b,0x0007003c,0x0007003c,0x0007003d,0x0007003d,0x0007003e,0x0007003e,0x0007003f,0x0007003f,0x00070040,0x00070040,0x00070041,0x00070041,0x00070042,0x00070042,0x00070043,0x00070043,0x00070044,0x00070044,0x00070045,0x00070045,0x0007004a,0x0007004a,0x0007004b,0x0007004b,0x0007004c,0x0007004c,0x0007004d,0x0007004d,0x0007004e,0x0007004e,0x0007004f,0x0007004f,0x00070050,0x00070050,0x00070051,0x00070051,0x00070052,0x00070052,0x0007000d,0x00070059,0x0007000e,0x0007005a,0x0007000f,0x0007005b,0x00070018,0x0007005c,0x0007000c,0x0007005d,0x00070012,0x0007005e,0x00070024,0x0007005f,0x00070025,0x00070060,0x00070026,0x00070061,0x00070010,0x00070062,0x00070037,0x00070063,0x00070082,0x00070082,0x000700e0,0x000700e0,0x000700e1,0x000700e1,0x000700e2,0x000700e2,0x000700e3,0x000700e3,0x000700e4,0x000700e4,0x000700e5,0x000700e5,0x000700e6,0x000700e6,0x000700e7,0x000700e7`
+- `PressCountDoublePressTimeout`: `300000`
+- `PressCountTrackingEnabled`: `True`
+- `PressCountTriplePressTimeout`: `600000`
+- `PressCountUsagePairs`:
+  - `786496`
+- `ProductIDArray`:
+  - `666`
+- `SupportsGlobeKey`: `True`
+- `SupportsSiriKey`: `True`
+- `VendorID`: `76`
+
+### Magic Keyboard with Touch ID BT Event Driver - TopCase - 801
+- `AlternateLongPressHandling`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `DualTransport`: `True`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LongPressTimeout`: `100000`
+- `NumLockKeyboardUsageMap`: `0x00070029,0x00070029,0x0007002a,0x0007002a,0x0007002b,0x0007002b,0x0007003a,0x0007003a,0x0007003b,0x0007003b,0x0007003c,0x0007003c,0x0007003d,0x0007003d,0x0007003e,0x0007003e,0x0007003f,0x0007003f,0x00070040,0x00070040,0x00070041,0x00070041,0x00070042,0x00070042,0x00070043,0x00070043,0x00070044,0x00070044,0x00070045,0x00070045,0x0007004a,0x0007004a,0x0007004b,0x0007004b,0x0007004c,0x0007004c,0x0007004d,0x0007004d,0x0007004e,0x0007004e,0x0007004f,0x0007004f,0x00070050,0x00070050,0x00070051,0x00070051,0x00070052,0x00070052,0x0007000d,0x00070059,0x0007000e,0x0007005a,0x0007000f,0x0007005b,0x00070018,0x0007005c,0x0007000c,0x0007005d,0x00070012,0x0007005e,0x00070024,0x0007005f,0x00070025,0x00070060,0x00070026,0x00070061,0x00070010,0x00070062,0x00070037,0x00070063,0x00070082,0x00070082,0x000700e0,0x000700e0,0x000700e1,0x000700e1,0x000700e2,0x000700e2,0x000700e3,0x000700e3,0x000700e4,0x000700e4,0x000700e5,0x000700e5,0x000700e6,0x000700e6,0x000700e7,0x000700e7`
+- `PressCountDoublePressTimeout`: `300000`
+- `PressCountTrackingEnabled`: `True`
+- `PressCountTriplePressTimeout`: `600000`
+- `PressCountUsagePairs`:
+  - `786496`
+- `ProductIDArray`:
+  - `801`
+- `SupportsGlobeKey`: `True`
+- `SupportsSiriKey`: `True`
+- `VendorID`: `76`
+
+### Magic Keyboard with Touch ID USB Event Driver - TopCase - 666
+- `AlternateLongPressHandling`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `DualTransport`: `True`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LongPressTimeout`: `100000`
+- `NumLockKeyboardUsageMap`: `0x00070029,0x00070029,0x0007002a,0x0007002a,0x0007002b,0x0007002b,0x0007003a,0x0007003a,0x0007003b,0x0007003b,0x0007003c,0x0007003c,0x0007003d,0x0007003d,0x0007003e,0x0007003e,0x0007003f,0x0007003f,0x00070040,0x00070040,0x00070041,0x00070041,0x00070042,0x00070042,0x00070043,0x00070043,0x00070044,0x00070044,0x00070045,0x00070045,0x0007004a,0x0007004a,0x0007004b,0x0007004b,0x0007004c,0x0007004c,0x0007004d,0x0007004d,0x0007004e,0x0007004e,0x0007004f,0x0007004f,0x00070050,0x00070050,0x00070051,0x00070051,0x00070052,0x00070052,0x0007000d,0x00070059,0x0007000e,0x0007005a,0x0007000f,0x0007005b,0x00070018,0x0007005c,0x0007000c,0x0007005d,0x00070012,0x0007005e,0x00070024,0x0007005f,0x00070025,0x00070060,0x00070026,0x00070061,0x00070010,0x00070062,0x00070037,0x00070063,0x00070082,0x00070082,0x000700e0,0x000700e0,0x000700e1,0x000700e1,0x000700e2,0x000700e2,0x000700e3,0x000700e3,0x000700e4,0x000700e4,0x000700e5,0x000700e5,0x000700e6,0x000700e6,0x000700e7,0x000700e7`
+- `PressCountDoublePressTimeout`: `300000`
+- `PressCountTrackingEnabled`: `True`
+- `PressCountTriplePressTimeout`: `600000`
+- `PressCountUsagePairs`:
+  - `786496`
+- `ProductIDArray`:
+  - `666`
+- `SupportsGlobeKey`: `True`
+- `SupportsSiriKey`: `True`
+- `VendorID`: `1452`
+
+### Magic Keyboard with Touch ID USB Event Driver - TopCase - 801
+- `AlternateLongPressHandling`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `DualTransport`: `True`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LongPressTimeout`: `100000`
+- `NumLockKeyboardUsageMap`: `0x00070029,0x00070029,0x0007002a,0x0007002a,0x0007002b,0x0007002b,0x0007003a,0x0007003a,0x0007003b,0x0007003b,0x0007003c,0x0007003c,0x0007003d,0x0007003d,0x0007003e,0x0007003e,0x0007003f,0x0007003f,0x00070040,0x00070040,0x00070041,0x00070041,0x00070042,0x00070042,0x00070043,0x00070043,0x00070044,0x00070044,0x00070045,0x00070045,0x0007004a,0x0007004a,0x0007004b,0x0007004b,0x0007004c,0x0007004c,0x0007004d,0x0007004d,0x0007004e,0x0007004e,0x0007004f,0x0007004f,0x00070050,0x00070050,0x00070051,0x00070051,0x00070052,0x00070052,0x0007000d,0x00070059,0x0007000e,0x0007005a,0x0007000f,0x0007005b,0x00070018,0x0007005c,0x0007000c,0x0007005d,0x00070012,0x0007005e,0x00070024,0x0007005f,0x00070025,0x00070060,0x00070026,0x00070061,0x00070010,0x00070062,0x00070037,0x00070063,0x00070082,0x00070082,0x000700e0,0x000700e0,0x000700e1,0x000700e1,0x000700e2,0x000700e2,0x000700e3,0x000700e3,0x000700e4,0x000700e4,0x000700e5,0x000700e5,0x000700e6,0x000700e6,0x000700e7,0x000700e7`
+- `PressCountDoublePressTimeout`: `300000`
+- `PressCountTrackingEnabled`: `True`
+- `PressCountTriplePressTimeout`: `600000`
+- `PressCountUsagePairs`:
+  - `786496`
+- `ProductIDArray`:
+  - `801`
+- `SupportsGlobeKey`: `True`
+- `SupportsSiriKey`: `True`
+- `VendorID`: `1452`
+
+### Magic Mouse BT iOS/tvOS - DM - TopCase - 617
+- `Accessory Category`: `Mouse`
+- `BatteryFaultNotificationType`: `MOBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `CurrentBatteryPercentNotificationType`: `CurrentBatteryPercent`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `617`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `76`
+
+### Magic Mouse BT iOS/tvOS - DM - TopCase - 803
+- `Accessory Category`: `Mouse`
+- `BatteryFaultNotificationType`: `MOBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `CurrentBatteryPercentNotificationType`: `CurrentBatteryPercent`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `803`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `76`
+
+### Magic Mouse BT iOS/tvOS Event Driver - TopCase - 617
+- `ApplePreferenceCapability`: `1`
+- `ApplePreferenceIdentifier`: `com.apple.AppleMultitouchMouse`
+- `ApplePreferencesDefaultPreferences`:
+  - `MouseButtonDivision`: `55`
+  - `MouseButtonMode`: `OneButton`
+  - `MouseHorizontalScroll`: `True`
+  - `MouseMomentumScroll`: `False`
+  - `MouseOneFingerDoubleTapGesture`: `0`
+  - `MouseTwoFingerDoubleTapGesture`: `0`
+  - `MouseTwoFingerHorizSwipeGesture`: `0`
+  - `MouseVerticalScroll`: `True`
+- `BuildAMDWithMTInit`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DefaultMultitouchProperties`:
+  - `HIDDisallowRemappingOfPrimaryClick`: `True`
+  - `HIDPointerAccelerationMultiplier`: `49152`
+  - `HIDPointerAccelerationTable`: `<data 1994 chars>`
+  - `HIDScrollAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `85197`
+      - `HIDAccelGainParabolic`: `16384`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `851968`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+    -
+      - `HIDAccelGainLinear`: `95027`
+      - `HIDAccelGainParabolic`: `26215`
+      - `HIDAccelIndex`: `13927`
+      - `HIDAccelTangentSpeedLinear`: `786432`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+    -
+      - `HIDAccelGainLinear`: `104858`
+      - `HIDAccelGainParabolic`: `39322`
+      - `HIDAccelIndex`: `20480`
+      - `HIDAccelTangentSpeedLinear`: `720896`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+    -
+      - `HIDAccelGainLinear`: `114688`
+      - `HIDAccelGainParabolic`: `55706`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `655360`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+    -
+      - `HIDAccelGainLinear`: `124519`
+      - `HIDAccelGainParabolic`: `68813`
+      - `HIDAccelIndex`: `49152`
+      - `HIDAccelTangentSpeedLinear`: `589824`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+    -
+      - `HIDAccelGainLinear`: `134349`
+      - `HIDAccelGainParabolic`: `81920`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `524288`
+      - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+    -
+      - `HIDAccelGainLinear`: `144179`
+      - `HIDAccelGainParabolic`: `95027`
+      - `HIDAccelIndex`: `111411`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  - `HIDScrollAccelerationType`: `HIDMouseScrollAcceleration`
+  - `HIDScrollReportRate`: `2341820`
+  - `HIDScrollResolution`: `26214400`
+  - `HIDServiceSupport`: `True`
+  - `HSTouchHIDService`: `True`
+  - `MTHIDDevice`: `True`
+  - `MTPowerStatsDisable`: `True`
+  - `SupportsGestureScrolling`: `True`
+  - `parser-options`: `4`
+  - `parser-type`: `2001`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `2`
+    - `DeviceUsagePage`: `1`
+  -
+    - `DeviceUsage`: `1`
+    - `DeviceUsagePage`: `1`
+- `HIDAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `524288`
+  -
+    - `HIDAccelGainCubic`: `5243`
+    - `HIDAccelGainLinear`: `70124`
+    - `HIDAccelGainParabolic`: `26214`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `537395`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainCubic`: `6554`
+    - `HIDAccelGainLinear`: `74711`
+    - `HIDAccelGainParabolic`: `36045`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `543949`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainCubic`: `7864`
+    - `HIDAccelGainLinear`: `79299`
+    - `HIDAccelGainParabolic`: `46531`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `550502`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainCubic`: `9830`
+    - `HIDAccelGainLinear`: `83886`
+    - `HIDAccelGainParabolic`: `57672`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `557056`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainCubic`: `11796`
+    - `HIDAccelGainLinear`: `88474`
+    - `HIDAccelGainParabolic`: `69468`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `563610`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainCubic`: `14418`
+    - `HIDAccelGainLinear`: `93061`
+    - `HIDAccelGainParabolic`: `81920`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `570163`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  -
+    - `HIDAccelGainCubic`: `17695`
+    - `HIDAccelGainLinear`: `97649`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `576717`
+    - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+  -
+    - `HIDAccelGainCubic`: `21627`
+    - `HIDAccelGainLinear`: `102236`
+    - `HIDAccelGainParabolic`: `108790`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `583270`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainCubic`: `26214`
+    - `HIDAccelGainLinear`: `104858`
+    - `HIDAccelGainParabolic`: `123208`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `589824`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDDisallowRemappingOfPrimaryClick`: `True`
+- `HIDPointerAccelerationTable`: `<data 1864 chars>`
+- `HIDScrollAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `85197`
+    - `HIDAccelGainParabolic`: `16384`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `851968`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+  -
+    - `HIDAccelGainLinear`: `95027`
+    - `HIDAccelGainParabolic`: `26215`
+    - `HIDAccelIndex`: `13927`
+    - `HIDAccelTangentSpeedLinear`: `786432`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainLinear`: `104858`
+    - `HIDAccelGainParabolic`: `39322`
+    - `HIDAccelIndex`: `20480`
+    - `HIDAccelTangentSpeedLinear`: `720896`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainLinear`: `114688`
+    - `HIDAccelGainParabolic`: `55706`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `655360`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainLinear`: `124519`
+    - `HIDAccelGainParabolic`: `68813`
+    - `HIDAccelIndex`: `49152`
+    - `HIDAccelTangentSpeedLinear`: `589824`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainLinear`: `134349`
+    - `HIDAccelGainParabolic`: `81920`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `524288`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainLinear`: `144179`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `111411`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+- `HIDScrollResolution`: `26214400`
+- `HIDServiceSupport`: `False`
+- `IOClass`: `AppleMultitouchMouseHIDEventDriver`
+- `IOHIDScrollReportRate`: `8192000`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `ProductIDArray`:
+  - `617`
+- `VendorID`: `76`
+
+### Magic Mouse BT iOS/tvOS Event Driver - TopCase - 803
+- `ApplePreferenceCapability`: `1`
+- `ApplePreferenceIdentifier`: `com.apple.AppleMultitouchMouse`
+- `ApplePreferencesDefaultPreferences`:
+  - `MouseButtonDivision`: `55`
+  - `MouseButtonMode`: `OneButton`
+  - `MouseHorizontalScroll`: `True`
+  - `MouseMomentumScroll`: `False`
+  - `MouseOneFingerDoubleTapGesture`: `0`
+  - `MouseTwoFingerDoubleTapGesture`: `0`
+  - `MouseTwoFingerHorizSwipeGesture`: `0`
+  - `MouseVerticalScroll`: `True`
+- `BuildAMDWithMTInit`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DefaultMultitouchProperties`:
+  - `HIDDisallowRemappingOfPrimaryClick`: `True`
+  - `HIDPointerAccelerationMultiplier`: `49152`
+  - `HIDPointerAccelerationTable`: `<data 1994 chars>`
+  - `HIDScrollAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `85197`
+      - `HIDAccelGainParabolic`: `16384`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `851968`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+    -
+      - `HIDAccelGainLinear`: `95027`
+      - `HIDAccelGainParabolic`: `26215`
+      - `HIDAccelIndex`: `13927`
+      - `HIDAccelTangentSpeedLinear`: `786432`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+    -
+      - `HIDAccelGainLinear`: `104858`
+      - `HIDAccelGainParabolic`: `39322`
+      - `HIDAccelIndex`: `20480`
+      - `HIDAccelTangentSpeedLinear`: `720896`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+    -
+      - `HIDAccelGainLinear`: `114688`
+      - `HIDAccelGainParabolic`: `55706`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `655360`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+    -
+      - `HIDAccelGainLinear`: `124519`
+      - `HIDAccelGainParabolic`: `68813`
+      - `HIDAccelIndex`: `49152`
+      - `HIDAccelTangentSpeedLinear`: `589824`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+    -
+      - `HIDAccelGainLinear`: `134349`
+      - `HIDAccelGainParabolic`: `81920`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `524288`
+      - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+    -
+      - `HIDAccelGainLinear`: `144179`
+      - `HIDAccelGainParabolic`: `95027`
+      - `HIDAccelIndex`: `111411`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  - `HIDScrollAccelerationType`: `HIDMouseScrollAcceleration`
+  - `HIDScrollReportRate`: `2341820`
+  - `HIDScrollResolution`: `26214400`
+  - `HIDServiceSupport`: `True`
+  - `HSTouchHIDService`: `True`
+  - `MTHIDDevice`: `True`
+  - `MTPowerStatsDisable`: `True`
+  - `SupportsGestureScrolling`: `True`
+  - `parser-options`: `4`
+  - `parser-type`: `2001`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `2`
+    - `DeviceUsagePage`: `1`
+  -
+    - `DeviceUsage`: `1`
+    - `DeviceUsagePage`: `1`
+- `HIDAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `524288`
+  -
+    - `HIDAccelGainCubic`: `5243`
+    - `HIDAccelGainLinear`: `70124`
+    - `HIDAccelGainParabolic`: `26214`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `537395`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainCubic`: `6554`
+    - `HIDAccelGainLinear`: `74711`
+    - `HIDAccelGainParabolic`: `36045`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `543949`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainCubic`: `7864`
+    - `HIDAccelGainLinear`: `79299`
+    - `HIDAccelGainParabolic`: `46531`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `550502`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainCubic`: `9830`
+    - `HIDAccelGainLinear`: `83886`
+    - `HIDAccelGainParabolic`: `57672`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `557056`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainCubic`: `11796`
+    - `HIDAccelGainLinear`: `88474`
+    - `HIDAccelGainParabolic`: `69468`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `563610`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainCubic`: `14418`
+    - `HIDAccelGainLinear`: `93061`
+    - `HIDAccelGainParabolic`: `81920`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `570163`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  -
+    - `HIDAccelGainCubic`: `17695`
+    - `HIDAccelGainLinear`: `97649`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `576717`
+    - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+  -
+    - `HIDAccelGainCubic`: `21627`
+    - `HIDAccelGainLinear`: `102236`
+    - `HIDAccelGainParabolic`: `108790`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `583270`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainCubic`: `26214`
+    - `HIDAccelGainLinear`: `104858`
+    - `HIDAccelGainParabolic`: `123208`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `589824`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDDisallowRemappingOfPrimaryClick`: `True`
+- `HIDPointerAccelerationTable`: `<data 1864 chars>`
+- `HIDScrollAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `85197`
+    - `HIDAccelGainParabolic`: `16384`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `851968`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+  -
+    - `HIDAccelGainLinear`: `95027`
+    - `HIDAccelGainParabolic`: `26215`
+    - `HIDAccelIndex`: `13927`
+    - `HIDAccelTangentSpeedLinear`: `786432`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainLinear`: `104858`
+    - `HIDAccelGainParabolic`: `39322`
+    - `HIDAccelIndex`: `20480`
+    - `HIDAccelTangentSpeedLinear`: `720896`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainLinear`: `114688`
+    - `HIDAccelGainParabolic`: `55706`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `655360`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainLinear`: `124519`
+    - `HIDAccelGainParabolic`: `68813`
+    - `HIDAccelIndex`: `49152`
+    - `HIDAccelTangentSpeedLinear`: `589824`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainLinear`: `134349`
+    - `HIDAccelGainParabolic`: `81920`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `524288`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainLinear`: `144179`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `111411`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+- `HIDScrollResolution`: `26214400`
+- `HIDServiceSupport`: `False`
+- `IOClass`: `AppleMultitouchMouseHIDEventDriver`
+- `IOHIDScrollReportRate`: `8192000`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `ProductIDArray`:
+  - `803`
+- `VendorID`: `76`
+
+### Magic Mouse USB iOS/tvOS - DM - TopCase - 617
+- `Accessory Category`: `Mouse`
+- `BatteryFaultNotificationType`: `MOBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `CurrentBatteryPercentNotificationType`: `CurrentBatteryPercent`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `617`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### Magic Mouse USB iOS/tvOS - DM - TopCase - 803
+- `Accessory Category`: `Mouse`
+- `BatteryFaultNotificationType`: `MOBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `CurrentBatteryPercentNotificationType`: `CurrentBatteryPercent`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `803`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### Magic Mouse USB iOS/tvOS Event Driver - TopCase - 617
+- `ApplePreferenceCapability`: `1`
+- `ApplePreferenceIdentifier`: `com.apple.AppleMultitouchMouse`
+- `ApplePreferencesDefaultPreferences`:
+  - `MouseButtonDivision`: `55`
+  - `MouseButtonMode`: `OneButton`
+  - `MouseHorizontalScroll`: `True`
+  - `MouseMomentumScroll`: `False`
+  - `MouseOneFingerDoubleTapGesture`: `0`
+  - `MouseTwoFingerDoubleTapGesture`: `0`
+  - `MouseTwoFingerHorizSwipeGesture`: `0`
+  - `MouseVerticalScroll`: `True`
+- `BuildAMDWithMTInit`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DefaultMultitouchProperties`:
+  - `HIDDisallowRemappingOfPrimaryClick`: `True`
+  - `HIDPointerAccelerationTable`: `<data 1994 chars>`
+  - `HIDScrollAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `85197`
+      - `HIDAccelGainParabolic`: `16384`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `851968`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+    -
+      - `HIDAccelGainLinear`: `95027`
+      - `HIDAccelGainParabolic`: `26215`
+      - `HIDAccelIndex`: `13927`
+      - `HIDAccelTangentSpeedLinear`: `786432`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+    -
+      - `HIDAccelGainLinear`: `104858`
+      - `HIDAccelGainParabolic`: `39322`
+      - `HIDAccelIndex`: `20480`
+      - `HIDAccelTangentSpeedLinear`: `720896`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+    -
+      - `HIDAccelGainLinear`: `114688`
+      - `HIDAccelGainParabolic`: `55706`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `655360`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+    -
+      - `HIDAccelGainLinear`: `124519`
+      - `HIDAccelGainParabolic`: `68813`
+      - `HIDAccelIndex`: `49152`
+      - `HIDAccelTangentSpeedLinear`: `589824`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+    -
+      - `HIDAccelGainLinear`: `134349`
+      - `HIDAccelGainParabolic`: `81920`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `524288`
+      - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+    -
+      - `HIDAccelGainLinear`: `144179`
+      - `HIDAccelGainParabolic`: `95027`
+      - `HIDAccelIndex`: `111411`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  - `HIDScrollAccelerationType`: `HIDMouseScrollAcceleration`
+  - `HIDScrollReportRate`: `2341820`
+  - `HIDScrollResolution`: `26214400`
+  - `HIDServiceSupport`: `True`
+  - `HSTouchHIDService`: `True`
+  - `MTHIDDevice`: `True`
+  - `MTPowerStatsDisable`: `True`
+  - `SupportsGestureScrolling`: `True`
+  - `parser-options`: `4`
+  - `parser-type`: `2001`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `2`
+    - `DeviceUsagePage`: `1`
+  -
+    - `DeviceUsage`: `1`
+    - `DeviceUsagePage`: `1`
+- `HIDAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `524288`
+  -
+    - `HIDAccelGainCubic`: `5243`
+    - `HIDAccelGainLinear`: `70124`
+    - `HIDAccelGainParabolic`: `26214`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `537395`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainCubic`: `6554`
+    - `HIDAccelGainLinear`: `74711`
+    - `HIDAccelGainParabolic`: `36045`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `543949`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainCubic`: `7864`
+    - `HIDAccelGainLinear`: `79299`
+    - `HIDAccelGainParabolic`: `46531`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `550502`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainCubic`: `9830`
+    - `HIDAccelGainLinear`: `83886`
+    - `HIDAccelGainParabolic`: `57672`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `557056`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainCubic`: `11796`
+    - `HIDAccelGainLinear`: `88474`
+    - `HIDAccelGainParabolic`: `69468`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `563610`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainCubic`: `14418`
+    - `HIDAccelGainLinear`: `93061`
+    - `HIDAccelGainParabolic`: `81920`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `570163`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  -
+    - `HIDAccelGainCubic`: `17695`
+    - `HIDAccelGainLinear`: `97649`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `576717`
+    - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+  -
+    - `HIDAccelGainCubic`: `21627`
+    - `HIDAccelGainLinear`: `102236`
+    - `HIDAccelGainParabolic`: `108790`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `583270`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainCubic`: `26214`
+    - `HIDAccelGainLinear`: `104858`
+    - `HIDAccelGainParabolic`: `123208`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `589824`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDDisallowRemappingOfPrimaryClick`: `True`
+- `HIDPointerAccelerationTable`: `<data 1864 chars>`
+- `HIDScrollAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `85197`
+    - `HIDAccelGainParabolic`: `16384`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `851968`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+  -
+    - `HIDAccelGainLinear`: `95027`
+    - `HIDAccelGainParabolic`: `26215`
+    - `HIDAccelIndex`: `13927`
+    - `HIDAccelTangentSpeedLinear`: `786432`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainLinear`: `104858`
+    - `HIDAccelGainParabolic`: `39322`
+    - `HIDAccelIndex`: `20480`
+    - `HIDAccelTangentSpeedLinear`: `720896`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainLinear`: `114688`
+    - `HIDAccelGainParabolic`: `55706`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `655360`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainLinear`: `124519`
+    - `HIDAccelGainParabolic`: `68813`
+    - `HIDAccelIndex`: `49152`
+    - `HIDAccelTangentSpeedLinear`: `589824`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainLinear`: `134349`
+    - `HIDAccelGainParabolic`: `81920`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `524288`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainLinear`: `144179`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `111411`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+- `HIDScrollResolution`: `26214400`
+- `HIDServiceSupport`: `False`
+- `IOClass`: `AppleMultitouchMouseHIDEventDriver`
+- `IOHIDScrollReportRate`: `8192000`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `ProductIDArray`:
+  - `617`
+- `VendorID`: `1452`
+
+### Magic Mouse USB iOS/tvOS Event Driver - TopCase - 803
+- `ApplePreferenceCapability`: `1`
+- `ApplePreferenceIdentifier`: `com.apple.AppleMultitouchMouse`
+- `ApplePreferencesDefaultPreferences`:
+  - `MouseButtonDivision`: `55`
+  - `MouseButtonMode`: `OneButton`
+  - `MouseHorizontalScroll`: `True`
+  - `MouseMomentumScroll`: `False`
+  - `MouseOneFingerDoubleTapGesture`: `0`
+  - `MouseTwoFingerDoubleTapGesture`: `0`
+  - `MouseTwoFingerHorizSwipeGesture`: `0`
+  - `MouseVerticalScroll`: `True`
+- `BuildAMDWithMTInit`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DefaultMultitouchProperties`:
+  - `HIDDisallowRemappingOfPrimaryClick`: `True`
+  - `HIDPointerAccelerationTable`: `<data 1994 chars>`
+  - `HIDScrollAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `85197`
+      - `HIDAccelGainParabolic`: `16384`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `851968`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+    -
+      - `HIDAccelGainLinear`: `95027`
+      - `HIDAccelGainParabolic`: `26215`
+      - `HIDAccelIndex`: `13927`
+      - `HIDAccelTangentSpeedLinear`: `786432`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+    -
+      - `HIDAccelGainLinear`: `104858`
+      - `HIDAccelGainParabolic`: `39322`
+      - `HIDAccelIndex`: `20480`
+      - `HIDAccelTangentSpeedLinear`: `720896`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+    -
+      - `HIDAccelGainLinear`: `114688`
+      - `HIDAccelGainParabolic`: `55706`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `655360`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+    -
+      - `HIDAccelGainLinear`: `124519`
+      - `HIDAccelGainParabolic`: `68813`
+      - `HIDAccelIndex`: `49152`
+      - `HIDAccelTangentSpeedLinear`: `589824`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+    -
+      - `HIDAccelGainLinear`: `134349`
+      - `HIDAccelGainParabolic`: `81920`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `524288`
+      - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+    -
+      - `HIDAccelGainLinear`: `144179`
+      - `HIDAccelGainParabolic`: `95027`
+      - `HIDAccelIndex`: `111411`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  - `HIDScrollAccelerationType`: `HIDMouseScrollAcceleration`
+  - `HIDScrollReportRate`: `2341820`
+  - `HIDScrollResolution`: `26214400`
+  - `HIDServiceSupport`: `True`
+  - `HSTouchHIDService`: `True`
+  - `MTHIDDevice`: `True`
+  - `MTPowerStatsDisable`: `True`
+  - `SupportsGestureScrolling`: `True`
+  - `parser-options`: `4`
+  - `parser-type`: `2001`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `2`
+    - `DeviceUsagePage`: `1`
+  -
+    - `DeviceUsage`: `1`
+    - `DeviceUsagePage`: `1`
+- `HIDAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `524288`
+  -
+    - `HIDAccelGainCubic`: `5243`
+    - `HIDAccelGainLinear`: `70124`
+    - `HIDAccelGainParabolic`: `26214`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `537395`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainCubic`: `6554`
+    - `HIDAccelGainLinear`: `74711`
+    - `HIDAccelGainParabolic`: `36045`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `543949`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainCubic`: `7864`
+    - `HIDAccelGainLinear`: `79299`
+    - `HIDAccelGainParabolic`: `46531`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `550502`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainCubic`: `9830`
+    - `HIDAccelGainLinear`: `83886`
+    - `HIDAccelGainParabolic`: `57672`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `557056`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainCubic`: `11796`
+    - `HIDAccelGainLinear`: `88474`
+    - `HIDAccelGainParabolic`: `69468`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `563610`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainCubic`: `14418`
+    - `HIDAccelGainLinear`: `93061`
+    - `HIDAccelGainParabolic`: `81920`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `570163`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  -
+    - `HIDAccelGainCubic`: `17695`
+    - `HIDAccelGainLinear`: `97649`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `576717`
+    - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+  -
+    - `HIDAccelGainCubic`: `21627`
+    - `HIDAccelGainLinear`: `102236`
+    - `HIDAccelGainParabolic`: `108790`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `583270`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainCubic`: `26214`
+    - `HIDAccelGainLinear`: `104858`
+    - `HIDAccelGainParabolic`: `123208`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `589824`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDDisallowRemappingOfPrimaryClick`: `True`
+- `HIDPointerAccelerationTable`: `<data 1864 chars>`
+- `HIDScrollAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `85197`
+    - `HIDAccelGainParabolic`: `16384`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `851968`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+  -
+    - `HIDAccelGainLinear`: `95027`
+    - `HIDAccelGainParabolic`: `26215`
+    - `HIDAccelIndex`: `13927`
+    - `HIDAccelTangentSpeedLinear`: `786432`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainLinear`: `104858`
+    - `HIDAccelGainParabolic`: `39322`
+    - `HIDAccelIndex`: `20480`
+    - `HIDAccelTangentSpeedLinear`: `720896`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainLinear`: `114688`
+    - `HIDAccelGainParabolic`: `55706`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `655360`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainLinear`: `124519`
+    - `HIDAccelGainParabolic`: `68813`
+    - `HIDAccelIndex`: `49152`
+    - `HIDAccelTangentSpeedLinear`: `589824`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainLinear`: `134349`
+    - `HIDAccelGainParabolic`: `81920`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `524288`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainLinear`: `144179`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `111411`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+- `HIDScrollResolution`: `26214400`
+- `HIDServiceSupport`: `False`
+- `IOClass`: `AppleMultitouchMouseHIDEventDriver`
+- `IOHIDScrollReportRate`: `8192000`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `ProductIDArray`:
+  - `803`
+- `VendorID`: `1452`
+
+### Magic Trackpad BT iOS/tvOS - DM - TopCase - 613
+- `Accessory Category`: `Trackpad`
+- `BatteryFaultNotificationType`: `TPBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `613`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `76`
+
+### Magic Trackpad BT iOS/tvOS - DM - TopCase - 804
+- `Accessory Category`: `Trackpad`
+- `BatteryFaultNotificationType`: `TPBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `804`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `76`
+
+### Magic Trackpad BT iOS/tvOS Actuator Event Driver - TopCase - 613
+- `CFBundleIdentifier`: `com.apple.driver.AppleActuatorDriver`
+- `DefaultActuatorProperties`:
+  - `ActuatorRevision`: `4`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `13`
+    - `DeviceUsagePage`: `65280`
+- `IOClass`: `AppleActuatorHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `ProductIDArray`:
+  - `613`
+- `VendorID`: `76`
+
+### Magic Trackpad BT iOS/tvOS Actuator Event Driver - TopCase - 804
+- `CFBundleIdentifier`: `com.apple.driver.AppleActuatorDriver`
+- `DefaultActuatorProperties`:
+  - `ActuatorRevision`: `4`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `13`
+    - `DeviceUsagePage`: `65280`
+- `IOClass`: `AppleActuatorHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `ProductIDArray`:
+  - `804`
+- `VendorID`: `76`
+
+### Magic Trackpad BT iOS/tvOS Event Driver - TopCase - 613
+- `ApplePreferenceCapability`: `2`
+- `ApplePreferenceIdentifier`: `com.apple.AppleMultitouchTrackpad`
+- `ApplePreferencesDefaultPreferences`:
+  - `ActuateDetents`: `1`
+  - `Clicking`: `0`
+  - `DragLock`: `0`
+  - `Dragging`: `0`
+  - `FirstClickThreshold`: `1`
+  - `ForceSuppressed`: `False`
+  - `SecondClickThreshold`: `1`
+  - `TrackpadCornerSecondaryClick`: `0`
+  - `TrackpadFiveFingerPinchGesture`: `2`
+  - `TrackpadFourFingerHorizSwipeGesture`: `2`
+  - `TrackpadFourFingerPinchGesture`: `2`
+  - `TrackpadFourFingerVertSwipeGesture`: `2`
+  - `TrackpadHorizScroll`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadPinch`: `1`
+  - `TrackpadRightClick`: `True`
+  - `TrackpadRotate`: `1`
+  - `TrackpadScroll`: `True`
+  - `TrackpadThreeFingerDrag`: `False`
+  - `TrackpadThreeFingerHorizSwipeGesture`: `2`
+  - `TrackpadThreeFingerTapGesture`: `0`
+  - `TrackpadThreeFingerVertSwipeGesture`: `2`
+  - `TrackpadTwoFingerDoubleTapGesture`: `1`
+  - `TrackpadTwoFingerFromRightEdgeSwipeGesture`: `3`
+- `BuildAMDWithMTInit`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DefaultMultitouchProperties`:
+  - `ActuationSupported`: `True`
+  - `ForceSupported`: `True`
+  - `HIDAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+    -
+      - `HIDAccelGainCubic`: `5243`
+      - `HIDAccelGainLinear`: `64881`
+      - `HIDAccelGainParabolic`: `32768`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `478413`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+    -
+      - `HIDAccelGainCubic`: `6554`
+      - `HIDAccelGainLinear`: `64225`
+      - `HIDAccelGainParabolic`: `43254`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+    -
+      - `HIDAccelGainCubic`: `7864`
+      - `HIDAccelGainLinear`: `62915`
+      - `HIDAccelGainParabolic`: `54395`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `465306`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+    -
+      - `HIDAccelGainCubic`: `9830`
+      - `HIDAccelGainLinear`: `61604`
+      - `HIDAccelGainParabolic`: `65536`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+    -
+      - `HIDAccelGainCubic`: `11796`
+      - `HIDAccelGainLinear`: `60293`
+      - `HIDAccelGainParabolic`: `75366`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+    -
+      - `HIDAccelGainCubic`: `13763`
+      - `HIDAccelGainLinear`: `58327`
+      - `HIDAccelGainParabolic`: `85197`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+    -
+      - `HIDAccelGainCubic`: `15729`
+      - `HIDAccelGainLinear`: `56361`
+      - `HIDAccelGainParabolic`: `95027`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+    -
+      - `HIDAccelGainCubic`: `18350`
+      - `HIDAccelGainLinear`: `54395`
+      - `HIDAccelGainParabolic`: `108790`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+    -
+      - `HIDAccelGainCubic`: `23593`
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelGainParabolic`: `123208`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDDisallowRemappingOfPrimaryClick`: `True`
+  - `HIDPointerAccelerationMultiplier`: `34953`
+  - `HIDPointerAccelerationTable`: `<data 1294 chars>`
+  - `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+  - `HIDPointerReportRate`: `0`
+  - `HIDScrollAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `393216`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `62259`
+      - `HIDAccelGainParabolic`: `39322`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `406323`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `58982`
+      - `HIDAccelGainParabolic`: `58982`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `419430`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `55706`
+      - `HIDAccelGainParabolic`: `78643`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `432538`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `52429`
+      - `HIDAccelGainParabolic`: `91750`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `445645`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `49152`
+      - `HIDAccelGainParabolic`: `104858`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `45875`
+      - `HIDAccelGainParabolic`: `117965`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `42598`
+      - `HIDAccelGainParabolic`: `131072`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `39322`
+      - `HIDAccelGainParabolic`: `144179`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `498074`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `36045`
+      - `HIDAccelGainParabolic`: `157286`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `511181`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDScrollAccelerationTable`: `<data 1644 chars>`
+  - `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+  - `HIDScrollReportRate`: `4390912`
+  - `HIDScrollResolution`: `26214400`
+  - `HIDScrollResolutionX`: `26214400`
+  - `HIDScrollResolutionY`: `26214400`
+  - `HIDScrollResolutionZ`: `26214400`
+  - `HIDServiceSupport`: `True`
+  - `HSTouchHIDService`: `True`
+  - `MT Built-In`: `False`
+  - `MTHIDDevice`: `True`
+  - `MTPowerStatsDisable`: `True`
+  - `Reporters`:
+    -
+      - `Category`:
+        - `Power`
+      - `ChannelName`: `D67/A287 Trackpad Power Stats`
+      - `GroupName`: `Multitouch Power Stats`
+      - `PacketFormat`:
+        - `DurationCountLengthBytes`: `4`
+        - `StatePacketOrder`:
+          - `0 Reserved`
+          - `Active`
+          - `2 Reserved`
+          - `3 Reserved`
+          - `4 Reserved`
+          - `5 Reserved`
+          - `6 Reserved`
+          - `7 Reserved`
+          - `8 Reserved`
+          - `Anticipate`
+          - `DiagAct`
+          - `DiagThr`
+          - `ThScnAct`
+          - `ThScnRdy`
+          - `ThScnLTI`
+          - `15 Reserved`
+        - `TransitionCountLengthBytes`: `2`
+      - `SubgroupName`: `Standalone Magic Input Device Power Stats`
+      - `TicksPerSecond`: `1000`
+      - `TouchType`: `Opaque`
+      - `Type`: `State`
+      - `Unit`: `Us`
+  - `SupportsActuationLimits`: `False`
+  - `SupportsDeepPress`: `False`
+  - `SupportsGestureScrolling`: `True`
+  - `SupportsSystemHaptics`: `False`
+  - `TrackpadFourFingerGestures`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadSecondaryClickCorners`: `False`
+  - `TrackpadThreeFingerDrag`: `True`
+  - `parser-options`: `7`
+  - `parser-type`: `1001`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `2`
+    - `DeviceUsagePage`: `1`
+- `DoReportIntervalHack`: `True`
+- `HIDAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+  -
+    - `HIDAccelGainCubic`: `5243`
+    - `HIDAccelGainLinear`: `64881`
+    - `HIDAccelGainParabolic`: `32768`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `478413`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+  -
+    - `HIDAccelGainCubic`: `6554`
+    - `HIDAccelGainLinear`: `64225`
+    - `HIDAccelGainParabolic`: `43254`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainCubic`: `7864`
+    - `HIDAccelGainLinear`: `62915`
+    - `HIDAccelGainParabolic`: `54395`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `465306`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainCubic`: `9830`
+    - `HIDAccelGainLinear`: `61604`
+    - `HIDAccelGainParabolic`: `65536`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainCubic`: `11796`
+    - `HIDAccelGainLinear`: `60293`
+    - `HIDAccelGainParabolic`: `75366`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainCubic`: `13763`
+    - `HIDAccelGainLinear`: `58327`
+    - `HIDAccelGainParabolic`: `85197`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainCubic`: `15729`
+    - `HIDAccelGainLinear`: `56361`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  -
+    - `HIDAccelGainCubic`: `18350`
+    - `HIDAccelGainLinear`: `54395`
+    - `HIDAccelGainParabolic`: `108790`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+  -
+    - `HIDAccelGainCubic`: `23593`
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelGainParabolic`: `123208`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDDisallowRemappingOfPrimaryClick`: `True`
+- `HIDPointerAccelerationTable`: `<data 1208 chars>`
+- `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+- `HIDScrollAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `393216`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `62259`
+    - `HIDAccelGainParabolic`: `39322`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `406323`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `58982`
+    - `HIDAccelGainParabolic`: `58982`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `419430`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `55706`
+    - `HIDAccelGainParabolic`: `78643`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `432538`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `52429`
+    - `HIDAccelGainParabolic`: `91750`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `445645`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `49152`
+    - `HIDAccelGainParabolic`: `104858`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `45875`
+    - `HIDAccelGainParabolic`: `117965`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `42598`
+    - `HIDAccelGainParabolic`: `131072`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `39322`
+    - `HIDAccelGainParabolic`: `144179`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `498074`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `36045`
+    - `HIDAccelGainParabolic`: `157286`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `511181`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDScrollAccelerationTable`: `<data 1536 chars>`
+- `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+- `HIDScrollResolution`: `26214400`
+- `HIDServiceSupport`: `False`
+- `IOClass`: `AppleMultitouchTrackpadHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `MTEventSource`: `True`
+- `ProductIDArray`:
+  - `613`
+- `TrackpadEmbedded`: `False`
+- `VendorID`: `76`
+
+### Magic Trackpad BT iOS/tvOS Event Driver - TopCase - 804
+- `ApplePreferenceCapability`: `2`
+- `ApplePreferenceIdentifier`: `com.apple.AppleMultitouchTrackpad`
+- `ApplePreferencesDefaultPreferences`:
+  - `ActuateDetents`: `1`
+  - `Clicking`: `0`
+  - `DragLock`: `0`
+  - `Dragging`: `0`
+  - `FirstClickThreshold`: `1`
+  - `ForceSuppressed`: `False`
+  - `SecondClickThreshold`: `1`
+  - `TrackpadCornerSecondaryClick`: `0`
+  - `TrackpadFiveFingerPinchGesture`: `2`
+  - `TrackpadFourFingerHorizSwipeGesture`: `2`
+  - `TrackpadFourFingerPinchGesture`: `2`
+  - `TrackpadFourFingerVertSwipeGesture`: `2`
+  - `TrackpadHorizScroll`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadPinch`: `1`
+  - `TrackpadRightClick`: `True`
+  - `TrackpadRotate`: `1`
+  - `TrackpadScroll`: `True`
+  - `TrackpadThreeFingerDrag`: `False`
+  - `TrackpadThreeFingerHorizSwipeGesture`: `2`
+  - `TrackpadThreeFingerTapGesture`: `0`
+  - `TrackpadThreeFingerVertSwipeGesture`: `2`
+  - `TrackpadTwoFingerDoubleTapGesture`: `1`
+  - `TrackpadTwoFingerFromRightEdgeSwipeGesture`: `3`
+- `BuildAMDWithMTInit`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DefaultMultitouchProperties`:
+  - `ActuationSupported`: `True`
+  - `ForceSupported`: `True`
+  - `HIDAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+    -
+      - `HIDAccelGainCubic`: `5243`
+      - `HIDAccelGainLinear`: `64881`
+      - `HIDAccelGainParabolic`: `32768`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `478413`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+    -
+      - `HIDAccelGainCubic`: `6554`
+      - `HIDAccelGainLinear`: `64225`
+      - `HIDAccelGainParabolic`: `43254`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+    -
+      - `HIDAccelGainCubic`: `7864`
+      - `HIDAccelGainLinear`: `62915`
+      - `HIDAccelGainParabolic`: `54395`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `465306`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+    -
+      - `HIDAccelGainCubic`: `9830`
+      - `HIDAccelGainLinear`: `61604`
+      - `HIDAccelGainParabolic`: `65536`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+    -
+      - `HIDAccelGainCubic`: `11796`
+      - `HIDAccelGainLinear`: `60293`
+      - `HIDAccelGainParabolic`: `75366`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+    -
+      - `HIDAccelGainCubic`: `13763`
+      - `HIDAccelGainLinear`: `58327`
+      - `HIDAccelGainParabolic`: `85197`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+    -
+      - `HIDAccelGainCubic`: `15729`
+      - `HIDAccelGainLinear`: `56361`
+      - `HIDAccelGainParabolic`: `95027`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+    -
+      - `HIDAccelGainCubic`: `18350`
+      - `HIDAccelGainLinear`: `54395`
+      - `HIDAccelGainParabolic`: `108790`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+    -
+      - `HIDAccelGainCubic`: `23593`
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelGainParabolic`: `123208`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDDisallowRemappingOfPrimaryClick`: `True`
+  - `HIDPointerAccelerationMultiplier`: `34953`
+  - `HIDPointerAccelerationTable`: `<data 1294 chars>`
+  - `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+  - `HIDPointerReportRate`: `0`
+  - `HIDScrollAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `393216`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `62259`
+      - `HIDAccelGainParabolic`: `39322`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `406323`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `58982`
+      - `HIDAccelGainParabolic`: `58982`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `419430`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `55706`
+      - `HIDAccelGainParabolic`: `78643`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `432538`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `52429`
+      - `HIDAccelGainParabolic`: `91750`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `445645`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `49152`
+      - `HIDAccelGainParabolic`: `104858`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `45875`
+      - `HIDAccelGainParabolic`: `117965`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `42598`
+      - `HIDAccelGainParabolic`: `131072`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `39322`
+      - `HIDAccelGainParabolic`: `144179`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `498074`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `36045`
+      - `HIDAccelGainParabolic`: `157286`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `511181`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDScrollAccelerationTable`: `<data 1644 chars>`
+  - `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+  - `HIDScrollReportRate`: `4390912`
+  - `HIDScrollResolution`: `26214400`
+  - `HIDScrollResolutionX`: `26214400`
+  - `HIDScrollResolutionY`: `26214400`
+  - `HIDScrollResolutionZ`: `26214400`
+  - `HIDServiceSupport`: `True`
+  - `HSTouchHIDService`: `True`
+  - `MT Built-In`: `False`
+  - `MTHIDDevice`: `True`
+  - `MTPowerStatsDisable`: `True`
+  - `Reporters`:
+    -
+      - `Category`:
+        - `Power`
+      - `ChannelName`: `D67/A287 Trackpad Power Stats`
+      - `GroupName`: `Multitouch Power Stats`
+      - `PacketFormat`:
+        - `DurationCountLengthBytes`: `4`
+        - `StatePacketOrder`:
+          - `0 Reserved`
+          - `Active`
+          - `2 Reserved`
+          - `3 Reserved`
+          - `4 Reserved`
+          - `5 Reserved`
+          - `6 Reserved`
+          - `7 Reserved`
+          - `8 Reserved`
+          - `Anticipate`
+          - `DiagAct`
+          - `DiagThr`
+          - `ThScnAct`
+          - `ThScnRdy`
+          - `ThScnLTI`
+          - `15 Reserved`
+        - `TransitionCountLengthBytes`: `2`
+      - `SubgroupName`: `Standalone Magic Input Device Power Stats`
+      - `TicksPerSecond`: `1000`
+      - `TouchType`: `Opaque`
+      - `Type`: `State`
+      - `Unit`: `Us`
+  - `SupportsActuationLimits`: `False`
+  - `SupportsDeepPress`: `False`
+  - `SupportsGestureScrolling`: `True`
+  - `SupportsSystemHaptics`: `False`
+  - `TrackpadFourFingerGestures`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadSecondaryClickCorners`: `False`
+  - `TrackpadThreeFingerDrag`: `True`
+  - `parser-options`: `7`
+  - `parser-type`: `1001`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `2`
+    - `DeviceUsagePage`: `1`
+- `DoReportIntervalHack`: `True`
+- `HIDAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+  -
+    - `HIDAccelGainCubic`: `5243`
+    - `HIDAccelGainLinear`: `64881`
+    - `HIDAccelGainParabolic`: `32768`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `478413`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+  -
+    - `HIDAccelGainCubic`: `6554`
+    - `HIDAccelGainLinear`: `64225`
+    - `HIDAccelGainParabolic`: `43254`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainCubic`: `7864`
+    - `HIDAccelGainLinear`: `62915`
+    - `HIDAccelGainParabolic`: `54395`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `465306`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainCubic`: `9830`
+    - `HIDAccelGainLinear`: `61604`
+    - `HIDAccelGainParabolic`: `65536`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainCubic`: `11796`
+    - `HIDAccelGainLinear`: `60293`
+    - `HIDAccelGainParabolic`: `75366`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainCubic`: `13763`
+    - `HIDAccelGainLinear`: `58327`
+    - `HIDAccelGainParabolic`: `85197`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainCubic`: `15729`
+    - `HIDAccelGainLinear`: `56361`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  -
+    - `HIDAccelGainCubic`: `18350`
+    - `HIDAccelGainLinear`: `54395`
+    - `HIDAccelGainParabolic`: `108790`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+  -
+    - `HIDAccelGainCubic`: `23593`
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelGainParabolic`: `123208`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDDisallowRemappingOfPrimaryClick`: `True`
+- `HIDPointerAccelerationTable`: `<data 1208 chars>`
+- `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+- `HIDScrollAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `393216`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `62259`
+    - `HIDAccelGainParabolic`: `39322`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `406323`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `58982`
+    - `HIDAccelGainParabolic`: `58982`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `419430`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `55706`
+    - `HIDAccelGainParabolic`: `78643`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `432538`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `52429`
+    - `HIDAccelGainParabolic`: `91750`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `445645`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `49152`
+    - `HIDAccelGainParabolic`: `104858`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `45875`
+    - `HIDAccelGainParabolic`: `117965`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `42598`
+    - `HIDAccelGainParabolic`: `131072`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `39322`
+    - `HIDAccelGainParabolic`: `144179`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `498074`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `36045`
+    - `HIDAccelGainParabolic`: `157286`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `511181`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDScrollAccelerationTable`: `<data 1536 chars>`
+- `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+- `HIDScrollResolution`: `26214400`
+- `HIDServiceSupport`: `False`
+- `IOClass`: `AppleMultitouchTrackpadHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `MTEventSource`: `True`
+- `ProductIDArray`:
+  - `804`
+- `TrackpadEmbedded`: `False`
+- `VendorID`: `76`
+
+### Magic Trackpad USB iOS/tvOS - DM - TopCase - 613
+- `Accessory Category`: `Trackpad`
+- `BatteryFaultNotificationType`: `TPBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `613`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### Magic Trackpad USB iOS/tvOS - DM - TopCase - 804
+- `Accessory Category`: `Trackpad`
+- `BatteryFaultNotificationType`: `TPBatteryFault`
+- `BluetoothDevice`: `True`
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `CriticallyLowBatteryNotificationPercentage`: `3`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `HasBattery`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LowBatteryNotificationPercentage`: `6`
+- `ProductIDArray`:
+  - `804`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### Magic Trackpad USB iOS/tvOS Actuator Event Driver - TopCase - 613
+- `CFBundleIdentifier`: `com.apple.driver.AppleActuatorDriver`
+- `DefaultActuatorProperties`:
+  - `ActuatorRevision`: `4`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `13`
+    - `DeviceUsagePage`: `65280`
+- `IOClass`: `AppleActuatorHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `ProductIDArray`:
+  - `613`
+- `VendorID`: `1452`
+
+### Magic Trackpad USB iOS/tvOS Actuator Event Driver - TopCase - 804
+- `CFBundleIdentifier`: `com.apple.driver.AppleActuatorDriver`
+- `DefaultActuatorProperties`:
+  - `ActuatorRevision`: `4`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `13`
+    - `DeviceUsagePage`: `65280`
+- `IOClass`: `AppleActuatorHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `ProductIDArray`:
+  - `804`
+- `VendorID`: `1452`
+
+### Magic Trackpad USB iOS/tvOS Event Driver - TopCase - 613
+- `ApplePreferenceCapability`: `2`
+- `ApplePreferenceIdentifier`: `com.apple.AppleMultitouchTrackpad`
+- `ApplePreferencesDefaultPreferences`:
+  - `ActuateDetents`: `1`
+  - `Clicking`: `0`
+  - `DragLock`: `0`
+  - `Dragging`: `0`
+  - `FirstClickThreshold`: `1`
+  - `ForceSuppressed`: `False`
+  - `SecondClickThreshold`: `1`
+  - `TrackpadCornerSecondaryClick`: `0`
+  - `TrackpadFiveFingerPinchGesture`: `2`
+  - `TrackpadFourFingerHorizSwipeGesture`: `2`
+  - `TrackpadFourFingerPinchGesture`: `2`
+  - `TrackpadFourFingerVertSwipeGesture`: `2`
+  - `TrackpadHorizScroll`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadPinch`: `1`
+  - `TrackpadRightClick`: `True`
+  - `TrackpadRotate`: `1`
+  - `TrackpadScroll`: `True`
+  - `TrackpadThreeFingerDrag`: `False`
+  - `TrackpadThreeFingerHorizSwipeGesture`: `2`
+  - `TrackpadThreeFingerTapGesture`: `0`
+  - `TrackpadThreeFingerVertSwipeGesture`: `2`
+  - `TrackpadTwoFingerDoubleTapGesture`: `1`
+  - `TrackpadTwoFingerFromRightEdgeSwipeGesture`: `3`
+- `BuildAMDWithMTInit`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DefaultMultitouchProperties`:
+  - `ActuationSupported`: `True`
+  - `ForceSupported`: `True`
+  - `HIDAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+    -
+      - `HIDAccelGainCubic`: `5243`
+      - `HIDAccelGainLinear`: `64881`
+      - `HIDAccelGainParabolic`: `32768`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `478413`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+    -
+      - `HIDAccelGainCubic`: `6554`
+      - `HIDAccelGainLinear`: `64225`
+      - `HIDAccelGainParabolic`: `43254`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+    -
+      - `HIDAccelGainCubic`: `7864`
+      - `HIDAccelGainLinear`: `62915`
+      - `HIDAccelGainParabolic`: `54395`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `465306`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+    -
+      - `HIDAccelGainCubic`: `9830`
+      - `HIDAccelGainLinear`: `61604`
+      - `HIDAccelGainParabolic`: `65536`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+    -
+      - `HIDAccelGainCubic`: `11796`
+      - `HIDAccelGainLinear`: `60293`
+      - `HIDAccelGainParabolic`: `75366`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+    -
+      - `HIDAccelGainCubic`: `13763`
+      - `HIDAccelGainLinear`: `58327`
+      - `HIDAccelGainParabolic`: `85197`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+    -
+      - `HIDAccelGainCubic`: `15729`
+      - `HIDAccelGainLinear`: `56361`
+      - `HIDAccelGainParabolic`: `95027`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+    -
+      - `HIDAccelGainCubic`: `18350`
+      - `HIDAccelGainLinear`: `54395`
+      - `HIDAccelGainParabolic`: `108790`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+    -
+      - `HIDAccelGainCubic`: `23593`
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelGainParabolic`: `123208`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDDisallowRemappingOfPrimaryClick`: `True`
+  - `HIDPointerAccelerationMultiplier`: `34953`
+  - `HIDPointerAccelerationTable`: `<data 1294 chars>`
+  - `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+  - `HIDPointerReportRate`: `0`
+  - `HIDScrollAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `393216`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `62259`
+      - `HIDAccelGainParabolic`: `39322`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `406323`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `58982`
+      - `HIDAccelGainParabolic`: `58982`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `419430`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `55706`
+      - `HIDAccelGainParabolic`: `78643`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `432538`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `52429`
+      - `HIDAccelGainParabolic`: `91750`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `445645`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `49152`
+      - `HIDAccelGainParabolic`: `104858`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `45875`
+      - `HIDAccelGainParabolic`: `117965`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `42598`
+      - `HIDAccelGainParabolic`: `131072`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `39322`
+      - `HIDAccelGainParabolic`: `144179`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `498074`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `36045`
+      - `HIDAccelGainParabolic`: `157286`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `511181`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDScrollAccelerationTable`: `<data 1644 chars>`
+  - `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+  - `HIDScrollReportRate`: `4390912`
+  - `HIDScrollResolution`: `26214400`
+  - `HIDScrollResolutionX`: `26214400`
+  - `HIDScrollResolutionY`: `26214400`
+  - `HIDScrollResolutionZ`: `26214400`
+  - `HIDServiceSupport`: `True`
+  - `HSTouchHIDService`: `True`
+  - `MT Built-In`: `False`
+  - `MTHIDDevice`: `True`
+  - `MTPowerStatsDisable`: `True`
+  - `Reporters`:
+    -
+      - `Category`:
+        - `Power`
+      - `ChannelName`: `D67/A287 Trackpad Power Stats`
+      - `GroupName`: `Multitouch Power Stats`
+      - `PacketFormat`:
+        - `DurationCountLengthBytes`: `4`
+        - `StatePacketOrder`:
+          - `0 Reserved`
+          - `Active`
+          - `2 Reserved`
+          - `3 Reserved`
+          - `4 Reserved`
+          - `5 Reserved`
+          - `6 Reserved`
+          - `7 Reserved`
+          - `8 Reserved`
+          - `Anticipate`
+          - `DiagAct`
+          - `DiagThr`
+          - `ThScnAct`
+          - `ThScnRdy`
+          - `ThScnLTI`
+          - `15 Reserved`
+        - `TransitionCountLengthBytes`: `2`
+      - `SubgroupName`: `Standalone Magic Input Device Power Stats`
+      - `TicksPerSecond`: `1000`
+      - `TouchType`: `Opaque`
+      - `Type`: `State`
+      - `Unit`: `Us`
+  - `SupportsActuationLimits`: `False`
+  - `SupportsDeepPress`: `False`
+  - `SupportsGestureScrolling`: `True`
+  - `SupportsSystemHaptics`: `False`
+  - `TrackpadFourFingerGestures`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadSecondaryClickCorners`: `False`
+  - `TrackpadThreeFingerDrag`: `True`
+  - `parser-options`: `7`
+  - `parser-type`: `1001`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `2`
+    - `DeviceUsagePage`: `1`
+- `DoReportIntervalHack`: `True`
+- `HIDAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+  -
+    - `HIDAccelGainCubic`: `5243`
+    - `HIDAccelGainLinear`: `64881`
+    - `HIDAccelGainParabolic`: `32768`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `478413`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+  -
+    - `HIDAccelGainCubic`: `6554`
+    - `HIDAccelGainLinear`: `64225`
+    - `HIDAccelGainParabolic`: `43254`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainCubic`: `7864`
+    - `HIDAccelGainLinear`: `62915`
+    - `HIDAccelGainParabolic`: `54395`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `465306`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainCubic`: `9830`
+    - `HIDAccelGainLinear`: `61604`
+    - `HIDAccelGainParabolic`: `65536`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainCubic`: `11796`
+    - `HIDAccelGainLinear`: `60293`
+    - `HIDAccelGainParabolic`: `75366`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainCubic`: `13763`
+    - `HIDAccelGainLinear`: `58327`
+    - `HIDAccelGainParabolic`: `85197`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainCubic`: `15729`
+    - `HIDAccelGainLinear`: `56361`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  -
+    - `HIDAccelGainCubic`: `18350`
+    - `HIDAccelGainLinear`: `54395`
+    - `HIDAccelGainParabolic`: `108790`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+  -
+    - `HIDAccelGainCubic`: `23593`
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelGainParabolic`: `123208`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDDisallowRemappingOfPrimaryClick`: `True`
+- `HIDPointerAccelerationTable`: `<data 1208 chars>`
+- `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+- `HIDScrollAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `393216`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `62259`
+    - `HIDAccelGainParabolic`: `39322`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `406323`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `58982`
+    - `HIDAccelGainParabolic`: `58982`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `419430`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `55706`
+    - `HIDAccelGainParabolic`: `78643`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `432538`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `52429`
+    - `HIDAccelGainParabolic`: `91750`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `445645`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `49152`
+    - `HIDAccelGainParabolic`: `104858`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `45875`
+    - `HIDAccelGainParabolic`: `117965`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `42598`
+    - `HIDAccelGainParabolic`: `131072`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `39322`
+    - `HIDAccelGainParabolic`: `144179`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `498074`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `36045`
+    - `HIDAccelGainParabolic`: `157286`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `511181`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDScrollAccelerationTable`: `<data 1536 chars>`
+- `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+- `HIDScrollResolution`: `26214400`
+- `HIDServiceSupport`: `False`
+- `IOClass`: `AppleMultitouchTrackpadHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `MTEventSource`: `True`
+- `ProductIDArray`:
+  - `613`
+- `TrackpadEmbedded`: `False`
+- `VendorID`: `1452`
+
+### Magic Trackpad USB iOS/tvOS Event Driver - TopCase - 804
+- `ApplePreferenceCapability`: `2`
+- `ApplePreferenceIdentifier`: `com.apple.AppleMultitouchTrackpad`
+- `ApplePreferencesDefaultPreferences`:
+  - `ActuateDetents`: `1`
+  - `Clicking`: `0`
+  - `DragLock`: `0`
+  - `Dragging`: `0`
+  - `FirstClickThreshold`: `1`
+  - `ForceSuppressed`: `False`
+  - `SecondClickThreshold`: `1`
+  - `TrackpadCornerSecondaryClick`: `0`
+  - `TrackpadFiveFingerPinchGesture`: `2`
+  - `TrackpadFourFingerHorizSwipeGesture`: `2`
+  - `TrackpadFourFingerPinchGesture`: `2`
+  - `TrackpadFourFingerVertSwipeGesture`: `2`
+  - `TrackpadHorizScroll`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadPinch`: `1`
+  - `TrackpadRightClick`: `True`
+  - `TrackpadRotate`: `1`
+  - `TrackpadScroll`: `True`
+  - `TrackpadThreeFingerDrag`: `False`
+  - `TrackpadThreeFingerHorizSwipeGesture`: `2`
+  - `TrackpadThreeFingerTapGesture`: `0`
+  - `TrackpadThreeFingerVertSwipeGesture`: `2`
+  - `TrackpadTwoFingerDoubleTapGesture`: `1`
+  - `TrackpadTwoFingerFromRightEdgeSwipeGesture`: `3`
+- `BuildAMDWithMTInit`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DefaultMultitouchProperties`:
+  - `ActuationSupported`: `True`
+  - `ForceSupported`: `True`
+  - `HIDAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+    -
+      - `HIDAccelGainCubic`: `5243`
+      - `HIDAccelGainLinear`: `64881`
+      - `HIDAccelGainParabolic`: `32768`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `478413`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+    -
+      - `HIDAccelGainCubic`: `6554`
+      - `HIDAccelGainLinear`: `64225`
+      - `HIDAccelGainParabolic`: `43254`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+    -
+      - `HIDAccelGainCubic`: `7864`
+      - `HIDAccelGainLinear`: `62915`
+      - `HIDAccelGainParabolic`: `54395`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `465306`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+    -
+      - `HIDAccelGainCubic`: `9830`
+      - `HIDAccelGainLinear`: `61604`
+      - `HIDAccelGainParabolic`: `65536`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+    -
+      - `HIDAccelGainCubic`: `11796`
+      - `HIDAccelGainLinear`: `60293`
+      - `HIDAccelGainParabolic`: `75366`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+    -
+      - `HIDAccelGainCubic`: `13763`
+      - `HIDAccelGainLinear`: `58327`
+      - `HIDAccelGainParabolic`: `85197`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+    -
+      - `HIDAccelGainCubic`: `15729`
+      - `HIDAccelGainLinear`: `56361`
+      - `HIDAccelGainParabolic`: `95027`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+    -
+      - `HIDAccelGainCubic`: `18350`
+      - `HIDAccelGainLinear`: `54395`
+      - `HIDAccelGainParabolic`: `108790`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+    -
+      - `HIDAccelGainCubic`: `23593`
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelGainParabolic`: `123208`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDDisallowRemappingOfPrimaryClick`: `True`
+  - `HIDPointerAccelerationMultiplier`: `34953`
+  - `HIDPointerAccelerationTable`: `<data 1294 chars>`
+  - `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+  - `HIDPointerReportRate`: `0`
+  - `HIDScrollAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `393216`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `62259`
+      - `HIDAccelGainParabolic`: `39322`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `406323`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `58982`
+      - `HIDAccelGainParabolic`: `58982`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `419430`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `55706`
+      - `HIDAccelGainParabolic`: `78643`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `432538`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `52429`
+      - `HIDAccelGainParabolic`: `91750`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `445645`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `49152`
+      - `HIDAccelGainParabolic`: `104858`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `45875`
+      - `HIDAccelGainParabolic`: `117965`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `42598`
+      - `HIDAccelGainParabolic`: `131072`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `39322`
+      - `HIDAccelGainParabolic`: `144179`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `498074`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `36045`
+      - `HIDAccelGainParabolic`: `157286`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `511181`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDScrollAccelerationTable`: `<data 1644 chars>`
+  - `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+  - `HIDScrollReportRate`: `4390912`
+  - `HIDScrollResolution`: `26214400`
+  - `HIDScrollResolutionX`: `26214400`
+  - `HIDScrollResolutionY`: `26214400`
+  - `HIDScrollResolutionZ`: `26214400`
+  - `HIDServiceSupport`: `True`
+  - `HSTouchHIDService`: `True`
+  - `MT Built-In`: `False`
+  - `MTHIDDevice`: `True`
+  - `MTPowerStatsDisable`: `True`
+  - `Reporters`:
+    -
+      - `Category`:
+        - `Power`
+      - `ChannelName`: `D67/A287 Trackpad Power Stats`
+      - `GroupName`: `Multitouch Power Stats`
+      - `PacketFormat`:
+        - `DurationCountLengthBytes`: `4`
+        - `StatePacketOrder`:
+          - `0 Reserved`
+          - `Active`
+          - `2 Reserved`
+          - `3 Reserved`
+          - `4 Reserved`
+          - `5 Reserved`
+          - `6 Reserved`
+          - `7 Reserved`
+          - `8 Reserved`
+          - `Anticipate`
+          - `DiagAct`
+          - `DiagThr`
+          - `ThScnAct`
+          - `ThScnRdy`
+          - `ThScnLTI`
+          - `15 Reserved`
+        - `TransitionCountLengthBytes`: `2`
+      - `SubgroupName`: `Standalone Magic Input Device Power Stats`
+      - `TicksPerSecond`: `1000`
+      - `TouchType`: `Opaque`
+      - `Type`: `State`
+      - `Unit`: `Us`
+  - `SupportsActuationLimits`: `False`
+  - `SupportsDeepPress`: `False`
+  - `SupportsGestureScrolling`: `True`
+  - `SupportsSystemHaptics`: `False`
+  - `TrackpadFourFingerGestures`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadSecondaryClickCorners`: `False`
+  - `TrackpadThreeFingerDrag`: `True`
+  - `parser-options`: `7`
+  - `parser-type`: `1001`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `2`
+    - `DeviceUsagePage`: `1`
+- `DoReportIntervalHack`: `True`
+- `HIDAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+  -
+    - `HIDAccelGainCubic`: `5243`
+    - `HIDAccelGainLinear`: `64881`
+    - `HIDAccelGainParabolic`: `32768`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `478413`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+  -
+    - `HIDAccelGainCubic`: `6554`
+    - `HIDAccelGainLinear`: `64225`
+    - `HIDAccelGainParabolic`: `43254`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainCubic`: `7864`
+    - `HIDAccelGainLinear`: `62915`
+    - `HIDAccelGainParabolic`: `54395`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `465306`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainCubic`: `9830`
+    - `HIDAccelGainLinear`: `61604`
+    - `HIDAccelGainParabolic`: `65536`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainCubic`: `11796`
+    - `HIDAccelGainLinear`: `60293`
+    - `HIDAccelGainParabolic`: `75366`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainCubic`: `13763`
+    - `HIDAccelGainLinear`: `58327`
+    - `HIDAccelGainParabolic`: `85197`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainCubic`: `15729`
+    - `HIDAccelGainLinear`: `56361`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  -
+    - `HIDAccelGainCubic`: `18350`
+    - `HIDAccelGainLinear`: `54395`
+    - `HIDAccelGainParabolic`: `108790`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+  -
+    - `HIDAccelGainCubic`: `23593`
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelGainParabolic`: `123208`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDDisallowRemappingOfPrimaryClick`: `True`
+- `HIDPointerAccelerationTable`: `<data 1208 chars>`
+- `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+- `HIDScrollAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `393216`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `62259`
+    - `HIDAccelGainParabolic`: `39322`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `406323`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `58982`
+    - `HIDAccelGainParabolic`: `58982`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `419430`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `55706`
+    - `HIDAccelGainParabolic`: `78643`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `432538`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `52429`
+    - `HIDAccelGainParabolic`: `91750`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `445645`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `49152`
+    - `HIDAccelGainParabolic`: `104858`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `45875`
+    - `HIDAccelGainParabolic`: `117965`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `42598`
+    - `HIDAccelGainParabolic`: `131072`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `39322`
+    - `HIDAccelGainParabolic`: `144179`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `498074`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `36045`
+    - `HIDAccelGainParabolic`: `157286`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `511181`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDScrollAccelerationTable`: `<data 1536 chars>`
+- `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+- `HIDScrollResolution`: `26214400`
+- `HIDServiceSupport`: `False`
+- `IOClass`: `AppleMultitouchTrackpadHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `MTEventSource`: `True`
+- `ProductIDArray`:
+  - `804`
+- `TrackpadEmbedded`: `False`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - ACL - TopCase - 1104
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseDriverV2`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `115`
+    - `DeviceUsagePage`: `32`
+- `IOClass`: `IOHIDProviderPropertyMerger`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDDevice`
+- `IOProviderMergeProperties`:
+  - `SupportsHostMotionNotifications`: `True`
+
+### iPad Magic Keyboard - ACT - TopCase - 1108
+- `CFBundleIdentifier`: `com.apple.driver.AppleActuatorDriver`
+- `DefaultActuatorProperties`:
+  - `ActuatorRevision`: `14`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `13`
+    - `DeviceUsagePage`: `65280`
+- `IOClass`: `AppleActuatorHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `ProductIDArray`:
+  - `1108`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - ACT - TopCase - 1109
+- `CFBundleIdentifier`: `com.apple.driver.AppleActuatorDriver`
+- `DefaultActuatorProperties`:
+  - `ActuatorRevision`: `15`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `13`
+    - `DeviceUsagePage`: `65280`
+- `IOClass`: `AppleActuatorHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `ProductIDArray`:
+  - `1109`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - DM - TopCase - 1104
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LogPowerStateBeforeSleep`: `True`
+- `ProductIDArray`:
+  - `1104`
+- `SupportsCrashlogs`: `1`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - DM - TopCase - 1105
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LogPowerStateBeforeSleep`: `True`
+- `ProductIDArray`:
+  - `1105`
+- `SupportsCrashlogs`: `1`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - DM - TopCase - 1108
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LogPowerStateBeforeSleep`: `True`
+- `MKWakeAnimation`: `extended`
+- `ProductIDArray`:
+  - `1108`
+- `SupportsCrashlogs`: `1`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - DM - TopCase - 1109
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LogPowerStateBeforeSleep`: `True`
+- `MKWakeAnimation`: `extended`
+- `ProductIDArray`:
+  - `1109`
+- `SupportsCrashlogs`: `1`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - DM - TopCase - 1110
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LogPowerStateBeforeSleep`: `True`
+- `ProductIDArray`:
+  - `1110`
+- `SupportsCrashlogs`: `1`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - DM - TopCase - 1111
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LogPowerStateBeforeSleep`: `True`
+- `ProductIDArray`:
+  - `1111`
+- `SupportsCrashlogs`: `1`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - DM - TopCase - 622
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LogPowerStateBeforeSleep`: `True`
+- `ProductIDArray`:
+  - `622`
+- `SupportsCrashlogs`: `1`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - DM - TopCase - 623
+- `Built-In`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+- `HIDServiceSupport`: `True`
+- `IOClass`: `AppleDeviceManagementHIDEventService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `LogPowerStateBeforeSleep`: `True`
+- `ProductIDArray`:
+  - `623`
+- `SupportsCrashlogs`: `1`
+- `SupportsDeviceInfo`: `1`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - KB - TopCase - 1104
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+  - `LockKeyDelay`: `150`
+- `HIDKeyboardSupportsEscKey`: `False`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `KeyboardEnabledByEvent`: `True`
+- `KeyboardEnabledEvent`:
+  - `EventType`: `1`
+  - `Usage`: `2065`
+  - `UsagePage`: `32`
+- `NumLockKeyboardUsageMap`: `0x00070029,0x00070029,0x0007002a,0x0007002a,0x0007002b,0x0007002b,0x0007003a,0x0007003a,0x0007003b,0x0007003b,0x0007003c,0x0007003c,0x0007003d,0x0007003d,0x0007003e,0x0007003e,0x0007003f,0x0007003f,0x00070040,0x00070040,0x00070041,0x00070041,0x00070042,0x00070042,0x00070043,0x00070043,0x00070044,0x00070044,0x00070045,0x00070045,0x0007004a,0x0007004a,0x0007004b,0x0007004b,0x0007004c,0x0007004c,0x0007004d,0x0007004d,0x0007004e,0x0007004e,0x0007004f,0x0007004f,0x00070050,0x00070050,0x00070051,0x00070051,0x00070052,0x00070052,0x0007000d,0x00070059,0x0007000e,0x0007005a,0x0007000f,0x0007005b,0x00070018,0x0007005c,0x0007000c,0x0007005d,0x00070012,0x0007005e,0x00070024,0x0007005f,0x00070025,0x00070060,0x00070026,0x00070061,0x00070010,0x00070062,0x00070037,0x00070063,0x00070082,0x00070082,0x000700e0,0x000700e0,0x000700e1,0x000700e1,0x000700e2,0x000700e2,0x000700e3,0x000700e3,0x000700e4,0x000700e4,0x000700e5,0x000700e5,0x000700e6,0x000700e6,0x000700e7,0x000700e7`
+- `ProductIDArray`:
+  - `1104`
+- `RequiresCompassResetOnConnect`: `True`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - KB - TopCase - 1105
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+  - `LockKeyDelay`: `150`
+- `HIDKeyboardSupportsEscKey`: `False`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `KeyboardEnabledByEvent`: `False`
+- `NumLockKeyboardUsageMap`: `0x00070029,0x00070029,0x0007002a,0x0007002a,0x0007002b,0x0007002b,0x0007003a,0x0007003a,0x0007003b,0x0007003b,0x0007003c,0x0007003c,0x0007003d,0x0007003d,0x0007003e,0x0007003e,0x0007003f,0x0007003f,0x00070040,0x00070040,0x00070041,0x00070041,0x00070042,0x00070042,0x00070043,0x00070043,0x00070044,0x00070044,0x00070045,0x00070045,0x0007004a,0x0007004a,0x0007004b,0x0007004b,0x0007004c,0x0007004c,0x0007004d,0x0007004d,0x0007004e,0x0007004e,0x0007004f,0x0007004f,0x00070050,0x00070050,0x00070051,0x00070051,0x00070052,0x00070052,0x0007000d,0x00070059,0x0007000e,0x0007005a,0x0007000f,0x0007005b,0x00070018,0x0007005c,0x0007000c,0x0007005d,0x00070012,0x0007005e,0x00070024,0x0007005f,0x00070025,0x00070060,0x00070026,0x00070061,0x00070010,0x00070062,0x00070037,0x00070063,0x00070082,0x00070082,0x000700e0,0x000700e0,0x000700e1,0x000700e1,0x000700e2,0x000700e2,0x000700e3,0x000700e3,0x000700e4,0x000700e4,0x000700e5,0x000700e5,0x000700e6,0x000700e6,0x000700e7,0x000700e7`
+- `ProductIDArray`:
+  - `1105`
+- `RequiresCompassResetOnConnect`: `True`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - KB - TopCase - 1108
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+  - `LockKeyDelay`: `100`
+- `HIDKeyboardSupportsEscKey`: `False`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `KeyboardEnabledByEvent`: `False`
+- `NumLockKeyboardUsageMap`: `0x00070029,0x00070029,0x0007002a,0x0007002a,0x0007002b,0x0007002b,0x0007003a,0x0007003a,0x0007003b,0x0007003b,0x0007003c,0x0007003c,0x0007003d,0x0007003d,0x0007003e,0x0007003e,0x0007003f,0x0007003f,0x00070040,0x00070040,0x00070041,0x00070041,0x00070042,0x00070042,0x00070043,0x00070043,0x00070044,0x00070044,0x00070045,0x00070045,0x0007004a,0x0007004a,0x0007004b,0x0007004b,0x0007004c,0x0007004c,0x0007004d,0x0007004d,0x0007004e,0x0007004e,0x0007004f,0x0007004f,0x00070050,0x00070050,0x00070051,0x00070051,0x00070052,0x00070052,0x0007000d,0x00070059,0x0007000e,0x0007005a,0x0007000f,0x0007005b,0x00070018,0x0007005c,0x0007000c,0x0007005d,0x00070012,0x0007005e,0x00070024,0x0007005f,0x00070025,0x00070060,0x00070026,0x00070061,0x00070010,0x00070062,0x00070037,0x00070063,0x00070082,0x00070082,0x000700e0,0x000700e0,0x000700e1,0x000700e1,0x000700e2,0x000700e2,0x000700e3,0x000700e3,0x000700e4,0x000700e4,0x000700e5,0x000700e5,0x000700e6,0x000700e6,0x000700e7,0x000700e7`
+- `ProductIDArray`:
+  - `1108`
+- `RequiresCompassResetOnConnect`: `True`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - KB - TopCase - 1109
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+  - `LockKeyDelay`: `100`
+- `HIDKeyboardSupportsEscKey`: `False`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `KeyboardEnabledByEvent`: `False`
+- `NumLockKeyboardUsageMap`: `0x00070029,0x00070029,0x0007002a,0x0007002a,0x0007002b,0x0007002b,0x0007003a,0x0007003a,0x0007003b,0x0007003b,0x0007003c,0x0007003c,0x0007003d,0x0007003d,0x0007003e,0x0007003e,0x0007003f,0x0007003f,0x00070040,0x00070040,0x00070041,0x00070041,0x00070042,0x00070042,0x00070043,0x00070043,0x00070044,0x00070044,0x00070045,0x00070045,0x0007004a,0x0007004a,0x0007004b,0x0007004b,0x0007004c,0x0007004c,0x0007004d,0x0007004d,0x0007004e,0x0007004e,0x0007004f,0x0007004f,0x00070050,0x00070050,0x00070051,0x00070051,0x00070052,0x00070052,0x0007000d,0x00070059,0x0007000e,0x0007005a,0x0007000f,0x0007005b,0x00070018,0x0007005c,0x0007000c,0x0007005d,0x00070012,0x0007005e,0x00070024,0x0007005f,0x00070025,0x00070060,0x00070026,0x00070061,0x00070010,0x00070062,0x00070037,0x00070063,0x00070082,0x00070082,0x000700e0,0x000700e0,0x000700e1,0x000700e1,0x000700e2,0x000700e2,0x000700e3,0x000700e3,0x000700e4,0x000700e4,0x000700e5,0x000700e5,0x000700e6,0x000700e6,0x000700e7,0x000700e7`
+- `ProductIDArray`:
+  - `1109`
+- `RequiresCompassResetOnConnect`: `True`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - KB - TopCase - 1110
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+  - `LockKeyDelay`: `150`
+- `HIDKeyboardSupportsEscKey`: `False`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `KeyboardEnabledByEvent`: `False`
+- `NumLockKeyboardUsageMap`: `0x00070029,0x00070029,0x0007002a,0x0007002a,0x0007002b,0x0007002b,0x0007003a,0x0007003a,0x0007003b,0x0007003b,0x0007003c,0x0007003c,0x0007003d,0x0007003d,0x0007003e,0x0007003e,0x0007003f,0x0007003f,0x00070040,0x00070040,0x00070041,0x00070041,0x00070042,0x00070042,0x00070043,0x00070043,0x00070044,0x00070044,0x00070045,0x00070045,0x0007004a,0x0007004a,0x0007004b,0x0007004b,0x0007004c,0x0007004c,0x0007004d,0x0007004d,0x0007004e,0x0007004e,0x0007004f,0x0007004f,0x00070050,0x00070050,0x00070051,0x00070051,0x00070052,0x00070052,0x0007000d,0x00070059,0x0007000e,0x0007005a,0x0007000f,0x0007005b,0x00070018,0x0007005c,0x0007000c,0x0007005d,0x00070012,0x0007005e,0x00070024,0x0007005f,0x00070025,0x00070060,0x00070026,0x00070061,0x00070010,0x00070062,0x00070037,0x00070063,0x00070082,0x00070082,0x000700e0,0x000700e0,0x000700e1,0x000700e1,0x000700e2,0x000700e2,0x000700e3,0x000700e3,0x000700e4,0x000700e4,0x000700e5,0x000700e5,0x000700e6,0x000700e6,0x000700e7,0x000700e7`
+- `ProductIDArray`:
+  - `1110`
+- `RequiresCompassResetOnConnect`: `True`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - KB - TopCase - 1111
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+  - `LockKeyDelay`: `150`
+- `HIDKeyboardSupportsEscKey`: `False`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `KeyboardEnabledByEvent`: `False`
+- `NumLockKeyboardUsageMap`: `0x00070029,0x00070029,0x0007002a,0x0007002a,0x0007002b,0x0007002b,0x0007003a,0x0007003a,0x0007003b,0x0007003b,0x0007003c,0x0007003c,0x0007003d,0x0007003d,0x0007003e,0x0007003e,0x0007003f,0x0007003f,0x00070040,0x00070040,0x00070041,0x00070041,0x00070042,0x00070042,0x00070043,0x00070043,0x00070044,0x00070044,0x00070045,0x00070045,0x0007004a,0x0007004a,0x0007004b,0x0007004b,0x0007004c,0x0007004c,0x0007004d,0x0007004d,0x0007004e,0x0007004e,0x0007004f,0x0007004f,0x00070050,0x00070050,0x00070051,0x00070051,0x00070052,0x00070052,0x0007000d,0x00070059,0x0007000e,0x0007005a,0x0007000f,0x0007005b,0x00070018,0x0007005c,0x0007000c,0x0007005d,0x00070012,0x0007005e,0x00070024,0x0007005f,0x00070025,0x00070060,0x00070026,0x00070061,0x00070010,0x00070062,0x00070037,0x00070063,0x00070082,0x00070082,0x000700e0,0x000700e0,0x000700e1,0x000700e1,0x000700e2,0x000700e2,0x000700e3,0x000700e3,0x000700e4,0x000700e4,0x000700e5,0x000700e5,0x000700e6,0x000700e6,0x000700e7,0x000700e7`
+- `ProductIDArray`:
+  - `1111`
+- `RequiresCompassResetOnConnect`: `True`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - KB - TopCase - 622
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+  - `LockKeyDelay`: `150`
+- `HIDKeyboardSupportsEscKey`: `False`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `KeyboardEnabledByEvent`: `False`
+- `NumLockKeyboardUsageMap`: `0x00070029,0x00070029,0x0007002a,0x0007002a,0x0007002b,0x0007002b,0x0007003a,0x0007003a,0x0007003b,0x0007003b,0x0007003c,0x0007003c,0x0007003d,0x0007003d,0x0007003e,0x0007003e,0x0007003f,0x0007003f,0x00070040,0x00070040,0x00070041,0x00070041,0x00070042,0x00070042,0x00070043,0x00070043,0x00070044,0x00070044,0x00070045,0x00070045,0x0007004a,0x0007004a,0x0007004b,0x0007004b,0x0007004c,0x0007004c,0x0007004d,0x0007004d,0x0007004e,0x0007004e,0x0007004f,0x0007004f,0x00070050,0x00070050,0x00070051,0x00070051,0x00070052,0x00070052,0x0007000d,0x00070059,0x0007000e,0x0007005a,0x0007000f,0x0007005b,0x00070018,0x0007005c,0x0007000c,0x0007005d,0x00070012,0x0007005e,0x00070024,0x0007005f,0x00070025,0x00070060,0x00070026,0x00070061,0x00070010,0x00070062,0x00070037,0x00070063,0x00070082,0x00070082,0x000700e0,0x000700e0,0x000700e1,0x000700e1,0x000700e2,0x000700e2,0x000700e3,0x000700e3,0x000700e4,0x000700e4,0x000700e5,0x000700e5,0x000700e6,0x000700e6,0x000700e7,0x000700e7`
+- `ProductIDArray`:
+  - `622`
+- `RequiresCompassResetOnConnect`: `True`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - KB - TopCase - 623
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDKeyboard`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `6`
+    - `DeviceUsagePage`: `1`
+- `FnKeyboardUsageMap`: `0x00070050,0x0007004a,0x00070052,0x0007004b,0x0007002a,0x0007004c,0x0007004f,0x0007004d,0x00070051,0x0007004e,0x00070028,0x00070058`
+- `FnModifierUsage`: `3`
+- `FnModifierUsagePage`: `255`
+- `HIDEventServiceProperties`:
+  - `CapsLockDelay`: `75`
+  - `LockKeyDelay`: `150`
+- `HIDKeyboardSupportsEscKey`: `False`
+- `IOClass`: `AppleHIDKeyboardEventDriverV2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `KeyboardEnabledByEvent`: `False`
+- `NumLockKeyboardUsageMap`: `0x00070029,0x00070029,0x0007002a,0x0007002a,0x0007002b,0x0007002b,0x0007003a,0x0007003a,0x0007003b,0x0007003b,0x0007003c,0x0007003c,0x0007003d,0x0007003d,0x0007003e,0x0007003e,0x0007003f,0x0007003f,0x00070040,0x00070040,0x00070041,0x00070041,0x00070042,0x00070042,0x00070043,0x00070043,0x00070044,0x00070044,0x00070045,0x00070045,0x0007004a,0x0007004a,0x0007004b,0x0007004b,0x0007004c,0x0007004c,0x0007004d,0x0007004d,0x0007004e,0x0007004e,0x0007004f,0x0007004f,0x00070050,0x00070050,0x00070051,0x00070051,0x00070052,0x00070052,0x0007000d,0x00070059,0x0007000e,0x0007005a,0x0007000f,0x0007005b,0x00070018,0x0007005c,0x0007000c,0x0007005d,0x00070012,0x0007005e,0x00070024,0x0007005f,0x00070025,0x00070060,0x00070026,0x00070061,0x00070010,0x00070062,0x00070037,0x00070063,0x00070082,0x00070082,0x000700e0,0x000700e0,0x000700e1,0x000700e1,0x000700e2,0x000700e2,0x000700e3,0x000700e3,0x000700e4,0x000700e4,0x000700e5,0x000700e5,0x000700e6,0x000700e6,0x000700e7,0x000700e7`
+- `ProductIDArray`:
+  - `623`
+- `RequiresCompassResetOnConnect`: `True`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - TP - TopCase - 1104
+- `ApplePreferenceCapability`: `2`
+- `ApplePreferenceIdentifier`: `com.apple.AppleMultitouchTrackpad`
+- `ApplePreferencesDefaultPreferences`:
+  - `ActuateDetents`: `1`
+  - `Clicking`: `0`
+  - `DragLock`: `0`
+  - `Dragging`: `0`
+  - `FirstClickThreshold`: `1`
+  - `ForceSuppressed`: `False`
+  - `SecondClickThreshold`: `1`
+  - `TrackpadCornerSecondaryClick`: `0`
+  - `TrackpadFiveFingerPinchGesture`: `2`
+  - `TrackpadFourFingerHorizSwipeGesture`: `2`
+  - `TrackpadFourFingerPinchGesture`: `2`
+  - `TrackpadFourFingerVertSwipeGesture`: `2`
+  - `TrackpadHorizScroll`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadPinch`: `1`
+  - `TrackpadRightClick`: `True`
+  - `TrackpadRotate`: `1`
+  - `TrackpadScroll`: `True`
+  - `TrackpadThreeFingerDrag`: `False`
+  - `TrackpadThreeFingerHorizSwipeGesture`: `2`
+  - `TrackpadThreeFingerTapGesture`: `0`
+  - `TrackpadThreeFingerVertSwipeGesture`: `2`
+  - `TrackpadTwoFingerDoubleTapGesture`: `1`
+  - `TrackpadTwoFingerFromRightEdgeSwipeGesture`: `3`
+- `BuildAMDWithMTInit`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DefaultMultitouchProperties`:
+  - `ActuationSupported`: `False`
+  - `ForceSupported`: `False`
+  - `HIDAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+    -
+      - `HIDAccelGainCubic`: `5243`
+      - `HIDAccelGainLinear`: `64881`
+      - `HIDAccelGainParabolic`: `32768`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `478413`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+    -
+      - `HIDAccelGainCubic`: `6554`
+      - `HIDAccelGainLinear`: `64225`
+      - `HIDAccelGainParabolic`: `43254`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+    -
+      - `HIDAccelGainCubic`: `7864`
+      - `HIDAccelGainLinear`: `62915`
+      - `HIDAccelGainParabolic`: `54395`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `465306`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+    -
+      - `HIDAccelGainCubic`: `9830`
+      - `HIDAccelGainLinear`: `61604`
+      - `HIDAccelGainParabolic`: `65536`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+    -
+      - `HIDAccelGainCubic`: `11796`
+      - `HIDAccelGainLinear`: `60293`
+      - `HIDAccelGainParabolic`: `75366`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+    -
+      - `HIDAccelGainCubic`: `13763`
+      - `HIDAccelGainLinear`: `58327`
+      - `HIDAccelGainParabolic`: `85197`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+    -
+      - `HIDAccelGainCubic`: `15729`
+      - `HIDAccelGainLinear`: `56361`
+      - `HIDAccelGainParabolic`: `95027`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+    -
+      - `HIDAccelGainCubic`: `18350`
+      - `HIDAccelGainLinear`: `54395`
+      - `HIDAccelGainParabolic`: `108790`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+    -
+      - `HIDAccelGainCubic`: `23593`
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelGainParabolic`: `123208`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDDisallowRemappingOfPrimaryClick`: `True`
+  - `HIDPointerAccelerationTable`: `<data 1294 chars>`
+  - `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+  - `HIDPointerReportRate`: `0`
+  - `HIDScrollAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `393216`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `62259`
+      - `HIDAccelGainParabolic`: `39322`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `406323`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `58982`
+      - `HIDAccelGainParabolic`: `58982`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `419430`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `55706`
+      - `HIDAccelGainParabolic`: `78643`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `432538`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `52429`
+      - `HIDAccelGainParabolic`: `91750`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `445645`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `49152`
+      - `HIDAccelGainParabolic`: `104858`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `45875`
+      - `HIDAccelGainParabolic`: `117965`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `42598`
+      - `HIDAccelGainParabolic`: `131072`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `39322`
+      - `HIDAccelGainParabolic`: `144179`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `498074`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `36045`
+      - `HIDAccelGainParabolic`: `157286`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `511181`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDScrollAccelerationTable`: `<data 1644 chars>`
+  - `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+  - `HIDScrollResolution`: `26214400`
+  - `HIDScrollResolutionX`: `26214400`
+  - `HIDScrollResolutionY`: `26214400`
+  - `HIDScrollResolutionZ`: `26214400`
+  - `HIDServiceSupport`: `True`
+  - `HSTouchHIDService`: `True`
+  - `MT Built-In`: `False`
+  - `MTHIDDevice`: `True`
+  - `MTPowerStatsDisable`: `False`
+  - `NeedsHostState`: `True`
+  - `SupportsGestureScrolling`: `True`
+  - `TrackpadFourFingerGestures`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadSecondaryClickCorners`: `False`
+  - `TrackpadThreeFingerDrag`: `True`
+  - `parser-options`: `135`
+  - `parser-type`: `1001`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `2`
+    - `DeviceUsagePage`: `1`
+- `DoReportIntervalHack`: `True`
+- `HIDAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+  -
+    - `HIDAccelGainCubic`: `5243`
+    - `HIDAccelGainLinear`: `64881`
+    - `HIDAccelGainParabolic`: `32768`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `478413`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+  -
+    - `HIDAccelGainCubic`: `6554`
+    - `HIDAccelGainLinear`: `64225`
+    - `HIDAccelGainParabolic`: `43254`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainCubic`: `7864`
+    - `HIDAccelGainLinear`: `62915`
+    - `HIDAccelGainParabolic`: `54395`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `465306`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainCubic`: `9830`
+    - `HIDAccelGainLinear`: `61604`
+    - `HIDAccelGainParabolic`: `65536`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainCubic`: `11796`
+    - `HIDAccelGainLinear`: `60293`
+    - `HIDAccelGainParabolic`: `75366`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainCubic`: `13763`
+    - `HIDAccelGainLinear`: `58327`
+    - `HIDAccelGainParabolic`: `85197`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainCubic`: `15729`
+    - `HIDAccelGainLinear`: `56361`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  -
+    - `HIDAccelGainCubic`: `18350`
+    - `HIDAccelGainLinear`: `54395`
+    - `HIDAccelGainParabolic`: `108790`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+  -
+    - `HIDAccelGainCubic`: `23593`
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelGainParabolic`: `123208`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDDisallowRemappingOfPrimaryClick`: `True`
+- `HIDPointerAccelerationTable`: `<data 1208 chars>`
+- `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+- `HIDScrollAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `393216`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `62259`
+    - `HIDAccelGainParabolic`: `39322`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `406323`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `58982`
+    - `HIDAccelGainParabolic`: `58982`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `419430`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `55706`
+    - `HIDAccelGainParabolic`: `78643`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `432538`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `52429`
+    - `HIDAccelGainParabolic`: `91750`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `445645`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `49152`
+    - `HIDAccelGainParabolic`: `104858`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `45875`
+    - `HIDAccelGainParabolic`: `117965`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `42598`
+    - `HIDAccelGainParabolic`: `131072`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `39322`
+    - `HIDAccelGainParabolic`: `144179`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `498074`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `36045`
+    - `HIDAccelGainParabolic`: `157286`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `511181`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDScrollAccelerationTable`: `<data 1536 chars>`
+- `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+- `HIDScrollResolution`: `26214400`
+- `HIDServiceSupport`: `False`
+- `IOClass`: `AppleMultitouchTrackpadHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `MTEventSource`: `True`
+- `ProductIDArray`:
+  - `1104`
+- `TrackpadEmbedded`: `False`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - TP - TopCase - 1105
+- `ApplePreferenceCapability`: `2`
+- `ApplePreferenceIdentifier`: `com.apple.AppleMultitouchTrackpad`
+- `ApplePreferencesDefaultPreferences`:
+  - `ActuateDetents`: `1`
+  - `Clicking`: `0`
+  - `DragLock`: `0`
+  - `Dragging`: `0`
+  - `FirstClickThreshold`: `1`
+  - `ForceSuppressed`: `False`
+  - `SecondClickThreshold`: `1`
+  - `TrackpadCornerSecondaryClick`: `0`
+  - `TrackpadFiveFingerPinchGesture`: `2`
+  - `TrackpadFourFingerHorizSwipeGesture`: `2`
+  - `TrackpadFourFingerPinchGesture`: `2`
+  - `TrackpadFourFingerVertSwipeGesture`: `2`
+  - `TrackpadHorizScroll`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadPinch`: `1`
+  - `TrackpadRightClick`: `True`
+  - `TrackpadRotate`: `1`
+  - `TrackpadScroll`: `True`
+  - `TrackpadThreeFingerDrag`: `False`
+  - `TrackpadThreeFingerHorizSwipeGesture`: `2`
+  - `TrackpadThreeFingerTapGesture`: `0`
+  - `TrackpadThreeFingerVertSwipeGesture`: `2`
+  - `TrackpadTwoFingerDoubleTapGesture`: `1`
+  - `TrackpadTwoFingerFromRightEdgeSwipeGesture`: `3`
+- `BuildAMDWithMTInit`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DefaultMultitouchProperties`:
+  - `ActuationSupported`: `False`
+  - `ForceSupported`: `False`
+  - `HIDAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+    -
+      - `HIDAccelGainCubic`: `5243`
+      - `HIDAccelGainLinear`: `64881`
+      - `HIDAccelGainParabolic`: `32768`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `478413`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+    -
+      - `HIDAccelGainCubic`: `6554`
+      - `HIDAccelGainLinear`: `64225`
+      - `HIDAccelGainParabolic`: `43254`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+    -
+      - `HIDAccelGainCubic`: `7864`
+      - `HIDAccelGainLinear`: `62915`
+      - `HIDAccelGainParabolic`: `54395`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `465306`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+    -
+      - `HIDAccelGainCubic`: `9830`
+      - `HIDAccelGainLinear`: `61604`
+      - `HIDAccelGainParabolic`: `65536`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+    -
+      - `HIDAccelGainCubic`: `11796`
+      - `HIDAccelGainLinear`: `60293`
+      - `HIDAccelGainParabolic`: `75366`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+    -
+      - `HIDAccelGainCubic`: `13763`
+      - `HIDAccelGainLinear`: `58327`
+      - `HIDAccelGainParabolic`: `85197`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+    -
+      - `HIDAccelGainCubic`: `15729`
+      - `HIDAccelGainLinear`: `56361`
+      - `HIDAccelGainParabolic`: `95027`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+    -
+      - `HIDAccelGainCubic`: `18350`
+      - `HIDAccelGainLinear`: `54395`
+      - `HIDAccelGainParabolic`: `108790`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+    -
+      - `HIDAccelGainCubic`: `23593`
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelGainParabolic`: `123208`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDDisallowRemappingOfPrimaryClick`: `True`
+  - `HIDPointerAccelerationTable`: `<data 1294 chars>`
+  - `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+  - `HIDPointerReportRate`: `0`
+  - `HIDScrollAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `393216`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `62259`
+      - `HIDAccelGainParabolic`: `39322`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `406323`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `58982`
+      - `HIDAccelGainParabolic`: `58982`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `419430`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `55706`
+      - `HIDAccelGainParabolic`: `78643`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `432538`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `52429`
+      - `HIDAccelGainParabolic`: `91750`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `445645`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `49152`
+      - `HIDAccelGainParabolic`: `104858`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `45875`
+      - `HIDAccelGainParabolic`: `117965`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `42598`
+      - `HIDAccelGainParabolic`: `131072`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `39322`
+      - `HIDAccelGainParabolic`: `144179`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `498074`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `36045`
+      - `HIDAccelGainParabolic`: `157286`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `511181`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDScrollAccelerationTable`: `<data 1644 chars>`
+  - `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+  - `HIDScrollResolution`: `26214400`
+  - `HIDScrollResolutionX`: `26214400`
+  - `HIDScrollResolutionY`: `26214400`
+  - `HIDScrollResolutionZ`: `26214400`
+  - `HIDServiceSupport`: `True`
+  - `HSTouchHIDService`: `True`
+  - `MT Built-In`: `False`
+  - `MTHIDDevice`: `True`
+  - `MTPowerStatsDisable`: `False`
+  - `NeedsHostState`: `True`
+  - `SupportsGestureScrolling`: `True`
+  - `TrackpadFourFingerGestures`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadSecondaryClickCorners`: `False`
+  - `TrackpadThreeFingerDrag`: `True`
+  - `parser-options`: `135`
+  - `parser-type`: `1001`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `2`
+    - `DeviceUsagePage`: `1`
+- `DoReportIntervalHack`: `True`
+- `HIDAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+  -
+    - `HIDAccelGainCubic`: `5243`
+    - `HIDAccelGainLinear`: `64881`
+    - `HIDAccelGainParabolic`: `32768`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `478413`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+  -
+    - `HIDAccelGainCubic`: `6554`
+    - `HIDAccelGainLinear`: `64225`
+    - `HIDAccelGainParabolic`: `43254`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainCubic`: `7864`
+    - `HIDAccelGainLinear`: `62915`
+    - `HIDAccelGainParabolic`: `54395`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `465306`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainCubic`: `9830`
+    - `HIDAccelGainLinear`: `61604`
+    - `HIDAccelGainParabolic`: `65536`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainCubic`: `11796`
+    - `HIDAccelGainLinear`: `60293`
+    - `HIDAccelGainParabolic`: `75366`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainCubic`: `13763`
+    - `HIDAccelGainLinear`: `58327`
+    - `HIDAccelGainParabolic`: `85197`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainCubic`: `15729`
+    - `HIDAccelGainLinear`: `56361`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  -
+    - `HIDAccelGainCubic`: `18350`
+    - `HIDAccelGainLinear`: `54395`
+    - `HIDAccelGainParabolic`: `108790`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+  -
+    - `HIDAccelGainCubic`: `23593`
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelGainParabolic`: `123208`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDDisallowRemappingOfPrimaryClick`: `True`
+- `HIDPointerAccelerationTable`: `<data 1208 chars>`
+- `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+- `HIDScrollAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `393216`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `62259`
+    - `HIDAccelGainParabolic`: `39322`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `406323`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `58982`
+    - `HIDAccelGainParabolic`: `58982`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `419430`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `55706`
+    - `HIDAccelGainParabolic`: `78643`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `432538`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `52429`
+    - `HIDAccelGainParabolic`: `91750`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `445645`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `49152`
+    - `HIDAccelGainParabolic`: `104858`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `45875`
+    - `HIDAccelGainParabolic`: `117965`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `42598`
+    - `HIDAccelGainParabolic`: `131072`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `39322`
+    - `HIDAccelGainParabolic`: `144179`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `498074`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `36045`
+    - `HIDAccelGainParabolic`: `157286`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `511181`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDScrollAccelerationTable`: `<data 1536 chars>`
+- `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+- `HIDScrollResolution`: `26214400`
+- `HIDServiceSupport`: `False`
+- `IOClass`: `AppleMultitouchTrackpadHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `MTEventSource`: `True`
+- `ProductIDArray`:
+  - `1105`
+- `TrackpadEmbedded`: `False`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - TP - TopCase - 1108
+- `ApplePreferenceCapability`: `2`
+- `ApplePreferenceIdentifier`: `com.apple.AppleMultitouchTrackpad`
+- `ApplePreferencesDefaultPreferences`:
+  - `ActuateDetents`: `1`
+  - `Clicking`: `0`
+  - `DragLock`: `0`
+  - `Dragging`: `0`
+  - `FirstClickThreshold`: `1`
+  - `ForceSuppressed`: `False`
+  - `SecondClickThreshold`: `1`
+  - `TrackpadCornerSecondaryClick`: `0`
+  - `TrackpadFiveFingerPinchGesture`: `2`
+  - `TrackpadFourFingerHorizSwipeGesture`: `2`
+  - `TrackpadFourFingerPinchGesture`: `2`
+  - `TrackpadFourFingerVertSwipeGesture`: `2`
+  - `TrackpadHorizScroll`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadPinch`: `1`
+  - `TrackpadRightClick`: `True`
+  - `TrackpadRotate`: `1`
+  - `TrackpadScroll`: `True`
+  - `TrackpadThreeFingerDrag`: `False`
+  - `TrackpadThreeFingerHorizSwipeGesture`: `2`
+  - `TrackpadThreeFingerTapGesture`: `0`
+  - `TrackpadThreeFingerVertSwipeGesture`: `2`
+  - `TrackpadTwoFingerDoubleTapGesture`: `1`
+  - `TrackpadTwoFingerFromRightEdgeSwipeGesture`: `3`
+- `BuildAMDWithMTInit`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DefaultMultitouchProperties`:
+  - `ActuationSupported`: `True`
+  - `DefaultProperties`:
+    - `ContinuousRecordingCaptureHIDEvents`: `True`
+    - `ContinuousRecordingFileSizeInBytes`: `4194304`
+    - `ContinuousRecordingReportIDs`: `117`
+  - `ForceSupported`: `True`
+  - `HIDAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+    -
+      - `HIDAccelGainCubic`: `5243`
+      - `HIDAccelGainLinear`: `64881`
+      - `HIDAccelGainParabolic`: `32768`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `478413`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+    -
+      - `HIDAccelGainCubic`: `6554`
+      - `HIDAccelGainLinear`: `64225`
+      - `HIDAccelGainParabolic`: `43254`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+    -
+      - `HIDAccelGainCubic`: `7864`
+      - `HIDAccelGainLinear`: `62915`
+      - `HIDAccelGainParabolic`: `54395`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `465306`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+    -
+      - `HIDAccelGainCubic`: `9830`
+      - `HIDAccelGainLinear`: `61604`
+      - `HIDAccelGainParabolic`: `65536`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+    -
+      - `HIDAccelGainCubic`: `11796`
+      - `HIDAccelGainLinear`: `60293`
+      - `HIDAccelGainParabolic`: `75366`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+    -
+      - `HIDAccelGainCubic`: `13763`
+      - `HIDAccelGainLinear`: `58327`
+      - `HIDAccelGainParabolic`: `85197`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+    -
+      - `HIDAccelGainCubic`: `15729`
+      - `HIDAccelGainLinear`: `56361`
+      - `HIDAccelGainParabolic`: `95027`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+    -
+      - `HIDAccelGainCubic`: `18350`
+      - `HIDAccelGainLinear`: `54395`
+      - `HIDAccelGainParabolic`: `108790`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+    -
+      - `HIDAccelGainCubic`: `23593`
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelGainParabolic`: `123208`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDDisallowRemappingOfPrimaryClick`: `True`
+  - `HIDPointerAccelerationTable`: `<data 1294 chars>`
+  - `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+  - `HIDPointerReportRate`: `0`
+  - `HIDScrollAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `393216`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `62259`
+      - `HIDAccelGainParabolic`: `39322`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `406323`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `58982`
+      - `HIDAccelGainParabolic`: `58982`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `419430`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `55706`
+      - `HIDAccelGainParabolic`: `78643`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `432538`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `52429`
+      - `HIDAccelGainParabolic`: `91750`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `445645`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `49152`
+      - `HIDAccelGainParabolic`: `104858`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `45875`
+      - `HIDAccelGainParabolic`: `117965`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `42598`
+      - `HIDAccelGainParabolic`: `131072`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `39322`
+      - `HIDAccelGainParabolic`: `144179`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `498074`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `36045`
+      - `HIDAccelGainParabolic`: `157286`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `511181`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDScrollAccelerationTable`: `<data 1644 chars>`
+  - `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+  - `HIDScrollResolution`: `26214400`
+  - `HIDScrollResolutionX`: `26214400`
+  - `HIDScrollResolutionY`: `26214400`
+  - `HIDScrollResolutionZ`: `26214400`
+  - `HIDServiceSupport`: `True`
+  - `HSTouchHIDService`: `True`
+  - `MT Built-In`: `False`
+  - `MTHIDDevice`: `True`
+  - `MTPowerStatsDisable`: `False`
+  - `NeedsHostState`: `True`
+  - `SupportsDeepPress`: `False`
+  - `SupportsGestureScrolling`: `True`
+  - `TrackpadFourFingerGestures`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadSecondaryClickCorners`: `False`
+  - `TrackpadThreeFingerDrag`: `True`
+  - `parser-options`: `135`
+  - `parser-type`: `1001`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `2`
+    - `DeviceUsagePage`: `1`
+- `DoReportIntervalHack`: `True`
+- `HIDAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+  -
+    - `HIDAccelGainCubic`: `5243`
+    - `HIDAccelGainLinear`: `64881`
+    - `HIDAccelGainParabolic`: `32768`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `478413`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+  -
+    - `HIDAccelGainCubic`: `6554`
+    - `HIDAccelGainLinear`: `64225`
+    - `HIDAccelGainParabolic`: `43254`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainCubic`: `7864`
+    - `HIDAccelGainLinear`: `62915`
+    - `HIDAccelGainParabolic`: `54395`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `465306`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainCubic`: `9830`
+    - `HIDAccelGainLinear`: `61604`
+    - `HIDAccelGainParabolic`: `65536`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainCubic`: `11796`
+    - `HIDAccelGainLinear`: `60293`
+    - `HIDAccelGainParabolic`: `75366`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainCubic`: `13763`
+    - `HIDAccelGainLinear`: `58327`
+    - `HIDAccelGainParabolic`: `85197`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainCubic`: `15729`
+    - `HIDAccelGainLinear`: `56361`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  -
+    - `HIDAccelGainCubic`: `18350`
+    - `HIDAccelGainLinear`: `54395`
+    - `HIDAccelGainParabolic`: `108790`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+  -
+    - `HIDAccelGainCubic`: `23593`
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelGainParabolic`: `123208`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDDisallowRemappingOfPrimaryClick`: `True`
+- `HIDPointerAccelerationTable`: `<data 1208 chars>`
+- `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+- `HIDScrollAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `393216`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `62259`
+    - `HIDAccelGainParabolic`: `39322`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `406323`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `58982`
+    - `HIDAccelGainParabolic`: `58982`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `419430`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `55706`
+    - `HIDAccelGainParabolic`: `78643`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `432538`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `52429`
+    - `HIDAccelGainParabolic`: `91750`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `445645`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `49152`
+    - `HIDAccelGainParabolic`: `104858`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `45875`
+    - `HIDAccelGainParabolic`: `117965`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `42598`
+    - `HIDAccelGainParabolic`: `131072`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `39322`
+    - `HIDAccelGainParabolic`: `144179`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `498074`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `36045`
+    - `HIDAccelGainParabolic`: `157286`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `511181`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDScrollAccelerationTable`: `<data 1536 chars>`
+- `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+- `HIDScrollResolution`: `26214400`
+- `HIDServiceSupport`: `False`
+- `IOClass`: `AppleMultitouchTrackpadHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `MTEventSource`: `True`
+- `ProductIDArray`:
+  - `1108`
+- `TrackpadEmbedded`: `False`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - TP - TopCase - 1109
+- `ApplePreferenceCapability`: `2`
+- `ApplePreferenceIdentifier`: `com.apple.AppleMultitouchTrackpad`
+- `ApplePreferencesDefaultPreferences`:
+  - `ActuateDetents`: `1`
+  - `Clicking`: `0`
+  - `DragLock`: `0`
+  - `Dragging`: `0`
+  - `FirstClickThreshold`: `1`
+  - `ForceSuppressed`: `False`
+  - `SecondClickThreshold`: `1`
+  - `TrackpadCornerSecondaryClick`: `0`
+  - `TrackpadFiveFingerPinchGesture`: `2`
+  - `TrackpadFourFingerHorizSwipeGesture`: `2`
+  - `TrackpadFourFingerPinchGesture`: `2`
+  - `TrackpadFourFingerVertSwipeGesture`: `2`
+  - `TrackpadHorizScroll`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadPinch`: `1`
+  - `TrackpadRightClick`: `True`
+  - `TrackpadRotate`: `1`
+  - `TrackpadScroll`: `True`
+  - `TrackpadThreeFingerDrag`: `False`
+  - `TrackpadThreeFingerHorizSwipeGesture`: `2`
+  - `TrackpadThreeFingerTapGesture`: `0`
+  - `TrackpadThreeFingerVertSwipeGesture`: `2`
+  - `TrackpadTwoFingerDoubleTapGesture`: `1`
+  - `TrackpadTwoFingerFromRightEdgeSwipeGesture`: `3`
+- `BuildAMDWithMTInit`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DefaultMultitouchProperties`:
+  - `ActuationSupported`: `True`
+  - `DefaultProperties`:
+    - `ContinuousRecordingCaptureHIDEvents`: `True`
+    - `ContinuousRecordingFileSizeInBytes`: `4194304`
+    - `ContinuousRecordingReportIDs`: `117`
+  - `ForceSupported`: `True`
+  - `HIDAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+    -
+      - `HIDAccelGainCubic`: `5243`
+      - `HIDAccelGainLinear`: `64881`
+      - `HIDAccelGainParabolic`: `32768`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `478413`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+    -
+      - `HIDAccelGainCubic`: `6554`
+      - `HIDAccelGainLinear`: `64225`
+      - `HIDAccelGainParabolic`: `43254`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+    -
+      - `HIDAccelGainCubic`: `7864`
+      - `HIDAccelGainLinear`: `62915`
+      - `HIDAccelGainParabolic`: `54395`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `465306`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+    -
+      - `HIDAccelGainCubic`: `9830`
+      - `HIDAccelGainLinear`: `61604`
+      - `HIDAccelGainParabolic`: `65536`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+    -
+      - `HIDAccelGainCubic`: `11796`
+      - `HIDAccelGainLinear`: `60293`
+      - `HIDAccelGainParabolic`: `75366`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+    -
+      - `HIDAccelGainCubic`: `13763`
+      - `HIDAccelGainLinear`: `58327`
+      - `HIDAccelGainParabolic`: `85197`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+    -
+      - `HIDAccelGainCubic`: `15729`
+      - `HIDAccelGainLinear`: `56361`
+      - `HIDAccelGainParabolic`: `95027`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+    -
+      - `HIDAccelGainCubic`: `18350`
+      - `HIDAccelGainLinear`: `54395`
+      - `HIDAccelGainParabolic`: `108790`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+    -
+      - `HIDAccelGainCubic`: `23593`
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelGainParabolic`: `123208`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDDisallowRemappingOfPrimaryClick`: `True`
+  - `HIDPointerAccelerationTable`: `<data 1294 chars>`
+  - `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+  - `HIDPointerReportRate`: `0`
+  - `HIDScrollAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `393216`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `62259`
+      - `HIDAccelGainParabolic`: `39322`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `406323`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `58982`
+      - `HIDAccelGainParabolic`: `58982`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `419430`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `55706`
+      - `HIDAccelGainParabolic`: `78643`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `432538`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `52429`
+      - `HIDAccelGainParabolic`: `91750`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `445645`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `49152`
+      - `HIDAccelGainParabolic`: `104858`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `45875`
+      - `HIDAccelGainParabolic`: `117965`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `42598`
+      - `HIDAccelGainParabolic`: `131072`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `39322`
+      - `HIDAccelGainParabolic`: `144179`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `498074`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `36045`
+      - `HIDAccelGainParabolic`: `157286`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `511181`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDScrollAccelerationTable`: `<data 1644 chars>`
+  - `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+  - `HIDScrollResolution`: `26214400`
+  - `HIDScrollResolutionX`: `26214400`
+  - `HIDScrollResolutionY`: `26214400`
+  - `HIDScrollResolutionZ`: `26214400`
+  - `HIDServiceSupport`: `True`
+  - `HSTouchHIDService`: `True`
+  - `MT Built-In`: `False`
+  - `MTHIDDevice`: `True`
+  - `MTPowerStatsDisable`: `False`
+  - `NeedsHostState`: `True`
+  - `SupportsDeepPress`: `False`
+  - `SupportsGestureScrolling`: `True`
+  - `TrackpadFourFingerGestures`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadSecondaryClickCorners`: `False`
+  - `TrackpadThreeFingerDrag`: `True`
+  - `parser-options`: `135`
+  - `parser-type`: `1001`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `2`
+    - `DeviceUsagePage`: `1`
+- `DoReportIntervalHack`: `True`
+- `HIDAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+  -
+    - `HIDAccelGainCubic`: `5243`
+    - `HIDAccelGainLinear`: `64881`
+    - `HIDAccelGainParabolic`: `32768`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `478413`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+  -
+    - `HIDAccelGainCubic`: `6554`
+    - `HIDAccelGainLinear`: `64225`
+    - `HIDAccelGainParabolic`: `43254`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainCubic`: `7864`
+    - `HIDAccelGainLinear`: `62915`
+    - `HIDAccelGainParabolic`: `54395`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `465306`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainCubic`: `9830`
+    - `HIDAccelGainLinear`: `61604`
+    - `HIDAccelGainParabolic`: `65536`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainCubic`: `11796`
+    - `HIDAccelGainLinear`: `60293`
+    - `HIDAccelGainParabolic`: `75366`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainCubic`: `13763`
+    - `HIDAccelGainLinear`: `58327`
+    - `HIDAccelGainParabolic`: `85197`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainCubic`: `15729`
+    - `HIDAccelGainLinear`: `56361`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  -
+    - `HIDAccelGainCubic`: `18350`
+    - `HIDAccelGainLinear`: `54395`
+    - `HIDAccelGainParabolic`: `108790`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+  -
+    - `HIDAccelGainCubic`: `23593`
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelGainParabolic`: `123208`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDDisallowRemappingOfPrimaryClick`: `True`
+- `HIDPointerAccelerationTable`: `<data 1208 chars>`
+- `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+- `HIDScrollAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `393216`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `62259`
+    - `HIDAccelGainParabolic`: `39322`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `406323`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `58982`
+    - `HIDAccelGainParabolic`: `58982`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `419430`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `55706`
+    - `HIDAccelGainParabolic`: `78643`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `432538`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `52429`
+    - `HIDAccelGainParabolic`: `91750`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `445645`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `49152`
+    - `HIDAccelGainParabolic`: `104858`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `45875`
+    - `HIDAccelGainParabolic`: `117965`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `42598`
+    - `HIDAccelGainParabolic`: `131072`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `39322`
+    - `HIDAccelGainParabolic`: `144179`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `498074`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `36045`
+    - `HIDAccelGainParabolic`: `157286`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `511181`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDScrollAccelerationTable`: `<data 1536 chars>`
+- `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+- `HIDScrollResolution`: `26214400`
+- `HIDServiceSupport`: `False`
+- `IOClass`: `AppleMultitouchTrackpadHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `MTEventSource`: `True`
+- `ProductIDArray`:
+  - `1109`
+- `TrackpadEmbedded`: `False`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - TP - TopCase - 1110
+- `ApplePreferenceCapability`: `2`
+- `ApplePreferenceIdentifier`: `com.apple.AppleMultitouchTrackpad`
+- `ApplePreferencesDefaultPreferences`:
+  - `ActuateDetents`: `1`
+  - `Clicking`: `0`
+  - `DragLock`: `0`
+  - `Dragging`: `0`
+  - `FirstClickThreshold`: `1`
+  - `ForceSuppressed`: `False`
+  - `SecondClickThreshold`: `1`
+  - `TrackpadCornerSecondaryClick`: `0`
+  - `TrackpadFiveFingerPinchGesture`: `2`
+  - `TrackpadFourFingerHorizSwipeGesture`: `2`
+  - `TrackpadFourFingerPinchGesture`: `2`
+  - `TrackpadFourFingerVertSwipeGesture`: `2`
+  - `TrackpadHorizScroll`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadPinch`: `1`
+  - `TrackpadRightClick`: `True`
+  - `TrackpadRotate`: `1`
+  - `TrackpadScroll`: `True`
+  - `TrackpadThreeFingerDrag`: `False`
+  - `TrackpadThreeFingerHorizSwipeGesture`: `2`
+  - `TrackpadThreeFingerTapGesture`: `0`
+  - `TrackpadThreeFingerVertSwipeGesture`: `2`
+  - `TrackpadTwoFingerDoubleTapGesture`: `1`
+  - `TrackpadTwoFingerFromRightEdgeSwipeGesture`: `3`
+- `BuildAMDWithMTInit`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DefaultMultitouchProperties`:
+  - `ActuationSupported`: `False`
+  - `ForceSupported`: `False`
+  - `HIDAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+    -
+      - `HIDAccelGainCubic`: `5243`
+      - `HIDAccelGainLinear`: `64881`
+      - `HIDAccelGainParabolic`: `32768`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `478413`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+    -
+      - `HIDAccelGainCubic`: `6554`
+      - `HIDAccelGainLinear`: `64225`
+      - `HIDAccelGainParabolic`: `43254`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+    -
+      - `HIDAccelGainCubic`: `7864`
+      - `HIDAccelGainLinear`: `62915`
+      - `HIDAccelGainParabolic`: `54395`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `465306`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+    -
+      - `HIDAccelGainCubic`: `9830`
+      - `HIDAccelGainLinear`: `61604`
+      - `HIDAccelGainParabolic`: `65536`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+    -
+      - `HIDAccelGainCubic`: `11796`
+      - `HIDAccelGainLinear`: `60293`
+      - `HIDAccelGainParabolic`: `75366`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+    -
+      - `HIDAccelGainCubic`: `13763`
+      - `HIDAccelGainLinear`: `58327`
+      - `HIDAccelGainParabolic`: `85197`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+    -
+      - `HIDAccelGainCubic`: `15729`
+      - `HIDAccelGainLinear`: `56361`
+      - `HIDAccelGainParabolic`: `95027`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+    -
+      - `HIDAccelGainCubic`: `18350`
+      - `HIDAccelGainLinear`: `54395`
+      - `HIDAccelGainParabolic`: `108790`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+    -
+      - `HIDAccelGainCubic`: `23593`
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelGainParabolic`: `123208`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDDisallowRemappingOfPrimaryClick`: `True`
+  - `HIDPointerAccelerationTable`: `<data 1294 chars>`
+  - `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+  - `HIDPointerReportRate`: `0`
+  - `HIDScrollAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `393216`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `62259`
+      - `HIDAccelGainParabolic`: `39322`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `406323`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `58982`
+      - `HIDAccelGainParabolic`: `58982`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `419430`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `55706`
+      - `HIDAccelGainParabolic`: `78643`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `432538`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `52429`
+      - `HIDAccelGainParabolic`: `91750`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `445645`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `49152`
+      - `HIDAccelGainParabolic`: `104858`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `45875`
+      - `HIDAccelGainParabolic`: `117965`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `42598`
+      - `HIDAccelGainParabolic`: `131072`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `39322`
+      - `HIDAccelGainParabolic`: `144179`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `498074`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `36045`
+      - `HIDAccelGainParabolic`: `157286`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `511181`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDScrollAccelerationTable`: `<data 1644 chars>`
+  - `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+  - `HIDScrollResolution`: `26214400`
+  - `HIDScrollResolutionX`: `26214400`
+  - `HIDScrollResolutionY`: `26214400`
+  - `HIDScrollResolutionZ`: `26214400`
+  - `HIDServiceSupport`: `True`
+  - `HSTouchHIDService`: `True`
+  - `MT Built-In`: `False`
+  - `MTHIDDevice`: `True`
+  - `MTPowerStatsDisable`: `False`
+  - `NeedsHostState`: `True`
+  - `Reporters`:
+    -
+      - `Category`:
+        - `Power`
+      - `ChannelName`: `R307 Trackpad Power Stats`
+      - `GroupName`: `Multitouch Power Stats`
+      - `PacketFormat`:
+        - `DurationCountLengthBytes`: `8`
+        - `StatePacketOrder`:
+          - `0 Reserved`
+          - `Active`
+          - `Ready`
+          - `3 Reserved`
+          - `4 Reserved`
+          - `5 Reserved`
+          - `6 Reserved`
+          - `7 Reserved`
+          - `FOActive`
+          - `Anticipate`
+          - `DiagActive`
+          - `11 Reserved`
+          - `12 Reserved`
+          - `13 Reserved`
+          - `14 Reserved`
+          - `FOScan`
+        - `TransitionCountLengthBytes`: `2`
+      - `PacketSize`: `{}`
+      - `SubgroupName`: `Standalone Magic Input Device Power Stats`
+      - `TicksPerSecond`: `1000`
+      - `TimeUnit`: `Us`
+      - `TouchType`: `Opaque`
+      - `Type`: `State`
+  - `SupportsGestureScrolling`: `True`
+  - `TrackpadFourFingerGestures`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadSecondaryClickCorners`: `False`
+  - `TrackpadThreeFingerDrag`: `True`
+  - `parser-options`: `135`
+  - `parser-type`: `1001`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `2`
+    - `DeviceUsagePage`: `1`
+- `DoReportIntervalHack`: `True`
+- `HIDAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+  -
+    - `HIDAccelGainCubic`: `5243`
+    - `HIDAccelGainLinear`: `64881`
+    - `HIDAccelGainParabolic`: `32768`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `478413`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+  -
+    - `HIDAccelGainCubic`: `6554`
+    - `HIDAccelGainLinear`: `64225`
+    - `HIDAccelGainParabolic`: `43254`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainCubic`: `7864`
+    - `HIDAccelGainLinear`: `62915`
+    - `HIDAccelGainParabolic`: `54395`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `465306`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainCubic`: `9830`
+    - `HIDAccelGainLinear`: `61604`
+    - `HIDAccelGainParabolic`: `65536`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainCubic`: `11796`
+    - `HIDAccelGainLinear`: `60293`
+    - `HIDAccelGainParabolic`: `75366`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainCubic`: `13763`
+    - `HIDAccelGainLinear`: `58327`
+    - `HIDAccelGainParabolic`: `85197`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainCubic`: `15729`
+    - `HIDAccelGainLinear`: `56361`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  -
+    - `HIDAccelGainCubic`: `18350`
+    - `HIDAccelGainLinear`: `54395`
+    - `HIDAccelGainParabolic`: `108790`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+  -
+    - `HIDAccelGainCubic`: `23593`
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelGainParabolic`: `123208`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDDisallowRemappingOfPrimaryClick`: `True`
+- `HIDPointerAccelerationTable`: `<data 1208 chars>`
+- `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+- `HIDScrollAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `393216`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `62259`
+    - `HIDAccelGainParabolic`: `39322`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `406323`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `58982`
+    - `HIDAccelGainParabolic`: `58982`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `419430`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `55706`
+    - `HIDAccelGainParabolic`: `78643`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `432538`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `52429`
+    - `HIDAccelGainParabolic`: `91750`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `445645`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `49152`
+    - `HIDAccelGainParabolic`: `104858`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `45875`
+    - `HIDAccelGainParabolic`: `117965`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `42598`
+    - `HIDAccelGainParabolic`: `131072`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `39322`
+    - `HIDAccelGainParabolic`: `144179`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `498074`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `36045`
+    - `HIDAccelGainParabolic`: `157286`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `511181`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDScrollAccelerationTable`: `<data 1536 chars>`
+- `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+- `HIDScrollResolution`: `26214400`
+- `HIDServiceSupport`: `False`
+- `IOClass`: `AppleMultitouchTrackpadHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `MTEventSource`: `True`
+- `ProductIDArray`:
+  - `1110`
+- `TrackpadEmbedded`: `False`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - TP - TopCase - 1111
+- `ApplePreferenceCapability`: `2`
+- `ApplePreferenceIdentifier`: `com.apple.AppleMultitouchTrackpad`
+- `ApplePreferencesDefaultPreferences`:
+  - `ActuateDetents`: `1`
+  - `Clicking`: `0`
+  - `DragLock`: `0`
+  - `Dragging`: `0`
+  - `FirstClickThreshold`: `1`
+  - `ForceSuppressed`: `False`
+  - `SecondClickThreshold`: `1`
+  - `TrackpadCornerSecondaryClick`: `0`
+  - `TrackpadFiveFingerPinchGesture`: `2`
+  - `TrackpadFourFingerHorizSwipeGesture`: `2`
+  - `TrackpadFourFingerPinchGesture`: `2`
+  - `TrackpadFourFingerVertSwipeGesture`: `2`
+  - `TrackpadHorizScroll`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadPinch`: `1`
+  - `TrackpadRightClick`: `True`
+  - `TrackpadRotate`: `1`
+  - `TrackpadScroll`: `True`
+  - `TrackpadThreeFingerDrag`: `False`
+  - `TrackpadThreeFingerHorizSwipeGesture`: `2`
+  - `TrackpadThreeFingerTapGesture`: `0`
+  - `TrackpadThreeFingerVertSwipeGesture`: `2`
+  - `TrackpadTwoFingerDoubleTapGesture`: `1`
+  - `TrackpadTwoFingerFromRightEdgeSwipeGesture`: `3`
+- `BuildAMDWithMTInit`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DefaultMultitouchProperties`:
+  - `ActuationSupported`: `False`
+  - `ForceSupported`: `False`
+  - `HIDAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+    -
+      - `HIDAccelGainCubic`: `5243`
+      - `HIDAccelGainLinear`: `64881`
+      - `HIDAccelGainParabolic`: `32768`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `478413`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+    -
+      - `HIDAccelGainCubic`: `6554`
+      - `HIDAccelGainLinear`: `64225`
+      - `HIDAccelGainParabolic`: `43254`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+    -
+      - `HIDAccelGainCubic`: `7864`
+      - `HIDAccelGainLinear`: `62915`
+      - `HIDAccelGainParabolic`: `54395`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `465306`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+    -
+      - `HIDAccelGainCubic`: `9830`
+      - `HIDAccelGainLinear`: `61604`
+      - `HIDAccelGainParabolic`: `65536`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+    -
+      - `HIDAccelGainCubic`: `11796`
+      - `HIDAccelGainLinear`: `60293`
+      - `HIDAccelGainParabolic`: `75366`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+    -
+      - `HIDAccelGainCubic`: `13763`
+      - `HIDAccelGainLinear`: `58327`
+      - `HIDAccelGainParabolic`: `85197`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+    -
+      - `HIDAccelGainCubic`: `15729`
+      - `HIDAccelGainLinear`: `56361`
+      - `HIDAccelGainParabolic`: `95027`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+    -
+      - `HIDAccelGainCubic`: `18350`
+      - `HIDAccelGainLinear`: `54395`
+      - `HIDAccelGainParabolic`: `108790`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+    -
+      - `HIDAccelGainCubic`: `23593`
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelGainParabolic`: `123208`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDDisallowRemappingOfPrimaryClick`: `True`
+  - `HIDPointerAccelerationTable`: `<data 1294 chars>`
+  - `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+  - `HIDPointerReportRate`: `0`
+  - `HIDScrollAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `393216`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `62259`
+      - `HIDAccelGainParabolic`: `39322`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `406323`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `58982`
+      - `HIDAccelGainParabolic`: `58982`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `419430`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `55706`
+      - `HIDAccelGainParabolic`: `78643`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `432538`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `52429`
+      - `HIDAccelGainParabolic`: `91750`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `445645`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `49152`
+      - `HIDAccelGainParabolic`: `104858`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `45875`
+      - `HIDAccelGainParabolic`: `117965`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `42598`
+      - `HIDAccelGainParabolic`: `131072`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `39322`
+      - `HIDAccelGainParabolic`: `144179`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `498074`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `36045`
+      - `HIDAccelGainParabolic`: `157286`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `511181`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDScrollAccelerationTable`: `<data 1644 chars>`
+  - `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+  - `HIDScrollResolution`: `26214400`
+  - `HIDScrollResolutionX`: `26214400`
+  - `HIDScrollResolutionY`: `26214400`
+  - `HIDScrollResolutionZ`: `26214400`
+  - `HIDServiceSupport`: `True`
+  - `HSTouchHIDService`: `True`
+  - `MT Built-In`: `False`
+  - `MTHIDDevice`: `True`
+  - `MTPowerStatsDisable`: `False`
+  - `NeedsHostState`: `True`
+  - `Reporters`:
+    -
+      - `Category`:
+        - `Power`
+      - `ChannelName`: `R337 Trackpad Power Stats`
+      - `GroupName`: `Multitouch Power Stats`
+      - `PacketFormat`:
+        - `DurationCountLengthBytes`: `8`
+        - `StatePacketOrder`:
+          - `0 Reserved`
+          - `Active`
+          - `Ready`
+          - `3 Reserved`
+          - `4 Reserved`
+          - `5 Reserved`
+          - `6 Reserved`
+          - `7 Reserved`
+          - `FOActive`
+          - `Anticipate`
+          - `DiagActive`
+          - `11 Reserved`
+          - `12 Reserved`
+          - `13 Reserved`
+          - `14 Reserved`
+          - `FOScan`
+        - `TransitionCountLengthBytes`: `2`
+      - `PacketSize`: `{}`
+      - `SubgroupName`: `Standalone Magic Input Device Power Stats`
+      - `TicksPerSecond`: `1000`
+      - `TimeUnit`: `Us`
+      - `TouchType`: `Opaque`
+      - `Type`: `State`
+  - `SupportsGestureScrolling`: `True`
+  - `TrackpadFourFingerGestures`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadSecondaryClickCorners`: `False`
+  - `TrackpadThreeFingerDrag`: `True`
+  - `parser-options`: `135`
+  - `parser-type`: `1001`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `2`
+    - `DeviceUsagePage`: `1`
+- `DoReportIntervalHack`: `True`
+- `HIDAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+  -
+    - `HIDAccelGainCubic`: `5243`
+    - `HIDAccelGainLinear`: `64881`
+    - `HIDAccelGainParabolic`: `32768`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `478413`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+  -
+    - `HIDAccelGainCubic`: `6554`
+    - `HIDAccelGainLinear`: `64225`
+    - `HIDAccelGainParabolic`: `43254`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainCubic`: `7864`
+    - `HIDAccelGainLinear`: `62915`
+    - `HIDAccelGainParabolic`: `54395`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `465306`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainCubic`: `9830`
+    - `HIDAccelGainLinear`: `61604`
+    - `HIDAccelGainParabolic`: `65536`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainCubic`: `11796`
+    - `HIDAccelGainLinear`: `60293`
+    - `HIDAccelGainParabolic`: `75366`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainCubic`: `13763`
+    - `HIDAccelGainLinear`: `58327`
+    - `HIDAccelGainParabolic`: `85197`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainCubic`: `15729`
+    - `HIDAccelGainLinear`: `56361`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  -
+    - `HIDAccelGainCubic`: `18350`
+    - `HIDAccelGainLinear`: `54395`
+    - `HIDAccelGainParabolic`: `108790`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+  -
+    - `HIDAccelGainCubic`: `23593`
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelGainParabolic`: `123208`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDDisallowRemappingOfPrimaryClick`: `True`
+- `HIDPointerAccelerationTable`: `<data 1208 chars>`
+- `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+- `HIDScrollAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `393216`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `62259`
+    - `HIDAccelGainParabolic`: `39322`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `406323`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `58982`
+    - `HIDAccelGainParabolic`: `58982`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `419430`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `55706`
+    - `HIDAccelGainParabolic`: `78643`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `432538`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `52429`
+    - `HIDAccelGainParabolic`: `91750`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `445645`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `49152`
+    - `HIDAccelGainParabolic`: `104858`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `45875`
+    - `HIDAccelGainParabolic`: `117965`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `42598`
+    - `HIDAccelGainParabolic`: `131072`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `39322`
+    - `HIDAccelGainParabolic`: `144179`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `498074`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `36045`
+    - `HIDAccelGainParabolic`: `157286`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `511181`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDScrollAccelerationTable`: `<data 1536 chars>`
+- `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+- `HIDScrollResolution`: `26214400`
+- `HIDServiceSupport`: `False`
+- `IOClass`: `AppleMultitouchTrackpadHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `MTEventSource`: `True`
+- `ProductIDArray`:
+  - `1111`
+- `TrackpadEmbedded`: `False`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - TP - TopCase - 622
+- `ApplePreferenceCapability`: `2`
+- `ApplePreferenceIdentifier`: `com.apple.AppleMultitouchTrackpad`
+- `ApplePreferencesDefaultPreferences`:
+  - `ActuateDetents`: `1`
+  - `Clicking`: `0`
+  - `DragLock`: `0`
+  - `Dragging`: `0`
+  - `FirstClickThreshold`: `1`
+  - `ForceSuppressed`: `False`
+  - `SecondClickThreshold`: `1`
+  - `TrackpadCornerSecondaryClick`: `0`
+  - `TrackpadFiveFingerPinchGesture`: `2`
+  - `TrackpadFourFingerHorizSwipeGesture`: `2`
+  - `TrackpadFourFingerPinchGesture`: `2`
+  - `TrackpadFourFingerVertSwipeGesture`: `2`
+  - `TrackpadHorizScroll`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadPinch`: `1`
+  - `TrackpadRightClick`: `True`
+  - `TrackpadRotate`: `1`
+  - `TrackpadScroll`: `True`
+  - `TrackpadThreeFingerDrag`: `False`
+  - `TrackpadThreeFingerHorizSwipeGesture`: `2`
+  - `TrackpadThreeFingerTapGesture`: `0`
+  - `TrackpadThreeFingerVertSwipeGesture`: `2`
+  - `TrackpadTwoFingerDoubleTapGesture`: `1`
+  - `TrackpadTwoFingerFromRightEdgeSwipeGesture`: `3`
+- `BuildAMDWithMTInit`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DefaultMultitouchProperties`:
+  - `ActuationSupported`: `False`
+  - `ForceSupported`: `False`
+  - `HIDAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+    -
+      - `HIDAccelGainCubic`: `5243`
+      - `HIDAccelGainLinear`: `64881`
+      - `HIDAccelGainParabolic`: `32768`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `478413`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+    -
+      - `HIDAccelGainCubic`: `6554`
+      - `HIDAccelGainLinear`: `64225`
+      - `HIDAccelGainParabolic`: `43254`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+    -
+      - `HIDAccelGainCubic`: `7864`
+      - `HIDAccelGainLinear`: `62915`
+      - `HIDAccelGainParabolic`: `54395`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `465306`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+    -
+      - `HIDAccelGainCubic`: `9830`
+      - `HIDAccelGainLinear`: `61604`
+      - `HIDAccelGainParabolic`: `65536`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+    -
+      - `HIDAccelGainCubic`: `11796`
+      - `HIDAccelGainLinear`: `60293`
+      - `HIDAccelGainParabolic`: `75366`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+    -
+      - `HIDAccelGainCubic`: `13763`
+      - `HIDAccelGainLinear`: `58327`
+      - `HIDAccelGainParabolic`: `85197`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+    -
+      - `HIDAccelGainCubic`: `15729`
+      - `HIDAccelGainLinear`: `56361`
+      - `HIDAccelGainParabolic`: `95027`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+    -
+      - `HIDAccelGainCubic`: `18350`
+      - `HIDAccelGainLinear`: `54395`
+      - `HIDAccelGainParabolic`: `108790`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+    -
+      - `HIDAccelGainCubic`: `23593`
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelGainParabolic`: `123208`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDDisallowRemappingOfPrimaryClick`: `True`
+  - `HIDPointerAccelerationTable`: `<data 1294 chars>`
+  - `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+  - `HIDPointerReportRate`: `0`
+  - `HIDScrollAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `393216`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `62259`
+      - `HIDAccelGainParabolic`: `39322`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `406323`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `58982`
+      - `HIDAccelGainParabolic`: `58982`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `419430`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `55706`
+      - `HIDAccelGainParabolic`: `78643`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `432538`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `52429`
+      - `HIDAccelGainParabolic`: `91750`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `445645`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `49152`
+      - `HIDAccelGainParabolic`: `104858`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `45875`
+      - `HIDAccelGainParabolic`: `117965`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `42598`
+      - `HIDAccelGainParabolic`: `131072`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `39322`
+      - `HIDAccelGainParabolic`: `144179`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `498074`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `36045`
+      - `HIDAccelGainParabolic`: `157286`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `511181`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDScrollAccelerationTable`: `<data 1644 chars>`
+  - `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+  - `HIDScrollResolution`: `26214400`
+  - `HIDScrollResolutionX`: `26214400`
+  - `HIDScrollResolutionY`: `26214400`
+  - `HIDScrollResolutionZ`: `26214400`
+  - `HIDServiceSupport`: `True`
+  - `HSTouchHIDService`: `True`
+  - `MT Built-In`: `False`
+  - `MTHIDDevice`: `True`
+  - `MTPowerStatsDisable`: `False`
+  - `NeedsHostState`: `True`
+  - `SupportsGestureScrolling`: `True`
+  - `TrackpadFourFingerGestures`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadSecondaryClickCorners`: `False`
+  - `TrackpadThreeFingerDrag`: `True`
+  - `parser-options`: `135`
+  - `parser-type`: `1001`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `2`
+    - `DeviceUsagePage`: `1`
+- `DoReportIntervalHack`: `True`
+- `HIDAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+  -
+    - `HIDAccelGainCubic`: `5243`
+    - `HIDAccelGainLinear`: `64881`
+    - `HIDAccelGainParabolic`: `32768`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `478413`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+  -
+    - `HIDAccelGainCubic`: `6554`
+    - `HIDAccelGainLinear`: `64225`
+    - `HIDAccelGainParabolic`: `43254`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainCubic`: `7864`
+    - `HIDAccelGainLinear`: `62915`
+    - `HIDAccelGainParabolic`: `54395`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `465306`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainCubic`: `9830`
+    - `HIDAccelGainLinear`: `61604`
+    - `HIDAccelGainParabolic`: `65536`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainCubic`: `11796`
+    - `HIDAccelGainLinear`: `60293`
+    - `HIDAccelGainParabolic`: `75366`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainCubic`: `13763`
+    - `HIDAccelGainLinear`: `58327`
+    - `HIDAccelGainParabolic`: `85197`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainCubic`: `15729`
+    - `HIDAccelGainLinear`: `56361`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  -
+    - `HIDAccelGainCubic`: `18350`
+    - `HIDAccelGainLinear`: `54395`
+    - `HIDAccelGainParabolic`: `108790`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+  -
+    - `HIDAccelGainCubic`: `23593`
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelGainParabolic`: `123208`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDDisallowRemappingOfPrimaryClick`: `True`
+- `HIDPointerAccelerationTable`: `<data 1208 chars>`
+- `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+- `HIDScrollAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `393216`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `62259`
+    - `HIDAccelGainParabolic`: `39322`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `406323`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `58982`
+    - `HIDAccelGainParabolic`: `58982`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `419430`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `55706`
+    - `HIDAccelGainParabolic`: `78643`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `432538`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `52429`
+    - `HIDAccelGainParabolic`: `91750`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `445645`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `49152`
+    - `HIDAccelGainParabolic`: `104858`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `45875`
+    - `HIDAccelGainParabolic`: `117965`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `42598`
+    - `HIDAccelGainParabolic`: `131072`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `39322`
+    - `HIDAccelGainParabolic`: `144179`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `498074`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `36045`
+    - `HIDAccelGainParabolic`: `157286`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `511181`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDScrollAccelerationTable`: `<data 1536 chars>`
+- `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+- `HIDScrollResolution`: `26214400`
+- `HIDServiceSupport`: `False`
+- `IOClass`: `AppleMultitouchTrackpadHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `MTEventSource`: `True`
+- `ProductIDArray`:
+  - `622`
+- `TrackpadEmbedded`: `False`
+- `VendorID`: `1452`
+
+### iPad Magic Keyboard - TP - TopCase - 623
+- `ApplePreferenceCapability`: `2`
+- `ApplePreferenceIdentifier`: `com.apple.AppleMultitouchTrackpad`
+- `ApplePreferencesDefaultPreferences`:
+  - `ActuateDetents`: `1`
+  - `Clicking`: `0`
+  - `DragLock`: `0`
+  - `Dragging`: `0`
+  - `FirstClickThreshold`: `1`
+  - `ForceSuppressed`: `False`
+  - `SecondClickThreshold`: `1`
+  - `TrackpadCornerSecondaryClick`: `0`
+  - `TrackpadFiveFingerPinchGesture`: `2`
+  - `TrackpadFourFingerHorizSwipeGesture`: `2`
+  - `TrackpadFourFingerPinchGesture`: `2`
+  - `TrackpadFourFingerVertSwipeGesture`: `2`
+  - `TrackpadHorizScroll`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadPinch`: `1`
+  - `TrackpadRightClick`: `True`
+  - `TrackpadRotate`: `1`
+  - `TrackpadScroll`: `True`
+  - `TrackpadThreeFingerDrag`: `False`
+  - `TrackpadThreeFingerHorizSwipeGesture`: `2`
+  - `TrackpadThreeFingerTapGesture`: `0`
+  - `TrackpadThreeFingerVertSwipeGesture`: `2`
+  - `TrackpadTwoFingerDoubleTapGesture`: `1`
+  - `TrackpadTwoFingerFromRightEdgeSwipeGesture`: `3`
+- `BuildAMDWithMTInit`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseHIDEventDriver`
+- `DefaultMultitouchProperties`:
+  - `ActuationSupported`: `False`
+  - `ForceSupported`: `False`
+  - `HIDAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+    -
+      - `HIDAccelGainCubic`: `5243`
+      - `HIDAccelGainLinear`: `64881`
+      - `HIDAccelGainParabolic`: `32768`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `478413`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+    -
+      - `HIDAccelGainCubic`: `6554`
+      - `HIDAccelGainLinear`: `64225`
+      - `HIDAccelGainParabolic`: `43254`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+    -
+      - `HIDAccelGainCubic`: `7864`
+      - `HIDAccelGainLinear`: `62915`
+      - `HIDAccelGainParabolic`: `54395`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `465306`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+    -
+      - `HIDAccelGainCubic`: `9830`
+      - `HIDAccelGainLinear`: `61604`
+      - `HIDAccelGainParabolic`: `65536`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+    -
+      - `HIDAccelGainCubic`: `11796`
+      - `HIDAccelGainLinear`: `60293`
+      - `HIDAccelGainParabolic`: `75366`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+    -
+      - `HIDAccelGainCubic`: `13763`
+      - `HIDAccelGainLinear`: `58327`
+      - `HIDAccelGainParabolic`: `85197`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+    -
+      - `HIDAccelGainCubic`: `15729`
+      - `HIDAccelGainLinear`: `56361`
+      - `HIDAccelGainParabolic`: `95027`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+    -
+      - `HIDAccelGainCubic`: `18350`
+      - `HIDAccelGainLinear`: `54395`
+      - `HIDAccelGainParabolic`: `108790`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+    -
+      - `HIDAccelGainCubic`: `23593`
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelGainParabolic`: `123208`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDDisallowRemappingOfPrimaryClick`: `True`
+  - `HIDPointerAccelerationTable`: `<data 1294 chars>`
+  - `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+  - `HIDPointerReportRate`: `0`
+  - `HIDScrollAccelCurves`:
+    -
+      - `HIDAccelGainLinear`: `65536`
+      - `HIDAccelIndex`: `0`
+      - `HIDAccelTangentSpeedLinear`: `393216`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `62259`
+      - `HIDAccelGainParabolic`: `39322`
+      - `HIDAccelIndex`: `8192`
+      - `HIDAccelTangentSpeedLinear`: `406323`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `58982`
+      - `HIDAccelGainParabolic`: `58982`
+      - `HIDAccelIndex`: `32768`
+      - `HIDAccelTangentSpeedLinear`: `419430`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `55706`
+      - `HIDAccelGainParabolic`: `78643`
+      - `HIDAccelIndex`: `45056`
+      - `HIDAccelTangentSpeedLinear`: `432538`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `52429`
+      - `HIDAccelGainParabolic`: `91750`
+      - `HIDAccelIndex`: `57344`
+      - `HIDAccelTangentSpeedLinear`: `445645`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `49152`
+      - `HIDAccelGainParabolic`: `104858`
+      - `HIDAccelIndex`: `65536`
+      - `HIDAccelTangentSpeedLinear`: `458752`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `45875`
+      - `HIDAccelGainParabolic`: `117965`
+      - `HIDAccelIndex`: `98304`
+      - `HIDAccelTangentSpeedLinear`: `471859`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `42598`
+      - `HIDAccelGainParabolic`: `131072`
+      - `HIDAccelIndex`: `131072`
+      - `HIDAccelTangentSpeedLinear`: `484966`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `39322`
+      - `HIDAccelGainParabolic`: `144179`
+      - `HIDAccelIndex`: `163840`
+      - `HIDAccelTangentSpeedLinear`: `498074`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+    -
+      - `HIDAccelGainLinear`: `36045`
+      - `HIDAccelGainParabolic`: `157286`
+      - `HIDAccelIndex`: `196608`
+      - `HIDAccelTangentSpeedLinear`: `511181`
+      - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  - `HIDScrollAccelerationTable`: `<data 1644 chars>`
+  - `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+  - `HIDScrollResolution`: `26214400`
+  - `HIDScrollResolutionX`: `26214400`
+  - `HIDScrollResolutionY`: `26214400`
+  - `HIDScrollResolutionZ`: `26214400`
+  - `HIDServiceSupport`: `True`
+  - `HSTouchHIDService`: `True`
+  - `MT Built-In`: `False`
+  - `MTHIDDevice`: `True`
+  - `MTPowerStatsDisable`: `False`
+  - `NeedsHostState`: `True`
+  - `SupportsGestureScrolling`: `True`
+  - `TrackpadFourFingerGestures`: `True`
+  - `TrackpadMomentumScroll`: `True`
+  - `TrackpadSecondaryClickCorners`: `False`
+  - `TrackpadThreeFingerDrag`: `True`
+  - `parser-options`: `135`
+  - `parser-type`: `1001`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `2`
+    - `DeviceUsagePage`: `1`
+- `DoReportIntervalHack`: `True`
+- `HIDAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1376256`
+  -
+    - `HIDAccelGainCubic`: `5243`
+    - `HIDAccelGainLinear`: `64881`
+    - `HIDAccelGainParabolic`: `32768`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `478413`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1310720`
+  -
+    - `HIDAccelGainCubic`: `6554`
+    - `HIDAccelGainLinear`: `64225`
+    - `HIDAccelGainParabolic`: `43254`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1245184`
+  -
+    - `HIDAccelGainCubic`: `7864`
+    - `HIDAccelGainLinear`: `62915`
+    - `HIDAccelGainParabolic`: `54395`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `465306`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1179648`
+  -
+    - `HIDAccelGainCubic`: `9830`
+    - `HIDAccelGainLinear`: `61604`
+    - `HIDAccelGainParabolic`: `65536`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1114112`
+  -
+    - `HIDAccelGainCubic`: `11796`
+    - `HIDAccelGainLinear`: `60293`
+    - `HIDAccelGainParabolic`: `75366`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `1048576`
+  -
+    - `HIDAccelGainCubic`: `13763`
+    - `HIDAccelGainLinear`: `58327`
+    - `HIDAccelGainParabolic`: `85197`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `983040`
+  -
+    - `HIDAccelGainCubic`: `15729`
+    - `HIDAccelGainLinear`: `56361`
+    - `HIDAccelGainParabolic`: `95027`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `917504`
+  -
+    - `HIDAccelGainCubic`: `18350`
+    - `HIDAccelGainLinear`: `54395`
+    - `HIDAccelGainParabolic`: `108790`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `851968`
+  -
+    - `HIDAccelGainCubic`: `23593`
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelGainParabolic`: `123208`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDDisallowRemappingOfPrimaryClick`: `True`
+- `HIDPointerAccelerationTable`: `<data 1208 chars>`
+- `HIDPointerAccelerationType`: `HIDTrackpadAcceleration`
+- `HIDScrollAccelCurves`:
+  -
+    - `HIDAccelGainLinear`: `65536`
+    - `HIDAccelIndex`: `0`
+    - `HIDAccelTangentSpeedLinear`: `393216`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `62259`
+    - `HIDAccelGainParabolic`: `39322`
+    - `HIDAccelIndex`: `8192`
+    - `HIDAccelTangentSpeedLinear`: `406323`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `58982`
+    - `HIDAccelGainParabolic`: `58982`
+    - `HIDAccelIndex`: `32768`
+    - `HIDAccelTangentSpeedLinear`: `419430`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `55706`
+    - `HIDAccelGainParabolic`: `78643`
+    - `HIDAccelIndex`: `45056`
+    - `HIDAccelTangentSpeedLinear`: `432538`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `52429`
+    - `HIDAccelGainParabolic`: `91750`
+    - `HIDAccelIndex`: `57344`
+    - `HIDAccelTangentSpeedLinear`: `445645`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `49152`
+    - `HIDAccelGainParabolic`: `104858`
+    - `HIDAccelIndex`: `65536`
+    - `HIDAccelTangentSpeedLinear`: `458752`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `45875`
+    - `HIDAccelGainParabolic`: `117965`
+    - `HIDAccelIndex`: `98304`
+    - `HIDAccelTangentSpeedLinear`: `471859`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `42598`
+    - `HIDAccelGainParabolic`: `131072`
+    - `HIDAccelIndex`: `131072`
+    - `HIDAccelTangentSpeedLinear`: `484966`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `39322`
+    - `HIDAccelGainParabolic`: `144179`
+    - `HIDAccelIndex`: `163840`
+    - `HIDAccelTangentSpeedLinear`: `498074`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+  -
+    - `HIDAccelGainLinear`: `36045`
+    - `HIDAccelGainParabolic`: `157286`
+    - `HIDAccelIndex`: `196608`
+    - `HIDAccelTangentSpeedLinear`: `511181`
+    - `HIDAccelTangentSpeedParabolicRoot`: `786432`
+- `HIDScrollAccelerationTable`: `<data 1536 chars>`
+- `HIDScrollAccelerationType`: `HIDTrackpadScrollAcceleration`
+- `HIDScrollResolution`: `26214400`
+- `HIDServiceSupport`: `False`
+- `IOClass`: `AppleMultitouchTrackpadHIDEventDriver`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleTopCaseDriverV2`
+- `IOProviderClass`: `IOHIDInterface`
+- `MTEventSource`: `True`
+- `ProductIDArray`:
+  - `623`
+- `TrackpadEmbedded`: `False`
+- `VendorID`: `1452`
+
+
+## C++ classes (0) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+
+## Mach-O layout [KC]
+
+```
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleIdentifier`: `com.apple.driver.AppleTopCaseDriverV2`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleTopCaseDriverV2`
+- `CFBundleNumericVersion`: `0`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1000.22`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1000.22`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2021 Apple Inc. All rights reserved.`
+- `OSBundleRequired`: `Console`
+- `OSBundleTeamIdentifier`: `Apple`
+- `UIDeviceFamily`:
+  - `1`
+- `_CodelessKextBundlePath`: `/AppleInternal/Library/BuildRoots/4~CbSsugDd6Vzrmw5PxM2UX4EQEXBKHmg55wGjQvA/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/System/Library/Extensions/AppleTopCase.kext/PlugIns/AppleTopCaseDriverV2.kext`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleTopCase.kext/PlugIns/AppleTopCaseDriverV2.kext`
+- `_PrelinkExecutableLoadAddr`: `9223372036854775807`
+- `_PrelinkExecutableSourceAddr`: `9223372036854775807`
+- `kOSBundleDextUniqueIdentifier`: `<data 52 chars>`
+
+## Strings (0) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.

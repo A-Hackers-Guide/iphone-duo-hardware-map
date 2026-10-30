@@ -1,0 +1,1482 @@
+# `/System/Library/PrivateFrameworks/H16ISPServices.framework/H16ISPServices`
+
+iOS 27.2 dyld shared cache image. Version `6.104.0.0.0`. **[DSC]**
+
+## Linked libraries (10)
+
+- `/System/Library/Frameworks/CoreMedia.framework/CoreMedia`
+- `/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics`
+- `/System/Library/PrivateFrameworks/CMCaptureCore.framework/CMCaptureCore`
+- `/System/Library/PrivateFrameworks/CMCaptureDevice.framework/CMCaptureDevice`
+- `/usr/lib/libIOAccessoryManager.dylib`
+- `/System/Library/PrivateFrameworks/Tightbeam.framework/Tightbeam`
+- `/System/Library/Frameworks/ImageIO.framework/ImageIO`
+- `/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation`
+- `/usr/lib/libc++.1.dylib`
+- `/usr/lib/libSystem.B.dylib`
+
+## Strings (1,461)
+
+```
+Shared YCC Histogram
+fdAWBDebug.continuousFDTimes
+initial_rgLogRatio
+earlyOutMeasurementLimit_bayerY_hiir_f0
+Frame metadata could not be formatted.\n
+stageDetectStatus
+localHistBlockCntY
+volt1
+afAvgScoreHistory_bayerY_hiir_f0
+<name>
+Shared LTM LUTs
+ispQuadraBinFactor
+flashMainFlashLux
+faceFoundDuringLastScan
+drcBrightAmplLimit
+focusBandHighWin
+sphereMeanY
+CCM row 0
+lsModulationWeight
+numAFTilesY
+fdInfo[0].z
+totalCropWidth
+validBufRectStill.y
+x
+flickerWaveMatch[1]
+sensorBlkOffset[3]
+lastFocusedScore_bayerY_3x3_f1
+lastFocusedScore_bayerY_15x3_bpf_f0
+strobeID
+validBufRectPreviewSecondary.y
+slowSyncWeightedAveFlashOffLux
+version
+calibStatus
+focusNowHintPreFlashFW
+motionSumGb
+iirStrength
+exposureStabilityCountTh
+matrixUsedDefaultLensPos
+Shared YCC Proc
+als2HistoryProfileID
+tnrMetaVersion
+bottomPadding
+temp1
+masterCam
+Shared Auto Focus
+Shared SideBand
+rawInputBitDepth
+renderedRawValidRectY
+earlyOutMeasurementLimit_bayerY_3x3_f1
+Apple H16 MetaData\n
+Shared BES Proc
+bodyAverage
+frameCount
+dI_delta_infDnCal_to_hyperFocal_fwdac
+Shared BodyDetector
+totalCropWidthSecondary
+bestScanPos
+focusNowHintFW_Latched_FrameCount
+triggeredScanStopTime
+sensorConfigurationOriginal
+snfTNRFilterStrength
+fdAFWinSize
+prevGravity_z
+focusBandAvgCurr[16]
+linearityBlack
+numConsecutiveDecreaseInMeasurement_bayerY_3x3_f0
+pflErrorUm
+Shared SIFR
+setfileMainVersion
+sphereExternalOffsetY
+colorHistEnabled
+preFlashMaxScore
+accelMinSample
+cropXScaler1
+fdAWBDebug.prevWhitePointCenter[1]
+cscCoeffs row 2
+focusDelayCountTh
+bCaptureNowDeltaLastFocusScanTime
+MeteringMode
+FIDValidFrame
+thumbnailWindow
+isIr
+focalLengthPinhole
+flashTargetMainFlashLux
+sqrtToneCurveEnable
+focusScanSearchPositionsToSet
+sifOutCropRectWidth
+lastFdAFWindowID
+cscCoeffs row 1
+hallOffsetTrim[0]
+lutsCountY
+thumbnailEnable[0]
+stereogmcValid
+earlyOutMeasurementLimit_rawR_7x1_hfir
+apsOffsetEstCorrection
+motionFromAEMatrix
+sceneLuxLevel
+fdAWBDebug.prevSkinColorCenter[0]
+sensorBlkOffset[0]
+mbnrMode
+postureCorrectionY
+samplesStd
+Shared FID DCN Debug
+raw8
+renderedRawTotalSensorCropRectX
+slaveCamera-wbGain.[3]
+nfTNRFilterStrength
+fdInfo[0].score
+numResults
+triggeredScanTotalTime
+ispTorchOnTimeStamp
+statBinH
+AE stable
+slowSyncFacePreFlashLux
+statWindowWidth
+fdInfo[0].roll
+focusScanPeakPrediction
+afScoreHistory_rawR_7x1_hfir
+Shared RGB Proc
+validBufRectPreviewPrimary.x
+avgWindowEvalBrightnessValid
+snfWBGain[0]
+ctfBeta
+earlyOutMeasurementLimit_bayerY_15x3_bpf_f0
+tensorAfWindowID[16]
+totalCropHeight
+sensorBlkAvgFiltered[0]
+neutralHallPosition[1]
+fdInfo[0].x
+focusNowHintFW_ConcurrentTrigger
+raw14
+colorProcValidRectHeight
+fdAWBDebug.prevSkinColorCenter[1]
+localHistEnable
+softDGain
+state
+Shared APS
+adjustedWeight0
+stageAccumulatedDetect
+focusLockStartTime
+totalCropHeightSecondary
+bodyDetected
+Debug parameters for fdAE metering
+thumbnailDownsampleY
+emCoupling[0]
+gmcNumOfPoints
+bayerY2Rcoeff_Gr[16]
+lastSlaveWindowID
+lsNormSelect
+BHistEndX
+colorIntrinsicsEFL
+afScores_bayerY_15x3_bpf_f0
+afScores_bayerY_hiir_f0
+conversionGain
+faceHeight
+flashMainFlashLuxFull
+warmupStrength
+subMode
+currIRScore
+numConsecutiveDecreaseInMeasurement_bayerY_3x3_f1
+cropYScaler1
+sphereCtrlErrX
+sphereExternalOffsetX
+wideCamZoomFactorScaler0
+darkOutlierCount
+stable
+drcWhite
+offset
+fodProb
+sessionID
+avgWindowEvalBrightness[32x16]
+earlyOutMeasurementLimit
+drcAttenuationCoefPrevious
+delay
+hwErrors[0]
+enrollStatus
+FHS2to1Enabled
+rawAverage[Gr]
+overallASscore
+colorIntrinsicsPPY
+tapToFocusMode
+afScoreHistory_rawB_7x1_hfir
+rawDMASrcCropHeight
+...
+validBufRectStill.height
+flickerConfidence[1]
+slaveCamera-CCM row 2
+snfRecursiveMode
+postureCorrectionX
+SR_T_rawR_7x1_hfir
+moduleYear
+fesCropHeight
+outputPaddingRows
+RGBEstimate[1]
+thumbnailEnable[3]
+pdeImageHeight
+msafUpdate
+triggeredScanStartTime
+metadata version (dot)
+data
+flashLEDOffBrightness
+focusNowCommandTag
+drcRoundModeCr
+focusOperation_FrameCount
+focusNowHintFW_ConcurrentTriggered
+accelMaxSample
+Shared AF FocusMap
+bracketingExpRatio
+sceneLuxLevelHigh
+tileRegionWidth
+localHistBlockSizeY
+AfPixSum2Enable
+numConsecutiveDecreaseInMeasurement_bayerY_15x3_bpf_f0
+pdafActive
+totalCropX
+faceBlockX1
+gainToCeiling
+cropWidthScaler1
+StatsBlock
+validBufRectStill.x
+sceneXl
+matrixEarlyOutThreshold
+fdInfo[0].width
+preFlashMaxScoreIndex
+lastFocusedScore_bayerY_hiir_f0
+Shared Projector
+adjustedWeight1
+adjustedAve1
+clutEnable
+allowEarlyOutAtStart
+afAvgScoreHistory_bayerY_3x3_f0
+afScoreHistory_bayerY_15x3_bpf_f1
+ledID
+setFileSubVersion SubMinor
+aeShutterTimeNext
+RGBEstimate[0]
+currNRUseCase
+cxyY
+numSlaves
+afGravityZHistory[16]
+Shared Stats
+ambientLuxLevel
+fdRect[3]
+motionLUTUpdated
+gnuKnobValue
+localHistBlockCntX
+currAFScore_bayerY_3x3_f0
+afScoreHistory_bayerY_hiir_f0
+Shared APS Stats
+validBufRectPreviewSecondary.width
+sensorBlkAvgFiltered[3]
+binSize1
+infinityPos
+focusNowHintFW_RangeRestrictedRemapSearchPos
+crcInfo
+linearityWhite
+dpcEnabledInRaw
+snfSensorAGain
+saturationKnobLevel
+sampleStd
+pdafDisparityOffset
+\t
+sensorSerialNum
+lux.scale
+nfAGain
+numAFTilesX
+gmcRotZ
+afScores_rawGb_7x1_hfir
+Value
+apsPFL
+apsPositionOfsCorr
+drcDarkAmplLimit
+af_3x3_filter_idx
+sensorBlackLevel
+sphereMeanCurrent
+historySumAvg
+stereogmcScoreBefore
+isSifrFrameDecimated
+s1
+drcVarianceSpace
+fdInfo[0].pitch
+LTCError
+on
+sifDMACompanding
+AC line flicker frequency
+afScoreHistory_bayerY_viir_f0
+ch1
+Shared DMA Config
+ispDGain
+roiType
+fdAWBDebug.prevWhitePointCenter[0]
+drcStrengthPrevious
+accelSamplesStd
+rgGain
+ltmRectEndY
+gmcValid
+maxAcceptableGravityVectorAngleTh
+edgeGbValidPixPercent[16]
+ispPreflashOnTimeStamp
+knobDPCLevel
+sensorBlkAvg[4]
+strobeThrottlePct
+matrixPercentile
+emCoupling[1]
+probeMode
+afScores_bayerY_15x3_bpf_f1
+green-blue
+sifOutCropRectX
+afTileStartY
+SR_T_bayerY_viir_f0
+List
+DnPerLuxSec
+meteringMode
+slowSyncMainflashDuration
+sensorBlkAvgInstantaneous[0]
+drcBlack
+thumbnailEnable row 0
+colorExtrinsicsLocationY
+Image capture time-stamp
+setFileHeader specialCase
+shiftParamsRefOffsetY
+weightOutOfBand
+focusBandLowNegativeOverrideTh
+bpfBayerYValidPixPercent[16]
+hrGainDownRatio
+green-red
+width
+bHistEnabled
+pdpImageHeight
+faceIRWidth
+currGravity_x
+lastFocusedScore
+rawAverage[R]
+sensorBlkAvg[2]
+isDataPadded
+raw12
+cropYScaler
+bodyWeight
+knobBCFLevel
+pdpLensPosY
+leftPadding
+bd[]
+gmcScoreAfter
+laKnobStatus[CISP_KNOB_COLOR_SUPPRESSION]
+ctfStrengthMotionY
+drcEnabled
+focusBandLowTh
+strobeCCTEstimate
+sensorReadOutCropWidth
+lscSplittingEnabled
+motionSumB
+luma
+Shared OIS
+Shared CBAF Debug
+flashCapture
+fwRepositories
+adjustedTarget1
+hwErrors[1]
+focusTriggerConsecutiveOutOfBandFrameCountTh
+numberOfFocusPixelLocationDescriptors
+Shared FD DCN Debug
+Y'CbCr 4:2:2
+slowSyncD1
+AE tile stat windows brightness data
+lsModulationIndex
+AWBStatsUpdated
+ltmGridOffsetY
+nfTargetBrightness
+general
+YCCProcBlock
+curr2
+acceptableFocusBandsSet
+currAFScore_bayerY_15x3_bpf_f1
+earlyOutMeasurementLimit_rawGr_7x1_hfir
+afScanStartTime
+slaveCamera-bgCalGain
+afTileStartX
+OIS Metadata Version
+detectedSpoofing
+scanCount
+bayerYSumBandLowNegativeOverrideTh
+ambientLuxLevelLow
+als2HistoryIIRcounter
+s0
+ltmLocked
+numConsecutiveDecreaseInMeasurement_rawR_7x1_hfir
+cropHeightScaler1
+continuousFocusEnabled
+ToneCurveLocked
+earlyOut_bayerY_hiir_f0
+depthMeasureConfidence
+teleFOVUpperRightY
+exposureMode
+fIDFlowType
+hrUpdated
+sensorBlkAvgInstantaneous[1]
+enableChroma
+ltmGlobalCurve
+gdcMem
+sifOutCropRectHeight
+validBufRectPreviewPrimary.height
+AEStatsUpdated
+eit
+alsMethod
+tnrPreviousGlobalMotionAdjusted
+lutEntries
+currAFScore_bayerY_hiir_f0
+cropXScaler
+grayworldWBGain[2]
+historySumGr
+bayerYSumBandAvgRef[16]
+frameSkippingInterval
+lsModulationEnabled
+sceneLuxLevelLow
+af_viir_filter_idx
+zTargetUmFromDepth
+rawDMASrcCropX
+pdpFocusDistance
+chroma
+verifyStatus
+Shared FocusPixel
+sensorValidRectWidth
+matrixUseWindow
+mode
+afBayerGrSumPerWindow[16]
+afGravityXHistory[16]
+ 
+fwToolChain
+sensorTemperature
+secondWBGain[3]
+PFLScale
+Shared LTC Data
+metadata version (minor)
+cropWidth
+besScaler0OutEffectWindowY
+pdafStatus
+localHistBlockSizeX
+micronsToB[1]
+fdInfo[0].y
+fullResHeight
+teleFOVLowerRightX
+slowSyncGain
+stageAverage
+valid
+ctfStrengthGainX
+yshBrightnessAdj
+aeShutterTime
+RGGB
+knobSNFLevel
+fdInfo[0].poseScore
+irIntrinsicsPPX
+numConsecutiveDecreaseInMeasurement_bayerY_viir_f0
+triggeredScanFrameCount
+isHREnabled
+sceneTarget
+snfSensorGain
+af_bpf_f1_filter_idx
+imageOrientation
+bTNRAveraging
+AWBWindowsEnable
+nbrOfBD
+rfcDataType
+afScores_rawB_7x1_hfir
+matrixParamsToSet_tensorAfBestPosSelectMode
+focusTriggerCBAFSceneChangeDeclaredTime
+curScanPosition
+TNR Data
+BHistEndY
+rgHeight
+faceIRY
+afBayerRSumPerWindow[16]
+contextMode
+fdAFWinStartX
+LocalHist Data
+gravity[2]
+bayerYSumBandStdRef[16]
+focusStableCount
+afBayerGbSumPerWindow[16]
+Shared Powersupply
+linOutputBitDepth
+BackEnd
+oneFrameAEMode
+toneCurveCoeff
+GDCEnabled
+thumbnailEnable[1]
+currGravity_y
+Shared LocalHist
+panoBaseEit
+snfEV0Ratio
+gravityChange
+matrixParamsToSet_emptyWindowThreshold
+afAvgScoreHistory_bayerY_15x3_bpf_f0
+focusNowHintFW_PDAFCorrRemapSearchPos
+edgeRValidPixPercent[16]
+Shared Reduced APS
+statusPrevFrame
+faceWeight
+brightOutlierCount
+pflEstimatorLowError
+sceneBrightnessForLux
+fullResWidth
+Adaptive Tone Curve
+curveUpdate
+motionSample
+pdeImageWidth
+camOrientationIndex
+Shared Input
+frame counter
+basic_string
+lowCCTrgBias
+apsModeInUse
+fpcEnabledInRaw
+sensorBlkAvg[0]
+projectorExtrinsicsLocationY
+Shared FID DCN
+binning 1/4
+fodResult
+knobTFLevel
+earlyOut_rawGr_7x1_hfir
+earlyOutMeasurementLimit_rawB_7x1_hfir
+bayerYSumBandLowWin[16]
+afGravityYHistory[16]
+Shared Output
+Shared LTM
+0x
+sensorQuadraBinFactor
+luxLevelHigh
+flashPreFlashFaceCount
+sensorBlkOffset[2]
+thumbnailData
+previewScaler
+slowSyncAveDiff
+fdAWBDebug.skinColorSampleNum
+bcfEnabledInRaw
+thumbnailEnable[2]
+slaveChannelId
+colorExtrinsicsLocationX
+focusOperation_MaxGravityVectorAngle
+zoomFactorColorProcTap
+mbnrConfig[%d]
+rgWidth
+startPos
+afAvgScoreHistory_bayerY_15x3_bpf_f1
+afScoreHistory_bayerY_3x3_f0
+earlyOutMeasurementLimit_rawGb_7x1_hfir
+currentTargetPosition
+renderedRawValidRectHeight
+targetSceneBrightness
+stageConf
+hallOffsetTrim[1]
+afAvgScoreHistory_rawR_7x1_hfir
+bCaptureNowStartTime
+triggeredScanFrameRate
+y
+outOfBandCount
+focusTriggerOutOfBandWinPercentile
+zTgtUm_LFAF
+sensorID
+cropHeightScaler
+previewOutputHeightScaler1
+chromaOffsetH
+validBufRectPreviewPrimary.width
+faceBodyCombinedAve
+snfNLMeanEn
+staticDistCxyY
+focusID
+FPDPass
+macroPos
+numConsecutiveDecreaseInMeasurement_rawB_7x1_hfir
+weightFocusStable
+off
+binning disabled
+previewZoomFactorScaler1
+flickerConfidence[0]
+NormaDxToCanoncialDisparityOffset
+ispTorchOffTimeStamp
+statPreScalerRatioY
+afWinStartX[16]
+edgeGrValidPixPercent[16]
+flashTargetMainFlashBrightness
+yshKnobLevel
+gmcScoreBefore
+luminanceStableCount
+H16ISP Test Application
+validBufRectPreviewPrimary.y
+alsTParameter
+rawAverage[Gb]
+ctfStrengthMotionX
+afScores_bayerY_3x3_f1
+earlyOut_rawR_7x1_hfir
+fesOutHeight
+slowSyncFaceFlashOffLux
+thumbnailWindowHeight
+BHistBinSize
+preFlashFocusThreshold
+strobeLEDCalibData
+fdAWBChistMixFactor
+lrsHeight
+gmcResult
+filterIdxPerWindow
+zTargetDACFromDepth
+lastFdAFWindow.width
+bgGain
+ispFootRoomRAW14
+faceIRValid
+lastFocusedScore_rawR_7x1_hfir
+zTgtLogical_LFAF
+ch0[%03d]
+setFileHeader Integrator
+wellCapacity
+flickerFrequency[0]
+localHistBinSize
+focusRangeRestrictionNearValue
+infDn_fwdac
+maxSample
+rawPixelFormat
+colorProcValidRectX
+besScaler0OutEffectWindowH
+faceBlockX0
+snfISPDGain
+cropWindowPDEX
+cropWindowPDEY
+focusDelayCount
+fdRect[2]
+curr3
+BHistEnable
+regType
+focusBandStdRef[16]
+bodyY0
+adjustedTarget0
+AFStatsUpdated
+floatAFWinID
+firstWBGain[3]
+grayworldWBGain[0]
+sizeAEWindows
+focusBandHighTh
+sensorTemperatureFraction
+cameraBuild
+laKnobStatus[CISP_KNOB_CHROMA_NR]
+slaveCamera-CCTestimate
+SR_T_bayerY_15x3_bpf_f1
+aeAverage
+snowSceneConfHist
+cscCoeffs row 0
+stereogmcResult
+validBufRectStill.width
+CCTEstimate
+camOrientationHistory
+maxScanAngle
+FigMotionComputeAverageSpherePosition
+ev0Ratio
+bodyBlockX1
+lowCCTbgBias
+renderedRawValidRectWidth
+numTilesX
+fdAFWindowID
+AEWindowsEnable
+FocusPixel Data
+micronsToB[0]
+projectorExtrinsicsRotation2
+Header
+timeStampFrequency
+timeMachineIdx
+fdAFWinStartY
+prevGravity_y
+afAvgScoreHistory_bayerY_3x3_f1
+intrinsicsPPCurrentConfig[1]
+\n
+Shared RAW Proc
+apsObjectDistance
+sensorDGain
+fIDPowerProfile
+tfEnabled
+focusBandWeightWin
+</value>
+fpnsWindow
+FigMotionISPHallDataFromCFData
+teleFOVLowerLeftY
+CCM row 1
+focusBandAvgPrev[16]
+matrixPeak
+ltmGridIntYStillYUV
+afScores_bayerY_viir_f0
+channel
+Shared Attention Debug
+setFileHeader project
+renderedRawValidRectX
+fullyExposed
+flashPreflashBrightness
+focusNowHintFW_Latched
+Shared VisionProc
+lscTableSource
+height
+lastFocusingMethod
+snfSensorDGain
+tempYogi
+floatAFWinSize
+BHistData
+pdafTargetPosition
+frameRate
+oneShot
+aeWindowEnabled
+matrixParamsToSet_percentile
+moduleDayofWeek
+pdafConfidence
+lutsCountYPadded
+lastFocusedScore_bayerY_viir_f0
+sifrRatio
+cropY
+bodyWidth
+flickerDetectorState
+usePrevFrameWP
+comboWBGain[0]
+setFileSubVersion Minor
+previewOutputWidthScaler0
+faceX0
+slowSyncWeightedAveDiff
+hrEnable
+totGain
+staticDistCxyX
+slaveDataValid
+laKnobStatus[CISP_KNOB_DRC_STRENGTH]
+ltmCCMEnabled
+binSize
+autofocusDampingGel
+SR_T_bayerY_hiir_f0
+sifrBinHeight
+depthValue
+ch0
+luxLevel
+radiansFromXtoB[1]
+LTC
+sensorReadOutCropHeight
+statBufferSizeTotal
+lastFocusedScore_rawGb_7x1_hfir
+pflErrorUmTransient
+fesOutWidth
+previewOutputHeightScaler0
+flickerFrequency[1]
+matrixWindowCount
+matrixWindowID
+synTagLTM
+fpnsEnable
+configID
+hiCCTrgBias
+hwEvents
+ltmRectStartY
+oscarTimeStamp
+apsSampleCount
+curr4
+Shared TNR
+colorProcTotalSensorCropHeight
+offsetEstCalDone
+AFWindowsEnable
+focusOperation_currGz
+focusLockCurrentTime
+faceBodyCombinedWeight
+FigMotionCalculateAdjustedLensPosition
+teleFOVLowerLeftX
+faceAverage
+secondGainBlockDisable
+vcmSensitivity
+stereogmcRotZ
+shiftParamsS2dCoefB
+ISOBase
+teleFOVUpperRightX
+awbWindowEnabled
+tempActDIE
+yes
+AFWindowEdgeSum
+slaveCamera-rgCalGain
+ltmEnable
+thumbnailStartX
+currAFScore_rawGr_7x1_hfir
+afAvgScoreHistory_bayerY_viir_f0
+earlyOut_bayerY_15x3_bpf_f0
+laKnobStatus[CISP_KNOB_SHARPNESS]
+bracketingCapture
+faceBlockY0
+useTileStats
+fdAWBDebug.colorHistOverlappingRatio
+numConsecutiveDecreaseInMeasurement_rawGb_7x1_hfir
+AFAssistVersion
+cbafSNR
+sphereStatus
+RGBY
+bFlickerDetected
+pdaf
+ltmGridOffsetX
+localHistWindow
+thumbnailEnable[5]
+PPYOffset
+faceIRHeight
+afScores_rawR_7x1_hfir
+afScanTotalTime
+Shared Debug
+sphereMode
+matrixLensPos
+lastFdAFWindow.y
+BHistStartX
+isLFAFDataValid
+moduleLensID
+bHistSelSrcRGBY
+sizeHistSelBin
+slowSyncGainObject
+strength[%d]
+sizeAWBWindows
+PPXOffset
+moduleWorkWeek
+scale
+Shared Auto Exposure
+setFileHeader mainVersion
+bodyBlockY1
+Current focus position
+ccmDataCnt
+preFlashEmptyFocusBand
+Shared Motion Stats
+teleFOVUpperLeftX
+apsStabilityFlags
+linear
+sensorDGainNext
+lastAfWindowUsedInRaw
+tempIdleNTC
+count
+sifOutCropRectY
+sizeAFWindows
+gravity[0]
+matrixParamsToSet_earlyOutDecrementAmount
+afAvgScoreHistory_rawB_7x1_hfir
+afScoreHistory_rawGb_7x1_hfir
+focusLockDeltaTime
+no
+curSceneBrightnessEstimate
+lastFdAFWindow.x
+snfHDRRatio
+drcAsymmetryFunctionLUT
+radiansFromXtoH[0]
+infUp_fwdac
+AELocked
+slowSyncGainBackground
+totGainDown
+afScoreHistory_rawGr_7x1_hfir
+ch1[%03d]
+sensorFirstPix
+fdAWBDebug.skinColorSampleVariance
+Shared AiCam
+unpacked
+aeAGC
+snfRadialGainEn
+sphereDampingGel
+PPDPass
+afScanStopTime
+preBracketing
+ccmDesatBlending
+b2y_R_coeff
+ch2
+zoomFactorScaler1
+macroUp
+, 
+ltmLatency
+afTileWidth
+nearPos
+FigMotionGetSensorValidCropRect
+afAvgScoreHistory
+sensorBlkOffset[1]
+stereogmcRotX
+minGravityChange
+sphereCtrlErrY
+apsPFLOffset
+splitPDOn
+afWindowEnabled
+keypointEnabled
+currGravity_z
+afScoreHistory_bayerY_3x3_f1
+isWindowDetected
+pdafDefocusDAC
+ch2[%03d]
+rawHeight
+readNoise_8x
+dynamicBLCEnabled
+temp2
+prevGravity_x
+afAvgScoreHistory_rawGb_7x1_hfir
+pdafDisparityScale
+strobeNTCStatus
+colorProcTotalSensorCropX
+currSnowSceneHistIndex
+pdpGravity
+lutsCountX
+earlyOutMeasurementLimit_bayerY_viir_f0
+rawDMASrcCropWidth
+readOutTime
+Shared VIS
+Shared MasterSlave AF
+red
+snfBinMode
+projectorExtrinsicsLocationX
+focusTriggerAfAccelerationThreshold
+fesCropWidth
+teleFOVUpperLeftY
+relativeEntropy
+adjustedWeight2
+aeMode
+fpcEnabled
+tileRegionHeight
+stereogmcRotY
+NormaDxToCanoncialDisparityMultiplier
+isSifrOn
+fwLinkedTime
+roiRects
+thumbnailStartY
+earlyOut_bayerY_15x3_bpf_f1
+Shared Multi Slave
+sensorBlkAvg[1]
+focusTriggerPDAFCorrMuteHintStatus
+sensorSifrBayerBinFactor
+hdrConfig
+totalCropXSecondary
+aeLimitsReached
+expBiasCommandTag
+luxLevelLow
+logicalOLPosFromCurrentDAC
+whiteWeight
+csKnobLevel
+Shared VIS Info
+BodyDetector Debug
+output block
+motionAvg
+shiftParamsRefOffsetX
+irIntrinsicsEFL
+laKnobStatus[CISP_KNOB_COLOR_SATURATION]
+flickerWaveMatch[0]
+timeStamp
+focusTriggerActualStartTime
+Apple H16 Metadata\n
+flashCaptureSequence
+fdRect[1]
+BHistStartY
+b2y_B_coeff
+faceBlockY1
+motionFromStatsY
+tempStbDIE
+stereogmcScoreAfter
+numNonZeroSizedAFWindows
+SR_T_rawB_7x1_hfir
+apsDDF
+matrixEarlyOutDecrementAmount
+matrixWindow
+curr0
+gravityChangeTemporalIirBlendFactor
+bayerYSumBandStableTh[16]
+bracketingCaptureCount
+aeBlend
+snfWBGain[1]
+volt2
+currentCamOrientationAngleIndex
+besScaler0OutEffectWindowW
+cscOffsets
+nfSceneBrightness
+preFlashMinScoreIndex
+SR_T_rawGr_7x1_hfir
+bayerYSumBandLowTh
+Shared Auto White Balance
+bSifDMACompress
+maxAdjustment
+historySumGb
+WBGain[3]
+SR_T_rawGb_7x1_hfir
+zoomFactorScaler0
+colorProcTotalSensorCropWidth
+snfTableSel
+pixsizeMM
+aeStable
+ispPreflashOffTimeStamp
+colorProcValidRectWidth
+renderedRawTotalSensorCropRectHeight
+manualCCTCommandTag
+Debug Data
+horizontalScanStartPosition
+</value>\n
+FigMotionGetISPHallData
+total number of descriptors
+RGBProcBlock
+isHistWPValid
+hrCounter
+pdpImageWidth
+focusMappingSlope0
+currAFScore_rawR_7x1_hfir
+sphereBoostMode
+backlit
+sensorBlkAvgInstantaneous[2]
+afTileHeight
+thumbnailWindowWidth
+apsPixPFL
+SR_T_bayerY_15x3_bpf_f0
+af_actuator_sensitivity_um_per_fwdac
+currAFScore
+ltmRectStartX
+tempActNTC
+preflashParamsSet
+rawDMASrcCropY
+timeStampHRProcessStart
+thumbnailEnable[4]
+goodForOnlineAdaptation
+FocusWindow
+FigMotionComputeAverageSpherePositionForTimes
+vcmStartStepDACValid
+apsEFL
+statPreScalerRatioX
+log2
+flashDualProcessType
+withValidData
+rfcIdx
+currentTargetPosDac
+rawAverage[B]
+RGBEstimate[2]
+Slave
+stereogmcNumOfPoints
+Shared Depth to Position Debug
+cropHeight
+bodyX0
+oisSampleCount
+fdInfo[0].yaw
+faceIRDepth
+numConsecutiveDecreaseInMeasurement_bayerY_15x3_bpf_f1
+numConsecutiveDecreaseInMeasurement_rawGr_7x1_hfir
+tempStbNTC
+currDepthScore
+isUserEngaged
+shiftParamsS2dCoefC
+newAFStatsEnabled
+pdafFocusPosition
+depthValueMm
+sensorValidRectY
+previewZoomFactorScaler0
+AWBLocked
+filterStrength
+distCxyX
+gmcRotY
+upscaleFactor
+bayerYSumBandDelayHistory[16][7]
+rawTapPoint
+slowSyncIsSlowSync
+focusingMethod
+alsEnabled
+awbColorspace
+nfISPDGain
+compHist1Enabled
+tileOffsetX
+Shared HITH
+topPadding
+flags
+cropWindow[]
+earlyOut_bayerY_3x3_f1
+bayerY2Bcoeff_Gb[16]
+FigMotionComputePrincipalPoint
+flashPreflashLux
+focusScanMode
+hasFinalScore
+lastFocusedScore_rawB_7x1_hfir
+FigMotionAdjustPointForSphereMovement
+Shared PDAFHW Debug
+totalCropY
+aeAGCNext
+packType
+maxColorCalGainDown
+cnrKnobLevel
+bayerY2Rcoeff_Gb[16]
+overrideDefaultPosition
+pflCorrectionUm
+Shared FPC
+afFocusMoving
+fdRect[0]
+sensorBlkOffset[4]
+ltmGridIntY
+drcRoundModeCb
+strobeCurrentMain
+validBufRectPreviewSecondary.x
+dpmFrameID
+stageLastFreshScoreFrameID
+ambientLuxLevelHigh
+pdpLensPosX
+ltmGridIntX
+lceKnobLevel
+apsPosition
+sensorBlkAvgFiltered[2]
+drcRoundModeY
+counter
+tempIdleDIE
+expBias
+ispDGainNext
+grayworldWBGain[1]
+slaveCamera-comboWBGain.[3]
+hToMicrons[0]
+afCurrentPosition
+projectorExtrinsicsRotation1
+focusBandLowWin
+renderedRawTotalSensorCropRectY
+lastFocusedPosition
+drcKnobLevel
+throttle
+matrixParamsToSet_earlyOutThreshold
+    
+No additional frame metadata.\n
+Shared Auto Focus Assist Debug
+AfPixSumEnable
+bayerY2Gcoeff_Gr[16]
+info
+FigMotionISPMotionDataFromCFData
+apsOffsetApplied
+afScores
+slaveCamera-CCM row 1
+statWindowHeight
+currAFScore_rawGb_7x1_hfir
+Shared CRC Check
+afBayerYSumPerWindow[16]
+fwVersion
+maxPixelValue
+previewOutputWidthScaler1
+bodyConf
+matrixWeight
+fdAWBDebug.firstValidFDFrame
+AfValidCountEnable
+focusBandAvgRef[16]
+strobeCurrentMax
+fesCropX
+bracketingCaptureEVStop
+level
+focusNowHintFW
+bracketingCaptureLast
+snfWBGain[2]
+packed
+bodyHeight
+afScoreHistory
+pdpFocusDistanceModel
+fdAFWinID
+focusNowHintFW_Latched_FrameCountTh
+pflCorrectionUm_FDR
+readNoise_1x
+manualFocusCommandTag
+manualAWBGainCommandTag
+motionSampleCount
+preFlashMinScore
+apsMode
+manualExposureGainCommandTag
+nfSensorDGain
+gmcRotX
+colorIntrinsicsPPX
+afScoreHistory_bayerY_15x3_bpf_f0
+rawWidth
+sensorReadOutCropY
+totalCropYSecondary
+aeShutterTime (us)
+comboWBGain[2]
+irIntrinsicsPPY
+earlyOutMeasurementLimit_bayerY_15x3_bpf_f1
+bayerYSumBandHighTh
+metadata version (major)
+setFileSubVersion Major
+sensorValidRectX
+bayerYSumBandHighWin[16]
+afBayerBSumPerWindow[16]
+AFWinBrightnessNormalizationEnable[16]
+ltmDataCnt
+colorExtrinsicsLocationZ
+colorProcTotalSensorCropY
+adjustedAve2
+fdAWBDebug.minDistSkinToWhiteMapping
+timeStampHRProcessEnd
+cellWeight
+afScores_rawGr_7x1_hfir
+focusRangeRestrictionFarValue
+rangeExpansionGain
+peakTracking
+neutralHallPosition[0]
+focusBandDelayHistory[16][7]
+Shared System
+flashSequenceNum
+currAFScore_bayerY_3x3_f1
+isSubBandEnable
+sensorValidRectHeight
+floatAFWinScore
+comboWBGainNormalized[1]
+fdInfo[0].height
+lastFocusedScore_bayerY_15x3_bpf_f1
+matrixParamsToSet_snrPercentileThLimit
+hdrRatio
+VIS Data
+temp4
+faceIRX
+focusBandStableTh
+Shared FD DCN
+Shared AiCam Debug
+comboWBGainNormalized[2]
+derivedVector
+outputWidth
+af_hiir_filter_idx
+status
+bodyBlockY0
+cropWidthScaler
+rawBufferStride
+validBufRectPreviewSecondary.height
+sceneXh
+focusMode
+manualPositionInProgress
+lutsCountXPadded
+gravityIndex
+bodyBlockX0
+Shared OIS Stats
+binWidth
+focusingState
+R'G'B'
+synTagWBG
+startupCalStatus
+fdAWBOutput
+ispTimeStamp
+lastFocusedScore_rawGr_7x1_hfir
+apsTemperature
+fodValidData
+numTilesY
+afWindowInRaw
+hToMicrons[1]
+apsSample
+afWinStartY[16]
+stageWeight
+tnrAverageMode
+AeAwbPosSumEnable
+visMetaVersion
+cropWindowPDEWidth
+gravity[1]
+focusOperation_currGy
+syncTag
+pdafEnabled
+pdafDefocus
+snfAttnEn
+volt3
+PPDValid
+PPDErrors
+projectorExtrinsicsRotation0
+binningMode
+statBinV
+flashLEDOffLux
+sideband
+focusMappingSlope1
+afAvgScoreHistory_rawGr_7x1_hfir
+earlyOut_bayerY_3x3_f0
+edgeBayerYValidPixPercent[16]
+tfEnabledInRaw
+matrixEmptyWindowThreshold
+earlyOut_rawB_7x1_hfir
+oneShotDuringFlash
+sampleCount
+panoAEExpRatio
+vcmStartStepDAC
+nbrOfSlice
+intrinsicsEFL
+splitPDEnabled
+isValidDepthData
+Shared Attention
+ltmRectEndX
+ltmGridIntXStillYUV
+volt4
+outputHeight
+sensorSifrQuadraBinFactor
+<value>
+cropX
+fesCropY
+gamutSizeIndex
+PSB8DepthBin0LastACC
+sphereMeanX
+faceY0
+bcfEnabled
+ctfStrengthGainY
+bayerY2Bcoeff_Gr[16]
+Face tracking AF window
+historySumR
+distCxyY
+bestDepthScore
+bayerYSumBandAvgPrev[16]
+weightLuminanceStable
+Shared Distortion
+setFileHeader sensor
+besScaler0OutEffectWindowX
+lastFocusedScore_bayerY_3x3_f0
+af_bpf_f0_filter_idx
+binning 1/2
+binningGainFactor
+configMode
+Histogram metadata
+pdpFocusPos
+chromaOffsetV
+slowSyncD2
+synTagGamma
+focusOperation_currGx
+totalGain
+save2File
+preSceneBrightness
+curr1
+tensorAFMode
+Shared Calibration
+teleFOVLowerRightY
+exposureStableCount
+sifrBinWidth
+apsFieldCalOffset
+captureFrameType
+black
+comboWBGainNormalized[0]
+nfKnobLevel
+cxyX
+bayerY2Gcoeff_Gb[16]
+motionSumGr
+lrsEnabled
+currAFScore_rawB_7x1_hfir
+gyroMaxSample
+hiCCTbgBias
+output format
+slowSyncAveFlashOffLux
+CCM row 2
+sensorBlkAvgInstantaneous[3]
+index
+overallScore
+minSample
+renderedRawTotalSensorCropRectWidth
+adjustedTarget2
+scanSettled
+flowType
+colorProcValidRectY
+faceWidth
+drcColorCorrectionLUT
+compHistEnabled
+numConsecutiveDecreaseInMeasurement_bayerY_hiir_f0
+earlyOutMeasurementLimit_bayerY_3x3_f0
+blue
+inputFormat
+pixelFilterBlending
+blcAdjustment
+currASscore
+pflCorrectionUm_Blob
+flashLEDOffFaceCount
+fIDfsmFDStatus
+earlyOut
+tileOffsetY
+moduleIntegrator
+setFileSubVersion SuperMajor
+RawProcBlock
+thumbnailEnable row 1
+bestIRScore
+focusMappingKnee
+infinityDown
+strobePattern
+lumaLUTUpdated
+sensorBlkAvg[3]
+cropWindowPDEHeight
+shiftParamsUpscaleRef
+farPos
+</name>
+Shared Stats BE Histogram
+binHeight
+sensorConfigurationIndex
+sceneXm
+sensorBlkAvgFiltered[1]
+thumbnailDownsampleX
+afScores_bayerY_3x3_f0
+pflEstimatorConverged
+Name
+PDE Debug
+maxGravityChange
+gyroSamplesStd
+GlobalShutterFlag
+motionDataStatus
+motionFromStatsX
+snfEnabled
+thumbnailTotal
+Y'CbCr 4:2:0
+scanPositionHistory
+ltmProcMode
+earlyOut_bayerY_viir_f0
+unknown
+flashCaptureCount
+setfileSubVersion
+adjustedAve0
+currAFScore_bayerY_viir_f0
+bStillCapture
+slowSyncExposureDuration
+motionSumR
+radiansFromXtoB[0]
+earlyOut_rawGb_7x1_hfir
+com.apple.isp
+Shared IR PDP Debug
+wideCamZoomFactorScaler1
+lsModulationSuspended
+apsMetaVersion
+b2y_G_coeff
+intrinsicsPPCurrentConfig[0]
+raw10
+lux.value
+totalPositionScanned
+historySumB
+temp3
+waitForFlashCapture
+af_hrz_filter_idx
+captureType
+cnrEnabled
+currAFScore_bayerY_15x3_bpf_f0
+FigMotionComputeLensPositionScalingFactor
+drcVarianceIntensity
+bayerYSumBandAvgCurr[16]
+bracketingMode
+edgeBValidPixPercent[16]
+FigMotionGetGravityZ
+Shared Motion Info
+apsZGcolEstimate
+snfEnabledInRaw
+SR_T_bayerY_3x3_f0
+SR_T_bayerY_3x3_f1
+sensorReadOutCropX
+lastFdAFWindow.height
+focusNowHintFW_PDAFCorrAccSearchPosCount
+focusTriggerDeltaTime
+Shared PDE
+aeTarget
+initial_bgLogRatio
+dpcEnabled
+WarpEnable
+radiansFromXtoH[1]
+matrixParamsToSet_defaultLensPosition
+gyroMinSample
+size
+maxWBGainDown
+slaveCamera-CCM row 0
+comboWBGain[1]
+stride
+%s - Invalid parameter!\n
+%s - No metadata dictionary!\n
+%s - ISP Hall data size did not match expected number of bytes.\n
+%s - Sensor crop rect width is not strictly positive!\n
+%s - TotalSensorCropRect found in metadata dictionary but malformed!\n
+%s - RawCropRect found in metadata dictionary but malformed!\n
+%s - Invalid ISP Hall data\n
+%s - ISP Hall data version is not supported.\n
+%s - ExposureTime missing from metadata\n
+%s - metadataDict is null!\n
+%s - Sensor crop rect height is not strictly positive!\n
+%s - Invalid lens coefficients!\n
+%s - ISP motion data version is not supported.\n
+%s - SensorRawValidBufferRect found in metadata dictionary but malformed!\n
+%s - binningFactorHorizontal is not strictly positive!\n
+%s - LensPositionScalingFactor disagrees by %.2f%% in horizontal (%f) and vertical (%f)\n
+%s - metadataDict or adjustedPrincipalPointOut is null!\n
+%s - Empty ISP motion data\n
+%s - NULL metadata dictionary\n
+%s - binningFactorVertical is not strictly positive!\n
+%s - No CurrentFocusPosition!\n
+%s - Could not find any CropRect in the metadata dictionary!\n
+%s - Could not find Hall samples in given time range [%f, %f]. Use the closest Hall sample in actual time range [%f, %f].\n
+%s - FrameRollingShutterSkew missing from metadata\n
+%s - ISP motion data size did not match expected number of bytes.\n
+%s - Extracting only the first %d ISP Hall samples\n
+%s - Invalid ISP motion data\n
+%s - Unsupported Hall data version %d\n
+%s - ISP motion data not available\n
+```

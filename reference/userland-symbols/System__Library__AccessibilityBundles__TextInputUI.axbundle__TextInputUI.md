@@ -1,0 +1,282 @@
+# Symbols: `/System/Library/AccessibilityBundles/TextInputUI.axbundle/TextInputUI`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__AccessibilityBundles__TextInputUI.axbundle__TextInputUI.md). **[DSC]**
+
+91 public symbols, 175 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1ee3a15c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXTextInputUIGlue
+0x1ee3a1520  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUIAutofillExtraCandidateCellAccessibility
+0x1ee3a14f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUICandidateArrowButtonAccessibility
+0x1ee3a1598  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUICandidateCellAccessibility
+0x1ee3a0b70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUICandidateGradientContentLabelAccessibility
+0x1ee3a14d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUICandidateGridAccessibility
+0x1ee3a14a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUICandidateGroupHeaderAccessibility
+0x1ee3a1480  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUICandidateSortControlAccessibility
+0x1ee3a1458  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUICandidateViewAccessibility
+0x1ee3a1430  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUIEmojiSearchInputViewControllerAccessibility
+0x1ee3a1408  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUIEmojiSearchResultCollectionViewCellAccessibility
+0x1ee3a13e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUIEmojiSearchResultsCollectionViewControllerAccessibility
+0x1ee3a13b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUIEmojiSearchTextFieldAccessibility
+0x1ee3a0b48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUIEmojiSearchViewAccessibility
+0x1ee3a0b20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUIGenmojiButtonAccessibility
+0x1ee3a0af8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUIGradientContentLabelCellAccessibility
+0x1ee3a1390  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUIPredictionViewAccessibility
+0x1ee3a1368  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUIPredictionViewCellAccessibility
+0x1ee3a1340  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUIProactiveCandidateCellAccessibility
+0x1ee3a1318  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUISuggestionCandidateCellAccessibility
+0x1ee3a12f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TUISystemInputAssistantViewAccessibility
+0x1ef53af88  __AUTH,__objc_data  _OBJC_CLASS_$_TUIWritingToolCandidateCellAccessibility
+0x1ee3a0ad0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIKeyboardItemContainerViewAccessibility
+0x1ee3a12c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUIAutofillExtraCandidateCellAccessibility_super
+0x1ee3a12a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUICandidateArrowButtonAccessibility_super
+0x1ee3a1278  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUICandidateCellAccessibility_super
+0x1ee3a0aa8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUICandidateGradientContentLabelAccessibility_super
+0x1ee3a1250  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUICandidateGridAccessibility_super
+0x1ee3a1228  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUICandidateGroupHeaderAccessibility_super
+0x1ee3a1200  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUICandidateSortControlAccessibility_super
+0x1ee3a11d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUICandidateViewAccessibility_super
+0x1ee3a11b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUIEmojiSearchInputViewControllerAccessibility_super
+0x1ee3a1188  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUIEmojiSearchResultCollectionViewCellAccessibility_super
+0x1ee3a1160  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUIEmojiSearchResultsCollectionViewControllerAccessibility_super
+0x1ee3a1138  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUIEmojiSearchTextFieldAccessibility_super
+0x1ee3a0a80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUIEmojiSearchViewAccessibility_super
+0x1ee3a0a58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUIGenmojiButtonAccessibility_super
+0x1ee3a0a30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUIGradientContentLabelCellAccessibility_super
+0x1ee3a1110  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUIPredictionViewAccessibility_super
+0x1ee3a10e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUIPredictionViewCellAccessibility_super
+0x1ee3a10c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUIProactiveCandidateCellAccessibility_super
+0x1ee3a1098  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUISuggestionCandidateCellAccessibility_super
+0x1ee3a1570  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TUISystemInputAssistantViewAccessibility_super
+0x1ef53af60  __AUTH,__objc_data  _OBJC_CLASS_$___TUIWritingToolCandidateCellAccessibility_super
+0x1ee3a0a08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___UIKeyboardItemContainerViewAccessibility_super
+0x1ee3a1548  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXTextInputUIGlue
+0x1ee3a1070  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUIAutofillExtraCandidateCellAccessibility
+0x1ee3a1048  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUICandidateArrowButtonAccessibility
+0x1ee3a1020  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUICandidateCellAccessibility
+0x1ee3a09e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUICandidateGradientContentLabelAccessibility
+0x1ee3a0ff8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUICandidateGridAccessibility
+0x1ee3a0fd0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUICandidateGroupHeaderAccessibility
+0x1ee3a0fa8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUICandidateSortControlAccessibility
+0x1ee3a0f80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUICandidateViewAccessibility
+0x1ee3a0f58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUIEmojiSearchInputViewControllerAccessibility
+0x1ee3a0f30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUIEmojiSearchResultCollectionViewCellAccessibility
+0x1ee3a0f08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUIEmojiSearchResultsCollectionViewControllerAccessibility
+0x1ee3a0ee0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUIEmojiSearchTextFieldAccessibility
+0x1ee3a09b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUIEmojiSearchViewAccessibility
+0x1ee3a0990  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUIGenmojiButtonAccessibility
+0x1ee3a0968  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUIGradientContentLabelCellAccessibility
+0x1ee3a0eb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUIPredictionViewAccessibility
+0x1ee3a0e90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUIPredictionViewCellAccessibility
+0x1ee3a0e68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUIProactiveCandidateCellAccessibility
+0x1ee3a0e40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUISuggestionCandidateCellAccessibility
+0x1ee3a0e18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TUISystemInputAssistantViewAccessibility
+0x1ef53afb0  __AUTH,__objc_data  _OBJC_METACLASS_$_TUIWritingToolCandidateCellAccessibility
+0x1ee3a0940  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIKeyboardItemContainerViewAccessibility
+0x1ee3a0df0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUIAutofillExtraCandidateCellAccessibility_super
+0x1ee3a0dc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUICandidateArrowButtonAccessibility_super
+0x1ee3a0da0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUICandidateCellAccessibility_super
+0x1ee3a0918  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUICandidateGradientContentLabelAccessibility_super
+0x1ee3a0d78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUICandidateGridAccessibility_super
+0x1ee3a0d50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUICandidateGroupHeaderAccessibility_super
+0x1ee3a0d28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUICandidateSortControlAccessibility_super
+0x1ee3a0d00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUICandidateViewAccessibility_super
+0x1ee3a0cd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUIEmojiSearchInputViewControllerAccessibility_super
+0x1ee3a0cb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUIEmojiSearchResultCollectionViewCellAccessibility_super
+0x1ee3a0c88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUIEmojiSearchResultsCollectionViewControllerAccessibility_super
+0x1ee3a0c60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUIEmojiSearchTextFieldAccessibility_super
+0x1ee3a08f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUIEmojiSearchViewAccessibility_super
+0x1ee3a08c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUIGenmojiButtonAccessibility_super
+0x1ee3a08a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUIGradientContentLabelCellAccessibility_super
+0x1ee3a0c38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUIPredictionViewAccessibility_super
+0x1ee3a0c10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUIPredictionViewCellAccessibility_super
+0x1ee3a0be8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUIProactiveCandidateCellAccessibility_super
+0x1ee3a0bc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUISuggestionCandidateCellAccessibility_super
+0x1ee3a0b98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TUISystemInputAssistantViewAccessibility_super
+0x1ef53af38  __AUTH,__objc_data  _OBJC_METACLASS_$___TUIWritingToolCandidateCellAccessibility_super
+0x1ee3a0878  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___UIKeyboardItemContainerViewAccessibility_super
+0x18c17c520  __TEXT,__text  _accessibilityLocalizedString
+```
+
+## Private
+
+```
+0x18c17c168  __TEXT,__text  +[AXTextInputUIGlue accessibilityInitializeBundle]
+0x18c17c1f0  __TEXT,__text  ___50+[AXTextInputUIGlue accessibilityInitializeBundle]_block_invoke
+0x18c17c2ec  __TEXT,__text  ___50+[AXTextInputUIGlue accessibilityInitializeBundle]_block_invoke_2
+0x18c17c340  __TEXT,__text  ___50+[AXTextInputUIGlue accessibilityInitializeBundle]_block_invoke_3
+0x18c17c5c4  __TEXT,__text  +[UIKeyboardItemContainerViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17c5d0  __TEXT,__text  +[UIKeyboardItemContainerViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17c5dc  __TEXT,__text  +[UIKeyboardItemContainerViewAccessibility _accessibilityPerformValidations:]
+0x18c17c5e0  __TEXT,__text  -[UIKeyboardItemContainerViewAccessibility _accessibilityOverridesInvalidFrames]
+0x18c17c60c  __TEXT,__text  +[TUIGenmojiButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17c618  __TEXT,__text  +[TUIGenmojiButtonAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17c624  __TEXT,__text  +[TUIGenmojiButtonAccessibility _accessibilityPerformValidations:]
+0x18c17c628  __TEXT,__text  -[TUIGenmojiButtonAccessibility accessibilityLabel]
+0x18c17c634  __TEXT,__text  -[TUIGenmojiButtonAccessibility isAccessibilityElement]
+0x18c17c63c  __TEXT,__text  -[TUIGenmojiButtonAccessibility accessibilityTraits]
+0x18c17c64c  __TEXT,__text  +[TUIEmojiSearchViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17c658  __TEXT,__text  +[TUIEmojiSearchViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17c664  __TEXT,__text  +[TUIEmojiSearchViewAccessibility _accessibilityPerformValidations:]
+0x18c17c704  __TEXT,__text  -[TUIEmojiSearchViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x18c17c750  __TEXT,__text  -[TUIEmojiSearchViewAccessibility _axInstallAccessibilityLabels]
+0x18c17c804  __TEXT,__text  ___64-[TUIEmojiSearchViewAccessibility _axInstallAccessibilityLabels]_block_invoke
+0x18c17c8ec  __TEXT,__text  -[TUIEmojiSearchViewAccessibility updatePlaceholder]
+0x18c17ca3c  __TEXT,__text  ___52-[TUIEmojiSearchViewAccessibility updatePlaceholder]_block_invoke
+0x18c17cae8  __TEXT,__text  ___52-[TUIEmojiSearchViewAccessibility updatePlaceholder]_block_invoke_2
+0x18c17cb84  __TEXT,__text  -[TUIEmojiSearchViewAccessibility addButtons]
+0x18c17cbd0  __TEXT,__text  +[TUIEmojiSearchInputViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17cbdc  __TEXT,__text  +[TUIEmojiSearchInputViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17cbe8  __TEXT,__text  +[TUIEmojiSearchInputViewControllerAccessibility _accessibilityPerformValidations:]
+0x18c17cc00  __TEXT,__text  -[TUIEmojiSearchInputViewControllerAccessibility viewWillDisappear:]
+0x18c17cc5c  __TEXT,__text  +[TUIEmojiSearchResultsCollectionViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17cc68  __TEXT,__text  +[TUIEmojiSearchResultsCollectionViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17cc74  __TEXT,__text  +[TUIEmojiSearchResultsCollectionViewControllerAccessibility _accessibilityPerformValidations:]
+0x18c17ccf4  __TEXT,__text  -[TUIEmojiSearchResultsCollectionViewControllerAccessibility viewWillDisappear:]
+0x18c17cd58  __TEXT,__text  -[TUIEmojiSearchResultsCollectionViewControllerAccessibility setDisplayedEmojis:verbatimSkinTones:animated:]
+0x18c17ce84  __TEXT,__text  ___108-[TUIEmojiSearchResultsCollectionViewControllerAccessibility setDisplayedEmojis:verbatimSkinTones:animated:]_block_invoke
+0x18c17cef8  __TEXT,__text  +[TUIEmojiSearchTextFieldAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17cf04  __TEXT,__text  +[TUIEmojiSearchTextFieldAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17cf10  __TEXT,__text  +[TUIEmojiSearchTextFieldAccessibility _accessibilityPerformValidations:]
+0x18c17cfd0  __TEXT,__text  -[TUIEmojiSearchTextFieldAccessibility _accessibilitySetSelectedTextRange:]
+0x18c17d08c  __TEXT,__text  ___75-[TUIEmojiSearchTextFieldAccessibility _accessibilitySetSelectedTextRange:]_block_invoke
+0x18c17d098  __TEXT,__text  -[TUIEmojiSearchTextFieldAccessibility _accessibilityTextInputProxiesForRealTextView]
+0x18c17d0b8  __TEXT,__text  +[TUIEmojiSearchResultCollectionViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17d0c4  __TEXT,__text  +[TUIEmojiSearchResultCollectionViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17d0d0  __TEXT,__text  +[TUIEmojiSearchResultCollectionViewCellAccessibility _accessibilityPerformValidations:]
+0x18c17d110  __TEXT,__text  -[TUIEmojiSearchResultCollectionViewCellAccessibility isAccessibilityElement]
+0x18c17d118  __TEXT,__text  -[TUIEmojiSearchResultCollectionViewCellAccessibility accessibilityLabel]
+0x18c17d160  __TEXT,__text  -[TUIEmojiSearchResultCollectionViewCellAccessibility accessibilityTraits]
+0x18c17d180  __TEXT,__text  +[TUIAutofillExtraCandidateCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17d18c  __TEXT,__text  +[TUIAutofillExtraCandidateCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17d198  __TEXT,__text  +[TUIAutofillExtraCandidateCellAccessibility _accessibilityPerformValidations:]
+0x18c17d19c  __TEXT,__text  -[TUIAutofillExtraCandidateCellAccessibility accessibilityLabel]
+0x18c17d1a8  __TEXT,__text  -[TUIAutofillExtraCandidateCellAccessibility accessibilityLanguage]
+0x18c17d1ac  __TEXT,__text  -[TUIAutofillExtraCandidateCellAccessibility accessibilityTraits]
+0x18c17d1bc  __TEXT,__text  -[TUIAutofillExtraCandidateCellAccessibility isAccessibilityElement]
+0x18c17d1c4  __TEXT,__text  +[TUICandidateArrowButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17d1d0  __TEXT,__text  +[TUICandidateArrowButtonAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17d1dc  __TEXT,__text  +[TUICandidateArrowButtonAccessibility _accessibilityPerformValidations:]
+0x18c17d1e0  __TEXT,__text  -[TUICandidateArrowButtonAccessibility accessibilityLabel]
+0x18c17d254  __TEXT,__text  +[TUICandidateGridAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17d260  __TEXT,__text  +[TUICandidateGridAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17d26c  __TEXT,__text  +[TUICandidateGridAccessibility _accessibilityPerformValidations:]
+0x18c17d338  __TEXT,__text  -[TUICandidateGridAccessibility accessibilityNavigationStyle]
+0x18c17d340  __TEXT,__text  -[TUICandidateGridAccessibility _accessibilityScannerGroupElements]
+0x18c17dbdc  __TEXT,__text  ___67-[TUICandidateGridAccessibility _accessibilityScannerGroupElements]_block_invoke
+0x18c17dc20  __TEXT,__text  ___67-[TUICandidateGridAccessibility _accessibilityScannerGroupElements]_block_invoke.394
+0x18c17dccc  __TEXT,__text  -[TUICandidateGridAccessibility setSelectedIndexPath:animated:scrollPosition:]
+0x18c17de38  __TEXT,__text  +[TUICandidateGroupHeaderAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17de44  __TEXT,__text  +[TUICandidateGroupHeaderAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17de50  __TEXT,__text  +[TUICandidateGroupHeaderAccessibility _accessibilityPerformValidations:]
+0x18c17de90  __TEXT,__text  -[TUICandidateGroupHeaderAccessibility isAccessibilityElement]
+0x18c17de98  __TEXT,__text  -[TUICandidateGroupHeaderAccessibility accessibilityLabel]
+0x18c17df4c  __TEXT,__text  -[TUICandidateGroupHeaderAccessibility accessibilityTraits]
+0x18c17df5c  __TEXT,__text  -[TUICandidateGroupHeaderAccessibility accessibilityLanguage]
+0x18c17df60  __TEXT,__text  -[TUICandidateGroupHeaderAccessibility accessibilityHeaderElements]
+0x18c17dfc8  __TEXT,__text  +[TUICandidateSortControlAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17dfd4  __TEXT,__text  +[TUICandidateSortControlAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17dfe0  __TEXT,__text  +[TUICandidateSortControlAccessibility _accessibilityPerformValidations:]
+0x18c17e074  __TEXT,__text  -[TUICandidateSortControlAccessibility layoutSubviews]
+0x18c17e1c8  __TEXT,__text  +[TUICandidateViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17e1d4  __TEXT,__text  +[TUICandidateViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17e1e0  __TEXT,__text  +[TUICandidateViewAccessibility _accessibilityPerformValidations:]
+0x18c17e24c  __TEXT,__text  -[TUICandidateViewAccessibility finalizeLayoutChange]
+0x18c17e298  __TEXT,__text  -[TUICandidateViewAccessibility accessibilityNavigationStyle]
+0x18c17e2a0  __TEXT,__text  -[TUICandidateViewAccessibility _accessibilityScannerGroupElements]
+0x18c17e6cc  __TEXT,__text  +[TUIPredictionViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17e6d8  __TEXT,__text  +[TUIPredictionViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17e6e4  __TEXT,__text  +[TUIPredictionViewAccessibility _accessibilityPerformValidations:]
+0x18c17e778  __TEXT,__text  -[TUIPredictionViewAccessibility isAccessibilityElement]
+0x18c17e780  __TEXT,__text  -[TUIPredictionViewAccessibility accessibilityNavigationStyle]
+0x18c17e788  __TEXT,__text  -[TUIPredictionViewAccessibility _accessibilityScannerGroupTraits]
+0x18c17e7c4  __TEXT,__text  -[TUIPredictionViewAccessibility accessibilityLabel]
+0x18c17e7d0  __TEXT,__text  -[TUIPredictionViewAccessibility _accessibilitySendCandidateNotificationIfNecessary:]
+0x18c17e8f8  __TEXT,__text  -[TUIPredictionViewAccessibility _reloadCellsAnimated:]
+0x18c17e948  __TEXT,__text  -[TUIPredictionViewAccessibility configurePredictionCell:forCandidate:animated:]
+0x18c17e9dc  __TEXT,__text  +[TUIPredictionViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17e9e8  __TEXT,__text  +[TUIPredictionViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17e9f4  __TEXT,__text  +[TUIPredictionViewCellAccessibility _accessibilityPerformValidations:]
+0x18c17eb04  __TEXT,__text  -[TUIPredictionViewCellAccessibility _accessibilitySlotID]
+0x18c17eb3c  __TEXT,__text  -[TUIPredictionViewCellAccessibility _axHideCell]
+0x18c17ebac  __TEXT,__text  -[TUIPredictionViewCellAccessibility accessibilityElementsHidden]
+0x18c17ebb0  __TEXT,__text  -[TUIPredictionViewCellAccessibility isAccessibilityElement]
+0x18c17ebcc  __TEXT,__text  -[TUIPredictionViewCellAccessibility accessibilityLabel]
+0x18c17eea0  __TEXT,__text  ___56-[TUIPredictionViewCellAccessibility accessibilityLabel]_block_invoke
+0x18c17ef08  __TEXT,__text  -[TUIPredictionViewCellAccessibility accessibilityTraits]
+0x18c17efa0  __TEXT,__text  -[TUIPredictionViewCellAccessibility accessibilityRespondsToUserInteraction]
+0x18c17efa8  __TEXT,__text  -[TUIPredictionViewCellAccessibility _accessibilityIncludeRoleDescription]
+0x18c17efb0  __TEXT,__text  -[TUIPredictionViewCellAccessibility _accessibilityRoleDescription]
+0x18c17efe8  __TEXT,__text  -[TUIPredictionViewCellAccessibility _axIsTextEffectButton]
+0x18c17f024  __TEXT,__text  -[TUIPredictionViewCellAccessibility _axIsAutoFillKey]
+0x18c17f060  __TEXT,__text  -[TUIPredictionViewCellAccessibility _axIsAutocorrection]
+0x18c17f064  __TEXT,__text  -[TUIPredictionViewCellAccessibility _axIsSmartReply]
+0x18c17f120  __TEXT,__text  ___53-[TUIPredictionViewCellAccessibility _axIsSmartReply]_block_invoke
+0x18c17f17c  __TEXT,__text  -[TUIPredictionViewCellAccessibility _axTextSuggestionWithAction]
+0x18c17f1e4  __TEXT,__text  -[TUIPredictionViewCellAccessibility _axCandidate]
+0x18c17f1e8  __TEXT,__text  -[TUIPredictionViewCellAccessibility _axActivateSpeaking:]
+0x18c17f344  __TEXT,__text  -[TUIPredictionViewCellAccessibility accessibilityCustomActions]
+0x18c17f444  __TEXT,__text  -[TUIPredictionViewCellAccessibility _childFocusViews]
+0x18c17f4d0  __TEXT,__text  -[TUIPredictionViewCellAccessibility _accessibilityInTopLevelTabLoop]
+0x18c17f4d8  __TEXT,__text  ___getSpeakTypingServicesClass_block_invoke
+0x18c17f6c8  __TEXT,__text  ___SpeakTypingServicesLibraryCore_block_invoke
+0x18c17f73c  __TEXT,__text  +[TUIProactiveCandidateCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17f748  __TEXT,__text  +[TUIProactiveCandidateCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17f754  __TEXT,__text  +[TUIProactiveCandidateCellAccessibility _accessibilityPerformValidations:]
+0x18c17f7c0  __TEXT,__text  -[TUIProactiveCandidateCellAccessibility accessibilityLabel]
+0x18c17f8f8  __TEXT,__text  -[TUIProactiveCandidateCellAccessibility accessibilityTraits]
+0x18c17f908  __TEXT,__text  -[TUIProactiveCandidateCellAccessibility accessibilityLanguage]
+0x18c17f90c  __TEXT,__text  -[TUIProactiveCandidateCellAccessibility isAccessibilityElement]
+0x18c17f964  __TEXT,__text  +[TUISuggestionCandidateCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17f970  __TEXT,__text  +[TUISuggestionCandidateCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17f97c  __TEXT,__text  +[TUISuggestionCandidateCellAccessibility _accessibilityPerformValidations:]
+0x18c17f9bc  __TEXT,__text  -[TUISuggestionCandidateCellAccessibility accessibilityLabel]
+0x18c17fa04  __TEXT,__text  -[TUISuggestionCandidateCellAccessibility accessibilityTraits]
+0x18c17fa14  __TEXT,__text  -[TUISuggestionCandidateCellAccessibility isAccessibilityElement]
+0x18c17fa6c  __TEXT,__text  +[TUIWritingToolCandidateCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17fa78  __TEXT,__text  +[TUIWritingToolCandidateCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17fa84  __TEXT,__text  +[TUIWritingToolCandidateCellAccessibility _accessibilityPerformValidations:]
+0x18c17fa9c  __TEXT,__text  -[TUIWritingToolCandidateCellAccessibility accessibilityAttributedLabel]
+0x18c17fbe4  __TEXT,__text  +[TUIGradientContentLabelCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17fbf0  __TEXT,__text  +[TUIGradientContentLabelCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17fbfc  __TEXT,__text  +[TUIGradientContentLabelCellAccessibility _accessibilityPerformValidations:]
+0x18c17fc1c  __TEXT,__text  -[TUIGradientContentLabelCellAccessibility accessibilityLabel]
+0x18c17fc64  __TEXT,__text  +[TUICandidateGradientContentLabelAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17fc70  __TEXT,__text  +[TUICandidateGradientContentLabelAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17fc7c  __TEXT,__text  +[TUICandidateGradientContentLabelAccessibility _accessibilityPerformValidations:]
+0x18c17fcf0  __TEXT,__text  -[TUICandidateGradientContentLabelAccessibility accessibilityLabel]
+0x18c17fda0  __TEXT,__text  +[TUISystemInputAssistantViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c17fdac  __TEXT,__text  +[TUISystemInputAssistantViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c17fdb8  __TEXT,__text  +[TUISystemInputAssistantViewAccessibility _accessibilityPerformValidations:]
+0x18c17fe84  __TEXT,__text  -[TUISystemInputAssistantViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x18c17ff08  __TEXT,__text  -[TUISystemInputAssistantViewAccessibility _axAddCurrentGroup:toElements:]
+0x18c180014  __TEXT,__text  -[TUISystemInputAssistantViewAccessibility _accessibilityScannerGroupTraits]
+0x18c18001c  __TEXT,__text  -[TUISystemInputAssistantViewAccessibility _accessibilityIsScannerGroup]
+0x18c180024  __TEXT,__text  -[TUISystemInputAssistantViewAccessibility _isPredictionOrCandidateView:]
+0x18c180090  __TEXT,__text  -[TUISystemInputAssistantViewAccessibility _accessibilityScannerGroupElements]
+0x18c180334  __TEXT,__text  ___78-[TUISystemInputAssistantViewAccessibility _accessibilityScannerGroupElements]_block_invoke
+0x18c180394  __TEXT,__text  -[TUISystemInputAssistantViewAccessibility setShowsExpandableButtonBarItems:]
+0x18c1803e0  __TEXT,__text  -[TUISystemInputAssistantViewAccessibility _didTapExpandButton:]
+0x18c180478  __TEXT,__text  ___64-[TUISystemInputAssistantViewAccessibility _didTapExpandButton:]_block_invoke
+0x18c1804c0  __TEXT,__text  -[TUISystemInputAssistantViewAccessibility shouldGroupAccessibilityChildren]
+0x18c1804c8  __TEXT,__text  +[TUICandidateCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x18c1804d4  __TEXT,__text  +[TUICandidateCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x18c1804e0  __TEXT,__text  +[TUICandidateCellAccessibility _accessibilityPerformValidations:]
+0x18c1805f0  __TEXT,__text  -[TUICandidateCellAccessibility isAccessibilityElement]
+0x18c1805f8  __TEXT,__text  -[TUICandidateCellAccessibility accessibilityElementsHidden]
+0x18c180634  __TEXT,__text  -[TUICandidateCellAccessibility accessibilityTraits]
+0x18c180664  __TEXT,__text  -[TUICandidateCellAccessibility _axCandidateText]
+0x18c18070c  __TEXT,__text  -[TUICandidateCellAccessibility _accessibilityEquivalenceTag]
+0x18c180710  __TEXT,__text  -[TUICandidateCellAccessibility accessibilityLanguage]
+0x18c180714  __TEXT,__text  -[TUICandidateCellAccessibility accessibilityIdentifier]
+0x18c180718  __TEXT,__text  -[TUICandidateCellAccessibility accessibilityLabel]
+0x18c18080c  __TEXT,__text  -[TUICandidateCellAccessibility accessibilityHeaderElements]
+0x18c1809e0  __TEXT,__text  -[TUICandidateCellAccessibility _axCellIsVisibleInCollectionView]
+0x18c180b10  __TEXT,__text  ___Block_byref_object_copy_
+0x18c180b20  __TEXT,__text  ___Block_byref_object_dispose_
+0x18c180b28  __TEXT,__text  ___Block_byref_object_copy_.431
+0x18c180b38  __TEXT,__text  ___Block_byref_object_dispose_.432
+```
+

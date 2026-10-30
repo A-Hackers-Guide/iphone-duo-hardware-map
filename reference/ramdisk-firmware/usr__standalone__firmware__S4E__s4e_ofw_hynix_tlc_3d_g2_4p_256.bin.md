@@ -1,0 +1,282 @@
+# `usr/standalone/firmware/S4E/s4e_ofw_hynix_tlc_3d_g2_4p_256.bin`
+
+- File size: 425,984 bytes
+
+## Payload [FW]
+
+- Size after IM4P unwrap / decompression: 425,984 bytes
+- Format: raw binary
+
+## Identity strings (versions, build tags) [FW]
+
+- `AppleMSPS4-13.174~1`
+
+## Strings (263) [FW]
+
+Printable runs of 6+ characters with at least three letters, in file order, with payload offset. For RTKit co-processor firmware these are the log formats, task names, endpoint names and assertions that describe what the processor does.
+
+```
+00000670  msp_core_hynix_tlc_3d_g2_4p_256-13.174.0
+0000172c  #F0FBF
+0000182e  \LUF.[>
+000018a4  QF*FCF
+000018f2  PFBF#F
+00001998  FWLDETOC
+00001b43  a)bjb>K
+00001c2b  `hFAFO
+00002265  C0`WHp`D
+00002448  msp_rom_extension-13.174.0
+000025c8  app_main
+00003ed0  Undefined
+00003ee0  Software Int
+00003ef0  Prefetch Abort
+00003f00  Data Abort
+00003f10  Reserved Exception
+00003f82  hFqFzF
+00005a33   1F*FCF
+00005b3b   1F*FCF
+00005b83   1F*FCF
+00005bcb   1F*FCF
+00005d02  pG(HCn
+000061c9  `(FAF"F)
+00006253  `(FAF"F)
+00006359  H1FRFCF
+00006385  H1FRFCF
+000063b5  H1FRFCF
+000064c4   0pGPz
+00006d15  hYNYMA
+000074cd  hIh+`(`)`j` I)`h`N
+000078f8  ! pGx 
+0000823d  qhh40&
+00008e45  F0HlF8"
+00009625  %`avI!`A
+0000a2d6  LP0epeO
+0000a3b7  h#a%pGM
+0000af40  H`bLbH cbH
+0000bf9c  p!)`RIrP!h!
+0000c80e  !4>jjH9H
+0000ca45  R0FaFZF
+0000caa0  sh2hpi
+0000cab4  uish2h
+0000cf50  &IZFCF
+0000d0f1  r`hCF]
+0000d2b3  rIhA`pG
+0000d5be   FQFuF
+0000d5ca   FAFZF
+0000d797    u!Mhi
+0000dd5b  *WIky_
+0000e595  FrT1DJx
+0000e8cc  0FAFRF#F
+0000e8fd  $0FAFRF
+0000f16a  +F1FJFMF
+0000f238  @F1FJF
+0000f4c5  &QFYE\FO
+0000f642  $`KhVI
+0000feda  !Fnj0F
+000105ed  F hEh<H
+00011f5e  XF!FBF
+000120da  AFFj0F
+000127f9  %0ItF!`O
+00012974  PF!FBF3F
+000129da  0F)FBF
+000134bb  d#IAdC
+000138bf  DBy&K[
+00013a8c  UUUU3333
+00013ca4  *FbI1`4`
+00013e71  F"hLNMI
+00014e65  "IhA`O
+00016854  UUUU3333
+00016e6b  !$"LFPF
+00016eae  FL xFM
+0001940f  PqH `O
+000196d9  F)FPF"
+00019e7e  kIJokI
+0001aa55  F FQFBF
+0001ac80  ^F2FAD
+0001caf7   0c xpc
+0001d2a8  ]L^MAE
+0001d7c9  `F`VFqi@F
+0001d941  xHC4!HC
+0001e128   FYFRF
+0001fa74  ,hhh1`O
+00020639  i!bBibb
+00020d68  BToCEBTC
+000214b4  ha'HAy
+00021d21  h!`Aha`
+00021d31  i!aAiaa
+00021d41  j!bAjab
+00021d51  k!cAkac
+00021e36  HVf`!`O
+000234e2  (FAF"F
+00023746  bL hAn0F
+00023a72  1FRFXF
+00023b3d  F"LUFO
+00023ca8  WN!FWL
+00023e2d  FKH,Fo
+000241c0  (F1F"FCF
+00024a29  )eNeM5`
+00024b81  ` FRF+F
+00024ce0   F1F*FCF
+000267e9  FYhJh#H#L
+00026ab8  )FBmCn
+00027835  b8jyj c
+00027c7c  5F)iQE
+00027ec3  "ekXFAF
+000284b4  %Mhh"I#J
+000289c6  Ml*CJd#
+00028a65   uutcpb1
+00028a78  E@tfpe
+00028e88  XF1F*FCF
+00029357  !EuDcAb
+0002936a  EPDfAe
+00029ef2  % AppGM
+0002a095  ,(hKILJ
+0002a68a  X@0FAF]
+0002b330  UUUU3333
+0002bfef  BZabhO
+0002c087  k!kYfak
+0002c097  g!lYgal
+0002c535  D `)hnh
+0002cc70  AaZ`pG
+0002d2be  5hAL F
+0002dcc0  1h Frh
+0002dfc9  0XCszO
+0002eb26  yHyIzJ
+0002ebab  k_Mlj F
+0002ebf4  NM,hhh @
+0002f170    pGPz
+0002fa23  b#crH@~iN
+0002fd3f   BvpG<
+0003015b  aFIGKJ
+000303d6  qHBF[F
+000303f5   0vVFjH
+000305fd  FKHBhKMKI
+00030864  PFYFBF
+00031544  m`}H(g}Hhg
+00032397  FmF`x)
+00032c2e  0F)FBF
+00032c82  0F!FBF
+000338a0  )xjxEL
+00033940  @FQF2F
+00034338  0F!FBF
+000343f8  @FQF"F
+000345a8   x"Fax
+000346d9  F xax$M
+00034adb   1F0aPF0"
+000353e8  QF(NBF0F
+000359d0  pGpG#H
+00036c32  P"0hFFj
+000373b4  1FZFSF
+00037556  !F*FSF
+00038266  rL$hlH0`N
+00039349  chcjL h
+0003963c  Xq(blg
+0003a121  hpJ"`!` `
+0003ade0  UUUU3333
+0003ae31  FmL%`mL%hO
+0003ae41  UkL%`kL
+0003b38b  hoM5`0`
+0003b5d4  JxBqIyAr
+0003b6cf  h=iQF"F+F
+0003b6dc  xiQF"F+F
+0003b773   )FZFSF
+0003b785   )FZFSF
+0003b81d   !FZF+F
+0003c966  ahbl h:K
+0003d57e  ]hwLxK
+0003e0fd   aFrFO
+0003e1f1  #IFbFO
+000410dd   $(,048<@DHLP`lpt
+0004124c  REXTFWLDR5FWXTRAPTSDHBTCPBBT$4BDBToC
+0004154c  DDDDDDDD
+0004168c  pppppppp
+0004172c  DDDDDDDD
+0004186c  PPPPPPPP
+00041f65  012ABC
+00043da0  c.'>*GAq{g
+00043dcf  lEq0E"
+00043e18  ffffffff
+00043ea8  msp_core_hynix_tlc_3d_g2_4p_256-13.174.0
+00043f7f  !INTERACTIVEhelloscmd
+00044050  app_main
+00044060  ASI Device Info
+00044070  Uknown
+00044088  tlc_3d_v3_4p_256
+00044099  Internal Only Mode requires Automatic value to be used
+000440d0  EUB mode can not use Automatic value
+000440f8  msp-nand-drive-v1.174-tigris_hdp
+00044120  AppleMSPS4-13.174~1
+0004ac64  DCCBCCC
+0004ac9d  DDD$"""
+0004ad25  DDDD"""
+0004f8b3  `NH aNH`aNH
+0004f8bf  aNH bNH`bNH
+0004f8d3  cNH dNH f(Fff
+0004ff7e  $"`xea
+0005047b  h+Nqh'M
+00050490   FZFCF
+0005076a  %FLFfF
+00051544   zaz"\
+00051b07  Npi Dpa@F
+00051ebd   pGHipGH
+0005278d  #0hqhGJ
+0005287c  XF1FRF
+000528d8  pGpGpGpG
+00052b90  XF1FRF
+00052d06   F1FRF
+00052e58  `@Q`jhQ@
+00053e5c  4@LNtC
+00054008  emi_ext
+00054064  S9U9SBUBSCUCL
+0005476f  pslf-P
+00054bf2  zSZ^w$
+00056724  ZFNLSF&FV
+000568ac  phTFANqmAJ
+00057c5a  @DAz!CAr
+00057e40  def_appl_ext
+00058cd5  F`IKx`J
+0005901c  &FrFd#
+0005946b  h1Nqh-M
+00059480   FZFCF
+0005a1f4   zaz"\
+0005a7b7  Npi Dpa@F
+0005ab6d   pGHipG
+0005b180  sHH`vH
+0005b1b8   hjIJjBc
+0005b61d  xjqic(c
+0005b912  000000LLLLLL??????,,,,,,_
+0005be77  xZCPCO
+0005c53a  nxQC6J
+0005cc1a   F1F*FCF
+0005ccd4  7HBx7M)y
+0005d194  XF1FRF
+0005d819    p.IHy
+0005d930  PF)FBF
+0005de4c  ,@IMlC
+0005e0d4  slbt_ext
+0005e12c  S9U9SBUBSCUCL
+0005e1ab  Z____HYX_____SDK_SAM_TSB_HPN_03D_
+0005ebd4  pts_update_ext
+00060071  F"F+F4FEF
+00060d1a  qY!CqQ
+00061455  H8"`cXF
+00062573  1!aPJB
+00062ea6  #:CLLXAH
+000636d8  1h Frh
+0006397e   t FRx0
+000640b1  !F`XFD
+000641ff  `D"AFo
+00064623  CbN3@b
+00065e37  F jbx_
+000660d4  (FQF"F
+00066430  QF,NBF0F
+00066760  msp_fw_loader_hynix_tlc_3d_g2_4p_256-13.174.0
+00066880  REXTFWLDR5FWXTRAPTSDHBTCPBBT$4BDBToC
+00066d58  app_main
+00066d61  Internal Only Mode requires Automatic value to be used
+00066d98  EUB mode can not use Automatic value
+00066dbd  msp-nand-drive-v1.174-tigris_hdp
+00067028  DCCBCCC
+00067061  DDD$"""
+000670e9  DDDD"""
+```

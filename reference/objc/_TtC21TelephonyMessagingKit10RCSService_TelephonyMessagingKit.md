@@ -1,0 +1,25 @@
+# `_TtC21TelephonyMessagingKit10RCSService`
+
+- Image: [`/System/Library/Frameworks/TelephonyMessagingKit.framework/TelephonyMessagingKit`](../userland/System__Library__Frameworks__TelephonyMessagingKit.framework__TelephonyMessagingKit.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `_TtCs12_SwiftObject`
+- 15 instance variables, 0 properties, 0 instance methods, 0 class methods
+
+## Instance variables
+
+```
+os.OSAllocatedUnfairLock TelephonyMessagingKit.RCSService.State state;
+TelephonyMessagingKit.RCSService.DependencyProviding dependencyProvider;
+TelephonyMessagingKit.NotificationManager TelephonyMessagingKit.RCSService.IncomingMessageNotification incomingMessageNotificationManager;
+TelephonyMessagingKit.NotificationManager TelephonyMessagingKit.RCSService.ViabilityNotification viabilityNotificationManager;
+TelephonyMessagingKit.NotificationManager TelephonyMessagingKit.RCSService.GroupChatEvent groupChatEventManager;
+TelephonyMessagingKit.NotificationManager TelephonyMessagingKit.RCSService.RemoteHandleUpdate remoteHandleUpdateManager;
+TelephonyMessagingKit.OperationTracker TelephonyMessagingKit.RCSMessageID TelephonyMessagingKit.RCSMessage.SecureSendReceipt ? messageSendResultTracker;
+TelephonyMessagingKit.OperationTracker TelephonyMessagingKit.RCSOperationID _$st -> groupChatOperationTracker;
+TelephonyMessagingKit.OperationTracker TelephonyMessagingKit.RCSOperationID TelephonyMessagingKit.RCSService.CreateGroupChatRequest.Result groupCreationOperationTracker;
+TelephonyMessagingKit.OperationTracker TelephonyMessagingKit.RCSOperationID TelephonyMessagingKit.RCSService.AddGroupChatParticipantsRequest.Result groupChatAddParticipantsOperationTracker;
+TelephonyMessagingKit.OperationTracker TelephonyMessagingKit.RCSOperationID TelephonyMessagingKit.RCSService.RemoveGroupChatParticipantsRequest.Result groupChatRemoveParticipantsOperationTracker;
+TelephonyMessagingKit.OperationTracker TelephonyMessagingKit.RCSOperationID TelephonyMessagingKit.RCSService.RemoteCapabilities ? discoveryCapabilityOperationTracker;
+TelephonyMessagingKit.OperationTracker TelephonyMessagingKit.RCSMessageID Swift.Bool revokeMessageOperationTracker;
+TelephonyMessagingKit.OperationTracker TelephonyMessagingKit.RCSOperationID _$st -> reportSpamOperationTracker;
+TelephonyMessagingKit.OperationTracker TelephonyMessagingKit.RCSOperationID TelephonyMessagingKit.RCSService.Business ? chatbotRenderOperationTracker;
+```

@@ -1,0 +1,712 @@
+# Symbols: `/System/Library/AccessibilityBundles/EventKitUIFramework.axbundle/EventKitUIFramework`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__AccessibilityBundles__EventKitUIFramework.axbundle__EventKitUIFramework.md). **[DSC]**
+
+244 public symbols, 452 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1e07f4630  __DATA_CONST,__const  _AXEKUIAllDayLabelAccessibilityIdentifier
+0x1e07f4710  __DATA_CONST,__const  _CalendarModelDisplayedOccurrencesChangedNotification
+0x189d3f844  __TEXT,__text  _MobileCalAXLocalizedString
+0x1ee2c8a48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXEventKitUIGlue
+0x1ee2c8958  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CalendarMessageUIProxyAccessibility
+0x1ee2c8a20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CalendarNotesCellAccessibility
+0x1ee2c6b58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_DayTwoPartLabelAccessibility
+0x1ee2c8930  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKCalendarChooserCellAccessibility
+0x1ee2c8908  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKCalendarItemCalendarEditItemAccessibility
+0x1ee2c88e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKCalendarItemEditorAccessibility
+0x1ee2c88b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKCalendarItemLocationInlineEditItemAccessibility
+0x1ee2c8890  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKCurrentTimeMarkerViewAccessibility
+0x1ee2c8868  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKDateTimeCellAccessibility
+0x1ee2c8840  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKDayAllDayViewAccessibility
+0x1ee2c8818  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKDayGridViewAccessibility
+0x1ee2c87f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKDayOccurrenceResizeHandleViewAccessibility
+0x1ee2c87c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKDayOccurrenceViewAccessibility
+0x1ee2c87a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKDayPreviewControllerAccessibility
+0x1ee2c8778  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKDayViewAccessibility
+0x1ee2c8750  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKDayViewContentAccessibility
+0x1ee2c8728  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKDayViewContentItemAccessibility
+0x1ee2c8700  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKDayViewControllerAccessibility
+0x1ee2c86d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKEventAttachmentsEditItemAccessibility
+0x1ee2c86b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKEventCalendarDetailItemAccessibility
+0x1ee2c8688  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKEventConferenceInformationDetailItemAccessibility
+0x1ee2c8660  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKEventDateEditItemAccessibility
+0x1ee2c8638  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKEventDetailAttendeesCellAccessibility
+0x1ee2c8610  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKEventDetailCellAccessibility
+0x1ee2c6ab8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKEventDetailConferenceCellAccessibility
+0x1ee2c85e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKEventDetailTextCellAccessibility
+0x1ee2c85c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKEventDetailTitleCellAccessibility
+0x1ee2c8598  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKEventEditViewControllerAccessibility
+0x1ee2c8570  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKEventEditorAccessibility
+0x1ee2c8548  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKEventEstimatedTravelTimeResultCellAccessibility
+0x1ee2c8520  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKEventGestureControllerAccessibility
+0x1ee2c84f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKEventMapCellAccessibility
+0x1ee2c84d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKEventViewControllerDefaultImplAccessibility
+0x1ee2c84a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKExpandingTextViewAccessibility
+0x1ef4e2290  __AUTH,__objc_data  _OBJC_CLASS_$_EKReminderDeleteDetailCellAccessibility
+0x1ee2c6a40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKReminderTitleDetailCellAccessibility
+0x1ef4e2330  __AUTH,__objc_data  _OBJC_CLASS_$_EKShowInRemindersDetailCellAccessibility
+0x1ee2c8480  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKTextViewWithLabelTextMetricsAccessibility
+0x1ee2c8458  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKUIAvailabilityFreeSpanViewAccessibility
+0x1ee2c8430  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKUIAvailabilityViewControllerAccessibility
+0x1ee2c8408  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKUIDividedGridViewCellAccessibility
+0x1ee2c83e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKUIDividedGridViewTableViewCellAccessibility
+0x1ee2c83b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKUIEventInviteesViewControllerAccessibility
+0x1ee2c8390  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKUIInviteesViewInviteesCellAccessibility
+0x1ee2c8368  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKUIInviteesViewTimeSlotCellAccessibility
+0x1ee2c6a18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKUIListViewTimedEventCellAccessibility
+0x1ee2c8340  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKUIParticipantContainerAccessibility
+0x1ee2c8318  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKUIPopupTableViewCellAccessibility
+0x1ee2c82f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKUITableViewCellAccessibility
+0x1ee2c82c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_EKUIYearMonthViewAccessibility
+0x1ef4e2218  __AUTH,__objc_data  _OBJC_CLASS_$_MobileCalDayContainerAccessibilityElement
+0x1ef4e23a8  __AUTH,__objc_data  _OBJC_CLASS_$_MobileCalDayPlaceholderElement
+0x1ef4e21f0  __AUTH,__objc_data  _OBJC_CLASS_$_MobileCalHourAccessibilityElement
+0x1ef4e21c8  __AUTH,__objc_data  _OBJC_CLASS_$_MobileCalOccurrencyContainerAccessibilityElement
+0x1ee2c82a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PreferencesDoubleTwoPartValueCellAccessibility
+0x1ee2c8278  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PreferencesTwoPartValueCellAccessibility
+0x1ee2c8250  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TwoPartTextLabelAccessibility
+0x1ee2c8228  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UILabelAccessibility__EventKitUI__UIKit
+0x1ee2c8200  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIScrollViewAccessibility_EventKit_UIKit
+0x1ee2c81d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CalendarMessageUIProxyAccessibility_super
+0x1ee2c89d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CalendarNotesCellAccessibility_super
+0x1ee2c6b30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___DayTwoPartLabelAccessibility_super
+0x1ee2c81b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKCalendarChooserCellAccessibility_super
+0x1ee2c8188  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKCalendarItemCalendarEditItemAccessibility_super
+0x1ee2c8160  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKCalendarItemEditorAccessibility_super
+0x1ee2c8138  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKCalendarItemLocationInlineEditItemAccessibility_super
+0x1ee2c8110  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKCurrentTimeMarkerViewAccessibility_super
+0x1ee2c80e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKDateTimeCellAccessibility_super
+0x1ee2c80c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKDayAllDayViewAccessibility_super
+0x1ee2c8098  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKDayGridViewAccessibility_super
+0x1ee2c8070  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKDayOccurrenceResizeHandleViewAccessibility_super
+0x1ee2c8048  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKDayOccurrenceViewAccessibility_super
+0x1ee2c8020  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKDayPreviewControllerAccessibility_super
+0x1ee2c7ff8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKDayViewAccessibility_super
+0x1ee2c7fd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKDayViewContentAccessibility_super
+0x1ee2c7fa8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKDayViewContentItemAccessibility_super
+0x1ee2c7f80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKDayViewControllerAccessibility_super
+0x1ee2c7f58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKEventAttachmentsEditItemAccessibility_super
+0x1ee2c7f30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKEventCalendarDetailItemAccessibility_super
+0x1ee2c7f08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKEventConferenceInformationDetailItemAccessibility_super
+0x1ee2c7ee0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKEventDateEditItemAccessibility_super
+0x1ee2c7eb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKEventDetailAttendeesCellAccessibility_super
+0x1ee2c7e90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKEventDetailCellAccessibility_super
+0x1ee2c6a90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKEventDetailConferenceCellAccessibility_super
+0x1ee2c7e68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKEventDetailTextCellAccessibility_super
+0x1ee2c7e40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKEventDetailTitleCellAccessibility_super
+0x1ee2c7e18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKEventEditViewControllerAccessibility_super
+0x1ee2c7df0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKEventEditorAccessibility_super
+0x1ee2c7dc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKEventEstimatedTravelTimeResultCellAccessibility_super
+0x1ef4e23f8  __AUTH,__objc_data  _OBJC_CLASS_$___EKEventGestureControllerAccessibility
+0x1ee2c7da0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKEventGestureControllerAccessibility_super
+0x1ee2c7d78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKEventMapCellAccessibility_super
+0x1ee2c7d50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKEventViewControllerDefaultImplAccessibility_super
+0x1ee2c7d28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKExpandingTextViewAccessibility_super
+0x1ef4e2268  __AUTH,__objc_data  _OBJC_CLASS_$___EKReminderDeleteDetailCellAccessibility_super
+0x1ee2c69f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKReminderTitleDetailCellAccessibility_super
+0x1ef4e2308  __AUTH,__objc_data  _OBJC_CLASS_$___EKShowInRemindersDetailCellAccessibility_super
+0x1ee2c7d00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKTextViewWithLabelTextMetricsAccessibility_super
+0x1ee2c7cd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKUIAvailabilityFreeSpanViewAccessibility_super
+0x1ee2c7cb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKUIAvailabilityViewControllerAccessibility_super
+0x1ee2c7c88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKUIDividedGridViewCellAccessibility_super
+0x1ee2c7c60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKUIDividedGridViewTableViewCellAccessibility_super
+0x1ee2c7c38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKUIEventInviteesViewControllerAccessibility_super
+0x1ee2c7c10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKUIInviteesViewInviteesCellAccessibility_super
+0x1ee2c7be8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKUIInviteesViewTimeSlotCellAccessibility_super
+0x1ee2c69c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKUIListViewTimedEventCellAccessibility_super
+0x1ee2c7bc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKUIParticipantContainerAccessibility_super
+0x1ee2c7b98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKUIPopupTableViewCellAccessibility_super
+0x1ee2c7b70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKUITableViewCellAccessibility_super
+0x1ee2c7b48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___EKUIYearMonthViewAccessibility_super
+0x1ee2c7b20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PreferencesDoubleTwoPartValueCellAccessibility_super
+0x1ee2c7af8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PreferencesTwoPartValueCellAccessibility_super
+0x1ee2c7ad0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___TwoPartTextLabelAccessibility_super
+0x1ee2c7aa8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___UILabelAccessibility__EventKitUI__UIKit_super
+0x1ee2c89a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___UIScrollViewAccessibility_EventKit_UIKit_super
+0x1eb3ab17c  __DATA,__objc_ivar  OBJC_IVAR_$_MobileCalDayContainerAccessibilityElement._children
+0x1eb3ab180  __DATA,__objc_ivar  OBJC_IVAR_$_MobileCalDayContainerAccessibilityElement._date
+0x1eb3ab184  __DATA,__objc_ivar  OBJC_IVAR_$_MobileCalDayContainerAccessibilityElement._indexInArray
+0x1eb3ab170  __DATA,__objc_ivar  OBJC_IVAR_$_MobileCalHourAccessibilityElement.hourDate
+0x1eb3ab178  __DATA,__objc_ivar  OBJC_IVAR_$_MobileCalOccurrencyContainerAccessibilityElement._children
+0x1ee2c89f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXEventKitUIGlue
+0x1ee2c7a80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CalendarMessageUIProxyAccessibility
+0x1ee2c7a58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CalendarNotesCellAccessibility
+0x1ee2c6b08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_DayTwoPartLabelAccessibility
+0x1ee2c7a30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKCalendarChooserCellAccessibility
+0x1ee2c7a08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKCalendarItemCalendarEditItemAccessibility
+0x1ee2c79e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKCalendarItemEditorAccessibility
+0x1ee2c79b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKCalendarItemLocationInlineEditItemAccessibility
+0x1ee2c7990  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKCurrentTimeMarkerViewAccessibility
+0x1ee2c7968  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKDateTimeCellAccessibility
+0x1ee2c7940  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKDayAllDayViewAccessibility
+0x1ee2c7918  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKDayGridViewAccessibility
+0x1ee2c78f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKDayOccurrenceResizeHandleViewAccessibility
+0x1ee2c78c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKDayOccurrenceViewAccessibility
+0x1ee2c78a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKDayPreviewControllerAccessibility
+0x1ee2c7878  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKDayViewAccessibility
+0x1ee2c7850  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKDayViewContentAccessibility
+0x1ee2c7828  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKDayViewContentItemAccessibility
+0x1ee2c7800  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKDayViewControllerAccessibility
+0x1ee2c77d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKEventAttachmentsEditItemAccessibility
+0x1ee2c77b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKEventCalendarDetailItemAccessibility
+0x1ee2c7788  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKEventConferenceInformationDetailItemAccessibility
+0x1ee2c7760  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKEventDateEditItemAccessibility
+0x1ee2c7738  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKEventDetailAttendeesCellAccessibility
+0x1ee2c7710  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKEventDetailCellAccessibility
+0x1ee2c69a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKEventDetailConferenceCellAccessibility
+0x1ee2c76e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKEventDetailTextCellAccessibility
+0x1ee2c8980  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKEventDetailTitleCellAccessibility
+0x1ee2c76c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKEventEditViewControllerAccessibility
+0x1ee2c7698  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKEventEditorAccessibility
+0x1ee2c7670  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKEventEstimatedTravelTimeResultCellAccessibility
+0x1ee2c7648  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKEventGestureControllerAccessibility
+0x1ee2c7620  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKEventMapCellAccessibility
+0x1ee2c75f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKEventViewControllerDefaultImplAccessibility
+0x1ee2c75d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKExpandingTextViewAccessibility
+0x1ef4e22b8  __AUTH,__objc_data  _OBJC_METACLASS_$_EKReminderDeleteDetailCellAccessibility
+0x1ee2c6978  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKReminderTitleDetailCellAccessibility
+0x1ef4e2358  __AUTH,__objc_data  _OBJC_METACLASS_$_EKShowInRemindersDetailCellAccessibility
+0x1ee2c75a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKTextViewWithLabelTextMetricsAccessibility
+0x1ee2c7580  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKUIAvailabilityFreeSpanViewAccessibility
+0x1ee2c7558  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKUIAvailabilityViewControllerAccessibility
+0x1ee2c7530  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKUIDividedGridViewCellAccessibility
+0x1ee2c7508  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKUIDividedGridViewTableViewCellAccessibility
+0x1ee2c74e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKUIEventInviteesViewControllerAccessibility
+0x1ee2c74b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKUIInviteesViewInviteesCellAccessibility
+0x1ee2c7490  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKUIInviteesViewTimeSlotCellAccessibility
+0x1ee2c6a68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKUIListViewTimedEventCellAccessibility
+0x1ee2c7468  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKUIParticipantContainerAccessibility
+0x1ee2c7440  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKUIPopupTableViewCellAccessibility
+0x1ee2c7418  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKUITableViewCellAccessibility
+0x1ee2c73f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_EKUIYearMonthViewAccessibility
+0x1ef4e21a0  __AUTH,__objc_data  _OBJC_METACLASS_$_MobileCalDayContainerAccessibilityElement
+0x1ef4e2380  __AUTH,__objc_data  _OBJC_METACLASS_$_MobileCalDayPlaceholderElement
+0x1ef4e2178  __AUTH,__objc_data  _OBJC_METACLASS_$_MobileCalHourAccessibilityElement
+0x1ef4e2150  __AUTH,__objc_data  _OBJC_METACLASS_$_MobileCalOccurrencyContainerAccessibilityElement
+0x1ee2c73c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PreferencesDoubleTwoPartValueCellAccessibility
+0x1ee2c73a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PreferencesTwoPartValueCellAccessibility
+0x1ee2c7378  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TwoPartTextLabelAccessibility
+0x1ee2c7350  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UILabelAccessibility__EventKitUI__UIKit
+0x1ee2c7328  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIScrollViewAccessibility_EventKit_UIKit
+0x1ee2c7300  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CalendarMessageUIProxyAccessibility_super
+0x1ee2c72d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CalendarNotesCellAccessibility_super
+0x1ee2c6ae0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___DayTwoPartLabelAccessibility_super
+0x1ee2c72b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKCalendarChooserCellAccessibility_super
+0x1ee2c7288  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKCalendarItemCalendarEditItemAccessibility_super
+0x1ee2c7260  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKCalendarItemEditorAccessibility_super
+0x1ee2c7238  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKCalendarItemLocationInlineEditItemAccessibility_super
+0x1ee2c7210  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKCurrentTimeMarkerViewAccessibility_super
+0x1ee2c71e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKDateTimeCellAccessibility_super
+0x1ee2c71c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKDayAllDayViewAccessibility_super
+0x1ee2c7198  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKDayGridViewAccessibility_super
+0x1ee2c7170  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKDayOccurrenceResizeHandleViewAccessibility_super
+0x1ee2c7148  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKDayOccurrenceViewAccessibility_super
+0x1ee2c7120  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKDayPreviewControllerAccessibility_super
+0x1ee2c70f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKDayViewAccessibility_super
+0x1ee2c70d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKDayViewContentAccessibility_super
+0x1ee2c70a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKDayViewContentItemAccessibility_super
+0x1ee2c7080  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKDayViewControllerAccessibility_super
+0x1ee2c7058  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKEventAttachmentsEditItemAccessibility_super
+0x1ee2c7030  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKEventCalendarDetailItemAccessibility_super
+0x1ee2c7008  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKEventConferenceInformationDetailItemAccessibility_super
+0x1ee2c6fe0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKEventDateEditItemAccessibility_super
+0x1ee2c6fb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKEventDetailAttendeesCellAccessibility_super
+0x1ee2c6f90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKEventDetailCellAccessibility_super
+0x1ee2c6950  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKEventDetailConferenceCellAccessibility_super
+0x1ee2c6f68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKEventDetailTextCellAccessibility_super
+0x1ee2c6f40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKEventDetailTitleCellAccessibility_super
+0x1ee2c6f18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKEventEditViewControllerAccessibility_super
+0x1ee2c6ef0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKEventEditorAccessibility_super
+0x1ee2c6ec8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKEventEstimatedTravelTimeResultCellAccessibility_super
+0x1ef4e23d0  __AUTH,__objc_data  _OBJC_METACLASS_$___EKEventGestureControllerAccessibility
+0x1ee2c6ea0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKEventGestureControllerAccessibility_super
+0x1ee2c6e78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKEventMapCellAccessibility_super
+0x1ee2c6e50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKEventViewControllerDefaultImplAccessibility_super
+0x1ee2c6e28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKExpandingTextViewAccessibility_super
+0x1ef4e2240  __AUTH,__objc_data  _OBJC_METACLASS_$___EKReminderDeleteDetailCellAccessibility_super
+0x1ee2c6928  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKReminderTitleDetailCellAccessibility_super
+0x1ef4e22e0  __AUTH,__objc_data  _OBJC_METACLASS_$___EKShowInRemindersDetailCellAccessibility_super
+0x1ee2c6e00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKTextViewWithLabelTextMetricsAccessibility_super
+0x1ee2c6dd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKUIAvailabilityFreeSpanViewAccessibility_super
+0x1ee2c6db0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKUIAvailabilityViewControllerAccessibility_super
+0x1ee2c6d88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKUIDividedGridViewCellAccessibility_super
+0x1ee2c6d60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKUIDividedGridViewTableViewCellAccessibility_super
+0x1ee2c6d38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKUIEventInviteesViewControllerAccessibility_super
+0x1ee2c6d10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKUIInviteesViewInviteesCellAccessibility_super
+0x1ee2c6ce8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKUIInviteesViewTimeSlotCellAccessibility_super
+0x1ee2c6900  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKUIListViewTimedEventCellAccessibility_super
+0x1ee2c6cc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKUIParticipantContainerAccessibility_super
+0x1ee2c6c98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKUIPopupTableViewCellAccessibility_super
+0x1ee2c6c70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKUITableViewCellAccessibility_super
+0x1ee2c6c48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___EKUIYearMonthViewAccessibility_super
+0x1ee2c6c20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PreferencesDoubleTwoPartValueCellAccessibility_super
+0x1ee2c6bf8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PreferencesTwoPartValueCellAccessibility_super
+0x1ee2c6bd0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___TwoPartTextLabelAccessibility_super
+0x1ee2c6ba8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___UILabelAccessibility__EventKitUI__UIKit_super
+0x1ee2c6b80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___UIScrollViewAccessibility_EventKit_UIKit_super
+0x189d3e014  __TEXT,__text  __AXGetYearlessStringForDay
+0x1ee2c8a70  __DATA_DIRTY,__common  __Failover
+0x189d3f964  __TEXT,__text  _accessibilityCalendarTitleForEventIfNecessary
+0x189d3f8d4  __TEXT,__text  _accessibilityLocalizedString
+```
+
+## Private
+
+```
+0x189d3d260  __TEXT,__text  +[AXEventKitUIGlue accessibilityInitializeBundle]
+0x189d3d2e8  __TEXT,__text  ___49+[AXEventKitUIGlue accessibilityInitializeBundle]_block_invoke
+0x189d3d57c  __TEXT,__text  ___49+[AXEventKitUIGlue accessibilityInitializeBundle]_block_invoke_2
+0x189d3d5c4  __TEXT,__text  ___49+[AXEventKitUIGlue accessibilityInitializeBundle]_block_invoke_3
+0x189d3da38  __TEXT,__text  -[EKEvent(AccessibilityUtilities) _accessibilityDurationString]
+0x189d3dcc0  __TEXT,__text  -[NSDate(AccessibilityUtilities) _accessibilityTimeString]
+0x189d3dd34  __TEXT,__text  -[NSDate(AccessibilityUtilities) _accessibilityYearlessDayString]
+0x189d3dd40  __TEXT,__text  -[UIView(AccessibilityDragAndDrop) _accessibilityDragAndDropTargetViewForDrop:]
+0x189d3dd48  __TEXT,__text  -[UIView(AccessibilityDragAndDrop) _accessibilityDragAndDropTargetViewForDrop:eventGestureController:]
+0x189d3e018  __TEXT,__text  +[EKReminderDeleteDetailCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d3e024  __TEXT,__text  +[EKReminderDeleteDetailCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3e030  __TEXT,__text  +[EKReminderDeleteDetailCellAccessibility _accessibilityPerformValidations:]
+0x189d3e098  __TEXT,__text  -[EKReminderDeleteDetailCellAccessibility isAccessibilityElement]
+0x189d3e0a0  __TEXT,__text  -[EKReminderDeleteDetailCellAccessibility accessibilityLabel]
+0x189d3e110  __TEXT,__text  -[EKReminderDeleteDetailCellAccessibility accessibilityTraits]
+0x189d3e158  __TEXT,__text  +[EKShowInRemindersDetailCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d3e164  __TEXT,__text  +[EKShowInRemindersDetailCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3e170  __TEXT,__text  +[EKShowInRemindersDetailCellAccessibility _accessibilityPerformValidations:]
+0x189d3e1d8  __TEXT,__text  -[EKShowInRemindersDetailCellAccessibility isAccessibilityElement]
+0x189d3e1e0  __TEXT,__text  -[EKShowInRemindersDetailCellAccessibility accessibilityLabel]
+0x189d3e250  __TEXT,__text  -[EKShowInRemindersDetailCellAccessibility accessibilityTraits]
+0x189d3e298  __TEXT,__text  +[EKReminderTitleDetailCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d3e2a4  __TEXT,__text  +[EKReminderTitleDetailCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3e2b0  __TEXT,__text  +[EKReminderTitleDetailCellAccessibility _accessibilityPerformValidations:]
+0x189d3e334  __TEXT,__text  -[EKReminderTitleDetailCellAccessibility isAccessibilityElement]
+0x189d3e33c  __TEXT,__text  -[EKReminderTitleDetailCellAccessibility _axCircleView]
+0x189d3e348  __TEXT,__text  -[EKReminderTitleDetailCellAccessibility _axEvent]
+0x189d3e3c0  __TEXT,__text  -[EKReminderTitleDetailCellAccessibility _axTitle]
+0x189d3e3cc  __TEXT,__text  -[EKReminderTitleDetailCellAccessibility accessibilityActivationPoint]
+0x189d3e414  __TEXT,__text  -[EKReminderTitleDetailCellAccessibility accessibilityLabel]
+0x189d3e4e8  __TEXT,__text  ___60-[EKReminderTitleDetailCellAccessibility accessibilityLabel]_block_invoke
+0x189d3e55c  __TEXT,__text  -[EKReminderTitleDetailCellAccessibility accessibilityValue]
+0x189d3e5b4  __TEXT,__text  -[EKReminderTitleDetailCellAccessibility accessibilityHint]
+0x189d3e624  __TEXT,__text  +[EKUIListViewTimedEventCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d3e630  __TEXT,__text  +[EKUIListViewTimedEventCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3e63c  __TEXT,__text  -[EKUIListViewTimedEventCellAccessibility _axIsMultiDay]
+0x189d3e648  __TEXT,__text  -[EKUIListViewTimedEventCellAccessibility _axSetIsMultiDay:]
+0x189d3e654  __TEXT,__text  +[EKUIListViewTimedEventCellAccessibility _accessibilityPerformValidations:]
+0x189d3e774  __TEXT,__text  -[EKUIListViewTimedEventCellAccessibility _axSafeLabelForUILabelKey:]
+0x189d3e824  __TEXT,__text  -[EKUIListViewTimedEventCellAccessibility accessibilityLabel]
+0x189d3ea70  __TEXT,__text  -[EKUIListViewTimedEventCellAccessibility accessibilityValue]
+0x189d3eb1c  __TEXT,__text  -[EKUIListViewTimedEventCellAccessibility updateWithEvent:isMultiday:occurrenceStartDate:dimmed:]
+0x189d3ebb0  __TEXT,__text  +[EKUIPopupTableViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d3ebbc  __TEXT,__text  +[EKUIPopupTableViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3ebc8  __TEXT,__text  +[EKUIPopupTableViewCellAccessibility _accessibilityPerformValidations:]
+0x189d3ebe8  __TEXT,__text  -[EKUIPopupTableViewCellAccessibility isAccessibilityElement]
+0x189d3ebf0  __TEXT,__text  -[EKUIPopupTableViewCellAccessibility accessibilityTraits]
+0x189d3ec00  __TEXT,__text  -[EKUIPopupTableViewCellAccessibility accessibilityValue]
+0x189d3ec48  __TEXT,__text  +[EKUIParticipantContainerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d3ec54  __TEXT,__text  +[EKUIParticipantContainerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3ec60  __TEXT,__text  +[EKUIParticipantContainerAccessibility _accessibilityPerformValidations:]
+0x189d3ecd4  __TEXT,__text  -[EKUIParticipantContainerAccessibility isAccessibilityElement]
+0x189d3ecdc  __TEXT,__text  -[EKUIParticipantContainerAccessibility accessibilityLabel]
+0x189d3ed8c  __TEXT,__text  +[EKUIAvailabilityFreeSpanViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d3ed98  __TEXT,__text  +[EKUIAvailabilityFreeSpanViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3eda4  __TEXT,__text  +[EKUIAvailabilityFreeSpanViewAccessibility _accessibilityPerformValidations:]
+0x189d3ede4  __TEXT,__text  -[EKUIAvailabilityFreeSpanViewAccessibility isAccessibilityElement]
+0x189d3edec  __TEXT,__text  -[EKUIAvailabilityFreeSpanViewAccessibility accessibilityLabel]
+0x189d3ee3c  __TEXT,__text  -[EKUIAvailabilityFreeSpanViewAccessibility accessibilityHint]
+0x189d3ee48  __TEXT,__text  -[EKUIAvailabilityFreeSpanViewAccessibility accessibilityActivationPoint]
+0x189d3eeac  __TEXT,__text  +[EKUIAvailabilityViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d3eeb8  __TEXT,__text  +[EKUIAvailabilityViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3eec4  __TEXT,__text  +[EKUIAvailabilityViewControllerAccessibility _accessibilityPerformValidations:]
+0x189d3ef50  __TEXT,__text  -[EKUIAvailabilityViewControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d3ef9c  __TEXT,__text  -[EKUIAvailabilityViewControllerAccessibility _accessibilitySetup]
+0x189d3f068  __TEXT,__text  ___66-[EKUIAvailabilityViewControllerAccessibility _accessibilitySetup]_block_invoke
+0x189d3f0e4  __TEXT,__text  -[EKUIAvailabilityViewControllerAccessibility viewDidAppear:]
+0x189d3f130  __TEXT,__text  -[EKUIAvailabilityViewControllerAccessibility layout]
+0x189d3f1a8  __TEXT,__text  +[EKEventEditViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d3f1b4  __TEXT,__text  +[EKEventEditViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3f1c0  __TEXT,__text  +[EKEventEditViewControllerAccessibility _accessibilityPerformValidations:]
+0x189d3f20c  __TEXT,__text  -[EKEventEditViewControllerAccessibility accessibilityPerformEscape]
+0x189d3f27c  __TEXT,__text  ___68-[EKEventEditViewControllerAccessibility accessibilityPerformEscape]_block_invoke
+0x189d3f28c  __TEXT,__text  +[EKUITableViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d3f298  __TEXT,__text  +[EKUITableViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3f2a4  __TEXT,__text  +[EKUITableViewCellAccessibility _accessibilityPerformValidations:]
+0x189d3f2a8  __TEXT,__text  -[EKUITableViewCellAccessibility _accessibilityHitTestShouldFallbackToNearestChild]
+0x189d3f2b0  __TEXT,__text  +[CalendarMessageUIProxyAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d3f2bc  __TEXT,__text  +[CalendarMessageUIProxyAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3f2c8  __TEXT,__text  +[CalendarMessageUIProxyAccessibility _accessibilityPerformValidations:]
+0x189d3f3c8  __TEXT,__text  +[CalendarMessageUIProxyAccessibility CalendarComposeRecipientClass]
+0x189d3f46c  __TEXT,__text  +[CalendarMessageUIProxyAccessibility MailComposeRecipientClass]
+0x189d3f510  __TEXT,__text  +[CalendarMessageUIProxyAccessibility ComposeRecipientViewClass]
+0x189d3f5b4  __TEXT,__text  +[CalendarMessageUIProxyAccessibility RecipientTableViewCellClass]
+0x189d3f658  __TEXT,__text  +[CalendarMessageUIProxyAccessibility SearchShadowViewClass]
+0x189d3f6fc  __TEXT,__text  +[CalendarMessageUIProxyAccessibility MFContactsSearchManagerClass]
+0x189d3f7a0  __TEXT,__text  +[CalendarMessageUIProxyAccessibility MFContactsSearchResultsModelClass]
+0x189d3fb80  __TEXT,__text  +[EKCalendarChooserCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d3fb8c  __TEXT,__text  +[EKCalendarChooserCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3fb98  __TEXT,__text  -[EKCalendarChooserCellAccessibility accessibilityTraits]
+0x189d3fc9c  __TEXT,__text  +[EKDateTimeCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d3fca8  __TEXT,__text  +[EKDateTimeCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3fcb4  __TEXT,__text  +[EKDateTimeCellAccessibility _accessibilityPerformValidations:]
+0x189d3fd58  __TEXT,__text  -[EKDateTimeCellAccessibility isAccessibilityElement]
+0x189d3fd60  __TEXT,__text  -[EKDateTimeCellAccessibility accessibilityLabel]
+0x189d3fee4  __TEXT,__text  ___49-[EKDateTimeCellAccessibility accessibilityLabel]_block_invoke
+0x189d3ff2c  __TEXT,__text  ___49-[EKDateTimeCellAccessibility accessibilityLabel]_block_invoke_2
+0x189d3ff74  __TEXT,__text  +[EKCalendarItemCalendarEditItemAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d3ff80  __TEXT,__text  +[EKCalendarItemCalendarEditItemAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d3ff8c  __TEXT,__text  +[EKCalendarItemCalendarEditItemAccessibility _accessibilityPerformValidations:]
+0x189d3ffd4  __TEXT,__text  -[EKCalendarItemCalendarEditItemAccessibility cellForSubitemAtIndex:]
+0x189d40068  __TEXT,__text  +[EKCalendarItemEditorAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d40074  __TEXT,__text  +[EKCalendarItemEditorAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d40080  __TEXT,__text  -[EKCalendarItemEditorAccessibility tableView:cellForRowAtIndexPath:]
+0x189d40124  __TEXT,__text  +[EKEventEditorAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d40130  __TEXT,__text  +[EKEventEditorAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d4013c  __TEXT,__text  +[EKEventEditorAccessibility _accessibilityPerformValidations:]
+0x189d4015c  __TEXT,__text  -[EKEventEditorAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d40210  __TEXT,__text  +[EKCalendarItemLocationInlineEditItemAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d4021c  __TEXT,__text  +[EKCalendarItemLocationInlineEditItemAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d40228  __TEXT,__text  +[EKCalendarItemLocationInlineEditItemAccessibility _accessibilityPerformValidations:]
+0x189d402b8  __TEXT,__text  -[EKCalendarItemLocationInlineEditItemAccessibility cellForSubitemAtIndex:]
+0x189d40324  __TEXT,__text  -[EKCalendarItemLocationInlineEditItemAccessibility _updateClearButtonAndMakeVisible:index:]
+0x189d403ac  __TEXT,__text  +[EKCurrentTimeMarkerViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d403b8  __TEXT,__text  +[EKCurrentTimeMarkerViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d403c4  __TEXT,__text  +[EKCurrentTimeMarkerViewAccessibility _accessibilityPerformValidations:]
+0x189d403c8  __TEXT,__text  -[EKCurrentTimeMarkerViewAccessibility _accessibilitySupportsContentSizeCategory:]
+0x189d403f0  __TEXT,__text  +[EKDayAllDayViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d403fc  __TEXT,__text  +[EKDayAllDayViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d40408  __TEXT,__text  +[EKDayAllDayViewAccessibility _accessibilityPerformValidations:]
+0x189d40484  __TEXT,__text  -[EKDayAllDayViewAccessibility _axAnnotateAllDayLabel]
+0x189d404d4  __TEXT,__text  -[EKDayAllDayViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d40520  __TEXT,__text  -[EKDayAllDayViewAccessibility initWithFrame:]
+0x189d40570  __TEXT,__text  -[MobileCalDayPlaceholderElement accessibilityFrame]
+0x189d405f4  __TEXT,__text  -[MobileCalHourAccessibilityElement accessibilityLabel]
+0x189d407d4  __TEXT,__text  -[MobileCalHourAccessibilityElement accessibilityUserInputLabels]
+0x189d40890  __TEXT,__text  -[MobileCalHourAccessibilityElement _frameInDayGridView]
+0x189d40a3c  __TEXT,__text  -[MobileCalHourAccessibilityElement accessibilityFrame]
+0x189d40aac  __TEXT,__text  -[MobileCalHourAccessibilityElement _accessibilityIsSpeakThisElement]
+0x189d40ab4  __TEXT,__text  -[MobileCalHourAccessibilityElement isAccessibilityElement]
+0x189d40b90  __TEXT,__text  -[MobileCalHourAccessibilityElement accessibilityFrameForScrolling]
+0x189d40d14  __TEXT,__text  -[MobileCalHourAccessibilityElement accessibilityDropPointDescriptors]
+0x189d40f6c  __TEXT,__text  -[MobileCalHourAccessibilityElement hourDate]
+0x189d40f80  __TEXT,__text  -[MobileCalHourAccessibilityElement setHourDate:]
+0x189d40f94  __TEXT,__text  -[MobileCalHourAccessibilityElement dayGridView]
+0x189d40fbc  __TEXT,__text  -[MobileCalHourAccessibilityElement setDayGridView:]
+0x189d40fd0  __TEXT,__text  -[MobileCalHourAccessibilityElement .cxx_destruct]
+0x189d41014  __TEXT,__text  -[MobileCalOccurrencyContainerAccessibilityElement dealloc]
+0x189d41130  __TEXT,__text  -[MobileCalOccurrencyContainerAccessibilityElement accessibilityFrame]
+0x189d41238  __TEXT,__text  -[MobileCalOccurrencyContainerAccessibilityElement accessibilityElements]
+0x189d4123c  __TEXT,__text  -[MobileCalOccurrencyContainerAccessibilityElement isAccessibilityElement]
+0x189d41244  __TEXT,__text  -[MobileCalOccurrencyContainerAccessibilityElement children]
+0x189d41258  __TEXT,__text  -[MobileCalOccurrencyContainerAccessibilityElement setChildren:]
+0x189d4126c  __TEXT,__text  -[MobileCalOccurrencyContainerAccessibilityElement .cxx_destruct]
+0x189d41280  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement dealloc]
+0x189d4139c  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement accessibilityContainerType]
+0x189d413a4  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement accessibilityElements]
+0x189d413a8  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement canBecomeFocused]
+0x189d413b0  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement accessibilityLabel]
+0x189d41484  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement accessibilityFrame]
+0x189d41558  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement isAccessibilityElement]
+0x189d41560  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement _accessibilityParentForFindingScrollParent]
+0x189d41564  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement _accessibilityHitTest:withEvent:]
+0x189d417c0  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement children]
+0x189d417d4  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement setChildren:]
+0x189d417e8  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement date]
+0x189d417fc  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement setDate:]
+0x189d41810  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement indexInArray]
+0x189d41824  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement setIndexInArray:]
+0x189d41838  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement dayGrid]
+0x189d41860  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement setDayGrid:]
+0x189d41874  __TEXT,__text  -[MobileCalDayContainerAccessibilityElement .cxx_destruct]
+0x189d418cc  __TEXT,__text  +[EKDayGridViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d418d8  __TEXT,__text  +[EKDayGridViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d418e4  __TEXT,__text  +[EKDayGridViewAccessibility _accessibilityPerformValidations:]
+0x189d419b4  __TEXT,__text  -[EKDayGridViewAccessibility accessibilityIsPreviewGridView]
+0x189d419c0  __TEXT,__text  -[EKDayGridViewAccessibility setAccessibilityIsPreviewGridView:]
+0x189d419cc  __TEXT,__text  -[EKDayGridViewAccessibility initWithFrame:backgroundColor:opaque:numberOfDaysToDisplay:]
+0x189d41a54  __TEXT,__text  -[EKDayGridViewAccessibility _axResetChildren]
+0x189d41ca0  __TEXT,__text  -[EKDayGridViewAccessibility _accessibilityOccurrencesChanged:]
+0x189d41ca4  __TEXT,__text  -[EKDayGridViewAccessibility _accessibilityHideEmptyHours]
+0x189d41cf0  __TEXT,__text  -[EKDayGridViewAccessibility accessibilityElements]
+0x189d42a04  __TEXT,__text  ___51-[EKDayGridViewAccessibility accessibilityElements]_block_invoke
+0x189d42a54  __TEXT,__text  -[EKDayGridViewAccessibility dealloc]
+0x189d42ac0  __TEXT,__text  -[EKDayGridViewAccessibility isAccessibilityElement]
+0x189d42ac8  __TEXT,__text  +[EKDayOccurrenceResizeHandleViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d42ad4  __TEXT,__text  +[EKDayOccurrenceResizeHandleViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d42ae0  __TEXT,__text  -[EKDayOccurrenceResizeHandleViewAccessibility _axIsStartHandle]
+0x189d42b20  __TEXT,__text  -[EKDayOccurrenceResizeHandleViewAccessibility _axIsEndHandle]
+0x189d42b60  __TEXT,__text  -[EKDayOccurrenceResizeHandleViewAccessibility isAccessibilityElement]
+0x189d42b68  __TEXT,__text  -[EKDayOccurrenceResizeHandleViewAccessibility accessibilityLabel]
+0x189d42bc4  __TEXT,__text  -[EKDayOccurrenceResizeHandleViewAccessibility accessibilityHint]
+0x189d42c20  __TEXT,__text  -[EKDayOccurrenceResizeHandleViewAccessibility accessibilityActivationPoint]
+0x189d42cb4  __TEXT,__text  +[DayTwoPartLabelAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d42cc0  __TEXT,__text  +[DayTwoPartLabelAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d42ccc  __TEXT,__text  +[DayTwoPartLabelAccessibility _accessibilityPerformValidations:]
+0x189d42d88  __TEXT,__text  -[DayTwoPartLabelAccessibility isAccessibilityElement]
+0x189d42d90  __TEXT,__text  -[DayTwoPartLabelAccessibility accessibilityLabel]
+0x189d42e70  __TEXT,__text  -[DayTwoPartLabelAccessibility accessibilityTraits]
+0x189d42e90  __TEXT,__text  -[DayTwoPartLabelAccessibility _accessibilitySupportsContentSizeCategory:]
+0x189d42ed4  __TEXT,__text  +[EKDayOccurrenceViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d42ee0  __TEXT,__text  +[EKDayOccurrenceViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d42eec  __TEXT,__text  -[EKDayOccurrenceViewAccessibility _axRealFrameInSuperview]
+0x189d42ef8  __TEXT,__text  -[EKDayOccurrenceViewAccessibility _axSetRealFrameInSuperview:]
+0x189d42f04  __TEXT,__text  -[EKDayOccurrenceViewAccessibility _axDropPointDescriptorsProvider]
+0x189d42f10  __TEXT,__text  -[EKDayOccurrenceViewAccessibility _axSetDropPointDescriptorsProvider:]
+0x189d42f1c  __TEXT,__text  +[EKDayOccurrenceViewAccessibility _accessibilityPerformValidations:]
+0x189d43264  __TEXT,__text  -[EKDayOccurrenceViewAccessibility _axIsInPreview]
+0x189d432b4  __TEXT,__text  -[EKDayOccurrenceViewAccessibility isAccessibilityElement]
+0x189d4334c  __TEXT,__text  -[EKDayOccurrenceViewAccessibility accessibilityFrameForScrolling]
+0x189d43490  __TEXT,__text  -[EKDayOccurrenceViewAccessibility accessibilityLabel]
+0x189d43ac8  __TEXT,__text  -[EKDayOccurrenceViewAccessibility accessibilityUserInputLabels]
+0x189d43b88  __TEXT,__text  -[EKDayOccurrenceViewAccessibility _accessibilitySupplementaryFooterViews]
+0x189d43c3c  __TEXT,__text  -[EKDayOccurrenceViewAccessibility _accessibilitySupplementaryHeaderViews]
+0x189d43cf0  __TEXT,__text  -[EKDayOccurrenceViewAccessibility setDrawsResizeHandles:]
+0x189d43db8  __TEXT,__text  -[EKDayOccurrenceViewAccessibility _axDraggingView]
+0x189d43fc0  __TEXT,__text  -[EKDayOccurrenceViewAccessibility accessibilityCustomRotors]
+0x189d44178  __TEXT,__text  ___61-[EKDayOccurrenceViewAccessibility accessibilityCustomRotors]_block_invoke
+0x189d44258  __TEXT,__text  -[EKDayOccurrenceViewAccessibility accessibilityTraits]
+0x189d4434c  __TEXT,__text  -[EKDayOccurrenceViewAccessibility _axWidgetContainerView]
+0x189d44384  __TEXT,__text  -[EKDayOccurrenceViewAccessibility _accessibilityIsInWidget]
+0x189d443b8  __TEXT,__text  -[EKDayOccurrenceViewAccessibility accessibilityHint]
+0x189d44440  __TEXT,__text  -[EKDayOccurrenceViewAccessibility prepareForReuse]
+0x189d44490  __TEXT,__text  -[EKDayOccurrenceViewAccessibility _accessibilityIsSpeakThisElement]
+0x189d444ac  __TEXT,__text  -[EKDayOccurrenceViewAccessibility accessibilityDragSourceDescriptors]
+0x189d44668  __TEXT,__text  -[EKDayOccurrenceViewAccessibility accessibilityDropPointDescriptors]
+0x189d446f8  __TEXT,__text  -[EKDayOccurrenceViewAccessibility canBecomeFocused]
+0x189d447d0  __TEXT,__text  ___52-[EKDayOccurrenceViewAccessibility canBecomeFocused]_block_invoke
+0x189d44820  __TEXT,__text  +[EKDayPreviewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d4482c  __TEXT,__text  +[EKDayPreviewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d44838  __TEXT,__text  +[EKDayPreviewControllerAccessibility _accessibilityPerformValidations:]
+0x189d448c0  __TEXT,__text  -[EKDayPreviewControllerAccessibility _axAnnotateDayView]
+0x189d44a30  __TEXT,__text  -[EKDayPreviewControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d44a7c  __TEXT,__text  -[EKDayPreviewControllerAccessibility viewWillAppear:]
+0x189d44ac8  __TEXT,__text  +[EKEventDetailTextCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d44ad4  __TEXT,__text  +[EKEventDetailTextCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d44ae0  __TEXT,__text  +[EKEventDetailTextCellAccessibility _accessibilityPerformValidations:]
+0x189d44b50  __TEXT,__text  -[EKEventDetailTextCellAccessibility isAccessibilityElement]
+0x189d44b58  __TEXT,__text  -[EKEventDetailTextCellAccessibility _accessibilityAutomationType]
+0x189d44b60  __TEXT,__text  -[EKEventDetailTextCellAccessibility accessibilityLabel]
+0x189d44b6c  __TEXT,__text  -[EKEventDetailTextCellAccessibility accessibilityValue]
+0x189d44bdc  __TEXT,__text  -[EKEventDetailTextCellAccessibility _accessibilityDataDetectorScheme:]
+0x189d44c80  __TEXT,__text  -[EKEventDetailTextCellAccessibility _accessibilityLineNumberAndColumnForPoint:]
+0x189d44ce0  __TEXT,__text  -[EKEventDetailTextCellAccessibility _accessibilityRangeForLineNumberAndColumn:]
+0x189d44d48  __TEXT,__text  -[EKEventDetailTextCellAccessibility _accessibilityChargedLineBoundsForRange:]
+0x189d44dc8  __TEXT,__text  -[EKEventDetailTextCellAccessibility _accessibilityBoundsForRange:]
+0x189d44e48  __TEXT,__text  -[EKEventDetailTextCellAccessibility _accessibilityInternalTextLinks]
+0x189d44e90  __TEXT,__text  -[EKEventDetailTextCellAccessibility accessibilityCustomRotors]
+0x189d44e94  __TEXT,__text  -[EKEventDetailTextCellAccessibility accessibilityTraits]
+0x189d44ea4  __TEXT,__text  +[EKDayViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d44eb0  __TEXT,__text  +[EKDayViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d44ebc  __TEXT,__text  +[EKDayViewAccessibility _accessibilityPerformValidations:]
+0x189d44fd4  __TEXT,__text  -[EKDayViewAccessibility accessibilityScrollView]
+0x189d44ffc  __TEXT,__text  -[EKDayViewAccessibility _axAnnotateScroller]
+0x189d45090  __TEXT,__text  -[EKDayViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d450dc  __TEXT,__text  -[EKDayViewAccessibility initWithFrame:sizeClass:aspectRatioType:displayDate:backgroundColor:opaque:scrollbarShowsInside:isMiniPreviewInEventDetail:rightClickDelegate:]
+0x189d4513c  __TEXT,__text  -[EKDayViewAccessibility accessibilityCustomRotors]
+0x189d452d4  __TEXT,__text  ___51-[EKDayViewAccessibility accessibilityCustomRotors]_block_invoke
+0x189d453f8  __TEXT,__text  +[EKDayViewContentAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d45404  __TEXT,__text  +[EKDayViewContentAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d45410  __TEXT,__text  +[EKDayViewContentAccessibility _accessibilityPerformValidations:]
+0x189d454b8  __TEXT,__text  -[EKDayViewContentAccessibility applyLoadedOccurrencesWithBatching:animated:reverse:completion:]
+0x189d45574  __TEXT,__text  -[EKDayViewContentAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d45734  __TEXT,__text  +[EKDayViewContentItemAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d45740  __TEXT,__text  +[EKDayViewContentItemAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d4574c  __TEXT,__text  +[EKDayViewContentItemAccessibility _accessibilityPerformValidations:]
+0x189d457e8  __TEXT,__text  -[EKDayViewContentItemAccessibility _axAnnotateOccurrenceView]
+0x189d458b0  __TEXT,__text  -[EKDayViewContentItemAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d458fc  __TEXT,__text  -[EKDayViewContentItemAccessibility setUnPinnedViewFrame:]
+0x189d45948  __TEXT,__text  +[EKDayViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d45954  __TEXT,__text  +[EKDayViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d45960  __TEXT,__text  +[EKDayViewControllerAccessibility _accessibilityPerformValidations:]
+0x189d45a68  __TEXT,__text  -[EKDayViewControllerAccessibility _axDayString]
+0x189d45b10  __TEXT,__text  -[EKDayViewControllerAccessibility accessibilityScroll:]
+0x189d45c38  __TEXT,__text  -[EKDayViewControllerAccessibility _scrollViewDidEndDecelerating:]
+0x189d45ca4  __TEXT,__text  -[EKDayViewControllerAccessibility _relayoutDaysDuringScrolling]
+0x189d45db0  __TEXT,__text  ___64-[EKDayViewControllerAccessibility _relayoutDaysDuringScrolling]_block_invoke
+0x189d45dec  __TEXT,__text  ___64-[EKDayViewControllerAccessibility _relayoutDaysDuringScrolling]_block_invoke_2
+0x189d45e00  __TEXT,__text  -[EKDayViewControllerAccessibility accessibilityScrollStatusForScrollView:]
+0x189d45ea4  __TEXT,__text  +[EKEventAttachmentsEditItemAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d45eb0  __TEXT,__text  +[EKEventAttachmentsEditItemAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d45ebc  __TEXT,__text  +[EKEventAttachmentsEditItemAccessibility _accessibilityPerformValidations:]
+0x189d45f04  __TEXT,__text  -[EKEventAttachmentsEditItemAccessibility cellForSubitemAtIndex:]
+0x189d45f70  __TEXT,__text  +[EKEventCalendarDetailItemAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d45f7c  __TEXT,__text  +[EKEventCalendarDetailItemAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d45f88  __TEXT,__text  +[EKEventCalendarDetailItemAccessibility _accessibilityPerformValidations:]
+0x189d45fd4  __TEXT,__text  -[EKEventCalendarDetailItemAccessibility cellForSubitemAtIndex:withTraitCollection:]
+0x189d460d4  __TEXT,__text  +[EKEventDateEditItemAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d460e0  __TEXT,__text  +[EKEventDateEditItemAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d460ec  __TEXT,__text  +[EKEventDateEditItemAccessibility _accessibilityPerformValidations:]
+0x189d462bc  __TEXT,__text  -[EKEventDateEditItemAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d46354  __TEXT,__text  -[EKEventDateEditItemAccessibility editor:didSelectSubitem:]
+0x189d4640c  __TEXT,__text  ___60-[EKEventDateEditItemAccessibility editor:didSelectSubitem:]_block_invoke
+0x189d4666c  __TEXT,__text  ___60-[EKEventDateEditItemAccessibility editor:didSelectSubitem:]_block_invoke_2
+0x189d466a4  __TEXT,__text  ___60-[EKEventDateEditItemAccessibility editor:didSelectSubitem:]_block_invoke_3
+0x189d466dc  __TEXT,__text  -[EKEventDateEditItemAccessibility _datePickerChanged:]
+0x189d46728  __TEXT,__text  -[EKEventDateEditItemAccessibility _showInlineControls:forSubitem:includingInlineDatePicker:]
+0x189d46804  __TEXT,__text  -[EKEventDateEditItemAccessibility _axUpdateEndDateCellLabel]
+0x189d46894  __TEXT,__text  -[EKEventDateEditItemAccessibility _accessibilitySetupDateCellForKey:]
+0x189d46964  __TEXT,__text  +[EKEventDetailAttendeesCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d46970  __TEXT,__text  +[EKEventDetailAttendeesCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d4697c  __TEXT,__text  +[EKEventDetailAttendeesCellAccessibility _accessibilityPerformValidations:]
+0x189d46a50  __TEXT,__text  -[EKEventDetailAttendeesCellAccessibility _axStringForParticipants:]
+0x189d46cc0  __TEXT,__text  -[EKEventDetailAttendeesCellAccessibility accessibilityLabel]
+0x189d46d70  __TEXT,__text  -[EKEventDetailAttendeesCellAccessibility accessibilityValue]
+0x189d474b8  __TEXT,__text  ___61-[EKEventDetailAttendeesCellAccessibility accessibilityValue]_block_invoke
+0x189d474fc  __TEXT,__text  ___61-[EKEventDetailAttendeesCellAccessibility accessibilityValue]_block_invoke_2
+0x189d47540  __TEXT,__text  ___61-[EKEventDetailAttendeesCellAccessibility accessibilityValue]_block_invoke_3
+0x189d47584  __TEXT,__text  ___61-[EKEventDetailAttendeesCellAccessibility accessibilityValue]_block_invoke_4
+0x189d475c8  __TEXT,__text  +[EKEventDetailCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d475d4  __TEXT,__text  +[EKEventDetailCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d475e0  __TEXT,__text  -[EKEventDetailCellAccessibility accessibilityTraits]
+0x189d47640  __TEXT,__text  +[EKEventDetailTitleCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d4764c  __TEXT,__text  +[EKEventDetailTitleCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d47658  __TEXT,__text  +[EKEventDetailTitleCellAccessibility _accessibilityPerformValidations:]
+0x189d478c4  __TEXT,__text  -[EKEventDetailTitleCellAccessibility _axAnnotateLocationViewsIfNeeded]
+0x189d47b0c  __TEXT,__text  -[EKEventDetailTitleCellAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d47b58  __TEXT,__text  -[EKEventDetailTitleCellAccessibility isAccessibilityElement]
+0x189d47b60  __TEXT,__text  -[EKEventDetailTitleCellAccessibility accessibilityCustomActions]
+0x189d47f8c  __TEXT,__text  ___65-[EKEventDetailTitleCellAccessibility accessibilityCustomActions]_block_invoke
+0x189d47fc0  __TEXT,__text  ___65-[EKEventDetailTitleCellAccessibility accessibilityCustomActions]_block_invoke_2
+0x189d47fc8  __TEXT,__text  ___65-[EKEventDetailTitleCellAccessibility accessibilityCustomActions]_block_invoke_3
+0x189d47fd4  __TEXT,__text  -[EKEventDetailTitleCellAccessibility _addCustomActionToActionsArray:forControl:actionBlock:]
+0x189d480fc  __TEXT,__text  ___93-[EKEventDetailTitleCellAccessibility _addCustomActionToActionsArray:forControl:actionBlock:]_block_invoke
+0x189d4817c  __TEXT,__text  ___93-[EKEventDetailTitleCellAccessibility _addCustomActionToActionsArray:forControl:actionBlock:]_block_invoke_2
+0x189d4818c  __TEXT,__text  -[EKEventDetailTitleCellAccessibility accessibilityCustomContent]
+0x189d48814  __TEXT,__text  _getAXCustomContentClass
+0x189d488e8  __TEXT,__text  -[EKEventDetailTitleCellAccessibility accessibilityLabel]
+0x189d48930  __TEXT,__text  -[EKEventDetailTitleCellAccessibility addLocation:]
+0x189d4897c  __TEXT,__text  -[EKEventDetailTitleCellAccessibility _accessibilitySupplementaryFooterViews]
+0x189d48a30  __TEXT,__text  ___77-[EKEventDetailTitleCellAccessibility _accessibilitySupplementaryFooterViews]_block_invoke
+0x189d48a40  __TEXT,__text  -[EKEventDetailTitleCellAccessibility _accessibilityImageLabelforAttributedLocationName:andLocationStatus:]
+0x189d48b80  __TEXT,__text  ___107-[EKEventDetailTitleCellAccessibility _accessibilityImageLabelforAttributedLocationName:andLocationStatus:]_block_invoke
+0x189d48bd0  __TEXT,__text  -[EKEventDetailTitleCellAccessibility _accessibilityImageLabelforStatus:]
+0x189d48bf8  __TEXT,__text  ___getAXCustomContentClass_block_invoke
+0x189d48de8  __TEXT,__text  ___AccessibilityLibraryCore_block_invoke
+0x189d48e5c  __TEXT,__text  +[EKEventEstimatedTravelTimeResultCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d48e68  __TEXT,__text  +[EKEventEstimatedTravelTimeResultCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d48e74  __TEXT,__text  +[EKEventEstimatedTravelTimeResultCellAccessibility _accessibilityPerformValidations:]
+0x189d48edc  __TEXT,__text  -[EKEventEstimatedTravelTimeResultCellAccessibility accessibilityLabel]
+0x189d49078  __TEXT,__text  +[EKEventGestureControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d49084  __TEXT,__text  +[EKEventGestureControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d49090  __TEXT,__text  +[EKEventGestureControllerAccessibility _accessibilityPerformValidations:]
+0x189d49258  __TEXT,__text  -[EKEventGestureControllerAccessibility _longPress:]
+0x189d49310  __TEXT,__text  -[EKEventGestureControllerAccessibility _update]
+0x189d49738  __TEXT,__text  ___48-[EKEventGestureControllerAccessibility _update]_block_invoke
+0x189d49780  __TEXT,__text  ___48-[EKEventGestureControllerAccessibility _update]_block_invoke_2
+0x189d497c4  __TEXT,__text  -[EKEventGestureControllerAccessibility _commit]
+0x189d49968  __TEXT,__text  -[EKEventGestureControllerAccessibility _speakNotificationIfNecessary:shouldSpeakWithoutInterruption:shouldSpeakOnlyIfNotSpeaking:]
+0x189d49a10  __TEXT,__text  -[EKEventGestureControllerAccessibility _createTemporaryView:animated:]
+0x189d49a68  __TEXT,__text  +[EKEventMapCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d49a74  __TEXT,__text  +[EKEventMapCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d49a80  __TEXT,__text  +[EKEventMapCellAccessibility _accessibilityPerformValidations:]
+0x189d49a84  __TEXT,__text  -[EKEventMapCellAccessibility isAccessibilityElement]
+0x189d49a8c  __TEXT,__text  -[EKEventMapCellAccessibility accessibilityLabel]
+0x189d49a98  __TEXT,__text  +[EKEventViewControllerDefaultImplAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d49aa4  __TEXT,__text  +[EKEventViewControllerDefaultImplAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d49ab0  __TEXT,__text  +[EKEventViewControllerDefaultImplAccessibility _accessibilityPerformValidations:]
+0x189d49b20  __TEXT,__text  -[EKEventViewControllerDefaultImplAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d49bdc  __TEXT,__text  -[EKEventViewControllerDefaultImplAccessibility loadView]
+0x189d49c28  __TEXT,__text  +[EKExpandingTextViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d49c34  __TEXT,__text  +[EKExpandingTextViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d49c40  __TEXT,__text  -[EKExpandingTextViewAccessibility accessibilityLabel]
+0x189d49d00  __TEXT,__text  +[EKEventConferenceInformationDetailItemAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d49d0c  __TEXT,__text  +[EKEventConferenceInformationDetailItemAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d49d18  __TEXT,__text  +[EKEventConferenceInformationDetailItemAccessibility _accessibilityPerformValidations:]
+0x189d49d8c  __TEXT,__text  -[EKEventConferenceInformationDetailItemAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d49e6c  __TEXT,__text  -[EKEventConferenceInformationDetailItemAccessibility cellForSubitemAtIndex:]
+0x189d49ec8  __TEXT,__text  +[EKEventDetailConferenceCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d49ed4  __TEXT,__text  +[EKEventDetailConferenceCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d49ee0  __TEXT,__text  +[EKEventDetailConferenceCellAccessibility _accessibilityPerformValidations:]
+0x189d49f00  __TEXT,__text  -[EKEventDetailConferenceCellAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d49f84  __TEXT,__text  +[EKTextViewWithLabelTextMetricsAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d49f90  __TEXT,__text  +[EKTextViewWithLabelTextMetricsAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d49f9c  __TEXT,__text  +[EKTextViewWithLabelTextMetricsAccessibility _accessibilityPerformValidations:]
+0x189d4a01c  __TEXT,__text  -[EKTextViewWithLabelTextMetricsAccessibility _axLocationItem]
+0x189d4a0c4  __TEXT,__text  -[EKTextViewWithLabelTextMetricsAccessibility accessibilityIsLocationLink]
+0x189d4a278  __TEXT,__text  -[EKTextViewWithLabelTextMetricsAccessibility accessibilityTraits]
+0x189d4a2e0  __TEXT,__text  -[EKTextViewWithLabelTextMetricsAccessibility isAccessibilityElement]
+0x189d4a348  __TEXT,__text  -[EKTextViewWithLabelTextMetricsAccessibility accessibilityFrame]
+0x189d4a3dc  __TEXT,__text  -[EKTextViewWithLabelTextMetricsAccessibility accessibilityLabel]
+0x189d4a478  __TEXT,__text  -[EKTextViewWithLabelTextMetricsAccessibility _axURLCell]
+0x189d4a480  __TEXT,__text  +[EKUIDividedGridViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d4a48c  __TEXT,__text  +[EKUIDividedGridViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d4a498  __TEXT,__text  +[EKUIDividedGridViewCellAccessibility _accessibilityPerformValidations:]
+0x189d4a504  __TEXT,__text  -[EKUIDividedGridViewCellAccessibility canBecomeFocused]
+0x189d4a558  __TEXT,__text  +[EKUIDividedGridViewTableViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d4a564  __TEXT,__text  +[EKUIDividedGridViewTableViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d4a570  __TEXT,__text  +[EKUIDividedGridViewTableViewCellAccessibility _accessibilityPerformValidations:]
+0x189d4a5dc  __TEXT,__text  -[EKUIDividedGridViewTableViewCellAccessibility shouldGroupAccessibilityChildren]
+0x189d4a5e4  __TEXT,__text  -[EKUIDividedGridViewTableViewCellAccessibility accessibilityElements]
+0x189d4a5e8  __TEXT,__text  -[EKUIDividedGridViewTableViewCellAccessibility canBecomeFocused]
+0x189d4a63c  __TEXT,__text  +[EKUIEventInviteesViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d4a648  __TEXT,__text  +[EKUIEventInviteesViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d4a654  __TEXT,__text  +[EKUIEventInviteesViewControllerAccessibility _accessibilityPerformValidations:]
+0x189d4a694  __TEXT,__text  -[EKUIEventInviteesViewControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d4a738  __TEXT,__text  -[EKUIEventInviteesViewControllerAccessibility loadView]
+0x189d4a784  __TEXT,__text  +[EKUIInviteesViewInviteesCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d4a790  __TEXT,__text  +[EKUIInviteesViewInviteesCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d4a79c  __TEXT,__text  +[EKUIInviteesViewInviteesCellAccessibility _accessibilityPerformValidations:]
+0x189d4a898  __TEXT,__text  -[EKUIInviteesViewInviteesCellAccessibility updateWithParticipantForSorting:availabilityType:hideStatus:showSpinner:animated:]
+0x189d4aaac  __TEXT,__text  -[EKUIInviteesViewInviteesCellAccessibility accessibilityValue]
+0x189d4aaf4  __TEXT,__text  -[EKUIInviteesViewInviteesCellAccessibility updateWithParticipantForSorting:hideStatus:]
+0x189d4acac  __TEXT,__text  +[EKUIInviteesViewTimeSlotCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d4acb8  __TEXT,__text  +[EKUIInviteesViewTimeSlotCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d4acc4  __TEXT,__text  +[EKUIInviteesViewTimeSlotCellAccessibility _accessibilityPerformValidations:]
+0x189d4adc0  __TEXT,__text  -[EKUIInviteesViewTimeSlotCellAccessibility accessibilityTraits]
+0x189d4ae30  __TEXT,__text  -[EKUIInviteesViewTimeSlotCellAccessibility accessibilityLabel]
+0x189d4aef8  __TEXT,__text  -[EKUIInviteesViewTimeSlotCellAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d4af60  __TEXT,__text  -[EKUIInviteesViewTimeSlotCellAccessibility initWithStyle:reuseIdentifier:]
+0x189d4afb8  __TEXT,__text  +[UILabelAccessibility__EventKitUI__UIKit(SafeCategory) safeCategoryTargetClassName]
+0x189d4afc4  __TEXT,__text  +[UILabelAccessibility__EventKitUI__UIKit(SafeCategory) safeCategoryBaseClass]
+0x189d4afd0  __TEXT,__text  -[UILabelAccessibility__EventKitUI__UIKit _accessibilitySupportsContentSizeCategory:]
+0x189d4b0a0  __TEXT,__text  +[EKUIYearMonthViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d4b0ac  __TEXT,__text  +[EKUIYearMonthViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d4b0b8  __TEXT,__text  +[EKUIYearMonthViewAccessibility _accessibilityPerformValidations:]
+0x189d4b128  __TEXT,__text  -[EKUIYearMonthViewAccessibility isAccessibilityElement]
+0x189d4b130  __TEXT,__text  -[EKUIYearMonthViewAccessibility accessibilityTraits]
+0x189d4b140  __TEXT,__text  -[EKUIYearMonthViewAccessibility _axIsCurrentMonth]
+0x189d4b184  __TEXT,__text  -[EKUIYearMonthViewAccessibility accessibilityLabel]
+0x189d4b280  __TEXT,__text  -[EKUIYearMonthViewAccessibility accessibilityUserInputLabels]
+0x189d4b33c  __TEXT,__text  -[EKUIYearMonthViewAccessibility accessibilityHint]
+0x189d4b348  __TEXT,__text  -[EKUIYearMonthViewAccessibility _accessibilityIsSpeakThisElement]
+0x189d4b34c  __TEXT,__text  +[PreferencesTwoPartValueCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d4b358  __TEXT,__text  +[PreferencesTwoPartValueCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d4b364  __TEXT,__text  +[PreferencesTwoPartValueCellAccessibility _accessibilityPerformValidations:]
+0x189d4b450  __TEXT,__text  -[PreferencesTwoPartValueCellAccessibility accessibilityHint]
+0x189d4b45c  __TEXT,__text  -[PreferencesTwoPartValueCellAccessibility accessibilityLabel]
+0x189d4b530  __TEXT,__text  -[PreferencesTwoPartValueCellAccessibility accessibilityUserInputLabels]
+0x189d4b590  __TEXT,__text  -[PreferencesTwoPartValueCellAccessibility accessibilityValue]
+0x189d4b598  __TEXT,__text  -[PreferencesTwoPartValueCellAccessibility isAccessibilityElement]
+0x189d4b5a0  __TEXT,__text  +[PreferencesDoubleTwoPartValueCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d4b5ac  __TEXT,__text  +[PreferencesDoubleTwoPartValueCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d4b5b8  __TEXT,__text  +[PreferencesDoubleTwoPartValueCellAccessibility _accessibilityPerformValidations:]
+0x189d4b62c  __TEXT,__text  -[PreferencesDoubleTwoPartValueCellAccessibility accessibilityHint]
+0x189d4b638  __TEXT,__text  -[PreferencesDoubleTwoPartValueCellAccessibility accessibilityLabel]
+0x189d4b710  __TEXT,__text  -[PreferencesDoubleTwoPartValueCellAccessibility accessibilityValue]
+0x189d4b718  __TEXT,__text  -[PreferencesDoubleTwoPartValueCellAccessibility isAccessibilityElement]
+0x189d4b720  __TEXT,__text  +[TwoPartTextLabelAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d4b72c  __TEXT,__text  +[TwoPartTextLabelAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d4b738  __TEXT,__text  +[TwoPartTextLabelAccessibility _accessibilityPerformValidations:]
+0x189d4b758  __TEXT,__text  -[TwoPartTextLabelAccessibility accessibilityHint]
+0x189d4b764  __TEXT,__text  -[TwoPartTextLabelAccessibility accessibilityLabel]
+0x189d4b7fc  __TEXT,__text  -[TwoPartTextLabelAccessibility accessibilityValue]
+0x189d4b804  __TEXT,__text  -[TwoPartTextLabelAccessibility isAccessibilityElement]
+0x189d4b80c  __TEXT,__text  +[CalendarNotesCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d4b818  __TEXT,__text  +[CalendarNotesCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d4b824  __TEXT,__text  -[CalendarNotesCellAccessibility isAccessibilityElement]
+0x189d4b82c  __TEXT,__text  +[UIScrollViewAccessibility_EventKit_UIKit(SafeCategory) safeCategoryTargetClassName]
+0x189d4b838  __TEXT,__text  +[UIScrollViewAccessibility_EventKit_UIKit(SafeCategory) safeCategoryBaseClass]
+0x189d4b844  __TEXT,__text  -[UIScrollViewAccessibility_EventKit_UIKit accessibilityIsDayGridScroller]
+0x189d4b850  __TEXT,__text  -[UIScrollViewAccessibility_EventKit_UIKit setAccessibilityIsDayGridScroller:]
+0x189d4b85c  __TEXT,__text  -[UIScrollViewAccessibility_EventKit_UIKit accessibilityIsPreviewDayGridScroller]
+0x189d4b868  __TEXT,__text  -[UIScrollViewAccessibility_EventKit_UIKit setAccessibilityIsPreviewDayGridScroller:]
+0x189d4b874  __TEXT,__text  +[UIScrollViewAccessibility_EventKit_UIKit _accessibilityPerformValidations:]
+0x189d4b948  __TEXT,__text  -[UIScrollViewAccessibility_EventKit_UIKit _accessibilityScrollStatus]
+0x189d4bbd4  __TEXT,__text  -[UIScrollViewAccessibility_EventKit_UIKit _accessibilityScrollingEnabled]
+0x189d4bc68  __TEXT,__text  -[UIScrollViewAccessibility_EventKit_UIKit _pageDecelerationTarget]
+0x189d4bcd0  __TEXT,__text  ___Block_byref_object_copy_
+0x189d4bce0  __TEXT,__text  ___Block_byref_object_dispose_
+0x189d4bce8  __TEXT,__text  ___Block_byref_object_copy_.1434
+0x189d4bcf8  __TEXT,__text  ___Block_byref_object_dispose_.1435
+```
+

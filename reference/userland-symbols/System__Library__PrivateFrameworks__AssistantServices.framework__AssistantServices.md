@@ -1,0 +1,3889 @@
+# Symbols: `/System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__PrivateFrameworks__AssistantServices.framework__AssistantServices.md). **[DSC]**
+
+2,872 public symbols, 11,007 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x198d0f270  __TEXT,__text  _ADCreateRequestLinkInfo
+0x198d0f51c  __TEXT,__text  _ADEmitRequestLinkEventMessage
+0x198d12428  __TEXT,__text  _ADShouldEmitUEIRequestLinkForRequestId
+0x1e0c6b290  __DATA_CONST,__const  _AFASRSharedUserInfoKey
+0x1e0c6b288  __DATA_CONST,__const  _AFAbcAssetsMissingSubType
+0x1e0c6b280  __DATA_CONST,__const  _AFAbcOrchestrationType
+0x1e0c6b270  __DATA_CONST,__const  _AFAccessibilityStateKey
+0x198cd4d74  __TEXT,__text  _AFAccessibilitySupportsAttentionAwareFeatures
+0x198dbbb18  __TEXT,__text  _AFAccessibilitySupportsVibrationDisablement
+0x198e321f0  __TEXT,__text  _AFAceErrorCodeFromMRMediaRemoteCommandHandlerStatus
+0x198d22e04  __TEXT,__text  _AFActivationEventGetDescription
+0x1e0c6b268  __DATA_CONST,__const  _AFActiveLanguageChangedNotification
+0x198dbe60c  __TEXT,__text  _AFAddInterruptingAudioSessionInfoToAnalyticsContext
+0x198d1dd14  __TEXT,__text  _AFAnalyticsBucketizedDurationForStartDateAndEndDate
+0x198e2c8ec  __TEXT,__text  _AFAnalyticsContextCreateForCrossDeviceCommandHandled
+0x198d1aa20  __TEXT,__text  _AFAnalyticsContextCreateForCrossDeviceCommandHandledWithServiceDeviceContexts
+0x198e2cbcc  __TEXT,__text  _AFAnalyticsContextCreateForCrossDeviceCommandNearbyDevices
+0x198e2d278  __TEXT,__text  _AFAnalyticsContextCreateForCurrentProcess
+0x198cf0674  __TEXT,__text  _AFAnalyticsContextCreateWithCommand
+0x198e2c58c  __TEXT,__text  _AFAnalyticsContextCreateWithDictationOptions
+0x198cf92dc  __TEXT,__text  _AFAnalyticsContextCreateWithError
+0x198e2c7a4  __TEXT,__text  _AFAnalyticsContextCreateWithExperiment
+0x198d1abc0  __TEXT,__text  _AFAnalyticsContextCreateWithLanguageDetectorMetrics
+0x198d28bdc  __TEXT,__text  _AFAnalyticsContextCreateWithRequestInfo
+0x198cdbdd0  __TEXT,__text  _AFAnalyticsContextCreateWithSpeechRequestOptions
+0x1e0c6b250  __DATA_CONST,__const  _AFAnalyticsContextKey
+0x198cd2d48  __TEXT,__text  _AFAnalyticsContextsMerge
+0x198cd4a2c  __TEXT,__text  _AFAnalyticsEventCreateCurrent
+0x1e0c6b238  __DATA_CONST,__const  _AFAnalyticsEventKey
+0x198d1ac44  __TEXT,__text  _AFAnalyticsEventTypeGetLegacyName
+0x198d07a58  __TEXT,__text  _AFAnalyticsEventTypeGetName
+0x198cc55f8  __TEXT,__text  _AFAnalyticsEventTypeIsValid
+0x198dac2b8  __TEXT,__text  _AFAnalyticsLogsDirectory
+0x198e09570  __TEXT,__text  _AFAnalyticsObservationServiceGetXPCInterface
+0x198d57034  __TEXT,__text  _AFAnalyticsObserverGetXPCInterface
+0x198e2d330  __TEXT,__text  _AFAnalyticsSafeContextForJson
+0x198cd3c00  __TEXT,__text  _AFAnalyticsServiceDelegateGetXPCInterface
+0x198cd5a34  __TEXT,__text  _AFAnalyticsServiceGetXPCInterface
+0x198d28a68  __TEXT,__text  _AFAnalyticsTurnContextCreateWithRequestInfo
+0x198ce3534  __TEXT,__text  _AFAnalyticsTurnContextCreateWithSpeechRequestOptions
+0x1e0c6b228  __DATA_CONST,__const  _AFAnnounceBinaryOutcomeRequestKey
+0x198d31f48  __TEXT,__text  _AFAnnounceBinaryOutcomeResultGetFromName
+0x198d31f08  __TEXT,__text  _AFAnnounceBinaryOutcomeResultGetIsValid
+0x198d31f14  __TEXT,__text  _AFAnnounceBinaryOutcomeResultGetIsValidAndSpecified
+0x198d31f24  __TEXT,__text  _AFAnnounceBinaryOutcomeResultGetName
+0x198d31e60  __TEXT,__text  _AFAnnounceBinaryOutcomeUseCaseGetFromName
+0x198d31e20  __TEXT,__text  _AFAnnounceBinaryOutcomeUseCaseGetIsValid
+0x198d31e2c  __TEXT,__text  _AFAnnounceBinaryOutcomeUseCaseGetIsValidAndSpecified
+0x198d31e3c  __TEXT,__text  _AFAnnounceBinaryOutcomeUseCaseGetName
+0x1e0c6b220  __DATA_CONST,__const  _AFAnnounceBinaryOutcomeUseCaseV2GenericUnlocalizedKey
+0x1e0c6b218  __DATA_CONST,__const  _AFAnnounceBinaryOutcomeUseCaseV2HearNotificationsKey
+0x198d32708  __TEXT,__text  _AFAnnounceBinaryOutcomeUseCaseV2TypeGetClass
+0x198d32660  __TEXT,__text  _AFAnnounceBinaryOutcomeUseCaseV2TypeGetFromName
+0x198d32620  __TEXT,__text  _AFAnnounceBinaryOutcomeUseCaseV2TypeGetIsValid
+0x198d3262c  __TEXT,__text  _AFAnnounceBinaryOutcomeUseCaseV2TypeGetIsValidAndSpecified
+0x198d3263c  __TEXT,__text  _AFAnnounceBinaryOutcomeUseCaseV2TypeGetName
+0x1e0c6b208  __DATA_CONST,__const  _AFAnnounceBinaryOutcomeUseCaseV2UpdateSmartRoutingKey
+0x1e0c6b1e0  __DATA_CONST,__const  _AFAnnouncementContextKey
+0x198d9d6a0  __TEXT,__text  _AFAppleAudioDeviceConnectedInLast24Hours
+0x198d9a05c  __TEXT,__text  _AFApplicationClientIdentifierForApp
+0x198d9a060  __TEXT,__text  _AFApplicationClientIdentifierForWatchApp
+0x1e0c6b1b8  __DATA_CONST,__const  _AFApplicationContextKey
+0x1e0c6b1b0  __DATA_CONST,__const  _AFApplicationContextSnapshotKey
+0x1e0c6b1a8  __DATA_CONST,__const  _AFApplicationStateBackgroundRunning
+0x1e0c6b1a0  __DATA_CONST,__const  _AFApplicationStateBackgroundTaskSuspended
+0x1e0c6b198  __DATA_CONST,__const  _AFApplicationStateForegroundRunning
+0x1e0c6b190  __DATA_CONST,__const  _AFApplicationStateForegroundRunningObscured
+0x1e0c6b188  __DATA_CONST,__const  _AFApplicationStateProcessServer
+0x1e0c6b180  __DATA_CONST,__const  _AFApplicationStateTerminated
+0x1e0c6b178  __DATA_CONST,__const  _AFApplicationStateUnknown
+0x198d9a2a4  __TEXT,__text  _AFApplicationWorkspaceEnumerateInstalledApplications
+0x198d9a6c8  __TEXT,__text  _AFApplicationWorkspaceEnumerateInstalledUserVisibleApplications
+0x1e0c6b150  __DATA_CONST,__const  _AFAssertionContextKey
+0x198cf8da4  __TEXT,__text  _AFAssertionGetContexts
+0x198cf8f04  __TEXT,__text  _AFAssertionGetCurrentOrUpNextDateIntervalFromContexts
+0x198ddbb80  __TEXT,__text  _AFAssertionGetEffectiveDateAndExpirationDurationFromDateInterval
+0x198ddbd5c  __TEXT,__text  _AFAssertionRelinquishmentOptionsGetFromNames
+0x198ddbcf0  __TEXT,__text  _AFAssertionRelinquishmentOptionsGetNames
+0x198ddbce8  __TEXT,__text  _AFAssertionRelinquishmentOptionsValidate
+0x198d6e6e0  __TEXT,__text  _AFAssetDownloadOptionsApplyForEmbeddedSpeechAssetDownload
+0x1e0c6b148  __DATA_CONST,__const  _AFAssetManagerAttentionAssetsTag
+0x1e0c6b140  __DATA_CONST,__const  _AFAssetManagerIntelligenceFlowAssetsTag
+0x1e0c6b138  __DATA_CONST,__const  _AFAssetManagerIntelligenceFlowToolboxTag
+0x1e0c6b130  __DATA_CONST,__const  _AFAssetManagerMorphunAssetsTag
+0x1e0c6b128  __DATA_CONST,__const  _AFAssetManagerNLAssetsTag
+0x1e0c6b120  __DATA_CONST,__const  _AFAssetManagerNLRouterAssetsTag
+0x1e0c6b118  __DATA_CONST,__const  _AFAssetManagerSpeechAssetsTag
+0x198cdc64c  __TEXT,__text  _AFAssetsAvailabilityMatchesRequiredAssets
+0x198d239c8  __TEXT,__text  _AFAssistantCapable
+0x1e0c6b110  __DATA_CONST,__const  _AFAssistantEnablementDidChangeDarwinNotification
+0x198cd4b30  __TEXT,__text  _AFAssistantRestricted
+0x198cd4d10  __TEXT,__text  _AFAssistantRestrictedWithReason
+0x198dc0228  __TEXT,__text  _AFAssistantServiceEmitLaunchMetadataReportedForRequestId
+0x198dc021c  __TEXT,__text  _AFAssistantServiceLoadedTimestampInNs
+0x198dc01a0  __TEXT,__text  _AFAssistantServiceMarkLoaded
+0x198d14564  __TEXT,__text  _AFAssistantServiceRecordSpawnTime
+0x198dc0210  __TEXT,__text  _AFAssistantServiceSpawnTimestampInNs
+0x1e0c6b0f8  __DATA_CONST,__const  _AFAudioDeviceInfoKey
+0x198e0b2f4  __TEXT,__text  _AFAudioPlaybackOptionsGetFromNames
+0x198e0b254  __TEXT,__text  _AFAudioPlaybackOptionsGetNames
+0x198e0b24c  __TEXT,__text  _AFAudioPlaybackOptionsValidate
+0x1e0c6b0b0  __DATA_CONST,__const  _AFAudioPlaybackRequestKey
+0x198d6c3ac  __TEXT,__text  _AFAudioSessionAssertionGetConnectionWorkloop
+0x198d6bccc  __TEXT,__text  _AFAudioSessionAssertionGetCurrentAcquisitionService
+0x198e1a9b8  __TEXT,__text  _AFAudioSessionAssertionServiceXPCInterface
+0x198d6bda4  __TEXT,__text  _AFAudioSessionAssertionSetLocalAcquisitionService
+0x198d6be00  __TEXT,__text  _AFAudioSessionAssertionSetLocalAcquisitionServiceProvider
+0x1e0c6b088  __DATA_CONST,__const  _AFAudioSessionAssertionUserInfoKey
+0x1e0c6b078  __DATA_CONST,__const  _AFAudioSessionCoordinationDeviceInfoKey
+0x1e0c6b028  __DATA_CONST,__const  _AFAudioSessionCoordinationSnapshotKey
+0x1e0c6b000  __DATA_CONST,__const  _AFAudioSessionCoordinationSystemInfoKey
+0x198d6c53c  __TEXT,__text  _AFAudioSessionEventInformGetConnectionWorkloop
+0x1e0c6afe8  __DATA_CONST,__const  _AFAudioSessionEventKey
+0x198d6c5b4  __TEXT,__text  _AFAudioSessionEventServiceXPCInterface
+0x198d44cd8  __TEXT,__text  _AFAudioSessionEventTimeGetFromName
+0x198d44c98  __TEXT,__text  _AFAudioSessionEventTimeGetIsValid
+0x198d44ca4  __TEXT,__text  _AFAudioSessionEventTimeGetIsValidAndSpecified
+0x198d44cb4  __TEXT,__text  _AFAudioSessionEventTimeGetName
+0x198d44bf0  __TEXT,__text  _AFAudioSessionEventTypeGetFromName
+0x198d44bb0  __TEXT,__text  _AFAudioSessionEventTypeGetIsValid
+0x198d44bbc  __TEXT,__text  _AFAudioSessionEventTypeGetIsValidAndSpecified
+0x198d44bcc  __TEXT,__text  _AFAudioSessionEventTypeGetName
+0x198d3150c  __TEXT,__text  _AFBTAnnounceCallsUnsupportedOnProductID
+0x198da5a40  __TEXT,__text  _AFBTCarHeadunitsConnectedInLast24Hours
+0x198d9d4ac  __TEXT,__text  _AFBTHeadunitsConnectedInLast24Hours
+0x198cc15b4  __TEXT,__text  _AFBTProductIDSupportsAnnounce
+0x198cc015c  __TEXT,__text  _AFBTProductIDSupportsFauxIED
+0x198cc1604  __TEXT,__text  _AFBTProductIDSupportsIED
+0x198cd92cc  __TEXT,__text  _AFBackedUpPreferencesSynchronize
+0x1e0c6afd8  __DATA_CONST,__const  _AFBluetoothDeviceBooleanSettingResponseKey
+0x1e0c6af48  __DATA_CONST,__const  _AFBluetoothDeviceInfoKey
+0x198d56f8c  __TEXT,__text  _AFBluetoothDeviceSettingBooleanValueGetFromName
+0x198d56f5c  __TEXT,__text  _AFBluetoothDeviceSettingBooleanValueGetIsValid
+0x198d145d4  __TEXT,__text  _AFBluetoothDeviceSettingBooleanValueGetIsValidAndSpecified
+0x198d56f68  __TEXT,__text  _AFBluetoothDeviceSettingBooleanValueGetName
+0x198d640dc  __TEXT,__text  _AFBluetoothDeviceSettingResponseStatusGetFromName
+0x198d6409c  __TEXT,__text  _AFBluetoothDeviceSettingResponseStatusGetIsValid
+0x198d640a8  __TEXT,__text  _AFBluetoothDeviceSettingResponseStatusGetIsValidAndSpecified
+0x198d640b8  __TEXT,__text  _AFBluetoothDeviceSettingResponseStatusGetName
+0x1e0c6af28  __DATA_CONST,__const  _AFBluetoothHeadGestureConfigurationKey
+0x198dd1808  __TEXT,__text  _AFBluetoothHeadGestureTypeGetFromName
+0x198dd17c8  __TEXT,__text  _AFBluetoothHeadGestureTypeGetIsValid
+0x198dd17d4  __TEXT,__text  _AFBluetoothHeadGestureTypeGetIsValidAndSpecified
+0x198dd17e4  __TEXT,__text  _AFBluetoothHeadGestureTypeGetName
+0x198ddcbcc  __TEXT,__text  _AFBluetoothHeadphoneEarbudSideGetFromName
+0x198ddcb8c  __TEXT,__text  _AFBluetoothHeadphoneEarbudSideGetIsValid
+0x198ddcb98  __TEXT,__text  _AFBluetoothHeadphoneEarbudSideGetIsValidAndSpecified
+0x198ddcba8  __TEXT,__text  _AFBluetoothHeadphoneEarbudSideGetName
+0x1e0c6af08  __DATA_CONST,__const  _AFBluetoothHeadphoneInEarDetectionStateKey
+0x198e37c74  __TEXT,__text  _AFBluetoothHeadphoneInEarStatusGetFromName
+0x198e37c34  __TEXT,__text  _AFBluetoothHeadphoneInEarStatusGetIsValid
+0x198e37c40  __TEXT,__text  _AFBluetoothHeadphoneInEarStatusGetIsValidAndSpecified
+0x198e37c50  __TEXT,__text  _AFBluetoothHeadphoneInEarStatusGetName
+0x198e37d5c  __TEXT,__text  _AFBluetoothHeadphoneListeningModeGetFromName
+0x198e37d1c  __TEXT,__text  _AFBluetoothHeadphoneListeningModeGetIsValid
+0x198e37d28  __TEXT,__text  _AFBluetoothHeadphoneListeningModeGetIsValidAndSpecified
+0x198e37d38  __TEXT,__text  _AFBluetoothHeadphoneListeningModeGetName
+0x1e0c6af00  __DATA_CONST,__const  _AFBluetoothInEarDetectionStateChanged
+0x1e0c6aef8  __DATA_CONST,__const  _AFBluetoothPairedDeviceInfoUpdated
+0x1e0c6aef0  __DATA_CONST,__const  _AFBluetoothStreamName
+0x1e0c6aee0  __DATA_CONST,__const  _AFBluetoothWirelessSplitterSessionInfoKey
+0x1e0c6aed8  __DATA_CONST,__const  _AFBluetoothWirelessSplitterSessionStateChanged
+0x198dcfcc8  __TEXT,__text  _AFBluetoothWirelessSplitterSessionStateGetFromName
+0x198dcfc88  __TEXT,__text  _AFBluetoothWirelessSplitterSessionStateGetIsValid
+0x198dcfc94  __TEXT,__text  _AFBluetoothWirelessSplitterSessionStateGetIsValidAndSpecified
+0x198dcfca4  __TEXT,__text  _AFBluetoothWirelessSplitterSessionStateGetName
+0x198e73250  __TEXT,__const  _AFBluetoothWirelessSplitterSessionStateUnknown
+0x198ce1878  __TEXT,__text  _AFBobbleV2Supported
+0x198e2fde4  __TEXT,__text  _AFBooleanGetFromName
+0x198e2fda4  __TEXT,__text  _AFBooleanGetIsValid
+0x198e2fdb0  __TEXT,__text  _AFBooleanGetIsValidAndSpecified
+0x198e2fdc0  __TEXT,__text  _AFBooleanGetName
+0x198cce5e4  __TEXT,__text  _AFBuildVersion
+0x198d9a070  __TEXT,__text  _AFBundleIDFromApplicationClientIdentifier
+0x1e0c6aec8  __DATA_CONST,__const  _AFBundleResourceKey
+0x198dba920  __TEXT,__text  _AFBundleServicesCachePath
+0x198d22e28  __TEXT,__text  _AFCDAFaceDetection
+0x1e0c6aec0  __DATA_CONST,__const  _AFCachedFusePersonalizationTokenChanged
+0x1e0c6aeb0  __DATA_CONST,__const  _AFCallSiteInfoKey
+0x198d03840  __TEXT,__text  _AFCallStateGetFromNames
+0x198d039d8  __TEXT,__text  _AFCallStateGetNames
+0x1e0c6ae98  __DATA_CONST,__const  _AFCallStateSnapshotKey
+0x198e04434  __TEXT,__text  _AFCallStateValidate
+0x198dbb9f4  __TEXT,__text  _AFCanProxyTelephony
+0x198dbcf38  __TEXT,__text  _AFCanSyncIFPVoices
+0x198dbcffc  __TEXT,__text  _AFCarouselBundleIdentifier
+0x198dac3c4  __TEXT,__text  _AFClearInternalLogFiles
+0x1e0c6ae28  __DATA_CONST,__const  _AFClientConfigurationKey
+0x1e0c6ae18  __DATA_CONST,__const  _AFClientInfoKey
+0x198dd7730  __TEXT,__text  _AFClientLiteClientObjectInterface
+0x1e0c6ae10  __DATA_CONST,__const  _AFClientLiteEntitlement
+0x198dd7744  __TEXT,__text  _AFClientLiteRemoteObjectInterface
+0x1e0c6ae08  __DATA_CONST,__const  _AFClientLiteServiceName
+0x1e0c6ae00  __DATA_CONST,__const  _AFClientPluginSiriDisambiguationDomainsKey
+0x1e0c6adf8  __DATA_CONST,__const  _AFClientPluginSiriDomainsKey
+0x1e0c6adf0  __DATA_CONST,__const  _AFClientPluginSiriProviderDomainsKey
+0x198cdf7fc  __TEXT,__text  _AFClientServiceDelegateXPCInterface
+0x198cdf584  __TEXT,__text  _AFClientServiceXPCInterface
+0x1e0c6ad88  __DATA_CONST,__const  _AFClockAlarmKey
+0x198d69a84  __TEXT,__text  _AFClockAlarmManagerEventGetFromName
+0x198d69a44  __TEXT,__text  _AFClockAlarmManagerEventGetIsValid
+0x198d69a50  __TEXT,__text  _AFClockAlarmManagerEventGetIsValidAndSpecified
+0x198d69a60  __TEXT,__text  _AFClockAlarmManagerEventGetName
+0x198e18358  __TEXT,__text  _AFClockAlarmRepeatOptionsGetFromNames
+0x198e18258  __TEXT,__text  _AFClockAlarmRepeatOptionsGetNames
+0x198e18250  __TEXT,__text  _AFClockAlarmRepeatOptionsValidate
+0x1e0c6ad68  __DATA_CONST,__const  _AFClockAlarmSnapshotKey
+0x198cedf50  __TEXT,__text  _AFClockAlarmTypeGetFromNames
+0x198e2a740  __TEXT,__text  _AFClockAlarmTypeGetNames
+0x198e2a738  __TEXT,__text  _AFClockAlarmTypeValidate
+0x1e0c6ad08  __DATA_CONST,__const  _AFClockTimerKey
+0x198dc5214  __TEXT,__text  _AFClockTimerManagerEventGetFromName
+0x198dc51e4  __TEXT,__text  _AFClockTimerManagerEventGetIsValid
+0x198d0bb9c  __TEXT,__text  _AFClockTimerManagerEventGetIsValidAndSpecified
+0x198dc51f0  __TEXT,__text  _AFClockTimerManagerEventGetName
+0x1e0c6ace8  __DATA_CONST,__const  _AFClockTimerSnapshotKey
+0x198dff63c  __TEXT,__text  _AFClockTimerStateGetFromName
+0x198dff5fc  __TEXT,__text  _AFClockTimerStateGetIsValid
+0x198dff608  __TEXT,__text  _AFClockTimerStateGetIsValidAndSpecified
+0x198dff618  __TEXT,__text  _AFClockTimerStateGetName
+0x198e50778  __TEXT,__text  _AFClockTimerTypeGetFromName
+0x198e50738  __TEXT,__text  _AFClockTimerTypeGetIsValid
+0x198e50744  __TEXT,__text  _AFClockTimerTypeGetIsValidAndSpecified
+0x198e50754  __TEXT,__text  _AFClockTimerTypeGetName
+0x1e0c6ac90  __DATA_CONST,__const  _AFCommandExecutionInfoKey
+0x198e3161c  __TEXT,__text  _AFCommandOutcomeFromMediaRemoteStatuses
+0x1e0c6ac28  __DATA_CONST,__const  _AFCommunalDeviceUserKey
+0x1e0c6aba0  __DATA_CONST,__const  _AFCompanionDeviceInfoKey
+0x198cdc368  __TEXT,__text  _AFConnectionHasEntitlement
+0x198dbcd70  __TEXT,__text  _AFConnectionHasEntitlementCached
+0x1e0c6ab98  __DATA_CONST,__const  _AFContextManagerXPCListenerName
+0x1e0c6ab90  __DATA_CONST,__const  _AFContextProviderEntitlement
+0x198cbfbf0  __TEXT,__text  _AFContextProviderNameForBundleId
+0x1e0c6ab88  __DATA_CONST,__const  _AFConversationErrorDomain
+0x198cd38d4  __TEXT,__text  _AFCopyKeychainBaseQueryDictionary
+0x1e0c6ab30  __DATA_CONST,__const  _AFCoreAnalyticsDeviceContextPayloadKey
+0x198d530c0  __TEXT,__text  _AFCoreAnalyticsEventCreateForDeviceContexts
+0x198d5316c  __TEXT,__text  _AFCoreAnalyticsEventCreateForServiceDeviceContexts
+0x198d0748c  __TEXT,__text  _AFCoreAnalyticsPayloadCreateForDeviceContext
+0x1e0c6ab28  __DATA_CONST,__const  _AFCoreDuetUIStreamName
+0x1e0c6ab20  __DATA_CONST,__const  _AFCorrectionContextInteractionIdKey
+0x1e0c6ab18  __DATA_CONST,__const  _AFCorrectionContextSessionIdKey
+0x198d6e5dc  __TEXT,__text  _AFCreateDirectoryWithPath
+0x198dbb408  __TEXT,__text  _AFCurrentUserInterfaceIdiom
+0x198dbc7e4  __TEXT,__text  _AFDaemonIsExitingCleanly
+0x1e0c6ab10  __DATA_CONST,__const  _AFDaemonWillExitCleanlyNotification
+0x1e0c6ab08  __DATA_CONST,__const  _AFDefaultLanguageCode
+0x198d9d188  __TEXT,__text  _AFDeleteCoreDuetEventsInStream
+0x1e0c6aad8  __DATA_CONST,__const  _AFDeleteSiriHistoryContextKey
+0x198db5124  __TEXT,__text  _AFDescriptionOfAFQuickStopActions
+0x198dbe834  __TEXT,__text  _AFDescriptionOfBKSApplicationState
+0x198dbc784  __TEXT,__text  _AFDeviceColor
+0x1e0c6aac8  __DATA_CONST,__const  _AFDeviceContextHistoryConfigurationKey
+0x1e0c6aac0  __DATA_CONST,__const  _AFDeviceContextKeyAlarm
+0x1e0c6aab8  __DATA_CONST,__const  _AFDeviceContextKeyAll
+0x1e0c6aab0  __DATA_CONST,__const  _AFDeviceContextKeyApplication
+0x1e0c6aaa8  __DATA_CONST,__const  _AFDeviceContextKeyCallState
+0x1e0c6aaa0  __DATA_CONST,__const  _AFDeviceContextKeyContexts
+0x1e0c6aa98  __DATA_CONST,__const  _AFDeviceContextKeyData
+0x1e0c6aa90  __DATA_CONST,__const  _AFDeviceContextKeyDeviceInfo
+0x1e0c6aa88  __DATA_CONST,__const  _AFDeviceContextKeyFlowContextUpdateCommand
+0x1e0c6aa80  __DATA_CONST,__const  _AFDeviceContextKeyHeardVoiceTrigger
+0x1e0c6aa78  __DATA_CONST,__const  _AFDeviceContextKeyHistoricalData
+0x1e0c6aa70  __DATA_CONST,__const  _AFDeviceContextKeyHistoricalMetadata
+0x1e0c6aa68  __DATA_CONST,__const  _AFDeviceContextKeyHomeAnnouncement
+0x1e0c6aa60  __DATA_CONST,__const  _AFDeviceContextKeyIdentifier
+0x1e0c6aa58  __DATA_CONST,__const  _AFDeviceContextKeyLocation
+0x1e0c6aa50  __DATA_CONST,__const  _AFDeviceContextKeyMetadata
+0x1e0c6aa48  __DATA_CONST,__const  _AFDeviceContextKeyMetadataExpirationDate
+0x1e0c6aa40  __DATA_CONST,__const  _AFDeviceContextKeyMetadataHistoryConfiguration
+0x1e0c6aa38  __DATA_CONST,__const  _AFDeviceContextKeyMetadataRedactedKeyPaths
+0x1e0c6aa30  __DATA_CONST,__const  _AFDeviceContextKeyMetadataTimestamp
+0x1e0c6aa28  __DATA_CONST,__const  _AFDeviceContextKeyMetadataType
+0x1e0c6aa20  __DATA_CONST,__const  _AFDeviceContextKeyMultiUserState
+0x1e0c6aa18  __DATA_CONST,__const  _AFDeviceContextKeyMyriadAdvertisement
+0x1e0c6aa10  __DATA_CONST,__const  _AFDeviceContextKeyPlaybackState
+0x1e0c6aa08  __DATA_CONST,__const  _AFDeviceContextKeyPrivacyClass
+0x1e0c6aa00  __DATA_CONST,__const  _AFDeviceContextKeyRequestHandling
+0x1e0c6a9f8  __DATA_CONST,__const  _AFDeviceContextKeySiriClientState
+0x1e0c6a9f0  __DATA_CONST,__const  _AFDeviceContextKeySystemState
+0x1e0c6a9e8  __DATA_CONST,__const  _AFDeviceContextKeyTimer
+0x198cd2908  __TEXT,__text  _AFDeviceContextPrivacyClassFromString
+0x198ce3508  __TEXT,__text  _AFDeviceContextPrivacyClassGetStringDescription
+0x198de82c4  __TEXT,__text  _AFDeviceContextServiceDelegateGetXPCInterface
+0x198de8154  __TEXT,__text  _AFDeviceContextServiceGetXPCInterface
+0x198dbc7ac  __TEXT,__text  _AFDeviceEnclosureColor
+0x198d26870  __TEXT,__text  _AFDeviceEnclosureRGBColor
+0x198dbdcfc  __TEXT,__text  _AFDeviceHasAddressBook
+0x198dbbfb0  __TEXT,__text  _AFDeviceHighestLanguageModelCapabilityIdentifier
+0x198dbc7dc  __TEXT,__text  _AFDeviceIsTinker
+0x198dbc7d4  __TEXT,__text  _AFDeviceIsVictory
+0x198d9d918  __TEXT,__text  _AFDeviceMessagingOptionsGetNames
+0x198dbb53c  __TEXT,__text  _AFDeviceName
+0x198dc52bc  __TEXT,__text  _AFDeviceProximityCompare
+0x198d18ae8  __TEXT,__text  _AFDeviceProximityGetName
+0x198cde00c  __TEXT,__text  _AFDeviceRegionCode
+0x1e0c6a9d8  __DATA_CONST,__const  _AFDeviceRequestHandlingRecordKey
+0x198e4d5d0  __TEXT,__text  _AFDeviceRequestHandlingRolesGetFromNames
+0x198e4d500  __TEXT,__text  _AFDeviceRequestHandlingRolesGetNames
+0x198e4d4f8  __TEXT,__text  _AFDeviceRequestHandlingRolesValidate
+0x198d62294  __TEXT,__text  _AFDeviceRingerSwitchStateGetFromName
+0x198d62278  __TEXT,__text  _AFDeviceRingerSwitchStateGetIsValid
+0x198d62284  __TEXT,__text  _AFDeviceRingerSwitchStateGetIsValidAndSpecified
+0x198d13c9c  __TEXT,__text  _AFDeviceRingerSwitchStateGetName
+0x198dc0658  __TEXT,__text  _AFDeviceSetupIsActive
+0x198dbdb98  __TEXT,__text  _AFDeviceSupportsANE
+0x198ceecd0  __TEXT,__text  _AFDeviceSupportsAOP
+0x198dbdc10  __TEXT,__text  _AFDeviceSupportsAlwaysListeningHeySiri
+0x198d20ec8  __TEXT,__text  _AFDeviceSupportsAssistantEngine
+0x198dc1350  __TEXT,__text  _AFDeviceSupportsAudioOrdering
+0x198ce2050  __TEXT,__text  _AFDeviceSupportsAudioSessionCoordination
+0x198dc12c8  __TEXT,__text  _AFDeviceSupportsBackgroundSession
+0x198ce7ae4  __TEXT,__text  _AFDeviceSupportsBargeIn
+0x198cfe150  __TEXT,__text  _AFDeviceSupportsBobble
+0x198dbc6ec  __TEXT,__text  _AFDeviceSupportsCarPlay
+0x198dc135c  __TEXT,__text  _AFDeviceSupportsContinuousConversation
+0x198cdf844  __TEXT,__text  _AFDeviceSupportsCrossSession
+0x198ce1a68  __TEXT,__text  _AFDeviceSupportsDeviceSelection
+0x198d2e308  __TEXT,__text  _AFDeviceSupportsDisablingServerFallbackWhenMissingAsset
+0x198d051c0  __TEXT,__text  _AFDeviceSupportsEchoCancellation
+0x198dc09a0  __TEXT,__text  _AFDeviceSupportsFileACrashRadar
+0x198dc09e8  __TEXT,__text  _AFDeviceSupportsFileARadar
+0x198ce1344  __TEXT,__text  _AFDeviceSupportsFullSiriUOD
+0x198cf5c70  __TEXT,__text  _AFDeviceSupportsGM
+0x198cc3ebc  __TEXT,__text  _AFDeviceSupportsHybridUOD
+0x198dc12c0  __TEXT,__text  _AFDeviceSupportsMUSessionsGuestSessionUpgrade
+0x198dc0b78  __TEXT,__text  _AFDeviceSupportsMedoc
+0x198cc3dd8  __TEXT,__text  _AFDeviceSupportsMedocHelper
+0x198dc12b8  __TEXT,__text  _AFDeviceSupportsMuSessions
+0x198d07a08  __TEXT,__text  _AFDeviceSupportsNavigation
+0x198dbc004  __TEXT,__text  _AFDeviceSupportsOnDeviceDictation
+0x198dc1170  __TEXT,__text  _AFDeviceSupportsPatientSiri
+0x198dc1258  __TEXT,__text  _AFDeviceSupportsPepita
+0x198dc12d0  __TEXT,__text  _AFDeviceSupportsRelay
+0x198ccd820  __TEXT,__text  _AFDeviceSupportsRemovalOfPersistentIDs
+0x198cdfe34  __TEXT,__text  _AFDeviceSupportsSAE
+0x198cbeff4  __TEXT,__text  _AFDeviceSupportsSAEByDeviceCapabilityAndFeatureFlags
+0x198cbe7f8  __TEXT,__text  _AFDeviceSupportsSAEDeprecated
+0x198dc1260  __TEXT,__text  _AFDeviceSupportsShimTools
+0x198dc1250  __TEXT,__text  _AFDeviceSupportsSiriCapella
+0x198dbc684  __TEXT,__text  _AFDeviceSupportsSiriMUX
+0x198cbde64  __TEXT,__text  _AFDeviceSupportsSiriUOD
+0x198dbdcf0  __TEXT,__text  _AFDeviceSupportsSpokenMessages
+0x198d12314  __TEXT,__text  _AFDeviceSupportsSystemAssistantExperience
+0x198dc0c80  __TEXT,__text  _AFDeviceSupportsSystemAssistantExperienceDeprecated
+0x198d2ecb4  __TEXT,__text  _AFDeviceSupportsTTS
+0x198dbdc18  __TEXT,__text  _AFDeviceSupportsUSBTypeCDisplay
+0x198cc2394  __TEXT,__text  _AFDeviceSupportsVisualIntelligence
+0x198d12640  __TEXT,__text  _AFDeviceSupportsWiFiLPASMode
+0x198d10eec  __TEXT,__text  _AFDeviceSupportsZLL
+0x198ccde1c  __TEXT,__text  _AFDiagnosticsSubmissionAllowed
+0x198dbafe4  __TEXT,__text  _AFDictationCapable
+0x1e0c6a9d0  __DATA_CONST,__const  _AFDictationEnablementDidChangeDarwinNotification
+0x198cbfe10  __TEXT,__text  _AFDictationHasHighQualityModels
+0x198dbd1ac  __TEXT,__text  _AFDictationLanguageForKeyboardLanguage
+0x198dbf89c  __TEXT,__text  _AFDictationRequiresRequestValidation
+0x198cc00b0  __TEXT,__text  _AFDictationRestricted
+0x198cbb8f0  __TEXT,__text  _AFDictationServiceDelegateXPCInterface
+0x198cbb450  __TEXT,__text  _AFDictationServiceXPCInterface
+0x198d6ccf0  __TEXT,__text  _AFDictationTaskHintTypeFromString
+0x198d232dc  __TEXT,__text  _AFDirectActionCreateRequestInfo
+0x198d22f68  __TEXT,__text  _AFDirectActionEventGetName
+0x198d9dd10  __TEXT,__text  _AFDirectActionSourceGetName
+0x198ddfb60  __TEXT,__text  _AFDisambiguationHistoryReset
+0x198dde864  __TEXT,__text  _AFDisambiguationSelectionTypeGetName
+0x198dace90  __TEXT,__text  _AFDispatchAsyncLogged
+0x198dbfc44  __TEXT,__text  _AFDispatchScheduleAtTime
+0x198dbfdf4  __TEXT,__text  _AFDispatchScheduleWithDelay
+0x198dacb48  __TEXT,__text  _AFDispatchSyncLogged
+0x198d24918  __TEXT,__text  _AFDispatchTimeGetFromDateAndOffset
+0x198dc09f0  __TEXT,__text  _AFDoesProductTypeSupportMUX
+0x1e0c6a9c8  __DATA_CONST,__const  _AFDynamicSnippetAceId
+0x1e0c6a9c0  __DATA_CONST,__const  _AFDynamicSnippetAction
+0x1e0c6a9b8  __DATA_CONST,__const  _AFDynamicSnippetDomain
+0x1e0c6a9b0  __DATA_CONST,__const  _AFDynamicSnippetName
+0x1e0c6a9a8  __DATA_CONST,__const  _AFDynamicSnippetPunchoutApp
+0x198ce1040  __TEXT,__text  _AFEffectiveSiriBundleForLocation
+0x198d73fc0  __TEXT,__text  _AFEffectiveSiriBundlePathForLocation
+0x198d14dc8  __TEXT,__text  _AFEnableCrashTrappingTTRs
+0x1e0c6a950  __DATA_CONST,__const  _AFEnablementConfigurationProviderParametersKey
+0x1e0c6a948  __DATA_CONST,__const  _AFEnablementExperimentGroupKey
+0x198e1a888  __TEXT,__text  _AFEnablementFlowGetFromName
+0x198e1a848  __TEXT,__text  _AFEnablementFlowGetIsValid
+0x198e1a854  __TEXT,__text  _AFEnablementFlowGetIsValidAndSpecified
+0x198e1a864  __TEXT,__text  _AFEnablementFlowGetName
+0x1e0c6a940  __DATA_CONST,__const  _AFEnablementIsNewUserKey
+0x1e0c6a938  __DATA_CONST,__const  _AFEnablementLoggingDidEnableKey
+0x1e0c6a930  __DATA_CONST,__const  _AFEnablementLoggingEnablementFlowKey
+0x1e0c6a928  __DATA_CONST,__const  _AFEnablementLoggingErrorCodeKey
+0x1e0c6a920  __DATA_CONST,__const  _AFEnablementLoggingFlowKey
+0x1e0c6a918  __DATA_CONST,__const  _AFEnablementLoggingInitialVoiceSelectionKey
+0x1e0c6a910  __DATA_CONST,__const  _AFEnablementLoggingTimeToResolveKey
+0x1e0c6a908  __DATA_CONST,__const  _AFEnablementLoggingVersionKey
+0x1e0c6a8f8  __DATA_CONST,__const  _AFEndpointInfoKey
+0x198d9f8c0  __TEXT,__text  _AFErrorEnumerate
+0x198d9fbc8  __TEXT,__text  _AFErrorSetUnderlyingError
+0x1e0c6a8c8  __DATA_CONST,__const  _AFExperimentConfigurationKey
+0x198d51080  __TEXT,__text  _AFExperimentConfigurationTypeGetFromName
+0x198d51040  __TEXT,__text  _AFExperimentConfigurationTypeGetIsValid
+0x198d5104c  __TEXT,__text  _AFExperimentConfigurationTypeGetIsValidAndSpecified
+0x198d5105c  __TEXT,__text  _AFExperimentConfigurationTypeGetName
+0x1e0c6a8c0  __DATA_CONST,__const  _AFExperimentContextKey
+0x198cee30c  __TEXT,__text  _AFExperimentDeploymentReasonGetFromName
+0x198e1a01c  __TEXT,__text  _AFExperimentDeploymentReasonGetIsValid
+0x198e1a028  __TEXT,__text  _AFExperimentDeploymentReasonGetIsValidAndSpecified
+0x198e1a038  __TEXT,__text  _AFExperimentDeploymentReasonGetName
+0x1e0c6a8a8  __DATA_CONST,__const  _AFExperimentGroupKey
+0x1e0c6a880  __DATA_CONST,__const  _AFExperimentKey
+0x1e0c6a868  __DATA_CONST,__const  _AFExperimentServerConfigurationInfoKey
+0x1e0c6a848  __DATA_CONST,__const  _AFExperimentStateKey
+0x198d17420  __TEXT,__text  _AFExternalNotificationRequestHandlerStateGetFromName
+0x198dd69c8  __TEXT,__text  _AFExternalNotificationRequestHandlerStateGetIsValid
+0x198dd69d4  __TEXT,__text  _AFExternalNotificationRequestHandlerStateGetIsValidAndSpecified
+0x198dd69e4  __TEXT,__text  _AFExternalNotificationRequestHandlerStateGetName
+0x1e0c6a840  __DATA_CONST,__const  _AFExternalRequestEntitlement
+0x1e0c6a838  __DATA_CONST,__const  _AFExternalRequestMachService
+0x1e0c6a830  __DATA_CONST,__const  _AFExternalRequestMessageKeyAction
+0x1e0c6a828  __DATA_CONST,__const  _AFExternalRequestMessageKeyActivationContext
+0x1e0c6a820  __DATA_CONST,__const  _AFExternalRequestMessageKeyAnnouncementPlatform
+0x1e0c6a818  __DATA_CONST,__const  _AFExternalRequestMessageKeyBinaryOutcomeAnnouncement
+0x1e0c6a810  __DATA_CONST,__const  _AFExternalRequestMessageKeyDeactivationReason
+0x1e0c6a808  __DATA_CONST,__const  _AFExternalRequestMessageKeyDropInCall
+0x1e0c6a800  __DATA_CONST,__const  _AFExternalRequestMessageKeyHomeAutomationBackgroundRequest
+0x1e0c6a7f8  __DATA_CONST,__const  _AFExternalRequestMessageKeyIncomingCall
+0x1e0c6a7f0  __DATA_CONST,__const  _AFExternalRequestMessageKeyLocalRequest
+0x1e0c6a7e8  __DATA_CONST,__const  _AFExternalRequestMessageKeyNotification
+0x1e0c6a7e0  __DATA_CONST,__const  _AFExternalRequestMessageKeyRequestOptions
+0x1e0c6a7d8  __DATA_CONST,__const  _AFExternalRequestMessageKeySourceAppId
+0x1e0c6a7d0  __DATA_CONST,__const  _AFExternalRequestMessageKeyStartLocalRequest
+0x1e0c6a7c8  __DATA_CONST,__const  _AFExternalRequestMessageKeyStartRequest
+0x1e0c6a7c0  __DATA_CONST,__const  _AFExternalRequestMessageKeySummary
+0x1e0c6a7b8  __DATA_CONST,__const  _AFExternalRequestMessageKeySummaryDecision
+0x1e0c6a7b0  __DATA_CONST,__const  _AFExternalRequestMessageKeyType
+0x1e0c6a7a8  __DATA_CONST,__const  _AFExternalRequestMessageKeyWorkoutReminderAnnouncement
+0x1e0c6a7a0  __DATA_CONST,__const  _AFExternalRequestMessageKeyWorkoutReminderPredictionIdentifier
+0x1e0c6a798  __DATA_CONST,__const  _AFExternalRequestMessageKeyWorkoutVoiceFeedbackAnnouncement
+0x1e0c6a790  __DATA_CONST,__const  _AFExternalRequestMessageKeyWorkoutVoiceFeedbackIdentifier
+0x1e0c6a788  __DATA_CONST,__const  _AFExternalRequestReplyKeyActivationResult
+0x1e0c6a780  __DATA_CONST,__const  _AFExternalRequestReplyKeyResult
+0x1e0c6a778  __DATA_CONST,__const  _AFFeatureFlagConfigOverrideCarCommandsOnNative
+0x1e0c6a770  __DATA_CONST,__const  _AFFeatureFlagConfigOverridePrefix
+0x1e0c6a768  __DATA_CONST,__const  _AFFetchContextsKeyPlaybackStates
+0x198dc103c  __TEXT,__text  _AFFetchDeviceCarryStatus
+0x198ce7958  __TEXT,__text  _AFFetchFollowerStatusInStereoPair
+0x198dbf298  __TEXT,__text  _AFFetchLocalTTSAssetAvailabilityWithCompletion
+0x198d2d4cc  __TEXT,__text  _AFFileURLForConversationWithIdentifier
+0x198d19d00  __TEXT,__text  _AFFlowServiceXPCInterface
+0x198d2ab64  __TEXT,__text  _AFGetCurrentItemAdamIDFromNowPlayingInfo
+0x198dbed3c  __TEXT,__text  _AFGetFlashlightLevel
+0x198d30840  __TEXT,__text  _AFGetMachAbsoluteTimeFromTimeInterval
+0x198e31e24  __TEXT,__text  _AFGetNowPlayingInfoDictionary
+0x198cf3a90  __TEXT,__text  _AFGetNowPlayingQueueState
+0x198dc0d88  __TEXT,__text  _AFGetOSEligibilitySiriMode
+0x198dbe178  __TEXT,__text  _AFGetTimeSinceEpochInMilliseconds
+0x198dbe0f4  __TEXT,__text  _AFGetTimeSinceEpochRoundedToHourInMilliseconds
+0x198d89d98  __TEXT,__text  _AFGradingOptInStateChangeWithHistoryEntry
+0x198d7fa20  __TEXT,__text  _AFGradingOptInStateChangeWithNewOptInStatus
+0x198dbf148  __TEXT,__text  _AFGryphonAssetsExistForLanguage
+0x198dbb5b4  __TEXT,__text  _AFHardwareTarget
+0x198dbb96c  __TEXT,__text  _AFHasBaseband
+0x198dbb960  __TEXT,__text  _AFHasCellularData
+0x198dbb978  __TEXT,__text  _AFHasCellularTelephony
+0x198cdc994  __TEXT,__text  _AFHasGMSCapability
+0x198dc0c30  __TEXT,__text  _AFHasGMSCapabilityUnembargoed
+0x198dbbc04  __TEXT,__text  _AFHasGPS
+0x198dbad84  __TEXT,__text  _AFHasGreenTeaCapability
+0x198dbba80  __TEXT,__text  _AFHasHapticEngine
+0x198dbadf4  __TEXT,__text  _AFHasMicrophone
+0x198dbaf9c  __TEXT,__text  _AFHasOSEligibilityEntitlement
+0x198dbb984  __TEXT,__text  _AFHasPearlCameraCapability
+0x198dc0548  __TEXT,__text  _AFHasPerfPowerEntitlement
+0x198d7bed0  __TEXT,__text  _AFHasRMVCapableAppleTV
+0x198dbbb44  __TEXT,__text  _AFHasRingerButton
+0x198d13dc4  __TEXT,__text  _AFHasRingerSwitch
+0x198cf7190  __TEXT,__text  _AFHasUnlockedSinceBoot
+0x198d51130  __TEXT,__text  _AFHeadGestureContextGetFromNames
+0x198d0cf70  __TEXT,__text  _AFHeadGestureContextGetNames
+0x198d51128  __TEXT,__text  _AFHeadGestureContextValidate
+0x1e0c6a748  __DATA_CONST,__const  _AFHeadGestureResponseKey
+0x198d51320  __TEXT,__text  _AFHeadGestureStopReasonGetFromName
+0x198d512e0  __TEXT,__text  _AFHeadGestureStopReasonGetIsValid
+0x198d512ec  __TEXT,__text  _AFHeadGestureStopReasonGetIsValidAndSpecified
+0x198d512fc  __TEXT,__text  _AFHeadGestureStopReasonGetName
+0x198d51408  __TEXT,__text  _AFHeadGestureUserIntentGetFromName
+0x198d513c8  __TEXT,__text  _AFHeadGestureUserIntentGetIsValid
+0x198d513d4  __TEXT,__text  _AFHeadGestureUserIntentGetIsValidAndSpecified
+0x198d513e4  __TEXT,__text  _AFHeadGestureUserIntentGetName
+0x1e0c6a6f0  __DATA_CONST,__const  _AFHomeAccessoryInfoKey
+0x1e0c6a6a8  __DATA_CONST,__const  _AFHomeAccessorySiriDataSharingChangeLogEventKey
+0x198e18fec  __TEXT,__text  _AFHomeAccessorySiriDataSharingPropagationEventGetFromName
+0x198e18fac  __TEXT,__text  _AFHomeAccessorySiriDataSharingPropagationEventGetIsValid
+0x198e18fb8  __TEXT,__text  _AFHomeAccessorySiriDataSharingPropagationEventGetIsValidAndSpecified
+0x198e18fc8  __TEXT,__text  _AFHomeAccessorySiriDataSharingPropagationEventGetName
+0x1e0c6a680  __DATA_CONST,__const  _AFHomeAccessorySiriDataSharingPropagationLogEventKey
+0x1e0c6a658  __DATA_CONST,__const  _AFHomeAnnouncementKey
+0x1e0c6a648  __DATA_CONST,__const  _AFHomeAnnouncementSnapshotKey
+0x198cea4bc  __TEXT,__text  _AFHomeAnnouncementStateGetFromNames
+0x198ce4244  __TEXT,__text  _AFHomeAnnouncementStateGetNames
+0x198e4d780  __TEXT,__text  _AFHomeAnnouncementStateValidate
+0x1e0c6a638  __DATA_CONST,__const  _AFHomeInfoKey
+0x1e0c6a610  __DATA_CONST,__const  _AFHomeMemberSettingsKey
+0x1e0c6a608  __DATA_CONST,__const  _AFHomeMembersInfoKey
+0x198d14c18  __TEXT,__text  _AFInstallCommonSignalHandlers
+0x198e3d764  __TEXT,__text  _AFInstanceApplicationTypeGetFromName
+0x198e3d72c  __TEXT,__text  _AFInstanceApplicationTypeGetIsValid
+0x198d28bd0  __TEXT,__text  _AFInstanceApplicationTypeGetIsValidAndSpecified
+0x198e3d738  __TEXT,__text  _AFInstanceApplicationTypeGetName
+0x1e0c6a5f0  __DATA_CONST,__const  _AFInstanceInfoKey
+0x1e0c6a5e8  __DATA_CONST,__const  _AFIntentSupportAndVocabSyncKey
+0x1e0c6a5e0  __DATA_CONST,__const  _AFIntentSupportAndVocabSyncNanoKey
+0x198cbd854  __TEXT,__text  _AFInternalConfigValueForKey
+0x1e0c6a5d8  __DATA_CONST,__const  _AFInternalPreferencesDidChangeDarwinNotification
+0x198d10a68  __TEXT,__text  _AFInternalPreferencesSynchronize
+0x1e0c6a598  __DATA_CONST,__const  _AFInterstitialConfigurationKey
+0x198d1a6e4  __TEXT,__text  _AFInterstitialCreateCommand
+0x198da5fbc  __TEXT,__text  _AFInterstitialGetDialogIdentifierForPhase
+0x198d01810  __TEXT,__text  _AFInterstitialIsCommandInterstitial
+0x198da5fe0  __TEXT,__text  _AFInterstitialIsDialogIdentifierInterstitial
+0x198e06700  __TEXT,__text  _AFInterstitialPhaseGetFromName
+0x198e066c0  __TEXT,__text  _AFInterstitialPhaseGetIsValid
+0x198e066cc  __TEXT,__text  _AFInterstitialPhaseGetIsValidAndSpecified
+0x198e066dc  __TEXT,__text  _AFInterstitialPhaseGetName
+0x198e38908  __TEXT,__text  _AFInterstitialStyleGetFromName
+0x198e388c8  __TEXT,__text  _AFInterstitialStyleGetIsValid
+0x198e388d4  __TEXT,__text  _AFInterstitialStyleGetIsValidAndSpecified
+0x198e388e4  __TEXT,__text  _AFInterstitialStyleGetName
+0x198da6060  __TEXT,__text  _AFInterstitialSupportsRequestWithEvent
+0x198d477f8  __TEXT,__text  _AFInvocationFeedbackExperimentFeatureGroupsGetFromNames
+0x198d47740  __TEXT,__text  _AFInvocationFeedbackExperimentFeatureGroupsGetNames
+0x198d47738  __TEXT,__text  _AFInvocationFeedbackExperimentFeatureGroupsValidate
+0x1e0c6a590  __DATA_CONST,__const  _AFInvocationFeedbacksExperimentConfigurationIdentifier
+0x1e0c6a588  __DATA_CONST,__const  _AFInvocationFeedbacksExperimentGroupPropertyKeyFeatureGroups
+0x198cf0888  __TEXT,__text  _AFIsATV
+0x198ce27dc  __TEXT,__text  _AFIsATVOnly
+0x198dc0f90  __TEXT,__text  _AFIsAppleIntelligenceEnabled
+0x198dbc40c  __TEXT,__text  _AFIsAttentionAssetAvailableFromUodStatus
+0x198dbae64  __TEXT,__text  _AFIsChinaSKU
+0x198dbb830  __TEXT,__text  _AFIsCustomerInstall
+0x198cd97dc  __TEXT,__text  _AFIsCustomerInstallOrPPT
+0x198cc25a8  __TEXT,__text  _AFIsDeviceGreymatterEligible
+0x198cf08d0  __TEXT,__text  _AFIsDeviceUnlocked
+0x198dbf834  __TEXT,__text  _AFIsDictationLanguageInstalledForOfflineRecognition
+0x198dbf7a4  __TEXT,__text  _AFIsDictationLanguageInstalledForOnDeviceDictation
+0x198dbf73c  __TEXT,__text  _AFIsDictationLanguageSupportedForOnDeviceDictation
+0x198d6cde4  __TEXT,__text  _AFIsDictationRequestEligibleForOnDeviceDictation
+0x198dbf954  __TEXT,__text  _AFIsDictationRequestFromAppleClient
+0x198dbf624  __TEXT,__text  _AFIsDictationRequestSpeechApiRequest
+0x198d2d5ec  __TEXT,__text  _AFIsFileNotFoundError
+0x198dbc04c  __TEXT,__text  _AFIsGoldLocale
+0x198d24e30  __TEXT,__text  _AFIsH1Headset
+0x198d24ed8  __TEXT,__text  _AFIsH2Headset
+0x198dbb4ac  __TEXT,__text  _AFIsHomePod
+0x198cd4554  __TEXT,__text  _AFIsHorseman
+0x198dbbdd0  __TEXT,__text  _AFIsHybridUODCapableZeusDevice
+0x198cdc964  __TEXT,__text  _AFIsIOS
+0x198cde0ac  __TEXT,__text  _AFIsIPad
+0x198dbbb8c  __TEXT,__text  _AFIsIPhone
+0x198dbbc4c  __TEXT,__text  _AFIsIPod
+0x198ce19d0  __TEXT,__text  _AFIsInternalInstall
+0x198dbbcfc  __TEXT,__text  _AFIsJ265
+0x198ccde6c  __TEXT,__text  _AFIsLinwoodCapable
+0x198dc0f40  __TEXT,__text  _AFIsLinwoodCapableIgnoringUserSetting
+0x198cddc14  __TEXT,__text  _AFIsLinwoodDevice
+0x198dc0cec  __TEXT,__text  _AFIsLinwoodDismissalAvailable
+0x198ce1ae4  __TEXT,__text  _AFIsLinwoodEnabled
+0x198cf5dd8  __TEXT,__text  _AFIsLinwoodEnabledAndAvailable
+0x198d0732c  __TEXT,__text  _AFIsLinwoodEnabledAndWasEverAvailable
+0x198cddf98  __TEXT,__text  _AFIsLinwoodEnterpriseRestrictionAllowed
+0x198cdc9dc  __TEXT,__text  _AFIsLinwoodFFEnabled
+0x198dc0d48  __TEXT,__text  _AFIsLinwoodUserSettingExplicitlySet
+0x198cd3c84  __TEXT,__text  _AFIsLinwoodUserSettingOn
+0x198d051cc  __TEXT,__text  _AFIsMac
+0x198dbc38c  __TEXT,__text  _AFIsMorphunAssetAvailableFromUodStatus
+0x198dbbf2c  __TEXT,__text  _AFIsMultiUserCompanion
+0x198dbc3cc  __TEXT,__text  _AFIsNLAssetAvailableFromUodStatus
+0x198dbc44c  __TEXT,__text  _AFIsNLRouterAssetAvailableFromUodStatus
+0x198cc65b8  __TEXT,__text  _AFIsNano
+0x198dbb880  __TEXT,__text  _AFIsPPT
+0x198dbb4f4  __TEXT,__text  _AFIsPad
+0x198dc0cb4  __TEXT,__text  _AFIsPersistentSiriAvailable
+0x198dbb380  __TEXT,__text  _AFIsRemoteMontaraAllowed
+0x198cd3c2c  __TEXT,__text  _AFIsSAEDevice
+0x198d6cebc  __TEXT,__text  _AFIsSearchDictationRequest
+0x198dbc34c  __TEXT,__text  _AFIsSpeechAssetAvailableFromUodStatus
+0x198db446c  __TEXT,__text  _AFIsSyncNeeded
+0x198cdc868  __TEXT,__text  _AFIsTop13Locale
+0x198dbc224  __TEXT,__text  _AFIsTop41Locale
+0x198dbbdc0  __TEXT,__text  _AFIsUODCapableHorsemanDevice
+0x198dbbdf0  __TEXT,__text  _AFIsUODCapableMacOSDevice
+0x198dbbde0  __TEXT,__text  _AFIsUODCapableTVOSDevice
+0x198dbbde8  __TEXT,__text  _AFIsUODCapableWatchOSDevice
+0x198dbbdc8  __TEXT,__text  _AFIsUODCapableZeusDevice
+0x198dbbdd8  __TEXT,__text  _AFIsUODEnabledByDefaultDevice
+0x198dbad14  __TEXT,__text  _AFIsVirtualDevice
+0x198cde0a4  __TEXT,__text  _AFIsVision
+0x198d20450  __TEXT,__text  _AFIsVisionBuiltInLocale
+0x198dbefe8  __TEXT,__text  _AFIsW1Headset
+0x198dbbdb8  __TEXT,__text  _AFIsWaffleiron
+0x198da694c  __TEXT,__text  _AFKeyValueObservingCreate
+0x198dbaa70  __TEXT,__text  _AFKeyboardLMLocaleOverride
+0x198dba9d8  __TEXT,__text  _AFKeyboardResourcesDirectoryPath
+0x198e04330  __TEXT,__text  _AFKeychainRemoveValueForAccountAndKey
+0x198cd36d4  __TEXT,__text  _AFKeychainSetValueForAccountAndKey
+0x198cf4044  __TEXT,__text  _AFKeychainValueForAccountAndKey
+0x1e0c6a580  __DATA_CONST,__const  _AFLanguageCodeDidChangeDarwinNotification
+0x1e0c6a578  __DATA_CONST,__const  _AFLanguageCodeDidChangeNotification
+0x198d06aa0  __TEXT,__text  _AFLanguageOptionsForNowPlayingInfo
+0x198cbc3b0  __TEXT,__text  _AFLanguagePrefixForLanguageCode
+0x198dbe500  __TEXT,__text  _AFLibraryDirectoryWithSubPath
+0x198cddee0  __TEXT,__text  _AFLinwoodRequiredAssets
+0x198cc4054  __TEXT,__text  _AFLocaleIdentifierSupportsSAE
+0x198cc30ac  __TEXT,__text  _AFLocaleSupportsSAE
+0x198ce4658  __TEXT,__text  _AFLocationAccessStateGetFromName
+0x198d3fddc  __TEXT,__text  _AFLocationAccessStateGetIsValid
+0x198d3fde8  __TEXT,__text  _AFLocationAccessStateGetIsValidAndSpecified
+0x198d3fdf8  __TEXT,__text  _AFLocationAccessStateGetName
+0x1e0c6a530  __DATA_CONST,__const  _AFLocationSnapshotKey
+0x198d73fb0  __TEXT,__text  _AFLocationStatusIsAllowed
+0x198d12668  __TEXT,__text  _AFLocationStatusIsDenied
+0x1ebb20dc8  __DATA,__data  _AFLogContextNetworkingFunctional
+0x1ebb20dc0  __DATA,__data  _AFLogContextNetworkingPerformance
+0x198dac164  __TEXT,__text  _AFLogDirectory
+0x198dac7cc  __TEXT,__text  _AFLogFlush
+0x198cc4318  __TEXT,__text  _AFLogInitIfNeeded
+0x198dac7d8  __TEXT,__text  _AFLogParsedCommandObject
+0x198dac7d0  __TEXT,__text  _AFLogWantsToLogParsedCommandObjects
+0x198cfdfe8  __TEXT,__text  _AFMachAbsoluteTimeAddTimeInterval
+0x198dbe018  __TEXT,__text  _AFMachAbsoluteTimeGetMicroseconds
+0x198ce78a0  __TEXT,__text  _AFMachAbsoluteTimeGetMilliseconds
+0x198cc54ec  __TEXT,__text  _AFMachAbsoluteTimeGetNanoseconds
+0x198cd32c8  __TEXT,__text  _AFMachAbsoluteTimeGetTimeInterval
+0x198dbe080  __TEXT,__text  _AFMachAbsoluteTimeSubtractTimeInterval
+0x198dbc75c  __TEXT,__text  _AFMainScreenScale
+0x198d8eeb8  __TEXT,__text  _AFManagedPreferencesDomainForDomain
+0x198dbe4b8  __TEXT,__text  _AFMapsNavigationStatusIsActive
+0x1e0c6a528  __DATA_CONST,__const  _AFMeDeviceLinwoodEnablementDidChangeNotification
+0x1e0c6a520  __DATA_CONST,__const  _AFMediaAssistantProtocolAlbumURLScheme
+0x1e0c6a518  __DATA_CONST,__const  _AFMediaAssistantProtocolArtistURLScheme
+0x1e0c6a510  __DATA_CONST,__const  _AFMediaAssistantProtocolAudiobookURLScheme
+0x1e0c6a508  __DATA_CONST,__const  _AFMediaAssistantProtocolCollectionURLScheme
+0x1e0c6a500  __DATA_CONST,__const  _AFMediaAssistantProtocolEntityURLScheme
+0x1e0c6a4f8  __DATA_CONST,__const  _AFMediaAssistantProtocolExternal
+0x1e0c6a4f0  __DATA_CONST,__const  _AFMediaAssistantProtocolGeniusMixURLScheme
+0x1e0c6a4e8  __DATA_CONST,__const  _AFMediaAssistantProtocolGenreURLScheme
+0x1e0c6a4e0  __DATA_CONST,__const  _AFMediaAssistantProtocolItemURLScheme
+0x1e0c6a4d8  __DATA_CONST,__const  _AFMediaAssistantProtocolLocalDeviceURLHost
+0x1e0c6a4d0  __DATA_CONST,__const  _AFMediaAssistantProtocolPlaylistURLScheme
+0x1e0c6a4c8  __DATA_CONST,__const  _AFMediaAssistantProtocolPodcastURLScheme
+0x1e0c6a4c0  __DATA_CONST,__const  _AFMediaAssistantProtocolRadioStationURLScheme
+0x1e0c6a4b8  __DATA_CONST,__const  _AFMediaAssistantProtocolRadioTrackURLScheme
+0x1e0c6a4b0  __DATA_CONST,__const  _AFMediaAssistantProtocolTitleURLScheme
+0x1e0c6a4a8  __DATA_CONST,__const  _AFMediaAssistantProtocolUniversalURLHost
+0x1e0c6a4a0  __DATA_CONST,__const  _AFMediaAssistantProtocoliTunesStoreHost
+0x198ceac04  __TEXT,__text  _AFMediaPlaybackStateGetFromName
+0x198e100c0  __TEXT,__text  _AFMediaPlaybackStateGetIsValid
+0x198e100cc  __TEXT,__text  _AFMediaPlaybackStateGetIsValidAndSpecified
+0x198d2419c  __TEXT,__text  _AFMediaPlaybackStateGetName
+0x1e0c6a478  __DATA_CONST,__const  _AFMediaPlaybackStateSnapshotKey
+0x1e0c6a470  __DATA_CONST,__const  _AFMediaRemoteDeviceInfoGroupIdentifierDidChangeNotification
+0x1e0c6a468  __DATA_CONST,__const  _AFMediaRemoteDeviceInfoNotificationKey
+0x1e0c6a460  __DATA_CONST,__const  _AFMediaRemoteDeviceInfoRouteIdentifierDidChangeNotification
+0x198e31504  __TEXT,__text  _AFMediaRemoteSendCommandNoCheck
+0x198e31748  __TEXT,__text  _AFMediaRemoteSendCommandWithOptions
+0x198e31500  __TEXT,__text  _AFMediaRemoteSendCommandWithOptionsNoCheck
+0x198dad9fc  __TEXT,__text  _AFMemoryInfoGetCurrent
+0x1e0c6a430  __DATA_CONST,__const  _AFMemoryInfoKey
+0x198d3ff74  __TEXT,__text  _AFMessagesGetAceDomainObjectsFromContext
+0x198d3fea4  __TEXT,__text  _AFMessagesGetDomainObjectsFromContext
+0x198d3fe34  __TEXT,__text  _AFMessagesGetPhoneNumberEmailAddressFromString
+0x198dadfec  __TEXT,__text  _AFMetricsCategoryGetName
+0x198dba988  __TEXT,__text  _AFMobileUserBundleServicesCachePath
+0x198dbb704  __TEXT,__text  _AFModelForDailyStatus
+0x198dbb6dc  __TEXT,__text  _AFModelNumber
+0x1e0c6a3a0  __DATA_CONST,__const  _AFModesConfigurationKey
+0x198cc292c  __TEXT,__text  _AFMontaraRestricted
+0x1e0c6a398  __DATA_CONST,__const  _AFMultiUserDefaultSharedUserId
+0x198e73258  __TEXT,__const  _AFMultiUserServiceUserProfileLimit
+0x198d62424  __TEXT,__text  _AFMultiUserServiceXPCInterface
+0x1e0c6a388  __DATA_CONST,__const  _AFMultiUserStateSnapshotKey
+0x198dbbe90  __TEXT,__text  _AFMyriadEmitClassicMetrics
+0x198d22e8c  __TEXT,__text  _AFMyriadEmitSelfMetrics
+0x1e0c6a380  __DATA_CONST,__const  _AFMyriadTrialBoostsUpdatedNotification
+0x198dbc6e4  __TEXT,__text  _AFNanoDeviceHasDedicatedSiriResources
+0x1e0c6a378  __DATA_CONST,__const  _AFNanoPreferencesDidChangeNotification
+0x198cf3a6c  __TEXT,__text  _AFNavigationStateIsNavigating
+0x1e0c6a370  __DATA_CONST,__const  _AFNetworkAvailabilityDidChangeNotification
+0x1ee12dcf8  __DATA_DIRTY,__common  _AFNetworkingLogContextFunctional
+0x1ee12dcf0  __DATA_DIRTY,__common  _AFNetworkingLogContextPerformance
+0x198ce2a94  __TEXT,__text  _AFNonNilMutableCopyOfArray
+0x198d9cac0  __TEXT,__text  _AFNonNilMutableCopyOfDictionary
+0x198cfe5b8  __TEXT,__text  _AFNormalizeMacAddress
+0x198daebd8  __TEXT,__text  _AFNotifyGetEffectiveNotification
+0x198daeb88  __TEXT,__text  _AFNotifyGetEffectiveNotificationName
+0x198ce21b4  __TEXT,__text  _AFOfflineDictationCapable
+0x198dbb02c  __TEXT,__text  _AFOfflineDictationCapableWithoutOverride
+0x198dbd008  __TEXT,__text  _AFOfflineDictationLanguageForKeyboardLanguage
+0x1e0c6a368  __DATA_CONST,__const  _AFOfflineDictationStatusAutoPunctuationKey
+0x1e0c6a360  __DATA_CONST,__const  _AFOfflineDictationStatusContinuousListeningKey
+0x1e0c6a358  __DATA_CONST,__const  _AFOfflineDictationStatusEmojiRecognitionKey
+0x198dbf67c  __TEXT,__text  _AFOfflineDictationStatusForLanguage
+0x1e0c6a350  __DATA_CONST,__const  _AFOfflineDictationStatusHighQualityKey
+0x1e0c6a348  __DATA_CONST,__const  _AFOfflineDictationStatusInstalledKey
+0x1e0c6a340  __DATA_CONST,__const  _AFOfflineDictationStatusOnDeviceSearchKey
+0x198dbb1c4  __TEXT,__text  _AFOfflineDictationStatusStringAssetId
+0x198dbb074  __TEXT,__text  _AFOfflineDictationStatusStringForVersion
+0x198dbb134  __TEXT,__text  _AFOfflineDictationStatusStringIsAutoPunctuationSupported
+0x198dbb11c  __TEXT,__text  _AFOfflineDictationStatusStringIsContinuousListeningSupported
+0x198dbb140  __TEXT,__text  _AFOfflineDictationStatusStringIsEmojiRecognitionSupported
+0x198dbb0ac  __TEXT,__text  _AFOfflineDictationStatusStringIsHighQualityModelInstalled
+0x198dbb110  __TEXT,__text  _AFOfflineDictationStatusStringIsHighQualityModelSupported
+0x198cdc744  __TEXT,__text  _AFOfflineDictationStatusStringIsInstalled
+0x198dbb0b8  __TEXT,__text  _AFOfflineDictationStatusStringIsInstalling
+0x198dbb128  __TEXT,__text  _AFOfflineDictationStatusStringIsOnDeviceSearchSupported
+0x198dbb14c  __TEXT,__text  _AFOfflineDictationStatusStringIsVoiceCommandsSupported
+0x1e0c6a338  __DATA_CONST,__const  _AFOfflineDictationStatusVoiceCommandsKey
+0x198d7403c  __TEXT,__text  _AFOpportuneSpeakingModelFeedbackGetDescription
+0x198d75384  __TEXT,__text  _AFOpportuneSpeakingModelServiceInterface
+0x198d7401c  __TEXT,__text  _AFOpportuneSpeakingModelTypeGetDescription
+0x1e0c6a330  __DATA_CONST,__const  _AFOpportuneSpeakingModuleDataCollectionFeatureNameKey
+0x1e0c6a328  __DATA_CONST,__const  _AFOpportuneSpeakingModuleDataCollectionFeatureValueKey
+0x1e0c6a320  __DATA_CONST,__const  _AFOpportuneSpeakingModuleDataCollectionPrimaryProcess
+0x1e0c6a318  __DATA_CONST,__const  _AFOpportuneSpeakingModuleDataCollectionSecondaryProcess
+0x1e0c6a310  __DATA_CONST,__const  _AFOutputLanguageDidChangeDarwinNotification
+0x1e0c6a2e8  __DATA_CONST,__const  _AFOutputVoiceColorDescriptorKey
+0x1e0c6a2d8  __DATA_CONST,__const  _AFOutputVoiceDescriptorKey
+0x1e0c6a2d0  __DATA_CONST,__const  _AFOutputVoiceDidChangeNotification
+0x198dbcea4  __TEXT,__text  _AFOutputVoiceLanguageForMacrolanguage
+0x198dbce34  __TEXT,__text  _AFOutputVoiceLanguageForRecognitionLanguage
+0x198d6c714  __TEXT,__text  _AFOverrideLanguageCode
+0x198d6e720  __TEXT,__text  _AFPNRFatalErrorInfoFromNSError
+0x198d30e34  __TEXT,__text  _AFPairedDeviceIsVictory
+0x198e32294  __TEXT,__text  _AFPauseCommandsInterruptAudio
+0x198d76b80  __TEXT,__text  _AFPeerContentTupleGetContentMapFromArray
+0x198d05470  __TEXT,__text  _AFPeerInfoGetCompactDescription
+0x1e0c6a238  __DATA_CONST,__const  _AFPeerInfoKey
+0x198d03198  __TEXT,__text  _AFPeerInfoMerge
+0x198e37c20  __TEXT,__text  _AFPendingSpeechRequestServiceInterface
+0x198e31190  __TEXT,__text  _AFPerformDeviceVolumeAction
+0x1e0c6a208  __DATA_CONST,__const  _AFPersonAddressKey
+0x1e0c6a1d8  __DATA_CONST,__const  _AFPersonInfoKey
+0x1e0c6a1d0  __DATA_CONST,__const  _AFPersonalDomainsNotificationUserInfoHomeKey
+0x198d6b9d4  __TEXT,__text  _AFPineBoardSystemStateGetFromName
+0x198d6b994  __TEXT,__text  _AFPineBoardSystemStateGetIsValid
+0x198d6b9a0  __TEXT,__text  _AFPineBoardSystemStateGetIsValidAndSpecified
+0x198d6b9b0  __TEXT,__text  _AFPineBoardSystemStateGetName
+0x198cfe6cc  __TEXT,__text  _AFPlaybackRouteIsHandsFree
+0x198cdfe90  __TEXT,__text  _AFPostSAEDeviceCannotSatisfyAssets
+0x198d7ca64  __TEXT,__text  _AFPreferencesATVStopRecordingDelay
+0x198cd4664  __TEXT,__text  _AFPreferencesAlwaysEyesFreeEnabled
+0x198d7ece8  __TEXT,__text  _AFPreferencesAssistantAllowed
+0x198d7b948  __TEXT,__text  _AFPreferencesAssistantEnabled
+0x198d7ed08  __TEXT,__text  _AFPreferencesAssistantIsRestrictedWithReason
+0x198d8015c  __TEXT,__text  _AFPreferencesAudioDuckingAllowed
+0x198d7e8c0  __TEXT,__text  _AFPreferencesBorealisEducationHeaderDisplayCount
+0x198d7cbbc  __TEXT,__text  _AFPreferencesBufferedSpeechCapturePacketInterval
+0x198d7cc10  __TEXT,__text  _AFPreferencesDefaultsDeleteTypeToSiriSetting
+0x198d7ec80  __TEXT,__text  _AFPreferencesDictationAllowed
+0x1e0c6a1c8  __DATA_CONST,__const  _AFPreferencesDidChangeNotification
+0x198d80110  __TEXT,__text  _AFPreferencesDisableDictationMode
+0x198cd45f4  __TEXT,__text  _AFPreferencesHeadphonesAlwaysAuthenticatedEnabled
+0x198d7ce28  __TEXT,__text  _AFPreferencesHoldToTalkForTypeToSiriEnabled
+0x198d7b9fc  __TEXT,__text  _AFPreferencesHorsemanSupplementalLanguageDictionary
+0x198d7c8d0  __TEXT,__text  _AFPreferencesIgnoreServerManualEndpointingThreshold
+0x198d7cf0c  __TEXT,__text  _AFPreferencesLanguageCodeForUser
+0x198d7c6b8  __TEXT,__text  _AFPreferencesLanguageIsExplicitlySupportedForDictation
+0x198cd4c64  __TEXT,__text  _AFPreferencesLanguageIsSupported
+0x198d7c684  __TEXT,__text  _AFPreferencesLanguageIsSupportedForDeviceSettings
+0x198cbc284  __TEXT,__text  _AFPreferencesLanguageIsSupportedForDictation
+0x198d7c99c  __TEXT,__text  _AFPreferencesManualCampoEndpointingThreshold
+0x198d7c9f4  __TEXT,__text  _AFPreferencesManualEndpointingThreshold
+0x1e0c6a1c0  __DATA_CONST,__const  _AFPreferencesManualEndpointingThresholdDidChangeNotification
+0x198d11e1c  __TEXT,__text  _AFPreferencesMobileUserSessionLanguage
+0x198d7ee9c  __TEXT,__text  _AFPreferencesMontaraAllowed
+0x198d7bc44  __TEXT,__text  _AFPreferencesMultiUserCompanionNotificationLanguageCodesForHomePodVersion
+0x1e0c6a1b8  __DATA_CONST,__const  _AFPreferencesNavStatusDidChangeNotification
+0x198d7c22c  __TEXT,__text  _AFPreferencesOnDeviceLocaleForDictationLocale
+0x198d7c344  __TEXT,__text  _AFPreferencesOnDeviceLocaleForSpellingLocale
+0x198d7edd4  __TEXT,__text  _AFPreferencesProfanityFilterForced
+0x1e0c6a1b0  __DATA_CONST,__const  _AFPreferencesSessionContextNavigationKey
+0x198d7c7e8  __TEXT,__text  _AFPreferencesSetAlwaysEyesFreeEnabled
+0x198d7e900  __TEXT,__text  _AFPreferencesSetBorealisEducationHeaderDisplayCount
+0x198d7c85c  __TEXT,__text  _AFPreferencesSetHeadphonesAlwaysAuthenticatedEnabled
+0x198d7ce90  __TEXT,__text  _AFPreferencesSetHoldToTalkForTypeToSiriEnabled
+0x198d7ba04  __TEXT,__text  _AFPreferencesSetHorsemanSupplementalLanguageDictionary
+0x198d7c928  __TEXT,__text  _AFPreferencesSetIgnoreServerManualEndpointingThreshold
+0x198d7ca4c  __TEXT,__text  _AFPreferencesSetManualEndpointingThreshold
+0x198d7c774  __TEXT,__text  _AFPreferencesSetShouldIgnoreInternalConfig
+0x198d7d1f4  __TEXT,__text  _AFPreferencesSetStartAlertEnabled
+0x198d7cafc  __TEXT,__text  _AFPreferencesSetStreamingDictationEnabled
+0x198d7cc88  __TEXT,__text  _AFPreferencesSetTypeToSiriEnabled
+0x198d7c728  __TEXT,__text  _AFPreferencesShouldIgnoreInternalConfig
+0x198d7cb70  __TEXT,__text  _AFPreferencesSimulateImmediateSpeechCapture
+0x198d7ea08  __TEXT,__text  _AFPreferencesSiriTaskBackgroundAssertionTimeout
+0x198d7e970  __TEXT,__text  _AFPreferencesSiriTaskResponseTimeout
+0x198cca198  __TEXT,__text  _AFPreferencesStartAlertEnabled
+0x198cd4ab8  __TEXT,__text  _AFPreferencesStreamingDictationEnabled
+0x198d7ba08  __TEXT,__text  _AFPreferencesSupplementalLanguages
+0x198d7b9f4  __TEXT,__text  _AFPreferencesSupplementalLanguagesModificationDate
+0x198cbd6e0  __TEXT,__text  _AFPreferencesSupportedDictationLanguages
+0x198d7c620  __TEXT,__text  _AFPreferencesSupportedDictationLanguagesSet
+0x198cbd6a8  __TEXT,__text  _AFPreferencesSupportedLanguages
+0x198d7bf34  __TEXT,__text  _AFPreferencesSupportedLanguagesForCurrentStoreFront
+0x198d7c45c  __TEXT,__text  _AFPreferencesSupportedLanguagesForRemote
+0x198d7bf44  __TEXT,__text  _AFPreferencesSupportedLanguagesForStorefrontIdentifier
+0x198cc189c  __TEXT,__text  _AFPreferencesSupportedMultiUserLanguages
+0x198d7b96c  __TEXT,__text  _AFPreferencesTestAccessEnabled
+0x198ccba3c  __TEXT,__text  _AFPreferencesTypeToSiriEnabled
+0x198d7ee34  __TEXT,__text  _AFPreferencesUserGeneratedContentAllowed
+0x198dbabcc  __TEXT,__text  _AFPresentationPluginsURL
+0x1e0c6a1a8  __DATA_CONST,__const  _AFPreviousConversationIdentifier
+0x198cf6c68  __TEXT,__text  _AFProcessGetInstanceUUID
+0x198dbfec4  __TEXT,__text  _AFProcessGetValueForEntitlement
+0x198dbffb8  __TEXT,__text  _AFProcessIsAssistantDaemon
+0x198dc00ac  __TEXT,__text  _AFProcessIsAssistantService
+0x198cf6c24  __TEXT,__text  _AFProcessIsRunningAsInstance
+0x198d28a20  __TEXT,__text  _AFProductAndBuildVersion
+0x198dbb564  __TEXT,__text  _AFProductName
+0x198cf5504  __TEXT,__text  _AFProductType
+0x198cce60c  __TEXT,__text  _AFProductTypeForInstrumentation
+0x198dbb58c  __TEXT,__text  _AFProductVersion
+0x198ce0ff8  __TEXT,__text  _AFProviderServiceDelegateXPCInterface
+0x198ce0fb0  __TEXT,__text  _AFProviderServiceXPCInterface
+0x198dc12d8  __TEXT,__text  _AFRaiseToSpeakSupportedForLanguage
+0x198d9ced8  __TEXT,__text  _AFRecordCoreDuetContext
+0x198d9ce40  __TEXT,__text  _AFRecordCoreDuetEvent
+0x198d9cb0c  __TEXT,__text  _AFRecordCoreDuetEventAtTimestamps
+0x198d9cd94  __TEXT,__text  _AFRecordCoreDuetEventWithStream
+0x198cfdfc4  __TEXT,__text  _AFRecordRouteIsHearst
+0x198dbb808  __TEXT,__text  _AFRegionInfo
+0x1e0c6a1a0  __DATA_CONST,__const  _AFRemoraActiveLanguagesChangedNotification
+0x198e39788  __TEXT,__text  _AFReplayCaptureSentinelURLMake
+0x198e398c8  __TEXT,__text  _AFReplayCaptureSentinelURLParse
+0x198e190d4  __TEXT,__text  _AFRequestCancellationReasonGetFromName
+0x198e19094  __TEXT,__text  _AFRequestCancellationReasonGetIsValid
+0x198e190a0  __TEXT,__text  _AFRequestCancellationReasonGetIsValidAndSpecified
+0x198e190b0  __TEXT,__text  _AFRequestCancellationReasonGetName
+0x1e0c6a188  __DATA_CONST,__const  _AFRequestHandlingContextKey
+0x1e0c6a180  __DATA_CONST,__const  _AFRequestMetricActivation
+0x1e0c6a178  __DATA_CONST,__const  _AFRequestMetricButtonDown
+0x1e0c6a170  __DATA_CONST,__const  _AFRequestMetricDidPresentHostedUI
+0x1e0c6a168  __DATA_CONST,__const  _AFRequestMetricDidPresentViewServiceUI
+0x1e0c6a160  __DATA_CONST,__const  _AFRequestMetricUsefulUserResult
+0x198cdc5a4  __TEXT,__text  _AFRequiredAssetsForFullUOD
+0x198cdc3d0  __TEXT,__text  _AFRequiredAssetsForHybridUOD
+0x198dbc848  __TEXT,__text  _AFResetDaemonIsExitingCleanlyForTesting
+0x198e2fcfc  __TEXT,__text  _AFResponseModeDeviceMotionGetFromName
+0x198e2fcbc  __TEXT,__text  _AFResponseModeDeviceMotionGetIsValid
+0x198e2fcc8  __TEXT,__text  _AFResponseModeDeviceMotionGetIsValidAndSpecified
+0x198e2fcd8  __TEXT,__text  _AFResponseModeDeviceMotionGetName
+0x198de80ac  __TEXT,__text  _AFResponseModeDeviceOrientationGetFromName
+0x198de806c  __TEXT,__text  _AFResponseModeDeviceOrientationGetIsValid
+0x198de8078  __TEXT,__text  _AFResponseModeDeviceOrientationGetIsValidAndSpecified
+0x198de8088  __TEXT,__text  _AFResponseModeDeviceOrientationGetName
+0x198e094c8  __TEXT,__text  _AFResponseModeVoiceFeedbackGetFromName
+0x198e09488  __TEXT,__text  _AFResponseModeVoiceFeedbackGetIsValid
+0x198e09494  __TEXT,__text  _AFResponseModeVoiceFeedbackGetIsValidAndSpecified
+0x198e094a4  __TEXT,__text  _AFResponseModeVoiceFeedbackGetName
+0x198dc1340  __TEXT,__text  _AFRestrictionsChangedNotificationName
+0x1e0c6a158  __DATA_CONST,__const  _AFSAEMaxRequiredStorageInBytesForAssets
+0x1e0c6a150  __DATA_CONST,__const  _AFSAEMaxRequiredStorageInBytesForAssetsIncludeAppleIntelligence
+0x198cdde84  __TEXT,__text  _AFSAERequiredAssets
+0x1e0c6a148  __DATA_CONST,__const  _AFSearchQueriesDataSharingStatusDidChangeDarwinNotification
+0x198e2ac80  __TEXT,__text  _AFSearchQueriesDataSharingStatusGetFromName
+0x198e2ac40  __TEXT,__text  _AFSearchQueriesDataSharingStatusGetIsValid
+0x198e2ac4c  __TEXT,__text  _AFSearchQueriesDataSharingStatusGetIsValidAndSpecified
+0x198e2ac5c  __TEXT,__text  _AFSearchQueriesDataSharingStatusGetName
+0x198d6b78c  __TEXT,__text  _AFSecurityDecryptData
+0x198cd332c  __TEXT,__text  _AFSecurityDigestChunksWithProvider
+0x198cd3bc8  __TEXT,__text  _AFSecurityDigestData
+0x198d6b3b4  __TEXT,__text  _AFSecurityEncryptData
+0x1e0c6a140  __DATA_CONST,__const  _AFSecurityEncryptionKeyDidChangeNotification
+0x198d6b798  __TEXT,__text  _AFSecurityGenerateRandomData
+0x198d51fa0  __TEXT,__text  _AFSecurityServiceGetXPCInterface
+0x198dbe9fc  __TEXT,__text  _AFSerializeNSUserActivity
+0x198d31608  __TEXT,__text  _AFServerSpeechRecognizerDelegateXPCInterface
+0x198d315f4  __TEXT,__text  _AFServerSpeechRecognizerServiceXPCInterface
+0x1e0c6a0f8  __DATA_CONST,__const  _AFServiceDeviceContextKey
+0x1e0c6a0f0  __DATA_CONST,__const  _AFServiceDeviceContextMetricsKeyCoreAnalyticsLoggingPayload
+0x1e0c6a0e8  __DATA_CONST,__const  _AFServiceDeviceContextMetricsKeyProductType
+0x198dbab84  __TEXT,__text  _AFServicePluginsURL
+0x1e0c6a0d8  __DATA_CONST,__const  _AFSessionResumptionOptionsKey
+0x198e2c3e8  __TEXT,__text  _AFSessionResumptionOriginGetFromName
+0x198e2c3a8  __TEXT,__text  _AFSessionResumptionOriginGetIsValid
+0x198e2c3b4  __TEXT,__text  _AFSessionResumptionOriginGetIsValidAndSpecified
+0x198e2c3c4  __TEXT,__text  _AFSessionResumptionOriginGetName
+0x1e0c6a0c0  __DATA_CONST,__const  _AFSessionResumptionResultKey
+0x198e2c300  __TEXT,__text  _AFSessionResumptionSourceGetFromName
+0x198e2c2c0  __TEXT,__text  _AFSessionResumptionSourceGetIsValid
+0x198e2c2cc  __TEXT,__text  _AFSessionResumptionSourceGetIsValidAndSpecified
+0x198e2c2dc  __TEXT,__text  _AFSessionResumptionSourceGetName
+0x1e0c6a0a0  __DATA_CONST,__const  _AFSetAudioSessionActiveContextKey
+0x198d33de8  __TEXT,__text  _AFSetAudioSessionActiveOptionsGetFromNames
+0x198cf84f8  __TEXT,__text  _AFSetAudioSessionActiveOptionsGetNames
+0x198d33de0  __TEXT,__text  _AFSetAudioSessionActiveOptionsValidate
+0x198e42b90  __TEXT,__text  _AFSetAudioSessionActivePlaybackTypeGetFromName
+0x198e42b50  __TEXT,__text  _AFSetAudioSessionActivePlaybackTypeGetIsValid
+0x198e42b5c  __TEXT,__text  _AFSetAudioSessionActivePlaybackTypeGetIsValidAndSpecified
+0x198e42b6c  __TEXT,__text  _AFSetAudioSessionActivePlaybackTypeGetName
+0x198e147c4  __TEXT,__text  _AFSetAudioSessionActiveReasonGetFromName
+0x198e147a8  __TEXT,__text  _AFSetAudioSessionActiveReasonGetIsValid
+0x198e147b4  __TEXT,__text  _AFSetAudioSessionActiveReasonGetIsValidAndSpecified
+0x198cf84cc  __TEXT,__text  _AFSetAudioSessionActiveReasonGetName
+0x1e0c6a090  __DATA_CONST,__const  _AFSetAudioSessionActiveResultKey
+0x198e180a0  __TEXT,__text  _AFSetAudioSessionInactiveOptionsGetFromNames
+0x198e18034  __TEXT,__text  _AFSetAudioSessionInactiveOptionsGetNames
+0x198e1802c  __TEXT,__text  _AFSetAudioSessionInactiveOptionsValidate
+0x198dbea88  __TEXT,__text  _AFSetSpokenNotificationDataCollectionEnabled
+0x198cdc96c  __TEXT,__text  _AFSettingsServiceDelegateXPCInterface
+0x198cdd080  __TEXT,__text  _AFSettingsServiceXPCInterface
+0x198d7b2dc  __TEXT,__text  _AFSharedBackedUpPreferencesSynchronize
+0x1e0c6a080  __DATA_CONST,__const  _AFSharedConfidenceScoreKey
+0x198dba91c  __TEXT,__text  _AFSharedResourcesDirectory
+0x1e0c6a038  __DATA_CONST,__const  _AFSharedUserInfoKey
+0x198ce1cd4  __TEXT,__text  _AFShouldEmitAceCommandContextSELFLog
+0x198dc0934  __TEXT,__text  _AFShouldOptOutDataSharingForMigrationFromBuildVersion
+0x198dc08c8  __TEXT,__text  _AFShouldOptOutDataSharingForMigrationFromProductVersion
+0x198cbe0b4  __TEXT,__text  _AFShouldRunAsrOnServerForUOD
+0x198cc31e8  __TEXT,__text  _AFShouldRunAsrOnServerForUODLanguage
+0x198dbb388  __TEXT,__text  _AFShouldRunDESRecording
+0x198d6c5c8  __TEXT,__text  _AFShouldUseLanguageDetector
+0x198dbc7f0  __TEXT,__text  _AFSimulateDaemonWillExitCleanlyForTesting
+0x198dbc490  __TEXT,__text  _AFSimulatorSupportsSiriUOD
+0x1e0c6a030  __DATA_CONST,__const  _AFSiriAceErrorDomain
+0x198d64418  __TEXT,__text  _AFSiriActivationActionTypeGetFromName
+0x198d643d8  __TEXT,__text  _AFSiriActivationActionTypeGetIsValid
+0x198d643e4  __TEXT,__text  _AFSiriActivationActionTypeGetIsValidAndSpecified
+0x198d643f4  __TEXT,__text  _AFSiriActivationActionTypeGetName
+0x198e0ce24  __TEXT,__text  _AFSiriActivationBluetoothDeviceBoronSignal
+0x198e0d7d8  __TEXT,__text  _AFSiriActivationBluetoothDeviceButtonPress
+0x198e0d9b8  __TEXT,__text  _AFSiriActivationBluetoothDeviceButtonRelease
+0x198e0c890  __TEXT,__text  _AFSiriActivationBluetoothDeviceDoubleTap
+0x198e0d594  __TEXT,__text  _AFSiriActivationBluetoothDeviceTriggerless
+0x198e0cb0c  __TEXT,__text  _AFSiriActivationBluetoothDeviceVoice
+0x198e0d2c4  __TEXT,__text  _AFSiriActivationBluetoothDeviceVoiceTrigger
+0x198e0d0dc  __TEXT,__text  _AFSiriActivationBluetoothDeviceVoiceTriggerPrewarm
+0x198cc6fa4  __TEXT,__text  _AFSiriActivationBuiltInMicVoice
+0x198e0c36c  __TEXT,__text  _AFSiriActivationBuiltInMicVoiceTrigger
+0x198e0c1c4  __TEXT,__text  _AFSiriActivationBuiltInMicVoiceTriggerPrewarm
+0x198e0df64  __TEXT,__text  _AFSiriActivationCarPlayDeviceVoice
+0x198e0e328  __TEXT,__text  _AFSiriActivationCarPlayDeviceVoiceTrigger
+0x198e0e140  __TEXT,__text  _AFSiriActivationCarPlayDeviceVoiceTriggerPrewarm
+0x1e0c6a000  __DATA_CONST,__const  _AFSiriActivationContextKey
+0x198e0e9e8  __TEXT,__text  _AFSiriActivationContinuousConversation
+0x198e0ebc0  __TEXT,__text  _AFSiriActivationContinuousConversationHearst
+0x198e0ef70  __TEXT,__text  _AFSiriActivationContinuousConversationHoneycomb
+0x198e0ed98  __TEXT,__text  _AFSiriActivationContinuousConversationJarvis
+0x198cedd98  __TEXT,__text  _AFSiriActivationContinuousVoiceTriggerDetected
+0x198cee410  __TEXT,__text  _AFSiriActivationCreateContextFromXPCDictionary
+0x198cca648  __TEXT,__text  _AFSiriActivationCreateRequestInfoFromContext
+0x198e0f71c  __TEXT,__text  _AFSiriActivationCreateResultFromXPCDictionary
+0x198cee908  __TEXT,__text  _AFSiriActivationCreateXPCDictionaryFromContext
+0x198e0f964  __TEXT,__text  _AFSiriActivationCreateXPCDictionaryFromResult
+0x1e0c69ff8  __DATA_CONST,__const  _AFSiriActivationEntitlement
+0x198e4609c  __TEXT,__text  _AFSiriActivationEventGetFromName
+0x198e4605c  __TEXT,__text  _AFSiriActivationEventGetIsValid
+0x198e46068  __TEXT,__text  _AFSiriActivationEventGetIsValidAndSpecified
+0x198e46078  __TEXT,__text  _AFSiriActivationEventGetName
+0x198cedbb8  __TEXT,__text  _AFSiriActivationExternalKeyboardInvocation
+0x198cc7c24  __TEXT,__text  _AFSiriActivationGetDarwinNotificationNameFromContext
+0x198e0f320  __TEXT,__text  _AFSiriActivationHardwareKeyboardInvocation
+0x198e0c508  __TEXT,__text  _AFSiriActivationHearst
+0x198e0cd08  __TEXT,__text  _AFSiriActivationHearstBoron
+0x198e0c640  __TEXT,__text  _AFSiriActivationHearstDoubleTap
+0x198e0c768  __TEXT,__text  _AFSiriActivationHearstVoice
+0x198e0dd84  __TEXT,__text  _AFSiriActivationHoneycombDeviceVoiceTrigger
+0x198e0db98  __TEXT,__text  _AFSiriActivationHoneycombDeviceVoiceTriggerPrewarm
+0x198e0bf98  __TEXT,__text  _AFSiriActivationOdeonProxyVoiceTrigger
+0x198d659c0  __TEXT,__text  _AFSiriActivationOptionsGetFromNames
+0x198cc7da4  __TEXT,__text  _AFSiriActivationOptionsGetNames
+0x198d659b8  __TEXT,__text  _AFSiriActivationOptionsValidate
+0x198cc73a8  __TEXT,__text  _AFSiriActivationPerform
+0x198cc7b8c  __TEXT,__text  _AFSiriActivationPerformLegacy
+0x198e0e6ac  __TEXT,__text  _AFSiriActivationRaiseToSpeak
+0x198e0e504  __TEXT,__text  _AFSiriActivationRaiseToSpeakPrewarm
+0x1e0c69fe8  __DATA_CONST,__const  _AFSiriActivationResultKey
+0x198ccbdc4  __TEXT,__text  _AFSiriActivationServiceGetMachServiceName
+0x198e1a0f4  __TEXT,__text  _AFSiriActivationServiceGetPort
+0x198ccbe04  __TEXT,__text  _AFSiriActivationServiceGetXPCInterface
+0x1e0c69fe0  __DATA_CONST,__const  _AFSiriActivationServiceNameApplication
+0x1e0c69fd8  __DATA_CONST,__const  _AFSiriActivationServiceNameDefault
+0x1e0c69fd0  __DATA_CONST,__const  _AFSiriActivationServiceNameHorseman
+0x198d51ef8  __TEXT,__text  _AFSiriActivationServicePortGetFromName
+0x198d51eb8  __TEXT,__text  _AFSiriActivationServicePortGetIsValid
+0x198d51ec4  __TEXT,__text  _AFSiriActivationServicePortGetIsValidAndSpecified
+0x198d51ed4  __TEXT,__text  _AFSiriActivationServicePortGetName
+0x198e0f6a8  __TEXT,__text  _AFSiriActivationSetOverrideHandlerMapProvider
+0x198e0f148  __TEXT,__text  _AFSiriActivationSiriPrompt
+0x198d4a1a8  __TEXT,__text  _AFSiriActivationSourceGetFromName
+0x198d4a168  __TEXT,__text  _AFSiriActivationSourceGetIsValid
+0x198d4a174  __TEXT,__text  _AFSiriActivationSourceGetIsValidAndSpecified
+0x198d4a184  __TEXT,__text  _AFSiriActivationSourceGetName
+0x198e0e848  __TEXT,__text  _AFSiriActivationTriggerless
+0x1e0c69f78  __DATA_CONST,__const  _AFSiriActivationUserInfoKey
+0x198cc7e2c  __TEXT,__text  _AFSiriActivationValidate
+0x198e0bb34  __TEXT,__text  _AFSiriActivationVoiceActivityDetected
+0x198e0bcec  __TEXT,__text  _AFSiriActivationVoiceKeywordDetected
+0x198cceab8  __TEXT,__text  _AFSiriActivationVoiceTriggerActivate
+0x198cecca0  __TEXT,__text  _AFSiriActivationVoiceTriggerPostActivationMessage
+0x198cc90a0  __TEXT,__text  _AFSiriActivationVoiceTriggerPrewarm
+0x1e0c69f70  __DATA_CONST,__const  _AFSiriActiveAccountChangedDistributedNotification
+0x198e2758c  __TEXT,__text  _AFSiriAnnouncementPlatformGetFromName
+0x198e27570  __TEXT,__text  _AFSiriAnnouncementPlatformGetIsValid
+0x198e2757c  __TEXT,__text  _AFSiriAnnouncementPlatformGetIsValidAndSpecified
+0x198d24f80  __TEXT,__text  _AFSiriAnnouncementPlatformGetName
+0x198e2c4e4  __TEXT,__text  _AFSiriAnnouncementSummaryDecisionGetFromName
+0x198e2c4a4  __TEXT,__text  _AFSiriAnnouncementSummaryDecisionGetIsValid
+0x198e2c4b0  __TEXT,__text  _AFSiriAnnouncementSummaryDecisionGetIsValidAndSpecified
+0x198e2c4c0  __TEXT,__text  _AFSiriAnnouncementSummaryDecisionGetName
+0x1e0c69f68  __DATA_CONST,__const  _AFSiriApplicationLaunchedNotification
+0x198cc071c  __TEXT,__text  _AFSiriAudioRouteMonitorGetCurrentlySelectedAudioRoute
+0x1e0c69f60  __DATA_CONST,__const  _AFSiriAvailabilityAllCapabilitiesKey
+0x1e0c69f58  __DATA_CONST,__const  _AFSiriAvailabilityBootUUIDKey
+0x1e0c69f50  __DATA_CONST,__const  _AFSiriAvailabilityCurrentOrchestrationModeKey
+0x1e0c69f48  __DATA_CONST,__const  _AFSiriAvailabilityDesiredOrchestrationModeIfEnabledKey
+0x1e0c69f40  __DATA_CONST,__const  _AFSiriAvailabilityDesiredOrchestrationModeKey
+0x1e0c69f38  __DATA_CONST,__const  _AFSiriAvailabilityFullUODCapabilitiesKey
+0x1e0c69f30  __DATA_CONST,__const  _AFSiriAvailabilityHybridCapabilitiesKey
+0x1e0c69f28  __DATA_CONST,__const  _AFSiriAvailabilityIsAvailableKey
+0x1e0c69f20  __DATA_CONST,__const  _AFSiriAvailabilityLinwoodCapabilitiesKey
+0x1e0c69f18  __DATA_CONST,__const  _AFSiriAvailabilityLinwoodEverAvailableKey
+0x1e0c69f10  __DATA_CONST,__const  _AFSiriAvailabilityOrchestrationModeCapabilitiesKey
+0x1e0c69f08  __DATA_CONST,__const  _AFSiriAvailabilityRestrictionReasonsKey
+0x1e0c69f00  __DATA_CONST,__const  _AFSiriAvailabilitySAECapabilitiesKey
+0x1e0c69ef8  __DATA_CONST,__const  _AFSiriAvailabilitySiriLocaleKey
+0x1e0c69ef0  __DATA_CONST,__const  _AFSiriAvailabilityStatusKey
+0x1e0c69ee8  __DATA_CONST,__const  _AFSiriAvailabilityUnavailabilityReasonsKey
+0x1e0c69ee0  __DATA_CONST,__const  _AFSiriAvailabilityVisualIntelligenceCapabilitiesKey
+0x198e348d8  __TEXT,__text  _AFSiriCarPlayAnnounceEnablementTypeGetFromName
+0x198e34898  __TEXT,__text  _AFSiriCarPlayAnnounceEnablementTypeGetIsValid
+0x198e348a4  __TEXT,__text  _AFSiriCarPlayAnnounceEnablementTypeGetIsValidAndSpecified
+0x198e348b4  __TEXT,__text  _AFSiriCarPlayAnnounceEnablementTypeGetName
+0x198dd9288  __TEXT,__text  _AFSiriClientStateManagerTransactionReasonGetFromName
+0x198dd9248  __TEXT,__text  _AFSiriClientStateManagerTransactionReasonGetIsValid
+0x198dd9254  __TEXT,__text  _AFSiriClientStateManagerTransactionReasonGetIsValidAndSpecified
+0x198dd9264  __TEXT,__text  _AFSiriClientStateManagerTransactionReasonGetName
+0x1e0c69ed8  __DATA_CONST,__const  _AFSiriDaemonLaunchedDarwinNotification
+0x1e0c69ed0  __DATA_CONST,__const  _AFSiriDaemonLaunchedDistributedNotification
+0x198e456fc  __TEXT,__text  _AFSiriDataSharingOptInStatusChangeSourceGetFromName
+0x198e456bc  __TEXT,__text  _AFSiriDataSharingOptInStatusChangeSourceGetIsValid
+0x198e456c8  __TEXT,__text  _AFSiriDataSharingOptInStatusChangeSourceGetIsValidAndSpecified
+0x198e456d8  __TEXT,__text  _AFSiriDataSharingOptInStatusChangeSourceGetName
+0x198e45fb4  __TEXT,__text  _AFSiriDataSharingOptInStatusGetFromName
+0x198e45f74  __TEXT,__text  _AFSiriDataSharingOptInStatusGetIsValid
+0x198e45f80  __TEXT,__text  _AFSiriDataSharingOptInStatusGetIsValidAndSpecified
+0x198e45f90  __TEXT,__text  _AFSiriDataSharingOptInStatusGetName
+0x1e0c69ec8  __DATA_CONST,__const  _AFSiriDataSharingOptStatusInDidChangeDarwinNotification
+0x198e301a0  __TEXT,__text  _AFSiriDataSharingSensitivityPolicyToString
+0x198dde6b4  __TEXT,__text  _AFSiriDeactivationOptionsGetFromNames
+0x198dde634  __TEXT,__text  _AFSiriDeactivationOptionsGetNames
+0x198dde62c  __TEXT,__text  _AFSiriDeactivationOptionsValidate
+0x198e0213c  __TEXT,__text  _AFSiriDeactivationReasonGetFromName
+0x198e020fc  __TEXT,__text  _AFSiriDeactivationReasonGetIsValid
+0x198e02108  __TEXT,__text  _AFSiriDeactivationReasonGetIsValidAndSpecified
+0x198e02118  __TEXT,__text  _AFSiriDeactivationReasonGetName
+0x1e0c69ec0  __DATA_CONST,__const  _AFSiriDidLaunchAppNotification
+0x1e0c69eb8  __DATA_CONST,__const  _AFSiriGlobalKeychainAccountIdentifier
+0x1e0c69ea8  __DATA_CONST,__const  _AFSiriHomeAutomationContextKey
+0x1e0c69ea0  __DATA_CONST,__const  _AFSiriHomeAutomationRequestInfoKey
+0x1e0c69e98  __DATA_CONST,__const  _AFSiriLocalizedFailureDescriptionKey
+0x1e0c69e90  __DATA_CONST,__const  _AFSiriLocalizedFailureTitleKey
+0x198d73e98  __TEXT,__text  _AFSiriLocationAuthorizationStatus
+0x1ee12dce8  __DATA_DIRTY,__common  _AFSiriLogContextAnalysis
+0x1ee12dce0  __DATA_DIRTY,__common  _AFSiriLogContextAnalytics
+0x1ee12dcd8  __DATA_DIRTY,__common  _AFSiriLogContextClientFlow
+0x1ee12dd08  __DATA_DIRTY,__common  _AFSiriLogContextConnection
+0x1ee12dcd0  __DATA_DIRTY,__common  _AFSiriLogContextDaemon
+0x1ee12dcc8  __DATA_DIRTY,__common  _AFSiriLogContextDaemonAce
+0x1ee12dcc0  __DATA_DIRTY,__common  _AFSiriLogContextDatabase
+0x1ee12dc18  __DATA_DIRTY,__common  _AFSiriLogContextDeviceSelection
+0x1ee12dcb8  __DATA_DIRTY,__common  _AFSiriLogContextDeviceSync
+0x1ee12dcb0  __DATA_DIRTY,__common  _AFSiriLogContextDispatch
+0x1ebb22388  __DATA,__common  _AFSiriLogContextEvent
+0x1ee12dca8  __DATA_DIRTY,__common  _AFSiriLogContextFides
+0x1ebb22390  __DATA,__common  _AFSiriLogContextFilesystem
+0x1ee12dca0  __DATA_DIRTY,__common  _AFSiriLogContextIDS
+0x1ee12dd00  __DATA_DIRTY,__common  _AFSiriLogContextInternalAuth
+0x1ee12dc98  __DATA_DIRTY,__common  _AFSiriLogContextLocation
+0x1ee12dc90  __DATA_DIRTY,__common  _AFSiriLogContextMediaSupport
+0x1ee12dc88  __DATA_DIRTY,__common  _AFSiriLogContextMockServer
+0x1ebb22398  __DATA,__common  _AFSiriLogContextMultiUser
+0x1ee12dc80  __DATA_DIRTY,__common  _AFSiriLogContextMusicIndexer
+0x1ee12dc30  __DATA_DIRTY,__common  _AFSiriLogContextMyriad
+0x1ee12dc78  __DATA_DIRTY,__common  _AFSiriLogContextPerformance
+0x1ee12dc20  __DATA_DIRTY,__common  _AFSiriLogContextPersisted
+0x1ee12dc70  __DATA_DIRTY,__common  _AFSiriLogContextPlugin
+0x1ee12dc28  __DATA_DIRTY,__common  _AFSiriLogContextPower
+0x1ee12dc68  __DATA_DIRTY,__common  _AFSiriLogContextProxy
+0x1ee12dc60  __DATA_DIRTY,__common  _AFSiriLogContextService
+0x1ee12dc58  __DATA_DIRTY,__common  _AFSiriLogContextSession
+0x1ee12dc50  __DATA_DIRTY,__common  _AFSiriLogContextSpeech
+0x1ee12dc48  __DATA_DIRTY,__common  _AFSiriLogContextSync
+0x1ee12dc40  __DATA_DIRTY,__common  _AFSiriLogContextTinyCDB
+0x1ee12dc38  __DATA_DIRTY,__common  _AFSiriLogContextUtility
+0x1e0c69e88  __DATA_CONST,__const  _AFSiriMediaRemoteIdentifier
+0x198cde0f4  __TEXT,__text  _AFSiriOrchestrationModesPriorityOrder
+0x1e0c69e80  __DATA_CONST,__const  _AFSiriRecognitionKey
+0x198e2c490  __TEXT,__text  _AFSiriResponseHandlingInterface
+0x1e0c69e78  __DATA_CONST,__const  _AFSiriSerializedUserActivityKey
+0x1e0c69e70  __DATA_CONST,__const  _AFSiriServiceStreamName
+0x1e0c69e68  __DATA_CONST,__const  _AFSiriSpeechErrorDomain
+0x1e0c69e60  __DATA_CONST,__const  _AFSiriStartUIRequestNotification
+0x1e0c69e58  __DATA_CONST,__const  _AFSiriStartUIRequestNotificationActivationEventKey
+0x1e0c69e50  __DATA_CONST,__const  _AFSiriStartUIRequestNotificationOriginDeviceNameKey
+0x1e0c69e48  __DATA_CONST,__const  _AFSiriStartUIRequestNotificationRequiresUserInteractionKey
+0x1e0c69e40  __DATA_CONST,__const  _AFSiriStartUISpeechRequestNotification
+0x1e0c69e38  __DATA_CONST,__const  _AFSiriStructuredDictationErrorDomain
+0x1ebb20db8  __DATA,__data  _AFSiriTetherMachService
+0x1e0c69e30  __DATA_CONST,__const  _AFSiriTetherServiceName
+0x198e42aa0  __TEXT,__text  _AFSiriUnavailabilityReasonsFromAFSiriLinwoodCapabilities
+0x198e427a8  __TEXT,__text  _AFSiriUnavailabiltiyReasonsFromAFSiriMissingAssets
+0x1e0c69e28  __DATA_CONST,__const  _AFSiriUnderlyingErrorsKey
+0x198dbe8c0  __TEXT,__text  _AFSiriUsageDescriptionForAppID
+0x198e3d80c  __TEXT,__text  _AFSiriUsageResultHandlingInterface
+0x1e0c69e20  __DATA_CONST,__const  _AFSiriUserNotificationAnnounceScheme
+0x198d60df4  __TEXT,__text  _AFSiriUserNotificationAnnouncementSpeakingStateGetFromName
+0x198d60de8  __TEXT,__text  _AFSiriUserNotificationAnnouncementSpeakingStateGetIsValid
+0x198ce89ec  __TEXT,__text  _AFSiriUserNotificationAnnouncementSpeakingStateGetIsValidAndSpecified
+0x198ce3ac4  __TEXT,__text  _AFSiriUserNotificationAnnouncementSpeakingStateGetName
+0x198d4a0c0  __TEXT,__text  _AFSiriUserNotificationAnnouncementTypeGetFromName
+0x198d4a080  __TEXT,__text  _AFSiriUserNotificationAnnouncementTypeGetIsValid
+0x198d4a08c  __TEXT,__text  _AFSiriUserNotificationAnnouncementTypeGetIsValidAndSpecified
+0x198d4a09c  __TEXT,__text  _AFSiriUserNotificationAnnouncementTypeGetName
+0x1e0c69e18  __DATA_CONST,__const  _AFSiriUserNotificationRequestCapabilityForceUpdate
+0x198de5350  __TEXT,__text  _AFSiriUserNotificationSummaryTypeGetFromName
+0x198de5310  __TEXT,__text  _AFSiriUserNotificationSummaryTypeGetIsValid
+0x198de531c  __TEXT,__text  _AFSiriUserNotificationSummaryTypeGetIsValidAndSpecified
+0x198de532c  __TEXT,__text  _AFSiriUserNotificationSummaryTypeGetName
+0x1e0c69e10  __DATA_CONST,__const  _AFSiriVOXSoundsExperimentConfigurationIdentifier
+0x1e0c69e08  __DATA_CONST,__const  _AFSiriVOXSoundsExperimentGroupPropertyKeyPlaysSessionInactiveSound
+0x1e0c69e00  __DATA_CONST,__const  _AFSiriVOXSoundsExperimentGroupPropertyKeyPlaysTwoShotSound
+0x1e0c69df8  __DATA_CONST,__const  _AFSiriVOXTapToSiriBehaviorExperimentConfigurationIdentifier
+0x1e0c69df0  __DATA_CONST,__const  _AFSiriVOXTapToSiriBehaviorExperimentGroupPropertyKeyPlaysSound
+0x198d32030  __TEXT,__text  _AFSiriWorkoutVoiceFeedbackResultGetFromName
+0x198d31ff0  __TEXT,__text  _AFSiriWorkoutVoiceFeedbackResultGetIsValid
+0x198d31ffc  __TEXT,__text  _AFSiriWorkoutVoiceFeedbackResultGetIsValidAndSpecified
+0x198d3200c  __TEXT,__text  _AFSiriWorkoutVoiceFeedbackResultGetName
+0x1e0c69de8  __DATA_CONST,__const  _AFSiriXAssetDidChangeDarwinNotification
+0x1e0c69de0  __DATA_CONST,__const  _AFSiriXFullUODMaxRequiredStorageInBytesForAssets
+0x198e38f68  __TEXT,__text  _AFSleepStateGetFromName
+0x198e38f28  __TEXT,__text  _AFSleepStateGetIsValid
+0x198e38f34  __TEXT,__text  _AFSleepStateGetIsValidAndSpecified
+0x198e38f44  __TEXT,__text  _AFSleepStateGetName
+0x198d0d868  __TEXT,__text  _AFSoundIDGetFromName
+0x198d69b40  __TEXT,__text  _AFSoundIDGetIsValid
+0x198d69b4c  __TEXT,__text  _AFSoundIDGetIsValidAndSpecified
+0x198d69b5c  __TEXT,__text  _AFSoundIDGetName
+0x1e0c69dd8  __DATA_CONST,__const  _AFSpeechConnectionRequestContextKey
+0x198d6289c  __TEXT,__text  _AFSpeechEndpointerOperationModeGetFromName
+0x198d62880  __TEXT,__text  _AFSpeechEndpointerOperationModeGetIsValid
+0x198d6288c  __TEXT,__text  _AFSpeechEndpointerOperationModeGetIsValidAndSpecified
+0x198ce8b54  __TEXT,__text  _AFSpeechEndpointerOperationModeGetName
+0x198db5100  __TEXT,__text  _AFSpeechEventGetDescription
+0x198ce8cd8  __TEXT,__text  _AFSpeechEventIsBluetooth
+0x198db50c0  __TEXT,__text  _AFSpeechEventIsHardwareTrigger
+0x198db50a4  __TEXT,__text  _AFSpeechEventIsRemotePlugin
+0x198db5094  __TEXT,__text  _AFSpeechEventIsSmartRoutingEligible
+0x198ce8cf4  __TEXT,__text  _AFSpeechEventIsTVRemote
+0x198ce7928  __TEXT,__text  _AFSpeechEventIsVoiceTrigger
+0x1e0c69dd0  __DATA_CONST,__const  _AFSpeechInfoKey
+0x198dac1ac  __TEXT,__text  _AFSpeechLogsDirectory
+0x1e0c69d38  __DATA_CONST,__const  _AFSpeechParametersKey
+0x198dbe9f0  __TEXT,__text  _AFSpeechRecognitionUsageDescriptionForAppID
+0x1e0c69d28  __DATA_CONST,__const  _AFSpeechRecordingAlertBehaviorKey
+0x1e0c69d10  __DATA_CONST,__const  _AFSpeechRecordingAlertPolicyKey
+0x198d6babc  __TEXT,__text  _AFSpeechRecordingAlertStyleGetFromName
+0x198d6ba7c  __TEXT,__text  _AFSpeechRecordingAlertStyleGetIsValid
+0x198d6ba88  __TEXT,__text  _AFSpeechRecordingAlertStyleGetIsValidAndSpecified
+0x198d6ba98  __TEXT,__text  _AFSpeechRecordingAlertStyleGetName
+0x198d499c4  __TEXT,__text  _AFSpeechRecordingEventListenerGetXPCInterface
+0x1e0c69cf8  __DATA_CONST,__const  _AFSpeechSynthesisRecordKey
+0x1e0c69ce8  __DATA_CONST,__const  _AFSpeechTestRequestOptionsKey
+0x198dbef98  __TEXT,__text  _AFSpokenMessagesExecutionTimeout
+0x198dbea08  __TEXT,__text  _AFSpokenNotificationDataCollectionEnabled
+0x198d280e0  __TEXT,__text  _AFStringFromMRPlaybackState
+0x198db50dc  __TEXT,__text  _AFSuggestionRequestTypeGetName
+0x198dbaac4  __TEXT,__text  _AFSupportBaseURL
+0x198d7b8fc  __TEXT,__text  _AFSupportPreferencesSynchronize
+0x198dbbfac  __TEXT,__text  _AFSupportsASROnDevice
+0x198dbbedc  __TEXT,__text  _AFSupportsAirPlayEndpointRoute
+0x198ce2020  __TEXT,__text  _AFSupportsAudioSessionCoordination
+0x198dbf090  __TEXT,__text  _AFSupportsBluetooth
+0x198dc0b00  __TEXT,__text  _AFSupportsCallHangUp
+0x198dbeb24  __TEXT,__text  _AFSupportsCrossDeviceMediaControlFromWatch
+0x198dbeb1c  __TEXT,__text  _AFSupportsHALCapabilitiesDonation
+0x198d3156c  __TEXT,__text  _AFSupportsHALContextCollecting
+0x198ce2018  __TEXT,__text  _AFSupportsHALContextCollectorElection
+0x198d31564  __TEXT,__text  _AFSupportsHALContextDonation
+0x198ce329c  __TEXT,__text  _AFSupportsHALDeviceRouting
+0x198cfdfe0  __TEXT,__text  _AFSupportsHALFlowRouting
+0x198ce7e60  __TEXT,__text  _AFSupportsHALOnDemandRapportConnection
+0x198d0f7fc  __TEXT,__text  _AFSupportsHALProximityScanning
+0x198cdfe98  __TEXT,__text  _AFSupportsMultiUser
+0x198cf5168  __TEXT,__text  _AFSupportsPairedDevice
+0x198d27ef8  __TEXT,__text  _AFSupportsPlayThisOnThat
+0x198dbbf24  __TEXT,__text  _AFSupportsPlayThisOnThatPlayback
+0x198dbf100  __TEXT,__text  _AFSupportsPlaybackToBluetoothDevice
+0x198cf9294  __TEXT,__text  _AFSupportsRecordFromBluetoothDevice
+0x198d289c8  __TEXT,__text  _AFSupportsSCDAFramework
+0x198dbbe20  __TEXT,__text  _AFSupportsSCDAProximity
+0x198d20308  __TEXT,__text  _AFSupportsSiriInCall
+0x198dbbbfc  __TEXT,__text  _AFSupportsSiriSpeaks
+0x198dbbfa4  __TEXT,__text  _AFSupportsSpeechExtraction
+0x198dbb9fc  __TEXT,__text  _AFSupportsVibration
+0x198dbbc10  __TEXT,__text  _AFSupportsWAPI
+0x198dbbc1c  __TEXT,__text  _AFSupportsWatchListKit
+0x198dbbf34  __TEXT,__text  _AFSupportsWirelessSplitter
+0x1e0c69ce0  __DATA_CONST,__const  _AFSynapseSyncAnchorKey
+0x1e0c69cd8  __DATA_CONST,__const  _AFSyncDataDidChangeNotification
+0x198db44a8  __TEXT,__text  _AFSyncKeysThatNeedToBeSynced
+0x1e0c69cd0  __DATA_CONST,__const  _AFSystemAssistantExperienceAvailabilityDidChangeNotificationName
+0x198dbe1c4  __TEXT,__text  _AFSystemGetBootTimeInMicroseconds
+0x198dbe464  __TEXT,__text  _AFSystemGetBootTimeInTimeInterval
+0x198dba918  __TEXT,__text  _AFSystemRootDirectory
+0x1e0c69cc8  __DATA_CONST,__const  _AFSystemStateSnapshotKey
+0x1e0c69cb0  __DATA_CONST,__const  _AFTestRequestOptionsKey
+0x198d6237c  __TEXT,__text  _AFTestRequestPathGetFromName
+0x198d6233c  __TEXT,__text  _AFTestRequestPathGetIsValid
+0x198d62348  __TEXT,__text  _AFTestRequestPathGetIsValidAndSpecified
+0x198d62358  __TEXT,__text  _AFTestRequestPathGetName
+0x198dacab0  __TEXT,__text  _AFTruncateMachTimeToTenthOfASecond
+0x198db4f7c  __TEXT,__text  _AFTurnIdentifierCreateFromBytes
+0x198db4f70  __TEXT,__text  _AFTurnIdentifierGenerate
+0x198cd83dc  __TEXT,__text  _AFTurnIdentifierGetBytes
+0x198d0cbb4  __TEXT,__text  _AFTurnIdentifierGetString
+0x198dbc48c  __TEXT,__text  _AFUODAttentionRequired
+0x198cdc750  __TEXT,__text  _AFUODStatusSupportedFull
+0x198ce059c  __TEXT,__text  _AFUODStatusSupportedHybrid
+0x198d28b64  __TEXT,__text  _AFUODStatusSupportedSAE
+0x1e0c69ca8  __DATA_CONST,__const  _AFUpdateAnnouncementEligibilityDarwinNotification
+0x198d90024  __TEXT,__text  _AFUseWithSiriAvailableForApp
+0x198d8fb64  __TEXT,__text  _AFUseWithSiriEnabledForApp
+0x198d8fe68  __TEXT,__text  _AFUseWithSiriSetEnabled
+0x198d30b5c  __TEXT,__text  _AFUserAssignedDeviceName
+0x198e10c08  __TEXT,__text  _AFUserIdentityClassficationGetFromName
+0x198e10bc8  __TEXT,__text  _AFUserIdentityClassficationGetIsValid
+0x198e10bd4  __TEXT,__text  _AFUserIdentityClassficationGetIsValidAndSpecified
+0x198e10be4  __TEXT,__text  _AFUserIdentityClassficationGetName
+0x198db6614  __TEXT,__text  _AFUserNotificationAnnouncementSpeakingStateServiceDelegateGetXPCInterface
+0x198db6600  __TEXT,__text  _AFUserNotificationAnnouncementSpeakingStateServiceGetXPCInterface
+0x198d1499c  __TEXT,__text  _AFUserSupportDirectoryPath
+0x1e0c69ca0  __DATA_CONST,__const  _AFUserUtteranceConfidenceAverageKey
+0x1e0c69c98  __DATA_CONST,__const  _AFUserUtteranceConfidenceCountKey
+0x1e0c69c90  __DATA_CONST,__const  _AFUserUtteranceConfidenceIndexKey
+0x1e0c69c88  __DATA_CONST,__const  _AFUserUtteranceConfidenceMaxKey
+0x1e0c69c80  __DATA_CONST,__const  _AFUserUtteranceConfidenceMinKey
+0x1e0c69c78  __DATA_CONST,__const  _AFUserUtteranceConfidenceSumKey
+0x1e0c69c70  __DATA_CONST,__const  _AFUserUtteranceSourceKey
+0x198d2a948  __TEXT,__text  _AFValidatedNowPlayingInfo
+0x198cc1e50  __TEXT,__text  _AFVisualIntelligenceCameraRestricted
+0x198cc24e0  __TEXT,__text  _AFVisualIntelligenceEnabled
+0x198d10f34  __TEXT,__text  _AFVisualIntelligenceScreenshotsRestricted
+0x198dc4998  __TEXT,__text  _AFVoiceExpressivityPresetGetName
+0x198dc4950  __TEXT,__text  _AFVoiceFootprintGetName
+0x198dc4930  __TEXT,__text  _AFVoiceGenderGetName
+0x1e0c69c08  __DATA_CONST,__const  _AFVoiceIdScoreCardKey
+0x198dc4970  __TEXT,__text  _AFVoicePacePresetGetName
+0x198dc0b74  __TEXT,__text  _AFVoiceTriggerDuringPhoneCallCapable
+0x198cf3f00  __TEXT,__text  _AFWatchOSVersion
+0x198cf3fac  __TEXT,__text  _AFWatchOSVersionIsGreaterThanOrEqual
+0x198e30d30  __TEXT,__text  _AFWorkoutPredictionTypeGetFromName
+0x198e30cf0  __TEXT,__text  _AFWorkoutPredictionTypeGetIsValid
+0x198e30cfc  __TEXT,__text  _AFWorkoutPredictionTypeGetIsValidAndSpecified
+0x198e30d0c  __TEXT,__text  _AFWorkoutPredictionTypeGetName
+0x198e2b1d4  __TEXT,__text  _AFWorkoutTypeGetFromName
+0x198e2b194  __TEXT,__text  _AFWorkoutTypeGetIsValid
+0x198e2b1a0  __TEXT,__text  _AFWorkoutTypeGetIsValidAndSpecified
+0x198e2b1b0  __TEXT,__text  _AFWorkoutTypeGetName
+0x1e0c69c00  __DATA_CONST,__const  _DictationMode
+0x198e31e14  __TEXT,__text  _MRPlaybackStateFromAFMediaPlaybackState
+0x198cddc18  __TEXT,__text  _NSStringFromAFSiriLinwoodCapabilities
+0x198e425c0  __TEXT,__text  _NSStringFromAFSiriMissingAssets
+0x198e427d0  __TEXT,__text  _NSStringFromAFSiriOrchestrationMode
+0x198e426e0  __TEXT,__text  _NSStringFromAFSiriRestrictionReasons
+0x198e426bc  __TEXT,__text  _NSStringFromAFSiriStatus
+0x198e429a8  __TEXT,__text  _NSStringFromAFSiriSystemAssistantExperienceCapabilities
+0x198cc4998  __TEXT,__text  _NSStringFromAFSiriUnavailabilityReasons
+0x198cde878  __TEXT,__text  _NSStringFromAFSiriVisualIntelligenceCapabilities
+0x198e42818  __TEXT,__text  _NSStringFromAFSiriXFullUnderstandingOnDeviceCapabilities
+0x198e428e0  __TEXT,__text  _NSStringFromAFSiriXHybridUnderstandingOnDeviceCapabilities
+0x198e427f4  __TEXT,__text  _NSStringFromSiriOrchestrationMode
+0x198e426b8  __TEXT,__text  _NSStringFromSiriUnavailabilityReasons
+0x1ef695dc0  __AUTH,__objc_data  _OBJC_CLASS_$_AFASRSharedUserInfo
+0x1ef697008  __AUTH,__objc_data  _OBJC_CLASS_$_AFAccessibilityObserver
+0x1ef697940  __AUTH,__objc_data  _OBJC_CLASS_$_AFAccessibilityState
+0x1ef696fe0  __AUTH,__objc_data  _OBJC_CLASS_$_AFAccount
+0x1ef6966a8  __AUTH,__objc_data  _OBJC_CLASS_$_AFAgentDestination
+0x1ee12cfc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFAggregator
+0x1ee12d718  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFAnalytics
+0x1ee12d3d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFAnalyticsConnection
+0x1ee12d330  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFAnalyticsEvent
+0x1ee12cef8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFAnalyticsEventRecord
+0x1ef693390  __AUTH,__objc_data  _OBJC_CLASS_$_AFAnalyticsObserverConnection
+0x1ee12d600  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFAnalyticsTurnBasedInstrumentationContext
+0x1ef693368  __AUTH,__objc_data  _OBJC_CLASS_$_AFAnnounceBinaryOutcomeRequest
+0x1ef693340  __AUTH,__objc_data  _OBJC_CLASS_$_AFAnnounceBinaryOutcomeUseCaseV2GenericUnlocalized
+0x1ef693318  __AUTH,__objc_data  _OBJC_CLASS_$_AFAnnounceBinaryOutcomeUseCaseV2HearNotifications
+0x1ef6932f0  __AUTH,__objc_data  _OBJC_CLASS_$_AFAnnounceBinaryOutcomeUseCaseV2Test
+0x1ef6932c8  __AUTH,__objc_data  _OBJC_CLASS_$_AFAnnounceBinaryOutcomeUseCaseV2UpdateSmartRouting
+0x1ef696fb8  __AUTH,__objc_data  _OBJC_CLASS_$_AFAnnouncementContext
+0x1ef6932a0  __AUTH,__objc_data  _OBJC_CLASS_$_AFAppContextAggregator
+0x1ef697d28  __AUTH,__objc_data  _OBJC_CLASS_$_AFApplicationContext
+0x1ef695d98  __AUTH,__objc_data  _OBJC_CLASS_$_AFApplicationContextSnapshot
+0x1ef693278  __AUTH,__objc_data  _OBJC_CLASS_$_AFApplicationGroupContainer
+0x1ef697f58  __AUTH,__objc_data  _OBJC_CLASS_$_AFApplicationInfo
+0x1ef695320  __AUTH,__objc_data  _OBJC_CLASS_$_AFAssertionContext
+0x1ef697440  __AUTH,__objc_data  _OBJC_CLASS_$_AFAssertionCoordinator
+0x1ef695d70  __AUTH,__objc_data  _OBJC_CLASS_$_AFAssistantSamplingUtilities
+0x1ef693250  __AUTH,__objc_data  _OBJC_CLASS_$_AFAssistedDisambiguationRules
+0x1ef693228  __AUTH,__objc_data  _OBJC_CLASS_$_AFAudioDeviceInfo
+0x1ee12c930  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFAudioPlaybackRequest
+0x1ef697f30  __AUTH,__objc_data  _OBJC_CLASS_$_AFAudioPowerUpdater
+0x1ef696680  __AUTH,__objc_data  _OBJC_CLASS_$_AFAudioPowerXPCProvider
+0x1ef693200  __AUTH,__objc_data  _OBJC_CLASS_$_AFAudioSessionAssertionConnection
+0x1ef6931d8  __AUTH,__objc_data  _OBJC_CLASS_$_AFAudioSessionAssertionRemoteAcquisitionService
+0x1ef6931b0  __AUTH,__objc_data  _OBJC_CLASS_$_AFAudioSessionCoordinationDeviceInfo
+0x1ef697d00  __AUTH,__objc_data  _OBJC_CLASS_$_AFAudioSessionCoordinationSnapshot
+0x1ef696f90  __AUTH,__objc_data  _OBJC_CLASS_$_AFAudioSessionCoordinationSystemInfo
+0x1ef693188  __AUTH,__objc_data  _OBJC_CLASS_$_AFAudioSessionEvent
+0x1ef693160  __AUTH,__objc_data  _OBJC_CLASS_$_AFAudioSessionEventInformConnection
+0x1ef693138  __AUTH,__objc_data  _OBJC_CLASS_$_AFAudioSessionEventInformService
+0x1ef6947e0  __AUTH,__objc_data  _OBJC_CLASS_$_AFAudioState
+0x1ee12d010  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFAuthKitManager
+0x1ef693110  __AUTH,__objc_data  _OBJC_CLASS_$_AFBTEvent
+0x1ef6930e8  __AUTH,__objc_data  _OBJC_CLASS_$_AFBluetoothDeviceBooleanSettingResponse
+0x1ee12ce30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFBluetoothDeviceInfo
+0x1ef6952f8  __AUTH,__objc_data  _OBJC_CLASS_$_AFBluetoothHeadGestureConfiguration
+0x1ef696658  __AUTH,__objc_data  _OBJC_CLASS_$_AFBluetoothHeadphoneInEarDetectionState
+0x1ef6980c0  __AUTH,__objc_data  _OBJC_CLASS_$_AFBluetoothWirelessSplitterSessionInfo
+0x1ef695d48  __AUTH,__objc_data  _OBJC_CLASS_$_AFBluetoothWirelessSplitterSessionStateObserver
+0x1ef6947b8  __AUTH,__objc_data  _OBJC_CLASS_$_AFBridgeConnectionListener
+0x1ef697f08  __AUTH,__objc_data  _OBJC_CLASS_$_AFBulletin
+0x1ef6930c0  __AUTH,__objc_data  _OBJC_CLASS_$_AFBulletinAction
+0x1ef695d20  __AUTH,__objc_data  _OBJC_CLASS_$_AFBundleResource
+0x1ef695cf8  __AUTH,__objc_data  _OBJC_CLASS_$_AFBundleResourceManager
+0x1ee12d6f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFCallSiteInfo
+0x1ef6952d0  __AUTH,__objc_data  _OBJC_CLASS_$_AFCallStateSnapshot
+0x1ef6952a8  __AUTH,__objc_data  _OBJC_CLASS_$_AFCarPlayAnnouncementRequestCapabilityProvider
+0x1ef696630  __AUTH,__objc_data  _OBJC_CLASS_$_AFCheckSRT
+0x1ef693098  __AUTH,__objc_data  _OBJC_CLASS_$_AFChildConversationItemList
+0x1ef697a30  __AUTH,__objc_data  _OBJC_CLASS_$_AFClientConfiguration
+0x1ef694790  __AUTH,__objc_data  _OBJC_CLASS_$_AFClientDisconnectedEventContext
+0x1ef693070  __AUTH,__objc_data  _OBJC_CLASS_$_AFClientInfo
+0x1ef696f68  __AUTH,__objc_data  _OBJC_CLASS_$_AFClientLite
+0x1ef696608  __AUTH,__objc_data  _OBJC_CLASS_$_AFClientLiteInternal
+0x1ef694768  __AUTH,__objc_data  _OBJC_CLASS_$_AFClientPluginManager
+0x1ef695cd0  __AUTH,__objc_data  _OBJC_CLASS_$_AFClockAlarm
+0x1ef697918  __AUTH,__objc_data  _OBJC_CLASS_$_AFClockAlarmSnapshot
+0x1ef696f40  __AUTH,__objc_data  _OBJC_CLASS_$_AFClockItemStorage
+0x1ef6978f0  __AUTH,__objc_data  _OBJC_CLASS_$_AFClockTimer
+0x1ef697a08  __AUTH,__objc_data  _OBJC_CLASS_$_AFClockTimerSnapshot
+0x1ef694740  __AUTH,__objc_data  _OBJC_CLASS_$_AFCoercion
+0x1ef6978c8  __AUTH,__objc_data  _OBJC_CLASS_$_AFCommandExecutionInfo
+0x1ef693048  __AUTH,__objc_data  _OBJC_CLASS_$_AFCommunalDeviceUser
+0x1ee12cd90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFCompanionDeviceInfo
+0x1ef695280  __AUTH,__objc_data  _OBJC_CLASS_$_AFConfirmationOutcomeDescriptor
+0x1ee12d830  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFConnection
+0x1ef695ca8  __AUTH,__objc_data  _OBJC_CLASS_$_AFConnectionAvailabilityObserver
+0x1ef6965e0  __AUTH,__objc_data  _OBJC_CLASS_$_AFConnectionClientServiceDelegate
+0x1ef696f18  __AUTH,__objc_data  _OBJC_CLASS_$_AFConnectionEntitlementCache
+0x1ef693020  __AUTH,__objc_data  _OBJC_CLASS_$_AFConnectionUserInteractionAssertion
+0x1ef697418  __AUTH,__objc_data  _OBJC_CLASS_$_AFContextDonationService
+0x1ef698098  __AUTH,__objc_data  _OBJC_CLASS_$_AFContextManager
+0x1ef692ff8  __AUTH,__objc_data  _OBJC_CLASS_$_AFContextRequest
+0x1ef692fd0  __AUTH,__objc_data  _OBJC_CLASS_$_AFContextResponse
+0x1ef695c80  __AUTH,__objc_data  _OBJC_CLASS_$_AFConversation
+0x1ef692fa8  __AUTH,__objc_data  _OBJC_CLASS_$_AFConversationError
+0x1ef695c58  __AUTH,__objc_data  _OBJC_CLASS_$_AFConversationInsertion
+0x1ef695c30  __AUTH,__objc_data  _OBJC_CLASS_$_AFConversationItem
+0x1ef695c08  __AUTH,__objc_data  _OBJC_CLASS_$_AFConversationStore
+0x1ef695be0  __AUTH,__objc_data  _OBJC_CLASS_$_AFConversationTransaction
+0x1ef692f80  __AUTH,__objc_data  _OBJC_CLASS_$_AFCoreAnalyticsCrossDeviceEvent
+0x1ef695258  __AUTH,__objc_data  _OBJC_CLASS_$_AFCoreAnalyticsDeviceContextPayload
+0x1ef692f58  __AUTH,__objc_data  _OBJC_CLASS_$_AFCoreAnalyticsLoggingService
+0x1ef692f30  __AUTH,__objc_data  _OBJC_CLASS_$_AFCreateAlarmRequest
+0x1ef692f08  __AUTH,__objc_data  _OBJC_CLASS_$_AFCreateAlarmResponse
+0x1ef692ee0  __AUTH,__objc_data  _OBJC_CLASS_$_AFCreateMessageRequest
+0x1ef695bb8  __AUTH,__objc_data  _OBJC_CLASS_$_AFDataStore
+0x1ef692eb8  __AUTH,__objc_data  _OBJC_CLASS_$_AFDeleteAlarmRequest
+0x1ef697cd8  __AUTH,__objc_data  _OBJC_CLASS_$_AFDeleteSiriHistoryContext
+0x1ef6973f0  __AUTH,__objc_data  _OBJC_CLASS_$_AFDeviceCapabilities
+0x1ef698138  __AUTH,__objc_data  _OBJC_CLASS_$_AFDeviceContext
+0x1ef692e90  __AUTH,__objc_data  _OBJC_CLASS_$_AFDeviceContextConnection
+0x1ef695230  __AUTH,__objc_data  _OBJC_CLASS_$_AFDeviceContextHistoryConfiguration
+0x1ef696ef0  __AUTH,__objc_data  _OBJC_CLASS_$_AFDeviceContextMetadata
+0x1ef692e68  __AUTH,__objc_data  _OBJC_CLASS_$_AFDeviceRequestHandlingRecord
+0x1ef696ec8  __AUTH,__objc_data  _OBJC_CLASS_$_AFDeviceRingerSwitchObserver
+0x1ef694718  __AUTH,__objc_data  _OBJC_CLASS_$_AFDeviceStateConnection
+0x1ef696ea0  __AUTH,__objc_data  _OBJC_CLASS_$_AFDialogPhase
+0x1ee12d0b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFDictationButtonTag
+0x1ee12d7e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFDictationConnection
+0x1ee12d1a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFDictationConnectionServiceDelegate
+0x1ef695208  __AUTH,__objc_data  _OBJC_CLASS_$_AFDictationDiscoverabilitySignalsStreamManager
+0x1ee12d1c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFDictationNLUResult
+0x1ef697cb0  __AUTH,__objc_data  _OBJC_CLASS_$_AFDictationOptions
+0x1ef6951e0  __AUTH,__objc_data  _OBJC_CLASS_$_AFDictationSamplingUtilities
+0x1ef692e40  __AUTH,__objc_data  _OBJC_CLASS_$_AFDictationSecureTouchAuthenticator
+0x1ef6946f0  __AUTH,__objc_data  _OBJC_CLASS_$_AFDictionarySchema
+0x1ef692e18  __AUTH,__objc_data  _OBJC_CLASS_$_AFDisambiguationEvent
+0x1ef692df0  __AUTH,__objc_data  _OBJC_CLASS_$_AFDisambiguationInfo
+0x1ef6951b8  __AUTH,__objc_data  _OBJC_CLASS_$_AFDisambiguationOutcomeDescriptor
+0x1ef692dc8  __AUTH,__objc_data  _OBJC_CLASS_$_AFDisambiguationStore
+0x1ef692da0  __AUTH,__objc_data  _OBJC_CLASS_$_AFDismissAlarmRequest
+0x1ef692d78  __AUTH,__objc_data  _OBJC_CLASS_$_AFDismissTimerRequest
+0x1ef6946c8  __AUTH,__objc_data  _OBJC_CLASS_$_AFEnablementConfiguration
+0x1ef6946a0  __AUTH,__objc_data  _OBJC_CLASS_$_AFEnablementConfigurationProviderParameters
+0x1ef694678  __AUTH,__objc_data  _OBJC_CLASS_$_AFEnablementFlowConfigurationProvider
+0x1ef694650  __AUTH,__objc_data  _OBJC_CLASS_$_AFEndpointInfo
+0x1ef697ee0  __AUTH,__objc_data  _OBJC_CLASS_$_AFError
+0x1ef694628  __AUTH,__objc_data  _OBJC_CLASS_$_AFEvent
+0x1ef695190  __AUTH,__objc_data  _OBJC_CLASS_$_AFEventStore
+0x1ef698070  __AUTH,__objc_data  _OBJC_CLASS_$_AFExperiment
+0x1ee12ced0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFExperimentConfiguration
+0x1ef698048  __AUTH,__objc_data  _OBJC_CLASS_$_AFExperimentContext
+0x1ef696e78  __AUTH,__objc_data  _OBJC_CLASS_$_AFExperimentGroup
+0x1ef694600  __AUTH,__objc_data  _OBJC_CLASS_$_AFExperimentServerConfigurationInfo
+0x1ef6945d8  __AUTH,__objc_data  _OBJC_CLASS_$_AFExperimentState
+0x1ef696e50  __AUTH,__objc_data  _OBJC_CLASS_$_AFExplicitRequestContext
+0x1ee12d088  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFFamilyCircleStatusManager
+0x1ee12d790  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFFeatureFlags
+0x1ef692d50  __AUTH,__objc_data  _OBJC_CLASS_$_AFFlowServiceConnection
+0x1ef6945b0  __AUTH,__objc_data  _OBJC_CLASS_$_AFFuture
+0x1ef692d28  __AUTH,__objc_data  _OBJC_CLASS_$_AFGetSettingsRequest
+0x1ef692d00  __AUTH,__objc_data  _OBJC_CLASS_$_AFGetSettingsResponse
+0x1ef692cd8  __AUTH,__objc_data  _OBJC_CLASS_$_AFGetTimerRequest
+0x1ef692cb0  __AUTH,__objc_data  _OBJC_CLASS_$_AFGetTimerResponse
+0x1ef692c88  __AUTH,__objc_data  _OBJC_CLASS_$_AFHeadGestureResponse
+0x1ef6965b8  __AUTH,__objc_data  _OBJC_CLASS_$_AFHeadphonesAnnouncementRequestCapabilityProvider
+0x1ef694588  __AUTH,__objc_data  _OBJC_CLASS_$_AFHearablesClientRegistration
+0x1ef694560  __AUTH,__objc_data  _OBJC_CLASS_$_AFHearablesClientRegistry
+0x1ef694538  __AUTH,__objc_data  _OBJC_CLASS_$_AFHearablesExperienceManager
+0x1ef694510  __AUTH,__objc_data  _OBJC_CLASS_$_AFHeartBeat
+0x1ee12cca0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFHomeAccessoryInfo
+0x1ef6944e8  __AUTH,__objc_data  _OBJC_CLASS_$_AFHomeAccessorySiriDataSharingChangeLogEvent
+0x1ef692c60  __AUTH,__objc_data  _OBJC_CLASS_$_AFHomeAccessorySiriDataSharingPropagationLogEvent
+0x1ef692c38  __AUTH,__objc_data  _OBJC_CLASS_$_AFHomeAnnouncement
+0x1ef6973c8  __AUTH,__objc_data  _OBJC_CLASS_$_AFHomeAnnouncementObserver
+0x1ef696e28  __AUTH,__objc_data  _OBJC_CLASS_$_AFHomeAnnouncementSnapshot
+0x1ef6944c0  __AUTH,__objc_data  _OBJC_CLASS_$_AFHomeInfo
+0x1ef692c10  __AUTH,__objc_data  _OBJC_CLASS_$_AFHomeMemberSettings
+0x1ef692be8  __AUTH,__objc_data  _OBJC_CLASS_$_AFHomeMembersInfo
+0x1ef692bc0  __AUTH,__objc_data  _OBJC_CLASS_$_AFImagePNGData
+0x1ef692b98  __AUTH,__objc_data  _OBJC_CLASS_$_AFInitiateCallRequest
+0x1ee12d998  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFInstanceContext
+0x1ee12d920  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFInstanceContextHost
+0x1ee12d970  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFInstanceInfo
+0x1ef692b70  __AUTH,__objc_data  _OBJC_CLASS_$_AFInstrumentationObserverConnection
+0x1ef692b48  __AUTH,__objc_data  _OBJC_CLASS_$_AFIntelligenceFlowDeviceUnlockActionDescriptor
+0x1ef694498  __AUTH,__objc_data  _OBJC_CLASS_$_AFIntelligenceFlowLocationAccuracyActionDescriptor
+0x1ef694470  __AUTH,__objc_data  _OBJC_CLASS_$_AFIntelligenceFlowLocationPermissionActionDescriptor
+0x1ef692b20  __AUTH,__objc_data  _OBJC_CLASS_$_AFInterstitialCommandWrapper
+0x1ef695b90  __AUTH,__objc_data  _OBJC_CLASS_$_AFInterstitialConfiguration
+0x1ef695b68  __AUTH,__objc_data  _OBJC_CLASS_$_AFInterstitialProvider
+0x1ef694448  __AUTH,__objc_data  _OBJC_CLASS_$_AFInvocationContext
+0x1ef692af8  __AUTH,__objc_data  _OBJC_CLASS_$_AFKeyValueObserver
+0x1ef692ad0  __AUTH,__objc_data  _OBJC_CLASS_$_AFKeyValueObservingDeliveryOptions
+0x1ef6978a0  __AUTH,__objc_data  _OBJC_CLASS_$_AFLanguageDetectionUserContext
+0x1ef697c88  __AUTH,__objc_data  _OBJC_CLASS_$_AFLinkedListItem
+0x1ef694420  __AUTH,__objc_data  _OBJC_CLASS_$_AFLocalSpeechRecognitionSamplingUtilities
+0x1ef68fce0  __AUTH,__objc_data  _OBJC_CLASS_$_AFLocalTurnStatusService
+0x1ee12cbb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFLocalization
+0x1ef695168  __AUTH,__objc_data  _OBJC_CLASS_$_AFLocationFetchRequest
+0x1ef696590  __AUTH,__objc_data  _OBJC_CLASS_$_AFLocationService
+0x1ef695b40  __AUTH,__objc_data  _OBJC_CLASS_$_AFLocationSnapshot
+0x1ef692aa8  __AUTH,__objc_data  _OBJC_CLASS_$_AFMachServiceSiriTaskDeliverer
+0x1ef695b18  __AUTH,__objc_data  _OBJC_CLASS_$_AFManagedStorageConnection
+0x1ef696e00  __AUTH,__objc_data  _OBJC_CLASS_$_AFMediaPlaybackStateSnapshot
+0x1ef696dd8  __AUTH,__objc_data  _OBJC_CLASS_$_AFMediaRemoteDeviceInfo
+0x1ef6973a0  __AUTH,__objc_data  _OBJC_CLASS_$_AFMemoryInfo
+0x1ef697378  __AUTH,__objc_data  _OBJC_CLASS_$_AFMemoryPressureObserver
+0x1ef697c60  __AUTH,__objc_data  _OBJC_CLASS_$_AFMetrics
+0x1ef696568  __AUTH,__objc_data  _OBJC_CLASS_$_AFModesConfiguration
+0x1ef692a80  __AUTH,__objc_data  _OBJC_CLASS_$_AFMultiArgumentSafetyBlock
+0x1ee12cac0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFMultiUserConnection
+0x1ef695140  __AUTH,__objc_data  _OBJC_CLASS_$_AFMultiUserDataSyncUtils
+0x1ef695118  __AUTH,__objc_data  _OBJC_CLASS_$_AFMultiUserStateSnapshot
+0x1ef695af0  __AUTH,__objc_data  _OBJC_CLASS_$_AFMutableConversationItem
+0x1ee12d650  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFNetworkAvailability
+0x1ee12ca98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFNotifyObserver
+0x1ef697350  __AUTH,__objc_data  _OBJC_CLASS_$_AFNotifyStatePublisher
+0x1ef692a58  __AUTH,__objc_data  _OBJC_CLASS_$_AFObjectCreatedSiriResponse
+0x1ef692a30  __AUTH,__objc_data  _OBJC_CLASS_$_AFObjectUpdatedSiriResponse
+0x1ef697878  __AUTH,__objc_data  _OBJC_CLASS_$_AFOneArgumentSafetyBlock
+0x1ef692a08  __AUTH,__objc_data  _OBJC_CLASS_$_AFOpportuneSpeakingModelFeedback
+0x1ef6929e0  __AUTH,__objc_data  _OBJC_CLASS_$_AFOpportuneSpeakingModelFeedbackManager
+0x1ef6929b8  __AUTH,__objc_data  _OBJC_CLASS_$_AFOpportuneSpeakingModuleDataCollection
+0x1ef692990  __AUTH,__objc_data  _OBJC_CLASS_$_AFOpportuneSpeakingModuleDataCollectionSanitizedSpeakable
+0x1ef6943f8  __AUTH,__objc_data  _OBJC_CLASS_$_AFOutputVoiceColorDescriptor
+0x1ef696540  __AUTH,__objc_data  _OBJC_CLASS_$_AFOutputVoiceDescriptor
+0x1ef692968  __AUTH,__objc_data  _OBJC_CLASS_$_AFPairedBluetoothDevicesObserver
+0x1ee12cc78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFPeerContentTuple
+0x1ee12cf98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFPeerInfo
+0x1ef692940  __AUTH,__objc_data  _OBJC_CLASS_$_AFPeerMap
+0x1ef692918  __AUTH,__objc_data  _OBJC_CLASS_$_AFPersonAddress
+0x1ef6928f0  __AUTH,__objc_data  _OBJC_CLASS_$_AFPersonInfo
+0x1ef6928c8  __AUTH,__objc_data  _OBJC_CLASS_$_AFPersonalUserSettings
+0x1ef6928a0  __AUTH,__objc_data  _OBJC_CLASS_$_AFPhonemeMapper
+0x1ee12d308  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFPhonemeTranscription
+0x1ef696db0  __AUTH,__objc_data  _OBJC_CLASS_$_AFPineBoardSystemStateObserver
+0x1ef6943d0  __AUTH,__objc_data  _OBJC_CLASS_$_AFPluginBundle
+0x1ef6943a8  __AUTH,__objc_data  _OBJC_CLASS_$_AFPluginManager
+0x1ef6950f0  __AUTH,__objc_data  _OBJC_CLASS_$_AFPowerAssertionManager
+0x1ef694380  __AUTH,__objc_data  _OBJC_CLASS_$_AFPowerContextClient
+0x1ef6950c8  __AUTH,__objc_data  _OBJC_CLASS_$_AFPowerContextPolicy
+0x1ee12d948  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFPreferences
+0x1ee12d880  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFPreferencesNotificationCenter
+0x1ef695ac8  __AUTH,__objc_data  _OBJC_CLASS_$_AFPrescribedActionDescriptor
+0x1ef6950a0  __AUTH,__objc_data  _OBJC_CLASS_$_AFPrescribedInvocationDescriptor
+0x1ef698020  __AUTH,__objc_data  _OBJC_CLASS_$_AFQueue
+0x1ef692878  __AUTH,__objc_data  _OBJC_CLASS_$_AFRemoteRequest
+0x1ef694358  __AUTH,__objc_data  _OBJC_CLASS_$_AFRemoteRequestWatcher
+0x1ef694330  __AUTH,__objc_data  _OBJC_CLASS_$_AFRequestCancellationContext
+0x1ef697850  __AUTH,__objc_data  _OBJC_CLASS_$_AFRequestCompletionOptions
+0x1ef696518  __AUTH,__objc_data  _OBJC_CLASS_$_AFRequestHandlingContext
+0x1ee12cb60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFRequestInfo
+0x1ef695aa0  __AUTH,__objc_data  _OBJC_CLASS_$_AFSUPFunctionProvider
+0x1ef697c38  __AUTH,__objc_data  _OBJC_CLASS_$_AFSafetyBlock
+0x1ef695a78  __AUTH,__objc_data  _OBJC_CLASS_$_AFSamplingUtilities
+0x1ef692850  __AUTH,__objc_data  _OBJC_CLASS_$_AFSearchAlarmsRequest
+0x1ef692828  __AUTH,__objc_data  _OBJC_CLASS_$_AFSearchAlarmsResponse
+0x1ee12d100  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFSearchBarDictationButtonTag
+0x1ef695a50  __AUTH,__objc_data  _OBJC_CLASS_$_AFSecurityConnection
+0x1ef695078  __AUTH,__objc_data  _OBJC_CLASS_$_AFSelectionOutcomeDescriptor
+0x1ef692800  __AUTH,__objc_data  _OBJC_CLASS_$_AFServiceContextSnapshot
+0x1ef697828  __AUTH,__objc_data  _OBJC_CLASS_$_AFServiceDeviceContext
+0x1ef6964f0  __AUTH,__objc_data  _OBJC_CLASS_$_AFSessionResumptionOptions
+0x1ef6964c8  __AUTH,__objc_data  _OBJC_CLASS_$_AFSessionResumptionResult
+0x1ef697c10  __AUTH,__objc_data  _OBJC_CLASS_$_AFSetAudioSessionActiveContext
+0x1ef697be8  __AUTH,__objc_data  _OBJC_CLASS_$_AFSetAudioSessionActiveResult
+0x1ef6927d8  __AUTH,__objc_data  _OBJC_CLASS_$_AFSetSettingsRequest
+0x1ef6927b0  __AUTH,__objc_data  _OBJC_CLASS_$_AFSetSettingsResponse
+0x1ef692788  __AUTH,__objc_data  _OBJC_CLASS_$_AFSetTimerRequest
+0x1ee12ce58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFSettingsConnection
+0x1ee12cde0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFSettingsConnectionServiceDelegate
+0x1ef692760  __AUTH,__objc_data  _OBJC_CLASS_$_AFSharedConfidenceScore
+0x1ef692738  __AUTH,__objc_data  _OBJC_CLASS_$_AFSharedUserInfo
+0x1ef692710  __AUTH,__objc_data  _OBJC_CLASS_$_AFShowAlarmRequest
+0x1ef6926e8  __AUTH,__objc_data  _OBJC_CLASS_$_AFShowNextEventRequest
+0x1ef6926c0  __AUTH,__objc_data  _OBJC_CLASS_$_AFShowSettingRequest
+0x1ef692698  __AUTH,__objc_data  _OBJC_CLASS_$_AFShowTimerRequest
+0x1ef692670  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriAceRequest
+0x1ef692648  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriAcousticIDRequest
+0x1ef697328  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriActivationConnection
+0x1ef697eb8  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriActivationContext
+0x1ef692620  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriActivationDismissalInfo
+0x1ef6925f8  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriActivationHandlerAssistantDaemon
+0x1ef6964a0  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriActivationHandlerCoreSpeechDaemon
+0x1ef696478  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriActivationHandlerFrontendProcess
+0x1ef694308  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriActivationListener
+0x1ef6925d0  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriActivationRequest
+0x1ef697800  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriActivationResult
+0x1ef6925a8  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriAnnounceBinaryOutcome
+0x1ef692580  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriAnnounceDropInCallRequest
+0x1ef692558  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriAnnounceIncomingCallRequest
+0x1ef692530  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriAnnounceWorkoutReminderRequest
+0x1ef692508  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriAnnounceWorkoutVoiceFeedbackRequest
+0x1ef695a28  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriAnnouncementRequestCapabilityManager
+0x1ef696450  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriAudioRoute
+0x1ef695a00  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriAudioRouteMonitor
+0x1ee12d420  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFSiriAvailability
+0x1ef695050  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriCapabilities
+0x1ef695028  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriCapabilitiesServiceClient
+0x1ef697300  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriClientStateManager
+0x1ef695000  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriDataSharingSensitivityManager
+0x1ef6942e0  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriDataSharingSensitivityUtilities
+0x1ef6959d8  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriDebugUIRequest
+0x1ef696428  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriHeadphonesMonitor
+0x1ef6924e0  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriHomeAutomationBackgroundRequest
+0x1ef6924b8  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriHomeAutomationRequestInfo
+0x1ef692490  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriIncomingCall
+0x1ef692468  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriMusicSmartPlayRequest
+0x1ef692440  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriMusicSubscriptionLeaseTakenRequest
+0x1ef692418  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriNotificationRequest
+0x1ef6923f0  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriPhoneticContactNames
+0x1ef6972d8  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriRequest
+0x1ef694fd8  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriRequestSucceededResponse
+0x1ef696d88  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriResponse
+0x1ef6923c8  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriRingtone
+0x1ef6942b8  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriServiceEvent
+0x1ef6959b0  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriTask
+0x1ef6923a0  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriTaskContextProvider
+0x1ef692378  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriTaskDeliveryHandler
+0x1ef694290  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriTaskExecution
+0x1ef692350  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriTaskService
+0x1ef692328  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriTaskUsageResult
+0x1ef694268  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriTaskmaster
+0x1ef694240  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriTether
+0x1ef694218  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriUserNotificationRequest
+0x1ef6941f0  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriUserNotificationRequestCapabilityManager
+0x1ef6941c8  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriUserNotificationSummary
+0x1ef6941a0  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriWorkoutReminder
+0x1ef694178  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriWorkoutVoiceFeedback
+0x1ef692300  __AUTH,__objc_data  _OBJC_CLASS_$_AFSiriXDirectActionDescriptor
+0x1ef695988  __AUTH,__objc_data  _OBJC_CLASS_$_AFSpeakableUtteranceParser
+0x1ef6972b0  __AUTH,__objc_data  _OBJC_CLASS_$_AFSpeechAcousticFeature
+0x1ee12d498  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFSpeechAudioAnalytics
+0x1ef6922d8  __AUTH,__objc_data  _OBJC_CLASS_$_AFSpeechConnectionRequestContext
+0x1ee12cc00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFSpeechCorrectionInfo
+0x1ef694fb0  __AUTH,__objc_data  _OBJC_CLASS_$_AFSpeechInfo
+0x1ef696d60  __AUTH,__objc_data  _OBJC_CLASS_$_AFSpeechInfoPackage
+0x1ee12c9d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFSpeechInterpretation
+0x1ef696400  __AUTH,__objc_data  _OBJC_CLASS_$_AFSpeechLatticeMitigatorResult
+0x1ef694150  __AUTH,__objc_data  _OBJC_CLASS_$_AFSpeechMessagesContext
+0x1ee12cd68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFSpeechPackage
+0x1ef6922b0  __AUTH,__objc_data  _OBJC_CLASS_$_AFSpeechParameters
+0x1ee12d538  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFSpeechPhrase
+0x1ee12cd40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFSpeechRecognition
+0x1ef695960  __AUTH,__objc_data  _OBJC_CLASS_$_AFSpeechRecognitionPersonalEntityMention
+0x1ef692288  __AUTH,__objc_data  _OBJC_CLASS_$_AFSpeechRecordingAlertBehavior
+0x1ef6977d8  __AUTH,__objc_data  _OBJC_CLASS_$_AFSpeechRecordingAlertPolicy
+0x1ee12cb38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFSpeechRequestOptions
+0x1ef697bc0  __AUTH,__objc_data  _OBJC_CLASS_$_AFSpeechSynthesisRecord
+0x1ef696d38  __AUTH,__objc_data  _OBJC_CLASS_$_AFSpeechTestRequestOptions
+0x1ee12d5b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFSpeechToken
+0x1ee12d510  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFSpeechUtterance
+0x1ef694f88  __AUTH,__objc_data  _OBJC_CLASS_$_AFSpeechVisualContextAndCorrectionsInfo
+0x1ef6977b0  __AUTH,__objc_data  _OBJC_CLASS_$_AFSyncInfo
+0x1ef697788  __AUTH,__objc_data  _OBJC_CLASS_$_AFSyncSnapshot
+0x1ef692260  __AUTH,__objc_data  _OBJC_CLASS_$_AFSynchronousClientLite
+0x1ee12d470  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFSystemAssistantExperienceStatusManager
+0x1ef694128  __AUTH,__objc_data  _OBJC_CLASS_$_AFSystemStateSnapshot
+0x1ef697760  __AUTH,__objc_data  _OBJC_CLASS_$_AFTestRequestOptions
+0x1ef694100  __AUTH,__objc_data  _OBJC_CLASS_$_AFThreeArgumentSafetyBlock
+0x1ef694f60  __AUTH,__objc_data  _OBJC_CLASS_$_AFTipKitDonator
+0x1ef695938  __AUTH,__objc_data  _OBJC_CLASS_$_AFTreeNode
+0x1ef6940d8  __AUTH,__objc_data  _OBJC_CLASS_$_AFTreeNodePropertyListSerialization
+0x1ef692238  __AUTH,__objc_data  _OBJC_CLASS_$_AFTriggerlessListeningOptions
+0x1ef6963d8  __AUTH,__objc_data  _OBJC_CLASS_$_AFTwoArgumentSafetyBlock
+0x1ef6940b0  __AUTH,__objc_data  _OBJC_CLASS_$_AFUIApplicationSiriTaskDeliverer
+0x1ef694088  __AUTH,__objc_data  _OBJC_CLASS_$_AFUIBridgeClient
+0x1ef694060  __AUTH,__objc_data  _OBJC_CLASS_$_AFUIBridgeServiceProxy
+0x1ef692210  __AUTH,__objc_data  _OBJC_CLASS_$_AFUpdateAlarmRequest
+0x1ef6921e8  __AUTH,__objc_data  _OBJC_CLASS_$_AFUpdateAlarmResponse
+0x1ef6921c0  __AUTH,__objc_data  _OBJC_CLASS_$_AFUpdateMessageRequest
+0x1ef694038  __AUTH,__objc_data  _OBJC_CLASS_$_AFUserNotificationAnnouncementSpeakingStateObserver
+0x1ef692198  __AUTH,__objc_data  _OBJC_CLASS_$_AFUserNotificationProvider
+0x1ef6963b0  __AUTH,__objc_data  _OBJC_CLASS_$_AFUserUtterance
+0x1ef694f38  __AUTH,__objc_data  _OBJC_CLASS_$_AFUserUtteranceSelectionResults
+0x1ef694010  __AUTH,__objc_data  _OBJC_CLASS_$_AFUtilitiesWrapper
+0x1ef692170  __AUTH,__objc_data  _OBJC_CLASS_$_AFUtteranceSuggestions
+0x1ef692148  __AUTH,__objc_data  _OBJC_CLASS_$_AFVoiceCommandDebugInfo
+0x1ef692120  __AUTH,__objc_data  _OBJC_CLASS_$_AFVoiceCommandGrammarParamMatch
+0x1ef6920f8  __AUTH,__objc_data  _OBJC_CLASS_$_AFVoiceCommandGrammarParseCandidate
+0x1ef6920d0  __AUTH,__objc_data  _OBJC_CLASS_$_AFVoiceCommandGrammarParsePackage
+0x1ef6920a8  __AUTH,__objc_data  _OBJC_CLASS_$_AFVoiceCommandGrammarParseResult
+0x1ef694f10  __AUTH,__objc_data  _OBJC_CLASS_$_AFVoiceIdScoreCard
+0x1ee12d3a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFVoiceInfo
+0x1ee12c9a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFWatchdogTimer
+0x1ef68fcb8  __AUTH,__objc_data  _OBJC_CLASS_$_AFWindowDescriptor
+0x1ee12ca70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AFXPCWrapper
+0x1ef696d10  __AUTH,__objc_data  _OBJC_CLASS_$_SISchemaClientAnyEvent
+0x1ef696ce8  __AUTH,__objc_data  _OBJC_CLASS_$_SISchemaClientTurnBasedEvent
+0x1ef6979e0  __AUTH,__objc_data  _OBJC_CLASS_$_SISchemaClientTurnContext
+0x1ef692080  __AUTH,__objc_data  _OBJC_CLASS_$_STAlarm
+0x1ef692058  __AUTH,__objc_data  _OBJC_CLASS_$_STCall
+0x1ef692030  __AUTH,__objc_data  _OBJC_CLASS_$_STCity
+0x1ef692008  __AUTH,__objc_data  _OBJC_CLASS_$_STContactAddress
+0x1ee12d2e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_STPerson
+0x1ef691fe0  __AUTH,__objc_data  _OBJC_CLASS_$_STPersonContactHandle
+0x1ef691fb8  __AUTH,__objc_data  _OBJC_CLASS_$_STSetting
+0x1ef691f90  __AUTH,__objc_data  _OBJC_CLASS_$_STSettingChange
+0x1ef693fe8  __AUTH,__objc_data  _OBJC_CLASS_$_STSiriContext
+0x1ee12d2b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_STSiriLocation
+0x1ef691f68  __AUTH,__objc_data  _OBJC_CLASS_$_STSiriMessage
+0x1ee12d290  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_STSiriModelObject
+0x1ef691f40  __AUTH,__objc_data  _OBJC_CLASS_$_STTimer
+0x1ef691f18  __AUTH,__objc_data  _OBJC_CLASS_$__AFASRSharedUserInfoMutation
+0x1ef696cc0  __AUTH,__objc_data  _OBJC_CLASS_$__AFAccessibilityStateMutation
+0x1ef691ef0  __AUTH,__objc_data  _OBJC_CLASS_$__AFAnnounceBinaryOutcomeRequestMutation
+0x1ef691ec8  __AUTH,__objc_data  _OBJC_CLASS_$__AFAnnounceBinaryOutcomeUseCaseV2GenericUnlocalizedMutation
+0x1ef691ea0  __AUTH,__objc_data  _OBJC_CLASS_$__AFAnnounceBinaryOutcomeUseCaseV2HearNotificationsMutation
+0x1ef691e78  __AUTH,__objc_data  _OBJC_CLASS_$__AFAnnounceBinaryOutcomeUseCaseV2TestMutation
+0x1ef691e50  __AUTH,__objc_data  _OBJC_CLASS_$__AFAnnounceBinaryOutcomeUseCaseV2UpdateSmartRoutingMutation
+0x1ef694ee8  __AUTH,__objc_data  _OBJC_CLASS_$__AFAnnouncementContextMutation
+0x1ef693fc0  __AUTH,__objc_data  _OBJC_CLASS_$__AFApplicationContextMutation
+0x1ef693f98  __AUTH,__objc_data  _OBJC_CLASS_$__AFApplicationContextSnapshotMutation
+0x1ef694ec0  __AUTH,__objc_data  _OBJC_CLASS_$__AFAssertionContextMutation
+0x1ef696388  __AUTH,__objc_data  _OBJC_CLASS_$__AFAssertionImpl
+0x1ef696360  __AUTH,__objc_data  _OBJC_CLASS_$__AFAssertionProxy
+0x1ef691e28  __AUTH,__objc_data  _OBJC_CLASS_$__AFAudioDeviceInfoMutation
+0x1ef695910  __AUTH,__objc_data  _OBJC_CLASS_$__AFAudioPlaybackRequestMutation
+0x1ef696338  __AUTH,__objc_data  _OBJC_CLASS_$__AFAudioPowerXPCSharedMemory
+0x1ef691e00  __AUTH,__objc_data  _OBJC_CLASS_$__AFAudioSessionCoordinationDeviceInfoMutation
+0x1ef691dd8  __AUTH,__objc_data  _OBJC_CLASS_$__AFAudioSessionCoordinationSnapshotMutation
+0x1ef696c98  __AUTH,__objc_data  _OBJC_CLASS_$__AFAudioSessionCoordinationSystemInfoMutation
+0x1ef691db0  __AUTH,__objc_data  _OBJC_CLASS_$__AFAudioSessionEventMutation
+0x1ef691d88  __AUTH,__objc_data  _OBJC_CLASS_$__AFBluetoothDeviceBooleanSettingResponseMutation
+0x1ef694e98  __AUTH,__objc_data  _OBJC_CLASS_$__AFBluetoothDeviceInfoMutation
+0x1ef693f70  __AUTH,__objc_data  _OBJC_CLASS_$__AFBluetoothHeadGestureConfigurationMutation
+0x1ef696310  __AUTH,__objc_data  _OBJC_CLASS_$__AFBluetoothHeadphoneInEarDetectionStateMutation
+0x1ef6962e8  __AUTH,__objc_data  _OBJC_CLASS_$__AFBluetoothWirelessSplitterSessionInfoMutation
+0x1ef6958e8  __AUTH,__objc_data  _OBJC_CLASS_$__AFBundleResourceMutation
+0x1ee12d6a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__AFCallSiteInfoMutation
+0x1ef694e70  __AUTH,__objc_data  _OBJC_CLASS_$__AFCallStateSnapshotMutation
+0x1ef6962c0  __AUTH,__objc_data  _OBJC_CLASS_$__AFClientConfigurationMutation
+0x1ef691d60  __AUTH,__objc_data  _OBJC_CLASS_$__AFClientInfoMutation
+0x1ef694e48  __AUTH,__objc_data  _OBJC_CLASS_$__AFClockAlarmMutation
+0x1ef697288  __AUTH,__objc_data  _OBJC_CLASS_$__AFClockAlarmSnapshotMutation
+0x1ef697738  __AUTH,__objc_data  _OBJC_CLASS_$__AFClockTimerMutation
+0x1ef697710  __AUTH,__objc_data  _OBJC_CLASS_$__AFClockTimerSnapshotMutation
+0x1ef694e20  __AUTH,__objc_data  _OBJC_CLASS_$__AFCommandExecutionInfoMutation
+0x1ef691d38  __AUTH,__objc_data  _OBJC_CLASS_$__AFCommunalDeviceUserMutation
+0x1ef691d10  __AUTH,__objc_data  _OBJC_CLASS_$__AFCompanionDeviceInfoMutation
+0x1ef694df8  __AUTH,__objc_data  _OBJC_CLASS_$__AFCoreAnalyticsDeviceContextPayloadMutation
+0x1ef691ce8  __AUTH,__objc_data  _OBJC_CLASS_$__AFDataStoreEntry
+0x1ef691cc0  __AUTH,__objc_data  _OBJC_CLASS_$__AFDeleteSiriHistoryContextMutation
+0x1ef693f48  __AUTH,__objc_data  _OBJC_CLASS_$__AFDeviceContextHistoryConfigurationMutation
+0x1ef691c98  __AUTH,__objc_data  _OBJC_CLASS_$__AFDeviceContextServiceDelegateProxy
+0x1ef691c70  __AUTH,__objc_data  _OBJC_CLASS_$__AFDeviceRequestHandlingRecordMutation
+0x1ef693f20  __AUTH,__objc_data  _OBJC_CLASS_$__AFEnablementConfigurationProviderParametersMutation
+0x1ef691c48  __AUTH,__objc_data  _OBJC_CLASS_$__AFEndpointInfoMutation
+0x1ef696c70  __AUTH,__objc_data  _OBJC_CLASS_$__AFExperimentConfigurationMutation
+0x1ef693ef8  __AUTH,__objc_data  _OBJC_CLASS_$__AFExperimentContextMutation
+0x1ef696c48  __AUTH,__objc_data  _OBJC_CLASS_$__AFExperimentGroupMutation
+0x1ef693ed0  __AUTH,__objc_data  _OBJC_CLASS_$__AFExperimentMutation
+0x1ef691c20  __AUTH,__objc_data  _OBJC_CLASS_$__AFExperimentServerConfigurationInfoMutation
+0x1ef691bf8  __AUTH,__objc_data  _OBJC_CLASS_$__AFExperimentStateMutation
+0x1ef691bd0  __AUTH,__objc_data  _OBJC_CLASS_$__AFHeadGestureResponseMutation
+0x1ef693ea8  __AUTH,__objc_data  _OBJC_CLASS_$__AFHomeAccessoryInfoMutation
+0x1ef693e80  __AUTH,__objc_data  _OBJC_CLASS_$__AFHomeAccessorySiriDataSharingChangeLogEventMutation
+0x1ef691ba8  __AUTH,__objc_data  _OBJC_CLASS_$__AFHomeAccessorySiriDataSharingPropagationLogEventMutation
+0x1ef691b80  __AUTH,__objc_data  _OBJC_CLASS_$__AFHomeAnnouncementMutation
+0x1ef696c20  __AUTH,__objc_data  _OBJC_CLASS_$__AFHomeAnnouncementSnapshotMutation
+0x1ef691b58  __AUTH,__objc_data  _OBJC_CLASS_$__AFHomeInfoMutation
+0x1ef691b30  __AUTH,__objc_data  _OBJC_CLASS_$__AFHomeMemberSettingsMutation
+0x1ef691b08  __AUTH,__objc_data  _OBJC_CLASS_$__AFHomeMembersInfoMutation
+0x1ee12d8a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__AFInstanceInfoMutation
+0x1ef6958c0  __AUTH,__objc_data  _OBJC_CLASS_$__AFInterstitialAction
+0x1ef695898  __AUTH,__objc_data  _OBJC_CLASS_$__AFInterstitialConfigurationMutation
+0x1ef693e58  __AUTH,__objc_data  _OBJC_CLASS_$__AFLocationSnapshotMutation
+0x1ef693e30  __AUTH,__objc_data  _OBJC_CLASS_$__AFMediaPlaybackStateSnapshotMutation
+0x1ef693e08  __AUTH,__objc_data  _OBJC_CLASS_$__AFMemoryInfoMutation
+0x1ef696298  __AUTH,__objc_data  _OBJC_CLASS_$__AFModesConfigurationMutation
+0x1ef691ae0  __AUTH,__objc_data  _OBJC_CLASS_$__AFMultiUserStateSnapshotMutation
+0x1ef691ab8  __AUTH,__objc_data  _OBJC_CLASS_$__AFOutputVoiceColorDescriptorMutation
+0x1ef696bf8  __AUTH,__objc_data  _OBJC_CLASS_$__AFOutputVoiceDescriptorMutation
+0x1ef6976e8  __AUTH,__objc_data  _OBJC_CLASS_$__AFPeerInfoMutation
+0x1ef691a90  __AUTH,__objc_data  _OBJC_CLASS_$__AFPersonAddressMutation
+0x1ef691a68  __AUTH,__objc_data  _OBJC_CLASS_$__AFPersonInfoMutation
+0x1ef694dd0  __AUTH,__objc_data  _OBJC_CLASS_$__AFRequestHandlingContextMutation
+0x1ef694da8  __AUTH,__objc_data  _OBJC_CLASS_$__AFServiceDeviceContextMutation
+0x1ef691a40  __AUTH,__objc_data  _OBJC_CLASS_$__AFSessionResumptionOptionsMutation
+0x1ef691a18  __AUTH,__objc_data  _OBJC_CLASS_$__AFSessionResumptionResultMutation
+0x1ef696270  __AUTH,__objc_data  _OBJC_CLASS_$__AFSetAudioSessionActiveContextMutation
+0x1ef697260  __AUTH,__objc_data  _OBJC_CLASS_$__AFSetAudioSessionActiveResultMutation
+0x1ef6919f0  __AUTH,__objc_data  _OBJC_CLASS_$__AFSharedConfidenceScoreMutation
+0x1ef6919c8  __AUTH,__objc_data  _OBJC_CLASS_$__AFSharedUserInfoMutation
+0x1ef697e90  __AUTH,__objc_data  _OBJC_CLASS_$__AFSiriActivationContextMutation
+0x1ef696bd0  __AUTH,__objc_data  _OBJC_CLASS_$__AFSiriActivationResultMutation
+0x1ef696ba8  __AUTH,__objc_data  _OBJC_CLASS_$__AFSiriClientState
+0x1ef6919a0  __AUTH,__objc_data  _OBJC_CLASS_$__AFSiriHomeAutomationRequestInfoMutation
+0x1ef695870  __AUTH,__objc_data  _OBJC_CLASS_$__AFSpeakableUtterancePassThroughProvider
+0x1ef691978  __AUTH,__objc_data  _OBJC_CLASS_$__AFSpeechConnectionRequestContextMutation
+0x1ef693de0  __AUTH,__objc_data  _OBJC_CLASS_$__AFSpeechInfoMutation
+0x1ef691950  __AUTH,__objc_data  _OBJC_CLASS_$__AFSpeechParametersMutation
+0x1ef691928  __AUTH,__objc_data  _OBJC_CLASS_$__AFSpeechRecordingAlertBehaviorMutation
+0x1ef691900  __AUTH,__objc_data  _OBJC_CLASS_$__AFSpeechRecordingAlertPolicyMutation
+0x1ef696b80  __AUTH,__objc_data  _OBJC_CLASS_$__AFSpeechSynthesisRecordMutation
+0x1ef6918d8  __AUTH,__objc_data  _OBJC_CLASS_$__AFSpeechTestRequestOptionsMutation
+0x1ef6918b0  __AUTH,__objc_data  _OBJC_CLASS_$__AFSystemStateSnapshotMutation
+0x1ef691888  __AUTH,__objc_data  _OBJC_CLASS_$__AFTestRequestOptionsMutation
+0x1ef691860  __AUTH,__objc_data  _OBJC_CLASS_$__AFVoiceIdScoreCardMutation
+0x1ebb1b630  __DATA,__objc_ivar  OBJC_IVAR_$_AFDeviceContext._deviceInfo
+0x1ebb1b63c  __DATA,__objc_ivar  OBJC_IVAR_$_AFDeviceContext._dirtyFlags
+0x1ebb1b628  __DATA,__objc_ivar  OBJC_IVAR_$_AFDeviceContext._fromLocalDevice
+0x1ebb1b62c  __DATA,__objc_ivar  OBJC_IVAR_$_AFDeviceContext._identifier
+0x1ebb1b634  __DATA,__objc_ivar  OBJC_IVAR_$_AFDeviceContext._privacyClass
+0x1ebb1b638  __DATA,__objc_ivar  OBJC_IVAR_$_AFDeviceContext._serializedBackingStore
+0x1ef695848  __AUTH,__objc_data  _OBJC_METACLASS_$_AFASRSharedUserInfo
+0x1ef696b58  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAccessibilityObserver
+0x1ef6976c0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAccessibilityState
+0x1ef696b30  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAccount
+0x1ef696248  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAgentDestination
+0x1ee12cf70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFAggregator
+0x1ee12d740  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFAnalytics
+0x1ee12d178  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFAnalyticsConnection
+0x1ee12d380  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFAnalyticsEvent
+0x1ee12cea8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFAnalyticsEventRecord
+0x1ef691838  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAnalyticsObserverConnection
+0x1ee12d5d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFAnalyticsTurnBasedInstrumentationContext
+0x1ef691810  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAnnounceBinaryOutcomeRequest
+0x1ef6917e8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAnnounceBinaryOutcomeUseCaseV2GenericUnlocalized
+0x1ef6917c0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAnnounceBinaryOutcomeUseCaseV2HearNotifications
+0x1ef691798  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAnnounceBinaryOutcomeUseCaseV2Test
+0x1ef691770  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAnnounceBinaryOutcomeUseCaseV2UpdateSmartRouting
+0x1ef696b08  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAnnouncementContext
+0x1ef691748  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAppContextAggregator
+0x1ef697e68  __AUTH,__objc_data  _OBJC_METACLASS_$_AFApplicationContext
+0x1ef695820  __AUTH,__objc_data  _OBJC_METACLASS_$_AFApplicationContextSnapshot
+0x1ef691720  __AUTH,__objc_data  _OBJC_METACLASS_$_AFApplicationGroupContainer
+0x1ef697e40  __AUTH,__objc_data  _OBJC_METACLASS_$_AFApplicationInfo
+0x1ef694d80  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAssertionContext
+0x1ef697238  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAssertionCoordinator
+0x1ef696220  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAssistantSamplingUtilities
+0x1ef6916f8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAssistedDisambiguationRules
+0x1ef6916d0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAudioDeviceInfo
+0x1ef698110  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAudioPlaybackRequest
+0x1ef697e18  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAudioPowerUpdater
+0x1ef6961f8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAudioPowerXPCProvider
+0x1ef6916a8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAudioSessionAssertionConnection
+0x1ef691680  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAudioSessionAssertionRemoteAcquisitionService
+0x1ef691658  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAudioSessionCoordinationDeviceInfo
+0x1ef697b98  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAudioSessionCoordinationSnapshot
+0x1ef696ae0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAudioSessionCoordinationSystemInfo
+0x1ef691630  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAudioSessionEvent
+0x1ef691608  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAudioSessionEventInformConnection
+0x1ef6915e0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAudioSessionEventInformService
+0x1ef693db8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFAudioState
+0x1ee12cfe8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFAuthKitManager
+0x1ef6915b8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFBTEvent
+0x1ef691590  __AUTH,__objc_data  _OBJC_METACLASS_$_AFBluetoothDeviceBooleanSettingResponse
+0x1ee12ce08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFBluetoothDeviceInfo
+0x1ef694d58  __AUTH,__objc_data  _OBJC_METACLASS_$_AFBluetoothHeadGestureConfiguration
+0x1ef6961d0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFBluetoothHeadphoneInEarDetectionState
+0x1ef697df0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFBluetoothWirelessSplitterSessionInfo
+0x1ef6957f8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFBluetoothWirelessSplitterSessionStateObserver
+0x1ef693d90  __AUTH,__objc_data  _OBJC_METACLASS_$_AFBridgeConnectionListener
+0x1ef697dc8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFBulletin
+0x1ef691568  __AUTH,__objc_data  _OBJC_METACLASS_$_AFBulletinAction
+0x1ef6957d0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFBundleResource
+0x1ef6957a8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFBundleResourceManager
+0x1ee12d6c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFCallSiteInfo
+0x1ef694d30  __AUTH,__objc_data  _OBJC_METACLASS_$_AFCallStateSnapshot
+0x1ef694d08  __AUTH,__objc_data  _OBJC_METACLASS_$_AFCarPlayAnnouncementRequestCapabilityProvider
+0x1ef696ab8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFCheckSRT
+0x1ef691540  __AUTH,__objc_data  _OBJC_METACLASS_$_AFChildConversationItemList
+0x1ef6979b8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFClientConfiguration
+0x1ef693d68  __AUTH,__objc_data  _OBJC_METACLASS_$_AFClientDisconnectedEventContext
+0x1ef691518  __AUTH,__objc_data  _OBJC_METACLASS_$_AFClientInfo
+0x1ef696a90  __AUTH,__objc_data  _OBJC_METACLASS_$_AFClientLite
+0x1ef6961a8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFClientLiteInternal
+0x1ef693d40  __AUTH,__objc_data  _OBJC_METACLASS_$_AFClientPluginManager
+0x1ef695780  __AUTH,__objc_data  _OBJC_METACLASS_$_AFClockAlarm
+0x1ef697698  __AUTH,__objc_data  _OBJC_METACLASS_$_AFClockAlarmSnapshot
+0x1ef697210  __AUTH,__objc_data  _OBJC_METACLASS_$_AFClockItemStorage
+0x1ef697670  __AUTH,__objc_data  _OBJC_METACLASS_$_AFClockTimer
+0x1ef697b70  __AUTH,__objc_data  _OBJC_METACLASS_$_AFClockTimerSnapshot
+0x1ef693d18  __AUTH,__objc_data  _OBJC_METACLASS_$_AFCoercion
+0x1ef697648  __AUTH,__objc_data  _OBJC_METACLASS_$_AFCommandExecutionInfo
+0x1ef6914f0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFCommunalDeviceUser
+0x1ee12cd18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFCompanionDeviceInfo
+0x1ef694ce0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFConfirmationOutcomeDescriptor
+0x1ee12d808  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFConnection
+0x1ef695758  __AUTH,__objc_data  _OBJC_METACLASS_$_AFConnectionAvailabilityObserver
+0x1ef696180  __AUTH,__objc_data  _OBJC_METACLASS_$_AFConnectionClientServiceDelegate
+0x1ef696a68  __AUTH,__objc_data  _OBJC_METACLASS_$_AFConnectionEntitlementCache
+0x1ef6914c8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFConnectionUserInteractionAssertion
+0x1ef6971e8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFContextDonationService
+0x1ef697ff8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFContextManager
+0x1ef6914a0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFContextRequest
+0x1ef691478  __AUTH,__objc_data  _OBJC_METACLASS_$_AFContextResponse
+0x1ef695730  __AUTH,__objc_data  _OBJC_METACLASS_$_AFConversation
+0x1ef691450  __AUTH,__objc_data  _OBJC_METACLASS_$_AFConversationError
+0x1ef695708  __AUTH,__objc_data  _OBJC_METACLASS_$_AFConversationInsertion
+0x1ef6956e0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFConversationItem
+0x1ef6956b8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFConversationStore
+0x1ef695690  __AUTH,__objc_data  _OBJC_METACLASS_$_AFConversationTransaction
+0x1ef691428  __AUTH,__objc_data  _OBJC_METACLASS_$_AFCoreAnalyticsCrossDeviceEvent
+0x1ef694cb8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFCoreAnalyticsDeviceContextPayload
+0x1ef691400  __AUTH,__objc_data  _OBJC_METACLASS_$_AFCoreAnalyticsLoggingService
+0x1ef6913d8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFCreateAlarmRequest
+0x1ef6913b0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFCreateAlarmResponse
+0x1ef691388  __AUTH,__objc_data  _OBJC_METACLASS_$_AFCreateMessageRequest
+0x1ef695668  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDataStore
+0x1ef691360  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDeleteAlarmRequest
+0x1ef697b48  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDeleteSiriHistoryContext
+0x1ef6971c0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDeviceCapabilities
+0x1ef6980e8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDeviceContext
+0x1ef691338  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDeviceContextConnection
+0x1ef694c90  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDeviceContextHistoryConfiguration
+0x1ef696a40  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDeviceContextMetadata
+0x1ef691310  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDeviceRequestHandlingRecord
+0x1ef696a18  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDeviceRingerSwitchObserver
+0x1ef693cf0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDeviceStateConnection
+0x1ef6969f0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDialogPhase
+0x1ee12d0d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFDictationButtonTag
+0x1ee12d768  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFDictationConnection
+0x1ee12d150  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFDictationConnectionServiceDelegate
+0x1ef694c68  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDictationDiscoverabilitySignalsStreamManager
+0x1ee12d128  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFDictationNLUResult
+0x1ef697b20  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDictationOptions
+0x1ef694c40  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDictationSamplingUtilities
+0x1ef6912e8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDictationSecureTouchAuthenticator
+0x1ef693cc8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDictionarySchema
+0x1ef6912c0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDisambiguationEvent
+0x1ef691298  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDisambiguationInfo
+0x1ef694c18  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDisambiguationOutcomeDescriptor
+0x1ef691270  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDisambiguationStore
+0x1ef691248  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDismissAlarmRequest
+0x1ef691220  __AUTH,__objc_data  _OBJC_METACLASS_$_AFDismissTimerRequest
+0x1ef693ca0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFEnablementConfiguration
+0x1ef693c78  __AUTH,__objc_data  _OBJC_METACLASS_$_AFEnablementConfigurationProviderParameters
+0x1ef693c50  __AUTH,__objc_data  _OBJC_METACLASS_$_AFEnablementFlowConfigurationProvider
+0x1ef693c28  __AUTH,__objc_data  _OBJC_METACLASS_$_AFEndpointInfo
+0x1ef697da0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFError
+0x1ef693c00  __AUTH,__objc_data  _OBJC_METACLASS_$_AFEvent
+0x1ef694bf0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFEventStore
+0x1ef697fd0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFExperiment
+0x1ee12ce80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFExperimentConfiguration
+0x1ef697fa8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFExperimentContext
+0x1ef6969c8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFExperimentGroup
+0x1ef693bd8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFExperimentServerConfigurationInfo
+0x1ef693bb0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFExperimentState
+0x1ef6969a0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFExplicitRequestContext
+0x1ee12d060  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFFamilyCircleStatusManager
+0x1ee12d7b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFFeatureFlags
+0x1ef6911f8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFFlowServiceConnection
+0x1ef693b88  __AUTH,__objc_data  _OBJC_METACLASS_$_AFFuture
+0x1ef6911d0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFGetSettingsRequest
+0x1ef6911a8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFGetSettingsResponse
+0x1ef691180  __AUTH,__objc_data  _OBJC_METACLASS_$_AFGetTimerRequest
+0x1ef691158  __AUTH,__objc_data  _OBJC_METACLASS_$_AFGetTimerResponse
+0x1ef691130  __AUTH,__objc_data  _OBJC_METACLASS_$_AFHeadGestureResponse
+0x1ef696158  __AUTH,__objc_data  _OBJC_METACLASS_$_AFHeadphonesAnnouncementRequestCapabilityProvider
+0x1ef693b60  __AUTH,__objc_data  _OBJC_METACLASS_$_AFHearablesClientRegistration
+0x1ef693b38  __AUTH,__objc_data  _OBJC_METACLASS_$_AFHearablesClientRegistry
+0x1ef693b10  __AUTH,__objc_data  _OBJC_METACLASS_$_AFHearablesExperienceManager
+0x1ef693ae8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFHeartBeat
+0x1ee12cc50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFHomeAccessoryInfo
+0x1ef693ac0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFHomeAccessorySiriDataSharingChangeLogEvent
+0x1ef691108  __AUTH,__objc_data  _OBJC_METACLASS_$_AFHomeAccessorySiriDataSharingPropagationLogEvent
+0x1ef6910e0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFHomeAnnouncement
+0x1ef697198  __AUTH,__objc_data  _OBJC_METACLASS_$_AFHomeAnnouncementObserver
+0x1ef696978  __AUTH,__objc_data  _OBJC_METACLASS_$_AFHomeAnnouncementSnapshot
+0x1ef693a98  __AUTH,__objc_data  _OBJC_METACLASS_$_AFHomeInfo
+0x1ef6910b8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFHomeMemberSettings
+0x1ef691090  __AUTH,__objc_data  _OBJC_METACLASS_$_AFHomeMembersInfo
+0x1ef691068  __AUTH,__objc_data  _OBJC_METACLASS_$_AFImagePNGData
+0x1ef691040  __AUTH,__objc_data  _OBJC_METACLASS_$_AFInitiateCallRequest
+0x1ee12d9e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFInstanceContext
+0x1ee12d9c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFInstanceContextHost
+0x1ee12d8f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFInstanceInfo
+0x1ef691018  __AUTH,__objc_data  _OBJC_METACLASS_$_AFInstrumentationObserverConnection
+0x1ef690ff0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFIntelligenceFlowDeviceUnlockActionDescriptor
+0x1ef693a70  __AUTH,__objc_data  _OBJC_METACLASS_$_AFIntelligenceFlowLocationAccuracyActionDescriptor
+0x1ef693a48  __AUTH,__objc_data  _OBJC_METACLASS_$_AFIntelligenceFlowLocationPermissionActionDescriptor
+0x1ef690fc8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFInterstitialCommandWrapper
+0x1ef695640  __AUTH,__objc_data  _OBJC_METACLASS_$_AFInterstitialConfiguration
+0x1ef695618  __AUTH,__objc_data  _OBJC_METACLASS_$_AFInterstitialProvider
+0x1ef693a20  __AUTH,__objc_data  _OBJC_METACLASS_$_AFInvocationContext
+0x1ef690fa0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFKeyValueObserver
+0x1ef690f78  __AUTH,__objc_data  _OBJC_METACLASS_$_AFKeyValueObservingDeliveryOptions
+0x1ef697620  __AUTH,__objc_data  _OBJC_METACLASS_$_AFLanguageDetectionUserContext
+0x1ef697af8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFLinkedListItem
+0x1ef6939f8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFLocalSpeechRecognitionSamplingUtilities
+0x1ef68fc90  __AUTH,__objc_data  _OBJC_METACLASS_$_AFLocalTurnStatusService
+0x1ee12cb88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFLocalization
+0x1ef694bc8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFLocationFetchRequest
+0x1ef696130  __AUTH,__objc_data  _OBJC_METACLASS_$_AFLocationService
+0x1ef6955f0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFLocationSnapshot
+0x1ef690f50  __AUTH,__objc_data  _OBJC_METACLASS_$_AFMachServiceSiriTaskDeliverer
+0x1ef6955c8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFManagedStorageConnection
+0x1ef696950  __AUTH,__objc_data  _OBJC_METACLASS_$_AFMediaPlaybackStateSnapshot
+0x1ef696928  __AUTH,__objc_data  _OBJC_METACLASS_$_AFMediaRemoteDeviceInfo
+0x1ef697170  __AUTH,__objc_data  _OBJC_METACLASS_$_AFMemoryInfo
+0x1ef697148  __AUTH,__objc_data  _OBJC_METACLASS_$_AFMemoryPressureObserver
+0x1ef697ad0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFMetrics
+0x1ef696108  __AUTH,__objc_data  _OBJC_METACLASS_$_AFModesConfiguration
+0x1ef690f28  __AUTH,__objc_data  _OBJC_METACLASS_$_AFMultiArgumentSafetyBlock
+0x1ee12ca48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFMultiUserConnection
+0x1ef694ba0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFMultiUserDataSyncUtils
+0x1ef694b78  __AUTH,__objc_data  _OBJC_METACLASS_$_AFMultiUserStateSnapshot
+0x1ef6955a0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFMutableConversationItem
+0x1ee12d628  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFNetworkAvailability
+0x1ee12ca20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFNotifyObserver
+0x1ef697120  __AUTH,__objc_data  _OBJC_METACLASS_$_AFNotifyStatePublisher
+0x1ef690f00  __AUTH,__objc_data  _OBJC_METACLASS_$_AFObjectCreatedSiriResponse
+0x1ef690ed8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFObjectUpdatedSiriResponse
+0x1ef6975f8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFOneArgumentSafetyBlock
+0x1ef690eb0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFOpportuneSpeakingModelFeedback
+0x1ef690e88  __AUTH,__objc_data  _OBJC_METACLASS_$_AFOpportuneSpeakingModelFeedbackManager
+0x1ef690e60  __AUTH,__objc_data  _OBJC_METACLASS_$_AFOpportuneSpeakingModuleDataCollection
+0x1ef690e38  __AUTH,__objc_data  _OBJC_METACLASS_$_AFOpportuneSpeakingModuleDataCollectionSanitizedSpeakable
+0x1ef6939d0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFOutputVoiceColorDescriptor
+0x1ef696900  __AUTH,__objc_data  _OBJC_METACLASS_$_AFOutputVoiceDescriptor
+0x1ef690e10  __AUTH,__objc_data  _OBJC_METACLASS_$_AFPairedBluetoothDevicesObserver
+0x1ee12cc28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFPeerContentTuple
+0x1ee12cf48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFPeerInfo
+0x1ef690de8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFPeerMap
+0x1ef690dc0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFPersonAddress
+0x1ef690d98  __AUTH,__objc_data  _OBJC_METACLASS_$_AFPersonInfo
+0x1ef690d70  __AUTH,__objc_data  _OBJC_METACLASS_$_AFPersonalUserSettings
+0x1ef690d48  __AUTH,__objc_data  _OBJC_METACLASS_$_AFPhonemeMapper
+0x1ee12d268  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFPhonemeTranscription
+0x1ef6968d8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFPineBoardSystemStateObserver
+0x1ef6939a8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFPluginBundle
+0x1ef693980  __AUTH,__objc_data  _OBJC_METACLASS_$_AFPluginManager
+0x1ef694b50  __AUTH,__objc_data  _OBJC_METACLASS_$_AFPowerAssertionManager
+0x1ef693958  __AUTH,__objc_data  _OBJC_METACLASS_$_AFPowerContextClient
+0x1ef694b28  __AUTH,__objc_data  _OBJC_METACLASS_$_AFPowerContextPolicy
+0x1ee12da10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFPreferences
+0x1ee12d858  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFPreferencesNotificationCenter
+0x1ef695578  __AUTH,__objc_data  _OBJC_METACLASS_$_AFPrescribedActionDescriptor
+0x1ef694b00  __AUTH,__objc_data  _OBJC_METACLASS_$_AFPrescribedInvocationDescriptor
+0x1ef697f80  __AUTH,__objc_data  _OBJC_METACLASS_$_AFQueue
+0x1ef690d20  __AUTH,__objc_data  _OBJC_METACLASS_$_AFRemoteRequest
+0x1ef693930  __AUTH,__objc_data  _OBJC_METACLASS_$_AFRemoteRequestWatcher
+0x1ef693908  __AUTH,__objc_data  _OBJC_METACLASS_$_AFRequestCancellationContext
+0x1ef6975d0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFRequestCompletionOptions
+0x1ef6960e0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFRequestHandlingContext
+0x1ee12cb10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFRequestInfo
+0x1ef695550  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSUPFunctionProvider
+0x1ef697aa8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSafetyBlock
+0x1ef6960b8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSamplingUtilities
+0x1ef690cf8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSearchAlarmsRequest
+0x1ef690cd0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSearchAlarmsResponse
+0x1ee12d038  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFSearchBarDictationButtonTag
+0x1ef695528  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSecurityConnection
+0x1ef694ad8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSelectionOutcomeDescriptor
+0x1ef690ca8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFServiceContextSnapshot
+0x1ef6975a8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFServiceDeviceContext
+0x1ef696090  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSessionResumptionOptions
+0x1ef696068  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSessionResumptionResult
+0x1ef697990  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSetAudioSessionActiveContext
+0x1ef697968  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSetAudioSessionActiveResult
+0x1ef690c80  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSetSettingsRequest
+0x1ef690c58  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSetSettingsResponse
+0x1ef690c30  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSetTimerRequest
+0x1ee12cf20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFSettingsConnection
+0x1ee12cdb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFSettingsConnectionServiceDelegate
+0x1ef690c08  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSharedConfidenceScore
+0x1ef690be0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSharedUserInfo
+0x1ef690bb8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFShowAlarmRequest
+0x1ef690b90  __AUTH,__objc_data  _OBJC_METACLASS_$_AFShowNextEventRequest
+0x1ef690b68  __AUTH,__objc_data  _OBJC_METACLASS_$_AFShowSettingRequest
+0x1ef690b40  __AUTH,__objc_data  _OBJC_METACLASS_$_AFShowTimerRequest
+0x1ef690b18  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriAceRequest
+0x1ef690af0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriAcousticIDRequest
+0x1ef6970f8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriActivationConnection
+0x1ef697d78  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriActivationContext
+0x1ef690ac8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriActivationDismissalInfo
+0x1ef690aa0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriActivationHandlerAssistantDaemon
+0x1ef696040  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriActivationHandlerCoreSpeechDaemon
+0x1ef696018  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriActivationHandlerFrontendProcess
+0x1ef6938e0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriActivationListener
+0x1ef690a78  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriActivationRequest
+0x1ef697580  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriActivationResult
+0x1ef690a50  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriAnnounceBinaryOutcome
+0x1ef690a28  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriAnnounceDropInCallRequest
+0x1ef690a00  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriAnnounceIncomingCallRequest
+0x1ef6909d8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriAnnounceWorkoutReminderRequest
+0x1ef6909b0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriAnnounceWorkoutVoiceFeedbackRequest
+0x1ef695500  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriAnnouncementRequestCapabilityManager
+0x1ef695ff0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriAudioRoute
+0x1ef6954d8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriAudioRouteMonitor
+0x1ee12d3f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFSiriAvailability
+0x1ef694ab0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriCapabilities
+0x1ef694a88  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriCapabilitiesServiceClient
+0x1ef6970d0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriClientStateManager
+0x1ef694a60  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriDataSharingSensitivityManager
+0x1ef6938b8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriDataSharingSensitivityUtilities
+0x1ef6954b0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriDebugUIRequest
+0x1ef695fc8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriHeadphonesMonitor
+0x1ef690988  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriHomeAutomationBackgroundRequest
+0x1ef690960  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriHomeAutomationRequestInfo
+0x1ef690938  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriIncomingCall
+0x1ef690910  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriMusicSmartPlayRequest
+0x1ef6908e8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriMusicSubscriptionLeaseTakenRequest
+0x1ef6908c0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriNotificationRequest
+0x1ef690898  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriPhoneticContactNames
+0x1ef6970a8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriRequest
+0x1ef694a38  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriRequestSucceededResponse
+0x1ef6968b0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriResponse
+0x1ef690870  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriRingtone
+0x1ef693890  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriServiceEvent
+0x1ef695488  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriTask
+0x1ef690848  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriTaskContextProvider
+0x1ef690820  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriTaskDeliveryHandler
+0x1ef693868  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriTaskExecution
+0x1ef6907f8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriTaskService
+0x1ef6907d0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriTaskUsageResult
+0x1ef693840  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriTaskmaster
+0x1ef693818  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriTether
+0x1ef6937f0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriUserNotificationRequest
+0x1ef6937c8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriUserNotificationRequestCapabilityManager
+0x1ef6937a0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriUserNotificationSummary
+0x1ef693778  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriWorkoutReminder
+0x1ef693750  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriWorkoutVoiceFeedback
+0x1ef6907a8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSiriXDirectActionDescriptor
+0x1ef695460  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSpeakableUtteranceParser
+0x1ef697080  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSpeechAcousticFeature
+0x1ee12d448  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFSpeechAudioAnalytics
+0x1ef690780  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSpeechConnectionRequestContext
+0x1ee12cbd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFSpeechCorrectionInfo
+0x1ef694a10  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSpeechInfo
+0x1ef696888  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSpeechInfoPackage
+0x1ee12c980  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFSpeechInterpretation
+0x1ef695fa0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSpeechLatticeMitigatorResult
+0x1ef693728  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSpeechMessagesContext
+0x1ee12ccf0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFSpeechPackage
+0x1ef690758  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSpeechParameters
+0x1ee12d560  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFSpeechPhrase
+0x1ee12ccc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFSpeechRecognition
+0x1ef695438  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSpeechRecognitionPersonalEntityMention
+0x1ef690730  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSpeechRecordingAlertBehavior
+0x1ef697558  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSpeechRecordingAlertPolicy
+0x1ee12cae8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFSpeechRequestOptions
+0x1ef697a80  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSpeechSynthesisRecord
+0x1ef696860  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSpeechTestRequestOptions
+0x1ee12d588  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFSpeechToken
+0x1ee12d4e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFSpeechUtterance
+0x1ef6949e8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSpeechVisualContextAndCorrectionsInfo
+0x1ef697530  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSyncInfo
+0x1ef697508  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSyncSnapshot
+0x1ef690708  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSynchronousClientLite
+0x1ee12d4c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFSystemAssistantExperienceStatusManager
+0x1ef693700  __AUTH,__objc_data  _OBJC_METACLASS_$_AFSystemStateSnapshot
+0x1ef6974e0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFTestRequestOptions
+0x1ef6936d8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFThreeArgumentSafetyBlock
+0x1ef6949c0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFTipKitDonator
+0x1ef695410  __AUTH,__objc_data  _OBJC_METACLASS_$_AFTreeNode
+0x1ef6936b0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFTreeNodePropertyListSerialization
+0x1ef6906e0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFTriggerlessListeningOptions
+0x1ef695f78  __AUTH,__objc_data  _OBJC_METACLASS_$_AFTwoArgumentSafetyBlock
+0x1ef693688  __AUTH,__objc_data  _OBJC_METACLASS_$_AFUIApplicationSiriTaskDeliverer
+0x1ef693660  __AUTH,__objc_data  _OBJC_METACLASS_$_AFUIBridgeClient
+0x1ef693638  __AUTH,__objc_data  _OBJC_METACLASS_$_AFUIBridgeServiceProxy
+0x1ef6906b8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFUpdateAlarmRequest
+0x1ef690690  __AUTH,__objc_data  _OBJC_METACLASS_$_AFUpdateAlarmResponse
+0x1ef690668  __AUTH,__objc_data  _OBJC_METACLASS_$_AFUpdateMessageRequest
+0x1ef693610  __AUTH,__objc_data  _OBJC_METACLASS_$_AFUserNotificationAnnouncementSpeakingStateObserver
+0x1ef690640  __AUTH,__objc_data  _OBJC_METACLASS_$_AFUserNotificationProvider
+0x1ef695f50  __AUTH,__objc_data  _OBJC_METACLASS_$_AFUserUtterance
+0x1ef694998  __AUTH,__objc_data  _OBJC_METACLASS_$_AFUserUtteranceSelectionResults
+0x1ef6935e8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFUtilitiesWrapper
+0x1ef690618  __AUTH,__objc_data  _OBJC_METACLASS_$_AFUtteranceSuggestions
+0x1ef6905f0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFVoiceCommandDebugInfo
+0x1ef6905c8  __AUTH,__objc_data  _OBJC_METACLASS_$_AFVoiceCommandGrammarParamMatch
+0x1ef6905a0  __AUTH,__objc_data  _OBJC_METACLASS_$_AFVoiceCommandGrammarParseCandidate
+0x1ef690578  __AUTH,__objc_data  _OBJC_METACLASS_$_AFVoiceCommandGrammarParsePackage
+0x1ef690550  __AUTH,__objc_data  _OBJC_METACLASS_$_AFVoiceCommandGrammarParseResult
+0x1ef694970  __AUTH,__objc_data  _OBJC_METACLASS_$_AFVoiceIdScoreCard
+0x1ee12d358  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFVoiceInfo
+0x1ee12c958  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFWatchdogTimer
+0x1ef68fc68  __AUTH,__objc_data  _OBJC_METACLASS_$_AFWindowDescriptor
+0x1ee12c9f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AFXPCWrapper
+0x1ef696838  __AUTH,__objc_data  _OBJC_METACLASS_$_SISchemaClientAnyEvent
+0x1ef696810  __AUTH,__objc_data  _OBJC_METACLASS_$_SISchemaClientTurnBasedEvent
+0x1ef697a58  __AUTH,__objc_data  _OBJC_METACLASS_$_SISchemaClientTurnContext
+0x1ef690528  __AUTH,__objc_data  _OBJC_METACLASS_$_STAlarm
+0x1ef690500  __AUTH,__objc_data  _OBJC_METACLASS_$_STCall
+0x1ef6904d8  __AUTH,__objc_data  _OBJC_METACLASS_$_STCity
+0x1ef6904b0  __AUTH,__objc_data  _OBJC_METACLASS_$_STContactAddress
+0x1ee12d240  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_STPerson
+0x1ef690488  __AUTH,__objc_data  _OBJC_METACLASS_$_STPersonContactHandle
+0x1ef690460  __AUTH,__objc_data  _OBJC_METACLASS_$_STSetting
+0x1ef690438  __AUTH,__objc_data  _OBJC_METACLASS_$_STSettingChange
+0x1ef6935c0  __AUTH,__objc_data  _OBJC_METACLASS_$_STSiriContext
+0x1ee12d218  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_STSiriLocation
+0x1ef690410  __AUTH,__objc_data  _OBJC_METACLASS_$_STSiriMessage
+0x1ee12d1f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_STSiriModelObject
+0x1ef6903e8  __AUTH,__objc_data  _OBJC_METACLASS_$_STTimer
+0x1ef6903c0  __AUTH,__objc_data  _OBJC_METACLASS_$__AFASRSharedUserInfoMutation
+0x1ef6967e8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFAccessibilityStateMutation
+0x1ef690398  __AUTH,__objc_data  _OBJC_METACLASS_$__AFAnnounceBinaryOutcomeRequestMutation
+0x1ef690370  __AUTH,__objc_data  _OBJC_METACLASS_$__AFAnnounceBinaryOutcomeUseCaseV2GenericUnlocalizedMutation
+0x1ef690348  __AUTH,__objc_data  _OBJC_METACLASS_$__AFAnnounceBinaryOutcomeUseCaseV2HearNotificationsMutation
+0x1ef690320  __AUTH,__objc_data  _OBJC_METACLASS_$__AFAnnounceBinaryOutcomeUseCaseV2TestMutation
+0x1ef6902f8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFAnnounceBinaryOutcomeUseCaseV2UpdateSmartRoutingMutation
+0x1ef694948  __AUTH,__objc_data  _OBJC_METACLASS_$__AFAnnouncementContextMutation
+0x1ef693598  __AUTH,__objc_data  _OBJC_METACLASS_$__AFApplicationContextMutation
+0x1ef693570  __AUTH,__objc_data  _OBJC_METACLASS_$__AFApplicationContextSnapshotMutation
+0x1ef694920  __AUTH,__objc_data  _OBJC_METACLASS_$__AFAssertionContextMutation
+0x1ef695f28  __AUTH,__objc_data  _OBJC_METACLASS_$__AFAssertionImpl
+0x1ef695f00  __AUTH,__objc_data  _OBJC_METACLASS_$__AFAssertionProxy
+0x1ef6902d0  __AUTH,__objc_data  _OBJC_METACLASS_$__AFAudioDeviceInfoMutation
+0x1ef6953e8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFAudioPlaybackRequestMutation
+0x1ef695ed8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFAudioPowerXPCSharedMemory
+0x1ef6902a8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFAudioSessionCoordinationDeviceInfoMutation
+0x1ef690280  __AUTH,__objc_data  _OBJC_METACLASS_$__AFAudioSessionCoordinationSnapshotMutation
+0x1ef6967c0  __AUTH,__objc_data  _OBJC_METACLASS_$__AFAudioSessionCoordinationSystemInfoMutation
+0x1ef690258  __AUTH,__objc_data  _OBJC_METACLASS_$__AFAudioSessionEventMutation
+0x1ef690230  __AUTH,__objc_data  _OBJC_METACLASS_$__AFBluetoothDeviceBooleanSettingResponseMutation
+0x1ef6948f8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFBluetoothDeviceInfoMutation
+0x1ef693548  __AUTH,__objc_data  _OBJC_METACLASS_$__AFBluetoothHeadGestureConfigurationMutation
+0x1ef695eb0  __AUTH,__objc_data  _OBJC_METACLASS_$__AFBluetoothHeadphoneInEarDetectionStateMutation
+0x1ef695e88  __AUTH,__objc_data  _OBJC_METACLASS_$__AFBluetoothWirelessSplitterSessionInfoMutation
+0x1ef6953c0  __AUTH,__objc_data  _OBJC_METACLASS_$__AFBundleResourceMutation
+0x1ee12d678  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__AFCallSiteInfoMutation
+0x1ef6948d0  __AUTH,__objc_data  _OBJC_METACLASS_$__AFCallStateSnapshotMutation
+0x1ef695e60  __AUTH,__objc_data  _OBJC_METACLASS_$__AFClientConfigurationMutation
+0x1ef690208  __AUTH,__objc_data  _OBJC_METACLASS_$__AFClientInfoMutation
+0x1ef6948a8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFClockAlarmMutation
+0x1ef697058  __AUTH,__objc_data  _OBJC_METACLASS_$__AFClockAlarmSnapshotMutation
+0x1ef6974b8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFClockTimerMutation
+0x1ef697490  __AUTH,__objc_data  _OBJC_METACLASS_$__AFClockTimerSnapshotMutation
+0x1ef694880  __AUTH,__objc_data  _OBJC_METACLASS_$__AFCommandExecutionInfoMutation
+0x1ef6901e0  __AUTH,__objc_data  _OBJC_METACLASS_$__AFCommunalDeviceUserMutation
+0x1ef6901b8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFCompanionDeviceInfoMutation
+0x1ef694858  __AUTH,__objc_data  _OBJC_METACLASS_$__AFCoreAnalyticsDeviceContextPayloadMutation
+0x1ef690190  __AUTH,__objc_data  _OBJC_METACLASS_$__AFDataStoreEntry
+0x1ef690168  __AUTH,__objc_data  _OBJC_METACLASS_$__AFDeleteSiriHistoryContextMutation
+0x1ef693520  __AUTH,__objc_data  _OBJC_METACLASS_$__AFDeviceContextHistoryConfigurationMutation
+0x1ef690140  __AUTH,__objc_data  _OBJC_METACLASS_$__AFDeviceContextServiceDelegateProxy
+0x1ef690118  __AUTH,__objc_data  _OBJC_METACLASS_$__AFDeviceRequestHandlingRecordMutation
+0x1ef6934f8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFEnablementConfigurationProviderParametersMutation
+0x1ef6900f0  __AUTH,__objc_data  _OBJC_METACLASS_$__AFEndpointInfoMutation
+0x1ef696798  __AUTH,__objc_data  _OBJC_METACLASS_$__AFExperimentConfigurationMutation
+0x1ef6934d0  __AUTH,__objc_data  _OBJC_METACLASS_$__AFExperimentContextMutation
+0x1ef696770  __AUTH,__objc_data  _OBJC_METACLASS_$__AFExperimentGroupMutation
+0x1ef6934a8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFExperimentMutation
+0x1ef6900c8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFExperimentServerConfigurationInfoMutation
+0x1ef6900a0  __AUTH,__objc_data  _OBJC_METACLASS_$__AFExperimentStateMutation
+0x1ef690078  __AUTH,__objc_data  _OBJC_METACLASS_$__AFHeadGestureResponseMutation
+0x1ef693480  __AUTH,__objc_data  _OBJC_METACLASS_$__AFHomeAccessoryInfoMutation
+0x1ef693458  __AUTH,__objc_data  _OBJC_METACLASS_$__AFHomeAccessorySiriDataSharingChangeLogEventMutation
+0x1ef690050  __AUTH,__objc_data  _OBJC_METACLASS_$__AFHomeAccessorySiriDataSharingPropagationLogEventMutation
+0x1ef690028  __AUTH,__objc_data  _OBJC_METACLASS_$__AFHomeAnnouncementMutation
+0x1ef696748  __AUTH,__objc_data  _OBJC_METACLASS_$__AFHomeAnnouncementSnapshotMutation
+0x1ef690000  __AUTH,__objc_data  _OBJC_METACLASS_$__AFHomeInfoMutation
+0x1ef68ffd8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFHomeMemberSettingsMutation
+0x1ef68ffb0  __AUTH,__objc_data  _OBJC_METACLASS_$__AFHomeMembersInfoMutation
+0x1ee12d8d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__AFInstanceInfoMutation
+0x1ef695398  __AUTH,__objc_data  _OBJC_METACLASS_$__AFInterstitialAction
+0x1ef695370  __AUTH,__objc_data  _OBJC_METACLASS_$__AFInterstitialConfigurationMutation
+0x1ef693430  __AUTH,__objc_data  _OBJC_METACLASS_$__AFLocationSnapshotMutation
+0x1ef693408  __AUTH,__objc_data  _OBJC_METACLASS_$__AFMediaPlaybackStateSnapshotMutation
+0x1ef6933e0  __AUTH,__objc_data  _OBJC_METACLASS_$__AFMemoryInfoMutation
+0x1ef695e38  __AUTH,__objc_data  _OBJC_METACLASS_$__AFModesConfigurationMutation
+0x1ef68ff88  __AUTH,__objc_data  _OBJC_METACLASS_$__AFMultiUserStateSnapshotMutation
+0x1ef68ff60  __AUTH,__objc_data  _OBJC_METACLASS_$__AFOutputVoiceColorDescriptorMutation
+0x1ef695e10  __AUTH,__objc_data  _OBJC_METACLASS_$__AFOutputVoiceDescriptorMutation
+0x1ef697468  __AUTH,__objc_data  _OBJC_METACLASS_$__AFPeerInfoMutation
+0x1ef68ff38  __AUTH,__objc_data  _OBJC_METACLASS_$__AFPersonAddressMutation
+0x1ef68ff10  __AUTH,__objc_data  _OBJC_METACLASS_$__AFPersonInfoMutation
+0x1ef694830  __AUTH,__objc_data  _OBJC_METACLASS_$__AFRequestHandlingContextMutation
+0x1ef694808  __AUTH,__objc_data  _OBJC_METACLASS_$__AFServiceDeviceContextMutation
+0x1ef68fee8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSessionResumptionOptionsMutation
+0x1ef68fec0  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSessionResumptionResultMutation
+0x1ef695de8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSetAudioSessionActiveContextMutation
+0x1ef697030  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSetAudioSessionActiveResultMutation
+0x1ef68fe98  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSharedConfidenceScoreMutation
+0x1ef68fe70  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSharedUserInfoMutation
+0x1ef697d50  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSiriActivationContextMutation
+0x1ef696720  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSiriActivationResultMutation
+0x1ef6966f8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSiriClientState
+0x1ef68fe48  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSiriHomeAutomationRequestInfoMutation
+0x1ef695348  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSpeakableUtterancePassThroughProvider
+0x1ef68fe20  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSpeechConnectionRequestContextMutation
+0x1ef6933b8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSpeechInfoMutation
+0x1ef68fdf8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSpeechParametersMutation
+0x1ef68fdd0  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSpeechRecordingAlertBehaviorMutation
+0x1ef68fda8  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSpeechRecordingAlertPolicyMutation
+0x1ef6966d0  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSpeechSynthesisRecordMutation
+0x1ef68fd80  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSpeechTestRequestOptionsMutation
+0x1ef68fd58  __AUTH,__objc_data  _OBJC_METACLASS_$__AFSystemStateSnapshotMutation
+0x1ef68fd30  __AUTH,__objc_data  _OBJC_METACLASS_$__AFTestRequestOptionsMutation
+0x1ef68fd08  __AUTH,__objc_data  _OBJC_METACLASS_$__AFVoiceIdScoreCardMutation
+0x198e31df0  __TEXT,__text  _SAMPPlayStateFromMRPlaybackState
+0x198e4c150  __TEXT,__text  _SISchemaClientAnyEventReadFrom
+0x198e0b628  __TEXT,__text  _SISchemaClientTurnBasedEventReadFrom
+0x198e2a910  __TEXT,__text  _SISchemaClientTurnContextReadFrom
+0x198cd49e8  __TEXT,__text  __AFBackedUpPreferencesBoolForKeyWithDefault
+0x198cd4b88  __TEXT,__text  __AFBackedUpPreferencesBoolValueForKey
+0x198d7b41c  __TEXT,__text  __AFBackedUpPreferencesKeyList
+0x198d7b2e8  __TEXT,__text  __AFBackedUpPreferencesSetValueForKey
+0x198d7b308  __TEXT,__text  __AFBackedUpPreferencesSetValueForKeyWithContext
+0x198d7b2f8  __TEXT,__text  __AFBackedUpPreferencesValueForKey
+0x198d7b728  __TEXT,__text  __AFBackedUpPreferencesValueForKeyMigratingToShared
+0x198d7b318  __TEXT,__text  __AFBackedUpPreferencesValueForKeyWithContext
+0x1e0c69bf8  __DATA_CONST,__const  __AFContextManagerCollateContextsReplyKeyContexts
+0x1e0c69bf0  __DATA_CONST,__const  __AFContextManagerServerMessageCollateContexts
+0x1e0c69be8  __DATA_CONST,__const  __AFContextManagerServerNameFormat
+0x198dbd49c  __TEXT,__text  __AFDictationLanguageForKeyboardLanguageAndConfiguration
+0x198d0d748  __TEXT,__text  __AFGetNowPlayingApplicationIdentifier
+0x198d0ded8  __TEXT,__text  __AFGetNowPlayingInfoDictionary
+0x198d06f40  __TEXT,__text  __AFGetPlaybackState
+0x198dad990  __TEXT,__text  __AFMemoryPressureConditionGetName
+0x198d8e274  __TEXT,__text  __AFNanoPreferencesSetValueForKey
+0x198d8e1a4  __TEXT,__text  __AFNanoPreferencesValueForKey
+0x198d7e384  __TEXT,__text  __AFPreferencesAcousticIDAutoEndpoint
+0x198d7f538  __TEXT,__text  __AFPreferencesAdvanceSiriDataSharingOptInStatusVersionWithContext
+0x198d7de14  __TEXT,__text  __AFPreferencesAllowHeadGestureInjection
+0x198d7dd5c  __TEXT,__text  __AFPreferencesAlwaysInAmbient
+0x198d80c98  __TEXT,__text  __AFPreferencesAnnounceCallsBargeInTime
+0x198d80be0  __TEXT,__text  __AFPreferencesAnnounceCallsVoiceOffMaxRatio
+0x198d80b28  __TEXT,__text  __AFPreferencesAnnounceCallsVoiceOnMinRatio
+0x198d2d9a0  __TEXT,__text  __AFPreferencesAnnounceNotificationsInCarPlayTemporarilyDisabled
+0x198d81f28  __TEXT,__text  __AFPreferencesAnnounceNotificationsInCarPlayType
+0x198cc1558  __TEXT,__text  __AFPreferencesAnnounceNotificationsOnBuiltInSpeakerEnabled
+0x198cc02f4  __TEXT,__text  __AFPreferencesAnnounceNotificationsOnHearingAidsEnabled
+0x198d81ab4  __TEXT,__text  __AFPreferencesAnnounceNotificationsOnHearingAidsSupported
+0x198d813b8  __TEXT,__text  __AFPreferencesAnnounceNotificationsTemporarilyDisabledEndDateForAppOnPlatform
+0x198d8101c  __TEXT,__text  __AFPreferencesAnnounceNotificationsTemporarilyDisabledEndDateForPlatform
+0x198d80a70  __TEXT,__text  __AFPreferencesAnnounceNotificationsVoiceOffMaxRatio
+0x198d809b8  __TEXT,__text  __AFPreferencesAnnounceNotificationsVoiceOnMinRatio
+0x198d81d3c  __TEXT,__text  __AFPreferencesAnnounceOnHeadphonesCachedEligibility
+0x198d807d8  __TEXT,__text  __AFPreferencesAnnouncementPlatformOverride
+0x198cf3a18  __TEXT,__text  __AFPreferencesAuthenticationDisabled
+0x198d7e0cc  __TEXT,__text  __AFPreferencesBLECompanionConnectionsEnabled
+0x198cbe1b0  __TEXT,__text  __AFPreferencesBoolFromValueWithDefault
+0x198cce388  __TEXT,__text  __AFPreferencesBoolValueForKeyWithContext
+0x198d7ba10  __TEXT,__text  __AFPreferencesBuiltInVisionLanguages
+0x198cbd93c  __TEXT,__text  __AFPreferencesBuiltIniOSLanguages
+0x198d81e6c  __TEXT,__text  __AFPreferencesClearAnnounceNotificationsInCarPlayTemporarilyDisabled
+0x198d82074  __TEXT,__text  __AFPreferencesClearAnnounceNotificationsInCarPlayType
+0x198d82788  __TEXT,__text  __AFPreferencesClearMessageWithoutConfirmationEnabled
+0x198d82b74  __TEXT,__text  __AFPreferencesClearMessageWithoutConfirmationHeadphonesEnabled
+0x198d82998  __TEXT,__text  __AFPreferencesClearMessageWithoutConfirmationInCarPlayEnabled
+0x198d80794  __TEXT,__text  __AFPreferencesClearOpportuneSpeakingEdgeDetectorSignalOverride
+0x198d7ef68  __TEXT,__text  __AFPreferencesClearShouldCensorSpeechInternal
+0x198d82cf4  __TEXT,__text  __AFPreferencesClearShowAppsBehindSiriInCarPlayEnabled
+0x198d82f10  __TEXT,__text  __AFPreferencesClearSiriInCallEnabled
+0x198d81304  __TEXT,__text  __AFPreferencesClearSpokenNotificationTemporarilyDisabledStatus
+0x198d7d0fc  __TEXT,__text  __AFPreferencesCloudSyncEnabled
+0x198d7d160  __TEXT,__text  __AFPreferencesCloudSyncEnabledModificationDate
+0x198d7d088  __TEXT,__text  __AFPreferencesCloudUserID
+0x198d7e01c  __TEXT,__text  __AFPreferencesCompanionMessagingEnabled
+0x198cce764  __TEXT,__text  __AFPreferencesCountryCode
+0x198d7dec4  __TEXT,__text  __AFPreferencesDeviceUnlockSignalEnabled
+0x198d04dd8  __TEXT,__text  __AFPreferencesDictationLanguageDetectorEnabled
+0x198d80e08  __TEXT,__text  __AFPreferencesDictationLanguageDetectorEnabledByServer
+0x198d13ea4  __TEXT,__text  __AFPreferencesDictationOnDeviceSamplingDisabled
+0x198d7d29c  __TEXT,__text  __AFPreferencesDisableTuscany
+0x198d7b328  __TEXT,__text  __AFPreferencesDoubleForKeyWithDefault
+0x198d7e128  __TEXT,__text  __AFPreferencesEnableBLECompanionConnections
+0x198d7d10c  __TEXT,__text  __AFPreferencesEnableCloudSync
+0x198d7d33c  __TEXT,__text  __AFPreferencesEnableServerDebugFlags
+0x198d7da0c  __TEXT,__text  __AFPreferencesEnableSiriDebugUI
+0x198d7daa8  __TEXT,__text  __AFPreferencesEnableSpeakerGradingDebugUI
+0x198d7e17c  __TEXT,__text  __AFPreferencesEnabledDragAndDrop
+0x198d7e22c  __TEXT,__text  __AFPreferencesEnabledNonFullScreen
+0x198d7d818  __TEXT,__text  __AFPreferencesExternalActivationTimeout
+0x198d7dbec  __TEXT,__text  __AFPreferencesFeedbackBannerForAcceptsEnabled
+0x198d7dca4  __TEXT,__text  __AFPreferencesFeedbackBannerForNearMissesEnabled
+0x198d7f494  __TEXT,__text  __AFPreferencesForceOnDeviceHomePodAsr
+0x198d7f390  __TEXT,__text  __AFPreferencesForceOnDeviceOnlyDictationEnabled
+0x198d7d024  __TEXT,__text  __AFPreferencesForceRTL
+0x198ce33e0  __TEXT,__text  __AFPreferencesForceSpeexAudioRecording
+0x198ce3394  __TEXT,__text  __AFPreferencesForceUncompressedAudioRecording
+0x198d0d970  __TEXT,__text  __AFPreferencesGetClientCommandDeliveryDelay
+0x198d7d2f0  __TEXT,__text  __AFPreferencesGetEnableServerDebugFlags
+0x198d18804  __TEXT,__text  __AFPreferencesGetForcedInterstitialStyle
+0x198cfa8f8  __TEXT,__text  __AFPreferencesGetInitialInterstitialDelay
+0x198d7eb54  __TEXT,__text  __AFPreferencesGetInitialInterstitialDelayForVoiceTriggerOneShotWithoutAudioDucking
+0x198d7eaa0  __TEXT,__text  __AFPreferencesGetInterstitialDisplayDisabledBeforeSpeechRecognition
+0x198d22338  __TEXT,__text  __AFPreferencesGetMessageWithoutConfirmationEnabled
+0x198d82a4c  __TEXT,__text  __AFPreferencesGetMessageWithoutConfirmationHeadphonesEnabled
+0x198d82870  __TEXT,__text  __AFPreferencesGetMessageWithoutConfirmationInCarPlayEnabled
+0x198d7d3e4  __TEXT,__text  __AFPreferencesGetNonManateeIdentity
+0x198d7fc7c  __TEXT,__text  __AFPreferencesGetPhoneOptedOut2021
+0x198d2e2a8  __TEXT,__text  __AFPreferencesGetShowAppsBehindSiriInCarPlayEnabled
+0x198d82e0c  __TEXT,__text  __AFPreferencesGetSiriInCallEnabled
+0x198d82da8  __TEXT,__text  __AFPreferencesGetSiriInCallEnablementState
+0x198d7fe8c  __TEXT,__text  __AFPreferencesGetTVOptedOut2021
+0x198d2ec68  __TEXT,__text  __AFPreferencesGetTuscanyStatus
+0x198d7fd04  __TEXT,__text  __AFPreferencesGetWatchOptedOut2021
+0x198d17ce0  __TEXT,__text  __AFPreferencesHardCodedBluetoothProximityNumber
+0x198d80008  __TEXT,__text  __AFPreferencesHomePodAdjustedOptIn2021WithContext
+0x198d7fe9c  __TEXT,__text  __AFPreferencesHomePodPriorOptInValue2021IsPresentWithContext
+0x198d7d430  __TEXT,__text  __AFPreferencesInProgressOutputVoice
+0x198d15f84  __TEXT,__text  __AFPreferencesIncludeProbePacketCaptureForABC
+0x198d80998  __TEXT,__text  __AFPreferencesIsAnnouncementPlatformOverrideActive
+0x198d7fda8  __TEXT,__text  __AFPreferencesIsHomePodInHH2Mode
+0x198d7f350  __TEXT,__text  __AFPreferencesIsSiriServerLoggingEnabled
+0x198d2394c  __TEXT,__text  __AFPreferencesKeepRecorededAudioFiles
+0x198d7baa8  __TEXT,__text  __AFPreferencesLanguageCacheGenerationForTesting
+0x198cc4340  __TEXT,__text  __AFPreferencesLanguageCode
+0x198d7cf88  __TEXT,__text  __AFPreferencesLanguageCodeWithContext
+0x198d7f28c  __TEXT,__text  __AFPreferencesLastPushedCensorSpeechSetting
+0x198d7d8d0  __TEXT,__text  __AFPreferencesLimitedPersistentAudioLogging
+0x198ccd65c  __TEXT,__text  __AFPreferencesLongLivedIdentifierUploadingEnabled
+0x198d7e918  __TEXT,__text  __AFPreferencesLowerWristEducationHeaderDisplayCount
+0x198d7ebcc  __TEXT,__text  __AFPreferencesMTEOptOutOverrideEnabled
+0x198d7d564  __TEXT,__text  __AFPreferencesMirroredTCCInfo
+0x198d7c21c  __TEXT,__text  __AFPreferencesMultiSiriLanguageScenarios
+0x198d80ea4  __TEXT,__text  __AFPreferencesMultilingualDictationTimeoutInMilliSeconds
+0x198d7e808  __TEXT,__text  __AFPreferencesNetworkLoggingEnabled
+0x198d7d994  __TEXT,__text  __AFPreferencesNetworkStackOverride
+0x198d7efe8  __TEXT,__text  __AFPreferencesNotificationPreviewRestrictedApps
+0x198d806d0  __TEXT,__text  __AFPreferencesOpportuneSpeakingEdgeDetectorSignalOverride
+0x198d802bc  __TEXT,__text  __AFPreferencesOpportuneSpeakingFileLoggingIsEnabled
+0x198d8021c  __TEXT,__text  __AFPreferencesOpportuneSpeakingModelUsed
+0x198d8016c  __TEXT,__text  __AFPreferencesOpportuneSpeakingModuleEnabled
+0x198d7d694  __TEXT,__text  __AFPreferencesOpportuneSpeakingPause
+0x198d7d760  __TEXT,__text  __AFPreferencesOpportuneSpeakingTimeout
+0x198d0d058  __TEXT,__text  __AFPreferencesOutputVoice
+0x198ccda54  __TEXT,__text  __AFPreferencesOutputVoiceWithContext
+0x198d7ddb8  __TEXT,__text  __AFPreferencesOverrideModeWhileInAmbient
+0x198d7c228  __TEXT,__text  __AFPreferencesReplacementLanguageForLocalRecognizerLanguageCode
+0x198d83238  __TEXT,__text  __AFPreferencesSearchQueriesDataSharingStatusIsForced
+0x198ccdec0  __TEXT,__text  __AFPreferencesSearchQueriesDataSharingStatusWithContext
+0x198d7e524  __TEXT,__text  __AFPreferencesSessionShutdownDelayOverride
+0x198d7e3d0  __TEXT,__text  __AFPreferencesSetAcousticIDAutoEndpoint
+0x198d7de70  __TEXT,__text  __AFPreferencesSetAllowHeadGestureInjection
+0x198d7df20  __TEXT,__text  __AFPreferencesSetAlwaysInAmbient
+0x198d80d00  __TEXT,__text  __AFPreferencesSetAnnounceCallsBargeInTime
+0x198d80c48  __TEXT,__text  __AFPreferencesSetAnnounceCallsVoiceOffMaxRatio
+0x198d80b90  __TEXT,__text  __AFPreferencesSetAnnounceCallsVoiceOnMinRatio
+0x198d81d98  __TEXT,__text  __AFPreferencesSetAnnounceNotificationsInCarPlayTemporarilyDisabled
+0x198d81f98  __TEXT,__text  __AFPreferencesSetAnnounceNotificationsInCarPlayType
+0x198d818d0  __TEXT,__text  __AFPreferencesSetAnnounceNotificationsOnBuiltInSpeakerEnabled
+0x198d81b60  __TEXT,__text  __AFPreferencesSetAnnounceNotificationsOnHearingAidsEnabled
+0x198d8199c  __TEXT,__text  __AFPreferencesSetAnnounceNotificationsOnHearingAidsSupported
+0x198d81490  __TEXT,__text  __AFPreferencesSetAnnounceNotificationsTemporarilyDisabledEndDateForAppOnPlatform
+0x198d811d0  __TEXT,__text  __AFPreferencesSetAnnounceNotificationsTemporarilyDisabledEndDateForPlatform
+0x198d80ad8  __TEXT,__text  __AFPreferencesSetAnnounceNotificationsVoiceOffMaxRatio
+0x198d80a20  __TEXT,__text  __AFPreferencesSetAnnounceNotificationsVoiceOnMinRatio
+0x198d81ce8  __TEXT,__text  __AFPreferencesSetAnnounceOnHeadphonesCachedEligibility
+0x198d80914  __TEXT,__text  __AFPreferencesSetAnnouncementPlatformOverride
+0x198d7d1dc  __TEXT,__text  __AFPreferencesSetCloudSyncEnabledModificationDate
+0x198d7d0f0  __TEXT,__text  __AFPreferencesSetCloudUserID
+0x198d7e078  __TEXT,__text  __AFPreferencesSetCompanionMessagingEnabled
+0x198d7e8a8  __TEXT,__text  __AFPreferencesSetCountryCode
+0x198d7dfc8  __TEXT,__text  __AFPreferencesSetDeviceUnlockSignal
+0x198d80d50  __TEXT,__text  __AFPreferencesSetDictationLanguageDetectorEnabled
+0x198d80dac  __TEXT,__text  __AFPreferencesSetDictationLanguageDetectorEnabledByServer
+0x198d7db44  __TEXT,__text  __AFPreferencesSetEnableSiriDebugUI
+0x198d7db98  __TEXT,__text  __AFPreferencesSetEnableSpeakerGradingDebugUI
+0x198d7e1d8  __TEXT,__text  __AFPreferencesSetEnabledDragAndDrop
+0x198d7e288  __TEXT,__text  __AFPreferencesSetEnabledNonFullScreen
+0x198d7d87c  __TEXT,__text  __AFPreferencesSetExternalActivationTimeout
+0x198d7dc50  __TEXT,__text  __AFPreferencesSetFeedbackBannerForAcceptsEnabled
+0x198d7dd08  __TEXT,__text  __AFPreferencesSetFeedbackBannerForNearMissesEnabled
+0x198d7d034  __TEXT,__text  __AFPreferencesSetForceRTL
+0x198d7e2dc  __TEXT,__text  __AFPreferencesSetForceSpeexAudioRecording
+0x198d7e330  __TEXT,__text  __AFPreferencesSetForceUncompressedAudioRecording
+0x198d8318c  __TEXT,__text  __AFPreferencesSetHardCodedBluetoothProximity
+0x198d7ff78  __TEXT,__text  __AFPreferencesSetHomePodOptIn2021AdjustedWithContext
+0x198d7fee4  __TEXT,__text  __AFPreferencesSetHomePodPriorOptInValue2021WithContext
+0x198d7d4b0  __TEXT,__text  __AFPreferencesSetInProgressOutputVoice
+0x198d15550  __TEXT,__text  __AFPreferencesSetInitialInterstitialDelay
+0x198d15608  __TEXT,__text  __AFPreferencesSetInitialInterstitialDelayForVoiceTriggerOneShotWithoutAudioDucking
+0x198d7fdb8  __TEXT,__text  __AFPreferencesSetIsHomePodInHH2Mode
+0x198d7e4d4  __TEXT,__text  __AFPreferencesSetKeepRecorededAudioFiles
+0x198d7ba80  __TEXT,__text  __AFPreferencesSetLanguageCacheDidComputeHookForTesting
+0x198d7cfb8  __TEXT,__text  __AFPreferencesSetLanguageCode
+0x198d7cfa0  __TEXT,__text  __AFPreferencesSetLanguageCodeWithContext
+0x198d7f2d8  __TEXT,__text  __AFPreferencesSetLastPushedCensorSpeechSetting
+0x198d7d940  __TEXT,__text  __AFPreferencesSetLimitedPersistentAudioLogging
+0x198d8301c  __TEXT,__text  __AFPreferencesSetLongLivedIdentifierUploadingEnabled
+0x198d7e958  __TEXT,__text  __AFPreferencesSetLowerWristEducationHeaderDisplayCount
+0x198d82654  __TEXT,__text  __AFPreferencesSetMessageWithoutConfirmationEnabled
+0x198d82aa8  __TEXT,__text  __AFPreferencesSetMessageWithoutConfirmationHeadphonesEnabled
+0x198d828cc  __TEXT,__text  __AFPreferencesSetMessageWithoutConfirmationInCarPlayEnabled
+0x198d7d64c  __TEXT,__text  __AFPreferencesSetMirroredTCCInfo
+0x198d80e64  __TEXT,__text  __AFPreferencesSetMultilingualDictationTimeoutInMilliSeconds
+0x198d7e854  __TEXT,__text  __AFPreferencesSetNetworkLoggingEnabled
+0x198d7d390  __TEXT,__text  __AFPreferencesSetNonManateeIdentity
+0x198d7efd0  __TEXT,__text  __AFPreferencesSetNotificationPreviewRestrictedApps
+0x198d8072c  __TEXT,__text  __AFPreferencesSetOpportuneSpeakingEdgeDetectorSignalOverride
+0x198d80318  __TEXT,__text  __AFPreferencesSetOpportuneSpeakingFileLoggingIsEnabled
+0x198d80268  __TEXT,__text  __AFPreferencesSetOpportuneSpeakingModelUsed
+0x198d801c8  __TEXT,__text  __AFPreferencesSetOpportuneSpeakingModuleEnabled
+0x198d7d70c  __TEXT,__text  __AFPreferencesSetOpportuneSpeakingPause
+0x198d7d7c4  __TEXT,__text  __AFPreferencesSetOpportuneSpeakingTimeout
+0x198d7d55c  __TEXT,__text  __AFPreferencesSetOutputVoice
+0x198d7d4f8  __TEXT,__text  __AFPreferencesSetOutputVoiceWithContext
+0x198d7df74  __TEXT,__text  __AFPreferencesSetOverrideModeWhileInAmbient
+0x198d7fc04  __TEXT,__text  __AFPreferencesSetPhoneOptedOut2021
+0x198d831a4  __TEXT,__text  __AFPreferencesSetSearchQueriesDataSharingStatusWithContext
+0x198d7e53c  __TEXT,__text  __AFPreferencesSetSessionShutdownDelayOverride
+0x198d7ef04  __TEXT,__text  __AFPreferencesSetShouldCensorSpeechInternal
+0x198d80f08  __TEXT,__text  __AFPreferencesSetShouldSyncFirstPartyAppIntentPolicy
+0x198d7cfd0  __TEXT,__text  __AFPreferencesSetShowAllDialogVariantsEnabled
+0x198d82c28  __TEXT,__text  __AFPreferencesSetShowAppsBehindSiriInCarPlayEnabled
+0x198cde57c  __TEXT,__text  __AFPreferencesSetSiriAvailability
+0x198d7fb98  __TEXT,__text  __AFPreferencesSetSiriDataSharingHomeAccessoryMigrated
+0x198d7fd30  __TEXT,__text  __AFPreferencesSetSiriDataSharingHomePodSetupDeviceIsValidWithContext
+0x198d80024  __TEXT,__text  __AFPreferencesSetSiriDataSharingOptInAlertPresented
+0x198d7fb1c  __TEXT,__text  __AFPreferencesSetSiriDataSharingOptInStatus
+0x198d7f748  __TEXT,__text  __AFPreferencesSetSiriDataSharingOptInStatusWithContext
+0x198d800bc  __TEXT,__text  __AFPreferencesSetSiriDesignModeEnabled
+0x198d82e44  __TEXT,__text  __AFPreferencesSetSiriInCallEnabled
+0x198d824ec  __TEXT,__text  __AFPreferencesSetSiriPersonalContentSetting
+0x198d82228  __TEXT,__text  __AFPreferencesSetSiriRMVSetting
+0x198d7b9a0  __TEXT,__text  __AFPreferencesSetSiriResponseShouldAlwaysPrintOverride
+0x198d81770  __TEXT,__text  __AFPreferencesSetSpokenNotificationIsAlwaysOpportune
+0x198d80458  __TEXT,__text  __AFPreferencesSetSpokenNotificationPlayAlertBeforeTriggerlessListening
+0x198d805c8  __TEXT,__text  __AFPreferencesSetSpokenNotificationQuickIgnoreTime
+0x198d81820  __TEXT,__text  __AFPreferencesSetSpokenNotificationShouldAnnounceAllNotifications
+0x198d81c2c  __TEXT,__text  __AFPreferencesSetSpokenNotificationShouldSkipTriggerlessReplies
+0x198d803b8  __TEXT,__text  __AFPreferencesSetSpokenNotificationShowUIDuringTriggerlessListening
+0x198d81694  __TEXT,__text  __AFPreferencesSetSpokenNotificationSkipTriggerlessReplyConfirmation
+0x198d80680  __TEXT,__text  __AFPreferencesSetSpokenNotificationTriggerlessReplyTresholdTime
+0x198d80510  __TEXT,__text  __AFPreferencesSetSpokenNotificationTriggerlessReplyWindow
+0x198d815dc  __TEXT,__text  __AFPreferencesSetSpokenNotificationsProxCardSeen
+0x198d7d248  __TEXT,__text  __AFPreferencesSetTFO
+0x198d7fe14  __TEXT,__text  __AFPreferencesSetTVOptedOut2021
+0x198d7b230  __TEXT,__text  __AFPreferencesSetValueForKey
+0x198cdc414  __TEXT,__text  __AFPreferencesSetValueForKeyWithContext
+0x198d7e480  __TEXT,__text  __AFPreferencesSetVibrateWithAlert
+0x198d7e7b4  __TEXT,__text  __AFPreferencesSetVibrationCount
+0x198d7e718  __TEXT,__text  __AFPreferencesSetVibrationDuration
+0x198d7e674  __TEXT,__text  __AFPreferencesSetVibrationGap
+0x198d7e5d0  __TEXT,__text  __AFPreferencesSetVibrationIntensity
+0x198d7fc8c  __TEXT,__text  __AFPreferencesSetWatchOptedOut2021
+0x198d80f64  __TEXT,__text  __AFPreferencesSetiRATManagerRecommendationEnabled
+0x198d7ef58  __TEXT,__text  __AFPreferencesShouldCensorSpeechInternal
+0x198d8009c  __TEXT,__text  __AFPreferencesShouldSuppressSiriDataSharingOptInAlert
+0x198d80ebc  __TEXT,__text  __AFPreferencesShouldSyncFirstPartyAppIntentPolicy
+0x198ce3338  __TEXT,__text  __AFPreferencesShouldUseTFO
+0x198d82fc4  __TEXT,__text  __AFPreferencesShouldWriteSODABiomeStreamsToSysdiagnose
+0x198d14518  __TEXT,__text  __AFPreferencesShowAllDialogVariantsEnabled
+0x198d83250  __TEXT,__text  __AFPreferencesSiriAvailability
+0x198d7fbf4  __TEXT,__text  __AFPreferencesSiriDataSharingHomeAccessoryMigrated
+0x198d7fd14  __TEXT,__text  __AFPreferencesSiriDataSharingHomePodSetupDeviceIsValidWithContext
+0x198d7fb24  __TEXT,__text  __AFPreferencesSiriDataSharingLegacyOptInStatusWithContext
+0x198cf5c68  __TEXT,__text  __AFPreferencesSiriDataSharingOptInStatus
+0x198d7f704  __TEXT,__text  __AFPreferencesSiriDataSharingOptInStatusKey
+0x198d7f4b0  __TEXT,__text  __AFPreferencesSiriDataSharingOptInStatusVersionWithContext
+0x198cc000c  __TEXT,__text  __AFPreferencesSiriDataSharingOptInStatusWithContext
+0x198d800ac  __TEXT,__text  __AFPreferencesSiriDesignModeIsEnabled
+0x198d823ec  __TEXT,__text  __AFPreferencesSiriPersonalContentSetting
+0x198ce20d0  __TEXT,__text  __AFPreferencesSiriPersonalizedASRDisabled
+0x198d82128  __TEXT,__text  __AFPreferencesSiriRMVSetting
+0x198cdcc40  __TEXT,__text  __AFPreferencesSiriXAssetsDidChange
+0x198d7f438  __TEXT,__text  __AFPreferencesSiriXNLAssetOverride
+0x198d7f478  __TEXT,__text  __AFPreferencesSiriXNLRouterAssetOverride
+0x198d817c4  __TEXT,__text  __AFPreferencesSpokenNotificationIsAlwaysOpportune
+0x198d8040c  __TEXT,__text  __AFPreferencesSpokenNotificationPlayAlertBeforeTriggerlessListening
+0x198d80560  __TEXT,__text  __AFPreferencesSpokenNotificationQuickIgnoreTime
+0x198d81874  __TEXT,__text  __AFPreferencesSpokenNotificationShouldAnnounceAllNotifications
+0x198d81c8c  __TEXT,__text  __AFPreferencesSpokenNotificationShouldSkipTriggerlessReplies
+0x198d8036c  __TEXT,__text  __AFPreferencesSpokenNotificationShowUIDuringTriggerlessListening
+0x198d81760  __TEXT,__text  __AFPreferencesSpokenNotificationSkipTriggerlessReplyConfirmation
+0x198d80618  __TEXT,__text  __AFPreferencesSpokenNotificationTriggerlessReplyTresholdTime
+0x198d804ac  __TEXT,__text  __AFPreferencesSpokenNotificationTriggerlessReplyWindow
+0x198d815cc  __TEXT,__text  __AFPreferencesSpokenNotificationsProxCardSeen
+0x198cf5cb8  __TEXT,__text  __AFPreferencesSyncFromWatchEnabled
+0x198d81b10  __TEXT,__text  __AFPreferencesUpdateAnnounceNotificationsOnHearingAidsSupported
+0x198ce1efc  __TEXT,__text  __AFPreferencesValueForKey
+0x198cbbe20  __TEXT,__text  __AFPreferencesValueForKeyWithContext
+0x198d308b8  __TEXT,__text  __AFPreferencesValueForLongLivedIdentifierUploadingKey
+0x198d7b240  __TEXT,__text  __AFPreferencesValueIsForcedWithContext
+0x198d7e424  __TEXT,__text  __AFPreferencesVibrateWithAlert
+0x198d7e768  __TEXT,__text  __AFPreferencesVibrationCount
+0x198d7e6c4  __TEXT,__text  __AFPreferencesVibrationDuration
+0x198d7e620  __TEXT,__text  __AFPreferencesVibrationGap
+0x198d7e57c  __TEXT,__text  __AFPreferencesVibrationIntensity
+0x198d80fc0  __TEXT,__text  __AFPreferencesiRATManagerRecommendationEnabled
+0x198dbdd4c  __TEXT,__text  __AFRedactedCopyPerson
+0x198dbde9c  __TEXT,__text  __AFRedactedFamilyNamesCopyPerson
+0x1e0c69be0  __DATA_CONST,__const  __AFSUPFunctionNameRelationName
+0x1e0c69bd8  __DATA_CONST,__const  __AFSUPFunctionNameUserContactInternalGUID
+0x1e0c69bd0  __DATA_CONST,__const  __AFSUPFunctionNameUserFirstName
+0x1e0c69bc8  __DATA_CONST,__const  __AFSUPFunctionNameUserFullName
+0x1e0c69bc0  __DATA_CONST,__const  __AFSUPFunctionNameUserLastName
+0x1e0c69bb8  __DATA_CONST,__const  __AFSUPFunctionNameUserMiddleName
+0x1e0c69bb0  __DATA_CONST,__const  __AFSUPFunctionNameUserNickName
+0x1e0c69ba8  __DATA_CONST,__const  __AFSUPRedactedMeCardInternalGUID
+0x1e0c69ba0  __DATA_CONST,__const  __AFSUPRedactedRelationName
+0x1e0c69b98  __DATA_CONST,__const  __AFSUPRedactedUserFirstName
+0x1e0c69b90  __DATA_CONST,__const  __AFSUPRedactedUserFullName
+0x1e0c69b88  __DATA_CONST,__const  __AFSUPRedactedUserLastName
+0x1e0c69b80  __DATA_CONST,__const  __AFSUPRedactedUserMiddleName
+0x1e0c69b78  __DATA_CONST,__const  __AFSUPRedactedUserNickName
+0x198dacaac  __TEXT,__text  __AFServiceLog
+0x198d7b4e0  __TEXT,__text  __AFSharedBackedUpPreferencesSetValueForKey
+0x198d7b718  __TEXT,__text  __AFSharedBackedUpPreferencesValueForKey
+0x198d7f1d8  __TEXT,__text  __AFSiriAppSettingsRestrictedBundleIdsForAction
+0x198d7f0e4  __TEXT,__text  __AFSiriAppSettingsRestrictedBundleIdsForInfo
+0x198d7f198  __TEXT,__text  __AFSiriAppSettingsSetRestrictedBundleIdsForAction
+0x198d7f0a4  __TEXT,__text  __AFSiriAppSettingsSetRestrictedBundleIdsForInfo
+0x198d7b928  __TEXT,__text  __AFSiriAppSettingsSetValueForKey
+0x198d7b938  __TEXT,__text  __AFSiriAppSettingsValueForKey
+0x1e0c69b70  __DATA_CONST,__const  __AFSpeakableUtteranceParserObjDomain
+0x198cbc154  __TEXT,__text  __AFSupportPreferencesBoolForKeyWithDefault
+0x198cbc1a8  __TEXT,__text  __AFSupportPreferencesBoolValueForKey
+0x198d7b908  __TEXT,__text  __AFSupportPreferencesSetValueForKey
+0x198d7b918  __TEXT,__text  __AFSupportPreferencesValueForKey
+0x198dbf630  __TEXT,__text  __AFXPCListenerCreateForMachServiceName
+0x198e43180  __TEXT,__text  __ExternalRequestConnection
+0x198e43188  __TEXT,__text  __ExternalRequestConnectionWithContext
+0x1e0c65170  __DATA_CONST,__const  _afLanguageDetectionUserContextKeys
+0x198dc0c78  __TEXT,__text  _checkGMAvailabilityWithUseCaseIdentifiers
+0x198d5de80  __TEXT,__text  _isAddViewsPersistent
+0x1e0c65168  __DATA_CONST,__const  _kAFAccountInfoAceHostKey
+0x1e0c65160  __DATA_CONST,__const  _kAFAccountInfoAssistantIdentifierKey
+0x1e0c65158  __DATA_CONST,__const  _kAFAccountInfoConnectionPolicyDateKey
+0x1e0c65150  __DATA_CONST,__const  _kAFAccountInfoConnectionPolicyFirstFailureDateKey
+0x1e0c65148  __DATA_CONST,__const  _kAFAccountInfoConnectionPolicyHostnameKey
+0x1e0c65140  __DATA_CONST,__const  _kAFAccountInfoConnectionPolicyKey
+0x1e0c65138  __DATA_CONST,__const  _kAFAccountInfoGroupKey
+0x1e0c65130  __DATA_CONST,__const  _kAFAccountInfoHostnameKey
+0x1e0c65128  __DATA_CONST,__const  _kAFAccountInfoIdentifierKey
+0x1e0c65120  __DATA_CONST,__const  _kAFAccountInfoIsActiveKey
+0x1e0c65118  __DATA_CONST,__const  _kAFAccountInfoLabelKey
+0x1e0c65110  __DATA_CONST,__const  _kAFAccountInfoLocaleIdentifierKey
+0x1e0c65108  __DATA_CONST,__const  _kAFAccountInfoLoggingAssistantIdentifierKey
+0x1e0c65100  __DATA_CONST,__const  _kAFAccountInfoNeedsCreationKey
+0x1e0c650f8  __DATA_CONST,__const  _kAFAccountInfoNeedsDestructionKey
+0x1e0c650f0  __DATA_CONST,__const  _kAFAccountInfoPeerAssistantIdentifierKey
+0x1e0c650e8  __DATA_CONST,__const  _kAFAccountInfoPeerHostnameKey
+0x1e0c650e0  __DATA_CONST,__const  _kAFAccountInfoPeerLanguageCodeKey
+0x1e0c650d8  __DATA_CONST,__const  _kAFAccountInfoPeerLoggingAssistantIdentifierKey
+0x1e0c650d0  __DATA_CONST,__const  _kAFAccountInfoPeerSiriEnabledKey
+0x1e0c650c8  __DATA_CONST,__const  _kAFAccountInfoPeerSpeechIdentifierKey
+0x1e0c650c0  __DATA_CONST,__const  _kAFAccountInfoPeerUserAgentStringKey
+0x1e0c650b8  __DATA_CONST,__const  _kAFAccountInfoPredefinedServerKey
+0x1e0c650b0  __DATA_CONST,__const  _kAFAccountInfoSpeechIdentifierKey
+0x1e0c650a8  __DATA_CONST,__const  _kAFAdditionalSiriSessionLanguages
+0x1e0c650a0  __DATA_CONST,__const  _kAFAllowExplicitContent
+0x1e0c65098  __DATA_CONST,__const  _kAFAllowSiri3489Key
+0x1e0c65090  __DATA_CONST,__const  _kAFAnnounceNotificationsInCarPlayType
+0x1e0c65088  __DATA_CONST,__const  _kAFAnnounceNotificationsOnBuiltInSpeaker
+0x1e0c65080  __DATA_CONST,__const  _kAFAnnounceNotificationsOnHearingAids
+0x1e0c65078  __DATA_CONST,__const  _kAFAnnounceNotificationsOnHearingAidsSupported
+0x1e0c65070  __DATA_CONST,__const  _kAFAnnounceOnHeadphonesCachedEligibility
+0x1e0c65068  __DATA_CONST,__const  _kAFAppleIntelligenceFallbackDidChangeNotification
+0x1e0c65060  __DATA_CONST,__const  _kAFAssistantApplicationAccessDomain
+0x1e0c65058  __DATA_CONST,__const  _kAFAssistantAssetSubscriptionAllowed
+0x1e0c65050  __DATA_CONST,__const  _kAFAssistantBundleReloadServiceNotificationSuffix
+0x1e0c65048  __DATA_CONST,__const  _kAFAssistantEnabledKey
+0x1e0c65040  __DATA_CONST,__const  _kAFAssistantErrorDomain
+0x1e0c65038  __DATA_CONST,__const  _kAFAssistantEventDomain
+0x1e0c65030  __DATA_CONST,__const  _kAFAssistantFilesystemDomain
+0x1e0c65028  __DATA_CONST,__const  _kAFAssistantHomeAccessorySiriDataSharingChangeLogKey
+0x1e0c65020  __DATA_CONST,__const  _kAFAssistantHomeAccessorySiriDataSharingPropagationLogKey
+0x1e0c65018  __DATA_CONST,__const  _kAFAssistantIsHomePodInHH2Mode
+0x1e0c65010  __DATA_CONST,__const  _kAFAssistantParentalControlsPreferenceDomain
+0x1e0c65008  __DATA_CONST,__const  _kAFAssistantSiriDataSharingAccessoryRepromptStatus
+0x1e0c65000  __DATA_CONST,__const  _kAFAssistantSiriDataSharingHomeAccessoryMigrated
+0x1e0c64ff8  __DATA_CONST,__const  _kAFAssistantSiriDataSharingHomePodHasBeenOptedOut
+0x1e0c64ff0  __DATA_CONST,__const  _kAFAssistantSiriDataSharingHomePodSetupDeviceIsValid
+0x1e0c64fe8  __DATA_CONST,__const  _kAFAssistantSiriDataSharingOptInStatusHistoryKey
+0x1e0c64fe0  __DATA_CONST,__const  _kAFAssistantSiriDataSharingOptInStatusKey
+0x1e0c64fd8  __DATA_CONST,__const  _kAFAssistantSiriDataSharingOptInStatusKey3_0
+0x1e0c64fd0  __DATA_CONST,__const  _kAFAssistantSiriDataSharingOptInStatusKeyLEGACY
+0x1e0c64fc8  __DATA_CONST,__const  _kAFAssistantSiriDataSharingOptInStatusVersionKey
+0x1e0c64fc0  __DATA_CONST,__const  _kAFAssistantSiriDataSharingPhoneHasBeenOptedOut
+0x1e0c64fb8  __DATA_CONST,__const  _kAFAssistantSiriDataSharingStatusBeforeHomePodWasOptedOut2021
+0x1e0c64fb0  __DATA_CONST,__const  _kAFAssistantSiriDataSharingTVHasBeenOptedOut
+0x1e0c64fa8  __DATA_CONST,__const  _kAFAssistantSiriDataSharingWatchHasBeenOptedOut
+0x1e0c64fa0  __DATA_CONST,__const  _kAFBTEventAddressKey
+0x1e0c64f98  __DATA_CONST,__const  _kAFBTEventBatteryLevelAppleAudioDeviceKey
+0x1e0c64f90  __DATA_CONST,__const  _kAFBTEventBatteryLevelHeadphoneCaseKey
+0x1e0c64f88  __DATA_CONST,__const  _kAFBTEventBatteryLevelHeadphoneLeftKey
+0x1e0c64f80  __DATA_CONST,__const  _kAFBTEventBatteryLevelHeadphoneRightKey
+0x1e0c64f78  __DATA_CONST,__const  _kAFBTEventBatteryLevelUserWearingKey
+0x1e0c64f70  __DATA_CONST,__const  _kAFBTEventDeviceTypeKey
+0x1e0c64f68  __DATA_CONST,__const  _kAFBTEventNameKey
+0x1e0c64f60  __DATA_CONST,__const  _kAFBTEventProductIdKey
+0x1e0c64f58  __DATA_CONST,__const  _kAFBTEventStartingKey
+0x1e0c64f50  __DATA_CONST,__const  _kAFBackedUpQuickTypeGestureEnabled
+0x1e0c64f48  __DATA_CONST,__const  _kAFBackedUpTypeToSiriEnabled
+0x1e0c64f40  __DATA_CONST,__const  _kAFBackedUpVisualIntelligenceCameraControlEnabled
+0x1e0c64f38  __DATA_CONST,__const  _kAFCloudStorageDeletedByUserDarwinNotification
+0x1e0c64f30  __DATA_CONST,__const  _kAFCloudSyncEnabledKey
+0x1e0c64f28  __DATA_CONST,__const  _kAFCloudSyncEnabledModificationDateKey
+0x1e0c64f20  __DATA_CONST,__const  _kAFCloudSyncPHSAssetManifest
+0x1e0c64f18  __DATA_CONST,__const  _kAFCloudSyncPHSAssetManifestV2
+0x1e0c64f10  __DATA_CONST,__const  _kAFCloudSyncPreferenceDidChangeDarwinNotification
+0x1e0c64f08  __DATA_CONST,__const  _kAFCloudSyncUserIDKey
+0x1e0c64f00  __DATA_CONST,__const  _kAFCommandLoggingEnabledKey
+0x198e73230  __TEXT,__const  _kAFDefaultTimeoutInterval
+0x1e0c64ef8  __DATA_CONST,__const  _kAFDesignModeEnabled
+0x1e0c64ef0  __DATA_CONST,__const  _kAFDialogType
+0x1e0c64ee8  __DATA_CONST,__const  _kAFDictationAutoPunctuationEnabledKey
+0x1e0c64ee0  __DATA_CONST,__const  _kAFDictationEnabledKey
+0x1e0c64ed8  __DATA_CONST,__const  _kAFDisableDismissingSiriDueToMissingAssets
+0x1e0c64ed0  __DATA_CONST,__const  _kAFDisableServiceCommandExecution
+0x1e0c64ec8  __DATA_CONST,__const  _kAFDisableTTSPlayback
+0x1e0c64ec0  __DATA_CONST,__const  _kAFHandsFreeModeKey
+0x1e0c64eb8  __DATA_CONST,__const  _kAFHomeBulletinAllowedNotification
+0x1e0c64eb0  __DATA_CONST,__const  _kAFHomeUpdateNotification
+0x1e0c64ea8  __DATA_CONST,__const  _kAFInProgressOutputVoice
+0x1e0c64ea0  __DATA_CONST,__const  _kAFKeyboardPreferencesDomain
+0x1e0c64e98  __DATA_CONST,__const  _kAFLinwoodEnabledMeDeviceKey
+0x1e0c64e90  __DATA_CONST,__const  _kAFLocalTurnStatusServiceEntitlement
+0x1e0c64e88  __DATA_CONST,__const  _kAFLocalTurnStatusServiceErrorDomain
+0x1e0c64e80  __DATA_CONST,__const  _kAFLocalTurnStatusServiceMachServiceName
+0x1e0c64e78  __DATA_CONST,__const  _kAFLocationServiceEntitlement
+0x1e0c64e70  __DATA_CONST,__const  _kAFLocationServiceErrorDomain
+0x1e0c64e68  __DATA_CONST,__const  _kAFLocationServiceMachServiceName
+0x1ebb1c670  __DATA,__data  _kAFLogContextAnalysis
+0x1ebb1c668  __DATA,__data  _kAFLogContextAnalytics
+0x1ebb1c660  __DATA,__data  _kAFLogContextClientFlow
+0x1ebb1c658  __DATA,__data  _kAFLogContextConnection
+0x1ebb1c650  __DATA,__data  _kAFLogContextDaemon
+0x1ebb1c648  __DATA,__data  _kAFLogContextDaemonAce
+0x1ebb1c640  __DATA,__data  _kAFLogContextDatabase
+0x1ebb1c638  __DATA,__data  _kAFLogContextDeviceSelection
+0x1ebb1c630  __DATA,__data  _kAFLogContextDeviceSync
+0x1ebb1c628  __DATA,__data  _kAFLogContextDispatch
+0x1ebb1c620  __DATA,__data  _kAFLogContextEvent
+0x1ebb1c618  __DATA,__data  _kAFLogContextFides
+0x1ebb1c610  __DATA,__data  _kAFLogContextFilesystem
+0x1ebb1c608  __DATA,__data  _kAFLogContextIDS
+0x1ebb1c600  __DATA,__data  _kAFLogContextInternalAuth
+0x1ebb1c5f8  __DATA,__data  _kAFLogContextLocation
+0x1ebb1c5f0  __DATA,__data  _kAFLogContextMediaSupport
+0x1ebb1c5e8  __DATA,__data  _kAFLogContextMockServer
+0x1ebb1c5e0  __DATA,__data  _kAFLogContextMusicIndexer
+0x1ebb1c5d8  __DATA,__data  _kAFLogContextMyriad
+0x1ebb1c5d0  __DATA,__data  _kAFLogContextPerformance
+0x1ebb1c5c8  __DATA,__data  _kAFLogContextPersisted
+0x1ebb1c5c0  __DATA,__data  _kAFLogContextPlugin
+0x1ebb1c5b8  __DATA,__data  _kAFLogContextPower
+0x1ebb1c5b0  __DATA,__data  _kAFLogContextProxy
+0x1ebb1c5a8  __DATA,__data  _kAFLogContextService
+0x1ebb1c5a0  __DATA,__data  _kAFLogContextSession
+0x1ebb1c598  __DATA,__data  _kAFLogContextSpeech
+0x1ebb1c590  __DATA,__data  _kAFLogContextSync
+0x1ebb1c588  __DATA,__data  _kAFLogContextTinyCDB
+0x1ebb1c580  __DATA,__data  _kAFLogContextUtility
+0x1e0c64e60  __DATA_CONST,__const  _kAFLogFacilityAssistant
+0x1e0c64e58  __DATA_CONST,__const  _kAFLogLevelKey
+0x1e0c64e50  __DATA_CONST,__const  _kAFLogPreferencesDomain
+0x1e0c64e48  __DATA_CONST,__const  _kAFLongLivedIdentifierUploadingKey
+0x1e0c64e40  __DATA_CONST,__const  _kAFMAStartupActivatedNotification
+0x1e0c64e38  __DATA_CONST,__const  _kAFManagedConfigurationDictationAllowedKey
+0x1e0c64e30  __DATA_CONST,__const  _kAFMessageWithoutConfirmationHeadphonesPlayKey
+0x1e0c64e28  __DATA_CONST,__const  _kAFMessageWithoutConfirmationInCarPlayKey
+0x1e0c64e20  __DATA_CONST,__const  _kAFMessageWithoutConfirmationKey
+0x1e0c64e18  __DATA_CONST,__const  _kAFModificationDates
+0x1e0c64e10  __DATA_CONST,__const  _kAFMultiUserConformingSharedUserIdKey
+0x1e0c64e08  __DATA_CONST,__const  _kAFMultiUserIsRMVEnabled
+0x1e0c64e00  __DATA_CONST,__const  _kAFMultiUserSharedUserIdKey
+0x1e0c64df8  __DATA_CONST,__const  _kAFMultilingualResponseEnablementPerLanguage
+0x1e0c64df0  __DATA_CONST,__const  _kAFNanoAlwaysShowRecognizedSpeechKey
+0x1e0c64de8  __DATA_CONST,__const  _kAFNanoAssistantEnabledKey
+0x1e0c64de0  __DATA_CONST,__const  _kAFNanoCrownActivationEnabledKey
+0x1e0c64dd8  __DATA_CONST,__const  _kAFNanoDictationAutoPunctuationEnabledKey
+0x1e0c64dd0  __DATA_CONST,__const  _kAFNanoDictationAutoPunctuationSupportedLanguagesKey
+0x1e0c64dc8  __DATA_CONST,__const  _kAFNanoDictationEnabledKey
+0x1e0c64dc0  __DATA_CONST,__const  _kAFNanoJSSupportedKey
+0x1e0c64db8  __DATA_CONST,__const  _kAFNanoMessageWithoutConfirmationEnabledKey
+0x1e0c64db0  __DATA_CONST,__const  _kAFNanoOfflineDictationStatusKey
+0x1e0c64da8  __DATA_CONST,__const  _kAFNanoOutputVoice
+0x1e0c64da0  __DATA_CONST,__const  _kAFNanoOutputVoiceTinker
+0x1e0c64d98  __DATA_CONST,__const  _kAFNanoPHSEnabledKey
+0x1e0c64d90  __DATA_CONST,__const  _kAFNanoPreferencesDidChangeInternalNotification
+0x1e0c64d88  __DATA_CONST,__const  _kAFNanoPreferencesDidChangeNotification
+0x1e0c64d80  __DATA_CONST,__const  _kAFNanoPreferencesDomain
+0x1e0c64d78  __DATA_CONST,__const  _kAFNanoPreferencesTinkerDidChangeNotification
+0x1e0c64d70  __DATA_CONST,__const  _kAFNanoRaiseToSpeakEnabledKey
+0x1e0c64d68  __DATA_CONST,__const  _kAFNanoRaiseToSpeakInfoDismissedKey
+0x1e0c64d60  __DATA_CONST,__const  _kAFNanoSessionLanguage
+0x1e0c64d58  __DATA_CONST,__const  _kAFNanoSessionLanguageTinker
+0x1e0c64d50  __DATA_CONST,__const  _kAFNanoSiriResponseShouldAlwaysPrintKey
+0x1e0c64d48  __DATA_CONST,__const  _kAFNanoTTSSpeakerVolumeKey
+0x1e0c64d40  __DATA_CONST,__const  _kAFNanoUseDeviceSpeakerForTTSKey
+0x1e0c64d38  __DATA_CONST,__const  _kAFNanoVTPhraseTypeKey
+0x1e0c64d30  __DATA_CONST,__const  _kAFOnDeviceDictationAvailableAlertPresentedKey
+0x1e0c64d28  __DATA_CONST,__const  _kAFOutputLevelKey
+0x1e0c64d20  __DATA_CONST,__const  _kAFOutputVoice
+0x1e0c64d18  __DATA_CONST,__const  _kAFPersonalContentSettingChangedDarwinNotification
+0x1e0c64d10  __DATA_CONST,__const  _kAFPreferencesDidChangeDarwinNotification
+0x1e0c64d08  __DATA_CONST,__const  _kAFRecognizeMyVoiceSettingChangedDarwinNotification
+0x1e0c64d00  __DATA_CONST,__const  _kAFRespectsSystemMuteKey
+0x1e0c64cf8  __DATA_CONST,__const  _kAFSearchQueriesDataSharingStatusKey
+0x1e0c64cf0  __DATA_CONST,__const  _kAFServerOverride
+0x1e0c64ce8  __DATA_CONST,__const  _kAFSessionLanguage
+0x1e0c64ce0  __DATA_CONST,__const  _kAFSessionLanguageForceRTL
+0x1e0c64cd8  __DATA_CONST,__const  _kAFSharedUserUpdateDarwinNotification
+0x1e0c64cd0  __DATA_CONST,__const  _kAFShouldSkipIntelligenceVoiceSelectionUpsell
+0x1e0c64cc8  __DATA_CONST,__const  _kAFShowAppsBehindSiriInCarPlayKey
+0x1e0c64cc0  __DATA_CONST,__const  _kAFSiriActivationDismissedDueToToolboxUnavailableNotification
+0x1e0c64cb8  __DATA_CONST,__const  _kAFSiriAndDictationHistoryDeletionRequestedDarwinNotification
+0x1e0c64cb0  __DATA_CONST,__const  _kAFSiriAvailabilityKey
+0x1e0c64ca8  __DATA_CONST,__const  _kAFSiriCapabilitiesDidChangeNotification
+0x1e0c64ca0  __DATA_CONST,__const  _kAFSiriCapabilitiesServiceClientEntitlement
+0x1e0c64c98  __DATA_CONST,__const  _kAFSiriCapabilitiesServiceClientMachServiceName
+0x1e0c64c90  __DATA_CONST,__const  _kAFSiriCapabilitiesServiceErrorDomain
+0x1e0c64c88  __DATA_CONST,__const  _kAFSiriConfigOverrides
+0x1e0c64c80  __DATA_CONST,__const  _kAFSiriConfigProfileOverrides
+0x1e0c64c78  __DATA_CONST,__const  _kAFSiriDataSharingOptInStatusHistoryNewOptInStatusKey
+0x1e0c64c70  __DATA_CONST,__const  _kAFSiriDataSharingOptInStatusHistorySchemaVersion
+0x1e0c64c68  __DATA_CONST,__const  _kAFSiriInCallKey
+0x1e0c64c60  __DATA_CONST,__const  _kAFSiriInternalUserClassification
+0x1e0c64c58  __DATA_CONST,__const  _kAFSiriKitEnabledList
+0x1e0c64c50  __DATA_CONST,__const  _kAFSiriServiceEventDismissalReasonKey
+0x1e0c64c48  __DATA_CONST,__const  _kAFSiriServiceEventDomainKey
+0x1e0c64c40  __DATA_CONST,__const  _kAFSiriServiceEventRequestSourceKey
+0x1e0c64c38  __DATA_CONST,__const  _kAFSiriServiceEventUnintendedKey
+0x1e0c64c30  __DATA_CONST,__const  _kAFSiriSupportedLanguagesDidChangeDarwinNotification
+0x1e0c64c28  __DATA_CONST,__const  _kAFSiriTVPersonalContentSettingKey
+0x1e0c64c20  __DATA_CONST,__const  _kAFSiriTVRMVSettingIsDirtyKey
+0x1e0c64c18  __DATA_CONST,__const  _kAFSiriTVRMVSettingKey
+0x1e0c64c10  __DATA_CONST,__const  _kAFSpokenNotificationShouldAlwaysSpeakNotifications
+0x1e0c64c08  __DATA_CONST,__const  _kAFSpokenNotificationShouldSkipTriggerlessReplies
+0x1e0c64c00  __DATA_CONST,__const  _kAFSpokenNotificationSkipTriggerlessReplyConfirmation
+0x1e0c64bf8  __DATA_CONST,__const  _kAFSpokenNotificationTemporaryMuteEndDateKey
+0x1e0c64bf0  __DATA_CONST,__const  _kAFStartAlertEnabledKey
+0x1e0c64be8  __DATA_CONST,__const  _kAFStereoConfigurationaDidChangeDarwinNotification
+0x1e0c64be0  __DATA_CONST,__const  _kAFStereoPartnerMyriadDataDidChangeDarwinNotification
+0x1e0c64bd8  __DATA_CONST,__const  _kAFSuppressAssistantOptInKey
+0x1e0c64bd0  __DATA_CONST,__const  _kAFSuppressDictationOptInKey
+0x1e0c64bc8  __DATA_CONST,__const  _kAFSuppressSiriDataSharingOptInKey
+0x1e0c64bc0  __DATA_CONST,__const  _kAFSyncDidFinishNotification
+0x1e0c64bb8  __DATA_CONST,__const  _kAFUIKitDictationAllowedKey
+0x1e0c64bb0  __DATA_CONST,__const  _kAFUIKitDictationEnabledKey
+0x1e0c64ba8  __DATA_CONST,__const  _kAFUIKitKeyboardDictationLanguagesEnabledKey
+0x1e0c64ba0  __DATA_CONST,__const  _kAFUIKitPreferencesDomain
+0x1e0c64b98  __DATA_CONST,__const  _kAFUseDeviceSpeakerForTTSKey
+0x1e0c64b90  __DATA_CONST,__const  _kAFWriteSODABiomeStreamsToSysdiagnoseKey
+0x1e0c64b88  __DATA_CONST,__const  _kAssetQueryResultKey
+0x1e0c64b80  __DATA_CONST,__const  _kAssetTypeEmbeddedSpeechModel
+0x1e0c64b78  __DATA_CONST,__const  _kAssetTypeEmbeddedSpeechModelNewAssetInstalled
+0x1e0c64b70  __DATA_CONST,__const  _kAssistantAnalyticsEntitlement
+0x1e0c64b68  __DATA_CONST,__const  _kAssistantAnalyticsObservationEntitlement
+0x1e0c64b60  __DATA_CONST,__const  _kAssistantAnalyticsObservationServiceName
+0x1e0c64b58  __DATA_CONST,__const  _kAssistantAnalyticsServiceName
+0x1e0c64b50  __DATA_CONST,__const  _kAssistantAnnouncementSpeakingStateEntitlement
+0x1e0c64b48  __DATA_CONST,__const  _kAssistantAnnouncementSpeakingStateServiceName
+0x1e0c64b40  __DATA_CONST,__const  _kAssistantAudioCategory
+0x1e0c64b38  __DATA_CONST,__const  _kAssistantAudioSessionAssertionServiceEntitlement
+0x1e0c64b30  __DATA_CONST,__const  _kAssistantAudioSessionAssertionServiceName
+0x1e0c64b28  __DATA_CONST,__const  _kAssistantAudioSessionEventServiceEntitlement
+0x1e0c64b20  __DATA_CONST,__const  _kAssistantAudioSessionEventServiceName
+0x1e0c64b18  __DATA_CONST,__const  _kAssistantBackedUpDomain
+0x1e0c64b10  __DATA_CONST,__const  _kAssistantClientEntitlement
+0x1e0c64b08  __DATA_CONST,__const  _kAssistantClientServiceName
+0x1e0c64b00  __DATA_CONST,__const  _kAssistantDarwinNotificationSpeechCaptureFinished
+0x1e0c64af8  __DATA_CONST,__const  _kAssistantDeviceContextServiceEntitlement
+0x1e0c64af0  __DATA_CONST,__const  _kAssistantDeviceContextServiceName
+0x1e0c64ae8  __DATA_CONST,__const  _kAssistantDictationPrerecordedEntitlement
+0x1e0c64ae0  __DATA_CONST,__const  _kAssistantDictationServiceName
+0x1e0c64ad8  __DATA_CONST,__const  _kAssistantDictationSuppressStartStopAlertEntitlement
+0x1e0c64ad0  __DATA_CONST,__const  _kAssistantDirectActionEventKey
+0x1e0c64ac8  __DATA_CONST,__const  _kAssistantDirectActionEventMessagesConversationGUIDKey
+0x1e0c64ac0  __DATA_CONST,__const  _kAssistantDirectActionEventMessagesConversationKey
+0x1e0c64ab8  __DATA_CONST,__const  _kAssistantDirectActionEventMessagesFullNameKey
+0x1e0c64ab0  __DATA_CONST,__const  _kAssistantDirectActionEventMessagesPhoneAddressKey
+0x1e0c64aa8  __DATA_CONST,__const  _kAssistantDonatesVocabularyOnBehalfOfAppsEntitlement
+0x1e0c64aa0  __DATA_CONST,__const  _kAssistantEndpointConnectivityServiceEntitlement
+0x1e0c64a98  __DATA_CONST,__const  _kAssistantEndpointConnectivityServiceName
+0x1e0c64a90  __DATA_CONST,__const  _kAssistantFlowServiceEntitlement
+0x1e0c64a88  __DATA_CONST,__const  _kAssistantFlowServiceName
+0x1e0c64a80  __DATA_CONST,__const  _kAssistantHearablesServiceEntitlement
+0x1e0c64a78  __DATA_CONST,__const  _kAssistantHearablesServiceName
+0x1e0c64a70  __DATA_CONST,__const  _kAssistantLegacyUserVocabularyUpdateEntitlement
+0x1e0c64a68  __DATA_CONST,__const  _kAssistantManagedStorageServiceName
+0x1e0c64a60  __DATA_CONST,__const  _kAssistantMockServerHostname
+0x1e0c64a58  __DATA_CONST,__const  _kAssistantMockServerLabel
+0x1e0c64a50  __DATA_CONST,__const  _kAssistantMultiUserEntitlement
+0x1e0c64a48  __DATA_CONST,__const  _kAssistantMultiUserServiceName
+0x1e0c64a40  __DATA_CONST,__const  _kAssistantMultiUserUpdateEntitlement
+0x1e0c64a38  __DATA_CONST,__const  _kAssistantMultiUserUpdateServiceName
+0x1e0c64a30  __DATA_CONST,__const  _kAssistantNotificationBundleID
+0x1e0c64a28  __DATA_CONST,__const  _kAssistantNotificationServiceEntitlement
+0x1e0c64a20  __DATA_CONST,__const  _kAssistantNotificationServiceName
+0x1e0c64a18  __DATA_CONST,__const  _kAssistantPreferencesDomain
+0x1e0c64a10  __DATA_CONST,__const  _kAssistantRequestDispatcherUIBridgeServiceName
+0x1e0c64a08  __DATA_CONST,__const  _kAssistantSecurityEntitlement
+0x1e0c64a00  __DATA_CONST,__const  _kAssistantSecurityServiceName
+0x1e0c649f8  __DATA_CONST,__const  _kAssistantServerSpeechRecognizerServiceEntitlement
+0x1e0c649f0  __DATA_CONST,__const  _kAssistantServerSpeechRecognizerServiceName
+0x1e0c649e8  __DATA_CONST,__const  _kAssistantServiceEntitlement
+0x1e0c649e0  __DATA_CONST,__const  _kAssistantServiceServiceName
+0x1e0c649d8  __DATA_CONST,__const  _kAssistantSettingsEntitlement
+0x1e0c649d0  __DATA_CONST,__const  _kAssistantSettingsServiceName
+0x1e0c649c8  __DATA_CONST,__const  _kAssistantSharedBackedUpDomain
+0x1e0c649c0  __DATA_CONST,__const  _kAssistantSiriDeveloperEntitlement
+0x1e0c649b8  __DATA_CONST,__const  _kAssistantSupportPreferenceDomain
+0x1e0c649b0  __DATA_CONST,__const  _kDictationLoggingCheckLanguageAvailable
+0x1e0c649a8  __DATA_CONST,__const  _kDictationLoggingHQAssetsAvailable
+0x1e0c649a0  __DATA_CONST,__const  _kDictationLoggingLQAssetsAvailable
+0x1e0c64998  __DATA_CONST,__const  _kDictationLoggingLanguageAvailableOverNetwork
+0x1e0c64990  __DATA_CONST,__const  _kDictationLoggingSupportedForDictation
+0x1e0c64988  __DATA_CONST,__const  _kExecutionServiceServiceName
+0x1e0c64980  __DATA_CONST,__const  _kExtendTimeoutReasonOnlyIfExpiring
+0x1e0c64978  __DATA_CONST,__const  _kIntentsExtensionPointName
+0x198e73260  __TEXT,__const  _kJSDiscoveryNotificationDelay
+0x1e0c64970  __DATA_CONST,__const  _kManagedConfigurationAssistantDomain
+0x1e0c64968  __DATA_CONST,__const  _kManagedConfigurationSiriServerLoggingKey
+0x1e0c64960  __DATA_CONST,__const  _kRequestIdForMyriadNotificaiton
+0x1e0c64958  __DATA_CONST,__const  _kRequestSettingCaptionVoiceFeedback
+0x1e0c64950  __DATA_CONST,__const  _kRequestSettingHideBackgroundContent
+0x1e0c64948  __DATA_CONST,__const  _kRequestSettingShowRecognizedSpeech
+0x1e0c64940  __DATA_CONST,__const  _kRequestSettingTypeToSiri
+0x1e0c64938  __DATA_CONST,__const  _kRequestSettingUseSpeakerForTTS
+0x1e0c64930  __DATA_CONST,__const  _kRequestSettings
+0x1e0c64928  __DATA_CONST,__const  _kRequestSiriInputLanguage
+0x1e0c64920  __DATA_CONST,__const  _kSharedFlowPluginServiceName
+0x1e0c64918  __DATA_CONST,__const  _kSiriAppSettingsDomain
+0x1e0c64910  __DATA_CONST,__const  _kSiriCarBTPreferencesDomain
+0x1e0c64908  __DATA_CONST,__const  _kSiriCarBTPreferredOutputRouteKey
+0x1e0c64900  __DATA_CONST,__const  _kTrialSiriAssistantAssetNamespaceUpdate
+0x1e0c648f8  __DATA_CONST,__const  _kUAFNLXAssetNamespaceUpdate
+0x1e0c648f0  __DATA_CONST,__const  _kUAFSiriAssistantAssetNamespaceUpdate
+0x198e73268  __TEXT,__const  _kValidBluetoothAddressLength
+```
+
+## Private
+
+```
+0x198cbb674  __TEXT,__text  ___117-[AFDictationConnection(Private) getRemoteContentForLayerContextWithId:slotStyle:dictationButtonTag:completionBlock:]_block_invoke
+0x198cbb6c0  __TEXT,__text  ___46-[AFDictationButtonTag resolvedStyleForStyle:]_block_invoke
+0x198cbb70c  __TEXT,__text  -[AFDictationConnection _connection]
+0x198cbbd28  __TEXT,__text  -[AFDictationButtonTag encodeWithCoder:]
+0x198cbbeb8  __TEXT,__text  ___42-[AFNetworkAvailability _startPathMonitor]_block_invoke
+0x198cbc0e0  __TEXT,__text  -[AFDictationConnectionServiceDelegate initWithDictationConnection:]
+0x198cbc148  __TEXT,__text  -[AFApplicationInfo .cxx_destruct]
+0x198cbc198  __TEXT,__text  -[AFPreferences suppressDictationOptIn]
+0x198cbc2f0  __TEXT,__text  +[AFDictationConnection dictationIsSupportedForLanguageCode:error:]
+0x198cbc408  __TEXT,__text  -[AFDictationButtonTag setSize:]
+0x198cbc41c  __TEXT,__text  -[AFSearchBarDictationButtonTag initWithSize:titleOrigin:titleWidth:secureName:]
+0x198cbc4e8  __TEXT,__text  -[AFDictationButtonTag setTitleOrigin:]
+0x198cbc4fc  __TEXT,__text  -[AFDictationButtonTag setTitleWidth:]
+0x198cbc510  __TEXT,__text  -[AFDictationButtonTag setSecureName:]
+0x198cbc524  __TEXT,__text  -[AFDictationButtonTag setContentScaleLevel:]
+0x198cbc538  __TEXT,__text  -[AFDictationButtonTag setHasTrailingGutter:]
+0x198cbc54c  __TEXT,__text  -[AFDictationButtonTag resolvedStyleForStyle:]
+0x198cbc574  __TEXT,__text  -[AFDictationConnection init]
+0x198cbc5c0  __TEXT,__text  +[AFCallSiteInfo newWithBuilder:]
+0x198cbc608  __TEXT,__text  -[_AFCallSiteInfoMutation .cxx_destruct]
+0x198cbc64c  __TEXT,__text  +[AFNetworkAvailability sharedAvailability]
+0x198cbc694  __TEXT,__text  -[AFCallSiteInfo initWithBuilder:]
+0x198cbc780  __TEXT,__text  ___49-[AFDictationConnection initWithInstanceContext:]_block_invoke
+0x198cbc7d0  __TEXT,__text  ___30+[AFAnalytics sharedAnalytics]_block_invoke
+0x198cbc83c  __TEXT,__text  ___37-[AFNetworkAvailability addObserver:]_block_invoke
+0x198cbc8f4  __TEXT,__text  -[AFNetworkAvailability init]
+0x198cbc99c  __TEXT,__text  ___35+[AFInstanceContext defaultContext]_block_invoke
+0x198cbc9cc  __TEXT,__text  ___34+[AFPreferences sharedPreferences]_block_invoke
+0x198cbca34  __TEXT,__text  +[AFInstanceContext currentContext]
+0x198cbca7c  __TEXT,__text  ___35+[AFInstanceContext currentContext]_block_invoke
+0x198cbcab0  __TEXT,__text  -[AFInstanceContextHost init]
+0x198cbcb24  __TEXT,__text  -[AFInstanceInfo initWithBuilder:]
+0x198cbcc1c  __TEXT,__text  ___71-[AFInstanceInfo initWithInstanceUUID:applicationType:applicationUUID:]_block_invoke
+0x198cbcc78  __TEXT,__text  -[AFPreferencesNotificationCenter addObserverForDarwinName:usingBlock:]
+0x198cbce28  __TEXT,__text  ___AFLogInitIfNeeded_block_invoke
+0x198cbd230  __TEXT,__text  -[_AFInstanceInfoMutation .cxx_destruct]
+0x198cbd274  __TEXT,__text  +[AFPreferencesNotificationCenter sharedInstance]
+0x198cbd27c  __TEXT,__text  __AFPreferencesNotificationCenterGetSharedInstance
+0x198cbd32c  __TEXT,__text  -[AFPreferencesNotificationCenter init]
+0x198cbd3f0  __TEXT,__text  ____AFPreferencesNotificationCenterSharedLock_block_invoke
+0x198cbd420  __TEXT,__text  ___AFPreferencesSupportedLanguages_block_invoke
+0x198cbd594  __TEXT,__text  ___AFPreferencesSupportedDictationLanguages_block_invoke
+0x198cbd5e8  __TEXT,__text  ____AFPreferencesDictationLanguagePrefixes_block_invoke
+0x198cbd6b8  __TEXT,__text  ___AFDictationCapable_block_invoke
+0x198cbd70c  __TEXT,__text  __IsArrayOfStrings
+0x198cbd8c4  __TEXT,__text  ___AFInternalConfigValueForKey_block_invoke
+0x198cbdba4  __TEXT,__text  ____AFPreferencesBuiltInLanguages_block_invoke
+0x198cbde1c  __TEXT,__text  __AFPreferencesBuiltInLanguages
+0x198cbdfd8  __TEXT,__text  ___AFDeviceHighestLanguageModelCapabilityIdentifier_block_invoke
+0x198cbe014  __TEXT,__text  ____AFPreferencesDictationLanguagePrefixes_block_invoke_2
+0x198cbe060  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isDictationSecureTouchEnabled]
+0x198cbe074  __TEXT,__text  ___43+[AFNetworkAvailability sharedAvailability]_block_invoke
+0x198cbe108  __TEXT,__text  +[AFPreferences sharedPreferences]
+0x198cbe150  __TEXT,__text  -[AFPreferences assistantIsEnabled]
+0x198cbe290  __TEXT,__text  -[AFInstanceInfo initWithInstanceUUID:applicationType:applicationUUID:]
+0x198cbe35c  __TEXT,__text  -[AFSearchBarDictationButtonTag isEqual:]
+0x198cbe4ac  __TEXT,__text  ___57-[AFDictationConnection networkAvailability:isAvailable:]_block_invoke
+0x198cbe524  __TEXT,__text  -[AFDictationButtonTag authenticationMessageContextForStyle:]
+0x198cbe538  __TEXT,__text  -[AFDictationButtonTag size]
+0x198cbe54c  __TEXT,__text  ___53-[AFDictationConnection _dispatchCallbackGroupBlock:]_block_invoke_2
+0x198cbe59c  __TEXT,__text  ___63-[AFDictationConnection _tellSpeechDelegateAvailabilityChanged]_block_invoke
+0x198cbe5f0  __TEXT,__text  -[AFSystemAssistantExperienceStatusManager saeEnabled]
+0x198cbe5fc  __TEXT,__text  -[AFDictationButtonTag copyWithZone:]
+0x198cbe600  __TEXT,__text  +[AFSystemAssistantExperienceStatusManager sharedManager]
+0x198cbe648  __TEXT,__text  +[AFSystemAssistantExperienceStatusManager isSAEEnabled]
+0x198cbe6f4  __TEXT,__text  ___57+[AFSystemAssistantExperienceStatusManager sharedManager]_block_invoke
+0x198cbe7a8  __TEXT,__text  ___AFDeviceSupportsMedoc_block_invoke
+0x198cbe8e0  __TEXT,__text  -[AFSystemAssistantExperienceStatusManager init]
+0x198cbe9c4  __TEXT,__text  -[AFSystemAssistantExperienceStatusManager fetchGenerativeModelsAvailability]
+0x198cbedf4  __TEXT,__text  +[AFSiriAvailability fromPreferences]
+0x198cbef24  __TEXT,__text  -[AFSystemAssistantExperienceStatusManager fetchSiriAvailability]
+0x198cbef30  __TEXT,__text  -[AFSiriAvailability initWithIsAvailable:siriLocale:desiredOrchestrationMode:unavailabilityReasons:allCapabilities:]
+0x198cbf17c  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isNLRouterEnabled]
+0x198cbf190  __TEXT,__text  ___128-[AFHeartBeat initWithIdentifier:queue:effectiveDate:expirationDuration:heartBeatInterval:heartBeatHandler:invalidationHandler:]_block_invoke_2
+0x198cbf1c4  __TEXT,__text  -[AFHeartBeat _fire]
+0x198cbf2ac  __TEXT,__text  -[AFSafetyBlock initWithBlock:]
+0x198cbf31c  __TEXT,__text  -[AFWatchdogTimer initWithTimeoutInterval:onQueue:timeoutHandler:]
+0x198cbf578  __TEXT,__text  -[AFWatchdogTimer start]
+0x198cbf614  __TEXT,__text  -[AFWatchdogTimer cancelIfNotAlreadyCanceled]
+0x198cbf654  __TEXT,__text  -[AFWatchdogTimer dealloc]
+0x198cbf6b0  __TEXT,__text  -[AFSafetyBlock invokeWithSignal:]
+0x198cbf710  __TEXT,__text  -[AFWatchdogTimer .cxx_destruct]
+0x198cbf754  __TEXT,__text  -[AFSafetyBlock .cxx_destruct]
+0x198cbf760  __TEXT,__text  -[AFSafetyBlock dealloc]
+0x198cbf7ac  __TEXT,__text  -[AFDictationConnection _dictationService]
+0x198cbf7ec  __TEXT,__text  -[AFApplicationInfo pid]
+0x198cbf7f4  __TEXT,__text  -[AFPreferences initWithInstanceContext:]
+0x198cbf9b4  __TEXT,__text  -[AFApplicationInfo setPid:]
+0x198cbf9bc  __TEXT,__text  -[AFContextManager init]
+0x198cbfa1c  __TEXT,__text  +[AFContextManager defaultContextManager]
+0x198cbfa64  __TEXT,__text  ___41+[AFContextManager defaultContextManager]_block_invoke
+0x198cbfa94  __TEXT,__text  -[AFContextManager addContextProvider:]
+0x198cbfb90  __TEXT,__text  -[AFContextManager _serverName]
+0x198cbfc4c  __TEXT,__text  -[AFContextManager startCenter:]
+0x198cbfd74  __TEXT,__text  -[AFPreferences isDictationHIPAACompliant]
+0x198cbfef8  __TEXT,__text  -[AFPreferences offlineDictationStatus]
+0x198cbff64  __TEXT,__text  ___AFDictationHasHighQualityModels_block_invoke
+0x198cbffd8  __TEXT,__text  -[AFPreferences siriDataSharingOptInStatus]
+0x198cc00f0  __TEXT,__text  -[AFPreferences dictationIsEnabled]
+0x198cc0150  __TEXT,__text  -[AFSiriAudioRouteMonitor setCurrentAudioRoute:]
+0x198cc01ac  __TEXT,__text  -[AFSiriAudioRoute .cxx_destruct]
+0x198cc0214  __TEXT,__text  ___56-[AFSiriAudioRouteMonitor updateAudioRouteAvailability:]_block_invoke
+0x198cc0220  __TEXT,__text  _getAVSystemControllerClass
+0x198cc0350  __TEXT,__text  -[AFSiriAudioRouteMonitor _updateAudioRouteAvailabilityAndBroadcast:]
+0x198cc05c4  __TEXT,__text  _getAVSystemController_RouteDescriptionKey_PreferredExternalRouteDetails_InEarDetectEnabled
+0x198cc09c0  __TEXT,__text  -[AFSiriAudioRoute _initializeInternalState]
+0x198cc1654  __TEXT,__text  -[AFSettingsConnection initWithInstanceContext:]
+0x198cc1788  __TEXT,__text  -[AFSettingsConnection .cxx_destruct]
+0x198cc1808  __TEXT,__text  +[AFSettingsConnection initialize]
+0x198cc1830  __TEXT,__text  -[AFSettingsConnection init]
+0x198cc1838  __TEXT,__text  -[AFSettingsConnection fetchSupportedMultiUserLanguageCodes:]
+0x198cc1a90  __TEXT,__text  -[AFSettingsConnection dealloc]
+0x198cc1b3c  __TEXT,__text  -[AFSiriAudioRoute _isHearingAidsRoute]
+0x198cc1b4c  __TEXT,__text  ___25-[AFNotifyObserver state]_block_invoke
+0x198cc1b60  __TEXT,__text  -[AFSiriAudioRouteMonitor updateAudioRouteAvailability:]
+0x198cc1c54  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isAccessibleAnnounceEnabled]
+0x198cc1c68  __TEXT,__text  -[AFSiriAudioRoute name]
+0x198cc1c70  __TEXT,__text  -[AFNotifyObserver state]
+0x198cc1d28  __TEXT,__text  -[AFPreferences _bestSupportedLanguageCodeForLanguageCode:isGoodFit:]
+0x198cc1e1c  __TEXT,__text  -[AFSiriAvailability desiredOrchestrationMode]
+0x198cc1fdc  __TEXT,__text  _checkGMStatusWithUseCaseIdentifiers
+0x198cc2664  __TEXT,__text  -[AFPreferences _languageCodeWithFallback:]
+0x198cc27a4  __TEXT,__text  -[AFAuthKitManager shouldApplyChildRestrictions]
+0x198cc28c4  __TEXT,__text  -[AFAuthKitManager init]
+0x198cc2b28  __TEXT,__text  +[AFAuthKitManager sharedManager]
+0x198cc2bbc  __TEXT,__text  -[AFAuthKitManager accountManager]
+0x198cc2bc4  __TEXT,__text  ___AFIsIPad_block_invoke
+0x198cc2bf8  __TEXT,__text  ___33+[AFAuthKitManager sharedManager]_block_invoke
+0x198cc2c24  __TEXT,__text  -[AFAuthKitManager currentAccountType]
+0x198cc355c  __TEXT,__text  __AFAddCountryCodeToLanguageIdentifier
+0x198cc36a4  __TEXT,__text  __AFPreferencesAlternativeLocaleLanguages
+0x198cc38d0  __TEXT,__text  -[AFPreferences _bestSupportedLanguageCodeForLanguageCodes:isGoodFit:]
+0x198cc3bd0  __TEXT,__text  -[AFPreferences _languagePreferencesForCurrentSystemConfiguration]
+0x198cc3da0  __TEXT,__text  -[AFSiriAvailability .cxx_destruct]
+0x198cc3f94  __TEXT,__text  ___AFDeviceSupportsHybridUOD_block_invoke
+0x198cc402c  __TEXT,__text  ___AFHasGMSCapabilityUnembargoed_block_invoke
+0x198cc4150  __TEXT,__text  ___AFLocaleIdentifierSupportsSAE_block_invoke
+0x198cc4358  __TEXT,__text  -[AFPreferences _registerForDarwinNotification:block:]
+0x198cc447c  __TEXT,__text  +[AFSiriDataSharingSensitivityManager shared]
+0x198cc44c4  __TEXT,__text  -[AFSiriDataSharingSensitivityManager isOptedOutOfMTE]
+0x198cc4544  __TEXT,__text  -[AFAnalyticsEvent .cxx_destruct]
+0x198cc4588  __TEXT,__text  -[AFDictationButtonTag contentScaleLevel]
+0x198cc459c  __TEXT,__text  -[AFSearchBarDictationButtonTag finalSampleEventForStyle:]
+0x198cc45a4  __TEXT,__text  -[AFApplicationInfo identifier]
+0x198cc45ac  __TEXT,__text  -[_AFCallSiteInfoMutation initWithBase:]
+0x198cc4620  __TEXT,__text  -[AFSearchBarDictationButtonTag hash]
+0x198cc46bc  __TEXT,__text  ___77-[AFSystemAssistantExperienceStatusManager fetchGenerativeModelsAvailability]_block_invoke
+0x198cc4764  __TEXT,__text  -[_AFInstanceInfoMutation getApplicationUUID]
+0x198cc479c  __TEXT,__text  -[AFSiriAvailability description]
+0x198cc4934  __TEXT,__text  -[AFSystemAssistantExperienceStatusManager setVisualIntelligenceEnabled:]
+0x198cc493c  __TEXT,__text  -[AFSystemAssistantExperienceStatusManager setSiriAvailability:]
+0x198cc4944  __TEXT,__text  -[AFSiriAvailability isAvailable]
+0x198cc494c  __TEXT,__text  -[AFSystemAssistantExperienceStatusManager deviceSupportsSAE]
+0x198cc4958  __TEXT,__text  -[AFSystemAssistantExperienceStatusManager saeAvailable]
+0x198cc4964  __TEXT,__text  -[AFSystemAssistantExperienceStatusManager swaiEnabled]
+0x198cc4970  __TEXT,__text  -[AFSystemAssistantExperienceStatusManager visualIntelligenceEnabled]
+0x198cc497c  __TEXT,__text  -[AFSystemAssistantExperienceStatusManager siriAvailability]
+0x198cc4988  __TEXT,__text  -[AFSiriAvailability siriLocale]
+0x198cc4990  __TEXT,__text  -[AFSiriAvailability unavailabilityReasons]
+0x198cc4bb0  __TEXT,__text  -[AFSystemAssistantExperienceStatusManager setDeviceSupportsSAE:]
+0x198cc4bb8  __TEXT,__text  -[AFSystemAssistantExperienceStatusManager setSaeEnabled:]
+0x198cc4bc0  __TEXT,__text  -[AFSystemAssistantExperienceStatusManager setSaeAvailable:]
+0x198cc4bc8  __TEXT,__text  -[AFSystemAssistantExperienceStatusManager setSwaiEnabled:]
+0x198cc4bd0  __TEXT,__text  +[AFSystemAssistantExperienceStatusManager isVisualIntelligenceEnabled]
+0x198cc4c7c  __TEXT,__text  -[_AFCallSiteInfoMutation setSymbolName:]
+0x198cc4cb8  __TEXT,__text  -[AFDictationConnection _tellSpeechDelegateAvailabilityChanged]
+0x198cc4d24  __TEXT,__text  -[AFPreferences languageCode]
+0x198cc4d2c  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isSiriDataSharingRepromptEnabled]
+0x198cc4d40  __TEXT,__text  -[AFApplicationInfo isEqual:]
+0x198cc4de0  __TEXT,__text  -[AFApplicationInfo setIdentifier:]
+0x198cc4de8  __TEXT,__text  -[AFNetworkAvailability _notifyObservers]
+0x198cc4f78  __TEXT,__text  -[AFWatchdogTimer cancel]
+0x198cc4fc8  __TEXT,__text  -[AFDictationConnection initWithInstanceContext:]
+0x198cc5248  __TEXT,__text  -[AFNetworkAvailability _startPathMonitor]
+0x198cc53f0  __TEXT,__text  -[AFDictationButtonTag hasTrailingGutter]
+0x198cc5404  __TEXT,__text  -[AFSearchBarDictationButtonTag isValid]
+0x198cc54e8  __TEXT,__text  -[AFDictationConnection _availabilityChanged]
+0x198cc5548  __TEXT,__text  -[AFAnalyticsEvent initWithDeliveryStream:type:timestamp:contextDataType:contextData:]
+0x198cc55e0  __TEXT,__text  -[AFAnalyticsEvent setSpeechId:]
+0x198cc55e8  __TEXT,__text  -[AFAnalyticsEvent deliveryStream]
+0x198cc55f0  __TEXT,__text  -[AFAnalyticsEvent type]
+0x198cc5aec  __TEXT,__text  ___70-[AFDictationConnection _registerInvalidationHandlerForXPCConnection:]_block_invoke
+0x198cc5b88  __TEXT,__text  -[AFDictationConnectionServiceDelegate .cxx_destruct]
+0x198cc5b90  __TEXT,__text  -[AFDictationConnection dealloc]
+0x198cc5c3c  __TEXT,__text  +[AFSearchBarDictationButtonTag supportsSecureCoding]
+0x198cc5c44  __TEXT,__text  ___40-[AFNetworkAvailability removeObserver:]_block_invoke
+0x198cc5cbc  __TEXT,__text  -[AFDictationConnection .cxx_destruct]
+0x198cc5dd4  __TEXT,__text  -[AFCallSiteInfo .cxx_destruct]
+0x198cc5e0c  __TEXT,__text  -[AFSafetyBlock invoke]
+0x198cc5e14  __TEXT,__text  __AFDNSIsAvailable
+0x198cc5ee8  __TEXT,__text  -[AFNetworkAvailability _updateState]
+0x198cc5fa8  __TEXT,__text  -[AFInstanceContextHost preferencesSubdomain]
+0x198cc5fb0  __TEXT,__text  -[AFDictationButtonTag titleWidth]
+0x198cc5fc4  __TEXT,__text  -[AFDeviceRingerSwitchObserver state]
+0x198cc6004  __TEXT,__text  -[AFSiriAudioRoute initWithRouteDescription:hearingAidsAnnounceEnabled:builtInSpeakerAnnounceEnabled:ringerSwitchState:]
+0x198cc60b8  __TEXT,__text  -[AFSiriAudioRoute _isBuiltInSpeakerRoute]
+0x198cc610c  __TEXT,__text  -[AFSiriAudioRoute _getRouteCapabilities]
+0x198cc621c  __TEXT,__text  -[AFSiriAudioRoute _announcementPlatform]
+0x198cc6260  __TEXT,__text  -[AFSiriAudioRoute isEqualToRoute:]
+0x198cc63e0  __TEXT,__text  -[AFSiriAudioRoute isRouteCurrentlyPicked]
+0x198cc63e8  __TEXT,__text  -[AFSiriAudioRoute productID]
+0x198cc63f0  __TEXT,__text  -[AFSiriAudioRoute hasAuthenticationCapability]
+0x198cc6448  __TEXT,__text  -[AFSiriAudioRoute btAddress]
+0x198cc6450  __TEXT,__text  -[AFSiriAudioRoute availableAnnouncementRequestTypes]
+0x198cc6458  __TEXT,__text  ___36-[AFAnalyticsConnection _connection]_block_invoke_2
+0x198cc648c  __TEXT,__text  -[AFAnalyticsConnection _connectionInvalidated]
+0x198cc6510  __TEXT,__text  -[AFAnalyticsConnection setNeedsCleanUpConnection:]
+0x198cc6518  __TEXT,__text  ___47-[AFAnalyticsConnection _connectionInvalidated]_block_invoke
+0x198cc6520  __TEXT,__text  -[AFAnalyticsConnection _cleanUpConnectionIfNeeded]
+0x198cc655c  __TEXT,__text  -[AFAnalyticsConnection needsCleanUpConnection]
+0x198cc6568  __TEXT,__text  -[AFAnalyticsConnection _cleanUpConnection]
+0x198cc65c0  __TEXT,__text  -[AFLocationSnapshot initWithBuilder:]
+0x198cc6778  __TEXT,__text  -[_AFLocationSnapshotMutation getAltitude]
+0x198cc67b0  __TEXT,__text  -[_AFLocationSnapshotMutation getVerticalAccuracy]
+0x198cc67e8  __TEXT,__text  -[_AFLocationSnapshotMutation getAccessState]
+0x198cc6800  __TEXT,__text  -[AFDeviceContextMetadata initWithType:deliveryDate:expirationDate:redactedKeyPaths:historyConfiguration:]
+0x198cc6914  __TEXT,__text  +[AFContextDonationService defaultService]
+0x198cc695c  __TEXT,__text  ___145-[AFLocationSnapshot initWithLatitude:longitude:altitude:direction:speed:verticalAccuracy:horizontalAccuracy:preciseLocationEnabled:accessState:]_block_invoke
+0x198cc6a00  __TEXT,__text  -[_AFLocationSnapshotMutation setLatitude:]
+0x198cc6a38  __TEXT,__text  -[AFLocationSnapshot initWithLatitude:longitude:altitude:direction:speed:verticalAccuracy:horizontalAccuracy:preciseLocationEnabled:accessState:]
+0x198cc6bcc  __TEXT,__text  -[_AFLocationSnapshotMutation initWithBase:]
+0x198cc6c40  __TEXT,__text  -[_AFLocationSnapshotMutation setSpeed:]
+0x198cc6c7c  __TEXT,__text  -[_AFLocationSnapshotMutation setLongitude:]
+0x198cc6cb8  __TEXT,__text  -[_AFLocationSnapshotMutation setAltitude:]
+0x198cc6cf4  __TEXT,__text  -[_AFLocationSnapshotMutation setDirection:]
+0x198cc6d30  __TEXT,__text  -[_AFLocationSnapshotMutation setVerticalAccuracy:]
+0x198cc6d6c  __TEXT,__text  -[_AFLocationSnapshotMutation setHorizontalAccuracy:]
+0x198cc6da8  __TEXT,__text  -[_AFLocationSnapshotMutation setPreciseLocationEnabled:]
+0x198cc6dbc  __TEXT,__text  -[_AFLocationSnapshotMutation setAccessState:]
+0x198cc6dd4  __TEXT,__text  -[_AFLocationSnapshotMutation isDirty]
+0x198cc6de0  __TEXT,__text  -[_AFLocationSnapshotMutation getLatitude]
+0x198cc6e18  __TEXT,__text  -[_AFLocationSnapshotMutation getLongitude]
+0x198cc6e50  __TEXT,__text  -[_AFLocationSnapshotMutation getDirection]
+0x198cc6e88  __TEXT,__text  -[_AFLocationSnapshotMutation getSpeed]
+0x198cc6ec0  __TEXT,__text  -[_AFLocationSnapshotMutation getHorizontalAccuracy]
+0x198cc6ef8  __TEXT,__text  -[_AFLocationSnapshotMutation getPreciseLocationEnabled]
+0x198cc6f10  __TEXT,__text  -[_AFLocationSnapshotMutation .cxx_destruct]
+0x198cc6f90  __TEXT,__text  -[_AFSiriActivationContextMutation setTimestamp:]
+0x198cc70d8  __TEXT,__text  +[AFSiriActivationContext newWithBuilder:]
+0x198cc7120  __TEXT,__text  -[AFSiriActivationContext initWithBuilder:]
+0x198cc723c  __TEXT,__text  -[_AFSiriActivationContextMutation initWithBase:]
+0x198cc72b0  __TEXT,__text  ___AFSiriActivationBuiltInMicVoice_block_invoke
+0x198cc7318  __TEXT,__text  -[_AFSiriActivationContextMutation setEvent:]
+0x198cc7330  __TEXT,__text  -[_AFSiriActivationContextMutation setSource:]
+0x198cc7348  __TEXT,__text  -[_AFSiriActivationContextMutation setUserInfo:]
+0x198cc7384  __TEXT,__text  -[_AFSiriActivationContextMutation isDirty]
+0x198cc7390  __TEXT,__text  -[_AFSiriActivationContextMutation getTimestamp]
+0x198cc7a70  __TEXT,__text  -[_AFSiriActivationContextMutation getOptions]
+0x198cc7a88  __TEXT,__text  -[_AFSiriActivationContextMutation .cxx_destruct]
+0x198cc7acc  __TEXT,__text  -[_AFSiriActivationContextMutation getEvent]
+0x198cc7ae4  __TEXT,__text  -[_AFSiriActivationContextMutation getDeviceID]
+0x198cc7b1c  __TEXT,__text  -[_AFSiriActivationContextMutation getUserInfo]
+0x198cc7b54  __TEXT,__text  -[AFSiriAudioRoute announcePlatformForRoute]
+0x198cc7b5c  __TEXT,__text  -[AFSiriActivationContext event]
+0x198cc7b64  __TEXT,__text  -[AFSiriActivationContext options]
+0x198cc7b6c  __TEXT,__text  -[AFSiriActivationContext source]
+0x198cc7b74  __TEXT,__text  -[_AFSiriActivationContextMutation getSource]
+0x198cc7e24  __TEXT,__text  -[AFSiriActivationContext deviceID]
+0x198cc88a8  __TEXT,__text  -[AFSiriActivationHandlerCoreSpeechDaemon handleContext:completion:]
+0x198cc9020  __TEXT,__text  ___AFSiriActivationVoiceTriggerPrewarm_block_invoke
+0x198cc9258  __TEXT,__text  ____AFSiriActivationGetDefaultHandler_block_invoke
+0x198cc9bb4  __TEXT,__text  -[AFNotifyObserver initWithName:options:queue:delegate:]
+0x198cc9dcc  __TEXT,__text  -[AFSiriActivationConnection initWithServicePort:]
+0x198cc9e78  __TEXT,__text  -[AFSiriActivationHandlerFrontendProcess initWithConnection:]
+0x198cc9fb0  __TEXT,__text  -[_AFSiriActivationContextMutation setOptions:]
+0x198cc9fc4  __TEXT,__text  -[_AFSiriActivationContextMutation setDeviceID:]
+0x198cca000  __TEXT,__text  ___56-[AFNotifyObserver initWithName:options:queue:delegate:]_block_invoke
+0x198cca0f8  __TEXT,__text  -[AFNotifyObserver _updateStateWithToken:]
+0x198cca1f0  __TEXT,__text  -[AFSiriActivationHandlerFrontendProcess handleContext:completion:]
+0x198cca31c  __TEXT,__text  _CSActivationEventNotifierFunction
+0x198cca328  __TEXT,__text  _CSActivationEventFunction
+0x198cca334  __TEXT,__text  -[AFSiriActivationContext userInfo]
+0x198cca33c  __TEXT,__text  -[AFSiriActivationContext timestamp]
+0x198cca344  __TEXT,__text  -[AFRequestInfo setSpeechRequestOptions:]
+0x198cca34c  __TEXT,__text  ___67-[AFSiriActivationHandlerFrontendProcess handleContext:completion:]_block_invoke
+0x198ccad78  __TEXT,__text  -[AFRequestInfo initWithTimestamp:]
+0x198ccade4  __TEXT,__text  -[AFSpeechRequestOptions initWithActivationEvent:]
+0x198ccae30  __TEXT,__text  -[AFSpeechRequestOptions setActivationDeviceIdentifier:]
+0x198ccae38  __TEXT,__text  -[AFSpeechRequestOptions setActivationEventTime:]
+0x198ccae40  __TEXT,__text  -[AFSpeechRequestOptions setVoiceTriggerEventInfo:]
+0x198ccae48  __TEXT,__text  -[AFSpeechRequestOptions setIntuitiveConversationRequestId:]
+0x198ccae50  __TEXT,__text  -[AFSpeechRequestOptions setContinuousConversationInfo:]
+0x198ccae58  __TEXT,__text  -[AFSpeechRequestOptions setScdaContext:]
+0x198ccae60  __TEXT,__text  -[AFSpeechRequestOptions setEndpointerOperationMode:]
+0x198ccae68  __TEXT,__text  -[AFSpeechRequestOptions setActivationEventMachAbsoluteTime:]
+0x198ccae70  __TEXT,__text  -[AFSpeechRequestOptions setHasPlayedStartAlert:]
+0x198ccae78  __TEXT,__text  -[AFSpeechRequestOptions setRaiseToSpeakEventInfo:]
+0x198ccae80  __TEXT,__text  -[AFSpeechRequestOptions setClientAnalyticsContext:]
+0x198ccae88  __TEXT,__text  -[AFSpeechRequestOptions setAnnouncementPlatform:]
+0x198ccae90  __TEXT,__text  -[AFSpeechRequestOptions setAudioFileType:]
+0x198ccae98  __TEXT,__text  -[AFSpeechRequestOptions setAudioFileHandle:]
+0x198ccaea4  __TEXT,__text  -[AFSpeechRequestOptions setApplicationBundleIdentifier:]
+0x198ccaeac  __TEXT,__text  -[AFSpeechRequestOptions copyWithZone:]
+0x198ccb25c  __TEXT,__text  -[AFSpeechRequestOptions setApplicationDisplayName:]
+0x198ccb264  __TEXT,__text  -[AFSpeechRequestOptions setAudioFileURL:]
+0x198ccb26c  __TEXT,__text  -[_AFSiriActivationResultMutation isDirty]
+0x198ccb278  __TEXT,__text  -[AFSpeechRequestOptions setAcousticIdEnabled:]
+0x198ccb280  __TEXT,__text  +[AFSiriActivationResult newWithBuilder:]
+0x198ccb2c8  __TEXT,__text  ___68-[AFSiriActivationHandlerCoreSpeechDaemon handleContext:completion:]_block_invoke
+0x198ccb404  __TEXT,__text  -[_AFSiriActivationResultMutation getActionType]
+0x198ccb41c  __TEXT,__text  -[AFSiriActivationResult initWithBuilder:]
+0x198ccb4f0  __TEXT,__text  -[_AFSiriActivationResultMutation initWithBase:]
+0x198ccb564  __TEXT,__text  -[_AFSiriActivationResultMutation setActionType:]
+0x198ccb578  __TEXT,__text  -[_AFSiriActivationResultMutation setError:]
+0x198ccb5b4  __TEXT,__text  -[_AFSiriActivationResultMutation getError]
+0x198ccb5ec  __TEXT,__text  -[_AFSiriActivationResultMutation .cxx_destruct]
+0x198ccb624  __TEXT,__text  ___68-[AFSiriActivationHandlerCoreSpeechDaemon handleContext:completion:]_block_invoke.1
+0x198ccb670  __TEXT,__text  -[AFSiriActivationContext _descriptionWithIndent:]
+0x198ccb7a8  __TEXT,__text  -[AFSiriActivationContext description]
+0x198ccb7b0  __TEXT,__text  -[AFSpeechRequestOptions setBargeInOptions:]
+0x198ccb7b8  __TEXT,__text  -[AFSpeechRequestOptions setDictationInputOrigin:]
+0x198ccb7c0  __TEXT,__text  -[AFSpeechRequestOptions setDictationVoiceTriggerAbsStartSampleId:]
+0x198ccb7c8  __TEXT,__text  -[AFSpeechRequestOptions setDisableASR:]
+0x198ccb7d0  __TEXT,__text  -[AFSpeechRequestOptions setDisableOutputAudioPowerUpdate:]
+0x198ccb7d8  __TEXT,__text  -[AFSpeechRequestOptions setHomeButtonDownEventMachAbsoluteTime:]
+0x198ccb7e0  __TEXT,__text  -[AFSpeechRequestOptions setHomeButtonDownEventTime:]
+0x198ccb7e8  __TEXT,__text  -[AFSpeechRequestOptions setDisableInputAudioPowerUpdate:]
+0x198ccb7f0  __TEXT,__text  -[AFSpeechRequestOptions setExpectedActivationEventTime:]
+0x198ccb7f8  __TEXT,__text  -[AFSpeechRequestOptions setHomeButtonUpFromBeep:]
+0x198ccb800  __TEXT,__text  -[AFSpeechRequestOptions setIsEyesFree:]
+0x198ccb808  __TEXT,__text  -[AFSpeechRequestOptions setIsInitialBringUp:]
+0x198ccb810  __TEXT,__text  -[AFSpeechRequestOptions setIsHeadphonesAuthenticated:]
+0x198ccb818  __TEXT,__text  -[AFSpeechRequestOptions setHybridUODEnabled:]
+0x198ccb820  __TEXT,__text  -[AFSpeechRequestOptions setIsInAmbient:]
+0x198ccb828  __TEXT,__text  -[AFSpeechRequestOptions setIsOnPhoneCall:]
+0x198ccb830  __TEXT,__text  -[AFSpeechRequestOptions setIsMediaPlaying:]
+0x198ccb838  __TEXT,__text  -[AFSpeechRequestOptions setIsLiveActivitiesSupported:]
+0x198ccb840  __TEXT,__text  -[AFSpeechRequestOptions setIsSystemApertureEnabled:]
+0x198ccb848  __TEXT,__text  -[AFSpeechRequestOptions setIsTest:]
+0x198ccb850  __TEXT,__text  -[AFSpeechRequestOptions setInvocationSource:]
+0x198ccb858  __TEXT,__text  -[AFSpeechRequestOptions setPresentationMode:]
+0x198ccb860  __TEXT,__text  -[AFSpeechRequestOptions setMediaPlaybackVolume:]
+0x198ccb868  __TEXT,__text  -[AFSpeechRequestOptions setNotifyState:]
+0x198ccb870  __TEXT,__text  -[AFSpeechRequestOptions setPendCallbacksUntilAfterContinuation:]
+0x198ccb878  __TEXT,__text  -[AFSpeechRequestOptions setPreheatLanguage:]
+0x198ccb880  __TEXT,__text  -[AFSpeechRequestOptions setLanguageDetectionUserContext:]
+0x198ccb888  __TEXT,__text  -[AFSpeechRequestOptions setPreheatTestModelPath:]
+0x198ccb890  __TEXT,__text  -[AFSpeechRequestOptions setRecordDeviceIdentifier:]
+0x198ccb898  __TEXT,__text  -[AFSpeechRequestOptions setRecordingAlertPolicy:]
+0x198ccb8a0  __TEXT,__text  -[AFSpeechRequestOptions setReleaseAudioSessionOnRecordingCompletion:]
+0x198ccb8a8  __TEXT,__text  -[AFSpeechRequestOptions setReloadSmartSiriVolume:]
+0x198ccb8b0  __TEXT,__text  -[AFSpeechRequestOptions setSpeechPackageOverride:]
+0x198ccb8b8  __TEXT,__text  -[AFSpeechRequestOptions setServerCommandId:]
+0x198ccb8c0  __TEXT,__text  -[AFSpeechRequestOptions setSpeechSynthesisRecord:]
+0x198ccb8c8  __TEXT,__text  -[AFSpeechRequestOptions setSkipGeneratingSpeechPacket:]
+0x198ccb8d0  __TEXT,__text  -[AFSpeechRequestOptions setSkipPersonalizedASR:]
+0x198ccb8d8  __TEXT,__text  -[AFSpeechRequestOptions setSpeechRecordingEventListeningEndpoint:]
+0x198ccb8e4  __TEXT,__text  -[AFSpeechRequestOptions setSmartSiriVolumeTTSType:]
+0x198ccb8ec  __TEXT,__text  -[AFSpeechRequestOptions setStartContext:]
+0x198ccb8f4  __TEXT,__text  -[AFSpeechRequestOptions setStopContext:]
+0x198ccb8fc  __TEXT,__text  -[AFSpeechRequestOptions setTestRequestOptions:]
+0x198ccb904  __TEXT,__text  -[AFSpeechRequestOptions setStopRecordingHostTime:]
+0x198ccb90c  __TEXT,__text  -[AFSpeechRequestOptions setSuppressStopAlert:]
+0x198ccb914  __TEXT,__text  -[AFSpeechRequestOptions setTurnIdentifier:]
+0x198ccb91c  __TEXT,__text  -[AFSpeechRequestOptions setUseAutomaticEndpointing:]
+0x198ccb924  __TEXT,__text  -[AFSpeechRequestOptions setUseBorealisBuffer:]
+0x198ccb92c  __TEXT,__text  -[AFSpeechRequestOptions setBlockAttending:]
+0x198ccb934  __TEXT,__text  -[AFSpeechRequestOptions setSuppressStartAlert:]
+0x198ccb93c  __TEXT,__text  -[AFSpeechRequestOptions setUsePrelisteningMode:]
+0x198ccb944  __TEXT,__text  -[AFSpeechRequestOptions setUserProfileConfidence:]
+0x198ccb94c  __TEXT,__text  -[AFSpeechRequestOptions setUseStreamingDictation:]
+0x198ccb954  __TEXT,__text  -[AFSpeechRequestOptions setUserProfileHeadphoneConnected:]
+0x198ccb95c  __TEXT,__text  -[AFSpeechRequestOptions setUserProfilePersonaId:]
+0x198ccb964  __TEXT,__text  -[AFSiriActivationHandlerFrontendProcess notifyObserver:didChangeStateFrom:to:]
+0x198ccba98  __TEXT,__text  -[AFRemoteRequestWatcher siriActivationListener:prewarmWithRequestInfo:context:completion:]
+0x198ccbb5c  __TEXT,__text  ___91-[AFRemoteRequestWatcher siriActivationListener:prewarmWithRequestInfo:context:completion:]_block_invoke
+0x198ccbbe0  __TEXT,__text  ___71-[AFSiriActivationListener _prewarmWithRequestInfo:context:completion:]_block_invoke
+0x198ccbd08  __TEXT,__text  +[AFSiriActivationResult supportsSecureCoding]
+0x198ccbd10  __TEXT,__text  -[AFSiriActivationResult error]
+0x198ccbd18  __TEXT,__text  -[AFSiriActivationResult .cxx_destruct]
+0x198ccbd24  __TEXT,__text  -[AFSiriActivationContext .cxx_destruct]
+0x198ccbd5c  __TEXT,__text  ___AFSiriActivationPerformLegacy_block_invoke
+0x198ccbe4c  __TEXT,__text  ___AFSiriActivationServiceGetXPCInterface_block_invoke
+0x198ccbe88  __TEXT,__text  -[AFSiriActivationConnection _connection]
+0x198ccc288  __TEXT,__text  -[AFSiriActivationContext encodeWithCoder:]
+0x198ccc3ac  __TEXT,__text  -[AFSpeechRequestOptions activationEvent]
+0x198ccc3b4  __TEXT,__text  ___55-[AFSiriActivationConnection handleContext:completion:]_block_invoke
+0x198ccc4d0  __TEXT,__text  -[AFRequestInfo isSpeechRequest]
+0x198ccc510  __TEXT,__text  -[AFSpeechRequestOptions .cxx_destruct]
+0x198ccc680  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isDeviceSelectionEnabled]
+0x198ccc694  __TEXT,__text  +[AFSiriActivationContext supportsSecureCoding]
+0x198ccc69c  __TEXT,__text  -[AFSiriActivationListener listener:shouldAcceptNewConnection:]
+0x198ccc7fc  __TEXT,__text  ___53-[AFSiriActivationListener handleContext:completion:]_block_invoke_2
+0x198ccc92c  __TEXT,__text  -[AFSiriActivationListener _prewarmWithRequestInfo:context:completion:]
+0x198cccb70  __TEXT,__text  -[AFSiriActivationContext initWithTimestamp:source:event:options:deviceID:userInfo:]
+0x198cccc5c  __TEXT,__text  ___84-[AFSiriActivationContext initWithTimestamp:source:event:options:deviceID:userInfo:]_block_invoke
+0x198ccccdc  __TEXT,__text  -[AFSiriActivationListener handleContext:completion:]
+0x198ccce10  __TEXT,__text  ___53-[AFSiriActivationListener handleContext:completion:]_block_invoke
+0x198ccd380  __TEXT,__text  -[AFSiriActivationContext initWithCoder:]
+0x198ccd5ec  __TEXT,__text  -[AFOneArgumentSafetyBlock invokeWithValue:]
+0x198ccd658  __TEXT,__text  -[AFPreferences longLivedIdentifierUploadingEnabled]
+0x198ccd9a4  __TEXT,__text  -[AFPreferences _registerForLanguageCodeChangeNotifications]
+0x198ccd9f4  __TEXT,__text  -[AFVoiceInfo languageCode]
+0x198ccd9fc  __TEXT,__text  -[AFVoiceInfo name]
+0x198ccda04  __TEXT,__text  -[AFPreferences _registerForOutputVoice]
+0x198ccdad8  __TEXT,__text  -[AFVoiceInfo initWithDictionaryRepresentation:]
+0x198ccdd64  __TEXT,__text  -[AFVoiceInfo gender]
+0x198ccddb8  __TEXT,__text  -[AFVoiceInfo .cxx_destruct]
+0x198ccde08  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isSiriPommesEnabled]
+0x198cce0e0  __TEXT,__text  -[AFPreferences activeDictationLanguages]
+0x198cce260  __TEXT,__text  -[AFPreferences isMediaEntitySyncDisabled]
+0x198cce3e0  __TEXT,__text  -[AFPreferences shouldDisableMediaEntitySync]
+0x198cce634  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isSiriPommesEnabledForLanguage:]
+0x198cce6f8  __TEXT,__text  -[AFPreferences enabledDictationLocales]
+0x198cce77c  __TEXT,__text  -[AFAnalyticsConnection _stopIdleTimer]
+0x198cce7c0  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isPersistentIDLoggingDisabledForType:]
+0x198cce7e8  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isPersistentIDLoggingInternalBuildRuleEnabled]
+0x198cce7fc  __TEXT,__text  -[AFPreferences _outputVoiceWithFallback:]
+0x198cce940  __TEXT,__text  ___92-[AFRemoteRequestWatcher siriActivationListener:activateWithRequestInfo:context:completion:]_block_invoke
+0x198ccec70  __TEXT,__text  ___51-[AFSiriActivationResult initWithActionType:error:]_block_invoke
+0x198ccecc0  __TEXT,__text  ___72-[AFSiriActivationListener _activateWithRequestInfo:context:completion:]_block_invoke
+0x198ccede8  __TEXT,__text  ___92-[AFRemoteRequestWatcher siriActivationListener:activateWithRequestInfo:context:completion:]_block_invoke_2
+0x198ccee00  __TEXT,__text  -[AFSpeechRequestOptions description]
+0x198ccefc8  __TEXT,__text  -[AFSiriActivationResult description]
+0x198ccefd0  __TEXT,__text  -[AFSiriActivationResult _descriptionWithIndent:]
+0x198ccf090  __TEXT,__text  -[AFPreferences _registerForInternalPrefs]
+0x198ccf0b8  __TEXT,__text  -[AFPreferences _registerForAssistantEnablementChangeNotifications]
+0x198ccf108  __TEXT,__text  +[AFError errorWithCode:description:underlyingError:]
+0x198ccf1e4  __TEXT,__text  -[AFSiriActivationConnection handleContext:completion:]
+0x198ccf30c  __TEXT,__text  -[AFOneArgumentSafetyBlock initWithBlock:defaultValue:]
+0x198ccf3a0  __TEXT,__text  +[AFError errorWithCode:]
+0x198ccf3a8  __TEXT,__text  -[AFRequestInfo .cxx_destruct]
+0x198ccf560  __TEXT,__text  ___AFSiriActivationVoiceTriggerActivate_block_invoke
+0x198ccf5d4  __TEXT,__text  +[AFError errorWithCode:description:]
+0x198ccf5dc  __TEXT,__text  -[AFSiriActivationResult actionType]
+0x198ccf5e4  __TEXT,__text  -[AFOneArgumentSafetyBlock dealloc]
+0x198ccf630  __TEXT,__text  -[AFSiriActivationResult initWithActionType:error:]
+0x198ccf6d0  __TEXT,__text  -[AFSiriActivationResult encodeWithCoder:]
+0x198ccf75c  __TEXT,__text  -[AFOneArgumentSafetyBlock .cxx_destruct]
+0x198ccf794  __TEXT,__text  -[AFSiriActivationResult initWithCoder:]
+0x198ccf844  __TEXT,__text  -[AFSiriActivationHandlerFrontendProcess _waitUntilListeningForContext:timeoutInterval:completion:]
+0x198ccfaec  __TEXT,__text  -[AFSiriActivationListener _activateWithRequestInfo:context:completion:]
+0x198ccfd30  __TEXT,__text  -[AFRemoteRequestWatcher siriActivationListener:activateWithRequestInfo:context:completion:]
+0x198ccfe20  __TEXT,__text  ___53-[AFSiriActivationListener handleContext:completion:]_block_invoke.75
+0x198cd0034  __TEXT,__text  -[AFLocationSnapshot .cxx_destruct]
+0x198cd00a8  __TEXT,__text  -[AFLocationSnapshot(ContextSnapshot) serializedBackingStore]
+0x198cd00ac  __TEXT,__text  ___79-[AFContextDonationService donateContext:withMetadata:pushToRemote:completion:]_block_invoke
+0x198cd0430  __TEXT,__text  -[AFContextDonationService donateContext:withMetadata:pushToRemote:completion:]
+0x198cd0554  __TEXT,__text  -[AFLocationSnapshot buildDictionaryRepresentation]
+0x198cd06c0  __TEXT,__text  -[AFContextDonationService donateContext:withMetadata:pushToRemote:]
+0x198cd06c8  __TEXT,__text  -[AFDeviceContextMetadata historyConfiguration]
+0x198cd06d0  __TEXT,__text  -[AFDeviceContextMetadata type]
+0x198cd06d8  __TEXT,__text  -[AFDeviceContextMetadata backingStore]
+0x198cd07fc  __TEXT,__text  -[AFDeviceContext serializedBackingStore]
+0x198cd0850  __TEXT,__text  -[AFDeviceContext initWithSerializedBackingStore:fromLocalDevice:contextCollectorSource:]
+0x198cd09b8  __TEXT,__text  -[AFDeviceContext _serializedBackingStoreIncludingKeys:excludingMandatoryKeys:]
+0x198cd0cac  __TEXT,__text  -[AFDeviceContext fromLocalDevice]
+0x198cd0cb4  __TEXT,__text  -[AFAnalyticsEvent timestamp]
+0x198cd0cbc  __TEXT,__text  -[AFAnalyticsEvent hash]
+0x198cd0da4  __TEXT,__text  -[AFAnalyticsEvent initWithCoder:]
+0x198cd0f04  __TEXT,__text  -[AFAnalyticsEvent isEqual:]
+0x198cd1054  __TEXT,__text  -[AFBulletin bbBulletin]
+0x198cd105c  __TEXT,__text  -[AFPeerInfo buildDictionaryRepresentation]
+0x198cd12c8  __TEXT,__text  -[AFDeviceContext _safeContextDictionary]
+0x198cd1334  __TEXT,__text  -[AFPeerInfo initWithDictionaryRepresentation:]
+0x198cd19c8  __TEXT,__text  -[AFPeerInfo initWithIsDeviceOwnedByCurrentUser:assistantIdentifier:sharedUserIdentifier:idsIdentifier:idsDeviceUniqueIdentifier:rapportEffectiveIdentifier:homeKitAccessoryIdentifier:mediaSystemIdentifier:mediaRouteIdentifier:isCommunalDevice:roomName:name:productType:buildVersion:userInterfaceIdiom
+0x198cd1d00  __TEXT,__text  -[AFPeerInfo initWithBuilder:]
+0x198cd1ff0  __TEXT,__text  ___381-[AFPeerInfo initWithIsDeviceOwnedByCurrentUser:assistantIdentifier:sharedUserIdentifier:idsIdentifier:idsDeviceUniqueIdentifier:rapportEffectiveIdentifier:homeKitAccessoryIdentifier:mediaSystemIdentifier:mediaRouteIdentifier:isCommunalDevice:roomName:name:productType:buildVersion:userInterfac
+0x198cd210c  __TEXT,__text  -[_AFPeerInfoMutation setIsDeviceOwnedByCurrentUser:]
+0x198cd2120  __TEXT,__text  -[_AFPeerInfoMutation setAssistantIdentifier:]
+0x198cd215c  __TEXT,__text  -[_AFPeerInfoMutation setSharedUserIdentifier:]
+0x198cd2198  __TEXT,__text  -[_AFPeerInfoMutation setIdsIdentifier:]
+0x198cd21d4  __TEXT,__text  -[_AFPeerInfoMutation setRapportEffectiveIdentifier:]
+0x198cd2210  __TEXT,__text  -[_AFPeerInfoMutation setRoomName:]
+0x198cd224c  __TEXT,__text  -[AFDeviceContext contextCollectorSource]
+0x198cd2254  __TEXT,__text  -[AFDeviceContext init]
+0x198cd22bc  __TEXT,__text  -[_AFPeerInfoMutation initWithBase:]
+0x198cd2330  __TEXT,__text  -[_AFPeerInfoMutation setHomeKitAccessoryIdentifier:]
+0x198cd236c  __TEXT,__text  -[_AFPeerInfoMutation setMediaRouteIdentifier:]
+0x198cd23a8  __TEXT,__text  -[_AFPeerInfoMutation setIdsDeviceUniqueIdentifier:]
+0x198cd23e4  __TEXT,__text  -[_AFPeerInfoMutation setMediaSystemIdentifier:]
+0x198cd2420  __TEXT,__text  -[_AFPeerInfoMutation setIsCommunalDevice:]
+0x198cd2438  __TEXT,__text  -[_AFPeerInfoMutation setName:]
+0x198cd2474  __TEXT,__text  -[_AFPeerInfoMutation setProductType:]
+0x198cd24b0  __TEXT,__text  -[_AFPeerInfoMutation setBuildVersion:]
+0x198cd24ec  __TEXT,__text  -[_AFPeerInfoMutation setUserInterfaceIdiom:]
+0x198cd2528  __TEXT,__text  -[_AFPeerInfoMutation setIsLocationSharingDevice:]
+0x198cd2544  __TEXT,__text  -[_AFPeerInfoMutation setAceVersion:]
+0x198cd257c  __TEXT,__text  -[_AFPeerInfoMutation getIsDeviceOwnedByCurrentUser]
+0x198cd2594  __TEXT,__text  -[_AFPeerInfoMutation getMyriadTrialTreatment]
+0x198cd25cc  __TEXT,__text  -[_AFPeerInfoMutation isDirty]
+0x198cd25d8  __TEXT,__text  -[AFDeviceContext isValid]
+0x198cd25f8  __TEXT,__text  -[_AFPeerInfoMutation setMyriadTrialTreatment:]
+0x198cd2638  __TEXT,__text  -[_AFPeerInfoMutation getAssistantIdentifier]
+0x198cd2670  __TEXT,__text  -[_AFPeerInfoMutation getSharedUserIdentifier]
+0x198cd26a8  __TEXT,__text  -[_AFPeerInfoMutation getIdsIdentifier]
+0x198cd26e0  __TEXT,__text  -[_AFPeerInfoMutation getIdsDeviceUniqueIdentifier]
+0x198cd2718  __TEXT,__text  -[_AFPeerInfoMutation getRapportEffectiveIdentifier]
+0x198cd2750  __TEXT,__text  -[_AFPeerInfoMutation getHomeKitAccessoryIdentifier]
+0x198cd2788  __TEXT,__text  -[_AFPeerInfoMutation getMediaSystemIdentifier]
+0x198cd27c0  __TEXT,__text  -[_AFPeerInfoMutation getIsCommunalDevice]
+0x198cd27d8  __TEXT,__text  -[_AFPeerInfoMutation getName]
+0x198cd2810  __TEXT,__text  -[_AFPeerInfoMutation getProductType]
+0x198cd2848  __TEXT,__text  -[_AFPeerInfoMutation getBuildVersion]
+0x198cd2880  __TEXT,__text  -[_AFPeerInfoMutation getUserInterfaceIdiom]
+0x198cd28b8  __TEXT,__text  -[_AFPeerInfoMutation getAceVersion]
+0x198cd28f0  __TEXT,__text  -[_AFPeerInfoMutation getIsLocationSharingDevice]
+0x198cd2984  __TEXT,__text  -[_AFPeerInfoMutation getMediaRouteIdentifier]
+0x198cd29bc  __TEXT,__text  -[_AFPeerInfoMutation getRoomName]
+0x198cd29f4  __TEXT,__text  -[_AFPeerInfoMutation getIsSiriCloudSyncEnabled]
+0x198cd2a0c  __TEXT,__text  -[_AFPeerInfoMutation setIsSiriCloudSyncEnabled:]
+0x198cd2a28  __TEXT,__text  -[_AFPeerInfoMutation .cxx_destruct]
+0x198cd2b08  __TEXT,__text  -[AFPeerInfo .cxx_destruct]
+0x198cd2bdc  __TEXT,__text  -[AFDeviceContext .cxx_destruct]
+0x198cd2c38  __TEXT,__text  -[AFDeviceContextMetadata .cxx_destruct]
+0x198cd2ca0  __TEXT,__text  -[AFAnalytics logInstrumentation:machAbsoluteTime:turnIdentifier:]
+0x198cd2e5c  __TEXT,__text  -[AFPreferences siriResponseShouldAlwaysPrint]
+0x198cd2ea0  __TEXT,__text  -[AFAnalytics logEvent:]
+0x198cd2f38  __TEXT,__text  -[AFConnection _updateClientConfiguration]
+0x198cd2fa8  __TEXT,__text  -[AFConnection _shouldEmitUEIRequestLinkForRequestInfo:speechRequestOptions:]
+0x198cd3044  __TEXT,__text  -[AFSpeechRequestOptions turnIdentifier]
+0x198cd304c  __TEXT,__text  -[AFSpeechRequestOptions activationEventTime]
+0x198cd3054  __TEXT,__text  ___64-[AFAnalyticsConnection stageUEIEventData:timestamp:completion:]_block_invoke
+0x198cd3064  __TEXT,__text  ___65-[AFAnalyticsConnection _stageUEIEventData:timestamp:completion:]_block_invoke
+0x198cd30ac  __TEXT,__text  -[AFAnalyticsConnection _stageUEIEventData:timestamp:completion:]
+0x198cd36c0  __TEXT,__text  ___97-[NSData(AFSecurityDigestibleChunksProvider) af_enumerateDigestibleChunksWithOptions:usingBlock:]_block_invoke
+0x198cd39f0  __TEXT,__text  -[NSData(AFSecurityDigestibleChunksProvider) af_enumerateDigestibleChunksWithOptions:usingBlock:]
+0x198cd3b4c  __TEXT,__text  -[AFSiriClientStateManager _stateForClient:createIfAbsent:]
+0x198cd3bc0  __TEXT,__text  -[AFVoiceInfo footprint]
+0x198cd3bdc  __TEXT,__text  ___AFSecurityDigestChunksWithProvider_block_invoke
+0x198cd3bec  __TEXT,__text  ___AFSecurityDigestChunksWithProvider_block_invoke_2
+0x198cd3cc4  __TEXT,__text  -[AFPreferences useDeviceSpeakerForTTS]
+0x198cd3d28  __TEXT,__text  -[AFPreferences(Accessibility) appleIntelligenceFallbackEnabled]
+0x198cd3d88  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isLinwoodEnabled]
+0x198cd3df4  __TEXT,__text  -[AFConnection _connection]
+0x198cd4098  __TEXT,__text  -[AFRequestInfo description]
+0x198cd4300  __TEXT,__text  -[AFSpeechRequestOptions acousticIdEnabled]
+0x198cd4308  __TEXT,__text  -[AFSiriClientStateManager _aggregateStatesAndPublishIfNeeded]
+0x198cd4490  __TEXT,__text  -[AFSiriAvailability status]
+0x198cd4498  __TEXT,__text  -[AFSiriAvailability initWithStatus:restrictionReasons:isAvailable:siriLocale:desiredOrchestrationMode:desiredOrchestrationModeIfEnabled:currentOrchestrationMode:unavailabilityReasons:allCapabilities:linwoodEverAvailable:bootUUID:]
+0x198cd459c  __TEXT,__text  -[AFConnection(Internal) _clientService]
+0x198cd45dc  __TEXT,__text  +[AFAnalyticsEvent supportsSecureCoding]
+0x198cd45e4  __TEXT,__text  -[AFPreferences designModeIsEnabled]
+0x198cd464c  __TEXT,__text  -[AFSpeechRequestOptions startContext]
+0x198cd4654  __TEXT,__text  -[AFRequestInfo resumeSessionId]
+0x198cd465c  __TEXT,__text  -[AFRequestInfo speechRequestOptions]
+0x198cd46bc  __TEXT,__text  __AFAnalyticsEventCreate
+0x198cd493c  __TEXT,__text  +[AFSystemAssistantExperienceStatusManager saeAvailable]
+0x198cd4ab0  __TEXT,__text  -[AFSpeechRequestOptions activationDeviceIdentifier]
+0x198cd4b20  __TEXT,__text  -[AFPreferences alwaysAllowVoiceActivation]
+0x198cd4b48  __TEXT,__text  -[AFSpeechRequestOptions isVoiceTrigger]
+0x198cd4b6c  __TEXT,__text  -[AFSpeechRequestOptions scdaContext]
+0x198cd4b74  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isSCDATrialEnabled]
+0x198cd4d60  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isCDAFaceDetectionEnabled]
+0x198cd4e44  __TEXT,__text  +[AFAnalytics sharedAnalytics]
+0x198cd4e8c  __TEXT,__text  -[AFAnalytics logEvents:]
+0x198cd4f24  __TEXT,__text  +[AFSpeechRequestOptions supportsSecureCoding]
+0x198cd4f2c  __TEXT,__text  -[AFSpeechRequestOptions initWithCoder:]
+0x198cd59bc  __TEXT,__text  -[AFSpeechRequestOptions voiceTriggerEventInfo]
+0x198cd59c4  __TEXT,__text  -[AFAnalytics _stageEvents:]
+0x198cd5a28  __TEXT,__text  ___25-[AFAnalytics logEvents:]_block_invoke
+0x198cd5b28  __TEXT,__text  -[AFAnalyticsEvent encodeWithCoder:]
+0x198cd5c08  __TEXT,__text  -[AFAnalytics _service:]
+0x198cd5c74  __TEXT,__text  -[AFAnalyticsConnection stageEvents:completion:]
+0x198cd5dd8  __TEXT,__text  -[AFAnalyticsConnection _willStartSendingEvents:]
+0x198cd5e24  __TEXT,__text  ___48-[AFAnalyticsConnection stageEvents:completion:]_block_invoke
+0x198cd5e30  __TEXT,__text  ___48-[AFAnalyticsConnection stageEvents:completion:]_block_invoke_2
+0x198cd5ee8  __TEXT,__text  -[AFAnalyticsConnection _sendEvents:numberOfRetries:completion:]
+0x198cd605c  __TEXT,__text  -[AFAnalyticsConnection _connection]
+0x198cd6248  __TEXT,__text  ___64-[AFAnalyticsConnection _sendEvents:numberOfRetries:completion:]_block_invoke_4
+0x198cd6258  __TEXT,__text  -[AFAnalyticsConnection _handleSuccessCallbackForEvents:completion:]
+0x198cd6274  __TEXT,__text  ___48-[AFAnalyticsConnection stageEvents:completion:]_block_invoke_3
+0x198cd62c0  __TEXT,__text  -[AFAnalyticsConnection _didFinishSendingEvents:]
+0x198cd630c  __TEXT,__text  ___64-[AFAnalyticsConnection _sendEvents:numberOfRetries:completion:]_block_invoke_3
+0x198cd63b4  __TEXT,__text  -[AFAnalyticsConnection _startIdleTimer]
+0x198cd64c4  __TEXT,__text  -[AFRequestInfo encodeWithCoder:]
+0x198cd68d8  __TEXT,__text  -[AFSpeechRequestOptions encodeWithCoder:]
+0x198cd6f88  __TEXT,__text  -[AFInvocationContext setInvocationSource:]
+0x198cd6f90  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isCrossSessionEnabled]
+0x198cd6fa4  __TEXT,__text  -[AFConnection _siriClientStateManager]
+0x198cd6ff0  __TEXT,__text  -[AFConnection(Internal) _clientConfiguration]
+0x198cd70e8  __TEXT,__text  -[AFAccessibilityState copyWithZone:]
+0x198cd70ec  __TEXT,__text  -[AFClientConfiguration initWithBuilder:]
+0x198cd72b0  __TEXT,__text  -[_AFClientConfigurationMutation initWithBase:]
+0x198cd7324  __TEXT,__text  -[AFRequestInfo initWithCoder:]
+0x198cd7bb0  __TEXT,__text  -[AFClientConfiguration tapToSiriAudioPlaybackRequest]
+0x198cd7bb8  __TEXT,__text  -[_AFClientConfigurationMutation getAccessibilityState]
+0x198cd7bf0  __TEXT,__text  -[_AFClientConfigurationMutation getIsDeviceInStarkMode]
+0x198cd7c08  __TEXT,__text  -[_AFClientConfigurationMutation getIsDeviceInCarDNDMode]
+0x198cd7c20  __TEXT,__text  -[_AFClientConfigurationMutation getAreAnnouncementRequestsPermittedByPresentationWhileActive]
+0x198cd7c38  __TEXT,__text  -[_AFClientConfigurationMutation getIsDeviceWatchAuthenticated]
+0x198cd7c50  __TEXT,__text  -[_AFClientConfigurationMutation getOutputVolume]
+0x198cd7c68  __TEXT,__text  -[_AFClientConfigurationMutation getTapToSiriAudioPlaybackRequest]
+0x198cd7ca0  __TEXT,__text  -[_AFClientConfigurationMutation getTwoShotAudioPlaybackRequest]
+0x198cd7cd8  __TEXT,__text  -[_AFClientConfigurationMutation getDeviceSetupFlowBeginDate]
+0x198cd7d10  __TEXT,__text  -[_AFClientConfigurationMutation getDeviceSetupFlowEndDate]
+0x198cd7d48  __TEXT,__text  -[_AFClientConfigurationMutation getIsEyesFreeDevice]
+0x198cd7d60  __TEXT,__text  -[_AFClientConfigurationMutation .cxx_destruct]
+0x198cd7dc8  __TEXT,__text  -[AFClientConfiguration copyWithZone:]
+0x198cd7dcc  __TEXT,__text  -[AFClientConfiguration(AFClientConfigurationMutability) mutatedCopyWithMutator:]
+0x198cd7f98  __TEXT,__text  +[AFRequestInfo supportsSecureCoding]
+0x198cd7fa0  __TEXT,__text  -[_AFClientConfigurationMutation setIsEyesFreeDevice:]
+0x198cd7fb8  __TEXT,__text  -[_AFClientConfigurationMutation isDirty]
+0x198cd7fc4  __TEXT,__text  -[_AFClientConfigurationMutation getSupportsCarPlayVehicleData]
+0x198cd7fdc  __TEXT,__text  -[_AFClientConfigurationMutation getCarOwnsMainAudio]
+0x198cd7ff4  __TEXT,__text  -[AFClientConfiguration init]
+0x198cd7ffc  __TEXT,__text  -[AFClientConfiguration accessibilityState]
+0x198cd8004  __TEXT,__text  -[AFClientConfiguration isDeviceInCarDNDMode]
+0x198cd800c  __TEXT,__text  -[AFClientConfiguration isDeviceInStarkMode]
+0x198cd8014  __TEXT,__text  -[AFClientConfiguration deviceRingerSwitchState]
+0x198cd801c  __TEXT,__text  -[_AFClientConfigurationMutation getDeviceRingerSwitchState]
+0x198cd8034  __TEXT,__text  -[AFExplicitRequestContext agentDestination]
+0x198cd803c  __TEXT,__text  -[AFClientConfiguration areAnnouncementRequestsPermittedByPresentationWhileActive]
+0x198cd8044  __TEXT,__text  -[AFClientConfiguration outputVolume]
+0x198cd804c  __TEXT,__text  -[AFClientConfiguration twoShotAudioPlaybackRequest]
+0x198cd8054  __TEXT,__text  -[AFClientConfiguration deviceSetupFlowBeginDate]
+0x198cd805c  __TEXT,__text  -[AFClientConfiguration deviceSetupFlowEndDate]
+0x198cd8064  __TEXT,__text  -[AFClientConfiguration supportsCarPlayVehicleData]
+0x198cd806c  __TEXT,__text  -[AFClientConfiguration carOwnsMainAudio]
+0x198cd8074  __TEXT,__text  -[AFClientConfiguration isDeviceWatchAuthenticated]
+0x198cd807c  __TEXT,__text  -[AFInvocationContext invocationSource]
+0x198cd8084  __TEXT,__text  -[AFExplicitRequestContext init]
+0x198cd808c  __TEXT,__text  -[AFExplicitRequestContext initWithFileAttachments:]
+0x198cd80fc  __TEXT,__text  -[AFAgentDestination initWithSiri]
+0x198cd8158  __TEXT,__text  -[AFExplicitRequestContext setAgentDestination:]
+0x198cd8160  __TEXT,__text  -[AFAgentDestination copyWithZone:]
+0x198cd81b8  __TEXT,__text  -[AFAgentDestination setExternalProviderID:]
+0x198cd81c0  __TEXT,__text  -[AFAgentDestination .cxx_destruct]
+0x198cd81cc  __TEXT,__text  -[AFRequestInfo setExplicitRequestContext:]
+0x198cd81d4  __TEXT,__text  -[AFExplicitRequestContext copyWithZone:]
+0x198cd8250  __TEXT,__text  -[AFExplicitRequestContext setAssociatedEntities:]
+0x198cd8258  __TEXT,__text  -[AFRequestInfo explicitRequestContext]
+0x198cd8260  __TEXT,__text  -[AFAgentDestination setAgentDestinationType:]
+0x198cd8268  __TEXT,__text  -[AFConnection setIsEyesFree:]
+0x198cd8380  __TEXT,__text  -[AFClientConfiguration .cxx_destruct]
+0x198cd8450  __TEXT,__text  -[SISchemaClientTurnContext setTurnID:]
+0x198cd8464  __TEXT,__text  -[AFAnalyticsTurnBasedInstrumentationContext turnIdentifier]
+0x198cd846c  __TEXT,__text  -[AFAnalytics(Instrumentation) newTurnBasedInstrumentationContext]
+0x198cd8480  __TEXT,__text  +[AFAnalyticsTurnBasedInstrumentationContext newTurnBasedContextWithPreviousTurnID:analytics:]
+0x198cd857c  __TEXT,__text  -[AFAnalyticsTurnBasedInstrumentationContext init]
+0x198cd85c8  __TEXT,__text  -[AFAnalyticsTurnBasedInstrumentationContext initWithTurnIdentifier:]
+0x198cd8674  __TEXT,__text  -[AFAnalyticsTurnBasedInstrumentationContext emitInstrumentation:]
+0x198cd86dc  __TEXT,__text  -[AFAnalytics logInstrumentation:machAbsoluteTime:turnContext:]
+0x198cd89b4  __TEXT,__text  ___30-[AFConnection setIsEyesFree:]_block_invoke
+0x198cd89c0  __TEXT,__text  -[AFAnalytics logInstrumentation:turnContext:]
+0x198cd8a28  __TEXT,__text  -[AFAnalytics logInstrumentationOfType:turnIdentifier:]
+0x198cd8a7c  __TEXT,__text  -[AFAnalytics logInstrumentationOfType:machAbsoluteTime:turnIdentifier:]
+0x198cd8b28  __TEXT,__text  -[AFConnection _cancelRequestTimeoutForReason:]
+0x198cd8be4  __TEXT,__text  ___72-[AFAnalytics logInstrumentationOfType:machAbsoluteTime:turnIdentifier:]_block_invoke
+0x198cd8c4c  __TEXT,__text  -[AFAnalyticsConnection logInstrumentationOfType:machAbsoluteTime:turnIdentifier:]
+0x198cd8d14  __TEXT,__text  ___82-[AFAnalyticsConnection logInstrumentationOfType:machAbsoluteTime:turnIdentifier:]_block_invoke
+0x198cd8d78  __TEXT,__text  -[SISchemaClientTurnContext turnID]
+0x198cd8d8c  __TEXT,__text  -[AFAnalyticsConnection stageUEIEventData:timestamp:completion:]
+0x198cd8e54  __TEXT,__text  ___63-[AFAnalytics logInstrumentation:machAbsoluteTime:turnContext:]_block_invoke
+0x198cd8f38  __TEXT,__text  -[AFExplicitRequestContext .cxx_destruct]
+0x198cd8f7c  __TEXT,__text  -[_AFModesConfigurationMutation getIsUIFree]
+0x198cd8f94  __TEXT,__text  -[_AFModesConfigurationMutation getIsVoiceTriggerRequest]
+0x198cd8fac  __TEXT,__text  -[_AFModesConfigurationMutation getUserTypedInSiri]
+0x198cd8fc4  __TEXT,__text  -[_AFModesConfigurationMutation getModeOverrideValue]
+0x198cd8ffc  __TEXT,__text  -[AFAnalyticsTurnBasedInstrumentationContext emitInstrumentation:machAbsoluteTime:]
+0x198cd906c  __TEXT,__text  -[_AFModesConfigurationMutation setIsInVoiceModeInCanvas:]
+0x198cd9088  __TEXT,__text  -[AFModesConfiguration initWithBuilder:]
+0x198cd921c  __TEXT,__text  -[_AFModesConfigurationMutation getIsInitialBringUp]
+0x198cd9234  __TEXT,__text  -[_AFModesConfigurationMutation getIsInVoiceModeInCanvas]
+0x198cd924c  __TEXT,__text  -[_AFModesConfigurationMutation getIsUserEngagedWithDevice]
+0x198cd9264  __TEXT,__text  -[AFPreferences showServerOnUI]
+0x198cd9310  __TEXT,__text  -[AFRequestInfo setTurnIdentifier:]
+0x198cd9318  __TEXT,__text  -[_AFModesConfigurationMutation setIsEyesFree:]
+0x198cd932c  __TEXT,__text  -[_AFModesConfigurationMutation setIsForCarDND:]
+0x198cd9344  __TEXT,__text  -[_AFModesConfigurationMutation setIsVoiceTriggerRequest:]
+0x198cd935c  __TEXT,__text  -[_AFModesConfigurationMutation setIsConnectedToCarPlay:]
+0x198cd9374  __TEXT,__text  -[_AFModesConfigurationMutation setIsSiriAutoPrompt:]
+0x198cd938c  __TEXT,__text  -[_AFModesConfigurationMutation setIsFlexibleFollowup:]
+0x198cd93a4  __TEXT,__text  -[_AFModesConfigurationMutation setIsRequestMadeWithPhysicalDeviceInteraction:]
+0x198cd93bc  __TEXT,__text  -[_AFModesConfigurationMutation setUserTypedInSiri:]
+0x198cd93d4  __TEXT,__text  -[_AFModesConfigurationMutation setIsDeviceUnlocked:]
+0x198cd93ec  __TEXT,__text  -[_AFModesConfigurationMutation setIsInAmbient:]
+0x198cd9404  __TEXT,__text  -[_AFModesConfigurationMutation setIsDeviceScreenON:]
+0x198cd941c  __TEXT,__text  -[_AFModesConfigurationMutation isDirty]
+0x198cd9428  __TEXT,__text  -[AFModesConfiguration init]
+0x198cd9430  __TEXT,__text  -[_AFModesConfigurationMutation getIsEyesFree]
+0x198cd9448  __TEXT,__text  -[AFModesConfiguration isUIFree]
+0x198cd9450  __TEXT,__text  -[_AFModesConfigurationMutation getIsForCarDND]
+0x198cd9468  __TEXT,__text  -[_AFModesConfigurationMutation getIsInAmbient]
+0x198cd9480  __TEXT,__text  -[_AFModesConfigurationMutation getIsMapsNavigationActive]
+0x198cd9498  __TEXT,__text  -[AFModesConfiguration(AFModesConfigurationMutability) mutatedCopyWithMutator:]
+0x198cd9634  __TEXT,__text  -[_AFModesConfigurationMutation initWithBase:]
+0x198cd96a8  __TEXT,__text  -[_AFModesConfigurationMutation setIsUserEngagedWithDevice:]
+0x198cd96c4  __TEXT,__text  -[_AFModesConfigurationMutation getIsConnectedToCarPlay]
+0x198cd96dc  __TEXT,__text  -[_AFModesConfigurationMutation getIsRequestMadeWithPhysicalDeviceInteraction]
+0x198cd96f4  __TEXT,__text  -[_AFModesConfigurationMutation getIsAudioAccessoryButtonActivation]
+0x198cd970c  __TEXT,__text  -[AFModesConfiguration isAudioAccessoryButtonActivation]
+0x198cd9714  __TEXT,__text  -[_AFModesConfigurationMutation getIsSiriAutoPrompt]
+0x198cd972c  __TEXT,__text  -[AFModesConfiguration .cxx_destruct]
+0x198cd9738  __TEXT,__text  -[AFModesConfiguration isMapsNavigationActive]
+0x198cd9740  __TEXT,__text  -[_AFModesConfigurationMutation getIsFlexibleFollowup]
+0x198cd9758  __TEXT,__text  -[_AFModesConfigurationMutation getIsDeviceUnlocked]
+0x198cd9770  __TEXT,__text  -[_AFModesConfigurationMutation getIsDeviceScreenON]
+0x198cd9788  __TEXT,__text  -[AFModesConfiguration isInitialBringUp]
+0x198cd9790  __TEXT,__text  -[_AFModesConfigurationMutation .cxx_destruct]
+0x198cd97c8  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isSharedBackedUpMigrationEnabled]
+0x198cd9864  __TEXT,__text  -[AFRequestInfo turnIdentifier]
+0x198cd986c  __TEXT,__text  -[AFSpeechRequestOptions setActivationEvent:]
+0x198cd9874  __TEXT,__text  -[AFSpeechRequestOptions presentationMode]
+0x198cd987c  __TEXT,__text  -[AFSpeechRequestOptions isInAmbient]
+0x198cd9884  __TEXT,__text  -[AFSpeechRequestOptions userProfileHeadphoneConnected]
+0x198cd988c  __TEXT,__text  -[AFConnection isRecording]
+0x198cd9898  __TEXT,__text  -[AFSiriClientStateManager beginTransactionForReason:]
+0x198cd990c  __TEXT,__text  -[AFSiriClientStateManager beginListeningForClient:]
+0x198cd9988  __TEXT,__text  -[AFConnection _requestWillBeginWithRequestClass:isSpeechRequest:speechRequestOptions:requestInfo:analyticsEventProvider:]
+0x198cd9994  __TEXT,__text  -[AFModesConfiguration modeOverrideValue]
+0x198cd999c  __TEXT,__text  -[AFSpeechRequestOptions isHeadphonesAuthenticated]
+0x198cd99a4  __TEXT,__text  -[AFConnection startRecordingAndGetContinueBlockForPendingSpeechRequestWithOptions:]
+0x198cd9d78  __TEXT,__text  +[AFAggregator logSiriInvokedVia:]
+0x198cd9e44  __TEXT,__text  -[AFConnection _requestWillBeginWithRequestClass:isSpeechRequest:speechRequestOptions:requestInfo:isBackgroundRequest:analyticsEventProvider:]
+0x198cda048  __TEXT,__text  -[AFSpeechSynthesisRecord copyWithZone:]
+0x198cda04c  __TEXT,__text  -[AFModesConfiguration description]
+0x198cda054  __TEXT,__text  -[AFModesConfiguration _descriptionWithIndent:]
+0x198cda258  __TEXT,__text  ___54-[AFSiriClientStateManager beginTransactionForReason:]_block_invoke
+0x198cda3e4  __TEXT,__text  -[AFSiriClientStateManager _beginListeningForClient:]
+0x198cda434  __TEXT,__text  ___52-[AFSiriClientStateManager beginListeningForClient:]_block_invoke
+0x198cda440  __TEXT,__text  -[_AFSiriClientState setIsListening:]
+0x198cda448  __TEXT,__text  -[AFSiriClientStateManager _beginRequestWithUUID:forClient:]
+0x198cda4b8  __TEXT,__text  ___59-[AFSiriClientStateManager beginRequestWithUUID:forClient:]_block_invoke
+0x198cda4c8  __TEXT,__text  -[_AFSiriClientState addRequestUUID:]
+0x198cda4d0  __TEXT,__text  -[SISchemaClientTurnContext .cxx_destruct]
+0x198cda4e4  __TEXT,__text  -[AFConnection _checkAndSetIsCapturingSpeech:]
+0x198cda5bc  __TEXT,__text  -[AFConnection _willStartRequestWithSpeech:speechRequestOptions:requestInfo:analyticsEventProvider:]
+0x198cdb0f0  __TEXT,__text  -[AFSpeechRequestOptions clientAnalyticsContext]
+0x198cdb0f8  __TEXT,__text  -[AFSpeechRequestOptions isMediaPlaying]
+0x198cdb100  __TEXT,__text  -[AFPreferences alwaysShowRecognizedSpeech]
+0x198cdb110  __TEXT,__text  -[AFPreferences alwaysObscureBackgroundContentWhenActive]
+0x198cdb120  __TEXT,__text  -[AFConnection _metricContextValueForUseDeviceSpeakerForTTS:]
+0x198cdb144  __TEXT,__text  -[AFSpeechRequestOptions usePrelisteningMode]
+0x198cdb14c  __TEXT,__text  -[AFSpeechRequestOptions useBorealisBuffer]
+0x198cdb154  __TEXT,__text  -[AFSpeechRequestOptions reloadSmartSiriVolume]
+0x198cdb15c  __TEXT,__text  -[AFSpeechRequestOptions notifyState]
+0x198cdb164  __TEXT,__text  -[AFSpeechRequestOptions audioFileURL]
+0x198cdb16c  __TEXT,__text  -[AFSpeechRequestOptions bargeInOptions]
+0x198cdb174  __TEXT,__text  -[AFConnection _startRequestMetricSettings]
+0x198cdb36c  __TEXT,__text  -[AFSpeechRequestOptions intuitiveConversationRequestId]
+0x198cdb374  __TEXT,__text  -[AFConnection _willCancelRequest]
+0x198cdb598  __TEXT,__text  -[AFConnection _endInterstitialsForReason:]
+0x198cdb674  __TEXT,__text  -[AFSiriClientStateManager beginRequestWithUUID:forClient:]
+0x198cdb724  __TEXT,__text  -[AFConnection _completeRequestWithUUID:forReason:error:]
+0x198cdbac8  __TEXT,__text  -[AFConnection _requestDidEnd]
+0x198cdbba0  __TEXT,__text  ___84-[AFConnection startRecordingAndGetContinueBlockForPendingSpeechRequestWithOptions:]_block_invoke
+0x198cdbdc8  __TEXT,__text  -[AFSpeechRequestOptions serverCommandId]
+0x198cdc1f8  __TEXT,__text  -[AFSpeechRequestOptions isEyesFree]
+0x198cdc200  __TEXT,__text  -[AFSpeechRequestOptions useAutomaticEndpointing]
+0x198cdc208  __TEXT,__text  -[AFSpeechRequestOptions useStreamingDictation]
+0x198cdc210  __TEXT,__text  -[AFSpeechRequestOptions isInitialBringUp]
+0x198cdc218  __TEXT,__text  +[AFSystemAssistantExperienceStatusManager deviceSupportsSAE]
+0x198cdc2c4  __TEXT,__text  +[AFInstanceContext defaultContext]
+0x198cdc30c  __TEXT,__text  -[AFInstanceContextHost createXPCConnectionWithMachServiceName:options:]
+0x198cdc8b8  __TEXT,__text  __AFTop13Locales
+0x198cdc900  __TEXT,__text  ___AFAssetsAvailabilityMatchesRequiredAssets_block_invoke
+0x198cdc980  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isAsrOnServerForUODEnabled]
+0x198cdca20  __TEXT,__text  -[AFAuthKitManager protoAgeRange]
+0x198cdcc2c  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isSAELocaleOverrideEnabled]
+0x198cdccd4  __TEXT,__text  -[AFSettingsConnection getAssetStatusForLanguage:completionHandler:]
+0x198cdcd98  __TEXT,__text  -[AFSettingsConnection _settingsServiceWithErrorHandler:]
+0x198cdcdf8  __TEXT,__text  -[AFSettingsConnection _connection]
+0x198cdda5c  __TEXT,__text  -[AFSettingsConnectionServiceDelegate initWithSettingsConnection:]
+0x198cddac4  __TEXT,__text  -[AFSettingsConnection _clearConnection]
+0x198cddb70  __TEXT,__text  ___35-[AFSettingsConnection _connection]_block_invoke
+0x198cddc0c  __TEXT,__text  -[AFSettingsConnectionServiceDelegate .cxx_destruct]
+0x198cdddd0  __TEXT,__text  +[AFSiriCapabilities requiredUseCaseIdentifiersForOrchestrationMode:]
+0x198cde054  __TEXT,__text  -[AFPreferences(Accessibility) appleIntelligenceFallbackExplicitlySet]
+0x198cde09c  __TEXT,__text  -[AFSiriAvailability restrictionReasons]
+0x198cde100  __TEXT,__text  +[AFSiriAvailability copyBootSessionUUID]
+0x198cde164  __TEXT,__text  -[AFSiriAvailability toDictionary]
+0x198cde548  __TEXT,__text  -[AFSiriAvailability currentOrchestrationMode]
+0x198cde594  __TEXT,__text  -[AFSiriAvailability isEqualToAvailability:]
+0x198cde958  __TEXT,__text  -[AFSiriAvailability linwoodEverAvailable]
+0x198cde960  __TEXT,__text  -[AFSiriAvailability fromCurrentBoot]
+0x198cde9e4  __TEXT,__text  -[AFConnection shouldSpeak]
+0x198cde9f0  __TEXT,__text  -[AFSiriAvailability desiredOrchestrationModeIfEnabled]
+0x198cde9f8  __TEXT,__text  -[AFSiriAvailability allCapabilities]
+0x198cdea0c  __TEXT,__text  -[AFSiriAvailability bootUUID]
+0x198cdea14  __TEXT,__text  -[AFNetworkAvailability isAvailable]
+0x198cdeb18  __TEXT,__text  -[AFInvocationContext copyWithZone:]
+0x198cdeb70  __TEXT,__text  -[AFInvocationContext setTargetWindow:]
+0x198cdeb78  __TEXT,__text  +[AFHearablesExperienceManager sharedManager]
+0x198cdebc0  __TEXT,__text  -[AFLocationService dealloc]
+0x198cdec1c  __TEXT,__text  -[AFLocationService .cxx_destruct]
+0x198cdec28  __TEXT,__text  -[AFConnection _setShouldSpeak:]
+0x198cded40  __TEXT,__text  -[AFPreferences dialogType]
+0x198cded8c  __TEXT,__text  -[AFInstanceContextHost description]
+0x198cdee0c  __TEXT,__text  -[AFInvocationContext description]
+0x198cdee84  __TEXT,__text  -[AFConversation identifier]
+0x198cdee8c  __TEXT,__text  -[AFSiriClientStateManager beginSessionForClient:]
+0x198cdef08  __TEXT,__text  -[_AFSiriClientState setHasActiveSession:]
+0x198cdef10  __TEXT,__text  +[AFInvocationContext supportsSecureCoding]
+0x198cdef18  __TEXT,__text  -[AFInvocationContext initWithCoder:]
+0x198cdefb8  __TEXT,__text  -[AFPreferences myriadMonitorTimeOutInterval]
+0x198cdf02c  __TEXT,__text  -[AFInstanceInfo applicationType]
+0x198cdf034  __TEXT,__text  -[AFInstanceContextHost info]
+0x198cdf03c  __TEXT,__text  +[AFLocalization sharedInstance]
+0x198cdf084  __TEXT,__text  -[AFLinkedListItem insertBeforeItem:]
+0x198cdf110  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isCampoEnabled]
+0x198cdf124  __TEXT,__text  -[AFConversationStore init]
+0x198cdf1c0  __TEXT,__text  +[AFSiriClientStateManager sharedManager]
+0x198cdf208  __TEXT,__text  -[AFConversation initWithLanguageCode:]
+0x198cdf270  __TEXT,__text  -[AFConversation initWithIdentifier:languageCode:]
+0x198cdf2e8  __TEXT,__text  -[AFConversation initWithIdentifier:languageCode:rootNode:]
+0x198cdf3b0  __TEXT,__text  -[AFConversation setDelegate:]
+0x198cdf3bc  __TEXT,__text  -[AFConnection resumeSessionWithId:invocationContext:]
+0x198cdf5cc  __TEXT,__text  -[AFConnectionClientServiceDelegate initWithConnection:targetQueue:]
+0x198cdf678  __TEXT,__text  -[AFInvocationContext encodeWithCoder:]
+0x198cdf6d8  __TEXT,__text  -[AFConnection willPresentUI]
+0x198cdf73c  __TEXT,__text  -[AFSiriClientStateManager _beginSessionForClient:]
+0x198cdf78c  __TEXT,__text  ___50-[AFSiriClientStateManager beginSessionForClient:]_block_invoke
+0x198cdf798  __TEXT,__text  -[_AFSiriClientState init]
+0x198cdf874  __TEXT,__text  -[AFConnection initWithTargetQueue:]
+0x198cdf87c  __TEXT,__text  -[AFConnection initWithTargetQueue:instanceContext:]
+0x198cdfb94  __TEXT,__text  -[AFPreferences autoDismissalIdleTimeout]
+0x198cdfbf8  __TEXT,__text  -[AFPreferences autoDismissalExtendedIdleTimeout]
+0x198cdfc5c  __TEXT,__text  -[AFConnection setLockState:screenLocked:]
+0x198cdfca8  __TEXT,__text  -[AFConnection setWatchAuthenticated:]
+0x198cdfd68  __TEXT,__text  -[AFAccessibilityObserver currentState]
+0x198cdfe2c  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isTVPushToTalkEnabled]
+0x198cdfee0  __TEXT,__text  ___38-[AFConnection setWatchAuthenticated:]_block_invoke
+0x198cdfeec  __TEXT,__text  -[AFPreferences _registerForDictationEnablementChangeNotifications]
+0x198cdff3c  __TEXT,__text  -[AFCallSiteInfo description]
+0x198cdff44  __TEXT,__text  -[AFCallSiteInfo _descriptionWithIndent:]
+0x198cdffd4  __TEXT,__text  -[AFVoiceInfo pacePresetString]
+0x198ce0010  __TEXT,__text  -[AFVoiceInfo expressivityPresetString]
+0x198ce004c  __TEXT,__text  -[AFVoiceInfo expressivityPreset]
+0x198ce0054  __TEXT,__text  -[_AFCallSiteInfoMutation setImagePath:]
+0x198ce008c  __TEXT,__text  ___52-[AFConnection initWithTargetQueue:instanceContext:]_block_invoke
+0x198ce00dc  __TEXT,__text  -[AFAnalytics initWithInstanceContext:]
+0x198ce0190  __TEXT,__text  -[_AFCallSiteInfoMutation getImagePath]
+0x198ce01c8  __TEXT,__text  -[_AFCallSiteInfoMutation getSymbolName]
+0x198ce0200  __TEXT,__text  -[AFConnection setDelegate:]
+0x198ce0258  __TEXT,__text  -[AFQueue setDelegate:]
+0x198ce0264  __TEXT,__text  -[_AFCallSiteInfoMutation isDirty]
+0x198ce0270  __TEXT,__text  -[AFConnection setSpeechDelegate:]
+0x198ce027c  __TEXT,__text  -[AFVoiceInfo genderString]
+0x198ce02b0  __TEXT,__text  -[AFCheckSRT init]
+0x198ce03b0  __TEXT,__text  -[AFVoiceInfo description]
+0x198ce0518  __TEXT,__text  -[AFVoiceInfo footprintString]
+0x198ce054c  __TEXT,__text  -[AFVoiceInfo pacePreset]
+0x198ce0554  __TEXT,__text  +[AFModesConfiguration newWithBuilder:]
+0x198ce0624  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isRemoteSessionDisabled]
+0x198ce0638  __TEXT,__text  -[AFHearablesExperienceManager addGestureObserver:forContexts:]
+0x198ce0780  __TEXT,__text  -[AFHearablesClientRegistry addGestureObserver:forContexts:queue:]
+0x198ce09d8  __TEXT,__text  -[AFHearablesClientRegistry _cleanupClientRegistration:]
+0x198ce0ab8  __TEXT,__text  -[AFHearablesClientRegistration initWithObserver:contexts:observerQueue:]
+0x198ce0b94  __TEXT,__text  -[AFHearablesClientRegistry _updateContextToClientsMapping:forClientKey:shouldAdd:]
+0x198ce0c40  __TEXT,__text  -[AFHearablesClientRegistry _enumerateIndividualGestureContexts:usingBlock:]
+0x198ce0cb4  __TEXT,__text  ___83-[AFHearablesClientRegistry _updateContextToClientsMapping:forClientKey:shouldAdd:]_block_invoke
+0x198ce0ea0  __TEXT,__text  -[AFHearablesExperienceManager _updateBackendWithAggregatedGestureContexts]
+0x198ce107c  __TEXT,__text  +[AFClientConfiguration supportsSecureCoding]
+0x198ce1084  __TEXT,__text  +[AFAccessibilityState supportsSecureCoding]
+0x198ce108c  __TEXT,__text  -[AFHearablesClientRegistry aggregatedContexts]
+0x198ce11bc  __TEXT,__text  -[AFHearablesClientRegistration isStillAlive]
+0x198ce120c  __TEXT,__text  -[AFHearablesClientRegistration contexts]
+0x198ce1214  __TEXT,__text  +[AFModesConfiguration supportsSecureCoding]
+0x198ce121c  __TEXT,__text  -[_AFClientConfigurationMutation setDeviceRingerSwitchState:]
+0x198ce1234  __TEXT,__text  -[_AFClientConfigurationMutation setIsDeviceInCarDNDMode:]
+0x198ce124c  __TEXT,__text  -[_AFClientConfigurationMutation setAreAnnouncementRequestsPermittedByPresentationWhileActive:]
+0x198ce1264  __TEXT,__text  -[_AFClientConfigurationMutation setOutputVolume:]
+0x198ce1278  __TEXT,__text  -[_AFClientConfigurationMutation setTwoShotAudioPlaybackRequest:]
+0x198ce12b4  __TEXT,__text  -[_AFClientConfigurationMutation setDeviceSetupFlowBeginDate:]
+0x198ce12f0  __TEXT,__text  -[_AFClientConfigurationMutation setDeviceSetupFlowEndDate:]
+0x198ce132c  __TEXT,__text  -[_AFClientConfigurationMutation setCarOwnsMainAudio:]
+0x198ce1368  __TEXT,__text  -[AFAnalytics logEventWithType:machAbsoluteTime:context:contextNoCopy:]
+0x198ce143c  __TEXT,__text  -[AFNotifyObserver _handleNotificationWithToken:]
+0x198ce14b0  __TEXT,__text  +[AFAccessibilityObserver sharedObserver]
+0x198ce14f8  __TEXT,__text  -[AFClientConfiguration initWithAccessibilityState:deviceRingerSwitchState:isDeviceInCarDNDMode:isDeviceInStarkMode:supportsCarPlayVehicleData:isDeviceWatchAuthenticated:areAnnouncementRequestsPermittedByPresentationWhileActive:outputVolume:tapToSiriAudioPlaybackRequest:twoShotAudioPlaybackRequest:d
+0x198ce168c  __TEXT,__text  ___382-[AFClientConfiguration initWithAccessibilityState:deviceRingerSwitchState:isDeviceInCarDNDMode:isDeviceInStarkMode:supportsCarPlayVehicleData:isDeviceWatchAuthenticated:areAnnouncementRequestsPermittedByPresentationWhileActive:outputVolume:tapToSiriAudioPlaybackRequest:twoShotAudioPlaybackReq
+0x198ce176c  __TEXT,__text  -[_AFClientConfigurationMutation setAccessibilityState:]
+0x198ce17a4  __TEXT,__text  -[_AFClientConfigurationMutation setIsDeviceInStarkMode:]
+0x198ce17bc  __TEXT,__text  -[_AFClientConfigurationMutation setSupportsCarPlayVehicleData:]
+0x198ce17d4  __TEXT,__text  -[_AFClientConfigurationMutation setIsDeviceWatchAuthenticated:]
+0x198ce17ec  __TEXT,__text  -[_AFClientConfigurationMutation setTapToSiriAudioPlaybackRequest:]
+0x198ce1828  __TEXT,__text  +[AFDeviceRingerSwitchObserver sharedObserver]
+0x198ce1870  __TEXT,__text  -[AFClientConfiguration isEyesFreeDevice]
+0x198ce1a18  __TEXT,__text  -[AFInvocationContext .cxx_destruct]
+0x198ce1a24  __TEXT,__text  ___56-[AFNotifyObserver initWithName:options:queue:delegate:]_block_invoke_2
+0x198ce1a74  __TEXT,__text  -[AFTreeNode init]
+0x198ce1adc  __TEXT,__text  -[AFLinkedListItem previousItem]
+0x198ce1ae8  __TEXT,__text  -[AFLinkedListItem nextItem]
+0x198ce1af0  __TEXT,__text  -[AFLinkedListItem initWithObject:]
+0x198ce1b64  __TEXT,__text  -[AFLinkedListItem setPreviousItem:]
+0x198ce1b70  __TEXT,__text  -[AFLinkedListItem setNextItem:]
+0x198ce1b7c  __TEXT,__text  -[AFLinkedListItem insertAfterItem:]
+0x198ce1c08  __TEXT,__text  -[AFLinkedListItem removeFromList]
+0x198ce1c88  __TEXT,__text  -[AFLinkedListItem .cxx_destruct]
+0x198ce1ccc  __TEXT,__text  -[AFPreferences outputVoice]
+0x198ce1d78  __TEXT,__text  -[AFAnalytics logEventWithType:context:]
+0x198ce1e04  __TEXT,__text  -[AFAnalytics logEventWithType:machAbsoluteTime:context:]
+0x198ce1ef4  __TEXT,__text  -[AFLinkedListItem object]
+0x198ce1f0c  __TEXT,__text  ___71-[AFAnalytics logEventWithType:machAbsoluteTime:context:contextNoCopy:]_block_invoke
+0x198ce1f60  __TEXT,__text  -[AFAnalytics _stageEvent:]
+0x198ce2230  __TEXT,__text  -[AFSpeechRequestOptions audioFileHandle]
+0x198ce2238  __TEXT,__text  -[AFSpeechRequestOptions skipGeneratingSpeechPacket]
+0x198ce2240  __TEXT,__text  -[AFSpeechRequestOptions speechRecordingEventListeningEndpoint]
+0x198ce2248  __TEXT,__text  -[AFSpeechRequestOptions isHybridUODEnabled]
+0x198ce2250  __TEXT,__text  -[AFSpeechRequestOptions recordDeviceIdentifier]
+0x198ce2258  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isSiriXEnabled]
+0x198ce226c  __TEXT,__text  -[_AFSiriClientState notifyState]
+0x198ce22b4  __TEXT,__text  -[AFNotifyStatePublisher _setState:withToken:]
+0x198ce2398  __TEXT,__text  -[AFSiriClientStateManager _aggregatedState]
+0x198ce249c  __TEXT,__text  -[AFNotifyStatePublisher publishStateWithBlock:]
+0x198ce2544  __TEXT,__text  ___62-[AFSiriClientStateManager _aggregateStatesAndPublishIfNeeded]_block_invoke
+0x198ce25e8  __TEXT,__text  ___48-[AFNotifyStatePublisher publishStateWithBlock:]_block_invoke
+0x198ce2670  __TEXT,__text  -[AFNotifyStatePublisher _getState:withToken:]
+0x198ce276c  __TEXT,__text  -[AFDeviceContextHistoryConfiguration initWithKeepsHistory:historyBufferSize:]
+0x198ce27e4  __TEXT,__text  -[NSNumber(ContextSnapshot) serializedBackingStore]
+0x198ce27e8  __TEXT,__text  -[AFDeviceContextHistoryConfiguration keepsHistory]
+0x198ce27f0  __TEXT,__text  -[AFDeviceContextHistoryConfiguration initWithBuilder:]
+0x198ce28ac  __TEXT,__text  -[_AFDeviceContextHistoryConfigurationMutation initWithBase:]
+0x198ce2920  __TEXT,__text  ___78-[AFDeviceContextHistoryConfiguration initWithKeepsHistory:historyBufferSize:]_block_invoke
+0x198ce2970  __TEXT,__text  -[_AFDeviceContextHistoryConfigurationMutation setKeepsHistory:]
+0x198ce2984  __TEXT,__text  -[_AFDeviceContextHistoryConfigurationMutation setHistoryBufferSize:]
+0x198ce299c  __TEXT,__text  -[_AFDeviceContextHistoryConfigurationMutation getKeepsHistory]
+0x198ce29b4  __TEXT,__text  -[_AFDeviceContextHistoryConfigurationMutation getHistoryBufferSize]
+0x198ce29cc  __TEXT,__text  -[_AFDeviceContextHistoryConfigurationMutation .cxx_destruct]
+0x198ce29d8  __TEXT,__text  -[AFDeviceContextHistoryConfiguration copyWithZone:]
+0x198ce29dc  __TEXT,__text  -[_AFDeviceContextHistoryConfigurationMutation isDirty]
+0x198ce29e8  __TEXT,__text  -[AFDeviceContextHistoryConfiguration buildDictionaryRepresentation]
+0x198ce2ae0  __TEXT,__text  -[AFDeviceContextHistoryConfiguration historyBufferSize]
+0x198ce2ae8  __TEXT,__text  ___35-[AFAudioPowerUpdater _beginUpdate]_block_invoke
+0x198ce2b1c  __TEXT,__text  -[AFAudioPowerUpdater _getPowerWithCompletion:]
+0x198ce2c14  __TEXT,__text  -[AFAudioPowerUpdater _updatePowerWithAveragePower:andPeakPower:]
+0x198ce2cb8  __TEXT,__text  -[AFAudioPowerUpdater _writeSharedMemoryWithAveragePower:peakPower:]
+0x198ce2cc8  __TEXT,__text  -[AFConnection audioPowerUpdaterDidUpdate:averagePower:peakPower:]
+0x198ce2d58  __TEXT,__text  -[AFAudioPowerUpdater _timerFired]
+0x198ce2d60  __TEXT,__text  -[_AFAudioPowerXPCSharedMemory peakPower]
+0x198ce2d6c  __TEXT,__text  -[AFAudioPowerXPCProvider getAveragePower:andPeakPower:]
+0x198ce2dd8  __TEXT,__text  -[_AFAudioPowerXPCSharedMemory averagePower]
+0x198ce2de4  __TEXT,__text  +[AFBundleResourceManager sharedManager]
+0x198ce2e2c  __TEXT,__text  -[AFBundleResourceManager(Convenience) URLForSoundID:]
+0x198ce2e78  __TEXT,__text  -[AFBundleResourceManager resourceForSoundID:]
+0x198ce2f2c  __TEXT,__text  -[AFBundleResourceManager URLForResource:]
+0x198ce30e4  __TEXT,__text  -[AFBundleResource name]
+0x198ce30ec  __TEXT,__text  -[AFBundleResource extension]
+0x198ce30f4  __TEXT,__text  -[NSURL(AFBundleResourceSupport) af_getBundleResourceURL]
+0x198ce30f8  __TEXT,__text  -[AFExperiment(InvocationFeedbacks) isFeatureGroupOneEnabled]
+0x198ce3114  __TEXT,__text  -[AFExperimentContext experimentsByConfigurationIdentifier]
+0x198ce311c  __TEXT,__text  -[AFExperimentContext(InvocationFeedbacks) invocationFeedbackExperiment]
+0x198ce3164  __TEXT,__text  -[AFExperiment(InvocationFeedbacks) featureGroups]
+0x198ce31bc  __TEXT,__text  -[AFExperiment deploymentGroupProperties]
+0x198ce31c4  __TEXT,__text  -[AFPreferences cloudSyncEnabled]
+0x198ce31d4  __TEXT,__text  -[AFAnalyticsConnection _idleTimerFired]
+0x198ce3264  __TEXT,__text  -[AFPreferences shouldLogForQA]
+0x198ce3268  __TEXT,__text  -[AFPreferences fileLoggingIsEnabled]
+0x198ce32a4  __TEXT,__text  ___40-[AFAnalyticsConnection _startIdleTimer]_block_invoke
+0x198ce32d8  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isStateFeedbackEnabled]
+0x198ce342c  __TEXT,__text  -[AFDeviceContextMetadata description]
+0x198ce34f8  __TEXT,__text  -[AFDeviceContextMetadata expirationDate]
+0x198ce3500  __TEXT,__text  -[AFAccessibilityState description]
+0x198ce3630  __TEXT,__text  -[AFClientConfiguration description]
+0x198ce3638  __TEXT,__text  -[AFClientConfiguration _descriptionWithIndent:]
+0x198ce3788  __TEXT,__text  -[AFAccessibilityState _descriptionWithIndent:]
+0x198ce3874  __TEXT,__text  -[AFLocationSnapshot description]
+0x198ce387c  __TEXT,__text  -[AFLocationSnapshot _descriptionWithIndent:]
+0x198ce3984  __TEXT,__text  -[AFDeviceContext buildDescription]
+0x198ce3ae8  __TEXT,__text  -[NSArray(AFCollectionUtilities) af_lenientMappedArray:]
+0x198ce3af4  __TEXT,__text  -[AFClockAlarmSnapshot(ShortDescription) ad_shortDescription]
+0x198ce3be4  __TEXT,__text  -[AFDeviceContext(BuiltInContextTypes) buildBuiltInContextsDescriptions]
+0x198ce4004  __TEXT,__text  -[AFDeviceContext description]
+0x198ce405c  __TEXT,__text  -[AFDeviceContext(Utilities) af_didHearVoiceTrigger]
+0x198ce40ec  __TEXT,__text  -[AFDeviceContext(BuiltInContextTypes) heardVoiceTrigger]
+0x198ce4154  __TEXT,__text  -[AFClockTimerSnapshot(ShortDescription) ad_shortDescription]
+0x198ce42b0  __TEXT,__text  -[AFLocationSnapshot initWithDictionaryRepresentation:]
+0x198ce45f4  __TEXT,__text  -[AFHomeAnnouncementSnapshot(ShortDescription) ad_shortDescription]
+0x198ce46e8  __TEXT,__text  -[AFDeviceContext(BuiltInContextTypes) myriadAdvertisementContext]
+0x198ce4750  __TEXT,__text  -[AFDeviceContext(BuiltInContextTypes) locationSnapshot]
+0x198ce47a4  __TEXT,__text  -[AFLocationSnapshot(ContextSnapshot) initWithSerializedBackingStore:]
+0x198ce4820  __TEXT,__text  -[AFMediaPlaybackStateSnapshot(ShortDescription) ad_shortDescription]
+0x198ce48f4  __TEXT,__text  -[AFMediaPlaybackStateSnapshot mediaType]
+0x198ce48fc  __TEXT,__text  -[AFMediaPlaybackStateSnapshot groupIdentifier]
+0x198ce4904  __TEXT,__text  -[AFConnectionClientServiceDelegate networkDidBecomeActive]
+0x198ce49a8  __TEXT,__text  ___59-[AFConnectionClientServiceDelegate networkDidBecomeActive]_block_invoke
+0x198ce49dc  __TEXT,__text  -[AFConnection _markNetworkDidBecomeActive]
+0x198ce4a60  __TEXT,__text  +[AFConnection currentLanguageCode]
+0x198ce4aa8  __TEXT,__text  +[AFFeatureFlags(SWEFeatureFlags) isSiriUODAvailableForLanguage:]
+0x198ce4b2c  __TEXT,__text  -[AFLocationSnapshot(ShortDescription) ad_shortDescription]
+0x198ce4c34  __TEXT,__text  -[AFLocationSnapshot latitude]
+0x198ce4c3c  __TEXT,__text  -[AFDeviceContext(BuiltInContextTypes) callStateSnapshot]
+0x198ce4c90  __TEXT,__text  -[AFLocationSnapshot longitude]
+0x198ce4c98  __TEXT,__text  -[AFCallStateSnapshot(ContextSnapshot) initWithSerializedBackingStore:]
+0x198ce4d84  __TEXT,__text  -[AFLocationSnapshot horizontalAccuracy]
+0x198ce4d8c  __TEXT,__text  -[AFDeviceContext(BuiltInContextTypes) systemStateSnapshot]
+0x198ce4de0  __TEXT,__text  -[AFSystemStateSnapshot(ContextSnapshot) initWithSerializedBackingStore:]
+0x198ce4ecc  __TEXT,__text  -[AFDeviceContext(Utilities) af_validFlowContext]
+0x198ce5028  __TEXT,__text  -[AFDeviceContext(BuiltInContextTypes) siriClientState]
+0x198ce508c  __TEXT,__text  -[AFDeviceContext(BuiltInContextTypes) historicalSiriClientStates]
+0x198ce50dc  __TEXT,__text  -[AFDeviceContext(BuiltInContextTypes) historicalSiriClientStateMetadata]
+0x198ce50e8  __TEXT,__text  ___66-[AFDeviceContext(BuiltInContextTypes) historicalSiriClientStates]_block_invoke
+0x198ce5134  __TEXT,__text  -[NSNumber(ContextSnapshot) initWithSerializedBackingStore:]
+0x198ce519c  __TEXT,__text  -[AFDeviceContext identifier]
+0x198ce51a4  __TEXT,__text  -[NSString(ShortDescription) ad_shortDescription]
+0x198ce51ec  __TEXT,__text  __AFAggregatorClientAddValueForScalarKey
+0x198ce52d8  __TEXT,__text  -[AFAnalytics logEventWithType:context:contextNoCopy:]
+0x198ce5368  __TEXT,__text  -[AFConnection(Internal) _clientServiceWithErrorHandler:]
+0x198ce53c8  __TEXT,__text  -[_AFAccessibilityStateMutation setIsVoiceOverTouchEnabled:]
+0x198ce53dc  __TEXT,__text  -[_AFAccessibilityStateMutation setIsVibrationDisabled:]
+0x198ce53f4  __TEXT,__text  -[_AFAccessibilityStateMutation isDirty]
+0x198ce5400  __TEXT,__text  -[_AFAccessibilityStateMutation getIsVoiceOverTouchEnabled]
+0x198ce5418  __TEXT,__text  -[_AFAccessibilityStateMutation getIsVibrationDisabled]
+0x198ce5430  __TEXT,__text  -[AFConnection _tellDelegateRequestWillStart]
+0x198ce54b4  __TEXT,__text  -[_AFModesConfigurationMutation setModeOverrideValue:]
+0x198ce54f0  __TEXT,__text  -[AFConnection setModesConfiguration:]
+0x198ce55ac  __TEXT,__text  +[AFAggregator logSiriSpeechRequestStarted]
+0x198ce5634  __TEXT,__text  -[AFModesConfiguration encodeWithCoder:]
+0x198ce5988  __TEXT,__text  -[AFModesConfiguration initWithCoder:]
+```
+First 1,000 of 11,007.
+

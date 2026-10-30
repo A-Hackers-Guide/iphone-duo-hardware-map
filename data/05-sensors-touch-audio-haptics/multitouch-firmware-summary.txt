@@ -1,0 +1,95 @@
+### personality/key: V68SS0 list
+      1 x Type=Config Desc=None payloadbytes=0
+      4 x Type=ReadModifyWrite Desc=None payloadbytes=0
+      1 x Type=Binary Desc=cypher2_v68ssp0_TEXT.bin payloadbytes=189140
+      1 x Type=Binary Desc=cypher2_v68ssp0_DATA.bin payloadbytes=54016
+      1 x Type=Binary Desc=cypher2_v68ssp0_BOOTCFG.bin payloadbytes=1080
+      1 x Type=Binary Desc=cypher2_v68ssp0_DATA_PSE_DSC.bin payloadbytes=76408
+      1 x Type=Binary Desc=cypher2_v68ssp0_DATA_PSE_INIT.bin payloadbytes=18432
+      1 x Type=Binary Desc=Per-config parameters payloadbytes=512
+      1 x Type=Property Desc=DTN parameters for Cantor payloadbytes=18304
+      1 x Type=Property Desc=CM full scale parameters payloadbytes=672
+      1 x Type=Binary Desc=Demodulation windows payloadbytes=5684
+      1 x Type=Property Desc=DTN parameters for Fermat payloadbytes=50436
+      1 x Type=Property Desc=Full Spectrum Projector payloadbytes=12512
+      1 x Type=Binary Desc=Multitouch AFE configuration payloadbytes=20208
+      1 x Type=Property Desc=Multitouch AFE calibration payloadbytes=4636
+      1 x Type=Property Desc=Panel Configuration payloadbytes=60
+      1 x Type=Property Desc=PSPA and PSS full scale parameters payloadbytes=1888
+      1 x Type=Property Desc=DTN parameters for Algs payloadbytes=4
+      1 x Type=Property Desc=Digital gain scalars for Algs payloadbytes=4
+      1 x Type=Property Desc=DTN parameters for pencil Algs payloadbytes=4
+      1 x Type=Property Desc=Digital gain scalars for pencil Algs payloadbytes=4
+   Config: {"Protocol": "HCCKit", "Protocol SPI Config": {"CS Postamble Delay": 0, "CS Preamble Delay INTL": 0, "Clock Phase": 0, "CS Preamble Delay INTL1": 0, "CS Preamble Delay": 400000, "Clock Polarity": 0, "Clock Frequency": 16000000, "CS Preamble Delay AWAKE": 0}, "Always Powered": true, "Interface Config": [{"DefaultMultitouchProperties": "{20 keys}", "bInterfaceNumber": 0, "InterfaceName": "grape", "HIDDescriptor": "<27 bytes>", "Reporters": "[2 items]", "InterfaceType": "HID", "HIDRecorder Descriptor": "{7 keys}", "LocationId": 545}], "Min DMA Transfer Size": 16, "Continue On Failure": true, "Bootloader SPI Config": {"Clock Frequency": 16000000, "Clock Phase": 0, "CS Preamble Delay": 0, "Clock Polarity": 0, "CS Postamble Delay": 0}, "DefaultDumpLevelCustomer": 0, "Doomclock Timeout Sec": 0, "Boot Timeout": {"Normal Boot Ms": 500, "Chip Boot Ms": 50}, "HCCKit Config": {"Control Report Endpoint": 5, "Output Report Endpoint": 5}, "DefaultDumpLevelInternal": 65535, "Authentic": true, "Configuration Version": 528, "Memory Dump": [{"Version": 4096, "Sections": "[10 items]", "Mach Architecture Flavor": "armv7em", "Mach Architecture": "arm"}], "Power Off On Shutdown": true}
+### personality/key: V68SS1 list
+      1 x Type=Config Desc=None payloadbytes=0
+      4 x Type=ReadModifyWrite Desc=None payloadbytes=0
+      1 x Type=Binary Desc=cypher2_v68ss_TEXT.bin payloadbytes=189140
+      1 x Type=Binary Desc=cypher2_v68ss_DATA.bin payloadbytes=54016
+      1 x Type=Binary Desc=cypher2_v68ss_BOOTCFG.bin payloadbytes=1080
+      1 x Type=Binary Desc=cypher2_v68ss_DATA_PSE_DSC.bin payloadbytes=76408
+      1 x Type=Binary Desc=cypher2_v68ss_DATA_PSE_INIT.bin payloadbytes=18432
+      1 x Type=Binary Desc=Per-config parameters payloadbytes=512
+      1 x Type=Property Desc=DTN parameters for Cantor payloadbytes=18304
+      1 x Type=Property Desc=CM full scale parameters payloadbytes=672
+      1 x Type=Binary Desc=Demodulation windows payloadbytes=5884
+      1 x Type=Property Desc=DTN parameters for Fermat payloadbytes=7648
+      1 x Type=Property Desc=Full Spectrum Projector payloadbytes=12512
+      1 x Type=Binary Desc=Multitouch AFE configuration payloadbytes=20980
+      1 x Type=Property Desc=Multitouch AFE calibration payloadbytes=4636
+      1 x Type=Property Desc=Panel Configuration payloadbytes=60
+      1 x Type=Property Desc=PSPA and PSS full scale parameters payloadbytes=1888
+      1 x Type=Property Desc=DTN parameters for Algs payloadbytes=4
+      1 x Type=Property Desc=Digital gain scalars for Algs payloadbytes=4
+      1 x Type=Property Desc=DTN parameters for pencil Algs payloadbytes=4
+      1 x Type=Property Desc=Digital gain scalars for pencil Algs payloadbytes=4
+   Config: {"Protocol": "HCCKit", "Protocol SPI Config": {"CS Postamble Delay": 0, "CS Preamble Delay INTL": 0, "Clock Phase": 0, "CS Preamble Delay INTL1": 0, "CS Preamble Delay": 400000, "Clock Polarity": 0, "Clock Frequency": 16000000, "CS Preamble Delay AWAKE": 0}, "Always Powered": true, "Interface Config": [{"DefaultMultitouchProperties": "{20 keys}", "bInterfaceNumber": 0, "InterfaceName": "grape", "HIDDescriptor": "<27 bytes>", "Reporters": "[2 items]", "InterfaceType": "HID", "HIDRecorder Descriptor": "{7 keys}", "LocationId": 545}], "Min DMA Transfer Size": 16, "Continue On Failure": true, "Bootloader SPI Config": {"Clock Frequency": 16000000, "Clock Phase": 0, "CS Preamble Delay": 0, "Clock Polarity": 0, "CS Postamble Delay": 0}, "DefaultDumpLevelCustomer": 0, "Doomclock Timeout Sec": 0, "Boot Timeout": {"Normal Boot Ms": 500, "Chip Boot Ms": 50}, "HCCKit Config": {"Control Report Endpoint": 5, "Output Report Endpoint": 5}, "DefaultDumpLevelInternal": 65535, "Authentic": true, "Configuration Version": 528, "Memory Dump": [{"Version": 4096, "Sections": "[10 items]", "Mach Architecture Flavor": "armv7em", "Mach Architecture": "arm"}], "Power Off On Shutdown": true}
+### personality/key: V68PS0 list
+      1 x Type=Config Desc=None payloadbytes=0
+      4 x Type=ReadModifyWrite Desc=None payloadbytes=0
+      1 x Type=Binary Desc=cypher2_v68psp0_TEXT.bin payloadbytes=188628
+      1 x Type=Binary Desc=cypher2_v68psp0_DATA.bin payloadbytes=53808
+      1 x Type=Binary Desc=cypher2_v68psp0_BOOTCFG.bin payloadbytes=1080
+      1 x Type=Binary Desc=cypher2_v68psp0_DATA_PSE_DSC.bin payloadbytes=76408
+      1 x Type=Binary Desc=cypher2_v68psp0_DATA_PSE_INIT.bin payloadbytes=18432
+      1 x Type=Binary Desc=Per-config parameters payloadbytes=512
+      1 x Type=Property Desc=DTN parameters for Cantor payloadbytes=18304
+      1 x Type=Property Desc=CM full scale parameters payloadbytes=672
+      1 x Type=Binary Desc=Demodulation windows payloadbytes=5684
+      1 x Type=Property Desc=DTN parameters for Fermat payloadbytes=50436
+      1 x Type=Property Desc=Full Spectrum Projector payloadbytes=12512
+      1 x Type=Binary Desc=Multitouch AFE configuration payloadbytes=20208
+      1 x Type=Property Desc=Multitouch AFE calibration payloadbytes=4636
+      1 x Type=Property Desc=Panel Configuration payloadbytes=60
+      1 x Type=Property Desc=PSPA and PSS full scale parameters payloadbytes=1888
+      1 x Type=Property Desc=DTN parameters for Algs payloadbytes=4
+      1 x Type=Property Desc=Digital gain scalars for Algs payloadbytes=4
+      1 x Type=Property Desc=DTN parameters for pencil Algs payloadbytes=4
+      1 x Type=Property Desc=Digital gain scalars for pencil Algs payloadbytes=4
+   Config: {"Protocol": "HCCKit", "Protocol SPI Config": {"CS Postamble Delay": 0, "CS Preamble Delay INTL": 0, "Clock Phase": 0, "CS Preamble Delay INTL1": 0, "CS Preamble Delay": 400000, "Clock Polarity": 0, "Clock Frequency": 16000000, "CS Preamble Delay AWAKE": 0}, "Always Powered": true, "Interface Config": [{"DefaultMultitouchProperties": "{20 keys}", "bInterfaceNumber": 0, "InterfaceName": "grape", "HIDDescriptor": "<27 bytes>", "Reporters": "[2 items]", "InterfaceType": "HID", "HIDRecorder Descriptor": "{7 keys}", "LocationId": 544}], "Min DMA Transfer Size": 16, "Continue On Failure": true, "Bootloader SPI Config": {"Clock Frequency": 16000000, "Clock Phase": 0, "CS Preamble Delay": 0, "Clock Polarity": 0, "CS Postamble Delay": 0}, "DefaultDumpLevelCustomer": 0, "Doomclock Timeout Sec": 0, "Boot Timeout": {"Normal Boot Ms": 500, "Chip Boot Ms": 50}, "HCCKit Config": {"Control Report Endpoint": 5, "Output Report Endpoint": 5}, "DefaultDumpLevelInternal": 65535, "Authentic": true, "Configuration Version": 528, "Memory Dump": [{"Version": 4096, "Sections": "[10 items]", "Mach Architecture Flavor": "armv7em", "Mach Architecture": "arm"}], "Power Off On Shutdown": true}
+### personality/key: non-auth list
+      1 x Type=Config Desc=None payloadbytes=0
+   Config: {"Protocol": "HIDSPI", "Always Powered": true, "Interface Config": [{"HIDDescriptor": "<27 bytes>", "bInterfaceNumber": 0, "DefaultMultitouchProperties": "{13 keys}", "InterfaceName": "grape", "InterfaceType": "HID"}], "Min DMA Transfer Size": 16, "Continue On Failure": true, "HIDSPI Config": {"Max Input Report Length": 2888, "Device Interface Id": 208, "Sleep Delay Ms": 100, "Transfer Length": 1444, "Use SetResultData": true, "Resume Pulse Us": 5000, "Resume Delay Ms": 10, "Inter Transaction Us": 600, "Padding Length": 4, "Busy Delay Ms": 2, "Inter Stage Us": 200}, "Bootloader SPI Config": {"Clock Frequency": 12000000, "Clock Phase": 0, "Word Delay": 0, "CS Preamble Delay": 0, "Clock Polarity": 0, "CS Postamble Delay": 0}, "Doomclock Timeout Sec": 0, "Boot Timeout": {"Normal Boot Ms": 500, "Chip Boot Ms": 50}, "Device Tree Overrides": {"reset-sequence": "<19 bytes>", "hbpp-version": "<4 bytes>", "otp-address": "<4 bytes>"}, "Power Off On Shutdown": true, "Authentic": false, "Configuration Version": 528, "Protocol SPI Config": {"Clock Phase": 0, "CS Preamble Delay INTL": 300000, "CS Postamble Delay": 10000, "Word Delay": 0, "CS Preamble Delay": 800000, "Clock Polarity": 0, "Clock Frequency": 16000000}}
+### personality/key: V68PS1 list
+      1 x Type=Config Desc=None payloadbytes=0
+      4 x Type=ReadModifyWrite Desc=None payloadbytes=0
+      1 x Type=Binary Desc=cypher2_v68ps_TEXT.bin payloadbytes=188628
+      1 x Type=Binary Desc=cypher2_v68ps_DATA.bin payloadbytes=53808
+      1 x Type=Binary Desc=cypher2_v68ps_BOOTCFG.bin payloadbytes=1080
+      1 x Type=Binary Desc=cypher2_v68ps_DATA_PSE_DSC.bin payloadbytes=76408
+      1 x Type=Binary Desc=cypher2_v68ps_DATA_PSE_INIT.bin payloadbytes=18432
+      1 x Type=Binary Desc=Per-config parameters payloadbytes=512
+      1 x Type=Property Desc=DTN parameters for Cantor payloadbytes=18304
+      1 x Type=Property Desc=CM full scale parameters payloadbytes=672
+      1 x Type=Binary Desc=Demodulation windows payloadbytes=5884
+      1 x Type=Property Desc=DTN parameters for Fermat payloadbytes=7648
+      1 x Type=Property Desc=Full Spectrum Projector payloadbytes=12512
+      1 x Type=Binary Desc=Multitouch AFE configuration payloadbytes=20980
+      1 x Type=Property Desc=Multitouch AFE calibration payloadbytes=4636
+      1 x Type=Property Desc=Panel Configuration payloadbytes=60
+      1 x Type=Property Desc=PSPA and PSS full scale parameters payloadbytes=1888
+      1 x Type=Property Desc=DTN parameters for Algs payloadbytes=4
+      1 x Type=Property Desc=Digital gain scalars for Algs payloadbytes=4
+      1 x Type=Property Desc=DTN parameters for pencil Algs payloadbytes=4
+      1 x Type=Property Desc=Digital gain scalars for pencil Algs payloadbytes=4
+   Config: {"Protocol": "HCCKit", "Protocol SPI Config": {"CS Postamble Delay": 0, "CS Preamble Delay INTL": 0, "Clock Phase": 0, "CS Preamble Delay INTL1": 0, "CS Preamble Delay": 400000, "Clock Polarity": 0, "Clock Frequency": 16000000, "CS Preamble Delay AWAKE": 0}, "Always Powered": true, "Interface Config": [{"DefaultMultitouchProperties": "{20 keys}", "bInterfaceNumber": 0, "InterfaceName": "grape", "HIDDescriptor": "<27 bytes>", "Reporters": "[2 items]", "InterfaceType": "HID", "HIDRecorder Descriptor": "{7 keys}", "LocationId": 544}], "Min DMA Transfer Size": 16, "Continue On Failure": true, "Bootloader SPI Config": {"Clock Frequency": 16000000, "Clock Phase": 0, "CS Preamble Delay": 0, "Clock Polarity": 0, "CS Postamble Delay": 0}, "DefaultDumpLevelCustomer": 0, "Doomclock Timeout Sec": 0, "Boot Timeout": {"Normal Boot Ms": 500, "Chip Boot Ms": 50}, "HCCKit Config": {"Control Report Endpoint": 5, "Output Report Endpoint": 5}, "DefaultDumpLevelInternal": 65535, "Authentic": true, "Configuration Version": 528, "Memory Dump": [{"Version": 4096, "Sections": "[10 items]", "Mach Architecture Flavor": "armv7em", "Mach Architecture": "arm"}], "Power Off On Shutdown": true}

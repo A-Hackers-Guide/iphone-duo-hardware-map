@@ -1,0 +1,225 @@
+# `MTLMeshRenderPipelineDescriptor`
+
+- Image: [`/System/Library/Frameworks/Metal.framework/Metal`](../userland/System__Library__Frameworks__Metal.framework__Metal.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `NSCopying`
+- 1 instance variables, 29 properties, 174 instance methods, 0 class methods
+
+## Instance variables
+
+```
+{MTLMeshRenderPipelineDescriptorPrivate="attachments"@"MTLRenderPipelineColorAttachmentDescriptorArrayInternal""depthAttachmentPixelFormat"Q"stencilAttachmentPixelFormat"Q"textureWriteRoundingMode"q"rasterSampleCount"Q"colorSampleCount"Q"sampleMask"Q""(?="sampleCoverageHash"I"sampleCoverage"f)""(?="miscHash"[2I]""{?="alphaToCoverageEnabled"b2"alphaToOneEnabled"b2"rasterizationEnabled"b1"depthStencilWriteDisabled"b1"openGLMode"b1"sampleCoverageInvert"b1"conservativeRasterizationEnabled"b1"vertexAmplificationMode"b1"twoSideEnabled"b1"pointSizeOutputVS"b1"pointCoordLowerLeft"b1"pointSmoothEnabled"b1"clipDistanceEnableMask"b8"alphaTestFunc"b3"alphaTestEnabled"b1"logicOp"b4"logicOpEnabled"b1"forceResourceIndex"b1"needsCustomBorderColorSamplers"b1"supportIndirectCommandBuffers"b1"supportAddingObjectBinaryFunctions"b1"supportAddingMeshBinaryFunctions"b1"supportAddingFragmentBinaryFunctions"b1"maxVertexAmplificationCount"b4"objectThreadgroupSizeIsMultipleOfThreadExecutionWidth"b1"meshThreadgroupSizeIsMultipleOfThreadExecutionWidth"b1"private1"b6})"fragmentDepthCompareClampMask"I"resourceIndex"Q"label"@"NSString""objectFunction"@"<MTLFunction>""meshFunction"@"<MTLFunction>""fragmentFunction"@"<MTLFunction>""maxTotalThreadsPerObjectThreadgroup"Q"maxTotalThreadsPerMeshThreadgroup"Q"maxTotalThreadgroupsPerMeshGrid"Q"pipelineMemoryLength"Q"objectBuffers"@"MTLPipelineBufferDescriptorArrayInternal""meshBuffers"@"MTLPipelineBufferDescriptorArrayInternal""fragmentBuffers"@"MTLPipelineBufferDescriptorArrayInternal""driverCompilerOptions"@"NSDictionary""gpuCompilerSPIOptions"@"NSDictionary""pluginData"@"NSDictionary""binaryArchives"@"NSArray""pipelineLibrary"@"<MTLPipelineLibrary>""objectLinkedFunctions"@"MTLLinkedFunctions""meshLinkedFunctions"@"MTLLinkedFunctions""fragmentLinkedFunctions"@"MTLLinkedFunctions""objectPreloadedLibraries"@"NSArray""meshPreloadedLibraries"@"NSArray""fragmentPreloadedLibraries"@"NSArray""maxObjectStackCallDepth"Q"maxMeshStackCallDepth"Q"maxFragmentStackCallDepth"Q"profileControl"@"MTLProfileControl""explicitVisibilityGroupID"I"maxAccelerationStructureTraversalDepth"Q"shaderValidation"q"shaderValidationState"q"requiredThreadsPerObjectThreadgroup"{?="width"Q"height"Q"depth"Q}"requiredThreadsPerMeshThreadgroup"{?="width"Q"height"Q"depth"Q}"name"@"NSString""colorAttachmentMappingState"q"fragmentGlobalConstantsTag"Q"vertexGlobalConstantsTag"Q"meshGlobalConstantsTag"Q"objectGlobalConstantsTag"Q"tileGlobalConstantsTag"Q} _private;
+```
+
+## Properties
+
+```
+@property (T@"NSString",C,N) label;
+@property (T@"<MTLFunction>",&,N) objectFunction;
+@property (T@"<MTLFunction>",&,N) meshFunction;
+@property (T@"<MTLFunction>",&,N) fragmentFunction;
+@property (TQ,N) maxTotalThreadsPerObjectThreadgroup;
+@property (TQ,N) maxTotalThreadsPerMeshThreadgroup;
+@property (TB,N) objectThreadgroupSizeIsMultipleOfThreadExecutionWidth;
+@property (TB,N) meshThreadgroupSizeIsMultipleOfThreadExecutionWidth;
+@property (TQ,N) payloadMemoryLength;
+@property (TQ,N) maxTotalThreadgroupsPerMeshGrid;
+@property (T@"MTLPipelineBufferDescriptorArray",R) objectBuffers;
+@property (T@"MTLPipelineBufferDescriptorArray",R) meshBuffers;
+@property (T@"MTLPipelineBufferDescriptorArray",R) fragmentBuffers;
+@property (TQ,N) rasterSampleCount;
+@property (TB,N,GisAlphaToCoverageEnabled) alphaToCoverageEnabled;
+@property (TB,N,GisAlphaToOneEnabled) alphaToOneEnabled;
+@property (TB,N,GisRasterizationEnabled) rasterizationEnabled;
+@property (TQ,N) maxVertexAmplificationCount;
+@property (T@"MTLRenderPipelineColorAttachmentDescriptorArray",R) colorAttachments;
+@property (TQ,N) depthAttachmentPixelFormat;
+@property (TQ,N) stencilAttachmentPixelFormat;
+@property (TB,N) supportIndirectCommandBuffers;
+@property (T@"NSArray",C,N) binaryArchives;
+@property (T@"MTLLinkedFunctions",C,N) objectLinkedFunctions;
+@property (T@"MTLLinkedFunctions",C,N) meshLinkedFunctions;
+@property (T@"MTLLinkedFunctions",C,N) fragmentLinkedFunctions;
+@property (Tq,N) shaderValidation;
+@property (T{?=QQQ},N) requiredThreadsPerObjectThreadgroup;
+@property (T{?=QQQ},N) requiredThreadsPerMeshThreadgroup;
+```
+
+## Instance methods
+
+```
+-[MTLMeshRenderPipelineDescriptor openGLModeEnabled];
+-[MTLMeshRenderPipelineDescriptor supportIndirectCommandBuffers];
+-[MTLMeshRenderPipelineDescriptor pipelineLibrary];
+-[MTLMeshRenderPipelineDescriptor setProfileControl:];
+-[MTLMeshRenderPipelineDescriptor setOpenGLModeEnabled:];
+-[MTLMeshRenderPipelineDescriptor setResourceIndex:];
+-[MTLMeshRenderPipelineDescriptor resourceIndex];
+-[MTLMeshRenderPipelineDescriptor setForceResourceIndex:];
+-[MTLMeshRenderPipelineDescriptor setPluginData:];
+-[MTLMeshRenderPipelineDescriptor maxVertexAmplificationCount];
+-[MTLMeshRenderPipelineDescriptor forceResourceIndex];
+-[MTLMeshRenderPipelineDescriptor setSupportIndirectCommandBuffers:];
+-[MTLMeshRenderPipelineDescriptor setPipelineLibrary:];
+-[MTLMeshRenderPipelineDescriptor colorAttachments];
+-[MTLMeshRenderPipelineDescriptor isLogicOperationEnabled];
+-[MTLMeshRenderPipelineDescriptor binaryArchives];
+-[MTLMeshRenderPipelineDescriptor meshBuffers];
+-[MTLMeshRenderPipelineDescriptor gpuCompilerSPIOptions];
+-[MTLMeshRenderPipelineDescriptor setColorSampleCount:];
+-[MTLMeshRenderPipelineDescriptor setInsertObjectLibraries:];
+-[MTLMeshRenderPipelineDescriptor setDepthStencilWriteDisabled:];
+-[MTLMeshRenderPipelineDescriptor setAlphaToOneEnabled:];
+-[MTLMeshRenderPipelineDescriptor alphaToCoverageStateSPI];
+-[MTLMeshRenderPipelineDescriptor needsCustomBorderColorSamplers];
+-[MTLMeshRenderPipelineDescriptor setShaderValidationState:];
+-[MTLMeshRenderPipelineDescriptor setRasterSampleCount:];
+-[MTLMeshRenderPipelineDescriptor setMaxObjectCallStackDepth:];
+-[MTLMeshRenderPipelineDescriptor pluginData];
+-[MTLMeshRenderPipelineDescriptor setAlphaTestEnabled:];
+-[MTLMeshRenderPipelineDescriptor tileGlobalConstantsTag];
+-[MTLMeshRenderPipelineDescriptor maxTotalThreadsPerMeshThreadgroup];
+-[MTLMeshRenderPipelineDescriptor setTextureWriteRoundingMode:];
+-[MTLMeshRenderPipelineDescriptor objectFunction];
+-[MTLMeshRenderPipelineDescriptor setDriverCompilerOptions:];
+-[MTLMeshRenderPipelineDescriptor setSampleMask:];
+-[MTLMeshRenderPipelineDescriptor fragmentBuffers];
+-[MTLMeshRenderPipelineDescriptor formattedDescription:];
+-[MTLMeshRenderPipelineDescriptor validateWithDevice:error:];
+-[MTLMeshRenderPipelineDescriptor setVertexGlobalConstantsTag:];
+-[MTLMeshRenderPipelineDescriptor init];
+-[MTLMeshRenderPipelineDescriptor rasterSampleCount];
+-[MTLMeshRenderPipelineDescriptor meshGlobalConstantsTag];
+-[MTLMeshRenderPipelineDescriptor label];
+-[MTLMeshRenderPipelineDescriptor objectLinkedFunctions];
+-[MTLMeshRenderPipelineDescriptor setLabel:];
+-[MTLMeshRenderPipelineDescriptor isPointCoordLowerLeft];
+-[MTLMeshRenderPipelineDescriptor objectThreadgroupSizeIsMultipleOfThreadExecutionWidth];
+-[MTLMeshRenderPipelineDescriptor setSupportAddingMeshBinaryFunctions:];
+-[MTLMeshRenderPipelineDescriptor setTileGlobalConstantsTag:];
+-[MTLMeshRenderPipelineDescriptor insertFragmentLibraries];
+-[MTLMeshRenderPipelineDescriptor setInsertMeshLibraries:];
+-[MTLMeshRenderPipelineDescriptor alphaTestFunction];
+-[MTLMeshRenderPipelineDescriptor supportAddingObjectBinaryFunctions];
+-[MTLMeshRenderPipelineDescriptor dealloc];
+-[MTLMeshRenderPipelineDescriptor shaderValidation];
+-[MTLMeshRenderPipelineDescriptor vertexAmplificationMode];
+-[MTLMeshRenderPipelineDescriptor sampleCoverageInvert];
+-[MTLMeshRenderPipelineDescriptor setRasterizationEnabled:];
+-[MTLMeshRenderPipelineDescriptor setGpuCompilerSPIOptions:];
+-[MTLMeshRenderPipelineDescriptor setFragmentDepthCompareClampMask:];
+-[MTLMeshRenderPipelineDescriptor depthAttachmentPixelFormat];
+-[MTLMeshRenderPipelineDescriptor meshLinkedFunctions];
+-[MTLMeshRenderPipelineDescriptor reset];
+-[MTLMeshRenderPipelineDescriptor setMeshFunction:];
+-[MTLMeshRenderPipelineDescriptor setFragmentPreloadedLibraries:];
+-[MTLMeshRenderPipelineDescriptor maxAccelerationStructureTraversalDepth];
+-[MTLMeshRenderPipelineDescriptor isRasterizationEnabled];
+-[MTLMeshRenderPipelineDescriptor setMaxTotalThreadsPerMeshThreadgroup:];
+-[MTLMeshRenderPipelineDescriptor maxTotalThreadgroupsPerMeshGrid];
+-[MTLMeshRenderPipelineDescriptor newPipelineScript];
+-[MTLMeshRenderPipelineDescriptor setMaxFragmentCallStackDepth:];
+-[MTLMeshRenderPipelineDescriptor driverCompilerOptions];
+-[MTLMeshRenderPipelineDescriptor fragmentLinkedFunctions];
+-[MTLMeshRenderPipelineDescriptor setSampleCoverage:];
+-[MTLMeshRenderPipelineDescriptor meshFunction];
+-[MTLMeshRenderPipelineDescriptor colorSampleCount];
+-[MTLMeshRenderPipelineDescriptor textureWriteRoundingMode];
+-[MTLMeshRenderPipelineDescriptor profileControl];
+-[MTLMeshRenderPipelineDescriptor requiredThreadsPerObjectThreadgroup];
+-[MTLMeshRenderPipelineDescriptor setMaxTotalThreadsPerObjectThreadgroup:];
+-[MTLMeshRenderPipelineDescriptor _descriptorPrivate];
+-[MTLMeshRenderPipelineDescriptor sampleMask];
+-[MTLMeshRenderPipelineDescriptor setBinaryArchives:];
+-[MTLMeshRenderPipelineDescriptor setObjectThreadgroupSizeIsMultipleOfThreadExecutionWidth:];
+-[MTLMeshRenderPipelineDescriptor setPointSmoothEnabled:];
+-[MTLMeshRenderPipelineDescriptor setPointCoordLowerLeft:];
+-[MTLMeshRenderPipelineDescriptor setMaxAccelerationStructureTraversalDepth:];
+-[MTLMeshRenderPipelineDescriptor setAlphaTestFunction:];
+-[MTLMeshRenderPipelineDescriptor setVertexAmplificationMode:];
+-[MTLMeshRenderPipelineDescriptor isAlphaToOneEnabled];
+-[MTLMeshRenderPipelineDescriptor shaderValidationState];
+-[MTLMeshRenderPipelineDescriptor newSerializedMeshDataWithFlags:options:error:];
+-[MTLMeshRenderPipelineDescriptor setShaderValidation:];
+-[MTLMeshRenderPipelineDescriptor setFragmentFunction:];
+-[MTLMeshRenderPipelineDescriptor maxTotalThreadsPerObjectThreadgroup];
+-[MTLMeshRenderPipelineDescriptor setSampleCoverageInvert:];
+-[MTLMeshRenderPipelineDescriptor setColorAttachmentMappingState:];
+-[MTLMeshRenderPipelineDescriptor explicitVisibilityGroupID];
+-[MTLMeshRenderPipelineDescriptor setAlphaToCoverageStateSPI:];
+-[MTLMeshRenderPipelineDescriptor meshThreadgroupSizeIsMultipleOfThreadExecutionWidth];
+-[MTLMeshRenderPipelineDescriptor maxMeshCallStackDepth];
+-[MTLMeshRenderPipelineDescriptor isTwoSideEnabled];
+-[MTLMeshRenderPipelineDescriptor setInsertFragmentLibraries:];
+-[MTLMeshRenderPipelineDescriptor setLogicOperation:];
+-[MTLMeshRenderPipelineDescriptor setTwoSideEnabled:];
+-[MTLMeshRenderPipelineDescriptor setAlphaToOneStateSPI:];
+-[MTLMeshRenderPipelineDescriptor maxFragmentCallStackDepth];
+-[MTLMeshRenderPipelineDescriptor setPointSizeOutputVS:];
+-[MTLMeshRenderPipelineDescriptor supportAddingFragmentBinaryFunctions];
+-[MTLMeshRenderPipelineDescriptor setRequiredThreadsPerMeshThreadgroup:];
+-[MTLMeshRenderPipelineDescriptor colorAttachmentMappingState];
+-[MTLMeshRenderPipelineDescriptor isAlphaTestEnabled];
+-[MTLMeshRenderPipelineDescriptor insertMeshLibraries];
+-[MTLMeshRenderPipelineDescriptor newSerializedObjectDataWithFlags:options:error:];
+-[MTLMeshRenderPipelineDescriptor setMaxVertexAmplificationCount:];
+-[MTLMeshRenderPipelineDescriptor requiredThreadsPerMeshThreadgroup];
+-[MTLMeshRenderPipelineDescriptor setObjectGlobalConstantsTag:];
+-[MTLMeshRenderPipelineDescriptor setLogicOperationEnabled:];
+-[MTLMeshRenderPipelineDescriptor setStencilAttachmentPixelFormat:];
+-[MTLMeshRenderPipelineDescriptor hash];
+-[MTLMeshRenderPipelineDescriptor meshPreloadedLibraries];
+-[MTLMeshRenderPipelineDescriptor objectGlobalConstantsTag];
+-[MTLMeshRenderPipelineDescriptor setMaxMeshCallStackDepth:];
+-[MTLMeshRenderPipelineDescriptor setNeedsCustomBorderColorSamplers:];
+-[MTLMeshRenderPipelineDescriptor description];
+-[MTLMeshRenderPipelineDescriptor setName:];
+-[MTLMeshRenderPipelineDescriptor setFragmentLinkedFunctions:];
+-[MTLMeshRenderPipelineDescriptor setObjectPreloadedLibraries:];
+-[MTLMeshRenderPipelineDescriptor isPointSizeOutputVS];
+-[MTLMeshRenderPipelineDescriptor fragmentFunction];
+-[MTLMeshRenderPipelineDescriptor insertObjectLibraries];
+-[MTLMeshRenderPipelineDescriptor clipDistanceEnableMask];
+-[MTLMeshRenderPipelineDescriptor isAlphaToCoverageEnabled];
+-[MTLMeshRenderPipelineDescriptor stencilAttachmentPixelFormat];
+-[MTLMeshRenderPipelineDescriptor isDepthStencilWriteDisabled];
+-[MTLMeshRenderPipelineDescriptor setMeshGlobalConstantsTag:];
+-[MTLMeshRenderPipelineDescriptor fragmentPreloadedLibraries];
+-[MTLMeshRenderPipelineDescriptor supportAddingMeshBinaryFunctions];
+-[MTLMeshRenderPipelineDescriptor fragmentDepthCompareClampMask];
+-[MTLMeshRenderPipelineDescriptor setAlphaToCoverageEnabled:];
+-[MTLMeshRenderPipelineDescriptor copyWithZone:];
+-[MTLMeshRenderPipelineDescriptor setObjectLinkedFunctions:];
+-[MTLMeshRenderPipelineDescriptor setObjectFunction:];
+-[MTLMeshRenderPipelineDescriptor isPointSmoothEnabled];
+-[MTLMeshRenderPipelineDescriptor logicOperation];
+-[MTLMeshRenderPipelineDescriptor objectBuffers];
+-[MTLMeshRenderPipelineDescriptor setMeshLinkedFunctions:];
+-[MTLMeshRenderPipelineDescriptor isEqual:];
+-[MTLMeshRenderPipelineDescriptor setExplicitVisibilityGroupID:];
+-[MTLMeshRenderPipelineDescriptor setMeshThreadgroupSizeIsMultipleOfThreadExecutionWidth:];
+-[MTLMeshRenderPipelineDescriptor name];
+-[MTLMeshRenderPipelineDescriptor sampleCoverage];
+-[MTLMeshRenderPipelineDescriptor objectPreloadedLibraries];
+-[MTLMeshRenderPipelineDescriptor setClipDistanceEnableMask:];
+-[MTLMeshRenderPipelineDescriptor setSupportAddingObjectBinaryFunctions:];
+-[MTLMeshRenderPipelineDescriptor setDepthAttachmentPixelFormat:];
+-[MTLMeshRenderPipelineDescriptor setRequiredThreadsPerObjectThreadgroup:];
+-[MTLMeshRenderPipelineDescriptor alphaToOneStateSPI];
+-[MTLMeshRenderPipelineDescriptor setMeshPreloadedLibraries:];
+-[MTLMeshRenderPipelineDescriptor setFragmentGlobalConstantsTag:];
+-[MTLMeshRenderPipelineDescriptor maxObjectCallStackDepth];
+-[MTLMeshRenderPipelineDescriptor setSupportAddingFragmentBinaryFunctions:];
+-[MTLMeshRenderPipelineDescriptor vertexGlobalConstantsTag];
+-[MTLMeshRenderPipelineDescriptor fragmentGlobalConstantsTag];
+-[MTLMeshRenderPipelineDescriptor _releaseMembers];
+-[MTLMeshRenderPipelineDescriptor _initMembers];
+-[MTLMeshRenderPipelineDescriptor maxThreadgroupsPerMeshGrid];
+-[MTLMeshRenderPipelineDescriptor newRenderPipelineDescriptor];
+-[MTLMeshRenderPipelineDescriptor newRenderPipelineDescriptorWithDevice:error:];
+-[MTLMeshRenderPipelineDescriptor newSerializedFragmentDataWithFlags:options:error:];
+-[MTLMeshRenderPipelineDescriptor payloadMemoryLength];
+-[MTLMeshRenderPipelineDescriptor setMaxThreadgroupsPerMeshGrid:];
+-[MTLMeshRenderPipelineDescriptor setMaxTotalThreadgroupsPerMeshGrid:];
+-[MTLMeshRenderPipelineDescriptor setPayloadMemoryLength:];
+```

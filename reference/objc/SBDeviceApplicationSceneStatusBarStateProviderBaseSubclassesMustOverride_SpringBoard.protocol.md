@@ -1,0 +1,25 @@
+# `SBDeviceApplicationSceneStatusBarStateProviderBaseSubclassesMustOverride` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 15 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[SBDeviceApplicationSceneStatusBarStateProviderBaseSubclassesMustOverride statusBarAvoidanceFrame];
+-[SBDeviceApplicationSceneStatusBarStateProviderBaseSubclassesMustOverride statusBarSceneIdentifier];
+-[SBDeviceApplicationSceneStatusBarStateProviderBaseSubclassesMustOverride _statusBarAlpha];
+-[SBDeviceApplicationSceneStatusBarStateProviderBaseSubclassesMustOverride _suppressInheritedPartStyles];
+-[SBDeviceApplicationSceneStatusBarStateProviderBaseSubclassesMustOverride _statusBarPartStyles];
+-[SBDeviceApplicationSceneStatusBarStateProviderBaseSubclassesMustOverride _statusBarAppearsOutsideOfAJailedApp];
+-[SBDeviceApplicationSceneStatusBarStateProviderBaseSubclassesMustOverride _defaultStatusBarStyle];
+-[SBDeviceApplicationSceneStatusBarStateProviderBaseSubclassesMustOverride backgroundActivitiesToSuppress];
+-[SBDeviceApplicationSceneStatusBarStateProviderBaseSubclassesMustOverride _statusBarOrientationGivenFallbackOrientation:];
+-[SBDeviceApplicationSceneStatusBarStateProviderBaseSubclassesMustOverride _statusBarStyleForPartWithIdentifier:suppressingInherited:];
+-[SBDeviceApplicationSceneStatusBarStateProviderBaseSubclassesMustOverride _fallbackInterfaceOrientation];
+-[SBDeviceApplicationSceneStatusBarStateProviderBaseSubclassesMustOverride _statusBarStyle];
+-[SBDeviceApplicationSceneStatusBarStateProviderBaseSubclassesMustOverride _jailedAppControlsVisibilityOfStatusBarAppearingOutside];
+-[SBDeviceApplicationSceneStatusBarStateProviderBaseSubclassesMustOverride _statusBarAxis];
+-[SBDeviceApplicationSceneStatusBarStateProviderBaseSubclassesMustOverride _statusBarHiddenGivenFallbackOrientation:];
+```

@@ -1,0 +1,696 @@
+ IOMFB UUID  not recieved from coreav. Overridding for secondary 
+ Timer callback: send_flipbook_analytics failed, leaving timer expired for program_swap fallback
+%s - Configured custom InfoFrm SDP for VRR Successfully - Header = 0x%x
+%s Connected Hinge Interface: %p %p
+%s Connected Prox Interface: %p %p
+%s Disconnected Hinge Interface: %p
+%s Disconnected Prox Interface: %p
+%s dcvrr_a 0x%x dcvrr_b 0x%x dcvrr_c 0x%x dcvrr_d 0x%x
+%s: %dx%d@%d Hz DSC=%s VRR=%s link: %d
+%s: ACSS capture aborted by SPU driver
+%s: ALSS capture aborted by SPU driver
+%s: ERROR: Failed to %s hinge angle updates: 0x%x
+%s: ERROR: Failed to set Hinge AngleFIRConfig: 0x%x
+%s: ERROR: Failed to set Hinge MinAngleThreshold: 0x%x
+%s: ERROR: Unexpected mal-formed angle threshold config
+%s: ERROR: Unexpected mal-formed default angle filter config
+%s: ERROR: cannot set hinge angle value, angle override disabled
+%s: Failed to allocate cdi PDC DC buffer 0x%08x
+%s: Failed to allocate cdi PDC PM buffer 0x%08x
+%s: Failed to allocate cdi acss buffer 0x%08x
+%s: Failed to allocate rdlc cdi buffer 0x%08x
+%s: Failed to reallocate cdi acss buffer 0x%08x
+%s: Invalid initConfig
+%s: PDC temperature hint no data
+%s: Using default prox GPIO config
+%s: apt_m3_hal initialization failed
+%s: apt_mX_hal initialization failed
+%s: capture buffer exhausted, aborting capture
+%s: error in setup ALSS block for 2DVT 0x%x
+%s: error: fixed refresh rate only supported on APT/VRR devices
+%s: error: refresh rate not supported: %d subframes
+%s: failed to initialize APTMxHal_v2
+%s: failed when gathering pixel capture info
+%s: forcing refresh rate: %d subframes
+%s: forcing refresh rate: disabled
+%s: initClientConfig err: 0x%x
+%s: mult of _alss_vt_y_config ( %d ) * _alss_vt_x_config ( %d ) exceeds the maximum value = %d 
+%s: prox GPIO config not available from EDT
+%s::%s: video_capture mode support is removed; must have F_SEL=1
+1hz_flipbook_frame_count
+ACSS CDI not allocated
+ACSS CDI not reallocated
+ACSS2ConfigVersion
+ACSS2RepairConfigVersion
+ACSS: cdi buffer write failed
+ACSSColorChannelCount
+ACSSConfigHandler.cpp
+ACSSConfigVersion
+ACSSEMMPInterpolation.cpp
+ACSSMultipleALSCount
+ACSSPostProcessing.cpp
+ACSSRegionConfig.cpp
+ACSSRegionCount
+ACSSRepairConfigVersion
+ACSSSensorChannelCount
+ACSSStatsHandler.cpp
+ACSSSumsPrecision
+ACSSSupported
+ACSSTapPoint
+ACSS_DEBUG: skipping capture_snapshot on fastsim
+ACSS_ERROR: Cannot program config matrix XD
+ACSS_ERROR: heatmap angles should be in increasing order %d %d
+AFKAOPTestControl
+AFKSPIRTKService
+AFKSPIRTKService.cpp
+AFKSPIService
+ALSS FCAM window[%d] size from EDT unexpected: width %d height %d
+ALSS or VTS config is null
+ALSSChannelCount
+ALSSRGBCoeffsPrecision
+ALSSSumsPrecision
+ALSSSupported
+ALSSWindowCount
+AODFixedRR
+AODWaitForWalkdown
+AODdisplayMaxRefreshInterval
+AODdisplayMaxRefreshIntervalMachTime
+AODdisplayMinRefreshInterval
+AODdisplayMinRefreshIntervalMachTime
+AODdisplayRefreshStep
+AODdisplayRefreshStepMachTime
+AONHPDClient.cpp
+APT power on fixed rate entry failed
+APTDefaultGrayValue
+APTDevice
+APTEnableCA
+APTEnableCDFD
+APTEnableConfigExpired
+APTEnableDefaultGray
+APTEnableEvents
+APTEnableLogs
+APTEnablePRC
+APTEventsMask
+APTEventsMaskHi
+APTFixedRR
+APTLimitRefreshRate
+APTMxHal_v2.cpp
+APTPDCBrightness
+APTPDCEnable
+APTPDCEnablePM
+APTPDCEnableRepeat
+APTPDCTemperature
+APTPanicOnChargeOOB
+APTPanicOnChargeParity
+APTPanicOnStuckPolarity
+APTResetCA
+ASSERT!%s:%d getConfigQueue
+ASSERT!%s:%d set TCON_2DIRA_ENABLE_KEY violation
+Adaptive Sync set to to %s
+AdaptiveSync enabled=%s, FIFO threshold 0x%x
+AoD Frame Miss
+AoD1HzPanicThreshold
+AppleDCPTCONEPIC
+AppleDCPTCONInterface
+AppleDCPTCONService
+AudioDolbyPropertiesOutputConfigCenter
+AudioDolbyPropertiesOutputConfigHeight
+AudioDolbyPropertiesOutputConfigSurround
+BICSPixelCaptureLocation
+BlendPixelCaptureLocation
+CBAPToDCPService
+CBAPToDCPService.cpp
+CBFlipBookManager.c
+CCPixelCaptureLocation
+CMPixelCaptureLocation
+CalCLutPixelCaptureLocation
+Capture
+Could not initiate acss stats handler
+CurrentFlipBookUpdateID
+DFPSupportsColorFormatConversion
+Disabling alpm when vmaod enabled
+DisplayCoexPrioritizeProx
+Do not enable Panel Replay with VRR 
+ERROR: ACSS config not present
+ERROR: ACSS previous frame still pending
+ERROR: Exceeded max snapshot capture attempts!
+EnableHingeAngleOverride
+Error: Unsupported adaptive sync version %d
+Failed to set controller adaptive sync
+Failed to set device adaptive sync
+FakeTconESDEvent
+ForceEnableACSSGenXSensing
+GP0PixelCaptureLocation
+GP1PixelCaptureLocation
+GamingVRRSupport = %d, QMSSupport = %d
+GetContentProtectionCapabilities
+HingeAngleHandler.cpp
+HingeAngleOverrideValue
+IOMFB %s called on secondary display with no timing set
+IOMFB %s: PDC LUT buffer size %d expected %d
+IOMFB %s: PDC LUT index out of bounds T%d B%d D%d H%d %d %d %d %d
+IOMFB %s: PDC buffers not allocated in carveout?
+IOMFB %s: error: null rectangle: src%s:%dx%d+%d,%d dst%s:%dx%d+%d,%d
+IOMFB %s: unable to find index/weight for angle %s%d.%s%u [%s%d.%s%u, %s%d.%s%u]
+IOMFB 2DVT: init - alss_x=%u, alss_y=%u, channels=%u, windows=%u, bl_zones=%u
+IOMFB ALSS - buffer alloc failure
+IOMFB ALSS FCAM stats could not set up configurations 0x%x
+IOMFB ALSS FCAM stats: window count %d exceeds max %d
+IOMFB ALSS: changing enabled window type %d -> %d
+IOMFB ALSS: unexpected gap in enabled windows %d %d
+IOMFB FCAM Stats: failed to configure FCAM stats in ALSS 0x%x
+IOMFB RLDC hinge angle E2E latency %d > %d us
+IOMFB hinge angle latency - RDLC: EPIC latency 0x%llx %llu us
+IOMFB hinge angle latency - RDLC: update->consumed %llu us total %llu us
+IOMFB hinge angle latency - RDLC: update->programmed %llu us
+IOMFB using stub Video Interface adapter
+IOMFB: %s getting VRR SDP info failed
+IOMFB: %s invalid angle threshold config
+IOMFB: %s unexpected RDLC angle update allow state
+IOMFB: %s: PTD read failed for hinge angle 0x%x
+IOMFB: ACSS error: could not get valid weighted array
+IOMFB: ACSS error: invalid IOMFBACSSFrameData version
+IOMFB: ACSS: Buffer size (0x%zx) doesn't match expected config size (0x%x)
+IOMFB: ACSS: Found XD PCS zero angle at index %u (angle=%d)
+IOMFB: ACSS: GenX ACSS region sums configured
+IOMFB: ACSS: GenX matrices not initialized
+IOMFB: ACSS: GenX matrices size mismatch: %zu < %zu
+IOMFB: ACSS: Invalid nidx value %u
+IOMFB: ACSS: Invalid parameters - null pointer provided
+IOMFB: ACSS: No XD PCS zero angle found
+IOMFB: ACSS: PWM LUT provided but interpolated PWM value is 0 at bright_nits=%f
+IOMFB: ACSS: PWM LUT trimmed to zero entries -- all nits values are 0
+IOMFB: ACSS: Unsupported index (config version) %u
+IOMFB: ACSS: Using test GenX ACSS sums for xtalk calculation
+IOMFB: ACSS: block already configured
+IOMFB: ACSS: bsz (0x%x) != data_size (0x%x)
+IOMFB: ACSS: bsz (0x%x) != round_to_page( sizeof( IOMFBACSSData ) ) (0x%lx)
+IOMFB: ACSS: cannot allocate CDI LUTs
+IOMFB: ACSS: cannot reprogram HW while display is in normal mode, power cycle display for changes to take effect
+IOMFB: ACSS: cfg is null
+IOMFB: ACSS: data pointer is null
+IOMFB: ACSS: failed to import config, status=%d
+IOMFB: ACSS: feature is not available in iBoot
+IOMFB: ACSS: feature is not supported
+IOMFB: ACSS: get_block failed, no calibration data loaded
+IOMFB: ACSS: get_block_config: caller version (%u) != stored (%u)
+IOMFB: ACSS: no calibration data loaded
+IOMFB: ACSS: read flag is false for a get call
+IOMFB: ACSS: read flag is true for a set call
+IOMFB: ACSS: stats lost
+IOMFB: ACSS: unexpected data version %d
+IOMFB: ACSS: unsupported version %u != 1
+IOMFB: ACSS: user_cfg is null
+IOMFB: ACSS_ALS_RESCALE: Buffer size (0x%zx) doesn't match expected config size (0x%x)
+IOMFB: ACSS_ALS_RESCALE: Invalid nidx value %u
+IOMFB: ACSS_ALS_RESCALE: Invalid parameters - null pointer provided
+IOMFB: ACSS_ALS_RESCALE: Unsupported index (config version) %u
+IOMFB: ACSS_ALS_RESCALE: bsz (0x%x) != data_size (0x%x)
+IOMFB: ACSS_ALS_RESCALE: cfg is null
+IOMFB: ACSS_ALS_RESCALE: failed to allocate config_als_rescale
+IOMFB: ACSS_ALS_RESCALE: feature is not supported
+IOMFB: ACSS_ALS_RESCALE: get_als_rescale_block failed, no als rescale config loaded
+IOMFB: ACSS_ALS_RESCALE: kernel_struct.v1 is null
+IOMFB: ACSS_ALS_RESCALE: read flag is false for a get call
+IOMFB: ACSS_ALS_RESCALE: read flag is true for a set call
+IOMFB: ACSS_ALS_RESCALE: unsupported version %u
+IOMFB: ACSS_ALS_RESCALE: unsupported version %u != 1
+IOMFB: ACSS_ERROR: LUT fetch cannot be pending when cdi is not configured
+IOMFB: ACSS_ERROR: could not program cdi luts
+IOMFB: AOD PCC restore failed.
+IOMFB: AOD user swap timestamp too old: issued (0x%llx) requested (0x%llx)
+IOMFB: AdaptiveSync Range [%dHz, %dHz]
+IOMFB: AppleDCPDisplayService ignored message: kDCPMessageTypeHeadless, param = %lu, mipi = %u
+IOMFB: Boot-arg to force enable VRR Ramp enabled. So, proceeding with ramp enable
+IOMFB: CDI PDC buffer write failed
+IOMFB: CDI is disabled for PDC
+IOMFB: ERROR: ACSS temp monitor setup failed
+IOMFB: IOMFBALSSConfig has %u channels, HW has %u
+IOMFB: IOMFBALSSConfig has %u windows, HW has %u
+IOMFB: Increment minRR to accommodate fractional part of minRR for setting VRR range
+IOMFB: Invalid frame ID passed for ACSS frame state lookup
+IOMFB: M3 failed to walkdown to 1 Hz [last frame duration: %d]. Are we running in Fixed Refresh Rate mode?
+IOMFB: NITS unit only allowed on non-MIPI!
+IOMFB: No ramp required on VRR monitor
+IOMFB: PDC compress buffer too small for replay: 0x%lx < 0x%lx
+IOMFB: PDC header buffer too small for replay: 0x%lx < 0x%lx
+IOMFB: PDC: Error: rr_check failed, pipe %d, tab_cfg_rr %d
+IOMFB: PDC_ERROR: For 2D Temp Comp, temp count should be %d, current count %d
+IOMFB: UPReporterMgr::init_hist for aod_frame_miss failed
+IOMFB: UPReporterMgr::init_simple for aod failed
+IOMFB: UPReporterMgr::init_simple for vmaod failed
+IOMFB: VFTG MIPI Mode switching to HW Mode.
+IOMFB: VFTG MIPI Mode switching to SW Mode.
+IOMFB: VMAOD Saw long frametime us %llu between lo %llu and hi %llu
+IOMFB: cannot get replay buffer, pdc/config block is NULL
+IOMFB: could not allocate PDC CDI buffers
+IOMFB: display underrun [frame:%u] [line:%u] 0x%08x latencies: GP [%u, %u] PIODMA [%u] SMMU [%u] REPLAY [%u] BIC [%u], PDC [%u],DecompFail %u, [Coord %08x] [ReplayDmaStatus %08x %08x %08x]
+IOMFB: display underrun [frame:%u] [line:%u] 0x%08x latencies: GP [%u, %u] PIODMA [%u] SMMU [%u] REPLAY [%u] BIC [%u], PDC [%u],DecompFail [%u], [Coord %08x] [ReplayDmaStatus %08x %08x %08x]
+IOMFB: pdc->get_replay_buffer failed with 0x%x
+IOMFB: power off -> on vmaod %d aot %d
+IOMFB: power on -> off vmaod %d aot %d
+IOMFB: power on in incorrect vmaod state %d -> %d
+IOMFB: unsupported IOMFBALSSConfig version: %u
+IOMFBAPTQuanta
+IOMFBAPTQuantaTransitionTimeoutMs
+IOMFBEnableProxSensing
+IOMFBHinge
+IOMFBHingeServiceEPIClient
+IOMFBHingeServiceEPIClient.cpp
+IOMFBParameter_adaptive_sync Invalid media rates, force to 0
+IOMFBParameter_adaptive_sync Req minRR = 0x%x, mediaTargetRate = 0x%x, Fractional Rate = %d
+IOMFBProx
+IOMFBProxOcclusionLevel
+IOMFBProxServiceEPIClient
+IOMFBProxServiceEPIClient.cpp
+IOMFBSetDispIntGPIO
+IOMFBStatus IOMFB::ACSSStatsHandler::configure_callback(IOAOPFramebufferMessage, acssCallback, void *)
+IOMFBStatus IOMFB::DCPBlitter::process_flipbook_swap(IOMFB::SwapRequest *)
+IOMFBStatus IOMFB::UPBlock_ACSS::acss_handler(IOAOPFramebufferMessage, const IOCBACSSConfiguration *)
+IOMFBStatus IOMFB::UPBlock_ALSS::alss_handler(IOAOPFramebufferMessage, const IOAOPALSSConfiguration *)
+IOMFBStatus IOMFB::UPBlock_ALSS::configure_callback(IOAOPFramebufferMessage, alssCallback, void *)
+IOMFBStatus IOMFB::UPBlock_RDLC_v1::alloc_cdi_buffers()
+IOMFBStatus UnifiedPipeline::vmaod_timings_ok_gated()
+Incompatible ALSS Version %d for VTS config, expected 2
+InitializeTCON
+NEG_MVRR supported: %s
+OUTCONV
+PCCBLCPixelCaptureLocation
+PDC Debug: mode %d w %d %d h %d %d bpc %d
+PDC brightnesses
+PDC subframes
+PDC temperatures
+PDCAlwaysOnNits
+PDCContentSwitchCount
+PDCCutoffLux
+PDCDataVersion
+PDCEntryTime
+PDCExitCount
+PDCExitTime
+PDCGlobalTemp
+PDCSaveLongFrames
+PDCSaveRepeatUnstablePCC
+PDCSettleCount
+PDC_DEBUG: could not program nr index and step
+PDC_DEBUG: could not program rr index and step
+PS190VRREmptySDPOverride
+PTUC_BLOCK_CLASS: In secondary Context
+Parser e:  Invalid prox config encountered.
+Parser e: ACSS EMMP exceeding max brightness count: %u > %u
+Parser e: ACSS EMMP exceeding max temperature count: %u > %u
+Parser e: ACSS: set_block_cb failed
+Parser e: ACSS_ALS_RESCALE: set_block_cb failed
+Parser e: ALSS EMMP exceeding max brightness count: %u > %u
+Parser e: ALSS EMMP exceeding max temperature count: %u > %u
+Parser e: ALSS: set_block_cb_failed
+Parser e: Duplicate PDC table (bin=%d temp=%d bright=%d sf=%d param=%d chan=%X) found in input.
+Parser e: EMMP table for ACSS is NULL
+Parser e: EMMP table for ALSS is NULL
+Parser e: Failed to validate pdc rr
+Parser e: PDC missing at least 1 channel
+Parser e: PDC missing bin
+Parser e: Prox PD bin tables do no correlate
+Parser e: Prox PP bin tables do no correlate
+Parser e: actual number of Prox LUTs differ from specified
+Parser e: count %d total_count %d missing PDC LUTs
+Parser e: failed to set PDC LUT RR [%d %d %d %d] 
+Parser e: failed to set PDC LUT [%d %d %d %d %d] 
+Parser e: failed to set PDC table config
+Parser e: failed to set PDC table rr config
+Parser e: failed to set Prox PD LUT [t %d]
+Parser e: failed to set Prox PP LUT [t %d b %d p %d]
+Parser e: failed to set prox table config
+Parser e: invalid acss_als_rescale_config version %u
+Parser e: invalid acss_config version %u
+Parser e: missing PDC LUTs
+Parser e: missing prox PD table bin %d
+Parser e: missing prox PP table bin %d
+Parser e: processed ALSS EMMP dimensions (temp %u, bright %u)mismatch specified values (temp %u, bright %u)
+Parser e: prox LUTs should come after config parameters
+Parser e: reported PDC tap points (temp/DBV/RR/HGOD status) mismatch actual counts
+Parser e: set RDLC data failed
+Parser e: unexpected PDC table version %d
+Parser e: unexpected version %d for PDCc block
+Parser e: unexpected version %d for PDCp block
+Parser e: useless PDC table
+Parser i: PDC bin interpolation, bin = 0x%x
+Parser i: PDC mix bin %g and bin %g with %g --> %g
+Parser i: PDC nframes: %d
+Parser i: PDC params version %d
+Parser i: Prox PD LUT bin interpolation, bin = 0x%x
+Parser i: Prox PP LUT bin interpolation, bin = 0x%x
+Parser i: Set ALSS EM config success
+Parser i: processing prox data version %d
+Parser i: set PDC LUTs RR succeeded
+Parser i: set PDC LUTs succeeded
+Parser i: set PDC table config rr succeeded
+Parser i: set PDC table config succeeded
+Parser i: set Prox LUTs succeeded
+Parser i: set RDLC data succeeded
+Parser i: set prox table config succeeded
+PixelCaptureBlockMask
+PixelCaptureConfig
+Positioning AdaptiveSync SDP
+ProxB: bailed trigger 0x%x > %d * 0x%x + 0x%x - 0x%x [%d-%d %d]
+ProxDataVersion
+ProxHandler.cpp
+ProxInput
+ProxScanPlan
+ProxScanPosition
+QMS Cinema VRR supported: %s
+QMSVRREnableConfig
+RDLCAngleOverride
+RDLCEnable
+RTPLCPixelCaptureLocation
+Received TCON interrupt, DPCD_TCON_INT_STATUS=0x%08x
+ReplayInVMAODEnable
+SetContentProtectionCapabilities
+SetContentProtectionPolicyOptions
+SetContentProtectionSupportEnabled
+Setting options.vrr = %s
+SlowAdaptiveClockingState
+Starting Adaptive-Sync SDP for VRR
+Stop AdaptiveSync SDP
+SupportsAdaptiveSyncSDP
+SupportsBacklightControl
+TBICSPixelCaptureLocation
+TCON SPI eeprom erase command, addr=0x%x
+TCON SPI eeprom write command, addr=0x%x, length=%zu
+TCON SPI erase result: component=%d, addr=0x%x, length=%zu, status=0x%x
+TCON SPI read result: component=%d, addr=0x%x, length=%zu, status=0x%x
+TCON SPI write result: component=%d, addr=0x%x, length=%zu, status=0x%x
+TCON state capture on unexpected unplug %s
+TCONBIMInterfaceClient.cpp
+TCONBIMInterfaceTBClient
+TCONErrorCount
+TCONSPIRTKService
+TCONiBootInterfaceTBClient
+TCONiBootInterfaceTBServer
+TCONiBootInterfaceTBServer::Handler
+TCONiBootService
+TCONiBootTBProxy
+TCONiBootTBProxy.cpp
+UPBlock_ACSS.cpp
+UPBlock_ACSS_v12_inc.cpp
+UPBlock_ALSS.cpp
+UPBlock_ALSS_v22_inc.cpp
+UPBlock_PDC_v22_inc.cpp
+UPBlock_RDLC.cpp
+UPBlock_RDLC_v1.cpp
+UPIOSvcProxy.cpp
+UPIOSvcProxy_LocalCalls.cpp
+Update PDC current temperature to %u
+VRRBurnInCooldownEnabled
+VRRBurnInCooldownThreshold
+VRRBurnInEnabled
+VRRBurnInThreshold
+VRRDivisor
+VRREnabled
+VRRIdleEnabled
+VRRIdleThreshold
+VRRMax 0x%x
+VRRMin 0x%x
+VRRVersion
+WPCPixelCaptureLocation
+Warning: low_pri_event_mgr not available, flipbook metrics timer not created
+[CB] %s CB Flipbook updates
+[CB] Cannot instantiate CBAPToDCPService on an external DCP
+[CB] Clearing AOD ramps...
+[CB] FlipBookManager: Size doesn't match: SizeOf header %u, %lu expected, entry %u, %lu expected, size of data %u, %lu expected
+[CB] Invalid ALSS args, message:%d
+[CB] Received CB Flipbook: Version=%d, Length=%d/1000, Frequency=%d, nUpdates=%d, data size = %zu, FB entries size = %lu
+[CB] Unrecognized command %d received for ACSS!
+[CB] XTalk capture started active=%d result=0x%x
+[CB] XTalk capture stopped active=%d result=0x%x
+[CB] kIOAOPALSAbortCapture recvd
+_aodContext._aonState = 0x%x
+adaptive-sync
+adaptive_sync.c
+adaptive_sync_activate
+adaptive_sync_control
+adaptive_sync_determine_min_max_duration
+alss_window_accum_sum
+aod stats
+aod-data
+aod_fixed_rr_changed
+apt firmware: %s
+apt firmware: %s%s
+apt-version-control
+apt_activate
+apt_control
+apt_default_gray_value_changed
+apt_fixed_rr_changed
+apt_init
+apt_normal_mode_changed
+apt_vbi
+bool IOMFB::ACSSStatsHandler::init(UPPipe *)
+command_mode_apt.c
+configureColorFormatConversion
+configureFromBacklightConfiguration
+dcvrr-a
+dcvrr-b
+dcvrr-c
+dcvrr-d
+dcvrr-version-control
+display-coex-prioritize-prox
+dispsec-spi
+dptx-register-capture-done
+enableALSSFCAMStats
+enableMockALSSCapture
+enablePixelCapture
+enableSubPixelLayoutCompensation
+enable_hinge_angle_update
+enable_ramp_vrr
+failed to create serializer for supports adaptive sync SDP
+failed to disable Adaptive-Sync SDP, ret=0x%08x (ignored)
+failed to enable AdaptiveSync SDP, ret=0x%08x (ignored)
+fcam alss stats
+find_prox_fire_time_rr
+flipbook_count
+flipbook_delay
+forceEnableACSS
+gamutConversionPipe0
+gamutConversionPipe1
+gamutConversionPostBlend
+getContentProtectionInhibited
+getDefaultContentProtection
+get_VRR_SDP_Info
+get_pdc_bw failed
+handleValidateColorFormatConversion
+initClientConfig
+init_aod_frame_miss_histogram
+init_pdc_bwr
+invalid result returned from getConfigInfo
+iomfb_GamutConversionLocation_Pipe0
+iomfb_GamutConversionLocation_Pipe1
+iomfb_GamutConversionLocation_PostBlend
+iomfb_IdleDetectorIndex_VRRBurnInPreventionCooldown_enabled
+iomfb_IdleDetectorIndex_VRRBurnInPreventionCooldown_threshold
+iomfb_IdleDetectorIndex_VRRBurnInPrevention_enabled
+iomfb_IdleDetectorIndex_VRRBurnInPrevention_threshold
+iomfb_IdleDetectorIndex_VRR_enabled
+iomfb_IdleDetectorIndex_VRR_threshold
+iomfb_RuntimeProperty_AODFixedRR
+iomfb_RuntimeProperty_AODWaitForWalkdown
+iomfb_RuntimeProperty_APTDefaultGrayValue
+iomfb_RuntimeProperty_APTEventsMask
+iomfb_RuntimeProperty_APTEventsMaskHi
+iomfb_RuntimeProperty_APTFixedRR
+iomfb_RuntimeProperty_AoD1HzPanicThreshold
+iomfb_RuntimeProperty_BICSPixelCaptureLocation
+iomfb_RuntimeProperty_BlendPixelCaptureLocation
+iomfb_RuntimeProperty_CCPixelCaptureLocation
+iomfb_RuntimeProperty_CMPixelCaptureLocation
+iomfb_RuntimeProperty_CalCLutPixelCaptureLocation
+iomfb_RuntimeProperty_ConfigureQMSVRR
+iomfb_RuntimeProperty_GP0PixelCaptureLocation
+iomfb_RuntimeProperty_GP1PixelCaptureLocation
+iomfb_RuntimeProperty_PCCBLCPixelCaptureLocation
+iomfb_RuntimeProperty_PDCAlwaysOnNits
+iomfb_RuntimeProperty_PDCContentSwitchCount
+iomfb_RuntimeProperty_PDCCutoffLux
+iomfb_RuntimeProperty_PDCEntryTime
+iomfb_RuntimeProperty_PDCExitCount
+iomfb_RuntimeProperty_PDCExitTime
+iomfb_RuntimeProperty_PDCGlobalTemp
+iomfb_RuntimeProperty_PDCSaveLongFrames
+iomfb_RuntimeProperty_PDCSaveRepeatUnstablePCC
+iomfb_RuntimeProperty_PDCSettleCount
+iomfb_RuntimeProperty_PixelCaptureBlockMask
+iomfb_RuntimeProperty_PixelCaptureConfig
+iomfb_RuntimeProperty_RDLCAngleOverride
+iomfb_RuntimeProperty_RTPLCPixelCaptureLocation
+iomfb_RuntimeProperty_TBICSPixelCaptureLocation
+iomfb_RuntimeProperty_WPCPixelCaptureLocation
+iomfb_RuntimeProperty_aptQuanta
+iomfb_RuntimeProperty_aptQuantaTransitionTimeoutMs
+iomfb_RuntimeProperty_enableALSSFCAMStats
+iomfb_RuntimeProperty_enableAPTConfigExpired
+iomfb_RuntimeProperty_enableAPTDefaultGray
+iomfb_RuntimeProperty_enableAPTEvents
+iomfb_RuntimeProperty_enableAPTLogs
+iomfb_RuntimeProperty_enableAPT_CA
+iomfb_RuntimeProperty_enableAPT_CDFD
+iomfb_RuntimeProperty_enableAPT_PDC
+iomfb_RuntimeProperty_enableAPT_PDC_PM
+iomfb_RuntimeProperty_enableAPT_PDC_Repeat
+iomfb_RuntimeProperty_enableAPT_PRC
+iomfb_RuntimeProperty_enableHingeAngleOverride
+iomfb_RuntimeProperty_enableMockALSSCapture
+iomfb_RuntimeProperty_enablePixelCapture
+iomfb_RuntimeProperty_enableProxSensing
+iomfb_RuntimeProperty_enableRDLC
+iomfb_RuntimeProperty_enableReplayInVMAOD
+iomfb_RuntimeProperty_enableSubPixelLayoutCompensation
+iomfb_RuntimeProperty_fakeTconESDEvent
+iomfb_RuntimeProperty_forceEnableACSS
+iomfb_RuntimeProperty_forceEnableACSSGenXSensing
+iomfb_RuntimeProperty_hingeAngleOverrideValue
+iomfb_RuntimeProperty_proxOcclusionLevel
+iomfb_RuntimeProperty_proxScanPlan
+iomfb_RuntimeProperty_proxScanPosition
+iomfb_RuntimeProperty_resetAPT_CA
+iomfb_RuntimeProperty_setDispIntGPIO
+iomfb_RuntimeProperty_vrrDivisor
+iomfb_RuntimeProperty_vrrVersion
+iomfb_acss
+iomfb_acss_disable
+iomfb_acss_filter
+iomfb_acss_neon
+iomfb_acss_no_adjust
+iomfb_acss_skip_fdr_check
+iomfb_acss_tap_point
+iomfb_alss
+iomfb_aod_forced_rr
+iomfb_aod_temp_threshold
+iomfb_aod_wait_for_walkdown
+iomfb_apt_ca
+iomfb_apt_cdfd
+iomfb_apt_config_expired
+iomfb_apt_logs
+iomfb_apt_prc
+iomfb_dcvrr_a_override
+iomfb_dcvrr_b_override
+iomfb_dcvrr_c_override
+iomfb_dcvrr_d_override
+iomfb_dcvrr_vc_override
+iomfb_hinge
+iomfb_pdc
+iomfb_pdc_debug
+iomfb_rdlc_disable
+iomfb_rdlc_trace
+iomfb_vmaod_ft_hi_us
+iomfb_vmaod_ft_lo_us
+iomfb_vmaod_panic_long_frame
+iomfb_vmaod_temp_comp_policy
+lcd-on-to-spi-clk-delay
+lcd-spi-clk
+lcd-spi-cs
+lcd-spi-mosi
+length <= kMaxSPIPacketDataSize
+length <= kMaxSPIPacketDataSizeRead
+mipiLaneCount
+no matching primary timing for secondary element ID %llu (%ux%up%u)
+no secondarySlice; not adding split formats
+pdc_cdi_configure_area
+pdc_control_vid
+pdc_ext_wb_buffer_overflow
+pdc_int_wb_buffer_overflow
+pdc_rd_decompress_error
+pdc_rd_dma_fail
+pdc_repeat_count
+pdc_rw_dma_early_stop
+pdc_v22.c
+pdc_wr_dma_fail
+piodma_transaction_not_completed_acsslut
+piodma_transaction_not_completed_alsslut
+piodma_transaction_not_completed_pdclut
+piodma_transaction_not_completed_proxlut
+pixel_capture_frame_info
+pixel_capture_info2.c
+pllGetDefaultConfig
+process_hinge_angle_packet
+process_prox_packet_test
+program_M3_sdp_VRR_config
+prox-behind-display-calibraion
+prox.c
+prox_active
+prox_aod_shutdown
+prox_aod_startup
+prox_config_trigger
+prox_process
+prox_sws_init
+prox_sws_stats_ready
+proxboled-config
+proxlut_piodma_context
+read_hinge_angle_from_ptd
+reload_prox_calib_data
+replay_vmaod_wb_completed
+rt_bw_check_aod_bw_limit
+secondarySlice->getTimingElements() failed!
+secure-mipi
+setAdaptiveSyncEnabled
+setAdaptiveSyncEnabledGated
+setConversionToYCbCr420Enabled
+setConversionToYCbCr422Enabled
+setFECErrorCountConfig
+set_angle_filter_config
+set_angle_threshold_config
+set_hinge_angle_override_value
+set_interface_angle_filter_config
+set_prox_gpio
+static APTMxHal_v2 *IOMFB::APTMxHal_v2::instantiate_for_feature(uint32_t, uint32_t, uint32_t)
+support-tcon-power-mitigation
+target-capture-tcon-state-on-unplug
+tcon-2dira-enable
+tcon-BNCH
+tcon-ECID
+tcon-PROD-fused
+tcon-PROD-value
+tcon-SDOM-fused
+tcon-SDOM-value
+tcon-bim-tb-ep
+tcon-bim-tb-interface
+tcon-boot-status
+tcon-cfg-auth
+tcon-cfg-hash
+tcon-cfg-hash-result
+tcon-cfg-version
+tcon-device-id
+tcon-ep
+tcon-epic
+tcon-failsafe-data
+tcon-firmware-version
+tcon-iboot
+tcon-iboot-tb-ep
+tcon-iboot-tb-interface
+tcon-iboot-tb-proxy
+tcon-life
+tcon-model
+tcon-module-info
+tcon-service
+unable to read TCON_INT_STATUS, ret=0x%08x
+v16@?0{tconbim_interface_write__result_s=C(?={tconbim_interfaceerror_s=I})}8
+v16@?0{tconiboot_interface_displaypmicdebugpanic__result_s=C(?={tconiboot_interfaceerror_s=I})}8
+v16@?0{tconiboot_interface_displaypower__result_s=C(?={tconiboot_interfaceerror_s=I})}8
+v16@?0{tconiboot_interface_set2diraenable__result_s=C(?={tconiboot_interfaceerror_s=I})}8
+v56@?0{tconbim_interface_read__result_s=C(?={tconbim_interfaceerror_s=I}{tconbim_backup_s=CCQ[3S][3S][3S]I})}8
+v56@?0{tconiboot_interface_getserialnumber__result_s=C(?={tconiboot_interfaceerror_s=I}{tconiboot_serialnumber_s={u8_v_s=C(?={?=*Q@?}{?=*QQ}{?=^{tb_message_s}QQQ})}})}8
+v88@?0{tconiboot_interface_getconfiginfo__result_s=C(?={tconiboot_interfaceerror_s=I}{tconiboot_configinfo_s=[32C][2C]I[32C]B})}8
+validateColorFormatConversion
+vec[0].size >= sizeof(TCONAFKPacketHeader)
+vec[0].size >= sizeof(TCONAFKPacketHeader) + dataLen
+virtual IOMFBStatus IOMFB::UPBlock_ALSS_v22::get_elvc_luts_data(MutableByteSpan)
+virtual IOMFBStatus IOMFB::UPBlock_ALSS_v22_sec::get_elvc_luts_data(MutableByteSpan)
+virtual bool IOMFB::UPBlock_ACSS::init(UPPipeInterface *)
+virtual bool IOMFB::UPBlock_ALSS::init(UPPipeInterface *)
+virtual bool IOMFB::UPPipeDCP_H19P_pri_int::instantiate_apt_hal(uint32_t)
+virtual bool IOMFB::UPPipeDCP_H19P_sec_int::instantiate_apt_hal(uint32_t)
+virtual bool VideoInterfaceIOAV::init(IOMFB::UPIOSvcProxy *, Callback, void *, PipeVideoMode, bool)
+virtual void IOMFB::UPBlock_ALSS_v22::compute_rgb_coeffs()
+virtual void IOMFB::UPBlock_ALSS_v22_sec::compute_rgb_coeffs()
+vmaod stats
+vmaod_replay.c
+vmaod_replay_init
+vmaod_timings_ok_gated
+void IOMFB::UPBlock_ALSS::send_data(uint64_t, uint32_t)

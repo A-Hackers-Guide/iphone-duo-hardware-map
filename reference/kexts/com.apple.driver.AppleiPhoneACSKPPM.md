@@ -1,0 +1,2131 @@
+# `com.apple.driver.AppleiPhoneACSKPPM`
+
+- Name: AppleiPhoneACSKPPM
+- Version: `3.0`
+- UUID: `C4C0F344-B5CF-3C92-9ADB-100B75C05084`
+- Source version: `1191.40.27.0.1`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.ApplePMGR`](com.apple.driver.ApplePMGR.md) 1.0, [`com.apple.iokit.IOReportFamily`](com.apple.iokit.IOReportFamily.md) 1.0, [`com.apple.kec.Libm`](com.apple.kec.Libm.md) 1.0.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 11.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 9.0.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 9.0.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 9.0.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (1) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/pmgr/ppm`](../devicetree/root__arm-io__pmgr__ppm.md) | `ApplePPMCPMSv2` | `ppm,iphoneacsk` |
+
+## IOKit personalities (1) [KC]
+
+### AppleiPhoneACSKPPM
+- `CFBundleIdentifier`: `com.apple.driver.AppleiPhoneACSKPPM`
+- `IOClass`: `ApplePPMCPMSv2`
+- `IOKitDebug`: `65535`
+- `IOMatchCategory`: `ApplePPMCPMSv2`
+- `IONameMatch`: `ppm,iphoneacsk`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleiPhoneACSKPPM`
+- `IOProviderClass`: `ApplePMGRNub`
+- `IOUserClientClass`: `ApplePPMUserClient`
+
+
+## C++ classes (26) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `ApplePPM` | 0x34a0 | IOService → IORegistryEntry |
+| `ApplePPMAONPTDAdapter` | 0x148 | ApplePPMPTDManagerBase |
+| `ApplePPMARMFunction` | 0x38 | AppleARMFunction |
+| `ApplePPMCPMS` | 0x9830 | ApplePPM → IOService → IORegistryEntry |
+| `ApplePPMCPMSPeakPowerEnvelope` | 0xd8 |  |
+| `ApplePPMCPMSPowerInputHelper` | 0x1e0 |  |
+| `ApplePPMCPMSPowerInputHelperBatteryFirmware` | 0x218 | ApplePPMCPMSPowerInputHelper |
+| `ApplePPMCPMSSysCapMonitorv2` | 0x300 | ApplePPMCPMSSystemCapabilityMonitor → ApplePPMSystemCapabilityMonitor |
+| `ApplePPMCPMSSystemCapabilityMonitor` | 0x2f8 | ApplePPMSystemCapabilityMonitor |
+| `ApplePPMCPMSv2` | 0x9838 | ApplePPMCPMS → ApplePPM → IOService → IORegistryEntry |
+| `ApplePPMDaemonIPC` | 0x28 |  |
+| `ApplePPMDroopController` | 0x90 |  |
+| `ApplePPMEntity` | 0x80 |  |
+| `ApplePPMKernelClient` | 0x50 |  |
+| `ApplePPMNormalizedResidencyReporter` | 0xb8 | IOStateReporter → IOReporter |
+| `ApplePPMPTDManagerBase` | 0x110 |  |
+| `ApplePPMPmgrAdapter` | 0x178 | ApplePPMPTDManagerBase |
+| `ApplePPMPolicyCPMS` | 0x5528 |  |
+| `ApplePPMPolicyCPMSPowerServo` | 0x5588 | ApplePPMPolicyCPMS |
+| `ApplePPMPolicyCPMSPowerServoLowerLayerBudgets` | 0x5550 | ApplePPMPolicyCPMS |
+| `ApplePPMPolicyCPMSPowerServoLowerLayerCEs` | 0x5588 | ApplePPMPolicyCPMSPowerServo → ApplePPMPolicyCPMS |
+| `ApplePPMPolicyCPMSv2` | 0x5b48 | ApplePPMPolicyCPMSPowerServo → ApplePPMPolicyCPMS |
+| `ApplePPMPredictivePmax` | 0x118 |  |
+| `ApplePPMSMCInterface` | 0x20 |  |
+| `ApplePPMSystemCapabilityMonitor` | 0x238 |  |
+| `ApplePPMUserClient` | 0x110 | IOUserClient → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1800)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x000172dd off=0x008e2a50-0x008f9d2d addr=0xfffffe00078e6a50-0xfffffe00078fdd2d r--/r--   __TEXT            
+	sz=0x000113d2 off=0x008e31b8-0x008f458a addr=0xfffffe00078e71b8-0xfffffe00078f858a               __TEXT.__cstring          (CstringLiterals)
+	sz=0x000012b4 off=0x008f4590-0x008f5844 addr=0xfffffe00078f8590-0xfffffe00078f9844               __TEXT.__const            
+	sz=0x000044e9 off=0x008f5844-0x008f9d2d addr=0xfffffe00078f9844-0xfffffe00078fdd2d               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x00060ee8 off=0x02b6be60-0x02bccd48 addr=0xfffffe0009b6fe60-0xfffffe0009bd0d48 r-x/r-x   __TEXT_EXEC       
+	sz=0x00060718 off=0x02b6be60-0x02bcc578 addr=0xfffffe0009b6fe60-0xfffffe0009bd0578          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000007d0 off=0x02bcc578-0x02bccd48 addr=0xfffffe0009bd0578-0xfffffe0009bd0d48          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00008000 off=0x049d20c0-0x049da0c0 addr=0xfffffe000b9d60c0-0xfffffe000b9deb10 rw-/rw-   __DATA            
+	sz=0x00005c7c off=0x049d20c0-0x049d7d3c addr=0xfffffe000b9d60c0-0xfffffe000b9dbd3c               __DATA.__data             
+	sz=0x00002bd8 off=0x00000000-0x00002bd8 addr=0xfffffe000b9dbd40-0xfffffe000b9de918               __DATA.__common           (Zerofill)
+	sz=0x000001f8 off=0x00000000-0x000001f8 addr=0xfffffe000b9de918-0xfffffe000b9deb10               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00009860 off=0x012b5238-0x012bea98 addr=0xfffffe00082b9238-0xfffffe00082c2a98 rw-/rw-   __DATA_CONST      
+	sz=0x00000118 off=0x012b5238-0x012b5350 addr=0xfffffe00082b9238-0xfffffe00082b9350         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x000000c8 off=0x012b5350-0x012b5418 addr=0xfffffe00082b9350-0xfffffe00082b9418         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00008658 off=0x012b5418-0x012bda70 addr=0xfffffe00082b9418-0xfffffe00082c1a70         __DATA_CONST.__const            
+	sz=0x00000a00 off=0x012bda70-0x012be470 addr=0xfffffe00082c1a70-0xfffffe00082c2470         __DATA_CONST.__kalloc_type      
+	sz=0x00000140 off=0x012be470-0x012be5b0 addr=0xfffffe00082c2470-0xfffffe00082c25b0         __DATA_CONST.__kalloc_var       
+	sz=0x000003e8 off=0x012be5b0-0x012be998 addr=0xfffffe00082c25b0-0xfffffe00082c2998         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000e0 off=0x012be998-0x012bea78 addr=0xfffffe00082c2998-0xfffffe00082c2a78         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000020 off=0x012bea78-0x012bea98 addr=0xfffffe00082c2a78-0xfffffe00082c2a98         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 278 at 0x04aecfe0
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     C4C0F344-B5CF-3C92-9ADB-100B75C05084
+008: LC_SOURCE_VERSION           1191.40.27.0.1
+009: LC_FUNCTION_STARTS          offset=0x004ab7e68 size=0xca8
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleiPhoneACSKPPM`
+- `CFBundleIdentifier`: `com.apple.driver.AppleiPhoneACSKPPM`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleiPhoneACSKPPM`
+- `CFBundleNumericVersion`: `50364416`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `3.0`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `OSBundleCompatibleVersion`: `1.0`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleiPhoneACSKPPM.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198896481712`
+- `_PrelinkExecutableRelativePath`: `AppleiPhoneACSKPPM`
+- `_PrelinkExecutableSize`: `566389`
+- `_PrelinkExecutableSourceAddr`: `-2198896481712`
+- `_PrelinkKmodInfo`: `-2198828392256`
+
+## Strings (1981) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `instance`
+- `\"ApplePPM: %s:%u \" \"ptML returned zero entries for SMC->PPM range\" @%s:%d`
+- `\"ApplePPM: %s:%u \" \"no client defined for power list for uniqueId %d\" @%s:%d`
+- `_batteryPowerCallbackEvent`
+- `BrownoutRiskPu_Battery%d`
+- `UsePpMaxPrevious`
+- `OverrideHFEFastImpedanceZeta`
+- `batteryIntfGetOCVData`
+- `ISS`
+- `site.ApplePPMCPMSMeasuredPowerHelper`
+- `integratorDownGain`
+- `static void ApplePPMCPMS::updateSignalCallback(OSObject *, uint64_t)`
+- `OverrideEnableLHSHPredictiveAlgo`
+- `UseOverridePercentileRankPp`
+- `reqBdg`
+- `hfe-slow-impedance-lower-bnd`
+- `ApplePPMPolicyCPMSPowerServoLowerLayerCEs.cpp`
+- `void ApplePPMSystemCapabilityMonitor::findBatteryPackEntry()`
+- `clients`
+- `OverrideHFEVoltageFilterNumeratorCoeffs`
+- `ChemID`
+- `_powerServoInputs`
+- `mandrake`
+- `UsePsMaxPrevious`
+- `100ms`
+- `t`
+- `updateArray`
+- `systemloadinput-ptle-rank-pp`
+- `cpms-pmax-enable-neg-sys-ld`
+- `_batteryOverrides._overrideBatteryInputTimeScales`
+- `\"ApplePPM: %s:%u \" \"%s, lane %d, effort %d out of range\" @%s:%d`
+- `\"ApplePPM: %s:%u \" \"timescale %d\" @%s:%d`
+- `\"ApplePPM: %s:%u \" \"length %u\" @%s:%d`
+- `client-predictive-pmax-budgets`
+- `dynamic-PMU-Vthr-enabled`
+- `LastDisengagedCritDroopTS`
+- `OverrideHFESlowImpedanceUpperBound`
+- `de3-delay-decay-prop`
+- `void ClientEntity::setThermalPowerBudget(DetailedThermalBudget *)`
+- `IOReturn ApplePPM::sleepWakeNotification(void *, UInt32, IOService *, void *, vm_size_t)`
+- `Gauge10s`
+- `Voltage`
+- `virtual bool ApplePPMCPMSSystemCapabilityMonitor::updateSystemCapabilityWithPPM()`
+- `12`
+- `bool ApplePPMDroopController::initWithParent(ApplePPM *)`
+- `Ra14`
+- `client_powers_extra`
+- `UseOverrideRtrace`
+- `site.ApplePPMKernelClient`
+- `FirmwareIMonIS`
+- `function_ptd_read_mult`
+- `baseband`
+- `camera`
+- `PPMDebug`
+- `PMU-pmax-sampling-enabled`
+- `en-peak-power-envelope`
+- `UseFlagFilterPp`
+- `sss-pred-vdroop-sniffer-min-margin`
+- `\"ApplePPM: %s:%u \" \"SOC range %u not a multiple of col dim %u\\n\" @%s:%d`
+- `UseOverrideBatteryInputIss`
+- `voltageThreshDerivDynEntry`
+- `cpms-pmax-too-low-thresholds`
+- `\"ApplePPM: %s:%u \" \"enablePTDEntryInterrupt returned 0x%08x\" @%s:%d`
+- `_signalIndex_acskInputs[Pu_BROWNOUT2] >= 0`
+- `cpms-input-Ps-cutoff-voltage`
+- `bool ApplePPMCPMSPeakPowerEnvelope::peakPowerEnvelopeUpdateValues(float, peakPowerEnvelopeValues *)`
+- `wifi`
+- `gainDerivDynEntry`
+- `hfe-voltage-filter-num-coeffs`
+- `fallback-table-low-temp`
+- `bool ApplePPMPolicyCPMSv2::initWithParams(IOService *, uint32_t, ApplePPMEDTData *, IOKitMessageCallbackType, IOKitMessageCallbackType)`
+- `int ppmClient::getBudget1sIndex()`
+- `site.ApplePPMCPMSPeakPowerEnvelope`
+- `_policyInputUpdateInterrupt`
+- `_smcTargetsDescriptor`
+- `static ApplePPMCPMSSystemCapabilityMonitor *ApplePPMCPMSSystemCapabilityMonitor::withParent(ApplePPM *, uint8_t, uint8_t)`
+- `ret`
+- `\"ApplePPM: %s:%u \" \"unsupported filter tau %d, index %d\" @%s:%d`
+- `filterRatioDownPs`
+- `createPmaxDictionary`
+- `proportionalGain`
+- `filterRatioUpPp`
+- `\"ApplePPM: %s:%u \" \"readPTDEntry returned 0x%08x\" @%s:%d`
+- `bool ApplePPMPolicyCPMS::initWithParams(ApplePPMEDTData *, IOKitMessageCallbackType)`
+- `UseOverrideBatteryInputIT_MISC_STATUS`
+- `btmStartFunction`
+- `cpms-dt-curve`
+- `PMU1s`
+- `OverrideHFESlowImpedanceLearningRate`
+- `DisplayPredictiveSysCap_mW`
+- `\"ApplePPM: %s:%u \" \"_multiEMAMaxTracker not initialized for index=%d\" @%s:%d`
+- `UseSystemLoadInputsFilteredCurrentRc3`
+- `Vtarget-Vdroop-upper-limit`
+- `OCV`
+- `\"ApplePPM: %s:%u \" \"Mismatch in number of elements in predictive powers (%d) and predictive budgets (%d) in the EDT for clientID  %d\" @%s:%d`
+- `cpms-input-ki-gain-down`
+- `description`
+- `UseOverridePowerServoControlEfforts`
+- `controlState`
+- `sendClientBudgetsTelemetry`
+- `hfe-voltage-filter-den-coeffs`
+- `pmaxState`
+- `%s%d`
+- `121112211221122112211221122112211221122222222211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222211222222222222222222222222222222222222222222222222222222222222`
+- `_pwrReductionReporter[i]`
+- `bool ApplePPMPowerServo::initWithParams(int, BatteryPowerConsumptionFilterTau, float, float, int)`
+- `ClientDemandScaleFactor`
+- `numSubClients`
+- `OutputPp_mW`
+- `\"ApplePPM: %s:%u \" \"getPTDRangeInfo for range %d returned 0x%08x\" @%s:%d`
+- `virtual IOReturn ApplePPMPmgrAdapter::enableInterruptForSMCToPPM()`
+- `static ApplePPMPTDManagerBase *ApplePPMPTDManagerBase::withPmgrProvider(ApplePMGRNub *, IOService *, lowerLayerUpdateHandlerType, fetchClientPowerConsumptionHandlerType, uint32_t)`
+- `Hot in pocket`
+- `void ApplePPMPredictivePmax::addDeviceTreeClientPredictivePowerProperties(ApplePPMCPMSClientPredictivePmaxPowersEDT)`
+- `Ra02`
+- `cpms-input-ps-max-prev`
+- `cpms-input-weight-factor-pp`
+- `OverrideBatteryInputPuCutoffVoltage`
+- `budgetLevelList`
+- `unsigned int unpackOSArray(OSArray *, float *, unsigned int, int)`
+- `_sysCapIndex < MAX_NUMBER_BATTERY_PACKS`
+- `rtmu`
+- `%s: Failed to initialize shared data queue, disabling UTF telemetry\n`
+- `OverrideSystemCapability`
+- `ProactiveSysCap`
+- `virtual IOReturn ApplePPMCPMS::requestPowerBudget(CPMSPPMPowerBudget *, CPMSPPMPowerBudget *)`
+- `1 sec`
+- `122222222`
+- `\"ApplePPM: %s:%u \" \"no client defined for budget list for uniqueId %d\" @%s:%d`
+- `OverrideBatteryInputVgg`
+- `OverrideBatteryInputRaTable`
+- `v`
+- `UseOverrideCurrentLimitWindowSizePmaxVF`
+- `Pwr`
+- `de3-decay-deriv`
+- `\"ApplePPM: %s:%u \" \"unknown policy type %d\" @%s:%d`
+- `currentLimitMaxPmaxVF`
+- `Camera Floor`
+- `_signalIndex_acskInputs[DROOP_CE] >= 0`
+- `virtual void ApplePPMCPMSPowerInputHelperBatteryFirmware::inputHandler(OSArray *, uint32_t)`
+- `platinum_reg`
+- `virtual IOReturn ApplePPMCPMS::PPMInterfaceAPICallBack(OSObject *, OSDictionary *, OSDictionary **)`
+- `kPPMOutImpdDataR2`
+- `sendPmaxValuesToSMC`
+- `weight-factor-model-Px`
+- `budget`
+- `void ApplePPMPolicyCPMS::addDeviceTreeClientPredictiveBudgetPowerProperties(int, OSData *, OSData *)`
+- `clientService`
+- `\"ApplePPM: %s:%u \" \"client ID %u registration: admission check failed. error 0x%08x\" @%s:%d`
+- `UseSystemLoadInputsDynamicInitReset`
+- `setSystemCapability`
+- `bool ApplePPMCPMSPeakPowerEnvelope::filterOutData(peakPowerEnvelopeValues *)`
+- `virtual bool ApplePPMCPMSv2::setSystemCapability(const int *, int32_t, uint8_t)`
+- `virtual uint32_t ApplePPMCPMSv2::powerValueToBudgetScalar(uint32_t, UniqueClientID_t)`
+- `cpms-constant-safe-harbor`
+- `_powerServoControlEffortsReporter`
+- `site.ApplePPMPolicyCPMSPowerServoLowerLayerCEs`
+- `void ApplePPM::getTGraphClientData(ApplePPMTGraphClientData **)`
+- `PPMVector`
+- `_batteryPowerConsumptionPMULock`
+- `ApplePPMCPMSv2`
+- `cpms-syscap-filter-constants`
+- `virtual IOReturn ApplePPMPmgrAdapter::disableInterruptForSMCToPPM()`
+- `PPM Stats`
+- `\"ApplePPM: %s:%u \" \"unexpected CLPC budget request, %d timescales\" @%s:%d`
+- `UseOverrideBatteryInputDSG`
+- `OverrideBatteryInputIT_MISC_STATUS`
+- `contents`
+- `voltageBattMeasPrevPs`
+- `OverridePeakPowerPressureLevel`
+- `clientProperties`
+- `\"ApplePPM: %s:%u \" \"lane %d, output timescale %d\" @%s:%d`
+- `hfe-fast-current-lower-thresh`
+- `numTemp is null`
+- `AppleSmartBatteryPack`
+- `FirmwareVBat100ms`
+- `arr`
+- `\"ApplePPM: %s:%u \" \"count %u of %u\" @%s:%d`
+- `ApplePPMARMFunction`
+- `ApplePPMKernelClient.cpp`
+- `System Stress Signal`
+- `cpms-input-decay-weight-pmu-red`
+- `AppleSE`
+- `setControlParameter`
+- `_numberOfBatteryBanks > 0 && _numberOfBatteryBanks <= MAX_NUMBER_BATTERY_BANKS`
+- `ApplePPMSystemCapabilityMonitor *ApplePPM::getSystemCapabilityMonitor(uint8_t, uint8_t)`
+- `CameraStrobeMaxLoad`
+- `OverrideBatteryInputPsCutoffVoltage`
+- `filter-ratio-down-current-limit`
+- `hfe-fast-impedance-zeta`
+- `curvesEDT`
+- `power`
+- `AppleInductive`
+- `ServoCE_%d`
+- `virtual IOReturn ApplePPMKernelClient::getMinMaxClientPowerPolicy(uint8_t, clientPowerPolicyRange *)`
+- `asbm`
+- `sym`
+- `site.ApplePPMPolicyCPMSv2`
+- `Policy CPMS`
+- `Ra09`
+- `model-param-max-resistance`
+- `maxEMATau3`
+- `void ApplePPMPolicyCPMS::constructLanes(ApplePPMCPMSLaneEDT *, int, ApplePPMCPMSDecisionTreeCurveEDT *, int)`
+- `OverrideDroopUtilization`
+- `UseOverrideBatteryInputTimeScales`
+- `UseSignalStorePatterns`
+- `_batterySamplingTimer`
+- `cpms-batt-model-100ms-fallback`
+- `_signalIndex_acskInputs[SYSCAP_STROBE2] >= 0`
+- `display2`
+- `pushTelemetry`
+- `UseOverrideBatteryPowerConsumptionPMU`
+- `com.apple.private.ppm.client`
+- `bool ApplePPMPolicyCPMSPowerServo::initWithParams(ApplePPMEDTData *, IOKitMessageCallbackType, IOKitMessageCallbackType)`
+- `installBatteryDataOverride`
+- `ApplePPM::initLocal success\n`
+- `CPMSSupported`
+- `void ApplePPMCPMS::constructTimescalesAvailable(CPMSPPMPowerBudget *, uint32_t)`
+- `currentRateThreshold`
+- `FlagPsMaxFusion`
+- `ResScale`
+- `ApplePPMCPMSTableDrivenBatteryModelFallBack::ApplePPMCPMSTableDrivenBatteryModelFallBack(const uint32_t *, uint32_t, uint32_t, int32_t, int32_t)`
+- `_signalIndex_acskInputs[P_MARGIN] >= 0`
+- `TelemetrySharedQueueAllocStatus`
+- `UseOverrideBatteryInputMeasuredPbLong`
+- `cpms-policy-type`
+- `voltageThreshPropDynEntry`
+- `bool ApplePPMCPMSSignalManager::initWithParams(IOService *, IOKitMessageCallbackType)`
+- `AppleSmartBatteryBank arrival success %d \n`
+- `cpms-input-vbat-prev-ps`
+- `baselineR0`
+- `UseOverrideBatteryInputRss`
+- `AppleDummyKC`
+- `\"ApplePPM: %s:%u \" \"Invalid clientId %d in multiClientList\" @%s:%d`
+- `constructAndSendBudgetMessageMultiClient`
+- `sc`
+- `handleBatteryUpdateCallback`
+- `_ppmClientParameters`
+- `_ptdLock`
+- `ApplePPM_ACSK_signalTracer.cpp`
+- `handleBatteryAgingEnableFlagToggle`
+- `_integratorGain >= 0.0f`
+- `enable-battmodel-to-safeharbor`
+- `UseEnableComputedRdc`
+- `ackClientBudget`
+- `sss-default-residual-score`
+- `_powerSamplesPs`
+- `static ApplePPMPolicyCPMSPowerServoLowerLayerBudgets *ApplePPMPolicyCPMSPowerServoLowerLayerBudgets::withParams(IOService *, IOKitMessageCallbackType, IOKitMessageCallbackType)`
+- `_systemStressStateReporter`
+- `registerKernelClientToApplePPMFunction`
+- `virtual IOReturn ApplePPM::startActivity(ApplePPMEntity *, uint32_t)`
+- `array`
+- `cpms-client-demand-scale`
+- `virtual uint32_t ApplePPMCPMS::powerValueToBudgetScalar(uint32_t, UniqueClientID_t)`
+- `OverrideHFECurrentFilterDenominatorCoeffs`
+- `pr`
+- `droop-util-target`
+- `nfc`
+- `DroopUtilizationTarget0`
+- `virtual uint32_t ApplePPMEntity::getCurrentBudget()`
+- `virtual IOReturn ApplePPMKernelClient::ackClientBudget(CPMSPPMPowerBudgetAck *)`
+- `readBatteryMissingFromASB`
+- `unsigned int unpackOSArray(OSArray *, int32_t *, unsigned int, int)`
+- `PPPNlevel < PeakPowerPressureLevelCount`
+- `SystemStresslevel < SystemStressLevelCount`
+- `cpms-supported-client-ids`
+- `virtual ApplePPMPolicyCPMS *ApplePPMCPMS::createPolicy(IOKitMessageCallbackType, IOKitMessageCallbackType)`
+- `PeakPowerPressureLevel`
+- `OverrideBatteryInputMeasuredPuSouth`
+- `power-sample-1s-window`
+- `virtual void ApplePPMCPMSSystemCapabilityMonitor::stepBatteryModel()`
+- `R3`
+- `site.ApplePPMDaemonIPC`
+- `v24@?0^{CPMSPPMPowerBudget=CC[3{CPMSPPMPowerLevelScalar=cI}]}8^{DetailedThermalBudgetsForClient=[8{DetailedThermalBudget=CIQ}]i}16`
+- `OverrideBatteryInputMeasuredPu`
+- `UseOverridePeakPowerPressureLevel`
+- `OverrideHFESlowImpedanceMaxDeltaTheta`
+- `OverrideHFESlowCurrentUpperThreshold`
+- `dissociateClientId`
+- `kPPMDODInReq`
+- `Ra08`
+- `\"ApplePPM: %s:%u \" \"Invalid clientId %d\" @%s:%d`
+- `OverrideBatteryInputQmax`
+- `_controlEffortCallbackEvent`
+- `UseFlagFilterPs`
+- `_batteryInterrupt`
+- `\"ApplePPM: %s:%u \" \"(%d) Incorrect timescale provided in Predictive HorizonPmax EDT \" @%s:%d`
+- `dataCopy`
+- `ppm_power`
+- `UseWeightFactorModelPs`
+- `ApplePPMEntity *ApplePPMKernelClient::getEntityForSubclientIndex(int)`
+- `de3-decay-prop`
+- `bool ApplePPMAONPTDAdapter::initWithParams(IOService *, IOService *, lowerLayerUpdateHandlerType, fetchClientPowerConsumptionHandlerType, uint32_t)`
+- `sendData`
+- `dummy2`
+- `Instantaneous`
+- `system-load-inputs-Peff`
+- `hfe-fast-impedance-theta-lo`
+- `readBatteryInputFromASB`
+- `OSArray *newOSArray(int32_t *, unsigned int)`
+- `void signalTracer::compute()`
+- `ApplePPMCPMSPowerInputHelper.cpp`
+- `userClient`
+- `OverrideBatteryInputWeightedRa`
+- `btmBattFWConfigFunction`
+- `OverrideRemCap`
+- `OverrideHFEFastImpedanceThetaLowerBound`
+- `sysCapArr`
+- `registerNotificationPort`
+- `virtual IOReturn ApplePPMKernelClient::setBudgetWithValue(void *, uint32_t, uint32_t)`
+- `filterOutData`
+- `CPMS Ferocity`
+- `bool ApplePPMPolicyCPMS::setDetailedThermalPowerBudget(DetailedThermalBudget *)`
+- `proportionalDownGain`
+- `UseOverrideThermalBudgets`
+- `admissionCheckWithValue`
+- `sss-pred-vdroop-sniffer-qual-thresh`
+- `ppm: battery model missing\n`
+- `budgetAck`
+- `smc-interface-comm-enabled`
+- `weightFactorModelPs`
+- `abnormalPmaxRiseProtectThreshold`
+- `current-observation-window-size`
+- `_peakPressureStateReporter`
+- `\"ApplePPM: %s:%u \" \"ptML returned unexpected identifier for SMC->PPM range: 0x%x\" @%s:%d`
+- `\"ApplePPM: %s:%u \" \"pwrLogValues not initialized %d\\n\" @%s:%d`
+- `ppm_cpms`
+- `helper`
+- `Idx`
+- `OutputPu_mW`
+- `ApplePPMPolicyCPMSPowerServoLowerLayerBudgets.cpp`
+- `site.ApplePPMPolicyCPMSPowerServo`
+- `FirmwareIBat5ms`
+- `OverrideDeltaVoltageTargetVdroop`
+- `hfe-fast-impedance-learn-rate`
+- `bool acskInput::matchingBlock(int)`
+- `_interruptEventSource->getAutoDisable() == true`
+- `OverrideBrownoutRiskCELane`
+- `openUserClient`
+- `kPPMOutImpdDataRFreq1`
+- `dtPredictiveHorizonPmax`
+- `virtual float ApplePPMPolicyCPMSv2::controlEffortForLane(int)`
+- `cpms-input-vbat-prev-pp`
+- `virtual void ApplePPMBatteryModel::calculateCryptoDigest(ParamRC *)`
+- `integratorGain`
+- `UseOverrideCurrentObservationWindowSizePmaxVF`
+- `createMatrix2D`
+- `Ra13`
+- `bankIter`
+- `dtClient`
+- `entityClientsArray`
+- `NetSysCap`
+- `BatteryData`
+- `\"ApplePPM: %s:%u \" \"setSystemCapability failed\" @%s:%d`
+- `cpms-input-pp-max-fusion`
+- `IOReturn ApplePPMNormalizedResidencyReporter::setState(float)`
+- `ratioUndroopCE`
+- `\"ApplePPM: %s:%u \" \"total power profile wrong! (%d, %d, %d)\" @%s:%d`
+- `PresentDODCell1`
+- `data->getCount() == _numBatteryPacks`
+- `telemetry`
+- `\"ApplePPM: %s:%u \" \"%s %d, but reg count %d only\" @%s:%d`
+- `OverrideSystemStressLevel`
+- `ApplePPMKernelClient`
+- `Vtarget-Vdroop-lower-limit`
+- `StrobePredictiveSysCap_mW`
+- `getACSKParameter`
+- `packIDNum`
+- `IOReturn ApplePPMPolicyCPMS::getClientBudgetForGeneralControlEfforts(UniqueClientID_t, int *, float *)`
+- `getDefaultPowerProfile`
+- `brownout-risk-debounce-time`
+- `enablePMUMeasForVoltageFeedback`
+- `ackMultiClientBudget`
+- `peakPressureCurve`
+- `FirmwareVMonIS`
+- `useMaxCE`
+- `client_budgets_extra`
+- `kernelClient`
+- `MinPeriodMSIntervalsKey`
+- `use-filtered-Rss-I3-I4`
+- `CPMS: SMC interface has arrived\n`
+- `acsk-subtarget`
+- `decisionValue`
+- `OverrideSysCap`
+- `currentMeasPuVfThreshold`
+- `UseSystemLoadInputsPt`
+- `ResetSignalStorePatterns`
+- `ApplePPMEntity`
+- `_notificationInputs`
+- `hfe-current-filter-num-coeffs`
+- `VoltageCell2`
+- `sysCapMon`
+- `VddMon`
+- `boolData`
+- `_powerSamples100msW`
+- `_powerInputHelperLock`
+- `_powerServoParameters`
+- `inductive`
+- `setMaxCETimeScaleBatteryAbsent`
+- `Low Power Mode`
+- `QmaxCell0`
+- `static ApplePPMCPMSDecisionTree *ApplePPMCPMSDecisionTree::withParams(ApplePPMCPMSDecisionTreeCurve **, int)`
+- `ApplePPMCPMSPowerInputHelperBatteryFirmware`
+- `_ppmClientInputs`
+- `virtual bool ApplePPMCPMS::initLocal(IOService *)`
+- `virtual bool ApplePPMEntity::pushTelemetry(OSDictionary *)`
+- `cpms-input-pp-max-prev`
+- `_acskInputOutputs`
+- `virtual void ApplePPMAONPTDAdapter::handleRangeInterrupt(uint32_t)`
+- `getPidForTask`
+- `externalMethod`
+- `sss-horizon-upper-threshold`
+- `CurrentCapacity`
+- `(highTempC > lowTempC)`
+- `\"ApplePPM: %s:%u \" \"predictive budget not enabled through EDT with clientID %d\" @%s:%d`
+- `CPMS sys cap filter %d, ignoring zero input value\n`
+- `\"ApplePPM: %s:%u \" \"PPM client_budgets property missing from EDT (clients is present)\" @%s:%d`
+- `DroopCtrlEff`
+- `site.ApplePPMUserClient`
+- `cpms-pmax-derived-rss`
+- `SMC-TO-PPM`
+- `unsigned int unpackOSFloatArray(OSArray *, float *, unsigned int, int)`
+- `site.ApplePPMCPMSSignalManager`
+- `\"ApplePPM: %s:%u \" \"(%d) ClientID does not exist \" @%s:%d`
+- `cpms-batt-model-1ms-fallback`
+- ` `
+- `updateClientPowerConsumption`
+- `RCParamsHash`
+- `void ApplePPMCPMSPowerInputHelperBatteryFirmware::processSystemCapabilityData(OSDictionary *, uint8_t)`
+- `UseEnableDerivedRss`
+- `virtual IOReturn ApplePPMPmgrAdapter::writeOutboundPacket(const uint64_t *, uint32_t, uint16_t, uint16_t)`
+- `virtual IOReturn ApplePPM::callPlatformFunction(const OSSymbol *, bool, void *, void *, void *, void *)`
+- `ppm`
+- `\"ApplePPM: %s:%u \" \"ApplePPMCPMS: Could not register client id %d. Error code 0x%8x\\n\" @%s:%d`
+- `UseDecayRatePmuMeasFilterReducedMode`
+- `OverrideRtrace`
+- `handleClientPowerCallback`
+- `hfe-fast-impedance-upper-bnd`
+- `fallback-table-timescales`
+- `pwrMean`
+- `\"ApplePPM: %s:%u \" \"lane %d, output timescale %d, input source %d\" @%s:%d`
+- `getClientAwakeState`
+- `\"ApplePPM: %s:%u \" \"PPM client-predictive-pmax-powers property missing from EDT (client-predictive-pmax is present)\" @%s:%d`
+- `_smcInterface`
+- `m`
+- `PPMParametersHF`
+- `Error: Invalid reqId=%d\n`
+- `UseFlagPpMaxFusion`
+- `int notification::getNotificationIndex()`
+- `sss-current-rate-threshold`
+- `12221112222222222222222222222`
+- `Temperature`
+- `model-param-max-Rdc`
+- `Pp`
+- `maxEMATau0`
+- `bool ApplePPM::removeEntity(ApplePPMEntity *)`
+- `DroopUtilizationKiUp0`
+- `UseOverrideDroopUtilization`
+- `is-IOPort-faux-client`
+- `ret == kIOReturnSuccess`
+- `PmaxUseComputedRdc`
+- `site.ApplePPMPmgrAdapter`
+- `uwb`
+- `ControlSnapshot`
+- `virtual bool ApplePPMEntity::init(ApplePPM *, ApplePPMClientProperties *, ApplePPMKernelClient *)`
+- `unknown timescale`
+- `retrieveAndvalidateClientDictionary`
+- `size <= kMaxPowerSampleWindow`
+- `12222112222222222112222222222222222222222222222222222221111222222122112`
+- `ApplePPMSystemCapabilityMonitor.cpp`
+- `CPMS Lanes engagement`
+- `UseOverrideBatteryInputMeasuredPp`
+- `OverrideBatteryInputTemp`
+- `OverrideBatteryInputIss`
+- `ForceBatteryModelFallback`
+- `void ApplePPMCPMS::AppleDieTempControllerArrivalHandler(void *, IOService *, IONotifier *)`
+- `UseFilterRatioDownPs`
+- `OverrideHFESlowCurrentLowerThreshold`
+- `tGraphClient`
+- `_ptdManager`
+- `bool ApplePPMUserClient::associateClientId(UniqueClientID_t)`
+- `float ApplePPMCPMSDecisionTree::normalizedOutput(UniqueClientID_t, float)`
+- `\"ApplePPM: %s:%u \" \"PPM PTD unexpected statusID %d\" @%s:%d`
+- `Ra05`
+- `model-param-max-R4-R0123-ratio`
+- `baselineR1`
+- `voltageThreshold`
+- `UseGainDerivDynEntry`
+- `clpc`
+- `ApplePPM_ACSK_notification.cpp`
+- `requestMultiClientPowerBudget`
+- `hfe-fast-current-upper-thresh`
+- `_batteryOverrides._overrideBatteryInputRaTable`
+- `void ApplePPMCPMSPowerInputHelper::setOverrideSystemCapability(OSArray *, uint8_t)`
+- `pEntity`
+- `virtual bool ApplePPM::updateControlEfforts(float, float)`
+- `int ppmClient::getMinBudget1ms()`
+- `category`
+- `OverrideEnableFilteredRssI3I4`
+- `baselineR2`
+- `clientState`
+- `setBudgetToKernelClientFunction`
+- `ApplePPMPolicyCPMS`
+- `pulse_power`
+- `OverrideBatteryInputMeasuredPbLong`
+- `bool ApplePPMPmgrAdapter::initWithParams(ApplePMGRNub *, IOService *, lowerLayerUpdateHandlerType, fetchClientPowerConsumptionHandlerType, uint32_t)`
+- `Error: No reqID in dataIn \n`
+- `i8@?0`
+- `site.ApplePPMARMFunction`
+- `ApplePPMDroopController.cpp`
+- `powerServo`
+- `_signalIndex_acskNotifications[BROWNOUT_RISK] >= 0`
+- `ApplePPM::start (%p)\n`
+- `auto-rate-change`
+- `reportBuffer16P16`
+- `_clientService`
+- `numDod is null`
+- `setMultiClientParamsForUserClients`
+- `UseEnablePMUMeasForVoltageFeedback`
+- `UseCurrentMeasPuVfThreshold`
+- `OverrideSSSDefaultResidualScore`
+- `StateOfCharge`
+- `model-param-max-WRdc`
+- `ID`
+- `function_ptd_lookup_mult`
+- `UseOverrideBatteryInputVgg`
+- `Reason`
+- `ClientRequestedBudget`
+- `flagPmaxILim`
+- `time != NULL`
+- `IOReturn ApplePPMPTDManagerBase::sendPacket()`
+- `PackID`
+- `model-param-min-RCFreq4`
+- `static void ApplePPMCPMS::powerReportCallback(OSObject *, uint64_t, int32_t *, uint32_t)`
+- `current-meas-PuVf-thr`
+- `ApplePPMCPMSBatteryModelFallback.cpp`
+- `int ppmClient::getBudget1msIndex()`
+- `maxVcutDynEntry`
+- `socThreshPropDynEntry`
+- `UseOverrideDeltaVoltageTargetPmax`
+- `QmaxCell2`
+- `void ApplePPMCPMSSignalManager::update()`
+- `uint32_t ApplePPM::getObjectIndexFromEntityArray(ApplePPMEntity *)`
+- `osData`
+- `DroopIS`
+- `UseOverrideVoltageTargetVdroop`
+- `OCV_mV`
+- `ApplePPMCPMSDecisionTree.cpp`
+- `void ApplePPMPTDManagerBase::enableRangeInterrupt(bool)`
+- `data != nullptr`
+- `UseBaselineSystemCapability`
+- `iterator`
+- `powerBudget`
+- `systemLoadInputsFilteredCurrentRc3`
+- `delayDecayProp`
+- `UseEnableVcutDynEntry`
+- `static ApplePPMEntity *ApplePPMEntity::withParentAndClientProperties(ApplePPM *, ApplePPMClientProperties *, ApplePPMKernelClient *)`
+- `filter-ratio-up-current-limit`
+- `virtual bool ApplePPM::setBatteryModelSystemCapability(PowerLevelProfile *)`
+- `DroopCE`
+- `1211212111`
+- `virtual bool ApplePPMCPMSSystemCapabilityMonitor::getCPMSBatteryPmaxState(CPMSPPMBatteryPmaxData *)`
+- `site.ApplePPMCPMSSystemCapabilityFilter`
+- `bool ApplePPMPolicyCPMSPowerServoLowerLayerBudgets::initWithParams(IOService *, IOKitMessageCallbackType, IOKitMessageCallbackType)`
+- `createAndAddMatrix`
+- `updateACSKParameter`
+- `pwrVar`
+- `virtual void ApplePPM::updateClientReport(IOReportChannelList *, IOReportConfigureAction, void *, void *)`
+- `current-limit-threshold`
+- `PresentDOD`
+- `Mode`
+- `_signalIndex_acskInputs[identifier] >= 0`
+- `Ra07`
+- `int powerServo::getISIndex()`
+- `CPMS Power Reduction`
+- `IOReturn ApplePPMCPMS::coalesceAndDispatchBudgets(UniqueClientID_t, UniqueClientID_t, bool *)`
+- `OverrideSSSHorizonLowerThreshold`
+- `AlgoChemID`
+- `static ApplePPMDroopController *ApplePPMDroopController::withParent(ApplePPM *)`
+- `_signalTracerInputs`
+- `sss-horizon-lower-threshold`
+- `ApplePPMCPMSSignalManager.cpp`
+- `void ApplePPMPredictivePmax::addDeviceTreePredictiveHorizonPmaxProperties(ApplePPMCPMSPredictiveHorizonPmaxEDT)`
+- `\"ApplePPM: %s:%u \" \"Input ptr prevEnv is invalid\" @%s:%d`
+- `getEntityFromClientId`
+- `UseFilterRatioUpPs`
+- `Voltage_mV`
+- `virtual void ApplePPMPolicyCPMSv2::updateACSKDroop(float)`
+- `ApplePPMPolicyCPMSPowerServoLowerLayerCEs`
+- `BatteryPfCommsFailure`
+- `model-param-min-R3-ratio`
+- `UseFreshCellParamsForPmax`
+- `de3-max-vcut`
+- `PmaxUseUnfilteredBranchCurrent`
+- `consumeKeySet`
+- `UseASBFastBatteryInput`
+- `function-btm-config-battfw`
+- `\"ApplePPM: %s:%u \" \"could not get properties for clientid %s, subclient %d\" @%s:%d`
+- `UseOverrideRemCap`
+- `kPPMTempInReq`
+- `timescale`
+- `droop-util-ki-up`
+- `\"ApplePPM: %s:%u \" \"PPM client-predictive-pmax-budgets property missing from EDT (client-predictive-pmax is present)\" @%s:%d`
+- `\"ApplePPM: %s:%u \" \"Both pmgr and AON PTD enabled in EDT, target must enable exactly one PTD path\" @%s:%d`
+- `ApplePPMCPMS::Peak Power Envelope Enabled\n`
+- `socThreshDerivDynEntry`
+- `UseFilterRatioDownPp`
+- `force-set-fs-act`
+- `hfe-slow-impedance-theta-lo`
+- `Soc1Voltage`
+- `maxEMATau2`
+- `pearl`
+- `lanesEDT`
+- `OverrideBatteryInputMeasuredPp`
+- `BrownoutRiskEngaged`
+- `1 s`
+- `Ra11`
+- `Ra03`
+- `\"ApplePPM: %s:%u \" \"count %d\" @%s:%d`
+- `site.ApplePPMPowerServo`
+- `Client%d`
+- `OverrideBatteryPowerConsumptionPMU`
+- `enableVcutDynEntry`
+- `hfe-voltage-hp-filter-dc-gain`
+- `ApplePPMPredictivePmax.cpp`
+- `\"ApplePPM: %s:%u \" \"power servo count %d\" @%s:%d`
+- `void ApplePPMPolicyCPMS::ackClientBudgetNoLock(CPMSPPMPowerBudgetAck *)`
+- `_numberOfBatteryPacks > 0 && _numberOfBatteryPacks < MAX_NUMBER_BATTERY_PACKS`
+- `stopActivity`
+- `122221`
+- `site.ApplePPMCPMSDecisionTree`
+- `ApplePPMNormalizedResidencyReporter`
+- `OverrideBatteryInputResScale`
+- `OverrideHFEFastImpedanceLowerBound`
+- `hfe-current-filter-den-coeffs`
+- `site.ApplePPMPTDManagerBase`
+- `site.ApplePPMAONPTDAdapter`
+- `void ApplePPMCPMSLane::assertValidity(int)`
+- `clientBudgetAckEnabled`
+- `1222222111112222`
+- `virtual int32_t *ApplePPMCPMSv2::systemCapabilityToUse()`
+- `\"ApplePPM: %s:%u \" \"unknown data ID %d\" @%s:%d`
+- `systemLoadInputs.enableDerivedRss || systemLoadInputs.enableComputedRdc`
+- `\"ApplePPM: %s:%u \" \"failed to add entity to multiClientList\" @%s:%d`
+- `FlagFilterPs`
+- `kPPMOutImpdDataRFreq0`
+- `hfe-slow-current-lower-thresh`
+- `UseVoltageThreshold`
+- `_notificationParameters`
+- `curve`
+- `static ApplePPMPolicyCPMSPowerServo *ApplePPMPolicyCPMSPowerServo::withParams(IOService *, ApplePPMEDTData *, IOKitMessageCallbackType, IOKitMessageCallbackType)`
+- `void ApplePPMPolicyCPMSv2::executeACSKBlocks()`
+- `static ApplePPMCPMSSysCapMonitorv2 *ApplePPMCPMSSysCapMonitorv2::withParent(ApplePPM *, uint8_t, uint8_t)`
+- `\"ApplePPM: %s:%u \" \"ASSERT failed: %s\" @%s:%d`
+- `bool ApplePPMCPMSPeakPowerEnvelope::peakPowerEnvelopeGetInst(peakPowerEnvelopInst **)`
+- `IOReturn ApplePPMPolicyCPMS::ackClientBudget(CPMSPPMPowerBudgetAck *)`
+- `EnableBatteryAgingModel`
+- `CEFusionGains`
+- `OverrideHFEFastImpedanceLearningRate`
+- `\"ApplePPM: %s:%u \" \"CPMSTimeScale %d fallback object allocation failed\" @%s:%d`
+- `sss-horizon-low-power-thresh`
+- `batteryPackIndex`
+- `IOPortPredictiveSysCap_mW`
+- `int powerServo::getCEIndex()`
+- `key`
+- `Ra10`
+- `registerCPMSClient`
+- `deregisterCPMSClient`
+- `start`
+- `_sleepWakeNotifier`
+- `strobe-faux`
+- `SystemCapabilitySource_Battery%d`
+- `UseOverrideFilterRatioUpCurrentLimitPmaxVF`
+- `filterRatioUpCurrentLimitPmaxVF`
+- `pwrMax`
+- `maintain-1s-min-budget-interval`
+- `Error: batteryModel is NULL for chemID input=%llu\n`
+- `currentPredictionWindowSizePmaxVF`
+- `pbatArr`
+- `kPPMOutOCV`
+- `BudgetTypeLevel`
+- `cpms-use-lpem-data`
+- `service`
+- `virtual IOReturn ApplePPMKernelClient::admissionCheckWithValue(CPMSPPMPowerBudget *, CPMSPPMPowerBudget *, uint32_t)`
+- `ApplePPMPredictivePmax`
+- `_signalIndex_controlEfforts[i] >= 0`
+- `deleteSignalStoreOverride`
+- `Iss`
+- `uint32_t ClientEntity::powerValueForDTOutput(float, CPMSPPMTimeScale)`
+- `OverrideBatteryInputMeasuredPs`
+- `sDeprecatedMethod`
+- `Vtarget-Pmax-lower-limit`
+- `hfe-fast-impedance-max-delta`
+- `PmaxVoltage_mV`
+- `OSArray *newOSArray(uint32_t *, unsigned int)`
+- `cpms-input-use-filter-ps`
+- `on-dev-board`
+- `virtual void ApplePPMCPMSSystemCapabilityMonitor::initFallbackTables(ApplePPM *)`
+- `ApplePPMPmgrAdapter.cpp`
+- `PPM PTD unknown dataID %d\n`
+- `initializeSharedDataQueue`
+- `IOReturn ApplePPMPolicyCPMS::getClientGrantedBudget(UniqueClientID_t, CPMSPPMPowerBudget *)`
+- `1211112`
+- `_droopNotificationCallbackEvent`
+- `weightFactorModelPp`
+- `OverrideHFEVoltageHighPassFilterDcGain`
+- `consumeInternalSourceData`
+- `updateSignalStorePattern`
+- `matchingDict`
+- `clientID < kPPMClientIdMaxCount`
+- `model-param-temp-coeff-thresh`
+- `model-param-min-Qmax`
+- `FirmwarePBat100ms`
+- `int ppmClient::getMinBudgetUpdateInterval()`
+- `121112211221122112211221122112211221122222222211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222211222222222222222222222222222222222222222222222222222222222222`
+- `\"ApplePPM: %s:%u \" \"lane %d, unsupported output timescale\" @%s:%d`
+- `virtual IOReturn ApplePPMCPMS::getCPMSControlState(CPMSPPMControlState *, uint32_t *)`
+- `UseMaxVcutDynEntry`
+- `\"ApplePPM: %s:%u \" \"Couldn't add object for client id %u in collection\" @%s:%d`
+- `de3-V-thresh-deriv`
+- `CoeffSoc`
+- `virtual void ApplePPMPolicyCPMSv2::setSystemStress(uint32_t, bool)`
+- `FlagPpMaxFusion`
+- `BankBatteryData`
+- `ApplePPMCPMSBatteryModelFallback.hpp`
+- `void ApplePPMCPMSPowerInputHelperBatteryFirmware::processPowerConsumptionData(OSDictionary *, uint8_t)`
+- `_paramRCRWLock`
+- `ApplePPM`
+- `%s: Failed to allocate ApplePPMDaemonIPC, disabling UTF telemetry\n`
+- `ApplePPM::initLocal tGraphClient = ppm (%u)\n`
+- `_policyCPMS`
+- `maintain-pkg-max-insta-handling`
+- `UseOverrideClientPowerBudgets`
+- `weightFactorModelPx`
+- `UseSystemLoadInputsPeff`
+- `void ApplePPMPowerServo::getFusionGains(float *, float *)`
+- `activeEntities`
+- `droop-power-removal-factor`
+- `UseOverrideDeltaVoltageTargetVdroop`
+- `PmaxPreloadValue`
+- `kPPMOutImpdDataR3`
+- `12222112222222222112222222222222222222222222222222222221111222222122112111212211122212222222211`
+- `site.ApplePPMCPMSTableDrivenBatteryModelFallBack`
+- `site.ApplePPMEntity`
+- `ApplePPM::initLocal ppm_debug 0x%x\n`
+- `droop-timer-interval-ms`
+- `IOReturn ApplePPMCPMS::processClientRegistration(ApplePPM *, IOService *, ApplePPMKernelClient::ClientInfoData *, ApplePPMKernelClient *, bool)`
+- `PMU100ms`
+- `UseFilterRatioUpPp`
+- `site.ApplePPMPredictivePmax`
+- `_signalIndex_acskInputs[SYSCAP_BROWNOUT2] >= 0`
+- `\"ApplePPM: %s:%u \" \"invalid index =%d\" @%s:%d`
+- `\"ApplePPM: %s:%u \" \"%s, lane %d, %d handles\\n\" @%s:%d`
+- `client_budgets`
+- `ApplePPMUserClient`
+- `ApplePPMPolicyCPMSPowerServoLowerLayerCEs.h`
+- `ppm->getWorkLoop()->onThread() == true`
+- `\"ApplePPM: %s:%u \" \"channel %d, count %d\" @%s:%d`
+- `ApplePPM_ACSK_client.cpp`
+- `index < _numberOfBatteryPacks`
+- `UseOverrideBatteryInputResScale`
+- `OverrideBatteryInputMeasuredPb`
+- `UseOverrideCurrentLimitMaxPmaxVF`
+- `OverrideHFESlowImpedanceThetaLowerBound`
+- `hfe-slow-current-upper-thresh`
+- `virtual void ApplePPMPolicyCPMSv2::setIBInputs(uint32_t, float)`
+- `ApplePPMSystemCapabilityMonitor`
+- `ApplePPMPolicyCPMS.cpp`
+- `UseMinVcutDynEntry`
+- `UseOverrideCurrentPredictionWindowSizePmaxVF`
+- `MaxCapacity`
+- `\"ApplePPM: %s:%u \" \"length %u, count %d\" @%s:%d`
+- `eventData->getCount()`
+- `void ApplePPMBatteryModel::lockRCRWLockForRead()`
+- `12221122121122121111112`
+- `ModeledSysCap`
+- `OverrideBatteryInputDOD`
+- `ApplePPMCPMS::initLocal (%p)\n`
+- `multi-client-thermal-dup`
+- `\"ApplePPM: %s:%u \" \"Legacy PTD requires ApplePMGRNub provider\" @%s:%d`
+- `cpms-dt-topology`
+- `lpem`
+- `systemCapabilityMonitor`
+- `DroopPwrRemoval`
+- `UseOverrideBatteryInputWeightedRa`
+- `enableDerivedRss`
+- `cpms-input-use-filter-pp`
+- `model-param-min-current`
+- `_droopController`
+- `virtual bool ApplePPM::addNewEntity(ApplePPMEntity *)`
+- `startActivity`
+- `_powerConsumptionLock`
+- `function-btm-config`
+- `owner`
+- `getMinMaxClientPowerPolicy`
+- `OSArray *newFloatOSArray(float *, unsigned int)`
+- `ApplePPMCPMSPeakPowerEnvelope.cpp`
+- `checkDailySampleLimit`
+- `\"ApplePPM: %s:%u \" \"entity %d power profile wrong! (%d, %d, %d)\" @%s:%d`
+- `multiClientSupport`
+- `sss-surrogate-horizon`
+- `void ApplePPMCPMSSystemCapabilityMonitor::consumeInternalSourceData(OSDictionary *)`
+- `bool ApplePPMCPMSSignalManager::initWithParams(ApplePPMPowerServo *, float *, float *, IOService *, IOKitMessageCallbackType)`
+- `cpms-input-current-rate-thr`
+- `btmPMUVoltageThresholdFunction`
+- `void ApplePPMCPMS::smcTargetsUpdateEventHandler(IOInterruptEventSource *, int)`
+- `keyStr`
+- `Vgg`
+- `site.ApplePPMCPMSPowerInputHelper`
+- `int ppmClient::getMaxBudget1ms()`
+- `speaker`
+- `void ApplePPMBatteryModel::setUseFreshCellParamsForPmax(bool)`
+- `ApplePPM::start success\n`
+- `SystemStressLevel`
+- `%s_%s`
+- `droop-event-index`
+- `cpms-input-ki-gain-up`
+- `\"ApplePPM: %s:%u \" \"Non-zero channel count required\" @%s:%d`
+- `sysCapMonitor`
+- `Error: chemIdObj is not an OSNumber\n`
+- `UseWeightFactorModelPp`
+- `virtual IOReturn ApplePPMKernelClient::admissionCheckWithValue(uint32_t, uint32_t, uint32_t *)`
+- `FirmwareIBat100ms`
+- `bool ppmClient::matchingBlock(int)`
+- `dtClientBudget`
+- `\"ApplePPM: %s:%u \" \"Do not call single-channel method on multichannel reporter\" @%s:%d`
+- `reg`
+- `configureBatteryAbsentHandling`
+- `enableComputedRdc`
+- `minVcutDynEntry`
+- `WeightedRaCell2`
+- `num`
+- `kPPMOutImpdDataRFreq3`
+- `budget_mw`
+- `_batteryModel`
+- `void ApplePPMCPMSSignalManager::update(unsigned int, unsigned int)`
+- `void ApplePPMPredictivePmax::addDeviceTreeClientPredictivePmaxProperties(ApplePPMCPMSClientPredictivePmaxEDT)`
+- `readSignalStore`
+- `R1`
+- `121222222222222222222222222222222222222222222222222222222212`
+- `FirmwareVMonCE`
+- `\"ApplePPM: %s:%u \" \"PTD write failed: 0x%x\" @%s:%d`
+- `nand`
+- `telephony`
+- `prepareAndSendPmaxTelemetry`
+- `IBat`
+- `SystemCapability%s_Battery%d`
+- `OverrideSSSCurrentRateThreshold`
+- `virtual bool ApplePPMUserClient::initWithTask(task_t, void *, UInt32, OSDictionary *)`
+- `_parent->getWorkLoop()`
+- `_signalStorePatterns[i].currentPatternValueIndex < CPMSPPMMaxSignalStorePatternValues`
+- `Ra12`
+- `Ra06`
+- `ppm->getControlEffortCallbackEvent()`
+- `int ppmClient::getModeIndex()`
+- `haptics`
+- `max-ce-timescale-battery-absent`
+- `UseVoltageThreshDerivDynEntry`
+- `Platform supports LPEM: %d`
+- `ITMiscStatus`
+- `122221122222222221122222222222222222222222222222222222211112222221221121112122111222122222222111`
+- `ApplePPMAONPTDAdapter.cpp`
+- `ApplePPMCPMSPeakPowerEnvelope`
+- `ACSKEnabled`
+- `function-btm-vthr`
+- `OverrideSSSSurrogateHorizon`
+- `controller`
+- `enable-IR-compensation`
+- `int ppmClient::getMinBudget100ms()`
+- `_clientEntitiesLock`
+- `removePPMUserClientByClientId`
+- `AppleBTM`
+- `Vtarget-Pmax-upper-limit`
+- `ApplePPMIntfAPIs`
+- `IOReturn ApplePPMPolicyCPMS::getClientRequestedBudget(UniqueClientID_t, CPMSPPMPowerBudget *)`
+- `site.ApplePPM`
+- `DroopUtilizationKiDown0`
+- `dynamic-Pmax-Vcut-enabled`
+- `site.ApplePPMSystemCapabilityMonitor`
+- `int ppmClient::getBudget100msIndex()`
+- `prepareAndSendControlSnapshotTelemetry`
+- `BrownoutRiskSysCap_Battery%d`
+- `OverrideSeparateThermalBudgetMask`
+- `itr`
+- `Slow Die`
+- `12111`
+- `mapClientAndEntity`
+- `OverrideAllowPolicyRun`
+- `powerBudgetGranted`
+- `virtual uint32_t ApplePPMEntity::getRequestedBudget()`
+- `sss-voltage-sniffer-qual-thr`
+- `DynamicSoc1Vcut`
+- `12111122222222222222222222222222121222222222222`
+- `ApplePPMBatteryModel`
+- `_controlEffortDataLock`
+- `sss-voltage-residual-threshold`
+- `Droop Controller`
+- `site.ApplePPMNormalizedResidencyReporter`
+- `kPPMOutImpdDataR0`
+- `void ApplePPMCPMSSystemCapabilityMonitor::consumeKeySet(keySet *, uint32_t, OSDictionary *)`
+- `values`
+- `UseOverrideBatteryInputDOD`
+- `setPowerBudget`
+- `site.ApplePPMPolicyCPMSPowerServoLowerLayerBudgets`
+- `PPM-TO-SMC2`
+- `void ApplePPMSystemCapabilityMonitor::findBatteryBankEntry()`
+- `void ApplePPMBatteryModel::unlockRCRWLock()`
+- `ApplePPMUtilities.h`
+- `\"ApplePPM: %s:%u \" \"handleRangeInterrupt called with unexpected range %u (expected %u)\" @%s:%d`
+- `config_scalar < kPowerConsumptionInputSourceCount`
+- `servo-down-gains`
+- `PMU10ms`
+- `UseVoltageThreshPropDynEntry`
+- `pKC->multiClientList`
+- `ApplePPMCPMSSystemCapabilityMonitor.cpp`
+- `virtual IOReturn ApplePPMCPMSSystemCapabilityMonitor::sendAsbLpemData()`
+- `\"ApplePPM: %s:%u \" \"Input ptr currEnv is invalid\" @%s:%d`
+- `budgets`
+- `ApplePPMCPMS::initLocal %s PTD enabled, min outbound gap %d\n`
+- `AON`
+- `updateTimestampsTracesAndShimBudgets`
+- `decayRatePmuMeasFilterReducedMode`
+- `decayDerivDynEntry`
+- `UseDecayPropDynEntry`
+- `virtual IOReturn ApplePPMKernelClient::setBudgetWithValueMultiClient(void *)`
+- `hfe-slow-impedance-learn-rate`
+- `bool ApplePPM::getDTPropertyArray(const char *, uint32_t **, uint32_t *, uint32_t, uint8_t)`
+- `\"ApplePPM: %s:%u \" \"count %u\" @%s:%d`
+- `OverrideHFESlowImpedanceLowerBound`
+- `OverrideHFECurrentHighPassFilterDcGain`
+- `ppm: registering async batt irq\n`
+- `121112222222221222`
+- `ApplePPMPolicyCPMSPowerServo`
+- `ApplePPMEntity *ApplePPMKernelClient::getEntityForClientId(uint8_t)`
+- `site.ApplePPMCPMSConstantBatteryModelFallBack`
+- `_samplingTimer`
+- `model-param-max-Qmax`
+- `\"ApplePPM: %s:%u \" \"max_out is null\" @%s:%d`
+- `gpu`
+- `111211222222222`
+- `\"ApplePPM: %s:%u \" \"EDT for brownout risk CE lane exceeds max: %d\" @%s:%d`
+- `UseVoltageBattMeasPrevPp`
+- `OverrideDeltaVoltageTargetPmax`
+- `cpms-pmax-preload-value`
+- `(_numRows * _numColumns != 0)`
+- `int acskInput::getIndex()`
+- `ApplePPM::initLocal ppm_power %d\n`
+- `\"ApplePPM: %s:%u \" \"clientID %d\" @%s:%d`
+- `_btmCallbackEvent`
+- `UseDecayRatePmuMeasFilter`
+- `getClientBudget`
+- `Invalid temperature value`
+- `mPb`
+- `\"ApplePPM: %s:%u \" \"rowIndex %u rowSize %u\" @%s:%d`
+- `AppleSNE`
+- `\"ApplePPM: %s:%u \" \"duplicate clients property entries for uniqueId %d\" @%s:%d`
+- `\"ApplePPM: %s:%u \" \"Client ID : %d registration: callPlatformFunction failed. error 0x%08x\" @%s:%d`
+- `systemLoadInputsPk`
+- `\"ApplePPM: %s:%u \" \"client %d, handle %d (effort)\" @%s:%d`
+- `Error: Invalid input parameters\n`
+- `121112211221122112211221122112211221122222222211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222211222222222222222222222222222222222222222222222222222222222222`
+- `bool ApplePPMBatteryModel::getUseFreshCellParamsForPmax()`
+- `bool ApplePPMCPMS::updateTimestampsTracesAndShimBudgets(UniqueClientID_t, CPMSPPMPowerBudget *, DetailedThermalBudgetsForClient *, uint32_t *)`
+- `kiGainDown`
+- `OverridePercentileRankPp`
+- `\"ApplePPM: %s:%u \" \"(%d) Incorrect timescale provided in Predictive Pmax EDT \" @%s:%d`
+- `_ptdWriteFunction`
+- `\"ApplePPM: %s:%u \" \"client %d ack, idx %d, timescale %d\" @%s:%d`
+- `ApplePPM::initLocal ppm_flags 0x%x\n`
+- `UseOverrideDroopIntegratorState`
+- `initWithParams`
+- `void ApplePPMPolicyCPMSPowerServo::setupPowerServoIntegratorMinimums(OSData *)`
+- `1212222222222222222222222222222222222222222222222222222222122222222`
+- `virtual IOReturn ApplePPMAONPTDAdapter::writeOutboundPacket(const uint64_t *, uint32_t, uint16_t, uint16_t)`
+- `OverrideBrownoutRiskCEThreshold`
+- `batteryPackIndex < MAX_NUMBER_BATTERY_PACKS`
+- `\"ApplePPM: %s:%u \" \"ret 0x%08x\" @%s:%d`
+- `currentLimitThresholdPmaxVF`
+- `OverrideHFECurrentFilterNumeratorCoeffs`
+- `\"ApplePPM: %s:%u \" \"lane %d, count %d\" @%s:%d`
+- `bool ApplePPMPowerServoLowerLayerCE::initWithParams(CPMSPPMLaneInput, int)`
+- `OverrideUnDroopControlEffort`
+- `void ApplePPMCPMS::establishCPMSSupport()`
+- `cpms-pressure`
+- `virtual IOReturn ApplePPMCPMS::setPowerBudget(CPMSPPMPowerBudget *)`
+- `UseDelayDecayDeriv`
+- `cpms-batt-model-1s-fallback`
+- `model-param-grid-temp-size`
+- `FirmwareVDroopStatus`
+- `OverrideBatteryInputFS_ACT`
+- `ApplePPMCPMS::initLocal CPMSSupport disabled\n`
+- `flag-pmax-ilim`
+- `out`
+- `isAwake`
+- `\"ApplePPM: %s:%u \" \"failed to add new entity\" @%s:%d`
+- `UseOverrideBatteryInputTemp`
+- `OverridePowerServoControlEfforts`
+- `OverrideClientPowerBudgets`
+- `IOReturn ApplePPMCPMS::constructAndSendBudgetMessage(CPMSPPMPowerBudget *, uint32_t)`
+- `_values`
+- `Ra00`
+- `en`
+- `\"ApplePPM: %s:%u \" \"couldn't find %s\\n\" @%s:%d`
+- `\"ApplePPM: %s:%u \" \"powerBudget->numberOfTimeScales is %d and is not equal to 1\" @%s:%d`
+- `\"ApplePPM: %s:%u \" \"peakPowerEnv is null\" @%s:%d`
+- `dummy`
+- `ApplePPMUserClient.cpp`
+- `kPPMOutImpdDataRFreq2`
+- `100 ms`
+- `bool ApplePPMCPMSPeakPowerEnvelope::peakPwrEnvelopeCreateEnvDictionary(OSDictionary *&, peakPowerEnvelopeValues *)`
+- `AppleRTMU`
+- `OSDictionary *ApplePPMEntity::copyClientProperties()`
+- `model-param-norm-V`
+- `void ApplePPMPredictivePmax::addDeviceTreeClientPredictiveHorizonPmaxProperties(ApplePPMCPMSClientPredictiveHorizonPmaxEDT)`
+- `cpms-input-ratio-down-ps`
+- `systemCapabilityMonitor->getBatteryInterrupt()`
+- `spike_power`
+- `stop`
+- `\"ApplePPM: %s:%u \" \"NULL matchingDict for AppleSMCInterface\" @%s:%d`
+- `function-btm-stop`
+- `_budgetReporter`
+- `de3-min-vcut`
+- `asbUpdateNotifier`
+- `bool ApplePPMSystemCapabilityMonitor::setRCParamsProperties(OSDictionary *)`
+- `_batteryAbsentLock`
+- `void ApplePPMCPMS::updateKernelClientLegacyPPMAdapter(CPMSPPMPowerBudget *, DetailedThermalBudgetsForClient *)`
+- `UseOverrideFlagPmaxILim`
+- `UseOverrideSoc1Voltage`
+- `OverrideSSSVoltageSnifferMinDuration`
+- `PmaxExtraFaultPowerThresholds`
+- `initWithParent`
+- `PresentDODCell0`
+- `OverrideBatteryInputRss`
+- `_smcTargetsUpdateEvent`
+- `OverrideVoltageTargetVdroop`
+- `OverrideSSSHorizonLowPowerThreshold`
+- `site.ApplePPMCPMSv2`
+- `src`
+- `peakPressureServo`
+- `model-param-max-current`
+- `\"ApplePPM: %s:%u \" \"REQUIRE failed: %s\" @%s:%d`
+- `package`
+- `void ApplePPMPolicyCPMS::copyDetailedThermalBudgetsResolved(const UniqueClientID_t, const DetailedThermalBudgetsForClient *)`
+- `DroopPowerRemovalFactor0`
+- `UseOverrideBatteryInputV`
+- `OverrideSnapshotSignificantChange`
+- `callPlatformFunction`
+- `SecondaryPICE`
+- `dtClientPower`
+- `virtual IOReturn ApplePPMCPMS::admissionCheckOfValue(ApplePPMEntity *, CPMSPPMPowerBudget *, CPMSPPMPowerBudget *, bool)`
+- `delayDecayDeriv`
+- `UseLpemData`
+- `de3-V-thresh-prop`
+- `_predictivePmax`
+- `sss-voltage-sniffer-min-mar`
+- `121111121222121211111111111111112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `cpms-use-centralized-data`
+- `AppleDieTempController`
+- `currentObservationWindowSizePmaxVF`
+- `OverrideHFESlowImpedanceThetaUpperBound`
+- `Peak Power Pressure`
+- `float ApplePPMCPMSLane::controlEffort()`
+- `AppleSmartBatteryBank`
+- `ApplePPMPolicyCPMS skipping %s, lane %d\n`
+- `cId`
+- `UseOverrideCurrentLimitThresholdPmaxVF`
+- `de3-delay-decay-deriv`
+- `InstantAmperage_mA`
+- `Pb`
+- `\"ApplePPM: %s:%u \" \"Unkown report type received\\n\" @%s:%d`
+- `virtual float ApplePPMCPMSPowerInputHelperBatteryFirmware::getIOHIDMaxControlEffort()`
+- `updateDebuggingProperties`
+- `UseOverrideBatteryInputRaTable`
+- `client-predictive-pmax`
+- `OverrideUnDroopIntegratorState`
+- `clientProperty.clientIsKext`
+- `UseOverrideBatteryInputMeasuredPuSouth`
+- `UseOverrideBatteryInputPsCutoffVoltage`
+- `CoeffV`
+- `clients_extra`
+- `admissionCheckOfValue`
+- `debuggingPropertiesLatest`
+- `_pmgrNub`
+- `model-param-tb-tp-ts`
+- `function_ptd_write`
+- `bool ApplePPM::mapClientAndEntity(OSObject *, bool, ApplePPMKernelClient::ClientInfoData *)`
+- `OverrideBatteryInputDSG`
+- `virtual IOReturn ApplePPMKernelClient::pushTelemetry(uint32_t, OSDictionary *)`
+- `virtual IOReturn ApplePPMKernelClient::endInteraction()`
+- `_stateReporter`
+- `IOReturn ApplePPMPolicyCPMS::getClientState(UniqueClientID_t, CPMSPPMClientState *)`
+- `UseKiGainUp`
+- `UseDelayDecayProp`
+- `OverrideSSSPredictiveVoltageDroopSnifferMinMargin`
+- `powerLevelList`
+- `model-param-max-pmax-power`
+- `R2`
+- `IOReturn ApplePPMNormalizedResidencyReporter::setChannelState(int, float)`
+- `dtClientPredictivePmax`
+- `\"ApplePPM: %s:%u \" \"lane %d, no decision tree\" @%s:%d`
+- `ApplePPMCPMS.cpp`
+- `\"ApplePPM: %s:%u \" \"client IOPORT registration: admission check failed. error 0x%08x\" @%s:%d`
+- `PsCutoffVoltage_mV`
+- `ApplePPMSystemCapabilityMonitor.h`
+- `_inboundMessages`
+- `Mach port used to send data ready notification to daemon is not valid, kext will not enqueue telemetry data\n`
+- `setDetailedThermalPowerBudget`
+- `brownout-risk-CE-threshold`
+- `PowerServoIntegratorMinimums`
+- `virtual int32_t *ApplePPMCPMSv2::batteryPowerConsumptionPMUToUse()`
+- `prepareCoalescedBudget`
+- `RSS`
+- `peakPwrEnvelopeCreateEnvDictionary`
+- `\"ApplePPM: %s:%u \" \"%s, lane %d, output[0] %d\" @%s:%d`
+- `IOReturn ApplePPMPolicyCPMS::requestPowerBudget(CPMSPPMPowerBudget *)`
+- `ApplePPMEntity *ApplePPM::getEntityFromClientId(UniqueClientID_t)`
+- `enable-aging-model`
+- `\"ApplePPM: %s:%u \" \"%s: Failed to add command gate to workloop\\n\" @%s:%d`
+- `OverridePercentileRankPs`
+- `_signalManager`
+- `OverrideSSSTargetHorizon`
+- `OverrideHFESlowImpedanceZeta`
+- `ApplePPMCPMSSystemCapabilityMonitor`
+- `updateReadingsFromGasGauge`
+- `ApplePPMPolicyCPMSv2`
+- `virtual void ApplePPMPolicyCPMSv2::setPredictiveSysCap(uint32_t, int32_t, int32_t)`
+- `model-param-short-current-limit`
+- `parent`
+- `void ApplePPMCPMS::initialBatteryPowerConsumptionSetup(IOInterruptEventSource *, int)`
+- `UseOverrideBatteryInputPuCutoffVoltage`
+- `voltageBattMeasPrevPp`
+- `UseAbnormalPmaxRiseProtectThreshold`
+- `Fast Die`
+- `_signalIndex_acskInputs[Pu_BROWNOUT] >= 0`
+- `FirmwareVBat5ms`
+- `virtual bool ApplePPM::start(IOService *)`
+- `clientInfo`
+- `coalesceAndDispatchBudgets`
+- `stateSnapshotCount`
+- `static ApplePPMKernelClient *ApplePPMKernelClient::withParentAndClient(ApplePPM *, IOService *, ApplePPMKernelClient::ClientInfoData *, uint8_t)`
+- `fallback-table-high-temp`
+- `cpms-input-ratio-down-pp`
+- `entity`
+- `UseOverrideUnDroopIntegratorState`
+- `ApplePPMCPMS::initLocal success\n`
+- `virtual void ApplePPMCPMSv2::setBrownoutRiskSysCap(int32_t, int32_t, uint8_t)`
+- `associateClientId`
+- `current-limit-max`
+- `abnormal-Pmax-rise-thr`
+- `clientCurve`
+- `updatePredictivePmaxProperties`
+- `\"ApplePPM: %s:%u \" \"PPM client_powers property missing from EDT (clients is present)\" @%s:%d`
+- `brownout-risk-Pmargin`
+- `virtual void ApplePPMEntity::initBudgetReporter()`
+- `_ppm`
+- `CPMS: ASB has arrived\n`
+- `_owningService`
+- `maxEMATau1`
+- `btmStopFunction`
+- `cpms-power-servo-int-mins`
+- `de3-soc-thresh-deriv`
+- `LPEM`
+- `handleRangeInterrupt`
+- `virtual bool ApplePPMSystemCapabilityMonitor::initWithParent(ApplePPM *, uint8_t, uint8_t)`
+- `UseOverrideSystemCapability`
+- `TStamp`
+- `site.ApplePPMCPMSSystemCapabilityMonitor`
+- `de3-enable-vcut`
+- `CkSum`
+- `virtual bool ApplePPMCPMSSystemCapabilityMonitor::readBatteryInputFromASB()`
+- `_lowerLayerUpdateHandler`
+- `ApplePPMPTDManagerBase`
+- `number-of-battery-packs`
+- `detailedThermalBudgets`
+- `\"ApplePPM: %s:%u \" \"could not get properties for clientid %u\" @%s:%d`
+- `UseSystemLoadInputsPk`
+- `UseOverridePercentileRankPs`
+- `virtual IOReturn ApplePPMUserClient::registerMultiClient(CPMSPPMClientDescription *)`
+- `batteryIntfGetImpedanceData`
+- `setBudgetWithValue`
+- `fusion-gains`
+- `OverrideHFEFastImpedanceUpperBound`
+- `VoltageCell1`
+- `Ra04`
+- `cpms-input-ps-max-fusion`
+- `cpms-input-ratio-up-ps`
+- `cpms-input-decay-weight-pmu`
+- `message`
+- `OverrideBrownoutRiskDebounceTime`
+- `OverrideSSSPredictiveVoltageDroopSnifferMinDuration`
+- `therm`
+- `ApplePPMCPMSv2.cpp`
+- `FilteredCurrentRc4`
+- `owningService`
+- `Ps`
+- `count == BatteryReportPbatDataCount`
+- `display`
+- `_powerInputHelperBatteryFirmware`
+- `ptd-outbound-min-packet-gap-ms`
+- `OverridePowerSample1sWindow`
+- `filterRatioDownPp`
+- `_associatedClientIds`
+- `site.ApplePPMBatteryModel4RC`
+- `sleepWakeNotification`
+- `virtual void ApplePPMCPMS::powerReport(int32_t *, uint32_t)`
+- `\"ApplePPM: %s:%u \" \"num_updates %d\" @%s:%d`
+- `pv`
+- `\"ApplePPM: %s:%u \" \"Unexpected state. Object not found for id %d\" @%s:%d`
+- `parseIntfInput`
+- `virtual bool ApplePPMPolicyCPMSv2::getBrownoutRiskBool()`
+- `ApplePPMCPMSSysCapMonitorv2`
+- `droop`
+- `_trailingBudgetFlushTimer`
+- `aon-ptd-feature-enabled`
+- `filterRatioUpPs`
+- `Utility Power`
+- `clientPowerCallBack`
+- `current-prediction-window-size`
+- `hfe-slow-impedance-upper-bnd`
+- `isCPMSPPMTimeScaleValid(ts_comparison)`
+- `_provider`
+- `PowerLevelProfile ApplePPM::getCurrentConsumedSystemLoadPowerForBatteryModel(OSSet *)`
+- `UseFlagPsMaxFusion`
+- `UseOverrideFilterRatioDownCurrentLimitPmaxVF`
+- `OverrideSSSVoltageResidualThreshold`
+- `system-load-inputs-Pt`
+- `virtual ApplePPMPowerServo *ApplePPMPolicyCPMSPowerServo::createPowerServo(CPMSPPMLaneInput, float, float)`
+- `1211111212221212111111111111121211`
+- `modelParams`
+- `\"ApplePPM: %s:%u \" \"columnIndex %u columnSize %u\" @%s:%d`
+- `virtual IOReturn ApplePPMAONPTDAdapter::disableInterruptForSMCToPPM()`
+- `int ppmClient::getMinBudget1s()`
+- `smc interface is null\n`
+- `triggerLogging`
+- `Gauge1s`
+- `systemLoadInputsPt`
+- `Amperage`
+- `static ApplePPMPTDManagerBase *ApplePPMPTDManagerBase::withAONPTDProvider(IOService *, IOService *, lowerLayerUpdateHandlerType, fetchClientPowerConsumptionHandlerType, uint32_t)`
+- `sendValueToSMCKey`
+- `batteryModelPropertiesDict`
+- `separate-thermal-budget-adds`
+- `%s_Battery%d`
+- `OverrideBrownoutRiskNotif`
+- `void ApplePPMUserClient::dissociateClientId(UniqueClientID_t)`
+- `Invalid DOD value`
+- `virtual void ApplePPMPolicyCPMSv2::advanceServosWithPmargin(float)`
+- `avgRdcRatio`
+- `void ApplePPMBatteryModel::lockRCRWLockForWrite()`
+- `\"ApplePPM: %s:%u \" \"currValues is null\" @%s:%d`
+- `OverrideMultiClientThermalDupMask`
+- `Insta`
+- `systemloadinput-ptle-rank-ps`
+- `_droopControllerReporter`
+- `_flowControlTimer`
+- `baselineR3`
+- `ptr != nullptr`
+- `_laneEngagementStateReporter`
+- `\"ApplePPM: %s:%u \" \"PPM client_powers_extra property missing from EDT (clients_extra is present)\" @%s:%d`
+- `virtual bool ApplePPMCPMSSystemCapabilityMonitor::initWithParent(ApplePPM *, uint8_t, uint8_t)`
+- `Flags`
+- `virtual void ApplePPMPmgrAdapter::handleRangeInterrupt(uint32_t)`
+- `BootPathUpdated`
+- `_ptdReadMultFunction`
+- `resolveClientBudgets`
+- `cpms-full-mode-load-frac-hyst`
+- `battery-data-input-source`
+- `reason`
+- `_signalIndex_acskInputs[SYSCAP_BROWNOUT] >= 0`
+- `virtual float ApplePPMCPMSPowerInputHelperBatteryFirmware::getIOHIDMaxIntegratorState()`
+- `OverrideDroopControlEffort`
+- `UseKiGainDown`
+- `sss-residual-filter-ratio`
+- `bankIdx >= 0 && bankIdx < getNumBatteryBanks()`
+- `ApplePPMCPMS`
+- `ppm: registering function-btm-config-battfw\n`
+- `\"ApplePPM: %s:%u \" \"clientID %d, strobe %d, ioport %d\" @%s:%d`
+- `DynFilteredCurrentRc4_mA`
+- `12222222222222222222222222222222222`
+- `virtual bool ApplePPMPolicyCPMSv2::anyServosEngaged()`
+- `virtual void ApplePPM::updateActiveEntityList(ApplePPMEntity *)`
+- `OverrideDroopIntegratorState`
+- `com.apple.private.ppm.superclient`
+- `ApplePPMPmgrAdapter`
+- `FirmwareIBat10ms`
+- `maintain-thermal-bdgt-clipping`
+- `valNum`
+- `\"ApplePPM: %s:%u \" \"Failed to read %s table\" @%s:%d`
+- `\"ApplePPM: %s:%u \" \"ptML returned zero entries for PPM->SMC range\" @%s:%d`
+- `max-ce-if-battery-absent`
+- `\"ApplePPM: %s:%u \" \"key %s\" @%s:%d`
+- `LaneCE_%d`
+- `kiGainUp`
+- `PPM Utilities`
+- `bool ApplePPMCPMSPowerInputHelperBatteryFirmware::initWithParams(ApplePPM *)`
+- `_acskInputParameters`
+- `bool ApplePPM::pushTelemetry(OSDictionary *, UniqueClientID_t)`
+- `sCloseUserClient`
+- `outputFlag`
+- `site.ApplePPMCPMSPowerInputHelperBatteryFirmware`
+- `bool ApplePPMCPMSPeakPowerEnvelope::peakPowerEnvelopeSetValues(const peakPowerEnvelopeValues *, bool)`
+- `ApplePPMUtilities.cpp`
+- `cpms-input-Pu-cutoff-voltage`
+- `virtual void ApplePPMCPMSPowerInputHelperBatteryFirmware::getIOHIDPbatData(int32_t *, uint32_t)`
+- `EnableBatteryModelToSafeHarborFallback`
+- `\"ApplePPM: %s:%u \" \"Incorrect size for EDT property!\" @%s:%d`
+- `AppleSMCInterface`
+- `pwr-consumption-input-source`
+- `\"ApplePPM: %s:%u \" \"clientID %d, min %d, max %d\\n\" @%s:%d`
+- `RSSFiltered`
+- `getValueFromKeyInDict`
+- `site.ApplePPMPowerServoLowerLayerCE`
+- `121222222222222222222222222`
+- `ApplePPMPolicyCPMS.h`
+- `virtual bool ApplePPM::initLocal(IOService *)`
+- `_droopNotificationPMULock`
+- `cpms-pmax-computed-rdc`
+- `ApplePPMPTDManagerBase.cpp`
+- `bool ApplePPMPolicyCPMS::initWithParams(IOService *, ApplePPMEDTData *, IOKitMessageCallbackType)`
+- `AppleNAND`
+- `UseOverrideEnableFilteredRssI3I4`
+- `\"ApplePPM: %s:%u \" \"size %u, count %u\" @%s:%d`
+- `ppm->getBatteryPowerCallbackEvent()`
+- `virtual IOReturn ApplePPM::stopActivity(ApplePPMEntity *)`
+- `PMU10s`
+- `decayPropDynEntry`
+- `current-limit-window-size`
+- `void ApplePPMCPMSDecisionTree::getCurveForClient(UniqueClientID_t, ApplePPMCPMSDecisionTreeCurve *)`
+- `cpms-input-Pu-measured`
+- `OverrideBrownoutRiskPmargin`
+- `IOReturn ApplePPMCPMS::constructAndSendBudgetMessageMultiClient(CPMSPPMPowerBudget *, uint32_t)`
+- `pKC->clientInfoList`
+- `sss-pred-vdroop-sniffer-min-dur`
+- `hfe-slow-impedance-theta-hi`
+- `stepBatteryModel`
+- `site.ApplePPMDroopController`
+- `traceSMCKeyWrite`
+- `AppleBaseband`
+- `interrupt-idx-smc-targets`
+- `PmaxUseDerivedRss`
+- `PresentDODCell2`
+- `site.ApplePPMSMCInterface`
+- `getTemperatureFromBatteryDict`
+- `number-of-battery-banks`
+- `setPropertiesGated`
+- `UseDecayDerivDynEntry`
+- `Bdg`
+- `kPPMInterfaceAPIReq`
+- `sss-horizon-upward-rate`
+- `fallback-table-row-count`
+- `ApplePPMCPMSMeasuredPowerHelper::ApplePPMCPMSMeasuredPowerHelper(uint32_t, int32_t)`
+- `params`
+- `ppMaxPrevious`
+- `\"ApplePPM: %s:%u \" \"unknown input source %d\" @%s:%d`
+- `startSystemCapabilityMonitor`
+- `\"ApplePPM: %s:%u \" \"ptML returned unexpected identifier for PPM->SMC range: 0x%x\" @%s:%d`
+- `\"ApplePPM: %s:%u \" \"no default property data for client %d to shim\" @%s:%d`
+- `sss-horizon-downward-rate`
+- `bool ApplePPMNormalizedResidencyReporter::initWith(IOService *, int, uint64_t *, const char *)`
+- `_interruptEventSource`
+- `bool ApplePPM::createAndAddEntity(ApplePPMClientProperties *, ApplePPMKernelClient *)`
+- `OverrideSysCapIndex`
+- `hfe-slow-impedance-max-delta`
+- `WeightedRaCell1`
+- `void ApplePPMPolicyCPMS::addDeviceTreeClientPredictiveHorizonPmaxProperties(OSData *, OSData *, OSData *)`
+- `UseMeasuredSystemLoad`
+- `FullOperationModePowerFractionHyst`
+- `clientMemoryForType`
+- `hfe-slow-impedance-zeta`
+- `_packEntry`
+- `IOReturn ApplePPMPolicyCPMS::getClientAwakeState(UniqueClientID_t, bool *)`
+- `_tGraphLock`
+- `de3-soc-thresh-prop`
+- `getImpedanceData`
+- `void ApplePPMPredictivePmax::addDeviceTreeClientPredictiveBudgetProperties(ApplePPMCPMSClientPredictivePmaxBudgetsEDT)`
+- `ApplePPMPolicyCPMSPowerServo.cpp`
+- `\"ApplePPM: %s:%u \" \"setIBInputs: no value in signal store %d \" @%s:%d`
+- `cpms-input-enable-pmu-VF`
+- `void ApplePPMPolicyCPMS::addDeviceTreeClientPredictivePmaxProperties(OSData *, OSData *, OSData *)`
+- `ApplePPMPowerServo.cpp`
+- `reg-idx-smc-targets`
+- `AppleCLPC`
+- `bool ApplePPMCPMS::_smcInterfaceArrivalHandler(void *, IOService *, IONotifier *)`
+- `BatteryTemperatureBmuTs2`
+- `ApplePPMDroopController`
+- `R0`
+- `\"ApplePPM: %s:%u \" \"powerBudget->powerLevels[0].timescale is %d and is not equal to the enum value of 1s - %d\" @%s:%d`
+- `Voltage Regulator`
+- `powerBudgetRequested`
+- `ApplePPMCPMS::initLocal ppm_cpms %d (0x%08x)\n`
+- `IOReturn ApplePPMCPMS::sendPeakPowerEnvelopeTelemetry(OSDictionary *)`
+- `rdc-cap-enabled`
+- `virtual IOReturn ApplePPMAONPTDAdapter::enableInterruptForSMCToPPM()`
+- `virtual IOReturn ApplePPMPolicyCPMS::configureReport(IOReportChannelList *, IOReportConfigureAction, void *, void *)`
+- `cpms-fallback-power-low`
+- `\"ApplePPM: %s:%u \" \"writePTDEntry 0 returned 0x%08x\" @%s:%d`
+- `getOCVData`
+- `LastEngagedPolicyTS`
+- `OverrideHFEFastCurrentLowerThreshold`
+- `de3-gain-deriv`
+- `droop-util-ki-down`
+- `getRowArrayFromMatrix`
+- `addSignalStoreOverride`
+- `ApplePPMBatteryModel.cpp`
+- `\"ApplePPM: %s:%u \" \"%s, lane %d, output %d out of range\" @%s:%d`
+- `_peakPwrEnvelopePtr`
+- `sendPeakPowerEnvelopeTelemetry`
+- `systemLoadInputsDynamicInitReset`
+- `predictive-horizon-pmax`
+- `WeightedRa`
+- `\"ApplePPM: %s:%u \" \"unknown timescale %d\" @%s:%d`
+- `ApplePPM_ACSK_acskInput.cpp`
+- `SnapshotTimestamp`
+- `f`
+- `powerRange`
+- `_pmaxValues`
+- `_fetchClientPowerConsumptionHandler`
+- `OSArray *newOSArray(float *, unsigned int)`
+- `dst`
+- `bool ApplePPMSystemCapabilityMonitor::installBatteryDataOverride()`
+- `void ApplePPMCPMSPeakPowerEnvelope::initWithParams(ApplePPM *)`
+- `UseOverrideBatteryInputQmax`
+- `OverrideSSSHorizonUpwardRate`
+- `se`
+- `system-load-inputs-Pk`
+- `hfe-current-hp-filter-dc-gain`
+- `ApplePPMCPMSPowerInputHelper`
+- `int ppmClient::getMaxBudget100ms()`
+- `void ClientEntity::updateRequestedBudget(CPMSPPMPowerBudget *, bool)`
+- `ppm_debug`
+- `OverrideBatteryInputTimeScales`
+- `\"ApplePPM: %s:%u \" \"Invalid multi-client-thermal-dup clientID %d\" @%s:%d`
+- `filterRatioDownCurrentLimitPmaxVF`
+- `_powerSamples1sW`
+- `_signalIndex_acskInputs[SYSCAP_STROBE] >= 0`
+- `dis`
+- `void ApplePPM::addDeviceTreeClientProperties(OSData *, OSData *, OSData *)`
+- `brownout-risk-CE-lane`
+- `\"ApplePPM: %s:%u \" \"invalid entry at index %u in multiClientList\" @%s:%d`
+- `OverrideSoc1Voltage`
+- `CaptureTimestamp`
+- `void ApplePPMCPMSSysCapMonitorv2::batteryPackServiceArrivalHandler(void *, IOService *, IONotifier *)`
+- `cpms-min-update-interval`
+- `\"ApplePPM: %s:%u \" \"(%d) Incorrect timescale provided in Predictive Horizon Pmax EDT \" @%s:%d`
+- `ApplePPMBatteryModel::ApplePPMBatteryModel()`
+- `ApplePPMBatteryModelAging.cpp`
+- `packIdx >= 0 && packIdx < getNumBatteryPacks()`
+- `UseOverrideOperationMode`
+- `data`
+- `void ApplePPMCPMS::configPowerConsumptionSampling()`
+- `OverrideSSSHorizonDownwardRate`
+- `PmaxCurrent_mA`
+- `bool ApplePPMPolicyCPMSPowerServo::initWithParams(IOService *, ApplePPMEDTData *, IOKitMessageCallbackType, IOKitMessageCallbackType)`
+- `_commandGate`
+- `sss-target-horizon`
+- `LPEMData`
+- `BatteryTemperatureBmuTs1`
+- `void ApplePPMCPMSSystemCapabilityMonitor::updateReadingsFromGasGauge()`
+- `cpms-input-weight-factor-ps`
+- `updateRCParamsInMemory`
+- `_inboundMetadata`
+- `void ApplePPM::updateDebuggingProperties()`
+- `_smcTargetsMap`
+- `UseOverridePowerSample1sWindow`
+- `virtual void ApplePPMCPMSv2::powerReport(int32_t *, uint32_t)`
+- `sss-voltage-sniffer-min-dur`
+- `cpms-input-ratio-up-pp`
+- `FirmwareIMonCE`
+- `int ppmClient::getMaxBudget1s()`
+- `\"ApplePPM: %s:%u \" \"lane %d\" @%s:%d`
+- `_clientPoolLock`
+- `propagateMultiClientThermalBudgets`
+- `OverrideHFEFastImpedanceMaxDeltaTheta`
+- `PmaxOCV`
+- `OutputPs_mW`
+- `ApplePPMPolicyCPMSPowerServoLowerLayerBudgets`
+- `ApplePPMDaemonIPC`
+- `setBattModelParams`
+- `site.ApplePPMCPMS`
+- `constructAndSendBudgetMessage`
+- `ApplePPMEntity.cpp`
+- `InstantAmperage`
+- `ApplePPMAONPTDAdapter`
+- `12111122222222222222222222222222121111111`
+- `site.uint64_t`
+- `UseOverrideUnDroopControlEffort`
+- `powerValueToBudgetScalar`
+- `SMC Power`
+- `\"ApplePPM: %s:%u \" \"disablePTDEntryInterrupt returned 0x%08x\" @%s:%d`
+- `ApplePPMNormalizedResidencyReporter.cpp`
+- `virtual uint32_t ApplePPMCPMSTableDrivenBatteryModelFallBack::getValueForTemperatureAndSOC(int32_t, uint32_t)`
+- `UseOverrideDroopControlEffort`
+- `cpms-full-mode-load-fraction`
+- `FullOperationModePowerFraction`
+- `_triggerSnapshotTelemetryEvent`
+- `void ApplePPMCPMS::registerProxyClient(IOService *, UniqueClientID_t)`
+- `FlagFilterPp`
+- `DynFilteredCurrentRc3_mA`
+- `bool ApplePPMPTDManagerBase::processInboundEntry(InboundParseContext &, uint32_t, uint64_t)`
+- `strobe`
+- `BaselineSystemCapability`
+- `UseOverrideBatteryInputMeasuredPb`
+- `UseCurrentRateThreshold`
+- `\"ApplePPM: %s:%u \" \"num_ranges %d, ranges_found %d\\n\" @%s:%d`
+- `void ApplePPMCPMSPowerInputHelper::setOverridePowerConsumption(OSArray *, uint8_t)`
+- `\"ApplePPM: %s:%u \" \"interrupt source not initialized\" @%s:%d`
+- `ApplePPM_ACSK_powerservo.cpp`
+- `kPPMChemIdReq`
+- `decayRatePmuMeasFilter`
+- `QmaxCell1`
+- `k[j].targetPtr`
+- `clientCurves`
+- `121112211221122112211221122112211221122222222211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222211222222222222222222222222222222222222222222222222222222222222`
+- `FirmwareVBat10ms`
+- `\"ApplePPM: %s:%u \" \"currData is null\" @%s:%d`
+- `applyMaxCEIfBatteryAbsent`
+- `bool ApplePPMBatteryModel4RC::updateRiTemperatureCoeff(int, float *)`
+- `void ApplePPMPowerServo::getGains(float *, float *, float *, float *)`
+- `\"ApplePPM: %s:%u \" \"bad power list timescale %d for uniqueId %d\" @%s:%d`
+- `continuous-NAND-client`
+- `OperationMode`
+- `OverrideHFEVoltageFilterDenominatorCoeffs`
+- `bool ApplePPMCPMSPeakPowerEnvelope::multiEMAMaxTrackerUpdate(uint8_t, float, float *)`
+- `peakPowerEnvelope`
+- `setClientAwakeState`
+- `client-predictive-pmax-powers`
+- `void ApplePPMCPMS::propagateMultiClientThermalBudgets(OSArray *, bool *)`
+- `systemLoadInputsFilteredCurrentRc4`
+- `SystemCapabilityFallbackPowersLow`
+- `sne`
+- `client-predictive-horizon-pmax`
+- `virtual IOReturn ApplePPMCPMS::ackClientBudget(CPMSPPMPowerBudgetAck *)`
+- `SystemLoadFraction`
+- `UseSystemLoadInputsFilteredCurrentRc4`
+- `currentLimitWindowSizePmaxVF`
+- `bool notification::matchingBlock(int)`
+- `AlgoTemperature`
+- `site.ApplePPMCPMSSysCapMonitorv2`
+- `ioport`
+- `site.ApplePPMCPMSDecisionTreeCurve`
+- `OverrideSSSVoltageSnifferQualThreshold`
+- `virtual PowerLevelProfile *ApplePPMEntity::getCurrentPowerLevel()`
+- `cpms-pmax-unfiltered-init-I`
+- `_signalTracerParameters`
+- `Ra01`
+- `_sysCapMonitorLock`
+- `OverrideBatteryInputV`
+- `\"ApplePPM: %s:%u \" \"Couldn't add object for client id %u in _multiClientList\" @%s:%d`
+- `\"ApplePPM: %s:%u \" \"client %d, handle %d (output)\" @%s:%d`
+- `\"ApplePPM: %s:%u \" \"setSystemStress: no value in signal store %d \" @%s:%d`
+- `cpms-input-voltage-thr`
+- `void ApplePPMBatteryModel::setBatteryAgingEnableFlag(bool)`
+- `IOReturn ApplePPMPolicyCPMS::setDetailedThermalPowerBudgets(DetailedThermalBudgets *)`
+- `virtual void ApplePPM::configureClientReport(IOReportChannelList *, IOReportConfigureAction, void *, void *)`
+- `ApplePPMInterfaceAPIFunction`
+- `FilteredCurrentRc3`
+- `VoltageCell0`
+- `WeightedRaCell0`
+- `ApplePPMCPMSSysCapMonitorv2.cpp`
+- `prepareAndSendPeakPowerEnvelopeTelemetry`
+- `SecondaryPIIS`
+- `UseOverrideBatteryInputMeasuredPu`
+- `1211`
+- `AppleSmartBattery`
+- `mPp`
+- `void ApplePPMCPMS::setPropertyOnIOService(IOService *, const char *, const uint32_t *)`
+- `ClientGrantedBudget`
+- `PPMVector%d`
+- `cpms`
+- `\"ApplePPM: %s:%u \" \"writePTDEntry %d returned 0x%08x\" @%s:%d`
+- `static ApplePPMPolicyCPMSv2 *ApplePPMPolicyCPMSv2::withParams(IOService *, uint32_t, ApplePPMEDTData *, IOKitMessageCallbackType, IOKitMessageCallbackType)`
+- `model-param-grid-temp-kelvin`
+- `FirmwarePBat10ms`
+- `_workLoop`
+- `client_powers`
+- `BaselineSysCap`
+- `updatePMUVoltageThreshold`
+- `dict`
+- `initWithTask`
+- `IsCharging`
+- `bool ApplePPMCPMSDecisionTree::initWithParams(ApplePPMCPMSDecisionTreeCurve **, int)`
+- `OverrideOperationMode`
+- `LastEngagedCritDroopTS`
+- `psMaxPrevious`
+- `UseSocThreshDerivDynEntry`
+- `VDroop_mV`
+- `int isOutOfRangeArray(T *, T, T, int) [T = float]`
+- `\"ApplePPM: %s:%u \" \"ptML lookup failed: 0x%x\" @%s:%d`
+- `\"ApplePPM: %s:%u \" \"PTD multi-read failed: 0x%x\" @%s:%d`
+- `waterejection`
+- `updateSystemCapabilityWithPPM`
+- `_ptdLookupMultFunction`
+- `IOReturn ApplePPMPolicyCPMS::registerCPMSClient(CPMSPPMClientDescription *)`
+- `ptd-feature-enabled`
+- `OverrideSSSResidualFilterRatio`
+- `OverrideSSSHorizonUpperThreshold`
+- `model-param-ref-temp-index`
+- `btm-enabled`
+- `static void ApplePPMCPMS::batteryFirmwareReportCallback(OSObject *, OSArray *, uint32_t)`
+- `PmaxState`
+- `\"ApplePPM: %s:%u \" \"numEntriesPPMToSMC %u exceeds kOutboundBufferSize %u\" @%s:%d`
+- `ApplePPMPolicyCPMSv2.cpp`
+- `\"ApplePPM: %s:%u \" \"i %d, lane %d\" @%s:%d`
+- `_tGraphSyncTimer`
+- `LastDisengagedPolicyTS`
+- `UseSocThreshPropDynEntry`
+- `OverrideHFEFastCurrentUpperThreshold`
+- `virtual bool ApplePPMCPMSSystemCapabilityMonitor::_asbArrivalHandler(void *, IOService *, IONotifier *)`
+- `\"ApplePPM: %s:%u \" \"lane %d, unsupported input source\" @%s:%d`
+- `\"ApplePPM: %s:%u \" \"failed to update entity\" @%s:%d`
+- `UseOverrideAllowPolicyRun`
+- `AppleH10CamIn`
+- `OverrideFlags`
+- `unknown`
+- `OverrideSSSVoltageSnifferMinMargin`
+- `virtual void ApplePPMUserClient::cleanUpPPMUserClient()`
+- `ppm_flags`
+- `requestPowerBudgetWithPowerProfileHint`
+- `AllowPolicyRun`
+- `OverrideSSSPredictiveVoltageDroopSnifferQualThreshold`
+- `budgetArray`
+- `delta-voltage-target-Vdroop`
+- `Qmax`
+- `\"ApplePPM: %s:%u \" \"Temp range %u not a multiple of row dim %u\\n\" @%s:%d`
+- `void ApplePPMCPMS::shimDefaultClientPropertyData(UniqueClientID_t)`
+- `getClientCurrentPowerConsumption`
+- `UseVoltageBattMeasPrevPs`
+- `clientClose`
+- `\"ApplePPM: %s:%u \" \"enablePTDEntryInterrupt (%d) returned 0x%08x\" @%s:%d`
+- `bool ApplePPMPolicyCPMSPowerServoLowerLayerCEs::initWithParams(IOService *, ApplePPMEDTData *, IOKitMessageCallbackType, IOKitMessageCallbackType)`
+- `bool ApplePPMBatteryModel::getBatteryAgingEnableFlag()`
+- `void ApplePPMPolicyCPMS::forceTransientGrantedBudgetUpdate(CPMSPPMPowerBudget *)`
+- `_controlStateSnapshotLock`
+- `IOPort`
+- `Background Power`
+- `hfe-fast-impedance-theta-hi`
+- `float ApplePPMCPMSMeasuredPowerHelper::getPercentileRankBasedPower(uint32_t, void *, uint32_t)`
+- `unsigned int unpackOSArray(OSArray *, uint32_t *, unsigned int, int)`
+- `\"ApplePPM: %s:%u \" \"CE scaled %d\" @%s:%d`
+- `virtual IOReturn ApplePPMCPMS::callPlatformFunction(const OSSymbol *, bool, void *, void *, void *, void *)`
+- `UseOverrideSystemStressLevel`
+- `OverrideHFEFastImpedanceThetaUpperBound`
+- `hfe-fast-impedance-lower-bnd`
+- `_batteryModelInterrupt`
+- `fallback-table-column-count`
+- `\"ApplePPM: %s:%u \" \"getNumPTDRanges returned 0x%08x\" @%s:%d`
+- `updateRCParamsInMemoryWRdcOnly`
+- `ApplePPM.cpp`
+- `UseOverrideBatteryInputFS_ACT`
+- `PowerServoGains`
+- `static void ApplePPMCPMS::triggerLoggingCallback(OSObject *, uint64_t)`
+- `SystemCapabilityFilterConstants`
+- `void ApplePPMEntity::populateTGraphClientData(ApplePPMTGraphClientData *)`
+- `virtual IOReturn ApplePPMKernelClient::setBudgetWithValue(uint32_t, uint32_t, uint32_t)`
+- `void getCalendarTimeNanoSec(uint64_t *)`
+- `UseOverrideBatteryInputMeasuredPs`
+- `function-btm-start`
+- `Client ID %u proxy registration success`
+- `kPPMOutImpdDataR1`
+- `delta-voltage-target-Pmax`
+- `\"ApplePPM: %s:%u \" \"clientID %d, count %u\" @%s:%d`
+- `validateInputsAndGetCounts`
+- `extractFloatValue`
+- `dtClientPredictiveHorizonPmax`
+- `smcProvider`
+- `virtual void ApplePPMCPMS::setBrownoutRiskSysCap(int32_t, int32_t, uint8_t)`
+- `_asbProvider`
+- `\"ApplePPM: %s:%u \" \"setPredictiveSysCap: no value in signal store %d \" @%s:%d`
+- `virtual ApplePPMPowerServo *ApplePPMPolicyCPMSPowerServoLowerLayerCEs::createPowerServo(CPMSPPMLaneInput, float, float)`
+- `bool powerServo::matchingBlock(int)`
+- `site.ApplePPMPolicyCPMS`
+- `platinum_vip`
+- `_commandLock`
+- `\"ApplePPM: %s:%u \" \"PPM client_budgets_extra property missing from EDT (clients_extra is present)\" @%s:%d`
+- `\"ApplePPM: %s:%u \" \"size %u\" @%s:%d`
+- `bool ApplePPM::getDTProperty(const char *, uint32_t *, uint8_t)`
+- `ApplePMGRNub`
+- `RemainingCapacity_Battery%d`
+- `_powerTargetMilliwatts > 0`
+- `enable-actual-Ps-Calc`
+- `AppleGPU`
+- `Error: Invalid input parameters \n`
+- `UPO Avoidance`
+- `PPM-TO-SMC`
+- `ApplePPMSMCInterface`
+- `virtual bool ApplePPMCPMSSysCapMonitorv2::startSystemCapabilityMonitor()`
+- `1211112222222222222222222222222212`
+- `PPMBatteryModel`
+- `setBatteryModelParams`
+- `success`
+- `OverrideDisableBrownoutRiskShutdownTrigger`
+- `sendControlStateSnapshotTelemetry`
+- `systemLoadInputsPeff`
+- `UseWeightFactorModelPx`
+
+**[__TEXT.__os_log]**
+
+- `%s::%s:Failed to send data, _enableUTFTelemetry is false\n\n`
+- `%s::%s:Could not get pid for task %p\n`
+- `%s::%s:failed to add user client\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_I\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_RssFiltered\n`
+- `%s::%s:Aging model %sable requested\n`
+- `%s::%s:Invalid clientId %d\n\n`
+- `%s::%s:Wrong memory type passed by peakpowermanagerd while requesting memory via IOConnectMapMemory\n\n`
+- `%s::%s:Error: Invalid batteryPackIndex %d (max: %d)\n\n`
+- `%s::%s:addSignalStoreOverride: incorrect type number\n`
+- `%s::%s:function-btm-vthr callFunction failed with error 0x%08x\n\n`
+- `%s::%s:%s: Control snapshot telemetry donation using UTF failed\n\n`
+- `%s::%s:%s: sendControlStateSnapshotTelemetry failed 0x%x, ringIndex %d depthIndex %d\n\n`
+- `%s::%s:Error: Failed to allocate reqId=%d OSNumber\n\n`
+- `%s::%s:Error: Failed to allocate chemIdNum OSNumber\n\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_Vgg\n`
+- `%s::%s:failed to get array from key kLPEMDict\n`
+- `%s::%s:readSignalStore: null input/output\n`
+- `%s::%s:ASBM not ready yet (kBootPathKey)\n`
+- `%s::%s:%s: ppmDaemonMsg is NULL, batteryPackIndex %d\n\n`
+- `%s::%s:Error: outputPointer is NULL\n\n`
+- `%s::%s:Error OCV num is null at [%d][%d]\n\n`
+- `%s::%s:Processing of client budget ack failed(result code : 0x%08x) for kernel client %u\n`
+- `%s::%s:Failed to create OSDictionary for clientPowerBudgetUpdateDict with specified capacity\n\n`
+- `%s::%s:NULL input to setBatteryModelParams\n\n`
+- `  CurrentBatteryInputs: Temp %d, Iss %d, V %d, DOD %d, Rss %d, Qmax %d, ResScale %d, FS_ACT %d, DSG %d, ITMiscStatus %d, RdcUpdatedFlag %d, wRdc %d, I %d\n`
+- `%s::%s:number of keys exceeds maximum\n`
+- `%s::%s:ApplePPMCPMS::configureBatteryAbsentHandling invalid max-ce-if-battery-absent value %f, expected (0, 1]\n\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_Soc1Vcut\n`
+- `%s::%s:currValues is NULL \n\n`
+- `%s::%s:Registered client id %d tscales %d\n\n`
+- `%s::%s:Failed to cast param2 to OSDictionary, invalid client dictionary provided\n\n`
+- `%s::%s:failed to setBatteryModelParams %d\n`
+- `%s::%s:Error: PPMInterfaceAPICallBack failed with 0x%08x\n\n`
+- `%s::%s:Error tempRow is null at dodIdx=%d\n\n`
+- `%s::%s:clientId %u greater than max count\n`
+- `%s::%s:Client dictionary is NULL\n\n`
+- `%s::%s:IOPort powerBudget has %d timescales, not 1\n`
+- `%s::%s:ERROR: SMC key write blocking call (0x%08x) took %llu us (%llu ns) - exceeded 10ms threshold\n\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_Qmax\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_LpemRemCap\n`
+- `%s::%s:Daily sample limit reached (%u/%u), filtering out data\n\n`
+- `%s::%s:Failed to enqueue and send telemetry to the peakpowermanagerd\n\n`
+- `%s::%s:debug OCV at [%d][%d] = %f (destIndex=%d)\n\n`
+- `%s::%s:client %p, %s %s budget %u\n`
+- `%s::%s:getACSKParameter: null parameterOverride or outputPointer\n`
+- `%s::%s:Invalid SMC provider. Value not sent to SMC\n\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_DOD\n`
+- `%s::%s:Invalid clientId %d \n\n`
+- `%s::%s:no entity for Id %u\n`
+- `%s::%s:Error: Failed to allocate dod OSArray\n\n`
+- `%s::%s:SMC Key 0x%08x (PMAX): unexpected length %d (expected %d for %d batteries)\n\n`
+- `%s::%s:NULL entity for clientId %u\n`
+- `%s::%s:Failed to create OSDictionary for coaslesced budget updates with specified capacity\n\n`
+- `%s::%s:Missing or invalid clientBudgetAckEnabled. Expected OSBoolean\n\n`
+- `%s::%s:NULL asb_service\n`
+- `%s::%s:Error: Failed to get matrix array from dictionary\n\n`
+- `%s::%s:NULL debuggingProperties\n`
+- `%s::%s:failed to setBatteryModelParams\n`
+- `%s::%s:message sent for client = %d _userMultiClientMessageSentFlag=%lld \n\n`
+- `%s::%s:Invalid valuePtr (NULL). Value not sent to SMC\n\n`
+- `%s::%s:Failed to get client awake state for client %d, error 0x%08x\n\n`
+- `%s::%s:Invalid clientPowerPolicyRange argument passed\n\n`
+- `%s::%s:%s: Pmax Telemetry donation using UTF failed\n\n`
+- `%s::%s:%s: Failed to allocate category string for %s\n\n`
+- `%s::%s:peakpowermanagerd failed to get access to the shared memory descriptor\n\n`
+- `%s::%s:Ignoring interrupt for unexpected range %u (expected %u)\n`
+- `%s::%s:failed to get number from key gPPMBatteryKey_AlgoTemperature\n`
+- `%s::%s:Invalid Data: Voltage should be > 0\n`
+- `%s::%s:Failed to cast param1 to OSDictionary, invalid client dictionary provided\n\n`
+- `%s::%s:max number of clients already associated\n`
+- `%s::%s:readSignalStore: count out of range\n`
+- `%s::%s:Budget Trace: clientId %u, Timescale %u, Requested Budget %u, Granted Budget %u, Thermal Budget %u, PowerBudgetUPO %u \n\n`
+- `%s::%s:Userclient %u power consumption fetch unsupported on PTD systems\n\n`
+- `%s::%s:Failed to get dictionary for client: %ss\n\n`
+- `%s::%s:%s: Failed to allocate dictionary for %s\n\n`
+- `%s::%s:Unable to read max and min powers from policy curves, invalid clientId %d \n\n`
+- `%s::%s:failed to get dict from kBankBatteryDataDict array\n`
+- `%s::%s:Error: triggerLoggingCallback is NULL\n\n`
+- `%s::%s:failed to get LpemRemCap data from array\n`
+- `%s::%s:Invalid timescale %d sent by kernel client %u\n`
+- `%s::%s:Error: matrix is null\n\n`
+- `%s::%s:Error: rowArray is null\n\n`
+- `%s::%s:updateSignalStorePattern: null signalStorePattern\n`
+- `%s::%s:Failed to write to SMC key (0x%08x) - return value = 0x%x\n\n`
+- `%s::%s:Could not read Amperage property from ASBM\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_FilteredCurrentRc4\n`
+- `  CurrentSystemLoadInputs: Pb %d, tb %d, Pp %d, tp %d, Ps %d, ts %d, Pu %d, tu %d, PuSouth %d, Vgg %d, Vcut_100ms %d, Vcut_1ms %d, PMICReady %d, filteredCurrentRc3 %d, filteredCurrentRc4 %d, RssFiltered %d\n`
+- `%s::%s:Timescale count %u sent by kernel client %u exceeds the maximum supported\n`
+- `%s::%s:Failed to read ChemId\n`
+- `%s::%s:NULL arguments\n`
+- `%s::%s:Error: inputPointer is NULL\n\n`
+- `%s::%s:Error: matrixArray is null\n\n`
+- `%s::%s:Error: DOD count = %d exceeds MAX_PPM_IN_DOD=%d\n\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_Rss\n`
+- `%s::%s:failed check isCPMSPPMPowerBudgetWellFormed for clientId=%d\n\n`
+- `%s::%s:Filtering out data: powerMean (%.3f W) < %.1f W and powerMax (%.3f W) < %.1f W\n\n`
+- `%s::%s:pwrLogValues is null\n\n`
+- `%s::%s:Invalid timescale count %d\n\n`
+- `%s::%s:Invalid client name encountered while parsing dictionary\n\n`
+- `%s::%s:failed to get array from key kBankBatteryDataDict\n`
+- `%s::%s:failed to get dict from kLPEMDict array\n`
+- `%s::%s:error, multiple detailed thermal budgets\n`
+- `%s::%s:Failed to create OSDictionary for budgetdict with specified capacity\n\n`
+- `%s::%s:Could not register clientid %d with policy. Return code 0x%08x\n\n`
+- `%s::%s:failed to find chemID match\n`
+- `%s::%s:updateSignalStorePattern: invalid ticks interval\n`
+- `%s::%s:PPM Battery Model Update Ps_1s %d, mPp %d, mPb %d, (actual effective Ps %d, Pp %d, Pb %d), Ps_20s %d, cPp %d, cPb %d\n\n`
+- `%s::%s:ParamRC update succeeded\n\n`
+- `%s::%s:updateACSKParameter: invalid data type: %d\n`
+- `%s::%s:Failed to create iterator for the client dictionary. Ensure client dictionary is valid\n\n`
+- `%s::%s:granted client %d, timescale %d, level %d\n\n`
+- `%s::%s:Cast to ApplePPM failed\n`
+- `%s::%s:Super::start failed\n`
+- `%s::%s:updateSignalStorePattern: max number of _signalStorePatterns already stored\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_LpemFCC\n`
+- `%s::%s:terminate failed\n`
+- `%s::%s:bad client ID %d\n`
+- `%s::%s:super::initWithTask failed\n`
+- `%s::%s:NULL owningTask\n`
+- `%s::%s:Dev board detected\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_V\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_FilteredCurrentRc3\n`
+- `%s::%s:Invalid Data: RssFiltered should be > 0\n`
+- `%s::%s:Missing or invalid BudgetTypeLevel. Expected OSNumber\n\n`
+- `%s::%s:failed to find bank for LPEM data\n`
+- `%s::%s:SMC Key 0x%08x (PMAX): parent not available for validation\n\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_IT_MISC_STATUS\n`
+- `%s::%s:Error: Failed to allocate OSArray for row %u\n\n`
+- `%s::%s:Error: Failed to allocate OSSymbol for key %s\n\n`
+- `%s::%s:Error: %s\n\n`
+- `%s::%s:ClientId %d already deregistered\n\n`
+- `%s::%s:message already sent for client id %d, current _userMultiClientMessageSentFlag=%lld\n`
+- `%s::%s:The timescale count populated in clientPowerPolicyRange %d exceeded the maximum supported timescale count\n\n`
+- `%s::%s:setDetailedThermalPowerBudget: clientId %u, details %llu, Thermal Budget %u \n\n`
+- `%s::%s:%s: sendClientBudgetsTelemetry(requested) failed 0x%x, ringIndex %d depthIndex %d\n\n`
+- `%s::%s:ApplePPMBatteryModel::updateRCParamsInMemoryWRdcOnly: null params\n\n`
+- `%s::%s:invalid userspace mapping, index %d, count %d\n`
+- `%s::%s:Client %u is not registered\n\n`
+- `%s::%s:null IsCharging Key\n`
+- `%s::%s:Error: Failed to create OSNumber for OCV value\n\n`
+- `%s::%s:NULL matchingDict\n`
+- `%s::%s:Failed to set powerMax, logIdx = %d\n\n`
+- `%s::%s:Wrong notification type passed by peakpowermanagerd while registring mach notification port\n\n`
+- `%s::%s:Failed to fetch input from ASB\n`
+- `%s::%s:failed to find AppleSmartBatteryPack for battery index %d\n`
+- `%s::%s:failed to get BatteryData from bank entry\n`
+- `%s::%s:overrideBatteryInputRabTable count %d does not match required %d\n`
+- `%s::%s:overrideBatteryInputTimeScales count %d does not match required %d\n`
+- `%s::%s:unknown keyId %d\n`
+- `%s::%s:failed to ackClientBudget for clientId=%d\n\n`
+- `%s::%s:Error matrix is null for key %s\n\n`
+- `%s::%s:Failed to create OSArray for multi client updateArray with specified capacity\n\n`
+- `%s::%s:ignored message type %d\n`
+- `%s::%s:Error: %s at index %d\n\n`
+- `%s::%s:fromCPU %d, toCPU %d, sleep %d\n`
+- `%s::%s:SMC Key 0x%08x (PwrS): unexpected length %d (expected %zu)\n\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_ResScale\n`
+- `%s::%s:CPMS kext failed to create a data queue with capacity\n\n`
+- `%s::%s:Invalid timescale %d \n\n`
+- `%s::%s:Failed to set MultiClientList, invalid multiClientList ptr\n\n`
+- `%s::%s:Error: updateSignalCallback is NULL\n\n`
+- `%s::%s:failed to get LpemFCC data from array\n`
+- `%s::%s:Null client description\n\n`
+- `%s::%s:Failed to set MultiClientList, invalid input listSize= %d clientId=%d \n\n`
+- `%s::%s:deprecated\n`
+- `%s::%s:Invalid length (0). Value not sent to SMC\n\n`
+- `%s::%s:serialized data from the dictionary is NULL\n\n`
+- `%s::%s:Invalid number of levels %d at powerlevels index %u\n\n`
+- `%s::%s:error, index out of range\n`
+- `%s::%s:Failed to set powerSampleVar, logIdx = %d\n\n`
+- `%s::%s:%s: Invalid battery count detected: %d\n\n`
+- `%s::%s:%s: Failed to enqueue and send Pmax telemetry, batteryPackIndex %d\n\n`
+- `%s::%s:Error: powerBudget is NULL\n\n`
+- `%s::%s:failed to get data from override TimeScales[%d]\n`
+- `%s::%s:%s: createPmaxDictionary returned 0x%x, batteryPackIndex %d\n\n`
+- `%s::%s:Error num is null at [%d][%d]\n\n`
+- `%s::%s:Client power reporing failed, invalid clientId %d \n\n`
+- `%s::%s:Error: Invalid parameters for createAndAddMatrix\n\n`
+- `%s::%s:Error: Failed to allocate OSArray for matrix (key: %s)\n\n`
+- `%s::%s:Failed to send telemetry to the peakpowermanagerd error = %d \n\n`
+- `%s::%s:skipping entity creation for unsupported client %s, subclient %d\n`
+- `%s::%s:couldn't cast dictionary\n`
+- `%s::%s:%s: Telemetry not ready\n\n`
+- `%s::%s:Error: Failed to allocate temp OSArray\n\n`
+- `%s::%s:admission check failed (result code : 0x%08x) for Client Id %u\n`
+- `%s::%s:Failed to set power consumption (result code : 0x%08x) for kernel client %u\n\n`
+- `%s::%s:Install override battery data failed\n`
+- `%s::%s:failed to requestPowerBudget for clientId=%d\n\n`
+- `%s::%s:readBatteryInputFromASB failed. Skipping prep for system inputs\n`
+- `%s::%s:Error: impedanceNum is NULL\n\n`
+- `%s::%s:Error: Failed to get row array at index %d\n\n`
+- `%s::%s:getACSKParameter: parameter or field not found - acBlock: %s, field: %s\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_RaTable[%d]\n`
+- `%s::%s:client %d, timescale %d, level %d\n\n`
+- `%s::%s:batteryPackIndex=%d, systemCapability[CPMSPPMTimeScale100ms]=%d mW, pmax[%d]=%f W \n\n`
+- `%s::%s:Failed to set powerMultiEMAMax idx=%d, logIdx = %d\n\n`
+- `%s::%s:setMaxCETimeScaleBatteryAbsent: unrecognized timescale %u ms, keeping default\n`
+- `%s::%s:NULL telemetry\n`
+- `%s::%s:Error dataOut is null\n\n`
+- `%s::%s:Error OCV tempRow is null at dodIdx=%d\n\n`
+- `%s::%s:Failed to enqueue data to ppm queue\n\n`
+- `%s::%s:Failed to cast clientInfoList to OSDictionary\n\n`
+- `%s::%s:%s: Failed to send data 0x%x\n\n`
+- `%s::%s:Error OCV matrix is null\n\n`
+- `%s::%s:Missing or invalid numSubClientValue. Expected OSNumber\n\n`
+- `%s::%s:failed to get LPEM dict from bank\n`
+- `%s::%s:failed to get number from key gPPMBatteryKey_Soc1Vcut\n`
+- `%s::%s:updateSignalStorePattern: count out of range\n`
+- `%s::%s:updateSignalStorePattern: 8HexDec not present in Signal Store\n`
+- `%s::%s:failed to get dict from key kIOPMPSBatteryDataKey\n`
+- `%s::%s:getACSKParameter: invalid data type: %d\n`
+- `%s::%s:failed to find AppleSmartBatteryBank\n`
+- `%s::%s:ApplePPMBatteryModel::updateRCParamsInMemoryWRdcOnly: baselineWRdc %f out of range [%f, %f]\n\n`
+- `%s::%s:No budget entry for power %u, client id %u. Falling back to requested budget %u\n`
+- `%s::%s:clientId %u already associated\n`
+- `%s::%s:failed to get data from key %s\n`
+- `%s::%s:updateACSKParameter: null parameterOverride\n`
+- `%s::%s:bad/unknown entity for client ID %d\n`
+- `%s::%s:failed to get data from key kASBFastBatteryInputDict\n`
+- `%s::%s:PPM: readBatteryMissingFromASB: BatteryMissing has unexpected type\n\n`
+- `%s::%s:bad mode override %d\n`
+- `%s::%s:admission check failed (result code: 0x%08x) for subclientIndex %u\n`
+- `%s::%s:Failed to get CPMS Battery Pmax State\n\n`
+- `%s::%s:Invalid Data: Rss should be > 0\n`
+- `%s::%s:updateACSKParameter: parameter or field not found - acBlock: %s, field: %s\n`
+- `%s::%s:debug reached batteryIntfGetOCVData\n\n`
+- `%s::%s:Kernel client %u not registered, cannot process client budget ack\n`
+- `%s::%s:Failed to send pmax values to SMC\n\n`
+- `%s::%s:Error: invalid input \n\n`
+- `%s::%s:No ChemId present\n`
+- `%s::%s:(%p)\n`
+- `%s::%s:Set client %d awake state to %d\n\n`
+- `%s::%s:Failed to create OSCollectionIterator for coaslesced budget updates dictionary\n\n`
+- `%s::%s:%s : No source client found in multiClientList for dup mask 0x%llx\n\n`
+- `%s::%s:PPM: readBatteryMissingFromASB: ASB provider not available\n\n`
+- `%s::%s:%s: Failed to allocate OSData for %s (identifier %u)\n\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_Iss\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_WeightedRa\n`
+- `%s::%s:Could not get process name for task %p\n`
+- `%s::%s:Kernel client power reporting unsupported for client Id %d\n\n`
+- `%s::%s:failed to get array entry from key gPPMBatteryKey_Soc1Vcut\n`
+- `%s::%s:%s: sendClientBudgetsTelemetry(granted) failed 0x%x, ringIndex %d depthIndex %d\n\n`
+- `%s::%s:Error: owningService is NULL\n\n`
+- `%s::%s:failed\n`
+- `%s::%s:checkBatteryAbsentStatus: System capability monitor not set\n`
+- `%s::%s:null params\n`
+- `%s::%s:from 0x%08x, to 0x%08x, flags 0x%08x\n`
+- `%s::%s:NULL properties\n`
+- `%s::%s:NULL out value\n`
+- `%s::%s:Error: Failed to allocate main OSDictionary\n\n`
+- `%s::%s:no mappingEntry for clientID %d\n`
+- `%s::%s:failed to get data from override RaTable[%d]\n`
+- `%s::%s:NULL dict\n`
+- `%s::%s:IOPort powerBudget timescale is %d, not %d\n`
+- `%s::%s:SMC Key 0x%08x: trace logging not supported for this key type\n\n`
+- `%s::%s:Failed to cast owning service to ApplePPMCPMS\n\n`
+- `%s::%s:deleteSignalStoreOverride: incorrect identifier\n`
+- `%s::%s:%s: Snapshot is NULL\n\n`
+- `%s::%s:Error: Failed to allocate dataIn OSDictionary\n\n`
+- `%s::%s:%s: Failed to allocate dictionary for Pmax State\n\n`
+- `%s::%s:%s: Failed to allocate dictionary\n\n`
+- `%s::%s:failed to find pack for Soc1Voltage\n`
+- `%s::%s:PPM: readBatteryMissingFromASB: Failed to read BatteryMissing key from ASB\n\n`
+- `%s::%s:Error: Invalid clientID %d (max: %d)\n\n`
+- `%s::%s:NULL key\n`
+- `%s::%s:Error: Temp count = %d exceeds MAX_PPM_IN_TEMP=%d\n\n`
+- `%s::%s:failed to get temperature\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_Flags\n`
+- `%s::%s:failed to get dict from key kASBFastBatteryInputDict\n`
+- `%s::%s:failed to get data from key %s \n`
+- `%s::%s:CPMS kext failed to get memory descriptor for the shared data queue\n`
+- `%s::%s:Failed to set MultiClientList, invalid object in multiClientList clientId=%d \n\n`
+- `%s::%s:Failed to set powerMean, logIdx = %d\n\n`
+- `%s::%s:messageClients failed with 0x%x, message = 0x%llx clientId %d\n`
+- `%s::%s:Invalid clientId %d\n`
+- `%s::%s:Using centralized data : CPMS DT curve does not exist for client id %d in EDT\n\n`
+- `%s::%s:Invalid numberOfTimeScales %d \n\n`
+- `%s::%s:%s: Failed to send data 0x%x for %s\n\n`
+- `%s::%s:Error: _ppm is NULL or inactive\n\n`
+- `%s::%s:addSignalStoreOverride: incorrect identifier\n`
+- `%s::%s:Error: batteryModel or sysCapMonitorLock is null\n\n`
+- `%s::%s:Invalid timescale %d at powerlevels index %u\n\n`
+- `Unknown KeyId`
+- `%s::%s:Pid %d task %p registered without entitlement\n`
+- `%s::%s:failed to get data from key gPPMBatteryKey_BatteryDataDict\n`
+- `%s::%s:The dictionary received to enqueue to shared memory is not valid\n\n`
+- `%s::%s:%s : Source client %d has no thermal budget to propagate\n\n`

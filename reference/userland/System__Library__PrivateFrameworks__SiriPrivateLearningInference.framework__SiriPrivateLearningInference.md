@@ -1,0 +1,63 @@
+# `/System/Library/PrivateFrameworks/SiriPrivateLearningInference.framework/SiriPrivateLearningInference`
+
+iOS 27.2 dyld shared cache image, version `3600.5.1.0.0`. Light page: libraries and type names only. **[DSC]**
+
+## Linked libraries (46)
+
+- `/System/Library/PrivateFrameworks/SiriPrivateLearningAnalytics.framework/SiriPrivateLearningAnalytics`
+- `/System/Library/PrivateFrameworks/SiriPrivateLearningLogging.framework/SiriPrivateLearningLogging`
+- `/System/Library/Frameworks/Intents.framework/Intents`
+- `/System/Library/PrivateFrameworks/SiriOntology.framework/SiriOntology`
+- `/System/Library/PrivateFrameworks/SiriOntologyProtobuf.framework/SiriOntologyProtobuf`
+- `/System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation`
+- `/System/Library/Frameworks/Contacts.framework/Contacts`
+- `/System/Library/PrivateFrameworks/SiriNLUTypes.framework/SiriNLUTypes`
+- `/System/Library/Frameworks/Foundation.framework/Foundation`
+- `/usr/lib/libobjc.A.dylib`
+- `/usr/lib/libSystem.B.dylib`
+- `/System/Library/Frameworks/CoreData.framework/CoreData`
+- `/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation`
+- `/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer`
+- `/System/Library/Frameworks/UIKit.framework/UIKit`
+- `/System/Library/PrivateFrameworks/AppleMediaServices.framework/AppleMediaServices`
+- `/System/Library/PrivateFrameworks/AssistantServices.framework/AssistantServices`
+- `/System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams`
+- `/System/Library/PrivateFrameworks/CascadeSets.framework/CascadeSets`
+- `/System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary`
+- `/System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote`
+- `/System/Library/PrivateFrameworks/MusicKitInternal.framework/MusicKitInternal`
+- `/System/Library/PrivateFrameworks/SiriAnalytics.framework/SiriAnalytics`
+- `/System/Library/PrivateFrameworks/Trial.framework/Trial`
+- `/usr/lib/swift/libswiftAVFoundation.dylib`
+- `/usr/lib/swift/libswiftAccelerate.dylib`
+- `/usr/lib/swift/libswiftCore.dylib`
+- `/usr/lib/swift/libswiftCoreAudio.dylib`
+- `/usr/lib/swift/libswiftCoreFoundation.dylib`
+- `/usr/lib/swift/libswiftCoreImage.dylib`
+- `/usr/lib/swift/libswiftCoreLocation.dylib`
+- `/usr/lib/swift/libswiftCoreMIDI.dylib`
+- `/usr/lib/swift/libswiftDispatch.dylib`
+- `/usr/lib/swift/libswiftIntents.dylib`
+- `/usr/lib/swift/libswiftMLCompute.dylib`
+- `/usr/lib/swift/libswiftMetal.dylib`
+- `/usr/lib/swift/libswiftOSLog.dylib`
+- `/usr/lib/swift/libswiftObjectiveC.dylib`
+- `/usr/lib/swift/libswiftQuartzCore.dylib`
+- `/usr/lib/swift/libswiftSpatial.dylib`
+- `/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib`
+- `/usr/lib/swift/libswiftXPC.dylib`
+- `/usr/lib/swift/libswift_Builtin_float.dylib`
+- `/usr/lib/swift/libswift_Concurrency.dylib`
+- `/usr/lib/swift/libswiftos.dylib`
+- `/usr/lib/swift/libswiftsimd.dylib`
+
+## Objective-C: 113 classes, 7 protocols (method count not recorded on light pages)
+
+### Classes
+
+`PlusContactSuggestionStoreUpdateRecord`, `PlusContactSuggestionTagCoreDataRecord`, `PlusMediaReferenceCoreDataRecord`, `PlusMediaReferenceSourceAppCoreDataRecord`, `PlusMediaSuggestionCoreDataRecord`, `PlusMediaSuggestionStoreUpdateRecord`, `PlusMediaSuggestionTagCoreDataRecord`, `PlusStorefrontCoreDataRecord`, `ThinMediaGroundTruthCoreDataRecord`, `_TtC28SiriPrivateLearningInference12PICSStoreApi`, `_TtC28SiriPrivateLearningInference12SignalScorer`, `_TtC28SiriPrivateLearningInference14StreamRegistry`, `_TtC28SiriPrivateLearningInference15AdamIdExtractor`, `_TtC28SiriPrivateLearningInference17AMPMetadataHelper`, `_TtC28SiriPrivateLearningInference17MediaSignalScorer`, `_TtC28SiriPrivateLearningInference17PICSStoreCoreData`, `_TtC28SiriPrivateLearningInference17PIMSStoreCoreData`, `_TtC28SiriPrivateLearningInference17PimsRuntimeLogger`, `_TtC28SiriPrivateLearningInference18MessagesClassifier`, `_TtC28SiriPrivateLearningInference19MediaPlayClassifier`, `_TtC28SiriPrivateLearningInference19PhoneCallClassifier`, `_TtC28SiriPrivateLearningInference20EntityNodeComparator`, `_TtC28SiriPrivateLearningInference20EntityNodeComparison`, `_TtC28SiriPrivateLearningInference20SELFEventLogEmitters`, `_TtC28SiriPrivateLearningInference21AMSSongMetadataClient`, `_TtC28SiriPrivateLearningInference21MediaFeatureExtractor`, `_TtC28SiriPrivateLearningInference21PLUSOfflineLogHelpers`, `_TtC28SiriPrivateLearningInference21QuickHangupClassifier`, `_TtC28SiriPrivateLearningInference22CoreAnalyticsLogHelper`, `_TtC28SiriPrivateLearningInference22EntityPromptClassifier`, `_TtC28SiriPrivateLearningInference22MediaSuggestionManager`, `_TtC28SiriPrivateLearningInference22PICSWipeStoreMigration`, `_TtC28SiriPrivateLearningInference22SuccessfulTaskMetadata`, `_TtC28SiriPrivateLearningInference23CoreDuetEventCoalescing`, `_TtC28SiriPrivateLearningInference23InferenceDataCompliance`, `_TtC28SiriPrivateLearningInference23PhoneCallEventCoalescer`, `_TtC28SiriPrivateLearningInference23SlotBasedTurnComparison`, `_TtC28SiriPrivateLearningInference24MediaEvaluationFramework`, `_TtC28SiriPrivateLearningInference24SuggestionSignalScorerV1`, `_TtC28SiriPrivateLearningInference25EntityUtteranceComparison`, `_TtC28SiriPrivateLearningInference25MessagesDeadEndClassifier`, `_TtC28SiriPrivateLearningInference25PartialRepetitionMetadata`, `_TtC28SiriPrivateLearningInference25PhoneCallFeatureExtractor`, `_TtC28SiriPrivateLearningInference25SendMessageEventCoalescer`, `_TtC28SiriPrivateLearningInference25ThresholdedTurnComparison`, `_TtC28SiriPrivateLearningInference26MediaGroundTruthSummarizer`, `_TtC28SiriPrivateLearningInference26RestatementSessionStitcher`, `_TtC28SiriPrivateLearningInference26SELFPlusSuggestionIdMapper`, `_TtC28SiriPrivateLearningInference26TimeBasedPlayMediaStitcher`, `_TtC28SiriPrivateLearningInference27CascadeLearnedEntityDonator`, `_TtC28SiriPrivateLearningInference27PartialRepetitionClassifier`, `_TtC28SiriPrivateLearningInference27SendMessageFeatureExtractor`, `_TtC28SiriPrivateLearningInference27SuccessfulMessageClassifier`, `_TtC28SiriPrivateLearningInference27SuccessfulMessageDefinition`, `_TtC28SiriPrivateLearningInference28MediaInAppFollowupClassifier`, `_TtC28SiriPrivateLearningInference28MigrationPolicyAddDefaultTag`, `_TtC28SiriPrivateLearningInference28PimsRuntimeLoggerSynchronous`, `_TtC28SiriPrivateLearningInference28PimsStoreRuntimeQueryWrapper`, `_TtC28SiriPrivateLearningInference29FullEntityUtteranceComparator`, `_TtC28SiriPrivateLearningInference29MessagesAbandonmentClassifier`, `_TtC28SiriPrivateLearningInference29SuccessfulPhoneCallClassifier`, `_TtC28SiriPrivateLearningInference29SuccessfulPhoneCallDefinition`, `_TtC28SiriPrivateLearningInference29SuccessfulPlayMediaDefinition`, `_TtC28SiriPrivateLearningInference30FirstPartyEventStreamProcessor`, `_TtC28SiriPrivateLearningInference30NowPlayingEventStreamProcessor`, `_TtC28SiriPrivateLearningInference30PhoneCallAbandonmentClassifier`, `_TtC28SiriPrivateLearningInference30PlusContactSuggestionGenerator`, `_TtC28SiriPrivateLearningInference30USOTaskSummaryFeatureExtractor`, `_TtC28SiriPrivateLearningInference31MediaSuggestionOutcomeExtractor`, `_TtC28SiriPrivateLearningInference31MessagesInAppFollowupClassifier`, `_TtC28SiriPrivateLearningInference31PICSStoreCoreDataWithMigrations`, `_TtC28SiriPrivateLearningInference31PIMSStoreCoreDataWithMigrations`, `_TtC28SiriPrivateLearningInference31PlusClientEventFeatureExtractor`, `_TtC28SiriPrivateLearningInference32AdaptiveMediaSuggestionGenerator`, `_TtC28SiriPrivateLearningInference32AdaptiveMediaSuggestionNominator`, `_TtC28SiriPrivateLearningInference32CommonBiomeEventFeatureExtractor`, `_TtC28SiriPrivateLearningInference32ContactEntityUtteranceComparator`, `_TtC28SiriPrivateLearningInference32PhoneCallInAppFollowupClassifier`, `_TtC28SiriPrivateLearningInference32PlayMediaReformulationDefinition`, `_TtC28SiriPrivateLearningInference33AsyncCoreDuetEventStreamProcessor`, `_TtC28SiriPrivateLearningInference33CommonInteractionFeatureExtractor`, `_TtC28SiriPrivateLearningInference33ContactPromptGroundTruthGenerator`, `_TtC28SiriPrivateLearningInference33INPlayMediaIntentFeatureExtractor`, `_TtC28SiriPrivateLearningInference33INStartCallIntentFeatureExtractor`, `_TtC28SiriPrivateLearningInference33QuickSongStopGroundTruthGenerator`, `_TtC28SiriPrivateLearningInference34AdaptiveContactSuggestionGenerator`, `_TtC28SiriPrivateLearningInference34AdaptiveContactSuggestionNominator`, `_TtC28SiriPrivateLearningInference34MessagesSuggestionOutcomeExtractor`, `_TtC28SiriPrivateLearningInference34PLUSMediaSuggesterRuntimeLogHelper`, `_TtC28SiriPrivateLearningInference34PlusContactReferenceCoreDataRecord`, `_TtC28SiriPrivateLearningInference35ContactSuggestionProvidedClassifier`, `_TtC28SiriPrivateLearningInference35INSendMessageIntentFeatureExtractor`, `_TtC28SiriPrivateLearningInference35PhoneCallSuggestionOutcomeExtractor`, `_TtC28SiriPrivateLearningInference35PlusContactSuggestionCoreDataRecord`, `_TtC28SiriPrivateLearningInference36MediaSuggestionStoreCandidateAdapter`, `_TtC28SiriPrivateLearningInference36PLUSContactSuggesterRuntimeLogHelper`, `_TtC28SiriPrivateLearningInference36ThinContactGroundTruthCoreDataRecord`, `_TtC28SiriPrivateLearningInference37ReformulationSpecializationClassifier`, `_TtC28SiriPrivateLearningInference38ContactSuggestionStoreCandidateAdapter`, `_TtC28SiriPrivateLearningInference38MediaEntityPartialRepetitionDefinition`, `_TtC28SiriPrivateLearningInference41MessagesInAppFollowupGroundTruthGenerator`, `_TtC28SiriPrivateLearningInference42MessagesContactPartialRepetitionDefinition`, `_TtC28SiriPrivateLearningInference42PhoneCallInAppFollowupGroundTruthGenerator`, `_TtC28SiriPrivateLearningInference43PhoneCallContactPartialRepetitionDefinition`, `_TtC28SiriPrivateLearningInference44MediaSuggestionOutcomeReportedOfflineEmitter`, `_TtC28SiriPrivateLearningInference44UserFeedbackLearningInferenceFeatureResolver`, `_TtC28SiriPrivateLearningInference45MessagesContactSuggestionGroundTruthGenerator`, `_TtC28SiriPrivateLearningInference45PlusContactSuggestionStoreRuntimeQueryWrapper`, `_TtC28SiriPrivateLearningInference46ContactSuggestionOutcomeReportedOfflineEmitter`, `_TtC28SiriPrivateLearningInference9AMSClient`, `_TtC28SiriPrivateLearningInferenceP33_9D5FDEA6C0F78966509CB6B1160C3BEF28NowPlayingStreamStateMachine`, `_TtC28SiriPrivateLearningInferenceP33_F34D711BA311667891FFF4C6E56BC96911QueuedEvent`, `_TtC28SiriPrivateLearningInferenceP33_F34D711BA311667891FFF4C6E56BC96942INPlayMediaIntentEventAsyncStreamProcessor`
+
+### Protocols
+
+`BMStoreData`, `BMStoreEvent`, `CNKeyDescriptor`, `NSCoding`, `NSCopying`, `NSObject`, `NSSecureCoding`
+

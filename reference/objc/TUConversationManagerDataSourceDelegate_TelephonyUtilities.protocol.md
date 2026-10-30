@@ -1,0 +1,38 @@
+# `TUConversationManagerDataSourceDelegate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities`](../userland/System__Library__PrivateFrameworks__TelephonyUtilities.framework__TelephonyUtilities.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 28 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[TUConversationManagerDataSourceDelegate conversation:receivedActivitySessionEvent:];
+-[TUConversationManagerDataSourceDelegate conversation:collaborationStateChanged:highlightIdentifier:];
+-[TUConversationManagerDataSourceDelegate conversationManagerDataSource:didChangeActivatedConversationLinks:];
+-[TUConversationManagerDataSourceDelegate conversationsChangedForDataSource:conversationsByGroupUUID:oldConversationsByGroupUUID:];
+-[TUConversationManagerDataSourceDelegate addedCollaborationDictionary:forConversation:];
+-[TUConversationManagerDataSourceDelegate screenSharingAvailableChanged:];
+-[TUConversationManagerDataSourceDelegate sharePlayAvailableChanged:];
+-[TUConversationManagerDataSourceDelegate conversation:addedMembersLocally:];
+-[TUConversationManagerDataSourceDelegate serverDisconnectedForDataSource:oldConversationsByGroupUUID:];
+-[TUConversationManagerDataSourceDelegate remoteScreenShareEndedWithReason:];
+-[TUConversationManagerDataSourceDelegate conversation:participant:addedNotice:];
+-[TUConversationManagerDataSourceDelegate receivedTrackedPendingMember:forConversationLink:];
+-[TUConversationManagerDataSourceDelegate didChangeConversationAdvertisement:];
+-[TUConversationManagerDataSourceDelegate conversation:didChangeSceneAssociationForActivitySession:];
+-[TUConversationManagerDataSourceDelegate conversation:buzzedMember:];
+-[TUConversationManagerDataSourceDelegate interpreterRequestWithID:didUpdateToState:];
+-[TUConversationManagerDataSourceDelegate conversationsChangedForDataSource:updatedIncomingPendingConversationsByGroupUUID:];
+-[TUConversationManagerDataSourceDelegate conversation:screenSharingChangedForParticipant:];
+-[TUConversationManagerDataSourceDelegate conversation:didChangeStateForActivitySession:];
+-[TUConversationManagerDataSourceDelegate interpreterRequestWithID:debugSendLink:toHandle:];
+-[TUConversationManagerDataSourceDelegate conversation:participant:didUpdateNickname:reason:];
+-[TUConversationManagerDataSourceDelegate conversationManagerDataSource:messagesGroupDetailsForMessagesGroupId:completionHandler:];
+-[TUConversationManagerDataSourceDelegate conversationManagerDataSource:conversation:appLaunchState:forActivitySession:];
+-[TUConversationManagerDataSourceDelegate conversationUpdatedMessagesGroupPhoto:];
+-[TUConversationManagerDataSourceDelegate activeParticipant:removedHighlightFromConversation:highlightIdentifier:];
+-[TUConversationManagerDataSourceDelegate activityAuthorizationsChangedForDataSource:oldActivityAuthorizedBundleIdentifiers:];
+-[TUConversationManagerDataSourceDelegate activeParticipant:addedHighlightToConversation:highlightIdentifier:oldHighlightIdentifier:isFirstAdd:];
+-[TUConversationManagerDataSourceDelegate remoteScreenShareAttributesChanged:isLocallySharing:];
+```

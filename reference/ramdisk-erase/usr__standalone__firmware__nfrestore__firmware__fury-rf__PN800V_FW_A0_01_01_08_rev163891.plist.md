@@ -1,0 +1,18 @@
+# `/usr/standalone/firmware/nfrestore/firmware/fury-rf/PN800V_FW_A0_01_01_08_rev163891.plist`
+
+From the erase/recovery restore ramdisk (141-28940-105.dmg, runs restored_external). 906 bytes.
+
+- `Config`:
+  -
+    - `HW`:
+      - `D2`
+    - `antenna`: `GOANNA`
+    - `fwVersion`: `01.01.08`
+    - `settings`: `b'\xa0\x92(H\x00$\x00\xfc\x81\x0f\x00"\x80\x0f\x00(\x00  \x00\x00C\x182\x16x0\r\x00\x03f\x00\x00\x01\x1c,\x02A\x9c\x04\x00\x8c\x13\xf0\x02\x00\x08\xb6\x95L9\xcb\xbb\x99\'\xa0\x0e0\x1f`\x03\x00\xe9\xe9`
+  -
+    - `HW`:
+      - `D2`
+    - `antenna`: `PN800_STAR_RTID_POC`
+    - `fwVersion`: `01.01.08`
+    - `settings`: `b'\xa0\x92(H\x00$\x00\xfc\x81\x0f\x00"\x80\x0f\x00(\x00  \x00\x00C\x182\x16x0\r\x00\x03b\x00\x00\x01\x1c,\x02A\x9c\x04\x00\x8c\x13\xf0\x02\x00\x08_=\x81\x9a\xadO\xc5A\xa0\x0e0\x1f`\x03\x00\xe4\xe4\xe9`
+- `Version`: `1`

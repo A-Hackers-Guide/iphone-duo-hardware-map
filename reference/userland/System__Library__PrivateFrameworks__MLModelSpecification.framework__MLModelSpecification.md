@@ -1,0 +1,23 @@
+# `/System/Library/PrivateFrameworks/MLModelSpecification.framework/MLModelSpecification`
+
+iOS 27.2 dyld shared cache image, version `107.40.2.0.0`. Light page: libraries and type names only. **[DSC]**
+
+## Linked libraries (10)
+
+- `/System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf`
+- `/System/Library/Frameworks/Foundation.framework/Foundation`
+- `/usr/lib/libobjc.A.dylib`
+- `/usr/lib/libSystem.B.dylib`
+- `/usr/lib/swift/libswiftCore.dylib`
+- `/usr/lib/swift/libswiftCoreFoundation.dylib`
+- `/usr/lib/swift/libswiftDispatch.dylib`
+- `/usr/lib/swift/libswiftObjectiveC.dylib`
+- `/usr/lib/swift/libswiftXPC.dylib`
+- `/usr/lib/swift/libswift_Builtin_float.dylib`
+
+## Objective-C: 19 classes, 0 protocols (method count not recorded on light pages)
+
+### Classes
+
+`_TtCV20MLModelSpecification11Proto_ModelP33_4FEECBA670118D43FC092AB089C2CE4C13_StorageClass`, `_TtCV20MLModelSpecification20Proto_GRULayerParamsP33_FEBA7ED9F351FA7751CD6B489714AC0A13_StorageClass`, `_TtCV20MLModelSpecification22Proto_LSTMWeightParamsP33_FEBA7ED9F351FA7751CD6B489714AC0A13_StorageClass`, `_TtCV20MLModelSpecification22Proto_MILSpec_ListTypeP33_332B47BD95040FAA9FC0D6990ECE156813_StorageClass`, `_TtCV20MLModelSpecification22Proto_ScaleLayerParamsP33_FEBA7ED9F351FA7751CD6B489714AC0A13_StorageClass`, `_TtCV20MLModelSpecification23Proto_MILSpec_StateTypeP33_332B47BD95040FAA9FC0D6990ECE156813_StorageClass`, `_TtCV20MLModelSpecification23Proto_MILSpec_ValueTypeP33_332B47BD95040FAA9FC0D6990ECE156813_StorageClass`, `_TtCV20MLModelSpecification24Proto_NeuralNetworkLayerP33_FEBA7ED9F351FA7751CD6B489714AC0A13_StorageClass`, `_TtCV20MLModelSpecification26Proto_BatchnormLayerParamsP33_FEBA7ED9F351FA7751CD6B489714AC0A13_StorageClass`, `_TtCV20MLModelSpecification26Proto_EmbeddingLayerParamsP33_FEBA7ED9F351FA7751CD6B489714AC0A13_StorageClass`, `_TtCV20MLModelSpecification28Proto_ConvolutionLayerParamsP33_FEBA7ED9F351FA7751CD6B489714AC0A13_StorageClass`, `_TtCV20MLModelSpecification28Proto_EmbeddingNDLayerParamsP33_FEBA7ED9F351FA7751CD6B489714AC0A13_StorageClass`, `_TtCV20MLModelSpecification28Proto_MILSpec_DictionaryTypeP33_332B47BD95040FAA9FC0D6990ECE156813_StorageClass`, `_TtCV20MLModelSpecification29Proto_InnerProductLayerParamsP33_FEBA7ED9F351FA7751CD6B489714AC0A13_StorageClass`, `_TtCV20MLModelSpecification29Proto_NetworkUpdateParametersP33_FEBA7ED9F351FA7751CD6B489714AC0A13_StorageClass`, `_TtCV20MLModelSpecification30Proto_BatchedMatMulLayerParamsP33_FEBA7ED9F351FA7751CD6B489714AC0A13_StorageClass`, `_TtCV20MLModelSpecification30Proto_Convolution3DLayerParamsP33_FEBA7ED9F351FA7751CD6B489714AC0A13_StorageClass`, `_TtCV20MLModelSpecification32Proto_SimpleRecurrentLayerParamsP33_FEBA7ED9F351FA7751CD6B489714AC0A13_StorageClass`, `_TtCV20MLModelSpecification35Proto_LayerNormalizationLayerParamsP33_FEBA7ED9F351FA7751CD6B489714AC0A13_StorageClass`
+

@@ -1,0 +1,889 @@
+# `com.apple.driver.AudioDMAController-Gen5p0`
+
+- Name: AudioDMAController_Gen5p0
+- Version: `600.45`
+- UUID: `371550BB-BB2A-3022-8D09-AC4F4B5C3E00`
+- Source version: `600.45.0.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleEmbeddedAudioLibs`](com.apple.driver.AppleEmbeddedAudioLibs.md) 1.0, [`com.apple.driver.AudioDMACLLTEscalationDetector-Gen1p0`](com.apple.driver.AudioDMACLLTEscalationDetector-Gen1p0.md) 1.0, [`com.apple.driver.AudioDMAFamily`](com.apple.driver.AudioDMAFamily.md) 1.0, [`com.apple.driver.DMAChannelProxy`](com.apple.driver.DMAChannelProxy.md) 1.0.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0
+
+## Device-tree nodes it binds (6) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/admac-dispint0`](../devicetree/root__arm-io__admac-dispint0.md) | `AudioDMAController` | `admac,v5p0` |
+| [`/arm-io/admac-dispext0`](../devicetree/root__arm-io__admac-dispext0.md) | `AudioDMAController` | `admac,v5p0` |
+| [`/arm-io/admac-base-ns`](../devicetree/root__arm-io__admac-base-ns.md) | `AudioDMAController` | `admac-evolution,v5p0` |
+| [`/arm-io/admac-leap-ns`](../devicetree/root__arm-io__admac-leap-ns.md) | `AudioDMAController` | `admac-evolution,v5p0` |
+| [`/arm-io/admac-base-s`](../devicetree/root__arm-io__admac-base-s.md) | `AudioDMAController` | `admac-evolution,v5p0` |
+| [`/arm-io/admac-leap-s`](../devicetree/root__arm-io__admac-leap-s.md) | `AudioDMAController` | `admac-evolution,v5p0` |
+
+## IOKit personalities (2) [KC]
+
+### ADMAChannelInterface
+- `CFBundleIdentifier`: `com.apple.driver.AudioDMAController-Gen5p0`
+- `IOClass`: `ADMAChannelInterface`
+- `IONameMatch`:
+  - `audio-dma-channel,v5p0`
+- `IOPersonalityPublisher`: `com.apple.driver.AudioDMAController-Gen5p0`
+- `IOProviderClass`: `AppleARMIODevice`
+
+### AudioDMAController
+- `CFBundleIdentifier`: `com.apple.driver.AudioDMAController-Gen5p0`
+- `IOClass`: `AudioDMAController`
+- `IONameMatch`:
+  - `admac,v5p0`
+  - `admac-evolution,v5p0`
+- `IOPersonalityPublisher`: `com.apple.driver.AudioDMAController-Gen5p0`
+- `IOProviderClass`: `AppleARMIODevice`
+
+
+## C++ classes (5) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AudioDMAChannel` | 0x380 | ADMAChannel → IOService → IORegistryEntry |
+| `AudioDMAController` | 0x960 | IODMAController → IOService → IORegistryEntry |
+| `AudioDMATransferCommand` | 0x90 | IOCommand |
+| `IOInterruptQueueEventSource` | 0x2a8 | IOInterruptEventSource → IOEventSource |
+| `InterruptCommand` | 0x28 | IOCommand |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1560)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x000083be off=0x008fac30-0x00902fee addr=0xfffffe00078fec30-0xfffffe0007906fee r--/r--   __TEXT            
+	sz=0x00000200 off=0x008fb2b0-0x008fb4b0 addr=0xfffffe00078ff2b0-0xfffffe00078ff4b0               __TEXT.__const            
+	sz=0x00007523 off=0x008fb4b0-0x009029d3 addr=0xfffffe00078ff4b0-0xfffffe00079069d3               __TEXT.__cstring          (CstringLiterals)
+	sz=0x0000061b off=0x009029d3-0x00902fee addr=0xfffffe00079069d3-0xfffffe0007906fee               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x00025f30 off=0x02bd10c0-0x02bf6ff0 addr=0xfffffe0009bd50c0-0xfffffe0009bfaff0 r-x/r-x   __TEXT_EXEC       
+	sz=0x00025830 off=0x02bd10c0-0x02bf68f0 addr=0xfffffe0009bd50c0-0xfffffe0009bfa8f0          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000700 off=0x02bf68f0-0x02bf6ff0 addr=0xfffffe0009bfa8f0-0xfffffe0009bfaff0          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00000398 off=0x049dacf8-0x049db090 addr=0xfffffe000b9decf8-0xfffffe000b9df090 rw-/rw-   __DATA            
+	sz=0x00000248 off=0x049dacf8-0x049daf40 addr=0xfffffe000b9decf8-0xfffffe000b9def40               __DATA.__data             
+	sz=0x00000150 off=0x00000000-0x00000150 addr=0xfffffe000b9def40-0xfffffe000b9df090               __DATA.__common           (Zerofill)
+003: LC_SEGMENT_64 sz=0x00002010 off=0x012bf9b8-0x012c19c8 addr=0xfffffe00082c39b8-0xfffffe00082c59c8 rw-/rw-   __DATA_CONST      
+	sz=0x00000028 off=0x012bf9b8-0x012bf9e0 addr=0xfffffe00082c39b8-0xfffffe00082c39e0         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000020 off=0x012bf9e0-0x012bfa00 addr=0xfffffe00082c39e0-0xfffffe00082c3a00         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00001760 off=0x012bfa00-0x012c1160 addr=0xfffffe00082c3a00-0xfffffe00082c5160         __DATA_CONST.__const            
+	sz=0x00000400 off=0x012c1160-0x012c1560 addr=0xfffffe00082c5160-0xfffffe00082c5560         __DATA_CONST.__kalloc_type      
+	sz=0x00000380 off=0x012c1560-0x012c18e0 addr=0xfffffe00082c5560-0xfffffe00082c58e0         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000e8 off=0x012c18e0-0x012c19c8 addr=0xfffffe00082c58e0-0xfffffe00082c59c8         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 253 at 0x04aed598
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     371550BB-BB2A-3022-8D09-AC4F4B5C3E00
+008: LC_SOURCE_VERSION           600.45.0.0.0
+009: LC_FUNCTION_STARTS          offset=0x004ab8b90 size=0x2a8
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleExecutable`: `AudioDMAController_Gen5p0`
+- `CFBundleIdentifier`: `com.apple.driver.AudioDMAController-Gen5p0`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AudioDMAController_Gen5p0`
+- `CFBundleNumericVersion`: `0`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `600.45`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `600.45`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2022 Apple Inc. All rights reserved.`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AudioDMAController_Gen5p0.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198896382928`
+- `_PrelinkExecutableRelativePath`: `AudioDMAController_Gen5p0`
+- `_PrelinkExecutableSize`: `198294`
+- `_PrelinkExecutableSourceAddr`: `-2198896382928`
+- `_PrelinkKmodInfo`: `-2198828356360`
+
+## Strings (753) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `_outstandingAXIWriteHistogramReporter != nullptr`
+- `%s::%s DMA engine did not go idle in time.`
+- `Initializing -> Initializing`
+- `GetConfig -> First Transfer (Implied)`
+- `Sleep -> Initializing`
+- `%s::%s Tx CB SRAM base cannot be larger than size.`
+- `%s::%s Did not find payload for %s.`
+- `dmaES != nullptr`
+- `IOInterruptQueueEventSource`
+- `\"%llu %s:%s \" \"Invalid interrupt destination index %u.\" @%s:%d`
+- `%s::%s Could not initialize channel`
+- `\"%llu %s:%s \" \"Unexpected: PCT (STAT = 0x%08x) is empty.\" @%s:%d`
+- `AudioDMAChannelStateMachine.cpp`
+- `_usesNewContract`
+- `%s: %s::%s::%d: Invoked  with inDMAIndex = %u.\n`
+- `%s::%s Routine is incompatible with the legacy contract.`
+- `_admacTxChannels[channel]->resetChannel() == kIOReturnSuccess`
+- `%s::%s Could not allocate workloop.`
+- `dmaTransferTime`
+- `\"%llu %s: \" \"Could not set object for ID = %s.\" @%s:%d`
+- `\"%llu %s: \" \"Channel %p failed to set interrupts with %s.\" @%s:%d`
+- `Timebase Offset (Positive)`
+- `!_owner->mustPanicOnInterruptFlood()`
+- `%s::%s True FIFO depth (%u < %u) is too small.`
+- `underrun`
+- `\"%llu %s:%s \" \"AXI read error - AXIERRSTAT: 0x%08x AXIERRLOG: 0x%08x.\" @%s:%d`
+- `Idle -> GetConfig/ValidConfig/ValidFIFODepth/GetFIFODepth`
+- `_channelECProxy != nullptr`
+- `virtual bool AudioDMAController::start(IOService *)`
+- `%s: %s::%s::%d: Tx channel %02u failed to init power.\n`
+- `%s::%s Channel at supplied index was not found.`
+- `%s: %s::%s::%d: \t\t%cX_IRQSTAT0: 0x%08x.\n`
+- `transferCommandAlias->getTransferDescriptorAtIndex(0)->TransDescID == cs.TransDescID`
+- `\"%llu %s:%s \" \"CS FIFO is full.\" @%s:%d`
+- `%s: %s::%s::%d: Could not fetch the Rx CB SRAM allocation base for this instance.\n`
+- `configuration != nullptr`
+- `pmgrAONGlobalTimebaseMap != nullptr`
+- `%s::%s Could not add aggregate channel to the interrupt count reporter.`
+- `Could not attachToParent.`
+- `role`
+- `%s::%s True FIFO depth (%u) is too small (%u).`
+- `abortTransfers`
+- `returnValue`
+- `Initialize`
+- `site.AudioDMAController`
+- `%s::%s Could not construction %s.`
+- `ChannelCB`
+- `12`
+- `%s::%s Unallowed operation.`
+- `121122222222112222`
+- `12112`
+- `_trackReturnCommand`
+- `saveAndClearInterrupts`
+- `inDMACommand != nullptr`
+- `%s::%s Could not create the interrupt counts reporter.`
+- `%s::%s Could not add the interrupt counter reporter to the set.`
+- `%s::%s Could not set new configuration`
+- `AudioDMAChannelSharedResource.cpp`
+- `!(static_cast<bool>(_dartMapper) && static_cast<bool>(_channelECProxy))`
+- `SIO`
+- `%s::%s Could not allocate evolved DMA command pool.`
+- `static_cast<bool>(theCommand->getMemoryDescriptor())`
+- `%s::%s Could not add DMA C2P histogram reporter to larger group.`
+- `%s::%s Could not add cs transfer time histogram reporter to larger group.`
+- `Transferring -> Transferring`
+- `_dmaChannelSkipCountRx < _maxDMAChannels`
+- `tftscapturemode`
+- `%s::%s Could not add the %s histogram reporter to the set.`
+- `%s::%s Could not create the %s histogram reporter.`
+- `AXI Read`
+- `_interruptQueueLock != nullptr`
+- `%s: %s::%s::%d: Invalid power ordinal (%u) seen.\n`
+- `callPlatformFunction`
+- `State`
+- `%s::%s (Active) Posting a completion failed.`
+- `\"<%c%c%c%c %s> Data buffer %s - Maximum AXI latency: 0x%08x \" \"DATABUFFSTAT: 0x%08x AXI%s_Outstanding: 0x%08x.\" @%s:%d`
+- `(_dmaControllerProvider->_usePCTFIFOTimestampsOnRx & (_channelMask())) == 0`
+- `%s::%s Could not add the dma transfer time histogram reporter to the set.`
+- `121111121222121211121222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222111222111122111222222222222222222222222222222222222222221111111111111111111111111111111111112121111222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `%s::%s CB SRAM size cannot be 0`
+- `%s: %s::%s::%d: Could not disable critical LLT due to %s.\n`
+- `\"%llu %s:%u: REQUIRE failed: %s\" @%s:%d`
+- `#dma-channels-tx`
+- `(_dmaChannelCountTx > 0 || _dmaChannelCountRx > 0)`
+- `False`
+- `powerStateWillChangeTo_block_invoke`
+- `%s::%s %s->%s failed with %s.`
+- `_resumePostamble`
+- `site.AudioDMAChannel`
+- `%s::%s Could not fetch the DMAEventSource.`
+- `%s::%s %s fails with %s.`
+- `%s::%s RXCB SRAM size cannot be 0`
+- `crlltoff`
+- `IODeviceTree:/product`
+- `_programInterruptEnablesLegacy`
+- `\"%llu %s: \" \"Channel %p failed to clear interrupts with %s.\" @%s:%d`
+- `%s::%s Not ready to transfer (TD FIFO)`
+- `%s::%s Not ready to transfer (starter)`
+- `i8@?0`
+- `Anon`
+- `watxjitter`
+- `%s: %s::%s::%d: Client %p invokes %s.\n`
+- `%s::%s NULL ADMAC aperture.`
+- `_interruptCommandPool != nullptr`
+- `%s::%s Could not add TS jitter histogram reporter to larger group.`
+- `highjitterthresholdMATU`
+- `%s: %s::%s::%d: Running on fastsim.\n`
+- `tx->gatePower(AudioDMAChannel::kAudioDMAChannelPowerStateAvailable, softTransition) == kIOReturnSuccess`
+- `_programInterruptEnablesLegacy() == kIOReturnSuccess`
+- `%s::%s Disallowed in the new contract.`
+- `%s::%s Could not create an IES for the controller.`
+- `%s::%s Not ready to initialize due to nul IODMAES.`
+- `%s::%s Couldn't cast PCT FIFO aperture to an SPDS abstraction.`
+- `%s::%s Could not create a name matching dictionary for \"%s\".`
+- `\"%llu %s: \" \"Attempt to quiesce channels failed to %s.\" @%s:%d`
+- `AXI Operations`
+- `site.AudioDMATransferCommand`
+- `_applyInputDMAConfiguration`
+- `stateTransitionPreamble`
+- `/Library/Caches/com.apple.xbs/EDB52463-4048-495D-AB86-88E13335F3E1/TemporaryDirectory.lXLcfx/Sources/AudioDMAController/v5p0/Kext/AudioDMAController/AudioDMAController.cpp`
+- `dmaChannelSkipRxPtr[skip] < _maxDMAChannels`
+- `iFPGA`
+- `%s::%s Could not enable TX interrupts.`
+- `%s::%s Not ready to initialize due to nul configuration.`
+- `%s: %s::%s::%d: Clock scaler = %u, Averaged offset = %d, LTB = %llu GTB = %llu MCT = %llu MCT_OFF = %llu, MAT = %llu ABS_OFF = %llu.\n`
+- `%s::%s Could not set object in active command dictionary.`
+- `site.ADMAChannel::TransferRequest`
+- `ReadTxChannelBlockRegisterBits(axictl.arcache) == 0x2`
+- `_buildTransferDescriptors`
+- `%s::%s Resuming failed with %s.`
+- `deactivate_block_invoke`
+- `%s::%s No command available.`
+- `skip-channels-rx`
+- `%s::%s Could not add the MAL ACLK histogram reporter to the set.`
+- `%s::%s Could not clear out existing DMA IOMD due to %s.`
+- `callPlatformFunction_block_invoke`
+- `_timebasePositiveOffsetHistogramReporter != nullptr`
+- `%s::%s Not ready to transfer (reset)`
+- `_theMachine->canSleep()`
+- `%s: %s::%s::%d: Invalid power ordinal (%lu) seen for channel.\n`
+- `%s::%s Could not allocate channel exceptions tracer.`
+- `FinishDescriptors`
+- `_reportersSet != nullptr`
+- `%s::%s Could not locate proxy service named %s.`
+- `_allocateChannelResources`
+- `%s::%s %s not allowed in legacy.`
+- `Sleep -> Sleep`
+- `%s: %s::%s::%d: _dartMapper = %p\n`
+- `%s::%s Power registration failed.`
+- `True`
+- `Transferring -> GetConfig/ValidConfig/ValidFIFODepth/GetFIFODepth`
+- `Error`
+- `AudioDMAController`
+- `(_dmaChannelCountTx <= ADMAGenDefines::kMaximumChannelCount && _dmaChannelCountRx <= ADMAGenDefines::kMaximumChannelCount)`
+- `_outstandingAXIReadHistogramReporter != nullptr`
+- `%s::%s Could not add outstanding AXI read histogram reporter to the legend.`
+- `_resumePreamble`
+- `_activeTransferCommands->getCount() == 0`
+- `Soft`
+- `%s::%s Zero argument: apertureCount.`
+- `%s::%s Too large argument: apertureCount.`
+- `ClearIRQ`
+- `_programInterruptEnablesNewContract() == kIOReturnSuccess`
+- `reg`
+- `returnStatus == 0 `
+- `channel != nullptr`
+- `%s::%s Could not start channel.`
+- `%s::%s preparing the DMA command failed.`
+- `AudioDMAChannelStateMachine::AudioDMAChannelStateMachine(const char *, uint32_t, IORecursiveLock *)`
+- `Aggregate Count`
+- `%s::%s Could not add the TS jitter histogram reporter to the set.`
+- `static_cast<bool>(directionRoleString)`
+- `#dma-channels-rx`
+- `_dmaChannelCountTx + _dmaChannelCountRx == 1`
+- `%s::%s Getting FIFO depth failed.`
+- `RESM`
+- `%s: %s::%s::%d: rxchirqstat  = 0x%08x.\n`
+- `%s: %d: Length       = 0x%08x.\n`
+- `%s::%s EC stop request failed with %s.`
+- `%s::%s Pending descriptors queue appears corrupted.`
+- `%s::%s Could not create the dma transfer time histogram reporter.`
+- `%s::%s Too many DMA channels (Tx = %u, Rx = %u).`
+- `static_cast<bool>(serviceName)`
+- `%s: %s::%s::%d: irqState.raw = 0x%08x.\n`
+- `12121221`
+- `Could not start channel.`
+- `\"%llu %s:%s \" \"almost_full_threshold (%u) > channelBufferSize (%u).\" @%s:%d`
+- `%s: %s::%s::%d: %s: Pending command completion.\n`
+- `%s::%s setMemoryDescriptor fails with %s.`
+- `uint32_t AudioDMAChannelSharedResourceManager::allocateChannelBufferAperture(const char *, bool, uint32_t, uint32_t &)`
+- `#skip-channels-tx`
+- `returnValue == 0 `
+- `22221111112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `IsCSFIFONotEmpty()`
+- `Sleeping`
+- `static_cast<bool>(registryData)`
+- `%s::%s Interrupt destination index out of bounds.`
+- `site.IOInterruptQueueEventSource`
+- `%s::%s Client DMA command is NULL.`
+- `%s::%s Could not activate DART mapper.`
+- `%s: %s::%s::%d: Workaround was not applied due to %s.\n`
+- `AudioDMAChannelSharedResourceManager`
+- `B24@?0^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}8^{IONotifier=^^?i}16`
+- `%s::%s Suspending channel failed with %s.`
+- `/Library/Caches/com.apple.xbs/EDB52463-4048-495D-AB86-88E13335F3E1/TemporaryDirectory.lXLcfx/Sources/AudioDMAController/v5p0/Kext/AudioDMAChannel/AudioDMAChannelStateMachine.cpp`
+- `channelBufferSRAMAllocBaseTx < channelBufferSRAMSizeTx`
+- `%s::%s Unable to cast reg entry to ASIO Global.`
+- `%s::%s _addExternalPowerProvider failed.`
+- `%s::%s Validating FIFO depth failed.`
+- `%s.%s`
+- `%s::%s Invalid interrupt destination index.`
+- `%s::%s initForPM failed for channel with %s.`
+- `tx->getPowerState() == AudioDMAChannel::kAudioDMAChannelPowerStateSuspended`
+- `_programInterruptEnablesNewContract`
+- `dma-channels`
+- `IOClass`
+- `%s::%s Could not generate scatter-gather segment list.`
+- `%s::%s Could not set new FIFO depth.`
+- `%s::%s CB SRAM size property has an invalid length.`
+- `%s::%s Configuration at supplied index is not valid.`
+- `%s::%s Channel index is OOB.`
+- `%s::%s The next pending command was nul.`
+- `%s::%s Not ready to get configuration`
+- `Transition not allowed.`
+- `static_cast<bool>(_criticalLLTFunction)`
+- `unknown function`
+- `%s::%s Could not clear interrupts.`
+- `%s::%s Aperture not set at time of operation.`
+- `%s::%s A first transfer is already in progress.`
+- `irq-destination-index`
+- `Channel Count`
+- `Interrupts`
+- `%s::%s Too many segments.`
+- `%s::%s We're stopped now.`
+- `%s: %s::%s::%d: Controller %s is attempt to suspend failed with %s.\n`
+- `Ready -> Ready`
+- `GetConfig -> Transfer (Implied)`
+- `%s: %s::%s::%d: CB SRAM size property has an invalid length = %u\n`
+- `_admacTxChannels[channel] != nullptr`
+- `%s::%s Could not create a matching dictionary for the proxy.`
+- `channel-buffer-alloc-base-rx`
+- `powerStateOrdinal < kAudioDMAControllerPowerStateInvalid`
+- `static_cast<bool>(_controllerIES)`
+- `processChannelOperation(AudioDMAChannelStateMachine::ADMACOPER_Finish) == kIOReturnSuccess`
+- `rgMoniker != nullptr`
+- `SetConfig -> Idle (Implied)`
+- `%s::%s No skip list found for Tx.`
+- `%s::%s Could not allocate the machine's lock.`
+- `%s::%s Cannot disable channel.`
+- `%s::%s StartTransfer fails with %s.`
+- `(_dmaControllerProvider->_usePCTFIFOTimestampsOnTx & (_channelMask())) == 0`
+- `%s::%s Registering interrupt callouts failed.`
+- `%s::%s Invalid power ordinal.`
+- `processChannelOperation(AudioDMAChannelStateMachine::ADMACOPER_ProcessMoreTransfers) == kIOReturnSuccess`
+- `transferCommandAlias->getTransferDescriptorAtIndex(idx)->TransDescID == pcs.TransDescID`
+- `\"%llu %s: \" \"_interruptDestinationIndex = %u is invalid.\" @%s:%d`
+- `%s: %s::%s::%d: %s: Active command completion.\n`
+- `_handleCompletionNewContract`
+- `%s::%s Could not add the DMA C2P histogram reporter to the set.`
+- `Disengaged`
+- `\"%llu %s:%s \" \"Incoming length (%u) is too short (minimum = %u).\" @%s:%d`
+- `%s::%s Command queue is empty.`
+- `IOReportLegendPublic`
+- `%s::%s Could not suspend DMA channel.`
+- `_fetchDeviceRegisterApertures`
+- `resumePower_block_invoke`
+- `%s: %d: \tTDID       = 0x%02x.\n`
+- `InterruptCommand`
+- `%s::%s Audio DMA transfer command is NULL.`
+- `#skip-channels-rx`
+- `setWorkLoop`
+- `%s: %s::%s::%d: Number of segments: %u. segments->address = 0x%016llx segments->length = 0x%016llx.\n`
+- `_processCompletionInterrupt`
+- `Complete -> Stopping`
+- `_calibrateTimeOffsets`
+- `_admacRxChannels[channel]->resetChannel() == kIOReturnSuccess`
+- `%s: %s::%s::%d: %s: Stopping transfer (%u).\n`
+- `AssertMacros: %s, %s file: %s, line: %d, value: %lld\n`
+- `%s::%s Could not locate a service named \"%s\".`
+- `ced-ssw-service`
+- `%s::%s Could not allocate transfer cmd %u.`
+- `%s::%s Could not add exception count reporter to larger group.`
+- `isOperationAllowed`
+- `%s::%s NULL argument: chApertures.`
+- `GetConfig -> Idle (Implied)`
+- `%s::%s Setting DMA configuration failed.`
+- `\"%llu %s: \" \"Suspend/Resume reference counter is about to overrun. Too many retains/clients ?\" @%s:%d`
+- `%s::%s Could not add the positive offset histogram reporter to the legend.`
+- `_setPowerStateGated`
+- `i16@?0^{AudioDMAChannel=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}^{IOCommandGate}B^{IOCommandPool}{queue_entry=^{queue_entry}^{queue_entry}}{?=B^{TransferRequest}}^{IOCommandPool}II^{OSDictionary}{queue_ent`
+- `audio-dma-channel`
+- `%s::%s Could not allocate TD builder.`
+- `_handleCompletionNewContract() == kIOReturnSuccess`
+- `refcon != nullptr`
+- `%s::%s Could not allocate transfer command pool.`
+- `%s::%s Could not add IES to workloop.`
+- `%s::%s Supplied proxy service name is NUL.`
+- `%s::%s Only new-contracted instances are permitted to skip proxy references at controller.`
+- `ch != nullptr`
+- `Invalid operation.`
+- `%s: %d: %s[CSM]: Transition \"%s\" not allowed from state \"%s\".\n`
+- `channelBufferSRAMSizeRx != 0`
+- `FastSim`
+- `result == kIOReturnSuccess`
+- `%s::%s Checking if DMA configuration is valid failed.`
+- `logInterruptStatusBits`
+- `%s::%s Too few segments.`
+- `_createReporters`
+- `%s::%s Could not initialize proxy / EC.`
+- `%s: %s::%s::%d: channelBufferSRAMSizeRx = %u\n`
+- `%s::%s Too many DMA channels (Tx = %u, Rx = %u) for a self-actuated instance.`
+- `static_cast<bool>(theService)`
+- `\"%s: Invalid IRQ destination index %u.\" @%s:%d`
+- `site.AudioDMAChannelConfiguration`
+- `%s::%s Could not allocate suspend CG.`
+- `Rd`
+- `%s::%s Could not add the exception reporter to the set.`
+- `%s::%s Could not commit updated DMA channel configuration.`
+- `Underrun/Overrun`
+- `ies->getIntIndex() == 0`
+- `channelReference != nullptr`
+- `%s::%s Could not configure a reporter in the main set.`
+- `Idle -> Idle (Error)`
+- `%s::%s Routine is incompatible with the new contract.`
+- `publishBelowNewContract`
+- `%s: %d: \tAttr       = 0x%02x.\n`
+- `init`
+- `IOInterruptQueueEventSource.cpp`
+- `theCommand->clearMemoryDescriptor() == kIOReturnSuccess`
+- `%s::%s Could not allocate EC proxy service buffer.`
+- `TD/CS FIFO Error`
+- `setDMAConfig`
+- `%s: %s::%s::%d: Power cannot be suspended yet.\n`
+- `%s::%s The supplied channel handle is out of bounds for this instance.`
+- `setDMACommand`
+- `/Library/Caches/com.apple.xbs/EDB52463-4048-495D-AB86-88E13335F3E1/TemporaryDirectory.lXLcfx/Sources/AudioDMAController/v5p0/Kext/Interrupt/IOInterruptQueueEventSource.cpp`
+- `%s::%s Failed to start superclass.`
+- `%s::%s Could not create the MAL ACLK histogram reporter.`
+- `Exceptions`
+- `Complete -> Transferring`
+- `function-vote_crit_llt_mode`
+- `%s::%s Could not deduce function signature`
+- `%s::%s Could not update a reporter in the main set.`
+- `%s: %s::%s::%d: kids = %p\n\n`
+- `%s: %s::%s::%d: Suspended channel successfully.\n`
+- `%s::%s Could not fetch command size/offset (unprepared ?)`
+- `Introspect`
+- `_sharedResourceManager != nullptr`
+- `tfpmem`
+- `_admacRxChannels[channel] != nullptr`
+- `rx->getPowerState() == AudioDMAChannel::kAudioDMAChannelPowerStateSuspended`
+- `_admaGlobalRegisterBlock->timebase1.valid == 1`
+- `%s: %d: Misc         = 0x%08x.\n`
+- `\"%llu %s:%s:%s:%u: REQUIRE failed: %s\" @%s:%d`
+- `%s::%s Cannot reset channel now.`
+- `%s::%s No free transfer commands available.`
+- `%s::%s Could not init transfer cmd %u.`
+- `%s::%s Could not fetch a pointer for the final FIFO depth.`
+- `ReadChannelBlockRegisterBits(isTx, csfifostat.empty) == 0`
+- `site.InputDMAConfiguration`
+- `site.T`
+- `Ready -> Initializing`
+- `Idle -> SetConfig`
+- `Idle -> First Transfer`
+- `%s::%s Bad provider.`
+- `%s::%s Both DMA channel counts are 0.`
+- `admac-evolution`
+- `registryData != nullptr`
+- `%s::%s Could not fetch a matching dictionary.`
+- `%s::%s full-size can't be smaller than zero-size.`
+- `Uninitialized -> Uninitialized`
+- `service-exclave_proxy`
+- `SUSP`
+- `\"%llu %s: \" \"Could not resume controller (%s). Further operation not guaranteed.\" @%s:%d`
+- `%s::%s Could not add outstanding AXI write histogram reporter to the legend.`
+- `%s::%s Could not Initialize DMA channel.`
+- `_ChannelEnDisSpinlock != nullptr`
+- `providerName != nullptr`
+- `_initializeControllerGated`
+- `\"%llu %s: \" \"sPS(1) sees an unexpected %u external devices off (0 expected).\" @%s:%d`
+- `result == 0 `
+- `%s::%s Initiating transfer failed.`
+- `publishBelowLegacyContract`
+- `%s: %s::%s::%d: %s:Initialized.\n`
+- `%s::%s Could not allocate channel resources - %s`
+- `\"<%llu>/%s/%s: SRAM carveout overrun (16B units): Base = 0x%08x, Req = 0x%08x, FIFO = 0x%08x.\" @%s:%d`
+- `Idle -> Idle (Stop-before-deactivate)`
+- `incomingData != nullptr`
+- `returnStatus == 0`
+- `%s: %s::%s::%d: txchirqstat  = 0x%08x.\n`
+- `%s::%s CSM could not be allocated.`
+- `channelBufferSRAMSizeTx != 0`
+- `EscalationDetectable`
+- `%s::%s Could not clear RX interrupts.`
+- `%s::%s Could not locate channel.`
+- `1211111212221212112111211211111121112222222222222222222222222222222221111112212112221212222222111112222222211222`
+- `%s::%s Supplied configuration is invalid,`
+- `Idle`
+- `%s::%s %s unallowed with legacy contract.`
+- `inChannelIndex < _maxDMAChannels`
+- `%s::%s Not enough transfer slots in TD FIFO.`
+- `returnStatus != kIOReturnTimeout`
+- `_stopTransfer`
+- `IOReportLegend`
+- `CS FIFO Full`
+- `AudioDMAChannelStateMachine`
+- `Initializing -> Idle (Automatic)`
+- `Critical LLT`
+- `transferCommandAlias != nullptr`
+- `First Transfer -> Transferring`
+- `Sleep`
+- `(null)`
+- `%s::%s Could not allocate channel configuration object.`
+- `processChannelOperation(AudioDMAChannelStateMachine::ADMACOPER_ProcessDone) == kIOReturnSuccess`
+- `\"%llu %s:%s \" \"TDCS FIFO error - FIFOSTAT: TD: 0x%08x CS: 0x%08x.\" @%s:%d`
+- `Initializing`
+- `txpctts`
+- `rx->gatePower(AudioDMAChannel::kAudioDMAChannelPowerStateAvailable, softTransition) == kIOReturnSuccess`
+- `%s::%s Could not add controller channel to the interrupt count reporter.`
+- `%s::%s Could not add positive offset histogram reporter to the legend.`
+- `transferCommandAlias->getTransferDescriptorAtIndex(idx)->TransDescID == cs.TransDescID`
+- `Stopping`
+- `Could not allocate channel states tracer.`
+- `ProcessMoreDescriptors`
+- `skip-channels-tx`
+- `debugchmask`
+- `%s: %s::%s::%d: initDMAChannel seen from provider = %p, ES = %p, DMAIndex = %u, inReqIndex = %u\n`
+- `ReadChannelBlockRegisterBits(isTx, pctfifostat.empty) == 0`
+- `%s::%s Could not deactivate DMA channel.`
+- `%s: %s::%s::%d: Could not fetch the Tx CB SRAM allocation base for this instance.\n`
+- `%s::%s Could not fetch a pointer to the IODMACommand.`
+- `%s: %s::%s::%d: Incoming IODMACommand had not been prepared.\n`
+- `First Transfer -> GetConfig/ValidConfig/ValidFIFODepth/GetFIFODepth`
+- `_parseBootArgs`
+- `runBIST`
+- `_admacTxChannels[channelIndex]->gatePower( AudioDMAChannel::kAudioDMAChannelPowerStateAvailable, softTransition) == kIOReturnSuccess`
+- `%s::%s Could not enable RX interrupts.`
+- `AudioDMATransferCommand.cpp`
+- `212221`
+- `AudioDMAChannel`
+- `AudioDMAChannel.cpp`
+- `site.ADMATransferDescriptorBuilder`
+- `_channelIES->isInterruptPoolFull()`
+- `MaxMemAxsLatHistogram`
+- `%s::%s Adding provider %s failed with %s.`
+- `%s: %s::%s::%d: Register aperture: VA = 0x%016llx PA = 0x%016llx.\n`
+- `%s: %s::%s::%d:  %s: %s is set to %s.\n`
+- `warxjitter`
+- `_suspended == false`
+- `%s::%s Could not enable interrupts.`
+- `\"%llu %s: \" \"Unable to allocate a sym for %s.\" @%s:%d`
+- `tfdmadis`
+- `%s: %s::%s::%d: Running on iFPGA.\n`
+- `%s: %d: \n`
+- `superInit`
+- `powerStateDidChangeTo_block_invoke`
+- `%s::%s Setting FIFO depth failed.`
+- `%s::%s CSM resource allocation failed with %s.`
+- `static_cast<bool>(_lastNChannelStates)`
+- `transfer_block_invoke`
+- `Transfer`
+- `%s::%s Could not obtain an instance of the DART mapper and no EC proxy service data object seen.`
+- `_clockScaler >= 1`
+- `%s::%s Cannot set operational apertures.`
+- `Complete -> Idle`
+- `ret == 0 `
+- `processChannelOperation( AudioDMAChannelStateMachine::ADMACOPER_ProcessMoreTransfers) == kIOReturnSuccess`
+- `DMA C2P`
+- `static_cast<bool>(matchingDict)`
+- `product-name`
+- `%s::%s Could not clear TX interrupts.`
+- `Controller Count`
+- `%s: %s::%s::%d: Child Name %s\n\n`
+- `(_dmaControllerProvider->_usePCTFIFOTimestampsOnTx & (_channelMask())) != 0`
+- `Hard`
+- `channel-is-development-only`
+- `Direction`
+- `%s::%s Could not attachToParent.`
+- `static_cast<bool>(channelBufferSize)`
+- `%s::%s Could not add channel \"%s\" to the exception reporter.`
+- `allowed`
+- `\"%llu %s:%s \" \"Unknown interrupt: 0x%08x.\" @%s:%d`
+- `_LocalTimebaseSpinlock != nullptr`
+- `Configure`
+- `%s::%s Fetching device register apertures failed.`
+- `%s::%s Could not fetch the CB SRAM for this instance.`
+- `%s::%s No skip list found for Rx.`
+- `%s::%s Could not read the DART's SID.`
+- `%s: %s::%s::%d: Rx channel %02u failed to init power.\n`
+- `%s::%s Resuming channel failed with %s.`
+- `IOProviderClass`
+- `start`
+- `_postCompletion`
+- `static_cast<bool>(theDMACommand)`
+- `Stopping -> Stopping`
+- `function != nullptr`
+- `BULK`
+- `returnStatus == kIOReturnSuccess`
+- `%s::%s EC proxy has already been registered as %s.`
+- `\"%llu %s: \" \"%s: Could not allocate a buffer-base allocation lock!\" @%s:%d`
+- `Transferring`
+- `Uninitialized -> Ready`
+- `_owner != nullptr`
+- `irqCmd != nullptr`
+- `%s::%s transfer_threshold (%u) <= almost_empty_threshold (%u).`
+- `%s: %s::%s::%d: Exclaves are disabled, and this instance appears to need them to work.\n`
+- `1211121111221211112122222222222222222222222222222222222222222222222222222222222222222`
+- `gatePower`
+- `%s::%s Could not allocate active transfer commands LUD.`
+- `static_cast<bool>(_liveTransferRequest.tr)`
+- `%s::%s Resetting a channel failed.`
+- `%s::%s Timed out when clearing out pending descriptors. Channel is unusable.`
+- `Stopping -> Idle`
+- `%s: %s::%s::%d: _channelECProxy = %p _dartMapperSID = %u\n`
+- `specBootArg != nullptr`
+- `%s::%s Cannot clear interrupts due to \"%s\".`
+- `static_cast<bool>(evolvedCommand)`
+- `\"%llu %s:%s \" \"transferCommandAlias == nullptr for TDID:%s\" @%s:%d`
+- `\"%llu %s: \" \"[%s] Requested buffer size of 0x%08x exceeds previously allocated \" \"size of 0x%08x.\" @%s:%d`
+- `maskpanics`
+- `%s::%s _gatePower(kAudioDMAControllerPowerStateAvailable) failed with %s.`
+- `%s::%s Could not add the interrupt ES to the main workloop.`
+- `bool AudioDMAController::_filterInterruptAction(IOFilterInterruptEventSource *)`
+- `%s::%s Couldn't cast TD FIFO aperture to an SPDS abstraction.`
+- `Oct 13 2026`
+- `setFIFODepth`
+- `Data Buffer Full`
+- `Transferring -> Stopping`
+- `_interruptCounterReporter != nullptr`
+- `setActive`
+- `_reportersSet->getCount() <= kMaximumAllowedReporters`
+- `Reset`
+- `%s::%s Supplied DMA command is nul.`
+- `aPSC`
+- `%s: %s::%s::%d: Could not enable critical LLT due to %s.\n`
+- `transferList != nullptr`
+- `SetRoleDirection`
+- `channel-buffer-alloc-base-tx`
+- `debug`
+- `initForPM`
+- `!_usesNewContract`
+- `startDMACommand`
+- `#dma-channels`
+- `%s::%s Skip entry at %u is OOB (%u).`
+- `inDMAConfiguration != nullptr`
+- `SetApertures`
+- `%s::%s Too many skips (%u >= %u)`
+- `%s: %s::%s::%d: Running on silicon.\n`
+- `%s::%s initForPM for %s%s failed with %s.`
+- `%s: %d: AddressHigh  = 0x%08x.\n`
+- `false`
+- `%s::%s Not ready to transfer (repeat)`
+- `%s::%s Could not register power states.`
+- `%s::%s _gatePower(kAudioDMAControllerPowerStateSuspended) failed with %s.`
+- `%s: %s::%s::%d: (%s -) Suspended channel successfully.\n`
+- `Uninitialized`
+- `Complete`
+- `operation < ADMACOPER_CountOf`
+- `%s::%s Could not allocate %s.`
+- `RX`
+- `%s::%s Transfer Descriptor FIFO is full.`
+- `AXI Read/Write Error`
+- `%s::%s Could not fetch the role for this instance.`
+- `%s::%s Stopping transfer failed.`
+- `dmaConfiguration != nullptr`
+- `%s::%s Wrong or null provider.`
+- `%s::%s Could not add MAL ACLK histogram reporter to larger group.`
+- `free`
+- `returnValue != false`
+- `TX`
+- `\"%llu %s:%s \" \"transfer_threshold (%u) > channelBufferSize (%u).\" @%s:%d`
+- `%s::%s Building transfer descriptors failed.`
+- `%s::%s %s unallowed with new contract.`
+- `IOInterruptQueueEventSource.h`
+- `%s: %s::%s::%d: lookup transferDescriptorID = %08x\n`
+- `Wr`
+- `Ready`
+- `initDMAChannel_block_invoke`
+- `true`
+- `%s::%s (Pending) Posting a completion failed.`
+- `%s::%s Cannot set configuration at this time.`
+- `Idle -> Sleep`
+- `Stopped`
+- `%s::%s 'theService' is a nullptr.`
+- `v16@?0^{IOTimerEventSource=^^?i^{IOEventSource}^{OSObject}^?B^{IOWorkLoop}^v^{ExpansionData}^vQ^{ExpansionData}}8`
+- `_gatePower`
+- `%s: %s::%s::%d: Channel already suspended.\n`
+- `setDirectionAndRole`
+- `%s::%s Could not create the exception counts reporter.`
+- `activate_block_invoke`
+- `_timebaseNegativeOffsetHistogramReporter != nullptr`
+- `AXI Write`
+- `%s: %s::%s::%d: Resumed channel successfully.\n`
+- `%s::%s Bad input paramter (configuration).`
+- `_signalInterruptAvailable`
+- `%s::%s We're not in the right state (%s) to transfer.`
+- `Data Buffer Empty`
+- `AudioDMAChannelSharedResourceManager::AudioDMAChannelSharedResourceManager(const char *, uint32_t, uint32_t, uint32_t, uint32_t)`
+- `%s::%s Invalid power ordinal %lu.`
+- `_trackGetCommand`
+- `%s::%s EC enqueue request failed with %s.`
+- `transferCommandAlias->getTransferDescriptorAtIndex(0)->TransDescID == pcs.TransDescID`
+- `proxyMatchingDict != nullptr`
+- `channelBufferSRAMAllocBaseRx < channelBufferSRAMSizeRx`
+- `%s: %s::%s::%d: Allocated suspend ARMFunction %p.\n`
+- `Timebase Offset`
+- `success`
+- `stop`
+- `%s::%s Too many active commands.`
+- `%s::%s almost_full_threshold (%u) <= transfer_threshold (%u).`
+- `%s::%s Could not allocate channel jitter tracer.`
+- `%s::%s Could not fetch a pointer for the FIFO depth.`
+- `%s::%s Requested length (%llu) + offset (%llu) violates preparedOffset (%llu) + preparedLength (%llu).`
+- `\"%llu %s:%s \" \"High jitter (%llu > %llu) seen.\" @%s:%d`
+- `Transferring -> Complete`
+- `ReadRxChannelBlockRegisterBits(axictl.awcache) == 0x2`
+- `%s::%s Could not get an iterator to the active commands dict.`
+- `%s: %s::%s::%d: 0 bytes being returned in a non-stopping context.\n`
+- `First Transfer -> Stopping`
+- `cltroff`
+- `%s::%s Could not fetch the DMA configuration at supplied index.`
+- `(channelIndexNoOffset >> 1) <= (_isTx(channelIndexNoOffset) ? _dmaChannelCountTx : _dmaChannelCountRx)`
+- `setTransferListAndSegmentCount`
+- `%s::%s Zero argument: chApertures[N].`
+- `Stop`
+- `site.AudioDMAChannelSharedResourceManager`
+- `%s@%s`
+- `%s::%s Could not fetch the DMAConfiguration.`
+- `%s: %s::%s::%d: channelBufferSRAMSizeTx = %u\n`
+- `stopDMACommand`
+- `withRegistryEntry`
+- `%s::%s Failed to initialize proxy with %s.`
+- `%s::%s CED activation failed with %s.`
+- `%s::%s incoming DMA command is nul.`
+- `%s: %s::%s::%d: %s: Segment with TDID %02x created.\n`
+- `IsPCTFIFONotEmpty()`
+- `%s::%s TXCB SRAM size cannot be 0`
+- `%s::%s Could not apply new FIFO configuration.`
+- `\"%llu %s: \" \"%s: Could not allocate a client dictionary!\" @%s:%d`
+- `%s::%s The main workloop is NULL.`
+- `self-actuated`
+- `%s: %s::%s::%d: irqstat      = 0x%08x.\n`
+- `(_dmaControllerProvider->_usePCTFIFOTimestampsOnRx & (_channelMask())) != 0`
+- `Rx`
+- `_dmaChannelSkipCountTx < _maxDMAChannels`
+- `dmaChannelSkipTxPtr[skip] < _maxDMAChannels`
+- `%s::%s Mapper (%p) *and* exclave proxy (%p) cannot coexist on an instance.`
+- `tfaxiburst`
+- `_initializeControllerGated() == kIOReturnSuccess`
+- `%s::%s Could not add channel channel to the interrupt count reporter.`
+- `%s::%s Couldn't cast channel aperture to an SPDS abstraction.`
+- `Tx`
+- `Sleep -> GetConfig/ValidConfig/ValidFIFODepth/GetFIFODepth`
+- `channel-buffer-allocation`
+- `%s::%s External power manager was not allocated.`
+- `super::init() failed`
+- `%s::%s Could not fetch descriptor set for command.`
+- `%s::%s No descriptor available in transfer command.`
+- `%s::%s Global timebase has NOT been initialized.`
+- `%s::%s Not ready to quiesce.`
+- `setOutput != false`
+- `processChannelOperation( AudioDMAChannelStateMachine::ADMACOPER_Finish) == kIOReturnSuccess`
+- `Unknown Interrupt`
+- `static_cast<bool>(_externalPowerManager)`
+- `_admaInterruptAction`
+- `Timebase Offset (Negative)`
+- `%s::%s Could not allocate IES.`
+- `processChannelOperation`
+- `TSJitterHistogram`
+- `%s::%s Not ready to initialize due to nul channel reference.`
+- `_ioReportLegend != nullptr`
+- `%s::%s Could not create the DMA C2P histogram reporter.`
+- `DMACMPLHistogram`
+- `%s::%s Rx CB SRAM base cannot be larger than size.`
+- `highjitterpanic`
+- `%s::%s Could not add interrupt counter reporter to the legend.`
+- `empty == true`
+- `\"%llu %s:%s \" \"Could not resume channel successfully.\" @%s:%d`
+- `%s: %s::%s::%d: (Soft -) Resumed channel successfully.\n`
+- `%s::%s Couldn't cast CS FIFO aperture to an SPDS abstraction.`
+- `MaxAccessLatencyACLK`
+- `ChannelTimestampJitter`
+- `\"%llu %s: \" \"Could not quiesce channel %s due to %s.\" @%s:%d`
+- `%s: %s::%s::%d: ARMFunction (0x%08x) invokes %s.\n`
+- `defang_reset_TO_check`
+- `%s::%s Could not reset the CSM.`
+- `\"%llu %s:%s \" \"AXI write error - AXIERRSTAT: 0x%08x AXIERRLOG: 0x%08x.\" @%s:%d`
+- `rxpctts`
+- `logThisDescriptor`
+- `site.InterruptCommand`
+- `%s::%s Failed to reset channel on RESUME.`
+- `command != nullptr`
+- `preIncrementCommands < kMaximumOutstandingInterrupts`
+- `Unable to allocate nub named %s.\n`
+- `%s::%s CSM has already been allocated.`
+- `ISOC`
+- `Excessive Jitter`
+- `Idle -> Idle`
+- `%s::%s Could not fetch the interrupt destination index for this instance.`
+- `%s::%s Could not fetch a pointer for the valid configuration boolean.`
+- `\"%llu %s: \" \"Could not allocate OSNumber for ID = %s.\" @%s:%d`
+- `FirstTransfer`
+- `Wake`
+- `Atomic`
+- `23:37:48`
+- `_admacRxChannels[channelIndex]->gatePower( AudioDMAChannel::kAudioDMAChannelPowerStateAvailable, softTransition) == kIOReturnSuccess`
+- `%s: %d: AddressLow   = 0x%08x.\n`
+- `overrun`
+- `%s::%s Could not create the TS jitter histogram reporter.`
+- `AudioDMAController.cpp`
+- `normalInterruptOccurred`
+- `preDecrementCommands > 0`
+- `%s: %s::%s::%d: Could not suspend channel successfully.\n`
+- `_startTransfer`
+- `First Transfer -> Complete`
+- `_getExecutionPlatform`
+- `%s: %s::%s::%d: ADMAC revision being driven: 0x%08x. Assigned DART SID = %02u.\n`
+- `AudioDMATransferCommand`
+- `%s::%s Could not translate stream type (%s).`
+- `tfperdis`
+- `Engaged`
+- `void AudioDMAController::_admaInterruptAction(IOInterruptEventSource *, int32_t)`
+
+**[__TEXT.__os_log]**
+
+- `%s: Legacy DMA done for a %s  transfer.`
+- `channel_handle        = 0x%08x`
+- `fifo_start_trigger    = 0x%08x`
+- `Skipping child named %s`
+- `Polling for ~%llu milliseconds.`
+- `%s: inCb (%p) returned %s.`
+- `flags                 = 0x%08x`
+- `%s: Could not construct an AXI operations timer ES.`
+- `Controller %s is fully suspended now.`
+- `%s::%s - inCap = 0x%08lx, inOrd = %lu, client = %s. Ack'd.`
+- `dma_timeout           = 0x%08x`
+- `fifo_stop_trigger     = 0x%08x`
+- `Service named %s is an ADMAC CED/SSW implementation.`
+- `%s::%s - inOrd = %u, Ack'd.`
+- `%s is not ready to suspend yet with state = %s.`
+- `Could not disable critical LLT due to %s.`
+- `%s: Suspended. Has just initialized = %s.`
+- `%s invoked.`
+- `Could not enable critical LLT due to %s.`
+- `dma_fifo_size         = 0x%08x`
+- `%s::%s - inCap = 0x%08lx, inOrd = %lu, client = %s. Already usable.`
+- `%s: Cannot suspend at this time.`
+- `Critical LLT function enable request failed with %s.`
+- `Critical LLT function disable request failed with %s.`
+- `%s: One-shot DMA done for a %s  transfer.`
+- `dev_xfer              = 0x%08x`
+- `Controller %s is not ready to suspend yet.`
+- `Service named %s is not an ADMAC CED/SSW implementation.`
+- `%s::%s - inCap = 0x%08lx, inOrd = %lu, client = %s. Deferral of %u uS request.`
+- `%s::%s - inCap = 0x%08lx, inOrd = %lu, client = %s. Usable request.`
+- `%s: invoked CED/SSW deactivate and saw status 0x%08x.`

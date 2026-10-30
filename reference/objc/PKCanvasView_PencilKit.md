@@ -1,0 +1,222 @@
+# `PKCanvasView`
+
+- Image: [`/System/Library/Frameworks/PencilKit.framework/PencilKit`](../userland/System__Library__Frameworks__PencilKit.framework__PencilKit.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `UIScrollView`
+- Protocols: `PKSelectionInteractionDelegate`, `PKTiledViewDelegate`, `PKRulerHostingDelegate`, `PKToolPickerObserverPrivate`, `PKToolPickerObserver`
+- 15 instance variables, 43 properties, 143 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"PKTiledView" _tiledView;
+@"PKTool" _tool;
+@"PKCanvasAttachmentView" _pageView;
+@"UIScrollView" _fixedPixelSizeScrollView;
+@"UIView" _fixedPixelSizeScrollViewWrapper;
+{?="delegateCanvasViewDrawingDidChange"b1"delegateCanvasViewDidFinishRendering"b1"delegateCanvasViewDidBeginDrawing"b1"delegateCanvasViewDidEndDrawing"b1"delegateCanvasViewDidBeginUsingTool"b1"delegateCanvasViewDidEndUsingTool"b1"delegateCanvasViewSelectionDidChange"b1"delegateCanvasViewBeganStroke"b1"delegateCanvasViewUpdatedStroke"b1"delegateCanvasViewEndedStroke"b1"delegateCanvasViewEndedStrokeShapeStrokes"b1"delegateCanvasViewCancelledStroke"b1"delegateShouldBeginDrawingWithTouch"b1"delegateCanvasViewDidChangeHiddenState"b1"delegateCanvasViewWillBeginDrawing"b1"delegateCanvasViewRulerHostingView"b1"delegateCanvasViewHoverShouldBeActiveAt"b1"delegateCanvasViewWillCreateSnapshot"b1"delegateCanvasViewSnapshottingDisabled"b1"delegateCanvasViewDidRefineStrokes"b1"delegateCanvasViewScratchOutStrokes"b1} _canvasViewFlags;
+B __isSwiftUICanvas;
+B _disableWideGamut;
+q _maximumSupportedContentVersion;
+@"NSHashTable" __observers;
+@"UIView" _contentView;
+@"PKToolPicker" __swiftUIToolPicker;
+@"<PKRulerHostingDelegate>" _rulerHostingDelegate;
+{CGAffineTransform="a"d"b"d"c"d"d"d"tx"d"ty"d} _drawingTransform;
+{CGAffineTransform="a"d"b"d"c"d"d"d"tx"d"ty"d} _liveDrawingStrokeTransform;
+```
+
+## Properties
+
+```
+@property (T@"NSHashTable",&,N,V__observers) _observers;
+@property (T@"UIView",R,N,V_contentView) contentView;
+@property (T@"PKTiledView",R,N) _tiledView;
+@property (T@"CAMetalLayer",R,N) _eraserMaskMetalLayer;
+@property (T@"PKDrawing",C,N) nonNullDrawing;
+@property (T@"PKInk",&,N) ink;
+@property (Tq,N) _maxFileFormatVersion;
+@property (TB,N,S_setDisableTileRendering:) _disableTileRendering;
+@property (T@"<UICoordinateSpace>",&,N,S_setContentCoordinateSpace:) _contentCoordinateSpace;
+@property (TB,N,S_setDrawBitmapEraserMask:) _drawBitmapEraserMask;
+@property (TB,N,S_setCombiningStrokesEnabled:) _combiningStrokesEnabled;
+@property (T@"UIHoverGestureRecognizer",R,N) _hoverGestureRecognizer;
+@property (TB,N) _disableUndoManager;
+@property (TB,N,V__isSwiftUICanvas) _isSwiftUICanvas;
+@property (T@"PKToolPicker",N,V__swiftUIToolPicker) _swiftUIToolPicker;
+@property (TB,N,V_disableWideGamut) disableWideGamut;
+@property (TB,N) rulerEnabled;
+@property (T@,W,N) drawingUndoTarget;
+@property (T:,N) drawingUndoSelector;
+@property (TB,D,N) predictionDisabled;
+@property (T@"UIView",R,N) selectionView;
+@property (T@"UIView",R,N) rulerView;
+@property (T@"<PKRulerHostingDelegate>",W,N,V_rulerHostingDelegate) rulerHostingDelegate;
+@property (TB,N) supportsCopyAsText;
+@property (T{CGSize=dd},R,N) _fixedPixelSize;
+@property (T{CGAffineTransform=dddddd},N,V_drawingTransform) drawingTransform;
+@property (T{CGAffineTransform=dddddd},N,V_liveDrawingStrokeTransform) liveDrawingStrokeTransform;
+@property (T{CGAffineTransform=dddddd},R,N) strokeTransform;
+@property (T@"UIGestureRecognizer",R,N) _drawingGestureRecognizer;
+@property (T@"<PKCanvasViewDelegate>",W,D,N) delegate;
+@property (T@"PKDrawing",C,N) drawing;
+@property (T@"PKTool",C,N) tool;
+@property (TB,N,GisRulerActive) rulerActive;
+@property (T@"UIGestureRecognizer",R,N) drawingGestureRecognizer;
+@property (TB,N,GisDrawingEnabled) drawingEnabled;
+@property (TB,N) allowsFingerDrawing;
+@property (TQ,N) drawingPolicy;
+@property (Tq,N,V_maximumSupportedContentVersion) maximumSupportedContentVersion;
+@property (T@"NSSet",C,N) selectedStrokeIDs;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[PKCanvasView drawing];
+-[PKCanvasView paste:];
+-[PKCanvasView setPredictionDisabled:];
+-[PKCanvasView didMoveToWindow];
+-[PKCanvasView setMaximumZoomScale:];
+-[PKCanvasView predictionDisabled];
+-[PKCanvasView setOpaque:];
+-[PKCanvasView _addObserver:];
+-[PKCanvasView layoutSubviews];
+-[PKCanvasView selectionView];
+-[PKCanvasView _pinchGestureRecognizer];
+-[PKCanvasView hitTest:withEvent:];
+-[PKCanvasView _observers];
+-[PKCanvasView setBackgroundColor:];
+-[PKCanvasView setDrawing:];
+-[PKCanvasView setDelegate:];
+-[PKCanvasView strokeTransform];
+-[PKCanvasView _rendererControllerPixelSize];
+-[PKCanvasView _metalViewDrawableSize];
+-[PKCanvasView ink];
+-[PKCanvasView contentView];
+-[PKCanvasView setContentSize:];
+-[PKCanvasView set_fixedPixelSize:];
+-[PKCanvasView traitCollectionDidChange:];
+-[PKCanvasView _fixedPixelSize];
+-[PKCanvasView _removeObserver:];
+-[PKCanvasView setInk:];
+-[PKCanvasView tool];
+-[PKCanvasView canBecomeFirstResponder];
+-[PKCanvasView initWithFrame:];
+-[PKCanvasView drawingGestureRecognizer];
+-[PKCanvasView _hoverGestureRecognizer];
+-[PKCanvasView canPerformAction:withSender:];
+-[PKCanvasView isDrawingEnabled];
+-[PKCanvasView setDrawingEnabled:];
+-[PKCanvasView _getDelegateZoomView];
+-[PKCanvasView _selectionController];
+-[PKCanvasView _selectionInteraction];
+-[PKCanvasView awakeFromNib];
+-[PKCanvasView _flushCaches];
+-[PKCanvasView _hasObserver:];
+-[PKCanvasView set_observers:];
+-[PKCanvasView performUndo:];
+-[PKCanvasView _hasSelection];
+-[PKCanvasView setTool:];
+-[PKCanvasView rulerHostWantsSharedRuler];
+-[PKCanvasView rulerHostingView];
+-[PKCanvasView setRulerHostingDelegate:];
+-[PKCanvasView setRulerActive:];
+-[PKCanvasView _adornmentViewsToHitTest];
+-[PKCanvasView _allowedDrawingTouchTypes];
+-[PKCanvasView _canvasViewSnapshottingDisabled:];
+-[PKCanvasView _canvasViewWillBeginDrawing:];
+-[PKCanvasView _canvasViewWillCreateSnapshot:];
+-[PKCanvasView _combiningStrokesEnabled];
+-[PKCanvasView _contentCoordinateSpace];
+-[PKCanvasView _currentStroke];
+-[PKCanvasView _disableTileRendering];
+-[PKCanvasView _disableUndoManager];
+-[PKCanvasView _drawBitmapEraserMask];
+-[PKCanvasView _drawingDidChange];
+-[PKCanvasView _drawingGestureRecognizer];
+-[PKCanvasView _eraserMaskMetalLayer];
+-[PKCanvasView _fullyRendered];
+-[PKCanvasView _isSwiftUICanvas];
+-[PKCanvasView _keepPencilShadowVisible];
+-[PKCanvasView _latestLatency];
+-[PKCanvasView _maxFileFormatVersion];
+-[PKCanvasView _setChildrenBackgroundColor:];
+-[PKCanvasView _setCombiningStrokesEnabled:];
+-[PKCanvasView _setContentCoordinateSpace:];
+-[PKCanvasView _setContentViewOpaqueBackgroundColorIfApplicable];
+-[PKCanvasView _setDisableTileRendering:];
+-[PKCanvasView _setDrawBitmapEraserMask:];
+-[PKCanvasView _setDrawing:alreadyRenderedDrawing:imageForAlreadyRenderedDrawing:fullyRenderedCompletionBlock:];
+-[PKCanvasView _setDrawing:fullyRenderedCompletionBlock:];
+-[PKCanvasView _setFixedPixelSize:drawingScale:];
+-[PKCanvasView _setSelectedStrokesColor:];
+-[PKCanvasView _setupTiledViewWantsExtendedDynamicRangeContent];
+-[PKCanvasView _swiftUIToolPicker];
+-[PKCanvasView _tiledView];
+-[PKCanvasView _toolPicker:didChangeColor:];
+-[PKCanvasView _updateCanvas];
+-[PKCanvasView _updateChildrenOpaque];
+-[PKCanvasView _updatePencilShadowViewWithInputPoint:];
+-[PKCanvasView allowsFingerDrawing];
+-[PKCanvasView canvasView:beganStroke:];
+-[PKCanvasView canvasView:cancelledStroke:];
+-[PKCanvasView canvasView:didChangeHiddenState:];
+-[PKCanvasView canvasView:didRefineStrokes:withNewStrokes:];
+-[PKCanvasView canvasView:endedStroke:shapeStrokes:];
+-[PKCanvasView canvasView:hoverShouldBeActiveAt:];
+-[PKCanvasView canvasView:scratchOutStrokes:drawing:];
+-[PKCanvasView canvasView:shouldBeginDrawingWithTouch:];
+-[PKCanvasView canvasViewDidBeginDrawing:];
+-[PKCanvasView canvasViewDidBeginLasso:];
+-[PKCanvasView canvasViewDidEndDrawing:];
+-[PKCanvasView canvasViewDidEndLasso:];
+-[PKCanvasView canvasViewDidEraseStrokes:];
+-[PKCanvasView canvasViewSelectionDidChange:];
+-[PKCanvasView commitSelectionIfNecessaryWithCompletion:];
+-[PKCanvasView disableWideGamut];
+-[PKCanvasView drawingPolicy];
+-[PKCanvasView drawingTransform];
+-[PKCanvasView drawingUndoSelector];
+-[PKCanvasView drawingUndoTarget];
+-[PKCanvasView imageWithCompletionBlock:];
+-[PKCanvasView initWithFrame:drawingWidth:];
+-[PKCanvasView initWithFrame:drawingWidth:fixedPixelSizeScrollView:];
+-[PKCanvasView initWithFrame:fixedPixelSize:drawingScale:layerFixedPixelSize:];
+-[PKCanvasView initWithFrame:sixChannelBlend:snapshotView:];
+-[PKCanvasView isRulerActive];
+-[PKCanvasView liveDrawingStrokeTransform];
+-[PKCanvasView maximumSupportedContentVersion];
+-[PKCanvasView nonNullDrawing];
+-[PKCanvasView rulerEnabled];
+-[PKCanvasView rulerHostingDelegate];
+-[PKCanvasView rulerSnapLineOriginAndNormal:topSide:];
+-[PKCanvasView rulerView];
+-[PKCanvasView selectedStrokeIDs];
+-[PKCanvasView setAllowsFingerDrawing:];
+-[PKCanvasView setDisableWideGamut:];
+-[PKCanvasView setDrawingPolicy:];
+-[PKCanvasView setDrawingTransform:];
+-[PKCanvasView setDrawingUndoSelector:];
+-[PKCanvasView setDrawingUndoTarget:];
+-[PKCanvasView setLiveDrawingStrokeTransform:];
+-[PKCanvasView setMaximumSupportedContentVersion:];
+-[PKCanvasView setNonNullDrawing:];
+-[PKCanvasView setRulerEnabled:];
+-[PKCanvasView setSelectedStrokeIDs:];
+-[PKCanvasView setSupportsCopyAsText:];
+-[PKCanvasView set_disableUndoManager:];
+-[PKCanvasView set_isSwiftUICanvas:];
+-[PKCanvasView set_maxFileFormatVersion:];
+-[PKCanvasView set_swiftUIToolPicker:];
+-[PKCanvasView setupDrawingWidth:fixedPixelSizeScrollView:];
+-[PKCanvasView setupDrawingWidth:fixedPixelSizeScrollView:sixChannelBlend:drawBitmapEraserMask:];
+-[PKCanvasView supportsCopyAsText];
+-[PKCanvasView toolPickerIsRulerActiveDidChange:];
+-[PKCanvasView toolPickerSelectedToolItemDidChange:];
+-[PKCanvasView updateFixedPixelSizeViewForBounds:];
+-[PKCanvasView updateSubviewsForBounds:];
+```

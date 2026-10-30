@@ -1,0 +1,144 @@
+# Symbols: `/System/Library/AccessibilityBundles/ShareSheet.axbundle/ShareSheet`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__AccessibilityBundles__ShareSheet.axbundle__ShareSheet.md). **[DSC]**
+
+49 public symbols, 79 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1ee2c4d40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXShareSheetGlue
+0x1ee2c4cc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIActivityActionGroupCellAccessibility
+0x1ee2c46b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIActivityActionHorizontalCellAccessibility
+0x1ee2c4ca0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIActivityContentViewControllerAccessibility
+0x1ee2c4c78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIActivityViewControllerAccessibility
+0x1ee2c4cf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIAirDropGroupActivityCellAccessibility
+0x1ee2c4c50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIDocumentInteractionControllerAccessibility
+0x1ee2c4c28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UIShareGroupActivityCellAccessibility
+0x1ee2c4c00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIActivityGroupActivityCellAccessibility
+0x1ee2c4bd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIActivityUserDefaultsActivityCellAccessibility
+0x1ee2c4bb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UICollectionViewOrthogonalScrollViewAccessibility__ShareSheet__UIKit
+0x1ee2c4b88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__UIDICActivityViewControllerAccessibility
+0x1ee2c4b60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___UIActivityActionGroupCellAccessibility_super
+0x1ee2c4688  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___UIActivityActionHorizontalCellAccessibility_super
+0x1ee2c4b38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___UIActivityContentViewControllerAccessibility_super
+0x1ee2c4b10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___UIActivityViewControllerAccessibility_super
+0x1ee2c4ae8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___UIAirDropGroupActivityCellAccessibility_super
+0x1ee2c4ac0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___UIDocumentInteractionControllerAccessibility_super
+0x1ee2c4a98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___UIShareGroupActivityCellAccessibility_super
+0x1ee2c4a70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$____UIActivityGroupActivityCellAccessibility_super
+0x1ee2c4a48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$____UIActivityUserDefaultsActivityCellAccessibility_super
+0x1ee2c4a20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$____UICollectionViewOrthogonalScrollViewAccessibility__ShareSheet__UIKit_super
+0x1ee2c49f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$____UIDICActivityViewControllerAccessibility_super
+0x1ee2c4d18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXShareSheetGlue
+0x1ee2c49d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIActivityActionGroupCellAccessibility
+0x1ee2c4660  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIActivityActionHorizontalCellAccessibility
+0x1ee2c49a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIActivityContentViewControllerAccessibility
+0x1ee2c4980  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIActivityViewControllerAccessibility
+0x1ee2c4958  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIAirDropGroupActivityCellAccessibility
+0x1ee2c4930  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIDocumentInteractionControllerAccessibility
+0x1ee2c4908  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UIShareGroupActivityCellAccessibility
+0x1ee2c48e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__UIActivityGroupActivityCellAccessibility
+0x1ee2c48b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__UIActivityUserDefaultsActivityCellAccessibility
+0x1ee2c4890  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__UICollectionViewOrthogonalScrollViewAccessibility__ShareSheet__UIKit
+0x1ee2c4868  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__UIDICActivityViewControllerAccessibility
+0x1ee2c4840  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___UIActivityActionGroupCellAccessibility_super
+0x1ee2c4638  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___UIActivityActionHorizontalCellAccessibility_super
+0x1ee2c4818  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___UIActivityContentViewControllerAccessibility_super
+0x1ee2c47f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___UIActivityViewControllerAccessibility_super
+0x1ee2c47c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___UIAirDropGroupActivityCellAccessibility_super
+0x1ee2c47a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___UIDocumentInteractionControllerAccessibility_super
+0x1ee2c4778  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___UIShareGroupActivityCellAccessibility_super
+0x1ee2c4750  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$____UIActivityGroupActivityCellAccessibility_super
+0x1ee2c4728  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$____UIActivityUserDefaultsActivityCellAccessibility_super
+0x1ee2c4700  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$____UICollectionViewOrthogonalScrollViewAccessibility__ShareSheet__UIKit_super
+0x1ee2c46d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$____UIDICActivityViewControllerAccessibility_super
+0x189dbe15c  __TEXT,__text  _accessibilityIsPagesApp
+0x189dbe0b8  __TEXT,__text  _accessibilityLocalizedString
+0x1eb3ab700  __DATA,__data  _pagesBundleID
+```
+
+## Private
+
+```
+0x189dbded0  __TEXT,__text  +[AXShareSheetGlue accessibilityInitializeBundle]
+0x189dbdf58  __TEXT,__text  ___49+[AXShareSheetGlue accessibilityInitializeBundle]_block_invoke
+0x189dbdf60  __TEXT,__text  ___49+[AXShareSheetGlue accessibilityInitializeBundle]_block_invoke_2
+0x189dbdfb4  __TEXT,__text  ___49+[AXShareSheetGlue accessibilityInitializeBundle]_block_invoke_3
+0x189dbe1a4  __TEXT,__text  ___accessibilityIsPagesApp_block_invoke
+0x189dbe210  __TEXT,__text  +[UIActivityActionHorizontalCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dbe21c  __TEXT,__text  +[UIActivityActionHorizontalCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dbe228  __TEXT,__text  +[UIActivityActionHorizontalCellAccessibility _accessibilityPerformValidations:]
+0x189dbe290  __TEXT,__text  -[UIActivityActionHorizontalCellAccessibility isAccessibilityElement]
+0x189dbe298  __TEXT,__text  -[UIActivityActionHorizontalCellAccessibility accessibilityLabel]
+0x189dbe2a4  __TEXT,__text  -[UIActivityActionHorizontalCellAccessibility accessibilityTraits]
+0x189dbe2ec  __TEXT,__text  -[UIActivityActionHorizontalCellAccessibility automationElements]
+0x189dbe364  __TEXT,__text  +[_UIDICActivityViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dbe370  __TEXT,__text  +[_UIDICActivityViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dbe37c  __TEXT,__text  +[_UIDICActivityViewControllerAccessibility _accessibilityPerformValidations:]
+0x189dbe380  __TEXT,__text  -[_UIDICActivityViewControllerAccessibility _accessibilityPresentedControllerModalizes]
+0x189dbe388  __TEXT,__text  +[_UICollectionViewOrthogonalScrollViewAccessibility__ShareSheet__UIKit(SafeCategory) safeCategoryTargetClassName]
+0x189dbe394  __TEXT,__text  +[_UICollectionViewOrthogonalScrollViewAccessibility__ShareSheet__UIKit(SafeCategory) safeCategoryBaseClass]
+0x189dbe3a0  __TEXT,__text  +[_UICollectionViewOrthogonalScrollViewAccessibility__ShareSheet__UIKit _accessibilityPerformValidations:]
+0x189dbe44c  __TEXT,__text  -[_UICollectionViewOrthogonalScrollViewAccessibility__ShareSheet__UIKit accessibilityApplyScrollContent:sendScrollStatus:animated:]
+0x189dbe5ac  __TEXT,__text  ___131-[_UICollectionViewOrthogonalScrollViewAccessibility__ShareSheet__UIKit accessibilityApplyScrollContent:sendScrollStatus:animated:]_block_invoke
+0x189dbe5f4  __TEXT,__text  ___131-[_UICollectionViewOrthogonalScrollViewAccessibility__ShareSheet__UIKit accessibilityApplyScrollContent:sendScrollStatus:animated:]_block_invoke_2
+0x189dbe610  __TEXT,__text  +[UIActivityActionGroupCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dbe61c  __TEXT,__text  +[UIActivityActionGroupCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dbe628  __TEXT,__text  +[UIActivityActionGroupCellAccessibility _accessibilityPerformValidations:]
+0x189dbe6c0  __TEXT,__text  -[UIActivityActionGroupCellAccessibility isAccessibilityElement]
+0x189dbe6c8  __TEXT,__text  -[UIActivityActionGroupCellAccessibility accessibilityTraits]
+0x189dbe710  __TEXT,__text  -[UIActivityActionGroupCellAccessibility _accessibilitySlotID]
+0x189dbe758  __TEXT,__text  -[UIActivityActionGroupCellAccessibility _accessibilityAXAttributedLabel]
+0x189dbe830  __TEXT,__text  +[UIActivityContentViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dbe83c  __TEXT,__text  +[UIActivityContentViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dbe848  __TEXT,__text  +[UIActivityContentViewControllerAccessibility _accessibilityPerformValidations:]
+0x189dbe978  __TEXT,__text  -[UIActivityContentViewControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x189dbeb08  __TEXT,__text  ___90-[UIActivityContentViewControllerAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke
+0x189dbeb7c  __TEXT,__text  -[UIActivityContentViewControllerAccessibility viewDidLoad]
+0x189dbebc8  __TEXT,__text  -[UIActivityContentViewControllerAccessibility _configureHeaderViewIfNeeded]
+0x189dbec14  __TEXT,__text  -[UIActivityContentViewControllerAccessibility _updateCustomViewContent]
+0x189dbec60  __TEXT,__text  +[UIActivityViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dbec6c  __TEXT,__text  +[UIActivityViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dbec78  __TEXT,__text  +[UIActivityViewControllerAccessibility _accessibilityPerformValidations:]
+0x189dbed34  __TEXT,__text  -[UIActivityViewControllerAccessibility viewDidAppear:]
+0x189dbedb4  __TEXT,__text  -[UIActivityViewControllerAccessibility accessibilityPerformEscape]
+0x189dbee24  __TEXT,__text  ___67-[UIActivityViewControllerAccessibility accessibilityPerformEscape]_block_invoke
+0x189dbee2c  __TEXT,__text  -[UIActivityViewControllerAccessibility viewWillDisappear:]
+0x189dbee78  __TEXT,__text  +[UIAirDropGroupActivityCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dbee84  __TEXT,__text  +[UIAirDropGroupActivityCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dbee90  __TEXT,__text  +[UIAirDropGroupActivityCellAccessibility _accessibilityPerformValidations:]
+0x189dbefc8  __TEXT,__text  -[UIAirDropGroupActivityCellAccessibility accessibilityTraits]
+0x189dbf010  __TEXT,__text  -[UIAirDropGroupActivityCellAccessibility isAccessibilityElement]
+0x189dbf014  __TEXT,__text  -[UIAirDropGroupActivityCellAccessibility _accessibilityTextSlotID]
+0x189dbf020  __TEXT,__text  -[UIAirDropGroupActivityCellAccessibility _accessibilitySubtitleSlotID]
+0x189dbf02c  __TEXT,__text  -[UIAirDropGroupActivityCellAccessibility _accessibilityTransportSlotID]
+0x189dbf038  __TEXT,__text  -[UIAirDropGroupActivityCellAccessibility accessibilityLabel]
+0x189dbf1fc  __TEXT,__text  -[UIAirDropGroupActivityCellAccessibility accessibilityValue]
+0x189dbf3c4  __TEXT,__text  -[UIAirDropGroupActivityCellAccessibility _axAppNameForSuggestionCell]
+0x189dbf448  __TEXT,__text  +[UIDocumentInteractionControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dbf454  __TEXT,__text  +[UIDocumentInteractionControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dbf460  __TEXT,__text  +[UIDocumentInteractionControllerAccessibility _accessibilityPerformValidations:]
+0x189dbf4f8  __TEXT,__text  -[UIDocumentInteractionControllerAccessibility presentPreviewAnimated:]
+0x189dbf618  __TEXT,__text  +[UIShareGroupActivityCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dbf624  __TEXT,__text  +[UIShareGroupActivityCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dbf630  __TEXT,__text  +[UIShareGroupActivityCellAccessibility _accessibilityPerformValidations:]
+0x189dbf6a0  __TEXT,__text  -[UIShareGroupActivityCellAccessibility isAccessibilityElement]
+0x189dbf6a8  __TEXT,__text  -[UIShareGroupActivityCellAccessibility accessibilityTraits]
+0x189dbf6f0  __TEXT,__text  -[UIShareGroupActivityCellAccessibility _accessibilitySlotID]
+0x189dbf6fc  __TEXT,__text  -[UIShareGroupActivityCellAccessibility _accessibilityAXAttributedLabel]
+0x189dbf7d4  __TEXT,__text  -[UIShareGroupActivityCellAccessibility accessibilityFrame]
+0x189dbf8fc  __TEXT,__text  +[_UIActivityUserDefaultsActivityCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dbf908  __TEXT,__text  +[_UIActivityUserDefaultsActivityCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dbf914  __TEXT,__text  +[_UIActivityUserDefaultsActivityCellAccessibility _accessibilityPerformValidations:]
+0x189dbf9a4  __TEXT,__text  -[_UIActivityUserDefaultsActivityCellAccessibility _accessibilitySlotID]
+0x189dbf9ec  __TEXT,__text  -[_UIActivityUserDefaultsActivityCellAccessibility accessibilityLabel]
+0x189dbfafc  __TEXT,__text  +[_UIActivityGroupActivityCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dbfb08  __TEXT,__text  +[_UIActivityGroupActivityCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dbfb14  __TEXT,__text  +[_UIActivityGroupActivityCellAccessibility _accessibilityPerformValidations:]
+0x189dbfbec  __TEXT,__text  -[_UIActivityGroupActivityCellAccessibility isAccessibilityElement]
+0x189dbfbf0  __TEXT,__text  -[_UIActivityGroupActivityCellAccessibility _accessibilitySlotID]
+0x189dbfc38  __TEXT,__text  -[_UIActivityGroupActivityCellAccessibility accessibilityLabel]
+0x189dbfd10  __TEXT,__text  -[_UIActivityGroupActivityCellAccessibility accessibilityTraits]
+```
+

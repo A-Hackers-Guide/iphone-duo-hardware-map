@@ -1,0 +1,217 @@
+# `BWVISProcessorControllerConfiguration`
+
+- Image: [`/System/Library/PrivateFrameworks/CMCapture.framework/CMCapture`](../userland/System__Library__PrivateFrameworks__CMCapture.framework__CMCapture.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- 49 instance variables, 49 properties, 99 instance methods, 0 class methods
+
+## Instance variables
+
+```
+i _transformPlatform;
+i _smoothingMethod;
+i _motionBlurShimmerMitigationMethod;
+@"BWFigCaptureISPProcessingSession" _ispProcessingSession;
+@"NSDictionary" _inputPixelBufferAttributes;
+@"NSDictionary" _outputPixelBufferAttributes;
+{?="width"i"height"i} _generatedTransformsOutputDimensionsOverride;
+@"BWPixelBufferPool" _outputPixelBufferPool;
+@"BWPixelBufferPool" _outputDepthPixelBufferPool;
+@"NSDictionary" _sensorIDDict;
+f _cinematicLookAheadTime;
+I _cinematicLookAheadFrameCount;
+B _useISPMotionData;
+B _sphereCorrectionEnabled;
+B _sphereVideoEnabled;
+B _frameRateConversionEnabled;
+B _videoStabilizationDisabled;
+B _blurBorderPixels;
+{CGRect="origin"{CGPoint="x"d"y"d}"size"{CGSize="width"d"height"d}} _livePhotoCleanOutputRect;
+B _onlyGenerateTransformsParameters;
+B _attachStabilizedOutputCameraTrajectory;
+B _attachStabilizedTrajectoryHomography;
+B _attachEstimatedMotionVector;
+B _p3ToBT2020ConversionEnabled;
+i _gpuPriority;
+I _extendedOutputRowsToFill;
+@"NSObject<OS_dispatch_semaphore>" _emitSampleBufferSemaphore;
+@"NSDictionary" _cameraInfoByPortType;
+@"NSDictionary" _videoSTFParameters;
+@"NSDictionary" _videoGreenGhostMitigationParameters;
+i _videoStabilizationStrength;
+B _zoomSmoothingEnabled;
+B _applyFrameCropOffset;
+@"NSData" _cameraExtrinsicMatrix;
+B _faceStabilizationEnabled;
+@"NSDictionary" _faceStabilizationParameters;
+B _smartStyleRenderingEnabled;
+B _smartStyleReversibilityEnabled;
+B _textureStyleRenderingEnabled;
+B _lowResImageUsedByVideoEncoderEnabled;
+B _disableTransformLimits;
+B _useCameraGeometry;
+I _metalSubmissionAndCompletionQueuePriority;
+f _minDistanceForBravoParallaxShift;
+@"NSDictionary" _outputAttachmentsPixelBufferPools;
+@"NSDictionary" _smartStyleConfigurationDict;
+Q _smartStyleMemoryPoolId;
+@"NSArray" _distortionCorrectionEnabledPortTypes;
+@"NSArray" _distortionCompensationEnabledPortTypes;
+```
+
+## Properties
+
+```
+@property (Ti,N,V_transformPlatform) transformPlatform;
+@property (Ti,N,V_smoothingMethod) smoothingMethod;
+@property (Ti,N,V_motionBlurShimmerMitigationMethod) motionBlurShimmerMitigationMethod;
+@property (T@"BWFigCaptureISPProcessingSession",&,N,V_ispProcessingSession) ispProcessingSession;
+@property (T@"NSDictionary",&,N,V_inputPixelBufferAttributes) inputPixelBufferAttributes;
+@property (T@"NSDictionary",&,N,V_outputPixelBufferAttributes) outputPixelBufferAttributes;
+@property (T{?=ii},N,V_generatedTransformsOutputDimensionsOverride) generatedTransformsOutputDimensionsOverride;
+@property (T@"BWPixelBufferPool",&,N,V_outputPixelBufferPool) outputPixelBufferPool;
+@property (T@"BWPixelBufferPool",&,N,V_outputDepthPixelBufferPool) outputDepthPixelBufferPool;
+@property (T@"NSDictionary",&,N,V_outputAttachmentsPixelBufferPools) outputAttachmentsPixelBufferPools;
+@property (T@"NSDictionary",&,N,V_sensorIDDict) sensorIDDict;
+@property (Tf,N,V_cinematicLookAheadTime) cinematicLookAheadTime;
+@property (TI,N,V_cinematicLookAheadFrameCount) cinematicLookAheadFrameCount;
+@property (TB,N,V_useISPMotionData) useISPMotionData;
+@property (TB,N,V_sphereCorrectionEnabled) sphereCorrectionEnabled;
+@property (TB,N,V_sphereVideoEnabled) sphereVideoEnabled;
+@property (TB,N,V_frameRateConversionEnabled) frameRateConversionEnabled;
+@property (TB,N,V_smartStyleRenderingEnabled) smartStyleRenderingEnabled;
+@property (TB,N,V_smartStyleReversibilityEnabled) smartStyleReversibilityEnabled;
+@property (T@"NSDictionary",&,N,V_smartStyleConfigurationDict) smartStyleConfigurationDict;
+@property (TQ,N,V_smartStyleMemoryPoolId) smartStyleMemoryPoolId;
+@property (TB,N,V_textureStyleRenderingEnabled) textureStyleRenderingEnabled;
+@property (TB,N,V_lowResImageUsedByVideoEncoderEnabled) lowResImageUsedByVideoEncoderEnabled;
+@property (TB,N,V_videoStabilizationDisabled) videoStabilizationDisabled;
+@property (TB,N,V_blurBorderPixels) blurBorderPixels;
+@property (T{CGRect={CGPoint=dd}{CGSize=dd}},N,V_livePhotoCleanOutputRect) livePhotoCleanOutputRect;
+@property (TB,N,V_onlyGenerateTransformsParameters) onlyGenerateTransformsParameters;
+@property (TB,N,V_attachStabilizedOutputCameraTrajectory) attachStabilizedOutputCameraTrajectory;
+@property (TB,N,V_attachStabilizedTrajectoryHomography) attachStabilizedTrajectoryHomography;
+@property (TB,N,V_attachEstimatedMotionVector) attachEstimatedMotionVector;
+@property (TB,N,V_p3ToBT2020ConversionEnabled) p3ToBT2020ConversionEnabled;
+@property (Ti,N,V_gpuPriority) gpuPriority;
+@property (TI,N,V_metalSubmissionAndCompletionQueuePriority) metalSubmissionAndCompletionQueuePriority;
+@property (TI,N,V_extendedOutputRowsToFill) extendedOutputRowsToFill;
+@property (T@"NSObject<OS_dispatch_semaphore>",&,N,V_emitSampleBufferSemaphore) emitSampleBufferSemaphore;
+@property (T@"NSDictionary",&,N,V_cameraInfoByPortType) cameraInfoByPortType;
+@property (T@"NSArray",&,N,V_distortionCorrectionEnabledPortTypes) distortionCorrectionEnabledPortTypes;
+@property (T@"NSArray",&,N,V_distortionCompensationEnabledPortTypes) distortionCompensationEnabledPortTypes;
+@property (Tf,N,V_minDistanceForBravoParallaxShift) minDistanceForBravoParallaxShift;
+@property (T@"NSDictionary",&,N,V_videoSTFParameters) videoSTFParameters;
+@property (T@"NSDictionary",&,N,V_videoGreenGhostMitigationParameters) videoGreenGhostMitigationParameters;
+@property (Ti,N,V_videoStabilizationStrength) videoStabilizationStrength;
+@property (TB,N,V_zoomSmoothingEnabled) zoomSmoothingEnabled;
+@property (TB,N,V_applyFrameCropOffset) applyFrameCropOffset;
+@property (T@"NSData",&,N,V_cameraExtrinsicMatrix) cameraExtrinsicMatrix;
+@property (TB,N,V_disableTransformLimits) disableTransformLimits;
+@property (TB,N,V_useCameraGeometry) useCameraGeometry;
+@property (TB,N,V_faceStabilizationEnabled) faceStabilizationEnabled;
+@property (T@"NSDictionary",&,N,V_faceStabilizationParameters) faceStabilizationParameters;
+```
+
+## Instance methods
+
+```
+-[BWVISProcessorControllerConfiguration setCinematicLookAheadFrameCount:];
+-[BWVISProcessorControllerConfiguration generatedTransformsOutputDimensionsOverride];
+-[BWVISProcessorControllerConfiguration setVideoStabilizationStrength:];
+-[BWVISProcessorControllerConfiguration setSmartStyleRenderingEnabled:];
+-[BWVISProcessorControllerConfiguration setLowResImageUsedByVideoEncoderEnabled:];
+-[BWVISProcessorControllerConfiguration ispProcessingSession];
+-[BWVISProcessorControllerConfiguration sphereVideoEnabled];
+-[BWVISProcessorControllerConfiguration frameRateConversionEnabled];
+-[BWVISProcessorControllerConfiguration setEmitSampleBufferSemaphore:];
+-[BWVISProcessorControllerConfiguration emitSampleBufferSemaphore];
+-[BWVISProcessorControllerConfiguration setIspProcessingSession:];
+-[BWVISProcessorControllerConfiguration setSmartStyleConfigurationDict:];
+-[BWVISProcessorControllerConfiguration videoStabilizationStrength];
+-[BWVISProcessorControllerConfiguration smartStyleReversibilityEnabled];
+-[BWVISProcessorControllerConfiguration setSphereVideoEnabled:];
+-[BWVISProcessorControllerConfiguration cameraExtrinsicMatrix];
+-[BWVISProcessorControllerConfiguration p3ToBT2020ConversionEnabled];
+-[BWVISProcessorControllerConfiguration setCameraInfoByPortType:];
+-[BWVISProcessorControllerConfiguration setSensorIDDict:];
+-[BWVISProcessorControllerConfiguration setVideoStabilizationDisabled:];
+-[BWVISProcessorControllerConfiguration textureStyleRenderingEnabled];
+-[BWVISProcessorControllerConfiguration smartStyleRenderingEnabled];
+-[BWVISProcessorControllerConfiguration cameraInfoByPortType];
+-[BWVISProcessorControllerConfiguration setTransformPlatform:];
+-[BWVISProcessorControllerConfiguration setOutputAttachmentsPixelBufferPools:];
+-[BWVISProcessorControllerConfiguration setSmartStyleReversibilityEnabled:];
+-[BWVISProcessorControllerConfiguration useCameraGeometry];
+-[BWVISProcessorControllerConfiguration faceStabilizationEnabled];
+-[BWVISProcessorControllerConfiguration setSmartStyleMemoryPoolId:];
+-[BWVISProcessorControllerConfiguration setZoomSmoothingEnabled:];
+-[BWVISProcessorControllerConfiguration videoGreenGhostMitigationParameters];
+-[BWVISProcessorControllerConfiguration setOnlyGenerateTransformsParameters:];
+-[BWVISProcessorControllerConfiguration applyFrameCropOffset];
+-[BWVISProcessorControllerConfiguration smoothingMethod];
+-[BWVISProcessorControllerConfiguration livePhotoCleanOutputRect];
+-[BWVISProcessorControllerConfiguration gpuPriority];
+-[BWVISProcessorControllerConfiguration setAttachStabilizedOutputCameraTrajectory:];
+-[BWVISProcessorControllerConfiguration setFrameRateConversionEnabled:];
+-[BWVISProcessorControllerConfiguration videoStabilizationDisabled];
+-[BWVISProcessorControllerConfiguration disableTransformLimits];
+-[BWVISProcessorControllerConfiguration setTextureStyleRenderingEnabled:];
+-[BWVISProcessorControllerConfiguration outputPixelBufferPool];
+-[BWVISProcessorControllerConfiguration setLivePhotoCleanOutputRect:];
+-[BWVISProcessorControllerConfiguration setFaceStabilizationEnabled:];
+-[BWVISProcessorControllerConfiguration dealloc];
+-[BWVISProcessorControllerConfiguration setP3ToBT2020ConversionEnabled:];
+-[BWVISProcessorControllerConfiguration minDistanceForBravoParallaxShift];
+-[BWVISProcessorControllerConfiguration setVideoGreenGhostMitigationParameters:];
+-[BWVISProcessorControllerConfiguration setMinDistanceForBravoParallaxShift:];
+-[BWVISProcessorControllerConfiguration setOutputPixelBufferAttributes:];
+-[BWVISProcessorControllerConfiguration blurBorderPixels];
+-[BWVISProcessorControllerConfiguration attachStabilizedTrajectoryHomography];
+-[BWVISProcessorControllerConfiguration setApplyFrameCropOffset:];
+-[BWVISProcessorControllerConfiguration sphereCorrectionEnabled];
+-[BWVISProcessorControllerConfiguration setCinematicLookAheadTime:];
+-[BWVISProcessorControllerConfiguration setMotionBlurShimmerMitigationMethod:];
+-[BWVISProcessorControllerConfiguration smartStyleMemoryPoolId];
+-[BWVISProcessorControllerConfiguration extendedOutputRowsToFill];
+-[BWVISProcessorControllerConfiguration setOutputPixelBufferPool:];
+-[BWVISProcessorControllerConfiguration setSphereCorrectionEnabled:];
+-[BWVISProcessorControllerConfiguration inputPixelBufferAttributes];
+-[BWVISProcessorControllerConfiguration sensorIDDict];
+-[BWVISProcessorControllerConfiguration setAttachEstimatedMotionVector:];
+-[BWVISProcessorControllerConfiguration setUseISPMotionData:];
+-[BWVISProcessorControllerConfiguration attachEstimatedMotionVector];
+-[BWVISProcessorControllerConfiguration zoomSmoothingEnabled];
+-[BWVISProcessorControllerConfiguration setFaceStabilizationParameters:];
+-[BWVISProcessorControllerConfiguration setBlurBorderPixels:];
+-[BWVISProcessorControllerConfiguration setUseCameraGeometry:];
+-[BWVISProcessorControllerConfiguration setOutputDepthPixelBufferPool:];
+-[BWVISProcessorControllerConfiguration outputPixelBufferAttributes];
+-[BWVISProcessorControllerConfiguration setInputPixelBufferAttributes:];
+-[BWVISProcessorControllerConfiguration lowResImageUsedByVideoEncoderEnabled];
+-[BWVISProcessorControllerConfiguration setDistortionCompensationEnabledPortTypes:];
+-[BWVISProcessorControllerConfiguration distortionCorrectionEnabledPortTypes];
+-[BWVISProcessorControllerConfiguration attachStabilizedOutputCameraTrajectory];
+-[BWVISProcessorControllerConfiguration useISPMotionData];
+-[BWVISProcessorControllerConfiguration setVideoSTFParameters:];
+-[BWVISProcessorControllerConfiguration setExtendedOutputRowsToFill:];
+-[BWVISProcessorControllerConfiguration transformPlatform];
+-[BWVISProcessorControllerConfiguration setDistortionCorrectionEnabledPortTypes:];
+-[BWVISProcessorControllerConfiguration cinematicLookAheadTime];
+-[BWVISProcessorControllerConfiguration metalSubmissionAndCompletionQueuePriority];
+-[BWVISProcessorControllerConfiguration cinematicLookAheadFrameCount];
+-[BWVISProcessorControllerConfiguration motionBlurShimmerMitigationMethod];
+-[BWVISProcessorControllerConfiguration onlyGenerateTransformsParameters];
+-[BWVISProcessorControllerConfiguration outputAttachmentsPixelBufferPools];
+-[BWVISProcessorControllerConfiguration setAttachStabilizedTrajectoryHomography:];
+-[BWVISProcessorControllerConfiguration smartStyleConfigurationDict];
+-[BWVISProcessorControllerConfiguration distortionCompensationEnabledPortTypes];
+-[BWVISProcessorControllerConfiguration videoSTFParameters];
+-[BWVISProcessorControllerConfiguration setSmoothingMethod:];
+-[BWVISProcessorControllerConfiguration faceStabilizationParameters];
+-[BWVISProcessorControllerConfiguration setCameraExtrinsicMatrix:];
+-[BWVISProcessorControllerConfiguration setDisableTransformLimits:];
+-[BWVISProcessorControllerConfiguration setMetalSubmissionAndCompletionQueuePriority:];
+-[BWVISProcessorControllerConfiguration setGpuPriority:];
+-[BWVISProcessorControllerConfiguration outputDepthPixelBufferPool];
+-[BWVISProcessorControllerConfiguration setGeneratedTransformsOutputDimensionsOverride:];
+```

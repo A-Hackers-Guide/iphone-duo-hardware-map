@@ -1,0 +1,36 @@
+# `/System/Library/PrivateFrameworks/CoreSuggestions.framework/CoreSuggestions`
+
+iOS 27.2 dyld shared cache image, version `1354.0.0.0.0`. Light page: libraries and type names only. **[DSC]**
+
+## Linked libraries (19)
+
+- `/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices`
+- `/System/Library/Frameworks/Intents.framework/Intents`
+- `/System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport`
+- `/System/Library/PrivateFrameworks/PhoneNumbers.framework/PhoneNumbers`
+- `/System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics`
+- `/System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer`
+- `/System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking`
+- `/System/Library/PrivateFrameworks/TCC.framework/TCC`
+- `/System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices`
+- `/System/Library/Frameworks/CoreLocation.framework/CoreLocation`
+- `/System/Library/Frameworks/Security.framework/Security`
+- `/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight`
+- `/System/Library/Frameworks/CoreServices.framework/CoreServices`
+- `/System/Library/PrivateFrameworks/ProactiveEventTracker.framework/ProactiveEventTracker`
+- `/System/Library/Frameworks/Foundation.framework/Foundation`
+- `/usr/lib/libobjc.A.dylib`
+- `/usr/lib/libSystem.B.dylib`
+- `/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation`
+- `/System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials`
+
+## Objective-C: 161 classes, 48 protocols (method count not recorded on light pages)
+
+### Classes
+
+`CSPerson`, `NSArray`, `NSDate`, `NSString`, `NSTimeZone`, `SGAspireResult`, `SGCircularBufferArray`, `SGContact`, `SGContactMatch`, `SGConversationTurn`, `SGDSuggestManagerInterface`, `SGDaemonConnection`, `SGDateComponents`, `SGDelivery`, `SGDetailCacheSnapshot`, `SGEKEventConversions`, `SGEmailAddress`, `SGEntityExtractionInfo`, `SGEntityTag`, `SGEntityTagLabelOptions`, `SGErrorMetrics`, `SGEvent`, `SGEventActivity`, `SGEventGeocode`, `SGEventMetadata`, `SGExternalEventExtraction`, `SGExtractionInfo`, `SGFn`, `SGFuture`, `SGGeoListSnippet`, `SGGeoPoi`, `SGIPMessage`, `SGIPPerson`, `SGKeyValueCacheFile`, `SGLabeledObject`, `SGLocation`, `SGM2BadInteractionIgnored`, `SGM2BundleIdsMissingEntitlement`, `SGM2BundleIdsUsingOldEntitlement`, `SGM2CNtoSGContactsCacheHit`, `SGM2ContactConfirmed`, `SGM2ContactDetailConfirmed`, `SGM2ContactDetailRejected`, `SGM2ContactDetailUsed`, `SGM2ContactInBanner`, `SGM2ContactRejected`, `SGM2DDLinkShown`, `SGM2EventBannerConfirmed`, `SGM2EventBannerRejected`, `SGM2EventICSOpportunity`, `SGM2EventInBanner`, `SGM2FoundInAppsICS`, `SGM2MaybeInformationShown`, `SGM2NLEventInBanner`, `SGM2SelfIdPatternMatched`, `SGMAutocompleteUserSelectedContact`, `SGMBadInteractionIgnored`, `SGMBundleIdsMissingEntitlement`, `SGMBundleIdsTrackedAsOther`, `SGMBundleIdsUsingOldEntitlement`, `SGMCNtoSGContactsCacheHit`, `SGMContactConfirmed`, `SGMContactCreated`, `SGMContactDetailConfirmed`, `SGMContactDetailConversationTurn`, `SGMContactDetailExtraction`, `SGMContactDetailRejected`, `SGMContactDetailSent`, `SGMContactDetailUsed`, `SGMContactInBanner`, `SGMContactOpportunityInSpotlight`, `SGMContactRejected`, `SGMContactResultInSpotlight`, `SGMContactResultSelectedInSpotlight`, `SGMContactsInterfaceCacheCount`, `SGMContactsInterfaceCacheHit`, `SGMDDLinkShown`, `SGMEventBannerConfirmed`, `SGMEventBannerRejected`, `SGMEventICSOpportunity`, `SGMEventInBanner`, `SGMEventOpportunityInSpotlight`, `SGMEventResultInSpotlight`, `SGMEventResultSelectedInSpotlight`, `SGMFoundInAppsICS`, `SGMFoundInMailModelScore`, `SGMMailClientInMailApp`, `SGMMaybeInformationShown`, `SGMNLEventInBanner`, `SGMNoResultSelectedInSpotlight`, `SGMOtherResultSelectedInSpotlight`, `SGMSearchResultsIncludedPureSuggestion`, `SGMSearchResultsUserSelectedContact`, `SGMSelfIdModelScore`, `SGMSelfIdPatternMatched`, `SGMSerializedContactsCacheHit`, `SGMSqliteErrors`, `SGMSuggestdExitReason`, `SGMSuggestedContactDetailShown`, `SGMSuggestedContactDetailUsed`, `SGMUnknownContactInformationShown`, `SGMailHeaders`, `SGMailIntelligenceAttachmentProperties`, `SGMailIntelligenceComposeWarning`, `SGMailIntelligenceFollowUpWarning`, `SGMailIntelligenceMissingAttachmentWarning`, `SGMailIntelligenceMissingRecipientWarning`, `SGMailIntelligenceSaliency`, `SGMailIntelligenceStringHasher`, `SGMailIntelligenceUnsubscriptionRule`, `SGMailIntelligenceWarning`, `SGMailMessageKey`, `SGMatchedDetails`, `SGMatchedDetailsReader`, `SGMatchinfoData`, `SGMessagesDaemonConnection`, `SGMessagesSuggestionsService`, `SGNLEventSuggestionsMetrics`, `SGName`, `SGNotificationListener`, `SGObjCRuntime`, `SGObject`, `SGOrigin`, `SGPIRResult`, `SGPatternMetrics`, `SGPersistentSaltProvider`, `SGPersistentSaltProviderGuardedData`, `SGPhoneNumber`, `SGPoint`, `SGPostalAddress`, `SGPostalAddressComponents`, `SGPreferenceManager`, `SGPreferenceStorage`, `SGRealtimeContact`, `SGRealtimeEvent`, `SGRealtimeReminder`, `SGRealtimeWalletOrder`, `SGRealtimeWalletPass`, `SGRecordId`, `SGReminder`, `SGReminderMetadata`, `SGRemoteObjectProxy`, `SGSimpleNamedEmailAddress`, `SGSimpleTimeRange`, `SGSocialProfile`, `SGStructuredAddress`, `SGSuggestedActionMetrics`, `SGSuggestedEventLaunchInfo`, `SGSuggestions`, `SGSuggestionsICSMetrics`, `SGSuggestionsService`, `SGSuggestionsWorkGroupManager`, `SGSuggestionsWorkGroupManagerGuardedData`, `SGTimeZone`, `SGTimeZoneDetector`, `SGURL`, `SGXPCResponse`, `SGXPCResponse1`, `SGXPCResponse2`, `SGXPCResponse3`, `_SGNSStringEncodingEnumerator`
+
+### Protocols
+
+`NSCoding`, `NSCopying`, `NSFastEnumeration`, `NSObject`, `NSSecureCoding`, `SGConversationTurnProtocol`, `SGDSuggestManagerAllProtocol`, `SGDSuggestManagerContactsProtocol`, `SGDSuggestManagerDeliveriesProtocol`, `SGDSuggestManagerEventsProtocol`, `SGDSuggestManagerFidesProtocol`, `SGDSuggestManagerInternalProtocol`, `SGDSuggestManagerIpsosProtocol`, `SGDSuggestManagerMailProtocol`, `SGDSuggestManagerMessagesProtocol`, `SGDSuggestManagerRemindersProtocol`, `SGDSuggestManagerSpotlightKnowledgeProtocol`, `SGDSuggestManagerURLsProtocol`, `SGEventForGeocode`, `SGEventLocationForGeocode`, `SGExternalExtraction`, `SGRealtimeSuggestion`, `SGRealtimeSuggestion_Private`, `SGSuggestionsServiceContactsProtocol`, `SGSuggestionsServiceDeliveriesProtocol`, `SGSuggestionsServiceEventsProtocol`, `SGSuggestionsServiceFidesProtocol`, `SGSuggestionsServiceInternalProtocol`, `SGSuggestionsServiceIpsosProtocol`, `SGSuggestionsServiceMailProtocol`, `SGSuggestionsServiceMessagesProtocol`, `SGSuggestionsServiceRemindersProtocol`, `SGSuggestionsServiceSpotlightKnowledgeProtocol`, `SGSuggestionsServiceURLsProtocol`, `_SGDSuggestManagerBaseProtocol`, `_SGDSuggestManagerContactsConfirmRejectProtocol`, `_SGDSuggestManagerEventsConfirmRejectProtocol`, `_SGDSuggestManagerInternalHarvestProtocol`, `_SGDSuggestManagerMetricsProtocol`, `_SGSuggestManagerFoundInAppsProtocol`, `_SGSuggestionsServiceBaseProtocol`, `_SGSuggestionsServiceContactsConfirmRejectProtocol`, `_SGSuggestionsServiceContactsObserverProtocol`, `_SGSuggestionsServiceEventsConfirmRejectProtocol`, `_SGSuggestionsServiceEventsObserverProtocol`, `_SGSuggestionsServiceFoundInAppsProtocol`, `_SGSuggestionsServiceMailIntelligenceProtocol`, `_SGSuggestionsServiceMetricsProtocol`
+

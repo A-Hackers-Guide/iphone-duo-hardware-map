@@ -1,0 +1,273 @@
+# `CUINamedVectorGlyph`
+
+- Image: [`/System/Library/PrivateFrameworks/CoreUI.framework/CoreUI`](../userland/System__Library__PrivateFrameworks__CoreUI.framework__CoreUI.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `CUINamedLookup`
+- Protocols: `CUIVectorGlyhLayerDelegate`, `NSCopying`
+- 27 instance variables, 21 properties, 182 instance methods, 17 class methods
+
+## Instance variables
+
+```
+d _pointSize;
+d _lookedupScaleFactor;
+@"NSLocale" _lookedupLocale;
+^{CGImage=} _cgImageRef;
+d _fontMatchingScaleFactor;
+@"CUICatalog" _catalog;
+q _layoutDirection;
+b1 _generatedImage;
+b1 _flippable;
+b1 _canUsePathConcatenation;
+s _containsNamedColorStyles;
+d _glyphSize;
+d _glyphWeight;
+@"CUINamedLookup" _ultralightInterpolationSource;
+@"CUINamedLookup" _blackInterpolationSource;
+@"CUIVectorGlyphLayer" _monochromeLayerGroup;
+@"CUIVectorGlyphMulticolorLayer" _multicolorLayerGroup;
+@"CUIVectorGlyphHierarchicalLayer" _hierarchicalLayerGroup;
+@"NSValue" _rotationAnchor;
+@"CUIVectorGlyphDrawAttachmentDataStore" _drawAttachmentData;
+@"NSValue" _metricCenter;
+@"NSDictionary" _symbolDefaults;
+d _variableMinValue;
+d _variableMaxValue;
+^{?=@@@} _lockedRenditions;
+q _variableMode;
+q _fillStyle;
+```
+
+## Properties
+
+```
+@property (Td,N) fontMatchingScaleFactor;
+@property (Td,R,N) baselineOffset;
+@property (Td,R,N) capHeight;
+@property (T{CGRect={CGPoint=dd}{CGSize=dd}},R,N) alignmentRect;
+@property (T{CGRect={CGPoint=dd}{CGSize=dd}},R,N) contentBounds;
+@property (TB,R,N) isFlippable;
+@property (Tf,R,N) templateVersion;
+@property (Td,R,N) baselineOffsetUnrounded;
+@property (Td,R,N) capHeightUnrounded;
+@property (T{CGRect={CGPoint=dd}{CGSize=dd}},R,N) contentBoundsUnrounded;
+@property (T{CGRect={CGPoint=dd}{CGSize=dd}},R,N) alignmentRectUnrounded;
+@property (Tq,R,N) preferredRenderingMode;
+@property (TB,R,N,GisInterpolatable) interpolatable;
+@property (T{CGPoint=dd},R,N) rotationAnchor;
+@property (T{CGPoint=dd},R,N) metricCenter;
+@property (Td,V_variableMinValue) variableMinValue;
+@property (Td,V_variableMaxValue) variableMaxValue;
+@property (Tq,V_variableMode) variableMode;
+@property (T{CGRect={CGPoint=dd}{CGSize=dd}},R,N) interiorAlignmentRectUnrounded;
+@property (T{CGRect={CGPoint=dd}{CGSize=dd}},R,N) interiorAlignmentRect;
+@property (Tq,V_fillStyle) fillStyle;
+```
+
+## Class methods
+
+```
++[CUINamedVectorGlyph _variableValueModeAtom];
++[CUINamedVectorGlyph _createSCurveGradientWithStartColor:endColor:height:];
++[CUINamedVectorGlyph _colorStyleNames];
++[CUINamedVectorGlyph _wiggleStyleAtom];
++[CUINamedVectorGlyph _wiggleAngleAtom];
++[CUINamedVectorGlyph _drawReversesMotionGroupsAtom];
++[CUINamedVectorGlyph _derivedGradientColorFromColor:reverse:];
++[CUINamedVectorGlyph _knockoutStyleNames];
++[CUINamedVectorGlyph _createPathFromPoints:count:];
++[CUINamedVectorGlyph copyFromInstance:];
++[CUINamedVectorGlyph _layerHierarchyStyleNames];
++[CUINamedVectorGlyph _createAxialGradientWithColors:useSCurve:height:];
++[CUINamedVectorGlyph _createFlattenedPath:threshold:];
++[CUINamedVectorGlyph _rotatesClockwiseAtom];
++[CUINamedVectorGlyph _variableColorContinuousAtom];
++[CUINamedVectorGlyph _hasImageFillsAtom];
++[CUINamedVectorGlyph _backgroundImageNamesAtom];
+```
+
+## Instance methods
+
+```
+-[CUINamedVectorGlyph baselineOffset];
+-[CUINamedVectorGlyph contentBounds];
+-[CUINamedVectorGlyph drawInContext:];
+-[CUINamedVectorGlyph glyphSize];
+-[CUINamedVectorGlyph debugDescription];
+-[CUINamedVectorGlyph containsNamedColorStyles];
+-[CUINamedVectorGlyph _setImage:];
+-[CUINamedVectorGlyph referencePointSize];
+-[CUINamedVectorGlyph dealloc];
+-[CUINamedVectorGlyph layoutDirection];
+-[CUINamedVectorGlyph scale];
+-[CUINamedVectorGlyph pointSize];
+-[CUINamedVectorGlyph rasterizeImageUsingScaleFactor:forTargetSize:];
+-[CUINamedVectorGlyph alignmentRect];
+-[CUINamedVectorGlyph isInterpolatable];
+-[CUINamedVectorGlyph containsNamedColorStyle:];
+-[CUINamedVectorGlyph hash];
+-[CUINamedVectorGlyph image];
+-[CUINamedVectorGlyph copyWithZone:];
+-[CUINamedVectorGlyph isEqual:];
+-[CUINamedVectorGlyph numberOfPaletteLayers];
+-[CUINamedVectorGlyph numberOfHierarchyLayers];
+-[CUINamedVectorGlyph capHeight];
+-[CUINamedVectorGlyph CGPath];
+-[CUINamedVectorGlyph rasterizeImageUsingScaleFactor:forTargetSize:withPaletteColors:];
+-[CUINamedVectorGlyph rasterizeImageUsingScaleFactor:forTargetSize:withColorResolver:];
+-[CUINamedVectorGlyph _setScale:];
+-[CUINamedVectorGlyph drawHierarchyLayerAtIndex:inContext:withColorResolver:];
+-[CUINamedVectorGlyph drawInContext:withPaletteColors:];
+-[CUINamedVectorGlyph drawMulticolorLayerAtIndex:inContext:withColorResolver:];
+-[CUINamedVectorGlyph drawWithTintColor:inContext:];
+-[CUINamedVectorGlyph imageWithColorResolver:];
+-[CUINamedVectorGlyph imageWithHierarchyColorResolver:];
+-[CUINamedVectorGlyph imageWithPaletteColors:];
+-[CUINamedVectorGlyph imageWithTintColor:];
+-[CUINamedVectorGlyph isFlippable];
+-[CUINamedVectorGlyph numberOfMulticolorLayers];
+-[CUINamedVectorGlyph preferredRenderingMode];
+-[CUINamedVectorGlyph rasterizeImageUsingScaleFactor:forTargetSize:withHierarchyColorResolver:];
+-[CUINamedVectorGlyph rasterizeImageWithTintColor:usingScaleFactor:forTargetSize:];
+-[CUINamedVectorGlyph setFillStyle:];
+-[CUINamedVectorGlyph setVariableMaxValue:];
+-[CUINamedVectorGlyph setVariableMinValue:];
+-[CUINamedVectorGlyph setVariableMode:];
+-[CUINamedVectorGlyph variableMaxValue];
+-[CUINamedVectorGlyph variableMinValue];
+-[CUINamedVectorGlyph canBeInterpolatedWith:];
+-[CUINamedVectorGlyph graphicVariantWithOptions:];
+-[CUINamedVectorGlyph interiorAlignmentRect];
+-[CUINamedVectorGlyph metricCenter];
+-[CUINamedVectorGlyph monochromeLayers];
+-[CUINamedVectorGlyph glyphWeight];
+-[CUINamedVectorGlyph generatedImage];
+-[CUINamedVectorGlyph alignmentRectUnrounded];
+-[CUINamedVectorGlyph baselineOffsetUnrounded];
+-[CUINamedVectorGlyph capHeightUnrounded];
+-[CUINamedVectorGlyph contentBoundsUnrounded];
+-[CUINamedVectorGlyph drawPaletteLayerAtIndex:inContext:withColorResolver:];
+-[CUINamedVectorGlyph fillStyle];
+-[CUINamedVectorGlyph fontMatchingScaleFactor];
+-[CUINamedVectorGlyph glyphContinuousSize];
+-[CUINamedVectorGlyph glyphContinuousWeight];
+-[CUINamedVectorGlyph hierarchicalLayers];
+-[CUINamedVectorGlyph knownAvailableVectorSizes];
+-[CUINamedVectorGlyph multicolorLayers];
+-[CUINamedVectorGlyph paletteLayers];
+-[CUINamedVectorGlyph rotationAnchor];
+-[CUINamedVectorGlyph symbolDefaults];
+-[CUINamedVectorGlyph _symbolDefaults];
+-[CUINamedVectorGlyph hierarchyLayers];
+-[CUINamedVectorGlyph requestedLocale];
+-[CUINamedVectorGlyph templateVersion];
+-[CUINamedVectorGlyph _blackRendition];
+-[CUINamedVectorGlyph ensureBaseGlyph];
+-[CUINamedVectorGlyph hierarchyLevels];
+-[CUINamedVectorGlyph _blackInterpolationSource];
+-[CUINamedVectorGlyph _canUsePathConcatenation];
+-[CUINamedVectorGlyph _catalog];
+-[CUINamedVectorGlyph _cgImageRef];
+-[CUINamedVectorGlyph _containsWideGamutColor];
+-[CUINamedVectorGlyph _createAttachmentStoreFromNodeNamed:inRendition:];
+-[CUINamedVectorGlyph _createInterpolatedDrawAttachmentDataStoreWithWeight:glyphSize:fromUltralight:regular:black:];
+-[CUINamedVectorGlyph _createShapeGroupSubpaths];
+-[CUINamedVectorGlyph _drawHierarchicalLayersInContext:scaleFactor:targetSize:colorResolver:];
+-[CUINamedVectorGlyph _drawMulticolorLayersInContext:scaleFactor:targetSize:colorResolver:];
+-[CUINamedVectorGlyph _drawPaletteLayersInContext:scaleFactor:targetSize:colorResolver:];
+-[CUINamedVectorGlyph _getAnchor:inRendition:];
+-[CUINamedVectorGlyph _getMetricCenterInRendition:];
+-[CUINamedVectorGlyph _getOutlineNodeForDocument:];
+-[CUINamedVectorGlyph _interpolatedAlignmentRectInsetsWithWeight:glyphSize:fromUltralight:regular:black:];
+-[CUINamedVectorGlyph _interpolatedAnchorWithWeight:glyphSize:fromUltralight:regular:black:];
+-[CUINamedVectorGlyph _interpolatedBaselineOffsetWithWeight:glyphSize:fromUltralight:regular:black:];
+-[CUINamedVectorGlyph _interpolatedCanvasSizeWithWeight:glyphSize:fromUltralight:regular:black:];
+-[CUINamedVectorGlyph _interpolatedCapHeightWithWeight:glyphSize:fromUltralight:regular:black:];
+-[CUINamedVectorGlyph _interpolatedPathWithWeight:glyphSize:fromUltralightSmall:regularSmall:blackSmall:];
+-[CUINamedVectorGlyph _interpolatedStrokeWidthWithWeight:glyphSize:fromUltralight:regular:black:];
+-[CUINamedVectorGlyph _layerNamesForRenderingMode:inRendition:];
+-[CUINamedVectorGlyph _legacy_drawHierarchicalLayerNamed:inContext:scaleFactor:targetSize:colorResolver:];
+-[CUINamedVectorGlyph _legacy_drawMonochromeLayerNamed:inContext:scaleFactor:targetSize:onFillColor:offFillColor:];
+-[CUINamedVectorGlyph _legacy_drawMulticolorLayerNamed:inContext:scaleFactor:targetSize:colorResolver:];
+-[CUINamedVectorGlyph _lookupCatalogImageForIdiom:locale:];
+-[CUINamedVectorGlyph _partialLocale];
+-[CUINamedVectorGlyph _rawVisibleMonochromePath:];
+-[CUINamedVectorGlyph _regularRendition];
+-[CUINamedVectorGlyph _requestedPointSizeRatio];
+-[CUINamedVectorGlyph _setBlackInterpolationSource:];
+-[CUINamedVectorGlyph _setCanUsePathConcatenation:];
+-[CUINamedVectorGlyph _setCatalog:];
+-[CUINamedVectorGlyph _setContainsNamedColorStyles:];
+-[CUINamedVectorGlyph _setFlippable:];
+-[CUINamedVectorGlyph _setGlyphSize:];
+-[CUINamedVectorGlyph _setGlyphWeight:];
+-[CUINamedVectorGlyph _setLayoutDirection:];
+-[CUINamedVectorGlyph _setPointSize:];
+-[CUINamedVectorGlyph _setUltralightInterpolationSource:];
+-[CUINamedVectorGlyph _stylePrefixForRenderingMode:];
+-[CUINamedVectorGlyph _ultralightInterpolationSource];
+-[CUINamedVectorGlyph _ultralightRendition];
+-[CUINamedVectorGlyph _unsafeComputeIfNeededDrawAttachmentData];
+-[CUINamedVectorGlyph alignmentRectForTargetSize:scale:];
+-[CUINamedVectorGlyph attributesForLayerNamed:];
+-[CUINamedVectorGlyph attributesForLayerNamed:inRendition:];
+-[CUINamedVectorGlyph copyWithContinuousWeight:continuousSize:];
+-[CUINamedVectorGlyph copyWithPointSize:];
+-[CUINamedVectorGlyph copyWithPointSize:continuousWeight:continuousSize:];
+-[CUINamedVectorGlyph edgeDefinitionTextureWithBufferAllocator:];
+-[CUINamedVectorGlyph fillImageNames];
+-[CUINamedVectorGlyph fillImageWithName:];
+-[CUINamedVectorGlyph gradientTextureWithBufferAllocator:];
+-[CUINamedVectorGlyph hasImageFills];
+-[CUINamedVectorGlyph hierarchicalLayerThresholds];
+-[CUINamedVectorGlyph imageWithHierarchicalPrimaryColor:];
+-[CUINamedVectorGlyph imageWithPaletteColorResolver:];
+-[CUINamedVectorGlyph initWithName:scaleFactor:deviceIdiom:pointSize:continuousWeight:continuousSize:interpolatedFromRegular:ultralight:black:fromCatalog:themeRef:];
+-[CUINamedVectorGlyph initWithName:scaleFactor:deviceIdiom:pointSize:continuousWeight:continuousSize:interpolatedFromRegular:ultralight:black:fromCatalog:themeRef:locale:];
+-[CUINamedVectorGlyph initWithName:scaleFactor:deviceIdiom:pointSize:fromCatalog:usingRenditionKey:fromTheme:];
+-[CUINamedVectorGlyph initWithName:scaleFactor:deviceIdiom:pointSize:fromCatalog:usingRenditionKey:themeRef:locale:];
+-[CUINamedVectorGlyph intWithName:scaleFactor:deviceIdiom:pointSize:weight:glyphSize:interpolatedFromRegular:ultralight:black:fromCatalog:themeRef:];
+-[CUINamedVectorGlyph interiorAlignmentRectForTargetSize:scale:];
+-[CUINamedVectorGlyph interiorAlignmentRectUnrounded];
+-[CUINamedVectorGlyph isKnockoutEnabledForHierarchicalLayerAtIndex:opacity:];
+-[CUINamedVectorGlyph isKnockoutEnabledForMulticolorLayerAtIndex:opacity:];
+-[CUINamedVectorGlyph isKnockoutEnabledForPaletteLayerAtIndex:opacity:];
+-[CUINamedVectorGlyph layerStackWithDisplayScale:];
+-[CUINamedVectorGlyph layerStackWithDisplayScale:forTargetSize:];
+-[CUINamedVectorGlyph layerStackWithDisplayScale:forTargetSize:withColorResolver:];
+-[CUINamedVectorGlyph layerStackWithDisplayScale:forTargetSize:withHierarchyColorResolver:];
+-[CUINamedVectorGlyph layerStackWithDisplayScale:forTargetSize:withPaletteColorResolver:];
+-[CUINamedVectorGlyph layerStackWithDisplayScale:forTargetSize:withPaletteColors:];
+-[CUINamedVectorGlyph layerStackWithDisplayScale:forTargetSize:withTintColor:];
+-[CUINamedVectorGlyph layerStackWithDisplayScale:withColorResolver:];
+-[CUINamedVectorGlyph layerStackWithDisplayScale:withHierarchyColorResolver:];
+-[CUINamedVectorGlyph layerStackWithDisplayScale:withPaletteColorResolver:];
+-[CUINamedVectorGlyph layerStackWithDisplayScale:withPaletteColors:];
+-[CUINamedVectorGlyph layerStackWithDisplayScale:withTintColor:];
+-[CUINamedVectorGlyph makeLayerWithColorResolver:];
+-[CUINamedVectorGlyph maskShape];
+-[CUINamedVectorGlyph monochromeLayerNamesInRendition:];
+-[CUINamedVectorGlyph multicolorColorNames];
+-[CUINamedVectorGlyph multicolorLayerColorNames];
+-[CUINamedVectorGlyph multicolorLayerThresholds];
+-[CUINamedVectorGlyph newEncapsulatedGlyphWithConfiguration:];
+-[CUINamedVectorGlyph numberOfTemplateLayers];
+-[CUINamedVectorGlyph paletteLayerThresholds];
+-[CUINamedVectorGlyph paletteLevels];
+-[CUINamedVectorGlyph pathForLayerNamed:];
+-[CUINamedVectorGlyph rasterizeImageUsingScaleFactor:forTargetSize:hierarchicalPrimaryColor:];
+-[CUINamedVectorGlyph rasterizeImageUsingScaleFactor:forTargetSize:withPaletteColorResolver:];
+-[CUINamedVectorGlyph referenceCanvasSize];
+-[CUINamedVectorGlyph referenceGlyph];
+-[CUINamedVectorGlyph resolveAutomaticWithConfig:adjustX:adjustY:sizeAdjustment:];
+-[CUINamedVectorGlyph resolveMetricCenterWithConfig:offsetX:offsetY:scaleFactor:];
+-[CUINamedVectorGlyph resolvedFillStyle];
+-[CUINamedVectorGlyph resolvedVariableMode];
+-[CUINamedVectorGlyph setFontMatchingScaleFactor:];
+-[CUINamedVectorGlyph setRepresentsOnDemandContent:];
+-[CUINamedVectorGlyph strokeWidthForLayerNamed:];
+-[CUINamedVectorGlyph strokeWidthForLayerNamed:inRendition:];
+-[CUINamedVectorGlyph styleForLayerName:];
+-[CUINamedVectorGlyph templateLayerThresholds];
+-[CUINamedVectorGlyph unsafeDrawAttachmentData];
+-[CUINamedVectorGlyph variableMode];
+```

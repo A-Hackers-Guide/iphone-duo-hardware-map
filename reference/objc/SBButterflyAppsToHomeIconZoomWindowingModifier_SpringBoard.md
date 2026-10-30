@@ -1,0 +1,137 @@
+# `SBButterflyAppsToHomeIconZoomWindowingModifier`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBWindowingModifier`
+- 29 instance variables, 8 properties, 80 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"SBAppLayout" _zoomingAppLayout;
+@"SBAppLayout" _fromAppLayout;
+@"SBAppLayout" _toAppLayout;
+@"SBAppsRegionModel" _initialAppsRegionModel;
+@"SBAppsRegionModel" _toAppsRegionModel;
+{CGRect="origin"{CGPoint="x"d"y"d}"size"{CGSize="width"d"height"d}} _homeScreenIconFrame;
+d _homeScreenIconCornerRadius;
+d _homeScreenIconScale;
+B _homeScreenIconIsWidget;
+B _homeScreenIconIsSmallWidget;
+q _direction;
+B _shouldAcceleratedHomeButtonPressBegin;
+B _genieEnabled;
+B _hasResetCornerRadius;
+B _isWaitingForGlassHighlightDelay;
+@"NSUUID" _transitionID;
+B _isHidingDockIcon;
+B _wantsResignActiveAndAsyncRenderingAssertions;
+@"SBButterflyCoplanarWindowingModifier" _coplanarModifier;
+q _coplanarSpacingType;
+@"SBDeckRegionModel" _overrideDeckRegionModel;
+@"SBAppsRegionModel" _overrideAppsRegionModel;
+B _shouldUpdateIconViewVisibility;
+B _shouldMatchMoveToIconView;
+B _canAddVelocityKickToHurdleDock;
+B _shouldForceDefaultAnchorPointForTransition;
+B _shouldDisableAsyncRendering;
+B _genieDisabled;
+B _supportsGlassHighlight;
+```
+
+## Properties
+
+```
+@property (TB,N,V_shouldUpdateIconViewVisibility) shouldUpdateIconViewVisibility;
+@property (TB,N,V_shouldMatchMoveToIconView) shouldMatchMoveToIconView;
+@property (TB,N,V_canAddVelocityKickToHurdleDock) canAddVelocityKickToHurdleDock;
+@property (TB,N,V_shouldForceDefaultAnchorPointForTransition) shouldForceDefaultAnchorPointForTransition;
+@property (TB,N,V_shouldDisableAsyncRendering) shouldDisableAsyncRendering;
+@property (TB,N,GisGenieDisabled,V_genieDisabled) genieDisabled;
+@property (TB,N,V_supportsGlassHighlight) supportsGlassHighlight;
+@property (T@"SBAppLayout",R,N,V_zoomingAppLayout) zoomingAppLayout;
+```
+
+## Instance methods
+
+```
+-[SBButterflyAppsToHomeIconZoomWindowingModifier homeScreenScale];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier homeScreenBackdropBlurProgress];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier homeScreenDimmingAlpha];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier isSwitcherWindowUserInteractionEnabled];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier shouldUseAnchorPointToPinLayoutRolesToSpace:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier homeScreenAlpha];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier containerStatusBarAnimationDuration];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier isHomeScreenContentRequired];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier shouldForceDefaultAnchorPointForTransition];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier clipsToUnobscuredMarginAtIndex:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier shouldAsyncRenderUntilDelay:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier shouldFireTransitionCompletionInDefaultRunLoopMode];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier shouldScaleOverlayToFillBoundsAtIndex:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier visibleSplitViewHandleNubViews];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier setShouldForceDefaultAnchorPointForTransition:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier homeScreenBackdropBlurType];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier _layoutSettings];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier adjustedSpaceAccessoryViewFrame:forAppLayout:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier isSwitcherWindowVisible];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier _normalizedHomeScreenTargetZoomPercentBetweenCenterAndEdge:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier canAddVelocityKickToHurdleDock];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier shouldPinLayoutRolesToSpace:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier transitionDidUpdate:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier adjustedSpaceAccessoryViewScale:forAppLayout:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier isWallpaperRequiredForSwitcher];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier setShouldDisableAsyncRendering:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier fadeInDelayForSplitViewHandles];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier shouldAcceleratedHomeButtonPressBegin];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier _genieCounterScaleIfNeeded];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier _settingsByInterpolatingBetween:and:progress:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier wallpaperStyle];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier genieAttributesForAppLayout:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier wallpaperScale];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier supportsGlassHighlight];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier transitionWillBegin:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier visibleItems];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier shouldPerformCrossfadeForReduceMotion];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier cornersForItem:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier isGenieDisabled];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier setGenieDisabled:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier setShouldUpdateIconViewVisibility:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier shouldMatchMoveToIconView];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier _isIndexZoomAppLayout:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier fullyPresentedFrameForAppLayout:frame:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier _normalizedHomeScreenIconZoomPercentBetweenTopAndBottom:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier asyncRenderingDisabled];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier appLayoutsToResignActive];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier animationAttributesForItem:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier setShouldMatchMoveToIconView:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier opacityForItem:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier prefersHomeAffordanceInItemContainerForLayoutElement:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier shouldUpdateIconViewVisibility];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier perspectiveAngleForItem:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier asyncRenderingAttributesForAppLayout:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier timerFired:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier topMostItems];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier visibleAppSpaces];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier _isEffectivelyHome];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier frameForItem:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier setSupportsGlassHighlight:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier shouldDisableAsyncRendering];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier wantsAsynchronousSurfaceRetentionAssertion];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier setCanAddVelocityKickToHurdleDock:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier willBegin];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier _boundingBoxForZoomingAppLayout];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier _layoutSettingsForTargetCenter:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier _regionFrameForZoomingAppLayout];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier deckRegionModel];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier appsRegionModel];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier _boundingBoxForZoomingAppLayoutInRegion];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier _containerBoundsInRegion];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier _hasEffectivelyTransitionedToFullScreenApps];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier _homeScreenIconFrameInRegion];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier _screenRegionForZoomingAppLayout];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier _zoomedDownFrameForZoomingAppLayout];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier initWithZoomingAppLayout:homeScreenIconFrame:direction:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier initWithZoomingAppLayout:homeScreenIconFrame:direction:initialAppsRegionModel:coplanarSpacingType:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier shouldInterruptForActivity:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier transitionDidComplete:];
+-[SBButterflyAppsToHomeIconZoomWindowingModifier zoomingAppLayout];
+```

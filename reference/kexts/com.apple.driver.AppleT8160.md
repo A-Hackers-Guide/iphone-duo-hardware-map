@@ -1,0 +1,2951 @@
+# `com.apple.driver.AppleT8160`
+
+- Name: AppleT8160
+- Version: `1`
+- UUID: `E4569AA0-E02E-37D9-A3D0-95CC8EDC2837`
+- Source version: `264.40.13.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleEverestErrorHandler`](com.apple.driver.AppleEverestErrorHandler.md) 1.0, [`com.apple.iokit.IOReportFamily`](com.apple.iokit.IOReportFamily.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (4) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io`](../devicetree/root__arm-io.md) | `AppleSoCIOPSD` | `arm-io,t8160` |
+| [`/arm-io/error-handler`](../devicetree/root__arm-io__error-handler.md) | `AppleSoCErrorHandler` | `error-handler,t8160` |
+| [`/arm-io/soc-misc`](../devicetree/root__arm-io__soc-misc.md) | `AppleSoCMisc` | `soc-misc,t8160` |
+| [`/arm-io/soc-reporter`](../devicetree/root__arm-io__soc-reporter.md) | `AppleSoCReporter` | `soc-reporter,t8160` |
+
+## IOKit personalities (4) [KC]
+
+### AppleSoCErrorHandler
+- `CFBundleIdentifier`: `com.apple.driver.AppleT8160`
+- `IOClass`: `AppleSoCErrorHandler`
+- `IONameMatch`: `error-handler,t8160`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleT8160`
+- `IOPlatformActiveAction`: `89000`
+- `IOPlatformPanicAction`: `89000`
+- `IOPlatformQuiesceAction`: `89000`
+- `IOPlatformSleepAction`: `89000`
+- `IOProviderClass`: `AppleARMIODevice`
+
+### AppleSoCIO
+- `CFBundleIdentifier`: `com.apple.driver.AppleT8160`
+- `IOClass`: `AppleSoCIOPSD`
+- `IONameMatch`: `arm-io,t8160`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleT8160`
+- `IOPlatformActiveAction`: `80000`
+- `IOProviderClass`: `IOPlatformDevice`
+
+### AppleSoCMisc
+- `CFBundleIdentifier`: `com.apple.driver.AppleT8160`
+- `IOClass`: `AppleSoCMisc`
+- `IONameMatch`: `soc-misc,t8160`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleT8160`
+- `IOPlatformActiveAction`: `98000`
+- `IOPlatformQuiesceAction`: `99000`
+- `IOPlatformWakeAction`: `810`
+- `IOProviderClass`: `AppleARMIODevice`
+
+### AppleSoCReporter
+- `CFBundleIdentifier`: `com.apple.driver.AppleT8160`
+- `IOClass`: `AppleSoCReporter`
+- `IONameMatch`: `soc-reporter,t8160`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleT8160`
+- `IOPlatformActiveAction`: `89000`
+- `IOPlatformQuiesceAction`: `89000`
+- `IOProviderClass`: `AppleARMIODevice`
+
+
+## C++ classes (9) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleSoCErrorHandler` | 0x1d0f8 | AppleSoCErrorHandlerCommon → IOService → IORegistryEntry |
+| `AppleSoCErrorHandlerCommon` | 0x2110 | IOService → IORegistryEntry |
+| `AppleSoCFunctionPerfCycleCount` | 0x40 | AppleARMFunction |
+| `AppleSoCIO` | 0x140 | AppleARMIO → IOPlatformIO → IOService → IORegistryEntry |
+| `AppleSoCIOPSD` | 0x140 | AppleSoCIO → AppleARMIO → IOPlatformIO → IOService → IORegistryEntry |
+| `AppleSoCMisc` | 0x318 | AppleSoCMiscCommon → IOService → IORegistryEntry |
+| `AppleSoCMiscCommon` | 0x208 | IOService → IORegistryEntry |
+| `AppleSoCMiscFunctionSubmitVoteForceWakeupDram` | 0x38 | AppleARMFunction |
+| `AppleSoCReporter` | 0xf0 | IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x00018816 off=0x007a3050-0x007bb866 addr=0xfffffe00077a7050-0xfffffe00077bf866 r--/r--   __TEXT            
+	sz=0x00000120 off=0x007a3768-0x007a3888 addr=0xfffffe00077a7768-0xfffffe00077a7888               __TEXT.__const            
+	sz=0x00017fde off=0x007a3888-0x007bb866 addr=0xfffffe00077a7888-0xfffffe00077bf866               __TEXT.__cstring          (CstringLiterals)
+001: LC_SEGMENT_64 sz=0x0006557c off=0x027a14f0-0x02806a6c addr=0xfffffe00097a54f0-0xfffffe000980aa6c r-x/r-x   __TEXT_EXEC       
+	sz=0x00064f9c off=0x027a14f0-0x0280648c addr=0xfffffe00097a54f0-0xfffffe000980a48c          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000005e0 off=0x0280648c-0x02806a6c addr=0xfffffe000980a48c-0xfffffe000980aa6c          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x000012e4 off=0x049a1be8-0x049a2ecc addr=0xfffffe000b9a5be8-0xfffffe000b9a6ecc rw-/rw-   __DATA            
+	sz=0x00000b58 off=0x049a1be8-0x049a2740 addr=0xfffffe000b9a5be8-0xfffffe000b9a6740               __DATA.__data             
+	sz=0x00000178 off=0x00000000-0x00000178 addr=0xfffffe000b9a6740-0xfffffe000b9a68b8               __DATA.__common           (Zerofill)
+	sz=0x00000614 off=0x00000000-0x00000614 addr=0xfffffe000b9a68b8-0xfffffe000b9a6ecc               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x0001a0b8 off=0x0123a2b0-0x01254368 addr=0xfffffe000823e2b0-0xfffffe0008258368 rw-/rw-   __DATA_CONST      
+	sz=0x00000040 off=0x0123a2b0-0x0123a2f0 addr=0xfffffe000823e2b0-0xfffffe000823e2f0         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000038 off=0x0123a2f0-0x0123a328 addr=0xfffffe000823e2f0-0xfffffe000823e328         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00018de8 off=0x0123a328-0x01253110 addr=0xfffffe000823e328-0xfffffe0008257110         __DATA_CONST.__const            
+	sz=0x00000540 off=0x01253110-0x01253650 addr=0xfffffe0008257110-0xfffffe0008257650         __DATA_CONST.__kalloc_type      
+	sz=0x00000960 off=0x01253650-0x01253fb0 addr=0xfffffe0008257650-0xfffffe0008257fb0         __DATA_CONST.__kalloc_var       
+	sz=0x000002f0 off=0x01253fb0-0x012542a0 addr=0xfffffe0008257fb0-0xfffffe00082582a0         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000b8 off=0x012542a0-0x01254358 addr=0xfffffe00082582a0-0xfffffe0008258358         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000010 off=0x01254358-0x01254368 addr=0xfffffe0008258358-0xfffffe0008258368         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 211 at 0x04ae7fa8
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     E4569AA0-E02E-37D9-A3D0-95CC8EDC2837
+008: LC_SOURCE_VERSION           264.40.13.0.0
+009: LC_FUNCTION_STARTS          offset=0x004ab38f0 size=0x5d8
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleExecutable`: `AppleT8160`
+- `CFBundleIdentifier`: `com.apple.driver.AppleT8160`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleT8160`
+- `CFBundleNumericVersion`: `16809984`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `AppleT8160`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2023-2025 Apple Inc. All rights reserved.`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleT8160.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198897790896`
+- `_PrelinkExecutableRelativePath`: `AppleT8160`
+- `_PrelinkExecutableSize`: `626990`
+- `_PrelinkExecutableSourceAddr`: `-2198897790896`
+- `_PrelinkKmodInfo`: `-2198828590104`
+
+## Strings (2791) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `txu_noaccess_err_info5_piogw_subch`
+- `_psdHandleInterrupt`
+- `ds_wr_err_info_acc0c0_amcc0plane0_eid`
+- `rxcu_noaccess_err_info3_acc1c0_addr_lo`
+- `rxu_tbl_lookup_err_info_amcc0plane1_err_type`
+- `PMC_ASSERT_BWR_INVALID_ISOC_SOC_THR_TUNABLES`
+- `_afc_mccni0DS_RD_REFL_PIOGW_ERROR`
+- `amcc-error-handler`
+- `PMC panic fail:%d ps:%d\\n`
+- `ptd-range`
+- `voltage-states5-sram`
+- `txu_routing_err_info2_acc1c0_p2p_auxid_multi_hit_err`
+- `reg-maps`
+- `ANE1_RXL`
+- `rxcu_noaccess_err_info2_acc0c0_addr_lo`
+- `txu_routing_err_info2_piogw_dstcid`
+- `ANS_RXL`
+- `%s:%d: stop polling, _dcsOdtsBelowThresholdCount = %d\n\n`
+- `rxcu_routing_err_info2_refl_subch`
+- `_groupHistReporters[histGroupIdx][counterIdx]`
+- `PMC_ASSERT_RESOLVED_VAL_TOO_LARGE`
+- `GFX5`
+- `txu_data_queue_trig_err_info_amcc0plane2_ch`
+- `rxcu_noaccess_err_info2_acc1c0_tid`
+- `txu_routing_err_info0_amcc0plane0_dstcid`
+- `rxcu_noaccess_err_info4_acc1c1_dstpid`
+- `ds_wr_err_info_refl_piogw_auxid`
+- `void ReporterBase::_initRegMap(RegMap, UInt32)`
+- `PORT_ILLEGAL_PIO_TRAFFIC_EVENT_IRQ_DATA`
+- `rxcu_routing_err_info0_acc0c0_srccid`
+- `rxcu_routing_err_info0_acc1c1_addr_hi`
+- `\"ReporterBase: failed to map device memory for %s at DT index %u\\n\" @%s:%d`
+- `BZERO`
+- `no_panic_on_corr_ecc_err`
+- `RT_LO_CLK_DFM`
+- `SEP_CPU_L_19NM_CPM`
+- `ptr >= pool->mem && ptr < pool->mem + pool->pool_size`
+- `PMC Assert ID: 0x%x (%s)`
+- `txu_routing_err_info1_amcc0plane0_auxid_miss_err`
+- `txu_data_queue_trig_err_info_acc1c0_p2p_ch`
+- `N_LO_CLK_DFM`
+- `sbd_const->type == PSD_SBD_TYPE_RETENTION`
+- `NS0_DISP`
+- `txu_routing_err_info1_amcc0plane1_srccid`
+- `txu_routing_err_info1_acc0c0_p2p_tid`
+- `rxcu_noaccess_err_info1_refl_dstcid`
+- `PIOGW`
+- `SEP_CPU_S_16NM_CPM`
+- `!resmgr_is_active(&_gpce_drv.gpce_resmgr)`
+- `ISP_TXL`
+- `function-power_gate`
+- `AppleSocReporter: PMCReporter: _pmcTelemSeqIdx %u, _pmcDramAddr 0x%llx _pmcDramSize %x \n \n`
+- `ds_kill_err_info_acc1c0_amcc0plane2_eid`
+- `rxcu_noaccess_err_info1_acc1c0_addr_hi`
+- `ds_kill_err_info_acc1c1_amcc0plane0_auxid`
+- `rxcu_routing_err_info0_acc1c1_cmd_miss_err`
+- `OSSharedPtr<IOStateReporter> PSDReporter::_getReporterForType(PerfCounterType)`
+- `_afc_mccni0LINK_AMCC0PLANE1_RXL_ERROR`
+- `MSR`
+- `reporter->initialize(_provider)`
+- `ncrdincri`
+- `PMC_ASSERT_SECONDARY_DIE_DOESNT_SUPPORT_RMBS`
+- `afc_mccni0.cpp`
+- `rxcu_noaccess_err_info1_acc0c0_dstcid`
+- `txu_noaccess_err_info0_piogw_subch`
+- `txu_routing_err_info2_amcc0plane2_auxid_multi_hit_err`
+- `ds_wr_err_info_acc1c1_amcc0plane2_src_ni`
+- `cpfwi`
+- `AppleMemCacheControllerV2`
+- `callFunction`
+- `txu_routing_err_info0_acc0c0_p2p_dest_multi_hit_err`
+- `rxcu_noaccess_err_info5_refl_srccid`
+- `link_err_info_acc1c1_txl_err_type`
+- `rxu_tbl_lookup_err_info_amcc0plane2_err_instance`
+- `txu_routing_err_info2_amcc0plane2_dstcid`
+- `AppleSocReporter: %s restore telem: runOffset %x doneOffset %x Reg 0x%x base 0x%llx \n\n`
+- `PMC CLPC Latency`
+- `rxcu_routing_err_info0_refl_data_ch_multi_hit_err`
+- `_afc_mccni0DS_FRIDXMGR_REFL_LOCAL_ERROR`
+- `PMGR`
+- `_psdDecodeInterrupt`
+- `, `
+- `ds_wr_err_info_acc1c0_amcc0plane1_src_ni`
+- `rxcu_noaccess_err_info1_acc0c0_srccid`
+- `txu_cmd_queue_trig_err_info_acc1c0_p2p_ch`
+- `rxcu_routing_err_info2_refl_cmd_ch_miss_err`
+- `_afc_mccni0DS_WR_ACC1C1_AMCC0PLANE2_ERROR`
+- `DCC_AIC_IRQ_EN_DCC_AIC_IRQ2_EN`
+- `job`
+- `New ps_reset message received(ps:%d) while %d already\\ active!\\n`
+- `ds_wr_err_info_acc0c0_amcc0plane0_vc`
+- `rxcu_noaccess_err_info0_acc1c0_tid`
+- `ds_kill_err_info_acc1c1_amcc0plane0_vc`
+- `txu_noaccess_err_info3_piogw_subch`
+- `PMC DVFM COP State`
+- `rxcu_noaccess_err_info1_acc1c1_srcpid`
+- `SECGATE_IPCE`
+- `\n%s`
+- `rxu_tbl_lookup_err_info_amcc0plane1_err_instance`
+- `link_err_info_amcc0plane0_txl_err_type`
+- `pmc_dram_addr`
+- `rxu_uflow_err_info_amcc0plane0_err_instance`
+- `rxcu_routing_err_info2_acc1c1_dstpid`
+- `rxcu_routing_err_info0_refl_cmd_ch_multi_hit_err`
+- `SOCNI1`
+- `_amccIllegalSizeConfigAccess`
+- `pmgr-error-handler`
+- `PSTATE_IS_MORE_ON(ps_runtime->p_current, ps_runtime->p_resolved)`
+- `12111112122212121212111112111212222222222222222121212121212121211`
+- `PMC_ASSERT_COP_SOC_CURRENT_TOO_LOW`
+- `SEP_CPU_ULL_19NM_CPM`
+- `AppleSoCIO`
+- `dart_cmaint_err_info0_payload_data_err`
+- `ds_kill_err_info_acc0c0_amcc0plane1_eid_in_range_err`
+- `AVE`
+- `rxcu_routing_err_info1_acc1c0_cmd_ch_multi_hit_err`
+- `cpbks`
+- `PMC_ASSERT_IPA_INTR_TIMEOUT`
+- `txu_routing_err_info1_amcc0plane1_vc`
+- `rxcu_noaccess_err_info3_acc1c1_subch`
+- `misc->num_scripts && misc->num_scripts <= PSD_GPCE_MAX_SCRIPTS`
+- `AppleSoCPsdPanicLog: row %u (slot %u offset %u length %u, slot size %llu) invalid — skipping\n`
+- `rxcu_noaccess_err_info1_acc1c0_vc`
+- `link_err_info_amcc0plane0_rxl_err_type`
+- `S2R_AOP`
+- `_afc_mccni0PTD__ERROR`
+- `\"SEP monitor error\" @%s:%d`
+- `dart_cmaint_err_info1_payload_size`
+- `_psdPerfCntReporter`
+- `SEP`
+- `txu_routing_err_info1_amcc0plane0_subch`
+- `ds_rd_err_info_acc1c0_amcc0plane2_eid`
+- `ds_kill_err_info_acc1c1_amcc0plane2_kill_if`
+- `ds_kill_err_info_acc0c0_amcc0plane1_vc`
+- `Latency (%u us units)`
+- `_afc_mccni0LINK_PIOGW_RXL_ERROR`
+- `site.AppleSoCIO`
+- `link_err_info_acc1c1_rxl_err_type`
+- `rxcu_routing_err_info2_acc1c0_srccid`
+- `LINK_ERR`
+- `xaction->type == IPA_XACTION_READ`
+- `UNKNOWN ERROR`
+- `virtual bool PMCReporter::initialize(IOService *)`
+- `txu_routing_err_info1_amcc0plane2_srcpid`
+- `rxcu_routing_err_info1_refl_cmd_ch_miss_err`
+- ` CLLT_GLB_CTL 0x%08x CLLT_STATUS 0x%08x ISP_CTL 0x%08x DISP_CTL 0x%08x DISPEXT0_CTL 0x%08x AUDIO_BASE_S_ADMA_CTL 0x%08x AUDIO_BASE_NS_ADMA_CTL 0x%08x AUDIO_LEAP_S_ADMA_CTL 0x%08x AUDIO_LEAP_NS_ADMA_CTL 0x%08x DISP_ADMA_CTL 0x%08x DISPEXT0_ADMA_CTL 0x%08x FREQ_CHANGE_CTL 0x%08x CALIBRATE_CTL 0x%08x P`
+- `status != PSD_IPA_IPA_CONFIG_REGISTERS_IPA_STATUS_RESP_TIMEOUT`
+- `_initApWakeSources`
+- `function-aic-stat-%s`
+- `txu_routing_err_info0_acc0c0_p2p_dstpid`
+- `ds_kill_err_info_acc0c0_piogw_kill_if`
+- `txu_routing_err_info0_amcc0plane2_srccid`
+- `ap-controls-metadata`
+- `GFX4`
+- `ds_wr_err_info_acc1c0_amcc0plane1_eid`
+- `rxcu_noaccess_err_info5_refl_addr_hi`
+- `rxcu_noaccess_err_info0_acc1c1_vc`
+- `rxcu_noaccess_err_info4_acc1c1_srccid`
+- `ds_kill_err_info_acc1c1_amcc0plane2_auxid`
+- `txu_noaccess_err_info3_piogw_vc`
+- `txu_routing_err_info0_acc0c0_p2p_auxid_multi_hit_err`
+- `txu_routing_err_info1_acc0c0_p2p_ch_miss_err`
+- `ds_wr_err_info_acc1c0_amcc0plane2_auxid`
+- `ds_kill_err_info_acc1c1_amcc0plane1_auxid`
+- `rxcu_noaccess_err_info3_refl_addr_hi`
+- `rxcu_noaccess_err_info2_acc0c0_size`
+- `rxcu_routing_err_info2_acc0c0_subch`
+- `AppleSocReporter: PerfCounterReporter created\n`
+- `txcu_uflow_err_info_acc1c0_err_type`
+- `PMC_ASSERT_IOPMBOX1_OVERFLOW`
+- `NS1_ECRDT_TXL`
+- `rxcu_routing_err_info2_acc0c0_addr_hi`
+- `ds_fridxmgr_err_info_acc0c0_amcc0plane0_oflow`
+- `%s @%s:%d`
+- `PMC_ASSERT_IPA_WDATA_DWORDX2_UNALIGNED`
+- `_amccDirMultiHit`
+- `_afc_mccni0RXCU_CMD_QUEUE_TRIG_ACC1C1_ERROR`
+- `\"AMCC %u DCS GROUP %u CHANNEL %u %s error: INTSTS 0x%08x%s\" @%s:%d`
+- `sbd_const && sbd_const->num_ps`
+- `rxcu_noaccess_err_info5_acc1c1_cmd`
+- `txu_noaccess_err_info1_piogw_cmd`
+- `_afc_mccni0DS_FRIDXMGR_ACC0C0_AMCC0PLANE2_ERROR`
+- `pmc_telem_seq_idx`
+- `txu_routing_err_info2_acc1c0_p2p_ch_miss_err`
+- `rxcu_noaccess_err_info0_refl_addr_hi`
+- `rxcu_noaccess_err_info2_refl_addr_lo`
+- `rxcu_noaccess_err_info5_acc0c0_srcpid`
+- `rxcu_routing_err_info1_acc0c0_dstcid`
+- `dart_cmaint_err_info0_payload_size`
+- `_amccTptagMultiHit`
+- `rxcu_routing_err_info1_acc1c0_subch`
+- `PMC_ASSERT_G_STATE_UPDATE_IN_SECONDARY`
+- `_afc_mccni0LINK_AMCC0PLANE2_TXL_ERROR`
+- `startup_callback != NULL`
+- `txu_routing_err_info2_acc0c0_p2p_dstpid`
+- `ds_kill_err_info_acc1c1_amcc0plane1_e2e_ch_miss_err`
+- `txu_routing_err_info0_amcc0plane2_subch`
+- `_afc_mccni0TXU_CMD_QUEUE_TRIG_AMCC0PLANE2_ERROR`
+- `ipa->pending & IPA_PENDING_READ`
+- `_configEngineDecodeInterrupt`
+- `GFX7-SRAM`
+- `voltage-states14-sram`
+- `rxcu_noaccess_err_info4_acc0c0_cmd`
+- `rxcu_routing_err_info0_acc0c0_data_dest_multi_hit_err`
+- `txu_noaccess_err_info1_piogw_vc`
+- `rxcu_routing_err_info1_acc1c1_subch`
+- `_amccMccDatOneBitErr`
+- `_afc_mccni0DS_RD_ACC1C0_PIOGW_ERROR`
+- `ds_wr_err_info_acc1c0_amcc0plane0_eid_in_range_err`
+- `rxcu_routing_err_info1_refl_dstpid`
+- `site.PsdGroupData`
+- `psd-counters`
+- `PORT_ILLEGAL_PIO_TRAFFIC_EVENT_IRQ_CMD`
+- `SEP_CPU_UR_CPM`
+- `txu_routing_err_info2_amcc0plane0_dest_miss_err`
+- `rxcu_noaccess_err_info3_acc1c1_addr_hi`
+- `txu_cmd_queue_trig_err_info_amcc0plane1_ch`
+- `rxcu_routing_err_info2_acc1c1_srccid`
+- `LLC_RAM`
+- `_amccAFCIllegalCmd`
+- `_afc_mccni0RXU_OFLOW_AMCC0PLANE1_ERROR`
+- `txu_routing_err_info2_amcc0plane1_srcpid`
+- `txu_routing_err_info2_amcc0plane2_vc`
+- `tagramerrlog0`
+- `RXCU_CMD_QUEUE_TRIG_ERR`
+- `_amccIllegalSidebandDsidDrop`
+- `sbd_parent_ps == job->ps_id`
+- `MiscReporter.cpp`
+- `rxcu_routing_err_info0_acc1c1_cmd_multi_hit_err`
+- `rxcu_routing_err_info2_refl_data_ch_miss_err`
+- `pullv`
+- `N_LO_CLK_SEPF2M`
+- `ds_kill_err_info_acc1c1_amcc0plane0_e2e_ch_miss_err`
+- `rxu_uflow_err_info_amcc0plane0_err_ch`
+- `_afc_mccni0DS_WR_ACC1C0_PIOGW_ERROR`
+- `afi`
+- `SPEC_ACCESS_ERR`
+- `AppleSoCPsdPanicLog.cpp`
+- `txu_routing_err_info2_acc0c0_p2p_dest_multi_hit_err`
+- `err_info:0x%x`
+- `prefetchrsp`
+- `_amccInconAFandDIRState`
+- `CHIPID_ERR`
+- `rxcu_routing_err_info1_acc0c0_data_dest_miss_err`
+- `ds_wr_err_info_acc1c1_amcc0plane0_eid`
+- `_amccDcsPioZeroisationApfErr`
+- `PRORES`
+- `rxu_uflow_err_info_amcc0plane1_err_ch`
+- `PMC_ASSERT_IPA_INTR_CALLBACK_ERROR`
+- `_afc_mccni0RXCU_NOACCESS_ACC0C0_ERROR`
+- `rxcu_noaccess_err_info4_refl_subch`
+- `rxcu_noaccess_err_info1_acc1c1_tid`
+- `rxcu_routing_err_info2_acc0c0_cmd_ch_multi_hit_err`
+- `txu_routing_err_info1_piogw_cmd`
+- `_afc_mccni0DS_FRIDXMGR_ACC1C1_AMCC0PLANE2_ERROR`
+- `site.AppleSoCMiscCommon`
+- `rxu_uflow_err_info_amcc0plane1_err_instance`
+- `rxcu_routing_err_info1_acc1c0_srcpid`
+- `fake_err_info_err_info`
+- `rxcu_noaccess_err_info5_acc1c1_subch`
+- `PMC_ASSERT_IOPMBOX3_UNDERFLOW`
+- `trueuc-irq-enable`
+- `AFT_TXL`
+- `rxcu_noaccess_err_info0_acc1c0_vc`
+- `rxcu_noaccess_err_info0_acc1c1_subch`
+- `site.MiscReporter`
+- `rxcu_noaccess_err_info3_acc1c1_srccid`
+- `rxcu_routing_err_info2_refl_srcpid`
+- `AppleSocReporter: Total counters: %u\n`
+- `GFXC_RXL`
+- `%s::%s: Failed to map %c%c%c%c aperture %u\n`
+- `rxcu_routing_err_info0_acc1c0_subch`
+- `rxcu_noaccess_err_info4_acc0c0_dstpid`
+- `rxcu_routing_err_info1_acc0c0_cmd_ch_multi_hit_err`
+- `dart_cmaint_err_info0_payload_addr_hi`
+- `AppleSoCIO::start: clock frequencies not published in device tree\n`
+- `rxcu_routing_err_info1_refl_data_ch_miss_err`
+- `GFX IPCE`
+- `disable-pmc-dump`
+- `rxcu_routing_err_info1_acc1c0_data_ch_miss_err`
+- `txu_routing_err_info1_acc0c0_p2p_dstcid`
+- `rxcu_noaccess_err_info0_refl_addr_lo`
+- `rxcu_routing_err_info0_acc0c0_data_ch_miss_err`
+- `ds_wr_err_info_acc1c0_amcc0plane0_vc`
+- `ds_kill_err_info_refl_local_subch`
+- `DS_RD_ERR`
+- `rxcu_noaccess_err_info3_acc1c1_dstpid`
+- `txu_routing_err_info1_piogw_ch_multi_hit_err`
+- `txu_routing_err_info2_piogw_auxid_miss_err`
+- `free-running-counter`
+- `ret == IPA_RET_PENDING`
+- `SEP_TXL`
+- `DISPSEC_RXL`
+- `txu_routing_err_info1_amcc0plane2_ch_miss_err`
+- `aferrlog3`
+- `voltage-states9-sram`
+- `rxcu_routing_err_info0_acc0c0_addr_hi`
+- `rxcu_routing_err_info2_acc0c0_srccid`
+- `ds_kill_err_info_acc0c0_amcc0plane1_subch`
+- `PMC_ASSERT_RMBS_NOT_SUPPORTED`
+- `_amccIllegalInbandDsidDrop`
+- `ds_kill_err_info_refl_local_kill_if`
+- `\"Invalid AFx NS decoder %p aperture index: %u\" @%s:%d`
+- `AppleSocReporter: Mapped %s: virtual=0x%llx, size=0x%x\n`
+- `txu_routing_err_info0_amcc0plane1_subch`
+- `ds_kill_err_info_refl_piogw_subch`
+- `AppleSoCErrorHandlerT8160.cpp`
+- `bin`
+- `txu_routing_err_info0_amcc0plane2_dest_multi_hit_err`
+- `txu_routing_err_info1_amcc0plane1_dstpid`
+- `RD_RESP_ERR`
+- `%.*s_POWER_OFF`
+- `txu_routing_err_info2_amcc0plane0_tid`
+- `rxcu_noaccess_err_info3_refl_size`
+- `SOCNI0`
+- `PMC_ASSERT_MAILBOX_PUT_ON_DISABLED_MBOX`
+- ` F%d WrBWR:0x%x RTBWHighThrPerfIntFreq:0x%x RTBWWrHighThrPerfIntFreq:0x%x`
+- `rxcu_routing_err_info2_acc1c1_data_dest_miss_err`
+- `txu_routing_err_info1_amcc0plane2_auxid_multi_hit_err`
+- `data`
+- `setBPR`
+- `_processApWakeSources`
+- `AVD_RXL`
+- `ds_wr_err_info_refl_piogw_eid`
+- `ds_fridxmgr_err_info_acc1c1_amcc0plane0_uflow`
+- `ds_wr_err_info_acc1c1_amcc0plane1_vc`
+- `PerfCounterReporter.cpp`
+- `_dcsStartDCSThermalLoop_block_invoke`
+- `_afc_mccni0DS_KILL_ACC1C1_AMCC0PLANE0_ERROR`
+- `_afc_mccni0TXU_CRMGR_OFLOW_AMCC0PLANE2_ERROR`
+- `(pdom_runtime ? (pdom_runtime->ps_count != UCHAR_MAX) : true) && (sbd_runtime ? (sbd_runtime->ps_count != UCHAR_MAX) : true) && (nr_sbd_runtime ? (nr_sbd_runtime->ps_count != UCHAR_MAX) : true) && (vrail_runtime ? (vrail_runtime->ps_count != UCHAR_MAX) : true)`
+- `txu_routing_err_info1_acc0c0_p2p_srccid`
+- `ncwrrsp`
+- `_afc_mccni0DS_WR_ACC1C0_AMCC0PLANE0_ERROR`
+- `_afc_mccni0DS_KILL_ACC1C0_AMCC0PLANE0_ERROR`
+- `_getErrorHandler`
+- `fsm_state == PSD_SLOT_FSM_IDLE`
+- `txu_routing_err_info0_amcc0plane1_dest_miss_err`
+- `rxu_oflow_err_info_amcc0plane2_err_type`
+- `txcu_uflow_err_info_acc1c1_err_ch`
+- `rxcu_noaccess_err_info4_acc1c0_srccid`
+- `ds_kill_err_info_acc0c0_piogw_subch`
+- `ds_kill_err_info_acc0c0_piogw_vc`
+- `PMC_ASSERT_TIMER_PSD_LAPLL_HANDSHAKE_TIMEOUT`
+- `_afc_mccni0TXU_CRMGR_UFLOW_ACC1C0_P2P_ERROR`
+- `\"%s::%s: VERIFY failed\" @%s:%d`
+- `txu_routing_err_info2_amcc0plane0_dstpid`
+- `ds_wr_err_info_acc1c1_amcc0plane0_eid_in_range_err`
+- `status == RTK_ST_OK`
+- `success_callback && (sbd_const && sbd_const->need_pmc_dvmr)`
+- `job == NULL`
+- `ANEXL0_RXL`
+- `rxcu_noaccess_err_info3_refl_subch`
+- `rxcu_routing_err_info2_acc0c0_data_ch_multi_hit_err`
+- `rxcu_routing_err_info0_refl_data_ch_miss_err`
+- `PMC_ASSERT_IPA_PEND_ONGOING_MISMATCH`
+- `no-panic-on-corr-ecc-err`
+- `WRLVL_AIC_IRQ_EN_WRLVL_AIC_IRQ3_EN`
+- `NS0_DATA_RXL`
+- `txu_routing_err_info1_amcc0plane1_auxid_miss_err`
+- `txu_routing_err_info1_acc1c0_p2p_cmd`
+- `rxcu_noaccess_err_info5_acc1c0_tid`
+- `ds_kill_err_info_acc0c0_amcc0plane0_auxid`
+- `txu_crmgr_uflow_err_info_amcc0plane1_data_err`
+- `PMC_ASSERT_TIMER_ISR_UNKNOWN`
+- `soc_misc_debug`
+- `voltage-states1`
+- `rxcu_noaccess_err_info2_acc1c1_cmd`
+- `ds_kill_err_info_refl_piogw_vc`
+- `flush`
+- `false`
+- `txu_routing_err_info1_acc0c0_p2p_vc`
+- `ds_wr_err_info_refl_piogw_e2e_ch_miss_err`
+- `TXU_ROUTING_ERR`
+- `PMC message expected proof-of-life message! Rcvd : %d\\n`
+- `NS0_CMD_RXL`
+- `%s::%s: wake time tracking enabled: %u counter entries, %u apertures\n`
+- `rxcu_noaccess_err_info1_refl_tid`
+- `rxcu_eid_queue_trig_err_info_acc0c0_ch`
+- `AppleSoCPsdPanicLog: row %u slot %u mapDeviceMemoryWithIndex returned NULL — skipping\n`
+- `txu_routing_err_info2_piogw_tid`
+- `txu_noaccess_err_info4_piogw_tid`
+- `rxu_oflow_err_info_amcc0plane0_err_type`
+- `Ni6`
+- `PSTATE_IS_EQUALLY_ON(ps_runtime->p_resolved, PSD_P0) && PSTATE_IS_EQUALLY_ON(ps_runtime->p_current, PSD_P0)`
+- `txu_routing_err_info2_amcc0plane0_dest_multi_hit_err`
+- `dart_cmaint_err_info1_payload_srcpid`
+- `PMC_ASSERT_IOPMBOX2_OVERFLOW`
+- `_afc_mccni0TXU_CRMGR_OFLOW_ACC1C0_P2P_ERROR`
+- `function-avoid_perf_state`
+- `NS0_GFXC`
+- `txu_routing_err_info1_acc0c0_p2p_dest_multi_hit_err`
+- `rxcu_noaccess_err_info3_acc0c0_srccid`
+- `txu_routing_err_info2_amcc0plane0_auxid_multi_hit_err`
+- `ds_wr_err_info_acc0c0_amcc0plane1_auxid`
+- `rxu_uflow_err_info_piogw_err_instance`
+- `rxcu_routing_err_info2_refl_cmd_ch_multi_hit_err`
+- `RXCU_NOACCESS_ERR`
+- `PMC_ASSERT_DEBUG_BUFFER_WRONG_IDX`
+- `ds_wr_err_info_acc1c0_amcc0plane2_eid_in_range_err`
+- `rxcu_noaccess_err_info3_acc1c0_dstpid`
+- `rxcu_routing_err_info0_refl_vc`
+- `cmd:0x%x vc:0x%x subch:0x%x srccid:0x%x srcpid:0x%x dstcid:0x%x dstpid:0x%x tid:0x%x addr_hi:0x%x data_ch_multi_hit_err:0x%x data_ch_miss_err:0x%x cmd_ch_multi_hit_err:0x%x cmd_ch_miss_err:0x%x data_dest_multi_hit_err:0x%x data_dest_miss_err:0x%x cmd_multi_hit_err:0x%x cmdd_miss_err:0x%x`
+- `*UNKNOWN*`
+- `evt`
+- `SEP_SIDE_CHANNEL_ATTACK_MONITOR_ERROR`
+- `ps_runtime->status.sbd_context_valid == 0`
+- `txu_routing_err_info0_acc1c0_p2p_ch_multi_hit_err`
+- `ds_wr_err_info_acc0c0_amcc0plane0_e2e_ch_miss_err`
+- `rxcu_noaccess_err_info2_acc1c1_addr_hi`
+- `AppleSocReporter: ID= 0x%04x | Offset=0x%x | numOfBucks=%u | numOfCounters=%u | scaler=%u | type=%u\n`
+- `GPCE misc verify fail! ps:%d rval:%08x\\n`
+- ` : 0x%x`
+- `\"Failed to find AMCC SRAM event handler\" @%s:%d`
+- `ap-wake-sources`
+- `1`
+- `rxcu_routing_err_info2_acc1c0_cmd_ch_multi_hit_err`
+- `ds_wr_err_info_acc0c0_amcc0plane0_auxid`
+- `tagramerrlog1`
+- `PMC_ASSERT_ML_PIXEL_RAIL_NOT_FMIN_AT_BOOT_LAPLL_REQUIREMENT`
+- `_afc_mccni0TXCU_TBL_LOOKUP_ACC0C0_ERROR`
+- `_setApWakeSourcesFilter`
+- `voltage-states13`
+- `CBT_AIC_IRQ_EN_CBT_AIC_IRQ0_EN`
+- `G_psd_ipa_ipa_config_registers_IPA_INTR_STATUS_INTR_TIMEOUT( intr_status) == 0`
+- `psd_task_get_my_id() == PSD_GPCE_TASK_ID`
+- `PMC timeout!\\n`
+- `rxcu_noaccess_err_info1_acc0c0_size`
+- `rxcu_routing_err_info2_refl_cmd_miss_err`
+- `PCIE IPCE`
+- `rxcu_routing_err_info2_acc1c0_subch`
+- `link_err_info_amcc0plane1_txl_err_type`
+- `txu_routing_err_info1_amcc0plane0_ch_miss_err`
+- `PMC_ASSERT_INCORRECT_ASSERT_MASK`
+- `!psd_fsm_table_is_assigned(job)`
+- `_fsd_info.sbd_id == PSD_SBD_INVALID_ID`
+- `%.*s`
+- `txu_routing_err_info0_amcc0plane1_tid`
+- `txu_routing_err_info1_amcc0plane1_ch_miss_err`
+- `link_err_info_amcc0plane2_txl_err_type`
+- `txu_crmgr_uflow_err_info_acc1c0_p2p_data_err`
+- `txcu_tbl_lookup_err_info_acc1c0_err_ch`
+- `PMC_ASSERT_BWR_RT_DCS_VOTE_TOO_HIGH`
+- `nub-fr-global-metadata`
+- `txu_crmgr_oflow_err_info_acc0c0_p2p_data_err`
+- `ds_kill_err_info_acc1c1_amcc0plane0_eid`
+- `ds_wr_err_info_acc1c1_amcc0plane2_auxid`
+- `AppleSoCIOPSD`
+- `_pmcDramSize`
+- `rxcu_noaccess_err_info5_acc1c0_srcpid`
+- `rxcu_routing_err_info0_acc0c0_subch`
+- `rxcu_routing_err_info1_acc1c1_data_ch_miss_err`
+- `oflow:0x%x uflow:0x%x`
+- `PMC_ASSERT_MESSAGEBOX_ERROR_IRQ_SET`
+- `txu_routing_err_info2_piogw_dstpid`
+- `_afc_mccni0RXCU_EID_QUEUE_TRIG_ACC1C1_ERROR`
+- `RD_TIMEOUT_ERR`
+- `site.AppleSoCErrorHandlerCommon`
+- `rxcu_noaccess_err_info5_acc0c0_size`
+- `rxcu_routing_err_info2_acc1c1_cmd_miss_err`
+- `PORT_VOQ_OF_EVENT_IRQ_CMD`
+- `PMC_ASSERT_COP_SOC_RESOLVED_TOO_HIGH`
+- `PMC_ASSERT_IPA_WDATA_DWORD_UNALIGNED`
+- `LOGIC_AVM_HV`
+- `rxcu_noaccess_err_info4_acc0c0_srcpid`
+- `rxcu_noaccess_err_info5_acc1c1_tid`
+- `121111212212122121221212212122121221211`
+- `txu_routing_err_info1_amcc0plane2_cmd`
+- `_psdGroups`
+- `aferrlog1`
+- `PMC_ASSERT_MAILBOX_GET_ON_DISABLED_MBOX`
+- `retry < PSD_STARTUP_MAX_RETRIES`
+- `rxu_uflow_err_info_amcc0plane2_err_ch`
+- `MCCNI0`
+- `PMC_ASSERT_IPA_XACTION_NOT_PENDING`
+- `NS0_ANE0`
+- `rxcu_noaccess_err_info0_acc1c0_cmd`
+- `txu_routing_err_info0_amcc0plane2_dstpid`
+- `pio-error-handler`
+- `AVE IPCE`
+- `_pmgrDecodeInterrupts`
+- `ds_wr_err_info_acc1c0_piogw_auxid`
+- `dart_cmaint_err_info0_payload_srcdevid`
+- `fatal`
+- `sep-error-handler`
+- `ni3-error-handler`
+- `CA`
+- `UInt64 PMCReporter::_readCounterValue(UInt32)`
+- `rxcu_noaccess_err_info0_refl_cmd`
+- `rxcu_noaccess_err_info5_acc0c0_tid`
+- `txu_routing_err_info0_amcc0plane2_dest_miss_err`
+- `txu_routing_err_info2_amcc0plane2_auxid_miss_err`
+- `cpbkrsp_c`
+- `ackop`
+- `_os_scheduler_running == 0`
+- `rxu_uflow_err_info_amcc0plane1_err_type`
+- `ds_kill_err_info_acc1c0_amcc0plane2_e2e_ch_miss_err`
+- `rxcu_noaccess_err_info4_refl_srcpid`
+- `rxcu_noaccess_err_info3_acc1c0_cmd`
+- `dart_cmaint_err_info0_payload_addr_lo`
+- `RDCAL_AIC_IRQ_EN_RDCAL_AIC_IRQ1_EN`
+- `PSTATE_IS_ACTIVE( PSTATE_GET_LEAST_ON(parent_ps_runtime->p_current, parent_ps_runtime->p_target))`
+- `SBD %d top level PS at %d state. Must be atleast P2`
+- `txu_routing_err_info1_acc0c0_p2p_srcpid`
+- `rxcu_noaccess_err_info0_acc0c0_subch`
+- `rxcu_noaccess_err_info5_acc1c0_srccid`
+- `parity_err_dir_info_0`
+- `_amccDSIDSecurityUpgrade`
+- `Blocking PS:%d is not in a down transition!\\n`
+- `NS0_CMD_TXL`
+- `txu_routing_err_info2_acc1c0_p2p_subch`
+- `rxcu_noaccess_err_info5_refl_size`
+- `rxcu_noaccess_err_info2_acc1c1_size`
+- `ds_wr_err_info_acc1c1_amcc0plane2_vc`
+- `AFI`
+- `_afc_mccni0RXU_UFLOW_AMCC0PLANE0_ERROR`
+- `PSTATE_IS_MORE_OR_EQUALLY_ON( PSTATE_GET_LEAST_ON(p_resolved, ps_runtime->p_current), PSD_P2)`
+- `1211111212221212111121111122112111111111`
+- `ds_wr_err_info_acc1c0_piogw_subch`
+- `dart_cmaint_err_info0_addr_miss_addr_lo`
+- `rxcu_noaccess_err_info5_acc1c0_dstcid`
+- `ds_kill_err_info_acc0c0_amcc0plane0_kill_if`
+- `ds_kill_err_info_acc1c0_amcc0plane1_eid`
+- `Invalid quiesce req! req for %d`
+- `rxcu_routing_err_info1_acc1c0_cmd_ch_miss_err`
+- `txu_routing_err_info1_acc1c0_p2p_vc`
+- `rxcu_noaccess_err_info3_acc0c0_addr_lo`
+- `_writeProtectedRegister32`
+- `ds_fridxmgr_err_info_acc1c1_amcc0plane2_uflow`
+- `AWAKE`
+- `_amccAFILeakyBktOvflo`
+- `desc->ipce_id == ipce_id`
+- `rxcu_noaccess_err_info3_acc0c0_cmd`
+- `txu_data_queue_trig_err_info_amcc0plane0_ch`
+- `NS1`
+- `no-service-gate`
+- `rxcu_noaccess_err_info5_acc1c0_vc`
+- `size:0x%x cmd:0x%x vc:0x%x subch:0x%x srccid:0x%x srcpid:0x%x dstcid:0x%x dstpid:0x%x tid:0x%x addr_hi:0x%x addr_lo:0x%x`
+- `PMC_ASSERT_WAKEUP_DVFM_LOG_IDX_TOO_LARGE`
+- `_amccWrDropHint`
+- `_afc_mccni0LINK_AMCC0PLANE0_RXL_ERROR`
+- `(sbd_counters == 0) && (ps_counters == 0)`
+- `MSR_RXL`
+- `ds_kill_err_info_refl_local_eid`
+- `ps_runtime->active_info && ps_runtime->active_info->job_in_flight == job`
+- `\n\n[%s] PLANE:%u %s `
+- `PMC_ASSERT_IPA_WRITE_TIMEOUT`
+- `site.uint32_t`
+- `rxcu_noaccess_err_info2_refl_dstcid`
+- `rxcu_noaccess_err_info5_acc0c0_dstcid`
+- `ds_wr_err_info_refl_piogw_subch`
+- `rxcu_routing_err_info1_acc1c1_data_dest_miss_err`
+- `rxcu_routing_err_info2_refl_dstcid`
+- `ds_wr_err_info_acc1c1_amcc0plane2_e2e_ch_miss_err`
+- `aferrlog4`
+- `txu_routing_err_info0_acc0c0_p2p_cmd`
+- `rxcu_noaccess_err_info4_acc0c0_tid`
+- `txu_routing_err_info2_piogw_subch`
+- `PORT_ILLEGAL_TRAFFIC_EVENT_IRQ_ECRDT`
+- `_afc_mccni0RXU_TBL_LOOKUP_AMCC0PLANE0_ERROR`
+- `WRCAL_AIC_IRQ_EN_WRCAL_AIC_IRQ3_EN`
+- `DCC_AIC_IRQ_EN_DCC_AIC_IRQ1_EN`
+- `Unexpected spare irq %d!\\n`
+- `txu_routing_err_info1_amcc0plane1_dstcid`
+- `dart_cmaint_err_info0_addr_miss_srcpid`
+- `rxcu_noaccess_err_info5_acc0c0_dstpid`
+- `ds_kill_err_info_acc0c0_amcc0plane2_auxid`
+- `txu_noaccess_err_info0_piogw_size`
+- `AppleSocReporter: Performance Group Configuration:\n`
+- `PSD Stats`
+- `PMS_PMGRCLKGEN_IOC`
+- `ds_kill_err_info_acc1c0_piogw_eid`
+- `link_err_info_acc0c0_rxl_err_type`
+- `rxcu_noaccess_err_info5_acc0c0_addr_lo`
+- `txu_routing_err_info1_piogw_vc`
+- `txu_noaccess_err_info4_piogw_srccid`
+- `ds_kill_err_info_acc0c0_amcc0plane1_auxid`
+- `_afc_mccni0TXU_CRMGR_OFLOW_AMCC0PLANE0_ERROR`
+- `DISPEXT IPCE`
+- `rxcu_routing_err_info2_acc1c0_dstcid`
+- `txu_routing_err_info2_amcc0plane0_srcpid`
+- `rxcu_routing_err_info0_refl_data_dest_multi_hit_err`
+- `REF_CNTOL_ERR`
+- `DMA_MAC_ERR`
+- `rxcu_noaccess_err_info5_acc1c1_addr_lo`
+- `rxu_oflow_err_info_piogw_err_ch`
+- `AMCC%d plane %d %s Error: intsts:%d 0x%08x`
+- `PMC_ASSERT_PTD_ADDRESSING_VIOLATION`
+- `_amccCpbkRspErrSts`
+- `_afc_mccni0DS_RD_ACC0C0_AMCC0PLANE2_ERROR`
+- `sac-error-handler`
+- `CKEY_ERR`
+- `ds_kill_err_info_acc1c0_piogw_auxid`
+- `rxcu_routing_err_info0_acc1c0_cmd_miss_err`
+- `rxcu_routing_err_info2_acc1c0_srcpid`
+- `txu_routing_err_info2_acc1c0_p2p_auxid_miss_err`
+- `rxcu_routing_err_info1_acc1c1_vc`
+- `rxu_tbl_lookup_err_info_amcc0plane0_err_type`
+- `PMC_ASSERT_INVALID_PMC_STATE_TO_REPORT_TO_PSD`
+- `_afc_mccni0LINK_ACC1C1_RXL_ERROR`
+- `rxcu_routing_err_info1_acc1c0_data_dest_miss_err`
+- `rxcu_noaccess_err_info2_acc0c0_subch`
+- `rxcu_noaccess_err_info3_acc0c0_dstpid`
+- `txu_routing_err_info0_amcc0plane0_tid`
+- `ipa->rw_callback`
+- `NS0_MSR`
+- `site.AppleSoCIOPSD`
+- `function-clock_gate`
+- `rank-cfg`
+- `metadata`
+- `rxcu_noaccess_err_info2_refl_subch`
+- `rxcu_noaccess_err_info0_acc1c0_addr_lo`
+- `PMC_ASSERT_PSD_DVMR_ONE_IN_FLIGHT`
+- `NS1_ANEXL0`
+- `_groupHistReporterCounts`
+- `_afc_mccni0LINK_ACC1C0_RXL_ERROR`
+- `(_resmgr_acquire(resmgr, res_idx)) == res_idx`
+- `_psdCounters`
+- `PMC_ASSERT_MBOX_OFL_UFL_UNKNOWN`
+- `ANE1_TXL`
+- `dart_cmaint_err_info1_addr_miss_addr_lo`
+- `txu_routing_err_info2_piogw_dest_multi_hit_err`
+- `AMCC%u PLANE%u %s error: INTSTS%u 0x%08x FLAG/STATE %#x/%#x INFO %#x/%#x/%#x ADDR %#llx CMD/AID/TID %#x(%s)/%#x/%#x WAYS %#x`
+- `rxcu_routing_err_info0_acc1c0_dstpid`
+- `ds_kill_err_info_acc1c1_amcc0plane1_subch`
+- `void ReporterBase::_initRegMaps()`
+- `PMC_ASSERT_MAILBOX_ALREADY_DISABLED`
+- `AppleSoCPsdPanicLog: psd-panic-data property absent — disabling\n`
+- `%s::%s: Disabling ap awake exit allow check\n`
+- `PMC_ASSERT_DEBUG_HOP_COUNTER_CV_TOO_HIGH`
+- `ni0-error-handler`
+- `DISPEXT`
+- `ANS`
+- `NS1_DATA_TXL`
+- `rxcu_noaccess_err_info0_acc0c0_tid`
+- `multihit_err_af_pkt_info`
+- `RXU_OFLOW_ERR`
+- `_amccAMCPSramParityErr`
+- `_afc_mccni0DS_KILL_ACC0C0_PIOGW_ERROR`
+- `txu_crmgr_uflow_err_info_piogw_data_err`
+- `rxcu_noaccess_err_info2_refl_size`
+- `rxcu_noaccess_err_info3_refl_cmd`
+- `rxcu_noaccess_err_info4_refl_srccid`
+- `rxcu_noaccess_err_info1_acc0c0_srcpid`
+- `ds_wr_err_info_acc0c0_piogw_vc`
+- `rxcu_noaccess_err_info4_acc1c1_dstcid`
+- `dart_cmaint_err_info1_payload_srcdevid`
+- `rxcu_noaccess_err_info3_refl_dstpid`
+- `psd-counter-group`
+- `AppleSoCReporter:: reporter %u not started \n`
+- `PMC_ASSERT_WAKEUP_RESOLVED_VEC_MISMATCH`
+- `_amccIllegalRORegionEnable`
+- `_afc_mccni0DS_FRIDXMGR_ACC1C0_AMCC0PLANE2_ERROR`
+- `_afc_mccni0TXU_CRMGR_UFLOW_PIOGW_ERROR`
+- `_afc_mccni0TXU_DATA_QUEUE_TRIG_ACC1C0_P2P_ERROR`
+- `RXCU_ROUTING_ERR`
+- `WRLVL_AIC_IRQ_EN_WRLVL_AIC_IRQ0_EN`
+- `SIO_TXL`
+- `GFXC`
+- `rxcu_noaccess_err_info4_acc0c0_srccid`
+- `rxcu_noaccess_err_info1_acc1c1_size`
+- `txu_routing_err_info1_amcc0plane2_vc`
+- `rxcu_routing_err_info1_refl_subch`
+- `PMGR_AON`
+- `PMC_ASSERT_MEMCP_SWORD_UNALIGNED`
+- `AppleSoCIO::start: this: %#lx, ACCP virt addr: %#lx, phys addr: %#lx\n`
+- `_PmcDriverReporter`
+- `AppleSocReporter: PMC globalTime %llu  ActiveTime %llu InactiveTime %llu id %u offset 0x%x\n\n`
+- `dart_cmaint_err_info2_addr_miss_addr_hi`
+- `txcu_uflow_err_info_acc1c1_err_type`
+- `rxcu_noaccess_err_info4_refl_size`
+- `txu_routing_err_info0_amcc0plane0_dest_multi_hit_err`
+- `txu_routing_err_info1_amcc0plane0_auxid_multi_hit_err`
+- `txu_routing_err_info2_amcc0plane0_subch`
+- `PMCReporter`
+- `rxcu_noaccess_err_info3_refl_srccid`
+- `ds_kill_err_info_acc1c0_amcc0plane1_eid_in_range_err`
+- `txcu_uflow_err_info_refl_err_instance`
+- `rxcu_routing_err_info2_acc1c1_dstcid`
+- `_perfCounters`
+- `multihit_err_dir_info_1`
+- `inconsistent_af_cmd_info_1`
+- `rxcu_noaccess_err_info3_refl_tid`
+- `txu_routing_err_info2_amcc0plane0_ch_multi_hit_err`
+- `ds_rd_err_info_acc0c0_piogw_eid`
+- `ds_wr_err_info_acc1c0_amcc0plane0_e2e_ch_miss_err`
+- `txu_noaccess_err_info0_piogw_srccid`
+- `PORT_CREDIT_OF_EVENT_IRQ_ECRDT`
+- `PMC_ASSERT_WAKEUP_SOC_PERF_STATE_CTL_PENDING`
+- `AVE_RXL`
+- `i8@?0`
+- `txcu_uflow_err_info_acc0c0_err_ch`
+- `UInt64 PerfCounterReporter::getPerfCycleCount(PerfRegGroup, UInt32, UInt32)`
+- `AppleSoCReporter::start: super::start failed\n`
+- `cpbki`
+- `_afc_mccni0TXU_ROUTING_AMCC0PLANE1_ERROR`
+- `waiters->num_waiters != UCHAR_MAX`
+- `ps_runtime->blocking_slot_id == PSD_SLOT_INVALID_ID`
+- `initWithTargetDataAndSymbol`
+- `GFX6-SRAM`
+- `%s::%s: Too many metadata instances (MAX=%d): %c%c%c%c\n`
+- `rxcu_noaccess_err_info0_refl_tid`
+- `_amccIllegalPIOAccess`
+- `%s:%d: start next polling\n\n`
+- `txu_routing_err_info1_acc1c0_p2p_srccid`
+- `rxcu_noaccess_err_info0_acc0c0_srcpid`
+- `txcu_oflow_err_info_acc1c0_err_instance`
+- `ds_kill_err_info_acc0c0_piogw_eid_in_range_err`
+- `rxcu_noaccess_err_info1_refl_srcpid`
+- `quiesce req fail: sbd: 0x%x`
+- `txu_routing_err_info2_amcc0plane1_tid`
+- `txu_crmgr_oflow_err_info_piogw_data_err`
+- `MCU_AMCGEN`
+- `NS0_AVD`
+- `rxcu_routing_err_info2_acc0c0_srcpid`
+- `dart_cmaint_err_info2_payload_data_err`
+- `gpuatomicrdwr`
+- `PMC_ASSERT_SECONDARY_DIE_DOESNT_BWR_DISP_FLOOR_UPDATE`
+- `nsi-error-handler`
+- `%s CLLT Escalated\nCED section\n\tSSW name:%s\n\tbut SSW not triggered.`
+- `ps_runtime->p_target == PSD_P2`
+- `(p_transport->transport != NULL) && (p_transport->transport->send != NULL) && (p_transport->transport->recv != NULL)`
+- `rxcu_noaccess_err_info2_refl_addr_hi`
+- `rxcu_noaccess_err_info3_acc0c0_vc`
+- `AppleSocReporter: Empty reg-maps property in device tree\n`
+- `Ignored %s\n`
+- `ret == PSD_PASS`
+- `ds_kill_err_info_acc1c0_amcc0plane2_subch`
+- `rxcu_routing_err_info2_acc1c1_srcpid`
+- `critical`
+- `cdemote_d`
+- `TXU_CMD_QUEUE_TRIG_ERR`
+- `PORT_CREDIT_OF_EVENT_IRQ_DATA`
+- `pool->num_free < pool->num_blocks`
+- `SoC Stats`
+- `rxcu_noaccess_err_info1_acc1c0_srccid`
+- `rxcu_noaccess_err_info0_acc1c1_dstcid`
+- `rxcu_noaccess_err_info2_acc1c1_vc`
+- `rxcu_routing_err_info2_acc0c0_vc`
+- `ds_wr_err_info_acc0c0_amcc0plane2_subch`
+- `_amccAFIIllegalCmd`
+- `txu_crmgr_uflow_err_info_acc0c0_p2p_credit_ch`
+- `ds_kill_err_info_refl_local_auxid`
+- `_railResidencyReporter`
+- `reporterName != nullptr`
+- `cmaint`
+- `PMC_ASSERT_INBOX_OVERFLOW`
+- `bit < IPCE_IPA_SIZE_BYTES * 8`
+- `misc->num_scripts < PSD_GPCE_MAX_SCRIPTS`
+- `_readRegister32`
+- `rxcu_noaccess_err_info2_acc0c0_addr_hi`
+- `ds_kill_err_info_acc0c0_amcc0plane0_subch`
+- `_afc_mccni0RXU_UFLOW_AMCC0PLANE1_ERROR`
+- `_afc_mccni0DART_CMAINT_ADDR_MISS_ERROR`
+- `CBT_AIC_IRQ_EN_CBT_AIC_IRQ3_EN`
+- `PSTATE_IS_EQUALLY_ON(cs, ps_runtime->p_target)`
+- `_clpcLatReporter`
+- `txu_routing_err_info0_amcc0plane1_vc`
+- `rxcu_noaccess_err_info0_acc1c1_tid`
+- `rxu_tbl_lookup_err_info_piogw_err_instance`
+- `ds_fridxmgr_err_info_acc1c1_amcc0plane0_oflow`
+- `txu_routing_err_info0_amcc0plane2_auxid_miss_err`
+- `PMC_ASSERT_WAKEUP_CURRENT_VEC_MISMATCH`
+- `txu_crmgr_uflow_err_info_amcc0plane2_credit_ch`
+- `dart_cmaint_err_info2_payload_addr_lo`
+- `ds_kill_err_info_acc1c0_amcc0plane1_vc`
+- `txu_noaccess_err_info0_piogw_addr_lo`
+- `bzero`
+- `Req seen on disabled SBD PS %d!\\n`
+- `link_err_info_acc1c0_txl_err_type`
+- `ds_kill_err_info_refl_piogw_eid_in_range_err`
+- `_writePMCRegister32`
+- `txu_routing_err_info2_amcc0plane1_dstpid`
+- `AppleSoCErrorHandler`
+- `PMC_ASSERT_DEBUG_TRACE_BUF_FULL`
+- `_amccMccDatMultiBitsErr`
+- `_afc_mccni0LINK_AMCC0PLANE1_TXL_ERROR`
+- `script_arr_index < PSD_NUM_SBD_IPCE_SCRIPTS`
+- `task < PSD_NUM_TASKS`
+- `(script_arr_index < PSD_NUM_VRAIL_GPCE_SCRIPTS) && vrail_const`
+- `sbd_runtime != NULL`
+- `DISPEXT_TXL`
+- `ATC`
+- `rxcu_noaccess_err_info1_acc1c1_dstpid`
+- `inconsistent_af_cmd`
+- `ncrdwrap`
+- `PMC_ASSERT_DEBUG_HOP_COUNTER_TV_TOO_HIGH`
+- `sched_task_state.num_ps_waiting != UCHAR_MAX`
+- `txcu_uflow_err_info_acc1c0_err_ch`
+- `PMC_ASSERT_IPA_TRANSATION_FAIL`
+- `TWCK2DQI_AIC_IRQ_EN_TWCK2DQI_AIC_IRQ2_EN`
+- `id != kIDReserved`
+- `txu_routing_err_info2_acc1c0_p2p_srcpid`
+- `rxcu_noaccess_err_info2_acc0c0_srccid`
+- `rxu_oflow_err_info_piogw_err_type`
+- `ds_rd_err_info_acc1c1_amcc0plane1_eid`
+- `_afc_mccni0LINK_AMCC0PLANE0_TXL_ERROR`
+- `CPU_HI_TEMP`
+- `ds_kill_err_info_acc1c1_amcc0plane1_eid`
+- `txcu_tbl_lookup_err_info_acc0c0_err_type`
+- `txu_noaccess_err_info4_piogw_subch`
+- `fillp`
+- `rxu_tbl_lookup_err_info_amcc0plane0_err_instance`
+- `rxcu_routing_err_info1_refl_data_dest_multi_hit_err`
+- `PMC_ASSERT_UNEXPECTED_DVMR_ENABLE`
+- `Incompatible schema version`
+- `rxcu_noaccess_err_info2_refl_cmd`
+- `rxcu_routing_err_info2_acc1c1_cmd`
+- `_decodeInfo_DS_RD_ERR`
+- `txu_routing_err_info0_amcc0plane1_addr_hi`
+- `DIE_%u_%s`
+- `AppleSoCErrorHandlerCommon.cpp`
+- `%s:%d: _dcsOdtsPanicThreshold = 0x%x\n\n`
+- `txu_routing_err_info0_acc1c0_p2p_subch`
+- `txu_routing_err_info2_acc1c0_p2p_dstpid`
+- `ackirsp_c`
+- `ADDR_DECODE`
+- `JPEG_RXL`
+- `ptd-ranges-smc`
+- `id <= kPmcCounterIDMaxCount`
+- `rxcu_noaccess_err_info4_acc0c0_size`
+- `ds_kill_err_info_acc0c0_amcc0plane0_e2e_ch_miss_err`
+- `txu_noaccess_err_info3_piogw_dstpid`
+- `_afc_mccni0FAKE__ERROR`
+- `_configEngineHandleInterrupt`
+- `pmc-telem-data`
+- `121111212212122121221212212122121221212211111111222`
+- `ds_fridxmgr_err_info_acc0c0_amcc0plane0_uflow`
+- `txu_routing_err_info2_amcc0plane2_addr_hi`
+- `rxcu_routing_err_info1_refl_addr_hi`
+- `PMC_ASSERT_MEMCP_DWORD_UNALIGNED`
+- `PMC_ASSERT_BWR_RES_LAT_EXCEED_MAX_THRESH`
+- `_amccDSIDClear`
+- `txu_routing_err_info1_amcc0plane0_tid`
+- `ds_wr_err_info_acc0c0_amcc0plane2_eid`
+- `PMC_ASSERT_MAILBOX_INVALID_TYPE`
+- `0x%08X`
+- `Expected PMC DVMR ack on sbd %d`
+- `ds_wr_err_info_acc0c0_amcc0plane1_subch`
+- `txu_routing_err_info0_piogw_dstpid`
+- `txu_noaccess_err_info2_piogw_srcpid`
+- `ds_kill_err_info_refl_local_eid_in_range_err`
+- `parity_err_dir_info_1`
+- `txu_crmgr_oflow_err_info_amcc0plane2_data_err`
+- `disable-spll-interrupt`
+- `NS1_ANE1`
+- `dart_cmaint_err_info1_addr_miss_tid`
+- `txu_noaccess_err_info2_piogw_dstcid`
+- `\"PerfCounterReporter: unknown event counter subtype %u\\n\" @%s:%d`
+- `_afc_mccni0DS_FRIDXMGR_ACC1C0_PIOGW_ERROR`
+- `PSD UNKNOWN ERROR (0x%x)`
+- `txu_routing_err_info1_amcc0plane1_srcpid`
+- `txcu_tbl_lookup_err_info_refl_err_instance`
+- `ds_kill_err_info_acc1c0_amcc0plane0_eid`
+- `rxcu_noaccess_err_info1_refl_subch`
+- `site.FreeRunningCounterData`
+- `site.AppleSoCReporter`
+- `PMC_ASSERT_STARTUP_SOC_PERF_STATE_CTL_PENDING`
+- `ANEXL0_TXL`
+- `GFX4-SRAM`
+- `rxcu_routing_err_info0_acc1c1_dstcid`
+- `PMC_ASSERT_BOOST_REQUEST_VALUE_TOO_HIGH`
+- `ipa->pending & IPA_PENDING_WRITE`
+- `\"AppleSoCIO::start: can't find 'function-service_gate', update Device Tree\" @%s:%d`
+- `dart_cmaint_err_info0_addr_miss_srcdevid`
+- `rxcu_routing_err_info0_refl_dstpid`
+- `_socEventCountReporter`
+- `AppleSocReporter: PSDReporter: _psdTelemSeqIdx %u, _psdDramAddr 0x%llx _psdDramSize %x \n \n`
+- `virtual void PSDReporter::configure(IOService *)`
+- `PCPU-SRAM`
+- `, rail:0x%x, limit:0x%x, latency:0x%x, resolved_vec:0x%x, target_vec:0x%x, current_vec:0x%x`
+- `rxcu_noaccess_err_info5_acc1c0_size`
+- `ds_wr_err_info_refl_piogw_src_ni`
+- `txcu_oflow_err_info_refl_err_type`
+- `rxcu_routing_err_info0_acc1c1_data_ch_miss_err`
+- `rxcu_routing_err_info1_acc1c1_data_ch_multi_hit_err`
+- `NS0_ECRDT_RXL`
+- `_initWakeTimeFromSleep`
+- `ds_kill_err_info_acc1c0_amcc0plane2_eid_in_range_err`
+- `txcu_uflow_err_info_acc0c0_err_type`
+- `rxu_uflow_err_info_piogw_err_ch`
+- `txu_noaccess_err_info2_piogw_cmd`
+- `site.PerfCounterData`
+- `void PSDReporter::_samplePsdTelemData()`
+- `eccmultibitserrlog`
+- `rxcu_routing_err_info2_acc1c0_vc`
+- `txu_routing_err_info0_acc1c0_p2p_dest_multi_hit_err`
+- `rxcu_routing_err_info0_acc1c1_data_dest_multi_hit_err`
+- `PMC_ASSERT_BWR_INVALID_DCS_THR_TUNABLES`
+- `PMC_ASSERT_TELE_COUNTER_IDX_CORRUPT_3`
+- `_amccCEFLOverflow`
+- `ipce-error-handler`
+- `N_HI_CLK_SEPF2M`
+- `voltage-states20`
+- `rxcu_noaccess_err_info1_acc1c1_srccid`
+- `txu_routing_err_info0_amcc0plane2_cmd`
+- `PMC_ASSERT_TELE_COUNTER_IDX_CORRUPT_5`
+- `_afc_mccni0RXCU_ROUTING_ACC0C0_ERROR`
+- `id < CALLBACK_MAX && !CALLBACK_IS_REGISTERED(sbd_runtime->sched_callbacks, id)`
+- `PMC_ASSERT_ID_UNMAPPED`
+- `rxcu_noaccess_err_info1_acc1c0_addr_lo`
+- `ds_wr_err_info_acc0c0_piogw_auxid`
+- `txu_routing_err_info1_piogw_srccid`
+- `txu_noaccess_err_info4_piogw_cmd`
+- `cwrbk_c`
+- `sched_task_state.flags.special_seq_active != UCHAR_MAX`
+- `ANS IPCE`
+- `void MiscReporter::_configureOperatingPointReporter()`
+- `txu_routing_err_info1_amcc0plane1_tid`
+- `ds_rd_err_info_acc0c0_amcc0plane1_eid`
+- `txu_noaccess_err_info1_piogw_addr_hi`
+- `txu_routing_err_info2_amcc0plane2_dest_multi_hit_err`
+- `_decodeInfo_LINK_ERR`
+- `AMCC%u PLANE%u %s error: INTSTS%u 0x%08x TAG_PAR_ERR_LOG0/1/2=%#x/%#x/%#x`
+- `%d:%08x/%08x `
+- `rxcu_noaccess_err_info4_refl_addr_lo`
+- `desc->num_scripts && desc->num_scripts <= PSD_IPCE_MAX_SCRIPTS`
+- `voltage-states18-sram`
+- `txu_routing_err_info2_acc0c0_p2p_vc`
+- `txu_routing_err_info2_amcc0plane2_dest_miss_err`
+- `virtual IOReturn AppleSoCFunctionPerfCycleCount::callFunction(void *, void *, void *)`
+- `DISPEXT_RXL`
+- `AppleSoCIO::start: failed to get accp_impl register map\n`
+- `function-service_reset`
+- `ds_fridxmgr_err_info_acc1c0_amcc0plane2_oflow`
+- `ds_wr_err_info_acc0c0_amcc0plane1_e2e_ch_miss_err`
+- `txu_routing_err_info2_piogw_srccid`
+- `rxcu_cmd_queue_trig_err_info_acc1c0_ch`
+- `AppleSocReporter: Psd Counter Configuration:\n`
+- `map < kRegMapCount`
+- `AMCC%u PLANE%u %s error: INTSTS%u 0x%08x ECCONEBITERRLOG(Bank/Way/Index/BitOffCL/BitOffHCL) %#x(%#x/%#x/%#x/%#x/%#x) ERRBITCNT %#x`
+- `_dcsCancelDCSThermalLoop`
+- `txu_routing_err_info0_amcc0plane1_auxid_multi_hit_err`
+- `txu_cmd_queue_trig_err_info_amcc0plane0_ch`
+- `txcu_oflow_err_info_acc1c1_err_instance`
+- `rxcu_routing_err_info0_refl_srcpid`
+- `UNKNOWN_CMD_ERR`
+- `rxcu_routing_err_info2_acc1c0_addr_hi`
+- `rxcu_routing_err_info2_acc1c0_data_dest_multi_hit_err`
+- `ds_wr_err_info_refl_local_src_ni`
+- `parity_err_af_pkt_addr_41to32`
+- `site.PerfCounterReporterFactory`
+- `SEP_TMM_FATAL_ERROR`
+- `chip-revision`
+- `, rail:%s, limit:0x%x, latency:0x%x, resolved_vec:0x%x, target_vec:0x%x, current_vec:0x%x`
+- `AppleSoCPsdPanicLog: setupFromProvider done, %u rows armed\n`
+- `rxcu_noaccess_err_info5_refl_cmd`
+- `txu_routing_err_info1_piogw_addr_hi`
+- `AppleSocReporter:   [%2u] %-16s | ID=0x%04x | Type=%u | Offset=%u | newHistBuck=%u | groupIndex=%u | GroupType=%u \n`
+- `DS_WR_ERR`
+- `psd-error-handler`
+- `ds_fridxmgr_err_info_refl_piogw_uflow`
+- `ncrdincrrsp`
+- `RDCAL_AIC_IRQ_EN_RDCAL_AIC_IRQ0_EN`
+- `num_resources < RESMGR_MAX_RESOURCES`
+- `AppleSoCMiscCommon`
+- `txu_routing_err_info2_acc0c0_p2p_subch`
+- `ds_wr_err_info_acc1c1_amcc0plane2_eid`
+- `PMC_ASSERT_DEBUG_NVIC_SNAP_SIZE_INCORRECT`
+- `SBR IPCE`
+- `%s:%d: _dcsOdtsBelowThresholdCount = %d\n\n`
+- `rxcu_noaccess_err_info2_acc1c0_size`
+- `txu_noaccess_err_info0_piogw_dstcid`
+- `err_ch:0x%x err_instance:0x%x err_type:0x%x`
+- `virtual bool PerfCounterReporter::initialize(IOService *)`
+- `PMC_ASSERT_BWR_MAX_LATENCY`
+- `_afc_mccni0LINK_ACC0C0_RXL_ERROR`
+- `txu_routing_err_info2_amcc0plane2_srcpid`
+- `_amccDSIDAgeOut`
+- `_afc_mccni0DS_KILL_ACC0C0_AMCC0PLANE1_ERROR`
+- `_afc_mccni0TXU_ROUTING_PIOGW_ERROR`
+- `nametag`
+- `SEP_CPU_SLL_CPM`
+- `ds_wr_err_info_acc0c0_amcc0plane2_src_ni`
+- `%.*s_POWER_ON`
+- `PTD_ERR`
+- `PMC_ASSERT_COP_SOC_TARGET_TOO_LOW`
+- `PMC_ASSERT_MAX`
+- `_afc_mccni0RXCU_NOACCESS_REFL_ERROR`
+- `txu_noaccess_err_info0_piogw_tid`
+- `offset < _psdDramSize`
+- `NS1_ATC`
+- `AppleSoCErrorHandlerCommon`
+- `ds_wr_err_info_acc1c0_amcc0plane2_e2e_ch_miss_err`
+- `_decodeInfo_TXU_CRMGR_OFLOW_ERR`
+- `enable-bwr-rt-thr-int`
+- `_initSAC`
+- `ECPU`
+- `PORT_VOQ_OF_EVENT_IRQ_ECRDT`
+- `irq_no %d during quiesce/wake!!\\n`
+- `AppleSoCMiscUserClient`
+- `void PMCReporter::_samplePmcTelemData()`
+- `_afc_mccni0TXU_CRMGR_UFLOW_ACC0C0_P2P_ERROR`
+- `new_table`
+- `job && callback`
+- `rxcu_noaccess_err_info5_refl_dstpid`
+- `txu_noaccess_err_info4_piogw_srcpid`
+- `cllt-error-handler`
+- `ODTS_TOL_ERR`
+- `instance < ARRAY_LEN(PSD_IPA_DEVS)`
+- `rxcu_noaccess_err_info0_acc0c0_cmd`
+- `txu_routing_err_info0_amcc0plane0_srccid`
+- `rxcu_noaccess_err_info2_acc1c1_srcpid`
+- `rxcu_noaccess_err_info4_acc1c1_addr_hi`
+- `kern.development`
+- `pool->mem`
+- `PMC_ASSERT_INVALID_ML_PIXEL_FSM_STATE`
+- `_afc_mccni0DS_KILL_ACC1C1_AMCC0PLANE2_ERROR`
+- `rxu_oflow_err_info_amcc0plane2_err_instance`
+- `rxcu_noaccess_err_info0_acc0c0_vc`
+- `rxcu_noaccess_err_info0_acc1c0_size`
+- `txcu_tbl_lookup_err_info_acc0c0_err_instance`
+- `txu_routing_err_info2_piogw_ch_miss_err`
+- `_legend`
+- `PSD_MANIFEST_REQUIRED_SCHEMA_MAJOR_VERSION == PSD_MANIFEST_SCHEMA_MAJOR_VERSION`
+- `txu_routing_err_info0_acc0c0_p2p_dest_miss_err`
+- `link_err_info_piogw_txl_err_type`
+- `txu_noaccess_err_info3_piogw_tid`
+- ` STS:0x%08x DATA0[0x%012lx]=0x%08x DATA1[0x%012lx]=0x%08x`
+- `_setWakeTimeFromSleep`
+- `rxcu_noaccess_err_info0_refl_subch`
+- `ds_fridxmgr_err_info_acc1c0_amcc0plane1_oflow`
+- `txu_crmgr_oflow_err_info_amcc0plane0_data_err`
+- `nackv`
+- `PMC_ASSERT_NON_ZERO_DVMR_DATA_AT_BOOT`
+- `!fsm_is_active(job->_tracker)`
+- `NS1_ISP`
+- `txu_routing_err_info2_amcc0plane1_srccid`
+- `rxcu_noaccess_err_info2_refl_tid`
+- `txu_routing_err_info0_piogw_auxid_multi_hit_err`
+- `ds_kill_err_info_acc0c0_amcc0plane1_kill_if`
+- `PMC_ASSERT_IPA_READ_TAIL_NONPENDING`
+- `JPEG`
+- `txu_routing_err_info2_amcc0plane1_dest_miss_err`
+- `txu_routing_err_info2_piogw_addr_hi`
+- `site.PerfGroupData`
+- `LOCAL_PIO_ACC_ERR`
+- `voltage-states13-sram`
+- `rxcu_routing_err_info0_acc1c0_dstcid`
+- `txu_routing_err_info2_acc1c0_p2p_dstcid`
+- `rxcu_routing_err_info2_refl_addr_hi`
+- `AMCC%u PLANE%u %s error: INTSTS%u 0x%08x ECCMULTIBITSERRLOG(Bank/Way/index/bitOffCL) %#x(%#x/%#x/%#x/%#x)`
+- `((ptr - pool->mem) % pool->block_size) == 0`
+- `rxcu_noaccess_err_info5_refl_srcpid`
+- `txu_routing_err_info1_amcc0plane0_addr_hi`
+- `txu_routing_err_info1_acc1c0_p2p_auxid_multi_hit_err`
+- `txu_noaccess_err_info2_piogw_addr_lo`
+- `ds_rd_err_info_acc1c0_piogw_eid`
+- `TXCU_OFLOW_ERR`
+- `_afc_mccni0RXCU_ROUTING_ACC1C1_ERROR`
+- `pmc_received_msg->raw_words.word1 == desc->sbd_id`
+- `txu_noaccess_err_info3_piogw_cmd`
+- `txu_routing_err_info1_amcc0plane2_dstcid`
+- `%.*s_UNKNOWN`
+- `IODeviceTree:/arm-io/pmp/iop-pmp-nub`
+- `ds_wr_err_info_acc1c0_amcc0plane0_subch`
+- `txu_data_queue_trig_err_info_acc0c0_p2p_ch`
+- `PMC_ASSERT_WAKEUP_TARGET_VEC_MISMATCH`
+- `_afc_mccni0DS_WR_ACC1C1_AMCC0PLANE1_ERROR`
+- `rxcu_noaccess_err_info2_acc1c0_addr_lo`
+- `txu_noaccess_err_info2_piogw_size`
+- `AMCC%u PLANE%u %s error: INTSTS%u 0x%08x FLAG/STATE %#x/%#x INFO %#x/%#x/%#x ADDR %#llx CMD/AID/TID %#x(%s)/%#x/%#x WAY/PARITY %#x/%#x`
+- `rval == done_words[i]`
+- `getBPR`
+- `rxcu_noaccess_err_info2_refl_dstpid`
+- `rxcu_noaccess_err_info3_acc1c0_size`
+- `rxcu_routing_err_info0_acc1c1_cmd_ch_miss_err`
+- `AppleSocReporter:   [%2u] %-16s | ID=0x%04x | Type=%u | SubType=%u | Group0=%u | Offset0=0x%08x | Group1=%u | Offset1=0x%08x\n`
+- `_afc_mccni0TXU_DATA_QUEUE_TRIG_AMCC0PLANE1_ERROR`
+- `_afc_mccni0TXCU_UFLOW_ACC0C0_ERROR`
+- `_dcsHandleInterrupt`
+- `ds_fridxmgr_err_info_acc0c0_piogw_oflow`
+- `ds_kill_err_info_acc1c1_amcc0plane2_eid`
+- `cdemote_c`
+- `_amccSramBufferErr`
+- `AppleSoCIO.cpp`
+- `rxcu_noaccess_err_info4_acc0c0_addr_lo`
+- `rxcu_noaccess_err_info5_acc1c0_cmd`
+- `rxcu_noaccess_err_info0_acc1c1_cmd`
+- `txu_routing_err_info0_piogw_srccid`
+- `PSDReporter.cpp`
+- `AppleSoCReporter:: %s reporter started successfully\n`
+- `PMC_ASSERT_TELE_COUNTER_IDX_CORRUPT_1`
+- `\"%s %s\" @%s:%d`
+- `link_err_info_acc1c0_rxl_err_type`
+- `PMC_ASSERT_DVMR_PIXEL_ENABLE_WO_RAIL_ENABLE`
+- `_amccMccTpMultiPar`
+- `free_node->_magic != MEMPOOL_MAGIC`
+- `Invalid sbd %d for shutdown!\\n`
+- `NS0_ANEXL1`
+- `ANEXL0`
+- `ds_kill_err_info_refl_local_vc`
+- `txcu_oflow_err_info_acc0c0_err_instance`
+- `rxcu_routing_err_info1_acc1c1_data_dest_multi_hit_err`
+- `_afc_mccni0DS_RD_ACC0C0_AMCC0PLANE1_ERROR`
+- `_pGetPmcLookupValue`
+- `isr_callback`
+- `txu_noaccess_err_info2_piogw_addr_hi`
+- `txu_routing_err_info2_acc0c0_p2p_ch_miss_err`
+- `NS0_AVE`
+- `txu_routing_err_info0_piogw_dstcid`
+- `rxu_uflow_err_info_piogw_err_type`
+- `REF_ODTS_ILLEGAL_EVNT`
+- `txu_noaccess_err_info5_piogw_dstpid`
+- `ds_fridxmgr_err_info_acc0c0_amcc0plane2_uflow`
+- `_afc_mccni0DS_KILL_ACC1C0_AMCC0PLANE2_ERROR`
+- `%s %s %d %s error (0x%08x) cmd:0x%x valid/type/tid:0x%x/0x%x/0x%x srcdieid/srcparentid/srcnodeid/srcdeviceid:0x%x/0x%x/0x%x/0x%x dstdieid/dstparentid/dstnodeid/dstdeviceid:0x%x/0x%x/0x%x/0x%x addrhi/addrl:0x%x/0x%x cmd/size/vc/subch:0x%x/0x%x/0x%x/0x%x user/userext:0x%x/0x%x afixrxliu/afitxliu/afcrx`
+- `\"pmcTimerHandler PMC ack is not received after %u ms\\n\" @%s:%d`
+- `rxcu_noaccess_err_info3_acc1c0_vc`
+- `rxcu_routing_err_info1_acc1c1_srcpid`
+- `_afc_mccni0LINK_ACC0C0_TXL_ERROR`
+- `psd_in_task_context()`
+- `rxcu_routing_err_info1_refl_tid`
+- `psd_telem_seq_idx`
+- `AppleSocReporter: No reg-maps property found in device tree\n`
+- `\n\ndebug:%s`
+- `ds_wr_err_info_acc1c1_amcc0plane0_subch`
+- `cwrbk_d`
+- `ncrdrsp_ro`
+- `PMC_ASSERT_IOPMBOX0_OVERFLOW`
+- `rxcu_noaccess_err_info2_acc1c1_dstcid`
+- `rxcu_routing_err_info1_acc0c0_cmd_miss_err`
+- `rxcu_routing_err_info2_acc1c1_cmd_ch_miss_err`
+- `IOReportLegendPublic`
+- `_amccRHQLiveLockErr`
+- `rxcu_routing_err_info0_acc1c0_addr_hi`
+- `rxcu_noaccess_err_info0_refl_vc`
+- `ds_fridxmgr_err_info_acc1c0_piogw_oflow`
+- `(new channel)`
+- `%s::%s: '%s' property not present\n`
+- `rxcu_noaccess_err_info4_acc0c0_subch`
+- `ds_kill_err_info_acc1c1_amcc0plane0_subch`
+- `rxcu_routing_err_info0_acc1c1_vc`
+- `rxcu_noaccess_err_info4_acc1c0_cmd`
+- `txu_routing_err_info0_piogw_addr_hi`
+- `txu_noaccess_err_info3_piogw_size`
+- `UInt32 ReporterBase::readReg32(RegMap, UInt32)`
+- `PMC_ASSERT_IPA_RDATA_DWORDX2_UNALIGNED`
+- `ni1-error-handler`
+- `AMPH_AIC_IRQ_EN_FLD`
+- `voltage-states16`
+- `%s:%d: Reset _dcsOdtsBelowThresholdCount to 0\n\n`
+- `rxcu_noaccess_err_info4_acc1c0_size`
+- `PSD Slot State`
+- `no-clock-gate`
+- `function-amcc-sram-eventhandler`
+- `PMC Floor State`
+- `txu_routing_err_info2_piogw_ch_multi_hit_err`
+- `txu_noaccess_err_info0_piogw_addr_hi`
+- `PORT_ILLEGAL_TRAFFIC_EVENT_IRQ_DATA`
+- `M3_AIC_IRQ_EN_FLD`
+- `121111121222121212121111121112122222222222222221212121212121212112112111122222211112111121111211112`
+- `txu_routing_err_info0_acc1c0_p2p_srccid`
+- `txu_routing_err_info1_acc1c0_p2p_subch`
+- `dart_cmaint_err_info2_payload_size`
+- `ds_wr_err_info_acc0c0_amcc0plane2_vc`
+- `_amccAFRIllegalCmd`
+- `_mapApertures`
+- `AppleSocReporter: PerfCounterReporter: invalid counter ID %u at index %u\n\n`
+- `PMC_ASSERT_MAILBOX_MSG_MULTIPLE_OF_A_KIND_PTD`
+- `_afc_mccni0DS_WR_REFL_LOCAL_ERROR`
+- `rxcu_noaccess_err_info4_acc1c0_addr_lo`
+- `txu_noaccess_err_info4_piogw_dstpid`
+- `PS reset can only be initiated with PS at P0. ps:%d cs:%d\\n`
+- `_2dResidencyReporter`
+- `txu_routing_err_info0_acc1c0_p2p_cmd`
+- `txu_routing_err_info0_amcc0plane0_dest_miss_err`
+- `fille`
+- `\"super start failed\" @%s:%d`
+- `pmc-life-check-interval`
+- `ds_wr_err_info_acc1c0_piogw_e2e_ch_miss_err`
+- `rxcu_routing_err_info0_acc1c0_srccid`
+- `rxcu_routing_err_info1_acc1c0_cmd_multi_hit_err`
+- `txu_routing_err_info2_acc0c0_p2p_auxid_multi_hit_err`
+- `rxcu_noaccess_err_info1_acc0c0_addr_hi`
+- `txu_routing_err_info0_piogw_ch_miss_err`
+- `\"PMCReporter: unknown counter type %u\\n\" @%s:%d`
+- `txu_routing_err_info2_amcc0plane1_dstcid`
+- `rxcu_routing_err_info2_acc1c0_cmd_multi_hit_err`
+- `txu_noaccess_err_info0_piogw_srcpid`
+- `txu_routing_err_info0_amcc0plane2_ch_multi_hit_err`
+- `rxcu_routing_err_info2_refl_tid`
+- `PMC_ASSERT_UNUSED_RAIL_RV_UPDATED`
+- `DISPSEC_TXL`
+- `txu_routing_err_info1_amcc0plane1_dest_multi_hit_err`
+- `PMGR Counters`
+- `histGroupIdx != kInvalidHistGroupIndex`
+- `_afc_mccni0TXU_DATA_QUEUE_TRIG_AMCC0PLANE2_ERROR`
+- `DISPSEC IPCE`
+- `%s:%d: stop polling during SleepAction\n\n`
+- `rxcu_noaccess_err_info3_acc0c0_dstcid`
+- `txu_routing_err_info1_amcc0plane0_srcpid`
+- `_decodeInfo_DS_WR_ERR`
+- `\"Null pointer passed to PB_PRINTF [\" \"debug_print_buffer\" \"]\" @%s:%d`
+- `CPS state mismatch! SBD %d operating in %d state!`
+- `AppleSoCPsdPanicLog: setupFromProvider entered, provider=%p\n`
+- `_getApWakeSourcesCaptured`
+- `txu_routing_err_info1_acc1c0_p2p_auxid_miss_err`
+- `txu_routing_err_info0_piogw_ch_multi_hit_err`
+- `PORT_VOQ_UF_EVENT_IRQ_DATA`
+- `_afc_mccni0TXCU_TBL_LOOKUP_REFL_ERROR`
+- `psd_task_get_my_id() == PSD_PS_TASK_ID`
+- `txu_routing_err_info2_amcc0plane0_addr_hi`
+- `_decodeInfo_DS_FRIDXMGR_ERR`
+- `pmgr-aon-cps-metadata`
+- `voltage-states9`
+- `voltage-states19`
+- `%s:%08X `
+- `rxcu_routing_err_info1_acc1c1_tid`
+- `txu_crmgr_oflow_err_info_amcc0plane2_credit_ch`
+- `PMGR_SOC`
+- `\"Failed to register all interrupts\" @%s:%d`
+- `PMC_ASSERT_MAILBOX_MSG_INVALID`
+- `SYS0_HI_TEMP`
+- `rxcu_noaccess_err_info1_refl_vc`
+- `rxcu_routing_err_info0_refl_srccid`
+- `SOCNI2`
+- `PMC_ASSERT_MAILBOX_INVALID_DIR`
+- `PMC_ASSERT_IPA_READ_XACTION_PENDING`
+- `dart_cmaint_err_info2_payload_addr_hi`
+- `NS aperture name`
+- ` F%d RdBWR:0x%x RTBWHighThrPerfIntFreq:0x%x RTBWRdHighThrPerfIntFreq:0x%x`
+- `txu_routing_err_info1_acc1c0_p2p_ch_miss_err`
+- `CMD_MAC_ERR`
+- `AppleSoCPsdPanicLog: psd-panic-data has %u rows (%u bytes); provider has %u reg slots\n`
+- `virtual void PMCReporter::configure(IOService *)`
+- `txu_routing_err_info0_acc0c0_p2p_auxid_miss_err`
+- `rxcu_routing_err_info1_acc0c0_data_dest_multi_hit_err`
+- `rxcu_routing_err_info0_acc1c1_srcpid`
+- `reporter`
+- `PMC_ASSERT_IOPMBOX3_OVERFLOW`
+- `glb-time-source`
+- `ds_fridxmgr_err_info_acc1c0_amcc0plane1_uflow`
+- `_amccIllegalTZRegionEnable`
+- `Workaround for rdar://144878768 active`
+- `NS1_DISPSEC`
+- `PMC Stats`
+- `rxcu_noaccess_err_info5_refl_addr_lo`
+- `rxcu_noaccess_err_info3_acc1c0_addr_hi`
+- `rxcu_routing_err_info2_acc1c1_subch`
+- `inconsistent_af_cmd_addr_31to0`
+- `PMC_ASSERT_TELE_TIMEBASE_SNAPSHOT_NOT_VALID`
+- `%s::%s: '%s' property length is %d expected %lu\n`
+- `wake-time-counter`
+- `txu_routing_err_info0_acc1c0_p2p_ch_miss_err`
+- `txu_noaccess_err_info4_piogw_addr_hi`
+- `rxcu_routing_err_info1_refl_cmd_multi_hit_err`
+- `ncwrwrap_ro`
+- `spll`
+- ` : PSD_PANIC_TYPE_ASSERT`
+- `%s::%s: %s: regIndex(%u) regCount(%u) exceeds _regCount(%u)\n`
+- `GFX1`
+- `rxcu_noaccess_err_info4_acc1c0_vc`
+- `txu_data_queue_trig_err_info_amcc0plane1_ch`
+- `rxcu_routing_err_info0_acc0c0_dstpid`
+- `rxcu_eid_queue_trig_err_info_acc1c1_ch`
+- `%.*s_CLK_OFF`
+- `_afc_mccni0LINK_AMCC0PLANE2_RXL_ERROR`
+- `rxcu_noaccess_err_info1_acc1c1_subch`
+- `ds_kill_err_info_acc1c1_amcc0plane0_eid_in_range_err`
+- `TX`
+- `_afc_mccni0TXCU_OFLOW_ACC1C0_ERROR`
+- `WRLVL_AIC_IRQ_EN_WRLVL_AIC_IRQ2_EN`
+- `found`
+- `txu_routing_err_info1_acc0c0_p2p_cmd`
+- `site.PSDReporter`
+- `_amccDecodeInterrupts`
+- `void AppleSoCReporter::_registerReporterFactory(ReporterFactory *)`
+- `PMC_ASSERT_IPA_RDATA_DWORD_UNALIGNED`
+- `_afc_mccni0TXU_CRMGR_UFLOW_AMCC0PLANE1_ERROR`
+- `MAC_SPEC_ACCESS_ERR`
+- `rxcu_noaccess_err_info0_acc1c0_dstpid`
+- `rxcu_noaccess_err_info4_acc1c0_srcpid`
+- `txu_noaccess_err_info4_piogw_vc`
+- `PMC_ASSERT_IOPMBOX2_UNDERFLOW`
+- `_amccUnexpRtHitDir`
+- `_amccIllegalDSIDChng`
+- `\"ODTS Read method not implemented\" @%s:%d`
+- `txu_routing_err_info0_acc0c0_p2p_subch`
+- `rxcu_noaccess_err_info4_refl_dstcid`
+- `ds_wr_err_info_refl_local_eid`
+- `rxcu_routing_err_info2_refl_cmd`
+- `PMC_ASSERT_ML_PIXEL_INVALID_TARGET_IDX`
+- `SEP_LO_CLK_DFM`
+- `rxu_oflow_err_info_amcc0plane1_err_type`
+- `MSR IPCE`
+- `NS1_PCIE`
+- `no-service-reset`
+- `rxcu_routing_err_info1_acc1c1_dstcid`
+- `%.*s_POWER`
+- `PLL_ACK_NACK_TIMEOUT`
+- `GPCE0`
+- `SIO`
+- `PMC_ASSERT_DVMR_NO_MATCHING_VTABLE`
+- `PMC_ASSERT_BUG_DVMR_HANDLING`
+- `_afc_mccni0DS_RD_ACC1C1_AMCC0PLANE0_ERROR`
+- `_afc_mccni0TXU_CRMGR_OFLOW_PIOGW_ERROR`
+- `_afc_mccni0RXU_TBL_LOOKUP_AMCC0PLANE2_ERROR`
+- `ds_kill_err_info_acc1c0_amcc0plane2_kill_if`
+- `rxcu_noaccess_err_info1_acc1c1_addr_hi`
+- `fillm`
+- `callbacks && psd_in_task_context()`
+- `virtual bool AppleSoCFunctionPerfCycleCount::initWithTargetDataAndSymbol(IOService *, const OSData *, const OSSymbol *)`
+- `ctoibk`
+- `PORT_CREDIT_OF_EVENT_IRQ_CMD`
+- `%s::%s: Disabling SPLL interrupts\n`
+- `TWCK2DQI_AIC_IRQ_EN_TWCK2DQI_AIC_IRQ3_EN`
+- `\"%s\" @%s:%d`
+- `awake-exit-check-dis`
+- `txu_routing_err_info2_acc1c0_p2p_addr_hi`
+- `rxcu_noaccess_err_info5_refl_vc`
+- `txu_noaccess_err_info2_piogw_vc`
+- `rxu_uflow_err_info_amcc0plane2_err_type`
+- `rxcu_routing_err_info1_refl_data_dest_miss_err`
+- `PMC_ASSERT_RAIL_PWR_UP_DVFM_LOG_IDX_TOO_LARGE`
+- `(append)`
+- `\"Failed to map all apertures\" @%s:%d`
+- `txu_routing_err_info1_amcc0plane0_dstpid`
+- `txu_noaccess_err_info0_piogw_cmd`
+- `txu_noaccess_err_info3_piogw_addr_hi`
+- `txu_routing_err_info2_amcc0plane2_cmd`
+- `site.PMCReporterFactory`
+- `PMC_ASSERT_UNUSED_RAIL_CLKGEN_UPDATED`
+- `txcu_tbl_lookup_err_info_refl_err_ch`
+- `rxcu_noaccess_err_info4_refl_cmd`
+- `rxcu_noaccess_err_info0_acc0c0_dstcid`
+- `ds_wr_err_info_acc1c0_amcc0plane0_src_ni`
+- `_afc_mccni0DS_KILL_REFL_LOCAL_ERROR`
+- `_afc_mccni0RXU_OFLOW_AMCC0PLANE0_ERROR`
+- `gpce-error-handler`
+- `TWCK2DQI_AIC_IRQ_EN_TWCK2DQI_AIC_IRQ0_EN`
+- `AppleSoCMisc`
+- `rxcu_routing_err_info2_acc1c0_cmd_miss_err`
+- `rxcu_noaccess_err_info0_refl_srcpid`
+- `rxcu_routing_err_info1_acc1c1_cmd_miss_err`
+- `isS2RCounterSet`
+- `gpuatomicwr`
+- `PLL_NACK`
+- `PMC%u Assert ID: 0x%x, rail:0x%x, limit:0x%x, latency:0x%x, resolved_vec:0x%x, target_vec:0x%x, current_vec:0x%x`
+- `rxcu_routing_err_info2_acc1c0_data_dest_miss_err`
+- `txu_routing_err_info1_amcc0plane2_addr_hi`
+- `datav`
+- `PMC_ASSERT_MAILBOX_MSG_MULTIPLE_OF_A_KIND_TELE_RESTORE`
+- `_afc_mccni0TXCU_TBL_LOOKUP_ACC1C1_ERROR`
+- `N_HI_CLK_DFM`
+- `_sepHandleInterrupt`
+- `voltage-states17-sram`
+- `_ipce_drv.status.enabled`
+- `AppleSoCIO::start: this: %#lx, ACCE virt addr: %#lx, phys addr: %#lx\n`
+- `%s::%s: Failed to register %c%c%c%c interrupt %u\n`
+- `callPlatformFunction_block_invoke`
+- `rxcu_routing_err_info0_acc1c0_cmd_ch_miss_err`
+- `txu_crmgr_uflow_err_info_acc1c0_p2p_credit_ch`
+- `rxu_uflow_err_info_amcc0plane0_err_type`
+- `PMC_ASSERT_COMPLETION_INTERRUPT_NOT_CLEAR`
+- `_afc_mccni0DS_RD_ACC1C0_AMCC0PLANE0_ERROR`
+- `_afc_mccni0DS_WR_ACC0C0_AMCC0PLANE0_ERROR`
+- `ds_wr_err_info_acc1c0_amcc0plane2_vc`
+- `ds_kill_err_info_acc1c0_amcc0plane1_e2e_ch_miss_err`
+- `txu_noaccess_err_info0_piogw_vc`
+- `site.UInt8`
+- `regMapId < kRegMapCount`
+- `PMC_ASSERT_FIND_LSB_ON_0`
+- `!ipce_is_enabled()`
+- `slot_runtime->num_pending_ps == 0`
+- `_amccSramBufferDeAllocComplete`
+- `_afc_mccni0LINK_ACC1C1_TXL_ERROR`
+- `_acquired_res != RESMGR_RESOURCE_INVALID`
+- `%s`
+- `rxcu_routing_err_info0_acc1c0_srcpid`
+- `rxcu_noaccess_err_info0_acc1c0_subch`
+- `dart_cmaint_err_info0_payload_tid`
+- `link_err_info_acc0c0_txl_err_type`
+- `rxu_tbl_lookup_err_info_amcc0plane0_err_ch`
+- `_afc_mccni0DS_RD_ACC0C0_PIOGW_ERROR`
+- `stack_size != 0`
+- `_afc_mccni0DS_WR_ACC0C0_PIOGW_ERROR`
+- `%s::%s: Enabling panics on True-UC violations\n`
+- `PMC_ASSERT_ID_OUT_OF_BOUNDS`
+- `ds_kill_err_info_acc1c0_piogw_vc`
+- `ds_wr_err_info_acc0c0_amcc0plane1_eid_in_range_err`
+- `%.*s_IDLE`
+- `_BUCK0`
+- `counter->groupIndex < _psdGroupCount`
+- `\"ReporterBase::registerIOReporter: invalid parent or reporter for %s\\n\" @%s:%d`
+- `_amccMCAllocFailed`
+- `site.AggregatedWakeSource`
+- `rxcu_noaccess_err_info0_acc1c1_srcpid`
+- `rxcu_routing_err_info0_acc0c0_cmd_multi_hit_err`
+- `rxcu_routing_err_info2_refl_vc`
+- `_afc_mccni0DS_FRIDXMGR_ACC0C0_PIOGW_ERROR`
+- `quiesce && sched_task_state.flags.quiesce_state == QUIESCE_NOP`
+- `pmc_node == &_pmc_startup_desc._pmc_node`
+- `PMC Boost Agents State`
+- `RXCU_EID_QUEUE_TRIG_ERR`
+- `PMC_ASSERT_DISP_DVMR_NOT_ENABLED`
+- `WRCAL_AIC_IRQ_EN_WRCAL_AIC_IRQ1_EN`
+- `ds_rd_err_info_acc1c0_amcc0plane0_eid`
+- `rxcu_noaccess_err_info3_acc0c0_srcpid`
+- `site.UInt32`
+- `inconsistent_af_cmd_addr_41to32`
+- `PMC_ASSERT_INVALID_RMBS_DCS_MAP`
+- `rxcu_routing_err_info2_acc0c0_cmd_ch_miss_err`
+- `rxcu_noaccess_err_info2_acc1c0_srcpid`
+- `txu_noaccess_err_info3_piogw_dstcid`
+- `ackm`
+- `_sepDecodeInterrupts`
+- `OSSharedPtr<IOStateReporter> PMCReporter::_getReporterForType(PerfCounterType)`
+- `txu_routing_err_info0_amcc0plane1_dstpid`
+- `rxcu_routing_err_info1_acc1c0_cmd_miss_err`
+- `rxcu_noaccess_err_info5_acc1c1_size`
+- `txu_routing_err_info0_piogw_srcpid`
+- `ds_wr_err_info_acc1c1_amcc0plane1_eid_in_range_err`
+- `_socPerfCounterReporter`
+- `\"panic: %s\" @%s:%d`
+- `nub-aic-irq-aggr-cfg`
+- `ds_kill_err_info_acc1c0_piogw_subch`
+- `txcu_tbl_lookup_err_info_acc1c0_err_type`
+- `AppleSoCReporter`
+- `PMC_ASSERT_UNKONOWN_LOW_PRI_TASK`
+- `ni2-error-handler`
+- `id_to_job_rxev_map[id] == NULL`
+- `txu_routing_err_info2_acc1c0_p2p_ch_multi_hit_err`
+- `ds_kill_err_info_acc0c0_amcc0plane1_eid`
+- `PMC_ASSERT_SECONDARY_DIE_DOESNT_SUPPORT_BWR`
+- `function-expire_watchdog`
+- `pmc_dram_size`
+- `rxcu_noaccess_err_info2_acc1c0_cmd`
+- `dart_cmaint_err_info1_payload_cmd`
+- `txu_routing_err_info2_amcc0plane2_ch_miss_err`
+- `_groupHistReporters`
+- `PMC_ASSERT_ENTERED_DVMR_HANDLER_WITHOUT_PSD_UPDATE`
+- `txu_routing_err_info1_acc1c0_p2p_tid`
+- `txu_routing_err_info1_acc1c0_p2p_addr_hi`
+- `rxcu_cmd_queue_trig_err_info_acc1c1_ch`
+- `ds_wr_err_info_acc1c1_amcc0plane2_eid_in_range_err`
+- `_decodeInfo_TXU_CMD_QUEUE_TRIG_ERR`
+- `crde`
+- `PMC_ASSERT_MLPIXEL_DVMR_SKIP_ERROR`
+- `block_size >= MEMPOOL_MIN_BLOCK_SIZE`
+- `start`
+- `GFX1-SRAM`
+- `txu_routing_err_info2_acc0c0_p2p_ch_multi_hit_err`
+- `txu_routing_err_info1_acc1c0_p2p_dest_miss_err`
+- `rxu_oflow_err_info_amcc0plane1_err_instance`
+- `AppleSocReporter: Total groups: %u\n`
+- `PMC_ASSERT_DEBUG_ENTRY_CORRUPT`
+- `desc->scripts[i] < PLATFORM_IPCE_TOTAL_SCRIPTS`
+- `rxcu_noaccess_err_info4_acc1c0_addr_hi`
+- `txu_routing_err_info2_piogw_dest_miss_err`
+- `psd_fsm_table_is_assigned(job)`
+- `ret != PSD_FAIL`
+- `\"AMCC Read Register method not implemented\" @%s:%d`
+- `\"Invalid %s configuration\" @%s:%d`
+- `rxcu_noaccess_err_info2_acc1c1_tid`
+- `rxu_oflow_err_info_piogw_err_instance`
+- `num_offending_slots <= USHRT_MAX`
+- `NS0`
+- `dart_cmaint_err_info_multi_dsb_srcpid`
+- `rxcu_routing_err_info1_refl_srcpid`
+- `UInt32 PSDReporter::_readCounterValue32(UInt32)`
+- `crds`
+- `PMC_ASSERT_OUTBOX_UNDERFLOW`
+- `DCC_AIC_IRQ_EN_DCC_AIC_IRQ0_EN`
+- `xaction == &_ipa_xactions[ipa_idx]`
+- `txu_routing_err_info1_acc0c0_p2p_addr_hi`
+- `ds_wr_err_info_acc1c0_amcc0plane2_eid`
+- `_afc_mccni0TXCU_OFLOW_ACC0C0_ERROR`
+- `CBT_AIC_IRQ_EN_CBT_AIC_IRQ1_EN`
+- `txu_routing_err_info1_piogw_tid`
+- `PMC_ASSERT_DEBUG_MAX_TRANSITION_LATENCY_EXCEEDED`
+- `PMC_ASSERT_DVMR_ACK_WHEN_NOT_PENDING`
+- `WRCAL_AIC_IRQ_EN_WRCAL_AIC_IRQ0_EN`
+- `byte-mode`
+- `rxcu_routing_err_info1_acc1c0_dstcid`
+- `txu_routing_err_info0_acc0c0_p2p_srcpid`
+- `rxcu_noaccess_err_info4_refl_dstpid`
+- `txu_routing_err_info1_amcc0plane0_vc`
+- `txu_routing_err_info1_piogw_srcpid`
+- `parity_err_af_pkt_info`
+- `cpfwidonly`
+- `Failed to create work loop\n`
+- `txu_routing_err_info1_acc1c0_p2p_dstpid`
+- `ds_fridxmgr_err_info_acc1c0_piogw_uflow`
+- `rxcu_routing_err_info0_acc1c1_srccid`
+- `SPLLSEQ_LOCK`
+- `pmc_received_msg->raw_words.word0 == PMC_DVMR_COMPLETION_MESSAGE_ID`
+- `sched_task_state.num_ep_msgs[sched_ep] != UCHAR_MAX`
+- ` : PSD_PANIC_TYPE_PANIC`
+- `ds_wr_err_info_acc1c0_amcc0plane0_auxid`
+- `txu_noaccess_err_info1_piogw_addr_lo`
+- `txu_noaccess_err_info1_piogw_dstcid`
+- `nr_sbd_runtime->state.init_state == PSD_SBD_UNINITIALIZED`
+- `txu_routing_err_info0_acc0c0_p2p_srccid`
+- `txu_noaccess_err_info1_piogw_srccid`
+- `PMC_ASSERT_BWR_STATUS_CANNOT_BE_CLEARED`
+- `DISP IPCE`
+- `AVD IPCE`
+- `NS1_DATA_RXL`
+- `ds_fridxmgr_err_info_acc1c0_amcc0plane2_uflow`
+- `txcu_oflow_err_info_acc0c0_err_type`
+- `PMC Keep Alive State`
+- `dart_cmaint_err_info2_addr_miss_srcdevid`
+- `rxcu_routing_err_info2_acc0c0_dstpid`
+- `%c%c%c%c enabling interrupt %d\n`
+- `SEP_RXL`
+- `DCS`
+- `txu_routing_err_info1_acc1c0_p2p_srcpid`
+- `rxcu_noaccess_err_info1_refl_addr_hi`
+- `ds_rd_err_info_acc0c0_amcc0plane0_eid`
+- `ds_wr_err_info_refl_piogw_vc`
+- `rxcu_routing_err_info2_refl_data_ch_multi_hit_err`
+- `%s::%s: _dcsChannelEnableMask = 0x%x\n\n`
+- `\"wake-time-counter present (%u entries) but glb-time-source missing\" @%s:%d`
+- `voltage-states17`
+- `rxcu_routing_err_info1_acc1c0_data_dest_multi_hit_err`
+- `ds_wr_err_info_acc1c0_amcc0plane1_auxid`
+- `rxcu_noaccess_err_info5_acc1c0_addr_lo`
+- `txu_routing_err_info0_amcc0plane0_auxid_multi_hit_err`
+- `rxcu_routing_err_info0_acc0c0_cmd_miss_err`
+- `rxcu_routing_err_info0_acc1c1_tid`
+- `voltage-states1-sram`
+- `ds_fridxmgr_err_info_refl_local_oflow`
+- `ds_wr_err_info_acc1c0_amcc0plane1_eid_in_range_err`
+- `txu_noaccess_err_info3_piogw_srccid`
+- `_amccUnexpSnpRsp`
+- `%s::%s: Missing %s property\n`
+- `ipa_priv && on_acquire`
+- `rxu_oflow_err_info_amcc0plane2_err_ch`
+- `_sleepwake_state.cps_status >= wake_state`
+- `ds_kill_err_info_acc1c1_amcc0plane2_subch`
+- `inconsistent_af_cmd_dir_info`
+- `_afc_mccni0DS_KILL_ACC1C1_AMCC0PLANE1_ERROR`
+- `txu_routing_err_info0_amcc0plane1_ch_miss_err`
+- `rxcu_routing_err_info0_acc1c0_cmd`
+- `rxcu_routing_err_info1_refl_srccid`
+- `AppleSoCErrorHandlerT8160AFX.cpp`
+- `PMC_ASSERT_INBOX_UNDERFLOW`
+- `Invalid ManualPS id:%d %08x\\n`
+- `Expected PMC completion of DVMR`
+- `txu_routing_err_info0_amcc0plane0_ch_miss_err`
+- `txu_routing_err_info2_piogw_vc`
+- `PROTCONV_ROUTING_ERR`
+- `ISP_RXL`
+- `GFX7`
+- `txu_routing_err_info2_amcc0plane1_cmd`
+- `rxcu_noaccess_err_info2_acc0c0_vc`
+- `txu_routing_err_info2_amcc0plane2_subch`
+- `NS0_ECRDT_TXL`
+- `txu_routing_err_info1_piogw_dstcid`
+- `txu_routing_err_info1_piogw_dstpid`
+- `PMGRCLKGEN_SOC_TOP`
+- `\"Unhandled AMCC%u [%d,%d] interrupt\" @%s:%d`
+- `_getNsApertureNames`
+- `MON_CRC`
+- `rxcu_noaccess_err_info3_refl_srcpid`
+- `rxcu_noaccess_err_info5_acc0c0_addr_hi`
+- `ds_wr_err_info_refl_local_e2e_ch_miss_err`
+- `ds_wr_err_info_acc0c0_piogw_eid`
+- `PORT_VOQ_OF_EVENT_IRQ_DATA`
+- `mce`
+- `ds_wr_err_info_acc0c0_amcc0plane0_src_ni`
+- `dart_cmaint_err_info2_payload_tid`
+- `txu_routing_err_info0_piogw_dest_miss_err`
+- `txu_crmgr_uflow_err_info_amcc0plane1_credit_ch`
+- `ch:0x%x`
+- `site.OSSharedPtr<IOHistogramReporter>`
+- `_groupHistReporters[histGroupIdx]`
+- `TXCU_TBL_LOOKUP_ERR`
+- `txu_routing_err_info0_acc1c0_p2p_tid`
+- `dart_cmaint_err_info2_payload_cmd`
+- `txu_routing_err_info1_amcc0plane2_srccid`
+- `_afc_mccni0RXCU_NOACCESS_ACC1C0_ERROR`
+- ` : PSD_PANIC_TYPE_ASSERT_PARAMS`
+- `ds_kill_err_info_acc0c0_amcc0plane0_eid_in_range_err`
+- `txu_routing_err_info0_piogw_auxid_miss_err`
+- `ds_rd_err_info_acc1c1_amcc0plane0_eid`
+- `txu_routing_err_info0_amcc0plane2_srcpid`
+- `PSD Perf Count`
+- `ecconebiterrlog`
+- `res_idx <= resmgr->num_resources`
+- `PRORES_TXL`
+- `rxcu_noaccess_err_info0_acc0c0_addr_lo`
+- `rxcu_noaccess_err_info2_acc1c0_subch`
+- `txu_noaccess_err_info2_piogw_srccid`
+- `PROTCONV_OFLOW_ERR`
+- `_afc_mccni0RXU_OFLOW_AMCC0PLANE2_ERROR`
+- `AFT`
+- `txu_routing_err_info1_piogw_dest_miss_err`
+- `virtual bool PSDReporter::initialize(IOService *)`
+- `unknown`
+- `ECPU-SRAM`
+- `ds_kill_err_info_acc1c0_piogw_eid_in_range_err`
+- `PMC_ASSERT_TELE_COUNTER_IDX_CORRUPT_2`
+- `_afc_mccni0TXU_CMD_QUEUE_TRIG_PIOGW_ERROR`
+- `_boostReporter`
+- `ds_kill_err_info_acc0c0_amcc0plane2_eid_in_range_err`
+- `rxcu_routing_err_info1_acc0c0_data_ch_miss_err`
+- `rxcu_routing_err_info2_acc1c1_cmd_multi_hit_err`
+- `psd_dram_addr`
+- `_amccIllegalDsidRecv`
+- `\"Unhandled DCS interrupt: AMCC%u DCS Group %u Channel %u: %s\" @%s:%d`
+- `: SEQUENCE_ID 0x%x PROC_WR_IN_FLIGHT_CNT %d WR_RESP_ERR_LAST_ADDR 0x%016llx LAST_FETCH_RD_ADDR 0x%016llx LAST_PROC_RD_ADDR 0x%016llx LAST_PROC_RD_DATA1 0x%08x LAST_PROC_RD_DATA0 0x%08x LAST_PROC_WR_ADDR 0x%016llx`
+- `rxcu_routing_err_info1_acc0c0_dstpid`
+- `txu_noaccess_err_info3_piogw_addr_lo`
+- `???`
+- `ncwrwrap`
+- `_afc_mccni0TXU_ROUTING_ACC1C0_P2P_ERROR`
+- `NS1_SIO`
+- `site.PMCReporter`
+- `PMC_ASSERT_RAIL_ENABLE_INVALID`
+- `Received HWFatal irq:%08x\\n`
+- `_fsd_info.state == FORCE_SHUTDOWN_RUNNING`
+- `txu_routing_err_info1_acc1c0_p2p_ch_multi_hit_err`
+- `GPCE cluster verify fail! id:%d rval:%08x\\n`
+- `rxcu_routing_err_info2_acc1c0_tid`
+- `ds_wr_err_info_acc1c1_amcc0plane0_vc`
+- `txu_routing_err_info2_piogw_auxid_multi_hit_err`
+- `SLP_S2R`
+- `PORT_ILLEGAL_PIO_TRAFFIC_EVENT_IRQ_ECRDT`
+- `txu_routing_err_info2_acc0c0_p2p_srccid`
+- `txcu_uflow_err_info_refl_err_ch`
+- `bool PSDReporter::_createHistogramReporter(IOService *, UInt32, UInt64, const char *, UInt32 &)`
+- `_amccOutOfBoundDramAccess`
+- `success_callback`
+- `Invalid AutoPS id:%d %08x\\n`
+- `GPCE1`
+- `rxcu_noaccess_err_info5_acc1c0_subch`
+- `rxu_tbl_lookup_err_info_amcc0plane1_err_ch`
+- `dart_cmaint_err_info1_payload_addr_lo`
+- `txu_routing_err_info0_amcc0plane2_tid`
+- `PORT_ILLEGAL_TRAFFIC_EVENT_IRQ_CMD`
+- `PMC_ASSERT_INVALID_TLTR_LEVEL_VALUE`
+- `SEP_CPU_LLL_19NM_CPM`
+- `CP_TIMEOUT_ERR`
+- `txu_routing_err_info2_amcc0plane1_ch_multi_hit_err`
+- `dart_cmaint_err_info2_payload_srcdevid`
+- `void PerfCounterReporter::_initFreeRunningCounters()`
+- `12111121221212212122121221212212122121212211111122211211`
+- `AMCC%u PLANE%u %s error: INTSTS%u 0x%08x FLAG/STATE %#x/%#x INFO %#x/%#x/%#x ADDR %#llx CMD/AID/TID %#x(%s)/%#x/%#x WAY/SIZE %#x/%#x`
+- `release_node`
+- `was_set == false`
+- `ds_kill_err_info_acc1c0_amcc0plane2_vc`
+- `rxcu_noaccess_err_info1_acc1c0_cmd`
+- `rxcu_noaccess_err_info5_acc1c1_addr_hi`
+- `_groupIndexToHistGroupIndex`
+- `PIO_ILLEGAL_ADDR`
+- `rxcu_noaccess_err_info1_acc0c0_tid`
+- `rxcu_noaccess_err_info2_acc0c0_dstcid`
+- `ds_wr_err_info_acc0c0_piogw_src_ni`
+- `dart_cmaint_err_info1_payload_data_err`
+- `rxcu_routing_err_info2_acc1c1_data_ch_multi_hit_err`
+- `rxu_oflow_err_info_amcc0plane0_err_instance`
+- `crd`
+- `_afc_mccni0TXCU_UFLOW_REFL_ERROR`
+- `_initUserClient`
+- `AOP.unclaimed%u`
+- `rxcu_routing_err_info0_acc1c0_cmd_multi_hit_err`
+- `dart_cmaint_err_info0_addr_miss_tid`
+- `rxcu_noaccess_err_info5_acc0c0_subch`
+- `ds_rd_err_info_refl_piogw_eid`
+- `rxcu_routing_err_info2_refl_dstpid`
+- `dcs-error-handler`
+- `_pmcCounters`
+- `SOC_GFX`
+- `data_err:0x%x credit_ch:0x%x`
+- `mcu`
+- `PLL_LOCK`
+- `rxcu_routing_err_info2_acc1c0_dstpid`
+- `ds_rd_err_info_acc1c0_amcc0plane1_eid`
+- `txu_routing_err_info0_amcc0plane0_vc`
+- `AMCC%u PLANE%d %s error: INTSTS%u 0x%08x AFERRLOG0/1/2/3/4/5 %#x/%#x/%#x/%#x/%#x/%#x ADDR %#llx CMD/SIZE %#x(%s)/%#x AID/TID/vDSID %#x/%#x/%#x`
+- `ncrdrsp`
+- `_afc_mccni0RXCU_ROUTING_REFL_ERROR`
+- `RT_HI_CLK_DFM`
+- `ANE1 IPCE`
+- `PMC_ASSERT_IPA_INTR_TIMEOUT_SET_MODE`
+- `rxcu_routing_err_info2_acc1c0_cmd`
+- `txu_routing_err_info1_acc0c0_p2p_auxid_multi_hit_err`
+- `rxcu_noaccess_err_info5_acc1c1_vc`
+- `txu_noaccess_err_info1_piogw_srcpid`
+- `PMC_ASSERT_MAILBOX_MSG_MULTIPLE_OF_A_KIND_TELE_SAVE`
+- `PMC_ASSERT_IPA_RDATA_WORD_UNALIGNED`
+- `PMC_ASSERT_DVMR_DISP_REQ_MULTIPLE_IN_FLIGHT`
+- `txu_routing_err_info0_amcc0plane1_srccid`
+- `ds_kill_err_info_acc0c0_amcc0plane2_kill_if`
+- `rxcu_noaccess_err_info0_acc1c1_size`
+- `rxcu_noaccess_err_info1_acc1c1_dstcid`
+- `rxcu_routing_err_info1_refl_vc`
+- `id <= kPsdCounterIDMaxCount`
+- `_amccNoAccess`
+- `_dcsGetPTDRange`
+- `txu_noaccess_err_info5_piogw_cmd`
+- `%s SOCNI%d %d %s error (0x%08x) %s`
+- `_amccCwrbkErrSts`
+- `NS1_LOCAL`
+- `vec_indx < PSD_PS_NOTIFS_VEC_LEN`
+- `ds_wr_err_info_acc1c0_piogw_src_ni`
+- `txu_routing_err_info2_acc0c0_p2p_srcpid`
+- `txu_routing_err_info1_amcc0plane0_dstcid`
+- `rxcu_routing_err_info0_refl_data_dest_miss_err`
+- `PSD PS State`
+- `ccleaninv`
+- `_afc_mccni0RXCU_CMD_QUEUE_TRIG_ACC0C0_ERROR`
+- `TWCK2DQI_AIC_IRQ_EN_TWCK2DQI_AIC_IRQ1_EN`
+- `IODeviceTree:/arm-io/pmgr-child`
+- `txu_routing_err_info1_acc1c0_p2p_dstcid`
+- `rxcu_noaccess_err_info3_acc1c1_vc`
+- `eid:0x%x auxid:0x%x subch:0x%x vc:0x%x kill_if:0x%x e2e_ch_miss_err:0x%x eid_in_range_err:0x%x`
+- `\"Interrupt triggered from disabled AMCC plane %u\" @%s:%d`
+- `CP_COMMAND_ERR`
+- `ATC_RXL`
+- `ds_wr_err_info_acc1c1_amcc0plane0_e2e_ch_miss_err`
+- `ds_fridxmgr_err_info_acc0c0_amcc0plane1_uflow`
+- `PMC_ASSERT_CLPC_TIMER_WO_HYSTERESIS_EN`
+- `RT_READ_BW_ABOVE_THR_INTR`
+- `txu_routing_err_info2_amcc0plane0_srccid`
+- `_ioReporters`
+- `out_slot_status != NULL`
+- `rxcu_noaccess_err_info4_acc0c0_addr_hi`
+- `rxcu_routing_err_info1_acc0c0_cmd_multi_hit_err`
+- `AppleSoCIO::start: failed to get acce_impl register map\n`
+- `txu_routing_err_info0_amcc0plane0_auxid_miss_err`
+- `txu_crmgr_oflow_err_info_acc1c0_p2p_credit_ch`
+- `txu_routing_err_info1_piogw_ch_miss_err`
+- ` : Assert ID: 0x%x `
+- `psd_dram_size`
+- `_sleepwake_state.sbd_bookkeeping.counts.num_media_sbds != UCHAR_MAX`
+- ` : %d Awake SBDs`
+- `dart_cmaint_err_info2_addr_miss_srcpid`
+- `PMC_ASSERT_DITHER_FRACTION_EQUAL_TO_ZERO`
+- `_afc_mccni0DART_CMAINT_MULTI_DSB_ERROR`
+- `ANE0`
+- `function-service_gate`
+- `FAKE_ERR`
+- `rxcu_noaccess_err_info5_refl_subch`
+- `ds_kill_err_info_acc0c0_amcc0plane0_vc`
+- `rxcu_routing_err_info1_acc1c0_tid`
+- `rxcu_noaccess_err_info5_acc1c1_dstpid`
+- `txu_routing_err_info1_piogw_auxid_miss_err`
+- `_amccCEFLErrCountExceeded`
+- `ANE0_RXL`
+- `voltage-states20-sram`
+- `txu_routing_err_info1_acc0c0_p2p_subch`
+- `_afc_mccni0RXCU_EID_QUEUE_TRIG_ACC0C0_ERROR`
+- `SEP_CPU_LLL_16NM_CPM`
+- `ATC_TXL`
+- `rxcu_noaccess_err_info1_acc0c0_addr_lo`
+- `txu_routing_err_info0_amcc0plane0_subch`
+- `dart_cmaint_err_info1_payload_addr_hi`
+- `PMGRCLKGEN_AON_TOP`
+- `AppleSoCErrorHandlerT8160AMCC.cpp`
+- `_afc_mccni0TXU_CRMGR_OFLOW_ACC0C0_P2P_ERROR`
+- `_afc_mccni0RXU_TBL_LOOKUP_AMCC0PLANE1_ERROR`
+- `SEP_HI_CLK_DFM`
+- `txu_routing_err_info2_acc0c0_p2p_auxid_miss_err`
+- `rxcu_noaccess_err_info3_acc0c0_addr_hi`
+- `txu_crmgr_oflow_err_info_acc0c0_p2p_credit_ch`
+- `NS1_ECRDT_RXL`
+- `ds_wr_err_info_acc1c0_amcc0plane2_src_ni`
+- `rxu_tbl_lookup_err_info_amcc0plane2_err_ch`
+- `ANE1`
+- `ds_kill_err_info_acc1c1_amcc0plane2_vc`
+- `txu_routing_err_info0_piogw_cmd`
+- `PSD Rail state`
+- `serious`
+- `pdom_runtime->ps_count > 0`
+- `site.MiscReporterFactory`
+- `rxcu_eid_queue_trig_err_info_acc1c0_ch`
+- `RXU_TBL_LOOKUP_ERR`
+- `ipa->pending && ((ipa->pending & IPA_PENDING_IRQ) == 0)`
+- `txu_routing_err_info2_piogw_srcpid`
+- `AppleSocReporter:   [%2u] %s + 0x%08x | Flags=0x%x | CfgToCounter=0x%x | EnableMask=0x%x | ModeMask=0x%x\n`
+- `_amccTzAccessViolation`
+- `_decodeInfo_DS_KILL_ERR`
+- `bool AppleSoCReporter::_createReporters()`
+- `PORT_VOQ_UF_EVENT_IRQ_ECRDT`
+- `PMC message expected proof-of-life UP message! Rcvd : %d\\n`
+- `(job != NULL) && (callback != NULL)`
+- `rxcu_routing_err_info1_acc1c1_dstpid`
+- `AppleSocReporter: PerfCounterReporter restoring\n`
+- `parity_err`
+- `CBT_AIC_IRQ_EN_CBT_AIC_IRQ2_EN`
+- `node->on_acquire`
+- `child_ps_runtime->status.waiting`
+- `txu_crmgr_oflow_err_info_amcc0plane1_credit_ch`
+- `txu_routing_err_info1_amcc0plane0_dest_miss_err`
+- `rxcu_routing_err_info0_acc0c0_tid`
+- `parent_ps_runtime->num_p2_child_voters != UCHAR_MAX && parent_ps_runtime->num_p4_child_voters != UCHAR_MAX && parent_ps_runtime->num_p5_child_voters != UCHAR_MAX`
+- `reg`
+- `GFX5-SRAM`
+- `txu_routing_err_info0_amcc0plane1_cmd`
+- `rxcu_routing_err_info0_acc0c0_dstcid`
+- `rxcu_routing_err_info1_acc0c0_vc`
+- `%s_%s`
+- ` CS0Odts: 0x%x CS1Odts: 0x%x`
+- `rxcu_routing_err_info1_acc1c0_addr_hi`
+- `txu_routing_err_info1_acc0c0_p2p_dstpid`
+- `rxcu_noaccess_err_info1_refl_addr_lo`
+- `ds_fridxmgr_err_info_acc1c0_amcc0plane0_uflow`
+- `reporter_debug`
+- `\"PMCReporter: _restorePmcTelemData doesn't receive IPCE done after %llu ticks \\n\" @%s:%d`
+- `PORT_ILLEGAL_VC_TRAFFIC_EVENT_IRQ_ECRDT`
+- `_gpce_drv.enabled`
+- `rxcu_routing_err_info1_acc0c0_data_ch_multi_hit_err`
+- `link_err_info_amcc0plane2_rxl_err_type`
+- `UID_CRC_ERR`
+- `New force shutdown message received(sbd=%d) while %d already\\ active!\\n`
+- `txcu_oflow_err_info_refl_err_instance`
+- `AppleSoCFunctionPerfCycleCount`
+- `site.AppleSoCErrorHandler`
+- `AFR`
+- `rxcu_routing_err_info0_acc1c0_tid`
+- `txu_routing_err_info0_acc1c0_p2p_auxid_miss_err`
+- `ds_kill_err_info_acc0c0_amcc0plane2_subch`
+- `old_cs != new_cs`
+- `node->in_queue == true && node->pending_cancel == false`
+- `txu_routing_err_info2_acc0c0_p2p_dstcid`
+- `ds_kill_err_info_acc1c0_amcc0plane0_subch`
+- `txu_routing_err_info0_amcc0plane2_auxid_multi_hit_err`
+- `PMC_ASSERT_MISMATCH_IN_LAPLL_STATE_PSD`
+- `LOGIC_AVM_LV`
+- `counted_sbd_id != PSD_SBD_INVALID_ID`
+- `rxcu_noaccess_err_info5_refl_tid`
+- `ds_kill_err_info_acc0c0_piogw_e2e_ch_miss_err`
+- `txu_noaccess_err_info0_piogw_dstpid`
+- `rxcu_routing_err_info1_acc1c1_addr_hi`
+- `_amccRoutingErr`
+- `SIO IPCE`
+- `voltage-states15-sram`
+- `txu_routing_err_info0_acc0c0_p2p_addr_hi`
+- `txu_routing_err_info2_acc0c0_p2p_addr_hi`
+- `ds_wr_err_info_acc1c1_amcc0plane1_e2e_ch_miss_err`
+- `\"PSDReporter: _restorePsdTelemData doesn't receive IPCE done after %llu ticks \\n\" @%s:%d`
+- `PMC_ASSERT_DVFM_PHY_ENTRY_INVALID`
+- `_afc_mccni0TXCU_OFLOW_ACC1C1_ERROR`
+- `%s-ns-names`
+- `SEP_CPU_L_13NM_CPM`
+- `NS1_ANS`
+- `rxcu_noaccess_err_info3_refl_addr_lo`
+- `ds_kill_err_info_acc0c0_amcc0plane2_eid`
+- `_amccDirParErr`
+- `txu_routing_err_info0_amcc0plane1_dstcid`
+- `rxcu_noaccess_err_info1_refl_size`
+- `PTM_RSP_UNEXP`
+- `_afc_mccni0TXU_ROUTING_AMCC0PLANE0_ERROR`
+- `ps_runtime->num_p5_child_voters == 0`
+- `txcu_tbl_lookup_err_info_acc1c0_err_instance`
+- `txu_noaccess_err_info2_piogw_dstpid`
+- `rxcu_routing_err_info0_acc1c1_cmd_ch_multi_hit_err`
+- `rw_callback`
+- `ret = pdPASS`
+- `rxcu_routing_err_info1_acc0c0_subch`
+- `txcu_tbl_lookup_err_info_acc1c1_err_type`
+- `AutoPMEn != 1 id:%d %08x\\n`
+- `rxcu_noaccess_err_info0_acc1c0_addr_hi`
+- `IOHibernateState`
+- `rxcu_routing_err_info1_acc1c1_cmd_ch_multi_hit_err`
+- `ds_wr_err_info_acc1c1_amcc0plane1_src_ni`
+- `flags`
+- `dart_cmaint_err_info0_addr_miss_addr_hi`
+- `txcu_oflow_err_info_acc1c1_err_ch`
+- `rxcu_routing_err_info0_acc1c1_subch`
+- `eid:0x%x`
+- `histGroupIdx < _histogramGroupCount && histGroupIdx != kInvalidHistGroupIndex`
+- `cpbknc`
+- `workaround_pmc_msg.raw_words.word0 == 0`
+- `site.AppleSoCMiscFunctionSubmitVoteForceWakeupDram`
+- `voltage-states0`
+- `txu_crmgr_uflow_err_info_amcc0plane2_data_err`
+- `AMCC%d Plane %d %s Error: intsts%d 0x%08x`
+- `ps:%d timed out on PMGR!`
+- `vrail_runtime->ps_count > 0`
+- `ioent`
+- `txu_routing_err_info2_amcc0plane1_dest_multi_hit_err`
+- `rxcu_routing_err_info2_acc1c0_data_ch_multi_hit_err`
+- `txu_routing_err_info0_acc1c0_p2p_auxid_multi_hit_err`
+- `PerfCounterReporter`
+- `12111122`
+- `Unexpected PMC msg! word0:%08x word1:%08x\\n`
+- `ds_kill_err_info_acc1c0_amcc0plane1_kill_if`
+- `ds_fridxmgr_err_info_acc0c0_amcc0plane1_oflow`
+- `_afxSocNiHandleInterrupt`
+- `_amccUEFLOverflow`
+- `error-reflector`
+- `\"AppleSoCIO::start: can't find 'function-power_gate', update Device Tree\" @%s:%d`
+- `_readPMCRegister32`
+- `txcu_oflow_err_info_acc0c0_err_ch`
+- `rxcu_routing_err_info2_acc0c0_data_dest_miss_err`
+- `ds_wr_err_info_acc1c1_amcc0plane0_auxid`
+- `%.*s_CLK`
+- `PMC_ASSERT_MAILBOX_ALREADY_ENABLED`
+- `RT_WRITE_BW_ABOVE_THR_INTR`
+- `voltage-states14`
+- `rxcu_noaccess_err_info0_refl_srccid`
+- `rxcu_routing_err_info1_acc1c1_cmd_ch_miss_err`
+- `PMC_ASSERT_STARTUP_DVFM_LOG_IDX_TOO_LARGE`
+- `_amccMccTpPar`
+- `_afc_mccni0DS_RD_ACC1C1_AMCC0PLANE2_ERROR`
+- `_afc_mccni0DS_WR_ACC1C0_AMCC0PLANE1_ERROR`
+- `rxcu_routing_err_info2_acc1c0_data_ch_miss_err`
+- `_psResidencyReporter`
+- `site.PSDReporterFactory`
+- `ret == pdPASS`
+- `ds_wr_err_info_acc1c1_amcc0plane1_auxid`
+- `PMC_ASSERT_MLPIXEL_SPURIOUS_COMPLETION`
+- `PMC_ASSERT_LAPLL_NOT_IN_TRANSITION`
+- `_sleepwake_state.sbd_bookkeeping.counts.num_awake_sbds != UCHAR_MAX`
+- `txu_routing_err_info1_amcc0plane1_subch`
+- `txu_routing_err_info1_amcc0plane2_dstpid`
+- `_regMaps[map].memMap != nullptr`
+- `AP_TBM`
+- `_afc_mccni0DS_KILL_ACC1C0_AMCC0PLANE1_ERROR`
+- `ANE0 IPCE`
+- `SBR_TXL`
+- `_dcsHandleDCSOdtsEvent`
+- `site.AppleSoCMisc`
+- `txu_routing_err_info2_acc0c0_p2p_dest_miss_err`
+- `ds_wr_err_info_acc1c0_amcc0plane1_e2e_ch_miss_err`
+- `ds_wr_err_info_acc0c0_piogw_subch`
+- `txu_routing_err_info1_amcc0plane2_dest_multi_hit_err`
+- `SEP_CPU_ULL_16NM_CPM`
+- `PROTCONV_UFLOW_ERR`
+- `_afc_mccni0TXCU_OFLOW_REFL_ERROR`
+- `DISP_RXL`
+- `_floorReporter`
+- `txcu_oflow_err_info_refl_err_ch`
+- `_afc_mccni0LINK_ACC1C0_TXL_ERROR`
+- `desc->ipce_id < PSD_NUM_IPCE`
+- `GPCE panic fail:%d ps:%d\\n`
+- `txu_routing_err_info0_acc0c0_p2p_dstcid`
+- `rxcu_noaccess_err_info4_acc0c0_vc`
+- `rxcu_noaccess_err_info0_acc1c1_dstpid`
+- `ds_kill_err_info_acc0c0_piogw_eid`
+- `txu_noaccess_err_info2_piogw_subch`
+- `offset + sizeof(UInt32) <= _regMaps[map].size`
+- `aferrlog0`
+- `PMC_ASSERT_IPA_READ_TIMEOUT`
+- `txu_data_queue_trig_err_info_piogw_ch`
+- `txu_noaccess_err_info5_piogw_vc`
+- `_afxNsDecodeInterrupts`
+- `ncrdwrap_ro`
+- `no_panic_on_illegal_dsid_err`
+- `_dcsDecodeInterrupts`
+- `CP_COMMAND_INVALID_ERR`
+- `MSR_TXL`
+- `callPlatformFunction`
+- `ds_wr_err_info_acc1c0_piogw_vc`
+- `rxcu_noaccess_err_info3_acc0c0_size`
+- `txu_routing_err_info2_amcc0plane0_ch_miss_err`
+- `txu_routing_err_info1_piogw_dest_multi_hit_err`
+- `PMC_ASSERT_COP_SOC_RESOLVED_TOO_LOW`
+- `PMC_ASSERT_DITHER_PERIOD_TOO_SMALL`
+- `SEP_CPU_SR_CPM`
+- `Failed to add sampling timer event source to workloop\n`
+- `txu_routing_err_info2_amcc0plane1_ch_miss_err`
+- `rxcu_routing_err_info1_acc1c0_srccid`
+- `rxcu_noaccess_err_info3_acc0c0_subch`
+- `ds_wr_err_info_acc0c0_piogw_eid_in_range_err`
+- `acke`
+- `PMC_ASSERT_MAILBOX_MSG_ADDRESSING_VIOLATION`
+- `_afc_mccni0RXCU_ROUTING_ACC1C0_ERROR`
+- `GFX3-SRAM`
+- `GFX6`
+- `rxcu_noaccess_err_info2_refl_srccid`
+- `txu_routing_err_info0_piogw_vc`
+- `rxcu_routing_err_info0_acc1c1_dstpid`
+- `rxu_oflow_err_info_amcc0plane0_err_ch`
+- `_resmgr_is_occupied(resmgr, res_idx)`
+- `ISP`
+- `rxcu_noaccess_err_info2_acc1c1_dstpid`
+- `ReporterBase::ReporterBase(AppleSoCReporter *, const char *)`
+- `IOReportLegend`
+- `fillo`
+- `ATC IPCE`
+- `PCIE`
+- `\"AppleSoCIO::start: can't create AppleARM64ErrorHandler\" @%s:%d`
+- `ds_wr_err_info_refl_local_auxid`
+- `ds_kill_err_info_refl_local_e2e_ch_miss_err`
+- `Events`
+- `AppleSocReporter: PerfCounterReporter quiescing\n`
+- `dram-saca-freqs`
+- `AFT_RXL`
+- `rxcu_noaccess_err_info4_acc1c1_subch`
+- `rxcu_routing_err_info1_acc0c0_srcpid`
+- `rxu_oflow_err_info_amcc0plane1_err_ch`
+- `txu_routing_err_info0_amcc0plane2_ch_miss_err`
+- `PSD PANIC (0x%x)`
+- `txu_routing_err_info0_amcc0plane1_auxid_miss_err`
+- `txu_noaccess_err_info5_piogw_tid`
+- `rxcu_routing_err_info2_acc1c1_vc`
+- `ni4-error-handler`
+- `dart_cmaint_err_info1_addr_miss_addr_hi`
+- `aferrlog2`
+- `instance < PLATFORM_NUM_IPA`
+- `SBR_RXL`
+- `rxcu_routing_err_info2_acc0c0_cmd`
+- `rxcu_routing_err_info0_acc1c1_cmd`
+- `_amccAFIllegalCacheCmd`
+- `_afc_mccni0TXU_NOACCESS_PIOGW_ERROR`
+- `ptd_err_info_err_info`
+- `rxcu_noaccess_err_info3_refl_vc`
+- `rxcu_noaccess_err_info5_acc1c0_dstpid`
+- `cmd:0x%x vc:0x%x subch:0x%x srccid:0x%x srcpid:0x%x dstcid:0x%x dstpid:0x%x tid:0x%x addr_hi:0x%x ch_multi_hit_err:0x%x ch_miss_err:0x%x dest_multi_hit_err:0x%x dest_miss_err:0x%x auxid_multi_hit_err:0x%x auxid_miss_err:0x%x`
+- `_amcccohCmdTzSet`
+- `_afc_mccni0DS_RD_ACC1C0_AMCC0PLANE2_ERROR`
+- `_afc_mccni0DS_WR_ACC0C0_AMCC0PLANE2_ERROR`
+- `_afc_mccni0DS_FRIDXMGR_REFL_PIOGW_ERROR`
+- `AppleSoCPsdPanicLog: createWithUUID failed for tag '%s' (size=%u) — bailing\n`
+- `rxcu_noaccess_err_info2_refl_vc`
+- `rxcu_noaccess_err_info1_acc1c1_cmd`
+- `PMC_ASSERT_MAILBOX_MSG_INVALID_FROM_PSD`
+- `SEP_LO_CLK_SEPF2M`
+- `script_arr_index < PSD_NUM_SBD_GPCE_SCRIPTS`
+- `gpce_desc->gpce_id == GPCE_NONE_ID`
+- `New ps_reset message received(ps:%d) while aready active\\ on ep:%d\\n`
+- `rxcu_noaccess_err_info1_acc1c0_dstpid`
+- `txcu_uflow_err_info_acc1c0_err_instance`
+- `ds_kill_err_info_acc1c1_amcc0plane0_kill_if`
+- `fills`
+- `PMC_ASSERT_MAILBOX_PUT_ON_NONOUTBOX`
+- `rval == wval`
+- `IODeviceTree:/arm-io/pmp0/iop-pmp0-nub`
+- `ds_kill_err_info_acc1c0_piogw_e2e_ch_miss_err`
+- `dart_cmaint_err_info2_addr_miss_addr_lo`
+- `rxcu_noaccess_err_info4_acc1c0_dstpid`
+- `rxcu_noaccess_err_info3_acc1c1_tid`
+- `AppleSocReporter: Psd Group Configuration:\n`
+- `PMC_ASSERT_INVALID_ML_PIXEL_TARGET_IDX`
+- `_afc_mccni0TXU_CRMGR_OFLOW_AMCC0PLANE1_ERROR`
+- `rxcu_routing_err_info0_acc1c0_data_dest_multi_hit_err`
+- `PORT_ILLEGAL_VC_TRAFFIC_EVENT_IRQ_CMD`
+- `_afc_mccni0TXU_CMD_QUEUE_TRIG_ACC0C0_P2P_ERROR`
+- `SEP_CPU_ULL_13NM_CPM`
+- `nr_sbd_runtime->state.init_state == PSD_SBD_INITIALIZED`
+- ` : PSD_PANIC_TYPE_FATAL`
+- `NS1_SEP`
+- `\"AppleSoCIO::start: can't find 'function-clock_gate', update Device Tree\" @%s:%d`
+- `rxu_tbl_lookup_err_info_amcc0plane2_err_type`
+- `txu_routing_err_info1_amcc0plane2_subch`
+- `(indexHi - indexLo) == kPerfLoCntToHiCntRegOffset`
+- `_afc_mccni0RXU_TBL_LOOKUP_PIOGW_ERROR`
+- `CP_ACCESS_ERR`
+- `rxcu_noaccess_err_info3_acc1c0_tid`
+- `rxcu_noaccess_err_info5_acc1c1_srccid`
+- `txu_routing_err_info2_amcc0plane2_tid`
+- `\"AppleSoCReporter:: failed registerIOReporter \\n\" @%s:%d`
+- `PMC_ASSERT_TELE_UNKNOWN_RAIL`
+- `%s::%s: %c%c%c%c reg range[%u,%u) overlaps %c%c%c%c reg range [%u,%u)\n`
+- `rxcu_noaccess_err_info5_refl_dstcid`
+- `rxcu_routing_err_info2_acc1c1_addr_hi`
+- `gpce_desc->gpce_id == gpce_id`
+- `\"%s Script %d %s\" @%s:%d`
+- `AppleSoCPsdPanicLog: tag '%s' channel created, totalLen=%u\n`
+- `ds_wr_err_info_acc0c0_amcc0plane2_auxid`
+- `ds_wr_err_info_acc0c0_amcc0plane2_eid_in_range_err`
+- `ds_fridxmgr_err_info_acc0c0_amcc0plane2_oflow`
+- `_HISTOGRAM`
+- `PMC Driver State`
+- `%s:%d: _dcsToSmcThermalLoopPtdIdx = %d\n\n`
+- `\"AppleSoCPsdPanicLog: EDT exposes %u psd-panic-data rows, \" \"exceeds kMaxSources=%u — bump kMaxSources in the header\" @%s:%d`
+- `txu_crmgr_uflow_err_info_amcc0plane0_data_err`
+- `rxcu_noaccess_err_info4_refl_tid`
+- `rxcu_routing_err_info2_refl_data_dest_multi_hit_err`
+- `site.AppleSoCFunctionPerfCycleCount`
+- `AppleSoCIO::start: chip-revision: %c%c\n`
+- `GFX-SRAM`
+- `txu_noaccess_err_info1_piogw_dstpid`
+- `txu_noaccess_err_info5_piogw_size`
+- `TXU_CRMGR_UFLOW_ERR`
+- `PMC_ASSERT_NON_ZERO_VTABLE_AT_BOOT`
+- `_amccDirReducedNotEmpty`
+- `PMC_ASSERT_STRING_HEADER_MISSING`
+- `txu_routing_err_info2_amcc0plane1_subch`
+- `txu_routing_err_info1_amcc0plane0_cmd`
+- `PMC_ASSERT_TIMER_TRANSITION_LATENCY_TIMEOUT`
+- `new_state < job->_table->num_states || new_state == PSD_FSM_COMPLETE`
+- `Possible multi-slot vote on blocking ps:%d slot:%d\\n`
+- `%s::%s: %16s: 'reg' property count (%u) exceeds max %u\n`
+- `ds_kill_err_info_refl_piogw_auxid`
+- `cdrop`
+- `_afc_mccni0DS_WR_REFL_PIOGW_ERROR`
+- `_afc_mccni0DS_KILL_ACC0C0_AMCC0PLANE2_ERROR`
+- `rxcu_noaccess_err_info4_acc1c0_tid`
+- `rxcu_routing_err_info1_acc0c0_cmd`
+- `multihit_err_dir_info_2`
+- `txcu_tbl_lookup_err_info_refl_err_type`
+- `txu_routing_err_info1_acc0c0_p2p_dest_miss_err`
+- `txu_routing_err_info2_acc1c0_p2p_dest_miss_err`
+- `rxcu_routing_err_info0_acc0c0_data_ch_multi_hit_err`
+- `txcu_uflow_err_info_refl_err_type`
+- `PMC_ASSERT_IDLE_REQ_SPURIOUS`
+- ` CLLT_STATUS 0x%08x CLLT_GLB_CTL 0x%08x ISP_CTL 0x%08x DISP_CTL 0x%08x DISPEXT_CTL(0/1) 0x%08x/0x%08x AUDIO_BASE_S_ADMA_CTL 0x%08x AUDIO_BASE_NS_ADMA_CTL 0x%08x AUDIO_LEAP_S_ADMA_CTL 0x%08x AUDIO_LEAP_NS_ADMA_CTL 0x%08x DISP_ADMA_CTL 0x%08x DISPEXT_ADMA_CTL(0/1) 0x%08x/0x%08x DCS_PERF_DEBUG 0x%08x S`
+- `Diff=%08x(idx %d) while quiesce in progress!!\\n`
+- `pmc-counters`
+- `ds_kill_err_info_acc1c0_amcc0plane0_kill_if`
+- `rxcu_noaccess_err_info2_acc1c0_vc`
+- `rxcu_noaccess_err_info3_acc1c0_dstcid`
+- `txu_routing_err_info1_amcc0plane0_dest_multi_hit_err`
+- `multihit_err`
+- `_afc_mccni0DART_CMAINT_PAYLOAD_ERROR`
+- `SEP_CPU_S_19NM_CPM`
+- `txu_routing_err_info0_acc0c0_p2p_vc`
+- `rxcu_noaccess_err_info1_acc0c0_dstpid`
+- `txu_noaccess_err_info5_piogw_addr_hi`
+- `AppleSocReporter: Performance Counter Configuration:\n`
+- `site.PsdCounterData`
+- `ncrdincrs`
+- `ctoifw`
+- `Write requested on disabled ps:%d!!\\n`
+- `NO_ACCESS`
+- `ipa->pending == 0`
+- `xReturn == pdPASS`
+- `WR_RESP_ERR_IN_FLIGHT`
+- `txu_cmd_queue_trig_err_info_piogw_ch`
+- `txu_routing_err_info2_amcc0plane0_dstcid`
+- `PMC_ASSERT_HANDLER_NOT_IMPLEMENTED`
+- `PMC%u Assert ID: 0x%x`
+- `rxcu_noaccess_err_info0_acc0c0_srccid`
+- `ds_wr_err_info_acc0c0_amcc0plane2_e2e_ch_miss_err`
+- `txu_noaccess_err_info4_piogw_size`
+- `rxcu_routing_err_info1_refl_dstcid`
+- `site.PerfCounterReporter`
+- `_afc_mccni0DS_KILL_ACC0C0_AMCC0PLANE0_ERROR`
+- `misc->num_scripts < PLATFORM_GPCE_TOTAL_SCRIPTS`
+- `to->flags.dup == 0 && to->num_states >= from->num_states`
+- `rxcu_noaccess_err_info2_acc0c0_dstpid`
+- `txu_noaccess_err_info1_piogw_subch`
+- `rxcu_routing_err_info2_acc1c1_data_ch_miss_err`
+- `ds_rd_err_info_acc0c0_amcc0plane2_eid`
+- `no_panic_on_inband_dsid_drop_err`
+- `SIO_RXL`
+- `NS0_AFT`
+- `_dcsInitDCSThermalLoop`
+- `aggregated-wake-source-ids`
+- `txu_routing_err_info1_amcc0plane0_srccid`
+- `rxcu_routing_err_info1_acc1c1_srccid`
+- `rxcu_routing_err_info1_refl_cmd_miss_err`
+- `_decodeInfo_PTD_ERR`
+- `PMC_ASSERT_BWR_INVALID_ISOC_DCS_THR_TUNABLES`
+- `%s::%s: Enabling RT BWR Threshold interrupts\n`
+- `rxcu_routing_err_info2_refl_cmd_multi_hit_err`
+- `_amccAFCLeakyBktOvflo`
+- `active_info`
+- `NS1_CMD_RXL`
+- `rxu_uflow_err_info_amcc0plane2_err_instance`
+- `AppleSoCReporter:: AppleSoCFunctionPerfCycleCount is called but PerfCounterReporter is not enabled \n`
+- `rxcu_noaccess_err_info0_acc1c1_addr_hi`
+- `sched_task_state.num_jobs_active != UCHAR_MAX`
+- `Slot %d FSM at %d state after FSM disable!\\n`
+- `PMC 2D state`
+- `perf-counters`
+- `_afc_mccni0RXU_UFLOW_AMCC0PLANE2_ERROR`
+- `\"UNKNOWN decoder!\" @%s:%d`
+- `\"ODTS Threshold interrupt handler method not implemented\" @%s:%d`
+- `txcu_tbl_lookup_err_info_acc1c1_err_instance`
+- `rxcu_noaccess_err_info1_acc1c1_addr_lo`
+- `void AppleSoCReporter::_configureReporters()`
+- `SYS0_LO_TEMP`
+- `IPA error! waddr[31:0]:0x%08x waddr[63:32]:0x%08x\\n`
+- `psd_task_get_my_id() == PSD_IPCE_TASK_ID`
+- `table->flags.dup == 1 && state < table->num_states`
+- `dart_cmaint_err_info0_payload_cmd`
+- `txu_noaccess_err_info3_piogw_srcpid`
+- `txu_routing_err_info2_amcc0plane2_srccid`
+- `site.OSSharedPtr<IOHistogramReporter>*`
+- `parent != nullptr`
+- `_provider != nullptr`
+- `_afc_mccni0TXU_DATA_QUEUE_TRIG_ACC0C0_P2P_ERROR`
+- `operator()`
+- `dart_cmaint_err_info1_addr_miss_srcdevid`
+- `ds_kill_err_info_acc1c0_amcc0plane0_auxid`
+- `txcu_oflow_err_info_acc1c0_err_type`
+- `ds_wr_err_info_acc1c0_amcc0plane0_eid`
+- `ds_fridxmgr_err_info_acc1c1_amcc0plane1_uflow`
+- `rxcu_routing_err_info1_acc1c0_cmd`
+- `rxcu_noaccess_err_info2_refl_srcpid`
+- `SLP_DDR`
+- ` F%d WrBWR:0x%x RdBWR:0x%x RTBWHighThrPerfIntFreq:0x%x RTBWWrHighThrPerfIntFreq:0x%x RTBWRdHighThrPerfIntFreq:0x%x`
+- `!psd_is_scheduler_running()`
+- `_getPropertyCount`
+- `_getMetadata`
+- `rxcu_routing_err_info0_acc1c0_cmd_ch_multi_hit_err`
+- `ds_kill_err_info_acc1c1_amcc0plane1_kill_if`
+- `txcu_oflow_err_info_acc1c0_err_ch`
+- `rxcu_cmd_queue_trig_err_info_refl_ch`
+- `AppleSoCReporter: Failed to register function parent\n`
+- `_afxPioGwDecodeInterrupts`
+- `AppleSoCMiscCommon.cpp`
+- `txu_routing_err_info0_acc1c0_p2p_dstcid`
+- `rxcu_routing_err_info2_acc0c0_tid`
+- `ds_kill_err_info_acc1c1_amcc0plane2_e2e_ch_miss_err`
+- `_psdDramSize`
+- `_numberRptrs <= kNumReporters`
+- `RXU_UFLOW_ERR`
+- `PMC_ASSERT_COP_SOC_TARGET_TOO_HIGH`
+- `AppleSoCMiscFunctionSubmitVoteForceWakeupDram`
+- `txu_routing_err_info0_amcc0plane2_addr_hi`
+- `multihit_err_af_pkt_info_1`
+- `PMC_ASSERT_CPS_UPDATE_INVALID`
+- `_afc_mccni0RXCU_EID_QUEUE_TRIG_ACC1C0_ERROR`
+- `DQ`
+- `site.UInt64`
+- `PSTATE_IS_LESS_OR_EQUALLY_ON(rs, cs)`
+- `txu_routing_err_info2_amcc0plane1_addr_hi`
+- `rxcu_noaccess_err_info0_acc1c1_addr_lo`
+- `rxcu_routing_err_info0_acc0c0_cmd_ch_miss_err`
+- `txu_cmd_queue_trig_err_info_amcc0plane2_ch`
+- `rxcu_routing_err_info1_acc1c1_cmd`
+- `\"PerfCounterReporter: unknown counter type %u\\n\" @%s:%d`
+- `UNKNOWN`
+- `psd-telem-data`
+- ` : 0x%x, 0x%x`
+- `AVE_TXL`
+- `txu_routing_err_info1_amcc0plane1_ch_multi_hit_err`
+- `DS_FRIDXMGR_ERR`
+- `_amccTzDirHit`
+- `SEP_HI_CLK_SEPF2M`
+- `(addr & 0x7) == 0`
+- `txu_routing_err_info0_amcc0plane0_ch_multi_hit_err`
+- `PMC_ASSERT_IPA_WRITE_XACTION_TYPE_INCORRECT`
+- `ANEXL1_RXL`
+- `GFXC_TXL`
+- `txu_crmgr_uflow_err_info_piogw_credit_ch`
+- `rxcu_noaccess_err_info0_refl_size`
+- `txu_noaccess_err_info1_piogw_size`
+- `ds_kill_err_info_acc0c0_amcc0plane1_e2e_ch_miss_err`
+- `nop`
+- `DRAM-SAC`
+- `(existing_ep = _sched_ps_reset_get_ep(ps_id)) == SCHED_NUM_EP`
+- `%s:%d: start reading ODTS\n\n`
+- `txu_crmgr_oflow_err_info_piogw_credit_ch`
+- `rxcu_noaccess_err_info4_refl_vc`
+- `rxcu_routing_err_info2_acc0c0_cmd_miss_err`
+- `rxcu_routing_err_info0_refl_tid`
+- `PMC_ASSERT_DEBUG_ESCALATION_CV_TOO_HIGH`
+- `ret == IPA_RET_SUCCESS`
+- `ANS_TXL`
+- `rxcu_noaccess_err_info0_acc0c0_addr_hi`
+- `\"PerfCounterReporter: unknown counter type %u for channel ID generation\\n\" @%s:%d`
+- `AMCC%u PLANE%u %s error: INTSTS%u 0x%08x AF_ERR_DSID=%#x`
+- `_amccSramBufferAllocComplete`
+- `_afc_mccni0DS_WR_ACC1C1_AMCC0PLANE0_ERROR`
+- `fsm_is_active(job->_tracker)`
+- `\"%s UNKNOWN Script %s\" @%s:%d`
+- `JPEG_TXL`
+- `PMCReporter.cpp`
+- `rxcu_noaccess_err_info0_acc0c0_size`
+- `rxcu_routing_err_info2_acc1c1_data_dest_multi_hit_err`
+- `_operatingPointReporter`
+- `txu_noaccess_err_info2_piogw_tid`
+- `voltage-states18`
+- `rxcu_routing_err_info1_acc0c0_cmd_ch_miss_err`
+- `rxcu_routing_err_info0_refl_cmd`
+- `PMC_ASSERT_IPA_WDATA_WORD_UNALIGNED`
+- `PMC_ASSERT_INVALID_ML_PIXEL_INIT_STATE`
+- `txcu_uflow_err_info_acc1c1_err_instance`
+- `rxcu_routing_err_info1_acc1c1_cmd_multi_hit_err`
+- `RX`
+- `SFM`
+- `NS1_JPEG`
+- `\"AppleSoCIO::start: can't find 'function-service_state', update Device Tree\" @%s:%d`
+- `txu_routing_err_info2_amcc0plane1_auxid_miss_err`
+- `SEP_CPU_L_16NM_CPM`
+- `rxcu_noaccess_err_info3_acc0c0_tid`
+- `txu_routing_err_info2_piogw_cmd`
+- `cpfws`
+- `TXCU_UFLOW_ERR`
+- `PMC_ASSERT_ONE_IN_FLIGHT`
+- `_afc_mccni0TXCU_TBL_LOOKUP_ACC1C0_ERROR`
+- `voltage-states19-sram`
+- `txu_routing_err_info0_amcc0plane1_srcpid`
+- `rxcu_noaccess_err_info1_acc1c0_srcpid`
+- `ds_wr_err_info_acc0c0_piogw_e2e_ch_miss_err`
+- `amcc.cpp`
+- `\"SEP IRQ: %s\" @%s:%d`
+- `node->in_queue == false && node->pending_cancel == false`
+- `rxcu_noaccess_err_info2_acc1c0_srccid`
+- `rxcu_noaccess_err_info1_refl_srccid`
+- `txu_routing_err_info2_amcc0plane0_cmd`
+- `PMC_ASSERT_MEMSET_WORD_UNALIGNED`
+- `_afc_mccni0RXCU_NOACCESS_ACC1C1_ERROR`
+- `Cluster %d down with non-zero PS count = %d!\\n`
+- `AppleSoCPsdPanicLog: row %u armed: tag='%s' slot=%u off=0x%x len=0x%x %s\n`
+- `txu_routing_err_info0_acc1c0_p2p_dest_miss_err`
+- `rxcu_cmd_queue_trig_err_info_acc0c0_ch`
+- `_decodeInfo_RXCU_ROUTING_ERR`
+- `indexLo < indexHi`
+- `rxcu_routing_err_info2_acc1c0_cmd_ch_miss_err`
+- `TXU_DATA_QUEUE_TRIG_ERR`
+- `txcu_tbl_lookup_err_info_acc1c1_err_ch`
+- `PTM_SIZE`
+- `Illegal SBD state? Current CPS:%d`
+- `ds_kill_err_info_acc1c0_amcc0plane0_vc`
+- `link_err_info_piogw_rxl_err_type`
+- `rxcu_routing_err_info0_refl_dstcid`
+- `_afc_mccni0DS_FRIDXMGR_ACC1C0_AMCC0PLANE1_ERROR`
+- `sleepwake_desc->active == false`
+- `rxcu_routing_err_info0_acc1c0_data_ch_multi_hit_err`
+- `ds_wr_err_info_acc1c1_amcc0plane2_subch`
+- `AppleSocReporter: Initialized %u free-running counters with S2R counter at group %u offset 0x%x\n`
+- `_afc_mccni0RXU_OFLOW_PIOGW_ERROR`
+- `%s::%s: Could not read sysctl kern.development!\n`
+- `, DCS1: STS:0x%08x DATA0[0x%012lx]=0x%08x DATA1[0x%012lx]=0x%08x`
+- `psd-panic-data`
+- `\"glb-time-source malformed: length %u, expected %lu\" @%s:%d`
+- `rxu_tbl_lookup_err_info_piogw_err_type`
+- `rxcu_routing_err_info1_acc0c0_tid`
+- `ds_wr_err_info_acc0c0_amcc0plane1_vc`
+- `txu_noaccess_err_info4_piogw_dstcid`
+- `_afc_mccni0DS_KILL_ACC1C0_PIOGW_ERROR`
+- `site.AppleARMFunction *`
+- `void ReporterBase::writeReg32(RegMap, UInt32, UInt32)`
+- `PMC_ASSERT_BWR_INVALID_SOC_THR_TUNABLES`
+- `(nr_sbd_id != PSD_SBD_INVALID_ID) || (r_sbd_id != PSD_SBD_INVALID_ID)`
+- `PSD ASSERT (0x%x)`
+- `ds_wr_err_info_acc1c0_piogw_eid_in_range_err`
+- `rxcu_routing_err_info0_acc0c0_data_dest_miss_err`
+- `txu_routing_err_info1_piogw_auxid_multi_hit_err`
+- `PMC_ASSERT_DVFM_TARGET_TOO_HIGH`
+- `vrail_runtime->ps_count == 0`
+- `PSTATE_IS_EQUALLY_ON(p_target, PSD_P0)`
+- `offset < _pmcDramSize`
+- `dart_cmaint_err_info1_payload_tid`
+- `script_arr_index < PSD_NUM_PS_IPCE_SCRIPTS`
+- `psd_timer != NULL`
+- `GFX`
+- `voltage-states2`
+- `rxcu_noaccess_err_info2_acc0c0_cmd`
+- `rxcu_routing_err_info0_acc0c0_cmd_ch_multi_hit_err`
+- `tagramerrlog2`
+- `_afc_mccni0TXU_CRMGR_UFLOW_AMCC0PLANE2_ERROR`
+- `UFDI_ERROR_INT_EVNT`
+- `rxcu_routing_err_info0_acc0c0_cmd`
+- `ds_wr_err_info_refl_piogw_eid_in_range_err`
+- `_mapPmgrApertures`
+- `_clltHandleInterrupt`
+- `(RTK_thread_get_attribute( psd_get_os_current_task_id(), RTK_THRATTR_NAME, (uintptr_t *)&name)) == RTK_ST_OK`
+- `NS0_DISPEXT`
+- `voltage-states15`
+- `txu_noaccess_err_info5_piogw_dstcid`
+- `site.DTRegMap`
+- `_afc_mccni0TXCU_UFLOW_ACC1C1_ERROR`
+- `rxcu_noaccess_err_info5_acc0c0_vc`
+- `rxcu_noaccess_err_info3_acc1c1_addr_lo`
+- `PMC_ASSERT_IPA_TRANSATION_SAVE_POLLING_FAIL`
+- `txu_routing_err_info2_acc1c0_p2p_tid`
+- `rxcu_noaccess_err_info0_acc1c0_srcpid`
+- `txu_cmd_queue_trig_err_info_acc0c0_p2p_ch`
+- `rxcu_routing_err_info1_acc0c0_srccid`
+- `_dtRegMap`
+- `_amccTzInPanicRgnViolation`
+- `DCC_AIC_IRQ_EN_DCC_AIC_IRQ3_EN`
+- `vrail_runtime->state.init_state == PSD_VRAIL_INITIALIZED`
+- `voltage-states16-sram`
+- `GFX2-SRAM`
+- `AMCC%u PLANE%u %s INTSTS%u 0x%08x Control:0x%08x Status:0x%08x Error:0x%08x StartAddress:0x%08x Size:0x%08x`
+- `_afxPioGwHandleInterrupt`
+- `F9568659-1550-4447-AE32-90FD80BB9B00`
+- `voltage-states31`
+- `ds_wr_err_info_acc0c0_amcc0plane1_eid`
+- `_amccUnexpPushRsp`
+- `_afc_mccni0RXCU_EID_QUEUE_TRIG_REFL_ERROR`
+- `ds_wr_err_info_acc1c1_amcc0plane1_subch`
+- `PMC_ASSERT_GPCE_TELEMETRY_READOUT_BAD_HANDSHAKE`
+- `_clearWakeTimeCounters`
+- `rxcu_routing_err_info1_refl_cmd_ch_multi_hit_err`
+- `ackirsp_d`
+- `PMC_ASSERT_MAILBOX_MSG_MULTIPLE_OF_A_KIND_TELE_MIX`
+- `PMC_ASSERT_NO_LSB`
+- `function-saca_dram`
+- `txu_crmgr_oflow_err_info_acc1c0_p2p_data_err`
+- `_afc_mccni0DS_FRIDXMGR_ACC1C0_AMCC0PLANE0_ERROR`
+- `xaction->type == IPA_XACTION_WRITE`
+- `SLEEPWAKE_CPS_IS_ABOVE_OR_AT(required_cps)`
+- `MAC_TABLE_ACCESS_ERR`
+- `txu_routing_err_info1_amcc0plane1_cmd`
+- `txu_routing_err_info0_acc1c0_p2p_srcpid`
+- `rxcu_routing_err_info2_refl_srccid`
+- `txu_routing_err_info0_acc1c0_p2p_vc`
+- `ds_kill_err_info_acc1c0_amcc0plane0_eid_in_range_err`
+- `rxcu_noaccess_err_info1_acc0c0_cmd`
+- `rxcu_noaccess_err_info5_acc0c0_srccid`
+- `ds_wr_err_info_refl_local_vc`
+- `_afc_mccni0TXCU_UFLOW_ACC1C0_ERROR`
+- `PMC%u Assert ID: 0x%x, rail:%s, limit:0x%x, latency:0x%x, resolved_vec:0x%x, target_vec:0x%x, current_vec:0x%x`
+- `NS0_DATA_TXL`
+- `0`
+- `GFX2`
+- `txu_routing_err_info1_acc0c0_p2p_auxid_miss_err`
+- `ds_kill_err_info_acc0c0_amcc0plane2_vc`
+- `txu_crmgr_uflow_err_info_acc0c0_p2p_data_err`
+- `rxcu_routing_err_info2_acc0c0_cmd_multi_hit_err`
+- `%s::%s: _amccPlaneEnableMask = 0x%x\n\n`
+- `PRORES IPCE`
+- `rxcu_noaccess_err_info2_acc1c1_subch`
+- `rxcu_noaccess_err_info3_acc1c1_dstcid`
+- `PCPU1-SRAM`
+- `txu_routing_err_info0_acc1c0_p2p_dstpid`
+- `rxcu_eid_queue_trig_err_info_refl_ch`
+- `rxcu_noaccess_err_info2_acc1c0_dstpid`
+- `ds_kill_err_info_acc1c0_amcc0plane1_auxid`
+- `IPARd fail id:%d %d\\n`
+- `txu_routing_err_info1_amcc0plane2_ch_multi_hit_err`
+- `ds_rd_err_info_acc1c1_amcc0plane2_eid`
+- `voltage-states4`
+- `ds_kill_err_info_acc1c0_amcc0plane2_auxid`
+- `txu_crmgr_uflow_err_info_amcc0plane0_credit_ch`
+- `txu_noaccess_err_info5_piogw_addr_lo`
+- `acki`
+- `PORT_VOQ_UF_EVENT_IRQ_CMD`
+- `txu_routing_err_info1_amcc0plane2_auxid_miss_err`
+- `DISP`
+- `_submitForceWakeupDramVoteGated`
+- `dart_cmaint_err_info1_addr_miss_srcpid`
+- `ds_wr_err_info_acc1c1_amcc0plane0_src_ni`
+- `ds_kill_err_info_acc1c1_amcc0plane2_eid_in_range_err`
+- `PMC_ASSERT_BOOST_INVALID_RAIL_MAP`
+- `PMC_ASSERT_IPA_READ_XACTION_TYPE_INCORRECT`
+- `ReporterBase::RegMapData *ReporterBase::getRegMap(RegMap)`
+- `rxcu_noaccess_err_info1_acc0c0_subch`
+- `ds_fridxmgr_err_info_refl_local_uflow`
+- `txu_routing_err_info0_amcc0plane1_ch_multi_hit_err`
+- `txu_routing_err_info1_acc0c0_p2p_ch_multi_hit_err`
+- `txu_routing_err_info2_acc0c0_p2p_tid`
+- `voltage-states5`
+- `rxcu_noaccess_err_info4_acc1c1_srcpid`
+- `Failed to create pmc timer event source\n`
+- `txu_routing_err_info2_acc1c0_p2p_dest_multi_hit_err`
+- `rxcu_noaccess_err_info2_acc0c0_tid`
+- `rxcu_noaccess_err_info4_acc1c0_subch`
+- `rxcu_noaccess_err_info5_acc1c1_srcpid`
+- `dart_cmaint_err_info2_payload_srcpid`
+- `virtual void PerfCounterReporter::configure(IOService *)`
+- `PMC_ASSERT_DEBUG_ESCALATION_TV_TOO_HIGH`
+- `PMC Elevated DCS State`
+- `rxcu_noaccess_err_info0_acc1c0_srccid`
+- `rxcu_noaccess_err_info3_acc1c1_cmd`
+- `parity_err_af_pkt_addr_31to0`
+- `_afc_mccni0LINK_PIOGW_TXL_ERROR`
+- `SPLL_CTRL_BLK`
+- `PCIE_TXL`
+- `NS1_SBR`
+- `rxcu_routing_err_info1_acc1c0_data_ch_multi_hit_err`
+- `rxcu_routing_err_info0_refl_cmd_ch_miss_err`
+- `_slotResidencyReporter`
+- `UInt16 PSDReporter::_readCounterValue16(UInt32)`
+- `IODeviceTree:/arm-io/mcc`
+- `EARLY_FREQ_CHANGE_ACK_IS_LATE`
+- `(job->_tracker & FSM_TRACKER_NEED_EXIT) == 0`
+- `slot_runtime->num_pending_ps != UCHAR_MAX`
+- `dart_cmaint_err_info_multi_dsb_srcdevid`
+- `rxcu_noaccess_err_info1_refl_cmd`
+- `rxcu_noaccess_err_info4_acc1c1_tid`
+- `rxcu_routing_err_info2_acc1c1_cmd_ch_multi_hit_err`
+- `SOCNI3`
+- `%s::%s: Unexpected %s property length: expected %u actual %u\n`
+- `PCIE_RXL`
+- `txu_routing_err_info1_amcc0plane1_auxid_multi_hit_err`
+- `txu_routing_err_info2_amcc0plane1_vc`
+- `ds_kill_err_info_acc1c0_amcc0plane0_e2e_ch_miss_err`
+- `AppleSoCReporter::start: started successfully \n`
+- `PMC_ASSERT_IPA_WRITE_XACTION_PENDING`
+- `ds_wr_err_info_acc1c0_amcc0plane1_subch`
+- `DISP_TXL`
+- `ds_kill_err_info_acc0c0_amcc0plane0_eid`
+- `txu_routing_err_info1_amcc0plane2_dest_miss_err`
+- `err_type:0x%x`
+- `SEP_CPU_S_13NM_CPM`
+- `pmc_node != NULL`
+- `ds_wr_err_info_refl_local_eid_in_range_err`
+- `txu_noaccess_err_info1_piogw_tid`
+- `PMC_ASSERT_SW_MAX_VOTE_NOT_UPDATED`
+- `NS1_CMD_TXL`
+- `PMC`
+- `rxcu_noaccess_err_info1_acc1c0_size`
+- `rxcu_noaccess_err_info2_acc1c1_srccid`
+- `rxcu_routing_err_info1_acc0c0_addr_hi`
+- `ds_fridxmgr_err_info_acc1c1_amcc0plane1_oflow`
+- `rxcu_routing_err_info0_refl_subch`
+- `rxcu_routing_err_info0_refl_cmd_multi_hit_err`
+- `inconsistent_af_cmd_info_0`
+- `rxcu_noaccess_err_info3_refl_dstcid`
+- `txcu_oflow_err_info_acc1c1_err_type`
+- `ncwrincr`
+- `PORT_ILLEGAL_VC_TRAFFIC_EVENT_IRQ_DATA`
+- `PMC_ASSERT_FIRST_OR_LAST_DCS_FREQ_BLOCKED`
+- `_amccUEFLErr`
+- `slot_runtime->state.blocking_state == PSD_SLOT_BLOCKING_INACTIVE`
+- `PMC_ASSERT_SOC_DVMR_INVALID_STATE`
+- `PRORES_RXL`
+- `txu_routing_err_info1_piogw_subch`
+- `(psd_tss_set(psd_tss_id, arg)) == PSD_PASS`
+- `!resmgr_is_active(&_ipce_drv.ipa_resmgr)`
+- `pmgr-aon-security-metadata`
+- `rxcu_routing_err_info1_acc1c0_vc`
+- `rxcu_noaccess_err_info4_acc1c1_cmd`
+- `_decodeInfo_RXCU_NOACCESS_ERR`
+- `CPU_LO_TEMP`
+- `(addr & 0xF) == 0`
+- `ps_status->min_p2_vote_placed == 0`
+- `TMR expiry! node:0x%08x priv:0x%08x`
+- `rxcu_routing_err_info0_acc1c0_data_ch_miss_err`
+- `txcu_uflow_err_info_acc0c0_err_instance`
+- `txu_routing_err_info0_amcc0plane0_dstpid`
+- `rxcu_noaccess_err_info4_acc1c1_size`
+- `\"%s %c%c%c%c (index %u) unknown error\" @%s:%d`
+- `UInt64 PSDReporter::_readCounterValue64(UInt32)`
+- `_afc_mccni0DS_RD_ACC1C1_AMCC0PLANE1_ERROR`
+- `_afc_mccni0DS_WR_ACC1C0_AMCC0PLANE2_ERROR`
+- `1211112`
+- `%c`
+- `AppleSoCReporter.cpp`
+- `rxcu_noaccess_err_info5_acc0c0_cmd`
+- `rxcu_noaccess_err_info2_acc1c1_addr_lo`
+- `_socReporter`
+- `121111121222121211121222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `txu_routing_err_info1_acc1c0_p2p_dest_multi_hit_err`
+- `rxcu_noaccess_err_info4_refl_addr_hi`
+- `rxcu_noaccess_err_info0_acc1c0_dstcid`
+- `rxcu_noaccess_err_info5_acc1c0_addr_hi`
+- `PMC_ASSERT_DEBUG_TRACE_BUF_SIZE_INCORRECT`
+- `PMC_ASSERT_TIMER_ESCALATION_LATENCY_TIMEOUT`
+- `_afc_mccni0DS_RD_REFL_LOCAL_ERROR`
+- `PMC_ASSERT_COP_SOC_CURRENT_TOO_HIGH`
+- `_afc_mccni0RXCU_CMD_QUEUE_TRIG_REFL_ERROR`
+- `ANEXL1_TXL`
+- `DISPSEC`
+- `rxcu_routing_err_info2_acc0c0_data_ch_miss_err`
+- `rxcu_routing_err_info2_refl_data_dest_miss_err`
+- `ncrdincr`
+- `rxcu_noaccess_err_info1_refl_dstpid`
+- `_frCounters`
+- `_afc_mccni0DS_KILL_REFL_PIOGW_ERROR`
+- `desc->gpce_id == gpce_id`
+- `ds_fridxmgr_err_info_acc1c1_amcc0plane2_oflow`
+- `PMC_ASSERT_IPA_TRANSATION_RESTORE_POLLING_FAIL`
+- ` UFDI_ERR_STS: 0x%08x`
+- `txu_routing_err_info0_amcc0plane1_dest_multi_hit_err`
+- `rxcu_noaccess_err_info4_acc0c0_dstcid`
+- `rxcu_routing_err_info2_acc1c1_tid`
+- `txu_routing_err_info2_amcc0plane2_dstpid`
+- `ReporterBase.cpp`
+- `_afc_mccni0TXU_DATA_QUEUE_TRIG_PIOGW_ERROR`
+- `txu_noaccess_err_info4_piogw_addr_lo`
+- `crdedonly`
+- `ds_wr_err_info_acc1c0_amcc0plane2_subch`
+- `rxcu_routing_err_info0_refl_addr_hi`
+- `121111121222121211111111211112`
+- `PMC_ASSERT_AFC_CLK_SLOWDOWN_CLEAR`
+- `ds_wr_err_info_acc0c0_amcc0plane0_eid_in_range_err`
+- `rxcu_noaccess_err_info1_acc0c0_vc`
+- `rxcu_noaccess_err_info3_acc1c0_subch`
+- `eid:0x%x auxid:0x%x subch:0x%x vc:0x%x src_ni:0x%x e2e_ch_miss_err:0x%x eid_in_range_err:0x%x`
+- `_registerInterrupts`
+- `!isS2RCounterSet`
+- `_afc_mccni0DS_RD_ACC1C0_AMCC0PLANE1_ERROR`
+- `_afc_mccni0DS_WR_ACC0C0_AMCC0PLANE1_ERROR`
+- `SOC`
+- `ds_wr_err_info_acc1c0_piogw_eid`
+- `txu_routing_err_info1_amcc0plane1_dest_miss_err`
+- `rxcu_routing_err_info1_refl_cmd`
+- `multihit_err_af_pkt_addr_41to32`
+- `_amccRsvdAlloc`
+- `PCPU1`
+- `link_err_info_amcc0plane1_rxl_err_type`
+- `_psdHistCounterIndex`
+- `multihit_err_af_pkt_addr_31to0`
+- `Parent ps:%d less ON than child ps:%d\\n`
+- `rxcu_noaccess_err_info4_acc1c0_dstcid`
+- `txu_routing_err_info0_amcc0plane0_addr_hi`
+- `rxcu_noaccess_err_info4_acc1c1_addr_lo`
+- `txu_routing_err_info1_amcc0plane2_tid`
+- `AppleSocReporter: No free-running counters configured\n`
+- `%.*s_CLK_ON`
+- `counterIdx < _groupHistReporterCounts[histGroupIdx]`
+- `_amccHandleInterrupt`
+- `PMC_ASSERT_DVFM_CV_EQUALS_TV`
+- `dcs-channel-enable-mask`
+- `txu_routing_err_info0_piogw_subch`
+- `ipce_desc->num_scripts < PSD_IPCE_MAX_SCRIPTS`
+- `ds_kill_err_info_acc1c1_amcc0plane1_vc`
+- `rxcu_noaccess_err_info3_acc1c0_srcpid`
+- `txu_routing_err_info1_amcc0plane0_ch_multi_hit_err`
+- `aferrlog5`
+- `_afc_mccni0TXU_ROUTING_AMCC0PLANE2_ERROR`
+- `\"SEP monitor error: MON_ERROR_STATUS 0x%08x(%s) MON_CPM_STATUS 0x%08x(%s) SEPCLK_DFREQ_MON_MEAS 0x%08x NCLK_DFREQ_MON_MEAS 0x%08x BOOT_NUMBER 0x%08x SYS0_THERMAL_TEMP 0x%08x SYS1_THERMAL_TEMP 0x%08x CPU_THERMAL_TEMP 0x%08x SOC_PERF_STATE_CTL 0x%08x VOLMAN_SOC_VOLTAGE 0x%08x\" @%s:%d`
+- `%s CLLT Escalated\nCED section\n\tSSW name:%s\n\tSSW data: `
+- `\"%s::%s: REQUIRE failed\" @%s:%d`
+- `_dvfmCopReporter`
+- `txu_routing_err_info2_acc0c0_p2p_cmd`
+- `rxcu_routing_err_info1_refl_data_ch_multi_hit_err`
+- `PMC_ASSERT_DEBUG_MAX_ESCALATION_LATENCY_EXCEEDED`
+- `_afc_mccni0RXCU_CMD_QUEUE_TRIG_ACC1C0_ERROR`
+- `PCPU`
+- `ds_wr_err_info_acc0c0_amcc0plane0_subch`
+- `ds_wr_err_info_refl_local_subch`
+- `rxcu_noaccess_err_info1_acc1c0_tid`
+- `dart_cmaint_err_info0_payload_srcpid`
+- `RDCAL_AIC_IRQ_EN_RDCAL_AIC_IRQ3_EN`
+- `AppleSoCPsdPanicLog: row %u references reg slot %u (provider has %u) — skipping\n`
+- `TXU_CRMGR_OFLOW_ERR`
+- `txu_routing_err_info0_amcc0plane0_srcpid`
+- `rxcu_routing_err_info2_acc0c0_data_dest_multi_hit_err`
+- `121111212212122121221212212122121221211222222222122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222111222`
+- `rxcu_routing_err_info0_acc1c0_data_dest_miss_err`
+- `rxcu_noaccess_err_info3_acc1c0_srccid`
+- `rxcu_routing_err_info2_acc0c0_dstcid`
+- `_afc_mccni0DS_RD_ACC0C0_AMCC0PLANE0_ERROR`
+- `pool->num_free <= pool->num_blocks`
+- `rxcu_routing_err_info0_acc1c0_vc`
+- `txu_routing_err_info0_acc1c0_p2p_addr_hi`
+- `rxcu_noaccess_err_info3_acc1c1_srcpid`
+- `\"PSDReporter: unknown counter type %u\\n\" @%s:%d`
+- `auto_pm_en`
+- `perf-groups`
+- `_amccUnimplAddr`
+- `Startup ps:%d teardown failed!\\n`
+- `%s::%s: Duplicate metadata type: %c%c%c%c\n`
+- `txu_crmgr_oflow_err_info_amcc0plane0_credit_ch`
+- `ds_fridxmgr_err_info_acc0c0_piogw_uflow`
+- `_afc_mccni0TXU_CMD_QUEUE_TRIG_AMCC0PLANE0_ERROR`
+- `WRLVL_AIC_IRQ_EN_WRLVL_AIC_IRQ1_EN`
+- `ANE0_TXL`
+- `rxcu_noaccess_err_info0_refl_dstcid`
+- `txu_noaccess_err_info5_piogw_srcpid`
+- `_decodeInfo_TXU_ROUTING_ERR`
+- `data->getLength() / sizeof(UInt32) == 5`
+- `_afc_mccni0DS_FRIDXMGR_ACC0C0_AMCC0PLANE0_ERROR`
+- `site.PmcCounterData`
+- `txu_routing_err_info0_acc0c0_p2p_ch_miss_err`
+- `rxu_tbl_lookup_err_info_piogw_err_ch`
+- `_afxNsHandleInterrupt`
+- `PMC_ASSERT_OUTBOX_OVERFLOW`
+- `SLEEPWAKE_CPS_IS_ABOVE_OR_AT(p_consumer->active_cps)`
+- `ISP IPCE`
+- `dart_cmaint_err_info2_addr_miss_tid`
+- `rxcu_noaccess_err_info2_acc0c0_srcpid`
+- `rxcu_noaccess_err_info1_acc1c0_dstcid`
+- `rxcu_noaccess_err_info3_acc1c1_size`
+- `_amccPerfCntrEvent125`
+- `no_panic_on_sideband_dsid_drop_err`
+- `WRCAL_AIC_IRQ_EN_WRCAL_AIC_IRQ2_EN`
+- `function-service_state`
+- `rxcu_noaccess_err_info4_acc1c1_vc`
+- `txu_routing_err_info2_amcc0plane2_ch_multi_hit_err`
+- `aferrdsid`
+- `ILLEGAL_CMD`
+- `_afc_mccni0DS_FRIDXMGR_ACC1C1_AMCC0PLANE1_ERROR`
+- `SBR`
+- `_writeRegister32`
+- `aggregated-wake-source-%s`
+- `txu_routing_err_info0_acc0c0_p2p_tid`
+- `txu_routing_err_info0_piogw_dest_multi_hit_err`
+- `_psdDramAddr`
+- `AppleSocReporter: Initializing register map %s (ID: %u) at DT index %u\n`
+- `parity_err_af_pkt_info_1`
+- `PMC_ASSERT_IOPMBOX0_UNDERFLOW`
+- `txu_routing_err_info2_amcc0plane0_auxid_miss_err`
+- `ds_kill_err_info_acc1c0_amcc0plane1_subch`
+- `ctoe`
+- `_amccTxnCross128BCacheLine`
+- `SEP_MEMORY_PROTECTION_ERROR`
+- `ps_runtime && _ps_reset_info[sched_ep].ps_id == PSD_PS_INVALID_ID`
+- `sbd_const->num_ps > 0`
+- `PSD OS_ABORT (0x%x)`
+- `AppleSoCMiscT8160.cpp`
+- `\"AppleSOCReporter: %s:%u REQUIRE failed: %s\" @%s:%d`
+- `txu_routing_err_info0_amcc0plane2_vc`
+- `SEP_CPU_LR_CPM`
+- `IPCE panic fail:%d ps:%d\\n`
+- `TABLE_ACCESS_ERR`
+- `rxcu_routing_err_info1_acc1c0_dstpid`
+- `ds_kill_err_info_acc0c0_amcc0plane2_e2e_ch_miss_err`
+- `cpbkrsp_d`
+- `SEP_CPU_LLL_13NM_CPM`
+- `B1C0D5F2-7A4E-4F5C-9B2D-1E3F4A5B6C7D`
+- `_dcsElvdReporter`
+- `ds_kill_err_info_refl_piogw_e2e_ch_miss_err`
+- `_decodeInfo_RXU_UFLOW_ERR`
+- `\"Die %u %s %c%c%c%c (index %u) %s %s%s error (0x%08x/0x%08x/0x%08x/0x%08x) on port %u->%u srcId/dstNi/tid:0x%x/0x%x/0x%x vc/subch/subnet:0x%x/0x%x/0x%x pktSize:0x%x\" @%s:%d`
+- `_afc_mccni0TXU_DATA_QUEUE_TRIG_AMCC0PLANE0_ERROR`
+- `MiscReporter`
+- `multihit_err_dir_info_0`
+- `!G_CLUSTER_COMMON_CTL_CLUSTER_PWR_STATE_PENDING(rval)`
+- `ps_runtime->status.enabled`
+- `sem`
+- `ps_id < PSD_NUM_PS`
+- `NS0_LOCAL`
+- `txu_routing_err_info1_amcc0plane1_addr_hi`
+- `txu_routing_err_info2_amcc0plane1_auxid_multi_hit_err`
+- `_amccRORgnAccessVio`
+- `!resmgr_is_active(&_ipce_drv.ipce_resmgr)`
+- `AVD_TXL`
+- `_pmgrHandleInterrupt`
+- `ap-wake-source-flags`
+- `voltage-states10`
+- `txu_routing_err_info0_amcc0plane0_cmd`
+- `txu_routing_err_info0_piogw_tid`
+- `txu_noaccess_err_info5_piogw_srccid`
+- `PMC_ASSERT_TELE_COUNTER_IDX_CORRUPT_4`
+- `ps_runtime->p_current == ps_runtime->p_target`
+- `txu_routing_err_info2_acc1c0_p2p_cmd`
+- `rxcu_routing_err_info0_acc0c0_srcpid`
+- `rxcu_routing_err_info0_refl_cmd_miss_err`
+- `_afxSocNiDecodeInterrupts`
+- `amcc-plane-enable-mask`
+- `dcs-odts-panic-threshold`
+- `rxcu_noaccess_err_info1_acc1c1_vc`
+- `enabled == true`
+- `IOPMSystemSleepType`
+- `rxcu_noaccess_err_info0_acc0c0_dstpid`
+- `txcu_tbl_lookup_err_info_acc0c0_err_ch`
+- `PMC_ASSERT_ML_ANE_NOT_AT_FMIN_AT_BOOT`
+- `_afc_mccni0TXU_ROUTING_ACC0C0_P2P_ERROR`
+- `_afc_mccni0TXU_CRMGR_UFLOW_AMCC0PLANE0_ERROR`
+- `_afc_mccni0TXU_CMD_QUEUE_TRIG_AMCC0PLANE1_ERROR`
+- `err_handler_debug`
+- `RTBW_ABOVE_THR_INTR`
+- `rxcu_routing_err_info0_acc0c0_vc`
+- `DS_KILL_ERR`
+- `(addr & 0x3) == 0`
+- `NS1_PRORES`
+- `ds_kill_err_info_acc1c0_piogw_kill_if`
+- `txu_routing_err_info2_acc1c0_p2p_srccid`
+- `ds_fridxmgr_err_info_acc1c0_amcc0plane0_oflow`
+- `rxcu_noaccess_err_info5_acc1c1_dstcid`
+- `PMC_ASSERT_IPA_WRITE_TAIL_NONPENDING`
+- ` : %s`
+- `AVD`
+- `ds_kill_err_info_acc0c0_piogw_auxid`
+- `ds_rd_err_info_refl_local_eid`
+- `_afc_mccni0DS_FRIDXMGR_ACC0C0_AMCC0PLANE1_ERROR`
+- `state_handler`
+- `sched_task_state.flags.quiesce_state == QUIESCE_NOP`
+- `_sleepwake_state.ps_bookkeeping.counts.num_non_p6_pses != USHRT_MAX`
+- `AppleSoCPsdPanicLog: psd-panic-data length %u not a multiple of %zu — skipping\n`
+- `GFX3`
+- `ds_fridxmgr_err_info_refl_piogw_oflow`
+- `rxcu_noaccess_err_info0_acc1c1_srccid`
+- `_socEventReporter`
+- `PMC_ASSERT_IOPMBOX1_UNDERFLOW`
+- `_afc_mccni0DS_FRIDXMGR_ACC1C1_AMCC0PLANE0_ERROR`
+- `desc->gpce_id < PSD_NUM_GPCE && (desc->type == GPCE_DESC_TYPE_MISC || desc->type == GPCE_DESC_TYPE_CLUSTER)`
+- `rxcu_noaccess_err_info1_acc1c0_subch`
+- `txu_routing_err_info2_amcc0plane0_vc`
+- `ds_wr_err_info_acc0c0_amcc0plane1_src_ni`
+- `_perfGroups`
+- `PMC_ASSERT_DVMR_ISP_REQ_MULTIPLE_IN_FLIGHT`
+- `Unknown message received on sched!`
+- `sbd_id != PSD_SBD_INVALID_ID`
+- `WR_RESP_ERR`
+- `txu_routing_err_info0_acc0c0_p2p_ch_multi_hit_err`
+- `_pmcDramAddr`
+- `ds_kill_err_info_refl_piogw_kill_if`
+- `rxcu_routing_err_info0_acc1c1_data_dest_miss_err`
+- `prefetch`
+- `ctoecond`
+- `PMC_ASSERT_SOC_DVMR_INVALID_TABLE`
+- `RDCAL_AIC_IRQ_EN_RDCAL_AIC_IRQ2_EN`
+- `voltage-states11`
+- `rxcu_noaccess_err_info2_acc1c0_dstcid`
+- `PSDReporter`
+- `12`
+- `PMC_ASSERT_STARTUP_BWR_THRSH_INVALID_RMBS_ISOC_MAX`
+- `_afc_mccni0RXU_UFLOW_PIOGW_ERROR`
+- `%s::%s: %c%c%c%c 'reg' property count (%u) exceeds max %u\n`
+- `RESUME_INTEGRITY_SHADOW_CRC`
+- `txu_crmgr_oflow_err_info_amcc0plane1_data_err`
+- `rxcu_routing_err_info0_acc1c1_data_ch_multi_hit_err`
+- `txu_routing_err_info0_amcc0plane2_dstcid`
+- `reporter-mask`
+- `PMC_ASSERT_MAILBOX_GET_ON_NONINBOX`
+- `Startup sbd:%d teardown failed!\\n`
+- `JPEG IPCE`
+- `ANEXL1`
+- `ds_wr_err_info_acc1c0_amcc0plane1_vc`
+- `rxcu_noaccess_err_info0_refl_dstpid`
+- `ds_wr_err_info_acc1c1_amcc0plane1_eid`
+- `_afc_mccni0TXU_CMD_QUEUE_TRIG_ACC1C0_P2P_ERROR`
+- `job->_table && job->_state != PSD_FSM_UNINIT`
+- `sched_task_state.flags.quiesce_state == QUIESCE_WAITING_FOR_SCHED_IDLE`
+- `no-power-gate`
+- `\"Failed to add amcc event handler to workloop event source\" @%s:%d`
+- `_kaLevelReporter`
+- `oprtp`
+- `txu_routing_err_info2_acc1c0_p2p_vc`
+- `ds_kill_err_info_acc1c1_amcc0plane1_eid_in_range_err`
+- `rxcu_noaccess_err_info2_acc1c0_addr_hi`
+- `ds_kill_err_info_refl_piogw_eid`
+- `Event Counts`

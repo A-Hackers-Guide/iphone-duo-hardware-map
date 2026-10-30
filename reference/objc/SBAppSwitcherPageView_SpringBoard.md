@@ -1,0 +1,226 @@
+# `SBAppSwitcherPageView`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBHitTestExtendedView`
+- Protocols: `PTSettingsKeyObserver`, `SBFSystemPointerInteractionDelegate`
+- 54 instance variables, 42 properties, 109 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"UIView" _hitTestBlocker;
+@"UIView" _dimmingView;
+@"SBWallpaperEffectView" _wallpaperOverlayView;
+@"UIView" _tintView;
+@"UIView" _viewClippingView;
+@"UIView<SBAppSwitcherPageContentView>" _view;
+@"UIView" _overlayClippingView;
+@"UIView" _overlayView;
+@"SBSwitcherItemContainerContentViewBlurAnimator" _overlayViewBlurAnimator;
+@"SBAppSwitcherPageShadowView" _shadowView;
+q _shadowStyle;
+d _shadowAlpha;
+d _shadowOffset;
+@"UIView" _contentContainerView;
+@"UIView" _borderView;
+{UIRectCornerRadii="topLeft"d"bottomLeft"d"bottomRight"d"topRight"d} _cornerRadii;
+@"SBAppSwitcherSettings" _settings;
+q _orientation;
+@"SBAppSwitcherWallpaperGradientView" _wallpaperGradientView;
+@"SBAppResizeGrabberView" _topLeftResizeGrabberPillView;
+@"SBAppResizeGrabberView" _topRightResizeGrabberPillView;
+@"SBAppResizeGrabberView" _bottomLeftResizeGrabberPillView;
+@"SBAppResizeGrabberView" _bottomRightResizeGrabberPillView;
+{CGRect="origin"{CGPoint="x"d"y"d}"size"{CGSize="width"d"height"d}} _pointerRegion;
+Q _hoveringOverEdge;
+B _resizingAllowed;
+B _occludedInContinuousExposeStage;
+@"UIView" _pointerHitTestBlocker;
+@"SBSystemPointerInteractionManager" _systemPointerInteractionManager;
+@"SBSlideOverGlassMaterialView" _glassView;
+@"UIView" _sdfElementContainerView;
+@"SBSDFElementView" _destinationSDFElementView;
+B _shouldClipContentView;
+B _shouldScaleOverlayToFillBounds;
+B _needsBackgroundWallpaperTreatment;
+B _needsWallpaperGradientTreatment;
+B _resizeGrabbersVisible;
+Q _highlightType;
+d _switcherCardScale;
+@"UIView" _slideOverTonguePortalView;
+d _dimmingAlpha;
+d _pointerInteractionHitTestPadding;
+d _wallpaperOverlayAlpha;
+d _lighteningAlpha;
+Q _maskedCorners;
+Q _visibleTouchResizeCorners;
+q _tintStyle;
+d _slideOverBorderWidth;
+@"<SBAppSwitcherPageViewDelegate>" _delegate;
+{CGSize="width"d"height"d} _overlayViewSize;
+{CGSize="width"d"height"d} _fullyPresentedSize;
+{SBSwitcherWallpaperGradientAttributes="leadingAlpha"d"trailingAlpha"d} _wallpaperGradientAttributes;
+{CGRect="origin"{CGPoint="x"d"y"d}"size"{CGSize="width"d"height"d}} _contentClippingFrame;
+{SBItemContainerBorder="width"d"red"d"green"d"blue"d"alpha"d"colorMatrix"{CAColorMatrix="m11"f"m12"f"m13"f"m14"f"m15"f"m21"f"m22"f"m23"f"m24"f"m25"f"m31"f"m32"f"m33"f"m34"f"m35"f"m41"f"m42"f"m43"f"m44"f"m45"f}} _border;
+```
+
+## Properties
+
+```
+@property (T@"UIView",R,N,V_overlayClippingView) _overlayClippingView;
+@property (T@"SBAppSwitcherPageShadowView",R,N,V_shadowView) _shadowView;
+@property (T@"UIView<SBAppSwitcherPageContentView>",&,N,V_view) view;
+@property (T@"UIView",&,N,V_overlayView) overlay;
+@property (Tq,N,V_shadowStyle) shadowStyle;
+@property (Td,N,V_shadowAlpha) shadowAlpha;
+@property (Td,N,V_shadowOffset) shadowOffset;
+@property (Td,N) overlayAlpha;
+@property (Td,N) contentAlpha;
+@property (Td,N,V_dimmingAlpha) dimmingAlpha;
+@property (Td,N,V_pointerInteractionHitTestPadding) pointerInteractionHitTestPadding;
+@property (TB,N,V_needsBackgroundWallpaperTreatment) needsBackgroundWallpaperTreatment;
+@property (Td,N,V_wallpaperOverlayAlpha) wallpaperOverlayAlpha;
+@property (Td,N,V_lighteningAlpha) lighteningAlpha;
+@property (T{UIRectCornerRadii=dddd},N,V_cornerRadii) cornerRadii;
+@property (TQ,N,V_maskedCorners) maskedCorners;
+@property (Tq,N,V_orientation) orientation;
+@property (TQ,N,V_highlightType) highlightType;
+@property (TB,N,V_needsWallpaperGradientTreatment) needsWallpaperGradientTreatment;
+@property (T{SBSwitcherWallpaperGradientAttributes=dd},N,V_wallpaperGradientAttributes) wallpaperGradientAttributes;
+@property (T{SBItemContainerBorder=ddddd{CAColorMatrix=ffffffffffffffffffff}},N,V_border) border;
+@property (TB,N,V_shouldClipContentView) shouldClipContentView;
+@property (T{CGRect={CGPoint=dd}{CGSize=dd}},N,V_contentClippingFrame) contentClippingFrame;
+@property (T{CGSize=dd},N,V_overlayViewSize) overlayViewSize;
+@property (T{CGSize=dd},N,V_fullyPresentedSize) fullyPresentedSize;
+@property (Td,N,V_switcherCardScale) switcherCardScale;
+@property (TB,N,V_shouldScaleOverlayToFillBounds) shouldScaleOverlayToFillBounds;
+@property (TB,N) blocksTouches;
+@property (TB,N,GisOccludedInContinuousExposeStage) occludedInContinuousExposeStage;
+@property (TB,N,GisResizingAllowed) resizingAllowed;
+@property (TB,N,GisActive) active;
+@property (TB,N,GisVisible) visible;
+@property (TB,N,GareResizeGrabbersVisible,V_resizeGrabbersVisible) resizeGrabbersVisible;
+@property (TQ,N,V_visibleTouchResizeCorners) visibleTouchResizeCorners;
+@property (Tq,N,V_tintStyle) tintStyle;
+@property (Td,N,V_slideOverBorderWidth) slideOverBorderWidth;
+@property (T@"UIView",&,N,V_slideOverTonguePortalView) slideOverTonguePortalSourceView;
+@property (T@"<SBAppSwitcherPageViewDelegate>",W,N,V_delegate) delegate;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[SBAppSwitcherPageView _orderSubviews];
+-[SBAppSwitcherPageView shadowStyle];
+-[SBAppSwitcherPageView setTintStyle:];
+-[SBAppSwitcherPageView _shadowView];
+-[SBAppSwitcherPageView visibleTouchResizeCorners];
+-[SBAppSwitcherPageView cornerRadii];
+-[SBAppSwitcherPageView setOrientation:];
+-[SBAppSwitcherPageView setShadowStyle:];
+-[SBAppSwitcherPageView setShadowAlpha:];
+-[SBAppSwitcherPageView wallpaperGradientAttributes];
+-[SBAppSwitcherPageView setResizingAllowed:];
+-[SBAppSwitcherPageView tintStyle];
+-[SBAppSwitcherPageView isResizingAllowed];
+-[SBAppSwitcherPageView setVisibleTouchResizeCorners:];
+-[SBAppSwitcherPageView pointerInteractionHitTestPadding];
+-[SBAppSwitcherPageView setBorder:];
+-[SBAppSwitcherPageView setOccludedInContinuousExposeStage:];
+-[SBAppSwitcherPageView setSlideOverBorderWidth:];
+-[SBAppSwitcherPageView _updateCornerRadius];
+-[SBAppSwitcherPageView wallpaperOverlayAlpha];
+-[SBAppSwitcherPageView shadowAlpha];
+-[SBAppSwitcherPageView setLighteningAlpha:];
+-[SBAppSwitcherPageView shouldScaleOverlayToFillBounds];
+-[SBAppSwitcherPageView _contentViewFrame];
+-[SBAppSwitcherPageView setResizeGrabbersVisible:];
+-[SBAppSwitcherPageView _updateTintViewAlpha];
+-[SBAppSwitcherPageView _removeContentBlurIfExists];
+-[SBAppSwitcherPageView highlightType];
+-[SBAppSwitcherPageView styleForRegion:forView:];
+-[SBAppSwitcherPageView regionAtLocation:forView:];
+-[SBAppSwitcherPageView _updateTintStyle];
+-[SBAppSwitcherPageView setVisible:];
+-[SBAppSwitcherPageView _createOrDestroyWallpaperGradientView];
+-[SBAppSwitcherPageView setOverlayAlpha:];
+-[SBAppSwitcherPageView needsWallpaperGradientTreatment];
+-[SBAppSwitcherPageView contentAlpha];
+-[SBAppSwitcherPageView setOverlay:];
+-[SBAppSwitcherPageView setShadowOffset:];
+-[SBAppSwitcherPageView overlayAlpha];
+-[SBAppSwitcherPageView setSwitcherCardScale:];
+-[SBAppSwitcherPageView setPointerInteractionHitTestPadding:];
+-[SBAppSwitcherPageView needsBackgroundWallpaperTreatment];
+-[SBAppSwitcherPageView setBlocksTouches:];
+-[SBAppSwitcherPageView switcherCardScale];
+-[SBAppSwitcherPageView setWallpaperGradientAttributes:];
+-[SBAppSwitcherPageView setContentAlpha:];
+-[SBAppSwitcherPageView orientation];
+-[SBAppSwitcherPageView areResizeGrabbersVisible];
+-[SBAppSwitcherPageView _updateWallpaperOverlayAlpha];
+-[SBAppSwitcherPageView _updateGrabberVisibilities];
+-[SBAppSwitcherPageView setOverlay:animated:];
+-[SBAppSwitcherPageView _layoutOverlayView];
+-[SBAppSwitcherPageView setCornerRadii:];
+-[SBAppSwitcherPageView isVisible];
+-[SBAppSwitcherPageView isOccludedInContinuousExposeStage];
+-[SBAppSwitcherPageView layoutSubviews];
+-[SBAppSwitcherPageView _inSlideOver];
+-[SBAppSwitcherPageView _addContentView:];
+-[SBAppSwitcherPageView setView:];
+-[SBAppSwitcherPageView maskedCorners];
+-[SBAppSwitcherPageView _supportsAsymmetricalCornerRadii];
+-[SBAppSwitcherPageView setActive:];
+-[SBAppSwitcherPageView overlayViewSize];
+-[SBAppSwitcherPageView fullyPresentedSize];
+-[SBAppSwitcherPageView settings:changedValueForKey:];
+-[SBAppSwitcherPageView shouldBeginPointerInteractionRequest:atLocation:forView:];
+-[SBAppSwitcherPageView _updateEffectOverlayViews];
+-[SBAppSwitcherPageView invalidate];
+-[SBAppSwitcherPageView view];
+-[SBAppSwitcherPageView setMaskedCorners:];
+-[SBAppSwitcherPageView setDelegate:];
+-[SBAppSwitcherPageView overlay];
+-[SBAppSwitcherPageView setFullyPresentedSize:];
+-[SBAppSwitcherPageView _overlayClippingView];
+-[SBAppSwitcherPageView willMoveToWindow:];
+-[SBAppSwitcherPageView setOverlayViewSize:];
+-[SBAppSwitcherPageView _updateDimmingViewAlpha];
+-[SBAppSwitcherPageView _updateShadowPresence];
+-[SBAppSwitcherPageView setView:animated:];
+-[SBAppSwitcherPageView _updateSlideOverGlass];
+-[SBAppSwitcherPageView slideOverBorderWidth];
+-[SBAppSwitcherPageView _createOrDestroyWallpaperOverlayView];
+-[SBAppSwitcherPageView delegate];
+-[SBAppSwitcherPageView setWallpaperOverlayAlpha:];
+-[SBAppSwitcherPageView _updateBorder];
+-[SBAppSwitcherPageView setContentClippingFrame:];
+-[SBAppSwitcherPageView slideOverTonguePortalSourceView];
+-[SBAppSwitcherPageView setSlideOverTonguePortalSourceView:];
+-[SBAppSwitcherPageView traitCollectionDidChange:];
+-[SBAppSwitcherPageView border];
+-[SBAppSwitcherPageView pointerInteractionHitTestInsetsForView:];
+-[SBAppSwitcherPageView _updateWallpaperGradientAttributes];
+-[SBAppSwitcherPageView dimmingAlpha];
+-[SBAppSwitcherPageView shouldClipContentView];
+-[SBAppSwitcherPageView isActive];
+-[SBAppSwitcherPageView _removeBorderViewIfExists];
+-[SBAppSwitcherPageView contentClippingFrame];
+-[SBAppSwitcherPageView setShouldScaleOverlayToFillBounds:];
+-[SBAppSwitcherPageView setHighlightType:];
+-[SBAppSwitcherPageView setNeedsWallpaperGradientTreatment:];
+-[SBAppSwitcherPageView pointerWillExitRegion];
+-[SBAppSwitcherPageView initWithFrame:];
+-[SBAppSwitcherPageView blocksTouches];
+-[SBAppSwitcherPageView shadowOffset];
+-[SBAppSwitcherPageView setBlurRadius:withAnimationSettings:updateMode:];
+-[SBAppSwitcherPageView lighteningAlpha];
+-[SBAppSwitcherPageView setShouldClipContentView:];
+-[SBAppSwitcherPageView setDimmingAlpha:];
+-[SBAppSwitcherPageView setNeedsBackgroundWallpaperTreatment:];
+```

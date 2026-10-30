@@ -1,0 +1,3245 @@
+# `com.apple.driver.AppleH16ANEInterface`
+
+- Name: AppleH16ANEInterface
+- Version: `10.102.4`
+- UUID: `929BEC8F-5DD3-3638-92E8-EB6E215A2672`
+- Source version: `10.102.4.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.IODARTFamily`](com.apple.driver.IODARTFamily.md) 1.0.0, [`com.apple.driver.RTBuddy`](com.apple.driver.RTBuddy.md) 1.0.0, [`com.apple.iokit.IOReportFamily`](com.apple.iokit.IOReportFamily.md) 1.0.0, [`com.apple.iokit.IOSurface`](com.apple.iokit.IOSurface.md) 52.6.0, [`com.apple.kec.corecrypto`](com.apple.kec.corecrypto.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 22.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (2) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/ane-exclave-proxy`](../devicetree/root__arm-io__ane-exclave-proxy.md) | `ANEExclaveProxy` | `ane,ane-exclave-proxy` |
+| [`/arm-io/ane1-exclave-proxy`](../devicetree/root__arm-io__ane1-exclave-proxy.md) | `ANEExclaveProxy` | `ane,ane1-exclave-proxy` |
+
+## IOKit personalities (6) [KC]
+
+### ANEDriver
+- `CFBundleIdentifier`: `com.apple.driver.AppleH16ANEInterface`
+- `IOClass`: `H1xANELoadBalancer`
+- `IOMatchCategory`: `H1xANELoadBalancer`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleH16ANEInterface`
+- `IOProviderClass`: `IOResources`
+- `IOResourceMatch`: `IOKit`
+
+### ANEExclaveProxy
+- `CFBundleIdentifier`: `com.apple.driver.AppleH16ANEInterface`
+- `IOClass`: `ANEExclaveProxy`
+- `IOExclaveProxy`: `True`
+- `IONameMatch`:
+  - `ane,ane1-exclave-proxy`
+  - `ane,ane-exclave-proxy`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleH16ANEInterface`
+- `IOProbeScore`: `10000`
+- `IOProviderClass`: `AppleARMIODevice`
+
+### RTBuddyBringup
+- `CFBundleIdentifier`: `com.apple.driver.AppleH16ANEInterface`
+- `IOClass`: `H11ANEIn`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleH16ANEInterface`
+- `IOPlatformActiveAction`: `89000`
+- `IOPropertyMatch`:
+  - `role`: `ANE`
+- `IOProviderClass`: `RTBuddyService`
+
+### RTBuddyBringup1
+- `CFBundleIdentifier`: `com.apple.driver.AppleH16ANEInterface`
+- `IOClass`: `H11ANEIn`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleH16ANEInterface`
+- `IOPlatformActiveAction`: `89000`
+- `IOPropertyMatch`:
+  - `role`: `ANE1`
+- `IOProviderClass`: `RTBuddyService`
+
+### t8020
+- `CFBundleIdentifier`: `com.apple.driver.AppleH16ANEInterface`
+- `IOClass`: `H11ANEIn`
+- `IONameMatch`: `ane,t8020`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleH16ANEInterface`
+- `IOProviderClass`: `AppleARMIODevice`
+
+### t8132exclave
+- `CFBundleIdentifier`: `com.apple.driver.AppleH16ANEInterface`
+- `IOClass`: `H11ANEIn`
+- `IOExclaveProxy`: `True`
+- `IONameMatch`: `ane,t8132exclave`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleH16ANEInterface`
+- `IOProbeScore`: `10000`
+- `IOProviderClass`: `AppleARMIODevice`
+
+
+## C++ classes (75) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `ANEClientDeviceWrapper` | 0x20 |  |
+| `ANEClientHints` | 0x98 | IOService → IORegistryEntry |
+| `ANEClientHintsUserClient` | 0xf0 | IOUserClient → IOService → IORegistryEntry |
+| `ANEClientInterface` | 0x1a0 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `ANECoredump` | 0x270 |  |
+| `ANEDebugEventMsg` | 0x50 | ANEMessage |
+| `ANEDeviceInterface` | 0x90 | IOService → IORegistryEntry |
+| `ANEDriver` | 0x828 | IOService → IORegistryEntry |
+| `ANEDriverDebugClient` | 0x188 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `ANEExclaveMemoryWiringMsg` | 0x40 | ANEMessage |
+| `ANEExclaveProxy` | 0xb8 | IOService → IORegistryEntry |
+| `ANEFWRpcMsg` | 0x58 | ANEMessage |
+| `ANEFirmwareClientLoggingMsg` | 0x30 | ANEMessage |
+| `ANEFwToFwSignalMsg` | 0x498 | ANEMessage |
+| `ANEHWDevice` | 0xe698 | ANEDeviceInterface → IOService → IORegistryEntry |
+| `ANEHWDeviceClientNotificationMsg` | 0x28 | ANEMessage |
+| `ANEHWDeviceTimeoutMsg` | 0x28 | ANEMessage |
+| `ANEInVMAllocator` | 0x68 | IODARTVMAllocatorGeneric → IODARTVMAllocator |
+| `ANEIspIPCEPMsg` | 0x60 | ANEMessage |
+| `ANEMessage` | 0x28 |  |
+| `ANENotificationMsg` | 0x28 | ANEMessage |
+| `ANEPerfRequest` | 0x120 |  |
+| `ANEPoolRefillMsg` | 0x38 | ANEMessage |
+| `ANEPowerMsg` | 0x38 | ANEMessage |
+| `ANEPowerOnMsg` | 0x28 | ANEMessage |
+| `ANEPrivilegedVMAccess` | 0x88 | IOService → IORegistryEntry |
+| `ANEPrivilegedVMAccessUserClient` | 0xd8 | IOUserClient → IOService → IORegistryEntry |
+| `ANEProgramEventMsg` | 0x88 | ANEMessage |
+| `ANERequestCompletionMsg` | 0x40 | ANEMessage |
+| `ANERequestTimeoutMsg` | 0x30 | ANEMessage |
+| `ANEScheduler` | 0xaa8 |  |
+| `ANEThrottleUpdateMsg` | 0x28 | ANEMessage |
+| `ANEWakeNotificationMsg` | 0x68 | ANEMessage |
+| `ANEWorkLoop` | 0x50 | IOWorkLoop |
+| `AppleANEEPFunction` | 0x38 | AppleARMFunction |
+| `AppleANEMPMMapMemoryFunction` | 0x38 | AppleARMFunction |
+| `AppleANEMPMUnmapMemoryFunction` | 0x38 | AppleARMFunction |
+| `AppleANEPerfCounterReadFunction` | 0x38 | AppleARMFunction |
+| `AppleANEPowerOnOffFunction` | 0x38 | AppleARMFunction |
+| `FWSharedMemoryRequest` | 0x58 | ANEMessage |
+| `H11ANEIn` | 0xe698 | ANEHWDevice → ANEDeviceInterface → IOService → IORegistryEntry |
+| `H11ANEInDirectPathClient` | 0x1a0 | ANEClientInterface → IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `H11ANEInUserClient` | 0x1a0 | ANEClientInterface → IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `H1xANELoadBalancer` | 0x828 | ANEDriver → IOService → IORegistryEntry |
+| `H1xANELoadBalancerClient` | 0x1a0 | H11ANEInUserClient → ANEClientInterface → IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `H1xANELoadBalancerDirectPathClient` | 0x1a0 | H11ANEInDirectPathClient → ANEClientInterface → IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `OSValueObject<ANEChannel*>` | 0x18 |  |
+| `OSValueObject<ANEChannelMessage*>` | 0x18 |  |
+| `OSValueObject<ANEClientContext*>` | 0x18 |  |
+| `OSValueObject<ANEClientDevice*>` | 0x18 |  |
+| `OSValueObject<ANEClientDeviceCore*>` | 0x18 |  |
+| `OSValueObject<ANEClientMappedSurface>` | 0x18 |  |
+| `OSValueObject<ANEClientMappedSurfacePR>` | 0x18 |  |
+| `OSValueObject<ANEClientResource*>` | 0x18 |  |
+| `OSValueObject<ANECommandChannel*>` | 0x18 |  |
+| `OSValueObject<ANECommandChannelMessage*>` | 0x18 |  |
+| `OSValueObject<ANECoredumpSection>` | 0x18 |  |
+| `OSValueObject<ANEFirmwareCommandBuffer*>` | 0x18 |  |
+| `OSValueObject<ANEFirmwareCommandState*>` | 0x18 |  |
+| `OSValueObject<ANEGroupResource*>` | 0x18 |  |
+| `OSValueObject<ANEIOReporter*>` | 0x18 |  |
+| `OSValueObject<ANEInDebugWorkProcessorParams>` | 0x18 |  |
+| `OSValueObject<ANEInDebugWorkProcessorRPCRequest>` | 0x18 |  |
+| `OSValueObject<ANEInferenceRequest*>` | 0x18 |  |
+| `OSValueObject<ANEMPMMemoryParams>` | 0x18 |  |
+| `OSValueObject<ANEMapRequest*>` | 0x18 |  |
+| `OSValueObject<ANEPatchedWeightInfo*>` | 0x18 |  |
+| `OSValueObject<ANEProcess*>` | 0x18 |  |
+| `OSValueObject<ANEProgramResource*>` | 0x18 |  |
+| `OSValueObject<ANERequest*>` | 0x18 |  |
+| `OSValueObject<ANERequestEvent*>` | 0x18 |  |
+| `OSValueObject<ANEResource*>` | 0x18 |  |
+| `OSValueObject<ANESharedMemorySurfaceParams>` | 0x18 |  |
+| `OSValueObject<ANEUnionResource*>` | 0x18 |  |
+| `OSValueObject<FWPendingRequest>` | 0x18 |  |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1800)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x00051ad0 off=0x00480330-0x004d1e00 addr=0xfffffe0007484330-0xfffffe00074d5e00 r--/r--   __TEXT            
+	sz=0x00011ec2 off=0x00480a98-0x0049295a addr=0xfffffe0007484a98-0xfffffe000749695a               __TEXT.__cstring          (CstringLiterals)
+	sz=0x0003e239 off=0x0049295a-0x004d0b93 addr=0xfffffe000749695a-0xfffffe00074d4b93               __TEXT.__os_log           
+	sz=0x00001260 off=0x004d0ba0-0x004d1e00 addr=0xfffffe00074d4ba0-0xfffffe00074d5e00               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x001560bc off=0x01d1f350-0x01e7540c addr=0xfffffe0008d23350-0xfffffe0008e7940c r-x/r-x   __TEXT_EXEC       
+	sz=0x00154e1c off=0x01d1f350-0x01e7416c addr=0xfffffe0008d23350-0xfffffe0008e7816c          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000012a0 off=0x01e7416c-0x01e7540c addr=0xfffffe0008e7816c-0xfffffe0008e7940c          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00006540 off=0x04942bf8-0x04949138 addr=0xfffffe000b946bf8-0xfffffe000b94d138 rw-/rw-   __DATA            
+	sz=0x000054f4 off=0x04942bf8-0x049480ec addr=0xfffffe000b946bf8-0xfffffe000b94c0ec               __DATA.__data             
+	sz=0x000007e0 off=0x00000000-0x000007e0 addr=0xfffffe000b94c0f0-0xfffffe000b94c8d0               __DATA.__common           (Zerofill)
+	sz=0x00000868 off=0x00000000-0x00000868 addr=0xfffffe000b94c8d0-0xfffffe000b94d138               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00020bd8 off=0x010b8300-0x010d8ed8 addr=0xfffffe00080bc300-0xfffffe00080dced8 rw-/rw-   __DATA_CONST      
+	sz=0x00000300 off=0x010b8300-0x010b8600 addr=0xfffffe00080bc300-0xfffffe00080bc600         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000138 off=0x010b8600-0x010b8738 addr=0xfffffe00080bc600-0xfffffe00080bc738         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x000100c0 off=0x010b8738-0x010c87f8 addr=0xfffffe00080bc738-0xfffffe00080cc7f8         __DATA_CONST.__const            
+	sz=0x00008c00 off=0x010c87f8-0x010d13f8 addr=0xfffffe00080cc7f8-0xfffffe00080d53f8         __DATA_CONST.__kalloc_var       
+	sz=0x00007040 off=0x010d13f8-0x010d8438 addr=0xfffffe00080d53f8-0xfffffe00080dc438         __DATA_CONST.__kalloc_type      
+	sz=0x00000950 off=0x010d8438-0x010d8d88 addr=0xfffffe00080dc438-0xfffffe00080dcd88         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000148 off=0x010d8d88-0x010d8ed0 addr=0xfffffe00080dcd88-0xfffffe00080dced0         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000008 off=0x010d8ed0-0x010d8ed8 addr=0xfffffe00080dced0-0xfffffe00080dced8         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 637 at 0x04ada8dc
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     929BEC8F-5DD3-3638-92E8-EB6E215A2672
+008: LC_SOURCE_VERSION           10.102.4.0.0
+009: LC_FUNCTION_STARTS          offset=0x004aa0ce8 size=0x1b78
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleH16ANEInterface`
+- `CFBundleIdentifier`: `com.apple.driver.AppleH16ANEInterface`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleH16ANEInterface`
+- `CFBundleNumericVersion`: `0`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `10.102.4`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `10.102.4`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2016-2017 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.0`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleH16ANEInterface.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198901079248`
+- `_PrelinkExecutableRelativePath`: `AppleH16ANEInterface`
+- `_PrelinkExecutableSize`: `1895588`
+- `_PrelinkExecutableSourceAddr`: `-2198901079248`
+- `_PrelinkKmodInfo`: `-2198828979208`
+
+## Strings (5461) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+First 3000 of 5461.
+
+**[__TEXT.__cstring]**
+
+- `1211`
+- `dumpStateOnError`
+- `IPC_initEndPoint`
+- `ANE_MemoryMapRequest`
+- `processDeviceChainingEvent`
+- `ANESchedulerStatsWriter`
+- `1112222222122222212111221122211222112221122211122222222222222222220111122222222222222222222222222222222222222222212`
+- `121111121222121211`
+- `dumpStateVerbose`
+- `CSNE_CMD_MCACHE_SIZE_GET`
+- `sendProcessTerminateCmd`
+- `AppleH13CamIn`
+- `IOSurfaceAllocSize`
+- `CSNE_CMD_PROCEDURE_CALL_INVALIDATE_CACHE_REQUEST`
+- `AppleGenericANEHAL`
+- `com.apple.private.ane.bonded.allow`
+- `ANEHWDevice`
+- `Remove request from scheduler`
+- `21212221221221222111111222222111111`
+- `invokeZinComputeAPI`
+- `122111122222222222222222222222222222222222222222222222222222222222222222222122`
+- `findBlockedRequestByUUID`
+- `DeviceMemoryManager::DebugPrint End\n\n`
+- `1222211`
+- `~ANEResource`
+- `createCopy`
+- `disableAneSysClock`
+- `NULL`
+- `SelectBestANECore`
+- `OSValueObject<ANEUnionResource*>`
+- `ANE_sendISPSurfaceRemapAck`
+- `takePowerAssertion`
+- `exitSleepAsync`
+- `prepare`
+- `applyThrottling`
+- `registerErrorHandler`
+- `ANEScheduler`
+- `OSValueObject<ANEMPMMemoryParams>`
+- `no`
+- `/private/var/MobileAsset/AssetsV2/`
+- `rootdev`
+- `DataChaining`
+- `site.ANEInVMAllocator`
+- `CSNE_CMD_EXCLAVE_MODE_STOP`
+- `CSNE_CMD_FORCE_DISABLE_CACHE_REQUESTS`
+- `\"ANEHWDevice::ANE Timeout panic because fFirmwareTimeoutRecoverySupported: %u\\n\" @%s:%d`
+- `ANE%u`
+- `ZinComputeProgramStatus ZinComputeProgramGetComputeProgramType(const void *const, size_t, size_t, ZinComputeProgramType &)`
+- `ZinComputeProgramStatus ZinComputeProgramRTGetMutableKernelSectionForProcedure(const ZinComputeProgramRT *, const std::string_view &, const ZinComputeProgramSection **)`
+- `DartUnmap`
+- `computeMaxMcacheSizeAcrossClients`
+- `CreationProperties`
+- `ANE_GetPeerData_gated`
+- `validateAndProcessSurface`
+- `forMapper`
+- `void ANEScheduler::panicOnRequestTimeout(ANEHWDevice *, ANEInferenceRequest &)`
+- `ANE_showISPPeerSurfaces`
+- `Failed`
+- `hwDeviceCallback`
+- `void ZinComputePrintGenericSection(const ZinComputeProgramSne *const)`
+- `GetSectionInfo`
+- `CSNE_CMD_CH_BUFFER_POOL_CONFIG_GET`
+- `CSNE_CMD_CH_RESET_NOTIFICATION`
+- `FWSharedMemoryRequest`
+- `bad_weak_ptr was thrown in -fno-exceptions mode`
+- `site.RTInferenceContext`
+- `ANE_RegisterDebugWorkProcessor_gated`
+- `void ZinComputePrintProcedureSection(const ZinComputeProgramSne *const)`
+- `performSecondStageLoading`
+- `ANE_HWDevicePowerOn_gated`
+- `ZinComputeProgramStatus ZinComputeProgramHasMultiPlaneIOProcedure(ZinComputeProgram *, ZinComputeProgramProcedure *, bool *)`
+- `processTimeout`
+- `ANEDriverDebugClient`
+- `join`
+- `populateAllIOBinds`
+- `121111121222121211111111111112`
+- `addDataChainingRequest`
+- `removeCachedMutableWeightsBuffer`
+- `int ZinComputeInitSneSetProcedureSegmentProperty(uint32_t, uint32_t, ZinComputeProcedureOperation **const, uint32_t, sCSneCmdProgramProcedureSegmentProperty *, bool *)`
+- `site.char*`
+- `ANEDebugEventMsg`
+- `mapClientResource`
+- `.bin`
+- `configureFirmwareWatermarks`
+- `DisableANEClocksAndPower`
+- `\"ANEHWDevice::ANECPU ANE%d: %s\" @%s:%d`
+- `hw.memsize`
+- `__RO_KERN_`
+- `%d.%d.%d`
+- `PrepareForFirmware`
+- `ffw_calloc`
+- `11111`
+- `powerStateDidChangeTo_gated`
+- `121111`
+- `12212`
+- `ANERequest`
+- `CSNE_CMD_IPC_ENDPOINT_UNSET`
+- `sendCacheRequestInvalidateCmd`
+- `disableDynamicPowerGating`
+- `aneExclaveWriteProperty`
+- `/private/var/mobile/Library/AppleIntelligencePlatform/AppModelAssets/`
+- `setThrottlingEnabled`
+- `ane-exclave-proxy`
+- `initializeANESoCConfig`
+- `getANEExclaveProxyServiceHandle`
+- `virtual void DvPtrWeight::TakeDvPtr(DvPtr &)`
+- `111111112211211112112221112222222112111121122211122222222222222222222222221111`
+- `unwire_thread`
+- `ZinComputeProgramStatus RtDeserializeParseRuntimeStructures(const ZinComputeProgramRT *const, RtProcedureGraph *, const std::span<const uint32_t> &)`
+- `getMemCacheSizeForStreamType`
+- `ANE_ExclaveEndFWRecoveryProcess`
+- `createInputBuffers`
+- `forceBondedPeerRecovery`
+- `_wire`
+- `InitializeProvider`
+- `ANEDevicePropertyNumANECores`
+- `int ZinComputeInitProcedureSectionHeader(const ZinComputeProgram *const, const void *, ZinComputeProgramSne *)`
+- `Negative segment index`
+- `purge`
+- `enableSchedulerMaintenanceTimer`
+- `site.H1xANELoadBalancer`
+- `aneExclaveSecureTransitionEventHandler`
+- `auto ZinComputeProgramMakeFvmlibsHelper(const void *const, const void *const, std::span<ZinComputeProgramSegment> &, std::span<ZinComputeProgramFvmlib> &, ZinComputeProgramSymbol *, uint32_t)::(anonymous class)::operator()(const void *const, size_t) const`
+- `ANE: Allocated Shared Memory Surface: MISC`
+- `vmAlloc`
+- `12222222111`
+- `getRTGraphInferenceHandle`
+- `ANEWorkLoop`
+- `takePowerAssertion_gated`
+- `ApplePMGR`
+- `ANE_IPC_PowerOnByPeer`
+- `\"Client not found in global list:%p\\n\" @%s:%d`
+- `ANE_ExclaveResume`
+- `ANE_ProgramPrepareAndSubmitRequest`
+- `site.float`
+- `ANEInferenceRequest Error`
+- `ANE3`
+- `AppleH10CamIn`
+- `TBUF`
+- `com.apple.developer.background-tasks.continued-processing.inference`
+- `virtual void ANEDriverDebugClient::stop(IOService *)`
+- `site.AppleANEMPMMapMemoryFunction`
+- `setClientHint_locked`
+- `exclaveTeardown`
+- `ANE_GetStatus`
+- `%llu.%01llu KiB`
+- `waitForActiveResourcesToDrainOnShutdown`
+- `ANELockedResourcePool.h`
+- `site.operation_t *`
+- `1221222122221222`
+- `non-persistent`
+- `cleanupInferenceRequest`
+- `ANEDeviceInterface`
+- `site.ANEFwToFwSignalMsg`
+- `site.ANEStatsLogFileManager`
+- `exclave-rearm-after-poweron`
+- `h18g`
+- `memoryMapRequest`
+- `auto ZinComputeProgramSharedMakeSymbolsInit(const void *const, const void *const, const std::span<ZinComputeProgramSegment> &, const struct symtab_command *, std::span<ZinComputeProgramSymbol> &)::(anonymous class)::operator()(const void *const, size_t) const`
+- `UpdateANEStats`
+- `1222222`
+- `Out of range procedure segment index`
+- `1112112112112122222111`
+- `getRecommendationBasedOnHeadOfLineBlocking`
+- `IO_T2H`
+- `site.ZinComputeProgramInitInfo`
+- `ANEClientHintsUserClient`
+- `fwEventCodeConversion`
+- `int ZinComputeInitTextPropertySection(const ZinComputeProgram *const, ZinComputeProgramSne *const)`
+- `site.RtRuntimePlanarMapOperationDescription`
+- `\"%s:%d: Unsupported SoC 0x%x\" @%s:%d`
+- `True`
+- `TERMINAL`
+- `ZinComputeProgramStatus ZinComputeProgramRTMakeRuntimeGraph(ZinComputeProgramRT *)`
+- `buildFirmwareRequest`
+- `ZinComputeProgramRTGetProcedureLatencyStats`
+- `Wired`
+- `true`
+- `calculateExpectedLatency`
+- `site.DvFP16`
+- `updateRequestFWCommand`
+- `cleanupCachedRequest`
+- `ANE_ProgramOutputSetEnqueue_locked`
+- `\"TB_FATAL: \" \"invalid result returned from handleITQInterrupt\" @%s:%d`
+- `programSendRequest`
+- `ANE: Allocated Shared Memory Surface:  LOG`
+- `IOSurfaceCacheMode`
+- `site.ANEFirmwareClientLoggingMsg`
+- `waitForSynchronousCompletion`
+- `site.rt_kernel_param`
+- `IOSurfaceUseReserve`
+- `ReleaseSharedMemorySurface`
+- `getMCacheStreamSize`
+- `site.ZinComputeProgramProcedure`
+- `ZinComputeProgramStatus ZinComputeProgramUpdateMutablesWithSymbolicWeights(uint32_t, const ZinComputeProgramInitInfo *, const ANECMutableWeightFileData *, uint64_t, void *, uint64_t, bool)`
+- `ZinComputeProgramStatus RtDeserializeParseLoopNode(const ZinComputeProgramRT *const, RtProcedureGraphNode *, RtOperationGraph *, const std::span<const uint32_t> &, RtOperationGraphNode **)`
+- `__text`
+- `121212121212121212`
+- `handleFirmwareClientLoggingRequest_gated`
+- `ZinComputeProgramStatus ZinRtProcedureGraphUtil::RtGraphCreateVmAddrToOperationDescriptionMap(const RtProcedureGraphNode *, std::unordered_map<uint64_t, RtRuntimeOperationDescription *> &)`
+- `ANEResource`
+- `ANEClientModelAssetPath`
+- `checkForTimedOutCommand_gated_block_invoke`
+- `sendPremapCmd`
+- `AppleT8132ANEHAL`
+- `ANEDriver.cpp`
+- `incrementSleepAssertions`
+- `ANE_GetMutableWeightsBuffer`
+- `11121111111211112`
+- `    HwClass= %s\n`
+- `complete`
+- `dumpState`
+- `    AXI_ID[%d]= 0x%08X\n`
+- `callFunction`
+- `site.ANECPULoadThrottler`
+- `site.ANEProcedureVariantSelector`
+- `ZinComputeProgramStatus ZinRtDeserializeUtil::ParseAdjacency(ZinRtDeserializeUtil::ZinRtCommandIterator &, AdjacencyType &) [Numbering = ZinRtOperationGraphNodeFieldNumbering, AdjacencyType = rt_operation_adjacency_t]`
+- `pending`
+- `site.ZinComputeProgramSpans`
+- `site.RtRuntimeStoreImmediateOperationDescription`
+- `  %-26s 0x%014llx   %12s   %-11s\n`
+- `NOT_THROTTLED`
+- `B16@?0^{client_log_buffer_t=Q^{_IORecursiveLock}Q^{sCLoggerRingBuffer}^v^{IOSurface}^{IOMemoryMap}i}8`
+- `site.ANEHWInterface`
+- `~ANEClientContext`
+- `22211111121111111121222122212`
+- `sendChainingPrepareCommand`
+- `H1xANELoadBalancerDirectPathClient`
+- `111111111222222211111111111111111111111111112222222221221221221221111111111222212222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `buildFirmwareRTInferenceCallRequest`
+- `ReleaseDebugWorkProcessor`
+- `CSNE_CMD_PROCEDURE_CALL_TRIGGER_CACHE_REQUEST`
+- `ANE_WaitForPowerOff_block_invoke`
+- `T2H_CMD`
+- `11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111112211`
+- `osenvironment`
+- `setPowerState`
+- `com.apple.ane.realtime-priority-client`
+- `com.apple.private.ane.allow-set-client-hints`
+- `site.ANEInferenceRequest`
+- `H11ANE`
+- `agxArrivalNotificationHandler`
+- `ANEWakeNotificationMsg`
+- `CSNE_CMD_IPC_ENDPOINT_UNSET2`
+- `ANEClientDeviceCore.cpp`
+- `ZinComputeProgramStatus ZinComputeProgramGetThreadArgumentSize(uint32_t, const char *, const void *, const void *, uint32_t &)`
+- `signpostRequestExecutionStarted`
+- `ANEDriverECCmdProvideXnuContentFileSize`
+- `findStreamObjectByID`
+- `ANEFwToFwSignalMsg`
+- `isResourceCached`
+- `readRDBK`
+- `_ANEHALArrivalNotificationHandler`
+- `ZinComputeProgramStatus ZinComputeProgramSharedMakeSegmentsInit(std::span<ZinComputeProgramSegment> &, const void *const, const void *const)`
+- `222111222222111111`
+- `EnableSubblocksClocksAndPower`
+- `    L2Index= 0x%08X\n`
+- `DataChainingCommand`
+- `HandleFirmwareCrashNotification`
+- `writerThreadFunction`
+- `populateProcedureFVMLibs`
+- `CSNE_CMD_TERMINATE_PROCESS`
+- `processDebugLoggingRequest`
+- `processSharedMallocRequestEndpoint`
+- `IOSurfaceWidth`
+- `ANEPrivilegedVMAccess`
+- `setParameter`
+- `void ZinComputePrintTextPropertySection(const ZinComputeProgram *const, const ZinComputeProgramSne *const)`
+- `OSValueObject<ANEClientResource*>`
+- `CSNE_CMD_CH_PROPERTY_WRITE`
+- `drainIOProcessorChannelMessageQueues`
+- `power_on_hardware`
+- `AppleANEMPMUnmapMemoryFunction`
+- `OSValueObject<ANEClientMappedSurfacePR>`
+- `121111121222121211111111111`
+- `MTRCluster`
+- `removePowerAssertion`
+- `virtual bool DvBufferFloat::GetRaw16(int, uint16_t &) const`
+- `virtual bool DvBufferFloat::SetFloat(int, float)`
+- `ANEThrottleUpdateMsg`
+- `site.ANEOpGraphTraverser`
+- `DeviceProperties`
+- `aneExclaveReadAdvise`
+- `121111222222222222222122222222222222212222222222222221222222222222222111101111011111221221122122121121111112111111222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `12212212222`
+- `site.RtProcedureGraphNode *`
+- `getExecutionTimeForProcedure`
+- `handleSlewRateTimer_gated`
+- `resumeFWCommandPollTimer`
+- `CSNE_CMD_DEBUG_COMMAND_DATA_CHECK`
+- `site.ANEResourceCollection`
+- `yuvs`
+- `ANE_HWDeviceClientOpen_gated`
+- `vmReserve`
+- `ANE_ProgramInputsReady_locked`
+- `CSNE_CMD_TIMEPROFILE_SHOW`
+- `CSNE_CMD_PROCEDURE_CALL`
+- `zinld v%d.%d.%d`
+- `readExecutionStatistics`
+- `handleHWDeviceTimeout`
+- `~ANEDataChainingRequest`
+- `ANEDevicePropertyBondedModeSupported`
+- `UNKNOWN`
+- `CSNE_CMD_POWER_DOWN`
+- `ANE_SessionHintRequest`
+- `ZinComputeProgramGetReadOnlyKernelSectionInfo`
+- `1221222121222`
+- `ZinComputeProgramStatus ZinRtDeserializeUtil::ParseNonJoinedNodeAdjacency(const RtProcedureGraphNode *, RtOperationGraphNode *, ZinRtDeserializeUtil::ZinRtCommandIterator &)`
+- `IOSurfaceAllocateFromSuperbuffer`
+- `    Address= 0x%llx\n`
+- `aneCmdSend`
+- `ANEHWDeviceCallbackThread`
+- `111211211211212221`
+- `SurfaceSharedEventAgentMask`
+- `2222222222222212`
+- `CSNE_CMD_RPC_ENABLE`
+- `CSNE_CMD_CH_SIGNPOST64_NOTIFICATION_GROUP`
+- `CSNE_CMD_REQUEST_PROGRAM_ID`
+- `getRequestedSize`
+- `FW`
+- `int32_t ZinComputeInitSneGenericSection(const ZinComputeProgram *const, ZinComputeProgramSneGenericSection *const)`
+- `1221221221`
+- `CSNE_CMD_PROCEDURE_CALL_WITH_CUSTOM_BARS`
+- `ANE_ExclavePause`
+- `ANEFirmwareClientLoggingMsg`
+- `ANEHWDeviceClientNotificationMsg`
+- `clearProcedureExecutionStats`
+- `getRecommendationBasedOnThrottleState`
+- `updateThrottlePercentageFromCLPC`
+- `CSNE_CMD_IPC_ENDPOINT_SET2`
+- `populateAllBindIOs`
+- `setClientHintInitialChecksAndLookups_locked`
+- `ZinComputeProgramStatus ZinComputeProgramGetInitSection(const ZinComputeProgram *, ZinComputeProgramSection **)`
+- `sendProcessCreateCmd_block_invoke`
+- `setActiveCacheRequestInGroup`
+- `1121`
+- `h14`
+- `freeLowLatencyCacheSlot`
+- `ANE_AddExclaveClient_gated`
+- `programDestroy`
+- `auto ZinComputeProgramSharedGetIdentCommand(const struct aligned_mach_header_64 *, const void *, const void *, const struct ident_command **)::(anonymous class)::operator()(const void *, size_t) const`
+- `__bss`
+- `processBlockNode`
+- `false`
+- `enable`
+- `aneLogging`
+- `processRequestEvent`
+- `ANEDriverECCmdPersistentClientUpcallAck`
+- `ANEDriverECCmdRestoreExclaveState`
+- `\"BondedNIDGenerator: Failed to allocate IORecursiveLock\" @%s:%d`
+- `populateProcedureSplitKernelInfo`
+- `populateBarTableEntriesForIOBind`
+- `i8@?0`
+- `int ZinComputeInitGenericSection(const ZinComputeProgram *const, ZinComputeProgramSne *const)`
+- `CSNE_CMD_CH_POWER_CONTROL`
+- `removeRequestByUUID`
+- `sendProcedureCallCmd`
+- `ANE_ProgramInputsReady`
+- `ANEMessage`
+- `SetupFWInitBootArgs`
+- `ANEExclaveInit`
+- `site.ZinComputeProgramSection *`
+- `site.sCSneCmdProcedureCall`
+- `handleFirmwareCommandSubmission`
+- `incrementAndWakePendingRequestsQueue`
+- `submitRequest`
+- `ZinComputeProgramStatus ZinRtDeserializeUtil::ParseAdjacency(ZinRtDeserializeUtil::ZinRtCommandIterator &, AdjacencyType &) [Numbering = ZinRtOperationFieldNumbering, AdjacencyType = rt_operation_adjacency_t]`
+- `OSValueObject<ANEPatchedWeightInfo*>`
+- `AppleT8140ANEHAL`
+- `B40@?0Q8Q16Q24Q32`
+- `workBeginForThrottling`
+- `isANEActive`
+- `ANE_ExclaveMemoryWiring`
+- `ANE_MapMPMMemory_gated`
+- `releaseBondedNID`
+- `site.ANEChannelMessage`
+- `ZinAssert.cpp`
+- `site.RtUnaryImmediateExpressionOperationDescription`
+- `canEnableSchedulerMaintenanceTimer`
+- `/var/tmp/ane_scheduler_stats.txt`
+- `getMutableBufferMemoryDescriptorForProcedure`
+- `processANEOperation`
+- `enqueueMessage`
+- `OSValueObject<ANERequestEvent*>`
+- `site.ANEExclaveProxy`
+- `CSNE_CMD_PROCEDURE_CALL_CACHE_REQUEST_WITH_CUSTOM_BARS`
+- `function-mcc_dataset`
+- `ANE_CleanupForColdReboot_gated`
+- `AppleCamera`
+- `ANE_MemoryUnMapRequest_locked`
+- `schedule`
+- `power-off-exclave-mpm`
+- `ioFenceCallback`
+- `ZinComputeProgramStatus ZinRtDeserializeUtil::ParseAdjacency(ZinRtDeserializeUtil::ZinRtCommandIterator &, AdjacencyType &) [Numbering = ZinRtProcedureFieldNumbering, AdjacencyType = rt_procedure_adjacency_t]`
+- `site.RtOperationGraphNode *`
+- `getMachoSectionInfo`
+- `setActive`
+- `HandleFirmwareTimeout_gated`
+- `getProcedureLatencyStats`
+- `forcePowerOff_gated`
+- `B8@?0`
+- `B16@?0^{OSObject=^^?i}8`
+- `site.RtRuntimeLoadImmediateOperationDescription`
+- `removeRequest`
+- `:t`
+- `1221112111222222222222`
+- `ANE_ExclaveStartFWRecoveryProcess`
+- `getProgramResourceFromCacheUrlId`
+- `addStatsBuffer`
+- `user_error @%s:%d`
+- `computeMaxDynamicPowerGatingHysteresisTimeoutFromAllClients`
+- `pause`
+- `.hwx`
+- `ane-proxy-node`
+- `initializeInferenceRequestMemoryPool`
+- `ANE_LoadFirmware_gated`
+- `AppleANEEPFunction`
+- `decrementPowerAssertionCounts`
+- `1122`
+- `makeKernelCopyOfProgramInfo`
+- `IO`
+- `signpostRequestExecutionStartedHW`
+- `aneExclaveWorkerThreadEntry`
+- `122221`
+- `site.ZinComputeProgramReloc`
+- `UnprepareForFirmware`
+- `site.H1xANELoadBalancerDirectPathClient`
+- `Output`
+- `addSplitTextSectionInfo`
+- `aneExclavePreparePowerOff`
+- `site.ZinComputeProgramSectionInfo`
+- `12212211222`
+- `site.RtRuntimePaddingOperationDescription`
+- `setExecuting`
+- `addPendingRequest`
+- `%d (%p): isFree=%d startOffset=%d count=%d pPrev=%p pNext=%p\n`
+- `site.sCSneCmdProcedureCallWithSignalEvents`
+- `PrintFwDebugInfo`
+- `IOReturn ANEHWDevice::ANE_MapMPMMemoryAtOffset(uint64_t, uint64_t)`
+- `ZinComputeProgramStatus ZinComputeProgramGetSectionBasicInfo(const void *const, size_t, size_t, ZinComputeProgramBasicInfoOfSections **)`
+- `bool DeCxt::FileIndexToWeight(uint32_t, uint64_t, uint64_t, const char *&)`
+- `getAverageExecutionTime`
+- `Wire`
+- `takePowerAssertionPrivate`
+- `site.ANECommandChannelMessage`
+- `CSNE_CMD_PROCEDURE_CALL_CACHE_REQUEST`
+- `programUnprepare`
+- `reserveKernelVA`
+- `ANEClientEnergyEfficientWorkload`
+- `~ANEClientDeviceCore`
+- `IOSurfaceName`
+- `messageDelivered`
+- `ANE_QuiesceDebugWorkProcessor`
+- `CleanupRTBuddyEndpoints`
+- `accumulateThrottleBusyTimeIfLastRequest`
+- `shouldYieldToLowerPriorityRequest`
+- `CSNE_CMD_UNLOAD_AFPP`
+- `rtbP0`
+- `ZinComputeProgramStatus ZinComputeProgramValidateLCThread(uint32_t, const void *, const void *, const void *)`
+- `ZinComputeProgramStatus ZinRtProcedureGraphUtil::RtGraphFindRootExprOpInExprBlock(const RtOperationGraphBlockNode *, RtExpressionOperationDescription *&)`
+- `Single`
+- `site.ANEClientHintsUserClient`
+- `21`
+- `Out of range procedure count`
+- `ZinComputeProgramStatus ZinComputeProgramMakeAneProcedures(ZinComputeProgram *)`
+- `exclave-assigned`
+- `\"ANE Exclave ITQ error: 0x%x detected with aneExclaveBootArgConfig bit 0 set (ITQ reg: 0x%x, queue: %lld/%d)\\n\" @%s:%d`
+- `site.ZinComputeProgramSymbol`
+- `site.ANERequestCompletionMsg`
+- `getCurrentThrottlePercentage`
+- `CSNE_CMD_CH_SIGNPOST_NOTIFICATION_GROUP`
+- `ZinComputeProgramStatus ZinComputeProgramCompareCompilerVersion(const char *, const char *, int32_t *)`
+- `IOSurfacePixelFormat`
+- `__TEXT`
+- `~ANEClientDevice`
+- `applySystemReservedPriorityMapping`
+- `SendRequestToFirmware: DartSpaceLimited type, we send request from queuePendingRequests`
+- `site.RtOperationNodeStorage`
+- `buildFirmwareChainingCacheRequest`
+- `CSNE_CMD_SECURE_MODE_STOP`
+- `ANEHAL1`
+- `registerFences`
+- `site.sCSneCmdProcedureCallCacheRequestWithCustomBars.sCSneDataChainingBufferDescriptor`
+- `ZinComputeProgramStatus ZinComputeProgramMakeAneOperations(ZinComputeProcedureOperation *, const struct compute_thread_command *, uint32_t, std::span<ZinComputeProgramSegment> &, const void *)`
+- `aneVnodeAppendText`
+- `CSNE_CMD_DBG_EVENT`
+- `\"Firmware timeout recovery for Exclaves failed!!!\\n\" @%s:%d`
+- `ANE_ProgramDestroy`
+- `dumpLocalFenceMap`
+- `__KERN_`
+- `aneVnodeTrustVerification`
+- `signpostRequestExecutionFinishedOrFailed`
+- `ane-isp-endpoint-cfg`
+- `findPendingRequestByCacheOrUUID`
+- `resetSubmittedRequestsCountAndExecutionTimePerPriority`
+- `site.ANEContextSwitchEvents`
+- `site.DeviceMemorySegment`
+- `recoveryos`
+- `ANE_DeviceClose`
+- `CCMD`
+- `virtual bool ANEDriverDebugClient::init(task_t, OSDictionary *)`
+- `h13`
+- `ZinComputeProgramStatus ZinComputeProgramGetProcedureEvents(ZinComputeProgram *, ZinComputeProgramProcedure *, uint64_t *, uint64_t *, uint64_t *)`
+- `CSNE_CMD_SECURE_MODE_START`
+- `EnableRTBuddyEndpoints`
+- `ANEUtils.h`
+- `ANEHAL3`
+- `IOReturn ANEHWDevice::ANE_UnmapMPMMemory_gated(uint64_t, IOBufferMemoryDescriptor *)`
+- `site.ANEScheduler`
+- `ANE: Allocated Shared Memory Surface: TBUF`
+- `22222223312322`
+- `ZinComputeProgramStatus ZinComputeProgramHasMutableOperation(ZinComputeProgram *, bool *)`
+- `cancelDataChainingRequests`
+- `aneValidateVnodeFromMappedAddress`
+- `CSNE_CMD_UNLOAD_PROGRAM`
+- `site.ANEExclaveMemoryWiringMsg`
+- `CSNE_CMD_CH_DATA_FILE_LOAD`
+- `ANE_HWDevicePowerOff_gated`
+- `ANE_ProgramChainingPrepare`
+- `PROC`
+- `auto ZinComputeProgramSharedMakeCountDataStructures(ZinComputeProgram *)::(anonymous class)::operator()(const void *const, size_t) const`
+- `ANE_MemoryPressureNotification_gated`
+- `ANE0`
+- `%s%d`
+- `site.RtOperationDescription`
+- `1221222122221`
+- `Yes`
+- `cancelRequests`
+- `11221`
+- `auto ZinComputeProgramGetSectionBasicInfo(const void *const, size_t, size_t, ZinComputeProgramBasicInfoOfSections **)::(anonymous class)::operator()(const void *, size_t, void *) const`
+- `site.ANENotificationMsg`
+- `waitForInUseCountZeroForANE`
+- `ANEHWDevice: program digest SHA256 : %d`
+- `ANEClocksPower.cpp`
+- `iomd-cache-ttl`
+- `h17`
+- `H11ANEInUserClient`
+- `trackActiveRequestStart`
+- `float GetWithExpand(DvPtr &, size_t)`
+- `populateCLPCPerfInfo`
+- `ANEProgramResource`
+- `getPrePopulatedBarTable`
+- `Entry`
+- `ZinComputeProgramStatus ZinRtDeserializeUtil::ParseDataDependency(RtProcedureGraphNode *, RtOperationDescription *, ZinRtDeserializeUtil::ZinRtCommandIterator &)`
+- `getSubmittedRequestsCountAndExecutionTimePerPriority`
+- `ZinComputeProgramRTGetANEOperationsDescription`
+- `ANEClientHints`
+- `Cancelled`
+- `dump`
+- `initPerformanceRequest`
+- `site.RtRuntimePlanarMapOperationDescriptionPrivate`
+- `1112222222122222212111221122211222112221122211122222222222222222221110122120212`
+- `adjustClientResourceOffset`
+- `CSNE_CMD_CONFIG_GET_EXT`
+- `releaseDsid`
+- `1221222`
+- `segments=%d allocatedSegmentsCount=%d freeSegmentsCount=%d allocatedBytesCount=%d freeBytesCount=%d minBytesCount=%d maxBytesCount=%d\n`
+- `SendRequestToFirmware: Acquired dependencies`
+- `CSNE_CMD_TIMEPROFILE_STOP`
+- `IOProcessorChannelSendWithLog`
+- `programOutputSetEnqueue`
+- `site.RtRuntimeParamOperationDescription`
+- `aneFWCommandPollTimerHandler`
+- `applyFirmwarePriorityMapping`
+- `CSNE_CMD_SUSPEND`
+- `removeAneSysClockAssertion_gated`
+- `exclaveSetup`
+- `releaseMcacheSize`
+- `12212212222222`
+- `111222222212222221211122112221122211222112221112222222222222222222011112`
+- `222222222221222222222222222221222222122222222222222222222`
+- `CSNE_CMD_CH_BUFFER_RETURN`
+- `processInputBufferMappingInfo`
+- `ZinComputeProgramIsKernelSection`
+- `%llu.%01llu GiB`
+- `com.apple.private.ane.allow-share-coalition-hints`
+- `dartMapMemoryDescriptorSharedMallocRegion`
+- `CSNE_CMD_SET_ACTIVE_CACHE_REQUEST_IN_GROUP`
+- `isp-ane-endpoint-cfg`
+- `ZinComputeProgramRTGetOperationMode`
+- `22122`
+- `void ZinComputePrintOperationSection(const ZinComputeProgram *const, const ZinComputeProgramSne *const)`
+- `site.ANECommandChannel`
+- `CSNE_CMD_DATA_CHAINING_EVENT`
+- `handleISPClientMCacheRelease`
+- `site.ANEWakeNotificationMsg`
+- `incrementUseCountForResidency`
+- `ANEExclaveProxy`
+- `CSNE_CMD_DSID_SET`
+- `ANEInExclave.cpp`
+- `virtual IOReturn ANEISPEndPoints::processIPCServiceMsg_gated(OSString *, void *, void *)`
+- `ZinComputeProgramStatus ZinComputeProgramGetANESegThreadStateArgumentSize(const ident_command *, bool, const ane_seg_thread_state_64 *const, const void *, const void *, uint32_t &)`
+- `DartMapped`
+- `CSNE_CMD_PREMAP_BUFFER`
+- `virtual IOReturn AppleANEPowerOnOffFunction::callFunction(void *, void *, void *)`
+- `aneExclaveUpcallEventHandler`
+- `MUTK`
+- `unwireHandler`
+- `site.ANEDataChainingRequest`
+- `22111111221112`
+- `CSNE_CMD_LOAD_PROGRAM`
+- `ANE_RemoveExclaveClient_gated`
+- `setSubmissionLimit`
+- `retrieveVMLimits`
+- `auto RtRuntimeStoreOperationDescription::UpdateDataDependency(const RtProcedureGraphNode *)::(anonymous class)::operator()(RtOperationDescription *) const`
+- `thermalSlewInterruptOccured`
+- `aneExclaveInterruptHandler`
+- `\"Exclave mode switch didn't succeed on retry\\n\" @%s:%d`
+- `virtual bool DvFloat::GetFloat(int, float &) const`
+- `site.ANEAsyncQueue`
+- `ZinComputeProgramStatus ZinRtDeserializeUtil::ParseProcedureAdjacency(RtProcedureGraph *, RtProcedureGraphNode *, ZinRtDeserializeUtil::ZinRtCommandIterator &)`
+- `procedureHasTDRewind`
+- `refillPool`
+- `ValidatePowerOffState`
+- `ANE_DoProgramCreateInstance`
+- `ANEClientSessionStatus`
+- `ZinComputeProgramStatus RtDeserializeParseBlockNode(const ZinComputeProgramRT *const, RtProcedureGraphNode *, RtOperationGraph *, const std::span<const uint32_t> &, RtOperationGraphNode **)`
+- `wakeNotificationCallback`
+- `ANEHintClientSessionStop`
+- `setMemoryOwnership`
+- `~ANECPULoadThrottler`
+- `cacheFlushInactive`
+- `CSNE_CMD_SET_SNE_PMU_BASE`
+- `CSNE_CMD_TRACE_ENABLE`
+- `\"%s :ANEHWDevice: ffw_calloc failed. Size not supported as it is not size of sIOProcessorChannelDescriptor size=%d, count=%d\\n\" @%s:%d`
+- `initializeDsidPool`
+- `sessionHintRequest`
+- `IOAcceleratorES`
+- `EnableMPMClocksAndPower`
+- `CSNE_CMD_PLATFORM_INFO`
+- `ANE_ExclaveRestoreState`
+- `StartPerformanceCounters`
+- `void data_type_fail()`
+- `updateChainingMetadataStats`
+- `ANE_ProgramChainingPrepare_locked`
+- `ANE_UnmapMutableWeightsBuffer`
+- `11121121121121221111221221221`
+- `\nDeviceMemory SEGMENT LIST INCONSISTENCY: last-segment-start=%d count=%d initialCount=%d\n`
+- `xctest`
+- `ANEDriverECCmdResumeExclaveWork`
+- `extendAllCommandTimeouts_block_invoke`
+- `~ScopedMMapT`
+- `INHP`
+- `H1xANELoadBalancer`
+- `11`
+- `waitForPendingRequestsQueue`
+- `ZinComputeProgramStatus ZinComputeProgramUpdatePrecheckWithSymbolicWeights(uint32_t, const ZinComputeProgramInitInfo *, const ANECMutableWeightFileData *, uint64_t, void *, uint64_t)`
+- `CSNE_CMD_ANE_DEFAULT_SETTING_SET`
+- `ZinComputeProgramStatus ZinComputeProgramRTMakeInitInfo(const ZinComputeProgramRT *, const RtRuntimePatchMutableKernelOperationDescription *, ZinComputeProgramInitInfo **)`
+- `ANEDriverECCmdSaveExclaveState`
+- `111`
+- `auto ZinComputeProgramSharedMakeCountDataStructures(ZinComputeProgramRT *)::(anonymous class)::operator()(const void *const, size_t) const`
+- `RtOperationDescription *CreateExpressionOperation(RtExpressionType)`
+- `ANEIspIPCEPMsg`
+- `chainingPrepare`
+- `site.ANEMemcacheClient`
+- `site.McacheDriverStreamObject`
+- `ZinComputeProgramStatus ZinRtProcedureGraphUtil::CalculateDSIDValue(const RtProcedureGraphNode *, int32_t, RtParamType, uint32_t &)`
+- `1211111212221212111`
+- `ANE_RegisterDebugWorkProcessor`
+- `Finished`
+- `site.ANEClientDeviceWrapper`
+- `forceDisableCacheRequests`
+- `ANEDevicePropertyIsInternalBuild`
+- `site.uint8_t`
+- `exitSleep`
+- `IOSurfaceIsGlobal`
+- `aneVnodeGetFileSize`
+- `DATA_CHAIN_H2T`
+- `ane-type`
+- `void ANEHWDeviceConfig::initializeANESoCConfig(const AppleARMIODevice *, ANEHWDevice *)`
+- `site.H11ANEInUserClient`
+- `site.RtRuntimeBufferMapOperationDescription`
+- `site.ANEReqCallbackData`
+- `h16`
+- `ANE_SetDriverProperty`
+- `programLoadFromMachoFile`
+- `OSValueObject<FWPendingRequest>`
+- `ANEHWDeviceClientNotificationHandler`
+- `\"clientContext not found in global list:%p\\n\" @%s:%d`
+- `111211211211212112`
+- `12212212121212`
+- `site.ANEPowerOnMsg`
+- `updateStats`
+- `B16@?0^v8`
+- `waitForPowerAssertion_gated`
+- `    HwStatus= 0x%08X\n`
+- `AllocateSharedMemorySurface_gated`
+- `/Library/Caches/com.apple.xbs/70A4E9C2-1C56-444D-A0B3-52B7A0DE6814/TemporaryDirectory.Q2tBzn/Sources/AppleH11ANEInterface/ANEResource/ANERTGraphProgramMetaData.h`
+- `initLowLatencySignaling`
+- `CSNE_CMD_RESET`
+- `1212`
+- `RtOperationDescription *ZinRtDeserializeUtil::AllocateOperationDescription(RtOperationMode, bool, RtOperationOpcode, RtMapOperationType, RtExpressionType, RtParamType)`
+- `Undefined`
+- `addWeightsBuffer`
+- `int ZinComputeInitSneProgramSegmentPropertyBuf(const ZinComputeProgram *const, ZinComputeProgramSne *const)`
+- `float GetWithDefault(DvPtr &, uint16_t, float)`
+- `populateBindIO`
+- `ANEProgramResource.cpp`
+- `determineProcedureVariant`
+- `site.ANEThread`
+- `2222222122212222222222`
+- `%s[%d]`
+- `WaitForLastClocksPowerAssertion`
+- `uint64_t MaxDim(DvPtr &, DvPtr &)`
+- `12111`
+- `setActiveBondedNID`
+- `12222122222`
+- `ZinComputeProgramStatus RtDeserialize(const ZinComputeProgramRT *const, const void *const, uint64_t, RtProcedureGraph **)`
+- `OSValueObject<ANEIOReporter*>`
+- `site.ANEPool`
+- `site.hdr_ty.chainingBufferInfo`
+- `CSNE_CMD_PING`
+- `resumeFirmware`
+- `site.ANEAGXSignalingSetupManager`
+- `h15`
+- `checkForDelayedDataChainingCleanup`
+- `ANE_processISPSurfaceMapRequest`
+- `suspendFirmware`
+- `AppleT6041ANEHAL`
+- `ANE_CompleteDebugWorkProcessorItem_gated`
+- `mcacheRelease_block_invoke`
+- `_unwire`
+- `enableAneSysClock`
+- `getCommandChannelForPipeHandle`
+- `mcacheRequest_block_invoke`
+- `ANEInVMAllocator`
+- `111222112222221111112121222222122222111122222222222222211111111112112221122211222112221122211222112221122211222112221122211222112221122211222112221122211222112221122211222112221122211222112221122211222112221122211222112221122211222112221122211222112221122211222112221122211222112221122211222112221122`
+- `ANEHWDevice::ANECPU ANE%d: %s`
+- `h11`
+- `12212222`
+- `12111112122212121`
+- `CSNE_CMD_STOP`
+- `1112112112112122212112`
+- `site.RtProcedureDescriptionPrivate`
+- `decrementUseCountForANE`
+- `ANE_AddPersistentClient_gated`
+- `aneDriverEnabled`
+- `site.DvFloat`
+- `initStatsBufferSection`
+- `site.ANEProgramLegacyResource`
+- `bool ANEEvent::verifyDependencyMask(const char *) const`
+- `\"Scheduler is NULL!!\\n\" @%s:%d`
+- `applyRealTimePriorityMapping`
+- `enableSlewRateMonitoring`
+- `site.uint64_t`
+- `ZinComputeProgramRTGetJoinedOperationCount`
+- `222221`
+- `computeClientSpecificDynamicPowerGatingHysteresisTimeout`
+- `SetupEndpoints`
+- `IOCoreSurfaceRoot`
+- `handlePowerOffForSEPClient`
+- `com.apple.ane.singleCopyIntermediateBuffer.allow`
+- `asyncThreadFunction`
+- `Initialized`
+- `ANE_ScheduleWork_gated`
+- `ANE_ShowDebugWorkProcessorSurfaces`
+- `virtual IOReturn ANEDriverDebugClient::clientDied()`
+- `aneExclaveToSEPHandoff`
+- `processISPEventReport`
+- `1211111212221212111111111112112222222222222222222111`
+- `CSNE_CMD_CH_SIGNPOST_NOTIFICATION`
+- `CSNE_CMD_RETURN_PROCESS_ID`
+- `1211112`
+- `getANEISPPerfRequest`
+- `auto RtANEOperationDescription::UpdateDataDependency(const RtProcedureGraphNode *)::(anonymous class)::operator()(RtOperationDescription *) const`
+- `ANE: Allocated Shared Memory Surface: INTM`
+- `waitForSleepAssertionsToReachZero`
+- `11212222222222222222222222222222222222222222222222222222`
+- `unwire`
+- `entered`
+- `ANERegisterControl`
+- `2`
+- `ANE_UnregisterDebugWorkProcessor_gated`
+- `publishRawStatsBuffer`
+- `ANEDevicePropertiesArrivalNotificationHandler_block_invoke`
+- `ZinComputeProgramStatus ZinRtProcedureGraphUtil::RtGraphParseTable(const RtOperationGraphOrderedBlockNode *, const RtProcedureGraphNode *, const RtContext *, std::unordered_map<uint64_t, table_element_info_t> &, size_t &)`
+- `\"ANE%u: ANEHWDevice::ANE Timeout panic fANEFirmwareEnablePanicOnTimeout=%d unitTestMode=%d\\n\" @%s:%d`
+- `ZinComputeProgramGetNumberOfKernelSections`
+- `site.ANECircularBufferInfo`
+- `deinitialize`
+- `init`
+- `validate`
+- `11121112121212121111211`
+- `site.ANEProgramRTResource`
+- `CSNE_CMD_CH_BUFFER_RECYCLE_START`
+- `aneFirmwareCommandTimeoutMs`
+- `ZinComputeProgramStatus ZinComputeProgramSharedMakeSymbolsInit(const void *const, const void *const, const std::span<ZinComputeProgramSegment> &, const struct symtab_command *, std::span<ZinComputeProgramSymbol> &)`
+- `site.rt_i64_param`
+- `site.ANEMessage`
+- `\"Load node source is Patch Mutable node\\n\" @%s:%d`
+- `\"ANE_Init failed: 0x%08X\\n\" @%s:%d`
+- `ZinComputeProgramGetOperationsToBeScheduledNext`
+- `111222112222221111111121112222222211222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212222212`
+- `IOReturn ANEHWDevice::ANE_startDaemon_gated()`
+- `populateInferenceInfoCache`
+- `WARN`
+- `buildFirmwareWaitEvents`
+- `ANE_processISPSurfaceMapRequest_block_invoke`
+- `ANE_DeviceOpen`
+- `ANEClientContext`
+- `BONDED`
+- `GazeKit`
+- `\"Failed to allocate instanceProcedureMutableSectionBuffer. programHandle: 0x%llx\\n\" @%s:%d`
+- `ValidatePowerOnState`
+- `ANE_ctrrReloadFw`
+- `findMatchingClusterMutableWeight`
+- `ANEChannel`
+- `classifyFaultingDVA`
+- `21112112112112112`
+- `12212221222212`
+- `CSNE_CMD_SET_SNE_RPC_CHECK_CMD`
+- `virtual IOReturn ANEDriverDebugClient::clientClose()`
+- `ERROR`
+- `ANEExclaveMemoryWiringRequestHandler`
+- `validateProcedureId`
+- `AllocateMemoryForDirectIO`
+- `1222222222`
+- `patchClusterProcessInstanceWeightsBuffers`
+- `    SID= 0x%08X\n`
+- `IOCommands`
+- `site.rt_tensor_param`
+- `handleThrottlePeriodTransition`
+- `processIPCServiceMsg_gated`
+- `virtual IOReturn ANEClientHints::newUserClient(task_t, void *, UInt32, IOUserClient **)`
+- `updateDutyCycleWindow`
+- `CSNE_CMD_SECURE_MODE_RESUME_TRANSITION`
+- `allocateResource`
+- `2211`
+- `site.hdr_ty.MutableWeight`
+- `calculateDSIDValue`
+- `site.uint32`
+- `enqueueFirmwareCommand`
+- `OSValueObject<ANEInDebugWorkProcessorParams>`
+- `FreeSharedMemorySurface`
+- `notifySchedulerOfDynamicPowerGatingDisable`
+- `SINGLE`
+- `site.RtBinaryExpressionOperationDescription`
+- `ANENotificationMsg`
+- `Kernel`
+- `com.apple.ane.allow-dataChaining-access`
+- `ANEPoolRefillMsg`
+- `setDataChainingRequest`
+- `ANE_ProgramChainingSetActiveProcedure_locked`
+- `aneExclaveSaveState`
+- `int ZinComputeInitSegmentPropertySection(const ZinComputeProgram *const, ZinComputeProgramSne *const)`
+- `Out of range procedure index`
+- `12211121121121121121111111112112`
+- `ANEDriverECCmdQueryForResult`
+- `submitInferenceRequest`
+- `OSValueObject<ANEInDebugWorkProcessorRPCRequest>`
+- `site.ANEPoolRefillMsg`
+- `OSValueObject<ANEProgramResource*>`
+- `ANEProcedureVariantSelector`
+- `EnableANEClocksAndPower`
+- `preProcess`
+- `dynPowerGateHysteresisTimerHandler`
+- `persistent`
+- `ANEProcess`
+- `ANEClientProgramHandle`
+- `AppleANETunableApplyFunction`
+- `site.ANEDebugLogString`
+- `handleDeviceMessage`
+- `doProgramCreateInstance`
+- `ANEPowerOnMsg`
+- `dartMap`
+- `AneEngine_C.c`
+- `    HwError= %s\n`
+- `sep-client-power-on`
+- `1222`
+- `waitForSleepInProgressToClear`
+- `111111111`
+- `getStatus`
+- `int ZinComputeInitSneTdPropertySectionHelper(const ZinComputeProgram *const, ZinComputeProgramSneTextPropertySection *const)`
+- `1221222211`
+- `mapFwCTRRRegion`
+- `aneVnodeSecureLookup`
+- `122`
+- `aneExclaveRestoreState`
+- `auto RtRuntimeStoreImmediateOperationDescription::UpdateDataDependency(const RtProcedureGraphNode *)::(anonymous class)::operator()(RtOperationDescription *) const`
+- `updateWaitEvents`
+- `ANEPerfRequest`
+- `int ZinComputeInitOperationSection(const ZinComputeProgram *const, ZinComputeProgramSne *const)`
+- `auto RtRuntimeMapOperationDescription::UpdateDataDependency(const RtProcedureGraphNode *)::(anonymous class)::operator()(RtOperationDescription *) const`
+- `AppleANEMPMMapMemoryFunction`
+- `ZinComputeProgramGetKernelSectionInfo`
+- `site.MTRSensor`
+- `112`
+- `int ZinComputeInitSneProgram(const ZinComputeProgram *const, ZinComputeProgramSne *const)`
+- `site.ZinComputeProgramSection`
+- `PTD`
+- `signpostChainingRequestExecutionStartedHW`
+- `111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111222222222222222222222222222222222222222222222`
+- `122111211211211211211111111121121`
+- `site.ANEPrivilegedVMAccess`
+- `Short`
+- `2122`
+- `__runtime`
+- `runRequest: ANE got power gated while sending request`
+- `2211112111`
+- `CSNE_CMD_BACK_CHANNEL_RPC`
+- `AppleT6030ANEHAL`
+- `requestDsid`
+- `\"__next_prime overflow\" @%s:%d`
+- `__RUNTIME`
+- `cleanupSharedMemorySurface`
+- `power_off_hardware_gated`
+- `ANE_ProgramOutputSetEnqueue`
+- `site.ANEHWDeviceClientNotificationMsg`
+- `OSValueObject<ANEInferenceRequest*>`
+- `aneInterruptHandler`
+- `site.ANEProgramCreateAdditionalParams`
+- `ZinComputeProgramStatus ZinRtProcedureGraphUtil::MakeOperationGraphRoots(RtOperationGraph *)`
+- `getPendingInferenceRequest`
+- `~ANEClientResource`
+- `EnableCPUClocksAndPower`
+- `\"Failed to power up MPM power domain!\" @%s:%d`
+- `12212212`
+- `setNextAllocation`
+- `calculateDutyCycleWindows`
+- `12222111222211`
+- `waitForFirmwareTimeoutHandling`
+- `int ZinComputeInitOperationSectionHeader(const ZinComputeProgram *const, const void *, ZinComputeProgramSne *)`
+- `ReleaseFwHeapMemorySurface`
+- `dumpAllSurfacesImpl`
+- `auto ZinComputeProgramSharedMakeSegmentsInit(std::span<ZinComputeProgramSegment> &, const void *const, const void *const)::(anonymous class)::operator()(const void *const, size_t) const`
+- `md`
+- `ANE_PopulateProgramOutput`
+- `reserveLowLatencyCacheSlot`
+- `sendRTProgramLoadCmd_block_invoke`
+- `site.ANEGroupResource`
+- `process_intermediate_union`
+- `OSValueObject<ANERequest*>`
+- `virtual IOReturn AppleANEMPMUnmapMemoryFunction::callFunction(void *, void *, void *)`
+- `virtual bool DvBufferFloat::GetFloat(int, float &) const`
+- `__const`
+- `ANEHintClientSessionInfo`
+- `computeClientSpecificTimeout`
+- `ane-arg-support`
+- `i36@?0I8^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}12^v20Q28`
+- `site.ANEResourceInterfaceCollection`
+- `patchMutableSection`
+- `processPatchMutableKernelOperation`
+- `CSNE_CMD_BOOT`
+- `111111111222222211111111111111111111111111112222222221221221221221111111111222212222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `site.MTRCluster`
+- `ZinComputeProgramStatus ZinComputeAllocateProcedureOperationFVMLibArray(size_t, ZinComputeProcedureOperation ***, size_t, ZinComputeProgramFvmlib ***)`
+- `processCommandResponse`
+- `PrepareFailed`
+- `lookupProgramWithAssetPath`
+- `11121112111112`
+- `dartUnmapHandler`
+- `populateBufferBinds`
+- `ANE_SetHWDevicePowerOffTimerPeriod_gated`
+- `H1xANELoadBalancerClient`
+- `transformANEProgramOutput`
+- `site.ANEProgramInfo`
+- `CSNE_CMD_TIMEPROFILE_START`
+- `ANE: Allocated Shared Memory Surface: MUTK`
+- `site.const ZinComputeProgramSection*`
+- `\"No MPM power up for fANEVersion = 0x%x\\n\" @%s:%d`
+- `/Library/Caches/com.apple.aned/`
+- `validateCpuSubtype`
+- `resetCacheHandle`
+- `isEntitlementSet`
+- `wakePendingRequestsQueueWithFWOverload`
+- `CSNE_CMD_CH_ERROR_NOTIFICATION`
+- `IOUserClientDefaultLockingSingleThreadExternalMethod`
+- `ANEClientDeviceCore`
+- `evaluateLocalFence`
+- `0122120212`
+- `ZinRtCommandIterator::CommandValue ZinRtDeserializeUtil::ZinRtCommandIterator::NextValue()`
+- `ZinComputeProgramStatus ZinRtProcedureGraphUtil::MakeProcedureGraphRoots(RtProcedureGraph *)`
+- `No`
+- `clientMemoryForType`
+- `registerAGXNotification`
+- `isValid`
+- `AppleANETunableApplyFunctionLegacy`
+- `IOUserClientDefaultLocking`
+- `Success`
+- `/arm-io/ane3`
+- `site.ANERequestTimeoutMsg`
+- `site.SegmentInfo`
+- `SendRequestToFirmware`
+- `ANE_ProgramSendRequestInitialChecksAndLookups`
+- `printDictionaryKeys`
+- `populateBarInfo`
+- `site._Tp`
+- `programChainingSetActiveProcedure`
+- `queuePendingRequests`
+- `site.ZinComputeProgramSegment`
+- `ZinComputeProgramStatus ZinRtProcedureGraphUtil::RtGraphGetOperationSizeInTable(const RtRuntimeOperationDescription *, const RtContext *, const std::unordered_map<uint64_t, RtRuntimeOperationDescription *> &, uint32_t &)`
+- `dumpFirmwareChainingRequest`
+- `handleWakeNotification`
+- `populateNonBindIOs`
+- `site.RTGraphInferenceStateManager`
+- `H11ANE1`
+- `121111121222121212111222122222222222221222222012212021111112212211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222221221221122122111112`
+- `foreground`
+- `stopDataChainingForProgram`
+- `\"TB_FATAL: \" \"invalid value: unexpected case value, %llx\" @%s:%d`
+- `CSNE_CMD_BUILDINFO`
+- `size_t ZinComputeProgramAneOperationTdCount(const ZinComputeProgram *, const ZinComputeProcedureOperation *)`
+- `updateLowLatencySignaling`
+- `initialize`
+- `FreeSharedMemorySurface_gated`
+- `\"ANEHWDevice::Failed to validate ANE register offset %#x with expected value: %#x, read register value %#x\\n\" @%s:%d`
+- `signpostChainingRequestExecutionStarted`
+- `211`
+- `221221111222111`
+- `/arm-io/ane0`
+- `ANEDevicePropertyANEVersion`
+- `executing`
+- `bool ZinComputeProgramSharedValidHeader(const void *const, size_t, size_t) [Program = ZinComputeProgram]`
+- `uint32_t ZinRtDeserializeUtil::ZinRtCommandIterator::SizeInWords() const`
+- `SharedEventAgentSignalEnabled`
+- `ANE_ProgramPrepare`
+- `122122122122`
+- `IOSurfaceIsPrivate`
+- `DisableSubblocksClocksAndPower`
+- `int64_t ZinComputeProgramGetTextSizeSizeInByteTDThreadFlavor(const ZinComputeProgram *const, const ZinComputeProcedureOperation *)`
+- `site.T`
+- ` @%s:%d`
+- `conditional_wait`
+- `__debug_info`
+- `site.RTGraphInferenceInfoCache`
+- `waitForPowerDownCompletion`
+- `schedulerMaintenanceTimerTimeOut`
+- `IOReturn ANEFirmwareManager::forceDisableCacheRequests()`
+- `power_off_hardware`
+- `default`
+- `site.ANEHWDevice`
+- `__INIT`
+- `site.RtRuntimeAllocOperationDescription`
+- `logMPMPowerState`
+- `bool DeCxt::ProcessInitInfo()`
+- `uint64_t MaxDim3(DvPtr &, DvPtr &, DvPtr &)`
+- `site.RtOperationGraphLoopNode`
+- `int ZinComputeInitSneTdPropertySection(const ZinComputeProgram *const, ZinComputeProgramSneTextPropertySection *const)`
+- `populateBarInfoImpl`
+- `void *ANEHWDevice::aneAddressToHostAddress(uint64_t)`
+- `IOReturn ANEHWDevice::ANE_MapMPMMemory_gated(uint64_t, IOBufferMemoryDescriptor *)`
+- `ZinComputeProgramGetKernelSectionInfoForProcedure`
+- `11212`
+- `site.ANEResourceCache`
+- `ANE_FlushInactiveDARTMappings_gated`
+- `CSNE_CMD_PROCEDURE_CALL_RECYCLE_OUTPUT_BUFFER`
+- `site.ANEDriver`
+- `buildFirmwareProcedureCallCacheRequest`
+- `dartUnmapInactiveResource`
+- `CSNE_CMD_CH_BUFFER_POOL_CONFIG_SET`
+- `122122122`
+- `removeProcess`
+- `site.ANEChannel`
+- `h13g`
+- `IOSurfaceHostOnly`
+- `OSBoolean`
+- `122222222222`
+- `False`
+- `CSNE_CMD_POWER_DEVICE_ON`
+- `ExclaveClient`
+- `\"ANE%d: %s: request timeout, not acquired all fences or events\\n\" @%s:%d`
+- `void *ffw_calloc(size_t, size_t)`
+- `processSharedMemoryCommand`
+- `ANE_PeerEPControl_gated`
+- `int ZinComputeInitProcedureSection(const ZinComputeProgram *const, ZinComputeProgramSne *const)`
+- `ZinComputeProgramStatus ZinComputeProgramRTGetInitInfo(const ZinComputeProgramRT *, RtRuntimePatchMutableKernelOperationDescription *, ZinComputeProgramInitInfo **)`
+- `site.IOMemoryDescriptor*`
+- `site.ANEWorkLoop`
+- `CSNE_CMD_PROGRAM_INTERFACE_VERSION_CHECK`
+- `setPowerStateGatedPriv`
+- `ane_dpe_reset_caicos_enabled_2`
+- `site.H1xANELoadBalancerClient`
+- `ANE: Allocated Shared Memory Surface:     `
+- `OSValueObject<ANEProcess*>`
+- `dartUnMapMemoryDescriptorSharedMallocRegion`
+- `extendAllCommandTimeouts`
+- `DebugCommands`
+- `ANEDevicePropertyNumANEs`
+- `site.ANEClientResource`
+- `Unwire`
+- `/arm-io/ane`
+- `bool ZinRtDeserializeUtil::CheckRuntimeDataAccess(const void *const, size_t, const std::span<const uint32_t> &)`
+- `processQueue`
+- `map`
+- `processChainingEventReport`
+- `222212222212221221222122122212212221221222122122212212221221222122122212212221221222122122212212221221222122122212212221221222122122212212221221222122122212212221221222122122212212221221222122122212212221221222122122212212221221222122122212212221221222122122212212221221222122122212212221221222122122`
+- `AppleT6031ANEHAL`
+- `auto ZinComputeProgramGetProcedureNameFromThread(const struct ident_command *, const struct compute_thread_command *, const void *, const void *)::(anonymous class)::operator()(const void *const, size_t) const`
+- `ANE_SetDeviceProperty_gated`
+- `aneExclaveQuery`
+- `checkForTimedOutRequests`
+- `site.struct vnode_attr`
+- `CSNE_CMD_INFERENCE_CALL`
+- `scheduleInferenceIfNeeded`
+- `site.rt_i16_param`
+- `scheduler_verbose`
+- `ANE_releaseDaemon_gated`
+- `ane1-exclave-proxy`
+- `getProgramOutput`
+- `ANE_MemoryMapRequest_locked`
+- `signpostChainingRequestExecutionFinishedOrFailed`
+- `211111222222222222212222221221`
+- `StopPerformanceCounters`
+- `IOSurfaceNonPurgeable`
+- `cacheError`
+- `getPrePopulatedSegmentArray`
+- `T2F_HIPRI`
+- `aneExclaveStartFWRecoveryProcess`
+- `\nDeviceMemoryManager::DebugPrint Begin\n`
+- `site.IODART::capability_t`
+- `allDevicesPoweredOff`
+- `rtbuddyEndpointSendRetry`
+- `SHAREDMALLOC`
+- `HandleRTBuddyMessage`
+- `PWGATE`
+- `pmp-virt-notify`
+- `notifyPerfControllerOfFutureWork`
+- `getProcVariants`
+- `ANEDynSysPowerGatingTimerTimeOut`
+- `ANECStatus ANECValidateMutableProcedureInfo(const ANECMutableProcedureInfo *, uint64_t)`
+- `site.rt_subtensor_param`
+- `HEAP`
+- `IOSurfaceBytesPerRow`
+- `incrementSubmittedRequestsCountAndExecutionTimePerPriority`
+- `HWDevicePowerOffTimerTimeOut`
+- `enableDataStream`
+- `ANE_releaseAllPeerSurfaces`
+- `ANEIn.cpp`
+- `rtbuddyEndpointSendInPlace`
+- `ZinComputeProgramStatus RtDeserializeParseOperationGraphNode(const ZinComputeProgramRT *const, RtProcedureGraphNode *, RtOperationGraph *, const std::span<const uint32_t> &, uint32_t, uint32_t &, RtOperationGraphNode **)`
+- `\"Alloc node not found for Patch Mutable node\\n\" @%s:%d`
+- `h15g`
+- `/arm-io/ane2`
+- `site.ANEDataChainingRequestEvent`
+- `OSValueObject<ANEClientDeviceCore*>`
+- `ZinComputeProgramGetKernelSectionInfoForOperation`
+- `resume`
+- `takeAneSysClockAssertion_gated`
+- `/arm-io/isp0`
+- `newUserClient`
+- `ANECommandChannel`
+- `CSNE_CMD_PROCEDURE_CALL_CACHE_REQUEST_WITH_SHARED_EVENTS`
+- `EnumerateANEHAL`
+- `ANE_SetPeerData_gated`
+- `site.ANEPowerMsg`
+- `ANEDevicePropertyANEHWBoardSubType`
+- `inputsReady`
+- `CSNE_CMD_CH_DATA_FILE_LOAD2`
+- `ANEC v%d\nzin_ane_compiler v%d.%d.%d`
+- `2222222222222222222111121212222222222222222222222222222222222122`
+- `ANEDriver`
+- `site.ZinComputeProcedureOperation`
+- `122222`
+- `disableDynamicPowerGateHysteresisTimer`
+- `operator()`
+- `ANE_MapMutableWeightsBuffer`
+- `initMutableKernelSections`
+- `Bonded`
+- `getResource`
+- `site.ANECoredump`
+- `ANE_DoProgramCreate`
+- `notifyClients`
+- `12121212121212`
+- `ZinComputeProgramStatus ZinRtProcedureGraphUtil::RtGraphGetParamOpSizeInTable(const RtRuntimeParamOperationDescription *, const RtContext *, const std::unordered_map<uint64_t, RtRuntimeOperationDescription *> &, uint32_t &)`
+- `~ANEGroupResource`
+- `11111111112221`
+- `failed`
+- `OSValueObject<ANESharedMemorySurfaceParams>`
+- `ANEHintClientSessionInProgress`
+- `ANEExclaveInit_block_invoke`
+- `setMemCacheDsidForStreamType`
+- `checkAndClearInterruptStatus`
+- `exiting`
+- `FastIOCommands`
+- `OSValueObject<ANEClientContext*>`
+- `checkExclaveEnablementStatus`
+- `site.ANEProcess`
+- `checkSurfaceUnderrun`
+- `ANEDriverECCmdPreparePowerOff`
+- `ZinComputeProgramStatus ZinComputeProgramHasMutableProcedure(ZinComputeProgram *, ZinComputeProgramProcedure *, bool *)`
+- `FWSharedEventDoorbellRing`
+- `1211111111112`
+- `211222111111111122222222221111111111111111111111111111111111112`
+- `OSValueObject<ANECommandChannelMessage*>`
+- `ANE`
+- `ANE_GetStatus_gated`
+- `site.RtImmediateExpressionOperationDescription`
+- `site.RtRuntimePatchMutableKernelOperationDescription`
+- `site.sCSneCmdProcedureCallWithCustomBarsFix`
+- `ANEClientResidentPages`
+- `ane`
+- `deserializeMacho`
+- `sendChainingCacheRequestToFirmware`
+- `\"ANE failed to load ANEHAL\" @%s:%d`
+- `HandleFirmwareCrashNotification_Gated`
+- `site.ANEPerfRequest`
+- `site.ANECoalesceInfo`
+- `setClientHint`
+- `ZinComputeProgramStatus ZinComputeProgramGetMutableProcedureInfo(ZinComputeProgram *, uint32_t, ZinComputeProgramMutableProcedureInfo *)`
+- `site.ZinComputeProgramFvmlib`
+- `ZinComputeProgramStatus ZinComputeProgramSharedMakeRelocationsInit(const void *const, const void *const, std::span<ZinComputeProgramSegment> &, std::span<ZinComputeProgramSymbol> &)`
+- `DisableCPUClocksAndPower`
+- `sendProcedureCallCachedCmd`
+- `aneExclaveEndFWRecoveryProcess`
+- `site.ANEResource`
+- `processTargetToHostIOCommand`
+- `ANEPrivilegedVMAccessUserClient`
+- `OSValueObject<ANEChannel*>`
+- `ANEDriverRoot`
+- `addIntermediateBuffers`
+- `updateMemoryDescriptor`
+- `CSNE_CMD_SET_SIGNAL_EVENTS`
+- `virtual IOReturn AppleANEMPMMapMemoryFunction::callFunction(void *, void *, void *)`
+- `initializeARGSupport`
+- `virtual bool DvFP16::GetRaw16(int, uint16_t &) const`
+- `programChainingPrepare`
+- `site.const RtANEOperationDescription *`
+- `site.RtOperationGraphBlockNode`
+- `addResource`
+- `getRecommendationBasedOnANEAvailability`
+- `IOUserClientEntitlements`
+- `AppleANEPowerOnOffFunction`
+- `122122212122221`
+- `CSNE_CMD_INIT_SHARED_EVENT_INFO`
+- `SetRTBuddyPowerPolicy`
+- `setAllocator`
+- `/.resolve/2%.*s`
+- `ANEHWThrottlePulseTimerTimeOut_gated`
+- `OSValueObject<ANEFirmwareCommandState*>`
+- `\"Predecessor node to Patch mutable node is not Alloc!!\\n\" @%s:%d`
+- `processLoadOperation`
+- `ANEHWDevice - DART Exception - End Logging\n`
+- `recovery`
+- `site.ANEClientHint`
+- `\nDeviceMemory SEGMENT LIST INCONSISTENCY: Current and Next segments are both free (should have been coalesced)\n`
+- `finalizeMutableKernelOwnership`
+- `void ZinComputeProgramDestroyInitInfo(ZinComputeProgramInitInfo *)`
+- `updateStatsOnRequestCompletion`
+- `setupProgramMCache`
+- `CSNE_CMD_SET_SNE_PMU_BASE2`
+- `findClientByCodesigning`
+- `ANEUnwireThread`
+- `site.DvRaw8`
+- `com.apple.ane.allow-system-reserved-priorities`
+- `GetNextRotationTargetANE`
+- `ZinComputeProgramStatus ZinComputeProgramUsesSymbolicWeights(const ZinComputeProgramInitInfo *, bool &)`
+- `buildCustomBarInfo`
+- `ANEResource.cpp`
+- `aneFWCommandPollTimer_gated`
+- `setupANEExclaveProxyService`
+- `ANERegisterControl.cpp`
+- `ANESleepWakeCallback`
+- `site.RtRuntimeRsyncOperationDescription`
+- `enterSleep`
+- `SharedMemorySurfaceTargetPhysicalAddressToHostVirtualAddress`
+- `processPowerEvent`
+- `checkDartTimeoutAndAddToList`
+- `OSValueObject<ANEFirmwareCommandBuffer*>`
+- `ANEDevicePropertyANEHWBoardType`
+- `registerMcacheClient`
+- `requestMcacheSize`
+- `site.ZinComputeProgramBasicInfoOfSections`
+- `auto ZinComputeProgramSharedMakeRelocationsInit(const void *const, const void *const, std::span<ZinComputeProgramSegment> &, std::span<ZinComputeProgramSymbol> &)::(anonymous class)::operator()(const void *, size_t) const`
+- `site.ANECMutableWeightFileData`
+- `populateMcacheBarTableEntry`
+- `ANEDriverECCmdStartFirmwareRecoveryProcess`
+- `CSNE_CMD_CREATE_PROCESS`
+- `%s`
+- `aneCmdSendAsync`
+- `TemporalHandMatting`
+- `site.RtOperationGraphNodePrivate`
+- `signalChainingSharedEvents`
+- `copyAllocationInfo`
+- `ANESchedulerWakeNotificationThread`
+- `aneVnodeTruncateFront`
+- `PrintSharedBuffer`
+- `sep-client-power-off`
+- `com.apple.driver.AppleH11ANEInterface.%s`
+- `ZinComputeProgramStatus ZinComputeProgramSharedMakeCountDataStructures(Program *) [Program = ZinComputeProgramRT]`
+- `removeResource`
+- `CSNE_CMD_CH_INFO_GET`
+- `processFWDebugEvent`
+- `site.ANEClientInterface`
+- `LOG`
+- `setupInterruptAndTimer`
+- `thermal-slew-rate-interval`
+- `buildFirmwareProcedureCallRequest`
+- `ANE_InitFirmwareConfiguration`
+- `ANE_SEPClientPowerControl`
+- `ANE_ExclaveModeCycle`
+- `allocateIntermediateBuffer`
+- `/Library/Caches/com.apple.xbs/70A4E9C2-1C56-444D-A0B3-52B7A0DE6814/TemporaryDirectory.Q2tBzn/Sources/AppleH11ANEInterface/ANEResource/ANERTGraphRuntime.h`
+- `updateCPULoadScore`
+- `CSNE_CMD_POWER_DEVICE_OFF`
+- `aneFirmwareCommandSend`
+- `site.rt_i8_param`
+- `1011112221222121`
+- `CSNE_CMD_TM_SYNC_ERR_NOTIFICATION`
+- `CSNE_CMD_REQUEST_PROCESS_ID`
+- `1112211112`
+- `111222221111111112211222221111110111122222111121112112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222112220122120211111111111111`
+- `recalculateDutyCycleWindows`
+- `ANE_MemoryUnMapRequest`
+- `__kern_`
+- `__DEBUG`
+- `com.apple.developer.ane.increased-model-size-limit`
+- `processOutputBufferMappingInfo`
+- `setupIntermediateUnion`
+- `bool DeCxt::ParseTransform(DvPtr &, DvPtr &)`
+- `pre-loaded`
+- `AppleT8142ANEHAL`
+- `m11`
+- `patchClusterMutableInstanceProcedure`
+- `segment-ranges`
+- `ThermalPTDTimerTimeOut_gated`
+- `validateOutputResources`
+- `ZinComputeProgramFvmlib *ZinComputeProgramFindFvmlibSpan(std::span<ZinComputeProgramFvmlib> &, const ZinComputeProgramSection *)`
+- `hw.memsize_physical`
+- `site.ZinComputeProgram`
+- `free`
+- `SetRTBuddyPowerState`
+- `validateInputResources`
+- `ZinComputeProgramStatus ZinComputeProgramMakeInitInfo(const ZinComputeProgram *, ZinComputeProgramInitInfo **)`
+- `ANE_GetDebugWorkProcessorItem_gated`
+- `ANEClientDeviceWrapper`
+- `doProgramCreate`
+- `calculateIspProcedureExecutionTime`
+- `chainingUnprepare`
+- `IOProcessorChannelSendRetry`
+- `com.apple.private.ane.mappingMutableWeightsBuffer.allow`
+- `enqueueStats`
+- `CSNE_CMD_RESUME`
+- `INTM`
+- `%02x`
+- `com.apple.ane.wireIntermediateBufferAtLoadTime.allow`
+- `Input`
+- `site.char`
+- `%llu B`
+- `readAdvise`
+- `processSharedMallocRequest`
+- `ANE_processIspAneNetworkSurfaceRemap`
+- `exclave-client-remove`
+- `site.RtRuntimeBarrierOperationDescription`
+- `AppleH16CamIn`
+- `getOpDescFromNode`
+- `11122211222222111111`
+- `12212211`
+- `proc%d`
+- `cleanupProcess`
+- `site.ZinComputeProgramBinding`
+- `site.ANEProgramCreateArgsOutput`
+- `bad_function_call was thrown in -fno-exceptions mode`
+- `enqueueExclaveMemoryWiring`
+- `ANEPoolRefillThread`
+- `ANEHWDeviceTimeoutMsg`
+- `\"cannot map ANEResource ID: 0x%llx\\n\" @%s:%d`
+- `freePatchedMutableWeightInfo`
+- `OSValueObject<ANEClientMappedSurface>`
+- `com.apple.ane.iokit-user-access`
+- `updateProcedureExecutionStats`
+- `programPrepare`
+- `lookupClientProgramWithHandle`
+- `site.RtRuntimeMapOperationDescription`
+- `sendCacheRequestInvalidateCmd_block_invoke`
+- `createClientResource`
+- `ctrr-unlocked`
+- `ZinComputeProgramStatus ZinComputeProgramHasCompressedIOProcedure(ZinComputeProgram *, ZinComputeProgramProcedure *, bool *, bool *)`
+- `ZinComputeProgramRTGetRuntimeOperationOpcode`
+- `111222222212222221211122112221122211222112221112222222222222222222`
+- `CSNE_CMD_CH_PROPERTY_READ`
+- `ANE_Init`
+- `ANEHWDeviceConfig`
+- `ANE_ExclavePreparePowerOff`
+- `ANEClientDevice`
+- `signalFirmwareDoorbellForCachedRequest`
+- `ZinComputeProgramStatus ZinComputeProgramRTUpdateMutablesWithSymbolicWeights(const RtRuntimePatchMutableKernelOperationDescription *, const ANECMutableWeightFileData *, uint64_t, void *, uint64_t, bool)`
+- `runRequest`
+- `ANE_WaitForPowerOn`
+- `PersistentClient`
+- `error`
+- `ZinComputeProgramStatus ZinComputeProgramMakeBindingsHelper(const void *const, const void *, std::span<ZinComputeProgramBinding> &)`
+- `aneMachoReadHeaderLoadCommands`
+- `ANEClientTotalPages`
+- `CSNE_CMD_IPC_ENDPOINT_SET`
+- `CSNE_CMD_CH_BUFFER_RECYCLE_STOP`
+- `ANEFirmwareClientLoggingRequestHandler`
+- `m9`
+- `12212221212221222221`
+- `/private/var/mobile/Library/Caches/com.apple.aned/`
+- `h18`
+- `close`
+- `unwireThreadFunction`
+- `sendSetupCmd`
+- `getAssignedSize`
+- `submitWorkToPerfController`
+- `auto ZinComputeProgramMakeBindingsHelper(const void *const, const void *, std::span<ZinComputeProgramBinding> &)::(anonymous class)::operator()(const void *, size_t) const`
+- `Valid`
+- `OSValueObject<ANECoredumpSection>`
+- `site.ANEDriverDebugClient`
+- `virtual void ANEDriverDebugClient::free()`
+- `/private`
+- `CSNE_CMD_STATS_BUFFER_SIZE_GET`
+- `waitForPendingFirmwareRequestsToComplete`
+- `1212112122122222`
+- `const ANECMutableOperationInfo *ANECGetMutableOperationInfo(const ANECMutableProcedureInfo *, uint32_t)`
+- `site.ANEFWRpcMsg`
+- `disableSlewRateMonitoring`
+- `ANEFirmwareECCmdHandleITQInterrupt_block_invoke`
+- `handleSharedMemoryRequest_gated_block_invoke_2`
+- `ANE_UserClientCleanup`
+- `,`
+- `11121121121121222121121`
+- `populateBarTableEntryForBufferBind`
+- `setMcacheStreamSize`
+- `ANEDevicePropertyANECPUSubType`
+- `hint succeeded`
+- `rt.version`
+- `uint32_t ZinRtDeserializeUtil::ZinRtCommandIterator::FieldNumber() const`
+- `ANERequestCompletionMsg`
+- `1122122`
+- `ANE: Allocated Shared Memory Surface: RPCC`
+- `enterShutdown`
+- `processChainingStatsBuffer`
+- `site.RTOperationNodeDriverBase`
+- `v12@?0B8`
+- `site.ANEFirmwareManager`
+- `handleExclaveMemoryWiringRequest`
+- `disableLowLatency`
+- `handleSlewRateInterrupt_gated`
+- `sendInferenceCmd`
+- `MapFailed`
+- `site.ANEHWDeviceConfig`
+- `clientClose`
+- `MISC`
+- `\"Hardware client still has power assertions, even after we force released them ! powerAssertionCount = %d \\n\" @%s:%d`
+- `FirmwareLoaded`
+- `printPoweredClients`
+- `getExecutionCount`
+- `Unwired`
+- `freeSharedEvents`
+- `ANEFirmwareSharedMemory.cpp`
+- `ANEHAL2`
+- `aneExclaveReadProperty`
+- `setSecureModeEnabled`
+- `SEP`
+- `2111112`
+- `h14g`
+- `122122212122222`
+- `decrementSleepAssertions`
+- `site.sCSneCmdInferenceCall`
+- `H11ANEIn`
+- `site.AppleANEPerfCounterReadFunction`
+- `site.rt_param_type`
+- `CSNE_CMD_PREFETCH_DSID_EVENT`
+- `ZinComputeProgramStatus ZinComputeProgramMakeOperationsHelper(const void *const, const void *, const struct ident_command *, std::span<ZinComputeProgramSegment> &, std::span<ZinComputeProcedureOperation> &, std::span<ZinComputeProcedureJitOperation> &, std::span<ZinComputeProgramFvmlib> &)`
+- `121`
+- `/private/var/Users/`
+- `THROTTLED`
+- `waitForClientPowerDown`
+- `1111`
+- `AppleANEPerfCounterReadFunction`
+- `validateMemoryMapParams`
+- `site.ANESchedulerStatsWriter`
+- `\"Ack %d error on command id:%u Fw common error:%u iokit error code:%d fw error:%u timestampFw=%lld commandAddr=%p\\n\" @%s:%d`
+- `bool DeCxt::ParseVector(DvPtr &)`
+- `uint32_t ZinRtDeserializeUtil::ZinRtCommandIterator::NumberOfRegistersSpecified() const`
+- `site.ANEThrottleUpdateMsg`
+- `    Type= %s\n`
+- `ANE1Endpoint`
+- `getCachedMutableWeightsBuffer`
+- `createMapRequestFromParams`
+- `completeRequestsWithStaleEpoch`
+- `waitForFirmwareToQuiesce`
+- `ANEDevicePropertyTypeANEArchitectureTypeStr`
+- `ANE_AddClientForProgram`
+- `ZinComputeProgramStatus ZinComputeProgramSupportsFeature(const ident_command *const, const char *, bool &)`
+- `ZinComputeProgramStatus ZinRtDeserializeUtil::ParseJoinedOperationAdjacency(const RtProcedureGraphNode *, ZinRtDeserializeUtil::ZinRtCommandIterator &, bool &, RtOperationGraphOperationNode *&)`
+- `OSValueObject<ANEChannelMessage*>`
+- `ZinComputeProgramEvalExpressionNode`
+- `disable`
+- `GetPeerARMCallFunctions`
+- `buildFirmwareSignalEvents`
+- `computeMaxTimeoutFromAllClients`
+- `ANE_GetDeviceProperty_gated`
+- `AppleT8310ANEHAL`
+- `ANEFirmwareManager.cpp`
+- `ZinComputeProgramStatus ZinComputeProgramRTMakeWithMappedSize(const void *const, size_t, size_t, ZinComputeProgramRT **)`
+- `%llu.%01llu MiB`
+- `~ANEProgramResource`
+- `read64`
+- `site.RtANEOperationDescription`
+- `__data`
+- `site.ANEClientHints`
+- `function-isp_ep_control`
+- `/Library/Caches/com.apple.xbs/70A4E9C2-1C56-444D-A0B3-52B7A0DE6814/TemporaryDirectory.Q2tBzn/Sources/AppleH11ANEInterface/polymer/anecommon/ane_loader/ZinComputeProgramLoader.cpp`
+- `\nDeviceMemory SEGMENT LIST INCONSISTENCY: segment-start=%d count=%d next-segment-start=%d\n`
+- `sendProgramLoadCmd_block_invoke`
+- `setDataChainingClient`
+- `\nH11ANEIn - DART Exception @ 0x%08X\n`
+- `aneAddressToHostAddress`
+- `ANEFirmwareSharedMemoryRequestHandler`
+- `aneType`
+- `aneExclaveCycleRetry`
+- `int ZinComputeInitSneSetupBuffers(const ZinComputeProgram *const, ZinComputeProgramSne *const, uint32_t *)`
+- `site.ZinComputeProgramBinding *`
+- `signalSharedEvents`
+- `void ANEISPEndPoints::dumpEPConfiguration()`
+- `/arm-io/ane1`
+- `ANE_UserClientClose`
+- `122122222221111`
+- `getCurrentPeriodThrottleValues`
+- `enableDynamicPowerGateHysteresisTimer`
+- `ANEDevicePropertyANEMinorVersion`
+- `MULTI`
+- `releaseKernelVAReservation`
+- `ANE_UserClientOpen`
+- `site.DvBufferFloat`
+- `site.ANEProgramBindingInfo`
+- `SendRequestToFirmware: Not all dependencies resolved for procedure call request`
+- `HWDevicePowerOffTimerTimeOut_gated`
+- `PROG`
+- `site.ANEMapRequest`
+- `CollectKernelSectionsForProcedure`
+- `12222122`
+- `101111222122212121`
+- `handleAneFirmwareCommandWaitResult`
+- `wakePendingRequestsQueue`
+- `vmFree`
+- `site.ANERequest`
+- `dartUnmapMemoryDescriptor`
+- `__kern`
+- `ANESchedulerCompletion.cpp`
+- `ANEHintClientSessionStart`
+- `Default`
+- `T2H_TERM`
+- `1212121121`
+- `printBufferState`
+- `site.ANEThermalSensorEntry`
+- `212`
+- `camEnableISPSurfaceRemapCheck`
+- `11222`
+- `getStreamConfig`
+- `processDeviceEvent`
+- `CSNE_CMD_RETURN_PROGRAM_ID`
+- `int ZinComputeInitSneProgramTdPropertyBuf(const ZinComputeProgram *const, struct sCSneBufferDescriptor *)`
+- `virtual bool DvRaw8::SetRaw8(int, uint8_t)`
+- `111211211211212222211`
+- `~ANEResourceCache`
+- `getDeviceInterface_block_invoke`
+- `isBondedProcedure`
+- `createFences`
+- `dartMapMemoryDescriptor`
+- `site.uint16_t`
+- `/Library/Caches/com.apple.xbs/70A4E9C2-1C56-444D-A0B3-52B7A0DE6814/TemporaryDirectory.Q2tBzn/Sources/AppleH11ANEInterface/ANEScheduler/ANEEvent.cpp`
+- `populateProcedureBasicInfo`
+- `m12`
+- `int ZinComputeInitSneSegmentPropertySection(const ZinComputeProgram *const, ZinComputeProgramSneTextPropertySection *const)`
+- `12222222222222`
+- `waitForUnwireThreadToDrain`
+- `registerSharedEvents`
+- `initRuntimeOps`
+- `ANEDriverECCmdEndFirmwareRecoveryProcess`
+- `CSNE_CMD_REG_FILE_LOAD`
+- `site.H11ANEIn`
+- `ANE: Allocated Shared Memory Surface: HEAP`
+- `site.ANEDeviceInterface`
+- `\"ANE: Failed to remap ISP surface-id:0x%x\\n\" @%s:%d`
+- `ANEHWThrottleTimerTimeOut_gated`
+- `1221`
+- `auto RtDeserializeParseBlockNode(const ZinComputeProgramRT *const, RtProcedureGraphNode *, RtOperationGraph *, const std::span<const uint32_t> &, RtOperationGraphNode **)::(anonymous class)::operator()(uint32_t) const`
+- `active`
+- `11111111112222`
+- `calculateDynamicTimeout`
+- `queryFirmwareMcacheSizes`
+- `ANE_GetProgramOutput`
+- `__IFP`
+- `ZinComputeProgramStatus RtDeserializeUpdateFileOffset(const ZinComputeProgramRT *const, Node<RtOperationGraphOperationNode *> *)`
+- `ANE: Allocated Firmware Memory Surface: INHP`
+- `ANEFWRpcMsg`
+- `ANE_ProgramUnprepare`
+- `ANEAGXSignalingSetupManager`
+- `site.ANEProcessCreateArgs`
+- `~ANEProcess`
+- `endOutstandingPerfWork`
+- `signalResult`
+- `12211`
+- `ANEExclaveMemoryWiringMsg`
+- `1111111112221122122`
+- `InitializeRTBuddyClient`
+- `/chosen`
+- `TestApp`
+- `222222221222`
+- `ANE_ProgramInitialSetup`
+- `enableDynamicPowerGating`
+- `111222112222221111112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `site.ZinComputeProcedureOperation *`
+- `handleISPClientMCacheRequest`
+- `int ZinComputeInitTextPropertySectionHeader(const ZinComputeProgram *const, const void *, ZinComputeProgramSne *)`
+- `1211111212`
+- `CSNE_CMD_USER_EVENT`
+- `211221`
+- `ANE_ExclaveSaveState`
+- `notifyPerfController`
+- `ANERTGraphRuntime.tpp`
+- `2111`
+- `DisableCPUClocksAndPowerForM11`
+- `ANETLimitHandlingDuringPowerDown`
+- `CSNE_CMD_SET_DYNAMIC_POWERGATE`
+- `aneSEPToExclaveHandoff`
+- `validateThrottleBudget`
+- `resetLowLatencyHandlesCount`
+- `virtual bool DvFloat::GetRaw16(int, uint16_t &) const`
+- `isEqual`
+- `poolRefillCallback`
+- `1222222222222222222`
+- `bool ZinRtDeserializeUtil::ExtractSymbolNameFromSymbolTableIndex(const ZinComputeProgramRT *const, uint32_t, std::string_view &)`
+- `resetAllSubmittedRequestsCountAndExecutionTimePerPriority`
+- `power_on_hardware_gated`
+- `AppleT8150ANEHAL`
+- `H11ANEInDirectPathClient`
+- `ANEPowerChangeHandlerExternal`
+- `CheckAndHandleIfFirmwareTimeout`
+- `aneVnodeRead`
+- `    TTBRIndex= 0x%08X\n`
+- `site.ANEISPEndPoints`
+- `CSNE_CMD_RESOURCE_INFO_GET`
+- `121111222222222222222222222222222222`
+- `findPendingRequestByUUID`
+- `site.RtUnaryExpressionOperationDescription`
+- `ANE: Allocated Shared Memory Surface: PROC`
+- `static void ANEHWDevice::doorBellRing(void *)`
+- `outputSetEnqueue`
+- `pauseFWCommandPollTimer`
+- `RTBuddyService`
+- `111211211211212211112212212211`
+- `T2H_SHMEM`
+- `TimedOut`
+- `DEBUG`
+- `void ffw_free(void *, size_t)`
+- `site.FWSharedMemoryRequest`
+- `int ZinComputeInitTdPropertySection(const ZinComputeProgram *const, ZinComputeProgramSne *const)`
+- `forcePowerOffAllDevices`
+- `BUF_T2H`
+- `virtual bool DvFP16::SetRaw16(int, uint16_t)`
+- `sendLegacyCommand`
+- `T2F_CMD`
+- `ANE_ProgramCheckAndPrewireBuffers`
+- `createOutputBuffers`
+- `ReadPerformanceCounters`
+- `site.ANEIspIPCEPMsg`
+- `\"ANE%d: %s: request timeout, already sent to FW\\n\" @%s:%d`
+- `ANERTGraphRuntime.cpp`
+- `ANECPULoadThrottler`
+- `rtbuddyEndpointSendMessage`
+- `012212021`
+- `site.const ZinComputeProgramSegment *`
+- `ZinComputeProgramStatus RtDeserializeOperationLookAhead(RtProcedureGraphNode *, RtOperationGraph *, std::span<const uint32_t> &, RtOperationDescription *&, RtOperationGraphOperationNode *&)`
+- `1222222212221`
+- `~ANEUnionResource`
+- `CSNE_CMD_CPU_LOAD_NOTIFICATION`
+- `H11ANE2`
+- `site.AppleANEMPMUnmapMemoryFunction`
+- `isSameMutableFiles`
+- `CSNE_CMD_EXCLAVE_MODE_START`
+- `IOUserClientDefaultLockingSetProperties`
+- `processClientHint`
+- `122222222222222222222222222222222222222222222222222`
+- `virtual bool DvRaw8::GetRaw8(int, uint8_t &) const`
+- `processDebugEvent`
+- `site.StatsEntry`
+- `_dartMap`
+- `waitForExclaveModeSwitchCompletion`
+- `handlePowerOnForSEPClient`
+- `clientDied`
+- `WaitForANESYSPowerDown`
+- `wire`
+- `OSValueObject<ANEMapRequest*>`
+- `ANEDriverECCmdPauseExclaveWork`
+- `/arm-io/isp`
+- `12222222222222222`
+- `site.ZinComputeProgramFvmlib *`
+- `12`
+- `ANE_ProgramChainingSetActiveProcedure`
+- `site.RtRuntimePatchMutableKernelOperationDescription*`
+- `12121`
+- `publishRawStatsHeader`
+- `IOSurfaceHeight`
+- `populateProcedureLiveInParams`
+- `AneMachoSignatureCheck`
+- `programInputsReady`
+- `verifyDeviceId`
+- `ZinComputeProgramStatus ZinComputeProgramMakePreCheck(const void *const, ZinComputeProgramSegment *, size_t, ZinComputeProgramFvmlib *, size_t)`
+- `submitDataChainingRequest`
+- `uint32_t ANEHWDevice::getHwRegisterOffset(uint32_t)`
+- `h19`
+- `moveResourceFrom`
+- `removePowerAssertionPrivate`
+- `1112211`
+- `ZinComputeProgramStatus ZinComputeProgramSharedMakeCountDataStructures(Program *) [Program = ZinComputeProgram]`
+- `site.ANEPrivilegedVMAccessUserClient`
+- `CSNE_CMD_PRINT_ENABLE`
+- `BUF_H2T`
+- `handleSharedMemoryRequest_gated`
+- `populateProgramOutput`
+- `ANESTL_hash.cpp`
+- `OSValueObject<ANEGroupResource*>`
+- `CSNE_CMD_SECURE_MODE_EVENT`
+- `FW_INIT`
+- `findAvailableResource`
+- `coredumpSaveSWVers`
+- `unknown`
+- `\"ANELockedResourcePool: Failed to allocate lock\" @%s:%d`
+- `traverseAllProcedureAndOperationGraphs`
+- `1`
+- `ANEFirmwareLog.cpp`
+- `uint64_t processStatsBuffer(ANEProcessStatsBufferParams, ANEStatsLogFileManager *)`
+- `site.RtOperationGraphOperationNode`
+- `site.ANEProgramEventMsg`
+- `site.sCSneSegmentProperty`
+- `stop`
+- `CSNE_CMD_CONFIG_GET`
+- `create`
+- `ANE_deInit`
+- `OSValueObject<ANEClientDevice*>`
+- `site.RtProcedureGraphNode`
+- `ANE_CheckForPendingRequests`
+- `122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `site.sCSneCmdProcedureCallTriggerCacheRequest`
+- `112122211111111112212`
+- `__KERN`
+- `rd`
+- `ZinComputeProgramStatus ZinComputeProgramMakeAneProceduresPreCheck(size_t, ZinComputeProcedureOperation *const, size_t, ZinComputeProgramBinding *const, size_t, ZinComputeProgramProcedure *const)`
+- `\"ANE%d: %s: request timeout, not sent to FW\\n\" @%s:%d`
+- `powerOffIfNoPowerAssertions_gated`
+- `auto RtRuntimeRsyncOperationDescription::UpdateDataDependency(const RtProcedureGraphNode *)::(anonymous class)::operator()(RtOperationDescription *) const`
+- `yes`
+- `site.RtRuntimeLoadOperationDescription`
+- `sendInferenceRequest`
+- `CSNE_CMD_START`
+- `CSNE_CMD_CH_BUFFER_RECYCLE_MODE_SET`
+- `ANE: Allocated Driver Memory Surface: INTM`
+- `conditional_signal`
+- `releaseActiveBondedNID`
+- `aneSlewRateInterruptHandler_gated`
+- `ANE_processIspAneNetworkSurfaceUnMap`
+- `freeIntermediateBuffer`
+- `PreparedForFirmware`
+- `checkThrottlingConstraints`
+- `CSNE_CMD_CH_SIGNPOST64_NOTIFICATION`
+- `enableFWIPCEP_gated`
+- `ANEClientInterface`
+- `notifyRequestEvent`
+- `Out of range TD address`
+- `auto ZinComputeProgramSharedValidHeader(const void *const, size_t, size_t)::(anonymous class)::operator()(const void *, size_t, void *) const`
+- `ANEPowerMsg`
+- `site.ANEHWDeviceTimeoutMsg`
+- `removePowerAssertion_gated`
+- `ANEProgramEventMsg`
+- `    L3Index= 0x%08X\n`
+- `OSValueObject<ANEResource*>`
+- `disableSchedulerMaintenanceTimer`
+- `DisableMPMClocksAndPower`
+- `ZinComputeProgramStatus ZinRtDeserializeUtil::HandleOperationCommand(const ZinComputeProgramRT *const, RtProcedureGraphNode *, RtOperationDescription *, ZinRtDeserializeUtil::ZinRtCommandIterator &)`
+- `ANE1`
+- `executeFirmwareCommandDirect`
+- `aneInterruptHandlerPriv`
+- `__ro_kern_`
+- `cancelUnsentRequests`
+- `populateProcedureMutableKernelInfo`
+- `userBufferTypeToUsageType`
+- `inactive`
+- `setupDartRemap`
+- `disableDataStream`
+- `112122`
+- `\"Potentially detected multiple instances of NID generators\\n\" @%s:%d`
+- `incrementUseCountForANE`
+- `AllocateFwHeapMemorySurface`
+- `InitializeRTBuddyEndpoints`
+- `memoryUnMapRequest`
+- `WARN hint failed`
+- `1112112112112122211`
+- `rtbP6`
+- `ISP`
+- `12222`
+- `src model info`
+- `populateLiveInParamValue`
+- `site.ANEUnionResource`
+- `~ANEScopedPowerAssertion`
+- `ANECommandChannelMessage`
+- `12111112122212121111111`
+- `H11ANE3`
+- `site.AppleANEPowerOnOffFunction`
+- `acquireKernelVAReservation`
+- `ANE_CompleteProgramCreate`
+- `static bool ZinRtDeserializeUtil::ZinRtCommandIterator::IsValidCommand(const std::span<const uint32_t> &)`
+- `getNextANEOp`
+- `sharedEventNotification`
+- `ZinComputeProgramStatus ZinRtProcedureGraphUtil::RtGraphGetExpressionOpSizeInTable(const RtExpressionOperationDescription *, const RtContext *, const std::unordered_map<uint64_t, RtRuntimeOperationDescription *> &, uint32_t &)`
+- `aned`
+- `\"FW is unresponsive (fFirmwareTimeout=%d). Exclave mode switch won't retry\\n\" @%s:%d`
+- `static ZinComputeProgramStatus DeCxt::CreateWeightArrayFromWeightFileNamesAndBufferList(ZinIrDeserializer &, uint32_t, uint32_t, uint32_t, const ANECMutableWeightFileData *, uint64_t, MutableWeight *&, uint32_t &)`
+- `ZinComputeProgramStatus ZinComputeProgramGetMutableKernelSectionForProcedure(const ZinComputeProgram *, uint32_t, ZinComputeProgramSection **)`
+- `1221222122`
+- `CSNE_CMD_PROCEDURE_CALL_WITH_SIGNAL_EVENTS`
+- `OSValueObject<ANECommandChannel*>`
+- `CSNE_CMD_PROGRAM_EVENT`
+- `getModelSizeLimit`
+- `waitForExclaveQuiesce`
+- `Unknown`
+- `ANEEndpoint`
+- `site.RtRangeExpressionOperationDescription`
+- `sendProgramUnloadCmd_block_invoke`
+- `\"%s :ANEHWDevice: ffw_free failed. Size not supported as it is not a multiple of sIOProcessorChannelDescriptor size=%zu struct size=%zu, count=%zu\\n\" @%s:%d`
+- `cleanup`
+- `start`
+- `site.RtRuntimeStoreOperationDescription`
+- `CSNE_CMD_LOAD_AFPP`
+- `drainRtbuddyEndpointQueues`
+- `open`
+- `ANE_UpdateSymbolicMutableSharing`
+- `DescriptorFailed`
+- `site.ZinComputeProcedureJitOperation`
+- `ANERequestTimeoutMsg`
+- `decrementSubmittedRequestsCountAndExecutionTimePerPriority`
+- `allocateAdditionalProgramMemory`
+- `site.sCSneCmdProcedureCallCacheRequest.sCSneDataChainingBufferDescriptor`
+- `updateClientTimeoutOnPowerAssertionRemoval`
+- `    IsWrite= %s\n`
+- `ANEDynSysPowerGatingTimerTimeOut_gated`
+- `auto ZinComputeProgramFindDramLogEventCountThreadArgs(const ZinComputeProgram *, const char *, uint32_t)::(anonymous class)::operator()(const void *, size_t) const`
+- `ZinComputeProgramStatus RtDeserializeParseProcedure(const ZinComputeProgramRT *const, RtProcedureGraph *, RtProcedureGraphNode *, const std::span<const uint32_t> &)`
+- `makeMemoryVisible`
+- `UNKNOWN_CMD`
+- `getStatsBufferSize`
+- `h12`
+- `powerStateWillChangeTo_gated`
+- `ZinComputeProgramStatus ZinComputeProgramCompareLinkerVersion(const char *, const char *, int32_t *)`
+- `DartMap`
+- `B24@?0^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}8^{IONotifier=^^?i}16`
+- `bool ZinComputeProgramSharedValidHeader(const void *const, size_t, size_t) [Program = ZinComputeProgramRT]`
+- `site.RtExpressionOperationDescription`
+- `1112112112112121121`
+- `INFO`
+- `virtual IOReturn ANEClientHintsUserClient::setProperties(OSObject *)`
+- `initSharedEvents`
+- `ANE2`
+- `11112212212222`
+- `ZinComputeProgramStatus ZinComputeProgramGetANETDThreadStateArgumentSize(const ident_command *, bool, const ane_thread_state_64 *const, const void *, const void *, uint32_t &)`
+- `\"overflow detected\\n\" @%s:%d`
+- `cleanupSharedMemorySurface_block_invoke`
+- `ane-subtype`
+- `cacheMutableWeightsBuffer`
+- `registerAGXNotification_block_invoke`
+- `ScopedSleepAssertion`
+- `site.hdr_ty.chainingBufferSetInfo`
+- `site.ANEArrayPool`
+- `h16g`
+- `site.BlockVars`
+- `colorOperationGraph`
+- `getMemCacheDsidForStreamType`
+- `PS`
+- `int ZinComputeInitAllSections(const ZinComputeProgram *const, ZinComputeProgramSne *const)`
+- `prepareSplitSections`
+- `IsAllowedToSendInference`
+- `dartMapIPCEndPoints`
+- `forceCloseIspEndpoints_gated`
+- `handleOutstandingCommand`
+- `site.sCSneCmdInferenceCallProperty`
+- `ANE_processISPSurfaceUnMapRequest`
+- `IOHibernateState`
+- `ANEHWDevice.cpp`
+- `getBondedNID`
+- `CSNE_CMD_CPU_LOAD_GET`
+- `site.H11ANEInDirectPathClient`
+- `__L3`
+- `ANE_HWDeviceClientClose_gated`
+- `CSNE_CMD_QUIESCE_STATE`
+- `/arm-io/ane%d`
+- `ANEHintClientSessionAbort`
+- `ANE_RemovePersistentClient_gated`
+- `RPCC`
+- `bool ExecuteWeightShuffle(DvPtr &, DvPtr &, const DimInfo &, uint32_t, const DimInfo *)`
+- `ANE: Allocated Shared Memory Surface: CCMD`
+- `ANE: Allocated Shared Memory Surface: PROG`
+- `site.RTNodeContextInterface`
+- `firmwareResourceIsAvailableForProcess`
+- `firmwareResourceIsAvailableForPriority`
+- `v408@?0{aneengine_aneengineinterrupt_handleitqinterrupt__result_s=C(?=I{aneengine_aneenginecmdhandleitqinterruptreturncontext_s=C[16{aneengine_anerequesthwtimestampinfo_s=QQQ}]})}8`
+- `com.apple.ane.autoPrewiringOptOut.allow`
+- `ZinComputeProgramStatus ZinComputeProgramGetProcedureLogEvents(const ZinComputeProgram *, ZinComputeProgramProcedure *, uint64_t *, uint64_t *, uint64_t *)`
+- `site.RtOperationGraphConditionNode`
+- `updateExecutionMetrics`
+- `site.ANERequestEvent`
+- `ANECoredump`
+- `CSNE_CMD_FW_RUN_MODE`
+- `ctrr-disabled`
+- `findClient`
+- `waitForPowerAssertion`
+- `site.RtOperationGraph`
+- `1211111212221212111111111111212222222222222222221`
+- `ANE_ProgramSendRequest`
+- `updateStatsOnRequestSubmission`
+- `1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111`
+- `handleSharedMemoryRequest_gated_block_invoke`
+- `site.ANERegisterControl`
+- `site.RtOperationGraphOrderedBlockNode`
+- `sendProcessTerminateCmd_block_invoke`
+- `~ANEScopedPowerAssertionPrivate`
+- `site.AppleANEEPFunction`
+- `ZinComputeGetNumberOfKernelSectionsForOperation`
+- `createANESurface`
+- `initializeProcedureFamilies`
+- `site.struct sIOProcessorChannelDescriptor`
+- `exclave-client-add`
+- `com.apple.ane.memoryUnwiringOptOutAccess.allow`
+- `int ZinComputeInitGenericSectionHeader(const ZinComputeProgram *const, const void *, ZinComputeProgramSne *)`
+- `site.ZinComputeProgramBasicInfoOfSection`
+- `site.rt_i32_param`
+- `Text`
+- `initSplitKernelSections`
+- `processFWResetNotification`
+- `Exit`
+- `ANEInferenceRequest State Dump`
+- `site.DeviceMemoryManager`
+- `site.ANEDebugEventMsg`
+- `\"ANE%u: ANEHWDevice::ANE Timeout: channel=%s cmd=0x%04X (%s), waited=%u ms, timeout=%u ms, fANEFirmwareEnablePanicOnTimeout=%d unitTestMode=%d\\n\" @%s:%d`
+- `site.RtANEOperationDescriptionPrivate`
+- `performProtectionChecks`
+
+**[__TEXT.__os_log]**
+
+- `[ERROR] %s: %s: compute program was destroyed, the second stage loading could have been failed before, stop here\n`
+- `%s: %s: node_idx:%zu ready_node_idx:%zu nodeCount:%zu\n`
+- `%s: %s: num allocs %zu\n`
+- `%s: %s: Single execution time (%llu ns) is less than 1 ms, favouring SINGLE\n`
+- `%s: %s: Initialized 4 ANECommandChannel instances\n`
+- `[ERROR] %s: %s: Failed when processing input buffer mapping info\n`
+- `%s: %s: ANE-ISP procedure finished but no matching program found: networkId=0x%x, procedureId=0x%x\n`
+- `%s: bad td_count`
+- `%s: Failed to allocate operation graph node`
+- `%s: dsid_size_in_bits (%u) exceeds maximum (16)`
+- `%s: %s: dartMap failed request retries: %u\n`
+- `%s: %s: open loop output set: %d to firmware, next signal value: 0x%llx\n`
+- `%s: %s: Cleaned up default client context\n`
+- `%s: %s: DEBUG: event: %d. Work submitted but not started.                                        CLPC notifying work begin mach_absolute_time(): %llu\n`
+- `[ERROR] %s: %s: Message: %p nullptr\n`
+- `[ERROR] %s: %s: enterShutdown: pending requests queue did not drain (result=0x%x). Proceeding.\n`
+- `%s: %s: Cache handle unavailable, cleared FW-FW signaling for programHandle: 0x%llx transactionId: 0x%llx\n`
+- `[ERROR] %s: %s: Program or process not found for handle 0x%llx\n`
+- `%s: %s: ERROR: aneVnodeGetFileSize() failed. result=0x%x\n`
+- `[ERROR] %s: %s: Notify InputsReady failed\n`
+- `[ERROR] %s: %s: Failed to initialize the provider, exiting`
+- `%s: %s: IPC_CMD_POWER_ON_PEER is called by ISP\n`
+- `%s: %s: Device(%p): Map Mutable Weights Buffer [Client: %s, PID: %d]\n`
+- `%s: %s: SharedEventAgentSignalEnabled AGX property NOT FOUND\n`
+- `%s: %s: ProcStart: UUID: 0x%llx cacheHandle 0x%llx transactionId: 0x%llx\n`
+- `[ERROR] %s: %s: memory used for the procedureId: %lu is %zu, maxMemoryAllowed: %llu\n`
+- `%s: %s: StartTimerEvent for req programId: %d, processId: %d, transactionId: 0x%llx\n`
+- `[DEBUG] %s: %s: ClientInterface(%p): Client is inactive [Client: %s, PID: %d]\n`
+- `%s: Procedure adjacency specifies unknown address %llu`
+- `%s: %s: head:%u tail:%u full:%d\n`
+- `[ERROR] %s: %s: invalid dsid_size_in_bits (0)`
+- `[ERROR] %s: %s: decrementPowerAssertionCounts: powerAssertionCount already 0 for client %s\n`
+- `%s: %s: Registering with PerfControl with %u tokens\n`
+- `%s: %s: Exclave WL event handler: count=%d, workPaused=%d\n`
+- `%s: %s: User specified debug ANE %u for programHandle 0x%llx\n`
+- `Inconsistent DSID size in bits among operations.\n`
+- `%s: illegal program, patch mutable kernel op parameter`
+- `%s: Reference Param is needs valid rt_context to evaluate`
+- `%s: %s: WARN: unidentified segment (%s) or section (%s) offset: 0x%llx size: 0x%llx\n`
+- `%s: %s: CompressedIO: Header offset:%u, Data offset:%u, bufferIndex: %u, planeSize: %u\n`
+- `%s: %s: ProgramHandle = 0x%llx\n`
+- `%s: %s: Num Expression blocks : %zu\n`
+- `%s: %s: Skip non-zero offset %llx plane for metadata\n`
+- `[ERROR] %s: %s: hwInterface->getNumANEs() returned 0, defaulting to 1\n`
+- `%s: %s: Unwire queue resources count: %u\n`
+- `%s: Invalid Operation reference in a table`
+- `ANE: params.surface == nullptr\n`
+- `[ERROR] %s: %s: ZinComputeProgramMake Failed!`
+- `%s: %s: ERROR: neither procedureCallCommandPtr not procedureCallCacheReqPtr is set for program: %u, processId: %u, transactionId: 0x%llx\n`
+- `[ERROR] %s: %s: Shared memory remap message too small: offset:0x%llx, size:0x%llx\n`
+- `%s: %s: ANE SharedMallocRequest took %llu us\n`
+- `%s: %s: ANE Memory allocation req by mailbox offset: 0x%llx size:  0x%llx\n`
+- `%s: %s: Program instance created programId: %d programHandle: 0x%llx for baseModel programHandle: 0x%llx, owningTask: %p\n`
+- `[ERROR] %s: %s: request.process == nullptr!\n`
+- `%s: %s: proc Id:%u variant:%u\n`
+- `%s: %s: fAneSysClockAssertions=0, setting off timer to disable ane sys clock\n`
+- `%s: %s: ERROR: CSNE_CMD_CH_PROPERTY_WRITE for SEP handshake failed res=0x%x\n`
+- `%s: %s:   - %s (%s) [powerAssertionCount: %d]\n`
+- `[ERROR] %s: %s: collection passed in moveResourceFrom() is nullptr\n`
+- `pointer overflow in MutableProcedureInfo`
+- `%s: LC_THREAD command in RT program`
+- `%s: %s: ANEUnionResource: freed id: 0x%llx\n`
+- `%s: %s: Exclave work not paused, skipping resume\n`
+- `[ERROR] %s: %s: %s buffer surface id:%u for symbol:%s Plane Count not Match, count=%d expected=%d\n`
+- `%s: %s: Processing timeout message for request UUID: 0x%llx on device: %u\n`
+- `%s: %s: ERROR: ZinComputeProgramSupportsProcStartHW failed. Status: %d\n`
+- `[ERROR] %s: %s: ASYNC ERROR: Async request but no async reference set\n`
+- `%s: %s: Exit -\n`
+- `[ERROR] %s: %s: failed to find match inputs with inputIndex: %d from bufferSymbolIndex[%d]\n`
+- `[ERROR] %s: %s: Endpoint[%ld] message too small for handshake info: offset[0x%llx] size[0x%llx]\n`
+- `%s: %s: WriteProperty 0x%x = %u returned %u\n`
+- `%s: %s: ClientDevice(%p): Opening [Client: %s, PID: %d]\n`
+- `%s: %s: Canceling requests for process with programHandle: 0x%llx\n`
+- `%s: %s:   ... and %u more fences\n`
+- `%s: %s: CPU powered up failed. result=0x%x\n`
+- `%s: %s: ERROR: Channel is stopped\n`
+- `[INFO] %s: %s: Endpoint for ANE driver EC for downcalls initialized\n`
+- `[ERROR] %s: %s: Failed to create ANEDebugEventMsg\n`
+- `%s: %s: Error: ReleaseSharedMemorySurface called on surface with no references!\n`
+- `%s: %s: totalPagesNeedWired %llu residentPages %llu\n`
+- `%s: mapped size > model size`
+- `[ERROR] %s: %s: ANEGroupResource: cannot find resource with id: 0x%llx\n`
+- `%s: %s: CPU Successfully powered up \n`
+- `%s: %s: Returning fDebugWorkProcessorInProgressRequests item that was never completed\n`
+- `%s: %s: ProcEnd HWTimestamp : %llu\n`
+- `%s: %s: Failed to add intermediate union resource to request!\n`
+- `%s: %s: None of the clients have session in progress, powering off ANE\n`
+- `%s: %s: Core %u, mapping pending req per core %u, mapping total pending req %u, WL distribution pref %u\n`
+- `%s: illegal (null) 'data' parameter`
+- `%s: illegal 'operations' parameter`
+- `%s: %s: Matching exclave proxy: %s\n`
+- `%s: %s: Exclave not supported\n`
+- `[ERROR] %s: %s: not able to select correct variant for request\n`
+- `%s: illegal 'operation_count' parameter = %zu`
+- `%s: %s: Removing request UUID: 0x%llx - no more resident devices\n`
+- `[ERROR] %s: %s: procedureId(%d) has numOutputs (%d), cannot use more than total number of outputs (%d)\n`
+- `[ERROR] %s: %s: unsupported DSID param type: %u`
+- `%s: %s: Bonded NID :%u is used by another inference of this program\n`
+- `%s: %s: WARNING: Channel is paused\n`
+- `[ERROR] %s: %s: Invalid Input parameter(s) inMemDescriptor %p pOutPhysicalAddress %p pVisibleMemory %p\n`
+- `%s: %s: Peer IPC service not enabled, skipping ISP client mcache request\n`
+- `[ERROR] %s: %s: Could not reserve kernel VA for mutable weight patching, falling back to dynamic mapping\n`
+- `%s: %s: WARNING: Received priority %u above maximum priority (%u), clamping to %u\n`
+- `%s: missing mutable metadata buffer: %p`
+- `%s: %s: mutableKernelBufferOffset: 0x%x mutableKernelBufferSize = 0x%llx\n`
+- `[ERROR] %s: %s: ========== %s ==========\n`
+- `%s: %s: Bypassing panic handler, disabled by boot-args\n`
+- `%s: %s: polling all channels\n`
+- `[ERROR] %s: %s: Failed to get vnode for SK refId=0x%llx\n`
+- `[ERROR] %s: %s: Request of invalid type was passed to be inserted into Scheduler pendingRequests list!\n`
+- `[ERROR] %s: %s: Failed to DART map and prepare request resources. result: 0x%x\n`
+- `%s: Cannot retrieve version from version string`
+- `%s: %s: create mutableSectionBuffer mutableSectionFileOffset: (%d)\n`
+- `%s: %s: liveInParamValue=0x%llx stride=0x%llx liveInParamComputedValue=0x%llx\n`
+- `%s: %s:   DSID[%d] = 0x%x`
+- `%s: Symbol table index %u out of range of symbol table`
+- `[ERROR] %s: %s: programAddress: is NULL\n`
+- `[ERROR] %s: %s: populateBarInfo failed for InputBuffer/OutputBuffer plane, procedureID=%u, aneId=%u\n`
+- `[ERROR] %s: %s: populateBarInfo failed for TextBuffer, procedureID=%u, aneId=%u\n`
+- `[ERROR] %s: %s: Failed to query execution time for single ane variant from local database, falling back to stats embedded in the mach-o\n`
+- `%s: %s: Quality of Service: %u\n`
+- `%s: %s: Sync Callback Data: %s\n`
+- `%s: %s: FW will enable MPM power\n`
+- `%s: %s: Created IOSurface for ANECPU firmware buffer with virtualAddress: 0x%llx and physical address: 0x%llx\n`
+- `%s: %s: SaveState Tightbeam call failed with error 0x%x\n`
+- `%s: %s: Disabled ANE data stream from Mcache driver\n`
+- `[ERROR] %s: %s: No HW device config, skipping kernel VA reservation\n`
+- `[ERROR] %s: %s: submitRequest() failed. result=0x%x\n`
+- `[ERROR] %s: %s: Failed to take sleep assertion to perform DART map and prepare. result: 0x%x, request uuid: 0x%llx, request type: %u\n`
+- `Misaligned offset, offset must be aligned with 64B`
+- `%s: %s: Deregistration during power-off, deferring cleanup to wake\n`
+- `%s: ane_thread_state_64 out of bounds`
+- `Cannot divide by 0`
+- `%s: node node/subnode size mismatch`
+- `%s: %s: ERROR: given memory descriptor is NULL\n`
+- `%s: %s: Request submitTime: %llu readyTime: %llu startTime: %llu endTime: %llu timestampFW: %llu\n`
+- `%s: %s: Buffer bind id=%zu size=%llu fileoffset=%llu usage:%u\n`
+- `[ERROR] %s: %s: ANEUnionResource: invalid index (%u) for ANE %u\n`
+- `%s: %s: Paused command poll timer\n`
+- `%s: %s: resetNotification->pendingProcessIdCnt = %d\n`
+- `[ERROR] %s: %s: Failed getPeerARM call function\n`
+- `[ERROR] %s: %s: CSNE_CMD_LOAD_AFPP failed: 0x%x\n`
+- `%s: %s: CodeSigning check succeeeded!\n`
+- `[ERROR] %s: %s: Output resource not found in inferenceRequest for programHandle: 0x%llx, outputSymbolIndex: %u, symbol: %s, surfaceId: %u\n`
+- `[ERROR] %s: %s: WARNING: High number of pending requests (%u)\n`
+- `%s: %s: LiveParam: %s Procname_binding:%s Proc_name:%s ProcID:%d  Index:%d\n`
+- `[ERROR] %s: %s: Couldn't create memory descriptor\n`
+- `%s: %s: Waking up QueuePendingRequestsThread, numPendingRequestsToQueue: %u pendingCount:%u\n`
+- `%s: %s: ANE %u throttle percentage: %u%%\n`
+- `[ERROR] %s: %s: GetNextRotationTargetANE returned out-of-range index %u (numANEs: %u), skipping flip\n`
+- `ZinComputeGetProgramSections: invalid input parameters \n`
+- `%s: illegal operation with op_idx=%zu : incorrect thread 'flavor'`
+- `%s: %s: Procedure:%u has Mutable kernel Ops\n`
+- `%s: %s: disableIOFences_UsingSharedEventsInstead = %d\n`
+- `%s: %s: Switching out of Exclave mode\n`
+- `%s: %s: ClientDevice(%p): Stopping [Client: %s, PID: %d]\n`
+- `%s: %s: totalPagesNeedWired: %lld residentPages: %lld\n`
+- `%s: %s: \nPending Requests Details:\n`
+- `[ERROR] %s: %s: Passed collection doesn't contain resourceId: 0x%llx\n`
+- `%s: Unrecognized map operation type\n`
+- `%s: Random seed BAR index out of range`
+- `%s: %s: ERROR: mutable memory not dart mapped for mutableIndex: %d\n`
+- `%s: %s: powerOffIfNoPowerAssertions_gated: no power assertions held, forcing ANE power off\n`
+- `%s: %s: Terminating with 0x%08x downstream outstanding transactions (offset 0x%lx) \n`
+- `[ERROR] %s: %s: Can't enable IPCEP, ANE not power ready\n`
+- `%s: %s: Low-priority starvation threshold set to %u ms\n`
+- `%s: %s: procPath = %s, procPathDigest = %s\n`
+- `[ERROR] %s: %s: Failed to unwire process - 0x%llx result: 0x%x\n`
+- `%s: %s: Input BufferIndex=%d SurfaceID: %u Symbol=%s UsageType: %u\n`
+- `%s: %s: Core %u, holRatio %llu, normalizedHolRatio %llu, weightedNormalizedHolRatio %llu\n`
+- `[ERROR] %s: %s: Failed to get dictionary of IOServices`
+- `%s: %s: providerNameStr: %s fUseRTBuddy: %d`
+- `%s: %s: Requests to query %lld\n`
+- `[ERROR] %s: %s: Program buffer not page aligned\n`
+- `[ERROR] %s: %s: Failed to allocate wireRequest for intermediateBuffer programHandle: 0x%llx\n`
+- `%s %d: Could not get a backing VM space\n`
+- `[ERROR] %s: %s: Thread name nullptr\n`
+- `%s: %s: programHandle: 0x%llx, Model Identifier: length: %d, string: `
+- `%s: %s: Matched task=%p clientContext->fOwningTask=%p name=%s\n`
+- `%s: %s: Waking up QueuePendingRequestsThread, numPendingRequestsToQueue: %u\n`
+- `[ERROR] %s: %s: Could not get a pointer to the HW Device, setting result = kIOReturnNoDevice\n`
+- `%s: fail to find patch operation in procedure\n`
+- `[ERROR] %s: %s: patchMutableInstanceProcedure failed: 0x%x\n`
+- `[ANE][ERROR] %s : %s : %u : Slot: %d ; source = %d ; value = %d\n\n`
+- `%s: %s: Num Wait Events: %u\n`
+- `%s: %s: ANE Residency (first set index): %u\n`
+- `%s: %s: Enabling acc power rail (refcount 0 -> 1)\n`
+- `%s: %s: FW App image...\n`
+- `[ERROR] %s: %s: CSNE_CMD_DSID_SET Failed: 0x%x\n`
+- `[ERROR] %s: %s: ClientInterface(%p): Failed to create client device for process: %s (pid %d) \n`
+- `%s: %s: Failed to add statistics buffer resource to request!\n`
+- `%s: %s: Preference for core %u is %u, maxPreference %u, hints.aneMask = 0x%x, (1 << i) = 0x%x, anemask & (1 << i) = 0x%x\n`
+- `%s: %s: NOT Supported\n`
+- `[ERROR] %s: %s: buildFirmwareRTInferenceCallRequest failed for aneId:%u result=0x%x\n`
+- `[ERROR] %s: %s: Number of outputs passed (%d) does not match expected (%d) for procedure %s\n`
+- `%s: %s: Procedure execution statistics cleared successfully\n`
+- `%s: %s: Clearing low latency signaling for request uuid: 0x%llx, transactionId: 0x%llx\n`
+- `%s: %s: stream size :%llx\n`
+- `%s: %s: cacheHandle 0x%llx with non-frameID data type 0x%x valid bit:%d\n`
+- `[ERROR] %s: %s: aneVnodeAppendText: vfs_context_create failed\n`
+- `%s: %s: Ack %d error on command timestampFw=%lld command=%p\n`
+- `%s: %s: Output BufferIndex=%d SurfaceID: %u Symbol=%s\n`
+- `%s: invalid procid %d\n`
+- `%s: %s: Found local mutable buffer for mutableClusterIndex: %d\n`
+- `[ERROR] %s: %s: Failed to unprepare resource. ResourceID: 0x%llx\n`
+- `[ERROR] %s: %s: failed to allocate chaining inputs or output sets\n`
+- `%s: %s: CSNE_CMD_PROCEDURE_CALL_CACHE_REQUEST procedure id=%d bGroupRequest=0x%d cacheHandle=0x%llx\n`
+- `[ERROR] %s: %s: Invalid args. owningTask: %p entitlement: %p\n`
+- `%s: %s: Enabling Dynamic PowerGate Hysteresis Timer with timeout: %dms (computed max: %dms, default: %dms)\n`
+- `%s: %s: ClientDevice(%p): No cached mutable weights buffer for key %u\n`
+- `%s: %s: newUserClient attached\n`
+- `[ERROR] %s: %s: Could not find program for handle 0x%llx`
+- `%s: nullptr argument`
+- `[ERROR] %s: %s: Cannot find request for uuid: 0x%llx\n`
+- `[ERROR] %s: %s: Invalid cacheRequestType %u specified\n`
+- `[ERROR] %s: %s: Macho likely malformed: plane name spans out of client program\n`
+- `%s: %s: Skip waiting for response\n`
+- `%s: %s: ISP peer surface %4d: surface-id=0x%08X, size=0x%016llx, dartMapBase=0x%08X\n`
+- `[ERROR] %s: %s: Memory Mapping Error (%s) for programInstanceParams\n`
+- `[ERROR] %s: %s: programHandle: 0x%llx, Client Not found, dropping the memoryUnMap request\n`
+- `%s: %s: ANEScheduler exiting sleep - enqueueing async wake notification\n`
+- `%s: %s: Execution stats embedded in the macho :\n`
+- `[ERROR] %s: %s: Request has more shared events to wait on (%u), than supported by FW (%u)!\n`
+- `%s: %s: CSNE_CMD_PROCEDURE_CALL_CACHE_REQUEST success: cacheHandle: 0x%llx, programHandle: 0x%llx, transactionId: 0x%llx\n`
+- `%s: %s: Device(%p): Program Output Set Enqueue [Client: %s, PID: %d]\n`
+- `[DEBUG] %s: %s: sizeOfRawStatsBuffer:%lu`
+- `%s: %s: Stats Metadata surface(surface-id=0x%08X) doesn't exist\n`
+- `[ERROR] %s: %s: Not permitted to send request\n`
+- `%s: mutable kernel segment zero size`
+- `%s: %s: Updated execution stats for programHandle: 0x%llx, procedureId: %u, variant: %s, priority: %u, executionTime: %llu ns, newAverage: %llu ns, count: %u\n`
+- `%s: %s: Waiting for %u pending firmware requests to complete...\n`
+- `%s: %s: Kernel is non-mutable kernel section\n`
+- `%s: %s: Enabling Dynamic PowerGate Hysteresis Timer with throttling timeout: %dms (throttle=%d%%)\n`
+- `%s: %s: coredump: add region for text, data and initHeap\n`
+- `%s: %s: fDynamicPowerGatingCommandInProgress is in progress, waiting for it to clear before re-enabling power gating\n`
+- `[ERROR] %s: %s: ANE:%u detected a TM SYNC Error event!!\n`
+- `%s: %s: Device %u - incremented submitted requests count for priority %u to %u, executionTimeNs to %llu\n`
+- `%s: %s: Populating live param values for proc %d, sneop_idx: %d isLiveParamReloc=%d, IOIndex=%d, liveInParamIndex=%d liveInParamType=%d liveInParamStride=%lld\n`
+- `%s: %s: programHandle: 0x%llx, procedureID: %d\n`
+- `%s: %s: Num Patch Mutable Ops :%zu\n`
+- `%s: %s: Throttling: rejecting request (in inactive duty cycle window)\n`
+- `%s: Invalid operation schedule info in the procedure`
+- `[ERROR] %s: %s: Machos with built-in input data are not supported\n`
+- `%s: %s: ANE%d: : Output found, procedure:%s, meta data output:%s, bufferIndex:%d, output size:%d, fvmlib size:%llu\n`
+- `%s: %s: inferenceCallCommandProperty BarId:%u bufferIndex=%d type=%d size=%llu buffer=0x%llx\n`
+- `[ERROR] %s: %s: Invalid ioIndex %u\n`
+- `%s: %s: Is Last Op: %s\n`
+- `[ERROR] %s: %s: MTRCluster: workloop unavailable for slew rate setup\n`
+- `[ERROR] %s: %s: decrementPowerAssertionCounts: powerAssertionCountPerLevel[%u] already 0 for client %s\n`
+- `%s: %s: Could not create IOSurface for DeviceMemoryManager buffer\n`
+- `[ERROR] %s: %s: ClientDevice(%p): No cached mutable weights buffer for key %u\n`
+- `[ERROR] %s: %s: ANE_MemoryMapRequest_locked failed. result: 0x%x\n`
+- `[ERROR] %s: %s: CSNE_CMD_PROCEDURE_CALL_CACHE_REQUEST failed: 0x%x\n`
+- `%s: %s: chaining event 0x%llx startHw with output set 0x%x\n`
+- `%s: %s: chaining event 0x%llx InputTriggerOverflow with output set 0x%x\n`
+- `%s: %s: Remap ISP memeory surface: Shared memory region mapped at DART translated address:%p\n`
+- `%s: %s: Can't get vnode!\n`
+- `%s: %s: Unable to set session hint. ret = 0x%x\n`
+- `ZinComputeLookupBufferBySection: found procid %d for mutable kernel section\n`
+- `[ERROR] %s: %s: BACK_CHANNEL_RPC: message too small for %u declared rpc items: messageSize=0x%llx required=0x%llx\n`
+- `%s: %s: Model Identifier:`
+- `%s: %s: Cancelling unsent requests for programHandle=0x%llx\n`
+- `[ERROR] %s: %s: procedureCallCommandPtr is null\n`
+- `%s: %s: AXI2DTF (companion to ASC) is NOT idle retries=%d. ASCWRAP_IDLE_STATUS = 0x%x\n`
+- `%s: %s: fANEDynPowerGateHysteresisEnabled = %d\n`
+- `plane count overrun`
+- `%s: Could not allocate procedure graph root buffer`
+- `%s: %s: Release vnode iocount: %d usecount: %d machoFilePath=%s\n`
+- `%s: %s: numOfNonBlockingInput: %d \n`
+- `%s: %s: Cannot add IspIPCEP client\n`
+- `%s: %s: Disabling ANE SYS clock\n`
+- `%s: %s: ERROR Oops, we timed out waiting for the ANE to power up retries=%d\n`
+- `%s: %s: WARN: Thread: %s is already launched and not in stopped state. Ignoring this call\n`
+- `%s: %s: Dart page size program initi:%llu\n`
+- `[ERROR] %s: %s: procedureId (%u) exceed max allowed chaining procedures (%d)\n`
+- `[ERROR] %s: %s: Firmware reported %u chaining input buffers, clamping to %u\n`
+- `Invalid program - there must be at least one ANE operation`
+- `[ERROR] %s: %s: Invalid variant type (enumm %u)\n`
+- `[ERROR] %s: %s: ProcedureVariantInfo initialization failure!!\n`
+- `Assigning UC the privilege to share hints amongst a coalition fAllowProcessCoalitionClientHints=%d\n`
+- `%s: %s: ERROR: context ptr is NULL\n`
+- `%s: %s: Validate power on state for ANEVersion %#x fANEHWType %#x subType %d\n`
+- `%s: %s: fDartSharedMallocRegionSize: %llu\n`
+- `[ERROR] %s: %s: Timeout: %u ms (base=%u ms)\n`
+- `%s: %s: Core %u, global HoL per core %u,  global total HoL %u,  HoL pref %u\n`
+- `[ERROR] %s: %s: SIGNPOST64_NOTIFICATION: mapped memory exceeds surface boundary\n`
+- `%s: %s: Creating ClientResource for usageType: %u. PlaneCount: %u\n`
+- `%s: %s: Procedure family procId:%u has 2 (duplicate) single ANE variants\n`
+- `%s: %s: cacheHandle 0x%llx  chaining event input surfaceID: %d  frameID: 0x%llx, valid bit is: %d\n`
+- `[ERROR] %s: %s: Invalid Arguments: numWaitEvents: %u, MaxWaitEvents: %u, numSignalEvents: %u, MaxSignalEvents: %u\n`
+- `Out of range erroneous tdSize`
+- `[ERROR] %s: %s: aneVnodeTruncateFront: read failed err=%d resid=%lld\n`
+- `[ERROR] %s: %s: logMPMPowerState called with null tag\n`
+- `%s: %s: ANEScheduler enterShutdown complete — all paging refs released\n`
+- `%s: %s: procedure id: %d HasCompressedInput: %d, HasCompressedOutput: %d\n`
+- `%s: %s: Output info:%zu buffindex:%u\n`
+- `%s: %s: Removed Exclave client for ANEExclave\n`
+- `[ERROR] %s: %s: ANE_AddClientForProgram: rejected — shutdown in progress\n`
+- `[ERROR] %s: %s: Output IOSurface for surface-Id: %d is NULL\n`
+- `%s: Invalid operation info for index %d`
+- `[ERROR] %s: %s: enterShutdown: firmware requests still pending after forced power off (result=0x%x). Proceeding.\n`
+- `[ERROR] %s: %s: ANEChannel: Failed to allocate recursive lock\n`
+- `[ERROR] %s: %s: Couldn't pass first round of trust verification filePath (%s)\n`
+- `%s: %s: No Exclave clients present, continue powering off\n`
+- `%s: %s: Exclave work paused with %d retries, %d msg send attempts\n`
+- `%s: %s: Device(%p): Program Get Buffer Counts [Client: %s, PID: %d]\n`
+- `Cannot right shift by %lld`
+- `%s: %s: ERROR: Legacy mutable no longer supported`
+- `%s: %s: Moving chaining request 0x%llx to delayed cleanup\n`
+- `%s: %s: new FW size: 0x%x, newFwTextSize 0x%x newFwDataSize 0x%x current size: 0x%x\n`
+- `%s: %s: Not disabling dynamic power gating due to fDynamicPowerGatingActive:%d, fHWDevicePowerAssertions:%d fIsPowered:%d fDeInitInProgress:%d fInitInProgress:%d\n`
+- `[ERROR] %s: %s: Failed to start unwire thread\n`
+- `Error: initializing sne operation section`
+- `[ERROR] %s: %s: Failed to reach zero sleep assertions. result = 0x%x\n`
+- `[ERROR] %s: %s: Failed prepare() from wakeup result=0x%x resourceId=0x%llx\n`
+- `[ERROR] %s: %s: Number of output buffers exceeds max supported actual=%d, max=%d\n`
+- `[ERROR] %s: %s: Shared iPad - clientInDataVault: %d clientFilePath: %s\n`
+- `%s: %s: Releasing fDebugWorkProcessorInProgressRequests item that was never completed\n`
+- `%s: %s: preparePowerOff call failed\n`
+- `[ERROR] %s: %s: Force-close the ANE-ISP endpoint\n`
+- `[ERROR] %s: %s: MemoryMapRequest for %u buffers, result: %d\n`
+- `[ERROR] %s: %s: Process is null, cannot cancel requests\n`
+- `%s: Field %u cannot be deserialized to the current operation`
+- `%s: %s: Newly allocate intermediateResource id: 0x%llx\n`
+- `Failed to setup legacyProgramOutput pointers: 0x%x`
+- `%s: %s: Waiting for %zu commands to complete on the ANE...\n`
+- `%s: %s: Exclave busy (retry %u/%u)\n`
+- `%s: %s: SUSPEND skipped for system-initiated power transition, requesting power policy %s for state %d\n`
+- `[ERROR] %s: %s: pMcacheDataStream is null — MCC hardware does not support stream %d on this SoC\n`
+- `[ERROR] %s: %s: SIGNPOST_NOTIFICATION_GROUP: mapped memory exceeds surface boundary\n`
+- `%s: %s: MCachePrefetchInformation,bar_id_: %d,  mcachePrefetchSize: %llx, numDsid:%d \n`
+- `[ERROR] %s: %s: sCSneSegmentProperty allocation failed\n`
+- `[ERROR] %s: %s: cannot map a large kernel-allocated buffer again once unmapped before size: 0x%llx\n`
+- `%s: %s: res=0x%x\n`
+- `[ERROR] %s: %s: aneFirmwareCommandSend: fANECPUInitialized=false, command=0x%04X isPowerAgnosticCmd=%d\n`
+- `[ERROR] %s: %s: enqueueExclaveMemoryWiring: failed to allocate ANEExclaveMemoryWiringMsg\n`
+- `%s: Operation adjacency specifies unknown address %llu`
+- `[ERROR] %s: %s: memory descriptor for ClientResource is nullptr\n`
+- `%s: %s: HWDevicePowerOffTimerTimeOut_gated: timer was cancelled, skipping power off\n`
+- `%s: %s: Initializing IPC channels\n`
+- `%s: %s: Error: Unable to map memory descriptor for the AIC Registers\n`
+- `%s: %s: Thermal Slew Rate interval EDT entry has incorrect length: %u (expected 4)\n`
+- `[ERROR] %s: %s: Failed to enable stream %d for assigned size 0x%x: 0x%x\n`
+- `%s: %s: %s: transfer ownership of buffer to process (name:%s pid:%d) res=0x%x\n`
+- `%s: %s: ANE_MemoryPressureNotification_gated - pressureLevel=%d\n`
+- `ANE: params.programResource == nullptr\n`
+- `%s: %s: Not starting ane power off timer, fHWDevicePowerAssertions=%u\n`
+- `[ERROR] %s: %s: Failed to get ISP remap memory buffer memory descriptor\n`
+- `%s: %s: ClientDevice(%p): Cached mutable weights buffer with descriptor=%p and key=%u\n`
+- `%s: %s: Client %s has set an entitlement opt out of bonded mode. This request will be honored if there is no explicit user hint in the inference request to allow bonded mode\n`
+- `%s: %s: Registered devices:\n`
+- `Cannot left shift by %lld`
+- `%s: expression block is undefined`
+- `%s: %s: Data chaining matting model\n`
+- `%s: %s: Forcing firmware timeout path for clean reboot\n`
+- `%s: %s: Query duration: %llu\n`
+- `%s: %s: ISP will power up, self state: %x\n`
+- `%s: %s: Peer down, disable IPC EP\n`
+- `%s: invalid dsid_size_in_bits (0)`
+- `[ERROR] %s: %s: No memory to allocate procedureKernelSplitSections or numModeledPerfStats\n`
+- `%s: %s: ERROR: ProcID: %u op_idx: %zu StateIO: %s not found in procedure input\n`
+- `[ERROR] %s: %s: failed to build firmeare chaining request: 0x%x\n`
+- `%s: %s: Could not create IOSurface for DeviceMemoryManager buffer of size=%llu\n`
+- `%s: %s: Throttling: first workBegin in period at %lld\n`
+- `%s: %s: SelectBestANECore prio %u (validated: %u), numANEs %u\n`
+- `[INFO] %s: %s: Shared intermediateUnion used for F2F requests, allocate a new one\n`
+- `%s: %s: Debug Info Section Size:%u\n`
+- `[ERROR] %s: %s: aneVnodeAppendText: write failed for %s err=%d resid=%lld\n`
+- `[ERROR] %s: %s: Failed to create the endpoint for ANE driver EC for downcalls\n`
+- `%s: %s: no matching procedureCall requests with uuid (0x%llx)\n`
+- `%s: %s: ISP Client Mcache request failed: %x\n`
+- `[ERROR] %s: %s: Command: 0x%04X (%s)\n`
+- `%s: %s: Adding intermediate union resource\n`
+- `[ERROR] %s: %s: %s buffer surface id:%u for symbol:%s, plane:%u, smaller than expected! surfaceSize=%d expected=%d`
+- `%s: %s: Core %u, throttle %u%%, normalized %llu, weighted preference %u\n`
+- `[ERROR] %s: %s: Unable to create OutputSetEnqueue event\n`
+- `%s: %s: Base Channel State:\n`
+- `%s: %s: No wake signal from second rANE_SCRATCH7(0x%x) ANECPU\n`
+- `%s: %s: Could not create ANEErrorEvent\n`
+- `%s: %s: %s: hintType: %d res=0x%x\n`
+- `%s: %s: done program Create: 0x%x\n`
+- `%s: %s: Legacy input: %u symbol:%s, size:%u\n`
+- `%s : Unable to set client hint result = 0x%x\n`
+- `DEBUG: H11ANEIn: SegProperty[%d] : segmentId %d , numofTdInSeg: %d, firstTd: %d, offset %llu len %llu\n`
+- `[ERROR] %s: %s: Program unload command failed for programId: %u. error=0x%x\n`
+- `%s: %s: Output not found, procedure:%s, output:%s, bufferIndex:%d, fvmlib size:%llu, \n`
+- `[DEBUG] %s: %s: Event is missing dependencies:`
+- `%s: %s: coredump: add region for IPC SharedMemory\n`
+- `%s: %s: no clocks. returning \n`
+- `%s: illegal 'procedure_count' parameter = %zu`
+- `[ERROR] %s: %s: Back Channel RPC : Could not create ANEMessage to be sent to the scheduler\n`
+- `%s: %s: ClientDevice(%p): Program Inputs Ready [Client: %s, PID: %d]\n`
+- `%s: %s: Metadata surface mapping exist\n`
+- `GetMutableKernelSectionForProcedure failed for procedure %d`
+- `%s: %s: ANEScheduler shutdownInProgress — aborting waitForSleepInProgressToClear\n`
+- `[ERROR] %s: %s: DART verdict: faulting DVA is 0 - descriptor was never programmed (NULL bar / uninitialised slot)\n`
+- `%s: %s: WARN: neither sync nor async configuration correctly setup\n`
+- `[ERROR] %s: %s: data chaining is still active for process %u\n`
+- `[ERROR] %s: %s: Could not get a matching provider, exiting\n`
+- `%s: %s: Stream ID: %d`
+- `[ERROR] %s: %s: Failed to allocate stats memory surface\n`
+- `%s: %s: ANEI:%u Intm buffer ane0:%llx ane1:%llx size:%llu offset:%llu\n`
+- `%s: %s: Breaking out of retry loop due to fANECPUInitialized(%d) fIsPowered(%d) _numPowerUps(%lld)\n`
+- `%s: %s: ANE Memory allocation request for size: %llu, usageHint: %d\n`
+- `[ERROR] %s: %s: Unsupported power state %d for ARG mode\n`
+- `ANE%d: %s :ANEHWDevice::ANE_startDaemon_gated, start aned daemon\n`
+- `[ERROR] %s: %s: ProcFail: programId: %d processId: %d uuid: 0x%llx procedureid: %d programEvent: %d\n`
+- `[ERROR] %s: %s: Failed to get client context iterator\n`
+- `%s: %s: Could not create maintenance workloop\n`
+- `[ERROR] %s: %s: Scheduler maintenance timer enabled: %d\n`
+- `%s: %s: Could not create ANE driver work-loop\n`
+- `DEBUG: %s :_signature=%#x param1=%p param2=%p param3=%p\n`
+- `%s: %s: ClientDevice(%p): Program Create Instance [Client: %s, PID: %d]\n`
+- `[ERROR] %s: %s: GetNextRotationTargetANE: residencyMask is empty, defaulting to ANE 0\n`
+- `DEBUG: H11ANEIn:procedure[%d] contentOffset=%llu type %d opIdx=%d seg_num=%d\n`
+- `%s: Buffer data sum=%d\n`
+- `%s: Failed to parsed loop_node->update_`
+- `%s: Found joined adjacencies on non-operation node`
+- `ZinComputeProgramGetInitSection: invalid section`
+- `ZinComputeProgramRTGetRuntimePatchMutableKernelOperationDescriptionCount failed in ZinComputeProgramRTProcedureIsMutableSectionOwner with %d`
+- `[ERROR] %s: %s: Failed to copy %s split section for programHandle: 0x%llx procId: %u\n`
+- `%s: %s: Timed out waiting for exclave mode switch (retry %u)\n`
+- `[ERROR] %s: %s: ANE%d: rtbuddyEndpointSendInPlace: fANECPUInitialized=false, endpointId=%u\n`
+- `%s: Operation graph does not contain a root`
+- `[ERROR] %s: %s: ANESchedulerStatsWriter: failed to allocate instance\n`
+- `%s: %s: ANEScheduler processing wake notification asynchronously\n`
+- `[ERROR] %s: %s: Macho call ZinComputeProgramGetMutableProcedureInfo failed with error code: 0x%x\n`
+- `[ERROR] %s: %s: IO Collection in request is nullptr\n`
+- `[ERROR] %s: %s: second directRead failed\n`
+- `%s: %s: ANE being force shutdown by IOKit PM when there are active sleep assertions\n`
+- `[ERROR] %s: %s: clearing stale fClientPowerDownInProgress, no power-down was dispatched. fIsPowered: %d fHWDevicePowerAssertions: %d\n`
+- `[ERROR] %s: %s: program not found for base programHandle: 0x%llx, baseModelIdentifier: %s\n`
+- `%s: %s: CSNE_CMD_SUSPEND command completed: res=0x%08X\n`
+- `Incorrect parameter`
+- `[ERROR] %s: %s: Usage Type: %u cannot be multi-planar. PlaneCount: %u\n`
+- `%s: %s: programResource processCount = %ld\n`
+- `[ERROR] %s: %s: Additional memory size calculation overflowed!`
+- `%s: %s: isMutableKernelZeroInitialized is not set, copy baseMutableBuffer\n`
+- `[ERROR] %s: %s: === FIRMWARE TIMEOUT INFO ===\n`
+- `%s: %s: Processing memory wiring request on thread tid: %llu, contextCount: %zu\n`
+- `[ERROR] %s: %s: IOMemoryDescriptor::withPhysicalAddress for regParams failed \n`
+- `[ERROR] %s: %s: ANEHWDevice does not have ANEClientDeviceCore initialized\n`
+- `[ERROR] %s: %s: Too many coalesced output surfaces for procedure %u buffer %u, max: %u\n`
+- `%s: Illegal Segment address: seg_addr=%llu  section addr=%llu `
+- `[ERROR] %s: %s: ANEGroupResource: resource is nullptr\n`
+- `%s: %s: ANE throttled (max=%d%%), recommending SINGLE\n`
+- `%s: %s: programResource->machoFilePath=%s pathFromClient=%s\n`
+- `[ERROR] %s: %s: Client not Authorized to open device to use program - codeSigningCheckPassed=%d\n`
+- `[ERROR] %s: %s: Failed when processing output buffer mapping info\n`
+- `[ERROR] %s: %s: Could not create raw stats buffer result=0x%x\n`
+- `[INFO] %s: %s: Endpoint for ANE firmware EC initialized\n`
+- `%s: %s: H11ANEInUserClient(%p): External Method Call with selector %u result %u [Client: %s, PID: %d]\n`
+- `[ERROR] %s: %s: ERROR:  - asyncWakePort is NULL\n`
+- `%s: %s: kIOMessageSystemPagingOff: system shutdown in progress.\n`
+- `%s: illegal kernel_segment parameter = nullptr`
+- `%s: Unable to allocate the init info structure`
+- `%s: null argument`
+- `[ERROR] %s: %s: Owning Procedure not found for procID:%u\n`
+- `[ERROR] %s: %s: removePowerAssertion: hwDeviceClient %p not found\n`
+- `%s: %s: Timed out waiting for the dartErrorHandler to complete\n`
+- `[ERROR] %s: %s: Failed to create ANEHWDeviceTimeoutMsg\n`
+- `%s: %s: getPeerARM call function\n`
+- `%s: %s: WARN: client %p is being cleaned up - skip adding program to client (%s) programHandle: 0x%llx`
+- `%s: %s: Using Bonded NID:%u\n`
+- `%s: %s: Alloc found (cached), aneId %u offset =%llu\n`
+- `%s: %s: ANEChannel: Stopped\n`
+- `[ERROR] %s: %s: fAneIspIPCEP is NULL\n`
+- `[ERROR] %s: %s: Timed out waiting for sleepInProgress to clear. result = 0x%x\n`
+- `%s: Invalid weight buffer size `
+- `%s: %s: ZinComputeProgramSupportsSplitMutableKernelSection bIsClusterKernelMutable: %d\n`
+- `%s: %s: Segment Info dva=%llx size=%u offset=%u tdId=%u segmentId=%u tdrewind:%u\n`
+- `[ERROR] %s: %s: %s:%u func:%s  failed with status: 0x%x\n`
+- `%s: %s: Already mapped with different options. To use new options, please unmap() first and then map with new options.\n`
+- `[ERROR] %s: %s: resource is nullptr\n`
+- `%s: %s: fNumANEs: %d fSharedEventTableLimit: %d\n`
+- `%s: %s: Cleanup started\n`
+- `%s: %s: enqueueExclaveMemoryWiring: sleeping on gate, tid: %llu, contextCount: %zu\n`
+- `%s: %s:   [%d] = 0x%x`
+- `%s: %s: outputBufferSymbolIndex[%d] = 0x%x outputBufferSurfaceId[%d]=%d\n`
+- `[ERROR] %s: %s: debugANE selection (debugANE=%u) requires program to have single-ANE variant, but procedure %u only has bonded variant\n`
+- `%s: %s: ERROR: ProcID: %u op_idx: %zu LiveInParam: %s not found in procedure input\n`
+- `%s: %s: acquiredAllFences: %d\n`
+- `[ERROR] %s: %s: power_off_hardware_gated failed: 0x%x\n`
+- `[ERROR] %s: %s: Failed to start SECURE mode for Exclave client: res=0x%08X\n`
+- `[ERROR] %s: %s: ClientDeviceCore init failed. result: 0x%x\n`
+- `ANE: %s %s filesize: %llu fileoffset: %llu\n`
+- `%s: %s: Registered split text section: fileOffset=0x%llx size=0x%llx (total=%zu)\n`
+- `%s: %s: Error: Too many IPC channels\n`
+- `%s: %s: ANE Memory allocation request for size: %llu, usage:'%c%c%c%c'\n`
+- `%s: %s: Computed max mcache size across all clients for stream %d: 0x%x\n`
+- `[ERROR] %s: %s: Number of weightsBuffers (%u) in procedure: %s is either 0 or exceeds max (%u) supported\n`
+- `Error: invalid device id given`
+- `%s %d: Freeing allocations\n`
+- `%s: %s: %d sec sleep timed out waiting for ANE %u intermediate buffer to become available\n`
+- `%s: %s: mobileAsset DataVault verification succeeded\n`
+- `[ERROR] %s: %s: firmware sends the invalid event code: %d\n`
+- `%s: %s: Exclave interrupt was disabled during firmware recovery\n`
+- `%s: %s: PersistentClient upcall ack delivery failed!\n`
+- `%s: %s: Device(%p): Session Hint [Client: %s, PID: %d]\n`
+- `[ERROR] %s: %s: WARNING: High number of blocked requests (%zu)\n`
+- `%s: illegal symbol parameters: symbols=%p symbol_count=%zu`
+- `%s: %s: ANEChannel: Auto-resumed due to submission limit set to %u\n`
+- `[ERROR] %s: %s: Number of wait shared events: %u hits the FW limit: %u\n`
+- `%s: %s: forcePowerOff_gated: ANE already powered off\n`
+- `%s: %s: Couldn't add SYS power gating timer event source to work loop.\n`
+- `%s: ZinComputeInitGenericSection failed with %d`
+- `[ERROR] %s: %s: no firmware chaining\n`
+- `%s: %s: Unregister work processor\n`
+- `%s: %s: NeRD/Recovery OS environment, ANE not needed, exit\n`
+- `[ERROR] %s: %s: IOMemoryDescriptor::prepare() failed: 0x%x\n`
+- `[ERROR] %s: %s: ClientInterface(%p): Failed to initialize client interface for process: %s (pid %d) \n`
+- `[ERROR] %s: %s: Not enough bar info in firmware struct, numofRelocations: %u numCircularBuffer: %u numLiveInParam: %u numKernelSplitSections: %u\n`
+- `got kANEHintClientSessionAbort!! %s`
+- `%s: %s: rtbuddyEndpointSendMessage endpointId:%d bufferVirtual: 0x%llx offset: 0x%x, size: 0x%llx\n`
+- `%s: %s: Successfully allocated surface. surface-id=0x%x, size=0x%llx, dartMapBase=0x%llx\n`
+- `%s: %s: Awakened while waiting for pending requests to complete on the ANE. result=%d\n`
+- `[ERROR] %s: %s: procedure %u already has chaining request\n`
+- `%s: %s: ERROR: Kernel split [%u] section pointer is NULL\n`
+- `%s: %s: programHandle = 0x%llx\n`
+- `[ERROR] %s: %s: No space in FW command pool, retry later\n`
+- `%s: %s: fHWDevicePowerAssertions=0, enabling ane power off timer\n`
+- `%s: %s: Incremented global pending req %u, per ane %u: %u, mapping pending req %u, per ane %u: %u\n`
+- `%s: Either the procedure %p or info %p is a nullptr`
+- `%s: '%s' section data has size %llu, which is not a multiple of %zu`
+- `%s: %s: Leaving recoverable request uuid: 0x%llx on ANE%d - re-dispatched after power on\n`
+- `%s: %s: binding info for procedure %s, output: %u symbol:%s, data symbol:%s, type:%u\n`
+- `%s: %s: Found mutableClusterIndex %d but files don't match, continuing search...\n`
+- `[ERROR] %s: %s: ANECommandChannel: %s failed with result 0x%x\n`
+- `[ERROR] %s: %s: Failed to send cmd opcode=0x%04X to SNE. res: 0x%x, commandANEAddress: 0x%llx\n`
+- `%s: %s: About to register service\n`
+- `[ERROR] %s: %s: Memory Mapping Error (%s) for programCreateArgsOutput\n`
+- `[ERROR] %s: %s: ANEScheduler init failed - no scheduler will be available\n`
+- `%s: %s: Mapped Split kernelSectionBuffer for procid:%u addr=%llx count=%u\n`
+- `%s: %s: WARN: Resource already exists in unwire queue. addResource failed for aneResourceId: 0x%llx\n`
+- `[ERROR] %s: %s: vnode from mapped address check failed, vp: %p vnodeAddress: 0x%lx\n`
+- `%s: %s: Starting ISP client mcache release handling\n`
+- `%s: %s: Exclave quiesced successfully\n`
+- `[ERROR] %s: %s: Number of procedures (%u) is either 0 or exceeds max (%u) supported\n`
+- `[ERROR] %s: %s: Wake notification callback: Message: %p refCon: %p nullptr\n`
+- `%s: %s: Mutable Op Alloc %u allocMapId:%u aneId %u deviceId %u Mutable buff size = %llu %llu\n`
+- `[ERROR] %s: %s: aneVnodeAppendText: aneVnodeGetFileSize failed, result=0x%x\n`
+- `%s: %s: data chaining program 0x%llx cache handle 0x%llx group handle 0x%llx intermediate handle 0x%llx\n`
+- `[ERROR] %s: %s: EnableCPUClocksAndPower failed. result = 0x%x\n`
+- `%s: %s: CPU Load Score updated: %u -> %u (delta since last update: %u ms)\n`
+- `ANE%d:%s :ANEHWDevice::doorBellRing %d - We don't support more than %d doorbells currently\n`
+- `%s: %s: Received %u messages on channel %s after Suspend is completed`
+- `%s: %s: Setting power state to %d\n`
+- `%s: %s: Firmware Boot-Args:\n`
+- `%s: %s: Powering off... fFirmwareIsSuspended=%d\n`
+- `%s: %s: EndFWRecoveryProcess call completed, status from Exclave %d\n`
+- `%s: %s: ANEScheduler sleep assertions reached zero - waking up sleeping threads\n`
+- `[ERROR] %s: %s: Procedure symbol name is null!\n`
+- `[ERROR] %s: %s: We don't support non-Symbolic mutable kernels\n`
+- `%s: %s: eventType: %d, symbolIndex: %x, request.property: 0x%x request.numSignalEvents: %d\n`
+- `[ERROR] %s: %s: RTGRAPH ERROR: RTGraph handle set but process is NULL\n`
+- `%s: %s: Perf Request: %s\n`
+- `%s: %s: Subblocks Successfully powered up \n`
+- `%s: %s: QueryResult returned %d\n`
+- `%s: %s: ERROR: failed to wire machoDirectIOBuffer\n`
+- `%s: %s: ANEChannel: Enqueued message UUID 0x%llx, queue size: %zu\n`
+- `%s: %s: ANE%u: FW shared event signaling disabled, cleared FW-FW signaling for programHandle: 0x%llx transactionId: 0x%llx\n`
+- `%s: %s: Sleep in progress, skipping maintenance timer work\n`
+- `%s: %s: Successfully remapped ISP surface. surface-id:0x%x, surface address:%p, size:0x%llx, dartMapBase:%p\n`
+- `%s: %s: Couldn't create throttle timer event source.\n`
+- `%s: %s: Couldn't create the thermal PTD timer event source.\n`
+- `[ERROR] %s: %s: ClientInterface(%p): Failed to create device wrapper for process: %s (pid %d) \n`
+- `%s: Fetching mutable kernel section for procid %d\n`
+- `%s: %s: Src Proc[%u] name %s numInputs:%u numOutputs %u\n`
+- `%s: %s: set mcache dsid for type:%u dsid:%u aneId:%u\n`
+- `[ERROR] %s: %s: Failed to allocate shared memory request message\n`
+- `[ERROR] %s: %s: Shared memory free message too small: offset:0x%llx, size:0x%llx\n`
+- `[ERROR] %s: %s: Failed to enable RTBuddy endpoint failed %d\n`
+- `%s: %s: RESET_NOTIFICATION\n`
+- `%s: %s: Failed result=0x%x`
+- `[ERROR] %s: %s: waitForUnwireThreadToDrain: timed out (inactive: %s, unwire queue: %u)\n`
+- `[ERROR] %s: %s: aneResource is nullptr in performProtectionChecks\n`
+- `%s: %s: forcePowerOff_gated: powering off with fHWDevicePowerAssertions=%d still held\n`
+- `%s: %s: Kernel VA reservation of 0x%llx failed (kr: %d), retrying with half\n`
+- `%s: operation description vm_addr already exisits!`
+- `%s: %s: DEBUG: nbrIOBuffers: %u\n`
+- `%s: %s: mutableProgramInitInfo is invalid\n`
+- `[ERROR] %s: %s: CSNE_CMD_PROCEDURE_CALL_TRIGGER_CACHE_REQUEST Failed\n`
+- `[ERROR] %s: %s: Unable to create SetActiveProcedure event\n`
+- `%s: %s: Enabling Thermal Slew Rate monitoring for cluster %d`
+- `%s: %s: enableDeviceClock took = %lld uS\n`
+- `[ERROR] %s: %s: ANE%d: IOProcessorChannelSendWithLog: fANECPUInitialized=false, channelIdx=%u\n`
+- `%s: %s: numDebugLogEvents(%llu) and numLogEvents(%llu) for the program. Stats Buffer Size: %u\n`
+- `%s: %s: params.usageType >= kANEResourceUsageTypeMaxNumTypes\n`
+- `%s: %s: programId: %u, processId: %u, iopDMACommand: %p, dva: 0x%llx pVisibleMemory %p\n`
+- `%s: %s: rANE_SCRATCH7 = 0x%x\n`
+- `%s: %s: INFO: ANE SharedMallocRequest took %llu us for offset: %p, size: 0x%llx\n`
+- `%s: %s: ERROR: Failed to start MemoryPressureMonitorThread\n`
+- `%s: %s:   Request %u:\n`
+- `Error: thread argument buffer overrun.`
+- `[ERROR] %s: %s: Process unload command failed for programId:%u processId: %u. error=0x%x\n`
+- `%s: %s: Updated intermediate buffer dva: from 0x%llx to 0x%llx\n`
+- `%s: %s: SIGNPOST64_NOTIFICATION_GROUP #NOTIFICATIONs: %d\n`
+- `[ERROR] %s: %s: failed, segment is NULL!`
+- `%s: %s: Throttle adjustment: old=%d%% new=%d%% busyTime=%llums oldAllowed=%llums newAllowedMs=%llums\n`
+- `[ERROR] %s: %s: Could not process shared memory request for endpoint: %ld offset:0x%llx, size:0x%llx, result:0x%x\n`
+- `%s: %s: setAllocator returned %x\n`
+- `[ERROR] %s: %s: ANEGroupResource: collection add fails\n`
+- `%s: %s: AOT compilation mode\n`
+- `[ERROR] %s: %s: ZinComputeProgramHasMultiPlaneInputProcedure failed with error code: 0x%x\n`
+- `[ERROR] %s: %s: buildFirmwareWaitEvents() failed. result=0x%x\n`
+- `%s: %s: ERROR: model verification failed\n`
+- `%s: %s: Firmware recovery completed... deferring ANEExclave notification until next power-on\n`
+- `%s: %s: Failed to allocate buffer for SECURE mode transition ACK\n`
+- `%s: %s: Failed to send deferred EXCLAVE_MODE_STOP, (fFirmwareTimeout=%d)\n`
+- `%s: %s: input: %u, inputIndexGbl: %u, circularBufferIndex: %u\n`
+- `[ERROR] %s: %s: Client not found for mcache release\n`
+- `%s: %s: procedure id: %d HasCircularInput: %d, HasCircularOutput: %d\n`
+- `[ERROR] %s: %s: Macho Parsing Failed!\n`
+- `%s: %s: Found bonded at idx:%zu DVA:%llx Offset:%llu Size:%llu\n`
+- `%s: %s: getCurrentPeriodThrottleValues: durationAtCurrent=%lluns, finalWeightedSum=%llu, avgThrottle=%llu%%\n`
+- `%s: %s: Already off\n`
+- `%s: %s: fNonPersistentSharedMemorySurfaces: %d\n`
+- `[ERROR] %s: %s: Endpoint[%ld] surfaceParams not initialized, ignoring message`
+- `[DEBUG] %s: %s: ClientInterface(%p): Exiting '%u' state with event '%u' [Unknown Client]\n`
+- `[ERROR] %s: %s: Failed to start thread: %s. kern_ret: %d\n`
+- `%s: %s: Binding Info For Circular Buffer buffer size: %u, wrap_axis: %d, sowi_bar_id: %u, data_size: %u\n`
+- `%s: %s: IOBind Bar Info (ANE1) Usage:%u idx:%u deviceId:%u offset:%llu size:%llu\n`
+- `[ERROR] %s: %s: takePowerAssertionPrivate: invalid powerLevel %u\n`
+- `%s: %s: Device ctrr-unlocked is not set, fEnableFwReload = false\n`
+- `[ERROR] %s: %s: Failed allocate a new intermediateUnion result=0x%x\n`
+- `%s: %s: Request UUID: 0x%llx still has residency on other devices (value: 0x%x)\n`
+- `%s: %s: ProcStart - programId: %d processId: %d uuid: 0x%llx procedureid: %d eventid: %d transactionId: 0X%llx\n`
+- `%s: %s: IObind %zu name:%s resource type:%u inputId:%u outputId:%u size:%llu \n`
+- `[ERROR] %s: %s: No valid procedure variant found for procID:%u`
+- `%s: %s: numCachedResources: %u\n`
+- `%s: %s: CPU already powered up\n`
+- `%s: %s: ERROR: Processing message count (%u) exceeds submission limit (%u)\n`
+- `[ERROR] %s: %s: Channel descriptor %u interrupt source (%u) exceeds max supported (%u)\n`
+- `[ERROR] %s: %s: Timeout detected for opcode=0x%04X, calling HandleFirmwareTimeout_gated()\n`
+- `[ERROR] %s: %s: Invalid ITQ register offset\n`
+- `%s: %s: cmdWithCustomBars for procedureID: %d: config: %d, type: %d, barId: %d. fieldBitOffset: %d, fieldSizeInBits:%d, value: 0x%llx\n`
+- `[ERROR] %s: %s: ANEUnionResource: collection add fails\n`
+- `[ERROR] %s: %s: Failed to query execution time for bonded variant from local database, falling back to stats embedded in the mach-o\n`
+- `[ERROR] %s: %s: DART verdict: USE-AFTER-FREE - DVA 0x%llx lies inside an allocation unmapped at %llu us [base: 0x%llx size: 0x%llx offset: 0x%llx programId: %u processId: %u usageType: %u unmapTimestampFW: %llu]\n`
+- `%s: %s: Freed non-persistent shared surface. surface-id=0x%08X, size=0x%016llx, dartMapBase=0x%016llx usage='%c%c%c%c'\n`
+- `%s: %s: Couldn't register ANEHWDevice as AppleARMFunction parent\n`
+- `%s: %s: Powering on hardware\n`
+- `%s: expression block can't be data dependency root`
+- `%s: %s: Request completed by ANE:%u. Requires other ANE to complete for this Bonded request %u %u\n`
+- `%s: %s: creating IOFence[%d] surfaceId: %u fenceDirection: %d done: %d depUuid: 0x%llx depType: %u\n`
+- `[ERROR] %s: %s: failed to send chaining command: 0x%x\n`
+- `[ERROR] %s: %s: DART verdict: NOT recently unmapped - DVA 0x%llx is in none of the %u tracked unmapped allocations (highest unmapped end: 0x%llx). Suspect a wild descriptor / out-of-range bar offset rather than a teardown race\n`
+- `%s: %s: PAUSE event: Exclave mode not active (fANEExclaveSwitchPending=%d)\n`
+- `[ERROR] %s: %s: Could not create programResource. result: 0x%x\n`
+- `%s: %s: Couldn't create the scheduler maintenance timer event source.\n`
+- `[ERROR] %s: %s: Received id of unregistered device! Index: %u\n`
+- `DEBUG: H11ANEIn:generic->totalBufferNbr = %d CalculatedSize=%ld\n`
+- `[ERROR] %s: %s: ANEGroupResource: resourceCollection is empty\n`
+- `[ERROR] %s: %s: Bar Cache is not available procId:%u procVariant:%u\n`
+- `ANEHWDevice::ANECPU ANE%d: %s`
+- `%s: %s: No wake signal from rANE_SCRATCH3(0x%x) ANECPU\n`
+- `[ERROR] %s: %s: rtbuddyEndpointSendMessage: message too large size=%llu bufferSize=%zu endpointId=%u\n`
+- `%s: %s: Exclave work already paused, skipping\n`
+- `%s: %s: ANE%d:%s - receving FD networks surfaceID: 0x%x and update flag:%d\n`
+- `[ERROR] %s: %s: Unsupported programEvent: %u\n`
+- `ZinComputeProgramGetInitSection: error! section addr < segment addr`
+- `%s: Procedure adjacency type field has wrong field number`
+- `%s: %s: CSNE_CMD_PRINT_ENABLE command failed: res=0x%08X\n`
+- `%s: %s: %d fFirmwareIsSuspended=%d\n`
+- `%s: %s: Retry Exclave mode switch\n`
+- `%s: %s: Counters:%d value[%d]=0x%llx\n`
+- `[ERROR] %s: %s: coalescedResources is nullptr\n`
+- `[ERROR] %s: %s: aneClientResource allocation or caching failed\n`
+- `%s: %s: update kernel dva from 0x%llx to 0x%llx\n`
+- `[ERROR] %s: %s: Invalid ProcId :%u Or Variant ID:%u\n`
+- `%s: %s: Couldn't add Exclave Upcall IOIES to WorkLoop\n`
+- `%s: %s: Exclave mode switch cleared (client removed during SEP). State = %d\n`
+- `%s: %s: SIGNPOST64_NOTIFICATION_GROUP buffer size %d exceeds max\n`
+- `%s: %s: ANEScheduler shutdownInProgress — returning from waitForSleepInProgressToClear early\n`
+- `[ERROR] %s: %s: Failed to size process procedure%sSplitSections for programHandle: 0x%llx\n`
+- `%s: %s: IOBind Bar Info Usage:%u idx:%u deviceId:%u offset:%llu size:%llu\n`
+- `%s: %s: Buffer Bar Info Usage:%u idx:%u deviceId:%u offset:%llu size:%llu\n`
+- `[ERROR] %s: %s: No valid procedure variant info for procId %llu (single and bonded both absent)\n`
+- `%s: %s: Started pulse timer for %llums (remaining in inactive window)\n`
+- `%s: %s: Waking from hibernate, clearing cached performance counters (ActiveAction)\n`
+- `[ERROR] %s: %s: Break out and wait on numPendingRequestsToQueue again\n`
+- `%s: %s: Input info:%zu isbonded:%u iscompresed:%u buffindex:%u metaidx:%u\n`
+- `%s: %s: ANEUnionResource: memory was purged before wire\n`
+- `%s: %s: ANEChannel: Purging submitted message UUID 0x%llx\n`
+- `%s: %s: Freed Patched Mutable WeightInfo\n`
+- `[ERROR] %s: %s: ANEChainingSetActiveProcedureParams is NULL\n`
+- `%s: %s: numSlowPathOutstandingCmds: %u\n`
+- `%s: %s: Creating newUserClient type=%u\n`
+- `[ERROR] %s: %s: Statsbuffer IOSurface lookup failed. SurfaceID: %u\n`
+- `%s: ZinComputeInitSneTdPropertySection failed with st=%d`
+- `%s: %s: release dsid for stream type:%u dsid:%u aneId:%u\n`
+- `%s: %s: Firmware per process queue limit(%d) hit on deviceId %u, programHandle: 0x%llx\n`
+- `[ERROR] %s: %s: filePath is NULL or empty\n`
+- `[ERROR] %s: %s: Failed to send command due to tightbeam error: %d\n`
+- `ANEDriverDebugClient: %s : %s (%p) pid: %d\n`
+- `[ERROR] %s: %s: Failed to wait for pending commands. %zu still outstanding.\n`
+- `[ERROR] %s: %s: Failed to initialize CPU Load Throttler: 0x%x\n`
+- `[ERROR] %s: %s: ANE_ExclaveMemoryWiring: provideXnuContentFileSize failed (ret=0x%x ok=%d) for refId=0x%llx\n`
+- `%s: Block node type is not the same from header`
+- `%s: %s: WARN: Procedure: %u ZinComputeProgramSupportsSummaryPerformanceStats() error %d\n`
+- `%s: %s: buf%d: surfaceID: 0x%x, outsetid:%d, ioBufferType: %d \n`
+- `%s: %s: EP has already been disbaled\n`
+- `[ERROR] %s: %s: RESET_NOTIFICATION: mapped memory exceeds surface boundary\n`
+- `%s: %s: ANECPU in WFI after CSNE_CMD_SUSPEND/CISP_CMD_POWER_DOWN. retries=%d ASCWRAP_IDLE_STATUS = 0x%x\n`
+- `%s: %s: MaxMachoSizeKB override: fANEMaxMachoSize set to 0x%llx\n`
+- `[ERROR] %s: %s: Total number of inputs (%d) + outputs (%d) + weights (%d) is larger than kANEMaxBuffers (%d)`
+- `%s: %s: numPendingRequestsToQueue: %u\n`
+- `DEBUG:H11ANEIn: barSetup[%d] barIndex=%d bufferIndex=%d \n`
+- `%s: %s: ANEScheduler waiting for sleepInProgress to clear (sleepInProgress: %d)\n`
+- `%s: %s: Omitted intermediate buffer allocation (programHandle:0x%llx)\n`
+- `[ERROR] %s: %s: Program Unwire invoked while its wireCount is 0, which is unexpected\n`
+- `%s: %s: Cancelled pulse timer (transitioned back to active)\n`
+- `%s: %s: ERROR: Hardware device is NULL!\n`
+- `%s: %s: Device(%p): Program Destroy [Client: %s, PID: %d]\n`
+- `%s: %s: ERROR: Process not found. Program handle: 0x%llx\n`
+- `[ERROR] %s: %s: Failed when processing input buffers\n`
+- `%s: %s: No existing mutable buffer found, proceeding to patch for mutableClusterIndex: %d\n`
+- `%s: %s: Executing macho with dram log events only. Note that execution might fail with timeout due to absence of normal log events.\n`
+- `%s: %s:   ... and %u more wait events\n`
+- `[INFO] %s: %s: Destroyed AneEngineInterrupt endpoint\n`
+- `%s: %s: Dropping client logging buffer message!`
+- `[ERROR] %s: %s: Address translation invalid\n`
+- `[ERROR] %s: %s: Unknown command pipe handle: %u\n`
+- `[ERROR] %s: %s: ERROR: memoryMapParams pointer is NULL\n`
+- `%s: %s: Dark Wake\n`
+- `%s %d: atOffset is 0 and iodc is NULL\n`
+- `%s: %s: Terminating with 0x%08x outstanding transactions (offset 0x%lx) \n`
+- `[ERROR] %s: %s: processDebugEvent failed. result: 0x%x\n`
+- `%s: ZinComputeInitSneProgramProcedureBuf failed with code %d`
+- `[ERROR] %s: %s: Failed to allocate programOutput\n`
+- `[ERROR] %s: %s: Failed to wire aneResourceID: 0x%llx\n`
+- `%s: %s: ANEChannel: Initialized with submission limit %u\n`
+- `%s: %s: ANEChannel: channel is full. Stop processing and wait for FW to ack the pending commands\n`
+- `shared coalition entitlement is present for this client allowProcessCoalitionClientHints=%d\n`
+- `[ERROR] %s: %s: Shared memory message too small for command header: offset:0x%llx, size:0x%llx\n`
+- `%s: %s: SUSPEND sent, requesting power policy %s for state %d\n`
+- `%s: %s: Could not create IOSurface for ANECPU firmware buffer\n`
+- `%s: %s: DSID Pool Size: %d`
+- `%s: %s: ERROR: Procedure: %u Kernel split: %u section not found in program kernel split list\n`
+- `%s: %s: Freed low latency cache slot for request uuid: 0x%llx, transactionId: 0x%llx\n`
+- `[ERROR] %s: %s: Program signature check failed! \n`
+- `[ERROR] %s: %s: removePowerAssertion level mismatch: client %s requested level %u but count is 0 (powerAssertionCount=%u)\n`
+- `[ERROR] %s: %s: ANECommandChannelMessage: Cannot create message with null hardware device\n`
+- `%s: %s: %d\n`
+- `%s: %s: client: %s, isClosed: %d\n`
+- `[ERROR] %s: %s: unwire request submission failed. result: 0x%x\n`
+- `[ERROR] %s: %s: Failed to dartMap request. result: 0x%x\n`
+- `[ERROR] %s: %s: procID(%u) exceeds max\n`
+- `%s: %s: ERROR: CSNE_CMD_ANE_DEFAULT_SETTING_SET allocation failed\n`
+- `[ERROR] %s: %s: Failed to start IOService, exiting`
+- `%s: %s: Aborting driver load due to ANE Hint: %d\n`
+- `[ERROR] %s: %s: could not find client associated with program 0x%llx`
+- `ZinComputeGetProgramSections: invalid section \n`
+- `%s: overflow uint32_t td_addr(0x%llx) - section_addr(0x%llx)`
+- `%s: %s: Device %u - reset submitted requests count for priority %u to 0\n`
+- `%s: %s: MCachePrefetchInformation dsid size:0x%x, dsid offset:0x%x, totProcedures:%d, programOutput:%p\n`
+- `%s: %s: %s: CSNE_CMD_INIT_SHARED_EVENT_INFO completed with the res=0x%x\n`
+- `%s: %s: WriteProperty call failed\n`
+- `%s: %s: inputBufferSymbolIndex[%d] = 0x%x inputBufferSurfaceId[%d]=%d\n`
+- `[ERROR] %s: %s: ANESchedulerStatsWriter: failed to allocate IOLock\n`
+- `%s: %s: ANECommandChannel: Initialized for pipe handle %u with submission limit %u\n`
+- `%s: %s: total ISP remapped allocation size: %d\n`
+- `%s: %s: Exceeded max retries. Proceeding with transition\n`
+- `%s: %s: tx buf = 0x%llx, tx size = 0x%08x, tx reg = 0x%llx, tx value = 0x%08x, rx buf = 0x%llx, rx size = 0x%08x\n`
+- `[ERROR] %s: %s: DSID 0x%x not found in pool for stream %d\n`
+- `[ERROR] %s: %s: enterShutdown: no active resource collection to drain\n`
+- `%s: %s: Precompiled mach-o, performing signature check \n`
+- `%s: %s: kIOMessageSystemWillPowerOn\n`
+- `[ERROR] %s: %s: Failed to unwire processes. Stop hint failed. result: 0x%x\n`
+- `[ERROR] %s: %s: processPowerEvent failed for the DPG transition. result: 0x%x\n`
+- `%s: %s: Alloc found:%u, usage:%u aneId %u deviceId %u Intermediate buff size = %llu offset =%llu\n`
+- `%s: %s: Sync Request: %s\n`
+- `[ERROR] %s: %s: failed to send invaliate cache request 0x%x\n`
+- `%s: %s: Remap request for surface-id:0x%x\n`
+- `%s: %s: processSharedMallocRequest\n`
+- `%s: Operation graph node has self-edge`
+- `[ERROR] %s: %s: authentication fails\n`
+- `%s: %s: mutableClusterIndex : %u %llx %zu %d\n`
+- `%s: %s: Program has mutable offset: 0x%llx, size: 0x%zx and cluster id: %d, procedureId: %d\n`
+- `%s: %s: kIOMessageSystemHasPoweredOnn`
+- `%s: %s: output: %u, outputIndexGbl: %u, circularBufferIndex: %u\n`
+- `%s: %s: Blocked requests count: %zu\n`
+- `%s: Failed to parsed loop_node->condition_`
+- `%s: %s: ERROR: cannot read macho header and commands result: 0x%x\n`
+- `[ERROR] %s: %s: Buffer Bind not found for Section with file offset=%llx\n `
+- `%s: %s: Request transactionID=0x%llx no longer throttled, waited %llu ns\n`
+- `%s: %s: Failed Tunable programming`
+- `%s: %s: Chip not supported, HW Type: %x\n`
+- `%s: %s: Send CSNE_CMD_LOAD_AFPP FD networks with phy:0x%llx, size:0x%016llx\n`
+- `[ERROR] %s: %s: workBeginForThrottling: ANEPerfRequest is NULL\n`
+- `%s: %s: aneDriverEnabled=1 boot-arg set - ANEDriver is enabled!\n`
+- `%s: %s: Fence Count: %u\n`
+- `%s: %s: No space in command queue, retry request later = 0x%x\n`
+- `%s: %s: data chaining took power assertion\n`
+- `%s: %s: Resource still prewired (prewireCount > 0), skipping unwire for programHandle: 0x%llx, surfaceId: %u\n`
+- `[ERROR] %s: %s: ANEThread: %s: Timed out waiting for thread to exit. Thread may still be running.\n`
+- `[ERROR] %s: %s: PROGRAM_EVENT: mapped memory exceeds surface boundary\n`
+- `%s %d: forMapper = %p\n`
+- `%s: %s: ANEProcess: Entered %s state with event %s [programHandle: 0x%llx]\n`
+- `[ERROR] %s: %s: Populate load failed, Unsuported Param type %u\n`
+- `[ERROR] %s: %s: enqueue output setID is not valid: %d\n`
+- `%s: %s: Throttling: period boundary with active requests, starting fresh period\n`
+- `%s: %s: Disabling  ane power off timer\n`
+- `%s: %s: Timed out waiting for ANECPU to write to rANE_SCRATCH0 register after CSNE_CMD_POWER_DOWN.. Continue with power down\n`
+- `[ERROR] %s: %s: No pIspAneNetworkSurface to Send CSNE_CMD_UNLOAD_AFPP FD\n`
+- `%s: %s: ClientDevice(%p): Client Died [Client: %s, PID: %d]\n`
+- `%s: %s: evaluateLocalFence: trylock failed for dep 0x%llx, request 0x%llx — falling back to LocalStrict\n`
+- `%s: Buffer overrun while parsing relocations`
+- `[ERROR] %s: %s: CACHE ERROR: Cached request executing but cacheHandle is 0\n`
+- `%s: %s: Boot-arg override: aneFirmwareCommandTimeoutMs %u ms\n`
+- `%s: %s: WARN: Client %s has a session in progress hint, can't turn OFF ANE power\n`
+- `%s: %s: ISP endpoint registered\n`
+- `%s: %s: id :0x%x, programHandle: 0x%llx, progID: %d, processId::%d, procId: %d, errorcode: %x\n`
+- `[ERROR] %s: %s: ANEGroupResource: resource has nullptr descriptor id: 0x%llx\n`
+- `%s: %s: chaining cacheHandle 0x%llx ProcDropped_ANEInSecureMode with output set 0x%x\n`
+- `[ERROR] %s: %s: vfs_context is NULL\n`
+- `%s: %s: ANE_SYS power on after FSD:%u\n`
+- `%s: %s: CPU Load Throttling already enabled\n`
+- `[ERROR] %s: %s: ClientDevice(%p): Cannot cache null descriptor or lock not initialized\n`
+- `%s: %s: Single-ANE rotation flipped preferred ANE to %u\n`
+- `[ERROR] %s: %s: Scheduler maintenance timer period: %u ms\n`
+- `Cannot take a modulo with a quotient of 0`
+- `%s: %s: Client program size : %llu maxMapSize: %llu minMapSize %llu\n`
+- `%s: %s: procId:%u requiresInferenceContext:%d\n`
+- `%s: %s: waitForFirmwareToQuiesce failed! Marking firmware as being in timed out for clean reboot\n`
+- `%s: %s: Sent power off message to scheduler\n`
+- `%s: %s: ProcFail: UUID: 0x%llx cacheHandle 0x%llx programId=%d processId=%d procedureid=%d programEvent=%d\n`
+- `[ERROR] %s: %s: Failed to allocate property match for exclave proxy: 0x%x\n`
+- `[ERROR] %s: %s: Procedure: %u Kernel split [%u] ZinComputeProgramGetKernelSectionInfoForProcedure() error %d\n`
+- `[ERROR] %s: %s: buildFirmwareSignalEvents() failed. result=0x%x\n`
+- `[ERROR] %s: %s: Context Allocation failed!!\n`
+- `%s: %s: ANEChannel: Submission limit set to %u\n`
+- `[ERROR] %s: %s: Could not validae power off state: ret=0x%08X\n`
+- `[ERROR] %s: %s: Unknown FWSharedMemoryRequest subtype: %d\n`
+- `[ERROR] %s: %s: ClientInterface(%p): Device not initialized\n`
+- `%s: %s: ANE %u power readiness: %u\n`
+- `%s: Illegal serialization of data dependency`
+- `%s: %s: ZinComputeProgramHasMutableProcedure procedure id: %d mutable flag: %d\n`
+- `[ERROR] %s: %s: buildFirmwareProcedureCallCacheRequest failed. result=0x%x\n`
+- `[ERROR] %s: %s: Failed to get size of header and load commands\n`
+- `[ERROR] %s: %s: takePowerAssertion: hwDeviceClient %p not found\n`
+- `%s: %s: fFirmwareIsSuspended: %d \n`
+- `%s: Procedure has self-edge`
+- `%s: %s: ERROR: memory allocation for directIO failed\n`
+- `[ERROR] %s: %s: Failed to dartMap aneResourceID: 0x%llx\n`
+- `[ERROR] %s: %s: %s  failed with status: 0x%x\n`
+- `%s: %s: Times up. Unwiring ResourceID: 0x%llx\n`
+- `[ERROR] %s: %s: number of buffers（%u) or procID (%u) exceeds max\n`
+- `%s: %s: kIODARTFunctionSetActive -> true\n`
+- `%s: %s: No second int from ANECPU..Retrying power up, retries=%d\n`
+- `%s: %s: ERROR: ISP surface-id:0x%x had already been mapped, surface address: %p, size:0x%llx, dartMapBase:%p\n`
+- `[ERROR] %s: %s: Failed to prepare base-instance split sections - 0x%llx: 0x%x\n`
+- `[ERROR] %s: %s: Failed to wire request. result: 0x%x\n`
+- `%s: %s: Forcing bonded peer ANE%u through firmware timeout recovery after TM sync error on ANE%u\n`
+- `[ERROR] %s: %s: No wake notification queue - falling back to synchronous wake\n`
+- `[ERROR] %s: %s: Sending inference failed. result = 0x%x\n`
+- `[ERROR] %s: %s: Poll timer detected command TIMEOUT: opcode=0x%04X (%s), elapsed=%u ms, timeout=%u ms (base=%u ms)\n`
+- `%s: %s: aneAddressToHostAddress in FW data region: 0x%llx\n`
+- `[ERROR] %s: %s: Failed to retrieve endpoint from service`
+- `%s: %s: ANE SYS clock disable time = %lld us\n`
+- `[ERROR] %s: %s: Failed to release mcache for intermediate spill stream: 0x%x\n`
+- `%s: %s: enterShutdown: no active resources left to drain\n`
+- `[ERROR] %s: %s: Firmware per priority queue is full. Keeping req uuid: 0x%llx transactionID: 0x%llx on hold\n`
+- `%s: %s: Acquired All Fences: %s\n`
+- `%s - New ANEDriverDebugClient for process: %s (pid %d)\n`
+- `[ERROR] %s: %s: Shared memory allocation failed. result = 0x%x\n`
+- `[ERROR] %s: %s: ANEUserClient::%s failed to map program params (%s) or output (%s)\n`
+- `[ERROR] %s: %s: Size Mismatch:%llx , ANEProgramChainingPrepareArgs: %lx\n`
+- `[ERROR] %s: %s: process is aborted. ProgramHandle: 0x%llx\n`
+- `[INFO] %s: %s: cannot update intermediate union handle: 0x%llx useCount: %d\n`
+- `[ERROR] %s: %s: === End ANEScheduler Error Context ===\n`
+- `%s: mutable weight symbol not found: %s`
+- `%s: %s: Adaptive throttle: original=%d%% effective=%d%% consumed=%llums/%llums elapsed=%llums/%ums remaining=%llums/%llums active=%ums inactive=%ums\n`
+- `%s: %s: Wake up: %p\n`
+- `%s: %s: Requested firmware heap size=%d\n`
+- `%s: %s: fCpuClocksPowerEnabled %d fUseRTBuddyEndpoints %d\n`
+- `ANE %s: kAppleMPMFunctionUnmapMemory, format %d\n`
+- `[ERROR] %s: %s: Timed out waiting for %s client to release power assertions after %u retries.\n`
+- `%s: %s: Procedure has coalesced IOs, pretend to pre-wire since autoPrewiring will handle it %s\n`
+- `DEBUG: H11ANEIn: tds_operations->tot = %d\n`
+- `[ERROR] %s: %s: Failed to create MTR slew rate interrupt event source for cluster\n`
+- `%s: %s: disable mapper cache usage='%c%c%c%c'\n`
+- `%s: %s: Remapp FD network surface: Shared memory  region mapped at DART translated address: 0x%08X\n`
+- `[ERROR] %s: %s: Failed to register Notification on AGX IOService\n`
+- `Invalid API usage. ZinComputeProgramGetTDPartitionSizeInByte`
+- `%s: internal error, invalid barid\n`
+- `[ERROR] %s: %s: Hardware client already exists: %p\n`
+- `%s: %s: DEBUG: Zin loader genericSectionSize=%ld operationSectionSize=%ld procedureSectionSize=%lu tdPropSectionSize=%lu \n`
+- `%s: ZinComputeInitProcedureSection failed with %d`
+- `Incorrect ANE operation count computation`
+- `[ERROR] %s: %s: Requested to cancel request of type: %u!\n`
+- `%s: %s: Standard compilation mode\n`
+- `[ERROR] %s: %s: MTR cluster is null\n`
+- `[ERROR] %s: %s: Waited: %u ms\n`
+- `[ERROR] %s: %s: dartMapMemoryDescriptor failed to remap ISP surface\n`
+- `Negative segment number`
+- `%s: %s: Throttle percentage changed: %d%% -> %d%%, duration=%lluns, weighted_contribution=%llu\n`
+- `%s: %s: property: %d value: %d\n`
+- `%s: %s: Can't get proc path \n`
+- `[ERROR] %s: %s: Could not process the RPC Request from FW, result = 0x%x\n`
+- `%s: %s: FW will disable MPM power\n`
+- `[ERROR] %s: %s: heapMemoryDescriptor iovmInsert failed: 0x%x\n`
+- `%s: %s: INFO: ANE SharedMallocRequest took %llu us for messageANEAddress: %p, messageSize: 0x%llx, messageExtra: 0x%llx\n`
+- `[ERROR] %s: %s: setDynamicPowerGatingEnabled Enable failed res=0x%x\n`
+- `%s: %s: === ANEScheduler State Dump (%s) ===\n`
+- `[ANE Analytics] Found procedure name = %s`
+- `Error in %s: Only param or expr could be rsync op's offset`
+- `[ERROR] %s: %s: Failed to find procedure based on procedure name: %s\n`
+- `%s: %s: CPU Load LOW (%u < %u) - No throttling (limit=%d)\n`
+- `%s: %s: ANECPU IPC numIPCChannels=%d, ipcQueueSize=%d\n`
+- `%s: %s: Overriding to Unit Test image...\n`
+- `%s: %s: ClientDevice(%p): Get Status [Client: %s, PID: %d]\n`
+- `%s: %s: SharedEventAgentSignalEnabled AGX Found with value: %d\n`
+- `%s: %s: signingId=%s\n`
+- `[ERROR] %s: %s: Cannot find program or program info for programHandle: 0x%llx\n`
+- `%s: Table entry should be an operation node with one runtime operation description`
+- `%s: %s: Time out handler\n`
+- `%s: %s: Notication registered with ID: %d\n`
+- `%s: %s: Exclave work resumed, status from Exclave %d\n`
+- `%s: %s: expectedTeamIdDigest=%s\n`
+- `[ERROR] %s: %s: Group resource add aneClientResource failed. result=0x%x\n`
+- `%s: %s: \nActive Resources Details:\n`
+- `%s: %s: Waking pending requests queue after power-on: %u requests pending\n`
+- `%s: %s: ANEScheduler wake notification enqueued - returning immediately\n`
+- `%s: %s: Created ANE<->ISP endpoint service between %s and %s`
+- `[ERROR] %s: %s: Failed to re-arm Exclave SECURE mode after power on: res=0x%08X\n`
+- `%s: %s: ClientDevice(%p): Retrieved and removed mutable weights buffer for key %u\n`
+- `%s: %s: ANEHWDevice::Failed to validate ANE register offset %#x with expected value: %#x, read register value %#x\n`
+- `%s: %s: expectedSigningIdDigest=%s\n`
+- `%s: invalid procedure section`
+- `%s: Could not allocate compute program spans`
+- `%s: %s: Recommendation based on ANE Availability is %s\n`
+- `%s: %s: fANECPUFirmwareLoaded done\n`
+- `%s: %s: ANE subtype updated to from 0 -> %d\n`
+- `%s: %s: Throttling: allowing request (fits in throttle window), current=%lld expected=%lld projected=%lld allowed=%lld effective=%lld throttle=%d%% allowedCount=%u\n`
+- `%s: access outside of runtime section data`
+- `%s: %s: ERROR_NOTIFICATION\n`
+- `[ERROR] %s: %s: wake: no unwire thread to resume\n`
+- `%s: %s: JIT compilation mode. User passed AOT CacheUrlIdentifier is 0x%s\n`
+- `[ERROR] %s: %s: Circular Buffer is not supportted in this platformm, AENHWType: %d\n`
+- `%s: %s: Couldn't add timer event source to work loop for dynamicPowerGating hysteresis\n`
+- `%s: %s: Stream Name: %s`
+- `[ERROR] %s: %s: rotationPreferredAneIdx %u out of range (max: %u), skipping rotation bias\n`
+- `%s: illegal 'proc_fvmlib_count', no fvmlibs`
+- `%s: %s: dart map for aneId:%u\n`
+- `%s: %s: Found Coalesced IO node %u size:%llu %u %u\n`
+- `%s: %s: ANEChannel: Auto-paused due to submission limit set to 0\n`
+- `[ERROR] %s: %s: SIGNAL EVENT ERROR: Request finished but only %u of %u signal events done\n`
+- `%s: %s: Looking for matching ANEHAL\n`
+- `%s: %s: HW Device Client requesting power off: %s powerAssertionCount:%d\n`
+- `%s: %s: Client %s has released its power assertions, retries=%d.\n`
+- `[ERROR] %s: %s: Memory wiring failed for context[%zu]: skFileRefId=0x%llx rv=0x%x\n`
+- `[ERROR] %s: %s: Scheduler failed to acquire device interface: %u\n`
+- `%s: illegal init_info parameter = nullptr`
+- `[ERROR] %s: %s: ProcStart for request not sent to FW. programHandle: 0x%llx programId: %u processId: %u uuid: 0x%llx cacheHandle: 0x%llx\n`
+- `[ERROR] %s: %s: ProcStartHW for request not sent to FW. programHandle: 0x%llx programId: %u processId: %u uuid: 0x%llx cacheHandle: 0x%llx\n`
+- `%s: %s: ERROR: CSNE_CMD_CH_PROPERTY_WRITE for setting cpuLoadScore High watermark failed res=0x%x\n`
+- `[ERROR] %s: %s: Could not look up IOSurface with ID 0x%08x \n`
+- `%s: %s: WARN: CSNE_CMD_RESOURCE_INFO_GET returned maxCacheRequests (%d) is less than driver size limit:%d\n`
+- `%s: %s: %4d: surface-id=0x%08X, size=0x%016llx, dartMapBase=0x%016llx, usage='%c%c%c%c', refCnt: %d\n`
+- `[ERROR] %s: %s: OSDynamicCast to AppleARMIODevice failed, exiting\n`
+- `%s: Parsed loop_node->condition_ is not Expression block node`
+- `%s: %s: sharedEvent port: 0x%x, eventTraceId: %#llx, eventType: %u, waitValue: %llu, completedValue: %llu\n`
+- `%s: %s: DEBUG: Program created  programHandle: 0x%llx\n`
+- `%s: %s: WARNING: IOPerfControlClient::copyClient returned nullptr; running without CLPC\n`
+- `%s: %s: Sync wiring done, woke caller, memoryWiringSuccess: %d\n`
+- `%s: %s: Found MCstream Object with stream id: 0x%x\n`
+- `%s: %s: programHandle: 0x%llx, transactionId: 0x%llx, procedureId: %u, priority: %u, qos: %u\n`
+- `%s: illegal (null) 'program' parameter'`
+- `%s: %s: Newly allocate intermediateUnion id: 0x%llx\n`
+- `[ERROR] %s: %s: Failed to prepare programResource. ProgramHandle: 0x%llx\n`
+- `%s: %s: ERROR: failed to allocate buffer for macho header and command\n`
+- `[INFO] %s: %s: Starting timer for disabled cluster\n`
+- `%s: %s: fEnableFwCTRR: %d, fEnableFwReload: %d\n`
+- `%s: %s: enableDataStream: Stream %d - AssignedSize: 0x%x, RequestedSize: 0x%x (after enable)\n`
+- `%s: %s: DEBUG: event: %d. Work submitted but not started.                                    CLPC notifying work end mach_absolute_time(): %llu\n`
+- `%s: %s: Timed out after waiting %u seconds for requests to complete on the ANE.\n`
+- `[ERROR] %s: %s: Failed to allocate sCSneCmdProcedureCallCacheRequestCommon\n`
+- `%s: %s: baseMutableSections count: %d\n`
+- `%s: %s: num Inputs :%u num Outputs:%u num procs:%u\n`
+- `[ERROR] %s: %s: ANECommandChannel: Command pipe handle mismatch. Expected %u, got %u\n`
+- `[ERROR] %s: %s: Unhandled error during ITQ interrupt handling\n`
+- `%s: illegal 'segment_count' parameter = %zu`
+- `%s: did not find mutable kernel section\n`
+- `%s: %s: ERROR: No Bonded NID left!!\n`
+- `[ERROR] %s: %s: Request init failed. result=0x%x\n`
+- `[ERROR] %s: %s: Number of signal shared events: %u hits the FW limit: %u\n`
+- `[ERROR] %s: %s: FENCE ERROR: Fence[%u] not done but surface is NULL\n`
+- `[ERROR] %s: %s: ANE_deInit power-down sequence did not fully quiesce: 0x%x fFirmwareTimeout: %d\n`
+- `%s: %s: ISP-ANE: ProcStart. Event UUID: 0x%llx ClientNetworkID: %u HWTimestamp: %llu\n`
+- `[ERROR] %s: %s: processDeviceEvent failed. result: 0x%x\n`
+- `%s: %s: GetNextRotationTargetANE: %u -> %u (residencyMask 0x%x)\n`
+- `%s: ZinComputeInitTextPropertySection failed with %d`
+- `Cannot dereference nullptr`
+- `%s: %s: Procedure Variant: %u\n`
+- `%s: %s: firmwareResourceIsAvailableForPriority: totalRequests=%u, pendingRequestsWithFirmwareTotal=%u, pendingRequestsPerPriorityWithFirmware=%u (priority=%u), pendingCacheRequests=%u, programHandle=0x%llx, residency=0x%x\n`
+- `%s: %s: ANEHWThrottlePulseTimerTimeOut_gated: Pulse timer fired! Waking pending requests\n`
+- `%s: %s: nWorkProcessorMappedSurfaces:\n`
+- `%s: %s: No victims mcache to release (DSID: 0x%x, Size: 0x%x)\n`
+- `[ERROR] %s: %s: Error getting reference to the wait shared event reference for index:%d result:0x%x\n`
+- `%s: illegal (null) 'bindings' parameter`
+- `%s: mutable weight zero size (n=%d)`
+- `ZinComputeProgramRTGetPatchMutableKernelOperationsDescription failed in ZinComputeProgramRTProcedureIsMutableSectionOwner with %d`
+- `%s: %s: metaDataBufferUserMap release\n`
+- `[ERROR] %s: %s: Not disabling clock due to fIsPowered=%d or fDeInitInProgress=%d or fInitInProgress=%d or fFirmwareTimeout=%d\n`
+- `%s: %s: Masking Exclave interrupt for SEP transition\n`
+- `[ERROR] %s: %s: clientDeviceCoreLock alloc failed\n`
+- `[ERROR] %s: %s: ANEGroupResource: memoryDescriptor exists already, cannot add resource\n`
+- `[ERROR] %s: %s: ANEGroupResource: resourceId (0x%llx) is not page aligned which is not supported for GroupResource case offset=%llu\n`
+- `%s: %s: ERROR: Macho likely malformed: plane name spans out of client program %s %u %p %llu\n`
+- `[DEBUG] %s: %s: Channel %02u: %u`
+- `%s: %s: output buffer(surfaceID:0x%x) [%d] plane: %d offset=%llu bufferIndex=%d size=%llu buffer=0x%llx\n`
+- `%s: %s: Disabling Dynamic PowerGating\n`
+- `%s: corrupt vector transform: leftover vector data`
+- `%s: %s: Skipping request as intermediateUnion is not available for residency %u with priority: %u`
+- `%s: %s: chaining event 0x%llx failed with output set 0x%x\n`
+- `%s: %s: Error: couldn't map shared event FW doorbell, fall back to disable FWDoorbell\n`
+- `%s: %s: Code signing matched for client %s\n`
+- `Could not determine TD partition of operation`
+- `Out of range next segment count`
+- `%s: %s: ANEChannel: total=%u, queued=%u, processing=%u, paused=%d, stopped=%d, limit=%u\n`
+- `%s: %s: data chaining removed power assertion\n`
+- `%s: %s: Duty cycle windows calculated: throttle=%d%% active=%ums inactive=%ums period=%llums\n`
+- `%s: %s: Dynamic power gating hysteresis timer created \n`
+- `%s: %s: programHandle: 0x%llx, client: 0x%llx\n`
+- `%s: %s: client has entitlement to increase model size limit\n`
+- `%s: %s: ANE-ISP procedure finished but no matching start time found: networkId=0x%x, procedureId=0x%x\n`
+- `[INFO] %s: %s: request fallback - signal event sharedID (%d) exceeds table limit (%d)\n`
+- `%s: %s:   WaitEvent[%u]: Port=0x%x, Type=%d, Value=%llu, Done=%s, SharedEvent=%s\n`
+- `[ERROR] %s: %s: Invalid mcache stream type for DSID query: %d\n`
+- `%s: %s: CPU load throttler enabled (fEnableANECpuLoadThrottle=%d, useLoadMonitor=%d)\n`
+- `%s: %s: Secure mode has already been started!\n`
+- `%s: %s: Masking off ANE Exclave interrupt before informing the EC\n`
+- `%s: %s: ANEDriver::start, res: %d\n`
+- `[ERROR] %s: %s: Num circular buffer: %u doesn't match expected num of circular buffers: %u\n`
+- `[ERROR] %s: %s: Failed when processing output buffers\n`
+- `%s: %s: === ANEScheduler Verbose State Dump (%s) ===\n`
+- `%s: %s: Updated HoL for ane %u priority %u to %u\n`
+- `[ERROR] %s: %s: Creating fwMemoryDescriptors for Text segment failed!!\n`
+- `[ERROR] %s: %s: Failed to re-power MPM after power on: res=0x%08X\n`
+- `[ERROR] %s: %s: Couldn't add Exclave IOFIES to WorkLoop: 0x%x\n`
+- `%s: %s: ANEDevicePropertiesArrivalNotificationHandler: numANEs discovered so far: %u\n`
+- `%s: Invalid operation index `
+- `Out of range next count`
+- `[ERROR] %s: %s: Invalid bufferMetaDataIdx: %d symbolName: %s planeIdx: %u\n`
+- `[ERROR] %s: %s: resources passed in request is nullptr\n`
+- `%s: %s: ERROR: ISP surface-id:0x%x doesn't exist\n`
+- `[ERROR] %s: %s: calculateExpectedLatency: numModeledPerfStats=%zu but modeledPerfStats is null (invalid state)\n`
+- `%s: %s: op_idx=%d IOIndex = %d BSS=0x%llx  `
+- `[ERROR] %s: %s: Program creation failed for ANEId:%u result=0x%x\n`
+- `[ERROR] %s: %s: Split text Resource creation failed for procid:%u`
+- `%s: %s: call DisableANEClocksAndPower \n`
+- `[ERROR] %s: %s: Invalid arguments instanceParams: %p, programOutput: %p\n`
+- `[ERROR] %s: %s: procedureId: 0x%x not found! totProcedures: %u\n`
+- `%s: %s: WARN: hint initial check and lookup failed. result: 0x%x\n`
+- `%s: illegal program parameter = NULL`
+- `%s: %s: skip processTerminate programId: %u processId: %u epoch: %llu currentEpoch: %llu\n`
+- `[ERROR] %s: %s: ProcStart for request not sent to FW. programHandle: 0x%llx UUID: 0x%llx cacheHandle: 0x%llx\n`
+- `%s: %s: Device %u - decremented submitted requests count for priority %u to %u\n`
+- `%s: %s: Could not create Exclave Workloop\n`
+- `ANE%d: %s: ERROR: Invalid version in statsBuffer: %u\n`
+- `[ERROR] %s: %s: enterSleep did not quiesce cleanly, proceeding with sleep: 0x%x\n`
+- `[ERROR] %s: %s: Failed to allocate prepare request for base-instance splits - 0x%llx\n`
+- `%s: %s: ERROR: getMutableBufferMemoryDescriptorForProcedure failed\n`
+- `[ERROR] %s: %s: Failed to wire request before sleep assertion. result: 0x%x\n`
+- `%s: Could not find symbol at symbol table index %u`
+- `%s %d: could not initialize the allocator\n`
+- `[ERROR] %s: %s: Failed free a new intermediateUnion result=0x%x\n`
+- `ZinComputeLookupBuffer: invalid input parameters\n`
+- `[ERROR] %s: %s: Callback function nullptr\n`
+- `%s: %s: WARN: input surface size is greater than expected actual=%llu expected=%llu symbolName=%s\n`

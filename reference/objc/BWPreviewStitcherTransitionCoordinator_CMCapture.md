@@ -1,0 +1,167 @@
+# `BWPreviewStitcherTransitionCoordinator`
+
+- Image: [`/System/Library/PrivateFrameworks/CMCapture.framework/CMCapture`](../userland/System__Library__PrivateFrameworks__CMCapture.framework__CMCapture.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- 60 instance variables, 20 properties, 61 instance methods, 1 class methods
+
+## Instance variables
+
+```
+@"NSArray" _cameraInfo;
+f _videoFormatHeight;
+B _superMacroCameraTransitionRampOnFullPrimaryRectEnabled;
+B _superMacroUserInitiatedFallbackTuningEnabled;
+B _multiCameraStitchingEnabled;
+B _superWideNondisruptiveSwitchingWaitsForSuperWideFallback;
+B _cameraTransitionEnhancedEdgeFeatheringEnabled;
+i _cameraTransitionEdgeFeatheringZoomInTeleEdgeExpansionFrameDuration;
+i _cameraTransitionEdgeFeatheringZoomOutQsubToQsumEdgeOpacityRampFrameDuration;
+i _momentMovieRecordingRecenteringShiftRampFrameCount;
+i _wideFallbackMode;
+f _cameraTransitionWiderToNarrowerExtendedRampStartPercent;
+B _startingZoomRampToStreamBase;
+B _registrationUpdateRequested;
+B _startingCameraDisplayTransition;
+B _transitioningDueToCameraFallbackChange;
+i _numFramesForRegistrationShiftRamps;
+B _superWideFallbackForMacroSceneEnabled;
+B _drawWiderCameraOnly;
+f _rampStartZoomFactor;
+f _rampZoomFactorOfInterest;
+f _narrowerQsubToQsumExtendedRampFromProgress;
+@"BWRamp" _cameraTransitionRamp;
+B _cameraTransitionRampForSuperMacroFallback;
+@"BWRamp" _narrowerCameraEdgeExpansionRamp;
+@"BWRamp" _qsubToQsumEdgeOpacityRamp;
+B _narrowerCameraTransitioningQsubToQsum;
+B _triggerRegistrationForNondisruptiveSwitching;
+B _lastDrawsWiderCameraOnly;
+B _currentZoomRequiresWiderCamera;
+B _requestedDisplaysWidestCameraOnly;
+B _displaysWiderCameraOnly;
+B _displaysPrimaryCameraOnly;
+@"BWRamp" _superWideFallbackShiftRamp;
+B _superWideFallbackShiftRampTargetValueIsSuperWide;
+{CGPoint="x"d"y"d} _superWideFallbackRecenteringShiftOffset;
+f _superWideFallbackRecenteringStrength;
+B _wantSuperWideFallback;
+B _lastSuperWideCameraFallbackWasUserInitiated;
+@"BWRamp" _wideFallbackShiftRamp;
+{CGPoint="x"d"y"d} _wideFallbackRecenteringShiftOffset;
+B _wantWideFallback;
+B _wideFallbackShiftRampTargetValueIsWide;
+B _wideFallbackUserInitiatedTuningEnabled;
+B _lastWideCameraFallbackWasUserInitiated;
+i _widerCameraType;
+i _narrowerCameraType;
+i _lastNarrowerCameraType;
+i _recommendedMasterType;
+i _lastRecommendedMasterSelectionReason;
+B _isFirstFrame;
+f _currentFrameRate;
+f _narrowerCameraBaseZoomFactor;
+f _narrowerCameraNativeBaseZoomFactor;
+f _totalZoomFactor;
+B _narrowerCameraNondisruptiveSwitchingCurrentFrameIsCropped;
+f _wideNondisruptiveSwitchingScaleFactor;
+f _superWideNondisruptiveSwitchingScaleFactor;
+{BWPreviewStitcherFocusDistanceInfo="farEnoughToUseTele"B"farEnoughToUseWide"B"farEnoughForStitching"B} _focusDistanceInfo;
+B _previousFrameHadSuperWideFallbackShiftRampInProgress;
+```
+
+## Properties
+
+```
+@property (TB,N) displaysWidestCameraOnly;
+@property (TB,R,N) displaysPrimaryCameraOnly;
+@property (TB,R,N,V_drawWiderCameraOnly) drawWiderCameraOnly;
+@property (TB,R,N) enhancedEdgeFeatheringTransitionsEnabled;
+@property (TB,R,N) transitionInProgress;
+@property (Ti,R,N) transitionType;
+@property (Tf,R,N) transitionCurrentProgress;
+@property (TB,R,N) transitioningForSuperMacroFallbackOnFullPrimaryRect;
+@property (TB,R,N) inSuperWideMacroMode;
+@property (TB,R,N) currentlySwitchingCameras;
+@property (TB,R,N) currentlyRampingZoom;
+@property (Tf,R,N,V_rampStartZoomFactor) rampStartZoomFactor;
+@property (Tf,R,N,V_rampZoomFactorOfInterest) rampZoomFactorOfInterest;
+@property (Tf,R,N) widerToNarrowerExtendedRampCurrentProgress;
+@property (Tf,R,N) narrowerQsubToQsumExtendedRampCurrentProgress;
+@property (Tf,R,N,V_narrowerQsubToQsumExtendedRampFromProgress) narrowerQsubToQsumExtendedRampFromProgress;
+@property (Tf,R,N) wideBaseZoomFactorDynamicOverrideTransitionScale;
+@property (Tf,R,N) narrowerPrimaryCameraPercent;
+@property (T@"NSString",R,N) primaryCameraShortDisplayName;
+@property (T@"NSString",R,N) wideFallbackDescription;
+```
+
+## Class methods
+
+```
++[BWPreviewStitcherTransitionCoordinator initialize];
+```
+
+## Instance methods
+
+```
+-[BWPreviewStitcherTransitionCoordinator transitionInProgress];
+-[BWPreviewStitcherTransitionCoordinator transitionType];
+-[BWPreviewStitcherTransitionCoordinator displaysPrimaryCameraOnly];
+-[BWPreviewStitcherTransitionCoordinator drawWiderCameraOnly];
+-[BWPreviewStitcherTransitionCoordinator narrowerPrimaryCameraPercent];
+-[BWPreviewStitcherTransitionCoordinator _updateCameraTransitionRampsForNextIteration];
+-[BWPreviewStitcherTransitionCoordinator _superWideUserInitiatedFallbackCameraTransitionRampFrameCount];
+-[BWPreviewStitcherTransitionCoordinator _cameraTransitionWiderToNarrowerExtendedRampStartPercent];
+-[BWPreviewStitcherTransitionCoordinator _fallbackRecenteringTargetShiftForWiderCameraType:];
+-[BWPreviewStitcherTransitionCoordinator startCameraFallbackRecenteringRampsForMomentMovieWithStoppingForTrueVideoRecording:withISPFastSwitchEnabled:];
+-[BWPreviewStitcherTransitionCoordinator prepareWithVideoFormatDimensions:];
+-[BWPreviewStitcherTransitionCoordinator _zoomOutCameraTransitionRampFrameCount];
+-[BWPreviewStitcherTransitionCoordinator _displayStringForPortType:];
+-[BWPreviewStitcherTransitionCoordinator _zoomInCameraTransitionRampFrameCount];
+-[BWPreviewStitcherTransitionCoordinator transitionCurrentProgress];
+-[BWPreviewStitcherTransitionCoordinator _cameraTransitionEdgeFeatheringZoomOutQsubToQsumEdgeOpacityRampFrameDuration];
+-[BWPreviewStitcherTransitionCoordinator _superWideAutoFallbackRecenteringStrength];
+-[BWPreviewStitcherTransitionCoordinator fallbackRecenteringRampIsRunningForWiderCameraType:];
+-[BWPreviewStitcherTransitionCoordinator startCameraTransitionRampsIfNecessaryWithAlignmentCoordinator:registrationEnabled:startingCameraDisplayTransitionOut:transitioningDueToCameraFallbackChangeOut:];
+-[BWPreviewStitcherTransitionCoordinator narrowerQsubToQsumExtendedRampCurrentProgress];
+-[BWPreviewStitcherTransitionCoordinator dealloc];
+-[BWPreviewStitcherTransitionCoordinator widerCameraPixelBufferFromFramePairInfo:alignmentCoordinator:];
+-[BWPreviewStitcherTransitionCoordinator _superWideUserInitiatedFallbackShiftRampFrameCount];
+-[BWPreviewStitcherTransitionCoordinator rampStartZoomFactor];
+-[BWPreviewStitcherTransitionCoordinator _scaleCameraTransitionFrameCount:forCameraFallbackFromWideToTele:recenteringShiftOffset:recenteringStrength:registrationShiftOffset:];
+-[BWPreviewStitcherTransitionCoordinator primaryCameraShortDisplayName];
+-[BWPreviewStitcherTransitionCoordinator enhancedEdgeFeatheringTransitionsEnabled];
+-[BWPreviewStitcherTransitionCoordinator widerToNarrowerExtendedRampCurrentProgress];
+-[BWPreviewStitcherTransitionCoordinator _wideUserInitiatedFallbackCameraTransitionRampFrameCount];
+-[BWPreviewStitcherTransitionCoordinator _wideFallbackShiftRampFrameCount];
+-[BWPreviewStitcherTransitionCoordinator scale30FPSFrameCount:toFrameRate:];
+-[BWPreviewStitcherTransitionCoordinator initWithCameraInfoArray:excludeStaticComponentFromAlignmentShifts:multiCameraStitchingEnabled:superWideFallbackForMacroSceneEnabled:];
+-[BWPreviewStitcherTransitionCoordinator transitioningForSuperMacroFallbackOnFullPrimaryRect];
+-[BWPreviewStitcherTransitionCoordinator _widerCameraAllowedWithFramePairInfo:alignmentCoordinator:];
+-[BWPreviewStitcherTransitionCoordinator _cameraTransitionEdgeFeatheringZoomInTeleEdgeExpansionFrameDuration];
+-[BWPreviewStitcherTransitionCoordinator _wideFallbackRecenteringStrength];
+-[BWPreviewStitcherTransitionCoordinator wantFallbackForWiderCameraType:];
+-[BWPreviewStitcherTransitionCoordinator _enhancedFeatheringAdditionalTransitionsEnabled];
+-[BWPreviewStitcherTransitionCoordinator _currentlyZoomingOrSwitchingCameras];
+-[BWPreviewStitcherTransitionCoordinator wideFallbackDescription];
+-[BWPreviewStitcherTransitionCoordinator _fallbackRecenteringRampValueForWiderCameraType:];
+-[BWPreviewStitcherTransitionCoordinator startCameraFallbackRecenteringRampsIfNecessaryWithAlignmentCoordinator:isFirstFrameWithRegistrationEnabled:momentMovieRecordingRecenteringEnabled:numFramesForRegistrationShiftRampsOut:];
+-[BWPreviewStitcherTransitionCoordinator _wideUserInitiatedFallbackShiftRampFrameCount];
+-[BWPreviewStitcherTransitionCoordinator narrowerQsubToQsumExtendedRampFromProgress];
+-[BWPreviewStitcherTransitionCoordinator _haveSuperBravo];
+-[BWPreviewStitcherTransitionCoordinator wideBaseZoomFactorDynamicOverrideTransitionScale];
+-[BWPreviewStitcherTransitionCoordinator _wideFallbackCameraTransitionRampFrameCount];
+-[BWPreviewStitcherTransitionCoordinator _superWideUserInitiatedFallbackRecenteringStrength];
+-[BWPreviewStitcherTransitionCoordinator updateWithFramePairInfo:focusDistanceInfo:startingZoomRampToStreamBaseOut:registrationUpdateRequestedOut:];
+-[BWPreviewStitcherTransitionCoordinator inSuperWideMacroMode];
+-[BWPreviewStitcherTransitionCoordinator rampZoomFactorOfInterest];
+-[BWPreviewStitcherTransitionCoordinator cancelCameraTransitionRamps];
+-[BWPreviewStitcherTransitionCoordinator cameraPresentationShiftsWithFramePairInfo:alignmentCoordinator:addedGlobalShiftInNarrowerCameraSpace:correctedWiderCameraBaseZoomFactor:superWideSensorCenterOffsetEnabled:];
+-[BWPreviewStitcherTransitionCoordinator _primaryCameraPortType];
+-[BWPreviewStitcherTransitionCoordinator setDisplaysWidestCameraOnly:];
+-[BWPreviewStitcherTransitionCoordinator displaysWidestCameraOnly];
+-[BWPreviewStitcherTransitionCoordinator _cameraDisplayTransitionFrameCountForCameraFallbackChange:currentFrameRate:alignmentCoordinator:];
+-[BWPreviewStitcherTransitionCoordinator widerCameraMetadataFromFramePairInfo:alignmentCoordinator:];
+-[BWPreviewStitcherTransitionCoordinator currentlySwitchingCameras];
+-[BWPreviewStitcherTransitionCoordinator currentlyRampingZoom];
+-[BWPreviewStitcherTransitionCoordinator _currentlyRunningShortZoomRampOrNotRampingZoom];
+```

@@ -1,0 +1,2090 @@
+# `com.apple.iokit.IONVMeFamily`
+
+- Name: IONVMeFamily
+- Version: `2.1.0`
+- UUID: `998C2D1F-968C-3B8B-ABDF-24BAF673C5F1`
+- Source version: `877.40.5.0.0`
+- Depends on: [`com.apple.driver.AppleA7IOP`](com.apple.driver.AppleA7IOP.md) 1.0.0, [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleEmbeddedPCIE`](com.apple.driver.AppleEmbeddedPCIE.md) 1.0.0, [`com.apple.driver.AppleMobileFileIntegrity`](com.apple.driver.AppleMobileFileIntegrity.md) 1.0.1, [`com.apple.driver.AppleNANDConfigAccess`](com.apple.driver.AppleNANDConfigAccess.md) 1.0.0, [`com.apple.driver.AppleSMC`](com.apple.driver.AppleSMC.md) 1.0.0, [`com.apple.driver.IOSlaveProcessor`](com.apple.driver.IOSlaveProcessor.md) 1.0, [`com.apple.driver.RTBuddy`](com.apple.driver.RTBuddy.md) 1.0.0, [`com.apple.iokit.IOHIDFamily`](com.apple.iokit.IOHIDFamily.md) 1.0, [`com.apple.iokit.IOPCIFamily`](com.apple.iokit.IOPCIFamily.md) 1.0.0, [`com.apple.iokit.IOStorageFamily`](com.apple.iokit.IOStorageFamily.md) 1.7.0, [`com.apple.kec.corecrypto`](com.apple.kec.corecrypto.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 9.0.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 9.0.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 9.0.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 9.0.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 9.0.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 9.0.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (9) [KC]
+
+### AppleANS2CGNVMeController
+- `CFBundleIdentifier`: `com.apple.iokit.IONVMeFamily`
+- `Chipset Name`: `SSD Controller`
+- `IOClass`: `AppleANS2CGNVMeController`
+- `IOPersonalityPublisher`: `com.apple.iokit.IONVMeFamily`
+- `IOPropertyMatch`:
+  - `role`: `ANS2`
+- `IOProviderClass`: `RTBuddyService`
+- `Physical Interconnect`: `Apple Fabric`
+- `Physical Interconnect Location`: `Internal`
+- `Vendor Name`: `Apple`
+
+### AppleANS2CGv2Controller
+- `CFBundleIdentifier`: `com.apple.iokit.IONVMeFamily`
+- `Chipset Name`: `SSD Controller`
+- `IOClass`: `AppleANS2CGv2Controller`
+- `IOPersonalityPublisher`: `com.apple.iokit.IONVMeFamily`
+- `IOPropertyMatch`:
+  - `role`: `ANS2`
+- `IOProviderClass`: `RTBuddyService`
+- `Physical Interconnect`: `Apple Fabric`
+- `Physical Interconnect Location`: `Internal`
+- `Vendor Name`: `Apple`
+
+### AppleANS2DARTNVMeController
+- `CFBundleIdentifier`: `com.apple.iokit.IONVMeFamily`
+- `Chipset Name`: `SSD Controller`
+- `IOClass`: `AppleANS2DARTNVMeController`
+- `IOPersonalityPublisher`: `com.apple.iokit.IONVMeFamily`
+- `IOPropertyMatch`:
+  - `role`: `ANS2`
+- `IOProviderClass`: `RTBuddyService`
+- `Physical Interconnect`: `Apple Fabric`
+- `Physical Interconnect Location`: `Internal`
+- `Vendor Name`: `Apple`
+
+### AppleANS2NVMeController
+- `CFBundleIdentifier`: `com.apple.iokit.IONVMeFamily`
+- `Chipset Name`: `SSD Controller`
+- `IOClass`: `AppleANS2NVMeController`
+- `IOPersonalityPublisher`: `com.apple.iokit.IONVMeFamily`
+- `IOPropertyMatch`:
+  - `role`: `ANS2`
+- `IOProviderClass`: `RTBuddyService`
+- `Physical Interconnect`: `Apple Fabric`
+- `Physical Interconnect Location`: `Internal`
+- `Vendor Name`: `Apple`
+
+### AppleANS3CGv2Controller
+- `CFBundleIdentifier`: `com.apple.iokit.IONVMeFamily`
+- `Chipset Name`: `SSD Controller`
+- `IOClass`: `AppleANS3CGv2Controller`
+- `IOPersonalityPublisher`: `com.apple.iokit.IONVMeFamily`
+- `IOPropertyMatch`:
+  - `role`: `ANS2`
+- `IOProviderClass`: `RTBuddyService`
+- `Physical Interconnect`: `Apple Fabric`
+- `Physical Interconnect Location`: `Internal`
+- `Vendor Name`: `Apple`
+
+### AppleANS3NVMeController
+- `CFBundleIdentifier`: `com.apple.iokit.IONVMeFamily`
+- `Chipset Name`: `SSD Controller`
+- `IOClass`: `AppleANS3NVMeController`
+- `IOPersonalityPublisher`: `com.apple.iokit.IONVMeFamily`
+- `IOPropertyMatch`:
+  - `role`: `ANS2`
+- `IOProviderClass`: `RTBuddyService`
+- `Physical Interconnect`: `Apple Fabric`
+- `Physical Interconnect Location`: `Internal`
+- `Vendor Name`: `Apple`
+
+### AppleEmbeddedNVMeController
+- `CFBundleIdentifier`: `com.apple.iokit.IONVMeFamily`
+- `Chipset Name`: `SSD Controller`
+- `IOClass`: `AppleEmbeddedNVMeController`
+- `IOPCIClassMatch`: `0x01800200&0xffffff00`
+- `IOPCIMatch`: `0x2002106b`
+- `IOPCIUseDeviceMapper`: `True`
+- `IOPersonalityPublisher`: `com.apple.iokit.IONVMeFamily`
+- `IOProviderClass`: `IOPCIDevice`
+- `IOUnitName`: `disk`
+- `IOUserClientClass`: `AppleNVMeUpdateUC`
+- `Physical Interconnect`: `PCI-Express`
+- `Physical Interconnect Location`: `Internal`
+- `Vendor Name`: `Apple`
+
+### GenericNVMeSSD
+- `CFBundleIdentifier`: `com.apple.iokit.IONVMeFamily`
+- `Chipset Name`: `SSD Controller`
+- `IOClass`: `IONVMeController`
+- `IOPCIClassMatch`: `0x01080200&0xffffff00`
+- `IOPCIPauseCompatible`: `True`
+- `IOPCITunnelCompatible`: `True`
+- `IOPCIUseDeviceMapper`: `True`
+- `IOPersonalityPublisher`: `com.apple.iokit.IONVMeFamily`
+- `IOPrimaryDriverTerminateOptions`: `True`
+- `IOProbeScore`: `100`
+- `IOProviderClass`: `IOPCIDevice`
+- `IOUnitName`: `disk`
+- `Physical Interconnect`: `PCI-Express`
+- `Vendor Name`: `Generic`
+
+### NVMeSEPNotifier
+- `CFBundleIdentifier`: `com.apple.iokit.IONVMeFamily`
+- `IOClass`: `NVMeSEPNotifier`
+- `IOMatchCategory`: `NVMeSEPNotifier`
+- `IOPersonalityPublisher`: `com.apple.iokit.IONVMeFamily`
+- `IOProviderClass`: `AppleSEPManager`
+
+
+## C++ classes (33) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleANS2CGNVMeController` | 0xaa0 | AppleANS2NVMeController → AppleEmbeddedNVMeController → AppleNVMeController → IONVMeController → IOService → IORegistryEntry |
+| `AppleANS2CGv2Controller` | 0xaa0 | AppleANS2NVMeController → AppleEmbeddedNVMeController → AppleNVMeController → IONVMeController → IOService → IORegistryEntry |
+| `AppleANS2DARTNVMeController` | 0xab8 | AppleANS2NVMeController → AppleEmbeddedNVMeController → AppleNVMeController → IONVMeController → IOService → IORegistryEntry |
+| `AppleANS2NVMeController` | 0xa90 | AppleEmbeddedNVMeController → AppleNVMeController → IONVMeController → IOService → IORegistryEntry |
+| `AppleANS3CGv2Controller` | 0xaa0 | AppleANS2CGv2Controller → AppleANS2NVMeController → AppleEmbeddedNVMeController → AppleNVMeController → IONVMeController → IOService → IORegistryEntry |
+| `AppleANS3NVMeController` | 0xaa0 | AppleANS2CGNVMeController → AppleANS2NVMeController → AppleEmbeddedNVMeController → AppleNVMeController → IONVMeController → IOService → IORegistryEntry |
+| `AppleEmbeddedNVMeController` | 0x830 | AppleNVMeController → IONVMeController → IOService → IORegistryEntry |
+| `AppleEmbeddedNVMeDiagnostics` | 0xe8 | AppleNANDConfigAccess → IOService → IORegistryEntry |
+| `AppleEmbeddedNVMeNVRAM` | 0xb8 | IONVRAMController → IOService → IORegistryEntry |
+| `AppleEmbeddedNVMeTemperatureSensor` | 0xe0 | AppleEmbeddedHIDEventService → IOHIDEventService → IOService → IORegistryEntry |
+| `AppleNVMeBuffer` | 0x30 |  |
+| `AppleNVMeController` | 0x428 | IONVMeController → IOService → IORegistryEntry |
+| `AppleNVMeEAN` | 0xd8 | AppleNVMeNamespaceDevice → IOService → IORegistryEntry |
+| `AppleNVMeEANUC` | 0x100 | IOUserClient → IOService → IORegistryEntry |
+| `AppleNVMeFWNamespaceDevice` | 0xb8 | AppleNVMeNamespaceDevice → IOService → IORegistryEntry |
+| `AppleNVMeFWNamespaceUC` | 0x108 | IOUserClient → IOService → IORegistryEntry |
+| `AppleNVMeNamespaceDevice` | 0xb8 | IOService → IORegistryEntry |
+| `AppleNVMeNamespaceUC` | 0xf8 | IOUserClient → IOService → IORegistryEntry |
+| `AppleNVMeRequest` | 0x258 | IODMACommand → IOCommand |
+| `AppleNVMeRequestPool` | 0x60 | IOCommandPool |
+| `AppleNVMeRequestPoolTagReserve` | 0xe0 | AppleNVMeRequestPool → IOCommandPool |
+| `AppleNVMeRequestTimer` | 0x68 | IOTimerEventSource → IOEventSource |
+| `AppleNVMeSMARTUserClient` | 0xf8 | IOUserClient → IOService → IORegistryEntry |
+| `AppleNVMeUpdateUC` | 0x110 | IOUserClient → IOService → IORegistryEntry |
+| `AppleNVMeUserClient` | 0xf0 | IOUserClient → IOService → IORegistryEntry |
+| `AppleNVMeWorkLoop` | 0x50 | IOWorkLoop |
+| `IOEmbeddedNVMeBlockDevice` | 0x238 | IONVMeBlockStorageDevice → IOBlockStorageDevice → IOService → IORegistryEntry |
+| `IONVMeBlockStorageDevice` | 0x1d8 | IOBlockStorageDevice → IOService → IORegistryEntry |
+| `IONVMeController` | 0x2e0 | IOService → IORegistryEntry |
+| `IONVMeControllerPolledAdapter` | 0x48 | IOPolledInterface |
+| `IONVMeEffaceableDevice` | 0x238 | IOEmbeddedNVMeBlockDevice → IONVMeBlockStorageDevice → IOBlockStorageDevice → IOService → IORegistryEntry |
+| `IONVMeLifeboatBlockDevice` | 0xa8 | IOService → IORegistryEntry |
+| `NVMeSEPNotifier` | 0x98 | IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1640)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x000112e0 off=0x00a169e0-0x00a27cc0 addr=0xfffffe0007a1a9e0-0xfffffe0007a2bcc0 r--/r--   __TEXT            
+	sz=0x000104d0 off=0x00a170a8-0x00a27578 addr=0xfffffe0007a1b0a8-0xfffffe0007a2b578               __TEXT.__cstring          (CstringLiterals)
+	sz=0x00000740 off=0x00a27580-0x00a27cc0 addr=0xfffffe0007a2b580-0xfffffe0007a2bcc0               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x0005bc74 off=0x03267350-0x032c2fc4 addr=0xfffffe000a26b350-0xfffffe000a2c6fc4 r-x/r-x   __TEXT_EXEC       
+	sz=0x0005ae74 off=0x03267350-0x032c21c4 addr=0xfffffe000a26b350-0xfffffe000a2c61c4          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000e00 off=0x032c21c4-0x032c2fc4 addr=0xfffffe000a2c61c4-0xfffffe000a2c6fc4          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x000009f8 off=0x04a12b58-0x04a13550 addr=0xfffffe000ba16b58-0xfffffe000ba17550 rw-/rw-   __DATA            
+	sz=0x0000046c off=0x04a12b58-0x04a12fc4 addr=0xfffffe000ba16b58-0xfffffe000ba16fc4               __DATA.__data             
+	sz=0x00000578 off=0x00000000-0x00000578 addr=0xfffffe000ba16fc8-0xfffffe000ba17540               __DATA.__common           (Zerofill)
+	sz=0x00000010 off=0x00000000-0x00000010 addr=0xfffffe000ba17540-0xfffffe000ba17550               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x0000fdc0 off=0x013aef48-0x013bed08 addr=0xfffffe00083b2f48-0xfffffe00083c2d08 rw-/rw-   __DATA_CONST      
+	sz=0x00000110 off=0x013aef48-0x013af058 addr=0xfffffe00083b2f48-0xfffffe00083b3058         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000110 off=0x013af058-0x013af168 addr=0xfffffe00083b3058-0xfffffe00083b3168         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x0000e448 off=0x013af168-0x013bd5b0 addr=0xfffffe00083b3168-0xfffffe00083c15b0         __DATA_CONST.__const            
+	sz=0x00000840 off=0x013bd5b0-0x013bddf0 addr=0xfffffe00083c15b0-0xfffffe00083c1df0         __DATA_CONST.__kalloc_type      
+	sz=0x00000690 off=0x013bddf0-0x013be480 addr=0xfffffe00083c1df0-0xfffffe00083c2480         __DATA_CONST.__kalloc_var       
+	sz=0x00000700 off=0x013be480-0x013beb80 addr=0xfffffe00083c2480-0xfffffe00083c2b80         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000188 off=0x013beb80-0x013bed08 addr=0xfffffe00083c2b80-0xfffffe00083c2d08         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 497 at 0x04af46b0
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     998C2D1F-968C-3B8B-ABDF-24BAF673C5F1
+008: LC_SOURCE_VERSION           877.40.5.0.0
+009: LC_FUNCTION_STARTS          offset=0x004ac22d0 size=0x1048
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `IONVMeFamily`
+- `CFBundleGetInfoString`: `2.1.0, Copyright © 2020 Apple Inc. All rights reserved.`
+- `CFBundleIdentifier`: `com.apple.iokit.IONVMeFamily`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `IONVMeFamily`
+- `CFBundleNumericVersion`: `34635776`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `2.1.0`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `2.1.0`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `IOKitPersonalities_x86_64`:
+  - `AppleANS2Controller`:
+    - `CFBundleIdentifier`: `com.apple.iokit.IONVMeFamily`
+    - `Chipset Name`: `SSD Controller`
+    - `IOClass`: `AppleANS2Controller`
+    - `IONameMatch`:
+      - `ANS2`
+    - `IOPCIPauseCompatible`: `True`
+    - `IOPCITunnelCompatible`: `True`
+    - `IOPCIUseDeviceMapper`: `True`
+    - `IOPersonalityPublisher`: `com.apple.iokit.IONVMeFamily`
+    - `IOProviderClass`: `IOPCIDevice`
+    - `IOUnitName`: `disk`
+    - `Physical Interconnect`: `PCI-Express`
+    - `Physical Interconnect Location`: `Internal`
+    - `Vendor Name`: `Apple`
+  - `AppleS3ELabController`:
+    - `CFBundleIdentifier`: `com.apple.iokit.IONVMeFamily`
+    - `Chipset Name`: `SSD Controller`
+    - `IOClass`: `AppleS3ELabController`
+    - `IOPCIClassMatch`: `0x01800200&0xffffff00`
+    - `IOPCIMatch`: `0x2002106b`
+    - `IOPCIPauseCompatible`: `True`
+    - `IOPCITunnelCompatible`: `True`
+    - `IOPCIUseDeviceMapper`: `True`
+    - `IOPersonalityPublisher`: `com.apple.iokit.IONVMeFamily`
+    - `IOProviderClass`: `IOPCIDevice`
+    - `IOUnitName`: `disk`
+    - `Physical Interconnect`: `PCI-Express`
+    - `Physical Interconnect Location`: `Internal`
+    - `Vendor Name`: `Apple`
+  - `GenericInternalNVMeSSD`:
+    - `CFBundleIdentifier`: `com.apple.iokit.IONVMeFamily`
+    - `Chipset Name`: `SSD Controller`
+    - `IOClass`: `IONVMeController`
+    - `IOPCIMatch`: `0xa804144d 0xa806144d`
+    - `IOPCIPauseCompatible`: `True`
+    - `IOPCIUseDeviceMapper`: `True`
+    - `IOPersonalityPublisher`: `com.apple.iokit.IONVMeFamily`
+    - `IOPrimaryDriverTerminateOptions`: `True`
+    - `IOProbeScore`: `200`
+    - `IOProviderClass`: `IOPCIDevice`
+    - `IOUnitName`: `disk`
+    - `Physical Interconnect`: `PCI-Express`
+    - `Physical Interconnect Location`: `Internal`
+    - `Vendor Name`: `Apple`
+  - `GenericNVMeSSD`:
+    - `CFBundleIdentifier`: `com.apple.iokit.IONVMeFamily`
+    - `Chipset Name`: `SSD Controller`
+    - `IOClass`: `IONVMeController`
+    - `IOPCIClassMatch`: `0x01080200&0xffffff00`
+    - `IOPCIPauseCompatible`: `True`
+    - `IOPCITunnelCompatible`: `True`
+    - `IOPCIUseDeviceMapper`: `True`
+    - `IOPersonalityPublisher`: `com.apple.iokit.IONVMeFamily`
+    - `IOPrimaryDriverTerminateOptions`: `True`
+    - `IOProbeScore`: `100`
+    - `IOProviderClass`: `IOPCIDevice`
+    - `IOUnitName`: `disk`
+    - `Physical Interconnect`: `PCI-Express`
+    - `Physical Interconnect Location`: `Internal`
+    - `Vendor Name`: `Generic`
+- `MinimumOSVersion`: `27.2`
+- `OSBundleCompatibleVersion`: `1.2.0`
+- `OSBundleLibraries_x86_64`:
+  - `com.apple.driver.AppleMobileFileIntegrity`: `1.0.1`
+  - `com.apple.iokit.IOPCIFamily`: `1.0.0`
+  - `com.apple.iokit.IOReportFamily`: `1.0`
+  - `com.apple.iokit.IOStorageFamily`: `1.7.0`
+  - `com.apple.kec.corecrypto`: `1.0`
+  - `com.apple.kpi.bsd`: `9.0.0`
+  - `com.apple.kpi.iokit`: `9.0.0`
+  - `com.apple.kpi.libkern`: `9.0.0`
+  - `com.apple.kpi.mach`: `9.0.0`
+  - `com.apple.kpi.private`: `9.0.0`
+  - `com.apple.kpi.unsupported`: `9.0.0`
+- `OSBundleRequired`: `Local-Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/IONVMeFamily.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198895220256`
+- `_PrelinkExecutableRelativePath`: `IONVMeFamily`
+- `_PrelinkExecutableSize`: `513804`
+- `_PrelinkExecutableSourceAddr`: `-2198895220256`
+- `_PrelinkKmodInfo`: `-2198828127400`
+
+## Strings (1764) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `( 0 != inBufferSize )`
+- `%s::%d:Could not create/find ANS2Endpoint1 matching dictionary.\n`
+- `%s::%d:clogLoad recovered\n`
+- `PrintExit`
+- `%s::%d:Flushing ME shadow to NAND\n`
+- `%s::%d:Current S4E FW UUID = %s matches Update S4E FW UUID = %s \n`
+- `11us - 20us`
+- `( ( inByteCount % NVME_PAGE_SIZE ) == 0 )`
+- `nand-fragmentation`
+- `( tier3BW <= kIONVMeThermalThrottlingBWLimitMax )`
+- `VCCInput1`
+- `EAN Header size = %lu, per image size = %lu \n`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Common/AppleNVMeController.cpp`
+- `\"nvme: HousekeepingTimerEvent failed.\\n\" @%s:%d`
+- `( 0 != inFWBuffer )`
+- `file: %s `
+- `%s::%d:devTreeRoot failed\n`
+- `%s Die `
+- `artwork-device-idiom`
+- `virtual bool AppleANS2NVMeController::IsFWNamespaceTypeMismatch()`
+- `( isClientEntitled == true )`
+- `ReleaseQDArray`
+- `( fAnsSMMUMapper == NULL )`
+- `model`
+- `rootdev`
+- `( 0 != inVerifyHeader )`
+- `%s::%d:NVMe SideBar namespace entitlement value bad for client process %s (pid %d)\n`
+- `DetachFromParent`
+- `%s::%d:AllocateNodes failed. Setting NAND status to Error.\n`
+- `param`
+- `site.AppleNVMeSMARTUserClient`
+- `%s::%d:IONVMeController::HandleControllerPowerOff, ShutdownNVMe() completed with status = 0x%08x\n`
+- `3rd party NVMe controller`
+- `This configuration is not supported on this device.`
+- `fBootFromHostFunc != NULL`
+- `%s::%d:No NameSpace Size Greater in EDT \n`
+- `ReleaseRequestBuffer`
+- `%s::%d: Logical Blocks Size = %d \n `
+- `( 0 != outImageIndex )`
+- `( 0 != fSQDoorbellLock )`
+- `( fSanitizeStatusTimer != NULL )`
+- `virtual IOReturn AppleANS2DARTNVMeController::InitializeNVMe(bool)`
+- `%s::%d:fPcieSTGLaneInfo = %d, Failed to turn on PCIE_STG clock with index = %d \n`
+- `InitFailureExit`
+- `virtual void AppleANS2CGNVMeController::SetupAdminQueue()`
+- `uint32_t AppleNVMeEAN::eanGetUpdateCount(uint32_t)`
+- `IOMinimumSaturationByteCount`
+- `%s::%d:QID=%d fSubmissionTimeNS=%qd Deadline=%qd DW0=%08X DW10=%08X DW11=%08X DW12=%08X DW13=%08X DW14=%08X DW15=%08X\n`
+- `BufferComplete`
+- `%s::%d:Creating blockdevice with NSID - %d, NSTYPE - %d\n`
+- `%s::%d:Obtained %d namespaces from DT\n`
+- `Error`
+- `array`
+- `nvme: \"AppleEmbeddedNVMeController::enablePCIPort failed !\\n\" @%s:%d`
+- `fANS2ParityWidgetRegisterMap`
+- `inBFH == true`
+- `Queue Depth Counters`
+- `%s::%d:fPCIPortControlFunc is NULL!\n`
+- `%s::%d:Firmware image download. DW=0x%x NLB=0x%x\n`
+- `Sanitize Status`
+- `( ( kPCIPMCSPowerStateMask & pmControl ) == 0 )`
+- `args->structureInputSize == sizeof ( NVMeSamsungDebugLogStruct )`
+- `fSubmissionQ[inQueueID].fEnabled`
+- `( inRequest->fRequestIndex < fRequestPoolSize )`
+- `virtual IOReturn AppleANS2DARTNVMeController::EnableSHA()`
+- `1211211112112222222222222222`
+- `%s::%d:ECCVersion   : %llu\n`
+- `( 0 != client )`
+- `virtual bool AppleNVMeFWNamespaceUC::initWithTask(task_t, void *, UInt32, OSDictionary *)`
+- `ANS2Endpoint1`
+- `fAXI2AFDualRegisterMap`
+- `AppleNVMeEAN`
+- `IOReportLegendPublic`
+- `virtual void AppleEmbeddedNVMeController::DoHousekeeping()`
+- `( ( inImageSize % NVME_PAGE_SIZE ) == 0 )`
+- `( 0 != fQueueDepthArray )`
+- `Solid State`
+- `( 0 != fNVMeTimeWeightedStatsReporter )`
+- `FreePool`
+- `result`
+- `( 0 != fReportLegend )`
+- `( 0 != dataBuff )`
+- `( 0 != fwNumber )`
+- `cmdAccelTunables`
+- `121111121222121212221112112`
+- `( 0 != imageSize )`
+- `( 0 != devTreeRoot )`
+- `%s::%d:nvme: shutdwon failed with status 0x%x\n`
+- `%s::%d:nvme: Tunnel command CORE_DEBUG_SET_NAND_QUAL failed with status 0x%x\n`
+- `EmbeddedDeviceTypeEffaceable`
+- `Write`
+- `virtual bool IONVMeController::handleIsOpen(const IOService *) const`
+- `( 0 != nandDieIDBuff )`
+- `1z`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/AppleANS2NVMeController.cpp`
+- `501us - 1ms`
+- `\"pmap_iommu_ioctl - Setting SHA Regs - failed\\n\" @%s:%d`
+- `unknown revision`
+- `( inKeyC != inKeyN )`
+- `built-in`
+- `%s::%d:DM_Version   : %d\n`
+- `%s::%d:nvme: ParseSanitizeCounters: maxElements < elements\n`
+- `EmbeddedDeviceTypePanicLog`
+- `Model Number`
+- `High Throughput Options`
+- `virtual void AppleANS2CGv2Controller::SetupAdminQueue()`
+- `( tier1BW >= kIONVMeThermalThrottlingBWLimitMin )`
+- `StartFailureExit`
+- `( logicalBlockSize == 4096 )`
+- `nvme-sha3-inject-error`
+- `\"nvme: Enabling PCI port failed\\n\" @%s:%d`
+- `%s::%d:Failed to restore shadow (0x%08X) - Initializing NVRAM service\n`
+- `( 0 != inImage )`
+- `AppleNVMeRequestPool.cpp`
+- `%s::%d:fCompletionLoops: %d\n`
+- `inCoreID < kNVMeMaximumLoggerCores`
+- `251us - 500us`
+- `IOReturn AppleANS2NVMeController::SendSleepNotificationToANS(uint32_t, bool *)`
+- `SHA3 Eval Mode PASS`
+- `\"pmap_iommu_alloc_contiguous_pages failed: size=%qd\\n\" @%s:%d`
+- `arguments->structureInputSize == sizeof ( core_tunnel_parameters_t )`
+- `Firmware Revision`
+- `%s::%d:SQ index=%d entrysize=%d GetIOSQES ( ) = %d\n`
+- `%s::%d:Failed to create temperature sensor\n`
+- `%s::%d:nvme: failed to create critical device successfully\n`
+- `121111121222121211211111111221222111111121112222211212222222222221211111112222211222222122121111111111111111111111111111111122212221221111111111112211121111111111111111111111111111111111111111111111111111111111111111222222222222222222222222222222222221121221211111111111111111211111211112112112111111`
+- `%s::%d:Enabling lifeboat mode\n`
+- `ccu-security-interrupt-tunables`
+- `( ( fHeader->totalBytesWritten + inImageSize ) <= fHeader->totalSize )`
+- `args->scalarInputCount == 1`
+- `ReleaseSanitizeStatusTimer`
+- `( fNamespaces != NULL )`
+- `( fTerminated == false )`
+- `blocks-per-cau`
+- `( 0 != resources )`
+- `unknown`
+- `NAND CH0 temp`
+- `AppleANS2NVMeController`
+- `fBaseAddress`
+- `%s::%d:FirmwareVersionCheck - Skipping NVMe F/W minor version check\n`
+- `slCommonTunables`
+- `nand-debug`
+- `SHA3 384 PASS`
+- `12111112122212121111222111122222222221212121111222222222221111211211222`
+- `fProvider != NULL`
+- `virtual bool AppleNVMeUpdateUC::initWithTask(task_t, void *, UInt32, OSDictionary *)`
+- `Command Timeout Count`
+- `kIOReturnSuccess == (status)`
+- `( 0 != buffer )`
+- `%s::%d:ibec-boot not found!\n`
+- `%s::%d:Found (%s) provider and coastguard, returning score %d\n`
+- `thermal-throttling`
+- `%s::%d:NameSpace Size Greater \n`
+- `fSanitizeCommandSupport == true`
+- `Write Uncorrectable`
+- `%s::%d:Identified nsid[%d] as nstype[%d]\n`
+- `fSecureBaseAddress`
+- `fPolledNVMeRequest`
+- `site.AppleNVMeRequestTimer`
+- `cString`
+- `bool AppleEmbeddedNVMeController::DetermineNamespaces()`
+- `b`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/AppleNVMeFWNamespaceUC.cpp`
+- `bool AppleNVMeUserClient::CheckEntitlementForSelector(uint32_t)`
+- `%s::%d:QueueSubmitError\n`
+- `( fSysConfigDescriptor != NULL )`
+- `virtual IOReturn IONVMeController::setPowerState(unsigned long, IOService *)`
+- `\"pmap_iommu_ioctl - NVME_PPL_IOCTL_SET_TCB_ADDR - failed\\n\" @%s:%d`
+- `( ( inImage->getDirection ( ) & kIODirectionIn ) != 0 )`
+- `bool IONVMeController::CreateBlockStorageDevice(uint32_t)`
+- `%s::%d:attach/init failure for NS %d\n`
+- `( 0 != params )`
+- `( 0 != fIOMDNVMeBAR1 )`
+- `site.IONVMeLifeboatBlockDevice`
+- `imageSize                    = 0x%x \n`
+- `PRTC Extraction Status`
+- `ReleaseQDOSArray`
+- `( 0 != current_proc_info )`
+- `%s::%d:fPcieSTGLaneInfo = %d, Failed to turn off PCIE_STG clock with index = %d \n`
+- `( 0 != fNVMeController )`
+- `FreeRequest`
+- `Tier3 Throttle Time`
+- `%s::%d:Provider role was NULL\n`
+- `( 0 != fEANDevice )`
+- `Invalid`
+- `%s::%d:Error Exit at start\n`
+- `EmbeddedDeviceTypeCalibration`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/AppleNVMeFWNamespaceDevice.cpp`
+- `QueuedFlush`
+- `( fAnsSHAMapper == NULL )`
+- `( 0 != apcieNub )`
+- `%s::%d:received systemPowerChange 0x%x\n`
+- `( 0 != externalInputMap )`
+- `NVMe`
+- `%s::%d:nvme: Tunnel command CORE_DEBUG_GET_NAND_ID failed with status 0x%x\n`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/AppleANS3CGv2Controller.cpp`
+- `%s::%d:AppleNVMeFWNamespace writeDescriptorTable failed : 0x%08x for client process %s (pid %d)\n`
+- `fANS2Endpoint`
+- `com.apple.AppleNVMeEAN.allow`
+- `Sanitize Status Bytes Written`
+- `ReleaseUnmapBuffer`
+- `Invalid NAND FW update sequence.`
+- `S6E`
+- `( 0 != args )`
+- `sqLength <= kNVMeMAXAdminSQCQLength`
+- `( 0 != map )`
+- `%s::%d:Shutdown tasks complete, resuming deferred stack teardown`
+- `( 0 != fNVMeBWLimitReporter )`
+- `fSlaveProcessor`
+- `fAKFIOPNub`
+- `( ( inOffset % NVME_PAGE_SIZE ) == 0 )`
+- `%s::%d:Failed to send command 0x%x\n`
+- `\"nvme: ShutdownNVMe() completed with status = 0x%08x\\n\" @%s:%d`
+- `me`
+- `site.NVMeSEPNotifier`
+- `kIOReturnSuccess == (GetDeviceProperties ( ))`
+- `IOReturn AppleNVMeEAN::verifyHeaderCRC()`
+- `args->structureInputSize == sizeof ( NVMeSnapshotStruct )`
+- `%s::%d:Scheduling callout thread\n`
+- `( 0 != newDevice )`
+- `%s::%d:nvme: CORE_DEBUG_SET_ATV_MODE failed with status 0x%x\n`
+- `NS_%02d`
+- `NULL`
+- `%s::%d:NVMe Namespace Device entitlement value bad for client process %s (pid %d)\n`
+- `( fVersion != kNVMeInvalidRegisterValue32 )`
+- `ReleaseRequestPool`
+- `inBuffer->getLength ( ) >= kMaxSegmentSize`
+- `%s::%d:burnin size not set. preserve existing nsid1 size of %llu\n`
+- `virtual void AppleANS2DARTNVMeController::EnableLinearSQ()`
+- `IOReportLegend`
+- `IODeviceTree:/chosen`
+- `71us - 100us`
+- `( 0 != fClients )`
+- `\"Incorrect key being passed : fEncryptionKeySize - 0x%lx, keySize - 0x%lx\\n\" @%s:%d`
+- `NAND failed to boot after update.`
+- `3d-v4`
+- `extended-nvme-timeout`
+- `virtual bool IOEmbeddedNVMeBlockDevice::start(IOService *)`
+- `( 0 != inBlockCount )`
+- `Retry Count`
+- `site.AppleNVMeSubmissionQueue`
+- `%s::%d:configureInterrupts returned 0x%X  \n`
+- `nand-device-desc`
+- `( byteCount == inSize )`
+- `( 0 != dataPhys )`
+- `3d-v2`
+- `( 0 != dataVirt )`
+- `( ( fNSIDToNSType != NULL ) && ( fNamespaces != NULL ) )`
+- `( 0 != kernAddress )`
+- `reserved`
+- `%s::%d:ShutdownNVMe() completed with status = 0x%08x\n`
+- `( 0 != fPendingRequests )`
+- `( 0 != dmaCommand )`
+- `fw-write-done`
+- `%s::%d:Root device is a ramdisk\n`
+- `virtual bool NVMeSEPNotifier::start(IOService *)`
+- `Abort`
+- `%s::%d:Status Code: 0x%X\n`
+- `( 0 != fPRPBuffer )`
+- `( 0 != entitlementsDict )`
+- `Tier2 BW Scale Factor`
+- `( direction == kIODirectionIn ) || ( direction == kIODirectionOut )`
+- `READ`
+- `package_blocks_at_EOL`
+- `ReleaseSuper`
+- `nand-mode`
+- `( 0 != inDataDescriptor )`
+- `virtual bool AppleNVMeNamespaceDevice::start(IOService *)`
+- `inCommand->wrapped`
+- `%s::%d:MSI-X configured.\n`
+- `( inCommand->securityMode < kNVMeSecurityNumModes )`
+- `NVMe SMART Capable`
+- `( 0 != outLogLevel )`
+- `bool AppleEmbeddedNVMeController::IdentifyNamespaces()`
+- `ReleaseArray`
+- `%s::%d:nvme: CORE_DEBUG_GET_NAND_ID failed with status 0x%x\n`
+- `virtual void AppleANS2NVMeController::SetModeselRegister(uint32_t)`
+- `args->structureInputSize == sizeof ( NVMeGetIdentifyStruct )`
+- `( 0 != inQueueSize )`
+- `%s::%d:Restore Environment!\n`
+- `%s::%d:Invalid LogicalBlockSize = %d\n`
+- `( 0 != fProvider )`
+- `nvme-tl-wa`
+- `xnu waited I/Os`
+- `WRITE`
+- `\"nvme: AppleNVMeUpdateUC::FirmwareActivate, ShutdownNVMe() completed with status = 0x%08x\\n\" @%s:%d`
+- `Delete IO completion queue`
+- `%s::%d:size check failed\n`
+- `Hynix`
+- `virtual IOReturn AppleANS2NVMeController::ConfigFWUpdateRetry(IOReturn)`
+- `%s::%d:Setting nand-pe-cycles=0x%X\n`
+- `AppleNVMeUpdateUC.cpp`
+- `static IOReturn AppleNVMeUpdateUC::UpdateMspBfhParams(OSObject *, void *, IOExternalMethodArguments *)`
+- `AppleEmbeddedNVMeNVRAM.cpp`
+- `Time weighted throttle statistics`
+- `%s::%d:unfreezing queue\n`
+- `( 0 != fPCIProvider )`
+- `%s::%d:Could not save PCI device state (0x%x).\n`
+- `virtual IOReturn AppleEmbeddedNVMeController::SetPowerGatingTimeout(uint32_t)`
+- `ID=%d ARG1=0x%x ARG2=0x%x ARG3=0x%x NANDV=0x%x, DRAMV=0x%x, SSDC=%dGB`
+- `ecc-widget-bulk-shadow`
+- `unknown additional info`
+- `IOReturn AppleNVMeEAN::eanWrite(uint32_t, IOMemoryDescriptor *, uint32_t)`
+- `( 0 != pool )`
+- `inMode < kANS2PowerBudgetNumModes`
+- `SanitizeStart`
+- `\"pmap_iommu_ioctl - Setting IOQA base addr - failed\\n\" @%s:%d`
+- `%s::%d:CompleteRequest\n`
+- `IOMaximumSegmentByteCountRead`
+- `ReleaseTableDescriptor`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/AppleNVMeEAN.cpp`
+- `NAND Format changed, erase install required for this build.`
+- `nvme: \"nvme: AllocateScratchBuffer - Unable to allocate IOMD\\n\" @%s:%d`
+- `sec-per-page`
+- `ignore-gating`
+- `( cid < fQueueEntries )`
+- `header->version              = 0x%x \n`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Common/AppleNVMeRequestPool.cpp`
+- `com.apple.AppleNVMeNamespaceDevice.allow`
+- `virtual IOReturn AppleEmbeddedNVMeController::ValidateNamespaceSize(uint8_t)`
+- `( bufferSize % PAGE_SIZE ) == 0`
+- `ibec-boot`
+- `( inImageSize == fHeader->image[imageIndex].imageSize )`
+- `virtual IOReturn IONVMeController::EnableController()`
+- `IOPolledInterface`
+- `IOReturn IONVMeController::PollRegister(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t *)`
+- `Controller fatal bit set`
+- `( 0 != fDDRScratchBufferSize )`
+- `devTreeRoot != NULL`
+- `%s::%d:Found (%s) provider, returning score %d\n`
+- `ReleaseMemoryMap`
+- `Serial Number`
+- `( 0 != data )`
+- `( 0 != inLength )`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/AppleANS2CGv2Controller.cpp`
+- `%s::%d:Link enable failed! (0x%x)\n`
+- `Samsung`
+- `nvme-sppl`
+- `( 0 != provider )`
+- `AppleNAND`
+- `\"ANS DevTreeRoot not found !\\n\" @%s:%d`
+- `site.uint8_t`
+- `%s::%d:InitializeNVMe returned error - 0x%x, hence recovering\n`
+- `%s::%d:inOptions 0x%x\n`
+- `AppleEmbeddedNVMeTemperatureSensor`
+- `( ( inByteStart % NVME_PAGE_SIZE ) == 0 )`
+- `allocatedCQCount >= inNumCQs`
+- `ReleaseQueues`
+- `site.AppleANS2CGv2Controller`
+- `ReleasePoller`
+- `IsInitialized ( )`
+- `site.AppleEmbeddedNVMeController`
+- `%s::%d:No NameSpace Type Mismatch \n`
+- `IOMaximumSegmentByteCountWrite`
+- `%s::%d:Timer workloop is NULL !\n`
+- `inPriority <= NVMeFieldMax ( kNVMeWritePriorityLen )`
+- `inReadLimit <= NVMeFieldMax ( kNVMeThrottlingRLLen )`
+- `inLogID <= NVMeFieldMax ( kNVMeReadDebugLogV2IDLen )`
+- `( 0 != propertiesDictionary )`
+- `%s::%d:Enabling LSQ\n`
+- `setActive`
+- `function-boot_from_host`
+- `%s::%d:Initialize Controller Failed\n`
+- `calendarTimePtr`
+- `SHA3-512`
+- `UninitPCI`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Common/IONVMeControllerPolledAdapter.cpp`
+- `fNamespaces != NULL`
+- `( 0 != fSideBarDevice )`
+- `%s::%d:%s status=0x%x\n`
+- `virtual void IONVMeController::HandleControllerPowerOff()`
+- `%s::%d:nvme: Default IO timeout overriden to %dmS\n`
+- `SSDThermalThrottlingInfo`
+- `Tier2 Throttle Time`
+- `virtual IOReturn AppleEmbeddedNVMeController::newUserClient(task_t, void *, UInt32, OSDictionary *, IOUserClient **)`
+- `nvme-linear-sq-disable`
+- `%s::%d:nvme: ANS Sleep Notification with Opcode %lu failed with ASP status 0x%x\n`
+- `IOMaximumByteCountRead`
+- `\"Num I/Os: %llu; Hash Pass Count: %llu; Hash Fail Count: %llu GetCommandID =%d\\n\" @%s:%d`
+- `( 0 != fHeader )`
+- `virtual bool IONVMeController::handleOpen(IOService *, IOOptionBits, void *)`
+- `AppleNVMeRequest`
+- `paramPtr`
+- `nand-io-timeoutms`
+- `\"nvme: DoHousekeeping failed.\\n\" @%s:%d`
+- `( 0 != prop1Value )`
+- `IOReturn AppleANS2NVMeController::PowerStateAction(unsigned long, unsigned long)`
+- `SHA3 Eval Mode ERROR`
+- `( fControlBitsDescriptor != NULL )`
+- `( 0 != fControlBitsBuffer )`
+- `%s::%d:ECCVersion   : %d\n`
+- `ccuSecurityINTTunables`
+- `virtual uint32_t AppleANS2CGNVMeController::GetNVMePPLQueueEntries()`
+- `( 0 != workLoop )`
+- `ReleaseOutputMap`
+- `%s::%d:EAN headerCRC check failed. headerCRC = 0x%x header->checksum = 0x%x\n`
+- `ReleaseRevNode`
+- `void IONVMeController::DoANSTagFifoWorkaround(uint16_t)`
+- `kern.osversion`
+- `CompleteBuffer`
+- `%s::%d:FirmwareVersionCheck - Current FW: %s Update FW: %s\n`
+- `Hash Type`
+- `%s::%d:nvme: Disabling PCI port failed\n`
+- `virtual IOReturn AppleNVMeNamespaceDevice::GetDeviceProperties()`
+- `selector < kAppleNVMeNamespaceDeviceMethodCount`
+- `Thunderbolt Path`
+- `%s::%d:Flushing FW shadow to NAND\n`
+- `pmlc`
+- `( 0 != ANS2Provider )`
+- `( 0 != verifyHeader )`
+- `DeleteQDArray`
+- `1211111212221212112111111112212221111111211122222112122222222222212111111122222112222221221211111111111111111111111111111111222122212`
+- `Tier0 Throttle Time`
+- `%s Assert failed: %s `
+- `( 0 != iomd )`
+- `nvme-sha3-writes-config`
+- `IOReturn AppleANS2NVMeController::EnableLifeboatMode()`
+- `%s::%d:Exit, inOptions - 0x%x\n`
+- `( tier3BW >= kIONVMeThermalThrottlingBWLimitMin )`
+- `line: %ld `
+- `\n`
+- `( 0 != fAnsSHAMapper )`
+- `( 0 != fFirmwareDevice )`
+- `virtual IOReturn AppleANS2NVMeController::EnableSubmissionQueue(uint16_t)`
+- `( 0 != imageBuffer )`
+- `%s::%d:Error: unknown message: 0x%x\n`
+- `1122`
+- `bool AppleEmbeddedNVMeController::SetSwapWriteLimit(uint32_t)`
+- `( 0 == (( inByteCapacity % kNVME_4K_LogicalBlockSize )) )`
+- `selector < kNVMeSMARTMethodCount`
+- `IOPlatformPanicAction`
+- `Total time elapsed`
+- `nvme-scratch-region`
+- `site.AppleANS3NVMeController`
+- `ecc-widget-llt-shadow`
+- `12111112122212121121111111122122211111112111222221121222222222222121111111222221122222212212`
+- `( 0 != fPowerManagerLock )`
+- `( 0 != virtAddr )`
+- `EmbeddedDeviceTypeBIS`
+- `( modificationsAllowed == true )`
+- `Model string not available`
+- `virtual IOReturn AppleANS2CGv2Controller::PolledEnableCompletionQueue(uint16_t)`
+- `( tier0BW <= kIONVMeThermalThrottlingBWLimitMax )`
+- `AppleEmbeddedNVMeTemperatureSensor *AppleEmbeddedNVMeController::CreateTemperatureSensor()`
+- `chip-id`
+- `( 0 != mapper )`
+- `false`
+- `212212`
+- `void IONVMeController::HandleCompletionErrors(AppleNVMeRequest *, uint32_t)`
+- `nvme`
+- `%s::%d:Blank NAND, Number of namespaces - %d\n`
+- `formatIndex < numFormats`
+- `%s::%d:IOBSD - waitTime - %u sec \n`
+- `IOReturn AppleANS2NVMeController::WaitDeviceActive()`
+- `SHA3 512 ERROR`
+- `virtual bool AppleNVMeEANUC::initWithTask(task_t, void *, UInt32, OSDictionary *)`
+- `NVMe Version`
+- `%s::%d:inSuspend: %d\n`
+- `%s::%d:Found (%s) provider and linear-sq, returning score %d\n`
+- `virtual IOReturn AppleANS2NVMeController::setProperties(OSObject *)`
+- `\"nvme: Unable to allocate IOLock for NVRAM\\n\" @%s:%d`
+- `( 0 != inBufferLength )`
+- `%s::%d:CSTS.RDY = 1, PollCSTS() returned: 0x%x\n`
+- `Identify`
+- `ReleaseUtilLock`
+- `manufacturer-id`
+- `\"burnin-size boot-arg should not be set. Remove burnin-size boot-arg and retry again. \\n\" @%s:%d`
+- `21us - 40us`
+- `inFirmwareSlot <= NVMeFieldMax ( kNVMeFirmwareActivateFSLen )`
+- `virtual bool IONVMeBlockStorageDevice::start(IOService *)`
+- `%s::%d:Finalizing FW Update\n`
+- `12111112122212121222111`
+- `( ( inBufferLength % NVME_PAGE_SIZE ) == 0 )`
+- `( 0 != result )`
+- `virtual void IONVMeController::ThreadEntry()`
+- `%s::%d:Successfully initialized NVMe drive 0x%llX\n`
+- `site.IONVMeBlockStorageDevice`
+- `inSecurityMode < kNVMeSecurityNumModes`
+- `nvme: \"nvme: AppleEmbeddedNVMeController::ThreadEntry, ShutdownNVMe() completed with status = 0x%08x\\n\" @%s:%d`
+- `IOMaximumSwapWrite`
+- `( imageSize % NVME_PAGE_SIZE ) == 0`
+- `( dataOffset + dataSize ) <= namespaceSize`
+- `%s::%d:Entry, inOptions - 0x%x\n`
+- `Read`
+- `inSlotMask <= NVMeFieldMax ( kNVMeDeleteFirmwareSlotSMLen )`
+- `virtual bool AppleEmbeddedNVMeController::IsFullInit()`
+- `fANS2CCUSecurityINTBaseAddress`
+- `%s::%d: --update sectionID = %d\n`
+- `%s::%d:Invalid key length for unwrapped key %d`
+- `( result == true )`
+- `virtual bool AppleANS2NVMeController::CheckNameSpaceSizeMismatch()`
+- `IOMaximumBlockCountWrite`
+- `EmbeddedDeviceTypeEAN`
+- `%s::%d:Exit Failed\n`
+- `121111121222121211222`
+- `IOPCITunnelled`
+- `Tier1 Throttle Time`
+- `-restore`
+- `%s::%d:WARNING: NSID : %u, NSSize EDT : 0x%x, NSSize NAND : 0x%llx \n`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/AppleANS2CGNVMeController.cpp`
+- `\"pmap_iommu_map failed\\n\" @%s:%d`
+- `virtual bool AppleEmbeddedNVMeDiagnostics::start(IOService *)`
+- `( descriptor != NULL )`
+- `nvme: \"Image checksum failed. ExpectedCRC = 0x%x @ OldOffset = 0x%x, inImageIndex = %d, ErrorCRC = 0x%x @ NewOffset = 0x%x, key = 0x%x, size=0x%x unmapOffset = 0x%x, unmapSize = 0x%x \\n\" @%s:%d`
+- `site.AppleNVMeRequest *`
+- `%s::%d:nvme: CORE_DEBUG_SET_BG_ACCEL_FACTOR failed with status 0x%x\n`
+- `bool AppleEmbeddedNVMeController::SetNANDIDProperties(OSDictionary *)`
+- `%s::%d:PPM not available.\n`
+- `virtual IOReturn AppleANS2CGNVMeController::PolledEnableCompletionQueue(uint16_t)`
+- `ReturnCommand`
+- `Sanitize Status Bytes Read`
+- `( fNumTimedOutRequests == 0 )`
+- `NamespaceUUID`
+- `121111121222121211211111111221222111111121112222211212222222222221211111112222211222222122121111111111111111111111111111111122212221221111111111112211121111111111111111111111111111111111111111111111111111111111111111222222222222222222222222222222222221121221211111111111111111211111211112112112111111`
+- `( 0 != request )`
+- `\"Invalid Tier\" @%s:%d`
+- `( queue->fEnabled == false )`
+- `virtual bool AppleNVMeNamespaceUC::initWithTask(task_t, void *, UInt32, OSDictionary *)`
+- `Max Data Transfer Size`
+- `fSegBufferSPTM`
+- `( 0 != argsVirt )`
+- `%s::%d:Failed resetting controller.`
+- `nstype < kNumEmbeddedNamespaceTypes`
+- `ReleaseInputBounceBuffer`
+- `%s::%d:NVMe Namespace Device missing for client process %s (pid %d)\n`
+- `inPriority <= NVMeFieldMax ( kNVMeCreateSQPriorityLen )`
+- `( CC != kNVMeInvalidRegisterValue32 )`
+- `site.AppleNVMeUserClient`
+- `/chosen`
+- `fSanitizeInProgress == false`
+- `1211111212221212112111111112212221111111211122222112122222222222212111111122222112222221221211111111111111111111111111111111222122212211111111111122111211111111111111111111111111111111111111111111111111111111111111112222222222222222222222222222222222211212212111`
+- `%s::%d:This is an FPGA\n`
+- `( 0 != fDDRScratchBufferBase )`
+- `virtual bool AppleEmbeddedNVMeController::disablePCIPort(bool)`
+- `sec-per-full-band`
+- `( 0 != bufferMap )`
+- `( 0 != fLockGroup )`
+- `%s::%d:FIFO count=%d. needUnfreeze=%d\n`
+- `site.AppleANS2DARTNVMeController`
+- `nvme-powergating-timeoutus`
+- `%s::%d:nvme: kern.monotonicclock failed with %x\n`
+- `3d-g3`
+- `%s::%d:Sending InitializeNVMe\n`
+- `%s::%d:Successfully initialized NVMe CoastGuard\n`
+- `selector < kUpdateMethodCount`
+- `( 0 != inImageSize )`
+- `IODeviceTree:/defaults`
+- `vccOutput`
+- `virtual IOReturn IOEmbeddedNVMeBlockDevice::doAsyncReadWrite(IOMemoryDescriptor *, UInt64, UInt64, IOStorageAttributes *, IOStorageCompletion *)`
+- `Create IO submission queue`
+- `inProperties`
+- `( 0 != newRequest )`
+- `Product Revision Level`
+- `%s::%d:Found (%s) provider with DART, returning score %d\n`
+- `IOReturn AppleEmbeddedNVMeController::IssueFlush(uint32_t)`
+- `virtual IOReturn AppleANS2CGv2Controller::EnableCompletionQueue(uint16_t)`
+- `site.AppleNVMeController`
+- `%s::%d:Timed out on reading NAND info\n`
+- `void AppleNVMeRequest::PrintRequest()`
+- `( 0 == (err) )`
+- `NAND FW update failed to activate, request retry.`
+- `AES-XTS`
+- `Command Specific Status`
+- `( 0 != newDebugDictionary )`
+- `%s::%d:BDR failed\n`
+- `ret == true`
+- `virtual IOReturn AppleANS2NVMeController::systemPowerChange(void *, UInt32, IOService *, void *, vm_size_t)`
+- `SHA3 Stats`
+- `( 0 != device )`
+- `ResetUtil`
+- `( CAP & kNVMe_CAP_CommandSetSupported_NVM_Mask )`
+- `%s::%d:Restore boot. Restricted init.\n`
+- `cau-per-die`
+- `%s::%d:NVMe FWNamespace entitlement value bad for client process %s (pid %d)\n`
+- `storage-lane-common-tunables`
+- `%s::%d:Setting nand-mode=0x%08X\n`
+- `\"pmap_iommu_ioctl - Setting IOSQ base addr - failed\\n\" @%s:%d`
+- `( LBADataSize >= kNVME_512_LBA_Data && LBADataSize <= kNVME_Max_LBA_Data )`
+- `NVMe Revision Supported`
+- `Controller Characteristics`
+- `%s::%d:NSType\t: %d\n`
+- `pages-per-block-slc`
+- `setBudgetToKernelClientFunction`
+- `virtual void AppleANS2NVMeController::SetRuntimeProperties()`
+- `virtual bool AppleANS2NVMeController::IsClogMismatch()`
+- `( count <= kNVMeLBARangeEntryMaximumBlockCount )`
+- `fCompletionQ[inQueueID].fEnabled`
+- `%s::%d:maxTransactionSize = %u\n`
+- `1ms+`
+- `\"nvme: Invalid provider for NVRAM\\n\" @%s:%d`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/AppleNVMeNamespaceUC.cpp`
+- `( 0 != fRequestTimer )`
+- `AppleNVMeController`
+- `AppleNVMeController.cpp`
+- `%s. %s. %s. ID=0x%x ARG1=0x%x ARG2=0x%x ARG3=0x%x EDD0=0x%x EDD1=0x%x EDD2=0x%x EDD3=0x%x EDD4=0x%x EDD5=0x%x EDD6=0x%x EDD7=0x%x NANDV=0x%x, DRAMV=0x%x, SSDC=%dGB`
+- `%s::%d:Blank NAND. Will create dummy block device\n`
+- `fAXI2AFDualBaseAddress`
+- `dual-spi-nand`
+- `virtual bool AppleEmbeddedNVMeNVRAM::start(IOService *)`
+- `( isKeyAllowed == true )`
+- `12111112122212121111222111122222222221212121111222222222221`
+- `( clientIsEntitled == true )`
+- `%s::%d:Timed out on device active magic.\n`
+- `( 0 != bounceBuffer )`
+- `AppleANS2CGNVMeController`
+- `nvme-coastguard`
+- `( ( unmapSize % NVME_PAGE_SIZE ) == 0 )`
+- `( 0 != dataSize )`
+- `Delete IO submission queue`
+- `virtual uint32_t AppleANS2CGv2Controller::GetNVMeSPTMQueueEntries()`
+- `( CAP != kNVMeInvalidRegisterValue64 )`
+- `propertiesDictionary`
+- `%s::%d:nvme: Serial Number : %s\n`
+- `%s::%d:nvme: CORE_DEBUG_SET_TIME failed with status 0x%x\n`
+- `( 0 != bufferDescriptor )`
+- `nvme-completion-loops`
+- `( fControllerInitialized == true )`
+- `( PRPEntryCount <= ( ( fPRPSize / sizeof ( PRPEntry ) ) + 1 ) )`
+- `program-scheme`
+- `%s::%d:Error - Current FW does not match Update FW\n`
+- `( 0 != tableTunnelOp )`
+- `This NAND configuration has incompatible packages.`
+- `nand-marketing-name`
+- `bool AppleEmbeddedNVMeController::CheckClogVersionMismatch()`
+- `nvme: \"nvme: AllocateScratchBuffer - fDDRScratchBufferBase %p fDDRScratchBufferSize 0x%x\\n\" @%s:%d`
+- `%s::%d:nvme: Setting IOSQ base addr %p\n`
+- `IOReturn AppleANS2NVMeController::SetNANDMode()`
+- `( 0 != fNVMeObject )`
+- `ReleaseSysConfigDescriptor`
+- `burnin-size`
+- `LBAFormat->METADATA_SIZE == 0`
+- `pages-in-read-verify`
+- `1211111212221212111111121121`
+- `%s::%d: This is an NVMemu device\n`
+- `nvme-iboot-sptm-security`
+- `InitExit`
+- `( ( inBufferLength / NVME_PAGE_SIZE ) <= numBlocks )`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/AppleANS2DARTNVMeController.cpp`
+- `NAND Controller Init Failed`
+- `3d-v3`
+- `( 0 != grpMap )`
+- `( isKeyUsed == true )`
+- `AppleNVMeSMARTUserClient`
+- `%s::%d:DNR: 0x%X M: 0x%X\n`
+- `requestIndex < fRequestPoolSize`
+- `( 0 != geomVirt )`
+- `nvme-ans-sha-present`
+- `site.AppleEmbeddedNVMeDiagnostics`
+- `IOReturn IONVMeLifeboatBlockDevice::readData(IOMemoryDescriptor *, UInt64, UInt64, UInt8 *, UInt8, UInt64, UInt64 *)`
+- `header->totalSize            = 0x%x \n`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/AppleNVMeEANUC.cpp`
+- `args->structureInputSize == sizeof ( NVMeGetLogPageStruct )`
+- `SMART Critical Warning`
+- `virtual IOReturn AppleEmbeddedNVMeController::FirmwareVersionCheck(void *)`
+- `static IOReturn AppleNVMeFWNamespaceUC::rollbackFWImage(OSObject *, void *, IOExternalMethodArguments *)`
+- `IOMinimumSegmentAlignmentByteCount`
+- `%s::%d:CSTS.RDY = 0, PollCSTS() returned: 0x%x\n`
+- `%s::%d:SQ index=%d entrysize=%d GetAdminSQES ( ) = %d\n`
+- `%s::%d:All requests completed, resuming deferred stack teardown`
+- `!inCommand->wrapped`
+- `Unmap`
+- `<<Warning: Unknown value for kVendorStrings>>`
+- `block-pairing-scheme`
+- `%s::%d:NVMe LinearSQ disabled through boot-arg\n`
+- `fRTBuddyService`
+- `VCParams`
+- `IOEmbeddedNVMeBlockDevice`
+- `AppleEmbeddedNVMeDiagnostics`
+- `IOReturn AppleANS2CGv2Controller::SendOSBuildStrToDevice()`
+- `DeleteRequestProcessLock`
+- `Sanitize Status Start Time`
+- `virtual IOReturn IONVMeController::CheckWriteProtection()`
+- `Security receive`
+- `( fProvider->isInactive ( ) == false )`
+- `AppleNVMeRequestTimer.cpp`
+- `inAccessFrequency <= NVMeFieldMax ( kNVMeReadAccessFrequencyLen )`
+- `inLogID <= NVMeFieldMax ( kNVMeWriteDebugLogV2IDLen )`
+- `SHA3 384 ERROR`
+- `APPLE SSD`
+- `inReadLimit != 0`
+- `inActivateAction <= NVMeFieldMax ( kNVMeFirmwareActivateAALen )`
+- `QueueDelete`
+- `QueueDepths`
+- `( 0 != fTokens )`
+- `ReleaseDT`
+- `%s::%d:fBootFromHostFunc is NULL!\n`
+- `%s::%d:ErrorExit: status = 0x%0X\n`
+- `NAND\n`
+- `%s::%d:Found %d namespaces in current NAND\n`
+- `1D`
+- `bis-write-done`
+- `virtual IOReturn AppleANS2CGNVMeController::PolledEnableSubmissionQueue(uint16_t)`
+- `%s::%d:wake\n`
+- `<<Warning: Unknown value for k3DHynixLithographyStrings>>`
+- `Min Poll SL (ns)`
+- `com.apple.nvmefwupdate.allow`
+- `UpdateMspBfhParams`
+- `%s::%d:Image checksum failed for Key = %c%c%c%c ( 0x%x )\n`
+- `void AppleNVMeEAN::imageSizeCheck(uint32_t, uint32_t)`
+- `virtual bool IONVMeController::start(IOService *)`
+- `%s::%d:allocateAll %d\n`
+- `IOReturn AppleANS2NVMeController::SetNANDPECycles()`
+- `EmbeddedDeviceTypeME`
+- `( 0 != outputBounceData )`
+- `%s::%d: Block Count = %llu \n `
+- `IOReturn AppleNVMeEAN::eanRead(uint32_t, IOMemoryDescriptor *, uint32_t)`
+- `static bool AppleNVMeSMARTUserClient::IsTunnelPermitted(AppleNVMeSMARTUserClient *, uint32_t)`
+- `bool IONVMeController::CheckCFS()`
+- `%s::%d:Setting SHA base addr 0x%llx \n`
+- `function-pcie_port_control`
+- `%s::%d:SetATVMode failed.\n`
+- `void AppleANS2CGNVMeController::NVMeCoastGuardSetTCBEntry(tcb_queue_entry *, AppleNVMeRequest *)`
+- `vendor-id`
+- `\"pmap_iommu_ioctl - NVME_SET_SQ_ENTRY - failed\\n\" @%s:%d`
+- `<<Warning: Unknown value for kChipIDStrings>>`
+- `paramData`
+- `fNamespaceSizes`
+- `pages-per-block0`
+- `IOReturn AppleANS2NVMeController::PublishPCIUpDARTMapping()`
+- `\"pmap_iommu_ioctl - Setting IOCQ base addr - failed\\n\" @%s:%d`
+- `Fatal error`
+- `site.IONVMeControllerPolledAdapter`
+- `virtual IOReturn AppleNVMeRequestPoolTagReserve::Rebuild(uint8_t, uint32_t, bool, NVMeCGType_t, IOMapper *)`
+- `%s::%d: Swap limit set to %llubytes, %lluGB\n`
+- `%s::%d:\nCreating %d namespaces on NAND\n`
+- `\"Invalid qid/Direction qid = %d Dir = %d\" @%s:%d`
+- `Apple`
+- `%s::%d:address=0x%qx size=%d offset=%d maxTxnSize %u\n`
+- `NVMe CSTS Poll Time`
+- `inWriteLimit <= NVMeFieldMax ( kNVMeThrottlingWLLen )`
+- `AppleEmbeddedNVMeController.cpp`
+- `%s::%d:Committing FW shadow to NAND\n`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/AppleANS3NVMeController.cpp`
+- `inCoreID <= kNVMeLoggerConfigCoreIDs`
+- `NamespaceID`
+- `%s::%d:nvme: CORE_DEBUG_SET_NAND_QUAL failed with status 0x%x\n`
+- `6th Gen Lithography`
+- `VCActualSizeBytes`
+- `parity-widget-shadow`
+- `( 0 != ( ( ( phyTextAddress == 0 ) && ( phyDataAddress == 0 ) ) || ( ( phyTextAddress != 0 ) && ( phyDataAddress != 0 ) ) ) )`
+- `ReleaseAllResources`
+- `( ( CAP & kNVMe_CAP_MPS_Min_Mask ) == 0 )`
+- `%s::%d:Entering suspend\n`
+- `%s::%d:FW update not complete, create dummy block device\n`
+- `VCTotalSizeBytes`
+- `me->fProvider`
+- `site.AppleNVMeCompletionQueue`
+- `Set features`
+- `( 0 != psIterator )`
+- `%s::%d:Client process %s (pid %d) is missing entitlement %s\n`
+- `registerKernelClientToApplePPMFunction`
+- `IOReturn AppleANS2NVMeController::ConfigPcieSTGLanes(bool)`
+- `checksum                     = 0x%x \n`
+- `Tier0 BW Scale Factor`
+- `void AppleEmbeddedNVMeController::SetNumBurninBlks(int64_t)`
+- `%s::%d:mapped addr: 0x%016llx, len: 0x%08llx\n`
+- `SanitizeFailed`
+- `nsCreated == true`
+- `%s::%d:NVMe SideBar namespace entitlement missing for client process %s (pid %d)\n`
+- `( 0 != fWorkLoop )`
+- `Priority`
+- `%s::%d:Clog Version Mismatch found on non-blank part \n`
+- `%s::%d:Could not restore PCI device state (0x%x).\n`
+- `%s::%d:nvme: Tunnel command CORE_DEBUG_GET_NAND_GEOM failed with status 0x%x\n`
+- `BiCS 4`
+- `( 0 != fLock )`
+- `IOReturn AppleANS2NVMeController::CreatePCIeUPDARTMapping()`
+- `( 0 != fLifeboatBlockDevice )`
+- `( 0 != externalInputData )`
+- `%s::%d:This is a fastsim product \n`
+- `virtual void AppleANS3CGv2Controller::EnableLinearSQ()`
+- `nvme-sha3-force-sha`
+- `( status == kIOReturnSuccess )`
+- `( 0 != tunnelArgsData )`
+- `uint32_t AppleEmbeddedNVMeNVRAM::GetNVRAMSize()`
+- `( fCompletionQ[inQueueID].fEnabled == true )`
+- `Generic Command Status`
+- `%s::%d:burnin blks set to %lld from %lld\n`
+- `IOMaximumSegmentCountWrite`
+- `ReleaseAPILock`
+- `( 0 != inNumDwords )`
+- `buffer`
+- `vccOutputNum`
+- `%s::%d:No NameSpace Size Mismatch \n`
+- `vccInput1Number`
+- `virtual IOReturn AppleANS2NVMeController::GetVirtualCardSize(OSDictionary *, uint64_t *)`
+- `IOMaximumSegmentCountRead`
+- `1211111212221212111111111111112`
+- `( 0 != fSubmissionQ )`
+- `( 0 != fCompletionQ )`
+- `virtual bool AppleEmbeddedNVMeController::SetNANDQual()`
+- `bdr-factor`
+- `S5E`
+- `%s::%d:EnableLifeboatMode = %u\n`
+- `site.IOEmbeddedNVMeBlockDevice`
+- `true`
+- `site.AppleNVMeEAN`
+- `DeleteCompletionQueues`
+- `( imageCRC32 == fHeader->image[imageIndex].checksum )`
+- `site.pmap_paddr_t`
+- `( inSideBarVersion == 0 ) || ( fOwner->metaCast(\"AppleNVMeNamespaceDevice\") != NULL )`
+- `virtual void AppleEmbeddedNVMeController::ThreadEntry()`
+- `rd`
+- `sizeof ( uint32_t ) == bdrFactorData->getLength ( )`
+- `SHA3-384`
+- `Physical Interconnect Location`
+- `%s. %s. %s. fBuiltIn=%d MODEL=%s FW=%s CSTS=0x%x US[1]=0x%llx US[0]=0x%llx VID=0x%x DID=0x%x CRITICAL_WARNING=0x%x\n`
+- `propertiesToSetDictionary`
+- `static AppleNVMeRequestPoolTagReserve *AppleNVMeRequestPoolTagReserve::Create(AppleNVMeWorkLoop *, uint8_t, uint16_t, uint32_t, bool, NVMeBufferAllocator *, lck_mtx_t *, NVMeCGType_t, IOMapper *)`
+- `( 0 != fMEDevice )`
+- `cell-type`
+- `command-accelerator-tunables`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/NVMeSEPNotifier.cpp`
+- `role`
+- `( 0 != dict )`
+- `fANS2SLCommonBaseAddress`
+- `IODeviceTree:/arm-io/ans`
+- `EmbeddedDeviceTypeRoot`
+- `( 0 != fSysConfigBuffer )`
+- `( 0 != tableDesc )`
+- `MPS Min`
+- `%02d.%02d.01`
+- `\"NVMe desc is NULL!\\n\" @%s:%d`
+- `site.AppleNVMeUpdateUC`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/AppleEmbeddedNVMeNVRAM.cpp`
+- `Security send`
+- `enable-IO-log`
+- `inNumBlocks <= NVMeFieldMax ( kNVMeWriteDebugLogNLBLen )`
+- `Incompatible build downgrade due to NAND Util Format, cannot install this build.`
+- `root`
+- `\"nvme: Invalid size for NSID %d\\n\" @%s:%d`
+- `site.AppleEmbeddedNVMeTemperatureSensor`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/IONVMeEffaceableDevice.cpp`
+- `( me->fEntitledClient == true )`
+- `( 0 != outputBounceBuffer )`
+- `( tier2BW <= kIONVMeThermalThrottlingBWLimitMax )`
+- `%s::%d:nvme: Tunnel command CORE_DEBUG_SET_TIME failed with status 0x%x\n`
+- `num-dip`
+- `afc-aiu-ans-dual-tunables`
+- `nvme-coastguard-disable`
+- `( 0 != poller )`
+- `IONVMeBlockStorageDevice`
+- `virtual IOReturn AppleNVMeController::performNVMeShutdownTasks()`
+- `num-bus`
+- `%s::%d:NVMe FWNamespace entitlement missing for client process %s (pid %d)\n`
+- `nvme-sha3-sw-calc`
+- `IOReturn AppleEmbeddedNVMeDiagnostics::InitializeContents()`
+- `static IOReturn AppleNVMeUpdateUC::FirmwareDownload(OSObject *, void *, IOExternalMethodArguments *)`
+- `nvme: \"EAN verifyImages() failed during eraseImage()\\n\" @%s:%d`
+- `( 0 != sensor )`
+- `namespaces-present`
+- `%s::%d:namespaces-present not found!\n`
+- `( 0 != outParams )`
+- `virtual IOReturn IONVMeController::SendShutdownNotification(bool)`
+- `%s::%d:status = 0x%X\n`
+- `Loss of MMIO space`
+- `%s::%d:%s LBA=0x%08x BLOCKS=0x%08x DWORD13=0x%08x NVMeStatus=0x%x\n`
+- `Exit`
+- `UninitializeController`
+- `nvme-clockgating-timeoutus`
+- `%s::%d:inByteCapacity set. NSID1 now set to %lld\n`
+- `%s::%d:nvme: CORE_DEBUG_SET_QOS_PARAMETERS failed with status 0x%x\n`
+- `virtual void AppleEmbeddedNVMeController::InitializeWallTime()`
+- `virtual IOReturn AppleANS2NVMeController::AllocateResources()`
+- `%s::%d:NS %d %s from LBA 0x%llX ( %llu ) for %llu LBAs with fShadowBufferEnabled = %s buffer %p\n`
+- `IOBSD`
+- `AppleNVMeUserClient`
+- `ReleaseProvider`
+- `( 0 == (arguments->structureOutputSize) )`
+- `site.AppleEmbeddedNVMeNVRAM`
+- `SGL Support`
+- `( 0 != fLogBuffers.fBuffers[core] )`
+- `debugData->getLength ( ) == sizeof ( debug )`
+- `IOReturn IOEmbeddedNVMeBlockDevice::writeData()`
+- `( 0 != dataBuffer )`
+- `IODeviceTree:/arm-io`
+- `virtual bool IONVMeController::didTerminate(IOService *, IOOptionBits, bool *)`
+- `\"AppleNVMeController::PolledIO, trying to do polled IO with polled command in flight, inPolledIOSelector = 0x%08x\\n\" @%s:%d`
+- `IONVMeBlockStorageDevice.cpp`
+- `fNamespaces == NULL`
+- `NVMe Power States`
+- `dict`
+- `fNVRAMSize`
+- `IONVMeLifeboatBlockDevice`
+- `( params->numDWords <= NVMeFieldMax ( kNVMeGetLogPageNumDwordsLen ) )`
+- `( fProvider->IsQoSSupported ( ) == true )`
+- `caus`
+- `( aspStatus == ASPPROTO_CMD_STATUS_SUCCESS )`
+- `%s::%d:EAN StartDevice Done\n`
+- `Number of Namespaces`
+- `IsSanitizeAllowed ( ) == true`
+- `( 0 != argsPhys )`
+- `[NVMe]`
+- `The NAND packages are in the wrong order from a previous format. NAND chips can be moved machines, but must be kept in the same order.`
+- `virtual bool AppleEmbeddedNVMeController::SetQoSParameters()`
+- `fANSSHABlockBaseAddress`
+- `( ( fNamespaceSizes != NULL ) && ( fNamespaces != NULL ) )`
+- `( ret == true )`
+- `virtual IOReturn AppleANS2CGNVMeController::EnableSubmissionQueue(uint16_t)`
+- `%s::%d:fProvider: 0x%p messageType: 0x%X\n`
+- `selector < kAppleSanitizeMethodCount`
+- `uint32_t AppleNVMeEAN::eanGetSize(uint32_t)`
+- `virtual void IONVMeController::systemWillShutdown(IOOptionBits)`
+- `fIOMapRegs`
+- `NVMe CC`
+- `Async event request`
+- `ReleaseIDNode`
+- `inParamPage <= NVMeFieldMax ( kNVMeFEParamsPageLen )`
+- `iFPGA`
+- `<<Warning: Unknown value for kDimensionStrings>>`
+- `1211111212221212111111111111121122`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/AppleNVMeUpdateUC.cpp`
+- `AppleNVMeNamespaceDevice`
+- `Preferred IO Size`
+- `%s::%d:Could not read CSTS.\n`
+- `ClearDescriptor`
+- `virtual bool AppleEmbeddedNVMeController::StartController()`
+- `endpointName`
+- `SHA3 512 PASS`
+- `%s::%d:Entry\n`
+- `%s::%d:Controller is already terminated`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Common/AppleNVMeBuffer.cpp`
+- `( 0 != fPRPPhysicalAddress )`
+- `3d-g2`
+- `%s::%d:Clog Mismatch found\n`
+- `nvme-queue-entries`
+- `( 0 != inBuffer )`
+- `virtual void AppleANS2NVMeController::ParseSanitizeCounters(uint8_t *)`
+- `%s::%d:inRequest->fSHAType = %d numHashes = %d isPackedHashes = %d ansShaBuffer = %p fEvalModeHashBuffer = %p inRequest = %p GetCommandID = %d\n`
+- `com.apple.nvmetunnel.allow`
+- `Decrement`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/AppleEmbeddedNVMeController.cpp`
+- `121111121222121211111111111111221`
+- `%s::%d:cancelling S2R IDLE Sleep\n`
+- `selector < kAppleNVMeEANMethodCount`
+- `1`
+- `( fAllocatedPool == false )`
+- `%s::%d:CRITICAL_WARNING=0x%x\n`
+- `( inQueueID < kMaxSubmissionQueue )`
+- `virtual bool AppleEmbeddedNVMeController::GetProviderFunctions()`
+- `Total I/Os`
+- `site.AppleNVMeNamespaceUC`
+- `( dataOffset % blockSize ) == 0`
+- `ReleasePendingRequests`
+- `( 0 != pciPMCapability )`
+- `nvme-write-credit-t1`
+- `isInactive ( ) == false`
+- `%s::%d:Found ATV.\n`
+- `%s::%d:Setting nand-debug. low=0x%08X high=0x%08X\n`
+- `%s::%d:Returning error status 0x%X\n`
+- `header->signature            = 0x%x \n`
+- `Tier3 BW Scale Factor`
+- `virtual void AppleEmbeddedNVMeController::SetRuntimeProperties()`
+- `1x`
+- `\"pmap_iommu_ioctl - Setting Admin Queue Regs - failed\\n\" @%s:%d`
+- `NVMeSEPNotifier`
+- `( 0 != inputBounceBuffer )`
+- `%s::%d:nvme: Tunnel command CORE_DEBUG_SET_BG_ACCEL_FACTOR failed with status 0x%x\n`
+- `%s::%d:Key = %c%c%c%c ( 0x%x ) is not on the allow list. To access EAN with key file a radar\n`
+- `( 0 != inExtentBuffer )`
+- `virtual void AppleNVMeController::CreateHousekeepingTimerEventSource()`
+- `\"Could not create timer event source.\\n\" @%s:%d`
+- `inSanitizeAction <= NVMeFieldMax ( kNVMeSanitizeActionLength )`
+- `ReleaseClients`
+- `virtual IOReturn AppleEmbeddedNVMeController::SetNVMeProperties()`
+- `site.AppleANS2NVMeController`
+- `ReleaseRequestTimer`
+- `\"%s: assert failed: \" \"inOldRequest != NULL\" \" %s:%u\\n\" @%s:%d`
+- `ResourceDeallocate`
+- `( tier1BW <= kIONVMeThermalThrottlingBWLimitMax )`
+- `void AppleEmbeddedNVMeController::GetRestoreEnvironment()`
+- `Required NAND FW was not updated (fatal).`
+- `%s::%d:FTL Rev      : %d.%d\n`
+- `%s::%d:Burn-in blks set. NSID1 now sized to %lld\n`
+- `3D`
+- `%s::%d:NVMe CoastGuard disabled through boot-arg\n`
+- `args->scalarInputCount == 2`
+- `%s::%d:nvme: %s %X %s %s %s %s %qd plane %dGB `
+- `IOReturn AppleEmbeddedNVMeController::SetATVMode()`
+- `pages-per-block-mlc`
+- `%s::%d:geom V2 failed. Falling back on V1.\n`
+- `%s::%d:ProcessingError, status = 0x%x\n`
+- `12111112122212121212211111221`
+- `( 0 != inRequest )`
+- `NVMeSMARTLib.plugin`
+- `YMTC`
+- `\"pmap_iommu_ioctl - NVME_PPL_IOCTL_ENABLE_CG - failed\\n\" @%s:%d`
+- `NS_xxxxxxxxxx`
+- `%s::%d:NVMe Namespace Device registration done for NSID: %u, NSTYPE: %u\n`
+- `( inPriority < kNVMeSQNumPrios )`
+- `( isInactive ( ) == false )`
+- `ReleaseTimer`
+- `fTemperatureSensor`
+- `virtual IOReturn AppleEmbeddedNVMeController::CreateIOReporter()`
+- `( fSARTMapper == NULL )`
+- `compatible`
+- `raid`
+- `ReleaseControlBitsDescriptor`
+- `%s::%d:burnin-size is %d\n`
+- `( 0 != fFWNamespaceDevice )`
+- `watch`
+- `iobsd-wait-time`
+- `parityWidgetShadow`
+- `virtual bool AppleNVMeEAN::StartDevice(IOService *)`
+- `121121111211`
+- `NVMe Debug Data`
+- `( 0 != fBISDevice )`
+- `%s::%d:Setting modesel to %d\n`
+- `( 0 != PPMClient )`
+- `121111121222121211111111111112`
+- `site.IONVMeEffaceableDevice`
+- `%s::%d:NVMe tunnel entitlement is false for client process %s (pid %d)\n`
+- `( 0 != externalOutputData )`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Common/AppleNVMeWorkLoop.cpp`
+- `<<Warning: Unknown value for k3DLithographyStrings>>`
+- `power-budget-active`
+- `%s::%d:freezing queue\n`
+- `( 0 != fRequestProcessLock )`
+- `NVMe Controller Client WL %d`
+- `%s::%d:DWORD0=0x%08x DWORD10=0x%08x NVMeStatus=0x%x\n`
+- `\"AppleNVMeController::PolledIO: Invalid key length %d\\n\" @%s:%d`
+- `virtual bool AppleEmbeddedNVMeController::AllocateNodes(bool)`
+- `%s::%d:Root device is %s\n`
+- `virtual IOReturn AppleEmbeddedNVMeController::SendTimeToDevice()`
+- `static IOReturn AppleNVMeFWNamespaceUC::writeDescriptorTable(OSObject *, void *, IOExternalMethodArguments *)`
+- `nvme: \"ShutdownNVMe() completed with status = 0x%08x\\n\" @%s:%d`
+- `( 0 != timer )`
+- `%s::%d:Invalid key length for wrapped key %d`
+- `Physical Interconnect`
+- `virtual bool AppleANS2CGNVMeController::InitializePCI()`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/AppleEmbeddedNVMeDiagnostics.cpp`
+- `Max Queue Size`
+- `%s::%d:NVMe Queue Entries=%d\n`
+- `( 0 != fReporterList )`
+- `me-write-done`
+- `( 0 != algorithms )`
+- `static IOReturn AppleNVMeUserClient::Sanitize(OSObject *, void *, IOExternalMethodArguments *)`
+- `\"pmap_iommu_ioctl - NVME_PPL_IOCTL_SET_SQ_ENTRY - failed\\n\" @%s:%d`
+- `%s::%d:block count changing from %llu -> %llu\n`
+- `%s::%d:PR context\n`
+- `NAND Block Device Creation Failed`
+- `%s::%d:Link disable failed! (0x%x)\n`
+- `nvme-sha3-disable`
+- `\"nvme: Missing key!\\n\" @%s:%d`
+- `imageOffset                  = 0x%x --> LBA %d\n`
+- `( 0 != inArgsBuff )`
+- `AppleNVMe`
+- `pad`
+- `%s::%d:Found the ANS2Endpoint1\n`
+- `( 0 != fwBuffer )`
+- `ResetUtilUser`
+- `site.AppleNVMeNamespaceDevice`
+- `IOCommandPoolSize`
+- `ReleaseInterrupt`
+- `kIOReturnSuccess == (aspStatus)`
+- `%s::%d:NVMe Request Pool Init (Tag Reservation Case). Second phase, RequestCount = %u\n`
+- `virtual bool AppleEmbeddedNVMeController::enablePCIPort(bool)`
+- `AppleEmbeddedNVMeNVRAM`
+- `ean-debug`
+- `( 0 != address )`
+- `fProvider->isInactive ( ) == false`
+- `IOReturn IONVMeController::PollCSTS(uint32_t, uint32_t, uint32_t, uint32_t)`
+- `ReleaseDataBuffer`
+- `%s::%d: failed with status - 0x%x\n`
+- `updateCounter                = 0x%x \n`
+- `( 0 != bufferSize )`
+- `bool IONVMeController::RequestFoundInCompletionQueue(AppleNVMeRequest *)`
+- `%s `
+- `nvme-interrupt-idx`
+- `inNumBlocks <= NVMeFieldMax ( kNVMeReadNumLBlocksLen )`
+- `Physical Block Size`
+- `%s::%d:NVMe Request Pool Init (Tag Reservation Case). First phase, RequestCount = %u\n`
+- `virtual IOReturn AppleANS2NVMeController::PerformBFH(void *, uint32_t, void *, uint32_t, void *, uint32_t, task_t)`
+- `%s::%d:Error - Current S4e FW UUID = %s does not match Update S4E FW UUID = %s \n`
+- `%s::%d:Sleep Notification Tunnel for msg type %u took %llu us\n`
+- `ReleaseInputDescriptor`
+- `%s::%d:EAN header version updated from %d to %d \n`
+- `void IONVMeController::FatalHandling()`
+- `( 0 != idNode )`
+- `\"total_write_credits (%u) > requestCount/2 (%u)\" @%s:%d`
+- `dataCopy`
+- `%s::%d:ibec-boot found %d\n`
+- `slc`
+- `eccWidgetBulkShadow`
+- `nvme-ans-ppm-budget`
+- `Effaceable`
+- `Unknown`
+- `virtual IOReturn AppleEmbeddedNVMeController::PreCCEnableHook()`
+- `nvme-fw-minor-check-disable`
+- `virtual IOFilterInterruptEventSource *AppleANS2NVMeController::CreateDeviceInterrupt(IOInterruptEventSource::Action, IOFilterInterruptEventSource::Filter, IOService *)`
+- `%s::%d:NVMe SideBar client process %s (pid %d) is not entitled\n`
+- `CompleteIOMD`
+- `inNumBlocks <= NVMeFieldMax ( kNVMeReadDebugLogNLBLen )`
+- `nvme-write-credit-t3`
+- `DeleteTemperatureSensor`
+- `virtual IOService *AppleANS3NVMeController::probe(IOService *, SInt32 *)`
+- `( gNVMeDebugFlags & kNVMeEnableDebugLoggingMask ) != 0`
+- `virtual IOReturn AppleANS2DARTNVMeController::ShutdownNVMe(bool, bool)`
+- `( 0 != fNVRAMDevice )`
+- `AttachFailureExit`
+- `S1X`
+- `NVMe Init Timeout`
+- `virtual IOService *AppleANS2CGv2Controller::probe(IOService *, SInt32 *)`
+- `AppleEmbeddedNVMeController`
+- `FastSim`
+- `DetachUserClient`
+- `static IOReturn AppleNVMeFWNamespaceUC::writeFWImage(OSObject *, void *, IOExternalMethodArguments *)`
+- `( 0 != endpointService )`
+- `( 0 != prop1Name )`
+- `%s::%d:Controller fatal status is set.\n`
+- `error: %ld `
+- `controller-unique-id`
+- `%s::%d:nvme: IOBSD didn't show up in %u secs\n`
+- `3d-g1`
+- `121111121222121211211111111221222111111121112222211212222222222221211111112222211222222122121111111111111111111111111111111122212221221111111111112211121111111111111111111111111111111111111111111111111111111111111111222222222222222222222222222222222221121221211111111111111111211111211112112112111111`
+- `nvme: \"AppleNVMeController::HandleControllerPowerOff, ShutdownNVMe() completed with status = 0x%08x\\n\" @%s:%d`
+- `%s::%d:nvme::CreateNamespaces SetTTParams failed.\n`
+- `%s::%d:WARNING: NSID : %u, NSType EDT : 0x%x, NSType NAND : 0x%llx \n`
+- `%s::%d:nvme: ANS Sleep Notification with Opcode %lu failed with status 0x%x\n`
+- `com.apple.AppleNVMeSanitize.allow`
+- `ReleaseIterator`
+- `\"pmap_iommu_ioctl - NVME_UNMAP_PAGES_FROM_TCB - failed\\n\" @%s:%d`
+- `%s::%d:Exit: status = 0x%0x\n`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/AppleEmbeddedNVMeTemperatureSensor.cpp`
+- `virtual IOService *AppleANS2CGNVMeController::probe(IOService *, SInt32 *)`
+- `autodiskmount`
+- `prop`
+- `( 0 != fBlockCount )`
+- `Sanitize Status SSTAT`
+- `void AppleANS2CGv2Controller::NVMeCoastGuardSetTCBEntry(tcb_queue_entry *, AppleNVMeRequest *)`
+- `( 0 != fDiagnosticDevice )`
+- `bool AppleEmbeddedNVMeController::IsRootDeviceRamdisk()`
+- `VCCOutput`
+- `eccWidgetLLTShadow`
+- `%s::%d:SHA Stats (0x%llx): Num I/Os: %llu; Hash Pass Count: %llu; Hash Fail Count: %llu\n`
+- `%s::%d:NVMe Namespace Device client process %s (pid %d) is not entitled\n`
+- `site.AppleNVMeWorkLoop`
+- `Sanitize Supported Operations`
+- `ReleaseReporter`
+- `bool AppleEmbeddedNVMeController::DetermineBlankPart()`
+- `flash-use-calender-time`
+- `nvme-secure-reg-layout`
+- `virtual IOReturn IONVMeController::ShutdownNVMe(bool, bool)`
+- `virtual IOReturn AppleANS2CGv2Controller::PolledEnableSubmissionQueue(uint16_t)`
+- `%s::%d:%s - function not supported\n`
+- `%s::%d:Skipping CreateNamespaces. namespaces not obtained from DT\n`
+- `\"Could not initialize wall time.\\n\" @%s:%d`
+- `site.AppleANS3CGv2Controller`
+- `ies != NULL`
+- `%s::%d:nvme: Sanitize counter keyNum: %u value: 0x%016llx\n`
+- `fProvider->isImageDataRecoverable(key) != UNRECOVERABLE`
+- `%s::%d:inSuspend: %d inPolled: %d\n`
+- `121111212`
+- `< 1000 ns`
+- `( ( inImage->getDirection ( ) & kIODirectionOut ) != 0 )`
+- `( fRequestCount == 0 )`
+- `allocatedSQCount >= inNumSQs`
+- `AttachToParentFailureExit`
+- `121212`
+- `inPriority <= NVMeFieldMax ( kNVMeReadPriorityLen )`
+- `EmergencyHeadPark`
+- `bool AppleEmbeddedNVMeController::AreNamespacesPresent()`
+- `%s::%d:namespacesData failed\n`
+- `vendor-name`
+- `fARMIODevice`
+- `tunable->size == sizeof ( uint32_t )`
+- `( fShadowMemoryDescriptor != NULL )`
+- `MPS Max`
+- `Firmware activate`
+- `( 0 != fEncryptingMapper )`
+- `( 0 != fEffaceableDevice )`
+- `msp-version`
+- `CompleteRequest`
+- `\"defaultsEntry not found in EDT!\\n\" @%s:%d`
+- `gib-pcie-up`
+- `Path Related Status`
+- `virtual IOReturn AppleANS2CGv2Controller::EnableSubmissionQueue(uint16_t)`
+- `Enable Lifeboat Mode`
+- `\"pmap_iommu_init failed\\n\" @%s:%d`
+- `%s::%d:NVMe EAN entitlement value bad for client process %s (pid %d)\n`
+- `chip-revision`
+- `\"Could not start timer event source.\\n\" @%s:%d`
+- `com.apple.ssdthrottle.allow`
+- `\"SetupTagReserveDefaults: requestCount is 0, this is a fatal error\\n\" @%s:%d`
+- `%s::%d:NSID\t\t: %d\n`
+- `fANS2CCUSecurityINTRegisterMap`
+- `( 0 != fPCIeUpDMACommand )`
+- `AllocExit`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Common/AppleNVMeSMARTUserClient.cpp`
+- `site.AppleNVMeRequestPool`
+- `ReleaseLockGroup`
+- `default-bits-per-cell`
+- `%s::%d:Couldnt setup evl Data/Hash buffer !\n`
+- `%s::%d:chip-id=0x%x chip-rev=0x%x. Tag FIFO workaround enabled.\n`
+- `AppleANS2CGv2Controller.cpp`
+- `nvme-write-credit-t2`
+- `site.AppleNVMeFWNamespaceUC`
+- `VCCInput0`
+- `%s::%d:NS %d fLogicalBlocksSize %d fBlockCount %llu\n`
+- `IOMaximumByteCountWrite`
+- `( 0 != fPanicString )`
+- `%s::%d:NSID %d Identified numBlocks %d Expected numBlocks %d\n`
+- `( 0 != unmappedAddress )`
+- `virtual IOReturn IONVMeController::CreateSubmissionQueue(uint16_t, uint8_t)`
+- `AppleNVMeBuffer`
+- `fEncryptionKey`
+- `kern.boottime`
+- `( 0 != inPRPListSize )`
+- `%s::%d:status: 0x%X\n`
+- `Encryption Type`
+- `fANS2SLCommonRegisterMap`
+- `( 0 != gprMD )`
+- `%s::%d:Error: Invalid number of buses : %u \n`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/IOEmbeddedNVMeBlockDevice.cpp`
+- `Encryption`
+- `( fClients->getCount ( ) == 0 )`
+- `------------------------------------\n`
+- `( fAnsHWAccMapper == NULL )`
+- `nand-qual`
+- `( 0 != virtualAddress )`
+- `DeletePMLock`
+- `( 0 != fClientWorkLoop )`
+- `( 0 != pciExpressCapability )`
+- `site.AppleNVMeBuffer`
+- `11221`
+- `sanitize-counters`
+- `ce-per-bus`
+- `nvme-secure-bar`
+- `vccInput0Number`
+- `( 0 != externalInputDescriptor )`
+- `( ( inExtentBuffer->getLength() % NVME_PAGE_SIZE ) == 0 )`
+- `bool AppleNVMeNamespaceUC::CheckEntitlementForSelector(uint32_t)`
+- `%s::%d:inOptions = %d\n`
+- `AppleNVMeWorkLoop`
+- `RemoveRequestTimer`
+- `( queue->fEnabled == true )`
+- `AppleANS2CGv2Controller`
+- `inNumBlocks <= NVMeFieldMax ( kNVMeCompareNumLBlocksLen )`
+- `inWriteLimit != 0`
+- `( 0 != fOrderedMapper )`
+- `string`
+- `( 0 != inFWVersion )`
+- `7th Gen Lithography`
+- `QueueSize`
+- `( inBufferSize <= GetMaxTransactionSize ( ) )`
+- `\" nvme: Initialize NVMe failed with status - 0x%x\\n\" @%s:%d`
+- `AppleNVMeEAN.cpp`
+- `AppleANS2DARTNVMeController`
+- `virtual bool AppleEmbeddedNVMeController::InitializeController()`
+- `DetachSensor`
+- `%s::%d:ErrorExit: returning false\n`
+- `%s::%d:NSSize\t: %u\n\n`
+- `\"SetFWSize failed with status 0x%x\\n\" @%s:%d`
+- `%s::%d:start Failed!\n`
+- `AppleNVMeUpdateUC`
+- `AppleNVMeRequestPoolTagReserve.cpp`
+- `%s::%d:Regular init.\n`
+- `fANS2ECCWidgetBulkBaseAddress`
+- `EmbeddedDeviceTypeLifeboat`
+- `nvram-bank-size`
+- `( 0 != queue->fBuffer )`
+- `%s::%d:Failed to a create block storage device\n`
+- `%s::%d:Error mask is set. (errorMask=0x%x regValue=0x%x)\n`
+- `virtual IOReturn AppleEmbeddedNVMeController::setProperties(OSObject *)`
+- `%02d.%02d.%02d`
+- `fOwningProcName != NULL`
+- `fANS2ECCWidgetLLTBaseAddress`
+- `( 0 != fSHABuffer )`
+- `EmbeddedDeviceTypeSysConfig`
+- `RetryExit`
+- `12111112122212121121111`
+- `virtual bool AppleEmbeddedNVMeController::SetBDRFactor()`
+- `ReleaseInputMap`
+- `%s::%d:NVMe EAN entitlement missing for client process %s (pid %d)\n`
+- `virtual void IONVMeController::CommandTimeout(AppleNVMeRequest *)`
+- `IOReturn AppleNVMeController::ProcessTunnelCommand(AppleNVMeRequest *, AppleNVMeBuffer *, AppleNVMeBuffer *)`
+- `( fEnableRearm == true ) || ( startUp == true )`
+- `Logical Block Size`
+- `Medium Type`
+- `nvme-scratch-virt-region`
+- `function-spi0_sclk_config`
+- `%s::%d: secID = %d inImageToSend = %p offset = %d curNumBytes = %d\n`
+- `low-latency-profile`
+- `AppleNVMeFWNamespaceDevice`
+- `%s::%d:NVMe Request Pool Init (External Drive Case). First phase, RequestCount = %u\n`
+- `( fPendingRequests[inRequest->fRequestIndex] == NULL )`
+- `%s::%d:%d:%d:%d\n`
+- `virtual IOService *AppleANS3CGv2Controller::probe(IOService *, SInt32 *)`
+- `EmbeddedDeviceTypeNVRAM`
+- `workLoop->InitWithLockGroupName ( lockGroupName )`
+- `ThreadDelete`
+- `ReleaseFatalStateTimer`
+- `Format NVM`
+- `void IONVMeController::CheckANSTagFifoWorkaround()`
+- `inPS <= NVMeFieldMax ( kNVMePowerManagementPSLen )`
+- `c`
+- `( p3 != NULL ) && ( p4 != NULL )`
+- `%s::%d:NameSpace Type Mismatch \n`
+- `Success`
+- `Tier1 BW Scale Factor`
+- `( 0 != argsBuff )`
+- `( 0 != fAnsSMMUMapper )`
+- `kern.monotonicclock`
+- `device`
+- `virtual IOReturn IOEmbeddedNVMeBlockDevice::doFormatMedia(UInt64)`
+- `( 0 != me )`
+- `( 0 != physicalAddress )`
+- `( 0 != fThread )`
+- `Ready`
+- `%s::%d:nvme: Model Number  : %s\n`
+- `kIOReturnSuccess == (( WaitDeviceActive ( ) ))`
+- `ReleaseHeaderBuffer`
+- `IOPMSystemSleepType`
+- `Create IO completion queue`
+- `( inImageSize % 16 == 0 )`
+- `( 0 != queueDepthOSArray )`
+- `<<Warning: Unknown value for k2DLithographyStrings>>`
+- `virtual IOReturn AppleANS2NVMeController::callPlatformFunction(const OSSymbol *, bool, void *, void *, void *, void *)`
+- `( tier2BW >= kIONVMeThermalThrottlingBWLimitMin )`
+- `41us - 70us`
+- `Firmware image download`
+- `BW Limits`
+- `Invalid namespace configuration or size.`
+- `IODeviceTree:/`
+- `kIOReturnSuccess == (result)`
+- `bool AppleEmbeddedNVMeController::CreateEmbeddedBlockDevice(uint8_t, uint8_t)`
+- `bool AppleANS2NVMeController::SetNANDGeomPropertiesV2(OSDictionary *)`
+- `%s::%d:Sending ShutdownNVMe\n`
+- `imageIndex                   = %d\n`
+- `Sanitize Support`
+- `%s::%d:Error Exit\n`
+- `ReleaseShadowBuffer`
+- `12111112122212121111111111111122`
+- `args->scalarOutputCount == 1`
+- `Failed`
+- `Flush`
+- `\"SL failed to idle after %llu us for cid %d\" @%s:%d`
+- `wrapped`
+- `fastbm`
+- `virtual IOReturn AppleANS2CGNVMeController::EnableCompletionQueue(uint16_t)`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/AppleNVMeNamespaceDevice.cpp`
+- `SMART Media Errors`
+- `ReturnRequest`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Common/AppleNVMeRequestPoolTagReserve.cpp`
+- `S3E`
+- `%s::%d:Publishing address 0x%x\n`
+- `IOReturn AppleNVMeEAN::eanErase(uint32_t)`
+- `DeleteIOReporter`
+- `NVMe Controller %d`
+- `Command timeout`
+- `nvme: \"nvme: SetupScratchBuffer - MapBuffer failed with status 0x%0X\\n\" @%s:%d`
+- `( ( ( uint64_t ) inOffset + ( uint64_t ) inSize ) <= buffer->getLength ( ) )`
+- `bus-to-msp`
+- `( 0 != physAddr )`
+- `%s::%d: This is an non-silicon device which requires extended request timeouts\n`
+- `virtual IOReturn AppleANS2NVMeController::EnableSHA()`
+- `virtual bool AppleNVMeUpdateUC::start(IOService *)`
+- `NS_xxx`
+- `IOReturn IONVMeLifeboatBlockDevice::GetDeviceProperties()`
+- `%s::%d:fProposedPowerState = %u\n`
+- `DeleteWorkLoop`
+- `%s::%d:MSI-X configuration disabled.\n`
+- `%s::%d:Enabling SMMU failed with status 0x%x\n`
+- `io`
+- `( 0 != fPanicLogDevice )`
+- `%s::%d:\n`
+- `Device Characteristics`
+- `AA0FA6F9-C2D6-457F-B10B-59A13253292F`
+- `\"%s: assert failed: \" \"queue_empty ( &fTokenFreeList ) == false\" \" %s:%u\\n\" @%s:%d`
+- `IOReturn IONVMeBlockStorageDevice::ScheduleBGRefresh()`
+- `%s::%d:Flush failed with status 0x%x\n`
+- `virtual bool AppleANS2NVMeController::SetNANDGeomProperties(OSDictionary *)`
+- `bool AppleANS2NVMeController::CreateLifeboatBlockDevice(uint32_t, uint8_t)`
+- `Max time opcode`
+- `SanitizeDone`
+- `virtual IOReturn IONVMeController::performNVMeShutdownTasks()`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Common/AppleNVMeRequestTimer.cpp`
+- `nvme-ans-dart`
+- `Toshiba`
+- `virtual bool AppleANS2NVMeController::start(IOService *)`
+- `ReleaseEntry`
+- `SMART Percentage Used`
+- `fRequestPoolSize >= 2`
+- `\"nvme: Unable to create NVRAM device\\n\" @%s:%d`
+- `( ( inAlignment > 0 ) && ( ( inAlignment & ( inAlignment - 1 ) ) == 0 ) )`
+- `Poll SL Stats`
+- `QueueSubmitError`
+- `com.apple.AppleNVMeSideBar.allow`
+- `args->scalarInputCount == 5`
+- `virtual IOReturn AppleNVMeController::UpdateMspBfhParams(void *, uint32_t)`
+- `%s::%d:nvme: Tunnel command CORE_DEBUG_SET_OS_BUILD_STR failed with status 0x%x\n`
+- `%s::%d:nvme: SendTimeToDevice failed.\n`
+- `ReleaseUserClient`
+- `fNVMe`
+- `( ( fHeader->totalBytesWritten + ( size_t ) ( inImageSize - fHeader->image[inImageIndex].imageSize ) ) <= fHeader->totalSize )`
+- `( numNamespaces * sizeof ( NVMeCreateNamespacesEntryStruct ) ) == namespacesData->getLength()`
+- `%u.%u%u`
+- `Sanitize Status End Time`
+- `( inQueueID >= kMinSubmissionQueue )`
+- `DeleteTimers`
+- `ReleaseHouseKeepingTimer`
+- `Barrier`
+- `IOReturn IONVMeBlockStorageDevice::PowerDownHandler(void *, uint32_t, IOService *, void *, vm_size_t)`
+- `ANS2`
+- `%s::%d:Start failure for NS %d\n`
+- `fNSIDToNSType`
+- `%s::%d:AppleNVMeFWNamespace rollbackFWImage failed : 0x%08x for client process %s (pid %d)\n`
+- `( nvmeInterruptData != NULL )`
+- `%s::%d:nvme: CORE_DEBUG_EXPORT_STATS failed with status 0x%x\n`
+- `%s::%d:burnin size set to %lld. current nsid1 size is %llu\n`
+- `ReleaseWorkLoop`
+- `SHA3-256`
+- `site.AppleNVMeEANUC`
+- `( ( inDataSize % NVME_PAGE_SIZE ) == 0 )`
+- `DeleteSubmissionQueues`
+- `Vendor Name`
+- `%x`
+- `( 0 != fAnsHWAccMapper )`
+- `ErrorExit`
+- `virtual IOService *AppleANS2NVMeController::probe(IOService *, SInt32 *)`
+- `( 0 != fSARTMapper )`
+- `EmbeddedDeviceTypeSideBar`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Embedded/IONVMeLifeboatBlockDevice.cpp`
+- `( 0 != fHeaderMemoryDescriptor )`
+- `%s::%d:Multiple Completions for CID/index. (cid=0x%X index=0x%X)\n`
+- `IODeviceTree:/arm-io/apcie/pci-bridge0/s3e`
+- `FreeLoggerBuffers`
+- `( fLogBuffers.fEnabledCores & mask ) != 0`
+- `( 0 != externalOutputMap )`
+- `%s::%d:The controller is shutting down in response to systemWillShutdown, deferring stack termination\n`
+- `virtual IOReturn AppleNVMeController::GetNANDInfo(uint64_t *)`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Common/AppleNVMeRequest.cpp`
+- `kIOReturnSuccess == (retStatus)`
+- `1us to 10us`
+- `ReleaseLock`
+- `( fShadowBuffer != NULL )`
+- `%s::%d:Controller is already performing system shutdown tasks`
+- `DeleteLocks`
+- `%s::%d:Poll CSTS failed. status=0x%x inCFS=%d\n`
+- `virtual IOReturn IONVMeController::newUserClient(task_t, void *, UInt32, OSDictionary *, IOUserClient **)`
+- `IODeviceTree:/product`
+- `%s::%d:nvme: Vendor ID     : 0x%04x\n`
+- `<<Warning: Unknown value for kDensityStrings>>`
+- `cqLength <= kNVMeMAXAdminSQCQLength`
+- `%s::%d:start 0x%llX\n`
+- `AppleNVMeMMU`
+- `virtual IOService *AppleANS2DARTNVMeController::probe(IOService *, SInt32 *)`
+- `tlc`
+- `com.apple.AppleNVMeFWNamespace.allow`
+- `%s::%d:AppleNVMeFWNamespace writeFWImage failed : 0x%08x for client process %s (pid %d)\n`
+- `IOEmbeddedNVMeBlockDevice.cpp`
+- `static bool AppleNVMeUpdateUC::IsTunnelPermitted(AppleNVMeUpdateUC *, uint32_t)`
+- `site.AppleNVMeFWNamespaceDevice`
+- `( fIsFormatted == true )`
+- `selector < kAppleNVMeFirmwareNSMethodCount`
+- `IOReturn AppleANS2CGNVMeController::SendOSBuildStrToDevice()`
+- `fNamespaceType == kEmbeddedNamespaceTypeSideBar`
+- `device-id`
+- `virtual void IONVMeController::handleClose(IOService *, IOOptionBits)`
+- `ExitUnlock`
+- `site.AppleNVMeRequest`
+- `Protocol Characteristics`
+- `%s::%d:=======================\n`
+- `1y`
+- `5th Gen Lithography`
+- `AppleANS3CGv2Controller`
+- `AppleNVMeFWNamespaceUC`
+- `fANS2ParityWidgetBaseAddress`
+- `virtual IOReturn AppleANS2NVMeController::FirmwareVersionCheck(void *)`
+- `SHA3 256 PASS`
+- `We did not detect any valid NAND devices in this system.`
+- `bool AppleEmbeddedNVMeController::CreateNamespaces(uint64_t, uint32_t)`
+- `EmbeddedDeviceTypeFirmware`
+- `( ( unmapOffset % NVME_PAGE_SIZE ) == 0 )`
+- `1211111211`
+- `( 0 != fRequestPool )`
+- `%s::%d: failed with status 0x%x \n`
+- `( 0 != providerRole )`
+- `( 0 != identifyBuffer )`
+- `S4E`
+- `nvme-sha3-stats`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Common/AppleNVMeUserClient.cpp`
+- `virtual void IOEmbeddedNVMeBlockDevice::HandleANS2SHA(AppleNVMeRequest *)`
+- `header->imageCount           = %d   \n`
+- `%s::%d:CC=0x%x timeout=%d\n`
+- `nvme: \"nvme: InitializeNVMe error = 0x%08X\\n\" @%s:%d`
+- `nvme-s2r-timeout`
+- `dies-per-bus`
+- `%s::%d:nvme: CORE_DEBUG_VCC_COMMAND failed with status 0x%x\n`
+- `( 0 != fEmbeddedProvider )`
+- `( 0 != tableMap )`
+- `Supported Arbitration Mechanism`
+- `( fHousekeepingTimer != NULL )`
+- `dualTunables`
+- `( 0 != inProvider )`
+- `AppleMobileFileIntegrity`
+- `%s::%d:nvme: CORE_DEBUG_SET_OS_BUILD_STR failed with status 0x%x\n`
+- `nvme: \"AppleEmbeddedNVMeController::disablePCIPort failed !\\n\" @%s:%d`
+- `sec-per-full-band-slc`
+- `IOReturn IONVMeController::PerformSanitizeOperation()`
+- `\"pmap_iommu_ioctl - NVME_MAP_PAGES_IN_TCB - failed\\n\" @%s:%d`
+- `site.ppl_iommu_seg`
+- `inAB <= NVMeFieldMax ( kNVMeArbitrationABLen )`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Common/IONVMeBlockStorageDevice.cpp`
+- `ReleaseBuffer`
+- `product-name`
+- `%s::%d:namespaces-present %d\n`
+- `Sandisk`
+- `fBaseRegisterMap`
+- `site.AppleANS2CGNVMeController`
+- `IONVMeEffaceableDevice`
+- `%s::%d:failed\n`
+- `ReleaseDMACommand`
+- `virtual IOReturn AppleANS2NVMeController::EnableCompletionQueue(uint16_t)`
+- `( dataSize % blockSize ) == 0`
+- `Longest Data Set Managment Duration`
+- `%s::%d:%s.\n`
+- `( ret == 0 )`
+- `No NAND detected or invalid response from NAND chips.`
+- `VCCParams`
+- `virtual bool IONVMeLifeboatBlockDevice::start(IOService *)`
+- `AppleNVMeEANUC`
+- `%s::%d:performNVMeShutdownTasks failed with status = 0x%08x\n`
+- `Product Name`
+- `%s::%d:Setting NAND status to Ready\n`
+- `mlc`
+- `ReleaseMap`
+- `%s::%d:Flushing BIS shadow to NAND\n`
+- `vcInpParamsDict`
+- `( fTerminating == false )`
+- `%s::%d:linkStatus: 0x%X\n`
+- `Fatal Error Code`
+- `properties`
+- `capacity`
+- `%s::%d:nvme: Setting IOCQ base addr %p\n`
+- `Max Poll SL (us)`
+- `%s::%d:interruptType: 0x%X  \n`
+- `Get features`
+- `ThermalThrottlingSupported`
+- `nvme-sptm`
+- `( inBufferSize % NVME_PAGE_SIZE ) == 0`
+- `vcDict`
+- `( CheckEntitlementForSelector ( selector ) == true )`
+- `EmbeddedDeviceTypeControlBits`
+- `fProvider->isImageDataRecoverable(key2) != UNRECOVERABLE`
+- `\"There should be no IOs happening this early on init\\n\" @%s:%d`
+- `site.IONVMeController`
+- `ReleaseArgsBuffer`
+- `namespacesData`
+- `phone`
+- `%s::%d:nvme: CORE_DEBUG_GET_NAND_GEOM failed with status 0x%x\n`
+- `%s::%d:Warning: Unknown user client external method selector`
+- `AppleANS2CGNVMeController.cpp`
+- `\"prepare failed.\\n\" @%s:%d`
+- `nvme-linear-sq`
+- `%s::%d:sleep\n`
+- `ReleaseIOMD`
+- `( 0 != imageBufferMap )`
+- `CloseProvider`
+- `namespaces`
+- `%s::%d:inImageSize = 0x%x exceeds maxImageSize = 0x%x for Key = %c%c%c%c ( 0x%x )\n`
+- `/Library/Caches/com.apple.xbs/B10A3681-4E24-45D6-AB50-3EE47EE2ABD1/TemporaryDirectory.c1KMK0/Sources/IONVMeFamily/Common/IONVMeController.cpp`
+- `( 0 != revNode )`
+- `virtual void IONVMeController::ReturnRequest(AppleNVMeRequest *)`
+- `( 0 != fPolledNVMeRequest )`
+- `( 0 != properties )`
+- `( 0 != fUnmapBuffer )`
+- `( 0 != fDARTMapper )`
+- `nvme-sha3-eval-mode`
+- `%s::%d:Error: Invalid PPM value provided (%d)\n`
+- `101us - 250us`
+- `%s::%d:Already initialized\n`
+- `%s::%d:Timeout. timeoutMS=%d regOffset=0x%x value=0x%x\n`
+- `FW Revision not available`
+- `%s::%d:Illegal CID/index. (cid=0x%X index=0x%X)\n`
+- `%s::%d:nvme: Firmware Rev  : %s\n`
+- `%s::%d:ANS2Endpoint1 didn't show up \n`
+- `%s::%d:InitializeNVMe error = 0x%08X\n`
+- `virtual IOFilterInterruptEventSource *IONVMeController::CreateDeviceInterrupt(IOInterruptEventSource::Action, IOFilterInterruptEventSource::Filter, IOService *)`
+- `121112221112221112221222122221112112122222222222222222222222221212221221122`
+- `nvme-write-credit-t0`
+- `%s::%d:Initializing SysConfig and ControlBits with 0xFFs\n`
+- `ReleaseController`
+- `IONVMeControllerPolledAdapter`
+- `epService`
+- `( 0 != table )`
+- `fInitializeContents`
+- `%s::%d:NVMe client process %s (pid %d) not entitled for tunnel command\n`
+- `IOReturn AppleNVMeEAN::eanSwap(uint32_t, uint32_t)`
+- `%s::%d:Status Code Type: 0x%X (%s)\n`
+- `timer->Init ( inOwner, inAction , inTimeoutMS )`
+- `( 0 != fPRPList )`
+- `The NAND packages are in the wrong order due to geometry. Higher die count NAND must be placed in the first PCIe lanes before lower die count NAND.`
+- `%s::%d:ANS2 NVMe interrupt index - 0x%x\n`
+- `nvme: \"InitializeNVMe error = 0x%08X\\n\" @%s:%d`
+- `fSegBufferPPL`
+- `IOReturn AppleNVMeRequest::BuildCommandReadWriteStruct(NVMeRWCommand *, IODirection)`
+- `%s::%d:failed with status = 0x%x\n`
+- `( 0 != queueDepthArray )`
+- `<<Warning: Unknown value for kChipDieStrings>>`
+- `virtual bool AppleEmbeddedNVMeController::SetNANDGeomProperties(OSDictionary *)`
+- `VCExpectedThroughputBytes`
+- `\"pmap_iommu_ioctl - NVME_PPL_IOCTL_RESET_SQ_ENTRY - failed\\n\" @%s:%d`
+- `%s::%d:ReturnRequest\n`
+- `CLx Enabled`
+- `Get log page`
+- `( prpCount <= ( ( fPRPSize / sizeof ( PRPEntry ) ) + 1 ) )`
+- `%s::%d:nvme: Disabling SMMU failed with status 0x%x\n`
+- `Format Error Detail`
+- `ApplePPM`
+- `%s::%d:NSID : %u, NSSize EDT : 0x%x, NSSize NAND : 0x%llx \n`
+- `virtual uint32_t IONVMeController::GetSaturationByteCountKey()`
+- `void IONVMeController::PrintCompletionErrorDetail(AppleNVMeRequest *, uint32_t)`
+- `AppleNANDStatus`
+- `ProcessingError`
+- `%s::%d:NVRAM size is %u bytes\n`
+- `( 0 != className )`
+- `\"%s: assert failed: \" \"fOutstanding > 0\" \" %s:%u\\n\" @%s:%d`
+- `AppleNVMeRequestPoolTagReserve`
+- `%s::%d:Provider attach() failed\n`
+- `virtual bool IONVMeController::InitializeController()`
+- `apcie-up,ans2`
+- `power-budget-platform-modes`
+- `( fIsFormatted == false )`
+- `keySize <= kNVMeAESKeyWithPolicyLength`
+- `AppleNVMeRequestTimer`
+- `IOUnit`
+- `( returnVal != false )`
+- `data`
+- `( 0 != tunnelArgsBuffer )`
+- `fPCIProvider->isInactive ( ) == false`
+- `inAccessFrequency <= NVMeFieldMax ( kNVMeWriteAccessFrequencyLen )`
+- `( 0 != gprVA )`
+- `( numTunables * sizeof ( APCIeTunablesStruct ) ) == data->getLength( )`
+- `Compare`
+- `virtual IOReturn AppleEmbeddedNVMeController::SetClockGatingTimeout(uint32_t)`
+- `static IOReturn AppleNVMeUpdateUC::FirmwareActivate(OSObject *, void *, IOExternalMethodArguments *)`
+- `inBuffer->getLength ( ) >= kNVMeIdentifyDataSize`
+- `Sanitize Progress`
+- `IONVMeControllerPolledAdapter.cpp`
+- `inNumBlocks <= NVMeFieldMax ( kNVMeWriteNumLBlocksLen )`
+- `IOStorageFeatures`
+- `NVMe driver debug interface`
+- `nand-pe-cycles`
+- `EmbeddedDeviceTypePcieBootFirmware`
+- `External`
+- `virtual IOReturn IONVMeBlockStorageDevice::doEjectMedia()`
+- `bool AppleEmbeddedNVMeController::SetNamespacesStruct()`
+- `( 0 != fNVMePowerStateReporter )`
+- `ReleaseReportLegend`
+- `ReleaseNSStruct`
+- `%s::%d:NVMePPL Queue Entries=%d\n`
+- `header->checksum             = 0x%x \n`
+- `Media and Data Integrity Errors`
+- `IOCFPlugInTypes`
+- `Invalid number of namespaces.`
+- `%s::%d:burnin partition may not be present. NSID1 fBlockCount %llu\n`
+- `( ( inBuffer->getDirection ( ) & kIODirectionOut ) != 0 )`
+- `header->totalBytesWritten    = 0x%x \n`
+- `( 0 != inQDArray )`
+- `site.AppleNVMeQueueWaitToken`
+- `virtual IOReturn AppleEmbeddedNVMeController::AllocateResources()`
+- `( size != kNVMeInvalidRegisterValue32 )`
+- `page-size`
+- `%s::%d:EAN is not formatted = %d\n`
+- `%s::%d:Power change already in progress.\n`
+- `virtual uint32_t IONVMeController::GetDefaultRequestTimeout()`
+- `( fLogBuffers.fSetupCores & mask ) != 0`
+- `%s::%d:nvme: Tunnel command CORE_DEBUG_SET_QOS_PARAMETERS failed with status 0x%x\n`
+- `( 0 != algoStr )`
+- `EmbeddedDeviceTypeAHCI`
+- `%s::%d:Sending FW activate FS=%d AA=%d\n`
+- `ReleaseOutputBounceBuffer`
+- `nsSize != 0`
+- `%s::%d:EAN size updated from 0x%x to 0x%x \n`
+- `kIOReturnSuccess == (PPMClient->admissionCheckWithValue ( 0, 0, &decisionValue ))`
+- `virtual bool AppleANS2NVMeController::CheckNameSpaceSizeGreater()`
+- `%s::%d: FW download cmd - curNumBytes %d bytesLeft %ld\n`
+- `key                          = 0x%x --> %c%c%c%c\n`
+- `IOReturn AppleNVMeEAN::updateHeaderFields()`
+- `bool IONVMeController::ProcessCompletionQueue(AppleNVMeCompletionQueue *)`
+- `BufferRelease`
+- `bool IONVMeBlockStorageDevice::ValidateEntitlement(const char *)`
+- `( 0 != fRootDevice )`
+- `function-spi0_mosi_config`
+- `( 0 != fNamespaceAPILock )`
+- `( 0 != fBaseAddress )`
+- `PCI link down`
+- `1211121111212`
+- `( tier0BW >= kIONVMeThermalThrottlingBWLimitMin )`
+- `CompleteQueue`
+- `AppleNANDFailureData`
+- `%s::%d:nvme: %s %X %s %s %s %s %d plane %dGB `
+- `%s::%d:inType: %d\n`
+- `bool AppleEmbeddedNVMeController::IsBootModeiBEC()`
+- `%s::%d:nvme: ProcessTunnelCommand failed with status 0x%x\n`
+- `\"%s: assert failed: \" \"status == kIOReturnSuccess\" \" %s:%u\\n\" @%s:%d`
+- `( fAnsASCMapper == NULL )`
+- `%s::%d:DCSD blank NAND context\n`
+- `AppleANS2NVMeController.cpp`
+- `fSecureBaseRegisterMap`
+- `( 0 != fSystemPowerNotifier )`
+- `IOMaximumBlockCountRead`
+- `entry`
+- `Data set management`
+- `ReleaseSensor`
+- `ReleaseStruct`
+- `bytes-per-sec-meta`
+- `nvmemu-device`
+- `void AppleANS2NVMeController::RegisterPPM()`
+- `1211111212221212111`
+- `( 0 != inputBounceData )`
+- `args->scalarInputCount == 3`
+- `%s::%d:Horizon/DCSD context with valid namespaces or fsboot iBEC\n`
+- `%s::%d:Failed to restore NVRAM shadow (0x%08X)\n`
+- `%s::%d:Could not locate device tree\n`
+- `dies-per-channel`
+- `\"nvme: InitializeNVMe() completed with status = 0x%08x\\n\" @%s:%d`
+- `IONVMeController`
+- `%s::%d:DW3: 0x%08X\n`
+- `%s::%d:Set NVRAM NSID to %d\n`
+- `%s::%d:nvme::CreateNamespaces SendTimeToDevice failed.\n`
+- `IONVMeController.cpp`
+- `( 0 != fPCIPortControlFunc )`
+- `virtual IOReturn AppleANS2NVMeController::SetNANDDebug()`
+- `SHA3 Total I/O`
+- `%s::%d:Successfully enabled NVMe CoastGuard\n`
+- `( ( fHeader->imageCount + 1 ) <= EAN_MAX_IMAGE_COUNT )`
+- `args->structureInputSize == sizeof ( NVMeMSPCountersDebugLogStruct )`
+- `NVMe CAP`
+- `RemoveInterruptEvent`
+- `AppleANS3NVMeController`
+- `IsTunnelPermitted ( me, opcode )`
+- `( 0 != controller )`
+- `( 0 != inQueue->fBuffer )`
+- `( 0 != fFatalStateTimer )`
+- `%s::%d:register Could not be read. regOffset=0x%x\n`
+- `( inRequest->fQueueID < kMaxSubmissionQueue )`
+- `%s::%d:The controller is still active and there are requests outstanding, deferring stack termination until they complete\n`
+- `site.NVMeCreateNamespacesStruct`
+- `firmware-version`
+- `( coreMask != kNVMeInvalidRegisterValue32 )`
+- `ReleaseDevTreeRoot`
+- `fANSSHABlockRegMap`
+- `\"nvme: CPX_USE_OFFSET_FOR_IV not set\\n\" @%s:%d`
+- `nvme: \"%s.\\n\" @%s:%d`
+- `( GetPreventPolledIO ( ) == false )`
+- `site.AppleNVMeRequestPoolTagReserve`
+- `ReleaseResource`
+- `%s::%d:NameSpace Size Mismatch \n`
+- `virtual IOReturn AppleANS2NVMeController::GetSanitizeCounters()`
+- `static IOReturn AppleNVMeUpdateUC::FinalizeFWUpdate(OSObject *, void *, IOExternalMethodArguments *)`
+- `( ( nsSize % NVME_PAGE_SIZE ) == 0 )`
+- `AppleNVMeNamespaceUC`
+- `NVMe Controller Info`
+- `IOReturn AppleANS2DARTNVMeController::SendOSBuildStrToDevice()`
+- `result == true`
+- `%s::%d:Non-Blank NAND, Number of namespaces - %d\n`
+- `bdr-af-table`
+- `SHA3 256 ERROR`
+- `%s::%d:NVMe update entitlement value bad for client process %s (pid %d)\n`
+- `AppleNVMeRequestPool`
+- `static AppleNVMeRequestPool *AppleNVMeRequestPool::Create(AppleNVMeWorkLoop *, uint8_t, uint16_t, uint32_t, bool, NVMeBufferAllocator *, lck_mtx_t *, NVMeCGType_t, IOMapper *)`
+- `virtual void AppleANS3NVMeController::EnableLinearSQ()`

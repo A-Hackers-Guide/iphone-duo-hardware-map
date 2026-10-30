@@ -1,0 +1,72 @@
+# `AppleThunderboltIPPort`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.driver.AppleThunderboltIP`](../kexts/com.apple.driver.AppleThunderboltIP.md)
+- Object size: `0x1a8` (424 bytes)
+- Metaclass: `0xfffffe000b9d2328`; metaclass vtable `0xfffffe0008286608`; class vtable `0xfffffe0008285e08`
+- Registration (init): `0xfffffe000998c0a0`
+- Superclasses: [`IOEthernetController`](IOEthernetController.md) → [`IONetworkController`](IONetworkController.md) → [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## Strings in its kext that name it (60)
+
+- `AppleThunderboltIPPort<%p>::finalize - terminating connection %p\n`
+- `AppleThunderboltIPPort<%p>::createIPConnectionForXDLink - new_connection->setTransmitter\n`
+- `AppleThunderboltIPPort<%p>::finalize\n`
+- `%lldus AppleThunderboltIPPort<%p>::enable - startOutputThread()\n`
+- `site.AppleThunderboltIPPort`
+- `%lldus AppleThunderboltIPPort<%p>::addIPConnection - ERROR: fIPConnectionsSet has %d items\u00a0(expected 0)\n`
+- `AppleThunderboltIPPort<%p>::initPortAndService\n`
+- `AppleThunderboltIPPort<%p>::removeIPConnection - ERROR: connection = %p, fIPConnectionsSet = %p\n`
+- `%lldus AppleThunderboltIPPort<%p>::disable - ERROR: fEthernetInterface = NULL\n`
+- `AppleThunderboltIPPort<%p>::addIPConnection - fSingleIPConnection = %p\n`
+- `AppleThunderboltIPPort<%p>::outputStartLegacy - dequeueing packet\n`
+- `%lldus AppleThunderboltIPPort<%p>::createIPConnectionForXDLink - new_connection->start\n`
+- `%lldus AppleThunderboltIPPort<%p>::createIPConnectionForXDLink - ip_connection = %p\n`
+- `AppleThunderboltIPPort<%p>::addIPConnection - adding %p to fIPConnectionsSet\n`
+- `%lldus AppleThunderboltIPPort<%p>::disable - flushOutputQueue()\n`
+- `AppleThunderboltIPPort<%p>::tickleTx - ERROR: fEthernetInterface = NULL\n`
+- `%lldus AppleThunderboltIPPort<%p>::enable - ERROR: interface = NULL\n`
+- `AppleThunderboltIPPort<%p>::createIPConnectionForXDLink - ERROR: addIPConnection failed, stopping & detaching\n`
+- `AppleThunderboltIPPort<%p>::createMACAddress - fMACAddress: %02x %02x %02x %02x %02x %02x\n`
+- `%lldus AppleThunderboltIPPort<%p>::getIPConnectionForRemoteUUID - found_connection = %p\n`
+- `AppleThunderboltIPPort<%p>::enable - ERROR: interface = NULL\n`
+- `AppleThunderboltIPPort<%p>::disable\n`
+- `%lldus AppleThunderboltIPPort<%p>::addIPConnection - ERROR: connection = %p, fIPConnectionsSet = %p\n`
+- `%lldus AppleThunderboltIPPort<%p>::createIPConnectionForXDLink - WARNING: looks like a loopback connection, aborting\n`
+- `AppleThunderboltIPPort<%p>::start - calling registerService\n`
+- `%lldus AppleThunderboltIPPort<%p>::start - calling registerService\n`
+- `%lldus AppleThunderboltIPPort<%p>::createMediumState - setLinkStatus( 0x%x )\n`
+- `%lldus AppleThunderboltIPPort<%p>::finalize - ERROR: fEthernetInterface = NULL\n`
+- `%lldus AppleThunderboltIPPort<%p>::outputStartLegacy - WARNING: isInactive() = true, aborting\n`
+- `AppleThunderboltIPPort<%p>::removeIPConnection - removing %p from fIPConnectionsSet\n`
+- `%lldus AppleThunderboltIPPort<%p>::removeIPConnection - removing %p from fIPConnectionsSet\n`
+- `%lldus AppleThunderboltIPPort<%p>::addIPConnection - adding %p to fIPConnectionsSet\n`
+- `AppleThunderboltIPPort<%p>::start - could not create /chosen handle\n`
+- `%lldus AppleThunderboltIPPort<%p>::updateLinkStatus - connection = %p, active = %d\n`
+- `AppleThunderboltIPPort<%p>::outputStartAggregatedPackets - WARNING: connection inactive, dropping IP packet\n`
+- `%lldus AppleThunderboltIPPort<%p>::outputStartLegacy - interface queue is empty\n`
+- `AppleThunderboltIPPort<%p>::outputStartLegacy - ERROR: failed to output packet (0x%08x), fHoldingPacket = %d\n`
+- `AppleThunderboltIPPort<%p>::initPortAndService - fTBTRidgeID = 0x%x, fTBTRouteString = 0x%llx, fTBTPortNumber = 0x%x\n`
+- `AppleThunderboltIPPort<%p>::createIPConnectionForXDLink - ERROR: link = %p, transmitter = %p, fIPService = %p\n`
+- `%lldus AppleThunderboltIPPort<%p>::createIPConnectionForXDLink - ERROR: failed to create connection\n`
+- `%lldus AppleThunderboltIPPort<%p>::outputStartAggregatedPackets - ERROR: failed to output packet (0x%08x), fHoldingPacket = %d\n`
+- `%lldus AppleThunderboltIPPort<%p>::outputStartLegacy - active = %d, fHoldingPacket = %d\n`
+- `%lldus AppleThunderboltIPPort<%p>::outputStartAggregatedPackets - ERROR: dequeueOutputPackets failed with 0x%08x\n`
+- `AppleThunderboltIPPort<%p>::outputStartAggregatedPackets - fTxThreadRunning = true, returning kIOReturnSuccess\n`
+- `%lldus AppleThunderboltIPPort<%p>::outputStartAggregatedPackets - WARNING: connection inactive, dropping IP packet\n`
+- `%lldus AppleThunderboltIPPort<%p>::outputStartAggregatedPackets - ERROR: failed to output this packet a second time (0x%08x), dropping\n`
+- `AppleThunderboltIPPort<%p>::outputStartLegacy - outputting packet\n`
+- `%lldus AppleThunderboltIPPort<%p>::outputStartAggregatedPackets - fTxThreadRunning = true, returning kIOReturnSuccess\n`
+- `%lldus AppleThunderboltIPPort<%p>::enable - fTBTRidgeID = 0x%x, fTBTRouteString = 0x%llx, fTBTPortNumber = 0x%x\n`
+- `%lldus AppleThunderboltIPPort<%p>::outputStartAggregatedPackets - WARNING: transmitter not found, dropping IP packet\n`
+- `AppleThunderboltIPPort<%p>::enable - ifnet_set_tso_mtu failed: %d\n`
+- `AppleThunderboltIPPort<%p>::enable - ERROR: fEthernetInterface = NULL\n`
+- `%lldus AppleThunderboltIPPort<%p>::finalize - terminating connection %p\n`
+- `AppleThunderboltIPService<%p>::createPorts - creating AppleThunderboltIPPort object for TBT port %d\n`
+- `%lldus AppleThunderboltIPPort<%p>::outputStartAggregatedPackets - ERROR: interface = NULL\n`
+- `%lldus AppleThunderboltIPPort<%p>::createIPConnectionForXDLink - addIPConnection\n`
+- `%lldus AppleThunderboltIPPort<%p>::tickleTx - ERROR: fEthernetInterface = NULL\n`
+- `%lldus AppleThunderboltIPPort<%p>::initPortAndService - ERROR: port = %p, service = %p\n`
+- `%lldus AppleThunderboltIPPort<%p>::removeIPConnection - ERROR: fIPConnectionsSet has %d items (expected 1)\n`
+- `AppleThunderboltIPPort<%p>::outputStartAggregatedPackets - ERROR: dequeueOutputPackets failed with 0x%08x\n`

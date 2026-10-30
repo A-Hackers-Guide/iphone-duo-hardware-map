@@ -1,0 +1,49 @@
+# `MTLDebugAccelerationStructureCommandEncoder`
+
+- Image: [`/System/Library/PrivateFrameworks/MetalTools.framework/MetalTools`](../userland/System__Library__PrivateFrameworks__MetalTools.framework__MetalTools.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `MTLToolsAccelerationStructureCommandEncoder`
+- 3 instance variables, 0 properties, 31 instance methods, 0 class methods
+
+## Instance variables
+
+```
+B canDealloc;
+B canEndEncoding;
+B hasEndedEncoding;
+```
+
+## Instance methods
+
+```
+-[MTLDebugAccelerationStructureCommandEncoder serializeAccelerationStructure:toBuffer:serializedBufferOffset:];
+-[MTLDebugAccelerationStructureCommandEncoder barrierAfterQueueStages:beforeStages:];
+-[MTLDebugAccelerationStructureCommandEncoder buildAccelerationStructure:descriptor:scratchBuffer:scratchBufferOffset:];
+-[MTLDebugAccelerationStructureCommandEncoder copyAccelerationStructure:toAccelerationStructure:];
+-[MTLDebugAccelerationStructureCommandEncoder copyAndCompactAccelerationStructure:toAccelerationStructure:];
+-[MTLDebugAccelerationStructureCommandEncoder deserializeAccelerationStructure:fromBuffer:serializedBufferOffset:];
+-[MTLDebugAccelerationStructureCommandEncoder deserializeAccelerationStructure:primitiveAccelerationStructures:fromBuffer:serializedBufferOffset:];
+-[MTLDebugAccelerationStructureCommandEncoder deserializeInstanceAccelerationStructure:primitiveAccelerationStructures:fromBuffer:serializedBufferOffset:];
+-[MTLDebugAccelerationStructureCommandEncoder deserializeInstanceAccelerationStructure:primitiveAccelerationStructures:fromBuffer:serializedBufferOffset:withDescriptor:];
+-[MTLDebugAccelerationStructureCommandEncoder deserializePrimitiveAccelerationStructure:fromBuffer:serializedBufferOffset:];
+-[MTLDebugAccelerationStructureCommandEncoder deserializePrimitiveAccelerationStructure:fromBuffer:serializedBufferOffset:withDescriptor:];
+-[MTLDebugAccelerationStructureCommandEncoder refitAccelerationStructure:descriptor:destination:scratchBuffer:scratchBufferOffset:];
+-[MTLDebugAccelerationStructureCommandEncoder refitAccelerationStructure:descriptor:destination:scratchBuffer:scratchBufferOffset:options:];
+-[MTLDebugAccelerationStructureCommandEncoder serializeInstanceAccelerationStructure:primitiveAccelerationStructures:toBuffer:serializedBufferOffset:];
+-[MTLDebugAccelerationStructureCommandEncoder serializePrimitiveAccelerationStructure:toBuffer:serializedBufferOffset:];
+-[MTLDebugAccelerationStructureCommandEncoder writeAccelerationStructureSerializationData:toBuffer:offset:];
+-[MTLDebugAccelerationStructureCommandEncoder writeAccelerationStructureTraversalDepth:toBuffer:offset:];
+-[MTLDebugAccelerationStructureCommandEncoder writeCompactedAccelerationStructureSize:toBuffer:offset:];
+-[MTLDebugAccelerationStructureCommandEncoder writeCompactedAccelerationStructureSize:toBuffer:offset:sizeDataType:];
+-[MTLDebugAccelerationStructureCommandEncoder writeDeserializedAccelerationStructureSize:serializedOffset:toBuffer:sizeBufferOffset:];
+-[MTLDebugAccelerationStructureCommandEncoder writeDeserializedPrimitiveAccelerationStructureSizes:serializedOffset:toBuffer:sizesBufferOffset:];
+-[MTLDebugAccelerationStructureCommandEncoder writeGenericBVHStructureOfAccelerationStructure:headerBuffer:headerBufferOffset:innerNodeBuffer:innerNodeBufferOffset:leafNodeBuffer:leafNodeBufferOffset:primitiveBuffer:primitiveBufferOffset:geometryBuffer:geometryOffset:instanceTransformBuffer:instanceTransformOffset:controlPointBuffer:controlPointBufferOffset:];
+-[MTLDebugAccelerationStructureCommandEncoder writeGenericBVHStructureOfAccelerationStructure:into:];
+-[MTLDebugAccelerationStructureCommandEncoder writeGenericBVHStructureSizesOfAccelerationStructure:into:];
+-[MTLDebugAccelerationStructureCommandEncoder writeGenericBVHStructureSizesOfAccelerationStructure:toBuffer:sizesBufferOffset:];
+-[MTLDebugAccelerationStructureCommandEncoder writeGeometryOfAccelerationStructure:toBuffer:geometryBufferOffset:];
+-[MTLDebugAccelerationStructureCommandEncoder writeGeometrySizeOfAccelerationStructure:toBuffer:sizeBufferOffset:];
+-[MTLDebugAccelerationStructureCommandEncoder writeSerializedAccelerationStructureSize:toBuffer:sizeBufferOffset:];
+-[MTLDebugAccelerationStructureCommandEncoder checkEncoderState];
+-[MTLDebugAccelerationStructureCommandEncoder initWithAccelerationStructureCommandEncoder:parent:];
+-[MTLDebugAccelerationStructureCommandEncoder validateRefit:descriptor:destination:scratchBuffer:scratchBufferOffset:options:];
+```

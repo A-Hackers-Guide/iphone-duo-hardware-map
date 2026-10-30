@@ -1,0 +1,164 @@
+# `SBDashBoardHostableEntityHostingFluidSwitcherViewController`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `CSCoverSheetViewControllerBase`
+- Protocols: `PTSettingsKeyObserver`, `SBApplicationHosting`, `SBDashBoardFluidSwitcherLiveContentOverlayCoordinatorDataSource`, `SBSwitcherContentViewControllerDelegate`, `SBSwitcherContentViewControllerDataSource`, `SBSwitcherGestureManaging`, `SBSwitcherIconZoomContextProviding`, `SBFZStackParticipantDelegate`, `SBSystemGestureRecognizerDelegate`, `SBWorkspaceApplicationSceneTransitionContextDelegate`, `SBFZStackParticipantPreferencesInvalidating`, `CSEntityHosting`
+- 22 instance variables, 16 properties, 105 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"SBSwitcherWindowManagementContext" _windowManagementContext;
+@"SBDashBoardSecureFluidSwitcherViewController" _switcherViewController;
+@"SBFZStackParticipant" _zStackParticipant;
+@"SBHomeGesturePanGestureRecognizer" _bottomEdgeRecognizer;
+@"SBFluidSwitcherGesture" _gesture;
+@"SBLayoutState" _layoutState;
+@"SBLayoutStateManager" _layoutStateManager;
+@"SBDashBoardHostableEntityWorkspaceTransitionManager" _transitionManager;
+@"SBHomeScreenBackdropViewBase" _backdropView;
+@"CSCameraExtensionSettings" _cameraExtensionSettings;
+@"SBAppSwitcherSettings" _switcherSettings;
+@"SBHomeGestureSettings" _homeGestureSettings;
+@"SBApplicationController" _applicationController;
+@"SBPIPControllerCoordinator" _pictureInPictureCoordinator;
+B _ephemeralSwitcher;
+B _dismissGestureEnabled;
+B _dismissesOnScreenOff;
+@"<CSHostableEntity>" _currentHostableEntity;
+@"<CSHostableEntity>" _activatingHostableEntity;
+@"<CSHostableEntity>" _hostedEntity;
+@"<SBDashBoardHostableEntityHostingFluidSwitcherViewControllerDelegate>" _delegate;
+@"<SBFSwitcherBackdropControlling>" _switcherBackdropController;
+```
+
+## Properties
+
+```
+@property (TB,R,N,GisEphemeralSwitcher,V_ephemeralSwitcher) ephemeralSwitcher;
+@property (T@"<SBDashBoardHostableEntityHostingFluidSwitcherViewControllerDelegate>",W,N,V_delegate) delegate;
+@property (T@"<SBFSwitcherBackdropControlling>",W,N,V_switcherBackdropController) switcherBackdropController;
+@property (T@"<CSHostableEntity>",R,N,V_currentHostableEntity) currentHostableEntity;
+@property (T@"<CSHostableEntity>",R,N,V_activatingHostableEntity) activatingHostableEntity;
+@property (TB,N,GisDismissGestureEnabled,V_dismissGestureEnabled) dismissGestureEnabled;
+@property (TB,N,V_dismissesOnScreenOff) dismissesOnScreenOff;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+@property (T@"<SBSwitcherContentViewControlling>",R,W,N) contentViewController;
+@property (TB,R,N,GisSwitcherForegroundActive) switcherForegroundActive;
+@property (T@"<CSHostableEntity>",R,N,V_hostedEntity) hostedEntity;
+@property (T@"<BSInvalidatable>",?,&,N) entityPreservationToken;
+@property (T@"NSSet",?,&,N) actionsToDeliver;
+```
+
+## Instance methods
+
+```
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController hostedEntity];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController handleEvent:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController switcherContentController:setHomeScreenBackdropBlurProgress:withAnimationMode:completion:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController invalidateZStackParticipantPreferencesWithReason:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController wouldHandleButtonEvent:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController windowSceneForSwitcherContentController:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController _handleBottomEdgeGestureChanged:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController noteIconZoomingViewWillZoomDown:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController startTrackingHiddenIconZoomViewIfNeeded:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController switcherInterfaceOrientationForSwitcherContentController:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController gestureRecognizer:shouldReceiveTouch:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController dismiss];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController zStackParticipant:updatePreferences:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController aggregateBehavior:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController switcherContentControllerWallpaperController:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController isIconForIconZoomingView:displayedInLocations:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController isSwitcherContentControllerEphemeral:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController viewIsAppearing:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController switcherContentController:frameForItemWithRole:inMainAppLayout:interfaceOrientation:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController viewWillDisappear:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController switcherContentController:setHomeScreenBackdropBlurMaterialRecipeName:withAnimationMode:completion:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController _updateHomeGesturePreference];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController _updateModifierTimelinePresence];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController contentViewController];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController switcherContentController:setHomeScreenScale:withAnimationMode:completion:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController isEphemeralSwitcher];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController iconCornerRadiusForAppLayout:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController switcherContentController:performTransitionWithRequest:gestureInitiated:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController iconLocationForAppLayout:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController dealloc];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController switcherGestureManagerForSwitcherContentController:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController presentationPriority];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController stopTrackingHiddenIconZoomViewIfNeeded:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController activeInterfaceOrientationForSwitcherContentController:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController displayItemLayoutAttributesProvider];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController applicationTransitionContext:frameForApplicationSceneEntity:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController _handleBottomEdgeGestureBegan:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController appLayoutsForSwitcherContentController:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController iconFrameForAppLayout:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController shouldMatchMoveIconZoomingView:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController handlesRotationIndependentOfCoverSheet];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController layoutStateForApplicationTransitionContext:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController zStackParticipantDidChange:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController matchingIconZoomingViewForIconZoomingView:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController liveContentOverlayCoordinator:hostableEntityForDisplayItem:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController iconZoomingViewContainerForIconZoomingView:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController windowManagementContextForSwitcherContentController:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController zStackParticipant:updateZOrderPreferences:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController _zStackParticipantIdentifier];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController iconZoomingViewForAppLayout:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController settings:changedValueForKey:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController setDismissGestureEnabled:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController activatingHostableEntity];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController viewForSystemGestureRecognizer:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController switcherContentController:transitionEventForContext:identifier:phase:animated:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController anyDisplayItemForAppLayoutOverlapsFloatingDock:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController iconGridSizeClassForAppLayout:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController nextDisplayItemInteractionTimeForSwitcherContentController:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController iconScaleForAppLayout:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController viewWillAppear:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController conformsToSBApplicationHosting];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController initWithHostableEntity:isEphemeralSwitcher:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController _updateHomeGesture];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController switcherContentController:deletedDisplayItem:inAppLayout:forReason:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController switcherContentController:setHomeScreenBackdropBlurType:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController aggregateAppearance:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController setDelegate:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController previousLayoutStateForApplicationTransitionContext:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController viewDidMoveToWindow:shouldAppearOrDisappear:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController switcherContentControllerControlsHomeScreenContents:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController viewDidAppear:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController gestureRecognizerShouldBegin:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController presentationCancelsTouches];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController hostedAppSceneHandle];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController canHostAnApp];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController loadView];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController _handleBottomEdgeGestureEnded:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController _iconViewForAppLayout:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController hostedAppSceneHandles];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController delegate];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController _invalidateZStackParticipant];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController _removeBottomEdgeRecognizer];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController _setupBackdropView];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController viewDidDisappear:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController acquireSystemApertureSuppressionAssertionForBundleIdentifier:sceneIdentifier:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController activateDisplayItemForEntity:fromRequest:animated:completion:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController didTransitionToPresented:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController isDismissGestureEnabled];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController dismissesOnScreenOff];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController _contentViewControllers];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController _runTransitionRequest:animated:completion:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController currentHostableEntity];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController liveContentOverlayCoordinator:coverSheetPresenterForDisplayItem:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController needsContentView];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController _handleBottomEdgeGesture:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController homeGestureSettingsForSwitcherContentController:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController _workspaceTransitionRequestForSwitcherTransitionRequest:gestureInitiated:isDismissal:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController setDismissesOnScreenOff:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController setSwitcherBackdropController:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController switcherBackdropController];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController viewControllerForCoordinatingStateWithCoverSheetViewController:];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController isHostingAnApp];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController isSwitcherForegroundActive];
+-[SBDashBoardHostableEntityHostingFluidSwitcherViewController switcherIconZoomContextProviderForSwitcherContentController:];
+```

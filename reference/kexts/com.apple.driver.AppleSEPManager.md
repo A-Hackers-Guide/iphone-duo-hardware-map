@@ -1,0 +1,1747 @@
+# `com.apple.driver.AppleSEPManager`
+
+- Name: AppleSEPManager
+- Version: `1.0.1`
+- UUID: `5D337374-1CE4-32AA-94C0-B1A79583BC95`
+- Source version: `928.40.6.0.0`
+- Depends on: [`com.apple.driver.AppleA7IOP`](com.apple.driver.AppleA7IOP.md) 1.0.1, [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.IODARTFamily`](com.apple.driver.IODARTFamily.md) 1.0.0, [`com.apple.driver.IOSlaveProcessor`](com.apple.driver.IOSlaveProcessor.md) 1.0.0, [`com.apple.kec.corecrypto`](com.apple.kec.corecrypto.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (2) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/sep/iop-sep-nub`](../devicetree/root__arm-io__sep__iop-sep-nub.md) | `AppleSEPManager` | `iop-nub,sep` |
+| [`/arm-io/sep/iop-sep-nub`](../devicetree/root__arm-io__sep__iop-sep-nub.md) | `AppleSEPManager` | `iop-nub,sep` |
+
+## IOKit personalities (13) [KC]
+
+### A7IOPNub
+- `CFBundleIdentifier`: `com.apple.driver.AppleSEPManager`
+- `IOClass`: `AppleSEPManager`
+- `IONameMatch`: `iop-nub,sep`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSEPManager`
+- `IOPlatformQuiesceAction`: `89999`
+- `IOProviderClass`: `AppleA7IOPNub`
+
+### ARTRequestsDevice
+- `CFBundleIdentifier`: `com.apple.driver.AppleSEPManager`
+- `IOClass`: `AppleSEPARTRequestsService`
+- `IONameMatch`: `sep-endpoint,artr`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSEPManager`
+- `IOProviderClass`: `AppleSEPDeviceService`
+
+### ARTService
+- `CFBundleIdentifier`: `com.apple.driver.AppleSEPManager`
+- `IOClass`: `AppleSEPARTService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSEPManager`
+- `IOProviderClass`: `AppleSEPManager`
+
+### ARTStorageDevice
+- `CFBundleIdentifier`: `com.apple.driver.AppleSEPManager`
+- `IOClass`: `AppleSEPARTStorageService`
+- `IONameMatch`: `sep-endpoint,arts`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSEPManager`
+- `IOProviderClass`: `AppleSEPDeviceService`
+
+### DebugDevice
+- `CFBundleIdentifier`: `com.apple.driver.AppleSEPManager`
+- `IOClass`: `AppleSEPDebugService`
+- `IONameMatch`: `sep-endpoint,debu`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSEPManager`
+- `IOProviderClass`: `AppleSEPDeviceService`
+
+### HiloDevice
+- `CFBundleIdentifier`: `com.apple.driver.AppleSEPManager`
+- `IOClass`: `AppleSEPHiloService`
+- `IONameMatch`: `sep-endpoint,hilo`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSEPManager`
+- `IOProviderClass`: `AppleSEPDeviceService`
+
+### IntelIOP
+- `CFBundleIdentifier`: `com.apple.driver.AppleSEPManager`
+- `IOClass`: `AppleSEPIntelIOP`
+- `IONameMatch`: `SEPM`
+- `IOPCIUseDeviceMapper`: `True`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSEPManager`
+- `IOProviderClass`: `IOPCIDevice`
+
+### IntelIOPNub
+- `CFBundleIdentifier`: `com.apple.driver.AppleSEPManager`
+- `IOClass`: `AppleSEPManager`
+- `IONameMatch`: `iop-nub,sep`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSEPManager`
+- `IOProviderClass`: `AppleSEPIntelIOPNub`
+
+### LoggingDevice
+- `CFBundleIdentifier`: `com.apple.driver.AppleSEPManager`
+- `IOClass`: `AppleSEPLoggerService`
+- `IONameMatch`: `sep-endpoint,log`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSEPManager`
+- `IOProviderClass`: `AppleSEPDeviceService`
+
+### PairingDevice
+- `CFBundleIdentifier`: `com.apple.driver.AppleSEPManager`
+- `IOClass`: `AppleSEPPairing`
+- `IONameMatch`: `sep-endpoint,pair`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSEPManager`
+- `IOProviderClass`: `AppleSEPDeviceService`
+
+### TestingDevice
+- `CFBundleIdentifier`: `com.apple.driver.AppleSEPManager`
+- `IOClass`: `AppleSEPTestingService`
+- `IONameMatch`: `sep-endpoint,unit`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSEPManager`
+- `IOProviderClass`: `AppleSEPDeviceService`
+
+### xARTMasterDevice
+- `CFBundleIdentifier`: `com.apple.driver.AppleSEPManager`
+- `IOClass`: `AppleSEPXARTService`
+- `IONameMatch`: `sep-endpoint,xarm`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSEPManager`
+- `IOProviderClass`: `AppleSEPDeviceService`
+
+### xARTSlaveDevice
+- `CFBundleIdentifier`: `com.apple.driver.AppleSEPManager`
+- `IOClass`: `AppleSEPXARTService`
+- `IONameMatch`: `sep-endpoint,xars`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSEPManager`
+- `IOProviderClass`: `AppleSEPDeviceService`
+
+
+## C++ classes (37) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleSEPARTRequests` | 0xd8 | AppleSEPEndpoint → IOSlaveEndpoint → IOEventSource |
+| `AppleSEPARTRequestsService` | 0x90 | AppleSEPEndpointService → IOService → IORegistryEntry |
+| `AppleSEPARTService` | 0xb8 | IOService → IORegistryEntry |
+| `AppleSEPARTStorage` | 0xf8 | AppleSEPEndpoint → IOSlaveEndpoint → IOEventSource |
+| `AppleSEPARTStorageService` | 0x90 | AppleSEPEndpointService → IOService → IORegistryEntry |
+| `AppleSEPBooter` | 0x1d0 | AppleSEPEndpoint → IOSlaveEndpoint → IOEventSource |
+| `AppleSEPCommand` | 0x58 | IOCommand |
+| `AppleSEPCommandPool` | 0x48 | IOCommandPool |
+| `AppleSEPControl` | 0xc8 | AppleSEPEndpoint → IOSlaveEndpoint → IOEventSource |
+| `AppleSEPCoreBuffer` | 0x78 | IOSlaveMemoryBuffer → IOSlaveMemory |
+| `AppleSEPDebug` | 0xc0 | AppleSEPEndpoint → IOSlaveEndpoint → IOEventSource |
+| `AppleSEPDebugArgs` | 0x20 | AppleSEPSharedMemoryChannel |
+| `AppleSEPDebugService` | 0x90 | AppleSEPEndpointService → IOService → IORegistryEntry |
+| `AppleSEPDeviceService` | 0x98 | IOService → IORegistryEntry |
+| `AppleSEPDiscovery` | 0xa98 | AppleSEPEndpoint → IOSlaveEndpoint → IOEventSource |
+| `AppleSEPEndpoint` | 0xb0 | IOSlaveEndpoint → IOEventSource |
+| `AppleSEPEndpointService` | 0x90 | IOService → IORegistryEntry |
+| `AppleSEPFirmware` | 0xe8 | IOSlaveFirmware → IOService → IORegistryEntry |
+| `AppleSEPHilo` | 0x130 | AppleSEPEndpoint → IOSlaveEndpoint → IOEventSource |
+| `AppleSEPHiloService` | 0x90 | AppleSEPEndpointService → IOService → IORegistryEntry |
+| `AppleSEPLogger` | 0xc0 | AppleSEPEndpoint → IOSlaveEndpoint → IOEventSource |
+| `AppleSEPLoggerService` | 0x90 | AppleSEPEndpointService → IOService → IORegistryEntry |
+| `AppleSEPManager` | 0xbb8 | IOSlaveProcessor → IOService → IORegistryEntry |
+| `AppleSEPPairing` | 0xc8 | IOService → IORegistryEntry |
+| `AppleSEPPanicBuffer` | 0x28 | AppleSEPSharedMemoryChannel |
+| `AppleSEPSharedMemoryBuffer` | 0x48 | IOSlaveMemoryBuffer → IOSlaveMemory |
+| `AppleSEPSharedMemoryChannel` | 0x20 |  |
+| `AppleSEPTesting` | 0xe0 | AppleSEPEndpoint → IOSlaveEndpoint → IOEventSource |
+| `AppleSEPTestingService` | 0x90 | AppleSEPEndpointService → IOService → IORegistryEntry |
+| `AppleSEPTraceBuffer` | 0x80 | AppleSEPSharedMemoryChannel |
+| `AppleSEPUserClient` | 0xe8 | IOUserClient → IOService → IORegistryEntry |
+| `AppleSEPXART` | 0xe8 | AppleSEPEndpoint → IOSlaveEndpoint → IOEventSource |
+| `AppleSEPXARTService` | 0x90 | AppleSEPEndpointService → IOService → IORegistryEntry |
+| `IODARTVMAllocatorMPM` | 0x68 | IODARTVMAllocatorGeneric → IODARTVMAllocator |
+| `SEPApNonce` | 0x18 |  |
+| `SEPBICS` | 0x20 |  |
+| `SEPEpoch` | 0x18 |  |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0001fe02 off=0x0073aee0-0x0075ace2 addr=0xfffffe000773eee0-0xfffffe000775ece2 r--/r--   __TEXT            
+	sz=0x000117ff off=0x0073b5f8-0x0074cdf7 addr=0xfffffe000773f5f8-0xfffffe0007750df7               __TEXT.__cstring          (CstringLiterals)
+	sz=0x0000dee2 off=0x0074ce00-0x0075ace2 addr=0xfffffe0007750e00-0xfffffe000775ece2               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x00044420 off=0x0261a860-0x0265ec80 addr=0xfffffe000961e860-0xfffffe0009662c80 r-x/r-x   __TEXT_EXEC       
+	sz=0x00043900 off=0x0261a860-0x0265e160 addr=0xfffffe000961e860-0xfffffe0009662160          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000b20 off=0x0265e160-0x0265ec80 addr=0xfffffe0009662160-0xfffffe0009662c80          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00000dfe off=0x04996258-0x04997056 addr=0xfffffe000b99a258-0xfffffe000b99b056 rw-/rw-   __DATA            
+	sz=0x00000168 off=0x04996258-0x049963c0 addr=0xfffffe000b99a258-0xfffffe000b99a3c0               __DATA.__data             
+	sz=0x00000c48 off=0x00000000-0x00000c48 addr=0xfffffe000b99a3c0-0xfffffe000b99b008               __DATA.__common           (Zerofill)
+	sz=0x0000004e off=0x00000000-0x0000004e addr=0xfffffe000b99b008-0xfffffe000b99b056               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x0000b6a8 off=0x011eb528-0x011f6bd0 addr=0xfffffe00081ef528-0xfffffe00081fabd0 rw-/rw-   __DATA_CONST      
+	sz=0x000000c0 off=0x011eb528-0x011eb5e8 addr=0xfffffe00081ef528-0xfffffe00081ef5e8         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x000000c0 off=0x011eb5e8-0x011eb6a8 addr=0xfffffe00081ef5e8-0xfffffe00081ef6a8         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00009fd0 off=0x011eb6a8-0x011f5678 addr=0xfffffe00081ef6a8-0xfffffe00081f9678         __DATA_CONST.__const            
+	sz=0x00000e00 off=0x011f5678-0x011f6478 addr=0xfffffe00081f9678-0xfffffe00081fa478         __DATA_CONST.__kalloc_type      
+	sz=0x00000050 off=0x011f6478-0x011f64c8 addr=0xfffffe00081fa478-0xfffffe00081fa4c8         __DATA_CONST.__kalloc_var       
+	sz=0x00000590 off=0x011f64c8-0x011f6a58 addr=0xfffffe00081fa4c8-0xfffffe00081faa58         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000140 off=0x011f6a58-0x011f6b98 addr=0xfffffe00081faa58-0xfffffe00081fab98         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000038 off=0x011f6b98-0x011f6bd0 addr=0xfffffe00081fab98-0xfffffe00081fabd0         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 396 at 0x04ae4904
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     5D337374-1CE4-32AA-94C0-B1A79583BC95
+008: LC_SOURCE_VERSION           928.40.6.0.0
+009: LC_FUNCTION_STARTS          offset=0x004ab0780 size=0xc28
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleSEPManager`
+- `CFBundleIdentifier`: `com.apple.driver.AppleSEPManager`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleSEPManager`
+- `CFBundleNumericVersion`: `16875520`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1.0.1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2011-2014 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.0`
+- `OSBundleLibraries_x86_64`:
+  - `com.apple.driver.IOSlaveProcessor`: `1.0.0`
+  - `com.apple.iokit.IOPCIFamily`: `2.6`
+  - `com.apple.kec.corecrypto`: `1.0`
+  - `com.apple.kpi.bsd`: `8.0`
+  - `com.apple.kpi.iokit`: `8.0`
+  - `com.apple.kpi.libkern`: `8.0`
+  - `com.apple.kpi.mach`: `8.0`
+  - `com.apple.kpi.private`: `8.0`
+  - `com.apple.kpi.unsupported`: `8.0`
+- `OSBundleRequired`: `Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+  - `2`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleSEPManager.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198898217248`
+- `_PrelinkExecutableRelativePath`: `AppleSEPManager`
+- `_PrelinkExecutableSize`: `460488`
+- `_PrelinkExecutableSourceAddr`: `-2198898217248`
+- `_PrelinkKmodInfo`: `-2198828637608`
+
+## Strings (1494) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `SEPEpoch`
+- `!os_add_overflow( _dartCapability->vmBase, dva_offset_page, &dva)`
+- `AppleSEP:WARNING: AP too slow reading SEP tracepoint data, causing events to be lost. Adjust the mask to reduce SEP tracing. (AP consumed %llu events, lost %llu events since system boot.)\n`
+- `nullptr != _endpoint`
+- `computed_crc == rec_header.payload_crc`
+- `%s: power state %u -> %u\n`
+- `%s: Display height mismatch, SEP %u AP %u\n`
+- `SEP and AP trace buffer sizes mismatched\n`
+- `kIOReturnSuccess == getCommandGate()->runAction( action, &args)`
+- `nullptr != args->max_alphas`
+- `IOReturn AppleSEPHilo::_loadLthBackupGated(const void *, hilo_opcode *)`
+- `IOReturn AppleSEPHilo::_getNumValidTiledBimTilesGated(uint32_t *)`
+- `owningTask != NULL`
+- `user client`
+- `\"Can't find endpoint ID %u for OOL size \" \"advertisement\" @%s:%d`
+- `\"SEP firmware too large. Firmware size: 0x%x; allocated space: 0x%x\" @%s:%d`
+- `sep-booted`
+- `AppleSEP:WARNING: timeout waiting for reply to %llx\n`
+- `out_struct.size_bytes_p != nullptr`
+- `IOArgumentInit`
+- `AppleSEPControl`
+- `%s: Detected oblit-inprogress in NVRAM, setting oblit flag in xART flags\n\n`
+- `32`
+- `IOReturn AppleSEPUserClient::getOrGenerateNonce(IOExternalMethodArguments *, bool)`
+- `bool get_chosen_property(const char *, bool)`
+- `AppleSEP:WARNING: attempt to send message to SEP while in Low Power Wake\n`
+- `void AppleSEPManager::_doorbellAction(void *, UInt32)`
+- `AppleSEPManager: Received Paging off notification\n`
+- `UINT32_MAX >= obj->m->getLength()`
+- `%s: Sending MANIFEST with timeout\n`
+- `getWorkLoop()->inGate()`
+- `hilo_opcode AppleSEPHilo::calculateGainsAlphasAndBims(uint16_t **, double *, hilo_bim_v1_t *, hilo_tiled_bim_v1_t *)`
+- `bool AppleSEPManager::_hasMessageBox()`
+- `iodc->clearMemoryDescriptor() == kIOReturnSuccess`
+- `nullptr != obj->edt_name`
+- `(size % pageSize) == 0`
+- `virtual void AppleSEPPanicBuffer::_updateBuffer()`
+- `kIOReturnSuccess == _xart_ep->promote_ap_slot(slot)`
+- `IOReturn AppleSEPBooter::generateROMNonce(uint8_t *, uint32_t *)`
+- `kXART_buffer_size <= ds->getSepPageSize() * ds->getReceiveOolMaxPages()`
+- `hash == nullptr`
+- `%s: SEP on during low power: %u\n`
+- `_relay_state != RELAY_UNSUPPORTED`
+- `kern_return_t AppleSEPCoreBuffer::coredump_save_thread_state(void *, core_save_thread_state_cb, void *)`
+- `%s: Keeping idx: %u\n`
+- `SEP SLEEP control reply timeout; controlEP Rx queue outstanding: %d; Rx queue latest: 0x%08llX; H/W mailbox message: 0x%08llX\n%s`
+- `%s: Unknown opcode %d in message 0x%llx\n`
+- `copied_bytes == _sep_firmware_length`
+- `AppleSEP:WARNING: timeout/error waiting for reply to lo: 0x%llx, endpoint is %s\n`
+- `GL_MIGRATE_NOT_ALLOWED == _gigalocker_migrate_status`
+- `kIOReturnSuccess == _accumulateGated( (const void **)channels, bpsp, &hilo_rc)`
+- `w->inGate()`
+- `static AppleSEPFirmware *AppleSEPFirmware::fromMemory(IOMemoryDescriptor *, const uint64_t *, IOMapper *, AppleSEPFirmwarePayloadType)`
+- `%s: SEP: %s\n`
+- `nullptr != _async_enable_non_pm_eps`
+- `_incoming_buffer_end`
+- `IOReturn AppleSEPARTStorage::purgeSystemToken()`
+- `AppleSEPDiscovery`
+- `timeoutMs != nullptr`
+- `IOReturn AppleSEPARTRequests::_msgSendInternal(AppleSEPARTStorage::Opcode *, unsigned int *, AppleSEPMessage *)`
+- `forSEP->isUsingMapper()`
+- `*endpointHandle != EP_BOOTSTRAP`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPControl.cpp`
+- `kIOReturnSuccess == _command_gate->runActionBlock(^IOReturn { OSString *syncNow = OSString::withCStringNoCopy(kIONVRAMForceSyncNowPropertyKey); thread_call_t tcall = thread_call_allocate_with_priority( _clear_art_thread_call, _nvram, THREAD_CALL_PRIORITY_KERNEL); _thread_call_done = false; thread_ca`
+- `asep->_no_ep_yet_messages.push(msg)`
+- `void AppleSEPARTRequests::configure_in_buffer()`
+- `site.AppleSEPSharedMemoryChannel`
+- `site.IODARTVMAllocatorMPM`
+- `%s: VM exhausted\n`
+- `AppleSEP:WARNING: Null pointer passed\n`
+- `void AppleSEPHilo::_allocateMappedBounceBuffer(AppleSEPManager *)`
+- `121112111111211111112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `void AppleSEPDiscovery::_msgReceived(void *, void *)`
+- `0 == TESTING_OOL_SIZE % PAGE_SIZE`
+- `setAllocator`
+- `\"SEP: postMailbox %p failed: 0x%08x\" @%s:%d`
+- `nullptr != _xart_master_ep`
+- `tz1-size`
+- `buf != nullptr`
+- `%s: cannot make requested allocation at 0x%x/0x%x\n`
+- `%s: sepos_va:%p sepos_avail_size: 0x%x\n`
+- `AppleSEP:WARNING: Error waiting for response 0x%x\n`
+- `site.struct gl_record`
+- `param.offset < _length`
+- `size != 0`
+- `void AppleSEPBooter::get_iBIC_KCV(uint8_t *, size_t)`
+- `nullptr != result`
+- `NULL != nub`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPTesting.cpp`
+- `top_ < kMaxDepth`
+- `begin_code & TRACE_FUNCTION_BEGIN`
+- `kIOReturnSuccess == _initOOLBuffers()`
+- `nullptr != es->endpoint`
+- `bool AppleSEPManager::_getRsepfirmwareInfo(uint32_t *)`
+- `NULL != xart`
+- `ool_size >= ds->getSepPageSize() * ds->getSendOolMinPages()`
+- `AppleSEPXART_embedded.cpp`
+- `_nap_inhibit`
+- `void AppleSEPManager::_requestPanicGated(const char *, const char *)`
+- `kIOReturnSuccess == getCommandGate()->runAction( action, dr_lth_backup, &rc)`
+- `IOReturn AppleSEPHilo::_getDisasterRecoveryLthBackupGated(void *, hilo_opcode *)`
+- `msg->reply.endpoint == EP_TESTING`
+- `SEPFW`
+- `nullptr != _mapper`
+- `AppleSEP:WARNING: called when !enabled\n`
+- `top_ > 0`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPCoreBuffer.cpp`
+- `_out_data != nullptr`
+- `AppleSEP:WARNING: EP0 received message for invalid tag %u\n`
+- `%s: Record of type: %d has non-zero UUID. Wiping\n`
+- `IOReturn AppleSEPManager::removeVisibleMemory(IODMACommand *)`
+- `kIOReturnSuccess == _xart_ep->commitEpochs(epochs, epochs_len)`
+- `static SEPBICS *SEPBICS::sepBics(const HiloDisplayParams *)`
+- `%s: getLthRaw returned %d\n`
+- `%s: wait for active call, mach_absolute_time: %llu\n`
+- `memcmp(&xart_crc, &in_msg_p->crc, sizeof(uint16_t)) == 0`
+- `sep_on_low_power`
+- `%s: Waiting for IODTNVRAM\n`
+- `_outgoing_buffer_size > size`
+- `AppleSEPUserClient`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientInvalidateNonce(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `ool_size <= ds->getSepPageSize() * ds->getSendOolMaxPages()`
+- `AppleSEPManagerARM.cpp`
+- `GL_MIGRATE_ALLOWED == _gigalocker_migrate_status || GL_MIGRATE_NOT_ALLOWED == _gigalocker_migrate_status`
+- `\"Failed to reseed XNU PRNG after %d attempts during boot\" @%s:%d`
+- `AppleSEPCoreBuffer::AppleSEPCoreBuffer(AppleSEPSharedMemoryBuffer *, bool)`
+- `IOReturn AppleSEPDiscovery::_getEndpointInfoGated(void *, uint32_t *)`
+- `static IOReturn AppleSEPUserClient::DispatchHiloSetGainParamSet(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `SEP SLEEP control reply timeout; controlEP Rx queue outstanding: %d; Rx queue latest: 0x%08llX; H/W mailbox error: 0x%08X\n%s`
+- `iomd->complete() == kIOReturnSuccess`
+- `com.apple.System.sep.art`
+- `kern_return_t AppleSEPCoreBuffer::coredump_init(void *)`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientCommitHash(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `void AppleSEPXART::_initInternals(bool)`
+- `\"Unexpected ep_name 0x%x\" @%s:%d`
+- `nullptr != (iopNub = OSDynamicCast(AppleA7IOPNub, provider))`
+- `nullptr != prop_value`
+- `AppleSEPSharedMemoryChannel`
+- `kIOReturnSuccess == asep->controlEP()->cmsgSET_OOL_IN(_index, _send_ool)`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/FIFO.h`
+- `\"SEP Boot Failure: status check 2 failed - 0x%x\" @%s:%d`
+- `AppleSEP:WARNING: SEP shared memory buffer is NULL\n`
+- `chip-id`
+- `kIOReturnSuccess == getCommandGate()->runActionBlock(^IOReturn { REQUIRE(GL_MIGRATE_ALLOWED == _gigalocker_migrate_status || GL_MIGRATE_NOT_ALLOWED == _gigalocker_migrate_status); _gigalocker_migrate_status = GL_MIGRATE_NOT_ALLOWED; strncpy(_gl_abs_path, gl_abs_path, PATH_MAX); _gl_abs_path[PATH_MAX`
+- `void SEPEpoch::getFullEpochs(EpochSlot *, size_t)`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AllocMPM.cpp`
+- `kIOReturnSuccess == getCommandGate()->runAction(action, &rc)`
+- `site.AppleSEPLoggerService`
+- `nullptr != gl_abs_path`
+- `void SEPEpoch::_init(IOSlaveEndpoint *)`
+- `nullptr != sik`
+- `0 == ds->getReceiveOolMinPages()`
+- `nullptr != _patch_buf`
+- `site.AppleSEPControl`
+- `cmsgSET_OOL_OUT`
+- `with`
+- `sepfw-load-at-boot`
+- `static IODARTVMAllocatorMPM *IODARTVMAllocatorMPM::forMapper(IOMapper *, ppnum_t)`
+- `static IOReturn AppleSEPUserClient::DispatchHiloGetLthTransferMessage(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `%s: Disabling DRAM checks! Be sure that any changes you are making work without them disabled!\n`
+- `nullptr != xartSEPMasterEP()`
+- `tz0-size-set`
+- `void AppleSEPManager::_updateDeviceTree()`
+- `site.AppleSEPCoreBuffer`
+- `_dartCapability != nullptr`
+- `void IODARTVMAllocatorMPM::setNextAllocation(uint32_t)`
+- `_reply_expected`
+- `IOReturn AppleSEPHilo::_mapMemoryDescriptor(IOMemoryDescriptor *, size_t, bool, IOMemoryMap **, void **)`
+- `site.AppleSEPHiloService`
+- `_patch_buf->getLength() + _ustuff_buf->getLength() < iomd->getLength()`
+- `nullptr != ustuff_bmd`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientLynxSetProvisionalSlot(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `len >= get_max_ack_len()`
+- `IOReturn AppleSEPHilo::loadLthTransferMessage(const uint8_t *, size_t)`
+- `static IOReturn AppleSEPUserClient::DispatchDiscoveryGetEndpointInfo(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `_endpoint->isEnabled()`
+- `AppleSEPEndpoint::endpointWithIndex(handle) == nullptr`
+- `iop != nullptr`
+- `target-type`
+- `AppleSEP:WARNING: AppleSEPARTRequests::_msgAction() Unexpected! - Got a message that isn't a response.\n`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPBooter.cpp`
+- `kIOReturnSuccess == getCommandGate()->runActionBlock(^IOReturn { while (_sep_state == SEP_COLD_OFF) { getCommandGate()->commandSleep((void *)&_sep_state, THREAD_UNINT); } return kIOReturnSuccess; })`
+- `kIOReturnSuccess == setSendRelayBuffer(EP_XART_SEP_SLAVE, 0, kXART_buffer_size, PAGE_SIZE, &_xart_send_relay_buffer)`
+- `%s: WARNING: firmware contains no manifest\n`
+- `AppleSEP:WARNING: Failed to get nonce, error %d\n`
+- `nullptr != s`
+- `recv_message.reply.endpoint == EP_TESTING`
+- `virtual IOReturn AppleSEPEndpoint::setReceiveOOLBuffer(IOSlaveMemory *)`
+- `void AppleSEPFirmware::_setupSepFirmwareMemoryRegion()`
+- `static IOReturn AppleSEPUserClient::DispatchHiloGetDisasterRecoveryLthBackup(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `site.SEPROMPanicBuffer`
+- `self-power-gate`
+- `%s: SEP on during low power: EDT %u\n`
+- `PAGE_SIZE >= ds->getSepPageSize() * ds->getReceiveOolMinPages()`
+- `1211121111112111111122`
+- `nullptr != art_service`
+- `!napping_flag`
+- `mapper != NULL`
+- `bool AppleSEPARTRequests::_initForDeviceService(AppleSEPDeviceService *)`
+- `!_outgoing_buffer_in_use`
+- `_nvram`
+- `%s: Unexpected duplicate xART disable register for %c%c%c%c\n`
+- `IOReturn AppleSEPHilo::_sendData(const void *, size_t, hilo_opcode, hilo_opcode *)`
+- `void AppleSEPHilo::getParams(hilo_display_params_msg_t *)`
+- `PAGE_SIZE <= ds->getSepPageSize() * ds->getSendOolMaxPages()`
+- `\n`
+- `IODTNVRAM`
+- `12111211111121111111222111212222222211`
+- `UINT32_MAX >= piece_lens[PIECE_FIRMWARE]`
+- `SEPROMPanicBuffer.cpp`
+- `nullptr != epoch_slots`
+- `%s: updateDeviceTree Success\n`
+- `AppleSEP:WARNING: Cannot read target-type from IOServicePlane\n`
+- `void AppleSEPManager::_report_sandcat_pwn(uint32_t)`
+- `%s: OSData was null\n`
+- `\"REQUIRE fail: %s @ %s:%u:%s: \" @%s:%d`
+- `kIOReturnSuccess == result`
+- `IOReturn AppleSEPXART::gl_initialize(const char *)_block_invoke`
+- `\"Error (%d) capturing sleep ART\" @%s:%d`
+- `bool AppleSEPARTStorage::_initForDeviceService(AppleSEPDeviceService *)`
+- `IOReturn AppleSEPHilo::_receiveData(void *, size_t, hilo_opcode, hilo_opcode *)`
+- `bool AppleSEPHilo::supportsDisasterRecoveryLth()`
+- `BootOpcode::ReportGeneratedNonce == _reply.bootstrap_msg.opcode`
+- `aarch64`
+- `bool AppleSEPManager::tryStartReseed()_block_invoke`
+- `Unavailable`
+- `void AppleSEPManager::checkInMaster(AppleSEPXART *)`
+- `\"sep-fips-mode bootarg has a permissible bitmask of 0x%x\" @%s:%d`
+- `%s: bounce buffer slave_addr 0x%llx\n`
+- `IOReturn AppleSEPTesting::_set_debug_var_gated(uint32_t, OSBoundedArrayRef<const uint8_t>, uint64_t)`
+- `nullptr != piece_lens`
+- `%s: SEP status: %u\n`
+- `nullptr != _requestsEP`
+- `%s: Unexpected xART disable ack from unregistered %c%c%c%c\n`
+- `%s: Duplicate OOL advertisement for endpoint ID %u name 0x%x OOL in [%u,%u] OOL out [%u,%u]\n`
+- `kIOReturnSuccess == _getLthRawGated(channels, &rc)`
+- `AppleSEPTestingService`
+- `IOReturn AppleSEPControl::cmsgGET_ENTROPY_FOR_XNU_PRNG(uint32_t *, UInt32)`
+- `Failed to get response from SEP when getting entropy`
+- `IONVRAM-FORCESYNCNOW-PROPERTY`
+- `shm_size == message.sepboot_msg.size`
+- `blen == separt->getLength()`
+- `lpol`
+- `void AppleSEPManager::_loadChannelObjectData()`
+- `%s: SEP/OS is alive in %d state\n`
+- `\"Error on SEP SLEEP control message (0x%x)\" @%s:%d`
+- `AppleSEP:WARNING: AppleSEPARTRequests received message for inactive tag %u\n`
+- `desc->prepare() == kIOReturnSuccess`
+- `GET_ENTROPY_FOR_XNU_PRNG call to SEP returned unknown error`
+- `message != nullptr`
+- `AppleSEPManager`
+- `\"Error return on MANIFEST (%x)\" @%s:%d`
+- `IOReturn AppleSEPARTStorage::invalidateNonce()`
+- `length <= 1024`
+- `nullptr != es`
+- `kIOReturnSuccess == getCommandGate()->runAction( action, &name, &result)`
+- `IOReturn AppleSEPHilo::_hiloEnableAsyncGated()`
+- `void AppleSEPTesting::_initInternals()`
+- `cmsgSET_OOL_IN`
+- `BootOpcode::ReportiBICKey == _reply.bootstrap_msg.opcode`
+- `int gl_rec_write(struct gl_ctx *const, const struct gl_rec_id *const, const uint8_t *const, size_t)`
+- `IOReturn AppleSEPXART::bncn_generate(uint8_t, uint8_t *, size_t)`
+- `nullptr == _ustuff_buf`
+- `\"SEP Boot Failure: SEP fast wake failed\" @%s:%d`
+- `%s: SEP accepted Tz0\n`
+- `%s: \n`
+- `AppleSEP:WARNING: failed to allocate %u bytes of SEP-visible memory\n`
+- `virtual bool AppleSEPARTRequestsService::start(IOService *)`
+- `OSData *AppleSEPARTService::getART()_block_invoke`
+- `AppleSEPCoreBuffer.cpp`
+- `mem != nullptr`
+- `uStuff`
+- `static IOReturn AppleSEPUserClient::DispatchHiloGetLthBackup(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `static AppleSEPBooter *AppleSEPBooter::sepBooter(AppleSEPManager *)`
+- `0 == ((((uint64_t)1 << _seprom_payload_align_bits) - 1) & ustuff_address)`
+- `sepBootedOnce`
+- `%s: Could not find dynamic object with key %s\n\n`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/SEPROMPanicBuffer.cpp`
+- `site.FIFO`
+- `AppleSEPDebugArgs.cpp`
+- `false == _is_sep_master`
+- `kIOReturnSuccess == getCommandGate()->runActionBlock(^IOReturn { REQUIRE(_disable_log != nullptr); _disable_log->format_acks(buf, len); return kIOReturnSuccess; })`
+- `low-power-enable`
+- `void AppleSEPARTStorage::find_firmware_manifest(AppleSEPFirmware *, void **, vm_size_t *)`
+- `OSData *AppleSEPARTService::getART()`
+- `void XARTDisableLog::log_disable_begin()`
+- `site.AppleSEPDeviceService`
+- `old_info->info.id == id`
+- `IOReturn AppleSEPHilo::_updateElapsedTimeGated(hilo_opcode *)`
+- `AppleSEPEndpoint.cpp`
+- `kcv`
+- `has-art`
+- `AppleSEP:WARNING: SEP firmware reload attempted\n`
+- `hilo_opcode AppleSEPHilo::loadLthRaw(const void **)`
+- `nullptr != args->target_attestation`
+- `site.AppleSEPTesting`
+- `ool_size >= ds->getSepPageSize() * ds->getReceiveOolMinPages()`
+- `virtual bool AppleSEPCommandPool::returnCommand(AppleSEPCommand *)`
+- `void AppleSEPManager::_sepIdleTimeout(IOTimerEventSource *)`
+- `nullptr != art`
+- `121212222`
+- `AppleSEPXARTService`
+- `getWorkLoop() != nullptr`
+- `site.AppleSEPUserClient`
+- `0 == slot_id >> 4`
+- `num_entries >= ARRAY_LEN(_channel_objs)`
+- `IOReturn AppleSEPManager::addVisibleMemory(IOMemoryDescriptor *, IODMACommand **, UInt64 *)`
+- `ART: `
+- `!isChannelStandalone(*entry)`
+- `_sep_lock.has_value()`
+- `static IOReturn AppleSEPUserClient::DispatchHiloAccumulateTestPattern(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `IOReturn AppleSEPXART::_xmsgSendLocked(XARTMessage *, xart_buffer_config *, uint32_t *)`
+- `%s: updateDeviceTreeThread started\n`
+- `desc`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPDiscovery.cpp`
+- `IOReturn AppleSEPPairing::_pmsgSendProvLocked(void *, void *, void *)`
+- `AppleSEP:WARNING: %s: error returned - opcode %u result %u endpoint %u extra-debug 0x%x 0x%x 0x%x 0x%x\n`
+- `virtual IOSlaveEndpoint *AppleSEPManager::endpointForHandle(OSObject *, IOSlaveEndpoint::Action, UInt32, void *)`
+- `kern_return_t AppleSEPCoreBuffer::coredump_save_segment_descriptions(core_save_segment_descriptions_cb, void *)`
+- `virtual void AppleSEPTraceBuffer::_updateBuffer()`
+- `%s: loadLthBackup returned %d\n`
+- `AppleSEP:WARNING: bad message opcode on EP1\n`
+- `%s: genIOVMSegments failed, rc %x, offset %llx\n\n`
+- `void SEPApNonce::promoteSlot(uint8_t)`
+- `hilo_opcode AppleSEPHilo::loadLthBackup(const void *)`
+- `IOReturn AppleSEPHilo::_advanceGainRestrictionPhaseGated()`
+- `kIOReturnSuccess == _loadLthRawGated(channels, &rc)`
+- `IOReturn AppleSEPTesting::_data_set_gated(OSBoundedArrayRef<const uint8_t>, uint32_t, uint32_t)`
+- `TESTING_OOL_SIZE <= ds->getSepPageSize() * ds->getReceiveOolMaxPages()`
+- `_endpoints[index] == nullptr`
+- `%s: SEP Nonce invalidated\n`
+- `void SEPApNonce::deleteSlot(uint8_t)`
+- `IOReturn AppleSEPHilo::_calculateGainsAlphasAndBimsGated(hilo_gains_alphas_and_bims_args_t *)`
+- `nullptr != _bounce_buffer_map`
+- `kIOReturnSuccess == asep->controlEP()->cmsgSET_OOL_OUT(_index, _receive_ool)`
+- `nullptr != d`
+- `IOReturn AppleSEPControl::cmsgSET_OOL_OUT(UInt8, IOSlaveMemory *, UInt32)`
+- `1211121111112111111122222222222222222222222222222222222212`
+- `%s: SEP: %u:0x%08x\n`
+- `EPOCH_COUNT == epoch_slots_len`
+- `nullptr != dst`
+- `1211121111112111111122111122`
+- `Current`
+- `static IOReturn AppleSEPUserClient::DispatchHiloGetDisplayParams(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `kXART_buffer_size <= ds->getSepPageSize() * ds->getSendOolMaxPages()`
+- `void KdbgScope::pop(uint32_t)`
+- `received message for bad endpoint %u\n`
+- `site.AppleSEPDiscovery`
+- `attach(provider)`
+- `copied_bytes == ustuff_bmd->getLength()`
+- `AppleSEP:WARNING: Error: 0x%x\n`
+- `(hash == nullptr) == (hash_len == 0)`
+- `%s: FIPS reseed started\n`
+- `Ocelot`
+- `setActive`
+- `AppleSEP:WARNING: time went backward- last 0x%llx cur 0x%llx\n\n`
+- `nullptr != _async_disable_call`
+- `_relay_mapper != nullptr`
+- `site.AppleSEPARTRequestsService`
+- `%s: AppleSEP: sleep ART ready, saving\n`
+- `nullptr != as`
+- `AppleSEPSharedMemoryBuffer`
+- `virtual IOBufferMemoryDescriptor *AppleSEPSharedMemoryBuffer::getBuffer()`
+- `1211111212221212122111111`
+- `Resume`
+- `void AppleSEPXART::_handle_sep_driven_msg(XARTMessage *)`
+- `_sep_state == SEP_ASLEEP`
+- `%s: Using default AP values for SEP display parameters (i.e., D22x values)\n`
+- `AppleSEP: %s SEP Nonce (%u bytes): 0x`
+- `AppleSEPPairing`
+- `AppleSEPLogger`
+- `oblit-inprogress`
+- `bool AppleSEPManager::endpointIsAdvertised(uint32_t)`
+- `static IOService *AppleSEPManager::getReadableNvram()`
+- `IOHibernateState`
+- `nullptr != _async_enable_call`
+- `AppleSEP:WARNING: %s (%d): failed to map output memory descriptor\n`
+- `8 * sizeof(uint64_t) > index`
+- `!getWorkLoop()->inGate()`
+- `device == this`
+- `NULL != nonceBufferLen`
+- `message.frame.endpoint == EP_BOOTSTRAP`
+- `void AppleSEPManager::_allocateShm(bool)`
+- `virtual void AppleSEPEndpoint::enable()`
+- `IOReturn AppleSEPXART::lynx_authenticate(const void *, size_t)_block_invoke`
+- `\"TXM channel base address length unexpected: %u\" @%s:%d`
+- `\"Error return on ART_LOAD (%x)\" @%s:%d`
+- `121212121122222`
+- `kern_return_t AppleSEPCoreBuffer::coredump_save_summary(core_save_summary_cb, void *)`
+- `SEPBICS.cpp`
+- `virtual void AppleSEPXART::enable()`
+- `compatible`
+- `%s\n%s\n%s`
+- `kIOReturnSuccess == getCommandGate()->runActionBlock(^IOReturn { _xart_sep_master_checked_in = true; if (_gl_abs_path_set) { REQUIRE(GL_MIGRATE_NOT_ALLOWED == _gigalocker_migrate_status); run_gl_init = true; } return kIOReturnSuccess; })`
+- `AppleSEP:WARNING: Failed commit hash, error %d\n`
+- `void SEPROMPanicBuffer::queueMessageWord(uint64_t)`
+- `SEPApNonce.cpp`
+- `SEP and AP trace struct versions mismatched\n`
+- `AppleSEPDebug received message for incorrect endpoint %u`
+- `(nullptr != _patch_buf) == (nullptr != _ustuff_buf)`
+- `static IOReturn AppleSEPUserClient::DispatchHiloCheckGainTestPattern(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `IOReturn AppleSEPXART::_initOOLBuffers()`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/xART/AppleSEPXART_embedded.cpp`
+- `sepfw-booted`
+- `uint32_t AppleSEPHilo::getNumValidTiledBimTiles()`
+- `msg->reply.seq == _current_seq_num`
+- `virtual IOReturn AppleSEPEndpoint::setSendOOLBuffer(IOSlaveMemory *)`
+- `void AppleSEPEndpoint::startOperation()`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPManagerARM.cpp`
+- `chosen = IORegistryEntry::fromPath(\"/chosen\", gIODTPlane)`
+- `iovmaddr != nullptr`
+- `kIOReturnSuccess == setSendOOLBuffer(out)`
+- `void AppleSEPEndpoint::_unholdAfterSleep()`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPLogger.cpp`
+- `SEP failed to power-gate after 5s\n%s`
+- `bool AppleSEPARTStorage::fetch_persisted_art()`
+- `kern_return_t AppleSEPCoreBuffer::coredump_save_segment_data(core_save_segment_data_cb, void *)`
+- `void AppleSEPDiscovery::_init(AppleSEPManager *)`
+- `reply.set_var.success == 1`
+- `AppleSEP:WARNING: timeout waiting for test message reply (cmd=%d, seq=%d)\n`
+- `AppleSEP:WARNING: timed out waiting for response\n`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientLoadRestoreFirmwareWithART(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `IOReturn AppleSEPXART::getFullEpochs(SEPEpoch::EpochSlot *, size_t)_block_invoke`
+- `SEPI`
+- `void AppleSEPManager::_waitUntilCanSendMessage()`
+- `IOReturn AppleSEPHilo::_loadLthRawGated(const void **, hilo_opcode *)`
+- `kIOReturnSuccess == _calculateGainsAlphasAndBimsGated(&args)`
+- `void AppleSEPFirmware::_setupTbmMemoryRegions()`
+- `in_msg_p->length == sizeof(uuid_t)`
+- `sizeof(uint32_t) == entry->getLength()`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientLoadRestoreFirmware(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `getCommandGate()->getWorkLoop()->inGate()`
+- `nullptr != dr_lth_backup`
+- `1`
+- `static void AppleSEPControl::_notifyActiveAsync(thread_call_param_t, thread_call_param_t)`
+- `rand_data`
+- `%s: SEP info: 0x%x\n`
+- `not found`
+- `(sep_cputrace_size % getPageSize()) == 0`
+- `enum AppleSEPManager::SEPSleepMode AppleSEPManager::_getSleepMode()`
+- `0 == value >> (8 * sizeof(msg->msg.content))`
+- `hilo`
+- `function-wait_for_power_gate`
+- `unsigned int AppleSEPManager::_loadChannelObjectEntries(AppleSEPSharedMemoryBuffer::ChannelEntry *, unsigned int)`
+- `dict != nullptr`
+- `nullptr != iop`
+- `kIOReturnSuccess == _xart_ep->bncn_generate(slot, bncn, bncn_len)`
+- `IOReturn AppleSEPTesting::_initSendOOLBuffer(IOByteCount)`
+- `%s: Platform doesn't support SEPROM iBIC retrieval\n`
+- `length > 0`
+- `IOReturn AppleSEPDiscovery::_endpointIsAdvertisedGated(uint32_t *, bool *)`
+- `12111112122212121112211211222`
+- `virtual bool AppleSEPUserClient::initWithTask(task_t, void *, UInt32)`
+- `SEPEpoch::EPOCH_COUNT == epochs_len`
+- `_outgoing_buffer_size > _currentART->getLength()`
+- `AppleSEPTesting`
+- `AppleSEPBooter.cpp`
+- `endpoint != nullptr`
+- `sepd_flag_entry->app == 'SEPD'`
+- `uint32_t log2i(uint32_t)`
+- `EP_DISCOVERY == msg->endpoint`
+- `\"next_val %u, _trace_buffer->next %u >= _entry_count %lu\\n\" @%s:%d`
+- `AppleSEPCommon.h`
+- `%s: SEP CoreAnalytics: Failed to send CA event %d\n`
+- `IOReturn AppleSEPARTStorage::getCurrentART(OSData **)`
+- `site.AppleSEPTraceBuffer`
+- `nullptr != src_index`
+- `kIOReturnSuccess == getCommandGate()->runAction( action, (void *)lth_backup, &rc)`
+- `_command != nullptr`
+- `virtual IOSlaveMemory *AppleSEPManager::_allocateRelayMemory(IOOptionBits, IOByteCount, IOByteCount)`
+- `_current_pm_state != PM_STATE_LOW`
+- `size != nullptr`
+- `\"Not supported, use hiloEnable instead\" @%s:%d`
+- `arts != NULL`
+- `(bpa % PAGE_SIZE_64) == 0`
+- `IOService *AppleSEPManager::_getServiceFromEndpointName(uint32_t, uint32_t)`
+- `AppleSEPManager starting trace boot timer\n`
+- `apcie-up,sep`
+- `%s: accumulate returned failure: %d\n`
+- `%s: load the art\n`
+- `%s: FIPS reseed rejected: system not in PM_STATE_ON (current: %u)\n`
+- `axi2af_parity_enable`
+- `kIOReturnSuccess == setReceiveOOLBuffer(in)`
+- `1211121111112111111122111112211`
+- `nullptr != info`
+- `virtual bool AppleSEPDebugArgs::initWithOwner(AppleSEPSharedMemoryBuffer *)`
+- `void AppleSEPManager::_asyncHoldForSleep(bool)`
+- `%s: Configuring in buffer\n`
+- `nullptr != ar`
+- `cmsgSET_DMA_IN`
+- `cmsgSET_DMA_OUT`
+- `site.AppleSEPBooter`
+- `\"SEP Boot Failure: BootPatch failed - 0x%x\" @%s:%d`
+- `0 == gl_rec_find(&_gigalocker_state.ctx, &record_id, &rec_idx, NULL)`
+- `void AppleSEPManager::_asyncHoldCall()`
+- `site.AppleSEPSharedMemoryBuffer`
+- `IOReturn AppleSEPHilo::getLthTransferAttestation(hilo_lth_transfer_key_attestation_v1_t *)`
+- `site.AppleSEPCommandPool`
+- `AppleSEPCommand.cpp`
+- `nullptr != hash`
+- `Unexpected error 0x%x waiting for SEP to power-gate\n%s`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/SEPApNonce.cpp`
+- `0 != i`
+- `_message_in_progress`
+- `AppleSEP:WARNING: endpoint %u attempting to re-set send OOL buffer\n`
+- `void AppleSEPFirmware::_initFromPreload()`
+- `aseb != nullptr`
+- `\"SEP Boot Failure: BootTmmManifest failed - 0x%x\" @%s:%d`
+- `rsepfirmware rc: 0x%x\n`
+- `static IOReturn AppleSEPUserClient::DispatchGetTraceRecordState(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `bool AppleSEPXART::_shouldHaveBootMessageTimeout()`
+- `expected_out_len == out_len`
+- `alloc failed`
+- `AppleSEPARTRequests`
+- `AppleSEP:WARNING: SEP coredump page request timed out\n`
+- `1211111212221212111`
+- `1212`
+- `TESTING_OOL_SIZE >= ds->getSepPageSize() * ds->getSendOolMinPages()`
+- `void AppleSEPHilo::_cleanflushBounceBuffer()`
+- `IOReturn AppleSEPControl::_cmsgSend(AppleSEPMessage *, UInt32 *, bool *)`
+- `kIOReturnSuccess == getCommandGate()->runActionBlock(^IOReturn { _Static_assert(sizeof(uint64_t) == sizeof(_no_pm_mask), \"_no_pm_mask is not uint64_t\"); REQUIRE(8 * sizeof(uint64_t) > index); ep_power_managed = !(((uint64_t)1 << index) & _no_pm_mask); return kIOReturnSuccess; })`
+- `hilo_opcode AppleSEPHilo::getDisasterRecoveryLthBackup(void *)`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientGigalockerStressTest(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `void AppleSEPBooter::_bootAction(void *, void *)`
+- `%s: SEPROM response data, op %u data 0x%08x\n`
+- `void AppleSEPHilo::_getBounceBuffer(AppleSEPManager *)`
+- `%s: Saving %s-xART with CRC: 0x%x\n`
+- `%s: Detected hardcoded TXM-SEP secure channel DVA, setting flag in init flags\n\n`
+- `void AppleSEPManager::_setupEpPower(uint32_t, uint32_t)_block_invoke`
+- `AppleSEP:WARNING: duplicate endpointsEnabled call\n`
+- `!_fips_reseed_in_progress`
+- `wake`
+- `eventName`
+- `nullptr != ds`
+- `AppleSEPARTStorage`
+- `bool AppleSEPARTStorage::save_incoming_art(const uint8_t *, const uint8_t *)`
+- `AppleSEPSharedMemoryBuffer.h`
+- `void AppleSEPDebug::_initBuffers()`
+- `virtual IOCommandGate *AppleSEPEndpoint::getCommandGate()`
+- `static IOReturn AppleSEPUserClient::DispatchHiloLoadLthTransferMessage(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `void AppleSEPPairing::_prepareOOLBuffers()`
+- `\"SEP boot message send failed\" @%s:%d`
+- ` [Scrubbed]`
+- `AllocMPM.cpp`
+- `nullptr != _sep_firmware_memory`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPPairing.cpp`
+- `nullptr != entries`
+- `IOReturn AppleSEPManager::_waitOSActiveGated(unsigned int *)`
+- `bounded_array_ref: Can't construct from a size greater than UINT32_MAX`
+- `%s: Shmbuf for SEP: { slave addr = 0x%llx, size = 0x%lx }\n`
+- `void AppleSEPXART::format_acks(char *, size_t)`
+- `bool AppleSEPXART::_getApManifestHash(uint8_t *, size_t *)`
+- `void AppleSEPARTService::clearART()`
+- `nullptr != name`
+- `AppleSEP:WARNING: Read stale entry at idx %llu, last_timestamp %llu < first timestamp %llu. Consumed cnt=%llu, stale cnt=%llu\n\n`
+- `buffer != nullptr`
+- `void AppleSEPXART::_xmsgReceived(void *, void *)`
+- `bool AppleSEPDeviceService::_init(const discovery_endpoint_info_t *, AppleSEPManager *)`
+- `site.AppleSEPXART`
+- `virtual bool AppleSEPDebugService::start(IOService *)`
+- `SEPPatches`
+- `%s: Setting default slot for boot param\n`
+- `_shm_buffer->findInfoForName('CPUT', NULL, NULL, (void **)&cpu_trace_header, &cpu_trace_header_size)`
+- `site.AppleSEPHilo`
+- `!getWorkLoop()->onThread()`
+- `virtual void AppleSEPFirmware::releaseFirmware()`
+- `MAX_PATCH_LEN >= piece_lens[PIECE_PATCHES]`
+- `void KdbgScope::push(uint32_t)`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPCommon.h`
+- `out`
+- `AppleSEPHiloService`
+- `kIOReturnSuccess == getWorkLoop()->addEventSource(_command_gate)`
+- `%s: Disaster recovery LTH unsupported\n`
+- `in_msg_p->length <= MAX_XART_LOCKER_PAYLOAD_SIZE && in_msg_p->length >= sizeof(uuid_t)`
+- `iop != NULL`
+- `void AppleSEPFirmware::_mapMemoryToSEP()`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientLynxGetProvisionalSlot(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `0`
+- `%s: Found sep-boot-slot %u in DT\n\n`
+- `12112121222`
+- `virtual bool AppleSEPXARTService::start(IOService *)`
+- `dictKey[0]`
+- `%c%c `
+- `attach(_asep)`
+- `%s: Max alpha for channel %u differs too much from expected\n`
+- `static IOReturn AppleSEPUserClient::DispatchHiloGetLthTransferAttestation(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `void AppleSEPXART::format_acks(char *, size_t)_block_invoke`
+- `void AppleSEPARTService::_ensure_nvram_readable()`
+- `_trace_buffer`
+- `void AppleSEPHilo::_startOperationGated(bool)`
+- `static IOReturn AppleSEPUserClient::DispatchHiloUpdateTimer(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `bool AppleSEPBooter::initForSEP(AppleSEPManager *)`
+- `AppleSEP:WARNING: ARTStorage received unknown unsolicited message op %u\n`
+- `site.AppleSEPARTStorageService`
+- `kIOReturnSuccess == getWorkLoop()->addEventSource(_enableEvent)`
+- `nullptr != forSEP`
+- `site.SEPEpoch`
+- `IOPropertyExistsMatch`
+- `%s: Record of type: %d has invalid payload size %u. Wiping\n`
+- `nullptr != b`
+- `page_count != nullptr`
+- `AppleSEPEndpoint::initWithOptions(forSEP, this, action, nullptr, EP_DISCOVERY)`
+- `IOReturn AppleSEPHilo::_getLthBackupGated(void *, hilo_opcode *)`
+- `IOReturn AppleSEPHilo::_checkGainTestPatternGated(hilo_gain_param_set_t)`
+- `IOReturn AppleSEPTesting::_data_get_gated(OSBoundedArrayRef<uint8_t>, uint32_t *, uint32_t)`
+- `nullptr != _lock`
+- `%s: SEP Boot Error: Could not set auto-boot to false, you should manually re-restore this device.\n`
+- `\"TXM channel shared page unexpected: 0x%llX | %lu\" @%s:%d`
+- `boot`
+- `void AppleSEPEndpoint::_holdForSleep()`
+- `%s: Timed out waiting %llu ns for endpoint 0x%x\n`
+- `(*endpointHandle < AppleSEPEndpoint::_max_endpoints) || (*endpointHandle == EP_L4INFO)`
+- `bool AppleSEPManager::_getTzInfo(unsigned int, bool *, uint32_t *)`
+- `%s: Can't find property %s\n`
+- `%s: loadDisasterRecoveryLthBackup returned %d\n`
+- `0 == param >> 4`
+- `/dev/apfs-raw-device.%d.%d`
+- `%s: control endpoints created\n`
+- `\"SEP ROM boot timeout waiting for panic message\" @%s:%d`
+- `kARTBufferSize >= ds->getSepPageSize() * ds->getSendOolMinPages()`
+- `%s: %c%c%c%c registered for xART disable\n`
+- `AppleSEP:WARNING: IOMemoryDescriptor size 0x%lx, needed at least size 0x%lx\n`
+- `pairing != NULL`
+- `OSBoundedPtr.h`
+- `void AppleSEPBooter::_captureiBICKCV()`
+- `AppleSEPXART.cpp`
+- `prop1value != nullptr`
+- `pwn`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientLoadFirmware(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `AppleSEP:WARNING: EP0 received message for endpoint %u\n`
+- `%s: SEP accepted IMG4\n`
+- `AppleSEP:WARNING: SEP boot timeout in unexpected state %d\n`
+- `gl_context`
+- `kXART_buffer_size >= ds->getSepPageSize() * ds->getReceiveOolMinPages()`
+- `expected_bncn_len == out_len`
+- `ret == kIOReturnSuccess`
+- `nullptr != prop_name`
+- `IOReturn AppleSEPManager::readDynamicObjectProperties(const char *, uint32_t *, uint32_t *)`
+- `bool AppleSEPSharedMemoryBuffer::initWithOptionsAligned(IOOptionBits, IOByteCount, IOByteCount, IOMapper *, uint8_t)`
+- `12121`
+- `nullptr != bmd`
+- `kXART_buffer_size >= ds->getSepPageSize() * ds->getSendOolMinPages()`
+- `sep_node`
+- `_state == COREDUMP_REQUEST_CORE`
+- `16`
+- `AppleSEPXART`
+- `kARTBufferSize <= ds->getSepPageSize() * ds->getReceiveOolMaxPages()`
+- `IOReturn AppleSEPHilo::_accumulateTestPatternGated(hilo_bis_bpsp_t)`
+- `%s: pass\n`
+- `nullptr != _discovery_endpoint`
+- `void AppleSEPControl::_cmsgAction(void *, void *)`
+- `auto-boot`
+- `boot-timeout-ms`
+- `\"SEP Boot Failure: ROM failed to ack %s %s: 0x%x\" @%s:%d`
+- `void AppleSEPHilo::_msgReceived(void *, void *)`
+- `iomd->getLength() == map_len`
+- `sendMsgSize <= UINT32_MAX`
+- `!shouldWait || !getWorkLoop()->onThread()`
+- `void AppleSEPManager::_setMapperState(IOMapper *, bool)`
+- `void AppleSEPARTRequests::_msgAction(void *, void *)`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/SEPEpoch.cpp`
+- `%s: GenerateNonce called without slot on Sandcat device, returning dummy all-ones value\n`
+- `AppleSEPARTService`
+- `\"Multiply overflow\" @%s:%d`
+- `%s: SEP accepted TMM manifest\n`
+- `%s: SEP accepted SEPART\n`
+- `IOReturn AppleSEPHilo::_getParamsGated(hilo_display_params_msg_t *)`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientLynxGetCPSN(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `IOReturn AppleSEPManager::_sendMessageGated(UInt32 *, void *, void *, int *)`
+- `bool AppleSEPManager::reseedXNUPRNG()`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPARTStorage.cpp`
+- `%s: failed to get VM space for allocation\n`
+- `reply.data_offs.success == 1`
+- `site.AppleSEPCommand`
+- `0 == lcrt_size`
+- `IOReturn AppleSEPXART::commitEpochs(SEPEpoch::Epoch *, size_t)`
+- `0 == memory_discarded`
+- `IOReturn AppleSEPHilo::loadDisasterRecoveryLthBackupIomd(IOMemoryDescriptor *)`
+- `AppleSEPPairing.cpp`
+- `IOReturn AppleSEPXART::gl_initialize(const char *)`
+- `(shmcon_size % getPageSize()) == 0`
+- `AppleSEP:WARNING: Could not register SEP root shmcon (err=%d)\n`
+- `_state == COREDUMP_REQUEST_SEGMENT`
+- `0 == ds->getSendOolMinPages()`
+- `kIOReturnSuccess == patch_bmd->prepare()`
+- `copied_bytes == patch_bmd->getLength()`
+- `decode_info != nullptr`
+- `\"SEP timebase message failed\" @%s:%d`
+- `expected_bncn_len + expected_commit_hash_len == out_len`
+- `_state == COREDUMP_REQUEST_PAGE`
+- `IOReturn AppleSEPHilo::_getLthRawIomdGated(IOMemoryDescriptor *)`
+- `void AppleSEPFirmware::_releaseIbootRegion(IOMemoryDescriptor *, bool)`
+- `nullptr != address`
+- `12111211111121111111222121121`
+- `void AppleSEPManager::_setupEpPower(uint32_t, uint32_t)`
+- `%s: Power state transition %u -> %u proceeding after FIPS reseeding completed\n`
+- `AppleSEPManager panic for %s: %s\n%s\n%s`
+- `IOReturn AppleSEPManager::mapDynamicObject(const char *, IOBufferMemoryDescriptor **, uint32_t *, uint32_t *)`
+- `sepBics->_init(hiloEp, params)`
+- `static IOReturn AppleSEPUserClient::DispatchHiloLoadLthBackup(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `NONCE_BIT_LEN == _reply.bootstrap_msg.data`
+- `_enableEvent`
+- `IOReturn AppleSEPXART::_xmsgSend(XARTMessage *, xart_buffer_config *, uint32_t)`
+- `in_msg_p->length == analytics_payload_len`
+- `kIOReturnSuccess == xartSEPSlaveEP()->gl_shutdown()`
+- `1212121222221211`
+- `site.AppleSEPTestingService`
+- `TESTING_OOL_SIZE >= ds->getSepPageSize() * ds->getReceiveOolMinPages()`
+- `_sep_firmware_address != 0`
+- `_sep_firmware_length == iomd->getLength() - _patch_buf->getLength() - _ustuff_buf->getLength()`
+- `no_monitors`
+- `%s: SEP booted without firmware?\n`
+- `AppleSEPEndpoint`
+- `static IOReturn AppleSEPUserClient::DispatchHiloAdvanceGainRestrictionPhase(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `txm-secure-channel-base`
+- `static bool AppleSEPManager::_propToUint32(const OSObject *, uint32_t *)`
+- `virtual bool AppleSEPARTStorageService::start(IOService *)`
+- ` `
+- `command != nullptr`
+- `IOReturn AppleSEPControl::cmsgSET_DMA_OUT(UInt8, IOSlaveMemory *, UInt32)`
+- `TZ1 explicitly set %u size 0x%x\n`
+- `iobmd != nullptr`
+- `121112111111211111112211122`
+- `_incoming_buffer`
+- `kIOReturnSuccess == getCommandGate()->runAction( action, (void *)dr_lth_backup, &rc)`
+- `%s: sep-debug-args: %s\n`
+- `nullptr != _xart_ep`
+- `prop_len >= sizeof(result)`
+- `IOReturn AppleSEPControl::cmsgSET_OOL_IN(UInt8, IOSlaveMemory *, UInt32)`
+- `in_msg_p->length >= sizeof(analytics.version)`
+- `nullptr != size`
+- `-sep_has_sandcat`
+- `void AppleSEPFirmware::_mapBuffer(IOMemoryDescriptor *, uint32_t, uint64_t *)`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientEraseAllContentAndSettings(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `void AppleSEPManager::_waitUntilSEPStateLPWMinimum()`
+- `0x%08x `
+- `AppleSEPDiscovery.cpp`
+- `kIOReturnSuccess == getCommandGate()->runAction(action)`
+- `reply.data_set.success == 1`
+- `01234567890123456789012345678901`
+- `\"SEP Boot Failure: ROM failed to ack BootTz0: 0x%x\" @%s:%d`
+- `RSEP`
+- `%s: Property %s malformed\n`
+- `0123456789ABCDEF`
+- `bool SEPBICS::_init(IOSlaveEndpoint *, const HiloDisplayParams *)`
+- `void AppleSEPHilo::_getChannel(void *, const uint8_t *, size_t *, size_t)`
+- `/chosen`
+- `IOReturn AppleSEPXART::commit_hash(uint8_t, const uint8_t *, size_t, bool)_block_invoke`
+- `uint32_t AppleSEPManager::_get_chip_id()`
+- `uint64_t AppleSEPFirmware::getUstuffAddress()`
+- `%s: CRC mismatch for record type: %d, uuid: %s, payload_size %u, payload_crc = %u, computed_crc = %u, idx = %u. Wiping\n`
+- `_shm_buffer != NULL`
+- `bool SEPROMPanicBuffer::scrubPanicBuffer()`
+- `SEPEpoch.cpp`
+- `virtual void AppleSEPDebugArgs::_updateBuffer()`
+- `1211111111321`
+- `old_info->info.name == name`
+- `(index < _max_endpoints) || (index >= EP_LOWEST_FIXED)`
+- `xart != nullptr`
+- `owner != nullptr`
+- `AppleSEPBooter`
+- `static void AppleSEPBooter::triggerRecoveryMode()`
+- `TESTING_OOL_SIZE <= ds->getSepPageSize() * ds->getSendOolMaxPages()`
+- `AppleSEPDebug`
+- `_gigalocker_state.available`
+- `in`
+- `_cmsgSend`
+- `rom-panic-bytes`
+- `nullptr != buf`
+- `static AppleSEPFirmware *AppleSEPFirmware::fromPreload(IOMapper *, AppleSEPFirmwarePayloadType)`
+- `\"Nonce generate replies processed out of order; inactive tag %d \" \"timeout tag %d\" @%s:%d`
+- `Firmware type: %s\nSEP state: %d\nPM state: %d\nBoot state: %d\nMailbox status:\n%s\nMailbox entries:\n%s\nMailbox queue pointers: %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %d/%d %`
+- `site.AppleSEPPairing`
+- `\"SEP Boot Failure: unexpected status 2:%u\" @%s:%d`
+- `AppleSEP:WARNING: AppleSEPXART (EP: %u) received unknown SEP request op %u\n`
+- `void AppleSEPManager::_nonPowerManagedEpEnable()`
+- `\"SEP aborted SLEEP control message\" @%s:%d`
+- `void AppleSEPHilo::_getBounceBufferFromDeviceTree()`
+- `IOReturn AppleSEPHilo::_loadLthBackupIomdGated(IOMemoryDescriptor *)`
+- `AppleSEP:WARNING: AppleSEPTesting received message for inactive command (raw msg=%llx)\n`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientGetART(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `AppleSEP:WARNING: bad buffer offset %u on EP1\n`
+- `pcie-up-interrupts`
+- `AppleSEPSharedMemoryBuffer::isChannelStandalone(standalone_channels[i])`
+- `kManifestBufferSize <= ds->getSepPageSize() * ds->getSendOolMaxPages()`
+- `void AppleSEPFirmware::_copyInData(IOMemoryDescriptor *)`
+- `New`
+- `%s: Failed to generate nonce\n`
+- `size > sizeof(testArgs)`
+- `HasXART`
+- `%s: postponing setPowerState due to still-alive endpoints 0x%llx\n`
+- `static AppleSEPARTStorage *AppleSEPARTStorage::sepARTStorage(AppleSEPDeviceService *)`
+- `AppleSEP:WARNING: SEP coredump thread request timed out\n`
+- `AppleSEPTraceBuffer finished boot timer setting periodic poll to %u\n`
+- `IOReturn AppleSEPTesting::_initOOLs()`
+- `_in_data != nullptr`
+- `/arm-io/dart-sep`
+- `void AppleSEPARTStorage::configure_in_buffer()`
+- `site.AppleSEPEndpointService`
+- `xART`
+- `timeout != nullptr`
+- `PE_i_can_has_debugger(NULL)`
+- `IOSlaveMemory *AppleSEPManager::allocateSlaveMappedMemory(IOByteCount, IOByteCount, uint8_t)`
+- `Sandcat`
+- `dictData[0]`
+- `IOReturn AppleSEPHilo::_loadDisasterRecoveryLthBackupGated(const void *, hilo_opcode *)`
+- `AppleSEPEndpointService`
+- `virtual IOReturn AppleSEPUserClient::externalMethod(uint32_t, IOExternalMethodArguments *, IOExternalMethodDispatch *, OSObject *, void *)`
+- `code_end & TRACE_FUNCTION_END`
+- `kIOReturnSuccess == _enableEvent->setTimeoutMS(0)`
+- `IOReturn AppleSEPXART::set_provisional_ap(uint8_t, bool)_block_invoke`
+- `virtual bool AppleSEPManager::start(IOService *)`
+- `hilo_opcode AppleSEPHilo::calculateGainsAndBims(uint16_t **, double *, hilo_bim_v1_t *, hilo_tiled_bim_v1_t *)`
+- `%s: Could not map iomd\n`
+- `nullptr != xart`
+- `*out_struct.size_bytes_p >= sizeof(uint8_t) * epoch_slots_len`
+- `site.AppleSEPCommand *`
+- `IOPMSystemSleepType`
+- `info->info.ool_out_min_pages == msg->data.advertise_ep_ools.ool_out_min_pages`
+- `nullptr != params`
+- `hilo_opcode AppleSEPHilo::getLthRaw(void **)`
+- `result == kIOReturnSuccess`
+- `_sleep_art_sentinel`
+- `AppleSEP:WARNING: AppleSEPARTStorage received message for inactive tag %u\n`
+- `len != 0`
+- `nullptr != channels`
+- `IOReturn AppleSEPHilo::_sendMessageGated(const HiloMessage *, hilo_opcode *)`
+- `_command_gate != nullptr`
+- `falsee`
+- `_log_len <= _log_max`
+- `IOReturn AppleSEPHilo::_setGainParamSetGated(hilo_gain_param_set_t, hilo_opcode *)`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPDebugArgs.cpp`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/xART/gigalocker/gigalocker.cpp`
+- `int gl_close(struct gl_ctx *const)`
+- `\"unable to acquire TXM channel shared page: %d\" @%s:%d`
+- `AppleSEP:WARNING: received OS Active message in unexpected state %u\n`
+- `%s: FIPS reseed rejected: SEP not ready (state: %u)\n`
+- `tz1-size-set`
+- `super::start(provider)`
+- `kIOReturnSuccess == ret`
+- `target->_asep->hasSandcat()`
+- `v != nullptr`
+- `virtual void AppleSEPManager::notifyEndpointEnabled(UInt32, bool)_block_invoke`
+- `IOReturn AppleSEPManager::_setGigalockerAvailable(const char *)`
+- `_outgoing_buffer`
+- `virtual bool AppleSEPTraceBuffer::initWithOwner(AppleSEPSharedMemoryBuffer *)`
+- `lth_transfer_restrictions`
+- `static IOReturn AppleSEPEndpoint::setReceiveRelayBuffer(IOSlaveProcessor *, uint8_t, IOOptionBits, IOByteCount, IOByteCount, IOSlaveMemory **)`
+- `allocateCommandPool(_max_commands)`
+- `*len >= hash_len`
+- `void _set_art_thread_call(thread_call_param_t, thread_call_param_t)`
+- `kr == KERN_SUCCESS`
+- `void AppleSEPDeviceService::_publish()`
+- `kIOReturnSuccess == getWorkLoop()->addEventSource(_periodic)`
+- `buffer_size > sizeof(simple_trace_buffer_t)`
+- `0 == size % PAGE_SIZE`
+- `virtual bool AppleSEPUserClient::start(IOService *)`
+- `KdbgScope::~KdbgScope()`
+- `TXM-SEP secure channel: %u | %u\n`
+- `kIOReturnSuccess == getCommandGate()->runActionBlock(^IOReturn { _waitUntilSEPStateLPWMinimum(); return kIOReturnSuccess; })`
+- `FIFO<AppleSEPMessage, 32>::FIFO() [T = AppleSEPMessage, N = 32]`
+- `121112111111211111112212`
+- `%s: SEP ping response\n`
+- `int fixup_duplicate_records(struct gl_ctx *const, struct record_cache *const, uint32_t *, const struct gl_rec_hdr *const, uint32_t)`
+- `_current_sleep_mode == SLEEP_MODE_UNKNOWN`
+- `IOReturn AppleSEPManager::_powerChangeNotificationHandler(void *, UInt32, IOService *, void *, vm_size_t)`
+- `AppleSEP:WARNING: Counter self-test failed, error %d\n`
+- `AppleSEPCoreBuffer`
+- `kIOReturnSuccess == getCommandGate()->runAction( action, channels, &rc)`
+- `EPOCH_COUNT == epochs_len`
+- `void SEPApNonce::generateBncn(uint8_t, uint8_t *, size_t)`
+- `HILO_BOUNCE_BUFFER_SIZE <= _bounce_buffer_md->getLength()`
+- `0123456789abcdef`
+- `static AppleSEPSharedMemoryBuffer::ChannelEntry AppleSEPSharedMemoryBuffer::_mapStandaloneChannel(AppleSEPManager *, ChannelEntry)`
+- `%s: %s called with handle %x, alloc %x\n\n`
+- `site.AppleSEPManager`
+- `UNKNOWN SEPOS`
+- `%s: Power state transition %u -> %u waiting for FIPS reseeding to complete\n`
+- `bool _getChannelObjectFromEdt(channel_obj_data_t *)`
+- `AppleSEPPanicBuffer`
+- `slide == 0`
+- `AppleSEP:WARNING: EP0 received message for inactive tag %u\n`
+- `timeout_ms != nullptr`
+- `%s: %s set SEP slot id to %u\n\n`
+- `nullptr != o`
+- `void AppleSEPManager::signalTimeout(UInt32)`
+- `%s: Unexpected xART duplicate disable ack from %c%c%c%c\n`
+- `%s: Duplicate advertisement of endpoint ID %u name 0x%x\n`
+- `site.SEPBICS`
+- `nullptr != args->msg`
+- `void AppleSEPEndpoint::endOperation()`
+- `AppleSEP:WARNING: %s (%d): failed to map input memory descriptor\n`
+- `sep-debug-args`
+- `121121121`
+- `kIOReturnSuccess == _xart_ep->getFullEpochs(epoch_slots, epoch_slots_len)`
+- `AppleSEPDevice.cpp`
+- `(HILO_BIS_BPSP_16 == bpsp) || (HILO_BIS_BPSP_32 == bpsp)`
+- `kIOReturnSuccess == getCommandGate()->runAction(action, &result)`
+- `void AppleSEPControl::_callActiveAsync()`
+- `code_begin & TRACE_FUNCTION_BEGIN`
+- `expected_bncn_len <= bncn_len`
+- `ap-manifest`
+- `HILO_SUCCESS == rc`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPEndpoint.cpp`
+- `AppleSEP:WARNING: SEP: unexpected message, op %u tag %u param %u data 0x%08x\n`
+- `%s: Found duplicate for record type: %d, uuid: %s, idx1: %u, idx2: %llu\n`
+- `_shm_buffer != nullptr`
+- `AppleSEP:WARNING: SEP bootstrap failed\n`
+- `nullptr != _sep_mapper`
+- `Lynx`
+- `%s: gain calculation returned failure: %d\n`
+- `nullptr != xart_master`
+- `kIOReturnSuccess == _command_gate->runActionBlock(^IOReturn { if (_art_valid) { if (nullptr != _art) { result = OSData::withData(_art); REQUIRE(nullptr != result); } return kIOReturnSuccess; } _ensure_nvram_readable(); thread_call_t tcall = thread_call_allocate_with_priority( _get_art_thread_call, _`
+- `_received < _length`
+- `IOReturn AppleSEPHilo::_accumulateGated(const void **, hilo_bis_bpsp_t, hilo_opcode *)`
+- `reply.data_get.success == 1`
+- `void AppleSEPFirmware::_allocateTbmMemoryRegions(const uint64_t *)`
+- `static IOReturn AppleSEPUserClient::DispatchHiloGetLthRaw(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `virtual bool AppleSEPPairing::start(IOService *)`
+- `%s: mach_absolute_time: %llu\n`
+- `bool AppleSEPXART::_initForDeviceService(AppleSEPDeviceService *, bool)`
+- `AppleSEP:WARNING: attempt to send message to SEP in non-receptive state %d\n`
+- `value != NULL`
+- `sep-boot-slot`
+- `121111121222121211121212221211111111112212221121111121222211111111121222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `%s: Got IODTNVRAM OK\n`
+- `IOReturn AppleSEPARTRequests::handle_first_connected()`
+- `\"SEP manifest too large (0x%lx > 0x%lx)\" @%s:%d`
+- `void AppleSEPSharedMemoryChannel::attachOwner(AppleSEPSharedMemoryBuffer *)`
+- `void SEPApNonce::_init(IOSlaveEndpoint *)`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPTraceBuffer.cpp`
+- `bool AppleSEPBooter::_getBootSlotId(uint8_t *)`
+- `command->getPool() == this`
+- `AppleSEP:WARNING: AppleSEPXART (EP: %u) received message for incorrect endpoint %u\n`
+- `\"SEP is being asked to sleep, but was never booted.\" @%s:%d`
+- `%s: Img4DecodeInit failed: %d\n`
+- `old_info == _find_endpoint_info_by_name(name)`
+- `AppleSEPFirmware.cpp`
+- `AppleSEPCommand`
+- `AppleSEPCommandPool`
+- `void AppleSEPManager::_loadFlagData()`
+- `%s: ART pointer is NULL, not setting\n`
+- `AppleSEP:WARNING: Failed to invalidate nonce, error %d\n`
+- `param.offset + param.length <= _length`
+- `nullptr != lth_backup`
+- `static IOReturn AppleSEPUserClient::DispatchHiloLoadLthRaw(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPCommand.cpp`
+- `%s: No SEP on during low power boot arg\n`
+- `sep-cputrace-size`
+- `AppleSEPARTStorageService`
+- `%s: Waiting for IONVRAM\n`
+- `\"subclass must override\" @%s:%d`
+- `site.AppleSEPDebug`
+- `gigalocker.cpp`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPDebug.cpp`
+- `static bool AppleSEPDebugArgs::testIbootTruthy()`
+- `\"xART shutdown failed: 0x%lx, acks %s\" @%s:%d`
+- `nullptr != propertySymbol`
+- `nullptr != rc`
+- `nullptr != hilo`
+- `boot-manifest-hash`
+- `_idle_timeout != NULL`
+- `AppleSEP:WARNING: SEP: postMailbox %p failed: 0x%08x\n`
+- `artStorage != nullptr`
+- `void XARTDisableLog::format_acks(char *, size_t)`
+- `bool AppleSEPDiscovery::endpointIsAdvertised(uint32_t)`
+- `PAGE_SIZE <= ds->getSepPageSize() * ds->getReceiveOolMaxPages()`
+- `nullptr != regEntry`
+- `%s: FIPS reseed completed\n`
+- `SEPROMPanicBuffer::SEPROMPanicBuffer(size_t)`
+- `nullptr != iomd`
+- `nullptr != arts`
+- `NULL != nonceBuffer`
+- `%s: Saving %s-xART Locker with CRC: 0x%x\n`
+- `_state == COREDUMP_REQUEST_THREAD`
+- `_work_loop`
+- `AppleSEP:WARNING: Received unsupported SEP secure storage analytics version (%d), skipping\n`
+- `lcrt_size`
+- `hilo_opcode AppleSEPHilo::accumulate(const void **, hilo_bis_bpsp_t)`
+- `AppleSEPHilo.cpp`
+- `IOReturn AppleSEPHilo::_loadLthRawIomdGated(IOMemoryDescriptor *)`
+- `12111112122212121111111111111`
+- `site.AppleSEPDebugArgs`
+- `IOReturn AppleSEPControl::cmsgSET_DMA_IN(UInt8, IOSlaveMemory *, UInt32)`
+- `nullptr != obj->m`
+- `timeout_ms >= 0`
+- `AppleSEP:WARNING: %s: send failed: result 0x%x opcode %u endpoint %u tag %u\n`
+- `AppleSEP:WARNING: SEP ROM timeout - no response\n`
+- `void AppleSEPXART::_initOOLBuffersAsync()`
+- `%s\n%s`
+- `kIOReturnSuccess == iomd->prepare()`
+- `void AppleSEPFirmware::_initFromMemory(IOMemoryDescriptor *, const uint64_t *)`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientPairKey(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `_current_pm_state == PM_STATE_LOW`
+- `bool AppleSEPHilo::_init(AppleSEPDeviceService *)`
+- `%s: accumulating frame %u\n`
+- `void AppleSEPTesting::_testAction(void *, void *)`
+- `nullptr != patch_bmd`
+- `_buffer = static_cast<char *>(IOMallocData(_length * sizeof(uint64_t) * 2 + 1))`
+- `%s: Display width mismatch, SEP %u AP %u\n`
+- `nullptr != memory_map`
+- `\"Not supported, use hiloDisable instead\" @%s:%d`
+- `virtual bool AppleSEPTestingService::start(IOService *)`
+- `%s: SEP resumed from RAM\n`
+- `site.AppleSEPARTStorage`
+- `void AppleSEPARTStorage::_msgAction(void *, void *)`
+- `site.AppleSEPPanicBuffer`
+- `kIOReturnSuccess == _xart_ep->get_ap_slot_info(slot, bncn, bncn_len, commit_hash, commit_hash_len, slot_state)`
+- `virtual IODARTVMSpace *IODARTVMAllocatorMPM::vmAlloc(IOItemCount, IOItemCount, ppnum_t, IODMACommand *, IOItemCount, IOItemCount, bool)`
+- `AppleSEPEndpoint *AppleSEPDeviceService::getEndpoint(OSObject *, IOSlaveEndpoint::Action, void *)`
+- `Failed to commit hash`
+- `%s: Unmap: could not find dynamic object in object dict %s\n`
+- `AppleSEP:WARNING: AppleSEPARTRequests::_msgSendInternal() - result != kIOReturnSuccess - setting active to false\n`
+- `_owner != NULL`
+- `_shm_buffer->findIndexForName('CORE', &_channel)`
+- `AppleSEPUserClient.cpp`
+- `static IOReturn AppleSEPUserClient::DispatchHiloTestGainRestriction(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientLynxGetAppHash(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `\"%s\" @%s:%d`
+- `AppleSEPDebugArgs`
+- `nullptr != len`
+- `entry_len <= _shm_buffer->getEntrySizeAt(idx)`
+- `n && !(n & (n - 1))`
+- `kIOReturnSuccess == getCommandGate()->runAction( action, params)`
+- `AppleSEP:WARNING: EP %u has %d pending messages while disabled\n`
+- `FIFO.h`
+- `\"SEP Boot Failure: ROM failed to ack LoadSEPART: 0x%x\" @%s:%d`
+- `XartApToSep`
+- `_periodic`
+- `%s: ready to accumulate (%s bit)\n`
+- `virtual bool AppleSEPLoggerService::start(IOService *)`
+- `AppleSEP:WARNING: AppleSEPXART (EP: %u)received message for inactive tag %u opcode %u\n`
+- `%s: Replied to xART app: 0x%016llx\n`
+- `SEPCameraDisable`
+- `_sep_panic_timer != NULL`
+- `Failed to do counter self test`
+- `IOReturn AppleSEPManager::_bootSEP(bool, bool)`
+- `_current_sleep_mode != SLEEP_MODE_UNKNOWN`
+- `_providernub != nullptr`
+- `dva_offset != nullptr`
+- `IOReturn AppleSEPHilo::getDisasterRecoveryLthBackupIomd(IOMemoryDescriptor *)`
+- `static IOReturn AppleSEPUserClient::DispatchDynamicObjectOp(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `%s: Writing record type: %d, uuid: %s, crc32: %u at idx %d\n`
+- `%s: FIPS reseed rejected: operation already in progress\n`
+- `%s: DERDecodeItem failed: %d\n`
+- `_currentART == NULL`
+- `%s: Channel %d sample %u had bad gain value (expected %u, got %u)\n`
+- `i8@?0`
+- `\"Unknown nonce race state %d\" @%s:%d`
+- `_dynamic_object_dict`
+- `eventPayload`
+- `sep-fips-mode`
+- `_incoming_buffer != nullptr`
+- `IOReturn AppleSEPARTStorage::commitHash()`
+- `IOReturn AppleSEPHilo::_getLthTransferMessageGated(hilo_get_lth_transfer_message_args_t *)`
+- `nullptr != discovery`
+- `bmd != nullptr`
+- `clientClassName`
+- `IOReturn AppleSEPXART::_nonce_action(void *, uint32_t *, uint8_t, uint8_t *)_block_invoke`
+- `sep-trace-size`
+- `0 == which || 1 == which`
+- `IODARTVMAllocatorMPM`
+- `kIOReturnSuccess == getCommandGate()->runAction( action, attestation, &rc)`
+- `kIOReturnSuccess == getCommandGate()->runAction(action, &args)`
+- `target->_asep->cpu_trace_memory != nullptr`
+- `-bypass-dram-setting-checks`
+- `_boot_endpoint != nullptr`
+- `entry = OSDynamicCast(OSData, chosen->getProperty(\"chip-id\"))`
+- `nullptr != ep`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/SEPBICS.cpp`
+- `bmd`
+- `_sep_status != BootStatus::Panicked`
+- `site.AppleSEPARTRequests`
+- `AppleSEPFirmware::NUM_PIECES + 1 == arguments->scalarInputCount`
+- `blen == bmd->getLength()`
+- `*nonceBufferLen >= NONCE_BYTE_LEN`
+- `0 == ds->getSendOolMaxPages()`
+- `size == bmd->getCapacity()`
+- `AppleSEP:WARNING: _io_name_match is NULL\n`
+- `\"Device tree update with SEP status: result = %08x\\n\" @%s:%d`
+- `virtual void AppleSEPManager::systemWillShutdown(IOOptionBits)`
+- `_shm_buffer->findIndexForName(FLAG_ENTRY_HANDLE, &idx)`
+- `SEP/OS failed to %s at stage %d\n%s`
+- `TZ0 explicitly set %u size 0x%x\n`
+- `\"SEP returned zero-length ART\" @%s:%d`
+- `nullptr != src`
+- `IOReturn AppleSEPHilo::_getLthTransferAttestationGated(hilo_lth_transfer_key_attestation_v1_t *, hilo_opcode *)`
+- `\"SEP Boot failure, op %u data 0x%08x\" @%s:%d`
+- `in_msg_p->length <= MAX_XART_SIZE`
+- `UINT32_MAX - _channel_obj_hdr_len >= _channel_objs[i].data_len`
+- `(sizeof(_flag_entries) + sizeof(uint32_t)) <= _shm_buffer->getEntrySizeAt(idx)`
+- `sep-shmcon-size`
+- `IOReturn AppleSEPARTStorage::handle_first_connected()`
+- `sep_pm`
+- `%s: FIPS reseed complete, waking up pending sleep operation\n`
+- `static void AppleSEPManager::_updateDeviceTreeThread(void *)`
+- `%s: Sending ART_LOAD with timeout\n`
+- `%s: Got IONVRAM OK\n`
+- `kIOReturnSuccess == _xart_ep->delete_ap_slot(slot)`
+- `%s: Display subsample mismatch SEP %u AP %u\n`
+- `%s: SEP display params width %u height %u subsample_red_blue %u supports_tiled_bim %u num_valid_tiled_bim_tiles %u\n`
+- `121111121222121211`
+- `xART not supported, EACS is a nop.`
+- `panicBytesData != nullptr`
+- `NONCE_RACE_NONE == nonce_race_state`
+- `%s: wait for hold call, mach_absolute_time: %llu\n`
+- `static SEPBICS *SEPBICS::sepBics()`
+- `nullptr != max_alpha`
+- `void AppleSEPHilo::_mapBounceBufferGated(uint64_t, hilo_opcode *)`
+- `static IOReturn AppleSEPUserClient::DispatchGetEpochs(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `disabled`
+- `AppleSEP:WARNING: received OOL data of length %d but no receive buffer provided\n`
+- `nullptr != chosen`
+- `%s: PM init done\n`
+- `nullptr != messageRef`
+- `site.AppleSEPFirmware`
+- `IOReturn AppleSEPPairing::send_4cc_message(uint32_t, const void *, size_t, void *, uint32_t *)`
+- `AppleSEPLoggerService`
+- `rsepfirmware`
+- `iodc != nullptr`
+- `IOReturn AppleSEPARTStorage::_msgSendInternal(Opcode *, unsigned int *)`
+- `void AppleSEPARTService::_ensure_nvram_writable()`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientGigalockerShutdown(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `_alignment_offset == 0`
+- `void AppleSEPCoreBuffer::attachOwner(AppleSEPSharedMemoryBuffer *)`
+- `IOReturn AppleSEPDebug::_msgSendLocked(void *, void *)`
+- `int gl_open(const char *const, struct gl_ctx *const)`
+- `cpu_trace_memory != nullptr`
+- `_current_pm_state == PM_STATE_ON || _current_pm_state == PM_STATE_LOW`
+- `test panic`
+- `\"Unreachable.\" @%s:%d`
+- `kcv_bytes >= sizeof(_iBIC_KCV)`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/xART/AppleSEPXART.cpp`
+- `result == kIOReturnSuccess || result == kIOReturnBadArgument`
+- `found`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/xART/DisableLog.cpp`
+- `bool AppleSEPHilo::_tryComputeGain()`
+- `void AppleSEPHilo::_getParamsFromSepGated()`
+- `nullptr != _ustuff_buf`
+- `site.AppleSEPARTService`
+- `nullptr != attestation`
+- `asep->_no_ep_yet_messages.pull(msg)`
+- `reconfig-unlock`
+- `nullptr != slot`
+- `%s: SEP booting\n`
+- `\"SEP Boot Failure: Failed to send %s message to SEPROM\" @%s:%d`
+- `IOReturn AppleSEPHilo::_getLthBackupIomdGated(IOMemoryDescriptor *)`
+- `reply.get_var.success == 1`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientPurgeSystemToken(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `AppleSEP:WARNING: EP0 received unsolicited message 0x%016llx\n`
+- `_sep_state == SEP_OS_ACTIVE`
+- `%s: Incoming art set and synched\n`
+- `SEPBICS`
+- `kIOReturnSuccess == getCommandGate()->runAction( action, (void *)msg, (void *)msg_len, &rc)`
+- `0 == ds->getReceiveOolMaxPages()`
+- `BootOpcode::ReportNonceWord == _reply.bootstrap_msg.opcode`
+- `site.AppleSEPXARTService`
+- `%s: Fetched %s-xART Locker with CRC: 0x%x\n`
+- `nub != nullptr`
+- `registerPowerDriver(this, power_states, sizeof(power_states) / sizeof(power_states[0])) == kIOPMNoErr`
+- `\"SEP firmware prepare failed\" @%s:%d`
+- `IOReturn AppleSEPControl::_cmsgSET_DMA_CMD(UInt32 *)`
+- `nullptr != _providernub`
+- `AppleSEPDeviceService`
+- `0 != _sep_firmware_memory_map`
+- `_asep != NULL`
+- `workLoop != nullptr`
+- `void SEPApNonce::getSlotInfo(uint8_t, uint8_t *, size_t, uint8_t *, size_t, uint8_t *)`
+- `IOReturn AppleSEPHilo::_getLthRawGated(void **, hilo_opcode *)`
+- `int gl_fixup_rev_init(struct gl_ctx *const)`
+- `%s: SEP memory IS%s coherent\n`
+- `void AppleSEPManager::_notifyOSActiveGated()`
+- `_sep_state == SEP_OS_SLEEPING`
+- `AppleSEP:WARNING: AppleSEPARTStorage received message for invalid tag %u\n`
+- `NULL != info`
+- `nullptr != hiloEp`
+- `NULL != chosen`
+- `void AppleSEPManager::_configurePowerStates()`
+- `_bootSEP(true, hibernate_resume) == kIOReturnSuccess`
+- `AppleSEPManager panic for %s: %s\n%s`
+- `effective-production-status-sep`
+- `AppleSEPHilo`
+- `nullptr != endpoint`
+- `_opCount < UINT32_MAX`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientSetART(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientCounterSelfTest(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `expected_commit_hash_len <= commit_hash_len`
+- `IOReturn AppleSEPARTStorage::counterSelfTest(uint16_t *, uint16_t *)`
+- `kManifestBufferSize >= ds->getSepPageSize() * ds->getSendOolMinPages()`
+- `site.AppleSEPEndpoint`
+- `static IOReturn AppleSEPEndpoint::setSendRelayBuffer(IOSlaveProcessor *, uint8_t, IOOptionBits, IOByteCount, IOByteCount, IOSlaveMemory **)`
+- `hilo_opcode AppleSEPHilo::loadDisasterRecoveryLthBackup(const void *)`
+- `false`
+- `AppleSEPTesting.cpp`
+- `nullptr != w`
+- `DispatchRemovedCommand`
+- `true`
+- `USER`
+- `_fips_reseed_in_progress`
+- `%s: xART disable begin\n`
+- `kIOReturnSuccess == getCommandGate()->runActionBlock(^IOReturn { _Static_assert(sizeof(uint64_t) == sizeof(_no_pm_mask), \"_no_pm_mask is not uint64_t\"); if (!_isEpPowerManaged(name)) { REQUIRE(8 * sizeof(uint64_t) > index); _no_pm_mask |= ((uint64_t)1 << index); } return kIOReturnSuccess; })`
+- `iomd != nullptr`
+- `IOReturn AppleSEPARTStorage::getNewNonce(OSData **)`
+- `AppleSEP:WARNING: SEP coredump segment descriptor request timed out\n`
+- `IOReturn AppleSEPTesting::_get_debug_var_gated(uint32_t, OSBoundedArrayRef<const uint8_t>, uint64_t *, uint32_t *, uint8_t *)`
+- `realSepManager != nullptr`
+- `NOT`
+- `IOReturn AppleSEPARTStorage::setART(const uint8_t *, const uint8_t *)`
+- `void XARTDisableLog::log_disable_acknowledge(uint32_t)`
+- `%s: Unable to find sep-boot-slot in DT\n`
+- `cpu_trace_header_size >= sizeof(AppleSEPCPUTraceHeader)`
+- `IOReturn AppleSEPARTStorage::clearART()`
+- `len >= ACK_ENTRY_LEN`
+- `_trace_id > 0`
+- `IOReturn AppleSEPHilo::_testLthTransferAttestationGated(const uint8_t *, hilo_opcode *)`
+- `IOReturn AppleSEPTesting::_check_msg(TestingMessage *)`
+- `AppleSEP:WARNING: spurious message\n`
+- `AppleSEP:WARNING: %s: this command is removed\n`
+- `IOReturn AppleSEPPairing::_pmsgSendLocked(void *, void *, void *)`
+- `IOReturn AppleSEPXART::get_ap_slot_info(uint8_t, uint8_t *, size_t, uint8_t *, size_t, uint8_t *)_block_invoke`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPHilo.cpp`
+- `nullptr != _bounce_buffer_md`
+- `IOReturn AppleSEPManager::setFirmwareBytes(IOMemoryDescriptor *, const uint64_t *, bool, bool)`
+- `_current_pm_state == PM_STATE_ON`
+- `bool AppleSEPARTStorage::persist_art(const uint8_t *, const uint8_t *, OSData **)`
+- `isChannelStandalone(standaloneChannelRaw)`
+- `void AppleSEPSharedMemoryBuffer::cleanEntryAt(int, bool)`
+- `121`
+- `void AppleSEPHilo::_takeChannelGains(void *, const uint8_t *, size_t *, size_t)`
+- `nullptr != md`
+- `%s: Setting custom allocator for SEP MPM mapper\n`
+- `_timeout != NULL`
+- `_sep_panic_buffer`
+- `AppleSEPTraceBuffer.cpp`
+- `nullptr != args->rc`
+- `kIOReturnSuccess == getCommandGate()->runAction( action, (void *)gain_param_set, &rc)`
+- `sendMsg && recvMsg`
+- `virtual IOReturn AppleSEPLogger::receiveMessage(void **, bool)`
+- `nullptr != _register_ep_lock`
+- `IOReturn AppleSEPManager::_setGigalockerAvailable(const char *)_block_invoke`
+- `void AppleSEPARTStorage::configure_out_buffer()`
+- `_num_entries <= sizeof(_entries) / sizeof(_entries[0])`
+- `sep-trace-poll-us`
+- `%s: loadLthRaw returned %d\n`
+- `virtual IOReturn AppleSEPUserClient::clientMemoryForType(uint32_t, IOOptionBits *, IOMemoryDescriptor **)`
+- `IOReturn AppleSEPPairing::getSTCKPairingInfo(const void *, size_t, void *, uint32_t *)`
+- `message.frame.endpoint < AppleSEPEndpoint::_max_endpoints`
+- `%s: Failed to update device tree with SEP status: result = %d\n`
+- `_dynamic_object_dict->setObject(handle, iodc)`
+- `kIOReturnSuccess == getCommandGate()->runAction(action, channels, (void *)bpsp, &rc)`
+- `AppleSEPControl.cpp`
+- `\"unable to insert TXM-SEP secure channel mapping: %d\\n\" @%s:%d`
+- `IONVRAM`
+- `_buffer != nullptr`
+- `_chip_id = *(uint32_t *)entry->getBytesNoCopy()`
+- `void AppleSEPHilo::setGainParamSet(hilo_gain_param_set_t)`
+- `int gl_rec_read(const struct gl_ctx *const, const struct gl_rec_id *const, bool *, uint8_t *const, size_t *const)`
+- `%s: Didn't find hardcoded TXM-SEP secure channel DVA\n\n`
+- `entry != nullptr`
+- `AppleSEP:WARNING: Could not register SEP debugger shmcon (err=%d)\n`
+- `\"Timeout on ART_LOAD\" @%s:%d`
+- `static void AppleSEPDeviceService::getPropertyForEpName(char *, size_t, uint32_t)`
+- `kIOReturnSuccess == getCommandGate()->runAction( action, (void *)sik, &rc)`
+- `enabled`
+- `%s: Didn't find oblit-inprogress in NVRAM\n\n`
+- `void AppleSEPManager::endReseed()_block_invoke`
+- `AppleSEPARTStorage.cpp`
+- `kARTBufferSize <= ds->getSepPageSize() * ds->getSendOolMaxPages()`
+- `void AppleSEPDiscovery::_exposeNub(const discovery_endpoint_info_t *)`
+- `void AppleSEPHilo::_hiloEnableAsync()`
+- `_log_buffer != nullptr`
+- `UInt64 *AppleSEPManager::getRawMsgLog(UInt32 *, UInt32 *)`
+- `IOReturn AppleSEPARTStorage::captureSleepART()`
+- `DisableLog.cpp`
+- `DisplayCompensationMsgBuffer`
+- `AppleSEP:WARNING: failed to send message, error 0x%d\n`
+- `IOReturn AppleSEPHilo::testLthTransferAttestation(const uint8_t *)`
+- `AppleSEP:WARNING: endpoint %u attempting to re-set receive OOL buffer\n`
+- `uint64_t AppleSEPFirmware::getPatchAddress()`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPUserClient.cpp`
+- `!booted`
+- `_num_named_endpoints < sizeof(_endpoint_info) / sizeof(_endpoint_info[0])`
+- `panic_length % sizeof(uint64_t) == 0`
+- `AppleSEPEndpoint::endpointWithIndex(handle) == endpoint`
+- `IOReturn AppleSEPXART::bncn_generate(uint8_t, uint8_t *, size_t)_block_invoke`
+- `nullptr != _hold_ep`
+- `HILO_MAX_LTH_TRANSFER_MANIFEST_SIZE >= args->lth_transfer_manifest_len`
+- `AppleSEPDebug.cpp`
+- `\"SEP Boot Failure: unexpected status 1:%u\" @%s:%d`
+- `nullptr != _bounce_buffer_slave`
+- `static IOReturn AppleSEPUserClient::DispatchHiloLoadDisasterRecoveryLthBackup(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `AppleSEP:WARNING: AppleSEPXART (EP: %u) received message for invalid tag %u opcode %u\n`
+- `_is_sep_master`
+- `skip-lynx`
+- `setFirmwareBytes`
+- `good_pages != nullptr`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPSharedMemoryBuffer.cpp`
+- `121112111111211111112211`
+- `reconfig-breakpoints`
+- `Boot`
+- `IOReturn AppleSEPBooter::_sendSEPART(IOMemoryDescriptor *)`
+- `-sep_panic_mbox_to`
+- `virtual void AppleSEPManager::notifyEndpointEnabled(UInt32, bool)`
+- `/chosen/dynamic-object-map`
+- `AppleSEP:WARNING: AppleSEPARTRequests received message for incorrect endpoint %u\n`
+- `site.SEPApNonce`
+- `outbuf`
+- `apcieNub != nullptr`
+- `void AppleSEPManager::notifyOSActive()`
+- `\"Timeout on MANIFEST\" @%s:%d`
+- `kIOReturnSuccess == queueReceivedMessage(msg)`
+- `\"We seem not to support ART or xART\" @%s:%d`
+- `void AppleSEPManager::checkInMaster(AppleSEPXART *)_block_invoke`
+- `void AppleSEPHilo::_packMessageContent(uint64_t, HiloMessage *)`
+- `debugArgs->getLength() < size - sizeof(testArgs) - 1`
+- `IOReturn AppleSEPManager::_setPowerState(unsigned long *)`
+- `IODeviceTree:/chosen/boot-object-manifests`
+- `%s: System token purged from the ART!\n`
+- `%c%c%c%c:%c`
+- `SEP Panic: %s\n%s`
+- `getCommandGate() != nullptr`
+- `AppleSEPEndpoint::endpointWithIndex(EP_CONTROL) == endpoint`
+- `_shm_buffer->findIndexForName(obj->name, &idx)`
+- `virtual bool AppleSEPARTService::start(IOService *)`
+- `nullptr != data`
+- `asep != nullptr`
+- `IOReturn AppleSEPXART::getFullEpochs(SEPEpoch::EpochSlot *, size_t)`
+- `%s: Configuring out buffer\n`
+- `IOReturn AppleSEPARTStorage::_msgSend(Opcode, unsigned int *)`
+- `IOReturn AppleSEPTesting::_runCommand(uint8_t, TestingMessage::Request::Payload, TestingMessage::Reply::Payload *, int)`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientGenerateNonceAndSlot(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `%s: registered\n`
+- `_firmware != nullptr`
+- `\"txm-secure-channel-base not available with a SEP DART\" @%s:%d`
+- `kIOReturnSuccess == getCommandGate()->runActionBlock(^IOReturn { _waitUntilCanSendMessage(); return kIOReturnSuccess; })`
+- `/chosen/memory-map`
+- `%s: Received system will shut down notification\n\n`
+- `static SEPApNonce *SEPApNonce::sepApNonce()`
+- `info->info.ool_out_max_pages == msg->data.advertise_ep_ools.ool_out_max_pages`
+- `nullptr != buf_len`
+- `result`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPFirmware.cpp`
+- `sepfw-loaded`
+- `opcode == NONCE_GENERATE`
+- `sep_idle_delay`
+- `nullptr != args->gains`
+- `result_mapping`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientLcrtVerify(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientLynxGetPubKey(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `panicBytesData->getLength() == sizeof(uint32_t)`
+- `Unable to retrieve randomness out of SEP`
+- `target-is-fpga`
+- `nullptr != asep`
+- `(bpa % SEP_PAGE_SIZE_64) == 0`
+- `%s: Fetched %s-xART with CRC: 0x%x\n`
+- `%s: Firmware does not contain manifest?\n`
+- `AppleSEP:WARNING: AppleSEPARTStorage received message for endpoint %u\n`
+- `SEPApNonce`
+- `AppleSEPTraceBuffer`
+- `hilo_opcode AppleSEPHilo::getLthBackup(void *)`
+- `AppleSEPDebugService`
+- `com.apple.private.applesepmanager.allow`
+- `asep`
+- `IOReturn AppleSEPBooter::romCommand(UInt64 *)`
+- `bool AppleSEPCommandPool::_initWithOptions(IOWorkLoop *, unsigned int)`
+- `site.AppleSEPDebugService`
+- `IOReturn AppleSEPXART::get_ap_slot_info(uint8_t, uint8_t *, size_t, uint8_t *, size_t, uint8_t *)`
+- `IONameMatch`
+- `0 == write_random(prng_entropy, sizeof(prng_entropy))`
+- `nullptr == _patch_buf`
+- `%s: map/unmap returned %x\n\n`
+- `%s: Keeping idx: %llu\n`
+- `nullptr != (_cpu = iopNub->getAKFProvider())`
+- `ibot`
+- `hilo_opcode AppleSEPHilo::updateElapsedTime()`
+- `virtual bool AppleSEPHiloService::start(IOService *)`
+- `AppleSEPFirmware`
+- `Failed to generate nonce`
+- `%s: SEP accepted patches\n`
+- `shmbuf`
+- `\"Failed to initialize Gigalocker (likely a filesystem issue) - ret 0x%x\" @%s:%d`
+- `kIOReturnSuccess == getWorkLoop()->addEventSource(postBootTimer)`
+- `being deleted`
+- `void AppleSEPManager::_sleepSEPAsync()`
+- `chip_id = *(uint32_t *)entry->getBytesNoCopy()`
+- `12111112122212121211211`
+- `_command_gate`
+- `reg_entry->getLength() >= sizeof(uint32_t) * 2`
+- `\"Number of xART disable log entries unexpected too small at %lu\" @%s:%d`
+- `AppleSEPLogger.cpp`
+- `\"failed to allocate SEP shared memory buffer\" @%s:%d`
+- `nullptr != hiloEP()`
+- `void AppleSEPManager::_didTimeout(IOTimerEventSource *)`
+- `AppleSEP:WARNING: Unknown trace callback %d\n`
+- `1 <= _opCount`
+- `AppleSEP:WARNING: %s: buffer is NULL\n`
+- `\"SEP Boot Failure: failed to fetch ART from storage\" @%s:%d`
+- `AppleSEPARTRequestsService`
+- `void SEPEpoch::commitEpochs(Epoch *, size_t)`
+- `\"using TXM-SEP secure channel with fixed DVA without DART\" @%s:%d`
+- `prop1name != nullptr`
+- `nullptr != xartSEPSlaveEP()`
+- `tz0-size`
+- `IOReturn AppleSEPARTRequests::_msgSend(AppleSEPARTStorage::Opcode, unsigned int *, AppleSEPMessage *)`
+- `%s: %c%c%c%c acknowledges xART disable\n`
+- `%s: tiled BIM unsupported\n`
+- `PAGE_SIZE >= ds->getSepPageSize() * ds->getSendOolMinPages()`
+- `12222222222222222222222222222222222`
+- `static IOReturn AppleSEPUserClient::DispatchUserClientClearART(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `AppleSEPEndpoint *AppleSEPManager::_getEndpointFromEndpointService(uint32_t, uint32_t)`
+- `handle < AppleSEPEndpoint::_max_endpoints`
+- `SEP EP %u %s\n`
+- `AppleSEP:WARNING: Received an inactive tag with no timed-out nonce generate request\n`
+- `info->info.ool_in_max_pages == msg->data.advertise_ep_ools.ool_in_max_pages`
+- `static SEPBICS *SEPBICS::sepBics(IOSlaveEndpoint *, const HiloDisplayParams *)`
+- `SEP`
+- `%s: getLthBackupIomd returned %d\n`
+- `kIOReturnSuccess == ustuff_bmd->prepare()`
+- `Failed to read nonce`
+- `DispatchDynamicObjectOp`
+- `/Library/Caches/com.apple.xbs/4DCEF7EB-8EF5-4AEA-A320-964676D951EC/TemporaryDirectory.LWoUbI/Sources/AppleSEPManager/AppleSEPDevice.cpp`
+- `nullptr != channel_gains`
+- `void AppleSEPHilo::_hiloDisableAsync()`
+- `%s: fail case %lu\n`
+- `ool_size <= ds->getSepPageSize() * ds->getReceiveOolMaxPages()`
+- `_no_ep_yet_messages.push(message)`
+- `effective-security-mode-sep`
+- `void AppleSEPARTRequests::configure_out_buffer()`
+- `_disable_log != nullptr`
+- `sf != nullptr`
+- `kIOReturnSuccess == getCommandGate()->runAction( action, lth_backup, &rc)`
+- `void XARTDisableLog::register_disable(uint32_t)`
+- `%02x`
+- `_sep_firmware_length == iomd->getLength()`
+- `kIOReturnSuccess == _workloop->addEventSource(_command_gate)`
+- `\"SEP Boot Failure: status check 1 failed - 0x%x\" @%s:%d`
+- `blen <= max_separt_len`
+- `SEPEpoch::EPOCH_COUNT == epoch_slots_len`
+- `%s: SEP on during low power: boot-arg %u\n`
+- `void AppleSEPManager::_nonPowerManagedEpEnableAsync()`
+- `virtual IOReturn AppleSEPManager::setPowerState(unsigned long, IOService *)`
+- `AppleSEP:WARNING: unexpected wakeup reason 0x%x\n`
+- `function-sep_sleep_prep`
+- `\"target %s appears to be both FastSIM and FPGA\" @%s:%d`
+- `%s: Sending ART_NO_ART\n`
+- `bool AppleSEPARTService::setART(const OSData *)`
+- `%s: getDisasterRecoveryLthBackup returned %d\n`
+- `sz <= UINT32_MAX`
+- `static IOReturn AppleSEPUserClient::DispatchHiloTestLthTransferAttestation(AppleSEPUserClient *, void *, IOExternalMethodArguments *)`
+- `SEP: %s\n`
+- `%s: %s_XART_LOCKER with uuid %s %s\n`
+- `IOReturn AppleSEPXART::get_provisional_ap(uint8_t, bool *)_block_invoke`
+- `queueing message for unregistered endpoint %u\n`
+- `AppleSEP:WARNING: Unable to reseed XNU PRNG, attempt %d/%d\n`
+- `info->info.ool_in_min_pages == msg->data.advertise_ep_ools.ool_in_min_pages`
+- `site.T`
+- `nullptr != _shm_buffer`
+- `com.apple.applesepos.storage.stats`
+- `void _clear_art_thread_call(thread_call_param_t, thread_call_param_t)`
+- `static SEPEpoch *SEPEpoch::sepEpoch()`
+- `nullptr != msg`
+- `IOReturn AppleSEPHilo::getLthTransferMessage(uint8_t *, const uint8_t *, size_t, const uint8_t *, size_t)`
+- `AppleSEP:WARNING: AppleSEPARTRequests received message for invalid tag %u\n`
+- `\"SEP ROM boot panic%s. 0x%s\" @%s:%d`
+- `AppleSEP:WARNING: failed to send message\n`
+- `0 < piece_lens[PIECE_PATCHES]`
+- `0x0`
+- `AppleSEP:WARNING: Error getting pairing info - 0x%x\n`
+- `0 == ((((uint64_t)1 << _seprom_payload_align_bits) - 1) & patch_address)`
+- `2221`
+- `protected-data-access`
+- `kARTBufferSize >= ds->getSepPageSize() * ds->getReceiveOolMinPages()`
+- `IOReturn AppleSEPHilo::_supportsDisasterRecoveryLthGated(bool *)`
+- `virtual bool AppleSEPEndpoint::initWithOptions(IOSlaveProcessor *, OSObject *, IOSlaveEndpoint::Action, void *, UInt32)`
+- `virtual IOReturn AppleSEPEndpoint::sendMessage(void *, void *, bool)`
+- `AppleSEP: New SEP Nonce in slot %u (%u bytes): 0x`
+- `1211121111112111111122112`
+- `nullptr != in_msg_p`
+- `(trace_size % getPageSize()) == 0`
+- `nullptr != explicitly_set`
+- `target->_asep->hasService(kxART_service_name)`
+- `nullptr != epochs`
+- `postBootTimer`
+- `nullptr != args`
+- `_bounce_buffer_mapped`
+- `kIOReturnSuccess == setReceiveRelayBuffer(EP_XART_SEP_SLAVE, 0, kXART_buffer_size, PAGE_SIZE, &_xart_recv_relay_buffer)`
+- `IOReturn AppleSEPManager::unmapDynamicObject(const char *)`
+- `AppleSEPSharedMemoryBuffer.cpp`
+- `site.AppleSEPLogger`
+- `IOReturn AppleSEPBooter::bootSEP(AppleSEPFirmware *, bool, AppleSEPSharedMemoryBuffer *, uint8_t *)`
+- `void AppleSEPManager::_setupCPUTrace()`
+- `%s: CPUTrace; pa=0x%llx, size=0x%llx\n\n`
+- `SEP wake from nap failed`
+- `/arm-io/sep`

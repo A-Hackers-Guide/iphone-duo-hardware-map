@@ -1,0 +1,3201 @@
+# Symbols: `/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__Frameworks__CoreSpotlight.framework__CoreSpotlight.md). **[DSC]**
+
+2,184 public symbols, 8,425 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x18f01fbdc  __TEXT,__text  _AttributeIntentFromString
+0x1e0a24c60  __DATA_CONST,__const  _CSAccountTypeExchangeActiveSync
+0x1e0a24c58  __DATA_CONST,__const  _CSAccountTypeExchangeWebServices
+0x1e0a24c50  __DATA_CONST,__const  _CSAccountTypeIMAP
+0x1e0a24c48  __DATA_CONST,__const  _CSAccountTypeLocal
+0x1e0a24c40  __DATA_CONST,__const  _CSAccountTypePOP
+0x1e0a24c38  __DATA_CONST,__const  _CSAccountTypeUnknown
+0x1e0a24c30  __DATA_CONST,__const  _CSActionIdentifier
+0x1e0a24c28  __DATA_CONST,__const  _CSAgenticQueryErrorDomain
+0x1e0a24c20  __DATA_CONST,__const  _CSAttributedEntityTypePhotosBusinessCategoriesKey
+0x1e0a24c18  __DATA_CONST,__const  _CSAttributedEntityTypePhotosBusinessNamesKey
+0x1e0a24c10  __DATA_CONST,__const  _CSAttributedEntityTypePhotosCameraMakeAndModelKey
+0x1e0a24c08  __DATA_CONST,__const  _CSAttributedEntityTypePhotosContentCreationDateMonthKey
+0x1e0a24c00  __DATA_CONST,__const  _CSAttributedEntityTypePhotosContentCreationDateMonthsKey
+0x1e0a24bf8  __DATA_CONST,__const  _CSAttributedEntityTypePhotosContentCreationDateYearKey
+0x1e0a24bf0  __DATA_CONST,__const  _CSAttributedEntityTypePhotosContentCreationDateYearsKey
+0x1e0a24be8  __DATA_CONST,__const  _CSAttributedEntityTypePhotosContentTypeKey
+0x1e0a24be0  __DATA_CONST,__const  _CSAttributedEntityTypePhotosDateKey
+0x1e0a24bd8  __DATA_CONST,__const  _CSAttributedEntityTypePhotosDescriptionKey
+0x1e0a24bd0  __DATA_CONST,__const  _CSAttributedEntityTypePhotosEventCategoriesKey
+0x1e0a24bc8  __DATA_CONST,__const  _CSAttributedEntityTypePhotosEventNamesKey
+0x1e0a24bc0  __DATA_CONST,__const  _CSAttributedEntityTypePhotosEventPerformersKey
+0x1e0a24bb8  __DATA_CONST,__const  _CSAttributedEntityTypePhotosFavoritedKey
+0x1e0a24bb0  __DATA_CONST,__const  _CSAttributedEntityTypePhotosFilenameKey
+0x1e0a24ba8  __DATA_CONST,__const  _CSAttributedEntityTypePhotosHolidaysKey
+0x1e0a24ba0  __DATA_CONST,__const  _CSAttributedEntityTypePhotosIgnoreRangeKey
+0x1e0a24b98  __DATA_CONST,__const  _CSAttributedEntityTypePhotosKeywordsKey
+0x1e0a24b90  __DATA_CONST,__const  _CSAttributedEntityTypePhotosLibraryNameKey
+0x1e0a24b88  __DATA_CONST,__const  _CSAttributedEntityTypePhotosLocationsKey
+0x1e0a24b80  __DATA_CONST,__const  _CSAttributedEntityTypePhotosMeaningsKey
+0x1e0a24b78  __DATA_CONST,__const  _CSAttributedEntityTypePhotosMediaTypesKey
+0x1e0a24b70  __DATA_CONST,__const  _CSAttributedEntityTypePhotosMemoriesDurationKey
+0x1e0a24b68  __DATA_CONST,__const  _CSAttributedEntityTypePhotosMemoriesExpandedDateKey
+0x1e0a24b60  __DATA_CONST,__const  _CSAttributedEntityTypePhotosMemoriesExpandedLocationKey
+0x1e0a24b58  __DATA_CONST,__const  _CSAttributedEntityTypePhotosMemoriesMoodKey
+0x1e0a24b50  __DATA_CONST,__const  _CSAttributedEntityTypePhotosMemoriesMusicArtistKey
+0x1e0a24b48  __DATA_CONST,__const  _CSAttributedEntityTypePhotosMemoriesMusicGenreKey
+0x1e0a24b40  __DATA_CONST,__const  _CSAttributedEntityTypePhotosMemoriesMusicTitleKey
+0x1e0a24b38  __DATA_CONST,__const  _CSAttributedEntityTypePhotosMemoriesPeopleAgeKey
+0x1e0a24b30  __DATA_CONST,__const  _CSAttributedEntityTypePhotosMemoriesSortOrderKey
+0x1e0a24b28  __DATA_CONST,__const  _CSAttributedEntityTypePhotosMemoriesTripKey
+0x1e0a24b20  __DATA_CONST,__const  _CSAttributedEntityTypePhotosMemoriesWhatKey
+0x1e0a24b18  __DATA_CONST,__const  _CSAttributedEntityTypePhotosMonthKey
+0x1e0a24b10  __DATA_CONST,__const  _CSAttributedEntityTypePhotosPartOfDay
+0x1e0a24b08  __DATA_CONST,__const  _CSAttributedEntityTypePhotosPartOfWeek
+0x1e0a24b00  __DATA_CONST,__const  _CSAttributedEntityTypePhotosPeopleKey
+0x1e0a24af8  __DATA_CONST,__const  _CSAttributedEntityTypePhotosPeopleNamesAlternativesKey
+0x1e0a24af0  __DATA_CONST,__const  _CSAttributedEntityTypePhotosPeopleUUIDKey
+0x1e0a24ae8  __DATA_CONST,__const  _CSAttributedEntityTypePhotosPetKey
+0x1e0a24ae0  __DATA_CONST,__const  _CSAttributedEntityTypePhotosPhotographicStylesKey
+0x1e0a24ad8  __DATA_CONST,__const  _CSAttributedEntityTypePhotosResultType
+0x1e0a24ad0  __DATA_CONST,__const  _CSAttributedEntityTypePhotosResultTypeKey
+0x1e0a24ac8  __DATA_CONST,__const  _CSAttributedEntityTypePhotosSavedFromAppKey
+0x1e0a24ac0  __DATA_CONST,__const  _CSAttributedEntityTypePhotosScenesKey
+0x1e0a24ab8  __DATA_CONST,__const  _CSAttributedEntityTypePhotosSeasonsKey
+0x1e0a24ab0  __DATA_CONST,__const  _CSAttributedEntityTypePhotosSharedLibraryContributorsKey
+0x1e0a24aa8  __DATA_CONST,__const  _CSAttributedEntityTypePhotosTextKey
+0x1e0a24aa0  __DATA_CONST,__const  _CSAttributedEntityTypePhotosTitleKey
+0x1e0a24a98  __DATA_CONST,__const  _CSAttributedEntityTypePhotosYearKey
+0x1e0a24a90  __DATA_CONST,__const  _CSCardSubTypeBusinessCard
+0x1e0a24a88  __DATA_CONST,__const  _CSCardSubTypeDriverLicense
+0x1e0a24a80  __DATA_CONST,__const  _CSCardSubTypeEmployeeCard
+0x1e0a24a78  __DATA_CONST,__const  _CSCardSubTypeGreenCard
+0x1e0a24a70  __DATA_CONST,__const  _CSCardSubTypeInsuranceCard
+0x1e0a24a68  __DATA_CONST,__const  _CSCardSubTypeMedicalCard
+0x1e0a24a60  __DATA_CONST,__const  _CSCardSubTypeMembershipCard
+0x1e0a24a58  __DATA_CONST,__const  _CSCardSubTypeNationalID
+0x1e0a24a50  __DATA_CONST,__const  _CSCardSubTypePassport
+0x1e0a24a48  __DATA_CONST,__const  _CSCardSubTypeSSN
+0x1e0a24a40  __DATA_CONST,__const  _CSCardSubTypeStateID
+0x1e0a24a38  __DATA_CONST,__const  _CSCardSubTypeStudentCard
+0x1e0a24a30  __DATA_CONST,__const  _CSCardSubTypeTransitCard
+0x1e0a24a28  __DATA_CONST,__const  _CSCardTypeIdentification
+0x1e0a24a20  __DATA_CONST,__const  _CSCardTypeMembership
+0x1e0a24a18  __DATA_CONST,__const  _CSCardTypeTransit
+0x18ef1f0b8  __TEXT,__text  _CSCoderClassNameForObject
+0x1e0a24a10  __DATA_CONST,__const  _CSContactSearchErrorDomain
+0x1e0a24a08  __DATA_CONST,__const  _CSContactTypeBusiness
+0x1e0a24a00  __DATA_CONST,__const  _CSContactTypePerson
+0x1e0a249f8  __DATA_CONST,__const  _CSContactTypePlaceOfInterest
+0x18ef40f38  __TEXT,__text  _CSDecodeObject
+0x1e0a249f0  __DATA_CONST,__const  _CSDonationProgressFailedIndexesKey
+0x18ef26718  __TEXT,__text  _CSDonationTimestamp
+0x1e0a249e8  __DATA_CONST,__const  _CSEventStatusCancelled
+0x1e0a249e0  __DATA_CONST,__const  _CSEventStatusConfirmed
+0x1e0a249d8  __DATA_CONST,__const  _CSEventStatusDelivered
+0x1e0a249d0  __DATA_CONST,__const  _CSEventStatusIssue
+0x1e0a249c8  __DATA_CONST,__const  _CSEventStatusIssueUnknown
+0x1e0a249c0  __DATA_CONST,__const  _CSEventStatusModified
+0x1e0a249b8  __DATA_CONST,__const  _CSEventStatusOnTheWay
+0x1e0a249b0  __DATA_CONST,__const  _CSEventStatusOutForDelivery
+0x1e0a249a8  __DATA_CONST,__const  _CSEventStatusPickedUp
+0x1e0a249a0  __DATA_CONST,__const  _CSEventStatusReadyForPickup
+0x1e0a24998  __DATA_CONST,__const  _CSEventStatusShipped
+0x1e0a24990  __DATA_CONST,__const  _CSEventStatusUnknown
+0x1e0a24988  __DATA_CONST,__const  _CSEventStatusUpdated
+0x1e0a24980  __DATA_CONST,__const  _CSEventStatusYetToBeShipped
+0x1e0a24978  __DATA_CONST,__const  _CSEventSubTypeCarrier
+0x1e0a24970  __DATA_CONST,__const  _CSEventSubTypeMerchant
+0x1e0a24968  __DATA_CONST,__const  _CSEventTypeAppointment
+0x1e0a24960  __DATA_CONST,__const  _CSEventTypeCar
+0x1e0a24958  __DATA_CONST,__const  _CSEventTypeFlight
+0x1e0a24950  __DATA_CONST,__const  _CSEventTypeHotel
+0x1e0a24948  __DATA_CONST,__const  _CSEventTypeOrder
+0x1e0a24940  __DATA_CONST,__const  _CSEventTypeParty
+0x1e0a24938  __DATA_CONST,__const  _CSEventTypeRestaurant
+0x1e0a24930  __DATA_CONST,__const  _CSEventTypeTicketShow
+0x1e0a24928  __DATA_CONST,__const  _CSEventTypeTicketTransport
+0x1e0a24920  __DATA_CONST,__const  _CSEventTypeTrip
+0x1e0a24918  __DATA_CONST,__const  _CSExposureProgramAperture
+0x1e0a24910  __DATA_CONST,__const  _CSExposureProgramManual
+0x1e0a24908  __DATA_CONST,__const  _CSExposureProgramNormal
+0x1e0a24900  __DATA_CONST,__const  _CSExposureProgramPriority
+0x18ef16e68  __TEXT,__text  _CSFriendlyFieldName
+0x18ef351a8  __TEXT,__text  _CSGetCurrentLocale
+0x18efe3bf0  __TEXT,__text  _CSGetFilterForPath
+0x18f0776e4  __TEXT,__text  _CSGetLocalizedString
+0x18f077590  __TEXT,__text  _CSGetLocalizedStringForTable
+0x1e0a248e0  __DATA_CONST,__const  _CSIndexAddressBookBundleID
+0x1e0a248d8  __DATA_CONST,__const  _CSIndexAddressBookLegacyBundleID
+0x1e0a248d0  __DATA_CONST,__const  _CSIndexErrorDomain
+0x18efe3538  __TEXT,__text  _CSIsInterestingPath
+0x1e0a248c8  __DATA_CONST,__const  _CSItemSummaryTypeAttachment
+0x1e0a248c0  __DATA_CONST,__const  _CSItemSummaryTypeContact
+0x1e0a248b8  __DATA_CONST,__const  _CSItemSummaryTypeDate
+0x1e0a248b0  __DATA_CONST,__const  _CSItemSummaryTypeSenderContains
+0x1e0a248a8  __DATA_CONST,__const  _CSItemSummaryTypeStatus
+0x1e0a248a0  __DATA_CONST,__const  _CSItemSummaryTypeText
+0x1e0a24898  __DATA_CONST,__const  _CSLinkTypeAlbum
+0x1e0a24890  __DATA_CONST,__const  _CSLinkTypeArtist
+0x1e0a24888  __DATA_CONST,__const  _CSLinkTypeMap
+0x1e0a24880  __DATA_CONST,__const  _CSLinkTypeMovie
+0x1e0a24878  __DATA_CONST,__const  _CSLinkTypeMusicVideo
+0x1e0a24870  __DATA_CONST,__const  _CSLinkTypeNews
+0x1e0a24868  __DATA_CONST,__const  _CSLinkTypePlaylist
+0x1e0a24860  __DATA_CONST,__const  _CSLinkTypePodcast
+0x1e0a24858  __DATA_CONST,__const  _CSLinkTypeRadioStation
+0x1e0a24850  __DATA_CONST,__const  _CSLinkTypeShow
+0x1e0a24848  __DATA_CONST,__const  _CSLinkTypeSong
+0x1e0a24840  __DATA_CONST,__const  _CSLinkTypeWebsite
+0x18ef4d8c8  __TEXT,__text  _CSLinkedTimestamp
+0x18ef4d818  __TEXT,__text  _CSLinkedTimestampFromHexString
+0x18ef4d890  __TEXT,__text  _CSLinkedTimestampToHexString
+0x18efe3a54  __TEXT,__text  _CSLiveFSEvent
+0x18efe25b8  __TEXT,__text  _CSLiveFSVolumeMountedAtURL
+0x1e0a24838  __DATA_CONST,__const  _CSLoopsKeyFilterTypeAnyKey
+0x1e0a24830  __DATA_CONST,__const  _CSLoopsKeyFilterTypeBothKeys
+0x1e0a24828  __DATA_CONST,__const  _CSLoopsKeyFilterTypeMajor
+0x1e0a24820  __DATA_CONST,__const  _CSLoopsKeyFilterTypeMinor
+0x1e0a24818  __DATA_CONST,__const  _CSLoopsKeyFilterTypeNeitherKey
+0x1e0a24810  __DATA_CONST,__const  _CSLoopsModeLooping
+0x1e0a24808  __DATA_CONST,__const  _CSLoopsModeNonLooping
+0x1e0a24800  __DATA_CONST,__const  _CSMailboxArchive
+0x1e0a247f8  __DATA_CONST,__const  _CSMailboxDrafts
+0x1e0a247f0  __DATA_CONST,__const  _CSMailboxInbox
+0x1e0a247e8  __DATA_CONST,__const  _CSMailboxJunk
+0x1e0a247e0  __DATA_CONST,__const  _CSMailboxSent
+0x1e0a247d8  __DATA_CONST,__const  _CSMailboxTrash
+0x18f074f30  __TEXT,__text  _CSManagedIndexDefaultPath
+0x1eb68db20  __DATA,__data  _CSManagedIndexSandboxExtensionName
+0x18f074f2c  __TEXT,__text  _CSManagedUUID
+0x1e0a247d0  __DATA_CONST,__const  _CSMediaTypeAudioBook
+0x1e0a247c8  __DATA_CONST,__const  _CSMediaTypeBook
+0x1e0a247c0  __DATA_CONST,__const  _CSMediaTypeHomeVideo
+0x1e0a247b8  __DATA_CONST,__const  _CSMediaTypeITunesU
+0x1e0a247b0  __DATA_CONST,__const  _CSMediaTypeMovie
+0x1e0a247a8  __DATA_CONST,__const  _CSMediaTypeMusicVideo
+0x1e0a247a0  __DATA_CONST,__const  _CSMediaTypePhoto
+0x1e0a24798  __DATA_CONST,__const  _CSMediaTypePodcast
+0x1e0a24790  __DATA_CONST,__const  _CSMediaTypeSong
+0x1e0a24788  __DATA_CONST,__const  _CSMediaTypeTVShow
+0x1e0a24780  __DATA_CONST,__const  _CSMediaTypeVoiceMemo
+0x1e0a24778  __DATA_CONST,__const  _CSMeteringModeAverage
+0x1e0a24770  __DATA_CONST,__const  _CSMeteringModeCenterWeightedAverage
+0x1e0a24768  __DATA_CONST,__const  _CSMeteringModeMultiSpot
+0x1e0a24760  __DATA_CONST,__const  _CSMeteringModePartial
+0x1e0a24758  __DATA_CONST,__const  _CSMeteringModePattern
+0x1e0a24750  __DATA_CONST,__const  _CSMeteringModeSpot
+0x1e0a24748  __DATA_CONST,__const  _CSMeteringModeUnknown
+0x18f0a1508  __TEXT,__const  _CSPartiallyRedactedLength
+0x1eb68db18  __DATA,__data  _CSPhotosSceneClassificationIdentifierAndType
+0x1e0a24740  __DATA_CONST,__const  _CSPipelineCompletenessReportStorageErrorDomain
+0x18ef222d0  __TEXT,__text  _CSPrivateIndexDefaultPath
+0x18ef21fcc  __TEXT,__text  _CSPrivateUUID
+0x18ef16ff0  __TEXT,__text  _CSQueryAttributeMappingArray
+0x18ef17dd4  __TEXT,__text  _CSQueryAttributesMappingArrayCount
+0x18ef17de0  __TEXT,__text  _CSQueryAttributesMappingArrayEntries
+0x18f04914c  __TEXT,__text  _CSQueryCandidateEvaluatorForQuery
+0x1e0a24738  __DATA_CONST,__const  _CSQueryContinuationActionType
+0x1e0a24730  __DATA_CONST,__const  _CSRankingProfileErrorDomain
+0x18ef18c20  __TEXT,__text  _CSRedactString
+0x18f077c80  __TEXT,__text  _CSRedactStringArray
+0x18ef1fcbc  __TEXT,__text  _CSResolveUnhousedIndexPath
+0x18ef14e98  __TEXT,__text  _CSSanitizeProtectionClass
+0x1e0a24728  __DATA_CONST,__const  _CSSearchAgentMachServiceName
+0x1e0a24720  __DATA_CONST,__const  _CSSearchAgentTestMachServiceName
+0x1e0a24718  __DATA_CONST,__const  _CSSearchQueryErrorDomain
+0x1e0a24710  __DATA_CONST,__const  _CSSearchQueryString
+0x1e0a24708  __DATA_CONST,__const  _CSSearchableItemActionType
+0x1e0a24700  __DATA_CONST,__const  _CSSearchableItemActivityIdentifier
+0x1e0a246f8  __DATA_CONST,__const  _CSServiceName
+0x1eb68db10  __DATA,__data  _CSServiceSandboxExtensionName
+0x18efe2540  __TEXT,__text  _CSSharedUserFSConnection
+0x18f077760  __TEXT,__text  _CSShouldTraceMessagesDonation
+0x18f05ced8  __TEXT,__text  _CSSimpleQueryCancel
+0x18f05c6b8  __TEXT,__text  _CSSimpleQueryHasResultsForQuery
+0x1e0a246f0  __DATA_CONST,__const  _CSSuggestionHighlightAttributeName
+0x18ef1f6d4  __TEXT,__text  _CSUnhousedIndexDefaultPath
+0x18ef21fd8  __TEXT,__text  _CSUnhousedUUID
+0x1e0a246e8  __DATA_CONST,__const  _CSUserFSAppMachServiceName
+0x18ef201c8  __TEXT,__text  _CS_simplifyItemArray
+0x18f01fadc  __TEXT,__text  _CategoryIntentFromString
+0x18f0a0f50  __TEXT,__const  _CoreSpotlightVersionNumber
+0x18f0a0f10  __TEXT,__const  _CoreSpotlightVersionString
+0x1e0a246e0  __DATA_CONST,__const  _ExtMDItemUserCreatedDate
+0x1e0a246d8  __DATA_CONST,__const  _ExtMDItemUserCreatedUserHandle
+0x1e0a246d0  __DATA_CONST,__const  _ExtMDItemUserDownloadedDate
+0x1e0a246c8  __DATA_CONST,__const  _ExtMDItemUserDownloadedUserHandle
+0x1e0a246c0  __DATA_CONST,__const  _ExtMDItemUserModifiedDate
+0x1e0a246b8  __DATA_CONST,__const  _ExtMDItemUserModifiedUserHandle
+0x1e0a246b0  __DATA_CONST,__const  _ExtMDItemUserPrintedDate
+0x1e0a246a8  __DATA_CONST,__const  _ExtMDItemUserPrintedUserHandle
+0x1e0a246a0  __DATA_CONST,__const  _ExtMDItemUserSharedReceivedDate
+0x1e0a24698  __DATA_CONST,__const  _ExtMDItemUserSharedReceivedRecipient
+0x1e0a24690  __DATA_CONST,__const  _ExtMDItemUserSharedReceivedRecipientHandle
+0x1e0a24688  __DATA_CONST,__const  _ExtMDItemUserSharedReceivedSender
+0x1e0a24680  __DATA_CONST,__const  _ExtMDItemUserSharedReceivedSenderHandle
+0x1e0a24678  __DATA_CONST,__const  _ExtMDItemUserSharedReceivedTransport
+0x1e0a24670  __DATA_CONST,__const  _ExtMDItemUserSharedSentDate
+0x1e0a24668  __DATA_CONST,__const  _ExtMDItemUserSharedSentRecipient
+0x1e0a24660  __DATA_CONST,__const  _ExtMDItemUserSharedSentRecipientHandle
+0x1e0a24658  __DATA_CONST,__const  _ExtMDItemUserSharedSentSender
+0x1e0a24650  __DATA_CONST,__const  _ExtMDItemUserSharedSentSenderHandle
+0x1e0a24648  __DATA_CONST,__const  _ExtMDItemUserSharedSentTransport
+0x1e0a24640  __DATA_CONST,__const  _FPAppContainerBundleID
+0x1e0a24638  __DATA_CONST,__const  _FPFileProviderFilesBundleString
+0x1e0a24630  __DATA_CONST,__const  _FPFileProviderManagedFilesBundleString
+0x1e0a24628  __DATA_CONST,__const  _FPFilesBundleString
+0x1e0a24620  __DATA_CONST,__const  _FPLocalFilesBundleString
+0x18f0a1198  __TEXT,__const  _FileProviderEmbeddingSerializationVersion
+0x1e0a24618  __DATA_CONST,__const  _FilesAppBundleID
+0x18ef3caa4  __TEXT,__text  _GetCSUserQueryParser
+0x1e0a24610  __DATA_CONST,__const  _MDAccountTypeExchangeActiveSync
+0x1e0a24608  __DATA_CONST,__const  _MDAccountTypeExchangeWebServices
+0x1e0a24600  __DATA_CONST,__const  _MDAccountTypeIMAP
+0x1e0a245f8  __DATA_CONST,__const  _MDAccountTypeLocal
+0x1e0a245f0  __DATA_CONST,__const  _MDAccountTypePOP
+0x1e0a245e8  __DATA_CONST,__const  _MDAccountTypeUnknown
+0x1e0a245e0  __DATA_CONST,__const  _MDAttachmentNames
+0x1e0a245d8  __DATA_CONST,__const  _MDAttachmentPaths
+0x1e0a245d0  __DATA_CONST,__const  _MDAttachmentTypes
+0x18ef4240c  __TEXT,__text  _MDCopyTypePedigree
+0x1e0a245c8  __DATA_CONST,__const  _MDExposureProgramAperture
+0x1e0a245c0  __DATA_CONST,__const  _MDExposureProgramManual
+0x1e0a245b8  __DATA_CONST,__const  _MDExposureProgramNormal
+0x1e0a245b0  __DATA_CONST,__const  _MDExposureProgramPriority
+0x1e0a245a8  __DATA_CONST,__const  _MDIndexAddressBookBundleID
+0x1e0a245a0  __DATA_CONST,__const  _MDIndexErrorDomain
+0x1e0a24598  __DATA_CONST,__const  _MDItemAccountHandles
+0x1e0a24590  __DATA_CONST,__const  _MDItemAccountIdentifier
+0x1e0a24588  __DATA_CONST,__const  _MDItemAccountType
+0x1e0a24580  __DATA_CONST,__const  _MDItemAcquisitionMake
+0x1e0a24578  __DATA_CONST,__const  _MDItemAcquisitionModel
+0x1e0a24570  __DATA_CONST,__const  _MDItemActionIdentifiers
+0x1e0a24568  __DATA_CONST,__const  _MDItemActivityLaunchDates
+0x1e0a24560  __DATA_CONST,__const  _MDItemAdamID
+0x1e0a24558  __DATA_CONST,__const  _MDItemAdditionalRecipientContactIdentifiers
+0x1e0a24550  __DATA_CONST,__const  _MDItemAdditionalRecipientContactProperties
+0x1e0a24548  __DATA_CONST,__const  _MDItemAdditionalRecipientEmailAddresses
+0x1e0a24540  __DATA_CONST,__const  _MDItemAdditionalRecipientEmailAddressesLocalParts
+0x1e0a24538  __DATA_CONST,__const  _MDItemAdditionalRecipientPersons
+0x1e0a24530  __DATA_CONST,__const  _MDItemAdditionalRecipients
+0x1e0a24528  __DATA_CONST,__const  _MDItemAdditionalRecipientsDictionary
+0x1e0a24520  __DATA_CONST,__const  _MDItemAddressCategories
+0x1e0a24518  __DATA_CONST,__const  _MDItemAddresses
+0x1e0a24510  __DATA_CONST,__const  _MDItemAestheticScore
+0x1e0a24508  __DATA_CONST,__const  _MDItemAlarmRecurrenceRule
+0x1e0a24500  __DATA_CONST,__const  _MDItemAlarmRecurrenceRuleDaysOfTheWeek
+0x1e0a244f8  __DATA_CONST,__const  _MDItemAlarmTime
+0x1e0a244f0  __DATA_CONST,__const  _MDItemAlarmTimeHour
+0x1e0a244e8  __DATA_CONST,__const  _MDItemAlarmTimeMinute
+0x1e0a244e0  __DATA_CONST,__const  _MDItemAlarmTimeSecond
+0x1e0a244d8  __DATA_CONST,__const  _MDItemAlbum
+0x1e0a244d0  __DATA_CONST,__const  _MDItemAlbumPersistentID
+0x1e0a244c8  __DATA_CONST,__const  _MDItemAlternateEmailAddresses
+0x1e0a244c0  __DATA_CONST,__const  _MDItemAlternateNames
+0x1e0a244b8  __DATA_CONST,__const  _MDItemAlternatePhoneNumbers
+0x1e0a244b0  __DATA_CONST,__const  _MDItemAlternateTitles
+0x1e0a244a8  __DATA_CONST,__const  _MDItemAltitude
+0x1e0a244a0  __DATA_CONST,__const  _MDItemAperture
+0x1e0a24498  __DATA_CONST,__const  _MDItemAppEngagementValues
+0x1e0a24490  __DATA_CONST,__const  _MDItemAppEntityInstanceId
+0x1e0a24488  __DATA_CONST,__const  _MDItemAppEntitySchema
+0x1e0a24480  __DATA_CONST,__const  _MDItemAppEntityStableIdentifier
+0x1e0a24478  __DATA_CONST,__const  _MDItemAppEntitySubtitle
+0x1e0a24470  __DATA_CONST,__const  _MDItemAppEntityTitle
+0x1e0a24468  __DATA_CONST,__const  _MDItemAppEntityType
+0x1e0a24460  __DATA_CONST,__const  _MDItemAppEntityTypeDisplayRepresentationName
+0x1e0a24458  __DATA_CONST,__const  _MDItemAppEntityTypeRepresentationName
+0x1e0a24450  __DATA_CONST,__const  _MDItemAppEntityTypeRepresentationSynonyms
+0x1e0a24448  __DATA_CONST,__const  _MDItemAppStoreAdamID
+0x1e0a24440  __DATA_CONST,__const  _MDItemAppleLoopDescriptors
+0x1e0a24438  __DATA_CONST,__const  _MDItemAppleLoopsKeyFilterType
+0x1e0a24430  __DATA_CONST,__const  _MDItemAppleLoopsLoopMode
+0x1e0a24428  __DATA_CONST,__const  _MDItemAppleLoopsRootKey
+0x1e0a24420  __DATA_CONST,__const  _MDItemApplicationCategories
+0x1e0a24418  __DATA_CONST,__const  _MDItemApplicationLastLaunchedDate
+0x1e0a24410  __DATA_CONST,__const  _MDItemApplicationName
+0x1e0a24408  __DATA_CONST,__const  _MDItemApprovedDate
+0x1e0a24400  __DATA_CONST,__const  _MDItemApprovedStatus
+0x1e0a243f8  __DATA_CONST,__const  _MDItemApprovedStatusString
+0x1e0a243f0  __DATA_CONST,__const  _MDItemApproverContactDSID
+0x1e0a243e8  __DATA_CONST,__const  _MDItemApproverContactIdentifiers
+0x1e0a243e0  __DATA_CONST,__const  _MDItemApproverEmailAddresses
+0x1e0a243d8  __DATA_CONST,__const  _MDItemApprovers
+0x1e0a243d0  __DATA_CONST,__const  _MDItemArtist
+0x1e0a243c8  __DATA_CONST,__const  _MDItemAttachmentCaptions
+0x1e0a243c0  __DATA_CONST,__const  _MDItemAttachmentNames
+0x1e0a243b8  __DATA_CONST,__const  _MDItemAttachmentPaths
+0x1e0a243b0  __DATA_CONST,__const  _MDItemAttachmentTypes
+0x1e0a243a8  __DATA_CONST,__const  _MDItemAttributeChangeDate
+0x1e0a243a0  __DATA_CONST,__const  _MDItemAudiences
+0x1e0a24398  __DATA_CONST,__const  _MDItemAudioBitRate
+0x1e0a24390  __DATA_CONST,__const  _MDItemAudioChannelCount
+0x1e0a24388  __DATA_CONST,__const  _MDItemAudioEncodingApplication
+0x1e0a24380  __DATA_CONST,__const  _MDItemAudioSampleRate
+0x1e0a24378  __DATA_CONST,__const  _MDItemAudioTrackNumber
+0x1e0a24370  __DATA_CONST,__const  _MDItemAuthorAddresses
+0x1e0a24368  __DATA_CONST,__const  _MDItemAuthorContactDSID
+0x1e0a24360  __DATA_CONST,__const  _MDItemAuthorContactIdentifiers
+0x1e0a24358  __DATA_CONST,__const  _MDItemAuthorContactProperties
+0x1e0a24350  __DATA_CONST,__const  _MDItemAuthorEmailAddresses
+0x1e0a24348  __DATA_CONST,__const  _MDItemAuthorEmailAddressesLocalParts
+0x1e0a24340  __DATA_CONST,__const  _MDItemAuthorPersons
+0x1e0a24338  __DATA_CONST,__const  _MDItemAuthorPhotosPersonIdentifiers
+0x1e0a24330  __DATA_CONST,__const  _MDItemAuthors
+0x1e0a24328  __DATA_CONST,__const  _MDItemAuthorsDictionary
+0x1e0a24320  __DATA_CONST,__const  _MDItemAutocompleteTriggers
+0x1e0a24318  __DATA_CONST,__const  _MDItemBackgroundColor
+0x1e0a24310  __DATA_CONST,__const  _MDItemBackgroundRunnable
+0x1e0a24308  __DATA_CONST,__const  _MDItemBirthday
+0x1e0a24300  __DATA_CONST,__const  _MDItemBitsPerSample
+0x1e0a242f8  __DATA_CONST,__const  _MDItemBundleID
+0x1e0a242f0  __DATA_CONST,__const  _MDItemBundleIdentifier
+0x1e0a242e8  __DATA_CONST,__const  _MDItemBusinessHours
+0x1e0a242e0  __DATA_CONST,__const  _MDItemCFBundleIdentifier
+0x1e0a242d8  __DATA_CONST,__const  _MDItemCacheContentHash
+0x1e0a242d0  __DATA_CONST,__const  _MDItemCachedViewData
+0x1e0a242c8  __DATA_CONST,__const  _MDItemCalendarDelegateIdentifier
+0x1e0a242c0  __DATA_CONST,__const  _MDItemCalendarHolidayIdentifier
+0x1e0a242b8  __DATA_CONST,__const  _MDItemCamera
+0x1e0a242b0  __DATA_CONST,__const  _MDItemCameraOwner
+0x1e0a242a8  __DATA_CONST,__const  _MDItemCanSnooze
+0x1e0a242a0  __DATA_CONST,__const  _MDItemCardAddress
+0x1e0a24298  __DATA_CONST,__const  _MDItemCardCategory
+0x1e0a24290  __DATA_CONST,__const  _MDItemCardCountry
+0x1e0a24288  __DATA_CONST,__const  _MDItemCardDetailsActionURL
+0x1e0a24280  __DATA_CONST,__const  _MDItemCardExpirationDate
+0x1e0a24278  __DATA_CONST,__const  _MDItemCardEyeColor
+0x1e0a24270  __DATA_CONST,__const  _MDItemCardGroupNumber
+0x1e0a24268  __DATA_CONST,__const  _MDItemCardHeight
+0x1e0a24260  __DATA_CONST,__const  _MDItemCardIssueDate
+0x1e0a24258  __DATA_CONST,__const  _MDItemCardIssuedBy
+0x1e0a24250  __DATA_CONST,__const  _MDItemCardNumber
+0x1e0a24248  __DATA_CONST,__const  _MDItemCardNumberActionURL
+0x1e0a24240  __DATA_CONST,__const  _MDItemCardPlaceOfBirth
+0x1e0a24238  __DATA_CONST,__const  _MDItemCardProvider
+0x1e0a24230  __DATA_CONST,__const  _MDItemCardRegion
+0x1e0a24228  __DATA_CONST,__const  _MDItemCardRestrictions
+0x1e0a24220  __DATA_CONST,__const  _MDItemCardSex
+0x1e0a24218  __DATA_CONST,__const  _MDItemCardSubType
+0x1e0a24210  __DATA_CONST,__const  _MDItemCardType
+0x1e0a24208  __DATA_CONST,__const  _MDItemCardUnderName
+0x1e0a24200  __DATA_CONST,__const  _MDItemCardWeight
+0x1e0a241f8  __DATA_CONST,__const  _MDItemCity
+0x1e0a241f0  __DATA_CONST,__const  _MDItemClientBundleID
+0x1e0a241e8  __DATA_CONST,__const  _MDItemClientExternalID
+0x1e0a241e0  __DATA_CONST,__const  _MDItemClockAlarmEnabled
+0x1e0a241d8  __DATA_CONST,__const  _MDItemClockAlarmType
+0x1e0a241d0  __DATA_CONST,__const  _MDItemCodecs
+0x1e0a241c8  __DATA_CONST,__const  _MDItemCollaborationIdentifier
+0x1e0a241c0  __DATA_CONST,__const  _MDItemColorSpace
+0x1e0a241b8  __DATA_CONST,__const  _MDItemComment
+0x1e0a241b0  __DATA_CONST,__const  _MDItemCommunicationTrustScore
+0x1e0a241a8  __DATA_CONST,__const  _MDItemCompletionDate
+0x1e0a241a0  __DATA_CONST,__const  _MDItemComposer
+0x1e0a24198  __DATA_CONST,__const  _MDItemContactIdentifier
+0x1e0a24190  __DATA_CONST,__const  _MDItemContactKeywords
+0x1e0a24188  __DATA_CONST,__const  _MDItemContactName
+0x1e0a24180  __DATA_CONST,__const  _MDItemContactNickname
+0x1e0a24178  __DATA_CONST,__const  _MDItemContactRelationship
+0x1e0a24170  __DATA_CONST,__const  _MDItemContactSharedAppName
+0x1e0a24168  __DATA_CONST,__const  _MDItemContactSharedBy
+0x1e0a24160  __DATA_CONST,__const  _MDItemContactSharedDateTime
+0x1e0a24158  __DATA_CONST,__const  _MDItemContactType
+0x1e0a24150  __DATA_CONST,__const  _MDItemContainerDisplayName
+0x1e0a24148  __DATA_CONST,__const  _MDItemContainerIdentifier
+0x1e0a24140  __DATA_CONST,__const  _MDItemContainerOrder
+0x1e0a24138  __DATA_CONST,__const  _MDItemContainerTitle
+0x1e0a24130  __DATA_CONST,__const  _MDItemContentCatalog
+0x1e0a24128  __DATA_CONST,__const  _MDItemContentCreationDate
+0x1e0a24120  __DATA_CONST,__const  _MDItemContentCreationDateDay
+0x1e0a24118  __DATA_CONST,__const  _MDItemContentCreationDateHour
+0x1e0a24110  __DATA_CONST,__const  _MDItemContentCreationDateMonth
+0x1e0a24108  __DATA_CONST,__const  _MDItemContentCreationDateWeekOfMonth
+0x1e0a24100  __DATA_CONST,__const  _MDItemContentCreationDateWeekOfYear
+0x1e0a240f8  __DATA_CONST,__const  _MDItemContentCreationDateWeekday
+0x1e0a240f0  __DATA_CONST,__const  _MDItemContentCreationDateWeekdayOrdinal
+0x1e0a240e8  __DATA_CONST,__const  _MDItemContentCreationDateYear
+0x1e0a240e0  __DATA_CONST,__const  _MDItemContentCreationDate_Ranking
+0x1e0a240d8  __DATA_CONST,__const  _MDItemContentModificationDate
+0x1e0a240d0  __DATA_CONST,__const  _MDItemContentModificationDateDay
+0x1e0a240c8  __DATA_CONST,__const  _MDItemContentModificationDateHour
+0x1e0a240c0  __DATA_CONST,__const  _MDItemContentModificationDateMonth
+0x1e0a240b8  __DATA_CONST,__const  _MDItemContentModificationDateWeekOfMonth
+0x1e0a240b0  __DATA_CONST,__const  _MDItemContentModificationDateWeekOfYear
+0x1e0a240a8  __DATA_CONST,__const  _MDItemContentModificationDateWeekday
+0x1e0a240a0  __DATA_CONST,__const  _MDItemContentModificationDateWeekdayOrdinal
+0x1e0a24098  __DATA_CONST,__const  _MDItemContentModificationDateYear
+0x1e0a24090  __DATA_CONST,__const  _MDItemContentRating
+0x1e0a24088  __DATA_CONST,__const  _MDItemContentSnippet
+0x1e0a24080  __DATA_CONST,__const  _MDItemContentType
+0x1e0a24078  __DATA_CONST,__const  _MDItemContentTypeTree
+0x1e0a24070  __DATA_CONST,__const  _MDItemContentURL
+0x1e0a24068  __DATA_CONST,__const  _MDItemContributors
+0x1e0a24060  __DATA_CONST,__const  _MDItemCopyright
+0x1e0a24058  __DATA_CONST,__const  _MDItemCost
+0x1e0a24050  __DATA_CONST,__const  _MDItemCostCode
+0x1e0a24048  __DATA_CONST,__const  _MDItemCounterpartBundleID
+0x1e0a24040  __DATA_CONST,__const  _MDItemCountry
+0x1e0a24038  __DATA_CONST,__const  _MDItemCountsLastUpdated
+0x1e0a24030  __DATA_CONST,__const  _MDItemCountsLastUpdatedWeek
+0x1e0a24028  __DATA_CONST,__const  _MDItemCoverage
+0x1e0a24020  __DATA_CONST,__const  _MDItemCreator
+0x1e0a24018  __DATA_CONST,__const  _MDItemCurationScore
+0x1e0a24010  __DATA_CONST,__const  _MDItemCurator
+0x1e0a24008  __DATA_CONST,__const  _MDItemCustomComAppleMailTransaction
+0x1e0a24000  __DATA_CONST,__const  _MDItemCustomComAppleMobilemailTransaction
+0x1e0a23ff8  __DATA_CONST,__const  _MDItemCustomComAppleSystemPrefsKeyWords
+0x1e0a23ff0  __DATA_CONST,__const  _MDItemCustomMediaEmbedding
+0x1e0a23fe8  __DATA_CONST,__const  _MDItemCustomMediaEmbeddingVectorIds
+0x1e0a23fe0  __DATA_CONST,__const  _MDItemCustomPageVisitCountScore
+0x1e0a23fd8  __DATA_CONST,__const  _MDItemDarkThumbnailURL
+0x1e0a23fd0  __DATA_CONST,__const  _MDItemDataOwnerType
+0x1e0a23fc8  __DATA_CONST,__const  _MDItemDateAdded
+0x1e0a23fc0  __DATA_CONST,__const  _MDItemDateAdded_Ranking
+0x1e0a23fb8  __DATA_CONST,__const  _MDItemDeletedWithRelatedUniqueIdentifier
+0x1e0a23fb0  __DATA_CONST,__const  _MDItemDeliveryType
+0x1e0a23fa8  __DATA_CONST,__const  _MDItemDerivedIsFromMe
+0x1e0a23fa0  __DATA_CONST,__const  _MDItemDerivedIsFromMeRanking
+0x1e0a23f98  __DATA_CONST,__const  _MDItemDerivedIsMe
+0x1e0a23f90  __DATA_CONST,__const  _MDItemDerivedIsMeRanking
+0x1e0a23f88  __DATA_CONST,__const  _MDItemDerivedIsMeRankingOCR
+0x1e0a23f80  __DATA_CONST,__const  _MDItemDerivedIsMeRankingOCRTextContentMatch
+0x1e0a23f78  __DATA_CONST,__const  _MDItemDerivedIsMeRankingPreExtraction
+0x1e0a23f70  __DATA_CONST,__const  _MDItemDerivedIsMeRankingSpan
+0x1e0a23f68  __DATA_CONST,__const  _MDItemDerivedIsMeRankingTextContentMatchTokens
+0x1e0a23f60  __DATA_CONST,__const  _MDItemDerivedIsMeRankingToken
+0x1e0a23f58  __DATA_CONST,__const  _MDItemDerivedIsMeTextContentMatch
+0x1e0a23f50  __DATA_CONST,__const  _MDItemDerivedIsToMe
+0x1e0a23f48  __DATA_CONST,__const  _MDItemDerivedIsToMeRanking
+0x1e0a23f40  __DATA_CONST,__const  _MDItemDescription
+0x1e0a23f38  __DATA_CONST,__const  _MDItemDetectedCardSubTypes
+0x1e0a23f30  __DATA_CONST,__const  _MDItemDetectedEventTypes
+0x1e0a23f28  __DATA_CONST,__const  _MDItemDirector
+0x1e0a23f20  __DATA_CONST,__const  _MDItemDisableSearchInSpotlight
+0x1e0a23f18  __DATA_CONST,__const  _MDItemDisplayName
+0x1e0a23f10  __DATA_CONST,__const  _MDItemDocumentIdentifier
+0x1e0a23f08  __DATA_CONST,__const  _MDItemDocumentUnderstandingCategories
+0x1e0a23f00  __DATA_CONST,__const  _MDItemDocumentUnderstandingCategoriesConfidences
+0x1e0a23ef8  __DATA_CONST,__const  _MDItemDocumentUnderstandingCategoriesLabels
+0x1e0a23ef0  __DATA_CONST,__const  _MDItemDocumentUnderstandingCategoriesSynonyms
+0x1e0a23ee8  __DATA_CONST,__const  _MDItemDocumentUnderstandingCategoriesSynonymsCounts
+0x1e0a23ee0  __DATA_CONST,__const  _MDItemDocumentUnderstandingCategoriesVersion
+0x1e0a23ed8  __DATA_CONST,__const  _MDItemDocumentUnderstandingTopics
+0x1e0a23ed0  __DATA_CONST,__const  _MDItemDocumentUnderstandingTopicsConfidences
+0x1e0a23ec8  __DATA_CONST,__const  _MDItemDocumentUnderstandingTopicsLabels
+0x1e0a23ec0  __DATA_CONST,__const  _MDItemDocumentUnderstandingTopicsSynonyms
+0x1e0a23eb8  __DATA_CONST,__const  _MDItemDocumentUnderstandingTopicsSynonymsCounts
+0x1e0a23eb0  __DATA_CONST,__const  _MDItemDocumentUnderstandingTopicsVersion
+0x1e0a23ea8  __DATA_CONST,__const  _MDItemDomainIdentifier
+0x1e0a23ea0  __DATA_CONST,__const  _MDItemDonatedEvent
+0x1e0a23e98  __DATA_CONST,__const  _MDItemDonatedEventArrivalAirportCode
+0x1e0a23e90  __DATA_CONST,__const  _MDItemDonatedEventArrivalAirportName
+0x1e0a23e88  __DATA_CONST,__const  _MDItemDonatedEventCourierName
+0x1e0a23e80  __DATA_CONST,__const  _MDItemDonatedEventDepartureAirportCode
+0x1e0a23e78  __DATA_CONST,__const  _MDItemDonatedEventDepartureAirportName
+0x1e0a23e70  __DATA_CONST,__const  _MDItemDonatedEventFlightCarrier
+0x1e0a23e68  __DATA_CONST,__const  _MDItemDonatedEventFlightNumber
+0x1e0a23e60  __DATA_CONST,__const  _MDItemDonatedEventMerchantName
+0x1e0a23e58  __DATA_CONST,__const  _MDItemDonatedEventType
+0x1e0a23e50  __DATA_CONST,__const  _MDItemDownloadError
+0x1e0a23e48  __DATA_CONST,__const  _MDItemDownloadedDate
+0x1e0a23e40  __DATA_CONST,__const  _MDItemDownloadingStatus
+0x1e0a23e38  __DATA_CONST,__const  _MDItemDueDate
+0x1e0a23e30  __DATA_CONST,__const  _MDItemDurationSeconds
+0x1e0a23e28  __DATA_CONST,__const  _MDItemEXIFGPSVersion
+0x1e0a23e20  __DATA_CONST,__const  _MDItemEXIFVersion
+0x1e0a23e18  __DATA_CONST,__const  _MDItemEditors
+0x1e0a23e10  __DATA_CONST,__const  _MDItemEligibleForPhotosProcessing
+0x1e0a23e08  __DATA_CONST,__const  _MDItemEmailAddresses
+0x1e0a23e00  __DATA_CONST,__const  _MDItemEmailAddressesLocalParts
+0x1e0a23df8  __DATA_CONST,__const  _MDItemEmailHTMLContent
+0x1e0a23df0  __DATA_CONST,__const  _MDItemEmailHeadersDictionary
+0x1e0a23de8  __DATA_CONST,__const  _MDItemEmbeddingVersion
+0x1e0a23de0  __DATA_CONST,__const  _MDItemEncodingApplications
+0x1e0a23dd8  __DATA_CONST,__const  _MDItemEndDate
+0x1e0a23dd0  __DATA_CONST,__const  _MDItemEndDateTimeZone
+0x1e0a23dc8  __DATA_CONST,__const  _MDItemEngagementValues
+0x1e0a23dc0  __DATA_CONST,__const  _MDItemEpisode
+0x1e0a23db8  __DATA_CONST,__const  _MDItemEventCarrierName
+0x1e0a23db0  __DATA_CONST,__const  _MDItemEventContactPersonNames
+0x1e0a23da8  __DATA_CONST,__const  _MDItemEventCustomerAddresses
+0x1e0a23da0  __DATA_CONST,__const  _MDItemEventCustomerNames
+0x1e0a23d98  __DATA_CONST,__const  _MDItemEventCustomerTelephoneNumbers
+0x1e0a23d90  __DATA_CONST,__const  _MDItemEventDuration
+0x1e0a23d88  __DATA_CONST,__const  _MDItemEventEndDate
+0x1e0a23d80  __DATA_CONST,__const  _MDItemEventEndLocationAddress
+0x1e0a23d78  __DATA_CONST,__const  _MDItemEventEndLocationAddressCountry
+0x1e0a23d70  __DATA_CONST,__const  _MDItemEventEndLocationAddressLatitude
+0x1e0a23d68  __DATA_CONST,__const  _MDItemEventEndLocationAddressLocality
+0x1e0a23d60  __DATA_CONST,__const  _MDItemEventEndLocationAddressLongitude
+0x1e0a23d58  __DATA_CONST,__const  _MDItemEventEndLocationAddressRegion
+0x1e0a23d50  __DATA_CONST,__const  _MDItemEventEndLocationName
+0x1e0a23d48  __DATA_CONST,__const  _MDItemEventEndLocationTelephone
+0x1e0a23d40  __DATA_CONST,__const  _MDItemEventEndPersonNames
+0x1e0a23d38  __DATA_CONST,__const  _MDItemEventEndTimeIsUnknown
+0x1e0a23d30  __DATA_CONST,__const  _MDItemEventEstimatedEndDate
+0x1e0a23d28  __DATA_CONST,__const  _MDItemEventEstimatedEndDateTimeZone
+0x1e0a23d20  __DATA_CONST,__const  _MDItemEventEstimatedStartDate
+0x1e0a23d18  __DATA_CONST,__const  _MDItemEventEstimatedStartDateTimeZone
+0x1e0a23d10  __DATA_CONST,__const  _MDItemEventFallbackGroupIdentifier
+0x1e0a23d08  __DATA_CONST,__const  _MDItemEventFlightArrivalAirportAddress
+0x1e0a23d00  __DATA_CONST,__const  _MDItemEventFlightArrivalAirportAddressSynonyms
+0x1e0a23cf8  __DATA_CONST,__const  _MDItemEventFlightArrivalAirportCode
+0x1e0a23cf0  __DATA_CONST,__const  _MDItemEventFlightArrivalAirportCountry
+0x1e0a23ce8  __DATA_CONST,__const  _MDItemEventFlightArrivalAirportInternationalNames
+0x1e0a23ce0  __DATA_CONST,__const  _MDItemEventFlightArrivalAirportLatitude
+0x1e0a23cd8  __DATA_CONST,__const  _MDItemEventFlightArrivalAirportLocality
+0x1e0a23cd0  __DATA_CONST,__const  _MDItemEventFlightArrivalAirportLongitude
+0x1e0a23cc8  __DATA_CONST,__const  _MDItemEventFlightArrivalAirportName
+0x1e0a23cc0  __DATA_CONST,__const  _MDItemEventFlightArrivalAirportPostalCode
+0x1e0a23cb8  __DATA_CONST,__const  _MDItemEventFlightArrivalAirportRegion
+0x1e0a23cb0  __DATA_CONST,__const  _MDItemEventFlightArrivalAirportStreetAddress
+0x1e0a23ca8  __DATA_CONST,__const  _MDItemEventFlightArrivalDateTime
+0x1e0a23ca0  __DATA_CONST,__const  _MDItemEventFlightArrivalGate
+0x1e0a23c98  __DATA_CONST,__const  _MDItemEventFlightArrivalTerminal
+0x1e0a23c90  __DATA_CONST,__const  _MDItemEventFlightArrivalTimeZone
+0x1e0a23c88  __DATA_CONST,__const  _MDItemEventFlightBoardingDateTime
+0x1e0a23c80  __DATA_CONST,__const  _MDItemEventFlightBookingInfoUrl
+0x1e0a23c78  __DATA_CONST,__const  _MDItemEventFlightCarrier
+0x1e0a23c70  __DATA_CONST,__const  _MDItemEventFlightCarrierCode
+0x1e0a23c68  __DATA_CONST,__const  _MDItemEventFlightCheckInUrl
+0x1e0a23c60  __DATA_CONST,__const  _MDItemEventFlightConfirmationNumber
+0x1e0a23c58  __DATA_CONST,__const  _MDItemEventFlightDepartureAirportAddress
+0x1e0a23c50  __DATA_CONST,__const  _MDItemEventFlightDepartureAirportAddressSynonyms
+0x1e0a23c48  __DATA_CONST,__const  _MDItemEventFlightDepartureAirportCode
+0x1e0a23c40  __DATA_CONST,__const  _MDItemEventFlightDepartureAirportCountry
+0x1e0a23c38  __DATA_CONST,__const  _MDItemEventFlightDepartureAirportInternationalNames
+0x1e0a23c30  __DATA_CONST,__const  _MDItemEventFlightDepartureAirportLatitude
+0x1e0a23c28  __DATA_CONST,__const  _MDItemEventFlightDepartureAirportLocality
+0x1e0a23c20  __DATA_CONST,__const  _MDItemEventFlightDepartureAirportLongitude
+0x1e0a23c18  __DATA_CONST,__const  _MDItemEventFlightDepartureAirportName
+0x1e0a23c10  __DATA_CONST,__const  _MDItemEventFlightDepartureAirportPostalCode
+0x1e0a23c08  __DATA_CONST,__const  _MDItemEventFlightDepartureAirportRegion
+0x1e0a23c00  __DATA_CONST,__const  _MDItemEventFlightDepartureAirportStreetAddress
+0x1e0a23bf8  __DATA_CONST,__const  _MDItemEventFlightDepartureDateTime
+0x1e0a23bf0  __DATA_CONST,__const  _MDItemEventFlightDepartureGate
+0x1e0a23be8  __DATA_CONST,__const  _MDItemEventFlightDepartureTerminal
+0x1e0a23be0  __DATA_CONST,__const  _MDItemEventFlightDepartureTimeZone
+0x1e0a23bd8  __DATA_CONST,__const  _MDItemEventFlightDesignator
+0x1e0a23bd0  __DATA_CONST,__const  _MDItemEventFlightNumber
+0x1e0a23bc8  __DATA_CONST,__const  _MDItemEventFlightPassengerNames
+0x1e0a23bc0  __DATA_CONST,__const  _MDItemEventFlightPassengerSeatNumbers
+0x1e0a23bb8  __DATA_CONST,__const  _MDItemEventFlightStatus
+0x1e0a23bb0  __DATA_CONST,__const  _MDItemEventGroupIdentifier
+0x1e0a23ba8  __DATA_CONST,__const  _MDItemEventHotelCheckinDate
+0x1e0a23ba0  __DATA_CONST,__const  _MDItemEventHotelCheckinTime
+0x1e0a23b98  __DATA_CONST,__const  _MDItemEventHotelCheckoutDate
+0x1e0a23b90  __DATA_CONST,__const  _MDItemEventHotelCheckoutTime
+0x1e0a23b88  __DATA_CONST,__const  _MDItemEventHotelModifyReservationUrl
+0x1e0a23b80  __DATA_CONST,__const  _MDItemEventHotelProvider
+0x1e0a23b78  __DATA_CONST,__const  _MDItemEventHotelReservationForAddress
+0x1e0a23b70  __DATA_CONST,__const  _MDItemEventHotelReservationForAddressCountry
+0x1e0a23b68  __DATA_CONST,__const  _MDItemEventHotelReservationForAddressLocality
+0x1e0a23b60  __DATA_CONST,__const  _MDItemEventHotelReservationForAddressPostalCode
+0x1e0a23b58  __DATA_CONST,__const  _MDItemEventHotelReservationForAddressRegion
+0x1e0a23b50  __DATA_CONST,__const  _MDItemEventHotelReservationForAddressSynonyms
+0x1e0a23b48  __DATA_CONST,__const  _MDItemEventHotelReservationForName
+0x1e0a23b40  __DATA_CONST,__const  _MDItemEventHotelReservationForStreetAddress
+0x1e0a23b38  __DATA_CONST,__const  _MDItemEventHotelReservationForTelephone
+0x1e0a23b30  __DATA_CONST,__const  _MDItemEventHotelReservationId
+0x1e0a23b28  __DATA_CONST,__const  _MDItemEventHotelTimeZone
+0x1e0a23b20  __DATA_CONST,__const  _MDItemEventHotelUnderName
+0x1e0a23b18  __DATA_CONST,__const  _MDItemEventIsAllDay
+0x1e0a23b10  __DATA_CONST,__const  _MDItemEventIsCancelled
+0x1e0a23b08  __DATA_CONST,__const  _MDItemEventMegadomeIdentifier
+0x1e0a23b00  __DATA_CONST,__const  _MDItemEventMessageIdentifier
+0x1e0a23af8  __DATA_CONST,__const  _MDItemEventMetadata
+0x1e0a23af0  __DATA_CONST,__const  _MDItemEventName
+0x1e0a23ae8  __DATA_CONST,__const  _MDItemEventNumberOfRooms
+0x1e0a23ae0  __DATA_CONST,__const  _MDItemEventOrderDate
+0x1e0a23ad8  __DATA_CONST,__const  _MDItemEventOrderDateTimeZone
+0x1e0a23ad0  __DATA_CONST,__const  _MDItemEventProvider
+0x1e0a23ac8  __DATA_CONST,__const  _MDItemEventRelatedMessageIdentifiers
+0x1e0a23ac0  __DATA_CONST,__const  _MDItemEventRelatedSourceBundleIdentifiers
+0x1e0a23ab8  __DATA_CONST,__const  _MDItemEventReservationForName
+0x1e0a23ab0  __DATA_CONST,__const  _MDItemEventReservationID
+0x1e0a23aa8  __DATA_CONST,__const  _MDItemEventRestaurantMealType
+0x1e0a23aa0  __DATA_CONST,__const  _MDItemEventRestaurantPartySize
+0x1e0a23a98  __DATA_CONST,__const  _MDItemEventRestaurantReservationForAddress
+0x1e0a23a90  __DATA_CONST,__const  _MDItemEventRestaurantReservationForAddressCountry
+0x1e0a23a88  __DATA_CONST,__const  _MDItemEventRestaurantReservationForAddressLocality
+0x1e0a23a80  __DATA_CONST,__const  _MDItemEventRestaurantReservationForAddressPostalCode
+0x1e0a23a78  __DATA_CONST,__const  _MDItemEventRestaurantReservationForAddressRegion
+0x1e0a23a70  __DATA_CONST,__const  _MDItemEventRestaurantReservationForAddressSynonyms
+0x1e0a23a68  __DATA_CONST,__const  _MDItemEventRestaurantReservationForName
+0x1e0a23a60  __DATA_CONST,__const  _MDItemEventRestaurantReservationForStreetAddress
+0x1e0a23a58  __DATA_CONST,__const  _MDItemEventRestaurantReservationForTelephone
+0x1e0a23a50  __DATA_CONST,__const  _MDItemEventRestaurantReservationId
+0x1e0a23a48  __DATA_CONST,__const  _MDItemEventRestaurantStartDate
+0x1e0a23a40  __DATA_CONST,__const  _MDItemEventRestaurantStartTime
+0x1e0a23a38  __DATA_CONST,__const  _MDItemEventRestaurantTimeZone
+0x1e0a23a30  __DATA_CONST,__const  _MDItemEventRestaurantUnderName
+0x1e0a23a28  __DATA_CONST,__const  _MDItemEventRoomNumbers
+0x1e0a23a20  __DATA_CONST,__const  _MDItemEventSeatNumbers
+0x1e0a23a18  __DATA_CONST,__const  _MDItemEventSourceBundleIdentifier
+0x1e0a23a10  __DATA_CONST,__const  _MDItemEventSourceIsForwarded
+0x1e0a23a08  __DATA_CONST,__const  _MDItemEventSourceMetadata
+0x1e0a23a00  __DATA_CONST,__const  _MDItemEventStartDate
+0x1e0a239f8  __DATA_CONST,__const  _MDItemEventStartLocationAddress
+0x1e0a239f0  __DATA_CONST,__const  _MDItemEventStartLocationAddressCountry
+0x1e0a239e8  __DATA_CONST,__const  _MDItemEventStartLocationAddressLatitude
+0x1e0a239e0  __DATA_CONST,__const  _MDItemEventStartLocationAddressLocality
+0x1e0a239d8  __DATA_CONST,__const  _MDItemEventStartLocationAddressLongitude
+0x1e0a239d0  __DATA_CONST,__const  _MDItemEventStartLocationAddressRegion
+0x1e0a239c8  __DATA_CONST,__const  _MDItemEventStartLocationName
+0x1e0a239c0  __DATA_CONST,__const  _MDItemEventStartLocationTelephone
+0x1e0a239b8  __DATA_CONST,__const  _MDItemEventStartPersonNames
+0x1e0a239b0  __DATA_CONST,__const  _MDItemEventStartTimeIsUnknown
+0x1e0a239a8  __DATA_CONST,__const  _MDItemEventStatus
+0x1e0a239a0  __DATA_CONST,__const  _MDItemEventSubType
+0x1e0a23998  __DATA_CONST,__const  _MDItemEventTicketType
+0x1e0a23990  __DATA_CONST,__const  _MDItemEventTotalCost
+0x1e0a23988  __DATA_CONST,__const  _MDItemEventTrackingNumber
+0x1e0a23980  __DATA_CONST,__const  _MDItemEventType
+0x1e0a23978  __DATA_CONST,__const  _MDItemEventURL
+0x1e0a23970  __DATA_CONST,__const  _MDItemEventUpdateStatus
+0x1e0a23968  __DATA_CONST,__const  _MDItemExecutableArchitectures
+0x1e0a23960  __DATA_CONST,__const  _MDItemExecutablePlatform
+0x1e0a23958  __DATA_CONST,__const  _MDItemExpirationDate
+0x1e0a23950  __DATA_CONST,__const  _MDItemExposureMode
+0x1e0a23948  __DATA_CONST,__const  _MDItemExposureProgram
+0x1e0a23940  __DATA_CONST,__const  _MDItemExposureTimeSeconds
+0x1e0a23938  __DATA_CONST,__const  _MDItemExposureTimeString
+0x1e0a23930  __DATA_CONST,__const  _MDItemExtendedContentRating
+0x1e0a23928  __DATA_CONST,__const  _MDItemExternalID
+0x1e0a23920  __DATA_CONST,__const  _MDItemExtraData
+0x1e0a23918  __DATA_CONST,__const  _MDItemExtractedAddresses
+0x1e0a23910  __DATA_CONST,__const  _MDItemExtractedAddressesConfidences
+0x1e0a23908  __DATA_CONST,__const  _MDItemExtractedAddressesLabels
+0x1e0a23900  __DATA_CONST,__const  _MDItemExtractedAddressesSynonyms
+0x1e0a238f8  __DATA_CONST,__const  _MDItemExtractedAddressesSynonymsCounts
+0x1e0a238f0  __DATA_CONST,__const  _MDItemExtractedCurrencies
+0x1e0a238e8  __DATA_CONST,__const  _MDItemExtractedCurrenciesValues
+0x1e0a238e0  __DATA_CONST,__const  _MDItemExtractedDates
+0x1e0a238d8  __DATA_CONST,__const  _MDItemExtractedDatesValues
+0x1e0a238d0  __DATA_CONST,__const  _MDItemExtractedEmails
+0x1e0a238c8  __DATA_CONST,__const  _MDItemExtractedEmailsConfidences
+0x1e0a238c0  __DATA_CONST,__const  _MDItemExtractedEmailsLabels
+0x1e0a238b8  __DATA_CONST,__const  _MDItemExtractedEmailsSynonyms
+0x1e0a238b0  __DATA_CONST,__const  _MDItemExtractedEmailsSynonymsCounts
+0x1e0a238a8  __DATA_CONST,__const  _MDItemExtractedFlights
+0x1e0a238a0  __DATA_CONST,__const  _MDItemExtractedFlightsConfidences
+0x1e0a23898  __DATA_CONST,__const  _MDItemExtractedFlightsLabels
+0x1e0a23890  __DATA_CONST,__const  _MDItemExtractedFlightsSynonyms
+0x1e0a23888  __DATA_CONST,__const  _MDItemExtractedFlightsSynonymsCounts
+0x1e0a23880  __DATA_CONST,__const  _MDItemExtractedLinks
+0x1e0a23878  __DATA_CONST,__const  _MDItemExtractedLinksConfidences
+0x1e0a23870  __DATA_CONST,__const  _MDItemExtractedLinksLabels
+0x1e0a23868  __DATA_CONST,__const  _MDItemExtractedLinksSynonyms
+0x1e0a23860  __DATA_CONST,__const  _MDItemExtractedLinksSynonymsCounts
+0x1e0a23858  __DATA_CONST,__const  _MDItemExtractedLocations
+0x1e0a23850  __DATA_CONST,__const  _MDItemExtractedLocationsValues
+0x1e0a23848  __DATA_CONST,__const  _MDItemExtractedPhoneNumbers
+0x1e0a23840  __DATA_CONST,__const  _MDItemExtractedPhoneNumbersConfidences
+0x1e0a23838  __DATA_CONST,__const  _MDItemExtractedPhoneNumbersCountryCodes
+0x1e0a23830  __DATA_CONST,__const  _MDItemExtractedPhoneNumbersLabels
+0x1e0a23828  __DATA_CONST,__const  _MDItemExtractedPhoneNumbersSynonyms
+0x1e0a23820  __DATA_CONST,__const  _MDItemExtractedPhoneNumbersSynonymsCounts
+0x1e0a23818  __DATA_CONST,__const  _MDItemExtractedTrackingNumbers
+0x1e0a23810  __DATA_CONST,__const  _MDItemExtractedTrackingNumbersConfidences
+0x1e0a23808  __DATA_CONST,__const  _MDItemExtractedTrackingNumbersLabels
+0x1e0a23800  __DATA_CONST,__const  _MDItemExtractedTrackingNumbersSynonyms
+0x1e0a237f8  __DATA_CONST,__const  _MDItemExtractedTrackingNumbersSynonymsCounts
+0x1e0a237f0  __DATA_CONST,__const  _MDItemFNumber
+0x1e0a237e8  __DATA_CONST,__const  _MDItemFavoriteRank
+0x1e0a237e0  __DATA_CONST,__const  _MDItemFileIdentifier
+0x1e0a237d8  __DATA_CONST,__const  _MDItemFileItemID
+0x1e0a237d0  __DATA_CONST,__const  _MDItemFileProviderContentVersion
+0x1e0a237c8  __DATA_CONST,__const  _MDItemFileProviderDomainIdentifier
+0x1e0a237c0  __DATA_CONST,__const  _MDItemFileProviderFilename
+0x1e0a237b8  __DATA_CONST,__const  _MDItemFileProviderID
+0x1e0a237b0  __DATA_CONST,__const  _MDItemFileProviderIndexDataContentVersion
+0x1e0a237a8  __DATA_CONST,__const  _MDItemFileProviderIndexDataModelVersionOnClient
+0x1e0a237a0  __DATA_CONST,__const  _MDItemFileProviderIndexDataModelVersionOnServer
+0x1e0a23798  __DATA_CONST,__const  _MDItemFileProviderIsPinned
+0x1e0a23790  __DATA_CONST,__const  _MDItemFileProviderOnDiskIdentifier
+0x1e0a23788  __DATA_CONST,__const  _MDItemFileProviderUserInfoKeys
+0x1e0a23780  __DATA_CONST,__const  _MDItemFileProviderUserInfoValues
+0x1e0a23778  __DATA_CONST,__const  _MDItemFileSize
+0x1e0a23770  __DATA_CONST,__const  _MDItemFileSystemContentVersion
+0x1e0a23768  __DATA_CONST,__const  _MDItemFileSystemIndexDataContentVersion
+0x1e0a23760  __DATA_CONST,__const  _MDItemFilename
+0x1e0a23758  __DATA_CONST,__const  _MDItemFinderComment
+0x1e0a23750  __DATA_CONST,__const  _MDItemFlashOnOff
+0x1e0a23748  __DATA_CONST,__const  _MDItemFocalLength
+0x1e0a23740  __DATA_CONST,__const  _MDItemFocalLength35mm
+0x1e0a23738  __DATA_CONST,__const  _MDItemFonts
+0x1e0a23730  __DATA_CONST,__const  _MDItemFullDay
+0x1e0a23728  __DATA_CONST,__const  _MDItemFullyFormattedAddress
+0x1e0a23720  __DATA_CONST,__const  _MDItemGPSAreaInformation
+0x1e0a23718  __DATA_CONST,__const  _MDItemGPSDOP
+0x1e0a23710  __DATA_CONST,__const  _MDItemGPSDateStamp
+0x1e0a23708  __DATA_CONST,__const  _MDItemGPSDestBearing
+0x1e0a23700  __DATA_CONST,__const  _MDItemGPSDestDistance
+0x1e0a236f8  __DATA_CONST,__const  _MDItemGPSDestLatitude
+0x1e0a236f0  __DATA_CONST,__const  _MDItemGPSDestLongitude
+0x1e0a236e8  __DATA_CONST,__const  _MDItemGPSDifferental
+0x1e0a236e0  __DATA_CONST,__const  _MDItemGPSMapDatum
+0x1e0a236d8  __DATA_CONST,__const  _MDItemGPSMeasureMode
+0x1e0a236d0  __DATA_CONST,__const  _MDItemGPSProcessingMethod
+0x1e0a236c8  __DATA_CONST,__const  _MDItemGPSStatus
+0x1e0a236c0  __DATA_CONST,__const  _MDItemGPSTrack
+0x1e0a236b8  __DATA_CONST,__const  _MDItemGenre
+0x1e0a236b0  __DATA_CONST,__const  _MDItemGroupId
+0x1e0a236a8  __DATA_CONST,__const  _MDItemGroupPhotoPath
+0x1e0a236a0  __DATA_CONST,__const  _MDItemHTMLContent
+0x1e0a23698  __DATA_CONST,__const  _MDItemHTMLContentData
+0x1e0a23690  __DATA_CONST,__const  _MDItemHasAlphaChannel
+0x1e0a23688  __DATA_CONST,__const  _MDItemHasClientData
+0x1e0a23680  __DATA_CONST,__const  _MDItemHasEmailContentURL
+0x1e0a23678  __DATA_CONST,__const  _MDItemHasLPMedia
+0x1e0a23670  __DATA_CONST,__const  _MDItemHasSuggestedEdits
+0x1e0a23668  __DATA_CONST,__const  _MDItemHasTopHitAppShortcuts
+0x1e0a23660  __DATA_CONST,__const  _MDItemHasTopMomentScore
+0x1e0a23658  __DATA_CONST,__const  _MDItemHashtags
+0x1e0a23650  __DATA_CONST,__const  _MDItemHeadline
+0x1e0a23648  __DATA_CONST,__const  _MDItemHiddenAdditionalRecipientContactIdentifiers
+0x1e0a23640  __DATA_CONST,__const  _MDItemHiddenAdditionalRecipientContactProperties
+0x1e0a23638  __DATA_CONST,__const  _MDItemHiddenAdditionalRecipientEmailAddresses
+0x1e0a23630  __DATA_CONST,__const  _MDItemHiddenAdditionalRecipientEmailAddressesLocalParts
+0x1e0a23628  __DATA_CONST,__const  _MDItemHiddenAdditionalRecipientPersons
+0x1e0a23620  __DATA_CONST,__const  _MDItemHiddenAdditionalRecipients
+0x1e0a23618  __DATA_CONST,__const  _MDItemHiddenAdditionalRecipientsDictionary
+0x1e0a23610  __DATA_CONST,__const  _MDItemHome
+0x1e0a23608  __DATA_CONST,__const  _MDItemHomeAddresses
+0x1e0a23600  __DATA_CONST,__const  _MDItemHomeL2Features
+0x1e0a235f8  __DATA_CONST,__const  _MDItemISOSpeed
+0x1e0a235f0  __DATA_CONST,__const  _MDItemIdentifier
+0x1e0a235e8  __DATA_CONST,__const  _MDItemImageDirection
+0x1e0a235e0  __DATA_CONST,__const  _MDItemImportComplete
+0x1e0a235d8  __DATA_CONST,__const  _MDItemImportExtensionCrashed
+0x1e0a235d0  __DATA_CONST,__const  _MDItemImportExtensionNotFound
+0x1e0a235c8  __DATA_CONST,__const  _MDItemImportHasSandboxExtension
+0x1e0a235c0  __DATA_CONST,__const  _MDItemImportSandboxExtension
+0x1e0a235b8  __DATA_CONST,__const  _MDItemImportantDates
+0x1e0a235b0  __DATA_CONST,__const  _MDItemIncomingAudioCallDates
+0x1e0a235a8  __DATA_CONST,__const  _MDItemIncomingCalendarCounts
+0x1e0a235a0  __DATA_CONST,__const  _MDItemIncomingCounts
+0x1e0a23598  __DATA_CONST,__const  _MDItemIncomingFileProviderCounts
+0x1e0a23590  __DATA_CONST,__const  _MDItemIncomingMailCounts
+0x1e0a23588  __DATA_CONST,__const  _MDItemIncomingSMSCounts
+0x1e0a23580  __DATA_CONST,__const  _MDItemIncomingVideoCallDates
+0x1e0a23578  __DATA_CONST,__const  _MDItemIndexIdentifier
+0x1e0a23570  __DATA_CONST,__const  _MDItemIndexOID
+0x1e0a23568  __DATA_CONST,__const  _MDItemInformation
+0x1e0a23560  __DATA_CONST,__const  _MDItemInstantMessageAddresses
+0x1e0a23558  __DATA_CONST,__const  _MDItemInstructions
+0x1e0a23550  __DATA_CONST,__const  _MDItemIntentData
+0x1e0a23548  __DATA_CONST,__const  _MDItemInterestingDate
+0x1e0a23540  __DATA_CONST,__const  _MDItemIsAlarmEnabled
+0x1e0a23538  __DATA_CONST,__const  _MDItemIsAllDay
+0x1e0a23530  __DATA_CONST,__const  _MDItemIsApplicationManaged
+0x1e0a23528  __DATA_CONST,__const  _MDItemIsCinematicVideo
+0x1e0a23520  __DATA_CONST,__const  _MDItemIsCommunicationNotification
+0x1e0a23518  __DATA_CONST,__const  _MDItemIsCompleted
+0x1e0a23510  __DATA_CONST,__const  _MDItemIsDownloading
+0x1e0a23508  __DATA_CONST,__const  _MDItemIsEnabled
+0x1e0a23500  __DATA_CONST,__const  _MDItemIsExistingThread
+0x1e0a234f8  __DATA_CONST,__const  _MDItemIsFavorited
+0x1e0a234f0  __DATA_CONST,__const  _MDItemIsFlagged
+0x1e0a234e8  __DATA_CONST,__const  _MDItemIsFromMe
+0x1e0a234e0  __DATA_CONST,__const  _MDItemIsGeneralMIDISequence
+0x1e0a234d8  __DATA_CONST,__const  _MDItemIsGroupThread
+0x1e0a234d0  __DATA_CONST,__const  _MDItemIsLikelyJunk
+0x1e0a234c8  __DATA_CONST,__const  _MDItemIsLocal
+0x1e0a234c0  __DATA_CONST,__const  _MDItemIsNew
+0x1e0a234b8  __DATA_CONST,__const  _MDItemIsPartiallyDownloaded
+0x1e0a234b0  __DATA_CONST,__const  _MDItemIsPlaceholder
+0x1e0a234a8  __DATA_CONST,__const  _MDItemIsPriority
+0x1e0a234a0  __DATA_CONST,__const  _MDItemIsProResVideo
+0x1e0a23498  __DATA_CONST,__const  _MDItemIsRead
+0x1e0a23490  __DATA_CONST,__const  _MDItemIsReaderView
+0x1e0a23488  __DATA_CONST,__const  _MDItemIsScreenCapture
+0x1e0a23480  __DATA_CONST,__const  _MDItemIsShared
+0x1e0a23478  __DATA_CONST,__const  _MDItemIsTemplateApp
+0x1e0a23470  __DATA_CONST,__const  _MDItemIsTimeSensitive
+0x1e0a23468  __DATA_CONST,__const  _MDItemIsTrashed
+0x1e0a23460  __DATA_CONST,__const  _MDItemIsTwoFactorCode
+0x1e0a23458  __DATA_CONST,__const  _MDItemIsUploaded
+0x1e0a23450  __DATA_CONST,__const  _MDItemIsUploading
+0x1e0a23448  __DATA_CONST,__const  _MDItemIsUrgent
+0x1e0a23440  __DATA_CONST,__const  _MDItemIsWebClip
+0x1e0a23438  __DATA_CONST,__const  _MDItemIsWindowTabEntity
+0x1e0a23430  __DATA_CONST,__const  _MDItemIsZombie
+0x1e0a23428  __DATA_CONST,__const  _MDItemKeySignature
+0x1e0a23420  __DATA_CONST,__const  _MDItemKeyphraseConfidences
+0x1e0a23418  __DATA_CONST,__const  _MDItemKeyphraseLabels
+0x1e0a23410  __DATA_CONST,__const  _MDItemKeyphraseVersion
+0x1e0a23408  __DATA_CONST,__const  _MDItemKeyphrases
+0x1e0a23400  __DATA_CONST,__const  _MDItemKeywords
+0x1e0a233f8  __DATA_CONST,__const  _MDItemKind
+0x1e0a233f0  __DATA_CONST,__const  _MDItemLPMediaPaths
+0x1e0a233e8  __DATA_CONST,__const  _MDItemLabelID
+0x1e0a233e0  __DATA_CONST,__const  _MDItemLabelIcon
+0x1e0a233d8  __DATA_CONST,__const  _MDItemLabelKind
+0x1e0a233d0  __DATA_CONST,__const  _MDItemLabelUUID
+0x1e0a233c8  __DATA_CONST,__const  _MDItemLanguages
+0x1e0a233c0  __DATA_CONST,__const  _MDItemLastAppEngagementDate
+0x1e0a233b8  __DATA_CONST,__const  _MDItemLastAppSearchEngagementQuery
+0x1e0a233b0  __DATA_CONST,__const  _MDItemLastAppSearchEngagementRenderPosition
+0x1e0a233a8  __DATA_CONST,__const  _MDItemLastEditorIdentifier
+0x1e0a233a0  __DATA_CONST,__const  _MDItemLastEditorName
+0x1e0a23398  __DATA_CONST,__const  _MDItemLastMotionActivityState
+0x1e0a23390  __DATA_CONST,__const  _MDItemLastUsedDate
+0x1e0a23388  __DATA_CONST,__const  _MDItemLastUsedDate_Ranking
+0x1e0a23380  __DATA_CONST,__const  _MDItemLatitude
+0x1e0a23378  __DATA_CONST,__const  _MDItemLaunchString
+0x1e0a23370  __DATA_CONST,__const  _MDItemLayerNames
+0x1e0a23368  __DATA_CONST,__const  _MDItemLensModel
+0x1e0a23360  __DATA_CONST,__const  _MDItemLinkName
+0x1e0a23358  __DATA_CONST,__const  _MDItemLinkSubType
+0x1e0a23350  __DATA_CONST,__const  _MDItemLinkType
+0x1e0a23348  __DATA_CONST,__const  _MDItemLinks
+0x1e0a23340  __DATA_CONST,__const  _MDItemLocalizedLinkSubTypes
+0x1e0a23338  __DATA_CONST,__const  _MDItemLocalizedLinkTypes
+0x1e0a23330  __DATA_CONST,__const  _MDItemLogicalSize
+0x1e0a23328  __DATA_CONST,__const  _MDItemLongitude
+0x1e0a23320  __DATA_CONST,__const  _MDItemLyricist
+0x1e0a23318  __DATA_CONST,__const  _MDItemMailCategories
+0x1e0a23310  __DATA_CONST,__const  _MDItemMailCategoryType
+0x1e0a23308  __DATA_CONST,__const  _MDItemMailDateReceived_Ranking
+0x1e0a23300  __DATA_CONST,__const  _MDItemMailUnsubscribable
+0x1e0a232f8  __DATA_CONST,__const  _MDItemMailVIP
+0x1e0a232f0  __DATA_CONST,__const  _MDItemMailboxArchive
+0x1e0a232e8  __DATA_CONST,__const  _MDItemMailboxDrafts
+0x1e0a232e0  __DATA_CONST,__const  _MDItemMailboxInbox
+0x1e0a232d8  __DATA_CONST,__const  _MDItemMailboxJunk
+0x1e0a232d0  __DATA_CONST,__const  _MDItemMailboxSent
+0x1e0a232c8  __DATA_CONST,__const  _MDItemMailboxTrash
+0x1e0a232c0  __DATA_CONST,__const  _MDItemMailboxes
+0x1e0a232b8  __DATA_CONST,__const  _MDItemMaxAperture
+0x1e0a232b0  __DATA_CONST,__const  _MDItemMediaAnalysisAttemptCount
+0x1e0a232a8  __DATA_CONST,__const  _MDItemMediaAnalysisComplete
+0x1e0a232a0  __DATA_CONST,__const  _MDItemMediaAnalysisLastAttempt
+0x1e0a23298  __DATA_CONST,__const  _MDItemMediaAnalysisNextAttempt
+0x1e0a23290  __DATA_CONST,__const  _MDItemMediaAnalysisStatus
+0x1e0a23288  __DATA_CONST,__const  _MDItemMediaAnalysisTimeRangeData
+0x1e0a23280  __DATA_CONST,__const  _MDItemMediaAnalysisTimeRangeEmbeddings
+0x1e0a23278  __DATA_CONST,__const  _MDItemMediaEmbeddingVersion
+0x1e0a23270  __DATA_CONST,__const  _MDItemMediaExtensions
+0x1e0a23268  __DATA_CONST,__const  _MDItemMediaTypes
+0x1e0a23260  __DATA_CONST,__const  _MDItemMessageEffectType
+0x1e0a23258  __DATA_CONST,__const  _MDItemMessageFromKnownSender
+0x1e0a23250  __DATA_CONST,__const  _MDItemMessageMentionedAddresses
+0x1e0a23248  __DATA_CONST,__const  _MDItemMessagePinned
+0x1e0a23240  __DATA_CONST,__const  _MDItemMessageRead
+0x1e0a23238  __DATA_CONST,__const  _MDItemMessageService
+0x1e0a23230  __DATA_CONST,__const  _MDItemMessageTapbackStringValue
+0x1e0a23228  __DATA_CONST,__const  _MDItemMessageTapbackType
+0x1e0a23220  __DATA_CONST,__const  _MDItemMessageType
+0x1e0a23218  __DATA_CONST,__const  _MDItemMessagesChatId
+0x1e0a23210  __DATA_CONST,__const  _MDItemMeteringMode
+0x1e0a23208  __DATA_CONST,__const  _MDItemMusicalGenre
+0x1e0a23200  __DATA_CONST,__const  _MDItemMusicalInstrumentCategory
+0x1e0a231f8  __DATA_CONST,__const  _MDItemMusicalInstrumentName
+0x1e0a231f0  __DATA_CONST,__const  _MDItemNamedLocation
+0x1e0a231e8  __DATA_CONST,__const  _MDItemNoteAccountName
+0x1e0a231e0  __DATA_CONST,__const  _MDItemNoteFolderName
+0x1e0a231d8  __DATA_CONST,__const  _MDItemNoteIsLocked
+0x1e0a231d0  __DATA_CONST,__const  _MDItemNoteIsShared
+0x1e0a231c8  __DATA_CONST,__const  _MDItemNotificationCritical
+0x1e0a231c0  __DATA_CONST,__const  _MDItemNotificationTimeSensitive
+0x1e0a231b8  __DATA_CONST,__const  _MDItemNumberOfPages
+0x1e0a231b0  __DATA_CONST,__const  _MDItemOrganizations
+0x1e0a231a8  __DATA_CONST,__const  _MDItemOrientation
+0x1e0a231a0  __DATA_CONST,__const  _MDItemOriginalFormat
+0x1e0a23198  __DATA_CONST,__const  _MDItemOriginalSource
+0x1e0a23190  __DATA_CONST,__const  _MDItemOutgoingAudioCallDates
+0x1e0a23188  __DATA_CONST,__const  _MDItemOutgoingCalendarCounts
+0x1e0a23180  __DATA_CONST,__const  _MDItemOutgoingCounts
+0x1e0a23178  __DATA_CONST,__const  _MDItemOutgoingFileProviderCounts
+0x1e0a23170  __DATA_CONST,__const  _MDItemOutgoingMailCounts
+0x1e0a23168  __DATA_CONST,__const  _MDItemOutgoingSMSCounts
+0x1e0a23160  __DATA_CONST,__const  _MDItemOutgoingVideoCallDates
+0x1e0a23158  __DATA_CONST,__const  _MDItemOwnerIdentifier
+0x1e0a23150  __DATA_CONST,__const  _MDItemOwnerName
+0x1e0a23148  __DATA_CONST,__const  _MDItemPageHeight
+0x1e0a23140  __DATA_CONST,__const  _MDItemPageWidth
+0x1e0a23138  __DATA_CONST,__const  _MDItemParentFileIdentifier
+0x1e0a23130  __DATA_CONST,__const  _MDItemParentFileItemID
+0x1e0a23128  __DATA_CONST,__const  _MDItemParticipants
+0x1e0a23120  __DATA_CONST,__const  _MDItemPassbookIsPaymentPass
+0x1e0a23118  __DATA_CONST,__const  _MDItemPassbookTransactionAmount
+0x1e0a23110  __DATA_CONST,__const  _MDItemPassbookTransactionCurrencyCode
+0x1e0a23108  __DATA_CONST,__const  _MDItemPassbookTransactionStatus
+0x1e0a23100  __DATA_CONST,__const  _MDItemPassbookTransactionType
+0x1e0a230f8  __DATA_CONST,__const  _MDItemPath
+0x1e0a230f0  __DATA_CONST,__const  _MDItemPayBalanceActionURL
+0x1e0a230e8  __DATA_CONST,__const  _MDItemPerformers
+0x1e0a230e0  __DATA_CONST,__const  _MDItemPersonIdentifier
+0x1e0a230d8  __DATA_CONST,__const  _MDItemPersonScore
+0x1e0a230d0  __DATA_CONST,__const  _MDItemPersonType
+0x1e0a230c8  __DATA_CONST,__const  _MDItemPhoneCallBackURL
+0x1e0a230c0  __DATA_CONST,__const  _MDItemPhoneCallStatus
+0x1e0a230b8  __DATA_CONST,__const  _MDItemPhoneCallType
+0x1e0a230b0  __DATA_CONST,__const  _MDItemPhoneNumbers
+0x1e0a230a8  __DATA_CONST,__const  _MDItemPhoneProvider
+0x1e0a230a0  __DATA_CONST,__const  _MDItemPhoneSIM
+0x1e0a23098  __DATA_CONST,__const  _MDItemPhotoEmbedding
+0x1e0a23090  __DATA_CONST,__const  _MDItemPhotoEmbeddingVectorIds
+0x1e0a23088  __DATA_CONST,__const  _MDItemPhotosBusinessCategories
+0x1e0a23080  __DATA_CONST,__const  _MDItemPhotosBusinessNames
+0x1e0a23078  __DATA_CONST,__const  _MDItemPhotosCharacterRecognitionAnalysisVersion
+0x1e0a23070  __DATA_CONST,__const  _MDItemPhotosCollectionKeyAssetUUID
+0x1e0a23068  __DATA_CONST,__const  _MDItemPhotosCollectionResultCount
+0x1e0a23060  __DATA_CONST,__const  _MDItemPhotosCollectionSubtitle
+0x1e0a23058  __DATA_CONST,__const  _MDItemPhotosContentAddedDate
+0x1e0a23050  __DATA_CONST,__const  _MDItemPhotosContentCreationDateMonth
+0x1e0a23048  __DATA_CONST,__const  _MDItemPhotosContentCreationDateMonths
+0x1e0a23040  __DATA_CONST,__const  _MDItemPhotosContentCreationDateYear
+0x1e0a23038  __DATA_CONST,__const  _MDItemPhotosContentCreationDateYears
+0x1e0a23030  __DATA_CONST,__const  _MDItemPhotosContributor
+0x1e0a23028  __DATA_CONST,__const  _MDItemPhotosContributorContactIdentifier
+0x1e0a23020  __DATA_CONST,__const  _MDItemPhotosContributorName
+0x1e0a23018  __DATA_CONST,__const  _MDItemPhotosDescription
+0x1e0a23010  __DATA_CONST,__const  _MDItemPhotosDonationState
+0x1e0a23008  __DATA_CONST,__const  _MDItemPhotosDonationTimestamp
+0x1e0a23000  __DATA_CONST,__const  _MDItemPhotosEntityTitle
+0x1e0a22ff8  __DATA_CONST,__const  _MDItemPhotosEventCategories
+0x1e0a22ff0  __DATA_CONST,__const  _MDItemPhotosEventNames
+0x1e0a22fe8  __DATA_CONST,__const  _MDItemPhotosEventPerformers
+0x1e0a22fe0  __DATA_CONST,__const  _MDItemPhotosFaceAnalysisVersion
+0x1e0a22fd8  __DATA_CONST,__const  _MDItemPhotosFavorited
+0x1e0a22fd0  __DATA_CONST,__const  _MDItemPhotosFavorites
+0x1e0a22fc8  __DATA_CONST,__const  _MDItemPhotosHolidays
+0x1e0a22fc0  __DATA_CONST,__const  _MDItemPhotosIdentificationDocumentsVersion
+0x1e0a22fb8  __DATA_CONST,__const  _MDItemPhotosImageEmbeddingVersion
+0x1e0a22fb0  __DATA_CONST,__const  _MDItemPhotosInferredTimeZoneOffset
+0x1e0a22fa8  __DATA_CONST,__const  _MDItemPhotosKeywords
+0x1e0a22fa0  __DATA_CONST,__const  _MDItemPhotosKeywordsIndex
+0x1e0a22f98  __DATA_CONST,__const  _MDItemPhotosL2Signals
+0x1e0a22f90  __DATA_CONST,__const  _MDItemPhotosLibraryName
+0x1e0a22f88  __DATA_CONST,__const  _MDItemPhotosLocationKeywords
+0x1e0a22f80  __DATA_CONST,__const  _MDItemPhotosLocationKeywordsIndex
+0x1e0a22f78  __DATA_CONST,__const  _MDItemPhotosLocationPrivateEncryptedComputeAnalysisVersion
+0x1e0a22f70  __DATA_CONST,__const  _MDItemPhotosMeanings
+0x1e0a22f68  __DATA_CONST,__const  _MDItemPhotosMediaAnalysisImageVersion
+0x1e0a22f60  __DATA_CONST,__const  _MDItemPhotosMediaAnalysisVersion
+0x1e0a22f58  __DATA_CONST,__const  _MDItemPhotosMediaTypes
+0x1e0a22f50  __DATA_CONST,__const  _MDItemPhotosMemoryTitle
+0x1e0a22f48  __DATA_CONST,__const  _MDItemPhotosPartsOfDay
+0x1e0a22f40  __DATA_CONST,__const  _MDItemPhotosPartsOfWeek
+0x1e0a22f38  __DATA_CONST,__const  _MDItemPhotosPeople
+0x1e0a22f30  __DATA_CONST,__const  _MDItemPhotosPeopleAddresses
+0x1e0a22f28  __DATA_CONST,__const  _MDItemPhotosPeopleContactIdentifiers
+0x1e0a22f20  __DATA_CONST,__const  _MDItemPhotosPeopleEmailAddresses
+0x1e0a22f18  __DATA_CONST,__const  _MDItemPhotosPeopleFaceAttributes
+0x1e0a22f10  __DATA_CONST,__const  _MDItemPhotosPeopleFaceAttributesCounts
+0x1e0a22f08  __DATA_CONST,__const  _MDItemPhotosPeopleNames
+0x1e0a22f00  __DATA_CONST,__const  _MDItemPhotosPeopleNamesAlternatives
+0x1e0a22ef8  __DATA_CONST,__const  _MDItemPhotosPeopleNamesAlternativesCounts
+0x1e0a22ef0  __DATA_CONST,__const  _MDItemPhotosPeopleNamesIndex
+0x1e0a22ee8  __DATA_CONST,__const  _MDItemPhotosPeoplePersonIdentifiers
+0x1e0a22ee0  __DATA_CONST,__const  _MDItemPhotosPeoplePhoneNumbers
+0x1e0a22ed8  __DATA_CONST,__const  _MDItemPhotosPeopleTypes
+0x1e0a22ed0  __DATA_CONST,__const  _MDItemPhotosPhotographicStyles
+0x1e0a22ec8  __DATA_CONST,__const  _MDItemPhotosPrivateEncryptedComputeAnalysisVersion
+0x1e0a22ec0  __DATA_CONST,__const  _MDItemPhotosResultType
+0x1e0a22eb8  __DATA_CONST,__const  _MDItemPhotosSavedFromAppBundleIdentifier
+0x1e0a22eb0  __DATA_CONST,__const  _MDItemPhotosSavedFromAppName
+0x1e0a22ea8  __DATA_CONST,__const  _MDItemPhotosSceneAnalysisVersion
+0x1e0a22ea0  __DATA_CONST,__const  _MDItemPhotosSceneClassification
+0x1e0a22e98  __DATA_CONST,__const  _MDItemPhotosSceneClassificationAreas
+0x1e0a22e90  __DATA_CONST,__const  _MDItemPhotosSceneClassificationBoundingBoxes
+0x1e0a22e88  __DATA_CONST,__const  _MDItemPhotosSceneClassificationConfidences
+0x1e0a22e80  __DATA_CONST,__const  _MDItemPhotosSceneClassificationIdentifiers
+0x1e0a22e78  __DATA_CONST,__const  _MDItemPhotosSceneClassificationLabels
+0x1e0a22e70  __DATA_CONST,__const  _MDItemPhotosSceneClassificationLabelsIndex
+0x1e0a22e68  __DATA_CONST,__const  _MDItemPhotosSceneClassificationMediaTypes
+0x1e0a22e60  __DATA_CONST,__const  _MDItemPhotosSceneClassificationSynonyms
+0x1e0a22e58  __DATA_CONST,__const  _MDItemPhotosSceneClassificationSynonymsCounts
+0x1e0a22e50  __DATA_CONST,__const  _MDItemPhotosSceneClassificationSynonymsIndex
+0x1e0a22e48  __DATA_CONST,__const  _MDItemPhotosSceneClassificationTypedIdentifiers
+0x1e0a22e40  __DATA_CONST,__const  _MDItemPhotosSceneClassificationTypes
+0x1e0a22e38  __DATA_CONST,__const  _MDItemPhotosSceneIdentifiers
+0x1e0a22e30  __DATA_CONST,__const  _MDItemPhotosScenes
+0x1e0a22e28  __DATA_CONST,__const  _MDItemPhotosSeasons
+0x1e0a22e20  __DATA_CONST,__const  _MDItemPhotosSharedLibraryContributors
+0x1e0a22e18  __DATA_CONST,__const  _MDItemPhotosSharedLibraryContributorsContactIdentifiers
+0x1e0a22e10  __DATA_CONST,__const  _MDItemPhotosSharedLibraryContributorsNames
+0x1e0a22e08  __DATA_CONST,__const  _MDItemPhotosSharedLibraryContributorsNamesAlternatives
+0x1e0a22e00  __DATA_CONST,__const  _MDItemPhotosSharedLibraryContributorsNamesAlternativesCounts
+0x1e0a22df8  __DATA_CONST,__const  _MDItemPhotosSharedLibraryContributorsPersonIdentifiers
+0x1e0a22df0  __DATA_CONST,__const  _MDItemPhotosTimeZoneName
+0x1e0a22de8  __DATA_CONST,__const  _MDItemPhotosTimeZoneOffset
+0x1e0a22de0  __DATA_CONST,__const  _MDItemPhotosTitle
+0x1e0a22dd8  __DATA_CONST,__const  _MDItemPhotosUtilityTypes
+0x1e0a22dd0  __DATA_CONST,__const  _MDItemPhotosVideoEmbeddingVersion
+0x1e0a22dc8  __DATA_CONST,__const  _MDItemPixelCount
+0x1e0a22dc0  __DATA_CONST,__const  _MDItemPixelHeight
+0x1e0a22db8  __DATA_CONST,__const  _MDItemPixelWidth
+0x1e0a22db0  __DATA_CONST,__const  _MDItemPlace
+0x1e0a22da8  __DATA_CONST,__const  _MDItemPlayCount
+0x1e0a22da0  __DATA_CONST,__const  _MDItemPodcastName
+0x1e0a22d98  __DATA_CONST,__const  _MDItemPortraitFeatureVector
+0x1e0a22d90  __DATA_CONST,__const  _MDItemPortraitFeatureVectorVersion
+0x1e0a22d88  __DATA_CONST,__const  _MDItemPortraitNamedEntities
+0x1e0a22d80  __DATA_CONST,__const  _MDItemPortraitNamedEntityArray
+0x1e0a22d78  __DATA_CONST,__const  _MDItemPortraitNamedEntityScoreArray
+0x1e0a22d70  __DATA_CONST,__const  _MDItemPortraitStaticScore
+0x1e0a22d68  __DATA_CONST,__const  _MDItemPostalCode
+0x1e0a22d60  __DATA_CONST,__const  _MDItemPotentialEventMessage
+0x1e0a22d58  __DATA_CONST,__const  _MDItemPreExtractionIsPartial
+0x1e0a22d50  __DATA_CONST,__const  _MDItemPrimaryAccountNumberSuffix
+0x1e0a22d48  __DATA_CONST,__const  _MDItemPrimaryRecipientContactIdentifiers
+0x1e0a22d40  __DATA_CONST,__const  _MDItemPrimaryRecipientContactProperties
+0x1e0a22d38  __DATA_CONST,__const  _MDItemPrimaryRecipientEmailAddresses
+0x1e0a22d30  __DATA_CONST,__const  _MDItemPrimaryRecipientEmailAddressesLocalParts
+0x1e0a22d28  __DATA_CONST,__const  _MDItemPrimaryRecipientPersons
+0x1e0a22d20  __DATA_CONST,__const  _MDItemPrimaryRecipients
+0x1e0a22d18  __DATA_CONST,__const  _MDItemPrimaryRecipientsDictionary
+0x1e0a22d10  __DATA_CONST,__const  _MDItemPrimaryTextEmbedding
+0x1e0a22d08  __DATA_CONST,__const  _MDItemPrimaryTextEmbeddingVectorIds
+0x1e0a22d00  __DATA_CONST,__const  _MDItemPriorityStatus
+0x1e0a22cf8  __DATA_CONST,__const  _MDItemProducer
+0x1e0a22cf0  __DATA_CONST,__const  _MDItemProfileName
+0x1e0a22ce8  __DATA_CONST,__const  _MDItemProjects
+0x1e0a22ce0  __DATA_CONST,__const  _MDItemProtectionClass
+0x1e0a22cd8  __DATA_CONST,__const  _MDItemProviderDataTypes
+0x1e0a22cd0  __DATA_CONST,__const  _MDItemProviderFileTypes
+0x1e0a22cc8  __DATA_CONST,__const  _MDItemProviderInPlaceFileTypes
+0x1e0a22cc0  __DATA_CONST,__const  _MDItemPublishers
+0x1e0a22cb8  __DATA_CONST,__const  _MDItemPunchoutLabel
+0x1e0a22cb0  __DATA_CONST,__const  _MDItemPurchasedDate
+0x1e0a22ca8  __DATA_CONST,__const  _MDItemRankingHint
+0x1e0a22ca0  __DATA_CONST,__const  _MDItemRankingLaunchCountDay
+0x1e0a22c98  __DATA_CONST,__const  _MDItemRankingLaunchCountLast30Days
+0x1e0a22c90  __DATA_CONST,__const  _MDItemRankingLaunchCountLast7Days
+0x1e0a22c88  __DATA_CONST,__const  _MDItemRankingLaunchCountOld
+0x1e0a22c80  __DATA_CONST,__const  _MDItemRankingLaunchDates
+0x1e0a22c78  __DATA_CONST,__const  _MDItemRankingLaunchStrings
+0x1e0a22c70  __DATA_CONST,__const  _MDItemRatingDescription
+0x1e0a22c68  __DATA_CONST,__const  _MDItemReceivedDate
+0x1e0a22c60  __DATA_CONST,__const  _MDItemRecentAppSearchEngagementDates
+0x1e0a22c58  __DATA_CONST,__const  _MDItemRecentAppSearchEngagementQueries
+0x1e0a22c50  __DATA_CONST,__const  _MDItemRecentAppSearchEngagementRenderPositions
+0x1e0a22c48  __DATA_CONST,__const  _MDItemRecentOutOfSpotlightEngagementDates
+0x1e0a22c40  __DATA_CONST,__const  _MDItemRecentSpotlightEngagementDates
+0x1e0a22c38  __DATA_CONST,__const  _MDItemRecentSpotlightEngagementDatesNonUnique
+0x1e0a22c30  __DATA_CONST,__const  _MDItemRecentSpotlightEngagementQueries
+0x1e0a22c28  __DATA_CONST,__const  _MDItemRecentSpotlightEngagementQueriesNonUnique
+0x1e0a22c20  __DATA_CONST,__const  _MDItemRecentSpotlightEngagementRenderPositions
+0x1e0a22c18  __DATA_CONST,__const  _MDItemRecentSpotlightEngagementRenderPositionsNonUnique
+0x1e0a22c10  __DATA_CONST,__const  _MDItemRecipientAddresses
+0x1e0a22c08  __DATA_CONST,__const  _MDItemRecipientContactIdentifiers
+0x1e0a22c00  __DATA_CONST,__const  _MDItemRecipientEmailAddresses
+0x1e0a22bf8  __DATA_CONST,__const  _MDItemRecipientPhotosPersonIdentifiers
+0x1e0a22bf0  __DATA_CONST,__const  _MDItemRecipients
+0x1e0a22be8  __DATA_CONST,__const  _MDItemRecordingDate
+0x1e0a22be0  __DATA_CONST,__const  _MDItemRecordingYear
+0x1e0a22bd8  __DATA_CONST,__const  _MDItemRedEyeOnOff
+0x1e0a22bd0  __DATA_CONST,__const  _MDItemRelatedActivityLastLaunchDate
+0x1e0a22bc8  __DATA_CONST,__const  _MDItemRelatedActivityLaunchCount
+0x1e0a22bc0  __DATA_CONST,__const  _MDItemRelatedAppBundleIdentifier
+0x1e0a22bb8  __DATA_CONST,__const  _MDItemRelatedBundleID
+0x1e0a22bb0  __DATA_CONST,__const  _MDItemRelatedObjects
+0x1e0a22ba8  __DATA_CONST,__const  _MDItemRelatedUniqueIdentifier
+0x1e0a22ba0  __DATA_CONST,__const  _MDItemRelationship
+0x1e0a22b98  __DATA_CONST,__const  _MDItemReleasedDate
+0x1e0a22b90  __DATA_CONST,__const  _MDItemReminderFlagged
+0x1e0a22b88  __DATA_CONST,__const  _MDItemReminderRecurrenceRule
+0x1e0a22b80  __DATA_CONST,__const  _MDItemReminderRecurrenceRuleDaysOfTheWeek
+0x1e0a22b78  __DATA_CONST,__const  _MDItemReminderRecurring
+0x1e0a22b70  __DATA_CONST,__const  _MDItemReminderTime
+0x1e0a22b68  __DATA_CONST,__const  _MDItemReminderTimeHour
+0x1e0a22b60  __DATA_CONST,__const  _MDItemReminderTimeMinute
+0x1e0a22b58  __DATA_CONST,__const  _MDItemReminderTimeSecond
+0x1e0a22b50  __DATA_CONST,__const  _MDItemRemotePlaceholderBundleID
+0x1e0a22b48  __DATA_CONST,__const  _MDItemRenderValues
+0x1e0a22b40  __DATA_CONST,__const  _MDItemRequiresImport
+0x1e0a22b38  __DATA_CONST,__const  _MDItemRequiresMediaAnalysis
+0x1e0a22b30  __DATA_CONST,__const  _MDItemResolutionHeightDPI
+0x1e0a22b28  __DATA_CONST,__const  _MDItemResolutionWidthDPI
+0x1e0a22b20  __DATA_CONST,__const  _MDItemRichLinkID
+0x1e0a22b18  __DATA_CONST,__const  _MDItemRichLinkTitle
+0x1e0a22b10  __DATA_CONST,__const  _MDItemRichLinkURL
+0x1e0a22b08  __DATA_CONST,__const  _MDItemRights
+0x1e0a22b00  __DATA_CONST,__const  _MDItemRole
+0x1e0a22af8  __DATA_CONST,__const  _MDItemRoom
+0x1e0a22af0  __DATA_CONST,__const  _MDItemRunnableShortcutsAccessorySymbol
+0x1e0a22ae8  __DATA_CONST,__const  _MDItemRunnableShortcutsActionIdentifier
+0x1e0a22ae0  __DATA_CONST,__const  _MDItemRunnableShortcutsAssociatedSettingsPreference
+0x1e0a22ad8  __DATA_CONST,__const  _MDItemRunnableShortcutsBiomeStreamIdentifier
+0x1e0a22ad0  __DATA_CONST,__const  _MDItemRunnableShortcutsData
+0x1e0a22ac8  __DATA_CONST,__const  _MDItemRunnableShortcutsDisplayOrder
+0x1e0a22ac0  __DATA_CONST,__const  _MDItemRunnableShortcutsEntityThumbnailDisplayStyle
+0x1e0a22ab8  __DATA_CONST,__const  _MDItemRunnableShortcutsIneligibleForTopHit
+0x1e0a22ab0  __DATA_CONST,__const  _MDItemRunnableShortcutsIsAppShortcutTopHit
+0x1e0a22aa8  __DATA_CONST,__const  _MDItemRunnableShortcutsIsAppTopHitExclusive
+0x1e0a22aa0  __DATA_CONST,__const  _MDItemRunnableShortcutsLNPropertyIdentifier
+0x1e0a22a98  __DATA_CONST,__const  _MDItemRunnableShortcutsPrimaryPhrase
+0x1e0a22a90  __DATA_CONST,__const  _MDItemRunnableShortcutsTopHitBadge
+0x1e0a22a88  __DATA_CONST,__const  _MDItemSafariCloudTabDeviceName
+0x1e0a22a80  __DATA_CONST,__const  _MDItemSavingApplication
+0x1e0a22a78  __DATA_CONST,__const  _MDItemSavingApplicationBundleIdentifier
+0x1e0a22a70  __DATA_CONST,__const  _MDItemSecondaryTextEmbedding
+0x1e0a22a68  __DATA_CONST,__const  _MDItemSecondaryTextEmbeddingVectorIds
+0x1e0a22a60  __DATA_CONST,__const  _MDItemSecurityMethod
+0x1e0a22a58  __DATA_CONST,__const  _MDItemSentDate
+0x1e0a22a50  __DATA_CONST,__const  _MDItemSerialNumber
+0x1e0a22a48  __DATA_CONST,__const  _MDItemSharedItemContentType
+0x1e0a22a40  __DATA_CONST,__const  _MDItemSharedItemCurrentUserRole
+0x1e0a22a38  __DATA_CONST,__const  _MDItemShortcutAvailability
+0x1e0a22a30  __DATA_CONST,__const  _MDItemShortcutLastUsedDate
+0x1e0a22a28  __DATA_CONST,__const  _MDItemShortcutsToolIconData
+0x1e0a22a20  __DATA_CONST,__const  _MDItemShortcutsToolInvocation
+0x1e0a22a18  __DATA_CONST,__const  _MDItemShortcutsToolInvocationSummary
+0x1e0a22a10  __DATA_CONST,__const  _MDItemShortcutsToolType
+0x1e0a22a08  __DATA_CONST,__const  _MDItemSmartRepliesResponse
+0x1e0a22a00  __DATA_CONST,__const  _MDItemSmartRepliesStatus
+0x1e0a229f8  __DATA_CONST,__const  _MDItemSnippet
+0x1e0a229f0  __DATA_CONST,__const  _MDItemSpeed
+0x1e0a229e8  __DATA_CONST,__const  _MDItemStarRating
+0x1e0a229e0  __DATA_CONST,__const  _MDItemStartDate
+0x1e0a229d8  __DATA_CONST,__const  _MDItemStartDateTimeZone
+0x1e0a229d0  __DATA_CONST,__const  _MDItemStateOrProvince
+0x1e0a229c8  __DATA_CONST,__const  _MDItemStaticInterestScore
+0x1e0a229c0  __DATA_CONST,__const  _MDItemStreamable
+0x1e0a229b8  __DATA_CONST,__const  _MDItemSubItemCount
+0x1e0a229b0  __DATA_CONST,__const  _MDItemSubThoroughfare
+0x1e0a229a8  __DATA_CONST,__const  _MDItemSubject
+0x1e0a229a0  __DATA_CONST,__const  _MDItemSubtitle
+0x1e0a22998  __DATA_CONST,__const  _MDItemSuggestedInvocationPhrase
+0x1e0a22990  __DATA_CONST,__const  _MDItemSummarizationContentSynopsis
+0x1e0a22988  __DATA_CONST,__const  _MDItemSummarizationContentTopLine
+0x1e0a22980  __DATA_CONST,__const  _MDItemSummarizationContentTopic
+0x1e0a22978  __DATA_CONST,__const  _MDItemSummarizationStatus
+0x1e0a22970  __DATA_CONST,__const  _MDItemSummarizedIdentifiers
+0x1e0a22968  __DATA_CONST,__const  _MDItemSupportFileType
+0x1e0a22960  __DATA_CONST,__const  _MDItemSupportsNavigation
+0x1e0a22958  __DATA_CONST,__const  _MDItemSupportsPhoneCall
+0x1e0a22950  __DATA_CONST,__const  _MDItemSyndicatedContentServerDate
+0x1e0a22948  __DATA_CONST,__const  _MDItemSyndicationStatus
+0x1e0a22940  __DATA_CONST,__const  _MDItemTabStatus
+0x1e0a22938  __DATA_CONST,__const  _MDItemTapbackAssociatedMessageID
+0x1e0a22930  __DATA_CONST,__const  _MDItemTempo
+0x1e0a22928  __DATA_CONST,__const  _MDItemTextChunkTokenLength
+0x1e0a22920  __DATA_CONST,__const  _MDItemTextContent
+0x1e0a22918  __DATA_CONST,__const  _MDItemTextContentDataSource
+0x1e0a22910  __DATA_CONST,__const  _MDItemTextContentIndexExists
+0x1e0a22908  __DATA_CONST,__const  _MDItemTextContentLength
+0x1e0a22900  __DATA_CONST,__const  _MDItemTextContentSummary
+0x1e0a228f8  __DATA_CONST,__const  _MDItemTextSelected
+0x1e0a228f0  __DATA_CONST,__const  _MDItemTheme
+0x1e0a228e8  __DATA_CONST,__const  _MDItemThoroughfare
+0x1e0a228e0  __DATA_CONST,__const  _MDItemThreadIdentifier
+0x1e0a228d8  __DATA_CONST,__const  _MDItemThumbnailBundleID
+0x1e0a228d0  __DATA_CONST,__const  _MDItemThumbnailContentType
+0x1e0a228c8  __DATA_CONST,__const  _MDItemThumbnailData
+0x1e0a228c0  __DATA_CONST,__const  _MDItemThumbnailDataPath
+0x1e0a228b8  __DATA_CONST,__const  _MDItemThumbnailSymbolName
+0x1e0a228b0  __DATA_CONST,__const  _MDItemThumbnailURL
+0x1e0a228a8  __DATA_CONST,__const  _MDItemTimeCritical
+0x1e0a228a0  __DATA_CONST,__const  _MDItemTimeIsUnknown
+0x1e0a22898  __DATA_CONST,__const  _MDItemTimeSensitiveStatus
+0x1e0a22890  __DATA_CONST,__const  _MDItemTimeSignature
+0x1e0a22888  __DATA_CONST,__const  _MDItemTimestamp
+0x1e0a22880  __DATA_CONST,__const  _MDItemTitle
+0x1e0a22878  __DATA_CONST,__const  _MDItemTopic
+0x1e0a22870  __DATA_CONST,__const  _MDItemTotalBitRate
+0x1e0a22868  __DATA_CONST,__const  _MDItemTriggerState
+0x1e0a22860  __DATA_CONST,__const  _MDItemURL
+0x1e0a22858  __DATA_CONST,__const  _MDItemURLDescription
+0x1e0a22850  __DATA_CONST,__const  _MDItemUniqueIdentifier
+0x1e0a22848  __DATA_CONST,__const  _MDItemUploadError
+0x1e0a22840  __DATA_CONST,__const  _MDItemUrgencyStatus
+0x1e0a22838  __DATA_CONST,__const  _MDItemUseCount
+0x1e0a22830  __DATA_CONST,__const  _MDItemUsedDates
+0x1e0a22828  __DATA_CONST,__const  _MDItemUserActivityData
+0x1e0a22820  __DATA_CONST,__const  _MDItemUserActivityEligibleForPublicIndexing
+0x1e0a22818  __DATA_CONST,__const  _MDItemUserActivityEligibleForSearch
+0x1e0a22810  __DATA_CONST,__const  _MDItemUserActivityRequiredString
+0x1e0a22808  __DATA_CONST,__const  _MDItemUserActivityType
+0x1e0a22800  __DATA_CONST,__const  _MDItemUserCreated
+0x1e0a227f8  __DATA_CONST,__const  _MDItemUserCreatedDate
+0x1e0a227f0  __DATA_CONST,__const  _MDItemUserCreatedUserHandle
+0x1e0a227e8  __DATA_CONST,__const  _MDItemUserCurated
+0x1e0a227e0  __DATA_CONST,__const  _MDItemUserDownloadedDate
+0x1e0a227d8  __DATA_CONST,__const  _MDItemUserDownloadedUserHandle
+0x1e0a227d0  __DATA_CONST,__const  _MDItemUserHidden
+0x1e0a227c8  __DATA_CONST,__const  _MDItemUserModifiedDate
+0x1e0a227c0  __DATA_CONST,__const  _MDItemUserModifiedUserHandle
+0x1e0a227b8  __DATA_CONST,__const  _MDItemUserOwned
+0x1e0a227b0  __DATA_CONST,__const  _MDItemUserPrintedDate
+0x1e0a227a8  __DATA_CONST,__const  _MDItemUserPrintedUserHandle
+0x1e0a227a0  __DATA_CONST,__const  _MDItemUserPrivate
+0x1e0a22798  __DATA_CONST,__const  _MDItemUserSharedReceivedDate
+0x1e0a22790  __DATA_CONST,__const  _MDItemUserSharedReceivedRecipient
+0x1e0a22788  __DATA_CONST,__const  _MDItemUserSharedReceivedRecipientHandle
+0x1e0a22780  __DATA_CONST,__const  _MDItemUserSharedReceivedSender
+0x1e0a22778  __DATA_CONST,__const  _MDItemUserSharedReceivedSenderHandle
+0x1e0a22770  __DATA_CONST,__const  _MDItemUserSharedReceivedTransport
+0x1e0a22768  __DATA_CONST,__const  _MDItemUserSharedSentDate
+0x1e0a22760  __DATA_CONST,__const  _MDItemUserSharedSentRecipient
+0x1e0a22758  __DATA_CONST,__const  _MDItemUserSharedSentRecipientHandle
+0x1e0a22750  __DATA_CONST,__const  _MDItemUserSharedSentSender
+0x1e0a22748  __DATA_CONST,__const  _MDItemUserSharedSentSenderHandle
+0x1e0a22740  __DATA_CONST,__const  _MDItemUserSharedSentTransport
+0x1e0a22738  __DATA_CONST,__const  _MDItemUserTags
+0x1e0a22730  __DATA_CONST,__const  _MDItemVIPSender
+0x1e0a22728  __DATA_CONST,__const  _MDItemVendorName
+0x1e0a22720  __DATA_CONST,__const  _MDItemVersion
+0x1e0a22718  __DATA_CONST,__const  _MDItemVersionIdentifier
+0x1e0a22710  __DATA_CONST,__const  _MDItemVideoBitRate
+0x1e0a22708  __DATA_CONST,__const  _MDItemVisualAssetPriority
+0x1e0a22700  __DATA_CONST,__const  _MDItemWeakRelatedUniqueIdentifier
+0x1e0a226f8  __DATA_CONST,__const  _MDItemWhereFroms
+0x1e0a226f0  __DATA_CONST,__const  _MDItemWhiteBalance
+0x1e0a226e8  __DATA_CONST,__const  _MDItemWindowProcessIdentifier
+0x1e0a226e0  __DATA_CONST,__const  _MDItemWindowProcessIdentifierVersion
+0x1e0a226d8  __DATA_CONST,__const  _MDItemWorkAddresses
+0x1e0a226d0  __DATA_CONST,__const  _MDItemXMPCredit
+0x1e0a226c8  __DATA_CONST,__const  _MDItemXMPDigitalSourceType
+0x1e0a226c0  __DATA_CONST,__const  _MDLoopsKeyFilterTypeAnyKey
+0x1e0a226b8  __DATA_CONST,__const  _MDLoopsKeyFilterTypeBothKeys
+0x1e0a226b0  __DATA_CONST,__const  _MDLoopsKeyFilterTypeMajor
+0x1e0a226a8  __DATA_CONST,__const  _MDLoopsKeyFilterTypeMinor
+0x1e0a226a0  __DATA_CONST,__const  _MDLoopsKeyFilterTypeNeitherKey
+0x1e0a22698  __DATA_CONST,__const  _MDLoopsModeLooping
+0x1e0a22690  __DATA_CONST,__const  _MDLoopsModeNonLooping
+0x1e0a22688  __DATA_CONST,__const  _MDMailAttachmentKinds
+0x1e0a22680  __DATA_CONST,__const  _MDMailAttachmentNames
+0x1e0a22678  __DATA_CONST,__const  _MDMailAttachmentTypes
+0x1e0a22670  __DATA_CONST,__const  _MDMailCategory
+0x1e0a22668  __DATA_CONST,__const  _MDMailConversationID
+0x1e0a22660  __DATA_CONST,__const  _MDMailDateLastViewed
+0x1e0a22658  __DATA_CONST,__const  _MDMailDateReceived
+0x1e0a22650  __DATA_CONST,__const  _MDMailFlagColor
+0x1e0a22648  __DATA_CONST,__const  _MDMailFlagged
+0x1e0a22640  __DATA_CONST,__const  _MDMailGMailLabels
+0x1e0a22638  __DATA_CONST,__const  _MDMailMessageAutoReplied
+0x1e0a22630  __DATA_CONST,__const  _MDMailMessageHasDistributionListInCC
+0x1e0a22628  __DATA_CONST,__const  _MDMailMessageHasDistributionListInTo
+0x1e0a22620  __DATA_CONST,__const  _MDMailMessageHeader
+0x1e0a22618  __DATA_CONST,__const  _MDMailMessageID
+0x1e0a22610  __DATA_CONST,__const  _MDMailPriority
+0x1e0a22608  __DATA_CONST,__const  _MDMailRead
+0x1e0a22600  __DATA_CONST,__const  _MDMailRepliedTo
+0x1e0a225f8  __DATA_CONST,__const  _MDMailboxArchive
+0x1e0a225f0  __DATA_CONST,__const  _MDMailboxDrafts
+0x1e0a225e8  __DATA_CONST,__const  _MDMailboxInbox
+0x1e0a225e0  __DATA_CONST,__const  _MDMailboxJunk
+0x1e0a225d8  __DATA_CONST,__const  _MDMailboxSent
+0x1e0a225d0  __DATA_CONST,__const  _MDMailboxTrash
+0x1e0a225c8  __DATA_CONST,__const  _MDMessageGroupPhotoPath
+0x1e0a225c0  __DATA_CONST,__const  _MDMessageIndexType
+0x1e0a225b8  __DATA_CONST,__const  _MDMessageIsBusinessChat
+0x1e0a225b0  __DATA_CONST,__const  _MDMessageIsFromMe
+0x1e0a225a8  __DATA_CONST,__const  _MDMessageLpDescription
+0x1e0a225a0  __DATA_CONST,__const  _MDMessageLpTitle
+0x1e0a22598  __DATA_CONST,__const  _MDMessageSuggestedContactName
+0x1e0a22590  __DATA_CONST,__const  _MDMessageSuggestedContactPhotoPath
+0x1e0a22588  __DATA_CONST,__const  _MDMeteringModeAverage
+0x1e0a22580  __DATA_CONST,__const  _MDMeteringModeCenterWeightedAverage
+0x1e0a22578  __DATA_CONST,__const  _MDMeteringModeMultiSpot
+0x1e0a22570  __DATA_CONST,__const  _MDMeteringModePartial
+0x1e0a22568  __DATA_CONST,__const  _MDMeteringModePattern
+0x1e0a22560  __DATA_CONST,__const  _MDMeteringModeSpot
+0x1e0a22558  __DATA_CONST,__const  _MDMeteringModeUnknown
+0x1e0a22550  __DATA_CONST,__const  _MDQueryResultEmbeddingDistances
+0x1e0a22548  __DATA_CONST,__const  _MDQueryResultEmbeddingVectorIds
+0x1e0a22540  __DATA_CONST,__const  _MDQueryResultInstantAnswers
+0x1e0a22538  __DATA_CONST,__const  _MDQueryResultMatchedFields
+0x1e0a22530  __DATA_CONST,__const  _MDQueryResultMatchingAttributes
+0x1e0a22528  __DATA_CONST,__const  _MDQueryResultMatchingHints
+0x1e0a22520  __DATA_CONST,__const  _MDQueryResultMatchingSceneIdentifiers
+0x1e0a22518  __DATA_CONST,__const  _MDQueryResultMenuRelevance
+0x1e0a22510  __DATA_CONST,__const  _MDQueryResultNewMatchedExtraQueriesField
+0x1e0a22508  __DATA_CONST,__const  _MDQueryResultRelevance
+0x1e0a22500  __DATA_CONST,__const  _MDQueryResultRetrievalType
+0x1e0a224f8  __DATA_CONST,__const  _MDQueryResultScoreL1
+0x1e0a224f0  __DATA_CONST,__const  _MDQueryResultScoreL2
+0x1e0a224e8  __DATA_CONST,__const  _MDQueryResultTextContentMatch
+0x1e0a224e0  __DATA_CONST,__const  _MDQueryResultTopMatchedField
+0x1e0a224d8  __DATA_CONST,__const  _MDRelatedUniqueIdentifier
+0x1e0a224d0  __DATA_CONST,__const  _MDSearchQueryErrorDomain
+0x1e0a224c8  __DATA_CONST,__const  _MDSearchQueryOptionFetchAttributes
+0x1e0a224c0  __DATA_CONST,__const  _MDSearchQueryOptionGrouped
+0x1e0a224b8  __DATA_CONST,__const  _MDSearchQueryOptionMaxCount
+0x1e0a224b0  __DATA_CONST,__const  _MDSearchQueryOptionRankingQueries
+0x1e0a224a8  __DATA_CONST,__const  _MDSearchableWebsiteSourcePageURL
+0x1e0a224a0  __DATA_CONST,__const  _MDSearchableWebsiteTopDomain
+0x1e0a22498  __DATA_CONST,__const  _MDToolInvocationData
+0x1e0a22490  __DATA_CONST,__const  _MDToolInvocationSummaryData
+0x18ef41c04  __TEXT,__text  _MurmurHash3_128
+0x1ef585de0  __AUTH,__objc_data  _OBJC_CLASS_$_CSAbsoluteDatePredicate
+0x1ef589bc0  __AUTH,__objc_data  _OBJC_CLASS_$_CSAddressTag
+0x1ef5895d0  __AUTH,__objc_data  _OBJC_CLASS_$_CSAgenticQueryValidator
+0x1ef5895a8  __AUTH,__objc_data  _OBJC_CLASS_$_CSAgenticRankingParser
+0x1ef589580  __AUTH,__objc_data  _OBJC_CLASS_$_CSAgenticRankingResponse
+0x1ee140ef8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSAttributeEvaluator
+0x1ef589558  __AUTH,__objc_data  _OBJC_CLASS_$_CSAttributeHelp
+0x1ef58a700  __AUTH,__objc_data  _OBJC_CLASS_$_CSAttributedQuery
+0x1ef589530  __AUTH,__objc_data  _OBJC_CLASS_$_CSAttributesContent
+0x1ef585db8  __AUTH,__objc_data  _OBJC_CLASS_$_CSAuthorPredicate
+0x1ef58a6d8  __AUTH,__objc_data  _OBJC_CLASS_$_CSAutocompleteContactsWrapper
+0x1ef585d90  __AUTH,__objc_data  _OBJC_CLASS_$_CSBooleanPredicate
+0x1ef58ad40  __AUTH,__objc_data  _OBJC_CLASS_$_CSBundleFilterAttributeBackfillGroup
+0x1ef58ad90  __AUTH,__objc_data  _OBJC_CLASS_$_CSBundleFilterAttributeBackfillResult
+0x1ef58ae30  __AUTH,__objc_data  _OBJC_CLASS_$_CSBundleFilterEvaluationReply
+0x1ef58ade0  __AUTH,__objc_data  _OBJC_CLASS_$_CSBundleFilterEvaluationRequest
+0x1ef58acf0  __AUTH,__objc_data  _OBJC_CLASS_$_CSBundleFilterFileProviderContainerGroup
+0x1ee141970  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSCoder
+0x1ef585d68  __AUTH,__objc_data  _OBJC_CLASS_$_CSComponentDatePredicate
+0x1ef585d40  __AUTH,__objc_data  _OBJC_CLASS_$_CSCompoundPredicate
+0x1ee140fe8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSContactsWrapper
+0x1ef585d18  __AUTH,__objc_data  _OBJC_CLASS_$_CSContentTypePredicate
+0x1ef589990  __AUTH,__objc_data  _OBJC_CLASS_$_CSCurrencyTag
+0x1ee1414c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSCustomAttributeKey
+0x1ee1418a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSDataWrapper
+0x1ef589508  __AUTH,__objc_data  _OBJC_CLASS_$_CSDateExpressionsContent
+0x1ef585cf0  __AUTH,__objc_data  _OBJC_CLASS_$_CSDatePredicate
+0x1ef589968  __AUTH,__objc_data  _OBJC_CLASS_$_CSDateTag
+0x1ee141588  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSDecoder
+0x1ef5894e0  __AUTH,__objc_data  _OBJC_CLASS_$_CSDenseCandidateQueue
+0x1ef5894b8  __AUTH,__objc_data  _OBJC_CLASS_$_CSDescribeAttributeQuery
+0x1ef589490  __AUTH,__objc_data  _OBJC_CLASS_$_CSDescribeContentTypeQuery
+0x1ef589468  __AUTH,__objc_data  _OBJC_CLASS_$_CSDescribeSchemaQuery
+0x1ee141858  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSDeviceListener
+0x1ef58a2f0  __AUTH,__objc_data  _OBJC_CLASS_$_CSDocumentUnderstandingCategory
+0x1ef58a2c8  __AUTH,__objc_data  _OBJC_CLASS_$_CSDocumentUnderstandingTopic
+0x1ee140f48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSDonationProgress
+0x1ef589940  __AUTH,__objc_data  _OBJC_CLASS_$_CSDonationProgressFailure
+0x1ef58a6b0  __AUTH,__objc_data  _OBJC_CLASS_$_CSDonationProgressQueryResult
+0x1ef589918  __AUTH,__objc_data  _OBJC_CLASS_$_CSEmailAddressTag
+0x1ef589440  __AUTH,__objc_data  _OBJC_CLASS_$_CSExamplesContent
+0x1ef58a688  __AUTH,__objc_data  _OBJC_CLASS_$_CSExtensionJobThrottle
+0x1ee141218  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSExtension_PKSubsystem
+0x1ee140a48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSExternalAnalysisTag
+0x1ee140a20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSFPItem
+0x1ef58a2a0  __AUTH,__objc_data  _OBJC_CLASS_$_CSFieldSpecification
+0x1ef58ab10  __AUTH,__objc_data  _OBJC_CLASS_$_CSFileProviderContainerCache
+0x1ef58a278  __AUTH,__objc_data  _OBJC_CLASS_$_CSFileProviderDomainMonitor
+0x1ef58acc8  __AUTH,__objc_data  _OBJC_CLASS_$_CSFileURLBatchResult
+0x1ef5898f0  __AUTH,__objc_data  _OBJC_CLASS_$_CSFlightTag
+0x1ee141790  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSGenerativeModelsAvailabilityManager
+0x1ef589418  __AUTH,__objc_data  _OBJC_CLASS_$_CSGenericContent
+0x1ef58aae8  __AUTH,__objc_data  _OBJC_CLASS_$_CSHashtagQuery
+0x1ef5893f0  __AUTH,__objc_data  _OBJC_CLASS_$_CSHelpContent
+0x1ef5893c8  __AUTH,__objc_data  _OBJC_CLASS_$_CSHelpNextStep
+0x1ef5893a0  __AUTH,__objc_data  _OBJC_CLASS_$_CSHelpQueryType
+0x1ef589378  __AUTH,__objc_data  _OBJC_CLASS_$_CSHelpSection
+0x1ef589350  __AUTH,__objc_data  _OBJC_CLASS_$_CSHelpSectionContent
+0x1ef589328  __AUTH,__objc_data  _OBJC_CLASS_$_CSHelpTopicQuery
+0x1ef589b98  __AUTH,__objc_data  _OBJC_CLASS_$_CSIdentifierCodedArray
+0x1ee1409f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSImportExtension
+0x1ee141a38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSIndexConnection
+0x1ee141510  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSIndexDelegateConnection
+0x1ee140fc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSIndexExtensionRequestHandler
+0x1ee141308  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSIndexJob
+0x1ef589b70  __AUTH,__objc_data  _OBJC_CLASS_$_CSIndexingPipelineOverallCompleteness
+0x1ef589b48  __AUTH,__objc_data  _OBJC_CLASS_$_CSIndexingPipelineOverallCompletenessForBundle
+0x1ee1411f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSIndexingQueue
+0x1ee1415d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSInlineDonation
+0x1ee140cc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSInstantAnswers
+0x1ef58a250  __AUTH,__objc_data  _OBJC_CLASS_$_CSIntentsWrapper
+0x1ef589300  __AUTH,__objc_data  _OBJC_CLASS_$_CSInternalSearchableIndex
+0x1ef58aca0  __AUTH,__objc_data  _OBJC_CLASS_$_CSItemSummary
+0x1ef585cc8  __AUTH,__objc_data  _OBJC_CLASS_$_CSKeywordsPredicate
+0x1ef58aac0  __AUTH,__objc_data  _OBJC_CLASS_$_CSL1CandidateQueue
+0x1ef58a228  __AUTH,__objc_data  _OBJC_CLASS_$_CSLifeFSConnection
+0x1ef589b20  __AUTH,__objc_data  _OBJC_CLASS_$_CSLinkTag
+0x1ef58a200  __AUTH,__objc_data  _OBJC_CLASS_$_CSLiveFSVolume
+0x1ee140db8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSLocaleObserver
+0x1ee1413f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSLocalizedString
+0x1ef5892d8  __AUTH,__objc_data  _OBJC_CLASS_$_CSLocationTag
+0x1ef5892b0  __AUTH,__objc_data  _OBJC_CLASS_$_CSManagedIndexConnection
+0x1ef589288  __AUTH,__objc_data  _OBJC_CLASS_$_CSManagedSearchConnection
+0x1ee141498  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSManagedSearchQuery
+0x1ef589260  __AUTH,__objc_data  _OBJC_CLASS_$_CSManagedSearchableIndex
+0x1ef589238  __AUTH,__objc_data  _OBJC_CLASS_$_CSManagedUserQuery
+0x1ef589210  __AUTH,__objc_data  _OBJC_CLASS_$_CSMockSearchableIndex
+0x1ef585ca0  __AUTH,__objc_data  _OBJC_CLASS_$_CSNumberPredicate
+0x1ef5898c8  __AUTH,__objc_data  _OBJC_CLASS_$_CSNumericAnalysisTag
+0x1ef58a660  __AUTH,__objc_data  _OBJC_CLASS_$_CSOCRTextLine
+0x1ef5891e8  __AUTH,__objc_data  _OBJC_CLASS_$_CSOperatorCategory
+0x1ef5891c0  __AUTH,__objc_data  _OBJC_CLASS_$_CSOperatorHelp
+0x1ef589198  __AUTH,__objc_data  _OBJC_CLASS_$_CSOperatorInfo
+0x1ef589170  __AUTH,__objc_data  _OBJC_CLASS_$_CSOperatorsContent
+0x1ee141268  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSPerson
+0x1ef585c78  __AUTH,__objc_data  _OBJC_CLASS_$_CSPersonPredicate
+0x1ef58a638  __AUTH,__objc_data  _OBJC_CLASS_$_CSPersonalAnswers
+0x1ef589148  __AUTH,__objc_data  _OBJC_CLASS_$_CSPersonalAnswersUtils
+0x1ef5898a0  __AUTH,__objc_data  _OBJC_CLASS_$_CSPhoneNumberTag
+0x1ef58a1d8  __AUTH,__objc_data  _OBJC_CLASS_$_CSPipelineCompletenessReport
+0x1ef589af8  __AUTH,__objc_data  _OBJC_CLASS_$_CSPipelineCompletenessReportStorage
+0x1ef589120  __AUTH,__objc_data  _OBJC_CLASS_$_CSPipelineContent
+0x1ee141330  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSPlace
+0x1ef585c50  __AUTH,__objc_data  _OBJC_CLASS_$_CSPommesQueryCandidateEvaluator
+0x1ef589ad0  __AUTH,__objc_data  _OBJC_CLASS_$_CSPowerHUD
+0x1ee1418f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSPowerLog
+0x1ef58aa98  __AUTH,__objc_data  _OBJC_CLASS_$_CSPrivateIndexConnection
+0x1ef58a1b0  __AUTH,__objc_data  _OBJC_CLASS_$_CSPrivateSearchConnection
+0x1ef58a188  __AUTH,__objc_data  _OBJC_CLASS_$_CSPrivateSearchQuery
+0x1ee1417e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSPrivateSearchableIndex
+0x1ef5890f8  __AUTH,__objc_data  _OBJC_CLASS_$_CSPrivateUserQuery
+0x1ef5890d0  __AUTH,__objc_data  _OBJC_CLASS_$_CSQueryMetadata
+0x1ef585c28  __AUTH,__objc_data  _OBJC_CLASS_$_CSQueryNode
+0x1ef585c00  __AUTH,__objc_data  _OBJC_CLASS_$_CSQueryNodeConfiguration
+0x1ef585bd8  __AUTH,__objc_data  _OBJC_CLASS_$_CSQueryPredicate
+0x1ee140ca0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSQueryResultMatchingHint
+0x1ef585bb0  __AUTH,__objc_data  _OBJC_CLASS_$_CSRangeDatePredicate
+0x1ef5890a8  __AUTH,__objc_data  _OBJC_CLASS_$_CSRankingContent
+0x1ef585b88  __AUTH,__objc_data  _OBJC_CLASS_$_CSRankingModelQueryCandidateEvaluator
+0x1ef58aa70  __AUTH,__objc_data  _OBJC_CLASS_$_CSReceiverPreferences
+0x1ee140b38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSReceiverServerPreferences
+0x1ef585b60  __AUTH,__objc_data  _OBJC_CLASS_$_CSRecipientPredicate
+0x1ee141718  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSRecurrenceRule
+0x1ee1418d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSRequestQueue
+0x1ef58aa48  __AUTH,__objc_data  _OBJC_CLASS_$_CSSceneClassification
+0x1ee1416a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSSearchConnection
+0x1ee141060  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSSearchContext
+0x1ee141678  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSSearchQuery
+0x1ee141650  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSSearchQueryContext
+0x1ee141b50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSSearchableIndex
+0x1ef589878  __AUTH,__objc_data  _OBJC_CLASS_$_CSSearchableIndexDescription
+0x1ee1419e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSSearchableIndexRequest
+0x1ee141b28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSSearchableItem
+0x1ee141a88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSSearchableItemAttributeSet
+0x1ee140d18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSSearchableItemCodedArray
+0x1ef585b38  __AUTH,__objc_data  _OBJC_CLASS_$_CSSenderPredicate
+0x1ef585b10  __AUTH,__objc_data  _OBJC_CLASS_$_CSSimilarityPredicate
+0x1ef589080  __AUTH,__objc_data  _OBJC_CLASS_$_CSSmartQueriesContent
+0x1ef589850  __AUTH,__objc_data  _OBJC_CLASS_$_CSSmartRepliesResponse
+0x1ef589828  __AUTH,__objc_data  _OBJC_CLASS_$_CSSmartReply
+0x1ef585ae8  __AUTH,__objc_data  _OBJC_CLASS_$_CSStringPredicate
+0x1ef589058  __AUTH,__objc_data  _OBJC_CLASS_$_CSStructuredAttributeInfo
+0x1ef589030  __AUTH,__objc_data  _OBJC_CLASS_$_CSStructuredHelpContent
+0x1ef589008  __AUTH,__objc_data  _OBJC_CLASS_$_CSStructuredHelpExample
+0x1ef588fe0  __AUTH,__objc_data  _OBJC_CLASS_$_CSStructuredHelpResult
+0x1ef585ac0  __AUTH,__objc_data  _OBJC_CLASS_$_CSStructuredQuery
+0x1ef585a98  __AUTH,__objc_data  _OBJC_CLASS_$_CSStructuredQueryContext
+0x1ef588fb8  __AUTH,__objc_data  _OBJC_CLASS_$_CSStructuredSchemaResult
+0x1ef58a610  __AUTH,__objc_data  _OBJC_CLASS_$_CSSubscriptionManager
+0x1ee140e80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSSuggestion
+0x1ee140c78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSSuggestionsRanker
+0x1ef588f90  __AUTH,__objc_data  _OBJC_CLASS_$_CSTemporalHelp
+0x1ef588f68  __AUTH,__objc_data  _OBJC_CLASS_$_CSTestIndexConnection
+0x1ef588f40  __AUTH,__objc_data  _OBJC_CLASS_$_CSTestIndexDelegateConnection
+0x1ef588f18  __AUTH,__objc_data  _OBJC_CLASS_$_CSTestSearchQuery
+0x1ef588ef0  __AUTH,__objc_data  _OBJC_CLASS_$_CSTestSearchableIndex
+0x1ef58a160  __AUTH,__objc_data  _OBJC_CLASS_$_CSTokenScopeParser
+0x1ef58ac78  __AUTH,__objc_data  _OBJC_CLASS_$_CSTopHitQuery
+0x1ef58ac50  __AUTH,__objc_data  _OBJC_CLASS_$_CSTopHitQueryContext
+0x1ef58aa20  __AUTH,__objc_data  _OBJC_CLASS_$_CSTopHitResult
+0x1ee1409d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSTopHitSearchQuery
+0x1ef589800  __AUTH,__objc_data  _OBJC_CLASS_$_CSTrackingNumberTag
+0x1ef5897d8  __AUTH,__objc_data  _OBJC_CLASS_$_CSUnhousedIndexConnection
+0x1ef588ec8  __AUTH,__objc_data  _OBJC_CLASS_$_CSUnhousedSearchConnection
+0x1ee141470  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSUnhousedSearchQuery
+0x1ee1416f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSUnhousedSearchableIndex
+0x1ef588ea0  __AUTH,__objc_data  _OBJC_CLASS_$_CSUnhousedUserQuery
+0x1ee1412b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSUserAction
+0x1ee1411c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSUserActivityTuple
+0x1ee1413d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSUserQuery
+0x1ee140e08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSUserQueryContext
+0x1ee140e58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSUserQueryParser
+0x1ee1409a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSUserQueryRankingConfiguration
+0x1ef585a70  __AUTH,__objc_data  _OBJC_CLASS_$_CSWindowDatePredicate
+0x1ee141ad8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CSXPCConnection
+0x1ee140b10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CoreSpotlightPreferences
+0x1ee1411a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CoreSpotlightUtils
+0x1ef58a138  __AUTH,__objc_data  _OBJC_CLASS_$_MDCustomAttributeKey
+0x1ef58a110  __AUTH,__objc_data  _OBJC_CLASS_$_MDIndexExtensionRequestHandler
+0x1ef58a0e8  __AUTH,__objc_data  _OBJC_CLASS_$_MDLocalizedString
+0x1ef58a0c0  __AUTH,__objc_data  _OBJC_CLASS_$_MDPerson
+0x1ef58a9f8  __AUTH,__objc_data  _OBJC_CLASS_$_MDSearchQuery
+0x1ef58a098  __AUTH,__objc_data  _OBJC_CLASS_$_MDSearchableIndex
+0x1ef58a070  __AUTH,__objc_data  _OBJC_CLASS_$_MDSearchableItem
+0x1ef58a048  __AUTH,__objc_data  _OBJC_CLASS_$_MDSearchableItemAttributeSet
+0x1ef58a020  __AUTH,__objc_data  _OBJC_CLASS_$_MDUserAction
+0x1ef588e78  __AUTH,__objc_data  _OBJC_CLASS_$_OperatorInfoPair
+0x1ee140c50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_TokenEnumeratorContext
+0x1ef58a9d0  __AUTH,__objc_data  _OBJC_CLASS_$_TopHitResult
+0x1ef588e50  __AUTH,__objc_data  _OBJC_CLASS_$__CSAbsWord
+0x1ef588e28  __AUTH,__objc_data  _OBJC_CLASS_$__CSAddWord
+0x1ef588e00  __AUTH,__objc_data  _OBJC_CLASS_$__CSAgenticQuery
+0x1ef588dd8  __AUTH,__objc_data  _OBJC_CLASS_$__CSAgenticQueryConfiguration
+0x1ef588db0  __AUTH,__objc_data  _OBJC_CLASS_$__CSAgenticQueryParser
+0x1ef588d88  __AUTH,__objc_data  _OBJC_CLASS_$__CSAgenticQueryTypeMappings
+0x1ef588d60  __AUTH,__objc_data  _OBJC_CLASS_$__CSAgenticQueryValidator
+0x1ef588d38  __AUTH,__objc_data  _OBJC_CLASS_$__CSAgenticResponse
+0x1ef588d10  __AUTH,__objc_data  _OBJC_CLASS_$__CSAndWord
+0x1ef588ce8  __AUTH,__objc_data  _OBJC_CLASS_$__CSAnnQueryPredicate
+0x1ef588cc0  __AUTH,__objc_data  _OBJC_CLASS_$__CSApplicationRegistry
+0x1ef588c98  __AUTH,__objc_data  _OBJC_CLASS_$__CSAttributeResolver
+0x1ef588c70  __AUTH,__objc_data  _OBJC_CLASS_$__CSAuthorPredicate
+0x1ef588c48  __AUTH,__objc_data  _OBJC_CLASS_$__CSBooleanPredicate
+0x1ef588c20  __AUTH,__objc_data  _OBJC_CLASS_$__CSComputeStage
+0x1ef588bf8  __AUTH,__objc_data  _OBJC_CLASS_$__CSConcatWord
+0x1ef58a5e8  __AUTH,__objc_data  _OBJC_CLASS_$__CSContactSearch
+0x1ef58a5c0  __AUTH,__objc_data  _OBJC_CLASS_$__CSContactSearchResult
+0x1ef588bd0  __AUTH,__objc_data  _OBJC_CLASS_$__CSContentTypeFilter
+0x1ef588ba8  __AUTH,__objc_data  _OBJC_CLASS_$__CSContentTypePredicate
+0x1ef588b80  __AUTH,__objc_data  _OBJC_CLASS_$__CSCountStage
+0x1ef588b58  __AUTH,__objc_data  _OBJC_CLASS_$__CSCustomStage
+0x1ef588b30  __AUTH,__objc_data  _OBJC_CLASS_$__CSDateExprRangePredicate
+0x1ef588b08  __AUTH,__objc_data  _OBJC_CLASS_$__CSDateExpressionParser
+0x1ef588ae0  __AUTH,__objc_data  _OBJC_CLASS_$__CSDatePredicate
+0x1ef588ab8  __AUTH,__objc_data  _OBJC_CLASS_$__CSDayOfWeekWord
+0x1ef588a90  __AUTH,__objc_data  _OBJC_CLASS_$__CSDayWord
+0x1ef588a68  __AUTH,__objc_data  _OBJC_CLASS_$__CSDivideWord
+0x1ef588a40  __AUTH,__objc_data  _OBJC_CLASS_$__CSDupWord
+0x1ee140c28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CSEmbedding
+0x1ef588a18  __AUTH,__objc_data  _OBJC_CLASS_$__CSEqualWord
+0x1ef5889f0  __AUTH,__objc_data  _OBJC_CLASS_$__CSExecutionPlan
+0x1ef5889c8  __AUTH,__objc_data  _OBJC_CLASS_$__CSExtractGroupItemsStage
+0x1ef5889a0  __AUTH,__objc_data  _OBJC_CLASS_$__CSFetchAttributeIntrospector
+0x1ef588978  __AUTH,__objc_data  _OBJC_CLASS_$__CSFilterStage
+0x1ef588950  __AUTH,__objc_data  _OBJC_CLASS_$__CSFloorWord
+0x1ef588928  __AUTH,__objc_data  _OBJC_CLASS_$__CSForEachStage
+0x1ef588900  __AUTH,__objc_data  _OBJC_CLASS_$__CSForthInterpreter
+0x1ef5888d8  __AUTH,__objc_data  _OBJC_CLASS_$__CSForthValue
+0x1ef5888b0  __AUTH,__objc_data  _OBJC_CLASS_$__CSGreaterThanOrEqualWord
+0x1ef588888  __AUTH,__objc_data  _OBJC_CLASS_$__CSGreaterThanWord
+0x1ef588860  __AUTH,__objc_data  _OBJC_CLASS_$__CSGroupByStage
+0x1ef588838  __AUTH,__objc_data  _OBJC_CLASS_$__CSHelpResponse
+0x1ef588810  __AUTH,__objc_data  _OBJC_CLASS_$__CSHelpTopicPayload
+0x1ef5887e8  __AUTH,__objc_data  _OBJC_CLASS_$__CSHourWord
+0x1ef5887c0  __AUTH,__objc_data  _OBJC_CLASS_$__CSHydrationConfiguration
+0x1ef588798  __AUTH,__objc_data  _OBJC_CLASS_$__CSHydrationItem
+0x1ef588770  __AUTH,__objc_data  _OBJC_CLASS_$__CSHydrationRequest
+0x1ef588748  __AUTH,__objc_data  _OBJC_CLASS_$__CSHydrationRequestParser
+0x1ef588720  __AUTH,__objc_data  _OBJC_CLASS_$__CSHydrationStage
+0x1ef5886f8  __AUTH,__objc_data  _OBJC_CLASS_$__CSIdentityResolver
+0x1ef5886d0  __AUTH,__objc_data  _OBJC_CLASS_$__CSKeywordsPredicate
+0x1ef5886a8  __AUTH,__objc_data  _OBJC_CLASS_$__CSLengthWord
+0x1ef588680  __AUTH,__objc_data  _OBJC_CLASS_$__CSLessThanOrEqualWord
+0x1ef588658  __AUTH,__objc_data  _OBJC_CLASS_$__CSLessThanWord
+0x1ef588630  __AUTH,__objc_data  _OBJC_CLASS_$__CSLimitStage
+0x1ef588608  __AUTH,__objc_data  _OBJC_CLASS_$__CSLowercaseWord
+0x1ef5885e0  __AUTH,__objc_data  _OBJC_CLASS_$__CSMergeStage
+0x1ef5885b8  __AUTH,__objc_data  _OBJC_CLASS_$__CSMinuteWord
+0x1ef588590  __AUTH,__objc_data  _OBJC_CLASS_$__CSModuloWord
+0x1ef588568  __AUTH,__objc_data  _OBJC_CLASS_$__CSMonthWord
+0x1ef58a598  __AUTH,__objc_data  _OBJC_CLASS_$__CSMultiQuery
+0x1ef58a570  __AUTH,__objc_data  _OBJC_CLASS_$__CSMultiQueryCountResult
+0x1ef58a548  __AUTH,__objc_data  _OBJC_CLASS_$__CSMultiQueryResult
+0x1ef588540  __AUTH,__objc_data  _OBJC_CLASS_$__CSMultiplyWord
+0x1ef588518  __AUTH,__objc_data  _OBJC_CLASS_$__CSNextStepSpec
+0x1ef5884f0  __AUTH,__objc_data  _OBJC_CLASS_$__CSNotEqualWord
+0x1ef5884c8  __AUTH,__objc_data  _OBJC_CLASS_$__CSNotWord
+0x1ef5884a0  __AUTH,__objc_data  _OBJC_CLASS_$__CSNumberPredicate
+0x1ef588478  __AUTH,__objc_data  _OBJC_CLASS_$__CSOneOfPredicate
+0x1ef588450  __AUTH,__objc_data  _OBJC_CLASS_$__CSOrWord
+0x1ef588428  __AUTH,__objc_data  _OBJC_CLASS_$__CSPaginationCursor
+0x1ef588400  __AUTH,__objc_data  _OBJC_CLASS_$__CSParallelPipelineExecutor
+0x1ef5883d8  __AUTH,__objc_data  _OBJC_CLASS_$__CSPartitioningPipelineExecutor
+0x1ef5883b0  __AUTH,__objc_data  _OBJC_CLASS_$__CSPathPredicate
+0x1ef588388  __AUTH,__objc_data  _OBJC_CLASS_$__CSPipelineArrayResult
+0x1ef588360  __AUTH,__objc_data  _OBJC_CLASS_$__CSPipelineCountResult
+0x1ef588338  __AUTH,__objc_data  _OBJC_CLASS_$__CSPipelineExecutionPlanner
+0x1ef588310  __AUTH,__objc_data  _OBJC_CLASS_$__CSPipelineGroupResult
+0x1ef5882e8  __AUTH,__objc_data  _OBJC_CLASS_$__CSPipelineLegacyDictResult
+0x1ef5882c0  __AUTH,__objc_data  _OBJC_CLASS_$__CSPipelineParser
+0x1ef588298  __AUTH,__objc_data  _OBJC_CLASS_$__CSPipelineResponse
+0x1ef588270  __AUTH,__objc_data  _OBJC_CLASS_$__CSPipelineStageResult
+0x1ef588248  __AUTH,__objc_data  _OBJC_CLASS_$__CSPredicate
+0x1ef588220  __AUTH,__objc_data  _OBJC_CLASS_$__CSPredicateNode
+0x1ef5881f8  __AUTH,__objc_data  _OBJC_CLASS_$__CSPromptedStage
+0x1ef5881d0  __AUTH,__objc_data  _OBJC_CLASS_$__CSQuarterWord
+0x1ef5881a8  __AUTH,__objc_data  _OBJC_CLASS_$__CSQueryHelp
+0x1ef588180  __AUTH,__objc_data  _OBJC_CLASS_$__CSQueryNode
+0x1ef588158  __AUTH,__objc_data  _OBJC_CLASS_$__CSQueryOperation
+0x1ef588130  __AUTH,__objc_data  _OBJC_CLASS_$__CSQueryPipeline
+0x1ef588108  __AUTH,__objc_data  _OBJC_CLASS_$__CSQueryResponse
+0x1ef5880e0  __AUTH,__objc_data  _OBJC_CLASS_$__CSQueryStage
+0x1ef5880b8  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingCoreMLModel
+0x1ef588090  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingExternalSuppressionRule
+0x1ef588068  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingFactBooleanPredicate
+0x1ef588040  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingFactDatePredicate
+0x1ef588018  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingFactEvaluationContext
+0x1ef587ff0  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingFactNumberPredicate
+0x1ef587fc8  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingFactPathPredicate
+0x1ef587fa0  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingFactPredicate
+0x1ef587f78  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingFactSaturatingAdder
+0x1ef587f50  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingFactStringDistancePredicate
+0x1ef587f28  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingFactStringPredicate
+0x1ef587f00  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingFactsResult
+0x1ef587ed8  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingLinearModel
+0x1ef587eb0  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingModel
+0x1ef587e88  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingModelConfiguration
+0x1ef587e60  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingProfileLibrary
+0x1ef587e38  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingTreeConditionalNode
+0x1ef587e10  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingTreeInnerNode
+0x1ef587de8  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingTreeLeafNode
+0x1ef587dc0  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingTreeMaxNode
+0x1ef587d98  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingTreeModel
+0x1ef587d70  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingTreeNode
+0x1ef587d48  __AUTH,__objc_data  _OBJC_CLASS_$__CSRankingTreeSumNode
+0x1ef587d20  __AUTH,__objc_data  _OBJC_CLASS_$__CSRoundWord
+0x1ef587cf8  __AUTH,__objc_data  _OBJC_CLASS_$__CSSamplingStage
+0x1ef587cd0  __AUTH,__objc_data  _OBJC_CLASS_$__CSSchemaDescriptor
+0x1ef587ca8  __AUTH,__objc_data  _OBJC_CLASS_$__CSSchemaResponse
+0x1ef587c80  __AUTH,__objc_data  _OBJC_CLASS_$__CSSearchPipelineExecutionContext
+0x1ef587c58  __AUTH,__objc_data  _OBJC_CLASS_$__CSSearchPipelineExecutor
+0x1ef587c30  __AUTH,__objc_data  _OBJC_CLASS_$__CSSearchPipelineStage
+0x1ef587c08  __AUTH,__objc_data  _OBJC_CLASS_$__CSSelectIndex
+0x1ef587be0  __AUTH,__objc_data  _OBJC_CLASS_$__CSSelector
+0x1ef587bb8  __AUTH,__objc_data  _OBJC_CLASS_$__CSStageGroup
+0x1ef587b90  __AUTH,__objc_data  _OBJC_CLASS_$__CSStageGroupMerger
+0x1ef587b68  __AUTH,__objc_data  _OBJC_CLASS_$__CSStringPredicate
+0x1ef587b40  __AUTH,__objc_data  _OBJC_CLASS_$__CSSubPipelineResult
+0x1ef587b18  __AUTH,__objc_data  _OBJC_CLASS_$__CSSubstringWord
+0x1ef587af0  __AUTH,__objc_data  _OBJC_CLASS_$__CSSubtractWord
+0x1ee140d90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__CSSuggestionToken
+0x1ef587ac8  __AUTH,__objc_data  _OBJC_CLASS_$__CSSwapWord
+0x1ef587aa0  __AUTH,__objc_data  _OBJC_CLASS_$__CSTemporalPredicate
+0x1ef58a9a8  __AUTH,__objc_data  _OBJC_CLASS_$__CSTokenScope
+0x1ef587a78  __AUTH,__objc_data  _OBJC_CLASS_$__CSTypeRegistryObjC
+0x1ef587a50  __AUTH,__objc_data  _OBJC_CLASS_$__CSUppercaseWord
+0x1ef587a28  __AUTH,__objc_data  _OBJC_CLASS_$__CSValueExtraction
+0x1ef587a00  __AUTH,__objc_data  _OBJC_CLASS_$__CSYearWord
+0x1ef589ff8  __AUTH,__objc_data  _OBJC_CLASS_$__MDDateFormatterFactory
+0x1ee1410d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MDExtensionContext
+0x1ee140980  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MDExtensionLoader
+0x1ee140ae8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MDExtensionManager
+0x1ef58a980  __AUTH,__objc_data  _OBJC_CLASS_$__MDHTMLParsing
+0x1ef58a520  __AUTH,__objc_data  _OBJC_CLASS_$__MDHostExtensionContext
+0x1ef58a958  __AUTH,__objc_data  _OBJC_CLASS_$__MDImportExtensionLoader
+0x1ef58a930  __AUTH,__objc_data  _OBJC_CLASS_$__MDImportExtensionManager
+0x1ee140958  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MDIndexExtension
+0x1ef58ac28  __AUTH,__objc_data  _OBJC_CLASS_$__MDIndexExtensionLoader
+0x1ee140930  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MDIndexExtensionManager
+0x1ee141178  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MDRemoteExtensionContext
+0x1ef589fd0  __AUTH,__objc_data  _OBJC_CLASS_$__MDSearchableIndex
+0x1ef589fa8  __AUTH,__objc_data  _OBJC_CLASS_$__MDSearchableItem
+0x1ef589f80  __AUTH,__objc_data  _OBJC_CLASS_$__MDUserAction
+0x1eb68cf74  __DATA,__objc_ivar  OBJC_IVAR_$_CSDenseCandidateQueue._bundleID
+0x1eb68cf70  __DATA,__objc_ivar  OBJC_IVAR_$_CSDenseCandidateQueue._denseQueue
+0x1eb68c440  __DATA,__objc_ivar  OBJC_IVAR_$_CSExternalAnalysisTag._confidence
+0x1eb68c438  __DATA,__objc_ivar  OBJC_IVAR_$_CSExternalAnalysisTag._label
+0x1eb68c43c  __DATA,__objc_ivar  OBJC_IVAR_$_CSExternalAnalysisTag._synonyms
+0x1eb68cf6c  __DATA,__objc_ivar  OBJC_IVAR_$_CSL1CandidateQueue._bundleID
+0x1eb68cf60  __DATA,__objc_ivar  OBJC_IVAR_$_CSL1CandidateQueue._denseQueue
+0x1eb68cf64  __DATA,__objc_ivar  OBJC_IVAR_$_CSL1CandidateQueue._hybridQueue
+0x1eb68cf68  __DATA,__objc_ivar  OBJC_IVAR_$_CSL1CandidateQueue._scoreQueue
+0x1eb68cf5c  __DATA,__objc_ivar  OBJC_IVAR_$_CSL1CandidateQueue._sparseQueue
+0x1eb68cc64  __DATA,__objc_ivar  OBJC_IVAR_$_CSNumericAnalysisTag._components
+0x1eb68cc68  __DATA,__objc_ivar  OBJC_IVAR_$_CSNumericAnalysisTag._confidence
+0x1eb68cc60  __DATA,__objc_ivar  OBJC_IVAR_$_CSNumericAnalysisTag._primaryValue
+0x1eb68c7a4  __DATA,__objc_ivar  OBJC_IVAR_$_CSOCRTextLine._count
+0x1eb68c7a8  __DATA,__objc_ivar  OBJC_IVAR_$_CSOCRTextLine._isTitle
+0x1eb68c79c  __DATA,__objc_ivar  OBJC_IVAR_$_CSOCRTextLine._scores
+0x1eb68c798  __DATA,__objc_ivar  OBJC_IVAR_$_CSOCRTextLine._strings
+0x1eb68c7a0  __DATA,__objc_ivar  OBJC_IVAR_$_CSOCRTextLine._textBounds
+0x1eb68cc84  __DATA,__objc_ivar  OBJC_IVAR_$_CSPommesQueryCandidateEvaluator._isMail
+0x1eb68ce78  __DATA,__objc_ivar  OBJC_IVAR_$_CSSearchQuery._cancelled
+0x1eb68ce70  __DATA,__objc_ivar  OBJC_IVAR_$_CSSearchQuery._foundItemCount
+0x1eb68ce74  __DATA,__objc_ivar  OBJC_IVAR_$_CSSearchQuery._originalAttributes
+0x1eb68cf50  __DATA,__objc_ivar  OBJC_IVAR_$_CSUnhousedSearchQuery._resolvedIndexPath
+0x1eb68c720  __DATA,__objc_ivar  OBJC_IVAR_$_CSUnhousedSearchableIndex._resolvedIndexPath
+0x1eb68c724  __DATA,__objc_ivar  OBJC_IVAR_$_CSUnhousedSearchableIndex._savedConnection
+0x1eb68d03c  __DATA,__objc_ivar  OBJC_IVAR_$_CSUnhousedUserQuery._resolvedIndexPath
+0x1eb68c09c  __DATA,__objc_ivar  OBJC_IVAR_$__CSFilterStage._extractValue
+0x1eb68c098  __DATA,__objc_ivar  OBJC_IVAR_$__CSFilterStage._filterPredicate
+0x1eb68c12c  __DATA,__objc_ivar  OBJC_IVAR_$__CSHelpResponse._configuration
+0x1eb68c128  __DATA,__objc_ivar  OBJC_IVAR_$__CSHelpResponse._helpData
+0x1eb68c148  __DATA,__objc_ivar  OBJC_IVAR_$__CSPipelineResponse._cachedResults
+0x1eb68c144  __DATA,__objc_ivar  OBJC_IVAR_$__CSPipelineResponse._configuration
+0x1eb68c14c  __DATA,__objc_ivar  OBJC_IVAR_$__CSPipelineResponse._currentOffset
+0x1eb68c150  __DATA,__objc_ivar  OBJC_IVAR_$__CSPipelineResponse._hasExecuted
+0x1eb68c140  __DATA,__objc_ivar  OBJC_IVAR_$__CSPipelineResponse._pipeline
+0x1eb68c13c  __DATA,__objc_ivar  OBJC_IVAR_$__CSQueryResponse._activeQuery
+0x1eb68c138  __DATA,__objc_ivar  OBJC_IVAR_$__CSQueryResponse._configuration
+0x1eb68c020  __DATA,__objc_ivar  OBJC_IVAR_$__CSQueryStage._extractValue
+0x1eb68c198  __DATA,__objc_ivar  OBJC_IVAR_$__CSRankingFactsResult._additionalExternalValues
+0x1eb68c168  __DATA,__objc_ivar  OBJC_IVAR_$__CSRankingFactsResult._bitVector
+0x1eb68c180  __DATA,__objc_ivar  OBJC_IVAR_$__CSRankingFactsResult._fileKind
+0x1eb68c178  __DATA,__objc_ivar  OBJC_IVAR_$__CSRankingFactsResult._queryIndependentScore
+0x1eb68c16c  __DATA,__objc_ivar  OBJC_IVAR_$__CSRankingFactsResult._semanticDistance0
+0x1eb68c170  __DATA,__objc_ivar  OBJC_IVAR_$__CSRankingFactsResult._semanticDistance1
+0x1eb68c174  __DATA,__objc_ivar  OBJC_IVAR_$__CSRankingFactsResult._semanticDistance2
+0x1eb68c184  __DATA,__objc_ivar  OBJC_IVAR_$__CSRankingFactsResult._termWordDistance0
+0x1eb68c188  __DATA,__objc_ivar  OBJC_IVAR_$__CSRankingFactsResult._termWordDistance1
+0x1eb68c18c  __DATA,__objc_ivar  OBJC_IVAR_$__CSRankingFactsResult._termWordDistance2
+0x1eb68c190  __DATA,__objc_ivar  OBJC_IVAR_$__CSRankingFactsResult._termWordDistance3
+0x1eb68c194  __DATA,__objc_ivar  OBJC_IVAR_$__CSRankingFactsResult._termWordDistance4
+0x1eb68c17c  __DATA,__objc_ivar  OBJC_IVAR_$__CSRankingFactsResult._timeDistance
+0x1eb68c230  __DATA,__objc_ivar  OBJC_IVAR_$__CSRankingTreeNode._nodeType
+0x1eb68c134  __DATA,__objc_ivar  OBJC_IVAR_$__CSSchemaResponse._configuration
+0x1eb68c130  __DATA,__objc_ivar  OBJC_IVAR_$__CSSchemaResponse._schemaData
+0x1eb68c000  __DATA,__objc_ivar  OBJC_IVAR_$__CSSearchPipelineStage._attributeNameTranslator
+0x1eb68bffc  __DATA,__objc_ivar  OBJC_IVAR_$__CSSearchPipelineStage._inputStageId
+0x1eb68d118  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.attributes
+0x1eb68d158  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.hiddenAttr
+0x1eb68d154  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.hiddenCount
+0x1eb68d14c  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.hiddenElementName
+0x1eb68d150  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.hiddenElementNameLength
+0x1eb68d13c  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.inHead
+0x1eb68d144  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.inScript
+0x1eb68d148  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.inStyle
+0x1eb68d140  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.inTitle
+0x1eb68d130  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.indexingLimit
+0x1eb68d124  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.metaContent
+0x1eb68d120  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.metaHttpEquiv
+0x1eb68d11c  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.metaName
+0x1eb68d110  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.newLineBuffer
+0x1eb68d114  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.newLineLength
+0x1eb68d12c  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.sourceCFEncoding
+0x1eb68d128  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.sourceEncoding
+0x1eb68d138  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.titleLength
+0x1eb68d134  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.titleStart
+0x1eb68d108  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.uniCharLen
+0x1eb68d10c  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.uniCharSize
+0x1eb68d104  __DATA,__objc_ivar  OBJC_IVAR_$__MDHTMLParsing.uniChars
+0x1ef585a48  __AUTH,__objc_data  _OBJC_METACLASS_$_CSAbsoluteDatePredicate
+0x1ef589aa8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSAddressTag
+0x1ef5879d8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSAgenticQueryValidator
+0x1ef5879b0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSAgenticRankingParser
+0x1ef587988  __AUTH,__objc_data  _OBJC_METACLASS_$_CSAgenticRankingResponse
+0x1ee140ed0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSAttributeEvaluator
+0x1ef587960  __AUTH,__objc_data  _OBJC_METACLASS_$_CSAttributeHelp
+0x1ef58a4f8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSAttributedQuery
+0x1ef587938  __AUTH,__objc_data  _OBJC_METACLASS_$_CSAttributesContent
+0x1ef585a20  __AUTH,__objc_data  _OBJC_METACLASS_$_CSAuthorPredicate
+0x1ef58a4d0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSAutocompleteContactsWrapper
+0x1ef5859f8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSBooleanPredicate
+0x1ef58ad68  __AUTH,__objc_data  _OBJC_METACLASS_$_CSBundleFilterAttributeBackfillGroup
+0x1ef58adb8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSBundleFilterAttributeBackfillResult
+0x1ef58ae58  __AUTH,__objc_data  _OBJC_METACLASS_$_CSBundleFilterEvaluationReply
+0x1ef58ae08  __AUTH,__objc_data  _OBJC_METACLASS_$_CSBundleFilterEvaluationRequest
+0x1ef58ad18  __AUTH,__objc_data  _OBJC_METACLASS_$_CSBundleFilterFileProviderContainerGroup
+0x1ee141998  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSCoder
+0x1ef5859d0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSComponentDatePredicate
+0x1ef5859a8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSCompoundPredicate
+0x1ee140f98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSContactsWrapper
+0x1ef585980  __AUTH,__objc_data  _OBJC_METACLASS_$_CSContentTypePredicate
+0x1ef5897b0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSCurrencyTag
+0x1ee1414e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSCustomAttributeKey
+0x1ee141880  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSDataWrapper
+0x1ef587910  __AUTH,__objc_data  _OBJC_METACLASS_$_CSDateExpressionsContent
+0x1ef585958  __AUTH,__objc_data  _OBJC_METACLASS_$_CSDatePredicate
+0x1ef589788  __AUTH,__objc_data  _OBJC_METACLASS_$_CSDateTag
+0x1ee141560  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSDecoder
+0x1ef5878e8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSDenseCandidateQueue
+0x1ef5878c0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSDescribeAttributeQuery
+0x1ef587898  __AUTH,__objc_data  _OBJC_METACLASS_$_CSDescribeContentTypeQuery
+0x1ef587870  __AUTH,__objc_data  _OBJC_METACLASS_$_CSDescribeSchemaQuery
+0x1ee141830  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSDeviceListener
+0x1ef589f58  __AUTH,__objc_data  _OBJC_METACLASS_$_CSDocumentUnderstandingCategory
+0x1ef589f30  __AUTH,__objc_data  _OBJC_METACLASS_$_CSDocumentUnderstandingTopic
+0x1ee140f20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSDonationProgress
+0x1ef589760  __AUTH,__objc_data  _OBJC_METACLASS_$_CSDonationProgressFailure
+0x1ef58a4a8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSDonationProgressQueryResult
+0x1ef589738  __AUTH,__objc_data  _OBJC_METACLASS_$_CSEmailAddressTag
+0x1ef587848  __AUTH,__objc_data  _OBJC_METACLASS_$_CSExamplesContent
+0x1ef58a480  __AUTH,__objc_data  _OBJC_METACLASS_$_CSExtensionJobThrottle
+0x1ee141038  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSExtension_PKSubsystem
+0x1ee140908  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSExternalAnalysisTag
+0x1ee1408e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSFPItem
+0x1ef589f08  __AUTH,__objc_data  _OBJC_METACLASS_$_CSFieldSpecification
+0x1ef58a908  __AUTH,__objc_data  _OBJC_METACLASS_$_CSFileProviderContainerCache
+0x1ef589ee0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSFileProviderDomainMonitor
+0x1ef58ac00  __AUTH,__objc_data  _OBJC_METACLASS_$_CSFileURLBatchResult
+0x1ef589710  __AUTH,__objc_data  _OBJC_METACLASS_$_CSFlightTag
+0x1ee1417b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSGenerativeModelsAvailabilityManager
+0x1ef587820  __AUTH,__objc_data  _OBJC_METACLASS_$_CSGenericContent
+0x1ef58a8e0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSHashtagQuery
+0x1ef5877f8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSHelpContent
+0x1ef5877d0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSHelpNextStep
+0x1ef5877a8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSHelpQueryType
+0x1ef587780  __AUTH,__objc_data  _OBJC_METACLASS_$_CSHelpSection
+0x1ef587758  __AUTH,__objc_data  _OBJC_METACLASS_$_CSHelpSectionContent
+0x1ef587730  __AUTH,__objc_data  _OBJC_METACLASS_$_CSHelpTopicQuery
+0x1ef589a80  __AUTH,__objc_data  _OBJC_METACLASS_$_CSIdentifierCodedArray
+0x1ef58abd8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSImportExtension
+0x1ee141a10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSIndexConnection
+0x1ee141538  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSIndexDelegateConnection
+0x1ee140f70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSIndexExtensionRequestHandler
+0x1ee1412e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSIndexJob
+0x1ef589a58  __AUTH,__objc_data  _OBJC_METACLASS_$_CSIndexingPipelineOverallCompleteness
+0x1ef589a30  __AUTH,__objc_data  _OBJC_METACLASS_$_CSIndexingPipelineOverallCompletenessForBundle
+0x1ee141150  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSIndexingQueue
+0x1ee1415b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSInlineDonation
+0x1ee140c00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSInstantAnswers
+0x1ef589eb8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSIntentsWrapper
+0x1ef587708  __AUTH,__objc_data  _OBJC_METACLASS_$_CSInternalSearchableIndex
+0x1ef58abb0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSItemSummary
+0x1ef585930  __AUTH,__objc_data  _OBJC_METACLASS_$_CSKeywordsPredicate
+0x1ef58a8b8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSL1CandidateQueue
+0x1ef589e90  __AUTH,__objc_data  _OBJC_METACLASS_$_CSLifeFSConnection
+0x1ef589a08  __AUTH,__objc_data  _OBJC_METACLASS_$_CSLinkTag
+0x1ef589e68  __AUTH,__objc_data  _OBJC_METACLASS_$_CSLiveFSVolume
+0x1ee140d68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSLocaleObserver
+0x1ee1413a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSLocalizedString
+0x1ef5876e0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSLocationTag
+0x1ef5876b8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSManagedIndexConnection
+0x1ef587690  __AUTH,__objc_data  _OBJC_METACLASS_$_CSManagedSearchConnection
+0x1ee141448  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSManagedSearchQuery
+0x1ef587668  __AUTH,__objc_data  _OBJC_METACLASS_$_CSManagedSearchableIndex
+0x1ef587640  __AUTH,__objc_data  _OBJC_METACLASS_$_CSManagedUserQuery
+0x1ef587618  __AUTH,__objc_data  _OBJC_METACLASS_$_CSMockSearchableIndex
+0x1ef585908  __AUTH,__objc_data  _OBJC_METACLASS_$_CSNumberPredicate
+0x1ef5896e8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSNumericAnalysisTag
+0x1ef58a458  __AUTH,__objc_data  _OBJC_METACLASS_$_CSOCRTextLine
+0x1ef5875f0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSOperatorCategory
+0x1ef5875c8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSOperatorHelp
+0x1ef5875a0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSOperatorInfo
+0x1ef587578  __AUTH,__objc_data  _OBJC_METACLASS_$_CSOperatorsContent
+0x1ee141240  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSPerson
+0x1ef5858e0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSPersonPredicate
+0x1ef58a430  __AUTH,__objc_data  _OBJC_METACLASS_$_CSPersonalAnswers
+0x1ef587550  __AUTH,__objc_data  _OBJC_METACLASS_$_CSPersonalAnswersUtils
+0x1ef5896c0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSPhoneNumberTag
+0x1ef589e40  __AUTH,__objc_data  _OBJC_METACLASS_$_CSPipelineCompletenessReport
+0x1ef5899e0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSPipelineCompletenessReportStorage
+0x1ef587528  __AUTH,__objc_data  _OBJC_METACLASS_$_CSPipelineContent
+0x1ee141358  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSPlace
+0x1ef5858b8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSPommesQueryCandidateEvaluator
+0x1ef5899b8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSPowerHUD
+0x1ee141948  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSPowerLog
+0x1ef58a890  __AUTH,__objc_data  _OBJC_METACLASS_$_CSPrivateIndexConnection
+0x1ef589e18  __AUTH,__objc_data  _OBJC_METACLASS_$_CSPrivateSearchConnection
+0x1ef589df0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSPrivateSearchQuery
+0x1ee141808  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSPrivateSearchableIndex
+0x1ef587500  __AUTH,__objc_data  _OBJC_METACLASS_$_CSPrivateUserQuery
+0x1ef5874d8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSQueryMetadata
+0x1ef585890  __AUTH,__objc_data  _OBJC_METACLASS_$_CSQueryNode
+0x1ef585868  __AUTH,__objc_data  _OBJC_METACLASS_$_CSQueryNodeConfiguration
+0x1ef585840  __AUTH,__objc_data  _OBJC_METACLASS_$_CSQueryPredicate
+0x1ee140bd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSQueryResultMatchingHint
+0x1ef585818  __AUTH,__objc_data  _OBJC_METACLASS_$_CSRangeDatePredicate
+0x1ef5874b0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSRankingContent
+0x1ef5857f0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSRankingModelQueryCandidateEvaluator
+0x1ef58a868  __AUTH,__objc_data  _OBJC_METACLASS_$_CSReceiverPreferences
+0x1ee140ac0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSReceiverServerPreferences
+0x1ef5857c8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSRecipientPredicate
+0x1ee141768  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSRecurrenceRule
+0x1ee141920  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSRequestQueue
+0x1ef58a840  __AUTH,__objc_data  _OBJC_METACLASS_$_CSSceneClassification
+0x1ee141628  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSSearchConnection
+0x1ee141010  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSSearchContext
+0x1ee141600  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSSearchQuery
+0x1ee141740  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSSearchQueryContext
+0x1ee141b78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSSearchableIndex
+0x1ef589698  __AUTH,__objc_data  _OBJC_METACLASS_$_CSSearchableIndexDescription
+0x1ee1419c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSSearchableIndexRequest
+0x1ee141b00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSSearchableItem
+0x1ee141a60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSSearchableItemAttributeSet
+0x1ee140cf0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSSearchableItemCodedArray
+0x1ef5857a0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSSenderPredicate
+0x1ef585778  __AUTH,__objc_data  _OBJC_METACLASS_$_CSSimilarityPredicate
+0x1ef587488  __AUTH,__objc_data  _OBJC_METACLASS_$_CSSmartQueriesContent
+0x1ef589670  __AUTH,__objc_data  _OBJC_METACLASS_$_CSSmartRepliesResponse
+0x1ef589648  __AUTH,__objc_data  _OBJC_METACLASS_$_CSSmartReply
+0x1ef585750  __AUTH,__objc_data  _OBJC_METACLASS_$_CSStringPredicate
+0x1ef587460  __AUTH,__objc_data  _OBJC_METACLASS_$_CSStructuredAttributeInfo
+0x1ef587438  __AUTH,__objc_data  _OBJC_METACLASS_$_CSStructuredHelpContent
+0x1ef587410  __AUTH,__objc_data  _OBJC_METACLASS_$_CSStructuredHelpExample
+0x1ef5873e8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSStructuredHelpResult
+0x1ef585728  __AUTH,__objc_data  _OBJC_METACLASS_$_CSStructuredQuery
+0x1ef585700  __AUTH,__objc_data  _OBJC_METACLASS_$_CSStructuredQueryContext
+0x1ef5873c0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSStructuredSchemaResult
+0x1ef58a408  __AUTH,__objc_data  _OBJC_METACLASS_$_CSSubscriptionManager
+0x1ee140ea8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSSuggestion
+0x1ee140bb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSSuggestionsRanker
+0x1ef587398  __AUTH,__objc_data  _OBJC_METACLASS_$_CSTemporalHelp
+0x1ef587370  __AUTH,__objc_data  _OBJC_METACLASS_$_CSTestIndexConnection
+0x1ef587348  __AUTH,__objc_data  _OBJC_METACLASS_$_CSTestIndexDelegateConnection
+0x1ef587320  __AUTH,__objc_data  _OBJC_METACLASS_$_CSTestSearchQuery
+0x1ef5872f8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSTestSearchableIndex
+0x1ef589dc8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSTokenScopeParser
+0x1ef58ab88  __AUTH,__objc_data  _OBJC_METACLASS_$_CSTopHitQuery
+0x1ef58ab60  __AUTH,__objc_data  _OBJC_METACLASS_$_CSTopHitQueryContext
+0x1ef58a818  __AUTH,__objc_data  _OBJC_METACLASS_$_CSTopHitResult
+0x1ee1408b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSTopHitSearchQuery
+0x1ef589620  __AUTH,__objc_data  _OBJC_METACLASS_$_CSTrackingNumberTag
+0x1ef5895f8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSUnhousedIndexConnection
+0x1ef5872d0  __AUTH,__objc_data  _OBJC_METACLASS_$_CSUnhousedSearchConnection
+0x1ee141420  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSUnhousedSearchQuery
+0x1ee1416c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSUnhousedSearchableIndex
+0x1ef5872a8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSUnhousedUserQuery
+0x1ee141290  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSUserAction
+0x1ee141128  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSUserActivityTuple
+0x1ee141380  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSUserQuery
+0x1ee140de0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSUserQueryContext
+0x1ee140e30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSUserQueryParser
+0x1ee140890  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSUserQueryRankingConfiguration
+0x1ef5856d8  __AUTH,__objc_data  _OBJC_METACLASS_$_CSWindowDatePredicate
+0x1ee141ab0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CSXPCConnection
+0x1ee140a98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CoreSpotlightPreferences
+0x1ee141100  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CoreSpotlightUtils
+0x1ef589da0  __AUTH,__objc_data  _OBJC_METACLASS_$_MDCustomAttributeKey
+0x1ef589d78  __AUTH,__objc_data  _OBJC_METACLASS_$_MDIndexExtensionRequestHandler
+0x1ef589d50  __AUTH,__objc_data  _OBJC_METACLASS_$_MDLocalizedString
+0x1ef589d28  __AUTH,__objc_data  _OBJC_METACLASS_$_MDPerson
+0x1ef58a7f0  __AUTH,__objc_data  _OBJC_METACLASS_$_MDSearchQuery
+0x1ef589d00  __AUTH,__objc_data  _OBJC_METACLASS_$_MDSearchableIndex
+0x1ef589cd8  __AUTH,__objc_data  _OBJC_METACLASS_$_MDSearchableItem
+0x1ef589cb0  __AUTH,__objc_data  _OBJC_METACLASS_$_MDSearchableItemAttributeSet
+0x1ef589c88  __AUTH,__objc_data  _OBJC_METACLASS_$_MDUserAction
+0x1ef587280  __AUTH,__objc_data  _OBJC_METACLASS_$_OperatorInfoPair
+0x1ee140b88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_TokenEnumeratorContext
+0x1ef58a7c8  __AUTH,__objc_data  _OBJC_METACLASS_$_TopHitResult
+0x1ef587258  __AUTH,__objc_data  _OBJC_METACLASS_$__CSAbsWord
+0x1ef587230  __AUTH,__objc_data  _OBJC_METACLASS_$__CSAddWord
+0x1ef587208  __AUTH,__objc_data  _OBJC_METACLASS_$__CSAgenticQuery
+0x1ef5871e0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSAgenticQueryConfiguration
+0x1ef5871b8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSAgenticQueryParser
+0x1ef587190  __AUTH,__objc_data  _OBJC_METACLASS_$__CSAgenticQueryTypeMappings
+0x1ef587168  __AUTH,__objc_data  _OBJC_METACLASS_$__CSAgenticQueryValidator
+0x1ef587140  __AUTH,__objc_data  _OBJC_METACLASS_$__CSAgenticResponse
+0x1ef587118  __AUTH,__objc_data  _OBJC_METACLASS_$__CSAndWord
+0x1ef5870f0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSAnnQueryPredicate
+0x1ef5870c8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSApplicationRegistry
+0x1ef5870a0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSAttributeResolver
+0x1ef587078  __AUTH,__objc_data  _OBJC_METACLASS_$__CSAuthorPredicate
+0x1ef587050  __AUTH,__objc_data  _OBJC_METACLASS_$__CSBooleanPredicate
+0x1ef587028  __AUTH,__objc_data  _OBJC_METACLASS_$__CSComputeStage
+0x1ef587000  __AUTH,__objc_data  _OBJC_METACLASS_$__CSConcatWord
+0x1ef58a3e0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSContactSearch
+0x1ef58a3b8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSContactSearchResult
+0x1ef586fd8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSContentTypeFilter
+0x1ef586fb0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSContentTypePredicate
+0x1ef586f88  __AUTH,__objc_data  _OBJC_METACLASS_$__CSCountStage
+0x1ef586f60  __AUTH,__objc_data  _OBJC_METACLASS_$__CSCustomStage
+0x1ef586f38  __AUTH,__objc_data  _OBJC_METACLASS_$__CSDateExprRangePredicate
+0x1ef586f10  __AUTH,__objc_data  _OBJC_METACLASS_$__CSDateExpressionParser
+0x1ef586ee8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSDatePredicate
+0x1ef586ec0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSDayOfWeekWord
+0x1ef586e98  __AUTH,__objc_data  _OBJC_METACLASS_$__CSDayWord
+0x1ef586e70  __AUTH,__objc_data  _OBJC_METACLASS_$__CSDivideWord
+0x1ef586e48  __AUTH,__objc_data  _OBJC_METACLASS_$__CSDupWord
+0x1ee140b60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CSEmbedding
+0x1ef586e20  __AUTH,__objc_data  _OBJC_METACLASS_$__CSEqualWord
+0x1ef586df8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSExecutionPlan
+0x1ef586dd0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSExtractGroupItemsStage
+0x1ef586da8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSFetchAttributeIntrospector
+0x1ef586d80  __AUTH,__objc_data  _OBJC_METACLASS_$__CSFilterStage
+0x1ef586d58  __AUTH,__objc_data  _OBJC_METACLASS_$__CSFloorWord
+0x1ef586d30  __AUTH,__objc_data  _OBJC_METACLASS_$__CSForEachStage
+0x1ef586d08  __AUTH,__objc_data  _OBJC_METACLASS_$__CSForthInterpreter
+0x1ef586ce0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSForthValue
+0x1ef586cb8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSGreaterThanOrEqualWord
+0x1ef586c90  __AUTH,__objc_data  _OBJC_METACLASS_$__CSGreaterThanWord
+0x1ef586c68  __AUTH,__objc_data  _OBJC_METACLASS_$__CSGroupByStage
+0x1ef586c40  __AUTH,__objc_data  _OBJC_METACLASS_$__CSHelpResponse
+0x1ef586c18  __AUTH,__objc_data  _OBJC_METACLASS_$__CSHelpTopicPayload
+0x1ef586bf0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSHourWord
+0x1ef586bc8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSHydrationConfiguration
+0x1ef586ba0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSHydrationItem
+0x1ef586b78  __AUTH,__objc_data  _OBJC_METACLASS_$__CSHydrationRequest
+0x1ef586b50  __AUTH,__objc_data  _OBJC_METACLASS_$__CSHydrationRequestParser
+0x1ef586b28  __AUTH,__objc_data  _OBJC_METACLASS_$__CSHydrationStage
+0x1ef586b00  __AUTH,__objc_data  _OBJC_METACLASS_$__CSIdentityResolver
+0x1ef586ad8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSKeywordsPredicate
+0x1ef586ab0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSLengthWord
+0x1ef586a88  __AUTH,__objc_data  _OBJC_METACLASS_$__CSLessThanOrEqualWord
+0x1ef586a60  __AUTH,__objc_data  _OBJC_METACLASS_$__CSLessThanWord
+0x1ef586a38  __AUTH,__objc_data  _OBJC_METACLASS_$__CSLimitStage
+0x1ef586a10  __AUTH,__objc_data  _OBJC_METACLASS_$__CSLowercaseWord
+0x1ef5869e8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSMergeStage
+0x1ef5869c0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSMinuteWord
+0x1ef586998  __AUTH,__objc_data  _OBJC_METACLASS_$__CSModuloWord
+0x1ef586970  __AUTH,__objc_data  _OBJC_METACLASS_$__CSMonthWord
+0x1ef58a390  __AUTH,__objc_data  _OBJC_METACLASS_$__CSMultiQuery
+0x1ef58a368  __AUTH,__objc_data  _OBJC_METACLASS_$__CSMultiQueryCountResult
+0x1ef58a340  __AUTH,__objc_data  _OBJC_METACLASS_$__CSMultiQueryResult
+0x1ef586948  __AUTH,__objc_data  _OBJC_METACLASS_$__CSMultiplyWord
+0x1ef586920  __AUTH,__objc_data  _OBJC_METACLASS_$__CSNextStepSpec
+0x1ef5868f8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSNotEqualWord
+0x1ef5868d0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSNotWord
+0x1ef5868a8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSNumberPredicate
+0x1ef586880  __AUTH,__objc_data  _OBJC_METACLASS_$__CSOneOfPredicate
+0x1ef586858  __AUTH,__objc_data  _OBJC_METACLASS_$__CSOrWord
+0x1ef586830  __AUTH,__objc_data  _OBJC_METACLASS_$__CSPaginationCursor
+0x1ef586808  __AUTH,__objc_data  _OBJC_METACLASS_$__CSParallelPipelineExecutor
+0x1ef5867e0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSPartitioningPipelineExecutor
+0x1ef5867b8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSPathPredicate
+0x1ef586790  __AUTH,__objc_data  _OBJC_METACLASS_$__CSPipelineArrayResult
+0x1ef586768  __AUTH,__objc_data  _OBJC_METACLASS_$__CSPipelineCountResult
+0x1ef586740  __AUTH,__objc_data  _OBJC_METACLASS_$__CSPipelineExecutionPlanner
+0x1ef586718  __AUTH,__objc_data  _OBJC_METACLASS_$__CSPipelineGroupResult
+0x1ef5866f0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSPipelineLegacyDictResult
+0x1ef5866c8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSPipelineParser
+0x1ef5866a0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSPipelineResponse
+0x1ef586678  __AUTH,__objc_data  _OBJC_METACLASS_$__CSPipelineStageResult
+0x1ef586650  __AUTH,__objc_data  _OBJC_METACLASS_$__CSPredicate
+0x1ef586628  __AUTH,__objc_data  _OBJC_METACLASS_$__CSPredicateNode
+0x1ef586600  __AUTH,__objc_data  _OBJC_METACLASS_$__CSPromptedStage
+0x1ef5865d8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSQuarterWord
+0x1ef5865b0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSQueryHelp
+0x1ef586588  __AUTH,__objc_data  _OBJC_METACLASS_$__CSQueryNode
+0x1ef586560  __AUTH,__objc_data  _OBJC_METACLASS_$__CSQueryOperation
+0x1ef586538  __AUTH,__objc_data  _OBJC_METACLASS_$__CSQueryPipeline
+0x1ef586510  __AUTH,__objc_data  _OBJC_METACLASS_$__CSQueryResponse
+0x1ef5864e8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSQueryStage
+0x1ef5864c0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingCoreMLModel
+0x1ef586498  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingExternalSuppressionRule
+0x1ef586470  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingFactBooleanPredicate
+0x1ef586448  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingFactDatePredicate
+0x1ef586420  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingFactEvaluationContext
+0x1ef5863f8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingFactNumberPredicate
+0x1ef5863d0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingFactPathPredicate
+0x1ef5863a8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingFactPredicate
+0x1ef586380  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingFactSaturatingAdder
+0x1ef586358  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingFactStringDistancePredicate
+0x1ef586330  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingFactStringPredicate
+0x1ef586308  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingFactsResult
+0x1ef5862e0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingLinearModel
+0x1ef5862b8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingModel
+0x1ef586290  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingModelConfiguration
+0x1ef586268  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingProfileLibrary
+0x1ef586240  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingTreeConditionalNode
+0x1ef586218  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingTreeInnerNode
+0x1ef5861f0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingTreeLeafNode
+0x1ef5861c8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingTreeMaxNode
+0x1ef5861a0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingTreeModel
+0x1ef586178  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingTreeNode
+0x1ef586150  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRankingTreeSumNode
+0x1ef586128  __AUTH,__objc_data  _OBJC_METACLASS_$__CSRoundWord
+0x1ef586100  __AUTH,__objc_data  _OBJC_METACLASS_$__CSSamplingStage
+0x1ef5860d8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSSchemaDescriptor
+0x1ef5860b0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSSchemaResponse
+0x1ef586088  __AUTH,__objc_data  _OBJC_METACLASS_$__CSSearchPipelineExecutionContext
+0x1ef586060  __AUTH,__objc_data  _OBJC_METACLASS_$__CSSearchPipelineExecutor
+0x1ef586038  __AUTH,__objc_data  _OBJC_METACLASS_$__CSSearchPipelineStage
+0x1ef586010  __AUTH,__objc_data  _OBJC_METACLASS_$__CSSelectIndex
+0x1ef585fe8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSSelector
+0x1ef585fc0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSStageGroup
+0x1ef585f98  __AUTH,__objc_data  _OBJC_METACLASS_$__CSStageGroupMerger
+0x1ef585f70  __AUTH,__objc_data  _OBJC_METACLASS_$__CSStringPredicate
+0x1ef585f48  __AUTH,__objc_data  _OBJC_METACLASS_$__CSSubPipelineResult
+0x1ef585f20  __AUTH,__objc_data  _OBJC_METACLASS_$__CSSubstringWord
+0x1ef585ef8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSSubtractWord
+0x1ee140d40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__CSSuggestionToken
+0x1ef585ed0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSSwapWord
+0x1ef585ea8  __AUTH,__objc_data  _OBJC_METACLASS_$__CSTemporalPredicate
+0x1ef58a7a0  __AUTH,__objc_data  _OBJC_METACLASS_$__CSTokenScope
+0x1ef585e80  __AUTH,__objc_data  _OBJC_METACLASS_$__CSTypeRegistryObjC
+0x1ef585e58  __AUTH,__objc_data  _OBJC_METACLASS_$__CSUppercaseWord
+0x1ef585e30  __AUTH,__objc_data  _OBJC_METACLASS_$__CSValueExtraction
+0x1ef585e08  __AUTH,__objc_data  _OBJC_METACLASS_$__CSYearWord
+0x1ef589c60  __AUTH,__objc_data  _OBJC_METACLASS_$__MDDateFormatterFactory
+0x1ee1410b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MDExtensionContext
+0x1ee140868  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MDExtensionLoader
+0x1ee140a70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MDExtensionManager
+0x1ef58a778  __AUTH,__objc_data  _OBJC_METACLASS_$__MDHTMLParsing
+0x1ef58a318  __AUTH,__objc_data  _OBJC_METACLASS_$__MDHostExtensionContext
+0x1ef58a750  __AUTH,__objc_data  _OBJC_METACLASS_$__MDImportExtensionLoader
+0x1ef58a728  __AUTH,__objc_data  _OBJC_METACLASS_$__MDImportExtensionManager
+0x1ee140840  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MDIndexExtension
+0x1ef58ab38  __AUTH,__objc_data  _OBJC_METACLASS_$__MDIndexExtensionLoader
+0x1ee140818  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MDIndexExtensionManager
+0x1ee141088  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MDRemoteExtensionContext
+0x1ef589c38  __AUTH,__objc_data  _OBJC_METACLASS_$__MDSearchableIndex
+0x1ef589c10  __AUTH,__objc_data  _OBJC_METACLASS_$__MDSearchableItem
+0x1ef589be8  __AUTH,__objc_data  _OBJC_METACLASS_$__MDUserAction
+0x1eb68db08  __DATA,__data  _UserFSBundleID
+0x1e0a22488  __DATA_CONST,__const  _VecBiasKey
+0x1e0a22480  __DATA_CONST,__const  _VecDataKey
+0x1e0a22478  __DATA_CONST,__const  _VecDimKey
+0x1e0a22470  __DATA_CONST,__const  _VecFormatKey
+0x1e0a22468  __DATA_CONST,__const  _VecScaleKey
+0x1e0a22460  __DATA_CONST,__const  _VecVersionKey
+0x18f076cc8  __TEXT,__text  __CSCopyContentSchemaContainer
+0x18ef1f050  __TEXT,__text  __CSDecodeObject
+0x18ef71e6c  __TEXT,__text  __CSExecutionModeIsParallelizable
+0x18ef71e78  __TEXT,__text  __CSExecutionModeToString
+0x18efe3b44  __TEXT,__text  __CSPathForFilter
+0x1e0a22458  __DATA_CONST,__const  __CSQueryNodeEmbeddingsSinkKey
+0x1e0a22450  __DATA_CONST,__const  __CSQueryNodeParseOptionsKey
+0x1e0a22448  __DATA_CONST,__const  __MDImportExtensionsLoadedNotification
+0x1e0a22440  __DATA_CONST,__const  __MDIndexExtensionsLoadedNotification
+0x18f07317c  __TEXT,__text  __MDPlainTextFromHTMLData
+0x18ef16dd0  __TEXT,__text  CSFriendlyFieldNameTable::in_word_set(char const*, unsigned int)
+0x18ef1703c  __TEXT,__text  CSQueryAttributeMappingTable::in_word_set(char const*, unsigned int)
+0x18ef1f97c  __TEXT,__text  _addExtensionToken
+0x18ef15ea8  __TEXT,__text  _csindex_xpc_dictionary_decode_status_with_error
+0x18efef664  __TEXT,__text  _csindex_xpc_dictionary_encode_status_with_error
+0x18ef1b65c  __TEXT,__text  _csquery_xpc_dictionary_decode_status_with_error
+0x18f049acc  __TEXT,__text  _csquery_xpc_dictionary_encode_status
+0x18f049adc  __TEXT,__text  _csquery_xpc_dictionary_encode_status_with_error
+0x18f053548  __TEXT,__text  _cssaCompareL1Score
+0x18f0a1108  __TEXT,__const  _defaultIdleTime
+0x18f0a1110  __TEXT,__const  _defaultIdleTimeLeeway
+0x1eb68d320  __DATA,__data  _defaultIndexName
+0x18f0a1118  __TEXT,__const  _defaultMaximumBatchSize
+0x18ef60a68  __TEXT,__text  _doubleFromJSON
+0x18ef60a84  __TEXT,__text  _escapeStringForMDQuery
+0x18f03f8ac  __TEXT,__text  _evaluatorHandleCallback
+0x18efc9254  __TEXT,__text  _extractNumberFromJSONValue
+0x18efc9184  __TEXT,__text  _extractStringFromJSONValue
+0x1ee14c3cc  __DATA_DIRTY,__common  _gCSQueryAttributeMappingArrayCount
+0x1ee14c3c8  __DATA_DIRTY,__common  _gCSQueryAttributeMappingArrayEntries
+0x1ee14c3d8  __DATA_DIRTY,__common  _gGameModeNotificationQueue
+0x18ef13954  __TEXT,__text  _hasInternalCSEntitlement
+0x18f074ef4  __TEXT,__text  _hasPrivateIndexUnsandboxEntitlement
+0x18f074ec8  __TEXT,__text  _initEntitlements
+0x18ef60a48  __TEXT,__text  _intFromJSON
+0x18ef315b4  __TEXT,__text  _isAppleInternalInstall
+0x18ef17240  __TEXT,__text  _isClientPhotosOrPhotosCtl
+0x18f077e4c  __TEXT,__text  _isDebugVerboseMode
+0x1e0a1f668  __DATA_CONST,__const  _kCSDataProtectionClassEntitlement
+0x1e0a1f660  __DATA_CONST,__const  _kCSDeveloperDataProtectionClassEntitlement
+0x1eb68d318  __DATA,__data  _kCSEndOfBatchMarker
+0x1e0a1f658  __DATA_CONST,__const  _kCSManagedIndexServiceName
+0x1e0a1f650  __DATA_CONST,__const  _kExternalFileKind
+0x1e0a1f648  __DATA_CONST,__const  _kExternalQueryIndependentScore
+0x1e0a1f640  __DATA_CONST,__const  _kExternalSemanticSimilarity0
+0x1e0a1f638  __DATA_CONST,__const  _kExternalSemanticSimilarity1
+0x1e0a1f630  __DATA_CONST,__const  _kExternalSemanticSimilarity2
+0x1e0a1f628  __DATA_CONST,__const  _kExternalTermWordDistance0
+0x1e0a1f620  __DATA_CONST,__const  _kExternalTermWordDistance1
+0x1e0a1f618  __DATA_CONST,__const  _kExternalTermWordDistance2
+0x1e0a1f610  __DATA_CONST,__const  _kExternalTermWordDistance3
+0x1e0a1f608  __DATA_CONST,__const  _kExternalTermWordDistance4
+0x1e0a1f600  __DATA_CONST,__const  _kExternalTimeDistance
+0x18f0a1070  __TEXT,__const  _kMaxTermWordDistance
+0x1e0a1f5f8  __DATA_CONST,__const  _kSecEntitlementCSIndexOpenJournalFile
+0x1e0a1f5f0  __DATA_CONST,__const  _kSecEntitlementCSIndexPhotosLibraryDeletion
+0x1e0a1f5e8  __DATA_CONST,__const  _kSecEntitlementCSInternal
+0x1e0a1f5e0  __DATA_CONST,__const  _kSecEntitlementCSManagedIndexNonsandbox
+0x1e0a1f5d8  __DATA_CONST,__const  _kSecEntitlementCSPower
+0x1e0a1f5d0  __DATA_CONST,__const  _kSecEntitlementCSPrivateIndexNonsandbox
+0x1e0a1f5c8  __DATA_CONST,__const  _kSecEntitlementCSPrivateIndexUUID
+0x1e0a1f5c0  __DATA_CONST,__const  _kSecEntitlementCSSearchAllowMail
+0x1e0a1f5b8  __DATA_CONST,__const  _kSecEntitlementCSSearchAllowedBundleIDs
+0x1e0a1f5b0  __DATA_CONST,__const  _kSecEntitlementCSSearchInternal
+0x1e0a1f5a8  __DATA_CONST,__const  _kSecEntitlementCoreSpotlightApplicationIdentifier
+0x18f0a1518  __TEXT,__const  _kSpotlightDataExpirationInterval
+0x1e0a1f5a0  __DATA_CONST,__const  _kSpotlightDataExpirationKey
+0x1e0a1f598  __DATA_CONST,__const  _kSyndicatedContentDeleted
+0x1e0a1f590  __DATA_CONST,__const  _kSyndicatedContentRefreshed
+0x18ef1d888  __TEXT,__text  _logForCSLogCategoryDaemonClient
+0x18ef13344  __TEXT,__text  _logForCSLogCategoryDefault
+0x18f077a50  __TEXT,__text  _logForCSLogCategoryDeleteAll
+0x18f0776f0  __TEXT,__text  _logForCSLogCategoryDonationTracing
+0x18f077b30  __TEXT,__text  _logForCSLogCategoryDrain
+0x18f077ac0  __TEXT,__text  _logForCSLogCategoryDrop
+0x18ef145f8  __TEXT,__text  _logForCSLogCategoryIndex
+0x18f0777b0  __TEXT,__text  _logForCSLogCategoryItems
+0x18f077970  __TEXT,__text  _logForCSLogCategoryPersonalization
+0x18f0779e0  __TEXT,__text  _logForCSLogCategoryPhotosQU
+0x18ef16258  __TEXT,__text  _logForCSLogCategoryQuery
+0x18f077890  __TEXT,__text  _logForCSLogCategoryRecs
+0x18f077900  __TEXT,__text  _logForCSLogCategoryUA
+0x18f077ba0  __TEXT,__text  _logForCSSignpostLongRunningQuery
+0x18f077820  __TEXT,__text  _logForCSSignpostPhotosNilCS
+0x18f077c10  __TEXT,__text  _logForCSSignpostQueryTelemetry
+0x1ee14c3d0  __DATA_DIRTY,__common  _logLock
+0x1eb68d310  __DATA,__data  _mobileMailIndexName
+0x18f05375c  __TEXT,__text  _object_releaseCallback
+0x18f053754  __TEXT,__text  _object_retainCallback
+0x1eb68d308  __DATA,__data  _priorityIndexName
+0x18efee84c  __TEXT,__text  _queryForPredicateOperator
+0x18ef15808  __TEXT,__text  _registerForGameModeChange
+0x1eb68d200  __DATA,__data  _sCSCodedDataDeallocatorLock
+0x18ef60948  __TEXT,__text  _stringFromJSON
+0x18f054648  __TEXT,__text  _updateDenseCandidatesAndReturnItemToBeSentToClientNow
+0x18f053764  __TEXT,__text  _updateTopHitCandidatesAndReturnItemToBeSentToClientNow
+```
+
+## Private
+
+```
+0x18ef13170  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPrivateAttributes) expirationDate]
+0x18ef13180  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPrivateAttributes) setUniqueIdentifier:]
+0x18ef1322c  __TEXT,__text  -[CSSearchableItemAttributeSet _setStringValue:forKey:]
+0x18ef132a4  __TEXT,__text  -[CSSearchableItem .cxx_destruct]
+0x18ef132dc  __TEXT,__text  -[CSSearchableItemAttributeSet .cxx_destruct]
+0x18ef1337c  __TEXT,__text  -[CSXPCConnection handleMessage:type:connection:]
+0x18ef1362c  __TEXT,__text  -[CSSearchableItem attributeSet]
+0x18ef13674  __TEXT,__text  -[CSSearchableItem isUpdate]
+0x18ef136ac  __TEXT,__text  -[CSSearchableItemAttributeSet customAttributes]
+0x18ef13728  __TEXT,__text  -[CSSearchableItemAttributeSet _getNonNullValueForKey:]
+0x18ef13898  __TEXT,__text  -[CSSearchableItem setExpirationDate:]
+0x18ef1398c  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPrivateAttributes) bundleID]
+0x18ef1399c  __TEXT,__text  -[CSSearchableItemAttributeSet attributeForKey:]
+0x18ef13d68  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) textContent]
+0x18ef13e1c  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) HTMLContentData]
+0x18ef13eb0  __TEXT,__text  -[CSSearchableItemAttributeSet searchableItemFlags]
+0x18ef13eb8  __TEXT,__text  -[CSXPCConnection initWithMachServiceName:]
+0x18ef13ec0  __TEXT,__text  -[CSXPCConnection initWithServiceName:machService:]
+0x18ef13ec8  __TEXT,__text  -[CSXPCConnection initWithServiceName:machService:uuid:]
+0x18ef1409c  __TEXT,__text  -[CSXPCConnection serviceName]
+0x18ef140a4  __TEXT,__text  ___75-[CSXPCConnection initMachServiceListenerWithName:enableConnectionLogging:]_block_invoke
+0x18ef142a8  __TEXT,__text  -[CSSearchableItem initWithUniqueIdentifier:domainIdentifier:attributeSet:]
+0x18ef143e8  __TEXT,__text  -[CSSearchableItemAttributeSet initWithAttributes:]
+0x18ef14498  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPrivateAttributes) uniqueIdentifier]
+0x18ef144a8  __TEXT,__text  -[CSSearchableItem bundleID]
+0x18ef144e8  __TEXT,__text  -[CSSearchableItemAttributeSet customAttributeDictionary]
+0x18ef14630  __TEXT,__text  _logForCSLogCategoryIndex.cold.1
+0x18ef14644  __TEXT,__text  -[CSXPCConnection previouslyInitialized]
+0x18ef14650  __TEXT,__text  -[CSXPCConnection queue]
+0x18ef14658  __TEXT,__text  -[CSXPCConnection connection]
+0x18ef147e8  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef147f8  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef14808  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef14818  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef14828  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef14838  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef14848  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef14858  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef14868  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef14878  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef14888  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef14898  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef148a8  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef148b4  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef148c4  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef148d4  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef148e0  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef148f0  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef1491c  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef1492c  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef1493c  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef1494c  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef1495c  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef14988  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef14998  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef149a8  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef149b8  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef149c8  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef149d8  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef149e8  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef149f8  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef14a08  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef14a18  __TEXT,__text  ___Block_byref_object_copy_
+0x18ef14a28  __TEXT,__text  ___29-[CSXPCConnection connection]_block_invoke
+0x18ef14c98  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14ca0  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14ca8  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14cb0  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14cb8  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14cc0  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14cc8  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14cd0  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14cd8  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14ce0  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14ce8  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14cf0  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14cf8  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d00  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d08  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d10  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d18  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d20  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d28  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d30  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d38  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d40  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d48  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d50  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d58  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d60  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d68  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d70  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d78  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d80  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d88  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d90  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14d98  __TEXT,__text  ___Block_byref_object_dispose_
+0x18ef14da0  __TEXT,__text  -[CSSearchableIndex _initWithName:protectionClass:bundleIdentifier:options:disableBatching:]
+0x18ef14f24  __TEXT,__text  +[CSSearchableIndex initialize]
+0x18ef14f90  __TEXT,__text  ___logForCSLogCategoryIndex_block_invoke
+0x18ef14fc8  __TEXT,__text  -[CSXPCConnection sendMessageAsync:]
+0x18ef1501c  __TEXT,__text  +[CSIndexDelegateConnection sharedConnectionForUser:]
+0x18ef150b0  __TEXT,__text  ___53+[CSIndexDelegateConnection sharedConnectionForUser:]_block_invoke
+0x18ef15120  __TEXT,__text  -[CSXPCConnection setUser:]
+0x18ef15128  __TEXT,__text  -[CSXPCConnection _setUser:]
+0x18ef1512c  __TEXT,__text  -[CSXPCConnection setPrivateDaemon:]
+0x18ef15134  __TEXT,__text  ___38-[CSSearchableIndex _delegateCheckIn:]_block_invoke
+0x18ef151f4  __TEXT,__text  -[CSXPCConnection setNonLaunching:]
+0x18ef15214  __TEXT,__text  +[CSSearchableIndexRequest initialize]
+0x18ef15270  __TEXT,__text  ___33-[CSSearchableIndex requestQueue]_block_invoke
+0x18ef152b8  __TEXT,__text  ___41+[CSRequestQueue _requestQueueAttribute:]_block_invoke
+0x18ef1533c  __TEXT,__text  +[CSRequestQueue _requestQueueAttribute:].cold.1
+0x18ef15350  __TEXT,__text  ___34-[CSSearchableIndex throttleQueue]_block_invoke
+0x18ef1543c  __TEXT,__text  -[CSRequestQueue .cxx_construct]
+0x18ef15448  __TEXT,__text  +[CSRequestQueue _requestQueueAttribute:]
+0x18ef154ec  __TEXT,__text  ___registerForGameModeChange_block_invoke_3
+0x18ef155b4  __TEXT,__text  ___34-[CSSearchableIndex throttleQueue]_block_invoke_3
+0x18ef155f4  __TEXT,__text  _checkGameModeAndSuspendResume
+0x18ef15710  __TEXT,__text  -[CSSearchableIndex requestQueue]
+0x18ef15748  __TEXT,__text  -[CSSearchableIndex requestQueue].cold.1
+0x18ef1575c  __TEXT,__text  ___registerForGameModeChange_block_invoke
+0x18ef158bc  __TEXT,__text  _registerForGameModeChange.cold.1
+0x18ef158d0  __TEXT,__text  -[CSDataWrapper dealloc]
+0x18ef15930  __TEXT,__text  -[CSDataWrapper .cxx_destruct]
+0x18ef15968  __TEXT,__text  -[CSSearchableIndex fetchLastClientStateWithProtectionClass:forBundleID:clientStateName:options:completionHandler:]
+0x18ef15b20  __TEXT,__text  ___115-[CSSearchableIndex fetchLastClientStateWithProtectionClass:forBundleID:clientStateName:options:completionHandler:]_block_invoke
+0x18ef15cd0  __TEXT,__text  -[CSRequestQueue enqueue:]
+0x18ef160b0  __TEXT,__text  ___26-[CSRequestQueue enqueue:]_block_invoke
+0x18ef160e8  __TEXT,__text  ___34-[CSSearchableIndex throttleQueue]_block_invoke_2
+0x18ef16120  __TEXT,__text  -[CSSearchableIndexRequest _perform]
+0x18ef16190  __TEXT,__text  -[CSSearchQueryContext bundleIDs]
+0x18ef16198  __TEXT,__text  -[CSSearchQueryContext fetchAttributes]
+0x18ef161b0  __TEXT,__text  -[CSSearchQueryContext keyboardLanguage]
+0x18ef161b8  __TEXT,__text  -[CSSearchQueryContext init]
+0x18ef16290  __TEXT,__text  -[CSSearchQueryContext copyWithZone:]
+0x18ef16cc4  __TEXT,__text  -[CSSearchQuery initWithQueryString:context:]
+0x18ef16db8  __TEXT,__text  -[CSSearchQueryContext setEnableRecentSuggestions:]
+0x18ef16dc0  __TEXT,__text  -[CSSearchQueryContext setMaximumBatchSize:]
+0x18ef16dc8  __TEXT,__text  -[CSSearchQueryContext logToken]
+0x18ef16eb4  __TEXT,__text  CSFriendlyFieldNameTable::hash(char const*, unsigned int)
+0x18ef17298  __TEXT,__text  -[CSSearchQuery setupFetchAttributesForSearch]
+0x18ef17dec  __TEXT,__text  ___22-[CSSearchQuery start]_block_invoke
+0x18ef18080  __TEXT,__text  -[CSSearchQuery willStartQuery]
+0x18ef18504  __TEXT,__text  -[CSSearchQueryContext lowPriority]
+0x18ef18510  __TEXT,__text  ___41-[CSSearchConnection startQuery:context:]_block_invoke
+0x18ef1863c  __TEXT,__text  -[CSSearchConnection startQuery:context:]
+0x18ef18934  __TEXT,__text  -[CSSearchQuery debugDescriptionWithQueryString:]
+0x18ef18d2c  __TEXT,__text  -[CSXPCConnection sendMessageAsync:completion:]
+0x18ef18e44  __TEXT,__text  -[CSSearchQueryContext entitledAttributes]
+0x18ef18e4c  __TEXT,__text  -[CSSearchQueryContext dealloc]
+0x18ef18e9c  __TEXT,__text  -[CSSearchQueryContext .cxx_destruct]
+0x18ef190d8  __TEXT,__text  -[CSSearchQueryContext pommes]
+0x18ef190e4  __TEXT,__text  -[CSSearchQueryContext nonTopHitFetchAttributeIndexesBits]
+0x18ef190ec  __TEXT,__text  -[CSSearchQueryContext queryEmbeddings]
+0x18ef190f4  __TEXT,__text  -[CSSearchQueryContext setMountPoints:]
+0x18ef19100  __TEXT,__text  ___49+[CSXPCConnection copyNSStringArrayFromXPCArray:]_block_invoke
+0x18ef1915c  __TEXT,__text  ___57-[CSFileProviderDomainMonitor removedDomainFilterQueries]_block_invoke
+0x18ef19548  __TEXT,__text  -[CSSearchQueryContext attribute]
+0x18ef19554  __TEXT,__text  -[CSSearchQueryContext hasFreeTextQuery]
+0x18ef1955c  __TEXT,__text  -[CSSearchableItem setAttributeSet:]
+0x18ef1971c  __TEXT,__text  -[CSSearchableItemAttributeSet _setValue:withClass:forKey:copy:]
+0x18ef1986c  __TEXT,__text  -[CSSearchableItemAttributeSet _setDateValue:forKey:]
+0x18ef198e4  __TEXT,__text  -[CSDecoder dealloc]
+0x18ef19934  __TEXT,__text  -[CSDecoder .cxx_destruct]
+0x18ef1996c  __TEXT,__text  +[CSGenerativeModelsAvailabilityManager sharedInstance]
+0x18ef19a00  __TEXT,__text  -[_MDExtensionManager indexExtensionsByBundleID]
+0x18ef19ab0  __TEXT,__text  -[CSSearchableItem uniqueIdentifier]
+0x18ef19af0  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPrivateAttributes) setExpirationDate:]
+0x18ef19b00  __TEXT,__text  -[CSSearchableIndex initWithName:bundleIdentifier:]
+0x18ef19b10  __TEXT,__text  -[CSSearchableIndex setIndexDelegate:]
+0x18ef19bf0  __TEXT,__text  -[CSSearchQueryContext generateSuggestions]
+0x18ef19bfc  __TEXT,__text  +[CSXPCConnection dataWrapperForKey:sizeKey:fromXPCDictionary:]
+0x18ef19c0c  __TEXT,__text  ___47-[CSXPCConnection sendMessageAsync:completion:]_block_invoke
+0x18ef19d5c  __TEXT,__text  ___115-[CSSearchableIndex fetchLastClientStateWithProtectionClass:forBundleID:clientStateName:options:completionHandler:]_block_invoke_2
+0x18ef19ec4  __TEXT,__text  -[CSSearchableIndexRequest _finishWithError:]
+0x18ef1a484  __TEXT,__text  ___115-[CSSearchableIndex fetchLastClientStateWithProtectionClass:forBundleID:clientStateName:options:completionHandler:]_block_invoke_3
+0x18ef1a538  __TEXT,__text  +[CSXPCConnection copyNSStringForKey:fromXPCDictionary:]
+0x18ef1a570  __TEXT,__text  -[CSSearchQueryContext disableSemanticSearch]
+0x18ef1a57c  __TEXT,__text  -[CSSearchQueryContext reason]
+0x18ef1a584  __TEXT,__text  +[CSPowerHUD sharedInstance]
+0x18ef1a5bc  __TEXT,__text  ___88-[CSSearchQuery didReturnResults:resultsData:oidData:protectionClass:completionHandler:]_block_invoke
+0x18ef1aca8  __TEXT,__text  ___34-[CSSearchConnection handleReply:]_block_invoke
+0x18ef1ad24  __TEXT,__text  -[CSSearchConnection handleReply:]
+0x18ef1b068  __TEXT,__text  -[CSSearchQueryContext live]
+0x18ef1b074  __TEXT,__text  -[CSSearchQuery _finishWithError:]
+0x18ef1b4f4  __TEXT,__text  ___50-[CSSearchConnection sendMessageAsync:completion:]_block_invoke
+0x18ef1b504  __TEXT,__text  ___41-[CSSearchConnection startQuery:context:]_block_invoke_2
+0x18ef1b740  __TEXT,__text  ___29-[CSXPCConnection connection]_block_invoke_2
+0x18ef1b7f0  __TEXT,__text  -[CSSearchQueryContext setEnableResultCountsPerSuggestion:]
+0x18ef1b7f8  __TEXT,__text  -[CSSearchQuery dealloc]
+0x18ef1b844  __TEXT,__text  -[CSSearchQuery .cxx_destruct]
+0x18ef1b9f0  __TEXT,__text  -[CSSearchQuery handleCompletion:]
+0x18ef1bbec  __TEXT,__text  -[CSSearchQueryContext suggestion]
+0x18ef1bbf4  __TEXT,__text  ___51-[CSSearchQuery _sendQueryAnalyticsEventWithError:]_block_invoke
+0x18ef1bbfc  __TEXT,__text  +[CSSearchableIndex defaultSearchableIndex]
+0x18ef1bc34  __TEXT,__text  -[CSSearchableIndex _fetchAttributes:protectionClass:bundleID:items:includeParents:options:completionHandler:]
+0x18ef1bebc  __TEXT,__text  ___104-[CSSearchableIndex slowFetchAttributes:protectionClass:bundleID:identifiers:options:completionHandler:]_block_invoke
+0x18ef1bf70  __TEXT,__text  ___24-[CSDeviceListener init]_block_invoke
+0x18ef1c094  __TEXT,__text  -[CSDeviceListener init]
+0x18ef1c15c  __TEXT,__text  -[CSDeviceListener init].cold.1
+0x18ef1c184  __TEXT,__text  -[CSPowerLog init]
+0x18ef1c274  __TEXT,__text  ___28+[CSPowerLog sharedInstance]_block_invoke
+0x18ef1c2ac  __TEXT,__text  +[CSPowerLog sharedInstance]
+0x18ef1c340  __TEXT,__text  +[CSDeviceListener sharedListener]
+0x18ef1c378  __TEXT,__text  +[CSDeviceListener sharedListener].cold.1
+0x18ef1c38c  __TEXT,__text  ___34+[CSDeviceListener sharedListener]_block_invoke
+0x18ef1c3bc  __TEXT,__text  _logForCSLogCategoryDefault.cold.1
+0x18ef1c3d0  __TEXT,__text  ___logForCSLogCategoryDefault_block_invoke
+0x18ef1c408  __TEXT,__text  +[CSInlineDonation _inlineDonationWithOverrideBundleID:protectionClass:addOrUpdateItems:associatedCacheContent:deleteItemIdentifiers:deleteDomainIdentifiers:deleteAllItems:clientStateName:updatedClientState:expectedClientState:itemsDataSize:textDataSize:options:donationType:]
+0x18ef1c934  __TEXT,__text  -[CSSearchableIndex indexSearchableItems:deleteSearchableItemsWithIdentifiers:clientState:expectedClientState:clientStateName:updatingDonationProgress:protectionClass:forBundleID:options:reason:completionHandler:]
+0x18ef1ce64  __TEXT,__text  -[CSDeviceListener onBattery]
+0x18ef1ce74  __TEXT,__text  _CSQueryPowerState
+0x18ef1ceec  __TEXT,__text  _CSQueryPowerStateAsync
+0x18ef1cf34  __TEXT,__text  ___CSQueryPowerStateAsync_block_invoke
+0x18ef1cf38  __TEXT,__text  -[CSSearchQuery queryString]
+0x18ef1cf40  __TEXT,__text  -[CSSearchQueryContext setCurrentTime:]
+0x18ef1cf48  __TEXT,__text  -[CSSearchQueryContext priorityIndexQuery]
+0x18ef1cf50  __TEXT,__text  -[CSSearchQueryContext setOwnerToken:]
+0x18ef1cf58  __TEXT,__text  -[CSSearchQueryContext setAnswerAttributes:]
+0x18ef1cf64  __TEXT,__text  -[CSSearchQueryContext setFilterTopHits:]
+0x18ef1cf84  __TEXT,__text  -[CSSearchQueryContext computePhotosDerivedAttributes]
+0x18ef1cf8c  __TEXT,__text  -[CSSearchQueryContext compiledRankingFactsConfiguration]
+0x18ef1d02c  __TEXT,__text  -[CSSearchQueryContext setEmbeddingRelevanceThreshold:]
+0x18ef1d034  __TEXT,__text  -[CSSearchQueryContext attributedUserQuery]
+0x18ef1d03c  __TEXT,__text  -[CSSearchQueryContext disableResultStreaming]
+0x18ef1d048  __TEXT,__text  -[CSSearchableItemAttributeSet initWithCoder:]
+0x18ef1d538  __TEXT,__text  +[CSXPCConnection copyNSStringArrayFromXPCArray:]
+0x18ef1d5fc  __TEXT,__text  -[CSSearchQueryContext queryID]
+0x18ef1d604  __TEXT,__text  -[CSSearchQueryContext setShortcutBit:]
+0x18ef1d60c  __TEXT,__text  -[CSSearchQueryContext qos]
+0x18ef1d614  __TEXT,__text  -[CSSearchQueryContext setEmbeddingGenerationTimeout:]
+0x18ef1d61c  __TEXT,__text  -[CSCoder init]
+0x18ef1d698  __TEXT,__text  -[CSCoder .cxx_destruct]
+0x18ef1d6a4  __TEXT,__text  -[CSCoder dealloc]
+0x18ef1d704  __TEXT,__text  -[NSString(CSCoderAdditions) encodeWithCSCoder:]
+0x18ef1d738  __TEXT,__text  -[CSXPCConnection initMachServiceListenerWithName:]
+0x18ef1d740  __TEXT,__text  -[CSXPCConnection initMachServiceListenerWithName:enableConnectionLogging:]
+0x18ef1d880  __TEXT,__text  -[CSXPCConnection startListener]
+0x18ef1d8c0  __TEXT,__text  _logForCSLogCategoryDaemonClient.cold.1
+0x18ef1d8d4  __TEXT,__text  ___logForCSLogCategoryDaemonClient_block_invoke
+0x18ef1d90c  __TEXT,__text  ___41-[CSInlineDonation performDonationAsync:]_block_invoke
+0x18ef1da54  __TEXT,__text  ___getCCSetDescriptorClass_block_invoke
+0x18ef1daac  __TEXT,__text  _CascadeSetsLibrary
+0x18ef1dbac  __TEXT,__text  ___125-[CSSearchableIndex deleteSearchableItemsWithDomainIdentifiers:protectionClass:forBundleID:options:reason:completionHandler:]_block_invoke_2
+0x18ef1ddbc  __TEXT,__text  -[CSInlineDonation _perform:]
+0x18ef1e7e0  __TEXT,__text  -[CSSearchableIndex deleteSearchableItemsWithDomainIdentifiers:protectionClass:forBundleID:options:reason:completionHandler:]
+0x18ef1ead4  __TEXT,__text  _getCCSetDonationClass
+0x18ef1eba8  __TEXT,__text  _add_dispatch_data_to_xpc_dict
+0x18ef1ec38  __TEXT,__text  +[CSInlineDonation isInlineDocumentCacheEnabledForBundleID:]
+0x18ef1ed20  __TEXT,__text  +[CSIndexConnection sharedConnectionForUser:]
+0x18ef1edb4  __TEXT,__text  -[CSInlineDonation donationTimestamp]
+0x18ef1edbc  __TEXT,__text  ___125-[CSSearchableIndex deleteSearchableItemsWithDomainIdentifiers:protectionClass:forBundleID:options:reason:completionHandler:]_block_invoke
+0x18ef1ef2c  __TEXT,__text  +[CSSearchableIndex defaultSearchableIndex].cold.1
+0x18ef1ef40  __TEXT,__text  ___43+[CSSearchableIndex defaultSearchableIndex]_block_invoke
+0x18ef1ef8c  __TEXT,__text  -[CSInlineDonation .cxx_destruct]
+0x18ef1f018  __TEXT,__text  -[CSDecoder decode]
+0x18ef1f1d0  __TEXT,__text  -[CoreSpotlightPreferences notifyToken]
+0x18ef1f1d8  __TEXT,__text  -[CSGenerativeModelsAvailabilityManager isSemanticSearchAvailable]
+0x18ef1f1fc  __TEXT,__text  -[CSGenerativeModelsAvailabilityManager _statusForUseCase:]
+0x18ef1f390  __TEXT,__text  -[CSGenerativeModelsAvailabilityManager init]
+0x18ef1f558  __TEXT,__text  ___getGMAvailabilityWrapperClass_block_invoke
+0x18ef1f69c  __TEXT,__text  ___55+[CSGenerativeModelsAvailabilityManager sharedInstance]_block_invoke
+0x18ef1f6c8  __TEXT,__text  -[CSSearchQueryContext includeUserActivities]
+0x18ef1f960  __TEXT,__text  -[CSPrivateSearchableIndex addExtensionToken:indexPath:connection:]
+0x18ef1fb48  __TEXT,__text  -[CSSearchableIndex initWithName:protectionClass:bundleIdentifier:]
+0x18ef1fb50  __TEXT,__text  -[CSSearchableIndex xpc_dictionary_for_command:requiresInitialization:]
+0x18ef1fc30  __TEXT,__text  -[CSUnhousedSearchableIndex resolvedIndexPath]
+0x18ef1fe20  __TEXT,__text  -[CSSearchableIndex beginIndexBatch]
+0x18ef1fee4  __TEXT,__text  -[CSSearchableIndex endIndexBatchWithExpectedClientState:newClientState:critical:reason:updatingDonationProgres:completionHandler:]
+0x18ef200e4  __TEXT,__text  ___131-[CSSearchableIndex endIndexBatchWithExpectedClientState:newClientState:critical:reason:updatingDonationProgres:completionHandler:]_block_invoke
+0x18ef204cc  __TEXT,__text  ___213-[CSSearchableIndex indexSearchableItems:deleteSearchableItemsWithIdentifiers:clientState:expectedClientState:clientStateName:updatingDonationProgress:protectionClass:forBundleID:options:reason:completionHandler:]_block_invoke
+0x18ef20f0c  __TEXT,__text  ___213-[CSSearchableIndex indexSearchableItems:deleteSearchableItemsWithIdentifiers:clientState:expectedClientState:clientStateName:updatingDonationProgress:protectionClass:forBundleID:options:reason:completionHandler:]_block_invoke_2
+0x18ef20fcc  __TEXT,__text  +[CSInlineDonation inlineAddOrUpdateItems:associatedCacheContent:deleteItemIdentifiers:overrideBundleID:protectionClass:clientStateName:updatedClientState:expectedClientState:itemsDataSize:textDataSize:options:]
+0x18ef21028  __TEXT,__text  +[CSInlineDonation translator]
+0x18ef210a8  __TEXT,__text  +[CSInlineDonation translator].cold.1
+0x18ef210bc  __TEXT,__text  ___30+[CSInlineDonation translator]_block_invoke
+0x18ef211cc  __TEXT,__text  ___getLNSpotlightCascadeTranslatorClass_block_invoke
+0x18ef21310  __TEXT,__text  -[CSSearchableItem expirationDate]
+0x18ef21350  __TEXT,__text  -[CSSearchableItemAttributeSet mutableAttributes]
+0x18ef213cc  __TEXT,__text  -[CSSearchableItem setUniqueIdentifier:]
+0x18ef21420  __TEXT,__text  -[CSSearchableItem setIsUpdate:]
+0x18ef21474  __TEXT,__text  -[CSSearchableIndexRequest start]
+0x18ef21550  __TEXT,__text  -[CSSearchQuery foundItemCount]
+0x18ef2158c  __TEXT,__text  -[CSSearchableIndexRequest retryIfNecessaryWithError:]
+0x18ef21600  __TEXT,__text  ___79-[CSUnhousedSearchableIndex xpc_dictionary_for_command:requiresInitialization:]_block_invoke
+0x18ef21698  __TEXT,__text  _initEntitlements.cold.1
+0x18ef21698  __TEXT,__text  _initEntitlements.cold.1
+0x18ef21698  __TEXT,__text  _initEntitlements.cold.1
+0x18ef21698  __TEXT,__text  _initEntitlements.cold.1
+0x18ef21698  __TEXT,__text  _initEntitlements.cold.1
+0x18ef2169c  __TEXT,__text  ___initEntitlements_block_invoke
+0x18ef21d84  __TEXT,__text  +[CSUnhousedIndexConnection unhousedIndexConnectionForToken:]
+0x18ef21f1c  __TEXT,__text  +[CSUnhousedIndexConnection unhousedIndexConnectionForToken:].cold.2
+0x18ef21f44  __TEXT,__text  -[CSPrivateSearchableIndex defaultIndexPath]
+0x18ef21f98  __TEXT,__text  ___61+[CSUnhousedIndexConnection unhousedIndexConnectionForToken:]_block_invoke
+0x18ef21fd0  __TEXT,__text  +[CSPrivateIndexConnection connectionUUID:]
+0x18ef222dc  __TEXT,__text  -[CSSearchQueryContext hasReadPurpose]
+0x18ef222e4  __TEXT,__text  -[CSSearchQueryContext sourceOptions]
+0x18ef222ec  __TEXT,__text  -[CSSearchQueryContext rankingType]
+0x18ef222f4  __TEXT,__text  -[CSSearchQueryContext setDisableBlockingOnIndex:]
+0x18ef22314  __TEXT,__text  -[CSPowerLog logWithBundleID:indexOperation:itemCount:reason:]
+0x18ef22330  __TEXT,__text  -[CSSearchQueryContext initWithXPCDictionary:]
+0x18ef2301c  __TEXT,__text  -[CSSearchQueryContext minCount]
+0x18ef23024  __TEXT,__text  -[CSSearchQueryContext setLowRecencyBit:]
+0x18ef2302c  __TEXT,__text  -[CSSearchQueryContext setExcludePhotos:]
+0x18ef23034  __TEXT,__text  -[CSSearchQuery handleGatherEnded]
+0x18ef230b0  __TEXT,__text  _logForCSLogCategoryQuery.cold.1
+0x18ef230c4  __TEXT,__text  +[CSSearchQuery initialize]
+0x18ef23190  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPrivateAttributes) setBundleID:]
+0x18ef231a0  __TEXT,__text  -[CSSearchQueryContext filterQueries]
+0x18ef231a8  __TEXT,__text  -[CSSearchQueryContext setPriorityIndexQuery:]
+0x18ef231b0  __TEXT,__text  -[CSSearchQueryContext excludePhotos]
+0x18ef231b8  __TEXT,__text  -[CSSearchQueryContext disableBlockingOnIndex]
+0x18ef231c4  __TEXT,__text  -[CSSearchQueryContext setFetchAttributes:]
+0x18ef2323c  __TEXT,__text  -[CSSearchQueryContext setHighMatchBit:]
+0x18ef23244  __TEXT,__text  -[CSIndexJob .cxx_destruct]
+0x18ef2330c  __TEXT,__text  -[CSSearchableIndex dealloc]
+0x18ef23398  __TEXT,__text  -[CSSearchableIndex .cxx_destruct]
+0x18ef23420  __TEXT,__text  +[CSXPCConnection dataWrapperForKey:sizeKey:fromXPCDictionary:allowWritableSharedMemory:]
+0x18ef2354c  __TEXT,__text  ___45+[CSIndexConnection sharedConnectionForUser:]_block_invoke
+0x18ef23608  __TEXT,__text  -[CSXPCConnection setPreviouslyInitialized:]
+0x18ef23610  __TEXT,__text  -[CSSearchableIndex throttle:]
+0x18ef23724  __TEXT,__text  -[CSSearchableItemAttributeSet setSearchableItemFlags:]
+0x18ef2372c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef23744  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef2375c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef2375c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef2375c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef2375c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef2375c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef2375c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef2375c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef2375c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef2375c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef2375c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef2375c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef2375c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef2375c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef2375c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef2375c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef23768  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef23768  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef23768  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef23768  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef23768  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef23768  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef23778  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef23778  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef23778  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef23778  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef23778  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef23778  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef23778  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef23778  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef23778  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef23778  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18ef2378c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef237ac  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef237cc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef237cc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef237cc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef237cc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef237cc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef237cc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef237cc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef237cc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef237e0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef237f4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef2380c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef2382c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef23850  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef23870  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x18ef23870  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x18ef2387c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef23890  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef238a4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef238b8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef238cc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef238cc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef238dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef2390c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef23920  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef23948  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef23968  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x18ef23968  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x18ef2397c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef23990  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef239a4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef239b8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef239d8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18ef239f8  __TEXT,__text  -[CSSearchableIndexRequest dealloc]
+0x18ef23aa0  __TEXT,__text  ___75-[CSSearchableIndexRequest retryIfNecessaryWithError:dataWrapper:xpcValue:]_block_invoke_6
+0x18ef23aac  __TEXT,__text  -[CSSearchableIndexRequest .cxx_destruct]
+0x18ef23b38  __TEXT,__text  ___45-[CSSearchableIndexRequest _finishWithError:]_block_invoke_2
+0x18ef23b7c  __TEXT,__text  ___115-[CSSearchableIndex fetchLastClientStateWithProtectionClass:forBundleID:clientStateName:options:completionHandler:]_block_invoke_4
+0x18ef23c48  __TEXT,__text  ___79-[CSSearchableIndex addInteraction:bundleID:protectionClass:completionHandler:]_block_invoke_3
+0x18ef23cb0  __TEXT,__text  ___45-[CSSearchableIndexRequest _finishWithError:]_block_invoke_6
+0x18ef23cf0  __TEXT,__text  -[CSSearchableItemAttributeSet initWithItemContentType:]
+0x18ef23dcc  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPrivateAttributes) setSubtitle:]
+0x18ef23ed0  __TEXT,__text  -[CSSearchableItemAttributeSet copyWithZone:]
+0x18ef23f00  __TEXT,__text  -[CSSearchableItemAttributeSet initWithAttributeSet:]
+0x18ef23f6c  __TEXT,__text  -[CSSearchableItemAttributeSet _copyInternalsFrom:]
+0x18ef24050  __TEXT,__text  -[CSSearchableItemAttributeSet decoder]
+0x18ef24058  __TEXT,__text  -[CSSearchableItemAttributeSet codedAttributes]
+0x18ef2406c  __TEXT,__text  -[CSSearchableItemAttributeSet codedCustomAttributes]
+0x18ef24080  __TEXT,__text  -[CSSearchableItemAttributeSet hasCodedCustomAttributes]
+0x18ef24088  __TEXT,__text  -[CSSearchableItemAttributeSet(CSCoderAdditions) encodeWithCSCoder:includeText:]
+0x18ef2435c  __TEXT,__text  -[NSDictionary(CSCoderAdditions) encodeKeysAndValuesWithCSCoder:filterBlock:]
+0x18ef24744  __TEXT,__text  -[CSSearchableItemAttributeSet encodeWithCoder:]
+0x18ef24810  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPrivateAttributes) setApplicationName:]
+0x18ef24820  __TEXT,__text  -[CSSearchableItem(Internal) _standardizeNumericAnalysisTags:forAttributeSet:primaryAttribute:analysisAttributes:specializedAttributes:standardizeBlock:]
+0x18ef24e2c  __TEXT,__text  -[CSSearchableItem(Internal) _standardizeMarkAs:]
+0x18ef24e5c  __TEXT,__text  ___swift_instantiateConcreteTypeFromMangledNameAbstractV2
+0x18ef24ee0  __TEXT,__text  -[CSSearchableItem(Internal) _standardizeDeprecatedProperties:]
+0x18ef24ee4  __TEXT,__text  -[CSSearchableItem(Internal) _standardizeHTML:]
+0x18ef25004  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) _standardizeMarkAs]
+0x18ef256d8  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) userSharedSentDate]
+0x18ef256e8  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) userSharedReceivedDate]
+0x18ef256f8  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) userPrintedDate]
+0x18ef25708  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) userDownloadedDate]
+0x18ef25718  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) userModifiedDate]
+0x18ef25728  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) userCreatedDate]
+0x18ef25738  __TEXT,__text  -[CSSearchableItem(Internal) _parseEmailHeadersForFeatures:]
+0x18ef25a58  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) emailHeaders]
+0x18ef25a68  __TEXT,__text  -[CSSearchableItem(Internal) _standardizeSiriShortcuts:]
+0x18ef25bcc  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) contentType]
+0x18ef25bdc  __TEXT,__text  -[CSSearchableItem(Internal) _standardizePortrait:]
+0x18ef25c94  __TEXT,__text  +[CSSuggestion emptySuggestion]
+0x18ef25ce4  __TEXT,__text  -[CSSuggestion initWithUserString:currentSuggestion:updatedSuggestionTokens:]
+0x18ef25d88  __TEXT,__text  -[CSSuggestion commonInitWithUserString:currentSuggestion:currentSuggestionToken:updatedSuggestionTokens:]
+0x18ef25e44  __TEXT,__text  -[CSSuggestion commonInitWithUserString:currentSuggestionToken:previousSuggestionTokens:updatedSuggestionTokens:enableFragments:]
+0x18ef25f50  __TEXT,__text  -[CSSuggestion setEnableFragments:]
+0x18ef25fd0  __TEXT,__text  ___30-[CSIndexingQueue queueItems:]_block_invoke
+0x18ef25fdc  __TEXT,__text  -[CSIndexingQueue _queueItems:]
+0x18ef266ac  __TEXT,__text  -[CSSearchableIndex _initWithName:protectionClass:bundleIdentifier:options:]
+0x18ef266b4  __TEXT,__text  -[CSIndexJob setReason:]
+0x18ef266c0  __TEXT,__text  ___getCCSetDonationClass_block_invoke
+0x18ef26764  __TEXT,__text  -[CSInlineDonation _resolveDonationName]
+0x18ef2687c  __TEXT,__text  -[CSInlineDonation isSynchronousDonationEnabled]
+0x18ef26884  __TEXT,__text  -[CSInlineDonation performDonationAsync:]
+0x18ef26aa8  __TEXT,__text  +[CSInlineDonation sharedQueue]
+0x18ef26ae0  __TEXT,__text  +[CSInlineDonation sharedQueue].cold.1
+0x18ef26af4  __TEXT,__text  ___31+[CSInlineDonation sharedQueue]_block_invoke
+0x18ef26b4c  __TEXT,__text  -[CSSearchableIndex initWithName:]
+0x18ef26b5c  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPrivateAttributes) requiresImport]
+0x18ef26b6c  __TEXT,__text  ___39-[CSSearchableIndex indexUserActivity:]_block_invoke
+0x18ef26cfc  __TEXT,__text  -[CSSearchableItemAttributeSet attributes]
+0x18ef26e0c  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPortrait_Private) portraitNamedEntities]
+0x18ef26e1c  __TEXT,__text  -[CSLocalizedString copyWithZone:]
+0x18ef26e20  __TEXT,__text  ___131-[CSSearchableIndex endIndexBatchWithExpectedClientState:newClientState:critical:reason:updatingDonationProgres:completionHandler:]_block_invoke_2
+0x18ef26e38  __TEXT,__text  -[CSSearchableIndex _commonInit]
+0x18ef26ed8  __TEXT,__text  -[CSSearchableIndex _validateOperationWithIdentifiers:]
+0x18ef26ee4  __TEXT,__text  -[CSSearchableIndex _validateOperationWithItems:identifiers:]
+0x18ef273d0  __TEXT,__text  -[CSSearchableIndex activityQueue]
+0x18ef27418  __TEXT,__text  -[CSSearchableIndex throttleQueue]
+0x18ef274ac  __TEXT,__text  -[CSSearchableIndex connection]
+0x18ef274c0  __TEXT,__text  +[CSSearchableIndex isIndexingAvailable]
+0x18ef274c8  __TEXT,__text  -[CSSearchableIndex deleteSearchableItemsWithDomainIdentifiers:completionHandler:]
+0x18ef274e0  __TEXT,__text  ___33+[CSSearchableIndex mainBundleID]_block_invoke
+0x18ef27554  __TEXT,__text  +[CSSearchableIndex mainBundleID]
+0x18ef2758c  __TEXT,__text  +[CSSearchableIndex mainBundleID].cold.1
+0x18ef275a0  __TEXT,__text  +[CSInlineDonation inlineDeleteDomainIdentifiers:overrideBundleID:protectionClass:options:]
+0x18ef275f4  __TEXT,__text  -[CSSearchableIndexRequest retryIfNecessaryWithError:dataWrapper:xpcValue:]
+0x18ef27910  __TEXT,__text  -[CSUnhousedSearchableIndex dealloc]
+0x18ef27970  __TEXT,__text  -[CSUnhousedSearchableIndex .cxx_destruct]
+0x18ef279b4  __TEXT,__text  -[CSSearchableIndex unthrottle:]
+0x18ef27ad4  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPrivateAttributes) domainIdentifier]
+0x18ef27ae4  __TEXT,__text  -[CSSearchQuery(CSSearchQueryResultCreation) copyCSSearchableItemWithValues:valueCount:attrKeys:protectionClass:mappingStrategy:attrInfo:requestedAttributeCount:unpackInfo:userFSDomain:]
+0x18ef28164  __TEXT,__text  ___46-[CSSearchConnection initWithMachServiceName:]_block_invoke_2
+0x18ef281d4  __TEXT,__text  ___109-[CSSearchQuery processResultFromPlist:atIndex:protectionClass:oids:oidCount:addItems:updateItems:moveItems:]_block_invoke
+0x18ef28478  __TEXT,__text  -[CSSearchQuery processLiveResultsData:oidData:protectionClass:]
+0x18ef29298  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) isUploaded]
+0x18ef292a8  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) isDownloading]
+0x18ef292b8  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) isShared]
+0x18ef292c8  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) contentCreationDate]
+0x18ef292d8  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) lastUsedDate]
+0x18ef292e8  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) isUploading]
+0x18ef292f8  __TEXT,__text  -[CSSearchableItemAttributeSet isUserOwned]
+0x18ef29308  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) ownerName]
+0x18ef29318  __TEXT,__text  +[CSUnhousedIndexConnection removeUnhousedIndexConnectionForToken:]
+0x18ef2938c  __TEXT,__text  -[CSSearchQuery setupFetchAttributesForSearch].cold.1
+0x18ef293a0  __TEXT,__text  ___46-[CSSearchQuery setupFetchAttributesForSearch]_block_invoke
+0x18ef293b0  __TEXT,__text  create_AMArray(void const**)
+0x18ef2944c  __TEXT,__text  -[CSSearchQuery setupFetchAttributesForSearch].cold.2
+0x18ef29460  __TEXT,__text  ___CSQueryAttributeKeyMap_block_invoke
+0x18ef29514  __TEXT,__text  -[CSSearchQueryContext counting]
+0x18ef29520  __TEXT,__text  +[CSSearchConnection sharedSearchConnection]
+0x18ef29558  __TEXT,__text  ___46-[CSSearchConnection initWithMachServiceName:]_block_invoke
+0x18ef29564  __TEXT,__text  -[CSSearchConnection initWithMachServiceName:]
+0x18ef29600  __TEXT,__text  -[CSSearchQueryContext xpc_dictionary]
+0x18ef2a018  __TEXT,__text  +[CSXPCConnection dictionary:setStringArray:forKey:]
+0x18ef2a17c  __TEXT,__text  +[CSXPCConnection dictionary:setStringOrDictionaryArray:forKey:]
+0x18ef2a34c  __TEXT,__text  +[CSSearchConnection sharedSearchConnection].cold.1
+0x18ef2a360  __TEXT,__text  -[CSSearchConnection initWithMachServiceName:].cold.1
+0x18ef2a374  __TEXT,__text  -[CSSearchQueryContext completionAttributes]
+0x18ef2a37c  __TEXT,__text  -[CSSearchQueryContext completionWeights]
+0x18ef2a384  __TEXT,__text  -[CSSearchConnection init]
+0x18ef2a390  __TEXT,__text  ___44+[CSSearchConnection sharedSearchConnection]_block_invoke
+0x18ef2a3c0  __TEXT,__text  -[CSSearchQueryContext setQos:]
+0x18ef2a3c8  __TEXT,__text  -[CSSearchQueryContext rankingFactsConfiguration]
+0x18ef2a3d0  __TEXT,__text  _CSRedactString.cold.1
+0x18ef2a3d0  __TEXT,__text  _CSRedactString.cold.1
+0x18ef2a3d4  __TEXT,__text  -[CSSearchQueryContext privateQuery]
+0x18ef2a3e0  __TEXT,__text  ___CSShouldRedactForPrivacy_block_invoke
+0x18ef2a430  __TEXT,__text  -[CSSearchQuery copyResultsFromPlist:protectionClass:]
+0x18ef2aa00  __TEXT,__text  ___54-[CSSearchQuery copyResultsFromPlist:protectionClass:]_block_invoke_2
+0x18ef2ab70  __TEXT,__text  ___54-[CSSearchQuery copyResultsFromPlist:protectionClass:]_block_invoke_4
+0x18ef2acc4  __TEXT,__text  -[CSSearchableItemAttributeSet initWithKnownKeysDictionary:]
+0x18ef2ace8  __TEXT,__text  -[CSSearchableItemAttributeSet initWithMutableDictionary:]
+0x18ef2ad5c  __TEXT,__text  -[CSSearchableItem(Internal) initWithAttributeSet:]
+0x18ef2add0  __TEXT,__text  -[CSSearchableItem hash]
+0x18ef2ae08  __TEXT,__text  -[CSSearchQueryContext enableInstantAnswers]
+0x18ef2ae14  __TEXT,__text  -[CSSearchQuery processResultItems:]
+0x18ef2c7a0  __TEXT,__text  -[CSSearchQuery handleFoundItems:]
+0x18ef2cd3c  __TEXT,__text  -[CSCustomAttributeKey initWithKeyName:]
+0x18ef2cd50  __TEXT,__text  +[CSCustomAttributeKey _keyNameIsValid:]
+0x18ef2cdfc  __TEXT,__text  +[CSSearchableItemAttributeSet _allKeys]
+0x18ef2ce34  __TEXT,__text  +[CSSearchableItemAttributeSet _allKeys].cold.1
+0x18ef2ce48  __TEXT,__text  ___40+[CSSearchableItemAttributeSet _allKeys]_block_invoke
+0x18ef2e51c  __TEXT,__text  +[CSCustomAttributeKey _keyNameIsValid:].cold.1
+0x18ef2e530  __TEXT,__text  ___40+[CSCustomAttributeKey _keyNameIsValid:]_block_invoke
+0x18ef2e5a8  __TEXT,__text  -[CSSearchableItemAttributeSet initWithContentType:]
+0x18ef2e5f0  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) setDisplayName:]
+0x18ef2e600  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) setContentType:]
+0x18ef2e610  __TEXT,__text  -[CSSearchableItem init]
+0x18ef2e6c4  __TEXT,__text  -[CSSearchableItemAttributeSet init]
+0x18ef2e6cc  __TEXT,__text  +[CSXPCConnection dictionary:setPlistBytes:forKey:sizeKey:]
+0x18ef2e76c  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) fileProviderDomainIdentifier]
+0x18ef2e77c  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) fileSize]
+0x18ef2e78c  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) subItemCount]
+0x18ef2e79c  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) contentModificationDate]
+0x18ef2e7ac  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPrivateAttributes) userTags]
+0x18ef2e7bc  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) favoriteRank]
+0x18ef2e7cc  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) isTrashed]
+0x18ef2e7dc  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) displayName]
+0x18ef2e7ec  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) lastEditorName]
+0x18ef2e7fc  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) fileProviderID]
+0x18ef2e80c  __TEXT,__text  ___64-[CSSearchQuery processLiveResultsData:oidData:protectionClass:]_block_invoke
+0x18ef2e9e0  __TEXT,__text  -[CSSearchableIndexRequest setPerformBlock:]
+0x18ef2e9e8  __TEXT,__text  -[CSRequestQueue async:]
+0x18ef2ea90  __TEXT,__text  -[CSSearchQueryContext setLive:]
+0x18ef2eab0  __TEXT,__text  ___logForCSLogCategoryQuery_block_invoke
+0x18ef2eae8  __TEXT,__text  -[CSSearchQueryContext flags]
+0x18ef2eaf0  __TEXT,__text  -[CSSearchQueryContext setFlags:]
+0x18ef2eaf8  __TEXT,__text  -[CSSearchQueryContext protectionClasses]
+0x18ef2eb00  __TEXT,__text  -[CSSearchQueryContext setProtectionClasses:]
+0x18ef2eb0c  __TEXT,__text  -[CSSearchQueryContext setKeyboardLanguage:]
+0x18ef2eb18  __TEXT,__text  -[CSSearchQueryContext setFilterQueries:]
+0x18ef2eb20  __TEXT,__text  -[CSSearchQueryContext clientBundleID]
+0x18ef2eb28  __TEXT,__text  -[CSSearchQueryContext setClientBundleID:]
+0x18ef2eb34  __TEXT,__text  -[CSSearchQueryContext setBundleIDs:]
+0x18ef2eb40  __TEXT,__text  -[CSSearchQueryContext answerAttributes]
+0x18ef2eb48  __TEXT,__text  -[CSSearchQueryContext rankingQueries]
+0x18ef2eb50  __TEXT,__text  -[CSSearchQueryContext setRankingQueries:]
+0x18ef2eb5c  __TEXT,__text  -[CSSearchQueryContext additionalBundleIDs]
+0x18ef2eb64  __TEXT,__text  -[CSSearchQueryContext internal]
+0x18ef2eb70  __TEXT,__text  -[CSSearchQueryContext userQuery]
+0x18ef2eb78  __TEXT,__text  -[CSSearchQueryContext preferredLanguages]
+0x18ef2eb80  __TEXT,__text  -[CSSearchQueryContext additionalQueries]
+0x18ef2eb88  __TEXT,__text  -[CSSearchQueryContext setAdditionalQueries:]
+0x18ef2eb94  __TEXT,__text  -[CSSearchQueryContext setInstantAnswersQueries:]
+0x18ef2eba0  __TEXT,__text  -[CSSearchQueryContext setPreferredLanguages:]
+0x18ef2ebac  __TEXT,__text  -[CSSearchQueryContext markedTextArray]
+0x18ef2ebb4  __TEXT,__text  -[CSSearchQueryContext setMarkedTextArray:]
+0x18ef2ebc0  __TEXT,__text  -[CSSearchQueryContext shortcutBit]
+0x18ef2ebc8  __TEXT,__text  -[CSSearchQueryContext setMinL2Score:]
+0x18ef2ebd0  __TEXT,__text  -[CSSearchQuery initWithQueryString:queryContext:]
+0x18ef2ed10  __TEXT,__text  -[CSSearchQueryContext options]
+0x18ef2f318  __TEXT,__text  -[CSSearchQueryContext disableMetadataSearch]
+0x18ef2f324  __TEXT,__text  -[CSSearchQueryContext enableResultCountsPerSuggestion]
+0x18ef2f32c  __TEXT,__text  -[CSSearchQueryContext minL2Score]
+0x18ef2f334  __TEXT,__text  -[CSSearchQueryContext setAdditionalBundleIDs:]
+0x18ef2f340  __TEXT,__text  -[CSSearchQueryContext instantAnswersBundleIDs]
+0x18ef2f348  __TEXT,__text  -[CSSearchQueryContext setInstantAnswersBundleIDs:]
+0x18ef2f354  __TEXT,__text  -[CSSearchQueryContext instantAnswersQueries]
+0x18ef2f35c  __TEXT,__text  -[CSSearchQueryContext disableBundles]
+0x18ef2f364  __TEXT,__text  -[CSSearchQueryContext setDisableBundles:]
+0x18ef2f3b8  __TEXT,__text  -[CSSearchQueryContext prefsDisabledBundles]
+0x18ef2f3c0  __TEXT,__text  -[CSSearchQueryContext setPrefsDisabledBundles:]
+0x18ef2f3cc  __TEXT,__text  -[CSSearchQueryContext setUserQuery:]
+0x18ef2f3d8  __TEXT,__text  -[CSSearchQueryContext setSuggestion:]
+0x18ef2f3e4  __TEXT,__text  -[CSSearchQueryContext setHasReadPurpose:]
+0x18ef2f3ec  __TEXT,__text  -[CSSearchQueryContext hardFilterQuery]
+0x18ef2f3f4  __TEXT,__text  -[CSSearchQueryContext setHardFilterQuery:]
+0x18ef2f3fc  __TEXT,__text  -[CSSearchQueryContext groupingRules]
+0x18ef2f404  __TEXT,__text  -[CSSearchQueryContext setGroupingRules:]
+0x18ef2f40c  __TEXT,__text  -[CSSearchQueryContext setRankingType:]
+0x18ef2f414  __TEXT,__text  -[CSSearchQueryContext setFilterQuery:]
+0x18ef2f420  __TEXT,__text  -[CSSearchQueryContext strongRankingQueryCount]
+0x18ef2f428  __TEXT,__text  -[CSSearchQueryContext setStrongRankingQueryCount:]
+0x18ef2f430  __TEXT,__text  -[CSSearchQueryContext dominantRankingQueryCount]
+0x18ef2f438  __TEXT,__text  -[CSSearchQueryContext setDominantRankingQueryCount:]
+0x18ef2f440  __TEXT,__text  -[CSSearchQueryContext dominatedRankingQueryCount]
+0x18ef2f448  __TEXT,__text  -[CSSearchQueryContext setDominatedRankingQueryCount:]
+0x18ef2f450  __TEXT,__text  -[CSSearchQueryContext highMatchBit]
+0x18ef2f458  __TEXT,__text  -[CSSearchQueryContext filterQuery]
+0x18ef2f460  __TEXT,__text  -[CSSearchQueryContext maxCount]
+0x18ef2f468  __TEXT,__text  -[CSSearchQueryContext maxRankedResultCount]
+0x18ef2f470  __TEXT,__text  -[CSSearchQueryContext lowMatchBit]
+0x18ef2f478  __TEXT,__text  -[CSSearchQueryContext setLowMatchBit:]
+0x18ef2f480  __TEXT,__text  -[CSSearchQueryContext highRecencyBit]
+0x18ef2f488  __TEXT,__text  -[CSSearchQueryContext setHighRecencyBit:]
+0x18ef2f490  __TEXT,__text  -[CSSearchQueryContext lowRecencyBit]
+0x18ef2f498  __TEXT,__text  -[CSSearchQueryContext setMaxCount:]
+0x18ef2f4a0  __TEXT,__text  -[CSSearchQueryContext setMinCount:]
+0x18ef2f4a8  __TEXT,__text  -[CSSearchQueryContext setMaxRankedResultCount:]
+0x18ef2f4b0  __TEXT,__text  -[CSSearchQueryContext maxSuggestionCount]
+0x18ef2f4b8  __TEXT,__text  -[CSSearchQueryContext setMaxSuggestionCount:]
+0x18ef2f4c0  __TEXT,__text  -[CSSearchQueryContext setQueryID:]
+0x18ef2f4c8  __TEXT,__text  -[CSSearchQueryContext setMaxAge:]
+0x18ef2f4d0  __TEXT,__text  -[CSSearchQueryContext setAdvancedQuery:]
+0x18ef2f4d8  __TEXT,__text  -[CSSearchQueryContext maximumBatchSize]
+0x18ef2f4e0  __TEXT,__text  -[CSSearchQueryContext embeddingRelevanceThreshold]
+0x18ef2f4e8  __TEXT,__text  -[CSSearchQueryContext maxAge]
+0x18ef2f4f0  __TEXT,__text  -[CSSearchQueryContext embeddingGenerationTimeout]
+0x18ef2f4f8  __TEXT,__text  -[CSSearchQueryContext fsOnly]
+0x18ef2f504  __TEXT,__text  -[CSSearchQueryContext setFsOnly:]
+0x18ef2f524  __TEXT,__text  -[CSSearchQueryContext playback]
+0x18ef2f530  __TEXT,__text  -[CSSearchQueryContext setPlayback:]
+0x18ef2f550  __TEXT,__text  -[CSSearchQueryContext fuzzyMask]
+0x18ef2f55c  __TEXT,__text  -[CSSearchQueryContext setFuzzyMask:]
+0x18ef2f564  __TEXT,__text  -[CSSearchQueryContext fuzzyMatch]
+0x18ef2f570  __TEXT,__text  -[CSSearchQueryContext setFuzzyMatch:]
+0x18ef2f578  __TEXT,__text  -[CSSearchQueryContext userQueryOptions]
+0x18ef2f580  __TEXT,__text  -[CSSearchQueryContext setUserQueryOptions:]
+0x18ef2f588  __TEXT,__text  -[CSSearchQueryContext currentTime]
+0x18ef2f590  __TEXT,__text  -[CSSearchQueryContext grouped]
+0x18ef2f59c  __TEXT,__text  -[CSSearchQueryContext enablePhotosEntitySearch]
+0x18ef2f5a8  __TEXT,__text  -[CSSearchQueryContext isDateQueryContext]
+0x18ef2f5b4  __TEXT,__text  -[CSSearchQueryContext setOptions:]
+0x18ef2fb28  __TEXT,__text  -[CSSearchQueryContext scopes]
+0x18ef2fb30  __TEXT,__text  -[CSSearchQueryContext setScopes:]
+0x18ef2fb3c  __TEXT,__text  -[CSSearchQueryContext mountPoints]
+0x18ef2fb44  __TEXT,__text  -[CSSearchQueryContext setSourceOptions:]
+0x18ef2fb4c  __TEXT,__text  -[CSSearchQueryContext setReason:]
+0x18ef2fb58  __TEXT,__text  -[CSSearchQueryContext rewriteContext]
+0x18ef2fb60  __TEXT,__text  -[CSSearchQueryContext setRewriteContext:]
+0x18ef2fb6c  __TEXT,__text  -[CSSearchQueryContext enableSuggestionTokens]
+0x18ef2fb74  __TEXT,__text  -[CSSearchQueryContext setEnableSuggestionTokens:]
+0x18ef2fb7c  __TEXT,__text  -[CSSearchQueryContext enableRecentSuggestions]
+0x18ef2fb84  __TEXT,__text  -[CSSearchQueryContext currentTokenScope]
+0x18ef2fb8c  __TEXT,__text  -[CSSearchQueryContext setCurrentTokenScope:]
+0x18ef2fb94  __TEXT,__text  -[CSSearchQueryContext setEntitledAttributes:]
+0x18ef2fb9c  __TEXT,__text  -[CSSearchQueryContext customFieldSpecifications]
+0x18ef2fba4  __TEXT,__text  -[CSSearchQueryContext instantAnswersOverrideDate]
+0x18ef2fbac  __TEXT,__text  -[CSSearchQueryContext setInstantAnswersOverrideDate:]
+0x18ef2fbb8  __TEXT,__text  -[CSSearchQueryContext customResourceDirectory]
+0x18ef2fbc0  __TEXT,__text  -[CSSearchQueryContext setCustomResourceDirectory:]
+0x18ef2fbcc  __TEXT,__text  -[CSSearchQueryContext resultMatchingAttributes]
+0x18ef2fbd4  __TEXT,__text  -[CSSearchQueryContext queryUnderstandingOutput]
+0x18ef2fbdc  __TEXT,__text  -[CSSearchQueryContext setQueryUnderstandingOutput:]
+0x18ef2fbe4  __TEXT,__text  -[CSSearchQueryContext setQueryEmbeddings:]
+0x18ef2fbec  __TEXT,__text  -[CSSearchQueryContext setDisableResultStreaming:]
+0x18ef2fbf4  __TEXT,__text  -[CSSearchQueryContext setFilterOutHiddenApps:]
+0x18ef2fbfc  __TEXT,__text  -[CSSearchQueryContext setHasFreeTextQuery:]
+0x18ef2fc04  __TEXT,__text  -[CSSearchQueryContext setAttributedUserQuery:]
+0x18ef2fc10  __TEXT,__text  -[CSSearchQueryContext mailQueryID]
+0x18ef2fc18  __TEXT,__text  -[CSSearchQueryContext isUnsafeQuery]
+0x18ef2fc20  __TEXT,__text  -[CSSearchQueryContext setLogToken:]
+0x18ef2fc28  __TEXT,__text  -[CSSearchQueryContext ownerToken]
+0x18ef2fc30  __TEXT,__text  -[CSSearchQueryContext disableU2]
+0x18ef2fc3c  __TEXT,__text  -[CSSearchQueryContext setCustomFieldSpecifications:]
+0x18ef2fc48  __TEXT,__text  -[CSSearchQueryContext filterOutHiddenApps]
+0x18ef2fc50  __TEXT,__text  -[CSSearchQueryContext setResultMatchingAttributes:]
+0x18ef2fc5c  __TEXT,__text  -[CSSearchQueryContext feedbackQueryID]
+0x18ef2fc64  __TEXT,__text  -[CSSearchQueryContext setFeedbackQueryID:]
+0x18ef2fc6c  __TEXT,__text  -[CSSearchQueryContext advancedQuery]
+0x18ef2fc74  __TEXT,__text  -[CSSearchQueryContext setMailQueryID:]
+0x18ef2fc80  __TEXT,__text  -[CSSearchQueryContext setIsUnsafeQuery:]
+0x18ef2fc8c  __TEXT,__text  -[CSSearchQueryContext setComputePhotosDerivedAttributes:]
+0x18ef2fc94  __TEXT,__text  -[CSSearchQuery commonInitWithQueryString:queryContext:]
+0x18ef2ff9c  __TEXT,__text  -[CSSearchQuery commonInitWithQueryString:queryContext:].cold.1
+0x18ef2ffc4  __TEXT,__text  ___56-[CSSearchQuery commonInitWithQueryString:queryContext:]_block_invoke
+0x18ef3002c  __TEXT,__text  -[CSSearchQuery start]
+0x18ef30284  __TEXT,__text  -[CSPowerHUD writeToBiomeStreamWithBundleID:itemCount:baseOperation:]
+0x18ef30394  __TEXT,__text  -[CSSearchableIndexRequest initWithSearchableIndex:label:critical:]
+0x18ef3039c  __TEXT,__text  -[CSSearchQuery setCompletionHandler:]
+0x18ef303a4  __TEXT,__text  +[CSFileProviderContainerCache fpBundleIDs]
+0x18ef303dc  __TEXT,__text  -[CSSearchQueryContext setInternal:]
+0x18ef303f0  __TEXT,__text  -[CSSearchQueryContext setLowPriority:]
+0x18ef30410  __TEXT,__text  -[CSUserQueryContext setEnableRankedResults:]
+0x18ef30424  __TEXT,__text  -[CSSearchQueryContext setDisableSemanticSearch:]
+0x18ef30454  __TEXT,__text  +[CSXPCConnection copyNSStringOrDictArrayFromXPCArray:]
+0x18ef30524  __TEXT,__text  +[CSXPCConnection copyNSDataForKey:fromXPCDictionary:]
+0x18ef30570  __TEXT,__text  -[CSUserQueryContext maxResultCount]
+0x18ef30584  __TEXT,__text  -[CSSearchQueryContext setGenerateSuggestions:]
+0x18ef305a4  __TEXT,__text  -[CSUserQueryContext enableRankedResults]
+0x18ef305b8  __TEXT,__text  -[CSSearchQueryContext isMail]
+0x18ef30648  __TEXT,__text  -[CSFileProviderContainerCache filterForDisabledBundles:logForQuery:]
+0x18ef308fc  __TEXT,__text  -[CSSearchQueryContext queryEmbedding]
+0x18ef3093c  __TEXT,__text  ___23-[CSSearchQuery cancel]_block_invoke
+0x18ef309cc  __TEXT,__text  ___69-[CSFileProviderContainerCache filterForDisabledBundles:logForQuery:]_block_invoke
+0x18ef30f90  __TEXT,__text  ___69-[CSFileProviderContainerCache filterForDisabledBundles:logForQuery:]_block_invoke.59
+0x18ef31010  __TEXT,__text  ___23-[CSSearchQuery cancel]_block_invoke_2
+0x18ef3106c  __TEXT,__text  ___36-[CSSearchQuery didFinishWithError:]_block_invoke
+0x18ef31078  __TEXT,__text  -[CSUserQuery .cxx_destruct]
+0x18ef3123c  __TEXT,__text  _block_destroy_helper.89
+0x18ef31240  __TEXT,__text  _block_destroy_helper
+0x18ef31248  __TEXT,__text  _block_destroy_helper
+0x18ef31250  __TEXT,__text  ___swift_closure_destructor.59Tm
+0x18ef312c8  __TEXT,__text  ___swift_closure_destructor.80
+0x18ef312dc  __TEXT,__text  ___swift_closure_destructor.86
+0x18ef312e0  __TEXT,__text  ___swift_instantiateConcreteTypeFromMangledNameV2
+0x18ef31334  __TEXT,__text  _get_enum_tag_for_layout_string So11CSUserQueryC13CoreSpotlightE9ResponsesV8ResponseO
+0x18ef31340  __TEXT,__text  ___75-[CSXPCConnection initMachServiceListenerWithName:enableConnectionLogging:]_block_invoke.54
+0x18ef3145c  __TEXT,__text  -[CSSearchQueryContext setAttribute:]
+0x18ef3147c  __TEXT,__text  -[CSSearchQuery setFoundAttributesHandler:]
+0x18ef31484  __TEXT,__text  -[CSSearchQuery setFoundItemsHandler:]
+0x18ef3148c  __TEXT,__text  -[CSUserQuery initWithUserQueryString:userQueryContext:]
+0x18ef315ac  __TEXT,__text  -[CSSearchQuery queryContext]
+0x18ef315ec  __TEXT,__text  -[CSSearchQuery _sendQueryAnalyticsEventWithError:]
+0x18ef31f7c  __TEXT,__text  _isAppleInternalInstall.cold.1
+0x18ef31f90  __TEXT,__text  -[CSSearchQuery isTopHitQuery]
+0x18ef31f98  __TEXT,__text  -[CSCustomAttributeKey initWithKeyName:searchable:searchableByDefault:unique:multiValued:]
+0x18ef3207c  __TEXT,__text  -[CSCustomAttributeKey hash]
+0x18ef320b4  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) setAlternateNames:]
+0x18ef32118  __TEXT,__text  -[CSSearchableItemAttributeSet(CSCustomAttributes) setValue:forCustomKey:]
+0x18ef321b4  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) setKind:]
+0x18ef321c4  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAppDemotion_Private) setIsPlaceholder:]
+0x18ef321d4  __TEXT,__text  -[CSSearchableItemAttributeSet setAttribute:forKey:]
+0x18ef32324  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) setVendorName:]
+0x18ef32334  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) setLanguages:]
+0x18ef32398  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) languages]
+0x18ef323a8  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) setContentCreationDate:]
+0x18ef323b8  __TEXT,__text  -[CSSearchQuery handleFoundAttributes:values:attributesHandler:]
+0x18ef3264c  __TEXT,__text  ___62-[CSSearchQuery processAttributesData:update:protectionClass:]_block_invoke
+0x18ef32748  __TEXT,__text  -[CSSearchableIndexRequest _unthrottleIfNecessary]
+0x18ef32790  __TEXT,__text  -[CSSearchableIndexRequest retryIfNecessaryWithError:dataWrapper:]
+0x18ef327c8  __TEXT,__text  _block_copy_helper.82
+0x18ef327cc  __TEXT,__text  _block_copy_helper
+0x18ef327dc  __TEXT,__text  _block_copy_helper
+0x18ef327ec  __TEXT,__text  _block_copy_helper.88
+0x18ef327f0  __TEXT,__text  _block_copy_helper.94
+0x18ef327f4  __TEXT,__text  -[CSSearchQueryContext setEnableInstantAnswers:]
+0x18ef32814  __TEXT,__text  -[CSSearchQuery prepareSearch]
+0x18ef32ea4  __TEXT,__text  -[CSUserQueryContext getParserOptions]
+0x18ef32eb8  __TEXT,__text  _commonInit
+0x18ef32f18  __TEXT,__text  _commonInit
+0x18ef331a0  __TEXT,__text  -[CSSearchQuery setBundleIDs:]
+0x18ef33844  __TEXT,__text  -[CSSearchQueryContext normalizedSearchQuery]
+0x18ef3384c  __TEXT,__text  -[CSSearchQuery updateQueryContext:]
+0x18ef33964  __TEXT,__text  -[CSUserQuery willStartQuery]
+0x18ef33a80  __TEXT,__text  -[CSUserQueryRankingConfiguration initWithQueryContext:options:]
+0x18ef34dc4  __TEXT,__text  -[CSSearchQueryContext isMessages]
+0x18ef34e54  __TEXT,__text  -[CSSearchQueryContext isPhotos]
+0x18ef34ee4  __TEXT,__text  -[CSSearchQueryContext isSafari]
+0x18ef34fec  __TEXT,__text  -[CSSearchQueryContext isSettings]
+0x18ef3507c  __TEXT,__text  -[CSSearchQueryContext isNotes]
+0x18ef3510c  __TEXT,__text  -[CSSearchQueryContext isWallet]
+0x18ef3519c  __TEXT,__text  -[NSString(CSBundles) cs_isPommesCtl]
+0x18ef352ec  __TEXT,__text  _CSGetCurrentLocale.cold.1
+0x18ef35300  __TEXT,__text  ___CSGetCurrentLocale_block_invoke
+0x18ef35330  __TEXT,__text  -[CSLocaleObserver init]
+0x18ef353ec  __TEXT,__text  -[CSLocaleObserver update]
+0x18ef35460  __TEXT,__text  ___26-[CSLocaleObserver update]_block_invoke
+0x18ef3554c  __TEXT,__text  -[CSLocaleObserver currentLocaleWithPreferredLanguagesBlock:]
+0x18ef3570c  __TEXT,__text  ___61-[CSLocaleObserver currentLocaleWithPreferredLanguagesBlock:]_block_invoke
+0x18ef35840  __TEXT,__text  ___CSGetCurrentLocale_block_invoke_2
+0x18ef358c4  __TEXT,__text  ___64-[CSUserQueryRankingConfiguration initWithQueryContext:options:]_block_invoke
+0x18ef35948  __TEXT,__text  -[NSString(CSBundles) cs_isCslinguistics]
+0x18ef35954  __TEXT,__text  -[CSSuggestionsRanker initWithUserQueryRankingConfiguration:]
+0x18ef359c8  __TEXT,__text  -[CSUserQueryRankingConfiguration enablePommesRanking]
+0x18ef359d0  __TEXT,__text  -[CSUserQueryRankingConfiguration enablePommesSuggestions]
+0x18ef359d8  __TEXT,__text  -[CSUserQueryRankingConfiguration enableUniversalSuggestions]
+0x18ef359e0  __TEXT,__text  -[CSUserQueryRankingConfiguration isMail]
+0x18ef359e8  __TEXT,__text  -[CSUserQueryRankingConfiguration isPhotos]
+0x18ef359f0  __TEXT,__text  -[CSUserQueryRankingConfiguration isSearch]
+0x18ef359f8  __TEXT,__text  -[CSUserQueryRankingConfiguration isPommesCtl]
+0x18ef35a00  __TEXT,__text  -[CSUserQueryRankingConfiguration isPommesZKW]
+0x18ef35a08  __TEXT,__text  -[CSUserQueryRankingConfiguration isCJK]
+0x18ef35a10  __TEXT,__text  -[CSUserQueryRankingConfiguration nlpContextID]
+0x18ef35a18  __TEXT,__text  -[CSUserQueryRankingConfiguration bundleIDs]
+0x18ef35a20  __TEXT,__text  -[CSUserQueryRankingConfiguration additionalFetchAttributes]
+0x18ef35a28  __TEXT,__text  +[CSUserQuery defaultParseOptionsForClientContext:]
+0x18ef35ac4  __TEXT,__text  -[CSUserQueryRankingConfiguration parseOptions]
+0x18ef35acc  __TEXT,__text  -[CSUserQuery queryStringWithQueryContext:searchString:options:]
+0x18ef37e84  __TEXT,__text  -[CSSearchQueryContext setPommes:]
+0x18ef37ea4  __TEXT,__text  -[CSUserQueryRankingConfiguration isColdStart]
+0x18ef37eac  __TEXT,__text  -[CSSearchQueryContext isFinder]
+0x18ef37eb4  __TEXT,__text  -[CSSearchQueryContext setDisableNLP:]
+0x18ef37ed4  __TEXT,__text  -[CSSearchQuery updateQueryString:]
+0x18ef380f8  __TEXT,__text  CSFriendlyFieldNameTable::in_word_set(char const*, unsigned int) [clone .cold.1]
+0x18ef3c158  __TEXT,__text  -[CSSearchQuery connection]
+0x18ef3c298  __TEXT,__text  -[CSSearchableItem isEqual:]
+0x18ef3c340  __TEXT,__text  -[CSSearchableItemAttributeSet isEqual:]
+0x18ef3c7e4  __TEXT,__text  ___swift_memcpy9_8
+0x18ef3c954  __TEXT,__text  -[CSUserQuery cancel]
+0x18ef3cadc  __TEXT,__text  _GetCSUserQueryParser.cold.1
+0x18ef3caf0  __TEXT,__text  ___GetCSUserQueryParser_block_invoke
+0x18ef3cb20  __TEXT,__text  -[CSUserQueryParser init]
+0x18ef3cba0  __TEXT,__text  -[CSUserQueryParser _CSUserQueryCancelQueryWithReferenceDict:]
+0x18ef3cba8  __TEXT,__text  ___isAppleInternalInstall_block_invoke
+0x18ef3cbd0  __TEXT,__text  -[CSUserQuery handleSuggestions]
+0x18ef3ded4  __TEXT,__text  _block_destroy_helper.83
+0x18ef3ded8  __TEXT,__text  _block_destroy_helper.95
+0x18ef3dedc  __TEXT,__text  ___swift_closure_destructor.92
+0x18ef3dee0  __TEXT,__text  -[CSSearchQuery cancel]
+0x18ef3e180  __TEXT,__text  ___swift_closure_destructor.77
+0x18ef3e184  __TEXT,__text  ___swift_closure_destructor
+0x18ef3e1b0  __TEXT,__text  ___swift_closure_destructor
+0x18ef3e1dc  __TEXT,__text  -[CSSuggestionsRanker .cxx_destruct]
+0x18ef3e238  __TEXT,__text  -[CSUserQueryRankingConfiguration .cxx_destruct]
+0x18ef3e294  __TEXT,__text  -[CSUserQueryContext .cxx_destruct]
+0x18ef3e2a8  __TEXT,__text  +[CSInlineDonation isInlineCascadeDonationEnabledForBundleID:outIsSynchronous:]
+0x18ef3e314  __TEXT,__text  +[CSSearchableIndex isSynchronousInlineDonationBundleIdentifier:]
+0x18ef3e444  __TEXT,__text  -[CSInlineDonation initWithSourceIdentifier:addOrUpdateItems:associatedCacheContent:deleteItemIdentifiers:deleteDomainIdentifiers:deleteAllItems:requireExistingSet:clientStateName:updatedClientState:expectedClientState:itemsDataSize:textDataSize:donationType:isSynchronous:]
+0x18ef3e640  __TEXT,__text  -[CSDecoder initWithData:]
+0x18ef3e740  __TEXT,__text  -[CSIdentifierCodedArray initWithDeletes:]
+0x18ef3e7bc  __TEXT,__text  -[CSIdentifierCodedArray count]
+0x18ef3e80c  __TEXT,__text  -[CSIdentifierCodedArray .cxx_destruct]
+0x18ef3e820  __TEXT,__text  -[CSSearchableIndex addInteraction:bundleID:protectionClass:completionHandler:]
+0x18ef3ea38  __TEXT,__text  ___79-[CSSearchableIndex addInteraction:bundleID:protectionClass:completionHandler:]_block_invoke
+0x18ef3eb94  __TEXT,__text  -[CSSearchableIndexRequest initWithSearchableIndex:label:]
+0x18ef3eb9c  __TEXT,__text  -[CSSearchableIndexRequest initWithSearchableIndex:label:critical:cost:]
+0x18ef3ec98  __TEXT,__text  -[CSSearchableIndexRequest setCompletionBlock:]
+0x18ef3eca0  __TEXT,__text  -[CSRequestQueue validate]
+0x18ef3eca8  __TEXT,__text  -[CSSearchableIndexRequest cost]
+0x18ef3ed0c  __TEXT,__text  -[CSSearchableIndexRequest dataWrapper]
+0x18ef3ed14  __TEXT,__text  -[CSSearchableIndexRequest _throttleIfNecessary]
+0x18ef3ed5c  __TEXT,__text  ___79-[CSSearchableIndex addInteraction:bundleID:protectionClass:completionHandler:]_block_invoke_2
+0x18ef3ef24  __TEXT,__text  -[CSDataWrapper data]
+0x18ef3ef88  __TEXT,__text  -[CSDataWrapper initWithXPCValue:allowWritableSharedMemory:]
+0x18ef3f0cc  __TEXT,__text  -[CSDataWrapper setDataSize:]
+0x18ef3f0e0  __TEXT,__text  -[CSPerson initWithDisplayName:handles:handleIdentifier:photosPersonIdentifier:]
+0x18ef3f10c  __TEXT,__text  -[CSPerson initWithDisplayName:handles:handleIdentifier:photosPersonIdentifier:isPhotosPerson:personType:nameAlternatives:faceAttributes:]
+0x18ef3f258  __TEXT,__text  -[CSDataWrapper dataSize]
+0x18ef3f260  __TEXT,__text  -[CSSearchableIndex fetchLastClientStateWithCompletionHandler:]
+0x18ef3f274  __TEXT,__text  -[CSSearchableIndexRequest setCompletionDataBlock:]
+0x18ef3f27c  __TEXT,__text  -[_MDExtensionManager indexRequestsPerformJob:forBundle:completionHandler:]
+0x18ef3f3b0  __TEXT,__text  ___75-[_MDExtensionManager indexRequestsPerformJob:forBundle:completionHandler:]_block_invoke
+0x18ef3f5dc  __TEXT,__text  -[CSIndexJob fileType]
+0x18ef3f5e4  __TEXT,__text  -[_MDExtensionManager anyExtensionWithBlock:]
+0x18ef3f690  __TEXT,__text  +[CSSearchableItemAttributeSet supportsSecureCoding]
+0x18ef3f698  __TEXT,__text  -[CSCoder beginType:]
+0x18ef3f758  __TEXT,__text  -[CSCoder encodeInt32:]
+0x18ef3f768  __TEXT,__text  -[CSCoder beginDictionary]
+0x18ef3f770  __TEXT,__text  -[CSCoder endType]
+0x18ef3f77c  __TEXT,__text  -[CSCoder data]
+0x18ef3f800  __TEXT,__text  -[CSCoder plistContainer]
+0x18ef3f854  __TEXT,__text  -[CSCoder encodeObject:]
+0x18ef3f91c  __TEXT,__text  -[CSCoder container]
+0x18ef3f924  __TEXT,__text  -[CSCoder endDictionary]
+0x18ef3f930  __TEXT,__text  -[CSDecoder obj]
+0x18ef3f944  __TEXT,__text  -[CSCoder beginArray]
+0x18ef3f94c  __TEXT,__text  -[CSCoder endArray]
+0x18ef3f958  __TEXT,__text  -[CSIndexingQueue _flushWithAppResigned:forced:]
+0x18ef3fa68  __TEXT,__text  ___44-[CSSearchableIndex _indexActivities:flush:]_block_invoke
+0x18ef3fd28  __TEXT,__text  ___31-[CSIndexingQueue _queueItems:]_block_invoke
+0x18ef3fd38  __TEXT,__text  ___50-[CSSearchableIndex _makeActivityQueueIfNecessary]_block_invoke
+0x18ef3fe28  __TEXT,__text  -[CSSearchableIndex _indexActivities:flush:]
+0x18ef3fee4  __TEXT,__text  -[CSUserActivityTuple action]
+0x18ef3fef0  __TEXT,__text  -[CSUserActivityTuple item]
+0x18ef3fefc  __TEXT,__text  +[CSUserAction supportsSecureCoding]
+0x18ef3ff04  __TEXT,__text  -[CSUserAction encodeWithCoder:]
+0x18ef4004c  __TEXT,__text  +[CSSearchableItem supportsSecureCoding]
+0x18ef40054  __TEXT,__text  -[CSSearchableItem encodeWithCoder:]
+0x18ef400b4  __TEXT,__text  -[CSLocalizedString localizedStrings]
+0x18ef400c8  __TEXT,__text  -[NSArray(CSCoderAdditions) encodeWithCSCoder:]
+0x18ef401d0  __TEXT,__text  -[CSLocalizedString(CSCoderAdditions) encodeWithCSCoder:]
+0x18ef4023c  __TEXT,__text  -[NSDictionary(CSCoderAdditions) encodeWithCSCoder:]
+0x18ef40290  __TEXT,__text  -[CSSearchableItemAttributeSet description]
+0x18ef402e8  __TEXT,__text  -[CSSearchableIndex indexUserActivity:]
+0x18ef40528  __TEXT,__text  -[CSSearchableItemAttributeSet attributeDictionary]
+0x18ef4052c  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) authors]
+0x18ef4053c  __TEXT,__text  -[CSSearchableItem domainIdentifier]
+0x18ef4057c  __TEXT,__text  -[CSDecoder decodeObject:]
+0x18ef405bc  __TEXT,__text  -[CSUserActivityTuple .cxx_destruct]
+0x18ef40600  __TEXT,__text  -[CSUserAction .cxx_destruct]
+0x18ef4068c  __TEXT,__text  -[CSUserAction initWithCoder:]
+0x18ef40a74  __TEXT,__text  -[CSSearchableItem initWithCoder:]
+0x18ef40b44  __TEXT,__text  -[CSSearchableItem _isFullyFormed]
+0x18ef40bb4  __TEXT,__text  -[CSUserActivityTuple initWithAction:item:]
+0x18ef40c4c  __TEXT,__text  -[CSUserActivityTuple setProtectionClass:]
+0x18ef40c54  __TEXT,__text  -[CSIndexingQueue queueItems:]
+0x18ef40cec  __TEXT,__text  -[CSUserActivityTuple searchableItem]
+0x18ef40cf4  __TEXT,__text  ___44-[CSSearchableIndex _indexActivities:flush:]_block_invoke_2
+0x18ef40d50  __TEXT,__text  ___80-[CSSearchableItemAttributeSet(CSCoderAdditions) encodeWithCSCoder:includeText:]_block_invoke
+0x18ef40e0c  __TEXT,__text  -[CSCoder encodeString:length:]
+0x18ef40e2c  __TEXT,__text  -[CSCoder encodeMDPlistObject:]
+0x18ef40f78  __TEXT,__text  +[CSSearchableIndex activityShouldBeIndexed:bundleID:]
+0x18ef40ff8  __TEXT,__text  -[CSSearchableIndex _makeActivityQueueIfNecessary]
+0x18ef41130  __TEXT,__text  +[CSSearchableItem(Internal) searchableItemFromUserActivity:bundleID:]
+0x18ef416d4  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPrivateAttributes) setUserActivityType:]
+0x18ef416e4  __TEXT,__text  -[CSIndexingQueue _applicationWillResign:]
+0x18ef41768  __TEXT,__text  ___42-[CSIndexingQueue _applicationWillResign:]_block_invoke
+0x18ef41778  __TEXT,__text  -[CSSearchableItemAttributeSet(CSInteraction_private) setShortcutAvailability:]
+0x18ef41788  __TEXT,__text  -[CSSearchableItemAttributeSet _setNumberValue:forKey:]
+0x18ef41800  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) setTitle:]
+0x18ef41810  __TEXT,__text  -[CSSearchableItemAttributeSet addAttributesFromAttributeSet:]
+0x18ef41978  __TEXT,__text  ___70+[CSSearchableItem(Internal) searchableItemFromUserActivity:bundleID:]_block_invoke
+0x18ef41e64  __TEXT,__text  +[CSSearchableIndex mainBundleLocalizedString]
+0x18ef41e9c  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPrivateAttributes) userActivityType]
+0x18ef41eac  __TEXT,__text  -[CSSearchableIndex _validateOperationWithItems:]
+0x18ef41eb4  __TEXT,__text  -[CSSearchableItemAttributeSet _setArrayValue:withItemClass:forKey:]
+0x18ef420f4  __TEXT,__text  -[CSUserAction(Internal) initWithUserActivity:searchableItem:]
+0x18ef423a8  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) setContentTypeTree:]
+0x18ef42664  __TEXT,__text  -[CSSearchableItemAttributeSet(CSInteraction_private) shortcutAvailability]
+0x18ef42674  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) namedLocation]
+0x18ef42684  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) city]
+0x18ef42694  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) stateOrProvince]
+0x18ef426a4  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) latitude]
+0x18ef426b4  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) longitude]
+0x18ef426c4  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) thoroughfare]
+0x18ef426d4  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) subThoroughfare]
+0x18ef426e4  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) postalCode]
+0x18ef426f4  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) authorAddresses]
+0x18ef42880  __TEXT,__text  +[CSUserAction(Internal) actionFromUserActivity:searchableItem:]
+0x18ef428e8  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) contentDescription]
+0x18ef428f8  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) fullyFormattedAddress]
+0x18ef42908  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) accountHandles]
+0x18ef42918  __TEXT,__text  -[CSIndexingQueue queueItem:]
+0x18ef429b8  __TEXT,__text  -[CSUserActivityTuple protectionClass]
+0x18ef429c4  __TEXT,__text  -[CSUserAction(CSCoderAdditions) encodeWithCSCoder:]
+0x18ef42bcc  __TEXT,__text  -[CSUserAction contentAction]
+0x18ef42bd8  __TEXT,__text  -[CSUserAction eligibility]
+0x18ef42be0  __TEXT,__text  -[CSSearchableItem noIndex]
+0x18ef42c18  __TEXT,__text  -[CSUserAction uaIdentifier]
+0x18ef42c20  __TEXT,__text  -[CSUserAction itemIdentifier]
+0x18ef42c2c  __TEXT,__text  -[CSUserAction madeInitiallyCurrentDates]
+0x18ef42c34  __TEXT,__text  -[CSUserAction madeCurrentDates]
+0x18ef42c3c  __TEXT,__text  -[CSUserAction madeCurrentEndDates]
+0x18ef42c44  __TEXT,__text  -[CSUserAction userInfo]
+0x18ef42c50  __TEXT,__text  -[CSUserAction sentToIndexerDates]
+0x18ef42c58  __TEXT,__text  -[CSUserAction madeCurrentInterval]
+0x18ef42c60  __TEXT,__text  -[CSCoder encodeDouble:]
+0x18ef42c6c  __TEXT,__text  -[CSLocalizedString initWithLocalizedStrings:]
+0x18ef42d58  __TEXT,__text  -[CSSearchableItemAttributeSet(CSCoderAdditions) encodeWithCSCoder:]
+0x18ef42d60  __TEXT,__text  -[CSDecoder setBackingStore:]
+0x18ef42d6c  __TEXT,__text  -[CSLocalizedString .cxx_destruct]
+0x18ef42db4  __TEXT,__text  +[CSXPCConnection dictionary:setPlistContainer:forKey:sizeKey:]
+0x18ef42e54  __TEXT,__text  -[CSUserAction setItemIdentifier:]
+0x18ef42e5c  __TEXT,__text  -[CSUserAction setContentAction:]
+0x18ef42e64  __TEXT,__text  -[CSUserAction setEligibility:]
+0x18ef42e6c  __TEXT,__text  -[CSUserAction setUserInfo:]
+0x18ef42e74  __TEXT,__text  -[CSUserAction setUaIdentifier:]
+0x18ef42e80  __TEXT,__text  -[CSUserAction setMadeInitiallyCurrentDates:]
+0x18ef42e88  __TEXT,__text  -[CSUserAction setMadeCurrentDates:]
+0x18ef42e90  __TEXT,__text  -[CSUserAction keywords]
+0x18ef42e9c  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) relatedUniqueIdentifier]
+0x18ef42eac  __TEXT,__text  -[CSCoder encodeNSString:]
+0x18ef42ed0  __TEXT,__text  -[CSUserAction setKeywords:]
+0x18ef42ed8  __TEXT,__text  -[CSUserAction setMadeCurrentEndDates:]
+0x18ef42ee0  __TEXT,__text  -[CSUserAction setSentToIndexerDates:]
+0x18ef42ee8  __TEXT,__text  -[CSUserAction setMadeCurrentInterval:]
+0x18ef42ef0  __TEXT,__text  +[CoreSpotlightUtils disabledUserActivities]
+0x18ef42efc  __TEXT,__text  -[CSIndexingQueue initWithIdleTime:idleTimeLeeway:maximumBatchSize:mode:notifyBlock:]
+0x18ef43040  __TEXT,__text  -[CSSearchableItemAttributeSet(CSInteraction_private) suggestedInvocationPhrase]
+0x18ef43050  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) country]
+0x18ef43060  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) title]
+0x18ef43070  __TEXT,__text  -[CSSearchableIndex _openJournalFile:completionHandler:]
+0x18ef43204  __TEXT,__text  ___56-[CSSearchableIndex _openJournalFile:completionHandler:]_block_invoke
+0x18ef43310  __TEXT,__text  ___56-[CSSearchableIndex _openJournalFile:completionHandler:]_block_invoke_2
+0x18ef433f4  __TEXT,__text  -[CSDataWrapper initWithData:]
+0x18ef43494  __TEXT,__text  ___56-[CSSearchableIndex _openJournalFile:completionHandler:]_block_invoke_3
+0x18ef43514  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) setContentURL:]
+0x18ef4357c  __TEXT,__text  -[CSIndexingQueue flush]
+0x18ef43600  __TEXT,__text  ___24-[CSIndexingQueue flush]_block_invoke
+0x18ef43610  __TEXT,__text  -[CSSearchableItem protection]
+0x18ef43650  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPrivateAttributes) protectionClass]
+0x18ef43660  __TEXT,__text  -[CSSearchableIndex _standardizeItems:]
+0x18ef43730  __TEXT,__text  ___39-[CSSearchableIndex _standardizeItems:]_block_invoke
+0x18ef43850  __TEXT,__text  -[CSSearchableItem isAppEntity]
+0x18ef43888  __TEXT,__text  -[CSSearchableItemAttributeSet(AppEntity) appEntityType]
+0x18ef43898  __TEXT,__text  -[CSSearchableIndex bundleIdentifier]
+0x18ef438a0  __TEXT,__text  -[CSSearchableIndex protectionClass]
+0x18ef438a8  __TEXT,__text  -[CSSearchableItem(Internal) standardizeAttributesForBundle:protectionClass:]
+0x18ef43c88  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) contentTypeTree]
+0x18ef43c98  __TEXT,__text  -[CSSearchableItem(Internal) _standardizeFileProvider:]
+0x18ef44438  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) contentURL]
+0x18ef444d4  __TEXT,__text  -[CSSearchableItemAttributeSet(CSFileProvider_Private) FPFilename]
+0x18ef444e0  __TEXT,__text  -[CSSearchableItem(Internal) _standardizePeople:]
+0x18ef44c74  __TEXT,__text  -[CSSearchableItem(Internal) _fixBrokenAuthorNames:]
+0x18ef44e78  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) authorNames]
+0x18ef45004  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) recipientNames]
+0x18ef45190  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) emailAddresses]
+0x18ef451a0  __TEXT,__text  -[CSSearchableItem(Internal) _populateMissingPeopleWithNames:emailAddresses:allItemPersons:primaryItemPersons:additionalItemPersons:hiddenAdditionalItemPersons:personDictionary:contactProperties:nameKey:emailKey:contactIdentifierKey:personKey:photosPersonIdentifierKey:personTypeKey:nameAlternativesK
+0x18ef45f40  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) primaryRecipients]
+0x18ef45f50  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) additionalRecipients]
+0x18ef45f60  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) hiddenAdditionalRecipients]
+0x18ef45f70  __TEXT,__text  -[CSSearchableItemAttributeSet(CSAttributes) recipientEmailAddresses]
+0x18ef460fc  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPhotos_Private) photosPeople]
+0x18ef4610c  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPhotos_Private) photosSharedLibraryContributors]
+0x18ef4611c  __TEXT,__text  -[CSSearchableItem(Internal) _standardizeSceneClassification:]
+0x18ef46848  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPhotos_Private) photosSceneClassifications]
+0x18ef46b20  __TEXT,__text  -[CSSearchableItem setBundleID:]
+0x18ef46b74  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPhotos_Private) _getExternalAnalysisTagsForPrimaryAttribute:analysisAttributes:getTagBlock:]
+0x18ef46f18  __TEXT,__text  -[CSSearchableItem(Internal) _standardizeExternalAnalysisTags:forAttributeSet:primaryAttribute:analysisAttributes:specializedAttributes:standardizeBlock:]
+0x18ef474dc  __TEXT,__text  -[CSSearchableItem(Internal) _standardizeDocumentUnderstandingTopics:]
+0x18ef4761c  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPhotos_Private) documentUnderstandingTopics]
+0x18ef47704  __TEXT,__text  -[CSSearchableItem(Internal) _standardizeDocumentUnderstandingCategories:]
+0x18ef47844  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPhotos_Private) documentUnderstandingCategories]
+0x18ef4792c  __TEXT,__text  -[CSSearchableItem(Internal) _standardizeExtractedEntities:]
+0x18ef4825c  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPhotos_Private) extractedAddresses]
+0x18ef4847c  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPhotos_Private) extractedEmails]
+0x18ef48564  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPhotos_Private) extractedPhoneNumbers]
+0x18ef486cc  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPhotos_Private) extractedTrackingNumbers]
+0x18ef487b4  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPhotos_Private) extractedFlights]
+0x18ef4889c  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPhotos_Private) extractedLinks]
+0x18ef48984  __TEXT,__text  -[CSSearchableItem(Internal) _standardizeExtractedNumericEntities:]
+0x18ef48b8c  __TEXT,__text  -[CSSearchableItemAttributeSet(CSPrivateAttributes) extractedDates]
+```
+First 1,000 of 8,425.
+

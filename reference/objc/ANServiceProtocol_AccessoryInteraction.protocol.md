@@ -1,0 +1,135 @@
+# `ANServiceProtocol` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/AccessoryInteraction.framework/AccessoryInteraction`](../userland/System__Library__PrivateFrameworks__AccessoryInteraction.framework__AccessoryInteraction.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`, `ANDeviceObservationDelegate`
+- 0 instance variables, 1 properties, 119 instance methods, 0 class methods
+
+## Properties
+
+```
+@property (T@"<ANClientProtocol>",N) shimDelegate;
+```
+
+## Instance methods
+
+```
+-[ANServiceProtocol clientIdentifier];
+-[ANServiceProtocol submitFirmwareVersionsForOwnedTags];
+-[ANServiceProtocol scanForNearbyOwner];
+-[ANServiceProtocol endService];
+-[ANServiceProtocol getGroupStatusForTag:forClient:];
+-[ANServiceProtocol getMultiStatusForTag:forClient:];
+-[ANServiceProtocol teardownClient:];
+-[ANServiceProtocol beginServiceWithScannerClient:zoneMonitor:commuteMetricManager:];
+-[ANServiceProtocol abortFirmwareUpdateForDevice:forClient:];
+-[ANServiceProtocol cleanUpTAUnknownBeaconRecord:];
+-[ANServiceProtocol completeRangingConfigure:client:data:opcode:];
+-[ANServiceProtocol completeRangingDeinit:client:data:opcode:];
+-[ANServiceProtocol completeRangingInit:client:data:opcode:];
+-[ANServiceProtocol completeRangingStart:client:data:opcode:];
+-[ANServiceProtocol configureNBRangingOnDevice:withParams:forClient:];
+-[ANServiceProtocol configureRangingWithMacAddress:countryCode:uwbChannel:acqPreamble:trackingPreamble:interval:onTag:forClient:];
+-[ANServiceProtocol connectToTag:forClient:];
+-[ANServiceProtocol debugPerformAggressiveScan];
+-[ANServiceProtocol deinitRangingOnTag:forClient:];
+-[ANServiceProtocol didUpdateVehicularState:];
+-[ANServiceProtocol disconnectFromTag:forClient:];
+-[ANServiceProtocol dumpLogsOfType:forTag:forClient:];
+-[ANServiceProtocol fetchAISAccessoryCapabilitiesForDevice:forClient:];
+-[ANServiceProtocol fetchAISAccessoryCapabilitiesForTAUnknownBeacon:forClient:];
+-[ANServiceProtocol fetchAISAccessoryCategoryForDevice:forClient:];
+-[ANServiceProtocol fetchAISAccessoryCategoryForTAUnknownBeacon:forClient:];
+-[ANServiceProtocol fetchAISBatteryLevelForDevice:forClient:];
+-[ANServiceProtocol fetchAISBatteryLevelForTAUnknownBeacon:forClient:];
+-[ANServiceProtocol fetchAISBatteryTypeForDevice:forClient:];
+-[ANServiceProtocol fetchAISBatteryTypeForTAUnknownBeacon:forClient:];
+-[ANServiceProtocol fetchAISFirmwareVersionForDevice:forClient:];
+-[ANServiceProtocol fetchAISFirmwareVersionForTAUnknownBeacon:forClient:];
+-[ANServiceProtocol fetchAISManufacturerNameForDevice:forClient:];
+-[ANServiceProtocol fetchAISManufacturerNameForTAUnknownBeacon:forClient:];
+-[ANServiceProtocol fetchAISModelNameForDevice:forClient:];
+-[ANServiceProtocol fetchAISModelNameForTAUnknownBeacon:forClient:];
+-[ANServiceProtocol fetchAISNetworkIDForDevice:forClient:];
+-[ANServiceProtocol fetchAISNetworkIDForTAUnknownBeacon:forClient:];
+-[ANServiceProtocol fetchAISProductDataForDevice:forClient:];
+-[ANServiceProtocol fetchAISProductDataForTAUnknownBeacon:forClient:];
+-[ANServiceProtocol fetchAISProtocolImplementationForDevice:forClient:];
+-[ANServiceProtocol fetchAISProtocolImplementationForTAUnknownBeacon:forClient:];
+-[ANServiceProtocol fetchAISSerialNumberForDevice:forClient:];
+-[ANServiceProtocol fetchAISSerialNumberForTAUnknownBeacon:forClient:];
+-[ANServiceProtocol fetchAccelerometerModeOnTag:forClient:];
+-[ANServiceProtocol fetchAccelerometerOrientationModeConfigurationOnTag:forClient:];
+-[ANServiceProtocol fetchAccelerometerSlopeModeConfigurationOnTag:forClient:];
+-[ANServiceProtocol fetchAccessoryInformation:client:];
+-[ANServiceProtocol fetchBatteryStateFromTag:forClient:];
+-[ANServiceProtocol fetchConnectionStateForTag:forClient:];
+-[ANServiceProtocol fetchFindingCapabilitiesOnTag:forClient:];
+-[ANServiceProtocol fetchFirmwareVersionFromTag:forClient:includeCrashLogs:];
+-[ANServiceProtocol fetchHawkeyeAISAccessoryCapabilitiesForDevice:forClient:];
+-[ANServiceProtocol fetchHawkeyeAISAccessoryCapabilitiesForTAUnknownBeacon:forClient:];
+-[ANServiceProtocol fetchHawkeyeAISAccessoryCategoryForDevice:forClient:];
+-[ANServiceProtocol fetchHawkeyeAISAccessoryCategoryForTAUnknownBeacon:forClient:];
+-[ANServiceProtocol fetchHawkeyeAISBatteryTypeForDevice:forClient:];
+-[ANServiceProtocol fetchHawkeyeAISFindMyVersionForDevice:forClient:];
+-[ANServiceProtocol fetchHawkeyeAISFirmwareVersionForDevice:forClient:];
+-[ANServiceProtocol fetchHawkeyeAISFirmwareVersionForTAUnknownBeacon:forClient:];
+-[ANServiceProtocol fetchHawkeyeAISManufacturerNameForDevice:forClient:];
+-[ANServiceProtocol fetchHawkeyeAISManufacturerNameForTAUnknownBeacon:forClient:];
+-[ANServiceProtocol fetchHawkeyeAISModelColorCodeForDevice:forClient:];
+-[ANServiceProtocol fetchHawkeyeAISModelNameForDevice:forClient:];
+-[ANServiceProtocol fetchHawkeyeAISModelNameForTAUnknownBeacon:forClient:];
+-[ANServiceProtocol fetchHawkeyeAISProductDataForDevice:forClient:];
+-[ANServiceProtocol fetchHawkeyeAISProductDataForTAUnknownBeacon:forClient:];
+-[ANServiceProtocol fetchHawkeyeCurrentPrimaryKey:forClient:];
+-[ANServiceProtocol fetchHawkeyeSerialNumber:forClient:];
+-[ANServiceProtocol fetchHawkeyeiCloudIdentifier:forClient:];
+-[ANServiceProtocol fetchTxPowerForDevice:forClient:asOwner:];
+-[ANServiceProtocol fetchUserStatsWithPersistence:fromTag:forClient:];
+-[ANServiceProtocol fetchWhetherLocalFirmwareAssetIsInUseForProductGroup:andProductNumber:forClient:];
+-[ANServiceProtocol getPersonalizationInfoForDevice:forClient:];
+-[ANServiceProtocol induceCrashOnTag:forClient:];
+-[ANServiceProtocol initRangingWithMacAddress:onTag:forClient:];
+-[ANServiceProtocol onAdvertisement:reconciledInformation:];
+-[ANServiceProtocol onAdvertisementBufferEmptied];
+-[ANServiceProtocol onAggressiveScanEnded];
+-[ANServiceProtocol onAggressiveScanStarted];
+-[ANServiceProtocol onVehicularState];
+-[ANServiceProtocol playSoundSequence:onTag:forClient:];
+-[ANServiceProtocol playUnauthorizedSoundSequence:onTag:forClient:];
+-[ANServiceProtocol prepareRangingOnTag:forClient:];
+-[ANServiceProtocol registerMultiPartStatusNotificationForClient:];
+-[ANServiceProtocol registerPlaySoundLeechNotificationsforClient:];
+-[ANServiceProtocol rollWildKeyOnTag:forClient:];
+-[ANServiceProtocol setAccelerometerOrientationModeConfiguration:onTag:forClient:];
+-[ANServiceProtocol setAccelerometerSlopeModeConfiguration:onTag:forClient:];
+-[ANServiceProtocol setBatteryStatus:onTag:forClient:];
+-[ANServiceProtocol setHawkeyeTestMode:onTag:forClient:];
+-[ANServiceProtocol setHawkeyeUTMotionConfigWithSeparatedUTTimeoutSeconds:separatedUTBackoffTimeoutSeconds:forDevice:forClient:];
+-[ANServiceProtocol setKeyRollInterval:onTag:forClient:];
+-[ANServiceProtocol setNearOwnerTimeout:onTag:forClient:];
+-[ANServiceProtocol setObfuscatedIdentifier:onTag:forClient:];
+-[ANServiceProtocol setShimDelegate:];
+-[ANServiceProtocol setTagType:onTag:forClient:];
+-[ANServiceProtocol setUnauthorizedPlaySoundRateLimit:onTag:forClient:];
+-[ANServiceProtocol setWildModeConfiguration:onTag:forClient:];
+-[ANServiceProtocol shimDelegate];
+-[ANServiceProtocol startAggressiveAdvertisingForDevice:withTimeout:forClient:];
+-[ANServiceProtocol startEventCounterOnTag:forClient:];
+-[ANServiceProtocol startMonitoringConnectionStateChangeForClient:];
+-[ANServiceProtocol startNBRangingOnTag:withIRK:fragmentCount:forClient:];
+-[ANServiceProtocol startRangingWithTargetEventCounter:onTag:forClient:];
+-[ANServiceProtocol startUnauthorizedAggressiveAdvertisingForDevice:forClient:];
+-[ANServiceProtocol stopAggressiveAdvertisingForDevice:forClient:];
+-[ANServiceProtocol stopEventCounterOnTag:forClient:];
+-[ANServiceProtocol stopMonitoringConnectionStateChangeForClient:];
+-[ANServiceProtocol stopPlayingSoundOnTag:forClient:];
+-[ANServiceProtocol stopPlayingUnauthorizedSoundOnTag:forClient:];
+-[ANServiceProtocol stopRangingOnTag:forClient:];
+-[ANServiceProtocol unpairFromTag:forClient:];
+-[ANServiceProtocol unpairFromTagWithAddress:forClient:];
+-[ANServiceProtocol unregisterMultiPartStatusNotificationForClient:];
+-[ANServiceProtocol unregisterPlaySoundLeechNotificationsforClient:];
+-[ANServiceProtocol updateFirmwareForDevice:withAssetURL:forClient:];
+-[ANServiceProtocol useDefaultFirmwareAssetSourceForProductGroup:andProductNumber:forClient:];
+-[ANServiceProtocol useLocalFirmwareAssetFromUrl:forProductGroup:forProductNumber:withSandboxExtension:forClient:];
+```

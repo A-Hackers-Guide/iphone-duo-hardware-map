@@ -1,0 +1,150 @@
+# `usr/standalone/firmware/t302/bfh_ofw.t302.ofw.toshiba_itlc_3d_g4_2p_512gb.bin`
+
+- File size: 688,128 bytes
+
+## Payload [FW]
+
+- Size after IM4P unwrap / decompression: 688,128 bytes
+- Format: raw binary
+
+## Identity strings (versions, build tags) [FW]
+
+- `-0123456789abcdef0123456789ABCDEFRTKit_iOS-1264.80.1.release`
+- `AppleMSP-2.8.10.2~1`
+- `RTKit: %s - Client: %s`
+- `s5e.ofw.toshiba_itlc_3d_g4_2p_512gb AppleMSP-2.8.10.2~1 2021/01/12@02:35:43 `
+
+## Strings (128) [FW]
+
+Printable runs of 6+ characters with at least three letters, in file order, with payload offset. For RTKit co-processor firmware these are the log formats, task names, endpoint names and assertions that describe what the processor does.
+
+```
+00001f91  wwwwwww<
+00016b4d  9A9lh.8lih8
+00016c67  ykjjxJ
+0001707c  *9A9)IA9jij8iii8jk(8
+0001a950  JYa9)Ea9
+0001c398  LIh8mA)
+0001d1a9  kCX(L@9*D"
+0001fd43  *Baa9jiD
+00025974  jij8kB
+00025a18  jij8k^
+00025a98  jij8jv
+00025ac8  jij8jz
+00025b18  jij8L`
+000264a8  *khxKkhx
+00027947  K)uMJh1
+00027c1c  ,ik8Khk8
+0002a283  TTK@9@G@9
+0002a6ec  IG@9jBA
+0002a812  @yZG@9
+0002a94a  @yZG@9
+0002ab79  1W9zfF
+0002be75  jh8zkh8
+0002d409  ylxl!*
+0002d863  yKkw8_
+0002ddd3  T`.@yaN@9a
+00030118  ,ikxLi+xk
+00030151  zhx*i(8
+0003045c  Kyhx+y(
+00030cde  E9(yhx
+00030dff  ZkJj8lG*
+00030f50  +ybxi0)
+00031034  iYixkyyx)
+00031980  -E@8njm8kj-8
+000322bc  Bih8#=
+00032a56  @8-ymx)
+00032b80  hzvxiz@y
+00033308  Mil8m#
+00033542  C9cxdxCx x
+000335cb  TJkh8+
+000337ac  ,ikxLi+xk
+000344d2  @ywB@9
+0003587e  @ycVA9dB@9X
+000359f3  ThVA9h
+0003694f  TvGE9V
+00036a18  hB@yiJ4
+0003cba7  RKi)8I
+0003cbcb  RKi)8k
+0003cbdf  RIi+8K
+0003cdf8  KT3XjE@
+0003d021  C3XIE@
+0003d101  i,8hbh9i
+0003f01c  Kih8+i(8
+00040d58  Uii8Vih8
+00041614  KA@yIA
+00043e01  h88Hhx8
+000440ce  AxM1Axn
+000445b3  *'h18Ghq8
+000448ff  T+yhxL
+00046374  )CIXH .
+0004b821   @9iIC
+0004c88d  yyxhk7xb{y
+0004efc4  ikh8Ik(8
+0005017a  @9J{uxmkx8
+000507f0  Likx+ikx
+000509e8  iii8Iu
+000512c4  cY@yka@yl
+00052736  AxM1Ax
+00052786  AxM1AxJ
+00056cc2  @yiN@9h.
+00056d54  Lyixm!
+0005802b  Tlij8J
+0005a8ae  $XaB@9
+0005aae9  M@9Iyi
+0005bac7  TIa@9j
+0005e03c  Lil8Mim8
+00065d9b  q$(Aza
+00069404  lii8-#
+0006b2d0  kUl9*}_
+000715e1  !A9KmC
+00073e5e  @yj-@9hyhxiy*xi-@9
+000740df  rdb@9cf@9
+00074a3a  Byiy(x
+00075699  zhx(%@
+00076350  *ihxJq
+0007f257  uuAOooq
+0007f668  RTKSTACK
+0007f7b1  Qkkbal
+0007fa7f  -0123456789abcdef0123456789ABCDEFRTKit_iOS-1264.80.1.release
+0007ffc0  dddd$ 1
+000800b8  s5e.ofw.toshiba_itlc_3d_g4_2p_512gb AppleMSP-2.8.10.2~1 2021/01/12@02:35:43 
+00080105  AppleMSP-2.8.10.2~1
+0008011a  AppleMSP-2.8.10.2.0
+0008014d  s5e.ofw.toshiba_itlc_3d_g4_2p_512gb-2.8.10.2.0
+00082275  MNOPQRSUW
+000823b0  AppleMspAsiDriver-1.87
+0008278c   ,$0(48<@LDPHT P
+000827a9   `hPp@`@`px
+00083dc8  UUUUUUUU
+00083e10  DDDDDDDD
+00086128  AppleMspFuseVersion - 1.41
+000864b4  stk_fail
+000864bd  RTKit: %s - Client: %s
+000864d4  <null>
+000864e4   Assert failed: [%u] arguments [0x%X, 0x%X, 0x%X, 0x%X]
+0008651c  itlc_3d_g4_2p_512
+00086531  ASI Device Info
+00086552  completion-read
+00086562  completion-misc
+00086572  completion-spi
+00086581  worker-0
+0008658a  worker-1
+00086593  worker-2
+0008659c  worker-3
+0008f010  RTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACK
+0008f810  RTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACKRTKSTACK
+00098fa8  __TEXT
+00098fc8  __DATA
+0009f368  __EXTENS
+0009f388  __EXTENS
+0009f3a8  __EXTENS
+0009f3c8  __EXTENS
+0009f3e8  __EXTENSfwsg
+000a2b58  h*@ytZ
+000a3b68  k!h9LQA
+000a50eb  Tji)8)
+000a5b9f  9ijt8@D
+000a65d8  __EXTENS
+000a65f8  __EXTENSfwsg
+```

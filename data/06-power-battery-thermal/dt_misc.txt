@@ -1,0 +1,232 @@
+== device-tree/arm-io/pmgr
+    AAPL,phandle = "0"
+    chiplet-count = 0x1
+    clpc = 0x3
+    compatible = "pmgr2,arch"
+    device_type = "pmgr"
+    name = "pmgr"
+    pmc = 0x1
+    pmc-ltr-ka = 0x1
+    pmc-pmgr = 0x1f
+    pmgr-ver = 0x2
+    pmp = 0x2
+== device-tree/arm-io/pmgr/pmgrtools
+    AAPL,phandle = "1"
+    aon-ptd-supported = <empty>
+    compatible = "pmgrtools"
+    device_type = "pmgrtools"
+    function-pmuaccess_L1DY = u64=0x706d7552000000c6 u32[c6 706d7552] ascii=b'\xc6\x00\x00\x00Rump'
+    interrupt-parent = 0xa6
+    interrupts = "ETSOYD1L"
+    name = "pmgrtools"
+    pmgrtools-version = 0x1
+    pmu_mcom_offset_L1DY = "`+"
+    soc-device-ps-map = hex(260)=67000000414758000000000000000000000000000d000000414e45300000000000000000000000000e000000414e453100000000000000000000000009000000495350000000000000000000000000000a000000444953503000000000000000...
+== device-tree/arm-io/aop/iop-aop-nub/smc-control
+    AAPL,phandle = "c"
+    device_type = "smc-control"
+    name = "smc-control"
+    smc-aop-charge-config = u32[10640000 3 4 2a]
+== device-tree/arm-io/smc-gpio
+    #address-cells = 0x0
+    #gpio-int-groups = 0x7
+    #gpio-pins = 0x6
+    #interrupt-cells = 0x2
+    AAPL,phandle = "t"
+    compatible = "gpio,t8101"
+    device_type = "interrupt-controller"
+    glitchless = 0x1
+    ie-fix = 0x1
+    interrupt-controller = <empty>
+    interrupt-parent = "-"
+    interrupts = u32[25e 25f 260 261 262 263 264]
+    name = "smc-gpio"
+    no-resume-restore = 0x1
+    reg = u32[8c820000 0 4000 0]
+    role = "SMC"
+    supported-int-groups = u64=0x600000005 u32[5 6] ascii=b'\x05\x00\x00\x00\x06\x00\x00\x00'
+    wake-events = <empty>
+== device-tree/arm-io/pmp
+    AAPL,phandle = "v"
+    clock-gates = u64=0x9800000097 u32[97 98] ascii=b'\x97\x00\x00\x00\x98\x00\x00\x00'
+    clock-ids = <empty>
+    compatible = "iop,ascwrap-v8"
+    device_type = "pmp"
+    interrupt-parent = "-"
+    interrupts = u32[c6 9e 76]
+    iommu-parent = 0x93
+    iop-version = 0x1
+    msgbox-mailbox-num = 0x4
+    msgbox-using-alias = 0x1
+    msgbox-using-postoffice = 0x1
+    name = "pmp"
+    pio-vm-base = u64=0xc0000000 u32[c0000000 0] ascii=b'\x00\x00\x00\xc0\x00\x00\x00\x00'
+    pio-vm-size = ["@"]
+    power-gates = u64=0x9800000097 u32[97 98] ascii=b'\x97\x00\x00\x00\x98\x00\x00\x00'
+    ptd-update-reg-index = 0x4
+    reg = u32[80e00000 0 74000 0 80850000 0 4000 0 96020000 0 10000 0 80500000 0 b0000 0 803d0000 0 4000 0]
+    role = "PMP"
+    service-gates = u64=0x9800000097 u32[97 98] ascii=b'\x97\x00\x00\x00\x98\x00\x00\x00'
+    sram-index = 0x1
+== device-tree/arm-io/pmp/iop-pmp-nub
+    AAPL,phandle = "w"
+    afi-top-bw-enable = 0x0
+    afi-top-bw-threshold = u32[30f5c2 0 0 0 4147ae 0 2ff5c2 3 61eb85 0 4047ae 3 3e80000 0 60eb85 3]
+    agx-af-rd-bw-constraint = u32[0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 1 3 0 1 3 0 1 3 0 1 3 0 1 3 0 1 3 0 2 3 0 2 3 0 2 3 0 2 3]
+    agx-af-rd-bw-dvfs-filter = 0xffffffff
+    agx-af-rd-bw-enable = 0x1
+    agx-af-rd-bw-threshold = hex(1024)=0000000000000000000000000000000000000000000000000000e8030000000000000000000000000000e8030000000000000000000000000000e803000000008fc24d0000000000000000000000000014ae6700000000008fc24c0000000000...
+    agx-af-wr-bw-constraint = u32[0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 0 3 0 1 3 0 1 3 0 1 3 0 1 3 0 1 3 0 1 3 0 2 3 0 2 3 0 2 3 0 2 3]
+    agx-af-wr-bw-dvfs-filter = 0xffffffff
+    agx-af-wr-bw-enable = 0x1
+    agx-af-wr-bw-threshold = hex(1024)=0000000000000000000000000000000000000000000000000000e8030000000000000000000000000000e8030000000000000000000000000000e803000000008fc24d0000000000000000000000000014ae6700000000008fc24c0000000000...
+    agx-dcs-bw-constraint-a = u32[0 0 8 0 0 4 0 0 4 1 1 4 2 2 4 3 3 5 4 4 8 4 4 8 4 4 8 5 5 8 5 5 8 5 5 8 6 6 8 7 7 8 7 7 8 7 7 8]
+    agx-dcs-bw-constraint-b = u32[0 0 7 0 0 4 0 0 4 1 1 4 2 2 4 3 3 5 4 4 7 4 4 7 4 4 7 5 5 7 5 5 7 5 5 7 6 6 7 7 7 7 7 7 7 7 7 7]
+    agx-dcs-bw-constraint-c = u32[0 0 8 0 0 8 1 1 8 2 2 8 3 3 8 4 4 8 4 4 8 4 4 8 5 5 8 5 5 8 5 5 8 6 6 8 7 7 8 7 7 8 7 7 8 7 7 8]
+    agx-dcs-bw-dvfs-filter = 0xffffffff
+    agx-dcs-bw-enable = 0x1
+    agx-dcs-bw-threshold-a = hex(2304)=0000000000000000000000000000000000000000000000000000e8030000000000000000000000000000e8030000000000000000000000000000e8030000000000000000000000000000e8030000000000000000000000000000e80300000000...
+    agx-dcs-bw-threshold-b = hex(2048)=0000000000000000000000000000000000000000000000000000e8030000000000000000000000000000e8030000000000000000000000000000e8030000000000000000000000000000e8030000000000000000000000000000e80300000000...
+    agx-dcs-bw-threshold-c = hex(2304)=0000000000000000000000000000000000000000000000000000e8030000000000000000000000000000e8030000000000000000000000000000e8030000000000000000000000000000e8030000000000000000000000000000e80300000000...
+    ane-dcs-bw-constraint-a = u32[0 0 3 0 0 3 0 0 6 0 0 7 0 1 7 0 1 8 0 1 8 0 2 8 0 2 8 0 2 8 0 2 8 0 2 8 0 2 8 0 3 8 0 3 8 0 3 8]
+    ane-dcs-bw-constraint-b = u32[0 0 3 0 0 3 0 0 6 0 0 7 0 1 7 0 1 7 0 1 7 0 2 7 0 2 7 0 2 7 0 2 7 0 2 7 0 2 7 0 3 7 0 3 7 0 3 7]
+    ane-dcs-bw-constraint-c = u32[0 0 3 0 0 3 0 0 6 0 0 7 0 1 7 0 1 8 0 1 8 0 2 8 0 2 8 0 2 8 0 2 8 0 2 8 0 2 8 0 3 8 0 3 8 0 3 8]
+    ane-dcs-bw-dvfs-filter = 0xffffffff
+    ane-dcs-bw-enable = 0x1
+    ane-dcs-bw-threshold-a = hex(2304)=00000c0001000000000000000000000000000f000200000000000b000000000000001e000300000000000e00000000000000e8030400000000001d00000000000000e803050000000000e703000000000000e803060000000000e70300000000...
+    ane-dcs-bw-threshold-b = hex(2048)=00000c0001000000000000000000000000000f000200000000000b000000000000001e000300000000000e00000000000000e8030400000000001d00000000000000e803050000000000e703000000000000e803060000000000e70300000000...
+    ane-dcs-bw-threshold-c = hex(2304)=000006000100000000000000000000000080070002000000000005000000000000000f000300000000800600000000000000e8030400000000000e00000000000000e803050000000000e703000000000000e803060000000000e70300000000...
+    ane0-af-bw-constraint = u32[0 0 1 0 0 1 0 0 2 0 1 2 0 1 2 0 1 2 0 1 2 0 1 3 0 1 3 0 1 3 0 1 3 0 1 3 0 1 3 0 2 3 0 2 3 0 2 3]
+    ane0-af-bw-dvfs-filter = 0xffffff00
+    ane0-af-bw-enable = 0x1
+    ane0-af-bw-threshold = hex(1024)=000018000000000000000000000000000000e8030000000000001700000000000000e803000000000000e703000000000000e803000000000000e7030000000000000a000000000000000000000000000000e803000000000000090000000000...
+    ane0-dcs-bw-constraint-a = u32[0 0 3 0 0 3 0 0 6 0 0 7 0 1 7 0 1 8 0 1 8 0 2 8 0 2 8 0 2 8 0 2 8 0 2 8 0 2 8 0 3 8 0 3 8 0 3 8]
+    ane0-dcs-bw-constraint-b = u32[0 0 3 0 0 3 0 0 6 0 0 7 0 1 7 0 1 7 0 1 7 0 2 7 0 2 7 0 2 7 0 2 7 0 2 7 0 2 7 0 3 7 0 3 7 0 3 7]
+    ane0-dcs-bw-constraint-c = u32[0 0 3 0 0 3 0 0 6 0 0 7 0 1 7 0 1 8 0 1 8 0 2 8 0 2 8 0 2 8 0 2 8 0 2 8 0 2 8 0 3 8 0 3 8 0 3 8]
+    ane0-dcs-bw-dvfs-filter = 0xffffffff
+    ane0-dcs-bw-enable = 0x0
+    ane0-dcs-bw-threshold-a = hex(2304)=00000c0001000000000000000000000000000f000200000000000b000000000000001e000300000000000e00000000000000e8030400000000001d00000000000000e803050000000000e703000000000000e803060000000000e70300000000...
+    ane0-dcs-bw-threshold-b = hex(2048)=00000c0001000000000000000000000000000f000200000000000b000000000000001e000300000000000e00000000000000e8030400000000001d00000000000000e803050000000000e703000000000000e803060000000000e70300000000...
+    ane0-dcs-bw-threshold-c = hex(2304)=000006000100000000000000000000000080070002000000000005000000000000000f000300000000800600000000000000e8030400000000000e00000000000000e803050000000000e703000000000000e803060000000000e70300000000...
+    ane0-link0-af-bw-constraint = u32[0 0 1 0 0 1 0 0 2 0 1 2 0 1 2 0 1 2 0 1 2 0 1 3 0 1 3 0 1 3 0 1 3 0 1 3 0 1 3 0 2 3 0 2 3 0 2 3]
+    ane0-link0-af-bw-dvfs-filter = 0xff
+    ane0-link0-af-bw-enable = 0x1
+    ane0-link0-af-bw-threshold = hex(1024)=000018000000000000000000000000000000e8030000000000001700000000000000e803000000000000e703000000000000e803000000000000e7030000000000000a000000000000000000000000000000e803000000000000090000000000...
+    ane0-link1-af-bw-constraint = u32[0 0 1 0 0 1 0 0 2 0 1 2 0 1 2 0 1 2 0 1 2 0 1 3 0 1 3 0 1 3 0 1 3 0 1 3 0 1 3 0 2 3 0 2 3 0 2 3]
+    ane0-link1-af-bw-dvfs-filter = 0xff
+    ane0-link1-af-bw-enable = 0x1
+    ane0-link1-af-bw-threshold = hex(1024)=000018000000000000000000000000000000e8030000000000001700000000000000e803000000000000e703000000000000e803000000000000e7030000000000000a000000000000000000000000000000e803000000000000090000000000...
+    ane1-af-bw-constraint = u32[0 0 1 0 0 1 0 0 2 0 1 2 0 1 2 0 1 2 0 1 2 0 1 3 0 1 3 0 1 3 0 1 3 0 1 3 0 1 3 0 2 3 0 2 3 0 2 3]
+    ane1-af-bw-dvfs-filter = 0xffffff00
+    ane1-af-bw-enable = 0x1
+    ane1-af-bw-threshold = hex(1024)=000018000000000000000000000000000000e8030000000000001700000000000000e803000000000000e703000000000000e803000000000000e7030000000000000a000000000000000000000000000000e803000000000000090000000000...
+    ane1-dcs-bw-constraint-a = u32[0 0 3 0 0 3 0 0 6 0 0 7 0 1 7 0 1 8 0 1 8 0 2 8 0 2 8 0 2 8 0 2 8 0 2 8 0 2 8 0 3 8 0 3 8 0 3 8]
+    ane1-dcs-bw-constraint-b = u32[0 0 3 0 0 3 0 0 6 0 0 7 0 1 7 0 1 7 0 1 7 0 2 7 0 2 7 0 2 7 0 2 7 0 2 7 0 2 7 0 3 7 0 3 7 0 3 7]
+    ane1-dcs-bw-constraint-c = u32[0 0 3 0 0 3 0 0 6 0 0 7 0 1 7 0 1 8 0 1 8 0 2 8 0 2 8 0 2 8 0 2 8 0 2 8 0 2 8 0 3 8 0 3 8 0 3 8]
+    ane1-dcs-bw-dvfs-filter = 0xffffffff
+    ane1-dcs-bw-enable = 0x0
+    ane1-dcs-bw-threshold-a = hex(2304)=00000c0001000000000000000000000000000f000200000000000b000000000000001e000300000000000e00000000000000e8030400000000001d00000000000000e803050000000000e703000000000000e803060000000000e70300000000...
+    ane1-dcs-bw-threshold-b = hex(2048)=00000c0001000000000000000000000000000f000200000000000b000000000000001e000300000000000e00000000000000e8030400000000001d00000000000000e803050000000000e703000000000000e803060000000000e70300000000...
+    ane1-dcs-bw-threshold-c = hex(2304)=000006000100000000000000000000000080070002000000000005000000000000000f000300000000800600000000000000e8030400000000000e00000000000000e803050000000000e703000000000000e803060000000000e70300000000...
+    ane1-link0-af-bw-constraint = u32[0 0 1 0 0 1 0 0 2 0 1 2 0 1 2 0 1 2 0 1 2 0 1 3 0 1 3 0 1 3 0 1 3 0 1 3 0 1 3 0 2 3 0 2 3 0 2 3]
+    ane1-link0-af-bw-dvfs-filter = 0xff
+    ane1-link0-af-bw-enable = 0x1
+    ane1-link0-af-bw-threshold = hex(1024)=000018000000000000000000000000000000e8030000000000001700000000000000e803000000000000e703000000000000e803000000000000e7030000000000000a000000000000000000000000000000e803000000000000090000000000...
+    ane1-link1-af-bw-constraint = u32[0 0 1 0 0 1 0 0 2 0 1 2 0 1 2 0 1 2 0 1 2 0 1 3 0 1 3 0 1 3 0 1 3 0 1 3 0 1 3 0 2 3 0 2 3 0 2 3]
+    ane1-link1-af-bw-dvfs-filter = 0xff
+    ane1-link1-af-bw-enable = 0x1
+    ane1-link1-af-bw-threshold = hex(1024)=000018000000000000000000000000000000e8030000000000001700000000000000e803000000000000e703000000000000e803000000000000e7030000000000000a000000000000000000000000000000e803000000000000090000000000...
+    bwr-catch-up-factor = 0x10000
+    compatible = "iop-nub,rtbuddy-v2"
+    controller = hex(1144)=010000001f0000004300000000000000000000004449452d54454d5000000000000000000000000000000000000000000000000002000000000000000000000000000000000000004443532d4257000000000000000000000000000000000000...
+    coredump-enable = "@"
+    coredump-rel-privacy-approved = <empty>
+    dcs-bw-enable = 0x1
+    dcs-bw-threshold-a = u32[c3d70 1 0 0 eee14 2 b3d70 0 1ddeb8 3 dee14 0 2b547a 4 1cdeb8 0 380f5c 5 2a547a 0 411eb8 6 370f5c 0 4c6147 7 401eb8 0 56e666 8 4b6147 0 3e80000 0 55e666 0]
+    dcs-bw-threshold-b = u32[c3d70 1 0 0 eee14 2 b3d70 0 1ddeb8 3 dee14 0 2b547a 4 1cdeb8 0 380f5c 5 2a547a 0 411eb8 6 370f5c 0 4c6147 7 401eb8 0 3e80000 8 4b6147 0]
+    dcs-bw-threshold-c = u32[61eb8 1 0 0 77851 2 51eb8 0 eee14 3 67851 0 15a8f5 4 dee14 0 1c07ae 5 14a8f5 0 208f5c 6 1b07ae 0 2630a3 7 1f8f5c 0 2b7333 8 2530a3 0 3e80000 0 2a7333 0]
+    dcs-wr-bw-enable = 0x1
+    dcs-wr-bw-threshold = u32[2cee14 0 0 0 3e80000 0 2bee14 3 3e80000 0 3e70000 0 3e80000 0 3e70000 0]
+    dcs-wr-bw-threshold-c = u32[1675c2 0 0 0 3e80000 0 1575c2 3 3e80000 0 3e70000 0 3e80000 0 3e70000 0]
+    dvfs-domain = u32[1 9 0 534344 0 0 0 2 4 0 434f53 0 0 0 3 5 0 50534944 0 0 0 4 3 0 455641 0 0 0]
+    fast-die-ctrl-ts = 0x50000
+    fast-die-ctrl-ts-avg-temp = ["d"]
+    firmware-name = "t8160pmp"
+    lts-config = u32[1 20c 226ddb 0 fc563 6e 69 110000 b333 11b947a 2 13b 21eb91 0 fc641 6e 68 110000 b333 3024c937]
+    lts-ctrl-loop = u32[1 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43434150 0 0 0 2 0 1 2 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 555047 0 0 0]
+    lts-ctrl-ts = 0x50000
+    lts-voltage = u32[1 3 4 2 43434150 30 2 3 5 4 584741 0]
+    mc-cue-quota-cfg = u32[0 120 120 8 a 9 0 20 8 a a 0 20 8 a d 20 20 8 a e 90 90 8 a f 120 120 8 a]
+    mc-cue-win-count = "P"
+    mc-dsid-ptd-config = u32[0 0 8 0 10 0]
+    mc-quota-policy = 0x2
+    mc_cmd_ack_ptd_count = 0x1
+    mc_cmd_ptd_count = 0x2
+    mc_quota_req_ptd_count = 0x8
+    mc_quota_rsp_ptd_count = 0x8
+    mcache-stream = hex(2352)=0e00000004000000010000000d0000000d000000380000003800000002000000000000000000000004000000000000001100000004000000010000000e0000000e0000003c0000003c0000000200000000000000000000000400000001000000...
+    name = "iop-pmp-nub"
+    no-shutdown = 0x1
+    pm-ptd-ranges = u32[1 2 3 4 5 6 7 0 0 9 a b c d 0 14]
+    ptd-range = hex(928)=010000000000000001000000000000005054442d4e554c4c00000000000000000200000001000000010000000b000000504d502d53544154555300000000000003000000020000000400000000000000445646532d5354415445000000000000...
+    region-base = u64=0x280500000 u32[80500000 2] ascii=b'\x00\x00P\x80\x02\x00\x00\x00'
+    region-size = u64=0xb0000 u32[b0000 0] ascii=b'\x00\x00\x0b\x00\x00\x00\x00\x00'
+    soc-device = hex(3720)=01000000454e4f4e01000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000...
+    soc-device-ps-group = u64=0x3ffffc00 u32[3ffffc00 0] ascii=b'\x00\xfc\xff?\x00\x00\x00\x00'
+    soc-ni0-bw-enable = 0x0
+    soc-ni0-bw-threshold = u32[187ae1 0 0 0 20a3d7 0 177ae1 3 30f5c2 0 1fa3d7 3 3e80000 0 2ff5c2 3]
+    soc-ni1-bw-enable = 0x0
+    soc-ni1-bw-threshold = u32[187ae1 0 0 0 20a3d7 0 177ae1 3 30f5c2 0 1fa3d7 3 3e80000 0 2ff5c2 3]
+    soc-ni2-bw-enable = 0x0
+    soc-ni2-bw-threshold = u32[187ae1 0 0 0 20a3d7 0 177ae1 3 30f5c2 0 1fa3d7 3 3e80000 0 2ff5c2 3]
+    soc-ni3-bw-enable = 0x0
+    soc-ni3-bw-threshold = u32[187ae1 0 0 0 20a3d7 0 177ae1 3 30f5c2 0 1fa3d7 3 3e80000 0 2ff5c2 3]
+    sram-index = 0x1
+    user-power-managed = 0x1
+== device-tree/arm-io/dart-sbr/mapper-pmp
+    AAPL,phandle = 0x93
+    compatible = "iommu-mapper"
+    device_type = "dart-mapper"
+    name = "mapper-pmp"
+    reg = 0x6
+== device-tree/arm-io/aon-ptd
+    #address-cells = 0x0
+    #interrupt-cells = 0x1
+    AAPL,phandle = 0xa6
+    compatible = "ptd,v1"
+    device_type = "interrupt-controller"
+    interrupt-controller = <empty>
+    interrupt-parent = "-"
+    interrupts = u32[269 26a 26b 26c 26d 26e 26f 270 271 272 273 274 275 276 277 278 279 27a 27b 27c 27d 27e 27f 280 281 282 283 284 285 286 287 288]
+    name = "aon-ptd"
+    ptd-hw-irq-vectors = " "
+    ptd-int-enable-clr-offset = u64=0x300 u32[300 0] ascii=b'\x00\x03\x00\x00\x00\x00\x00\x00'
+    ptd-int-enable-offset = u64=0x100 u32[100 0] ascii=b'\x00\x01\x00\x00\x00\x00\x00\x00'
+    ptd-int-enable-set-offset = u64=0x200 u32[200 0] ascii=b'\x00\x02\x00\x00\x00\x00\x00\x00'
+    ptd-int-status-offset = u64=0x0 u32[0 0] ascii=b'\x00\x00\x00\x00\x00\x00\x00\x00'
+    reg = u32[8c840000 0 4000 0 8c850000 0 4000 0 8c858000 0 4000 0 8c860000 0 4000 0]
+== device-tree/arm-io/smctempsensor0
+    AAPL,phandle = 0x1b3
+    compatible = "smc-tempsensor"
+    device_type = "smctempsensor"
+    name = "smctempsensor0"
+    sensor = "mTPLmTLLmETW"
+    timerInterval = 0x3e8
+== device-tree/port-usb-c-1
+    AAPL,phandle = 0x1c5
+    compatible = "dock,usb-c"
+    device_type = "port-component-usb-c"
+    name = "port-usb-c-1"
+    port-number = 0x1
+    port-type = 0x2
+    primary-port-id = 0x2
+== device-tree/port-magsafe-1
+    AAPL,phandle = 0x1c6
+    compatible = "dock,0pin"
+    device_type = "port-magsafe"
+    features-supported = 0x1
+    name = "port-magsafe-1"
+    port-number = 0x1
+    port-type = 0x9
+    primary-port-id = 0x200
+    transports-supported = 0xf

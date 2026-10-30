@@ -1,0 +1,86 @@
+# `TUConversationManagerDelegate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities`](../userland/System__Library__PrivateFrameworks__TelephonyUtilities.framework__TelephonyUtilities.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 76 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[TUConversationManagerDelegate conversationManager:conversation:updatedMessagesGroupPhoto:];
+-[TUConversationManagerDelegate conversationManager:removedActiveConversation:];
+-[TUConversationManagerDelegate conversationManager:conversation:participant:addedCollaborationNotice:];
+-[TUConversationManagerDelegate conversationManager:stateChangedForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:linkChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:conversation:buzzedMember:];
+-[TUConversationManagerDelegate conversationManager:screenSharingAvailableChanged:];
+-[TUConversationManagerDelegate conversationManager:cameraMixedWithScreenDidChangeForConversation:];
+-[TUConversationManagerDelegate conversationManager:rejectedMembersChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:migratingFromConversation:toConversation:];
+-[TUConversationManagerDelegate conversationManager:letMeInRequestStateChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:stateChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:otherInvitedHandlesChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:pendingMembersChangedForConversation:];
+-[TUConversationManagerDelegate serverDisconnectedForConversationManager:];
+-[TUConversationManagerDelegate conversationManager:conversation:launchStateChanged:forActivitySession:];
+-[TUConversationManagerDelegate conversationManager:remoteScreenShareAttributesChanged:isLocallySharing:];
+-[TUConversationManagerDelegate conversationManager:addedActiveConversation:];
+-[TUConversationManagerDelegate conversationManager:activitySessionsChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:avModeChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:activitySessionsChangedForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:linkInvitedMemberHandlesChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:conversation:addedMembersLocally:];
+-[TUConversationManagerDelegate conversationManager:remoteMembersChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:activeRemoteParticipantsChangedForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:oneToOneModeChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:localVideoToggledForConversation:];
+-[TUConversationManagerDelegate conversationManager:screeningChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:conversationUpdatedMessagesGroupUUID:];
+-[TUConversationManagerDelegate conversationManager:collaborationChanged:forConversation:collaborationState:];
+-[TUConversationManagerDelegate conversationManager:resolvedAudioVideoModeChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:conversation:participant:addedNotice:];
+-[TUConversationManagerDelegate conversationManager:activeRemoteParticipantsChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:screenSharingRequestsChangedForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:ignoreLMIRequestsChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:avModeChangedForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:cameraMixedWithScreenDidChangeForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:changedActivityAuthorizationForBundleIdentifier:];
+-[TUConversationManagerDelegate conversationManager:conversation:didChangeSceneAssociationForActivitySession:];
+-[TUConversationManagerDelegate conversationManager:conversation:didChangeStateForActivitySession:];
+-[TUConversationManagerDelegate conversationManager:conversation:participant:didUpdateNickname:reason:];
+-[TUConversationManagerDelegate conversationManager:conversation:receivedActivitySessionEvent:];
+-[TUConversationManagerDelegate conversationManager:conversation:requestedScreenShareForParticipant:];
+-[TUConversationManagerDelegate conversationManager:conversation:screenSharingChangedForParticipant:];
+-[TUConversationManagerDelegate conversationManager:conversationUpdatedMessagesGroupName:];
+-[TUConversationManagerDelegate conversationManager:conversationUpdatedMessagesGroupName:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:debugSendInterpreterLink:toHandle:];
+-[TUConversationManagerDelegate conversationManager:didChangeActivatedLinks:];
+-[TUConversationManagerDelegate conversationManager:didChangeConversationAdvertisement:];
+-[TUConversationManagerDelegate conversationManager:handoffEligibilityChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:handoffEligibilityChangedToConversation:fromPreviousConversation:];
+-[TUConversationManagerDelegate conversationManager:kickedMembersChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:kickedMembersChangedForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:letMeInRequestStateChangedForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:linkChangedForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:linkInvitedMemberHandlesChangedForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:localParticipantClusterDidChangeForConversation:];
+-[TUConversationManagerDelegate conversationManager:localParticipantClusterDidChangeForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:localVideoToggledForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:nearbySharePlayToggledForConversation:];
+-[TUConversationManagerDelegate conversationManager:nearbySharePlayToggledForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:oneToOneModeChangedForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:otherInvitedHandlesChangedForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:pendingMembersChangedForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:presentationContextChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:presentationContextChangedForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:rejectedMembersChangedForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:remoteMembersChangedForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:remoteScreenShareEndedWithReason:];
+-[TUConversationManagerDelegate conversationManager:resolvedAudioVideoModeChangedForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:sharePlayAvailableChanged:];
+-[TUConversationManagerDelegate conversationManager:systemActivitySessionsChangedForConversation:];
+-[TUConversationManagerDelegate conversationManager:systemActivitySessionsChangedForConversation:fromOldConversation:];
+-[TUConversationManagerDelegate conversationManager:trackedPendingMember:forConversationLink:];
+-[TUConversationManagerDelegate conversationManager:updatedIncomingPendingConversations:];
+-[TUConversationManagerDelegate conversationsChangedForConversationManager:];
+```

@@ -1,0 +1,72 @@
+# `AppleMSGWatchdog`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.driver.AppleMSG`](../kexts/com.apple.driver.AppleMSG.md)
+- Object size: `0x100` (256 bytes)
+- Metaclass: `0xfffffe000b97cbb8`; metaclass vtable `0xfffffe0008169750`; class vtable `0xfffffe00081696c0`
+- Registration (init): `0xfffffe00092161b0`
+- Superclasses: none registered (derives from a kernel-core root such as OSObject)
+
+## Strings in its kext that name it (60)
+
+- `AppleMSGWatchdog::%s: address=0x%qx size=%llu inout\n\n`
+- `AppleMSGWatchdog::%s: Client has checked in during Wake, SN = %llu\n`
+- `AppleMSGWatchdog::%s: Request watchdog wake, SN = %llu\n`
+- `AppleMSGWatchdog::%s: Watchdog expired, but skipping client kill\n`
+- `AppleMSGWatchdog::%s: wdt=0x%llx\n\n`
+- `AppleMSGWatchdog::%s: Reporting client suspension of %llu ms to CoreAnalytics\n`
+- `AppleMSGWatchdog::%s: Time since last Check-in: %llu ms, Suspension Start: %llu ms, Suspension End: %llu ms\n`
+- `AppleMSGWatchdog::%s: Enabling watchdog logic without panic.\n\n`
+- `AppleMSGWatchdog::%s: retcode=0x%x\n\n`
+- `AppleMSGWatchdog::%s: clientDied during state %s: %s %s\n`
+- `AppleMSGWatchdog::%s: Request to kill PID %d with psignal_sigkill_with_reason\n`
+- `AppleMSGWatchdog::%s: MSG Watchdog state is %s\n`
+- `AppleMSGWatchdog::%s: cID=%llu, PID=%d, interval = %llu strict=%llu relaxed=%llu frames\n\n`
+- `AppleMSGWatchdog::%s: Watchdog expired, but client process is suspended. Reset timer\n`
+- `AppleMSGWatchdog::%s: Set pre-panic delay to %u frames (%u ms at %ufps)\n\n`
+- `AppleMSGWatchdog::%s: ClientDied panic has been disabled\n`
+- `AppleMSGWatchdog::%s: detected kernel POST testing enabled, watchdog disabled.\n\n`
+- `AppleMSGWatchdog::%s: Don't halt CPUTrace when watchdog expires.\n\n`
+- `AppleMSGWatchdog::%s: monitoring disabled.\n\n`
+- `AppleMSGWatchdog::%s: Enabling MSG Watchdog\n`
+- `AppleMSGWatchdog::%s: watchdog disabled by boot-arg.\n\n`
+- `AppleMSGWatchdog::%s: interval=%llu\n\n`
+- `AppleMSGWatchdog::%s: Ignoring request to set MSG Watchdog state from %s to %s\n`
+- `AppleMSGWatchdog::%s: Panic suppressed by boot-args: %s\n`
+- `AppleMSGWatchdog::%s: Boot timeout expired. timeout=%d.\n\n`
+- `AppleMSGWatchdog::%s: Request to kill PID %d with proc_signal\n`
+- `AppleMSGWatchdog::%s: Kill client process if it is suspended.\n\n`
+- `AppleMSGWatchdog::%s: Set MSG Watchdog state from %s to %s\n`
+- `AppleMSGWatchdog::%s: No Check-ins: %llu -> %llu, Last Suspension: %llu -> %llu, count: %llu, total duration: %llu\n`
+- `AppleMSGWatchdog::%s: service checked in.\n\n`
+- `AppleMSGWatchdog::%s: Can't allocate lock\n\n`
+- `AppleMSGWatchdog::%s: Invalid watchdog interval. interval=%llu\n\n`
+- `AppleMSGWatchdog::%s: Request watchdog sleep, SN = %llu\n`
+- `AppleMSGWatchdog::%s: MSG Watchdog v2.9.4 (%s, %s).\n\n`
+- `AppleMSGWatchdog::%s: %s overrides wdt=-1, Enabling watchdog\n\n`
+- `AppleMSGWatchdog::%s: Watchdog expired, but disabled due to valid conditions (%s): %s %s\n`
+- `AppleMSGWatchdog::%s: %s\n`
+- `AppleMSGWatchdog::%s: Client checked in after suspension\n`
+- `AppleMSGWatchdog::%s: %s=0x%llx\n\n`
+- `AppleMSGWatchdog::%s: SystemHasPoweredOn (Wake) Notification Received\n`
+- `AppleMSGWatchdog::%s: %s = %u ms\n\n`
+- `AppleMSGWatchdog::%s: Durations for %s Suspension: %llu ms, Total Suspension: %llu ms, Time since: %llu ms\n`
+- `AppleMSGWatchdog::%s: monitoring disabled with retryCount %d\n\n`
+- `AppleMSGWatchdog::%s: Client (cID=%llu, PID=%d) was suspended since last check-in\n`
+- `AppleMSGWatchdog::%s: Warning: New addClient for cID %llu, ignoring previously attached cID %llu\n`
+- `AppleMSGWatchdog::%s: Disabling watchdog.\n\n`
+- `AppleMSGWatchdog: AssertMacros: %s, %s file: %s, line: %d, value: %ld\n\n`
+- `AppleMSGWatchdog::%s: Requested conID %llu, Active conID %llu\n`
+- `AppleMSGWatchdog::%s: Don't kill client process if it is suspended (default).\n\n`
+- `AppleMSGWatchdog::%s: SystemWillPowerOn Notification Received\n`
+- `AppleMSGWatchdog::%s: Enabling watchdog logic without kill.\n\n`
+- `AppleMSGWatchdog::%s: SystemWillSleep Notification Received\n`
+- `AppleMSGWatchdog::%s: Detect Disabled in state %s: %s %s\n`
+- `AppleMSGWatchdog::%s: Unexpected state: %d (%s) \n`
+- `AppleMSGWatchdog::%s: Halting CPUTrace. Previous Value: %s (Return: %d)\n`
+- `AppleMSGWatchdog::%s: State = %s, Strict = %llu, Relaxed = %llu frames\n\n`
+- `AppleMSGWatchdog::%s: State = %s, SN = %llu, Last = %llu\n`
+- `AppleMSGWatchdog::%s: CPUTrace is now %s (Return %d)\n`
+- `site.AppleMSGWatchdog`
+- `/Library/Caches/com.apple.xbs/9CC64A0B-2A20-45BE-9D61-43E699793882/TemporaryDirectory.rcv3bx/Sources/AppleMSG/AppleMSGKext/AppleMSGWatchdogClient.cpp`

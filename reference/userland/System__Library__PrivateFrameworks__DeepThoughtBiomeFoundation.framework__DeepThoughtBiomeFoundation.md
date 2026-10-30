@@ -1,0 +1,59 @@
+# `/System/Library/PrivateFrameworks/DeepThoughtBiomeFoundation.framework/DeepThoughtBiomeFoundation`
+
+iOS 27.2 dyld shared cache image, version `6.1.3.0.0`. Light page: libraries and type names only. **[DSC]**
+
+## Linked libraries (42)
+
+- `/System/Library/Frameworks/Foundation.framework/Foundation`
+- `/System/Library/PrivateFrameworks/AIMLInstrumentationStreams.framework/AIMLInstrumentationStreams`
+- `/System/Library/PrivateFrameworks/SiriPrivateLearningAnalytics.framework/SiriPrivateLearningAnalytics`
+- `/usr/lib/libobjc.A.dylib`
+- `/usr/lib/libSystem.B.dylib`
+- `/System/Library/Frameworks/Accelerate.framework/Accelerate`
+- `/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation`
+- `/System/Library/Frameworks/UIKit.framework/UIKit`
+- `/System/Library/PrivateFrameworks/BiomeLibrary.framework/BiomeLibrary`
+- `/System/Library/PrivateFrameworks/BiomePubSub.framework/BiomePubSub`
+- `/System/Library/PrivateFrameworks/BiomeStorage.framework/BiomeStorage`
+- `/System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams`
+- `/System/Library/PrivateFrameworks/CDMFoundation.framework/CDMFoundation`
+- `/System/Library/PrivateFrameworks/MediaAnalysisServices.framework/MediaAnalysisServices`
+- `/System/Library/PrivateFrameworks/SiriInstrumentation.framework/SiriInstrumentation`
+- `/usr/lib/swift/libswiftAVFoundation.dylib`
+- `/usr/lib/swift/libswiftAccelerate.dylib`
+- `/usr/lib/swift/libswiftCompression.dylib`
+- `/usr/lib/swift/libswiftCore.dylib`
+- `/usr/lib/swift/libswiftCoreAudio.dylib`
+- `/usr/lib/swift/libswiftCoreFoundation.dylib`
+- `/usr/lib/swift/libswiftCoreImage.dylib`
+- `/usr/lib/swift/libswiftCoreLocation.dylib`
+- `/usr/lib/swift/libswiftCoreMIDI.dylib`
+- `/usr/lib/swift/libswiftDarwin.dylib`
+- `/usr/lib/swift/libswiftDispatch.dylib`
+- `/usr/lib/swift/libswiftIntents.dylib`
+- `/usr/lib/swift/libswiftMLCompute.dylib`
+- `/usr/lib/swift/libswiftMetal.dylib`
+- `/usr/lib/swift/libswiftNaturalLanguage.dylib`
+- `/usr/lib/swift/libswiftOSLog.dylib`
+- `/usr/lib/swift/libswiftObjectiveC.dylib`
+- `/usr/lib/swift/libswiftQuartzCore.dylib`
+- `/usr/lib/swift/libswiftSpatial.dylib`
+- `/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib`
+- `/usr/lib/swift/libswiftXPC.dylib`
+- `/usr/lib/swift/libswift_Builtin_float.dylib`
+- `/usr/lib/swift/libswift_Concurrency.dylib`
+- `/usr/lib/swift/libswift_DarwinFoundation1.dylib`
+- `/usr/lib/swift/libswift_StringProcessing.dylib`
+- `/usr/lib/swift/libswiftos.dylib`
+- `/usr/lib/swift/libswiftsimd.dylib`
+
+## Objective-C: 117 classes, 9 protocols (method count not recorded on light pages)
+
+### Classes
+
+`SISchemaInstrumentationMessage`, `_TtC26DeepThoughtBiomeFoundation10EventUtils`, `_TtC26DeepThoughtBiomeFoundation10FeatureKey`, `_TtC26DeepThoughtBiomeFoundation12Conversation`, `_TtC26DeepThoughtBiomeFoundation12EventFactory`, `_TtC26DeepThoughtBiomeFoundation12FlowTaskStep`, `_TtC26DeepThoughtBiomeFoundation12TurnFeatures`, `_TtC26DeepThoughtBiomeFoundation13EventFeatures`, `_TtC26DeepThoughtBiomeFoundation14BiomeSQLResult`, `_TtC26DeepThoughtBiomeFoundation14PSEActionEvent`, `_TtC26DeepThoughtBiomeFoundation14StreamsEndTime`, `_TtC26DeepThoughtBiomeFoundation14UndefinedField`, `_TtC26DeepThoughtBiomeFoundation15FeaturizedEvent`, `_TtC26DeepThoughtBiomeFoundation15StreamsBookmark`, `_TtC26DeepThoughtBiomeFoundation16BiomeEventStream`, `_TtC26DeepThoughtBiomeFoundation16BiomeSQLDatabase`, `_TtC26DeepThoughtBiomeFoundation16ConversationTurn`, `_TtC26DeepThoughtBiomeFoundation16SQLDatabaseError`, `_TtC26DeepThoughtBiomeFoundation17ConversationUtils`, `_TtC26DeepThoughtBiomeFoundation18ConversationStream`, `_TtC26DeepThoughtBiomeFoundation18MHFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation19ConversationTurnPLL`, `_TtC26DeepThoughtBiomeFoundation19DIMFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation19FeatureConfigParser`, `_TtC26DeepThoughtBiomeFoundation19UnifiedSiriTurnBase`, `_TtC26DeepThoughtBiomeFoundation20ORCHFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation21BiomeAggregatedStream`, `_TtC26DeepThoughtBiomeFoundation21ConversationStreamPLL`, `_TtC26DeepThoughtBiomeFoundation22ConversationTurnAIMLIS`, `_TtC26DeepThoughtBiomeFoundation22FeaturizedConversation`, `_TtC26DeepThoughtBiomeFoundation22NumericalOneHotEncoder`, `_TtC26DeepThoughtBiomeFoundation22SiriUIBiomeEventStream`, `_TtC26DeepThoughtBiomeFoundation22SiriUIFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation23ConversationTurnFactory`, `_TtC26DeepThoughtBiomeFoundation24CategoricalOneHotEncoder`, `_TtC26DeepThoughtBiomeFoundation24ConversationStreamAIMLIS`, `_TtC26DeepThoughtBiomeFoundation24SemanticSimilarityScorer`, `_TtC26DeepThoughtBiomeFoundation24UserDefaultBookmarkStore`, `_TtC26DeepThoughtBiomeFoundation25AppIntentBiomeEventStream`, `_TtC26DeepThoughtBiomeFoundation25AppIntentFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation25ConversationStreamFactory`, `_TtC26DeepThoughtBiomeFoundation25InterTurnFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation25IntraTurnFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation25StreamsBookmarkCollection`, `_TtC26DeepThoughtBiomeFoundation25ValidTurnFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation26AppInFocusBiomeEventStream`, `_TtC26DeepThoughtBiomeFoundation26AppInFocusFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation26FeaturizedConversationTurn`, `_TtC26DeepThoughtBiomeFoundation26IntraEventFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation28ASRIntraTurnFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation28FlatFileStreamsBookmarkStore`, `_TtC26DeepThoughtBiomeFoundation28MessagesReadBiomeEventStream`, `_TtC26DeepThoughtBiomeFoundation28MessagesReadFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation28TTSIntraTurnFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation28UEIIntraTurnFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation29FlowIntraTurnFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation29SiriExecutionBiomeEventStream`, `_TtC26DeepThoughtBiomeFoundation29SiriExecutionFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation29TurnUtteranceFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation31MediaNowPlayingBiomeEventStream`, `_TtC26DeepThoughtBiomeFoundation31MediaNowPlayingFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation32CarPlayConnectedBiomeEventStream`, `_TtC26DeepThoughtBiomeFoundation32CarPlayConnectedFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation32LocationSemanticBiomeEventStream`, `_TtC26DeepThoughtBiomeFoundation32LocationSemanticFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation32TextInputSessionBiomeEventStream`, `_TtC26DeepThoughtBiomeFoundation32TextInputSessionFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation33DeviceLockedEventFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation33NotificationUsageBiomeEventStream`, `_TtC26DeepThoughtBiomeFoundation33NotificationUsageFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation33SequenceInterTurnFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation34DeviceScreenLockedBiomeEventStream`, `_TtC26DeepThoughtBiomeFoundation34UserFocusSleepModeBiomeEventStream`, `_TtC26DeepThoughtBiomeFoundation34UserFocusSleepModeFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation35IntraFeaturizedTurnFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation36FeaturizedTurnsByBucketizedTimestamp`, `_TtC26DeepThoughtBiomeFoundation37FeaturizedEventsByBucketizedTimestamp`, `_TtC26DeepThoughtBiomeFoundation37UserFocusStatusChangeBiomeEventStream`, `_TtC26DeepThoughtBiomeFoundation37UserFocusStatusChangeFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation38SiriPostSiriEngagementBiomeEventStream`, `_TtC26DeepThoughtBiomeFoundation38SiriPostSiriEngagementFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation42SiriVoiceTriggerStatisticsBiomeEventStream`, `_TtC26DeepThoughtBiomeFoundation43VoiceTriggerStatisticsEventFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation45EmbeddingsIntraFeaturizedTurnFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation47LocationPointOfInterestCategoryBiomeEventStream`, `_TtC26DeepThoughtBiomeFoundation47LocationPointOfInterestCategoryFeatureExtractor`, `_TtC26DeepThoughtBiomeFoundation5Event`, `_TtC26DeepThoughtBiomeFoundation8FileLock`, `_TtC26DeepThoughtBiomeFoundationP33_F4B432E80DB2346BBC23321592F0992C21FileLockDarwinDefault`, `_TtC26DeepThoughtBiomeFoundationP33_F4B432E80DB2346BBC23321592F0992C24FileLockContextExclusive`, `_TtCC26DeepThoughtBiomeFoundation12TurnFeatures10Embeddings`, `_TtCC26DeepThoughtBiomeFoundation12TurnFeatures15RequestSequence`, `_TtCC26DeepThoughtBiomeFoundation12TurnFeatures2MH`, `_TtCC26DeepThoughtBiomeFoundation12TurnFeatures3ASR`, `_TtCC26DeepThoughtBiomeFoundation12TurnFeatures3DIM`, `_TtCC26DeepThoughtBiomeFoundation12TurnFeatures3TTS`, `_TtCC26DeepThoughtBiomeFoundation12TurnFeatures3UEI`, `_TtCC26DeepThoughtBiomeFoundation12TurnFeatures4Flow`, `_TtCC26DeepThoughtBiomeFoundation12TurnFeatures4ORCH`, `_TtCC26DeepThoughtBiomeFoundation12TurnFeatures9ValidTurn`, `_TtCC26DeepThoughtBiomeFoundation13EventFeatures10AppInFocus`, `_TtCC26DeepThoughtBiomeFoundation13EventFeatures12MessagesRead`, `_TtCC26DeepThoughtBiomeFoundation13EventFeatures13SiriExecution`, `_TtCC26DeepThoughtBiomeFoundation13EventFeatures15MediaNowPlaying`, `_TtCC26DeepThoughtBiomeFoundation13EventFeatures16CarPlayConnected`, `_TtCC26DeepThoughtBiomeFoundation13EventFeatures16LocationSemantic`, `_TtCC26DeepThoughtBiomeFoundation13EventFeatures16TextInputSession`, `_TtCC26DeepThoughtBiomeFoundation13EventFeatures17NotificationUsage`, `_TtCC26DeepThoughtBiomeFoundation13EventFeatures18DeviceScreenLocked`, `_TtCC26DeepThoughtBiomeFoundation13EventFeatures18UserFocusSleepMode`, `_TtCC26DeepThoughtBiomeFoundation13EventFeatures21TextInputSessionEvent`, `_TtCC26DeepThoughtBiomeFoundation13EventFeatures21UserFocusStatusChange`, `_TtCC26DeepThoughtBiomeFoundation13EventFeatures22SiriPostSiriEngagement`, `_TtCC26DeepThoughtBiomeFoundation13EventFeatures26SiriVoiceTriggerStatistics`, `_TtCC26DeepThoughtBiomeFoundation13EventFeatures31LocationPointOfInterestCategory`, `_TtCC26DeepThoughtBiomeFoundation13EventFeatures6SiriUI`, `_TtCC26DeepThoughtBiomeFoundation13EventFeatures9AppIntent`
+
+### Protocols
+
+`BMSourceStream`, `BMStoreData`, `BMStream`, `BMTimeBasedPublisherStream`, `NSCoding`, `NSCopying`, `NSObject`, `NSSecureCoding`, `SISchemaInnerEventContainer`
+

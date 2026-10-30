@@ -1,0 +1,72 @@
+# `AppleSARServiceUserClient`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.driver.AppleSARService`](../kexts/com.apple.driver.AppleSARService.md)
+- Object size: `0x178` (376 bytes)
+- Metaclass: `0xfffffe000b9945b8`; metaclass vtable `0xfffffe00081c9160`; class vtable `0xfffffe00081c8b78`
+- Registration (init): `0xfffffe00094f5ce0`
+- Superclasses: [`IOUserClient`](IOUserClient.md) → [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## Strings in its kext that name it (60)
+
+- `static IOReturn AppleSARServiceUserClient::extBudgetScalingFactor(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extCallState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `site.AppleSARServiceUserClient`
+- `static IOReturn AppleSARServiceUserClient::extSARSensingCALastSubmit(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extGripState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extUpdateOrientation(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extFaceDetection(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extSARConsumed(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extWifiResidual(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `IOReturn AppleSARServiceUserClient::registerCallback(void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extCentralSAR(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extRegisterReceivingKernelMessage(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extBtResidual(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extWiFiState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extCentralMPE(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extConnectivityResidual(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extVoiceState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extConnectivityHSARSupported(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `virtual IOReturn AppleSARServiceUserClient::clientClose()`
+- `static IOReturn AppleSARServiceUserClient::extSARSensingCAInfo(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extUpdateE85MitigationRequest(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extCentralWiFi(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extSARFusionStateINT(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extSarServiceProfile(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extCellularHSARSupported(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `AppleSARServiceUserClient`
+- `static IOReturn AppleSARServiceUserClient::extSARSelectionTunerState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extAccessoryState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extUpdateScreenState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extVSWRLearning(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extBtSAR(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extGetSPMIEventTrackingArray(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extSARTransitionWaitTime(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extCentralBT(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extRegulatoryAverage(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `virtual IOReturn AppleSARServiceUserClient::clientDied()`
+- `static IOReturn AppleSARServiceUserClient::extSarRFSensingSignal(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extConnectivitySAR(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extCentralTotalMPE(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extAntennaOnTop(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extTotalSAR(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extStateABOsiris(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extFrontCameraState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extMPEConsumed(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extPTDUnRegisterInterrupt(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extConfigSARFusion(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extSARFusionStateMAV(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `AppleSARServiceUserClient: Failed to create Logging instance!\n`
+- `static IOReturn AppleSARServiceUserClient::extThreadState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extSARSelectionState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extUWBRadio(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extConfigHSAR(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extWifiSAR(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extoverrideUseCaseDetection(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extConnectivityRegulatoryInfo(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extUplinkConstraintCondition(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extConnectivitySarReport(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extRegulatoryLimit(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extSARFusionStateDAL(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extUpdateAudio(AppleSARService *, void *, IOExternalMethodArguments *)`

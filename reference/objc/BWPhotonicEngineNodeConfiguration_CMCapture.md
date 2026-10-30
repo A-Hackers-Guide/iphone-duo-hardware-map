@@ -1,0 +1,211 @@
+# `BWPhotonicEngineNodeConfiguration`
+
+- Image: [`/System/Library/PrivateFrameworks/CMCapture.framework/CMCapture`](../userland/System__Library__PrivateFrameworks__CMCapture.framework__CMCapture.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `BWStillImageNodeConfiguration`
+- 109 instance variables, 4 properties, 71 instance methods, 2 class methods
+
+## Instance variables
+
+```
+i _stillImageFusionScheme;
+@"NSDictionary" _sensorConfigurationsByPortType;
+@"NSArray" _sensorConfigurations;
+@"BWSensorConfiguration" _jasperSensorConfiguration;
+B _alwaysAllowModifyingInputBuffers;
+B _inputIs10Bit;
+i _retainedBufferCount;
+I _outputPixelFormat;
+i _outputColorSpaceProperties;
+i _outputBufferCount;
+i _minimumOutputBufferCount;
+i _maxNumberOfBurstCapturesAllowedInFlight;
+B _outputPoolBackPressureEnabled;
+@"<BWStillImageProcessingStatusDelegate>" _referenceFrameSelectionDelegate;
+I _softISPMode;
+B _softISPClientBracketEnabled;
+B _quadraProcessingSupportEnabled;
+I _sensorRawPixelFormat;
+{?="width"i"height"i} _rawSensorDimensions;
+{CGPoint="x"d"y"d} _sensorCenterOffset;
+@"NSDictionary" _dimensionsByResolutionFlavorByPortType;
+B _optimizedUltraHighResolutionProcessingWithAspectRatioCropSupported;
+B _ultraHighResolutionProcessingEnabled;
+i _processingAspectRatio;
+{?="width"i"height"i} _processingPipelineDimensions;
+@"NSString" _portTypeForActivePipelineDimensions;
+i _stillImageGDCSourceMode;
+I _sfhrMode;
+@"NSArray" _portTypesWithCalibrationEnabled;
+B _calibrationOnlyProcessingEnabled;
+B _unifiedBracketingFusionSupportEnabled;
+B _digitalFlashSupportEnabled;
+@"NSArray" _portTypesWithRawNightModeEnabled;
+B _deepFusionSyntheticsInNRSupportEnabled;
+B _deepFusionWaitForPreprocessingToFinish;
+@"NSArray" _portTypesWithDeepFusionEnabled;
+i _maxDeepFusionOutputCount;
+@"NSDictionary" _learnedFusionModeByPortType;
+I _learnedFusionModeAll;
+@"NSArray" _portTypesWithAdaptiveFusionEnabled;
+I _learnedNRMode;
+i _deepZoomVersion;
+i _deepZoomMode;
+f _gainMapMainImageDownscalingFactor;
+f _inferenceMainImageDownscalingFactor;
+@"NSDictionary" _providedInferenceAttachedMediaByMode;
+i _swfrVersion;
+B _redEyeReductionEnabled;
+B _textOrientationPrioritizationEnabled;
+i _semanticRenderingVersion;
+i _semanticDevelopmentVersion;
+i _personSemanticsVersion;
+B _semanticStyleRenderingEnabled;
+i _smartStyleRenderingVersion;
+B _smartStyleRenderingEnabled;
+B _smartStyleReversibilityEnabled;
+i _textureStyleRenderingVersion;
+B _textureStyleCreativeEffectsEnabled;
+B _textureStyleBaseLookEnabled;
+B _textureStyleFSINCMasksRequired;
+@"NSArray" _portTypesWithTextureStyleBaseLookEnabled;
+B _unstyledBufferEmitted;
+i _constantColorVersion;
+B _constantColorClippingRecoveryEnabled;
+B _constantColorSaturationBoostEnabled;
+B _generateInferencesForSemanticProcessingIfNeeded;
+{?="width"i"height"i} _standardFormatDimensions;
+{?="width"i"height"i} _outputDimensions;
+@"NSArray" _portTypesWithGeometricDistortionCorrectionEnabled;
+{?="width"i"height"i} _geometricDistortionCorrectionExpandedImageDimensions;
+@"NSArray" _portTypesWithIntelligentDistortionCorrectionEnabled;
+i _intelligentDistortionCorrectionVersion;
+B _intelligentDistortionCorrectionAppliesFinalDimensions;
+B _dcProcessingWithDepthSupported;
+B _replicatePixelsOutsideOfFinalImageDimensionsWithDCProcessing;
+i _horizontalSensorBinningFactor;
+i _verticalSensorBinningFactor;
+i _greenGhostMitigationVersion;
+B _depthDataDeliveryEnabled;
+@"NSArray" _portTypesWithDepthSegmentationPortraitParameters;
+B _continuousZoomWithDepthSupported;
+B _zoomingDisparityAllowed;
+B _shouldComputeDisparityWhenCalibrationFails;
+B _demosaicedRawEnabled;
+I _demosaicedRawPixelFormat;
+@"NSDictionary" _rawColorCalibrationsByPortType;
+@"NSDictionary" _rawLensShadingCorrectionCoefficientsByPortType;
+I _linearYUVPixelFormat;
+i _pointCloudInputRetainedBufferCount;
+B _preNoiseReductionScalerCropSupported;
+B _personalPhotographerEnabled;
+@"BWSoftISPProcessorControllerConfiguration" _softISPProcessorControllerConfiguration;
+@"BWNRFProcessorControllerConfiguration" _nrfProcessorControllerConfiguration;
+@"BWDeferredCaptureControllerConfiguration" _deferredCaptureControllerConfiguration;
+@"BWDeferredProcessorControllerConfiguration" _deferredProcessorControllerConfiguration;
+@"BWDeepFusionProcessorControllerConfiguration" _deepFusionProcessorControllerConfiguration;
+@"BWLearnedNRProcessorControllerConfiguration" _learnedNRProcessorControllerConfiguration;
+@"BWInferenceEngineControllerConfiguration" _inferenceControllerConfiguration;
+@"BWSWFRProcessorControllerConfiguration" _swfrProcessorControllerConfiguration;
+@"BWColorConstancyProcessorControllerConfiguration" _colorConstancyProcessorControllerConfiguration;
+@"BWStillImageProcessorControllerConfiguration" _redEyeProcessorControllerConfiguration;
+@"BWIntelligentDistortionCorrectionProcessorControllerConfiguration" _intelligentDistortionCorrectionProcessorControllerConfiguration;
+@"BWDeepZoomProcessorControllerConfiguration" _deepZoomProcessorControllerConfiguration;
+@"BWScalerProcessorControllerConfiguration" _scalerProcessorControllerConfiguration;
+@"BWStereoDisparityProcessorControllerConfiguration" _stereoDisparityProcessorControllerConfiguration;
+@"BWJasperColorStillsExecutorControllerConfiguration" _jasperColorStillsExecutorControllerConfiguration;
+@"BWJasperDisparityProcessorControllerConfiguration" _jasperDisparityProcessorControllerConfiguration;
+@"BWSmartStyleRenderingProcessorControllerConfiguration" _smartStyleRenderingProcessorControllerConfiguration;
+B _cmiResourceEnabled;
+```
+
+## Properties
+
+```
+@property (TB,R,N) postponeSelectResourceAlloctions;
+@property (TB,R,N) postponeInferenceControllerPreparation;
+@property (TB,R,N) swfrAmbientLearnedNREnabled;
+@property (T@"NSDictionary",R,N) providedInferenceAttachedMediaModesByAttachedMediaKey;
+```
+
+## Class methods
+
+```
++[BWPhotonicEngineNodeConfiguration initialize];
++[BWPhotonicEngineNodeConfiguration initialize];
+```
+
+## Instance methods
+
+```
+-[BWPhotonicEngineNodeConfiguration isDepthCaptureNeedingPersonSegmentationMasksWithSettings:];
+-[BWPhotonicEngineNodeConfiguration inferenceAttachedMediaRequiredForSettings:inferences:];
+-[BWPhotonicEngineNodeConfiguration _inferenceAttachedMediaRequiredForSmartStyleWithSettings:];
+-[BWPhotonicEngineNodeConfiguration swfrProcessorControllerConfiguration];
+-[BWPhotonicEngineNodeConfiguration gdcSourceForSettings:portType:];
+-[BWPhotonicEngineNodeConfiguration postponeSelectResourceAlloctions];
+-[BWPhotonicEngineNodeConfiguration resolvedProcessingResolutionFlavorForSettings:portType:];
+-[BWPhotonicEngineNodeConfiguration stereoDisparityProcessorControllerConfiguration];
+-[BWPhotonicEngineNodeConfiguration isSemanticRenderingCapture:];
+-[BWPhotonicEngineNodeConfiguration _inferenceAttachedMediaRequiredForDemosaicedRawCaptureWithSettings:inferences:];
+-[BWPhotonicEngineNodeConfiguration isSWFRAmbientLearnedNRCapture:];
+-[BWPhotonicEngineNodeConfiguration isSmartStylesCaptureNeedingInferencesWithSettings:];
+-[BWPhotonicEngineNodeConfiguration shouldProcessSmartStyleRenderingInputForSettings:];
+-[BWPhotonicEngineNodeConfiguration deepFusionProcessorControllerConfiguration];
+-[BWPhotonicEngineNodeConfiguration dealloc];
+-[BWPhotonicEngineNodeConfiguration resolvedProcessingResolutionFlavorsForSettings:];
+-[BWPhotonicEngineNodeConfiguration isScalerRequiredForSettings:portType:inputDimensions:outputDimensions:preNoiseReductionScalerOut:];
+-[BWPhotonicEngineNodeConfiguration nrfProcessorControllerConfiguration];
+-[BWPhotonicEngineNodeConfiguration _updatedInferencePrepareInputDimensionsForAspectRatio:];
+-[BWPhotonicEngineNodeConfiguration redEyeProcessorControllerConfiguration];
+-[BWPhotonicEngineNodeConfiguration configureInferenceEngineControllerInput:];
+-[BWPhotonicEngineNodeConfiguration providedInferenceAttachedMediaModesByAttachedMediaKey];
+-[BWPhotonicEngineNodeConfiguration jasperColorStillsExecutorControllerConfiguration];
+-[BWPhotonicEngineNodeConfiguration areInferencesRequiredByProcessorControllersForSettings:];
+-[BWPhotonicEngineNodeConfiguration smartStyleRenderingProcessorControllerConfiguration];
+-[BWPhotonicEngineNodeConfiguration isSWFRFlashCapture:];
+-[BWPhotonicEngineNodeConfiguration requiresResizedOutputDimensionsWithInputDimensions:];
+-[BWPhotonicEngineNodeConfiguration generateDisparityForSettings:];
+-[BWPhotonicEngineNodeConfiguration harvestStillImageInferencesFromSampleBuffer:stillImageSettings:enabledInferenceMasks:];
+-[BWPhotonicEngineNodeConfiguration isGDCCaptureForPortType:settings:];
+-[BWPhotonicEngineNodeConfiguration preNoiseReductionScalerInputCropDimensionsForInputDimensions:outputDimensions:];
+-[BWPhotonicEngineNodeConfiguration prepareSampleBufferForInferenceProcessing:inferenceInput:stillImageSettings:inferenceInputBufferType:];
+-[BWPhotonicEngineNodeConfiguration softISPProcessorControllerConfiguration];
+-[BWPhotonicEngineNodeConfiguration isDeferredLearnedFusionCapture:];
+-[BWPhotonicEngineNodeConfiguration shouldRenderSmartStyleForSettings:];
+-[BWPhotonicEngineNodeConfiguration isDeepZoomSupportedForStereoPhotosWithSettings:];
+-[BWPhotonicEngineNodeConfiguration isInferenceInputImageRequiredForSettings:portType:];
+-[BWPhotonicEngineNodeConfiguration isDeferredRawDeepFusionCapture:];
+-[BWPhotonicEngineNodeConfiguration _isInferenceGenerationRequiredForSettings:];
+-[BWPhotonicEngineNodeConfiguration deferredCaptureControllerConfiguration];
+-[BWPhotonicEngineNodeConfiguration isReferenceOrClientBracketFrameEmissionNeededForSettings:portType:];
+-[BWPhotonicEngineNodeConfiguration isDeferredLearnedNRCapture:];
+-[BWPhotonicEngineNodeConfiguration isScalerRequiredForSettings:portType:preNoiseReductionScalerOut:];
+-[BWPhotonicEngineNodeConfiguration configureInferenceEngineControllerInputForTextureStyles:];
+-[BWPhotonicEngineNodeConfiguration _isDemosaicedRawCaptureNeedingInferencesWithSettigs:];
+-[BWPhotonicEngineNodeConfiguration resolvedProcessingResolutionFlavorForInput:];
+-[BWPhotonicEngineNodeConfiguration scalerProcessorControllerConfiguration];
+-[BWPhotonicEngineNodeConfiguration postponeInferenceControllerPreparation];
+-[BWPhotonicEngineNodeConfiguration resolvedProcessingResolutionFlavorForSettings:portType:deferredPhotoProxy:];
+-[BWPhotonicEngineNodeConfiguration deferredProcessorControllerConfiguration];
+-[BWPhotonicEngineNodeConfiguration isSemanticStylesCaptureNeedingInferencesWithSettings:];
+-[BWPhotonicEngineNodeConfiguration _inferenceAttachedMediaRequiredForDepthProcessingWithSettings:];
+-[BWPhotonicEngineNodeConfiguration demosaicedRawFormatRequirementsWithDimensions:colorSpaceProperties:];
+-[BWPhotonicEngineNodeConfiguration isDeferredAdaptiveFusionCapture:];
+-[BWPhotonicEngineNodeConfiguration shouldProvideInferenceAttachedMediaWithSettings:];
+-[BWPhotonicEngineNodeConfiguration intelligentDistortionCorrectionProcessorControllerConfiguration];
+-[BWPhotonicEngineNodeConfiguration deepZoomProcessorControllerConfiguration];
+-[BWPhotonicEngineNodeConfiguration isRedEyeReductionFlashCapture:];
+-[BWPhotonicEngineNodeConfiguration applyingZoomBeforeDeepZoomAllowedWithSampleBuffer:bufferType:portType:];
+-[BWPhotonicEngineNodeConfiguration shouldProvideInferencesForAttachedMediaMode:settings:];
+-[BWPhotonicEngineNodeConfiguration jasperDisparityProcessorControllerConfiguration];
+-[BWPhotonicEngineNodeConfiguration _inferenceAttachedMediaRequiredForTextureStyleBaseLookWithSettings:];
+-[BWPhotonicEngineNodeConfiguration learnedNRProcessorControllerConfiguration];
+-[BWPhotonicEngineNodeConfiguration idcSupportedForCaptureType:captureFlags:portType:];
+-[BWPhotonicEngineNodeConfiguration swfrAmbientLearnedNREnabled];
+-[BWPhotonicEngineNodeConfiguration colorConstancyProcessorControllerConfiguration];
+-[BWPhotonicEngineNodeConfiguration setupProcessorControllerConfigurations];
+-[BWPhotonicEngineNodeConfiguration inferenceControllerConfiguration];
+-[BWPhotonicEngineNodeConfiguration smartStyleUseCaseForSettings:];
+-[BWPhotonicEngineNodeConfiguration isIDCCaptureForPortType:settings:];
+-[BWPhotonicEngineNodeConfiguration mattingOutputDimensionsForReferenceDimensions:aspectRatio:];
+```

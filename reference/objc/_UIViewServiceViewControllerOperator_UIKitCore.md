@@ -1,0 +1,273 @@
+# `_UIViewServiceViewControllerOperator`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `UIViewController`
+- Protocols: `_UIDismissInteractionDelegate`, `_UIPhysicalButtonInteractionArbiterViewServiceObserver`, `_UIViewServiceViewControllerOperator_RemoteViewControllerInterface`, `_UIHostedTextServiceSessionDelegate`, `_UIViewServiceDummyPopoverControllerDelegate`, `UIAdaptivePresentationControllerDelegate`, `_UIHostedWindowSystemReferenceAngleProviding`, `_UIFocusMovementActionForwarding`, `_UISheetPresentationControllerClientRemotePresentationDelegate`, `_UIRemoteContentParent`, `_UIViewServiceSessionPrimaryActivityProviding`, `_UIViewServiceDeputy`, `_UIViewServiceDeputyRotationSource`
+- 48 instance variables, 16 properties, 180 instance methods, 3 class methods
+
+## Instance variables
+
+```
+@"NSMutableArray" _deferredToViewDidAppear;
+i _hostPID;
+i _mediaPID;
+@"NSString" _hostBundleID;
+{?="val"[8I]} _hostAuditToken;
+@"NSUUID" _sessionIdentifier;
+B _hostCanDynamicallySpecifySupportedInterfaceOrientations;
+@ _remoteViewControllerProxyToOperator;
+@"_UIQueueingProxy" _remoteViewControllerProxyToViewController;
+@"NSArray" _pluginDisplayConfigurations;
+@"UIViewController" _localViewController;
+@"NSString" _presentationControllerClassName;
+@"_UIHostedWindow" _hostedWindow;
+B _disableAutomaticKeyboardBehavior;
+B _serviceInPopover;
+q _hostStatusBarOrientation;
+d _hostStatusBarHeight;
+@"NSMutableArray" _deputyRotationDelegates;
+I _hostAccessibilityServerPort;
+@"_UIHostedTextServiceSession" _textServiceSession;
+@"_UIAsyncInvocation" _prepareForDisconnectionInvocation;
+@"_UIAsyncInvocation" _invalidationInvocation;
+@"UIPopoverController" _displayedPopoverController;
+@"_UIViewServiceDummyPopoverController" _dummyPopoverController;
+Q _supportedOrientations;
+q _availableTextServices;
+{UIEdgeInsets="top"d"left"d"bottom"d"right"d} _localViewControllerRequestedInsets;
+d _localViewControllerRequestedLeftMargin;
+d _localViewControllerRequestedRightMargin;
+@"_UIViewControllerOneToOneTransitionContext" _viewControllerTransitioningContext;
+q _editAlertToken;
+@"NSUndoManager" _editAlertUndoManager;
+@"_UISheetPresentationControllerClientConfiguration" _sheetClientConfiguration;
+B _hasRequestedKeyboardEventEnvironmentDeferring;
+@"NSDate" _previousPresentationDate;
+@"BLSFrameSpecifierModel" _blsFrameSpecifierModel;
+@"_UIViewServiceSessionActivityRecord" _sessionActivityRecord;
+@"_UITouchesBeganObserverGestureRecognizer" _hostedWindowActivityObserverGesture;
+@"<BSInvalidatable>" _physicalButtonInteractionArbiterObserverToken;
+B _appProtectionShieldPresentedInHost;
+@"FBSScene" _pseudoScene;
+d _systemReferenceAngleFromHost;
+Q _systemReferenceAngleModeFromHost;
+@"_UIRemoteViewControllerSceneContext" _sceneContext;
+@"_UIChildRemoteContentRegistry" _childRemoteContentRegistry;
+@"_UIViewServiceLegacyClientSession" _session;
+@? __traitsWillChangeHandler;
+@? __traitsDidChangeHandler;
+```
+
+## Properties
+
+```
+@property (T@?,C,N,S_setTraitsWillChangeHandler:,V__traitsWillChangeHandler) _traitsWillChangeHandler;
+@property (T@?,C,N,S_setTraitsDidChangeHandler:,V__traitsDidChangeHandler) _traitsDidChangeHandler;
+@property (T@"UIViewController",R,N) localViewController;
+@property (T@"_UIRemoteViewControllerSceneContext",R,N,V_sceneContext) _sceneContext;
+@property (T@"_UIViewServiceLegacyClientSession",W,N,V_session) session;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+@property (Td,R,N,V_systemReferenceAngleFromHost) _systemReferenceAngleFromHost;
+@property (TQ,R,N,V_systemReferenceAngleModeFromHost) _systemReferenceAngleModeFromHost;
+@property (T@"_UIChildRemoteContentRegistry",R,N,V_childRemoteContentRegistry) _childRemoteContentRegistry;
+@property (T@"UIWindow",R,N) _primaryHostedWindow;
+@property (Ti,R,N) _effectiveViewControllerAppearState;
+@property (TQ,R,N) _providerType;
+@property (T@"NSUUID",R,N) _sessionIdentifier;
+```
+
+## Class methods
+
+```
++[_UIViewServiceViewControllerOperator initialize];
++[_UIViewServiceViewControllerOperator XPCInterface];
++[_UIViewServiceViewControllerOperator operatorWithRemoteViewControllerProxy:hostPID:hostBundleID:hostAuditToken:sessionIdentifier:];
+```
+
+## Instance methods
+
+```
+-[_UIViewServiceViewControllerOperator _window];
+-[_UIViewServiceViewControllerOperator _firstResponderDidChange:];
+-[_UIViewServiceViewControllerOperator _objc_initiateDealloc];
+-[_UIViewServiceViewControllerOperator trackingViewForInteraction:];
+-[_UIViewServiceViewControllerOperator _windowHostingScene];
+-[_UIViewServiceViewControllerOperator isModalInPresentation];
+-[_UIViewServiceViewControllerOperator dismissInteraction:didCancelWithVelocity:originalPosition:];
+-[_UIViewServiceViewControllerOperator shouldAutorotateToInterfaceOrientation:];
+-[_UIViewServiceViewControllerOperator presentationControllerDidAttemptToDismiss:];
+-[_UIViewServiceViewControllerOperator childViewControllerForHomeIndicatorAutoHidden];
+-[_UIViewServiceViewControllerOperator preferredContentSizeDidChangeForChildContentContainer:];
+-[_UIViewServiceViewControllerOperator debugDescription];
+-[_UIViewServiceViewControllerOperator _disableAutomaticKeyboardBehavior];
+-[_UIViewServiceViewControllerOperator childViewControllerForPointerLock];
+-[_UIViewServiceViewControllerOperator supportedInterfaceOrientations];
+-[_UIViewServiceViewControllerOperator pressesCancelled:withEvent:];
+-[_UIViewServiceViewControllerOperator pressesEnded:withEvent:];
+-[_UIViewServiceViewControllerOperator dismissInteraction:didBeginAtLocation:withVelocity:];
+-[_UIViewServiceViewControllerOperator dealloc];
+-[_UIViewServiceViewControllerOperator becomeFirstResponder];
+-[_UIViewServiceViewControllerOperator _sheetInteractionDraggingDidEnd];
+-[_UIViewServiceViewControllerOperator viewDidLoad];
+-[_UIViewServiceViewControllerOperator _didResignContentViewControllerOfPopover:];
+-[_UIViewServiceViewControllerOperator viewDidLayoutSubviews];
+-[_UIViewServiceViewControllerOperator hysteresisForInteraction:];
+-[_UIViewServiceViewControllerOperator setNeedsStatusBarAppearanceUpdate];
+-[_UIViewServiceViewControllerOperator childViewControllerForStatusBarHidden];
+-[_UIViewServiceViewControllerOperator _willBecomeContentViewControllerOfPopover:];
+-[_UIViewServiceViewControllerOperator _sheetPresentationControllerClientConfigurationDidChange:];
+-[_UIViewServiceViewControllerOperator _viewSafeAreaInsetsFromScene];
+-[_UIViewServiceViewControllerOperator window:statusBarWillChangeFromHeight:toHeight:];
+-[_UIViewServiceViewControllerOperator pressesBegan:withEvent:];
+-[_UIViewServiceViewControllerOperator pressesChanged:withEvent:];
+-[_UIViewServiceViewControllerOperator setSession:];
+-[_UIViewServiceViewControllerOperator invalidate];
+-[_UIViewServiceViewControllerOperator _canShowWhileLocked];
+-[_UIViewServiceViewControllerOperator childViewControllerForWhitePointAdaptivityStyle];
+-[_UIViewServiceViewControllerOperator childViewControllerForScreenEdgesDeferringSystemGestures];
+-[_UIViewServiceViewControllerOperator _queue];
+-[_UIViewServiceViewControllerOperator loadView];
+-[_UIViewServiceViewControllerOperator dismissInteraction:didIssueUpdate:];
+-[_UIViewServiceViewControllerOperator _sheetInteractionDraggingDidChangeWithTranslation:velocity:animateChange:dismissible:];
+-[_UIViewServiceViewControllerOperator preferredFocusEnvironments];
+-[_UIViewServiceViewControllerOperator _childViewControllerForMultitaskingDragExclusionRects];
+-[_UIViewServiceViewControllerOperator _sheetInteractionDraggingDidBeginWithRubberBandCoefficient:dismissible:interruptedOffset:];
+-[_UIViewServiceViewControllerOperator __setMediaOverridePID:];
+-[_UIViewServiceViewControllerOperator shouldAutomaticallyForwardRotationMethods];
+-[_UIViewServiceViewControllerOperator dismissInteraction:didDismissWithVelocity:];
+-[_UIViewServiceViewControllerOperator session];
+-[_UIViewServiceViewControllerOperator dismissInteraction:shouldBeginWithAxis:location:velocity:proposal:];
+-[_UIViewServiceViewControllerOperator _edgeInsetsForChildViewController:insetsAreAbsolute:];
+-[_UIViewServiceViewControllerOperator _sessionIdentifier];
+-[_UIViewServiceViewControllerOperator childViewControllerForStatusBarStyle];
+-[_UIViewServiceViewControllerOperator _sheetGrabberDidTriggerPrimaryAction];
+-[_UIViewServiceViewControllerOperator shouldAutomaticallyForwardAppearanceMethods];
+-[_UIViewServiceViewControllerOperator __hostDidChangeStatusBarHeight:];
+-[_UIViewServiceViewControllerOperator _eventDispatcherDidCancelTouch:];
+-[_UIViewServiceViewControllerOperator _handleActivityObserverGesture:];
+-[_UIViewServiceViewControllerOperator _invalidateUnconditionallyThen:];
+-[_UIViewServiceViewControllerOperator _windowDidBecomeApplicationKey:];
+-[_UIViewServiceViewControllerOperator __cancelAlertActionWithToken:];
+-[_UIViewServiceViewControllerOperator __createViewControllerWithOptions:completionBlock:];
+-[_UIViewServiceViewControllerOperator __dimmingViewWasTapped];
+-[_UIViewServiceViewControllerOperator __exchangeAccessibilityPortInformation:replyHandler:];
+-[_UIViewServiceViewControllerOperator __hostDidAttachDisplay:];
+-[_UIViewServiceViewControllerOperator __hostDidBecomeActive];
+-[_UIViewServiceViewControllerOperator __hostDidChangeStatusBarOrientationToInterfaceOrientation:];
+-[_UIViewServiceViewControllerOperator __hostDidDetachDisplay:];
+-[_UIViewServiceViewControllerOperator __hostDidDismissShieldViewForAppProtection];
+-[_UIViewServiceViewControllerOperator __hostDidEnterBackground];
+-[_UIViewServiceViewControllerOperator __hostDidEvaluatePencilBarrelEventFocusForSceneTransition];
+-[_UIViewServiceViewControllerOperator __hostDidMoveToParentSceneWithSettings:];
+-[_UIViewServiceViewControllerOperator __hostDidPresentShieldViewForAppProtection];
+-[_UIViewServiceViewControllerOperator __hostDidPromoteFirstResponder];
+-[_UIViewServiceViewControllerOperator __hostDidReceivePhysicalButtonBSAction:];
+-[_UIViewServiceViewControllerOperator __hostDidRotateFromInterfaceOrientation:skipSelf:];
+-[_UIViewServiceViewControllerOperator __hostDidSetContentOverlayInsets:andLeftMargin:rightMargin:];
+-[_UIViewServiceViewControllerOperator __hostDidSetPresentationControllerClassName:];
+-[_UIViewServiceViewControllerOperator __hostDidUpdateDisplay:];
+-[_UIViewServiceViewControllerOperator __hostDidUpdateSceneContext:];
+-[_UIViewServiceViewControllerOperator __hostDisablesAutomaticKeyboardBehavior:];
+-[_UIViewServiceViewControllerOperator __hostHomeAffordanceFrameIntersectionDidChange:];
+-[_UIViewServiceViewControllerOperator __hostReadyToReceiveMessagesFromServiceViewController];
+-[_UIViewServiceViewControllerOperator __hostReceivedHomeAffordanceDoubleTapGestureDidSucceed:];
+-[_UIViewServiceViewControllerOperator __hostSceneDidEnterBackground];
+-[_UIViewServiceViewControllerOperator __hostSceneDidUpdateWithDiff:];
+-[_UIViewServiceViewControllerOperator __hostSceneWillEnterForeground];
+-[_UIViewServiceViewControllerOperator __hostViewDidAppear:];
+-[_UIViewServiceViewControllerOperator __hostViewDidDisappear:];
+-[_UIViewServiceViewControllerOperator __hostViewDidMoveToScreenWithFBSDisplayIdentity:newHostingHandleReplyHandler:];
+-[_UIViewServiceViewControllerOperator __hostViewWillAppear:inInterfaceOrientation:traitCollection:statusBarHeight:underlapsStatusBar:completionHandler:];
+-[_UIViewServiceViewControllerOperator __hostViewWillDisappear:];
+-[_UIViewServiceViewControllerOperator __hostViewWillMoveToWindowInInterfaceOrientation:withStatusBarHeight:underlapsStatusBar:];
+-[_UIViewServiceViewControllerOperator __hostViewWillTransitionToSize:withContextDescription:boundingPath:statusBarHeight:underlapsStatusBar:fence:timing:whenDone:];
+-[_UIViewServiceViewControllerOperator __hostWillAnimateRotationToInterfaceOrientation:duration:skipSelf:];
+-[_UIViewServiceViewControllerOperator __hostWillEnterForeground];
+-[_UIViewServiceViewControllerOperator __hostWillResignActive];
+-[_UIViewServiceViewControllerOperator __hostWillRotateToInterfaceOrientation:duration:skipSelf:];
+-[_UIViewServiceViewControllerOperator __hostWillTransitionToTraitCollection:withContextDescription:deferIfAnimated:inRemoteViewHierarchy:];
+-[_UIViewServiceViewControllerOperator __installDismissInteractionForZoomTransition];
+-[_UIViewServiceViewControllerOperator __intelligenceCollectRemoteContentInVisibleRect:withRemoteContextWrapper:];
+-[_UIViewServiceViewControllerOperator __knownPresentationWithoutPresentationControllerInstance];
+-[_UIViewServiceViewControllerOperator __prepareForDisconnectionWithCompletionHandler:];
+-[_UIViewServiceViewControllerOperator __redoActionWithToken:];
+-[_UIViewServiceViewControllerOperator __scrollToTopFromTouchAtViewLocation:resultHandler:];
+-[_UIViewServiceViewControllerOperator __setBoundingPath:];
+-[_UIViewServiceViewControllerOperator __setContentSize:boundingPath:];
+-[_UIViewServiceViewControllerOperator __setContentSize:boundingPath:withFence:];
+-[_UIViewServiceViewControllerOperator __setHostCanDynamicallySpecifySupportedInterfaceOrientations:];
+-[_UIViewServiceViewControllerOperator __setHostTintColor:tintAdjustmentMode:];
+-[_UIViewServiceViewControllerOperator __setHostTraitCollection:deferIfAnimated:];
+-[_UIViewServiceViewControllerOperator __setHostViewUnderlapsStatusBar:];
+-[_UIViewServiceViewControllerOperator __setServiceInPopover:];
+-[_UIViewServiceViewControllerOperator __setSheetConfiguration:];
+-[_UIViewServiceViewControllerOperator __sheetInteractionDraggingDidBeginWithRubberBandCoefficient:];
+-[_UIViewServiceViewControllerOperator __sheetInteractionDraggingDidChangeWithTranslation:velocity:animateChange:];
+-[_UIViewServiceViewControllerOperator __sheetInteractionDraggingDidEnd];
+-[_UIViewServiceViewControllerOperator __showEditAlertView];
+-[_UIViewServiceViewControllerOperator __textServiceDidDismiss];
+-[_UIViewServiceViewControllerOperator __timelinesForDateInterval:completion:];
+-[_UIViewServiceViewControllerOperator __undoActionWithToken:];
+-[_UIViewServiceViewControllerOperator __updateWithFrameSpecifierDate:completion:];
+-[_UIViewServiceViewControllerOperator _addSceneForwardingLayersForOwners:];
+-[_UIViewServiceViewControllerOperator _availableTextServices];
+-[_UIViewServiceViewControllerOperator _childRemoteContentRegistry];
+-[_UIViewServiceViewControllerOperator _customBasePresentationInsetsForView:];
+-[_UIViewServiceViewControllerOperator _dataFromPressesEvent:];
+-[_UIViewServiceViewControllerOperator _didBecomeContentViewControllerOfPopover:];
+-[_UIViewServiceViewControllerOperator _effectiveViewControllerAppearState];
+-[_UIViewServiceViewControllerOperator _forwardFocusMovementAction:];
+-[_UIViewServiceViewControllerOperator _forwardPresses:withEvent:canceled:];
+-[_UIViewServiceViewControllerOperator _inputViewsKey];
+-[_UIViewServiceViewControllerOperator _installActivityObserverGestureIfNeeded];
+-[_UIViewServiceViewControllerOperator _isHostedRootViewController];
+-[_UIViewServiceViewControllerOperator _marginInfoForChild:leftMargin:rightMargin:];
+-[_UIViewServiceViewControllerOperator _physicalButtonInteractionArbiter:didUpdateResolvedConfigurations:inActiveViewServiceSession:];
+-[_UIViewServiceViewControllerOperator _popoverDidDismiss:];
+-[_UIViewServiceViewControllerOperator _popoverWillPresent:];
+-[_UIViewServiceViewControllerOperator _prepareForDisconnectionUnconditionallyThen:];
+-[_UIViewServiceViewControllerOperator _presentationControllerClassName];
+-[_UIViewServiceViewControllerOperator _primaryHostedWindow];
+-[_UIViewServiceViewControllerOperator _providerType];
+-[_UIViewServiceViewControllerOperator _providesCustomBasePresentationInsets];
+-[_UIViewServiceViewControllerOperator _removeSceneForwardingLayersForOwners:];
+-[_UIViewServiceViewControllerOperator _sceneContext];
+-[_UIViewServiceViewControllerOperator _sceneSystemMinimumMargin];
+-[_UIViewServiceViewControllerOperator _setNeedsUpdateOfMultitaskingDragExclusionRects];
+-[_UIViewServiceViewControllerOperator _setNeedsUpdateOfSupportedInterfaceOrientations];
+-[_UIViewServiceViewControllerOperator _setNeedsUserInterfaceAppearanceUpdate];
+-[_UIViewServiceViewControllerOperator _setTraitsDidChangeHandler:];
+-[_UIViewServiceViewControllerOperator _setTraitsWillChangeHandler:];
+-[_UIViewServiceViewControllerOperator _shouldForwardLegacyRotationOnly];
+-[_UIViewServiceViewControllerOperator _showServiceForText:selectedTextRange:type:fromRect:inView:];
+-[_UIViewServiceViewControllerOperator _showServiceForText:type:fromRect:inView:];
+-[_UIViewServiceViewControllerOperator _showServiceForType:withContext:];
+-[_UIViewServiceViewControllerOperator _supportedInterfaceOrientationsForViewController:];
+-[_UIViewServiceViewControllerOperator _systemReferenceAngleFromHost];
+-[_UIViewServiceViewControllerOperator _systemReferenceAngleModeFromHost];
+-[_UIViewServiceViewControllerOperator _traitsDidChangeHandler];
+-[_UIViewServiceViewControllerOperator _traitsWillChangeHandler];
+-[_UIViewServiceViewControllerOperator _updateSupportedInterfaceOrientationsIfNecessary];
+-[_UIViewServiceViewControllerOperator _viewControllersForRotationCallbacks];
+-[_UIViewServiceViewControllerOperator _viewServiceIsDisplayingPopoverController:];
+-[_UIViewServiceViewControllerOperator _wantsKeyboardEventsWithoutFirstResponder:];
+-[_UIViewServiceViewControllerOperator _willResignContentViewControllerOfPopover:];
+-[_UIViewServiceViewControllerOperator _windowDidRegisterOrUnregisterScrollToTopView];
+-[_UIViewServiceViewControllerOperator addDeputyRotationDelegate:];
+-[_UIViewServiceViewControllerOperator contentSizeForViewInPopover];
+-[_UIViewServiceViewControllerOperator dismissHostedTextServiceSession:animated:];
+-[_UIViewServiceViewControllerOperator dummyPopoverController:didChangeContentSize:animated:];
+-[_UIViewServiceViewControllerOperator dummyPopoverController:popoverViewDidSetUseToolbarShine:];
+-[_UIViewServiceViewControllerOperator establishViewControllerDeputyWithProxy:completionHandler:];
+-[_UIViewServiceViewControllerOperator localViewController];
+-[_UIViewServiceViewControllerOperator motionEnded:withEvent:];
+-[_UIViewServiceViewControllerOperator sendClientToHostAction:];
+-[_UIViewServiceViewControllerOperator setNeedsUpdateOfHomeIndicatorAutoHidden];
+-[_UIViewServiceViewControllerOperator setNeedsUpdateOfPrefersPointerLocked];
+-[_UIViewServiceViewControllerOperator setNeedsUpdateOfScreenEdgesDeferringSystemGestures];
+-[_UIViewServiceViewControllerOperator setNeedsWhitePointAdaptivityStyleUpdate];
+-[_UIViewServiceViewControllerOperator systemLayoutFittingSizeDidChangeForChildViewController:];
+```

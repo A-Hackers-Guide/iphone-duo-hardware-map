@@ -1,0 +1,157 @@
+# `/System/Library/PrivateFrameworks/SearchUI.framework/SearchUI`
+
+iOS 27.2 dyld shared cache image, version `685.1.10.0.0`. Light page: libraries and type names only. **[DSC]**
+
+## Linked libraries (140)
+
+- `/System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag`
+- `/System/Library/PrivateFrameworks/StrokeAnimation.framework/StrokeAnimation`
+- `/System/Library/PrivateFrameworks/SpotlightServices.framework/SpotlightServices`
+- `/System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation`
+- `/System/Library/PrivateFrameworks/SportsKit.framework/SportsKit`
+- `/System/Library/PrivateFrameworks/AppPredictionUIFoundation.framework/AppPredictionUIFoundation`
+- `/System/Library/PrivateFrameworks/AppPredictionClient.framework/AppPredictionClient`
+- `/System/Library/PrivateFrameworks/AppStoreComponents.framework/AppStoreComponents`
+- `/System/Library/PrivateFrameworks/AppSupport.framework/AppSupport`
+- `/System/Library/PrivateFrameworks/AppSupportUI.framework/AppSupportUI`
+- `/System/Library/PrivateFrameworks/iTunesCloud.framework/iTunesCloud`
+- `/System/Library/PrivateFrameworks/ScreenTimeCore.framework/ScreenTimeCore`
+- `/System/Library/PrivateFrameworks/AskPermission.framework/AskPermission`
+- `/System/Library/PrivateFrameworks/NotesUIServices.framework/NotesUIServices`
+- `/System/Library/PrivateFrameworks/AvailabilityKit.framework/AvailabilityKit`
+- `/System/Library/Frameworks/AVFoundation.framework/AVFoundation`
+- `/System/Library/Frameworks/AVKit.framework/AVKit`
+- `/System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams`
+- `/System/Library/PrivateFrameworks/SpotlightUIServices.framework/SpotlightUIServices`
+- `/System/Library/PrivateFrameworks/ClipServices.framework/ClipServices`
+- `/System/Library/Frameworks/Contacts.framework/Contacts`
+- `/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics`
+- `/System/Library/Frameworks/CoreLocation.framework/CoreLocation`
+- `/System/Library/Frameworks/CoreServices.framework/CoreServices`
+- `/System/Library/Frameworks/AppIntents.framework/AppIntents`
+- `/System/Library/PrivateFrameworks/AppProtection.framework/AppProtection`
+- `/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight`
+- `/System/Library/Frameworks/ContactsUI.framework/ContactsUI`
+- `/System/Library/PrivateFrameworks/DeviceManagement.framework/DeviceManagement`
+- `/System/Library/Frameworks/EventKit.framework/EventKit`
+- `/System/Library/PrivateFrameworks/CalculateUI.framework/CalculateUI`
+- `/System/Library/Frameworks/EventKitUI.framework/EventKitUI`
+- `/System/Library/PrivateFrameworks/LinkServices.framework/LinkServices`
+- `/System/Library/PrivateFrameworks/FlightUtilities.framework/FlightUtilities`
+- `/System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices`
+- `/System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication`
+- `/System/Library/PrivateFrameworks/IconServices.framework/IconServices`
+- `/System/Library/PrivateFrameworks/InstallCoordination.framework/InstallCoordination`
+- `/System/Library/Frameworks/Intents.framework/Intents`
+- `/System/Library/Frameworks/LinkPresentation.framework/LinkPresentation`
+- `/System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration`
+- `/System/Library/Frameworks/MapKit.framework/MapKit`
+- `/System/Library/PrivateFrameworks/MapsUI.framework/MapsUI`
+- `/System/Library/PrivateFrameworks/CoreParsec.framework/CoreParsec`
+- `/System/Library/PrivateFrameworks/MaterialKit.framework/MaterialKit`
+- `/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer`
+- `/System/Library/PrivateFrameworks/NewsServices.framework/NewsServices`
+- `/System/Library/Frameworks/Photos.framework/Photos`
+- `/System/Library/Frameworks/QuartzCore.framework/QuartzCore`
+- `/System/Library/Frameworks/QuickLook.framework/QuickLook`
+- `/System/Library/Frameworks/QuickLookThumbnailing.framework/QuickLookThumbnailing`
+- `/System/Library/PrivateFrameworks/ToolKit.framework/ToolKit`
+- `/System/Library/PrivateFrameworks/RecapPerformanceTesting.framework/RecapPerformanceTesting`
+- `/System/Library/Frameworks/SafariServices.framework/SafariServices`
+- `/System/Library/PrivateFrameworks/SnippetUI.framework/SnippetUI`
+- `/System/Library/PrivateFrameworks/SpringBoardUIServices.framework/SpringBoardUIServices`
+- `/System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking`
+- `/System/Library/PrivateFrameworks/SpringBoardHome.framework/SpringBoardHome`
+- `/System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices`
+- `/System/Library/PrivateFrameworks/StatusKit.framework/StatusKit`
+- `/System/Library/PrivateFrameworks/PhotosUICore.framework/PhotosUICore`
+- `/System/Library/PrivateFrameworks/FaceTimeNameUtility.framework/FaceTimeNameUtility`
+- `/System/Library/Frameworks/StoreKit.framework/StoreKit`
+- `/System/Library/PrivateFrameworks/TemplateKit.framework/TemplateKit`
+- `/System/Library/Frameworks/UIKit.framework/UIKit`
+- `/System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers`
+- `/System/Library/PrivateFrameworks/VoiceShortcutClient.framework/VoiceShortcutClient`
+- `/System/Library/PrivateFrameworks/WatchListKit.framework/WatchListKit`
+- `/System/Library/Frameworks/WebKit.framework/WebKit`
+- `/System/Library/Frameworks/Foundation.framework/Foundation`
+- `/usr/lib/libobjc.A.dylib`
+- `/usr/lib/libSystem.B.dylib`
+- `/System/Library/Frameworks/AVFAudio.framework/AVFAudio`
+- `/System/Library/Frameworks/Accounts.framework/Accounts`
+- `/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation`
+- `/System/Library/Frameworks/CoreImage.framework/CoreImage`
+- `/System/Library/Frameworks/FileProvider.framework/FileProvider`
+- `/System/Library/Frameworks/MarketplaceKit.framework/MarketplaceKit`
+- `/System/Library/Frameworks/MusicKit.framework/MusicKit`
+- `/System/Library/Frameworks/SwiftUI.framework/SwiftUI`
+- `/System/Library/Frameworks/Symbols.framework/Symbols`
+- `/System/Library/Frameworks/Vision.framework/Vision`
+- `/System/Library/Frameworks/WeatherKit.framework/WeatherKit`
+- `/System/Library/Frameworks/_AppIntents_SwiftUI.framework/_AppIntents_SwiftUI`
+- `/System/Library/Frameworks/_AppIntents_UIKit.framework/_AppIntents_UIKit`
+- `/System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials`
+- `/System/Library/PrivateFrameworks/BiomeLibrary.framework/BiomeLibrary`
+- `/System/Library/PrivateFrameworks/Calculate.framework/Calculate`
+- `/System/Library/PrivateFrameworks/CalendarUIKit.framework/CalendarUIKit`
+- `/System/Library/PrivateFrameworks/Categories.framework/Categories`
+- `/System/Library/PrivateFrameworks/ContactsUICore.framework/ContactsUICore`
+- `/System/Library/PrivateFrameworks/DocumentManagerCore.framework/DocumentManagerCore`
+- `/System/Library/PrivateFrameworks/FMF.framework/FMF`
+- `/System/Library/PrivateFrameworks/FaceTimeMessageStore.framework/FaceTimeMessageStore`
+- `/System/Library/PrivateFrameworks/FamilyCircle.framework/FamilyCircle`
+- `/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices`
+- `/System/Library/PrivateFrameworks/IconFoundation.framework/IconFoundation`
+- `/System/Library/PrivateFrameworks/MusicKitInternal.framework/MusicKitInternal`
+- `/System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit`
+- `/System/Library/PrivateFrameworks/RenderBox.framework/RenderBox`
+- `/System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet`
+- `/System/Library/PrivateFrameworks/SiriTTSService.framework/SiriTTSService`
+- `/System/Library/PrivateFrameworks/Sleep.framework/Sleep`
+- `/System/Library/PrivateFrameworks/Stocks.framework/Stocks`
+- `/System/Library/PrivateFrameworks/TVAppServices.framework/TVAppServices`
+- `/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation`
+- `/System/Library/PrivateFrameworks/WeatherUI.framework/WeatherUI`
+- `/System/Library/PrivateFrameworks/WorkflowUIServices.framework/WorkflowUIServices`
+- `/usr/lib/swift/libswiftAVFoundation.dylib`
+- `/usr/lib/swift/libswiftAccelerate.dylib`
+- `/usr/lib/swift/libswiftAppleArchive.dylib`
+- `/usr/lib/swift/libswiftCallKit.dylib`
+- `/usr/lib/swift/libswiftCompression.dylib`
+- `/usr/lib/swift/libswiftCore.dylib`
+- `/usr/lib/swift/libswiftCoreAudio.dylib`
+- `/usr/lib/swift/libswiftCoreAudio_Private.dylib`
+- `/usr/lib/swift/libswiftCoreFoundation.dylib`
+- `/usr/lib/swift/libswiftCoreImage.dylib`
+- `/usr/lib/swift/libswiftCoreLocation.dylib`
+- `/usr/lib/swift/libswiftCoreMIDI.dylib`
+- `/usr/lib/swift/libswiftDispatch.dylib`
+- `/usr/lib/swift/libswiftGLKit.dylib`
+- `/usr/lib/swift/libswiftIntents.dylib`
+- `/usr/lib/swift/libswiftMLCompute.dylib`
+- `/usr/lib/swift/libswiftMetal.dylib`
+- `/usr/lib/swift/libswiftMetalKit.dylib`
+- `/usr/lib/swift/libswiftModelIO.dylib`
+- `/usr/lib/swift/libswiftNaturalLanguage.dylib`
+- `/usr/lib/swift/libswiftOSLog.dylib`
+- `/usr/lib/swift/libswiftObjectiveC.dylib`
+- `/usr/lib/swift/libswiftObservation.dylib`
+- `/usr/lib/swift/libswiftQuartzCore.dylib`
+- `/usr/lib/swift/libswiftSceneKit.dylib`
+- `/usr/lib/swift/libswiftSpatial.dylib`
+- `/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib`
+- `/usr/lib/swift/libswiftXPC.dylib`
+- `/usr/lib/swift/libswift_Builtin_float.dylib`
+- `/usr/lib/swift/libswift_Concurrency.dylib`
+- `/usr/lib/swift/libswiftos.dylib`
+- `/usr/lib/swift/libswiftsimd.dylib`
+
+## Objective-C: 478 classes, 99 protocols (method count not recorded on light pages)
+
+### Classes
+
+`BMAccessibilityClassicInvert`, `BMAccessibilityColorFilters`, `BMAccessibilityContrast`, `BMAccessibilityReduceMotion`, `BMAccessibilityReduceTransparency`, `BMAccessibilitySmartInvert`, `BMAccessibilityVoiceControl`, `BMAccessibilityVoiceOver`, `BMAccessibilityWhitePoint`, `BMAccessibilityZoom`, `BMClockAlarm`, `BMDeviceAirplaneMode`, `BMDeviceBluetoothPowerEnabled`, `BMDeviceCellularDataEnabled`, `BMDeviceNightShift`, `BMDeviceSilentMode`, `BMDeviceTrueTone`, `BMDeviceWiFiAvailabilityStatus`, `BMDisplayAlwaysOn`, `BMDisplayAppearance`, `BMEnergyMode`, `BMUserFocusModeComputed`, `NSArray`, `RFSimpleItemVisualElementCardSection`, `SFActivityIndicatorCardSection`, `SFAppAutoShortcutsButtonItem`, `SFAppColor`, `SFAppIconCardSection`, `SFAttributionFooterCardSection`, `SFBeginMapsRoutingCommand`, `SFButtonCardSection`, `SFButtonItem`, `SFButtonItemAppearance`, `SFButtonListCardSection`, `SFCalendarColor`, `SFCallCommand`, `SFCardSection`, `SFClearProactiveCategoryCommand`, `SFCollectionStyle`, `SFCollectionStyleGrid`, `SFCollectionStyleHorizontallyScrolling`, `SFCollectionStyleRow`, `SFColor`, `SFColorBarCardSection`, `SFCombinedCardSection`, `SFCommand`, `SFCommandButtonItem`, `SFCommandRowCardSection`, `SFCompactRowCardSection`, `SFContactButtonItem`, `SFCopyCommand`, `SFCoreSpotlightShareItem`, `SFCreateCalendarEventCommand`, `SFCreateContactCommand`, `SFCreateReminderCommand`, `SFDescriptionCardSection`, `SFDetailedRowCardSection`, `SFEmailCommand`, `SFExecuteToolCommand`, `SFFindMyCardSection`, `SFFlightCardSection`, `SFGradientColor`, `SFHeroCardSection`, `SFHeroTitleCardSection`, `SFImageDerivedColor`, `SFImagesCardSection`, `SFIndexedUserActivityCommand`, `SFInfoCardSection`, `SFKeyValueDataCardSection`, `SFLargeTitleDetailedRowCardSection`, `SFLaunchAppCommand`, `SFLinkPresentationCardSection`, `SFMapCardSection`, `SFMapPlaceCardSection`, `SFMapsDetailedRowCardSection`, `SFMediaInfoCardSection`, `SFMediaPlayerCardSection`, `SFMiniCardSection`, `SFNewsCardSection`, `SFOpenAppClipCommand`, `SFOpenCalculationCommand`, `SFOpenCoreSpotlightItemCommand`, `SFOpenFileProviderItemCommand`, `SFOpenMediaCommand`, `SFOpenPunchoutCommand`, `SFOpenWebClipCommand`, `SFPerformIntentCommand`, `SFPersonHeaderCardSection`, `SFPlayAudioButtonItem`, `SFPlayMediaCommand`, `SFPlayVideoCommand`, `SFPlayWatchListItemButtonItem`, `SFRequestAppClipInstallCommand`, `SFRequestProductPageCommand`, `SFRequestUserReportCommand`, `SFRichTitleCardSection`, `SFRowCardSection`, `SFRunVoiceShortcutCommand`, `SFScoreboardCardSection`, `SFSearchInAppCommand`, `SFSearchWebCommand`, `SFSectionHeaderCardSection`, `SFSelectableGridCardSection`, `SFShareCommand`, `SFShareItem`, `SFShowAppStoreSheetCommand`, `SFShowContactCardCommand`, `SFShowPhotosOneUpViewCommand`, `SFShowPurchaseRequestSheetCommand`, `SFShowSFCardCommand`, `SFSplitCardSection`, `SFSportsFollowButtonItem`, `SFStoreButtonItem`, `SFStrokeAnimationCardSection`, `SFSubscribeForUpdatesCommand`, `SFSuggestionCardSection`, `SFTableHeaderRowCardSection`, `SFTableRowCardSection`, `SFTitleCardSection`, `SFToggleWatchListStatusCommand`, `SFURLShareItem`, `SFUpdateSportsFollowingStatusCommand`, `SFVerticalLayoutCardSection`, `SFWatchListButtonItem`, `SFWatchListCardSection`, `SFWeatherColor`, `SFWebCardSection`, `SSPasteCommand`, `SearchFTEView`, `SearchUI`, `SearchUIAccessoryViewController`, `SearchUIActivityIndicatorCardSectionView`, `SearchUIAlarmBiomeEvent`, `SearchUIAppClipButtonItemGenerator`, `SearchUIAppClipImage`, `SearchUIAppClipValidationCache`, `SearchUIAppColorGenerator`, `SearchUIAppEntityAnnotator`, `SearchUIAppIconCardSectionView`, `SearchUIAppIconImage`, `SearchUIAppIconImageOverride`, `SearchUIAppIconUtilities`, `SearchUIAppTopHitAsyncSectionLoader`, `SearchUIAppleMusicSubscriptionStatusCache`, `SearchUIArchivedRowModel`, `SearchUIAsyncSectionLoader`, `SearchUIAsyncSectionLoaderCache`, `SearchUIAsyncSectionLoaderRequest`, `SearchUIAsyncSectionLoaderResponse`, `SearchUIAsyncWatchNowSectionLoader`, `SearchUIAttributionFooterCardSectionView`, `SearchUIAudioAppPredictorCache`, `SearchUIAutoLayout`, `SearchUIAutoShortcutButtonItemGenerator`, `SearchUIAuxiliaryTextViewController`, `SearchUIAvatarImage`, `SearchUIBackgroundColorSupplementaryView`, `SearchUIBackgroundColorUtilities`, `SearchUIBackgroundColorView`, `SearchUIBackgroundView`, `SearchUIBeginMapsRoutingHandler`, `SearchUIBiomeEvent`, `SearchUIBiomeStreamSubscriber`, `SearchUIBiomeSubscriberRegistry`, `SearchUIBonusSPIAppTopHitAsyncSectionLoader`, `SearchUIButton`, `SearchUIButtonBackgroundView`, `SearchUIButtonCardSectionView`, `SearchUIButtonItem`, `SearchUIButtonItemAccessoryViewController`, `SearchUIButtonItemFactory`, `SearchUIButtonItemGenerator`, `SearchUIButtonItemStackView`, `SearchUIButtonItemView`, `SearchUIButtonItemViewController`, `SearchUIButtonsView`, `SearchUICalendarColorGenerator`, `SearchUICalendarIconImage`, `SearchUICalendarStore`, `SearchUICallCommandHandler`, `SearchUICapsuleButtonItemView`, `SearchUICardCollectionViewController`, `SearchUICardSectionCollectionViewCell`, `SearchUICardSectionCreator`, `SearchUICardSectionRowModel`, `SearchUICardSectionTableCell`, `SearchUICardSectionView`, `SearchUICardViewController`, `SearchUICardViewStateRestorationContext`, `SearchUICircleButtonItemView`, `SearchUICircleWithLabelButtonItemView`, `SearchUIClearProactiveCategoryHandler`, `SearchUIClippableBoxView`, `SearchUIClockImage`, `SearchUIClockImageIcon`, `SearchUICollectionPeekDelegate`, `SearchUICollectionResultsViewRestorationContext`, `SearchUICollectionReusableView`, `SearchUICollectionView`, `SearchUICollectionViewAttributes`, `SearchUICollectionViewCell`, `SearchUICollectionViewController`, `SearchUICollectionViewDataSource`, `SearchUICollectionViewLayout`, `SearchUICollectionViewLayoutConfiguration`, `SearchUICollectionViewRestorationContext`, `SearchUIColorCache`, `SearchUIColorGenerator`, `SearchUIColorRequest`, `SearchUICombinedCardSectionRowModel`, `SearchUICombinedCardSectionTableCell`, `SearchUICombinedCardSectionsView`, `SearchUICombinedCollectionViewCell`, `SearchUICommandButton`, `SearchUICommandCardSectionView`, `SearchUICommandEnvironment`, `SearchUICommandHandler`, `SearchUICommandRowModel`, `SearchUICompactCardSectionView`, `SearchUICompletion`, `SearchUICompletionStringModel`, `SearchUICompletionStringView`, `SearchUIContactButtonItem`, `SearchUIContactButtonItemGenerator`, `SearchUIContactCache`, `SearchUIContactPickerViewController`, `SearchUIContactQuickActionView`, `SearchUIContactViewController`, `SearchUIContactViewNavigationController`, `SearchUIContactsThumbnailView`, `SearchUIContentConfigurator`, `SearchUICopyButtonItem`, `SearchUICopyButtonItemGenerator`, `SearchUICopyItemHandler`, `SearchUICoreSpotlightAppTopHitAsyncSectionLoader`, `SearchUICreateCalendarEventHandler`, `SearchUICreateContactHandler`, `SearchUICreateReminderHandler`, `SearchUICustomViewCardSection`, `SearchUICustomViewCardSectionView`, `SearchUICustomViewControllerCell`, `SearchUICustomViewRowModel`, `SearchUIDataSourceSnapshotBuilder`, `SearchUIDefaultBrowserAppIconImage`, `SearchUIDefaultPunchoutAppIconImage`, `SearchUIDescriptionCardSectionView`, `SearchUIDetailedRowCardSectionView`, `SearchUIDetailedRowModel`, `SearchUIDetailedView`, `SearchUIDowntimeManager`, `SearchUIDragSource`, `SearchUIExecuteToolCommandHandler`, `SearchUIFallbackPeekViewController`, `SearchUIFindMyCardSectionView`, `SearchUIFirstTimeExperienceViewController`, `SearchUIFlightCardSectionView`, `SearchUIFocusModeBiomeEvent`, `SearchUIFocusStyleUtilities`, `SearchUIGradientColorGenerator`, `SearchUIGradientMaskView`, `SearchUIGradientView`, `SearchUIGridLayoutManager`, `SearchUIGridRowModel`, `SearchUIGridSectionModel`, `SearchUIHeroBlurredButtonBackgroundView`, `SearchUIHeroButton`, `SearchUIHeroButtonsCardSectionView`, `SearchUIHeroCardSectionView`, `SearchUIHeroTitleCardSectionView`, `SearchUIHomeScreenAppIconView`, `SearchUIHomeScreenAppIconViewContextMenuController`, `SearchUIHomeScreenModel`, `SearchUIHorizontalDetailedCardSectionView`, `SearchUIHorizontallyScrollingCardSectionRowModel`, `SearchUIHorizontallyScrollingSectionModel`, `SearchUIImage`, `SearchUIImageAccessoryViewController`, `SearchUIImageCache`, `SearchUIImageDerivedColorGenerator`, `SearchUIImageGridRowModel`, `SearchUIImageView`, `SearchUIImagesCardSectionView`, `SearchUIInfoCardSectionView`, `SearchUIInfoValueFlowView`, `SearchUIInlineButtonItemView`, `SearchUIItemAttributes`, `SearchUIItemProviderUtilities`, `SearchUIKeyValueDataCardSectionView`, `SearchUIKeyboardableCollectionViewController`, `SearchUILabel`, `SearchUILargeTitleDetailedRowCardSectionView`, `SearchUILaunchAppHandler`, `SearchUILaunchWebClipHandler`, `SearchUILayoutFooterView`, `SearchUILeadingContactViewController`, `SearchUILeadingEncapsulatedTextViewController`, `SearchUILeadingHomeScreenViewController`, `SearchUILeadingTrailingSectionModel`, `SearchUILeadingViewController`, `SearchUILinkPresentationCardSectionView`, `SearchUIListenToAsyncSectionLoader`, `SearchUILoadingView`, `SearchUILocalAudioCache`, `SearchUILocalImage`, `SearchUILockupViewContainer`, `SearchUIMapCardSectionView`, `SearchUIMapPlaceCardSectionView`, `SearchUIMapsViewController`, `SearchUIMaskedLabelsStackView`, `SearchUIMediaArtworkImage`, `SearchUIMediaHandler`, `SearchUIMediaPlayerUtilities`, `SearchUIMediaPlayerViewController`, `SearchUIMediaUtilities`, `SearchUIMiniCardSectionView`, `SearchUIMobileTimerUtilities`, `SearchUIMovieCardSectionBuyButtonView`, `SearchUIMovieCardSectionUpNextButtonView`, `SearchUIMovieCardSectionView`, `SearchUIMultiResultAppCollectionCell`, `SearchUIMultiResultCollectionView`, `SearchUIMultiResultCollectionViewCell`, `SearchUIMultiResultRowModel`, `SearchUIMusicDisclosureCheckCache`, `SearchUIMusicStatusCache`, `SearchUIMusicUtilities`, `SearchUINavigationController`, `SearchUINewsCardGradientView`, `SearchUINewsCardSectionView`, `SearchUIOfferButtonView`, `SearchUIOpenCalculationHandler`, `SearchUIOpenCoreSpotlightItemHandler`, `SearchUIOpenFileProviderItemHandler`, `SearchUIOpenIndexedUserActivityHandler`, `SearchUIOpenMediaHandler`, `SearchUIOpenPunchoutHandler`, `SearchUIOpenUserActivityHandler`, `SearchUIPasteItemHandler`, `SearchUIPerformIntentHandler`, `SearchUIPersonHeaderBoxView`, `SearchUIPersonHeaderCardSectionView`, `SearchUIPersonHeaderViewController`, `SearchUIPhotoAssetCache`, `SearchUIPhotosAlbumImage`, `SearchUIPhotosImage`, `SearchUIPhotosLibraryImage`, `SearchUIPhotosMemoryImage`, `SearchUIPhotosOneUpController`, `SearchUIPhotosUtilities`, `SearchUIPlayAudioButtonItem`, `SearchUIPlayAudioButtonItemGenerator`, `SearchUIPlayMediaHandler`, `SearchUIPlayVideoHandler`, `SearchUIPlayWatchListItemButtonItemGenerator`, `SearchUIPreferredMediaAppIcon`, `SearchUIPrivacyDetailsViewController`, `SearchUIPurchaseRequestButton`, `SearchUIPurchaseRequestStatusManager`, `SearchUIQuickLookCommandHandler`, `SearchUIQuickLookThumbnailImage`, `SearchUIRFCardSectionRowModel`, `SearchUIRFCardSectionRowModelProvider`, `SearchUIRequestAppClipInstallHandler`, `SearchUIRequestButton`, `SearchUIRequestProductPageCommandHandler`, `SearchUIRequestUserReportHandler`, `SearchUIRequestUserReportUtility`, `SearchUIResolvedBackgroundColoring`, `SearchUIResolvedMediaDestination`, `SearchUIResultsCollectionViewController`, `SearchUIResultsViewController`, `SearchUIRichTitleCardSectionView`, `SearchUIRoundedRectButtonItemView`, `SearchUIRowCardSectionView`, `SearchUIRowModel`, `SearchUIRunShortcutHandler`, `SearchUISafariObserver`, `SearchUIScoreSummaryCardSectionView`, `SearchUIScreenTimeCollectionCell`, `SearchUIScreenTimeManager`, `SearchUIScreenTimeRequestButton`, `SearchUIScreenTimeRequestStatusManager`, `SearchUIScreenTimeResultsRowModel`, `SearchUIScreenTimeTableCell`, `SearchUIScreenTimeView`, `SearchUISearchInAppHandler`, `SearchUISearchWebHandler`, `SearchUISection`, `SearchUISectionBackgroundStyleUtilities`, `SearchUISectionHeaderCardSectionView`, `SearchUISectionModel`, `SearchUISelectableGridCardSectionView`, `SearchUISendEmailHandler`, `SearchUISeparatorView`, `SearchUISettingToggleLeadingViewController`, `SearchUIShareItemHandler`, `SearchUIShortcutsAppTopHitAsyncSectionLoader`, `SearchUIShortcutsImage`, `SearchUIShortcutsUtilities`, `SearchUIShowCardHandler`, `SearchUIShowContactCardHandler`, `SearchUIShowPhotosOneUpViewHandler`, `SearchUIShowPurchaseRequestSheetHandler`, `SearchUIShowStoreSheetHandler`, `SearchUISnippetUIButtonViewContext`, `SearchUISnippetUIButtonViewController`, `SearchUISportsFollowButtonItem`, `SearchUISportsFollowButtonItemGenerator`, `SearchUISportsLiveActivitiesEnabledCache`, `SearchUIStoreButtonItemGenerator`, `SearchUIStoreButtonItemViewController`, `SearchUIStoreViewController`, `SearchUIStrokeAnimationCardSectionView`, `SearchUISubscribeForUpdatesHandler`, `SearchUISuggestionImageUtilities`, `SearchUISupplementaryIdentifiers`, `SearchUISupplementaryProvider`, `SearchUISwitchAccessoryViewController`, `SearchUISymbolImage`, `SearchUITLKConverters`, `SearchUITLKImage`, `SearchUITLKImageConverter`, `SearchUITLKMultilineTextConverter`, `SearchUITabButtonIndicatorView`, `SearchUITableModel`, `SearchUITableRowCardView`, `SearchUITableViewCell`, `SearchUITableViewCellDragSource`, `SearchUITemporaryInternalAppsIcon`, `SearchUIThumbnailViewController`, `SearchUITitleCardSectionView`, `SearchUIToggleButtonItem`, `SearchUIToggleWatchListStatusHandler`, `SearchUIToolKitUtilities`, `SearchUITrailerView`, `SearchUITrailersCardSectionView`, `SearchUIUpdateSportsFollowingStatusHandler`, `SearchUIUtilities`, `SearchUIVerticalLayoutCardSectionView`, `SearchUIVisualResponseHandler`, `SearchUIWatchListButtonItem`, `SearchUIWatchListButtonItemGenerator`, `SearchUIWatchListButtonModel`, `SearchUIWatchListButtonRequest`, `SearchUIWatchListButtonResponse`, `SearchUIWatchListCache`, `SearchUIWatchListCardRowModel`, `SearchUIWatchListCardSectionView`, `SearchUIWatchListCardsManager`, `SearchUIWatchListIconImage`, `SearchUIWatchListState`, `SearchUIWatchListUtilities`, `SearchUIWatchNowCardSection`, `SearchUIWeatherColor`, `SearchUIWeatherColorGenerator`, `SearchUIWebCardSectionView`, `SearchUIWebClipIconImage`, `SiriFTEHostingView`, `SnippetUIUtilities`, `UILayoutGuide`, `UIView`, `_TtC8SearchUI16SearchUIAnimator`, `_TtC8SearchUI19SearchUITVUtilities`, `_TtC8SearchUI20SearchUITTSUtilities`, `_TtC8SearchUI22ButtonItemHeaderAction`, `_TtC8SearchUI23SearchUIAppIntentRunner`, `_TtC8SearchUI24SearchUISnippetUIMetrics`, `_TtC8SearchUI25ExpandSectionHeaderAction`, `_TtC8SearchUI26SearchUISportsKitUtilities`, `_TtC8SearchUI26SearchUIVoicemailUtilities`, `_TtC8SearchUI27SearchUIBasicLayerAnimation`, `_TtC8SearchUI28SearchUICalculateUIUtilities`, `_TtC8SearchUI29SearchUICustomViewHostingView`, `_TtC8SearchUI29SearchUIGroupedLayerAnimation`, `_TtC8SearchUI30SearchUIBasicAnimationSettings`, `_TtC8SearchUI31SearchUIMarketplaceKitUtilities`, `_TtC8SearchUI31SearchUISpringAnimationSettings`, `_TtC8SearchUIP33_DD077CBABD93B8DB16A5EDCA81F3981519ResourceBundleClass`
+
+### Protocols
+
+`APSubjectMonitor`, `ASCLockupViewDelegate`, `ATXActionSearchResultExecutionDelegate`, `CAAnimationDelegate`, `CNAvatarViewDelegate`, `CNContactPickerDelegate`, `CNContactQuickActionPresentation`, `CNContactQuickActionViewContainer`, `CNContactQuickActionsModelTrackingDelegate`, `CNContactViewControllerDelegate`, `CNGroupIdentityHeaderViewControllerDelegate`, `EKEventEditViewDelegate`, `FUFlightViewControllerDelegate`, `MUPlaceViewControllerDelegate`, `MUPlaceViewControllerFeedbackDelegate`, `NSCoding`, `NSCopying`, `NSObject`, `NSSecureCoding`, `NUIContainerViewDelegate`, `PXActionPerformerDelegate`, `PXOneUpPresentationDelegate`, `QLPreviewControllerDataSource`, `SAStrokeAnimatingDelegate`, `SBHIconViewApplicationShortcutsContextMenuProviderDelegate`, `SBHIconViewContextMenuManagerDelegate`, `SBIconDelegate`, `SBIconImageViewObserver`, `SBIconViewActionDelegate`, `SBIconViewBehaviorDelegate`, `SBIconViewConfigurationUIDelegate`, `SBIconViewContextMenuDelegate`, `SBIconViewDelegate`, `SBIconViewDragDelegate`, `SBIconViewDropDelegate`, `SBIconViewReuseDelegate`, `SBSHomeScreenServiceIconStyleObserver`, `SFCardSection`, `SFFeedbackListener`, `SKStatusSubscriptionServiceDelegate`, `SKStoreProductViewControllerDelegate`, `SearchFTEViewDelegate`, `SearchUIAccessoryViewDelegate`, `SearchUIAppDependency`, `SearchUIAsyncSectionLoaderDelegate`, `SearchUIAutoLayoutItem`, `SearchUIBackgroundColorProtocol`, `SearchUIBackgroundColorViewProtocol`, `SearchUIBatchedCachePrewarmer`, `SearchUIBiomeBoolEvent`, `SearchUIButtonItemDelegate`, `SearchUIButtonItemGeneratorViewDelegate`, `SearchUIButtonItemViewControllerDelegate`, `SearchUIButtonItemViewDelegate`, `SearchUICollectionViewRestorationProtocol`, `SearchUICollectionViewSizingDelegate`, `SearchUICommandButton`, `SearchUICustomView`, `SearchUICustomViewCardSection`, `SearchUICustomViewProvider`, `SearchUIDetailedRowComponent`, `SearchUIDetailedViewDelegate`, `SearchUIFeedbackDelegate`, `SearchUIFeedbackDelegateInternal`, `SearchUIGridCustomizingCardSection`, `SearchUIHeaderDelegate`, `SearchUIHighlightTarget`, `SearchUIHomeScreenEngagementDelegate`, `SearchUIInfoSizingDelegate`, `SearchUIKeyboardableCollectionViewDelegate`, `SearchUIKeyboardableNavigationProtocol`, `SearchUIRowModelViewDelegate`, `SearchUIScrollButtonDelegate`, `SearchUIScrollPocketInteracting`, `SearchUISizingDelegate`, `SearchUIUserReportRequestImageProvider`, `SearchUIViewTesting`, `SearchUIWatchListCardRowModelDelegate`, `SearchUIWatchListDelegate`, `TLKDescriptionViewDelegate`, `TLKDetailsViewDelegate`, `TLKImageViewDelegate`, `TLKSelectableGridViewDelegate`, `TLKSplitHeaderViewDelegate`, `UICollectionViewDataSource`, `UICollectionViewDelegate`, `UICollectionViewDelegateFlowLayout`, `UIContextMenuInteractionDelegate`, `UIDragInteractionDelegate`, `UIDragInteractionDelegate_Private`, `UIGestureRecognizerDelegate`, `UIScrollViewDelegate`, `UITextViewDelegate`, `VRXInteractionDelegate`, `WFWorkflowRunnerClientDelegate`, `WKNavigationDelegate`, `WKScriptMessageHandler`, `_TtP8SearchUI22SearchUILayerAnimation_`, `_TtP8SearchUI25SearchUIAnimationSettings_`
+

@@ -1,0 +1,655 @@
+# Symbols: `/System/Library/Frameworks/MediaAccessibility.framework/MediaAccessibility`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__Frameworks__MediaAccessibility.framework__MediaAccessibility.md). **[DSC]**
+
+345 public symbols, 294 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x197f7e424  __TEXT,__text  _MAAudibleMediaCopyPreferredCharacteristics
+0x197f7e398  __TEXT,__text  _MAAudibleMediaPrefCopyPreferDescriptiveVideo
+0x197f7e41c  __TEXT,__text  _MAAudibleMediaPrefResetAll
+0x197f7e3a4  __TEXT,__text  _MAAudibleMediaPrefSetPreferDescriptiveVideo
+0x197f881e8  __TEXT,__text  _MACaptionAppearanceAddPreferredLanguage
+0x197f7d780  __TEXT,__text  _MACaptionAppearanceAddSelectedLanguage
+0x197f7e210  __TEXT,__text  _MACaptionAppearanceAutoSelectGeneratedCaptions
+0x197f7e168  __TEXT,__text  _MACaptionAppearanceCopyActiveProfileID
+0x197f7c268  __TEXT,__text  _MACaptionAppearanceCopyBackgroundColor
+0x197f7c160  __TEXT,__text  _MACaptionAppearanceCopyBackgroundColorForProfileID
+0x197f7dc70  __TEXT,__text  _MACaptionAppearanceCopyFontDescriptorForLanguage
+0x197f7dc8c  __TEXT,__text  _MACaptionAppearanceCopyFontDescriptorForLanguageForProfileID
+0x197f7ada4  __TEXT,__text  _MACaptionAppearanceCopyFontDescriptorForStyle
+0x197f7dc60  __TEXT,__text  _MACaptionAppearanceCopyFontDescriptorForStyleForProfileID
+0x197f7c68c  __TEXT,__text  _MACaptionAppearanceCopyFontDescriptorWithStrokeForStyle
+0x197f7a11c  __TEXT,__text  _MACaptionAppearanceCopyFontDescriptorWithStrokeForStyleForProfileID
+0x197f8852c  __TEXT,__text  _MACaptionAppearanceCopyFontForStyle
+0x197f79b78  __TEXT,__text  _MACaptionAppearanceCopyForegroundColor
+0x197f79a68  __TEXT,__text  _MACaptionAppearanceCopyForegroundColorForProfileID
+0x197f7da7c  __TEXT,__text  _MACaptionAppearanceCopyPreferredCaptioningMediaCharacteristics
+0x197f881f4  __TEXT,__text  _MACaptionAppearanceCopyPreferredLanguages
+0x197f7dda4  __TEXT,__text  _MACaptionAppearanceCopyPreviewText
+0x197f7de70  __TEXT,__text  _MACaptionAppearanceCopyProfileIDs
+0x197f7e16c  __TEXT,__text  _MACaptionAppearanceCopyProfileName
+0x197f7b708  __TEXT,__text  _MACaptionAppearanceCopySelectedLanguages
+0x197f7da28  __TEXT,__text  _MACaptionAppearanceCopySelectedLanguagesUntrimmed
+0x197f7dbd0  __TEXT,__text  _MACaptionAppearanceCopyStrokeColor
+0x197f7dbd4  __TEXT,__text  _MACaptionAppearanceCopyStrokeColorForProfileID
+0x197f7b13c  __TEXT,__text  _MACaptionAppearanceCopyWindowColor
+0x197f7b034  __TEXT,__text  _MACaptionAppearanceCopyWindowColorForProfileID
+0x197f7e254  __TEXT,__text  _MACaptionAppearanceDidDisplayCaptions
+0x197f7e170  __TEXT,__text  _MACaptionAppearanceExecuteBlockForProfileID
+0x197f7c4c0  __TEXT,__text  _MACaptionAppearanceGetBackgroundOpacity
+0x197f7c434  __TEXT,__text  _MACaptionAppearanceGetBackgroundOpacityForProfileID
+0x197f7bb84  __TEXT,__text  _MACaptionAppearanceGetDisplayType
+0x197f7c400  __TEXT,__text  _MACaptionAppearanceGetForegroundOpacity
+0x197f7c374  __TEXT,__text  _MACaptionAppearanceGetForegroundOpacityForProfileID
+0x197f7ab84  __TEXT,__text  _MACaptionAppearanceGetRelativeCharacterSize
+0x197f7c760  __TEXT,__text  _MACaptionAppearanceGetRelativeCharacterSizeForLanguage
+0x197f7a9f0  __TEXT,__text  _MACaptionAppearanceGetRelativeCharacterSizeForLanguageAndProfileID
+0x197f7dc58  __TEXT,__text  _MACaptionAppearanceGetRelativeCharacterSizeForProfileID
+0x197f88210  __TEXT,__text  _MACaptionAppearanceGetShowCaptions
+0x197f88278  __TEXT,__text  _MACaptionAppearanceGetShowCaptionsWhenAvailable
+0x197f7dc98  __TEXT,__text  _MACaptionAppearanceGetStrokeWidth
+0x197f7dd20  __TEXT,__text  _MACaptionAppearanceGetStrokeWidthForProfileID
+0x197f7add4  __TEXT,__text  _MACaptionAppearanceGetTextEdgeStyle
+0x197f7a02c  __TEXT,__text  _MACaptionAppearanceGetTextEdgeStyleForProfileID
+0x197f7c580  __TEXT,__text  _MACaptionAppearanceGetWindowOpacity
+0x197f7c4f4  __TEXT,__text  _MACaptionAppearanceGetWindowOpacityForProfileID
+0x197f7c664  __TEXT,__text  _MACaptionAppearanceGetWindowRoundedCornerRadius
+0x197f7c5b4  __TEXT,__text  _MACaptionAppearanceGetWindowRoundedCornerRadiusForProfileID
+0x197f7db48  __TEXT,__text  _MACaptionAppearanceIsCustomized
+0x197f7db5c  __TEXT,__text  _MACaptionAppearanceIsCustomizedForProfileID
+0x197f842d4  __TEXT,__text  _MACaptionAppearanceMacBuddySettingsToTransfer
+0x1e0c53230  __DATA_CONST,__const  _MACaptionAppearanceMediumSystemFontIdentifier
+0x1e0c53228  __DATA_CONST,__const  _MACaptionAppearanceMonoSystemFontIdentifier
+0x197f79dbc  __TEXT,__text  _MACaptionAppearancePrefCopyActiveProfileID
+0x197f82a5c  __TEXT,__text  _MACaptionAppearancePrefCopyAutoSelectGeneratedCaptions
+0x197f7b028  __TEXT,__text  _MACaptionAppearancePrefCopyBackgroundColor
+0x197f7c4e8  __TEXT,__text  _MACaptionAppearancePrefCopyBackgroundOpacity
+0x197f7b9c4  __TEXT,__text  _MACaptionAppearancePrefCopyDisplayType
+0x197f83a7c  __TEXT,__text  _MACaptionAppearancePrefCopyDisplayTypeEnumForBundleID
+0x197f7a734  __TEXT,__text  _MACaptionAppearancePrefCopyFontDescriptorForStyle
+0x197f8329c  __TEXT,__text  _MACaptionAppearancePrefCopyFontForStyle
+0x197f83e1c  __TEXT,__text  _MACaptionAppearancePrefCopyFontSpecifiedByUserForStyle
+0x197f7c154  __TEXT,__text  _MACaptionAppearancePrefCopyForegroundColor
+0x197f7c428  __TEXT,__text  _MACaptionAppearancePrefCopyForegroundOpacity
+0x197f7bef8  __TEXT,__text  _MACaptionAppearancePrefCopyPreferAccessibleCaptions
+0x197f7b758  __TEXT,__text  _MACaptionAppearancePrefCopyPreferredLanguages
+0x197f81810  __TEXT,__text  _MACaptionAppearancePrefCopyProfileIDs
+0x197f7b174  __TEXT,__text  _MACaptionAppearancePrefCopyProfileName
+0x197f81c48  __TEXT,__text  _MACaptionAppearancePrefCopyProfileOrder
+0x197f83678  __TEXT,__text  _MACaptionAppearancePrefCopyRelativeCharacterSize
+0x197f8297c  __TEXT,__text  _MACaptionAppearancePrefCopyShowCaptionsWhenAvailable
+0x197f79c7c  __TEXT,__text  _MACaptionAppearancePrefCopySystemLanguage
+0x197f7a4cc  __TEXT,__text  _MACaptionAppearancePrefCopyTextEdgeStyle
+0x197f837b4  __TEXT,__text  _MACaptionAppearancePrefCopyUsesAppleLookAndFeel
+0x197f7b01c  __TEXT,__text  _MACaptionAppearancePrefCopyVideoOverrideBackgroundColor
+0x197f7c4dc  __TEXT,__text  _MACaptionAppearancePrefCopyVideoOverrideBackgroundOpacity
+0x197f7a768  __TEXT,__text  _MACaptionAppearancePrefCopyVideoOverrideFontForStyle
+0x197f7c148  __TEXT,__text  _MACaptionAppearancePrefCopyVideoOverrideForegroundColor
+0x197f7c41c  __TEXT,__text  _MACaptionAppearancePrefCopyVideoOverrideForegroundOpacity
+0x197f7abd8  __TEXT,__text  _MACaptionAppearancePrefCopyVideoOverrideRelativeCharSize
+0x197f83fd0  __TEXT,__text  _MACaptionAppearancePrefCopyVideoOverrideRelativeCharacterSize
+0x197f7adf0  __TEXT,__text  _MACaptionAppearancePrefCopyVideoOverrideTextEdgeStyle
+0x197f7c284  __TEXT,__text  _MACaptionAppearancePrefCopyVideoOverrideWindowColor
+0x197f7c59c  __TEXT,__text  _MACaptionAppearancePrefCopyVideoOverrideWindowOpacity
+0x197f7c290  __TEXT,__text  _MACaptionAppearancePrefCopyWindowColor
+0x197f7c5a8  __TEXT,__text  _MACaptionAppearancePrefCopyWindowOpacity
+0x197f7c680  __TEXT,__text  _MACaptionAppearancePrefCopyWindowRoundedCornerRadius
+0x197f81e5c  __TEXT,__text  _MACaptionAppearancePrefCreateNewProfileFromProfile
+0x197f81d7c  __TEXT,__text  _MACaptionAppearancePrefCreateNewProfileID
+0x197f83858  __TEXT,__text  _MACaptionAppearancePrefGetDisplayTypeStorage
+0x197f7abe4  __TEXT,__text  _MACaptionAppearancePrefGetRelativeCharSize
+0x197f7a974  __TEXT,__text  _MACaptionAppearancePrefGetSystemFontType
+0x197f83244  __TEXT,__text  _MACaptionAppearancePrefIsFontSystemForStyle
+0x197f7ad34  __TEXT,__text  _MACaptionAppearancePrefIsProfileEditable
+0x197f82fbc  __TEXT,__text  _MACaptionAppearancePrefIsSystemFont
+0x197f83948  __TEXT,__text  _MACaptionAppearancePrefMigrateSettingsIfNeeded
+0x197f823b0  __TEXT,__text  _MACaptionAppearancePrefRemoveProfile
+0x197f824b0  __TEXT,__text  _MACaptionAppearancePrefResetAll
+0x197f82438  __TEXT,__text  _MACaptionAppearancePrefResetProfile
+0x197f8181c  __TEXT,__text  _MACaptionAppearancePrefRestoreState
+0x197f81688  __TEXT,__text  _MACaptionAppearancePrefSaveState
+0x197f818a8  __TEXT,__text  _MACaptionAppearancePrefSetActiveProfileID
+0x197f8167c  __TEXT,__text  _MACaptionAppearancePrefSetAllowNullProfile
+0x197f82aa4  __TEXT,__text  _MACaptionAppearancePrefSetAutoSelectGeneratedCaptions
+0x197f82cc4  __TEXT,__text  _MACaptionAppearancePrefSetBackgroundColor
+0x197f82e8c  __TEXT,__text  _MACaptionAppearancePrefSetBackgroundOpacity
+0x197f825a8  __TEXT,__text  _MACaptionAppearancePrefSetDisplayType
+0x197f8397c  __TEXT,__text  _MACaptionAppearancePrefSetDisplayTypeEnumForBundleID
+0x197f838e4  __TEXT,__text  _MACaptionAppearancePrefSetDisplayTypeStorage
+0x197f83400  __TEXT,__text  _MACaptionAppearancePrefSetFontDescriptorForStyle
+0x197f832d0  __TEXT,__text  _MACaptionAppearancePrefSetFontForStyle
+0x197f83170  __TEXT,__text  _MACaptionAppearancePrefSetFontSpecifiedByUserForStyle
+0x197f82b5c  __TEXT,__text  _MACaptionAppearancePrefSetForegroundColor
+0x197f82df4  __TEXT,__text  _MACaptionAppearancePrefSetForegroundOpacity
+0x197f8328c  __TEXT,__text  _MACaptionAppearancePrefSetIsFontSystemForStyle
+0x197f83044  __TEXT,__text  _MACaptionAppearancePrefSetIsSystemFont
+0x197f826bc  __TEXT,__text  _MACaptionAppearancePrefSetPreferAccessibleCaptions
+0x197f82788  __TEXT,__text  _MACaptionAppearancePrefSetPreferredLanguages
+0x197f81ccc  __TEXT,__text  _MACaptionAppearancePrefSetProfileName
+0x197f81c80  __TEXT,__text  _MACaptionAppearancePrefSetProfileOrder
+0x197f83534  __TEXT,__text  _MACaptionAppearancePrefSetRelativeCharSize
+0x197f83684  __TEXT,__text  _MACaptionAppearancePrefSetRelativeCharacterSize
+0x197f829f8  __TEXT,__text  _MACaptionAppearancePrefSetShowCaptionsWhenAvailable
+0x197f819c0  __TEXT,__text  _MACaptionAppearancePrefSetSystemLanguageOverride
+0x197f81c08  __TEXT,__text  _MACaptionAppearancePrefSetTempProfileID
+0x197f83c80  __TEXT,__text  _MACaptionAppearancePrefSetTextEdgeStyle
+0x197f837c0  __TEXT,__text  _MACaptionAppearancePrefSetUsesAppleLookAndFeel
+0x197f83d7c  __TEXT,__text  _MACaptionAppearancePrefSetVideoOverrideBackgroundColor
+0x197f83ddc  __TEXT,__text  _MACaptionAppearancePrefSetVideoOverrideBackgroundOpacity
+0x197f83ebc  __TEXT,__text  _MACaptionAppearancePrefSetVideoOverrideFontForStyle
+0x197f83d5c  __TEXT,__text  _MACaptionAppearancePrefSetVideoOverrideForegroundColor
+0x197f83dbc  __TEXT,__text  _MACaptionAppearancePrefSetVideoOverrideForegroundOpacity
+0x197f83fb0  __TEXT,__text  _MACaptionAppearancePrefSetVideoOverrideRelativeCharSize
+0x197f83fdc  __TEXT,__text  _MACaptionAppearancePrefSetVideoOverrideRelativeCharacterSize
+0x197f83ffc  __TEXT,__text  _MACaptionAppearancePrefSetVideoOverrideTextEdgeStyle
+0x197f83d9c  __TEXT,__text  _MACaptionAppearancePrefSetVideoOverrideWindowColor
+0x197f83dfc  __TEXT,__text  _MACaptionAppearancePrefSetVideoOverrideWindowOpacity
+0x197f82d5c  __TEXT,__text  _MACaptionAppearancePrefSetWindowColor
+0x197f82f24  __TEXT,__text  _MACaptionAppearancePrefSetWindowOpacity
+0x197f8371c  __TEXT,__text  _MACaptionAppearancePrefSetWindowRoundedCornerRadius
+0x1e0c53220  __DATA_CONST,__const  _MACaptionAppearancePrefTempProfileIDClassic
+0x1e0c53218  __DATA_CONST,__const  _MACaptionAppearancePrefTempProfileIDDefault
+0x1e0c53210  __DATA_CONST,__const  _MACaptionAppearancePrefTempProfileIDLargeText
+0x1e0c53208  __DATA_CONST,__const  _MACaptionAppearancePrefTempProfileIDOutlineText
+0x197f7e164  __TEXT,__text  _MACaptionAppearanceSetActiveProfileID
+0x197f7e204  __TEXT,__text  _MACaptionAppearanceSetDidDisplayCaptionsCallback
+0x197f7da30  __TEXT,__text  _MACaptionAppearanceSetDisplayType
+0x197f88258  __TEXT,__text  _MACaptionAppearanceSetShowCaptions
+0x1e0c53200  __DATA_CONST,__const  _MACaptionAppearanceSystemFontIdentifier
+0x1e0c531f8  __DATA_CONST,__const  _MACaptionFontAttributeStrokeWidth
+0x197f80a00  __TEXT,__text  _MACreatePrefCategoryKey
+0x197f7c29c  __TEXT,__text  _MADimFlashingLightsEnabled
+0x197f85f2c  __TEXT,__text  _MADisplayFilterCombine
+0x197f85a90  __TEXT,__text  _MADisplayFilterCopySystemFilter
+0x197f862a0  __TEXT,__text  _MADisplayFilterCreateBlueColorCorrection
+0x197f86400  __TEXT,__text  _MADisplayFilterCreateBrightnessAdjust
+0x197f8634c  __TEXT,__text  _MADisplayFilterCreateGrayscale
+0x197f861dc  __TEXT,__text  _MADisplayFilterCreateGreenColorCorrection
+0x197f85d0c  __TEXT,__text  _MADisplayFilterCreateIdentity
+0x197f86b84  __TEXT,__text  _MADisplayFilterCreateInterpolated
+0x197f86b28  __TEXT,__text  _MADisplayFilterCreateRedBlack
+0x197f86118  __TEXT,__text  _MADisplayFilterCreateRedColorCorrection
+0x197f85d54  __TEXT,__text  _MADisplayFilterCreateRedNightMode
+0x197f8687c  __TEXT,__text  _MADisplayFilterCreateSaturation
+0x197f85db8  __TEXT,__text  _MADisplayFilterCreateSingleColor
+0x197f86960  __TEXT,__text  _MADisplayFilterCreateTwoColor
+0x197f863fc  __TEXT,__text  _MADisplayFilterCreateWarmthAdjust
+0x197f86ad4  __TEXT,__text  _MADisplayFilterCreateYellowBlack
+0x197f86a70  __TEXT,__text  _MADisplayFilterCreateYellowBlue
+0x197f859fc  __TEXT,__text  _MADisplayFilterGetGain
+0x197f85a24  __TEXT,__text  _MADisplayFilterGetMatrix
+0x197f859d8  __TEXT,__text  _MADisplayFilterGetPostOffsets
+0x197f85a10  __TEXT,__text  _MADisplayFilterGetReduceWhitePoint
+0x197f8594c  __TEXT,__text  _MADisplayFilterGetTypeID
+0x197f868f8  __TEXT,__text  _MADisplayFilterInversionCompensationForNightShift
+0x197f808bc  __TEXT,__text  _MADisplayFilterPrefCopyCategoriesForCurrentPlatform
+0x197f810c4  __TEXT,__text  _MADisplayFilterPrefGetBlueColorCorrectionIntensity
+0x197f811bc  __TEXT,__text  _MADisplayFilterPrefGetBrightnessIntensity
+0x197f80df4  __TEXT,__text  _MADisplayFilterPrefGetCategoryEnabled
+0x197f81140  __TEXT,__text  _MADisplayFilterPrefGetGrayscaleCorrectionIntensity
+0x197f81048  __TEXT,__text  _MADisplayFilterPrefGetGreenColorCorrectionIntensity
+0x197f80e74  __TEXT,__text  _MADisplayFilterPrefGetRedColorCorrectionIntensity
+0x197f81318  __TEXT,__text  _MADisplayFilterPrefGetReduceWhitePointIntensity
+0x197f81464  __TEXT,__text  _MADisplayFilterPrefGetSingleColorHue
+0x197f813c8  __TEXT,__text  _MADisplayFilterPrefGetSingleColorIntensity
+0x197f80a84  __TEXT,__text  _MADisplayFilterPrefGetType
+0x197f81270  __TEXT,__text  _MADisplayFilterPrefGetWarmthIntensity
+0x197f80a54  __TEXT,__text  _MADisplayFilterPrefPossibleTypesForCategory
+0x197f814e0  __TEXT,__text  _MADisplayFilterPrefResetAll
+0x197f81124  __TEXT,__text  _MADisplayFilterPrefSetBlueColorCorrectionIntensity
+0x197f81254  __TEXT,__text  _MADisplayFilterPrefSetBrightnessIntensity
+0x197f80d08  __TEXT,__text  _MADisplayFilterPrefSetCategoryEnabled
+0x197f811a0  __TEXT,__text  _MADisplayFilterPrefSetGrayscaleCorrectionIntensity
+0x197f810a8  __TEXT,__text  _MADisplayFilterPrefSetGreenColorCorrectionIntensity
+0x197f80f78  __TEXT,__text  _MADisplayFilterPrefSetRedColorCorrectionIntensity
+0x197f813ac  __TEXT,__text  _MADisplayFilterPrefSetReduceWhitePointIntensity
+0x197f814c4  __TEXT,__text  _MADisplayFilterPrefSetSingleColorHue
+0x197f81448  __TEXT,__text  _MADisplayFilterPrefSetSingleColorIntensity
+0x197f80bb0  __TEXT,__text  _MADisplayFilterPrefSetType
+0x197f812fc  __TEXT,__text  _MADisplayFilterPrefSetWarmthIntensity
+0x197f80a78  __TEXT,__text  _MADisplayFilterPrefSuspendNotifications
+0x197f85a04  __TEXT,__text  _MADisplayFilterSetGain
+0x197f85a58  __TEXT,__text  _MADisplayFilterSetMatrix
+0x197f859e8  __TEXT,__text  _MADisplayFilterSetPostOffsets
+0x197f85a18  __TEXT,__text  _MADisplayFilterSetReduceWhitePoint
+0x197f87a5c  __TEXT,__text  _MAGetCaptionCallStatus
+0x197f7d234  __TEXT,__text  _MAImageCaptioningCopyCaption
+0x197f7cfec  __TEXT,__text  _MAImageCaptioningCopyCaptionWithSource
+0x197f7cf98  __TEXT,__text  _MAImageCaptioningCopyMetadataTagPath
+0x197f7d32c  __TEXT,__text  _MAImageCaptioningSetCaption
+0x197f7cd90  __TEXT,__text  _MAImageCaptioningSetCaptionIntoMetadata
+0x197f80778  __TEXT,__text  _MALegibleOutputDidOutputAttributedStrings
+0x197f808b0  __TEXT,__text  _MALegibleOutputDidOutputAttributedStringsRegisterCallback
+0x197f87cb0  __TEXT,__text  _MAMacBuddySettingsToTransfer
+0x1e0c531f0  __DATA_CONST,__const  _MAMediaCharacteristicDescribesMusicAndSoundForAccessibility
+0x1e0c531e8  __DATA_CONST,__const  _MAMediaCharacteristicDescribesVideoForAccessibility
+0x1e0c531e0  __DATA_CONST,__const  _MAMediaCharacteristicTranscribesSpokenDialogForAccessibility
+0x1e0c531d8  __DATA_CONST,__const  _MAMusicHapticsEnabledStatusDidChangeNotification
+0x1e0c531d0  __DATA_CONST,__const  _MAMusicHapticsManagerActiveStatusDidChangeNotification
+0x197f87be4  __TEXT,__text  _MAPreferencesOpenSettings
+0x197f87d88  __TEXT,__text  _MAPreferencesSetDomainOverride
+0x197f8795c  __TEXT,__text  _MASetCaptionCallStatus
+0x197f87210  __TEXT,__text  _MATestingCopyProfileIDs
+0x197f882d8  __TEXT,__text  _MAXCaptionAppearanceBehaviorCopyBackgroundColor
+0x197f883d0  __TEXT,__text  _MAXCaptionAppearanceBehaviorCopyBackgroundOpacity
+0x197f884d8  __TEXT,__text  _MAXCaptionAppearanceBehaviorCopyFontForStyle
+0x197f88288  __TEXT,__text  _MAXCaptionAppearanceBehaviorCopyForegroundColor
+0x197f88378  __TEXT,__text  _MAXCaptionAppearanceBehaviorCopyForegroundOpacity
+0x197f88600  __TEXT,__text  _MAXCaptionAppearanceBehaviorCopyRelativeCharacterSize
+0x197f88328  __TEXT,__text  _MAXCaptionAppearanceBehaviorCopyWindowColor
+0x197f88428  __TEXT,__text  _MAXCaptionAppearanceBehaviorCopyWindowOpacity
+0x197f88480  __TEXT,__text  _MAXCaptionAppearanceBehaviorCopyWindowRoundedCornerRadius
+0x197f88658  __TEXT,__text  _MAXCaptionAppearanceBehaviorGetTextEdgeStyle
+0x197f886d8  __TEXT,__text  _MAXCaptionAppearanceCopyBackgroundColor
+0x197f88960  __TEXT,__text  _MAXCaptionAppearanceCopyFontForStyle
+0x197f8869c  __TEXT,__text  _MAXCaptionAppearanceCopyForegroundColor
+0x197f88208  __TEXT,__text  _MAXCaptionAppearanceCopyPreferredLanguages
+0x197f88714  __TEXT,__text  _MAXCaptionAppearanceCopyWindowColor
+0x197f887d4  __TEXT,__text  _MAXCaptionAppearanceGetBackgroundOpacity
+0x197f88750  __TEXT,__text  _MAXCaptionAppearanceGetForegroundOpacity
+0x197f889a4  __TEXT,__text  _MAXCaptionAppearanceGetRelativeCharacterSize
+0x197f88a28  __TEXT,__text  _MAXCaptionAppearanceGetTextEdgeStyle
+0x197f88858  __TEXT,__text  _MAXCaptionAppearanceGetWindowOpacity
+0x197f888dc  __TEXT,__text  _MAXCaptionAppearanceGetWindowRoundedCornerRadius
+0x197f8827c  __TEXT,__text  _MAXCaptionAppearanceHasUserDefinedValues
+0x197f84030  __TEXT,__text  _MAXCaptionAppearancePrefCopyActiveProfileID
+0x197f840d0  __TEXT,__text  _MAXCaptionAppearancePrefCopyBackgroundColor
+0x197f84184  __TEXT,__text  _MAXCaptionAppearancePrefCopyBackgroundOpacity
+0x197f841fc  __TEXT,__text  _MAXCaptionAppearancePrefCopyFontForStyle
+0x197f84094  __TEXT,__text  _MAXCaptionAppearancePrefCopyForegroundColor
+0x197f84148  __TEXT,__text  _MAXCaptionAppearancePrefCopyForegroundOpacity
+0x197f842d0  __TEXT,__text  _MAXCaptionAppearancePrefCopyPreferredLanguages
+0x197f8401c  __TEXT,__text  _MAXCaptionAppearancePrefCopyProfileIDs
+0x197f84034  __TEXT,__text  _MAXCaptionAppearancePrefCopyProfileName
+0x197f8403c  __TEXT,__text  _MAXCaptionAppearancePrefCopyProfileOrder
+0x197f8423c  __TEXT,__text  _MAXCaptionAppearancePrefCopyRelativeCharacterSize
+0x197f8408c  __TEXT,__text  _MAXCaptionAppearancePrefCopyShowCaptionsWhenAvailable
+0x197f84278  __TEXT,__text  _MAXCaptionAppearancePrefCopyTextEdgeStyle
+0x197f842bc  __TEXT,__text  _MAXCaptionAppearancePrefCopyUsesAppleLookAndFeel
+0x197f840e0  __TEXT,__text  _MAXCaptionAppearancePrefCopyVideoOverrideBackgroundColor
+0x197f84194  __TEXT,__text  _MAXCaptionAppearancePrefCopyVideoOverrideBackgroundOpacity
+0x197f84234  __TEXT,__text  _MAXCaptionAppearancePrefCopyVideoOverrideFontForStyle
+0x197f840a4  __TEXT,__text  _MAXCaptionAppearancePrefCopyVideoOverrideForegroundColor
+0x197f84158  __TEXT,__text  _MAXCaptionAppearancePrefCopyVideoOverrideForegroundOpacity
+0x197f8424c  __TEXT,__text  _MAXCaptionAppearancePrefCopyVideoOverrideRelativeCharacterSize
+0x197f84280  __TEXT,__text  _MAXCaptionAppearancePrefCopyVideoOverrideTextEdgeStyle
+0x197f8411c  __TEXT,__text  _MAXCaptionAppearancePrefCopyVideoOverrideWindowColor
+0x197f841d0  __TEXT,__text  _MAXCaptionAppearancePrefCopyVideoOverrideWindowOpacity
+0x197f8410c  __TEXT,__text  _MAXCaptionAppearancePrefCopyWindowColor
+0x197f841c0  __TEXT,__text  _MAXCaptionAppearancePrefCopyWindowOpacity
+0x197f842ac  __TEXT,__text  _MAXCaptionAppearancePrefCopyWindowRoundedCornerRadius
+0x197f8407c  __TEXT,__text  _MAXCaptionAppearancePrefCreateNewProfileFromProfile
+0x197f84078  __TEXT,__text  _MAXCaptionAppearancePrefCreateNewProfileID
+0x197f84028  __TEXT,__text  _MAXCaptionAppearancePrefIsProfileEditable
+0x197f84080  __TEXT,__text  _MAXCaptionAppearancePrefRemoveProfile
+0x197f84084  __TEXT,__text  _MAXCaptionAppearancePrefResetAll
+0x197f84088  __TEXT,__text  _MAXCaptionAppearancePrefResetProfile
+0x197f8402c  __TEXT,__text  _MAXCaptionAppearancePrefSetActiveProfileID
+0x197f840dc  __TEXT,__text  _MAXCaptionAppearancePrefSetBackgroundColor
+0x197f84190  __TEXT,__text  _MAXCaptionAppearancePrefSetBackgroundOpacity
+0x197f84230  __TEXT,__text  _MAXCaptionAppearancePrefSetFontForStyle
+0x197f840a0  __TEXT,__text  _MAXCaptionAppearancePrefSetForegroundColor
+0x197f84154  __TEXT,__text  _MAXCaptionAppearancePrefSetForegroundOpacity
+0x197f842cc  __TEXT,__text  _MAXCaptionAppearancePrefSetPreferredLanguages
+0x197f84038  __TEXT,__text  _MAXCaptionAppearancePrefSetProfileName
+0x197f84074  __TEXT,__text  _MAXCaptionAppearancePrefSetProfileOrder
+0x197f84248  __TEXT,__text  _MAXCaptionAppearancePrefSetRelativeCharacterSize
+0x197f84090  __TEXT,__text  _MAXCaptionAppearancePrefSetShowCaptionsWhenAvailable
+0x197f8427c  __TEXT,__text  _MAXCaptionAppearancePrefSetTextEdgeStyle
+0x197f842c8  __TEXT,__text  _MAXCaptionAppearancePrefSetUsesAppleLookAndFeel
+0x197f840ec  __TEXT,__text  _MAXCaptionAppearancePrefSetVideoOverrideBackgroundColor
+0x197f841a0  __TEXT,__text  _MAXCaptionAppearancePrefSetVideoOverrideBackgroundOpacity
+0x197f84238  __TEXT,__text  _MAXCaptionAppearancePrefSetVideoOverrideFontForStyle
+0x197f840b0  __TEXT,__text  _MAXCaptionAppearancePrefSetVideoOverrideForegroundColor
+0x197f84164  __TEXT,__text  _MAXCaptionAppearancePrefSetVideoOverrideForegroundOpacity
+0x197f84258  __TEXT,__text  _MAXCaptionAppearancePrefSetVideoOverrideRelativeCharacterSize
+0x197f8428c  __TEXT,__text  _MAXCaptionAppearancePrefSetVideoOverrideTextEdgeStyle
+0x197f84128  __TEXT,__text  _MAXCaptionAppearancePrefSetVideoOverrideWindowColor
+0x197f841dc  __TEXT,__text  _MAXCaptionAppearancePrefSetVideoOverrideWindowOpacity
+0x197f84118  __TEXT,__text  _MAXCaptionAppearancePrefSetWindowColor
+0x197f841cc  __TEXT,__text  _MAXCaptionAppearancePrefSetWindowOpacity
+0x197f842b8  __TEXT,__text  _MAXCaptionAppearancePrefSetWindowRoundedCornerRadius
+0x197f881fc  __TEXT,__text  _MAXCaptionAppearanceSetPreferredLanguage
+0x197f88284  __TEXT,__text  _MAXCaptionAppearanceShowCaptionsWhenAvailable
+0x1ef681310  __AUTH,__objc_data  _OBJC_CLASS_$_MAFlashingLightsProcessor
+0x1ef6812e8  __AUTH,__objc_data  _OBJC_CLASS_$_MAFlashingLightsProcessorResult
+0x1ee1d48a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MAMusicHapticsManager
+0x1ef681270  __AUTH,__objc_data  _OBJC_METACLASS_$_MAFlashingLightsProcessor
+0x1ef681248  __AUTH,__objc_data  _OBJC_METACLASS_$_MAFlashingLightsProcessorResult
+0x1ee1d4878  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MAMusicHapticsManager
+0x197f81b84  __TEXT,__text  __MACaptionAppearancePrefPopTempProfile
+0x197f81a00  __TEXT,__text  __MACaptionAppearancePrefPushTempProfile
+0x1e0c52ef8  __DATA_CONST,__const  _kMAAudibleMediaSettingsChangedNotification
+0x1e0c52ef0  __DATA_CONST,__const  _kMACaptionAppearanceSettingsChangedNotification
+0x1e0c52ee8  __DATA_CONST,__const  _kMADimFlashingLightsChangedNotification
+0x1e0c52ee0  __DATA_CONST,__const  _kMADisplayFilterPrefBlueColorCorrectionIntensityKey
+0x197f8a420  __TEXT,__const  _kMADisplayFilterPrefBlueColorIntensityMax
+0x197f8a418  __TEXT,__const  _kMADisplayFilterPrefBlueColorIntensityMin
+0x197f8a450  __TEXT,__const  _kMADisplayFilterPrefBrightnessIntensityMax
+0x197f8a448  __TEXT,__const  _kMADisplayFilterPrefBrightnessIntensityMin
+0x1e0c52ed8  __DATA_CONST,__const  _kMADisplayFilterPrefCategoryEnabledKey
+0x1e0c52ed0  __DATA_CONST,__const  _kMADisplayFilterPrefGrayscaleCorrectionIntensityKey
+0x197f8a430  __TEXT,__const  _kMADisplayFilterPrefGrayscaleIntensityMax
+0x197f8a428  __TEXT,__const  _kMADisplayFilterPrefGrayscaleIntensityMin
+0x1e0c52ec8  __DATA_CONST,__const  _kMADisplayFilterPrefGreenColorCorrectionIntensityKey
+0x197f8a410  __TEXT,__const  _kMADisplayFilterPrefGreenColorIntensityMax
+0x197f8a408  __TEXT,__const  _kMADisplayFilterPrefGreenColorIntensityMin
+0x1e0c52ec0  __DATA_CONST,__const  _kMADisplayFilterPrefRedColorCorrectionIntensityKey
+0x197f8a400  __TEXT,__const  _kMADisplayFilterPrefRedColorIntensityMax
+0x197f8a3f8  __TEXT,__const  _kMADisplayFilterPrefRedColorIntensityMin
+0x1e0c52eb8  __DATA_CONST,__const  _kMADisplayFilterPrefReduceWhitePointIntensityKey
+0x197f8a470  __TEXT,__const  _kMADisplayFilterPrefReduceWhitePointIntensityMax
+0x197f8a468  __TEXT,__const  _kMADisplayFilterPrefReduceWhitePointIntensityMin
+0x1e0c52eb0  __DATA_CONST,__const  _kMADisplayFilterPrefSingleColorHueKey
+0x1e0c52ea8  __DATA_CONST,__const  _kMADisplayFilterPrefSingleColorIntensityKey
+0x197f8a440  __TEXT,__const  _kMADisplayFilterPrefSingleColorIntensityMax
+0x197f8a438  __TEXT,__const  _kMADisplayFilterPrefSingleColorIntensityMin
+0x1e0c52ea0  __DATA_CONST,__const  _kMADisplayFilterPrefTypeKey
+0x197f8a460  __TEXT,__const  _kMADisplayFilterPrefWarmthIntensityMax
+0x197f8a458  __TEXT,__const  _kMADisplayFilterPrefWarmthIntensityMin
+0x1e0c52e98  __DATA_CONST,__const  _kMADisplayFilterSettingsChangedNotification
+0x1e0c52e90  __DATA_CONST,__const  _kMAXCaptionAppearanceSettingsChangedNotification
+```
+
+## Private
+
+```
+0x197f79610  __TEXT,__text  __preferencesDefaults
+0x197f796a0  __TEXT,__text  __preferenceAccessRequiresXPC
+0x197f79724  __TEXT,__text  _MAPreferencesCopyProfileValueWithExpectedType
+0x197f797e0  __TEXT,__text  _MAPreferencesCopyProfileValue
+0x197f798ec  __TEXT,__text  _MAPreferenceInitializeIfNeeded
+0x197f79918  __TEXT,__text  _MAPreferenceInitializeIfNeeded.cold.1
+0x197f79918  __TEXT,__text  _MAPreferenceInitializeIfNeeded.cold.1
+0x197f7991c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x197f7993c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x197f79948  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x197f79970  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x197f79984  __TEXT,__text  _MAUtiltiesGetBundle
+0x197f79990  __TEXT,__text  __copyValue
+0x197f79b94  __TEXT,__text  ___MAPreferenceInitializeIfNeeded_block_invoke
+0x197f79c28  __TEXT,__text  _MAPreferenceAddPublicWriteableKey
+0x197f79f58  __TEXT,__text  _MAPreferencesCopyProfileBoolean
+0x197f79f90  __TEXT,__text  _MAPreferencesCopyString
+0x197f79fc4  __TEXT,__text  _MACaptionAppearancePrefCopyActiveProfileID.cold.1
+0x197f79fd8  __TEXT,__text  _MAUtilitiesCreateLowercaseString
+0x197f7a494  __TEXT,__text  _MAPreferencesCopyProfileNumber
+0x197f7a55c  __TEXT,__text  _MAUtilitiesCreateCTFontDescriptorWithName
+0x197f7a6e0  __TEXT,__text  _MAPreferencesCopyProfileFontDescriptor
+0x197f7a808  __TEXT,__text  __keyForFontStyle
+0x197f7a828  __TEXT,__text  __MAUtilitiesCreateCTFontDescriptorForSystemFontType
+0x197f7aba4  __TEXT,__text  __copyCharSizeFromPrefsAsNumber
+0x197f7adfc  __TEXT,__text  ____languagesUsingAlternateDefaults_block_invoke
+0x197f7ae44  __TEXT,__text  _MAPreferencesCopyProfileColor
+0x197f7b158  __TEXT,__text  __initProfileStackKey
+0x197f7b20c  __TEXT,__text  ____copyResultPreferenceXPCCallWithBundleID_block_invoke
+0x197f7b480  __TEXT,__text  _MAXCreateCFObjectFromXPC
+0x197f7b690  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x197f7b6b8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x197f7b6cc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x197f7b6e0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x197f7b6f4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x197f7b7f4  __TEXT,__text  _MAUtilitiesCopyResourceDictionary
+0x197f7b9a8  __TEXT,__text  _MACaptionAppearancePrefCopyDisplayType.cold.1
+0x197f7b9a8  __TEXT,__text  _MACaptionAppearancePrefCopyDisplayType.cold.1
+0x197f7b9a8  __TEXT,__text  _MACaptionAppearancePrefCopyDisplayType.cold.1
+0x197f7b9a8  __TEXT,__text  _MACaptionAppearancePrefCopyDisplayType.cold.1
+0x197f7b9a8  __TEXT,__text  _MACaptionAppearancePrefCopyDisplayType.cold.1
+0x197f7b9a8  __TEXT,__text  _MACaptionAppearancePrefCopyDisplayType.cold.1
+0x197f7bb1c  __TEXT,__text  ____displayTypeLog_block_invoke
+0x197f7bb54  __TEXT,__text  ____displayTypeLog_block_invoke
+0x197f7bc40  __TEXT,__text  _MAPreferencesCopyNumber
+0x197f7bc74  __TEXT,__text  __copyResultPreferenceXPCCallWithBundleID
+0x197f7be80  __TEXT,__text  _MASetCaptionCallStatus.cold.1
+0x197f7be80  __TEXT,__text  _MASetCaptionCallStatus.cold.1
+0x197f7be80  __TEXT,__text  _MASetCaptionCallStatus.cold.1
+0x197f7be80  __TEXT,__text  _MASetCaptionCallStatus.cold.1
+0x197f7be80  __TEXT,__text  _MASetCaptionCallStatus.cold.1
+0x197f7be84  __TEXT,__text  ____xpcConnection_block_invoke
+0x197f7bed0  __TEXT,__text  _MACaptionAppearanceGetDisplayType.cold.1
+0x197f7bf04  __TEXT,__text  _MAPreferencesCopyBoolean
+0x197f7bf38  __TEXT,__text  _MAUtilitiesCreateCanonicalLanguageIdentifierFromString
+0x197f7c04c  __TEXT,__text  _MAUtilitiesCreateOrderedCanonicalLanguageIdentifiersFromString
+0x197f7c0e4  __TEXT,__text  _MAXUtilitiesCreateLanguageFromLocaleIdentifier
+0x197f7c6a4  __TEXT,__text  _MAUtilitiesCopyFontOverideLanguage.cold.1
+0x197f7c6a8  __TEXT,__text  _MAUtilitiesCopyFontOverideLanguage
+0x197f7c770  __TEXT,__text  _MAUtilitiesLanguageStringMatchesLanguage
+0x197f7c7e8  __TEXT,__text  _MAUtilitiesFontSupportsLanguage
+0x197f7c9a4  __TEXT,__text  ___MAUtilitiesCustomizedFontLanguages_block_invoke
+0x197f7ca18  __TEXT,__text  _MAXCreateXPCObjectFromCF
+0x197f7cba8  __TEXT,__text  __createXPCObjectFromCFDictionary
+0x197f7cd0c  __TEXT,__text  ____createCFDictionaryFromXPCDictionary_block_invoke
+0x197f7d1cc  __TEXT,__text  ___MAImageCaptioningCopyCaptionWithSource_block_invoke
+0x197f7d554  __TEXT,__text  ___get_AXSPhotosensitiveMitigationEnabledSymbolLoc_block_invoke
+0x197f7d6e8  __TEXT,__text  ___libAccessibilityLibraryCore_block_invoke
+0x197f7d898  __TEXT,__text  __MACaptionAppearanceCopySelectedLanguages
+0x197f7e060  __TEXT,__text  __compareProfileIDsByName
+0x197f7e4ec  __TEXT,__text  -[MAMusicHapticAppAvailablePair observer]
+0x197f7e4f4  __TEXT,__text  -[MAMusicHapticAppAvailablePair setObserver:]
+0x197f7e4fc  __TEXT,__text  -[MAMusicHapticAppAvailablePair .cxx_destruct]
+0x197f7e508  __TEXT,__text  -[MAMusicHapticStatusPair observer]
+0x197f7e510  __TEXT,__text  -[MAMusicHapticStatusPair setObserver:]
+0x197f7e518  __TEXT,__text  -[MAMusicHapticStatusPair .cxx_destruct]
+0x197f7e524  __TEXT,__text  -[MAMusicHapticAvailablePair observer]
+0x197f7e52c  __TEXT,__text  -[MAMusicHapticAvailablePair setObserver:]
+0x197f7e534  __TEXT,__text  -[MAMusicHapticAvailablePair .cxx_destruct]
+0x197f7e540  __TEXT,__text  +[MAMusicHapticsManager sharedManager]
+0x197f7e578  __TEXT,__text  ___38+[MAMusicHapticsManager sharedManager]_block_invoke
+0x197f7e5a8  __TEXT,__text  -[MAMusicHapticsManager init]
+0x197f7e718  __TEXT,__text  _getAXSettingsClass
+0x197f7e7ec  __TEXT,__text  ___29-[MAMusicHapticsManager init]_block_invoke
+0x197f7e854  __TEXT,__text  -[MAMusicHapticsManager isActive]
+0x197f7e858  __TEXT,__text  -[MAMusicHapticsManager musicHapticsEnabled]
+0x197f7e878  __TEXT,__text  _soft_AXSHapticMusicEnabled
+0x197f7e948  __TEXT,__text  -[MAMusicHapticsManager _clearAHAPCache]
+0x197f7e9d8  __TEXT,__text  ___40-[MAMusicHapticsManager _clearAHAPCache]_block_invoke
+0x197f7ea18  __TEXT,__text  +[MAMusicHapticsManager musicHapticsEnabled]
+0x197f7ea38  __TEXT,__text  -[MAMusicHapticsManager _serviceName]
+0x197f7ea44  __TEXT,__text  -[MAMusicHapticsManager _hapticMusicServerClient]
+0x197f7ebf8  __TEXT,__text  -[MAMusicHapticsManager connectionWithServiceWasInterruptedForUserInterfaceClient:]
+0x197f7ec00  __TEXT,__text  -[MAMusicHapticsManager appSupportsMusicHaptics:completionHandler:]
+0x197f7ee64  __TEXT,__text  _HMLog
+0x197f7ee9c  __TEXT,__text  _getAXAccessQueueClass
+0x197f7ef70  __TEXT,__text  -[MAMusicHapticsManager checkHapticTrackAvailabilityForMediaMatchingCode:completionHandler:]
+0x197f7f378  __TEXT,__text  -[MAMusicHapticsManager addStatusObserverBlock:]
+0x197f7f41c  __TEXT,__text  ___48-[MAMusicHapticsManager addStatusObserverBlock:]_block_invoke
+0x197f7f42c  __TEXT,__text  -[MAMusicHapticsManager addStatusObserver:]
+0x197f7f610  __TEXT,__text  -[MAMusicHapticsManager userInterfaceClient:messageFromServerForWithIdentifierShouldBeProcessedAsynchronously:]
+0x197f7f618  __TEXT,__text  -[MAMusicHapticsManager userInterfaceClient:processMessageFromServerAsynchronously:withIdentifier:completion:]
+0x197f7f718  __TEXT,__text  ___110-[MAMusicHapticsManager userInterfaceClient:processMessageFromServerAsynchronously:withIdentifier:completion:]_block_invoke
+0x197f7f728  __TEXT,__text  -[MAMusicHapticsManager _processServerMessage:withIdentifier:completion:]
+0x197f7fc5c  __TEXT,__text  ___73-[MAMusicHapticsManager _processServerMessage:withIdentifier:completion:]_block_invoke
+0x197f7fcac  __TEXT,__text  ___73-[MAMusicHapticsManager _processServerMessage:withIdentifier:completion:]_block_invoke.492
+0x197f7fda8  __TEXT,__text  -[MAMusicHapticsManager removeStatusObserverBlock:]
+0x197f7fdac  __TEXT,__text  -[MAMusicHapticsManager removeStatusObserver:]
+0x197f7fef0  __TEXT,__text  -[MAMusicHapticsManager client]
+0x197f7fef8  __TEXT,__text  -[MAMusicHapticsManager setClient:]
+0x197f7ff04  __TEXT,__text  -[MAMusicHapticsManager statusObservers]
+0x197f7ff0c  __TEXT,__text  -[MAMusicHapticsManager setStatusObservers:]
+0x197f7ff18  __TEXT,__text  -[MAMusicHapticsManager ahapAvailableObservers]
+0x197f7ff20  __TEXT,__text  -[MAMusicHapticsManager setAhapAvailableObservers:]
+0x197f7ff2c  __TEXT,__text  -[MAMusicHapticsManager treatCodesAsAdamIDs]
+0x197f7ff34  __TEXT,__text  -[MAMusicHapticsManager setTreatCodesAsAdamIDs:]
+0x197f7ff3c  __TEXT,__text  -[MAMusicHapticsManager musicHapticsActive]
+0x197f7ff44  __TEXT,__text  -[MAMusicHapticsManager setMusicHapticsActive:]
+0x197f7ff4c  __TEXT,__text  -[MAMusicHapticsManager ahapAvailableCache]
+0x197f7ff54  __TEXT,__text  -[MAMusicHapticsManager setAhapAvailableCache:]
+0x197f7ff60  __TEXT,__text  -[MAMusicHapticsManager appSupportsCache]
+0x197f7ff68  __TEXT,__text  -[MAMusicHapticsManager setAppSupportsCache:]
+0x197f7ff74  __TEXT,__text  -[MAMusicHapticsManager appSupportedObservers]
+0x197f7ff7c  __TEXT,__text  -[MAMusicHapticsManager setAppSupportedObservers:]
+0x197f7ff88  __TEXT,__text  -[MAMusicHapticsManager pendingAvailableObservers]
+0x197f7ff90  __TEXT,__text  -[MAMusicHapticsManager setPendingAvailableObservers:]
+0x197f7ff9c  __TEXT,__text  -[MAMusicHapticsManager .cxx_destruct]
+0x197f80010  __TEXT,__text  ___getAXSettingsClass_block_invoke
+0x197f8013c  __TEXT,__text  ___AccessibilityUtilitiesLibraryCore_block_invoke
+0x197f801b0  __TEXT,__text  ___get_AXSHapticMusicEnabledSymbolLoc_block_invoke
+0x197f80344  __TEXT,__text  ___libAccessibilityLibraryCore_block_invoke
+0x197f803dc  __TEXT,__text  ___getAXUIClientClass_block_invoke
+0x197f80508  __TEXT,__text  ___AccessibilityUILibraryCore_block_invoke
+0x197f8057c  __TEXT,__text  ___HMLog_block_invoke
+0x197f805b4  __TEXT,__text  ___getAXAccessQueueClass_block_invoke
+0x197f806e0  __TEXT,__text  ___AXCoreUtilitiesLibraryCore_block_invoke
+0x197f80754  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x197f80768  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x197f80b6c  __TEXT,__text  __copyPrefFilterType
+0x197f80c4c  __TEXT,__text  __setPreferenceValueWithOldValue
+0x197f80db0  __TEXT,__text  __copyPrefCategoryEnabled
+0x197f80e90  __TEXT,__text  __getIntensity
+0x197f80f34  __TEXT,__text  __copyPrefRedColorCorrectionIntensity
+0x197f80f94  __TEXT,__text  __setIntensity
+0x197f81064  __TEXT,__text  __copyPrefGreenColorCorrectionIntensity
+0x197f810e0  __TEXT,__text  __copyPrefBlueColorCorrectionIntensity
+0x197f8115c  __TEXT,__text  __copyPrefGrayscaleCorrectionIntensity
+0x197f811d8  __TEXT,__text  __copyPrefBrightnessIntensity
+0x197f8128c  __TEXT,__text  __copyPrefWarmthIntensity
+0x197f81334  __TEXT,__text  __copyPrefReduceWhitePointIntensity
+0x197f813e8  __TEXT,__text  __copyPrefSingleColorIntensity
+0x197f81480  __TEXT,__text  __copyPrefSingleColorHue
+0x197f817ac  __TEXT,__text  __MACaptionAppearancePrefClearTempProfileID
+0x197f81ee0  __TEXT,__text  __copyProfileToProfile
+0x197f82bf4  __TEXT,__text  __setPreferenceValue
+0x197f83528  __TEXT,__text  __MACaptionAppearancePrefCopyRelativeCharSize
+0x197f8362c  __TEXT,__text  __MACaptionAppearancePrefSetRelativeCharSize
+0x197f84380  __TEXT,__text  __destroyProfileStack
+0x197f843e8  __TEXT,__text  __copySetting
+0x197f84480  __TEXT,__text  __copyFontSetting
+0x197f84534  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x197f84540  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x197f8454c  __TEXT,__text  _MACaptionAppearanceCopyForegroundColor_videoConf
+0x197f846d4  __TEXT,__text  _MACaptionAppearanceCopyBackgroundColor_videoConf
+0x197f8485c  __TEXT,__text  _MACaptionAppearanceCopyWindowColor_videoConf
+0x197f84904  __TEXT,__text  _MACaptionAppearanceGetForegroundOpacity_videoConf
+0x197f8494c  __TEXT,__text  _MACaptionAppearanceGetBackgroundOpacity_videoConf
+0x197f8494c  __TEXT,__text  _MACaptionAppearanceGetBackgroundOpacity_videoConf
+0x197f84994  __TEXT,__text  _MACaptionAppearanceGetWindowOpacity_videoConf
+0x197f849dc  __TEXT,__text  _MACaptionAppearanceCopyFontDescriptorForStyle_videoConf
+0x197f84b30  __TEXT,__text  _MACaptionAppearanceGetRelativeCharacterSize_videoConf
+0x197f84c60  __TEXT,__text  _MACaptionAppearanceGetTextEdgeStyle_videoConf
+0x197f84ca8  __TEXT,__text  _MACaptionAppearanceGetDisplayType_videoConf
+0x197f84cdc  __TEXT,__text  _MACaptionAppearanceIsCustomized_videoConf
+0x197f84d10  __TEXT,__text  ____videoConfEnsureNotificationObservers_block_invoke
+0x197f84df0  __TEXT,__text  __videoConfSettingsDidChange
+0x197f84dfc  __TEXT,__text  __cachedNotification
+0x197f84f84  __TEXT,__text  ___libAccessibilityLibraryCore_block_invoke
+0x197f8501c  __TEXT,__text  ___getAXLiveCaptionsGetForegroundColorSymbolLoc_block_invoke
+0x197f8506c  __TEXT,__text  _AXCoreUtilitiesLibrary
+0x197f85164  __TEXT,__text  ___AXCoreUtilitiesLibraryCore_block_invoke
+0x197f851d8  __TEXT,__text  ___getAXLiveCaptionsGetBackgroundColorSymbolLoc_block_invoke
+0x197f85228  __TEXT,__text  ___getAXLiveCaptionsGetFontFamilySymbolLoc_block_invoke
+0x197f85278  __TEXT,__text  ___getAXLiveCaptionsGetFontSizeSymbolLoc_block_invoke
+0x197f852c8  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x197f852e8  __TEXT,__text  -[MAFlashingLightsProcessorResult description]
+0x197f853b4  __TEXT,__text  -[MAFlashingLightsProcessorResult surfaceProcessed]
+0x197f853bc  __TEXT,__text  -[MAFlashingLightsProcessorResult setSurfaceProcessed:]
+0x197f853c4  __TEXT,__text  -[MAFlashingLightsProcessorResult mitigationLevel]
+0x197f853cc  __TEXT,__text  -[MAFlashingLightsProcessorResult setMitigationLevel:]
+0x197f853d4  __TEXT,__text  -[MAFlashingLightsProcessorResult intensityLevel]
+0x197f853dc  __TEXT,__text  -[MAFlashingLightsProcessorResult setIntensityLevel:]
+0x197f853e4  __TEXT,__text  -[MAFlashingLightsProcessor init]
+0x197f854f0  __TEXT,__text  -[MAFlashingLightsProcessor canProcessSurface:]
+0x197f85530  __TEXT,__text  -[MAFlashingLightsProcessor processSurface:outSurface:timestamp:options:]
+0x197f85770  __TEXT,__text  ___73-[MAFlashingLightsProcessor processSurface:outSurface:timestamp:options:]_block_invoke
+0x197f8578c  __TEXT,__text  -[MAFlashingLightsProcessor pse]
+0x197f85794  __TEXT,__text  -[MAFlashingLightsProcessor setPse:]
+0x197f857a0  __TEXT,__text  -[MAFlashingLightsProcessor .cxx_destruct]
+0x197f857ac  __TEXT,__text  ___getPSEVideoProcessorClass_block_invoke
+0x197f858d8  __TEXT,__text  ___PhotosensitivityProcessingLibraryCore_block_invoke
+0x197f8597c  __TEXT,__text  __MADisplayFilterInitialize()
+0x197f86630  __TEXT,__text  MADisplayFilterNormalize(__MADisplayFilter const*)
+0x197f866c4  __TEXT,__text  MAFilterMatrix3Multiply(_MAFilterMatrix3, _MAFilterMatrix3)
+0x197f86770  __TEXT,__text  MAFilterMatrix3IOMFBNormalize(_MAFilterMatrix3)
+0x197f869b8  __TEXT,__text  _MADisplayFilterCreateWithPostOffset(_MAFilterMatrix3, _MAFilterOffset3)
+0x197f86c78  __TEXT,__text  __MADisplayFilterDeallocate(void const*)
+0x197f86c7c  __TEXT,__text  __MADisplayFilterEqual(void const*, void const*)
+0x197f86e24  __TEXT,__text  __MADisplayFilterHash(void const*)
+0x197f86e94  __TEXT,__text  __MADisplayFilterCopyDescription(void const*)
+0x197f86f08  __TEXT,__text  _MAPreferencesPostChangeNotification
+0x197f86f50  __TEXT,__text  _MAPreferencesPostChangeNotificationIfNeeded
+0x197f86f9c  __TEXT,__text  __settingsChangedNotificationHandler
+0x197f87040  __TEXT,__text  _MAPreferencesCopyMultipleProfiles
+0x197f8710c  __TEXT,__text  _MAPreferencesSetMultipleProfiles
+0x197f87200  __TEXT,__text  _MAPreferencesRemoveProfile
+0x197f87214  __TEXT,__text  _MAPreferencesCopyProfileIDs
+0x197f87454  __TEXT,__text  _MAPreferencesSetProfileValue
+0x197f87560  __TEXT,__text  __preferencesSetValue
+0x197f87604  __TEXT,__text  _MAPreferencesSetProfileColor
+0x197f877e4  __TEXT,__text  _MAPreferencesCopyProfileFont
+0x197f87838  __TEXT,__text  _MAPreferencesSetProfileFont
+0x197f878bc  __TEXT,__text  _MAPreferencesSetProfileFontDescriptor
+0x197f87940  __TEXT,__text  _MAPreferencesSetValue
+0x197f8794c  __TEXT,__text  _MAPreferencesSetColor
+0x197f87e14  __TEXT,__text  _MAPreferencesCopyDisplayTypeForBundleID
+0x197f87e2c  __TEXT,__text  _MAPreferencesSetDisplayTypeForBundleID
+0x197f87e68  __TEXT,__text  _MAPreferencesMigrateSettingsIfNeeded
+0x197f87f08  __TEXT,__text  ____copyResultPreferenceXPCCallWithBundleID_block_invoke_2
+0x197f87f20  __TEXT,__text  ____xpcConnection_block_invoke_2
+0x197f87f24  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x197f87f3c  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x197f87f4c  __TEXT,__text  _MAUtilitiesFontsUseSamePostScriptName
+0x197f87fdc  __TEXT,__text  _MAUtilitiesCreatePostScriptNameFromFontDescriptor
+0x197f8803c  __TEXT,__text  _MAUtilitiesGetFallbackPSFontNameForSystemFontType
+0x197f8805c  __TEXT,__text  _MAUtilitiesCreateCGFontWithName
+0x197f880ec  __TEXT,__text  _MAUtilitiesRGBValuesForColor
+0x197f8818c  __TEXT,__text  _MAUtilitiesCreatePreferredPostScriptNameForLanguage
+0x197f881c8  __TEXT,__text  _MAUtilitiesDoubleAlmostEqual
+0x197f890fc  __TEXT,__text  ___swift_memcpy12_4
+0x197f89110  __TEXT,__text  ___swift_noop_void_return
+0x197f891bc  __TEXT,__text  _MADimFlashingLightsEnabled.cold.1
+0x197f89234  __TEXT,__text  ___get_AXSPhotosensitiveMitigationEnabledSymbolLoc_block_invoke.cold.1
+0x197f892b4  __TEXT,__text  _MACaptionAppearanceAddSelectedLanguage.cold.1
+0x197f892c8  __TEXT,__text  _MACaptionAppearanceGetDisplayType.cold.2
+0x197f89368  __TEXT,__text  +[MAMusicHapticsManager sharedManager].cold.1
+0x197f8937c  __TEXT,__text  _soft_AXSHapticMusicEnabled.cold.1
+0x197f893f4  __TEXT,__text  -[MAMusicHapticsManager appSupportsMusicHaptics:completionHandler:].cold.1
+0x197f89428  __TEXT,__text  -[MAMusicHapticsManager appSupportsMusicHaptics:completionHandler:].cold.2
+0x197f8945c  __TEXT,__text  _HMLog.cold.1
+0x197f89470  __TEXT,__text  -[MAMusicHapticsManager userInterfaceClient:processMessageFromServerAsynchronously:withIdentifier:completion:].cold.1
+0x197f894a4  __TEXT,__text  ___getAXSettingsClass_block_invoke.cold.1
+0x197f89510  __TEXT,__text  ___getAXSettingsClass_block_invoke.cold.2
+0x197f89578  __TEXT,__text  ___get_AXSHapticMusicEnabledSymbolLoc_block_invoke.cold.1
+0x197f895e0  __TEXT,__text  ___getAXUIClientClass_block_invoke.cold.1
+0x197f8964c  __TEXT,__text  ___getAXUIClientClass_block_invoke.cold.2
+0x197f896b4  __TEXT,__text  ___getAXAccessQueueClass_block_invoke.cold.1
+0x197f89720  __TEXT,__text  ___getAXAccessQueueClass_block_invoke.cold.2
+0x197f89788  __TEXT,__text  __MACaptionAppearancePrefPushTempProfile.cold.1
+0x197f897cc  __TEXT,__text  _MACaptionAppearancePrefCopyDisplayType.cold.2
+0x197f89828  __TEXT,__text  _MACaptionAppearancePrefCopyDisplayType.cold.4
+0x197f89864  __TEXT,__text  _MACaptionAppearancePrefCopyDisplayType.cold.5
+0x197f89864  __TEXT,__text  _MACaptionAppearancePrefCopyDisplayType.cold.5
+0x197f8987c  __TEXT,__text  _MACaptionAppearancePrefCopyDisplayType.cold.6
+0x197f898b8  __TEXT,__text  _MACaptionAppearancePrefSetDisplayTypeEnumForBundleID.cold.2
+0x197f8990c  __TEXT,__text  _MACaptionAppearancePrefCopyDisplayTypeEnumForBundleID.cold.3
+0x197f8994c  __TEXT,__text  _MACaptionAppearancePrefCopyDisplayTypeEnumForBundleID.cold.5
+0x197f8998c  __TEXT,__text  _MACaptionAppearancePrefCopyDisplayTypeEnumForBundleID.cold.7
+0x197f89a24  __TEXT,__text  _MACaptionAppearanceCopyForegroundColor_videoConf.cold.1
+0x197f89a24  __TEXT,__text  _MACaptionAppearanceCopyForegroundColor_videoConf.cold.1
+0x197f89a24  __TEXT,__text  _MACaptionAppearanceCopyForegroundColor_videoConf.cold.1
+0x197f89a24  __TEXT,__text  _MACaptionAppearanceCopyForegroundColor_videoConf.cold.1
+0x197f89a24  __TEXT,__text  _MACaptionAppearanceCopyForegroundColor_videoConf.cold.1
+0x197f89a24  __TEXT,__text  _MACaptionAppearanceCopyForegroundColor_videoConf.cold.1
+0x197f89a24  __TEXT,__text  _MACaptionAppearanceCopyForegroundColor_videoConf.cold.1
+0x197f89a24  __TEXT,__text  _MACaptionAppearanceCopyForegroundColor_videoConf.cold.1
+0x197f89a24  __TEXT,__text  _MACaptionAppearanceCopyForegroundColor_videoConf.cold.1
+0x197f89a24  __TEXT,__text  _MACaptionAppearanceCopyForegroundColor_videoConf.cold.1
+0x197f89a24  __TEXT,__text  _MACaptionAppearanceCopyForegroundColor_videoConf.cold.1
+0x197f89a24  __TEXT,__text  _MACaptionAppearanceCopyForegroundColor_videoConf.cold.1
+0x197f89a28  __TEXT,__text  _MACaptionAppearanceCopyForegroundColor_videoConf.cold.2
+0x197f89a90  __TEXT,__text  _MACaptionAppearanceCopyBackgroundColor_videoConf.cold.2
+0x197f89af8  __TEXT,__text  _MACaptionAppearanceCopyFontDescriptorForStyle_videoConf.cold.2
+0x197f89b60  __TEXT,__text  _MACaptionAppearanceGetRelativeCharacterSize_videoConf.cold.2
+0x197f89bc8  __TEXT,__text  __cachedNotification.cold.1
+0x197f89c30  __TEXT,__text  _AXCoreUtilitiesLibrary.cold.1
+0x197f89c98  __TEXT,__text  ___getPSEVideoProcessorClass_block_invoke.cold.1
+0x197f89d14  __TEXT,__text  ___getPSEVideoProcessorClass_block_invoke.cold.2
+0x197f89d94  __TEXT,__text  _MASetCaptionCallStatus.cold.2
+0x197f89dc0  __TEXT,__text  _MAGetCaptionCallStatus.cold.2
+0x197f89dec  __TEXT,__text  _MAGetCaptionCallStatus.cold.3
+0x197f89e18  __TEXT,__text  _MAGetCaptionCallStatus.cold.4
+0x197f89e44  __TEXT,__text  _MAPreferencesOpenSettings.cold.2
+0x197f89e70  __TEXT,__text  _MAPreferencesMigrateSettingsIfNeeded.cold.2
+```
+

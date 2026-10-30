@@ -1,0 +1,66 @@
+# `UIAlertControllerVisualStyleAlertModernTV`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `UIAlertControllerVisualStyleAlertTV`
+- 0 instance variables, 0 properties, 50 instance methods, 1 class methods
+
+## Class methods
+
+```
++[UIAlertControllerVisualStyleAlertModernTV associatedAlertBackgroundViewClass];
+```
+
+## Instance methods
+
+```
+-[UIAlertControllerVisualStyleAlertModernTV titleLabelColor];
+-[UIAlertControllerVisualStyleAlertModernTV titleLabelFont];
+-[UIAlertControllerVisualStyleAlertModernTV marginAboveTitleLabelFirstBaseline];
+-[UIAlertControllerVisualStyleAlertModernTV permittedActionLayoutDirection];
+-[UIAlertControllerVisualStyleAlertModernTV marginBelowMessageLabelLastBaseline];
+-[UIAlertControllerVisualStyleAlertModernTV messageLabelColor];
+-[UIAlertControllerVisualStyleAlertModernTV marginAboveMessageLabelFirstBaseline];
+-[UIAlertControllerVisualStyleAlertModernTV marginBelowTitleLabelLastBaseline];
+-[UIAlertControllerVisualStyleAlertModernTV marginBelowLastLabelLastBaseline];
+-[UIAlertControllerVisualStyleAlertModernTV contentInsetsForContainerView:];
+-[UIAlertControllerVisualStyleAlertModernTV maximumWidth];
+-[UIAlertControllerVisualStyleAlertModernTV _marginBelowDetailMessage];
+-[UIAlertControllerVisualStyleAlertModernTV contentHasShadow];
+-[UIAlertControllerVisualStyleAlertModernTV contentBackdropView];
+-[UIAlertControllerVisualStyleAlertModernTV shouldRespectContentViewControllerClippingPreference];
+-[UIAlertControllerVisualStyleAlertModernTV _minimumSpacingAboveTopmostLabelSafeAscender];
+-[UIAlertControllerVisualStyleAlertModernTV _titleAndMessageHorizontalInset];
+-[UIAlertControllerVisualStyleAlertModernTV _labelHorizontalInsets];
+-[UIAlertControllerVisualStyleAlertModernTV dimmingViewForAlertController:];
+-[UIAlertControllerVisualStyleAlertModernTV messageCompositingFilter];
+-[UIAlertControllerVisualStyleAlertModernTV _minimumAlertWidthWithTitleLabel:withCandidateSizes:];
+-[UIAlertControllerVisualStyleAlertModernTV _minimumAlertWidthWithContentView:withCandidateSizes:preferredSizeForContentContainers:];
+-[UIAlertControllerVisualStyleAlertModernTV contentShadowOpacity];
+-[UIAlertControllerVisualStyleAlertModernTV _marginAboveDetailMessageFirstBaseline];
+-[UIAlertControllerVisualStyleAlertModernTV tintColorForAlertController:];
+-[UIAlertControllerVisualStyleAlertModernTV actionWidthForMinimumActionWidth:availableWidth:];
+-[UIAlertControllerVisualStyleAlertModernTV alertWidthSmall];
+-[UIAlertControllerVisualStyleAlertModernTV alertWidthSideBySide];
+-[UIAlertControllerVisualStyleAlertModernTV alertWidthDefault];
+-[UIAlertControllerVisualStyleAlertModernTV minimumWidthFittingContentView:titleLabel:minimumWidthForAllActions:preferredSizeForContentContainers:];
+-[UIAlertControllerVisualStyleAlertModernTV contentShadowRadius];
+-[UIAlertControllerVisualStyleAlertModernTV maximumContentHeight];
+-[UIAlertControllerVisualStyleAlertModernTV alertAnimationInitialScale];
+-[UIAlertControllerVisualStyleAlertModernTV contentClipsToBounds];
+-[UIAlertControllerVisualStyleAlertModernTV contentShadowColor];
+-[UIAlertControllerVisualStyleAlertModernTV contentCornerRadius];
+-[UIAlertControllerVisualStyleAlertModernTV animateAlertControllerView:ofAlertController:forPresentation:inContainerView:descendantOfContainerView:duration:completionBlock:];
+-[UIAlertControllerVisualStyleAlertModernTV alertAnimationHasDelay];
+-[UIAlertControllerVisualStyleAlertModernTV focusAvoidsNonDefaultActionsIfPossible];
+-[UIAlertControllerVisualStyleAlertModernTV preferredActionForActions:suggestedPreferredAction:];
+-[UIAlertControllerVisualStyleAlertModernTV minimumContentHeight];
+-[UIAlertControllerVisualStyleAlertModernTV maximumNumberOfLinesInMessageLabel];
+-[UIAlertControllerVisualStyleAlertModernTV maximumWidthForTitleAndMessageContentView];
+-[UIAlertControllerVisualStyleAlertModernTV messageLabelFont];
+-[UIAlertControllerVisualStyleAlertModernTV alertWidthLarge];
+-[UIAlertControllerVisualStyleAlertModernTV _detailMessageFont];
+-[UIAlertControllerVisualStyleAlertModernTV contentShadowOffset];
+-[UIAlertControllerVisualStyleAlertModernTV definesWidthByContentFitting];
+-[UIAlertControllerVisualStyleAlertModernTV alertWidthExtraLarge];
+-[UIAlertControllerVisualStyleAlertModernTV maximumNumberOfLinesInTitleLabel];
+```

@@ -1,0 +1,72 @@
+# `IOAccessoryHSAIDBusTransport`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.iokit.IOAccessoryManager`](../kexts/com.apple.iokit.IOAccessoryManager.md)
+- Object size: `0x148` (328 bytes)
+- Metaclass: `0xfffffe000b9f1ea8`; metaclass vtable `0xfffffe0008339bb8`; class vtable `0xfffffe0008339620`
+- Registration (init): `0xfffffe0009fddb24`
+- Superclasses: [`IOAccessoryTransport`](IOAccessoryTransport.md) → [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## Strings in its kext that name it (60)
+
+- `IOAccessoryHSAIDBusTransport:%s: called\n`
+- `IOAccessoryHSAIDBusTransport::receivedACK: Unexpected ACK number, got %u, expected %u\n`
+- `IOAccessoryHSAIDBusTransport:%s: HSAID enabled\n`
+- `IOAccessoryHSAIDBusTransport::receiveLongFormPacket: Received packet with command data longer than available buffer space (%u > %u)\n`
+- `IOAccessoryHSAIDBusTransport::receiveLongFormPacket: Fragmented packets currently unsupported\n`
+- `IOAccessoryHSAIDBusTransport:%s: Accessory ACKed HSAID Suspend state\n`
+- `IOAccessoryHSAIDBusTransport:%s: Resetting receive sequence number to %u\n`
+- `IOAccessoryHSAIDBusTransport::receiveLongFormPacket: Exiting bus error state\n`
+- `IOAccessoryHSAIDBusTransport::receiveLongFormPacket: No rx packets\n`
+- `IOAccessoryHSAIDBusTransport:%s: Exiting bus error after receiving a packet\n`
+- `IOAccessoryHSAIDBusTransport::generateACK: cancel failed\n`
+- `IOAccessoryHSAIDBusTransport:%s: Setting power state %lu->%lu\n`
+- `IOAccessoryHSAIDBusTransport:%s: Suspend timer timed out!\n`
+- `IOAccessoryHSAIDBusTransport:%s: Trying to enter Suspend!\n`
+- `IOAccessoryHSAIDBusTransport::transmitACK: startTransmit failed (%s)\n`
+- `IOAccessoryHSAIDBusTransport:%s: Bus error state %u (%s)\n`
+- `IOAccessoryHSAIDBusTransport:%s: No commands to transmit\n`
+- `IOAccessoryHSAIDBusTransport::receivedACK: cancel failed\n`
+- `IOAccessoryHSAIDBusTransport:%s: Pending transmit packet ACKed\n`
+- `IOAccessoryHSAIDBusTransport:%s: Called\n`
+- `IOAccessoryHSAIDBusTransport::receiveLongFormPacket: Received packet with unexpected sequence number. Got %u, expected %u\n`
+- `IOAccessoryHSAIDBusTransport:%s: cancelTransmitInternal 2\n`
+- `IOAccessoryHSAIDBusTransport:%s: Queued ACK=%u\n`
+- `IOAccessoryHSAIDBusTransport:%s: sequence %u\n`
+- `IOAccessoryHSAIDBusTransport:%s: Sending HSAID Suspend result %s\n`
+- `IOAccessoryHSAIDBusTransport:%s: %u command(s) queued\n`
+- `IOAccessoryHSAIDBusTransport:%s: Ack transmit complete ACK=%u\n`
+- `IOAccessoryHSAIDBusTransport::start: Called\n`
+- `IOAccessoryHSAIDBusTransport:%s: Exiting bus error state\n`
+- `IOAccessoryHSAIDBusTransport:%s: Packet transmit complete SEQ=%u ACK=%u CMD=%u\n`
+- `IOAccessoryHSAIDBusTransport:%s: Sending break and exiting Suspend!\n`
+- `IOAccessoryHSAIDBusTransport:%s: Queued %u byte packet to driver for transmit\n`
+- `IOAccessoryHSAIDBusTransport:%s: Retransmitted %u byte packet\n`
+- `IOAccessoryHSAIDBusTransport:%s: Received %u byte packet\n`
+- `IOAccessoryHSAIDBusTransport::receiveLongFormPacket: Received packet shorter than minimum long format packet size (%u)\n`
+- `IOAccessoryHSAIDBusTransport:%s: Configuring bus error timer\n`
+- `IOAccessoryHSAIDBusTransport::receivedACK: Command transmit complete\n`
+- `IOAccessoryHSAIDBusTransport:%s: Starting timer!\n`
+- `IOAccessoryHSAIDBusTransport:%s: type %u\n`
+- `IOAccessoryHSAIDBusTransport::transmitNextPacket: Attempting to transmit packet while in bus error state\n`
+- `IOAccessoryHSAIDBusTransport:%s: Ignoring setPowerState during low-power wake\n`
+- `IOAccessoryHSAIDBusTransport:%s: Received ACK packet\n`
+- `IOAccessoryHSAIDBusTransport:%s: HSAID disabled\n`
+- `IOAccessoryHSAIDBusTransport:%s: cancelTransmitInternal 1\n`
+- `IOAccessoryHSAIDBusTransport`
+- `IOAccessoryHSAIDBusTransport:%s: Exiting bus error after receiving an ACK\n`
+- `IOAccessoryHSAIDBusTransport::receiveData: Invalid short format packet length %u\n`
+- `IOAccessoryHSAIDBusTransport:%s: Received HSAID command 0x%02x\n`
+- `IOAccessoryHSAIDBusTransport:%s: %u command(s) dequeued\n`
+- `IOAccessoryHSAIDBusTransport::receiveLongFormPacket: Received packet longer than receive buffer size (%u > %u)\n`
+- `IOAccessoryHSAIDBusTransport::validateAndUpdateReceivedSequenceNumber: seqno check failed\n`
+- `site.IOAccessoryHSAIDBusTransport`
+- `IOAccessoryHSAIDBusTransport:%s: Received %u byte command\n`
+- `IOAccessoryHSAIDBusTransport:%s: Received ping packet\n`
+- `IOAccessoryHSAIDBusTransport::transmitNextPacket: startTransmit failed (%s)\n`
+- `IOAccessoryHSAIDBusTransport:%s: startTransmit failed (%s)\n`
+- `IOAccessoryHSAIDBusTransport::processSinglePacketCommand: No transmit packets available\n`
+- `IOAccessoryHSAIDBusTransport::outputCommand: Fragmented packets not supported\n`
+- `IOAccessoryHSAIDBusTransport::outputCommand: No transmit commands available\n`
+- `IOAccessoryHSAIDBusTransport::receiveLongFormPacket: Received unrecognized HSAID accessory to host command (0x%02x)\n`

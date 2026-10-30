@@ -1,0 +1,15 @@
+# `SBDashBoardTraitsOrientedContentViewController`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBTraitsOrientedContentViewController`
+- 0 instance variables, 0 properties, 5 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[SBDashBoardTraitsOrientedContentViewController viewWillDisappear:];
+-[SBDashBoardTraitsOrientedContentViewController viewWillAppear:];
+-[SBDashBoardTraitsOrientedContentViewController viewDidAppear:];
+-[SBDashBoardTraitsOrientedContentViewController viewDidDisappear:];
+-[SBDashBoardTraitsOrientedContentViewController shouldAutomaticallyForwardAppearanceMethods];
+```

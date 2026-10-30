@@ -1,0 +1,165 @@
+# `UISplitViewControllerImpl` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 23 properties, 127 instance methods, 0 class methods
+
+## Properties
+
+```
+@property (T@"UISplitViewController",R,N) splitViewController;
+@property (T@"NSArray",C,N) viewControllers;
+@property (T@"<UISplitViewControllerDelegate>",W,N) delegate;
+@property (TB,N) presentsWithGesture;
+@property (TB,R,N,GisCollapsed) collapsed;
+@property (Tq,N) preferredDisplayMode;
+@property (Td,N) preferredPrimaryColumnWidthFraction;
+@property (Td,N) minimumPrimaryColumnWidth;
+@property (Td,N) maximumPrimaryColumnWidth;
+@property (Tq,N) primaryEdge;
+@property (Tf,N) gutterWidth;
+@property (TB,N) hidesMasterViewInPortrait;
+@property (TB,N) prefersOverlayInRegularWidthPhone;
+@property (TB,N) usesDeviceOverlayPreferences;
+@property (T@"NSString",C,N,S_setDisplayModeButtonItemTitle:) _displayModeButtonItemTitle;
+@property (TB,N,S_setWantsFloatingSidebar:) _wantsFloatingSidebar;
+@property (TB,N,G_usesExtraWidePrimaryColumn,S_setUsesExtraWidePrimaryColumn:) usesExtraWidePrimaryColumn;
+@property (Tq,N) primaryBackgroundStyle;
+@property (Tq,N,S_setPrimaryOffscreenGestureMode:) _primaryOffscreenGestureMode;
+@property (Tq,R,N) style;
+@property (TB,R,N) lockedForDelegateCallback;
+@property (TB,R,N) inCollapsingToProposedTopColumnCallback;
+@property (TB,R,N) inExpandingToProposedDisplayModeCallback;
+```
+
+## Instance methods
+
+```
+-[UISplitViewControllerImpl _commonInit];
+-[UISplitViewControllerImpl _isAnimating];
+-[UISplitViewControllerImpl _preferredContentSize];
+-[UISplitViewControllerImpl splitViewController];
+-[UISplitViewControllerImpl willRotateToInterfaceOrientation:duration:];
+-[UISplitViewControllerImpl _didUpdateFocusInContext:];
+-[UISplitViewControllerImpl _setPrimaryOffscreenGestureMode:];
+-[UISplitViewControllerImpl _traitCollectionForChildEnvironment:];
+-[UISplitViewControllerImpl willAnimateRotationToInterfaceOrientation:duration:];
+-[UISplitViewControllerImpl decodeRestorableStateWithCoder:];
+-[UISplitViewControllerImpl _isExpanding];
+-[UISplitViewControllerImpl setGutterWidth:];
+-[UISplitViewControllerImpl didRotateFromInterfaceOrientation:];
+-[UISplitViewControllerImpl _nextVisibleViewControllerForResponderAfterChildViewController:];
+-[UISplitViewControllerImpl _initWithCoder:];
+-[UISplitViewControllerImpl willTransitionToTraitCollection:withTransitionCoordinator:];
+-[UISplitViewControllerImpl encodeRestorableStateWithCoder:];
+-[UISplitViewControllerImpl _shouldShowNSToolbarSidebarToggle];
+-[UISplitViewControllerImpl shouldAutorotateToInterfaceOrientation:];
+-[UISplitViewControllerImpl _primaryDividerPosition];
+-[UISplitViewControllerImpl _setUsesExtraWidePrimaryColumn:];
+-[UISplitViewControllerImpl preferredInterfaceOrientationForPresentation];
+-[UISplitViewControllerImpl prefersOverlayInRegularWidthPhone];
+-[UISplitViewControllerImpl _iPhoneShouldUseOverlayInCurrentEnvironment];
+-[UISplitViewControllerImpl _disableAutomaticKeyboardBehavior];
+-[UISplitViewControllerImpl viewWillDisappear:];
+-[UISplitViewControllerImpl _multitaskingDragExclusionRects];
+-[UISplitViewControllerImpl supportedInterfaceOrientations];
+-[UISplitViewControllerImpl _setDisplayModeButtonItemTitle:];
+-[UISplitViewControllerImpl preferredTrailingStatusBarStyle];
+-[UISplitViewControllerImpl showDetailViewController:sender:];
+-[UISplitViewControllerImpl _triggerDisplayModeAction:];
+-[UISplitViewControllerImpl toggleMasterVisible:];
+-[UISplitViewControllerImpl setPreferredDisplayMode:];
+-[UISplitViewControllerImpl _primaryOffscreenGestureMode];
+-[UISplitViewControllerImpl _updateLayoutForStatusBarAndInterfaceOrientation];
+-[UISplitViewControllerImpl displayMode];
+-[UISplitViewControllerImpl _frameForChildContentContainer:];
+-[UISplitViewControllerImpl primaryBackgroundStyle];
+-[UISplitViewControllerImpl preferredCenterStatusBarStyle];
+-[UISplitViewControllerImpl inExpandingToProposedDisplayModeCallback];
+-[UISplitViewControllerImpl maximumPrimaryColumnWidth];
+-[UISplitViewControllerImpl _layoutPrimaryOnRight];
+-[UISplitViewControllerImpl detailViewController];
+-[UISplitViewControllerImpl presentsWithGesture];
+-[UISplitViewControllerImpl _descendantWillPresentViewController:modalSourceViewController:presentationController:animated:];
+-[UISplitViewControllerImpl prefersHomeIndicatorAutoHidden];
+-[UISplitViewControllerImpl usesDeviceOverlayPreferences];
+-[UISplitViewControllerImpl _displayModeButtonItemTitle];
+-[UISplitViewControllerImpl viewDidLayoutSubviews];
+-[UISplitViewControllerImpl gutterWidth];
+-[UISplitViewControllerImpl setPresentsWithGesture:];
+-[UISplitViewControllerImpl style];
+-[UISplitViewControllerImpl setHidesMasterViewInPortrait:];
+-[UISplitViewControllerImpl inCollapsingToProposedTopColumnCallback];
+-[UISplitViewControllerImpl hidesMasterViewInPortrait];
+-[UISplitViewControllerImpl preferredScreenEdgesDeferringSystemGestures];
+-[UISplitViewControllerImpl viewWillAppear:];
+-[UISplitViewControllerImpl lockedForDelegateCallback];
+-[UISplitViewControllerImpl minimumPrimaryColumnWidth];
+-[UISplitViewControllerImpl primaryEdge];
+-[UISplitViewControllerImpl _isCollapsed];
+-[UISplitViewControllerImpl preferredDisplayMode];
+-[UISplitViewControllerImpl displayModeButtonItem];
+-[UISplitViewControllerImpl setDelegate:];
+-[UISplitViewControllerImpl showViewController:sender:];
+-[UISplitViewControllerImpl setPrimaryEdge:];
+-[UISplitViewControllerImpl viewDidAppear:];
+-[UISplitViewControllerImpl setViewControllers:];
+-[UISplitViewControllerImpl _popoverController:willChangeToVisible:];
+-[UISplitViewControllerImpl _isRotating];
+-[UISplitViewControllerImpl setUsesDeviceOverlayPreferences:];
+-[UISplitViewControllerImpl viewWillTransitionToSize:withTransitionCoordinator:];
+-[UISplitViewControllerImpl loadView];
+-[UISplitViewControllerImpl _didChangeToFirstResponder:];
+-[UISplitViewControllerImpl _deepestActionResponder];
+-[UISplitViewControllerImpl isCollapsed];
+-[UISplitViewControllerImpl _childViewControllersToSendViewWillTransitionToSize];
+-[UISplitViewControllerImpl _displayModeBarButtonItemWasUsedForFirstTime:];
+-[UISplitViewControllerImpl setMaximumPrimaryColumnWidth:];
+-[UISplitViewControllerImpl encodeWithCoder:];
+-[UISplitViewControllerImpl _additionalViewControllersToCheckForUserActivity];
+-[UISplitViewControllerImpl _shouldPersistViewWhenCoding];
+-[UISplitViewControllerImpl delegate];
+-[UISplitViewControllerImpl _primaryDimmingView];
+-[UISplitViewControllerImpl viewWillLayoutSubviews];
+-[UISplitViewControllerImpl initWithSplitViewController:];
+-[UISplitViewControllerImpl viewDidDisappear:];
+-[UISplitViewControllerImpl preferredFocusEnvironments];
+-[UISplitViewControllerImpl _inspectorDividerPosition];
+-[UISplitViewControllerImpl traitCollectionDidChange:];
+-[UISplitViewControllerImpl _didEndSnapshotSession];
+-[UISplitViewControllerImpl _willShowCollapsedDetailViewController:inTargetController:];
+-[UISplitViewControllerImpl viewControllers];
+-[UISplitViewControllerImpl masterViewController];
+-[UISplitViewControllerImpl _supplementaryDividerPosition];
+-[UISplitViewControllerImpl setPrefersOverlayInRegularWidthPhone:];
+-[UISplitViewControllerImpl preferredTrafficLightStyle];
+-[UISplitViewControllerImpl _contentSizeForChildViewController:inPopoverController:];
+-[UISplitViewControllerImpl _primaryContentResponder];
+-[UISplitViewControllerImpl _usesExtraWidePrimaryColumn];
+-[UISplitViewControllerImpl _edgeInsetsForChildViewController:insetsAreAbsolute:];
+-[UISplitViewControllerImpl preferredLeadingStatusBarStyle];
+-[UISplitViewControllerImpl setPrimaryBackgroundStyle:];
+-[UISplitViewControllerImpl _popoverController:didChangeFromVisible:];
+-[UISplitViewControllerImpl preferredPrimaryColumnWidthFraction];
+-[UISplitViewControllerImpl _allContainedViewControllers];
+-[UISplitViewControllerImpl preferredFocusedView];
+-[UISplitViewControllerImpl shouldUpdateFocusInContext:];
+-[UISplitViewControllerImpl unloadViewForced:];
+-[UISplitViewControllerImpl _wantsFloatingSidebar];
+-[UISplitViewControllerImpl setMinimumPrimaryColumnWidth:];
+-[UISplitViewControllerImpl _effectiveActivityItemsConfiguration];
+-[UISplitViewControllerImpl sizeForChildContentContainer:withParentContainerSize:];
+-[UISplitViewControllerImpl childViewControllerForStatusBarStyle];
+-[UISplitViewControllerImpl _willBeginSnapshotSession];
+-[UISplitViewControllerImpl _optsOutOfPopoverControllerHierarchyCheck];
+-[UISplitViewControllerImpl _handlesCounterRotationForPresentation];
+-[UISplitViewControllerImpl _overridingPreferredFocusEnvironment];
+-[UISplitViewControllerImpl childViewControllerForStatusBarAxis];
+-[UISplitViewControllerImpl _hasPreferredInterfaceOrientationForPresentation];
+-[UISplitViewControllerImpl _getRotationContentSettings:];
+-[UISplitViewControllerImpl setPreferredPrimaryColumnWidthFraction:];
+-[UISplitViewControllerImpl primaryColumnWidth];
+-[UISplitViewControllerImpl _setWantsFloatingSidebar:];
+-[UISplitViewControllerImpl preferredContentSizeDidChangeForChildContentContainer:];
+-[UISplitViewControllerImpl removeChildViewController:];
+```

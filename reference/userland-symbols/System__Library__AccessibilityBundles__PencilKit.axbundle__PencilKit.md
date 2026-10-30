@@ -1,0 +1,315 @@
+# Symbols: `/System/Library/AccessibilityBundles/PencilKit.axbundle/PencilKit`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__AccessibilityBundles__PencilKit.axbundle__PencilKit.md). **[DSC]**
+
+121 public symbols, 178 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1ee2ec768  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXPencilKitGlue
+0x1ee2ec6c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CHTextInputGestureAccessibility
+0x1ee2ec6a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKCanvasViewAccessibility
+0x1ee2ec740  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKColorMatrixViewAccessibility
+0x1ef4e3050  __AUTH,__objc_data  _OBJC_CLASS_$_PKDrawingPaletteInputAssistantViewAccessibility
+0x1ee2ec678  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaletteAdditionalOptionsViewAccessibility
+0x1ef4e2fb0  __AUTH,__objc_data  _OBJC_CLASS_$_PKPaletteAttributeViewControllerAccessibility
+0x1ee2ec650  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaletteButtonAccessibility
+0x1ee2ec628  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaletteColorSwatchAccessibility
+0x1ee2eba20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaletteContainerViewAccessibility
+0x1ee2ec600  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaletteContentViewAccessibility
+0x1ee2eb9f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaletteDictationBarButtonAccessibility
+0x1ee2eb9d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaletteDragHandleViewAccessibility
+0x1ee2ec5d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaletteHostViewAccessibility
+0x1ee2ec5b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaletteInkingToolViewAccessibility
+0x1ee2eb9a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaletteMoreOptionsViewControllerAccessibility
+0x1ee2eb980  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaletteOptionSwitchCellAccessibility
+0x1ee2ec588  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaletteReturnKeyButtonAccessibility
+0x1ee2ec560  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaletteToolViewAccessibility
+0x1ee2ec538  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaletteUndoRedoViewAccessibility
+0x1ee2ec510  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKPaletteViewAccessibility
+0x1ee2ec4e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKRulerViewAccessibility
+0x1ee2ebb60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSqueezePaletteButtonFactoryAccessibility
+0x1ee2eb700  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSqueezePaletteIntelligenceLightFactoryAccessibility
+0x1ee2ebb38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKSqueezePaletteMulticolorSwatchButtonAccessibility
+0x1ee2ec4c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKStrokeAccessibility
+0x1ee2ec498  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PKTextInputHandwritingShotAccessibility
+0x1ee2ec718  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__PKColorAlphaSliderIOSAccessibility
+0x1ee2ec470  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__PKInkThicknessButtonAccessibility
+0x1ee2ec448  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__PKInkThicknessPickerAccessibility
+0x1ee2ec420  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CHTextInputGestureAccessibility_super
+0x1ee2ec3f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKCanvasViewAccessibility_super
+0x1ee2ec3d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKColorMatrixViewAccessibility_super
+0x1ef4e3028  __AUTH,__objc_data  _OBJC_CLASS_$___PKDrawingPaletteInputAssistantViewAccessibility_super
+0x1ee2ec3a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKPaletteAdditionalOptionsViewAccessibility_super
+0x1ef4e2f88  __AUTH,__objc_data  _OBJC_CLASS_$___PKPaletteAttributeViewControllerAccessibility_super
+0x1ee2ec380  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKPaletteButtonAccessibility_super
+0x1ee2ec358  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKPaletteColorSwatchAccessibility_super
+0x1ee2eb958  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKPaletteContainerViewAccessibility_super
+0x1ee2ec330  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKPaletteContentViewAccessibility_super
+0x1ee2eb930  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKPaletteDictationBarButtonAccessibility_super
+0x1ee2eb908  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKPaletteDragHandleViewAccessibility_super
+0x1ee2ec308  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKPaletteHostViewAccessibility_super
+0x1ee2ec2e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKPaletteInkingToolViewAccessibility_super
+0x1ee2eb8e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKPaletteMoreOptionsViewControllerAccessibility_super
+0x1ee2eb8b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKPaletteOptionSwitchCellAccessibility_super
+0x1ee2ec2b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKPaletteReturnKeyButtonAccessibility_super
+0x1ee2ec290  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKPaletteToolViewAccessibility_super
+0x1ee2ec268  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKPaletteUndoRedoViewAccessibility_super
+0x1ee2ec240  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKPaletteViewAccessibility_super
+0x1ee2ec218  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKRulerViewAccessibility_super
+0x1ee2ebb10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKSqueezePaletteButtonFactoryAccessibility_super
+0x1ee2eb6d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKSqueezePaletteIntelligenceLightFactoryAccessibility_super
+0x1ee2ebae8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKSqueezePaletteMulticolorSwatchButtonAccessibility_super
+0x1ee2ec1f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKStrokeAccessibility_super
+0x1ee2ec1c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PKTextInputHandwritingShotAccessibility_super
+0x1ee2ebbd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$____PKColorAlphaSliderIOSAccessibility_super
+0x1ee2ec1a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$____PKInkThicknessButtonAccessibility_super
+0x1ee2ec178  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$____PKInkThicknessPickerAccessibility_super
+0x1ee2ec790  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXPencilKitGlue
+0x1ee2ec150  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CHTextInputGestureAccessibility
+0x1ee2ec128  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKCanvasViewAccessibility
+0x1ee2ec100  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKColorMatrixViewAccessibility
+0x1ef4e3078  __AUTH,__objc_data  _OBJC_METACLASS_$_PKDrawingPaletteInputAssistantViewAccessibility
+0x1ee2ec0d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaletteAdditionalOptionsViewAccessibility
+0x1ef4e2fd8  __AUTH,__objc_data  _OBJC_METACLASS_$_PKPaletteAttributeViewControllerAccessibility
+0x1ee2ec0b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaletteButtonAccessibility
+0x1ee2ec088  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaletteColorSwatchAccessibility
+0x1ee2eb890  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaletteContainerViewAccessibility
+0x1ee2ec060  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaletteContentViewAccessibility
+0x1ee2eb868  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaletteDictationBarButtonAccessibility
+0x1ee2eb840  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaletteDragHandleViewAccessibility
+0x1ee2ec038  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaletteHostViewAccessibility
+0x1ee2ec010  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaletteInkingToolViewAccessibility
+0x1ee2eb818  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaletteMoreOptionsViewControllerAccessibility
+0x1ee2eb7f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaletteOptionSwitchCellAccessibility
+0x1ee2ebfe8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaletteReturnKeyButtonAccessibility
+0x1ee2ebfc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaletteToolViewAccessibility
+0x1ee2ebf98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaletteUndoRedoViewAccessibility
+0x1ee2ebf70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKPaletteViewAccessibility
+0x1ee2ebf48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKRulerViewAccessibility
+0x1ee2ebac0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKSqueezePaletteButtonFactoryAccessibility
+0x1ee2eb6b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKSqueezePaletteIntelligenceLightFactoryAccessibility
+0x1ee2eba98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKSqueezePaletteMulticolorSwatchButtonAccessibility
+0x1ee2ebf20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKStrokeAccessibility
+0x1ee2ebef8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PKTextInputHandwritingShotAccessibility
+0x1ee2ebbb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__PKColorAlphaSliderIOSAccessibility
+0x1ee2ebed0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__PKInkThicknessButtonAccessibility
+0x1ee2ebea8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__PKInkThicknessPickerAccessibility
+0x1ee2ebe80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CHTextInputGestureAccessibility_super
+0x1ee2ebe58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKCanvasViewAccessibility_super
+0x1ee2ec6f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKColorMatrixViewAccessibility_super
+0x1ef4e3000  __AUTH,__objc_data  _OBJC_METACLASS_$___PKDrawingPaletteInputAssistantViewAccessibility_super
+0x1ee2ebe30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKPaletteAdditionalOptionsViewAccessibility_super
+0x1ef4e2f60  __AUTH,__objc_data  _OBJC_METACLASS_$___PKPaletteAttributeViewControllerAccessibility_super
+0x1ee2ebe08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKPaletteButtonAccessibility_super
+0x1ee2ebde0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKPaletteColorSwatchAccessibility_super
+0x1ee2eb7c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKPaletteContainerViewAccessibility_super
+0x1ee2ebdb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKPaletteContentViewAccessibility_super
+0x1ee2eb7a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKPaletteDictationBarButtonAccessibility_super
+0x1ee2eb778  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKPaletteDragHandleViewAccessibility_super
+0x1ee2ebd90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKPaletteHostViewAccessibility_super
+0x1ee2ebd68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKPaletteInkingToolViewAccessibility_super
+0x1ee2eb750  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKPaletteMoreOptionsViewControllerAccessibility_super
+0x1ee2eb728  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKPaletteOptionSwitchCellAccessibility_super
+0x1ee2ebd40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKPaletteReturnKeyButtonAccessibility_super
+0x1ee2ebd18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKPaletteToolViewAccessibility_super
+0x1ee2ebcf0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKPaletteUndoRedoViewAccessibility_super
+0x1ee2ebcc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKPaletteViewAccessibility_super
+0x1ee2ebca0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKRulerViewAccessibility_super
+0x1ee2eba70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKSqueezePaletteButtonFactoryAccessibility_super
+0x1ee2eb688  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKSqueezePaletteIntelligenceLightFactoryAccessibility_super
+0x1ee2eba48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKSqueezePaletteMulticolorSwatchButtonAccessibility_super
+0x1ee2ebc78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKStrokeAccessibility_super
+0x1ee2ebc50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PKTextInputHandwritingShotAccessibility_super
+0x1ee2ebb88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$____PKColorAlphaSliderIOSAccessibility_super
+0x1ee2ebc28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$____PKInkThicknessButtonAccessibility_super
+0x1ee2ebc00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$____PKInkThicknessPickerAccessibility_super
+0x189d80468  __TEXT,__text  _accessibilityNameForInkIdentifier
+0x189d803d4  __TEXT,__text  _accessibilityPencilKitLocalizedString
+0x189d805a0  __TEXT,__text  _accessibilityPencilKitNameForWeight
+```
+
+## Private
+
+```
+0x189d800a0  __TEXT,__text  +[AXPencilKitGlue accessibilityInitializeBundle]
+0x189d800c8  __TEXT,__text  ___48+[AXPencilKitGlue accessibilityInitializeBundle]_block_invoke
+0x189d80120  __TEXT,__text  ___48+[AXPencilKitGlue accessibilityInitializeBundle]_block_invoke_2
+0x189d80128  __TEXT,__text  ___48+[AXPencilKitGlue accessibilityInitializeBundle]_block_invoke_3
+0x189d8017c  __TEXT,__text  ___48+[AXPencilKitGlue accessibilityInitializeBundle]_block_invoke_4
+0x189d806a8  __TEXT,__text  +[PKPaletteMoreOptionsViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d806b4  __TEXT,__text  +[PKPaletteMoreOptionsViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d806c0  __TEXT,__text  +[PKPaletteMoreOptionsViewControllerAccessibility _accessibilityPerformValidations:]
+0x189d806d8  __TEXT,__text  -[PKPaletteMoreOptionsViewControllerAccessibility viewDidLoad]
+0x189d80788  __TEXT,__text  +[PKPaletteDictationBarButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d80794  __TEXT,__text  +[PKPaletteDictationBarButtonAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d807a0  __TEXT,__text  +[PKPaletteDictationBarButtonAccessibility _accessibilityPerformValidations:]
+0x189d807a4  __TEXT,__text  -[PKPaletteDictationBarButtonAccessibility isAccessibilityElement]
+0x189d807ac  __TEXT,__text  -[PKPaletteDictationBarButtonAccessibility accessibilityLabel]
+0x189d807b8  __TEXT,__text  -[PKPaletteDictationBarButtonAccessibility accessibilityTraits]
+0x189d80800  __TEXT,__text  +[PKPaletteOptionSwitchCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d8080c  __TEXT,__text  +[PKPaletteOptionSwitchCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d80818  __TEXT,__text  +[PKPaletteOptionSwitchCellAccessibility _accessibilityPerformValidations:]
+0x189d80888  __TEXT,__text  -[PKPaletteOptionSwitchCellAccessibility isAccessibilityElement]
+0x189d80890  __TEXT,__text  -[PKPaletteOptionSwitchCellAccessibility accessibilityLabel]
+0x189d808d8  __TEXT,__text  -[PKPaletteOptionSwitchCellAccessibility accessibilityValue]
+0x189d80918  __TEXT,__text  -[PKPaletteOptionSwitchCellAccessibility accessibilityTraits]
+0x189d80950  __TEXT,__text  -[PKPaletteOptionSwitchCellAccessibility accessibilityActivationPoint]
+0x189d80998  __TEXT,__text  -[PKPaletteOptionSwitchCellAccessibility _axSwitchButton]
+0x189d809a4  __TEXT,__text  +[PKSqueezePaletteMulticolorSwatchButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d809b0  __TEXT,__text  +[PKSqueezePaletteMulticolorSwatchButtonAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d809bc  __TEXT,__text  +[PKSqueezePaletteMulticolorSwatchButtonAccessibility _accessibilityPerformValidations:]
+0x189d809dc  __TEXT,__text  -[PKSqueezePaletteMulticolorSwatchButtonAccessibility accessibilityLabel]
+0x189d80a24  __TEXT,__text  -[PKSqueezePaletteMulticolorSwatchButtonAccessibility accessibilityValue]
+0x189d80a6c  __TEXT,__text  +[PKSqueezePaletteButtonFactoryAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d80a78  __TEXT,__text  +[PKSqueezePaletteButtonFactoryAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d80a84  __TEXT,__text  +[PKSqueezePaletteButtonFactoryAccessibility _accessibilityPerformValidations:]
+0x189d80b68  __TEXT,__text  -[PKSqueezePaletteButtonFactoryAccessibility makeBackButton]
+0x189d80bdc  __TEXT,__text  -[PKSqueezePaletteButtonFactoryAccessibility makeTextBoxButton]
+0x189d80c50  __TEXT,__text  -[PKSqueezePaletteButtonFactoryAccessibility makeSignatureButton]
+0x189d80cc4  __TEXT,__text  -[PKSqueezePaletteButtonFactoryAccessibility makeShapesButton]
+0x189d80d38  __TEXT,__text  -[PKSqueezePaletteButtonFactoryAccessibility makeStickersButton]
+0x189d80dac  __TEXT,__text  -[PKSqueezePaletteButtonFactoryAccessibility makeGearButton]
+0x189d80e20  __TEXT,__text  +[PKSqueezePaletteIntelligenceLightFactoryAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d80e2c  __TEXT,__text  +[PKSqueezePaletteIntelligenceLightFactoryAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d80e38  __TEXT,__text  +[PKSqueezePaletteIntelligenceLightFactoryAccessibility _accessibilityPerformValidations:]
+0x189d80e7c  __TEXT,__text  +[PKSqueezePaletteIntelligenceLightFactoryAccessibility makeIntelligenceButtonWithConfiguration:primaryAction:]
+0x189d80ef0  __TEXT,__text  +[PKPaletteButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d80efc  __TEXT,__text  +[PKPaletteButtonAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d80f08  __TEXT,__text  +[PKPaletteButtonAccessibility _accessibilityPerformValidations:]
+0x189d80f0c  __TEXT,__text  -[PKPaletteButtonAccessibility accessibilityLabel]
+0x189d8105c  __TEXT,__text  -[PKPaletteButtonAccessibility isAccessibilityElement]
+0x189d81064  __TEXT,__text  -[PKPaletteButtonAccessibility accessibilityTraits]
+0x189d810ac  __TEXT,__text  +[PKTextInputHandwritingShotAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d810b8  __TEXT,__text  +[PKTextInputHandwritingShotAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d810c4  __TEXT,__text  +[PKTextInputHandwritingShotAccessibility _accessibilityPerformValidations:]
+0x189d81110  __TEXT,__text  -[PKTextInputHandwritingShotAccessibility _shouldTargetFirstResponderElement:strokeIdentifiers:]
+0x189d81198  __TEXT,__text  +[CHTextInputGestureAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d811a4  __TEXT,__text  +[CHTextInputGestureAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d811b0  __TEXT,__text  +[CHTextInputGestureAccessibility _accessibilityPerformValidations:]
+0x189d81204  __TEXT,__text  +[CHTextInputGestureAccessibility isEditGestureForDrawing:targetContentInfo:tentativeResultType:]
+0x189d81294  __TEXT,__text  +[PKStrokeAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d812a0  __TEXT,__text  +[PKStrokeAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d812ac  __TEXT,__text  +[PKStrokeAccessibility _accessibilityPerformValidations:]
+0x189d81320  __TEXT,__text  +[PKStrokeAccessibility _isSerializableAccessibilityElement]
+0x189d81328  __TEXT,__text  -[PKStrokeAccessibility dealloc]
+0x189d81384  __TEXT,__text  -[PKStrokeAccessibility isAccessibilityElement]
+0x189d8138c  __TEXT,__text  -[PKStrokeAccessibility accessibilityFrame]
+0x189d81430  __TEXT,__text  -[PKStrokeAccessibility accessibilityLabel]
+0x189d81594  __TEXT,__text  +[PKCanvasViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d815a0  __TEXT,__text  +[PKCanvasViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d815ac  __TEXT,__text  +[PKCanvasViewAccessibility _accessibilityPerformValidations:]
+0x189d81620  __TEXT,__text  -[PKCanvasViewAccessibility accessibilityElements]
+0x189d81670  __TEXT,__text  +[PKPaletteDragHandleViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d8167c  __TEXT,__text  +[PKPaletteDragHandleViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d81688  __TEXT,__text  +[PKPaletteDragHandleViewAccessibility _accessibilityPerformValidations:]
+0x189d8168c  __TEXT,__text  -[PKPaletteDragHandleViewAccessibility isAccessibilityElement]
+0x189d81694  __TEXT,__text  -[PKPaletteDragHandleViewAccessibility accessibilityLabel]
+0x189d816a0  __TEXT,__text  -[PKPaletteDragHandleViewAccessibility accessibilityTraits]
+0x189d816b0  __TEXT,__text  -[PKPaletteDragHandleViewAccessibility accessibilityHint]
+0x189d816bc  __TEXT,__text  +[PKPaletteContainerViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d816c8  __TEXT,__text  +[PKPaletteContainerViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d816d4  __TEXT,__text  +[PKPaletteContainerViewAccessibility _accessibilityPerformValidations:]
+0x189d8175c  __TEXT,__text  -[PKPaletteContainerViewAccessibility _accessibilityHitTest:withEvent:]
+0x189d81864  __TEXT,__text  +[PKPaletteAttributeViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d81870  __TEXT,__text  +[PKPaletteAttributeViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d8187c  __TEXT,__text  +[PKPaletteAttributeViewControllerAccessibility _accessibilityPerformValidations:]
+0x189d81894  __TEXT,__text  -[PKPaletteAttributeViewControllerAccessibility viewDidAppear:]
+0x189d81930  __TEXT,__text  +[PKPaletteAdditionalOptionsViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d8193c  __TEXT,__text  +[PKPaletteAdditionalOptionsViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d81948  __TEXT,__text  +[PKPaletteAdditionalOptionsViewAccessibility _accessibilityPerformValidations:]
+0x189d819bc  __TEXT,__text  -[PKPaletteAdditionalOptionsViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d81ad4  __TEXT,__text  -[PKPaletteAdditionalOptionsViewAccessibility layoutSubviews]
+0x189d81b20  __TEXT,__text  -[PKPaletteAdditionalOptionsViewAccessibility isAccessibilityElement]
+0x189d81b28  __TEXT,__text  +[PKPaletteColorSwatchAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d81b34  __TEXT,__text  +[PKPaletteColorSwatchAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d81b40  __TEXT,__text  +[PKPaletteColorSwatchAccessibility _accessibilityPerformValidations:]
+0x189d81c0c  __TEXT,__text  -[PKPaletteColorSwatchAccessibility isAccessibilityElement]
+0x189d81c14  __TEXT,__text  -[PKPaletteColorSwatchAccessibility accessibilityTraits]
+0x189d81c98  __TEXT,__text  -[PKPaletteColorSwatchAccessibility accessibilityLabel]
+0x189d81df8  __TEXT,__text  -[PKPaletteColorSwatchAccessibility accessibilityValue]
+0x189d81f4c  __TEXT,__text  +[PKPaletteContentViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d81f58  __TEXT,__text  +[PKPaletteContentViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d81f64  __TEXT,__text  +[PKPaletteContentViewAccessibility _accessibilityPerformValidations:]
+0x189d82084  __TEXT,__text  -[PKPaletteContentViewAccessibility accessibilityElements]
+0x189d822cc  __TEXT,__text  +[PKPaletteHostViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d822d8  __TEXT,__text  +[PKPaletteHostViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d822e4  __TEXT,__text  +[PKPaletteHostViewAccessibility _accessibilityPerformValidations:]
+0x189d82380  __TEXT,__text  -[PKPaletteHostViewAccessibility accessibilityElementsHidden]
+0x189d823a4  __TEXT,__text  -[PKPaletteHostViewAccessibility _accessibilityHitTest:withEvent:]
+0x189d82464  __TEXT,__text  -[PKPaletteHostViewAccessibility _dockPaletteToPosition:animated:]
+0x189d824f8  __TEXT,__text  -[PKPaletteHostViewAccessibility _axToolPaletteLocationAlongEdge:]
+0x189d82598  __TEXT,__text  -[PKPaletteHostViewAccessibility _axToolPaletteLocationAtCorner:]
+0x189d82618  __TEXT,__text  +[PKPaletteInkingToolViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d82624  __TEXT,__text  +[PKPaletteInkingToolViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d82630  __TEXT,__text  +[PKPaletteInkingToolViewAccessibility _accessibilityPerformValidations:]
+0x189d826a4  __TEXT,__text  -[PKPaletteInkingToolViewAccessibility accessibilityValue]
+0x189d82814  __TEXT,__text  +[PKPaletteToolViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d82820  __TEXT,__text  +[PKPaletteToolViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d8282c  __TEXT,__text  +[PKPaletteToolViewAccessibility _accessibilityPerformValidations:]
+0x189d82908  __TEXT,__text  -[PKPaletteToolViewAccessibility _axToolPicker]
+0x189d82968  __TEXT,__text  -[PKPaletteToolViewAccessibility isAccessibilityElement]
+0x189d82970  __TEXT,__text  -[PKPaletteToolViewAccessibility accessibilityLabel]
+0x189d82a08  __TEXT,__text  -[PKPaletteToolViewAccessibility accessibilityTraits]
+0x189d82ab0  __TEXT,__text  -[PKPaletteToolViewAccessibility accessibilityValue]
+0x189d82bb0  __TEXT,__text  -[PKPaletteToolViewAccessibility accessibilityHint]
+0x189d82c4c  __TEXT,__text  +[PKPaletteUndoRedoViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d82c58  __TEXT,__text  +[PKPaletteUndoRedoViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d82c64  __TEXT,__text  +[PKPaletteUndoRedoViewAccessibility _accessibilityPerformValidations:]
+0x189d82d3c  __TEXT,__text  -[PKPaletteUndoRedoViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d82f60  __TEXT,__text  ___80-[PKPaletteUndoRedoViewAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke
+0x189d83030  __TEXT,__text  ___80-[PKPaletteUndoRedoViewAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_2
+0x189d83100  __TEXT,__text  -[PKPaletteUndoRedoViewAccessibility initWithFrame:]
+0x189d83158  __TEXT,__text  +[PKPaletteViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d83164  __TEXT,__text  +[PKPaletteViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d83170  __TEXT,__text  +[PKPaletteViewAccessibility _accessibilityPerformValidations:]
+0x189d831b8  __TEXT,__text  -[PKPaletteViewAccessibility dismissPalettePopoverWithCompletion:]
+0x189d83228  __TEXT,__text  +[_PKColorAlphaSliderIOSAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d83234  __TEXT,__text  +[_PKColorAlphaSliderIOSAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d83240  __TEXT,__text  +[_PKColorAlphaSliderIOSAccessibility _accessibilityPerformValidations:]
+0x189d83300  __TEXT,__text  -[_PKColorAlphaSliderIOSAccessibility isAccessibilityElement]
+0x189d83308  __TEXT,__text  -[_PKColorAlphaSliderIOSAccessibility accessibilityLabel]
+0x189d83314  __TEXT,__text  -[_PKColorAlphaSliderIOSAccessibility _accessibilityColorAlpha]
+0x189d833bc  __TEXT,__text  -[_PKColorAlphaSliderIOSAccessibility _accessibilitySetColorAlpha:]
+0x189d834cc  __TEXT,__text  ___67-[_PKColorAlphaSliderIOSAccessibility _accessibilitySetColorAlpha:]_block_invoke
+0x189d834d8  __TEXT,__text  -[_PKColorAlphaSliderIOSAccessibility accessibilityValue]
+0x189d834fc  __TEXT,__text  -[_PKColorAlphaSliderIOSAccessibility accessibilityTraits]
+0x189d83544  __TEXT,__text  -[_PKColorAlphaSliderIOSAccessibility accessibilityIncrement]
+0x189d83584  __TEXT,__text  -[_PKColorAlphaSliderIOSAccessibility accessibilityDecrement]
+0x189d835c8  __TEXT,__text  -[_PKColorAlphaSliderIOSAccessibility accessibilityActivationPoint]
+0x189d83618  __TEXT,__text  -[_PKColorAlphaSliderIOSAccessibility didPanSliderKnob:]
+0x189d836b4  __TEXT,__text  +[PKRulerViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d836c0  __TEXT,__text  +[PKRulerViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d836cc  __TEXT,__text  +[PKRulerViewAccessibility _accessibilityPerformValidations:]
+0x189d836d0  __TEXT,__text  -[PKRulerViewAccessibility isAccessibilityElement]
+0x189d836d8  __TEXT,__text  -[PKRulerViewAccessibility accessibilityLabel]
+0x189d836e4  __TEXT,__text  +[PKDrawingPaletteInputAssistantViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d836f0  __TEXT,__text  +[PKDrawingPaletteInputAssistantViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d836fc  __TEXT,__text  +[PKDrawingPaletteInputAssistantViewAccessibility _accessibilityPerformValidations:]
+0x189d83770  __TEXT,__text  -[PKDrawingPaletteInputAssistantViewAccessibility accessibilityElements]
+0x189d837f8  __TEXT,__text  +[PKPaletteReturnKeyButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d83804  __TEXT,__text  +[PKPaletteReturnKeyButtonAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d83810  __TEXT,__text  +[PKPaletteReturnKeyButtonAccessibility _accessibilityPerformValidations:]
+0x189d838a0  __TEXT,__text  -[PKPaletteReturnKeyButtonAccessibility isAccessibilityElement]
+0x189d838a8  __TEXT,__text  -[PKPaletteReturnKeyButtonAccessibility accessibilityLabel]
+0x189d83944  __TEXT,__text  -[PKPaletteReturnKeyButtonAccessibility accessibilityTraits]
+0x189d8398c  __TEXT,__text  +[_PKInkThicknessButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d83998  __TEXT,__text  +[_PKInkThicknessButtonAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d839a4  __TEXT,__text  +[_PKInkThicknessButtonAccessibility _accessibilityPerformValidations:]
+0x189d83a08  __TEXT,__text  -[_PKInkThicknessButtonAccessibility isAccessibilityElement]
+0x189d83a4c  __TEXT,__text  -[_PKInkThicknessButtonAccessibility accessibilityLabel]
+0x189d83a58  __TEXT,__text  -[_PKInkThicknessButtonAccessibility _axPKPaletteErasingAttributesView]
+0x189d83a90  __TEXT,__text  +[_PKInkThicknessPickerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d83a9c  __TEXT,__text  +[_PKInkThicknessPickerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d83aa8  __TEXT,__text  +[_PKInkThicknessPickerAccessibility _accessibilityPerformValidations:]
+0x189d83b1c  __TEXT,__text  -[_PKInkThicknessPickerAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d83d60  __TEXT,__text  -[_PKInkThicknessPickerAccessibility layoutSubviews]
+0x189d83dac  __TEXT,__text  +[PKColorMatrixViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189d83db8  __TEXT,__text  +[PKColorMatrixViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189d83dc4  __TEXT,__text  +[PKColorMatrixViewAccessibility _accessibilityPerformValidations:]
+0x189d83e94  __TEXT,__text  -[PKColorMatrixViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x189d8403c  __TEXT,__text  -[PKColorMatrixViewAccessibility initWithFrame:]
+0x189d8408c  __TEXT,__text  -[PKColorMatrixViewAccessibility didTapColorButton:]
+```
+

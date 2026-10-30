@@ -1,0 +1,31 @@
+# `SBMenuBarSystemService`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `SBSystemServiceServerMenuBarDelegate`
+- 1 instance variables, 4 properties, 5 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"FBServiceClientAuthenticator" _menuBarVisibilityRequestAuthenticator;
+```
+
+## Properties
+
+```
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[SBMenuBarSystemService init];
+-[SBMenuBarSystemService _queryMenuBarSupportedForClient:withCompletion:];
+-[SBMenuBarSystemService _toggleMenuBarVisibilityForClient:];
+-[SBMenuBarSystemService systemServiceServer:queryMenuBarSupportedForClient:withCompletion:];
+-[SBMenuBarSystemService systemServiceServer:toggleMenuBarVisibilityForClient:];
+```

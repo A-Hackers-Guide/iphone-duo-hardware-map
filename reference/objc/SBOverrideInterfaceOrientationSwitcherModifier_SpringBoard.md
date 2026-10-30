@@ -1,0 +1,20 @@
+# `SBOverrideInterfaceOrientationSwitcherModifier`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBSwitcherModifier`
+- 1 instance variables, 0 properties, 4 instance methods, 0 class methods
+
+## Instance variables
+
+```
+q _orientation;
+```
+
+## Instance methods
+
+```
+-[SBOverrideInterfaceOrientationSwitcherModifier switcherViewBounds];
+-[SBOverrideInterfaceOrientationSwitcherModifier switcherInterfaceOrientation];
+-[SBOverrideInterfaceOrientationSwitcherModifier containerViewBounds];
+-[SBOverrideInterfaceOrientationSwitcherModifier initWithInterfaceOrientation:];
+```

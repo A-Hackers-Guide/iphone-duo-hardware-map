@@ -1,0 +1,20000 @@
+# `/System/Library/FDR/FDRSealingMap.plist`
+
+From the erase/recovery restore ramdisk (141-28940-105.dmg, runs restored_external). 110,332 bytes.
+
+- `00e6bc4905a958cb0382d334aa6330273c36b877`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `4096`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateVersion1`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+- `0ac5773f7883fdce0cf94de5a9a1fd4a518dda47`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `ChallengeClaim`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `CtCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcii`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcve`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pmpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvi`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `preg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcic`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pbas`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pdcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pwcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `RosalineSerialNumber`
+    - `Tag`: `pfcl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rMCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `rCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ScreenSerialNumber`
+      - `TopModuleAuthChipID`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ScreenSerialNumber`
+      - `TopModuleAuthChipID`
+    - `Tag`: `GpCl`
+- `0e61ec444f65e8fedf51035cb96a9d9f85beb3ba`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `MultiDataInstanceIdentifierList`:
+      - `MultiLynxSerialNumberArray`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+- `128929749fb5ed90cb09230c4d47941b2593447f`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:YonkersIR1ChipID`
+      - `ZG:YonkersIR1UID`
+    - `Tag`: `ycrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:YonkersIR1ChipID`
+      - `ZG:YonkersIR1UID`
+    - `Tag`: `prpc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:YonkersIR1ChipID`
+      - `ZG:YonkersIR1UID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PvCt`
+    - `Tag`: `CmCt`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlex`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlin`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnm`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlpq`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlps`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlsk`
+    - `Tag`: `JpCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`: `[]`
+        - `Tag`: `NvTh`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `NvTM`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `NvFc`
+    - `Tag`: `NBCl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `SCfT`
+  -
+    - `AsidSubCCIdOptionalVerifyList`:
+      - `ZG:ProxSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcic`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcii`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbas`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pmpc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pdcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `psnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pwcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbsc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `PxCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `asid`
+    - `Tag`: `PlCl`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd3`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `prpc`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMUB`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMNB`
+    - `Tag`: `rMC2`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `AssemblyIdentifierList`:
+      - `RearFacingCameraModuleSerialNumber`
+      - `RearFacingSuperWideCameraModuleSerialNumber`
+      - `RearFacingTelephotoCameraModuleSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:BackSuperWideCameraSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `DPCd`
+      -
+        - `Attributes`: `[]`
+        - `Tag`: `DPCm`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `CALm`
+    - `Tag`: `CmPM`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:BackTeleCameraSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `DPCd`
+      -
+        - `Attributes`: `[]`
+        - `Tag`: `CALm`
+    - `Tag`: `CmPM`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ecrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `MinimalSealingManifest`:
+      -
+        - `Attributes`:
+          - `Aries`
+          - `GeneratedByRestore`
+          - `RequiredToSeal`
+        - `DataInstanceIdentifierList`:
+          - `SavageChipID`
+          - `SavageUID`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `eUICC`
+        - `DataInstanceIdentifierList`:
+          - `ZG:EUICCPairingIdentifier`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `AllowSikPubMissingWhenUnseal`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SikOverride`: `ZG:CentauriSikPub`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `UniqueDeviceID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+    - `Tag`: `bCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+    - `Tag`: `cCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ScreenSerialNumber18d`
+      - `ZG:MogulIDSNTopModule`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `WFCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BTCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `W2CS`
+    - `Tag`: `BWC3`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `YonkersChipID`
+      - `YonkersUID`
+    - `Tag`: `ycrt`
+- `17563e5ee07598f929d9373448e01d3b457efe82`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ScreenSerialNumber`
+    - `Tag`: `ADCL`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlin`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlsk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlex`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnm`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlps`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlpq`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcii`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcve`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pmpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvi`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `preg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcic`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pbas`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pdcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pwcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `RosalineSerialNumber`
+    - `Tag`: `pfcl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateVersion1`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ScreenSerialNumber`
+    - `Tag`: `GpC2`
+- `187a89ee2ce62b2ba7daaeb002ea8f09a50dd476`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `4096`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+- `1aa2cf30ef48efd95aac9f02ffc9b0263e372118`:
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `LocalCopyForceBootedOSTrustObject`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `ADCL`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlex`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlin`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnm`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlpq`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlps`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlsk`
+    - `Tag`: `JpCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcic`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcii`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbas`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pmpc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pdcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `psnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pwcl`
+    - `Tag`: `PlCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccessMultiData`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `EarlyAccessMultiData`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `EarlyAccessMultiData`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorRearSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ScreenSerialNumber18d`
+      - `ZG:MogulIDSNTopModule`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+- `1c0f66f8d34306dae7135a6c9f63568c5e1193d0`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+- `20d0fc2599afd4eac5ab0b850ccb0110bc174590`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `ChallengeClaim`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlin`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlsk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlex`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnm`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlps`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlpq`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcii`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcve`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pmpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvi`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcic`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pbas`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pdcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pwcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psnv`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rMCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `AssemblyIdentifierList`:
+      - `RearFacingCameraModuleSerialNumber`
+      - `RearFacingSuperWideCameraModuleSerialNumber`
+      - `RearFacingTelephotoCameraModuleSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateVersion1`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ScreenSerialNumber`
+      - `TopModuleAuthChipID`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+- `226005ff26c457852c5e74a86e9ec1693ae11015`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `4096`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+- `246253df7581841e5c4dd6fa53eb775e1c33e856`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `bcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `CtCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `4096`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `NvMR`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `rCfg`
+- `2681a71945228ed01e9fe1b30d72faafdd68df06`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BM00`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BM01`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BM02`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BM03`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BM04`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BM06`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `CR00`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `CR01`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `CR10`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `CR11`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `CR20`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `CR21`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `CR30`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `CR31`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `IOB0`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `IOB1`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `IOB2`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N000`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N001`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N002`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N003`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N005`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N010`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N011`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N012`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N013`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N015`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N020`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N021`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N022`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N023`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N025`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N030`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N031`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N032`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N033`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N035`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N040`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N041`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N042`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N043`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N045`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N050`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N051`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N052`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N053`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N055`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N060`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N061`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N062`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N063`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N065`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N070`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N071`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N072`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N073`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N075`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N100`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N101`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N102`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N103`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N105`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N110`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N111`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N112`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N113`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N115`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N120`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N121`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N122`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N123`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N125`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N130`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N131`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N132`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N133`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N135`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N140`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N141`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N142`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N143`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N145`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N150`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N151`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N152`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N153`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N155`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N160`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N161`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N162`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N163`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N165`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N170`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N171`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N172`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N173`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N175`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N200`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N201`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N202`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N203`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N205`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N210`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N211`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N212`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N213`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N215`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N220`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N221`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N222`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N223`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N225`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N230`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N231`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N232`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N233`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N235`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N240`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N241`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N242`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N243`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N245`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N250`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N251`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N252`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N253`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N255`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N260`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N261`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N262`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N263`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N265`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N270`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N271`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N272`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N273`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N275`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N300`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N301`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N302`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N303`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N305`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N310`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N311`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N312`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N313`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N315`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N320`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N321`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N322`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N323`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N325`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N330`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N331`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N332`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N333`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N335`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N340`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N341`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N342`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N343`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N345`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N350`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N351`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N352`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N353`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N355`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N360`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N361`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N362`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N363`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N365`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N370`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N371`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N372`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N373`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N375`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N400`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N401`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N402`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N403`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N405`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N410`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N411`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N412`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N413`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N415`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N420`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N421`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N422`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N423`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N425`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N430`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N431`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N432`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N433`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N435`
+    - `Tag`: `ChMf`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `SCfT`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+- `29d75c3c0ed2673d304d4fde3ea15a6387219109`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `ChallengeClaim`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`: `[]`
+        - `Tag`: `NvTh`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `NvTM`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `NvFc`
+    - `Tag`: `NBCl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `SCfT`
+  -
+    - `AsidSubCCIdOptionalVerifyList`:
+      - `ZG:ProxSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcic`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcii`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbas`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pmpc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pdcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `psnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pwcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `PxCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `asid`
+    - `Tag`: `PlCl`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd3`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `prpc`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMUB`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMNB`
+    - `Tag`: `rMC2`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `AssemblyIdentifierList`:
+      - `RearFacingCameraModuleSerialNumber`
+      - `RearFacingSuperWideCameraModuleSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:BackCameraSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `brcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `brgd`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `dcnu`
+    - `Tag`: `CmPM`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `MinimalSealingManifest`:
+      -
+        - `Attributes`:
+          - `Brunor`
+          - `GeneratedByRestore`
+          - `RequiredToSeal`
+        - `DataInstanceIdentifierList`:
+          - `SavageChipID`
+          - `SavageUID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `MinimalManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `UniqueDeviceID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+    - `Tag`: `bCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ScreenSerialNumber18d`
+      - `ZG:MogulIDSNTopModule`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `YonkersChipID`
+      - `YonkersUID`
+    - `Tag`: `ycrt`
+- `2c70576ed2783a445416932da3bd85d7ebf8788f`:
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `LocalCopyForceBootedOSTrustObject`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `AllowSikPubMissingWhenUnseal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `SikOverride`: `ZG:BasebandCertificationPublicKey`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:BatterySerialNumberPack0`
+      - `ZG:BatteryIDSNPack0`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:BatterySerialNumberPack1`
+      - `ZG:BatteryIDSNPack1`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:YonkersIR2ChipID`
+      - `ZG:YonkersIR2UID`
+    - `Tag`: `ycrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:YonkersIR2ChipID`
+      - `ZG:YonkersIR2UID`
+    - `Tag`: `prpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:AmbientLightSensorTBSensorFlexSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `HmCn`
+    - `Tag`: `AlsB`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:AmbientLightSensorMDMLBSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `HmCn`
+    - `Tag`: `AlsB`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `NonPoR`
+    - `DataInstanceIdentifierList`:
+      - `ZG:CoverGlassSerialNumberSecondary`
+      - `ZG:AmbientLightSensorMDMLBSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorMDMLBSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifierList`:
+      - `ZG:CoverGlassSerialNumberSecondary`
+      - `ZG:AmbientLightSensorMDMLBSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `ZG:AmbientLightSensorMDSensorFlexSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorMDSensorFlexSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `ZG:AmbientLightSensorMDSensorFlexSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `NonPoR`
+    - `DataInstanceIdentifierList`:
+      - `ZG:CoverGlassSerialNumberSecondary`
+      - `ZG:AmbientLightSensorTBSensorFlexSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorTBSensorFlexSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifierList`:
+      - `ZG:CoverGlassSerialNumberSecondary`
+      - `ZG:AmbientLightSensorTBSensorFlexSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:YonkersIR1ChipID`
+      - `ZG:YonkersIR1UID`
+    - `Tag`: `ycrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:YonkersIR1ChipID`
+      - `ZG:YonkersIR1UID`
+    - `Tag`: `prpc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MesaSensorIDSensorSN`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FSCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `hop0`
+    - `Tag`: `FSC2`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `ZG:MesaSensorIDSensorSN`
+    - `Tag`: `MSRk`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `SCfT`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:InternalFrontCameraModuleSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FCCl`
+    - `Tag`: `iCCl`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMUB`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMNB`
+    - `Tag`: `rMC2`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `NonPoR`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rSyA`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rSyB`
+    - `Tag`: `UwbB`
+  -
+    - `AssemblyIdentifierList`:
+      - `RearFacingCameraModuleSerialNumber`
+      - `RearFacingSuperWideCameraModuleSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:BackSuperWideCameraSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `DPCd`
+      -
+        - `Attributes`: `[]`
+        - `Tag`: `DPCm`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `CALm`
+    - `Tag`: `CmPM`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ecrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `MinimalSealingManifest`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `eUICC`
+        - `DataInstanceIdentifierList`:
+          - `ZG:EUICCPairingIdentifier`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `AllowSikPubMissingWhenUnseal`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SikOverride`: `ZG:CentauriSikPub`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `ShSA`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `ShSB`
+    - `Tag`: `NfcB`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `UniqueDeviceID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:BackglassMagnetometerSerialNumber`
+    - `Tag`: `3Bg3`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:CoverGlassSerialNumberSecondary`
+    - `Tag`: `3Dp2`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:TritiumMandoUID`
+    - `Tag`: `mCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PMUFollowerSerialNumber`
+    - `Tag`: `xCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ScreenSerialNumber18dSecondary`
+      - `ZG:MogulIDSNTopModuleSecondary`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ScreenSerialNumber18d`
+      - `ZG:MogulIDSNTopModule`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:CoverGlassSerialNumberSecondary`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `HmD2`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `HmD3`
+    - `Tag`: `DspB`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `SubCCList`: `[]`
+    - `Tag`: `DspB`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:TritiumMandoUID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MdTh`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `NvFc`
+    - `Tag`: `TBCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:RearCameraAuthICChipID`
+      - `ZG:RearCameraAuthICUID`
+    - `Tag`: `prpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `WFCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BTCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `W2CS`
+    - `Tag`: `BWC3`
+- `3590eff74002cdbc2bd2d6f7d2868538ade82830`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `ChallengeClaim`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcii`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pmpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcic`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pbas`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pdcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pwcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psnv`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rMCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `AssemblyIdentifierList`:
+      - `RearFacingCameraModuleSerialNumber`
+      - `RearFacingSuperWideCameraModuleSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateVersion1`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+    - `Tag`: `bCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ScreenSerialNumber`
+      - `TopModuleAuthChipID`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `YonkersChipID`
+      - `YonkersUID`
+    - `Tag`: `ycrt`
+- `36668200788bd4e6fb3e68f19eda4bb2c6ee0f16`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `4096`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateVersion1`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ScreenSerialNumber`
+    - `Tag`: `GpC2`
+- `37f6ab0c55894d9fe2f32a29e801c41c57b9ce68`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `4096`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+- `406063974b6a5f2919feee3cb449095df95750ff`:
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `AlsC`
+    - `Tag`: `AlsC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `AlsC`
+    - `Tag`: `AlsC`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ecrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtPc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MTPT`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `WCAL`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BCAL`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `OCAL`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `OCA2`
+    - `Tag`: `BWC2`
+- `48f1dde296c3db56ac6f3818de943e536ac40d6c`:
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `LocalCopyForceBootedOSTrustObject`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MesaSensorIDSensorSN`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FSCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `hop0`
+    - `Tag`: `FSC2`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `ZG:MesaSensorIDSensorSN`
+    - `Tag`: `MSRk`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ecrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `MinimalSealingManifest`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `eUICC`
+        - `DataInstanceIdentifierList`:
+          - `ZG:VinylEUICCCSN`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `AllowSikPubMissingWhenUnseal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `SikOverride`: `ZG:BasebandCertificationPublicKey`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `AllowSikPubMissingWhenUnseal`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SikOverride`: `ZG:CentauriSikPub`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `PairedSoC`:
+      - `16384`
+      - `8230`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `WFCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BTCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `W2CS`
+    - `Tag`: `BWC3`
+- `4d1b5bedd055f06da0e8279ffaa08cf3840df25c`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MesaSensorIDSensorSN`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FSCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `hop0`
+    - `Tag`: `FSC2`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `ZG:MesaSensorIDSensorSN`
+    - `Tag`: `MSRk`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ecrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `AllowSikPubMissingWhenUnseal`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SikOverride`: `ZG:CentauriSikPub`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `PairedSoC`:
+      - `8230`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `WFCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BTCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `W2CS`
+    - `Tag`: `BWC3`
+- `5265d6cfcd33a7b0ada9125aca0be12dffb858f4`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateVersion1`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+- `5a7b8b97ca043332f8cd607cffed887ce4c6fcd8`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+- `5ae54a7286eef90b423294d9209f27e1a826a242`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `MultiDataInstanceIdentifierList`:
+      - `MultiLynxSerialNumberArray`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `SCfT`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+- `5c18896b833bcff77519a993e9e39a813afb65bd`:
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `AlsC`
+    - `Tag`: `AlsC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `AlsC`
+    - `Tag`: `AlsC`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MesaSensorIDSensorSN`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FSCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `hop0`
+    - `Tag`: `FSC2`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `ZG:MesaSensorIDSensorSN`
+    - `Tag`: `MSRk`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ecrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `AllowSikPubMissingWhenUnseal`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SikOverride`: `ZG:CentauriSikPub`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `PairedSoC`:
+      - `8230`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `WFCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BTCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `W2CS`
+    - `Tag`: `BWC3`
+- `6ace30932e20c60c63e03dbaaf4bcc7bca1a83cf`:
+  -
+    - `Attributes`: `[]`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ChMf`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+- `6dccfab16c450f79a13daff6b6d96a5a9819532c`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BM00`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BM01`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BM02`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BM03`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BM04`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BM05`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BM06`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `CR00`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `CR01`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `IOB0`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `IOB1`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `IOB2`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N000`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N001`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N002`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N003`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N004`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N005`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N010`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N011`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N012`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N013`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N014`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N015`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N020`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N021`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N022`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N023`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N024`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N025`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N030`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N031`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N032`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N033`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N034`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `N035`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `RT00`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `RT01`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `RT02`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `RT03`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `RT04`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `RT05`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `RT06`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `RT07`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `RT08`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `RT09`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `RT0a`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `RT0b`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `RT0c`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `RT0d`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `RT0e`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `RT0f`
+    - `Tag`: `ChMf`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateVersion1`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+- `765162fd2ff46c5d0ed96c1235dcf58dd0d3df6b`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+- `7934c81f5e46645fbaade862c2b14bfd032a4c9e`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `ChallengeClaim`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `CtCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `4096`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `NvMR`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+- `7d008392fef6daaa5a6ef35ead475df917b1bb81`:
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `LocalCopyForceBootedOSTrustObject`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `ChallengeClaim`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `SCfT`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcic`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcii`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbas`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pmpc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pdcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `psnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pwcl`
+    - `Tag`: `PlCl`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd3`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `prpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:BackCameraSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `DPCd`
+      -
+        - `Attributes`: `[]`
+        - `Tag`: `DPCm`
+    - `Tag`: `CmPM`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `MinimalSealingManifest`:
+      -
+        - `Attributes`:
+          - `Brunor`
+          - `GeneratedByRestore`
+          - `RequiredToSeal`
+        - `DataInstanceIdentifierList`:
+          - `SavageChipID`
+          - `SavageUID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `AllowSikPubMissingWhenUnseal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `SikOverride`: `ZG:BasebandCertificationPublicKey`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `MinimalManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `PairedSoC`:
+      - `16384`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `UniqueDeviceID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:BackglassSerialNumber`
+    - `Tag`: `LCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ScreenSerialNumber`
+      - `TopModuleAuthChipID`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `YonkersChipID`
+      - `YonkersUID`
+    - `Tag`: `ycrt`
+- `7d139afb606deb9002833c09398d32514891bf94`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `ChallengeClaim`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlex`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlin`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnm`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlpq`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlps`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlsk`
+    - `Tag`: `JpCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcic`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcii`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbas`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pmpc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pdcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `psnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pwcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PxCl`
+    - `Tag`: `PlCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMUB`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMNB`
+    - `Tag`: `rMC2`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `AssemblyIdentifierList`:
+      - `RearFacingCameraModuleSerialNumber`
+      - `RearFacingSuperWideCameraModuleSerialNumber`
+      - `RearFacingTelephotoCameraModuleSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+    - `Tag`: `bCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ScreenSerialNumber`
+      - `ZG:MogulIDSNTopModule`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `WFCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BTCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `WFCF`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BTCF`
+    - `Tag`: `BWC3`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `YonkersChipID`
+      - `YonkersUID`
+    - `Tag`: `ycrt`
+- `838a8421e04507c566f135b0e1b5ed0ca6e649ec`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ScreenSerialNumber`
+    - `Tag`: `ADCL`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlin`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlsk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlex`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnm`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlps`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlpq`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcii`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcve`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pmpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvi`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `preg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcic`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pbas`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pdcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pwcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `RosalineSerialNumber`
+    - `Tag`: `pfcl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ScreenSerialNumber`
+    - `Tag`: `GpC2`
+- `8a51865bed27fb1b3e99a272de07a1de98402f84`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `4096`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `NvMR`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+- `8aac992f6461b8fdc245594fcda5a4c862afe779`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `ADCL`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlex`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlin`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnm`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlpq`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlps`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlsk`
+    - `Tag`: `JpCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `SCfT`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcic`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcii`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbas`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pmpc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pdcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `psnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pwcl`
+    - `Tag`: `PlCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd3`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `prpc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ecrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `MinimalSealingManifest`:
+      -
+        - `Attributes`:
+          - `Brunor`
+          - `GeneratedByRestore`
+          - `RequiredToSeal`
+        - `DataInstanceIdentifierList`:
+          - `SavageChipID`
+          - `SavageUID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `AllowSikPubMissingWhenUnseal`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SikOverride`: `ZG:CentauriSikPub`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `MinimalManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `PairedSoC`:
+      - `8230`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `EarlyAccessMultiData`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `EarlyAccessMultiData`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `EarlyAccessMultiData`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorRearSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:PanelSerialNumber`
+      - `ZG:MogulIDSNTopModule`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `WFCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BTCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `W2CS`
+    - `Tag`: `BWC3`
+- `91eba9718306e7c358dfaedd28734ab2e93deb0d`:
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+- `9370fae5190fb89bdf0702ed787baab0af332247`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `4096`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ScreenSerialNumber`
+    - `Tag`: `GpC2`
+- `97f807d60d4401beed0832edb42e2bf4603ea4d7`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ScreenSerialNumber`
+    - `Tag`: `ADCL`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlin`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlsk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlex`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnm`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlps`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlpq`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcii`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcve`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pmpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvi`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `preg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcic`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pbas`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pdcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pwcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `RosalineSerialNumber`
+    - `Tag`: `pfcl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateVersion1`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ScreenSerialNumber`
+    - `Tag`: `GpC2`
+- `9a84ff6365424cbb70894646ec4407f88691ddb6`:
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:ExternalDisplayBacklightUID`
+    - `Tag`: `DpC3`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `SCfT`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PBcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FCCl`
+    - `Tag`: `iCCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ecrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorRearSerialNumber`
+    - `Tag`: `HmCA`
+- `9ac07d65df530aff39e16631a13df4ff1ec3d746`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+- `9b42d1916ad644da5a287d94c53e95ec95866d1a`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `4096`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+- `9e14c9859aa609b0093816c1509aaefe77ee4d24`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `ChallengeClaim`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcii`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcve`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pmpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvi`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcic`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pbas`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pdcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pwcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psnv`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rMCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `AssemblyIdentifierList`:
+      - `RearFacingCameraModuleSerialNumber`
+      - `RearFacingSuperWideCameraModuleSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateVersion1`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ScreenSerialNumber`
+      - `TopModuleAuthChipID`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+- `AppleDisplay18,1`: `9a84ff6365424cbb70894646ec4407f88691ddb6`
+- `AppleDisplay18,2`: `e55f1339c436fc9da9f41f85b2bc7fa5a99b4177`
+- `AppleDisplay2,1`: `f80d6121743a29d2c3bcd27ab177e778daa11e4d`
+- `ComputeModule13,1`: `6ace30932e20c60c63e03dbaaf4bcc7bca1a83cf`
+- `ComputeModule13,5`: `6dccfab16c450f79a13daff6b6d96a5a9819532c`
+- `ComputeModule14,1`: `5265d6cfcd33a7b0ada9125aca0be12dffb858f4`
+- `ComputeModule17,1`: `2681a71945228ed01e9fe1b30d72faafdd68df06`
+- `ComputeModule17,2`: `5ae54a7286eef90b423294d9209f27e1a826a242`
+- `ManifestProperties`:
+  - `AppleDisplay18,1`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `Required`
+        - `PropertyIdentifier`: `RegionInfo`
+        - `Tag`: `Regn`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `Required`
+        - `PropertyIdentifier`: `ModelNumber`
+        - `Tag`: `Mod#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+  - `AppleDisplay18,2`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `Required`
+        - `PropertyIdentifier`: `RegionInfo`
+        - `Tag`: `Regn`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `Required`
+        - `PropertyIdentifier`: `ModelNumber`
+        - `Tag`: `Mod#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+  - `AppleDisplay2,1`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `RegionInfo`
+        - `Tag`: `Regn`
+      -
+        - `PropertyIdentifier`: `ModelNumber`
+        - `Tag`: `Mod#`
+  - `ComputeModule13,1`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+  - `ComputeModule13,5`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+  - `ComputeModule14,1`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `Required`
+        - `PropertyIdentifier`: `RegionInfo`
+        - `Tag`: `Regn`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `Required`
+        - `PropertyIdentifier`: `ModelNumber`
+        - `Tag`: `Mod#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+  - `ComputeModule17,1`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+  - `ComputeModule17,2`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `Required`
+        - `PropertyIdentifier`: `RegionInfo`
+        - `Tag`: `Regn`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `Required`
+        - `PropertyIdentifier`: `ModelNumber`
+        - `Tag`: `Mod#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+  - `iPad12,1`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad12,2`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad13,1`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad13,10`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad13,11`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad13,16`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad13,17`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad13,18`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad13,19`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad13,2`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad13,4`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad13,5`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad13,6`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad13,7`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad13,8`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad13,9`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad14,1`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad14,10`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad14,11`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad14,2`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad14,3`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad14,4`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad14,5`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad14,6`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad14,8`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad14,9`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad15,3`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad15,4`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad15,5`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad15,6`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad15,7`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad15,8`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad16,1`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad16,10`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `ZG:RepairStatus`
+        - `Tag`: `rpcp`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad16,11`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `ZG:RepairStatus`
+        - `Tag`: `rpcp`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad16,2`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad16,3`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RearFacingCameraModuleSerialNumber`
+        - `Tag`: `RCSn`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `ZG:RepairStatus`
+        - `Tag`: `rpcp`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad16,4`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RearFacingCameraModuleSerialNumber`
+        - `Tag`: `RCSn`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `ZG:RepairStatus`
+        - `Tag`: `rpcp`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad16,5`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RearFacingCameraModuleSerialNumber`
+        - `Tag`: `RCSn`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `ZG:RepairStatus`
+        - `Tag`: `rpcp`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad16,6`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RearFacingCameraModuleSerialNumber`
+        - `Tag`: `RCSn`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `ZG:RepairStatus`
+        - `Tag`: `rpcp`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad16,8`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `ZG:RepairStatus`
+        - `Tag`: `rpcp`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad16,9`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `ZG:RepairStatus`
+        - `Tag`: `rpcp`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad17,1`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RearFacingCameraModuleSerialNumber`
+        - `Tag`: `RCSn`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `ZG:RepairStatus`
+        - `Tag`: `rpcp`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad17,2`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RearFacingCameraModuleSerialNumber`
+        - `Tag`: `RCSn`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `ZG:RepairStatus`
+        - `Tag`: `rpcp`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad17,3`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RearFacingCameraModuleSerialNumber`
+        - `Tag`: `RCSn`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `ZG:RepairStatus`
+        - `Tag`: `rpcp`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad17,4`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RearFacingCameraModuleSerialNumber`
+        - `Tag`: `RCSn`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `ZG:RepairStatus`
+        - `Tag`: `rpcp`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ZG:NFSystemSecureElementSerialNumber`
+        - `Tag`: `sei3`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad8,10`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `IceFallID`
+        - `Tag`: `sei2`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad8,11`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad8,12`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPad8,9`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `IceFallID`
+        - `Tag`: `sei2`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone12,1`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentInfoCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyIdentifier`: `BatterySerialNumber`
+        - `Tag`: `bat#`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone12,3`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentInfoCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyIdentifier`: `BatterySerialNumber`
+        - `Tag`: `bat#`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone12,5`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentInfoCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyIdentifier`: `BatterySerialNumber`
+        - `Tag`: `bat#`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone12,8`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentInfoCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone13,1`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentInfoCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone13,2`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentInfoCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone13,3`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentInfoCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `LiDARCalibrationPrCL`
+        - `Tag`: `PrCL`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone13,4`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentInfoCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `LiDARCalibrationPrCL`
+        - `Tag`: `PrCL`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone14,2`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentInfoCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `LiDARCalibrationPrCL`
+        - `Tag`: `PrCL`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone14,3`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentInfoCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `LiDARCalibrationPrCL`
+        - `Tag`: `PrCL`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone14,4`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentInfoCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone14,5`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentInfoCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone14,6`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentInfoCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone14,7`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentInfoCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone14,8`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentInfoCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone15,2`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentInfoCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `LiDARCalibrationPrCL`
+        - `Tag`: `PrCL`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone15,3`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentInfoCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `SysCfg`
+          - `StoreAsData`
+          - `Matching`
+        - `PropertyIdentifier`: `LiDARCalibrationPrCL`
+        - `Tag`: `PrCL`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone15,4`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone15,5`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone16,1`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone16,2`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone16,3`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone17,1`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone17,2`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone17,3`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone17,4`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone17,5`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:VinylEUICCCSN`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone18,1`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:EUICCPairingIdentifier`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone18,2`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:EUICCPairingIdentifier`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone18,3`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:EUICCPairingIdentifier`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone18,4`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:EUICCPairingIdentifier`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone18,5`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:EUICCPairingIdentifier`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone19,2`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:EUICCPairingIdentifier`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone19,3`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:EUICCPairingIdentifier`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone19,4`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:EUICCPairingIdentifier`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iPhone19,7`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity2`
+        - `Tag`: `ime2`
+      -
+        - `PropertyIdentifier`: `ZG:EUICCPairingIdentifier`
+        - `Tag`: `eeid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `IsServicePart`
+        - `Tag`: `SrvP`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+          - `Required`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyAttributes`:
+          - `Required`
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iProd10,3`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ZG:Ace2UUID`
+        - `Tag`: `acid`
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iProd13,10`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+  - `iProd2,3`:
+    - `Properties`:
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `BoardId`
+        - `Tag`: `BORD`
+      -
+        - `PropertyAttributes`:
+          - `StoreAsInteger`
+        - `PropertyIdentifier`: `SecurityDomain`
+        - `Tag`: `SDOM`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iProd9,4`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `IceFallID`
+        - `Tag`: `sei2`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iProd9,5`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `ArcModuleSerialNumber`
+        - `Tag`: `arc#`
+      -
+        - `PropertyIdentifier`: `MobileEquipmentIdentifier`
+        - `Tag`: `meid`
+      -
+        - `PropertyIdentifier`: `InternationalMobileEquipmentIdentity`
+        - `Tag`: `imei`
+      -
+        - `PropertyIdentifier`: `BluetoothAddress`
+        - `Tag`: `BMac`
+      -
+        - `PropertyIdentifier`: `RawPanelSerialNumber`
+        - `Tag`: `drp#`
+      -
+        - `PropertyIdentifier`: `IceFallID`
+        - `Tag`: `sei2`
+      -
+        - `PropertyIdentifier`: `NandControllerUID`
+        - `Tag`: `nuid`
+      -
+        - `PropertyIdentifier`: `SecureElementID`
+        - `Tag`: `seid`
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+      -
+        - `PropertyIdentifier`: `TristarID`
+        - `Tag`: `tsid`
+      -
+        - `PropertyIdentifier`: `WifiAddress`
+        - `Tag`: `WMac`
+  - `iRefDefault`:
+    - `Properties`:
+      -
+        - `PropertyIdentifier`: `SerialNumber`
+        - `Tag`: `SrNm`
+      -
+        - `PropertyIdentifier`: `MLBSerialNumber`
+        - `Tag`: `mlb#`
+- `StoreMaxSize`:
+  - `AppleDisplay18,1`: `6`
+  - `AppleDisplay18,2`: `1`
+  - `AppleDisplay2,1`: `1`
+  - `ComputeModule13,1`: `1`
+  - `ComputeModule13,5`: `1`
+  - `ComputeModule14,1`: `1`
+  - `ComputeModule17,1`: `1`
+  - `ComputeModule17,2`: `1`
+  - `iPad12,1`: `1`
+  - `iPad12,2`: `3`
+  - `iPad13,1`: `1`
+  - `iPad13,10`: `15`
+  - `iPad13,11`: `15`
+  - `iPad13,16`: `1`
+  - `iPad13,17`: `3`
+  - `iPad13,18`: `1`
+  - `iPad13,19`: `3`
+  - `iPad13,2`: `3`
+  - `iPad13,4`: `13`
+  - `iPad13,5`: `13`
+  - `iPad13,6`: `15`
+  - `iPad13,7`: `15`
+  - `iPad13,8`: `13`
+  - `iPad13,9`: `13`
+  - `iPad14,1`: `1`
+  - `iPad14,10`: `2`
+  - `iPad14,11`: `4`
+  - `iPad14,2`: `3`
+  - `iPad14,3`: `13`
+  - `iPad14,4`: `15`
+  - `iPad14,5`: `13`
+  - `iPad14,6`: `15`
+  - `iPad14,8`: `2`
+  - `iPad14,9`: `4`
+  - `iPad15,3`: `2`
+  - `iPad15,4`: `4`
+  - `iPad15,5`: `2`
+  - `iPad15,6`: `4`
+  - `iPad15,7`: `2`
+  - `iPad15,8`: `4`
+  - `iPad16,1`: `2`
+  - `iPad16,10`: `2`
+  - `iPad16,11`: `4`
+  - `iPad16,2`: `4`
+  - `iPad16,3`: `14`
+  - `iPad16,4`: `16`
+  - `iPad16,5`: `14`
+  - `iPad16,6`: `16`
+  - `iPad16,8`: `2`
+  - `iPad16,9`: `4`
+  - `iPad17,1`: `14`
+  - `iPad17,2`: `16`
+  - `iPad17,3`: `14`
+  - `iPad17,4`: `16`
+  - `iPad8,10`: `12`
+  - `iPad8,11`: `10`
+  - `iPad8,12`: `12`
+  - `iPad8,9`: `10`
+  - `iPhone12,1`: `12`
+  - `iPhone12,3`: `12`
+  - `iPhone12,5`: `12`
+  - `iPhone12,8`: `4`
+  - `iPhone13,1`: `10`
+  - `iPhone13,2`: `10`
+  - `iPhone13,3`: `11`
+  - `iPhone13,4`: `11`
+  - `iPhone14,2`: `13`
+  - `iPhone14,3`: `13`
+  - `iPhone14,4`: `12`
+  - `iPhone14,5`: `12`
+  - `iPhone14,6`: `3`
+  - `iPhone14,7`: `13`
+  - `iPhone14,8`: `13`
+  - `iPhone15,2`: `13`
+  - `iPhone15,3`: `13`
+  - `iPhone15,4`: `17`
+  - `iPhone15,5`: `17`
+  - `iPhone16,1`: `13`
+  - `iPhone16,2`: `13`
+  - `iPhone16,3`: `13`
+  - `iPhone17,1`: `18`
+  - `iPhone17,2`: `18`
+  - `iPhone17,3`: `18`
+  - `iPhone17,4`: `18`
+  - `iPhone17,5`: `18`
+  - `iPhone18,1`: `22`
+  - `iPhone18,2`: `22`
+  - `iPhone18,3`: `22`
+  - `iPhone18,4`: `18`
+  - `iPhone18,5`: `18`
+  - `iPhone19,2`: `22`
+  - `iPhone19,3`: `22`
+  - `iPhone19,4`: `19`
+  - `iPhone19,7`: `22`
+  - `iProd10,3`: `1`
+  - `iProd13,10`: `1`
+  - `iProd2,3`: `1`
+  - `iProd9,4`: `1`
+  - `iProd9,5`: `1`
+  - `iRefDefault`: `1`
+- `a3e1ef3ebe10aa170c604c88ee2cf123dffd21a9`:
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `LocalCopyForceBootedOSTrustObject`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `SCfT`
+  -
+    - `AsidSubCCIdOptionalVerifyList`:
+      - `ZG:ProxSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcic`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcii`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbas`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pmpc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pdcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `psnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pwcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `PxCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `asid`
+    - `Tag`: `PlCl`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd3`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `prpc`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMUB`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMNB`
+    - `Tag`: `rMC2`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:BackCameraSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `brcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `brgd`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `dcnu`
+    - `Tag`: `CmPM`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ecrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `MinimalSealingManifest`:
+      -
+        - `Attributes`:
+          - `Aries`
+          - `GeneratedByRestore`
+          - `RequiredToSeal`
+        - `DataInstanceIdentifierList`:
+          - `SavageChipID`
+          - `SavageUID`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `eUICC`
+        - `DataInstanceIdentifierList`:
+          - `ZG:EUICCPairingIdentifier`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `AllowSikPubMissingWhenUnseal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `SikOverride`: `ZG:BasebandCertificationPublicKey`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `AllowSikPubMissingWhenUnseal`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SikOverride`: `ZG:CentauriSikPub`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `PairedSoC`:
+      - `16384`
+      - `8230`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `UniqueDeviceID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+    - `Tag`: `bCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:TritiumMandoUID`
+    - `Tag`: `mCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ScreenSerialNumber18d`
+      - `ZG:MogulIDSNTopModule`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:TritiumMandoUID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MdTh`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `NvFc`
+    - `Tag`: `TBCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `WFCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BTCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `W2CS`
+    - `Tag`: `BWC3`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `YonkersChipID`
+      - `YonkersUID`
+    - `Tag`: `ycrt`
+- `a601ddf3a292a5872f7aa336add7069120e45d03`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`: `[]`
+        - `Tag`: `NvTh`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `NvTM`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `NvFc`
+    - `Tag`: `NBCl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `SCfT`
+  -
+    - `AsidSubCCIdOptionalVerifyList`:
+      - `ZG:ProxSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcic`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcii`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbas`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pmpc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pdcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `psnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pwcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `PxCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `asid`
+    - `Tag`: `PlCl`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd3`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `prpc`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMUB`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMNB`
+    - `Tag`: `rMC2`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `AssemblyIdentifierList`:
+      - `RearFacingCameraModuleSerialNumber`
+      - `RearFacingSuperWideCameraModuleSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:BackCameraSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `brcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `brgd`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `dcnu`
+    - `Tag`: `CmPM`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:BackSuperWideCameraSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `DPCd`
+    - `Tag`: `CmPM`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ecrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `MinimalSealingManifest`:
+      -
+        - `Attributes`:
+          - `Aries`
+          - `GeneratedByRestore`
+          - `RequiredToSeal`
+        - `DataInstanceIdentifierList`:
+          - `SavageChipID`
+          - `SavageUID`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `eUICC`
+        - `DataInstanceIdentifierList`:
+          - `ZG:EUICCPairingIdentifier`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `AllowSikPubMissingWhenUnseal`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SikOverride`: `ZG:CentauriSikPub`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `PairedSoC`:
+      - `8230`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `UniqueDeviceID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+    - `Tag`: `bCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+    - `Tag`: `cCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ScreenSerialNumber18d`
+      - `ZG:MogulIDSNTopModule`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `WFCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BTCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `W2CS`
+    - `Tag`: `BWC3`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `YonkersChipID`
+      - `YonkersUID`
+    - `Tag`: `ycrt`
+- `b40fc752a013a3549182e6dadf8b69d8083d636a`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `ChallengeClaim`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `CtCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcii`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcve`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pmpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvi`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcic`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pbas`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pdcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pwcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `RosalineSerialNumber`
+    - `Tag`: `pfcl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rMCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `AssemblyIdentifierList`:
+      - `RearFacingCameraModuleSerialNumber`
+      - `RearFacingSuperWideCameraModuleSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ScreenSerialNumber`
+      - `TopModuleAuthChipID`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+- `b4861071ccbc6357781b4e77f3c4beb5e40178eb`:
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `LocalCopyForceBootedOSTrustObject`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `ADCL`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlex`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlin`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnm`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlpq`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlps`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlsk`
+    - `Tag`: `JpCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `SCfT`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcic`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcii`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbas`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pmpc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pdcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `psnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pwcl`
+    - `Tag`: `PlCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd3`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `prpc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ecrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `MinimalSealingManifest`:
+      -
+        - `Attributes`:
+          - `Brunor`
+          - `GeneratedByRestore`
+          - `MinimalManifestVersion2`
+          - `RequiredToSeal`
+        - `DataInstanceIdentifierList`:
+          - `SavageChipID`
+          - `SavageUID`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `eUICC`
+        - `DataInstanceIdentifierList`:
+          - `ZG:VinylEUICCCSN`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `AllowSikPubMissingWhenUnseal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `SikOverride`: `ZG:BasebandCertificationPublicKey`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `AllowSikPubMissingWhenUnseal`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SikOverride`: `ZG:CentauriSikPub`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `PairedSoC`:
+      - `16384`
+      - `8230`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `EarlyAccessMultiData`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `EarlyAccessMultiData`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `EarlyAccessMultiData`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorRearSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:PanelSerialNumber`
+      - `ZG:MogulIDSNTopModule`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `WFCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BTCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `W2CS`
+    - `Tag`: `BWC3`
+- `b4d02f3bdcc7c5a55950ff7789b8b5df24b33d3f`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `ChallengeClaim`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlin`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlsk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlex`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnm`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlps`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlpq`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcii`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pmpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcic`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pbas`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pdcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pwcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psnv`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `ZG:ProxSerialNumber`
+    - `Tag`: `PxTC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rMCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `AssemblyIdentifierList`:
+      - `RearFacingCameraModuleSerialNumber`
+      - `RearFacingSuperWideCameraModuleSerialNumber`
+      - `RearFacingTelephotoCameraModuleSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateVersion1`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ScreenSerialNumber`
+      - `TopModuleAuthChipID`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `YonkersChipID`
+      - `YonkersUID`
+    - `Tag`: `ycrt`
+- `b50b9b6cc644f0f9bbfec23688b71c64b093b122`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `4096`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateVersion1`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ScreenSerialNumber`
+    - `Tag`: `GpC2`
+- `ba02c5abb32272152631e3d6650b275308490bba`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `ChallengeClaim`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `CtCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlin`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlsk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlex`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnm`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlps`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlpq`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcii`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcve`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pmpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvi`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcic`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pbas`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pdcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pwcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `RosalineSerialNumber`
+    - `Tag`: `pfcl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rMCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `AssemblyIdentifierList`:
+      - `RearFacingCameraModuleSerialNumber`
+      - `RearFacingSuperWideCameraModuleSerialNumber`
+      - `RearFacingTelephotoCameraModuleSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ScreenSerialNumber`
+      - `TopModuleAuthChipID`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+- `bb6a9c58eb068b2382161d83f46c41cd412471af`:
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `LocalCopyForceBootedOSTrustObject`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `AllowSikPubMissingWhenUnseal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `SikOverride`: `ZG:BasebandCertificationPublicKey`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:YonkersIR1ChipID`
+      - `ZG:YonkersIR1UID`
+    - `Tag`: `ycrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:YonkersIR1ChipID`
+      - `ZG:YonkersIR1UID`
+    - `Tag`: `prpc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:YonkersIR1ChipID`
+      - `ZG:YonkersIR1UID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PvCt`
+    - `Tag`: `CmCt`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlex`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlin`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnm`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlpq`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlps`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlsk`
+    - `Tag`: `JpCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`: `[]`
+        - `Tag`: `NvTh`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `NvTM`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `NvFc`
+    - `Tag`: `NBCl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `SCfT`
+  -
+    - `AsidSubCCIdOptionalVerifyList`:
+      - `ZG:ProxSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcic`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcii`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbas`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pmpc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pdcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `psnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pwcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbsc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `PxCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `asid`
+    - `Tag`: `PlCl`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd3`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `prpc`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMUB`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMNB`
+    - `Tag`: `rMC2`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `AssemblyIdentifierList`:
+      - `RearFacingCameraModuleSerialNumber`
+      - `RearFacingSuperWideCameraModuleSerialNumber`
+      - `RearFacingTelephotoCameraModuleSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:BackSuperWideCameraSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `DPCd`
+      -
+        - `Attributes`: `[]`
+        - `Tag`: `DPCm`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `CALm`
+    - `Tag`: `CmPM`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:BackTeleCameraSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `DPCd`
+      -
+        - `Attributes`: `[]`
+        - `Tag`: `CALm`
+    - `Tag`: `CmPM`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ecrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `MinimalSealingManifest`:
+      -
+        - `Attributes`:
+          - `Aries`
+          - `GeneratedByRestore`
+          - `RequiredToSeal`
+        - `DataInstanceIdentifierList`:
+          - `SavageChipID`
+          - `SavageUID`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `eUICC`
+        - `DataInstanceIdentifierList`:
+          - `ZG:EUICCPairingIdentifier`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `AllowSikPubMissingWhenUnseal`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SikOverride`: `ZG:CentauriSikPub`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `UniqueDeviceID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+    - `Tag`: `bCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+    - `Tag`: `cCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ScreenSerialNumber18d`
+      - `ZG:MogulIDSNTopModule`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `WFCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BTCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `W2CS`
+    - `Tag`: `BWC3`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `YonkersChipID`
+      - `YonkersUID`
+    - `Tag`: `ycrt`
+- `bc7ecf76582e6e1203a5e1807eab5b43d02511d8`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+- `bee010bda00fe1c67508189f89b35b10722b9215`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `AlsC`
+    - `Tag`: `AlsC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `AlsC`
+    - `Tag`: `AlsC`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ecrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtPc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MTPT`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+- `c0908d111b1e9c60b23c468538ad82c7088f5e27`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `4096`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ScreenSerialNumber`
+    - `Tag`: `GpC2`
+- `c75d7b9f5b977dcee0322d4c85c6cb77c736a089`:
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `LocalCopyForceBootedOSTrustObject`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `ChallengeClaim`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `SCfT`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcic`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcii`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbas`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pmpc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pdcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `psnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pwcl`
+    - `Tag`: `PlCl`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd3`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `prpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:BackCameraSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `DPCd`
+      -
+        - `Attributes`: `[]`
+        - `Tag`: `DPCm`
+    - `Tag`: `CmPM`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ecrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `MinimalSealingManifest`:
+      -
+        - `Attributes`:
+          - `Brunor`
+          - `GeneratedByRestore`
+          - `MinimalManifestVersion2`
+          - `RequiredToSeal`
+        - `DataInstanceIdentifierList`:
+          - `SavageChipID`
+          - `SavageUID`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `eUICC`
+        - `DataInstanceIdentifierList`:
+          - `ZG:VinylEUICCCSN`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `AllowSikPubMissingWhenUnseal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `SikOverride`: `ZG:BasebandCertificationPublicKey`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `UniqueDeviceID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+    - `Tag`: `bCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ScreenSerialNumber`
+      - `TopModuleAuthChipID`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `YonkersChipID`
+      - `YonkersUID`
+    - `Tag`: `ycrt`
+- `c85402ff6923113fe500043ec2498530152e6876`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `4096`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateVersion1`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+- `cfc4ec051e1d7d0919faf7a22f6cd8249dda1dd0`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `ChallengeClaim`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlex`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlin`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnm`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlpq`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlps`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlsk`
+    - `Tag`: `JpCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcic`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcii`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbas`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pmpc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pdcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `psnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pwcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PxCl`
+    - `Tag`: `PlCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMUB`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMNB`
+    - `Tag`: `rMC2`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `AssemblyIdentifierList`:
+      - `RearFacingCameraModuleSerialNumber`
+      - `RearFacingSuperWideCameraModuleSerialNumber`
+      - `RearFacingTelephotoCameraModuleSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+    - `Tag`: `bCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ScreenSerialNumber`
+      - `ZG:MogulIDSNTopModule`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `YonkersChipID`
+      - `YonkersUID`
+    - `Tag`: `ycrt`
+- `d16b117755debaade2de46019fafa59f97d7d824`:
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `LocalCopyForceBootedOSTrustObject`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `AlsC`
+    - `Tag`: `AlsC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `AlsC`
+    - `Tag`: `AlsC`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MesaSensorIDSensorSN`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FSCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `hop0`
+    - `Tag`: `FSC2`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `ZG:MesaSensorIDSensorSN`
+    - `Tag`: `MSRk`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ecrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `MinimalSealingManifest`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `eUICC`
+        - `DataInstanceIdentifierList`:
+          - `ZG:VinylEUICCCSN`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `AllowSikPubMissingWhenUnseal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `SikOverride`: `ZG:BasebandCertificationPublicKey`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `AllowSikPubMissingWhenUnseal`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SikOverride`: `ZG:CentauriSikPub`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `PairedSoC`:
+      - `16384`
+      - `8230`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `WFCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BTCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `W2CS`
+    - `Tag`: `BWC3`
+- `d43834198d29ed09b0a381faf4408dd68aa8109b`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ScreenSerialNumber`
+    - `Tag`: `ADCL`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlin`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlsk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlex`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnm`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlps`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlpq`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcii`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcve`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pmpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvi`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `preg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcic`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pbas`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pdcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pwcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `RosalineSerialNumber`
+    - `Tag`: `pfcl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ScreenSerialNumber`
+    - `Tag`: `GpC2`
+- `d656b8e5c868fd9434caf261bcbfc18733d9be58`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `ChallengeClaim`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcic`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcii`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbas`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pmpc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pdcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `psnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pwcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PxCl`
+    - `Tag`: `PlCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMUB`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMNB`
+    - `Tag`: `rMC2`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `AssemblyIdentifierList`:
+      - `RearFacingCameraModuleSerialNumber`
+      - `RearFacingSuperWideCameraModuleSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:BackCameraSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `brcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `brgd`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `dcnu`
+    - `Tag`: `CmPM`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+    - `Tag`: `bCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ScreenSerialNumber`
+      - `ZG:MogulIDSNTopModule`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `YonkersChipID`
+      - `YonkersUID`
+    - `Tag`: `ycrt`
+- `daeeebc9a7c401f4b320b03649188d61a835361b`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `ChallengeClaim`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlex`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlin`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnm`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlpq`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlps`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlsk`
+    - `Tag`: `JpCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`: `[]`
+        - `Tag`: `NvTh`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `NvTM`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `NvFc`
+    - `Tag`: `NBCl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `SCfT`
+  -
+    - `AsidSubCCIdOptionalVerifyList`:
+      - `ZG:ProxSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcic`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcii`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbas`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pmpc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pdcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `psnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pwcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `PxCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `asid`
+    - `Tag`: `PlCl`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd3`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `prpc`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMUB`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMNB`
+    - `Tag`: `rMC2`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `AssemblyIdentifierList`:
+      - `RearFacingCameraModuleSerialNumber`
+      - `RearFacingSuperWideCameraModuleSerialNumber`
+      - `RearFacingTelephotoCameraModuleSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:BackSuperWideCameraSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `DPCd`
+      -
+        - `Attributes`: `[]`
+        - `Tag`: `DPCm`
+    - `Tag`: `CmPM`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `MinimalSealingManifest`:
+      -
+        - `Attributes`:
+          - `Brunor`
+          - `GeneratedByRestore`
+          - `RequiredToSeal`
+        - `DataInstanceIdentifierList`:
+          - `SavageChipID`
+          - `SavageUID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `MinimalManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `UniqueDeviceID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:BackglassSerialNumber`
+    - `Tag`: `LCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ScreenSerialNumber18d`
+      - `ZG:MogulIDSNTopModule`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `YonkersChipID`
+      - `YonkersUID`
+    - `Tag`: `ycrt`
+- `de112d43ffa2caa5418e06a72cd4504eea82b83f`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `4096`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `NvMR`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+- `e55f1339c436fc9da9f41f85b2bc7fa5a99b4177`:
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:TCONChipID`
+      - `ZG:TCONECID`
+    - `Tag`: `DpC2`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `SCfT`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PBcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FCCl`
+    - `Tag`: `iCCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ecrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `Tag`: `HmCA`
+- `f38ebb86d50baec714552d181f5fad81690c452a`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `BatterySerialNumber`
+      - `RoswellChipID`
+    - `Tag`: `vcrt`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `IfCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+      - `AmbientLightSensorSerialNumber`
+    - `Tag`: `AlsH`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlex`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlin`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnm`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlpq`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlps`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlsk`
+    - `Tag`: `JpCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `MultiSealing`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`: `[]`
+        - `Tag`: `NvTh`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `NvTM`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `NvFc`
+    - `Tag`: `NBCl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `SCfT`
+  -
+    - `AsidSubCCIdOptionalVerifyList`:
+      - `ZG:ProxSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcic`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcii`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbas`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pmpc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pdcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `psnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pwcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `PxCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `RequireSubCCDigest`
+        - `Tag`: `asid`
+    - `Tag`: `PlCl`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd3`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `prpc`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMUB`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `rMNB`
+    - `Tag`: `rMC2`
+  -
+    - `Attributes`:
+      - `LocalCopyForceBootedOSTrustObject`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rSCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ArrowChipID`
+      - `ArrowUniqueChipID`
+    - `Tag`: `rcrt`
+  -
+    - `AssemblyIdentifierList`:
+      - `RearFacingCameraModuleSerialNumber`
+      - `RearFacingSuperWideCameraModuleSerialNumber`
+      - `RearFacingTelephotoCameraModuleSerialNumber`
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `RearFacingCameraModuleSerialNumber`
+    - `Tag`: `CmCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:BackSuperWideCameraSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `DPCd`
+      -
+        - `Attributes`: `[]`
+        - `Tag`: `DPCm`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `CALm`
+    - `Tag`: `CmPM`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:BackTeleCameraSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `DPCd`
+      -
+        - `Attributes`: `[]`
+        - `Tag`: `CALm`
+    - `Tag`: `CmPM`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `ecrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `MinimalSealingManifest`:
+      -
+        - `Attributes`:
+          - `Aries`
+          - `GeneratedByRestore`
+          - `RequiredToSeal`
+        - `DataInstanceIdentifierList`:
+          - `SavageChipID`
+          - `SavageUID`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+          - `eUICC`
+        - `DataInstanceIdentifierList`:
+          - `ZG:EUICCPairingIdentifier`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `AllowSikPubMissingWhenUnseal`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SikOverride`: `ZG:CentauriSikPub`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `PairedSoC`:
+      - `8230`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `NonPoR`
+    - `DataInstanceIdentifier`: `NFCUniqueChipID`
+    - `Tag`: `ShMC`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `NFCUniqueChipID`
+      - `UniqueDeviceID`
+    - `Tag`: `ShSC`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:BackglassCompassSerialNumber`
+    - `Tag`: `bCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:NovaSerialNumber`
+    - `Tag`: `cCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `CoverglassSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `PEid`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ScreenSerialNumber18d`
+      - `ZG:MogulIDSNTopModule`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `CoverglassSerialNumber`
+    - `Tag`: `GpC2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ProximaChipID`
+      - `ZG:ProximaECID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `WFCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `BTCS`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `W2CS`
+    - `Tag`: `BWC3`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `YonkersChipID`
+      - `YonkersUID`
+    - `Tag`: `ycrt`
+- `f47a0751beaa85243cca62ee5d3d901a97d9ec65`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `PanelSerialNumber`
+    - `Tag`: `ADCL`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlin`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlsk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlex`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnm`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlps`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlpq`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcii`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcve`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pmpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvi`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `preg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcic`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pbas`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pdcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pwcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `RosalineSerialNumber`
+    - `Tag`: `pfcl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `rCfg`
+- `f74e864ea49236baf6969a53f7e26f885e563fca`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `ADCL`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlex`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlin`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnm`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlpq`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlps`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `jlsk`
+    - `Tag`: `JpCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcic`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pcii`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pbas`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pmpc`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pdcl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `psnv`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `pwcl`
+    - `Tag`: `PlCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccessMultiData`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `EarlyAccessMultiData`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `EarlyAccessMultiData`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorRearSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:ScreenSerialNumber18d`
+      - `ZG:MogulIDSNTopModule`
+    - `Tag`: `tcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+- `f80d6121743a29d2c3bcd27ab177e778daa11e4d`:
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `ZG:TCONChipID`
+      - `ZG:TCONECID`
+    - `Tag`: `DpC2`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:FrontCameraSerialNumber`
+    - `Tag`: `FCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `AmbientLightSensorSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+- `fb1058dfd797f27cf54c169f40d2a87711ede4b7`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `4096`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+- `fc1eec2f7a4a576c6c430eafda1909e8a99c9724`:
+  -
+    - `Attributes`:
+      - `RequiredToPerformManifestCheck`
+      - `StoreCombined`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbcl`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToPerformManifestCheck`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `10240`
+    - `Tag`: `bbpv`
+  -
+    - `Attributes`:
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `BasebandUniqueId`
+    - `MaxSize`: `786432`
+    - `Tag`: `bbpc`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `PanelSerialNumber`
+    - `Tag`: `ADCL`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlin`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlsk`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlex`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnm`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlps`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `JasperSerialNumber`
+    - `Tag`: `jlpq`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcii`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcve`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psd1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pmpc`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf1`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `prf2`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcvi`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `preg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pcic`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pbas`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pdcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `pwcl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `SavageSerialNumber`
+    - `Tag`: `psnv`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `RosalineSerialNumber`
+    - `Tag`: `pfcl`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifierList`:
+      - `SavageChipID`
+      - `SavageUID`
+    - `Tag`: `pspc`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `Version2`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `rCfg`
+- `fd72d19558861c7fb1771f928e9c44801fe9492c`:
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `appv`
+  -
+    - `Attributes`:
+      - `DeviceOnlySigning`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `pcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `LynxSerialNumber`
+    - `Tag`: `lcrt`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MahiTxDieID`
+    - `Tag`: `PCCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `786432`
+    - `Tag`: `FSCl`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifier`: `MesaSerialNumber`
+    - `MaxSize`: `4096`
+    - `Tag`: `hop0`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:MogulIDSNAce3`
+    - `Tag`: `mcrt`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `ServerOnlySigning`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `scrt`
+  -
+    - `Attributes`:
+      - `DeprecateGIDSigning`
+      - `DeprecateVersion1`
+      - `ManifestVersion2`
+      - `Version2`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `Tag`: `seal`
+  -
+    - `Attributes`:
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:SecureElementID`
+    - `Tag`: `sePk`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `GeneratedByRestore`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `eCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `GeneratedByRestore`
+      - `RequiredToSeal`
+      - `StoreCombined`
+    - `DataInstanceIdentifierList`:
+      - `ChipID`
+      - `UniqueChipID`
+    - `Tag`: `fCfg`
+  -
+    - `Attributes`:
+      - `EarlyAccess`
+      - `EarlyAccessConsistencyRequired`
+      - `RequiredToSeal`
+      - `GeneratedByRestore`
+    - `DataInstanceIdentifier`: `ZG:PanelSerialNumber`
+    - `Tag`: `dCfg`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontLandSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `ZG:AmbientLightSensorFrontPortSerialNumber`
+    - `Tag`: `HmCA`
+  -
+    - `Attributes`:
+      - `RequiredToSeal`
+    - `DataInstanceIdentifier`: `UniqueDeviceID`
+    - `SubCCList`:
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `MtCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `TTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FfCl`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `PTWC`
+      -
+        - `Attributes`:
+          - `RequiredToSeal`
+        - `Tag`: `FPCL`
+    - `Tag`: `GpC3`
+- `iPad12,1`: `de112d43ffa2caa5418e06a72cd4504eea82b83f`
+- `iPad12,2`: `8a51865bed27fb1b3e99a272de07a1de98402f84`
+- `iPad13,1`: `187a89ee2ce62b2ba7daaeb002ea8f09a50dd476`
+- `iPad13,10`: `838a8421e04507c566f135b0e1b5ed0ca6e649ec`
+- `iPad13,11`: `838a8421e04507c566f135b0e1b5ed0ca6e649ec`
+- `iPad13,16`: `c0908d111b1e9c60b23c468538ad82c7088f5e27`
+- `iPad13,17`: `9370fae5190fb89bdf0702ed787baab0af332247`
+- `iPad13,18`: `b50b9b6cc644f0f9bbfec23688b71c64b093b122`
+- `iPad13,19`: `36668200788bd4e6fb3e68f19eda4bb2c6ee0f16`
+- `iPad13,2`: `226005ff26c457852c5e74a86e9ec1693ae11015`
+- `iPad13,4`: `d43834198d29ed09b0a381faf4408dd68aa8109b`
+- `iPad13,5`: `d43834198d29ed09b0a381faf4408dd68aa8109b`
+- `iPad13,6`: `838a8421e04507c566f135b0e1b5ed0ca6e649ec`
+- `iPad13,7`: `838a8421e04507c566f135b0e1b5ed0ca6e649ec`
+- `iPad13,8`: `d43834198d29ed09b0a381faf4408dd68aa8109b`
+- `iPad13,9`: `d43834198d29ed09b0a381faf4408dd68aa8109b`
+- `iPad14,1`: `c0908d111b1e9c60b23c468538ad82c7088f5e27`
+- `iPad14,10`: `fb1058dfd797f27cf54c169f40d2a87711ede4b7`
+- `iPad14,11`: `9b42d1916ad644da5a287d94c53e95ec95866d1a`
+- `iPad14,2`: `9370fae5190fb89bdf0702ed787baab0af332247`
+- `iPad14,3`: `97f807d60d4401beed0832edb42e2bf4603ea4d7`
+- `iPad14,4`: `17563e5ee07598f929d9373448e01d3b457efe82`
+- `iPad14,5`: `97f807d60d4401beed0832edb42e2bf4603ea4d7`
+- `iPad14,6`: `17563e5ee07598f929d9373448e01d3b457efe82`
+- `iPad14,8`: `c85402ff6923113fe500043ec2498530152e6876`
+- `iPad14,9`: `00e6bc4905a958cb0382d334aa6330273c36b877`
+- `iPad15,3`: `5a7b8b97ca043332f8cd607cffed887ce4c6fcd8`
+- `iPad15,4`: `bc7ecf76582e6e1203a5e1807eab5b43d02511d8`
+- `iPad15,5`: `1c0f66f8d34306dae7135a6c9f63568c5e1193d0`
+- `iPad15,6`: `9ac07d65df530aff39e16631a13df4ff1ec3d746`
+- `iPad15,7`: `406063974b6a5f2919feee3cb449095df95750ff`
+- `iPad15,8`: `bee010bda00fe1c67508189f89b35b10722b9215`
+- `iPad16,1`: `fd72d19558861c7fb1771f928e9c44801fe9492c`
+- `iPad16,10`: `4d1b5bedd055f06da0e8279ffaa08cf3840df25c`
+- `iPad16,11`: `48f1dde296c3db56ac6f3818de943e536ac40d6c`
+- `iPad16,2`: `37f6ab0c55894d9fe2f32a29e801c41c57b9ce68`
+- `iPad16,3`: `f74e864ea49236baf6969a53f7e26f885e563fca`
+- `iPad16,4`: `1aa2cf30ef48efd95aac9f02ffc9b0263e372118`
+- `iPad16,5`: `f74e864ea49236baf6969a53f7e26f885e563fca`
+- `iPad16,6`: `1aa2cf30ef48efd95aac9f02ffc9b0263e372118`
+- `iPad16,8`: `5c18896b833bcff77519a993e9e39a813afb65bd`
+- `iPad16,9`: `d16b117755debaade2de46019fafa59f97d7d824`
+- `iPad17,1`: `8aac992f6461b8fdc245594fcda5a4c862afe779`
+- `iPad17,2`: `b4861071ccbc6357781b4e77f3c4beb5e40178eb`
+- `iPad17,3`: `8aac992f6461b8fdc245594fcda5a4c862afe779`
+- `iPad17,4`: `b4861071ccbc6357781b4e77f3c4beb5e40178eb`
+- `iPad8,10`: `fc1eec2f7a4a576c6c430eafda1909e8a99c9724`
+- `iPad8,11`: `f47a0751beaa85243cca62ee5d3d901a97d9ec65`
+- `iPad8,12`: `fc1eec2f7a4a576c6c430eafda1909e8a99c9724`
+- `iPad8,9`: `f47a0751beaa85243cca62ee5d3d901a97d9ec65`
+- `iPhone12,1`: `0ac5773f7883fdce0cf94de5a9a1fd4a518dda47`
+- `iPhone12,3`: `0ac5773f7883fdce0cf94de5a9a1fd4a518dda47`
+- `iPhone12,5`: `0ac5773f7883fdce0cf94de5a9a1fd4a518dda47`
+- `iPhone12,8`: `246253df7581841e5c4dd6fa53eb775e1c33e856`
+- `iPhone13,1`: `b40fc752a013a3549182e6dadf8b69d8083d636a`
+- `iPhone13,2`: `b40fc752a013a3549182e6dadf8b69d8083d636a`
+- `iPhone13,3`: `ba02c5abb32272152631e3d6650b275308490bba`
+- `iPhone13,4`: `ba02c5abb32272152631e3d6650b275308490bba`
+- `iPhone14,2`: `20d0fc2599afd4eac5ab0b850ccb0110bc174590`
+- `iPhone14,3`: `20d0fc2599afd4eac5ab0b850ccb0110bc174590`
+- `iPhone14,4`: `9e14c9859aa609b0093816c1509aaefe77ee4d24`
+- `iPhone14,5`: `9e14c9859aa609b0093816c1509aaefe77ee4d24`
+- `iPhone14,6`: `7934c81f5e46645fbaade862c2b14bfd032a4c9e`
+- `iPhone14,7`: `3590eff74002cdbc2bd2d6f7d2868538ade82830`
+- `iPhone14,8`: `3590eff74002cdbc2bd2d6f7d2868538ade82830`
+- `iPhone15,2`: `b4d02f3bdcc7c5a55950ff7789b8b5df24b33d3f`
+- `iPhone15,3`: `b4d02f3bdcc7c5a55950ff7789b8b5df24b33d3f`
+- `iPhone15,4`: `d656b8e5c868fd9434caf261bcbfc18733d9be58`
+- `iPhone15,5`: `d656b8e5c868fd9434caf261bcbfc18733d9be58`
+- `iPhone16,1`: `cfc4ec051e1d7d0919faf7a22f6cd8249dda1dd0`
+- `iPhone16,2`: `cfc4ec051e1d7d0919faf7a22f6cd8249dda1dd0`
+- `iPhone16,3`: `7d139afb606deb9002833c09398d32514891bf94`
+- `iPhone17,1`: `daeeebc9a7c401f4b320b03649188d61a835361b`
+- `iPhone17,2`: `daeeebc9a7c401f4b320b03649188d61a835361b`
+- `iPhone17,3`: `29d75c3c0ed2673d304d4fde3ea15a6387219109`
+- `iPhone17,4`: `29d75c3c0ed2673d304d4fde3ea15a6387219109`
+- `iPhone17,5`: `7d008392fef6daaa5a6ef35ead475df917b1bb81`
+- `iPhone18,1`: `f38ebb86d50baec714552d181f5fad81690c452a`
+- `iPhone18,2`: `f38ebb86d50baec714552d181f5fad81690c452a`
+- `iPhone18,3`: `a601ddf3a292a5872f7aa336add7069120e45d03`
+- `iPhone18,4`: `a3e1ef3ebe10aa170c604c88ee2cf123dffd21a9`

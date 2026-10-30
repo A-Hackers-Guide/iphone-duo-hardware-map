@@ -1,0 +1,72 @@
+# `AppleThunderboltIPConnection`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.driver.AppleThunderboltIP`](../kexts/com.apple.driver.AppleThunderboltIP.md)
+- Object size: `0x1c8` (456 bytes)
+- Metaclass: `0xfffffe000b9d2350`; metaclass vtable `0xfffffe0008286bf8`; class vtable `0xfffffe00082866a0`
+- Registration (init): `0xfffffe000999e748`
+- Superclasses: [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## Strings in its kext that name it (60)
+
+- `AppleThunderboltIPConnection<%p>::logout - fState = %s\n`
+- `%lldus AppleThunderboltIPConnection<%p>::logout - ERROR: fTerminationComplete = true, aborting\n`
+- `%lldus AppleThunderboltIPConnection<%p>::compareRemoteUUID - WARNING: fTerminationStarted = true, aborting\n`
+- `%lldus AppleThunderboltIPConnection<%p>::configureRxPath - SRC: src_port = %p, src_hop_range = { %d, %d }\n`
+- `AppleThunderboltIPConnection<%p>::processLoginPacket - creating fNewXDLinkNotifier\n`
+- `%lldus AppleThunderboltIPConnection<%p>::createRxPath - ERROR: failed with 0x%08x, calling destroyRxPath\n`
+- `%lldus AppleThunderboltIPConnection<%p>::processLoginPacket - ERROR: sendResponsePacket failed with 0x%x\n`
+- `%lldus AppleThunderboltIPConnection<%p>::dispatchLogout - ERROR: dispatch failed with 0x%08x\n`
+- `%lldus AppleThunderboltIPConnection<%p>::createRxPath - Couldn't allocated Rx IOBufferMemoryDescriptor\n`
+- `AppleThunderboltIPConnection<%p>::initWithParams - fTBTRouteString = 0x%llx, fTBTPortNumber = 0x%x\n`
+- `%lldus AppleThunderboltIPConnection<%p>::processXDomainPacket - WARNING: fTerminationStarted = true, aborting\n`
+- `%lldus AppleThunderboltIPConnection<%p>::logout - removing fNewXDLinkNotifier\n`
+- `AppleThunderboltIPConnection<%p>::logout - WARNING: fTransmitter = NULL, skipping call to dispatchLogoutWithRequest\n`
+- `AppleThunderboltIPConnection<%p>::processXDomainPacket - ERROR: fTransmitter->dispatchProcessLoginResponsePacket failed with 0x%08x\n`
+- `AppleThunderboltIPConnection<%p>::setPowerState - WARNING: fTerminationStarted = true, aborting\n`
+- `AppleThunderboltIPConnection<%p>::finalize - setting fTerminationStarted = true\n`
+- `AppleThunderboltIPConnection<%p>::finalize - ERROR: commandSleep( fTerminationWaitingForControlCommands ) failed with 0x%08x\n`
+- `%lldus AppleThunderboltIPConnection<%p>::systemWillShutdown - WARNING: fTerminationStarted = true, aborting\n`
+- `%lldus AppleThunderboltIPConnection<%p>::processXDLinkNotification - ERROR: unexpected state: 0x%x\n`
+- `AppleThunderboltIPConnection<%p>::destroyRxPath - ERROR: deactivateSynchronous failed with 0x%08x\n`
+- `AppleThunderboltIPConnection<%p>::destroyControlCommands - ERROR: after releasing all commands, fControlCommandPoolCount = %d\n`
+- `AppleThunderboltIPConnection<%p>::xdLinkNotificationCallback - dispatchAsync( processXDLinkNotification )\n`
+- `AppleThunderboltIPConnection<%p>::finalize - fDispatchQueue finished, setting fTerminationComplete = true\n`
+- `AppleThunderboltIPConnection<%p>::rxCommandCallback - ERROR: fRxPacketFrameCount (0x%x) != frame_count (0x%x)\n`
+- `%lldus AppleThunderboltIPConnection<%p>::returnControlCommand - ERROR: command = NULL\n`
+- `AppleThunderboltIPConnection<%p>::rxCommandCallback - ERROR: fTerminationComplete = true, fOutstandingRxCommandCount = %d\n`
+- `%lldus AppleThunderboltIPConnection<%p>::createControlCommands - populating fControlCommandPool with %d commands\n`
+- `AppleThunderboltIPConnection<%p>::controlCommandCallback - incomingStatus = 0x%08x\n`
+- `%lldus AppleThunderboltIPConnection<%p>::sendResponsePacket - ERROR: command->submit failed with 0x%08x\n`
+- `%lldus AppleThunderboltIPConnection<%p>::login - ERROR: state changed during transmitter login (previous = %s, current = %s)\n`
+- `%lldus AppleThunderboltIPConnection<%p>::prepareForTermination - calling logout\n`
+- `AppleThunderboltIPConnection<%p>::start\n`
+- `%lldus AppleThunderboltIPConnection<%p>::login - WARNING: fTerminationStarted = true, aborting\n`
+- `AppleThunderboltIPConnection<%p>::setPowerState - ERROR: fRxQueue = NULL\n`
+- `AppleThunderboltIPConnection<%p>::processXDLinkNotification - ERROR: dispatchLogin failed with 0x%08x\n`
+- `AppleThunderboltIPConnection<%p>::processXDomainPacket - packetType = %s\n`
+- `AppleThunderboltIPConnection<%p>::processLoginPacket - ERROR: sendResponsePacket failed with 0x%x\n`
+- `%lldus AppleThunderboltIPConnection<%p>::login - ERROR: state changed during path activation (previous = %s, current = %s)\n`
+- `AppleThunderboltIPConnection<%p>::destroyRxPath - stopping fRxQueue %p\n`
+- `%lldus AppleThunderboltIPConnection<%p>::configureRxPath - DST: dst_port = %p, dst_hop_range = { %d, %d }\n`
+- `%lldus AppleThunderboltIPConnection<%p>::destroyRxPath - deactivating fRxPath (prev_state = %d)\n`
+- `%lldus AppleThunderboltIPConnection<%p>::logout - already in state %s, ignoring logout request\n`
+- `AppleThunderboltIPConnection<%p>::rxCommandCallback - ERROR: fIPPort = %p, rx_command = %p\n`
+- `AppleThunderboltIPConnection<%p>::processXDLinkNotification - ERROR: unexpected state: 0x%x\n`
+- `AppleThunderboltIPConnection<%p>::processLogoutPacket - ERROR: ExtractFromThunderboltIPProtocolHeader failed\n`
+- `%lldus AppleThunderboltIPConnection<%p>::dispatchLogin - WARNING: fTerminationStarted = true, aborting\n`
+- `AppleThunderboltIPConnection<%p>::login - ERROR: fRxPath->activateSynchronous failed with 0x%08x\n`
+- `%lldus AppleThunderboltIPConnection<%p>::createRxPath - creating fRxQueue\n`
+- `%lldus AppleThunderboltIPConnection<%p>::login - ERROR: fRxPath->activateSynchronous failed with 0x%08x\n`
+- `%lldus AppleThunderboltIPConnection<%p>::processXDLinkNotification - fXDLink has gone down, terminating\n`
+- `AppleThunderboltIPConnection<%p>::sendResponsePacket - [%d] logout response: replyStatus = 0x%x\n`
+- `AppleThunderboltIPConnection<%p>::processXDomainPacket - WARNING: fTerminationStarted = true, aborting\n`
+- `AppleThunderboltIPConnection<%p>::sendRequestPacket - ERROR: failed to build the packet\n`
+- `AppleThunderboltIPConnection<%p>::dispatchLogin - dispatchAsync( login )\n`
+- `AppleThunderboltIPConnection<%p>::createRxPath - creating fRxPath\n`
+- `%lldus AppleThunderboltIPConnection<%p>::destroyRxPath - stopping fRxQueue\n`
+- `%lldus AppleThunderboltIPConnection<%p>::rxCommandCallback - ERROR: fRxPacketOffset = 0, but frame_index = 0x%x\n`
+- `AppleThunderboltIPConnection<%p>::processLoginPacket - already in state %s, ignoring login request\n`
+- `AppleThunderboltIPConnection<%p>::configureRxPath - ERROR: failed with 0x%08x\n`
+- `AppleThunderboltIPConnection<%p>::processXDomainPacket - WARNING: fTransmitter = NULL, skipping call to dispatchProcessLogoutResponsePacket\n`

@@ -1,0 +1,974 @@
+# `com.apple.driver.AppleHIDTransportSPI`
+
+- Name: AppleHIDTransportSPI
+- Version: `1010.1`
+- UUID: `95A3B66E-AF25-3A7B-8D4D-4FAC7F00A4E9`
+- Source version: `10110.1.0.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleHIDTransport`](com.apple.driver.AppleHIDTransport.md) 1.0, [`com.apple.driver.AppleInputDeviceSupport`](com.apple.driver.AppleInputDeviceSupport.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (1) [KC]
+
+### AppleHIDTransportDeviceSPI
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDTransportSPI`
+- `IOClass`: `AppleHIDTransportDeviceSPI`
+- `IONameMatch`:
+  - `hid-transport,k1`
+  - `hid-transport,spi`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHIDTransportSPI`
+- `IOProviderClass`: `AppleARMSPIDevice`
+
+
+## C++ classes (5) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AHTHSWorkLoop` | 0x60 | IOCommandGate → IOEventSource |
+| `AppleHIDTransportBootloaderHBPP` | 0x1d8 | AppleHIDTransportBootloader → AIDService → IOService → IORegistryEntry |
+| `AppleHIDTransportDeviceSPI` | 0x2a0 | AppleHIDTransportDevice → AIDService → IOService → IORegistryEntry |
+| `AppleHIDTransportProtocolHIDSPI` | 0x218 | AppleHIDTransportProtocol → AIDService → IOService → IORegistryEntry |
+| `AppleHIDTransportProtocolZ2` | 0x1d0 | AppleHIDTransportProtocol → AIDService → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1560)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x000086ff off=0x004e8c80-0x004f137f addr=0xfffffe00074ecc80-0xfffffe00074f537f r--/r--   __TEXT            
+	sz=0x00000338 off=0x004e9300-0x004e9638 addr=0xfffffe00074ed300-0xfffffe00074ed638               __TEXT.__const            
+	sz=0x00007d47 off=0x004e9638-0x004f137f addr=0xfffffe00074ed638-0xfffffe00074f537f               __TEXT.__cstring          (CstringLiterals)
+001: LC_SEGMENT_64 sz=0x0003b0ac off=0x01f21cd0-0x01f5cd7c addr=0xfffffe0008f25cd0-0xfffffe0008f60d7c r-x/r-x   __TEXT_EXEC       
+	sz=0x0003aa8c off=0x01f21cd0-0x01f5c75c addr=0xfffffe0008f25cd0-0xfffffe0008f6075c          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000620 off=0x01f5c75c-0x01f5cd7c addr=0xfffffe0008f6075c-0xfffffe0008f60d7c          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x000001a0 off=0x0494a110-0x0494a2b0 addr=0xfffffe000b94e110-0xfffffe000b94e2b0 rw-/rw-   __DATA            
+	sz=0x000000c8 off=0x0494a110-0x0494a1d8 addr=0xfffffe000b94e110-0xfffffe000b94e1d8               __DATA.__data             
+	sz=0x000000d8 off=0x00000000-0x000000d8 addr=0xfffffe000b94e1d8-0xfffffe000b94e2b0               __DATA.__common           (Zerofill)
+003: LC_SEGMENT_64 sz=0x00004570 off=0x010e95b0-0x010edb20 addr=0xfffffe00080ed5b0-0xfffffe00080f1b20 rw-/rw-   __DATA_CONST      
+	sz=0x00000028 off=0x010e95b0-0x010e95d8 addr=0xfffffe00080ed5b0-0xfffffe00080ed5d8         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000028 off=0x010e95d8-0x010e9600 addr=0xfffffe00080ed5d8-0xfffffe00080ed600         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x000032e8 off=0x010e9600-0x010ec8e8 addr=0xfffffe00080ed600-0xfffffe00080f08e8         __DATA_CONST.__const            
+	sz=0x00000a80 off=0x010ec8e8-0x010ed368 addr=0xfffffe00080f08e8-0xfffffe00080f1368         __DATA_CONST.__kalloc_type      
+	sz=0x00000320 off=0x010ed368-0x010ed688 addr=0xfffffe00080f1368-0xfffffe00080f1688         __DATA_CONST.__kalloc_var       
+	sz=0x00000310 off=0x010ed688-0x010ed998 addr=0xfffffe00080f1688-0xfffffe00080f1998         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000188 off=0x010ed998-0x010edb20 addr=0xfffffe00080f1998-0xfffffe00080f1b20         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 245 at 0x04adbfcc
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     95A3B66E-AF25-3A7B-8D4D-4FAC7F00A4E9
+008: LC_SOURCE_VERSION           10110.1.0.0.0
+009: LC_FUNCTION_STARTS          offset=0x004aa3bf8 size=0x638
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleHIDTransportSPI`
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDTransportSPI`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleHIDTransportSPI`
+- `CFBundleNumericVersion`: `0`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1010.1`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1010.1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `"Copyright © 2016 Apple Inc. All rights reserved. [AppleInputDeviceSupport_kexts-10110.1]"`
+- `OSBundleCompatibleVersion`: `1.0`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleHIDTransport.kext/PlugIns/AppleHIDTransportSPI.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198900650880`
+- `_PrelinkExecutableRelativePath`: `AppleHIDTransportSPI`
+- `_PrelinkExecutableSize`: `294587`
+- `_PrelinkExecutableSourceAddr`: `-2198900650880`
+- `_PrelinkKmodInfo`: `-2198828949232`
+
+## Strings (853) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `BootErrorInfo`
+- `Preconstructed`
+- `[0x%llx][%llx][%s::%s]: Property %s does not have address. Not sending`
+- `suspend`
+- `HIDSPI: [%s] image mode = %u`
+- `[0x%llx][%llx][%s::%s]: Resetting master to power on slave`
+- `Short`
+- `mask`
+- `The range of valid memory is too large to be represented by this type, or [begin, end) is not a well-formed range`
+- `site.HSMSPITest`
+- `function-enable_cs`
+- `HIDSPI: ERROR: [%s] Unknown report type %X`
+- `1111121211111112111111121111212112121121211212112121121211212`
+- `configureSPI(kSPIConfigBootloader) == 0 `
+- `[0x%llx][%llx][%s::%s]: ERROR!! corrupt packet checksum == 0x%04X. calculated == 0x%04X`
+- `_cachedReportInfo`
+- `[0x%llx][%llx][%s::%s]: ERROR!! trying again getting device info (further failures will be silent)`
+- `deviceGetReport`
+- `[0x%llx][%llx][%s::%s]: Requirement (%s) not satisfied - Skip this phase (%s)`
+- `[0x%llx][%llx][%s::%s]: Sleeping %ums to ensure min %ums `
+- `[0x%llx][%llx][%s::%s]: We don't have a slave. Ignoring.`
+- `Max Consecutive Boot Failures`
+- `ping_block_invoke`
+- `constructedBuffer`
+- `txMD`
+- `site.TestCallback`
+- `Round To Bytes`
+- `Provider`
+- `_spiNub->transferData(nullptr, nullptr, 0, 0, nullptr, nullptr, 0, 0, true) == 0 `
+- `HIDSPI: [%s] Queueing resume message`
+- `rxBuffer->getLength() >= minLength`
+- `PingRequestsOn`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Couldn't get device info`
+- `[0x%llx][%llx][%s::%s]: GET report: 0x%02X`
+- `Long`
+- `_hbpp`
+- `sendBinary`
+- `initReporters`
+- `written < sizeof(tempStr)`
+- `setCallback`
+- `[0x%llx][%llx][%s::%s]: Input report with %lu bytes`
+- `txBuffer`
+- `[0x%llx][%llx][%s::%s]: Device booted. Waiting for firmware ready interrupt`
+- `_idleSleepSource`
+- `result == 0 `
+- `[0x%llx][%llx][%s::%s]: We don't have a valid firmware`
+- `[0x%llx][%llx][%s::%s]: Request Calibration Operation %u`
+- `interfaceInfo`
+- `[0x%llx][%llx][%s::%s]: Powering on slave`
+- `Z2 Config`
+- `1`
+- `logRet == 0 `
+- `transferInvalidInterfaceId`
+- `[0x%llx][%llx][%s::%s]: %s = %lu`
+- `max-recovered-failures`
+- `protocol-config`
+- `DelayMs`
+- `[0x%llx][%llx][%s::%s]: `
+- `transferInvalidCRC`
+- `_spiNub->getPower() != kAHTPowerStateOff`
+- `powerOff`
+- `txMap`
+- `[0x%llx][%llx][%s::%s]: ERROR!! \"Round To Bytes\" must be a power of 2. Using default value of %u`
+- `invalidAckReceived`
+- `ReadProperty`
+- `copyImagePayload`
+- `enableLDO`
+- `[0x%llx][%llx][%s::%s]: Interrupts should be left enabled, but they are explicitly disabled. Belatedly enabling`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/SPI/AppleHIDTransportProtocolZ2.cpp`
+- `[0x%llx][%llx][%s::%s]: Invalid interface`
+- `112`
+- `1211111212221212111111121121211111111111122222111211111212121222212`
+- `[0x%llx][%llx][%s::%s]: Scheduling enumeration`
+- `controlReport`
+- `HIDSPI: [%s] Suspend sleep`
+- `ackReceived`
+- `txBuf`
+- `min-power-off`
+- `[0x%llx][%llx][%s::%s]: %s = Data with %u bytes`
+- `[0x%llx][%llx][%s::%s]: Reading result data %u bytes`
+- `fieldValue`
+- `requestCalibration`
+- `Test Type`
+- `[0x%llx][%llx][%s::%s]: ignoring.. no callback`
+- `bootChip`
+- `_interfacesInitialized`
+- `getReport`
+- `[0x%llx][%llx][%s::%s]: Performing control read - %s, Stage 2`
+- `otp-sn`
+- `MemRMW`
+- `transferReceived`
+- `checkForWork`
+- `site.HSMDeviceTest`
+- `[0x%llx][%llx][%s::%s]: Powering off`
+- `Poll`
+- `hid-merge-personality`
+- `caEventPayload`
+- `site.HIDInterface*`
+- `[0x%llx][%llx][%s::%s]: SMC notify : %hhu`
+- `descriptor->checkDescriptor()`
+- `waitUntilCommandDone`
+- `perform_SPI_WAKE_COMMAND`
+- `getInterfacePower`
+- `asyncTaskAction`
+- `HIDSPI: ERROR: [%s] Device NAK`
+- `[0x%llx][%llx][%s::%s]: SPI Interrupt type %d`
+- `handleOpen`
+- `Platform ID`
+- `No Write Combine Cache`
+- `packet`
+- `idleTimerAction`
+- `setBusState(BusState::kBusStateIdleSuspended) == 0 `
+- `HIDSPI: ERROR: [%s] HSTransfer::isValid() returned %u`
+- `DeviceInterface`
+- `HIDSPI: ERROR: [%s] Parser status %u`
+- `!_clientAction`
+- `recovery-sequence`
+- `Calibration Sequence`
+- `i8@?0`
+- `prepareMemoryDump`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/SPI/AppleHIDTransportBootloaderHBPP.cpp`
+- `[0x%llx][%llx][%s::%s]: %s: error %x logging to CoreAnalytics`
+- `[0x%llx][%llx][%s::%s]: Boot Sequence:`
+- `reportId == payloadReportId`
+- `Skip Kill Device Reset`
+- `[0x%llx][%llx][%s::%s]: System shutdown received`
+- `configUint16`
+- `calibrationData`
+- `111111211112211112211112211111111211112211112211112211211121111111222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Current report ID (0x%X) doesn't match last report ID (0x%X)`
+- `shareableBuffer`
+- `Action`
+- `SPI`
+- `Interface Config`
+- `1111111111111111111111111112222222222222222112222212`
+- `HIDSPI: ERROR: [%s] Received duplicated input report with frame number %u`
+- `deviceMatch`
+- `[0x%llx][%llx][%s::%s]: Ping requested (powerState:%u requested:%u bootPending:%u)`
+- `AppleHIDTransport`
+- `ProductID`
+- `VersionNumber`
+- `setPowerGated(&state) == 0 `
+- `DMA`
+- `newStaticConfig`
+- `deviceReadResultData`
+- `[0x%llx][%llx][%s::%s]: ERROR!! corrupt frame header. LSB of first 5 bytes summed is 0x%02X (not 0)`
+- `Cmp`
+- `handleInputReport`
+- `inputParserCompleted`
+- `111112111111121111111212212112221111111211111112111111121111111111111111111111111112222222222222222112222212`
+- `enable`
+- `Reset Request Input Report`
+- `CoreAnalyticsFields`
+- `data`
+- `[0x%llx][%llx][%s::%s]: Requested device descriptor`
+- `handleSystemManagementNotification`
+- `[0x%llx][%llx][%s::%s]: ERROR!! getCMDStatus() returned: 0x%08X`
+- `[0x%llx][%llx][%s::%s]: cmu-address = 0x%08x`
+- `set`
+- `[0x%llx][%llx][%s::%s]: Received iface descriptor %u`
+- `_config.transferLength > 0`
+- `deviceMatch->setObject(gIOParentMatchKey, nameMatch)`
+- `[0x%llx][%llx][%s::%s]: Unsupported report type : %d`
+- `[0x%llx][%llx][%s::%s]: ERROR!! status 0x%08X transferring data`
+- `ret`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unknown boot action %s`
+- `[0x%llx][%llx][%s::%s]: Device is sleeping - power on to perform report`
+- `[0x%llx][%llx][%s::%s]: Device test`
+- `Small stage 1`
+- `powerOn`
+- `[0x%llx][%llx][%s::%s]: Device ready`
+- `Min DMA Transfer Size`
+- `[0x%llx][%llx][%s::%s]: Polling %08X(%08X)==%08X`
+- `site.AppleHIDTransportProtocolHIDSPI`
+- `[0x%llx][%llx][%s::%s]: Arming attach timer : %u/%u`
+- `Transfer`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/SPI/OTP.cpp`
+- `site.BufferOffsetParams`
+- `[0x%llx][%llx][%s::%s]: ERROR!! result 0x%08X trying to read frame.`
+- `BootErrorCommand`
+- `HIDSPI: ERROR: [%s] Received control response on interface 0x%02X but pending interface 0x%02X`
+- `HIDSPI: [%s] S/N: '%s'`
+- `asserted`
+- `handleFatalError`
+- `[0x%llx][%llx][%s::%s]: Reset delay %d ms`
+- `Transaction Header Byte Count`
+- `Device Tree Overrides`
+- `HIDSPI: ERROR: [%s] Unexpected state %u:%02X`
+- `HIDSPI: [%s] %s`
+- `(_rxPacket.getLength() % sizeof(*array)) == 0`
+- `[0x%llx][%llx][%s::%s]: Timeout waiting for %s interrupt after %ums. Forcing interrupt`
+- `_eventLogger`
+- `[0x%llx][%llx][%s::%s]: Transfer size for %s set to the first %u bytes`
+- `property`
+- `logPropertyToEvent`
+- `Asic RevID`
+- `HIDSPI: [%s] host interrupt occurred`
+- `type < kNumSPIConfigs`
+- `firmware ready`
+- `[0x%llx][%llx][%s::%s]: Requested iface descriptor %u`
+- `disableRequests`
+- `txParserCompleted`
+- `ChipBootTimeouts`
+- `nameMatch`
+- `[0x%llx][%llx][%s::%s]: Constructing HBPP packets for %s`
+- `_interfaceConfig`
+- `rxParserCompleted`
+- `workLoop`
+- `[0x%llx][%llx][%s::%s]: Process SMC notification - Device power %s`
+- `_spiDevice`
+- `executeScript`
+- `sizeNum`
+- `Inter Transaction Us`
+- `[0x%llx][%llx][%s::%s]: Quiesce Device receieved - Sleep suspend.`
+- `registerInterface`
+- `HIDSPI: [%s] [Stage 2] %lu %u`
+- `buffer`
+- `poll`
+- `site.AHTHSWorkLoop`
+- `Use SetResultData`
+- `Parser`
+- `FirmwareFailures`
+- `configSequence`
+- `Min Power Off Ms`
+- `[0x%llx][%llx][%s::%s]: delaying %u milliseconds after Z2_WAKE_CMD`
+- `cmu-address`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/SPI/HIDSPI/AppleHIDTransportProtocolHIDSPI.cpp`
+- `[0x%llx][%llx][%s::%s]: Starting test`
+- `RecoveredBootFailures`
+- `[0x%llx][%llx][%s::%s]: Ignoring power on because there is no protocol`
+- `protocol`
+- `Wake Delay Us`
+- `serialNumberData`
+- `Merge Interface Config`
+- `[0x%llx][%llx][%s::%s]: Received device descriptor`
+- `/AppleInternal/Library/BuildRoots/4~CatOugCMYZPM8ItVkUU3VgJJ7hcZKt6z6wCsuBY/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/standalone/hidspi/include/hidspi/HSMDeviceInterface.h`
+- `attempts`
+- `[0x%llx][%llx][%s::%s]: Report size is %d bytes and provided buffer is %llu bytes`
+- `updateStatus`
+- `[0x%llx][%llx][%s::%s]: Reset request snooped in the frame`
+- `[0x%llx][%llx][%s::%s]: Sending preconstructed firmware %u of %u`
+- `[0x%llx][%llx][%s::%s]: Resuming device`
+- `[0x%llx][%llx][%s::%s]: Back to sleep suspend after handling control report`
+- `[0x%llx][%llx][%s::%s]: ignoring.. device is turned off`
+- `Implied Ack`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Couldn't talk to firmware on boot`
+- `function-reset`
+- `loadFirmware`
+- `checkNewImage`
+- `_bootloader`
+- `121111121222121211111211122112111111121112212112111112222212122222222222222222221121`
+- `readSpiConfig`
+- `tempPowerTimerAction`
+- `Interface Version`
+- `transferSent`
+- `transferRetry`
+- `[0x%llx][%llx][%s::%s]: %08X(%08X)=%08X`
+- `callback`
+- `newParser`
+- `HIDSPI: [%s] Input received`
+- `[0x%llx][%llx][%s::%s]: Sending initial SPI payload`
+- `cacheBootloaderConfig`
+- `HIDSPI Config`
+- `[0x%llx][%llx][%s::%s]: %08X=%08X`
+- `1211111212221212111111121121211112211112212112222221212211`
+- `[0x%llx][%llx][%s::%s]: Device is off or has no firmware. Returning kIOReturnNoPower.`
+- `[0x%llx][%llx][%s::%s]: Attach message received.`
+- `HIDSPI: [%s] Input report with %u bytes on interface %u`
+- `/AppleInternal/Library/BuildRoots/4~CatOugCMYZPM8ItVkUU3VgJJ7hcZKt6z6wCsuBY/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/standalone/hidspi/include/hidspi/HSMSPITest.h`
+- `setPowerStateGated`
+- `result`
+- `chip-id-address`
+- `[0x%llx][%llx][%s::%s]: Calibration Chunk %u`
+- `[0x%llx][%llx][%s::%s]: Resume Device receieved - Resume`
+- `site.HSMParserTest`
+- `rxMap`
+- `[0x%llx][%llx][%s::%s]: %s:`
+- `initializeTransactionBuffers`
+- `[0x%llx][%llx][%s::%s]: Requirement (%s) satisfied - Execute this phase (%s)`
+- `Max Size`
+- `errorReceived`
+- `Product`
+- `12111121112111211111111211112121`
+- `Normal Boot Ms`
+- `Max Packet Size`
+- `deviceGetReportInfo`
+- `[0x%llx][%llx][%s::%s]: Firmware Info:`
+- `errorSent`
+- `_reporter`
+- `[0x%llx][%llx][%s::%s]: Transfer test`
+- `parseDeviceDescriptor`
+- `site.AppleHIDTransportDeviceSPI`
+- `CS Delay`
+- `[0x%llx][%llx][%s::%s]: Cannot enable level interrupts inside handler`
+- `[0x%llx][%llx][%s::%s]: Ignoring image of type '%s'`
+- `transferInvalidLength`
+- `HIDSPI: [%s] HID Descriptor %u bytes`
+- `boolResult`
+- `Clock Polarity`
+- `Master`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Current command (0x%X) doesn't match last command (0x%X)`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Too many errors reading a frame of data. Killing device`
+- `size % sizeof(uint32_t) == 0`
+- `[0x%llx][%llx][%s::%s]: Resuming to suspend`
+- `HIDSPI: ERROR: [%s] %s, %s %s:%d`
+- `HIDSPI: ERROR: [%s] Transfer couldn't be suspended: 0x%08x`
+- `verifyReceivedTransfer`
+- `_numInterfaces < kMaxInterfaces`
+- `readModifyWrite`
+- `sizeNumber->unsigned32BitValue() <= kMaxReadPropertySize`
+- `noAttachRecoverAction`
+- `sendSuspend`
+- `site.DeviceInterface`
+- `config`
+- `No Data`
+- `HIDSPI: [%s] Iface %u: '%s'`
+- `init`
+- `addData`
+- `configUintPtr`
+- `interruptAction`
+- `enableInterrupt`
+- `site.AppleHIDTransportProtocolZ2`
+- `[0x%llx][%llx][%s::%s]: SET report: 0x%02X  length: %u`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Current report ID (0x%X) doesn't match previous report ID (0x%X)`
+- `[0x%llx][%llx][%s::%s]: Constructing and sending firmware`
+- `setBusState`
+- `[0x%llx][%llx][%s::%s]: Power on`
+- `[0x%llx][%llx][%s::%s]: Device detached, tear down.`
+- `_spiNub->transferData(nullptr, nullptr, 0, 0, nullptr, nullptr, 0, 0, false) == 0 `
+- `processRx`
+- `111`
+- `HIDSPI: [%s] Resume`
+- `site.BootAction*`
+- `ret == 0 `
+- `21`
+- `nakSent`
+- `_spiNub`
+- `setBusState(BusState::kBusStateResumed) == 0 `
+- `Busy Delay Ms`
+- `site.HSMTransferDevice`
+- `handleStart`
+- `sizeNumber`
+- `[0x%llx][%llx][%s::%s]: %s: No calibration data. Skipping`
+- `type`
+- `site.AHTHSBuffer`
+- `[0x%llx][%llx][%s::%s]: Resume bus from suspend to handle control report`
+- `[0x%llx][%llx][%s::%s]: Device already enumerated`
+- `HIDSPI: ERROR: [%s] Sequence mismatch: sent %u, received %u`
+- `%s.%s`
+- `[0x%llx][%llx][%s::%s]: Putting device back to sleep state after report`
+- `Device Interface Id`
+- `doSPITransaction`
+- `read`
+- `setResetAsserted`
+- `getCMDStatus`
+- `Sleep Report`
+- `\"%s\" @%s:%d`
+- `output`
+- `mergeInterfaceInfo`
+- `HIDSPI: ERROR: [%s] Device busy. Waiting %u ms before retry`
+- `array[i] == *packetId`
+- `asyncTask`
+- `[0x%llx][%llx][%s::%s]: Go ahead with bootload. Not waiting for chip ready interrupt.`
+- `setReportGated(&reportStruct, getInterface(0)) == 0 `
+- `bytesLeft <= payload->getLength()`
+- `payload || preconstructed`
+- `ioRet == 0 `
+- `forClient && arg`
+- `[0x%llx][%llx][%s::%s]: ERROR!! rxBuffer[0] == 0x%02X, expected 0x%02X`
+- `nakReceived`
+- `Max Input Report Length`
+- `[0x%llx][%llx][%s::%s]: SPI test`
+- `commonInterfaceInfo`
+- `Init Payload`
+- `[0x%llx][%llx][%s::%s]: Performing control write - Long, Stage 2`
+- `setInterfacePower`
+- `No Attach Timeout`
+- `[0x%llx][%llx][%s::%s]: Nothing to do`
+- `setPowerGated`
+- `[0x%llx][%llx][%s::%s]: Powering off slave`
+- `[0x%llx][%llx][%s::%s]: Resuming from sleep`
+- `AppleHIDTransportProtocolHIDSPI`
+- `setTxParser`
+- `waitForDevice`
+- `on`
+- `[0x%llx][%llx][%s::%s]: Invalid interfaceId %u`
+- `Back To Sleep Delay Ms`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Ignoring unknown image type '%s'`
+- `report->getLength() > 0`
+- `feature`
+- `getNewRxParser`
+- `handleStop`
+- `[0x%llx][%llx][%s::%s]: Getting report info for 0x%02X`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot find interface 0`
+- `mt-merge-personality`
+- `[0x%llx][%llx][%s::%s]: Invalid BootAction`
+- `site.AHTProtocolHBPP15`
+- `busySent`
+- `[0x%llx][%llx][%s::%s]: FW reset detected. Tear down.`
+- `/AppleInternal/Library/BuildRoots/4~CatOugCMYZPM8ItVkUU3VgJJ7hcZKt6z6wCsuBY/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/standalone/hidspi/include/hidspi/HSMHIDInterface.h`
+- `HIDSPI: [%s] Received %u input reports (size %u)`
+- `_interruptEventSource`
+- `cacheProtocolConfig`
+- `Idle Sleep Timeout`
+- `AppleHIDTransportDeviceSPI`
+- `_tempPower.timer`
+- `sleep`
+- `getBootloader()->isBootloaderReady()`
+- `reset-sequence`
+- `[0x%llx][%llx][%s::%s]: Quiesce Device receieved`
+- `Metadata`
+- `handleLoadImage`
+- `[0x%llx][%llx][%s::%s]: Parser test`
+- `[0x%llx][%llx][%s::%s]: Not forcing iterrupt from protocol since device is closed.`
+- `/AppleInternal/Library/BuildRoots/4~CatOugCMYZPM8ItVkUU3VgJJ7hcZKt6z6wCsuBY/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/standalone/hidspi/include/hidspi/HSParserDevice.h`
+- `Always Powered`
+- `deviceSetReportShort`
+- `site.CalibrationChunk*`
+- `[0x%llx][%llx][%s::%s]: hbpp-version = 0x%08x`
+- `_asyncTaskSource`
+- `interfaceInfo->merge(mergeable) == true`
+- `ReporterIDMismatch`
+- `[0x%llx][%llx][%s::%s]: Delay before going to sleep...`
+- `HIDSPI: [%s] Suspend idle`
+- `configureSPI`
+- `*device`
+- `deviceSetReportLong`
+- `createInterfaces`
+- `resetDevice`
+- `hsRet == 0 `
+- `Chip Boot Ms`
+- `[0x%llx][%llx][%s::%s]: Truncated input packet`
+- `RequestCalibration`
+- `Mask`
+- `powerWillChange`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unexpected power state %u`
+- `true`
+- `HIDSPI: [%s] message: %u submessage: %u`
+- `DeviceSPIFailureCounts`
+- `[0x%llx][%llx][%s::%s]: ERROR!! %s, %s file: %s, line: %d, value: 0x%08X`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Timeout polling %08X(%08X)==%08X (last read %08X)`
+- `sleep-sequence`
+- `Protocol`
+- `[0x%llx][%llx][%s::%s]: Reading result length`
+- `[0x%llx][%llx][%s::%s]: ERROR!! report size bigger than max packet size (%u > %u) returning kIOReturnDeviceError`
+- `HIDSPI: ERROR: [%s] Invalid parser with type 0x%02X and status %u`
+- `_config.paddingLength <= sizeof(_config.paddingValue)`
+- `[0x%llx][%llx][%s::%s]: Sleep transition failed on previous sleep. Resetting.`
+- `[0x%llx][%llx][%s::%s]: We were booting when we went to sleep. Resetting.`
+- `[0x%llx][%llx][%s::%s]: otp-sn = 0x%08x (size %u)`
+- `readArray`
+- `shouldResume`
+- `!sleepFailed`
+- `HIDSPI: [%s] Received %u packets`
+- `Clock Period Ms`
+- `firmwareData`
+- `readyToMemoryDump`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Handle interrupt returned 0x%08X. Killing device.`
+- `HIDSPI: [%s] Num interfaces: %u`
+- `handleClose`
+- `[0x%llx][%llx][%s::%s]: Device is booting. Returning kIOReturnBusy.`
+- `transferInvalidType`
+- `Device`
+- `HIDSPI: [%s] Sent packet %u type %02x with %u bytes in interface %u`
+- `off`
+- `121112111111`
+- `site.AHTProtocolHBPP14`
+- `[0x%llx][%llx][%s::%s]: Power off`
+- `VendorID`
+- `doTeardown`
+- `_sleepSequence->runSequence(false) == 0 `
+- `updateReport`
+- `sendFirmware`
+- `[0x%llx][%llx][%s::%s]: Requesting calibration`
+- `site.AHTProtocolHBPP13`
+- `[0x%llx][%llx][%s::%s]: Device is off`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Interface Config shouldn't be defined when running HIDSPI tests`
+- `HIDSPI: [%s] Sent %u packets`
+- `[0x%llx][%llx][%s::%s]: Getting device info`
+- `12111112122212121111112111111111122112111111122212122212111`
+- `%08X`
+- `site.OTP`
+- `[0x%llx][%llx][%s::%s]: Ignoring set power request since device is being disabled`
+- `false`
+- `ChipBootFailure`
+- `[0x%llx][%llx][%s::%s]: Performing control write (PIO) - Short`
+- `HIDSPI: [%s] Invalid interface id %u`
+- `AHTHSWorkLoop`
+- `[0x%llx][%llx][%s::%s]: chip-id-address = 0x%08x`
+- `queueMessage`
+- `/AppleInternal/Library/BuildRoots/4~CatOugCMYZPM8ItVkUU3VgJJ7hcZKt6z6wCsuBY/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/standalone/hidspi/include/hidspi/HSMTransferTest.h`
+- `/AppleInternal/Library/BuildRoots/4~CatOugCMYZPM8ItVkUU3VgJJ7hcZKt6z6wCsuBY/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/standalone/hidspi/include/hidspi/HSParserTest.h`
+- `[0x%llx][%llx][%s::%s]: Restoring power state`
+- `AppleHIDTransportProtocolZ2`
+- `valueNumber`
+- `Run In Restore`
+- `configString`
+- `[0x%llx][%llx][%s::%s]: Starting HID SPI Master Device`
+- `[0x%llx][%llx][%s::%s]: Reusing previous enumeration with %u interfaces`
+- `CS To Clock Us`
+- `Clock To CS Us`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Enumeration failed. Killing device`
+- `FieldName`
+- `bootSequence`
+- `[0x%llx][%llx][%s::%s]: Nothing to do during restore`
+- `[0x%llx][%llx][%s::%s]: ERROR!! %s 0x%02X (%u bytes) received while in test mode`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Power state should be %u but it is %u`
+- `ret == kHSReturnSuccess`
+- `site.HSMDevice`
+- `HIDSPI: [%s] Transitioned from state %u:%02X to %u:%02X`
+- `getInterfaceDescriptor`
+- `Big stage 2`
+- `FirmwareBootFailure`
+- `resetDeviceGated`
+- `[0x%llx][%llx][%s::%s]: Bootload pending. Waiting for chip ready interrupt.`
+- `CS Postamble Delay`
+- `idle-sleep-timeout`
+- `ProtocolZ2FailureCounts`
+- `sendCalibration`
+- `[0x%llx][%llx][%s::%s]: 0x%08x`
+- `[0x%llx][%llx][%s::%s]: Beginning read of length %d at address 0x%x`
+- `offset`
+- `11111112`
+- `report`
+- `Transfer Length`
+- `[0x%llx][%llx][%s::%s]: Disabling external driver requests`
+- `cacheProviderConfig`
+- `[0x%llx][%llx][%s::%s]: Attach received while attached. Tear down.`
+- `!needsTransfer`
+- `configUint32`
+- `getDescriptor`
+- `/AppleInternal/Library/BuildRoots/4~CatOugCMYZPM8ItVkUU3VgJJ7hcZKt6z6wCsuBY/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/standalone/hidspi/include/hidspi/HSMParserTest.h`
+- `[0x%llx][%llx][%s::%s]: EDT SPI config: ChipSelect %u, Period %u, Polarity %u, Phase %u, BitFirst %u, WordSize %u, WordDelay %u, CSDelay %u, CSPreambleDelay %u, CSPostambleDelay %u\n`
+- `_bootTimeout`
+- `addressNumber`
+- `_noAttachRetryTimer`
+- `Sleep`
+- `createInterfacesFromConfig`
+- `startTest`
+- `hidInterface`
+- `[0x%llx][%llx][%s::%s]: ordinal: %lu requestedPowerOn: %u`
+- `Clock Phase`
+- `[0x%llx][%llx][%s::%s]: host interrupt occurred`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Attach wasn't received within %u ms, resetting device`
+- `!suspendConfig || suspendConfig->resumeCallback`
+- `txBuffer->getLength() >= minLength`
+- `configBool`
+- `HIDSPI: ERROR: [%s] Received parser is different from inputParser`
+- `[0x%llx][%llx][%s::%s]: Slave is already on`
+- `Skip Memory Dump Reset`
+- `checkHBPPMode`
+- `AppleHIDTransportBootloaderHBPP`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Failed to read Memory Dump Section '%s' (err=0x%08X)`
+- `HIDSPI: ERROR: [%s] Invalid transfer packet received`
+- `HIDInterface`
+- `/AppleInternal/Library/BuildRoots/4~CatOugCMYZPM8ItVkUU3VgJJ7hcZKt6z6wCsuBY/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/standalone/hidspi/include/hidspi/HSTransferTest.h`
+- `/AppleInternal/Library/BuildRoots/4~CatOugCMYZPM8ItVkUU3VgJJ7hcZKt6z6wCsuBY/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/standalone/hidspi/include/hidspi/HSMDeviceTest.h`
+- `rxMD`
+- `site.AppleHIDTransportBootloaderHBPP`
+- `readSerialNumber`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unknown async task: %u`
+- `[0x%llx][%llx][%s::%s]: Ignoring system management notification (%hhu) - Device Powered off`
+- `HIDSPI: ERROR: [%s] Received parser completed without request pending!!!!`
+- `transferDevice`
+- `Doomclock Timeout Sec`
+- `configData`
+- `iter`
+- `readMemoryDumpSection`
+- `retVal == 0 `
+- `get`
+- `rxBuffer`
+- `waitForRegisterMask`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Couldn't talk to firmware`
+- `[0x%llx][%llx][%s::%s]: Spurious interrupt after disabling event source. It will be run after reenabling it.`
+- `[0x%llx][%llx][%s::%s]: Sending %s to address 0x%08X (packet %u of %u)`
+- `site.HIDInterface`
+- `master`
+- `SPI Config`
+- `Reset Retry Delay Ms`
+- `ProtocolError`
+- `Device Info`
+- `Value`
+- `TimeoutMs`
+- `TransferSize`
+- `[0x%llx][%llx][%s::%s]: Attempting bulk read of size %d at address 0x%x`
+- `addNumber`
+- `transferData`
+- `ahtInterface`
+- `[0x%llx][%llx][%s::%s]: rxBuffer[0] == 0x%02X, expected 0x%02X`
+- `busyReceived`
+- `processTx`
+- `HIDSPI: ERROR: [%s] Received control response on interface 0x%02X but no pending requests`
+- `Max Recovered Failures`
+- `[0x%llx][%llx][%s::%s]: ERROR!! _bufferMD->prepare() returned 0x%08X`
+- `asyncEnumeration`
+- `HIDSPI: ERROR: [%s] Device error`
+- `start`
+- `noDataBuffer`
+- `configUint8`
+- `[0x%llx][%llx][%s::%s]: ERROR!! _reportMD->prepare() returned 0x%08X`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Too many errors performing get report. Killing device`
+- `readOneFrameOfData`
+- `[0x%llx][%llx][%s::%s]: %s = %s`
+- `Inter Stage Us`
+- `Padding Length`
+- `Tear Down At Reset`
+- `[0x%llx][%llx][%s::%s]: message: %u submessage: %u`
+- `[0x%llx][%llx][%s::%s]: Process SMC notification - OS boot`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot get report info. Killing device`
+- `configReport`
+- `description`
+- `preconstructed`
+- `[0x%llx][%llx][%s::%s]: Watchdog Reset:`
+- `OSBoundedPtr.h`
+- `Tear Down At Detach`
+- `12111112111121111221111221`
+- `always-powered`
+- `[0x%llx][%llx][%s::%s]: ERROR!! After poll timeout %08X=%08X`
+- `timeoutMs`
+- `readChipInfo`
+- `transferSize <= totalSize`
+- `deviceAttached`
+- `[0x%llx][%llx][%s::%s]: Config async resume`
+- `Normal`
+- `HIDSPI: [%s] [Stage 1] %lu %u`
+- `bounded_ptr<T>::operator*: Dereferencing this pointer would access memory outside of the bounds set originally`
+- `written > 0`
+- `controlReportGated`
+- `Max Retries`
+- `iface`
+- `spiDevice`
+- `noDataBuffer->getLength() >= minLength`
+- `enumerate`
+- `maskNum`
+- `size`
+- `Watchdog Reset`
+- `ackSent`
+- `[0x%llx][%llx][%s::%s]: Reading SuspendConfig from binary config`
+- `[0x%llx][%llx][%s::%s]: Received hid descriptor %u`
+- `resume`
+- `transfer`
+- `isPreconstructed || count == 1`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Failed to read word (err=0x%08X, offset=%u, address=0x%X)`
+- `input`
+- `[0x%llx][%llx][%s::%s]: ERROR!! sleep() returned 0x%08X. Trying to reset and waiting for the system to wake to continue`
+- `[0x%llx][%llx][%s::%s]: SPI transfer with %llu bytes using %s%s`
+- `Word Delay`
+- `disableInterrupt`
+- `Boot`
+- `_rxBuffer`
+- `[0x%llx][%llx][%s::%s]: Async task : %u`
+- `_txTransfer`
+- `_myWorkLoop`
+- `[0x%llx][%llx][%s::%s]: Device doesn't need firmware. Waiting for firmware ready interrupt.`
+- `rxBuf`
+- `CommandMismatch`
+- `[0x%llx][%llx][%s::%s]: Requesting calibration with %ums delay`
+- `[0x%llx][%llx][%s::%s]: Mem R/M/W Operation %u`
+- `[0x%llx][%llx][%s::%s]: Device Tree Overrides:`
+- `[0x%llx][%llx][%s::%s]: External driver requests re-enabled`
+- `parser`
+- `HIDSPI: [%s] Interrupt while suspended`
+- `Slave`
+- `_spiBufferOffsetParams`
+- `[0x%llx][%llx][%s::%s]: sending %s to 0x%08x`
+- `[0x%llx][%llx][%s::%s]: %s Suspending device`
+- `/AppleInternal/Library/BuildRoots/4~CatOugCMYZPM8ItVkUU3VgJJ7hcZKt6z6wCsuBY/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/standalone/hidspi/include/hidspi/HSMDevice.h`
+- `HIDSPI: ERROR: [%s] Received different parser than request pending!!!!`
+- `[0x%llx][%llx][%s::%s]: Device booted. Not waiting for firmware ready interrupt`
+- `Boot Timeout`
+- `[0x%llx][%llx][%s::%s]: Process SMC notification - System restart`
+- `[0x%llx][%llx][%s::%s]: Entering sleep`
+- `str`
+- `parseInterfaceDescriptor`
+- `HIDSPI: [%s] Master requested resume`
+- `getDeviceDescriptor`
+- `HIDSPI: [%s] Resume requested`
+- `disable`
+- `[0x%llx][%llx][%s::%s]: Device doesn't need firmware. Not waiting for firmware ready interrupt.`
+- `[0x%llx][%llx][%s::%s]: Spurious interrupt. Boot not pending.`
+- `readWord`
+- `HIDSPI: [%s] Received packet %u id %u type %02x with %u bytes in interface %u`
+- `112111121112111211111111211112121111222221121111121111211112211112212121111122111122111122112112111112211112211112211211211111221111221111221121121111122111122111122112112111112211112211112211211111111211111112111111121111111211111111111111111111111111122222222222222221122222121`
+- `_sleepSequence->runSequence(true) == 0 `
+- `Clean Report Cache On Reset`
+- `success`
+- `[0x%llx][%llx][%s::%s]: Packet length not found`
+- `FirmwareBootTimeouts`
+- `powerOff(true) == 0 `
+- `isResetRequest`
+- `totalSizeNumber`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/SPI/AppleHIDTransportDeviceSPI.cpp`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Powering off due to reaching maximum number of consecutive boot failures (%d)`
+- `[0x%llx][%llx][%s::%s]: Interrupts should be left explicitly disabled. Disable now`
+- `[0x%llx][%llx][%s::%s]: Initializing transaction buffers with a max size of %u bytes`
+- `[0x%llx][%llx][%s::%s]: Performing control read - %s, Stage 1`
+- `[0x%llx][%llx][%s::%s]: attempting to read a frame`
+- `offset + size <= data->getLength()`
+- `[0x%llx][%llx][%s::%s]: Skipping ACK check`
+- `_nextRxTransfer`
+- `[0x%llx][%llx][%s::%s]: %s = %u`
+- `systemWillShutdownGated`
+- `interruptAction_block_invoke`
+- `[0x%llx][%llx][%s::%s]: Interrupt disabled. We'll force the interrupt the next time it's enabled`
+- `Half Clock Delay`
+- `payloadData`
+- `Firmware Info`
+- `Boot Sequence`
+- `deviceDetached`
+- `min-dma-transfer`
+- `[0x%llx][%llx][%s::%s]: Cached Z2 device info found`
+- `[0x%llx][%llx][%s::%s]: ERROR!! _reportMD was NULL`
+- `Inter Packet Delay`
+- `_txBuffer`
+- `buildPreconstructed`
+- `Enforce Max Report Length`
+- `setPower(_tempPower.prevState) == 0 `
+- `[0x%llx][%llx][%s::%s]: ERROR!! requesting 0x%02X: rxBuffer[0] == 0x%02X. returning kIOReturnDeviceError`
+- `Tear Down At FW Reset`
+- `buildTxPacket`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Couldn't talk to chip`
+- `service`
+- `cacheDeviceConfig`
+- `[0x%llx][%llx][%s::%s]: %s receieved`
+- `[0x%llx][%llx][%s::%s]: ERROR!! _bufferMD was NULL`
+- `[0x%llx][%llx][%s::%s]: ERROR!! bad length (%d). Max supported is %d.`
+- `_hsWorkLoop`
+- `[0x%llx][%llx][%s::%s]: Key: %s, value 0x%x`
+- `otp-address`
+- `[0x%llx][%llx][%s::%s]: %s %s 0x%02X (%u bytes)`
+- `interface->getInterfaceId() == _numInterfaces`
+- `Small stage 2`
+- `powerOff(false) == 0 `
+- `Idle`
+- `Big stage 1`
+- `PIO`
+- `Bootloader SPI Config`
+- `checkChecksum`
+- `[0x%llx][%llx][%s::%s]: sending Z2_WAKE_CMD`
+- `deviceGetResultLength`
+- `hbpp-version`
+- `[0x%llx][%llx][%s::%s]: Get power request occurred while device is being disabled`
+- `HIDSPI: ERROR: [%s] Resetting current parser because of a new transfer with offset 0`
+- `HIDSPI: ERROR: [%s] Couldn't send current request (status %u)!!!!`
+- `[0x%llx][%llx][%s::%s]: Configuring SPI (%u)`
+- `requestMasterReset`
+- `[0x%llx][%llx][%s::%s]: reportID 0x%02x has status 0x%02x. Report not valid`
+- `[0x%llx][%llx][%s::%s]: otp-address = 0x%08x`
+- `caEventIter`
+- `11`
+- `bootTimeoutAction`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Invalid state %u`
+- `handleFrame`
+- `boolRet`
+- `[0x%llx][%llx][%s::%s]: Already suspended, skipping idle suspend`
+- `Tear Down At Reattach`
+- `Manufacturer`
+- `[0x%llx][%llx][%s::%s]: Resuming`
+- `[0x%llx][%llx][%s::%s]: Device not on`
+- `121111122111122111122111`
+- `(_txPacket.getLength() % sizeof(*array)) == 0`
+- `ReadOnError`
+- `/AppleInternal/Library/BuildRoots/4~CatOugCMYZPM8ItVkUU3VgJJ7hcZKt6z6wCsuBY/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/usr/local/standalone/hidspi/include/hidspi/HSMTransferDevice.h`
+- `sendControlRequest`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unknown power state ordinal: %lu`
+- `setChipPower`
+- `setReportGated`
+- `[0x%llx][%llx][%s::%s]: ERROR!! requesting 0x%02X: _bufferRx[0] == 0x%02X. returning kIOReturnDeviceError`
+- `getAddressMaskValue`
+- `Resume Pulse Us`
+- `HIDSPI: [%s] Resuming`
+- `[0x%llx][%llx][%s::%s]: Ignoring reset request from slave (powerState:%u).`
+- `Resume Device`
+- `fieldName`
+- `offsetNum`
+- `Address`
+- `_hidInterfaces`
+- `Report Timeout Ms`
+- `[0x%llx][%llx][%s::%s]: Requested hid descriptor %u`
+- `[0x%llx][%llx][%s::%s]: We don't have a valid MT config`
+- `ReadModifyWrite`
+- `[0x%llx][%llx][%s::%s]: Value at address 0x%X (0x%X) does not match expected magic value (0x%X)`
+- `site.HSMTransferTest`
+- `verifyRxPacket`
+- `resetFromSlave`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot create config dictionary`
+- `cleanCachedReportInfo`
+- `?`
+- `_serialNumber`
+- `setBusState(prevState) == 0 `
+- `[0x%llx][%llx][%s::%s]: Reading DeviceConfig from binary config`
+- `updateReportGated`
+- `OTP`
+- `function-set_int_config`
+- `[0x%llx][%llx][%s::%s]: Parsed %s`
+- `configureReport`
+- `handleMessage`
+- `deasserted`
+- `chip boot request`
+- `[0x%llx][%llx][%s::%s]: Boot Timeout`
+- `[0x%llx][%llx][%s::%s]: Cannot disable level interrupts inside handler`
+- `getDeviceInfo`
+- `[0x%llx][%llx][%s::%s]: Tearing down stale interfaces`
+- `No Attach Retries`
+- `interface`
+- `HIDSPI: [%s] ********************** %u transfers`
+- `waitForDeviceAttached`
+- `powerOff_block_invoke`
+- `[0x%llx][%llx][%s::%s]: Getting last CMD status`
+- `[0x%llx][%llx][%s::%s]: Read %u bytes from %u into property '%s'`
+- `readBulk`
+- `site.CalibrationChunk`
+- `Resume Delay Ms`
+- `number`
+- `getReportGated`
+- `[0x%llx][%llx][%s::%s]: Performing control write - Long, Stage 1`
+- `[0x%llx][%llx][%s::%s]: %s 0x%02X with %u bytes`
+- `addString`
+- `forceInterrupt`
+- `setBusState(BusState::kBusStateSleepSuspended) == 0 `
+- `[0x%llx][%llx][%s::%s]: Unexpected state %u`
+- `HIDSPI: [%s] new image mode = %u`
+- `controlWrite`
+- `power-sequence`
+- `SkipCheck`
+- `powerHasChanged`
+- `Sleep Delay Ms`
+- ` (keep CS)`
+- `Timeout Before Sleep Us`
+- `[0x%llx][%llx][%s::%s]: Enumeration completed successfully`
+- `HIDSPI: [%s] Received no data`
+- `_spiDevice->setPower(kAHTPowerStateOff) == 0 `
+- `[0x%llx][%llx][%s::%s]: Reloading config from device tree`
+- `handleInterrupt`
+- `Protocol SPI Config`
+- `adjustInterrupt`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Too many errors performing set report. Killing device`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Current command (0x%X) doesn't match previous command (0x%X)`
+- `request`
+- `Continue On Failure`
+- `site.BootAction`
+- `Name`
+- `deviceInterface`
+- `PingRequestsOff`
+- `bootChip() == 0 `
+- `CS Preamble Delay`
+- `ChecksumMismatch`
+- `[0x%llx][%llx][%s::%s]: %s`
+- `[0x%llx][%llx][%s::%s]: Ignoring reset request since device is being disabled`
+- `site.CallbackContext`
+- `SerialNumber`
+- `setReport`
+- `Power Off On Reset`

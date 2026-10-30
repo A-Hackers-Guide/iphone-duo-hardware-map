@@ -1,0 +1,34 @@
+# `SBWindowSceneDebugHUDCoordinator`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `SBWindowSceneAttachmentObserving`
+- 4 instance variables, 4 properties, 5 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"SBDebugHUDDefaults" _debugHUDDefaults;
+@"<BSDefaultObserver>" _debugHUDDefaultsObserver;
+@"NSHashTable" _windowScenes;
+@"NSMapTable" _debugHUDWindows;
+```
+
+## Properties
+
+```
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[SBWindowSceneDebugHUDCoordinator windowSceneDidDisconnect:];
+-[SBWindowSceneDebugHUDCoordinator windowSceneDidConnect:];
+-[SBWindowSceneDebugHUDCoordinator _tearDownDebugHUDWindowForWindowScene:];
+-[SBWindowSceneDebugHUDCoordinator _updateDebugHUDWindowsForReason:];
+-[SBWindowSceneDebugHUDCoordinator initWithDebugHUDDefaults:];
+```

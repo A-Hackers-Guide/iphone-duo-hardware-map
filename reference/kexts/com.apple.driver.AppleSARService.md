@@ -1,0 +1,3237 @@
+# `com.apple.driver.AppleSARService`
+
+- Name: AppleSARService
+- Version: `1`
+- UUID: `D35C82D9-22D7-3ABE-A4A2-349703B343DF`
+- Source version: `1594.0.0.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleEmbeddedPCIE`](com.apple.driver.AppleEmbeddedPCIE.md) 1.0.0, [`com.apple.driver.AppleOnboardSerial`](com.apple.driver.AppleOnboardSerial.md) 1.0, [`com.apple.driver.ApplePTD`](com.apple.driver.ApplePTD.md) 1.0.0, [`com.apple.iokit.CoreAnalyticsFamily`](com.apple.iokit.CoreAnalyticsFamily.md) 1.0, [`com.apple.iokit.IOAccessoryManager`](com.apple.iokit.IOAccessoryManager.md) 1.0.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (4) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/aop-spmi0/baseband-heb`](../devicetree/root__arm-io__aop-spmi0__baseband-heb.md) | `AppleSARSPMIHEB` | `baseband,heb` |
+| [`/arm-io/aop-spmi1/wlan-idc`](../devicetree/root__arm-io__aop-spmi1__wlan-idc.md) | `AppleSARSPMIIDCWLAN` | `wlan,idc` |
+| [`/arm-io/aop-spmi1/baseband-idc`](../devicetree/root__arm-io__aop-spmi1__baseband-idc.md) | `AppleSARSPMIIDC` | `baseband,idc` |
+| [`/arm-io/baseband-ptd`](../devicetree/root__arm-io__baseband-ptd.md) | `AppleBasebandSARPTD` | `baseband,ptd` |
+
+## IOKit personalities (5) [KC]
+
+### AppleBasebandSARPTD
+- `CFBundleIdentifier`: `com.apple.driver.AppleSARService`
+- `IOClass`: `AppleBasebandSARPTD`
+- `IOMatchCategory`: `AppleBasebandSARPTD`
+- `IONameMatch`: `baseband,ptd`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSARService`
+- `IOProviderClass`: `AppleARMIODevice`
+
+### AppleSARSPMIHEB
+- `CFBundleIdentifier`: `com.apple.driver.AppleSARService`
+- `IOClass`: `AppleSARSPMIHEB`
+- `IOMatchCategory`: `AppleSARSPMI`
+- `IONameMatch`: `baseband,heb`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSARService`
+- `IOProviderClass`: `AppleARMSPMIDevice`
+- `supported-device`:
+  - `dal25`: `True`
+  - `mav23`: `True`
+  - `mav24`: `True`
+  - `mav25`: `True`
+
+### AppleSARSPMIIDC
+- `CFBundleIdentifier`: `com.apple.driver.AppleSARService`
+- `IOClass`: `AppleSARSPMIIDC`
+- `IOMatchCategory`: `AppleSARSPMI`
+- `IONameMatch`: `baseband,idc`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSARService`
+- `IOProviderClass`: `AppleARMSPMIDevice`
+- `supported-device`:
+  - `int1`: `True`
+  - `int2`: `True`
+  - `int3`: `True`
+  - `mav23`: `True`
+  - `mav24`: `True`
+  - `mav25`: `True`
+
+### AppleSARSPMIIDCWLAN
+- `CFBundleIdentifier`: `com.apple.driver.AppleSARService`
+- `IOClass`: `AppleSARSPMIIDCWLAN`
+- `IOMatchCategory`: `AppleSARSPMI`
+- `IONameMatch`: `wlan,idc`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSARService`
+- `IOProviderClass`: `AppleARMSPMIDevice`
+- `supported-device`:
+  - `int1`: `True`
+  - `int2`: `True`
+  - `int3`: `True`
+  - `mav23`: `True`
+  - `mav24`: `True`
+  - `mav25`: `True`
+
+### AppleSARService
+- `CFBundleIdentifier`: `com.apple.driver.AppleSARService`
+- `IOClass`: `AppleSARService`
+- `IOKitDebug`: `65535`
+- `IOMatchCategory`: `AppleSARService`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSARService`
+- `IOProviderClass`: `IOResources`
+- `IOResourceMatch`: `IOKit`
+- `IOUserClientClass`: `AppleSARServiceUserClient`
+- `cellular-sar-boost-supported`:
+  - `int1`: `True`
+  - `int2`: `True`
+  - `int3`: `True`
+  - `mav25`: `True`
+- `e85-mitigation-supported`:
+  - `int1`: `True`
+  - `int2`: `True`
+  - `int3`: `True`
+  - `mav23`: `True`
+  - `mav24`: `True`
+  - `mav25`: `True`
+- `hsar-supported`:
+  - `int1`: `True`
+  - `int2`: `True`
+  - `int3`: `True`
+- `sar-fusion-supported`:
+  - `dal25`: `True`
+  - `int1`: `True`
+  - `int2`: `True`
+  - `int3`: `True`
+  - `mav23`: `True`
+  - `mav24`: `True`
+  - `mav25`: `True`
+
+
+## C++ classes (34) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `ABSUserClient` | 0x30 |  |
+| `AppleBasebandPTD` | 0xc0 | IOService → IORegistryEntry |
+| `AppleBasebandPTDUnitTest` | 0xa8 | IOService → IORegistryEntry |
+| `AppleBasebandSARPTD` | 0xc8 | AppleBasebandPTD → IOService → IORegistryEntry |
+| `AppleE85Mitigation` | 0x128 | IOService → IORegistryEntry |
+| `AppleHSARMultipleRadio` | 0x59f0 | IOService → IORegistryEntry |
+| `AppleHSARSingleRadio` | 0x27a0 | IOService → IORegistryEntry |
+| `ApplePTDClientInterface` | 0x28 |  |
+| `AppleRFSensing` | 0x240 | IOService → IORegistryEntry |
+| `AppleRFSensingINT` | 0x2d8 | AppleRFSensing → IOService → IORegistryEntry |
+| `AppleSARConnectivityCellBoost` | 0x128 | IOService → IORegistryEntry |
+| `AppleSARFusion` | 0x248 | IOService → IORegistryEntry |
+| `AppleSARInterface` | 0x160 | IOService → IORegistryEntry |
+| `AppleSARInterfaceSPMIIDC` | 0x188 | AppleSARInterface → IOService → IORegistryEntry |
+| `AppleSARInterfaceSPMIWLANIDC` | 0x178 | AppleSARInterface → IOService → IORegistryEntry |
+| `AppleSARSPMI` | 0x190 | IOService → IORegistryEntry |
+| `AppleSARSPMIHEB` | 0x190 | AppleSARSPMI → IOService → IORegistryEntry |
+| `AppleSARSPMIIDC` | 0x190 | AppleSARSPMI → IOService → IORegistryEntry |
+| `AppleSARSPMIIDCWLAN` | 0x190 | AppleSARSPMI → IOService → IORegistryEntry |
+| `AppleSARService` | 0x268 | IOService → IORegistryEntry |
+| `AppleSARServiceUserClient` | 0x178 | IOUserClient → IOService → IORegistryEntry |
+| `AppleSARTimer` | 0xd0 | IOService → IORegistryEntry |
+| `DebugInfo` | 0x6418 |  |
+| `KernelLog` | 0x10 |  |
+| `PTDClientRegistry` | 0x18 |  |
+| `PTDDataOperations` | 0x28 |  |
+| `PTDDriverBuffer` | 0x18 |  |
+| `PTDDriverCircularBufferWrapper` | 0x18 |  |
+| `PTDInternalRegistrationData` | 0x6458 |  |
+| `PTDInterruptHandler` | 0x40 |  |
+| `PTDInterruptInfo` | 0x18 |  |
+| `PTDUnitTestClient` | 0xa8 | IOService → IORegistryEntry |
+| `SARCallbackWrapper` | 0x20 |  |
+| `SARSPMIInterruptBufferHelper` | 0x20 |  |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1800)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x00046d3c off=0x006d6230-0x0071cf6c addr=0xfffffe00076da230-0xfffffe0007720f6c r--/r--   __TEXT            
+	sz=0x00025297 off=0x006d6998-0x006fbc2f addr=0xfffffe00076da998-0xfffffe00076ffc2f               __TEXT.__os_log           
+	sz=0x00001286 off=0x006fbc30-0x006fceb6 addr=0xfffffe00076ffc30-0xfffffe0007700eb6               __TEXT.__const            
+	sz=0x000200b6 off=0x006fceb6-0x0071cf6c addr=0xfffffe0007700eb6-0xfffffe0007720f6c               __TEXT.__cstring          (CstringLiterals)
+001: LC_SEGMENT_64 sz=0x000fb8f0 off=0x02482de0-0x0257e6d0 addr=0xfffffe0009486de0-0xfffffe00095826d0 r-x/r-x   __TEXT_EXEC       
+	sz=0x000fb1c0 off=0x02482de0-0x0257dfa0 addr=0xfffffe0009486de0-0xfffffe0009581fa0          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000730 off=0x0257dfa0-0x0257e6d0 addr=0xfffffe0009581fa0-0xfffffe00095826d0          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00001398 off=0x04990380-0x04991718 addr=0xfffffe000b994380-0xfffffe000b995718 rw-/rw-   __DATA            
+	sz=0x00000133 off=0x04990380-0x049904b3 addr=0xfffffe000b994380-0xfffffe000b9944b3               __DATA.__data             
+	sz=0x000011b8 off=0x00000000-0x000011b8 addr=0xfffffe000b9944b8-0xfffffe000b995670               __DATA.__common           (Zerofill)
+	sz=0x000000a8 off=0x00000000-0x000000a8 addr=0xfffffe000b995670-0xfffffe000b995718               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x0001bde0 off=0x011c3590-0x011df370 addr=0xfffffe00081c7590-0xfffffe00081e3370 rw-/rw-   __DATA_CONST      
+	sz=0x000000e8 off=0x011c3590-0x011c3678 addr=0xfffffe00081c7590-0xfffffe00081c7678         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x000000f0 off=0x011c3678-0x011c3768 addr=0xfffffe00081c7678-0xfffffe00081c7768         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x0000dec8 off=0x011c3768-0x011d1630 addr=0xfffffe00081c7768-0xfffffe00081d5630         __DATA_CONST.__const            
+	sz=0x0000d640 off=0x011d1630-0x011dec70 addr=0xfffffe00081d5630-0xfffffe00081e2c70         __DATA_CONST.__kalloc_type      
+	sz=0x00000280 off=0x011dec70-0x011deef0 addr=0xfffffe00081e2c70-0xfffffe00081e2ef0         __DATA_CONST.__kalloc_var       
+	sz=0x00000398 off=0x011deef0-0x011df288 addr=0xfffffe00081e2ef0-0xfffffe00081e3288         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000d0 off=0x011df288-0x011df358 addr=0xfffffe00081e3288-0xfffffe00081e3358         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000018 off=0x011df358-0x011df370 addr=0xfffffe00081e3358-0xfffffe00081e3370         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 256 at 0x04ae3894
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     D35C82D9-22D7-3ABE-A4A2-349703B343DF
+008: LC_SOURCE_VERSION           1594.0.0.0.0
+009: LC_FUNCTION_STARTS          offset=0x004aaecf8 size=0xbf8
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleSARService`
+- `CFBundleIdentifier`: `com.apple.driver.AppleSARService`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleSARService`
+- `CFBundleNumericVersion`: `16809984`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2022 Apple Inc. All rights reserved.`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+  - `2`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleSARService.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198898630096`
+- `_PrelinkExecutableRelativePath`: `AppleSARService`
+- `_PrelinkExecutableSize`: `1439652`
+- `_PrelinkExecutableSourceAddr`: `-2198898630096`
+- `_PrelinkKmodInfo`: `-2198828661888`
+
+## Strings (3747) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+First 3000 of 3747.
+
+**[__TEXT.__cstring]**
+
+- `#D: %s::%s:%d: Tx state has not updated\n`
+- `#T: %s::%s:%d: Central SAR Current Index (Before Calculation): %u\n`
+- `%s::%s:%d: Received RF occlusion state report from baseband`
+- `%s::%s:%d: Received mitigation frequency [%d]: %lld\n`
+- `ssize_t _getProductProperty(const char *const, char *, size_t)`
+- `%s::%s:%d: Failed to create memory descriptor`
+- `total_ter_budget_cluster1`
+- `#D: %s::%s:%d: CASE 1: (ts:%llu) < (rt-64:%llu)`
+- `%s::%s:%d: TX update to %s`
+- `total_ter_budget_cluster2`
+- `%s::%s:%d: SPMI Driver is not ready yet!\n`
+- `totalMPE_block_invoke`
+- `roll_nominally_closer_duration_s`
+- `SUCCESS`
+- `%s::%s:%d: SAR Fusion Data object is NULL!\n`
+- `uwb_power`
+- `static IOReturn AppleSARServiceUserClient::extBudgetScalingFactor(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: IDC SPMI read @ (0x%x): 0x%x (%lu bytes)\n`
+- `%s::%s:%d: PTD controller not created`
+- `%s::%s:%d: Received OCP write ready signal from the baseband\n`
+- `%s::%s:%d: Warning! Received an extra WAKE_DONE signal from BB when already is %s state\n`
+- `site.PTDInterruptInfo`
+- `connectivityResidual`
+- `UNKNOWN`
+- `%s::%s:%d: Found the IOPort Feature RF Coex!\n`
+- `#D: %s::%s:%d: Received SAR Message Response without an error\n`
+- `#D: %s::%s:%d: SAR Fusion: Tuner State: %s SPACE (Overriding: %s)\n`
+- `%s::%s:%d: SPMI event list is not allocated yet!\n`
+- `%s::%s:%d: Received WAKE_DONE interrupt\n`
+- `Periodic Budget`
+- `wristState`
+- `Failed to init from OSObject\n`
+- `%s:%d: Failed to create SAR Fusion!`
+- `#D: %s::%s:%d: Returning without performing any action because the buffer is not ready yet\n`
+- `%s::%s:%d: WARNING: Write-Ready bit is already cleared\n`
+- `%s::%s:%d: No buffer found for fourCC 0x%08x in get`
+- `%s::%s:%d: WARNING: TER Remaining is zero because the sum of total SAR average(%u) and MPE average(%u) is more than the regulatory TER (%s)`
+- `static IOReturn AppleSARServiceUserClient::extCallState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `pitch_farther_duration_s`
+- `addSPMIInterrupt`
+- `%s::%s:%d: SPMI is ready`
+- `processingRFCoexNotificationGated_block_invoke`
+- `%s::%s:%d: SAR Fusion is supported. Creating the object\n`
+- `site.AppleSARServiceUserClient`
+- `%s::%s:%d: Buffer too small: need %zu bytes, have %zu bytes`
+- `site.AppleSARInterfaceSPMIWLANIDC`
+- `%s::%s:%d: Connectivity Headroom fully covers Connectivity SAR Budget: Reserved Connectivity SAR budget`
+- `static IOReturn AppleSARServiceUserClient::extSARSensingCALastSubmit(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `sendTunerStateGated`
+- `BT`
+- `135..178`
+- `#D: %s::%s:%d: [ClusterMap] Phase1: hsarIdx=%u -> invalid radio cluster (0x%02x), skipped`
+- `%s::%s:%d: A callback for the use detection feature has not been set up`
+- `#T: %s::%s:%d: Non Colocated Antenna: %s, Number of SAR Cluster: %u, SAR Selection: %s, SAR Request Type: %s, Stewie: %s`
+- `centralMPE_block_invoke`
+- `%s::%s:%d: [%s][%s] ptd handler receive metadata[%zu]=0x%llx`
+- `%s::%s:%d: Failed to get %s service!\n`
+- `%s::%s:%d: WARNING: The Budget-Max (%u) is less than Budget-Min-Future (%u). So, the Budget-Margin (%u) is zero`
+- `static IOReturn AppleSARServiceUserClient::extGripState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `#D: %s::%s:%d: %s\n`
+- `Limit Budget`
+- `#D: %s::%s:%d: Voice State is updating`
+- `ptdGetDebugInfo`
+- `%s::%s:%d: [Read result][%s] data: %llx, metaData: %llx`
+- `R187`
+- `%u.%u%u%u`
+- `%s::%s:%d: Failed to allocate client array`
+- `#D: %s:%d: boot-args: %s: %u\n`
+- `%s::%s:%d: [%s] No buffer entry available`
+- `initialize_block_invoke`
+- `121111121222121211111`
+- `budgetDistributionSleepGated`
+- `#D: %s::%s:%d: [ClusterMap] budgetDistributionSleepGated: mapping fBTSAR.budget (Connectivity)`
+- `%s::%s:%d: Unregistering user client callback for: %s`
+- `State 1`
+- `#D: %s::%s:%d: [ClusterMap] unpackClusterMapping: packed=0x%02x, count=%u -> [%u, %u, %u, %u]`
+- `%s::%s:%d: Central Cellular Budget: %u, Connectivity Budget: %u`
+- `%s::%s:%d: Failed to allocate fourCC info array with capacity %d`
+- `UInt32 readPropertyUInt32(IOService *, const char *, const UInt32)`
+- `Right Hand`
+- `%s::%s:%d: Updating wake status from %s to %s\n`
+- `initializeRFSensingOBDGated`
+- `State A/B/C`
+- `%s::%s:%d: Non-colocated mode is disabled. Minimum budget: %u`
+- `evaluateCellularBoostGated`
+- `%s::%s:%d: Failed to call user client callback at index %u: (ret: 0x%x)\n`
+- `yes`
+- `previous_sar_boost_duration`
+- `#D: %s::%s:%d: [Start] Calculating Stewie Transition Wait Time: %s\n`
+- `addEventTrackingArray`
+- `WAKING`
+- `%s::%s:%d: Cellular TAS disabled: stopping SAR Report Monitor`
+- `bt_connected`
+- `OCP init interrupt`
+- `site.PTDInternalRegistrationData`
+- `%s::%s:%d: Trying to trigger logdump due to connectivity SAR report error`
+- `%s::%s:%d: [Static Connectivity] Connectivity Headroom fully covers Connectivity SAR Budget: Reserved Connectivity SAR budget`
+- `%s::%s:%d: [%s] Failed to get SPMI object!\n`
+- `TAS Disabled`
+- `%s::%s:%d: TER SPLSR Average: %u, Remaining SPLSR: %u\n`
+- `12111112122212121111111111112222222211111111121`
+- `%s::%s:%d: Instance of SAR Selection (%p), or instance of Regulatory Info (%p) is not ready`
+- `%s::%s:%d: Failed to map memory descriptor`
+- `Mic 3`
+- `stateABOsiris_block_invoke_2`
+- `%s::%s:%d: Connectivity SPMI error on reading Regulatory Information`
+- `1211111212221212111111211211211211211211211211211211211221212111122112222`
+- `Fallback`
+- `%s::%s:%d: VSWR Only Mode: %s (Override: %s)`
+- `stewieTransitionWaitTimeGated`
+- `cellular_sar_consumed_cluster2`
+- `%s::%s:%d: [Static Connectivity] Connectivity Headroom is less than Connectivity SAR Budget, reserve budgets vs. Standalone SAR limit`
+- `#D: %s::%s:%d: Minimum TER Budget: %u`
+- `%s::%s:%d: connectivity report is NULL!`
+- `updateOrientation`
+- `%s::%s:%d: Failed to get matching dictionary for IOPort!\n`
+- `%s::%s:%d: Getting debug info for fourCC: 0x%x, user buffer: %p, size: %zu`
+- `AppleRFSensing`
+- `%s::%s:%d: Updating existing sar consumed value. count: %u\n`
+- `registerInterrupts`
+- `%s::%s:%d: Instance of Regulatory Info (%p) is not ready`
+- `%s::%s:%d: SAR Boost Mode: %s, Updating boost signal (%s)`
+- `%s::%s:%d: Created connectivity SAR interface`
+- `Coex Platform Config Revision`
+- `%s::%s:%d: WARNING: MPE Average (%u) is smaller than instant value to be removed (%u), MPE Limit: %s, MPE Instant Value[%u]: %u, MPE Instant Duration[%u]: %u`
+- `sarTransitionTime_block_invoke_2`
+- `%s::%s:%d: No E85 Mitigation Start IRQ number\n`
+- `cellular_mpe_budget_cluster1`
+- `%s::%s:%d: Cellular SAR Budget SPLSR: %u, Cellular MPE Budget: %u, Cellular SAR Portion: %u, Cellular MPE Portion: %u`
+- `%s::%s:%d: Client %s (%p) is being destroyed, skipping`
+- `%s::%s:%d: The RFSensing is not supported in this device`
+- `%s::%s:%d: Invalid user client object\n`
+- `%s::%s:%d: Current Expired Time is 0. No need to run to check`
+- `%s::%s:%d: SAR Report Monitor has started. Stopping the service before starting`
+- `btSAR_block_invoke`
+- `%s::%s:%d: Failed to crash baseband, continuing with OCP protocol`
+- `AppleHSARMultipleRadio`
+- `invokeCallback`
+- `calculateTER`
+- `%s::%s:%d: HSAR Sleep Processing: Central SAR SPLSR: %u, Cellular SAR SPLSR: %u, Entering Sleep time: %llu sec, SAR Consumed Sequence Number: %u\n`
+- `callState_block_invoke`
+- `static IOReturn AppleSARServiceUserClient::extUpdateOrientation(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `rfSensingCALastSubmit`
+- `%s::%s:%d: Triggering interrupt index: %d\n`
+- `site.AppleE85Mitigation`
+- `%s::%s:%d: SensingCAInfo data is null`
+- `%s:%d: %s is not found in boot-args\n`
+- `%s::%s:%d: Succeeded setting up SAR Service!\n`
+- `%s:%d: Ready-to-fill timer fired!`
+- `%s::%s:%d: Received SAR Consumed value, but it may be in the middle of sleep/wake processing; We skip processing this value (fEnteringSleepTimeMs: %llu, fWakingProcessingRequired: %u`
+- `%s::%s:%d: null input`
+- `%s::%s:%d: Failed to call use case detection override callback: (ret: 0x%x)`
+- `%s::%s:%d: HEB SPMI read @ (0x%x): 0x%x (%lu bytes)\n`
+- `%s::%s:%d: Perform Wake Procedure - Start\n`
+- `SAR Boost during AP sleep`
+- `static IOReturn AppleSARServiceUserClient::extFaceDetection(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `RF Occlusion State`
+- `angle_180_duration_s`
+- `cellular_ter_average_cluster2`
+- `wifi_ter_average_cluster2`
+- `total_ter_average_cluster2`
+- `#D: %s::%s:%d: Invoking callback for interface type: %d\n`
+- `%s::%s:%d: Connectivity Product Configuration: AR Buffer Rev ID: 0x%x, AP GPR0 Rev ID: 0x%x, All radio GPR0: 0x%x, PTD Version: 0x%x, PTD Param: 0x%x`
+- `#D: %s::%s:%d: Nothing to write and BB is awake, sending sleep signal now\n`
+- `getHistory`
+- `%s::%s:%d: WARNING: average consumed value (%u) is greater than TER (%u)`
+- `determineSARMPEPortions`
+- `resetRegulatoryParametersGated`
+- `%s::%s:%d: Existing sequence number (%u) is as same as the updated sequence number (%u) it will ignore the HSAR processing`
+- `static IOReturn AppleSARServiceUserClient::extSARConsumed(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: AP has woken up`
+- `pitch_nominally_closer_duration_s`
+- `#D: %s::%s:%d: [%s] request to peek %x`
+- `writeOCPWakeSignalGated`
+- `45..57`
+- `sendCAEventCellularStewie`
+- `buffer_error_cause`
+- `%s::%s:%d: [%s] iterator is NULL`
+- `Mic 6`
+- `%s::%s:%d: [AP Sleep] WiFi SAR Budget: SPLSR: %u, [0]: %u, [1]: %u, [2]: %u, BT SAR Budget: SPLSR: %u, [0]: %u, [1]: %u, [2]: %u`
+- `%s:%d: User client (%s) has died, unblocking accessories\n`
+- `billboard-addr-tx-accessory`
+- `#D: %s::%s:%d: Whole SAR Fusion State is updating for INT\n`
+- `%s::%s:%d: Interrupt event source object is NULL!`
+- `%s::%s:%d: [Version: %u] SAR Indication: VSWR Occlustion Type 1: %s, Occlustion Type 2 %s`
+- `Body Type2 Occluded + No Face Detected`
+- `%s::%s:%d: Cannot update the connectivity SAR averaging duration with the mode: %s (index: %u, max: %u), setting it to 1 (FCC)`
+- `%s::%s:%d: name field is NULL!`
+- `enqueueFlushSnapshotGated`
+- `static OSSharedPtr<AppleE85Mitigation> AppleE85Mitigation::create(IOService *, AppleSARSPMI *)`
+- `%s::%s:%d: Received Connectivity TAS Mode: %u`
+- `%s:%d: Failed to get product\n`
+- `#D: %s::%s:%d: Minimum SAR Budget Cluster: %s`
+- `#D: %s::%s:%d: Grip State is updating\n`
+- `Failure to read the AR Buffer`
+- `Body Use Case Not Supported`
+- `performFeaturesAfterConnectivityCCPUResetGated`
+- `static OSPtr<AppleSARInterface> AppleSARInterface::create(TransportType, AppleSARSPMI *)`
+- `static IOReturn AppleSARServiceUserClient::extWifiResidual(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `updateConnectivityRegInfoInternalGated`
+- `%s::%s:%d: Use case detection override: status=%u value=%u`
+- `initialize`
+- `%s::%s:%d: PTD Read failed for %s with error: 0x%x`
+- `%s:%d: registerCallback requires an async invocation (asyncReference: %p, count: %u)\n`
+- `Regulatory Report`
+- `>100mm Closer`
+- `connectivity_sar_utilization_cluster2`
+- `%s::%s:%d: Callback returned error: 0x%x for interface type: %d\n`
+- `cellularMPE_block_invoke`
+- `#D: %s::%s:%d: Uplink Constraint Condition is updating`
+- `billboard-addr-rx-regulatory`
+- `%s::%s:%d: No SPMI driver is found!`
+- `#T: %s::%s:%d: Central SAR Current Index: %u, MPE Current Index: %u\n`
+- `com.apple.Telephony.cellularSftToTerrestrialHsar`
+- `interrupts`
+- `B`
+- `peek_test`
+- `%s::%s:%d: provider is NULL!\n`
+- `Not Available`
+- `%s::%s:%d: Failed to add timer callback`
+- `%s::%s:%d: Interface has not setup yet!`
+- `rfOcclusion_block_invoke_2`
+- `AppleBasebandSARPTD`
+- `cellular-sar-boost-supported`
+- `%s::%s:%d: %s: SAR Instant Value[%u][%u]: %u, SAR Average[%u]: %u\n`
+- `#D: %s::%s:%d: Current SAR Report GTB: %u, the first SAR report GTB: %u, Tx On time GTB (Ms): %llu, Current Host GTB: %llu`
+- `timing_error_ms`
+- `%s::%s:%d: No client list found for fourCC %s`
+- `IOReturn AppleSARServiceUserClient::registerCallback(void *, IOExternalMethodArguments *)`
+- `#D: %s::%s:%d: Updating orientation state`
+- `dal`
+- `%s::%s:%d: SAR Boost Budget data is not ready!`
+- `wifiResidual`
+- `%s::%s:%d: aborting metric submission due to invalid state combination`
+- `>100mm Further`
+- `%s::%s:%d: [%s] entries is zero`
+- `bt_ter_average_cluster1`
+- `%s::%s:%d: [%s] request to read failed due to driver not ready`
+- `%s::%s:%d: Failed to initialize super class, AppleSARInterface`
+- `%s::%s:%d: RF Sensing not supported on this device`
+- `#D: %s::%s:%d: Max SAR Usage Ratio: %u, Total SAR Usage Ratio: %u, Total MPE Usage Ratio: %u`
+- `startSARReportMonitorGated`
+- `%s::%s:%d: Initlized SPMI parameters: RF Occlusion Control Signal Address: 0x%x, IRQ: 0x%x, Device Update Addr: 0x%x, IRQ: 0x%x`
+- `ASLEEP`
+- `Not Occluded HiPwr`
+- `gripState_block_invoke_2`
+- `%s::%s:%d: IOPort Feature object is not ready\n`
+- `%s::%s:%d: Failed to send budget data to connectivity. (ret: 0x%x)\n`
+- `%s::%s:%d: Failed to create cellular SAR interface`
+- `updateUplinkConstraintConditionGated`
+- `#D: %s::%s:%d: [%s] Succeeded trggering SPMI event 0x%x\n`
+- `Total`
+- `%s::%s:%d: [%s] read result for circular buffer: %s`
+- `%s::%s:%d: Failed to allocate CA event for HSAR metric`
+- `com.apple.centauri.reset.bluetooth`
+- `%s::%s:%d: PTD client already registered for %s`
+- `centralMPE`
+- `%s::%s:%d: Finished initialization for E85 Mitigation\n`
+- `setupE85MitigationWLAN`
+- `%s::%s:%d: Failed to allocate Tx indication lock`
+- `angle_92_duration_s`
+- `AR buffer updates`
+- `%s::%s:%d: Failed to lookup fourCC for interrupt %d (ID: 0x%x), fourCC not exist on this platform`
+- `%s::%s:%d: RF sensing signal is null`
+- `performFeaturesAfterBasebandReset`
+- `%s::%s:%d: %s must be created before setting up cellular SAR Boost`
+- `Legacy`
+- `%s::%s:%d: One of instances is not ready: fARBuffer (%p) fCellularSARReport (%p) fCellularMPEReport (%p) fConfigHSAR (%p)`
+- `%s::%s:%d: %s: SAR Total[%u]: %u, Avg: %u, WiFi Total[%u]: %u, Avg: %u, BT Total[%u]: %u, Avg: %u, UWB Total[%u]: %u, Avg: %u`
+- `sendCAEventHSARErrorGated`
+- `%s::%s:%d: Interrupt count mismatch between EDT and IOService - ensure #interrupt-cells for SoC is set to 1`
+- `static IOReturn AppleSARServiceUserClient::extCentralSAR(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `#D: %s::%s:%d: Updating RF Sensing signal signal`
+- `%s::%s:%d: Failed to get SAR Fusion IRQ number\n`
+- `#D: %s::%s:%d: HSAR Wake: %llu (GTB ms)`
+- `logCellularConsumedValuesGated`
+- `overrideUseCaseDetection_block_invoke`
+- `spmiReadyToKernelClientFunction`
+- `%s::%s:%d: Zero entries in update request`
+- `wifi_sar_budget_cluster1`
+- `wake`
+- `#D: %s::%s:%d: [%s] request to read %x`
+- `%s::%s:%d: Forced HSAR cluster count override: requested=%u applied=%u (0=clear)`
+- `%s::%s:%d: [%s] Failed to push registration to client list`
+- `%s::%s:%d: Mitigation Data is not ready!\n`
+- `%s::%s:%d: [%s] ==== Read from ptd ====`
+- `AR Buffer`
+- `Body Type2 Occluded + No UL Constraint`
+- `#D: %s::%s:%d: [ClusterMap] Phase1 (reverse-min) perRadioCluster=[%u,%u,%u,%u]`
+- `#D: %s::%s:%d: HSAR Metric: state change field done (hasStateChanged=%d), gathering per-cluster data`
+- `%s::%s:%d: The scalar output parameter is NULL!\n`
+- `#D: %s::%s:%d: Central MPE is updating\n`
+- `cellularBudget`
+- `%s::%s:%d: Failed to create SPMI interrupt event for %s\n`
+- `%s::%s:%d: [Peek result][%s] data: %llx, metaData: %llx`
+- `%s::%s:%d: Try to reset modem to collect coredump\n`
+- `static IOReturn AppleSARServiceUserClient::extRegisterReceivingKernelMessage(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: HSAR Timer is not created!`
+- `%s::%s:%d: WLAN Frequency Bit Mask is empty, and no mitigation will be used`
+- `triggerCoredump`
+- `%s: warning: singleton is not NULL!\n`
+- `Mitigation Request Rejected`
+- `Face Down`
+- `#D: %s::%s:%d: SAR Budget: %u, MPE Budget: %u`
+- `terTransitionStart`
+- `updateStateABTunerGated`
+- `client-1`
+- `%s::%s:%d: Failed to cast to OSNumber %zu`
+- `121111121222121211111111`
+- `calculateHSARMainGated`
+- `%s::%s:%d: HSAR Timer is not running.`
+- `%s::%s:%d: Use Case Detection: %u (Override: %u)`
+- `%s::%s:%d: Failed to read reg info data for SAR boost: 0x%x`
+- `%s::%s:%d: Invalid timer or workloop in callback`
+- `2..45`
+- `Connectivity SPLSR`
+- `%s::%s:%d: Stopped SAR Report Monitor`
+- `static IOReturn AppleSARServiceUserClient::extBtResidual(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: [%s] Failed to peek FourCC 0x%x - null data/metadata`
+- `#D: %s::%s:%d: Current Uplink Constraint Condition and updating value are the same. So, no report it to the upper userclient`
+- `PTDUnitTestClient`
+- `lookupGated`
+- `%s::%s:%d: Failed to create RF Sensing instance!`
+- `wifi_sar_utilization_cluster2`
+- `CCPU`
+- `stwSarAveragingPeriod`
+- `updateScreenOnState`
+- `%s::%s:%d: SAR Fustion Data object is NULL!\n`
+- `%s::%s:%d: SAR Consumed: Sem: %u, Seq: %u, SAR Used[0]: %u mW/kg, SAR Used[1]: %u mW/kg, SAR Used[2]: %u mW/kg, SAR Used[3]: %u mW/kg, Cluster Valid: 0x%x, Cluster Present: 0x%x, Duty Cycle: %u %%, Head/Body: %s, Requested Type: %s, Report Timestamp: %u (modem GTB shifted), Activity BitMask: 0x%llx,`
+- `%s::%s:%d: Failed to calculate SAR/MPE Budget after waking up`
+- `lookup`
+- `%s::%s:%d: [%s] Initial Start GTB Ms: %llu`
+- `tasIndicationCallbackGated`
+- `setupHSAR`
+- `Mitigation Request Inactive`
+- `setupCellularBoost`
+- `Landscape Left`
+- `static IOReturn AppleSARServiceUserClient::extWiFiState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `speakerState`
+- `powerState_block_invoke_2`
+- `static IOReturn AppleSARServiceUserClient::extCentralMPE(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Failed to extract data at index %d for client [%s]`
+- `%s::%s:%d: Checking Connectivity SAR Report: Monitor Started: %llu (ms), Now: %llu (ms), Monitor Diff: %llu (sec), Reports Received: %u, Expected: %llu`
+- `%s::%s:%d: Failed to read cellular SAR report manually.`
+- `#D: %s::%s:%d: Budget has been overridden. No need to assign a budget`
+- `#T: %s::%s:%d: Calculating static SAR budgets for Wifi and BT\n`
+- `updateBlockedRegion_block_invoke_2`
+- `readCurrentConnectivityRegulatoryInfoGated`
+- `Cellular -> Stewie`
+- `%s:%d: Crashed client Name: %s\n`
+- `angle_135_duration_s`
+- `PTDDriverBufferGrp`
+- `baseband-spmi-retry`
+- `kMax`
+- `DebugInfo`
+- `%s::%s:%d: Simulation is detected. Not sending actual budget to the modem`
+- `#D: %s::%s:%d: Ignoring request to update obd since rf sensing is enabled`
+- `#D: %s::%s:%d: Regulatory Info is updating\n`
+- `callState`
+- `static IOReturn AppleSARServiceUserClient::extConnectivityResidual(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `121112`
+- `%s::%s:%d: One of instances is not ready: fCentralSAR (%p) fCentralSARInstantValues (%p) fCellularSAR (%p) fConnectivitySAR (%p) fSARConsumed (%p) fMPEConsumed (%p) fARBuffer (%p) fAntennaClusterConfig (%p)`
+- `%s::%s:%d: One of instances is not ready: fRegulatoryInfo (%p) fAntennaClusterConfig (%p) fRegulatoryLimit (%p)`
+- `%s::%s:%d: HSAR callback for uplink constraint condition has not been set up`
+- `%s:%d: Failed to get \"%s\" property name!\n`
+- `%s::%s:%d: Cellular SAR Boost is not supported!`
+- `%s::%s:%d: [%s] Cached Circular Buffer gone`
+- `%s::%s:%d: Received Regulatory Info: Sem: %u, Seq: %u, Region: %s, Time Averaging Mode: %s, Cellular Sub8 Band: %u, Cellular mmWave Freq: %u GHz, MPE Regulatory Region: %s, SAR/MPE Feature: %s, Overriding: %s\n`
+- `com.apple.Telephony.HSAR`
+- `static IOReturn AppleSARServiceUserClient::extVoiceState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extConnectivityHSARSupported(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Reference object is NULL!`
+- `#D: %s::%s:%d: [ClusterMap] budgetDistributionGated: mapping fBTSAR.budget (Connectivity)`
+- `%s::%s:%d: [%s] SPLSR Central Average: %u, Instant Value[%u]: %u`
+- `cellularSarBudget`
+- `|R55`
+- `%s::%s:%d: WARNING: WiFi residual[%u] (%u) is less than WiFi Consumed Value[%u] (%u)`
+- `%s::%s:%d: Not supported override UWB SAR`
+- `%s::%s:%d: Orientation State: %s (Override: %u)`
+- `has_case`
+- `%s::%s:%d: [%s] Given workloop is null!`
+- `startConnectivitySARReportMonitorGated_block_invoke`
+- `updateSARConsumedGated`
+- `%s::%s:%d: Cannot identify type: %u`
+- `msg-buffer-address-tx-ocp`
+- `%s::%s:%d: Cellular SAR Budget: SPLSR: %u, [0]: %u, [1]: %u, MPE Budget: SPLSR: %u`
+- `#D: %s::%s:%d: Calculation and sending a budget task is done`
+- `%s::%s:%d: Regulatory time_averaging_mode: %s`
+- `%s:%d: No structure input is given!\n`
+- `updateE85MitigationRequest_block_invoke`
+- `12111112122212121111121212121212121212121212121212`
+- `%s::%s:%d: SAR Fusion instance is created already`
+- `-2..2`
+- `site.PTDDataOperations`
+- `%s::%s:%d: PTD functions initialized successfully`
+- `%s::%s:%d: Done, success = %d\n`
+- `ICNIRP 2020`
+- `%s::%s:%d: [Static Connectivity] Reserved Connectivity SAR budget = %u`
+- `#D: %s::%s:%d: RFSening is supported, ignore the request`
+- `rfSensingCAInfo_block_invoke_2`
+- `%s::%s:%d: Failed to add notification for %s\n`
+- `#D: %s::%s:%d: The latest SAR report time (%llu) is within 1 second cadence (%llu to %llu)`
+- `%s::%s:%d: Failed to add interrupt event source to array at index %d`
+- `billboard-addr-rx-vswr-report`
+- `%s::%s:%d: Modem is resetting. Clear the write-ready bit!\n`
+- `%s::%s:%d: %s: Total SPLSR Avg: SAR: %u, MPE: %u, TER: %u`
+- `AppleSARInterface`
+- `%s::%s:%d: Resetting Regulatory parameters\n`
+- `virtual IOReturn AppleSARServiceUserClient::clientClose()`
+- `sarFusionStateMAV`
+- `%s::%s:%d: Clearing CommCenter singleton callback context for closing user client\n`
+- `NEVER`
+- `%s::%s:%d: [%s] Failed to write SPMI data @ (0x%x), result: 0x%x\n`
+- `%s::%s:%d: [%s] Succeeded in triggering GPR0 (0x%x)\n`
+- `%s::%s:%d: No provider is given!`
+- `Body`
+- `<-10 from Min`
+- `%s::%s:%d: SAR interface for WLAN is not ready yet!\n`
+- `isValidCentralHSAR`
+- `updateUplinkConstraintCondition_block_invoke`
+- `#D: %s::%s:%d: Primary Provider = %p: %s\n`
+- `ROW 5mm`
+- `0-100mm Further`
+- `12111112122212121111111111111111111122222222111`
+- `State Changed`
+- `%s::%s:%d: Failed to add PTDInterruptInfo to array at index %d`
+- `%s::%s:%d: SAR is disabled by user\n`
+- `billboard-addr-rx-sar-report`
+- `%s:%d: Property \"%s\" does not have the expected type. It is a %s\n`
+- `|R5`
+- `cellular_sar_utilization_cluster2`
+- `%s::%s:%d: Null parameter provided to invokeCallback\n`
+- `%s::%s:%d: WiFi Power: %s, Association: %s, AWDL: %s, PHS: %s, BT: %s, Normalized Connectivity Budget: %u`
+- `Receiver`
+- `%s::%s:%d: Failed to create Connectivity SAR Report Monitor`
+- `%s::%s:%d: Cellular SAR Data is null!`
+- `#D: %s::%s:%d: Updating face detection state`
+- `%s::%s:%d: No WLAN response buffer helper!\n`
+- `#T: %s:%d: [%s] [dbIndex: %u, cluster: %u] No Duration\n`
+- `%s::%s:%d: No need to run Antenna Cluster Config when it is overridden`
+- `%s::%s:%d: MPE Consumed: Sem: %u, Seq: %u, MPE Used[0]: %u mW/cm^2, MPE Used[1]: %u mW/cm^2, MPE Used[2]: %u mW/cm^2, MPE Used[3]: %u mW/cm^2, Cluster Valid: 0x%x, Cluster Present: 0x%x, Duty Cycle: %u %%, Report Timestamp: %u seconds, Throughput Ratio in Q4 unit: %u, Overriding Flag: %u`
+- `%s::%s:%d: WARNING: Cellular Max SAR Budget is assigning 0: Budget for Central: %u, Connectivity Budget: %u`
+- `static IOReturn AppleSARServiceUserClient::extSARSensingCAInfo(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: SPMI IDC WLAN Services are set up successfully\n`
+- `SAR Boost durng BB crash`
+- `%s::%s:%d: Regulatory Limit Data is NULL`
+- `%s::%s:%d: StateA/B and Orienation instance is NULL!`
+- `angle_57_duration_s`
+- `updateUseCaseDetectionGated`
+- `1121222`
+- `#D: %s::%s:%d: Writing updated budgets`
+- `%s::%s:%d: Null callback provided for interface type: %d\n`
+- `#D: %s::%s:%d: HSAR Wake: H-GTB: %llu`
+- `%s::%s:%d: [Version: %u] SAR Indication: Uplink Constraint Condition: %s`
+- `Sleep`
+- `%s::%s:%d: [AP Sleep] Connectivity SAR Budget: SPLSR: %u, [0]: %u, [1]: %u, [2]: %u`
+- `%s::%s:%d: rfSensingCACurrentState only supports kGet`
+- `%s::%s:%d: Normalized SAR Used SPLSR: %u, SAR Used[0]: %u, SAR Used[1]: %u, SAR Used[2]: %u, SAR Used[3]: %u, MPE Used[0]: %u`
+- `%s::%s:%d: One of instances is not ready: name (%p) fCentralSAR (%p) fConnectivitySAR (%p) fARBuffer (%p) fSARConsumed (%p) fMPEConsumed (%p)`
+- `init`
+- `%s::%s:%d: Received SAR Message Response Error: 0x%x\n`
+- `%s::%s:%d: Baseband has not issued write ready bit yet.\n`
+- `%s::%s:%d: Received Connectivity Regulatory Info: Sem: %u, Seq: %u (0x%x), Region: %u, Time Avg Mode: %u, Sub 8 Band: %u, TAS Mode: %u, (Override: %u)`
+- `updateAudioOutput_block_invoke`
+- `%s::%s:%d: Sensing CA queue or interrupt not initialized`
+- `%s::%s:%d: [%s] Read from %u`
+- `%s::%s:%d: [Data] Failed to cast idx %zu to OSNumber`
+- `AppleSARFusion`
+- `SAR Report`
+- `IDCWLAN`
+- `updateAveragingDuration`
+- `antennaClusterConfig_block_invoke_2`
+- `%s::%s:%d: AP will sleep soon`
+- `%s::%s:%d: Read Connectivity TAS enabled: %u`
+- `|A173`
+- `Other`
+- `Connector Down`
+- `performFeaturesAfterConnectivityWiFiResetGated_block_invoke`
+- `%s::%s:%d: Converted Modem GTB: %llu sec`
+- `read`
+- `getMitigationStatus`
+- `%s::%s:%d: Failed to get debug info for fourCC: 0x%x`
+- `setupWLANIDC_block_invoke`
+- `%s::%s:%d: buffer is null (%p) or size (%lu) is greater than it can handle`
+- `%s::%s:%d: PTD read operation failed for fourCC %s with error: 0x%x`
+- `OCPDataReadyDAL`
+- `#D: %s::%s:%d: Wake state: %s, Ready to fill: %d, Cache: %d\n`
+- `ROW 0mm`
+- `%s::%s:%d: Failed to get E85 Mitigation object from IOPort!\n`
+- `%s::%s:%d: None of the SPMI drivers are ready!\n`
+- `%s::%s:%d: Registering PTD interrupt for fourCC: 0x%x`
+- `%s::%s:%d: getBytesNoCopy() returned null`
+- `B8@?0`
+- `sarFusionStateDAL_block_invoke_2`
+- `12111112122212121111222211`
+- `%s::%s:%d: Invalid PTD index: %d`
+- `%s::%s:%d: Setting ready to fill flag and restoring indicator due to a READY_TO_FILL timeout`
+- `static IOReturn AppleSARServiceUserClient::extUpdateE85MitigationRequest(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `sendMitigationRequestToBBGated`
+- `#D: %s::%s:%d: No need to check because Tx is off`
+- `hsarTimerGated`
+- `%s::%s:%d: [Done] Calculating Stewie Transition Wait Time: %s; Wait Time: %u\n`
+- `%s::%s:%d: Failed to allocate periodic update timer\n`
+- `calculateBudgetAfterWakeGated`
+- `static IOReturn AppleSARServiceUserClient::extCentralWiFi(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `sendMitigationRequestToWLANGated`
+- `%s::%s:%d: Failed to read connectivity regulatory information, but will proceed whatever it has at this time.`
+- `%s:%d: boot-args: %s: %u\n`
+- `mav`
+- `%s:%d: [%s] The last DB index of cluster index(%u) cannot be greater than the total handling index (%u)`
+- `updateCellularBudgetGated`
+- `%s::%s:%d: Sent the updated uplink constraint condition (%u)`
+- `%s::%s:%d: Failed to send boost signal to modem`
+- `startAnalyticsReportingTimer`
+- `irq-tx-offset-e85mitigation`
+- `site.SARSPMIInterruptBufferHelper`
+- `#D: %s::%s:%d: [%s] Executing %u callbacks`
+- `stop`
+- `site.PTDClientRegistry`
+- `%s::%s:%d: Unregistered PTD client %s (%p) for fourCC '%c%c%c%c'`
+- `%s::%s:%d: Invalid interface type: %d\n`
+- `regulatoryInfoCallback_block_invoke`
+- `%s:%d: No reference parameter is given!\n`
+- `%s::%s:%d: Given scalar output size (%u) is beyond the max size (%u)\n`
+- `wifi_ter_average_cluster1`
+- `%s::%s:%d: One of instances is not ready: fARBuffer (%p) fSARConsumed (%p) fMPEConsumed (%p)`
+- `device_state`
+- `%s::%s:%d: Received E85 Response from WLAN\n`
+- `%s::%s:%d: No buffer found for fourCC 0x%08x in update`
+- `%s::%s:%d: [%s] SPLSR Central Average: %u, Instantaneous Value[%u]: %u`
+- `%s::%s:%d: Connectivity minimum TER Budget Selection: TER budget = %u`
+- `%s::%s:%d: Non-PTD Supported\n`
+- `static IOReturn AppleSARServiceUserClient::extSARFusionStateINT(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `\"%s\" @%s:%d`
+- `roll_farther_duration_s`
+- `%s::%s:%d: Succeeded reporting back to IOPort (sequence number: %d)\n`
+- `e85-mitigation-supported`
+- `%s::%s:%d: SAR Debug via boot-arg (%s): 0x%x\n`
+- `%s::%s:%d: One of instances is not ready: fCentralSAR (%p) fCentralSARInstantValues (%p) fCellularSAR (%p) fConnectivitySAR (%p) fCellularSARReport (%p) fCellularMPEReport (%p) currentARBuffer (%p) fAntennaClusterConfig (%p) fUWBSAR (%p) fCellularSARBudget (%p)`
+- `%s::%s:%d: Given parameter is null!`
+- `tryFlushOnTickStateChange`
+- `|X90`
+- `#D: %s::%s:%d: Writing updated budgets only for Cellular`
+- `%s::%s:%d: One or more SAR instances are null!`
+- `cellularSarConsumed`
+- `read_block_invoke`
+- `(null)`
+- `%s::%s:%d: Instance of Regulatory Info (%p), or instance of AR Buffer (%p) is not ready`
+- `%s::%s:%d: Number of Clusters are more than the number of supporting clusters`
+- `wlanResponseReceiverGated`
+- `%s::%s:%d: %s: 0x%x`
+- `dispatchToSingleClient_block_invoke_2`
+- `setupSARService_block_invoke`
+- `wifi_awdl`
+- `%s::%s:%d: The number of the SPMI retrial from boot-args: %u (if it is %u, it will set default trial: %u)`
+- `%s::%s:%d: Received Connectivity SAR Report: Sem: %u, Seq: %u (0x%x), Cluster Valid: 0x%x, Cluster Present: 0x%x, OBD: %u, Min SAR Budget: %u, WiFi Activity Factor 2G: %u, WiFi Activity Factor 5G: %u, WiFi Activity Factor 6G: %u, WiFi Used: %u, %u, %u, %u, BT Used: %u, %u, %u, %u, (Override: %u)`
+- `centralWiFi_block_invoke`
+- `updateSARRFSensingConfig`
+- `%s::%s:%d: Cellular Regulatory time_averaging_mode: %s, Connectivity Regulatory time average mode: %s`
+- `#D: %s::%s:%d: CoreAnalytics service not available for HSAR metric`
+- `%s::%s:%d: The instance of blocking accessory is empty!`
+- `%s::%s:%d: User client is not ready yet. No triggering coredump\n`
+- `E85 Mitigation for LAN`
+- `%s::%s:%d: Failed to calculate remaining budget in Sleep phase`
+- `update`
+- `%s::%s:%d: [Static Connectivity] WiFi Power: %s, Association: %s, AWDL: %s, PHS: %s, BT: %s, Normalized Connectivity Budget: %u`
+- `updateWiFiStateGated`
+- `%s::%s:%d: Wake processing has not been set yet!`
+- `%s::%s:%d: [%s] Failed to create callback array`
+- `%s::%s:%d: reset: central entity instant: %p`
+- `printRegulatoryLimit`
+- `%s::%s:%d: Failed to create client registry\n`
+- `%s::%s:%d: HSAR initialization for cellular is done`
+- `%s::%s:%d: Product Configuration: AR Buffer Rev ID: 0x%x, AP GPR0 Rev ID: 0x%x, PTD GPR0 Rev ID: 0x%x, Radio GPR0 Rev ID: 0x%x, PTD Param: 0x%x\n`
+- `%s::%s:%d: Invalid PTD read request: Please provide buffer and metadata with valid addresses. buffer=%p, metadata=%p`
+- `static IOReturn AppleSARServiceUserClient::extSarServiceProfile(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: [%s] data value is NULL\n`
+- `e85-wlan-freq-bitmask`
+- `get`
+- `%s::%s:%d: Cellular SAR Limit = %s (index: %u, SAR Boost: %s, OBD selection: %u (original: %u), region: %u)`
+- `%s::%s:%d: Resetting Write-Ready bit because of a successful write\n`
+- `#D: %s::%s:%d: SAR Fusion: Speaker: %s (Overriding: %s)`
+- `#D: %s::%s:%d: HSAR Metric: enum/state fields done, OBD_raw=%u (rfsensing=%u) OBD_ca=%u, BT_pwr=%d BT_conn=%d, Cell_on=%d TxSusp=%d MmW_on=%d Stewie_on=%d TxActive=%d Cell_connected_ca=%u, WiFi_pwr=%d TimeAvgMode=%u, uplink_constraint_condition=%u`
+- `%s::%s:%d: [Budget Cluster] Total Budget[%u]: %u`
+- `%s::%s:%d: WARNING: Central TER Minimim Connectivity Budget (%u) is greater than %u`
+- `%s::%s:%d: Failed to get systemStateService`
+- `%s::%s:%d: Normalized Cellular SAR Used SPLSR: %u, Used[0]: %u, Used[1]: %u, Used[2]: %u, Used[3]: %u, MPE SPLSR: %u, Used[0]: %u, Used[1]: %u, Used[2]: %u, Used[3]: %u`
+- `#D: %s::%s:%d: OBD and Tuner State (Free/NonFree space) is updating\n`
+- `#D: %s::%s:%d: [ClusterMap] budgetDistributionSleepGated: mapping fWiFiSAR.budget (Connectivity)`
+- `%s::%s:%d: Tx callback for uplink constraint condition has not been set up`
+- `%s::%s:%d: Successfully setup client %s`
+- `%s:%d: There is no data to copy for the property, \"%s\"`
+- `%s::%s:%d: Failed to allocate SPMI read timer\n`
+- `Use Case Detection Feature Flag`
+- `%s::%s:%d: Failed to remove timer callback - potential use-after-free`
+- `void AppleHSARAverageDelegate::removeBlockInDB(unsigned int, unsigned int)`
+- `#D: %s::%s:%d: Uplink Constraint Condition (%s) is remained as same as before`
+- `updateScreenOnState_block_invoke`
+- `%s::%s:%d: aborting metric submission due to device just boot`
+- `%s::%s:%d: Failed to report back to IOPort (ret: 0x%08x)\n`
+- `%s::%s:%d: [%s] Failed to create interrupt event source`
+- `%s::%s:%d: One of instances is not ready: fRegulatoryLimit (%p) fCentralSAR (%p) fCentralSARInstantValues.getData() (%p) fAntennaClusterConfig (%p) kCellularSARLimitTable (%p)`
+- `dataAction`
+- `voiceState`
+- `%s::%s:%d: CA snapshot (flushCount: %u) already submitted — skipping duplicate`
+- `%s::%s:%d: Failed to register SAR RF Sensing callback`
+- `%s::%s:%d: Invalid interface type in parameter: %d\n`
+- `bt_ter_average_cluster2`
+- `setForcedHSARClusterCount_block_invoke`
+- `%s::%s:%d: Failed to send budgets!\n`
+- `%s::%s:%d: Failed to get average values for SAR\n`
+- `%s::%s:%d: Invalid fourCC at index %d`
+- `Not-Occluded High-Power`
+- `%s::%s:%d: Provider must be given`
+- `DISABLED`
+- `rfOcclusion_block_invoke`
+- `Cannot allocate the event buffer queue [%d]\n`
+- `%s::%s:%d: Invalid struct input size: %u (expected %zu)`
+- `AppleHSAR`
+- `%s::%s:%d: Client %s not found for fourCC %s`
+- `bounded_ptr<T>::operator*: Dereferencing this pointer would access memory outside of the bounds set originally`
+- `%s::%s:%d: [%s] Not able to allocate memory for fourCC string`
+- `#D: %s::%s:%d: Updating fCachedSARFusionIndicator ( ( %u | %u ) = %u )\n`
+- `sarServiceProfile_block_invoke`
+- `ptdUnRegisterInterrupt`
+- `updateAudioOutput`
+- `site.AppleSARSPMI`
+- `%s::%s:%d: Failed to send the Device Update with resetting semaphore`
+- `AppleBaseband: Failed to get \"%s\" property\n`
+- `%s::%s:%d: Data operations component not initialized`
+- `%s::%s:%d: Failed creating E85 Mitigation instance`
+- `updateWakeStatusGated`
+- `unpackClusterMapping`
+- `%s::%s:%d: Failed to pop buffer`
+- `%s::%s:%d: Normalized Cellular SAR Used SPLSR: %u, Used[0]: %u, Used[1]: %u, MPE SPLSR: %u, Used[0]: %u, Used[1]: %u, WiFi SPLSR: %u, Used[0]: %u, Used[1]: %u, Used[2]: %u, BT SPLSR: %u, Used[0]: %u, Used[1]: %u, Used[2]: %u, UWB SPLSR: %u, Used[0]: %u, Used[1]: %u, Used[2]: %u, Total SAR SPLSR: %u,`
+- `com.apple.centauri.reset.ccpu`
+- `performFeaturesAfterBasebandAlive_block_invoke`
+- `(HSAR DISABLED)`
+- `%s::%s:%d: [%s][%s] ptd handler receive data[%zu]=0x%llx`
+- `%s::%s:%d: Invalid state because a wake should not have been triggered for an empty cache\n`
+- `%s::%s:%d: SAR Consumed: Sem: %u, Seq: %u, SAR Used[0]: %u mW/kg, SAR Used[1]: %u mW/kg, SAR Used[2]: %u mW/kg, SAR Used[3]: %u mW/kg, Cluster Valid: 0x%x, Cluster Present: 0x%x, Duty Cycle: %u %%, Head/Body: %s, Requested Type: %s, Report Timestamp: %u (modem GTB shifted), Activity BitMask: 0x%llx,`
+- `%s::%s:%d: Wake time (%llu) SHOULD not be less than sleep time (%llu)`
+- `%s::%s:%d: No mitigation request is defined yet!\n`
+- `create`
+- `%s::%s:%d: OCP Data is NULL!\n`
+- `%s::%s:%d: Registered the user client for HSAR Multiple Radio`
+- `%s:%d: Wake-done timer fired!`
+- `0-100mm Closer`
+- `%s::%s:%d: Unhandled feature flag bit: %u`
+- `%s::%s:%d: Failed to initialize PTD functions`
+- `configHSAR_block_invoke`
+- `%s::%s:%d: Failed to initializing!\n`
+- `#D: %s::%s:%d: SAR Fusion: Hand Grip: %s (Overriding: %s)\n`
+- `%s::%s:%d: [%s] Failed to get next buffer entry`
+- `%s::%s:%d: TER SAR Portion: %u, MPE Portion: %u`
+- `static IOReturn AppleSARServiceUserClient::extCellularHSARSupported(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s:%d: Unable to retrieve fusion object`
+- `>182`
+- `%s::%s:%d: Sending budget option: %u, Tas Mode: %s, no tx. So, not sending a budget to cellular modem`
+- `Cellular SAR/MPE, WiFI/BT/UWB SAR`
+- `%s::%s:%d: The command flag is empty!\n`
+- `updateOrientationStateGated`
+- `baseband E85 response`
+- `Dynamic`
+- `total_ter_consumed_cluster1`
+- `%s::%s:%d: Cannot report HSAR error to userland`
+- `stateABTuner_block_invoke_2`
+- `%s:%d: result: %s: %d (0x%x)\n`
+- `%s::%s:%d: connectivity report or wifi/bt residual is/are NULL`
+- `startPeriodicCalculationUpdateTimer`
+- `|R75`
+- `%s::%s:%d: Interrupt %d: ID=0x%x, fourCC=0x%x, assigned=%d`
+- `%s::%s:%d: Successfully created PTD controller`
+- `void wakeDoneTimerExpired(thread_call_param_t, thread_call_param_t)`
+- `configHSAR`
+- `%s::%s:%d: data size[%u] exceeds to print in max size [%u]\n`
+- `dataRead`
+- `%s:%d: Failed to create E85 Mitigation!\n`
+- `connectivity_sar_budget_cluster1`
+- `performFeaturesAfterBasebandReset_block_invoke`
+- `%s::%s:%d: Failed to register tx indication!`
+- `Set`
+- `%s::%s:%d: Non-colocated mode is disabled. Using total SAR Consumed value: %u (before clamping: %u)`
+- `AppleSARServiceUserClient`
+- `static IOReturn AppleSARServiceUserClient::extSARSelectionTunerState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `antennaClusterConfig_block_invoke`
+- `%s::%s:%d: [%s] Failed to allocate memory for registrations`
+- `%s::%s:%d: Client %s not found in callback handler list\n`
+- `%s::%s:%d: User client callback is not registered yet!\n`
+- `%s::%s:%d: Antenna On Top: %s (Override: %s)`
+- `%s::%s:%d: %s: MPE Instant Value[%u][%u]: %u, MPE Average[%u]: %u\n`
+- `#D: %s::%s:%d: Updating State A/B for Tuner`
+- `updateConnectivityRegulatoryInfoFromInterface`
+- `#D: %s::%s:%d: CASE 2: (offset: rt-ts-1:%llu in 0x%llx): Tx was On`
+- `rfSensingCAInfo_block_invoke`
+- `deriveSensingStateGated`
+- `void AppleHSARAverageDelegate::checkAndRemoveDB(unsigned int, bool *)`
+- `updateARBufferGated`
+- `%s::%s:%d: SAR/MPE Consumed values are overridden. Skip updating the consuming value from modem\n`
+- `Default Budget`
+- `syncUWBActive`
+- `%s::%s:%d: Required sensing input is null`
+- `fd_dist_closer_duration_s`
+- `#D: %s::%s:%d: Updating Sensing CA Info`
+- `unRegisterUserClientCallback`
+- `#D: %s::%s:%d: SAR Fusion: Accessory: %s (Overriding: %s)`
+- `%s::%s:%d: Occlusion state instance is not ready`
+- `%s::%s:%d: WARNING: Wake time (%llu) is less than Sleep time (%llu). The next HSAR timer will be out at %u`
+- `vswrLearning`
+- `WiFi SPLSR`
+- `BODY Only`
+- `#D: %s::%s:%d: Tuner State (Free/NonFree space) is updating\n`
+- `%s::%s:%d: Failed to allocate interrupt helper for index %u\n`
+- `%s:%d: Failed to initialize E85 Mitigation!`
+- `Unknown Status`
+- `State 2`
+- `%s::%s:%d: Connectivity SAR Budget: SPLSR: %u, [0]: %u, [1]: %u, [2]: %u`
+- `%s::%s:%d: Past Time: %llu msec, Current Time: %llu msec, Offset: %lld msec, and the delta time: %llu msec`
+- `%s::%s:%d: Failed to get remaining budget for SAR`
+- `%s:%d: One of these is NULL: sarService: %p, reference: %p\n`
+- `sarSelectionAndTunerState_block_invoke`
+- `setupSensingCA`
+- `wifi_association`
+- `cellular_ter_sar_average_cluster2`
+- `%s::%s:%d: Updating Cellular MPE: budget: %u, ratio: %u\n`
+- `attachAllInterruptSources`
+- `AppleBasebandPTDUnitTest`
+- `%s::%s:%d: Failed to get writing buffer for fourCC 0x%08x`
+- `%s:%d: Failed to create interface for INT`
+- `wifiSAR`
+- `This bounded_ptr is pointing to memory outside of what can be represented by a native pointer.`
+- `%s::%s:%d: [%s] outData is null`
+- `%s::%s:%d: Starting Connectivity SAR Report Monitor`
+- `static IOReturn AppleSARServiceUserClient::extAccessoryState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Too many FourCC codes: %zu (max %zu)`
+- `%s:%d: There is no data to copy for the property, \"%s\"\n`
+- `%s::%s:%d: Received a WAKE_DONE signal from BB when in %s state, drop the signal\n`
+- `AppleSARInterfaceSPMIIDC`
+- `%s::%s:%d: Failed to set client name: %s`
+- `TAS FCC`
+- `RF Occlusion`
+- `site.AppleRFSensing`
+- `PTDDriverBuffer`
+- `%s:%d: name: %s, HSAR parameters are null (central: %p) (instant values: %p)`
+- `%s::%s:%d: Received Connectivity SAR Report: Sem: %u, Seq: %u (0x%x), Cluster Valid: 0x%x, Cluster Present: 0x%x, OBD: %u, UWB Active: %u (Overridden: %u), Min SAR Budget: %u, WiFi Activity Factor 2G: %u, WiFi Activity Factor 5G: %u, WiFi Activity Factor 6G: %u, WiFi Used: %u, %u, %u, %u, BT Used: %`
+- `tunerState_block_invoke_2`
+- `%s::%s:%d: Regulatory Time Averaging Data is NULL`
+- `%s::%s:%d: HSAR Error: %s (subsystem: %u)`
+- `stateABTuner_block_invoke`
+- `#T: %s::%s:%d: %s: Current Index: Cellular SAR: %u, MPE: %u, WiFi: %u, BT: %u, UWB: %u`
+- `[Wake] Cellular SAR/MPE, WiFI/BT/UWB SAR`
+- `uplinkconstraintscondition`
+- `%s::%s:%d: Registered the tx indication callback`
+- `%s::%s:%d: Failed to call user client callback: (ret: 0x%x)\n`
+- `%s::%s:%d: Failed to create fourCC key`
+- `cellularMPE_block_invoke_2`
+- `#D: %s::%s:%d: Call State is updating\n`
+- `product`
+- `clearUserClientContextForClient`
+- `SAR Tx Indication`
+- `%s::%s:%d: client interrupt event source is NULL!\n`
+- `void readyToFillTimerExpired(thread_call_param_t, thread_call_param_t)`
+- `%s::%s:%d: Failed to convert fourCC 0x%08x to string in get`
+- `%s::%s:%d: Failed to remove timer callback`
+- `%s::%s:%d: WARNING: [Cluster: %u] Connectivity Normalized Budget (%u) is less than the UWB SPLSR Budget (%u)! No change of Connectivity budget!`
+- `performFeaturesAfterConnectivityBTResetGated_block_invoke`
+- `#D: %s::%s:%d: [ClusterMap] budgetDistributionGated: mapping fCellularSAR.budget (Cellular)`
+- `registerCallback`
+- `#T: %s::%s:%d: Max normalized SAR Average: %u`
+- `total_ter_utilization_cluster1`
+- `connectivityRegulatoryInfo_block_invoke`
+- `%s::%s:%d: [%s] request to peek failed due to driver not ready`
+- `#D: %s::%s:%d: Receiving Use case Detection Feature Flag: %s`
+- `#T: %s::%s:%d: MPE Max Budget for Cellular: %u\n`
+- `%s::%s:%d: Timeout while resetting SPMI\n`
+- `%s::%s:%d: The current boost signal (%s) is the same. Not bothering to send the same message`
+- `#D: %s::%s:%d: Sending the OCP data to the baseband\n`
+- `updateAudioStateGated`
+- `%s::%s:%d: %s: max: %u, min future: %u, margin: %u, duration: %u, residual: %u`
+- `%s:%d: argument size (%lu) is exceeded over max size (%lu)`
+- `#D: %s::%s:%d: OBD State is updating\n`
+- `%s::%s:%d: Failed to create ptd controller`
+- `%s:%d: [%s] dismiss DB is null!`
+- `ENABLED`
+- `%s::%s:%d: ARBuffer or CellularSARReport instance is not ready`
+- `static IOReturn AppleSARServiceUserClient::extUpdateScreenState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Sending RF Occlusion Control Signal to Baseband:, Sequence Number: %d (0x%x), OBD State: %s, VSWR State: %s, BSP State: %s`
+- `%s:%d: Failed to initialize Cellular SAR Boost object!`
+- `%s::%s:%d: Found %s`
+- `updateRegulatoryInfoGated`
+- `supports-hsar-wifi-bt`
+- `%s::%s:%d: Modem reset is detected\n`
+- `start_block_invoke`
+- `dispatchToClients_block_invoke`
+- `%s::%s:%d: Created SAR Fusion instance`
+- `Not Occluded LoPwr No UL Constraint`
+- `%s::%s:%d: Invalid registration parameters`
+- `setUseCaseDetectionOverride_block_invoke`
+- `logConnectivitySARReportGated`
+- `updateSensingCAInfoGated`
+- `%s::%s:%d: [%s] Invalid input`
+- `removeCallback`
+- `#T: %s:%d: [%s] [dbIndex: %u, count: %u, cluster: %u] average: %u, duration: %u, oldestValueIndex: %u, central entity duration: %u, central entity oldest duration: %u\n`
+- `handleConnectivityStaticBudgetUsedGated`
+- `static IOReturn AppleSARServiceUserClient::extVSWRLearning(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extBtSAR(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `bool checkProperty(IOService *, const char *, const char *)`
+- `AppleSARService: Failed to create Logging instance!\n`
+- `%s::%s:%d: Antenna Cluster Config: forcing num_sar_cluster=%u (reported=%u) via static override`
+- `%s::%s:%d: %s: Total Avg [%u] SAR: %u, MPE: %u, TER: %u`
+- `#D: %s::%s:%d: [%s] Heartbeat timer has stopped already`
+- `%s::%s:%d: Workloop is not ready!\n`
+- `btState_block_invoke`
+- `%s::%s:%d: SAR Fusion State is NULL!`
+- `%s::%s:%d: HSAR initialization for wlan is done`
+- `%s::%s:%d: PTD lookup response pointer is null for fourCC %s`
+- `#D: %s::%s:%d: Sending E85 Mitigation Request to WLAN after getting mitigation frequency update from IOPort\n`
+- `%s::%s:%d: Failed to create name string for client '%s'`
+- `IOPlatformDevice`
+- `|B825`
+- `No Accessory`
+- `connectivityRegulatoryInfo`
+- `budgetScalingFactor_block_invoke`
+- `%s::%s:%d: Triggering the send data function from within the OCP WAKE_DONE ISR`
+- `%s::%s:%d: Triggering coredump via user client\n`
+- `voiceState_block_invoke_2`
+- `Regulatory update`
+- `%s::%s:%d: Cannot report this to userland`
+- `%s:%d: User client (%s) has died, but no action for it\n`
+- `%s::%s:%d: Failed to add IOService (%s) notifier\n`
+- `|Ry61`
+- `%s::%s:%d: It's under simulation or cannot send a budget actually`
+- `%s::%s:%d: fCellularSARReport (%p)/fCellularMPEReport (%p) is NULL`
+- `site.AppleSARInterface`
+- `%s::%s:%d: Cannot update the SAR/MPE averaging duration with the mode: %s. Falling back it to FCC`
+- `ALWAYS`
+- `connectivityHSARSupported_block_invoke`
+- `%s::%s:%d: Failed to call new obd state: (ret: 0x%x)`
+- `site.ABSUserClient`
+- `%s::%s:%d: SPMI coredump signal sent successfully\n`
+- `%s::%s:%d: Detected Connectivity CCPU reset`
+- `%s::%s:%d: [%s] Central HSAR db is NULL!\n`
+- `#D: %s::%s:%d: Whole SAR Fusion State is updating for MAV\n`
+- `%s::%s:%d: Not able to understand the response value: 0x%x (%d)\n`
+- `USB`
+- `%s::%s:%d: Indicator: 0x%x, CRC16: 0x%02x%02x, SeqNum: %u\n`
+- `updateAntennaClusterConfigGated`
+- `Loaded debug arguments with mask 0x%08X, serial log: %s\n`
+- `|Keyboard`
+- `Enable`
+- `Product Type 2`
+- `#D: %s::%s:%d: CASE 2: (ts:%llu) < (rt:%llu)`
+- `static IOReturn AppleSARServiceUserClient::extGetSPMIEventTrackingArray(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `regulatoryAverage`
+- `static IOReturn AppleSARServiceUserClient::extSARTransitionWaitTime(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Failed to send boost signal to connectivity`
+- `#D: %s::%s:%d: Empty cache and BB is asleep, returning without performing any action\n`
+- `%s::%s:%d: Skipping connectivity SAR report check during sleep`
+- `bt_sar_utilization_cluster1`
+- `%s::%s:%d: Failed to proceed the buffer address, 0x%x (buffer: %p, bufferSize: %lu)\n`
+- `setupUnitTestClient`
+- `WiFi`
+- `Mic 2`
+- `<-2`
+- `%s::%s:%d: Failed to allocate lock`
+- `%s::%s:%d: Connectivity TAS disabled: stopping Connectivity SAR Report Monitor`
+- `%s::%s:%d: BT SAR Data is null!`
+- `#D: %s::%s:%d: Not supporting to update regulatory averaging mode\n`
+- `%s::%s:%d: No IOPort object is created!\n`
+- `%s::%s:%d: Failed to setup WLAN for E85 mitigation`
+- `%s::%s:%d: Sleep signal sent successfully\n`
+- `%s::%s:%d: Connectivity SAR Report seq mismatch! Received: %u, Expected: %u`
+- `%s::%s:%d: Normalized Cellular SAR Used SPLSR: %u, Used[0]: %u, Used[1]: %u, Used[2]: %u, Used[3]: %u, MPE SPLSR: %u, Used[0]: %u, Used[1]: %u, Used[2]: %u, Used[3]: %u, WiFi SPLSR: %u, Used[0]: %u, Used[1]: %u, Used[2]: %u, Used[3]: %u, BT SPLSR: %u, Used[0]: %u, Used[1]: %u, Used[2]: %u, Used[3]: `
+- `#D: %s::%s:%d: Skipping interrupt %d (fourCC=0x%x) - not assigned to HW or not exist on this platform`
+- `getFourCC`
+- `sendRFOcclusionControlSignalGated`
+- `site.ApplePTDClientInterface`
+- `billboard-addr-rx-rev`
+- `%s::%s:%d: Warning: PTD data truncated from %zu to %zu entries`
+- `%s::%s:%d: Processing OCP transaction failure (%u failed transactions in a row)`
+- `Body Prim Ant Not At Top`
+- `#D: %s::%s:%d: Cellular Dynamic TER calculation: Min TER budget: %u`
+- `centralSAR_block_invoke`
+- `#D: %s::%s:%d: Updating Use Case Detection`
+- `%s::%s:%d: [%s] No registration found for fourCC: 0x%x`
+- `performFeaturesAfterWake`
+- `Cellular`
+- `%s::%s:%d: Cellular SAR Budget[%u]: %u`
+- `numStwTxCyclesSarPeriod`
+- `handleInterrupt`
+- `centralSAR_block_invoke_2`
+- `#D: %s::%s:%d: Not supporting to update connectivity SAR\n`
+- `cellularHSARSupported_block_invoke`
+- `%s::%s:%d: Flushing Sensing CA:, reason: %s, duration: %u  tx: %s  device_state: %s, sensing_state: %s, orientation: %s, has_case: %s, angle(neg/0/45/57/92/135/177/180/183): %u/%u/%u/%u/%u/%u/%u/%u/%u, fd_delta(gt100c/0-100c/0-100f/gt100f): %u/%u/%u/%u, pitch_delta(lt10b/w10b/w10a/gt10a): %u/%u/%u/%`
+- `processingRFCoexNotificationGated`
+- `site.AppleHSARSingleRadio`
+- `%s::%s:%d: [%s] registration record does not exist`
+- `%s::%s:%d: Registered SAR RF Sensing callback successfully`
+- `%s::%s:%d: Reporting timer has already started`
+- `|B225`
+- `92..135`
+- `%s::%s:%d: Failed to create circular buffer for fourCC 0x%08x`
+- `#T: %s:%d: [%s] WARNING: Current Average (%u) is less than the delta value (%u)! Assuming the average is down to 0\n`
+- `212121212121212122`
+- `%s::%s:%d: [%s] Callback returned error: 0x%x`
+- `%s::%s:%d: [Client %s] Overwritten current chunk of buffer`
+- `cellular baseband supported`
+- `tunerState`
+- `%s::%s:%d: Call calculation for wake-processing immediately`
+- `calculateAverageGated`
+- `%s::%s:%d: Failed to get previous ARBuffer`
+- `#D: %s::%s:%d: Write updated SAR and MPE budgets to Cellular billboard\n`
+- `SARCallbackWrapper`
+- `writeToClientBuffer`
+- `%s::%s:%d: No issue on the connectivity SAR report`
+- `%s:%d: setCellularSARBoostMode on client death failed: 0x%x\n`
+- `%s::%s:%d: No baseband response buffer queue!\n`
+- `#D: %s::%s:%d: Started SPMI read timer with delay (%d ms)\n`
+- `%s::%s:%d: Routing Use Case Detection override to HSAR: status: %u value: %u`
+- `%s::%s:%d: SAR Boost object is created already!`
+- `#T: %s::%s:%d: [%s %u] 2-second next budget: %u, Previous budget: %u, Assigning budget: %u, The residual: %u`
+- `%s::%s:%d: AR Buffer version: AP: %d.%d.%d, BB: %d.%d.%d\n`
+- `%s::%s:%d: Interrupt index %d does not have auto disable`
+- `sarConsumed_block_invoke_2`
+- `static IOReturn AppleSARServiceUserClient::extCentralBT(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: parameter is null!`
+- `dispatchToSingleClient`
+- `%s::%s:%d: NULL structInput pointer`
+- `121`
+- `%s::%s:%d: PTD read function not initialized`
+- `%s::%s:%d: Attaching all interrupt sources due to AP wake\n`
+- `1211111212221212121111211211211211211211211211221211112112112121121121122111112222222222222`
+- `sar-fusion-supported`
+- `%s::%s:%d: Found and removing client: %s at index %u\n`
+- `%s::%s:%d: Recorded BB reset timestamp: %llu ns\n`
+- `%s::%s:%d: Resetting OCP sequence number back to 0\n`
+- `sarTransitionWaitTime`
+- `cellularBudget_block_invoke`
+- `SAR/MPE Budget Address`
+- `%s:%d: %s: %s\n`
+- `%s::%s:%d: Use case detection overridden — ignoring live modem value: %u`
+- `cellular_ter_average_cluster1`
+- `updateConnectivitySARReportFromInterface`
+- `%s::%s:%d: Detected Connectivity WiFi reset`
+- `%s::%s:%d: Data input is null!`
+- `fillDBandAverageGated`
+- `%s::%s:%d: No issue on the SAR report (modem not yet reporting)`
+- `#D: %s::%s:%d: Whole SAR Fusion State is updating for DAL\n`
+- `#D: %s::%s:%d: [%s] request to unregister %s`
+- `#D: %s::%s:%d: Reported Cellular SAR Boost`
+- `#D: %s::%s:%d: mapHSARClusterBudgetsToRadioCluster: radioIndex (%u) >= kMaxRadioTypes (%u), skipping mapping`
+- `updateConnectivityCoexPlatformConfigRevCallback`
+- `%s::%s:%d: [%s] Failed to read SPMI data @ (0x%x): 0x%x (%lu bytes), result: 0x%x\n`
+- `bounded_ptr<T>::operator+=(n): Adding the specified number of bytes to the offset representing the current position would overflow.`
+- `%s::%s:%d: Failed to create HSAR instance for Cell Only`
+- `Screen State`
+- `sarConsumed`
+- `handleTransportSignalingFrequenciesChangeGated`
+- `site.AppleBasebandPTDUnitTest`
+- `%s::%s:%d: Created SAR Fusion object\n`
+- `%s::%s:%d: Screen State struct input is null`
+- `sarSelectionAndTunerState`
+- `ThreadAsync::async - thread_call_allocate_with_priority failed\n`
+- `%s::%s:%d: Detected Connectivity BT alive`
+- `%s::%s:%d: One of instances is not ready: fConnectivitySAR (%p) kConnectivitySARLimitTable (%p) fRegulatoryLimit (%p) fARBuffer (%p) fWiFiStateManager (%p) fBTStateManager (%p) fSARSelectionState (%p) fCentralSAR (%p) fRegulatoryInfo (%p)`
+- `#T: %s::%s:%d: Adjustment: %s`
+- `%s::%s:%d: Disabling Counter: %u`
+- `mpeConsumed_block_invoke`
+- `configSARFusion`
+- `#T: %s::%s:%d: [%s] Reading SPMI data from BB with size of %lu at 0x%x:\n`
+- `%s::%s:%d: [%s] Failed to allocate memory for registration data`
+- `SAR Message Ready`
+- `Body Screen Off`
+- `%s::%s:%d: Failed to call the callback for the use detection feature: (ret: 0x%x)`
+- `totalMPE`
+- `%s::%s:%d: Failed to create workloop for client %s`
+- `#D: %s::%s:%d: Central SAR is updating\n`
+- `%s::%s:%d: ISR fired count: %d, source index: %d\n`
+- `bool isCustomPropertyEnabled(const char *const, OSSharedPtr<OSDictionary>)`
+- `baseband_sar_service`
+- `%s::%s:%d: Screen State: %s (Override: %s)`
+- `%s::%s:%d: Updating regulatory information from the sleep time`
+- `centralTER_block_invoke_2`
+- `%s::%s:%d: Provider does not have the IDC contents!\n`
+- `setupSARServiceForAppleBaseband_block_invoke`
+- `setupSARServiceForAppleRadioPTD`
+- `mapHSARClusterBudgetsToRadioCluster`
+- `%s::%s:%d: Data pointer is null!`
+- `%s::%s:%d: Failed to create SAR Report Monitor`
+- `stateABOsiris_block_invoke`
+- `%s::%s:%d: [version: %u] SAR Indication: Cell: %s`
+- `#D: %s::%s:%d: broadcasting data %llu`
+- `%s::%s:%d: State Notification!`
+- `sarConsumedArrivalWindowCheckGated`
+- `%s::%s:%d: Tx indication queue full — dropping oldest entry (txOn: %u)`
+- `%s::%s:%d: Buffer is null!`
+- `%s::%s:%d: Failed to create sensing CA snapshot queue`
+- `#D: %s::%s:%d: Received other message (0x%x) from IOPort!\n`
+- `%s::%s:%d: E85 Mitigation Response: Sequence Number: %d, Message Type: 0x%x (%d), Size: %d, Mitigation Response: 0x%x (%s), CRC16: 0x%x\n`
+- `site.AppleHSARMultipleRadio`
+- `%s::%s:%d: No issue on the SAR report`
+- `%s::%s:%d: Central SAR Data is null!`
+- `%s::%s:%d: HSAR Wake Processing: waking up time: %llu sec, slept time: %llu sec, crashed time if crashed: %llu sec, SAR report timestamp: %u (M-GTB), SAR Tx Activity Bitmap: 0x%llx, Cellular SPLSR budget: %u, Connectivity budget %u, GTB Offset: %llu`
+- `function-ptd_read_mult`
+- `Disable`
+- `%s::%s:%d: Antenna On Top struct input is null`
+- `Connectivity Regulatory Info`
+- `%s::%s:%d: The client object is null!`
+- `static IOReturn AppleSARServiceUserClient::extRegulatoryAverage(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: [%s] Succeeded reading SPMI data @ (0x%x)\n`
+- `%s::%s:%d: fUseCaseDetection instance is NULL!`
+- `ICNIRP 202x`
+- `%s::%s:%d: Supported AR Buffer version: %d.%d.%d\n`
+- `stopHSARGated`
+- `sarRFSensingSignal_block_invoke_2`
+- `%s::%s:%d: SPMI driver has not been created yet? (index: %d)\n`
+- `Failed to create SPMI Buffer Helper instance\n`
+- `executeCallbacks`
+- `on`
+- `Out of Range`
+- `#T: %s::%s:%d: Calculating static SAR budgets for Wifi and BT`
+- `static bool KernelLog::create()`
+- `ar-buffer-addr-rx-e85`
+- `%s:%d: Property dictionary is NULL!\n`
+- `%s::%s:%d: Perform Sleep Procedure - Start\n`
+- `Unknown Error Code`
+- `-10..0 from Min`
+- `%s::%s:%d: Failed to create calculation event source`
+- `%s::%s:%d: [cluster: %u] TER Average: %u, Remaining: %u\n`
+- `1212`
+- `%s::%s:%d: Registered the user client for HSAR Single Radio`
+- `Unexpected (Please file a radar)`
+- `hasStateChangedInAveragingWindow`
+- `%s::%s:%d: Overridden consumption[%u] is adjusted: %u from %u`
+- `%s::%s:%d: The given flag (%u) is not recognizable!\n`
+- `%s::%s:%d: Failed to start providers start\n`
+- `HEB`
+- `E85 Mitigation`
+- `None`
+- `%s::%s:%d: WARNING: Central Total SAR Budget SPLSR (%u) is less than sharing connectivity budget for Stewie (%u)!`
+- `#T: %s::%s:%d: Calculating the Stewie budget\n`
+- `#T: %s::%s:%d: Stopping HSAR. count: %u\n`
+- `%s::%s:%d: Triggering SAR CONSUMED ISR (%u) for reading the billboard and processing post wake budget calculation\n`
+- `%s::%s:%d: Skipping OCP transaction failure processing due to %s state (AP is asleep or BB is resetting)`
+- `Portrait Upright`
+- `2121212121212121212122`
+- `%s::%s:%d: [%s] Central Budget SPLSR: %u\n`
+- `#D: %s::%s:%d: CASE 4: (ts:%llu) > (rt:%llu)`
+- `%s::%s:%d: Failed to read SAR consumed value manually: ret: 0x%x`
+- `sarFusionStateINT`
+- `%s::%s:%d: E85 Mitigation Response: Sequence Number: %d, Mitigation Response: 0x%x (%s)\n`
+- `%s::%s:%d: Received INIT_DONE interrupt\n`
+- `%s::%s:%d: [%s] [cluster: %u] Central Average: %u, Instant Value[%u][%u]: %u`
+- `%s::%s:%d: Invalid configuration: name=%p interest=%p size=%zu ptdDriver=%p`
+- `ABSUserClient`
+- `#T: %s:%d: [%s] [dbIndex: %u, cluster: %u] Updating new duration: %u\n`
+- `uplink_constraint_condition`
+- `terTransitionEnd`
+- `%s::%s:%d: Failed to store client list for %s`
+- `virtual IOReturn AppleSARServiceUserClient::clientDied()`
+- `sarSelectionAndTunerState_block_invoke_2`
+- `static IOReturn AppleSARServiceUserClient::extSarRFSensingSignal(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `fd_dist_farther_duration_s`
+- `%s::%s:%d: SPMI HEB Services are set up successfully\n`
+- `#T: %s:%d: [%s] [dbIndex: %u] Last DB Index[ cluster: %u ]: %u\n`
+- `#D: %s::%s:%d: Updating Blocked region`
+- `Wake`
+- `handlePTDBasedOnDriverType`
+- `%s::%s:%d: %s: Cellular SAR Instantaneous[%u][%u]: %u, Avg[%u]: %u, WiFi Instantaneous[%u][%u]: %u, Avg[%u]: %u, BT Instantaneous[%u][%u]: %u, Avg[%u]: %u, UWB Instantaneous[%u][%u]: %u, Avg[%u]: %u`
+- `cellularSAR_block_invoke_2`
+- `%s::%s:%d: Connectivity Budget Scaling Factor: %u`
+- `BT SPLSR`
+- `arBuffer_block_invoke_2`
+- `threadState_block_invoke`
+- `vswrOnlyMode_block_invoke_2`
+- `connectivitySARReport`
+- `#D: %s::%s:%d: Dequeued Tx indication: %u (remaining queue count: %u)`
+- `%s::%s:%d: Failed to allocate interrupt sources array`
+- `|R54`
+- `|R187`
+- `MPE Report`
+- `#D: %s::%s:%d: data get from circular buffer is %llu`
+- `wifi_p2p`
+- `%s::%s:%d: Updating Cellular SAR: budget: %u, budget_cluster[0]: %u, budget_cluster[1]: %u, ratio: %u\n`
+- `%s::%s:%d: The instance of Mitigation request is empty!`
+- `Mic 4`
+- `initializeWLAN_block_invoke_2`
+- `%s:%d: No structure output is given!\n`
+- `sar-debug`
+- `%s::%s:%d: Client %s already registered; refreshing entry\n`
+- `regulatoryInfoCallback`
+- `%s::%s:%d: [SAR/MPE Regulatory Averaging Duration] Mode: %s, SAR: %u seconds, MPE: %u seconds\n`
+- `logNonColocatedInfo`
+- `%s::%s:%d: SAR Fusion object is created already!\n`
+- `122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `%s::%s:%d: The number of clusters from the billboard is not in the normal range ([1..%u]. Setting it to 1 in AP HSAR logic`
+- `PTDClientRegistry`
+- `static IOReturn AppleSARServiceUserClient::extConnectivitySAR(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extCentralTotalMPE(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Received Frequency Change update from IOPort!\n`
+- `unregisterPTDInterrupt`
+- `clearUserClientContextForClient_block_invoke`
+- `%s::%s:%d: Cellular MPE Data is null!`
+- `vswrOnlyMode`
+- `%s::%s:%d: WiFi or BT power is not on yet, but we received REG INFO, so we assumed they're powered on as a workaround`
+- `#T: %s::%s:%d: Connectivity Budget: %u, UWB SPLSR Budget: %u`
+- `YES`
+- `static IOReturn AppleSARServiceUserClient::extAntennaOnTop(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Failed to setup analytic modules`
+- `%s::%s:%d: SPMI interrupt source for index (%d) has been installed\n`
+- `%s::%s:%d: SPMI retries via boot-arg (%s): %u\n`
+- `%s:%d: CommCenter has not been detected yet. So no sending 0x%x message`
+- `%s::%s:%d: Trying to setup AppleSARService service\n`
+- `updateOcclusionStateGated`
+- `%s::%s:%d: Failed to get workloop`
+- `CTRL only`
+- `%s::%s:%d: Invalid client parameter`
+- `static IOReturn AppleSARServiceUserClient::extTotalSAR(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `AppleE85Mitigation`
+- `ICNIRP 2021`
+- `ptdGetDebugInfoGated`
+- `blockAccessories_block_invoke`
+- `uplinkconstraintscondition_block_invoke`
+- `1211`
+- `total_ter_utilization_cluster2`
+- `cellularUlDutyCycle`
+- `%s:%d: Client (%s) is registering callback\n`
+- `%s::%s:%d: `
+- `getSPMIEventsTrackingList`
+- `#D: %s::%s:%d: Tx is %s, WiFi Power: %s, Association: %s, AWDL: %s, PHS: %s, Connectivity TAS Enabled: %s`
+- `%s::%s:%d: [%s] Failed to create circular buffer queue`
+- `#D: %s::%s:%d: Threshold: %s (%u (/1000) * (%s - %s ))`
+- `site.T`
+- `%s::%s:%d: Cannot find property 'interrupts'`
+- `centralTotalSAR`
+- `%s::%s:%d: Client name is NULL\n`
+- `AppleSARSPMIIDCWLAN`
+- `%s::%s:%d: Failed to calculate calculation!`
+- `IOUserClientCreator`
+- `addCallback`
+- `%s::%s:%d: Use case detection override applied to regulatory bitmask: %u`
+- `121111121222121211121`
+- `getSPMIEventsTrackingList_block_invoke`
+- `calculateRemainingBudgetGated`
+- `regulatoryAverage_block_invoke`
+- `%s::%s:%d: Failed to send the RF Occlusion Control Signal with resetting semaphore`
+- `%s::%s:%d: Failed to start CoreAnalytics service!`
+- `%s::%s:%d: %s: MPE Instant Value (Total) [%u]: %u, MPE Total Average: %u`
+- `#D: %s::%s:%d: SAR transition time is updating\n`
+- `uwbRadio`
+- `cellular_sar_consumed_cluster1`
+- `%s::%s:%d: HSAR initialization is done`
+- `Stewie -> Cellular`
+- `%s::%s:%d: PTD Lookup failed for %s with error: 0x%x`
+- `%s::%s:%d: E85 Mitigation from IOPort is not enabled for the baseband client, but leave E85 mitigation feature for blocking/unblocking frequencies feature.`
+- `%s::%s:%d: Sending E85 Mitigation Request to BB after getting mitigation frequency update from IOPort\n`
+- `%s::%s:%d: Failed to send SAR Fusion data to Baseband: ret: 0x%x\n`
+- `%s::%s:%d: H-GTB: %llu, M-GTB: %llu, delta: %llu\n`
+- `calculateSARMPEBudgetGated`
+- `static IOReturn AppleSARServiceUserClient::extStateABOsiris(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `21`
+- `%s::%s:%d: Connectivity regulatory information is overridden. Skip updating values`
+- `%s::%s:%d: This device does not support connectivity HSAR`
+- `updateAudioOutput_block_invoke_2`
+- `#D: %s::%s:%d: Updating State Osiris`
+- `%s::%s:%d: RF Occlusion State Response: Semaphore: %d, Sequence Number: %d (0x%x), Rear Occlusion: %s, Antenna Occlusion: %s`
+- `cellular_mpe_consumed_cluster1`
+- `%s::%s:%d: Detected Connectivity BT reset`
+- `-restore`
+- `%s::%s:%d: Perform Sleep Procedure - Done\n`
+- `%s::%s:%d: Created E85 Mitigation instance`
+- `#D: %s::%s:%d: SAR Fusion: Power: %s (Overriding: %s)\n`
+- `Product Type 1`
+- `cellular_sar_utilization_cluster1`
+- `%s::%s:%d: fConnectivityRegulatoryInfo is NULL`
+- `%s::%s:%d: PTD Peek failed for %s with error: 0x%x`
+- `AppleSARService Userclient`
+- `%s::%s:%d: ptdRegisterInterruptGated triggered\n`
+- `#D: %s::%s:%d: [ClusterMap] normalizeSARReportsGated: hsarClusterCount=%u, cellClusterCount=%u, Cell mapping=[%u,%u,%u,%u], Conn mapping=[%u,%u,%u,%u]`
+- `%s::%s:%d: Connectivity SAR Budget: %u Limit = %u (index: %u, OBD: %u, region: %u)`
+- `%s::%s:%d: This device supports SAR Fusion via SPMI IDC`
+- `#D: %s::%s:%d: Connectivity regulatory information not yet received (initial startup or WiFi crash recovery). Budget will not be sent to connectivity`
+- `#T: %s::%s:%d: [Cluster: %u] Connectivity Budget: %u, UWB SPLSR Budget: %u`
+- `CTRL + DATA`
+- `connectivitySARReport_block_invoke`
+- `roll_nominally_farther_duration_s`
+- `#D: %s::%s:%d: Not found SAR Messages\n`
+- `%s::%s:%d: User client callback handler list is NULL\n`
+- `%s::%s:%d: [%s] Given data is NULL!\n`
+- `%s::%s:%d: Sending E85 Mitigation Request to BB after baseband booting up\n`
+- `%s::%s:%d: Tx indication event source not set up`
+- `%s::%s:%d: Received SAR Consumed value, but it may be in the middle of sleep/wake processing; We skip processing this value`
+- `#T: %s::%s:%d: Calculate the remaining total SAR`
+- `ABORT`
+- `PTDDriverCircularBufferWrapper`
+- `spmiErrorToKernelClientFunction`
+- `Time Synchronization Request`
+- `performFeaturesAfterConnectivityBTAliveGated_block_invoke`
+- `%s::%s:%d: Failed to allocate callback lock\n`
+- `sendConnectivityBudgetGated`
+- `%s::%s:%d: Failed to call tas indication callback: (ret: 0x%x)`
+- `%s::%s:%d: Cannot find client workloop to dispatch work`
+- `%s:%d: [%s] Central entity is null!`
+- `static IOReturn AppleSARServiceUserClient::extFrontCameraState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `#D: %s::%s:%d: Updating VSWR Only Mode`
+- `baseband,idc`
+- `cellular_mpe_utilization_cluster1`
+- `#T: %s::%s:%d: SAR Used Ratio: %u, MPE Used Ratio: %u`
+- `%s::%s:%d: Failed to allocate PTDInterruptInfo for interrupt %d`
+- `frontCameraState_block_invoke`
+- `centralUWB_block_invoke`
+- `spmiInterruptHandler`
+- `angle_177_duration_s`
+- `%s::%s:%d: E85 Mitigation Request to Baseband: Sequence Number: %d, Message Type: 0x%x (%d), Size: %d, Mitigation Request: 0x%x, Sleep/Wake Status: %s, CRC16: 0x%x, Override Flag: %s\n`
+- `cellularSarConsumedCallback`
+- `%s::%s:%d: Current uplink constraint condition: %s`
+- `client-3`
+- `#D: %s::%s:%d: Cleared semaphore bit in data[0]: 0x%x\n`
+- `setupE85Mitigation`
+- `#D: %s::%s:%d: Writing %lu bytes\n`
+- `Stewie SAR`
+- `calculateSARMPEAverage`
+- `#T: %s::%s:%d: SAR: Average instant value to be removed: %u, SAR Normalized: %u`
+- `%s::%s:%d: current index (%u) must be < %u`
+- `12111`
+- `%s::%s:%d: This device supports HSAR`
+- `sarServiceCallback`
+- `#D: %s::%s:%d: E85 Mitigation Request Updating\n`
+- `submitSensingCAEventGated`
+- `sarSelectionState`
+- `%s::%s:%d: Invalid registration data`
+- `%s::%s:%d: Buffer helper is not ready`
+- `%s::%s:%d: Received READY_TO_FILL interrupt\n`
+- `Get`
+- `%s::%s:%d: SAR RFSensing State: %s (Override: %s)`
+- `%s::%s:%d: Sending Budget to connectivity: Sem: %u, Seq: %u (0x%x), Host HSAR Version: %u, Cell SAR Boost: %u, Report Period: %u, Operation Mode: %u, SAR Budget Limit: %u, Total Budgets: %u, %u, %u, %u, WiFi Budgets: %u, %u, %u, %u, BT Budgets: %u, %u, %u, %u, (Override: %u)`
+- `#D: %s::%s:%d: Nothing is to report yet (indicator: 0x%x)\n`
+- `connectivity_sar_utilization_cluster1`
+- `enteringMarginalCondition`
+- `%s::%s:%d: Initial Residual Values Total: Connectivity: %u, WiFi: %u, BT: %u`
+- `rfSensingCALastSubmit_block_invoke`
+- `%s::%s:%d: Uplink Constraint Condition is overridden: %s`
+- `invokeGPR0`
+- `%s::%s:%d: %s: SAR Instant Value (Total) [%u]: %u, SAR Total Average: %u`
+- `%s::%s:%d: fourCCs not initialized - call readFourCCsFromEDT first`
+- `accessoryState_block_invoke`
+- `%s::%s:%d: Failed to create PTD driver buffer`
+- `%s::%s:%d: Audio State: %s (Override: %s)`
+- `#D: %s::%s:%d: [%s] request to register %s`
+- `irq-tx-offset-ocp-send`
+- `%s::%s:%d: Sending OCP data due to the indicator: 0x%x\n`
+- `Freespace`
+- `%s::%s:%d: HSAR Algorithm is stopped\n`
+- `%s:%d: [%s] [dbIndex: %u, cluster: %u] WARNING: THERE IS NO ROOM TO CALCULATE this regulatory average duration: %u\n`
+- `%s::%s:%d: [%s] Client work loop is null`
+- `%s::%s:%d: AR Buffer values are overridden. Skip updating the AR Buffer value from modem\n`
+- `updateThreadStateGated`
+- `%s::%s:%d: Failed to get %s`
+- `sarSelectionState_block_invoke_2`
+- `%s::%s:%d: [%s] Failed to unregister FourCC 0x%x: error 0x%x`
+- `cellular_tx`
+- `total_ter_average_cluster1`
+- `#T: %s::%s:%d: [Cellular] Initial Budget: Max: %u, Min Future: %u, Margin: %u, Time Averaging Duration: %u`
+- `%s::%s:%d: Updating existing sar consumed value until %u window\n`
+- `powerStateWillChangeTo`
+- `sar_boost_mode`
+- `SPMI Bus error`
+- `static IOReturn AppleSARServiceUserClient::extMPEConsumed(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extPTDUnRegisterInterrupt(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Interrupt Index %d is detaching\n`
+- `supported-device`
+- `%s::%s:%d: Baseband is not ready to get SPMI data. Will retry when it becomes ready\n`
+- `RFSensing`
+- `static OSSharedPtr<AppleHSARMultipleRadio> AppleHSARMultipleRadio::create(IOService *, const sar::HSARSupportedFeature &)`
+- `#D: %s::%s:%d: Registered callback for interface type: %d\n`
+- `%s::%s:%d: Updating Regulatory Limit based on OBD changes as the current Region is ROW 0 mm`
+- `gripState`
+- `sarFusionStateDAL_block_invoke`
+- `faceDetection_block_invoke_2`
+- `#D: %s:%d: %s: %s (size: %ld)\n`
+- `%s::%s:%d: Received Regulatory Info: Sem: %u, Seq: %u, Region: %s, Time Averaging Mode: %s, Cellular Sub8 Band: %u, Cellular mmWave Freq: %u GHz, MPE Regulatory Region: %s, SAR RFSensing Feature: %s, Overriding: %s\n`
+- `stateABOsiris`
+- `111`
+- `attachCoreAnalyticsService_block_invoke`
+- `%s::%s:%d: Failed to prepare memory descriptor: 0x%x`
+- `SAR Uplink Constraint Condition Indication`
+- `site.KernelLog`
+- `%s::%s:%d: E85 WLAN Mitigation Start IRQ: 0x%x\n`
+- `%s::%s:%d: Failed to send data. (ret: 0x%x)\n`
+- `setInitialResidualValuesAndSendGated`
+- `%s::%s:%d: Connectivity Headroom is less than Connectivity SAR Budget, reserve budgets vs. Standalone SAR limit`
+- `%s::%s:%d: Cannot update the SAR/MPE limit with this region code: %s. Setting it as FCC`
+- `%s::%s:%d: Output size (%u) is not the Structure Size (%u)\n`
+- `Face Up`
+- `readCurrentSARConsumedGated`
+- `%s::%s:%d: [%s] Central Budget[%u]: %u\n`
+- `budget_subsystem`
+- `updateStateOsirisGated`
+- `%s::%s:%d: Supported cellular GPR0 version: %d.%d.%d\n`
+- `%s::%s:%d: WiFi Power: %s, Association: %s, AWDL: %s, PHS: %s, 2.4 GHz: %s, 5.0 GHz: %s, 6.0 GHz: %s (Overriding: %s)`
+- `site.AppleSARService`
+- `%s:%d: [%s] cluster index (%u) is greater than the max cluster count (%u)`
+- `vswrLearning_block_invoke`
+- `#D: %s::%s:%d: Processing HSAR after waking up`
+- `%s::%s:%d: HSAR Wake: stopped calculating the HSAR budget due to sleep time is zero!`
+- `static IOReturn AppleSARServiceUserClient::extConfigSARFusion(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `#D: %s::%s:%d: ISR fired count: %d\n`
+- `AppleBaseband`
+- `%s::%s:%d: Updated Cellular SAR Boost: %s (Overriding: %s)`
+- `Orientation`
+- `%s::%s:%d: [Budget SPLSR] Total Budget SPLSR: %u`
+- `%s:%d: Failed to create HSAR!`
+- `%s::%s:%d: [Stewie] Past SAR Average Total: %u, Central SAR Budget: %u, Remaining Budget: %u, Minimum Stewie CTRL budget: %u, SAR budget: %u ( %s )`
+- `%s::%s:%d: Failed to get average values for MPE\n`
+- `powerState_block_invoke`
+- `%s::%s:%d: State A/B for Tuner: %s (Override: %s)`
+- `|MIC`
+- `findRemainingBudgetTotalGated`
+- `%s:%d: One of given parameters is NULL:\nprovider: %p, propertyName: %p, propertyExpectingValue: %p\n`
+- `%s::%s:%d: Created SAR RFSensing object successfully`
+- `%s::%s:%d: Successfully copied %zu bytes of debug info to user buffer`
+- `static IOReturn AppleSARServiceUserClient::extSARFusionStateMAV(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `triggerInterrupt`
+- `updateScreenStateGated`
+- `reportHSARError`
+- `%s::%s:%d: E85 Mitigation Response WLAN: Mitigation Response: 0x%x (%s)\n`
+- `0..+10 from Max`
+- `%s::%s:%d: reset: central entity: %p`
+- `Cellular SAR/MPE`
+- `%s::%s:%d: Invalid provider`
+- `#T: %s::%s:%d: [%s] [try: %u] Writing SPMI data at 0x%x:\n`
+- `#D: %s::%s:%d: No need to check SAR Consumed arrival time becase it is under the simulation`
+- `%s::%s:%d: TAS disabled: stopping SAR Report Monitor`
+- `%s::%s:%d: WARNING: SAR Average Consumed (%u) is greater than the TER limit (%s)!\n`
+- `%s::%s:%d: Failed to create a matching dictionary for %s service`
+- `AppleSARServiceUserClient: Failed to create Logging instance!\n`
+- `#D: %s::%s:%d: Accessory State is updating\n`
+- `%s::%s:%d: [%s] Failed to create callback wrapper`
+- `%s::%s:%d: HSAR Timer will be expired in %u`
+- `%s::%s:%d: Failed to calculate SAR/MPE Budget!`
+- `frontCameraState`
+- `updateTASIndicationCallbackGated`
+- `%s:%d: One of given parameters is NULL:\nprovider: %p, propertyName: %p\n`
+- `%s::%s:%d: One of instances is not ready: name (%p) fCentralSAR (%p) fConnectivitySAR (%p)`
+- `%s::%s:%d: SAR Total Limit = %s, SAR limit = %s, External SAR limit = %s, Connectivity SAR Head Room = %u\n`
+- `sarFusionStateINT_block_invoke`
+- `#D: %s::%s:%d: [%s] Started heartbeat timer (%d ms)\n`
+- `registerPTDClientGated`
+- `%s::%s:%d: BB down time: %u seconds\n`
+- `total_ter_consumed_cluster2`
+- `%s::%s:%d: Failed to read data for type: %u at address %u. ret: 0x%x`
+- `#T: %s::%s:%d: Calculating dynamic SAR and MPE budget for Cellular\n`
+- `%s::%s:%d: HSAR Timer is null`
+- `%s::%s:%d: [Regulatory Limit] Mode: %s, SAR Limit: %s, MPE Agency Limit: %s, MPE Radio Limit: %s, TER Limit: %s, SAR SPLSR: %s, SAR Total Limit: %s, Non Colocated Antenna Enabled: %s, SAR External Limit: %s, MPE External: %s, OBD: %u`
+- `Off`
+- `stopSARReportMonitorGated`
+- `static IOReturn AppleSARServiceUserClient::extThreadState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extSARSelectionState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Enqueueing Sensing CA snapshot: flushCount: %u, reason: %s, tx: %s, device_state: %s, sensing_state: %s, orientation: %s, duration: %u`
+- `%s::%s:%d: Failed to send semaphore cleared data. (ret: 0x%x)\n`
+- `#D: %s::%s:%d: Valid cache but BB is asleep, sending wake signal now\n`
+- `SAR Sequence Number is not continuous`
+- `PTDInterruptHandler`
+- `Callisto`
+- `updateFrontCameraStateGated`
+- `updateCoexPlatformConfigRevFromInterface`
+- `#T: %s::%s:%d: TimeDelta: %u`
+- `%s::%s:%d: Failed to create ccpu/wifi/bt crash notification string`
+- `%s::%s:%d: Tx callback has not been set up`
+- `connectivitySAR_block_invoke`
+- `%s::%s:%d: HSAR instance is created`
+- `ThreadAsync::async - block is null\n`
+- `updateRegulatoryTimeAveragingGated`
+- `%s::%s:%d: WARNING: TER Remaining[%u] is zero because the sum of the SAR Normalized value(%u) and MPE average(%u) is more than the regulatory TER (%s)`
+- `#D: %s::%s:%d: Max SAR Consumed in Clusters: %s`
+- `%s::%s:%d: Registered %d PTD interrupts successfully`
+- `PTDDataOperations`
+- `wristState_block_invoke_2`
+- `arBuffer_block_invoke`
+- `%s::%s:%d: No provider is given!\n`
+- `initializeCellular`
+- `%s::%s:%d: baseband reset detected in HSAR AP sleep/wake: %llu sec`
+- `%s::%s:%d: Sending Device Update to Baseband:, Sequence Number: %d (0x%x), State A/B: %s (Overriden: %u), Orientation: %s (Overriden: %u)`
+- `%s::%s:%d: Invalid workloop`
+- `setupHSARWLAN`
+- `%s::%s:%d: [Static Connectivity] SAR Total Limit = %s, SAR limit = %s, External SAR limit = %s, Connectivity SAR Head Room = %u\n`
+- `wakeGated`
+- `%s::%s:%d: Client %s registered PTD client for fourCC %s`
+- `static IOReturn AppleSARServiceUserClient::extUWBRadio(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `site.AppleSARSPMIIDC`
+- `%s::%s:%d: SAR service profile has not been ready yet!`
+- `ptdUnRegisterInterruptGated`
+- `recordResetTimestamp_block_invoke`
+- `performFeaturesAfterBasebandAlive`
+- `#D: %s::%s:%d: SAR Fusion: Voice: %s (Overriding: %s)\n`
+- `State 3`
+- `%s::%s:%d: Front Camera State: %s (Override: %s)`
+- `normalizeSARReportsGated`
+- `setConnectivityTER`
+- `%s::%s:%d: The delta between wake/sleep time is greater than the max db number (%u), resetting the db and will fill it out rest of it`
+- `#D: %s::%s:%d: Updating front camera state`
+- `INVALID_ARGUMENT`
+- `%s::%s:%d: [%s] Successfully unregistered FourCC 0x%x`
+- `Clear Override`
+- `Not Occluded LoPwr Type1 Occluded`
+- `initializeWLAN`
+- `regulatory`
+- `Not Occluded LoPwr No Face Detected`
+- `#D: %s::%s:%d: RF Sensing Control is blocked`
+- `%s::%s:%d: Invalid history size: %zu (max: %d)`
+- `%s::%s:%d: Cellular SAR boost for WLAN has been setup`
+- `#D: %s::%s:%d: No callback registered for interface type: %d\n`
+- `blockAccessories_block_invoke_2`
+- `powerState`
+- `#D: %s::%s:%d: SAR Consumed is updating\n`
+- `static IOReturn AppleSARServiceUserClient::extConfigHSAR(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `PTDDriverCircularBufferItem: Warning - PTD data truncated from %zu to %zu entries\n`
+- `#D: %s::%s:%d: [%s] Added callback for client %p at index %u`
+- `previous_sar_boost`
+- `cellularMPE`
+- `%s::%s:%d: No CA snapshot in queue`
+- `#D: %s::%s:%d: Required data not ready for HSAR metric`
+- `%s::%s:%d: Supported non-radio (UWB) GPR0 version: %d.%d.%d\n`
+- `%s::%s:%d: Failed to get PTDInterruptInfo at index %zu`
+- `centralTER_block_invoke`
+- `updateTxIndicator_block_invoke`
+- `billboard-addr-rx-e85mitigation`
+- `%s::%s:%d: Failed to create Tx indication workloop`
+- `#D: %s::%s:%d: The latest SAR report time (%llu) is not within 1 second cadence (%llu to %llu)`
+- `%s::%s:%d: [%s] WARNING: Average Duration (%u) cannot be more than the max instant value queue size (%u)!\n`
+- `AppleBaseband: There is no data to copy for the property, \"%s\"`
+- `1211111212221212111111111`
+- `updateFaceDetectionStateGated`
+- `#D: %s::%s:%d: Provider = %p: %s\n`
+- `%s::%s:%d: SAR Boost is overridden by a tool. Not proceeding. Current boost signal is %s`
+- `%s::%s:%d: Created WLAN Notifier object`
+- `static OSSharedPtr<AppleSARFusion> AppleSARFusion::create(IOService *, AppleSARSPMI *)`
+- `|USB3.0`
+- `uplinkconstraintscondition_block_invoke_2`
+- `irq-tx-offset-config-vswr`
+- `AppleSARSPMIHEB`
+- `%s::%s:%d: Failed to create the CA report timer`
+- `reportToClientGated`
+- `Wake done interrupt`
+- `accessoryState`
+- `centralTotalMPE`
+- `getDebugInfo`
+- `%s::%s:%d: WARNING: total TER (%llu) is less than avrg consumed cellular + wifi + bt + uwb (%llu)`
+- `#T: %s::%s:%d: [%s] updated residual: %u and budget: %u`
+- `OFF`
+- `%s::%s:%d: Regulatory Time Average Mode is now DISABLED; stopping HSAR\n`
+- `%s:%d: One of these is NULL: sarService: %p, reference: %p, arguments: %p\n`
+- `static IOReturn AppleSARServiceUserClient::extWifiSAR(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `totalSAR_block_invoke`
+- `%s::%s:%d: Unable to send SPMI coredump signal, ret: 0x%x\n`
+- `cellular_ter_sar_average_cluster1`
+- `antennaOnTop_block_invoke`
+- `#D: %s::%s:%d: Updating RF occlusion state`
+- `static IOReturn AppleSARServiceUserClient::extoverrideUseCaseDetection(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `AppleSARConnectivityCellBoost`
+- `site.AppleBasebandSARPTD`
+- `Default Hand Position`
+- `Product Type 3`
+- `%s::%s:%d: [Budget SPLSR] Cellular: %u, WiFi: %u, BT: %u`
+- `static IOReturn AppleSARServiceUserClient::extConnectivityRegulatoryInfo(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `mapStateABToBasebandTunerState`
+- `billboard-addr-tx-e85mitigation`
+- `ocpErrorToKernelClientFunction`
+- `#D: %s::%s:%d: Updating SAR service profile`
+- `%s::%s:%d: Initial Residual Values Cluster[%u]: Connectivity: %u, WiFi: %u, BT: %u`
+- `startCoreAnalyticsService`
+- `Unknown`
+- `not`
+- `reportCellularSARBoostCAGated`
+- `TAS ICNIRP 2020`
+- `#D: %s::%s:%d: Tuner Signal is blocked`
+- `%s::%s:%d: PTD read failed for %s with error: 0x%x, skipping dispatch to clients`
+- `%s::%s:%d: Central Total SAR Budget: %u, MPE Budget: %u\n`
+- `%s:%d: One of these is NULL: sarService: %p, me: %p\n`
+- `#D: %s::%s:%d: Updating VSWR learning state`
+- `%s::%s:%d: Flush triggered due to %s`
+- `STOP`
+- `%s::%s:%d: Failed to initialize HSAR with connectivity interface`
+- `|USB`
+- `updateConnectivitySARReportInternalGated`
+- `regulatoryLimit_block_invoke_2`
+- `static IOReturn AppleSARServiceUserClient::extUplinkConstraintCondition(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: E85 WLAN Mitigation Stop IRQ: 0x%x\n`
+- `setupSARFusionSupportedBySPMIIDC`
+- `|B223`
+- `%s::%s:%d: Sending Budget to modem: Sem: %u, Seq: %u (0x%x), SAR Budget (Total): %u mW/kg, SAR Budget Clusters: %u mW/kg, %u mW/kg, %u mW/kg, %u mW/kg, MPE Budget: %u mW/cm^2, Period: %u, Operating Mode: %s, TER Consumed (Average): %u %%, (Override: %u)`
+- `function-ptd_lookup_mult`
+- `connectivitySARBudget`
+- `%s::%s:%d: Failed to read buffer for the index, %d, ret = 0x%x\n`
+- `%s::%s:%d: Created %zu of %zu test clients`
+- `registerUserClientContext`
+- `OCP packet error`
+- `cellular_hp_tx`
+- `SAR Boost default`
+- `%s:%d: cookie size is greater than 0 (%lu), but cookie itself is NULL!`
+- `blockAccessoryRequest`
+- `%s::%s:%d: [%s] Failed to allocate memory for fourCC string`
+- `#D: %s::%s:%d: SAR Fusion: Sar Selection: %s (Overriding: %s)\n`
+- `|R74`
+- `Mic 1`
+- `updateSARSPLSRGated`
+- `billboard-addr-tx-sar-budget`
+- `#D: %s::%s:%d: The current Budget overriding SAR: %s, MPE: %s`
+- `getCellularMinMaxValues`
+- `static IOReturn AppleSARServiceUserClient::extConnectivitySarReport(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Failed to send the Device Update with semaphore`
+- `fd_dist_nominally_closer_duration_s`
+- `%s::%s:%d: [%s] Stopped heartbeat timer`
+- `dispatchToClients`
+- `static IOReturn AppleSARServiceUserClient::extRegulatoryLimit(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `#D: %s::%s:%d: Updating Antenna Cluster Configs\n`
+- `btResidual`
+- `initialize_block_invoke_2`
+- `ptdInterruptHandler`
+- `ICNIRP 1998`
+- `%s::%s:%d: Failed to get remaining budget for SAR\n`
+- `#D: %s::%s:%d: [%s] Periodic timer has started already`
+- `Use Case Detection Feature`
+- `%s::%s:%d: Failed to reset fConnectivityBudgetScalingFactor`
+- `121111121222121211111112112112112112112112112112112112112112211211211211211211211211211211221211212112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `%s::%s:%d: Succeeded registration of message client for %s\n`
+- `%s::%s:%d: A callback for the use detection feature has not been set up / mpe feature flag does not changed`
+- `%s::%s:%d: AppleHSARMultipleRadio: Invalid mmW frequency %u GHz, clamping to %u GHz\n`
+- `#D: %s::%s:%d: Power State is updating\n`
+- `%s::%s:%d: Failed to get client %zu`
+- `wifi_sar_utilization_cluster1`
+- `updateConnectivitySARReport`
+- `%s::%s:%d: The port feature RF Coex is not ready yet!\n`
+- `register0Write`
+- `%s::%s:%d: Found %s\n`
+- `%s::%s:%d: Userclient has not been set up or Tx related AR Buffer has not updated (or boot-args has not been set for debugging coredump: SPMI error Retry: %u)\n`
+- `%s::%s:%d: Face Detection State: %s (Override: %s)`
+- `%s::%s:%d: Cellular Regulatory Time Average Mode is now DISABLED; Not updating regulatory time averaging for cellular`
+- `startSARReportMonitorGated_block_invoke`
+- `%s::%s:%d: Uplink Constraint Condition: %s`
+- `%s::%s:%d: Workloop is not created!`
+- `#D: %s::%s:%d: Voice State is updating\n`
+- `configSARFusion_block_invoke`
+- `connectivityResidual_block_invoke`
+- `baseband-chipset`
+- `dispatchToClients_block_invoke_2`
+- `12111121`
+- `getFourCCs`
+- `%s::%s:%d: Received message type (0x%x) is different from the expected value (0x%x)\n`
+- `%s::%s:%d: Failed to create client %s`
+- `%s::%s:%d: [%s] ==== Peek from ptd ====`
+- `%s::%s:%d: Duplicated write ready bit from the baseband\n`
+- `#D: %s::%s:%d: SAR Fusion: Wrist: %s (Overriding: %s)\n`
+- `initializeWLAN_block_invoke`
+- `%s::%s:%d: cluster count (%u) must be in [1, %u]`
+- `%s::%s:%d: Failed to send the RF Occlusion Control Signal with semaphore`
+- `ApplePTD`
+- `%s::%s:%d: Failed to pop buffer for fourCC 0x%08x`
+- `#D: %s::%s:%d: Sending budget option: %u, Operation Mode: %s, TAS Mode: %u. So, not sending a budget to connectivity`
+- `%s::%s:%d: Uplink condition instance is not ready!`
+- `unregisterCallback`
+- `#D: %s::%s:%d: [%s] Succeeded writing SPMI data @ (0x%x)\n`
+- `%s::%s:%d: Failed to allocate user client callback handler list\n`
+- `%s::%s:%d: SAR RFSensing Decision: Tx indicator: %s, Audio Output: %s, Uplink Constraint Condition: %s, VSWR Occlusion Type1: %s, VSWR Occlusion Type2: %s, Screen On State: %s, Orientation: %s, Antenna on Top: %s, Face Detected: %s, Front Camera: %s, State AB (Tuner): %s, State AB (Osiris): %s, VSWR`
+- `static IOReturn AppleSARServiceUserClient::extSARFusionStateDAL(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `static IOReturn AppleSARServiceUserClient::extUpdateAudio(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `#D: %s::%s:%d: PTD %s get updated`
+- `%s:%d: [%s] [cluster: %u] WARNING: Total Average (%u) is greater than uint16_t max size!!`
+- `sendWaitTime`
+- `SAR/MPE Budget IRQ`
+- `registerKernelClientToAppleBasebandFunction`
+- `%s::%s:%d: fConnectivityBudgetScalingFactor is NULL`
+- `%s::%s:%d: SAR Report Monitor timer expired`
+- `%s::%s:%d: Failed to create SAR Fusion instance`
+- `%s::%s:%d: Failed to create SAR timer`
+- `%s::%s:%d: [%s] Failed to add event source to work loop, error: 0x%x`
+- `enqueueTxIndicationGated`
+- `#D: %s::%s:%d: SAR Fusion is %s\n`
+- `sarFusionStateMAV_block_invoke_2`
+- `%s::%s:%d: Connectivity to cellular SAR boost: Sequence Number: %u, Cellular Boost: %s (Overriding: %s)`
+- `site.AppleSARConnectivityCellBoost`
+- `%s::%s:%d: Failed to create data operations component\n`
+- `mavSPMIInitializationWorkaround`
+- `regulatoryInfoFromInterface_block_invoke`
+- `attachCoreAnalyticsService`
+- `roll_closer_duration_s`
+- `%s::%s:%d: WARNING: SAR SPLSR Average (%u) is smaller than instant value to be removed (%u), SAR Total Limit: %s, SAR Limit: %s, SAR SPLSR Instant Value[%u]: %u, SAR SPLSR Instant Duration[%u]: %u`
+- `#D: %s::%s:%d: Sending Wait Time to modem over SPMI: Sem: %u, Seq: %u, Wait Time: %u, Overriding: %s %s %s\n`
+- `mpeConsumed_block_invoke_2`
+- `SARSPMIInterruptBufferHelper`
+- `%s::%s:%d: Succeeded registration of this (%s) to %s\n`
+- `%s::%s:%d: GPR0 version: AP: %d.%d.%d, BB: %d.%d.%d.\n`
+- `%s::%s:%d: Semaphore is set in SAR Report!\n`
+- `#D: %s::%s:%d: Not supporting to update regulatory limit\n`
+- `%s:%d: [%s] Failed to initialize HSAR!`
+- `|VIDEO`
+- `WirelessRadioMan`
+- `#D: %s::%s:%d: MPE Consumed is updating\n`
+- `static IOReturn AppleSARServiceUserClient::extCellularSAR(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Failed to event source`
+- `%s::%s:%d: Registrating this (%s) to %s\n`
+- `|AUDIO`
+- `%s::%s:%d: Regulatory Info is overridden. Skip updating regulatory info from modem.\n`
+- `enabled`
+- `static IOReturn AppleSARServiceUserClient::extUWBActive(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Failed to register PTD notification`
+- `%s::%s:%d: Interface is not ready yet!`
+- `isrHandlerGated`
+- `#D: %s::%s:%d: [%s] %zu entries is scheduled into callback`
+- `%s::%s:%d: Received Connectivity Regulatory Info: Sem: %u, Seq: %u (0x%x), Region: %s, Time Avg Mode: %s, Sub 8 Band: %u, TAS Mode: %u, (Override: %u)`
+- `v16@?0^{IOTimerEventSource=^^?i^{IOEventSource}^{OSObject}^?B^{IOWorkLoop}^v^{ExpansionData}^vQ^{ExpansionData}}8`
+- `PTDInterruptInfo`
+- `%s::%s:%d: PTD %s numberOfEntries (%zu) exceeds maximum (%zu), rejecting request ( please check with ApplePTD kext on unepxected number of entries )`
+- `#D: %s::%s:%d: Device do not support rf sensing region`
+- `TAS Stewie CA`
+- `HSAR error`
+- `%s:%d: could not get AppleSARService provider\n`
+- `%s::%s:%d: Registered the user client for SAR Fusion\n`
+- `ICNIRP 2018`
+- `SAR Boost during WRM crash`
+- `UWB`
+- `%s::%s:%d: Detaching all interrupt sources due to AP sleep\n`
+- `%s::%s:%d: [%s] Failed to allocate memory for DebugInfo`
+- `cellularSARBoostState_block_invoke`
+- `faceDetection_block_invoke`
+- `%s::%s:%d: Failed to find the interrupt helper for the index, %d\n`
+- `compatible`
+- `%s::%s:%d: UnRegistering PTD interrupt for fourCC: 0x%x`
+- `ON`
+- `centralUWB`
+- `%s::%s:%d: [%s] Peek from %u`
+- `%s::%s:%d: Invalid workloop\n`
+- `%s::%s:%d: Thread Power: %s (Overriding: %s)\n`
+- `#D: %s::%s:%d: SAR Fusion: Power: %s (Overriding: %s)`
+- `Connector Right`
+- `ptdRegisterInterruptGated`
+- `%s::%s:%d: Failed creating SAR Boost instance`
+- `%s::%s:%d: Semaphore is set in MPE Report!\n`
+- `calculateStewieBudgetGated`
+- `%s::%s:%d: client has been destroyed`
+- `#D: %s::%s:%d: Speaker State is updating\n`
+- `sarTransitionTime_block_invoke`
+- `#T: %s::%s:%d: [%s] [try: %u] Writing SPMI data at 0x%x with GPR0(0x%x):\n`
+- `%s::%s:%d: Setting up HSAR`
+- `sendSleepSignalGated`
+- `sarRFSensingCallbackGated`
+- `%s::%s:%d: fourCCs array is null`
+- `configHSAR_block_invoke_2`
+- `centralTotalMPE_block_invoke`
+- `btSAR`
+- `tickSensingCAGated`
+- `%s::%s:%d: This device support cellular SAR boost`
+- `>+10 from Max`
+- `#D: %s::%s:%d: Updating audio state`
+- `irq-tx-offset-deviceupdate`
+- `%s::%s:%d: Invalid interrupt handler parameters: fName=%p data=%p metaData=%p size=%zu`
+- `I`
+- `%s::%s:%d: Failed to create connectivity SAR interface`
+- `%s::%s:%d: Crashing baseband due to %u failed OCP transactions in a row`
+- `sendOCPDataGated`
+- `|R76`
+- `#D: %s::%s:%d: Notified clients about TX state: %d\n`
+- `%s::%s:%d: One of instances is not ready: fCentralSAR (%p) fRegulatoryLimit (%p) fCentralMPE (%p) fCellularSAR (%p) fCentralTER (%p)`
+- `#T: %s::%s:%d: Calculating the remaining total SAR and MPE budget`
+- `%s::%s:%d: Failed to add client %s to callback list\n`
+- `Left Hand`
+- `|R15`
+- `%s::%s:%d: RF Occlusion State: Rear: %s, Antenna: %s`
+- `MPE`
+- `sendData`
+- `#T: %s::%s:%d: Central SAR Current Index (Before Calculation): %u`
+- `%s:%d: Failed to initialize interface for INT`
+- `sarFusionStateMAV_block_invoke`
+- `%s::%s:%d: [%s] Successfully registered FourCC 0x%x`
+- `connectivity_sar_budget_cluster2`
+- `%s::%s:%d: HSAR Metric payload serialized: ret=%u, length=%lu bytes (%u fields)`
+- `overrideUWBSARGated`
+- `#D: %s::%s:%d: Processing HSAR`
+- `%s::%s:%d: No WLAN response buffer queue!\n`
+- `AppleBaseband: Property \"%s\" does not have the expected type. It is a %s\n`
+- `Write ready to fill interrupt`
+- `sendOCPDataDalGated`
+- `performFeaturesAfterConnectivityCCPUAliveGated`
+- `site.AppleSARSPMIHEB`
+- `#D: %s::%s:%d: Cellular TER split: TER SAR part = %u, TER MPE part  = %u`
+- `updateE85MitigationRequest`
+- `updateSARFusionStateGated`
+- `%s::%s:%d: Stopped Connectivity SAR Report Monitor`
+- `%s::%s:%d: [Static Connectivity] Connectivity SAR Budget = %u (index: %u, OBD selection: %u (original: %u), region: %u)`
+- `updateRegulatoryLimitGated`
+- `%s::%s:%d: Antenna Cluster Config: semaphore: %u, sequence numner: %u, number of sar cluster: %u, number of mpe cluster: %u, sar cluster distance: %u, non-colocation use: %s, overriding: %s`
+- `sar-mpe-ant-cluster-config`
+- `%s::%s:%d: [%s] Callback for client %p not found`
+- `#D: %s::%s:%d: Triggering immediate notification for newly registered client %s, fourCC %s`
+- `#D: %s::%s:%d: [ClusterMap] budgetDistributionSleepGated: mapping fConnectivitySAR.budget (Connectivity)`
+- `%s:%d: Callback fired before a client name was registered!\n`
+- `pitch_closer_duration_s`
+- `%s::%s:%d: Service is not AppleBasebandPTD type!`
+- `arbuffer-addr-rx`
+- `%s::%s:%d: HSAR enabled: %u, Cellular Budget Overriding: %u, Tx is %s, Operation Mode: %s, so not sending budget to cellular`
+- `cellular_ter_mpe_average_cluster1`
+- `arBufferCallback`
+- `%s::%s:%d: H-SAR logic has stopped!\n`
+- `static IOReturn AppleSARServiceUserClient::extSARBlockedRegion(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Succeeded reporting back to IOPort for WLAN (sequence number: %d)\n`
+- `%s::%s:%d: No PTD buffer found for fourCC %s`
+- `%s::%s:%d: E85 Mitigation instance is created already`
+- `#D: %s::%s:%d: SAR Fusion: Speaker: %s (Overriding: %s)\n`
+- `tunerState_block_invoke`
+- `angle_183_duration_s`
+- `%s::%s:%d: No E85 Mitigation Stop IRQ number\n`
+- `basebandResponseReceiverGated`
+- `int`
+- `updateAntennaOnTopGated`
+- `updateConnectivityCoexPlatformConfigFromInterface`
+- `AppleSARSPMI`
+- `%s::%s:%d: Failed to initialize parent class!`
+- `#D: %s::%s:%d: Succeeded to send SAR Fusion data to Baseband\n`
+- `NO`
+- `IDC`
+- `dispatchToSingleClient_block_invoke`
+- `12111112122212121111111111111111111111121121121121211221121112112112112112112`
+- `%s::%s:%d: Issue found on the connectivity SAR report: received %u reports, expected %llu in %llu seconds`
+- `updateConnectivityRegulatoryInfoFromInterface_block_invoke`
+- `updateOrientation_block_invoke_2`
+- `vswrLearning_block_invoke_2`
+- `%s:%d: Key value is NULL!\n`
+- `%s::%s:%d: [%s] Triggering software interrupt for client %s (%p)`
+- `%s::%s:%d: Failed to create stateItems`
+- `fillInFourCCsInfo`
+- `#D: %s::%s:%d: Invalid SAR message type received: %d\n`
+- `#D: %s::%s:%d: Received Function Name: %s`
+- `%s::%s:%d: Invalid user client reference\n`
+- `Speaker`
+- `%s::%s:%d: WARNING: Connectivity Normalized SPLSR Budget (%u) is less than the UWB SPLSR Budget (%u)! No change of Connectivity budget!`
+- `com.apple.centauri.reset.wifi`
+- `startAnalyticsReportingTimer_block_invoke`
+- `%s::%s:%d: WARNING: SAR limit is 0!`
+- `Unb`
+- `%s:%d: Failed to create SAR Timer!`
+- `AppleSARService`
+- `%s::%s:%d: Overwriting existing callback for interface type: %d\n`
+- `registerHSARCallback`
+- `%s::%s:%d: Cellular MPE instance is not ready!`
+- `wifi E85 response`
+- `%s::%s:%d: E85 Mitigation Request to WLAN [%d]: GPR0: 0x%x (%s)\n`
+- `readGated`
+- `readData`
+- `%s::%s:%d: Failed to create client dictionary with capacity %u`
+- `AppleSARTimer`
+- `callPlatformFunction_block_invoke`
+- `#T: %s::%s:%d: Calculate SAR/MPE average\n`
+- `|Ry60`
+- `%s::%s:%d: WiFi SAR Data is null!`
+- `connectivity_tas_enable`
+- `%s::%s:%d: Failed to get PM root domain`
+- `%s::%s:%d: Interrupt event source is NULL!\n`
+- `%s::%s:%d: Received CRC16 (0x%x) is different from calculated CRC16 (0x%x)\n`
+- `coex product rev`
+- `setupSARServiceForSPMIIDC_block_invoke`
+- `|R56`
+- `%s:%d: [%s] No need to check since no db index is defined`
+- `updateE85MitigationRequest_block_invoke_2`
+- `static IOReturn AppleSARServiceUserClient::extBlockAccessories(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: [%s] Failed to trigger SPMI event 0x%x, result: 0x%x\n`
+- `%s::%s:%d: HSAR Budget calculation starting!`
+- `centralTER`
+- `%s::%s:%d: VSWR learning is null`
+- `%s::%s:%d: Failed to allocate ABSUserClient for %s\n`
+- `%s:%d: Failed to initialize SAR Fusion!`
+- `Portrait Upside-Down`
+- `%s::%s:%d: Semaphore is set in SAR/MPE Report!\n`
+- `0x%02x `
+- `%s::%s:%d: [%s] Not able to allocate memory for fourCC %x`
+- ` | `
+- `%s::%s:%d: baseband reset detected in HSAR AP sleep/wake: %llu (GTB ms)`
+- `%s::%s:%d: This device does not support SAR fusion via SPMI IDC`
+- `Head`
+- `cellular_mmW_tx`
+- `#D: %s::%s:%d: [ClusterMap] budgetDistributionGated: mapping fWiFiSAR.budget (Connectivity)`
+- `%s::%s:%d: [AP Sleep] Cellular SAR Budget: SPLSR: %u, [0]: %u, [1]: %u, MPE Budget: SPLSR: %u`
+- `%s::%s:%d: [%s] Failed to read FourCC 0x%x - null data/metadata`
+- `AP Sleep Budget`
+- `Not-Occluded Low-Power`
+- `%s::%s:%d: Issue found on the SAR report`
+- `%s::%s:%d: Failed to update SAR/MPE Limit in initialization\n`
+- `%s::%s:%d: Cellular SAR Limit = %s (index: %u, SAR Boost: %s, SAR selection: %u, region: %u)`
+- `%s::%s:%d: Reserved Connectivity SAR budget = %u`
+- `sarRFSensingSignal_block_invoke`
+- `static IOReturn AppleSARServiceUserClient::extPTDGetDebugInfo(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: The user client is not ready, so skip to register the user client in initialization phase.\n`
+- `configSARFusion_block_invoke_2`
+- `%s::%s:%d: Failed to create ISR for processing RFCoex Notification!`
+- `static OSPtr<AppleSARTimer> AppleSARTimer::create(const char *const, uint32_t, IOWorkLoop *)`
+- `%s::%s:%d: No HEB service exists!\n`
+- `%s::%s:%d: Invalid regulatory region code: %u for connectivity SAR limit. Setting it as FCC`
+- `%s::%s:%d: Invoking GPR0 for interface type: %u`
+- `CommCenter`
+- `speakerState_block_invoke`
+- `static IOReturn AppleSARServiceUserClient::extCentralTotalSAR(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Failed to initialize OSObject`
+- `%s::%s:%d: WiFi SAR Budget: SPLSR: %u, [0]: %u, [1]: %u, [2]: %u, BT SAR Budget: SPLSR: %u, [0]: %u, [1]: %u, [2]: %u`
+- `duration_s`
+- `%s:%d: Failed to create Cellular SAR Boost object!`
+- `%s::%s:%d: Reporting occlusion State1: %s, State2: %s`
+- `setupWLANIDC`
+- `|ANY`
+- `%s::%s:%d: Failed to create OSSerialize for payload size cal`
+- `%s::%s:%d: Unknown MPE Region is detected. Falling back to FCC limit`
+- `speakerState_block_invoke_2`
+- `static IOReturn AppleSARServiceUserClient::extCentralUWB(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Failed to create sensing CA flush interrupt`
+- `%s::%s:%d: WLAN Frequency Bit Mask Configuration: 0x%x\n`
+- `#D: %s::%s:%d: AppleSARFusion: Skipping SPMI coredump due to cleared sar debug boot-arg`
+- `%s::%s:%d: One of instances is not ready: fCentralSAR (%p) fSARConsumed (%p) fARBuffer (%p) fAntennaClusterConfig (%p)`
+- `fd_dist_nominally_farther_duration_s`
+- `site.AppleBasebandPTD`
+- `bt_sar_budget_cluster1`
+- `%s::%s:%d: Connectivity SAR reports are overridden. Skip updating values`
+- `%s::%s:%d: Given ARBuffer instance is null!`
+- `SAR`
+- `%s::%s:%d: %slocking Accessories\n`
+- `rfOcclusionStateReportGated`
+- `cellular_sar_budget_cluster1`
+- `cellularSAR_block_invoke`
+- `Current Write Index is out of the bound: %d\n`
+- `wifiState_block_invoke`
+- `%s::%s:%d: [SAR/MPE/Connectivity Regulatory Averaging Duration] Cellular Mode: %s, SAR: %u seconds, MPE: %u seconds, Connectivity Mode: %s, Connectivity: %u seconds, UWB: %u seconds`
+- `%s::%s:%d: calculateStaticSARGated failed`
+- `calculateDynamicSARMPEGated`
+- `com.apple.Telephony.hsarHealthMonitor`
+- `function-ptd_peek_mult`
+- `connectivitySAR`
+- `178..182`
+- `initializeWLAN_block_invoke_4`
+- `logConnectivityRegulatoryInformationGated`
+- `%s::%s:%d: Started periodic update for window (%d ms)\n`
+- `getCurrentSARConsumedGTB`
+- `%s::%s:%d: Failed to create %s helper!\n`
+- `getTASStatus`
+- `#D: %s::%s:%d: Writing updated SAR and MPE budgets to Cellular billboard\n`
+- `%s::%s:%d: Selected SAR Splsr Limit Table[%u]: %s`
+- `%s: Failed to create Logging instance!\n`
+- `uwbActive_block_invoke`
+- `%s::%s:%d: E85 Mitigation Request to Baseband: Sequence Number: %d, Mitigation Request: 0x%x, Override Flag: %s\n`
+- `%s::%s:%d: Initialize`
+- `%s::%s:%d: Finished initialization of Cellular SAR Boost`
+- `%s::%s:%d: Created Cellular SAR interface`
+- `missing_sn_count`
+- `%s::%s:%d: %s must be created before setting up E85 mitigation for WLAN`
+- `uint16_t AppleHSARAverageDelegate::calculateAverage(unsigned int)`
+- `executeCalculationGated`
+- `%s::%s:%d: Succeeded to attach CoreAnalytics service!`
+- `%s::%s:%d: Failed to initialize the module!\n`
+- `|DisplayPort`
+- `%s::%s:%d: Received uplink constraint condition: %s`
+- `%s::%s:%d: Missing critical input data: fCentralSAR.getData() (%p) fCentralSARInstantValues.getData() (%p)`
+- `calculateRFSensing`
+- `%s::%s:%d: Regulatory limi Data is null!`
+- `%s::%s:%d: Failed to call tx callback for uplink constraint condition: (ret: 0x%x)`
+- `%s::%s:%d: AppleSARSPMI: Failed to create Logging instance!\n`
+- `register_ptd`
+- `addIOServiceNotification`
+- `#T: %s:%d: [%s] Cluster: %u, lastDBIndex: %u\n`
+- `#D: %s::%s:%d: HSAR Sleep: %llu (GTB ms), HSAR initial GTB ms: %llu`
+- `#D: %s::%s:%d: AR Buffer is updating\n`
+- `#D: %s::%s:%d: Not supporting to update central TER\n`
+- `detachAllInterruptSources`
+- `regulatoryInfoFromInterface`
+- `client-2`
+- `heb`
+- `%s::%s:%d: [%s] Buffer entry has NULL readItem pointer`
+- `On`
+- `centralWiFi`
+- `%s::%s:%d: [%s] Invalid FourCC entry at index %zu - not an OSNumber`
+- `read_test`
+- `%s::%s:%d: unexpected null ptr`
+- `%s::%s:%d: VSWR Only Mode struct input is null`
+- `sarFusionStateINT_block_invoke_2`
+- `callState_block_invoke_2`
+- `%s::%s:%d: [%s] Service is stopping\n`
+- `%s::%s:%d: Failed to create FourCC array for client`
+- `%s::%s:%d: SAR Fusion is not ready, deferring registration of the user client until it is ready\n`
+- `No Table`
+- `#D: %s::%s:%d: Invalid Cellular cluster mapping at hsarIdx=%u (mapping=0x%02x); zeroing fCellularSAR/MPE.used[%u]`
+- `(unknown)`
+- `centralBT_block_invoke`
+- `%s::%s:%d: Received error to trigger a coredump of baseband\n`
+- `%s::%s:%d: Failed to read connectivity regulatory information manually: ret: 0x%x`
+- `%s::%s:%d: [cluster: %u] HSAR Sleep Processing: Central SAR Budget: %u, Cellular SAR Budget: %u`
+- `#D: %s::%s:%d: Voice State is not supported`
+- `static IOReturn AppleSARServiceUserClient::extConnectivitySarBudget(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `setupCoreAnalyticsService`
+- `#D: %s::%s:%d: SensingCAInfo: angle=%s, fdDist=%s, pitch=%s, roll=%s, facing=%s`
+- `%s::%s:%d: Received bit mask: 0x%x, generation count: %d\n`
+- `%s::%s:%d: Simulation: %u, Budget overridng: %u, Operation mode: %s, HSAR enabled: %u -> Not to send a budget to Connectivity`
+- `%s::%s:%d: Failed to convert buffer to OSArray for fourCC %s`
+- `site.AppleSARFusion`
+- `%s::%s:%d: reportPeriod is zero. Not sending budget to modem`
+- `%s::%s:%d: Failed to get PTDInterruptInfo at index %d`
+- `IOReturn AppleSARServiceUserClient::sarServiceCallback(IOReturn, sar::ABSUserClientParameter *)`
+- `regulatory_block_invoke_2`
+- `%s::%s:%d: Config HSAR instance is not ready`
+- `static IOReturn AppleSARServiceUserClient::extStateABTuner(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `AppleBasebandPTD`
+- `#D: %s::%s:%d: Cannot find client workloop for fourCC %s`
+- `#D: %s::%s:%d: Data has been broadcasted to this client, skip it (current GTB: %llx, last broadcast GTB: %llx)`
+- `voiceState_block_invoke`
+- `setupSARService_block_invoke_2`
+- `%s::%s:%d: This device does not support E85 Mitigation`
+- `|B204`
+- `|R188`
+- `%s::%s:%d: Failed to initialize OSObject base class`
+- `Body Type2 Occluded + Type1 Occluded`
+- `%s::%s:%d: %s: The number of entries: %u`
+- `getSARMinMaxValues`
+- `CoreAnalyticsHub`
+- `antennaClusterConfig`
+- `Use BPS Feature`
+- `Body Type2 Occluded + FCam Off`
+- `#D: %s::%s:%d: HSAR is blocked`
+- `#D: %s::%s:%d: CASE 3: (ts:%llu) = (rt:%llu)`
+- `%s::%s:%d: Feature is not enabled on this device, skip reporting to CA`
+- `#D: %s::%s:%d: [ClusterMap] Enter mapHSARClusterBudgetsToRadioCluster: radio=%s (%u), hsarClusterCount=%u, mapping=[%u,%u,%u,%u], input budget=[%u,%u,%u,%u]`
+- `v8@?0`
+- `setupSARServiceForSPMIHEB_block_invoke`
+- `Ry61`
+- `checkConnectivitySARReportGated`
+- `#D: %s::%s:%d: fConfigHSAR instance is Null!`
+- `static IOReturn AppleSARServiceUserClient::extCellularMPE(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `ocpDataReadyToKernelClientFunction`
+- `FCC`
+- `%s::%s:%d: Invalid proxima_sub8_band_indicator value: (index: %u, max: %u), setting it to 0`
+- `%s::%s:%d: WLAN driver is not ready yet!\n`
+- `unRegisterUserClientCallback_block_invoke`
+- `wifi_power`
+- `writeOCPInitSignalGated`
+- `121111121222121212111121121121121121121121121122121111211211212112112112`
+- `%s::%s:%d: This %s must be actual interface class!`
+- `static IOReturn AppleSARServiceUserClient::extPowerState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `stateABTuner`
+- `%s::%s:%d: [%s] Retrieved debug info for fourCC: 0x%x, entries: %zu`
+- `SAR consumed values`
+- `%s::%s:%d: [%s] Invalid callback array not initialized`
+- `wifi_phs`
+- `%s::%s:%d: Failed to stop AP HSAR Timer!`
+- `static IOReturn AppleSARServiceUserClient::extTunerState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `centralTotalSAR_block_invoke`
+- `%s::%s:%d: Received terminated message from IOPort!\n`
+- `B24@?0^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}8^{IONotifier=^^?i}16`
+- `%s::%s:%d: [%s] [cluster: %u] Central Average: %u, Instantaneous Value[%u][%u]: %u`
+- `calculateDynamicAllRadioGated`
+- `#D: %s::%s:%d: Valid cache but already triggered a wake, returning without performing any action\n`
+- `SAR Fusion`
+- `TX Turn To Off`
+- `Within Range`
+- `wlan,idc`
+- `sendWakeSignalGated`
+- `setSleepStatusGated`
+- `#D: %s::%s:%d: After %s, sending mitigation to BB\n`
+- `%s::%s:%d: Initialized E85 Mitigation for WLAN`
+- `#D: %s::%s:%d: SAR Fusion: Tuner State: %s SPACE (Overriding: %s)`
+- `Face Detection with ANST/RGB`
+- `%s::%s:%d: Non-radio (UWB) GPR0 version: AP: %d.%d.%d, BB: %d.%d.%d\n`
+- `hasFeatureFlagChangedGated`
+- `faceDetection`
+- `#D: %s::%s:%d: [%s] Removed callback for client %p at index %u`
+- `static OSSharedPtr<AppleHSARSingleRadio> AppleHSARSingleRadio::create(IOService *, const sar::HSARSupportedFeature &)`
+- `static IOReturn AppleSARServiceUserClient::extRegulatory(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: parameter->buffer is null!`
+- `site.SARCallbackWrapper`
+- `%s::%s:%d: Modem SPMI Ready\n`
+- `arBufferFromInterface`
+- `%s::%s:%d: Failed to tear down client %s`
+- `Failed to initialize SPMI Buffer Helper\n`
+- `registerInterestService`
+- `%s::%s:%d: HSAR instance has not been created`
+- `%s::%s:%d: Unable to send wake signal, ret: 0x%x\n`
+- `site.PTDDriverBuffer`
+- `%s::%s:%d: AppleCentauriManager: subsystem: %s, key: %s, in reset? %u\n`
+- `%s::%s:%d: Failed to call tx callback: (ret: 0x%x)`
+- `checkNonColocatedModeGated`
+- `%s::%s:%d: Failed to create data ops object to perform ptd ops`
+- `registerPTDInterrupt`
+- `%s::%s:%d: Triggering coredump due to an SPMI error\n`
+- `No Case`
+- `%s::%s:%d: Invalid NULL buffer pointers in update`
+- `%s::%s:%d: No isr is registered!\n`
+- `site.PTDUnitTestClient`
+- `sendCellularBoost_block_invoke`
+- `com.apple.Telephony.cellularSarBoost`
+- `%s::%s:%d: Failed to get SAR Fusion Address\n`
+- `%s::%s:%d: Failed to send SAR Fusion data to baseband: ret: 0x%x\n`
+- `%s:%d: [%s] Cluster: %u, but it is beyond the supported count: %u\n`
+- `sendTxNotificationToUserClientGated`
+- `%s:%d: User client is closing\n`
+- `sarRFSensingSignal`
+- `angle_0_duration_s`
+- `unregisterPTDClientGated`
+- `%s::%s:%d: Perform Wake Procedure - Done\n`
+- `Ry60`
+- `%s::%s:%d: SPMI driver is not given`
+- `static IOReturn AppleSARServiceUserClient::extWristState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: No Provider!\n`
+- `#D: %s::%s:%d: Max TER Consumption: %u, TER per radio: %u, Hysteresis: %u, Disabling Factor: %u, Uplink Constraint Disabling Counter: %u, BPS Supported: %u, BPS Enabled: %u, BPS Target Detected: %u`
+- `site.PTDInterruptHandler`
+- `setupSARService_block_invoke_4`
+- `%s::%s:%d: HSAR Metric CA event sent successfully (%u fields)`
+- `%s::%s:%d: Failed to proceed the buffer address, 0x%x (bufferQueue: %p)\n`
+- `AppleBaseband: Data length (%u) is not the 32-bit size for the property, \"%s\"`
+- `#D: %s::%s:%d: Client is inactive, skipping notification for fourCC %s`
+- `Not Occluded LoPwr FCam Off`
+- `#D: %s::%s:%d: [ClusterMap] budgetDistributionGated: mapping fConnectivitySAR.budget (Connectivity)`
+- `Awake`
+- `frontCameraState_block_invoke_2`
+- `%s::%s:%d: Received E85 Response from baseband\n`
+- `%s::%s:%d: Successfully setup ptd unit test environment`
+- `AppleSARInterfaceSPMIWLANIDC`
+- `%s::%s:%d: Failed to allocate memory for client list of %s`
+- `%s::%s:%d: PTD lookup function not initialized`
+- `%s::%s:%d: There is no response instance!\n`
+- `%s::%s:%d: Initialize\n`
+- `#D: %s::%s:%d: SAR Fusion: Cellular Boost: %s`
+- `static IOReturn AppleSARServiceUserClient::extCellularBudget(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `broadcastOBDStateGated`
+- `%s::%s:%d: No SPMI driver for WLAN is found!\n`
+- `%s::%s:%d: Registered the TAS indication callback`
+- `void AppleHSARAverageDelegate::reset(void *, void *, const char *const)`
+- `budgetDistributionGated`
+- `%s:%d: No scalar output is given!\n`
+- `%s::%s:%d: Failed to get PTDInterruptInfo for interrupt %d`
+- `accessoryState_block_invoke_2`
+- `sar.kext`
+- `1211111212221212111121121121121112112`
+- `%s::%s:%d: Client registry component not initialized`
+- `#D: %s::%s:%d: Tx state (%s) is remained as same as before`
+- `ApplePTDClientInterface`
+- `%s::%s:%d: No wlan sar interface is given!`
+- `setupSARService`
+- `sendBillboardDataGated`
+- `%s::%s:%d: Wake signal sent successfully\n`
+- `%s::%s:%d: Failed to create CoreAnalytics notifier!`
+- `updateConnectivityRegulatoryInfo`
+- `#D: %s::%s:%d: data: %llu, metadata: %llx (%zu)`
+- `regulatoryAverage_block_invoke_2`
+- `getConnectivityMinMaxValues`
+- `%s::%s:%d: SAR interface is not ready yet!`
+- `OSBoundedPtr.h`
+- `SAR Consumed Report Error`
+- `updateSARRFSensingSignalGated`
+- `#D: %s::%s:%d: Radio Option: %u`
+- `%s::%s:%d: Failed to cast CoreAnalyticsHub`
+- `registerUserClientCallback_block_invoke`
+- `sar_boost`
+- `HSAR`
+- `Unknown Client`
+- `performFeaturesBeforeSleep`
+- `%s::%s:%d: Removing stale list entry for closing user client at index %u\n`
+- `%s::%s:%d: Indicator: 0x%x, CRC16: 0x%02x%02x, SeqNum: %u`
+- `#D: %s::%s:%d: SAR Fusion: Sar Selection: %s (Overriding: %s)`
+- `%s::%s:%d: %s: TER Cellular Avg[%u]: %u, TER WiFi Avg[%u]: %u, TER BT Avg[%u]: %u, TER UWB Avg[%u]: %u`
+- `%s::%s:%d: PTD Supported Version: %d.%d.%d\n`
+- `sarFusionStateDAL`
+- `sarBlockedRegion`
+- `%s::%s:%d: Failed to allocate client name string for %s\n`
+- `SAR Boost always`
+- `%s::%s:%d: Updated minimum mmW frequency: %u GHz`
+- `updateBlockedRegion_block_invoke`
+- `%s::%s:%d: Failed to get static SAR!\n`
+- `%s::%s:%d: SAR RF Sensing callback has not been set up`
+- `%s::%s:%d: Failed to allocate CoreAnalytics event objects`
+- `%s::%s:%d: helper is not given for index %u\n`
+- `%s::%s:%d: No clients register for %s (clientList can %s be found, clientList count is %u)`
+- `resetDefaultValuesGated`
+- `%s::%s:%d: sub8 band indicator cannot be more than %u. Falling back to 0`
+- `%s::%s:%d: One of instances is not ready: fCentralSAR (%p) fCentralSARInstantValues (%p) fAntennaClusterConfig (%p) fCentralMPE (%p)`
+- `%s::%s:%d: Starting SAR Report Monitor`
+- `#D: %s::%s:%d: Wrist State is updating\n`
+- `connectivitySARBudget_block_invoke`
+- `dataWrite`
+- `site.AppleRFSensingINT`
+- `ue_facing_down_duration_s`
+- `wifi_sar_budget_cluster2`
+- `calculateBudgetGated`
+- `exitingMarginalCondition`
+- `calculationAndSendingBudgetGated`
+- `registerClient`
+- `billboard-addr-tx-wait-time`
+- `Non-Freespace`
+- `%s::%s:%d: Trying to do an action due to the sequence number mismatch! The received sequence number (%u) is not consecutive. The previous sequence number is %u\n`
+- `#T: %s::%s:%d: Calculating the stewie budget`
+- `%s::%s:%d: State AB is null`
+- `%s:%d: No name is given!`
+- `static IOReturn AppleSARServiceUserClient::extSpeakerState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: [%s] Failed to register FourCC 0x%x: error 0x%x`
+- `#D: %s::%s:%d: Send Budget to Cellular`
+- `%s::%s:%d: Updating blocked region`
+- `AppleRFSensingINT`
+- `%s::%s:%d: Warning! Received a WAKE_DONE signal from BB without AP sending a WAKE signal, updating state from %s to %s\n`
+- `vswrOnlyMode_block_invoke`
+- `%s::%s:%d: OBD state broadcasted not supported on this device`
+- `%s::%s:%d: Received a WAKE_DONE signal from BB, updating state from %s to %s`
+- `PTDInternalRegistrationData`
+- `%s::%s:%d: SPLSR: Central SAR Budget: %u, Central MPE Budget: %u, Cellular SAR Budget: %u, Cellular MPE Budget: %u\n`
+- `%s::%s:%d: osiris state / orientation is nullptr`
+- `hsarCallbackGated`
+- `stopConnectivitySARReportMonitorGated`
+- `%s::%s:%d: Detected Connectivity WiFi alive`
+- `billboard-addr-tx-config-vswr`
+- `com.apple.Telephony.hsarSensingDecisionVerdict`
+- `%s::%s:%d: Failed to copy frequencies from RFCoex\n`
+- `AWAKE`
+- `triggerCoredumpViaUserClient`
+- `OBD_State`
+- `%s::%s:%d: Sending Budget to connectivity: Sem: %u, Seq: %u (0x%x), Host HSAR Version: %u, Cell SAR Boost: %u, Report Period: %u, Operation Mode: %u, SAR Budget Limit: %u, Total Budget Clusters: %u mJ/kg, %u mJ/kg, %u mJ/kg, %u mJ/kg, WiFi Budget Clusters: %u mJ/kg, %u mJ/kg, %u mJ/kg, %u mJ/kg, BT `
+- `no`
+- `#D: %s::%s:%d: HSAR Metric: all %u fields populated, dict count=%u, sending event`
+- `Disabled`
+- `ptdRegisterInterrupt`
+- `budgetScalingFactor`
+- `billboard-addr-tx-deviceupdate`
+- `#D: %s::%s:%d: Updating sequence number to %u\n`
+- `configureSARRFSensing_block_invoke`
+- `#T: %s::%s:%d: Calculate TER and remaining TER\n`
+- `%s::%s:%d: Failed to send budget data. (ret: 0x%x)\n`
+- `%s:%d: blockAccessoryRequest on client death failed: 0x%x\n`
+- `incrementSensingCABucketsGated`
+- `%s::%s:%d: RF Sensor Config: %s, OBD support: %u`
+- `%s::%s:%d: Null parameter is given`
+- `transactionFailureGated`
+- `%s::%s:%d: fCalculationEventSource is null, cannot trigger calculation`
+- `centralBT`
+- `%s::%s:%d: rfSensingCACurrentState output size mismatch (%u vs %zu)`
+- `%s::%s:%d: Failed to create FourCC number for 0x%x`
+- `setupSARService_block_invoke_3`
+- `evaluateAllInputsGated`
+- `com.apple.telephony.abm`
+- `%s::%s:%d: Invalid PTD data pointers: data=%p, metaData=%p\n`
+- `%s::%s:%d: AppleSARFusion: Triggering SPMI coredump via kernel`
+- `#T: %s:%d: [%s] [dbIndex: %u, count: %u, cluster: %u] Since count is zero, removing the dbIndex`
+- `findRemainingBudgetGated`
+- `readFourCCsFromEDT`
+- `rfSensingCAInfo`
+- `overrideUseCaseDetection`
+- `irq-tx-offset-sar-budget`
+- `%s::%s:%d: SPMI IDC Services are set up successfully\n`
+- `writeOCPWakeSignalGated_block_invoke`
+- `%s::%s:%d: Registered the SAR RF Sensing callback`
+- `%s::%s:%d: One of instances is not ready: fCentralSAR (%p) fCellularSARReport (%p) currentARBuffer (%p) fAntennaClusterConfig (%p)`
+- `powerStateDidChangeTo`
+- `sensing_state`
+- `%s::%s:%d: Object is NULL!\n`
+- `%s::%s:%d: Setting userclient context!\n`
+- `%s::%s:%d: Failed to convert fourCC 0x%08x to string`
+- `#T: %s:%d: [%s] [dbIndex: %u, duration: %u, cluster: %u] The oldest value: %u, the current value: %u\n`
+- `radio_subsystem`
+- `%s::%s:%d: WARNING: Connectivity residual[%u] (%u) is less than WiFi[%u] (%u) + BT Consumed Value[%u] (%u)`
+- `#T: %s::%s:%d: Calculating dynamic SAR and MPE budget for Cellular`
+- `free`
+- `#D: %s::%s:%d: Invalid Connectivity cluster mapping at hsarIdx=%u (mapping=0x%02x); zeroing fWiFiSAR/BTSAR.used[%u]`
+- `updateBudgetWithResidual`
+- `#D: %s::%s:%d: HSAR Sleep: H-GTB: %llu`
+- `wristState_block_invoke`
+- `#D: %s::%s:%d: Current Uplink Constraint Condition and updating value are the same (%u). So, no report it to the upper userclient`
+- `%s::%s:%d: Central Cellular Budget Cluster[%u]: %u, Connectivity Budget Cluster [%u]: %u`
+- `centralMPE_block_invoke_2`
+- `rfOcclusion`
+- `static IOReturn AppleSARServiceUserClient::extSARSensingCACurrentState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `AP HSAR is assigning zero budget`
+- `cellular_connected`
+- `initializeWLAN_block_invoke_3`
+- `%s::%s:%d: Failed to create interrupt event source for index %d`
+- `orientation`
+- `Mitigation Request Active`
+- `%s::%s:%d: No IDC service exists!\n`
+- `R188`
+- `%s::%s:%d: %s: MPE Instantaneous Value (Total) [%u]: %u, MPE Total Average: %u`
+- `sarConsumed_block_invoke`
+- `%s::%s:%d: Current Configuration: HSAR: %s, simulation mode: %s, simulation sleep mode: %s, sleep ts: %llu, wake ts: %llu, SAR limit table type: %s, HSAR Config Overridden: %s`
+- `%s::%s:%d: Supported all radios (UWB/WiFi/BT) GPR0 version: %d.%d.%d\n`
+- `#T: %s::%s:%d: %s: Central SAR Current Index: %u, Central MPE Current Index: %u\n`
+- `updateUseCaseDetectionOverrideGated`
+- `%s::%s:%d: Failed to initialize SAR RFSensing object!`
+- `%s::%s:%d: Failed to send budget`
+- `%s::%s:%d: [Previous] Cell: %s, TX Suspend: %s, mmWave: %s, Stewie: %s, [Current] Cell: %s, TX Suspend: %s, mmWave: %s, Stewie: %s, AR Buffer Overriding Flag: %s\n`
+- `%s::%s:%d: Getting back the regulatory information`
+- `regulatoryLimit_block_invoke`
+- `%s:%d: Data length (%u) is not the 32-bit size for the property, \"%s\"\n`
+- `TAS ICNIRP 1998`
+- `Connectivity`
+- `static IOReturn AppleSARServiceUserClient::extCellularSARBoostState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Failed to setup CoreAnalytics service`
+- `bt_power`
+- `%s::%s:%d: Invalid parameters in sarRFSensingCallbackGated (ret: %p, sar selection data: %p)`
+- `%s::%s:%d: HSAR Error: %s`
+- `%s::%s:%d: Failed to report back to IOPort for WLAN (ret: 0x%08x)\n`
+- `%s::%s:%d: Workloop is not created!\n`
+- `%s:%d: [%s] Invalid currentDBIndex: %u (fLastDBIndex: %u)\n`
+- `%s::%s:%d: E85 Mitigation object has not created!`
+- `updateVSWROnlyModeGated`
+- `sendUserClientHSARErrorMessageGated`
+- `angle_neg_duration_s`
+- `registerUserClientCallback`
+- `%s::%s:%d: Connectivity TAS Enabled: %s`
+- `%s::%s:%d: Connectivity SAR Report Monitor has started. Stopping the service before starting`
+- `startPeriodicCalculationUpdateTimer_block_invoke`
+- `#T: %s::%s:%d: [SAR] Initial Max Budget: %u, Minimum Future: %u, Margin: %u, Central Averaging Duration: %u, Regulatory Limit: %u\n`
+- `Invalid parameters: pTDDriver=%p, workLoop=%p`
+- `%s::%s:%d: Not attached to core analytics yet`
+- `registerConnectivityCallback`
+- `%s::%s:%d: This device supports E85 Mitigation`
+- `site.AppleSARSPMIIDCWLAN`
+- `uwbRadio_block_invoke`
+- `%s::%s:%d: Failed to initialize super class\n`
+- `Enabled`
+- `%s::%s:%d: PTD peek function not initialized`
+- `updateBlockedRegionGated`
+- `writeOCPInitSignalGated_block_invoke`
+- `antennaClusterFromInterface_block_invoke`
+- `startConnectivitySARReportMonitorGated`
+- `regulatory_block_invoke`
+- `btResidual_block_invoke`
+- `sleep`
+- `irq-tx-offset-e85-stop`
+- `bt_le_adv_epa`
+- `sendBudgetCellularGated`
+- `initializeFunctions`
+- `overrideUseCaseDetection_block_invoke_2`
+- `%s::%s:%d: Failed to create SAR Fusion object!\n`
+- `cellular_sar_budget_cluster2`
+- `Antenna cluster configuration`
+- `%s::%s:%d: Invalid user client callback\n`
+- `%s::%s:%d: Input size (%u) is not the SAR Consumed Structure Size (%u)\n`
+- `%s::%s:%d: Failed to update E85 Mitigation: ret (0x%x)\n`
+- `%s::%s:%d: interrupt specified in EDT exceed max fourCCs allowed in driver, please re-configure your EDT`
+- `VSWR`
+- `#D: %s::%s:%d: Sent Tx indication %u to provider clients`
+- `%s::%s:%d: Central Total SAR Data is null!`
+- `%s::%s:%d: Connectivity consumed: %u`
+- `%s::%s:%d: Trying to do an action due to 0 SAR budget`
+- `cellularSarAveragingPeriod`
+- `%s::%s:%d: fFourCCsInfo not initialized`
+- `updateOrientation_block_invoke`
+- `rfSensingCACurrentState`
+- `%s::%s:%d: Invalid configuration - fourCC is null or size is zero`
+- `%s::%s:%d: Unregistered callback for interface type: %d\n`
+- `getHelper`
+- `%s:%d: SAR Service has not been created!\n`
+- `static IOReturn AppleSARServiceUserClient::extTotalMPE(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Antenna Cluster Config: HSAR clusters=%u, Cellular clusters=%u, Cell mapping=[%u,%u,%u,%u], Conn mapping=[%u,%u,%u,%u]`
+- `%s::%s:%d: No Cellular SAR/MPE Report instance!`
+- `start`
+- `The range of valid memory is too large to be represented by this type, or [begin, end) is not a well-formed range`
+- `%s::%s:%d: Unable to send sleep signal, ret: 0x%x\n`
+- `%s::%s:%d: Failed to restore Regulatory SAR limit on wake`
+- `checkSARReportGated`
+- `sarSelectionState_block_invoke`
+- `sendTxIndicationGated`
+- `%s::%s:%d: Interrupt Index %d is attaching\n`
+- `START`
+- `%s::%s:%d: Failed to get %s service\n`
+- `site.DebugInfo`
+- `bt_sar_budget_cluster2`
+- `%s::%s:%d: UWB active bit data is NULL!`
+- `%s::%s:%d: The index (%u) of the type is beyond the database max number (%u)`
+- `%s::%s:%d: Failed to create fourCC dictionary with capacity %zu`
+- `%s::%s:%d: Failed to stop periodic update!\n`
+- `irq-tx-offset-wait-time`
+- `%s::%s:%d: PTD %s numberOfEntries (%zu) exceeds maximum (%zu), clamping to limit`
+- `|Unknown`
+- `callbackHandler`
+- `%s:%d: %s started`
+- `%s::%s:%d: Flag: %s`
+- `bt_sar_utilization_cluster2`
+- `%s::%s:%d: %s: TER Cellular SPLSR Avg: %u, TER WiFi SPLSR Avg: %u, TER BT SPLSR Avg: %u, TER UWB SPLSR Avg: %u`
+- `12111112122212121111111111111111111122222222`
+- `#T: %s::%s:%d: SAR Max Budget for Cellular: %u`
+- `centralSAR`
+- `disabled`
+- `i36@?0I8^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}12^v20Q28`
+- `%s::%s:%d: Received from callback occlusion State1: %s, State2: %s`
+- `#D: %s::%s:%d: SAR Fusion: Accessory: %s (Overriding: %s)\n`
+- `%s::%s:%d: Detected Connectivity CCPU alive`
+- `%s::%s:%d: No pTDDriver driver set, cannot handle interrupt`
+- `%s::%s:%d: Cellular SAR instance is not ready!`
+- `%s::%s:%d: This device does not support %s\n`
+- `%s::%s:%d: No SPMI driver is found!\n`
+- `1211111212221212111111111111111111112222222211111`
+- `static OSSharedPtr<AppleSARConnectivityCellBoost> AppleSARConnectivityCellBoost::create(IOService *, AppleSARInterface *)`
+- `%s::%s:%d: Callback parameter is null!`
+- `%s::%s:%d: Failed to add buffer wrapper to dictionary for fourCC 0x%08x`
+- `irq-tx-offset-accessory`
+- `%s::%s:%d: Failed to initialize AppleSARSPMI\n`
+- `%s::%s:%d: Not firing peridic timer\n`
+- `%s::%s:%d: SAR Budget Overriding: %s, MPE Budget Overriding: %s`
+- `cellularSarConsumedFromInterface`
+- `i8@?0`
+- `unregisterClient`
+- `Mic 5`
+- `#T: %s:%d: [%s] [dbIndex: %u, duration: %u, cluster: %u] Average: %u\n`
+- `%s::%s:%d: WARNING: BT residual[%u] (%u) is less than BT Consumed Value[%u] (%u)`
+- `%s::%s:%d: [Budget Cluster] Cellular[%u]: %u, WiFi[%u]: %u, BT[%u]: %u`
+- `#D: %s::%s:%d: Max TER Consumption: %u`
+- `%s::%s:%d: The number of skip: %u, and offset: %lld msec`
+- `(SIMULATION)`
+- `%s::%s:%d: Invalid PTD peek request: Please provide buffer and metadata with valid addresses. buffer=%p, metadata=%p`
+- `#D: %s::%s:%d: OBD (%u) and Tuner State (%u) is updating`
+- `static IOReturn AppleSARServiceUserClient::extCentralTER(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `site.CircularBufferQueue`
+- `SAR consumed Address`
+- `peekGated`
+- `%s::%s:%d: Failed to get PTD object`
+- `%s::%s:%d: H-GTB (%llu) is less than M-GTB (%llu). Setting offset to 0`
+- `#T: %s::%s:%d: Calculate TER and remaining TER`
+- `#D: %s::%s:%d: It is the first HSAR Timer expired. Nothing to check`
+- `totalSAR`
+- `AppleSARSPMIIDC`
+- `%s::%s:%d: Failed to send SAR Fusion to baseband!`
+- `cellularBudgetAssignmentGated`
+- `%s::%s:%d: [Stewie] TER Limit: %s, Past SAR Average[%u]: %u, Remaining Budget: %u, Minimum Budget per cluster: %u`
+- `#D: %s::%s:%d: CASE 2: (rt-ts-1:%llu bit in 0x%llx): Tx was Off`
+- `%s::%s:%d: Failed to register interest service for %s\n`
+- `B24@?0r^{OSSymbol=^^?ib14b18*{smrq_slink={?=^{smrq_slink}}}}8^{OSObject=^^?i}16`
+- `%s::%s:%d: [%s] Failed to create callback event source`
+- `%s::%s:%d: Write data %llu to client [%s] buffer`
+- `%s::%s:%d: \n`
+- `writeOCPReadySignalGated`
+- `%s::%s:%d: Failed to create buffer wrapper for fourCC 0x%08x`
+- `#T: %s::%s:%d: [Connectivity] Initial Budget: Max: %u, Min Future: %u, Margin: %u, Time Averaging Duration: %u`
+- `%s::%s:%d: Failed to get ARBuffer`
+- `static IOReturn AppleSARServiceUserClient::extBTState(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `uwbActive`
+- `%s::%s:%d: State Osiris: %s (Override: %s)`
+- `%s::%s:%d: This device does not support cellular SAR boost`
+- `%s::%s:%d: This device support connectivity HSAR`
+- `#D: %s::%s:%d: Delay 1 msec between WAKE and PAYLOAD`
+- `%s::%s:%d: Updated OBD State from %u to %u`
+- `#T: %s::%s:%d: %s\n`
+- `%s::%s:%d: Failed to register AppleBaseband: Client registraion attempt returned 0x%08x\n`
+- `SAR Boost disabled`
+- `%s::%s:%d: Trying to do an action due to 0 connectivity SAR budget for cluster %u`
+- `sendBudgetGated`
+- `sleepGated`
+- `mpeConsumed`
+- `sendCAEventHSARMetric`
+- `12`
+- `%s::%s:%d: SAR Fusion: Sequence Number: %u\n`
+- `%s::%s:%d: Failed to convert fourCC 0x%08x to string in update`
+- `#D: %s::%s:%d: SAR Fusion is blocked`
+- `#D: %s::%s:%d: SAR Fusion: Hand Grip: %s (Overriding: %s)`
+- `updateOBDState_block_invoke`
+- `%s::%s:%d: Connectivity SAR Data is null!`
+- `%s::%s:%d: Sending Budget to modem: Sem: %u, Seq: %u, SAR Budget: %u W/kg, SAR Budget Cluster[0]: %u W/kg, SAR Budget Cluster[1]: %u W/kg, MPE Budget: %u mW/cm^2, Period: %u seconds, Operating Mode: %s, SAR Budget Cluster[2]: %u W/kg, SAR Budget Cluster[3]: %u W/kg, TER Consumed (Average): %u %%, (O`
+- `site.AppleSARTimer`
+- `#D: %s::%s:%d: All checks passed, proceed to write a message onto the buffer\n`
+- `Mode B`
+- `122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `%s::%s:%d: [%s] Missing critical input data: sar (%p) sarInstantValues (%p)`
+- `%s::%s:%d: Failed to update SAR Fusion Data: ret (0x%x)\n`
+- `SAR Budget Command`
+- `performFeaturesAfterConnectivityWiFiAliveGated_block_invoke`
+- `%s:%d: Failed to allocate the async reference lock!\n`
+- `static IOReturn AppleSARServiceUserClient::extUpdateOcclusion(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `%s::%s:%d: Buffer size too small for semaphore operation`
+- `%s::%s:%d: [%s] Failed to create periodic update timer`
+- `thread_power`
+- `triggerCoredumpViaKernel`
+- `wifiResidual_block_invoke`
+- `%s::%s:%d: All radios (UWB/WiFi/BT) GPR0 version: AP: %d.%d.%d, BB: %d.%d.%d\n`
+- `updateBTStateGated`
+- `%s::%s:%d: [%s] Failed to calculate average due to the averaging duration being zero! (%u)\n`
+- `SAR Transition Wait Time IRQ`
+- `connectivitySAR_block_invoke_2`
+- `#D: %s::%s:%d: Max SAR Consumed in cluster: %s, TER: %s, Hysteresis: %s`
+- `%s::%s:%d: CentralHSAR pointer is null`
+- `%s:%d: Async reference lock is not available!\n`
+- `%s::%s:%d: Triggering the send data function from within the OCP READY_TO_FILL ISR`
+- `%s::%s:%d: Failed to create Tx indication event source`
+- `%s::%s:%d: WARNING: [cluster: %u] SAR average (%u) is less than the instant average value[%u] %u\n`
+- `%s::%s:%d: One of instances is not ready: currentARBuffer (%p) fCellularSAR (%p) fCellularMPE (%p) fConnectivitySAR (%p) fCentralTotalMPE (%p) fConnectivitySARReport (%p) fWiFiSAR (%p) fBTSAR (%p) fUWBSAR (%p) fCentralWiFi (%p) fCentralBT (%p)`
+- `peek`
+- `angle_45_duration_s`
+- `#D: %s::%s:%d: HSAR Timer expired`
+- `%s::%s:%d: Failed to start the super class!\n`
+- `%s::%s:%d: Thread Power: %s (Overriding: %s)`
+- `Not Occluded LoPwr UC Det Not Supp`
+- `%s::%s:%d: MPE Consumed: Sem: %u, Seq: %u, MPE Used[0]: %u mW/cm^2, MPE Used[1]: %u mW/cm^2, MPE Used[2]: %u mW/cm^2, MPE Used[3]: %u mW/cm^2, Cluster Valid: 0x%x, Cluster Present: 0x%x, Duty Cycle: %u %%, Report Timestamp: %u seconds, Throughput Ratio in Q4 unit: %u, Overriding Flag: %s, Sending Bu`
+- `%s::%s:%d: Failed to get TER calculation!\n`
+- `%s::%s:%d: [%s] Central HSAR instant value db is NULL!\n`
+- `#T: %s::%s:%d: SAR Normalized: %u, MPE Normalized: %u`
+- `isAnyTxOn`
+- `%s::%s:%d: Read %d fourCCs from EDT successfully`
+- `#D: %s::%s:%d: Attached to CoreAnalytics service`
+- `%s::%s:%d: No baseband response buffer helper!\n`
+- `gripState_block_invoke`
+- `%s::%s:%d: Failed to create controller for client %s`
+- `off`
+- `Body Not In Mode 1/2/3`
+- `#D: %s::%s:%d: [ClusterMap] Exit mapHSARClusterBudgetsToRadioCluster: radio=%s, output budget=[%u,%u,%u,%u]`
+- `%s::%s:%d: ARBuffer State for HSAR calculation: Cell: %s, TX Suspend: %s, mmWave: %s, Stewie: %s, Overriding Flag: %u`
+- `#D: %s::%s:%d: Updated OBD State from %u to %u`
+- `static IOReturn AppleSARServiceUserClient::extARBuffer(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `irq-tx-offset-e85-start`
+- `%s::%s:%d: [MetaData] Failed to cast idx %zu to OSNumber`
+- `sarServiceMessageHandler`
+- `%s::%s:%d: SAR RF Sensing service is already created. No further setting profile!`
+- `%s::%s:%d: This device does not support HSAR`
+- `#D: %s::%s:%d: Not sending the budget`
+- `arBuffer`
+- `wifiSAR_block_invoke`
+- `Failed to get %s service!\n`
+- `%s::%s:%d: Provider does not have the HEB contents!\n`
+- `%s::%s:%d: Failed to send the uplink constraint condition due to missing HSAR callback`
+- `%s:%d: Failed to initialize HSAR!`
+- `cellularSAR`
+- `static IOReturn AppleSARServiceUserClient::extPTDRegisterInterrupt(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `#T: %s::%s:%d: Non Colocated Antenna for cellular: %u, Number of SAR Cluster: %u, SAR Selection: %u, SAR Request Type: %s, Stewie: %u`
+- `Override`
+- `site.PTDDriverCircularBufferWrapper`
+- `%s::%s:%d: Connectivity SAR Report Monitor timer expired`
+- `%s::%s:%d: Failed to get result`
+- `%s::%s:%d: CoreAnalytics service instance is NULL!\n`
+- `SAR Transition Wait Time Address`
+- `%s::%s:%d: Abort OCP write due to %s state (AP is asleep or BB is resetting)\n`
+- `57..92`
+- `#D: %s::%s:%d: fresh sar_report_timestamp %u (prev %u)`
+- `#T: %s::%s:%d: Calculating TER and remaining TER\n`
+- `antennaOnTop`
+- `%s::%s:%d: Failed to create interrupt source for index %u\n`
+- `%s::%s:%d: Failed to create interrupt handler\n`
+- `getClientsForFourCC_block_invoke`
+- `%s::%s:%d: WiFi Power: %s, Association: %s, AWDL: %s, PHS: %s, 2.4 GHz: %s, 5.0 GHz: %s, 6.0 GHz: %s, Connectivity TAS Enabled: %s (Overriding: %s)`
+- `Mode A`
+- `regulatoryLimit`
+- `%s::%s:%d: Failed to allocate memory for client name`
+- `%s::%s:%d: Initialized WLAN for HSAR`
+- `|E75`
+- `#D: %s::%s:%d: Enqueued Tx indication: %u (queue depth: %u)`
+- `1211111212221212111111112112221121121`
+- `Arcas`
+- `|Charging`
+- `|B393`
+- `pitch_nominally_farther_duration_s`
+- `tear_down_client`
+- `site.AppleSARInterfaceSPMIIDC`
+- `Periodic Budget for Control Message`
+- `calculateStaticSARGated`
+- `virtual bool AppleSARServiceUserClient::start(IOService *)`
+- `KernelLog`
+- `AppleHSARSingleRadio`
+- `%s::%s:%d: [Regulatory Limit] Mode: %s, SAR Limit: %s, MPE Limit: %s, TER Limit: %s, SAR SPLSR: %s, SAR Total Limit: %s, Non Colocated Antenna Enabled: %s, SAR External Limit: %s, MPE External: %s, Connectivity Limit: %s`
+- `#D: %s::%s:%d: \n`
+- `%s:%d: Failed to get \"%s\" property\n`
+- `%s::%s:%d: SAR Fusion Data object is invalid, unable to reset sequence number\n`
+- `%s::%s:%d: Failed to trigger coredump via user client (ret: 0x%x), falling back to kernel method\n`
+- `121111121222121211111112112112211211211211211211211211211221121122112112112112112112112112112112112112112112112112112112112112112112212112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `%s::%s:%d: Past Time: %llu msec, Current Time: %llu msec`
+- `updateCoexPlatformConfigRevCallback`
+- `%s::%s:%d: Central/Cellular SAR instance has not been created!`
+- `%s::%s:%d: Failed to get static SAR!`
+- `error_type`
+- `122`
+- `static IOReturn AppleSARServiceUserClient::extVSWROnlyMode(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `Regulatory information`
+- `|A305`
+- `%s::%s:%d: Bluetooth Power: %s, Connected: %s, LE advertisement for ePA: %s (Overriding: %s)\n`
+- `static IOReturn AppleSARServiceUserClient::extAntennaClusterConfig(AppleSARService *, void *, IOExternalMethodArguments *)`
+- `mavSPMIResetTimerCallback`
+- `Landscape Right`
+- `B16@?0^{OSObject=^^?i}8`
+
+**[__TEXT.__os_log]**
+
+- `%s::%s:%d: Interrupt count mismatch between EDT and IOService - ensure #interrupt-cells for SoC is set to 1`
+- `#T: %s::%s:%d: [%s] Reading SPMI data from BB with size of %lu at 0x%x:\n`
+- `%s::%s:%d: baseband reset detected in HSAR AP sleep/wake: %llu (GTB ms)`
+- `%s::%s:%d: HSAR Error: %s (subsystem: %u)`
+- `%s::%s:%d: fConnectivityBudgetScalingFactor is NULL`
+- `%s::%s:%d: E85 WLAN Mitigation Stop IRQ: 0x%x\n`
+- `%s::%s:%d: Failed to add buffer wrapper to dictionary for fourCC 0x%08x`
+- `%s:%d: [%s] dismiss DB is null!`
+- `%s::%s:%d: Cellular SAR Limit = %s (index: %u, SAR Boost: %s, SAR selection: %u, region: %u)`
+- `#D: %s::%s:%d: [Start] Calculating Stewie Transition Wait Time: %s\n`
+- `%s::%s:%d: [%s] Failed to create interrupt event source`
+- `%s::%s:%d: SAR Report Monitor has started. Stopping the service before starting`
+- `%s::%s:%d: Failed to initialize super class, AppleSARInterface`
+- `%s::%s:%d: Routing Use Case Detection override to HSAR: status: %u value: %u`
+- `%s::%s:%d: [Budget SPLSR] Cellular: %u, WiFi: %u, BT: %u`
+- `%s::%s:%d: Received Connectivity Regulatory Info: Sem: %u, Seq: %u (0x%x), Region: %s, Time Avg Mode: %s, Sub 8 Band: %u, TAS Mode: %u, (Override: %u)`
+- `#D: %s::%s:%d: Voice State is updating`
+- `%s::%s:%d: Failed to create name string for client '%s'`
+- `%s::%s:%d: No SPMI driver is found!`
+- `#D: %s::%s:%d: HSAR is blocked`
+- `%s::%s:%d: Not firing peridic timer\n`
+- `%s::%s:%d: H-SAR logic has stopped!\n`
+- `#D: %s::%s:%d: CASE 2: (offset: rt-ts-1:%llu in 0x%llx): Tx was On`
+- `#D: %s::%s:%d: Max SAR Consumed in Clusters: %s`
+- `%s::%s:%d: Failed to extract data at index %d for client [%s]`
+- `#D: %s::%s:%d: [ClusterMap] budgetDistributionGated: mapping fConnectivitySAR.budget (Connectivity)`
+- `%s::%s:%d: SAR Consumed: Sem: %u, Seq: %u, SAR Used[0]: %u mW/kg, SAR Used[1]: %u mW/kg, SAR Used[2]: %u mW/kg, SAR Used[3]: %u mW/kg, Cluster Valid: 0x%x, Cluster Present: 0x%x, Duty Cycle: %u %%, Head/Body: %s, Requested Type: %s, Report Timestamp: %u (modem GTB shifted), Activity BitMask: 0x%llx,`
+- `#D: %s::%s:%d: Threshold: %s (%u (/1000) * (%s - %s ))`
+- `#D: %s::%s:%d: SAR Fusion is blocked`
+- `%s::%s:%d: [%s] entries is zero`
+- `%s::%s:%d: Failed to get static SAR!\n`
+- `%s::%s:%d: fourCCs array is null`
+- `%s::%s:%d: Failed to call use case detection override callback: (ret: 0x%x)`
+- `%s::%s:%d: [%s] Successfully unregistered FourCC 0x%x`
+- `%s::%s:%d: Failed to send semaphore cleared data. (ret: 0x%x)\n`
+- `%s::%s:%d: SAR Total Limit = %s, SAR limit = %s, External SAR limit = %s, Connectivity SAR Head Room = %u\n`
+- `#D: %s::%s:%d: Sending Wait Time to modem over SPMI: Sem: %u, Seq: %u, Wait Time: %u, Overriding: %s %s %s\n`
+- `%s::%s:%d: Buffer too small: need %zu bytes, have %zu bytes`
+- `%s::%s:%d: Failed to create HSAR instance for Cell Only`
+- `#D: %s::%s:%d: Current Uplink Constraint Condition and updating value are the same. So, no report it to the upper userclient`
+- `#D: %s::%s:%d: SAR transition time is updating\n`
+- `%s::%s:%d: Connectivity SPMI error on reading Regulatory Information`
+- `%s::%s:%d: This device does not support SAR fusion via SPMI IDC`
+- `#D: %s::%s:%d: SAR Fusion: Speaker: %s (Overriding: %s)`
+- `%s:%d: Unable to retrieve fusion object`
+- `#T: %s:%d: [%s] [dbIndex: %u, cluster: %u] No Duration\n`
+- `%s::%s:%d: Instance of Regulatory Info (%p), or instance of AR Buffer (%p) is not ready`
+- `#T: %s::%s:%d: Calculating dynamic SAR and MPE budget for Cellular`
+- `%s::%s:%d: Buffer helper is not ready`
+- `%s::%s:%d: RF Sensing not supported on this device`
+- `%s::%s:%d: HSAR Metric payload serialized: ret=%u, length=%lu bytes (%u fields)`
+- `#D: %s::%s:%d: [ClusterMap] budgetDistributionGated: mapping fWiFiSAR.budget (Connectivity)`
+- `%s::%s:%d: Received Connectivity SAR Report: Sem: %u, Seq: %u (0x%x), Cluster Valid: 0x%x, Cluster Present: 0x%x, OBD: %u, UWB Active: %u (Overridden: %u), Min SAR Budget: %u, WiFi Activity Factor 2G: %u, WiFi Activity Factor 5G: %u, WiFi Activity Factor 6G: %u, WiFi Used: %u, %u, %u, %u, BT Used: %`
+- `%s::%s:%d: [%s] Central Budget[%u]: %u\n`
+- `%s::%s:%d: There is no response instance!\n`
+- `#T: %s::%s:%d: [%s] updated residual: %u and budget: %u`
+- `%s::%s:%d: One of instances is not ready: name (%p) fCentralSAR (%p) fConnectivitySAR (%p)`
+- `%s::%s:%d: fCellularSARReport (%p)/fCellularMPEReport (%p) is NULL`
+- `%s::%s:%d: The index (%u) of the type is beyond the database max number (%u)`
+- `%s::%s:%d: H-GTB: %llu, M-GTB: %llu, delta: %llu\n`
+- `%s::%s:%d: SPMI interrupt source for index (%d) has been installed\n`
+- `%s::%s:%d: [%s] Peek from %u`
+- `%s:%d: Data length (%u) is not the 32-bit size for the property, \"%s\"\n`
+- `%s::%s:%d: Failed to create cellular SAR interface`
+- `%s::%s:%d: A callback for the use detection feature has not been set up`
+- `%s::%s:%d: Cellular MPE instance is not ready!`
+- `%s::%s:%d: Failed to create ptd controller`
+- `%s:%d: Ready-to-fill timer fired!`
+- `%s::%s:%d: Unregistered callback for interface type: %d\n`
+- `%s::%s:%d: The port feature RF Coex is not ready yet!\n`
+- `#D: %s::%s:%d: SensingCAInfo: angle=%s, fdDist=%s, pitch=%s, roll=%s, facing=%s`
+- `%s::%s:%d: Unregistering user client callback for: %s`
+- `%s::%s:%d: Failed to get debug info for fourCC: 0x%x`
+- `%s::%s:%d: [Static Connectivity] SAR Total Limit = %s, SAR limit = %s, External SAR limit = %s, Connectivity SAR Head Room = %u\n`
+- `%s::%s:%d: Central Cellular Budget Cluster[%u]: %u, Connectivity Budget Cluster [%u]: %u`
+- `#D: %s::%s:%d: SAR Budget: %u, MPE Budget: %u`
+- `%s::%s:%d: SAR Report Monitor timer expired`
+- `%s::%s:%d: Received Connectivity Regulatory Info: Sem: %u, Seq: %u (0x%x), Region: %u, Time Avg Mode: %u, Sub 8 Band: %u, TAS Mode: %u, (Override: %u)`
+- `%s::%s:%d: Service is not AppleBasebandPTD type!`
+- `%s::%s:%d: Failed to allocate client array`
+- `%s::%s:%d: [%s] request to peek failed due to driver not ready`
+- `%s::%s:%d: No buffer found for fourCC 0x%08x in get`
+- `#D: %s::%s:%d: No need to check because Tx is off`
+- `#T: %s::%s:%d: [%s] [try: %u] Writing SPMI data at 0x%x with GPR0(0x%x):\n`
+- `%s::%s:%d: Enqueueing Sensing CA snapshot: flushCount: %u, reason: %s, tx: %s, device_state: %s, sensing_state: %s, orientation: %s, duration: %u`
+- `%s::%s:%d: This device support connectivity HSAR`
+- `%s::%s:%d: %s: The number of entries: %u`
+- `%s::%s:%d: SPLSR: Central SAR Budget: %u, Central MPE Budget: %u, Cellular SAR Budget: %u, Cellular MPE Budget: %u\n`
+- `%s::%s:%d: Interrupt Index %d is attaching\n`
+- `%s::%s:%d: Failed to initialize HSAR with connectivity interface`
+- `%s::%s:%d: Connectivity SAR Budget: SPLSR: %u, [0]: %u, [1]: %u, [2]: %u`
+- `%s::%s:%d: [Regulatory Limit] Mode: %s, SAR Limit: %s, MPE Limit: %s, TER Limit: %s, SAR SPLSR: %s, SAR Total Limit: %s, Non Colocated Antenna Enabled: %s, SAR External Limit: %s, MPE External: %s, Connectivity Limit: %s`
+- `%s::%s:%d: Instance of Regulatory Info (%p) is not ready`
+- `%s::%s:%d: Failed to allocate callback lock\n`
+- `%s::%s:%d: One of instances is not ready: fCentralSAR (%p) fRegulatoryLimit (%p) fCentralMPE (%p) fCellularSAR (%p) fCentralTER (%p)`
+- `%s::%s:%d: Failed to call tx callback for uplink constraint condition: (ret: 0x%x)`
+- `%s::%s:%d: The given flag (%u) is not recognizable!\n`
+- `#D: %s::%s:%d: Power State is updating\n`
+- `%s::%s:%d: Data operations component not initialized`
+- `#D: %s::%s:%d: SAR Fusion: Sar Selection: %s (Overriding: %s)`
+- `%s::%s:%d: Wake processing has not been set yet!`
+- `%s::%s:%d: current index (%u) must be < %u`
+- `%s::%s:%d: fUseCaseDetection instance is NULL!`
+- `%s::%s:%d: [%s] Failed to allocate memory for fourCC string`
+- `%s::%s:%d: Created Cellular SAR interface`
+- `%s::%s:%d: Initialized WLAN for HSAR`
+- `#D: %s::%s:%d: SAR Fusion: Tuner State: %s SPACE (Overriding: %s)\n`
+- `%s::%s:%d: Failed to update SAR Fusion Data: ret (0x%x)\n`
+- `%s::%s:%d: [%s] Missing critical input data: sar (%p) sarInstantValues (%p)`
+- `%s::%s:%d: No pTDDriver driver set, cannot handle interrupt`
+- `%s::%s:%d: Failed to allocate PTDInterruptInfo for interrupt %d`
+- `%s::%s:%d: Checking Connectivity SAR Report: Monitor Started: %llu (ms), Now: %llu (ms), Monitor Diff: %llu (sec), Reports Received: %u, Expected: %llu`
+- `%s::%s:%d: Updated OBD State from %u to %u`
+- `#D: %s::%s:%d: HSAR Metric: all %u fields populated, dict count=%u, sending event`
+- `#T: %s::%s:%d: %s: Current Index: Cellular SAR: %u, MPE: %u, WiFi: %u, BT: %u, UWB: %u`
+- `%s::%s:%d: %s: Total SPLSR Avg: SAR: %u, MPE: %u, TER: %u`
+- `%s::%s:%d: WiFi Power: %s, Association: %s, AWDL: %s, PHS: %s, 2.4 GHz: %s, 5.0 GHz: %s, 6.0 GHz: %s (Overriding: %s)`
+- `%s::%s:%d: Current Configuration: HSAR: %s, simulation mode: %s, simulation sleep mode: %s, sleep ts: %llu, wake ts: %llu, SAR limit table type: %s, HSAR Config Overridden: %s`
+- `%s:%d: [%s] Failed to initialize HSAR!`
+- `%s::%s:%d: [%s] Failed to get next buffer entry`
+- `%s:%d: No structure input is given!\n`
+- `%s::%s:%d: %s: 0x%x`
+- `%s::%s:%d: Interrupt event source object is NULL!`
+- `%s::%s:%d: Failed to pop buffer`
+- `%s::%s:%d: The number of the SPMI retrial from boot-args: %u (if it is %u, it will set default trial: %u)`
+- `%s::%s:%d: SAR RF Sensing callback has not been set up`
+- `%s::%s:%d: One of instances is not ready: currentARBuffer (%p) fCellularSAR (%p) fCellularMPE (%p) fConnectivitySAR (%p) fCentralTotalMPE (%p) fConnectivitySARReport (%p) fWiFiSAR (%p) fBTSAR (%p) fUWBSAR (%p) fCentralWiFi (%p) fCentralBT (%p)`
+- `%s::%s:%d: Initialize`
+- `#T: %s::%s:%d: Central SAR Current Index (Before Calculation): %u`
+- `%s::%s:%d: Failed to proceed the buffer address, 0x%x (buffer: %p, bufferSize: %lu)\n`
+- `%s::%s:%d: %s: SAR Instant Value[%u][%u]: %u, SAR Average[%u]: %u\n`
+- `%s::%s:%d: The user client is not ready, so skip to register the user client in initialization phase.\n`
+- `%s::%s:%d: Zero entries in update request`
+- `%s::%s:%d: Sending Budget to modem: Sem: %u, Seq: %u (0x%x), SAR Budget (Total): %u mW/kg, SAR Budget Clusters: %u mW/kg, %u mW/kg, %u mW/kg, %u mW/kg, MPE Budget: %u mW/cm^2, Period: %u, Operating Mode: %s, TER Consumed (Average): %u %%, (Override: %u)`
+- `%s::%s:%d: Connectivity SAR Budget: %u Limit = %u (index: %u, OBD: %u, region: %u)`
+- `%s::%s:%d: WARNING: SAR Average Consumed (%u) is greater than the TER limit (%s)!\n`
+- `%s::%s:%d: E85 Mitigation from IOPort is not enabled for the baseband client, but leave E85 mitigation feature for blocking/unblocking frequencies feature.`
+- `%s::%s:%d: IOPort Feature object is not ready\n`
+- `%s::%s:%d: PTD %s numberOfEntries (%zu) exceeds maximum (%zu), rejecting request ( please check with ApplePTD kext on unepxected number of entries )`
+- `#D: %s::%s:%d: CoreAnalytics service not available for HSAR metric`
+- `%s::%s:%d: [Static Connectivity] Connectivity Headroom is less than Connectivity SAR Budget, reserve budgets vs. Standalone SAR limit`
+- `%s::%s:%d: WiFi SAR Budget: SPLSR: %u, [0]: %u, [1]: %u, [2]: %u, BT SAR Budget: SPLSR: %u, [0]: %u, [1]: %u, [2]: %u`
+- `%s::%s:%d: Failed to update SAR/MPE Limit in initialization\n`
+- `%s::%s:%d: Interrupt Index %d is detaching\n`
+- `%s:%d: result: %s: %d (0x%x)\n`
+- `%s::%s:%d: Skipping OCP transaction failure processing due to %s state (AP is asleep or BB is resetting)`
+- `%s::%s:%d: [%s] Cached Circular Buffer gone`
+- `#D: %s::%s:%d: Calculation and sending a budget task is done`
+- `%s::%s:%d: Received SAR Consumed value, but it may be in the middle of sleep/wake processing; We skip processing this value`
+- `%s::%s:%d: Failed to add interrupt event source to array at index %d`
+- `%s::%s:%d: Required sensing input is null`
+- `%s::%s:%d: Failed to report back to IOPort for WLAN (ret: 0x%08x)\n`
+- `%s::%s:%d: Failed to read reg info data for SAR boost: 0x%x`
+- `%s::%s:%d: This device does not support E85 Mitigation`
+- `%s::%s:%d: SAR Boost object is created already!`
+- `%s::%s:%d: No isr is registered!\n`
+- `%s::%s:%d: Invalid workloop\n`
+- `%s::%s:%d: One of instances is not ready: fARBuffer (%p) fSARConsumed (%p) fMPEConsumed (%p)`
+- `%s::%s:%d: SAR Budget Overriding: %s, MPE Budget Overriding: %s`
+- `%s::%s:%d: Failed to read buffer for the index, %d, ret = 0x%x\n`
+- `%s::%s:%d: Failed to register interest service for %s\n`
+- `%s::%s:%d: Perform Wake Procedure - Start\n`
+- `%s::%s:%d: SAR Boost Mode: %s, Updating boost signal (%s)`
+- `#T: %s::%s:%d: %s: Central SAR Current Index: %u, Central MPE Current Index: %u\n`
+- `%s::%s:%d: The instance of blocking accessory is empty!`
+- `%s::%s:%d: Failed to create sensing CA flush interrupt`
+- `%s::%s:%d: Failed to create client %s`
+- `%s::%s:%d: Cannot find client workloop to dispatch work`
+- `%s::%s:%d: Done, success = %d\n`
+- `%s::%s:%d: Reporting occlusion State1: %s, State2: %s`
+- `%s::%s:%d: No need to run Antenna Cluster Config when it is overridden`
+- `%s::%s:%d: [%s] Failed to read SPMI data @ (0x%x): 0x%x (%lu bytes), result: 0x%x\n`
+- `%s::%s:%d: Cellular SAR Boost is not supported!`
+- `#D: %s::%s:%d: Delay 1 msec between WAKE and PAYLOAD`
+- `%s::%s:%d: Trying to trigger logdump due to connectivity SAR report error`
+- `%s::%s:%d: Null parameter provided to invokeCallback\n`
+- `%s::%s:%d: Failed to cast to OSNumber %zu`
+- `%s::%s:%d: [%s] Invalid callback array not initialized`
+- `%s::%s:%d: Updated Cellular SAR Boost: %s (Overriding: %s)`
+- `%s::%s:%d: Setting userclient context!\n`
+- `%s::%s:%d: [Regulatory Limit] Mode: %s, SAR Limit: %s, MPE Agency Limit: %s, MPE Radio Limit: %s, TER Limit: %s, SAR SPLSR: %s, SAR Total Limit: %s, Non Colocated Antenna Enabled: %s, SAR External Limit: %s, MPE External: %s, OBD: %u`
+- `%s::%s:%d: HSAR initialization is done`
+- `%s::%s:%d: [%s] [cluster: %u] Central Average: %u, Instant Value[%u][%u]: %u`
+- `#D: %s::%s:%d: Primary Provider = %p: %s\n`
+- `%s::%s:%d: Failed to report back to IOPort (ret: 0x%08x)\n`
+- `%s::%s:%d: [%s] Failed to register FourCC 0x%x: error 0x%x`
+- `%s::%s:%d: [%s] Read from %u`
+- `%s::%s:%d: SAR Boost is overridden by a tool. Not proceeding. Current boost signal is %s`
+- `%s::%s:%d: Created E85 Mitigation instance`
+- `%s::%s:%d: SPMI retries via boot-arg (%s): %u\n`
+- `%s::%s:%d: E85 Mitigation Response WLAN: Mitigation Response: 0x%x (%s)\n`
+- `%s::%s:%d: Failed to setup WLAN for E85 mitigation`
+- `%s::%s:%d: Failed to restore Regulatory SAR limit on wake`
+- `%s::%s:%d: SAR is disabled by user\n`
+- `%s::%s:%d: %s: MPE Instant Value (Total) [%u]: %u, MPE Total Average: %u`
+- `%s::%s:%d: Failed to allocate interrupt sources array`
+- `%s::%s:%d: Client %s registered PTD client for fourCC %s`
+- `%s:%d: No scalar output is given!\n`
+- `#D: %s::%s:%d: Tuner State (Free/NonFree space) is updating\n`
+- `%s::%s:%d: Registering PTD interrupt for fourCC: 0x%x`
+- `%s::%s:%d: [AP Sleep] Cellular SAR Budget: SPLSR: %u, [0]: %u, [1]: %u, MPE Budget: SPLSR: %u`
+- `%s::%s:%d: TX update to %s`
+- `%s::%s:%d: This device supports HSAR`
+- `%s::%s:%d: reset: central entity instant: %p`
+- `%s::%s:%d: Overwriting existing callback for interface type: %d\n`
+- `%s::%s:%d: [%s] SPLSR Central Average: %u, Instant Value[%u]: %u`
+- `%s::%s:%d: Failed to get client %zu`
+- `%s::%s:%d: Failed to create interrupt handler\n`
+- `%s::%s:%d: Received error to trigger a coredump of baseband\n`
+- `%s::%s:%d: %s: SAR Total[%u]: %u, Avg: %u, WiFi Total[%u]: %u, Avg: %u, BT Total[%u]: %u, Avg: %u, UWB Total[%u]: %u, Avg: %u`
+- `%s::%s:%d: [Static Connectivity] Reserved Connectivity SAR budget = %u`
+- `%s::%s:%d: CoreAnalytics service instance is NULL!\n`
+- `%s::%s:%d: Provider does not have the HEB contents!\n`
+- `%s::%s:%d: Trying to do an action due to the sequence number mismatch! The received sequence number (%u) is not consecutive. The previous sequence number is %u\n`
+- `%s::%s:%d: Connectivity Product Configuration: AR Buffer Rev ID: 0x%x, AP GPR0 Rev ID: 0x%x, All radio GPR0: 0x%x, PTD Version: 0x%x, PTD Param: 0x%x`
+- `%s:%d: Failed to create E85 Mitigation!\n`
+- `#D: %s::%s:%d: [%s] Periodic timer has started already`
+- `%s::%s:%d: Trying to setup AppleSARService service\n`
+- `#T: %s::%s:%d: TimeDelta: %u`
+- `#D: %s::%s:%d: Processing HSAR`
+- `%s:%d: setCellularSARBoostMode on client death failed: 0x%x\n`
+- `#D: %s::%s:%d: Updating RF occlusion state`
+- `%s::%s:%d: Sending E85 Mitigation Request to BB after getting mitigation frequency update from IOPort\n`
+- `%s::%s:%d: Failed to convert buffer to OSArray for fourCC %s`
+- `%s::%s:%d: Failed to create SPMI interrupt event for %s\n`
+- `%s::%s:%d: [cluster: %u] TER Average: %u, Remaining: %u\n`
+- `%s::%s:%d: This device does not support connectivity HSAR`
+- `#D: %s::%s:%d: Ignoring request to update obd since rf sensing is enabled`
+- `%s::%s:%d: Unknown MPE Region is detected. Falling back to FCC limit`
+- `%s::%s:%d: Failed to get remaining budget for SAR\n`
+- `%s::%s:%d: Failed to allocate memory for client list of %s`
+- `#D: %s::%s:%d: [%s] Executing %u callbacks`
+- `%s::%s:%d: Occlusion state instance is not ready`
+- `%s::%s:%d: Failed to get result`
+- `%s::%s:%d: Sending Budget to modem: Sem: %u, Seq: %u, SAR Budget: %u W/kg, SAR Budget Cluster[0]: %u W/kg, SAR Budget Cluster[1]: %u W/kg, MPE Budget: %u mW/cm^2, Period: %u seconds, Operating Mode: %s, SAR Budget Cluster[2]: %u W/kg, SAR Budget Cluster[3]: %u W/kg, TER Consumed (Average): %u %%, (O`
+- `%s::%s:%d: HSAR Wake: stopped calculating the HSAR budget due to sleep time is zero!`
+- `%s::%s:%d: Failed to create buffer wrapper for fourCC 0x%08x`
+- `%s::%s:%d: Cellular SAR instance is not ready!`
+- `%s::%s:%d: Orientation State: %s (Override: %u)`
+- `%s::%s:%d: User client is not ready yet. No triggering coredump\n`
+- `%s::%s:%d: HSAR instance is created`
+- `%s::%s:%d: Antenna Cluster Config: HSAR clusters=%u, Cellular clusters=%u, Cell mapping=[%u,%u,%u,%u], Conn mapping=[%u,%u,%u,%u]`
+- `#D: %s::%s:%d: [ClusterMap] budgetDistributionGated: mapping fBTSAR.budget (Connectivity)`
+- `%s::%s:%d: Failed to allocate interrupt helper for index %u\n`
+- `%s::%s:%d: [Version: %u] SAR Indication: Uplink Constraint Condition: %s`
+- `%s::%s:%d: Created WLAN Notifier object`
+- `%s::%s:%d: VSWR Only Mode struct input is null`
+- `%s::%s:%d: The number of clusters from the billboard is not in the normal range ([1..%u]. Setting it to 1 in AP HSAR logic`
+- `%s::%s:%d: [%s] Not able to allocate memory for fourCC string`
+- `%s::%s:%d: SPMI driver is not given`
+- `%s::%s:%d: Failed to create stateItems`
+- `%s::%s:%d: Detected Connectivity CCPU reset`
+- `%s::%s:%d: WiFi SAR Data is null!`
+- `%s::%s:%d: PTD Supported Version: %d.%d.%d\n`
+- `%s::%s:%d: Perform Wake Procedure - Done\n`
+- `#D: %s::%s:%d: AppleSARFusion: Skipping SPMI coredump due to cleared sar debug boot-arg`
+- `#D: %s::%s:%d: All checks passed, proceed to write a message onto the buffer\n`
+- `%s:%d: [%s] The last DB index of cluster index(%u) cannot be greater than the total handling index (%u)`
+- `%s::%s:%d: [%s] ==== Read from ptd ====`
+- `%s::%s:%d: parameter->buffer is null!`
+- `%s::%s:%d: PTD controller not created`
+- `%s::%s:%d: WARNING: SAR limit is 0!`
+- `%s::%s:%d: Workloop is not created!`
+- `%s:%d: Failed to initialize Cellular SAR Boost object!`
+- `%s::%s:%d: Userclient has not been set up or Tx related AR Buffer has not updated (or boot-args has not been set for debugging coredump: SPMI error Retry: %u)\n`
+- `#T: %s::%s:%d: [SAR] Initial Max Budget: %u, Minimum Future: %u, Margin: %u, Central Averaging Duration: %u, Regulatory Limit: %u\n`
+- `%s::%s:%d: [MetaData] Failed to cast idx %zu to OSNumber`
+- `%s::%s:%d: Setting ready to fill flag and restoring indicator due to a READY_TO_FILL timeout`
+- `%s::%s:%d: Detected Connectivity WiFi alive`
+- `#D: %s::%s:%d: Registered callback for interface type: %d\n`
+- `%s::%s:%d: Given parameter is null!`
+- `%s::%s:%d: Non-PTD Supported\n`
+- `%s::%s:%d: Failed to get PTDInterruptInfo at index %zu`
+- `%s::%s:%d: Interrupt %d: ID=0x%x, fourCC=0x%x, assigned=%d`
+- `%s::%s:%d: Config HSAR instance is not ready`
+- `%s::%s:%d: [%s] Failed to trigger SPMI event 0x%x, result: 0x%x\n`
+- `#D: %s::%s:%d: Tuner Signal is blocked`
+- `%s::%s:%d: Callback returned error: 0x%x for interface type: %d\n`
+- `#D: %s::%s:%d: SAR Consumed is updating\n`
+- `#D: %s::%s:%d: [%s] request to read %x`
+- `%s::%s:%d: Registered the TAS indication callback`
+- `%s::%s:%d: This device support cellular SAR boost`
+- `#D: %s::%s:%d: Updating sequence number to %u\n`
+- `%s::%s:%d: Invalid user client object\n`
+- `%s::%s:%d: No client list found for fourCC %s`
+- `%s::%s:%d: Failed to send SAR Fusion to baseband!`
+- `%s::%s:%d: Received Regulatory Info: Sem: %u, Seq: %u, Region: %s, Time Averaging Mode: %s, Cellular Sub8 Band: %u, Cellular mmWave Freq: %u GHz, MPE Regulatory Region: %s, SAR/MPE Feature: %s, Overriding: %s\n`
+- `%s::%s:%d: TAS disabled: stopping SAR Report Monitor`
+- `%s::%s:%d: Failed to send budget data. (ret: 0x%x)\n`
+- `%s::%s:%d: No PTD buffer found for fourCC %s`
+- `%s::%s:%d: Initialized E85 Mitigation for WLAN`
+- `%s::%s:%d: Central Total SAR Budget: %u, MPE Budget: %u\n`
+- `#T: %s::%s:%d: Calculating the stewie budget`
+- `%s::%s:%d: Current uplink constraint condition: %s`
+- `%s::%s:%d: Skipping connectivity SAR report check during sleep`
+- `%s::%s:%d: rfSensingCACurrentState output size mismatch (%u vs %zu)`
+- `%s::%s:%d: No baseband response buffer queue!\n`
+- `%s::%s:%d: [%s] Initial Start GTB Ms: %llu`
+- `%s::%s:%d: Removing stale list entry for closing user client at index %u\n`
+- `#D: %s::%s:%d: Receiving Use case Detection Feature Flag: %s`
+- `%s::%s:%d: Failed to create SAR timer`
+- `%s::%s:%d: Cannot report HSAR error to userland`
+- `%s:%d: User client (%s) has died, but no action for it\n`
+- `#D: %s::%s:%d: Not supporting to update regulatory averaging mode\n`
+- `#D: %s::%s:%d: Call State is updating\n`
+- `%s::%s:%d: Failed to create sensing CA snapshot queue`
+- `#D: %s::%s:%d: SAR Fusion: Wrist: %s (Overriding: %s)\n`
+- `%s::%s:%d: Invalid user client reference\n`
+- `%s::%s:%d: [%s] Failed to add event source to work loop, error: 0x%x`
+- `%s::%s:%d: AR Buffer version: AP: %d.%d.%d, BB: %d.%d.%d\n`
+- `#D: %s::%s:%d: Skipping interrupt %d (fourCC=0x%x) - not assigned to HW or not exist on this platform`
+- `#D: %s::%s:%d: Not supporting to update regulatory limit\n`
+- `%s::%s:%d: Failed to create interrupt source for index %u\n`
+- `%s::%s:%d: Failed to create PTD driver buffer`
+- `#D: %s::%s:%d: Required data not ready for HSAR metric`
+- `%s::%s:%d: Failed to create ccpu/wifi/bt crash notification string`
+- `%s::%s:%d: %s: Total Avg [%u] SAR: %u, MPE: %u, TER: %u`
+- `%s::%s:%d: Failed to create CoreAnalytics notifier!`
+- `#D: %s::%s:%d: Updating front camera state`
+- `%s::%s:%d: Received OCP write ready signal from the baseband\n`
+- `%s::%s:%d: WARNING: average consumed value (%u) is greater than TER (%u)`
+- `%s::%s:%d: fourCCs not initialized - call readFourCCsFromEDT first`
+- `#D: %s::%s:%d: Device do not support rf sensing region`
+- `%s::%s:%d: Screen State: %s (Override: %s)`
+- `#D: %s::%s:%d: HSAR Sleep: %llu (GTB ms), HSAR initial GTB ms: %llu`
+- `%s::%s:%d: Failed to allocate CA event for HSAR metric`
+- `%s::%s:%d: Failed to get E85 Mitigation object from IOPort!\n`
+- `%s::%s:%d: Failed to convert fourCC 0x%08x to string in update`
+- `#D: %s::%s:%d: Invoking callback for interface type: %d\n`
+- `%s::%s:%d: Started periodic update for window (%d ms)\n`
+- `%s::%s:%d: Disabling Counter: %u`
+- `%s:%d: Client (%s) is registering callback\n`
+- `%s::%s:%d: E85 WLAN Mitigation Start IRQ: 0x%x\n`
+- `%s::%s:%d: No wlan sar interface is given!`
+- `%s::%s:%d: [%s] read result for circular buffer: %s`
+- `#T: %s::%s:%d: Non Colocated Antenna for cellular: %u, Number of SAR Cluster: %u, SAR Selection: %u, SAR Request Type: %s, Stewie: %u`
+- `%s:%d: CommCenter has not been detected yet. So no sending 0x%x message`
+- `%s::%s:%d: Provider does not have the IDC contents!\n`
+- `%s::%s:%d: Crashing baseband due to %u failed OCP transactions in a row`
+- `%s::%s:%d: Failed to crash baseband, continuing with OCP protocol`
+- `%s::%s:%d: Overridden consumption[%u] is adjusted: %u from %u`
+- `%s::%s:%d: Failed creating SAR Boost instance`
+- `%s::%s:%d: Invalid registration parameters`
+- `%s::%s:%d: WARNING: WiFi residual[%u] (%u) is less than WiFi Consumed Value[%u] (%u)`
+- `#T: %s::%s:%d: Calculate TER and remaining TER\n`
+- `%s::%s:%d: One of instances is not ready: fConnectivitySAR (%p) kConnectivitySARLimitTable (%p) fRegulatoryLimit (%p) fARBuffer (%p) fWiFiStateManager (%p) fBTStateManager (%p) fSARSelectionState (%p) fCentralSAR (%p) fRegulatoryInfo (%p)`
+- `%s::%s:%d: Failed to add notification for %s\n`
+- `%s::%s:%d: Failed to send budget data to connectivity. (ret: 0x%x)\n`
+- `#D: %s::%s:%d: [%s] request to peek %x`
+- `%s::%s:%d: Write data %llu to client [%s] buffer`
+- `%s::%s:%d: Failed to add client %s to callback list\n`
+- `%s::%s:%d: Antenna On Top: %s (Override: %s)`
+- `%s::%s:%d: buffer is null (%p) or size (%lu) is greater than it can handle`
+- `#D: %s::%s:%d: Processing HSAR after waking up`
+- `%s::%s:%d: cluster count (%u) must be in [1, %u]`
+- `%s::%s:%d: [%s] Given data is NULL!\n`
+- `%s::%s:%d: Failed to send the Device Update with semaphore`
+- `%s::%s:%d: %s: max: %u, min future: %u, margin: %u, duration: %u, residual: %u`
+- `%s::%s:%d: Central SAR Data is null!`
+- `%s::%s:%d: Updating regulatory information from the sleep time`
+- `%s:%d: One of given parameters is NULL:\nprovider: %p, propertyName: %p\n`
+- `%s::%s:%d: SAR Fusion Data object is invalid, unable to reset sequence number\n`
+- `#D: %s::%s:%d: [ClusterMap] budgetDistributionSleepGated: mapping fBTSAR.budget (Connectivity)`
+- `%s::%s:%d: [Stewie] TER Limit: %s, Past SAR Average[%u]: %u, Remaining Budget: %u, Minimum Budget per cluster: %u`
+- `%s::%s:%d: Converted Modem GTB: %llu sec`
+- `%s::%s:%d: Mitigation Data is not ready!\n`
+- `%s::%s:%d: PTD read operation failed for fourCC %s with error: 0x%x`
+- `%s::%s:%d: This device supports SAR Fusion via SPMI IDC`
+- `%s::%s:%d: Failed to get PTDInterruptInfo for interrupt %d`
+- `%s::%s:%d: Connectivity to cellular SAR boost: Sequence Number: %u, Cellular Boost: %s (Overriding: %s)`
+- `#D: %s::%s:%d: No need to check SAR Consumed arrival time becase it is under the simulation`
+- `%s::%s:%d: SAR interface is not ready yet!`
+- `#D: %s::%s:%d: RFSening is supported, ignore the request`
+- `%s::%s:%d: Tx indication event source not set up`
+- `%s::%s:%d: Bluetooth Power: %s, Connected: %s, LE advertisement for ePA: %s (Overriding: %s)\n`
+- `%s::%s:%d: Failed to create fourCC key`
+- `%s:%d: Failed to allocate the async reference lock!\n`
+- `#D: %s::%s:%d: Cannot find client workloop for fourCC %s`
+- `%s::%s:%d: Sleep signal sent successfully\n`
+- `%s::%s:%d: baseband reset detected in HSAR AP sleep/wake: %llu sec`
+- `%s::%s:%d: MPE Consumed: Sem: %u, Seq: %u, MPE Used[0]: %u mW/cm^2, MPE Used[1]: %u mW/cm^2, MPE Used[2]: %u mW/cm^2, MPE Used[3]: %u mW/cm^2, Cluster Valid: 0x%x, Cluster Present: 0x%x, Duty Cycle: %u %%, Report Timestamp: %u seconds, Throughput Ratio in Q4 unit: %u, Overriding Flag: %s, Sending Bu`
+- `%s::%s:%d: Antenna Cluster Config: semaphore: %u, sequence numner: %u, number of sar cluster: %u, number of mpe cluster: %u, sar cluster distance: %u, non-colocation use: %s, overriding: %s`
+- `%s::%s:%d: PTD peek function not initialized`
+- `#D: %s::%s:%d: Received Function Name: %s`
+- `%s:%d: [%s] Central entity is null!`
+- `%s::%s:%d: This %s must be actual interface class!`
+- `%s:%d: Failed to create HSAR!`
+- `%s::%s:%d: Normalized SAR Used SPLSR: %u, SAR Used[0]: %u, SAR Used[1]: %u, SAR Used[2]: %u, SAR Used[3]: %u, MPE Used[0]: %u`
+- `%s::%s:%d: [%s] Central HSAR db is NULL!\n`
+- `%s::%s:%d: Failed to get %s`
+- `#D: %s:%d: boot-args: %s: %u\n`
+- `%s::%s:%d: User client callback is not registered yet!\n`
+- `%s::%s:%d: SAR service profile has not been ready yet!`
+- `#T: %s::%s:%d: SAR Normalized: %u, MPE Normalized: %u`
+- `%s::%s:%d: Created %zu of %zu test clients`
+- `%s::%s:%d: UnRegistering PTD interrupt for fourCC: 0x%x`
+- `#D: %s::%s:%d: SAR Fusion: Accessory: %s (Overriding: %s)`
+- `%s::%s:%d: Triggering coredump due to an SPMI error\n`
+- `%s::%s:%d: Triggering coredump via user client\n`
+- `%s::%s:%d: Forced HSAR cluster count override: requested=%u applied=%u (0=clear)`
+- `%s::%s:%d: Failed to get average values for MPE\n`
+- `%s::%s:%d: Resetting Regulatory parameters\n`
+- `%s::%s:%d: Cannot update the SAR/MPE limit with this region code: %s. Setting it as FCC`
+- `#D: %s::%s:%d: Not supporting to update central TER\n`
+- `#D: %s::%s:%d: Not supporting to update connectivity SAR\n`
+- `%s::%s:%d: [%s] Given workloop is null!`
+- `%s::%s:%d: SPMI HEB Services are set up successfully\n`
+- `#D: %s::%s:%d: SAR Fusion: Cellular Boost: %s`
+- `%s::%s:%d: Connectivity Headroom fully covers Connectivity SAR Budget: Reserved Connectivity SAR budget`
+- `%s::%s:%d: Cannot find property 'interrupts'`
+- `%s::%s:%d: Failed to set client name: %s`
+- `%s::%s:%d: Registered the user client for HSAR Single Radio`
+- `%s::%s:%d: Warning! Received an extra WAKE_DONE signal from BB when already is %s state\n`
+- `%s::%s:%d: Abort OCP write due to %s state (AP is asleep or BB is resetting)\n`
+- `%s:%d: Wake-done timer fired!`
+- `%s::%s:%d: Invalid proxima_sub8_band_indicator value: (index: %u, max: %u), setting it to 0`
+- `%s::%s:%d: Cellular Regulatory time_averaging_mode: %s, Connectivity Regulatory time average mode: %s`
+- `%s::%s:%d: Connectivity SAR Report Monitor has started. Stopping the service before starting`
+- `%s::%s:%d: Flushing Sensing CA:, reason: %s, duration: %u  tx: %s  device_state: %s, sensing_state: %s, orientation: %s, has_case: %s, angle(neg/0/45/57/92/135/177/180/183): %u/%u/%u/%u/%u/%u/%u/%u/%u, fd_delta(gt100c/0-100c/0-100f/gt100f): %u/%u/%u/%u, pitch_delta(lt10b/w10b/w10a/gt10a): %u/%u/%u/%`
+- `%s::%s:%d: Failed to allocate CoreAnalytics event objects`
+- `%s::%s:%d: Use Case Detection: %u (Override: %u)`
+- `%s::%s:%d: IDC SPMI read @ (0x%x): 0x%x (%lu bytes)\n`
+- `#D: %s::%s:%d: Valid cache but already triggered a wake, returning without performing any action\n`
+- `%s::%s:%d: Use case detection override applied to regulatory bitmask: %u`
+- `%s::%s:%d: Connectivity SAR Report seq mismatch! Received: %u, Expected: %u`
+- `%s::%s:%d: Failed to read cellular SAR report manually.`
+- `%s::%s:%d: Invalid regulatory region code: %u for connectivity SAR limit. Setting it as FCC`
+- `%s:%d: SAR Service has not been created!\n`
+- `%s::%s:%d: Failed to create FourCC array for client`
+- `%s::%s:%d: %s must be created before setting up E85 mitigation for WLAN`
+- `%s::%s:%d: SAR Fusion Data object is NULL!\n`
+- `%s::%s:%d: Invalid user client callback\n`
+- `%s::%s:%d: H-GTB (%llu) is less than M-GTB (%llu). Setting offset to 0`
+- `#T: %s::%s:%d: [%s %u] 2-second next budget: %u, Previous budget: %u, Assigning budget: %u, The residual: %u`
+- `%s::%s:%d: Invalid interface type in parameter: %d\n`
+- `#D: %s::%s:%d: Notified clients about TX state: %d\n`
+- `%s::%s:%d: [Done] Calculating Stewie Transition Wait Time: %s; Wait Time: %u\n`
+- `#D: %s::%s:%d: Whole SAR Fusion State is updating for MAV\n`
+- `%s::%s:%d: Sensing CA queue or interrupt not initialized`
+- `%s::%s:%d: Failed to add IOService (%s) notifier\n`
+- `%s::%s:%d: Client %s already registered; refreshing entry\n`
+- `%s::%s:%d: WARNING: total TER (%llu) is less than avrg consumed cellular + wifi + bt + uwb (%llu)`
+- `#D: %s::%s:%d: Max TER Consumption: %u, TER per radio: %u, Hysteresis: %u, Disabling Factor: %u, Uplink Constraint Disabling Counter: %u, BPS Supported: %u, BPS Enabled: %u, BPS Target Detected: %u`
+- `%s::%s:%d: Cellular SAR Budget: SPLSR: %u, [0]: %u, [1]: %u, MPE Budget: SPLSR: %u`
+- `#T: %s::%s:%d: [Cellular] Initial Budget: Max: %u, Min Future: %u, Margin: %u, Time Averaging Duration: %u`
+- `%s::%s:%d: Failed to read SAR consumed value manually: ret: 0x%x`
+- `%s::%s:%d: \n`
+- `%s::%s:%d: Failed creating E85 Mitigation instance`
+- `%s::%s:%d: SPMI IDC WLAN Services are set up successfully\n`
+- `%s::%s:%d: Warning! Received a WAKE_DONE signal from BB without AP sending a WAKE signal, updating state from %s to %s\n`
+- `#D: %s::%s:%d: fresh sar_report_timestamp %u (prev %u)`
+- `#D: %s::%s:%d: Cellular Dynamic TER calculation: Min TER budget: %u`
+- `#D: %s::%s:%d: OBD (%u) and Tuner State (%u) is updating`
+- `%s::%s:%d: Clearing CommCenter singleton callback context for closing user client\n`
+- `#D: %s::%s:%d: Updating SAR service profile`
+- `%s::%s:%d: Product Configuration: AR Buffer Rev ID: 0x%x, AP GPR0 Rev ID: 0x%x, PTD GPR0 Rev ID: 0x%x, Radio GPR0 Rev ID: 0x%x, PTD Param: 0x%x\n`
+- `%s::%s:%d: [%s] Failed to create periodic update timer`
+- `%s::%s:%d: Thread Power: %s (Overriding: %s)`
+- `%s::%s:%d: Simulation: %u, Budget overridng: %u, Operation mode: %s, HSAR enabled: %u -> Not to send a budget to Connectivity`
+- `%s::%s:%d: Null callback provided for interface type: %d\n`
+- `#D: %s::%s:%d: E85 Mitigation Request Updating\n`
+- `%s::%s:%d: WLAN Frequency Bit Mask is empty, and no mitigation will be used`
+- `#D: %s::%s:%d: Invalid SAR message type received: %d\n`
+- `%s::%s:%d: Cellular SAR Data is null!`
+- `%s::%s:%d: Invalid registration data`
+- `%s::%s:%d: State AB is null`
+- `%s::%s:%d: Too many FourCC codes: %zu (max %zu)`
+- `%s::%s:%d: Invoking GPR0 for interface type: %u`
+- `%s::%s:%d: Failed to create connectivity SAR interface`
+- `%s::%s:%d: Invalid state because a wake should not have been triggered for an empty cache\n`
+- `%s::%s:%d: All radios (UWB/WiFi/BT) GPR0 version: AP: %d.%d.%d, BB: %d.%d.%d\n`
+- `%s:%d: argument size (%lu) is exceeded over max size (%lu)`
+- `%s::%s:%d: Failed to read data for type: %u at address %u. ret: 0x%x`
+- `#D: %s::%s:%d: Central SAR is updating\n`
+- `%s::%s:%d: Timeout while resetting SPMI\n`
+- `%s::%s:%d: OCP Data is NULL!\n`
+- `%s::%s:%d: Simulation is detected. Not sending actual budget to the modem`
+- `%s::%s:%d: Cellular MPE Data is null!`
+- `%s::%s:%d: SPMI Driver is not ready yet!\n`
+- `#T: %s::%s:%d: Calculating the Stewie budget\n`
+- `%s::%s:%d: data size[%u] exceeds to print in max size [%u]\n`
+- `%s::%s:%d: PTD %s numberOfEntries (%zu) exceeds maximum (%zu), clamping to limit`
+- `%s::%s:%d: Failed to initialize SAR RFSensing object!`
+- `%s::%s:%d: %s must be created before setting up cellular SAR Boost`
+- `%s::%s:%d: VSWR Only Mode: %s (Override: %s)`
+- `%s::%s:%d: Failed to get writing buffer for fourCC 0x%08x`
+- `#T: %s::%s:%d: Connectivity Budget: %u, UWB SPLSR Budget: %u`
+- `%s::%s:%d: Regulatory Info is overridden. Skip updating regulatory info from modem.\n`
+- `%s:%d: No structure output is given!\n`
+- `#D: %s::%s:%d: %s\n`
+- `%s::%s:%d: [%s] Callback returned error: 0x%x`
+- `%s::%s:%d: Failed to initialize the module!\n`
+- `%s::%s:%d: Recorded BB reset timestamp: %llu ns\n`
+- `%s::%s:%d: Failed to call tx callback: (ret: 0x%x)`
+- `%s::%s:%d: [%s] Failed to push registration to client list`
+- `%s::%s:%d: [%s] Succeeded in triggering GPR0 (0x%x)\n`
+- `%s::%s:%d: Unable to send sleep signal, ret: 0x%x\n`
+- `#T: %s::%s:%d: Calculate the remaining total SAR`
+- `%s::%s:%d: WARNING: TER Remaining[%u] is zero because the sum of the SAR Normalized value(%u) and MPE average(%u) is more than the regulatory TER (%s)`
+- `%s::%s:%d: %s: SAR Instant Value (Total) [%u]: %u, SAR Total Average: %u`
+- `%s::%s:%d: Interface is not ready yet!`
+- `%s::%s:%d: aborting metric submission due to device just boot`
+- `%s::%s:%d: E85 Mitigation Request to Baseband: Sequence Number: %d, Mitigation Request: 0x%x, Override Flag: %s\n`
+- `#D: %s::%s:%d: Updating fCachedSARFusionIndicator ( ( %u | %u ) = %u )\n`
+- `#D: %s::%s:%d: Sending the OCP data to the baseband\n`
+- `%s::%s:%d: Received E85 Response from baseband\n`
+- `%s:%d: [%s] No need to check since no db index is defined`
+- `%s::%s:%d: HSAR Metric CA event sent successfully (%u fields)`
+- `%s::%s:%d: Not supported override UWB SAR`
+- `%s::%s:%d: Failed to initializing!\n`
+- `%s::%s:%d: Received mitigation frequency [%d]: %lld\n`
+- `%s::%s:%d: Detected Connectivity CCPU alive`
+- `%s::%s:%d: Failed to stop periodic update!\n`
+- `%s::%s:%d: Cellular SAR Limit = %s (index: %u, SAR Boost: %s, OBD selection: %u (original: %u), region: %u)`
+- `%s::%s:%d: HSAR Timer will be expired in %u`
+- `%s::%s:%d: `
+- `%s::%s:%d: CA snapshot (flushCount: %u) already submitted — skipping duplicate`
+- `%s::%s:%d: Failed to allocate ABSUserClient for %s\n`
+- `%s::%s:%d: Successfully created PTD controller`
+- `#D: %s::%s:%d: [ClusterMap] Enter mapHSARClusterBudgetsToRadioCluster: radio=%s (%u), hsarClusterCount=%u, mapping=[%u,%u,%u,%u], input budget=[%u,%u,%u,%u]`
+- `%s::%s:%d: Initial Residual Values Total: Connectivity: %u, WiFi: %u, BT: %u`
+- `%s::%s:%d: WiFi Power: %s, Association: %s, AWDL: %s, PHS: %s, BT: %s, Normalized Connectivity Budget: %u`
+- `%s::%s:%d: Selected SAR Splsr Limit Table[%u]: %s`
+- `%s:%d: Callback fired before a client name was registered!\n`
+- `%s::%s:%d: Failed to create data operations component\n`
+- `%s::%s:%d: Warning: PTD data truncated from %zu to %zu entries`
+- `%s::%s:%d: Failed to allocate Tx indication lock`
+- `%s::%s:%d: reset: central entity: %p`
+- `%s::%s:%d: Failed to get remaining budget for SAR`
+- `%s::%s:%d: Unhandled feature flag bit: %u`

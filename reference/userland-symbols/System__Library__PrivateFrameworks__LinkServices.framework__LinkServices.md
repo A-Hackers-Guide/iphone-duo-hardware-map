@@ -1,0 +1,1556 @@
+# Symbols: `/System/Library/PrivateFrameworks/LinkServices.framework/LinkServices`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__PrivateFrameworks__LinkServices.framework__LinkServices.md). **[DSC]**
+
+539 public symbols, 5,343 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x18dc1398c  __TEXT,__text  _LNActionExecutionCancelReasonAsString
+0x18dc12f48  __TEXT,__text  _LNActionExecutionConfirmationConditionAsString
+0x18dc12ef0  __TEXT,__text  _LNActionExecutionPriorityAsString
+0x18dc121e4  __TEXT,__text  _LNActionExecutorErrorCodeAsString
+0x1e09bb598  __DATA_CONST,__const  _LNActionExecutorErrorDomain
+0x1e09bb590  __DATA_CONST,__const  _LNActionExecutorErrorUnderlyingErrorKey
+0x1e09bb588  __DATA_CONST,__const  _LNActionExecutorProgressCancellationReasonKey
+0x1e09bb580  __DATA_CONST,__const  _LNActionExecutorProgressCategory
+0x1e09bb578  __DATA_CONST,__const  _LNActionExecutorProgressExecutionUUIDKey
+0x18dc07968  __TEXT,__text  _LNActionExecutorStateAsString
+0x1e09bb570  __DATA_CONST,__const  _LNAppEventRegistryEntitlement
+0x1e09bb568  __DATA_CONST,__const  _LNAppIntentsExtensionPointIdentifier
+0x1e09bb560  __DATA_CONST,__const  _LNAppNotificationEventListenerMachServiceNameSuffix
+0x18dbc541c  __TEXT,__text  _LNAppNotificationEventListenerXPCInterface
+0x1e09bb558  __DATA_CONST,__const  _LNAppNotificationEventRegistrationProviderErrorDomain
+0x18dbc4b80  __TEXT,__text  _LNAppNotificationEventTypeAsString
+0x1e09bb550  __DATA_CONST,__const  _LNAppShortcutsChangedNotification
+0x1e09bb548  __DATA_CONST,__const  _LNAppShortcutsChangedNotificationAppBundleIdentifierKey
+0x1e09bb540  __DATA_CONST,__const  _LNAppShortcutsChangedNotificationAppBundleIdentifiersKey
+0x18dc12f1c  __TEXT,__text  _LNAssistantDismissalPolicyAsString
+0x1e09bb538  __DATA_CONST,__const  _LNAvailabilityResultAvailable
+0x1e09bb530  __DATA_CONST,__const  _LNAvailabilityResultDeprecated
+0x1e09bb528  __DATA_CONST,__const  _LNAvailabilityResultUnavailable
+0x18dc26dd8  __TEXT,__text  _LNChoiceOptionStyleAsString
+0x18dbd5ad0  __TEXT,__text  _LNConfirmationActionNameEnumAsString
+0x18dbfd20c  __TEXT,__text  _LNConnectionAuthenticationPolicyAsString
+0x18dbb3498  __TEXT,__text  _LNConnectionClientXPCInterface
+0x18dcf8890  __TEXT,__const  _LNConnectionDefaultIdleTimeout
+0x18dcf8888  __TEXT,__const  _LNConnectionDefaultOperationRequestTimeout
+0x18dcf8880  __TEXT,__const  _LNConnectionDefaultRequestTimeout
+0x1e09bb520  __DATA_CONST,__const  _LNConnectionErrorDomain
+0x18dbf299c  __TEXT,__text  _LNConnectionErrorForCancellationReason
+0x18dbf25a0  __TEXT,__text  _LNConnectionErrorWithCode
+0x18dbb1fbc  __TEXT,__text  _LNConnectionHostXPCInterface
+0x18dc1421c  __TEXT,__text  _LNConnectionHostXPCListenerEndpointVendingInterface
+0x1eb65e2c8  __DATA,__data  _LNConnectionIdleTimeout
+0x1e09bb518  __DATA_CONST,__const  _LNConnectionLSRestrictionReasonStringUserInfoKey
+0x1e09bb510  __DATA_CONST,__const  _LNConnectionLSRestrictionReasonUserInfoKey
+0x1eb65e2c0  __DATA,__data  _LNConnectionOperationRequestTimeout
+0x18dcf8898  __TEXT,__const  _LNConnectionOperationRequestTimeoutDisabled
+0x1e09bb508  __DATA_CONST,__const  _LNConnectionPolicyErrorDomain
+0x1eb65e2b8  __DATA,__data  _LNConnectionRequestTimeout
+0x1e09bb500  __DATA_CONST,__const  _LNConnectionRestrictionInvalidationBundleIdentifierKey
+0x1e09bb4f8  __DATA_CONST,__const  _LNConnectionRestrictionStateDidChangeNotification
+0x1e09bb4f0  __DATA_CONST,__const  _LNConstraintContextAction
+0x1e09bb4e8  __DATA_CONST,__const  _LNConstraintContextApplication
+0x1e09bb4e0  __DATA_CONST,__const  _LNConstraintContextOther
+0x1e09bb4d8  __DATA_CONST,__const  _LNConstraintContextSystem
+0x1e09bb4d0  __DATA_CONST,__const  _LNConstraintErrorDomain
+0x18dc28970  __TEXT,__text  _LNContinueInAppRequestTypeAsString
+0x18dc2899c  __TEXT,__text  _LNContinueInAppWithoutConfirmationReasonAsString
+0x1e09bb4c8  __DATA_CONST,__const  _LNDaemonApplicationMachServiceName
+0x18dbaeb74  __TEXT,__text  _LNDaemonApplicationXPCInterface
+0x1e09bb4c0  __DATA_CONST,__const  _LNDaemonAutoShortcutMachServiceName
+0x1e09bb4b8  __DATA_CONST,__const  _LNDaemonBundleIdentifier
+0x1e09bb4b0  __DATA_CONST,__const  _LNDaemonConstraintValidationService
+0x18dbe6fc4  __TEXT,__text  _LNDaemonConstraintValidationXPCInterface
+0x1e09bb4a8  __DATA_CONST,__const  _LNDaemonExtensionMachServiceName
+0x18dbe70b0  __TEXT,__text  _LNDaemonExtensionXPCInterface
+0x1e09bb4a0  __DATA_CONST,__const  _LNDaemonMediatorMachServiceName
+0x18dbe7164  __TEXT,__text  _LNDaemonMediatorXPCInterface
+0x1e09bb498  __DATA_CONST,__const  _LNDaemonObservationStatusRegistryService
+0x18dbe7220  __TEXT,__text  _LNDaemonObservationStatusRegistryXPCInterface
+0x18dbe7440  __TEXT,__text  _LNDaemonRegistryClientXPCInterface
+0x1e09bb490  __DATA_CONST,__const  _LNDaemonRegistryService
+0x18dba5750  __TEXT,__text  _LNDaemonRegistryXPCInterface
+0x1e09bb488  __DATA_CONST,__const  _LNDaemonSuggestionsService
+0x18dbe74c4  __TEXT,__text  _LNDaemonSuggestionsXPCInterface
+0x1e09bb480  __DATA_CONST,__const  _LNDisplayRepresentationFetchErrorDomain
+0x1e09bb478  __DATA_CONST,__const  _LNEnvironmentDefaultLocaleIdentifier
+0x1e09bb470  __DATA_CONST,__const  _LNFetchMetadataErrorDomain
+0x1e09bb468  __DATA_CONST,__const  _LNFetchOptionsErrorDomain
+0x1e09bb460  __DATA_CONST,__const  _LNFetchOptionsErrorParameterIdentifier
+0x1e09bb458  __DATA_CONST,__const  _LNInterfaceIdiomAirPods
+0x1e09bb450  __DATA_CONST,__const  _LNInterfaceIdiomCarPlay
+0x1e09bb448  __DATA_CONST,__const  _LNInterfaceIdiomEyesFree
+0x1e09bb440  __DATA_CONST,__const  _LNInterfaceIdiomHomeAccessory
+0x1e09bb438  __DATA_CONST,__const  _LNInterfaceIdiomHomePod
+0x1e09bb430  __DATA_CONST,__const  _LNInterfaceIdiomMac
+0x1e09bb428  __DATA_CONST,__const  _LNInterfaceIdiomPad
+0x1e09bb420  __DATA_CONST,__const  _LNInterfaceIdiomPhone
+0x1e09bb418  __DATA_CONST,__const  _LNInterfaceIdiomTV
+0x1e09bb410  __DATA_CONST,__const  _LNInterfaceIdiomVision
+0x1e09bb408  __DATA_CONST,__const  _LNInterfaceIdiomWatch
+0x18dbd6378  __TEXT,__text  _LNIsLinkEnabled
+0x1e09bb5b0  __DATA_CONST,__const  _LNIssueSandboxErrorDomain
+0x18dc3d98c  __TEXT,__text  _LNLevelOfDetailConfigurationAsString
+0x1e09bb400  __DATA_CONST,__const  _LNMetadataChangedNotification
+0x1e09bb3f8  __DATA_CONST,__const  _LNMetadataChangedNotificationBundlesKey
+0x1e09bb3f0  __DATA_CONST,__const  _LNMetadataChangedNotificationEventKey
+0x1e09bb3e8  __DATA_CONST,__const  _LNMetadataProviderErrorDomain
+0x18dbd64ac  __TEXT,__text  _LNMetadataReadRunWithRetry
+0x18dbd640c  __TEXT,__text  _LNMetadataReadShouldRetryAfterError
+0x18dc3da50  __TEXT,__text  _LNModelRepresentationComponentKindConfigurationAsString
+0x18dc41e44  __TEXT,__text  _LNNextActionObserverXPCInterface
+0x18dc1220c  __TEXT,__text  _LNPerformActionErrorCodeAsString
+0x1e09bb3e0  __DATA_CONST,__const  _LNPerformActionErrorDialogDataKey
+0x1e09bb3d8  __DATA_CONST,__const  _LNPerformActionErrorDomain
+0x1e09bb3d0  __DATA_CONST,__const  _LNPerformActionErrorKindDefault
+0x1e09bb3c8  __DATA_CONST,__const  _LNPerformActionErrorKindFatal
+0x1e09bb3c0  __DATA_CONST,__const  _LNPerformActionErrorKindInterventionRequired
+0x1e09bb3b8  __DATA_CONST,__const  _LNPerformActionErrorKindKey
+0x1e09bb3b0  __DATA_CONST,__const  _LNPerformActionErrorKindRetryable
+0x1e09bb3a8  __DATA_CONST,__const  _LNPerformActionErrorKindUnsupported
+0x1e09bb3a0  __DATA_CONST,__const  _LNPerformActionErrorLocalizedStringResourceDataKey
+0x1e09bb398  __DATA_CONST,__const  _LNPerformActionErrorLoopIntermediateResultsKey
+0x1e09bb390  __DATA_CONST,__const  _LNPerformActionErrorParameterIdentifierKey
+0x18dc12234  __TEXT,__text  _LNPerformActionPrebuiltErrorCodeAsString
+0x1e09bb388  __DATA_CONST,__const  _LNPerformIntentPrebuiltErrorDomain
+0x1e09bb380  __DATA_CONST,__const  _LNPerformQueryErrorDomain
+0x1e09bb378  __DATA_CONST,__const  _LNRelevantIntentsChangedNotification
+0x18dbe7668  __TEXT,__text  _LNSetUserDirSuffix
+0x1e09bb370  __DATA_CONST,__const  _LNSpecialClassDStreamIdentifier
+0x1e09bb368  __DATA_CONST,__const  _LNSpotlightAppEntityKeyDisplayRepresentationSynonyms
+0x1e09bb360  __DATA_CONST,__const  _LNSpotlightAppEntityKeyInstanceIdentifier
+0x1e09bb358  __DATA_CONST,__const  _LNSpotlightAppEntityKeyPriority
+0x1e09bb350  __DATA_CONST,__const  _LNSpotlightAppEntityKeyRelatedEntityIdentifiers
+0x1e09bb348  __DATA_CONST,__const  _LNSpotlightAppEntityKeySchema
+0x1e09bb340  __DATA_CONST,__const  _LNSpotlightAppEntityKeyStableIdentifier
+0x1e09bb338  __DATA_CONST,__const  _LNSpotlightAppEntityKeySubtitle
+0x1e09bb330  __DATA_CONST,__const  _LNSpotlightAppEntityKeyTitle
+0x1e09bb328  __DATA_CONST,__const  _LNSpotlightAppEntityKeyTypeDisplayRepresentationName
+0x1e09bb320  __DATA_CONST,__const  _LNSpotlightAppEntityKeyTypeDisplayRepresentationSynonyms
+0x1e09bb318  __DATA_CONST,__const  _LNSpotlightAppEntityKeyTypeIdentifier
+0x18dbca838  __TEXT,__text  _LNSpotlightAppEntityPropertyKey
+0x1e09bb310  __DATA_CONST,__const  _LNSpotlightCascadeTranslatorErrorDomain
+0x1e09bb308  __DATA_CONST,__const  _LNStaccatoActionInteractionTypeLongPress
+0x1e09bb300  __DATA_CONST,__const  _LNStaccatoActionInteractionTypeShortPress
+0x1e09bb2f8  __DATA_CONST,__const  _LNStaccatoActionInteractionTypeUnknown
+0x18dbd2ed0  __TEXT,__text  _LNStructuredDataRepresentationsAsString
+0x1e09bb2f0  __DATA_CONST,__const  _LNSuggestedActionDialogParameterKeyChangeOperation
+0x1e09bb2e8  __DATA_CONST,__const  _LNSuggestedActionDialogParameterKeyDefaultValue
+0x1e09bb2e0  __DATA_CONST,__const  _LNSuggestedActionDialogParameterKeyDescription
+0x1e09bb2d8  __DATA_CONST,__const  _LNSuggestedActionDialogParameterKeyDirection
+0x1e09bb2d0  __DATA_CONST,__const  _LNSuggestedActionDialogParameterKeyEntityName
+0x1e09bb2c8  __DATA_CONST,__const  _LNSuggestedActionDialogParameterKeyEntityType
+0x1e09bb2c0  __DATA_CONST,__const  _LNSuggestedActionDialogParameterKeyIconSystemImageName
+0x1e09bb2b8  __DATA_CONST,__const  _LNSuggestionsProviderErrorDomain
+0x1e09bb2b0  __DATA_CONST,__const  _LNSystemStreamIdentifier
+0x18dc391a8  __TEXT,__text  _LNTVDisplayAttentionStateIsAsleep
+0x18dc391b0  __TEXT,__text  _LNTVDisplayIsAsleep
+0x18dc4064c  __TEXT,__text  _LNTranscriptActionKindAsString
+0x18dc40628  __TEXT,__text  _LNTranscriptActionSourceAsString
+0x1e09bb2a8  __DATA_CONST,__const  _LNTranscriptChangedNotification
+0x1e09bb2a0  __DATA_CONST,__const  _LNTranscriptChangedNotificationEventKey
+0x1e09bb298  __DATA_CONST,__const  _LNTranscriptChangedNotificationStreamsKey
+0x18dc411b4  __TEXT,__text  _LNTranscriptDonationPolicyTypeAsString
+0x1e09bb290  __DATA_CONST,__const  _LNTranscriptErrorDomain
+0x18dc414a4  __TEXT,__text  _LNTranscriptMatchingPredicateTypeAsString
+0x1e09bb288  __DATA_CONST,__const  _LNTranscriptServiceName
+0x18dbbc238  __TEXT,__text  _LNTranscriptXPCInterface
+0x18dc41c70  __TEXT,__text  _LNTranscriptXPCObservingInterface
+0x18dba5c3c  __TEXT,__text  _LNTranscriptXPCPrivilegedInterface
+0x18dc41db0  __TEXT,__text  _LNTranscriptXPCPrivilegedObservingInterface
+0x1e09bb280  __DATA_CONST,__const  _LNTriggerReindexBundleKey
+0x1e09bb278  __DATA_CONST,__const  _LNTriggerReindexNotification
+0x18dbe5b54  __TEXT,__text  _LNUserIdentityAccessLevelToLaunchOption
+0x18dc30198  __TEXT,__text  _LNValueExtractionTypeAsString
+0x18dbd3040  __TEXT,__text  _LNViewEntityStateAsString
+0x18dbd3158  __TEXT,__text  _LNViewLocationAsString
+0x18dcf8878  __TEXT,__const  _LNVocabularyDonationTimeout
+0x18dcf8870  __TEXT,__const  _LNVocabularyTermQuota
+0x1e09bb270  __DATA_CONST,__const  _LNVocabularyTraitId
+0x1e09bb268  __DATA_CONST,__const  _LNVocabularyTraitModel
+0x1e09bb260  __DATA_CONST,__const  _LNVocabularyTraitModelAppEntity
+0x1e09bb258  __DATA_CONST,__const  _LNVocabularyTraitModelAppEntityType
+0x1e09bb250  __DATA_CONST,__const  _LNVocabularyTraitModelAppSetting
+0x1e09bb248  __DATA_CONST,__const  _LNVocabularyTraitName
+0x1e09bb240  __DATA_CONST,__const  _LNWaitForDatabaseReadyEntitlement
+0x1e09bb238  __DATA_CONST,__const  _LNWidgetKitExtensionPointIdentifier
+0x18dbb3ab8  __TEXT,__text  _LNXPCInterfaceByUpdatingWithXPCListenerEndpointVendingInterface
+0x1ee19ef10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNActionAppContext
+0x1ee19eee8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNActionConfirmationRequest
+0x1ee19eec0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNActionConfirmationResponse
+0x1ef5777a0  __AUTH,__objc_data  _OBJC_CLASS_$_LNActionDefaultValueProvider
+0x1ef577c50  __AUTH,__objc_data  _OBJC_CLASS_$_LNActionExecutor
+0x1ef577840  __AUTH,__objc_data  _OBJC_CLASS_$_LNActionExecutorMetrics
+0x1ee19ee98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNActionExecutorOptions
+0x1ee19d890  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNActionOutput
+0x1ef577430  __AUTH,__objc_data  _OBJC_CLASS_$_LNActivityProvider
+0x1ee19e808  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNAllEntitiesQueryRequestType
+0x1ef577a20  __AUTH,__objc_data  _OBJC_CLASS_$_LNAppEntityConnectionPolicy
+0x1ef577408  __AUTH,__objc_data  _OBJC_CLASS_$_LNAppEnumConnectionPolicy
+0x1ee19d160  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNAppIntentConnectionPolicy
+0x1ee19e1f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNAppNotificationEvent
+0x1ef576e40  __AUTH,__objc_data  _OBJC_CLASS_$_LNAppNotificationEventRegistrationProvider
+0x1ee19ee70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNAppShortcutActionData
+0x1ee19d138  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNAppShortcutDynamicOptionsProviderReference
+0x1ef577e30  __AUTH,__objc_data  _OBJC_CLASS_$_LNAppShortcutOptionsCollection
+0x1ef577e08  __AUTH,__objc_data  _OBJC_CLASS_$_LNAppShortcutParameterPresentation
+0x1ee19f3e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNAppShortcutSpanData
+0x1ee19d520  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNApplicationConnection
+0x1ee19d610  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNAssistantContext
+0x1ef576e18  __AUTH,__objc_data  _OBJC_CLASS_$_LNAsyncIterator
+0x1ee19f190  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNAsyncIteratorOptions
+0x1ee19e330  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNAsyncIteratorReference
+0x1ee19d908  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNAttribution
+0x1ee19da48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNAutoShortcut
+0x1ee19d110  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNAutoShortcutLocalizedPhrase
+0x1ee19f3c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNAutoShortcutSubstitution
+0x1ee19d1d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNAutoShortcutsProvider
+0x1ee19f168  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNAvailabilityChecker
+0x1ee19d6d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNBasePhraseTemplateSubstitution
+0x1ef577778  __AUTH,__objc_data  _OBJC_CLASS_$_LNBundleConnectionPolicy
+0x1ef576d78  __AUTH,__objc_data  _OBJC_CLASS_$_LNChoiceOption
+0x1ee19e1c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNChoiceRequest
+0x1ee19e1a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNChoiceResponse
+0x1ee19f050  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNConfigurableQueryRequest
+0x1ef577c28  __AUTH,__objc_data  _OBJC_CLASS_$_LNConfirmationActionName
+0x1ee19ee48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNConfirmationRequest
+0x1ee19ee20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNConfirmationResponse
+0x1ef5776b0  __AUTH,__objc_data  _OBJC_CLASS_$_LNConfirmationSystemStyle
+0x1ef576d50  __AUTH,__objc_data  _OBJC_CLASS_$_LNConfirmationSystemStyleMontaraEnablement
+0x1ee19d4f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNConnection
+0x1ee19db60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNConnectionAction
+0x1ee19db38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNConnectionActionResponse
+0x1ef575620  __AUTH,__objc_data  _OBJC_CLASS_$_LNConnectionAuthorizationCache
+0x1ee19f2a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNConnectionContext
+0x1ee19e178  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNConnectionListenerEndpoint
+0x1ee19d4d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNConnectionOptions
+0x1ee19d5e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNConnectionPolicy
+0x1ef577de0  __AUTH,__objc_data  _OBJC_CLASS_$_LNConnectionPolicySignals
+0x1ef575818  __AUTH,__objc_data  _OBJC_CLASS_$_LNConnectionRestrictionCheck
+0x1ef576d28  __AUTH,__objc_data  _OBJC_CLASS_$_LNConstraintContext
+0x1ef576cb0  __AUTH,__objc_data  _OBJC_CLASS_$_LNConstraintValidator
+0x1ef5773e0  __AUTH,__objc_data  _OBJC_CLASS_$_LNContactsKeys
+0x1ee19edf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNContinueInAppRequest
+0x1ef577688  __AUTH,__objc_data  _OBJC_CLASS_$_LNContinueInAppRequestSceneOptions
+0x1ee19edd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNContinueInAppResponse
+0x1ef577c00  __AUTH,__objc_data  _OBJC_CLASS_$_LNCorpus
+0x1ef575e50  __AUTH,__objc_data  _OBJC_CLASS_$_LNDMFApplicationPolicyMonitorFactory
+0x1ee19dd40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNDaemonApplicationIdentifierRequest
+0x1ef576c88  __AUTH,__objc_data  _OBJC_CLASS_$_LNDaemonApplicationIntentValueQueryRequest
+0x1ee19ddb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNDaemonApplicationRequest
+0x1ef577e80  __AUTH,__objc_data  _OBJC_CLASS_$_LNDaemonLaunchApplicationRequest
+0x1ef577ea8  __AUTH,__objc_data  _OBJC_CLASS_$_LNDaemonLaunchEmbeddedApplicationRequest
+0x1ef5773b8  __AUTH,__objc_data  _OBJC_CLASS_$_LNDaemonMediator
+0x1ef576c60  __AUTH,__objc_data  _OBJC_CLASS_$_LNDailyRoutineRelevantCondition
+0x1ef576c38  __AUTH,__objc_data  _OBJC_CLASS_$_LNDateRelevantCondition
+0x1ef577660  __AUTH,__objc_data  _OBJC_CLASS_$_LNDeallocationHandler
+0x1ef5779f8  __AUTH,__objc_data  _OBJC_CLASS_$_LNDebouncer
+0x1ee19eda8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNDisambiguationRequest
+0x1ee19f028  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNDisambiguationResponse
+0x1ee19ed80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNDisplayRepresentationFetchResult
+0x1ee19ed58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNDynamicOption
+0x1ee19f0f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNDynamicOptionsProviderReference
+0x1ee19ed30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNDynamicOptionsResult
+0x1ef577818  __AUTH,__objc_data  _OBJC_CLASS_$_LNDynamicOptionsSection
+0x1ef577bb0  __AUTH,__objc_data  _OBJC_CLASS_$_LNDynamicTerm
+0x1ef577ef8  __AUTH,__objc_data  _OBJC_CLASS_$_LNEmbeddedApplicationLauncher
+0x1ef577db8  __AUTH,__objc_data  _OBJC_CLASS_$_LNEntityDisplayRepresentationFetchResult
+0x1ef577ff8  __AUTH,__objc_data  _OBJC_CLASS_$_LNEntityParameterInfo
+0x1ef577638  __AUTH,__objc_data  _OBJC_CLASS_$_LNEntityQueryConnectionPolicy
+0x1ee19e7e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNEntityQueryRequestType
+0x1ee19f320  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNEnvironment
+0x1ee19dcc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNExportedContent
+0x1ee19e7b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNExportedContentConfiguration
+0x1ef577390  __AUTH,__objc_data  _OBJC_CLASS_$_LNExtensionHostConfigurator
+0x1ef577368  __AUTH,__objc_data  _OBJC_CLASS_$_LNExtensionMediator
+0x1ef575a10  __AUTH,__objc_data  _OBJC_CLASS_$_LNExtensionUndoAssertionCache
+0x1ef577340  __AUTH,__objc_data  _OBJC_CLASS_$_LNFeatureFlagUtilities
+0x1ee19f410  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNFeatureFlags
+0x1ee19ed08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNFocusConfigurationAppContext
+0x1ee19ece0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNFocusConfigurationSuggestionContext
+0x1ee19e3d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNIntentEnablement
+0x1ee19e150  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNIntentValueQueryRequestType
+0x1ef5779d0  __AUTH,__objc_data  _OBJC_CLASS_$_LNKoaClient
+0x1ef576968  __AUTH,__objc_data  _OBJC_CLASS_$_LNListenerEndpointProvider
+0x1ef576940  __AUTH,__objc_data  _OBJC_CLASS_$_LNLocationRelevantCondition
+0x1ef576918  __AUTH,__objc_data  _OBJC_CLASS_$_LNLoopIterationResult
+0x1ef5772f0  __AUTH,__objc_data  _OBJC_CLASS_$_LNLoopSuccessResult
+0x1ee19d958  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNMetadataProvider
+0x1ee19ecb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNNeedsValueRequest
+0x1ee19ec90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNNeedsValueResponse
+0x1ee19da98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNOneShotConnectionAction
+0x1ee19e790  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNOpenURLRequest
+0x1ee19e768  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNOpenURLResponse
+0x1ee19d6b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNParameterSubstitution
+0x1ef5781c0  __AUTH,__objc_data  _OBJC_CLASS_$_LNPreConfirmationCancellationToken
+0x1ef578290  __AUTH,__objc_data  _OBJC_CLASS_$_LNPreConfirmationFlowCoordinator
+0x1ef5780c0  __AUTH,__objc_data  _OBJC_CLASS_$_LNPreConfirmationResultWrapper
+0x1ef575768  __AUTH,__objc_data  _OBJC_CLASS_$_LNProgressPropertySynchronizer
+0x1ee19e740  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNPropertyQueryRequestType
+0x1ee19dc00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNQueryEntityOptions
+0x1ee19f118  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNQueryOutput
+0x1ef576850  __AUTH,__objc_data  _OBJC_CLASS_$_LNQueryParameterSortingOption
+0x1ee19dbd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNQueryPropertyResolution
+0x1ee19ec68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNQueryRequest
+0x1ee19e128  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNQueryRequestAnyQueryTarget
+0x1ee19e718  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNQueryRequestDefaultQueryTarget
+0x1ee19e6f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNQueryRequestOptions
+0x1ee19e6c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNQueryRequestParameterTarget
+0x1ee19e6a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNQueryRequestTargetBase
+0x1ee19e678  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNQueryRequestTypeBase
+0x1ef576828  __AUTH,__objc_data  _OBJC_CLASS_$_LNQuickLook
+0x1ee19da20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNRegisteredBundleMetadata
+0x1ee19de80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNReindexAllEntitiesQueryRequestType
+0x1ee19de58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNReindexEntitiesQueryRequestType
+0x1ef576800  __AUTH,__objc_data  _OBJC_CLASS_$_LNRelevantCondition
+0x1ee19f280  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNRelevantIntent
+0x1ef5772c8  __AUTH,__objc_data  _OBJC_CLASS_$_LNRelevantIntentProvider
+0x1ee19e308  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNRequest
+0x1ee19f208  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNResponse
+0x1ee19e2e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNResponseContext
+0x1ef5767d8  __AUTH,__objc_data  _OBJC_CLASS_$_LNSceneActionHandler
+0x1ef5767b0  __AUTH,__objc_data  _OBJC_CLASS_$_LNSchemaTarget
+0x1ef576788  __AUTH,__objc_data  _OBJC_CLASS_$_LNSchemaVersion
+0x1ee19d5c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNSearchResult
+0x1ee19e650  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNSearchableItemQueryRequestType
+0x1ef5779a8  __AUTH,__objc_data  _OBJC_CLASS_$_LNSiriVocabulary
+0x1ee19ec40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNSnippetEnvironment
+0x1ef576760  __AUTH,__objc_data  _OBJC_CLASS_$_LNSpeechUaapXPCClient
+0x1ee19db10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNSpotlightAppEntityMapper
+0x1ef576738  __AUTH,__objc_data  _OBJC_CLASS_$_LNSpotlightCascadeLedger
+0x1ee19dc78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNSpotlightCascadeTranslator
+0x1ef5772a0  __AUTH,__objc_data  _OBJC_CLASS_$_LNSpotlightReindexHandler
+0x1ef577278  __AUTH,__objc_data  _OBJC_CLASS_$_LNSpotlightReindexingIdentifier
+0x1ee19e100  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNStageContextRequest
+0x1ee19e0d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNStageContextResult
+0x1ef5747f8  __AUTH,__objc_data  _OBJC_CLASS_$_LNStaticMigrationApplier
+0x1ef576710  __AUTH,__objc_data  _OBJC_CLASS_$_LNStreamEvent
+0x1ee19df48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNStreamRequest
+0x1ee19df20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNStreamResponse
+0x1ee19e628  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNStringQueryRequestType
+0x1ee19dd18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNSubstitutionValue
+0x1ee19efd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNSuccessResult
+0x1ee19ec18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNSuggestedAction
+0x1ee19e600  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNSuggestedEntitiesQueryRequestType
+0x1ef577250  __AUTH,__objc_data  _OBJC_CLASS_$_LNSuggestionsProvider
+0x1ef577228  __AUTH,__objc_data  _OBJC_CLASS_$_LNSuggestionsRequest
+0x1ef577200  __AUTH,__objc_data  _OBJC_CLASS_$_LNSysCtlProvider
+0x1ee19f2f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNSystemContext
+0x1ee19d868  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNTranscriptActionRecord
+0x1ef577750  __AUTH,__objc_data  _OBJC_CLASS_$_LNTranscriptDonationPolicy
+0x1ee19d840  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNTranscriptMatchingPredicate
+0x1ef5766e8  __AUTH,__objc_data  _OBJC_CLASS_$_LNTranscriptObservingProvider
+0x1ee19d598  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNTranscriptPrivilegedProvider
+0x1ee19d9a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNTranscriptProvider
+0x1ef5766c0  __AUTH,__objc_data  _OBJC_CLASS_$_LNURLLaunchRequest
+0x1ee19d0e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNUndoContext
+0x1ee19e5d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNUniqueQueryRequestType
+0x1ef577d68  __AUTH,__objc_data  _OBJC_CLASS_$_LNUpdateOpensIntentRequest
+0x1ef577d40  __AUTH,__objc_data  _OBJC_CLASS_$_LNUpdateOpensIntentResponse
+0x1ee19de08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNUserIdentity
+0x1ee19ebf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNViewAction
+0x1ee19d728  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNViewAnnotations
+0x1ee19efb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNViewEntity
+0x1ee19dfc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNViewSnippet
+0x1ef577188  __AUTH,__objc_data  _OBJC_CLASS_$_LNViewSnippetOptions
+0x1ef577570  __AUTH,__objc_data  _OBJC_CLASS_$_LNVocabulary
+0x1ef577980  __AUTH,__objc_data  _OBJC_CLASS_$_LNVocabularyStrictPicker
+0x1ee19d7a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNWatchdogTimer
+0x1ee19ef88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_LNWeakProxy
+0x1ef578350  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12LinkServices29LNExecutionAnalyticsCollector
+0x1ef5746d0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12LinkServices35LNMetadataProviderMigrationResolver
+0x1ee19ebc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNActionAppContext
+0x1ee19eba0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNActionConfirmationRequest
+0x1ee19eb78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNActionConfirmationResponse
+0x1ef577728  __AUTH,__objc_data  _OBJC_METACLASS_$_LNActionDefaultValueProvider
+0x1ef577b38  __AUTH,__objc_data  _OBJC_METACLASS_$_LNActionExecutor
+0x1ef5777f0  __AUTH,__objc_data  _OBJC_METACLASS_$_LNActionExecutorMetrics
+0x1ee19f0c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNActionExecutorOptions
+0x1ee19d818  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNActionOutput
+0x1ef577160  __AUTH,__objc_data  _OBJC_METACLASS_$_LNActivityProvider
+0x1ee19e5b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNAllEntitiesQueryRequestType
+0x1ef577958  __AUTH,__objc_data  _OBJC_METACLASS_$_LNAppEntityConnectionPolicy
+0x1ef577138  __AUTH,__objc_data  _OBJC_METACLASS_$_LNAppEnumConnectionPolicy
+0x1ee19d0c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNAppIntentConnectionPolicy
+0x1ee19e2b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNAppNotificationEvent
+0x1ef5765f8  __AUTH,__objc_data  _OBJC_METACLASS_$_LNAppNotificationEventRegistrationProvider
+0x1ee19eb50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNAppShortcutActionData
+0x1ee19d098  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNAppShortcutDynamicOptionsProviderReference
+0x1ef577d18  __AUTH,__objc_data  _OBJC_METACLASS_$_LNAppShortcutOptionsCollection
+0x1ef577cf0  __AUTH,__objc_data  _OBJC_METACLASS_$_LNAppShortcutParameterPresentation
+0x1ee19f398  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNAppShortcutSpanData
+0x1ee19d480  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNApplicationConnection
+0x1ee19d688  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNAssistantContext
+0x1ef5765d0  __AUTH,__objc_data  _OBJC_METACLASS_$_LNAsyncIterator
+0x1ee19e3a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNAsyncIteratorOptions
+0x1ee19e290  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNAsyncIteratorReference
+0x1ee19d8e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNAttribution
+0x1ee19d9f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNAutoShortcut
+0x1ee19d070  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNAutoShortcutLocalizedPhrase
+0x1ee19f370  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNAutoShortcutSubstitution
+0x1ee19d458  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNAutoShortcutsProvider
+0x1ee19f140  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNAvailabilityChecker
+0x1ee19d660  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNBasePhraseTemplateSubstitution
+0x1ef577700  __AUTH,__objc_data  _OBJC_METACLASS_$_LNBundleConnectionPolicy
+0x1ef576530  __AUTH,__objc_data  _OBJC_METACLASS_$_LNChoiceOption
+0x1ee19e0b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNChoiceRequest
+0x1ee19e088  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNChoiceResponse
+0x1ee19e880  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNConfigurableQueryRequest
+0x1ef577b10  __AUTH,__objc_data  _OBJC_METACLASS_$_LNConfirmationActionName
+0x1ee19eb28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNConfirmationRequest
+0x1ee19eb00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNConfirmationResponse
+0x1ef579080  __AUTH,__data  _OBJC_METACLASS_$_LNConfirmationSystemStyle
+0x1ef578f58  __AUTH,__data  _OBJC_METACLASS_$_LNConfirmationSystemStyleMontaraEnablement
+0x1ee19d430  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNConnection
+0x1ee19dae8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNConnectionAction
+0x1ee19dac0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNConnectionActionResponse
+0x1ef5791b0  __AUTH,__data  _OBJC_METACLASS_$_LNConnectionAuthorizationCache
+0x1ee19f1e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNConnectionContext
+0x1ee19e060  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNConnectionListenerEndpoint
+0x1ee19d408  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNConnectionOptions
+0x1ee19d570  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNConnectionPolicy
+0x1ef577cc8  __AUTH,__objc_data  _OBJC_METACLASS_$_LNConnectionPolicySignals
+0x1ef579188  __AUTH,__data  _OBJC_METACLASS_$_LNConnectionRestrictionCheck
+0x1ef576508  __AUTH,__objc_data  _OBJC_METACLASS_$_LNConstraintContext
+0x1ef576490  __AUTH,__objc_data  _OBJC_METACLASS_$_LNConstraintValidator
+0x1ef577110  __AUTH,__objc_data  _OBJC_METACLASS_$_LNContactsKeys
+0x1ee19ead8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNContinueInAppRequest
+0x1ef577548  __AUTH,__objc_data  _OBJC_METACLASS_$_LNContinueInAppRequestSceneOptions
+0x1ee19eab0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNContinueInAppResponse
+0x1ef577ae8  __AUTH,__objc_data  _OBJC_METACLASS_$_LNCorpus
+0x1ef575e28  __AUTH,__objc_data  _OBJC_METACLASS_$_LNDMFApplicationPolicyMonitorFactory
+0x1ee19dd68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNDaemonApplicationIdentifierRequest
+0x1ef576468  __AUTH,__objc_data  _OBJC_METACLASS_$_LNDaemonApplicationIntentValueQueryRequest
+0x1ee19dd90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNDaemonApplicationRequest
+0x1ef577e58  __AUTH,__objc_data  _OBJC_METACLASS_$_LNDaemonLaunchApplicationRequest
+0x1ef577ed0  __AUTH,__objc_data  _OBJC_METACLASS_$_LNDaemonLaunchEmbeddedApplicationRequest
+0x1ef5770e8  __AUTH,__objc_data  _OBJC_METACLASS_$_LNDaemonMediator
+0x1ef576440  __AUTH,__objc_data  _OBJC_METACLASS_$_LNDailyRoutineRelevantCondition
+0x1ef576418  __AUTH,__objc_data  _OBJC_METACLASS_$_LNDateRelevantCondition
+0x1ef577520  __AUTH,__objc_data  _OBJC_METACLASS_$_LNDeallocationHandler
+0x1ef577930  __AUTH,__objc_data  _OBJC_METACLASS_$_LNDebouncer
+0x1ee19ea88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNDisambiguationRequest
+0x1ee19f1b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNDisambiguationResponse
+0x1ee19ea60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNDisplayRepresentationFetchResult
+0x1ee19ea38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNDynamicOption
+0x1ee19f0a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNDynamicOptionsProviderReference
+0x1ee19ea10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNDynamicOptionsResult
+0x1ef5777c8  __AUTH,__objc_data  _OBJC_METACLASS_$_LNDynamicOptionsSection
+0x1ef577a98  __AUTH,__objc_data  _OBJC_METACLASS_$_LNDynamicTerm
+0x1ef577f20  __AUTH,__objc_data  _OBJC_METACLASS_$_LNEmbeddedApplicationLauncher
+0x1ee19d048  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNEntityDisplayRepresentationFetchResult
+0x1ef5792c8  __AUTH,__data  _OBJC_METACLASS_$_LNEntityParameterInfo
+0x1ef5770c0  __AUTH,__objc_data  _OBJC_METACLASS_$_LNEntityQueryConnectionPolicy
+0x1ee19e588  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNEntityQueryRequestType
+0x1ee19f348  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNEnvironment
+0x1ee19dca0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNExportedContent
+0x1ee19e858  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNExportedContentConfiguration
+0x1ef577098  __AUTH,__objc_data  _OBJC_METACLASS_$_LNExtensionHostConfigurator
+0x1ef577070  __AUTH,__objc_data  _OBJC_METACLASS_$_LNExtensionMediator
+0x1ef578f28  __AUTH,__data  _OBJC_METACLASS_$_LNExtensionUndoAssertionCache
+0x1ef577048  __AUTH,__objc_data  _OBJC_METACLASS_$_LNFeatureFlagUtilities
+0x1ee19f438  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNFeatureFlags
+0x1ee19e9e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNFocusConfigurationAppContext
+0x1ee19e9c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNFocusConfigurationSuggestionContext
+0x1ee19e380  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNIntentEnablement
+0x1ee19e038  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNIntentValueQueryRequestType
+0x1ef577908  __AUTH,__objc_data  _OBJC_METACLASS_$_LNKoaClient
+0x1ef576148  __AUTH,__objc_data  _OBJC_METACLASS_$_LNListenerEndpointProvider
+0x1ef576120  __AUTH,__objc_data  _OBJC_METACLASS_$_LNLocationRelevantCondition
+0x1ef5760f8  __AUTH,__objc_data  _OBJC_METACLASS_$_LNLoopIterationResult
+0x1ef576ff8  __AUTH,__objc_data  _OBJC_METACLASS_$_LNLoopSuccessResult
+0x1ee19d930  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNMetadataProvider
+0x1ee19e998  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNNeedsValueRequest
+0x1ee19e970  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNNeedsValueResponse
+0x1ee19da70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNOneShotConnectionAction
+0x1ee19e560  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNOpenURLRequest
+0x1ee19f078  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNOpenURLResponse
+0x1ee19d638  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNParameterSubstitution
+0x1ef579518  __AUTH,__data  _OBJC_METACLASS_$_LNPreConfirmationCancellationToken
+0x1ef579540  __AUTH,__data  _OBJC_METACLASS_$_LNPreConfirmationFlowCoordinator
+0x1ef5794f0  __AUTH,__data  _OBJC_METACLASS_$_LNPreConfirmationResultWrapper
+0x1ef5790a8  __AUTH,__data  _OBJC_METACLASS_$_LNProgressPropertySynchronizer
+0x1ee19e538  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNPropertyQueryRequestType
+0x1ee19dc28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNQueryEntityOptions
+0x1ee19e948  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNQueryOutput
+0x1ef576030  __AUTH,__objc_data  _OBJC_METACLASS_$_LNQueryParameterSortingOption
+0x1ee19dbb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNQueryPropertyResolution
+0x1ee19e920  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNQueryRequest
+0x1ee19e268  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNQueryRequestAnyQueryTarget
+0x1ee19e510  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNQueryRequestDefaultQueryTarget
+0x1ee19e830  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNQueryRequestOptions
+0x1ee19e4e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNQueryRequestParameterTarget
+0x1ee19e4c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNQueryRequestTargetBase
+0x1ee19e498  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNQueryRequestTypeBase
+0x1ef576008  __AUTH,__objc_data  _OBJC_METACLASS_$_LNQuickLook
+0x1ee19d9d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNRegisteredBundleMetadata
+0x1ee19de30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNReindexAllEntitiesQueryRequestType
+0x1ee19dea8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNReindexEntitiesQueryRequestType
+0x1ef575fe0  __AUTH,__objc_data  _OBJC_METACLASS_$_LNRelevantCondition
+0x1ee19f258  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNRelevantIntent
+0x1ef576fd0  __AUTH,__objc_data  _OBJC_METACLASS_$_LNRelevantIntentProvider
+0x1ee19e240  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNRequest
+0x1ee19f230  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNResponse
+0x1ee19e218  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNResponseContext
+0x1ef575fb8  __AUTH,__objc_data  _OBJC_METACLASS_$_LNSceneActionHandler
+0x1ef575f90  __AUTH,__objc_data  _OBJC_METACLASS_$_LNSchemaTarget
+0x1ef575f68  __AUTH,__objc_data  _OBJC_METACLASS_$_LNSchemaVersion
+0x1ee19d750  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNSearchResult
+0x1ee19e470  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNSearchableItemQueryRequestType
+0x1ef5778e0  __AUTH,__objc_data  _OBJC_METACLASS_$_LNSiriVocabulary
+0x1ee19e8f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNSnippetEnvironment
+0x1ef575f40  __AUTH,__objc_data  _OBJC_METACLASS_$_LNSpeechUaapXPCClient
+0x1ee19db88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNSpotlightAppEntityMapper
+0x1ef575f18  __AUTH,__objc_data  _OBJC_METACLASS_$_LNSpotlightCascadeLedger
+0x1ee19dc50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNSpotlightCascadeTranslator
+0x1ef579028  __AUTH,__data  _OBJC_METACLASS_$_LNSpotlightReindexHandler
+0x1ef576fa8  __AUTH,__objc_data  _OBJC_METACLASS_$_LNSpotlightReindexingIdentifier
+0x1ee19e010  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNStageContextRequest
+0x1ee19e358  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNStageContextResult
+0x1ef578408  __AUTH,__data  _OBJC_METACLASS_$_LNStaticMigrationApplier
+0x1ef575ef0  __AUTH,__objc_data  _OBJC_METACLASS_$_LNStreamEvent
+0x1ee19def8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNStreamRequest
+0x1ee19df98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNStreamResponse
+0x1ee19e448  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNStringQueryRequestType
+0x1ee19dcf0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNSubstitutionValue
+0x1ee19ef60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNSuccessResult
+0x1ee19e8d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNSuggestedAction
+0x1ee19e420  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNSuggestedEntitiesQueryRequestType
+0x1ef576f80  __AUTH,__objc_data  _OBJC_METACLASS_$_LNSuggestionsProvider
+0x1ef576f58  __AUTH,__objc_data  _OBJC_METACLASS_$_LNSuggestionsRequest
+0x1ef576f30  __AUTH,__objc_data  _OBJC_METACLASS_$_LNSysCtlProvider
+0x1ee19f2d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNSystemContext
+0x1ee19d7f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNTranscriptActionRecord
+0x1ef5776d8  __AUTH,__objc_data  _OBJC_METACLASS_$_LNTranscriptDonationPolicy
+0x1ee19d7c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNTranscriptMatchingPredicate
+0x1ef575ec8  __AUTH,__objc_data  _OBJC_METACLASS_$_LNTranscriptObservingProvider
+0x1ee19d548  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNTranscriptPrivilegedProvider
+0x1ee19d980  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNTranscriptProvider
+0x1ef578f00  __AUTH,__data  _OBJC_METACLASS_$_LNURLLaunchRequest
+0x1ee19d020  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNUndoContext
+0x1ee19e3f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNUniqueQueryRequestType
+0x1ef577c78  __AUTH,__objc_data  _OBJC_METACLASS_$_LNUpdateOpensIntentRequest
+0x1ee19d8b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNUpdateOpensIntentResponse
+0x1ee19dde0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNUserIdentity
+0x1ee19e8a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNViewAction
+0x1ee19d700  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNViewAnnotations
+0x1ee19ef38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNViewEntity
+0x1ee19df70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNViewSnippet
+0x1ef576eb8  __AUTH,__objc_data  _OBJC_METACLASS_$_LNViewSnippetOptions
+0x1ef577458  __AUTH,__objc_data  _OBJC_METACLASS_$_LNVocabulary
+0x1ef5778b8  __AUTH,__objc_data  _OBJC_METACLASS_$_LNVocabularyStrictPicker
+0x1ee19d778  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNWatchdogTimer
+0x1ee19dfe8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_LNWeakProxy
+0x1ef579710  __AUTH,__data  _OBJC_METACLASS_$__TtC12LinkServices29LNExecutionAnalyticsCollector
+0x1ef5783e0  __AUTH,__data  _OBJC_METACLASS_$__TtC12LinkServices35LNMetadataProviderMigrationResolver
+```
+
+## Private
+
+```
+0x18dba56b0  __TEXT,__text  -[LNMetadataProvider initWithOptions:]
+0x18dba5798  __TEXT,__text  -[LNMetadataProvider dealloc]
+0x18dba57e4  __TEXT,__text  -[LNMetadataProvider .cxx_destruct]
+0x18dba57f0  __TEXT,__text  -[LNWeakProxy initWithValue:]
+0x18dba5874  __TEXT,__text  -[LNLoggingProxy forwardInvocation:]
+0x18dba5974  __TEXT,__text  -[LNTranscriptProvider init]
+0x18dba5a1c  __TEXT,__text  ___34-[LNTranscriptProvider connection]_block_invoke
+0x18dba5aa4  __TEXT,__text  -[LNTranscriptProvider configureConnection:]
+0x18dba5c38  __TEXT,__text  +[LNTranscriptPrivilegedProvider xpcInterface]
+0x18dba5c84  __TEXT,__text  -[LNLoggingProxy isKindOfClass:]
+0x18dba5cc4  __TEXT,__text  ___getCCItemInstanceClass_block_invoke
+0x18dba5d8c  __TEXT,__text  -[LNSpotlightCascadeTranslator init]
+0x18dba5de4  __TEXT,__text  -[LNSpotlightCascadeTranslator softLinkedClassesDidLoad]
+0x18dba6458  __TEXT,__text  _IntelligencePlatformLibraryLibrary
+0x18dba65a8  __TEXT,__text  ___getCCItemInstancePatchClass_block_invoke
+0x18dba6670  __TEXT,__text  ___getCCAppIntentsIndexedEntityContentClass_block_invoke
+0x18dba6738  __TEXT,__text  ___getCCAppIntentsIndexedEntityMetaContentClass_block_invoke
+0x18dba6800  __TEXT,__text  ___getCCAppEntityDisplayRepresentationClass_block_invoke
+0x18dba68c8  __TEXT,__text  ___getCCSpotlightMediaAttributesClass_block_invoke
+0x18dba6990  __TEXT,__text  ___getCCSpotlightCustomAttributeKeyClass_block_invoke
+0x18dba6a58  __TEXT,__text  -[LNMetadataProvider init]
+0x18dba6a60  __TEXT,__text  ___39-[LNMetadataProvider bundlesWithError:]_block_invoke
+0x18dba6b48  __TEXT,__text  -[LNDeallocationHandler initWithObject:deallocationHandler:]
+0x18dba6bf0  __TEXT,__text  -[LNTranscriptActionRecord action]
+0x18dba6c40  __TEXT,__text  -[LNTranscriptActionRecord resolvedAction]
+0x18dba6c48  __TEXT,__text  -[LNDeallocationHandler .cxx_destruct]
+0x18dba6c7c  __TEXT,__text  -[LNTranscriptProvider dealloc]
+0x18dba6cc8  __TEXT,__text  -[LNTranscriptProvider .cxx_destruct]
+0x18dba6d00  __TEXT,__text  +[LNActionOutput supportsSecureCoding]
+0x18dba6d08  __TEXT,__text  +[LNTranscriptProvider publisherForStream:fromDate:toDate:maxEvents:reversed:]
+0x18dba6e84  __TEXT,__text  ___44-[LNTranscriptProvider configureConnection:]_block_invoke.18
+0x18dba6f10  __TEXT,__text  -[LNWeakProxy .cxx_destruct]
+0x18dba6f48  __TEXT,__text  -[LNLoggingProxy .cxx_destruct]
+0x18dba6f58  __TEXT,__text  -[LNTranscriptActionRecord .cxx_destruct]
+0x18dba6fe4  __TEXT,__text  -[LNActionOutput .cxx_destruct]
+0x18dba7094  __TEXT,__text  ___109-[LNTranscriptPrivilegedProvider transcriptPublisherWithStreamName:fromDate:toDate:maxEvents:reversed:error:]_block_invoke.5
+0x18dba7108  __TEXT,__text  -[LNActionOutput copyWithZone:]
+0x18dba710c  __TEXT,__text  -[LNDeallocationHandler dealloc]
+0x18dba71bc  __TEXT,__text  ___78+[LNTranscriptProvider publisherForStream:fromDate:toDate:maxEvents:reversed:]_block_invoke
+0x18dba71c4  __TEXT,__text  -[LNAutoShortcut encodeWithCoder:]
+0x18dba73b0  __TEXT,__text  -[LNAutoShortcut systemImageName]
+0x18dba73b8  __TEXT,__text  -[LNAutoShortcut localizedShortTitle]
+0x18dba73c0  __TEXT,__text  ___Block_byref_object_dispose_
+0x18dba73c8  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase initWithLocalizedPhrase:bundleIdentifier:basePhraseTemplate:parameterIdentifier:optionsCollectionTitle:optionsCollectionSystemImageName:primary:signature:]
+0x18dba7680  __TEXT,__text  -[LNAutoShortcut initWithBundleIdentifier:localeIdentifier:actionIdentifier:orderedPhrases:localizedShortTitle:localizedAutoShortcutDescription:systemImageName:shortcutTileColor:parameterPresentation:attributionBundleIdentifier:basePhraseTemplates:]
+0x18dba7a28  __TEXT,__text  -[LNDynamicOptionsProviderReference initWithParameterIdentifier:]
+0x18dba7afc  __TEXT,__text  -[LNAutoShortcut bundleIdentifier]
+0x18dba7b04  __TEXT,__text  -[LNAutoShortcut actionIdentifier]
+0x18dba7b0c  __TEXT,__text  -[LNAutoShortcut orderedPhrases]
+0x18dba7b14  __TEXT,__text  -[LNAutoShortcutsProvider initWithOptions:]
+0x18dba7bb4  __TEXT,__text  ___66-[LNAutoShortcutsProvider autoShortcutsForLocaleIdentifier:error:]_block_invoke_2
+0x18dba7bc4  __TEXT,__text  +[LNFeatureFlags is2025IndexEnabled]
+0x18dba7bd8  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase signature]
+0x18dba7be0  __TEXT,__text  ___Block_byref_object_copy_
+0x18dba7bf0  __TEXT,__text  -[LNDynamicOptionsProviderReference encodeWithCoder:]
+0x18dba7c50  __TEXT,__text  -[LNAvailabilityChecker .cxx_destruct]
+0x18dba7c5c  __TEXT,__text  ___66-[LNAvailabilityChecker availabilityWithPlatform:platformVersion:]_block_invoke
+0x18dba7d3c  __TEXT,__text  -[LNAvailabilityChecker availabilityAnnotations]
+0x18dba7d44  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase parameterIdentifier]
+0x18dba7d4c  __TEXT,__text  -[LNAutoShortcut shortcutTileColor]
+0x18dba7d54  __TEXT,__text  -[LNAutoShortcut .cxx_destruct]
+0x18dba7e04  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase .cxx_destruct]
+0x18dba7e84  __TEXT,__text  -[LNAppShortcutParameterPresentation .cxx_destruct]
+0x18dba7ec8  __TEXT,__text  -[LNAppShortcutOptionsCollection .cxx_destruct]
+0x18dba7f0c  __TEXT,__text  -[LNAppShortcutDynamicOptionsProviderReference .cxx_destruct]
+0x18dba7f20  __TEXT,__text  -[LNDynamicOptionsProviderReference .cxx_destruct]
+0x18dba7f2c  __TEXT,__text  ___88-[LNAutoShortcutsProvider autoShortcutsForBundleIdentifier:localeIdentifier:completion:]_block_invoke
+0x18dba8048  __TEXT,__text  -[LNAvailabilityChecker currentPlatformName]
+0x18dba8058  __TEXT,__text  -[LNAvailabilityChecker currentSystemVersion]
+0x18dba80b0  __TEXT,__text  -[LNAvailabilityChecker availabilityWithPlatform:platformVersion:]
+0x18dba82ec  __TEXT,__text  -[LNAvailabilityAnnotation(LNAvailabilityChecker) _availabilityResultWithoutSystemVersion]
+0x18dba83c0  __TEXT,__text  -[LNAvailabilityAnnotation(LNAvailabilityChecker) _availabilityResultWithSystemVersion:]
+0x18dba85ec  __TEXT,__text  -[LNAvailabilityChecker initWithAvailabilityAnnotations:]
+0x18dba8668  __TEXT,__text  -[LNAvailabilityChecker availableForCurrentPlatformVersion]
+0x18dba86f8  __TEXT,__text  -[LNAutoShortcutsProvider autoShortcutsForLocaleIdentifier:error:]
+0x18dba8acc  __TEXT,__text  ___LNDaemonRegistryXPCInterface_block_invoke
+0x18dbaa640  __TEXT,__text  ___45-[LNAvailabilityChecker currentSystemVersion]_block_invoke
+0x18dbaa6d8  __TEXT,__text  ___66-[LNAutoShortcutsProvider autoShortcutsForLocaleIdentifier:error:]_block_invoke
+0x18dbaa7c4  __TEXT,__text  -[LNActionDefaultValueProvider initWithActionIdentifier:actionMetadata:]
+0x18dbaa8c0  __TEXT,__text  -[LNActionDefaultValueProvider loadStaticDefaultValueForBundleIdentifier:error:]
+0x18dbaaa6c  __TEXT,__text  -[LNActionDefaultValueProvider loadActionMetadataWithError:]
+0x18dbaad64  __TEXT,__text  -[LNActionDefaultValueProvider actionMetadata]
+0x18dbaada8  __TEXT,__text  ___80-[LNActionDefaultValueProvider loadStaticDefaultValueForBundleIdentifier:error:]_block_invoke
+0x18dbaadcc  __TEXT,__text  ___80-[LNActionDefaultValueProvider loadStaticDefaultValueForBundleIdentifier:error:]_block_invoke_2
+0x18dbab11c  __TEXT,__text  -[LNConnectionPolicySignals init]
+0x18dbab178  __TEXT,__text  -[LNConnectionPolicySignals setShouldExecuteActionOnApplicationBasedOnMetadata:]
+0x18dbab180  __TEXT,__text  +[LNConnectionPolicy policyWithActionMetadata:signals:]
+0x18dbab188  __TEXT,__text  +[LNConnectionPolicy policyWithActionMetadata:signals:schemaVersion:]
+0x18dbab278  __TEXT,__text  -[LNConnectionPolicySignals description]
+0x18dbab340  __TEXT,__text  -[LNConnectionPolicySignals preferredBundleIdentifier]
+0x18dbab348  __TEXT,__text  -[LNConnectionPolicySignals processInstanceIdentifier]
+0x18dbab350  __TEXT,__text  -[LNConnectionPolicySignals shouldExecuteActionOnApplicationBasedOnMetadata]
+0x18dbab840  __TEXT,__text  ___swift_instantiateConcreteTypeFromMangledNameV2
+0x18dbab88c  __TEXT,__text  -[LNAppIntentConnectionPolicy initWithAppIntentMetadata:effectiveBundleIdentifier:appBundleIdentifier:processInstanceIdentifier:schemaVersion:]
+0x18dbaba54  __TEXT,__text  -[LNAppIntentConnectionPolicy actionWithParameters:]
+0x18dbabbb0  __TEXT,__text  -[LNAppIntentConnectionPolicy effectiveBundleIdentifier]
+0x18dbabbb8  __TEXT,__text  ___52-[LNAppIntentConnectionPolicy actionWithParameters:]_block_invoke
+0x18dbac944  __TEXT,__text  +[LNConnectionPolicy policyWithActionMetadata:effectiveBundleIdentifier:appBundleIdentifier:processInstanceIdentifier:schemaVersion:]
+0x18dbac9f0  __TEXT,__text  -[LNConnectionPolicySignals .cxx_destruct]
+0x18dbaca28  __TEXT,__text  -[LNAppIntentConnectionPolicy metadata]
+0x18dbacab8  __TEXT,__text  ___swift_memcpy1_1
+0x18dbacac4  __TEXT,__text  ___52-[LNAppIntentConnectionPolicy actionWithParameters:]_block_invoke_2
+0x18dbacb28  __TEXT,__text  -[LNAppIntentConnectionPolicy .cxx_destruct]
+0x18dbacb84  __TEXT,__text  -[LNActionDefaultValueProvider .cxx_destruct]
+0x18dbacbd4  __TEXT,__text  ___getCCAppEntityTypeDisplayRepresentationClass_block_invoke
+0x18dbacc9c  __TEXT,__text  ___getCCSpotlightAppleIntelligenceAttributesClass_block_invoke
+0x18dbacd64  __TEXT,__text  ___getCCSpotlightGeneralAttributesClass_block_invoke
+0x18dbace2c  __TEXT,__text  ___getCCSpotlightDocumentAttributesClass_block_invoke
+0x18dbacef4  __TEXT,__text  ___getCCSpotlightUserInvolvementAttributesClass_block_invoke
+0x18dbacfbc  __TEXT,__text  _getCCSpotlightUserInvolvementAttributesClass
+0x18dbad090  __TEXT,__text  ___getCCSpotlightEventAttributesClass_block_invoke
+0x18dbad158  __TEXT,__text  _getCCSpotlightEventAttributesClass
+0x18dbad22c  __TEXT,__text  _getCCSpotlightMediaAttributesClass
+0x18dbad300  __TEXT,__text  ___getCCSpotlightPlaceAttributesClass_block_invoke
+0x18dbad3c8  __TEXT,__text  ___getCCSpotlightMusicAttributesClass_block_invoke
+0x18dbad490  __TEXT,__text  ___getCCSpotlightImageAttributesClass_block_invoke
+0x18dbad558  __TEXT,__text  _getCCSpotlightPlaceAttributesClass
+0x18dbad62c  __TEXT,__text  _getCCSpotlightMusicAttributesClass
+0x18dbad700  __TEXT,__text  _getCCSpotlightImageAttributesClass
+0x18dbad7d4  __TEXT,__text  ___getCCSpotlightMessageAttributesClass_block_invoke
+0x18dbad89c  __TEXT,__text  _getCCSpotlightMessageAttributesClass
+0x18dbad970  __TEXT,__text  ___getCCSpotlightPersonClass_block_invoke
+0x18dbada38  __TEXT,__text  _getCCSpotlightPersonClass
+0x18dbadb0c  __TEXT,__text  _getCCSpotlightActionAttributesClass
+0x18dbadbe0  __TEXT,__text  ___getCCSpotlightDefinedAttributesClass_block_invoke
+0x18dbadca8  __TEXT,__text  ___getCCSpotlightEmailHeadersEntryClass_block_invoke
+0x18dbadd70  __TEXT,__text  _getCCSpotlightEmailHeadersEntryClass
+0x18dbade44  __TEXT,__text  ___getCCSpotlightContainmentAttributesClass_block_invoke
+0x18dbadf0c  __TEXT,__text  _getCCSpotlightContainmentAttributesClass
+0x18dbadfe0  __TEXT,__text  ___getCCSpotlightActionAttributesClass_block_invoke
+0x18dbae0a8  __TEXT,__text  _getCCSpotlightDefinedAttributesClass
+0x18dbae17c  __TEXT,__text  ___getCCSpotlightItemRepresentationAttributesClass_block_invoke
+0x18dbae244  __TEXT,__text  _getCCSpotlightCustomItemAttributeValueClass
+0x18dbae318  __TEXT,__text  _getCCSpotlightCustomAttributeKeyClass
+0x18dbae3ec  __TEXT,__text  ___getCCSpotlightCustomItemAttributeValueClass_block_invoke
+0x18dbae4b4  __TEXT,__text  _getCCSpotlightItemRepresentationAttributesClass
+0x18dbae588  __TEXT,__text  ___getCCSpotlightCustomAttributeClass_block_invoke
+0x18dbae650  __TEXT,__text  _getCCSpotlightCustomAttributeClass
+0x18dbae724  __TEXT,__text  ___74-[LNMetadataProvider actionForBundleIdentifier:andActionIdentifier:error:]_block_invoke
+0x18dbae8f4  __TEXT,__text  -[LNAutoShortcut attributionBundleIdentifier]
+0x18dbae8fc  __TEXT,__text  +[LNAutoShortcutLocalizedPhrase supportsSecureCoding]
+0x18dbae904  __TEXT,__text  ___swift_noop_void_return
+0x18dbae908  __TEXT,__text  +[LNConnectionPolicy policyWithBundleIdentifier:]
+0x18dbae9dc  __TEXT,__text  +[LNEntitlementsValidator(ApplicationService) currentProcessHasApplicationServiceMachLookup]
+0x18dbaea30  __TEXT,__text  +[NSXPCConnection(ApplicationService) ln_applicationServiceWithError:]
+0x18dbaf788  __TEXT,__text  -[LNBundleConnectionPolicy connectionWithError:]
+0x18dbaf794  __TEXT,__text  -[LNBundleConnectionPolicy connectionWithUserIdentity:error:]
+0x18dbaf8f8  __TEXT,__text  -[LNConnectionProxy forwardInvocation:]
+0x18dbafdd4  __TEXT,__text  ___39-[LNConnectionProxy forwardInvocation:]_block_invoke
+0x18dbafe24  __TEXT,__text  +[LNEnvironment defaultEnvironment]
+0x18dbafe6c  __TEXT,__text  ___35+[LNEnvironment defaultEnvironment]_block_invoke
+0x18dbafed8  __TEXT,__text  -[LNEnvironment initWithLocale:]
+0x18dbaffc0  __TEXT,__text  -[LNBundleConnectionPolicy initWithBundleIdentifier:appBundleIdentifier:processInstanceIdentifier:]
+0x18dbb00ec  __TEXT,__text  -[LNBundleConnectionPolicy bundleIdentifier]
+0x18dbb00f4  __TEXT,__text  -[LNBundleConnectionPolicy appBundleIdentifier]
+0x18dbb00fc  __TEXT,__text  -[LNBundleConnectionPolicy processInstanceIdentifier]
+0x18dbb0104  __TEXT,__text  -[LNConnectionManager connectionsByBundleIdentifier]
+0x18dbb010c  __TEXT,__text  -[LNConnectionProxy connection]
+0x18dbb0120  __TEXT,__text  +[LNConnectionManager sharedInstance]
+0x18dbb0168  __TEXT,__text  -[LNConnection getConnectionInterfaceWithOptions:completionHandler:]
+0x18dbb0224  __TEXT,__text  -[LNConnection state]
+0x18dbb022c  __TEXT,__text  +[LNConnection defaultOptions]
+0x18dbb024c  __TEXT,__text  +[LNEmbeddedApplicationConnection connectionOptionsClass]
+0x18dbb0258  __TEXT,__text  -[LNConnection userIdentity]
+0x18dbb0260  __TEXT,__text  -[LNApplicationConnection appBundleIdentifier]
+0x18dbb0264  __TEXT,__text  -[LNConnection bundleIdentifier]
+0x18dbb026c  __TEXT,__text  -[LNConnectionManager connectionForEffectiveBundleIdentifier:appBundleIdentifier:processInstanceIdentifier:mangledTypeName:userIdentity:error:]
+0x18dbb06b0  __TEXT,__text  ___143-[LNConnectionManager connectionForEffectiveBundleIdentifier:appBundleIdentifier:processInstanceIdentifier:mangledTypeName:userIdentity:error:]_block_invoke
+0x18dbb06bc  __TEXT,__text  -[LNBundleConnectionPolicy .cxx_destruct]
+0x18dbb0700  __TEXT,__text  -[LNConnection(FetchAppShortcutParameters) fetchAppShortcutParametersForMangledName:withCompletionHandler:]
+0x18dbb07c8  __TEXT,__text  -[LNConnection connectWithOptions:]
+0x18dbb08f0  __TEXT,__text  -[LNEmbeddedApplicationConnectionOptions init]
+0x18dbb0998  __TEXT,__text  -[LNConnectionOptions authenticationPolicy]
+0x18dbb09a0  __TEXT,__text  -[LNConnection performGetConnectionInterfaceWithOptions:completionHandler:]
+0x18dbb0c80  __TEXT,__text  ___75-[LNConnection performGetConnectionInterfaceWithOptions:completionHandler:]_block_invoke
+0x18dbb0d8c  __TEXT,__text  -[LNEmbeddedApplicationConnectionOptions .cxx_destruct]
+0x18dbb0de8  __TEXT,__text  ___67-[LNEmbeddedApplicationConnection enqueueOpenApplicationOperation:]_block_invoke
+0x18dbb0e30  __TEXT,__text  ___54-[LNEmbeddedApplicationConnection connectWithOptions:]_block_invoke
+0x18dbb0ec0  __TEXT,__text  -[LNConnectionOptions newConnectionAction]
+0x18dbb0f18  __TEXT,__text  -[LNConnectionOperation initWithIdentifier:priority:queue:activity:]
+0x18dbb109c  __TEXT,__text  ___97-[LNEmbeddedApplicationConnection openApplicationWithOptions:connectionAction:completionHandler:]_block_invoke_3
+0x18dbb1448  __TEXT,__text  +[LNConnectionAction supportsBSXPCSecureCoding]
+0x18dbb1450  __TEXT,__text  ___24-[LNWatchdogTimer reset]_block_invoke
+0x18dbb1458  __TEXT,__text  -[LNConnectionAction initWithBSXPCCoder:]
+0x18dbb14ec  __TEXT,__text  -[LNConnection setAuditToken:]
+0x18dbb14f8  __TEXT,__text  -[LNConnectionActionResponse initWithXPCListenerEndpoint:auditToken:]
+0x18dbb1580  __TEXT,__text  -[LNConnectionOperation activity]
+0x18dbb15dc  __TEXT,__text  ___81-[LNOpenApplicationConnectionOperation initWithPriority:queue:completionHandler:]_block_invoke
+0x18dbb1614  __TEXT,__text  -[LNConnectionOperation start]
+0x18dbb16f4  __TEXT,__text  -[LNConnectionOperation timeout]
+0x18dbb16fc  __TEXT,__text  ___24-[LNWatchdogTimer start]_block_invoke
+0x18dbb1704  __TEXT,__text  -[LNConnectionAction initWithIdentifier:]
+0x18dbb17d8  __TEXT,__text  -[LNConnectionAction .cxx_destruct]
+0x18dbb17e4  __TEXT,__text  -[NSXPCInterface(Entity) ln_updateWithEntityInterface]
+0x18dbb1bd4  __TEXT,__text  -[NSXPCInterface(Enum) ln_updateWithEnumInterface]
+0x18dbb1cec  __TEXT,__text  +[LNConfigurableQueryRequest xpcClasses]
+0x18dbb1e40  __TEXT,__text  +[LNConfigurableQueryRequest queryTypes]
+0x18dbb1f48  __TEXT,__text  +[LNConfigurableQueryRequest targetTypes]
+0x18dbb3bf8  __TEXT,__text  -[LNConnectionActionResponse description]
+0x18dbb3c80  __TEXT,__text  -[LNOpenApplicationConnectionOperation finishWithActionResponse:error:]
+0x18dbb3d38  __TEXT,__text  ___122-[LNEmbeddedApplicationConnection linkConnectionActionWithOpenApplicationIdentifier:connectionAction:connectionOperation:]_block_invoke
+0x18dbb3e44  __TEXT,__text  -[LNConnectionActionResponse listenerEndpoint]
+0x18dbb3e4c  __TEXT,__text  -[LNConnectionOperation finishWithError:]
+0x18dbb3fa0  __TEXT,__text  -[LNOpenApplicationConnectionOperation .cxx_destruct]
+0x18dbb3fb4  __TEXT,__text  ___97-[LNEmbeddedApplicationConnection openApplicationWithOptions:connectionAction:completionHandler:]_block_invoke_2
+0x18dbb3fcc  __TEXT,__text  ___97-[LNEmbeddedApplicationConnection openApplicationWithOptions:connectionAction:completionHandler:]_block_invoke
+0x18dbb4194  __TEXT,__text  ___54-[LNEmbeddedApplicationConnection connectWithOptions:]_block_invoke_2
+0x18dbb4238  __TEXT,__text  -[LNConnection connectUsingListenerEndpoint:auditToken:]
+0x18dbb450c  __TEXT,__text  -[LNLoggingProxy value]
+0x18dbb4534  __TEXT,__text  -[LNBasePhraseTemplateSubstitution parameterSubstitutions]
+0x18dbb453c  __TEXT,__text  -[LNWatchdogTimer _start]
+0x18dbb45dc  __TEXT,__text  +[LNStageContextRequest xpcClasses]
+0x18dbb4648  __TEXT,__text  +[LNStageContextResult xpcClasses]
+0x18dbb46cc  __TEXT,__text  -[LNLoggingProxy initWithValue:]
+0x18dbb4704  __TEXT,__text  -[LNConnectionContext initWithUserIdentity:effectiveBundleIdentifier:]
+0x18dbb47a0  __TEXT,__text  -[LNEmbeddedApplicationConnection connectWithOptions:]
+0x18dbb4938  __TEXT,__text  -[LNEmbeddedApplicationConnectionOptions(OneShot) oneShotActionForSpringBoardOnly]
+0x18dbb494c  __TEXT,__text  -[LNEmbeddedApplicationConnectionOptions isCameraCaptureAction]
+0x18dbb4960  __TEXT,__text  -[LNEmbeddedApplicationConnectionOptions allowsForegroundAppLaunchWhileInCarPlay]
+0x18dbb4974  __TEXT,__text  -[LNConnectionOptions initiatesAudioSession]
+0x18dbb497c  __TEXT,__text  -[LNEmbeddedApplicationConnectionOptions actionSource]
+0x18dbb4990  __TEXT,__text  -[LNEmbeddedApplicationConnectionOptions assistantDismissalPolicy]
+0x18dbb49a4  __TEXT,__text  -[LNConnection processInstanceIdentifier]
+0x18dbb49ac  __TEXT,__text  -[LNEmbeddedApplicationConnection enqueueOpenApplicationOperation:]
+0x18dbb4ac0  __TEXT,__text  -[LNConnection setCurrentOptions:]
+0x18dbb4acc  __TEXT,__text  -[LNEmbeddedApplicationConnectionOptions newConnectionAction]
+0x18dbb4b9c  __TEXT,__text  -[LNEmbeddedApplicationConnection openApplicationWithOptions:connectionAction:completionHandler:]
+0x18dbb5154  __TEXT,__text  -[LNEmbeddedApplicationConnection preflightManager]
+0x18dbb5168  __TEXT,__text  -[LNEmbeddedApplicationConnection linkConnectionActionWithOpenApplicationIdentifier:connectionAction:connectionOperation:]
+0x18dbb5280  __TEXT,__text  -[LNEmbeddedApplicationConnection openApplicationService]
+0x18dbb5294  __TEXT,__text  -[LNEmbeddedApplicationConnectionOptions description]
+0x18dbb5480  __TEXT,__text  -[LNEmbeddedApplicationConnectionOptions sceneless]
+0x18dbb5494  __TEXT,__text  -[LNEmbeddedApplicationConnectionOptions activateSuspended]
+0x18dbb54e4  __TEXT,__text  -[LNEmbeddedApplicationConnectionOptions openApplicationPriority]
+0x18dbb54f8  __TEXT,__text  -[LNOpenApplicationConnectionOperation initWithPriority:queue:completionHandler:]
+0x18dbb561c  __TEXT,__text  -[LNEmbeddedApplicationConnectionOptions actionSourceOverride]
+0x18dbb5630  __TEXT,__text  -[LNConnection enqueueConnectionOperation:]
+0x18dbb575c  __TEXT,__text  -[LNConnection extendIdleTimeout]
+0x18dbb57dc  __TEXT,__text  -[LNWatchdogTimer reset]
+0x18dbb5850  __TEXT,__text  -[LNWatchdogTimer _reset]
+0x18dbb5884  __TEXT,__text  -[LNWatchdogTimer _stop]
+0x18dbb5914  __TEXT,__text  -[LNConnectionOperation setRequestTimer]
+0x18dbb5a64  __TEXT,__text  -[LNConnection logPrefix]
+0x18dbb5ac4  __TEXT,__text  ___56-[LNConnection connectUsingListenerEndpoint:auditToken:]_block_invoke
+0x18dbb5b94  __TEXT,__text  -[LNConnection setConnected]
+0x18dbb5cf8  __TEXT,__text  -[LNConnection completeWithError:]
+0x18dbb6034  __TEXT,__text  -[LNConnection getConnectionInterfaceCompletionHandler]
+0x18dbb603c  __TEXT,__text  -[LNConnection connectionInterface]
+0x18dbb612c  __TEXT,__text  ___107-[LNConnection(FetchAppShortcutParameters) fetchAppShortcutParametersForMangledName:withCompletionHandler:]_block_invoke
+0x18dbb61e4  __TEXT,__text  -[LNFetchAppShortcutParametersConnectionOperation initWithConnectionInterface:queue:appShortcutProviderMangledName:completionHandler:]
+0x18dbb6390  __TEXT,__text  -[LNInterfaceConnectionOperation initWithIdentifier:connectionInterface:priority:queue:activity:]
+0x18dbb6508  __TEXT,__text  ___134-[LNFetchAppShortcutParametersConnectionOperation initWithConnectionInterface:queue:appShortcutProviderMangledName:completionHandler:]_block_invoke
+0x18dbb6540  __TEXT,__text  -[LNFetchAppShortcutParametersConnectionOperation start]
+0x18dbb6650  __TEXT,__text  -[LNConnectionOperation queue]
+0x18dbb6658  __TEXT,__text  -[LNConnectionOperation description]
+0x18dbb66e0  __TEXT,__text  -[LNConnectionOperation connection]
+0x18dbb6744  __TEXT,__text  -[LNFetchAppShortcutParametersConnectionOperation appShortcutProviderMangledName]
+0x18dbb6758  __TEXT,__text  ___34-[LNConnection completeWithError:]_block_invoke
+0x18dbb6838  __TEXT,__text  -[LNConnectionAction identifier]
+0x18dbb6840  __TEXT,__text  -[LNConnection queue]
+0x18dbb6848  __TEXT,__text  +[LNConnectionActionResponse supportsBSXPCSecureCoding]
+0x18dbb6850  __TEXT,__text  -[LNConnectionActionResponse auditToken]
+0x18dbb685c  __TEXT,__text  -[LNConnectionActionResponse .cxx_destruct]
+0x18dbb6868  __TEXT,__text  -[LNConnectionContext .cxx_destruct]
+0x18dbb6ab8  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x18dbb6ab8  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x18dbb6ab8  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x18dbb6ab8  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x18dbb6ab8  __TEXT,__text  _OUTLINED_FUNCTION_18
+0x18dbb6ac4  __TEXT,__text  _OUTLINED_FUNCTION_29
+0x18dbb6ac4  __TEXT,__text  _OUTLINED_FUNCTION_29
+0x18dbb6ac4  __TEXT,__text  _OUTLINED_FUNCTION_29
+0x18dbb6ac4  __TEXT,__text  _OUTLINED_FUNCTION_29
+0x18dbb6ad0  __TEXT,__text  _OUTLINED_FUNCTION_50
+0x18dbb6ad0  __TEXT,__text  _OUTLINED_FUNCTION_50
+0x18dbb6ad0  __TEXT,__text  _OUTLINED_FUNCTION_50
+0x18dbb6ae0  __TEXT,__text  _OUTLINED_FUNCTION_29
+0x18dbb6b04  __TEXT,__text  _OUTLINED_FUNCTION_29
+0x18dbb6b20  __TEXT,__text  _OUTLINED_FUNCTION_29
+0x18dbb6b30  __TEXT,__text  _OUTLINED_FUNCTION_29
+0x18dbb6b40  __TEXT,__text  _OUTLINED_FUNCTION_29
+0x18dbb6b58  __TEXT,__text  _OUTLINED_FUNCTION_29
+0x18dbb6b64  __TEXT,__text  _OUTLINED_FUNCTION_29
+0x18dbb6b70  __TEXT,__text  _OUTLINED_FUNCTION_34
+0x18dbb6b90  __TEXT,__text  _OUTLINED_FUNCTION_37
+0x18dbb6b90  __TEXT,__text  _OUTLINED_FUNCTION_37
+0x18dbb6b90  __TEXT,__text  _OUTLINED_FUNCTION_37
+0x18dbb6b90  __TEXT,__text  _OUTLINED_FUNCTION_37
+0x18dbb6b90  __TEXT,__text  _OUTLINED_FUNCTION_37
+0x18dbb6b90  __TEXT,__text  _OUTLINED_FUNCTION_37
+0x18dbb6b90  __TEXT,__text  _OUTLINED_FUNCTION_37
+0x18dbb6b90  __TEXT,__text  _OUTLINED_FUNCTION_37
+0x18dbb6b90  __TEXT,__text  _OUTLINED_FUNCTION_37
+0x18dbb6b90  __TEXT,__text  _OUTLINED_FUNCTION_37
+0x18dbb6b9c  __TEXT,__text  _OUTLINED_FUNCTION_44
+0x18dbb6b9c  __TEXT,__text  _OUTLINED_FUNCTION_44
+0x18dbb6b9c  __TEXT,__text  _OUTLINED_FUNCTION_44
+0x18dbb6b9c  __TEXT,__text  _OUTLINED_FUNCTION_44
+0x18dbb6b9c  __TEXT,__text  _OUTLINED_FUNCTION_44
+0x18dbb6bac  __TEXT,__text  _OUTLINED_FUNCTION_34
+0x18dbb6bcc  __TEXT,__text  _OUTLINED_FUNCTION_34
+0x18dbb6be4  __TEXT,__text  _OUTLINED_FUNCTION_34
+0x18dbb6bf0  __TEXT,__text  _OUTLINED_FUNCTION_34
+0x18dbb6c04  __TEXT,__text  _OUTLINED_FUNCTION_34
+0x18dbb6c10  __TEXT,__text  _OUTLINED_FUNCTION_34
+0x18dbb6c2c  __TEXT,__text  _OUTLINED_FUNCTION_34
+0x18dbb6de8  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x18dbb6e18  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x18dbb6e18  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x18dbb6e18  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x18dbb6e18  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x18dbb6e18  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x18dbb6e18  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x18dbb6e18  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x18dbb6e18  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x18dbb6e18  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x18dbb6e18  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x18dbb6e24  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x18dbb6e34  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x18dbb6e34  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x18dbb6e44  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x18dbb6e54  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x18dbb6e68  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x18dbb6e80  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x18dbb6e80  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x18dbb6e80  __TEXT,__text  _OUTLINED_FUNCTION_36
+0x18dbb6e8c  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x18dbb6e98  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb6e98  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb6eac  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x18dbb6ebc  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x18dbb6ecc  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x18dbb6ef0  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x18dbb6ef0  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x18dbb6f0c  __TEXT,__text  _OUTLINED_FUNCTION_19
+0x18dbb6f20  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb6f34  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6f34  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6f34  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6f34  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6f34  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6f34  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6f34  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6f34  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6f34  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6f34  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6f34  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6f34  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6f34  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6f34  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6f34  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6f48  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x18dbb6f48  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x18dbb6f48  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x18dbb6f48  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x18dbb6f48  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x18dbb6f48  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x18dbb6f48  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x18dbb6f48  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x18dbb6f48  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x18dbb6f48  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x18dbb6f48  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x18dbb6f48  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x18dbb6f48  __TEXT,__text  _OUTLINED_FUNCTION_20
+0x18dbb6f54  __TEXT,__text  _OUTLINED_FUNCTION_72
+0x18dbb6f54  __TEXT,__text  _OUTLINED_FUNCTION_72
+0x18dbb6f54  __TEXT,__text  _OUTLINED_FUNCTION_72
+0x18dbb6f54  __TEXT,__text  _OUTLINED_FUNCTION_72
+0x18dbb6f54  __TEXT,__text  _OUTLINED_FUNCTION_72
+0x18dbb6f54  __TEXT,__text  _OUTLINED_FUNCTION_72
+0x18dbb6f60  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb6f70  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb6f7c  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb6f88  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb6f94  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb6fa4  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb6fb4  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6fb4  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6fb4  __TEXT,__text  _OUTLINED_FUNCTION_12
+0x18dbb6fc4  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb6fd0  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb6fe4  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb6ff0  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb6ff0  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb7000  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb7020  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb703c  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb703c  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb704c  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb7058  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb7078  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb7090  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb7090  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb709c  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb70ac  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb70d0  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb70ec  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb70fc  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb7110  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x18dbb7130  __TEXT,__text  ___swift_getEnumTagSinglePayload
+0x18dbb7150  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb7168  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x18dbb7168  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x18dbb7168  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x18dbb7168  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x18dbb7168  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x18dbb7168  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x18dbb7168  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x18dbb7168  __TEXT,__text  _OUTLINED_FUNCTION_16
+0x18dbb7174  __TEXT,__text  _OUTLINED_FUNCTION_45
+0x18dbb7174  __TEXT,__text  _OUTLINED_FUNCTION_45
+0x18dbb7184  __TEXT,__text  _OUTLINED_FUNCTION_62
+0x18dbb7184  __TEXT,__text  _OUTLINED_FUNCTION_62
+0x18dbb7184  __TEXT,__text  _OUTLINED_FUNCTION_62
+0x18dbb719c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb71b0  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb71bc  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb71cc  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb71e8  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb720c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb7230  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb723c  __TEXT,__text  _OUTLINED_FUNCTION_38
+0x18dbb723c  __TEXT,__text  _OUTLINED_FUNCTION_38
+0x18dbb723c  __TEXT,__text  _OUTLINED_FUNCTION_38
+0x18dbb723c  __TEXT,__text  _OUTLINED_FUNCTION_38
+0x18dbb7248  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb7254  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb7270  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x18dbb7270  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x18dbb7270  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x18dbb7270  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x18dbb7280  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb72b4  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb72d0  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb72e0  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb72ec  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb72fc  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb7310  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb732c  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb7350  __TEXT,__text  _OUTLINED_FUNCTION_6
+0x18dbb7368  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7378  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7394  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x18dbb7394  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x18dbb7394  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x18dbb7394  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x18dbb7394  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x18dbb73a8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb73c8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb73dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb740c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb741c  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x18dbb741c  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x18dbb741c  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x18dbb7434  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7448  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7454  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7454  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7460  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7474  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7488  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7490  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb749c  __TEXT,__text  _OUTLINED_FUNCTION_27
+0x18dbb749c  __TEXT,__text  _OUTLINED_FUNCTION_27
+0x18dbb749c  __TEXT,__text  _OUTLINED_FUNCTION_27
+0x18dbb74b4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb74c0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb74c0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb74d8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb74d8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb74f4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7504  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7534  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7558  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7564  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7574  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7584  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb75a8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb75c8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb75e0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7618  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7630  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7640  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7650  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7674  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7688  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb769c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb76bc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb76d8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb76f0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb7720  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18dbb774c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7758  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7774  __TEXT,__text  _OUTLINED_FUNCTION_28
+0x18dbb7774  __TEXT,__text  _OUTLINED_FUNCTION_28
+0x18dbb7774  __TEXT,__text  _OUTLINED_FUNCTION_28
+0x18dbb7774  __TEXT,__text  _OUTLINED_FUNCTION_28
+0x18dbb7774  __TEXT,__text  _OUTLINED_FUNCTION_28
+0x18dbb7784  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb77a4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb77bc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb77d4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb77e0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb77ec  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb77fc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb780c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7824  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7844  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb786c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7880  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb788c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb78b0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb78e4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7908  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7924  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb795c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7974  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7988  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7994  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb79ac  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb79bc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb79e4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb79fc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7a08  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7a24  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7a4c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7a78  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7aa8  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7abc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7ad4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x18dbb7b08  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7b08  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7b08  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7b08  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7b18  __TEXT,__text  _OUTLINED_FUNCTION_25
+0x18dbb7b18  __TEXT,__text  _OUTLINED_FUNCTION_25
+0x18dbb7b24  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7b38  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7b4c  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7b64  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7b74  __TEXT,__text  _OUTLINED_FUNCTION_17
+0x18dbb7b74  __TEXT,__text  _OUTLINED_FUNCTION_17
+0x18dbb7b88  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7b98  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7bb0  __TEXT,__text  _OUTLINED_FUNCTION_58
+0x18dbb7bb0  __TEXT,__text  _OUTLINED_FUNCTION_58
+0x18dbb7bb0  __TEXT,__text  _OUTLINED_FUNCTION_58
+0x18dbb7bc8  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7bd4  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7be8  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7c00  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7c14  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7c24  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7c34  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7c50  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7c5c  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7c6c  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7c98  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7cac  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x18dbb7cc8  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7cd0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7ce4  __TEXT,__text  _OUTLINED_FUNCTION_35
+0x18dbb7ce4  __TEXT,__text  _OUTLINED_FUNCTION_35
+0x18dbb7ce4  __TEXT,__text  _OUTLINED_FUNCTION_35
+0x18dbb7d04  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7d18  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7d38  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7d44  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7d44  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7d44  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7d44  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7d44  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7d44  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7d54  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7d6c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7d6c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7d78  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7dac  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7dc0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7dc0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7dc0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7dc0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7dd0  __TEXT,__text  _OUTLINED_FUNCTION_21
+0x18dbb7dd0  __TEXT,__text  _OUTLINED_FUNCTION_21
+0x18dbb7de4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7df4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7e0c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7e20  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7e54  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7ea0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7eb0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7ec4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7edc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7ef8  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7f04  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7f14  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7f20  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7f48  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7f5c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7f68  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7f8c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7fa0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7fbc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7fd4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x18dbb7ffc  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb7ffc  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb7ffc  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb7ffc  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb8010  __TEXT,__text  _OUTLINED_FUNCTION_31
+0x18dbb8010  __TEXT,__text  _OUTLINED_FUNCTION_31
+0x18dbb8020  __TEXT,__text  _OUTLINED_FUNCTION_77
+0x18dbb8020  __TEXT,__text  _OUTLINED_FUNCTION_77
+0x18dbb8034  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb8048  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb8054  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb8060  __TEXT,__text  _OUTLINED_FUNCTION_17
+0x18dbb8060  __TEXT,__text  _OUTLINED_FUNCTION_17
+0x18dbb8070  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb807c  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x18dbb807c  __TEXT,__text  _OUTLINED_FUNCTION_23
+0x18dbb808c  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb8098  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb80b0  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb80c4  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb80e0  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb80f8  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb8110  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb8124  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb8134  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb8144  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb8150  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb8160  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb8174  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb8194  __TEXT,__text  _OUTLINED_FUNCTION_8
+0x18dbb81a8  __TEXT,__text  -[LNBasePhraseTemplateSubstitution initWithBasePhraseTemplate:parameterSubstitutions:]
+0x18dbb860c  __TEXT,__text  ___56-[LNFetchAppShortcutParametersConnectionOperation start]_block_invoke
+0x18dbb86ec  __TEXT,__text  -[LNFetchAppShortcutParametersConnectionOperation setAppShortcutSubstitutions:]
+0x18dbb8700  __TEXT,__text  -[LNFetchAppShortcutParametersConnectionOperation finishWithError:]
+0x18dbb882c  __TEXT,__text  -[LNConnectionOperation validatingResult:error:]
+0x18dbb889c  __TEXT,__text  -[LNFetchAppShortcutParametersConnectionOperation spans]
+0x18dbb88b0  __TEXT,__text  ___25-[LNWatchdogTimer cancel]_block_invoke
+0x18dbb88b8  __TEXT,__text  -[LNFetchAppShortcutParametersConnectionOperation .cxx_destruct]
+0x18dbb893c  __TEXT,__text  -[LNInterfaceConnectionOperation .cxx_destruct]
+0x18dbb8950  __TEXT,__text  -[LNConnectionOperation .cxx_destruct]
+0x18dbb89b8  __TEXT,__text  -[LNWatchdogTimer dealloc]
+0x18dbb8a1c  __TEXT,__text  -[LNWatchdogTimer .cxx_destruct]
+0x18dbb8a54  __TEXT,__text  +[LNAvailabilityChecker isInternalInstall]
+0x18dbb8a9c  __TEXT,__text  ___42+[LNAvailabilityChecker isInternalInstall]_block_invoke
+0x18dbb8ac4  __TEXT,__text  -[LNConnectionOperation priority]
+0x18dbb8acc  __TEXT,__text  -[LNInterfaceConnectionOperation connectionInterface]
+0x18dbb8ae0  __TEXT,__text  -[LNTranscriptPrivilegedProvider transcriptPublisherWithStreamName:fromDate:toDate:maxEvents:reversed:error:]
+0x18dbb8dd0  __TEXT,__text  -[LNTranscriptProvider connection]
+0x18dbb8ee0  __TEXT,__text  -[LNTranscriptProvider queue]
+0x18dbb8ee8  __TEXT,__text  ___LNTranscriptXPCPrivilegedInterface_block_invoke
+0x18dbb9198  __TEXT,__text  -[LNTranscriptActionRecord initWithCoder:]
+0x18dbb986c  __TEXT,__text  -[LNActionOutput initWithCoder:]
+0x18dbb9bfc  __TEXT,__text  -[LNActionOutput initWithIdentifier:dialog:viewSnippet:snippetAction:attribution:value:showOutputAction:showOutputActionHint:showOutputActionOptions:deferred:nextAction:suggestedFollowUpActions:activityIdentifier:confirmationActionName:showPrompt:confirmationConditions:undoContext:]
+0x18dbb9e78  __TEXT,__text  -[LNTranscriptActionRecord initWithBundleIdentifier:source:clientLabel:executionUUID:executionDate:originalAction:resolvedAction:actionOutput:predictions:policy:]
+0x18dbba1a0  __TEXT,__text  -[LNActionOutput nextAction]
+0x18dbba1a8  __TEXT,__text  -[LNTranscriptActionRecord originalAction]
+0x18dbba1ec  __TEXT,__text  -[LNTranscriptActionRecord duplicateActionData]
+0x18dbba1f4  __TEXT,__text  -[LNTranscriptActionRecord predictions]
+0x18dbba1fc  __TEXT,__text  +[LNFeatureFlags isAppMetadataViaXPCEnabled]
+0x18dbba228  __TEXT,__text  +[LNConnection invalidateAllConnections]
+0x18dbba264  __TEXT,__text  ___37+[LNConnectionManager sharedInstance]_block_invoke
+0x18dbba294  __TEXT,__text  -[LNConnectionManager init]
+0x18dbba36c  __TEXT,__text  -[LNConnectionManager invalidateAllConnections]
+0x18dbba4d8  __TEXT,__text  +[LNSpotlightAppEntityMapper tagCSSearchableItem:entityInstanceIdentifier:typeIdentifier:displayTitle:displaySubtitle:displaySynonyms:typeDisplayName:typeDisplaySynonyms:propertyDictionary:priority:schemaIdentifier:]
+0x18dbba508  __TEXT,__text  +[LNFeatureFlags isActionTranscriptEnabled]
+0x18dbba51c  __TEXT,__text  -[LNDaemonApplicationIdentifierRequest initWithIdentifier:bundleIdentifier:frameworkBundles:]
+0x18dbba524  __TEXT,__text  -[LNDaemonApplicationRequest initWithBundleIdentifier:frameworkBundles:]
+0x18dbba628  __TEXT,__text  -[LNDaemonApplicationIdentifierRequest encodeWithCoder:]
+0x18dbba6cc  __TEXT,__text  -[LNDaemonApplicationRequest encodeWithCoder:]
+0x18dbba75c  __TEXT,__text  -[LNViewAnnotations .cxx_destruct]
+0x18dbba794  __TEXT,__text  +[LNDaemonApplicationIdentifierRequest supportsSecureCoding]
+0x18dbba79c  __TEXT,__text  -[LNDaemonApplicationIdentifierRequest initWithCoder:]
+0x18dbba8e4  __TEXT,__text  -[LNDaemonApplicationRequest bundleIdentifier]
+0x18dbba8ec  __TEXT,__text  -[LNDaemonApplicationRequest frameworkBundles]
+0x18dbba8f4  __TEXT,__text  -[LNDaemonApplicationIdentifierRequest identifier]
+0x18dbba8fc  __TEXT,__text  -[LNDaemonApplicationIdentifierRequest .cxx_destruct]
+0x18dbba908  __TEXT,__text  -[LNDaemonApplicationRequest .cxx_destruct]
+0x18dbba940  __TEXT,__text  -[LNAutoShortcutsProvider dealloc]
+0x18dbba9d0  __TEXT,__text  -[LNAutoShortcutsProvider .cxx_destruct]
+0x18dbba9dc  __TEXT,__text  -[LNSpotlightCascadeTranslator isAllowedClientBundleIdentifier:]
+0x18dbbaa04  __TEXT,__text  +[LNSysCtlProvider runningProcessIDs]
+0x18dbbab98  __TEXT,__text  +[LNSysCtlProvider bootUUID]
+0x18dbbabe0  __TEXT,__text  ___76-[LNWatchdogTimer initWithTimeoutInterval:onQueue:singleUse:timeoutHandler:]_block_invoke
+0x18dbbac44  __TEXT,__text  -[LNWatchdogTimer _cancel]
+0x18dbbac98  __TEXT,__text  ___28-[LNConnection setIdleTimer]_block_invoke_2
+0x18dbbadd4  __TEXT,__text  ___31-[LNConnection closeWithError:]_block_invoke
+0x18dbbb1f0  __TEXT,__text  -[LNConnectionManager connection:didCloseWithError:]
+0x18dbbb2d8  __TEXT,__text  ___52-[LNConnectionManager connection:didCloseWithError:]_block_invoke
+0x18dbbb2e4  __TEXT,__text  ___33-[LNConnection setXPCConnection:]_block_invoke
+0x18dbbb4f8  __TEXT,__text  -[LNConnection xpcConnection]
+0x18dbbb500  __TEXT,__text  -[LNConnection setXPCConnection:]
+0x18dbbb6ec  __TEXT,__text  -[LNConnection activity]
+0x18dbbb6f4  __TEXT,__text  -[LNConnection setState:]
+0x18dbbbc20  __TEXT,__text  -[LNConnection currentConnectionOperations]
+0x18dbbbc7c  __TEXT,__text  -[LNConnection connectionOperations]
+0x18dbbbcb8  __TEXT,__text  -[LNTranscriptActionRecord executionUUID]
+0x18dbbbcc0  __TEXT,__text  -[LNTranscriptActionRecord encodeWithCoder:]
+0x18dbbbecc  __TEXT,__text  -[LNTranscriptActionRecord bundleIdentifier]
+0x18dbbbed4  __TEXT,__text  -[LNTranscriptActionRecord source]
+0x18dbbbedc  __TEXT,__text  -[LNTranscriptActionRecord clientLabel]
+0x18dbbbee4  __TEXT,__text  +[LNTranscriptProvider shared]
+0x18dbbbf2c  __TEXT,__text  ___LNTranscriptXPCInterface_block_invoke
+0x18dbbc134  __TEXT,__text  ___70-[LNTranscriptProvider donateActionRecordData:writeImmediately:reply:]_block_invoke.21
+0x18dbbc280  __TEXT,__text  -[LNTranscriptActionRecord executionDate]
+0x18dbbc288  __TEXT,__text  -[LNTranscriptActionRecord policy]
+0x18dbbc290  __TEXT,__text  -[LNTranscriptProvider donateActionRecordData:writeImmediately:reply:]
+0x18dbbc444  __TEXT,__text  +[LNTranscriptProvider xpcInterface]
+0x18dbbc448  __TEXT,__text  -[LNTranscriptActionRecord actionOutput]
+0x18dbbe004  __TEXT,__text  -[LNAutoShortcutSubstitution initWithActionIdentifier:basePhraseTemplateSubstitutions:substitutionValuesByIdentifier:]
+0x18dbbe1c8  __TEXT,__text  +[LNAutoShortcutSubstitution supportsSecureCoding]
+0x18dbbe1d0  __TEXT,__text  -[LNAutoShortcutSubstitution initWithCoder:]
+0x18dbbe36c  __TEXT,__text  -[LNAutoShortcutSubstitution encodeWithCoder:]
+0x18dbbe424  __TEXT,__text  -[LNAutoShortcutSubstitution actionIdentifier]
+0x18dbbe42c  __TEXT,__text  -[LNAutoShortcutSubstitution basePhraseTemplateSubstitutions]
+0x18dbbe434  __TEXT,__text  -[LNAutoShortcutSubstitution substitutionValuesByIdentifier]
+0x18dbbe43c  __TEXT,__text  -[LNAutoShortcutSubstitution .cxx_destruct]
+0x18dbbe480  __TEXT,__text  +[LNBasePhraseTemplateSubstitution supportsSecureCoding]
+0x18dbbe488  __TEXT,__text  -[LNBasePhraseTemplateSubstitution initWithCoder:]
+0x18dbbe598  __TEXT,__text  -[LNBasePhraseTemplateSubstitution encodeWithCoder:]
+0x18dbbe628  __TEXT,__text  -[LNBasePhraseTemplateSubstitution basePhraseTemplate]
+0x18dbbe630  __TEXT,__text  -[LNBasePhraseTemplateSubstitution .cxx_destruct]
+0x18dbbe668  __TEXT,__text  -[LNParameterSubstitution initWithParameterIdentifier:substitutionValueIdentifiers:]
+0x18dbbe7b8  __TEXT,__text  +[LNParameterSubstitution supportsSecureCoding]
+0x18dbbe7c0  __TEXT,__text  -[LNParameterSubstitution initWithCoder:]
+0x18dbbe8d0  __TEXT,__text  -[LNParameterSubstitution encodeWithCoder:]
+0x18dbbe960  __TEXT,__text  -[LNParameterSubstitution parameterIdentifier]
+0x18dbbe968  __TEXT,__text  -[LNParameterSubstitution substitutionValueIdentifiers]
+0x18dbbe970  __TEXT,__text  -[LNParameterSubstitution .cxx_destruct]
+0x18dbbe9a8  __TEXT,__text  -[LNSubstitutionValue initWithParameterIdentifier:title:titleKey:value:optionsCollectionTitle:systemImageName:]
+0x18dbbeb84  __TEXT,__text  +[LNSubstitutionValue supportsSecureCoding]
+0x18dbbeb8c  __TEXT,__text  -[LNSubstitutionValue initWithCoder:]
+0x18dbbed2c  __TEXT,__text  -[LNSubstitutionValue encodeWithCoder:]
+0x18dbbee5c  __TEXT,__text  -[LNSubstitutionValue parameterIdentifier]
+0x18dbbee64  __TEXT,__text  -[LNSubstitutionValue titleKey]
+0x18dbbee6c  __TEXT,__text  -[LNSubstitutionValue title]
+0x18dbbee74  __TEXT,__text  -[LNSubstitutionValue value]
+0x18dbbee7c  __TEXT,__text  -[LNSubstitutionValue optionsCollectionTitle]
+0x18dbbee84  __TEXT,__text  -[LNSubstitutionValue systemImageName]
+0x18dbbee8c  __TEXT,__text  -[LNSubstitutionValue .cxx_destruct]
+0x18dbbeef4  __TEXT,__text  -[LNAppShortcutActionData initWithAction:typeMap:]
+0x18dbbf040  __TEXT,__text  +[LNAppShortcutActionData supportsSecureCoding]
+0x18dbbf048  __TEXT,__text  -[LNAppShortcutActionData isEqual:]
+0x18dbbf1c0  __TEXT,__text  -[LNAppShortcutActionData initWithCoder:]
+0x18dbbf268  __TEXT,__text  -[LNAppShortcutActionData encodeWithCoder:]
+0x18dbbf2f8  __TEXT,__text  -[LNAppShortcutActionData action]
+0x18dbbf300  __TEXT,__text  -[LNAppShortcutActionData identifiersByTypeMap]
+0x18dbbf308  __TEXT,__text  -[LNAppShortcutActionData .cxx_destruct]
+0x18dbbf340  __TEXT,__text  -[LNAppShortcutOptionsCollection initWithLocalizedTitle:systemImageName:optionsProviderReference:]
+0x18dbbf468  __TEXT,__text  -[LNAppShortcutOptionsCollection description]
+0x18dbbf524  __TEXT,__text  -[LNAppShortcutOptionsCollection isEqual:]
+0x18dbbf758  __TEXT,__text  -[LNAppShortcutOptionsCollection hash]
+0x18dbbf7dc  __TEXT,__text  -[LNAppShortcutOptionsCollection copyWithZone:]
+0x18dbbf7e0  __TEXT,__text  +[LNAppShortcutOptionsCollection supportsSecureCoding]
+0x18dbbf7e8  __TEXT,__text  -[LNAppShortcutOptionsCollection encodeWithCoder:]
+0x18dbbf8a0  __TEXT,__text  -[LNAppShortcutOptionsCollection initWithCoder:]
+0x18dbbf998  __TEXT,__text  -[LNAppShortcutOptionsCollection localizedTitle]
+0x18dbbf9a0  __TEXT,__text  -[LNAppShortcutOptionsCollection systemImageName]
+0x18dbbf9a8  __TEXT,__text  -[LNAppShortcutOptionsCollection optionsProviderReference]
+0x18dbbf9b0  __TEXT,__text  -[LNAppShortcutParameterPresentation initWithParameterIdentifier:localizedSpecificTitle:optionsCollections:]
+0x18dbbfb28  __TEXT,__text  -[LNAppShortcutParameterPresentation description]
+0x18dbbfbe4  __TEXT,__text  -[LNAppShortcutParameterPresentation isEqual:]
+0x18dbbfe18  __TEXT,__text  -[LNAppShortcutParameterPresentation hash]
+0x18dbbfe9c  __TEXT,__text  -[LNAppShortcutParameterPresentation copyWithZone:]
+0x18dbbfea0  __TEXT,__text  +[LNAppShortcutParameterPresentation supportsSecureCoding]
+0x18dbbfea8  __TEXT,__text  -[LNAppShortcutParameterPresentation encodeWithCoder:]
+0x18dbbff60  __TEXT,__text  -[LNAppShortcutParameterPresentation initWithCoder:]
+0x18dbc0094  __TEXT,__text  -[LNAppShortcutParameterPresentation parameterIdentifier]
+0x18dbc009c  __TEXT,__text  -[LNAppShortcutParameterPresentation localizedSpecificTitle]
+0x18dbc00a4  __TEXT,__text  -[LNAppShortcutParameterPresentation optionsCollections]
+0x18dbc00ac  __TEXT,__text  -[LNAppShortcutParameterPresentation(Deprecated) localizedGenericTitle]
+0x18dbc00b8  __TEXT,__text  -[LNAppShortcutParameterPresentation(Deprecated) initWithParameterIdentifier:localizedSpecificTitle:localizedGenericTitle:optionsCollections:]
+0x18dbc00c0  __TEXT,__text  -[LNAppShortcutSpanData initWithValue:propertyTitle:propertyTitleKey:providerClassName:parameterTypeIdentifier:synonyms:]
+0x18dbc03bc  __TEXT,__text  -[LNAppShortcutSpanData isEqual:]
+0x18dbc07d4  __TEXT,__text  -[LNAppShortcutSpanData hash]
+0x18dbc08b8  __TEXT,__text  -[LNAppShortcutSpanData description]
+0x18dbc08fc  __TEXT,__text  +[LNAppShortcutSpanData supportsSecureCoding]
+0x18dbc0904  __TEXT,__text  -[LNAppShortcutSpanData initWithCoder:]
+0x18dbc0b08  __TEXT,__text  -[LNAppShortcutSpanData encodeWithCoder:]
+0x18dbc0c38  __TEXT,__text  -[LNAppShortcutSpanData value]
+0x18dbc0c40  __TEXT,__text  -[LNAppShortcutSpanData propertyTitle]
+0x18dbc0c48  __TEXT,__text  -[LNAppShortcutSpanData propertyTitleKey]
+0x18dbc0c50  __TEXT,__text  -[LNAppShortcutSpanData providerClassName]
+0x18dbc0c58  __TEXT,__text  -[LNAppShortcutSpanData parameterTypeIdentifier]
+0x18dbc0c60  __TEXT,__text  -[LNAppShortcutSpanData synonyms]
+0x18dbc0c68  __TEXT,__text  -[LNAppShortcutSpanData .cxx_destruct]
+0x18dbc0cd0  __TEXT,__text  -[LNAutoShortcut initWithBundleIdentifier:localeIdentifier:actionIdentifier:orderedPhrases:localizedShortTitle:localizedAutoShortcutDescription:systemImageName:shortcutTileColor:parameterPresentation:]
+0x18dbc0d04  __TEXT,__text  -[LNAutoShortcut systemImage]
+0x18dbc0d24  __TEXT,__text  -[LNAutoShortcut localizedPhrases]
+0x18dbc0ee4  __TEXT,__text  -[LNAutoShortcut localizedPhrasesByBasePhraseTemplate]
+0x18dbc107c  __TEXT,__text  +[LNAutoShortcut supportsSecureCoding]
+0x18dbc1084  __TEXT,__text  -[LNAutoShortcut initWithCoder:]
+0x18dbc1388  __TEXT,__text  -[LNAutoShortcut description]
+0x18dbc14e8  __TEXT,__text  -[LNAutoShortcut localeIdentifier]
+0x18dbc14f0  __TEXT,__text  -[LNAutoShortcut localizedTitle]
+0x18dbc14f8  __TEXT,__text  -[LNAutoShortcut localizedActionDescription]
+0x18dbc1500  __TEXT,__text  -[LNAutoShortcut localizedAutoShortcutDescription]
+0x18dbc1508  __TEXT,__text  -[LNAutoShortcut parameterPresentation]
+0x18dbc1510  __TEXT,__text  -[LNAutoShortcut basePhraseTemplates]
+0x18dbc1518  __TEXT,__text  -[LNAutoShortcut(Deprecated) initWithBundleIdentifier:localeIdentifier:actionIdentifier:orderedPhrases:localizedShortTitle:localizedAutoShortcutDescription:systemImageName:shortcutTileColor:]
+0x18dbc1544  __TEXT,__text  -[LNAutoShortcut(Deprecated) initWithBundleIdentifier:localeIdentifier:actionIdentifier:orderedPhrases:localizedShortTitle:localizedAutoShortcutDescription:systemImageName:]
+0x18dbc1850  __TEXT,__text  -[LNAutoShortcut(Deprecated) initWithBundleIdentifier:actionIdentifier:localizedPhrases:localizedTitle:localizedShortTitle:localizedAutoShortcutDescription:systemImageName:]
+0x18dbc1afc  __TEXT,__text  -[LNAutoShortcut(Deprecated) initWithLocaleIdentifier:localizedApplicationName:basePhraseTemplateSubstitutions:actionIdentifier:phraseTemplates:title:shortTitle:actionDescription:systemImage:]
+0x18dbc1d50  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase initWithLocalizedPhrase:bundleIdentifier:basePhraseTemplate:parameterIdentifier:]
+0x18dbc1d58  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase initWithLocalizedPhrase:bundleIdentifier:basePhraseTemplate:parameterIdentifier:primary:]
+0x18dbc1d64  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase initWithLocalizedPhrase:bundleIdentifier:basePhraseTemplate:parameterIdentifier:primary:signature:]
+0x18dbc1d94  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase initWithCoder:]
+0x18dbc1f8c  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase encodeWithCoder:]
+0x18dbc2100  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase isEqual:]
+0x18dbc25a4  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase hash]
+0x18dbc26bc  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase description]
+0x18dbc27f0  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase localizedPhrase]
+0x18dbc27f8  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase bundleIdentifier]
+0x18dbc2800  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase basePhraseTemplate]
+0x18dbc2808  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase optionsCollectionTitle]
+0x18dbc2810  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase optionsCollectionSystemImageName]
+0x18dbc2818  __TEXT,__text  -[LNAutoShortcutLocalizedPhrase isPrimary]
+0x18dbc2820  __TEXT,__text  +[LNAutoShortcutsProvider sharedInstance]
+0x18dbc2844  __TEXT,__text  -[LNAutoShortcutsProvider init]
+0x18dbc284c  __TEXT,__text  -[LNAutoShortcutsProvider appShortcutBundles:]
+0x18dbc2a54  __TEXT,__text  ___46-[LNAutoShortcutsProvider appShortcutBundles:]_block_invoke
+0x18dbc2b38  __TEXT,__text  ___46-[LNAutoShortcutsProvider appShortcutBundles:]_block_invoke_2
+0x18dbc2b48  __TEXT,__text  ___46-[LNAutoShortcutsProvider appShortcutBundles:]_block_invoke_3
+0x18dbc2bc0  __TEXT,__text  -[LNAutoShortcutsProvider autoShortcutsForBundleIdentifier:localeIdentifier:completion:]
+0x18dbc2cd4  __TEXT,__text  ___88-[LNAutoShortcutsProvider autoShortcutsForBundleIdentifier:localeIdentifier:completion:]_block_invoke_2
+0x18dbc2d78  __TEXT,__text  ___88-[LNAutoShortcutsProvider autoShortcutsForBundleIdentifier:localeIdentifier:completion:]_block_invoke.19
+0x18dbc2e68  __TEXT,__text  -[LNAutoShortcutsProvider classesForDecodingArrayOfAppShortcuts]
+0x18dbc2ecc  __TEXT,__text  -[LNAutoShortcutsProvider autoShortcutsForBundleIdentifier:localeIdentifier:error:]
+0x18dbc3168  __TEXT,__text  ___83-[LNAutoShortcutsProvider autoShortcutsForBundleIdentifier:localeIdentifier:error:]_block_invoke
+0x18dbc3254  __TEXT,__text  ___83-[LNAutoShortcutsProvider autoShortcutsForBundleIdentifier:localeIdentifier:error:]_block_invoke_2
+0x18dbc3264  __TEXT,__text  ___83-[LNAutoShortcutsProvider autoShortcutsForBundleIdentifier:localeIdentifier:error:]_block_invoke_3
+0x18dbc32e0  __TEXT,__text  -[LNAutoShortcutsProvider retrieveActionForLocalizedPhrase:completion:]
+0x18dbc34bc  __TEXT,__text  ___71-[LNAutoShortcutsProvider retrieveActionForLocalizedPhrase:completion:]_block_invoke
+0x18dbc3560  __TEXT,__text  ___71-[LNAutoShortcutsProvider retrieveActionForLocalizedPhrase:completion:]_block_invoke.25
+0x18dbc36d8  __TEXT,__text  ___71-[LNAutoShortcutsProvider retrieveActionForLocalizedPhrase:completion:]_block_invoke_2
+0x18dbc36e8  __TEXT,__text  ___71-[LNAutoShortcutsProvider retrieveActionForLocalizedPhrase:completion:]_block_invoke_3
+0x18dbc36f8  __TEXT,__text  -[LNAutoShortcutsProvider retrieveActionForBundleIdentifier:basePhraseTemplate:actionIdentifier:parameterIdentifier:completion:]
+0x18dbc3958  __TEXT,__text  ___128-[LNAutoShortcutsProvider retrieveActionForBundleIdentifier:basePhraseTemplate:actionIdentifier:parameterIdentifier:completion:]_block_invoke
+0x18dbc39fc  __TEXT,__text  ___128-[LNAutoShortcutsProvider retrieveActionForBundleIdentifier:basePhraseTemplate:actionIdentifier:parameterIdentifier:completion:]_block_invoke.27
+0x18dbc3ab8  __TEXT,__text  ___128-[LNAutoShortcutsProvider retrieveActionForBundleIdentifier:basePhraseTemplate:actionIdentifier:parameterIdentifier:completion:]_block_invoke_2
+0x18dbc3ac8  __TEXT,__text  -[LNAutoShortcutsProvider retrieveActionForBundleIdentifier:appShortcutIdentifier:parameterIdentifier:completion:]
+0x18dbc3cf0  __TEXT,__text  ___114-[LNAutoShortcutsProvider retrieveActionForBundleIdentifier:appShortcutIdentifier:parameterIdentifier:completion:]_block_invoke
+0x18dbc3d94  __TEXT,__text  ___114-[LNAutoShortcutsProvider retrieveActionForBundleIdentifier:appShortcutIdentifier:parameterIdentifier:completion:]_block_invoke.28
+0x18dbc3e44  __TEXT,__text  ___114-[LNAutoShortcutsProvider retrieveActionForBundleIdentifier:appShortcutIdentifier:parameterIdentifier:completion:]_block_invoke_2
+0x18dbc3e54  __TEXT,__text  -[LNAutoShortcutsProvider autoShortcutsForApplicationRecord:localeIdentifier:]
+0x18dbc4088  __TEXT,__text  ___78-[LNAutoShortcutsProvider autoShortcutsForApplicationRecord:localeIdentifier:]_block_invoke
+0x18dbc421c  __TEXT,__text  ___78-[LNAutoShortcutsProvider autoShortcutsForApplicationRecord:localeIdentifier:]_block_invoke_2
+0x18dbc422c  __TEXT,__text  ___78-[LNAutoShortcutsProvider autoShortcutsForApplicationRecord:localeIdentifier:]_block_invoke_3
+0x18dbc42ec  __TEXT,__text  -[LNAutoShortcutsProvider autoShortcutsForLocaleIdentifier:completion:]
+0x18dbc43d8  __TEXT,__text  ___71-[LNAutoShortcutsProvider autoShortcutsForLocaleIdentifier:completion:]_block_invoke
+0x18dbc44ec  __TEXT,__text  ___71-[LNAutoShortcutsProvider autoShortcutsForLocaleIdentifier:completion:]_block_invoke_2
+0x18dbc4590  __TEXT,__text  ___71-[LNAutoShortcutsProvider autoShortcutsForLocaleIdentifier:completion:]_block_invoke.29
+0x18dbc47d8  __TEXT,__text  ___66-[LNAutoShortcutsProvider autoShortcutsForLocaleIdentifier:error:]_block_invoke_3
+0x18dbc4854  __TEXT,__text  -[LNAutoShortcutsProvider propertiesForIdentifiers:error:]
+0x18dbc4a08  __TEXT,__text  ___58-[LNAutoShortcutsProvider propertiesForIdentifiers:error:]_block_invoke
+0x18dbc4af4  __TEXT,__text  ___58-[LNAutoShortcutsProvider propertiesForIdentifiers:error:]_block_invoke_2
+0x18dbc4b04  __TEXT,__text  ___58-[LNAutoShortcutsProvider propertiesForIdentifiers:error:]_block_invoke_3
+0x18dbc4bac  __TEXT,__text  -[LNAppNotificationEvent initWithEventType:bundleIdentifier:entityType:instanceIdentifiers:]
+0x18dbc4d40  __TEXT,__text  +[LNAppNotificationEvent eventWithType:bundleIdentifier:entityType:instanceIdentifiers:]
+0x18dbc4dcc  __TEXT,__text  +[LNAppNotificationEvent supportsSecureCoding]
+0x18dbc4dd4  __TEXT,__text  -[LNAppNotificationEvent encodeWithCoder:]
+0x18dbc4ea0  __TEXT,__text  -[LNAppNotificationEvent initWithCoder:]
+0x18dbc4fec  __TEXT,__text  -[LNAppNotificationEvent copyWithZone:]
+0x18dbc4ff0  __TEXT,__text  -[LNAppNotificationEvent description]
+0x18dbc50f0  __TEXT,__text  -[LNAppNotificationEvent hash]
+0x18dbc5180  __TEXT,__text  -[LNAppNotificationEvent isEqual:]
+0x18dbc53b8  __TEXT,__text  -[LNAppNotificationEvent bundleIdentifier]
+0x18dbc53c0  __TEXT,__text  -[LNAppNotificationEvent entityType]
+0x18dbc53c8  __TEXT,__text  -[LNAppNotificationEvent eventType]
+0x18dbc53d0  __TEXT,__text  -[LNAppNotificationEvent instanceIdentifiers]
+0x18dbc53d8  __TEXT,__text  -[LNAppNotificationEvent .cxx_destruct]
+0x18dbc5510  __TEXT,__text  -[LNAppNotificationEventRegistrationProvider init]
+0x18dbc55a8  __TEXT,__text  -[LNAppNotificationEventRegistrationProvider dealloc]
+0x18dbc55f4  __TEXT,__text  -[LNAppNotificationEventRegistrationProvider registerForAppNotificationEventsOfBundleIdentifier:entityType:completion:]
+0x18dbc5708  __TEXT,__text  ___119-[LNAppNotificationEventRegistrationProvider registerForAppNotificationEventsOfBundleIdentifier:entityType:completion:]_block_invoke
+0x18dbc57b4  __TEXT,__text  ___119-[LNAppNotificationEventRegistrationProvider registerForAppNotificationEventsOfBundleIdentifier:entityType:completion:]_block_invoke_2
+0x18dbc57c4  __TEXT,__text  -[LNAppNotificationEventRegistrationProvider unregisterForAppNotificationEventsOfBundleIdentifier:entityType:completion:]
+0x18dbc58d8  __TEXT,__text  ___121-[LNAppNotificationEventRegistrationProvider unregisterForAppNotificationEventsOfBundleIdentifier:entityType:completion:]_block_invoke
+0x18dbc5984  __TEXT,__text  ___121-[LNAppNotificationEventRegistrationProvider unregisterForAppNotificationEventsOfBundleIdentifier:entityType:completion:]_block_invoke_2
+0x18dbc5994  __TEXT,__text  -[LNAppNotificationEventRegistrationProvider connection]
+0x18dbc599c  __TEXT,__text  -[LNAppNotificationEventRegistrationProvider .cxx_destruct]
+0x18dbc59a8  __TEXT,__text  -[LNArrayValueType(CATSupport) cat_dialogType]
+0x18dbc5a08  __TEXT,__text  -[LNArrayValueType(CATSupport) cat_value:]
+0x18dbc5ae8  __TEXT,__text  ___42-[LNArrayValueType(CATSupport) cat_value:]_block_invoke
+0x18dbc5b48  __TEXT,__text  -[LNArrayValueType(CATSupport) cat_keyPath]
+0x18dbc5b88  __TEXT,__text  -[LNBasicDialog(CATSupport) getResultWithCompletionHandler:]
+0x18dbc5e14  __TEXT,__text  ___60-[LNBasicDialog(CATSupport) getResultWithCompletionHandler:]_block_invoke
+0x18dbc5e24  __TEXT,__text  -[LNBasicDialog(CATSupport) localeXML]
+0x18dbc5f0c  __TEXT,__text  -[LNBasicDialog(CATSupport) parametersXML]
+0x18dbc5f8c  __TEXT,__text  -[LNBasicDialog(CATSupport) parameterDefinitions]
+0x18dbc6028  __TEXT,__text  -[LNBasicDialog(CATSupport) parameters]
+0x18dbc60c4  __TEXT,__text  -[LNCATDialog(CATSupport) getResultWithCompletionHandler:]
+0x18dbc6380  __TEXT,__text  ___58-[LNCATDialog(CATSupport) getResultWithCompletionHandler:]_block_invoke
+0x18dbc6400  __TEXT,__text  ___58-[LNCATDialog(CATSupport) getResultWithCompletionHandler:]_block_invoke_2
+0x18dbc6484  __TEXT,__text  -[LNDeferredLocalizedString(CATSupport) localizedKeyWithParameters]
+0x18dbc664c  __TEXT,__text  ___67-[LNDeferredLocalizedString(CATSupport) localizedKeyWithParameters]_block_invoke
+0x18dbc6690  __TEXT,__text  ___67-[LNDeferredLocalizedString(CATSupport) localizedKeyWithParameters]_block_invoke_2
+0x18dbc6784  __TEXT,__text  -[LNDeferredLocalizedString(CATSupport) parameterDefinitions]
+0x18dbc686c  __TEXT,__text  ___61-[LNDeferredLocalizedString(CATSupport) parameterDefinitions]_block_invoke
+0x18dbc68b8  __TEXT,__text  -[LNDeferredLocalizedString(CATSupport) parametersForCAT]
+0x18dbc6970  __TEXT,__text  ___57-[LNDeferredLocalizedString(CATSupport) parametersForCAT]_block_invoke
+0x18dbc69fc  __TEXT,__text  -[LNDialog(CATSupport) defaultCATOptions]
+0x18dbc6b2c  __TEXT,__text  -[LNDialog(CATSupport) getResultWithCompletionHandler:]
+0x18dbc6b60  __TEXT,__text  ___getCATDisableLoggingSymbolLoc_block_invoke
+0x18dbc6ce4  __TEXT,__text  -[LNEntityValueType(CATSupport) cat_dialogType]
+0x18dbc6cf0  __TEXT,__text  -[LNEntityValueType(CATSupport) cat_value:]
+0x18dbc6ec8  __TEXT,__text  -[LNEntityValueType(CATSupport) cat_keyPath]
+0x18dbc6ed0  __TEXT,__text  -[LNIntentsValueType(CATSupport) cat_dialogType]
+0x18dbc6f08  __TEXT,__text  -[LNIntentsValueType(CATSupport) cat_value:]
+0x18dbc7344  __TEXT,__text  -[LNIntentsValueType(CATSupport) cat_keyPath]
+0x18dbc7360  __TEXT,__text  -[LNLocalizedStringResourceDialog(CATSupport) getResultWithCompletionHandler:]
+0x18dbc75d4  __TEXT,__text  ___78-[LNLocalizedStringResourceDialog(CATSupport) getResultWithCompletionHandler:]_block_invoke
+0x18dbc75e4  __TEXT,__text  -[LNLocalizedStringResourceDialog(CATSupport) localeXML]
+0x18dbc7724  __TEXT,__text  -[LNLocalizedStringResourceDialog(CATSupport) parametersXML]
+0x18dbc7738  __TEXT,__text  -[LNMeasurementValueType(CATSupport) cat_dialogType]
+0x18dbc7744  __TEXT,__text  -[LNMeasurementValueType(CATSupport) cat_value:]
+0x18dbc77f4  __TEXT,__text  -[LNMeasurementValueType(CATSupport) cat_keyPath]
+0x18dbc77fc  __TEXT,__text  -[LNNLGDialog(CATSupport) getResultWithCompletionHandler:]
+0x18dbc7a70  __TEXT,__text  ___58-[LNNLGDialog(CATSupport) getResultWithCompletionHandler:]_block_invoke
+0x18dbc7a80  __TEXT,__text  -[LNNLGDialog(CATSupport) localeXML]
+0x18dbc7da0  __TEXT,__text  -[LNNLGDialog(CATSupport) parametersXML]
+0x18dbc7db4  __TEXT,__text  -[LNPrimitiveValueType(CATSupport) cat_dialogType]
+0x18dbc7df0  __TEXT,__text  -[LNPrimitiveValueType(CATSupport) cat_value:]
+0x18dbc85e4  __TEXT,__text  -[LNPrimitiveValueType(CATSupport) cat_keyPath]
+0x18dbc861c  __TEXT,__text  -[LNSpeakableStringDialog(CATSupport) getResultWithCompletionHandler:]
+0x18dbc8890  __TEXT,__text  ___70-[LNSpeakableStringDialog(CATSupport) getResultWithCompletionHandler:]_block_invoke
+0x18dbc88a0  __TEXT,__text  -[LNSpeakableStringDialog(CATSupport) localeXML]
+0x18dbc8adc  __TEXT,__text  -[LNSpeakableStringDialog(CATSupport) parametersXML]
+0x18dbc8af0  __TEXT,__text  -[LNValue(CATSupport) cat_parameterName]
+0x18dbc8b28  __TEXT,__text  -[LNValue(CATSupport) cat_definitionXML]
+0x18dbc8bb8  __TEXT,__text  -[LNValue(CATSupport) cat_variableXML]
+0x18dbc8cf4  __TEXT,__text  -[LNValueType(CATSupport) cat_value:]
+0x18dbc8d28  __TEXT,__text  -[LNValueType(CATSupport) cat_keyPath]
+0x18dbc8d30  __TEXT,__text  -[NSString(CATSupport) ln_stringByEscapingForXML]
+0x18dbc8e38  __TEXT,__text  -[NSURL(LNSandboxExtension) ln_sandboxExtendedURLWithAuditToken:]
+0x18dbc8ea4  __TEXT,__text  -[NSURL(LNSandboxExtension) ln_securityScopedWrapperWithAuditToken:readonly:error:]
+0x18dbc8f28  __TEXT,__text  -[NSURL(LNSandboxExtension) issueTokenForAuditToken:readonly:error:]
+0x18dbc9130  __TEXT,__text  +[LNContactsKeys contactsEmailAddressesKey]
+0x18dbc9288  __TEXT,__text  +[LNContactsKeys contactsPhoneNumbersKey]
+0x18dbc93e0  __TEXT,__text  +[LNContactsKeys contactsInstantMessageAddressesKey]
+0x18dbc9538  __TEXT,__text  ___getCNContactEmailAddressesKeySymbolLoc_block_invoke
+0x18dbc9588  __TEXT,__text  _ContactsLibrary
+0x18dbc96dc  __TEXT,__text  ___ContactsLibraryCore_block_invoke
+0x18dbc9750  __TEXT,__text  ___getCNContactPhoneNumbersKeySymbolLoc_block_invoke
+0x18dbc97a0  __TEXT,__text  ___getCNContactInstantMessageAddressesKeySymbolLoc_block_invoke
+0x18dbc97f0  __TEXT,__text  +[LNSpotlightAppEntityMapper tagCSSearchableItem:entityInstanceIdentifier:typeIdentifier:displayTitle:displaySubtitle:displaySynonyms:typeDisplayName:typeDisplaySynonyms:propertyDictionary:priority:schemaIdentifier:stableIdentifier:]
+0x18dbc9cac  __TEXT,__text  +[LNSpotlightAppEntityMapper(Deprecated) tagCSSearchableItem:entityInstanceIdentifier:typeIdentifier:displayTitle:displaySubtitle:displaySynonyms:typeDisplayName:typeDisplaySynonyms:propertyDictionary:priority:]
+0x18dbc9ce0  __TEXT,__text  -[LNSpotlightCascadeLedger initWithDirectory:bundleIdentifier:error:]
+0x18dbc9dc0  __TEXT,__text  +[LNSpotlightCascadeLedger _loadLedgerFileInDirectory:bundleIdentifier:error:]
+0x18dbca080  __TEXT,__text  __donationTypeName
+0x18dbca0e8  __TEXT,__text  -[LNSpotlightCascadeLedger description]
+0x18dbca178  __TEXT,__text  -[LNSpotlightCascadeLedger _options]
+0x18dbca1bc  __TEXT,__text  -[LNSpotlightCascadeLedger isInitialFullDonationRequired]
+0x18dbca1d8  __TEXT,__text  -[LNSpotlightCascadeLedger isRecoveryFullDonationRequired]
+0x18dbca1f4  __TEXT,__text  -[LNSpotlightCascadeLedger version]
+0x18dbca238  __TEXT,__text  -[LNSpotlightCascadeLedger _boxedVersion:]
+0x18dbca244  __TEXT,__text  -[LNSpotlightCascadeLedger countAttemptsOfDonationType:]
+0x18dbca2a4  __TEXT,__text  -[LNSpotlightCascadeLedger attemptDonationType:error:]
+0x18dbca344  __TEXT,__text  -[LNSpotlightCascadeLedger completeDonationType:version:error:]
+0x18dbca4b4  __TEXT,__text  -[LNSpotlightCascadeLedger abandonDonationType:error:]
+0x18dbca620  __TEXT,__text  -[LNSpotlightCascadeLedger deferAttemptOfDonationType:error:]
+0x18dbca6c0  __TEXT,__text  -[LNSpotlightCascadeLedger resetLedger:]
+0x18dbca724  __TEXT,__text  -[LNSpotlightCascadeLedger _isDeleted]
+0x18dbca7b8  __TEXT,__text  -[LNSpotlightCascadeLedger deleteLedger:]
+0x18dbca7ec  __TEXT,__text  -[LNSpotlightCascadeLedger bundleIdentifier]
+0x18dbca7f4  __TEXT,__text  -[LNSpotlightCascadeLedger .cxx_destruct]
+0x18dbca87c  __TEXT,__text  -[CSSearchableItemAttributeSet(LNAttributeSet) filteredCustomAttributes]
+0x18dbcaaf8  __TEXT,__text  __shouldIncludeCustomAttributeKey
+0x18dbcac50  __TEXT,__text  -[_LNPatchAttributeSet initWithAttributeSet:]
+0x18dbcacc4  __TEXT,__text  -[_LNPatchAttributeSet attributeForKey:]
+0x18dbcad4c  __TEXT,__text  -[_LNPatchAttributeSet attributeIsDelete:]
+0x18dbcad54  __TEXT,__text  -[_LNPatchAttributeSet filteredCustomAttributes]
+0x18dbcad5c  __TEXT,__text  -[_LNPatchAttributeSet .cxx_destruct]
+0x18dbcad68  __TEXT,__text  -[_LNSDBInfoAttributeSet initWithSDBInfo:fetchedAttributes:]
+0x18dbcae00  __TEXT,__text  -[_LNSDBInfoAttributeSet attributeForKey:]
+0x18dbcae74  __TEXT,__text  -[_LNSDBInfoAttributeSet attributeIsDelete:]
+0x18dbcae7c  __TEXT,__text  -[_LNSDBInfoAttributeSet filteredCustomAttributes]
+0x18dbcae84  __TEXT,__text  -[_LNSDBInfoAttributeSet .cxx_destruct]
+0x18dbcaebc  __TEXT,__text  -[NSDictionary(LNAttributeSet) attributeForKey:]
+0x18dbcaec0  __TEXT,__text  -[NSDictionary(LNAttributeSet) attributeIsDelete:]
+0x18dbcaec8  __TEXT,__text  -[NSDictionary(LNAttributeSet) filteredCustomAttributes]
+0x18dbcb03c  __TEXT,__text  -[LNSpotlightCascadeTranslator attributeSetForItem:]
+0x18dbcb120  __TEXT,__text  -[LNSpotlightCascadeTranslator disabledAppEntityTypeIdentifiersForBundleIdentifier:]
+0x18dbcb154  __TEXT,__text  -[LNSpotlightCascadeTranslator isSpotlightInlineDonationFullReplicaEnabled]
+0x18dbcb168  __TEXT,__text  -[LNSpotlightCascadeTranslator isSpotlightInlineDonationCustomAttributesEnabled]
+0x18dbcb17c  __TEXT,__text  -[LNSpotlightCascadeTranslator createAppleIntelligenceAttributesFromAttributeSet:error:]
+0x18dbcb284  __TEXT,__text  __translateError
+0x18dbcb338  __TEXT,__text  +[LNSpotlightCascadeTranslator stringFromAttribute:]
+0x18dbcb3f0  __TEXT,__text  -[LNSpotlightCascadeTranslator createGeneralAttributesFromAttributeSet:error:]
+0x18dbcb868  __TEXT,__text  __requireNonEmptyString
+0x18dbcb8e4  __TEXT,__text  __requireArrayOfNonEmptyStrings
+0x18dbcba90  __TEXT,__text  -[LNSpotlightCascadeTranslator createDocumentAttributesFromAttributeSet:error:]
+0x18dbcbe4c  __TEXT,__text  -[LNSpotlightCascadeTranslator createUserInvolvementAttributesFromAttributeSet:error:]
+0x18dbcbf58  __TEXT,__text  -[LNSpotlightCascadeTranslator createEventAttributesFromAttributeSet:error:]
+0x18dbcc0ec  __TEXT,__text  -[LNSpotlightCascadeTranslator createMediaAttributesFromAttributeSet:error:]
+0x18dbcca0c  __TEXT,__text  -[LNSpotlightCascadeTranslator createPlaceAttributesFromAttributeSet:error:]
+0x18dbcd010  __TEXT,__text  -[LNSpotlightCascadeTranslator createMusicAttributesFromAttributeSet:error:]
+```
+First 1,000 of 5,343.
+

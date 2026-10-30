@@ -1,0 +1,4652 @@
+# `com.apple.driver.AppleConvergedIPCBBControl`
+
+- Name: AppleConvergedIPCBBControl
+- Version: `1`
+- UUID: `9A189DE4-EE95-3F03-9167-57F7F6C9AC84`
+- Source version: `430.0.0.0.0`
+- Depends on: [`com.apple.driver.AppleIPAppender`](com.apple.driver.AppleIPAppender.md) 1.0, [`com.apple.driver.IOACIPCFamily`](com.apple.driver.IOACIPCFamily.md) 0.8.0, [`com.apple.iokit.IONetworkingFamily`](com.apple.iokit.IONetworkingFamily.md) 1.4.3, [`com.apple.iokit.IOPCIFamily`](com.apple.iokit.IOPCIFamily.md) 2.7.3, [`com.apple.iokit.IOSkywalkFamily`](com.apple.iokit.IOSkywalkFamily.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 9.0.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 9.0.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 9.0.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 9.0.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 10.0.0d1, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0.0
+
+## Device-tree nodes it binds (1) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/apcie/pci-bridge1/baseband-pcie-leda`](../devicetree/root__arm-io__apcie__pci-bridge1__baseband-pcie-leda.md) | `AppleConvergedPCILedaBB` | `baseband-pcie-leda` |
+
+## IOKit personalities (8) [KC]
+
+### AppleCellularDataPacketPool
+- `ACIPCInterfaceProtocol`: `kernel-datapacketpool`
+- `ACIPCInterfaceProviderDevice`: `cellular`
+- `CFBundleIdentifier`: `com.apple.driver.AppleConvergedIPCBBControl`
+- `IOClass`: `AppleCellularDataPacketPoolInt1`
+- `IOMatchCategory`: `AppleCellularDataPacketPool`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleConvergedIPCBBControl`
+- `IOProviderClass`: `IOAppleConvergedIPCRTIInterface`
+- `config`:
+  - `rx-pool-config`:
+    - `buffer-count`: `8700`
+    - `buffer-size`: `32768`
+    - `packet-count`: `65535`
+    - `segment-size`: `131072`
+  - `tx-pool-config`:
+    - `buffer-count`: `4000`
+    - `buffer-size`: `2048`
+    - `packet-count`: `4000`
+    - `segment-size`: `65536`
+
+### AppleCellularDataPlane
+- `ACIPCInterfaceProtocol`: `kernel-dataplane`
+- `ACIPCInterfaceProviderDevice`: `cellular`
+- `CFBundleIdentifier`: `com.apple.driver.AppleConvergedIPCBBControl`
+- `IOClass`: `AppleCellularDataPlaneInt1`
+- `IOMatchCategory`: `AppleCellularDataPlane`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleConvergedIPCBBControl`
+- `IOProviderClass`: `IOAppleConvergedIPCRTIInterface`
+- `IOUserClientClass`: `AppleCellularDataPlaneUserClient`
+- `config`:
+  - `eflags`:
+    - `IFEF_3CA`: `True`
+
+### AppleConvergedIPCICEBBControl
+- `BTIDevice`:
+  - `image_table`: `False`
+- `CFBundleIdentifier`: `com.apple.driver.AppleConvergedIPCBBControl`
+- `IOClass`: `AppleConvergedIPCICEBBControl`
+- `IOMatchCategory`: `AppleConvergedIPCICEBBControl`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleConvergedIPCBBControl`
+- `IOProviderClass`: `AppleBaseband`
+- `IOUserClientClass`: `IOAppleConvergedIPCBBControlUserClient`
+- `RTIDevice`:
+  - `RTIInterface`:
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `1`
+      - `pipes`:
+        - `18`
+        - `19`
+      - `protocol`: `boot`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`:
+        - `0`
+        - `1`
+      - `protocol`: `data`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`:
+        - `2`
+        - `3`
+      - `protocol`: `adam`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `log_binary`: `16`
+      - `pipes`:
+        - `4`
+        - `5`
+      - `protocol`: `ari`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `log_binary`: `16`
+      - `pipes`:
+        - `6`
+        - `7`
+      - `protocol`: `gnss`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`:
+        - `8`
+        - `9`
+      - `protocol`: `ogrs`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`:
+        - `10`
+        - `11`
+      - `protocol`: `trace`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`:
+        - `12`
+        - `13`
+      - `protocol`: `at`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`:
+        - `14`
+        - `15`
+      - `protocol`: `loopback`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`:
+        - `16`
+        - `17`
+      - `protocol`: `vcom`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`: `[]`
+      - `protocol`: `mediactl`
+  - `RTIPipe`:
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `1`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `0`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `2`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `0`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `3`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `512`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `2000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `4`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `4500`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `5`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `6`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `7`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `8`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `9`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `2000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `10`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `2000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `11`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `12`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `13`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `14`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `15`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `16`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `17`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `18`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `1`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `1`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `0`
+    -
+      - `bootstage`: `1`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `2`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `0`
+  - `completion_ring`:
+    -
+      - `count`: `128`
+      - `global`: `True`
+      - `on_demand`: `False`
+      - `setting`:
+        - `doorbell`:
+          - `threshold`: `80`
+          - `time`: `1000`
+        - `msi`: `0`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+  - `di_msi`: `0`
+  - `doorbell_index_mode`: `False`
+  - `doorbells`:
+    -
+      - `offset`: `128`
+    -
+      - `offset`: `224`
+    -
+      - `offset`: `240`
+  - `ipc_version`: `1024`
+  - `max_io_chunk`: `8388608`
+  - `memory_pool`:
+    - `512`
+    - `4096`
+    - `16384`
+  - `message_ring`:
+    - `count`: `128`
+    - `foot_size`: `0`
+    - `head_size`: `0`
+    - `in_place`: `0`
+    - `setting`:
+      - `doorbell`:
+        - `db_index`: `0`
+        - `threshold`: `80`
+        - `time`: `0`
+  - `msi_range`:
+    -
+      - `cr_high`: `0`
+      - `cr_low`: `0`
+      - `index`: `0`
+      - `tr_high`: `23`
+      - `tr_low`: `0`
+  - `num_CRs`: `1`
+  - `num_msi_ranges`: `1`
+  - `num_pipes`: `26`
+  - `timesync_doorbells`:
+    -
+      - `domain`: `1`
+      - `doorbell`: `1`
+    -
+      - `domain`: `5`
+      - `doorbell`: `2`
+- `logSnapshotBufferSize`: `65536`
+- `memory_alloc_limit`: `10485760`
+- `valid_providers`:
+  - `AppleBasebandI19`
+  - `AppleBasebandMacOSIce`
+
+### AppleConvergedIPCLedaBBControl
+- `BTIDevice`:
+  - `image_table`: `True`
+- `CFBundleIdentifier`: `com.apple.driver.AppleConvergedIPCBBControl`
+- `IOClass`: `AppleConvergedIPCLedaBBControl`
+- `IOMatchCategory`: `AppleConvergedIPCLedaBBControl`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleConvergedIPCBBControl`
+- `IOProviderClass`: `AppleBaseband`
+- `IOUserClientClass`: `IOAppleConvergedIPCBBControlUserClient`
+- `RTIDevice`:
+  - `RTIContext`:
+    -
+      - `bootstage`: `2`
+      - `name`: `kernel-pdp-context-1`
+      - `num_CRs`: `22`
+      - `num_TRs`: `20`
+      - `peripheral_ID`: `1`
+    -
+      - `bootstage`: `2`
+      - `name`: `kernel-pdp-context-2`
+      - `num_CRs`: `22`
+      - `num_TRs`: `20`
+      - `peripheral_ID`: `2`
+    -
+      - `bootstage`: `2`
+      - `name`: `kernel-pdp-context-metadata`
+      - `num_CRs`: `1`
+      - `num_TRs`: `1`
+      - `peripheral_ID`: `120`
+    -
+      - `bootstage`: `2`
+      - `name`: `user-pdp-context`
+      - `num_CRs`: `2`
+      - `num_TRs`: `2`
+      - `peripheral_ID`: `3`
+  - `RTIInterface`:
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `4`
+      - `pipes`:
+        - `18`
+        - `19`
+        - `20`
+        - `21`
+      - `protocol`: `iboot`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `6`
+      - `pipes`:
+        - `18`
+        - `19`
+        - `20`
+        - `21`
+      - `protocol`: `preiboot`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `1`
+      - `pipes`:
+        - `22`
+        - `23`
+        - `24`
+      - `protocol`: `cps`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `log_binary`: `16`
+      - `pipes`:
+        - `4`
+        - `5`
+      - `protocol`: `ari`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `log_binary`: `16`
+      - `pipes`:
+        - `73`
+        - `74`
+      - `protocol`: `ari2`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `log_binary`: `16`
+      - `pipes`:
+        - `6`
+        - `7`
+      - `protocol`: `gnss`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`:
+        - `8`
+        - `9`
+      - `protocol`: `vcom`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`:
+        - `10`
+        - `11`
+      - `protocol`: `trace`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`:
+        - `12`
+        - `13`
+      - `protocol`: `at`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`:
+        - `14`
+        - `15`
+      - `protocol`: `loopback`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`:
+        - `16`
+        - `17`
+      - `protocol`: `nvfs`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `completion_rings`:
+        - `1`
+        - `2`
+      - `pipes`:
+        - `25`
+        - `26`
+      - `protocol`: `user-pdp`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`: `[]`
+      - `protocol`: `mediactl`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `1`
+      - `pipes`:
+        - `27`
+        - `28`
+      - `protocol`: `rtbuddy`
+      - `role`: `cps`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `log_binary`: `16`
+      - `pipes`:
+        - `29`
+        - `30`
+      - `protocol`: `rctth`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`: `[]`
+      - `protocol`: `iqtrace`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`: `[]`
+      - `protocol`: `hsfiler`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `mem_alignment`: `33554432`
+      - `pipes`: `[]`
+      - `protocol`: `mmapdebug`
+    -
+      - `auto_open`: `False`
+      - `bootstage`: `2`
+      - `protocol`: `kernel-datapacketpool`
+    -
+      - `auto_open`: `False`
+      - `bootstage`: `2`
+      - `completion_rings`:
+        - `3`
+        - `4`
+        - `5`
+        - `6`
+        - `7`
+        - `8`
+        - `9`
+        - `10`
+        - `11`
+        - `12`
+        - `13`
+        - `14`
+        - `15`
+        - `16`
+        - `17`
+        - `18`
+        - `19`
+        - `20`
+        - `21`
+        - `22`
+        - `23`
+      - `context`: `1`
+      - `metadata`: `True`
+      - `msi`: `4`
+      - `pipes`:
+        - `31`
+        - `32`
+        - `33`
+        - `34`
+        - `35`
+        - `36`
+        - `37`
+        - `38`
+        - `39`
+        - `40`
+        - `41`
+        - `42`
+        - `43`
+        - `44`
+        - `45`
+        - `46`
+        - `47`
+        - `48`
+        - `49`
+      - `protocol`: `kernel-dataplane`
+    -
+      - `auto_open`: `False`
+      - `bootstage`: `2`
+      - `completion_rings`:
+        - `24`
+        - `25`
+        - `26`
+        - `27`
+        - `28`
+        - `29`
+        - `30`
+        - `31`
+        - `32`
+        - `33`
+        - `34`
+        - `35`
+        - `36`
+        - `37`
+        - `38`
+        - `39`
+        - `40`
+        - `41`
+        - `42`
+        - `43`
+        - `44`
+      - `context`: `2`
+      - `metadata`: `False`
+      - `msi`: `5`
+      - `pipes`:
+        - `50`
+        - `51`
+        - `52`
+        - `53`
+        - `54`
+        - `55`
+        - `56`
+        - `57`
+        - `58`
+        - `59`
+        - `60`
+        - `61`
+        - `62`
+        - `63`
+        - `64`
+        - `65`
+        - `66`
+        - `67`
+        - `68`
+      - `protocol`: `kernel-dataplane`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`:
+        - `69`
+        - `70`
+      - `protocol`: `lf-trace`
+    -
+      - `auto_open`: `True`
+      - `bootstage`: `2`
+      - `pipes`:
+        - `71`
+        - `72`
+      - `protocol`: `lv-trace`
+  - `RTIPipe`:
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `1`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `0`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `2`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `0`
+    -
+      - `bootstage`: `256`
+      - `cr_index`: `1`
+      - `direction`: `1`
+      - `identifier`: `unused-bootstage-256-was-data000`
+      - `in_place`: `0`
+      - `index`: `1`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `0`
+        - `pipe_id`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `100`
+            - `time`: `2000`
+    -
+      - `bootstage`: `256`
+      - `caching_capability`: `4096`
+      - `cr_index`: `2`
+      - `direction`: `2`
+      - `group_completion`: `True`
+      - `identifier`: `unused-bootstage-256-was-data000`
+      - `in_place`: `0`
+      - `index`: `2`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `0`
+      - `on_demand`: `False`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `aggregation`: `1`
+        - `dl_buffer_size`: `32768`
+        - `interface_id`: `0`
+        - `pipe_id`: `2`
+      - `shared`: `False`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `256`
+        - `foot_size`: `0`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `4500`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `1`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `160`
+        - `pipe_id`: `256`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `2`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `160`
+        - `pipe_id`: `257`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `9`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `161`
+        - `pipe_id`: `264`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `10`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `161`
+        - `pipe_id`: `265`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `5`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `162`
+        - `pipe_id`: `260`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `2000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `6`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `162`
+        - `pipe_id`: `261`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `2000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `identifier`: `dev.pcie.iosm.trace.ch.0-tx`
+      - `in_place`: `1`
+      - `index`: `11`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `163`
+        - `pipe_id`: `266`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `identifier`: `dev.pcie.iosm.trace.ch.0-rx (unused)`
+      - `in_place`: `1`
+      - `index`: `12`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `163`
+        - `pipe_id`: `267`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `3`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `164`
+        - `pipe_id`: `258`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `4`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `164`
+        - `pipe_id`: `259`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `13`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `165`
+        - `pipe_id`: `268`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `14`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `165`
+        - `pipe_id`: `269`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `7`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `166`
+        - `pipe_id`: `262`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `8`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `166`
+        - `pipe_id`: `263`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `4`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `1`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `0`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `1`
+            - `threshold`: `80`
+            - `time`: `0`
+    -
+      - `bootstage`: `4`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `2`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `0`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `2`
+            - `threshold`: `80`
+            - `time`: `0`
+    -
+      - `bootstage`: `4`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `3`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `0`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `3`
+            - `threshold`: `80`
+            - `time`: `0`
+    -
+      - `bootstage`: `4`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `4`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `0`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `4`
+            - `threshold`: `80`
+            - `time`: `0`
+    -
+      - `bootstage`: `1`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `1`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `0`
+    -
+      - `bootstage`: `1`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `2`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `0`
+    -
+      - `bootstage`: `1`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `3`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `0`
+    -
+      - `bootstage`: `2`
+      - `context`: `4`
+      - `cr_index`: `1`
+      - `direction`: `1`
+      - `iavector`: `0`
+      - `identifier`: `user-pdp-1`
+      - `in_place`: `0`
+      - `index`: `19`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `9`
+        - `pipe_id`: `55`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `7`
+            - `threshold`: `80`
+            - `time`: `2000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `4`
+      - `cr_index`: `2`
+      - `direction`: `2`
+      - `iavector`: `1`
+      - `identifier`: `user-pdp-2`
+      - `in_place`: `0`
+      - `index`: `20`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `0`
+      - `on_demand`: `False`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `aggregation`: `1`
+        - `dl_buffer_size`: `32768`
+        - `interface_id`: `9`
+        - `pipe_id`: `56`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `256`
+        - `foot_size`: `0`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `7`
+            - `threshold`: `80`
+            - `time`: `4500`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `1`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `15`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `dl_buffer_size`: `256`
+        - `interface_id`: `167`
+        - `pipe_id`: `270`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `16`
+        - `foot_size`: `256`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `1`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `16`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `dl_buffer_size`: `256`
+        - `interface_id`: `167`
+        - `pipe_id`: `271`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `16`
+        - `foot_size`: `256`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `in_place`: `1`
+      - `index`: `17`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `168`
+        - `pipe_id`: `272`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `0`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `in_place`: `1`
+      - `index`: `18`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `168`
+        - `pipe_id`: `273`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `0`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `cr_index`: `10`
+      - `direction`: `2`
+      - `group_completion`: `True`
+      - `iavector`: `17`
+      - `identifier`: `kernel-dataplane-sim-0-rx`
+      - `in_place`: `0`
+      - `index`: `21`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `0`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `aggregation`: `1`
+        - `dl_buffer_size`: `32768`
+        - `interface_id`: `255`
+        - `pipe_id`: `60`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `256`
+        - `foot_size`: `0`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `3`
+      - `cr_index`: `4`
+      - `direction`: `1`
+      - `iavector`: `0`
+      - `identifier`: `kernel-dataplane-sim-0-metadata`
+      - `in_place`: `0`
+      - `index`: `22`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `0`
+      - `on_demand`: `True`
+      - `ooo`: `0`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `49152`
+        - `traffic_type`: `3`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `foot_size`: `48`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `8`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `direction`: `1`
+      - `iavector`: `19`
+      - `identifier`: `kernel-dataplane-sim-0-aqm`
+      - `in_place`: `1`
+      - `index`: `23`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `49154`
+        - `traffic_type`: `2`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `64`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `10000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `cr_index`: `3`
+      - `direction`: `1`
+      - `iavector`: `0`
+      - `identifier`: `kernel-dataplane-sim-0-tx-0`
+      - `in_place`: `0`
+      - `index`: `24`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `70`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `cr_index`: `3`
+      - `direction`: `1`
+      - `iavector`: `1`
+      - `identifier`: `kernel-dataplane-sim-0-tx-1`
+      - `in_place`: `0`
+      - `index`: `25`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `71`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `cr_index`: `3`
+      - `direction`: `1`
+      - `iavector`: `2`
+      - `identifier`: `kernel-dataplane-sim-0-tx-2`
+      - `in_place`: `0`
+      - `index`: `26`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `72`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `cr_index`: `3`
+      - `direction`: `1`
+      - `iavector`: `3`
+      - `identifier`: `kernel-dataplane-sim-0-tx-3`
+      - `in_place`: `0`
+      - `index`: `27`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `73`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `cr_index`: `3`
+      - `direction`: `1`
+      - `iavector`: `4`
+      - `identifier`: `kernel-dataplane-sim-0-tx-4`
+      - `in_place`: `0`
+      - `index`: `28`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `74`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `cr_index`: `3`
+      - `direction`: `1`
+      - `iavector`: `5`
+      - `identifier`: `kernel-dataplane-sim-0-tx-5`
+      - `in_place`: `0`
+      - `index`: `29`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `75`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `cr_index`: `3`
+      - `direction`: `1`
+      - `iavector`: `6`
+      - `identifier`: `kernel-dataplane-sim-0-tx-6`
+      - `in_place`: `0`
+      - `index`: `30`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `76`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `cr_index`: `3`
+      - `direction`: `1`
+      - `iavector`: `7`
+      - `identifier`: `kernel-dataplane-sim-0-tx-7`
+      - `in_place`: `0`
+      - `index`: `31`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `77`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `cr_index`: `3`
+      - `direction`: `1`
+      - `iavector`: `8`
+      - `identifier`: `kernel-dataplane-sim-0-tx-8`
+      - `in_place`: `0`
+      - `index`: `32`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `78`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `cr_index`: `3`
+      - `direction`: `1`
+      - `iavector`: `9`
+      - `identifier`: `kernel-dataplane-sim-0-tx-9`
+      - `in_place`: `0`
+      - `index`: `33`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `79`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `cr_index`: `3`
+      - `direction`: `1`
+      - `iavector`: `10`
+      - `identifier`: `kernel-dataplane-sim-0-tx-10`
+      - `in_place`: `0`
+      - `index`: `34`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `80`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `cr_index`: `3`
+      - `direction`: `1`
+      - `iavector`: `11`
+      - `identifier`: `kernel-dataplane-sim-0-tx-11`
+      - `in_place`: `0`
+      - `index`: `35`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `81`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `cr_index`: `3`
+      - `direction`: `1`
+      - `iavector`: `12`
+      - `identifier`: `kernel-dataplane-sim-0-tx-12`
+      - `in_place`: `0`
+      - `index`: `36`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `82`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `cr_index`: `3`
+      - `direction`: `1`
+      - `iavector`: `13`
+      - `identifier`: `kernel-dataplane-sim-0-tx-13`
+      - `in_place`: `0`
+      - `index`: `37`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `83`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `cr_index`: `3`
+      - `direction`: `1`
+      - `iavector`: `14`
+      - `identifier`: `kernel-dataplane-sim-0-tx-14`
+      - `in_place`: `0`
+      - `index`: `38`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `84`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `1`
+      - `cr_index`: `3`
+      - `direction`: `1`
+      - `iavector`: `15`
+      - `identifier`: `kernel-dataplane-sim-0-tx-15`
+      - `in_place`: `0`
+      - `index`: `39`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `85`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `5`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `20`
+      - `direction`: `2`
+      - `group_completion`: `True`
+      - `iavector`: `17`
+      - `identifier`: `kernel-dataplane-sim-1-rx`
+      - `in_place`: `0`
+      - `index`: `40`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `0`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `aggregation`: `1`
+        - `dl_buffer_size`: `32768`
+        - `interface_id`: `255`
+        - `pipe_id`: `61`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `256`
+        - `foot_size`: `0`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `25`
+      - `direction`: `1`
+      - `iavector`: `18`
+      - `identifier`: `kernel-dataplane-sim-1-metadata`
+      - `in_place`: `0`
+      - `index`: `41`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `0`
+      - `on_demand`: `True`
+      - `ooo`: `0`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `49153`
+        - `traffic_type`: `3`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `4`
+        - `foot_size`: `0`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `direction`: `1`
+      - `iavector`: `19`
+      - `identifier`: `kernel-dataplane-sim-1-aqm`
+      - `in_place`: `1`
+      - `index`: `42`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `49155`
+        - `traffic_type`: `2`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `4`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `10000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `24`
+      - `direction`: `1`
+      - `iavector`: `0`
+      - `identifier`: `kernel-dataplane-sim-1-tx-0`
+      - `in_place`: `0`
+      - `index`: `43`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `110`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `24`
+      - `direction`: `1`
+      - `iavector`: `1`
+      - `identifier`: `kernel-dataplane-sim-1-tx-1`
+      - `in_place`: `0`
+      - `index`: `44`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `111`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `24`
+      - `direction`: `1`
+      - `iavector`: `2`
+      - `identifier`: `kernel-dataplane-sim-1-tx-2`
+      - `in_place`: `0`
+      - `index`: `45`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `112`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `24`
+      - `direction`: `1`
+      - `iavector`: `3`
+      - `identifier`: `kernel-dataplane-sim-1-tx-3`
+      - `in_place`: `0`
+      - `index`: `46`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `113`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `24`
+      - `direction`: `1`
+      - `iavector`: `4`
+      - `identifier`: `kernel-dataplane-sim-1-tx-4`
+      - `in_place`: `0`
+      - `index`: `47`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `114`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `24`
+      - `direction`: `1`
+      - `iavector`: `5`
+      - `identifier`: `kernel-dataplane-sim-1-tx-5`
+      - `in_place`: `0`
+      - `index`: `48`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `115`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `24`
+      - `direction`: `1`
+      - `iavector`: `6`
+      - `identifier`: `kernel-dataplane-sim-1-tx-6`
+      - `in_place`: `0`
+      - `index`: `49`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `116`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `24`
+      - `direction`: `1`
+      - `iavector`: `7`
+      - `identifier`: `kernel-dataplane-sim-1-tx-7`
+      - `in_place`: `0`
+      - `index`: `50`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `117`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `24`
+      - `direction`: `1`
+      - `iavector`: `8`
+      - `identifier`: `kernel-dataplane-sim-1-tx-8`
+      - `in_place`: `0`
+      - `index`: `51`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `118`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `24`
+      - `direction`: `1`
+      - `iavector`: `9`
+      - `identifier`: `kernel-dataplane-sim-1-tx-9`
+      - `in_place`: `0`
+      - `index`: `52`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `119`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `24`
+      - `direction`: `1`
+      - `iavector`: `10`
+      - `identifier`: `kernel-dataplane-sim-1-tx-10`
+      - `in_place`: `0`
+      - `index`: `53`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `120`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `24`
+      - `direction`: `1`
+      - `iavector`: `11`
+      - `identifier`: `kernel-dataplane-sim-1-tx-11`
+      - `in_place`: `0`
+      - `index`: `54`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `121`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `24`
+      - `direction`: `1`
+      - `iavector`: `12`
+      - `identifier`: `kernel-dataplane-sim-1-tx-12`
+      - `in_place`: `0`
+      - `index`: `55`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `122`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `24`
+      - `direction`: `1`
+      - `iavector`: `13`
+      - `identifier`: `kernel-dataplane-sim-1-tx-13`
+      - `in_place`: `0`
+      - `index`: `56`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `123`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `24`
+      - `direction`: `1`
+      - `iavector`: `14`
+      - `identifier`: `kernel-dataplane-sim-1-tx-14`
+      - `in_place`: `0`
+      - `index`: `57`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `124`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `context`: `2`
+      - `cr_index`: `24`
+      - `direction`: `1`
+      - `iavector`: `15`
+      - `identifier`: `kernel-dataplane-sim-1-tx-15`
+      - `in_place`: `0`
+      - `index`: `58`
+      - `msi`: `-1`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `True`
+      - `ooo`: `1`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `125`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `1024`
+        - `foot_size`: `16`
+        - `head_size`: `0`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `6`
+            - `threshold`: `80`
+            - `time`: `1000`
+      - `user_mapped`: `True`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `iavector`: `19`
+      - `identifier`: `dev.pcie.iosm.trace.ch.1-tx (unused)`
+      - `in_place`: `1`
+      - `index`: `59`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `163`
+        - `pipe_id`: `274`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `iavector`: `20`
+      - `identifier`: `dev.pcie.iosm.trace.ch.1-rx`
+      - `in_place`: `1`
+      - `index`: `60`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `163`
+        - `pipe_id`: `275`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `iavector`: `21`
+      - `identifier`: `dev.pcie.iosm.trace.ch.2-tx (unused)`
+      - `in_place`: `1`
+      - `index`: `61`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `163`
+        - `pipe_id`: `276`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `iavector`: `22`
+      - `identifier`: `dev.pcie.iosm.trace.ch.2-rx`
+      - `in_place`: `1`
+      - `index`: `62`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `163`
+        - `pipe_id`: `277`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `1`
+      - `iavector`: `23`
+      - `identifier`: `dev.pcie.iosm.ari.ch.2-tx`
+      - `in_place`: `1`
+      - `index`: `63`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `160`
+        - `pipe_id`: `278`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+    -
+      - `bootstage`: `2`
+      - `direction`: `2`
+      - `iavector`: `24`
+      - `identifier`: `dev.pcie.iosm.ari.ch.2-rx`
+      - `in_place`: `1`
+      - `index`: `64`
+      - `msi`: `0`
+      - `msi_mod_time`: `0`
+      - `oc`: `1`
+      - `on_demand`: `False`
+      - `reliable`: `0`
+      - `routing`:
+        - `interface_id`: `160`
+        - `pipe_id`: `279`
+        - `traffic_type`: `1`
+      - `sync`: `0`
+      - `td_ring`:
+        - `count`: `128`
+        - `setting`:
+          - `doorbell`:
+            - `db_index`: `0`
+            - `threshold`: `80`
+            - `time`: `1000`
+  - `completion_ring`:
+    -
+      - `count`: `128`
+      - `global`: `True`
+      - `on_demand`: `False`
+      - `setting`:
+        - `doorbell`:
+          - `threshold`: `80`
+          - `time`: `1000`
+        - `msi`: `0`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+    -
+      - `context`: `4`
+      - `count`: `128`
+      - `direction`: `1`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `head_size`: `0`
+      - `iavector`: `0`
+      - `identifier`: `user-pdp-tx-completions`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `9`
+        - `pipe_id`: `55`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `7`
+          - `threshold`: `80`
+          - `time`: `1000`
+        - `msi`: `0`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `4`
+      - `count`: `4096`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `head_size`: `0`
+      - `iavector`: `1`
+      - `identifier`: `user-pdp-rx-completions`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `9`
+        - `pipe_id`: `56`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `7`
+          - `threshold`: `80`
+          - `time`: `1000`
+        - `msi`: `0`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `512`
+      - `direction`: `1`
+      - `foot_size`: `0`
+      - `global`: `False`
+      - `head_size`: `0`
+      - `iavector`: `0`
+      - `identifier`: `kernel-dataplane-sim-0-tx`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `65`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `80`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `3`
+      - `count`: `16`
+      - `direction`: `1`
+      - `foot_size`: `48`
+      - `global`: `False`
+      - `head_size`: `0`
+      - `iavector`: `0`
+      - `identifier`: `kernel-dataplane-sim-0-metadata`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `49152`
+        - `traffic_type`: `3`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `8`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `16`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `2`
+      - `identifier`: `kernel-dataplane-sim-0-rx-default`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `254`
+        - `pipe_id`: `66`
+        - `traffic_type`: `4`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `3`
+      - `identifier`: `kernel-dataplane-sim-0-rx-0`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `90`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `80`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `4`
+      - `identifier`: `kernel-dataplane-sim-0-rx-1`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `91`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `80`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `5`
+      - `identifier`: `kernel-dataplane-sim-0-rx-2`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `92`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `80`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `6`
+      - `identifier`: `kernel-dataplane-sim-0-rx-3`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `93`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `7`
+      - `identifier`: `kernel-dataplane-sim-0-rx-4`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `94`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `8`
+      - `identifier`: `kernel-dataplane-sim-0-rx-5`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `95`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `9`
+      - `identifier`: `kernel-dataplane-sim-0-rx-6`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `96`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `10`
+      - `identifier`: `kernel-dataplane-sim-0-rx-7`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `97`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `11`
+      - `identifier`: `kernel-dataplane-sim-0-rx-8`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `98`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `12`
+      - `identifier`: `kernel-dataplane-sim-0-rx-9`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `99`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `13`
+      - `identifier`: `kernel-dataplane-sim-0-rx-10`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `100`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `14`
+      - `identifier`: `kernel-dataplane-sim-0-rx-11`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `101`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `15`
+      - `identifier`: `kernel-dataplane-sim-0-rx-12`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `102`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `16`
+      - `identifier`: `kernel-dataplane-sim-0-rx-13`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `103`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `17`
+      - `identifier`: `kernel-dataplane-sim-0-rx-14`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `104`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `18`
+      - `identifier`: `kernel-dataplane-sim-0-rx-15`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `105`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `19`
+      - `identifier`: `kernel-dataplane-sim-0-rx-16`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `106`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `1`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `10`
+      - `head_size`: `0`
+      - `iavector`: `20`
+      - `identifier`: `kernel-dataplane-sim-0-rx-17`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `107`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `5`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `512`
+      - `direction`: `1`
+      - `foot_size`: `0`
+      - `global`: `False`
+      - `head_size`: `0`
+      - `iavector`: `0`
+      - `identifier`: `kernel-dataplane-sim-1-tx`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `67`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `80`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `16`
+      - `direction`: `1`
+      - `foot_size`: `48`
+      - `global`: `False`
+      - `head_size`: `0`
+      - `iavector`: `1`
+      - `identifier`: `kernel-dataplane-sim-1-metadata`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `49153`
+        - `traffic_type`: `3`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `16`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `2`
+      - `identifier`: `kernel-dataplane-sim-1-rx-default`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `254`
+        - `pipe_id`: `68`
+        - `traffic_type`: `4`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `3`
+      - `identifier`: `kernel-dataplane-sim-1-rx-0`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `130`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `80`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `4`
+      - `identifier`: `kernel-dataplane-sim-1-rx-1`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `131`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `80`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `5`
+      - `identifier`: `kernel-dataplane-sim-1-rx-2`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `132`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `80`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `6`
+      - `identifier`: `kernel-dataplane-sim-1-rx-3`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `133`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `7`
+      - `identifier`: `kernel-dataplane-sim-1-rx-4`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `134`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `8`
+      - `identifier`: `kernel-dataplane-sim-1-rx-5`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `135`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `9`
+      - `identifier`: `kernel-dataplane-sim-1-rx-6`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `136`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `10`
+      - `identifier`: `kernel-dataplane-sim-1-rx-7`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `137`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `11`
+      - `identifier`: `kernel-dataplane-sim-1-rx-8`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `138`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `12`
+      - `identifier`: `kernel-dataplane-sim-1-rx-9`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `139`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `13`
+      - `identifier`: `kernel-dataplane-sim-1-rx-10`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `140`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `14`
+      - `identifier`: `kernel-dataplane-sim-1-rx-11`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `141`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `15`
+      - `identifier`: `kernel-dataplane-sim-1-rx-12`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `142`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `16`
+      - `identifier`: `kernel-dataplane-sim-1-rx-13`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `143`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `17`
+      - `identifier`: `kernel-dataplane-sim-1-rx-14`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `144`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `18`
+      - `identifier`: `kernel-dataplane-sim-1-rx-15`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `145`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `19`
+      - `identifier`: `kernel-dataplane-sim-1-rx-16`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `146`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+    -
+      - `context`: `2`
+      - `count`: `2048`
+      - `direction`: `2`
+      - `foot_size`: `16`
+      - `global`: `False`
+      - `group`: `20`
+      - `head_size`: `0`
+      - `iavector`: `20`
+      - `identifier`: `kernel-dataplane-sim-1-rx-17`
+      - `on_demand`: `True`
+      - `routing`:
+        - `interface_id`: `255`
+        - `pipe_id`: `147`
+      - `setting`:
+        - `doorbell`:
+          - `db_index`: `6`
+          - `threshold`: `100`
+          - `time`: `500`
+        - `msi`: `-1`
+        - `msi_mod_bytes`: `-1`
+        - `msi_mod_time`: `1`
+      - `user_mapped`: `True`
+  - `di_msi`: `0`
+  - `doorbell_index_mode`: `False`
+  - `doorbells`:
+    -
+      - `offset`: `20480`
+    -
+      - `offset`: `20484`
+    -
+      - `offset`: `20488`
+    -
+      - `offset`: `20492`
+    -
+      - `offset`: `20496`
+    -
+      - `offset`: `20500`
+    -
+      - `offset`: `20504`
+    -
+      - `offset`: `20508`
+    -
+      - `offset`: `20512`
+    -
+      - `offset`: `20528`
+    -
+      - `offset`: `20532`
+  - `exception_protocol`: `rtbuddy`
+  - `ipc_version`: `1024`
+  - `max_io_chunk`: `4177920`
+  - `memory_pool`:
+    - `512`
+    - `4096`
+    - `16384`
+  - `message_ring`:
+    - `count`: `128`
+    - `foot_size`: `0`
+    - `head_size`: `0`
+    - `in_place`: `0`
+    - `setting`:
+      - `doorbell`:
+        - `db_index`: `0`
+        - `threshold`: `80`
+        - `time`: `0`
+  - `msi_range`:
+    -
+      - `cr_high`: `18`
+      - `cr_low`: `0`
+      - `index`: `0`
+      - `tr_high`: `31`
+      - `tr_low`: `0`
+    -
+      - `index`: `0`
+      - `tr_high`: `64`
+      - `tr_low`: `59`
+    -
+      - `context`: `1`
+      - `cr_high`: `25`
+      - `cr_low`: `19`
+      - `index`: `0`
+      - `tr_high`: `42`
+      - `tr_low`: `38`
+  - `num_CRs`: `64`
+  - `num_CRs_primary_context`: `64`
+  - `num_contexts`: `4`
+  - `num_msi_ranges`: `4`
+  - `num_pipes`: `65`
+  - `num_pipes_primary_context`: `64`
+  - `scratch_buffer`:
+    - `size`: `1536`
+  - `timesync_doorbells`:
+    -
+      - `domain`: `1`
+      - `doorbell`: `10`
+    -
+      - `domain`: `0`
+      - `doorbell`: `10`
+    -
+      - `domain`: `2`
+      - `doorbell`: `9`
+    -
+      - `domain`: `3`
+      - `doorbell`: `10`
+    -
+      - `domain`: `5`
+      - `doorbell`: `9`
+- `logSnapshotBufferSize`: `65536`
+- `memory_alloc_limit`: `10485760`
+- `valid_providers`:
+  - `AppleBasebandSimI19`
+  - `AppleBasebandSimINT1`
+  - `AppleBasebandINT1`
+  - `AppleBasebandMacOSInt`
+
+### AppleConvergedIPCPDPADAM
+- `ACIPCInterfaceProtocol`: `adam`
+- `ACIPCInterfaceProviderDevice`: `cellular`
+- `CFBundleIdentifier`: `com.apple.driver.AppleConvergedIPCBBControl`
+- `IOClass`: `AppleConvergedIPCPDPADAM`
+- `IOMatchCategory`: `AppleConvergedIPCPDPADAM`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleConvergedIPCBBControl`
+- `IOProbeScore`: `10000`
+- `IOProviderClass`: `IOAppleConvergedIPCRTIInterface`
+- `constants`:
+  - `fallback`: `ice19`
+  - `ice19`:
+    - `interface_override`:
+      - `pdp_ip0`:
+        - `soft_flow_control_disable_write_bytes`: `45000`
+        - `soft_flow_control_enable_write_bytes`: `112500`
+    - `soft_flow_control_disable_write_bytes`: `45000`
+    - `soft_flow_control_enable_write_bytes`: `112500`
+
+### AppleConvergedIPCPDPManager
+- `ACIPCControlVariant`: `cellular`
+- `CFBundleIdentifier`: `com.apple.driver.AppleConvergedIPCBBControl`
+- `IOClass`: `AppleConvergedIPCPDPManager`
+- `IOMatchCategory`: `AppleConvergedIPCPDPManager`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleConvergedIPCBBControl`
+- `IOProviderClass`: `AppleConvergedIPCBBControl`
+- `constants`:
+  - `fallback`: `ice19`
+  - `ice19`:
+    - `direct_interface_count`: `0`
+    - `ifnet_eflags`:
+      - `IFEF_3CA`: `True`
+    - `max_packet_size`: `2048`
+    - `max_rx_tput`: `1500000000`
+    - `min_packet_size`: `64`
+    - `rx_pool_capacity`: `1088`
+    - `rx_segment_size`: `65536`
+    - `rx_slot_count`: `1024`
+    - `rx_slot_size`: `2048`
+    - `tx_pool_capacity`: `576`
+    - `tx_segment_size`: `65536`
+    - `tx_slot_count`: `512`
+    - `tx_slot_size`: `2048`
+- `valid_providers`:
+  - `AppleConvergedIPCICEBBControl`
+
+### AppleConvergedPCIICEBB
+- `CFBundleIdentifier`: `com.apple.driver.AppleConvergedIPCBBControl`
+- `IOClass`: `AppleConvergedPCIICEBB`
+- `IOMatchCategory`: `AppleConvergedPCIICEBB`
+- `IONameMatch`:
+  - `baseband-pcie`
+  - `pci8086,7660`
+- `IOPCITunnelCompatible`: `True`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleConvergedIPCBBControl`
+- `IOProviderClass`: `IOPCIDevice`
+
+### AppleConvergedPCILedaBB
+- `CFBundleIdentifier`: `com.apple.driver.AppleConvergedIPCBBControl`
+- `IOClass`: `AppleConvergedPCILedaBB`
+- `IONameMatch`:
+  - `baseband-pcie-leda`
+  - `pci106b,1c04`
+  - `baseband-pcie-pandia`
+- `IOPCITunnelCompatible`: `True`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleConvergedIPCBBControl`
+- `IOProviderClass`: `IOPCIDevice`
+
+
+## C++ classes (46) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleCellularAQMReporter` | 0xb8 | IOService → IORegistryEntry |
+| `AppleCellularDataPacketPool` | 0x1c0 | IOService → IORegistryEntry |
+| `AppleCellularDataPacketPoolInt1` | 0x1d0 | AppleCellularDataPacketPool → IOService → IORegistryEntry |
+| `AppleCellularDataPlane` | 0xb48 | IOSkywalkController → IOService → IORegistryEntry |
+| `AppleCellularDataPlaneInt1` | 0x1348 | AppleCellularDataPlane → IOSkywalkController → IOService → IORegistryEntry |
+| `AppleCellularDataPlaneUserClient` | 0x138 | IOUserClient → IOService → IORegistryEntry |
+| `AppleCellularDataPlaneWorkLoop` | 0x50 | IOWorkLoop |
+| `AppleCellularDoorbellManager` | 0x50 |  |
+| `AppleCellularDoorbellManagerInt1` | 0x50 | AppleCellularDoorbellManager |
+| `AppleCellularNetworkInterface` | 0x340 | IOSkywalkNetworkInterface → IOSkywalkInterface → IOService → IORegistryEntry |
+| `AppleCellularNetworkInterfaceInt1` | 0x340 | AppleCellularNetworkInterface → IOSkywalkNetworkInterface → IOSkywalkInterface → IOService → IORegistryEntry |
+| `AppleCellularNetworkQueue` | 0x200 |  |
+| `AppleCellularNetworkQueueDLInt1` | 0x240 | AppleCellularNetworkQueue |
+| `AppleCellularNetworkQueueInt1` | 0x270 | AppleCellularNetworkQueueULInt1 → AppleCellularNetworkQueueDLInt1 → AppleCellularNetworkQueue |
+| `AppleCellularNetworkQueueULInt1` | 0x270 | AppleCellularNetworkQueueDLInt1 → AppleCellularNetworkQueue |
+| `AppleCellularRTIRing` | 0x90 |  |
+| `AppleConvergedIPCBBControl` | 0x1e8 | IOAppleConvergedIPCControl → IOService → IORegistryEntry |
+| `AppleConvergedIPCBBRTIDevice` | 0x460 | IOAppleConvergedIPCRTIDevice → IOService → IORegistryEntry |
+| `AppleConvergedIPCBBRTIInterface` | 0x208 | IOAppleConvergedIPCRTIInterface → IOAppleConvergedIPCInterface → IOService → IORegistryEntry |
+| `AppleConvergedIPCDirectPDPInterface` | 0x2c0 | AppleConvergedIPCPDPInterfaceBase → IOSkywalkNetworkInterface → IOSkywalkInterface → IOService → IORegistryEntry |
+| `AppleConvergedIPCICEBBBTIDevice` | 0x100 | IOAppleConvergedIPCBTIDevice → IOService → IORegistryEntry |
+| `AppleConvergedIPCICEBBBTIInterface` | 0x138 | IOAppleConvergedIPCBTIInterface → IOAppleConvergedIPCInterface → IOService → IORegistryEntry |
+| `AppleConvergedIPCICEBBControl` | 0x1e8 | AppleConvergedIPCBBControl → IOAppleConvergedIPCControl → IOService → IORegistryEntry |
+| `AppleConvergedIPCICEBBRTIDevice` | 0x460 | AppleConvergedIPCBBRTIDevice → IOAppleConvergedIPCRTIDevice → IOService → IORegistryEntry |
+| `AppleConvergedIPCLedaBBBTIDevice` | 0x100 | AppleConvergedIPCICEBBBTIDevice → IOAppleConvergedIPCBTIDevice → IOService → IORegistryEntry |
+| `AppleConvergedIPCLedaBBBTIInterface` | 0x150 | AppleConvergedIPCICEBBBTIInterface → IOAppleConvergedIPCBTIInterface → IOAppleConvergedIPCInterface → IOService → IORegistryEntry |
+| `AppleConvergedIPCLedaBBControl` | 0x220 | AppleConvergedIPCBBControl → IOAppleConvergedIPCControl → IOService → IORegistryEntry |
+| `AppleConvergedIPCLedaBBRTIContext` | 0x140 | IOAppleConvergedIPCRTIContext → IOService → IORegistryEntry |
+| `AppleConvergedIPCLedaBBRTIDevice` | 0x468 | AppleConvergedIPCBBRTIDevice → IOAppleConvergedIPCRTIDevice → IOService → IORegistryEntry |
+| `AppleConvergedIPCLedaBBRTIInterface` | 0x208 | AppleConvergedIPCBBRTIInterface → IOAppleConvergedIPCRTIInterface → IOAppleConvergedIPCInterface → IOService → IORegistryEntry |
+| `AppleConvergedIPCLedaBBRTISharedInterface` | 0x208 | IOAppleConvergedIPCRTISharedInterface → IOAppleConvergedIPCRTIInterface → IOAppleConvergedIPCInterface → IOService → IORegistryEntry |
+| `AppleConvergedIPCPDPADAM` | 0x4c0 | IOService → IORegistryEntry |
+| `AppleConvergedIPCPDPInterface` | 0x228 | AppleConvergedIPCPDPInterfaceBase → IOSkywalkNetworkInterface → IOSkywalkInterface → IOService → IORegistryEntry |
+| `AppleConvergedIPCPDPInterfaceBase` | 0x220 | IOSkywalkNetworkInterface → IOSkywalkInterface → IOService → IORegistryEntry |
+| `AppleConvergedIPCPDPManager` | 0x160 | IOSkywalkController → IOService → IORegistryEntry |
+| `AppleConvergedIPCPDPSharedRxSubmissionQ` | 0x160 | IOService → IORegistryEntry |
+| `AppleConvergedIPCSkywalkMemorySegment` | 0xd0 | IOSkywalkMemorySegment |
+| `AppleConvergedIPCSkywalkPacket` | 0x140 | IOSkywalkCloneableNetworkPacket → IOSkywalkNetworkPacket → IOSkywalkPacket → IOCommand |
+| `AppleConvergedIPCSkywalkPacketBufferPool` | 0xf8 | IOSkywalkPacketBufferPool |
+| `AppleConvergedPCIBB` | 0x3c0 | IOAppleConvergedPCI → IOService → IORegistryEntry |
+| `AppleConvergedPCIICEBB` | 0x3c0 | AppleConvergedPCIBB → IOAppleConvergedPCI → IOService → IORegistryEntry |
+| `AppleConvergedPCILedaBB` | 0x3c8 | AppleConvergedPCIBB → IOAppleConvergedPCI → IOService → IORegistryEntry |
+| `IOAppleConvergedIPCBBControlUserClient` | 0x110 | IOAppleConvergedIPCControlUserClient → IOUserClient → IOService → IORegistryEntry |
+| `IOAppleConvergedIPCBBUserClient` | 0x1b8 | IOAppleConvergedIPCUserClient → IOUserClient → IOService → IORegistryEntry |
+| `TimeEventRegistration` | 0x58 |  |
+| `UserMemoryMapping` | 0x30 |  |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, WeakDefines, BindsToWeak, DylibInCache
+000: LC_SEGMENT_64 sz=0x00010e7e off=0x00400e60-0x00411cde addr=0xfffffe0007404e60-0xfffffe0007415cde r--/r--   __TEXT            
+	sz=0x0000462f off=0x00401578-0x00405ba7 addr=0xfffffe0007405578-0xfffffe0007409ba7               __TEXT.__cstring          (CstringLiterals)
+	sz=0x0000c12e off=0x00405bb0-0x00411cde addr=0xfffffe0007409bb0-0xfffffe0007415cde               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x00066dd0 off=0x01af3540-0x01b5a310 addr=0xfffffe0008af7540-0xfffffe0008b5e310 r-x/r-x   __TEXT_EXEC       
+	sz=0x00065e10 off=0x01af3540-0x01b59350 addr=0xfffffe0008af7540-0xfffffe0008b5d350          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000fc0 off=0x01b59350-0x01b5a310 addr=0xfffffe0008b5d350-0xfffffe0008b5e310          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00004000 off=0x04936fd0-0x0493afd0 addr=0xfffffe000b93afd0-0xfffffe000b940308 rw-/rw-   __DATA            
+	sz=0x00000348 off=0x04936fd0-0x04937318 addr=0xfffffe000b93afd0-0xfffffe000b93b318               __DATA.__data             
+	sz=0x00000778 off=0x00000000-0x00000778 addr=0xfffffe000b93b318-0xfffffe000b93ba90               __DATA.__common           (Zerofill)
+	sz=0x00004878 off=0x00000000-0x00004878 addr=0xfffffe000b93ba90-0xfffffe000b940308               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00023d98 off=0x01022c10-0x010469a8 addr=0xfffffe0008026c10-0xfffffe000804a9a8 rw-/rw-   __DATA_CONST      
+	sz=0x00001420 off=0x01022c10-0x01024030 addr=0xfffffe0008026c10-0xfffffe0008028030         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000160 off=0x01024030-0x01024190 addr=0xfffffe0008028030-0xfffffe0008028190         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x0001e7b0 off=0x01024190-0x01042940 addr=0xfffffe0008028190-0xfffffe0008046940         __DATA_CONST.__const            
+	sz=0x00001130 off=0x01042940-0x01043a70 addr=0xfffffe0008046940-0xfffffe0008047a70         __DATA_CONST.__weak_got         (NonLazySymbolPointers)
+	sz=0x00001cc0 off=0x01043a70-0x01045730 addr=0xfffffe0008047a70-0xfffffe0008049730         __DATA_CONST.__kalloc_type      
+	sz=0x00000870 off=0x01045730-0x01045fa0 addr=0xfffffe0008049730-0xfffffe0008049fa0         __DATA_CONST.__kalloc_var       
+	sz=0x000007e0 off=0x01045fa0-0x01046780 addr=0xfffffe0008049fa0-0xfffffe000804a780         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000228 off=0x01046780-0x010469a8 addr=0xfffffe000804a780-0xfffffe000804a9a8         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 1123 at 0x04ad5630
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     9A189DE4-EE95-3F03-9167-57F7F6C9AC84
+008: LC_SOURCE_VERSION           430.0.0.0.0
+009: LC_FUNCTION_STARTS          offset=0x004a9c180 size=0xe20
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleExecutable`: `AppleConvergedIPCBBControl`
+- `CFBundleIdentifier`: `com.apple.driver.AppleConvergedIPCBBControl`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleConvergedIPCBBControl`
+- `CFBundleNumericVersion`: `16809984`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2025 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.0`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleConvergedIPCBBControl.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198901600672`
+- `_PrelinkExecutableRelativePath`: `AppleConvergedIPCBBControl`
+- `_PrelinkExecutableSize`: `658718`
+- `_PrelinkExecutableSourceAddr`: `-2198901600672`
+- `_PrelinkKmodInfo`: `-2198829027376`
+
+## Strings (553) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `attachProtocol`
+- `AppleConvergedIPCLedaBBRTISharedInterface.cpp`
+- `I`
+- `TimeEventRegistration`
+- `sharedinterface`
+- `AppleConvergedIPCPDPManager::start()\n`
+- `kACIPCPDPWriteFailed`
+- `221`
+- `ICEBBControl.cpp`
+- `Rx Memory Read`
+- `tx_footer_size`
+- `%s%03u`
+- `soft_flow_control_disable_write_bytes`
+- `site.ICEBBBTIDevice`
+- `AppleCellularDataPlane`
+- `site.IOACIPCTagList`
+- `Tx L0s Entry`
+- `Cellular.reset`
+- `AppleCellularDataPlaneWorkLoop`
+- `%s::%s: failed to allocate time event registrations\n`
+- `AppleConvergedIPCPDPInterface.cpp`
+- `site.AppleCellularDoorbellManager`
+- `AppleConvergedIPCBBRTIDevice.cpp`
+- `AppleCellularNetworkQueue%s`
+- `acipc-db-timer-override-us`
+- `BAD DLLP`
+- `Rx IO Write`
+- `site.AppleCellularAQMReporter`
+- `12111112122212121111111111122222122212222121112121122222`
+- `1211111212221212112111111111111111222221111111112212111112121`
+- `site.AppleConvergedIPCICEBBBTIDevice`
+- `121111121222121211122222222211111112111`
+- `%s::%s: failed to allocate mappings lock\n`
+- `interface_count`
+- `site.RegistrationInfo`
+- `site.PendSharedQData`
+- `AppleConvergedIPCPDPInterfaceBase::%s ifnet_attach_protocol() %u failed: %d\n`
+- `cellular`
+- `EBUF Overflow`
+- `AppleCellularNetworkInterfaceInt1.cpp`
+- `data`
+- `12111112122212121112222222221111112112212121212111111111111121111211111121111112111111211111121111112111111211111121111111111111111112221212`
+- `Rx Nullified TLP`
+- `%s %s :: power assertion timer failed\n`
+- `leda-nonce-timeout`
+- `site.RegisterDataQueue`
+- `ICEBBBTIDevice.cpp`
+- `AppleCellularNetworkQueueULInt1.cpp`
+- `cellular-tx-abfs-disable`
+- `Running Disparity Error`
+- `%s:: probe\n`
+- `%s %s :: adding power assertion timer to workloop failed\n`
+- `max_pending_write_bytes`
+- `12111112122212121112222222221121111111111211211111111112121111222`
+- `BasebandInReset`
+- `site.IOAppleConvergedIPCBBUserClient`
+- `user_mapped`
+- `Margin CRC and Parity Error (Gen4)`
+- `site.AppleCellularNetworkInterfaceInt1`
+- `rx_shared_queue`
+- `acipc-pdp-fc-ack-panic`
+- `Unsupported Request`
+- `Cellular.error`
+- `com.apple.driver.AppleConvergedIPCICEBBControl.user-access`
+- `AppleCellularDataPacketPoolInt1.cpp`
+- `AppleConvergedIPCPDPManager:: no valid provider\n`
+- `kACIPCPDPBadMuxHeader`
+- `site.ICEBBBTIPipe`
+- `%s%u`
+- `1st Retimer Parity Error (Gen4)`
+- `2113111111`
+- `rx_footer_size`
+- `tx_pool_capacity`
+- `222222122222222222222222222222222`
+- `ACIPCBTIPipe`
+- `Rx Update FC DLLP`
+- `getBasebandChipset`
+- `%s::%s:user client missing access entitlement\n`
+- `device-scan-timer`
+- `AppleConvergedIPCPDPSharedRxSubmissionQ`
+- `1122`
+- `Tx Memory Write`
+- `abp-debug`
+- `AppleConvergedIPCICEBBBTIDevice`
+- `12111112122212121121111111111111112222211111111122121111121212211121`
+- `AppleConvergedIPCSkywalkPacketBufferPool::withOptions:super class failed to create packet buffer pool\n`
+- `PDP Tx Pool`
+- `Receiver Error`
+- `Link width Change (x2)`
+- ` %s:: %s MetaClass does not exist \n`
+- `PCIPortLinkSpeedChange`
+- `Tx Update FC DLLP`
+- `Rx Memory Write`
+- `Rx Atomic`
+- `site.AppleCellularDataPacketPoolInt1`
+- `site.AppleConvergedIPCSkywalkPacket`
+- ` failed to instantiate rxSubmissionQ\n`
+- `\"assertion failed\" @%s:%d`
+- `site.ICEBBRTIDevice`
+- `EBUF Underrun`
+- `CTL SKP OS Parity Error (Gen4)`
+- `%s::%s:client lacks access entitlement\n`
+- `kACIPCPDPWriteTimeout`
+- `%s::%s: super::start failed\n`
+- `AppleCellularThroughputCounter`
+- `cellular-rx-pacing-disable`
+- `Tx Completion with Data`
+- `site.AppleCellularDataPlaneInt1`
+- `pdp_ip%.2u`
+- `site.hdr_ty.acipcRTIDoorbell`
+- `AppleCellularNetworkQueueInt1`
+- `211`
+- `cellular-tx-abfs-hysteresis`
+- `121111121222121212112121111211111111111111111111111111111111111111111111111111111111111111111111222222222222222222222221`
+- `AppleConvergedIPCPDPSharedRxSubmissionQ.cpp`
+- `AppleCellularDataPlane.cpp`
+- `L1 Entry`
+- `AppleCellularPacketPoolTagInfo`
+- `site.RawTxInfo`
+- `AppleCellularNetworkQueue.cpp`
+- `121122222221111221211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121111212122222222222211111`
+- `L1 CPM`
+- `AppleConvergedIPCLedaBBBTIDevice`
+- `priority`
+- `AppleConvergedIPCPDPInterfaceBase::pciRegisterThreadCall: failed to run action 0x%x\n`
+- `12111112122212121111121112222222111122121112`
+- `1211111212221212111111121112112111111111111111121121121121111211112112221111112222211112`
+- `11122122222222112222222212122111111111111111111121211`
+- `site.LedaBBRTIDevice::ULByteCounterArrayEntry`
+- `site.AppleConvergedIPCSkywalkMemorySegment`
+- `acdp-test-metadata-tx`
+- `tx_slot_size`
+- `provider is not an instance of AppleConvergedIPCInterface\n`
+- `site.AppleConvergedIPCBBRTIDevice`
+- `site.hdr_ty.IOACIPCTagEntry`
+- `AppleConvergedIPCLedaBBRTIInterface.cpp`
+- `registerNetworkPlumbers`
+- `Tx Nak DLLP`
+- `1211111212221212111111111111111121`
+- `site.IOService *`
+- `site.AppleConvergedIPCPDPInterface`
+- `AppleCellularDoorbellManager`
+- `111221222222221122222222121221111111111111111111212`
+- `\"unable to remap memory segments\" @%s:%d`
+- `site.AppleCellularDataRTIRing`
+- `max_rx_aggregation`
+- `AppleCellularDoorbellManager.cpp`
+- `LedaBBBTIPipe`
+- `AppleConvergedPCIBB.cpp`
+- `initWithTask`
+- `UserMemoryMapping`
+- `\"memory addresses [0x%llx, 0x%llx] out of range\\n\" @%s:%d`
+- `Tx Completion without Data`
+- `AppleConvergedIPCICEBBRTIDevice.cpp`
+- `AppleCellularNetworkQueueDLInt1`
+- `site.struct if_link_status`
+- `111221222222221112211111111111111211222112112`
+- `L1.1 Entry`
+- `IOAppleConvergedIPCRTISharedInterface`
+- `FC Timeout`
+- `acipc-ignore-ptm-check`
+- `site.AppleConvergedIPCLedaBBRTIInterface`
+- `Rx Recovery Request (When the controller receives TS1 OS in L0 state.)`
+- `12111112122212121112222222221211`
+- `AppleConvergedIPCSkywalkPacketBufferPool.cpp`
+- `12111112122212121112212111122222222211112111`
+- `ACIPCInterfaceProviderDevice`
+- `2211`
+- `121122222221111221211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121111212122222222222211111`
+- `Tx Config Write`
+- `AppleConvergedIPCSkywalkMemorySegment`
+- `direct_interface_count`
+- `config`
+- `Tx IO Read`
+- `spmiErrorToKernelClientFunction`
+- `acipc-skip-entitlement`
+- `msi`
+- `%s::%s: failed to allocate user mappings set\n`
+- `AppleConvergedIPCSkywalkMemorySegment.hpp`
+- `111221122111112111111111121122`
+- `AppleConvergedIPCSkywalkPacketBufferPool`
+- `kACIPCPDPBadControlCommand`
+- `AppleConvergedIPCPDPInterfaceBase.cpp`
+- `Detect Electrical Idle Inference`
+- `AppleConvergedIPCLedaBBBTIInterface`
+- `%s::%s: failed to allocate time event lock\n`
+- `12111112122212121111111211121111111122223322222222222222222222222222222222222222222222222222222222112212`
+- `site.AppleConvergedIPCPDPManager`
+- `AppleCellularDataPlaneUserClient`
+- `AppleConvergedIPCICEBBBTIInterface`
+- `direct_interface_constants`
+- `1211111212221212111221111222222222111111`
+- `acdp-active`
+- `packet-count`
+- `IOAppleConvergedIPCInterface`
+- `LedaBBBTIDevice`
+- `Tx Message TLP (PCIe VC only)`
+- `12111112122212121111121`
+- `site.AppleConvergedPCIICEBB`
+- `site.AppleConvergedIPCLedaBBBTIInterface`
+- `ACDP driver RSS enable/disable`
+- `\"IOSkywalkCloneableNetworkPacket::prepareWithQueue failed: Q: %p, direction: %u ret: 0x%x\\n\" @%s:%d`
+- `Rx IO Read`
+- `registerKernelClientToAppleBasebandFunction`
+- `cellular-aqm-time-ms`
+- `max_rx_tput`
+- `rx_pool_capacity`
+- `kACIPCPDPBadControlResponse`
+- `pdp_ip%1u`
+- `site.AppleCellularDataPlane`
+- `Tx Config Read`
+- `Tx Atomic`
+- `Cellular.bbmsg`
+- `AppleCellularNetworkQueueParams`
+- `BBRTIDevice.cpp`
+- `ACIPCRTIDevice`
+- `AppleConvergedIPCLedaBBRTIInterface`
+- `site.AppleConvergedIPCLedaBBRTIDevice`
+- `site.TimeEventRegistration`
+- `IOAppleConvergedIPCBBControlUserClient`
+- `AppleConvergedIPCPDPManager`
+- `AppleConvergedIPCPDPInterfaceBase::%s proto_register_plumber failed for PF_INET: %d\n`
+- `site.LedaBBRTIContext`
+- `IOAppleConvergedIPCBBUserClient`
+- `1211111212221212111111111112222212221222212111212112222212`
+- `site.IOAppleConvergedIPCBBControlUserClient`
+- `rx_slot_size`
+- `site.acipcRTIRingEventCall`
+- `Rx Nak DLLP`
+- `L1.2 abort`
+- `segment-size`
+- `AppleCellularNetworkInterface.cpp`
+- `pdp_ip`
+- `ifnet_eflags`
+- `AppleConvergedIPCPDPInterfaceBase::signalOutput: %p is not an instance of AppleConvergedIPCPDPInterfaceBase\n`
+- `doorbell`
+- `V59`
+- `pipe_id`
+- `site.DescriptorTraceBlock`
+- `Framing Error (Gen3)`
+- `AppleConvergedIPCICEBBRTIDevice`
+- `AppleCellularNetworkQueueStatsDLInt1`
+- `AppleConvergedIPCDirectPDPInterface`
+- `site.LedaBBBTIPipe`
+- `AppleConvergedIPCLedaBBRTIDevice`
+- `AppleConvergedIPCRingIndex`
+- `kACIPCPDPControlResponseDropped`
+- `AppleConvergedIPCPDPInterfaceBase::getProtocolFamily: mbuf points to NULL\n`
+- `site.AppleConvergedIPCPDPADAM`
+- `LedaBBControl.cpp`
+- `Tx TLP with Prefix`
+- `interface-count`
+- `AppleCellularDoorbellManager%s`
+- `String`
+- `IOPlatformDevice`
+- `buffer-count`
+- `LCRC Error`
+- `LedaBBRTIPipe`
+- `tx_segment_size`
+- `Rx Message TLP (PCIe VC only)`
+- `121221`
+- `%s::%s: super failed\n`
+- `product`
+- `AppleConvergedIPCBBRTIInterface.cpp`
+- `tx-pool-config`
+- `site.UserMemoryMapping`
+- `1211122222211111111111121121212`
+- `direction`
+- `site.LedaBBControl`
+- `AppleConvergedIPCDirectPDPInterface.cpp`
+- `soft_flow_control_enable_write_bytes`
+- `TimeStampNs`
+- `ACIPC skip reset detect pin`
+- `valid_providers`
+- `%s::%s: failed to allocate open lock\n`
+- `12111111121112211211122211`
+- `111`
+- `ACIPCInterfaceProtocol`
+- `i24@?0^^{IOACIPCDescriptor}8^I16`
+- `site.PendSharedQDataQueue`
+- `site.LedaBBRTIPipe`
+- `LedaBBControl`
+- `1222212222122222222221121111211122222222122111111112122222222222`
+- `Rx TLP with Prefix`
+- `leda-targetlinkspeed`
+- `site.registerData`
+- `site.AppleConvergedIPCPDPInterfaceBase *`
+- `kernel-packetpool`
+- `BAD TLP`
+- `EBUF SKP Delete`
+- `Rx Duplicate TLP`
+- `site.AppleCellularNetworkQueueInt1`
+- `Speed Change (Gen2)`
+- `Tx Memory Read`
+- `L1.2 Entry`
+- `AppleConvergedIPCLedaBBControl.cpp`
+- `1211111212221212111111111111111112112121111111111111111`
+- `Cellular.pdpopen`
+- `SKP OS Parity Error (Gen3)`
+- `ECRC Error`
+- `1211111111222211212121222222221122222211`
+- `site.LedaBBRTIDevice`
+- `%s::%s: class name is not OSString\n`
+- `AppleConvergedPCIICEBB`
+- `121111121222121211122222222211111112111212`
+- `fallback`
+- `routing`
+- `Rx L0s Entry`
+- `AppleCellularAQMReporter`
+- `AppleCellularDataPlaneUserClient.cpp`
+- `site.AppleConvergedIPCPDPSharedRxSubmissionQ *`
+- `AppleConvergedIPCPDPInterfaceBase::getProtocolFamily: unknown family nibble from mbuf: %u\n`
+- `AppleConvergedIPCLedaBBRTISharedInterface`
+- `122221222212222222222112111121112222222212211111111212222222222222222222222222`
+- `12111112122212121112222222221121111111111211211111111112121111221`
+- `Tx Nullified TLP`
+- `Cellular.ctrl`
+- `Completer Abort`
+- `AppleCellularNetworkQueueDLInt1.cpp`
+- `rx_segment_size`
+- `kACIPCPDPInboundPacketDropped`
+- `12111112122212121112211111111111122222222222222222221121111122112221111111111111111111111111111111122222222111222222222222222222222122222222222222222222`
+- `AppleCellularNetworkQueueStatsULInt1`
+- `AppleCellularThroughputCounterBatching`
+- `Cellular:Tx`
+- `21222`
+- `AppleCellularNetworkQueue`
+- `acdp-rss-settings`
+- `aggregation`
+- `acipc-sleeptime-ms`
+- `N_FTS Timeout (Timeout when the controller's Rx condition is in Rx_L0.FTS)`
+- `site.AppleConvergedIPCPDPSharedRxSubmissionQ`
+- `ibis`
+- `1211112112`
+- `AppleConvergedIPCBBRTIDevice`
+- `1112121111111`
+- `1112111111`
+- `metadata`
+- `LedaBBRTIDevice`
+- `%s::%s:super failed\n`
+- `AppleCellularDoorbellManagerInt1`
+- `site.AppleConvergedIPCICEBBRTIDevice`
+- `AppleConvergedPCILedaBB`
+- `AppleCellularNetworkInterface`
+- `AppleCellularNetworkInterfaceInt1`
+- `AppleConvergedIPCPDPADAM`
+- `site.BBUserMappedRTIPipe`
+- `121111121222121211111111111111122222222`
+- `site.AppleConvergedIPCLedaBBBTIDevice`
+- `site.AppleConvergedIPCPDPInterfaceBase`
+- `site.ICEBBControl`
+- `site.AppleConvergedIPCBBControl`
+- `ACDP driver perf logging`
+- `rx_slot_count`
+- `acipc-db-timer-override-ms`
+- `AppleCellularNetworkQueueData`
+- `acipcRTIMetaDataAVCMetrics`
+- `client_data`
+- `ICEBBRTIDevice`
+- `1`
+- `site.AppleCellularDataPlaneWorkLoop`
+- `maximum-link-speed`
+- `Deskew Error`
+- `site.AppleConvergedIPCBBRTIInterface`
+- `Int1`
+- `PDP Rx Pool`
+- `ADAM`
+- `LedaBBRTIDevice.cpp`
+- `spmiReadyToKernelClientFunction`
+- `B16@?0^{AppleCellularNetworkInterface=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}^{ExpansionData}^{OSArray}^{IOSkywalkPacketBufferPool}^{IOSkywalkPacketBufferPool}^{IOSkywalkInterfaceVars}^{ExpansionData}(?=i`
+- `site.AppleConvergedPCILedaBB`
+- `IOInterfaceUnit`
+- `kACIPCPDPCloningFailed`
+- `site.IOACIPCUserClientAsyncParamBlock`
+- `kACIPCPDPControlCommandFailed`
+- `site.PDPEventMessage`
+- `AppleCellularDataPacketPool`
+- `%s: failed to get product\n`
+- `1112212222222211122111111111111`
+- `AppleCellularRTIRing`
+- `AppleConvergedIPCPDPInterfaceBase::pdpAddProto: unknown proto %u\n`
+- `v20@?0S8^{IOACIPCTagEntry=(?={?=SS}I)III^v^v}12`
+- `Rx Ack DLLP`
+- `PCIDriverIsUp`
+- `site.AppleCellularNetworkInterface`
+- `ocpDataReadyToKernelClientFunction`
+- `AppleConvergedIPCBBControl`
+- `site.AppleCellularDataPlaneUserClient`
+- `kACIPCPDPControlResponseFailed`
+- `site.AppleCellularRTIRing`
+- `eflags`
+- `PCIPortEnable`
+- `site.UInt32`
+- `PCIPortSleepEnable`
+- `AppleConvergedIPCICEBBControl`
+- `ice19`
+- `%s::%s:\n`
+- `11111`
+- `Replay Number Rollover`
+- `IOAppleConvergedIPCBBUserClient.cpp`
+- `11`
+- `constants`
+- `i8@?0`
+- `IFEF_3CA`
+- `L2 Entry`
+- `Tx IO Write`
+- `AppleCellularDataPlaneInt1`
+- `site.AppleConvergedIPCICEBBBTIInterface`
+- `acipc_perf_log_flags`
+- `acdp-perf-logging`
+- `AppleCellularNetworkQueue.h`
+- `ocpErrorToKernelClientFunction`
+- `AppleConvergedPCIICEBB::probe ok\n`
+- `enable-refclk-gating`
+- `\"Link speed change from ROM->iBOOT failed\" @%s:%d`
+- `rx_submission_slot_count`
+- `acipc-tx-slot-count`
+- `121111121222121211111112111211211111111111111112112112112111121111212`
+- `2`
+- `AppleCellularDescriptorTrace`
+- `L0 to Recovery Entry`
+- `leda-skip-linkspeedchange`
+- `leda-linkspeedchange-force-crash-bb`
+- `IOPMAOTAllow`
+- `site.struct ifnet_interface_advisory`
+- `AppleConvergedIPCPDPInterfaceBase`
+- `metadata-obj-address`
+- `Decode Error`
+- `cellular-tx-override-buffersize`
+- `IOPlatformExpertDevice`
+- `AppleCellularDataPacketPoolInt1`
+- `interface_override`
+- `Cellular.pdpclose`
+- `%s %s :: creating power assertion failed\n`
+- `acipcRTIMetaDataLinkQualityMetrics`
+- `invalid`
+- `baseband-chipset`
+- `acipcRTIMetaDataFaceTimeFeedback`
+- `AppleConvergedIPCPDPManager.cpp`
+- `i24@?0^{IOACIPCSubDescriptor=^{IOACIPCDescriptor}III{IOACIPCFooter=^vII}}8^I16`
+- `traffic_type`
+- `Replay Timeout`
+- `AppleConvergedIPCLedaBBControl::setupPCIDevice %u\n`
+- `site.AppleCellularDoorbellManagerInt1`
+- `121111121222121211122222222211111121122121212121111111111111211112111111211111121111112111111211111121111112111111211111111111111111122212122`
+- `sim-context`
+- `AQM`
+- `AppleCellularDataPacketPool.cpp`
+- `site.AppleCellularNetworkQueueDLInt1`
+- `AppleConvergedIPCSkywalkMemorySegment.cpp`
+- `AppleCellularNetworkQueueULInt1`
+- `site.AppleCellularNetworkQueue`
+- `super::start failed\n`
+- `AppleConvergedIPCBBRTIInterface`
+- `AppleConvergedIPCLedaBBControl`
+- `IOSkywalkNetworkPacket::initWithPool failed\n`
+- `121111121222121211111111111112122222212222221222222122222212222222211211211211211111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111`
+- `target-type`
+- `site.AppleConvergedIPCDirectPDPInterface`
+- `11121211111112`
+- `Rx Completion with Data`
+- `Client`
+- `site.AppleConvergedIPCLedaBBControl`
+- `ice`
+- `acipc-ring-open-close-timeout-ms`
+- `Tx Ack DLLP`
+- `AppleConvergedIPCPDPInterfaceBase::%s proto_register_plumber failed for PF_INET6: %d\n`
+- `L1 Short Duration (No. of times link entered L1.0 state but exited to L0 without entering L1.1 or L1.2 states)`
+- `AppleConvergedIPCICEBBControl.cpp`
+- `AppleConvergedIPCTransferRingShared`
+- `AppleConvergedIPCGroupIndex`
+- `completion_ring`
+- `td_ring`
+- `L1 to Recovery Entry`
+- `AppleConvergedIPCPDPSharedRxSubmissionQ::initWithInfo: super::init failed\n`
+- `site.char`
+- `AppleCellularRTIRing.cpp`
+- `kACIPCPDPOutboundPacketDropped`
+- `AppleConvergedIPCLedaBBRTIContext`
+- `ICEBBBTIDevice`
+- `site.LedaBBBTIDevice`
+- `SYNC Header Error (Gen3 or greater)`
+- `Rx Completion without Data`
+- `PCIPortEnableFailureFatal`
+- `12111112122212121111111211121121111111111111111211211211211112111121`
+- `Retry TLP`
+- `Completion Timeout`
+- `Cellular:Rx`
+- `leda-rom-mmio-dump`
+- `acipc-pdp-flags`
+- `ICEBBControl`
+- `AppleConvergedIPCSkywalkPacket.cpp`
+- `1211111212`
+- `2111121122222212222222`
+- `AppleCellularDataPlaneInt1.cpp`
+- `122221222212222222222112111121112222222212211111111212222222222222222222`
+- `leda`
+- `tx_slot_count`
+- `121111121222121211111111111112122222212222221222222122222212222222211211211211211111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111`
+- `site.AppleConvergedPCIBB`
+- `AppleConvergedIPCPDPADAM.cpp`
+- `site.AppleCellularNetworkQueueULInt1`
+- `Poisoned TLP`
+- `acipc_skip_reset_flags`
+- `AppleCellularAQMReporter.cpp`
+- `LedaBBRTIContext.cpp`
+- `BasebandDeviceID`
+- `dl_buffer_size`
+- `timesync_doorbells`
+- `AppleIPAppender`
+- `BBUserMappedRTIPipe`
+- `12`
+- `AppleConvergedPCIBB`
+- `v12@?0i8`
+- `site.IOSkywalkCloneableNetworkPacket *`
+- `kernel-dataplane`
+- `acipc_acdp_rss_settings`
+- `12111111111`
+- `AppleConvergedIPCPDPManager::start(): provider is not an instance of AppleConvergedIPCBBControl\n`
+- `ICEBBRTIDevice.cpp`
+- `ASPM L1 reject (Received PM_Active_State_Nak)`
+- `probe`
+- `site.AppleConvergedIPCICEBBControl`
+- `1211111212221212121121211112111111111111111111111111111111111111111111111111111111111111111111112222222222222222222222212`
+- `AppleConvergedIPCRingDirection`
+- `kACIPCPDPControlCommandDropped`
+- `site.AppleConvergedIPCLedaBBRTIContext`
+- `context`
+- `com.apple.driver.AppleConvergedIPCICEBB.user-access`
+- `LedaBBRTIContext`
+- `AppleConvergedIPCPDPInterface`
+- `site.AppleConvergedIPCLedaBBRTISharedInterface`
+- `B16@?0^{OSObject=^^?i}8`
+- `start`
+- `AppleConvergedPCIICEBB.cpp`
+- `AppleConvergedIPCLedaBBRTIDevice.cpp`
+- `EBUF SKP Add`
+- `kACIPCPDPReadFailed`
+- `domain`
+- `122111222112122222`
+- `Rx Valid de-assertion (without EIOS)`
+- `com.apple.acipc.bb.preventSleep`
+- `rx-pool-config`
+- `LedaBBRTIPipe.cpp`
+- `acipc-ignore-refclk-enable`
+- `AppleConvergedIPCSkywalkPacket`
+- `interface_id`
+- `2nd Retimer Parity Error (Gen4)`
+- `AppleConvergedIPCBBControl.cpp`
+- `site.AppleCellularDataPacketPool`
+- `buffer-size`
+- `site.AppleConvergedIPCSkywalkPacketBufferPool`
+- `pdp_ip%u`

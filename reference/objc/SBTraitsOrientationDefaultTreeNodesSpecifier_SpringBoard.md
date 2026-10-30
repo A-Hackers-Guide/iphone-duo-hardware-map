@@ -1,0 +1,23 @@
+# `SBTraitsOrientationDefaultTreeNodesSpecifier`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBTraitsOrientationStageComponent`
+- Protocols: `TRAPreferencesStageTreeNodesSpecifying`
+- 0 instance variables, 5 properties, 2 instance methods, 0 class methods
+
+## Properties
+
+```
+@property (T@"NSNumber",R,N) componentOrder;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[SBTraitsOrientationDefaultTreeNodesSpecifier _activeOrientationOrderedNodesWithContext:];
+-[SBTraitsOrientationDefaultTreeNodesSpecifier updateStageTreeNodesSpecifications:stageParticipantsRoles:context:];
+```

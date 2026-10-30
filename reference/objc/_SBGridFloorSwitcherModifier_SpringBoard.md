@@ -1,0 +1,107 @@
+# `_SBGridFloorSwitcherModifier`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBSwitcherModifier`
+- 0 instance variables, 0 properties, 97 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[_SBGridFloorSwitcherModifier jetsamModeForAppLayout:];
+-[_SBGridFloorSwitcherModifier scaleForIndex:];
+-[_SBGridFloorSwitcherModifier titleOpacityForIndex:];
+-[_SBGridFloorSwitcherModifier homeScreenScale];
+-[_SBGridFloorSwitcherModifier isContainerStatusBarVisible];
+-[_SBGridFloorSwitcherModifier foregroundAppLayouts];
+-[_SBGridFloorSwitcherModifier homeScreenBackdropBlurProgress];
+-[_SBGridFloorSwitcherModifier homeScreenDimmingAlpha];
+-[_SBGridFloorSwitcherModifier clippingFrameForIndex:withBounds:];
+-[_SBGridFloorSwitcherModifier isSwitcherWindowUserInteractionEnabled];
+-[_SBGridFloorSwitcherModifier homeScreenAlpha];
+-[_SBGridFloorSwitcherModifier isHomeScreenContentRequired];
+-[_SBGridFloorSwitcherModifier adjustedOffsetForOffset:translation:startPoint:locationInView:horizontalVelocity:verticalVelocity:];
+-[_SBGridFloorSwitcherModifier touchBehaviorForLayoutRole:inAppLayout:];
+-[_SBGridFloorSwitcherModifier cornerRadiiForIndex:];
+-[_SBGridFloorSwitcherModifier clipsToUnobscuredMarginAtIndex:];
+-[_SBGridFloorSwitcherModifier shouldScaleOverlayToFillBoundsAtIndex:];
+-[_SBGridFloorSwitcherModifier animationAttributesForLayoutElement:];
+-[_SBGridFloorSwitcherModifier adjustedAppLayoutsForAppLayouts:];
+-[_SBGridFloorSwitcherModifier clippingFrameForLayoutRole:inAppLayout:atIndex:withBounds:];
+-[_SBGridFloorSwitcherModifier homeScreenBackdropBlurType];
+-[_SBGridFloorSwitcherModifier dockProgress];
+-[_SBGridFloorSwitcherModifier visibleHomeAffordanceLayoutElements];
+-[_SBGridFloorSwitcherModifier topMostLayoutElements];
+-[_SBGridFloorSwitcherModifier isSwitcherWindowVisible];
+-[_SBGridFloorSwitcherModifier titleAndIconOpacityForIndex:];
+-[_SBGridFloorSwitcherModifier activityModeForAppLayout:];
+-[_SBGridFloorSwitcherModifier appLayoutsToCacheSnapshots];
+-[_SBGridFloorSwitcherModifier shouldScrollViewBlockTouches];
+-[_SBGridFloorSwitcherModifier isWallpaperRequiredForSwitcher];
+-[_SBGridFloorSwitcherModifier visibleAppLayouts];
+-[_SBGridFloorSwitcherModifier wantsDockBehaviorAssertion];
+-[_SBGridFloorSwitcherModifier isContentStatusBarVisibleForIndex:];
+-[_SBGridFloorSwitcherModifier shouldAccessoryDrawShadowForAppLayout:];
+-[_SBGridFloorSwitcherModifier dockUpdateMode];
+-[_SBGridFloorSwitcherModifier opacityForLayoutRole:inAppLayout:atIndex:];
+-[_SBGridFloorSwitcherModifier shouldAllowContentViewTouchesForLayoutRole:inAppLayout:];
+-[_SBGridFloorSwitcherModifier visibleCornersForTouchResizeForLayoutRole:inAppLayout:];
+-[_SBGridFloorSwitcherModifier isScrollEnabled];
+-[_SBGridFloorSwitcherModifier shadowOpacityForLayoutRole:atIndex:];
+-[_SBGridFloorSwitcherModifier contentOffsetForIndex:alignment:];
+-[_SBGridFloorSwitcherModifier headerStyleForIndex:];
+-[_SBGridFloorSwitcherModifier isIndexRubberbandableForSwipeToKill:];
+-[_SBGridFloorSwitcherModifier wallpaperStyle];
+-[_SBGridFloorSwitcherModifier frameForIndex:];
+-[_SBGridFloorSwitcherModifier activeLeafAppLayoutsReachableByKeyboardShortcut];
+-[_SBGridFloorSwitcherModifier wallpaperScale];
+-[_SBGridFloorSwitcherModifier adjustedContinuousExposeIdentifiersInStripFromPreviousIdentifiersInStrip:];
+-[_SBGridFloorSwitcherModifier destinationAppLayoutForDismissingCurrentMode];
+-[_SBGridFloorSwitcherModifier backgroundOpacityForIndex:];
+-[_SBGridFloorSwitcherModifier keyboardSuppressionMode];
+-[_SBGridFloorSwitcherModifier neighboringAppLayoutsForFocusedAppLayout:];
+-[_SBGridFloorSwitcherModifier visibleMarginForItemContainerAtIndex:];
+-[_SBGridFloorSwitcherModifier wallpaperOverlayAlphaForIndex:];
+-[_SBGridFloorSwitcherModifier identifiersInStrip];
+-[_SBGridFloorSwitcherModifier indexToScrollToAfterRemovingIndex:];
+-[_SBGridFloorSwitcherModifier distanceToLeadingEdgeOfLeadingCardFromTrailingEdgeOfScreenWithVisibleIndexToStartSearch:];
+-[_SBGridFloorSwitcherModifier restingOffsetForScrollOffset:velocity:];
+-[_SBGridFloorSwitcherModifier regionDividerOpacity];
+-[_SBGridFloorSwitcherModifier activeCornersForTouchResizeForLayoutRole:inAppLayout:];
+-[_SBGridFloorSwitcherModifier resetAdjustedScrollingState];
+-[_SBGridFloorSwitcherModifier snapshotScaleForLayoutRole:inAppLayout:];
+-[_SBGridFloorSwitcherModifier isFocusEnabledForAppLayout:];
+-[_SBGridFloorSwitcherModifier isItemResizingAllowedForLayoutRole:inAppLayout:];
+-[_SBGridFloorSwitcherModifier shouldUseBrightMaterialForIndex:];
+-[_SBGridFloorSwitcherModifier isLayoutRoleKillable:inAppLayout:atIndex:];
+-[_SBGridFloorSwitcherModifier canPerformKeyboardShortcutAction:forBundleIdentifier:];
+-[_SBGridFloorSwitcherModifier isLayoutRoleEligibleForContentDragSpringLoading:inAppLayout:];
+-[_SBGridFloorSwitcherModifier indexToScrollToAfterInsertingAtIndex:];
+-[_SBGridFloorSwitcherModifier isItemContainerPointerInteractionEnabled];
+-[_SBGridFloorSwitcherModifier regionDividerCenter];
+-[_SBGridFloorSwitcherModifier appLayoutsToResignActive];
+-[_SBGridFloorSwitcherModifier shelfBackgroundBlurOpacity];
+-[_SBGridFloorSwitcherModifier isLayoutRoleSelectable:inAppLayout:];
+-[_SBGridFloorSwitcherModifier appLayoutForReceivingHardwareButtonEvents];
+-[_SBGridFloorSwitcherModifier wantsRegionDivider];
+-[_SBGridFloorSwitcherModifier scrollViewAttributes];
+-[_SBGridFloorSwitcherModifier lighteningAlphaForIndex:];
+-[_SBGridFloorSwitcherModifier preferredStatusBarAxis];
+-[_SBGridFloorSwitcherModifier shelfBackgroundBlurFrame];
+-[_SBGridFloorSwitcherModifier asyncRenderingAttributesForAppLayout:];
+-[_SBGridFloorSwitcherModifier shadowStyleForLayoutRole:inAppLayout:];
+-[_SBGridFloorSwitcherModifier wantsHomeScreenPointerInteractions];
+-[_SBGridFloorSwitcherModifier shouldConfigureInAppDockHiddenAssertion];
+-[_SBGridFloorSwitcherModifier minimumTranslationToKillIndex:];
+-[_SBGridFloorSwitcherModifier regionDividerOptions];
+-[_SBGridFloorSwitcherModifier preferredSnapshotOrientationForAppLayout:];
+-[_SBGridFloorSwitcherModifier adjustedContinuousExposeIdentifiersInSwitcherFromPreviousIdentifiersInSwitcher:identifiersInStrip:];
+-[_SBGridFloorSwitcherModifier iconOpacityForIndex:];
+-[_SBGridFloorSwitcherModifier shouldBringCardToFrontDuringInsertionOrRemoval];
+-[_SBGridFloorSwitcherModifier isHomeAffordanceSupportedForAppLayout:];
+-[_SBGridFloorSwitcherModifier shouldAnimateInsertionOrRemovalOfAppLayout:atIndex:];
+-[_SBGridFloorSwitcherModifier contentPageViewScaleForAppLayout:withScale:];
+-[_SBGridFloorSwitcherModifier wantsAsynchronousSurfaceRetentionAssertion];
+-[_SBGridFloorSwitcherModifier appLayoutsToCacheFullsizeSnapshots];
+-[_SBGridFloorSwitcherModifier _forwardingTargetForUpdate];
+-[_SBGridFloorSwitcherModifier isLayoutRoleDraggable:inAppLayout:];
+```

@@ -1,0 +1,1947 @@
+# Symbols: `/System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__PrivateFrameworks__BackBoardServices.framework__BackBoardServices.md). **[DSC]**
+
+930 public symbols, 3,092 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x18a010ea0  __TEXT,__text  _BKAccelerometer_server
+0x18a010e18  __TEXT,__text  _BKAccelerometer_server_routine
+0x189fde410  __TEXT,__text  _BKCreateMIGServerSource
+0x189f9fb38  __TEXT,__text  _BKCreateMIGServerSourceWithContext
+0x18a01f528  __TEXT,__const  _BKDefaultBrightness
+0x1e080dae8  __DATA_CONST,__const  _BKDefaultKeyALSEnabled
+0x189fde6a4  __TEXT,__text  _BKGetContextForCalloutCurrentMIGServerSource
+0x189fde664  __TEXT,__text  _BKGetMachPortForMIGServerSource
+0x189fb4f28  __TEXT,__text  _BKHIDServicesGetCurrentDeviceOrientation
+0x189fc2cf4  __TEXT,__text  _BKHIDServicesGetNonFlatDeviceOrientation
+0x189fe2a28  __TEXT,__text  _BKLogAlternateSystemApp
+0x189f8f6a8  __TEXT,__text  _BKLogBacklight
+0x189fe2870  __TEXT,__text  _BKLogCommon
+0x189fa6524  __TEXT,__text  _BKLogDetailed
+0x189fafdc4  __TEXT,__text  _BKLogDisplay
+0x189fe2b60  __TEXT,__text  _BKLogDisplayArchive
+0x189f90638  __TEXT,__text  _BKLogEventDelivery
+0x189fe2928  __TEXT,__text  _BKLogEventDeliveryBuffering
+0x189fe29a8  __TEXT,__text  _BKLogEventDeliveryMatching
+0x189fe2d40  __TEXT,__text  _BKLogHapticFeedback
+0x189fe2aa8  __TEXT,__text  _BKLogIdleTimer
+0x189fa2e00  __TEXT,__text  _BKLogKeyboard
+0x189fb54c0  __TEXT,__text  _BKLogMousePointer
+0x18a003124  __TEXT,__text  _BKLogOrientationClient
+0x189fb5304  __TEXT,__text  _BKLogOrientationDevice
+0x18a0031dc  __TEXT,__text  _BKLogOrientationGlobal
+0x18a00325c  __TEXT,__text  _BKLogOrientationHostUI
+0x189fe2dc0  __TEXT,__text  _BKLogSecureRendering
+0x189fe2c50  __TEXT,__text  _BKLogSystemShell
+0x189fabf1c  __TEXT,__text  _BKLogTouchDeliveryObserver
+0x189fa7184  __TEXT,__text  _BKLogTouchDeliveryPolicy
+0x189f9735c  __TEXT,__text  _BKLogTouchEvents
+0x189fab158  __TEXT,__text  _BKLogTouchStream
+0x189f9343c  __TEXT,__text  _BKLogUISensor
+0x1e080dae0  __DATA_CONST,__const  _BKLoggingSubsystem
+0x1e080dad8  __DATA_CONST,__const  _BKMouseInterpolationPointer
+0x1e080dad0  __DATA_CONST,__const  _BKMouseInterpolationRotation
+0x1e080dac8  __DATA_CONST,__const  _BKMouseInterpolationScale
+0x1e080dac0  __DATA_CONST,__const  _BKMouseInterpolationScroll
+0x1e080dab8  __DATA_CONST,__const  _BKMouseInterpolationTranslation
+0x18a0069b8  __TEXT,__text  _BKNSStringFromIOHIDEventPhase
+0x18a0067f0  __TEXT,__text  _BKNSStringFromIOHIDGenericGestureType
+0x1e080dab0  __DATA_CONST,__const  _BKSActivateForEventOptionTypeBackgroundContentFetching
+0x1e080daa8  __DATA_CONST,__const  _BKSDebugOptionKeyArguments
+0x1e080daa0  __DATA_CONST,__const  _BKSDebugOptionKeyCancelDebugOnNextLaunch
+0x1e080da98  __DATA_CONST,__const  _BKSDebugOptionKeyDebugOnNextLaunch
+0x1e080da90  __DATA_CONST,__const  _BKSDebugOptionKeyDisableASLR
+0x1e080da88  __DATA_CONST,__const  _BKSDebugOptionKeyEnvironment
+0x1e080da80  __DATA_CONST,__const  _BKSDebugOptionKeyStandardErrorPath
+0x1e080da78  __DATA_CONST,__const  _BKSDebugOptionKeyStandardOutPath
+0x1e080da70  __DATA_CONST,__const  _BKSDebugOptionKeyWaitForDebugger
+0x189fe1dc0  __TEXT,__text  _BKSDisplayBrightnessCurveGetCurrent
+0x189fe1d6c  __TEXT,__text  _BKSDisplayBrightnessCurveSet
+0x189f9f524  __TEXT,__text  _BKSDisplayBrightnessGetCurrent
+0x189fe1e6c  __TEXT,__text  _BKSDisplayBrightnessIsAutoBrightnessAvailable
+0x189fe1ecc  __TEXT,__text  _BKSDisplayBrightnessIsBrightnessLevelControlAvailable
+0x189fe1d28  __TEXT,__text  _BKSDisplayBrightnessRestoreSystemBrightness
+0x189fe1c70  __TEXT,__text  _BKSDisplayBrightnessSet
+0x189fe1e18  __TEXT,__text  _BKSDisplayBrightnessSetAutoBrightnessEnabled
+0x189fe1cd4  __TEXT,__text  _BKSDisplayBrightnessSetWithImplicitTransaction
+0x189fe1b90  __TEXT,__text  _BKSDisplayBrightnessTransactionCreate
+0x189fe1b20  __TEXT,__text  _BKSDisplayBrightnessTransactionGetTypeID
+0x1e080da68  __DATA_CONST,__const  _BKSDisplayServiceName
+0x1e080da60  __DATA_CONST,__const  _BKSDisplayServiceNilDisplayUUID
+0x189fd4014  __TEXT,__text  _BKSDisplayServicesAcquireDisplayDisabledAssertion
+0x189fd5d7c  __TEXT,__text  _BKSDisplayServicesApplyRenderOverlay
+0x189fd6824  __TEXT,__text  _BKSDisplayServicesArchiveWithOptionsAndCompletion
+0x189fd6594  __TEXT,__text  _BKSDisplayServicesDismissInterstitialRenderOverlay
+0x189fb06ac  __TEXT,__text  _BKSDisplayServicesDisplayIsTethered
+0x189fd58dc  __TEXT,__text  _BKSDisplayServicesDrawPersistentScreenSnapshot
+0x189fd629c  __TEXT,__text  _BKSDisplayServicesFreezeRenderOverlay
+0x189fd4470  __TEXT,__text  _BKSDisplayServicesGetBlankingRemovesPower
+0x189fd447c  __TEXT,__text  _BKSDisplayServicesGetDisplayTraits
+0x189fa5414  __TEXT,__text  _BKSDisplayServicesGetExternalDisplayScale
+0x189fa5408  __TEXT,__text  _BKSDisplayServicesGetMainScreenInfo
+0x189fd6620  __TEXT,__text  _BKSDisplayServicesGetRenderOverlayDismissActions
+0x189fd59c4  __TEXT,__text  _BKSDisplayServicesGetRenderOverlayForDisplay
+0x189fd45c4  __TEXT,__text  _BKSDisplayServicesGetSystemIdentifiers
+0x189fd48f8  __TEXT,__text  _BKSDisplayServicesIsFlipBookEnabled
+0x189fd4b5c  __TEXT,__text  _BKSDisplayServicesIsFlipBookSuppressed
+0x189fd3f4c  __TEXT,__text  _BKSDisplayServicesIsScreenDisabled
+0x189fafb4c  __TEXT,__text  _BKSDisplayServicesNotifyDisplayBlanked
+0x189fd61a8  __TEXT,__text  _BKSDisplayServicesRemoveRenderOverlay
+0x189fc0884  __TEXT,__text  _BKSDisplayServicesServerPort
+0x189fd5780  __TEXT,__text  _BKSDisplayServicesSetArrangement
+0x189fd4478  __TEXT,__text  _BKSDisplayServicesSetBlankingRemovesPower
+0x189fd4a7c  __TEXT,__text  _BKSDisplayServicesSetCalibrationPhase
+0x189fd4a84  __TEXT,__text  _BKSDisplayServicesSetCalibrationPhaseWithEventType
+0x189fd4e24  __TEXT,__text  _BKSDisplayServicesSetCloneMirroringMode
+0x189fd4ea0  __TEXT,__text  _BKSDisplayServicesSetCloneMirroringModeForSourceDisplayToDestinationDisplay
+0x189fd5630  __TEXT,__text  _BKSDisplayServicesSetCloneRotationDisabled
+0x189fd4468  __TEXT,__text  _BKSDisplayServicesSetDisplayBlanked
+0x189fd49bc  __TEXT,__text  _BKSDisplayServicesSetFlipBookEnabled
+0x189fd4c20  __TEXT,__text  _BKSDisplayServicesSetFlipBookSuppressed
+0x189fd4e90  __TEXT,__text  _BKSDisplayServicesSetMainDisplayCloneMirroringModeForDestinationDisplay
+0x189fd551c  __TEXT,__text  _BKSDisplayServicesSetMirroringOnlyDisplayCloningSource
+0x189fd3e28  __TEXT,__text  _BKSDisplayServicesSetReachabilityBounds
+0x189fd4e20  __TEXT,__text  _BKSDisplayServicesSetReplayCloneContexts
+0x189fd43cc  __TEXT,__text  _BKSDisplayServicesSetScreenBlanked
+0x189fd3d24  __TEXT,__text  _BKSDisplayServicesSetScreenDisabled
+0x189fd472c  __TEXT,__text  _BKSDisplayServicesSetSystemIdentifiers
+0x189fd568c  __TEXT,__text  _BKSDisplayServicesSetTetheredOrientationNotificationsDisabled
+0x189fd562c  __TEXT,__text  _BKSDisplayServicesSetVirtualDisplayClientPID
+0x189f93a7c  __TEXT,__text  _BKSDisplayServicesStart
+0x189fd5960  __TEXT,__text  _BKSDisplayServicesTearDownPersistentScreenSnapshot
+0x189fd5684  __TEXT,__text  _BKSDisplayServicesTetherPrefsNeedImmediateUpdate
+0x189fd5694  __TEXT,__text  _BKSDisplayServicesUpdateMirroredDisplayOrientationWithInterfaceOrientation
+0x189fd5690  __TEXT,__text  _BKSDisplayServicesUpdateTetheredDisplayOrientationIfNecessaryWithInterfaceOrientation
+0x189fd4ce0  __TEXT,__text  _BKSDisplayServicesWillUnblank
+0x189fd4d70  __TEXT,__text  _BKSDisplayServicesWillUnblankDisplay
+0x189fd572c  __TEXT,__text  _BKSDisplaySetSecureMode
+0x1e080da58  __DATA_CONST,__const  _BKSDisplayUUIDMainKey
+0x189fb0170  __TEXT,__text  _BKSHIDDigitizerEventIsFirstTouchDown
+0x18a0046a4  __TEXT,__text  _BKSHIDEventAttributeDataWithExpectedClass
+0x1e080da50  __DATA_CONST,__const  _BKSHIDEventClientConnectionBundleIdentifierKey
+0x1e080da48  __DATA_CONST,__const  _BKSHIDEventClientConnectionLastPathComponentKey
+0x1e080da40  __DATA_CONST,__const  _BKSHIDEventClientConnectionPidKey
+0x189fafeb4  __TEXT,__text  _BKSHIDEventContainsUpdates
+0x18a005238  __TEXT,__text  _BKSHIDEventCopyDisplayIDFromDigitizerEvent
+0x18a0046f8  __TEXT,__text  _BKSHIDEventCopyDisplayIDFromEvent
+0x189fb8edc  __TEXT,__text  _BKSHIDEventCreateBackBoardVendorSubtypeEvent
+0x1e080da38  __DATA_CONST,__const  _BKSHIDEventDeferringPithyDescription
+0x1e080da30  __DATA_CONST,__const  _BKSHIDEventDeliveryManagerBSServiceName
+0x1e080da28  __DATA_CONST,__const  _BKSHIDEventDeliveryObserverBSServiceName
+0x18a0077d4  __TEXT,__text  _BKSHIDEventDescription
+0x18a007f40  __TEXT,__text  _BKSHIDEventDigitizerDetachTouches
+0x18a007e7c  __TEXT,__text  _BKSHIDEventDigitizerDetachTouchesWithIdentifiers
+0x18a007f30  __TEXT,__text  _BKSHIDEventDigitizerDetachTouchesWithIdentifiersAndPolicy
+0x18a005584  __TEXT,__text  _BKSHIDEventDigitizerGetTouchIdentifier
+0x189fa603c  __TEXT,__text  _BKSHIDEventDigitizerGetTouchLocus
+0x18a005774  __TEXT,__text  _BKSHIDEventDigitizerGetTouchUserIdentifier
+0x18a007fe0  __TEXT,__text  _BKSHIDEventDigitizerSetTouchOffset
+0x18a008110  __TEXT,__text  _BKSHIDEventDigitizerSetTouchRoutingPolicy
+0x18a007688  __TEXT,__text  _BKSHIDEventEnumerateChildEvents
+0x18a00784c  __TEXT,__text  _BKSHIDEventEnumerateUpdatesWithBlock
+0x189fb8d2c  __TEXT,__text  _BKSHIDEventGetBackBoardVendorSubtype
+0x189f93804  __TEXT,__text  _BKSHIDEventGetBaseAttributes
+0x18a0051dc  __TEXT,__text  _BKSHIDEventGetButtonIsCancelledFromButtonEvent
+0x189faa428  __TEXT,__text  _BKSHIDEventGetConciseDescription
+0x18a00523c  __TEXT,__text  _BKSHIDEventGetContextIDFromDigitizerEvent
+0x18a0047a0  __TEXT,__text  _BKSHIDEventGetContextIDFromEvent
+0x189f938e0  __TEXT,__text  _BKSHIDEventGetDigitizerAttributes
+0x18a005b5c  __TEXT,__text  _BKSHIDEventGetHitTestPointFromDigitizerEventForPathEvent
+0x18a0052e8  __TEXT,__text  _BKSHIDEventGetInitialTouchTimestampFromDigitizerEvent
+0x18a00484c  __TEXT,__text  _BKSHIDEventGetIsSystemAppEventFromEvent
+0x18a005278  __TEXT,__text  _BKSHIDEventGetIsSystemGestureStateChangeFromDigitizerEvent
+0x18a0045a4  __TEXT,__text  _BKSHIDEventGetKeyboardAttributes
+0x18a005328  __TEXT,__text  _BKSHIDEventGetMaximumForceFromDigitizerEvent
+0x18a005368  __TEXT,__text  _BKSHIDEventGetPointFromDigitizerEvent
+0x18a004524  __TEXT,__text  _BKSHIDEventGetPointerAttributes
+0x18a005e8c  __TEXT,__text  _BKSHIDEventGetPrecisePointFromDigitizerEventForPathEvent
+0x189faa9d8  __TEXT,__text  _BKSHIDEventGetProximityAttributes
+0x189faf924  __TEXT,__text  _BKSHIDEventGetRemoteTimestamp
+0x18a004624  __TEXT,__text  _BKSHIDEventGetSmartCoverAttributes
+0x18a006420  __TEXT,__text  _BKSHIDEventGetSmartCoverStateFromEvent
+0x18a00480c  __TEXT,__text  _BKSHIDEventGetSourceFromKeyboardEvent
+0x18a005240  __TEXT,__text  _BKSHIDEventGetSystemGestureStatusFromDigitizerEvent
+0x18a0052b0  __TEXT,__text  _BKSHIDEventGetTouchStreamIdentifier
+0x18a005964  __TEXT,__text  _BKSHIDEventGetZGradientFromDigitizerEventForPathEvent
+0x18a007c5c  __TEXT,__text  _BKSHIDEventMatchingPredicate
+0x18a003a7c  __TEXT,__text  _BKSHIDEventRegisterEventCallback
+0x18a0039e8  __TEXT,__text  _BKSHIDEventRegisterEventCallbackOnQueue
+0x189fb2014  __TEXT,__text  _BKSHIDEventRegisterEventCallbackOnRunLoop
+0x18a003ab0  __TEXT,__text  _BKSHIDEventSendToApplicationWithBundleIDAndPid
+0x18a003abc  __TEXT,__text  _BKSHIDEventSendToApplicationWithBundleIDAndPidAndFollowingFocusChain
+0x18a003d60  __TEXT,__text  _BKSHIDEventSendToFocusedProcess
+0x18a004120  __TEXT,__text  _BKSHIDEventSendToProcess
+0x18a004308  __TEXT,__text  _BKSHIDEventSendToProcessAndFollowDeferringRules
+0x18a003db8  __TEXT,__text  _BKSHIDEventSendToResolvedProcessForDeferringEnvironment
+0x1e080da20  __DATA_CONST,__const  _BKSHIDEventServiceKeyRouteEventsIgnoringSystemShellPolicy
+0x189fa5a8c  __TEXT,__text  _BKSHIDEventSetAttributes
+0x18a0048a8  __TEXT,__text  _BKSHIDEventSetBaseAttributes
+0x18a0049ec  __TEXT,__text  _BKSHIDEventSetDigitizerAttributes
+0x18a0061b8  __TEXT,__text  _BKSHIDEventSetDigitizerInfo
+0x18a0061ec  __TEXT,__text  _BKSHIDEventSetDigitizerInfoWithSubEventInfoAndTouchStreamIdentifier
+0x18a0061cc  __TEXT,__text  _BKSHIDEventSetDigitizerInfoWithSubEventInfos
+0x18a0061e0  __TEXT,__text  _BKSHIDEventSetDigitizerInfoWithTouchStreamIdentifier
+0x18a004c74  __TEXT,__text  _BKSHIDEventSetKeyboardAttributes
+0x18a004b30  __TEXT,__text  _BKSHIDEventSetPointerAttributes
+0x18a004db8  __TEXT,__text  _BKSHIDEventSetProximityAttributes
+0x18a0064e0  __TEXT,__text  _BKSHIDEventSetRemoteTimestamp
+0x18a00515c  __TEXT,__text  _BKSHIDEventSetSimpleDeliveryInfo
+0x18a005040  __TEXT,__text  _BKSHIDEventSetSimpleInfo
+0x18a004efc  __TEXT,__text  _BKSHIDEventSetSmartCoverAttributes
+0x18a006458  __TEXT,__text  _BKSHIDEventSetSmartCoverInfo
+0x18a0066d8  __TEXT,__text  _BKSHIDEventSourceStringName
+0x18a008478  __TEXT,__text  _BKSHIDEventTransferTouchesToDifferentCAContext
+0x1e080da18  __DATA_CONST,__const  _BKSHIDEventUsagePairDescriptorOmitNameStyleKey
+0x189fc19ec  __TEXT,__text  _BKSHIDKeyboardGetDeviceProperties
+0x189fc1650  __TEXT,__text  _BKSHIDKeyboardIsCapsLockLightOn
+0x189fc1b00  __TEXT,__text  _BKSHIDKeyboardSetCapsLockActive
+0x189fc17d0  __TEXT,__text  _BKSHIDKeyboardSetCapsLockDelayOverride
+0x189fc171c  __TEXT,__text  _BKSHIDKeyboardSetCapsLockRomanSwitchMode
+0x189fc1840  __TEXT,__text  _BKSHIDKeyboardSetLayout
+0x189fc1a90  __TEXT,__text  _BKSHIDKeyboardWantsStandardTypeOverride
+0x1e080da10  __DATA_CONST,__const  _BKSHIDServiceConnectionBSServiceDomainName
+0x1e080da08  __DATA_CONST,__const  _BKSHIDServiceConnectionMachName
+0x189fc0f5c  __TEXT,__text  _BKSHIDServicesAmbientLightSensorDisableAutoBrightness
+0x189fc0f08  __TEXT,__text  _BKSHIDServicesAmbientLightSensorEnableAutoBrightness
+0x189fc0e74  __TEXT,__text  _BKSHIDServicesAmbientLightSensorExists
+0x189fc1e3c  __TEXT,__text  _BKSHIDServicesCancelButtonEventsFromSenderID
+0x189fc1f30  __TEXT,__text  _BKSHIDServicesCancelTouchesOnAllDisplays
+0x189f8f6f8  __TEXT,__text  _BKSHIDServicesCancelTouchesOnDisplay
+0x189f8f6f0  __TEXT,__text  _BKSHIDServicesCancelTouchesOnMainDisplay
+0x189fc1f74  __TEXT,__text  _BKSHIDServicesCancelTouchesWithIdentifiers
+0x189fc1a54  __TEXT,__text  _BKSHIDServicesCapsLockKeyHasLanguageSwitchLabel
+0x189fc20d0  __TEXT,__text  _BKSHIDServicesClaimGenericGestureFocus
+0x189faff18  __TEXT,__text  _BKSHIDServicesDeviceHasHighFrequencyDigitizer
+0x189fc2244  __TEXT,__text  _BKSHIDServicesExcludeCAContextsFromHitTestingForZoomSenders
+0x189fc0ac8  __TEXT,__text  _BKSHIDServicesGetBacklightFactor
+0x189fc4844  __TEXT,__text  _BKSHIDServicesGetCALayerTransform
+0x189fc19a8  __TEXT,__text  _BKSHIDServicesGetHardwareKeyboardLanguage
+0x189fb1200  __TEXT,__text  _BKSHIDServicesGetHumanPresenceStatus
+0x189fc1458  __TEXT,__text  _BKSHIDServicesGetObjectInProximityIgnoresTouches
+0x189fb3d04  __TEXT,__text  _BKSHIDServicesGetObjectWithinProximity
+0x189fc3c3c  __TEXT,__text  _BKSHIDServicesGetPersistentServiceProperties
+0x189fc1de4  __TEXT,__text  _BKSHIDServicesGetRingerState
+0x189fc15ec  __TEXT,__text  _BKSHIDServicesIsCapsLockLightOn
+0x189fc3010  __TEXT,__text  _BKSHIDServicesIsOrientationLockedWithOrientation
+0x189fb07b8  __TEXT,__text  _BKSHIDServicesIsSmartCoverClosed
+0x189fb0cac  __TEXT,__text  _BKSHIDServicesLastUserEventTime
+0x189fc2e58  __TEXT,__text  _BKSHIDServicesLockOrientation
+0x1e080da00  __DATA_CONST,__const  _BKSHIDServicesModifierKeysRemappingPreferenceKey
+0x189fb5134  __TEXT,__text  _BKSHIDServicesNotifyBacklightFactorWithFadeDurationAsync
+0x189fc2bf0  __TEXT,__text  _BKSHIDServicesNotifyOnNextUserEvent
+0x1e080d9f8  __DATA_CONST,__const  _BKSHIDServicesOldModifierKeysRemappingPreferenceKey
+0x189fc46c8  __TEXT,__text  _BKSHIDServicesProductIdentifierFromServiceProperties
+0x189fae030  __TEXT,__text  _BKSHIDServicesProximityDetectionActive
+0x18a007128  __TEXT,__text  _BKSHIDServicesProximityDetectionModeIsValid
+0x189fc1084  __TEXT,__text  _BKSHIDServicesProximityDetectionModePriority
+0x189fc0fa0  __TEXT,__text  _BKSHIDServicesRequestEstimatedProximityEvents
+0x189fc2658  __TEXT,__text  _BKSHIDServicesRequestHapticFeedback
+0x189fb3a84  __TEXT,__text  _BKSHIDServicesRequestProximityDetectionMode
+0x189fc0ff0  __TEXT,__text  _BKSHIDServicesRequestProximityStatusEvent
+0x189fc1114  __TEXT,__text  _BKSHIDServicesResetProximityCalibration
+0x189fc2b70  __TEXT,__text  _BKSHIDServicesResetUserEventTimer
+0x189fc2c70  __TEXT,__text  _BKSHIDServicesSafeToResetIdleTimer
+0x189fc0808  __TEXT,__text  _BKSHIDServicesServerPort
+0x189fc325c  __TEXT,__text  _BKSHIDServicesSetAccelerometerClientEventsEnabled
+0x189fc1c8c  __TEXT,__text  _BKSHIDServicesSetAuthenticatedKeyCommands
+0x189fc0b24  __TEXT,__text  _BKSHIDServicesSetBacklightFactorPending
+0x189fc0b78  __TEXT,__text  _BKSHIDServicesSetBacklightFactorWithFadeDuration
+0x189fc0be8  __TEXT,__text  _BKSHIDServicesSetBacklightFactorWithFadeDurationAsync
+0x189fc0c5c  __TEXT,__text  _BKSHIDServicesSetBacklightFactorWithFadeDurationSilently
+0x189fc0ccc  __TEXT,__text  _BKSHIDServicesSetBacklightFactorWithFadeDurationSilentlyAsync
+0x189fc0d40  __TEXT,__text  _BKSHIDServicesSetBacklightFeatures
+0x189fc1778  __TEXT,__text  _BKSHIDServicesSetCapsLockDelayOverride
+0x189fc16c0  __TEXT,__text  _BKSHIDServicesSetCapsLockRomanSwitchMode
+0x189fc30b0  __TEXT,__text  _BKSHIDServicesSetDeviceInterfaceOrientation
+0x189fc3208  __TEXT,__text  _BKSHIDServicesSetDeviceOrientationForAutomation
+0x189fc3148  __TEXT,__text  _BKSHIDServicesSetDisplayInterfaceOrientation
+0x189fc126c  __TEXT,__text  _BKSHIDServicesSetHIDUILockedState
+0x189fc1280  __TEXT,__text  _BKSHIDServicesSetHIDUILockedStateWithSource
+0x189fc1834  __TEXT,__text  _BKSHIDServicesSetHardwareKeyboardLayout
+0x189f93484  __TEXT,__text  _BKSHIDServicesSetHitTestRegionsForDisplay
+0x189f8f470  __TEXT,__text  _BKSHIDServicesSetMinimumBrightnessLevelWithFadeDuration
+0x189fc14b8  __TEXT,__text  _BKSHIDServicesSetObjectInProximityIgnoresTouches
+0x189fc2d4c  __TEXT,__text  _BKSHIDServicesSetOrientationClient
+0x189fc342c  __TEXT,__text  _BKSHIDServicesSetPersistentServiceProperties
+0x189fc10a8  __TEXT,__text  _BKSHIDServicesSetProximityEventsClient
+0x189fc1c30  __TEXT,__text  _BKSHIDServicesSetStandardType
+0x189fc32f4  __TEXT,__text  _BKSHIDServicesSetTouchHand
+0x189fc1ea8  __TEXT,__text  _BKSHIDServicesSetTouchPadAvailability
+0x189fc3b10  __TEXT,__text  _BKSHIDServicesSetWristState
+0x189fc2f40  __TEXT,__text  _BKSHIDServicesUnlockOrientation
+0x18a01f520  __TEXT,__const  _BKSHIDServicesUserEventTimerIntervalForever
+0x189fc4990  __TEXT,__text  _BKSHIDTouchSensitiveButtonRequestScanMode
+0x1e080d9f0  __DATA_CONST,__const  _BKSHIDTouchStreamBSServiceName
+0x1e080d9e8  __DATA_CONST,__const  _BKSHIDUISensorServiceName
+0x1e080d9e0  __DATA_CONST,__const  _BKSKeyboardBSServiceName
+0x189faaa58  __TEXT,__text  _BKSNSStringFromIOHIDProximityDetectionMask
+0x189fc4d38  __TEXT,__text  _BKSOpenApplicationErrorCodeToString
+0x1e080d9d8  __DATA_CONST,__const  _BKSOpenApplicationOptionKeyActivateAsClassic
+0x1e080d9d0  __DATA_CONST,__const  _BKSOpenApplicationOptionKeyActivateForEvent
+0x1e080d9c8  __DATA_CONST,__const  _BKSOpenApplicationOptionKeyActivateSuspended
+0x1e080d9c0  __DATA_CONST,__const  _BKSOpenApplicationOptionKeyDebuggingOptions
+0x1e080d9b8  __DATA_CONST,__const  _BKSOpenApplicationOptionKeyIsSensitiveURL
+0x1e080d9b0  __DATA_CONST,__const  _BKSOpenApplicationOptionKeyLaunchImageName
+0x1e080d9a8  __DATA_CONST,__const  _BKSOpenApplicationOptionKeyLaunchOrigin
+0x1e080d9a0  __DATA_CONST,__const  _BKSOpenApplicationOptionKeyPayloadAnnotation
+0x1e080d998  __DATA_CONST,__const  _BKSOpenApplicationOptionKeyPayloadOptions
+0x1e080d990  __DATA_CONST,__const  _BKSOpenApplicationOptionKeyPayloadURL
+0x1e080d988  __DATA_CONST,__const  _BKSOpenApplicationOptionKeyServiceAvailabilityTimeout
+0x1e080d980  __DATA_CONST,__const  _BKSOpenApplicationOptionKeyUnlockDevice
+0x1e080d978  __DATA_CONST,__const  _BKSProximitySensorBSServiceName
+0x189fbce80  __TEXT,__text  _BKSRestartActionOptionsDescription
+0x1e080d970  __DATA_CONST,__const  _BKSSecureRenderingServiceName
+0x1e080d968  __DATA_CONST,__const  _BKSSystemApplicationServiceName
+0x1e080d960  __DATA_CONST,__const  _BKSSystemShellConnectionContextKeyBundleID
+0x1e080d958  __DATA_CONST,__const  _BKSSystemShellConnectionContextKeyBundlePath
+0x1e080d950  __DATA_CONST,__const  _BKSSystemShellConnectionContextKeyIdleSleepInterval
+0x1e080d948  __DATA_CONST,__const  _BKSSystemShellConnectionContextKeyLaunchJobLabel
+0x1e080d940  __DATA_CONST,__const  _BKSSystemShellConnectionContextKeyWatchdogType
+0x1e080d938  __DATA_CONST,__const  _BKSSystemShellControllerServiceName
+0x1e080d930  __DATA_CONST,__const  _BKSSystemShellDataMigrationCheckInServiceName
+0x1e080d928  __DATA_CONST,__const  _BKSSystemShellMachServiceName
+0x1e080d920  __DATA_CONST,__const  _BKSSystemShellServiceDomainName
+0x1e080d918  __DATA_CONST,__const  _BKSSystemShellShellServiceName
+0x189fe4250  __TEXT,__text  _BKSTerminateApplicationForReasonAndReportWithDescription
+0x1e080d910  __DATA_CONST,__const  _BKSTouchDeliveryObservationBSServiceName
+0x189feafdc  __TEXT,__text  _BKSTouchDeliveryOccurrenceKindFromUpdateType
+0x189fbfbfc  __TEXT,__text  _BKSTouchDeliveryPolicyServerGetProxyWithErrorHandler
+0x1e080d908  __DATA_CONST,__const  _BKSTouchDeliveryPolicyServerMachServiceName
+0x1e080d900  __DATA_CONST,__const  _BKSTouchEventBSServiceName
+0x189ffad50  __TEXT,__text  _BKSWatchdogGetIsAlive
+0x189fc0900  __TEXT,__text  _BKSWatchdogServerPort
+0x189fb9844  __TEXT,__text  _BSDescriptionStreamAppendBKSKeyModifierFlags
+0x189ff08d4  __TEXT,__text  _NSStringFromBKSButtonHapticAssetType
+0x189fd3ccc  __TEXT,__text  _NSStringFromBKSDisplayServicesCloneMirroringMode
+0x189fd3b70  __TEXT,__text  _NSStringFromBKSDisplayTags
+0x189fc8438  __TEXT,__text  _NSStringFromBKSHIDEventAttributeOptions
+0x189fe5db8  __TEXT,__text  _NSStringFromBKSHIDEventAuthenticationStatus
+0x189fb8cd4  __TEXT,__text  _NSStringFromBKSHIDEventBackBoardVendorSubtype
+0x189fc86c4  __TEXT,__text  _NSStringFromBKSHIDEventContextMove
+0x189fc871c  __TEXT,__text  _NSStringFromBKSHIDEventContextType
+0x189f94534  __TEXT,__text  _NSStringFromBKSHIDEventDeferringPolicyStatus
+0x189ff2e70  __TEXT,__text  _NSStringFromBKSHIDEventDeferringReachability
+0x189fad7e0  __TEXT,__text  _NSStringFromBKSHIDEventDeferringRulePriority
+0x189ffdc88  __TEXT,__text  _NSStringFromBKSHIDEventHardwareType
+0x189f97240  __TEXT,__text  _NSStringFromBKSHIDEventHitTestLayerInformationMask
+0x189fc85a4  __TEXT,__text  _NSStringFromBKSHIDEventPointerAttributeOptions
+0x189fc866c  __TEXT,__text  _NSStringFromBKSHIDEventPointerAttributeState
+0x189fc85a8  __TEXT,__text  _NSStringFromBKSHIDEventScreenEdgeMask
+0x189fe5e10  __TEXT,__text  _NSStringFromBKSHIDEventSecureNameStatus
+0x18a0063f8  __TEXT,__text  _NSStringFromBKSHIDEventSmartCoverState
+0x18a0066dc  __TEXT,__text  _NSStringFromBKSHIDEventSource
+0x189fc8774  __TEXT,__text  _NSStringFromBKSHIDEventTeleportState
+0x18a007144  __TEXT,__text  _NSStringFromBKSHIDForceStageTransition
+0x189ffae68  __TEXT,__text  _NSStringFromBKSHIDHapticFeedbackRequestDeviceType
+0x189fc150c  __TEXT,__text  _NSStringFromBKSHIDServicesHumanPresenceStatus
+0x189faabf4  __TEXT,__text  _NSStringFromBKSHIDServicesProximityDetectionMode
+0x189fc2b4c  __TEXT,__text  _NSStringFromBKSHIDServicesUserEventTimerMode
+0x18a006734  __TEXT,__text  _NSStringFromBKSHIDTouchLocus
+0x189fc48c8  __TEXT,__text  _NSStringFromBKSHIDTouchSensitiveButtonIdentifier
+0x189fc492c  __TEXT,__text  _NSStringFromBKSHIDTouchSensitiveButtonScanMode
+0x189fc1150  __TEXT,__text  _NSStringFromBKSHIDUILockSource
+0x189fc1174  __TEXT,__text  _NSStringFromBKSHIDUILockState
+0x189fb52a0  __TEXT,__text  _NSStringFromBKSHIDUISensorChangeSource
+0x189faecb0  __TEXT,__text  _NSStringFromBKSHIDUISensorDisplayState
+0x189fb53bc  __TEXT,__text  _NSStringFromBKSHitTestRegionLocation
+0x189fff8dc  __TEXT,__text  _NSStringFromBKSHitTestStimulus
+0x189fb99bc  __TEXT,__text  _NSStringFromBKSKeyModifierFlags
+0x189fe3160  __TEXT,__text  _NSStringFromBKSMousePointerDeviceClickHapticStrength
+0x189fab220  __TEXT,__text  _NSStringFromBKSSceneHostTouchBehavior
+0x189fe6f0c  __TEXT,__text  _NSStringFromBKSSystemShellCheckInStatus
+0x189f96fc4  __TEXT,__text  _NSStringFromBKSTouchAuthenticationFinalSampleEvent
+0x189f96f6c  __TEXT,__text  _NSStringFromBKSTouchAuthenticationInitialSampleEvent
+0x189feb000  __TEXT,__text  _NSStringFromBKSTouchDeliveryOccurrenceKind
+0x189ffbb88  __TEXT,__text  _NSStringFromBKSTouchDeliveryUpdateType
+0x189fc7f2c  __TEXT,__text  _NSStringFromBKSTouchHitTestContextCategory
+0x18a00678c  __TEXT,__text  _NSStringFromBKSTouchStreamIdentifier
+0x189ff9c44  __TEXT,__text  _NSStringFromBKSWindowServerHitTestOcclusionType
+0x1ef4e5fa8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSAbstractDefaults
+0x1ee112808  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSAccelerometer
+0x1ef4e5878  __AUTH,__objc_data  _OBJC_CLASS_$_BKSAlternateSystemApp
+0x1ee112650  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSAnimationFenceHandle
+0x1ef4e5238  __AUTH,__objc_data  _OBJC_CLASS_$_BKSBackgroundTouchDeliveryUpdate
+0x1ef4e5850  __AUTH,__objc_data  _OBJC_CLASS_$_BKSBacklightFeatures
+0x1ef4e5f80  __AUTH,__objc_data  _OBJC_CLASS_$_BKSButtonHapticsController
+0x1ef4e6840  __AUTH,__objc_data  _OBJC_CLASS_$_BKSButtonHapticsDefinition
+0x1ee1115c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSContextRelativePoint
+0x1ef4e5f58  __AUTH,__objc_data  _OBJC_CLASS_$_BKSDefaults
+0x1ef4e5f30  __AUTH,__objc_data  _OBJC_CLASS_$_BKSDisplayArrangementItem
+0x1ef4e5f08  __AUTH,__objc_data  _OBJC_CLASS_$_BKSDisplayInterstitialRenderOverlayDismissAction
+0x1ef4e5ee0  __AUTH,__objc_data  _OBJC_CLASS_$_BKSDisplayProgressIndicatorProperties
+0x1ef4e6818  __AUTH,__objc_data  _OBJC_CLASS_$_BKSDisplayRenderOverlay
+0x1ef4e67f0  __AUTH,__objc_data  _OBJC_CLASS_$_BKSDisplayRenderOverlayDescriptor
+0x1ef4e5210  __AUTH,__objc_data  _OBJC_CLASS_$_BKSDisplayService
+0x1ef4e54b8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSDisplayTraits
+0x1ee112038  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSEventDeferringChainIdentity
+0x1ef4e69f8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSEventFocusManager
+0x1ef4e5eb8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSExternalDefaults
+0x1ef4e6ed0  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDAuthenticatedKeyCommandSpecification
+0x1ee112560  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventAuthenticationMessage
+0x1ef4e5e90  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventAuthenticationOriginator
+0x1ee112010  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventBaseAttributes
+0x1ef4e67c8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventBiometricDescriptor
+0x1ef4e4ec8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventCollectionDescriptor
+0x1ee1119a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringChangeBasis
+0x1ee111a70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringConstraint
+0x1ef4e5e68  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringConstraintAssertion
+0x1ee1127b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringEnvironment
+0x1ee111660  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringGrantAssertion
+0x1ee111b38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringModality
+0x1ee111750  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringModalityAssertion
+0x1ee111d40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringNamespacePredicate
+0x1ee112600  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringPredicate
+0x1ee111ca0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringReachabilityStatus
+0x1ef4e6d18  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringResolution
+0x1ee112538  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringRule
+0x1ee111980  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringSelectionChangeRequest
+0x1ee111bb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringSelectionPathIdentifier
+0x1ee111728  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringSelectionPathSymbol
+0x1ee111db8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringSelectionTarget
+0x1ee1125b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringTarget
+0x1ee1126f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeferringToken
+0x1ee112218  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeliveryChain
+0x1ee111840  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeliveryChainObserver
+0x1ee112790  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeliveryManager
+0x1ee112100  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeliveryPolicy
+0x1ee1121f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeliveryPolicyObserver
+0x1ee1123d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeliveryRuleChangeTransaction
+0x1ef4e5490  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventDeliveryRuleWrapper
+0x1ee112420  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDescriptor
+0x1ee111fe8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDigitizerAttributes
+0x1ee111fc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDigitizerPathAttributes
+0x1ef4e67a0  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventDiscreteDispatchingPredicate
+0x1ef4e5468  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventDiscreteDispatchingRoot
+0x1ef4e6778  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventDiscreteDispatchingRule
+0x1ef4e6750  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventDispatchingTarget
+0x1ee1126a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventDisplay
+0x1ef4e6728  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventGenericGestureDescriptor
+0x1ee111598  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventHitTestClientContext
+0x1ee111c50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventHitTestLayerInformation
+0x1ee112740  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventKeyCommand
+0x1ef4e5828  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventKeyCommandDescriptor
+0x1ef4e5440  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventKeyCommandDispatchingRoot
+0x1ef4e6700  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventKeyCommandsDispatchingPredicate
+0x1ef4e66d8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventKeyCommandsDispatchingRule
+0x1ee111ef8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventKeyCommandsRegistration
+0x1ee111390  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventKeyboardAttributes
+0x1ef4e66b0  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventKeyboardDescriptor
+0x1ee112268  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventObserver
+0x1ef4e6688  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventPointerAttributes
+0x1ee1120b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventPolicyObservation
+0x1ef4e6660  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventProximityAttributes
+0x1ef4e6638  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventRedirectAttributes
+0x1ee112358  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventSenderDescriptor
+0x1ef4e5800  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventSenderSpecificDescriptor
+0x1ee111b10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDEventSimpleProvenance
+0x1ef4e51e8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventSimpleProvenanceOriginator
+0x1ef4e51c0  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventSmartCoverAttributes
+0x1ef4e4ea0  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventUnitTestableProvenance
+0x1ef4e6610  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventUsagePairDescriptor
+0x1ef4e65e8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDEventVendorDefinedDescriptor
+0x1ef4e4e78  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDHapticFeedbackRequest
+0x1ee111278  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDKeyboardDevice
+0x1ee1118e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDKeyboardDeviceProperties
+0x1ee111868  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDKeyboardService
+0x1ee1122b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSHIDServiceConnectionFactory
+0x1ef4e6ef8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDTouchRoutingPolicy
+0x1ef4e69d0  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDUISensorCharacteristics
+0x1ef4e6a98  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDUISensorMode
+0x1ef4e69a8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHIDUISensorService
+0x1ef4e4e50  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHardwareButtonLongPressDescriptor
+0x1ef4e4bf8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHardwareButtonService
+0x1ef4e65c0  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHitTestRegion
+0x1ef4e5418  __AUTH,__objc_data  _OBJC_CLASS_$_BKSHitTestTargetIdentifier
+0x1ef4e5e40  __AUTH,__objc_data  _OBJC_CLASS_$_BKSIAPDefaults
+0x1ef4e6598  __AUTH,__objc_data  _OBJC_CLASS_$_BKSInsecureDrawingAction
+0x1ef4e5e18  __AUTH,__objc_data  _OBJC_CLASS_$_BKSKeyboardDefaults
+0x1ef4e6570  __AUTH,__objc_data  _OBJC_CLASS_$_BKSLocalDefaults
+0x1ee111570  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSMousePointerDevice
+0x1ee111430  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSMousePointerDeviceObserverInfo
+0x1ee111610  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSMousePointerDevicePreferences
+0x1ee1112c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSMousePointerEventGlobalRoute
+0x1ef4e6548  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMousePointerGlobalContextOptions
+0x1ef4e6520  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMousePointerPerDisplayInfo
+0x1ef4e57d8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMousePointerPreferencesObserverInfo
+0x1ee111458  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSMousePointerService
+0x1ee111548  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSMousePointerServiceSessionSpecification
+0x1ef4e57b0  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMousePointerSuppressionAssertionDescriptor
+0x1ef4e5198  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableDisplayTraits
+0x1ef4e4e28  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableEventDeferringChainIdentity
+0x1ef4e5df0  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableHIDEventAuthenticationMessage
+0x1ef4e5788  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableHIDEventDeferringConstraint
+0x1ef4e5760  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableHIDEventDeferringConstraintAssertion
+0x1ee1117a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSMutableHIDEventDeferringModality
+0x1ee111700  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSMutableHIDEventDeferringModalityAssertion
+0x1ee112510  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSMutableHIDEventDeferringPredicate
+0x1ef4e6b38  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableHIDEventDeferringResolution
+0x1ee111930  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSMutableHIDEventDeferringSelectionChangeRequest
+0x1ee111a20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSMutableHIDEventDeferringSelectionTarget
+0x1ee1124e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSMutableHIDEventDeferringTarget
+0x1ef4e5dc8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableHIDEventDiscreteDispatchingPredicate
+0x1ef4e5da0  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableHIDEventHitTestLayerInformation
+0x1ef4e5d78  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableHIDEventKeyCommandsDispatchingPredicate
+0x1ee111ed0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSMutableHIDEventKeyCommandsRegistration
+0x1ee111ac0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSMutableHIDEventPolicyObservation
+0x1ef4e64f8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableHIDEventSenderDescriptor
+0x1ef4e5170  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableHIDEventSimpleProvenance
+0x1ef4e4e00  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableHIDHapticFeedbackRequest
+0x1ee1111b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSMutableHIDKeyboardDeviceProperties
+0x1ef4e5d50  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableHIDUISensorCharacteristics
+0x1ef4e6a70  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableHIDUISensorMode
+0x1ef4e64d0  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableMousePointerEventGlobalRoute
+0x1ef4e5d28  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableMousePointerGlobalContextOptions
+0x1ef4e5148  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableProximityEvent
+0x1ef4e6cf0  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableTouchAuthenticationSpecification
+0x1ef4e4dd8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableTouchHitTestFilterParameters
+0x1ef4e5120  __AUTH,__objc_data  _OBJC_CLASS_$_BKSMutableWindowServerHitTestSecurityAnalysis
+0x1ef4e5738  __AUTH,__objc_data  _OBJC_CLASS_$_BKSPersistentConnectionDefaults
+0x1ef4e50f8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSProximityDetectionMaskChangeEvent
+0x1ef4e4db0  __AUTH,__objc_data  _OBJC_CLASS_$_BKSProximitySensorService
+0x1ef4e5710  __AUTH,__objc_data  _OBJC_CLASS_$_BKSRestartAction
+0x1ef4e5d00  __AUTH,__objc_data  _OBJC_CLASS_$_BKSSceneHostRegistration
+0x1ef4e6ea8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSSceneHostSettings
+0x1ef4e64a8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSSecureModeViolation
+0x1ef4e50d0  __AUTH,__objc_data  _OBJC_CLASS_$_BKSSecureRenderingService
+0x1ef4e5cd8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSSpringBoardDefaults
+0x1ef4e5cb0  __AUTH,__objc_data  _OBJC_CLASS_$_BKSSystemGesturesTouchStreamPolicy
+0x1ef4e6480  __AUTH,__objc_data  _OBJC_CLASS_$_BKSSystemService
+0x1ef4e56e8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSSystemShellControlService
+0x1ef4e6458  __AUTH,__objc_data  _OBJC_CLASS_$_BKSSystemShellService
+0x1ee111408  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSTouchAnnotation
+0x1ee111368  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSTouchAnnotationController
+0x1ef4e6db8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSTouchAuthenticationSpecification
+0x1ef4e4d88  __AUTH,__objc_data  _OBJC_CLASS_$_BKSTouchDeliveryBackgroundObserver
+0x1ef4e6b10  __AUTH,__objc_data  _OBJC_CLASS_$_BKSTouchDeliveryObservationService
+0x1ef4e5c88  __AUTH,__objc_data  _OBJC_CLASS_$_BKSTouchDeliveryOccurrence
+0x1ee111188  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSTouchDeliveryPolicy
+0x1ef4e6f98  __AUTH,__objc_data  _OBJC_CLASS_$_BKSTouchDeliveryPolicyAssertion
+0x1ef4e6c28  __AUTH,__objc_data  _OBJC_CLASS_$_BKSTouchDeliveryUpdate
+0x1ef4e50a8  __AUTH,__objc_data  _OBJC_CLASS_$_BKSTouchDetachment
+0x1ef4e6e80  __AUTH,__objc_data  _OBJC_CLASS_$_BKSTouchEventService
+0x1ef4e6c00  __AUTH,__objc_data  _OBJC_CLASS_$_BKSTouchHitTestFilterParameters
+0x1ef4e6980  __AUTH,__objc_data  _OBJC_CLASS_$_BKSTouchStream
+0x1ef4e6958  __AUTH,__objc_data  _OBJC_CLASS_$_BKSTouchStreamPolicy
+0x1ef4e6f48  __AUTH,__objc_data  _OBJC_CLASS_$_BKSWatchdogServerWrapper
+0x1ee111c00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_BKSWindowServerHitTestSecurityAnalysis
+0x1ee111818  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__BKChainObserverContainer
+0x1ee111200  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__BKDeferringReachabilitySubscription
+0x1ef4e6bd8  __AUTH,__objc_data  _OBJC_CLASS_$__BKSCATransform3DContainer
+0x1ef4e6430  __AUTH,__objc_data  _OBJC_CLASS_$__BKSCancelTouchesTouchDeliveryPolicy
+0x1ef4e56c0  __AUTH,__objc_data  _OBJC_CLASS_$__BKSCloneMirroringModeRequest
+0x1ef4e6408  __AUTH,__objc_data  _OBJC_CLASS_$__BKSCombinedTouchDeliveryPolicy
+0x1ee112178  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__BKSHIDCAContextEventDeferringToken
+0x1ee111d18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__BKSHIDCAContextIDAndCGSWindowIDEventDeferringToken
+0x1ee111e80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__BKSHIDCGSConnectionIDEventDeferringToken
+0x1ee111e58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__BKSHIDCGSWindowIDEventDeferringToken
+0x1ef4e5c60  __AUTH,__objc_data  _OBJC_CLASS_$__BKSHIDEventAuthenticationKey
+0x1ee1123a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__BKSHIDEventDeferringRuleIdentity
+0x1ee111340  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__BKSHIDKeyboardDeviceClientProxy
+0x1ee1121c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__BKSHIDStringIdentifierEventDeferringToken
+0x1ef4e53f0  __AUTH,__objc_data  _OBJC_CLASS_$__BKSHIDUISensorDisplayAssociatedService
+0x1ef4e53c8  __AUTH,__objc_data  _OBJC_CLASS_$__BKSHIDUISensorOverseer
+0x1ef4e53a0  __AUTH,__objc_data  _OBJC_CLASS_$__BKSHIDUISensorServiceReference
+0x1ee111d90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__BKSHIDUniqueEventDeferringToken
+0x1ef4e5c38  __AUTH,__objc_data  _OBJC_CLASS_$__BKSLocallyOwnedTouchAuthenticationAssertion
+0x1ee111160  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__BKSShareTouchesTouchDeliveryPolicy
+0x1ef4e6cc8  __AUTH,__objc_data  _OBJC_CLASS_$__BKSTouchDeliveryPolicyConcreteServerInterface
+0x1ef4e6d90  __AUTH,__objc_data  _OBJC_CLASS_$__BKSTouchDeliveryPolicyConcreteServerReference
+0x1eb3acf78  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventAuthenticationMessage._context
+0x1eb3acf54  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventAuthenticationMessage._eventType
+0x1eb3acf6c  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventAuthenticationMessage._hitTestInformationFromEndEvent
+0x1eb3acf68  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventAuthenticationMessage._hitTestInformationFromStartEvent
+0x1eb3acf74  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventAuthenticationMessage._originIdentifier
+0x1eb3acf80  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventAuthenticationMessage._registrantEntitled
+0x1eb3acf7c  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventAuthenticationMessage._secureNameStatus
+0x1eb3acf84  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventAuthenticationMessage._senderID
+0x1eb3acf88  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventAuthenticationMessage._signature
+0x1eb3acf60  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventAuthenticationMessage._targetContextID
+0x1eb3acf5c  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventAuthenticationMessage._targetSlotID
+0x1eb3acf64  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventAuthenticationMessage._targetWindowID
+0x1eb3acf70  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventAuthenticationMessage._timestamp
+0x1eb3acf58  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventAuthenticationMessage._touchIdentifier
+0x1eb3acf50  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventAuthenticationMessage._versionedPID
+0x1eb3acdc4  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventDeferringPredicate._display
+0x1eb3acdc0  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventDeferringPredicate._environment
+0x1eb3acdc8  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventDeferringPredicate._token
+0x1eb3ace30  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventDeferringResolution._dispatchingTarget
+0x1eb3ace18  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventDeferringResolution._display
+0x1eb3ace1c  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventDeferringResolution._environment
+0x1eb3ace24  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventDeferringResolution._pid
+0x1eb3ace2c  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventDeferringResolution._processDescription
+0x1eb3ace28  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventDeferringResolution._token
+0x1eb3ace20  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventDeferringResolution._versionedPID
+0x1eb3aca60  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventDeferringTarget._pid
+0x1eb3aca64  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventDeferringTarget._token
+0x1eb3ad004  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventDiscreteDispatchingPredicate._descriptors
+0x1eb3ad008  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventDiscreteDispatchingPredicate._fuzzyDescriptors
+0x1eb3ad000  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventDiscreteDispatchingPredicate._senderDescriptors
+0x1eb3acf4c  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventKeyCommandsDispatchingPredicate._senderDescriptors
+0x1eb3acec0  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventKeyCommandsRegistration._environment
+0x1eb3acec8  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventKeyCommandsRegistration._keyCommands
+0x1eb3acec4  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventKeyCommandsRegistration._token
+0x1eb3ad1e4  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventSenderDescriptor._associatedDisplay
+0x1eb3ad1e8  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventSenderDescriptor._authenticated
+0x1eb3ad1e0  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventSenderDescriptor._hardwareType
+0x1eb3ad1f8  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventSenderDescriptor._inverted
+0x1eb3ad1ec  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventSenderDescriptor._primaryPage
+0x1eb3ad1f0  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventSenderDescriptor._primaryUsage
+0x1eb3ad1f4  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDEventSenderDescriptor._senderID
+0x1eb3ad210  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDUISensorCharacteristics._hasDiscreteProximitySensor
+0x1eb3ad20c  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDUISensorCharacteristics._suggestedSystemApertureGracePeriodForScreenOff
+0x1eb3ad1a0  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDUISensorMode._changeSource
+0x1eb3ad1b4  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDUISensorMode._digitizerEnabled
+0x1eb3ad1b0  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDUISensorMode._displayState
+0x1eb3ad1bc  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDUISensorMode._estimatedProximityMode
+0x1eb3ad194  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDUISensorMode._identifier
+0x1eb3ad1a8  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDUISensorMode._multitouchHostStateKeys
+0x1eb3ad1b8  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDUISensorMode._pocketTouchesExpected
+0x1eb3ad1c0  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDUISensorMode._postEventWithCurrentDetectionMask
+0x1eb3ad1a4  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDUISensorMode._proximityDetectionMode
+0x1eb3ad1c4  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDUISensorMode._proximityDetectionModeWasInherited
+0x1eb3ad1ac  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDUISensorMode._proximityHostStateKeys
+0x1eb3ad198  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDUISensorMode._reason
+0x1eb3ad19c  __DATA,__objc_ivar  OBJC_IVAR_$_BKSHIDUISensorMode._versionedPID
+0x1eb3acd90  __DATA,__objc_ivar  OBJC_IVAR_$_BKSTouchAuthenticationSpecification._authenticationMessageContext
+0x1eb3acd9c  __DATA,__objc_ivar  OBJC_IVAR_$_BKSTouchAuthenticationSpecification._backgroundStatisticsBottomEdgeInset
+0x1eb3acdac  __DATA,__objc_ivar  OBJC_IVAR_$_BKSTouchAuthenticationSpecification._backgroundStatisticsFailingContrast
+0x1eb3acda4  __DATA,__objc_ivar  OBJC_IVAR_$_BKSTouchAuthenticationSpecification._backgroundStatisticsForeground
+0x1eb3acd98  __DATA,__objc_ivar  OBJC_IVAR_$_BKSTouchAuthenticationSpecification._backgroundStatisticsLeftEdgeInset
+0x1eb3acda8  __DATA,__objc_ivar  OBJC_IVAR_$_BKSTouchAuthenticationSpecification._backgroundStatisticsPassingContrast
+0x1eb3acda0  __DATA,__objc_ivar  OBJC_IVAR_$_BKSTouchAuthenticationSpecification._backgroundStatisticsRightEdgeInset
+0x1eb3acd94  __DATA,__objc_ivar  OBJC_IVAR_$_BKSTouchAuthenticationSpecification._backgroundStatisticsTopEdgeInset
+0x1eb3acd84  __DATA,__objc_ivar  OBJC_IVAR_$_BKSTouchAuthenticationSpecification._displays
+0x1eb3acdb8  __DATA,__objc_ivar  OBJC_IVAR_$_BKSTouchAuthenticationSpecification._finalSampleEvent
+0x1eb3acdb0  __DATA,__objc_ivar  OBJC_IVAR_$_BKSTouchAuthenticationSpecification._hitTestInformationMask
+0x1eb3acdb4  __DATA,__objc_ivar  OBJC_IVAR_$_BKSTouchAuthenticationSpecification._initialSampleEvent
+0x1eb3acdbc  __DATA,__objc_ivar  OBJC_IVAR_$_BKSTouchAuthenticationSpecification._longPressTimeout
+0x1eb3acd8c  __DATA,__objc_ivar  OBJC_IVAR_$_BKSTouchAuthenticationSpecification._secureName
+0x1eb3acd88  __DATA,__objc_ivar  OBJC_IVAR_$_BKSTouchAuthenticationSpecification._slotID
+0x1eb3ac978  __DATA,__objc_ivar  OBJC_IVAR_$__BKSHIDKeyboardDeviceClientProxy._device
+0x1eb3ac97c  __DATA,__objc_ivar  OBJC_IVAR_$__BKSHIDKeyboardDeviceClientProxy._lifetimeAssertion
+0x1ef4e5c10  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSAbstractDefaults
+0x1ee112830  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSAccelerometer
+0x1ef4e5698  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSAlternateSystemApp
+0x1ee112628  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSAnimationFenceHandle
+0x1ef4e5080  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSBackgroundTouchDeliveryUpdate
+0x1ef4e5670  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSBacklightFeatures
+0x1ef4e5be8  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSButtonHapticsController
+0x1ef4e63e0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSButtonHapticsDefinition
+0x1ee111520  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSContextRelativePoint
+0x1ef4e5bc0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSDefaults
+0x1ef4e5b98  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSDisplayArrangementItem
+0x1ef4e5b70  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSDisplayInterstitialRenderOverlayDismissAction
+0x1ef4e5b48  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSDisplayProgressIndicatorProperties
+0x1ef4e63b8  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSDisplayRenderOverlay
+0x1ef4e6390  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSDisplayRenderOverlayDescriptor
+0x1ef4e5058  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSDisplayService
+0x1ef4e5378  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSDisplayTraits
+0x1ee112088  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSEventDeferringChainIdentity
+0x1ef4e6930  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSEventFocusManager
+0x1ef4e5b20  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSExternalDefaults
+0x1ef4e6e58  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDAuthenticatedKeyCommandSpecification
+0x1ee112448  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventAuthenticationMessage
+0x1ef4e5af8  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventAuthenticationOriginator
+0x1ee111f98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventBaseAttributes
+0x1ef4e6368  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventBiometricDescriptor
+0x1ef4e4d60  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventCollectionDescriptor
+0x1ee111958  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringChangeBasis
+0x1ee111a48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringConstraint
+0x1ef4e5ad0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringConstraintAssertion
+0x1ee1127e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringEnvironment
+0x1ee111638  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringGrantAssertion
+0x1ee111b60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringModality
+0x1ee1116d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringModalityAssertion
+0x1ee111cc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringNamespacePredicate
+0x1ee1125d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringPredicate
+0x1ee111c78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringReachabilityStatus
+0x1ef4e6ca0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringResolution
+0x1ee1124c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringRule
+0x1ee1119d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringSelectionChangeRequest
+0x1ee111b88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringSelectionPathIdentifier
+0x1ee1116b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringSelectionPathSymbol
+0x1ee111cf0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringSelectionTarget
+0x1ee112588  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringTarget
+0x1ee1126c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeferringToken
+0x1ee1121a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeliveryChain
+0x1ee1117f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeliveryChainObserver
+0x1ee112768  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeliveryManager
+0x1ee1120d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeliveryPolicy
+0x1ee112240  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeliveryPolicyObserver
+0x1ee112380  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeliveryRuleChangeTransaction
+0x1ef4e5350  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDeliveryRuleWrapper
+0x1ee1123f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDescriptor
+0x1ee112060  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDigitizerAttributes
+0x1ee111f70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDigitizerPathAttributes
+0x1ef4e6340  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDiscreteDispatchingPredicate
+0x1ef4e5328  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDiscreteDispatchingRoot
+0x1ef4e6318  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDiscreteDispatchingRule
+0x1ef4e62f0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDispatchingTarget
+0x1ee112678  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventDisplay
+0x1ef4e62c8  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventGenericGestureDescriptor
+0x1ee1114f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventHitTestClientContext
+0x1ee111c28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventHitTestLayerInformation
+0x1ee112718  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventKeyCommand
+0x1ef4e5648  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventKeyCommandDescriptor
+0x1ef4e5300  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventKeyCommandDispatchingRoot
+0x1ef4e62a0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventKeyCommandsDispatchingPredicate
+0x1ef4e6278  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventKeyCommandsDispatchingRule
+0x1ee111ea8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventKeyCommandsRegistration
+0x1ee111318  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventKeyboardAttributes
+0x1ef4e6250  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventKeyboardDescriptor
+0x1ee112290  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventObserver
+0x1ef4e6228  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventPointerAttributes
+0x1ee111f48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventPolicyObservation
+0x1ef4e6200  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventProximityAttributes
+0x1ef4e61d8  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventRedirectAttributes
+0x1ee112330  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventSenderDescriptor
+0x1ef4e5620  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventSenderSpecificDescriptor
+0x1ee111ae8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDEventSimpleProvenance
+0x1ef4e5030  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventSimpleProvenanceOriginator
+0x1ef4e5008  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventSmartCoverAttributes
+0x1ef4e4d38  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventUnitTestableProvenance
+0x1ef4e61b0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventUsagePairDescriptor
+0x1ef4e6188  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDEventVendorDefinedDescriptor
+0x1ef4e4d10  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDHapticFeedbackRequest
+0x1ee111250  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDKeyboardDevice
+0x1ee1118b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDKeyboardDeviceProperties
+0x1ee111890  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDKeyboardService
+0x1ee112308  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSHIDServiceConnectionFactory
+0x1ef4e6e30  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDTouchRoutingPolicy
+0x1ef4e6908  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDUISensorCharacteristics
+0x1ef4e6a48  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDUISensorMode
+0x1ef4e68e0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHIDUISensorService
+0x1ef4e4ce8  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHardwareButtonLongPressDescriptor
+0x1ef4e4bd0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHardwareButtonService
+0x1ef4e6160  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHitTestRegion
+0x1ef4e52d8  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSHitTestTargetIdentifier
+0x1ef4e5aa8  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSIAPDefaults
+0x1ef4e6138  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSInsecureDrawingAction
+0x1ef4e5a80  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSKeyboardDefaults
+0x1ef4e5a58  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSLocalDefaults
+0x1ee1114d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSMousePointerDevice
+0x1ee1113e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSMousePointerDeviceObserverInfo
+0x1ee1114a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSMousePointerDevicePreferences
+0x1ee1112a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSMousePointerEventGlobalRoute
+0x1ef4e6110  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMousePointerGlobalContextOptions
+0x1ef4e60e8  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMousePointerPerDisplayInfo
+0x1ef4e55f8  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMousePointerPreferencesObserverInfo
+0x1ee1115e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSMousePointerService
+0x1ee111480  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSMousePointerServiceSessionSpecification
+0x1ef4e55d0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMousePointerSuppressionAssertionDescriptor
+0x1ef4e4fe0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableDisplayTraits
+0x1ef4e4cc0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableEventDeferringChainIdentity
+0x1ef4e5a30  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDEventAuthenticationMessage
+0x1ef4e55a8  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDEventDeferringConstraint
+0x1ef4e5580  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDEventDeferringConstraintAssertion
+0x1ee111778  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDEventDeferringModality
+0x1ee111688  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDEventDeferringModalityAssertion
+0x1ee112498  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDEventDeferringPredicate
+0x1ef4e6ae8  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDEventDeferringResolution
+0x1ee111908  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDEventDeferringSelectionChangeRequest
+0x1ee1119f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDEventDeferringSelectionTarget
+0x1ee112470  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDEventDeferringTarget
+0x1ef4e5a08  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDEventDiscreteDispatchingPredicate
+0x1ef4e59e0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDEventHitTestLayerInformation
+0x1ef4e59b8  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDEventKeyCommandsDispatchingPredicate
+0x1ee111f20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDEventKeyCommandsRegistration
+0x1ee111a98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDEventPolicyObservation
+0x1ef4e60c0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDEventSenderDescriptor
+0x1ef4e4fb8  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDEventSimpleProvenance
+0x1ef4e4c98  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDHapticFeedbackRequest
+0x1ee111138  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDKeyboardDeviceProperties
+0x1ef4e5990  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDUISensorCharacteristics
+0x1ef4e6a20  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableHIDUISensorMode
+0x1ef4e6098  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableMousePointerEventGlobalRoute
+0x1ef4e5968  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableMousePointerGlobalContextOptions
+0x1ef4e4f90  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableProximityEvent
+0x1ef4e6c78  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableTouchAuthenticationSpecification
+0x1ef4e4c70  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableTouchHitTestFilterParameters
+0x1ef4e4f68  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSMutableWindowServerHitTestSecurityAnalysis
+0x1ef4e5558  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSPersistentConnectionDefaults
+0x1ef4e4f40  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSProximityDetectionMaskChangeEvent
+0x1ef4e4c48  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSProximitySensorService
+0x1ef4e5530  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSRestartAction
+0x1ef4e5940  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSSceneHostRegistration
+0x1ef4e6e08  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSSceneHostSettings
+0x1ef4e6070  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSSecureModeViolation
+0x1ef4e4f18  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSSecureRenderingService
+0x1ef4e5918  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSSpringBoardDefaults
+0x1ef4e68b8  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSSystemGesturesTouchStreamPolicy
+0x1ef4e6048  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSSystemService
+0x1ef4e5508  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSSystemShellControlService
+0x1ef4e6020  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSSystemShellService
+0x1ee1113b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSTouchAnnotation
+0x1ee1112f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSTouchAnnotationController
+0x1ef4e6d68  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSTouchAuthenticationSpecification
+0x1ef4e4c20  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSTouchDeliveryBackgroundObserver
+0x1ef4e6ac0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSTouchDeliveryObservationService
+0x1ef4e58f0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSTouchDeliveryOccurrence
+0x1ee111110  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSTouchDeliveryPolicy
+0x1ef4e6f70  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSTouchDeliveryPolicyAssertion
+0x1ef4e6bb0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSTouchDeliveryUpdate
+0x1ef4e4ef0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSTouchDetachment
+0x1ef4e6de0  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSTouchEventService
+0x1ef4e6b88  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSTouchHitTestFilterParameters
+0x1ef4e6890  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSTouchStream
+0x1ef4e6868  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSTouchStreamPolicy
+0x1ef4e6f20  __AUTH,__objc_data  _OBJC_METACLASS_$_BKSWatchdogServerWrapper
+0x1ee111bd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_BKSWindowServerHitTestSecurityAnalysis
+0x1ee1117c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__BKChainObserverContainer
+0x1ee1111d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__BKDeferringReachabilitySubscription
+0x1ef4e6b60  __AUTH,__objc_data  _OBJC_METACLASS_$__BKSCATransform3DContainer
+0x1ef4e5ff8  __AUTH,__objc_data  _OBJC_METACLASS_$__BKSCancelTouchesTouchDeliveryPolicy
+0x1ef4e54e0  __AUTH,__objc_data  _OBJC_METACLASS_$__BKSCloneMirroringModeRequest
+0x1ef4e5fd0  __AUTH,__objc_data  _OBJC_METACLASS_$__BKSCombinedTouchDeliveryPolicy
+0x1ee112150  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__BKSHIDCAContextEventDeferringToken
+0x1ee111d68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__BKSHIDCAContextIDAndCGSWindowIDEventDeferringToken
+0x1ee111e30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__BKSHIDCGSConnectionIDEventDeferringToken
+0x1ee111e08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__BKSHIDCGSWindowIDEventDeferringToken
+0x1ef4e58c8  __AUTH,__objc_data  _OBJC_METACLASS_$__BKSHIDEventAuthenticationKey
+0x1ee1122e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__BKSHIDEventDeferringRuleIdentity
+0x1ee111228  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__BKSHIDKeyboardDeviceClientProxy
+0x1ee112128  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__BKSHIDStringIdentifierEventDeferringToken
+0x1ef4e52b0  __AUTH,__objc_data  _OBJC_METACLASS_$__BKSHIDUISensorDisplayAssociatedService
+0x1ef4e5288  __AUTH,__objc_data  _OBJC_METACLASS_$__BKSHIDUISensorOverseer
+0x1ef4e5260  __AUTH,__objc_data  _OBJC_METACLASS_$__BKSHIDUISensorServiceReference
+0x1ee111de0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__BKSHIDUniqueEventDeferringToken
+0x1ef4e58a0  __AUTH,__objc_data  _OBJC_METACLASS_$__BKSLocallyOwnedTouchAuthenticationAssertion
+0x1ee1110e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__BKSShareTouchesTouchDeliveryPolicy
+0x1ef4e6d40  __AUTH,__objc_data  _OBJC_METACLASS_$__BKSTouchDeliveryPolicyConcreteServerInterface
+0x1ef4e6c50  __AUTH,__objc_data  _OBJC_METACLASS_$__BKSTouchDeliveryPolicyConcreteServerReference
+0x18a010454  __TEXT,__text  __BKSDisplayApplyRenderOverlay
+0x18a010980  __TEXT,__text  __BKSDisplayDismissInterstitialRenderOverlay
+0x18a0107cc  __TEXT,__text  __BKSDisplayFreezeRenderOverlay
+0x18a00e89c  __TEXT,__text  __BKSDisplayGetDisplayTraits
+0x189f93d50  __TEXT,__text  __BKSDisplayGetMainScreenInfo
+0x18a010b34  __TEXT,__text  __BKSDisplayGetRenderOverlayDismissActions
+0x18a00eb18  __TEXT,__text  __BKSDisplayGetSystemIdentifiers
+0x18a00e030  __TEXT,__text  __BKSDisplayIsDisabled
+0x18a00ef34  __TEXT,__text  __BKSDisplayIsFlipBookEnabled
+0x18a00f5e0  __TEXT,__text  __BKSDisplayIsFlipBookSuppressed
+0x189fafc1c  __TEXT,__text  __BKSDisplayNotifySetDisplayBlanked
+0x18a00fd10  __TEXT,__text  __BKSDisplayRemoveCloneMirroringModeForSourceDisplayToDestinationDisplay
+0x18a010610  __TEXT,__text  __BKSDisplayRemoveRenderOverlay
+0x18a0101d8  __TEXT,__text  __BKSDisplayRenderOverlay
+0x18a010d38  __TEXT,__text  __BKSDisplaySetArrangement
+0x18a00f3a8  __TEXT,__text  __BKSDisplaySetCalibrationPhase
+0x18a00fb30  __TEXT,__text  __BKSDisplaySetCloneMirroringModeForSourceDisplayToDestinationDisplay
+0x18a00fa54  __TEXT,__text  __BKSDisplaySetCloneRotationDisabled
+0x18a00e278  __TEXT,__text  __BKSDisplaySetDisabled
+0x18a00f17c  __TEXT,__text  __BKSDisplaySetFlipBookEnabled
+0x18a00f828  __TEXT,__text  __BKSDisplaySetFlipBookSuppressed
+0x18a00fed8  __TEXT,__text  __BKSDisplaySetMirroringOnlyDisplayCloningSource
+0x18a00e4e0  __TEXT,__text  __BKSDisplaySetReachabilityBounds
+0x18a010050  __TEXT,__text  __BKSDisplaySetSecureMode
+0x18a00ed94  __TEXT,__text  __BKSDisplaySetSystemIdentifiers
+0x18a00e724  __TEXT,__text  __BKSDisplayWillUnblank
+0x189fa559c  __TEXT,__text  __BKSGetExternalDisplayScale
+0x18a00abb8  __TEXT,__text  __BKSHIDAmbientLightSensorDisableAutoBrightness
+0x18a00ac78  __TEXT,__text  __BKSHIDAmbientLightSensorEnableAutoBrightness
+0x18a00aa18  __TEXT,__text  __BKSHIDAmbientLightSensorExists
+0x18a00b878  __TEXT,__text  __BKSHIDApplyButtonDefinitions
+0x18a00c4e8  __TEXT,__text  __BKSHIDBeginDisplayBrightnessTransaction
+0x18a00a5f8  __TEXT,__text  __BKSHIDBrigthnessIsAutoBrightnessAvailable
+0x18a00a798  __TEXT,__text  __BKSHIDBrigthnessIsBrightnessLevelControlAvailable
+0x18a00b3dc  __TEXT,__text  __BKSHIDCancelButtonEventsFromSenderID
+0x18a00b6d8  __TEXT,__text  __BKSHIDCancelTouchesOnAllDisplays
+0x189f8f7b4  __TEXT,__text  __BKSHIDCancelTouchesOnDisplay
+0x18a00b798  __TEXT,__text  __BKSHIDCancelTouchesWithIdentifiers
+0x18a00b550  __TEXT,__text  __BKSHIDClaimGenericGestureFocus
+0x189f945e0  __TEXT,__text  __BKSHIDEventGetAttachment
+0x18a006fc0  __TEXT,__text  __BKSHIDEventGetConciseDescriptionButton
+0x18a006868  __TEXT,__text  __BKSHIDEventGetConciseDescriptionGenericGesture
+0x189fa82cc  __TEXT,__text  __BKSHIDEventGetConciseDescriptionKeyboard
+0x18a006a8c  __TEXT,__text  __BKSHIDEventGetConciseDescriptionPointer
+0x189faa8fc  __TEXT,__text  __BKSHIDEventGetConciseDescriptionProximity
+0x18a007598  __TEXT,__text  __BKSHIDEventGetConciseDescriptionRotation
+0x18a0073c0  __TEXT,__text  __BKSHIDEventGetConciseDescriptionScale
+0x18a007294  __TEXT,__text  __BKSHIDEventGetConciseDescriptionScroll
+0x18a0074b0  __TEXT,__text  __BKSHIDEventGetConciseDescriptionTranslation
+0x18a0070a4  __TEXT,__text  __BKSHIDEventGetConciseDescriptionVendorDefined
+0x18a007020  __TEXT,__text  __BKSHIDEventGetConciseDescriptionVendorDefinedForceStageEvent
+0x18a00773c  __TEXT,__text  __BKSHIDEventGetEventInfoDescription
+0x189fa5ec0  __TEXT,__text  __BKSHIDEventGetSubEventInfoFromDigitierEventForPathEvent
+0x189fa59e0  __TEXT,__text  __BKSHIDEventSetAttachment
+0x18a003c38  __TEXT,__text  __BKSHIDEventSetRedirectInfo
+0x18a00c8c8  __TEXT,__text  __BKSHIDFlushDisplayBrightnessUpdates
+0x18a00a1f4  __TEXT,__text  __BKSHIDGetBacklightFactor
+0x189fb4f80  __TEXT,__text  __BKSHIDGetCurrentDeviceOrientation
+0x189f9f580  __TEXT,__text  __BKSHIDGetCurrentDisplayBrightness
+0x18a00caf4  __TEXT,__text  __BKSHIDGetCurrentDisplayBrightnessCurve
+0x189fb131c  __TEXT,__text  __BKSHIDGetHumanPresenceStatus
+0x189fb0a94  __TEXT,__text  __BKSHIDGetLastUserEventTime
+0x18a00bdc0  __TEXT,__text  __BKSHIDGetNonFlatDeviceOrientation
+0x18a00afc0  __TEXT,__text  __BKSHIDGetObjectInProximityIgnoresTouches
+0x189fb3d5c  __TEXT,__text  __BKSHIDGetObjectWithinProximity
+0x18a00d8b4  __TEXT,__text  __BKSHIDGetPersistentServiceProperties
+0x189fae088  __TEXT,__text  __BKSHIDGetProximityDetectionActive
+0x18a00b23c  __TEXT,__text  __BKSHIDGetRingerState
+0x18a00ce4c  __TEXT,__text  __BKSHIDIsCapsLockLightOn
+0x18a00c33c  __TEXT,__text  __BKSHIDIsOrientationLockedWithOrientation
+0x189fb0810  __TEXT,__text  __BKSHIDIsSmartCoverClosed
+0x18a00d388  __TEXT,__text  __BKSHIDKeyboardWantsStandardTypeOverride
+0x18a00c0f0  __TEXT,__text  __BKSHIDLockOrientation
+0x189fb51a8  __TEXT,__text  __BKSHIDNotifySetBacklightFactorWithFadeDurationAsync
+0x18a00ba38  __TEXT,__text  __BKSHIDPlayHaptic
+0x18a00b958  __TEXT,__text  __BKSHIDPostTouchAnnotations
+0x18a00bb0c  __TEXT,__text  __BKSHIDRequestHapticFeedback
+0x18a00ca34  __TEXT,__text  __BKSHIDRestoreSystemDisplayBrightness
+0x189fc2394  __TEXT,__text  __BKSHIDServicesApplyButtonDefinitions
+0x189fc29ec  __TEXT,__text  __BKSHIDServicesPostTouchAnnotations
+0x189fc24f4  __TEXT,__text  __BKSHIDServicesSetButtonLongPressTimeouts
+0x189f9fa34  __TEXT,__text  __BKSHIDSetAccelerometerClientEventsEnabled
+0x18a00d6ec  __TEXT,__text  __BKSHIDSetAuthenticatedKeyCommands
+0x18a00cd70  __TEXT,__text  __BKSHIDSetAutoDisplayBrightnessEnabled
+0x18a00a394  __TEXT,__text  __BKSHIDSetBacklightFactorPending
+0x18a00a468  __TEXT,__text  __BKSHIDSetBacklightFactorWithFadeDuration
+0x18a00a938  __TEXT,__text  __BKSHIDSetBacklightFeatures
+0x18a00df50  __TEXT,__text  __BKSHIDSetButtonLongPressTimeouts
+0x18a00d2ac  __TEXT,__text  __BKSHIDSetCapsLockActive
+0x18a00d104  __TEXT,__text  __BKSHIDSetCapsLockDelayOverride
+0x18a00d028  __TEXT,__text  __BKSHIDSetCapsLockRomanSwitchMode
+0x18a00aee4  __TEXT,__text  __BKSHIDSetDeviceOrientationForAutomation
+0x18a00cc94  __TEXT,__text  __BKSHIDSetDisplayBrightnessCurveValue
+0x18a00c7e8  __TEXT,__text  __BKSHIDSetDisplayBrightnessValue
+0x18a00c668  __TEXT,__text  __BKSHIDSetDisplayBrightnessWithImplicitTransaction
+0x18a00ad54  __TEXT,__text  __BKSHIDSetDisplayInterfaceOrientation
+0x18a00d564  __TEXT,__text  __BKSHIDSetHardwareKeyboardLayout
+0x189f93660  __TEXT,__text  __BKSHIDSetHitTestRegionsForDisplay
+0x189f8f5d4  __TEXT,__text  __BKSHIDSetMinimumBrightnessLevelWithFadeDuration
+0x18a00b160  __TEXT,__text  __BKSHIDSetObjectInProximityIgnoresTouches
+0x18a00bf60  __TEXT,__text  __BKSHIDSetOrientationClient
+0x189fa003c  __TEXT,__text  __BKSHIDSetOrientationClientEventsEnabled
+0x18a00d7cc  __TEXT,__text  __BKSHIDSetPersistentServiceProperties
+0x18a00d1d8  __TEXT,__text  __BKSHIDSetStandardType
+0x189f97740  __TEXT,__text  __BKSHIDTouchAddAuthenticationSpecifications
+0x18a00de7c  __TEXT,__text  __BKSHIDTouchSensitiveButtonSetScanMode
+0x18a00bbec  __TEXT,__text  __BKSHIDTouchTransfer
+0x18a00c27c  __TEXT,__text  __BKSHIDUnlockOrientation
+0x18a00daac  __TEXT,__text  __BKSHIDVerifyEventAuthenticationMessage
+0x18a00dc94  __TEXT,__text  __BKSHIDVerifyEventProvenance
+0x18a010f60  __TEXT,__text  __BKSWatchdogGetIsAlive
+0x189ffad40  __TEXT,__text  __BKSWatchdogSetServerWrapper
+0x1e2a28e80  __AUTH_CONST,__const  __BKXXBKAccelerometer_subsystem
+0x189fde73c  __TEXT,__text  __BKXXDeliverAccelerometerEvent
+0x18a003b24  __TEXT,__text  __RedirectEventToClient
+0x1e080c7a0  __DATA_CONST,__const  _kBKSDisplayServerDiedNotification
+0x1e080c798  __DATA_CONST,__const  _kBKSHIDServerDiedNotification
+0x1e080c790  __DATA_CONST,__const  _kBKSHIDServicesSafeToSetIdleTimerNotification
+0x1e080c788  __DATA_CONST,__const  _kBKSHIDServicesStackshotTaken
+0x1e080c780  __DATA_CONST,__const  _kBKSHIDServicesTouchPadAvailabilityNotification
+0x1e080c778  __DATA_CONST,__const  _kBKSHIDServicesUserEventIdled
+0x1e080c770  __DATA_CONST,__const  _kBKSHIDServicesUserEventOccurred
+0x1e080c768  __DATA_CONST,__const  _kBKSHIDServicesUserEventPresenceExpired
+0x1e080c760  __DATA_CONST,__const  _kBKSHIDServicesUserEventPresent
+0x1e080c758  __DATA_CONST,__const  _kBKSHIDServicesUserEventUnIdled
+```
+
+## Private
+
+```
+0x189f8f4cc  __TEXT,__text  __BKSServerPortHelper
+0x189f8f92c  __TEXT,__text  ___108-[BKSHIDEventDeliveryManager deferEventsMatchingPredicate:restrictedToEventDescriptors:toTarget:withReason:]_block_invoke
+0x189f8f9a8  __TEXT,__text  -[BKSLocalDefaults disableStudyLogAccelerometerLogging]
+0x189f8f9bc  __TEXT,__text  -[BKSHIDEventDeferringToken copyWithZone:]
+0x189f8f9c0  __TEXT,__text  -[BKSMutableHIDEventDeferringPredicate init]
+0x189f8fb30  __TEXT,__text  -[BKSHIDEventDeferringEnvironment copyWithZone:]
+0x189f8fb34  __TEXT,__text  -[BKSHIDEventDisplay copyWithZone:]
+0x189f8fb38  __TEXT,__text  -[BKSHIDEventDeferringTarget initWithPID:token:]
+0x189f8ff14  __TEXT,__text  -[BKSMutableHIDEventDeferringTarget init]
+0x189f90064  __TEXT,__text  __BKSHIDEventDeferringTargetClassIsCompatible
+0x189f900b8  __TEXT,__text  -[BKSHIDEventDeliveryManager _lock_flushIfNeeded]
+0x189f905a4  __TEXT,__text  -[BKSHIDEventDeferringRule .cxx_destruct]
+0x189f90600  __TEXT,__text  -[BKSMutableHIDEventDeferringTarget copyWithZone:]
+0x189f90680  __TEXT,__text  -[BKSHIDKeyboardService allKeyboardDevices]
+0x189f90718  __TEXT,__text  -[BKSHIDKeyboardService _addObserver:forReason:]
+0x189f90744  __TEXT,__text  -[BKSHIDEventDeliveryRuleChangeTransaction encodeWithCoder:]
+0x189f90880  __TEXT,__text  -[_BKSHIDEventDeferringRuleIdentity encodeWithCoder:]
+0x189f908e0  __TEXT,__text  -[BKSHIDEventDeliveryRuleChangeTransaction .cxx_destruct]
+0x189f9096c  __TEXT,__text  ___67-[BKSHIDEventDeliveryManager _lock_transactionAssertionWithReason:]_block_invoke
+0x189f909e8  __TEXT,__text  -[BKSHIDEventDeferringToken _init]
+0x189f90ba4  __TEXT,__text  -[BKSHIDEventDeferringTarget .cxx_destruct]
+0x189f90bb0  __TEXT,__text  -[BKSHIDEventDeferringPredicate .cxx_destruct]
+0x189f90bf4  __TEXT,__text  -[BKSMutableHIDEventDeferringPredicate copyWithZone:]
+0x189f90c2c  __TEXT,__text  -[_BKSHIDStringIdentifierEventDeferringToken .cxx_destruct]
+0x189f90c40  __TEXT,__text  -[BKSHIDEventDisplay .cxx_destruct]
+0x189f90c4c  __TEXT,__text  -[BKSEventDeferringChainIdentity .cxx_destruct]
+0x189f90c84  __TEXT,__text  -[BKSHIDEventDeferringEnvironment .cxx_destruct]
+0x189f90c90  __TEXT,__text  -[BKSEventDeferringChainIdentity isEqual:]
+0x189f90d20  __TEXT,__text  -[BKSHIDKeyboardService _proxyDevicesForConcreteDevices:]
+0x189f90d9c  __TEXT,__text  -[BKSHIDEventDeferringTarget isEqual:]
+0x189f90e10  __TEXT,__text  -[BKSEventDeferringChainIdentity _init]
+0x189f90ee4  __TEXT,__text  +[BKSHIDEventDeferringSelectionPathIdentifier everySelectionPath]
+0x189f90f2c  __TEXT,__text  -[BKSHIDEventDeferringTarget copyWithZone:]
+0x189f90f30  __TEXT,__text  -[_BKSHIDEventDeferringRuleIdentity isEqual:]
+0x189f90fbc  __TEXT,__text  ___57-[BKSHIDEventDeliveryChain appendDescriptionToFormatter:]_block_invoke
+0x189f91108  __TEXT,__text  -[BKSHIDEventDescriptor _initWithEventType:]
+0x189f91154  __TEXT,__text  -[BKSHIDEventDescriptor isEqual:]
+0x189f911c0  __TEXT,__text  -[BKSHIDEventDeliveryRuleChangeTransaction initWithCoder:]
+0x189f913c4  __TEXT,__text  __BKDecodeArrayOfClass
+0x189f91658  __TEXT,__text  -[BKSHIDEventDeferringEnvironment initWithCoder:]
+0x189f9170c  __TEXT,__text  -[BKSHIDEventDeferringEnvironment _uniqueEnvironmentForIdentifier]
+0x189f91788  __TEXT,__text  -[BKSHIDEventDeferringPredicate copyWithZone:]
+0x189f9178c  __TEXT,__text  -[BKSHIDEventDeferringRule weightedDeferringRuleCompare:]
+0x189f91938  __TEXT,__text  -[BKSHIDEventDeferringTarget initWithCoder:]
+0x189f91b74  __TEXT,__text  ___59-[BKSHIDEventDeferringTarget appendDescriptionToFormatter:]_block_invoke
+0x189f91bf4  __TEXT,__text  ___66-[_BKSHIDEventDeferringRuleIdentity appendDescriptionToFormatter:]_block_invoke
+0x189f91c2c  __TEXT,__text  ___62-[BKSHIDEventDeferringPredicate appendDescriptionToFormatter:]_block_invoke
+0x189f91ca0  __TEXT,__text  -[BKSEventDeferringChainIdentity initWithDisplay:environment:]
+0x189f91d28  __TEXT,__text  ___62-[_BKSHIDUniqueEventDeferringToken appendDescriptionToStream:]_block_invoke
+0x189f91d90  __TEXT,__text  ___63-[BKSEventDeferringChainIdentity appendDescriptionToFormatter:]_block_invoke
+0x189f91df4  __TEXT,__text  +[BKSMutableHIDEventDeferringResolution new]
+0x189f91e00  __TEXT,__text  -[BKSMutableHIDEventDeferringResolution init]
+0x189f91f98  __TEXT,__text  -[BKSHIDEventDeferringResolution _initWithDisplay:environment:versionedPID:pid:token:dispatchingTarget:]
+0x189f927f4  __TEXT,__text  +[BKSHIDEventDeferringResolution build:]
+0x189f9284c  __TEXT,__text  -[BKSHIDEventDeferringResolution .cxx_destruct]
+0x189f928a8  __TEXT,__text  -[BKSHIDEventDeferringTarget hash]
+0x189f928e0  __TEXT,__text  -[BKSHIDEventPolicyObservation _init]
+0x189f92a78  __TEXT,__text  ___47-[BKSHIDEventObserver _observationsFromChains:]_block_invoke
+0x189f92b7c  __TEXT,__text  -[BKSEventDeferringChainIdentity hash]
+0x189f92bb8  __TEXT,__text  -[_BKSHIDEventDeferringRuleIdentity pid]
+0x189f92bc0  __TEXT,__text  -[_BKSHIDStringIdentifierEventDeferringToken isEqual:]
+0x189f92c4c  __TEXT,__text  ___48+[BKSEventDeferringChainIdentity protobufSchema]_block_invoke
+0x189f92c94  __TEXT,__text  -[BKSEventDeferringChainIdentity initForProtobufDecoding]
+0x189f92c98  __TEXT,__text  -[BKSHIDEventDeliveryChain .cxx_destruct]
+0x189f92d00  __TEXT,__text  -[BKSHIDEventDeferringSelectionPathIdentifier .cxx_destruct]
+0x189f92d0c  __TEXT,__text  -[_BKSHIDUniqueEventDeferringToken .cxx_destruct]
+0x189f92d20  __TEXT,__text  -[BKSMutableHIDEventPolicyObservation copyWithZone:]
+0x189f92d54  __TEXT,__text  -[BKSHIDEventPolicyObservation _initWithCopyOf:]
+0x189f92de8  __TEXT,__text  +[BKSHIDEventPolicyObservation build:]
+0x189f92e54  __TEXT,__text  -[_BKSHIDUniqueEventDeferringToken isEqual:]
+0x189f92f00  __TEXT,__text  -[_BKSHIDStringIdentifierEventDeferringToken _isString]
+0x189f92f08  __TEXT,__text  -[_BKSHIDCAContextEventDeferringToken isEqual:]
+0x189f92f94  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver _lock_updatePolicyWithBlock:]
+0x189f931c4  __TEXT,__text  -[BKSHIDEventPolicyObservation .cxx_destruct]
+0x189f93214  __TEXT,__text  ___64-[BKSHIDEventDeliveryPolicyObserver deferringResolutionsChanged]_block_invoke
+0x189f9326c  __TEXT,__text  -[BKSHIDEventDeliveryChain appendDescriptionToFormatter:]
+0x189f9335c  __TEXT,__text  -[BKSHIDEventDeferringToken _isString]
+0x189f93364  __TEXT,__text  -[BKSHIDEventDeliveryChain didFinishProtobufDecodingWithError:]
+0x189f933d0  __TEXT,__text  ___41-[BKSHIDEventDeliveryChain subsetForPID:]_block_invoke
+0x189f93430  __TEXT,__text  -[BKSHIDEventSenderDescriptor .cxx_destruct]
+0x189f93960  __TEXT,__text  ___BKSHIDServicesDeviceHasHighFrequencyDigitizer_block_invoke
+0x189f93988  __TEXT,__text  __BKSDisplayServicesGetMainScreenInfo
+0x189f93f38  __TEXT,__text  ____getHIDEventSystemClient_block_invoke
+0x189f940fc  __TEXT,__text  -[BKSAccelerometer init]
+0x189f94204  __TEXT,__text  -[BKSHIDEventDeliveryChain deferringPath]
+0x189f9420c  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes .cxx_destruct]
+0x189f94250  __TEXT,__text  -[BKSHIDEventBaseAttributes .cxx_destruct]
+0x189f942ac  __TEXT,__text  -[BKSHIDEventDigitizerAttributes .cxx_destruct]
+0x189f942b8  __TEXT,__text  -[BKSHIDEventDeferringTarget pid]
+0x189f942c0  __TEXT,__text  -[BKSHIDEventPolicyObservation policyStatus]
+0x189f942c8  __TEXT,__text  ___69-[BKSHIDEventDeliveryPolicyObserver _lock_appendDescriptionToStream:]_block_invoke
+0x189f94494  __TEXT,__text  ___55-[BKSHIDEventDeliveryPolicy appendDescriptionToStream:]_block_invoke
+0x189f9458c  __TEXT,__text  +[BKSHIDEventDeferringEnvironment keyboardFocusEnvironment]
+0x189f945d4  __TEXT,__text  -[BKSHIDEventSimpleProvenance .cxx_destruct]
+0x189f946dc  __TEXT,__text  +[BKSHIDServiceConnectionFactory sharedInstance]
+0x189f94728  __TEXT,__text  ___59+[BKSHIDEventDeferringEnvironment keyboardFocusEnvironment]_block_invoke
+0x189f94764  __TEXT,__text  -[BKSHIDEventDeferringEnvironment _initWithIdentifier:]
+0x189f948f0  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver init]
+0x189f94a58  __TEXT,__text  +[BKSHIDEventObserver sharedInstance]
+0x189f94aa0  __TEXT,__text  ___37+[BKSHIDEventObserver sharedInstance]_block_invoke
+0x189f94b0c  __TEXT,__text  -[BKSHIDServiceConnectionFactory clientConnectionForServiceWithName:multiplexer:isNonLaunching:]
+0x189f94e84  __TEXT,__text  ___48+[BKSHIDServiceConnectionFactory sharedInstance]_block_invoke
+0x189f94edc  __TEXT,__text  -[BKSHIDServiceConnectionFactory clientConnectionForServiceWithName:isNonLaunching:]
+0x189f94f54  __TEXT,__text  ___96-[BKSHIDServiceConnectionFactory clientConnectionForServiceWithName:multiplexer:isNonLaunching:]_block_invoke
+0x189f94f60  __TEXT,__text  ___50-[BKSHIDEventObserver _initWithConnectionFactory:]_block_invoke
+0x189f95160  __TEXT,__text  -[BKSHIDEventObserver addDeferringObserver:]
+0x189f95428  __TEXT,__text  -[_BKSHIDEventDeferringRuleIdentity copyWithZone:]
+0x189f9542c  __TEXT,__text  +[BKSHIDEventDeliveryChain supportsSecureCoding]
+0x189f95434  __TEXT,__text  -[BKSHIDEventDeferringRule isEqual:]
+0x189f95550  __TEXT,__text  -[BKSHIDEventSenderDescriptor isEqual:]
+0x189f95630  __TEXT,__text  -[BKSHIDEventDiscreteDispatchingPredicate senderDescriptors]
+0x189f95638  __TEXT,__text  -[BKSHIDEventDeferringRule predicate]
+0x189f95640  __TEXT,__text  +[BKSHIDEventDisplay nullDisplay]
+0x189f95688  __TEXT,__text  -[BKSHIDEventDiscreteDispatchingRule predicate]
+0x189f95690  __TEXT,__text  -[BKSHIDEventDeliveryRuleWrapper hash]
+0x189f956b0  __TEXT,__text  -[BKSHIDEventDeferringRule target]
+0x189f956b8  __TEXT,__text  -[BKSHIDEventDeferringRule identity]
+0x189f956c0  __TEXT,__text  -[BKSHIDEventDeliveryManager _lock_transactionAssertionWithReason:]
+0x189f95b24  __TEXT,__text  -[BKSHIDEventDeferringEnvironment isEqual:]
+0x189f95ba0  __TEXT,__text  -[_BKSHIDCAContextEventDeferringToken hash]
+0x189f95bcc  __TEXT,__text  -[BKSHIDEventDeferringSelectionPathIdentifier hash]
+0x189f95bd4  __TEXT,__text  -[BKSHIDEventDeferringSelectionPathIdentifier _substituteSingeltonForIdentifierString:]
+0x189f95c58  __TEXT,__text  +[BKSHIDEventDeferringSelectionPathIdentifier primary]
+0x189f95ca0  __TEXT,__text  +[_BKSHIDStringIdentifierEventDeferringToken protobufSchema]
+0x189f95d34  __TEXT,__text  -[BKSHIDEventPolicyObservation generation]
+0x189f95d3c  __TEXT,__text  -[BKSHIDEventDeliveryChain containsEndOfChain]
+0x189f95d44  __TEXT,__text  -[BKSHIDEventDeferringTarget token]
+0x189f95d4c  __TEXT,__text  -[BKSEventDeferringChainIdentity didFinishProtobufDecodingWithError:]
+0x189f95de0  __TEXT,__text  -[BKSAccelerometer setAccelerometerEventsEnabled:]
+0x189f95e38  __TEXT,__text  +[BKSHIDEventDescriptor descriptorForHIDEvent:]
+0x189f95f8c  __TEXT,__text  ___49-[BKSHIDEventDeliveryManager _lock_implicitFlush]_block_invoke_2
+0x189f95ff4  __TEXT,__text  ___49-[BKSHIDEventDeliveryManager _lock_implicitFlush]_block_invoke
+0x189f96068  __TEXT,__text  +[BKSHIDEventVendorDefinedDescriptor descriptorWithPage:usage:]
+0x189f960a4  __TEXT,__text  -[BKSHIDEventDiscreteDispatchingRule predicateEventTypeMask]
+0x189f960ac  __TEXT,__text  -[BKSHIDEventGenericGestureDescriptor isEqual:]
+0x189f96188  __TEXT,__text  -[_BKSHIDEventDeferringRuleIdentity hash]
+0x189f96194  __TEXT,__text  -[BKSHIDEventDisplay isEqual:]
+0x189f96220  __TEXT,__text  +[BKSHIDEventDeferringTarget protobufSchema]
+0x189f962b4  __TEXT,__text  +[BKSHIDEventDeferringSelectionPathIdentifier protobufSchema]
+0x189f96348  __TEXT,__text  +[BKSHIDEventDisplay protobufSchema]
+0x189f963dc  __TEXT,__text  -[BKSEventDeferringChainIdentity environment]
+0x189f963e4  __TEXT,__text  +[_BKSHIDUniqueEventDeferringToken protobufSchema]
+0x189f96478  __TEXT,__text  -[BKSHIDEventDeferringEnvironment hash]
+0x189f96480  __TEXT,__text  +[BKSEventDeferringChainIdentity protobufSchema]
+0x189f96498  __TEXT,__text  -[_BKSHIDStringIdentifierEventDeferringToken initForProtobufDecoding]
+0x189f965f4  __TEXT,__text  -[BKSHIDEventPolicyObservation pid]
+0x189f965fc  __TEXT,__text  -[BKSHIDEventDeliveryChain identity]
+0x189f96604  __TEXT,__text  -[BKSHIDEventDisplay hash]
+0x189f96648  __TEXT,__text  -[BKSHIDEventDeferringSelectionPathIdentifier didFinishProtobufDecodingWithError:]
+0x189f96690  __TEXT,__text  -[BKSEventDeferringChainIdentity copyWithZone:]
+0x189f96694  __TEXT,__text  -[BKSHIDEventPolicyObservation isEqual:]
+0x189f96774  __TEXT,__text  -[BKSHIDEventPolicyObservation hash]
+0x189f96840  __TEXT,__text  -[BKSEventDeferringChainIdentity display]
+0x189f96848  __TEXT,__text  -[_BKSHIDUniqueEventDeferringToken hash]
+0x189f9689c  __TEXT,__text  -[BKSHIDEventDeliveryChain generation]
+0x189f968a4  __TEXT,__text  -[BKSHIDEventDeliveryChain initForProtobufDecoding]
+0x189f968dc  __TEXT,__text  -[BKSHIDEventDeliveryChain _protobufDecodedFromData:]
+0x189f96a08  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver deferringResolutionsChanged]
+0x189f96cd8  __TEXT,__text  -[BKSHIDEventPolicyObservation token]
+0x189f96ce0  __TEXT,__text  -[BKSHIDEventDeliveryChain environment]
+0x189f96ce8  __TEXT,__text  +[BKSHIDEventDeliveryChain protobufSchema]
+0x189f96d7c  __TEXT,__text  +[BKSHIDEventDeferringEnvironment protobufSchema]
+0x189f96e10  __TEXT,__text  -[_BKSHIDCAContextEventDeferringToken initForProtobufDecoding]
+0x189f9701c  __TEXT,__text  -[BKSTouchAuthenticationSpecification appendDescriptionToFormatter:]
+0x189f973a4  __TEXT,__text  -[BKSTouchAuthenticationSpecification copyWithZone:]
+0x189f973d8  __TEXT,__text  -[BKSTouchAuthenticationSpecification _initWithCopyOf:]
+0x189f974a0  __TEXT,__text  +[BKSTouchAuthenticationSpecification buildSpecification:]
+0x189f9750c  __TEXT,__text  -[BKSTouchAuthenticationSpecification _init]
+0x189f9769c  __TEXT,__text  -[BKSTouchAuthenticationSpecification .cxx_destruct]
+0x189f976a8  __TEXT,__text  +[BKSTouchAuthenticationSpecification supportsSecureCoding]
+0x189f976b0  __TEXT,__text  -[BKSTouchEventService addTouchAuthenticationSpecifications:forReason:]
+0x189f97820  __TEXT,__text  -[BKSSceneHostRegistration updateSettings:]
+0x189f97884  __TEXT,__text  -[BKSSceneHostSettings .cxx_destruct]
+0x189f97890  __TEXT,__text  -[BKSTouchEventService registerSceneHostSettings:forCAContextID:]
+0x189f97960  __TEXT,__text  -[BKSTouchEventService _updateRegistration:]
+0x189f97ad0  __TEXT,__text  -[BKSAnimationFenceHandle copyWithZone:]
+0x189f97b34  __TEXT,__text  -[BKSAnimationFenceHandle dealloc]
+0x189f97b80  __TEXT,__text  -[BKSAnimationFenceHandle .cxx_destruct]
+0x189f97b8c  __TEXT,__text  -[BKSHIDEventDeliveryRuleChangeTransaction contentsMask]
+0x189f97b94  __TEXT,__text  ___68-[BKSHIDEventDeliveryManager _initWithConnectionFactory:forTesting:]_block_invoke_2
+0x189f97d40  __TEXT,__text  -[BKSHIDEventDeliveryRuleChangeTransaction setDeferringRules:]
+0x189f97d78  __TEXT,__text  -[_BKSHIDUniqueEventDeferringToken encodeWithCoder:]
+0x189f97e0c  __TEXT,__text  -[_BKSHIDStringIdentifierEventDeferringToken encodeWithCoder:]
+0x189f97e70  __TEXT,__text  -[_BKSHIDCAContextEventDeferringToken encodeWithCoder:]
+0x189f97e94  __TEXT,__text  -[_BKSHIDEventDeferringRuleIdentity initWithSeed:pid:]
+0x189f97ee4  __TEXT,__text  -[_BKSHIDCAContextEventDeferringToken _initWithIdentifier:]
+0x189f97f3c  __TEXT,__text  +[BKSHIDEventDeliveryManager sharedInstance]
+0x189f97f84  __TEXT,__text  -[BKSHIDServiceConnectionFactory clientConnectionForServiceWithName:]
+0x189f98004  __TEXT,__text  ___44+[BKSHIDEventDeliveryManager sharedInstance]_block_invoke
+0x189f98074  __TEXT,__text  ___68-[BKSHIDEventDeliveryManager _initWithConnectionFactory:forTesting:]_block_invoke
+0x189f98224  __TEXT,__text  +[BKSHIDEventDeferringToken tokenForIdentifierOfCAContext:]
+0x189f98268  __TEXT,__text  +[BKSHIDEventDisplay builtinDisplay]
+0x189f982b0  __TEXT,__text  +[BKSHIDEventDeferringToken uniqueTokenWithLabel:]
+0x189f982fc  __TEXT,__text  ___36+[BKSHIDEventDisplay builtinDisplay]_block_invoke
+0x189f98348  __TEXT,__text  -[_BKSHIDUniqueEventDeferringToken _initWithLabel:]
+0x189f9843c  __TEXT,__text  +[BKSHIDEventDeferringRule ruleForDeferringEventsMatchingPredicate:restrictedToEventDescriptors:toTarget:withReason:seed:pid:]
+0x189f98508  __TEXT,__text  _migHelperHash
+0x189f98510  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver _notifyAsyncObservers:didUpdatePolicy:]
+0x189f98758  __TEXT,__text  -[BKSHIDEventDeliveryPolicy _initWithPolicyObservation:]
+0x189f987d8  __TEXT,__text  -[BKSHIDEventObserver _lock_postObservingStateToServerIncludingNegative:]
+0x189f9892c  __TEXT,__text  ___55-[BKSHIDEventDeliveryPolicyObserver _initWithObserver:]_block_invoke
+0x189f98984  __TEXT,__text  ___BKLogEventDelivery_block_invoke
+0x189f989bc  __TEXT,__text  ___54-[BKSHIDEventDeliveryPolicyObserver _lock_description]_block_invoke
+0x189f989f8  __TEXT,__text  ___54-[BKSHIDEventDeliveryPolicyObserver _lock_description]_block_invoke_2
+0x189f98a5c  __TEXT,__text  ___50-[BKSHIDEventObserver _initWithConnectionFactory:]_block_invoke_2
+0x189f98b20  __TEXT,__text  -[_BKSHIDStringIdentifierEventDeferringToken _initWithString:]
+0x189f98b9c  __TEXT,__text  +[BKSHIDEventDeferringToken tokenForString:]
+0x189f98cfc  __TEXT,__text  -[BKSHIDEventDeliveryPolicy isEqual:]
+0x189f98da8  __TEXT,__text  -[BKSHIDEventDeliveryPolicy finalStringTokenInChain]
+0x189f98db0  __TEXT,__text  -[BKSHIDEventDeliveryPolicy deferringPolicyStatus]
+0x189f98db8  __TEXT,__text  -[_BKSHIDStringIdentifierEventDeferringToken description]
+0x189f98dcc  __TEXT,__text  ___55-[BKSHIDEventDeliveryPolicyObserver setDeferringToken:]_block_invoke
+0x189f98e90  __TEXT,__text  ___99-[BKSHIDEventDeliveryPolicyObserver _replacePolicySpecificationObject:withObject:replaceIvarBlock:]_block_invoke
+0x189f98ea4  __TEXT,__text  -[BKSHIDEventGenericGestureDescriptor describes:]
+0x189f98f14  __TEXT,__text  -[BKSHIDEventDeferringEnvironment encodeWithCoder:]
+0x189f98f2c  __TEXT,__text  -[BKSHIDEventSenderDescriptor hash]
+0x189f98f88  __TEXT,__text  -[BKSHIDEventDeferringRule hash]
+0x189f98f90  __TEXT,__text  -[BKSHIDEventDeliveryChain _dataProtobufEncoded]
+0x189f99108  __TEXT,__text  -[BKSHIDEventDeliveryChain initWithIdentity:compatibilityDisplay:selectionPath:path:modalities:constraints:generation:]
+0x189f9913c  __TEXT,__text  -[BKSHIDEventDeliveryChain initWithCoder:]
+0x189f991bc  __TEXT,__text  -[BKSHIDEventDeferringTarget appendDescriptionToFormatter:]
+0x189f99250  __TEXT,__text  -[_BKChainObserverContainer requestedChainIdentity]
+0x189f99258  __TEXT,__text  -[BKSHIDEventUsagePairDescriptor isEqual:]
+0x189f99330  __TEXT,__text  -[BKSMutableHIDEventDeferringResolution setDisplay:]
+0x189f99594  __TEXT,__text  -[BKSEventDeferringChainIdentity description]
+0x189f995a4  __TEXT,__text  -[_BKSHIDUniqueEventDeferringToken _isUnique]
+0x189f995ac  __TEXT,__text  -[BKSMutableHIDEventDeferringResolution setPid:]
+0x189f996e0  __TEXT,__text  -[BKSHIDEventDeferringRule appendDescriptionToFormatter:]
+0x189f997cc  __TEXT,__text  -[_BKSHIDStringIdentifierEventDeferringToken initWithCoder:]
+0x189f99a24  __TEXT,__text  -[BKSHIDEventObserver _initWithConnectionFactory:]
+0x189f99c84  __TEXT,__text  -[BKSHIDEventSenderDescriptor senderID]
+0x189f99c8c  __TEXT,__text  -[BKSHIDEventSenderDescriptor copyWithZone:]
+0x189f99cdc  __TEXT,__text  -[BKSHIDEventDeferringSelectionPathIdentifier appendDescriptionToStream:]
+0x189f99cf0  __TEXT,__text  -[BKSHIDEventDeferringTarget initForProtobufDecoding]
+0x189f99d28  __TEXT,__text  -[BKSAccelerometer accelerometerEventsEnabled]
+0x189f99d38  __TEXT,__text  -[_BKSHIDCAContextEventDeferringToken initWithCoder:]
+0x189f99f24  __TEXT,__text  -[BKSHIDEventDigitizerAttributes sceneTouchBehavior]
+0x189f99f2c  __TEXT,__text  -[BKSHIDEventDeliveryManager transactionAssertionWithReason:]
+0x189f9a21c  __TEXT,__text  -[BKSHIDEventUsagePairDescriptor hash]
+0x189f9a244  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver _lock_effectivePolicyObservation]
+0x189f9a46c  __TEXT,__text  -[BKSHIDEventSenderDescriptor associatedDisplay]
+0x189f9a474  __TEXT,__text  ___BKLogDisplay_block_invoke
+0x189f9a4ac  __TEXT,__text  -[BKSSceneHostSettings initWithIdentifier:touchBehavior:]
+0x189f9a9ac  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver deferringToken]
+0x189f9a9f8  __TEXT,__text  -[BKSHIDEventDiscreteDispatchingRule target]
+0x189f9aa00  __TEXT,__text  -[BKSHIDEventBaseAttributes contextID]
+0x189f9aa08  __TEXT,__text  -[BKSHIDEventDeliveryManager deferEventsMatchingPredicate:restrictedToEventDescriptors:toTarget:withReason:]
+0x189f9b59c  __TEXT,__text  -[BKSHIDEventDeliveryChain subsetForPID:]
+0x189f9b798  __TEXT,__text  -[BKSHIDEventDisplay _isNullDisplay]
+0x189f9b7b8  __TEXT,__text  +[BKSHIDEventDeferringEnvironment environmentWithIdentifier:]
+0x189f9ba14  __TEXT,__text  +[BKSMutableHIDEventDeferringPredicate new]
+0x189f9ba20  __TEXT,__text  +[BKSMutableHIDEventDeferringTarget new]
+0x189f9ba2c  __TEXT,__text  -[_BKSHIDStringIdentifierEventDeferringToken appendDescriptionToStream:]
+0x189f9bb94  __TEXT,__text  -[BKSHIDEventObserver hasReceivedLatestDeferringObservationsFromServer]
+0x189f9bbd4  __TEXT,__text  -[BKSHIDEventObserver _observationsFromChains:]
+0x189f9c210  __TEXT,__text  -[BKSHIDEventDisplay initForProtobufDecoding]
+0x189f9c248  __TEXT,__text  -[BKSAccelerometer setXThreshold:]
+0x189f9c29c  __TEXT,__text  -[BKSHIDEventDeferringTarget encodeWithCoder:]
+0x189f9c2fc  __TEXT,__text  -[BKSHIDEventDigitizerAttributes systemGesturesPossible]
+0x189f9c304  __TEXT,__text  -[BKSHIDEventSenderDescriptor hardwareType]
+0x189f9c30c  __TEXT,__text  -[BKSAnimationFenceHandle invalidate]
+0x189f9c314  __TEXT,__text  +[BKSHIDEventDeferringTarget supportsSecureCoding]
+0x189f9c31c  __TEXT,__text  -[BKSAccelerometer setUpdateInterval:]
+0x189f9c370  __TEXT,__text  -[BKSMutableTouchAuthenticationSpecification setBackgroundStatisticsRegion:]
+0x189f9c378  __TEXT,__text  -[BKSHIDEventDeliveryChain initWithIdentity:compatibilityDisplay:selectionPath:path:modalities:constraints:containsSubset:containsEndOfChain:finalStringTargetIndex:generation:]
+0x189f9c604  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver appendDescriptionToStream:]
+0x189f9c6c0  __TEXT,__text  -[BKSAccelerometer setDelegate:]
+0x189f9c6cc  __TEXT,__text  -[BKSAccelerometer currentDeviceOrientation]
+0x189f9c6fc  __TEXT,__text  +[BKSAnimationFenceHandle newFenceHandleForCAFenceHandle:]
+0x189f9c744  __TEXT,__text  -[BKSHIDEventDigitizerAttributes activeModifiers]
+0x189f9c74c  __TEXT,__text  -[BKSHIDEventDisplay description]
+0x189f9c790  __TEXT,__text  -[BKSHIDEventDeliveryRuleChangeTransaction deferringRules]
+0x189f9c798  __TEXT,__text  +[_BKSHIDStringIdentifierEventDeferringToken supportsSecureCoding]
+0x189f9c7a0  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver policyStatus]
+0x189f9c7e8  __TEXT,__text  -[BKSHIDEventDeferringEnvironment initForProtobufDecoding]
+0x189f9c820  __TEXT,__text  -[BKSHIDEventUsagePairDescriptor describes:]
+0x189f9c8e8  __TEXT,__text  -[BKSHIDEventDeferringPredicate _initWithEnvironment:display:token:]
+0x189f9d030  __TEXT,__text  -[BKSHIDEventDeferringPredicate token]
+0x189f9d038  __TEXT,__text  -[BKSHIDEventDeferringPredicate display]
+0x189f9d040  __TEXT,__text  -[BKSMutableHIDEventDeferringResolution setEnvironment:]
+0x189f9d2a4  __TEXT,__text  -[BKSHIDEventBiometricDescriptor isEqual:]
+0x189f9d358  __TEXT,__text  -[BKSHIDEventDeliveryChain modalities]
+0x189f9d360  __TEXT,__text  ___42+[BKSHIDEventDeliveryChain protobufSchema]_block_invoke_2
+0x189f9d458  __TEXT,__text  ___36+[BKSHIDEventDisplay protobufSchema]_block_invoke_2
+0x189f9d4a8  __TEXT,__text  ___49+[BKSHIDEventDeferringEnvironment protobufSchema]_block_invoke_2
+0x189f9d4bc  __TEXT,__text  ___42+[BKSHIDEventDeliveryChain protobufSchema]_block_invoke
+0x189f9d500  __TEXT,__text  ___36+[BKSHIDEventDisplay protobufSchema]_block_invoke
+0x189f9d544  __TEXT,__text  ___49+[BKSHIDEventDeferringEnvironment protobufSchema]_block_invoke
+0x189f9d588  __TEXT,__text  ___61+[BKSHIDEventDeferringSelectionPathIdentifier protobufSchema]_block_invoke
+0x189f9d5dc  __TEXT,__text  ___61+[BKSHIDEventDeferringSelectionPathIdentifier protobufSchema]_block_invoke_2
+0x189f9d5ec  __TEXT,__text  +[BKSHIDEventDeferringModality protobufSchema]
+0x189f9d604  __TEXT,__text  ___46+[BKSHIDEventDeferringModality protobufSchema]_block_invoke
+0x189f9d614  __TEXT,__text  +[BKSHIDEventDeferringConstraint protobufSchema]
+0x189f9d62c  __TEXT,__text  ___44+[BKSHIDEventDeferringTarget protobufSchema]_block_invoke
+0x189f9d670  __TEXT,__text  ___48+[BKSHIDEventDeferringConstraint protobufSchema]_block_invoke
+0x189f9d680  __TEXT,__text  ___44+[BKSHIDEventDeferringTarget protobufSchema]_block_invoke_2
+0x189f9d6c8  __TEXT,__text  ___43+[BKSHIDEventDeferringToken protobufSchema]_block_invoke_2
+0x189f9d7b4  __TEXT,__text  +[BKSHIDEventDeferringToken protobufSchema]
+0x189f9d848  __TEXT,__text  ___43+[BKSHIDEventDeferringToken protobufSchema]_block_invoke
+0x189f9d88c  __TEXT,__text  -[BKSHIDEventDeferringToken _isUnique]
+0x189f9d894  __TEXT,__text  ___50+[_BKSHIDUniqueEventDeferringToken protobufSchema]_block_invoke
+0x189f9d8d8  __TEXT,__text  ___53+[_BKSHIDCAContextEventDeferringToken protobufSchema]_block_invoke
+0x189f9d91c  __TEXT,__text  ___54+[BKSHIDEventDeferringSelectionPathIdentifier primary]_block_invoke
+0x189f9d958  __TEXT,__text  -[BKSHIDEventDeferringSelectionPathIdentifier initWithIdentifier:]
+0x189f9d9c8  __TEXT,__text  ___50+[_BKSHIDUniqueEventDeferringToken protobufSchema]_block_invoke_2
+0x189f9da18  __TEXT,__text  ___53+[_BKSHIDCAContextEventDeferringToken protobufSchema]_block_invoke_2
+0x189f9da2c  __TEXT,__text  ___60+[_BKSHIDStringIdentifierEventDeferringToken protobufSchema]_block_invoke
+0x189f9da70  __TEXT,__text  ___60+[_BKSHIDStringIdentifierEventDeferringToken protobufSchema]_block_invoke_2
+0x189f9da84  __TEXT,__text  -[BKSMutableHIDEventPolicyObservation setSelectionPath:]
+0x189f9dd50  __TEXT,__text  -[BKSMutableHIDEventPolicyObservation setGeneration:]
+0x189f9dd58  __TEXT,__text  -[BKSHIDEventPolicyObservation isFinalStringToken]
+0x189f9dd60  __TEXT,__text  -[BKSHIDEventDeliveryChain compatibilityDisplay]
+0x189f9dd68  __TEXT,__text  -[BKSHIDEventDeliveryChain finalStringTargetIndex]
+0x189f9dd70  __TEXT,__text  -[BKSHIDEventDeliveryChain display]
+0x189f9dd78  __TEXT,__text  -[BKSHIDEventDeliveryChain selectionPath]
+0x189f9dd80  __TEXT,__text  -[BKSMutableHIDEventPolicyObservation setPolicyStatus:]
+0x189f9dd88  __TEXT,__text  -[BKSMutableHIDEventPolicyObservation setEnvironment:]
+0x189f9e054  __TEXT,__text  -[BKSMutableHIDEventPolicyObservation setPid:]
+0x189f9e05c  __TEXT,__text  -[BKSMutableHIDEventPolicyObservation setDisplay:]
+0x189f9e328  __TEXT,__text  -[BKSMutableHIDEventPolicyObservation setToken:]
+0x189f9e5f4  __TEXT,__text  -[BKSHIDEventDeliveryPolicy description]
+0x189f9e604  __TEXT,__text  -[_BKSHIDUniqueEventDeferringToken initForProtobufDecoding]
+0x189f9e760  __TEXT,__text  -[_BKSHIDStringIdentifierEventDeferringToken hash]
+0x189f9e774  __TEXT,__text  -[BKSMutableHIDEventPolicyObservation setFinalStringToken:]
+0x189f9e77c  __TEXT,__text  +[_BKSHIDCAContextEventDeferringToken protobufSchema]
+0x189f9e810  __TEXT,__text  -[BKSHIDEventDeliveryRuleWrapper isEqual:]
+0x189f9e8dc  __TEXT,__text  -[BKSHIDEventDeliveryChain encodeWithCoder:]
+0x189f9e93c  __TEXT,__text  -[BKSHIDEventDeferringPredicate environment]
+0x189f9e944  __TEXT,__text  -[_BKSHIDStringIdentifierEventDeferringToken _string]
+0x189f9e958  __TEXT,__text  -[BKSHIDEventDeferringRule _initWithPredicate:restrictedToEventDescriptors:target:reason:priority:identity:]
+0x189f9f470  __TEXT,__text  -[BKSHIDEventDeliveryPolicy appendDescriptionToStream:]
+0x189f9f504  __TEXT,__text  -[BKSHIDEventPolicyObservation environment]
+0x189f9f50c  __TEXT,__text  -[BKSHIDEventDispatchingTarget deferringEnvironment]
+0x189f9f514  __TEXT,__text  -[BKSHIDEventDispatchingTarget pid]
+0x189f9f51c  __TEXT,__text  -[BKSHIDEventSenderDescriptor primaryUsage]
+0x189f9f720  __TEXT,__text  ___61-[BKSHIDEventDeliveryPolicyObserver setDeferringEnvironment:]_block_invoke
+0x189f9f730  __TEXT,__text  -[_BKChainObserverContainer observerInterface]
+0x189f9f738  __TEXT,__text  -[BKSSystemService pidForApplication:]
+0x189f9f740  __TEXT,__text  -[BKSSystemService .cxx_destruct]
+0x189f9f74c  __TEXT,__text  -[BKSAccelerometer _checkIn]
+0x189f9fb28  __TEXT,__text  _makeCalloutContextKey
+0x189f9fc48  __TEXT,__text  _migHelperGetPort
+0x189f9fc50  __TEXT,__text  -[BKSHIDEventDeferringSelectionTarget _initWithCopyOf:]
+0x189f9fcb8  __TEXT,__text  -[BKSMutableHIDEventDeferringSelectionTarget copyWithZone:]
+0x189f9fcec  __TEXT,__text  -[BKSHIDEventDeferringSelectionChangeRequest _initWithCopyOf:]
+0x189f9fd64  __TEXT,__text  +[BKSHIDEventDeferringSelectionChangeRequest build:]
+0x189f9fdd0  __TEXT,__text  -[BKSHitTestRegion _initWithRect:exclusiveTouchNormalizedSubRect:]
+0x189f9fe7c  __TEXT,__text  +[BKSTouchEventService sharedInstance]
+0x189f9fec4  __TEXT,__text  -[BKSMutableTouchAuthenticationSpecification setLongPressTimeout:]
+0x189f9fecc  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver finalStringTokenInChain]
+0x189f9ff0c  __TEXT,__text  -[BKSHIDEventUsagePairDescriptor _initWithPage:usage:eventType:]
+0x189f9ffe0  __TEXT,__text  -[BKSAccelerometer _updateOrientationServer]
+0x189fa013c  __TEXT,__text  -[BKSHIDEventDiscreteDispatchingPredicate specifiesDescriptor:]
+0x189fa0264  __TEXT,__text  +[BKSHIDEventDeferringSelectionTarget build:]
+0x189fa02d0  __TEXT,__text  -[BKSMutableHIDEventDeferringSelectionChangeRequest copyWithZone:]
+0x189fa0304  __TEXT,__text  -[BKSHIDEventDeferringSelectionChangeRequest _init]
+0x189fa0488  __TEXT,__text  ___80-[BKSHIDEventDeliveryManager changeSelectionPath:target:basis:ignoreModalities:]_block_invoke
+0x189fa04f0  __TEXT,__text  -[BKSHIDEventDeferringSelectionTarget _init]
+0x189fa069c  __TEXT,__text  -[BKSHIDEventDeferringSelectionTarget description]
+0x189fa06ac  __TEXT,__text  -[BKSMutableHIDEventDeferringSelectionTarget setTarget:]
+0x189fa0978  __TEXT,__text  +[BKSHIDKeyboardService sharedInstance]
+0x189fa09c0  __TEXT,__text  -[BKSHitTestRegion initWithRect:exclusiveTouchSubRect:]
+0x189fa0a6c  __TEXT,__text  -[BKSHIDEventDeferringRule reason]
+0x189fa0a74  __TEXT,__text  ___65-[BKSHIDEventDeferringSelectionTarget appendDescriptionToStream:]_block_invoke
+0x189fa0af8  __TEXT,__text  -[BKSHIDEventDeferringSelectionChangeRequest .cxx_destruct]
+0x189fa0b3c  __TEXT,__text  -[BKSHIDEventDeferringSelectionTarget .cxx_destruct]
+0x189fa0b80  __TEXT,__text  -[BKSHIDEventDeferringChangeBasis encodeWithCoder:]
+0x189fa0be0  __TEXT,__text  -[BKSHIDEventDeliveryRuleChangeTransaction setSelectionRequests:]
+0x189fa0c20  __TEXT,__text  -[BKSHIDEventDeferringSelectionPathSymbol .cxx_destruct]
+0x189fa0c2c  __TEXT,__text  -[BKSHIDEventDeferringChangeBasis .cxx_destruct]
+0x189fa0c64  __TEXT,__text  +[BKSHIDEventDeferringChangeBasis supportsSecureCoding]
+0x189fa0c6c  __TEXT,__text  -[BKSHIDEventDeliveryRuleChangeTransaction selectionRequests]
+0x189fa0c74  __TEXT,__text  -[BKSHIDEventDeferringSelectionPathSymbol initWithCoder:]
+0x189fa0ce0  __TEXT,__text  +[_BKSHIDEventDeferringRuleIdentity supportsSecureCoding]
+0x189fa0ce8  __TEXT,__text  -[BKSHIDEventDeferringSelectionPathIdentifier description]
+0x189fa0cf8  __TEXT,__text  -[BKSHitTestRegion setExclusiveTouchNormalizedSubRect:]
+0x189fa11c4  __TEXT,__text  -[BKSHIDEventDeferringPredicate isEqual:]
+0x189fa1284  __TEXT,__text  -[BKSAnimationFenceHandle initWithBSXPCCoder:]
+0x189fa1300  __TEXT,__text  _getCAFenceHandleClass
+0x189fa13d4  __TEXT,__text  -[BKSHIDEventDeferringSelectionChangeRequest encodeWithCoder:]
+0x189fa1484  __TEXT,__text  -[BKSHIDEventDeferringChangeBasis initWithCoder:]
+0x189fa17d0  __TEXT,__text  -[BKSMutableHIDEventDeferringResolution setDispatchingTarget:]
+0x189fa1928  __TEXT,__text  -[BKSHIDEventDescriptor hidEventType]
+0x189fa1930  __TEXT,__text  -[BKSMutableHIDEventDeferringPredicate setEnvironment:]
+0x189fa1c10  __TEXT,__text  -[BKSHIDEventDeferringPredicate initWithCoder:]
+0x189fa1ec4  __TEXT,__text  -[BKSEventDeferringChainIdentity appendDescriptionToFormatter:]
+0x189fa1f58  __TEXT,__text  -[_BKSHIDCAContextEventDeferringToken _identifierOfCAContext]
+0x189fa1f6c  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver _lock_buildCurrentPolicy]
+0x189fa1fdc  __TEXT,__text  -[_BKChainObserverContainer observingClient]
+0x189fa1fe4  __TEXT,__text  -[BKSHIDEventDeliveryManager deferEventsMatchingPredicate:toTarget:withReason:]
+0x189fa1ff4  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver _lock_description]
+0x189fa2054  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver _initWithObserver:]
+0x189fa22b4  __TEXT,__text  -[BKSHIDEventObserver _lock_shouldObserveDeferringChanges]
+0x189fa22f8  __TEXT,__text  -[BKSMutableHIDEventDeferringPredicate setDisplay:]
+0x189fa24c0  __TEXT,__text  -[BKSHIDEventDeliveryManager _initWithConnectionFactory:forTesting:]
+0x189fa2ab8  __TEXT,__text  -[BKSHIDEventDeferringEnvironment description]
+0x189fa2ac0  __TEXT,__text  -[BKSMutableTouchAuthenticationSpecification setSlotID:]
+0x189fa2ac8  __TEXT,__text  -[_BKSHIDEventDeferringRuleIdentity seed]
+0x189fa2ad0  __TEXT,__text  +[BKSHIDEventDeferringModality activeInputModality]
+0x189fa2b18  __TEXT,__text  -[BKSAnimationFenceHandle CAFenceHandle]
+0x189fa2b20  __TEXT,__text  -[BKSHIDEventDeferringModalityAssertion modality]
+0x189fa2b28  __TEXT,__text  -[BKSHIDEventDeferringModality initForProtobufDecoding]
+0x189fa2b2c  __TEXT,__text  -[BKSHIDEventDeferringModality _init]
+0x189fa2ca8  __TEXT,__text  -[BKSHIDEventDeferringModality .cxx_destruct]
+0x189fa2cb4  __TEXT,__text  ___45-[BKSHIDKeyboardService _initWithConnection:]_block_invoke
+0x189fa2cc0  __TEXT,__text  -[BKSHIDKeyboardService _evaluateObservationStateAfterReconnect:]
+0x189fa2e48  __TEXT,__text  +[BKSHIDEventDeferringTarget build:]
+0x189fa2eb0  __TEXT,__text  -[BKSHIDKeyboardService _updateKeyboards:]
+0x189fa3718  __TEXT,__text  -[BKSMutableTouchAuthenticationSpecification setHitTestInformationMask:]
+0x189fa3720  __TEXT,__text  ___51+[BKSHIDEventDeferringModality activeInputModality]_block_invoke
+0x189fa375c  __TEXT,__text  +[BKSHIDEventDeferringModality build:]
+0x189fa37c8  __TEXT,__text  ___51+[BKSHIDEventDeferringModality activeInputModality]_block_invoke_2
+0x189fa37d8  __TEXT,__text  -[BKSMutableHIDEventDeferringModality setIdentifier:]
+0x189fa3aac  __TEXT,__text  -[BKSMutableHIDEventDeferringModality copyWithZone:]
+0x189fa3ae0  __TEXT,__text  -[BKSHIDEventDeferringModality _initWithCopyOf:]
+0x189fa3b38  __TEXT,__text  ___54+[BKSHIDEventDeferringChangeBasis ruleOriginatorBasis]_block_invoke
+0x189fa3b78  __TEXT,__text  +[BKSHIDEventDeferringChangeBasis ruleOriginatorBasis]
+0x189fa3bc0  __TEXT,__text  -[BKSHIDEventDeferringChangeBasis _initWithIdentifier:provenance:]
+0x189fa3ff4  __TEXT,__text  -[BKSHIDEventDeferringChangeBasis eventProvenance]
+0x189fa3ffc  __TEXT,__text  -[_BKSHIDUniqueEventDeferringToken description]
+0x189fa400c  __TEXT,__text  -[_BKSHIDUniqueEventDeferringToken appendDescriptionToStream:]
+0x189fa40a0  __TEXT,__text  -[BKSHIDEventDeferringSelectionTarget target]
+0x189fa40a8  __TEXT,__text  +[BKSHIDEventDeferringModalityAssertion build:]
+0x189fa4114  __TEXT,__text  -[BKSHIDEventDeferringModalityAssertion _init]
+0x189fa4290  __TEXT,__text  ___75-[BKSHIDEventDeliveryManager assertSelectionPath:target:hasModality:basis:]_block_invoke
+0x189fa42f8  __TEXT,__text  -[BKSMutableHIDEventDeferringModalityAssertion setSelectionTarget:]
+0x189fa45c4  __TEXT,__text  -[BKSMutableHIDEventDeferringModalityAssertion setPathIdentifier:]
+0x189fa4740  __TEXT,__text  -[BKSMutableHIDEventDeferringModalityAssertion setModality:]
+0x189fa4a0c  __TEXT,__text  -[BKSMutableHIDEventDeferringModalityAssertion setBasis:]
+0x189fa4cd8  __TEXT,__text  -[BKSMutableHIDEventDeferringModalityAssertion copyWithZone:]
+0x189fa4d0c  __TEXT,__text  -[BKSHIDEventDeferringModalityAssertion _initWithCopyOf:]
+0x189fa4d88  __TEXT,__text  -[BKSHIDEventDeferringModalityAssertion .cxx_destruct]
+0x189fa4dd8  __TEXT,__text  -[BKSHIDEventDeferringModalityAssertion hash]
+0x189fa4e60  __TEXT,__text  -[BKSHIDEventDeferringSelectionTarget hash]
+0x189fa4ea8  __TEXT,__text  -[BKSHIDEventDeferringModality hash]
+0x189fa4ec8  __TEXT,__text  ___39+[BKSHIDKeyboardService sharedInstance]_block_invoke
+0x189fa5310  __TEXT,__text  -[BKSHIDEventDeliveryRuleChangeTransaction setModalityAssertions:]
+0x189fa5350  __TEXT,__text  -[BKSHIDEventDeferringModalityAssertion encodeWithCoder:]
+0x189fa54c8  __TEXT,__text  _getCADisplayClass
+0x189fa56f0  __TEXT,__text  -[BKSMutableHIDEventSenderDescriptor init]
+0x189fa5744  __TEXT,__text  -[BKSHIDEventSenderDescriptor _initWithHardwareType:associatedDisplay:authenticated:primaryPage:primaryUsage:senderID:inverted:]
+0x189fa5c7c  __TEXT,__text  __BKSHIDEventSetAttributes
+0x189fa5e14  __TEXT,__text  +[BKSHIDEventBaseAttributes baseAttributesFromProvider:]
+0x189fa622c  __TEXT,__text  -[BKSTouchDeliveryPolicy reducePolicyToObjectWithBlock:]
+0x189fa62f8  __TEXT,__text  -[_BKSCombinedTouchDeliveryPolicy matchSharingTouchesPolicy:orCancelTouchesPolicy:orCombinedPolicy:]
+0x189fa630c  __TEXT,__text  ___68-[BKSTouchDeliveryPolicy policyByMappingContainedPoliciesWithBlock:]_block_invoke_3
+0x189fa6490  __TEXT,__text  +[BKSTouchDeliveryPolicy allocWithZone:]
+0x189fa6518  __TEXT,__text  -[_BKSCombinedTouchDeliveryPolicy .cxx_destruct]
+0x189fa656c  __TEXT,__text  ___BKLogTouchDeliveryPolicy_block_invoke
+0x189fa65a4  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver dealloc]
+0x189fa65f0  __TEXT,__text  ___44-[BKSHIDEventObserver addDeferringObserver:]_block_invoke
+0x189fa66e0  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver .cxx_destruct]
+0x189fa6784  __TEXT,__text  -[BKSHIDEventSenderDescriptor isInverted]
+0x189fa678c  __TEXT,__text  ___60-[BKSHIDEventDeferringResolution appendDescriptionToStream:]_block_invoke
+0x189fa68b8  __TEXT,__text  -[BKSHIDEventDigitizerAttributes pathAttributes]
+0x189fa68c0  __TEXT,__text  +[BKSHIDEventBaseAttributes deserializeFromBytes:byteCount:]
+0x189fa6af0  __TEXT,__text  -[_BKSShareTouchesTouchDeliveryPolicy matchSharingTouchesPolicy:orCancelTouchesPolicy:orCombinedPolicy:]
+0x189fa6b08  __TEXT,__text  ___68-[BKSTouchDeliveryPolicy policyByMappingContainedPoliciesWithBlock:]_block_invoke
+0x189fa6b10  __TEXT,__text  ___56-[BKSTouchDeliveryPolicy reducePolicyToObjectWithBlock:]_block_invoke
+0x189fa6b1c  __TEXT,__text  -[BKSTouchDeliveryPolicy policyIncludingPolicy:]
+0x189fa6ba4  __TEXT,__text  _collectPolicies
+0x189fa6c40  __TEXT,__text  ___collectPolicies_block_invoke
+0x189fa6d6c  __TEXT,__text  ___collectPolicies_block_invoke_2
+0x189fa6d90  __TEXT,__text  ___collectPolicies_block_invoke_4
+0x189fa6d98  __TEXT,__text  ___68-[_BKSShareTouchesTouchDeliveryPolicy appendDescriptionToFormatter:]_block_invoke
+0x189fa6e0c  __TEXT,__text  +[BKSTouchDeliveryPolicy policyRequiringSharingOfTouchesDeliveredToChildContextId:withHostContextId:]
+0x189fa6e4c  __TEXT,__text  -[BKSTouchDeliveryPolicyAssertion init]
+0x189fa6ec8  __TEXT,__text  -[_BKSTouchDeliveryPolicyConcreteServerReference ipc_addPolicy:]
+0x189fa70e8  __TEXT,__text  -[_BKSTouchDeliveryPolicyConcreteServerReference .cxx_destruct]
+0x189fa7120  __TEXT,__text  ___39-[BKSTouchDeliveryPolicyAssertion init]_block_invoke
+0x189fa7178  __TEXT,__text  -[_BKSShareTouchesTouchDeliveryPolicy .cxx_destruct]
+0x189fa71cc  __TEXT,__text  -[BKSTouchDeliveryPolicyAssertion invalidate]
+0x189fa7260  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes pathIndex]
+0x189fa7268  __TEXT,__text  -[BKSTouchDeliveryPolicy policyByMappingContainedPoliciesWithBlock:]
+0x189fa7390  __TEXT,__text  -[BKSBackgroundTouchDeliveryUpdate touchIdentifier]
+0x189fa7398  __TEXT,__text  -[BKSBackgroundTouchDeliveryUpdate pid]
+0x189fa73a0  __TEXT,__text  +[BKSTouchDeliveryPolicy policyByCombiningPolicies:]
+0x189fa73ec  __TEXT,__text  -[BKSHIDEventBaseAttributes options]
+0x189fa73f4  __TEXT,__text  +[BKSHIDEventAuthenticationMessage protobufSchema]
+0x189fa7488  __TEXT,__text  -[BKSBackgroundTouchDeliveryUpdate targetID]
+0x189fa7490  __TEXT,__text  -[BKSBackgroundTouchDeliveryUpdate setTouchIdentifier:]
+0x189fa7498  __TEXT,__text  -[BKSBackgroundTouchDeliveryUpdate setPid:]
+0x189fa74a0  __TEXT,__text  -[BKSBackgroundTouchDeliveryUpdate setTargetID:]
+0x189fa74a8  __TEXT,__text  -[BKSBackgroundTouchDeliveryUpdate setHostingContextsChain:]
+0x189fa74b4  __TEXT,__text  -[BKSBackgroundTouchDeliveryUpdate setTimestamp:]
+0x189fa74bc  __TEXT,__text  -[BKSHIDUISensorMode copy]
+0x189fa74c0  __TEXT,__text  -[BKSHIDUISensorMode proximityDetectionMode]
+0x189fa74c8  __TEXT,__text  -[BKSHIDUISensorMode pocketTouchesExpected]
+0x189fa74d0  __TEXT,__text  -[BKSHIDUISensorMode digitizerEnabled]
+0x189fa74d8  __TEXT,__text  -[BKSHIDUISensorMode multitouchHostStateKeys]
+0x189fa74e0  __TEXT,__text  -[BKSHIDUISensorMode changeSource]
+0x189fa74e8  __TEXT,__text  -[BKSHIDUISensorMode displayState]
+0x189fa74f0  __TEXT,__text  ___46-[BKSHitTestRegion appendDescriptionToStream:]_block_invoke
+0x189fa7594  __TEXT,__text  +[BKSWindowServerHitTestSecurityAnalysis securityAnalysisFromCAHitTestDictionary:errorString:]
+0x189fa7d10  __TEXT,__text  -[BKSMutableHIDEventSenderDescriptor setAuthenticated:]
+0x189fa7d18  __TEXT,__text  -[BKSBackgroundTouchDeliveryUpdate .cxx_destruct]
+0x189fa7d24  __TEXT,__text  ___48+[BKSHIDEventDigitizerAttributes protobufSchema]_block_invoke
+0x189fa7d68  __TEXT,__text  ___48+[BKSHIDEventDigitizerAttributes protobufSchema]_block_invoke_2
+0x189fa7e40  __TEXT,__text  ___52+[BKSHIDEventDigitizerPathAttributes protobufSchema]_block_invoke
+0x189fa7e84  __TEXT,__text  ___52+[BKSHIDEventDigitizerPathAttributes protobufSchema]_block_invoke_2
+0x189fa7f5c  __TEXT,__text  +[BKSWindowServerHitTestSecurityAnalysis protobufSchema]
+0x189fa7f74  __TEXT,__text  ___56+[BKSWindowServerHitTestSecurityAnalysis protobufSchema]_block_invoke
+0x189fa800c  __TEXT,__text  -[BKSHIDEventSimpleProvenanceOriginator buildProvenance:]
+0x189fa80f0  __TEXT,__text  -[BKSMutableHIDEventSimpleProvenance setEventType:]
+0x189fa80f8  __TEXT,__text  -[BKSMutableHIDEventSimpleProvenance setVersionedPID:]
+0x189fa8100  __TEXT,__text  -[BKSHIDEventBaseAttributes setProvenance:]
+0x189fa90c8  __TEXT,__text  -[BKSHIDEventBaseAttributes setSource:]
+0x189fa90d0  __TEXT,__text  -[BKSHIDEventDeferringResolution versionedPID]
+0x189fa90d8  __TEXT,__text  -[BKSHIDEventDeferringResolution description]
+0x189fa90e8  __TEXT,__text  +[BKSHIDEventSimpleProvenance _withInternalKey:buildMessage:]
+0x189fa94c0  __TEXT,__text  -[BKSHIDEventSimpleProvenance _init]
+0x189fa963c  __TEXT,__text  ___57-[BKSHIDEventSimpleProvenanceOriginator buildProvenance:]_block_invoke
+0x189fa964c  __TEXT,__text  -[BKSMutableHIDEventSimpleProvenance copyWithZone:]
+0x189fa9680  __TEXT,__text  -[BKSHIDEventSimpleProvenance _initWithCopyOf:]
+0x189fa96e8  __TEXT,__text  -[_BKSHIDEventAuthenticationKey _context]
+0x189fa985c  __TEXT,__text  -[BKSHIDEventSimpleProvenance _calculateSignatureWithHMACContext:]
+0x189fa9910  __TEXT,__text  ___45+[BKSHIDEventSimpleProvenance protobufSchema]_block_invoke
+0x189fa9978  __TEXT,__text  -[BKSHIDEventSimpleProvenance initForProtobufDecoding]
+0x189fa997c  __TEXT,__text  +[BKSHIDEventSimpleProvenance protobufSchema]
+0x189fa9994  __TEXT,__text  -[BKSHIDEventDeferringSelectionPathSymbol init]
+0x189fa99f4  __TEXT,__text  ___65+[BKSHIDEventDeferringSelectionPathIdentifier everySelectionPath]_block_invoke
+0x189fa9a24  __TEXT,__text  -[BKSMutableHIDEventDeferringSelectionChangeRequest setPathIdentifier:]
+0x189fa9ba0  __TEXT,__text  -[BKSMutableHIDEventDeferringSelectionChangeRequest setIgnoreModalities:]
+0x189fa9ba8  __TEXT,__text  -[BKSMutableHIDEventDeferringSelectionChangeRequest setBasis:]
+0x189fa9e74  __TEXT,__text  -[BKSHIDEventDeferringSelectionChangeRequest hash]
+0x189fa9f04  __TEXT,__text  -[BKSMutableHIDEventDeferringSelectionChangeRequest setSelectionTarget:]
+0x189faa1d0  __TEXT,__text  -[BKSHIDEventDeferringSelectionPathSymbol hash]
+0x189faa1d8  __TEXT,__text  -[BKSHIDEventDeferringSelectionTarget appendDescriptionToStream:]
+0x189faa26c  __TEXT,__text  -[BKSHIDEventDeferringSelectionTarget encodeWithCoder:]
+0x189faa2f4  __TEXT,__text  -[BKSHIDEventDeferringSelectionChangeRequest appendDescriptionToStream:]
+0x189faa3b8  __TEXT,__text  +[BKSHIDEventDeferringChangeBasis constraintBasis]
+0x189faa400  __TEXT,__text  -[_BKSHIDCAContextEventDeferringToken _isIdentifierOfCAContext]
+0x189faa41c  __TEXT,__text  -[BKSHIDEventBaseAttributes setEnvironment:]
+0x189faabe4  __TEXT,__text  -[BKSMutableProximityEvent setDetectionMask:]
+0x189faabec  __TEXT,__text  -[BKSHIDEventProximityAttributes setProximityDetectionMode:]
+0x189faac5c  __TEXT,__text  -[BKSHIDEventDeferringResolution pid]
+0x189faac64  __TEXT,__text  -[BKSProximityDetectionMaskChangeEvent detectionMask]
+0x189faac6c  __TEXT,__text  +[BKSProximityDetectionMaskChangeEvent build:]
+0x189faacd8  __TEXT,__text  -[BKSProximityDetectionMaskChangeEvent _init]
+0x189faadac  __TEXT,__text  -[BKSHIDEventKeyCommandsDispatchingPredicate senderDescriptors]
+0x189faadb4  __TEXT,__text  -[BKSDisplayRenderOverlayDescriptor display]
+0x189faaf20  __TEXT,__text  -[BKSDisplayRenderOverlayDescriptor .cxx_destruct]
+0x189faaf70  __TEXT,__text  __BKAppendStringForBitmaskDescription
+0x189fab004  __TEXT,__text  -[BKSMutableProximityEvent setTimestamp:]
+0x189fab00c  __TEXT,__text  -[BKSMutableProximityEvent setMode:]
+0x189fab014  __TEXT,__text  -[BKSMutableProximityEvent copyWithZone:]
+0x189fab048  __TEXT,__text  -[BKSProximityDetectionMaskChangeEvent _initWithCopyOf:]
+0x189fab0a4  __TEXT,__text  -[BKSDisplayTraits surfaceType]
+0x189fab0ac  __TEXT,__text  ___61-[BKSTouchEventService _initConnectionWithConnectionFactory:]_block_invoke.287
+0x189fab1a0  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes preciseLocationX]
+0x189fab1a8  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes hitTestLocationY]
+0x189fab1b0  __TEXT,__text  ___53-[BKSSceneHostSettings appendDescriptionToFormatter:]_block_invoke
+0x189fab278  __TEXT,__text  ___43+[BKSHIDEventBaseAttributes protobufSchema]_block_invoke
+0x189fab2bc  __TEXT,__text  ___43+[BKSHIDEventBaseAttributes protobufSchema]_block_invoke_2
+0x189fab354  __TEXT,__text  ___50+[BKSHIDEventAuthenticationMessage protobufSchema]_block_invoke
+0x189fab398  __TEXT,__text  ___50+[BKSHIDEventAuthenticationMessage protobufSchema]_block_invoke_2
+0x189fab4b0  __TEXT,__text  +[BKSHIDEventHitTestLayerInformation protobufSchema]
+0x189fab4c8  __TEXT,__text  ___52+[BKSHIDEventHitTestLayerInformation protobufSchema]_block_invoke
+0x189fab580  __TEXT,__text  -[BKSHIDEventDeferringSelectionPathSymbol encodeWithCoder:]
+0x189fab598  __TEXT,__text  +[BKSHIDEventDigitizerAttributes protobufSchema]
+0x189fab62c  __TEXT,__text  ___69-[_BKSCancelTouchesTouchDeliveryPolicy appendDescriptionToFormatter:]_block_invoke
+0x189fab6a0  __TEXT,__text  -[_BKSCancelTouchesTouchDeliveryPolicy .cxx_destruct]
+0x189fab6ac  __TEXT,__text  -[_BKSCancelTouchesTouchDeliveryPolicy matchSharingTouchesPolicy:orCancelTouchesPolicy:orCombinedPolicy:]
+0x189fab6c4  __TEXT,__text  ___68-[BKSTouchDeliveryPolicy policyByMappingContainedPoliciesWithBlock:]_block_invoke_2
+0x189fab6cc  __TEXT,__text  -[BKSTouchDeliveryPolicyAssertion dealloc]
+0x189fab714  __TEXT,__text  ___59-[BKSTouchDeliveryPolicy policyExcludingPolicyIdenticalTo:]_block_invoke
+0x189fab724  __TEXT,__text  -[BKSTouchDeliveryPolicyAssertion .cxx_destruct]
+0x189fab730  __TEXT,__text  ___39-[BKSTouchDeliveryPolicyAssertion init]_block_invoke_2
+0x189fab734  __TEXT,__text  +[BKSHIDEventBaseAttributes protobufSchema]
+0x189fab7c8  __TEXT,__text  -[BKSHIDEventDeferringSelectionChangeRequest description]
+0x189fab7d8  __TEXT,__text  -[BKSHIDEventDeferringSelectionPathSymbol description]
+0x189fab7e0  __TEXT,__text  +[BKSHIDEventDigitizerPathAttributes protobufSchema]
+0x189fab874  __TEXT,__text  ___71-[BKSTouchDeliveryObservationService _processTouchEventDeliveryUpdate:]_block_invoke
+0x189fabbf8  __TEXT,__text  -[BKSTouchDeliveryObservationService _processTouchEventDeliveryUpdate:]
+0x189fabdfc  __TEXT,__text  -[BKSTouchDeliveryObservationService observeTouchEventDeliveryDidOccur:response:]
+0x189fabf64  __TEXT,__text  -[BKSTouchDeliveryUpdate copyWithZone:]
+0x189fabfc4  __TEXT,__text  ___71-[BKSTouchDeliveryObservationService _processTouchEventDeliveryUpdate:]_block_invoke.128
+0x189fac33c  __TEXT,__text  -[BKSHIDEventBaseAttributes environment]
+0x189fac344  __TEXT,__text  -[BKSHIDEventDeliveryManager changeSelectionPath:target:basis:ignoreModalities:]
+0x189facd00  __TEXT,__text  -[BKSHitTestRegion initWithRect:]
+0x189facd14  __TEXT,__text  +[_BKSHIDCAContextEventDeferringToken supportsSecureCoding]
+0x189facd1c  __TEXT,__text  +[BKSTouchDeliveryPolicy policyCancelingTouchesDeliveredToContextId:withInitialTouchTimestamp:]
+0x189facd64  __TEXT,__text  ___collectPolicies_block_invoke_3
+0x189facd88  __TEXT,__text  -[BKSMutableHIDEventSimpleProvenance setTimestamp:]
+0x189facd90  __TEXT,__text  -[BKSHIDEventBaseAttributes source]
+0x189facd98  __TEXT,__text  -[BKSHIDEventDigitizerAttributes setInitialTouchTimestamp:]
+0x189facda0  __TEXT,__text  -[BKSHIDEventBaseAttributes setToken:]
+0x189facdac  __TEXT,__text  -[BKSAccelerometer _checkOut]
+0x189face84  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes setZGradient:]
+0x189face8c  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes locus]
+0x189face94  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver removeObserver:]
+0x189facff8  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes setHitTestContextCategory:]
+0x189fad000  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes preciseLocationY]
+0x189fad008  __TEXT,__text  ___75-[BKSHIDEventDeliveryManager assertSelectionPath:target:hasModality:basis:]_block_invoke_2
+0x189fad078  __TEXT,__text  -[BKSAnimationFenceHandle initWithCoder:]
+0x189fad0e8  __TEXT,__text  ___117-[BKSHIDEventDeliveryManager deferEventsMatchingPredicate:priority:restrictedToEventDescriptors:toTarget:withReason:]_block_invoke
+0x189fad164  __TEXT,__text  ___59-[BKSHIDEventObserver addObservingClient:forChainObserver:]_block_invoke
+0x189fad1b0  __TEXT,__text  -[BKSHIDEventDisplay _isBuiltinDisplay]
+0x189fad1b8  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes zGradient]
+0x189fad1c0  __TEXT,__text  -[BKSHIDEventDigitizerAttributes systemGestureStateChange]
+0x189fad1c8  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes touchIdentifier]
+0x189fad1d0  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes provenance]
+0x189fad1e8  __TEXT,__text  -[BKSHIDEventDigitizerAttributes setActiveModifiers:]
+0x189fad1f0  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes setUserIdentifier:]
+0x189fad1f8  __TEXT,__text  -[BKSHIDEventDigitizerAttributes setSystemGesturesPossible:]
+0x189fad200  __TEXT,__text  -[BKSHIDEventDeferringResolution token]
+0x189fad208  __TEXT,__text  +[BKSHIDEventProximityAttributes protobufSchema]
+0x189fad29c  __TEXT,__text  -[BKSHIDEventDescriptor initWithEventType:]
+0x189fad370  __TEXT,__text  +[BKSHIDEventDisplay displayWithHardwareIdentifier:]
+0x189fad644  __TEXT,__text  -[BKSSceneHostSettings touchBehavior]
+0x189fad64c  __TEXT,__text  -[BKSHIDEventSimpleProvenance timestamp]
+0x189fad654  __TEXT,__text  -[BKSHIDEventDeferringChangeBasis initWithEventProvenance:]
+0x189fad6b4  __TEXT,__text  -[BKSHIDEventDeliveryManager _lock_implicitFlush]
+0x189fad780  __TEXT,__text  -[BKSHIDEventDeferringSelectionPathIdentifier encodeWithCoder:]
+0x189fad798  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes authenticationMessage]
+0x189fad7a0  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes setPathIndex:]
+0x189fad7a8  __TEXT,__text  -[_BKChainObserverContainer setRequestedChainIdentity:]
+0x189fad7b4  __TEXT,__text  -[_BKChainObserverContainer setObserverInterface:]
+0x189fad7c0  __TEXT,__text  -[BKSHIDEventDeferringModality encodeWithCoder:]
+0x189fad838  __TEXT,__text  -[BKSHIDEventDeferringModalityAssertion selectionTarget]
+0x189fad840  __TEXT,__text  -[BKSHIDEventDeferringModalityAssertion pathIdentifier]
+0x189fad848  __TEXT,__text  -[BKSHIDEventDeferringModalityAssertion basis]
+0x189fad850  __TEXT,__text  -[BKSHIDEventDeferringModalityAssertion appendDescriptionToStream:]
+0x189fad914  __TEXT,__text  -[BKSHIDEventSimpleProvenance encodeWithCoder:]
+0x189fad9a0  __TEXT,__text  -[_BKChainObserverContainer .cxx_destruct]
+0x189fad9e4  __TEXT,__text  -[BKSHIDEventSimpleProvenanceOriginator verifyAuthentic:]
+0x189fad9f4  __TEXT,__text  -[BKSHIDEventSimpleProvenance _verifySignatureWithInternalKey:]
+0x189fadd48  __TEXT,__text  -[BKSHIDEventDeliveryChainObserver .cxx_destruct]
+0x189fadd8c  __TEXT,__text  -[BKSHIDEventDeferringSelectionChangeRequest pathIdentifier]
+0x189fadd94  __TEXT,__text  -[BKSHIDEventProximityAttributes proximityDetectionMode]
+0x189fadd9c  __TEXT,__text  -[BKSHIDEventDispatchingTarget hash]
+0x189faddfc  __TEXT,__text  -[BKSHIDEventSenderDescriptor isAuthenticated]
+0x189fade04  __TEXT,__text  -[BKSSceneHostRegistration .cxx_destruct]
+0x189fade3c  __TEXT,__text  +[_BKSHIDUniqueEventDeferringToken supportsSecureCoding]
+0x189fade44  __TEXT,__text  ___getCAFenceHandleClass_block_invoke
+0x189fae228  __TEXT,__text  -[BKSAccelerometer orientationEventsEnabled]
+0x189fae230  __TEXT,__text  +[BKSHIDUISensorMode buildModeForReason:builder:]
+0x189fae2bc  __TEXT,__text  -[BKSHIDUISensorMode _init]
+0x189fae45c  __TEXT,__text  -[BKSMutableHIDUISensorMode setReason:]
+0x189fae730  __TEXT,__text  -[BKSMutableHIDUISensorMode setProximityDetectionMode:]
+0x189fae738  __TEXT,__text  -[BKSMutableHIDUISensorMode setDisplayState:]
+0x189fae740  __TEXT,__text  -[BKSMutableHIDUISensorMode setDigitizerEnabled:]
+0x189fae748  __TEXT,__text  -[BKSMutableHIDUISensorMode setPocketTouchesExpected:]
+0x189fae750  __TEXT,__text  -[BKSMutableHIDUISensorMode setProximityHostStateKeys:]
+0x189fae794  __TEXT,__text  -[BKSMutableHIDUISensorMode setChangeSource:]
+0x189fae79c  __TEXT,__text  -[BKSMutableHIDUISensorMode copy]
+0x189fae7d0  __TEXT,__text  -[BKSHIDUISensorMode _initCopyFrom:]
+0x189fae8a0  __TEXT,__text  -[BKSHIDUISensorMode .cxx_destruct]
+0x189fae8e4  __TEXT,__text  -[BKSHIDUISensorMode isEqual:]
+0x189fae9a0  __TEXT,__text  -[BKSHIDUISensorMode description]
+0x189fae9b0  __TEXT,__text  -[BKSHIDUISensorMode appendDescriptionToStream:]
+0x189faea44  __TEXT,__text  ___48-[BKSHIDUISensorMode appendDescriptionToStream:]_block_invoke
+0x189faec70  __TEXT,__text  -[BKSHIDUISensorMode _identifierDescription]
+0x189faed08  __TEXT,__text  -[BKSHIDUISensorService suppressUISensorChangesForReason:]
+0x189faed44  __TEXT,__text  -[BKSHIDUISensorMode reason]
+0x189faed4c  __TEXT,__text  -[BKSHIDUISensorMode _comparisonScore]
+0x189faee50  __TEXT,__text  -[BKSHIDUISensorService requestUISensorMode:]
+0x189faee8c  __TEXT,__text  +[BKSHIDUISensorMode _prevailingMode:]
+0x189faf250  __TEXT,__text  -[BKSHIDUISensorMode hash]
+0x189faf350  __TEXT,__text  +[BKSHIDUISensorMode protobufSchema]
+0x189faf368  __TEXT,__text  ___36+[BKSHIDUISensorMode protobufSchema]_block_invoke
+0x189faf474  __TEXT,__text  -[BKSHIDUISensorMode initForProtobufDecoding]
+0x189faf4ac  __TEXT,__text  -[BKSHIDUISensorMode didFinishProtobufDecodingWithError:]
+0x189faf5c4  __TEXT,__text  -[BKSHIDUISensorMode _settingKeysAllowed:]
+0x189faf62c  __TEXT,__text  -[BKSHIDUISensorMode versionedPID]
+0x189faf634  __TEXT,__text  -[BKSHIDUISensorMode estimatedProximityMode]
+0x189faf63c  __TEXT,__text  ___38+[BKSHIDUISensorMode _prevailingMode:]_block_invoke
+0x189faf694  __TEXT,__text  -[BKSHIDUISensorMode mutableCopy]
+0x189faf6c8  __TEXT,__text  -[BKSProximityDetectionMaskChangeEvent timestamp]
+0x189faf6d0  __TEXT,__text  -[BKSHIDUISensorMode isEffectivelyEqualToMode:]
+0x189faf798  __TEXT,__text  -[BKSHIDUISensorMode proximityHostStateKeys]
+0x189faf7a0  __TEXT,__text  -[BKSHIDUISensorMode postEventWithCurrentDetectionMask]
+0x189faf7a8  __TEXT,__text  +[BKSHIDEventDescriptor descriptorWithEventType:]
+0x189faf7e0  __TEXT,__text  +[BKSHIDEventBaseAttributes _classForAttributeType:]
+0x189faf904  __TEXT,__text  -[BKSHIDEventDescriptor hash]
+0x189faf90c  __TEXT,__text  -[BKSHIDEventDeferringResolution display]
+0x189faf914  __TEXT,__text  -[BKSHIDEventDeferringResolution environment]
+0x189faf91c  __TEXT,__text  -[BKSHIDEventDeferringResolution processDescription]
+0x189fafaa4  __TEXT,__text  -[BKSMutableHIDUISensorMode setPostEventWithCurrentDetectionMask:]
+0x189fafaac  __TEXT,__text  -[BKSHIDEventBaseAttributes setDisplay:]
+0x189fafab8  __TEXT,__text  -[BKSHIDEventDeferringResolution appendDescriptionToStream:]
+0x189fafb54  __TEXT,__text  __BKSDisplayServicesNotifySetDisplayBlanked
+0x189fafe0c  __TEXT,__text  -[BKSAccelerometer setYThreshold:]
+0x189fafe60  __TEXT,__text  -[BKSAccelerometer setZThreshold:]
+0x189faff60  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver description]
+0x189faff70  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver canReceiveEvents]
+0x189faffbc  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver _lock_appendDescriptionToStream:]
+0x189fb00ec  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes setHitTestLocation:]
+0x189fb00f4  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes setPreciseLocation:]
+0x189fb00fc  __TEXT,__text  -[_BKSCombinedTouchDeliveryPolicy initWithPolicies:]
+0x189fb0298  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes setTouchIdentifier:]
+0x189fb02a0  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes setLocus:]
+0x189fb02a8  __TEXT,__text  -[BKSHIDEventDigitizerAttributes setMaximumPositionZ:]
+0x189fb02b0  __TEXT,__text  -[BKSHIDEventDigitizerAttributes setMaximumForce:]
+0x189fb02b8  __TEXT,__text  -[BKSHIDEventDigitizerAttributes setPathAttributes:]
+0x189fb02c4  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes setProvenance:]
+0x189fb0490  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes hitTestLocationX]
+0x189fb0498  __TEXT,__text  -[BKSHIDEventDigitizerAttributes initialTouchTimestamp]
+0x189fb04a0  __TEXT,__text  -[BKSHIDEventDigitizerPathAttributes securityAnalysis]
+0x189fb04a8  __TEXT,__text  -[BKSHIDEventDigitizerAttributes maximumForce]
+0x189fb04b0  __TEXT,__text  -[BKSTouchStream setEventDispatchMode:ambiguityRecommendation:lastTouchTimestamp:]
+0x189fb05cc  __TEXT,__text  -[BKSHIDEventDigitizerAttributes setSystemGestureStateChange:]
+0x189fb05d4  __TEXT,__text  -[BKSHIDEventDigitizerAttributes setTouchStreamIdentifier:]
+0x189fb05dc  __TEXT,__text  -[BKSTouchDeliveryUpdate pid]
+0x189fb05e4  __TEXT,__text  -[BKSHIDEventBaseAttributes setOptions:]
+0x189fb05ec  __TEXT,__text  -[BKSTouchDeliveryUpdate touchIdentifier]
+0x189fb05f4  __TEXT,__text  +[BKSTouchDeliveryUpdate supportsSecureCoding]
+0x189fb05fc  __TEXT,__text  -[BKSTouchDeliveryUpdate encodeWithCoder:]
+0x189fb06b4  __TEXT,__text  -[BKSTouchDeliveryUpdate setTouchIdentifier:]
+0x189fb06bc  __TEXT,__text  -[BKSTouchDeliveryUpdate setType:]
+0x189fb06c4  __TEXT,__text  -[BKSTouchDeliveryUpdate setPid:]
+0x189fb06cc  __TEXT,__text  -[BKSTouchDeliveryUpdate setIsDetached:]
+0x189fb06d4  __TEXT,__text  -[BKSTouchDeliveryUpdate initWithCoder:]
+0x189fb07a8  __TEXT,__text  -[BKSTouchDeliveryUpdate isDetached]
+0x189fb07b0  __TEXT,__text  -[BKSTouchDeliveryUpdate type]
+0x189fb09b0  __TEXT,__text  -[BKSAnimationFenceHandle _initWithCAFenceHandle:]
+0x189fb0a24  __TEXT,__text  -[BKSAnimationFenceHandle isUsable]
+0x189fb0a2c  __TEXT,__text  +[BKSAnimationFenceHandle supportsBSXPCSecureCoding]
+0x189fb0a34  __TEXT,__text  -[BKSAnimationFenceHandle encodeWithBSXPCCoder:]
+0x189fb0c60  __TEXT,__text  -[BKSHIDEventObserver deferringObservations]
+0x189fb0d04  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver addObserver:]
+0x189fb0f0c  __TEXT,__text  -[BKSHIDEventDisplay _initWithHardwareIdentifier:]
+0x189fb1584  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver _replacePolicySpecificationObject:withObject:replaceIvarBlock:]
+0x189fb16a4  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver setDeferringToken:]
+0x189fb18c0  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver setDisplay:]
+0x189fb1adc  __TEXT,__text  ___48-[BKSHIDEventDeliveryPolicyObserver setDisplay:]_block_invoke
+0x189fb1aec  __TEXT,__text  -[BKSHIDEventDeliveryPolicyObserver setDeferringEnvironment:]
+0x189fb1d08  __TEXT,__text  -[BKSMutableHIDEventDeferringTarget setToken:]
+0x189fb1ed0  __TEXT,__text  -[BKSMutableHIDEventDeferringTarget setPid:]
+0x189fb1ffc  __TEXT,__text  +[BKSHIDEventDeferringRule ruleForDeferringEventsMatchingPredicate:toTarget:withReason:seed:pid:]
+0x189fb20a4  __TEXT,__text  +[BKSHIDEventDeliveryRuleChangeTransaction supportsSecureCoding]
+0x189fb20ac  __TEXT,__text  +[BKSHIDEventDisplay supportsSecureCoding]
+0x189fb20b4  __TEXT,__text  -[BKSHIDEventDisplay initWithCoder:]
+0x189fb216c  __TEXT,__text  -[_BKSHIDEventDeferringRuleIdentity initWithCoder:]
+0x189fb21f0  __TEXT,__text  -[_BKSHIDEventDeferringRuleIdentity appendDescriptionToFormatter:]
+0x189fb2264  __TEXT,__text  +[BKSHIDEventDeferringRule supportsSecureCoding]
+0x189fb226c  __TEXT,__text  -[BKSHIDEventDeferringRule initWithCoder:]
+0x189fb25d0  __TEXT,__text  -[BKSHIDEventDeferringRule encodeWithCoder:]
+0x189fb2694  __TEXT,__text  -[BKSHIDEventDeferringPredicate encodeWithCoder:]
+0x189fb2708  __TEXT,__text  -[BKSMutableHIDEventDeferringPredicate setToken:]
+0x189fb28d0  __TEXT,__text  -[BKSHIDEventDisplay encodeWithCoder:]
+0x189fb2900  __TEXT,__text  -[_BKSHIDEventDeferringRuleIdentity description]
+0x189fb2910  __TEXT,__text  -[BKSHIDEventDispatchingTarget selectionPathIdentifier]
+0x189fb2918  __TEXT,__text  -[BKSHIDEventDispatchingTarget deferringToken]
+0x189fb2920  __TEXT,__text  +[BKSHIDEventDeferringPredicate supportsSecureCoding]
+0x189fb2928  __TEXT,__text  +[BKSHIDEventDeferringEnvironment supportsSecureCoding]
+0x189fb2930  __TEXT,__text  -[BKSHIDEventDeliveryChain description]
+0x189fb2940  __TEXT,__text  -[BKSMutableHIDEventDeferringResolution setToken:]
+0x189fb2aac  __TEXT,__text  -[BKSHIDEventSenderDescriptor primaryPage]
+0x189fb2ab4  __TEXT,__text  -[BKSHIDEventDescriptor copyWithZone:]
+0x189fb2ab8  __TEXT,__text  -[BKSHIDEventDeferringPredicate appendDescriptionToFormatter:]
+0x189fb2b4c  __TEXT,__text  +[BKSHIDEventPolicyObservation supportsSecureCoding]
+0x189fb2b54  __TEXT,__text  -[BKSHIDEventPolicyObservation encodeWithCoder:]
+0x189fb2c40  __TEXT,__text  -[BKSHIDEventDeliveryManager bufferEventsMatchingPredicate:withReason:]
+0x189fb339c  __TEXT,__text  -[BKSHIDEventDeferringSelectionPathIdentifier initWithCoder:]
+0x189fb3450  __TEXT,__text  -[BKSHIDEventDeliveryRuleChangeTransaction setBufferingPredicates:]
+0x189fb3490  __TEXT,__text  ___71-[BKSHIDEventDeliveryManager bufferEventsMatchingPredicate:withReason:]_block_invoke
+0x189fb350c  __TEXT,__text  -[BKSHIDEventDeliveryRuleChangeTransaction bufferingPredicates]
+0x189fb3514  __TEXT,__text  -[BKSHIDEventDeferringPredicate description]
+0x189fb3524  __TEXT,__text  -[BKSHIDEventPolicyObservation initWithCoder:]
+0x189fb3698  __TEXT,__text  -[BKSHIDEventDispatchingTarget copyWithZone:]
+0x189fb369c  __TEXT,__text  -[BKSHIDEventDispatchingTarget appendDescriptionToFormatter:]
+0x189fb3730  __TEXT,__text  ___61-[BKSHIDEventDispatchingTarget appendDescriptionToFormatter:]_block_invoke
+0x189fb3814  __TEXT,__text  +[BKSHIDEventDeferringSelectionPathIdentifier supportsSecureCoding]
+0x189fb381c  __TEXT,__text  +[BKSHIDEventDeferringEnvironment systemEnvironment]
+0x189fb3864  __TEXT,__text  -[BKSHIDEventPolicyObservation display]
+0x189fb386c  __TEXT,__text  ___getCADisplayClass_block_invoke
+0x189fb3934  __TEXT,__text  _QuartzCoreLibrary
+0x189fb3be0  __TEXT,__text  +[BKSHIDUISensorService sharedInstance]
+0x189fb3bf0  __TEXT,__text  -[BKSHIDUISensorMode isRestrictedToSystemShell]
+0x189fb3c48  __TEXT,__text  -[BKSHIDEventDeferringResolution hash]
+0x189fb3cc0  __TEXT,__text  -[BKSHIDUISensorService sensorCharacteristics]
+0x189fb3cfc  __TEXT,__text  -[BKSHIDUISensorCharacteristics suggestedSystemApertureGracePeriodForScreenOff]
+0x189fb3efc  __TEXT,__text  -[BKSAnimationFenceHandle description]
+0x189fb3f38  __TEXT,__text  -[BKSAnimationFenceHandle encodeWithCoder:]
+0x189fb3f50  __TEXT,__text  -[BKSSceneHostSettings initWithCoder:]
+0x189fb3fe0  __TEXT,__text  -[BKSSceneHostSettings encodeWithCoder:]
+0x189fb4040  __TEXT,__text  ___45-[BKSHIDKeyboardService _initWithConnection:]_block_invoke_3
+0x189fb4188  __TEXT,__text  +[BKSSceneHostSettings supportsSecureCoding]
+0x189fb4190  __TEXT,__text  -[BKSSceneHostSettings isEqual:]
+0x189fb424c  __TEXT,__text  -[BKSSceneHostSettings identifier]
+0x189fb4254  __TEXT,__text  ___BKLogKeyboard_block_invoke
+0x189fb428c  __TEXT,__text  -[_BKSHIDUISensorOverseer _server]
+0x189fb45a8  __TEXT,__text  -[_BKSHIDUISensorOverseer acquireTransactionForReason:]
+0x189fb45d4  __TEXT,__text  -[_BKSHIDUISensorDisplayAssociatedService suppressUISensorChangesForReason:]
+0x189fb45e0  __TEXT,__text  ___53-[_BKSHIDUISensorOverseer initWithServiceConnection:]_block_invoke
+0x189fb4638  __TEXT,__text  ___73-[_BKSHIDUISensorDisplayAssociatedService _initWithDisplayUUID:overseer:]_block_invoke
+0x189fb48a0  __TEXT,__text  -[_BKSHIDUISensorOverseer _dataLock_prevailingModeDidChange:forDisplayUUID:]
+0x189fb4974  __TEXT,__text  -[_BKSHIDUISensorOverseer _dataLock_pushModesToServer]
+0x189fb4a58  __TEXT,__text  -[_BKSHIDUISensorDisplayAssociatedService _lock_reevaluateExistence]
+0x189fb4b44  __TEXT,__text  -[BKSHIDEventSenderDescriptor initFromPropertyList:]
+0x189fb5120  __TEXT,__text  -[_BKSHIDUISensorServiceReference suppressUISensorChangesForReason:]
+0x189fb534c  __TEXT,__text  -[BKSHitTestRegion hitTestRegionLocationForPoint:]
+0x189fb5414  __TEXT,__text  -[BKSHitTestRegion description]
+0x189fb5424  __TEXT,__text  -[BKSHitTestRegion appendDescriptionToStream:]
+0x189fb54b8  __TEXT,__text  -[BKSHIDEventDigitizerAttributes setSceneTouchBehavior:]
+0x189fb5508  __TEXT,__text  -[BKSTouchDeliveryUpdate setTargetID:]
+0x189fb5510  __TEXT,__text  -[BKSTouchDeliveryUpdate targetID]
+0x189fb5518  __TEXT,__text  -[BKSAccelerometer dealloc]
+0x189fb55a0  __TEXT,__text  -[BKSAccelerometer .cxx_destruct]
+0x189fb55e0  __TEXT,__text  -[BKSHIDEventDeferringSelectionChangeRequest selectionTarget]
+0x189fb55e8  __TEXT,__text  -[BKSHIDEventDeferringSelectionChangeRequest basis]
+0x189fb55f0  __TEXT,__text  -[BKSHIDEventDeferringSelectionTarget display]
+0x189fb55f8  __TEXT,__text  -[BKSHIDEventDeferringSelectionTarget environment]
+0x189fb5600  __TEXT,__text  -[BKSHIDEventDeferringSelectionChangeRequest ignoreModalities]
+0x189fb5608  __TEXT,__text  ___50+[BKSHIDEventDeferringChangeBasis constraintBasis]_block_invoke
+0x189fb5648  __TEXT,__text  ___61-[BKSTouchEventService _initConnectionWithConnectionFactory:]_block_invoke
+0x189fb5934  __TEXT,__text  ___BKLogTouchEvents_block_invoke
+0x189fb596c  __TEXT,__text  -[BKSTouchEventService _initConnectionWithConnectionFactory:]
+0x189fb5ad4  __TEXT,__text  ___33+[BKSHIDEventDisplay nullDisplay]_block_invoke
+0x189fb5b1c  __TEXT,__text  -[BKSHIDEventDeliveryChainObserver initWithDisplay:environment:]
+0x189fb60f8  __TEXT,__text  -[BKSHIDEventDeliveryChainObserver addChainObserver:]
+0x189fb6164  __TEXT,__text  -[_BKChainObserverContainer setObservingClient:]
+0x189fb6170  __TEXT,__text  -[BKSHIDEventDeliveryChainObserver chainIdentity]
+0x189fb6178  __TEXT,__text  -[BKSHIDEventDeferringTarget initWithToken:]
+0x189fb61c0  __TEXT,__text  -[BKSHIDTouchRoutingPolicy _initWithSettings:]
+0x189fb6234  __TEXT,__text  -[BKSHIDTouchRoutingPolicy init]
+0x189fb627c  __TEXT,__text  -[BKSHIDTouchRoutingPolicy copyWithZone:]
+0x189fb62d0  __TEXT,__text  +[BKSHIDTouchRoutingPolicy supportsSecureCoding]
+0x189fb62d8  __TEXT,__text  -[BKSHIDTouchRoutingPolicy initWithCoder:]
+0x189fb66b4  __TEXT,__text  __BKSVerifyIsArrayOfTargetIdentifiers
+0x189fb67fc  __TEXT,__text  -[BKSHIDTouchRoutingPolicy encodeWithCoder:]
+0x189fb6908  __TEXT,__text  -[BKSHIDTouchRoutingPolicy isEqual:]
+0x189fb69a4  __TEXT,__text  -[BKSHIDTouchRoutingPolicy hash]
+0x189fb69ac  __TEXT,__text  +[BKSHIDTouchRoutingPolicy inspectChangesWithOldPolicy:newPolicy:usingBlock:]
+0x189fb6aa4  __TEXT,__text  ___77+[BKSHIDTouchRoutingPolicy inspectChangesWithOldPolicy:newPolicy:usingBlock:]_block_invoke
+0x189fb6ab4  __TEXT,__text  -[BKSHIDTouchRoutingPolicy shouldAvoidHitTesting]
+0x189fb6ac0  __TEXT,__text  -[BKSHIDTouchRoutingPolicy setAvoidHitTesting:]
+0x189fb6ad0  __TEXT,__text  -[BKSHIDTouchRoutingPolicy restrictedHitTestsAllowEmbeddedTargets]
+0x189fb6adc  __TEXT,__text  -[BKSHIDTouchRoutingPolicy setRestrictedHitTestsAllowEmbeddedTargets:]
+0x189fb6aec  __TEXT,__text  -[BKSHIDTouchRoutingPolicy shouldAvoidCancelingContinuingClients]
+0x189fb6af8  __TEXT,__text  -[BKSHIDTouchRoutingPolicy setAvoidCancelingContinuingClients:]
+0x189fb6b08  __TEXT,__text  -[BKSHIDTouchRoutingPolicy targetsToAlwaysSendTouches]
+0x189fb6b14  __TEXT,__text  -[BKSHIDTouchRoutingPolicy setTargetsToAlwaysSendTouches:]
+0x189fb6b20  __TEXT,__text  -[BKSHIDTouchRoutingPolicy targetsToExcludeFromHitTesting]
+0x189fb6b2c  __TEXT,__text  -[BKSHIDTouchRoutingPolicy setTargetsToExcludeFromHitTesting:]
+0x189fb6b38  __TEXT,__text  -[BKSHIDTouchRoutingPolicy restrictHitTestToTheseTargets]
+0x189fb6b44  __TEXT,__text  -[BKSHIDTouchRoutingPolicy setRestrictHitTestToTheseTargets:]
+0x189fb6b50  __TEXT,__text  -[BKSHIDTouchRoutingPolicy contextIDsToAlwaysSendTouches]
+0x189fb6b90  __TEXT,__text  __BKSContextIDsFromTargetIdentifiers
+0x189fb6cf8  __TEXT,__text  -[BKSHIDTouchRoutingPolicy setContextIDsToAlwaysSendTouches:]
+0x189fb6d44  __TEXT,__text  __BKSHitTestTargetIdentifiersFromContextIDs
+0x189fb6eb4  __TEXT,__text  -[BKSHIDTouchRoutingPolicy contextIDsToExcludeFromHitTesting]
+0x189fb6ef4  __TEXT,__text  -[BKSHIDTouchRoutingPolicy setContextIDsToExcludeFromHitTesting:]
+0x189fb6f40  __TEXT,__text  -[BKSHIDTouchRoutingPolicy restrictHitTestToTheseContextIDs]
+0x189fb6f80  __TEXT,__text  -[BKSHIDTouchRoutingPolicy setRestrictHitTestToTheseContextIDs:]
+0x189fb6fcc  __TEXT,__text  -[BKSHIDTouchRoutingPolicy settings]
+0x189fb6fd4  __TEXT,__text  -[BKSHIDTouchRoutingPolicy setSettings:]
+0x189fb6fe0  __TEXT,__text  -[BKSHIDTouchRoutingPolicy .cxx_destruct]
+0x189fb6fec  __TEXT,__text  -[BKSHitTestTargetIdentifier _initWithContextID:]
+0x189fb7038  __TEXT,__text  -[BKSHitTestTargetIdentifier initWithContextID:]
+0x189fb703c  __TEXT,__text  -[BKSHitTestTargetIdentifier isEqual:]
+0x189fb70b8  __TEXT,__text  -[BKSHitTestTargetIdentifier hash]
+0x189fb70d8  __TEXT,__text  -[BKSHitTestTargetIdentifier description]
+0x189fb7114  __TEXT,__text  +[BKSHitTestTargetIdentifier supportsSecureCoding]
+0x189fb711c  __TEXT,__text  -[BKSHitTestTargetIdentifier initWithCoder:]
+0x189fb715c  __TEXT,__text  -[BKSHitTestTargetIdentifier encodeWithCoder:]
+0x189fb7174  __TEXT,__text  -[BKSHitTestTargetIdentifier copyWithZone:]
+0x189fb7178  __TEXT,__text  -[BKSHitTestTargetIdentifier contextID]
+0x189fb7180  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy initWithDevice:lifetimeAssertion:]
+0x189fb75ac  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy dealloc]
+0x189fb75f8  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy isEqual:]
+0x189fb7694  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy hash]
+0x189fb769c  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy description]
+0x189fb76ac  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy debugDescription]
+0x189fb7714  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy appendDescriptionToStream:]
+0x189fb7720  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy _properties]
+0x189fb7728  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy senderID]
+0x189fb7730  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy transport]
+0x189fb7738  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy language]
+0x189fb7740  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy layout]
+0x189fb7748  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy exclusivityIdentifier]
+0x189fb7750  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy platformInputModeConfiguration]
+0x189fb7758  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy countryCode]
+0x189fb7760  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy standardType]
+0x189fb7768  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy subinterfaceID]
+0x189fb7770  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy capsLockKeyHasLanguageSwitchLabel]
+0x189fb7778  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy globeKeyLabelHasGlobeSymbol]
+0x189fb7780  __TEXT,__text  -[_BKSHIDKeyboardDeviceClientProxy .cxx_destruct]
+0x189fb77b8  __TEXT,__text  ___45-[BKSHIDKeyboardService _initWithConnection:]_block_invoke_2
+0x189fb77c4  __TEXT,__text  ___45-[BKSHIDKeyboardService _initWithConnection:]_block_invoke_4
+0x189fb7864  __TEXT,__text  ___45-[BKSHIDKeyboardService _initWithConnection:]_block_invoke_5
+0x189fb7868  __TEXT,__text  ___42-[BKSHIDKeyboardService _updateKeyboards:]_block_invoke
+0x189fb78f0  __TEXT,__text  -[BKSHIDKeyboardService _proxyDeviceForConcreteDevice:]
+0x189fb799c  __TEXT,__text  ___57-[BKSHIDKeyboardService _proxyDevicesForConcreteDevices:]_block_invoke
+0x189fb79a4  __TEXT,__text  -[BKSHIDKeyboardService addKeyboardObserver:]
+0x189fb7a2c  __TEXT,__text  -[BKSHIDKeyboardService keyboardDeviceForSenderID:]
+0x189fb7b68  __TEXT,__text  ___51-[BKSHIDKeyboardService keyboardDeviceForSenderID:]_block_invoke
+0x189fb7bf4  __TEXT,__text  -[BKSHIDKeyboardService setConnectedKeyboards:withReply:]
+0x189fb7c54  __TEXT,__text  -[BKSHIDKeyboardService .cxx_destruct]
+0x189fb7cb0  __TEXT,__text  -[BKSLocalDefaults init]
+0x189fb7cf0  __TEXT,__text  -[BKSLocalDefaults _bindAndRegisterDefaults]
+0x189fb86a4  __TEXT,__text  -[BKSLocalDefaults migrateDefaultsIfNecessary]
+0x189fb86e0  __TEXT,__text  -[BKSLocalDefaults setValue:forKey:]
+0x189fb8750  __TEXT,__text  -[BKSLocalDefaults valueForKey:defaultValueProvider:]
+0x189fb87e0  __TEXT,__text  -[BKSLocalDefaults disableExtendedDisplayByDefault]
+0x189fb87f4  __TEXT,__text  -[BKSLocalDefaults setDisableExtendedDisplayByDefault:]
+0x189fb8808  __TEXT,__text  -[BKSLocalDefaults allowWirelessExtendedDisplay]
+0x189fb881c  __TEXT,__text  -[BKSLocalDefaults setAllowWirelessExtendedDisplay:]
+0x189fb8830  __TEXT,__text  -[BKSLocalDefaults setDisableStudyLogAccelerometerLogging:]
+0x189fb8844  __TEXT,__text  -[BKSLocalDefaults disableStudyLogALSLogging]
+0x189fb8858  __TEXT,__text  -[BKSLocalDefaults setDisableStudyLogALSLogging:]
+0x189fb886c  __TEXT,__text  -[BKSLocalDefaults disableStudyLogGyroLogging]
+0x189fb8880  __TEXT,__text  -[BKSLocalDefaults setDisableStudyLogGyroLogging:]
+0x189fb8894  __TEXT,__text  -[BKSHIDEventDeferringNamespacePredicate _initWithType:]
+0x189fb8a00  __TEXT,__text  +[BKSHIDEventDeferringNamespacePredicate anyContinuityDisplay]
+0x189fb8a48  __TEXT,__text  ___62+[BKSHIDEventDeferringNamespacePredicate anyContinuityDisplay]_block_invoke
+0x189fb8a80  __TEXT,__text  -[BKSHIDEventDeferringNamespacePredicate _descriptorType]
+0x189fb8a88  __TEXT,__text  -[BKSHIDEventDeferringNamespacePredicate copyWithZone:]
+0x189fb8a8c  __TEXT,__text  +[BKSHIDEventDeferringNamespacePredicate supportsSecureCoding]
+0x189fb8a94  __TEXT,__text  -[BKSHIDEventDeferringNamespacePredicate encodeWithCoder:]
+0x189fb8aac  __TEXT,__text  -[BKSHIDEventDeferringNamespacePredicate initWithCoder:]
+0x189fb8b0c  __TEXT,__text  +[BKSHIDEventDeferringNamespacePredicate protobufSchema]
+0x189fb8ba0  __TEXT,__text  ___56+[BKSHIDEventDeferringNamespacePredicate protobufSchema]_block_invoke
+0x189fb8be4  __TEXT,__text  ___56+[BKSHIDEventDeferringNamespacePredicate protobufSchema]_block_invoke_2
+0x189fb8bf8  __TEXT,__text  -[BKSHIDEventDeferringNamespacePredicate initForProtobufDecoding]
+0x189fb8c30  __TEXT,__text  -[BKSHIDEventDeferringNamespacePredicate hash]
+0x189fb8c38  __TEXT,__text  -[BKSHIDEventDeferringNamespacePredicate isEqual:]
+0x189fb8cb4  __TEXT,__text  -[BKSHIDEventDeferringNamespacePredicate description]
+0x189fb8ff8  __TEXT,__text  -[BKSTouchStreamPolicy shouldSendAmbiguityRecommendations]
+0x189fb9000  __TEXT,__text  -[BKSTouchStreamPolicy setShouldSendAmbiguityRecommendations:]
+0x189fb9008  __TEXT,__text  -[BKSSystemGesturesTouchStreamPolicy init]
+0x189fb9060  __TEXT,__text  -[BKSKeyboardDefaults init]
+0x189fb906c  __TEXT,__text  -[BKSKeyboardDefaults _bindAndRegisterDefaults]
+0x189fb9114  __TEXT,__text  -[BKSKeyboardDefaults migrateIfNeeded]
+0x189fb9220  __TEXT,__text  +[BKSHIDUISensorService serviceForDisplayUUID:]
+0x189fb95b8  __TEXT,__text  +[BKSHIDUISensorService acquireTransactionForReason:]
+0x189fb961c  __TEXT,__text  ___52+[BKSHIDEventDeferringEnvironment systemEnvironment]_block_invoke
+0x189fb9658  __TEXT,__text  -[BKSHIDEventDeferringEnvironment _isSystemEnvironment]
+0x189fb9668  __TEXT,__text  -[BKSHIDEventDeferringEnvironment _isKeyboardFocusEnvironment]
+0x189fb9678  __TEXT,__text  -[BKSHIDEventDeferringEnvironment encodeWithXPCDictionary:]
+0x189fb96cc  __TEXT,__text  -[BKSHIDEventDeferringEnvironment initWithXPCDictionary:]
+0x189fb9780  __TEXT,__text  +[BKSHIDEventDeferringEnvironment supportsBSXPCSecureCoding]
+0x189fb9788  __TEXT,__text  -[BKSHIDEventDeferringEnvironment encodeWithBSXPCCoder:]
+0x189fb97a0  __TEXT,__text  -[BKSHIDEventDeferringEnvironment initWithBSXPCCoder:]
+0x189fb9944  __TEXT,__text  __BKSKeyModifierStringAppend
+0x189fb9a0c  __TEXT,__text  -[BKSHIDEventKeyCommand _initWithInput:keyCode:modifierFlags:]
+0x189fb9aa4  __TEXT,__text  +[BKSHIDEventKeyCommand keyCommandWithInput:modifierFlags:]
+0x189fb9b34  __TEXT,__text  +[BKSHIDEventKeyCommand keyCommandWithKeyCode:modifierFlags:]
+0x189fb9b78  __TEXT,__text  +[BKSHIDEventKeyCommand supportsSecureCoding]
+0x189fb9b80  __TEXT,__text  -[BKSHIDEventKeyCommand encodeWithCoder:]
+0x189fb9bf4  __TEXT,__text  -[BKSHIDEventKeyCommand initWithCoder:]
+0x189fb9ca4  __TEXT,__text  -[BKSHIDEventKeyCommand copyWithZone:]
+0x189fb9ca8  __TEXT,__text  -[BKSHIDEventKeyCommand hash]
+0x189fb9d00  __TEXT,__text  -[BKSHIDEventKeyCommand isEqual:]
+0x189fb9e28  __TEXT,__text  -[BKSHIDEventKeyCommand description]
+0x189fb9edc  __TEXT,__text  ___36-[BKSHIDEventKeyCommand description]_block_invoke
+0x189fb9ee8  __TEXT,__text  -[BKSHIDEventKeyCommand appendDescriptionToStream:]
+0x189fb9eec  __TEXT,__text  -[BKSHIDEventKeyCommand _appendKeyWithoutModifiersToDescriptionTarget:keyCodeString:]
+0x189fb9f80  __TEXT,__text  -[BKSHIDEventKeyCommand _appendPropertiesCommon:]
+0x189fba014  __TEXT,__text  ___49-[BKSHIDEventKeyCommand _appendPropertiesCommon:]_block_invoke
+0x189fba2fc  __TEXT,__text  +[BKSHIDEventKeyCommand _appendDescriptionOfKeyCommandCollection:toStream:]
+0x189fba4fc  __TEXT,__text  ___75+[BKSHIDEventKeyCommand _appendDescriptionOfKeyCommandCollection:toStream:]_block_invoke
+0x189fba534  __TEXT,__text  ___75+[BKSHIDEventKeyCommand _appendDescriptionOfKeyCommandCollection:toStream:]_block_invoke_2
+0x189fba59c  __TEXT,__text  ___75+[BKSHIDEventKeyCommand _appendDescriptionOfKeyCommandCollection:toStream:]_block_invoke_3
+0x189fba6d0  __TEXT,__text  ___75+[BKSHIDEventKeyCommand _appendDescriptionOfKeyCommandCollection:toStream:]_block_invoke_4
+0x189fba780  __TEXT,__text  ___75+[BKSHIDEventKeyCommand _appendDescriptionOfKeyCommandCollection:toStream:]_block_invoke_5
+0x189fba80c  __TEXT,__text  ___75+[BKSHIDEventKeyCommand _appendDescriptionOfKeyCommandCollection:toStream:]_block_invoke_6
+0x189fba838  __TEXT,__text  ___75+[BKSHIDEventKeyCommand _appendDescriptionOfKeyCommandCollection:toStream:]_block_invoke_7
+0x189fba884  __TEXT,__text  +[BKSHIDEventKeyCommand _descriptionForKeyCommandCollection:]
+0x189fba8f8  __TEXT,__text  -[BKSHIDEventKeyCommand _sanitizedInputForDescription]
+0x189fba938  __TEXT,__text  -[BKSHIDEventKeyCommand isTextualKeyCommand]
+0x189fba95c  __TEXT,__text  -[BKSHIDEventKeyCommand isModifierOnlyCommand]
+0x189fbaa00  __TEXT,__text  -[BKSHIDEventKeyCommand isRoutableKeyCommand]
+0x189fbaa24  __TEXT,__text  -[BKSHIDEventKeyCommand describes:]
+0x189fbad50  __TEXT,__text  +[BKSHIDEventKeyCommand keyCommandForEvent:gsKeyboard:]
+0x189fbad58  __TEXT,__text  +[BKSHIDEventKeyCommand keyCommandForEvent:gsKeyboard:activeModifiers:]
+0x189fbb174  __TEXT,__text  +[BKSHIDEventKeyCommand _isModifierKeyWithPage:usage:]
+0x189fbb1d4  __TEXT,__text  +[BKSHIDEventKeyCommand _shouldMatchKeyCommandsForEvent:gsKeyboard:]
+0x189fbb264  __TEXT,__text  -[BKSHIDEventKeyCommand input]
+0x189fbb26c  __TEXT,__text  -[BKSHIDEventKeyCommand keyCode]
+0x189fbb274  __TEXT,__text  -[BKSHIDEventKeyCommand modifierFlags]
+0x189fbb27c  __TEXT,__text  -[BKSHIDEventKeyCommand unmodifiedInput]
+0x189fbb284  __TEXT,__text  -[BKSHIDEventKeyCommand setUnmodifiedInput:]
+0x189fbb290  __TEXT,__text  -[BKSHIDEventKeyCommand shiftModifiedInput]
+0x189fbb298  __TEXT,__text  -[BKSHIDEventKeyCommand setShiftModifiedInput:]
+0x189fbb2a4  __TEXT,__text  -[BKSHIDEventKeyCommand commandModifiedInput]
+0x189fbb2ac  __TEXT,__text  -[BKSHIDEventKeyCommand setCommandModifiedInput:]
+0x189fbb2b8  __TEXT,__text  -[BKSHIDEventKeyCommand usagePage]
+0x189fbb2c0  __TEXT,__text  -[BKSHIDEventKeyCommand setUsagePage:]
+0x189fbb2c8  __TEXT,__text  -[BKSHIDEventKeyCommand .cxx_destruct]
+0x189fbb318  __TEXT,__text  -[BKSHIDEventSenderSpecificDescriptor initWithDescriptor:senderID:]
+0x189fbb3ac  __TEXT,__text  -[BKSHIDEventSenderSpecificDescriptor descriptorByAddingSenderIDToMatchCriteria:]
+0x189fbb3f8  __TEXT,__text  -[BKSHIDEventSenderSpecificDescriptor appendDescriptionToStream:]
+0x189fbb4a0  __TEXT,__text  +[BKSHIDEventSenderSpecificDescriptor supportsSecureCoding]
+0x189fbb4a8  __TEXT,__text  -[BKSHIDEventSenderSpecificDescriptor encodeWithCoder:]
+0x189fbb54c  __TEXT,__text  -[BKSHIDEventSenderSpecificDescriptor initWithCoder:]
+0x189fbb65c  __TEXT,__text  -[BKSHIDEventSenderSpecificDescriptor requiresFuzzyMatching]
+0x189fbb664  __TEXT,__text  -[BKSHIDEventSenderSpecificDescriptor describes:]
+0x189fbb724  __TEXT,__text  -[BKSHIDEventSenderSpecificDescriptor matchesHIDEvent:]
+0x189fbb794  __TEXT,__text  -[BKSHIDEventSenderSpecificDescriptor senderID]
+0x189fbb7a8  __TEXT,__text  -[BKSHIDEventSenderSpecificDescriptor sourceDescriptor]
+0x189fbb7bc  __TEXT,__text  -[BKSHIDEventSenderSpecificDescriptor setSourceDescriptor:]
+0x189fbb7d0  __TEXT,__text  -[BKSHIDEventSenderSpecificDescriptor .cxx_destruct]
+0x189fbb7e4  __TEXT,__text  -[BKSHIDEventDescriptor descriptorByAddingSenderIDToMatchCriteria:]
+0x189fbb824  __TEXT,__text  -[BKSHIDEventDescriptor description]
+0x189fbb8d8  __TEXT,__text  ___36-[BKSHIDEventDescriptor description]_block_invoke
+0x189fbb8e4  __TEXT,__text  -[BKSHIDEventDescriptor succinctDescription]
+0x189fbb924  __TEXT,__text  -[BKSHIDEventDescriptor succinctDescriptionBuilder]
+0x189fbb934  __TEXT,__text  -[BKSHIDEventDescriptor descriptionWithMultilinePrefix:]
+```
+First 1,000 of 3,092.
+

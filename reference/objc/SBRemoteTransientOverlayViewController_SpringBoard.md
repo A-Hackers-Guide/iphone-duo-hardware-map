@@ -1,0 +1,177 @@
+# `SBRemoteTransientOverlayViewController`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBTransientOverlayViewController`
+- Protocols: `SBRemoteTransientOverlayHostContentAdapterDelegate`, `SBIdleTimerCoordinating`
+- 14 instance variables, 12 properties, 123 instance methods, 2 class methods
+
+## Instance variables
+
+```
+@"SBWindowScene" _targetWindowScene;
+@"SBRemoteTransientOverlayHostContentAdapter" _hostContentAdapter;
+B _presentationEmbeddedInTargetScene;
+@"UIView" _contentViewWrapperView;
+@"SBIdleTimerCoordinatorHelper" _idleTimerCoordinatorHelper;
+B _isPresented;
+q _lastWallpaperStyle;
+@"BSAnimationSettings" _pendingAnimationSettings;
+q _wallpaperEffectAnimations;
+@"SBTransientOverlayWallpaperEffectView" _wallpaperEffectView;
+q _preferredDismissalAnimationStyle;
+@"<SBRemoteTransientOverlayViewControllerDelegate>" _delegate;
+q _wallpaperVariant;
+@"SBRemoteTransientOverlayViewController" _pairedRemoteTransientOverlay;
+```
+
+## Properties
+
+```
+@property (TB,R,N,GisActivatingForSiri) activatingForSiri;
+@property (TB,R,N) isScreenshotMarkup;
+@property (TB,R,N) shouldInvalidateWhenDeactivated;
+@property (TB,R,N,GisSwitcherEligible) switcherEligible;
+@property (Tq,R,N,V_preferredDismissalAnimationStyle) preferredDismissalAnimationStyle;
+@property (T@"<SBRemoteTransientOverlayViewControllerDelegate>",W,N,V_delegate) delegate;
+@property (Tq,N,V_wallpaperVariant) wallpaperVariant;
+@property (T@"SBRemoteTransientOverlayViewController",W,N,V_pairedRemoteTransientOverlay) pairedRemoteTransientOverlay;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Class methods
+
+```
++[SBRemoteTransientOverlayViewController identifiersForActiveDisplayLayoutElements];
++[SBRemoteTransientOverlayViewController requestViewControllersForAlertDefinition:sceneWorkspaceController:connectionHandler:];
+```
+
+## Instance methods
+
+```
+-[SBRemoteTransientOverlayViewController shouldPendAlertItems];
+-[SBRemoteTransientOverlayViewController preferredUnlockedGestureDismissalStyle];
+-[SBRemoteTransientOverlayViewController hidEventDeferringDisabled];
+-[SBRemoteTransientOverlayViewController idleTimerProvider:didProposeBehavior:forReason:];
+-[SBRemoteTransientOverlayViewController preferredSceneDeactivationReasonValue];
+-[SBRemoteTransientOverlayViewController setDisplayLayoutElementActive:];
+-[SBRemoteTransientOverlayViewController representedDisplayItem];
+-[SBRemoteTransientOverlayViewController handleVolumeDownButtonPress];
+-[SBRemoteTransientOverlayViewController handleGestureDismissal];
+-[SBRemoteTransientOverlayViewController childViewControllerForHomeIndicatorAutoHidden];
+-[SBRemoteTransientOverlayViewController didTransitionToAttachedToWindowedAccessory:windowedAccessoryCutoutFrameInScreen:];
+-[SBRemoteTransientOverlayViewController updateDisplayLayoutElementWithBuilder:];
+-[SBRemoteTransientOverlayViewController preferredInterfaceOrientationForPresentation];
+-[SBRemoteTransientOverlayViewController newTransientOverlayPresentationTransitionCoordinator];
+-[SBRemoteTransientOverlayViewController prefersStatusBarActivityItemVisible];
+-[SBRemoteTransientOverlayViewController shouldDisableBanners];
+-[SBRemoteTransientOverlayViewController prepareForActivationWithContext:presentationMode:presentEmbedded:shouldUseResizableViewControllerAlways:windowScene:completion:];
+-[SBRemoteTransientOverlayViewController remoteTransientOverlayHostContentAdapterDidChangeAudioCategoriesDisablingVolumeHUD:];
+-[SBRemoteTransientOverlayViewController serviceBundleIdentifier];
+-[SBRemoteTransientOverlayViewController handleHomeButtonLongPress];
+-[SBRemoteTransientOverlayViewController succinctDescriptionBuilder];
+-[SBRemoteTransientOverlayViewController preferredDisplayLayoutElementIdentifier];
+-[SBRemoteTransientOverlayViewController isActivatingForSiri];
+-[SBRemoteTransientOverlayViewController setContainerOrientation:];
+-[SBRemoteTransientOverlayViewController viewWillDisappear:];
+-[SBRemoteTransientOverlayViewController associatedSceneIdentifiersToSuppressInSystemAperture];
+-[SBRemoteTransientOverlayViewController supportedInterfaceOrientations];
+-[SBRemoteTransientOverlayViewController remoteTransientOverlayHostContentAdapter:requestsActionForHandlingButtonEvents:];
+-[SBRemoteTransientOverlayViewController pictureInPictureProcessIdentifier];
+-[SBRemoteTransientOverlayViewController isSwitcherEligible];
+-[SBRemoteTransientOverlayViewController handleDoubleHeightStatusBarTap];
+-[SBRemoteTransientOverlayViewController hasServiceProcessIdentifier:];
+-[SBRemoteTransientOverlayViewController endIgnoringAppearanceUpdates];
+-[SBRemoteTransientOverlayViewController isPresentedOnBehalfOfSiri];
+-[SBRemoteTransientOverlayViewController shouldDisableReachability];
+-[SBRemoteTransientOverlayViewController dealloc];
+-[SBRemoteTransientOverlayViewController audioCategoriesDisablingVolumeHUD];
+-[SBRemoteTransientOverlayViewController clientSceneIdentityToken];
+-[SBRemoteTransientOverlayViewController becomeFirstResponder];
+-[SBRemoteTransientOverlayViewController newTransientOverlayDismissalTransitionCoordinator];
+-[SBRemoteTransientOverlayViewController isScreenshotMarkup];
+-[SBRemoteTransientOverlayViewController handlePictureInPictureDidBegin];
+-[SBRemoteTransientOverlayViewController remoteTransientOverlayHostContentAdapterDidChangeShouldDisableOrientationUpdates:];
+-[SBRemoteTransientOverlayViewController handleHeadsetButtonPress:];
+-[SBRemoteTransientOverlayViewController noteDidMoveToWindowScene:];
+-[SBRemoteTransientOverlayViewController viewDidLoad];
+-[SBRemoteTransientOverlayViewController defaultPreferredInterfaceOrientationForPresentationForRemoteTransientOverlayHostContentAdapter:];
+-[SBRemoteTransientOverlayViewController setIdleTimerCoordinator:];
+-[SBRemoteTransientOverlayViewController movesAutomaticallyToPrimaryWindowScene];
+-[SBRemoteTransientOverlayViewController beginIgnoringContentOverlayInsetUpdates];
+-[SBRemoteTransientOverlayViewController shouldDisableInteractiveScreenshotGesture];
+-[SBRemoteTransientOverlayViewController setWallpaperVariant:];
+-[SBRemoteTransientOverlayViewController shouldDisableOrientationUpdates];
+-[SBRemoteTransientOverlayViewController handleLockButtonPress];
+-[SBRemoteTransientOverlayViewController hostedSceneIdentityTokens];
+-[SBRemoteTransientOverlayViewController viewDidLayoutSubviews];
+-[SBRemoteTransientOverlayViewController shouldAutorotate];
+-[SBRemoteTransientOverlayViewController resignFirstResponder];
+-[SBRemoteTransientOverlayViewController _preferredStatusBarVisibility];
+-[SBRemoteTransientOverlayViewController handleVolumeUpButtonPress];
+-[SBRemoteTransientOverlayViewController preferredWhitePointAdaptivityStyle];
+-[SBRemoteTransientOverlayViewController remoteTransientOverlayHostContentAdapterDidChangePreferredSceneDeactivationReasonValue:];
+-[SBRemoteTransientOverlayViewController keyboardFocusTarget];
+-[SBRemoteTransientOverlayViewController didInvalidate];
+-[SBRemoteTransientOverlayViewController shouldUseSceneBasedKeyboardFocus];
+-[SBRemoteTransientOverlayViewController shouldEmbedOverShieldedApps];
+-[SBRemoteTransientOverlayViewController remoteTransientOverlayHostContentAdapterDidChangeGestureDismissalStyles:];
+-[SBRemoteTransientOverlayViewController remoteTransientOverlayHostContentAdapterDidChangeContentOpaque:];
+-[SBRemoteTransientOverlayViewController shouldDisableSiri];
+-[SBRemoteTransientOverlayViewController _preferredStatusBarAxis];
+-[SBRemoteTransientOverlayViewController isPresentedFromSceneWithIdentityTokenString:];
+-[SBRemoteTransientOverlayViewController associatedBundleIdentifiersToSuppressInSystemAperture];
+-[SBRemoteTransientOverlayViewController remoteTransientOverlayHostContentAdapterDidChangeHIDEventDeferringDisabled:];
+-[SBRemoteTransientOverlayViewController shouldInvalidateWhenDeactivated];
+-[SBRemoteTransientOverlayViewController handleHomeButtonDoublePress];
+-[SBRemoteTransientOverlayViewController viewWillAppear:];
+-[SBRemoteTransientOverlayViewController preferredBackgroundActivitiesToSuppress];
+-[SBRemoteTransientOverlayViewController sceneForClientSettings];
+-[SBRemoteTransientOverlayViewController shouldDisableControlCenter];
+-[SBRemoteTransientOverlayViewController _setMediaOverridePID:];
+-[SBRemoteTransientOverlayViewController _canShowWhileLocked];
+-[SBRemoteTransientOverlayViewController configureWithContext:completion:];
+-[SBRemoteTransientOverlayViewController restoreInputViewsAnimated:];
+-[SBRemoteTransientOverlayViewController setDelegate:];
+-[SBRemoteTransientOverlayViewController viewDidMoveToWindow:shouldAppearOrDisappear:];
+-[SBRemoteTransientOverlayViewController viewDidAppear:];
+-[SBRemoteTransientOverlayViewController canResignFirstResponder];
+-[SBRemoteTransientOverlayViewController isContentOpaque];
+-[SBRemoteTransientOverlayViewController preferredLockedGestureDismissalStyle];
+-[SBRemoteTransientOverlayViewController serviceProcessIdentifier];
+-[SBRemoteTransientOverlayViewController childViewControllerForScreenEdgesDeferringSystemGestures];
+-[SBRemoteTransientOverlayViewController setPairedRemoteTransientOverlay:];
+-[SBRemoteTransientOverlayViewController setPresentationEmbeddedInTargetScene:];
+-[SBRemoteTransientOverlayViewController pairedRemoteTransientOverlay];
+-[SBRemoteTransientOverlayViewController endIgnoringContentOverlayInsetUpdates];
+-[SBRemoteTransientOverlayViewController beginIgnoringAppearanceUpdates];
+-[SBRemoteTransientOverlayViewController delegate];
+-[SBRemoteTransientOverlayViewController _needsWallpaperEffectView];
+-[SBRemoteTransientOverlayViewController _doBoundsPreservingRotationFromInterfaceOrientation:toInterfaceOrientation:];
+-[SBRemoteTransientOverlayViewController wallpaperVariant];
+-[SBRemoteTransientOverlayViewController hasIdleTimerBehaviors];
+-[SBRemoteTransientOverlayViewController viewDidDisappear:];
+-[SBRemoteTransientOverlayViewController didDeactivate];
+-[SBRemoteTransientOverlayViewController _initWithHostContentAdapter:];
+-[SBRemoteTransientOverlayViewController isPresentedByProcess:];
+-[SBRemoteTransientOverlayViewController _hostContentViewController];
+-[SBRemoteTransientOverlayViewController remoteTransientOverlayHostContentAdapter:didTerminateWithError:];
+-[SBRemoteTransientOverlayViewController allowsStackingOverlayContentAbove];
+-[SBRemoteTransientOverlayViewController preferredStatusBarStyle];
+-[SBRemoteTransientOverlayViewController remoteTransientOverlayHostContentAdapterRequestsInvalidation:];
+-[SBRemoteTransientOverlayViewController remoteTransientOverlayHostContentAdapterDidChangeSupportedInterfaceOrientations:];
+-[SBRemoteTransientOverlayViewController _configureWallpaperEffectViewWithAnimationSettings:];
+-[SBRemoteTransientOverlayViewController canBecomeFirstResponder];
+-[SBRemoteTransientOverlayViewController isPresentedByBundleIdentifier:];
+-[SBRemoteTransientOverlayViewController preserveInputViewsAnimated:];
+-[SBRemoteTransientOverlayViewController remoteTransientOverlayHostContentAdapterDidChangeFeaturePolicy:];
+-[SBRemoteTransientOverlayViewController remoteTransientOverlayHostContentAdapterRequestsDeactivation:];
+-[SBRemoteTransientOverlayViewController remoteTransientOverlayHostContentAdapter:requestsWallpaperEffectUpdateWithAnimationSettings:];
+-[SBRemoteTransientOverlayViewController preferredDismissalAnimationStyle];
+-[SBRemoteTransientOverlayViewController remoteTransientOverlayHostContentAdapter:needsStatusBarAppearanceUpdateWithAnimationSettings:];
+-[SBRemoteTransientOverlayViewController handleHomeButtonPress];
+-[SBRemoteTransientOverlayViewController shouldAutomaticallyForwardAppearanceMethods];
+-[SBRemoteTransientOverlayViewController coordinatorRequestedIdleTimerBehavior:];
+```

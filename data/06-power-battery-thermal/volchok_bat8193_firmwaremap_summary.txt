@@ -1,0 +1,28 @@
+product_id BAT8193 board_id 33171 0x8193
+hw_version 21 firmware v 209210031 98304 B; su_crypto v 172502 24576 B
+  chemistry 1017722617 cfg set 2630 v 540174 dnvd v 540161
+  chemistry 1017742617 cfg set 2630 v 525174 dnvd v 525163
+  chemistry 1017762617 cfg set 2630 v 551175 dnvd v 551163
+  chemistry 1018042617 cfg set 2630 v 593044 dnvd v 593036
+  chemistry 1018052677 cfg set 2630 v 595044 dnvd v 595036
+  chemistry 1018062617 cfg set 2630 v 589045 dnvd v 589036
+  chemistry 1018072677 cfg set 2630 v 591045 dnvd v 591036
+  chemistry 1018082617 cfg set 2630 v 597045 dnvd v 597036
+  chemistry 1018282617 cfg set 2630 v 594044 dnvd v 594036
+  chemistry 1018292617 cfg set 2630 v 590045 dnvd v 590036
+  chemistry 1018302617 cfg set 2630 v 598045 dnvd v 598036
+  chemistry 1018312677 cfg set 2630 v 596044 dnvd v 596036
+  chemistry 1018322677 cfg set 2630 v 592045 dnvd v 592036
+  chemistry 1018703717 cfg set 2630 v 623039 dnvd v 623031
+  chemistry 1018713777 cfg set 2630 v 625039 dnvd v 625031
+  chemistry 1018723717 cfg set 2630 v 619041 dnvd v 619031
+  chemistry 1018733777 cfg set 2630 v 621040 dnvd v 621031
+  chemistry 1019093717 cfg set 2630 v 624039 dnvd v 624031
+  chemistry 1019103717 cfg set 2630 v 620040 dnvd v 620031
+  chemistry 1019113777 cfg set 2630 v 626039 dnvd v 626031
+  chemistry 1019123777 cfg set 2630 v 622040 dnvd v 622031
+  chemistry 1019503217 cfg set 2630 v 679024 dnvd v 679020
+  chemistry 1019513217 cfg set 2630 v 681024 dnvd v 681019
+  chemistry 1019523277 cfg set 2630 v 680024 dnvd v 680020
+  chemistry 1019533277 cfg set 2630 v 682024 dnvd v 682019
+  chemistry 12144171 {'cell_id_skip': True}

@@ -1,0 +1,149 @@
+# `BWUBCaptureParameters`
+
+- Image: [`/System/Library/PrivateFrameworks/CMCapture.framework/CMCapture`](../userland/System__Library__PrivateFrameworks__CMCapture.framework__CMCapture.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- 51 instance variables, 25 properties, 53 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"NSString" _portType;
+B _nonHDRBrightLightCapturesEnabled;
+d _lowLightEffectiveIntegrationTimeThreshold;
+d _sifrMainEffectiveIntegrationTimeThreshold;
+f _sifrGainThreshold;
+f _lowLightHDRWithoutSIFRISPDGainThreshold;
+d _longWithoutSphereEffectiveIntegrationTimeThreshold;
+d _deepFusionEffectiveIntegrationTimeThreshold;
+i _deepFusionBracketedCaptureReferenceFrameIndex;
+@"NSArray" _deepFusionHDREVZeroCountByEffectiveIntegrationTime;
+d _upscaledEnhancedResolutionEffectiveIntegrationTimeThreshold;
+f _learnedFusionHighResolutionDowngradeNormalizedSNRThreshold;
+f _learnedFusionHighResolutionDowngradeNormalizedSNRHysteresisLag;
+d _learnedNRUltraHighResolutionDowngradeEffectiveIntegrationTimeThreshold;
+f _learnedNRUltraHighResolutionExposureBias;
+B _macroFlashQSubSwitchingEnabled;
+f _autoFlashColorConstancyNormalizedSNRThreshold;
+f _autoFlashMacroNormalizedSNRThreshold;
+d _redSaturationMainEffectiveIntegrationTimeThreshold;
+f _redSaturationSIFRGainThreshold;
+i _toneCurveBehavior;
+B _preserveBlackLevel;
+B _alwaysUseAFTimeout;
+@"NSArray" _afWindowParams;
+i _maxNumberOfFramesForAdaptiveBracketing;
+d _digitalFlashAvailableEffectiveIntegrationTimeThreshold;
+d _digitalFlashRecommendedEffectiveIntegrationTimeThreshold;
+d _stationaryDigitalFlashRecommendedEffectiveIntegrationTimeThreshold;
+f _digitalFlashAvailableNormalizedSNRThreshold;
+f _digitalFlashAvailableNormalizedSNRHysteresisLag;
+f _digitalFlashRecommendedNormalizedSNRThreshold;
+f _digitalFlashRecommendedNormalizedSNRHysteresisLag;
+f _digitalFlashBacklitRecommendFlashNormalizedSNRThreshold;
+f _digitalFlashBacklitRecommendFlashNormalizedSNRHysteresisLag;
+f _digitalFlashRecommendFlashNormalizedSNRThreshold;
+f _digitalFlashRecommendFlashNormalizedSNRHysteresisLag;
+f _stationaryDigitalFlashRecommendedNormalizedSNRThreshold;
+f _stationaryDigitalFlashRecommendedNormalizedSNRHysteresisLag;
+f _digitalFlashRecommendRegularFlashSNRThreshold;
+f _digitalFlashBacklitRecommendRegularFlashSNRThreshold;
+f _digitalFlashBacklitRecommendRegularFlashAERelativeDifferenceThreshold;
+B _digitalFlashHighlightRecoveryEnabled;
+f _stereoPhotoSNRThreshold;
+f _stereoPhotoSNRDifferenceSecondarySNRThreshold;
+f _stereoPhotoSNRDifferenceThreshold;
+i _referenceFrameSelectionMethod;
+B _usePreviousSIFR;
+@"NSArray" _motionAndFocusScoreWeights;
+f _adaptiveFusionDowngradeSNRThreshold;
+f _adaptiveFusionDowngradeSNRHysteresisLag;
+f _nightModeMinGainThreshold;
+```
+
+## Properties
+
+```
+@property (TB,R,N,V_nonHDRBrightLightCapturesEnabled) nonHDRBrightLightCapturesEnabled;
+@property (Td,R,N,V_lowLightEffectiveIntegrationTimeThreshold) lowLightEffectiveIntegrationTimeThreshold;
+@property (Td,R,N,V_sifrMainEffectiveIntegrationTimeThreshold) sifrMainEffectiveIntegrationTimeThreshold;
+@property (Tf,R,N,V_sifrGainThreshold) sifrGainThreshold;
+@property (Tf,R,N,V_lowLightHDRWithoutSIFRISPDGainThreshold) lowLightHDRWithoutSIFRISPDGainThreshold;
+@property (Td,R,N,V_longWithoutSphereEffectiveIntegrationTimeThreshold) longWithoutSphereEffectiveIntegrationTimeThreshold;
+@property (Td,R,N,V_deepFusionEffectiveIntegrationTimeThreshold) deepFusionEffectiveIntegrationTimeThreshold;
+@property (Ti,R,N,V_deepFusionBracketedCaptureReferenceFrameIndex) deepFusionBracketedCaptureReferenceFrameIndex;
+@property (Td,R,N,V_upscaledEnhancedResolutionEffectiveIntegrationTimeThreshold) upscaledEnhancedResolutionEffectiveIntegrationTimeThreshold;
+@property (Tf,R,N,V_learnedFusionHighResolutionDowngradeNormalizedSNRThreshold) learnedFusionHighResolutionDowngradeNormalizedSNRThreshold;
+@property (Tf,R,N,V_learnedFusionHighResolutionDowngradeNormalizedSNRHysteresisLag) learnedFusionHighResolutionDowngradeNormalizedSNRHysteresisLag;
+@property (Td,R,N,V_learnedNRUltraHighResolutionDowngradeEffectiveIntegrationTimeThreshold) learnedNRUltraHighResolutionDowngradeEffectiveIntegrationTimeThreshold;
+@property (Tf,R,N,V_learnedNRUltraHighResolutionExposureBias) learnedNRUltraHighResolutionExposureBias;
+@property (Tf,R,N,V_autoFlashColorConstancyNormalizedSNRThreshold) autoFlashColorConstancyNormalizedSNRThreshold;
+@property (Tf,R,N,V_autoFlashMacroNormalizedSNRThreshold) autoFlashMacroNormalizedSNRThreshold;
+@property (TB,R,N,V_macroFlashQSubSwitchingEnabled) macroFlashQSubSwitchingEnabled;
+@property (Td,R,N,V_redSaturationMainEffectiveIntegrationTimeThreshold) redSaturationMainEffectiveIntegrationTimeThreshold;
+@property (Tf,R,N,V_redSaturationSIFRGainThreshold) redSaturationSIFRGainThreshold;
+@property (Ti,R,N,V_toneCurveBehavior) toneCurveBehavior;
+@property (TB,R,N,V_preserveBlackLevel) preserveBlackLevel;
+@property (Tf,R,N,V_nightModeMinGainThreshold) nightModeMinGainThreshold;
+@property (TB,R,N,V_alwaysUseAFTimeout) alwaysUseAFTimeout;
+@property (T@"NSArray",R,N,V_afWindowParams) afWindowParams;
+@property (Tf,R,N,V_adaptiveFusionDowngradeSNRThreshold) adaptiveFusionDowngradeSNRThreshold;
+@property (Tf,R,N,V_adaptiveFusionDowngradeSNRHysteresisLag) adaptiveFusionDowngradeSNRHysteresisLag;
+```
+
+## Instance methods
+
+```
+-[BWUBCaptureParameters stereoPhotoSNRThreshold];
+-[BWUBCaptureParameters digitalFlashRecommendFlashNormalizedSNRThreshold];
+-[BWUBCaptureParameters autoFlashMacroNormalizedSNRThreshold];
+-[BWUBCaptureParameters digitalFlashRecommendedNormalizedSNRHysteresisLag];
+-[BWUBCaptureParameters stereoPhotoSNRDifferenceThreshold];
+-[BWUBCaptureParameters learnedFusionHighResolutionDowngradeNormalizedSNRHysteresisLag];
+-[BWUBCaptureParameters nonHDRBrightLightCapturesEnabled];
+-[BWUBCaptureParameters digitalFlashBacklitRecommendRegularFlashAERelativeDifferenceThreshold];
+-[BWUBCaptureParameters nightModeMinGainThreshold];
+-[BWUBCaptureParameters maxNumberOfFramesForAdaptiveBracketing];
+-[BWUBCaptureParameters digitalFlashRecommendFlashNormalizedSNRHysteresisLag];
+-[BWUBCaptureParameters digitalFlashBacklitRecommendFlashNormalizedSNRHysteresisLag];
+-[BWUBCaptureParameters toneCurveBehavior];
+-[BWUBCaptureParameters lowLightHDRWithoutSIFRISPDGainThreshold];
+-[BWUBCaptureParameters initWithPortType:sensorIDDictionary:];
+-[BWUBCaptureParameters dealloc];
+-[BWUBCaptureParameters upscaledEnhancedResolutionEffectiveIntegrationTimeThreshold];
+-[BWUBCaptureParameters motionAndFocusScoreWeights];
+-[BWUBCaptureParameters stereoPhotoSNRDifferenceSecondarySNRThreshold];
+-[BWUBCaptureParameters redSaturationMainEffectiveIntegrationTimeThreshold];
+-[BWUBCaptureParameters deepFusionEffectiveIntegrationTimeThreshold];
+-[BWUBCaptureParameters digitalFlashAvailableNormalizedSNRThreshold];
+-[BWUBCaptureParameters redSaturationSIFRGainThreshold];
+-[BWUBCaptureParameters afWindowParams];
+-[BWUBCaptureParameters stationaryDigitalFlashRecommendedNormalizedSNRThreshold];
+-[BWUBCaptureParameters digitalFlashAvailableEffectiveIntegrationTimeThreshold];
+-[BWUBCaptureParameters deepFusionBracketedCaptureReferenceFrameIndex];
+-[BWUBCaptureParameters adaptiveFusionDowngradeSNRHysteresisLag];
+-[BWUBCaptureParameters learnedFusionHighResolutionDowngradeNormalizedSNRThreshold];
+-[BWUBCaptureParameters referenceFrameSelectionMethod];
+-[BWUBCaptureParameters stationaryDigitalFlashRecommendedEffectiveIntegrationTimeThreshold];
+-[BWUBCaptureParameters learnedNRUltraHighResolutionExposureBias];
+-[BWUBCaptureParameters longWithoutSphereEffectiveIntegrationTimeThreshold];
+-[BWUBCaptureParameters digitalFlashBacklitRecommendFlashNormalizedSNRThreshold];
+-[BWUBCaptureParameters description];
+-[BWUBCaptureParameters autoFlashColorConstancyNormalizedSNRThreshold];
+-[BWUBCaptureParameters alwaysUseAFTimeout];
+-[BWUBCaptureParameters digitalFlashRecommendedEffectiveIntegrationTimeThreshold];
+-[BWUBCaptureParameters adaptiveFusionDowngradeSNRThreshold];
+-[BWUBCaptureParameters digitalFlashAvailableNormalizedSNRHysteresisLag];
+-[BWUBCaptureParameters learnedNRUltraHighResolutionDowngradeEffectiveIntegrationTimeThreshold];
+-[BWUBCaptureParameters lowLightEffectiveIntegrationTimeThreshold];
+-[BWUBCaptureParameters digitalFlashRecommendRegularFlashSNRThreshold];
+-[BWUBCaptureParameters digitalFlashBacklitRecommendRegularFlashSNRThreshold];
+-[BWUBCaptureParameters macroFlashQSubSwitchingEnabled];
+-[BWUBCaptureParameters digitalFlashHighlightRecoveryEnabled];
+-[BWUBCaptureParameters preserveBlackLevel];
+-[BWUBCaptureParameters usePreviousSIFR];
+-[BWUBCaptureParameters deepFusionHDREVZeroCountForEffectiveIntegrationTime:];
+-[BWUBCaptureParameters sifrMainEffectiveIntegrationTimeThreshold];
+-[BWUBCaptureParameters stationaryDigitalFlashRecommendedNormalizedSNRHysteresisLag];
+-[BWUBCaptureParameters sifrGainThreshold];
+-[BWUBCaptureParameters digitalFlashRecommendedNormalizedSNRThreshold];
+```

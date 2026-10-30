@@ -1,0 +1,215 @@
+# `/System/Library/DriverExtensions/AppleCentauriControl.dext/Info.plist`
+
+From the erase/recovery restore ramdisk (141-28940-105.dmg, runs restored_external). 3,772 bytes.
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleDisplayName`: `AppleCentauriControl`
+- `CFBundleExecutable`: `AppleCentauriControl`
+- `CFBundleIdentifier`: `com.apple.driver.AppleCentauriControl`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleCentauriControl`
+- `CFBundlePackageType`: `DEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSupportedPlatforms`:
+  - `DriverKit`
+- `CFBundleVersion`: `1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `driverkit`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: ``
+- `DTSDKName`: `driverkit.iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `EnableCoreDumps`: `True`
+- `IOKitPersonalities`:
+  - `AirshipDriverControl`:
+    - `AirshipDeviceAttachTimeoutMS`: `4000`
+    - `AirshipDeviceClass`: `CentauriSubsystemPCI`
+    - `AirshipDriverName`: `AirshipDriverDKControl`
+    - `CFBundleIdentifier`: `com.apple.driver.AppleCentauriControl`
+    - `CFBundleIdentifierKernel`: `com.apple.kpi.iokit`
+    - `CentauriHelperBootUserClient`:
+      - `IOClass`: `IOUserUserClient`
+      - `IOPMAOTAllow`: `384`
+      - `IOUserClass`: `AirshipCentauriHelperBootUserClient`
+    - `CentauriHelperInterfaceUserClient`:
+      - `IOClass`: `IOUserUserClient`
+      - `IOPMAOTAllow`: `384`
+      - `IOUserClass`: `AirshipCentauriHelperInterfaceUserClient`
+    - `CentauriHelperMemregionUserClient`:
+      - `IOClass`: `IOUserUserClient`
+      - `IOPMAOTAllow`: `384`
+      - `IOUserClass`: `AirshipCentauriHelperMemregionUserClient`
+    - `CentauriHelperTimesyncUserClient`:
+      - `IOClass`: `IOUserUserClient`
+      - `IOPMAOTAllow`: `384`
+      - `IOUserClass`: `AirshipCentauriHelperTimesyncUserClient`
+    - `IOClass`: `IOUserService`
+    - `IOMatchCategory`: `AirshipDriverDK`
+    - `IONameMatch`: `CentauriControl`
+    - `IOProviderClass`: `IOUserService`
+    - `IOUserClass`: `AirshipDriverDK`
+    - `IOUserServerName`: `com.apple.driver.AppleCentauriControl`
+    - `IOUserServerOneProcess`: `True`
+  - `CentauriControl`:
+    - `CFBundleIdentifierKernel`: `com.apple.kpi.iokit`
+    - `CentauriUserClientProperties`:
+      - `IOClass`: `IOUserUserClient`
+      - `IOUserClass`: `CentauriControlUserClient`
+    - `CoreCaptureIOServiceProperties`:
+      - `CCCaptureIOServiceProperties`:
+        - `IOClass`: `CCIOService`
+        - `IOUserClass`: `CCIOService`
+      - `CCFaultReporterUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `CCFaultReporterUserClient`
+      - `CoreCaptureDataPipeUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `CCDataPipeUserClient`
+      - `CoreCaptureLogPipeUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `CCLogPipeUserClient`
+      - `CoreCaptureStreamProperties`:
+        - `IOClass`: `CCIOService`
+        - `IOUserClass`: `CCIOService`
+      - `IOClass`: `CCIOService`
+      - `IOUserClass`: `CCIOService`
+    - `IOClass`: `IOUserService`
+    - `IOMatchCategory`: `com.apple.driver.AppleCentauriControl`
+    - `IOPCIMatch`: `0x1901106b 0x1900106b`
+    - `IOPCITunnelCompatible`: `True`
+    - `IOPMSystemOffPhase2Allow`: `True`
+    - `IOProviderClass`: `IOPCIDevice`
+    - `IOUserClass`: `CentauriControl`
+    - `IOUserServerName`: `com.apple.driver.AppleCentauriControl`
+    - `IOUserServerOneProcess`: `True`
+    - `LoggingProperties`:
+      - `AdditionalPipeOwners`:
+        - `com.apple.driver.AppleCentauriManager`
+      - `DirectoryName`: `MultiFunctionManager`
+      - `LogFileName`: `CentauriControlLogs`
+      - `LogIdentifier`: `CentauriControl`
+      - `Owner`: `com.apple.driver.AppleCentauriControl`
+    - `NumMSIs`: `3`
+    - `RemoteServiceProperties`:
+      - `IOClass`: `IOUserService`
+      - `IODriverKitPublishEntitlementsKey`: `com.apple.driver.centauri.publish`
+      - `IOUserClass`: `CentauriControlRemoteInterface`
+  - `CentauriControlCCPlugin`:
+    - `CFBundleIdentifierKernel`: `com.apple.kpi.iokit`
+    - `CoreCaptureIOServiceProperties`:
+      - `CCCaptureIOServiceProperties`:
+        - `IOClass`: `CCIOService`
+        - `IOUserClass`: `CCIOService`
+      - `CoreCaptureDataPipeUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `CCDataPipeUserClient`
+      - `CoreCaptureLogPipeUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `CCLogPipeUserClient`
+      - `CoreCaptureStreamProperties`:
+        - `IOClass`: `CCIOService`
+        - `IOUserClass`: `CCIOService`
+      - `IOClass`: `CCIOService`
+      - `IOUserClass`: `CCIOService`
+    - `IOClass`: `IOUserService`
+    - `IOMatchCategory`: `CentauriControlCCPlugin`
+    - `IONameMatch`: `CCPluginNubControl`
+    - `IOProviderClass`: `IOUserService`
+    - `IOUserClass`: `CentauriDebugPluginCC`
+    - `IOUserServerName`: `com.apple.driver.AppleCentauriControl`
+    - `IOUserServerOneProcess`: `True`
+    - `PipeConfig`:
+      - `ControlDebugRing0`:
+        - `CompressionDisabled`: `True`
+        - `DirectoryName`: `MultiFunctionManager`
+        - `FileSize`: `10485760`
+        - `Filename`: `CentauriCoexLogs`
+        - `LogDataTypePcap`: `True`
+        - `LogIdentifier`: `Control`
+        - `LogPolicyCapture`: `False`
+        - `LogTypeCircular`: `True`
+        - `Name`: `CoexFirmwareLogs`
+        - `NotifyThreshold`: `1000`
+        - `NumberOfFiles`: `20`
+        - `Owner`: `com.apple.driver.AppleCentauriControl`
+        - `PipeSize`: `131072`
+        - `StreamConfig`:
+          - `CCLogLevel`: `5`
+          - `Name`: `lfevents`
+  - `CentauriControlPCI`:
+    - `CFBundleIdentifierKernel`: `com.apple.kpi.iokit`
+    - `IOClass`: `IOUserService`
+    - `IOMatchCategory`: `CentauriSubsystemPCI`
+    - `IONameMatch`: `CentauriControl`
+    - `IOPMAOTAllow`: `384`
+    - `IOProviderClass`: `IOUserService`
+    - `IOUserClass`: `CentauriSubsystemPCI`
+    - `IOUserServerName`: `com.apple.driver.AppleCentauriControl`
+    - `IOUserServerOneProcess`: `True`
+  - `CentauriControlSystemEvents`:
+    - `CFBundleIdentifierKernel`: `com.apple.kpi.iokit`
+    - `IOClass`: `IOUserService`
+    - `IOMatchCategory`: `CentauriControlSystemEvents`
+    - `IONameMatch`: `AirshipDriverDKControl`
+    - `IOProviderClass`: `IOUserService`
+    - `IOUserClass`: `CentauriControlSystemEvents`
+    - `IOUserServerName`: `com.apple.driver.AppleCentauriControl`
+    - `IOUserServerOneProcess`: `True`
+  - `CentauriDebugControl`:
+    - `CFBundleIdentifierKernel`: `com.apple.kpi.iokit`
+    - `CoreCaptureIOServiceProperties`:
+      - `CCCaptureIOServiceProperties`:
+        - `IOClass`: `CCIOService`
+        - `IOUserClass`: `CCIOService`
+      - `CoreCaptureDataPipeUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `CCDataPipeUserClient`
+      - `CoreCaptureLogPipeUserClientProperties`:
+        - `IOClass`: `IOUserUserClient`
+        - `IOUserClass`: `CCLogPipeUserClient`
+      - `CoreCaptureStreamProperties`:
+        - `IOClass`: `CCIOService`
+        - `IOUserClass`: `CCIOService`
+      - `IOClass`: `CCIOService`
+      - `IOUserClass`: `CCIOService`
+    - `DebugNubs`:
+      - `CCPluginNubControl`:
+        - `ControlDebugRing0`:
+          - `InPlaceCompletion`: `True`
+          - `TRBufSize`: `4096`
+          - `TRName`: `coexlogger-rx`
+          - `TRSize`: `4`
+          - `bufferTypeFooter`: `False`
+          - `isEnabled`: `True`
+    - `IOClass`: `IOUserService`
+    - `IOMatchCategory`: `CentauriDebugControl`
+    - `IONameMatch`: `AirshipDriverDKControl`
+    - `IOProviderClass`: `IOUserService`
+    - `IOUserClass`: `CentauriDebug`
+    - `IOUserServerName`: `com.apple.driver.AppleCentauriControl`
+    - `IOUserServerOneProcess`: `True`
+    - `LoggingProperties`:
+      - `DirectoryName`: `MultiFunctionManager`
+      - `LogFileName`: `CentauriControlDebugLogs`
+      - `LogIdentifier`: `CentauriDebugControl`
+      - `Owner`: `com.apple.driver.AppleCentauriControl`
+    - `NubProperties`:
+      - `IOClass`: `IOUserService`
+      - `IOUserClass`: `CentauriDebugNub`
+    - `TransportResources`:
+      - `AirshipResources`:
+        - `coexlogger`
+  - `CoProcBinaryLoggerControl`:
+    - `CFBundleIdentifierKernel`: `com.apple.kpi.iokit`
+    - `IOClass`: `IOUserService`
+    - `IOMatchCategory`: `CoProcBinaryLoggerControl`
+    - `IONameMatch`: `AirshipDriverDKControl`
+    - `IOProviderClass`: `IOUserService`
+    - `IOUserClass`: `CoProcBinaryLogger`
+    - `IOUserServerName`: `com.apple.driver.AppleCentauriControl`
+    - `IOUserServerOneProcess`: `True`
+- `OSBundleUsageDescription`: ``
+- `OSMinimumDriverKitVersion`: `27.2`

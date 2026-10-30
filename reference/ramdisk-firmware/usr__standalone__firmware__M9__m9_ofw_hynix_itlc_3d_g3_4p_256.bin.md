@@ -1,0 +1,292 @@
+# `usr/standalone/firmware/M9/m9_ofw_hynix_itlc_3d_g3_4p_256.bin`
+
+- File size: 393,216 bytes
+
+## Payload [FW]
+
+- Size after IM4P unwrap / decompression: 393,216 bytes
+- Format: raw binary
+
+## Identity strings (versions, build tags) [FW]
+
+- `AppleMSPS4-80.51~1`
+
+## Strings (273) [FW]
+
+Printable runs of 6+ characters with at least three letters, in file order, with payload offset. For RTKit co-processor firmware these are the log formats, task names, endpoint names and assertions that describe what the processor does.
+
+```
+00000231  V.bFWUE
+00000664  WIMHHP01@
+00000670  m9_msp_core_hynix_itlc_3d_g3_4p_256-80.51.0
+000014bd  F60AFZFSF
+000014d0   F2FSF
+00001530  BToCFWLDETOC@
+000017e7  fhFAFO
+00001894  m9_msp_rom_extension-80.51.0
+000018f8  app_main
+000025d0  Undefined
+000025e0  Software Int
+000025f0  Prefetch Abort
+00002600  Data Abort
+00002610  Reserved Exception
+00002682  hFqFzF
+00003953   1F*FCF
+00003c5f   1F*FCF
+00003ca3   1F*FCF
+00004167  ` FAF*F,
+00004611  A(L(MBX"
+00004f13  1!a`akK
+00004f43  0 aaa'
+00005aed  CJr+CK`
+000062a8  uH(ala,F%
+00006631  pHb)ihk
+000066bc  (DQFBF
+00006712  (DAFRF
+00006a2e  EaXF!hbh
+00006acb  `WHTI$0
+00008672  DCA!\J
+00009e6b  tDPtL\e
+00009f2a  ,`OLt`
+00009f6b  3kPCK3c
+00009f7b  #kP@Ksc
+0000a2c4  /HAoqEqF(
+0000a2ec  %HAnqEqF(
+0000a483  09CCN:H
+0000a6be  SHD]D,
+0000ab1f  FpS FJF
+0000ab31  h`haiC
+0000b2ff  rIhA`pG
+0000b572  &u Fix
+0000b6b6   FQFuF
+0000b6c2   FAFZF
+0000c61c  0FQFBF#F
+0000c65a  0FQFBF
+0000c6f6  EtYxEs
+0000c8a6  30LFmh4`
+0000d316  HF)FZF3F
+0000d78f  g FYF2F
+0000eb49  F hEhGH
+0000ecd6  fh "5MPF)F
+000106a8  0F)FBF
+00011403  FPF1F#F
+000123b6  0F)FBF
+0001248a  YF"FCF
+00012a46  WJU\NIo
+00012bc1  FMN"hMI
+00013164  `B)hhhB
+00013fa9  RLJ+hnh
+00014118  FHENCI
+00014a02  PFYF.F
+0001592d  a1arxO
+00015f25  2*a(aia
+000160be  wN{K3a0a{H{Kta
+000160f7   (bpH0aO
+00016109   palHAh!
+00016303  2bE.F#FIF
+00016507  kAF+F@
+0001653a  d nIPC
+000175ba  J`fIgJ
+000181a0  oJ3FsI
+00018226  YL FYI
+0001929a   hWMah(C
+00019dbb  BBBBBBBB
+00019e09  F(FQFBF
+0001a60d  6bLkKo
+0001b35b  9^qFF16[y&`
+0001c3b1  FPLMHNI
+0001c93d  (,ana!
+0001d28a   FQFBF
+0001d3fb  rpp0F0
+0001e839  h!xbxo
+0001e866  @hAFbx
+0001eec7  GEIs1#h`h)`O
+0001f561  p$HAhA
+0001f7eb  L\mGGGGGG
+00020798  EBTCBToC
+0002119b  Fhh1IO
+00021935  h!`Aha`
+00021945  i!aAiaa
+00021cfc   FQF*F3F
+00022707  GmJlKu2
+000227d8  Rhqy+`O
+000230a0  J`[FBh
+00023637   (tjF(F
+00023860   FQF*F[F
+00023b54  PFBF3F
+00023f90  (F1F"FCF
+000249b2  :M.ala
+00024a34  (F!FZFCF
+00024a49  `(FZFCF
+00024ae2   F1F*FCF
+00024bae  *ahaPF
+00024f51  `0`qhp`
+00025998  AHM0 `
+00025b8c  rKqJv2
+000266cc  (FYF%F
+000267dd   AFSFO
+0002684d  F'H'LYhJh
+00026be8  )FBmCn
+00026bfa  1}DJs}
+0002806d  Pqh.3#`!`
+00028092  phcI!`
+000282b4  dDe]5T
+00028721  Be`OME
+0002887c  'M%I%Jhh
+00028959   pe0fud
+00028aa9  22M2Kah h
+00028e5b  `M`cm%nbl+C
+00028f3b   putcrb1
+000290db  1)`h`ahA
+0002943c  PF1F*FCF
+00029777  2BafFO
+00029b76  +j0Fjj
+00029ef0   F1FRFCF
+0002aab2  - AppG
+0002ac88  YLUI h
+0002b23e  )oho!D
+0002b398  X` FAF]
+0002c501  F hbhO
+0002cbf3  F^aVho
+0002cf3a  X"!iPCO
+0002d0a5  D `)hnh
+0002d4b6  RHJMLN
+0002dd12   FYF0D*F
+0002e58e  1h Frh
+0002e992  (yiy*zmi
+0002e9d4  0yqy2zvi
+0002ebf7  b,c3Mmh
+0002ec13  <^`VFP
+0002f536  GM,hhh @
+0002fcc3  eae$"!b
+00030196  QHOINJ
+000301ba  HHEIFJ
+00030224  -H+J)IDb
+00030254  !HDe F
+0003058c  pMnI(h
+00030933  h1F(hZF$
+00031142  AFmLdN h
+00031160  ^HEFfJ
+000311e2  AHCF;I
+00031519  C*`lhY
+00031944  BHSF:I3J
+00031cd0  PF!FBF
+00031d12  PF!FBF
+00032492  50(cjb
+00032884  TUUU0333
+00032d28  RIVFRJ
+00032f07  MvF(xc@
+00033bcc  (xkxjj
+00033ce6   x*Fax
+00033cf0   x*Fax
+000340b2  PFC!F"CF
+0003455f  FmF`x)
+00034a3a   i!Fbi
+00034a58   i!Fbi
+00034ac2  p`"xax
+0003519b  !P`ie*lkl
+00035530  EJH`1l
+00035ac5  !)p,yni
+00035b4a  XF1FBF
+00035c06   i!Fbj
+00035cf2   i!Fbj
+0003635d  Fhx(N0D
+000369bc   xaxBF
+00036a59  `H` xax
+00036b39  b xax-N
+0003760d  b xax$N
+00037728   xax*F
+00037732   x*Fax
+00038318  pGpGpG
+00038585  hRhX@Q@
+00038ea6  2FVF,`
+00039080  SHTJUI
+00039b56  JJJK h
+00039d28  QFBF3F
+00039e82  )FRF3F
+0003a034  )FBF3F
+0003ba20  5FPhVF
+0003c557  "PFAF#F
+0003d15b  m0F)FRF
+0003d5ed  H!FBmPF
+0003d701   HKAMCL
+0003df63  `sLlH%hjL `%`
+0003e0fb  dXF)F2F#F
+0003e1ce  JxBqIyAr
+0003e2ab  h>iAF*F3F
+0003e2b8  xiAF*F3F
+0003e3d8  xiAFZFSF
+0003eb6f  0LMIJ.hGM*`.`
+0003f44a  bl hah;K
+00040d75  FPF2F#F
+00041218  @FTxVF
+000419e6  uHrJqI
+00041a22  fHdEcJaI
+00041a60  VHTJRI
+00041a82  NH\EKJII
+00041d5e  r]XFQF
+00041fd5  +iMiH4h
+000431b0   hSFah
+000436c8  #$%&'DEF()*+,-./0123456789:;<=>?@AGBC
+0004374f   $(,048<@DHLP`lpt
+000438f8  REXTFWLDR5FWXTRAPTSDHBTCPBBT$4BDBToC
+00043ec8  AppleMspAsiDriver-1.80
+00044033  KLMNOPQSU
+00044093  012ABC
+000461d8  c.'>*GAq{g
+00046207  lEq0E"
+00046250  ffffffff
+000462d8  UUUUUUUU
+000462f0  m9_msp_core_hynix_itlc_3d_g3_4p_256-80.51.0
+000467d0  M9_MSP_A0
+00046840  app_main
+00046850  ASI Device Info
+00046860  itlc_3d_v4_4p_256
+00046888  AppleMSPS4-80.51~1
+0004d7db   !"0@PRTXYZ`p
+0004d878  APJ;AxJkA
+0004d886  J3B(JCB
+0004e1d8  DCCBCCC
+0004e211  DDD$"""
+0004e299  DDDD"""
+000518c5  a(j D(bhF
+00051b6d  !1dqdo
+0005262b   2D<HSF
+00052770  :Nqm:J
+000534b9  DKk)Fpm
+00053c10  def_appl_ext
+00054bc0  pts_update_ext
+000551a3  `PDBh F1F
+000551bc  (h!FPDBh0F
+00055560  TLVU}`
+000555d0  tlv_utils_ext
+00055c64   FZF+F
+00055e5c  cpc_ut_ext
+0005601b  hETOC>
+0005667c  pG`GpG
+00056e2d  F^Heh "
+0005765c  ";DNNXCH
+00058322  1h Frh
+00058cc8  5`jMe`
+00058d19  #sPZKcc
+00059bda  +a*a)aha"
+00059c01  !ON1qOL x
+0005a1f3  aYaVIVJ
+0005a4ff  !``qHqM
+0005a523  QD`ZPO
+0005a806  (chcHj
+0005aa57  riqVI(q
+0005abb0  OFWB@ 
+0005af5b  rhp(F0
+0005dafc  pGpGpG
+0005dd69  hRhX@Q@
+0005dfed  !4"ClPF
+0005e7ec  m9_msp_fw_loader_hynix_itlc_3d_g3_4p_256-80.51.0
+0005e938  #$%&'DEF()*+,-./0123456789:;<=>?@AGBC
+0005e9b0  REXTFWLDR5FWXTRAPTSDHBTCPBBT$4BDBToC
+0005ea5c  AppleMspAsiDriver-1.80
+0005ec68  app_main
+0005ee90  DCCBCCC
+0005eec9  DDD$"""
+0005ef51  DDDD"""
+```

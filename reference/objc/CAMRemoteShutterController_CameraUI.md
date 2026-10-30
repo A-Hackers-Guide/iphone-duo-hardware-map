@@ -1,0 +1,222 @@
+# `CAMRemoteShutterController`
+
+- Image: [`/System/Library/PrivateFrameworks/CameraUI.framework/CameraUI`](../userland/System__Library__PrivateFrameworks__CameraUI.framework__CameraUI.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `CCCameraConnectionDelegate`
+- 29 instance variables, 34 properties, 138 instance methods, 0 class methods
+
+## Instance variables
+
+```
+B _showingPreview;
+B _sharedLibrarySupported;
+B _capturingVideo;
+B _capturingTimelapse;
+B _personalPhotographerSupported;
+B _personalPhotographerEnabled;
+B _currentZoomMagnificationAllowed;
+B _currentlyEmulatingMulticam;
+B _isForeground;
+@"CAMCaptureGraphConfiguration" _currentGraphConfiguration;
+@"NSArray" _availableCaptureModes;
+q _captureMode;
+q _captureDevice;
+q _flashMode;
+q _hdrMode;
+q _irisMode;
+q _sharedLibraryMode;
+d _zoomAmount;
+d _zoomFactor;
+q _shallowDepthOfFieldStatus;
+q _stereoCaptureStatus;
+Q _personalPhotographerStatus;
+q _personalPhotographerSessionTimerState;
+@"<CAMRemoteShutterDelegate>" _delegate;
+@"CCCameraConnection" _connection;
+@"CAMMotionController" __motionController;
+q _currentResolvedDevice;
+@"NSArray" _currentContinuousZoomFactors;
+@"NSArray" _currentContinuousDisplayZoomFactors;
+```
+
+## Properties
+
+```
+@property (T@"CCCameraConnection",&,N,V_connection) connection;
+@property (T@"CAMMotionController",R,N,V__motionController) _motionController;
+@property (TB,N,V_currentZoomMagnificationAllowed) currentZoomMagnificationAllowed;
+@property (Tq,N,V_currentResolvedDevice) currentResolvedDevice;
+@property (TB,N,V_currentlyEmulatingMulticam) currentlyEmulatingMulticam;
+@property (T@"NSArray",&,N,V_currentContinuousZoomFactors) currentContinuousZoomFactors;
+@property (T@"NSArray",&,N,V_currentContinuousDisplayZoomFactors) currentContinuousDisplayZoomFactors;
+@property (TB,N,V_isForeground) isForeground;
+@property (TB,R,N,GisConnected) connected;
+@property (TB,N,GisShowingPreview,V_showingPreview) showingPreview;
+@property (T@"CAMCaptureGraphConfiguration",&,N,V_currentGraphConfiguration) currentGraphConfiguration;
+@property (T@"NSArray",&,N,V_availableCaptureModes) availableCaptureModes;
+@property (Tq,N,V_captureMode) captureMode;
+@property (Tq,N,V_captureDevice) captureDevice;
+@property (Tq,N,V_flashMode) flashMode;
+@property (Tq,N,V_hdrMode) hdrMode;
+@property (Tq,N,V_irisMode) irisMode;
+@property (TB,N,V_sharedLibrarySupported) sharedLibrarySupported;
+@property (Tq,N,V_sharedLibraryMode) sharedLibraryMode;
+@property (Td,N,V_zoomAmount) zoomAmount;
+@property (Td,N,V_zoomFactor) zoomFactor;
+@property (Tq,N,V_shallowDepthOfFieldStatus) shallowDepthOfFieldStatus;
+@property (Tq,N,V_stereoCaptureStatus) stereoCaptureStatus;
+@property (TB,N,GisCapturingVideo,V_capturingVideo) capturingVideo;
+@property (TB,N,GisCapturingTimelapse,V_capturingTimelapse) capturingTimelapse;
+@property (TB,N,V_personalPhotographerSupported) personalPhotographerSupported;
+@property (TB,N,V_personalPhotographerEnabled) personalPhotographerEnabled;
+@property (TQ,N,V_personalPhotographerStatus) personalPhotographerStatus;
+@property (Tq,N,V_personalPhotographerSessionTimerState) personalPhotographerSessionTimerState;
+@property (T@"<CAMRemoteShutterDelegate>",W,N,V_delegate) delegate;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[CAMRemoteShutterController _displayZoomValueForZoomFactor:];
+-[CAMRemoteShutterController isCapturingTimelapse];
+-[CAMRemoteShutterController stereoCaptureStatus];
+-[CAMRemoteShutterController hdrMode];
+-[CAMRemoteShutterController _currentMode];
+-[CAMRemoteShutterController personalPhotographerEnabled];
+-[CAMRemoteShutterController shallowDepthOfFieldStatus];
+-[CAMRemoteShutterController setShallowDepthOfFieldStatus:];
+-[CAMRemoteShutterController isCapturingVideo];
+-[CAMRemoteShutterController _zoomFactorForDisplayZoomValue:];
+-[CAMRemoteShutterController setAvailableCaptureModes:];
+-[CAMRemoteShutterController _motionController];
+-[CAMRemoteShutterController isConnected];
+-[CAMRemoteShutterController sendThumbnailData:isVideo:];
+-[CAMRemoteShutterController cameraConnectionStopPersonalPhotographerSession:];
+-[CAMRemoteShutterController setSharedLibrarySupported:];
+-[CAMRemoteShutterController availableCaptureModes];
+-[CAMRemoteShutterController _enterBackground:];
+-[CAMRemoteShutterController setPersonalPhotographerEnabled:];
+-[CAMRemoteShutterController setCaptureDevice:];
+-[CAMRemoteShutterController irisMode];
+-[CAMRemoteShutterController setCapturingTimelapse:];
+-[CAMRemoteShutterController setPanoramaDirection:];
+-[CAMRemoteShutterController didPauseCaptureTimerWithPauseTime:];
+-[CAMRemoteShutterController zoomFactor];
+-[CAMRemoteShutterController cameraConnectionPersonalPhotographerMode:];
+-[CAMRemoteShutterController createConnectionIfNecessary];
+-[CAMRemoteShutterController cameraConnectionZoomSupport:];
+-[CAMRemoteShutterController setZoomFactor:];
+-[CAMRemoteShutterController setCurrentContinuousZoomFactors:];
+-[CAMRemoteShutterController cameraConnection:setFocusPoint:];
+-[CAMRemoteShutterController currentContinuousZoomFactors];
+-[CAMRemoteShutterController currentGraphConfiguration];
+-[CAMRemoteShutterController setCurrentContinuousDisplayZoomFactors:];
+-[CAMRemoteShutterController sharedLibraryMode];
+-[CAMRemoteShutterController setIsForeground:];
+-[CAMRemoteShutterController setShowingPreview:];
+-[CAMRemoteShutterController _convertPanoramaDirection:];
+-[CAMRemoteShutterController cameraConnectionBeginBurstCapture:];
+-[CAMRemoteShutterController cameraConnectionIrisSupport:];
+-[CAMRemoteShutterController burstCaptureNumberOfPhotosDidChange:];
+-[CAMRemoteShutterController _convertMode:];
+-[CAMRemoteShutterController cameraConnectionPersonalPhotographerSupport:];
+-[CAMRemoteShutterController cameraConnectionStartPersonalPhotographerSession:];
+-[CAMRemoteShutterController cameraConnectionZoomAmount:];
+-[CAMRemoteShutterController captureDevice];
+-[CAMRemoteShutterController cameraConnectionEndBurstCapture:];
+-[CAMRemoteShutterController cameraConnectionHDRSupport:];
+-[CAMRemoteShutterController currentContinuousDisplayZoomFactors];
+-[CAMRemoteShutterController cameraConnection:setHDRMode:];
+-[CAMRemoteShutterController dealloc];
+-[CAMRemoteShutterController cameraConnectionIrisMode:];
+-[CAMRemoteShutterController didResumeCaptureTimerWithNewStartTime:];
+-[CAMRemoteShutterController cameraConnectionBurstSupport:];
+-[CAMRemoteShutterController cameraConnectionStopCapture:];
+-[CAMRemoteShutterController didStopCapture];
+-[CAMRemoteShutterController _enterForeground:];
+-[CAMRemoteShutterController cameraConnectionSupportedCaptureDevices:];
+-[CAMRemoteShutterController cameraConnectionMinimumZoomMagnification:];
+-[CAMRemoteShutterController personalPhotographerStatus];
+-[CAMRemoteShutterController isForeground];
+-[CAMRemoteShutterController setCapturingVideo:];
+-[CAMRemoteShutterController cameraConnectionSignificantZoomMagnifications:];
+-[CAMRemoteShutterController initWithCaptureConfiguration:motionController:];
+-[CAMRemoteShutterController setSharedLibraryMode:];
+-[CAMRemoteShutterController cameraConnectionStartCapture:];
+-[CAMRemoteShutterController setStereoCaptureStatus:];
+-[CAMRemoteShutterController cameraConnectionSupportedCaptureModes:];
+-[CAMRemoteShutterController cameraConnectionSupportsMomentCapture:];
+-[CAMRemoteShutterController personalPhotographerSessionTimerState];
+-[CAMRemoteShutterController setCurrentZoomMagnificationAllowed:];
+-[CAMRemoteShutterController setZoomAmount:];
+-[CAMRemoteShutterController setPersonalPhotographerStatus:];
+-[CAMRemoteShutterController cameraConnection:setZoomMagnificationAmount:];
+-[CAMRemoteShutterController setCaptureMode:];
+-[CAMRemoteShutterController cameraConnectionPersonalPhotographerStatus:];
+-[CAMRemoteShutterController cameraConnectionToggleCameraDeviceSupport:];
+-[CAMRemoteShutterController sendThumbnailImage:isVideo:];
+-[CAMRemoteShutterController setPersonalPhotographerSessionTimerState:];
+-[CAMRemoteShutterController setDelegate:];
+-[CAMRemoteShutterController zoomAmount];
+-[CAMRemoteShutterController cameraConnectionFlashSupport:];
+-[CAMRemoteShutterController didStartCaptureTimer];
+-[CAMRemoteShutterController currentlyEmulatingMulticam];
+-[CAMRemoteShutterController _captureOrientationDidChange:];
+-[CAMRemoteShutterController cameraConnection:setSharedLibraryMode:];
+-[CAMRemoteShutterController cameraConnectionCaptureMode:];
+-[CAMRemoteShutterController captureMode];
+-[CAMRemoteShutterController applyCaptureConfiguration:];
+-[CAMRemoteShutterController cameraConnection:setIrisMode:];
+-[CAMRemoteShutterController setCurrentGraphConfiguration:];
+-[CAMRemoteShutterController cameraConnection:setCaptureDevice:];
+-[CAMRemoteShutterController setHdrMode:];
+-[CAMRemoteShutterController cameraConnectionSuspend:];
+-[CAMRemoteShutterController cameraConnectionToggleCameraDevice:];
+-[CAMRemoteShutterController cameraConnectionSharedLibraryMode:];
+-[CAMRemoteShutterController isShowingPreview];
+-[CAMRemoteShutterController countdownCanceled];
+-[CAMRemoteShutterController connection];
+-[CAMRemoteShutterController setFlashMode:];
+-[CAMRemoteShutterController cameraConnectionCurrentZoomMagnification:];
+-[CAMRemoteShutterController cameraConnectionIsMirrored:];
+-[CAMRemoteShutterController setIrisMode:];
+-[CAMRemoteShutterController burstCaptureWillStart];
+-[CAMRemoteShutterController delegate];
+-[CAMRemoteShutterController cameraConnectionHDRMode:];
+-[CAMRemoteShutterController cameraConnection:setFlashMode:];
+-[CAMRemoteShutterController cameraConnectionSharedLibrarySupport:];
+-[CAMRemoteShutterController setCurrentResolvedDevice:];
+-[CAMRemoteShutterController setConnection:];
+-[CAMRemoteShutterController cameraConnectionCancelCountdown:];
+-[CAMRemoteShutterController cameraConnectionMaximumZoomMagnification:];
+-[CAMRemoteShutterController _currentCaptureDevice];
+-[CAMRemoteShutterController _reevaluateConnectionOpenState];
+-[CAMRemoteShutterController sharedLibrarySupported];
+-[CAMRemoteShutterController flashMode];
+-[CAMRemoteShutterController currentResolvedDevice];
+-[CAMRemoteShutterController setPersonalPhotographerSupported:];
+-[CAMRemoteShutterController cameraConnectionCaptureDevice:];
+-[CAMRemoteShutterController didStopPersonalPhotographerCapture];
+-[CAMRemoteShutterController willStartCapturing];
+-[CAMRemoteShutterController _sendMode];
+-[CAMRemoteShutterController cameraConnection:setCaptureMode:];
+-[CAMRemoteShutterController personalPhotographerSupported];
+-[CAMRemoteShutterController cameraConnectionZoomMagnificationSupport:];
+-[CAMRemoteShutterController cameraConnectionPauseCapture:];
+-[CAMRemoteShutterController currentZoomMagnificationAllowed];
+-[CAMRemoteShutterController cameraConnectionOrientation:];
+-[CAMRemoteShutterController burstCaptureDidStop];
+-[CAMRemoteShutterController _refreshZoomMagnificationState];
+-[CAMRemoteShutterController willStartPersonalPhotographerCapture];
+-[CAMRemoteShutterController cameraConnectionFlashMode:];
+-[CAMRemoteShutterController _convertCaptureDevice:];
+-[CAMRemoteShutterController setCurrentlyEmulatingMulticam:];
+-[CAMRemoteShutterController cameraConnection:takePhotoWithCountdown:];
+-[CAMRemoteShutterController cameraConnection:setZoomAmount:];
+-[CAMRemoteShutterController cameraConnectionIsShowingLivePreview:];
+-[CAMRemoteShutterController cameraConnectionResumeCapture:];
+```

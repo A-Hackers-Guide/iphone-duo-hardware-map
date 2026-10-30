@@ -1,0 +1,217 @@
+# `usr/standalone/firmware/DP875/iPad16,5_LGD_70.bin`
+
+- File size: 8,388,608 bytes
+
+## Payload [FW]
+
+- Size after IM4P unwrap / decompression: 8,388,608 bytes
+- Format: raw binary
+
+## Strings (202) [FW]
+
+Printable runs of 6+ characters with at least three letters, in file order, with payload offset. For RTKit co-processor firmware these are the log formats, task names, endpoint names and assertions that describe what the processor does.
+
+```
+0000404d  Apple Display
+00006b3c  =PA"=PBG=PC
+00006b54  =PG.=PHt=PIQ=PJ
+00006b64  =PKE=PL
+00006b6c  =PMh=PN
+00006b80  =PR\=PSt=@L
+00014004  xmd`[XTQNKHFDDCCCBBNXbjrtvwy{|
+00014024  xmd`[XTQNKHFDDCCCBBNXbjrtvwy{|
+00014044  xmd`[XTQNKHFDDCCCBBNXbjrtvwy{|
+00014064  xmd`[XTQNKHFDDCCCBBNXbjrtvwy{|
+00014084  xmd`[XTQNKHFDDCCCBBNXbjrtvwy{|
+000140a4  xmd`[XTQNKHFDDCCCBBNXbjrtvwy{|
+0002110f  dis01t
+00021194  dis11t
+00021219  dis21t
+0002129e  dis31t
+000214d0  MANP1p
+00021551  OBJP1&
+000215f5  {fGOflL
+000232ab  +pGpGpGpGuF
+0002346b  @timeout1: 
+00023483  @timeout2: 
+00023bc8  INFO: 
+00023bd0  WRSR()
+00023d07  @timeout1:
+00023d1c  timeout2:
+0002422c  bKZlbK
+0002427a  @sNLcd
+0002445f  @OTP  
+00024468  load fail
+0002456c  INFO: 
+00024574  Quad Mode Enabled
+000245eb  @ERROR: 
+000245f4  SPITimeout
+00024663  @ERROR: 
+0002466c  SPIStatusErr
+000249f3  @New API: 
+00024b4f  y-IIy@
+00024c18  EraseErr:
+00024e14  EraseErr:
+000250af  @Addr: 
+000250c3  @DITHr: 
+000250d4  MDBVR: 
+0002522c  INFO: 
+00025234  OTPInit:
+00025241  OTPAddr0: 
+00025255  OTPAddr1: 
+00025261  OTPAddr2: 
+000254d1  Version: 
+00025655  y#IIy@
+000256c8  INFO: 
+000256d0  DownloadFW:
+00025704  EraseErr:
+0002581f  y IIy@
+00025894  INFO: 
+000258a8  CmdOK:
+0002590f  y<IIy@
+00025a18  EraseErr:
+00025af9  yGIIy@
+00025c30  CFGErr:
+00025c3c  EraseErr:
+00025e90  BoardID: 
+00025ea8  PVID: 
+00025ed9  DPCD429: 
+00025ee5  FW Version: 
+00026060  INFO: 
+00026068  WrErr:
+00026198  INFO: 
+000261a0  RdErr:
+00026293  H@\PTH
+0002668c  INFO: 
+00026694  GetInfo
+00026754  INFO: 
+0002675c  SetInfo
+00026795  yaIIy@
+0002680d  `1FDHzh
+00026869  `1F/Hzh
+00026988  RdErr:
+00026a8f  @Addr: 
+00026aa0    Off: 
+00026b24  API Status: 
+00026ce0  DITHw: 
+00026cf3  @MDBVW: 
+00026ee4  INFO: 
+00026eec  OTPInit:
+00026ef9  OTPAddr0: 
+00026f0d  OTPAddr1: 
+00026f19  OTPAddr2: 
+00026f38  OTP_PROG_ERR:
+00026f48  AlreadyProgrammed:
+0002732d  yKIIy@
+000274ec  WrErr:
+00027560  0123456789abcdefError Format
+0002b1e8  =PW#=PW3=PWC=PWS>@o
+0004e10f  dis01t
+0004e194  dis11t
+0004e219  dis21t
+0004e29e  dis31t
+0004e4d0  MANP1p
+0004e551  OBJP1&
+0004e5f5  {fGOflL
+000502ab  +pGpGpGpGuF
+0005046b  @timeout1: 
+00050483  @timeout2: 
+00050bc8  INFO: 
+00050bd0  WRSR()
+00050d07  @timeout1:
+00050d1c  timeout2:
+0005122c  bKZlbK
+0005127a  @sNLcd
+0005145f  @OTP  
+00051468  load fail
+0005156c  INFO: 
+00051574  Quad Mode Enabled
+000515eb  @ERROR: 
+000515f4  SPITimeout
+00051663  @ERROR: 
+0005166c  SPIStatusErr
+000519f3  @New API: 
+00051b4f  y-IIy@
+00051c18  EraseErr:
+00051e14  EraseErr:
+000520af  @Addr: 
+000520c3  @DITHr: 
+000520d4  MDBVR: 
+0005222c  INFO: 
+00052234  OTPInit:
+00052241  OTPAddr0: 
+00052255  OTPAddr1: 
+00052261  OTPAddr2: 
+000524d1  Version: 
+00052655  y#IIy@
+000526c8  INFO: 
+000526d0  DownloadFW:
+00052704  EraseErr:
+0005281f  y IIy@
+00052894  INFO: 
+000528a8  CmdOK:
+0005290f  y<IIy@
+00052a18  EraseErr:
+00052af9  yGIIy@
+00052c30  CFGErr:
+00052c3c  EraseErr:
+00052e90  BoardID: 
+00052ea8  PVID: 
+00052ed9  DPCD429: 
+00052ee5  FW Version: 
+00053060  INFO: 
+00053068  WrErr:
+00053198  INFO: 
+000531a0  RdErr:
+00053293  H@\PTH
+0005368c  INFO: 
+00053694  GetInfo
+00053754  INFO: 
+0005375c  SetInfo
+00053795  yaIIy@
+0005380d  `1FDHzh
+00053869  `1F/Hzh
+00053988  RdErr:
+00053a8f  @Addr: 
+00053aa0    Off: 
+00053b24  API Status: 
+00053ce0  DITHw: 
+00053cf3  @MDBVW: 
+00053ee4  INFO: 
+00053eec  OTPInit:
+00053ef9  OTPAddr0: 
+00053f0d  OTPAddr1: 
+00053f19  OTPAddr2: 
+00053f38  OTP_PROG_ERR:
+00053f48  AlreadyProgrammed:
+0005432d  yKIIy@
+000544ec  WrErr:
+00054560  0123456789abcdefError Format
+000581e8  =PW#=PW3=PWC=PWS>@o
+00066b3c  =PA"=PBG=PC
+00066b54  =PG.=PHt=PIQ=PJ
+00066b64  =PKE=PL
+00066b6c  =PMh=PN
+00066b80  =PR\=PSt=@L
+001f4014  wPPwPPwPPwPPwPPwPP
+001f40a4  wPPwPPwPPwPPwPPwPP
+001f4a34  wTTwTTwTTwTTwTTwTT
+001f4ac4  wTTwTTwTTwTTwTTwTT
+001f5454  wppwppwppwppwppwpp
+001f54e4  wppwppwppwppwppwpp
+00579048  @PAPAXCXCZ
+005790eb  IBIBKJKJk
+0057912c  AJIJIKI[
+005791d4  kekm{m{}
+0057923a  BDE$VAU
+00579252  D"C$S$U#&DeBU&U6"
+00579272  F"c$3F3VfBfCfSg5
+005792d8  3\lB<FfY=V("#
+005792ec  j!Z#Z3j$Z&f9[6fJZf^cwi
+0057943a  BDE$VAU
+00579452  D"C$S$U#&DeBU&U6"
+00579472  F"c$3F3VfBfCfSg5
+005794d8  3\lB<FfY=V("#
+005794ec  j!Z#Z3j$Z&f9[6fJZf^cwi
+00603cc0  '2Wksc
+```

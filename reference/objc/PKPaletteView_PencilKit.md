@@ -1,0 +1,276 @@
+# `PKPaletteView`
+
+- Image: [`/System/Library/Frameworks/PencilKit.framework/PencilKit`](../userland/System__Library__Frameworks__PencilKit.framework__PencilKit.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `UIView`
+- Protocols: `PKPaletteViewStateSubject`, `PKPaletteHostViewDelegate`, `PKPaletteHostingWindowSceneObserver`, `PKPalettePopoverPresenting`, `PKPalettePopoverDismissing`
+- 44 instance variables, 57 properties, 147 instance methods, 2 class methods
+
+## Instance variables
+
+```
+B _autoHideEnabled;
+B _shouldStartUpMinimized;
+B _shouldExpandFromCorner;
+B _shadowVisible;
+B _shouldAdjustShadowRadiusForMinimized;
+B _ignoresSafeAreaInsetsInCompactSize;
+B _draggingEnabled;
+B __shouldTrackHoverLocationForPencilTapActions;
+B _toolPreviewMinimized;
+@"UIViewController" _palettePopoverPresentingController;
+@"<PKPaletteViewDelegate>" _delegate;
+q _palettePosition;
+d _paletteScaleFactor;
+@"UIViewController" _presentationController;
+@"UIView" _backgroundMaterialView;
+d _compactPaletteHeight;
+@"PKPaletteScaleFactorPolicy" _paletteScaleFactorPolicy;
+d _shadowOpacity;
+d _shadowRadius;
+@"UIScrollView" _contentScrollView;
+Q _lastEdgeLocation;
+@"<PKPaletteViewHosting>" _paletteViewHosting;
+@"<PKPaletteViewInternalDelegate>" _internalDelegate;
+@"<PKPaletteViewHoverDelegate>" _hoverDelegate;
+Q _autoHideCorner;
+@"UIView" _clippingView;
+@"PKPaletteContainerView" _containerView;
+@"NSLayoutConstraint" _paletteContainerWidthConstraint;
+@"NSLayoutConstraint" _paletteContainerHeightConstraint;
+@"NSLayoutConstraint" _paletteContainerCenterXConstraint;
+@"NSLayoutConstraint" _paletteContainerCenterYConstraint;
+@"NSLayoutConstraint" _paletteContainerCompactTopConstraint;
+@"NSLayoutConstraint" _paletteContainerCompactBottomConstraint;
+@"NSLayoutConstraint" _paletteContainerCompactLeftConstraint;
+@"NSLayoutConstraint" _paletteContainerCompactRightConstraint;
+@"PKPaletteToolPreview" _toolPreview;
+@"NSLayoutConstraint" _toolPreviewCenterXConstraint;
+@"NSLayoutConstraint" _toolPreviewCenterYConstraint;
+@"NSLayoutConstraint" _toolPreviewWidthConstraint;
+@"NSLayoutConstraint" _toolPreviewHeightConstraint;
+Q _lastPaletteEdgePositionWhileDragging;
+{UIEdgeInsets="top"d"left"d"bottom"d"right"d} _palettePopoverLayoutSceneMargins;
+{CGRect="origin"{CGPoint="x"d"y"d}"size"{CGSize="width"d"height"d}} _adjustedWindowSceneBounds;
+{NSDirectionalEdgeInsets="top"d"leading"d"bottom"d"trailing"d} _edgeInsetsInCompactSize;
+```
+
+## Properties
+
+```
+@property (TQ,N,V_lastEdgeLocation) lastEdgeLocation;
+@property (T@"<PKPaletteViewHosting>",W,N,V_paletteViewHosting) paletteViewHosting;
+@property (T@"<PKPaletteViewInternalDelegate>",W,N,V_internalDelegate) internalDelegate;
+@property (T@"<PKPaletteViewHoverDelegate>",W,N,V_hoverDelegate) hoverDelegate;
+@property (TB,N,S_setShouldTrackHoverLocationForPencilTapActions:,V__shouldTrackHoverLocationForPencilTapActions) _shouldTrackHoverLocationForPencilTapActions;
+@property (TQ,N,V_autoHideCorner) autoHideCorner;
+@property (TB,N,GisToolPreviewMinimized,V_toolPreviewMinimized) toolPreviewMinimized;
+@property (Td,R,N) minimizedPaletteSizeScaleFactor;
+@property (TB,R,N) toolPreviewMatchesExpandedTool;
+@property (T@"UIView",R,N,V_clippingView) clippingView;
+@property (T@"PKPaletteContainerView",R,N,V_containerView) containerView;
+@property (T@"NSLayoutConstraint",&,N,V_paletteContainerWidthConstraint) paletteContainerWidthConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_paletteContainerHeightConstraint) paletteContainerHeightConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_paletteContainerCenterXConstraint) paletteContainerCenterXConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_paletteContainerCenterYConstraint) paletteContainerCenterYConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_paletteContainerCompactTopConstraint) paletteContainerCompactTopConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_paletteContainerCompactBottomConstraint) paletteContainerCompactBottomConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_paletteContainerCompactLeftConstraint) paletteContainerCompactLeftConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_paletteContainerCompactRightConstraint) paletteContainerCompactRightConstraint;
+@property (T@"PKPaletteToolPreview",R,N,V_toolPreview) toolPreview;
+@property (T@"NSLayoutConstraint",&,N,V_toolPreviewCenterXConstraint) toolPreviewCenterXConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_toolPreviewCenterYConstraint) toolPreviewCenterYConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_toolPreviewWidthConstraint) toolPreviewWidthConstraint;
+@property (T@"NSLayoutConstraint",&,N,V_toolPreviewHeightConstraint) toolPreviewHeightConstraint;
+@property (TQ,R,N) paletteViewType;
+@property (TQ,R,N,V_lastPaletteEdgePositionWhileDragging) lastPaletteEdgePositionWhileDragging;
+@property (TB,R,N) _wantsGlassBackground;
+@property (T@"<PKPaletteViewDelegate>",W,N,V_delegate) delegate;
+@property (Tq,R,N,V_palettePosition) palettePosition;
+@property (TQ,R,N) allowedPalettePositions;
+@property (Td,R,N,V_paletteScaleFactor) paletteScaleFactor;
+@property (Td,N) paletteContentAlpha;
+@property (T@"UIViewController",W,N,V_presentationController) presentationController;
+@property (T@"UIView",R,N,V_backgroundMaterialView) backgroundMaterialView;
+@property (T{UIEdgeInsets=dddd},N,V_palettePopoverLayoutSceneMargins) palettePopoverLayoutSceneMargins;
+@property (Td,R,N,V_compactPaletteHeight) compactPaletteHeight;
+@property (Td,R,N) compactPaletteWidth;
+@property (T{CGRect={CGPoint=dd}{CGSize=dd}},R,N,V_adjustedWindowSceneBounds) adjustedWindowSceneBounds;
+@property (T@"PKPaletteScaleFactorPolicy",R,N,V_paletteScaleFactorPolicy) paletteScaleFactorPolicy;
+@property (TB,N,GisAutoHideEnabled,V_autoHideEnabled) autoHideEnabled;
+@property (TB,R,N,GisToolPreviewInstalled) toolPreviewInstalled;
+@property (TB,R,N,V_shouldStartUpMinimized) shouldStartUpMinimized;
+@property (TB,R,N,V_shouldExpandFromCorner) shouldExpandFromCorner;
+@property (TB,N,V_shadowVisible) shadowVisible;
+@property (Td,R,N,V_shadowOpacity) shadowOpacity;
+@property (Td,R,N,V_shadowRadius) shadowRadius;
+@property (TB,R,N,V_shouldAdjustShadowRadiusForMinimized) shouldAdjustShadowRadiusForMinimized;
+@property (TB,N,V_ignoresSafeAreaInsetsInCompactSize) ignoresSafeAreaInsetsInCompactSize;
+@property (T{NSDirectionalEdgeInsets=dddd},N,V_edgeInsetsInCompactSize) edgeInsetsInCompactSize;
+@property (T@"UIScrollView",R,N,V_contentScrollView) contentScrollView;
+@property (TB,N,V_draggingEnabled) draggingEnabled;
+@property (TB,R,N,GisVisible) visible;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+@property (T@"UIViewController",W,N,V_palettePopoverPresentingController) palettePopoverPresentingController;
+```
+
+## Class methods
+
+```
++[PKPaletteView makeBackgroundView];
++[PKPaletteView _makeScaleFactorPolicy];
+```
+
+## Instance methods
+
+```
+-[PKPaletteView _setCornerRadius:];
+-[PKPaletteView scalingFactor];
+-[PKPaletteView internalDelegate];
+-[PKPaletteView isVisible];
+-[PKPaletteView _stateDictionary];
+-[PKPaletteView layoutSubviews];
+-[PKPaletteView setInternalDelegate:];
+-[PKPaletteView containerView];
+-[PKPaletteView setDelegate:];
+-[PKPaletteView clippingView];
+-[PKPaletteView _setContinuousCornerRadius:];
+-[PKPaletteView presentationController];
+-[PKPaletteView delegate];
+-[PKPaletteView setPresentationController:];
+-[PKPaletteView traitCollectionDidChange:];
+-[PKPaletteView shadowOpacity];
+-[PKPaletteView backgroundMaterialView];
+-[PKPaletteView setShadowVisible:];
+-[PKPaletteView initWithFrame:];
+-[PKPaletteView contentScrollView];
+-[PKPaletteView shadowRadius];
+-[PKPaletteView hoverDelegate];
+-[PKPaletteView setHoverDelegate:];
+-[PKPaletteView dismissPalettePopoverWithCompletion:];
+-[PKPaletteView dismissContextMenu];
+-[PKPaletteView setAutoHideEnabled:];
+-[PKPaletteView _updateContainerViewConstraints];
+-[PKPaletteView paletteViewType];
+-[PKPaletteView setToolPreviewHeightConstraint:];
+-[PKPaletteView _updateContainerSizeConstraints];
+-[PKPaletteView draggingEnabled];
+-[PKPaletteView minimizedPaletteSizeScaleFactor];
+-[PKPaletteView paletteContainerWidthConstraint];
+-[PKPaletteView palettePosition];
+-[PKPaletteView toolPreviewView];
+-[PKPaletteView updatePopoverUI];
+-[PKPaletteView _didChangeAutoHideEnabled];
+-[PKPaletteView _installBackgroundViewInView:];
+-[PKPaletteView _installClippingViewInView:];
+-[PKPaletteView _installContainerViewInView:];
+-[PKPaletteView _installToolPreviewInView:];
+-[PKPaletteView _isCompactInSmallestQuickNoteWindowScene];
+-[PKPaletteView _isPaletteContentViewHidden];
+-[PKPaletteView _loadOptions];
+-[PKPaletteView _nextAutoHideCorner];
+-[PKPaletteView _palettePopoverSourceRect];
+-[PKPaletteView _paletteViewHoverLocation];
+-[PKPaletteView _paletteViewHoverView];
+-[PKPaletteView _saveOptions];
+-[PKPaletteView _setPaletteScaleFactor:notifyDidChange:];
+-[PKPaletteView _setShouldTrackHoverLocationForPencilTapActions:];
+-[PKPaletteView _shouldTrackHoverLocationForPencilTapActions];
+-[PKPaletteView _uninstallToolPreview];
+-[PKPaletteView _updateContainerSizeConstraintsForEdge:];
+-[PKPaletteView _updateToolPreviewScalingAnimated:];
+-[PKPaletteView _updateToolPreviewVisibility];
+-[PKPaletteView _wantsGlassBackground];
+-[PKPaletteView _willDockPaletteToCorner:];
+-[PKPaletteView _willDockPaletteToEdge:prepareForExpansion:isPaletteChangingOrientation:];
+-[PKPaletteView adjustedWindowSceneBounds];
+-[PKPaletteView allowedPalettePositions];
+-[PKPaletteView autoHideCorner];
+-[PKPaletteView borderColorForTraitCollection:];
+-[PKPaletteView borderWidthForTraitCollection:];
+-[PKPaletteView compactPaletteHeight];
+-[PKPaletteView compactPaletteWidth];
+-[PKPaletteView configureForDockedAtCorner];
+-[PKPaletteView configureForDockedAtEdge:];
+-[PKPaletteView dampingRatioForThrowingFromPosition:toPosition:withVelocity:];
+-[PKPaletteView didChangePalettePositionFromPosition:toPosition:];
+-[PKPaletteView didChangePaletteScaleFactor];
+-[PKPaletteView didEndAppearanceAnimation];
+-[PKPaletteView edgeInsetsInCompactSize];
+-[PKPaletteView edgeLocationToDockFromCorner:];
+-[PKPaletteView hasContextMenuVisible];
+-[PKPaletteView hostView:didDockPaletteToPosition:];
+-[PKPaletteView hostView:willDockPaletteToPosition:prepareForExpansion:];
+-[PKPaletteView ignoresSafeAreaInsetsInCompactSize];
+-[PKPaletteView isAutoHideEnabled];
+-[PKPaletteView isPalettePresentingPopover];
+-[PKPaletteView isToolPreviewInstalled];
+-[PKPaletteView isToolPreviewMinimized];
+-[PKPaletteView lastEdgeLocation];
+-[PKPaletteView lastPaletteEdgePositionWhileDragging];
+-[PKPaletteView minimizedPaletteSize];
+-[PKPaletteView paletteContainerCenterXConstraint];
+-[PKPaletteView paletteContainerCenterYConstraint];
+-[PKPaletteView paletteContainerCompactBottomConstraint];
+-[PKPaletteView paletteContainerCompactLeftConstraint];
+-[PKPaletteView paletteContainerCompactRightConstraint];
+-[PKPaletteView paletteContainerCompactTopConstraint];
+-[PKPaletteView paletteContainerHeightConstraint];
+-[PKPaletteView paletteContentAlpha];
+-[PKPaletteView paletteHostingWindowSceneDidChangeBounds:];
+-[PKPaletteView palettePopoverClippingView];
+-[PKPaletteView palettePopoverLayoutMargins];
+-[PKPaletteView palettePopoverLayoutSceneMargins];
+-[PKPaletteView palettePopoverPassthroughViews];
+-[PKPaletteView palettePopoverPermittedArrowDirections];
+-[PKPaletteView palettePopoverPresentingController];
+-[PKPaletteView palettePopoverSourceRectToPresentViewController:];
+-[PKPaletteView palettePopoverSourceView];
+-[PKPaletteView paletteScaleFactor];
+-[PKPaletteView paletteScaleFactorPolicy];
+-[PKPaletteView paletteSizeForEdge:];
+-[PKPaletteView paletteViewHosting];
+-[PKPaletteView responseForThrowingFromPosition:toPosition:withVelocity:];
+-[PKPaletteView saveOptionsIfNecessary];
+-[PKPaletteView setAdjustedWindowSceneBounds:];
+-[PKPaletteView setAutoHideCorner:];
+-[PKPaletteView setDraggingEnabled:];
+-[PKPaletteView setEdgeInsetsInCompactSize:];
+-[PKPaletteView setIgnoresSafeAreaInsetsInCompactSize:];
+-[PKPaletteView setLastEdgeLocation:];
+-[PKPaletteView setPaletteContainerCenterXConstraint:];
+-[PKPaletteView setPaletteContainerCenterYConstraint:];
+-[PKPaletteView setPaletteContainerCompactBottomConstraint:];
+-[PKPaletteView setPaletteContainerCompactLeftConstraint:];
+-[PKPaletteView setPaletteContainerCompactRightConstraint:];
+-[PKPaletteView setPaletteContainerCompactTopConstraint:];
+-[PKPaletteView setPaletteContainerHeightConstraint:];
+-[PKPaletteView setPaletteContainerWidthConstraint:];
+-[PKPaletteView setPaletteContentAlpha:];
+-[PKPaletteView setPalettePopoverLayoutSceneMargins:];
+-[PKPaletteView setPalettePopoverPresentingController:];
+-[PKPaletteView setPalettePosition:];
+-[PKPaletteView setPaletteScaleFactor:];
+-[PKPaletteView setPaletteViewHosting:];
+-[PKPaletteView setToolPreviewCenterXConstraint:];
+-[PKPaletteView setToolPreviewCenterYConstraint:];
+-[PKPaletteView setToolPreviewMinimized:];
+-[PKPaletteView setToolPreviewMinimized:animated:];
+-[PKPaletteView setToolPreviewWidthConstraint:];
+-[PKPaletteView shadowVisible];
+-[PKPaletteView shouldAdjustShadowRadiusForMinimized];
+-[PKPaletteView shouldExpandFromCorner];
+-[PKPaletteView shouldPalettePresentPopover];
+-[PKPaletteView shouldStartUpMinimized];
+-[PKPaletteView toolPreview];
+-[PKPaletteView toolPreviewCenterXConstraint];
+-[PKPaletteView toolPreviewCenterYConstraint];
+-[PKPaletteView toolPreviewHeightConstraint];
+-[PKPaletteView toolPreviewMatchesExpandedTool];
+-[PKPaletteView toolPreviewWidthConstraint];
+-[PKPaletteView updatePalettePopover:];
+-[PKPaletteView wantsCustomPalettePopoverPresentationSource];
+-[PKPaletteView willStartAppearanceAnimation:];
+```

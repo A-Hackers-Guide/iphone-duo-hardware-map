@@ -1,0 +1,24 @@
+# `MCDPlayableContentNowPlayingDataSource`
+
+- Image: [`/System/Library/PrivateFrameworks/MusicCarDisplayUI.framework/MusicCarDisplayUI`](../userland/System__Library__PrivateFrameworks__MusicCarDisplayUI.framework__MusicCarDisplayUI.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `MCDNowPlayingDataSource`
+- 0 instance variables, 4 properties, 4 instance methods, 0 class methods
+
+## Properties
+
+```
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[MCDPlayableContentNowPlayingDataSource playingItemProperties];
+-[MCDPlayableContentNowPlayingDataSource queueItemProperties];
+-[MCDPlayableContentNowPlayingDataSource _itemProperties];
+-[MCDPlayableContentNowPlayingDataSource requestLabel];
+```

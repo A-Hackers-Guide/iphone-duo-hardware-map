@@ -1,0 +1,1225 @@
+# `com.apple.driver.AppleThunderboltDPOutAdapter`
+
+- Name: AppleThunderboltDPOutAdapter
+- Version: `8.5.1`
+- UUID: `E0A03F78-BDE7-34B8-A473-75C7DE72D0C5`
+- Source version: `876.40.3.0.0`
+- Depends on: [`com.apple.driver.AppleThunderboltDPAdapterFamily`](com.apple.driver.AppleThunderboltDPAdapterFamily.md) 1.0.0, [`com.apple.iokit.IOThunderboltFamily`](com.apple.iokit.IOThunderboltFamily.md) 1.0.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 9.0.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 9.0.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 9.0.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 9.0.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (5) [KC]
+
+### AppleThunderboltDPOutAdapter
+- `Adapter Type`: `917762`
+- `CFBundleIdentifier`: `com.apple.driver.AppleThunderboltDPOutAdapter`
+- `IOClass`: `AppleThunderboltDPOutAdapter`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleThunderboltDPOutAdapter`
+- `IOProbeScore`: `9`
+- `IOProviderClass`: `IOThunderboltPort`
+
+### AppleThunderboltDPOutAdapterBase
+- `Adapter Type`: `917762`
+- `CFBundleIdentifier`: `com.apple.driver.AppleThunderboltDPOutAdapter`
+- `IOClass`: `AppleThunderboltDPOutAdapterBase`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleThunderboltDPOutAdapter`
+- `IOProbeScore`: `10`
+- `IOProviderClass`: `IOThunderboltPort`
+
+### AppleThunderboltDPOutAdapterCM
+- `Adapter Type`: `917762`
+- `CFBundleIdentifier`: `com.apple.driver.AppleThunderboltDPOutAdapter`
+- `IOClass`: `AppleThunderboltDPOutAdapterCM`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleThunderboltDPOutAdapter`
+- `IOProbeScore`: `11`
+- `IOProviderClass`: `IOThunderboltPort`
+
+### AppleThunderboltDPOutAdapterOS
+- `Adapter Type`: `917762`
+- `CFBundleIdentifier`: `com.apple.driver.AppleThunderboltDPOutAdapter`
+- `IOClass`: `AppleThunderboltDPOutAdapterOS`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleThunderboltDPOutAdapter`
+- `IOProbeScore`: `11`
+- `IOProviderClass`: `IOThunderboltPort`
+
+### AppleThunderboltDPOutAdapterOS2
+- `Adapter Type`: `917762`
+- `CFBundleIdentifier`: `com.apple.driver.AppleThunderboltDPOutAdapter`
+- `IOClass`: `AppleThunderboltDPOutAdapterOS2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleThunderboltDPOutAdapter`
+- `IOProbeScore`: `11`
+- `IOProviderClass`: `IOThunderboltPort`
+
+
+## C++ classes (9) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleThunderboltDPOutAdapter` | 0x2c0 | AppleThunderboltDPAdapterFamily → IOThunderboltTunnelDriver → IOService → IORegistryEntry |
+| `AppleThunderboltDPOutAdapterBase` | 0x280 | AppleThunderboltDPAdapterFamilyBase → IOThunderboltTunnelDriver → IOService → IORegistryEntry |
+| `AppleThunderboltDPOutAdapterCM` | 0x2b8 | AppleThunderboltDPOutAdapterBase → AppleThunderboltDPAdapterFamilyBase → IOThunderboltTunnelDriver → IOService → IORegistryEntry |
+| `AppleThunderboltDPOutAdapterDelegate` | 0x68 |  |
+| `AppleThunderboltDPOutAdapterDelegateLegacy` | 0x68 | AppleThunderboltDPOutAdapterDelegate |
+| `AppleThunderboltDPOutAdapterDelegateNonLegacy` | 0x68 | AppleThunderboltDPOutAdapterDelegate |
+| `AppleThunderboltDPOutAdapterOS` | 0x2c8 | AppleThunderboltDPOutAdapterCM → AppleThunderboltDPOutAdapterBase → AppleThunderboltDPAdapterFamilyBase → IOThunderboltTunnelDriver → IOService → IORegistryEntry |
+| `AppleThunderboltDPOutAdapterOS2` | 0x2c8 | AppleThunderboltDPOutAdapterOS → AppleThunderboltDPOutAdapterCM → AppleThunderboltDPOutAdapterBase → AppleThunderboltDPAdapterFamilyBase → IOThunderboltTunnelDriver → IOService → IORegistryEntry |
+| `AppleThunderboltDPOutAdapterUserClient` | 0xe8 | IOUserClient → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1400)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0001cea8 off=0x007fe7b0-0x0081b658 addr=0xfffffe00078027b0-0xfffffe000781f658 r--/r--   __TEXT            
+	sz=0x0001c8d0 off=0x007fed88-0x0081b658 addr=0xfffffe0007802d88-0xfffffe000781f658               __TEXT.__cstring          (CstringLiterals)
+001: LC_SEGMENT_64 sz=0x00044ad0 off=0x02916f40-0x0295ba10 addr=0xfffffe000991af40-0xfffffe000995fa10 r-x/r-x   __TEXT_EXEC       
+	sz=0x00044710 off=0x02916f40-0x0295b650 addr=0xfffffe000991af40-0xfffffe000995f650          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000003c0 off=0x0295b650-0x0295ba10 addr=0xfffffe000995f650-0xfffffe000995fa10          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00000480 off=0x049cd780-0x049cdc00 addr=0xfffffe000b9d1780-0xfffffe000b9d1c00 rw-/rw-   __DATA            
+	sz=0x00000308 off=0x049cd780-0x049cda88 addr=0xfffffe000b9d1780-0xfffffe000b9d1a88               __DATA.__data             
+	sz=0x00000178 off=0x00000000-0x00000178 addr=0xfffffe000b9d1a88-0xfffffe000b9d1c00               __DATA.__common           (Zerofill)
+003: LC_SEGMENT_64 sz=0x00005268 off=0x01278bf0-0x0127de58 addr=0xfffffe000827cbf0-0xfffffe0008281e58 rw-/rw-   __DATA_CONST      
+	sz=0x00000048 off=0x01278bf0-0x01278c38 addr=0xfffffe000827cbf0-0xfffffe000827cc38         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000048 off=0x01278c38-0x01278c80 addr=0xfffffe000827cc38-0xfffffe000827cc80         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00004d18 off=0x01278c80-0x0127d998 addr=0xfffffe000827cc80-0xfffffe0008281998         __DATA_CONST.__const            
+	sz=0x00000240 off=0x0127d998-0x0127dbd8 addr=0xfffffe0008281998-0xfffffe0008281bd8         __DATA_CONST.__kalloc_type      
+	sz=0x000001e0 off=0x0127dbd8-0x0127ddb8 addr=0xfffffe0008281bd8-0xfffffe0008281db8         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000a0 off=0x0127ddb8-0x0127de58 addr=0xfffffe0008281db8-0xfffffe0008281e58         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 140 at 0x04ae9650
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     E0A03F78-BDE7-34B8-A473-75C7DE72D0C5
+008: LC_SOURCE_VERSION           876.40.3.0.0
+009: LC_FUNCTION_STARTS          offset=0x004ab5790 size=0x378
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleThunderboltDPOutAdapter`
+- `CFBundleIdentifier`: `com.apple.driver.AppleThunderboltDPOutAdapter`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleThunderboltDPOutAdapter`
+- `CFBundleNumericVersion`: `139558912`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `8.5.1`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `8.5.1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `AppleThunderboltDPAdapters version 8.5.1, Copyright © 2009-2021 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.0`
+- `OSBundleRequired`: `Local-Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleThunderboltDPAdapters.kext/PlugIns/AppleThunderboltDPOutAdapter.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198897416272`
+- `_PrelinkExecutableRelativePath`: `AppleThunderboltDPOutAdapter`
+- `_PrelinkExecutableSize`: `421984`
+- `_PrelinkExecutableSourceAddr`: `-2198897416272`
+- `_PrelinkKmodInfo`: `-2198828411008`
+
+## Strings (1070) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setupPowerManagement - ERROR: status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpAdapterCallback - ERROR: dispatchAsync( checkIfAllAdaptersFound ) failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - can't read capabilities, using cached local capabilities\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doSynchronousEvaluation - failed to activate previously, trying again\n`
+- `Desired DP State`
+- `site.AppleThunderboltDPOutAdapter`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::finishActivation - WARNING: fHPDState = %d but fDeactivationRequested = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::tmuInitDP - sscOffset = 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setupNotifiers - found peer DPO port @ route = 0x%llx, port = 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dpAdapterCallback - newService = %p, adapter_type = 0x%x, fWaitingForAdapterNotifications = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setPowerState - new state = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createPaths - WARNING: building HBR3 paths failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::scheduleReactivation - fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>::pollForHPDPropagationInternalVerifyDPIHPDOutputFlags - read DPI HPD Output Set and Clear bits\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - requesting DPCM to broadcast update estimated bandwidth\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::startHPDRead Not ready - fHPDTimerCommand = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setReactivationDPInPort - ERROR: could not find a free DPI port\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - UNEXPECTED ERROR: we're terminated but we have the wrong desired state! desired_dp_state = %u\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::updateEstimatedBandwidth - done, fCachedEstimatedBW = %u, estimated_bandwidth = %u, status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::free\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::waitForSNK0PathToActivate - fCandidateDPInAdapterSet is empty!\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::startActivation - ERROR: fDPState = 0x%x, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::pollForHPDPropagationInternal - set DPI HPD Output Set bit\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::activationResolved - already resolved\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>:deactivateAdapter - WARNING: dpi->clearHPD failed with 0x%08x (hardware removed?)\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::postCreateDPTunnels - updating video path\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::doOpenSpecBandwidthDowngrade - setting established fEstablishedDPBandwidth = %u, fEstablishedDPLinkRate = %u, fEstablishedDPLaneCount = %u\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - common_bandwidth = %d, allocated_bandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::finalize - fFinalizeWaiting woke up\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setupNotifiers - addMatchingNotification( kIOTBPortAdapterClientNameDPInLegacy )\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::hpdStateDetermined - HPD state = %d, fDPState = %d, fActivationRequested = %d, fDeactivationRequested = %d, but do nothing\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::dpInAdapterStateChange - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterDelegateLegacy<%p>::pollForLocalDPCapsReady - poll kDPVSecConfigReg48: value = 0x%08x, mask = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::waitForUpstreamAdapters - ERROR: addActivationWaiter failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - we're deactivated and we want to activate, activating\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpInAdapterStateChangeNeedReactivationDelegateOverrideHook - fCheckingHPDState = %d, HPD State = %d, fActivationRequested = %d, fFinalizeWaiting = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::processFindHPDCapabilityResults - fHPDCapabilityOffset = 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::earlyWake - fReactivateOnWake = %d, fPreserveDPInPort = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::deactivate - WARNING: enableDP failed with 0x%08x (hardware removed?)\n`
+- `Next HPD State`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChange - (2) commandWakeup( &fEvaluationInProgress )\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpAdapterCallback - adding %p to fCandidateDPInAdapterSet\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::verifyHPD - checking DPO HPD\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - ERROR: failed to write CM_ID! status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::shouldOverdrive - overdrive = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::enableDP - disable auto link init on DPO port\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::enqueueHPDPlugInternal - begin, plug = %d, fHPDState = %d, fNextHPDState = %d, fNeedToProcessHPDState = %d, fNeedToProcessNextHPDState = %d\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::callActivationWaiters - WARNING: not valid\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::tmuInitDP - finishing Gen1 DFT workaround\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createPaths - attempting to build HBR paths on alternate lane, bandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dispatchDeactivation - ERROR: dispatchAsync( deactivate ) failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::pollForHPDPropagationInternal - clear DPI HPD Output Set bit\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::startActivation - reactivation port: 0x%x @ route 0x%llx\n`
+- `DP_STATUS.Allocated BW`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::doOpenSpecCMHandshake - OpenSpec DP handshake - complete\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::deactivate - WARNING: fDPState != kDPStateDeactivationInProgress, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createPaths - attempting to build HBR2 paths, bandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnels - WARNING: open spec ALPM returned status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::pollForHPDPropagationInternal - dpi_hpd_asserted = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::doOpenSpecBandwidthDowngrade - non_legacy = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::configureDPCapabilities - ERROR: dpi->getLocalDPCapabilities failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doSynchronousEvaluation - check for higher priority evaluation\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - WARNING: configureDPCapabilities failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::processFindHPDCapabilityResults - commandWakeup( fFindHPDCapabilityCommand )\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>(%u:0x%08llx:%u)::controlPathListenerCallback - WARNING: fTerminated = %u\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - both DP ports are non-legacy, cannot resolve activation early\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::spawnStateChangeThread - spawning state change thread\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::updateEstimatedBandwidth - ERROR: failed to write Estimated Bandwidth and Granularity! status = 0x%08x\n`
+- `Thunderbolt DP - writing new BW      - DPO [%u:0x%llx:0x%x] - NABW=%u\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setReactivationDPInPort - fReactivationDPInPort = %p, fPreferredReactivationDPInPort = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidth - ERROR: getCurrentDPBandwidthFromCommonCap failed (0x%08x)\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::stateChanged - commandWakeup( fFinalizeWaiting )\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::doOpenSpecCMHandshake - OpenSpec DP handshake -\u00a0begin\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::stateChanged - status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::message - notifying DP Connection Manager that we need evaluation\n`
+- `Evaluation In Progress`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::deactivate - ERROR: dpi->enableDP failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::setHPDState - UNEXPECTED ERROR: CM adapters that don't need HPD tracking should not directly set HPD state!\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]:deactivateAdapter - calling destroyPaths\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doSynchronousEvaluation - need immediate evaluation, calling dispatchChangeState()\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::pollForHPDPropagationInternal - set DPI HPD Output Set bit\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::activate - ERROR: path_count = %d\n`
+- `AppleThunderboltDPOutAdapterOS.cpp`
+- `Finalize Waiting`
+- `Thunderbolt DP - WARNING: asleep!    - DPO [%u:0x%llx:0x%x] - NE=%u NPBWAR=%u NPCU=%u NPHPDS=%u NPNHPDS=%u DDPSNE=%u HPDS=%u NHPDS=%u DPS=%u DDPS=%u T=%u FW=%u Slp=%u EWk=%u LSlp=%u FA=%u FL=%u HPDT=%u\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChange - UNEXPECTED ERROR: we're terminated, but we're trying to reactivate! fDPState = %u, desired_dp_state = %u\n`
+- `%lldus AppleThunderboltDPOutAdapterUserClient::initWithTask - ERROR: UC does not have kIOClientPrivilegeAdministrator\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>:: Exit DPRX polling loop with status 0x%08x\n`
+- `site.AppleThunderboltDPOutAdapterBase`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - attempting to build HBR paths on alternate lane, bandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::requestTerminateInternal - notifying DP Connection Manager that we need evaluation\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::waitForSNK0PathToActivate - client_dp_out_adapter earlyWake complete, move on\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::startActivation - fReactivationDPInPort = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setReactivationDPInPort - already set fReactivationDPInPort = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::callActivationWaiters\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::hpdStateDetermined - kicking off state change thread\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setupNotifiers - found %d candidate DPI ports @ route 0x%llx\n`
+- `AppleThunderboltDPOutAdapterDelegate<%p>::initialHPDPollTimerCommandCallback - ERROR: HPD TRACKING SHOULD BE DISABLED\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::doOpenSpecBandwidthDowngrade - (2) check if DP trained to a lower bandwidth than allocated\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::start - the_switch->getPathsDisabledForUpdate() returned %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::finalize - fDeactivationRequested = true since kDPStateActivationInProgress\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - WARNING: fTerminated = true\n`
+- `Cached Local DP Capabilities Presleep`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::hpdStateDetermined - fHPDState = %d, fDPState = %d, fActivationRequested = %d, fDeactivationRequested = %d, but do nothing\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnels - calling dpi->enableDP\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChangeComplete - HPD plug notification queued, notifying DP Connection Manager that we need re-evaluation\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processDPBandwidthNotification - OPTION ENABLED: ignoring DP_BW notification\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: failed to write 0 to CM Ack! cm_ack_status = 0x%08x\n`
+- `Thunderbolt DP - change state begin  - DPO [%u:0x%llx:0x%x] - NE=%u NPBWAR=%u NPCU=%u NPHPDS=%u NPNHPDS=%u DDPSNE=%u HPDS=%u NHPDS=%u DPS=%u DDPS=%u T=%u FW=%u Slp=%u EWk=%u LSlp=%u FA=%u FL=%u HPDT=%u\n`
+- `AppleThunderboltDPOutAdapterBase<%p>[%u:0x%llx:0x%x]::configureDPCapabilities - ERROR: DPI remote writeDPCapabilitiesRegister( 0x%08x ) failed with 0x%08x\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - ERROR: failed to write Maximal Link Rate and Lane Count! status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::shouldOverdrive - upstream_port = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - ERROR: verifyAndReservePort failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpAdapterCallback - newService = %p, adapter_type = 0x%x, fWaitingForAdapterNotifications = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::verifyHPD - WARNING: status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::start - notifying DP Connection Manager that we need evaluation\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::deactivate - ERROR: enableDP failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::deactivate - WARNING: dpi->clearHPD failed with 0x%08x (hardware removed?)\n`
+- `AppleThunderboltDPInAdapterBase`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::enableDP - WARNING: failed with 0x%08x (hardware removed?)\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - ERROR: updateExistingPaths failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::activate - ERROR: fDPState != kDPStateActivationInProgress, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - attempting to build HBR3 paths, bandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::upstreamAdapterActivationResolved - WARNING: fTerminated = true\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChangeCompleteInternal - need to process DP connection up message, fDPState = %d\n`
+- `AppleThunderboltDPOutAdapterOS`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>::probe - service = %p\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChange - desired state changed to deactivated, calling changeState()\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::doOpenSpecCMHandshake - RMW DP_STATUS: value = 0x%08x, mask = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::waitForUpstreamAdapters - WARNING: DPO adapter %p has been terminated\n`
+- `tbdp_evaluation_defer_deadline`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::activateAdapter - WARNING: createDPTunnels failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - done, status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::deactivateReleaseDPIReservation - releasing reservation on DPI port 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::configureDPCapabilities - ERROR: DPO remote writeDPCapabilitiesRegister( 0x%08x ) failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnelsDropSemaphoreHook - dropDPActivationSemaphoreSynchronous() returned 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::hpdStateDetermined - calling activationResolved\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::configModifyDWordWithMask - WARNING: modifying %s returned: status = 0x%08x, retrying once\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::shouldOverdrive - lc = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::start - fStarted = true, calling registerService\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dispatchDeactivation - WARNING: fDPState != kDPStateActivated, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpAdapterCallback - received a callback for *this, ignoring\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::deactivate - commandWakeup( fFinalizeWaiting )\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::addActivationWaiter - WARNING: fTerminated = true\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::hpdStateDetermined - kicking off state change thread\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - calling dpi->configHopIDs\n`
+- `AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishHPDStateDetermined - ERROR: dispatchChangeState() failed, status = 0x%08xn`
+- `AppleThunderboltDPOutAdapterCM<%p>::pollForHPDPropagationInternalVerifyDPIHPDOutputFlags - ERROR: failed to write DPI HPD Output Set and Clear bits! status = 0x%08x\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChange - UNEXPECTED ERROR: fDPState is not in a steady state! fDPState = %u\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::dispatchActivation - UNEXPECTED ERROR: this function should not be called!\n`
+- `ADP_DP_CS_2.CM BW Allocation Mode Support`
+- `AppleThunderboltDPOutAdapterUserClient`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::deactivate - WARNING: enableDP failed with 0x%08x (hardware removed?)\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]:deactivateAdapter - ERROR: dpi->enableDP( false ) failed with 0x%08x\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: DP paths are not all allocated!\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::activate - fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::scheduleReactivation - fReactivationRequestInProgress = %d, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::wakeOverrideHook - starting HPD tracking\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::destroyResources\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setPowerState - waiting for upstream adapters\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::enqueueVerifiedHPDState - done\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::dpInAdapterStateChangeNeedReactivation - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `\"AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::updateEstimatedBandwidth - UNEXPECTED ERROR: DP video path is missing!\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidthFromCommonCap - kDPAdapterCommonCapReg = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChangeComplete\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::checkIfAllAdaptersFound - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `ADP_DP_CS_2.CM_ID`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::isActive - fDPState = %d, is_active = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::deactivate - calling destroyPaths\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - WARNING: building HBR2 paths failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - calling configHopIDs\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::upStreamCIOPort of switch <%p> is NULL, Unexpected!\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChangeComplete - calling lateSleepComplete()\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getLocalDPCapabilities - no extended caps\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::free\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>(%u:0x%08llx:%u)::controlPathListenerCallback - WARNING: fStarted = %u\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::updateEstimatedBandwidth - UNEXPECTED ERROR: DP IN BW Allocation Mode not supported!\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::waitForSNK0PathToActivate - dp_in_adapter not found for SNK0\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::upstreamAdapterActivationResolved - waiting for upstream adapters (again)\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processDPBandwidthNotification - notifying DP Connection Manager that we need evaluation\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dispatchInheritPaths - fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::checkIfAllAdaptersFound - we found all DPI & DPO adapters\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpInAdapterStateChange - fDPState = %d, fFinalizeWaiting = %d, fIsAsleep = %d, fEarlyWake = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::finishActivation - deactivating: fFinalizeWaiting = %d, fLateSleep = %d, fDeactivationRequested = %d, fActivationRequested = %d, activationSuccess = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::pollForHPDPropagationInternal - waiting for DPI HPD\n`
+- `12111112122212121112222221111111111111222222221112122222111111111121111111112222112222222`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setReactivationDPInPort - already set fReactivationDPInPort = %p\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - DPO cached local caps = 0x%08x, DPI cached local caps = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthDowngradeStatusOverride - WARNING: Open spec bandwidth downgrade flow returned status = 0x%08x\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::spawnStateChangeThread - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::auxCallback(%cx) - WARNING: incomingStatus = 0x%08x\n`
+- `AppleThunderboltDPOutAdapterBase<%p>::verifyHPD - ERROR: We're asleep!\n`
+- `ADP_DP_CS_2.NRD_Maximal_Link_Rate + ADP_DP_CS_2.NRD_Maximal_Lane_Count`
+- `AppleThunderboltDPOutAdapterDelegate<%p>::checkHPDState - ERROR: HPD TRACKING SHOULD BE DISABLED\n`
+- `%lldus AppleThunderboltDPAdapterFamilyBase<%p>::setDPState - kDPStateActivationInProgress so clear fActivationRequested\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - (3) begin path creation\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::upStreamCIOPort of switch <%p> is NULL, Unexpected!\n`
+- `AppleThunderboltDPOutAdapterCM`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::controlPathListenerCallback - notifying DP Connection Manager that we need evaluation\n`
+- `ADP_DP_CS_2.CM Ack`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::controlPathListenerCallbackNotDeactivatedDelegateOverrideHook - fDPState = %d, jumping to checkHPDState\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidthFromCommonCap - lane_count = %d, link_rate = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::deactivate - fActivationRequested = true, kicking off another activation\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::activationResolved - UNEXPECTED ERROR: this function should not be called!\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - requesting DPCM to broadcast update estimated bandwidth\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::doOpenSpecCMHandshake - non_legacy = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setPowerState - fEnableHPDTrackingOnWake = %d, fHPDTracking = %d, fAbortHPDTracking = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::pollForHPDPropagationInternal - ERROR: timed out waiting for dpi_hpd_asserted\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::preEnableDPHook - disable auto link init on DPO port\n`
+- `Cached Estimated Bandwidth`
+- `\"AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: failed to write 0 to CM Ack! cm_ack_status = 0x%08x\\n\" @%s:%d`
+- `12111112122212121111111111111`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidth - current_bandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::controlPathListenerCallback - deactivated, waiting for upstream adapters\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::waitForUpstreamAdapters - UNEXPECTED ERROR: this function should not be called!\n`
+- `%lldus AppleThunderboltDPOutAdapterOS2<%p>::probe - service = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::shouldOverdrive - dp_out_switch = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getLocalDPCapabilities - dpo_max_link_rate = %d, targetLinkRate = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthDowngradeStatusOverride - WARNING: Setting fFailedToLight = true\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - UNEXPECTED ERROR: desired DP state is invalid!\\n\" @%s:%d`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - WARNING: CM Ack is already set! Applying workaround\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::requestTerminateInternal - UNEXPECTED ERROR: we're supposed to be terminating but we've settled into the wrong state! dp state = %u, desired dp state = %u (valid = %u)\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processDPBandwidthNotification - status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createResources\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createPaths - ERROR: allocated_link_rate = kIOThunderboltDPLinkRateUnknown\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::configureDPCapabilities - DPO remote writeDPCapabilitiesRegister( 0x%08x )\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnels - calling enableDP\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - skip, at least one side does not support extended capabilities: dpo_extended_caps = %u, dpi_extended_caps = %u\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setupNotifiers - find upstream DPO ports\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - calling finishStateChange()\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::stateChanged - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `\"AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - UNEXPECTED ERROR: DP video path is missing!\\n\" @%s:%d`
+- `ADP_DP_CS_2.Group_ID`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::configReadDWordProtected - WARNING: read %s returned: status = 0x%08x, retrying once\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::deactivate - calling destroyPaths\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidthFromCommonCap - dprxReadDone=%d, timeElapsed_ms=%llums, status=%d, fDeactivationRequested=%d, fIsAsleep=%d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::finishActivation - WARNING: HPD state = %d but fDeactivationRequested = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::spawnStateChangeThread - initiated = %d, waiting = %d, asleep = %d, early wake = %d, running = %d, request = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::enqueueHPDPlugInternal - done, fHPDState = %d, fNextHPDState = %d, fNeedToProcessHPDState = %d, fNeedToProcessNextHPDState = %d\n`
+- `Thunderbolt DP - change state done   - DPO [%u:0x%llx:0x%x] - NE=%u NPBWAR=%u NPCU=%u NPHPDS=%u NPNHPDS=%u DDPSNE=%u HPDS=%u NHPDS=%u DPS=%u DDPS=%u T=%u FW=%u Slp=%u EWk=%u LSlp=%u FA=%u FL=%u HPDT=%u\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::finalize - commandSleep( fWaitingForNotifiers )\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::waitForUpstreamAdapters - nobody to wait for, starting HPD tracking\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setupNotifiers - dpo_port->getPortNumber() < fProviderPortStruct.portNumber`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::activateAdapter - ERROR: fReactivationDPInPort = NULL, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - UNEXPECTED ERROR: late sleep must be a deactivation! fDPState = %u, desired_dp_state = %u\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::shouldOverdrive - status = 0x%08x DATA_STATUS = 0x%08x\n`
+- `Thunderbolt DP - finished DPRX polling on DPIn port [%d:0x%llx:0x%x]\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - WARNING: building HBR3 paths failed with 0x%08x\n`
+- `AppleThunderboltDPOutAdapterCM<%p>::setupNotifiers - ERROR: couldn't register with the DP connection manager! status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::message - type = 0x%x, state = 0x%x, fProcessDPStateChanges = %d, fInitiatedStateChange = %d, fTerminated = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setTMUConvergenceTimeout - Writing to reg 0x%x, tmu_convergence_timeout 0x%x, tmu_convergence_timeout_mask 0x%x, status 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - setDPPort( %p )\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpInAdapterStateChange - ERROR: fDPInPortStruct not set\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidthFromCommonCap - poll DPRX: fDeactivationRequested, fHPDState=%d, don't read bandwidth from DP common cap \n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::finalize - fWaitingForNotifiers woke up\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::hpdStateDetermined - about to start activation, resetting fActivationResolved\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::message - type = 0x%x, state = 0x%x, fProcessDPStateChanges = %d, fInitiatedStateChange = %d, fTerminated = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setupNotifiers - find active peer DPO ports\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::checkWakeWorkPending - UNEXPECTED ERROR: wake work is pending but these flags should not be used, fDeactivationRequested = %d, fActivationRequested = %d\n`
+- `%lldus TBT Timing <%p> - Begin DP path activation\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidth - bandwidth (HBR default) = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createPaths - WARNING: building HBR2 paths failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::waitForUpstreamAdapters - ERROR: addActivationWaiter failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::hpdStateDetermined - HPD state = %d, fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::requestTerminateInternal - NE=%u NPBWAR=%u NPCU=%u NPHPDS=%u NPNHPDS=%u DDPSNE=%u HPDS=%u NHPDS=%u DPS=%u DDPS=%u T=%u FW=%u Slp=%u EWk=%u LSlp=%u FA=%u FL=%u HPDT=%u\n`
+- `\"AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::updateEstimatedBandwidth - UNEXPECTED ERROR: DP IN BW Allocation Mode not supported!\\n\" @%s:%d`
+- `tbdp`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidth - bandwidth (local/remote min) = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnelsAcquireSemaphoreHook - acquireDPActivationSemaphoreSynchronous() returned 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::checkIfAllAdaptersFound - we found all DPI & DPO adapters\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doSynchronousEvaluation - we're in early wake, need immediate activation\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createPaths\n`
+- `NonLegacy`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - Beginning CM Ack flow\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::inheritPathsHPDTrackingDelegateHook - starting HPD tracking\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::configureDPCapabilities - ERROR: dpi->setRemoteDPCapabilities failed with 0x%08x\n`
+- `%lldus TBT Timing <%p> - Panel asserted HPD\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setReactivationDPInPort - ERROR: could not find a free DPI port\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - ERROR: enableDP failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnels - resolving activation after bandwidth downgrade\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnelsDropSemaphoreHook - calling dropDPActivationSemaphoreSynchronous()\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::hpdStateDetermined - HPD tracking flow did_override = %u, trying again\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::requestTerminateInternal - done, NE=%u NPBWAR=%u NPCU=%u NPHPDS=%u NPNHPDS=%u DDPSNE=%u HPDS=%u NHPDS=%u DPS=%u DDPS=%u T=%u FW=%u Slp=%u EWk=%u LSlp=%u FA=%u FL=%u HPDT=%u\n`
+- `%lldus AppleThunderboltDPOutAdapterOS2<%p>[%u:0x%llx:0x%x]::doOpenSpecALPM - done, status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::shouldOverdrive - fProviderPortStruct.dpPort = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpAdapterCallback - adding %p to fUpstreamDPOutAdapterSet\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - WARNING: building HBR paths on alternate lane failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - attempting to build RBR paths, bandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::dequeueHPDPlug - done, fHPDState = %d, fNextHPDState = %d, fNeedToProcessHPDState = %d, fNeedToProcessNextHPDState = %d\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChange - UNEXPECTED ERROR: we're terminated, but we're trying to reactivate! fDPState = %u, desired_dp_state = %u\\n\" @%s:%d`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::configModifyDWordWithMaskProtected - skipping modify DWORD [%u:0x%llx:0x%x] [s:%u, o:0x%08x, d:0x%08x, m:0x%08x] - \"%s\"\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setPowerState - ERROR: unknown power state (%d)\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::pollForHPDPropagationInternal - clear DPI HPD Output Set bit\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - established bandwidth is different from DPO local caps, restoring original caps: DPI remote writeDPCapabilitiesRegister( 0x%08x )\n`
+- `\"AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: failed to write new Allocated BW! status = 0x%08x\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::doOpenSpecBandwidthDowngrade - (3) give back bandwidth\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dispatchActivation - fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnels - calling dpi->configHopIDs\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::activateAdapter - setting minimum TMU mode\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::addActivationWaiter - UNEXPECTED ERROR: this function should not be called!\n`
+- `\"AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: failed to read DPTX Req! status = 0x%08x\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::inheritPathsHPDTrackingDelegateHook - HPD tracking disabled, calling hpdStateDetermined()\n`
+- `AppleThunderboltDPOutAdapter.cpp`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::dispatchDeactivation - UNEXPECTED ERROR: this function should not be called!\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - bandwidth (current) = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpInAdapterStateChange - ERROR: unknown DP state (0x%x)\n`
+- `Remote DP Capabilities`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::enqueueVerifiedHPDState - begin, hpd = %d, fHPDState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doSynchronousEvaluation - we're in late sleep, need immediate deactivation\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::shouldOverdrive - upstream_parent_port->getSwitch() = %p\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::stateChanged - commandWakeup( fFinalizeWaiting )\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - UNEXPECTED ERROR: attempted to change state while asleep! (not terminated, we're between late sleep and early wake)\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChangeComplete - UNEXPECTED ERROR: we're supposed to be terminating but we've settled into the wrong state! dp state = %u, desired dp state = %u (valid = %u)\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::spawnStateChangeThread - initiated = %d, waiting = %d, asleep = %d, early wake = %d, running = %d, request = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::enableSnoop - enable = %d\n`
+- `121111121222121211122222211111111111112222222211121222221111111111211111111122221122222`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - ERROR: failed to activate cleanly, setting desired state to deactivated, status = 0x%08x\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - panic on activation failure is enabled, status = 0x%08x\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - Finished CM Ack workaround, cm_ack_status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::setTMUConvergenceTimeout - Writing to reg 0x%x, tmu_convergence_timeout 0x%x, tmu_convergence_timeout_mask 0x%x, status 0x%x\n`
+- `site.AppleThunderboltDPOutAdapterUserClient`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setupNotifiers - addMatchingNotification( kIOTBPortAdapterClientNameDPOutLegacy )\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::configureDPCapabilities - DPO does not support extended capabilities, skip\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::dpAdapterCallback - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::start - ERROR: failed to startup\n`
+- `AppleThunderboltDPOutAdapterDelegate<%p>::startFindHPDCapability - ERROR: HPD TRACKING SHOULD BE DISABLED\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - messageClients( kIOThunderboltMessageDPStateChange )\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doSynchronousEvaluation - evaluation was deferred, notifying DP Connection Manager that we need re-evaluation\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - dpo_link_rate = %u, dpo_lane_count = %u, dpi_link_rate = %u, dpi_lane_count = %u\n`
+- `site.AppleThunderboltDPOutAdapterDelegateNonLegacy`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::removeActivationWaiter - WARNING: fTerminated = true\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::preTmuInitDPHook - beginning Gen1 DFT workaround\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnels - ERROR: dpi->enableDP failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishHPDStateDetermined - dispatchChangeState()\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - verifyAndReservePort( %p )\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::activate - WARNING: preActivationHook failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::assignGroupID - Group ID (%u -> %u)\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::assignGroupID - ERROR: failed to get DPI capabilities offset! status = 0x%08x\n`
+- `Thunderbolt DP - allocated BW        - DPO [%u:0x%llx:0x%x] - R=%u A=%u G=%u S=0x%08x CMAS=0x%08x DPTXPS=0x%08x\n`
+- `%lldus TBT Timing <%p> - DP out adapter driver start\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::shouldOverdrive - fDPInPortStruct.dpPort = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpAdapterCallback - no longer waiting for adapters, ignoring callback\n`
+- `%lldus TBT Timing <%p> - hpd_asserted = %d took %llu ms\n`
+- `None`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dispatchActivation - ERROR: dispatchAsync( activate ) failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dispatchDeactivation - fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::controlPathListenerCallback - WARNING: fTerminated = %d, fStarted = %d\n`
+- `Need Evaluation`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::shouldOverdrive - fDPInPortStruct.dpPort->getSwitch() = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::waitForUpstreamAdapters - WARNING: fPathsDisabled || kIOThunderboltBootArgNoHPDPoll is set, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnels - ERROR: dpi->configHopIDs failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - UNEXPECTED ERROR: we're terminated but we have the wrong desired state! desired_dp_state = %u\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::activate - delayed\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::deactivate - fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::deactivate - WARNING: dpi->clearHPD failed with 0x%08x (hardware removed?)\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::addActivationWaiter - adapter = %p, fActivationResolved = %d\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::updateEstimatedBandwidth - WARNING: estimated bandwdith exceeded maximum value, estimated_bandwidth = %d, max value = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setPowerState - fDeactivationRequested=%d, fActivationRequested=%d - calling spawnStateChangeThread()\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::configureDPCapabilities - ERROR: setRemoteDPCapabilities failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - non_legacy_dpo = %d, non_legacy_dpi = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::hpdReadCommandCallback - commandWakeup( fHPDReadCommand )\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::tmuInitDP - WARNING: fTerminated = true\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthDowngradeStatusOverride - Success, clearing fFailedToLight\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::shouldOverdrive - fProviderPortStruct.dpPort = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - resolving activation early\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::finishActivation - we're activated\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::checkIfAllAdaptersFound - WARNING: fTerminated = true\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::stateChanged\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthDowngradeStatusOverride - WARNING: Open spec bandwidth downgrade flow was aborted!\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::activateAdapter - done, status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doSynchronousEvaluation - we're asleep, exit\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: failed to write 1 to CM Ack! cm_ack_status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::finishActivation - activationSuccess = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::deactivate - ERROR: dpi->clearHPD failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::updateEstimatedBandwidth - UNEXPECTED ERROR: DP video path is missing!\n`
+- `%lldus AppleThunderboltDPOutAdapterOS2<%p>[%u:0x%llx:0x%x]::doOpenSpecALPM - ALPM Support = %u\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::destroyResources\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::start - ERROR: failed to startup\n`
+- `Received Initial HPD Plug`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setPowerState - clearing fUseCachedCommonBandwidth\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setPowerState - current fDPState=%d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setupNotifiers - found peer DPO port @ route = 0x%llx, port = 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>::message - type = 0x%x, state = 0x%x, fTerminated = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::configureDPCapabilities - ERROR: We claim to have established link rate = %u, lane count = %u, bandwidth = %u, but DPO local caps only support link rate = %u, lane count = %u, bandwidth = %u\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - DPI does not support extended capabilities, skip\n`
+- `\"AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: failed to write 1 to CM Ack! cm_ack_status = 0x%08x\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::shouldOverdrive - fDPInPortStruct.dpPort = %p\n`
+- `tbdp_hpd_tracking_deadline`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::activate - UNEXPECTED ERROR: this function should not be called!\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::stopHPDTracking - fHPDReadCommand woke up\n`
+- `AppleThunderboltDPOutAdapter`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::upstreamAdapterActivationResolved - WARNING: fTerminated = true\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::hpdReadCommandCallback - sample limit (%d) reached: fHPDState = %d, fRecheckHPDState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::requestTerminate - commandSleep( fFinalizeWaiting )\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::destroyResources\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setPowerState - current fDPState=%d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setReactivationDPInPort - fReactivationDPInPort not set, looking for new DPI port\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::preEnableDPHook - enable = %d\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - force enabling DP In BW Allocation Mode Support\n`
+- `tbhpddelay`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::configureDPCapabilities - OpenSpec DP handshake - complete\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createPaths - WARNING: building HBR paths failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::addActivationWaiter - adding %p to fActivationWaiters\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChange - UNEXPECTED ERROR: fDPState is not in a steady state! fDPState = %u\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: got an error polling DPTX Req! dptx_poll_status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setPowerState - starting HPD tracking\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::tmuInitDP - sscOffset = 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::checkHPDState - fCheckingHPDState = %d, fHPDTracking = %d, fAbortHPDTracking = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::removeActivationWaiter - adapter = %p\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::startHPDTracking - checkHPDState()\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dispatchDeactivation - dispatchAsync( deactivate )\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::startActivation - ERROR: fDPState = 0x%x, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::spawnStateChangeThread - WARNING: fTerminated = true, not spawning thread\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - WARNING: building RBR paths failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - Beginning CM Ack workaround\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - calling dropDPActivationSemaphoreSynchronous()\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::auxCallback(%cx) - ERROR: incomingStatus = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishHPDStateDetermined - HPD is low, clearing fFailedToLight\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - there's another adapter that failed to light, don't activate\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChange - UNEXPECTED ERROR: we're asleep, but we're trying to reactivate! fDPState = %u, desired_dp_state = %u\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::hpdReadCommandCallback - sample limit (%d) reached: HPD State = %d, fRecheckHPDState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::deactivate - ERROR: startActivation failed with 0x%08x, resolving activation\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChangeCompleteInternal - done\n`
+- `AppleThunderboltDPOutAdapterOS2`
+- `Desired DP State Need Evaluation`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dispatchInheritPaths - WARNING: fDPState != kDPStateDeactivated, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::waitForUpstreamAdapters - calling addActivationWaiter( %p )\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::waitForUpstreamAdapters - DPO adapter %p is already activated\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::addActivationWaiter - adding %p to fActivationWaiters\n`
+- `HPD State`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setPowerState - kThunderboltPMSleepState\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>(%x:%llx:%x)::requestTerminate\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnels - ERROR: invalid port (%p) or adapter (%p)\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>::deactivateAdapter - ERROR: dpi->clearHPD failed with 0x%08x\\n\" @%s:%d`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - UNEXPECTED ERROR: state change must be called in a steady state! fDPState = %u\\n\" @%s:%d`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChange - UNEXPECTED ERROR: we're asleep, but we're trying to reactivate! fDPState = %u, desired_dp_state = %u\\n\" @%s:%d`
+- `ADP_DP_CS_2.Estimated BW + ADP_DP_CS_2.Granularity`
+- `AppleThunderboltDPOutAdapterDelegateLegacy.cpp`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::doOpenSpecCMHandshake - CMHS poll timing: before = %llu, after = %llu, diff = %llu\n`
+- `AppleThunderboltDPOutAdapterBase<%p>::createPaths - ERROR: failed to create paths with bandwidth_allocation = %u, link_rate = %u, lane_count = %u\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::createDPTunnelsCanResolveActivationEarlyAfterConfigureDPCapabilities - both DP ports are non-legacy, cannot resolve activation early\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::configureDPCapabilities - cached local capabilities = 0x%08x, modified to = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - link_rate = %u, lane_count = %u\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::setDesiredDPStateForEvaluation - WARNING: we're terminating/terminated or asleep (not early wake) but attempted to change desired state to something other than deactivated\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::dpInAdapterStateChangeNeedReactivation - UNEXPECTED ERROR: this function should not be called!\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::stopHPDTracking - commandSleep( fHPDReadCommand )\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::configureDPCapabilities - ERROR: getLocalDPCapabilities failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dispatchActivation - dispatchAsync( activate )\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setupNotifiers - addMatchingNotification( kIOTBPortAdapterClientNameDPInBase )\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::configPollDWordWithMaskProtected - skipping modify DWORD [%u:0x%llx:0x%x] [s:%u, o:0x%08x, v:0x%08x, m:0x%08x, i:0x%08x, c:0x%08x] - \"%s\"\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::finishActivation - we're activated\n`
+- `%lldus TBT Timing <%p> - timestamp = %lld ms\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dispatchActivation - WARNING: fDPState != kDPStateDeactivated, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::finishStateChangeCompleteInternal - done\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::configureDPCapabilities - poll CMHS: value = 0x%08x, mask = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::activateAdapter - creating DP tunnels\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::waitForUpstreamAdapters - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - starting HPD tracking\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createPaths - allocated_link_rate = 0x%x, fCachedCommonBandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setupNotifiers - found %d upstream DPO ports @ route 0x%llx\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::hpdStateDetermined - calling dispatchDeactivation\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::lateSleep - fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::addActivationWaiter - adapter = %p, fActivationResolved = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dpAdapterCallback - dispatchAsync( checkIfAllAdaptersFound )\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]:deactivateAdapter - ERROR: enableDP( false ) failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::dispatchChangeState \n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::startActivation - UNEXPECTED ERROR: this function should not be called!\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::activate - WARNING: preActivationTasks failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::configureDPCapabilities - setRemoteDPCapabilities( 0x%08x )\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::callActivationWaiters\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::setDesiredDPStateForEvaluation - changing desired state from %u to %u\n`
+- `\"FATAL ERROR: Non-Legacy Delegate must not be used for legacy devices!\\n\" @%s:%d`
+- `tbsc`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::shouldOverdrive - overdrive = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::stateChanged - UNEXPECTED ERROR: this function should not be called!\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::configureDPCapabilities - CMHS poll timing: before = %llu, after = %llu, diff = %llu\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::checkIfAllAdaptersFound - existing paths found, spawning inheritPaths thread\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setReactivationDPInPort - fReactivationDPInPort = %p, fPreferredReactivationDPInPort = %p\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::checkIfAllAdaptersFound - no existing paths found, waiting for upstream adapters\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - UNEXPECTED ERROR: DP IN BW Allocation Mode not supported!\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::finalize - commandSleep( &fFinalizeWaiting )\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::earlyWake - fUseCachedCommonBandwidth = %d, fCachedCommonBandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::scheduleReactivation - ERROR: unknown DP state (0x%x)\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - ERROR: createPaths failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createPaths - setting fCachedCommonBandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::hpdStateDetermined - calling activationResolved\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::upstreamAdapterActivationResolved - UNEXPECTED ERROR: this function should not be called!\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::pollForCommonDPCapsReady - non_legacy = %d\n`
+- `HPD State Needs Processing`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doSynchronousEvaluation - we're terminated, exit\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - no state transition needed, done - fDPState = %u, desired_dp_state = %u\n`
+- `%lldus AppleThunderboltDPOutAdapterOS2<%p>[%u:0x%llx:0x%x]::doOpenSpecALPM - cl1_exit_time = %u\n`
+- `Thunderbolt DP - paths are disabled for update (%x:%llx:%x)\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - dropDPActivationSemaphoreSynchronous() returned 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::checkIfAllAdaptersFound - DPO adapters/ports: %d/%d\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::activateAdapter - reactivation port: 0x%x @ route 0x%llx\n`
+- `Thunderbolt DP - incoming BW request - DPO [%u:0x%llx:0x%x] - Requested BW 100 Mbps = %u Allocated BW 100 Mbps = %u\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::startFindHPDCapability Not ready - fFindHPDCapabilityCommand = %p, fHPDTimerCommand = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::scheduleReactivation - fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::controlPathListenerCallback - fDPState = %d, jumping to hpdStateDetermined\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::stopHPDTracking - fHPDReadCommand woke up\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChangeComplete - UNEXPECTED ERROR: we're supposed to be deactivating for sleep but we've settled into the wrong state! dp state = %u, desired dp state = %u (valid = %u)\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dispatchActivation - fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dispatchActivation - WARNING: fDPState != kDPStateDeactivated, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::finishActivation - updating DPI crossbar\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getLocalDPCapabilities - local_data (HBR2 downgrade) = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setPowerState - kThunderboltPMPauseState\n`
+- `\"AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: failed to read CM Ack (workaround)! cm_ack_status = 0x%08x\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::start - checkPathsDisabledByProtocol() returned %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dpAdapterCallback - ERROR: dispatchAsync( checkIfAllAdaptersFound ) failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::hpdStateDetermined - HPD state = %d, fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::probe - service = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::deactivate - fActivationRequested = true, kicking off another activation\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::pollForLocalDPCapsReady - ERROR: kDPVSecConfigReg48 polling failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setPowerState - kThunderboltPMSleepState\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnels - ERROR: tmuInitDP failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>::initializeMemberVariables\n`
+- `%lldus AppleThunderboltDPOutAdapter(%x:%llx:%x)::requestTerminate\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::doOpenSpecBandwidthDowngradeStatusOverride - WARNING: open spec bandwidth downgrade flow returned status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - dpo_link_rate = %u, dpo_lane_count = %u, dpi_link_rate = %u, dpi_lane_count = %u\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::pollForLocalDPCapsReady - poll kDPVSecConfigReg48: value = 0x%08x, mask = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidthFromCommonCap - ERROR: failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::checkIfAllAdaptersFound - no existing paths found, waiting for upstream adapters\n`
+- `AppleThunderboltDPOutAdapterBase<%p>::pollForHPDPropagationInternal - ERROR: failed to clear DPI HPD Output Set bit! status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - UNEXPECTED ERROR: state change must be called in a steady state! fDPState = %u\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChangeComplete - calling earlyWakeComplete()\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::activate - calling finishActivation( %d )\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::tmuInitDP - WARNING: fTerminated = true\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnels - calling configHopIDs\n`
+- `%lldus Thunderbolt DP - evaluating for > 1m - DPO [%u:0x%llx:0x%x] - UNEXPECTED ERROR! NE=%u NPBWAR=%u NPCU=%u NPHPDS=%u NPNHPDS=%u DDPSNE=%u HPDS=%u NHPDS=%u DPS=%u DDPS=%u T=%u FW=%u Slp=%u EWk=%u LSlp=%u FA=%u FL=%u HPDT=%u\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::pollForCommonDPCapsReady - Exit DPRX polling loop with status 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::configureDPCapabilities - OpenSpec DP handshake -\u00a0begin\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createPaths - dpo_max_link_rate = %d, dpi_max_link_rate = %d, fUseCachedCommonBandwidth = %d, fCachedCommonBandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createPaths - WARNING: building HBR paths on alternate lane failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setupNotifiers - dpo_port->getPortNumber() < fProviderPortStruct.portNumber`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::configureDPCapabilities - WARNING: open spec BW allocation mode returned status = 0x%08x\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::activationResolved - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::earlyWake - WARNING: fDPInPortStruct.dpAdapter is NULL\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::waitForSNK0PathToActivate - SNK0 dp_in_adapter = %p \n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::activate - calling finishActivation( %d )\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::checkIfAllAdaptersFound - DPI adapters/ports: %d/%d\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::upstreamAdapterActivationResolved - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - WARNING: DPTX Req = 0\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - done, status = 0x%08x, cm_ack_status = 0x%08x dptx_poll_status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dispatchActivation - dispatchAsync( activate )\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::startActivation - reactivation port: 0x%x @ route 0x%llx\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::shouldOverdrive - fDPInPortStruct.dpPort->getSwitch() = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getLocalDPCapabilities - ERROR: caller requested link rate %d even though we don't support it\n`
+- `Established DP Link Rate`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::dispatchChangeState - dispatchAsync( changeState )\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dispatchInheritPaths - dispatchAsync( inheritPaths )\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>::message - type = 0x%x, state = 0x%x, fTerminated = %d, status = 0x%08x\n`
+- `Next HPD State Needs Processing`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::preActivationHook - UNEXPECTED ERROR: this function should not be called!\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setPowerState - kThunderboltPMWakeState\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::pollForHPDPropagationInternal - dpi_hpd_asserted = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::removeActivationWaiter - WARNING: fTerminated = true\n`
+- `HPD Plug State`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setupNotifiers - found %d candidate DPI ports @ route 0x%llx\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::hpdStateDetermined - calling dispatchDeactivation\n`
+- `AppleThunderboltDPOutAdapterDelegateNonLegacy`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::dispatchDeactivation - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `DPI BWAM Support`
+- `\"AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: got an error polling DPTX Req! dptx_poll_status = 0x%08x\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::deactivateAdapterInternal - requesting DPCM to broadcast update estimated bandwidth\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::hpdReadCommandCallback - commandWakeup( fHPDReadCommand )\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::pollForCommonDPCapsReady - ERROR: DPRX polling timed out\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::deactivate - ERROR: enableDP failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnelsAcquireSemaphoreHook - calling acquireDPActivationSemaphoreSynchronous()\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::deactivate - fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::shouldOverdrive - upstream_parent_port->getSwitch() = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setupNotifiers - find active peer DPO ports\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::configureDPCapabilities - ERROR: DPI remote writeDPCapabilitiesRegister( 0x%08x ) failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnels - ERROR: enableDP failed with 0x%08x\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::setHPDState - UNEXPECTED ERROR: CM adapters that don't need HPD tracking should not directly set HPD state!\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::removeActivationWaiter - UNEXPECTED ERROR: this function should not be called!\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::deactivate - WARNING: dpi->enableDP failed with 0x%08x (hardware removed?)\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doSynchronousEvaluation - done, status = 0x%08x, NE=%u NPBWAR=%u NPCU=%u NPHPDS=%u NPNHPDS=%u DDPSNE=%u HPDS=%u NHPDS=%u DPS=%u DDPS=%u T=%u FW=%u Slp=%u EWk=%u LSlp=%u FA=%u FL=%u HPDT=%u\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::deactivate - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - ERROR: tmuInitDP failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::stopHPDTracking - commandSleep( fFindHPDCapabilityCommand )\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::probe - service = %p\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - DPTX Req = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter(%x:%llx:%x)::setReactivationDPInPort - search child for DP In port\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpInAdapterStateChange - fDeactivationRequested set so kickoff deactivation\n`
+- `site.AppleThunderboltDPOutAdapterDelegateLegacy`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidth - ERROR: failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::stateChanged - invoking dpInAdapterStateChange()\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dispatchVerifyHPD\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::dispatchActivation - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::assignGroupID - ERROR: failed to set Group ID! status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::finalize - releasing reservation on DPI port 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpInAdapterStateChange - we lost our DPI port, scheduling reactivation\n`
+- `Established DP Bandwidth`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dpAdapterCallback - no longer waiting for adapters, ignoring callback\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChange - fDPState = %u, desired_dp_state = %u\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::startActivation - ERROR: fReactivationDPInPort = NULL, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setReactivationDPInPort - fReactivationDPInPort not set, looking for new DPI port\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::spawnStateChangeThread - updated: fStateChangeThreadRunning = %d, fStateChangeThreadRequest = %d\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: failed to read Requested Bandwidth! status = 0x%08x\n`
+- `AppleThunderboltDPOutAdapterOS2<%p>[%u:0x%llx:0x%x]::doOpenSpecALPM - ERROR: failed to write CL1 Exit Time! status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::processFindHPDCapabilityResults - commandWakeup( fFindHPDCapabilityCommand )\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::hpdStateDetermined - HPD tracking flow did_override = %u, done\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::start\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::activate - ERROR: fDPState != kDPStateActivationInProgress, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::scheduleReactivation - fReactivationRequestInProgress = %d, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::waitForUpstreamAdapters - waiting on DPO adapter %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::callActivationWaiters - ( %p )->upstreamAdapterActivationResolved( %p )\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setupPowerManagement - ERROR: status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateLegacy<%p>::pollForLocalDPCapsReady - no extended caps\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - UNEXPECTED ERROR: attempted to change state while asleep! (not terminated, we're between late sleep and early wake)\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::controlPathListenerCallback - may start activation again, resetting fActivationResolved\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::startActivation - ERROR: fReactivationDPInPort = NULL, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - UNEXPECTED ERROR: we're terminated but we're not waiting to be finalized!\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - Finished CM Ack flow, cm_ack_status = 0x%08x dptx_poll_status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::shouldOverdrive - status = 0x%08x DATA_STATUS = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidth - bandwidth (common_cap) = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setupNotifiers - upStreamCIOPortNumber = %d so upstream DPOut is = 0x%x\n`
+- `Evaluation Deferred`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::determineMaxSupportedLinkRate - fMaxSupportedLinkRate (local cap) = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidthFromCommonCap - current_bandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::deactivate - WARNING: fDPState != kDPStateDeactivationInProgress, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doSynchronousEvaluation - failed to light previously, trying again\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - asymmetric test code enabled, overriding requested bandwidth from %u Gbps to %u Gbps\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getLocalDPCapabilities - local_data (HBR downgrade) = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::configureDPCapabilities - dpi->setRemoteDPCapabilities( 0x%08x )\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - ERROR: something is missing: Video = %p, Aux Tx = %p, Aux Rx = %p, DPI port = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::waitForUpstreamAdapters - route = 0x%llx, port = 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::controlPathListenerCallback - setting HPD state = plug = %d\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::getPMPacketSupport - WORKAROUND: disable PM Packet for special mode\n`
+- `1212222111112`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setupNotifiers - dpo_paths->getCount = %d\n`
+- `AppleThunderboltDPOutAdapterDelegateLegacy`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpInAdapterStateChange - ERROR: scheduleReactivation failed with 0x%x, resolve_activation = %d\n`
+- `Need HPD Tracking`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dispatchVerifyHPD - ERROR: dispatchAsync( verifyHPD ) failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doSynchronousEvaluation - begin, NE=%u NPBWAR=%u NPCU=%u NPHPDS=%u NPNHPDS=%u DDPSNE=%u HPDS=%u NHPDS=%u DPS=%u DDPS=%u T=%u FW=%u Slp=%u EWk=%u LSlp=%u FA=%u FL=%u HPDT=%u\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::callActivationWaiters - WARNING: not valid\n`
+- `site.AppleThunderboltDPOutAdapterDelegate`
+- `AppleThunderboltDPOutAdapterDelegate<%p>::stopHPDTracking - ERROR: HPD TRACKING SHOULD BE DISABLED\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidth - WARNING: fDPInPortStruct.dpAdapter = NULL, aborting\n`
+- `12111112122212121112222221111111111111222222221112122222111111111121111111112222`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnels - ERROR: createPaths failed with 0x%08x\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - UNEXPECTED ERROR: we're terminated but we're not waiting to be finalized!\\n\" @%s:%d`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::removeActivationWaiter - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::postCreateDPTunnels - requesting DPCM to broadcast update estimated bandwidth\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: failed to get DPI capabilities offset! status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dispatchActivation - ERROR: dispatchAsync( activate ) failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setupNotifiers - find upstream DPO ports\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::activationResolved - calling activation waiters\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::configureDPCapabilities - DPI does not support extended capabilities, skip\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::deactivate - ERROR: startActivation failed with 0x%08x, resolving activation\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::shouldOverdrive - upstream_parent_port = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidth - ERROR: readDPCapabilitiesRegister failed (0x%08x)\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - checking EFI's DP CAP settings\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::stopHPDTracking - fFindHPDCapabilityCommand woke up\n`
+- `Need To Process Connection Up Message`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - ERROR: failed to write CM BW Allocation Mode Support! status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dpAdapterCallback - WARNING: fTerminated = true\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::waitForUpstreamAdapters - WARNING: fPathsDisabled || kIOThunderboltBootArgNoHPDPoll is set, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dpInAdapterStateChange - ERROR: unknown DP state (0x%x)\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::lateSleepInternal - notifying DP Connection Manager that we need evaluation\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - dpo_local_cap = 0x%08x, dpi_remote_cap = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::activateAdapter - setReactivationDPInPort() failed with code = 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::activateAdapter - ERROR: setting minimum TMU mode failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChange - (1) commandWakeup( &fEvaluationInProgress )\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChangeComplete - UNEXPECTED ERROR: we're supposed to be deactivating for sleep but we've settled into the wrong state! dp state = %u, desired dp state = %u (valid = %u)\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::enableSnoop - enable = %d\n`
+- `ADP_DP_CS_8.DPTX Req`
+- `AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::withDPOutAdapter - WARNING: Non-legacy delegate loaded for <TR!\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthDowngradeStatusOverride - WARNING: Open spec bandwidth downgrade flow timed out!\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::requestTerminateInternal - commandSleep( &fFinalizeWaiting )\n`
+- `AppleThunderboltDPOutAdapterDelegate`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::configureDPCapabilities - RMW DP_STATUS: value = 0x%08x, mask = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::verifyHPD - calling hpdStateDetermined() with HPD state = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>:deactivateAdapter - ERROR: dpi->clearHPD failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>::setupNotifiers\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::doOpenSpecBandwidthDowngrade - (1) update DPO cached common capabilities\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setLateSleepFlagsInternal - fReactivateOnWake = %u\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::auxCallback(%cx) - ERROR: incomingStatus = 0x%08x\n`
+- `AppleThunderboltDPInAdapter`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setupNotifiers - found %d upstream DPO ports @ route 0x%llx\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::lateSleepInternal - NE=%u NPBWAR=%u NPCU=%u NPHPDS=%u NPNHPDS=%u DDPSNE=%u HPDS=%u NHPDS=%u DPS=%u DDPS=%u T=%u FW=%u Slp=%u EWk=%u LSlp=%u FA=%u FL=%u HPDT=%u\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - dpo_local_caps_bandwidth = %u, fEstablishedDPBandwidth = %u\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dpInAdapterStateChange - fDPState = %d, fFinalizeWaiting = %d, fIsAsleep = %d, fEarlyWake = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]:deactivateAdapter - WARNING: enableDP( false ) failed with 0x%08x (hardware removed?)\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - ERROR: failed to get DPI capabilities offset! status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::updateEstimatedBandwidth - UNEXPECTED ERROR: DP In adapter is missing!\n`
+- `AppleThunderboltDPOutAdapterDelegate<%p>::processFindHPDCapabilityResults - ERROR: HPD TRACKING SHOULD BE DISABLED\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::start - fDPMuxDelay = %lld ms\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setReactivationDPInPort - Unable to acquire fPreferredReactivationDPInPort = %p, temp_status = 0x%x, acquiring any one that's free\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::checkIfAllAdaptersFound - UNEXPECTED ERROR: this function should not be called!\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processDPBandwidthNotification\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - acquireDPActivationSemaphoreSynchronous() returned 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::activate - WARNING: createDPTunnels failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateLegacy<%p>::pollForLocalDPCapsReady - ERROR: kDPVSecConfigReg48 polling failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dpAdapterCallback - ERROR: unknown adapter_type (0x%x)\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::waitForUpstreamAdapters - DPO adapter %p is already activated\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::dequeueHPDPlug - begin, fHPDState = %d, fNextHPDState = %d, fNeedToProcessHPDState = %d, fNeedToProcessNextHPDState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::waitForUpstreamAdaptersDelegateOverrideHook - nobody to wait for, starting HPD tracking\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::finalize - fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - calling enableDP\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dispatchDeactivation - dispatchAsync( deactivate )\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::waitForUpstreamAdapters - waiting on DPO adapter %p\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doSynchronousEvaluation - fEvaluationInProgress woke up\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: failed to read CM Ack (workaround)! cm_ack_status = 0x%08x\n`
+- `%lldus AppleThunderboltDPAdapterFamily<%p>::setDPState - kDPStateActivationInProgress so clear fActivationRequested\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setPowerState - new state = %d\n`
+- `Failed to Activate`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::deactivate - releasing reservation on DPI port 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::shouldOverdrive - lc = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createPaths - attempting to build HBR paths, bandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::checkIfAllAdaptersFound - DPI adapters/ports: %d/%d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::hpdStateDetermined - resetting fActivationResolved\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::isActive - fDPState = %d, is_active = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::startActivation - fReactivationDPInPort = %p\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::spawnStateChangeThread - spawning state change thread\n`
+- `%lldus AppleThunderboltDPAdapterFamily<%p>::setDPState - kDPStateDeactivationInProgress so clear fDeactivationRequested\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - dpi_switch_route = 0x%llx, dpi_count = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChange - UNEXPECTED ERROR: fNeedEvaluation is already false! Could be a branching path in state evaluation?\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::updateEstimatedBandwidth - ERROR: failed to get estimated bandwidth! status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::callActivationWaiters - ( %p )->upstreamAdapterActivationResolved( %p )\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::activateAdapter - ERROR: path_count = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::shouldOverdrive - overdrive = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - attempting to build HBR2 paths, bandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::hpdStateDetermined - fDeactivationRequested = %d, fDPState = %d, fActivationRequested = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::requestTerminate - fDeactivationRequested = true since kDPStateActivationInProgress\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::activationResolved - calling activation waiters\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setReactivationDPInPort - preserveDPInPort = true, setting fReactivationDPInPort = fDPInPortStruct.dpPort = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::tmuInitDP - ERROR: failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::removeActivationWaiter - adapter = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::pollForHPDPropagationInternal - waiting for DPI HPD\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::lateSleep - fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - attempting to build HBR paths, bandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::pause - need HPD tracking, fHPDTracking = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::doOpenSpecCMHandshake - poll CMHS: value = 0x%08x, mask = 0x%08x\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::activate - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::stopHPDTracking\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::shouldOverdrive - upstream_parent_port = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - WARNING: DP paths @ Route 0x%llx, Port 0x%02x are not using external GPU found @ Route 0x%llx, scheduling reactivation\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::addActivationWaiter - WARNING: fTerminated = true\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::deactivate - ERROR: dpi->clearHPD failed with 0x%08x\n`
+- `AppleThunderboltDPOutAdapterBase<%p>::pollForHPDPropagationInternal - ERROR: timed out waiting for dpi_hpd_asserted\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChangeComplete - commandWakeup( &fFinalizeWaiting )\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - UNEXPECTED ERROR: DP video path is missing!\n`
+- `\"FATAL ERROR: Legacy Delegate must not be used for non-legacy devices!\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::activationResolved - already resolved\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::wake - calling waitForUpstreamAdapters()\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - ERROR: dpi->configHopIDs failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpInAdapterStateChange - WARNING: Alternative DPIn port not available for muxed away port, skipping reactivation\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpInAdapterStateChange - fCheckingHPDState = %d, fHPDState = %d, fActivationRequested = %d, fFinalizeWaiting = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - can't use cached values, defaulting to HBRx4\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - ERROR: failed to allocate paths, setting fEstablishedDPBandwidth = 0, fEstablishedDPLinkRate = 0, fEstablishedDPLaneCount = 0, status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::finishStateChangeCompleteInternal - need to process bandwidth allocation request, fDPState = %d\n`
+- `1211111212221212111222222111111111111222222222211122222222211111111111111121111111112222`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::finishActivation - deactivating: fFinalizeWaiting = %d, fLateSleep = %d, fDeactivationRequested = %d, fActivationRequested = %d, activationSuccess = %d\n`
+- `%lldus AppleThunderboltDPAdapterFamilyBase<%p>::setDPState - kDPStateDeactivationInProgress so clear fDeactivationRequested\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]:deactivateAdapter - WARNING: dpi->enableDP( false ) failed with 0x%08x (hardware removed?)\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::hpdReadCommandCallback - HPD changed during sampling: HPD State = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - (1) try to update DPO and DPI cached local capabilities\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - UNEXPECTED ERROR: DP In adapter is missing!\n`
+- `AppleThunderboltDPOutAdapterOS2<%p>[%u:0x%llx:0x%x]::doOpenSpecALPM - force enabling ALPM Support\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getLocalDPCapabilities - local_data (getLocalDPCapabilities) = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createResources\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::hpdStateDeterminedDelegateOverrideHook - retry count = %d, submitting timer\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - ERROR: scheduleReactivation failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpAdapterCallback - dispatchAsync( checkIfAllAdaptersFound )\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::determineMaxSupportedLinkRate - ERROR: pollForLocalDPCapsReady failed with 0x%08x, defaulting to kIOThunderboltDPLinkRateHBR\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidth - non_legacy_dpo = %d, non_legacy_dpi = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::auxCallback(%cx) - WARNING: incomingStatus = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::activateAdapter - fDPState = %u\n`
+- `AppleThunderboltDPOutAdapterDelegate<%p>::hpdTimerCommandCallback - ERROR: HPD TRACKING SHOULD BE DISABLED\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::needsEarlyWake - fReactivateOnWake = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpInAdapterStateChange - available = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::stateChanged - invoking dpInAdapterStateChange()\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dpInAdapterStateChange - WARNING: fTerminated = true, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::deactivate - commandWakeup( &fFinalizeWaiting )\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::preActivationHook - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - WORKAROUND: disable DP In BW Allocation Mode Support for special mode\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::updateEstimatedBandwidth - ERROR: failed to get DPI capabilities offset! status = 0x%08x\n`
+- `Thunderbolt DP - estimated BW        - DPO [%u:0x%llx:0x%x] - E=%u G=%u S=0x%08x\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - DPTX Req = 0, but BW allocation test code is enabled - continue\n`
+- `AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::isNonLegacyConnection - ERROR: fDPInPortStruct.dpAdapter is NULL\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::earlyWakeDelay - delay = %lld ms\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - WARNING: dpo_local_cap != dpi_remote_cap, scheduling reactivation\n`
+- `ADP_DP_CS_8.CM Ack`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::earlyWakeDelay - now_timestamp = %lld ms, fHPDPropagationTimeStamp = %lld ms, fDPMuxDelay = %lld ms\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::activate - WARNING: createDPTunnels failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dpAdapterCallback - received a callback for *this, ignoring\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>::probe - service = %p\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doSynchronousEvaluation - calling finishStateChange()\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::dpInAdapterStateChange - UNEXPECTED ERROR: this function should not be called!\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::activate - ERROR: path_count = %d\n`
+- `\"AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - UNEXPECTED ERROR: DP IN BW Allocation Mode not supported!\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setupNotifiers - upStreamCIOPortNumber = %d so upstream DPOut is = 0x%x\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishActivation - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `\"Got a bandwidth allocation request for %u x 100 Mbps!\\n\" @%s:%d`
+- `Thunderbolt DP - downgrading Video path - SRC [%d:0x%llx:0x%x] DST [%d:0x%llx:0x%x] - req_bandwidth = %d --> %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::pollForLocalDPCapsReady - no extended caps\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidth - dpi_remote_cap = 0x%08x, link_rate = 0x%02x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnels - resolving activation early\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]:deactivateAdapter - fDPState = %u\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - calling pollForHPDPropagation\n`
+- `AppleThunderboltDPOutAdapterBase<%p>::configureDPCapabilities - ERROR: No DPI adapter!\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::postTmuInitDPHook - finishing Gen1 DFT workaround\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::startActivation - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishActivation - UNEXPECTED ERROR: this function should not be called!\n`
+- `\"AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: failed to write 0 to CM Ack (workaround)! cm_ack_status = 0x%08x\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::upstreamAdapterActivationResolved - waiting for upstream adapters (again)\n`
+- `Legacy`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::requestTerminateInternal - fFinalizeWaiting woke up\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::preActivationTasks - waitForSNK0PathToActivate()\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::waitForUpstreamAdapters - WARNING: DPO adapter %p has been terminated\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::wake - fDeactivationRequested=%d, fActivationRequested=%d - calling spawnStateChangeThread()\n`
+- `site.AppleThunderboltDPOutAdapterCM`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecALPM - WORKAROUND: disable AUX-less Advanced Link Power Management Support for special mode\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::pollForCommonDPCapsReady - WARNING: We're deactivating or deferring, abort DPRX polling\n`
+- `\"AppleThunderboltDPOutAdapterBase<%p>(%x:%llx:%x)::requestTerminate - ERROR: terminatePhase1 on workloop thread not permitted.\\n\" @%s:%d`
+- `AppleThunderboltDPOutAdapterCM.cpp`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - we're activated and we want to deactivate, deactivating\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: failed to read DPTX Req! status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::initializeMemberVariables\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::doOpenSpecBandwidthDowngrade - ERROR: cached_common_dp_caps = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::checkIfAllAdaptersFound - WARNING: fTerminated = true\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::pollForHPDPropagationInternal - dpo_hpd_asserted = %d\n`
+- `Failed to Activate Reason`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChange - UNEXPECTED ERROR: fNeedEvaluation is already false! Could be a branching path in state evaluation?\\n\" @%s:%d`
+- `Common ALPM Support Is Simulated`
+- `Paths Disabled By Protocol`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::waitForUpstreamAdapters - route = 0x%llx, port = 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::stopHPDTracking - commandSleep( fFindHPDCapabilityCommand )\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::earlyWakeDelay\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidthFromCommonCap - ERROR: DPRX polling timedout, bandwidth to be derived from local and remote caps instead of common cap\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - ERROR: something's gone wrong, status = 0x%08x, will need to reactivate\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::startHPDTracking - checkHPDState()\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::configureDPCapabilities - DPI remote writeDPCapabilitiesRegister( 0x%08x )\n`
+- `AppleThunderboltDPOutAdapterOS2<%p>[%u:0x%llx:0x%x]::doOpenSpecALPM - ERROR: failed to get DPI capabilities offset! status = 0x%08x\n`
+- `AppleThunderboltDPOutAdapterDelegateNonLegacy.cpp`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - dpo_hbr2 = %d, dpi_hbr2 = %d\n`
+- `AppleThunderboltDPOutAdapterBase<%p>::setCachedCommonDPCapabilities - ERROR: DP In adapter is NULL\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::checkIfAllAdaptersFound - DPO adapters/ports: %d/%d\n`
+- `Thunderbolt DP - activation resolved - DPO [%d:0x%llx:0x%x]\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::requestTerminateClearDPIPort - releasing reservation on DPI port 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::activateAdapter - checking for existing paths\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::requestTerminateInternal - UNEXPECTED ERROR: we're supposed to be terminating but we've settled into the wrong state! dp state = %u, desired dp state = %u (valid = %u)\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::assignGroupID - WARNING: DP IN BW Allocation Mode not supported, exit\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - Updating video path\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::createResources\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dispatchInheritPaths - ERROR: dispatchAsync( inheritPaths ) failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::requestTerminate - fFinalizeWaiting woke up\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnels - ERROR: configHopIDs failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidth - WARNING: fTerminated = true\n`
+- `\"Thunderbolt DP - evaluating for > 1m - DPO [%u:0x%llx:0x%x] - UNEXPECTED ERROR! NE=%u NPBWAR=%u NPCU=%u NPHPDS=%u NPNHPDS=%u DDPSNE=%u HPDS=%u NHPDS=%u DPS=%u DDPS=%u T=%u FW=%u Slp=%u EWk=%u LSlp=%u FA=%u FL=%u HPDT=%u\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::dpAdapterCallback - UNEXPECTED ERROR: this function should not be called!\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - ERROR: findExistingPaths failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnels\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::sendDPStateChangedMessage - messageClients( kIOThunderboltMessageDPStateChange )\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - allocated_bandwidth_100_megabit_scale = %u\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::pollForHPDPropagationInternal - dpo_hpd_asserted = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::needsEarlyWake - fReactivateOnWake = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - (2) determine max link rate and lane count supported by DPI and DPO.\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::postCreateDPTunnels - updating estimated bandwidth\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::wakeOverrideHook - fEnableHPDTrackingOnWake = %d, fHPDTracking = %d, fAbortHPDTracking = %d\n`
+- `Paths Disabled For Update`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::activate - WARNING: fTerminated = true\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setReactivationDPInPort - Unable to acquire fPreferredReactivationDPInPort = %p, temp_status = 0x%x, acquiring any one that's free\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::configureDPCapabilities - targetLinkRate = 0x%x, non_legacy_dpo = %d, non_legacy_dpi = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::configureDPCapabilities - WARNING: CMHS polling failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - (4) record established bandwidth, link rate, and lane count\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::hpdStateDetermined - resetting fActivationResolved\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::hpdStateDetermined - about to start activation, resetting fActivationResolved\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::shouldOverdrive - micro_switch = %p micro_address = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnels - WARNING: configureDPCapabilities failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::shouldOverdrive - upstream_port = %p\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - resolving activation after bandwidth downgrade\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::start - checkPathsDisabledByProtocol() returned %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::finishActivation - activationSuccess = %d\n`
+- `AppleThunderboltDPOutAdapterCM<%p>::pollForHPDPropagationInternalVerifyDPIHPDOutputFlags - ERROR: failed to set DPI HPD Output Set bit! status = 0x%08x\n`
+- `Thunderbolt DP - polling for DPRX on DPIn port [%u:0x%llx:0x%x] DPO [%u:0x%llx:0x%x] %llums\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::controlPathListenerCallback - WARNING: fTerminated = %d, fStarted = %d\n`
+- `Thunderbolt DP - quit HPD tracking   - DPO [%u:0x%llx:0x%x] - NE=%u NPBWAR=%u NPCU=%u NPHPDS=%u NPNHPDS=%u DDPSNE=%u HPDS=%u NHPDS=%u DPS=%u DDPS=%u T=%u FW=%u Slp=%u EWk=%u LSlp=%u FA=%u FL=%u HPDT=%u\n`
+- `root`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - fetching existing paths\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::actIfGPUMuxedAway - GPU driving DPI port 0x%x has been muxed away, kicking off state change thread\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::verifyHPD - setting HPD state = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::wakeOverrideHookInternal - notifying DP Connection Manager that we need evaluation\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doSynchronousEvaluation - commandSleep( &fEvaluationInProgress, drop_deadline, THREAD_ABORTSAFE )\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - fDPState = %u, desired_dp_state = %u\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::doOpenSpecCMHandshake - WARNING: OpenSpec DP handshake failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::isNonLegacyConnection - non_legacy_dpo = %d, non_legacy_dpi = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - bandwidth (cached) = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpAdapterCallback - ERROR: unknown adapter_type (0x%x)\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - force disabling DP In BW Allocation Mode Support\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::startHPDTracking - continueChecking = %d, fHPDTracking = %d, fCheckingHPDState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChange - Not at desired DP state yet, notifying DP connection manager for evaluation, calling commandWakeup( &fEvaluationInProgress )\n`
+- `ADP_DP_CS_8.Requested BW`
+- `site.AppleThunderboltDPOutAdapterOS2`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::startHPDTracking\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::deactivate - preserving DPI port 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setupNotifiers - find candidate DPI ports\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dpAdapterCallback - adding %p to fCandidateDPInAdapterSet\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::waitForUpstreamAdapters - calling addActivationWaiter( %p )\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::hpdStateDetermined - fDeactivationRequested = %d, fDPState = %d, fActivationRequested = %d\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - UNEXPECTED ERROR: late sleep must be a deactivation! fDPState = %u, desired_dp_state = %u\\n\" @%s:%d`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - ERROR: failed to clear Allocated BW! status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - updateExistingPaths()\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::scheduleReactivation - setReactivationDPInPort() failed with code = 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::stopHPDTrackingPostHook\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: failed to write new Allocated BW! status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::shouldOverdrive - micro_switch = %p micro_address = %d\n`
+- `AppleThunderboltDPOutAdapterBase`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::deactivateReleaseDPIReservation - preserving DPI port 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dpInAdapterStateChange - fDeactivationRequested set so kickoff deactivation\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishHPDStateDetermined - calling finishStateChange()\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::finalize - fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::deactivate - UNEXPECTED ERROR: this function should not be called!\n`
+- `\"AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: CM Ack is already set! cm_ack_status = 0x%08x\\n\" @%s:%d`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::configReadDWordWithMaskProtected - skipping read DWORD [%u:0x%llx:0x%x] [s:%u, o:0x%08x, d:0x%08x] - \"%s\"\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: failed to write 0 to CM Ack (workaround)! cm_ack_status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>::setLateSleepFlagsInternal - disable reactivateOnWake\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dispatchDeactivation - fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpInAdapterStateChange - scheduling reactivation\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::earlyWake - fReactivateOnWake = %d\n`
+- `ADP_DP_CS_13.CL1 Exit Time`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - panic on activation abort is enabled, status = 0x%08x\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - ERROR: setDPPort failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::stopHPDTracking\n`
+- `AppleThunderboltDPOutAdapterBase.cpp`
+- `Delegate`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::scheduleReactivation - ERROR: unknown DP state (0x%x)\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - WARNING: building HBR paths failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - ERROR: failed to clear CM Ack! status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::deactivate - WARNING: dpi->enableDP failed with 0x%08x (hardware removed?)\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::startFindHPDCapability Not ready - fFindHPDCapabilityCommand = %p, fHPDTimerCommand = %p\n`
+- `AppleThunderboltDPOutAdapterBase<%p>::pollForHPDPropagationInternal - ERROR: failed to read DPI HPD! status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dispatchDeactivation - WARNING: fDPState != kDPStateActivated, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::hpdReadCommandCallback - HPD changed during sampling: fHPDState = %d\n`
+- `Thunderbolt DP - evaluating for > 5s - DPO [%u:0x%llx:0x%x] - NE=%u NPBWAR=%u NPCU=%u NPHPDS=%u NPNHPDS=%u DDPSNE=%u HPDS=%u NHPDS=%u DPS=%u DDPS=%u T=%u FW=%u Slp=%u EWk=%u LSlp=%u FA=%u FL=%u HPDT=%u\n`
+- `AppleThunderboltDPOutAdapterOS2<%p>[%u:0x%llx:0x%x]::doOpenSpecALPM - force disabling ALPM Support\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::pollForCommonDPCapsReady - dprxReadDone=%d, timeElapsed_ms=%llums, status=0x%08x, fDeactivationRequested=%d, fIsAsleep=%d\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::createDPTunnelsCanResolveActivationEarlyAfterOpenSpecBandwidthDowngrade - both DP ports are non-legacy, can resolve activation early\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setupNotifiers - dpo_paths->getCount = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::controlPathListenerCallback - may start activation again, resetting fActivationResolved\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dispatchVerifyHPD - dispatchAsync( verifyHPD )\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::tmuInitDP - beginning Gen1 DFT workaround\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpAdapterCallback - WARNING: fTerminated = true\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::activate - fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::activateAdapter - WARNING: we no longer want to activate fDesiredDPState = %u\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::doOpenSpecBandwidthDowngrade - updated DPO cached common caps = 0x%08x, status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createPaths - attempting to build HBR3 paths, bandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setupNotifiers - find candidate DPI ports\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::waitForSNK0PathToActivate - nothing to wait for: dp_in_adapter->fReservedClient = %p, client_dp_out_adapter = %p\n`
+- `tbdp_dpouttmuconvergenceto`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - calling acquireDPActivationSemaphoreSynchronous()\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::enableDP - ERROR: failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::getDPOutVSECOffset - ERROR: finding fDPOutVSECOffset failed with 0x%08x\n`
+- `site.AppleThunderboltDPOutAdapterOS`
+- `\"AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::updateEstimatedBandwidth - UNEXPECTED ERROR: DP In adapter is missing!\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::hpdReadCommandCallback - first sample: HPD State = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::processFindHPDCapabilityResults - fHPDCapabilityOffset = 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::startHPDRead Not ready - fHPDTimerCommand = %p\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setPowerState - ERROR: unknown power state (%d)\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dpInAdapterStateChange - HPD state = %d, fActivationRequested = %d, fFinalizeWaiting = %d\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::checkWakeWorkPending - UNEXPECTED ERROR: wake work is pending but these flags should not be used, fDeactivationRequested = %d, fActivationRequested = %d\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setupNotifiers - addMatchingNotification( kIOTBPortAdapterClientNameDPOutBase )\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::stateChanged - status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::assignGroupID - done, current Group ID = %u, status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getLocalDPCapabilities - local_data (final) = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::setPowerState - kThunderboltPMWakeState\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::spawnStateChangeThread - WARNING: fTerminated = true, not spawning thread\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::spawnStateChangeThread - updated: fStateChangeThreadRunning = %d, fStateChangeThreadRequest = %d\n`
+- `AppleThunderboltDPOutAdapterBase<%p>::pollForHPDPropagationInternal - ERROR: failed to set DPI HPD Output Set bit! status = 0x%08x\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>::pollForHPDPropagationInternalVerifyDPIHPDOutputFlags - ERROR: DPI HPD Output bits are already set! dpi_hpdc_hpds = 0x%04x\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doSynchronousEvaluation - we're finalizing, need immediate deactivation\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::addActivationWaiter - UNEXPECTED ERROR: this function should not be called!\\n\" @%s:%d`
+- `\"AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - UNEXPECTED ERROR: DP In adapter is missing!\\n\" @%s:%d`
+- `Thunderbolt DP - bandwidth to be derived from local and remote caps instead of common cap\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::controlPathListenerCallback - fDPState = %d, jumping to checkHPDState\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::activate - WARNING: fTerminated = true\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths\n`
+- `Failed to Light`
+- `Need Retry Evaluation`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::configureDPCapabilities - WARNING: OpenSpec DP handshake failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::start - the_switch->getPathsDisabledForUpdate() returned %d\n`
+- `Established DP Lane Count`
+- `Thunderbolt DP - defer evaluation    - DPO [%u:0x%llx:0x%x] - NE=%u NPBWAR=%u NPCU=%u NPHPDS=%u NPNHPDS=%u DDPSNE=%u HPDS=%u NHPDS=%u DPS=%u DDPS=%u T=%u FW=%u Slp=%u EWk=%u LSlp=%u FA=%u FL=%u HPDT=%u\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::updateEstimatedBandwidth\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::wakeOverrideHook - waiting for upstream adapters\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::pause\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::pollForCommonDPCapsReady - can_read_caps = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::setPowerState - kThunderboltPMPauseState\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::hpdStateDetermined - retry count = %d, submitting timer\n`
+- `AppleThunderboltDPOutAdapterDelegate<%p>::startHPDTracking - ERROR: HPD TRACKING SHOULD BE DISABLED\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - calling dpi->enableDP\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::dpInAdapterStateChange - WARNING: fTerminated = true, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - updated DPO cached local caps = 0x%08x, updated DPI cached local caps = 0x%08x, status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::scheduleReactivation - setReactivationDPInPort() failed with code = 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - setting fCachedCommonBandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::hpdReadCommandCallback - first sample: fHPDState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::stopHPDTracking - fFindHPDCapabilityCommand woke up\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dispatchDeactivation - ERROR: dispatchAsync( deactivate ) failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dpAdapterCallback - adding %p to fUpstreamDPOutAdapterSet\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::spawnStateChangeThread - UNEXPECTED ERROR: this function should not be called!\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createPaths - setting established fEstablishedDPBandwidth = %u, fEstablishedDPLinkRate = %u, fEstablishedDPLaneCount = %u\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::doSynchronousEvaluation - calling setHPDTracking( true )\n`
+- `\"AppleThunderboltDPOutAdapter(%x:%llx:%x)::requestTerminate - ERROR: terminatePhase1 on workloop thread not permitted.\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidth - ERROR: getCurrentDPBandwidthFromCommonCap returned zero bandwidth\n`
+- `%lldus TBT Timing <%p> - Wait for HPD propagation done\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::getDPOutVSECOffset - fDPOutVSECOffset = 0x%x\n`
+- `Thunderbolt DP - finished DPRX polling on DPIn port [%u:0x%llx:0x%x] DPO [%u:0x%llx:0x%x] %llums\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - ERROR: acquireDPAdapterSynchronous failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::inheritPaths - ERROR: fDPState != kDPStateActivationInProgress, aborting\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::tmuInitDP - ERROR: failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishHPDStateDetermined - HPD is low, clearing fFailedToActivate\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - failed to deactivate cleanly (hardware removed?), status = 0x%08x\n`
+- `Group ID`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidth - dpi_local_cap = 0x%08x, link_rate = 0x%02x\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - UNEXPECTED ERROR: desired DP state is invalid!\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::doOpenSpecCMHandshake - WARNING: CMHS polling failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::waitForSNK0PathToActivate - commandSleep waiting for earlyWake to complete on = %p \n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dpInAdapterStateChange - scheduling reactivation\n`
+- `AppleThunderboltDPOutAdapterCM<%p>::pollForHPDPropagationInternalVerifyDPIHPDOutputFlags - WARNING: DPI HPD Output bits are already set! dpi_hpdc_hpds = 0x%04x\n`
+- `DPI BWAM Support Is Simulated`
+- `\"AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - ERROR: failed to read Requested Bandwidth! status = 0x%08x\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::controlPathListenerCallback - deactivated, waiting for upstream adapters\n`
+- `Thunderbolt DP - waiting for upstream - DPO [%d:0x%llx:0x%x]\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::stopHPDTracking - commandSleep( fHPDReadCommand )\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::start - fStarted = true, calling registerService\n`
+- `AppleThunderboltDPOutAdapterBase<%p>::getCachedCommonDPCapabilities - ERROR: DP In adapter is NULL\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::controlPathListenerCallback - we're asleep, wait until we're awake for evaluation\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - ERROR: configHopIDs failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - ERROR: dpi->enableDP failed with 0x%08x\n`
+- `%lldus TBT Timing <%p> - Wait for HPD propagation begin\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::hpdStateDetermined - fHPDState = %d, fDPState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::controlPathListenerCallback - got an HPD plug packet, setting fHPDPlugState = %u\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::stateChanged\n`
+- `AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - BW allocation test code is enabled, simulate a BW allocation request\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::setDesiredDPStateForEvaluation - WARNING: attempted to change desired state to a non-steady state (something other than activated or deactivated)\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - ERROR: Group ID evaluation failed! status = 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::actIfGPUMuxedAway - ERROR: fDPInPortStruct.dpAdapter = NULL`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::startHPDTracking - continueChecking = %d, fHPDTracking = %d, fCheckingHPDState = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::setDesiredDPStateForEvaluation - done, desired state = %u, desired state need evaluation = %u, status = 0x%08x\n`
+- `AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::processBandwidthAllocationRequest - WARNING: We're deactivating or deferring, stop polling for DPTX Req = 0\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::checkHPDState - fCheckingHPDState = %d, fHPDTracking = %d, fAbortHPDTracking = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::releaseDPIReservation - releasing reservation on DPI port 0x%x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::dpInAdapterStateChange - ERROR: scheduleReactivation failed with 0x%x, resolve_activation = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::enableDP - enable = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::shouldOverdrive - dp_out_switch = %p\n`
+- `Thunderbolt DP - paths are disabled by protocol (%x:%llx:%x)\n`
+- `%lldus TBT Timing <%p> - hpd_asserted = %d, took %llu ms\n`
+- `\"AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::finishStateChangeComplete - UNEXPECTED ERROR: we're supposed to be terminating but we've settled into the wrong state! dp state = %u, desired dp state = %u (valid = %u)\\n\" @%s:%d`
+- `%lldus AppleThunderboltDPOutAdapterDelegate<%p>::pause - need HPD tracking, fEnableHPDTrackingOnWake = %d\n`
+- `AppleThunderboltDPOutAdapterDelegateLegacy<%p>::withDPOutAdapter - WARNING: Legacy delegate loaded for TR+!\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::start - fDPMaxHBRBandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getCurrentDPBandwidthFromCommonCap - non_legacy_dpo = %d, non_legacy_dpi = %d\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - ERROR: invalid port (%p) or adapter (%p)\n`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::createDPTunnels - setting fCachedCommonBandwidth = %d\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::deactivate - ERROR: dpi->enableDP failed with 0x%08x\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>(%x:%llx:%x)::setReactivationDPInPort - search child for DP In port\n`
+- `%lldus AppleThunderboltDPOutAdapterCM<%p>[%u:0x%llx:0x%x]::changeState - activated successfully, clearing fFailedToActivate\n`
+- `Common ALPM Support`
+- `%lldus AppleThunderboltDPOutAdapter<%p>::getLocalDPCapabilities - WARNING: fTerminated = true\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::start\n`
+- `%lldus AppleThunderboltDPOutAdapterBase<%p>::createDPTunnels - calling pollForHPDPropagation\n`
+- `%lldus AppleThunderboltDPOutAdapterOS<%p>[%u:0x%llx:0x%x]::doOpenSpecBandwidthAllocationMode - DP IN BW Allocation Mode Support = %u\n`
+- `AppleThunderboltDPOutAdapterDelegate<%p>::hpdReadCommandCallback - ERROR: HPD TRACKING SHOULD BE DISABLED\n`
+- `%lldus AppleThunderboltDPOutAdapterDelegateNonLegacy<%p>::doOpenSpecBandwidthDowngrade - common_bandwidth = %d, allocated_bandwidth = %d\n`

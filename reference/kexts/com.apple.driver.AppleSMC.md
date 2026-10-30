@@ -1,0 +1,1506 @@
+# `com.apple.driver.AppleSMC`
+
+- Name: 
+- Version: `3.1.9`
+- UUID: `4616F02C-2CE2-3AA9-BCBD-04C984FE680D`
+- Source version: `794.40.2.0.0`
+- Depends on: [`com.apple.driver.AppleA7IOP`](com.apple.driver.AppleA7IOP.md) 1.0.0, [`com.apple.driver.AppleARMPMU`](com.apple.driver.AppleARMPMU.md) 1.0.0, [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleEmbeddedTempSensor`](com.apple.driver.AppleEmbeddedTempSensor.md) 1.0.0, [`com.apple.driver.IOSlaveProcessor`](com.apple.driver.IOSlaveProcessor.md) 1.0.0, [`com.apple.driver.RTBuddy`](com.apple.driver.RTBuddy.md) 1.0.0, [`com.apple.iokit.IOAccessoryManager`](com.apple.iokit.IOAccessoryManager.md) 1.0.0, [`com.apple.iokit.IOHIDFamily`](com.apple.iokit.IOHIDFamily.md) 2.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 13.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 14.0.0
+
+## Device-tree nodes it binds (9) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/smc/iop-smc-nub/smc-pmu`](../devicetree/root__arm-io__smc__iop-smc-nub__smc-pmu.md) | `AppleSMCPMU` | `smc-pmu` |
+| [`/arm-io/smc/iop-smc-nub/smc-pmu`](../devicetree/root__arm-io__smc__iop-smc-nub__smc-pmu.md) | `AppleSMCPMU` | `smc-pmu` |
+| [`/arm-io/smc/iop-smc-nub/smc-charger`](../devicetree/root__arm-io__smc__iop-smc-nub__smc-charger.md) | `AppleSMCCharger` | `smc-charger` |
+| [`/arm-io/smc/iop-smc-nub/smc-aop`](../devicetree/root__arm-io__smc__iop-smc-nub__smc-aop.md) | `AppleAOPSMC` | `smc-aop` |
+| [`/arm-io/smc/iop-smc-nub/smc-power-out`](../devicetree/root__arm-io__smc__iop-smc-nub__smc-power-out.md) | `AppleSMCPowerOut` | `smc-power-out` |
+| [`/arm-io/smc/iop-smc-nub/smc-acam`](../devicetree/root__arm-io__smc__iop-smc-nub__smc-acam.md) | `AppleSMCACAMDriver` | `smc-acam` |
+| [`/arm-io/smc/iop-smc-nub/smc-acam`](../devicetree/root__arm-io__smc__iop-smc-nub__smc-acam.md) | `AppleSMCACAMDriver` | `smc-acam` |
+| [`/arm-io/smc/iop-smc-nub/smc-charger-util`](../devicetree/root__arm-io__smc__iop-smc-nub__smc-charger-util.md) | `AppleSMCChargerUtil` | `smc-charger-util` |
+| [`/arm-io/smctempsensor0`](../devicetree/root__arm-io__smctempsensor0.md) | `AppleSMCSensorDispatcher` | `smc-tempsensor` |
+
+## IOKit personalities (10) [KC]
+
+### AppleSMCACAMDriver
+- `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+- `IOClass`: `AppleSMCACAMDriver`
+- `IONameMatch`:
+  - `smc-acam`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+- `IOProviderClass`: `AppleSMCInterface`
+- `IOUserClientClass`: `AppleSMCACAMUserClient`
+
+### AppleSMCAOP
+- `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+- `IOClass`: `AppleAOPSMC`
+- `IONameMatch`:
+  - `smc-aop`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+- `IOProbeScore`: `1000`
+- `IOProviderClass`: `AppleSMCInterface`
+
+### AppleSMCCharger
+- `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+- `IOClass`: `AppleSMCCharger`
+- `IONameMatch`:
+  - `smc-charger`
+  - `smc-orion-charger`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+- `IOPlatformWakeAction`: `100`
+- `IOProbeScore`: `1000`
+- `IOProviderClass`: `AppleSMCInterface`
+
+### AppleSMCChargerUtil
+- `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+- `IOClass`: `AppleSMCChargerUtil`
+- `IONameMatch`:
+  - `smc-charger-util`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+- `IOProviderClass`: `AppleSMCInterface`
+
+### AppleSMCDockUSB_UFP
+- `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+- `IOClass`: `AppleSMCDockUSB_UFP`
+- `IONameMatch`:
+  - `dock,smc-usb-ufp`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+- `IOProbeScore`: `1000`
+- `IOProviderClass`: `AppleSMCInterface`
+
+### AppleSMCHighVoltageCharger
+- `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+- `IOClass`: `AppleSMCHighVoltageCharger`
+- `IONameMatch`:
+  - `portmicro,smc-ccg2`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+- `IOProbeScore`: `1000`
+- `IOProviderClass`: `AppleSMCInterface`
+
+### AppleSMCKeysEndpoint
+- `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+- `IOClass`: `AppleSMCKeysEndpoint`
+- `IOMatchCategory`: `AppleSMCKeysEndpoint`
+- `IONameMatch`: `SMCEndpoint1`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+- `IOPlatformPanicAction`: `89000`
+- `IOPlatformSleepAction`: `800`
+- `IOPlatformWakeAction`: `800`
+- `IOProviderClass`: `RTBuddyEndpointService`
+
+### AppleSMCPMU
+- `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+- `IOClass`: `AppleSMCPMU`
+- `IONameMatch`:
+  - `smc-pmu`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+- `IOPlatformSleepAction`: `700`
+- `IOPlatformWakeAction`: `700`
+- `IOProbeScore`: `1000`
+- `IOProviderClass`: `AppleSMCInterface`
+
+### AppleSMCPowerOut
+- `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+- `IOClass`: `AppleSMCPowerOut`
+- `IONameMatch`:
+  - `smc-power-out`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+- `IOProviderClass`: `AppleSMCInterface`
+
+### AppleSMCSensorDispatcher
+- `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+- `IOClass`: `AppleSMCSensorDispatcher`
+- `IONameMatch`:
+  - `smc-tempsensor`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+- `IOProbeScore`: `100`
+- `IOProviderClass`: `AppleARMIODevice`
+- `IOResourceMatch`: `IOKit`
+- `QueueSize`: `0`
+
+
+## C++ classes (29) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleAOPSMC` | 0xa8 | IOService → IORegistryEntry |
+| `AppleSMC` | 0x600 | AppleSMCFamily → IOService → IORegistryEntry |
+| `AppleSMCACAMDriver` | 0xb0 | AppleSMCBinaryLogDriver → IOService → IORegistryEntry |
+| `AppleSMCACAMUserClient` | 0xe8 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `AppleSMCAcamLogHandler` | 0x18 | RTBuddyBinaryLogEntryHandler |
+| `AppleSMCBinaryLogDriver` | 0xa8 | IOService → IORegistryEntry |
+| `AppleSMCCharger` | 0xe8 | IOService → IORegistryEntry |
+| `AppleSMCChargerFunction` | 0x50 | AppleARMFunctionCharger → AppleARMFunction |
+| `AppleSMCChargerPS` | 0x118 | IOAccessoryPowerSource → IOAccessoryTransport → IOService → IORegistryEntry |
+| `AppleSMCChargerUtil` | 0x2d8 | IOService → IORegistryEntry |
+| `AppleSMCClient` | 0x110 | IOUserClient → IOService → IORegistryEntry |
+| `AppleSMCDockUSB_UFP` | 0xe48 | IOAccessoryDockUSB_UFP → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `AppleSMCEmbeddedFunction` | 0x70 | AppleARMFunction |
+| `AppleSMCEventBuffer` | 0x10 | RTBuddyBinaryLogEntryHandler |
+| `AppleSMCFamily` | 0xc0 | IOService → IORegistryEntry |
+| `AppleSMCHighVoltageCharger` | 0x208 | IOService → IORegistryEntry |
+| `AppleSMCHighVoltageChargingData` | 0x38 | IOAccessoryPowerSourceSupplyData |
+| `AppleSMCInterface` | 0x98 | IOService → IORegistryEntry |
+| `AppleSMCKDebug` | 0x10 | RTBuddyBinaryLogEntryHandler |
+| `AppleSMCKeysEndpoint` | 0x658 | AppleSMC → AppleSMCFamily → IOService → IORegistryEntry |
+| `AppleSMCPMU` | 0x100 | IOInterruptController → IOService → IORegistryEntry |
+| `AppleSMCPowerOut` | 0xc0 | IOService → IORegistryEntry |
+| `AppleSMCSensorDispatcher` | 0x288 | IOService → IORegistryEntry |
+| `AppleSMCSensorDispatcherUserClient` | 0xe0 | IOUserClient → IOService → IORegistryEntry |
+| `AppleSOCD` | 0x88 | IOService → IORegistryEntry |
+| `AppleSOCDInterface` | 0x98 | IOService → IORegistryEntry |
+| `OSValueObject<SMCNotification>` | 0x18 |  |
+| `OSValueObject<smcEventArgs>` | 0x18 |  |
+| `cache` | 0x20 |  |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1800)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0000ad3b off=0x0075b5b0-0x007662eb addr=0xfffffe000775f5b0-0xfffffe000776a2eb r--/r--   __TEXT            
+	sz=0x000095e3 off=0x0075bd18-0x007652fb addr=0xfffffe000775fd18-0xfffffe00077692fb               __TEXT.__cstring          (CstringLiterals)
+	sz=0x00000254 off=0x00765300-0x00765554 addr=0xfffffe0007769300-0xfffffe0007769554               __TEXT.__const            
+	sz=0x00000d97 off=0x00765554-0x007662eb addr=0xfffffe0007769554-0xfffffe000776a2eb               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x0002b920 off=0x0265fcf0-0x0268b610 addr=0xfffffe0009663cf0-0xfffffe000968f610 r-x/r-x   __TEXT_EXEC       
+	sz=0x0002ae60 off=0x0265fcf0-0x0268ab50 addr=0xfffffe0009663cf0-0xfffffe000968eb50          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000ac0 off=0x0268ab50-0x0268b610 addr=0xfffffe000968eb50-0xfffffe000968f610          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x000006c0 off=0x04997158-0x04997818 addr=0xfffffe000b99b158-0xfffffe000b99b818 rw-/rw-   __DATA            
+	sz=0x000000cc off=0x04997158-0x04997224 addr=0xfffffe000b99b158-0xfffffe000b99b224               __DATA.__data             
+	sz=0x000004e0 off=0x00000000-0x000004e0 addr=0xfffffe000b99b228-0xfffffe000b99b708               __DATA.__common           (Zerofill)
+	sz=0x00000110 off=0x00000000-0x00000110 addr=0xfffffe000b99b708-0xfffffe000b99b818               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x0000a1e0 off=0x011f7328-0x01201508 addr=0xfffffe00081fb328-0xfffffe0008205508 rw-/rw-   __DATA_CONST      
+	sz=0x000000c8 off=0x011f7328-0x011f73f0 addr=0xfffffe00081fb328-0xfffffe00081fb3f0         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x000000b0 off=0x011f73f0-0x011f74a0 addr=0xfffffe00081fb3f0-0xfffffe00081fb4a0         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00009000 off=0x011f74a0-0x012004a0 addr=0xfffffe00081fb4a0-0xfffffe00082044a0         __DATA_CONST.__const            
+	sz=0x00000880 off=0x012004a0-0x01200d20 addr=0xfffffe00082044a0-0xfffffe0008204d20         __DATA_CONST.__kalloc_type      
+	sz=0x000000a0 off=0x01200d20-0x01200dc0 addr=0xfffffe0008204d20-0xfffffe0008204dc0         __DATA_CONST.__kalloc_var       
+	sz=0x00000560 off=0x01200dc0-0x01201320 addr=0xfffffe0008204dc0-0xfffffe0008205320         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000001e0 off=0x01201320-0x01201500 addr=0xfffffe0008205320-0xfffffe0008205500         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000008 off=0x01201500-0x01201508 addr=0xfffffe0008205500-0xfffffe0008205508         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 404 at 0x04ae4fd0
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     4616F02C-2CE2-3AA9-BCBD-04C984FE680D
+008: LC_SOURCE_VERSION           794.40.2.0.0
+009: LC_FUNCTION_STARTS          offset=0x004ab13d8 size=0x508
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleSMC`
+- `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleNumericVersion`: `52002816`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `3.1.9`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `3.1.9`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `IOKitPersonalities_arm64`:
+  - `AppleSMCACAMDriver`:
+    - `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+    - `IOClass`: `AppleSMCACAMDriver`
+    - `IONameMatch`:
+      - `smc-acam`
+    - `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+    - `IOProviderClass`: `AppleSMCInterface`
+    - `IOUserClientClass`: `AppleSMCACAMUserClient`
+  - `AppleSMCAOP`:
+    - `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+    - `IOClass`: `AppleAOPSMC`
+    - `IONameMatch`:
+      - `smc-aop`
+    - `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+    - `IOProbeScore`: `1000`
+    - `IOProviderClass`: `AppleSMCInterface`
+  - `AppleSMCCharger`:
+    - `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+    - `IOClass`: `AppleSMCCharger`
+    - `IONameMatch`:
+      - `smc-charger`
+      - `smc-orion-charger`
+    - `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+    - `IOPlatformWakeAction`: `100`
+    - `IOProbeScore`: `1000`
+    - `IOProviderClass`: `AppleSMCInterface`
+  - `AppleSMCChargerUtil`:
+    - `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+    - `IOClass`: `AppleSMCChargerUtil`
+    - `IONameMatch`:
+      - `smc-charger-util`
+    - `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+    - `IOProviderClass`: `AppleSMCInterface`
+  - `AppleSMCDockUSB_UFP`:
+    - `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+    - `IOClass`: `AppleSMCDockUSB_UFP`
+    - `IONameMatch`:
+      - `dock,smc-usb-ufp`
+    - `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+    - `IOProbeScore`: `1000`
+    - `IOProviderClass`: `AppleSMCInterface`
+  - `AppleSMCHighVoltageCharger`:
+    - `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+    - `IOClass`: `AppleSMCHighVoltageCharger`
+    - `IONameMatch`:
+      - `portmicro,smc-ccg2`
+    - `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+    - `IOProbeScore`: `1000`
+    - `IOProviderClass`: `AppleSMCInterface`
+  - `AppleSMCKeysEndpoint`:
+    - `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+    - `IOClass`: `AppleSMCKeysEndpoint`
+    - `IOMatchCategory`: `AppleSMCKeysEndpoint`
+    - `IONameMatch`: `SMCEndpoint1`
+    - `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+    - `IOPlatformPanicAction`: `89000`
+    - `IOPlatformSleepAction`: `800`
+    - `IOPlatformWakeAction`: `800`
+    - `IOProviderClass`: `RTBuddyEndpointService`
+  - `AppleSMCPMU`:
+    - `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+    - `IOClass`: `AppleSMCPMU`
+    - `IONameMatch`:
+      - `smc-pmu`
+    - `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+    - `IOPlatformSleepAction`: `700`
+    - `IOPlatformWakeAction`: `700`
+    - `IOProbeScore`: `1000`
+    - `IOProviderClass`: `AppleSMCInterface`
+  - `AppleSMCPowerOut`:
+    - `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+    - `IOClass`: `AppleSMCPowerOut`
+    - `IONameMatch`:
+      - `smc-power-out`
+    - `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+    - `IOProviderClass`: `AppleSMCInterface`
+  - `AppleSMCSensorDispatcher`:
+    - `CFBundleIdentifier`: `com.apple.driver.AppleSMC`
+    - `IOClass`: `AppleSMCSensorDispatcher`
+    - `IONameMatch`:
+      - `smc-tempsensor`
+    - `IOPersonalityPublisher`: `com.apple.driver.AppleSMC`
+    - `IOProbeScore`: `100`
+    - `IOProviderClass`: `AppleARMIODevice`
+    - `IOResourceMatch`: `IOKit`
+    - `QueueSize`: `0`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2005-2025 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0`
+- `OSBundleCompatibleVersion_arm64`: `1.0`
+- `OSBundleLibraries_arm64`:
+  - `com.apple.driver.AppleA7IOP`: `1.0.0`
+  - `com.apple.driver.AppleARMPMU`: `1.0.0`
+  - `com.apple.driver.AppleARMPlatform`: `1.0.0`
+  - `com.apple.driver.AppleEmbeddedTempSensor`: `1.0.0`
+  - `com.apple.driver.IOSlaveProcessor`: `1.0.0`
+  - `com.apple.driver.RTBuddy`: `1.0.0`
+  - `com.apple.iokit.IOAccessoryManager`: `1.0.0`
+  - `com.apple.iokit.IOHIDFamily`: `2.0`
+  - `com.apple.kpi.bsd`: `13.0`
+  - `com.apple.kpi.iokit`: `8.0`
+  - `com.apple.kpi.libkern`: `8.0`
+  - `com.apple.kpi.mach`: `8.0`
+  - `com.apple.kpi.private`: `14.0.0`
+- `OSBundleRequired`: `Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleSMC.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198898084432`
+- `_PrelinkExecutableRelativePath`: `AppleSMC`
+- `_PrelinkExecutableSize`: `265979`
+- `_PrelinkExecutableSourceAddr`: `-2198898084432`
+- `_PrelinkKmodInfo`: `-2198828633768`
+
+## Strings (1156) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `readKeyPolled %c%c%c%c sizeMismatch sent=%d rcvd=%d\n`
+- `Starting AppleSMC kext(%p) - (%s@%s)\n`
+- `%s: Error reading key count. Status: %s\n`
+- `_readPKeyGated`
+- `%s: result %08x failed srcCaps key read %08x  \n`
+- `Oct 13 2026`
+- `ERROR: unrecognized refCon\n`
+- `AppleSMCFamily::%s ERROR: handle == NULL\n`
+- `event_name-gpio%d`
+- `\"%s\" @%s:%d`
+- `fNotificationCallbackDict STOP ####################\n`
+- `HOST_RESTART_WARN`
+- `Wake source flags %s: %#x\n`
+- `virtual IOReturn AdapterSMCCCG2::ReadFirmwareReg(UInt32 *, UInt8)`
+- `AppleSMCSensorDispatcherUserClient::sGetMagnetKey: Error instance\n`
+- `%s:%d %s() kRtbPowerStateOn (%x)\n`
+- `AppleSMC received kPEPanicDataSend\n`
+- `site.AppleSMCInterface`
+- `sysCtl.ReqOSReboot`
+- `_debounceTimerCallback: write D%dDB=0 now=%lld _debounceUntil=%lld _debounceNext=%lld connStatus=%d (%x, %x)\n`
+- `sysState.MacOSPanic`
+- `bool AppleAOPSMC::aopServiceMatched(void *, IOService *, IONotifier *)`
+- `probe`
+- `CPMS BudgetValue`
+- `kSMCGetKeyFromIndex: index=%d result=%s\n`
+- `AppleSMCFamily::%s registered notifications: %d\n`
+- `ERROR: No active key cmd. Dropping received message = 0x%016llx. Last msg sent = 0x%016llx, last result = 0x%x\n`
+- `\"SMC Key Payload SRAM Address is out of range\" @%s:%d`
+- `SMCC::initWithTask client (%s:%d) fUCHasPrivilege = %d\n`
+- `\"%s() Lid=%d is unknown\\n\" @%s:%d`
+- `getMagnetKey`
+- `kIOAccessoryManagerMessageUSBConnectChange %d -> %d\n`
+- `SMCC::initWithTask ERROR: SUPER::initWithTask failed for client (%s:%d)\n`
+- `12111112122212121122221112222221122`
+- `\"something wrong with AppleA7IOPNub\" @%s:%d`
+- `site.AppleSMCHighVoltageAdapterDevice`
+- `AppleSMCFamily: copyProperty ENTRY\n`
+- `Getting info for key %c%c%c%c\n`
+- `SCHG: cannot read battery voltage, result=%x\n`
+- `MaxVoltage1`
+- `kIOReturnSuccess == status`
+- `AppleSMC sECC WriteKey failed (%s)\n`
+- `AppleSMCPowerOut: Init\n`
+- `smc-count`
+- `ERROR: Key table cache not properly initialized (%s).\n\n`
+- `pow.PortStatusChangeEvent`
+- `%s::%s: interrupt for PD hard reset in 100mS (intStatus=0x%x) \n`
+- `AppleSMC is waiting for kSMCNotifySMCPanicDone - timeout(%d sec)\n`
+- `%s:%d %s() CANNOT SLEEP HERE!!!!\n`
+- `waka.%x`
+- `Requested Charging Capability`
+- `1212`
+- `OSBoundedPtr.h`
+- `AppleSMCFamily::%s version.major = 0x%04x\n`
+- `site.AppleSMCClient`
+- `0123456789abcdef`
+- `sysState.unknown`
+- `Baseband`
+- `powerOutInfo`
+- `AppleSMCFamily::%s SMC(%d) vers = %x.%x%01x%x%x\n`
+- `smcMakeKey`
+- `HOST_SLEEP`
+- `site.AppleSMCPMU`
+- `wrote input current limit key CHI1 0x%x (%d)\n`
+- `sysState.APSleep`
+- `virtual IOReturn AdapterSMCCCG2::receiveVDMGated(UInt8 *)`
+- `AppleSMCACAMUserClient successfully passed the memorydescriptor to Userspace\n`
+- `Invalid notification type (0x%02x) ignored.\n`
+- `%s subtype 0x%02x 0x%02x 0x%02x\n`
+- `SOCD: Magic Value %c%c%c%c\n`
+- `AppleSMCFamily::%s version.release = 0x%04x\n`
+- `%s:%d:%s () [%d] Amux BID=%x sum=%llx (%lld)\n`
+- `(AppleSMCChargerUtil): (port:%d) setWinningPowerSourceOption Type:%d V:%d I:%d\n\n`
+- `handlePowerSourceDetect: PD0 %d Volt=%d Current=%d\n`
+- `HID Event\n`
+- `void AppleSMC::_sysCtlNotifyHandler(uint8_t, uint8_t, uint8_t)`
+- `(AppleSMCChargerUtil): %s:%d %s() Auth Status Change notification received\n\n`
+- `AppleSMCFamily::%s WARNING: no registered notifications\n`
+- `_getKeyFromIndexGated`
+- `SMCC::smcYPCEventCheck ERROR: invalid input structure size:%d key %s (client: %s:%d)\n`
+- `smc-pmu-debug-wake`
+- `AppleSMCDockUSB_UFP`
+- `121111121222121211121211`
+- `USB-PD`
+- `%s:%d %s() cannot register function parent\n\n`
+- `BMON: cannot write CHHV, result=%x\n`
+- `HPM Device ID`
+- `SOCD`
+- `AppleSMCFamily::%s create a new dictionary entry for %s\n`
+- `%s:%d %s() _activeKeyCommand (0x%x)\n`
+- `(AppleSMCChargerUtil): POWER_STATE_NOTIFY\n\n`
+- `RootDomain Lid=Closed\n`
+- `sysState.Wake`
+- `caEvent.NovaFaultCount`
+- `1212222222222222222222222`
+- `site.AppleAOPSMCLink`
+- `HardwareVersion`
+- `smc-pmu-iclr`
+- `remove-socd-data`
+- `AppleSMCFamily::%s ERROR: fNotificationCallbackDictLock == NULL\n`
+- `MEST number alloc failed\n`
+- `vldo%d`
+- `updating fLocalOffset from %d to %d\n`
+- `error: failed to read SOCD control key. SMCResult = (%s)\n`
+- `AppleSMCPowerOut: SMC key for PowerBudget is unavailable, not proceeding\n`
+- `gg-fw-update-event-notify`
+- `_powerStateActionGated`
+- `(AppleSMCChargerUtil): IOPort returned null\n`
+- `sysState.BootRomReady`
+- `%s::%s: Received detach notification \n`
+- `[%03d] 0x%016llx: 0x%016llx (type=%d)\n`
+- `ERROR WKTP write to %d failed\n`
+- `(AppleSMCChargerUtil): AppleSMCChargerUtil service registered!\n\n`
+- `AppleSMCSensorDispatcher::%s: Found %u sensors from the device tree\n`
+- `AppleSMCACAMUserClient clientMemoryForType called with type %d\n`
+- `AppleSMCACAMUserClient registerNotificationPort called \n`
+- `handleSMCOverCurrentEvent`
+- `usb`
+- `SMCC::smcYPCEventCheck ERROR: output struct sz (%lu) != input struct sz (%u)\n key %s (client: %s:%d)`
+- `AppleSOCDInterface`
+- `(AppleSMCChargerUtil): Failed to create optionsArr!\n\n`
+- `sysState.SystemRestart`
+- `init`
+- `kSMCGetVers: result = %s\n`
+- `MaxVoltage3`
+- `ACPI panic detected`
+- `SMCResult AppleSMCKeysEndpoint::_sendKeyMsgAndWaitForResponse(ApcKeyMsg *)`
+- `applesmcchargerutil`
+- `Kernel`
+- `_smcNotifyCallout: External Battery Change notification received\n`
+- `pow.InBandCommsStateChange`
+- `pow.LDCMVbusEvent`
+- `%s: SMC-AOP: using AOP memory \n`
+- `1211111212221212111111111111`
+- `ildo%d`
+- `(AppleSMCChargerUtil): _smcNotifArgArrLock not allocated!\n\n`
+- `handleSMCPortStatusChangeEventDetach`
+- `pmp`
+- `MSLD ERROR %s\n`
+- `AppleSMCPMU::%s(): %s vectorNumber=%d key=%08x cmd=%08x (%s)\n`
+- `sysState.BootStatus`
+- `Battery Auth\n`
+- `fNotificationCallbackDict START ####################\n`
+- `%d item(s) in the dictionary (capacity %d)\n`
+- `hid.ButtonEvent`
+- `function-link-data_param_set`
+- `%s: SMC-AOP: %s _index=%d \n`
+- `%s:  result %08x value %x \n`
+- `notification == NULL\n`
+- `AppleSMCFamily::%s ERROR: NULL notif\n`
+- `AppleAOPSMC`
+- `%s`
+- `smcPublishVersion`
+- `Reading %d-bytes from %c%c%c%c\n`
+- `AppleSMCKeysEndpoint::%s(): NTAP result  (%x)]\n`
+- `kIOReturnBadArgument`
+- `AppleSMCPMU`
+- `AppleSMCFamily::%s ERROR: getting currentInstance\n`
+- `SMCC::smcYPCEventCheck ERROR: data size mis-match: %u > %u key %s (client: %s:%d)\n`
+- `sysState.DisplayState`
+- `SOCD: read SOCD data key timed out. SMCResult = (%s)\n`
+- `SOCD: exiting _setSOCDIORegistryEntry in AppleSMC. Offset = 0x%x\n`
+- `SLP_SMC`
+- `SMCC::smcYPCEventCheck ERROR: client (%s:%d) not entitled to read/write key '%s'\n`
+- `virtual bool AppleSMC::start(IOService *)`
+- `AppleSMCFamily::%s Result=0x%02x\n`
+- `Reading %d-bytes from %s\n`
+- `CHG: cannot read CHSC, result=%x\n`
+- `pow.unknown`
+- `ERROR: Failed to attach AppleSOCD to AppleSMC\n`
+- `iterateNotificationCallbacks`
+- `/Library/Caches/com.apple.xbs/54E255AF-DD90-4507-9BE8-379A89574EFC/TemporaryDirectory.eUdRVs/Sources/AppleSMC/AppleSMCKeysEndpoint.cpp`
+- `\"AppleSMC: wrong provider\" @%s:%d`
+- `SMCC::smcYPCEventCheck: changing attribute of key %s because client (%s:%d) not specifically entitled\n`
+- `ap_sys_reset`
+- `kSMCSMBAccessError`
+- `hid.PMUEvent`
+- `NULL != fWorkLoop`
+- `ERROR getting OSDictionary\n`
+- `AppleSMCKeysEndpoint::%s(): newState=%ld  _activeKeyCommand=%x ignored\n`
+- `thermEvent.unknown`
+- `virtual IOReturn AdapterSMCCCG2::switchChargingVoltageGated(UInt32)`
+- `ERROR unregistered PMSettingsCb event %s received\n`
+- `_readSmcGpioKey`
+- `1211111212221212111111`
+- `handlePowerSourceDetect: write D%dSM=%d, (%x)\n`
+- `sysState.RTCAlarmChange`
+- `%s::%s: [%s] kIOACCTransportCC is unavailable and hpm is not in reset \n`
+- `%s::%s: Pulling HPM out of reset and enabling interrupts \n`
+- `AppleSMCACAMUserClient::start called\n`
+- `battery`
+- `AppleSMCFamily::%s ERROR: iter == NULL\n`
+- `initWithTargetDataAndSymbol`
+- `MESS key not present\n`
+- `EDT read of event_name-bit%d failed\n`
+- `SCHG: cannot read CHBI, result=%x\n`
+- `kSMCInstanceError`
+- `pow.OverCurrentEvent`
+- `Charger`
+- `smc_remote_mgmt`
+- `(AppleSMCChargerUtil): matching failed\n\n`
+- `AppleSMCBinaryLogDriver`
+- `x86 global reset detected`
+- `atc`
+- `IENA`
+- `notification %s 0x%02x 0x%02x 0x%02x 0x%02x\n`
+- `HPM Vendor ID`
+- `IBoot`
+- `val cast is NULL\n`
+- `item #%d:\n`
+- `PA = 0x%llx\n`
+- `UNKNOWN`
+- `SMCC::smcYPCEventCheck ERROR: client (%s:%d) not specifically entitled to read key '%s'\n`
+- `site.IOInterruptVector`
+- `Level`
+- `AppleSMCChargerFunction`
+- `kSMCNotifyExternalPowerChange: notify=%x:%x VBUS1=%d, dockNum=%d\n`
+- `gpu-temperature-offset-value`
+- `AppleSMCSensorDispatcher::%s: %d\n\n`
+- `kSMCCommCollision`
+- `sysState.SMCPanicProgress`
+- `hid.HidEvLidStateChange`
+- `HPM Firmware Version`
+- `%s: not yet \n`
+- `AppleSMCPowerOut: unsupported Function Key\n`
+- `ERROR: invalid argument: 0x%02x\n`
+- `AppleSMCFamily: super::copyProperty FAILED\n`
+- `smc-nmi-on-key-timeout`
+- `forcePowerStatus`
+- `kSMCSpuriousData`
+- `kSMCBadArgumentError`
+- `readAdapterInfo`
+- `HOST_PANIC_END`
+- `_smcInterface == NULL\n`
+- `function-link-data_param_get`
+- `%s::%s: [%s] PD Proxy Present now %d \n`
+- `NULL != fCommandGate`
+- `\"%s: Need to add 'reg' entry in device tree for the timers memory space\" @%s:%d`
+- `AppleSMCFamily::%s ERROR: fNotificationCallbackDict->setObject() failed\n`
+- `SMCResult AppleSMCKeysEndpoint::_sendKeyMsgAndPollForResponse(ApcKeyMsg *)`
+- `RootDomain Lid=Open\n`
+- `ERROR: Failed to create AppleSOCD\n`
+- `AppleSMCFamily::%s ERROR: $Num returned 0xff. Setting to 1.\n`
+- `AuthStatus`
+- `HOST_HIBERNATE_WARN`
+- `MEST dict or key alloc failed\n`
+- `MaxVoltage5`
+- `virtual IOReturn AdapterSMCCCG2::reset(bool)`
+- `SoC`
+- `This bounded_ptr is pointing to memory outside of what can be represented by a native pointer.`
+- `RTKitOS`
+- `SMCC::smcYPCEventCheck ERROR: accessing key bigger than %u using SMCParamStruct (not SMCLargeParamStruct). (key %s data size %u client %s:%d)\n`
+- `%s:%d %s() cgeck at=%lld\n`
+- `pow.WirelessFW`
+- `kSMCDeviceAccessError`
+- `%s::%s: *****************Hardware found (VendorID=0x%x - DeviceID=0x%x - FirmwareVersion=0x%x) ********* \n`
+- `AppleSMC detected SMC crash`
+- `ap_panic`
+- `site.AppleSMCHighVoltageChargingData`
+- `site.AdapterSMCCCG2`
+- `(AppleSMCChargerUtil): Failed to obtain workloop!\n\n`
+- `Open`
+- `event_flags-gpio%d`
+- `SilentRunning supported\n`
+- `kSMCReadKeyWithSMC: key=%s dataSize=%d smcID=%d result = %s\n`
+- `GPUMtrMaxOverallTemp`
+- `IOReturn AppleSMCHighVoltageCharger::receiveNotification(void *, UInt32, IOService *, void *, vm_size_t)`
+- `PANIC`
+- `1211111212221212111`
+- `smcGetKeyCount`
+- `smcHandleYPCEventStatic`
+- `fNotificationCallbackDict == NULL!\n`
+- `(AppleSMCChargerUtil): %s() port:%d evt_subtype:%d\n\n`
+- `Closed`
+- `sysState.PltRstLChange`
+- `%s::%s: [%s] kIOACCTransportCC is available and hpm in reset - queue activate micro timer ES \n`
+- `IOUserClientEntitlements`
+- `ptMsg->ui8TagAndId < 0xf`
+- `pmRoot != NULL`
+- `AppleSMCPMU::%s(): PMU.GPIO%d -> vectorNumber=%d\n`
+- `_interruptAction`
+- `virtual IOReturn AdapterSMCCCG2::InterruptAction(uint8_t, uint8_t, uint16_t *, bool *)`
+- `OSValueObject<SMCNotification>`
+- `Getting info for key %s (%x)\n`
+- `AppleSMCSensorDispatcher::%s: Found %u GPU sensor offsets from the device tree\n`
+- `power-state-notify`
+- `_setPowerStateGated`
+- `NULL != _msgLogLock`
+- `AppleSMCFamily::%s ERROR: NULL dataObj\n`
+- `event_name-btn%d`
+- `virtual bool AppleSMCACAMDriver::start(IOService *)`
+- `121111121222121211111122222222222222222212222222222222222222222222222222222222222`
+- `pow.ExternalPowerChange`
+- `%s: SMC-AOP: AOPc configuration not supported \n`
+- `NONE`
+- `kSMCCommandGateError`
+- `virtual IOReturn AppleSMCHighVoltageAdapterDevice::readActiveCapabilityIndex(UInt8 *)`
+- `SMC cross panic flow is not supported, bail out\n`
+- `error: OSData::withBytes failed to publish SOCD buffer in IORegistry\n`
+- `ApplePPM`
+- `handleNotificationAuth`
+- `SMCC::smcYPCEventCheck ERROR: client (%s:%d) not authenticated as root (key %s)\n`
+- `IOAcceleratorES`
+- `AppleSMCFamily::%s ERROR: super's init routine failed\n`
+- `_sendNotifyDirect`
+- `%s:%d %s() 'offw' result=%s\n`
+- `AppleSMCCharger::start() ignoring hvc keys\n`
+- `SMC.MBSE.%02x`
+- `sysState.LidStateChange`
+- `unknown memory type in ACAM registerNotificationPort()`
+- `AppleSMCEmbeddedResource`
+- `IOPMrootDomain`
+- `socd-data`
+- `%s::%s:  me %p event %x arg %x \n`
+- `MaxCurrent1`
+- `%s:%d _activeKeyCommand=%x _idleKeyCommandCount=%d\n`
+- `push-section-descriptors`
+- `kIOReturnInternalError`
+- `MEST key not present\n`
+- `%x.%x%01x%x`
+- `AppleSMCACAMDriver`
+- `timerInterval`
+- `updateActiveChargingCapabilites`
+- `SerialNumber`
+- `ERROR: Read aDC# failed (%s)\n\n`
+- `AppleSMCFamily`
+- `ERROR: _sendKeyMsgAndWaitForResponse() failed %x\n`
+- `site.AppleSMCEventBuffer`
+- `SMCC::start ERROR: SUPER::start failed\n`
+- `handlePowerSourceDetect: _debounceUntil=%lld, behavior->debounceUntil=%lld  \n`
+- `virtual IOReturn AdapterSMCCCG2::readCCCurrent(UInt8 *)`
+- `role`
+- `AppleSMCPowerOut: client registration attempt returned Error 0x%08x\n`
+- `AppleSMCFamily::%s ERROR: smcTryReadKey failed (%s)\n`
+- `handlePowerSourceDetect: write D%dIG=%d, (%x)\n`
+- `SMC::handleClose removed %p from fOpenClients (%d)\n`
+- `AppleSMC detected kPanicBegin\n`
+- `AppleSMCPowerOut: failed to get ppmProvider\n`
+- `AppleSMCFamily: super::copyProperty SUCCESS\n`
+- `%s::%s: interrupt for VDM received (intStatus=0x%x) \n`
+- `Error: AppleSMCACAMUserClient doesnot have any methods to call\n`
+- `smcGetVersWithSMC`
+- `Writing %d-bytes to %c%c%c%c\n`
+- `kSMCNoCommand`
+- `AppleSMCPMU.cpp`
+- `SMC ACM Wakeup SEP\n`
+- `battery-state`
+- `kSMCError`
+- `sysState.NVRAMRequest`
+- `gas gauge`
+- `TimeZoneOffsetSeconds`
+- `readKeyPolled %c%c%c%c result=0x%x\n`
+- `Unknown HID sub-type 0x%x\n`
+- `Time Of Day Sunrise/Sunset thresholds supported\n`
+- `SOCD: write to SOCD control key timed out. SMCResult = (%s)\n`
+- `Writing %d-bytes to %s\n`
+- `(AppleSMCChargerUtil): Read ATP%d key failed ret:%s!\n\n`
+- `IOAccessoryBehavior::resolveMaxNominalVoltage returned voltage too big for SInt32 (%u). Capping to INT32_MAX\n`
+- `system-state-notify`
+- `item #%d: %s\n`
+- `AppleSMCPMU::start: has_smc_extended_keys = %u\n`
+- `sysState.ClearForceDFU`
+- `pow.ChargerStateChange`
+- `%s::%s: [%s] kIOACCTransportCC is unavailable - cancel micro timer ES \n`
+- `MaxCurrent4`
+- `kIOReturnUnsupported`
+- `(AppleSMCChargerUtil): Read D%dST key failed! ret:%s\n\n`
+- `handleSMCPortStatusChangeEvent`
+- `ICLR`
+- `ap_restart`
+- `handlePowerSourceDetect: isPdoUpdateNeeded %d ActivePdoIndex %d\n`
+- `AppleSMCSensorDispatcher::getNfcStateKey: %d\n`
+- `%s: SMC-AOP: SMC AOPc config (%x) \n`
+- `void AppleSMCHighVoltageCharger::_interruptAction(uint8_t, uint8_t)`
+- `socd-data-in-progress`
+- `com.apple.private.applesmc.user-access`
+- `SMCC::open\n`
+- `AppleSMCSensorDispatcher`
+- `_deactivateMicroGated`
+- `%s: Deprecated function, not supported \n`
+- `AppleSMCFamily::%s ERROR: fNotificationCallbackDict == NULL\n`
+- `AppleSMCFamily::%s ERROR: non-ASCII characters detected\n`
+- `NULL != service`
+- `DEBUG: %s:%d %s() Unable to start thread to setup socd interface\n\n`
+- `SMCC::clientClose\n`
+- `Battery Overcharge notification received, turn off Accessory Power\n`
+- `handlePowerSourceDetect: write D%dBD=%x (%x)\n`
+- `%s::%s: ENTRY \n`
+- `AppleSMCACAMUserClient`
+- `CPMS DecisionValue`
+- `AppleSMCFamily::%s ERROR: arrayObj == NULL\n`
+- `SMCC::getTargetAndMethodForIndex(index = %d)\n`
+- `AppleSMCPMU::%s(vn=%d): %s pcIO(gpio%d) cmd=%016llx, value=%x [%s]\n`
+- `1211111111`
+- `pow.LDCMEvent`
+- `AppleSMCEmbedded::%s(): going to sleep -> writing WKTP=%d\n`
+- `\"AppleSMCpanic Tag/ID mismatch\" @%s:%d`
+- `(AppleSMCChargerUtil): %s() port:%d winnerType:%d winnerIdx:%d \n\n`
+- `(AppleSMCChargerUtil): %s() mtype:%d payload0:%d payload1:%d\n`
+- `sensor`
+- `MaxCurrent2`
+- `setBudgetToKernelClientFunction`
+- `smc-panic-on-key-timeout`
+- `_readKeyGated`
+- `Edge`
+- `%s notification errors \n\n`
+- `SCHG: cannot read B0AT, result=%x\n`
+- `AppleSMCKeysEndpoint::%s(): now quiesced MBSE result (%x)\n`
+- `(AppleSMCChargerUtil): Read ANWP key failed! ret:%s\n\n`
+- `kSMCNotifyExternalPowerChange: notify=%x:%x VBUS1=%d dockNum %d result (%x)\n`
+- `_smcNotifyChargerCalloutGated`
+- `caEvent.unknown`
+- `(AppleSMCChargerUtil): OverCurrent event sent to IOPort:%d\n\n`
+- `kIOReturnError`
+- `_debounceTimerCallback port %d: timer callback now=%lld _debounceUntil=%lld _debounceCurrent=%lld delay...\n`
+- `CHG: cannot write CHI1, result=%x\n`
+- `ov_count`
+- `Error: Invalid KDebug Msg size: %d. Expected: %ld\n`
+- `AppleSMCFamily::%s newKey = 0x%04x\n`
+- `root`
+- `AppleSMCHighVoltageCharger`
+- `battauth-event-notify`
+- `\"AppleSMCpanic kSMCNoCommand\" @%s:%d`
+- `ane`
+- `RootDomain == NULL\n`
+- `MaxVoltage7`
+- `%s::%s: capability=0x%x; amps=0x%x, volts=0x%x \n`
+- `AppleSMCPowerOut: admission check, request:%dmW, decision:%dmW\n`
+- `_debounceTimerCallback: timer callback now=%lld hasVbus=%d port %d\n`
+- `smc-ccg2`
+- `result`
+- `CoreAnalytics: Failed to send CA event %s\n`
+- `SMC::handleIsOpen isOpen = %d\n`
+- `AppleSMCPMU::%s(vn=%d): %s %x cmd=%08x, value=%x [%s]\n`
+- `handlePowerSourceDetect: write D%dID=%d, (%x)\n`
+- `AppleSMCPMU::%s(): HID buttonIndex=%d buttonState=%d notification\n`
+- `%s:%d %s() cannot get target instance\n`
+- `DEBUG: %s:%d %s()\n\n`
+- `handlePowerSourceDetect: write D%dAI=%d, result=%d\n`
+- `INIT`
+- `AppleSMCKeysEndpoint::%s(): newState=%d _activeKeyCommand=%x notifyMBSEMessage=%x\n`
+- `SMCC::stop\n`
+- `%s::%s: AppleSMCHighVoltageAdapterDevice type=%d _debug %d \n`
+- `23:29:44`
+- `%s::%s: Published the final big dictionary \n`
+- `ERROR: Read aDC? failed ch=%d (%s)\n\n`
+- `AppleSMCPMU::%s(): vectorNumber=%d disabled_soft=%d disable_hard=%d\n`
+- `ap_shutdown`
+- `user-data-version`
+- `virtual IOReturn AdapterSMCCCG2::readNumberOfCapabilities(UInt8 *)`
+- `RUN`
+- `smc-version-%d`
+- `HOST_OFF`
+- `sysState.USB2PlugEvent`
+- `virtual IOReturn AdapterSMCCCG2::readAdapterInfo(AdapterInfo *)`
+- `Registering notifier for IOPMrootDomain\n`
+- `FullWake PwrState Event\n`
+- `12111112122212121111111122211111`
+- `MaxCurrent3`
+- `MaxCurrent7`
+- `site.AppleSMCDockUSB_UFP`
+- `tdie%d`
+- `socd-%s-nub`
+- `site.AppleAOPSMC`
+- `kRootDomainNotification received\n`
+- `(AppleSMCChargerUtil): Read D%dPt key failed dock:%d! ret:%s\n\n`
+- `timers-reg-index`
+- `site.T`
+- `(AppleSMCChargerUtil): Read AC-W key failed! ret:%s\n\n`
+- `AWLCPU`
+- `handleMatchingNotificationAuth`
+- `AppleSMCACAMDriver.cpp`
+- `%s:%d %s() start=%d\n`
+- `SCHG: cannot read CHBV, result=%x\n`
+- `AppleSMC kPanicBegin MBSE failed (%s)\n`
+- `TypeC`
+- `IOPMShutdownTime`
+- `%s: SMC-AOP: %s _rx[_reg=%llx, _value=%llx, _number=%llx, _address=%llx, _size=%llx] \n`
+- `%s::%s: interrupt for adapter menu (%d) availability (intStatus=0x%x) \n`
+- `NULL != _keyEndpointService`
+- `GG Firmware Update\n`
+- `panicking-on-key-timeout`
+- `void AppleSMCKeysEndpoint::_keyEndpointHandler(void *, void *)`
+- `SMCC::getTargetAndMethodForIndex ERROR: no function at index %d\n`
+- `link-ddr_rx_config`
+- `Reset Retries`
+- `unknown memory type in ACAM clientMemoryForType() \n`
+- `ap_virtual_slp_ll`
+- `hid-event-notify`
+- `writing WKTP=%d\n`
+- `bounded_ptr<T>::operator->: Accessing a member through this pointer would access memory outside of the bounds set originally`
+- `handleSMCPortStatusChangeEventWinUpdate`
+- `SMCC::smcYPCEventCheck ERROR: client (%s:%d) not entitled for key %s\n`
+- `DEBUG: %s:%d %s() Unable to start thread to setup buttons\n\n`
+- `HOST_WAKE`
+- `sysState.PERSTLChange`
+- `Error: AppleSMCACAMUserClient::start provider is Null\n`
+- `Failed to get SMC key LGWT (%s)\n`
+- `(AppleSMCChargerUtil): AppleSMCAdapterSourceOptionType__PD (port:%d) V:%d I:%d\n\n`
+- `AppleSMCChargerPS`
+- `AppleSMCSensorDispatcher::%s: Start success\n\n`
+- `kSMCBadFuncParameter`
+- `Failed to add EventBuffer log handler (%#x)`
+- `AppleSMCEmbedded::%s(): ERROR WKTP write %d failed\n`
+- `AppleSMCFamily::%s SMC Version: prop = \"%s\", vers = \"%s\"\n`
+- `kIOReturnIOError`
+- `SMCC::initWithTask ERROR: owningTask == NULL\n`
+- `/Library/Caches/com.apple.xbs/54E255AF-DD90-4507-9BE8-379A89574EFC/TemporaryDirectory.eUdRVs/Sources/AppleSMC/AppleSMCHighVoltageCharger/AppleSMCHighVoltageCharger.cpp`
+- `%s: result %08x failed to get FW Version 0x%x \n`
+- `i2c`
+- `AppleSMC received kSMCNotifySMCPanicProgress\n`
+- `%s::%s: interrupt for charging capability change (intStatus=0x%x) \n`
+- `%s::%s: Publishing the adapter information to ioreg  \n`
+- `(AppleSMCChargerUtil): %s()\n\n`
+- `SMC ACAM Drvier calling Start in Super\n`
+- `_smcNotifyChargerCallout, pdoSelected %d\n`
+- `SCHG: cannot read VQ0u, result=%x\n`
+- `pow.SharedDeviceDetected`
+- `ERROR: Invalid event %s\n`
+- `magsafe-auth`
+- `%s::%s: portmicro failed to come out of reset \n`
+- `\"Error reading SMC region base from Device Tree\" @%s:%d`
+- `SMCC::open ERROR: fAppleSMC->open failed\n`
+- `AppleSMCPMU::%s(): %s vectorNumber=%d pcIO(gpio%d) cmd=%016llx (%s)\n`
+- `gpu-maxTemperature-offset-value`
+- `sysState.ResumeComplete`
+- `pow.LDCMConnDisEvent`
+- `AppleSMCPMU::%s(vN=%d):`
+- `_smcNotifyCallout`
+- `AppleSMC`
+- `x86 CPU CATERR detected`
+- `12`
+- `_buttonFunction == NULL\n`
+- `ap_hibernate`
+- `AppleSMCKDebug`
+- `1211111212221212122121211111111111111222222222222222221222222222222222221222222222222222222`
+- `pow.AccessoryInfoChange`
+- `%x.%x%01x%x%x%x`
+- `(AppleSMCChargerUtil): Read D%dPt key failed dock:%d! ret1:%s\n\n`
+- `[SMC.MBSW.%x]`
+- `%s:%d %s() 'slpw' result=%s\n`
+- `%s: SMC-AOP: getFn=%p, setFn=%p, enaFn=%p useDDR=%d (tx=%p, rx=%p) \n`
+- `MaxCurrent5`
+- `NULL != _smcKDebugLogHandler`
+- `TCON`
+- `System control error: unknown subtype (%u)\n`
+- `1211`
+- `link-tx_config`
+- `calling registerPMSettingController()\n`
+- `ERROR: failed to register with _fRootDomain, will not receive PM notifications\n`
+- `= %p\n`
+- `SMCC::initWithTask found %d specifcally entitled keys for client (%s:%d)\n`
+- `ap_wdt_expiry`
+- `211111112`
+- `switchChargingVoltage`
+- `msg = 0x%016llx\n`
+- `site.AppleSMCSensorDispatcherUserClient`
+- `Failed to enable notifications (0x%x)!\n\n`
+- `Failed to start AppleSOCD\n`
+- `AppleSMCSensorDispatcher::getPowerPauseKey: %d\n`
+- `1211111212221212112`
+- `%s:%d %s() kRtbPowerStateSleep (%x)\n`
+- `readGPUDieTemp`
+- `sysState.SystemPowerState`
+- `AppleSMCPowerOut: Plug event from SMC\n`
+- `site.AppleSMCHighVoltageCharger`
+- `AppleSMCFamily::%s Publishing %s = %s\n`
+- `Current`
+- `boot-adapter-id`
+- `link-ddr_tx_config`
+- `MaxVoltage2`
+- `ERROR: iodt search didn't yeild an array\n`
+- `kSMCEventBuffWrongOrder`
+- `sysState.ShutdownSystem`
+- `%s::%s: Active charging capability=%d \n`
+- `12111112122212121111111111111`
+- `site.AppleSMCBinaryLogDriver`
+- `121111121222121211121211111111112111212222111112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222212222222222222`
+- `_waitForIdle`
+- `(AppleSMCChargerUtil): Dock-num property not found!\n\n`
+- `(AppleSMCChargerUtil): dockNum %d, magSafeAuth %d, reportPortEvents %d\n\n`
+- `SMC`
+- `pcie`
+- `kSMCTimeoutError`
+- `AppleSMCPowerOut: smc key write %d unsuccessful\n`
+- `callback == NULL\n`
+- `AppleSMCFamily::%s arrayObj == NULL\n`
+- `(AppleSMCChargerUtil): Kext Init!\n\n`
+- `SMCC::start\n`
+- `pow.USBCPDStateChange`
+- `\"AppleSMCInterface: unexpected provider type\" @%s:%d`
+- `_activateMicroGated`
+- `tcal`
+- `handleSMCPortStatusChangeEventPwrInUpdate`
+- `sysCtl.unknown`
+- `%s: result %08x failed key read of adapter Info \n`
+- `NULL != _slaveProcessor`
+- `IOReturn AppleAOPSMCLink::configureEndpoints(AppleSMCFamily *)`
+- `Voltage`
+- `Manufacturer`
+- `/Library/Caches/com.apple.xbs/54E255AF-DD90-4507-9BE8-379A89574EFC/TemporaryDirectory.eUdRVs/Sources/AppleSMC/AppleSMCEmbeddedCharger/AppleSMCChargerUtil.cpp`
+- `%s: SMC-AOP: cannot configure endpoint (%x) \n`
+- `AppleSMCACAMUserClient::initWithTask called\n`
+- `site.AppleSMCKeysEndpoint`
+- `kSMCBadParameter`
+- `com.apple.private.applesmc-timeset`
+- `smcdebug`
+- `AppleSMCPowerOut: Matching with PPM failed\n`
+- `_debounceTimerCallback`
+- `kSMCKeyNotWritable`
+- `%s: D1SX index %d (%02x) \n`
+- `SOCD container data key may not exist on this platform. SMCResult = (%s)\n`
+- `(AppleSMCChargerUtil): Bad smcIf!\n\n`
+- `device_type`
+- `AppleSMCBinaryLogDriver.cpp`
+- `status == kIOReturnSuccess`
+- `macOS panic detected`
+- `SOCD container control key may not exist on this platform. SMCResult = (%s)\n`
+- `writeKeyPolled %c%c%c%c result 0x%x\n`
+- `callFunction`
+- `(AppleSMCChargerUtil): %s() NULL PowerInFeature port:%d dock:%d _pwrKeysSupported:%d \n\n`
+- `smc-pmu-debug`
+- `SLP_MEDIA`
+- `kSMCGetKeyInfoBadAttrib`
+- `receiveNotification`
+- `NULL != _a7IopNub`
+- `type = 0x%02x payload = 0x%02x 0x%02x 0x%02x\n`
+- `kIOReturnSuccess`
+- `AppleSMCFamily::%s ERROR: NULL notif->func\n`
+- `AppleCredentialManager`
+- `/Library/Caches/com.apple.xbs/54E255AF-DD90-4507-9BE8-379A89574EFC/TemporaryDirectory.eUdRVs/Sources/AppleSMC/AppleSMCEmbeddedCharger/AppleSMCCharger.cpp`
+- `System control: subtype (%u), reason (%u)\n`
+- `ioport-client`
+- `site.AppleSMCEmbeddedFunction`
+- `ERROR: _createSensor failed ch=%d\n\n`
+- `handleSMCResult`
+- `kIOReturnNotPermitted`
+- `readAdapterCapabilities`
+- `dictIter == NULL\n`
+- `%s::%s: Capability Requested=%d \n`
+- `ICFG`
+- `kSMCKextError`
+- `sysState.USBPlugEvent`
+- `smc-version`
+- `_smcInitKeyTableCache`
+- `DEBUG: %s:%d %s() ExternalState\n`
+- `site.AppleSMC`
+- `AppleSMCFamily::%s ERROR: SUPER::start routine failed.\n`
+- `Error: can't poll kSMCNoCommand\n`
+- `%s:%d %s() gIOPlatformWakeActionKey retval=%x`
+- `%s::%s: device_type %p %s %d \n`
+- `%s::%s: HPM out of reset already InReset %d UnResetPend %d \n`
+- `GetKeyInfoPolled %c%c%c%c result=0x%x\n`
+- `_pmuCommandGate == NULL\n`
+- `pow.ApWakeState`
+- `Adapter Info`
+- `com.apple.sensor_nv_ov_count`
+- `CoreAnalytics: error - unknown subtype %u\n`
+- `ERROR: failed to create device push section memory object for %s\n`
+- `handlePowerSourceDetect: write D%dNO=%llx (%x)\n`
+- `System control error: subtype (%u) is not implemented\n`
+- `AppleSMCKeysEndpoint`
+- `function-pmu_button`
+- `Adapter Menu`
+- `com.apple.private.smcsensor.user-access`
+- `smc`
+- `(AppleSMCChargerUtil): Failed start provider!\n\n`
+- `(AppleSMCChargerUtil): SMCIF notification registration failed (ret:%s)!\n\n`
+- `smc_dark_wake_thermal_critical`
+- `sysState.ShutdownOS`
+- `smc-aop-debug`
+- `Error instance\n`
+- `ERROR: smcPublishGeneration failed (%s)\n\n`
+- `Process not allowed to set time\n`
+- `registerNotificationCallback`
+- `SMCC::smcYPCEventCheck ERROR: client (%s:%d) not specifically entitled to write key '%s'\n`
+- `rootdev`
+- `ALS`
+- `notification %s: 0x%02x 0x%02x 0x%02x`
+- `kSMCGetKeyInfoSizeZero`
+- `%s: SMC-AOP: start AOP (%x) \n`
+- `site.AppleSMCKDebug`
+- `(AppleSMCChargerUtil): %s:%d %s() matching notification unsuccessful\n\n`
+- `ERROR: NULL found\n`
+- `AppleSMCKeysEndpoint::%s(): unquiesced\n`
+- `(AppleSMCChargerUtil): Read D%dRp key failed! ret:%s\n\n`
+- `kSMCSuccess`
+- `sysState.ResumeDevices`
+- `sysState.PCIeReady`
+- `region-size`
+- `(AppleSMCChargerUtil): %s:%d %s() matching notification unsuccessful!\n\n`
+- `SMCC::smcYPCEventCheck STOP\n`
+- `kSMCKextTimeoutOk`
+- `MaxCurrent6`
+- `\"%s: No downstream IOAccessoryManager to pass on the charging capabilities menu.\" @%s:%d`
+- `handlePowerSourceDetect: write D%dVR=%llx (%x)\n`
+- `sysState.USB2WakeEvent`
+- `%s: SMC-AOP: _index=%d _tx[_reg=%llx, _value=%llx, _number=%llx, _size=%llx] \n`
+- `AppleAOPSMCDriver`
+- `handleSMCEventStartGated`
+- `ERROR: super's init failed for %s\n`
+- `virtual IOReturn AdapterSMCCCG2::readSourceCapabilityItem(UInt8, UInt32 *)`
+- `121111121222121211111`
+- `SMCC::smcYPCEventCheck retval = 0x%08x\n`
+- `kSMCKeyNotReadable`
+- `%s: SMC-AOP: SMC size=%llx != AOP size=%llx using AOP size \n`
+- `OSValueObject<smcEventArgs>`
+- `AppleSMC recording ECC panic address 0x%llx\n`
+- `Invalid LGWT value %llu\n`
+- `SOCD: read SOCD data key error. SMCResult = (%s)\n`
+- `SMCC::smcYPCEventCheck client (%s:%d) entitled to read/write '%s'\n`
+- `InterruptControllerName`
+- `%s: SMC-AOP: EDT size=%llx != AOP size=%llx using AOP size \n`
+- `ERROR: super's init routine failed\n`
+- `EDT wake reason %s added\n`
+- `AppleSMCHighVoltageCharger.cpp`
+- `1222212`
+- `SMCSensor:UserClient is not entitled\n`
+- `ERROR: invalid currentInstance\n`
+- `ERROR: failed to attach %s\n`
+- `function-dock_parent`
+- `\"NULL message\\n\" @%s:%d`
+- `has_pmu_gpio0`
+- `121111121222121211211`
+- `handlePowerSourceDetect: write D%dIR=%llx (%x)\n`
+- `PMU`
+- `error: Invalid SOCD size. socd_size = (%llu)\n`
+- `SMCC::smcYPCEventCheck calling fAppleSMC->smcHandleYPCEvent\n`
+- `121`
+- `site.AppleSMCCharger`
+- `GetKeyInfoPolled %c%c%c%c CmdResult=0x%x\n`
+- `\"Unknown command 0x%x\\n\" @%s:%d`
+- `site.AppleSMCAcamLogHandler`
+- `%s:%d %s(requestAccessoryPowerOff) (%x)\n`
+- `sysState.APNVRAMStatus`
+- `%s: result %08x Event msg code %x arg %x -> IntMask %x \n`
+- `AppleSMCFamily::%s ERROR: arrayObj->setObject() failed\n`
+- `_writeSmcGpioKey`
+- `AppleSMCPowerOut: received budget, timescale %d, reason %d, value %d mW\n`
+- `NULL != _eventbufferlogHandler`
+- `%d`
+- `kSMCKeySizeMismatch`
+- `site.AppleSMCPowerOut`
+- `AppleSMCPowerOut: PPM client is Null\n`
+- `AppleSMCEmbeddedFunction`
+- `AppleSMC: discovery failed for %s fix the device tree\n`
+- `dock-num`
+- `%s:%d %s() ENTER powerStateOrdinal=%x, _powerState=%x\n`
+- `12111112122212121112121111111111211121222211111222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222221222222222222211122211112`
+- `LowPowerWake PwrState Event\n`
+- `SMCC::smcYPCEventCheck error fAppleSMC==NULL\n`
+- `causePowerStatus`
+- `smc-ifc-debug`
+- `(AppleSMCChargerUtil): D%dST is 0! dock:%d!\n\n`
+- `_smcNotifyChargerCallout, result %d\n`
+- `ModelIdentifier`
+- `IOUserClientDefaultLockingSetProperties`
+- `/Library/Caches/com.apple.xbs/54E255AF-DD90-4507-9BE8-379A89574EFC/TemporaryDirectory.eUdRVs/Sources/AppleSMC/AppleSMCBinaryLog/AppleSMCBinaryLogDriver.cpp`
+- `AppleSMCFamily::%s ERROR: smcReadKey REV failed (%s)\n`
+- `IOHibernateState`
+- `com.apple.smcchargerutil`
+- `SMC ACMKernWakeUpSEPOnDoubleClick OK\n`
+- `site.AppleSOCDInterface`
+- `kSMCBadCommand`
+- `sysState.UsbDebugRouteChange`
+- `callPlatformFunction`
+- `sysState.WakeSystem`
+- `sysState.APAwake`
+- `AppleSMCPMU::%s(): no handler for vectorNumber=%d\n`
+- `checkForPwrSrcChanges: current or voltage from source has changed, update SMC\n\n`
+- `sysState.TimeChange`
+- `sysState.APPanic`
+- `AppleSMCHighVoltageCharger::%s: self=%p event=%x arg=%x\n`
+- `macOS watchdog detected`
+- `AppleSMCFamily::%s ERROR: no result container\n`
+- `hvc-debug`
+- `AppleSMCFamily::%s ERROR: smcReadKey $Num failed (%s)\n`
+- `(AppleSMCChargerUtil): Kext Start!\n\n`
+- `site.AppleSOCD`
+- `has_lid_open_sensor`
+- `site.AppleSMCSensorDispatcher`
+- `AppleSMCEmbedded.cpp`
+- `SOCD control key size is of unexpected value (%d). SMCResult = (%s)\n`
+- `111`
+- `SMCC::initWithTask\n`
+- `(AppleSMCChargerUtil): Failed to create powersource!\n\n`
+- `hid.unknown`
+- `Thermal Event\n`
+- `IOUserClientDefaultLockingSingleThreadExternalMethod`
+- `ERROR: failed to create socd interface %s\n`
+- `OFF`
+- `initVector`
+- `AppleSMCInterface.cpp`
+- `SOCD: invalid magic value found\n`
+- `sysState.QuiesceDevices`
+- `RTBuddyService`
+- `rec_count`
+- `SMCC::clientDied\n`
+- `no array found for this item\n`
+- `Starting AppleSMCKeysEndpoint(%p) - (%s@%s)\n`
+- `has_smc_extended_keys`
+- `handleSystemPowerStateChange`
+- `handlePowerSourceDetect: write D%dSC, result=%d\n`
+- `handlePowerSourceDetect: write D%dos=%x (%x)\n`
+- `sysState.PrepareForS0`
+- `NULL != matchingService`
+- `AppleSMCFamily::%s ERROR: smcReadKey failed (%s)\n`
+- `_smcNotifyChargerCallout`
+- `sysState.SystemShutdown`
+- `battAuth.unknown`
+- `ibuck%d`
+- `AppleSMCSensorDispatcher::%s: Could not find any sensors\n`
+- `%s::%s: Putting HPM in reset and disabling interrupts \n`
+- `registerKernelClientToApplePPMFunction`
+- `_smcNotifyChargerCallout: kSMCNotifyContractChange\n`
+- `region-base`
+- `DEBUG: %s:%d %s() key=%x _smcInfoData.dataSize=%d keyOptions=%x payload=%p\n`
+- `%s::%s: _adapterMenu[%d].maxCurrent=%d mA; _adapterMenu[%d].maxVolts=%d mV \n`
+- `tjunc`
+- `AppleSMCPowerOut`
+- `smc%d`
+- `(AppleSMCChargerUtil): No valid power params!\n\n`
+- `%s: SMC-AOP: start LINK (%x) \n`
+- `refCon = %p\n`
+- `SOCD: write to SOCD control key error. SMCResult = (%s)\n`
+- `(AppleSMCChargerUtil): %s:%d %s() registered for Auth Notifications\n\n`
+- `handlePowerSourceDetect: pdoCount %d\n`
+- `%s: SMC-AOP: AOP ep config %s (%x) \n`
+- `Name`
+- `AppleSMCHighVoltageChargingData`
+- `nmiing-on-key-timeout`
+- `Tag/ID of response (0x%02x) doesn't match last command sent (0x%02x). Ignoring.\n`
+- `\"Error reading SMC region size from Device Tree\" @%s:%d`
+- `ERROR: Key interface not properly initialized (%s).\n\n`
+- `unregisterNotificationCallback`
+- `SMCC::start ERROR: fAppleSMC == NULL\n`
+- `ERROR: smcWriteKey CLKH failed (%s)\n`
+- `AppleSMCPowerOut: SMC key:0x%x read unsuccessful result:%s!\n`
+- `CHG: _checkConnection() 'D%dAP' data=%x connStatus=%x success=%x\n`
+- `virtual IOReturn AdapterSMCCCG2::sendVDMGated(UInt8 *, UInt8)`
+- `\"%s:%s:%u: REQUIRE failed: %s\" @%s:%d`
+- `System State\n`
+- `Failed to write SMC key LGSD (%s)\n`
+- `AppleSMCPMU::start\n`
+- `%s:%d %s() gIOPlatformSleepActionKey result=%x`
+- `%s:%d %s(smcWriteKey-BNOC) (%x)\n`
+- `virtual bool AppleSMCBinaryLogDriver::start(IOService *)`
+- `v36@?0i8^?12^{OSObject=^^?i}20Q28`
+- `ERROR: failed to start %s`
+- `hidEvent == NULL\n`
+- `%s: result %08x failed key read D1SN n caps \n`
+- `NULL != _armIODevice`
+- `tdev%d`
+- `%s:%d %s(vN=%d) result=%d`
+- `AppleSMCFamily::%s ERROR: newCallback == NULL\n`
+- `smc.%s(0x%02x%02x%02x%02x)`
+- `%s::%s: interrupt for HPM firmware boot completion (intStatus=0x%x) \n`
+- `AppleSMCPowerOut: RegisterService\n`
+- `21121111`
+- `handlePowerSourceDetect: D%dID=%d, D%dIG=%d, D%dAR=%d, (%x)\n`
+- `MaxVoltage6`
+- `start`
+- `Generation`
+- `sysState.QuiesceComplete`
+- `debug`
+- `_fLocalOffset is NULL\n`
+- `(AppleSMCChargerUtil): _argArray not allocated!\n\n`
+- `ERROR: failed to get socd push buffer\n`
+- `rd`
+- `PMU2`
+- `handlePowerSourceDetect: write D%dFC=%llx (%x)\n`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `/Library/Caches/com.apple.xbs/54E255AF-DD90-4507-9BE8-379A89574EFC/TemporaryDirectory.eUdRVs/Sources/AppleSMC/AppleSMCEmbeddedFunctions.cpp`
+- `(AppleSMCChargerUtil): SMC key write %d unsuccessful (ret:%s)\n\n`
+- `ERROR: failed to create device push record memory object for %s`
+- `HOST_OFF_WARN`
+- `AppleSMCSensorDispatcher::%s: AppleSMCSensorDispatcher: too many sensors in the device tree\n`
+- `sysState.SMCPanicDone`
+- `array with %d item(s) (capacity %d)\n`
+- `AppleSMCEmbeddedFunctions.cpp`
+- `ERROR: failed to create mem ranges array for %s\n`
+- `%s:%d %s() gIOPlatformWakeActionKey 'waka' result=%s`
+- `%s:%d %s() vbus=%d _hasVBUS=%d _debounceUntil=%llu port %d\n`
+- `sysState.AudioPlayback`
+- `sysState.SystemState`
+- `AppleSMCChargerUtil`
+- `1211111212221212111111111111121222`
+- `site.AppleSMCChargerPS`
+- `%s::%s: %s:%d %s() cannot register function parent\n \n`
+- `SOCD: command data doesn't match. input = 0x%x, output = 0x%x\n`
+- `_sendLidStateToRootDomainGated`
+- `TheTimesAreAChangin`
+- `vbuck%d`
+- `%x.%x%01x%x%x`
+- `12111112122212121`
+- `(AppleSMCChargerUtil): AppleSMCAdapterSourceOptionType__TypeC (port:%d) V:%d I:%d\n\n`
+- `site.AppleSMCACAMUserClient`
+- `_writeKeyGated`
+- `getVectorType`
+- `%s:   \n`
+- `void *AppleSMCKeysEndpoint::_getSRAMAddressGated()`
+- `%s:  result %x Ver %x \n`
+- `setPowerState`
+- `SMCC::close\n`
+- `handlePowerSourceDetect: write D%dDE=%s (%x)\n`
+- `AppleSMCSensorDispatcherUserClient::sGetPowerPauseKey: Error instance\n`
+- `(AppleSMCChargerUtil): %d key write status %d, AuthStatus %d\n\n`
+- `AppleSMCAcamLogHandler`
+- `SCHG: cannot read VQ0B, result=%x\n`
+- `pow.BatteryStateChange`
+- `unknown`
+- `AppleSMCFamily::%s version.build = 0x%04x\n`
+- `AppleLPM`
+- `com.apple.private.applesmc.acam-user-access`
+- `AppleSMCKeysEndpoint::%s(): MBSE result  (%x)]\n`
+- `kSMCEventBuffReadError`
+- `function-link-data_enable`
+- `%s:%d signature=%x key=%x size=%d type=%x attrib=%x _smcKeyCtlCmd.code=%016llx inputParam=%p [%llx] outputParam=%p [%llx] (%x)\n`
+- `push-buffer-address`
+- `POWER_TRAP`
+- `kIOReturnExclusiveAccess`
+- `121111121222121211122121`
+- `AppleSMCPowerOut: PPM Client is Null\n`
+- `SMC::handleOpen added %p to fOpenClients (%d)\n`
+- `12111112122212121212211111111`
+- `%s::%s: failed (%x) %s \n`
+- `Active Charging Capability`
+- `AppleSMCClient`
+- `%s: SMC-AOP: %s _tx[_reg=%llx, _value=%llx, _number=%llx, _address=%llx, _size=%llx] \n`
+- `USB PD caps`
+- `%s::%s: Falling through \n`
+- `macEFI panic detected`
+- `bmc_remote_mgmt`
+- `kSMCGetKeyInfo: key=%s result=%s\n`
+- `event_name-bit%d`
+- `%s:%d %s(smcReadKey-BNOC) (%x)\n`
+- `%s: SMC-AOP: using static EDT configuration \n`
+- `USB Type-C Current`
+- `WARNING: failed getting localOffset\n`
+- `site.AppleSMCFamily`
+- `kSMCGetKeyCount: result=%s\n`
+- `_getKeyInfoGated`
+- `push-buffer-size`
+- `SLP_S2R`
+- `vectorCanBeShared`
+- `smc_thermal_critical`
+- `AppleSMCFamily::%s ERROR: NULL found\n`
+- `kIOReturnNotPrivileged`
+- `site.cache`
+- `%s: result %08x failed key read D1DC TypeC CurrentType \n`
+- `Created eventbuffer log handler`
+- `OvercurrentCount`
+- `handleSMCEvent`
+- `SMC ACMKernWakeUpSEPOnDoubleClick failed 0x%x\n`
+- `kSMCASleepError`
+- `USB PD hard reset`
+- `%s::%s: interrupt for adapter info availability (intStatus=0x%x) \n`
+- `%s::%s: interrupt for Select Index (%d) Confirmed (intStatus=0x%x) \n`
+- `NULL != _sharedKeyBuff`
+- `kSMCKeyIndexRangeError`
+- `%s: index %d key %08x \n`
+- `ERROR: Unable to enable notification interface (%s).\n\n`
+- `%x.%x%01x%x%x%x%x`
+- `AppleSMCFamily::%s ERROR: invalid argument\n`
+- `(AppleSMCChargerUtil): Failed to create threadCall!\n\n`
+- `AppleSMCFamily::%s dictionary already contained %s\n`
+- `%s: Number of keys on this target: %d\n`
+- `AppleSMCPMU::%s(vn=%d): value=%x vt=%s [%s]\n`
+- `site.AppleSMCChargerUtil`
+- `dockNum`
+- `(AppleSMCChargerUtil): SYSTEM_STATE_NOTIFY\n\n`
+- `pow.ContractChange`
+- `AppleSMCFamily::%s invoked with %s\n`
+- `%s::%s: This adapter supports %d different capabilities \n`
+- `thermal-event-notify`
+- `/Library/Caches/com.apple.xbs/54E255AF-DD90-4507-9BE8-379A89574EFC/TemporaryDirectory.eUdRVs/Sources/AppleSMC/AppleSMCEmbeddedPMU/AppleSMCPMU.cpp`
+- `pow.WirelessLogsAvailable`
+- `23:29:46`
+- `FirmwareVersion`
+- `site.AppleSMCACAMDriver`
+- `/Library/Caches/com.apple.xbs/54E255AF-DD90-4507-9BE8-379A89574EFC/TemporaryDirectory.eUdRVs/Sources/AppleSMC/AppleSMCBinaryLog/AppleSMCACAMDriver.cpp`
+- `%s:%d %s() _hasVBUS=%d _bootBrickID=%x (%x) port %d\n`
+- `%s: SMC-AOP: Warning ZERO reg=%llx value=%llx number=%llx  \n`
+- `Brick ID`
+- `Error: Invalid EventBuffer Message size. Expected: %lu, got: %u\n`
+- `EDT read of %s failed\n`
+- `(AppleSMCChargerUtil): AppleSMCAdapterSourceOptionType__BrickID (port:%d) V:%d I:%d\n\n`
+- `AppleSMC received kSMCNotifySMCPanicDone\n`
+- `(smc-socd)`
+- `DEBUG: %s:%d %s() adcChannel=%d\n\n`
+- `site.AppleSMCChargerFunction`
+- `aop-smc-endpoint-cfg`
+- `smc-logsize`
+- `ERROR: bad input parameter\n`
+- `Unable to obtain shared SRAM Addr\n`
+- `readKeyPolled %c%c%c%c CmdResult=0x%x\n`
+- `SLP_DDR`
+- `SHUTDOWN`
+- `(AppleSMCChargerUtil): Read D%dBI key failed ret:(%s)!\n\n`
+- `plug-event-interest`
+- `error: IOMallocData failed to allocate SOCD buffer in memory\n`
+- `AppleSMCPMU::%s(): Unexpected HID buttonIndex=%d\n`
+- `%s:%d %s() 'rest' result=%s\n`
+- `sysCtl.ReqOSShutdown`
+- `Power State\n`
+- `dockInfo`
+- `HID Lid=%s\n`
+- `undefined`
+- `%s() vbus=%d _hasVBUS=%d,port %d \n\n`
+- `smc-aop-use_ddr`
+- `static AppleAOPSMCLink *AppleAOPSMCLink::withProvider(IOService *)`
+- `x86 straight S5 shutdown detected`
+- `smc-charger-debug`
+- `Getting key for index %d\n`
+- `12111211211222`
+- `IOUserClientDefaultLocking`
+- `NULL != _keyEndpoint`
+- `ERROR: _fLocalOffset == NULL\n`
+- `(AppleSMCChargerUtil): %s() port:%d\n\n`
+- `AppleSOCD`
+- `cache`
+- `SCHG: cannot read VBUS, result=%x\n`
+- `smcTryGetKeyCount`
+- `HOST_SLP_SMC`
+- `_readDeviceInfo`
+- `panic-wait-forever`
+- `NULL != _sharedKeyBuffMap`
+- `Tag/ID mismatch`
+- `%s:%d signature=%x key=%x size=%d type=%x attrib=%x _smcKeyCtlCmd.code=%08x inputParam=%p [%x] outputParam=%p [%x] (%x)\n`
+- `KDebugCoreID`
+- `ERROR: smcWriteKey CLKT failed (%s)\n`
+- `NULL != _sharedKeyBuffDescriptor`
+- `report-port-event`
+- `(AppleSMCChargerUtil): SMC key for Auth is unavailable, not proceeding\n\n`
+- `SMCC::initWithTask client (%s:%d) fUCHasEntitlement = %d\n`
+- `DEBUG: %s:%d %s() cannot register interrupt controller (%x)\n`
+- `AppleSMCInterface`
+- `sysCtl.ReqOSSleep`
+- `Reading %d-bytes from %s (%d-byte payload)\n`
+- `DEBUG: %s:%d %s() cannot register function parent\n`
+- `performCommandV3`
+- `handlePowerSourceDetect: _debounceUntil=%lld, behavior->debounceUntil=%lld now=%lld\n`
+- `SilentRunning`
+- `AWAKE`
+- `SMCC::open ERROR: no fAppleSMC\n`
+- `SMC ACAM Drvier::start\n`
+- `%s: SMC-AOP: _index=%d _rx[_reg=%llx, _value=%llx, _number=%llx, _size=%llx] \n`
+- `Failed to receive panic write done before timeout\n`
+- `FAILED CANNOT START SUPER (%s@%s)\n`
+- `ERROR: sensorHubDirectWriteSensorExchangeKey(%d) failed\n`
+- `ERROR: smcHandleYPCEventStatic failed (%s).\n`
+- `\"AppleSMCEmbedded::start failed to allocate acm threadcall\" @%s:%d`
+- `handlePowerSourceDetect: write D%dDB=1 _debounceUntil=%lld, now=%lld (%x) start_timer\n`
+- `sysState.PwrBtnShutdownWarn`
+- `%s: SMC-AOP: AOPc not supported in firmware (%x) \n`
+- `= %d\n`
+- `handleMatchingNotificationPowerIn`
+- `SLEEP`
+- `HOST_PANIC_BEGIN`
+- `SMC.MBSW.`
+- `AppleSMCCharger`
+- `kSMCReadwPaySizeMismatch`
+- `AppleSMCSensorDispatcherUserClient`
+- `IOPort`
+- `AppleSMCFamily::%s version.minor = 0x%04x\n`
+- `kSMCWriteKeyWithSMC: key=%s dataSize=%d smcID=%d result = %s\n`
+- `(AppleSMCChargerUtil): %s() port:%d dock:%d \n\n`
+- `kSMCFramingError`
+- `AppleSMCSensorDispatcherUserClient::sGetNfcStateKey: Error instance\n`
+- `AppleSMCKeysEndpoint.cpp`
+- `PanicMedic`
+- `SMCC::smcYPCEventCheck START\n`
+- `kSMCKeyNotFound`
+- `%s: SMC-AOP: _index=%d _flags=%x _address=%llx, _size=%llx \n`
+- `%s: SMC-AOP: Not configured \n`
+- `12111112122212121222222222222222222222222222222222222111121111111`
+- `/Library/Caches/com.apple.xbs/54E255AF-DD90-4507-9BE8-379A89574EFC/TemporaryDirectory.eUdRVs/Sources/AppleSMC/AppleSMCEmbedded.cpp`
+- `Unknown Source`
+- `AppleSMCKeysEndpoint::%s(): newState=%d _activeKeyCommand=%x\n`
+- `HOST_SLEEP_WARN`
+- `%02x`
+- `MaxVoltage4`
+- `macOS panic unknown`
+- `AppleSMCFamily::%s sym = %s\n`
+- `dcp`
+- `kSMCUnsupportedFeature`
+- `pow.AdapterDetailsChange`
+- `AppleSMCEmbedded::%s(): ENTER powerStateOrdinal=%x, prevState=%x\n`
+- `error: Invalid socd data key size. (%d)\n`
+- `CoreAnalytics: event %s = %u, %s = %u\n`
+- `AppleSMCFamily::%s keyString = %s\n`
+- `AppleSMCEventBuffer`
+- `GPUMtrAverageTemp`
+
+**[__TEXT.__os_log]**
+
+- `(AppleSMCChargerUtil): D%dST is 0! dock:%d!\n\n`
+- `SMC EventBuffer data sub-system ID %#x : %08llX\n`
+- `(AppleSMCChargerUtil): Failed to create powersource!\n\n`
+- `(AppleSMCChargerUtil): _smcNotifArgArrLock not allocated!\n\n`
+- `SMC EventBuffer initialized\n`
+- `Failed to find AppleSMC service`
+- `invalid data packet`
+- `AppleSMCFamily::%s ERROR in %s.  %s %s(0x%x)\n`
+- `(AppleSMCChargerUtil): %s() NULL PowerInFeature port:%d dock:%d _pwrKeysSupported:%d \n\n`
+- `could not connect to %s\n`
+- `(AppleSMCChargerUtil): Kext Init!\n\n`
+- `(AppleSMCChargerUtil): AppleSMCChargerUtil service registered!\n\n`
+- `(AppleSMCChargerUtil): %s() port:%d evt_subtype:%d\n\n`
+- `SMC: SSM state change: %s -> %s\n`
+- `(AppleSMCChargerUtil): AppleSMCAdapterSourceOptionType__PD (port:%d) V:%d I:%d\n\n`
+- `(AppleSMCChargerUtil): POWER_STATE_NOTIFY\n\n`
+- `Could not add command gate to workloop`
+- `couldn't create timer event source`
+- `(AppleSMCChargerUtil): Dock-num property not found!\n\n`
+- `(AppleSMCChargerUtil): SMCIF notification registration failed (ret:%s)!\n\n`
+- `(AppleSMCChargerUtil): Read D%dPt key failed dock:%d! ret1:%s\n\n`
+- `(AppleSMCChargerUtil): %s() mtype:%d payload0:%d payload1:%d\n`
+- `couldn't add timer event source to work loop`
+- `(AppleSMCChargerUtil): dockNum %d, magSafeAuth %d, reportPortEvents %d\n\n`
+- `(AppleSMCChargerUtil): SYSTEM_STATE_NOTIFY\n\n`
+- `(AppleSMCChargerUtil): SMC key write %d unsuccessful (ret:%s)\n\n`
+- `SMC EventBuffer data: platform subsystem : %08llX\n`
+- `(AppleSMCChargerUtil): Failed to create optionsArr!\n\n`
+- `(AppleSMCChargerUtil): %s:%d %s() matching notification unsuccessful!\n\n`
+- `(AppleSMCChargerUtil): Read D%dPt key failed dock:%d! ret:%s\n\n`
+- `(AppleSMCChargerUtil): No valid power params!\n\n`
+- `(AppleSMCChargerUtil): Kext Start!\n\n`
+- `(AppleSMCChargerUtil): %s:%d %s() Auth Status Change notification received\n\n`
+- `(AppleSMCChargerUtil): Read ANWP key failed! ret:%s\n\n`
+- `(AppleSMCChargerUtil): Read D%dST key failed! ret:%s\n\n`
+- `(AppleSMCChargerUtil): Read D%dRp key failed! ret:%s\n\n`
+- `AppleSMCSensorDispatcher provider is not AppleARMIODevice`
+- `(AppleSMCChargerUtil): SMC key for Auth is unavailable, not proceeding\n\n`
+- `(AppleSMCChargerUtil): _argArray not allocated!\n\n`
+- `(AppleSMCChargerUtil): %s() port:%d winnerType:%d winnerIdx:%d \n\n`
+- `(AppleSMCChargerUtil): (port:%d) setWinningPowerSourceOption Type:%d V:%d I:%d\n\n`
+- `(AppleSMCChargerUtil): Bad smcIf!\n\n`
+- `Error pushing ACAM timestamp into IOSharedQueue\n`
+- `(AppleSMCChargerUtil): Read ATP%d key failed ret:%s!\n\n`
+- `Could not find SMC kext resource`
+- `Failed to read key %d from SMC with error code %s`
+- `Failed to write key %d to SMC with error code %s`
+- `(AppleSMCChargerUtil): Failed start provider!\n\n`
+- `(AppleSMCChargerUtil): AppleSMCAdapterSourceOptionType__TypeC (port:%d) V:%d I:%d\n\n`
+- `(AppleSMCChargerUtil): Read D%dBI key failed ret:(%s)!\n\n`
+- `(AppleSMCChargerUtil): %s:%d %s() registered for Auth Notifications\n\n`
+- `(AppleSMCChargerUtil): Read AC-W key failed! ret:%s\n\n`
+- `(AppleSMCChargerUtil): Failed to obtain workloop!\n\n`
+- `(AppleSMCChargerUtil): matching failed\n\n`
+- `(AppleSMCChargerUtil): IOPort returned null\n`
+- `(AppleSMCChargerUtil): %s:%d %s() matching notification unsuccessful\n\n`
+- `(AppleSMCChargerUtil): %d key write status %d, AuthStatus %d\n\n`
+- `(AppleSMCChargerUtil): %s() port:%d dock:%d \n\n`
+- `(AppleSMCChargerUtil): AppleSMCAdapterSourceOptionType__BrickID (port:%d) V:%d I:%d\n\n`
+- `(AppleSMCChargerUtil): Failed to create threadCall!\n\n`
+- `(AppleSMCChargerUtil): %s() port:%d\n\n`
+- `(AppleSMCChargerUtil): OverCurrent event sent to IOPort:%d\n\n`
+- `(AppleSMCChargerUtil): %s()\n\n`

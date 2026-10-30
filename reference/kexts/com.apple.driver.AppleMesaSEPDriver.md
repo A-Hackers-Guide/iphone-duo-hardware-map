@@ -1,0 +1,1047 @@
+# `com.apple.driver.AppleMesaSEPDriver`
+
+- Name: AppleMesaSEPDriver
+- Version: `100.99`
+- UUID: `82132F23-7E9F-3988-9A47-D6293976023D`
+- Source version: `10321.40.10.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleBiometricSensor`](com.apple.driver.AppleBiometricSensor.md) 1.0.0, [`com.apple.driver.AppleSEPManager`](com.apple.driver.AppleSEPManager.md) 1.0.0, [`com.apple.driver.AppleSMC`](com.apple.driver.AppleSMC.md) 1.0, [`com.apple.driver.IOSlaveProcessor`](com.apple.driver.IOSlaveProcessor.md) 1.0.0, [`com.apple.iokit.AppleSEPGenericTransfer`](com.apple.iokit.AppleSEPGenericTransfer.md) 1.0.0, [`com.apple.iokit.IOBiometricFamily`](com.apple.iokit.IOBiometricFamily.md) 1.0.0, [`com.apple.iokit.IOHIDFamily`](com.apple.iokit.IOHIDFamily.md) 1.4, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (1) [KC]
+
+### AppleMesaSEPDriver
+- `CFBundleIdentifier`: `com.apple.driver.AppleMesaSEPDriver`
+- `IOClass`: `AppleMesaSEPDriver`
+- `IOMatchCategory`: `com_apple_driver_AppleMesaSEPDriver`
+- `IONameMatch`: `sep-endpoint,sbio`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleMesaSEPDriver`
+- `IOProbeScore`: `1000`
+- `IOProviderClass`: `AppleSEPDeviceService`
+
+
+## C++ classes (7) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleMesaSEPDriver` | 0x2c20 | AppleMesaSEPDriverInterface → IOBiometricSensorInterface → IOSEPBiometricService → IOBiometricService → IOService → IORegistryEntry |
+| `AppleMesaSEPDriverInterface` | 0x1d8 | IOBiometricSensorInterface → IOSEPBiometricService → IOBiometricService → IOService → IORegistryEntry |
+| `IOMesaCaptureData` | 0x30 |  |
+| `IOMesaCaptureDataLocal` | 0x48 | IOMesaCaptureData |
+| `IOMesaCaptureDataQueue` | 0x40 | IOBioArrayQueue → IOBioQueue |
+| `IOMesaLogging` | 0x108 |  |
+| `MesaCachedSystemConfig` | 0x28 | CachedSystemConfig |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0000953b off=0x0065bf00-0x0066543b addr=0xfffffe000765ff00-0xfffffe000766943b r--/r--   __TEXT            
+	sz=0x00000134 off=0x0065c618-0x0065c74c addr=0xfffffe0007660618-0xfffffe000766074c               __TEXT.__const            
+	sz=0x00005e4e off=0x0065c74c-0x0066259a addr=0xfffffe000766074c-0xfffffe000766659a               __TEXT.__cstring          (CstringLiterals)
+	sz=0x00002ea1 off=0x0066259a-0x0066543b addr=0xfffffe000766659a-0xfffffe000766943b               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x00028c30 off=0x02242030-0x0226ac60 addr=0xfffffe0009246030-0xfffffe000926ec60 r-x/r-x   __TEXT_EXEC       
+	sz=0x00028580 off=0x02242030-0x0226a5b0 addr=0xfffffe0009246030-0xfffffe000926e5b0          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000006b0 off=0x0226a5b0-0x0226ac60 addr=0xfffffe000926e5b0-0xfffffe000926ec60          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00000239 off=0x04979420-0x04979659 addr=0xfffffe000b97d420-0xfffffe000b97d659 rw-/rw-   __DATA            
+	sz=0x000000c4 off=0x04979420-0x049794e4 addr=0xfffffe000b97d420-0xfffffe000b97d4e4               __DATA.__data             
+	sz=0x00000150 off=0x00000000-0x00000150 addr=0xfffffe000b97d4e8-0xfffffe000b97d638               __DATA.__common           (Zerofill)
+	sz=0x00000021 off=0x00000000-0x00000021 addr=0xfffffe000b97d638-0xfffffe000b97d659               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x000023d0 off=0x0116a4e8-0x0116c8b8 addr=0xfffffe000816e4e8-0xfffffe00081708b8 rw-/rw-   __DATA_CONST      
+	sz=0x00000020 off=0x0116a4e8-0x0116a508 addr=0xfffffe000816e4e8-0xfffffe000816e508         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000020 off=0x0116a508-0x0116a528 addr=0xfffffe000816e508-0xfffffe000816e528         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00001a68 off=0x0116a528-0x0116bf90 addr=0xfffffe000816e528-0xfffffe000816ff90         __DATA_CONST.__const            
+	sz=0x000003c0 off=0x0116bf90-0x0116c350 addr=0xfffffe000816ff90-0xfffffe0008170350         __DATA_CONST.__kalloc_type      
+	sz=0x00000140 off=0x0116c350-0x0116c490 addr=0xfffffe0008170350-0xfffffe0008170490         __DATA_CONST.__kalloc_var       
+	sz=0x00000358 off=0x0116c490-0x0116c7e8 addr=0xfffffe0008170490-0xfffffe00081707e8         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000d0 off=0x0116c7e8-0x0116c8b8 addr=0xfffffe00081707e8-0xfffffe00081708b8         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 240 at 0x04adf168
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     82132F23-7E9F-3988-9A47-D6293976023D
+008: LC_SOURCE_VERSION           10321.40.10.0.0
+009: LC_FUNCTION_STARTS          offset=0x004aaa4b8 size=0x280
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleMesaSEPDriver`
+- `CFBundleIdentifier`: `com.apple.driver.AppleMesaSEPDriver`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleMesaSEPDriver`
+- `CFBundleNumericVersion`: `0`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `100.99`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2013-2018 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.0`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleMesaSEPDriver.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198899130624`
+- `_PrelinkExecutableRelativePath`: `AppleMesaSEPDriver`
+- `_PrelinkExecutableSize`: `214900`
+- `_PrelinkExecutableSourceAddr`: `-2198899130624`
+- `_PrelinkKmodInfo`: `-2198828755936`
+
+## Strings (919) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `Override`
+- `service`
+- `checkDisableConditionsHandler`
+- `i8@?0`
+- `_count > 0`
+- `ERROR: IOMesaLogging::%s: AssertMacros: %s (value = 0x%lx), %s file: %s, line: %d\n\n\n`
+- `getDataCommand`
+- `getARMIODriver`
+- `(_sensorType == kSensorTypeTritonA2) || (_sensorType == kSensorTypePoseidonA2) || (_sensorType == kSensorTypeOceanus)`
+- `_sensorID`
+- `isChargerConnected`
+- `_unlock`
+- `!!! NULL DEREFERENCE !!! Attempting to dereference null guarded resource pointer!`
+- `\"%s\" @%s:%d`
+- `_mesaLock.getGuardedResourceAsConst() == provider`
+- `getProvisioningState`
+- `site.match_result.uint32_t`
+- `driver`
+- `cacheProtectedConfigurationSpecific`
+- `provisionNavajo`
+- `IOPMPowerSource`
+- `imgProcRes`
+- `(_matchFlags & 0x00000080) == 0`
+- `calDataInfoSize == sizeof(*calDataInfo)`
+- `_commandGate->getWorkLoop()->inGate()`
+- `logEnrollLatency`
+- `_homeButtonServices`
+- `(rootKey.size == 40) || (rootKey.size == (256/8))`
+- `SetCaptureBuffer`
+- `!_catacombData.data`
+- `msgV1`
+- `MesaCalBlobSource`
+- `SaveBioLockoutRecord`
+- `~LockGuard`
+- `AppleMesaSEPDriverInterface`
+- `12111112122212121121211111111111111111111121121122222222122`
+- `*size >= sizeof(sepSupport)`
+- `result`
+- `outSize`
+- `_sensorState == kEstablishingSessionState`
+- `provisionSandDollar`
+- `extEnroll->auth.tokenLength <= 32`
+- `sepTransact`
+- `_guardedResource == nullptr`
+- `logSensorStatus`
+- `12121112`
+- `chip-id`
+- `_provisionStatus != SensorProvisionStatus::kProvisioned`
+- `keySize == (256/8)`
+- `bufferSize >= 16`
+- `loadPatch`
+- `performKeyExchange`
+- `sequenceCounter.size == ((16) + (16) + 32)`
+- `_mesaLock.isGuardedResourceValid()`
+- `source != nullptr`
+- `matchResultData.size == sizeof(*result)`
+- `_cachedCalibrationData.data`
+- `_sepSupport & kLoggingSEPSupportInternal`
+- `(device == this)`
+- `provisionSensor`
+- `/AppleInternal/Library/BuildRoots/4~CatTugAUiIQaFdgNb3SJixdG3WQZ06nK1mHKdgU/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.Internal.sdk/System/Library/Frameworks/Kernel.framework/PrivateHeaders/IOKit/biometric/IOBiometricSynchronization.h`
+- `Precondition failed: caller not on gate!`
+- `root`
+- `setHVBoost`
+- `Cancel`
+- `SetSensorPowerCommand`
+- `GetPatch`
+- `size`
+- `payloadSize >= sizeof(cmd_get_protected_config_in_v1_t)`
+- `noLockout->auth.tokenLength <= 32`
+- `ThermalLevelChanged`
+- `SaveCatacombData`
+- `IOMesaCaptureDataQueue.cpp`
+- `payloadSize >= sizeof(cmd_set_protected_config_in_v1_t)`
+- `dropUnlockToken`
+- `inLength >= sizeof(*request)`
+- `BiometricCommandCount`
+- `payloadSize >= sizeof(cmd_confirm_save_catacomb_in_v1_t)`
+- `powerOffCompletionHandler`
+- `_provisionStatus == kHalfProvisioned`
+- `size >= sizeof(*result)`
+- `inDataSize == messageSizeCheck`
+- `_matchSelectedIdentities && _matchSelectedIdentitiesLength >= sizeof(*_matchSelectedIdentities)`
+- `Patch loaded`
+- `result != (((signed)((((unsigned)(0x38))&0x3f)<<26))|(((0)&0xfff)<<14)|0x1)`
+- `retryMatchAfterHomeButtonPress`
+- `startCapture`
+- `File`
+- `payloadSize >= sizeof(cmd_get_catacomb_hash_in_v1_t)`
+- `IODeviceTree:/chosen`
+- `requestPowerAssertion`
+- `HandleSPIError`
+- `ProcessMessage`
+- ` and a holder still present`
+- `/Library/Caches/com.apple.xbs/689DFD13-7801-4997-BC10-72E9357F1AF3/TemporaryDirectory.WXiexE/Sources/Mesa/AppleMesaSEPDriver/AppleMesaSEPDriver/AppleMesaSEPDriver.cpp`
+- `function-ane1_power_func`
+- `handleCaptureData`
+- `_sensorState == kSensorIdleState`
+- `GetSerialisedTemplates`
+- `12222`
+- `_clearPhysicalPresenceEventSource`
+- `setPropertiesGated`
+- `(_sensorType == kSensorTypeNavajo) || (_sensorType == kSensorTypeSanddollar) || (_sensorType == kSensorTypeTriton) || (_sensorType == kSensorTypeTritonA2) || (_sensorType == kSensorTypePoseidon) || (_sensorType == kSensorTypePoseidonA2) || (_sensorType == kSensorTypeOceanus)`
+- `lockKeyCommand.data`
+- `recoveryos`
+- `commandStartMatch`
+- `handleStockholmEnteredField`
+- `121111121222121211212111111111111111111111211211222222221221111111222222222222222222222222222222222221111222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `ERROR: %s: GetCmdProtocolVersionCommand: Device protocol version (%u) is %s than host protocol version (%u)!\n\n`
+- `payloadSize >= sizeof(cmd_match_mode_in_v1_t)`
+- `mesa-menuKeyOverride`
+- `outMatchInfo`
+- `matchInit && matchInit->data.acmContext.length && (matchInit->data.acmContext.length <= 32)`
+- `isOperationDeviceStateReady`
+- `UnprovisionSensor`
+- `start`
+- `IOPlatformSerialNumber`
+- `_provisioningStateProven`
+- `_captureDataQueue->enqueueObject(captureData)`
+- `payloadSize >= sizeof(cmd_get_free_identity_count_in_v2_t)`
+- `!withData || *bufferSize >= 36`
+- `enabled`
+- `bioDeviceFromMesaSource(&info.device, mesaSource) == 0 `
+- `EnrollContinue`
+- `!!! NULL DEREFERENCE !!! Attempting to dereference null lock pointer!`
+- `imageLogData.size >= sizeof(*imageLog)`
+- `SetMSRkDataCommand`
+- `(_thread != ((thread_t) nullptr)) || (_count == 0)`
+- `tryLock`
+- `asyncCaptureHandler`
+- `cacheMatchPolicy`
+- `_sensorState == kSessionEstablishedState`
+- `recovery`
+- `enrollmentInfoData.data`
+- `ok`
+- `GetModuleSerialNumber`
+- `stop`
+- `0`
+- `err != (((signed)((((unsigned)(0x38))&0x3f)<<26))|(((0)&0xfff)<<14)|0x1)`
+- `matchInit`
+- `logMatchLatency`
+- `_homeButtonEventSource`
+- `_bgOpsResultReadyEventSource`
+- `initWorkLoop`
+- `request->userID == _serializedTemplateUserID`
+- `attach(mesa)`
+- `(_matchFlags & 0x00000010) == 0`
+- `GetLastWakeFromHibernation`
+- `_validatePreconditions() == kBiometricResultSuccess`
+- `biosensor,mesa`
+- `_enrollmentTimeoutEventSource`
+- `sepBufferSize > 0`
+- `sepTransactToIOMD`
+- `_lock->_commandGate && _lock->_commandGate->getWorkLoop()->inGate()`
+- `Error: lock is in a cancelled state!`
+- `AppleARMSPIDevice`
+- `rootKey.data`
+- `setMSRkData`
+- `bgopsResult`
+- `enrollmentInfo->validIdentity`
+- `Invalid match flag combination kMatchingFlagMatchForUnlock | kMatchingFlagMatchForExtendEnrollment`
+- `_sensorState == kSensorCaptureState`
+- `resetSensor`
+- `SetModulationRatio`
+- `messageGated`
+- `dataSize == (11 * 2616)`
+- `sepResponse.size == 18 || sepResponse.size == 20 || sepResponse.size == 23`
+- `getSensorSerialNumber`
+- `(_provisionStatus == kATETest) || (_provisionStatus == kUnprovisioned) || (_provisionStatus == kHalfProvisioned) || (_provisionStatus == kProvisioned)`
+- `reprovisionCommand.data`
+- `doSeaCookieProvisioning`
+- `match`
+- `121222122`
+- `performSpecificCommandGated`
+- `checkBiometricCommand`
+- `lockKeyCommand.size == 66`
+- `IODeviceTree:/arm-io/ane0`
+- `(_sensorState == kSensorIdleState) || (_sensorState == kSensorPauseState) || (_sensorState == kSensorFdetState) || (_sensorState == kSensorWakeOnMenuPinState)`
+- `Requested`
+- `!__c11_atomic_load(&_isCancelled, memory_order_relaxed)`
+- `source`
+- `(_provisionStatus != SensorProvisionStatus::kUnprovisioned) || _provisionedAtLeastOnce`
+- `hostKeyPayload.size == 130`
+- `cacheVerifiedACM`
+- `legacyCmd->magic == 0x4d434d43`
+- `payloadSize >= sizeof(cmd_get_catacomb_id_in_v1_t)`
+- `lockKeyResponse.size == sizeof(uint8_t)`
+- `sepTransact(kGTSetSensorID, &_sensorID, sizeof(_sensorID)) == 0 `
+- `RequestMessageData`
+- `IOBioUtils::isInternal()`
+- `iter`
+- `checkSensorState`
+- `lockKeyResponse.data`
+- `FDR`
+- `CacheCustomPatch`
+- `_checkDisableConditionsEventSource`
+- `higher`
+- `payloadSize >= sizeof(cmd_no_catacomb_in_v1_t)`
+- `cmd->version == 1 || cmd->version == 2`
+- `false`
+- `keySize == 40`
+- `sequenceCounter.size == (12)`
+- `fingerOffTimeoutHandler`
+- `prepareSerialisedTemplates`
+- `RequestMaxIdentityCount`
+- `_tryLock`
+- `OSBoundedPtr.h`
+- `ERROR: IOMesaLogging::%s: command:0x%x unknown!\n\n`
+- `mesa-averaging`
+- `FingerDetectMode`
+- `GetLoggingDataCommand`
+- `IntentionalReset`
+- `Invariant Error: Attempting to unlock from a non-lock-holding thread!`
+- `(_provisionStatus != kATETest) && (_provisionStatus != kUnprovisioned)`
+- `hostKeyPayload.data`
+- `enrollResult`
+- `bioDevice`
+- `GetCatacombHash`
+- `!_commandGate->onThread()`
+- `armIODriver`
+- `18 == *bufferSize`
+- `resetSensorAndGetIdentifiers`
+- `_lock`
+- `enrollmentForceFailHandler`
+- `sensorStateHandler`
+- `seaCookieHandleMessage`
+- `checkAutoMatchLockoutConditions`
+- `matchResultData.data`
+- `homeButtonPressHandler`
+- `bounded_ptr<T>::operator*: Dereferencing this pointer would access memory outside of the bounds set originally`
+- `sepLatencyLogData.size >= sizeof(*sepLatencyLog)`
+- `121222`
+- `payloadSize >= sizeof(cmd_confirm_save_catacomb_in_v2_t)`
+- `reRegisterChildServices`
+- `ctlPhysicalPresence`
+- `osenvironment`
+- `postFingerOffHandler`
+- `FDR3`
+- `GetSystemProtectedConfig`
+- `payloadSize >= sizeof(cmd_sea_cookie_handle_message_in_v1_t)`
+- `pauseCapture`
+- `homeButtonEventServiceCallback`
+- `Closed`
+- `getGuardedResourceAsConst`
+- `sensorDisable`
+- `enrollmentInfo->validNodePlacement`
+- `startFdet`
+- `_workLoop`
+- `getCommandMode() == kCommandModeEnroll`
+- `forceBioLockoutSpecific`
+- `setCalibrationData`
+- `EEPROM`
+- `err == 0 `
+- `(_matchFlags & 0x00000002) == 0`
+- `setDataCommand`
+- `_provisionStatus == kProvisioned`
+- `establishDiffieHellmanSession`
+- `MatchMode`
+- `GetProtectedConfig`
+- `GetTranspChannelData`
+- `Invariant Error: Lock is held but lock count is zero!`
+- `setDefaultTimeout`
+- `super::init()`
+- `site.MesaCachedSystemConfig`
+- `sensorGuard.getAcquisitionResult() == 0 `
+- `inMD`
+- `_biometrickitdInfo.calibrationDataLoaded`
+- `ReadCatacombDataSU`
+- `_lock->_guardedResource`
+- `handleSEPMessage`
+- `!factoryOptionsOnly || (_sensorType == kSensorTypeTritonA2) || (_sensorType == kSensorTypePoseidonA2) || (_sensorType == kSensorTypeOceanus)`
+- `sepResponse.size == 64`
+- `RemoveTemplate`
+- `SetFactoryOptions`
+- `Invariant Error: Lock owner's count is zero; over-unlock detected!`
+- `operator->`
+- `ERROR: IOBiometricSynchronization::%s: !!! CRITICAL !!! Lock (0x%p) deinit: block did not complete (0x%x); dropping state out-of-gate.\n\n`
+- `IOMesaCaptureData`
+- `site.IOMesaCaptureDataLocal`
+- `success`
+- `ERROR: %s: _sensorErrorCounter:%u --> reset\n\n`
+- `ExternalConnected`
+- `sendStatisticsDouble`
+- `sendBioStatusWithImgProcResult`
+- `AppleMesaSEPDriver: NeRD/Recovery OS environment, skipping ANE power function lookup\n`
+- `_provisionStatus != kATETest`
+- `sendTemplateListUpdatedMsg`
+- `Diagnostics`
+- `ERROR: IOBiometricSynchronization::%s: Lifecycle violation: Lock (0x%p) destroyed without calling deinit(). Attempting automatic teardown.\n\n`
+- `snProperty`
+- `getSerialisedTemplates`
+- `sensorID`
+- `commandStartBgFdet`
+- `stockholmTimeoutHandler`
+- `NoCatacomb`
+- `GetCoverageParams`
+- `Invariant Error: Pointer-like resource in an invalidated state must be null!`
+- `_serializedTemplates.data`
+- `site.IOMesaLogging`
+- `_fingerOffTimeoutEventSource`
+- `_mesaServiceNotifier`
+- `diagnostics`
+- `value`
+- `imgProcResFullData.data`
+- `getSensorInfo`
+- `payloadSize > sizeof(catacomb_header_t)`
+- `createSEP`
+- `getCalibrationDataInfo`
+- `site.IOMesaCaptureDataQueue`
+- `site.AppleMesaSEPDriver`
+- `result == 0 `
+- `armIOCandidateGuard.getAcquisitionResult() == 0 `
+- `isPowerStateOn()`
+- `_sensorID == sensorID`
+- `_powerSourceService`
+- `findANEPowerFunction(newService) == 0 `
+- `_mesaLock.getGuardedResourceAsConst()`
+- `~CommandGateBasedLockPrimitive`
+- `_sensorStateEventSource`
+- `mesaServiceNotificationHandlerGated`
+- `payloadSize >= sizeof(cmd_request_message_data_in_v1_t)`
+- `matchRetried`
+- `commandStopEnroll`
+- `SetProtectedConfig`
+- `RemoveUserData`
+- `GetCalibrateFDETCommand`
+- `sendStatisticsInt`
+- `EnableBackgroundFdet`
+- `GetFactoryOptions`
+- `Invariant Error: Lock is free but lock count is non-zero!`
+- `IOMesaLogging`
+- `signalQuality < kSignalQualityCount`
+- `cmd`
+- `20 == *bufferSize || 23 == *bufferSize`
+- `inCapture`
+- `captureBufferInfoData.size == sizeof(*captureBufferInfo)`
+- `!noLockout->auth.tokenLength || (noLockout->auth.tokenLength == 16)`
+- `autoMatchConditionsHandler`
+- `com.apple.BiometricKit`
+- `initWithGateAndResource`
+- `site.IOMesaCaptureData`
+- `ERROR: %s: GetCmdProtocolVersionCommand: Using protocol version %u\n\n`
+- `*outSize == sizeof(cmd_get_protected_config_out_v1_t)`
+- `checkEnrollmentFail`
+- `newService`
+- `sbioData`
+- `logSEPLatency`
+- `_mesaSourceLock`
+- `_powerOffEventSource`
+- `Not Closed`
+- `bioDeviceFromCaptureData`
+- `LoadCatacomb`
+- `(_thread == ((thread_t) nullptr)) || (_count > 0)`
+- `updateScanningProperty`
+- `calibrateSensorFDET`
+- `resetSensorAndLoadPatch`
+- `max-scan-time`
+- `RequestCalibrationData`
+- `!__c11_atomic_load(&_isInitialized, memory_order_acquire)`
+- `_setSensorIDEventSource`
+- `23 == *bufferSize || 18 == *bufferSize`
+- `modifyFactoryOptions`
+- `ERROR: IOBiometricSynchronization::%s: Invariant violation: Lock (0x%p) deinit: initialized but gate is null. Falling through to recovery.\n\n`
+- `/Library/Caches/com.apple.xbs/689DFD13-7801-4997-BC10-72E9357F1AF3/TemporaryDirectory.WXiexE/Sources/Mesa/AppleMesaSEPDriver/AppleMesaSEPDriver/IOMesaLogging.cpp`
+- `requestANEPowerAssertion(false) == 0 `
+- `enableWakeOnPin`
+- `provider`
+- `enrollmentInfoData.size == sizeof(enrollment_info_t)`
+- `GetSBIOInfoCommand`
+- `RecoveryReset`
+- `_enrollmentForceFailEventSource`
+- `sepBuffer`
+- `(_provisionStatus == kUnprovisioned) || (_provisionStatus == kProvisioned)`
+- `matchResult`
+- `_validatePreconditions`
+- `SignalQuality`
+- `cacheSysProtectedConfigurationSpecific`
+- `commandBuffer`
+- `IODeviceTree:/arm-io/ane1`
+- `GetSKSLockState`
+- `Invariant Error: Command gate is null during unlock!`
+- `dataSize == (12 * sizeof(sensor96112_slice16_t))`
+- `dataSize > 0`
+- `mesa-allowSensorIDOverride`
+- `!_cachedSysConfig || (_matchUserID != 4294967295U) || (isEnabledForIdentification())`
+- `biodevice`
+- `LoadCatacombData`
+- `_fingerOffACMCheckEventSource`
+- `cmd->version == 2`
+- `sep`
+- `invert-menu-key`
+- `AppleMesaSEPDriver: Using ANE1\n`
+- `AlignmentData`
+- `hostKeyWrapped.data`
+- `dataSize == sizeof(*calDataInfo)`
+- `findANEPowerFunction`
+- `setSelectedMesaSource`
+- `event`
+- `GetSensorCalibrationStatus`
+- `data || (dataSize == 0)`
+- `mesaResources`
+- `(_sensorType == kSensorTypeSanddollar) || (_sensorType == kSensorTypeTriton) || (_sensorType == kSensorTypeTritonA2) || (_sensorType == kSensorTypePoseidon) || (_sensorType == kSensorTypePoseidonA2) || (_sensorType == kSensorTypeOceanus)`
+- `payloadSize >= sizeof(cmd_set_system_protected_config_in_v2_t)`
+- `*outSize == sizeof(cmd_get_templates_validity_out_v1_t)`
+- `lockRootKeyInSensor`
+- `GetIdentitiesList`
+- `GetIBFD42CalibrationData`
+- `_homeButtonLock`
+- `ERROR: %s: Mesa lock could not be safely deinitialized! Lock is being held!\n\n`
+- `getCaptureBufferFromIOMD`
+- `_sensorIdentifiersValid`
+- `ERROR: %s: Invalid sensor state!\n\n`
+- `mesa-enrollmentTimeout`
+- `commandStartEnroll`
+- `isMesaDeviceAvailable()`
+- `Unknown`
+- `_commandGate`
+- `GetSensorSerialNumber`
+- `!!! CRITICAL !!! LockGuard destroyed outside its command gate. Lock will remain held until process death.`
+- `payloadSize >= sizeof(cmd_prepare_save_catacomb_in_v1_t)`
+- `setPowerStateGated`
+- `sequenceCounter.data`
+- `captureData`
+- `sepTransact(kEnableBgOpsUpdate, nullptr, 0, nullptr, nullptr, !locked) == 0 `
+- `applyPostponedMatch`
+- `GetCmdProtocolVersion`
+- `GetOperationParams`
+- `MesaCachedSystemConfig`
+- `payloadSize >= sizeof(cmd_get_templates_validity_in_v1_t)`
+- `inData`
+- `(_matchFlags & 0x00000001) == 0`
+- `commandStartFdet`
+- `params`
+- `device.type != kBioDeviceTypeUnset`
+- `_autoMatchEventSource`
+- `mesaSPIDeviceNotificationHandlerGated`
+- `getSensorModuleSerialNumber`
+- `imgProcResult`
+- `imgProcResFullData.size >= sizeof(imgProcResFull->imgProcessingResult) + imgProcResFull->imgProcessingResult.imgDeblurringInfoSize`
+- `getCommandMode() == kCommandModeMatch`
+- `ERROR: %s: Enrollment error %d\n\n`
+- `sendMatchEventToClients`
+- `free`
+- `prepareSession`
+- `(_provisionStatus != kUnprovisioned) || _provisionedAtLeastOnce || _provisioningRequested`
+- `getSensorModuleSerialNumberRaw`
+- `CalibrateSensorFDET`
+- `SetSystemProtectedConfig`
+- `__c11_atomic_load(&_isInitialized, memory_order_acquire)`
+- `ERROR: IOBiometricSynchronization::%s: !!! TIMEOUT !!! Thread (0x%llx) timed out waiting for lock (0x%p).\n\n`
+- `_captureDataQueue`
+- `payloadSize >= sizeof(cmd_enroll_mode_in_v2_t)`
+- `loadANENet`
+- `_cachedCalibrationData.size`
+- `PrimaryUsage`
+- `AssertMacros: %s (value = 0x%lx), version: Mesa-10321.40.10~320, %s file: %s, line: %d\n`
+- `setPowerState`
+- `_cachedSysConfig`
+- `stopStockholmMatching`
+- `handleCapture`
+- `Error: Lock was torn down while waiting!`
+- `The range of valid memory is too large to be represented by this type, or [begin, end) is not a well-formed range`
+- `ERROR: %s: AssertMacros: %s (value = 0x%lx), %s file: %s, line: %d\n\n\n`
+- `prepareNotPairedSession`
+- `resetSensorAndCheckProvisioning`
+- `sendStatisticsMesaSource`
+- `enrollInfo`
+- `ERROR: %s: Calibration data signature is not valid.\n\n`
+- `DropUnlockToken`
+- `_thread == thisThread`
+- `IOPlatformExpertDevice`
+- `LoadANENetCommand`
+- `site.AppleMesaSEPDriverInterface`
+- `inDataSize >= sizeof(*diagInData)`
+- `sizeof(_verifiedACMContext) >= _matchFlagsACMContextLength`
+- `calDataInit`
+- `free_sbio_data`
+- `PrepareSerialisedTemplates`
+- `GetBiometrickitdInfo`
+- `ConfirmSaveCatacomb`
+- `SEPDriver-Mesa`
+- `_postFingerOffEventSource`
+- `setProperties`
+- `data->getLength() == sizeof(uint32_t)`
+- `provisionSensorWithRootKey`
+- `hostKeyWrapped.size == 40`
+- `sendEnrollProgresWithEnrollInfo`
+- `_mesaEventSource`
+- `ctx`
+- `*outSize >= 2`
+- `size <= sizeof(*imgProcResult)`
+- `mesaDeviceInit`
+- `function-ane0_power_func`
+- `ResetSensor`
+- `Error: Trying to lock from the workloop's own thread — this would result in a stall!`
+- `ScanningState`
+- `sendMatchResult`
+- `!matchInit || matchInitLength >= sizeof(*matchInit)`
+- `control <= kMesaFactoryPhysicalPresenceSet`
+- `!_mesaDisabled`
+- `IsDisableTheDevGidSet`
+- `TouchIDButtonPressed`
+- `GetLastMatchEvent`
+- `cachedSysConfig`
+- `reprovisionCommand.size == 74`
+- `scan-timer-reset-time`
+- `IsXARTAvailable`
+- `ERROR: IOBiometricSynchronization::%s: AssertMacros: %s (value = 0x%lx), %s file: %s, line: %d\n\n\n`
+- `deinit`
+- `Image`
+- `data`
+- `matchInfoData.data`
+- `GetTemplatesValidity`
+- `logSummary`
+- `Session established`
+- `Invalid`
+- `_drainAcquiredOnGate`
+- `applySensorParams`
+- `openSensor`
+- `mesa-overrideDevSN`
+- `_sensorType == kSensorTypeNavajo`
+- `GetTimestampCollection`
+- `Sensor is up`
+- `supportData.size >= sizeof(_sepSupport)`
+- `sensorStatusLog`
+- `syncSensorIdentifiersWithSep`
+- `initSeaCookieProvisioning`
+- `mesaServiceInit`
+- `matchInitLength >= sizeof(*matchInit) + length`
+- `Disarmed/Finished`
+- `m.usernotify.state <= 32767`
+- `sensorPatch`
+- `_lastImageProcessingParams`
+- `GetCalibrationData`
+- `ERROR: IOBiometricSynchronization::%s: !!! CRITICAL !!! %s() drain timed out with %u waiter(s)%s. Proceeding with teardown; leaked waiters will fault on access.\n\n`
+- `dataSize == (11 * sizeof(navajo_slice16_t))`
+- `getProvisioningStateInt`
+- `(_provisionStatus == kUnprovisioned) && _provisionedAtLeastOnce`
+- `handleEnrollment`
+- `!_cachedSysConfig || _cachedSysConfig->_enabledBio`
+- `Invalid match flag combination kMatchingFlagMatchForCredentialSet | kMatchingFlagMatchForExtendEnrollment`
+- `PhysicalPresence`
+- `payloadSize >= sizeof(cmd_remove_user_data_in_v1_t)`
+- `getDeviceInfo`
+- `sendEnrollResult`
+- `sensor-id`
+- `matchInfoData.size == sizeof(match_info_t)`
+- `checkACMAfterFingerOff`
+- `bioDeviceFromCaptureData(&info.device, captureData, &timestamp) == 0 `
+- `GetFreeIdentityCount`
+- `_handleCaptureEventSource`
+- `lower`
+- `isConnected`
+- `enrollInit`
+- `calDataInfo`
+- `SystemSleepStateChanged`
+- `Precondition failed: lock is cancelled!`
+- `IOMesaCaptureDataQueue`
+- `AppleBiometricSensor`
+- `RequestReset`
+- `AppleMesaSEPDriver`
+- `_deferredResetEventSource`
+- `response.size == sizeof(match_policy_info_t)`
+- `platform`
+- `sepTransact(kGTGetCalibrationDataInfo, nullptr, 0, (void**)&data, &dataSize) == 0 `
+- `!_cachedSysConfig || isEnabledForUnlock()`
+- `sepResponse.data`
+- `sepResponse.size == sizeof(mesa_system_config_t)`
+- `inLength >= sizeof(cmd_get_serialised_templates_in_v1_t)`
+- `sendTemplateListNotUpdatedMsg`
+- `setSensorIDHandler`
+- `matchedIdentity`
+- `matching`
+- `response.data`
+- `sendDeviceSerialNumberToSbio`
+- `payloadSize >= sizeof(cmd_prepare_save_catacomb_in_v2_t)`
+- `*outSize == sizeof(cmd_get_catacomb_id_out_v1_t)`
+- `isMesaDeviceAvailable`
+- `payloadSize >= sizeof(cmd_get_free_identity_count_in_v1_t)`
+- `map`
+- `outEstablishPaired`
+- `23 == *bufferSize`
+- `patchType != kNoPatch && !(patchType == kCustomPatch && !patch)`
+- `AppleMesaSEPDriver: Trying ANE1; node:%p function:%p\n`
+- `SetCalibrationData`
+- `121222222222222222222222222222222`
+- `cmd->version == 1`
+- `(err == 0) || (err == (((signed)((((unsigned)(0x38))&0x3f)<<26))|(((0)&0xfff)<<14)|0x2c7))`
+- `_provisionStatus != kProvisioned`
+- `ExternalChargeCapable`
+- `site.message_enroll_node_v1_t`
+- `commandCancel`
+- `homeButtonEventServiceCallback_block_invoke`
+- `RequestTopologyOfTemplate`
+- `payloadSize >= sizeof(cmd_complete_save_catacomb_in_v1_t)`
+- `sepResponse.size >= sizeof(mesa_system_config_v1_t)`
+- `*outSize >= moduleNumberSize`
+- `AppleMesaSEPDriver: Using ANE0\n`
+- `IOHIDEventService`
+- `ProvisionSensor`
+- `Invariant: gate null while initialized and not cancelled!`
+- `LockGuard`
+- `payloadSize >= sizeof(cmd_get_sks_lock_state_in_v1_t)`
+- `setSensorID(sensorID)`
+- `setSensorID`
+- `messageInfo`
+- `SetPatch`
+- `Error: Trying to unlock outside the command gate context!`
+- `isChargerConnected(&chargerOn) == 0 `
+- `Precondition failed: lock not initialized!`
+- `logImages`
+- `AppleMesaResources`
+- `time-between-scans`
+- `source == _mesaLock.getGuardedResourceAsConst()`
+- `ERROR: %s: Dequeed image age %llu ms - skipping\n\n`
+- `idleSensor`
+- `sendDeviceSerialNumberToSbio() == 0 `
+- `GetSignedCalibrationData`
+- `GetEnabledForUnlock`
+- `IOMesaCaptureDataLocal`
+- `context`
+- `*bufferSize >= (23)`
+- `handleFingerDetect`
+- `forceNoMatch`
+- `extEnroll->identity.userID == _matchUserID`
+- `LoadBioLockoutRecord`
+- `isGuardedResourceValid`
+- `outData`
+- `checkSeaCookieTransitioning`
+- `DisplayStatusChanged`
+- `CompleteSaveCatacomb`
+- `SetLoggingDataCommand`
+- `init`
+- `openSensor(sensorGuard.get())`
+- `payload || !payloadSize`
+- `changeResetStageToWithResult`
+- `getSEPSupport`
+- `message`
+- `B24@?0^{OSObject=^^?i}8^B16`
+- `payloadSize >= sizeof(cmd_complete_save_catacomb_in_v2_t)`
+- `payloadSize >= sizeof(cmd_remove_template_in_v1_t)`
+- `cmd->value <= kMesaFactoryPhysicalPresenceCount`
+- `bufferSize`
+- `site.message_status_template_list_updated_v1_t`
+- `SysCfg`
+- `getOperationDeviceState`
+- `initializeSequenceCounter`
+- `imgProcResFullData.size >= sizeof(imgProcResFull->imgProcessingResult)`
+- `handleMatch`
+- `outMatchInfo->data`
+- `installHomeButtonListener`
+- `ReadCatacombSU`
+- `TemplatesExistsAtBoot`
+- `GetCatacombId`
+- `_stockholmTimeoutEventSource`
+- `payloadSize >= sizeof(cmd_force_biolockout_in_v1_t)`
+- `templateUpdateInfo`
+- `requestANEPowerAssertion`
+- `captureBuffer`
+- `_seaCookieProtocolVersion == (2)`
+- `matchInitLength >= sizeof(*matchInit) + sizeof(*list)`
+- `ERROR: IOBiometricSynchronization::%s: Thread (0x%llx) internal error (0x%x) when acquiring lock (0x%p).\n\n`
+- `bgOpsResultReadyHandler`
+- `requestPowerAssertion(false) == 0 `
+- `GetProvisioningState`
+- `ForceBioLockout`
+- `true`
+- `response.size == sizeof(*config)`
+- `imgProcInit`
+- `disabled`
+- `dataSize == (10 * 1848 + 608)`
+- `haveValidStatus`
+- `site.message_status_enrollment_info_v1_t`
+- `_matchFlagsACMContextLength`
+- `!__os_warn_unused(__builtin_mul_overflow((list->numIdentities), (sizeof(list->identities[0])), (&length)))`
+- `_matchSelectedIdentities`
+- `mesa-disableTrimDAC`
+- `PrepareSaveCatacomb`
+- `dropBiometricTokens`
+- `checkBgOpsResult`
+- `site.message_status_template_list_not_updated_v1_t`
+- `outMatchInfo->size == sizeof(match_info_t)`
+- `checkMatchStop`
+- `PrimaryUsagePage`
+- `SeaCookieHandleMessage`
+- `GetTopologyOfTemplate`
+- `super::init(source)`
+- `_logging`
+- `_catacombData.data`
+- `payloadSize >= sizeof(cmd_set_system_protected_config_in_v1_t)`
+- `ctlPhysicalPresence(kMesaFactoryPhysicalPresenceClear, nullptr, nullptr) == 0 `
+- `enrollmentTimeoutHandler`
+- `initSbioCommunication`
+- `Built-In`
+- `payload`
+- `_provisioningType == kProvisioningWithSeaCookieRandom`
+- `clearMatchingContext`
+- `homeButtonServiceMatchingNotification`
+- `GetCalibrationDataInfo`
+- `GetSensorInfo`
+- `GetCatacombState`
+- `ERROR: IOBiometricSynchronization::%s: !!! CRITICAL !!! Lock (0x%p) automatic teardown failed: lock held by thread (0x%llx). This is an unrecoverable lifecycle bug.\n\n`
+- `_mesaSPIDeviceNotifier`
+- `cmd->value == 0`
+- `clearPhysicalPresenceHandler`
+- `clientResponse`
+- `sendStatisticsImgProcRes`
+- `bioDeviceFromMesaSource(&msgInfo.device, source) == 0 `
+- `!extEnroll->auth.tokenLength || (extEnroll->auth.tokenLength == 16)`
+- `This bounded_ptr is pointing to memory outside of what can be represented by a native pointer.`
+- `payloadSize >= sizeof(cmd_enroll_mode_in_v1_t)`
+- `deferredResetHandler`
+- `bioDeviceFromMesaSource`
+- `fingerOffACMCheckHandler`
+- `IsSensorReady`
+- `Error: lock already initialized!`
+- `_driver`
+- `dataSize < 4294967295U - sizeof(*message)`
+- `payloadSize >= sizeof(cmd_get_cmd_protocol_version_in_v1_t)`
+- `buffer`
+- `reprovisionCommand.size == encryptedCmdSize`
+- `captureData->getSourceType() == kIOMesaCaptureDataSourceLocal`
+- `mesa-allowForcedCalibrationOverride`
+- `ERROR: %s: Serial number in calibration doesn't match sensor serial number.\n\n`
+- `EnrollMode`
+- `lockWithTimeout`
+- `_provisionStatus == kUnprovisioned`
+- `requestPowerAssertion(true) == 0 `
+- `(_matchFlags & 0x00000008) == 0`
+- `(_provisionStatus == kProvisioned) || ((_provisionStatus == kUnprovisioned) && _provisionedAtLeastOnce)`
+- `testSensor`
+- `localCaptureData`
+- `captureBufferInfoData.data`
+- `checkAutoMatchConditions`
+
+**[__TEXT.__os_log]**
+
+- `%s <- hvBoost:%u\n`
+- `%s: Establishing UID session...\n`
+- `%s <- control:%d outData:%p outOptBytesWritten:%p\n`
+- `%s <- newService:%p\n`
+- `%s <- noMatchReason:%d\n`
+- `%s: Dirt on sensor detected [during enrolling]\n`
+- `%s <- _sensorState:%u, _fingerOn:%u\n`
+- `%s: Establishing TEST session\n`
+- `%s <- outData:%p, outSize:%p, returnInfo:%d\n`
+- `%s <- source:%p, fingerOn:%u\n`
+- `%s: Dirt on sensor detected [during matching after no-match]\n`
+- `%s <- postponedMatchResult:%p, lock:%d\n`
+- `%s -> ok:%d\n`
+- `IOBiometricSynchronization::%s: Lock guard (0x%p) destructor: unlocking lock (0x%p)\n`
+- `%s <- properties:%p\n`
+- `%s <- outData:%p, outSize:%p factoryOptionsOnly:%d\n`
+- `%s <- reset[category:%s, reason:%d] (_sensorOpen:%d, _sensorState:%d)\n`
+- `%s: *** TouchID Button Was Pressed ***\n`
+- `%s <- coverageParamsOnly:%d (_sensorState:%u, _commandMode:%u, _signalQualityLevel:%u)\n`
+- `%s: FBFD_CAL_DELTA = %d, FBFD_ICD1 = %d\n`
+- `%s <- patchType:%d, loadPatchOnly:%d\n`
+- `%s <- inData:%p, inDataSize:%zu, outData:%p, outOptBytesWritten:%p\n`
+- `%s -> err:0x%x (imgConsumed:%u)\n`
+- `%s: Enrollment complete\n`
+- `IOBiometricSynchronization::%s: Thread (0x%llx) lock acquisition on lock (0x%p) refused.\n`
+- `%s <- disable:%d userOverride:%d\n`
+- `%s <- msDelay:%u\n`
+- `%s <- inData:%p, inLength:%zu, outData:%p, outOptBytesWritten:%p\n`
+- `%s: Sensor reset request approved (workloop fast path)\n`
+- `%s <- command:0x%x, inData:%p, inLength:%zu, outDataOut:%p, outLength:%p, lock:%d, flags:0x%x\n`
+- `%s -> %p\n`
+- `%s <- patchType:%d, patch:%p, patchSize:%u, loadPatchOnly:%d\n`
+- `%s: Locking lower half\n`
+- `%s <- messageType:%d\n`
+- `%s <- touchIDButtonPressed:%d (_displayStatus:%u, isEnabledForUnlock():%u, _mesaDisabled:%u, _commandMode:%u, _autoMatchStarted:%u, _displayCoverClosed:%u)\n`
+- `%s -> removed:%d\n`
+- `%s <- calData:%p, calDataSize:%zu, setSensorParams:%d, calBlobSouce:%d\n`
+- `%s: *** TouchID Button Was Released ***\n`
+- `%s: _resetStage: %s, _sensorErrorCounter:%u, _deviceError:%d, _seaCookie:%d, _sensorDisabledUserOverridden:%d --> cancel\n`
+- `%s <- provType:%d\n`
+- `%s: Sensor reset request approved\n`
+- `IOBiometricSynchronization::%s: Thread (0x%llx) recursively acquired lock (0x%p, new count: %u).\n`
+- `IOMesaLogging::%s: _state: 0x%x -> 0x%x (sepSupport:0x%x)\n`
+- `Couldn't create OS Log for 'com.apple.BiometricKit.IOMesaLogging'!\n`
+- `%s -> void\n`
+- `%s: Enable sensor request ignored: sensor disabled by user override\n`
+- `%s <- buffer:%p, bufferSize:%u\n`
+- `%s: Desense activeScanTime:%u\n`
+- `%s <- matchRetried:%p, outMatchInfo:%p\n`
+- `%s <- reset:%d\n`
+- `%s: type:0x%x: kAppleBiometricFingerOnEvent (_sensorState:%d, _sensorOpen:%d)\n`
+- `%s -> _sensorOpen=%s\n`
+- `%s <- matchInit:%p %lu (_commandMode:%u)\n`
+- `%s <- _commandMode:%u, _matchFlags:%u, _autoMatchStarted:%u\n`
+- `%s <- newState:%p(%lu)\n`
+- `%s: Establishing GID session\n`
+- `%s -> result:%u (err:0x%x)\n`
+- `%s <- lockCommand:%d\n`
+- `%s: Thermal level changed: %u (Current thermal level: %u)\n`
+- `%s: Scanning state changed: %d activeScanTime: %u\n`
+- `%s: Establishing STATIC session\n`
+- `%s: Half provisioned key\n`
+- `%s: Enrollment progress %d\n`
+- `%s <- _commandMode:%u\n`
+- `IOMesaLogging::%s -> result:%d (driver:%p)\n`
+- `%s <- lock:%d (_bgOpsResultReady:%d)\n`
+- `%s: Locking the root key\n`
+- `IOBiometricSynchronization::%s: Lock guard (0x%p) constructor: acquisition result (0x%x), lock (0x%p).\n`
+- `%s <- \n`
+- `%s: System sleep state changed: %u\n`
+- `%s: Lock contended on workloop thread — deferring reset\n`
+- `%s <- _commandMode:%u, _thermalLevel:%u, _invalidModuleSerialNumber:%d, _mesaDisabled:%u\n`
+- `%s: Pixel averaging set to %u\n`
+- `%s <- outData:%p, outSize:%p, blocking:%d\n`
+- `%s <- captureData:%p (type=%u, source=%p)\n`
+- `%s: Waking up threads waiting for Calibration data\n`
+- `%s -> available:%u\n`
+- `%s: type:0x%x: kAppleBiometricHVBoost (_sensorState:%d, _sensorOpen:%d)\n`
+- `%s -> err:0x%x (type:%d)\n`
+- `%s <- lock:%d\n`
+- `%s: Disabling sensor...\n`
+- `%s <- properties:%p --> setPropertiesGated\n`
+- `%s <- Reset request category: %s\n`
+- `%s <- enrollInit:%p (_commandMode:%u)\n`
+- `%s: Loading Mesa calibration data from %s to SEP, err = 0x%x.\n`
+- `%s -> isReady:%u\n`
+- `%s -> err=0x%x\n`
+- `%s -> err:0x%x (matchRetried:%u)\n`
+- `%s: \n`
+- `%s <- command:0x%x, inData:%p, inDataSize:%zu, outData:%p, outOptBytesWritten:%p, flags:0x%x\n`
+- `IOBiometricSynchronization::%s: Thread (0x%llx) refused lock (0x%p): guarded resource invalidated.\n`
+- `IOBiometricSynchronization::%s: Thread (0x%llx) acquired free lock (0x%p).\n`
+- `%s: type:0x%x: kAppleBiometricFingerOffEvent (_sensorState:%d, _sensorOpen:%d)\n`
+- `%s: type:0x%x: kIOMessageServiceIsRequestingClose (_sensorState:%d, _sensorOpen:%d)\n`
+- `%s: Template file exists at boot: %u\n`
+- `%s: %s: unknown reset state encountered (%d)\n`
+- `%s: [IPR-common] status:%u, feedback:%u\n`
+- `%s: *** Enroll waiting ***\n`
+- `IOBiometricSynchronization::%s: Thread (0x%llx) refused lock (0x%p): lock cancelled.\n`
+- `IOBiometricSynchronization::%s: Thread (0x%llx) could not acquire lock (0x%p): held by thread (0x%llx).\n`
+- `%s: type:0x%x: kAppleBiometricDeviceError (_sensorState:%d, _sensorOpen:%d)\n`
+- `%s <- sessionType:%d\n`
+- `%s: status:%p, statusSize:%zu\n`
+- `%s: *** Forced idle ***\n`
+- `%s: Calibration data version is %u\n`
+- `%s: TrimDAC is %s\n`
+- `IOMesaLogging::%s: _state: 0x%x !\n`
+- `%s: type:0x%x: kAppleBiometricCaptureRestart (_sensorState:%d, _sensorOpen:%d)\n`
+- `%s <- newstate:%ld, device:%p\n`
+- `%s <- sender:%p\n`
+- `%s: Reading module serial, attempt=%d\n`
+- `%s <- isConnected:%p\n`
+- `%s <- imagePassedImgQuality:%d, imageNumber:%u, imageConsumed:%p\n`
+- `%s: Disabling Mesa...\n`
+- `IOBiometricSynchronization::%s: Thread (0x%llx) sleeping on lock (0x%p) (timeout: %ums).\n`
+- `%s <- cmd:%p, payload:%p, payloadSize:%lu outData:%p, outSize:%p\n`
+- `%s: Display status changed: %u\n`
+- `%s -> err=0x%x (IOPMAckImplied)\n`
+- `%s <- rootKey:%p, keySize:%zu, response:%p, responseSize:%zu\n`
+- `%s <- buffer:%p, bufferSize:%p withData:%d\n`
+- `%s <- sender:%p --> checkBgOpsResult\n`
+- `%s: Desense pausedTime:%u\n`
+- `%s: Image matched: %d\n`
+- `%s <- refCon:%p, newService:%p\n`
+- `%s: command:%s (%d), value:%d, inLength:%lu, outLength:%d\n`
+- `%s -> \n`
+- `%s: Power ON now = %llu (%llu s)\n\n`
+- `%s <- outData:%p, outSize:%p\n`
+- `%s <- message:%u\n`
+- `%s <- sensorID:%x\n`
+- `%s: kImageProcessingInit, chargerOn=%d, firstImage=%d, lastImageEnroll=%d,lastImageMatch=%d, postponeMatchProcessing=%d, matchFlags=%u\n`
+- `Couldn't create OS Log for 'com.apple.BiometricKit.SEPDriver-Mesa'!\n`
+- `%s: TouchID button pressed: %u\n`
+- `%s: Set property SignalQuality = %u\n`
+- `%s <- _sensorState:%u, _fingerOn:%u, _signalQualityLevel:%u _hvBoost:%u\n`
+- `%s <- op:0x%X optMask:0x%X optValue:0x%X\n`
+- `%s: Reset failed: [category: %s, desiredStage: %s, err: 0x%x]. Setting reset request to its default.\n`
+- `%s: kImageProceessed err=%d, imageForEnrolling=%d, imageForMatching=%d, assessment=%d, feedback=%d, purpose=%d, contrast=%dmV, brightness=%dmV, featureStrength=%dmV, numPxOutliers=%d, dirtOnSensor=%u\n`
+- `%s -> void (err:0x%x)\n`
+- `%s <- inMD:%p\n`
+- `%s <- errorType:%u (_sensorState:%d, _sensorOpen:%d)\n`
+- `%s: Dirt on sensor detected [during enrolling after bad image]\n`
+- `%s <- hardStop:%d (_commandMode:%u)\n`
+- `%s <- _sensorState:%u\n`
+- `IOBiometricSynchronization::%s: Deinit called when not initialized: nothing to do.\n`
+- `%s -> err:0x%x\n`
+- `%s: Found AppleARMIODevice driver\n`
+- `%s: *** Image queue full ***\n`
+- `%s <- imagePassedImgQuality:%d, imageNumber:%u, buttonDownDuringCapture:%d, imageConsumed:%p, forceNoMatchReason:%u\n`
+- `%s -> state:%u\n`
+- `%s <- sender:%p, context:%p, event:%p, options:0x%x\n`
+- `%s: Got message from SEP, request = %d, length = %d, info = %d\n\n`
+- `%s <- outEstablishPaired:%p (_provisioningRequested:%d, _provisioningType:%d)\n`
+- `%s: *** Command mode = %u ***\n`
+- `IOBiometricSynchronization::%s: Thread (0x%llx) fully released lock (0x%p).\n`
+- `%s: Catacomb Restore Complete (size = %lu)\n`
+- `%s -> status:%u\n`
+- `%s -> err:%d (*isConnected:%d)\n`
+- `%s: [IPR-builtin-dV7] artefactScore:%d, numPxOutliersL1:%f, badBlockCount:%u\n`
+- `%s <- inCapture:%p (_sensorOpen:%d)\n`
+- `%s -> err=%dus (powerOff requested)\n`
+- `%s <- lockKey:%d\n`
+- `%s: *** Processing still in progress ***\n`
+- `%s <- userID:%d\n`
+- `IOBiometricSynchronization::%s: Thread (0x%llx) partially unlocked lock (0x%p, new count: %u).\n`
+- `%s <- enable:%d\n`
+- `%s: Start desense pause\n`
+- `%s <- _provisionStatus:0x%x, _provisioningStateProven:%d, _provisioningState:%d, _provisionedAtLeastOnce:%d, _msrkDataLoaded:%d, _seaCookieProtocolVersion:%d\n`
+- `%s <- lockKeyAllowed:%p\n`
+- `%s: *** Display Cover is %s ***\n`
+- `%s <- inData:%p, inDataSize:%zu, outData:%p, outDataSize:%p\n`
+- `%s: Matching gated by button - capture data queued\n`
+- `%s: Dirt on sensor detected [during match for extend enrollment]\n`
+- `%s: Enabling Mesa...\n`
+- `%s: RecoveryTiming: RequestApproved (%llu) + %dms -> SensorUp (%llu) + %dms -> SessionEstablished (%llu) + %dms -> PatchLoaded (%llu) + %dms -> End (%llu) = Total: %dms after %u attempt(s)\n`
+- `%s -> result:%d\n`
+- `%s <- sender:%p (_commandMode:%u, _sensorState:%u, _sensorErrorCounter:%u)\n`
+- `%s <- Retrying deferred reset (category %s)\n`
+- `IOBiometricSynchronization::%s: Thread (0x%llx) woken up: wait_result_t (%d).\n`
+- `%s <- provider:%p\n`
+- `%s: Enabling sensor...\n`
+- `%s: Trying to open the sensor...\n`
+- `%s: Bad sensor state (_sensorState:%u, _sensorErrorCounter:%u)\n`
+- `%s: Reset info: [category: %s, currentStage: %s, desiredStage: %s, reason: %d, err: 0x%x]\n`
+- `%s: Matching capture-only mode - capture data queued\n`

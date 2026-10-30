@@ -1,0 +1,58 @@
+# `/System/Library/FeatureFlags/Domain/LocalAuthentication.plist`
+
+From the erase/recovery restore ramdisk (141-28940-105.dmg, runs restored_external). 3,258 bytes.
+
+- `DimpleKey`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `DimpleKeySentinel`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `DimpleKeySentinelTheta`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `DimpleKey_AutoEnablement`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `DimpleKey_GP`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `DimpleKey_PLT`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `DimpleKey_PassChange`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `DimpleKey_SR`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `DimpleKey_ZDR`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `ExtendedAHP`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `PKI_Support`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `PasscodeChangeService`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `PasscodeRemovalService`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `PasscodeServicesProtection`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `PasscodeServices_UseKeyboardGuide`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `PasscodeVerificationService`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `PhoneIntegration`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `Preboard`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `PreboardDeveloperMode`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `PreboardProtectedVariables`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `PreboardUPP`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `SwiftUI_Dialog_macOS`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `SwiftUI_Passcode`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `SwiftUI_PasscodeLandscape`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `SwiftUI_PasscodeServices`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `UserAuthDaemon`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `showOwnersPickerForLAPolicyBoot`:
+  - `DevelopmentPhase`: `FeatureComplete`

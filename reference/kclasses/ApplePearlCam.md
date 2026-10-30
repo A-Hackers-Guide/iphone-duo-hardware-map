@@ -1,0 +1,72 @@
+# `ApplePearlCam`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.driver.AppleCamera`](../kexts/com.apple.driver.AppleCamera.md)
+- Object size: `0xf50` (3,920 bytes)
+- Metaclass: `0xfffffe000b93a8d8`; metaclass vtable `0xfffffe0008020c18`; class vtable `0xfffffe00080206b0`
+- Registration (init): `0xfffffe0008ad07e0`
+- Superclasses: [`AppleH10PearlCamInterface`](AppleH10PearlCamInterface.md) → [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## Strings in its kext that name it (60)
+
+- `AppleCamera:%s - Couldn't register ApplePearlCam as AppleARMFunction parent\n`
+- `\"ApplePearlCam::SendReportErrorMessageToClient - PearlCam fatal error = %d\\n\" @%s:%d`
+- `ApplePearlCam`
+- `ApplePearlCamUserClient`
+- `site.ApplePearlCam`
+- `ApplePearlCamera`
+- `ApplePearlCamera.cpp`
+- `ApplePearlCamQMsgFunction`
+- `site.ApplePearlCamUserClient`
+- `site.ApplePearlCamQMsgFunction`
+- `ApplePearlCam:%s - ISP_SendCommand Error: 0x%08X\n`
+- `ApplePearlCamUserClient:%s - start\n`
+- `ApplePearlCam:%s - Not releasing pools (fState=%d, fSystemSleepInProgress=%d)\n`
+- `ApplePearlCam:%s - start\n`
+- `ApplePearlCam:%s - Pool %d allocation size: %d\n`
+- `ApplePearlCam:%s - Error: CISP_CMD_CH_SENSOR_PUBLIC_KEY failed - req=%#x res=%#x\n`
+- `ApplePearlCam:%s - withValidData not set in pMetaDataSharedAttention (frameCount=%d)\n`
+- `ApplePearlCam:%s - Pool %d new allocation size: %d\n`
+- `ApplePearlCam:%s - Error: Couldn't allocate dict. res=%#x\n`
+- `ApplePearlCam:%s - Unable to get replay descriptor\n`
+- `ApplePearlCam:%s - %d buffers received.\n`
+- `ApplePearlCam:%s - Failed to allocate surface\n`
+- `ApplePearlCam:%s - Error: client requested too many bio-capture doubles: %d\n`
+- `ApplePearlCam:%s - PearlCamStateEntryProc_FACE_FOUND\n`
+- `ApplePearlCam:%s - Transition to sleep in progress, so no release now\n`
+- `ApplePearlCam:%s - StopDeferredPowerDownTimer\n`
+- `ApplePearlCam:%s - Couldn't add command gate to work loop.\n`
+- `ApplePearlCam:%s - Error: Failed to create PearlSUR Unwrap output dict: %#x\n`
+- `ApplePearlCam:%s - Not allocating pools (fState=%d, fSystemSleepInProgress=%d)\n`
+- `ApplePearlCam:%s - patternType=%d, optionsDict=%s\n`
+- `ApplePearlCam:%s - numDoubles=%d, optionsDict=%s\n`
+- `ApplePearlCam:%s - ER feature=%d state=%d\n`
+- `ApplePearlCam:%s - BioLoggingEnabled. Adding %d buffers to poolID %d. Old count=%d. New count=%d\n`
+- `ApplePearlCam:%s - warning: timeout occurred while not in kPearlCamState_OFF state\n`
+- `ApplePearlCam:%s - failed! ret=%#x\n`
+- `ApplePearlCam:%s - retryMode=%d\n`
+- `ApplePearlCam:%s - PearlCamStateEntryProc_IDLE\n`
+- `ApplePearlCam:%s - notificationType=%d\n`
+- `ApplePearlCam:%s - using packed raw10\n`
+- `ApplePearlCam:%s - unable to release daemon (res=0x%08X)\n`
+- `ApplePearlCam:%s - Unknown Message\n`
+- `ApplePearlCam:%s - buffers received, but no meta-data buffer found\n`
+- `ApplePearlCam:%s - timerType=%d, state=%d\n`
+- `ApplePearlCam Statistics (%s): T=%d, N=%d, F=%d, Se=%d, D=%d, SLP=%d, DLP=%d, PS=%d, PD=%d, PSLP=%d, PDLP=%d, IV=%d\n\n`
+- `ApplePearlCam:%s - fFaceDetectTimeoutInMilliseconds=%d\n`
+- `ApplePearlCam:%s - Fake sending FaceDetectStatus of %d to client, then continue auto-flow\n`
+- `ApplePearlCam:%s - PearlCamMessageHandler_PowerOff\n`
+- `ApplePearlCam:%s - Couldn't add frame-receive timeout timer event source to work loop.\n`
+- `ApplePearlCam:%s - pending PearlCamPowerOnMessage at queue index:%d\n`
+- `ApplePearlCam:%s - Unable to get frame descriptor\n`
+- `ApplePearlCam:%s - Cound not create the AppleCameraFrameReceiver\n`
+- `ApplePearlCam:%s - fState is not a valid state enum entry\n`
+- `ApplePearlCam:%s - probe\n`
+- `ApplePearlCamUserClient:%s - clientClose\n`
+- `ApplePearlCam:%s - PearlCamStateEntryProc_BIO_DONE\n`
+- `ApplePearlCam:%s - Couldn't create PearlCamEventSource.\n`
+- `ApplePearlCam:%s - camera failed to power on after\n`
+- `ApplePearlCam:%s - PearlCamStateEntryProc_FACE_NOT_FOUND\n`
+- `ApplePearlCam:%s - DeferredPowerDown early due to system sleep\n`
+- `ApplePearlCam:%s - Error: Failed to ECDH Boot sensor. res=%#x size=%u\n`

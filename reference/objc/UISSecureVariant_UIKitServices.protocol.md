@@ -1,0 +1,20 @@
+# `UISSecureVariant` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitServices.framework/UIKitServices`](../userland/System__Library__PrivateFrameworks__UIKitServices.framework__UIKitServices.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 2 properties, 3 instance methods, 0 class methods
+
+## Properties
+
+```
+@property (TI,R,N) secureName;
+@property (T@"NSString",R,N) glyph;
+```
+
+## Instance methods
+
+```
+-[UISSecureVariant glyph];
+-[UISSecureVariant secureName];
+-[UISSecureVariant localizedStringForLocalization:];
+```

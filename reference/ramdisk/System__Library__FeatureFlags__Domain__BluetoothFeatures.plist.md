@@ -1,0 +1,152 @@
+# `/System/Library/FeatureFlags/Domain/BluetoothFeatures.plist`
+
+From the upgrade restore ramdisk (141-29011-104.dmg). 8,652 bytes.
+
+- `AACELDStereo48K`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AACELDStereotvOS`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AACPServerConnection`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AACPTransportForUARP`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `ADPD`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AdaptiveVolumeControl`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AirFlags`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AirPlayTargetIPv6`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AnnounceTelephony`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AppBackgroundExecutionEnhancements`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AudioFriendlyBLEScanParams`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AudioQualityMonitor`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AudioQualityOptimizer`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AudioQualityOptimizerY2`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AudioRoutingImprovementsForCarKits`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `AutoANC`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `BAS`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `BTCellularCoex`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `BTEnableDISForLE`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `BTPtbOTAUpdate`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `BTVCLinkController`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `BandSwitchManager`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `BeepOnMoveWake`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `BluetoothClassicBiomeDonation`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `BluetoothContextCollector`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `CallManagementMuteControl`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `CallManagementMuteControlMac`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `ConversationDetect`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `CustomHRTFSupport`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `DeviceInformationProfileVersionUpgrade`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `DynamicScanReconfig`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `EnableLEConnectionTxPowerBoost`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `FastLEConnection`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `FastLEConnectionNoLTK`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `FilterAcceptListUnifiedACI`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `FindMyBTDeviceManagement`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `GAPA`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `HFPOnAppleTV`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `HSWithIdentity`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `HandsfreeAoS`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `HeadphoneProxCardFY23`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `KeepAudioInHeadphones`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `LC3Stereo`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `LEMIDIAutoConnect`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `LeEventMaskingByHandle`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `LowLatencyEsco`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `LowPowerModeForMagnet`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `Maestro`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `NativeHealth`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `OutgoingLeConnectionDenyList`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `PerAppHeadTrackedSetting`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `PersonalizedVolumeV2`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `ProximityPairingAOPBuffer`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `RapportServiceDiscovery`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `RemoteConnectionImprovement`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `RuleBasedHIDClassification`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `SSL`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `SafetyAlerts`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `ScanCorePolicyV2`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `Sentinel`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `SentinelConnScanProtection`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `SentinelConnScanRx`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `SentinelFWStatsScan`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `SentinelNewLocationFeatures`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `SmartRoutingMacOS`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `StereoHFP`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `SuperWideBandAudio`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `ThirdPartyHIDsOffHIDShimKernelDriver`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `TimestampedACLDataFromController`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `Use350AdvInterval`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `UseLowLatencyGameControllers`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `UseRegulatoryDomainForCountryCode`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `UseSyncApiForHSAdv`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `UserSpaceMacOSHIDDrivers`:
+  - `DevelopmentPhase`: `FeatureComplete`

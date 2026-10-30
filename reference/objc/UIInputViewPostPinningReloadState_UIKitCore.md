@@ -1,0 +1,31 @@
+# `UIInputViewPostPinningReloadState`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- 1 instance variables, 1 properties, 3 instance methods, 1 class methods
+
+## Instance variables
+
+```
+@"UIResponder" _responderPreventedFromSettingInputViews;
+```
+
+## Properties
+
+```
+@property (T@"UIResponder",&,N,V_responderPreventedFromSettingInputViews) responderToReload;
+```
+
+## Class methods
+
+```
++[UIInputViewPostPinningReloadState stateWithResponder:];
+```
+
+## Instance methods
+
+```
+-[UIInputViewPostPinningReloadState dealloc];
+-[UIInputViewPostPinningReloadState responderToReload];
+-[UIInputViewPostPinningReloadState setResponderToReload:];
+```

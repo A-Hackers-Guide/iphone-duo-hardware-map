@@ -1,0 +1,115 @@
+# Symbols: `/System/Library/AccessibilityBundles/WorkflowUIServices.axbundle/WorkflowUIServices`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__AccessibilityBundles__WorkflowUIServices.axbundle__WorkflowUIServices.md). **[DSC]**
+
+27 public symbols, 72 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1ee2c27f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXWorkflowUIServicesGlue
+0x1ee2c2480  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WFIntelligencePromptFieldAccessibility
+0x1ee2c25c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WFSlotTemplateViewAccessibility
+0x1ee2c27a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WFWidgetCellAccessibility
+0x1ee2c2778  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WFWidgetConfigurationCardHeaderViewAccessibility
+0x1ee2c2598  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WFWidgetConfigurationCardViewAccessibility
+0x1ee2c2750  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WFWidgetConfigurationViewAccessibility
+0x1ee2c2458  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___WFIntelligencePromptFieldAccessibility_super
+0x1ee2c2570  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___WFSlotTemplateViewAccessibility_super
+0x1ee2c2728  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___WFWidgetCellAccessibility_super
+0x1ee2c2700  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___WFWidgetConfigurationCardHeaderViewAccessibility_super
+0x1ee2c2548  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___WFWidgetConfigurationCardViewAccessibility_super
+0x1ee2c26d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___WFWidgetConfigurationViewAccessibility_super
+0x1ee2c27c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXWorkflowUIServicesGlue
+0x1ee2c2430  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WFIntelligencePromptFieldAccessibility
+0x1ee2c2520  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WFSlotTemplateViewAccessibility
+0x1ee2c26b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WFWidgetCellAccessibility
+0x1ee2c2688  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WFWidgetConfigurationCardHeaderViewAccessibility
+0x1ee2c24f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WFWidgetConfigurationCardViewAccessibility
+0x1ee2c2660  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WFWidgetConfigurationViewAccessibility
+0x1ee2c2408  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___WFIntelligencePromptFieldAccessibility_super
+0x1ee2c24d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___WFSlotTemplateViewAccessibility_super
+0x1ee2c2638  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___WFWidgetCellAccessibility_super
+0x1ee2c2610  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___WFWidgetConfigurationCardHeaderViewAccessibility_super
+0x1ee2c24a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___WFWidgetConfigurationCardViewAccessibility_super
+0x1ee2c25e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___WFWidgetConfigurationViewAccessibility_super
+0x189da4064  __TEXT,__text  _accessibilityLocalizedString
+```
+
+## Private
+
+```
+0x189da3ee0  __TEXT,__text  +[AXWorkflowUIServicesGlue accessibilityInitializeBundle]
+0x189da3f68  __TEXT,__text  ___57+[AXWorkflowUIServicesGlue accessibilityInitializeBundle]_block_invoke
+0x189da3f70  __TEXT,__text  ___57+[AXWorkflowUIServicesGlue accessibilityInitializeBundle]_block_invoke_2
+0x189da3fc4  __TEXT,__text  ___57+[AXWorkflowUIServicesGlue accessibilityInitializeBundle]_block_invoke_3
+0x189da4108  __TEXT,__text  +[WFWidgetConfigurationCardViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189da4114  __TEXT,__text  +[WFWidgetConfigurationCardViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189da4120  __TEXT,__text  +[WFWidgetConfigurationCardViewAccessibility _accessibilityPerformValidations:]
+0x189da4188  __TEXT,__text  -[WFWidgetConfigurationCardViewAccessibility _accessibilityAdditionalElements]
+0x189da4210  __TEXT,__text  -[WFWidgetConfigurationCardViewAccessibility __axClosePopupElement]
+0x189da421c  __TEXT,__text  -[WFWidgetConfigurationCardViewAccessibility __axSetClosePopupElement:]
+0x189da4228  __TEXT,__text  -[WFWidgetConfigurationCardViewAccessibility _axClosePopupElement]
+0x189da43e8  __TEXT,__text  ___66-[WFWidgetConfigurationCardViewAccessibility _axClosePopupElement]_block_invoke
+0x189da44c0  __TEXT,__text  ___66-[WFWidgetConfigurationCardViewAccessibility _axClosePopupElement]_block_invoke_2
+0x189da44f8  __TEXT,__text  -[WFWidgetConfigurationCardViewAccessibility _axHandleClosePopupAction]
+0x189da4568  __TEXT,__text  ___71-[WFWidgetConfigurationCardViewAccessibility _axHandleClosePopupAction]_block_invoke
+0x189da45b8  __TEXT,__text  +[WFWidgetConfigurationCardHeaderViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189da45c4  __TEXT,__text  +[WFWidgetConfigurationCardHeaderViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189da45d0  __TEXT,__text  +[WFWidgetConfigurationCardHeaderViewAccessibility _accessibilityPerformValidations:]
+0x189da4660  __TEXT,__text  -[WFWidgetConfigurationCardHeaderViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x189da4748  __TEXT,__text  +[WFWidgetCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189da4754  __TEXT,__text  +[WFWidgetCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189da4760  __TEXT,__text  +[WFWidgetCellAccessibility _accessibilityPerformValidations:]
+0x189da47e0  __TEXT,__text  -[WFWidgetCellAccessibility isAccessibilityElement]
+0x189da4814  __TEXT,__text  -[WFWidgetCellAccessibility accessibilityLabel]
+0x189da4818  __TEXT,__text  -[WFWidgetCellAccessibility setRunningState:]
+0x189da4898  __TEXT,__text  -[WFWidgetCellAccessibility _axWorkflowCellName]
+0x189da48e0  __TEXT,__text  +[WFSlotTemplateViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189da48ec  __TEXT,__text  +[WFSlotTemplateViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189da48f8  __TEXT,__text  +[WFSlotTemplateViewAccessibility _accessibilityPerformValidations:]
+0x189da4b90  __TEXT,__text  -[WFSlotTemplateViewAccessibility _accessibilityEnumerateContentsWithBlock:]
+0x189da4d08  __TEXT,__text  -[WFSlotTemplateViewAccessibility _accessibilityLocalizedPlaceholderNameForSlot:]
+0x189da4d7c  __TEXT,__text  -[WFSlotTemplateViewAccessibility _accessibilityExpandedStringForAttributedString:]
+0x189da4e80  __TEXT,__text  ___83-[WFSlotTemplateViewAccessibility _accessibilityExpandedStringForAttributedString:]_block_invoke
+0x189da4f70  __TEXT,__text  -[WFSlotTemplateViewAccessibility _accessibilityShowMenuForSlot:]
+0x189da5010  __TEXT,__text  -[WFSlotTemplateViewAccessibility _accessibilityShowContextualMenuForSlot:]
+0x189da50c4  __TEXT,__text  -[WFSlotTemplateViewAccessibility isAccessibilityElement]
+0x189da50e4  __TEXT,__text  -[WFSlotTemplateViewAccessibility accessibilityLabel]
+0x189da5204  __TEXT,__text  ___Block_byref_object_copy_
+0x189da5214  __TEXT,__text  ___Block_byref_object_dispose_
+0x189da521c  __TEXT,__text  ___53-[WFSlotTemplateViewAccessibility accessibilityLabel]_block_invoke
+0x189da52b8  __TEXT,__text  ___53-[WFSlotTemplateViewAccessibility accessibilityLabel]_block_invoke_2
+0x189da542c  __TEXT,__text  -[WFSlotTemplateViewAccessibility accessibilityCustomActions]
+0x189da5690  __TEXT,__text  ___61-[WFSlotTemplateViewAccessibility accessibilityCustomActions]_block_invoke
+0x189da575c  __TEXT,__text  ___61-[WFSlotTemplateViewAccessibility accessibilityCustomActions]_block_invoke_2
+0x189da5d90  __TEXT,__text  ___61-[WFSlotTemplateViewAccessibility accessibilityCustomActions]_block_invoke_3
+0x189da5f48  __TEXT,__text  ___61-[WFSlotTemplateViewAccessibility accessibilityCustomActions]_block_invoke_4
+0x189da6024  __TEXT,__text  ___61-[WFSlotTemplateViewAccessibility accessibilityCustomActions]_block_invoke_5
+0x189da60c0  __TEXT,__text  ___61-[WFSlotTemplateViewAccessibility accessibilityCustomActions]_block_invoke_6
+0x189da6188  __TEXT,__text  ___61-[WFSlotTemplateViewAccessibility accessibilityCustomActions]_block_invoke_7
+0x189da61cc  __TEXT,__text  ___61-[WFSlotTemplateViewAccessibility accessibilityCustomActions]_block_invoke_8
+0x189da6294  __TEXT,__text  ___61-[WFSlotTemplateViewAccessibility accessibilityCustomActions]_block_invoke_9
+0x189da62d8  __TEXT,__text  ___61-[WFSlotTemplateViewAccessibility accessibilityCustomActions]_block_invoke_10
+0x189da63a0  __TEXT,__text  ___61-[WFSlotTemplateViewAccessibility accessibilityCustomActions]_block_invoke_11
+0x189da63e4  __TEXT,__text  ___61-[WFSlotTemplateViewAccessibility accessibilityCustomActions]_block_invoke_12
+0x189da64ac  __TEXT,__text  ___61-[WFSlotTemplateViewAccessibility accessibilityCustomActions]_block_invoke_13
+0x189da64f0  __TEXT,__text  ___61-[WFSlotTemplateViewAccessibility accessibilityCustomActions]_block_invoke_14
+0x189da65a4  __TEXT,__text  ___61-[WFSlotTemplateViewAccessibility accessibilityCustomActions]_block_invoke_15
+0x189da65d8  __TEXT,__text  +[WFIntelligencePromptFieldAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189da65e4  __TEXT,__text  +[WFIntelligencePromptFieldAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189da65f0  __TEXT,__text  +[WFIntelligencePromptFieldAccessibility _accessibilityPerformValidations:]
+0x189da6708  __TEXT,__text  -[WFIntelligencePromptFieldAccessibility _accessibilityLoadAccessibilityInformation]
+0x189da6bfc  __TEXT,__text  ___84-[WFIntelligencePromptFieldAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke
+0x189da6c7c  __TEXT,__text  ___84-[WFIntelligencePromptFieldAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_2
+0x189da6d20  __TEXT,__text  ___84-[WFIntelligencePromptFieldAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_3
+0x189da6da0  __TEXT,__text  ___84-[WFIntelligencePromptFieldAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_4
+0x189da6e24  __TEXT,__text  -[WFIntelligencePromptFieldAccessibility accessibilityElements]
+0x189da6fe4  __TEXT,__text  +[WFWidgetConfigurationViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189da6ff0  __TEXT,__text  +[WFWidgetConfigurationViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189da6ffc  __TEXT,__text  +[WFWidgetConfigurationViewAccessibility _accessibilityPerformValidations:]
+0x189da7068  __TEXT,__text  -[WFWidgetConfigurationViewAccessibility accessibilityViewIsModal]
+0x189da7070  __TEXT,__text  -[WFWidgetConfigurationViewAccessibility accessibilityPerformEscape]
+0x189da70e0  __TEXT,__text  ___68-[WFWidgetConfigurationViewAccessibility accessibilityPerformEscape]_block_invoke
+```
+

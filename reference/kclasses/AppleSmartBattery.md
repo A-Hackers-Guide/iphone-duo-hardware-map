@@ -1,0 +1,72 @@
+# `AppleSmartBattery`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.driver.AppleSmartBatteryManagerEmbedded`](../kexts/com.apple.driver.AppleSmartBatteryManagerEmbedded.md)
+- Object size: `0x258` (600 bytes)
+- Metaclass: `0xfffffe000b99eb20`; metaclass vtable `0xfffffe000822fac8`; class vtable `0xfffffe000822f568`
+- Registration (init): `0xfffffe0009757900`
+- Superclasses: [`IOPMPowerSource`](IOPMPowerSource.md) → [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## Strings in its kext that name it (60)
+
+- `AppleSmartBatteryBank.cpp`
+- `AppleSmartBatteryPack: ID: %d Failed to update Error Condition\n`
+- `site.AppleSmartBatteryHFDataClient`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: no Algo chem ID in bank batteryData\n`
+- `AppleSmartBatteryPack: ID: %d failed to enable Carrier Mode(%d) %x=%s\n`
+- `\"AppleSmartBattery: not inside workloop gate\" @%s:%d`
+- `AppleSmartBatteryPack: ID: %d failed to read shutdownData for pack %d\n`
+- `AppleSmartBatteryPack: ID: %d failed to set Carrier Mode lower limit(%d) %x=%s\n`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: failed to write impedence key (%c%c%c%c), raw=%d,ret=%d\n`
+- `AppleSmartBatteryUserClient ERROR: super::start failed\n`
+- `site.AppleSmartBatteryManagerUserClient`
+- `AppleSmartBatteryUserClient`
+- `site.AppleSmartBattery`
+- `AppleSmartBatteryHFDataClient`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: PPM returned all-zero impedance array, skipping SMC write\n`
+- `site.AppleSmartBatteryUserClient`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: no batteryData in bank\n`
+- `AppleSmartBatteryCell`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: failed to get impedence key (%c%c%c%c) data, ret=%d\n`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: failed to get impedance array from PPM output\n`
+- `AppleSmartBatteryPack: ID: %d failed to set Carrier Mode upper voltage(%d) %x=%s\n`
+- `AppleSmartBatteryPack: ID: %d Battery pack is pending/missing/bad\n`
+- `AppleSmartBatteryUserClient ERROR: dataClient does not exist\n`
+- `AppleSmartBatteryHFDataClient ERROR: Could not get the memory descriptor for the data queue`
+- `site.AppleSmartBatteryCell`
+- `AppleSmartBatteryPack: DBG: ID: %d Gauge reports no lifetime failure counters\n`
+- `AppleSmartBatteryManagerUserClient`
+- `AppleSmartBatteryPack`
+- `AppleSmartBatteryPack: ID: %d Battery data read aborted. ltd:%d kiosk:%d carrier:%d\n`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: failed to read temp key, ret=%d\n`
+- `AppleSmartBatteryUserClient ERROR: unknown memory type in clientMemoryForType()`
+- `AppleSmartBatteryPack: ID: %d !bd\n`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: PPM API call failed, ret=%d\n`
+- `AppleSmartBatteryPack: ID: %d Failed to create shutdown reason symbol\n`
+- `AppleSmartBattery`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: failed to read DOD key, ret=%d\n`
+- `AppleSmartBattery.cpp`
+- `AppleSmartBatteryPack: ID: %d Failed to read shutdown nominal capacity\n`
+- `AppleSmartBatteryPack: ID: %d failed to write key '%c%c%c%c' rc:%u=%s\n`
+- `site.AppleSmartBatteryManager`
+- `site.AppleSmartBatteryBank*`
+- `AppleSmartBatteryPack: DBG: ID: %d Lifetime failure counter mask has slots this kext does not publish:%#llx\n`
+- `site.AppleSmartBatteryPack*`
+- `AppleSmartBatteryBank`
+- `AppleSmartBatteryPack: ID: %d Lifetime failure counter payload is %u bytes, expected %zu\n`
+- `AppleSmartBatteryBank: Pack ID: %d Bank ID: %d failed to write key '%c%c%c%c' rc:%u=%s\n`
+- `AppleSmartBatteryUserClient ERROR: Provider invalid in start\n`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: rebalancing not supported, ret=%d\n`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: no bank instance\n`
+- `AppleSmartBatteryManager`
+- `AppleSmartBatteryUserClient ERROR: Error in data collection request\n`
+- `AppleSmartBatteryPack: ID: %d failed to set Carrier Mode lower voltage(%d) %x=%s\n`
+- `site.AppleSmartBatteryPack`
+- `AppleSmartBatteryUserClient ERROR: dataClient start failed\n`
+- `AppleSmartBatteryPack: ID: %d Failed to read shutdown data error flags\n`
+- `AppleSmartBatteryPack: ID: %d failed to set Carrier Mode upper limit(%d) %x=%s\n`
+- `AppleSmartBatteryPack: ID: %d updateRebalanceData: failed to allocate dataIn\n`
+- `AppleSmartBatteryHFDataClient ERROR: Could not allocate data queue`
+- `site.AppleSmartBatteryCell*`
+- `AppleSmartBatteryUserClient ERROR: dataClient openClient failed\n`

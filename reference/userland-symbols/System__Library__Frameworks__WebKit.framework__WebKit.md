@@ -1,0 +1,3291 @@
+# Symbols: `/System/Library/Frameworks/WebKit.framework/WebKit`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__Frameworks__WebKit.framework__WebKit.md). **[DSC]**
+
+2,274 public symbols, 79,850 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x19c671048  __TEXT,__text  _ExtensionEventHandler
+0x19c86fa94  __TEXT,__text  _GPUServiceInitializer
+0x19cb4165c  __TEXT,__text  _ModelServiceInitializer
+0x1e0d3d178  __DATA_CONST,__const  _NSReadAccessURLDocumentOption
+0x19c6b3f68  __TEXT,__text  _NetworkServiceInitializer
+0x1ee1c8fc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKBackForwardList
+0x1ee1c8890  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKBackForwardListItem
+0x1ef6bee98  __AUTH,__objc_data  _OBJC_CLASS_$_WKBrowsingContextController
+0x1ee1c9420  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKBrowsingContextHandle
+0x1ef6bcf30  __AUTH,__objc_data  _OBJC_CLASS_$_WKCaptionStyleMenuController
+0x1ef6bee70  __AUTH,__objc_data  _OBJC_CLASS_$_WKContentRuleList
+0x1ef6bee48  __AUTH,__objc_data  _OBJC_CLASS_$_WKContentRuleListStore
+0x1ee1c8c00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKContentWorld
+0x1ef6bea38  __AUTH,__objc_data  _OBJC_CLASS_$_WKContentWorldConfiguration
+0x1ef6be588  __AUTH,__objc_data  _OBJC_CLASS_$_WKContextMenuElementInfo
+0x1ee1c9240  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKDOMDocument
+0x1ee1c9218  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKDOMElement
+0x1ee1c91f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKDOMNode
+0x1ef6b96f0  __AUTH,__objc_data  _OBJC_CLASS_$_WKDOMNodeSnapshot
+0x1ef6bdc50  __AUTH,__objc_data  _OBJC_CLASS_$_WKDOMRange
+0x1ee1c8bd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKDOMText
+0x1ef6bce40  __AUTH,__objc_data  _OBJC_CLASS_$_WKDOMTextIterator
+0x1ee1c8ac0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKDeferringGestureRecognizer
+0x1ef6be560  __AUTH,__objc_data  _OBJC_CLASS_$_WKDownload
+0x1ef6bcb98  __AUTH,__objc_data  _OBJC_CLASS_$_WKFindConfiguration
+0x1ef6bcb70  __AUTH,__objc_data  _OBJC_CLASS_$_WKFindResult
+0x1ef6bcb20  __AUTH,__objc_data  _OBJC_CLASS_$_WKFormInfo
+0x1ee1c91c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKFrameInfo
+0x1ef6bc9e0  __AUTH,__objc_data  _OBJC_CLASS_$_WKGrant
+0x1ee1c7f58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKHTTPCookieStore
+0x1ef6bc990  __AUTH,__objc_data  _OBJC_CLASS_$_WKImmersiveEnvironment
+0x1ef6be268  __AUTH,__objc_data  _OBJC_CLASS_$_WKJSHandle
+0x1ee1c8368  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKMaterialHostingSupport
+0x1ee1c91a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKMouseDeviceObserver
+0x1ee1c8f20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKNavigation
+0x1ee1c8ef8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKNavigationAction
+0x1ef6bdb88  __AUTH,__objc_data  _OBJC_CLASS_$_WKNavigationData
+0x1ee1c8688  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKNavigationResponse
+0x1ef6bdb60  __AUTH,__objc_data  _OBJC_CLASS_$_WKOpenPanelParameters
+0x1ef6bc7d8  __AUTH,__objc_data  _OBJC_CLASS_$_WKPDFConfiguration
+0x1ee1c8ca0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKPreferenceObserver
+0x1ee1c9380  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKPreferences
+0x1ef6bdb38  __AUTH,__objc_data  _OBJC_CLASS_$_WKPreviewElementInfo
+0x1ef6be218  __AUTH,__objc_data  _OBJC_CLASS_$_WKProcessExtension
+0x1ee1c9560  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKProcessPool
+0x1ee1c8138  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKScriptMessage
+0x1ef6bf0f0  __AUTH,__objc_data  _OBJC_CLASS_$_WKSecurityOrigin
+0x1ef6be1f0  __AUTH,__objc_data  _OBJC_CLASS_$_WKSnapshotConfiguration
+0x1ef6bc468  __AUTH,__objc_data  _OBJC_CLASS_$_WKStageModeOrbitSimulator
+0x1ef6be920  __AUTH,__objc_data  _OBJC_CLASS_$_WKTextExtractionContainerItem
+0x1ef6bc418  __AUTH,__objc_data  _OBJC_CLASS_$_WKTextExtractionContentEditableItem
+0x1ef6be510  __AUTH,__objc_data  _OBJC_CLASS_$_WKTextExtractionEditable
+0x1ef6bdb10  __AUTH,__objc_data  _OBJC_CLASS_$_WKTextExtractionFormItem
+0x1ef6be1a0  __AUTH,__objc_data  _OBJC_CLASS_$_WKTextExtractionIFrameItem
+0x1ef6be8f8  __AUTH,__objc_data  _OBJC_CLASS_$_WKTextExtractionImageItem
+0x1ef6be8d0  __AUTH,__objc_data  _OBJC_CLASS_$_WKTextExtractionItem
+0x1ef6be8a8  __AUTH,__objc_data  _OBJC_CLASS_$_WKTextExtractionLink
+0x1ef6bc3f0  __AUTH,__objc_data  _OBJC_CLASS_$_WKTextExtractionLinkItem
+0x1ef6be178  __AUTH,__objc_data  _OBJC_CLASS_$_WKTextExtractionScrollableItem
+0x1ef6bc3c8  __AUTH,__objc_data  _OBJC_CLASS_$_WKTextExtractionSelectItem
+0x1ef6bc3a0  __AUTH,__objc_data  _OBJC_CLASS_$_WKTextExtractionTextFormControlItem
+0x1ef6be880  __AUTH,__objc_data  _OBJC_CLASS_$_WKTextExtractionTextItem
+0x1ee1c9538  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKUserContentController
+0x1ee1c8188  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKUserScript
+0x1ef6bdac0  __AUTH,__objc_data  _OBJC_CLASS_$_WKWebExtension
+0x1ef6bc288  __AUTH,__objc_data  _OBJC_CLASS_$_WKWebExtensionAction
+0x1ef6bc260  __AUTH,__objc_data  _OBJC_CLASS_$_WKWebExtensionCommand
+0x1ef6bda98  __AUTH,__objc_data  _OBJC_CLASS_$_WKWebExtensionContext
+0x1ef6be4c0  __AUTH,__objc_data  _OBJC_CLASS_$_WKWebExtensionController
+0x1ef6bda70  __AUTH,__objc_data  _OBJC_CLASS_$_WKWebExtensionControllerConfiguration
+0x1ef6bc238  __AUTH,__objc_data  _OBJC_CLASS_$_WKWebExtensionDataRecord
+0x1ef6be128  __AUTH,__objc_data  _OBJC_CLASS_$_WKWebExtensionMatchPattern
+0x1ef6bc210  __AUTH,__objc_data  _OBJC_CLASS_$_WKWebExtensionMessagePort
+0x1ef6bc1e8  __AUTH,__objc_data  _OBJC_CLASS_$_WKWebExtensionTabConfiguration
+0x1ef6bc1c0  __AUTH,__objc_data  _OBJC_CLASS_$_WKWebExtensionWindowConfiguration
+0x1ee1c9808  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKWebProcessPlugInBrowserContextController
+0x1ef6bc148  __AUTH,__objc_data  _OBJC_CLASS_$_WKWebProcessPlugInCSSStyleDeclarationHandle
+0x1ee1c9a10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKWebProcessPlugInController
+0x1ee1c97e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKWebProcessPlugInFrame
+0x1ee1c92e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKWebProcessPlugInHitTestResult
+0x1ee1c9100  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKWebProcessPlugInNodeHandle
+0x1ee1c9650  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKWebProcessPlugInPageGroup
+0x1ef6bda48  __AUTH,__objc_data  _OBJC_CLASS_$_WKWebProcessPlugInRangeHandle
+0x1ee1c9600  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKWebProcessPlugInScriptWorld
+0x1ee1c9ec0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKWebView
+0x1ee1c9470  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKWebViewConfiguration
+0x1ee1c8ea8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKWebpagePreferences
+0x1ef6beba0  __AUTH,__objc_data  _OBJC_CLASS_$_WKWebsiteDataRecord
+0x1ee1c9588  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_WKWebsiteDataStore
+0x1ef6be100  __AUTH,__objc_data  _OBJC_CLASS_$_WKWindowFeatures
+0x1ef6b9670  __AUTH,__objc_data  _OBJC_CLASS_$__TtC6WebKit14WebPageWebView
+0x1ef6be0b0  __AUTH,__objc_data  _OBJC_CLASS_$__WKActivatedElementInfo
+0x1ef6bc0f8  __AUTH,__objc_data  _OBJC_CLASS_$__WKAppHighlight
+0x1ef6bda20  __AUTH,__objc_data  _OBJC_CLASS_$__WKApplicationManifest
+0x1ef6bc0d0  __AUTH,__objc_data  _OBJC_CLASS_$__WKApplicationManifestIcon
+0x1ef6bc0a8  __AUTH,__objc_data  _OBJC_CLASS_$__WKApplicationManifestShortcut
+0x1ef6bc080  __AUTH,__objc_data  _OBJC_CLASS_$__WKArchiveConfiguration
+0x1ef6bc058  __AUTH,__objc_data  _OBJC_CLASS_$__WKArchiveExclusionRule
+0x1ef6be498  __AUTH,__objc_data  _OBJC_CLASS_$__WKAttachment
+0x1ef6bc030  __AUTH,__objc_data  _OBJC_CLASS_$__WKAttachmentDisplayOptions
+0x1ef6be088  __AUTH,__objc_data  _OBJC_CLASS_$__WKAttachmentInfo
+0x1ef6bd9a8  __AUTH,__objc_data  _OBJC_CLASS_$__WKAuthenticationExtensionsClientInputs
+0x1ef6bc008  __AUTH,__objc_data  _OBJC_CLASS_$__WKAuthenticationExtensionsClientOutputs
+0x1ef6bbfe0  __AUTH,__objc_data  _OBJC_CLASS_$__WKAuthenticationExtensionsLargeBlobInputs
+0x1ef6b94b0  __AUTH,__objc_data  _OBJC_CLASS_$__WKAuthenticationExtensionsLargeBlobOutputs
+0x1ef6bd980  __AUTH,__objc_data  _OBJC_CLASS_$__WKAuthenticationPRFInputValues
+0x1ef6bbfb8  __AUTH,__objc_data  _OBJC_CLASS_$__WKAuthenticatorAssertionResponse
+0x1ef6bbf90  __AUTH,__objc_data  _OBJC_CLASS_$__WKAuthenticatorAttestationResponse
+0x1ef6bbf68  __AUTH,__objc_data  _OBJC_CLASS_$__WKAuthenticatorResponse
+0x1ef6bbf40  __AUTH,__objc_data  _OBJC_CLASS_$__WKAuthenticatorSelectionCriteria
+0x1ef6bbf18  __AUTH,__objc_data  _OBJC_CLASS_$__WKAutomationSession
+0x1ef6bbef0  __AUTH,__objc_data  _OBJC_CLASS_$__WKAutomationSessionConfiguration
+0x1ef6bd958  __AUTH,__objc_data  _OBJC_CLASS_$__WKContentRuleListAction
+0x1ef6be830  __AUTH,__objc_data  _OBJC_CLASS_$__WKContentWorldConfiguration
+0x1ef6bbe78  __AUTH,__objc_data  _OBJC_CLASS_$__WKCustomHeaderFields
+0x1ef6bedd0  __AUTH,__objc_data  _OBJC_CLASS_$__WKDataTask
+0x1ef6bbe50  __AUTH,__objc_data  _OBJC_CLASS_$__WKDownload
+0x1ef6bd930  __AUTH,__objc_data  _OBJC_CLASS_$__WKElementAction
+0x1ef6be060  __AUTH,__objc_data  _OBJC_CLASS_$__WKExperimentalFeature
+0x1ef6be808  __AUTH,__objc_data  _OBJC_CLASS_$__WKFeature
+0x1ee1c9970  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__WKFrameHandle
+0x1ef6be038  __AUTH,__objc_data  _OBJC_CLASS_$__WKFrameTreeNode
+0x1ef6bd908  __AUTH,__objc_data  _OBJC_CLASS_$__WKGeolocationPosition
+0x1ef6be470  __AUTH,__objc_data  _OBJC_CLASS_$__WKHitTestResult
+0x1ee1c8e80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__WKInspector
+0x1ef6bbdb0  __AUTH,__objc_data  _OBJC_CLASS_$__WKInspectorConfiguration
+0x1ef6bbd88  __AUTH,__objc_data  _OBJC_CLASS_$__WKInspectorDebuggableInfo
+0x1ef6bd8e0  __AUTH,__objc_data  _OBJC_CLASS_$__WKInternalDebugFeature
+0x1ef6be010  __AUTH,__objc_data  _OBJC_CLASS_$__WKJSHandle
+0x1ef6bd8b8  __AUTH,__objc_data  _OBJC_CLASS_$__WKLinkIconParameters
+0x1ef6bbd10  __AUTH,__objc_data  _OBJC_CLASS_$__WKModalContainerInfo
+0x1ef6bbce8  __AUTH,__objc_data  _OBJC_CLASS_$__WKMutableNotificationData
+0x1ef6bbcc0  __AUTH,__objc_data  _OBJC_CLASS_$__WKNotificationData
+0x1ef6bbc98  __AUTH,__objc_data  _OBJC_CLASS_$__WKNowPlayingMetadata
+0x1ef6bd890  __AUTH,__objc_data  _OBJC_CLASS_$__WKPageLoadTiming
+0x1ef6bbc20  __AUTH,__objc_data  _OBJC_CLASS_$__WKProcessInfo
+0x1ee1c9510  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__WKProcessPoolConfiguration
+0x1ef6bbbf8  __AUTH,__objc_data  _OBJC_CLASS_$__WKPublicKeyCredentialCreationOptions
+0x1ef6bbbd0  __AUTH,__objc_data  _OBJC_CLASS_$__WKPublicKeyCredentialDescriptor
+0x1ef6bbba8  __AUTH,__objc_data  _OBJC_CLASS_$__WKPublicKeyCredentialEntity
+0x1ef6bbb80  __AUTH,__objc_data  _OBJC_CLASS_$__WKPublicKeyCredentialParameters
+0x1ef6bbb58  __AUTH,__objc_data  _OBJC_CLASS_$__WKPublicKeyCredentialRelyingPartyEntity
+0x1ef6bd840  __AUTH,__objc_data  _OBJC_CLASS_$__WKPublicKeyCredentialRequestOptions
+0x1ef6bbb30  __AUTH,__objc_data  _OBJC_CLASS_$__WKPublicKeyCredentialUserEntity
+0x1ee1c9948  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__WKRemoteObjectInterface
+0x1ee1c9920  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__WKRemoteObjectRegistry
+0x1ef6be448  __AUTH,__objc_data  _OBJC_CLASS_$__WKResourceLoadInfo
+0x1ef6bd818  __AUTH,__objc_data  _OBJC_CLASS_$__WKResourceLoadStatisticsFirstParty
+0x1ef6bd7f0  __AUTH,__objc_data  _OBJC_CLASS_$__WKResourceLoadStatisticsThirdParty
+0x1ef6bd7c8  __AUTH,__objc_data  _OBJC_CLASS_$__WKSessionState
+0x1ee1c87f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__WKSystemPreferences
+0x1ef6bba40  __AUTH,__objc_data  _OBJC_CLASS_$__WKTargetedElementInfo
+0x1ef6bba18  __AUTH,__objc_data  _OBJC_CLASS_$__WKTargetedElementRequest
+0x1ef6beb78  __AUTH,__objc_data  _OBJC_CLASS_$__WKTextExtractionConfiguration
+0x1ef6bb9f0  __AUTH,__objc_data  _OBJC_CLASS_$__WKTextExtractionInteraction
+0x1ef6bb9c8  __AUTH,__objc_data  _OBJC_CLASS_$__WKTextExtractionInteractionResult
+0x1ef6bdfe8  __AUTH,__objc_data  _OBJC_CLASS_$__WKTextExtractionResult
+0x1ef6be7e0  __AUTH,__objc_data  _OBJC_CLASS_$__WKTextInputContext
+0x1ef6bb9a0  __AUTH,__objc_data  _OBJC_CLASS_$__WKTextManipulationConfiguration
+0x1ef6bb978  __AUTH,__objc_data  _OBJC_CLASS_$__WKTextManipulationExclusionRule
+0x1ef6bb950  __AUTH,__objc_data  _OBJC_CLASS_$__WKTextManipulationItem
+0x1ef6bb928  __AUTH,__objc_data  _OBJC_CLASS_$__WKTextManipulationToken
+0x1ef6bb900  __AUTH,__objc_data  _OBJC_CLASS_$__WKTextPreview
+0x1ef6bd7a0  __AUTH,__objc_data  _OBJC_CLASS_$__WKTextRun
+0x1ef6bb8d8  __AUTH,__objc_data  _OBJC_CLASS_$__WKTouchEventGenerator
+0x1ef6bb888  __AUTH,__objc_data  _OBJC_CLASS_$__WKUserContentExtensionStore
+0x1ef6bb860  __AUTH,__objc_data  _OBJC_CLASS_$__WKUserContentFilter
+0x1ef6bb838  __AUTH,__objc_data  _OBJC_CLASS_$__WKUserContentWorld
+0x1ef6bef88  __AUTH,__objc_data  _OBJC_CLASS_$__WKUserInitiatedAction
+0x1ef6beb50  __AUTH,__objc_data  _OBJC_CLASS_$__WKUserStyleSheet
+0x1ee1c9358  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__WKVisitedLinkStore
+0x1ef6bb798  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebAuthenticationAssertionResponse
+0x1ef6bdfc0  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebAuthenticationPanel
+0x1ef6bb770  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebContentProcessInfo
+0x1ef6bb748  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebExtension
+0x1ef6bb720  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebExtensionAction
+0x1ef6bb680  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebExtensionCommand
+0x1ef6bb658  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebExtensionContext
+0x1ef6bd728  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebExtensionController
+0x1ef6bd700  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebExtensionControllerConfiguration
+0x1ef6bb630  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebExtensionDataRecord
+0x1ef6bb608  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebExtensionDeclarativeNetRequestRule
+0x1ef6bb5e0  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebExtensionDeclarativeNetRequestTranslator
+0x1ef6bd6b0  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebExtensionMatchPattern
+0x1ef6bb590  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebExtensionMessagePort
+0x1ef6bb568  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebExtensionSidebar
+0x1ef6bb518  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebExtensionTabCreationOptions
+0x1ef6bb4f0  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebExtensionWebNavigationURLFilter
+0x1ef6bb4a0  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebExtensionWebRequestFilter
+0x1ef6bb478  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebExtensionWindowCreationOptions
+0x1ef6bb450  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebPushAction
+0x1ef6bb428  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebPushDaemonConnection
+0x1ef6bb400  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebPushDaemonConnectionConfiguration
+0x1ef6bb3d8  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebPushMessage
+0x1ef6bb3b0  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebPushSubscriptionData
+0x1ef6bd688  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebViewPrintFormatter
+0x1ef6bb388  __AUTH,__objc_data  _OBJC_CLASS_$__WKWebsiteDataSize
+0x1ee1c93f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__WKWebsiteDataStoreConfiguration
+0x1ee1c90d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKBackForwardList
+0x1ee1c87c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKBackForwardListItem
+0x1ef6beda8  __AUTH,__objc_data  _OBJC_METACLASS_$_WKBrowsingContextController
+0x1ee1c93d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKBrowsingContextHandle
+0x1ef6bb220  __AUTH,__objc_data  _OBJC_METACLASS_$_WKCaptionStyleMenuController
+0x1ef6bed80  __AUTH,__objc_data  _OBJC_METACLASS_$_WKContentRuleList
+0x1ef6bed58  __AUTH,__objc_data  _OBJC_METACLASS_$_WKContentRuleListStore
+0x1ee1c8c50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKContentWorld
+0x1ef6be7b8  __AUTH,__objc_data  _OBJC_METACLASS_$_WKContentWorldConfiguration
+0x1ef6be3f8  __AUTH,__objc_data  _OBJC_METACLASS_$_WKContextMenuElementInfo
+0x1ee1c92b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKDOMDocument
+0x1ee1c9088  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKDOMElement
+0x1ee1c9060  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKDOMNode
+0x1ef6b96c8  __AUTH,__objc_data  _OBJC_METACLASS_$_WKDOMNodeSnapshot
+0x1ef6bdf98  __AUTH,__objc_data  _OBJC_METACLASS_$_WKDOMRange
+0x1ee1c8bb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKDOMText
+0x1ef6bb130  __AUTH,__objc_data  _OBJC_METACLASS_$_WKDOMTextIterator
+0x1ee1cb148  __DATA_DIRTY,__data  _OBJC_METACLASS_$_WKDeferringGestureRecognizer
+0x1ef6be3d0  __AUTH,__objc_data  _OBJC_METACLASS_$_WKDownload
+0x1ef6bae88  __AUTH,__objc_data  _OBJC_METACLASS_$_WKFindConfiguration
+0x1ef6bae60  __AUTH,__objc_data  _OBJC_METACLASS_$_WKFindResult
+0x1ef6bae10  __AUTH,__objc_data  _OBJC_METACLASS_$_WKFormInfo
+0x1ee1c8e30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKFrameInfo
+0x1ef6bacd0  __AUTH,__objc_data  _OBJC_METACLASS_$_WKGrant
+0x1ee1c7f30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKHTTPCookieStore
+0x1ef6bac80  __AUTH,__objc_data  _OBJC_METACLASS_$_WKImmersiveEnvironment
+0x1ef6bdf48  __AUTH,__objc_data  _OBJC_METACLASS_$_WKJSHandle
+0x1ee1ca1e8  __DATA_DIRTY,__data  _OBJC_METACLASS_$_WKMaterialHostingSupport
+0x1ee1cea60  __DATA_DIRTY,__data  _OBJC_METACLASS_$_WKMouseDeviceObserver
+0x1ee1c8d40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKNavigation
+0x1ee1c8d18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKNavigationAction
+0x1ef6bd548  __AUTH,__objc_data  _OBJC_METACLASS_$_WKNavigationData
+0x1ee1c8598  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKNavigationResponse
+0x1ef6bd520  __AUTH,__objc_data  _OBJC_METACLASS_$_WKOpenPanelParameters
+0x1ef6baac8  __AUTH,__objc_data  _OBJC_METACLASS_$_WKPDFConfiguration
+0x1ee1c8cf0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKPreferenceObserver
+0x1ee1c9330  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKPreferences
+0x1ef6bd4f8  __AUTH,__objc_data  _OBJC_METACLASS_$_WKPreviewElementInfo
+0x1ef6be678  __AUTH,__objc_data  _OBJC_METACLASS_$_WKProcessExtension
+0x1ee1c94e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKProcessPool
+0x1ee1c80e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKScriptMessage
+0x1ef6bf0a0  __AUTH,__objc_data  _OBJC_METACLASS_$_WKSecurityOrigin
+0x1ef6bded0  __AUTH,__objc_data  _OBJC_METACLASS_$_WKSnapshotConfiguration
+0x1ef6bf9c8  __AUTH,__data  _OBJC_METACLASS_$_WKStageModeOrbitSimulator
+0x1ef6bfdf0  __AUTH,__data  _OBJC_METACLASS_$_WKTextExtractionContainerItem
+0x1ef6bf9a0  __AUTH,__data  _OBJC_METACLASS_$_WKTextExtractionContentEditableItem
+0x1ef6bfd28  __AUTH,__data  _OBJC_METACLASS_$_WKTextExtractionEditable
+0x1ef6bfb18  __AUTH,__data  _OBJC_METACLASS_$_WKTextExtractionFormItem
+0x1ef6bfb68  __AUTH,__data  _OBJC_METACLASS_$_WKTextExtractionIFrameItem
+0x1ef6bfdc8  __AUTH,__data  _OBJC_METACLASS_$_WKTextExtractionImageItem
+0x1ef6bfda0  __AUTH,__data  _OBJC_METACLASS_$_WKTextExtractionItem
+0x1ef6bfd78  __AUTH,__data  _OBJC_METACLASS_$_WKTextExtractionLink
+0x1ef6bf978  __AUTH,__data  _OBJC_METACLASS_$_WKTextExtractionLinkItem
+0x1ef6bfb40  __AUTH,__data  _OBJC_METACLASS_$_WKTextExtractionScrollableItem
+0x1ef6bf950  __AUTH,__data  _OBJC_METACLASS_$_WKTextExtractionSelectItem
+0x1ef6bf928  __AUTH,__data  _OBJC_METACLASS_$_WKTextExtractionTextFormControlItem
+0x1ef6bfd50  __AUTH,__data  _OBJC_METACLASS_$_WKTextExtractionTextItem
+0x1ee1c94c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKUserContentController
+0x1ee1c8160  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKUserScript
+0x1ef6bd4a8  __AUTH,__objc_data  _OBJC_METACLASS_$_WKWebExtension
+0x1ef6ba668  __AUTH,__objc_data  _OBJC_METACLASS_$_WKWebExtensionAction
+0x1ef6ba640  __AUTH,__objc_data  _OBJC_METACLASS_$_WKWebExtensionCommand
+0x1ef6bd480  __AUTH,__objc_data  _OBJC_METACLASS_$_WKWebExtensionContext
+0x1ef6be358  __AUTH,__objc_data  _OBJC_METACLASS_$_WKWebExtensionController
+0x1ef6bd458  __AUTH,__objc_data  _OBJC_METACLASS_$_WKWebExtensionControllerConfiguration
+0x1ef6ba618  __AUTH,__objc_data  _OBJC_METACLASS_$_WKWebExtensionDataRecord
+0x1ef6bde58  __AUTH,__objc_data  _OBJC_METACLASS_$_WKWebExtensionMatchPattern
+0x1ef6ba5f0  __AUTH,__objc_data  _OBJC_METACLASS_$_WKWebExtensionMessagePort
+0x1ef6ba5c8  __AUTH,__objc_data  _OBJC_METACLASS_$_WKWebExtensionTabConfiguration
+0x1ef6ba5a0  __AUTH,__objc_data  _OBJC_METACLASS_$_WKWebExtensionWindowConfiguration
+0x1ee1c9740  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKWebProcessPlugInBrowserContextController
+0x1ef6ba528  __AUTH,__objc_data  _OBJC_METACLASS_$_WKWebProcessPlugInCSSStyleDeclarationHandle
+0x1ee1c99e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKWebProcessPlugInController
+0x1ee1c9678  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKWebProcessPlugInFrame
+0x1ee1c9268  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKWebProcessPlugInHitTestResult
+0x1ee1c8fe8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKWebProcessPlugInNodeHandle
+0x1ee1c9628  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKWebProcessPlugInPageGroup
+0x1ef6bd430  __AUTH,__objc_data  _OBJC_METACLASS_$_WKWebProcessPlugInRangeHandle
+0x1ee1c95d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKWebProcessPlugInScriptWorld
+0x1ee1c9e98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKWebView
+0x1ee1c9448  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKWebViewConfiguration
+0x1ee1c8db8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKWebpagePreferences
+0x1ef6beab0  __AUTH,__objc_data  _OBJC_METACLASS_$_WKWebsiteDataRecord
+0x1ee1c95b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_WKWebsiteDataStore
+0x1ef6bde30  __AUTH,__objc_data  _OBJC_METACLASS_$_WKWindowFeatures
+0x1ef6bfaf0  __AUTH,__data  _OBJC_METACLASS_$__TtC6WebKit14WebPageWebView
+0x1ef6bdde0  __AUTH,__objc_data  _OBJC_METACLASS_$__WKActivatedElementInfo
+0x1ef6ba4d8  __AUTH,__objc_data  _OBJC_METACLASS_$__WKAppHighlight
+0x1ef6bd408  __AUTH,__objc_data  _OBJC_METACLASS_$__WKApplicationManifest
+0x1ef6ba4b0  __AUTH,__objc_data  _OBJC_METACLASS_$__WKApplicationManifestIcon
+0x1ef6ba488  __AUTH,__objc_data  _OBJC_METACLASS_$__WKApplicationManifestShortcut
+0x1ef6ba460  __AUTH,__objc_data  _OBJC_METACLASS_$__WKArchiveConfiguration
+0x1ef6ba438  __AUTH,__objc_data  _OBJC_METACLASS_$__WKArchiveExclusionRule
+0x1ef6be330  __AUTH,__objc_data  _OBJC_METACLASS_$__WKAttachment
+0x1ef6ba410  __AUTH,__objc_data  _OBJC_METACLASS_$__WKAttachmentDisplayOptions
+0x1ef6bddb8  __AUTH,__objc_data  _OBJC_METACLASS_$__WKAttachmentInfo
+0x1ef6bd390  __AUTH,__objc_data  _OBJC_METACLASS_$__WKAuthenticationExtensionsClientInputs
+0x1ef6ba3e8  __AUTH,__objc_data  _OBJC_METACLASS_$__WKAuthenticationExtensionsClientOutputs
+0x1ef6ba3c0  __AUTH,__objc_data  _OBJC_METACLASS_$__WKAuthenticationExtensionsLargeBlobInputs
+0x1ef6b9488  __AUTH,__objc_data  _OBJC_METACLASS_$__WKAuthenticationExtensionsLargeBlobOutputs
+0x1ef6bd368  __AUTH,__objc_data  _OBJC_METACLASS_$__WKAuthenticationPRFInputValues
+0x1ef6ba398  __AUTH,__objc_data  _OBJC_METACLASS_$__WKAuthenticatorAssertionResponse
+0x1ef6ba370  __AUTH,__objc_data  _OBJC_METACLASS_$__WKAuthenticatorAttestationResponse
+0x1ef6ba348  __AUTH,__objc_data  _OBJC_METACLASS_$__WKAuthenticatorResponse
+0x1ef6ba320  __AUTH,__objc_data  _OBJC_METACLASS_$__WKAuthenticatorSelectionCriteria
+0x1ef6ba2f8  __AUTH,__objc_data  _OBJC_METACLASS_$__WKAutomationSession
+0x1ef6ba2d0  __AUTH,__objc_data  _OBJC_METACLASS_$__WKAutomationSessionConfiguration
+0x1ef6bd340  __AUTH,__objc_data  _OBJC_METACLASS_$__WKContentRuleListAction
+0x1ef6be628  __AUTH,__objc_data  _OBJC_METACLASS_$__WKContentWorldConfiguration
+0x1ef6ba258  __AUTH,__objc_data  _OBJC_METACLASS_$__WKCustomHeaderFields
+0x1ef6bed08  __AUTH,__objc_data  _OBJC_METACLASS_$__WKDataTask
+0x1ef6ba230  __AUTH,__objc_data  _OBJC_METACLASS_$__WKDownload
+0x1ef6bd318  __AUTH,__objc_data  _OBJC_METACLASS_$__WKElementAction
+0x1ef6bdd90  __AUTH,__objc_data  _OBJC_METACLASS_$__WKExperimentalFeature
+0x1ef6be600  __AUTH,__objc_data  _OBJC_METACLASS_$__WKFeature
+0x1ee1c98a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__WKFrameHandle
+0x1ef6bdd68  __AUTH,__objc_data  _OBJC_METACLASS_$__WKFrameTreeNode
+0x1ef6bd2f0  __AUTH,__objc_data  _OBJC_METACLASS_$__WKGeolocationPosition
+0x1ef6be308  __AUTH,__objc_data  _OBJC_METACLASS_$__WKHitTestResult
+0x1ee1c8d90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__WKInspector
+0x1ef6ba190  __AUTH,__objc_data  _OBJC_METACLASS_$__WKInspectorConfiguration
+0x1ef6ba168  __AUTH,__objc_data  _OBJC_METACLASS_$__WKInspectorDebuggableInfo
+0x1ef6bd2c8  __AUTH,__objc_data  _OBJC_METACLASS_$__WKInternalDebugFeature
+0x1ef6be2e0  __AUTH,__objc_data  _OBJC_METACLASS_$__WKJSHandle
+0x1ef6bd2a0  __AUTH,__objc_data  _OBJC_METACLASS_$__WKLinkIconParameters
+0x1ef6ba0f0  __AUTH,__objc_data  _OBJC_METACLASS_$__WKModalContainerInfo
+0x1ef6ba0c8  __AUTH,__objc_data  _OBJC_METACLASS_$__WKMutableNotificationData
+0x1ef6ba0a0  __AUTH,__objc_data  _OBJC_METACLASS_$__WKNotificationData
+0x1ef6ba078  __AUTH,__objc_data  _OBJC_METACLASS_$__WKNowPlayingMetadata
+0x1ef6bd278  __AUTH,__objc_data  _OBJC_METACLASS_$__WKPageLoadTiming
+0x1ef6ba000  __AUTH,__objc_data  _OBJC_METACLASS_$__WKProcessInfo
+0x1ee1c9498  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__WKProcessPoolConfiguration
+0x1ef6b9fd8  __AUTH,__objc_data  _OBJC_METACLASS_$__WKPublicKeyCredentialCreationOptions
+0x1ef6b9fb0  __AUTH,__objc_data  _OBJC_METACLASS_$__WKPublicKeyCredentialDescriptor
+0x1ef6b9f88  __AUTH,__objc_data  _OBJC_METACLASS_$__WKPublicKeyCredentialEntity
+0x1ef6b9f60  __AUTH,__objc_data  _OBJC_METACLASS_$__WKPublicKeyCredentialParameters
+0x1ef6b9f38  __AUTH,__objc_data  _OBJC_METACLASS_$__WKPublicKeyCredentialRelyingPartyEntity
+0x1ef6bd228  __AUTH,__objc_data  _OBJC_METACLASS_$__WKPublicKeyCredentialRequestOptions
+0x1ef6b9f10  __AUTH,__objc_data  _OBJC_METACLASS_$__WKPublicKeyCredentialUserEntity
+0x1ee1c99c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__WKRemoteObjectInterface
+0x1ee1c9880  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__WKRemoteObjectRegistry
+0x1ef6be2b8  __AUTH,__objc_data  _OBJC_METACLASS_$__WKResourceLoadInfo
+0x1ef6bd200  __AUTH,__objc_data  _OBJC_METACLASS_$__WKResourceLoadStatisticsFirstParty
+0x1ef6bd1d8  __AUTH,__objc_data  _OBJC_METACLASS_$__WKResourceLoadStatisticsThirdParty
+0x1ef6bd1b0  __AUTH,__objc_data  _OBJC_METACLASS_$__WKSessionState
+0x1ee1c8750  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__WKSystemPreferences
+0x1ef6b9e20  __AUTH,__objc_data  _OBJC_METACLASS_$__WKTargetedElementInfo
+0x1ef6b9df8  __AUTH,__objc_data  _OBJC_METACLASS_$__WKTargetedElementRequest
+0x1ef6bea88  __AUTH,__objc_data  _OBJC_METACLASS_$__WKTextExtractionConfiguration
+0x1ef6b9dd0  __AUTH,__objc_data  _OBJC_METACLASS_$__WKTextExtractionInteraction
+0x1ef6b9da8  __AUTH,__objc_data  _OBJC_METACLASS_$__WKTextExtractionInteractionResult
+0x1ef6bdd40  __AUTH,__objc_data  _OBJC_METACLASS_$__WKTextExtractionResult
+0x1ef6be5d8  __AUTH,__objc_data  _OBJC_METACLASS_$__WKTextInputContext
+0x1ef6b9d80  __AUTH,__objc_data  _OBJC_METACLASS_$__WKTextManipulationConfiguration
+0x1ef6b9d58  __AUTH,__objc_data  _OBJC_METACLASS_$__WKTextManipulationExclusionRule
+0x1ef6b9d30  __AUTH,__objc_data  _OBJC_METACLASS_$__WKTextManipulationItem
+0x1ef6b9d08  __AUTH,__objc_data  _OBJC_METACLASS_$__WKTextManipulationToken
+0x1ef6b9ce0  __AUTH,__objc_data  _OBJC_METACLASS_$__WKTextPreview
+0x1ef6bd188  __AUTH,__objc_data  _OBJC_METACLASS_$__WKTextRun
+0x1ef6b9cb8  __AUTH,__objc_data  _OBJC_METACLASS_$__WKTouchEventGenerator
+0x1ef6b9c68  __AUTH,__objc_data  _OBJC_METACLASS_$__WKUserContentExtensionStore
+0x1ef6b9c40  __AUTH,__objc_data  _OBJC_METACLASS_$__WKUserContentFilter
+0x1ef6b9c18  __AUTH,__objc_data  _OBJC_METACLASS_$__WKUserContentWorld
+0x1ef6beec0  __AUTH,__objc_data  _OBJC_METACLASS_$__WKUserInitiatedAction
+0x1ef6bea60  __AUTH,__objc_data  _OBJC_METACLASS_$__WKUserStyleSheet
+0x1ee1c9308  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__WKVisitedLinkStore
+0x1ef6b9b78  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebAuthenticationAssertionResponse
+0x1ef6bdd18  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebAuthenticationPanel
+0x1ef6b9b50  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebContentProcessInfo
+0x1ef6b9b28  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebExtension
+0x1ef6b9b00  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebExtensionAction
+0x1ef6b9a60  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebExtensionCommand
+0x1ef6b9a38  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebExtensionContext
+0x1ef6bd110  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebExtensionController
+0x1ef6bd0e8  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebExtensionControllerConfiguration
+0x1ef6b9a10  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebExtensionDataRecord
+0x1ef6b99e8  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebExtensionDeclarativeNetRequestRule
+0x1ef6b99c0  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebExtensionDeclarativeNetRequestTranslator
+0x1ef6bd098  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebExtensionMatchPattern
+0x1ef6b9970  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebExtensionMessagePort
+0x1ef6b9948  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebExtensionSidebar
+0x1ef6b98f8  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebExtensionTabCreationOptions
+0x1ef6b98d0  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebExtensionWebNavigationURLFilter
+0x1ef6b9880  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebExtensionWebRequestFilter
+0x1ef6b9858  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebExtensionWindowCreationOptions
+0x1ef6b9830  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebPushAction
+0x1ef6b9808  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebPushDaemonConnection
+0x1ef6b97e0  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebPushDaemonConnectionConfiguration
+0x1ef6b97b8  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebPushMessage
+0x1ef6b9790  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebPushSubscriptionData
+0x1ef6bd070  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebViewPrintFormatter
+0x1ef6b9768  __AUTH,__objc_data  _OBJC_METACLASS_$__WKWebsiteDataSize
+0x1ee1c93a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__WKWebsiteDataStoreConfiguration
+0x19d6a0bac  __TEXT,__text  _WKAccessibilityAnnounce
+0x19d6a09ec  __TEXT,__text  _WKAccessibilityEnable
+0x19d6a0d90  __TEXT,__text  _WKAccessibilityEnableEnhancedAccessibility
+0x19d6a0d94  __TEXT,__text  _WKAccessibilityEnhancedAccessibilityEnabled
+0x19d6a0a08  __TEXT,__text  _WKAccessibilityFocusedObject
+0x19d6a0ba8  __TEXT,__text  _WKAccessibilityFocusedUIElement
+0x19d6a0d80  __TEXT,__text  _WKAccessibilitySetForceDeferredSpellChecking
+0x19d6a0d98  __TEXT,__text  _WKAccessibilitySetForceInitialFrameCaching
+0x19d6a07b4  __TEXT,__text  _WKAccessibilityTestingInjectPreference
+0x19d8df2a4  __TEXT,__text  _WKAdAttributionDaemonMain
+0x19d42f604  __TEXT,__text  _WKAddMockMediaDevice
+0x19d2073c8  __TEXT,__text  _WKArrayAppendItem
+0x19d206414  __TEXT,__text  _WKArrayCreate
+0x19d2064ec  __TEXT,__text  _WKArrayCreateAdoptingValues
+0x19d2065ac  __TEXT,__text  _WKArrayGetItemAtIndex
+0x19d20667c  __TEXT,__text  _WKArrayGetSize
+0x19d20640c  __TEXT,__text  _WKArrayGetTypeID
+0x19d2074d0  __TEXT,__text  _WKArrayRemoveItemAtIndex
+0x19d427038  __TEXT,__text  _WKAuthenticationChallengeGetDecisionListener
+0x19d4271a0  __TEXT,__text  _WKAuthenticationChallengeGetPreviousFailureCount
+0x19d42713c  __TEXT,__text  _WKAuthenticationChallengeGetProposedCredential
+0x19d4270d8  __TEXT,__text  _WKAuthenticationChallengeGetProtectionSpace
+0x19d427030  __TEXT,__text  _WKAuthenticationChallengeGetTypeID
+0x19d4273c0  __TEXT,__text  _WKAuthenticationDecisionListenerCancel
+0x19d4271c0  __TEXT,__text  _WKAuthenticationDecisionListenerGetTypeID
+0x19d42747c  __TEXT,__text  _WKAuthenticationDecisionListenerRejectProtectionSpaceAndContinue
+0x19d4271c8  __TEXT,__text  _WKAuthenticationDecisionListenerUseCredential
+0x19d4299d4  __TEXT,__text  _WKBackForwardListClear
+0x19d429afc  __TEXT,__text  _WKBackForwardListCopyBackListWithLimit
+0x19d429b70  __TEXT,__text  _WKBackForwardListCopyForwardListWithLimit
+0x19d42986c  __TEXT,__text  _WKBackForwardListGetBackItem
+0x19d429a34  __TEXT,__text  _WKBackForwardListGetBackListCount
+0x19d4297ac  __TEXT,__text  _WKBackForwardListGetCurrentItem
+0x19d4298e0  __TEXT,__text  _WKBackForwardListGetForwardItem
+0x19d429a98  __TEXT,__text  _WKBackForwardListGetForwardListCount
+0x19d429954  __TEXT,__text  _WKBackForwardListGetItemAtIndex
+0x19d4297a4  __TEXT,__text  _WKBackForwardListGetTypeID
+0x19d429738  __TEXT,__text  _WKBackForwardListItemCopyOriginalURL
+0x19d4296d0  __TEXT,__text  _WKBackForwardListItemCopyTitle
+0x19d4295f0  __TEXT,__text  _WKBackForwardListItemCopyURL
+0x19d4295e8  __TEXT,__text  _WKBackForwardListItemGetTypeID
+0x19d2077bc  __TEXT,__text  _WKBooleanCreate
+0x19d2077b4  __TEXT,__text  _WKBooleanGetTypeID
+0x19d207810  __TEXT,__text  _WKBooleanGetValue
+0x19d69c0a8  __TEXT,__text  _WKBundleAddOriginAccessAllowListEntry
+0x19d69d290  __TEXT,__text  _WKBundleBackForwardListClear
+0x19d69d278  __TEXT,__text  _WKBundleBackForwardListCopyItemAtIndex
+0x19d69d280  __TEXT,__text  _WKBundleBackForwardListGetBackListCount
+0x19d69d288  __TEXT,__text  _WKBundleBackForwardListGetForwardListCount
+0x19d69d270  __TEXT,__text  _WKBundleBackForwardListGetTypeID
+0x19d69d2dc  __TEXT,__text  _WKBundleBackForwardListItemCopyChildren
+0x19d69d2a4  __TEXT,__text  _WKBundleBackForwardListItemCopyOriginalURL
+0x19d69d2bc  __TEXT,__text  _WKBundleBackForwardListItemCopyTarget
+0x19d69d2b4  __TEXT,__text  _WKBundleBackForwardListItemCopyTitle
+0x19d69d2ac  __TEXT,__text  _WKBundleBackForwardListItemCopyURL
+0x19d69d294  __TEXT,__text  _WKBundleBackForwardListItemGetTypeID
+0x19d69d2d4  __TEXT,__text  _WKBundleBackForwardListItemHasCachedPageExpired
+0x19d69d2cc  __TEXT,__text  _WKBundleBackForwardListItemIsInBackForwardCache
+0x19d69d29c  __TEXT,__text  _WKBundleBackForwardListItemIsSame
+0x19d69d2c4  __TEXT,__text  _WKBundleBackForwardListItemIsTargetItem
+0x19d69cef8  __TEXT,__text  _WKBundleClearResourceLoadStatistics
+0x19d69cdec  __TEXT,__text  _WKBundleCopyWebNotificationID
+0x19d69c8b0  __TEXT,__text  _WKBundleCreateWKDataFromUInt8Array
+0x19d69d2ec  __TEXT,__text  _WKBundleDOMWindowExtensionCreate
+0x19d69d3a4  __TEXT,__text  _WKBundleDOMWindowExtensionGetFrame
+0x19d69d48c  __TEXT,__text  _WKBundleDOMWindowExtensionGetScriptWorld
+0x19d69d2e4  __TEXT,__text  _WKBundleDOMWindowExtensionGetTypeID
+0x19d69d01c  __TEXT,__text  _WKBundleExtendClassesForParameterCoder
+0x19d2068a8  __TEXT,__text  _WKBundleFileHandleCreateWithPath
+0x19d69de34  __TEXT,__text  _WKBundleFrameAllowsFollowingLink
+0x19d69e824  __TEXT,__text  _WKBundleFrameCallShouldCloseOnWebView
+0x19d69e4ac  __TEXT,__text  _WKBundleFrameContainsAnyFormControls
+0x19d69e454  __TEXT,__text  _WKBundleFrameContainsAnyFormElements
+0x19d69d7e4  __TEXT,__text  _WKBundleFrameCopyChildFrames
+0x19d69dc18  __TEXT,__text  _WKBundleFrameCopyCounterValue
+0x19d69dda0  __TEXT,__text  _WKBundleFrameCopyLayerTreeAsText
+0x19d69e33c  __TEXT,__text  _WKBundleFrameCopyMIMETypeForResourceWithURL
+0x19d69db84  __TEXT,__text  _WKBundleFrameCopyName
+0x19d69d6ac  __TEXT,__text  _WKBundleFrameCopyProvisionalURL
+0x19d69e944  __TEXT,__text  _WKBundleFrameCopySecurityOrigin
+0x19d69e224  __TEXT,__text  _WKBundleFrameCopySuggestedFilenameForResourceWithURL
+0x19d69d608  __TEXT,__text  _WKBundleFrameCopyURL
+0x19d69e6f4  __TEXT,__text  _WKBundleFrameCopyWebArchive
+0x19d69e700  __TEXT,__text  _WKBundleFrameCopyWebArchiveFilteringSubframes
+0x19d6a06f4  __TEXT,__text  _WKBundleFrameCreateFrameHandle
+0x19d69e8b8  __TEXT,__text  _WKBundleFrameCreateHitTestResult
+0x19d69eaf8  __TEXT,__text  _WKBundleFrameFocus
+0x19d69d8a8  __TEXT,__text  _WKBundleFrameForJavaScriptContext
+0x19d69df10  __TEXT,__text  _WKBundleFrameGetContentBounds
+0x19d69e184  __TEXT,__text  _WKBundleFrameGetDocumentBackgroundColor
+0x19d69d750  __TEXT,__text  _WKBundleFrameGetFrameLoadState
+0x19d69d850  __TEXT,__text  _WKBundleFrameGetJavaScriptContext
+0x19d69d8f4  __TEXT,__text  _WKBundleFrameGetJavaScriptContextForWorld
+0x19d2068a0  __TEXT,__text  _WKBundleFrameGetJavaScriptWrapperForFileForWorld
+0x19d69d988  __TEXT,__text  _WKBundleFrameGetJavaScriptWrapperForNodeForWorld
+0x19d69dac0  __TEXT,__text  _WKBundleFrameGetJavaScriptWrapperForRangeForWorld
+0x19d69dcec  __TEXT,__text  _WKBundleFrameGetPage
+0x19d69d594  __TEXT,__text  _WKBundleFrameGetParentFrame
+0x19d69dc94  __TEXT,__text  _WKBundleFrameGetPendingUnloadCount
+0x19d69e078  __TEXT,__text  _WKBundleFrameGetScrollOffset
+0x19d69d4f0  __TEXT,__text  _WKBundleFrameGetTypeID
+0x19d69df88  __TEXT,__text  _WKBundleFrameGetVisibleContentBounds
+0x19d69e000  __TEXT,__text  _WKBundleFrameGetVisibleContentBoundsExcludingScrollbars
+0x19d69df08  __TEXT,__text  _WKBundleFrameHandlesPageScaleGesture
+0x19d69e0d4  __TEXT,__text  _WKBundleFrameHasHorizontalScrollbar
+0x19d69e12c  __TEXT,__text  _WKBundleFrameHasVerticalScrollbar
+0x19d69d4f8  __TEXT,__text  _WKBundleFrameIsMainFrame
+0x19d69e5c8  __TEXT,__text  _WKBundleFrameSetAccessibleName
+0x19d69e504  __TEXT,__text  _WKBundleFrameSetTextDirection
+0x19d69dd50  __TEXT,__text  _WKBundleFrameStopLoading
+0x19d69bffc  __TEXT,__text  _WKBundleGarbageCollectJavaScriptObjects
+0x19d69c050  __TEXT,__text  _WKBundleGetJavaScriptObjectsCount
+0x19d69c4cc  __TEXT,__text  _WKBundleGetLiveDocumentURLsForTesting
+0x19d2173d8  __TEXT,__text  _WKBundleGetParameters
+0x19d69bd60  __TEXT,__text  _WKBundleGetTypeID
+0x19d69f130  __TEXT,__text  _WKBundleHitTestResultCopyAbsoluteImageURL
+0x19d69f278  __TEXT,__text  _WKBundleHitTestResultCopyAbsoluteLinkURL
+0x19d69f31c  __TEXT,__text  _WKBundleHitTestResultCopyAbsoluteMediaURL
+0x19d69f1d4  __TEXT,__text  _WKBundleHitTestResultCopyAbsolutePDFURL
+0x19d69f5ac  __TEXT,__text  _WKBundleHitTestResultCopyImage
+0x19d69f610  __TEXT,__text  _WKBundleHitTestResultCopyLinkLabel
+0x19d69f730  __TEXT,__text  _WKBundleHitTestResultCopyLinkSuggestedFilename
+0x19d69f6a0  __TEXT,__text  _WKBundleHitTestResultCopyLinkTitle
+0x19d69efd4  __TEXT,__text  _WKBundleHitTestResultCopyNodeHandle
+0x19d69f0b4  __TEXT,__text  _WKBundleHitTestResultCopyURLElementHandle
+0x19d69f120  __TEXT,__text  _WKBundleHitTestResultGetFrame
+0x19d69f534  __TEXT,__text  _WKBundleHitTestResultGetImageRect
+0x19d69f5b4  __TEXT,__text  _WKBundleHitTestResultGetIsSelected
+0x19d69f4d4  __TEXT,__text  _WKBundleHitTestResultGetMediaType
+0x19d69f128  __TEXT,__text  _WKBundleHitTestResultGetTargetFrame
+0x19d69efcc  __TEXT,__text  _WKBundleHitTestResultGetTypeID
+0x19d69f478  __TEXT,__text  _WKBundleHitTestResultIsDownloadableMedia
+0x19d69f41c  __TEXT,__text  _WKBundleHitTestResultMediaHasAudio
+0x19d69f3c0  __TEXT,__text  _WKBundleHitTestResultMediaIsInFullscreen
+0x19d69cc10  __TEXT,__text  _WKBundleIsPageBoxVisible
+0x19d69cca0  __TEXT,__text  _WKBundleIsProcessingUserGesture
+0x19d69f800  __TEXT,__text  _WKBundleNavigationActionCopyDownloadAttribute
+0x19d69f7e8  __TEXT,__text  _WKBundleNavigationActionCopyFormElement
+0x19d69f7e0  __TEXT,__text  _WKBundleNavigationActionCopyHitTestResult
+0x19d69f7d0  __TEXT,__text  _WKBundleNavigationActionGetEventModifiers
+0x19d69f7d8  __TEXT,__text  _WKBundleNavigationActionGetEventMouseButton
+0x19d69f7c8  __TEXT,__text  _WKBundleNavigationActionGetNavigationType
+0x19d69f7f0  __TEXT,__text  _WKBundleNavigationActionGetShouldOpenExternalURLs
+0x19d69f7f8  __TEXT,__text  _WKBundleNavigationActionGetShouldTryAppLinks
+0x19d69f7c0  __TEXT,__text  _WKBundleNavigationActionGetTypeID
+0x19d69f848  __TEXT,__text  _WKBundleNodeHandleCopyDocument
+0x19d69fe68  __TEXT,__text  _WKBundleNodeHandleCopyDocumentFrame
+0x19d69fed4  __TEXT,__text  _WKBundleNodeHandleCopyHTMLFrameElementContentFrame
+0x19d69fedc  __TEXT,__text  _WKBundleNodeHandleCopyHTMLIFrameElementContentFrame
+0x19d69fe60  __TEXT,__text  _WKBundleNodeHandleCopyHTMLTableCellElementCellAbove
+0x19d69ff58  __TEXT,__text  _WKBundleNodeHandleCopyOwningDocumentFrame
+0x19d69f8c8  __TEXT,__text  _WKBundleNodeHandleCopySnapshotWithOptions
+0x19d69f954  __TEXT,__text  _WKBundleNodeHandleCopyVisibleRange
+0x19d69f810  __TEXT,__text  _WKBundleNodeHandleCreate
+0x19d69f95c  __TEXT,__text  _WKBundleNodeHandleGetElementBounds
+0x19d69fd38  __TEXT,__text  _WKBundleNodeHandleGetHTMLInputElementAutoFillAvailable
+0x19d69fd9c  __TEXT,__text  _WKBundleNodeHandleGetHTMLInputElementAutoFillButtonBounds
+0x19d69fc08  __TEXT,__text  _WKBundleNodeHandleGetHTMLInputElementAutoFillButtonEnabled
+0x19d69fc78  __TEXT,__text  _WKBundleNodeHandleGetHTMLInputElementAutoFillButtonType
+0x19d69faec  __TEXT,__text  _WKBundleNodeHandleGetHTMLInputElementAutoFilled
+0x19d69ff48  __TEXT,__text  _WKBundleNodeHandleGetHTMLInputElementAutofilled
+0x19d69fcd8  __TEXT,__text  _WKBundleNodeHandleGetHTMLInputElementLastAutoFillButtonType
+0x19d69fdb0  __TEXT,__text  _WKBundleNodeHandleGetHTMLInputElementLastChangeWasUserEdit
+0x19d69fe08  __TEXT,__text  _WKBundleNodeHandleGetHTMLTextAreaElementLastChangeWasUserEdit
+0x19d69f8b4  __TEXT,__text  _WKBundleNodeHandleGetRenderRect
+0x19d69f808  __TEXT,__text  _WKBundleNodeHandleGetTypeID
+0x19d69fd40  __TEXT,__text  _WKBundleNodeHandleSetHTMLInputElementAutoFillAvailable
+0x19d69ff54  __TEXT,__text  _WKBundleNodeHandleSetHTMLInputElementAutoFillButtonEnabled
+0x19d69fc10  __TEXT,__text  _WKBundleNodeHandleSetHTMLInputElementAutoFillButtonEnabledWithButtonType
+0x19d69faf4  __TEXT,__text  _WKBundleNodeHandleSetHTMLInputElementAutoFilled
+0x19d69fbac  __TEXT,__text  _WKBundleNodeHandleSetHTMLInputElementAutoFilledAndObscured
+0x19d69fb50  __TEXT,__text  _WKBundleNodeHandleSetHTMLInputElementAutoFilledAndViewable
+0x19d69ff50  __TEXT,__text  _WKBundleNodeHandleSetHTMLInputElementAutofilled
+0x19d69fa90  __TEXT,__text  _WKBundleNodeHandleSetHTMLInputElementSpellcheckEnabled
+0x19d69f9d4  __TEXT,__text  _WKBundleNodeHandleSetHTMLInputElementValueForUser
+0x19d69c934  __TEXT,__text  _WKBundleNumberOfPages
+0x19d6a3b2c  __TEXT,__text  _WKBundlePageAddUserScript
+0x19d6a3c14  __TEXT,__text  _WKBundlePageAddUserScriptInWorld
+0x19d6a3d24  __TEXT,__text  _WKBundlePageAddUserStyleSheet
+0x19d6a4fd4  __TEXT,__text  _WKBundlePageBannerGetTypeID
+0x19d6a3604  __TEXT,__text  _WKBundlePageCallAfterTasksAndTimers
+0x19d6a1604  __TEXT,__text  _WKBundlePageCanHandleRequest
+0x19d6a32bc  __TEXT,__text  _WKBundlePageCanShowMIMEType
+0x19d6a0750  __TEXT,__text  _WKBundlePageClickMenuItem
+0x19d6a0f64  __TEXT,__text  _WKBundlePageClose
+0x19d6a1bd0  __TEXT,__text  _WKBundlePageCloseInspectorForTest
+0x19d6a3060  __TEXT,__text  _WKBundlePageConfirmComposition
+0x19d6a30d4  __TEXT,__text  _WKBundlePageConfirmCompositionWithText
+0x19d6a075c  __TEXT,__text  _WKBundlePageCopyContextMenuAtPointInWindow
+0x19d6a0754  __TEXT,__text  _WKBundlePageCopyContextMenuItems
+0x19d6a4458  __TEXT,__text  _WKBundlePageCopyFrameTextForTesting
+0x19d6a3e44  __TEXT,__text  _WKBundlePageCopyGroupIdentifier
+0x19d6a1ebc  __TEXT,__text  _WKBundlePageCopyRenderLayerTree
+0x19d6a1eb8  __TEXT,__text  _WKBundlePageCopyRenderTree
+0x19d6a0e34  __TEXT,__text  _WKBundlePageCopyRenderTreeExternalRepresentation
+0x19d6a0ed0  __TEXT,__text  _WKBundlePageCopyRenderTreeExternalRepresentationForPrinting
+0x19d6a1f1c  __TEXT,__text  _WKBundlePageCopyTrackedRepaintRects
+0x19d6a421c  __TEXT,__text  _WKBundlePageCreateCaptionUserPreferencesTestingModeToken
+0x19d6a1a70  __TEXT,__text  _WKBundlePageCreateScaledSnapshotInDocumentCoordinates
+0x19d6a19c0  __TEXT,__text  _WKBundlePageCreateSnapshotInDocumentCoordinates
+0x19d6a190c  __TEXT,__text  _WKBundlePageCreateSnapshotInViewCoordinates
+0x19d6a184c  __TEXT,__text  _WKBundlePageCreateSnapshotWithOptions
+0x19d6a1098  __TEXT,__text  _WKBundlePageDumpHistoryForTesting
+0x19d6a1c90  __TEXT,__text  _WKBundlePageEvaluateScriptInInspectorForTest
+0x19d6a377c  __TEXT,__text  _WKBundlePageFlushDeferredDidReceiveMouseEventForTesting
+0x19d6a1e10  __TEXT,__text  _WKBundlePageFlushPendingEditorStateUpdate
+0x19d6a1dc0  __TEXT,__text  _WKBundlePageForceRepaint
+0x19d6a119c  __TEXT,__text  _WKBundlePageGetBackForwardList
+0x19d6a1b2c  __TEXT,__text  _WKBundlePageGetBackingScaleFactor
+0x19d6a06c8  __TEXT,__text  _WKBundlePageGetMainFrame
+0x19d88e364  __TEXT,__text  _WKBundlePageGetPDFDocumentInFrame
+0x19d6a1034  __TEXT,__text  _WKBundlePageGetPageZoomFactor
+0x19d6a1e60  __TEXT,__text  _WKBundlePageGetRenderTreeSize
+0x19d6a0fd0  __TEXT,__text  _WKBundlePageGetTextZoomFactor
+0x19d69ffec  __TEXT,__text  _WKBundlePageGetTypeID
+0x19d6a3008  __TEXT,__text  _WKBundlePageHasComposition
+0x19d6a1510  __TEXT,__text  _WKBundlePageHasLocalDataForURL
+0x19d6a0764  __TEXT,__text  _WKBundlePageInsertNewlineInQuotedContent
+0x19d6a11a4  __TEXT,__text  _WKBundlePageInstallPageOverlay
+0x19d6a1390  __TEXT,__text  _WKBundlePageInstallPageOverlayWithAnimation
+0x19d6a0fb4  __TEXT,__text  _WKBundlePageIsClosed
+0x19d6a33d8  __TEXT,__text  _WKBundlePageIsControlledByAutomation
+0x19d6a3b10  __TEXT,__text  _WKBundlePageIsSuspended
+0x19d6a1ec4  __TEXT,__text  _WKBundlePageIsTrackingRepaints
+0x19d6a3228  __TEXT,__text  _WKBundlePageIsUsingDarkAppearance
+0x19d6a3380  __TEXT,__text  _WKBundlePageIsUsingEphemeralSession
+0x19d6a43e0  __TEXT,__text  _WKBundlePageLayoutIfNeeded
+0x19d6a1b50  __TEXT,__text  _WKBundlePageListenForLayoutMilestones
+0x19d69c9e8  __TEXT,__text  _WKBundlePageNumberForElementById
+0x19d6a4bec  __TEXT,__text  _WKBundlePageOverlayClear
+0x19d6a4988  __TEXT,__text  _WKBundlePageOverlayCreate
+0x19d6a4be4  __TEXT,__text  _WKBundlePageOverlayFractionFadedIn
+0x19d6a4980  __TEXT,__text  _WKBundlePageOverlayGetTypeID
+0x19d6a4ad4  __TEXT,__text  _WKBundlePageOverlaySetAccessibilityClient
+0x19d6a4b60  __TEXT,__text  _WKBundlePageOverlaySetNeedsDisplay
+0x19d6a37cc  __TEXT,__text  _WKBundlePagePostMessage
+0x19d6a38d0  __TEXT,__text  _WKBundlePagePostMessageIgnoringFullySynchronousMode
+0x19d6a39d4  __TEXT,__text  _WKBundlePagePostSynchronousMessageForTesting
+0x19d6a34b4  __TEXT,__text  _WKBundlePageRegisterScrollOperationCompletionCallback
+0x19d6a3df4  __TEXT,__text  _WKBundlePageRemoveAllUserContent
+0x19d6a162c  __TEXT,__text  _WKBundlePageReplaceStringMatches
+0x19d6a150c  __TEXT,__text  _WKBundlePageSetBottomOverhangImage
+0x19d6a3e88  __TEXT,__text  _WKBundlePageSetCaptionDisplayMode
+0x19d6a1f88  __TEXT,__text  _WKBundlePageSetComposition
+0x19d69fff4  __TEXT,__text  _WKBundlePageSetContextMenuClient
+0x19d6a0e30  __TEXT,__text  _WKBundlePageSetDefersLoading
+0x19d6a0d9c  __TEXT,__text  _WKBundlePageSetEditable
+0x19d69fff8  __TEXT,__text  _WKBundlePageSetEditorClient
+0x19d6a01a8  __TEXT,__text  _WKBundlePageSetFormClient
+0x19d6a02dc  __TEXT,__text  _WKBundlePageSetPageLoaderClient
+0x19d6a1ec0  __TEXT,__text  _WKBundlePageSetPaintedObjectsCounterThreshold
+0x19d6a0574  __TEXT,__text  _WKBundlePageSetPolicyClient
+0x19d6a0444  __TEXT,__text  _WKBundlePageSetResourceLoadClient
+0x19d6a4430  __TEXT,__text  _WKBundlePageSetSkipDecidePolicyForResponseIfPossible
+0x19d6a1508  __TEXT,__text  _WKBundlePageSetTopOverhangImage
+0x19d6a0578  __TEXT,__text  _WKBundlePageSetUIClient
+0x19d6a3190  __TEXT,__text  _WKBundlePageSetUseDarkAppearance
+0x19d6a33f8  __TEXT,__text  _WKBundlePageSetUseTestingViewportConfiguration
+0x19d69caf8  __TEXT,__text  _WKBundlePageSizeAndMarginsInPixels
+0x19d6a3420  __TEXT,__text  _WKBundlePageStartMonitoringScrollOperations
+0x19d6a12d4  __TEXT,__text  _WKBundlePageUninstallPageOverlay
+0x19d6a144c  __TEXT,__text  _WKBundlePageUninstallPageOverlayWithAnimation
+0x19d69bdc0  __TEXT,__text  _WKBundlePostMessage
+0x19d69bec4  __TEXT,__text  _WKBundlePostSynchronousMessage
+0x19d6a4d8c  __TEXT,__text  _WKBundleRangeHandleCopyDocumentFrame
+0x19d6a4cf4  __TEXT,__text  _WKBundleRangeHandleCopySnapshotWithOptions
+0x19d6a4c44  __TEXT,__text  _WKBundleRangeHandleCreate
+0x19d6a4c7c  __TEXT,__text  _WKBundleRangeHandleGetBoundingRectInWindowCoordinates
+0x19d6a4c3c  __TEXT,__text  _WKBundleRangeHandleGetTypeID
+0x19d69c89c  __TEXT,__text  _WKBundleReleaseMemory
+0x19d69cd64  __TEXT,__text  _WKBundleRemoveAllWebNotificationPermissions
+0x19d69c264  __TEXT,__text  _WKBundleRemoveOriginAccessAllowListEntry
+0x19d69c7b4  __TEXT,__text  _WKBundleReportException
+0x19d69c420  __TEXT,__text  _WKBundleResetOriginAccessAllowLists
+0x19d69cf2c  __TEXT,__text  _WKBundleResourceLoadStatisticsNotifyObserver
+0x19d6a4e74  __TEXT,__text  _WKBundleScriptWorldClearWrappers
+0x19d6a4f6c  __TEXT,__text  _WKBundleScriptWorldCopyName
+0x19d6a4e18  __TEXT,__text  _WKBundleScriptWorldCreateWorld
+0x19d6a4f1c  __TEXT,__text  _WKBundleScriptWorldDisableOverrideBuiltinsBehavior
+0x19d6a4ef4  __TEXT,__text  _WKBundleScriptWorldExposeClosedShadowRootsForExtensions
+0x19d6a4e10  __TEXT,__text  _WKBundleScriptWorldGetTypeID
+0x19d6a4ecc  __TEXT,__text  _WKBundleScriptWorldMakeAllShadowRootsOpen
+0x19d6a4e58  __TEXT,__text  _WKBundleScriptWorldNormalWorld
+0x19d6a4f44  __TEXT,__text  _WKBundleScriptWorldSetAllowElementUserInfo
+0x19d6a4fac  __TEXT,__text  _WKBundleScriptWorldSetAllowJSHandleCreation
+0x19d69c470  __TEXT,__text  _WKBundleSetAsynchronousSpellCheckingEnabledForTesting
+0x19c676d74  __TEXT,__text  _WKBundleSetClient
+0x19d69c7b8  __TEXT,__text  _WKBundleSetDatabaseQuota
+0x19d69bd68  __TEXT,__text  _WKBundleSetServiceWorkerProxyCreationCallback
+0x19d69cec0  __TEXT,__text  _WKBundleSetTabKeyCyclesThroughElements
+0x19d69cca8  __TEXT,__text  _WKBundleSetUserStyleSheetLocationForTesting
+0x19ccd533c  __TEXT,__text  _WKCertificateInfoCreateWithCertficateChain
+0x19ccd5334  __TEXT,__text  _WKCertificateInfoCreateWithServerTrust
+0x19ccd5344  __TEXT,__text  _WKCertificateInfoGetCertificateChain
+0x19ccd534c  __TEXT,__text  _WKCertificateInfoGetServerTrust
+0x19d206698  __TEXT,__text  _WKCertificateInfoGetTypeID
+0x19d42fe48  __TEXT,__text  _WKClearMockMediaDevices
+0x19d436184  __TEXT,__text  _WKCompletionListenerComplete
+0x19d42b350  __TEXT,__text  _WKContextAddSupportedPlugin
+0x19d42a61c  __TEXT,__text  _WKContextAddVisitedLink
+0x19d42af18  __TEXT,__text  _WKContextAllowSpecificHTTPSCertificateForHost
+0x19d42b358  __TEXT,__text  _WKContextClearCurrentModifierStateForTesting
+0x19d42b4d4  __TEXT,__text  _WKContextClearMockGamepadsForTesting
+0x19cd7f9fc  __TEXT,__text  _WKContextClearPluginClientPolicies
+0x19d42b354  __TEXT,__text  _WKContextClearSupportedPlugins
+0x19d42a6d8  __TEXT,__text  _WKContextClearVisitedLinks
+0x19d42ba5c  __TEXT,__text  _WKContextConfigurationAlwaysKeepAndReuseSwappedProcesses
+0x19d42b79c  __TEXT,__text  _WKContextConfigurationCopyCustomClassesForParameterCoder
+0x19d42b684  __TEXT,__text  _WKContextConfigurationCopyDiskCacheDirectory
+0x19d42b690  __TEXT,__text  _WKContextConfigurationCopyIndexedDBDatabaseDirectory
+0x19d42b69c  __TEXT,__text  _WKContextConfigurationCopyInjectedBundlePath
+0x19d42b7f4  __TEXT,__text  _WKContextConfigurationCopyLocalStorageDirectory
+0x19d42b80c  __TEXT,__text  _WKContextConfigurationCopyMediaKeysStorageDirectory
+0x19d42b8ac  __TEXT,__text  _WKContextConfigurationCopyOverrideLanguages
+0x19d42b818  __TEXT,__text  _WKContextConfigurationCopyResourceLoadStatisticsDirectory
+0x19d42bad8  __TEXT,__text  _WKContextConfigurationCopyTimeZoneOverride
+0x19d42b800  __TEXT,__text  _WKContextConfigurationCopyWebSQLDatabaseDirectory
+0x19d42b654  __TEXT,__text  _WKContextConfigurationCreate
+0x19d42b680  __TEXT,__text  _WKContextConfigurationCreateWithLegacyOptions
+0x19d42baa0  __TEXT,__text  _WKContextConfigurationDiskCacheSizeOverride
+0x19d42b824  __TEXT,__text  _WKContextConfigurationFullySynchronousModeIsAllowedForTesting
+0x19d42b868  __TEXT,__text  _WKContextConfigurationIgnoreSynchronousMessagingTimeoutsForTesting
+0x19d42b9bc  __TEXT,__text  _WKContextConfigurationPrewarmsProcessesAutomatically
+0x19d42b960  __TEXT,__text  _WKContextConfigurationProcessSwapsOnNavigation
+0x19d42ba78  __TEXT,__text  _WKContextConfigurationSetAlwaysKeepAndReuseSwappedProcesses
+0x19d42b7f0  __TEXT,__text  _WKContextConfigurationSetCustomClassesForParameterCoder
+0x19d42b68c  __TEXT,__text  _WKContextConfigurationSetDiskCacheDirectory
+0x19d42baa8  __TEXT,__text  _WKContextConfigurationSetDiskCacheSizeOverride
+0x19d42b840  __TEXT,__text  _WKContextConfigurationSetFullySynchronousModeIsAllowedForTesting
+0x19d42b884  __TEXT,__text  _WKContextConfigurationSetIgnoreSynchronousMessagingTimeoutsForTesting
+0x19d42b698  __TEXT,__text  _WKContextConfigurationSetIndexedDBDatabaseDirectory
+0x19d42b6dc  __TEXT,__text  _WKContextConfigurationSetInjectedBundlePath
+0x19d42b7fc  __TEXT,__text  _WKContextConfigurationSetLocalStorageDirectory
+0x19d42b814  __TEXT,__text  _WKContextConfigurationSetMediaKeysStorageDirectory
+0x19d42b8e4  __TEXT,__text  _WKContextConfigurationSetOverrideLanguages
+0x19d42b9ec  __TEXT,__text  _WKContextConfigurationSetPrewarmsProcessesAutomatically
+0x19d42b990  __TEXT,__text  _WKContextConfigurationSetProcessSwapsOnNavigation
+0x19d42b820  __TEXT,__text  _WKContextConfigurationSetResourceLoadStatisticsDirectory
+0x19d42baac  __TEXT,__text  _WKContextConfigurationSetShouldCaptureAudioInUIProcess
+0x19d42bab0  __TEXT,__text  _WKContextConfigurationSetShouldConfigureJSCForTesting
+0x19d42bb18  __TEXT,__text  _WKContextConfigurationSetTimeZoneOverride
+0x19d42ba34  __TEXT,__text  _WKContextConfigurationSetUsesWebProcessCache
+0x19d42b808  __TEXT,__text  _WKContextConfigurationSetWebSQLDatabaseDirectory
+0x19d42ba18  __TEXT,__text  _WKContextConfigurationUsesWebProcessCache
+0x19d42b3d4  __TEXT,__text  _WKContextCopyLocalhostAliases
+0x19d42b184  __TEXT,__text  _WKContextCopyPlugInAutoStartOriginHashes
+0x19cd7fa00  __TEXT,__text  _WKContextCopyPlugInInfoForBundleIdentifier
+0x19d429bec  __TEXT,__text  _WKContextCreate
+0x19d429d5c  __TEXT,__text  _WKContextCreateWithConfiguration
+0x19d429c50  __TEXT,__text  _WKContextCreateWithInjectedBundlePath
+0x19d42af1c  __TEXT,__text  _WKContextDisableProcessTermination
+0x19d42af6c  __TEXT,__text  _WKContextEnableProcessTermination
+0x19d42b0b0  __TEXT,__text  _WKContextGarbageCollectJavaScriptObjects
+0x19d42a730  __TEXT,__text  _WKContextGetCacheModel
+0x19d42ad7c  __TEXT,__text  _WKContextGetGeolocationManager
+0x19d42a600  __TEXT,__text  _WKContextGetGlobalStatistics
+0x19d42ade0  __TEXT,__text  _WKContextGetIconDatabase
+0x19cd7fa08  __TEXT,__text  _WKContextGetInfoForInstalledPlugIns
+0x19d42ade8  __TEXT,__text  _WKContextGetKeyValueStorageManager
+0x19d42a760  __TEXT,__text  _WKContextGetMaximumNumberOfProcesses
+0x19d42adec  __TEXT,__text  _WKContextGetNotificationManager
+0x19d42ae50  __TEXT,__text  _WKContextGetResourceCacheManager
+0x19d42b064  __TEXT,__text  _WKContextGetStatistics
+0x19d42b068  __TEXT,__text  _WKContextGetStatisticsWithOptions
+0x19d429be4  __TEXT,__text  _WKContextGetTypeID
+0x19d42ad4c  __TEXT,__text  _WKContextGetUsesSingleWebProcess
+0x19d42ad78  __TEXT,__text  _WKContextGetWebsiteDataStore
+0x19cd7fb74  __TEXT,__text  _WKContextHandlesSafeBrowsing
+0x19cd7f9f0  __TEXT,__text  _WKContextIsPlugInUpdateAvailable
+0x19d42b06c  __TEXT,__text  _WKContextJavaScriptConfigurationFileEnabled
+0x19d2067c8  __TEXT,__text  _WKContextMenuCopySubmenuItems
+0x19d2067b0  __TEXT,__text  _WKContextMenuItemCopyTitle
+0x19d206780  __TEXT,__text  _WKContextMenuItemCreateAsAction
+0x19d206788  __TEXT,__text  _WKContextMenuItemCreateAsCheckableAction
+0x19d206790  __TEXT,__text  _WKContextMenuItemCreateAsSubmenu
+0x19d2067c0  __TEXT,__text  _WKContextMenuItemGetChecked
+0x19d2067b8  __TEXT,__text  _WKContextMenuItemGetEnabled
+0x19d2067a0  __TEXT,__text  _WKContextMenuItemGetTag
+0x19d2067a8  __TEXT,__text  _WKContextMenuItemGetType
+0x19d206778  __TEXT,__text  _WKContextMenuItemGetTypeID
+0x19d2067d0  __TEXT,__text  _WKContextMenuItemGetUserData
+0x19d206798  __TEXT,__text  _WKContextMenuItemSeparatorItem
+0x19d2067d8  __TEXT,__text  _WKContextMenuItemSetUserData
+0x19d456f78  __TEXT,__text  _WKContextMenuListenerGetTypeID
+0x19d456f80  __TEXT,__text  _WKContextMenuListenerUseContextMenuItems
+0x19d42a51c  __TEXT,__text  _WKContextPostMessageToInjectedBundle
+0x19d42ad74  __TEXT,__text  _WKContextPreconnectToServer
+0x19d42a8b8  __TEXT,__text  _WKContextRefreshPlugIns
+0x19cd7fa14  __TEXT,__text  _WKContextRegisterSchemeForCustomProtocol
+0x19d42aa18  __TEXT,__text  _WKContextRegisterURLSchemeAsBypassingContentSecurityPolicy
+0x19d42aab8  __TEXT,__text  _WKContextRegisterURLSchemeAsCachePartitioned
+0x19d42ab74  __TEXT,__text  _WKContextRegisterURLSchemeAsCanDisplayOnlyIfCanRequest
+0x19d42a8bc  __TEXT,__text  _WKContextRegisterURLSchemeAsEmptyDocument
+0x19d42a978  __TEXT,__text  _WKContextRegisterURLSchemeAsSecure
+0x19d42b3bc  __TEXT,__text  _WKContextResetAccessibilityModeForTesting
+0x19cd7fa0c  __TEXT,__text  _WKContextResetHSTSHosts
+0x19cd7fa10  __TEXT,__text  _WKContextResetHSTSHostsAddedAfterDate
+0x19d42a8b4  __TEXT,__text  _WKContextSetAdditionalPluginsDirectory
+0x19d42a860  __TEXT,__text  _WKContextSetAllowAXAuthenticationForTesting
+0x19d42a768  __TEXT,__text  _WKContextSetAlwaysUsesComplexTextCodePath
+0x19d42a6f8  __TEXT,__text  _WKContextSetCacheModel
+0x19d42acec  __TEXT,__text  _WKContextSetCanHandleHTTPSServerTrustEvaluation
+0x19d429e4c  __TEXT,__text  _WKContextSetClient
+0x19d42ad6c  __TEXT,__text  _WKContextSetCustomWebContentServiceBundleIdentifier
+0x19d42a7e4  __TEXT,__text  _WKContextSetDisableFontSubpixelAntialiasingForTesting
+0x19d42ad70  __TEXT,__text  _WKContextSetDiskCacheSpeculativeValidationEnabled
+0x19d42ac30  __TEXT,__text  _WKContextSetDomainRelaxationForbiddenForURLScheme
+0x19d42a374  __TEXT,__text  _WKContextSetDownloadClient
+0x19d42b220  __TEXT,__text  _WKContextSetFontAllowList
+0x19d42afbc  __TEXT,__text  _WKContextSetHTTPPipeliningEnabled
+0x19d42a1ac  __TEXT,__text  _WKContextSetHistoryClient
+0x19d42af14  __TEXT,__text  _WKContextSetIconDatabasePath
+0x19d42a4b4  __TEXT,__text  _WKContextSetInitializationUserDataForInjectedBundle
+0x19d42a088  __TEXT,__text  _WKContextSetInjectedBundleClient
+0x19d42b198  __TEXT,__text  _WKContextSetInvalidMessageFunction
+0x19d42b088  __TEXT,__text  _WKContextSetJavaScriptConfigurationFileEnabled
+0x19d42b114  __TEXT,__text  _WKContextSetJavaScriptGarbageCollectorTimerEnabled
+0x19d42b440  __TEXT,__text  _WKContextSetLocalhostAliases
+0x19d42a75c  __TEXT,__text  _WKContextSetMaximumNumberOfProcesses
+0x19d42b1a4  __TEXT,__text  _WKContextSetMemoryCacheDisabled
+0x19d42b18c  __TEXT,__text  _WKContextSetPlugInAutoStartOriginHashes
+0x19d42b194  __TEXT,__text  _WKContextSetPlugInAutoStartOrigins
+0x19d42b190  __TEXT,__text  _WKContextSetPlugInAutoStartOriginsFilteringOutEntriesAddedAfterTime
+0x19cd7f9f8  __TEXT,__text  _WKContextSetPluginLoadClientPolicy
+0x19d42acf0  __TEXT,__text  _WKContextSetPrewarmsProcessesAutomatically
+0x19d42b3d0  __TEXT,__text  _WKContextSetPrimaryWebsiteDataStore
+0x19d206890  __TEXT,__text  _WKContextSetProcessModel
+0x19d42b534  __TEXT,__text  _WKContextSetResourceMonitorURLsForTesting
+0x19d42b3c8  __TEXT,__text  _WKContextSetUseSeparateServiceWorkerProcess
+0x19d20688c  __TEXT,__text  _WKContextSetUsesNetworkProcess
+0x19d42ad20  __TEXT,__text  _WKContextSetUsesSingleWebProcess
+0x19d42ae54  __TEXT,__text  _WKContextStartMemorySampler
+0x19d42aec4  __TEXT,__text  _WKContextStopMemorySampler
+0x19d42b2a8  __TEXT,__text  _WKContextTerminateGPUProcess
+0x19d42b300  __TEXT,__text  _WKContextTerminateServiceWorkers
+0x19cd7faac  __TEXT,__text  _WKContextUnregisterSchemeForCustomProtocol
+0x19d42b014  __TEXT,__text  _WKContextWarmInitialProcess
+0x19d42bbec  __TEXT,__text  _WKCookieManagerDeleteAllCookies
+0x19d42bbf0  __TEXT,__text  _WKCookieManagerDeleteAllCookiesModifiedAfterDate
+0x19d42bbe8  __TEXT,__text  _WKCookieManagerDeleteCookiesForHostname
+0x19d42bbf8  __TEXT,__text  _WKCookieManagerGetHTTPCookieAcceptPolicy
+0x19d42bbe4  __TEXT,__text  _WKCookieManagerGetHostnamesWithCookies
+0x19d42bbd8  __TEXT,__text  _WKCookieManagerGetTypeID
+0x19d42bbe0  __TEXT,__text  _WKCookieManagerSetClient
+0x19d42bbf4  __TEXT,__text  _WKCookieManagerSetHTTPCookieAcceptPolicy
+0x19d42bbfc  __TEXT,__text  _WKCookieManagerStartObservingCookieChanges
+0x19d42bc00  __TEXT,__text  _WKCookieManagerStopObservingCookieChanges
+0x19d42bd80  __TEXT,__text  _WKCredentialCopyUser
+0x19d42bc0c  __TEXT,__text  _WKCredentialCreate
+0x19d42bd78  __TEXT,__text  _WKCredentialCreateWithCertificateInfo
+0x19d42bc04  __TEXT,__text  _WKCredentialGetTypeID
+0x19d2067e4  __TEXT,__text  _WKDataCreate
+0x19d20681c  __TEXT,__text  _WKDataGetBytes
+0x19d206838  __TEXT,__text  _WKDataGetSize
+0x19d2067dc  __TEXT,__text  _WKDataGetTypeID
+0x19d206d28  __TEXT,__text  _WKDictionaryCopyKeys
+0x19d2068c4  __TEXT,__text  _WKDictionaryCreate
+0x19d206b58  __TEXT,__text  _WKDictionaryGetItemForKey
+0x19d206cfc  __TEXT,__text  _WKDictionaryGetSize
+0x19d2068bc  __TEXT,__text  _WKDictionaryGetTypeID
+0x19d207658  __TEXT,__text  _WKDictionarySetItem
+0x19d2078a8  __TEXT,__text  _WKDoubleCreate
+0x19d2078a0  __TEXT,__text  _WKDoubleGetTypeID
+0x19d2078fc  __TEXT,__text  _WKDoubleGetValue
+0x19d42be80  __TEXT,__text  _WKDownloadCancel
+0x19d42bdcc  __TEXT,__text  _WKDownloadCopyRequest
+0x19d42bf34  __TEXT,__text  _WKDownloadGetOriginatingPage
+0x19d42bdc4  __TEXT,__text  _WKDownloadGetTypeID
+0x19d42bf84  __TEXT,__text  _WKDownloadGetWasUserInitiated
+0x19d42bfa0  __TEXT,__text  _WKDownloadSetClient
+0x1e0d3d170  __DATA_CONST,__const  _WKElementActionTypeToggleShowLinkPreviewsIdentifier
+0x19d209a7c  __TEXT,__text  _WKErrorCopyCFError
+0x19d206d9c  __TEXT,__text  _WKErrorCopyDomain
+0x19d206ec4  __TEXT,__text  _WKErrorCopyFailingURL
+0x19d206f38  __TEXT,__text  _WKErrorCopyLocalizedDescription
+0x19da10aa8  __TEXT,__text  _WKErrorCopyWKErrorDomain
+0x19d209914  __TEXT,__text  _WKErrorCreateWithCFError
+0x1e0d3d168  __DATA_CONST,__const  _WKErrorDomain
+0x19d206e7c  __TEXT,__text  _WKErrorGetErrorCode
+0x19d206d94  __TEXT,__text  _WKErrorGetTypeID
+0x19d42c204  __TEXT,__text  _WKFeatureCopyDetails
+0x19d42c184  __TEXT,__text  _WKFeatureCopyKey
+0x19d42c090  __TEXT,__text  _WKFeatureCopyName
+0x19d42c284  __TEXT,__text  _WKFeatureDefaultValue
+0x19d42c088  __TEXT,__text  _WKFeatureGetTypeID
+0x19d42c2a0  __TEXT,__text  _WKFeatureIsHidden
+0x19d42d66c  __TEXT,__text  _WKFormSubmissionListenerContinue
+0x19d42d664  __TEXT,__text  _WKFormSubmissionListenerGetTypeID
+0x19d42d98c  __TEXT,__text  _WKFrameCanProvideSource
+0x19d42d9e4  __TEXT,__text  _WKFrameCanShowMIMEType
+0x19d42d8b4  __TEXT,__text  _WKFrameCopyMIMEType
+0x19d42d7e4  __TEXT,__text  _WKFrameCopyProvisionalURL
+0x19d42d8f4  __TEXT,__text  _WKFrameCopyTitle
+0x19d42d828  __TEXT,__text  _WKFrameCopyURL
+0x19d42d86c  __TEXT,__text  _WKFrameCopyUnreachableURL
+0x19d42daa8  __TEXT,__text  _WKFrameCreateFrameHandle
+0x19d42db04  __TEXT,__text  _WKFrameCreateFrameInfo
+0x19d42d984  __TEXT,__text  _WKFrameGetCertificateInfo
+0x19d42d794  __TEXT,__text  _WKFrameGetFrameLoadState
+0x19d42db0c  __TEXT,__text  _WKFrameGetMainResourceData
+0x19d42d934  __TEXT,__text  _WKFrameGetPage
+0x19d42dbc0  __TEXT,__text  _WKFrameGetResourceData
+0x19d456f9c  __TEXT,__text  _WKFrameGetServerTrust
+0x19d42d6fc  __TEXT,__text  _WKFrameGetTypeID
+0x19d42dca0  __TEXT,__text  _WKFrameGetWebArchive
+0x19d42dd5c  __TEXT,__text  _WKFrameHandleGetFrameID
+0x19d42dd54  __TEXT,__text  _WKFrameHandleGetTypeID
+0x19d42dee0  __TEXT,__text  _WKFrameInfoCopySecurityOrigin
+0x19d42ddf4  __TEXT,__text  _WKFrameInfoCreateFrameHandleRef
+0x19d42e004  __TEXT,__text  _WKFrameInfoGetIsMainFrame
+0x19d42e020  __TEXT,__text  _WKFrameInfoGetPage
+0x19d42ddec  __TEXT,__text  _WKFrameInfoGetTypeID
+0x19d42da48  __TEXT,__text  _WKFrameIsDisplayingMarkupDocument
+0x19d42d9ec  __TEXT,__text  _WKFrameIsDisplayingStandaloneImageDocument
+0x19d42daa0  __TEXT,__text  _WKFrameIsFrameSet
+0x19d42d704  __TEXT,__text  _WKFrameIsMainFrame
+0x19d42e274  __TEXT,__text  _WKFramePolicyListenerDownload
+0x19d42e088  __TEXT,__text  _WKFramePolicyListenerGetTypeID
+0x19d42e2c4  __TEXT,__text  _WKFramePolicyListenerIgnore
+0x19d42e090  __TEXT,__text  _WKFramePolicyListenerUse
+0x19d42e164  __TEXT,__text  _WKFramePolicyListenerUseInNewProcess
+0x19d42e26c  __TEXT,__text  _WKFramePolicyListenerUseInNewProcessWithPolicies
+0x19d42e1c4  __TEXT,__text  _WKFramePolicyListenerUseWithPolicies
+0x19d42d8b0  __TEXT,__text  _WKFrameStopLoading
+0x19d42e31c  __TEXT,__text  _WKGeolocationManagerGetTypeID
+0x19d42e484  __TEXT,__text  _WKGeolocationManagerProviderDidChangePosition
+0x19d42e54c  __TEXT,__text  _WKGeolocationManagerProviderDidFailToDeterminePosition
+0x19d42e5c0  __TEXT,__text  _WKGeolocationManagerProviderDidFailToDeterminePositionWithErrorMessage
+0x19d42e324  __TEXT,__text  _WKGeolocationManagerSetProvider
+0x19d42e684  __TEXT,__text  _WKGeolocationPermissionRequestAllow
+0x19d42e754  __TEXT,__text  _WKGeolocationPermissionRequestDeny
+0x19d42e67c  __TEXT,__text  _WKGeolocationPermissionRequestGetTypeID
+0x19d42e7b8  __TEXT,__text  _WKGeolocationPositionCreate
+0x19d42e958  __TEXT,__text  _WKGeolocationPositionCreate_b
+0x19d42e84c  __TEXT,__text  _WKGeolocationPositionCreate_c
+0x19d42e7b0  __TEXT,__text  _WKGeolocationPositionGetTypeID
+0x19d208a9c  __TEXT,__text  _WKGetTypeID
+0x19d456f84  __TEXT,__text  _WKGetWebURLSchemeTaskInstanceCount
+0x19d42ea80  __TEXT,__text  _WKHTTPCookieStoreDeleteAllCookies
+0x19d42ea78  __TEXT,__text  _WKHTTPCookieStoreGetTypeID
+0x19d42eba8  __TEXT,__text  _WKHTTPCookieStoreSetHTTPCookieAcceptPolicy
+0x19d42ec74  __TEXT,__text  _WKHitTestResultCopyAbsoluteImageURL
+0x19d42edf8  __TEXT,__text  _WKHitTestResultCopyAbsoluteLinkURL
+0x19d42ee80  __TEXT,__text  _WKHitTestResultCopyAbsoluteMediaURL
+0x19d42ed70  __TEXT,__text  _WKHitTestResultCopyAbsolutePDFURL
+0x19d42ef08  __TEXT,__text  _WKHitTestResultCopyLinkLabel
+0x19d42ef88  __TEXT,__text  _WKHitTestResultCopyLinkTitle
+0x19d42f008  __TEXT,__text  _WKHitTestResultCopyLookupText
+0x19d42f0a4  __TEXT,__text  _WKHitTestResultGetElementBoundingBox
+0x19d42ec6c  __TEXT,__text  _WKHitTestResultGetTypeID
+0x19d42f088  __TEXT,__text  _WKHitTestResultIsContentEditable
+0x19d42f108  __TEXT,__text  _WKIconDatabaseCheckIntegrityBeforeOpening
+0x19d42f10c  __TEXT,__text  _WKIconDatabaseClose
+0x19d42f0f8  __TEXT,__text  _WKIconDatabaseCopyIconDataForPageURL
+0x19d42f0f0  __TEXT,__text  _WKIconDatabaseCopyIconURLForPageURL
+0x19d42f100  __TEXT,__text  _WKIconDatabaseEnableDatabaseCleanup
+0x19d42f0d4  __TEXT,__text  _WKIconDatabaseGetTypeID
+0x19d42f0e4  __TEXT,__text  _WKIconDatabaseReleaseIconForURL
+0x19d42f104  __TEXT,__text  _WKIconDatabaseRemoveAllIcons
+0x19d42f0e0  __TEXT,__text  _WKIconDatabaseRetainIconForURL
+0x19d42f0e8  __TEXT,__text  _WKIconDatabaseSetIconDataForIconURL
+0x19d42f0dc  __TEXT,__text  _WKIconDatabaseSetIconDatabaseClient
+0x19d42f0ec  __TEXT,__text  _WKIconDatabaseSetIconURLForPageURL
+0x19d456f94  __TEXT,__text  _WKIconDatabaseTryCopyCGImageArrayForURL
+0x19d456f8c  __TEXT,__text  _WKIconDatabaseTryGetCGImageForURL
+0x19d20721c  __TEXT,__text  _WKImageCreate
+0x19d209abc  __TEXT,__text  _WKImageCreateCGImage
+0x19d209d40  __TEXT,__text  _WKImageCreateDataURLFromImage
+0x19d209b98  __TEXT,__text  _WKImageCreateFromCGImage
+0x19d207288  __TEXT,__text  _WKImageGetSize
+0x19d207214  __TEXT,__text  _WKImageGetTypeID
+0x19d42f118  __TEXT,__text  _WKJSHandleCopyFrameInfo
+0x19d42f110  __TEXT,__text  _WKJSHandleGetTypeID
+0x19d42f414  __TEXT,__text  _WKKeyValueStorageManagerDeleteAllEntries
+0x19d42f410  __TEXT,__text  _WKKeyValueStorageManagerDeleteEntriesForOrigin
+0x19d42f3f8  __TEXT,__text  _WKKeyValueStorageManagerGetCreationTimeKey
+0x19d42f408  __TEXT,__text  _WKKeyValueStorageManagerGetKeyValueStorageOrigins
+0x19d42f400  __TEXT,__text  _WKKeyValueStorageManagerGetModificationTimeKey
+0x19d42f3f0  __TEXT,__text  _WKKeyValueStorageManagerGetOriginKey
+0x19d42f40c  __TEXT,__text  _WKKeyValueStorageManagerGetStorageDetailsByOrigin
+0x19d42f3e8  __TEXT,__text  _WKKeyValueStorageManagerGetTypeID
+0x19d42f420  __TEXT,__text  _WKMediaKeySystemPermissionCallbackComplete
+0x19d42f418  __TEXT,__text  _WKMediaKeySystemPermissionCallbackGetTypeID
+0x19d42f4f8  __TEXT,__text  _WKMessageListenerGetTypeID
+0x19d42f500  __TEXT,__text  _WKMessageListenerSendReply
+0x19d207358  __TEXT,__text  _WKMutableArrayCreate
+0x19d207390  __TEXT,__text  _WKMutableArrayCreateWithCapacity
+0x19d2075e8  __TEXT,__text  _WKMutableDictionaryCreate
+0x19d207620  __TEXT,__text  _WKMutableDictionaryCreateWithCapacity
+0x19d4300d8  __TEXT,__text  _WKNavigationActionCopyRequest
+0x19d430140  __TEXT,__text  _WKNavigationActionCopyTargetFrameInfo
+0x19d43017c  __TEXT,__text  _WKNavigationActionGetNavigationType
+0x19d430118  __TEXT,__text  _WKNavigationActionGetShouldOpenExternalSchemes
+0x19d430038  __TEXT,__text  _WKNavigationActionGetTypeID
+0x19d43019c  __TEXT,__text  _WKNavigationActionHasUnconsumedUserGesture
+0x19d430040  __TEXT,__text  _WKNavigationActionShouldPerformDownload
+0x19d430310  __TEXT,__text  _WKNavigationDataCopyNavigationDestinationURL
+0x19d430398  __TEXT,__text  _WKNavigationDataCopyOriginalRequest
+0x19d4301d0  __TEXT,__text  _WKNavigationDataCopyTitle
+0x19d4302c4  __TEXT,__text  _WKNavigationDataCopyURL
+0x19d4301c8  __TEXT,__text  _WKNavigationDataGetTypeID
+0x19d4303d8  __TEXT,__text  _WKNavigationGetTypeID
+0x19d4303e8  __TEXT,__text  _WKNavigationResponseCanShowMIMEType
+0x19d4304b8  __TEXT,__text  _WKNavigationResponseCopyFrameInfo
+0x19d430478  __TEXT,__text  _WKNavigationResponseCopyResponse
+0x19d4303e0  __TEXT,__text  _WKNavigationResponseGetTypeID
+0x19d430530  __TEXT,__text  _WKNotificationCopyBody
+0x19d430798  __TEXT,__text  _WKNotificationCopyCoreIDForTesting
+0x19d4306d8  __TEXT,__text  _WKNotificationCopyDataStoreIdentifier
+0x19cd7fb7c  __TEXT,__text  _WKNotificationCopyDictionaryRepresentation
+0x19d430630  __TEXT,__text  _WKNotificationCopyDir
+0x19d430570  __TEXT,__text  _WKNotificationCopyIconURL
+0x19d4305f0  __TEXT,__text  _WKNotificationCopyLang
+0x19d4305b0  __TEXT,__text  _WKNotificationCopyTag
+0x19d4304f0  __TEXT,__text  _WKNotificationCopyTitle
+0x19d430818  __TEXT,__text  _WKNotificationGetAlert
+0x19d4306bc  __TEXT,__text  _WKNotificationGetID
+0x19d4307e4  __TEXT,__text  _WKNotificationGetIsPersistent
+0x19d430680  __TEXT,__text  _WKNotificationGetSecurityOrigin
+0x19d4304e8  __TEXT,__text  _WKNotificationGetTypeID
+0x19d430d3c  __TEXT,__text  _WKNotificationManagerGetSharedServiceWorkerNotificationManager
+0x19d43084c  __TEXT,__text  _WKNotificationManagerGetTypeID
+0x19d430a70  __TEXT,__text  _WKNotificationManagerProviderDidClickNotification
+0x19d430b04  __TEXT,__text  _WKNotificationManagerProviderDidClickNotification_b
+0x19d430b8c  __TEXT,__text  _WKNotificationManagerProviderDidCloseNotifications
+0x19d430cb4  __TEXT,__text  _WKNotificationManagerProviderDidRemoveNotificationPolicies
+0x19d4309dc  __TEXT,__text  _WKNotificationManagerProviderDidShowNotification
+0x19d430c14  __TEXT,__text  _WKNotificationManagerProviderDidUpdateNotificationPolicy
+0x19d430854  __TEXT,__text  _WKNotificationManagerSetProvider
+0x19d430d60  __TEXT,__text  _WKNotificationPermissionRequestAllow
+0x19d430e5c  __TEXT,__text  _WKNotificationPermissionRequestDeny
+0x19d430d58  __TEXT,__text  _WKNotificationPermissionRequestGetTypeID
+0x19ccd5354  __TEXT,__text  _WKObjCTypeWrapperGetObject
+0x19d430ffc  __TEXT,__text  _WKOpenPanelParametersCopyAcceptedFileExtensions
+0x19d430f98  __TEXT,__text  _WKOpenPanelParametersCopyAcceptedMIMETypes
+0x19d431060  __TEXT,__text  _WKOpenPanelParametersCopyAllowedMIMETypes
+0x19d4310cc  __TEXT,__text  _WKOpenPanelParametersCopyCapture
+0x19d4310f8  __TEXT,__text  _WKOpenPanelParametersCopySelectedFileNames
+0x19d430eec  __TEXT,__text  _WKOpenPanelParametersGetAllowsDirectories
+0x19d430f7c  __TEXT,__text  _WKOpenPanelParametersGetAllowsMultipleFiles
+0x19d4310d4  __TEXT,__text  _WKOpenPanelParametersGetMediaCaptureType
+0x19d430ee4  __TEXT,__text  _WKOpenPanelParametersGetTypeID
+0x19d431578  __TEXT,__text  _WKOpenPanelResultListenerCancel
+0x19d431488  __TEXT,__text  _WKOpenPanelResultListenerChooseFiles
+0x19d431164  __TEXT,__text  _WKOpenPanelResultListenerChooseMediaFiles
+0x19d43115c  __TEXT,__text  _WKOpenPanelResultListenerGetTypeID
+0x19cd7ff58  __TEXT,__text  _WKPageAccessibilityClearIsolatedTree
+0x19d435054  __TEXT,__text  _WKPageAreScrollbarAnimationsSuppressed
+0x19d435488  __TEXT,__text  _WKPageBackgroundExtendsBeyondPage
+0x19d438a90  __TEXT,__text  _WKPageBeginPrinting
+0x19d4396b4  __TEXT,__text  _WKPageCallAfterNextPresentationUpdate
+0x19d437954  __TEXT,__text  _WKPageCallAsyncJavaScript
+0x19d437e3c  __TEXT,__text  _WKPageCallAsyncJavaScriptWithoutUserGesture
+0x19d435778  __TEXT,__text  _WKPageCanDelete
+0x19d43364c  __TEXT,__text  _WKPageCanGoBack
+0x19d4334c8  __TEXT,__text  _WKPageCanGoForward
+0x19d4358d8  __TEXT,__text  _WKPageCenterSelectionInVisibleArea
+0x19d43bc98  __TEXT,__text  _WKPageClearBackForwardCache
+0x19d43b840  __TEXT,__text  _WKPageClearBackForwardListForTesting
+0x19d43b018  __TEXT,__text  _WKPageClearLoadedSubresourceDomains
+0x19d43b17c  __TEXT,__text  _WKPageClearNotificationPermissionState
+0x19d439b18  __TEXT,__text  _WKPageClearPrivateClickMeasurement
+0x19d439084  __TEXT,__text  _WKPageClearUserMediaState
+0x19d439618  __TEXT,__text  _WKPageClearWheelEventTestMonitor
+0x19d4333d4  __TEXT,__text  _WKPageClose
+0x19d438824  __TEXT,__text  _WKPageComputePagesForPrinting
+0x19d43be74  __TEXT,__text  _WKPageConfigurationCreate
+0x19d43beac  __TEXT,__text  _WKPageConfigurationGetContext
+0x19d43c520  __TEXT,__text  _WKPageConfigurationGetDefaultWebsitePolicies
+0x19d43bfe4  __TEXT,__text  _WKPageConfigurationGetPageGroup
+0x19d43c128  __TEXT,__text  _WKPageConfigurationGetPreferences
+0x19d43c260  __TEXT,__text  _WKPageConfigurationGetRelatedPage
+0x19d43be6c  __TEXT,__text  _WKPageConfigurationGetTypeID
+0x19d43bff0  __TEXT,__text  _WKPageConfigurationGetUserContentController
+0x19d43c360  __TEXT,__text  _WKPageConfigurationGetWebsiteDataStore
+0x19d43c480  __TEXT,__text  _WKPageConfigurationSetAllowTestOnlyIPC
+0x19d43c450  __TEXT,__text  _WKPageConfigurationSetBackgroundCPULimit
+0x19d43bf7c  __TEXT,__text  _WKPageConfigurationSetContext
+0x19d43c57c  __TEXT,__text  _WKPageConfigurationSetDefaultWebsitePolicies
+0x19d43c428  __TEXT,__text  _WKPageConfigurationSetInitialCapitalizationEnabled
+0x19d43bfec  __TEXT,__text  _WKPageConfigurationSetPageGroup
+0x19d43c4d0  __TEXT,__text  _WKPageConfigurationSetPortsForUpgradingInsecureSchemeForTesting
+0x19d43c184  __TEXT,__text  _WKPageConfigurationSetPreferences
+0x19d43c2b0  __TEXT,__text  _WKPageConfigurationSetRelatedPage
+0x19d43c4a8  __TEXT,__text  _WKPageConfigurationSetShouldSendConsoleLogsToUIProcessForTesting
+0x19d43c04c  __TEXT,__text  _WKPageConfigurationSetUserContentController
+0x19d43c3c0  __TEXT,__text  _WKPageConfigurationSetWebsiteDataStore
+0x19d43843c  __TEXT,__text  _WKPageCopyActiveURL
+0x19d433b58  __TEXT,__text  _WKPageCopyApplicationNameForUserAgent
+0x19d4384d8  __TEXT,__text  _WKPageCopyCommittedURL
+0x19d433df0  __TEXT,__text  _WKPageCopyCustomTextEncodingName
+0x19d433c78  __TEXT,__text  _WKPageCopyCustomUserAgent
+0x19d431620  __TEXT,__text  _WKPageCopyPageConfiguration
+0x19d4383cc  __TEXT,__text  _WKPageCopyPendingAPIRequestURL
+0x19d43848c  __TEXT,__text  _WKPageCopyProvisionalURL
+0x19d4391dc  __TEXT,__text  _WKPageCopyRelatedPages
+0x19d4341e4  __TEXT,__text  _WKPageCopySessionState
+0x19d438524  __TEXT,__text  _WKPageCopyStandardUserAgentWithApplicationName
+0x19d433910  __TEXT,__text  _WKPageCopyTitle
+0x19d433b18  __TEXT,__text  _WKPageCopyUserAgent
+0x19d435cf8  __TEXT,__text  _WKPageCountStringMatches
+0x19d43b0e0  __TEXT,__text  _WKPageDispatchActivityStateUpdateForTesting
+0x19d43ba58  __TEXT,__text  _WKPageDisplayAndTrackRepaintsForTesting
+0x19d43bcfc  __TEXT,__text  _WKPageDoAfterProcessingAllPendingMouseEvents
+0x19d438944  __TEXT,__text  _WKPageDrawPagesToPDF
+0x19d4399f8  __TEXT,__text  _WKPageDumpPrivateClickMeasurement
+0x19d438b88  __TEXT,__text  _WKPageEndPrinting
+0x19d437620  __TEXT,__text  _WKPageEvaluateJavaScriptInFrame
+0x19d43760c  __TEXT,__text  _WKPageEvaluateJavaScriptInMainFrame
+0x19d438738  __TEXT,__text  _WKPageExecuteCommand
+0x19d43b1cc  __TEXT,__text  _WKPageExecuteCommandForTesting
+0x19d435ba8  __TEXT,__text  _WKPageFindString
+0x19d43bb58  __TEXT,__text  _WKPageFindStringForTesting
+0x19d43594c  __TEXT,__text  _WKPageFindStringMatches
+0x19d434ee8  __TEXT,__text  _WKPageFixedLayoutSize
+0x19d4382f4  __TEXT,__text  _WKPageForceRepaint
+0x19cd7ff48  __TEXT,__text  _WKPageGetAccessibilityWebProcessDebugInfo
+0x19cd7ff50  __TEXT,__text  _WKPageGetAccessibilityWebProcessDebugInfoForAllProcesses
+0x19d439540  __TEXT,__text  _WKPageGetAddsVisitedLinks
+0x19d438ce8  __TEXT,__text  _WKPageGetAllowsRemoteInspection
+0x19d439920  __TEXT,__text  _WKPageGetApplicationManifest
+0x19d4337cc  __TEXT,__text  _WKPageGetBackForwardList
+0x19d434824  __TEXT,__text  _WKPageGetBackingScaleFactor
+0x19d438114  __TEXT,__text  _WKPageGetBytecodeProfile
+0x19d4382c8  __TEXT,__text  _WKPageGetContentsAsMHTMLData
+0x19d438038  __TEXT,__text  _WKPageGetContentsAsString
+0x19d4315d0  __TEXT,__text  _WKPageGetContext
+0x19d433a94  __TEXT,__text  _WKPageGetEstimatedProgress
+0x19d4339a4  __TEXT,__text  _WKPageGetFocusedFrame
+0x19d4339e4  __TEXT,__text  _WKPageGetFrameSetLargestFrame
+0x19d4398b8  __TEXT,__text  _WKPageGetGPUProcessIdentifier
+0x19d435734  __TEXT,__text  _WKPageGetGapBetweenPages
+0x19d435a28  __TEXT,__text  _WKPageGetImageForFindMatch
+0x19d433a44  __TEXT,__text  _WKPageGetInspector
+0x19d438c4c  __TEXT,__text  _WKPageGetIsControlledByAutomation
+0x19d433964  __TEXT,__text  _WKPageGetMainFrame
+0x19d439068  __TEXT,__text  _WKPageGetMediaCaptureEnabled
+0x19d4395cc  __TEXT,__text  _WKPageGetMediaState
+0x19d43575c  __TEXT,__text  _WKPageGetPageCount
+0x19d431618  __TEXT,__text  _WKPageGetPageGroup
+0x19d43568c  __TEXT,__text  _WKPageGetPageLength
+0x19d434b00  __TEXT,__text  _WKPageGetPageZoomFactor
+0x19d4355e4  __TEXT,__text  _WKPageGetPaginationBehavesLikeColumns
+0x19d435754  __TEXT,__text  _WKPageGetPaginationLineGridEnabled
+0x19d435538  __TEXT,__text  _WKPageGetPaginationMode
+0x19d439880  __TEXT,__text  _WKPageGetProcessIdentifier
+0x19d4339ec  __TEXT,__text  _WKPageGetRenderTreeSize
+0x19d4381ec  __TEXT,__text  _WKPageGetSamplingProfilerOutput
+0x19d434d70  __TEXT,__text  _WKPageGetScaleFactor
+0x19d439480  __TEXT,__text  _WKPageGetScrollPinningBehavior
+0x19d4382c4  __TEXT,__text  _WKPageGetSelectionAsWebArchiveData
+0x19d434128  __TEXT,__text  _WKPageGetSessionBackForwardListItemValueType
+0x19d43406c  __TEXT,__text  _WKPageGetSessionHistoryURLValueType
+0x19d437f34  __TEXT,__text  _WKPageGetSourceForFrame
+0x19d43b42c  __TEXT,__text  _WKPageGetStorageAreaMapCountForTesting
+0x19d434808  __TEXT,__text  _WKPageGetTextZoomFactor
+0x19d4315c8  __TEXT,__text  _WKPageGetTypeID
+0x19cd7febc  __TEXT,__text  _WKPageGetWebView
+0x19d433a08  __TEXT,__text  _WKPageGetWebsiteDataStore
+0x19d433514  __TEXT,__text  _WKPageGoBack
+0x19d433440  __TEXT,__text  _WKPageGoForward
+0x19d433698  __TEXT,__text  _WKPageGoToBackForwardListItem
+0x19d43c610  __TEXT,__text  _WKPageGroupAddUserScript
+0x19d43c608  __TEXT,__text  _WKPageGroupAddUserStyleSheet
+0x19d43c5ec  __TEXT,__text  _WKPageGroupCreateWithIdentifier
+0x19d43c5f8  __TEXT,__text  _WKPageGroupGetPreferences
+0x19d43c5e4  __TEXT,__text  _WKPageGroupGetTypeID
+0x19d43c600  __TEXT,__text  _WKPageGroupGetUserContentController
+0x19d43c614  __TEXT,__text  _WKPageGroupRemoveAllUserScripts
+0x19d43c60c  __TEXT,__text  _WKPageGroupRemoveAllUserStyleSheets
+0x19d43c5f4  __TEXT,__text  _WKPageGroupSetPreferences
+0x19d434f9c  __TEXT,__text  _WKPageHasHorizontalScrollbar
+0x19d4357e0  __TEXT,__text  _WKPageHasSelectedRange
+0x19d434fb8  __TEXT,__text  _WKPageHasVerticalScrollbar
+0x19d435c84  __TEXT,__text  _WKPageHideFindUI
+0x19d43536c  __TEXT,__text  _WKPageHorizontalRubberBandingIsEnabled
+0x19d435b28  __TEXT,__text  _WKPageIndicateFindMatch
+0x19d433424  __TEXT,__text  _WKPageIsClosed
+0x19d435838  __TEXT,__text  _WKPageIsContentEditable
+0x19d43b3ac  __TEXT,__text  _WKPageIsDisplayCaptureCapabilityActiveForTesting
+0x19d43b2c8  __TEXT,__text  _WKPageIsEditingCommandEnabledForTesting
+0x19d43ace8  __TEXT,__text  _WKPageIsMockRealtimeMediaSourceCenterEnabled
+0x19d4350dc  __TEXT,__text  _WKPageIsPinnedToBottomSide
+0x19d435070  __TEXT,__text  _WKPageIsPinnedToLeftSide
+0x19d435094  __TEXT,__text  _WKPageIsPinnedToRightSide
+0x19d4350b8  __TEXT,__text  _WKPageIsPinnedToTopSide
+0x19d4395a8  __TEXT,__text  _WKPageIsPlayingAudio
+0x19d434f14  __TEXT,__text  _WKPageListenForLayoutMilestones
+0x19d4329dc  __TEXT,__text  _WKPageLoadAlternateHTMLString
+0x19d4321a4  __TEXT,__text  _WKPageLoadData
+0x19d4323f4  __TEXT,__text  _WKPageLoadDataWithUserData
+0x19d431f00  __TEXT,__text  _WKPageLoadFile
+0x19cd7fc28  __TEXT,__text  _WKPageLoadFileReturningNavigation
+0x19d432038  __TEXT,__text  _WKPageLoadFileWithUserData
+0x19d43267c  __TEXT,__text  _WKPageLoadHTMLString
+0x19d4326dc  __TEXT,__text  _WKPageLoadHTMLStringWithUserData
+0x19d432cec  __TEXT,__text  _WKPageLoadPlainTextString
+0x19d432d3c  __TEXT,__text  _WKPageLoadPlainTextStringWithUserData
+0x19d431660  __TEXT,__text  _WKPageLoadURL
+0x19d431b54  __TEXT,__text  _WKPageLoadURLRequest
+0x19d431d04  __TEXT,__text  _WKPageLoadURLRequestWithUserData
+0x19d431800  __TEXT,__text  _WKPageLoadURLWithShouldOpenExternalURLsPolicy
+0x19d431990  __TEXT,__text  _WKPageLoadURLWithUserData
+0x19d43af30  __TEXT,__text  _WKPageLoadedSubresourceDomains
+0x19d439340  __TEXT,__text  _WKPageLookUpFrameFromHandle
+0x19d439d64  __TEXT,__text  _WKPageMarkAttributedPrivateClickMeasurementsAsExpiredForTesting
+0x19d43a644  __TEXT,__text  _WKPageMarkPrivateClickMeasurementsAsExpiredForTesting
+0x19d43310c  __TEXT,__text  _WKPagePermissionChanged
+0x19d4390f8  __TEXT,__text  _WKPagePostMessageToInjectedBundle
+0x19d432e54  __TEXT,__text  _WKPageReload
+0x19d433004  __TEXT,__text  _WKPageReloadExpiredOnly
+0x19d432f78  __TEXT,__text  _WKPageReloadFromOrigin
+0x19d432eec  __TEXT,__text  _WKPageReloadWithoutContentBlockers
+0x19d437e5c  __TEXT,__text  _WKPageRenderTreeExternalRepresentation
+0x19d4363c4  __TEXT,__text  _WKPageRequestExitFullScreen
+0x19d436f98  __TEXT,__text  _WKPageRequestStorageAccessConfirmResultListenerCall
+0x19d436f90  __TEXT,__text  _WKPageRequestStorageAccessConfirmResultListenerGetTypeID
+0x19d433fd0  __TEXT,__text  _WKPageResetStateBetweenTests
+0x19d4343b8  __TEXT,__text  _WKPageRestoreFromSessionState
+0x19d4347b8  __TEXT,__text  _WKPageRestoreFromSessionStateWithoutNavigation
+0x19d43525c  __TEXT,__text  _WKPageRubberBandsAtBottom
+0x19d435100  __TEXT,__text  _WKPageRubberBandsAtLeft
+0x19d435174  __TEXT,__text  _WKPageRubberBandsAtRight
+0x19d4351e8  __TEXT,__text  _WKPageRubberBandsAtTop
+0x19d436c70  __TEXT,__text  _WKPageRunBeforeUnloadConfirmPanelResultListenerCall
+0x19d436c68  __TEXT,__text  _WKPageRunBeforeUnloadConfirmPanelResultListenerGetTypeID
+0x19d436d20  __TEXT,__text  _WKPageRunJavaScriptAlertResultListenerCall
+0x19d436d18  __TEXT,__text  _WKPageRunJavaScriptAlertResultListenerGetTypeID
+0x19d436dc8  __TEXT,__text  _WKPageRunJavaScriptConfirmResultListenerCall
+0x19d436dc0  __TEXT,__text  _WKPageRunJavaScriptConfirmResultListenerGetTypeID
+0x19d436e78  __TEXT,__text  _WKPageRunJavaScriptPromptResultListenerCall
+0x19d436e70  __TEXT,__text  _WKPageRunJavaScriptPromptResultListenerGetTypeID
+0x19d439454  __TEXT,__text  _WKPageSelectContextMenuItem
+0x19d435aa8  __TEXT,__text  _WKPageSelectFindMatch
+0x19d43955c  __TEXT,__text  _WKPageSetAddsVisitedLinks
+0x19d438d40  __TEXT,__text  _WKPageSetAllowsRemoteInspection
+0x19d433b98  __TEXT,__text  _WKPageSetApplicationNameForUserAgent
+0x19d435408  __TEXT,__text  _WKPageSetBackgroundExtendsBeyondPage
+0x19d438c68  __TEXT,__text  _WKPageSetControlledByAutomation
+0x19d43bdb0  __TEXT,__text  _WKPageSetCursorDidChangeCallbackForTesting
+0x19d434858  __TEXT,__text  _WKPageSetCustomBackingScaleFactor
+0x19d434930  __TEXT,__text  _WKPageSetCustomBackingScaleFactorWithCallback
+0x19d433e70  __TEXT,__text  _WKPageSetCustomTextEncodingName
+0x19d433cb8  __TEXT,__text  _WKPageSetCustomUserAgent
+0x19d435388  __TEXT,__text  _WKPageSetEnableHorizontalRubberBanding
+0x19d4352ec  __TEXT,__text  _WKPageSetEnableVerticalRubberBanding
+0x19d434e20  __TEXT,__text  _WKPageSetFixedLayoutSize
+0x19d43625c  __TEXT,__text  _WKPageSetFullScreenClientForTesting
+0x19d4356a8  __TEXT,__text  _WKPageSetGapBetweenPages
+0x19d43978c  __TEXT,__text  _WKPageSetIgnoresViewportScaleLimits
+0x19d43588c  __TEXT,__text  _WKPageSetMaintainsInactiveSelection
+0x19d4393d4  __TEXT,__text  _WKPageSetMayStartMediaWhenInWindow
+0x19d438fe8  __TEXT,__text  _WKPageSetMediaCaptureEnabled
+0x19d43b08c  __TEXT,__text  _WKPageSetMediaCaptureReportingDelayForTesting
+0x19d438e30  __TEXT,__text  _WKPageSetMediaVolume
+0x19d43abf8  __TEXT,__text  _WKPageSetMockCameraOrientationForTesting
+0x19d43acec  __TEXT,__text  _WKPageSetMockCaptureDevicesInterrupted
+0x19d438ebc  __TEXT,__text  _WKPageSetMuted
+0x19d43b604  __TEXT,__text  _WKPageSetObscuredContentInsetsForTesting
+0x19d43a760  __TEXT,__text  _WKPageSetPCMFraudPreventionValuesForTesting
+0x19d434bd4  __TEXT,__text  _WKPageSetPageAndTextZoomFactors
+0x19d435dd4  __TEXT,__text  _WKPageSetPageContextMenuClient
+0x19d435e00  __TEXT,__text  _WKPageSetPageDiagnosticLoggingClient
+0x19d435ee8  __TEXT,__text  _WKPageSetPageFindClient
+0x19d435ffc  __TEXT,__text  _WKPageSetPageFindMatchesClient
+0x19d436460  __TEXT,__text  _WKPageSetPageFormClient
+0x19d436104  __TEXT,__text  _WKPageSetPageInjectedBundleClient
+0x19d435600  __TEXT,__text  _WKPageSetPageLength
+0x19d436578  __TEXT,__text  _WKPageSetPageLoaderClient
+0x19d437194  __TEXT,__text  _WKPageSetPageNavigationClient
+0x19d436b2c  __TEXT,__text  _WKPageSetPagePolicyClient
+0x19d43b758  __TEXT,__text  _WKPageSetPageScaleFactorForTesting
+0x19d4372d4  __TEXT,__text  _WKPageSetPageStateClient
+0x19d437070  __TEXT,__text  _WKPageSetPageUIClient
+0x19d434b30  __TEXT,__text  _WKPageSetPageZoomFactor
+0x19d435564  __TEXT,__text  _WKPageSetPaginationBehavesLikeColumns
+0x19d435750  __TEXT,__text  _WKPageSetPaginationLineGridEnabled
+0x19d4354a4  __TEXT,__text  _WKPageSetPaginationMode
+0x19d43b528  __TEXT,__text  _WKPageSetPermissionLevelForTesting
+0x19d43aa60  __TEXT,__text  _WKPageSetPrivateClickMeasurementAppBundleIDForTesting
+0x19d43a41c  __TEXT,__text  _WKPageSetPrivateClickMeasurementAttributionReportURLsForTesting
+0x19d439e80  __TEXT,__text  _WKPageSetPrivateClickMeasurementEphemeralMeasurementForTesting
+0x19d439c34  __TEXT,__text  _WKPageSetPrivateClickMeasurementOverrideTimerForTesting
+0x19d43a0cc  __TEXT,__text  _WKPageSetPrivateClickMeasurementTokenPublicKeyURLForTesting
+0x19d43a274  __TEXT,__text  _WKPageSetPrivateClickMeasurementTokenSignatureURLForTesting
+0x19d437474  __TEXT,__text  _WKPageSetResourceLoadClient
+0x19d435280  __TEXT,__text  _WKPageSetRubberBandsAtBottom
+0x19d435124  __TEXT,__text  _WKPageSetRubberBandsAtLeft
+0x19d435198  __TEXT,__text  _WKPageSetRubberBandsAtRight
+0x19d43520c  __TEXT,__text  _WKPageSetRubberBandsAtTop
+0x19d434c7c  __TEXT,__text  _WKPageSetScaleFactor
+0x19d4394b0  __TEXT,__text  _WKPageSetScrollPinningBehavior
+0x19d434fd4  __TEXT,__text  _WKPageSetSuppressScrollbarAnimations
+0x19d434a74  __TEXT,__text  _WKPageSetTextZoomFactor
+0x19d43b940  __TEXT,__text  _WKPageSetTracksRepaintsForTesting
+0x19d43980c  __TEXT,__text  _WKPageSetUseDarkAppearanceForTesting
+0x19d434da0  __TEXT,__text  _WKPageSetUseFixedLayout
+0x19d438dc0  __TEXT,__text  _WKPageShowWebInspectorForTesting
+0x19d439fb0  __TEXT,__text  _WKPageSimulatePrivateClickMeasurementSessionRestart
+0x19d432de0  __TEXT,__text  _WKPageStopLoading
+0x19d433d98  __TEXT,__text  _WKPageSupportsTextEncoding
+0x19d434a1c  __TEXT,__text  _WKPageSupportsTextZoom
+0x19d433f50  __TEXT,__text  _WKPageTerminate
+0x19d43ae00  __TEXT,__text  _WKPageTriggerMockCaptureConfigurationChange
+0x19d433090  __TEXT,__text  _WKPageTryClose
+0x19d433758  __TEXT,__text  _WKPageTryRestoreScrollPosition
+0x19d43381c  __TEXT,__text  _WKPageUpdateWebsitePolicies
+0x19d434ecc  __TEXT,__text  _WKPageUseFixedLayout
+0x19d4385ec  __TEXT,__text  _WKPageValidateCommand
+0x19d4352d0  __TEXT,__text  _WKPageVerticalRubberBandingIsEnabled
+0x19d4337f8  __TEXT,__text  _WKPageWillHandleHorizontalScrollEvents
+0x19cd7fb4c  __TEXT,__text  _WKPlugInInfoBundleIdentifierKey
+0x19cd7fb6c  __TEXT,__text  _WKPlugInInfoIsSandboxedKey
+0x19cd7fb5c  __TEXT,__text  _WKPlugInInfoLoadPolicyKey
+0x19cd7fb44  __TEXT,__text  _WKPlugInInfoPathKey
+0x19cd7fb64  __TEXT,__text  _WKPlugInInfoUpdatePastLastBlockedVersionIsKnownAvailableKey
+0x19cd7fb54  __TEXT,__text  _WKPlugInInfoVersionKey
+0x19d207ab8  __TEXT,__text  _WKPlugInInformationReplacementObscuredKey
+0x19d207a50  __TEXT,__text  _WKPluginInformationBundleIdentifierKey
+0x19d207a60  __TEXT,__text  _WKPluginInformationBundleShortVersionKey
+0x19d207a58  __TEXT,__text  _WKPluginInformationBundleVersionKey
+0x19d207a78  __TEXT,__text  _WKPluginInformationDefaultLoadPolicyKey
+0x19d207a70  __TEXT,__text  _WKPluginInformationDisplayNameKey
+0x19d207a90  __TEXT,__text  _WKPluginInformationFrameURLKey
+0x19d207a88  __TEXT,__text  _WKPluginInformationHasSandboxProfileKey
+0x19d207a98  __TEXT,__text  _WKPluginInformationMIMETypeKey
+0x19d207aa0  __TEXT,__text  _WKPluginInformationPageURLKey
+0x19d207a68  __TEXT,__text  _WKPluginInformationPathKey
+0x19d207ab0  __TEXT,__text  _WKPluginInformationPluginURLKey
+0x19d207aa8  __TEXT,__text  _WKPluginInformationPluginspageAttributeURLKey
+0x19d207a80  __TEXT,__text  _WKPluginInformationUpdatePastLastBlockedVersionIsKnownAvailableKey
+0x19d206fbc  __TEXT,__text  _WKPointCreate
+0x19d206fac  __TEXT,__text  _WKPointGetTypeID
+0x19d207140  __TEXT,__text  _WKPointGetValue
+0x19d43db2c  __TEXT,__text  _WKPreferencesCopyCursiveFontFamily
+0x19d43e50c  __TEXT,__text  _WKPreferencesCopyDefaultTextEncodingName
+0x19d43c924  __TEXT,__text  _WKPreferencesCopyExperimentalFeatures
+0x19d4457e4  __TEXT,__text  _WKPreferencesCopyFTPDirectoryTemplatePath
+0x19d43dc84  __TEXT,__text  _WKPreferencesCopyFantasyFontFamily
+0x19d43d724  __TEXT,__text  _WKPreferencesCopyFixedFontFamily
+0x19d43caa8  __TEXT,__text  _WKPreferencesCopyInternalDebugFeatures
+0x19d43df34  __TEXT,__text  _WKPreferencesCopyMathFontFamily
+0x19d444988  __TEXT,__text  _WKPreferencesCopyMediaContentTypesRequiringHardwareSupport
+0x19d43dddc  __TEXT,__text  _WKPreferencesCopyPictographFontFamily
+0x19d43d9d4  __TEXT,__text  _WKPreferencesCopySansSerifFontFamily
+0x19d43d87c  __TEXT,__text  _WKPreferencesCopySerifFontFamily
+0x19d43d5cc  __TEXT,__text  _WKPreferencesCopyStandardFontFamily
+0x19d43c620  __TEXT,__text  _WKPreferencesCreate
+0x19d43c7f8  __TEXT,__text  _WKPreferencesCreateCopy
+0x19d43c6dc  __TEXT,__text  _WKPreferencesCreateWithIdentifier
+0x19d43c98c  __TEXT,__text  _WKPreferencesEnableAllExperimentalFeatures
+0x19d43c884  __TEXT,__text  _WKPreferencesEndBatchingUpdates
+0x19d43f800  __TEXT,__text  _WKPreferencesGetAVFoundationEnabled
+0x19d445688  __TEXT,__text  _WKPreferencesGetAVFoundationNSURLSessionEnabled
+0x19d2068b4  __TEXT,__text  _WKPreferencesGetAccelerated2DCanvasEnabled
+0x19d43ea3c  __TEXT,__text  _WKPreferencesGetAcceleratedCompositingEnabled
+0x19d43e894  __TEXT,__text  _WKPreferencesGetAcceleratedDrawingEnabled
+0x19d4419e8  __TEXT,__text  _WKPreferencesGetAggressiveTileRetentionEnabled
+0x19d445664  __TEXT,__text  _WKPreferencesGetAllowCrossOriginSubresourcesToAskForCredentials
+0x19d444af8  __TEXT,__text  _WKPreferencesGetAllowMediaContentTypesRequiringHardwareSupportAsFallback
+0x19d4432f0  __TEXT,__text  _WKPreferencesGetAllowsAirPlayForMediaPlayback
+0x19d444018  __TEXT,__text  _WKPreferencesGetAllowsPictureInPictureMediaPlayback
+0x19d4446b8  __TEXT,__text  _WKPreferencesGetAnimatedImageAsyncDecodingEnabled
+0x19d4456dc  __TEXT,__text  _WKPreferencesGetAntialiasedFontDilationEnabled
+0x19d44422c  __TEXT,__text  _WKPreferencesGetApplePayCapabilityDisclosureAllowed
+0x19d444084  __TEXT,__text  _WKPreferencesGetApplePayEnabled
+0x19d44561c  __TEXT,__text  _WKPreferencesGetArtificialPluginInitializationDelayEnabled
+0x19d445604  __TEXT,__text  _WKPreferencesGetAsynchronousPluginInitializationEnabled
+0x19d445610  __TEXT,__text  _WKPreferencesGetAsynchronousPluginInitializationEnabledForAllPlugins
+0x19d43f72c  __TEXT,__text  _WKPreferencesGetAsynchronousSpellCheckingEnabled
+0x19d440ac4  __TEXT,__text  _WKPreferencesGetAttachmentElementEnabled
+0x19d43fe8c  __TEXT,__text  _WKPreferencesGetAudioPlaybackRequiresUserGesture
+0x19d43efcc  __TEXT,__text  _WKPreferencesGetAuthorAndUserStylesEnabled
+0x19d44564c  __TEXT,__text  _WKPreferencesGetAutostartOriginPlugInSnapshottingEnabled
+0x19d440d40  __TEXT,__text  _WKPreferencesGetBackspaceKeyNavigationEnabled
+0x19d440418  __TEXT,__text  _WKPreferencesGetBeaconAPIEnabled
+0x19d444ff0  __TEXT,__text  _WKPreferencesGetBoolValueForKeyForTesting
+0x19d4455b0  __TEXT,__text  _WKPreferencesGetCSSOMViewScrollingAPIEnabled
+0x19d444158  __TEXT,__text  _WKPreferencesGetCSSTransformStyleSeparatedEnabled
+0x19d43e968  __TEXT,__text  _WKPreferencesGetCanvasUsesAcceleratedDrawing
+0x19d445110  __TEXT,__text  _WKPreferencesGetCaptureAudioInGPUProcessEnabled
+0x19d4450a0  __TEXT,__text  _WKPreferencesGetCaptureAudioInUIProcessEnabled
+0x19d4451f0  __TEXT,__text  _WKPreferencesGetCaptureVideoInGPUProcessEnabled
+0x19d445180  __TEXT,__text  _WKPreferencesGetCaptureVideoInUIProcessEnabled
+0x19d440e14  __TEXT,__text  _WKPreferencesGetCaretBrowsingEnabled
+0x19d444ddc  __TEXT,__text  _WKPreferencesGetColorFilterEnabled
+0x19d43eb10  __TEXT,__text  _WKPreferencesGetCompositingBordersVisible
+0x19d43ebd0  __TEXT,__text  _WKPreferencesGetCompositingRepaintCountersVisible
+0x19d4423ec  __TEXT,__text  _WKPreferencesGetContentChangeObserverEnabled
+0x19d43e308  __TEXT,__text  _WKPreferencesGetCookieEnabled
+0x19d44573c  __TEXT,__text  _WKPreferencesGetCrossOriginResourcePolicyEnabled
+0x19d443b20  __TEXT,__text  _WKPreferencesGetCustomPasteboardDataEnabled
+0x19d4455c8  __TEXT,__text  _WKPreferencesGetDNSPrefetchingEnabled
+0x19d43f4b0  __TEXT,__text  _WKPreferencesGetDOMPasteAllowed
+0x19d43f160  __TEXT,__text  _WKPreferencesGetDOMTimersThrottlingEnabled
+0x19d443a4c  __TEXT,__text  _WKPreferencesGetDataTransferItemsEnabled
+0x19d43d3d0  __TEXT,__text  _WKPreferencesGetDatabasesEnabled
+0x19d43e138  __TEXT,__text  _WKPreferencesGetDefaultFixedFontSize
+0x19d43e048  __TEXT,__text  _WKPreferencesGetDefaultFontSize
+0x19d43e610  __TEXT,__text  _WKPreferencesGetDeveloperExtrasEnabled
+0x19d44141c  __TEXT,__text  _WKPreferencesGetDiagnosticLoggingEnabled
+0x19d440768  __TEXT,__text  _WKPreferencesGetDigitalCredentialsEnabled
+0x19d4404ec  __TEXT,__text  _WKPreferencesGetDirectoryUploadEnabled
+0x19d443d9c  __TEXT,__text  _WKPreferencesGetDownloadAttributeEnabled
+0x19d43e3f0  __TEXT,__text  _WKPreferencesGetEditableLinkBehavior
+0x19d442c34  __TEXT,__text  _WKPreferencesGetEnableInheritURIQueryComponent
+0x19d44176c  __TEXT,__text  _WKPreferencesGetEncodingDetectorEnabled
+0x19d4437d0  __TEXT,__text  _WKPreferencesGetEnumeratingAllNetworkInterfacesEnabled
+0x19d444510  __TEXT,__text  _WKPreferencesGetExposeSpeakersEnabled
+0x19d4456f4  __TEXT,__text  _WKPreferencesGetFetchAPIEnabled
+0x19d445700  __TEXT,__text  _WKPreferencesGetFetchAPIKeepAliveEnabled
+0x19d43fa68  __TEXT,__text  _WKPreferencesGetFileAccessFromFileURLsAllowed
+0x19d4457d8  __TEXT,__text  _WKPreferencesGetForceFTPDirectoryListings
+0x19d43f658  __TEXT,__text  _WKPreferencesGetFullScreenEnabled
+0x19d442eb0  __TEXT,__text  _WKPreferencesGetGamepadsEnabled
+0x19d44363c  __TEXT,__text  _WKPreferencesGetGetUserMediaRequiresFocus
+0x19d44321c  __TEXT,__text  _WKPreferencesGetHTTPEquivEnabled
+0x19d442088  __TEXT,__text  _WKPreferencesGetHiddenPageCSSAnimationSuspensionEnabled
+0x19d441fb4  __TEXT,__text  _WKPreferencesGetHiddenPageDOMTimerThrottlingAutoIncreases
+0x19d441f48  __TEXT,__text  _WKPreferencesGetHiddenPageDOMTimerThrottlingEnabled
+0x19d445754  __TEXT,__text  _WKPreferencesGetHighlightAPIEnabled
+0x19d4456e8  __TEXT,__text  _WKPreferencesGetHixie76WebSocketProtocolEnabled
+0x19d4455bc  __TEXT,__text  _WKPreferencesGetHyperlinkAuditingEnabled
+0x19d443710  __TEXT,__text  _WKPreferencesGetICECandidateFilteringEnabled
+0x19d4456ac  __TEXT,__text  _WKPreferencesGetIgnoreViewportScalingConstraints
+0x19d442ddc  __TEXT,__text  _WKPreferencesGetImageControlsEnabled
+0x19d443964  __TEXT,__text  _WKPreferencesGetInactiveMediaCaptureStreamRepromptIntervalInMinutes
+0x19d44215c  __TEXT,__text  _WKPreferencesGetIncrementalRenderingSuppressionTimeout
+0x19d440344  __TEXT,__text  _WKPreferencesGetInlineMediaPlaybackRequiresPlaysInlineAttribute
+0x19d4414f0  __TEXT,__text  _WKPreferencesGetInteractiveFormValidationEnabled
+0x19d44570c  __TEXT,__text  _WKPreferencesGetIntersectionObserverEnabled
+0x19d44084c  __TEXT,__text  _WKPreferencesGetInvisibleMediaAutoplayPermitted
+0x19d443f44  __TEXT,__text  _WKPreferencesGetIsAccessibilityIsolatedTreeEnabled
+0x19d445718  __TEXT,__text  _WKPreferencesGetIsSecureContextAttributeEnabled
+0x19d445778  __TEXT,__text  _WKPreferencesGetJavaEnabled
+0x19d43f584  __TEXT,__text  _WKPreferencesGetJavaScriptCanAccessClipboard
+0x19d43d4a4  __TEXT,__text  _WKPreferencesGetJavaScriptCanOpenWindowsAutomatically
+0x19d43d094  __TEXT,__text  _WKPreferencesGetJavaScriptEnabled
+0x19d43d154  __TEXT,__text  _WKPreferencesGetJavaScriptMarkupEnabled
+0x19d43e6e4  __TEXT,__text  _WKPreferencesGetJavaScriptRuntimeFlags
+0x19d4456b8  __TEXT,__text  _WKPreferencesGetKeygenElementEnabled
+0x19d4445e4  __TEXT,__text  _WKPreferencesGetLargeImageAsyncDecodingEnabled
+0x19d444a24  __TEXT,__text  _WKPreferencesGetLegacyEncryptedMediaAPIEnabled
+0x19d442318  __TEXT,__text  _WKPreferencesGetLegacyLineLayoutVisualCoverageEnabled
+0x19d444368  __TEXT,__text  _WKPreferencesGetLinkPreloadEnabled
+0x19d43d228  __TEXT,__text  _WKPreferencesGetLoadsImagesAutomatically
+0x19d445790  __TEXT,__text  _WKPreferencesGetLoadsSiteIconsIgnoringImageLoadingPreference
+0x19d43f308  __TEXT,__text  _WKPreferencesGetLocalFileContentSniffingEnabled
+0x19d43d2fc  __TEXT,__text  _WKPreferencesGetLocalStorageEnabled
+0x19d441abc  __TEXT,__text  _WKPreferencesGetLogsPageMessagesToSystemConsoleEnabled
+0x19d4456d0  __TEXT,__text  _WKPreferencesGetLongMousePressEnabled
+0x19d43ff60  __TEXT,__text  _WKPreferencesGetMainContentUserGestureOverrideEnabled
+0x19d440188  __TEXT,__text  _WKPreferencesGetManagedMediaSourceHighThreshold
+0x19d4400a0  __TEXT,__text  _WKPreferencesGetManagedMediaSourceLowThreshold
+0x19d444d08  __TEXT,__text  _WKPreferencesGetMediaCapabilitiesEnabled
+0x19d4438a4  __TEXT,__text  _WKPreferencesGetMediaCaptureRequiresSecureConnection
+0x19d4405c0  __TEXT,__text  _WKPreferencesGetMediaControlsScaleWithPageZoom
+0x19d442594  __TEXT,__text  _WKPreferencesGetMediaDevicesEnabled
+0x19d440270  __TEXT,__text  _WKPreferencesGetMediaPlaybackAllowsInline
+0x19d43fce4  __TEXT,__text  _WKPreferencesGetMediaPlaybackRequiresUserGesture
+0x19d44443c  __TEXT,__text  _WKPreferencesGetMediaPreloadingEnabled
+0x19d442810  __TEXT,__text  _WKPreferencesGetMediaSourceEnabled
+0x19d4457cc  __TEXT,__text  _WKPreferencesGetMediaStreamEnabled
+0x19d444860  __TEXT,__text  _WKPreferencesGetMediaUserGestureInheritsFromDocument
+0x19d44579c  __TEXT,__text  _WKPreferencesGetMenuItemElementEnabled
+0x19d443148  __TEXT,__text  _WKPreferencesGetMetaRefreshEnabled
+0x19d43e228  __TEXT,__text  _WKPreferencesGetMinimumFontSize
+0x19d442f84  __TEXT,__text  _WKPreferencesGetMinimumZoomFontSize
+0x19d44357c  __TEXT,__text  _WKPreferencesGetMockCaptureDevicesEnabled
+0x19d4409f0  __TEXT,__text  _WKPreferencesGetMockScrollbarsEnabled
+0x19d43ee38  __TEXT,__text  _WKPreferencesGetNeedsSiteSpecificQuirks
+0x19d43fc10  __TEXT,__text  _WKPreferencesGetNeedsStorageAccessFromFileURLsQuirk
+0x19d4456c4  __TEXT,__text  _WKPreferencesGetNewBlockInsideInlineModelEnabled
+0x19d441164  __TEXT,__text  _WKPreferencesGetNotificationsEnabled
+0x19d441698  __TEXT,__text  _WKPreferencesGetPDFPluginEnabled
+0x19d43f3dc  __TEXT,__text  _WKPreferencesGetPageCacheEnabled
+0x19d4455f8  __TEXT,__text  _WKPreferencesGetPageCacheSupportsPlugins
+0x19d441b90  __TEXT,__text  _WKPreferencesGetPageVisibilityBasedProcessSuppressionEnabled
+0x19d445784  __TEXT,__text  _WKPreferencesGetPaginateDuringLayoutEnabled
+0x19d445670  __TEXT,__text  _WKPreferencesGetPaintTimingEnabled
+0x19d442668  __TEXT,__text  _WKPreferencesGetPeerConnectionEnabled
+0x19d445628  __TEXT,__text  _WKPreferencesGetPlugInSnapshottingEnabled
+0x19d445634  __TEXT,__text  _WKPreferencesGetPluginSandboxProfilesEnabledForAllPlugins
+0x19d4455e0  __TEXT,__text  _WKPreferencesGetPluginsEnabled
+0x19d445658  __TEXT,__text  _WKPreferencesGetPrimaryPlugInSnapshotDetectionEnabled
+0x19d4456a0  __TEXT,__text  _WKPreferencesGetPrivateBrowsingEnabled
+0x19d444eb0  __TEXT,__text  _WKPreferencesGetProcessSwapOnNavigationEnabled
+0x19d444f84  __TEXT,__text  _WKPreferencesGetPunchOutWhiteBackgroundsInDarkMode
+0x19d206898  __TEXT,__text  _WKPreferencesGetQTKitEnabled
+0x19d4457b4  __TEXT,__text  _WKPreferencesGetReferrerPolicyAttributeEnabled
+0x19d445330  __TEXT,__text  _WKPreferencesGetRemotePlaybackEnabled
+0x19d44567c  __TEXT,__text  _WKPreferencesGetRequestAnimationFrameEnabled
+0x19d445540  __TEXT,__text  _WKPreferencesGetRequestVideoFrameCallbackEnabled
+0x19d445730  __TEXT,__text  _WKPreferencesGetResourceTimingEnabled
+0x19d4434a8  __TEXT,__text  _WKPreferencesGetResourceUsageOverlayVisible
+0x19d4455d4  __TEXT,__text  _WKPreferencesGetRestrictedHTTPResponseAccess
+0x19d4415c4  __TEXT,__text  _WKPreferencesGetScrollingPerformanceLoggingEnabled
+0x19d441d38  __TEXT,__text  _WKPreferencesGetSelectTrailingWhitespaceEnabled
+0x19d4457c0  __TEXT,__text  _WKPreferencesGetServerTimingEnabled
+0x19d442d08  __TEXT,__text  _WKPreferencesGetServiceControlsEnabled
+0x19d444c34  __TEXT,__text  _WKPreferencesGetShouldAllowUserInstalledFonts
+0x19d442a8c  __TEXT,__text  _WKPreferencesGetShouldConvertPositionStyleOnCopy
+0x19d440fbc  __TEXT,__text  _WKPreferencesGetShouldDisplayCaptions
+0x19d440ee8  __TEXT,__text  _WKPreferencesGetShouldDisplaySubtitles
+0x19d441090  __TEXT,__text  _WKPreferencesGetShouldDisplayTextDescriptions
+0x19d43f08c  __TEXT,__text  _WKPreferencesGetShouldPrintBackgrounds
+0x19d441238  __TEXT,__text  _WKPreferencesGetShouldRespectImageOrientation
+0x19d44478c  __TEXT,__text  _WKPreferencesGetShouldSuppressKeyboardInputDuringProvisionalNavigation
+0x19d445404  __TEXT,__text  _WKPreferencesGetShouldUseServiceWorkerShortTimeout
+0x19d44091c  __TEXT,__text  _WKPreferencesGetShowsToolTipOverTruncatedText
+0x19d441e0c  __TEXT,__text  _WKPreferencesGetShowsURLsInToolTipsEnabled
+0x19d441c64  __TEXT,__text  _WKPreferencesGetSmartInsertDeleteEnabled
+0x19d445640  __TEXT,__text  _WKPreferencesGetSnapshotAllPlugIns
+0x19d4428e4  __TEXT,__text  _WKPreferencesGetSourceBufferChangeTypeEnabled
+0x19d44273c  __TEXT,__text  _WKPreferencesGetSpatialNavigationEnabled
+0x19d445694  __TEXT,__text  _WKPreferencesGetStorageAccessAPIEnabled
+0x19d441334  __TEXT,__text  _WKPreferencesGetStorageBlockingPolicy
+0x19d4455ec  __TEXT,__text  _WKPreferencesGetSubpixelAntialiasedLayerTextEnabled
+0x19d445748  __TEXT,__text  _WKPreferencesGetSubpixelCSSOMElementMetricsEnabled
+0x19d440c6c  __TEXT,__text  _WKPreferencesGetSuppressesIncrementalRendering
+0x19d4457a8  __TEXT,__text  _WKPreferencesGetSyntheticEditingCommandsEnabled
+0x19d43eef8  __TEXT,__text  _WKPreferencesGetTabsToLinks
+0x19d442b60  __TEXT,__text  _WKPreferencesGetTelephoneNumberParsingEnabled
+0x19d43e7c0  __TEXT,__text  _WKPreferencesGetTextAreasAreResizable
+0x19d441840  __TEXT,__text  _WKPreferencesGetTextAutosizingEnabled
+0x19d441914  __TEXT,__text  _WKPreferencesGetTextAutosizingUsesIdempotentMode
+0x19d442244  __TEXT,__text  _WKPreferencesGetThreadedScrollingEnabled
+0x19d43ec90  __TEXT,__text  _WKPreferencesGetTiledScrollingIndicatorVisible
+0x19d43fb3c  __TEXT,__text  _WKPreferencesGetTopNavigationToDataURLsAllowed
+0x19d43c618  __TEXT,__text  _WKPreferencesGetTypeID
+0x19d43f994  __TEXT,__text  _WKPreferencesGetUniversalAccessFromFileURLsAllowed
+0x19d4424c0  __TEXT,__text  _WKPreferencesGetUseGiantTiles
+0x19d4433cc  __TEXT,__text  _WKPreferencesGetUserInterfaceDirectionPolicy
+0x19d445724  __TEXT,__text  _WKPreferencesGetUserTimingEnabled
+0x19d4452c4  __TEXT,__text  _WKPreferencesGetVP9DecoderEnabled
+0x19d43ffcc  __TEXT,__text  _WKPreferencesGetVerifyUserGestureInUIProcessEnabled
+0x19d43fdb8  __TEXT,__text  _WKPreferencesGetVideoPlaybackRequiresUserGesture
+0x19d4429b8  __TEXT,__text  _WKPreferencesGetViewGestureDebuggingEnabled
+0x19d44306c  __TEXT,__text  _WKPreferencesGetVisibleDebugOverlayRegions
+0x19d43f234  __TEXT,__text  _WKPreferencesGetWebArchiveDebugModeEnabled
+0x19d440b98  __TEXT,__text  _WKPreferencesGetWebAudioEnabled
+0x19d440694  __TEXT,__text  _WKPreferencesGetWebAuthenticationEnabled
+0x19d43ed64  __TEXT,__text  _WKPreferencesGetWebGLEnabled
+0x19d443e70  __TEXT,__text  _WKPreferencesGetWebRTCPlatformCodecsInGPUProcessEnabled
+0x19d445760  __TEXT,__text  _WKPreferencesGetWebSQLDisabled
+0x19d43f8d4  __TEXT,__text  _WKPreferencesGetWebSecurityEnabled
+0x19d443cc8  __TEXT,__text  _WKPreferencesGetWebShareEnabled
+0x19d443bf4  __TEXT,__text  _WKPreferencesGetWriteRichTextDataWhenCopyingOrDragging
+0x19d44576c  __TEXT,__text  _WKPreferencesGetXSSAuditorEnabled
+0x19d43cb10  __TEXT,__text  _WKPreferencesResetAllInternalDebugFeatures
+0x19d43cfdc  __TEXT,__text  _WKPreferencesResetTestRunnerOverrides
+0x19d43f798  __TEXT,__text  _WKPreferencesSetAVFoundationEnabled
+0x19d445684  __TEXT,__text  _WKPreferencesSetAVFoundationNSURLSessionEnabled
+0x19d2068b0  __TEXT,__text  _WKPreferencesSetAccelerated2DCanvasEnabled
+0x19d43e9d4  __TEXT,__text  _WKPreferencesSetAcceleratedCompositingEnabled
+0x19d43e82c  __TEXT,__text  _WKPreferencesSetAcceleratedDrawingEnabled
+0x19d441980  __TEXT,__text  _WKPreferencesSetAggressiveTileRetentionEnabled
+0x19d445660  __TEXT,__text  _WKPreferencesSetAllowCrossOriginSubresourcesToAskForCredentials
+0x19d444b64  __TEXT,__text  _WKPreferencesSetAllowMediaContentTypesRequiringHardwareSupportAsFallback
+0x19d443288  __TEXT,__text  _WKPreferencesSetAllowsAirPlayForMediaPlayback
+0x19d443fb0  __TEXT,__text  _WKPreferencesSetAllowsPictureInPictureMediaPlayback
+0x19d444650  __TEXT,__text  _WKPreferencesSetAnimatedImageAsyncDecodingEnabled
+0x19d4456d8  __TEXT,__text  _WKPreferencesSetAntialiasedFontDilationEnabled
+0x19d444298  __TEXT,__text  _WKPreferencesSetApplePayCapabilityDisclosureAllowed
+0x19d4440f0  __TEXT,__text  _WKPreferencesSetApplePayEnabled
+0x19d445618  __TEXT,__text  _WKPreferencesSetArtificialPluginInitializationDelayEnabled
+0x19d445600  __TEXT,__text  _WKPreferencesSetAsynchronousPluginInitializationEnabled
+0x19d44560c  __TEXT,__text  _WKPreferencesSetAsynchronousPluginInitializationEnabledForAllPlugins
+0x19d43f6c4  __TEXT,__text  _WKPreferencesSetAsynchronousSpellCheckingEnabled
+0x19d440a5c  __TEXT,__text  _WKPreferencesSetAttachmentElementEnabled
+0x19d43fe24  __TEXT,__text  _WKPreferencesSetAudioPlaybackRequiresUserGesture
+0x19d43ef64  __TEXT,__text  _WKPreferencesSetAuthorAndUserStylesEnabled
+0x19d445648  __TEXT,__text  _WKPreferencesSetAutostartOriginPlugInSnapshottingEnabled
+0x19d440cd8  __TEXT,__text  _WKPreferencesSetBackspaceKeyNavigationEnabled
+0x19d4403b0  __TEXT,__text  _WKPreferencesSetBeaconAPIEnabled
+0x19d43cc2c  __TEXT,__text  _WKPreferencesSetBoolValueForKeyForTesting
+0x19d4455ac  __TEXT,__text  _WKPreferencesSetCSSOMViewScrollingAPIEnabled
+0x19d4441c4  __TEXT,__text  _WKPreferencesSetCSSTransformStyleSeparatedEnabled
+0x19d43e900  __TEXT,__text  _WKPreferencesSetCanvasUsesAcceleratedDrawing
+0x19d4450a8  __TEXT,__text  _WKPreferencesSetCaptureAudioInGPUProcessEnabled
+0x19d44509c  __TEXT,__text  _WKPreferencesSetCaptureAudioInUIProcessEnabled
+0x19d445188  __TEXT,__text  _WKPreferencesSetCaptureVideoInGPUProcessEnabled
+0x19d44517c  __TEXT,__text  _WKPreferencesSetCaptureVideoInUIProcessEnabled
+0x19d440dac  __TEXT,__text  _WKPreferencesSetCaretBrowsingEnabled
+0x19d444d74  __TEXT,__text  _WKPreferencesSetColorFilterEnabled
+0x19d43eaa8  __TEXT,__text  _WKPreferencesSetCompositingBordersVisible
+0x19d43eb68  __TEXT,__text  _WKPreferencesSetCompositingRepaintCountersVisible
+0x19d442384  __TEXT,__text  _WKPreferencesSetContentChangeObserverEnabled
+0x19d43e2a0  __TEXT,__text  _WKPreferencesSetCookieEnabled
+0x19d445738  __TEXT,__text  _WKPreferencesSetCrossOriginResourcePolicyEnabled
+0x19d43da70  __TEXT,__text  _WKPreferencesSetCursiveFontFamily
+0x19d443ab8  __TEXT,__text  _WKPreferencesSetCustomPasteboardDataEnabled
+0x19d4455c4  __TEXT,__text  _WKPreferencesSetDNSPrefetchingEnabled
+0x19d43f448  __TEXT,__text  _WKPreferencesSetDOMPasteAllowed
+0x19d43f0f8  __TEXT,__text  _WKPreferencesSetDOMTimersThrottlingEnabled
+0x19d4439e4  __TEXT,__text  _WKPreferencesSetDataTransferItemsEnabled
+0x19d43d368  __TEXT,__text  _WKPreferencesSetDatabasesEnabled
+0x19d43e0c0  __TEXT,__text  _WKPreferencesSetDefaultFixedFontSize
+0x19d43dfd0  __TEXT,__text  _WKPreferencesSetDefaultFontSize
+0x19d43e450  __TEXT,__text  _WKPreferencesSetDefaultTextEncodingName
+0x19d43e5a8  __TEXT,__text  _WKPreferencesSetDeveloperExtrasEnabled
+0x19d4413b4  __TEXT,__text  _WKPreferencesSetDiagnosticLoggingEnabled
+0x19d440700  __TEXT,__text  _WKPreferencesSetDigitalCredentialsEnabled
+0x19d440484  __TEXT,__text  _WKPreferencesSetDirectoryUploadEnabled
+0x19d43ccfc  __TEXT,__text  _WKPreferencesSetDoubleValueForKeyForTesting
+0x19d443d34  __TEXT,__text  _WKPreferencesSetDownloadAttributeEnabled
+0x19d43e374  __TEXT,__text  _WKPreferencesSetEditableLinkBehavior
+0x19d442bcc  __TEXT,__text  _WKPreferencesSetEnableInheritURIQueryComponent
+0x19d441704  __TEXT,__text  _WKPreferencesSetEncodingDetectorEnabled
+0x19d443768  __TEXT,__text  _WKPreferencesSetEnumeratingAllNetworkInterfacesEnabled
+0x19d43c9dc  __TEXT,__text  _WKPreferencesSetExperimentalFeatureForKey
+0x19d4444a8  __TEXT,__text  _WKPreferencesSetExposeSpeakersEnabled
+0x19d4457e0  __TEXT,__text  _WKPreferencesSetFTPDirectoryTemplatePath
+0x19d43dbc8  __TEXT,__text  _WKPreferencesSetFantasyFontFamily
+0x19d4456f0  __TEXT,__text  _WKPreferencesSetFetchAPIEnabled
+0x19d4456fc  __TEXT,__text  _WKPreferencesSetFetchAPIKeepAliveEnabled
+0x19d43fa00  __TEXT,__text  _WKPreferencesSetFileAccessFromFileURLsAllowed
+0x19d43d668  __TEXT,__text  _WKPreferencesSetFixedFontFamily
+0x19d4457d4  __TEXT,__text  _WKPreferencesSetForceFTPDirectoryListings
+0x19d43f5f0  __TEXT,__text  _WKPreferencesSetFullScreenEnabled
+0x19d442e48  __TEXT,__text  _WKPreferencesSetGamepadsEnabled
+0x19d4435d4  __TEXT,__text  _WKPreferencesSetGetUserMediaRequiresFocus
+0x19d4431b4  __TEXT,__text  _WKPreferencesSetHTTPEquivEnabled
+0x19d442020  __TEXT,__text  _WKPreferencesSetHiddenPageCSSAnimationSuspensionEnabled
+0x19d441ee0  __TEXT,__text  _WKPreferencesSetHiddenPageDOMTimerThrottlingAutoIncreases
+0x19d441e78  __TEXT,__text  _WKPreferencesSetHiddenPageDOMTimerThrottlingEnabled
+0x19d445750  __TEXT,__text  _WKPreferencesSetHighlightAPIEnabled
+0x19d4456e4  __TEXT,__text  _WKPreferencesSetHixie76WebSocketProtocolEnabled
+0x19d4455b8  __TEXT,__text  _WKPreferencesSetHyperlinkAuditingEnabled
+0x19d4436a8  __TEXT,__text  _WKPreferencesSetICECandidateFilteringEnabled
+0x19d4456a8  __TEXT,__text  _WKPreferencesSetIgnoreViewportScalingConstraints
+0x19d442d74  __TEXT,__text  _WKPreferencesSetImageControlsEnabled
+0x19d4438fc  __TEXT,__text  _WKPreferencesSetInactiveMediaCaptureStreamRepromptIntervalInMinutes
+0x19d4420f4  __TEXT,__text  _WKPreferencesSetIncrementalRenderingSuppressionTimeout
+0x19d4402dc  __TEXT,__text  _WKPreferencesSetInlineMediaPlaybackRequiresPlaysInlineAttribute
+0x19d441488  __TEXT,__text  _WKPreferencesSetInteractiveFormValidationEnabled
+0x19d43cb60  __TEXT,__text  _WKPreferencesSetInternalDebugFeatureForKey
+0x19d445708  __TEXT,__text  _WKPreferencesSetIntersectionObserverEnabled
+0x19d4407d4  __TEXT,__text  _WKPreferencesSetInvisibleMediaAutoplayPermitted
+0x19d443edc  __TEXT,__text  _WKPreferencesSetIsAccessibilityIsolatedTreeEnabled
+0x19d445714  __TEXT,__text  _WKPreferencesSetIsSecureContextAttributeEnabled
+0x19d445774  __TEXT,__text  _WKPreferencesSetJavaEnabled
+0x19d43f51c  __TEXT,__text  _WKPreferencesSetJavaScriptCanAccessClipboard
+0x19d43d43c  __TEXT,__text  _WKPreferencesSetJavaScriptCanOpenWindowsAutomatically
+0x19d43d02c  __TEXT,__text  _WKPreferencesSetJavaScriptEnabled
+0x19d43d0ec  __TEXT,__text  _WKPreferencesSetJavaScriptMarkupEnabled
+0x19d43e67c  __TEXT,__text  _WKPreferencesSetJavaScriptRuntimeFlags
+0x19d4456b4  __TEXT,__text  _WKPreferencesSetKeygenElementEnabled
+0x19d44457c  __TEXT,__text  _WKPreferencesSetLargeImageAsyncDecodingEnabled
+0x19d444a90  __TEXT,__text  _WKPreferencesSetLegacyEncryptedMediaAPIEnabled
+0x19d4422b0  __TEXT,__text  _WKPreferencesSetLegacyLineLayoutVisualCoverageEnabled
+0x19d444300  __TEXT,__text  _WKPreferencesSetLinkPreloadEnabled
+0x19d43d1c0  __TEXT,__text  _WKPreferencesSetLoadsImagesAutomatically
+0x19d44578c  __TEXT,__text  _WKPreferencesSetLoadsSiteIconsIgnoringImageLoadingPreference
+0x19d43f2a0  __TEXT,__text  _WKPreferencesSetLocalFileContentSniffingEnabled
+0x19d43d294  __TEXT,__text  _WKPreferencesSetLocalStorageEnabled
+0x19d441a54  __TEXT,__text  _WKPreferencesSetLogsPageMessagesToSystemConsoleEnabled
+0x19d4456cc  __TEXT,__text  _WKPreferencesSetLongMousePressEnabled
+0x19d43fef8  __TEXT,__text  _WKPreferencesSetMainContentUserGestureOverrideEnabled
+0x19d440120  __TEXT,__text  _WKPreferencesSetManagedMediaSourceHighThreshold
+0x19d440038  __TEXT,__text  _WKPreferencesSetManagedMediaSourceLowThreshold
+0x19d43de78  __TEXT,__text  _WKPreferencesSetMathFontFamily
+0x19d444ca0  __TEXT,__text  _WKPreferencesSetMediaCapabilitiesEnabled
+0x19d44383c  __TEXT,__text  _WKPreferencesSetMediaCaptureRequiresSecureConnection
+0x19d4448cc  __TEXT,__text  _WKPreferencesSetMediaContentTypesRequiringHardwareSupport
+0x19d440558  __TEXT,__text  _WKPreferencesSetMediaControlsScaleWithPageZoom
+0x19d44252c  __TEXT,__text  _WKPreferencesSetMediaDevicesEnabled
+0x19d440208  __TEXT,__text  _WKPreferencesSetMediaPlaybackAllowsInline
+0x19d43fc7c  __TEXT,__text  _WKPreferencesSetMediaPlaybackRequiresUserGesture
+0x19d4443d4  __TEXT,__text  _WKPreferencesSetMediaPreloadingEnabled
+0x19d4427a8  __TEXT,__text  _WKPreferencesSetMediaSourceEnabled
+0x19d4457c8  __TEXT,__text  _WKPreferencesSetMediaStreamEnabled
+0x19d4447f8  __TEXT,__text  _WKPreferencesSetMediaUserGestureInheritsFromDocument
+0x19d445798  __TEXT,__text  _WKPreferencesSetMenuItemElementEnabled
+0x19d4430e0  __TEXT,__text  _WKPreferencesSetMetaRefreshEnabled
+0x19d43e1b0  __TEXT,__text  _WKPreferencesSetMinimumFontSize
+0x19d442f1c  __TEXT,__text  _WKPreferencesSetMinimumZoomFontSize
+0x19d443514  __TEXT,__text  _WKPreferencesSetMockCaptureDevicesEnabled
+0x19d440988  __TEXT,__text  _WKPreferencesSetMockScrollbarsEnabled
+0x19d43edd0  __TEXT,__text  _WKPreferencesSetNeedsSiteSpecificQuirks
+0x19d43fba8  __TEXT,__text  _WKPreferencesSetNeedsStorageAccessFromFileURLsQuirk
+0x19d4456c0  __TEXT,__text  _WKPreferencesSetNewBlockInsideInlineModelEnabled
+0x19d4410fc  __TEXT,__text  _WKPreferencesSetNotificationsEnabled
+0x19d441630  __TEXT,__text  _WKPreferencesSetPDFPluginEnabled
+0x19d43f374  __TEXT,__text  _WKPreferencesSetPageCacheEnabled
+0x19d4455f4  __TEXT,__text  _WKPreferencesSetPageCacheSupportsPlugins
+0x19d441b28  __TEXT,__text  _WKPreferencesSetPageVisibilityBasedProcessSuppressionEnabled
+0x19d445780  __TEXT,__text  _WKPreferencesSetPaginateDuringLayoutEnabled
+0x19d44566c  __TEXT,__text  _WKPreferencesSetPaintTimingEnabled
+0x19d442600  __TEXT,__text  _WKPreferencesSetPeerConnectionEnabled
+0x19d43dd20  __TEXT,__text  _WKPreferencesSetPictographFontFamily
+0x19d445624  __TEXT,__text  _WKPreferencesSetPlugInSnapshottingEnabled
+0x19d445630  __TEXT,__text  _WKPreferencesSetPluginSandboxProfilesEnabledForAllPlugins
+0x19d4455dc  __TEXT,__text  _WKPreferencesSetPluginsEnabled
+0x19d445654  __TEXT,__text  _WKPreferencesSetPrimaryPlugInSnapshotDetectionEnabled
+0x19d44569c  __TEXT,__text  _WKPreferencesSetPrivateBrowsingEnabled
+0x19d444e48  __TEXT,__text  _WKPreferencesSetProcessSwapOnNavigationEnabled
+0x19d444f1c  __TEXT,__text  _WKPreferencesSetPunchOutWhiteBackgroundsInDarkMode
+0x19d206894  __TEXT,__text  _WKPreferencesSetQTKitEnabled
+0x19d4457b0  __TEXT,__text  _WKPreferencesSetReferrerPolicyAttributeEnabled
+0x19d44539c  __TEXT,__text  _WKPreferencesSetRemotePlaybackEnabled
+0x19d445678  __TEXT,__text  _WKPreferencesSetRequestAnimationFrameEnabled
+0x19d4454d8  __TEXT,__text  _WKPreferencesSetRequestVideoFrameCallbackEnabled
+0x19d44572c  __TEXT,__text  _WKPreferencesSetResourceTimingEnabled
+0x19d443440  __TEXT,__text  _WKPreferencesSetResourceUsageOverlayVisible
+0x19d4455d0  __TEXT,__text  _WKPreferencesSetRestrictedHTTPResponseAccess
+0x19d43d918  __TEXT,__text  _WKPreferencesSetSansSerifFontFamily
+0x19d44155c  __TEXT,__text  _WKPreferencesSetScrollingPerformanceLoggingEnabled
+0x19d441cd0  __TEXT,__text  _WKPreferencesSetSelectTrailingWhitespaceEnabled
+0x19d43d7c0  __TEXT,__text  _WKPreferencesSetSerifFontFamily
+0x19d4457bc  __TEXT,__text  _WKPreferencesSetServerTimingEnabled
+0x19d442ca0  __TEXT,__text  _WKPreferencesSetServiceControlsEnabled
+0x19d444bcc  __TEXT,__text  _WKPreferencesSetShouldAllowUserInstalledFonts
+0x19d442a24  __TEXT,__text  _WKPreferencesSetShouldConvertPositionStyleOnCopy
+0x19d440f54  __TEXT,__text  _WKPreferencesSetShouldDisplayCaptions
+0x19d440e80  __TEXT,__text  _WKPreferencesSetShouldDisplaySubtitles
+0x19d441028  __TEXT,__text  _WKPreferencesSetShouldDisplayTextDescriptions
+0x19d43f024  __TEXT,__text  _WKPreferencesSetShouldPrintBackgrounds
+0x19d4411d0  __TEXT,__text  _WKPreferencesSetShouldRespectImageOrientation
+0x19d444724  __TEXT,__text  _WKPreferencesSetShouldSuppressKeyboardInputDuringProvisionalNavigation
+0x19d445470  __TEXT,__text  _WKPreferencesSetShouldUseServiceWorkerShortTimeout
+0x19d4408b4  __TEXT,__text  _WKPreferencesSetShowsToolTipOverTruncatedText
+0x19d441da4  __TEXT,__text  _WKPreferencesSetShowsURLsInToolTipsEnabled
+0x19d441bfc  __TEXT,__text  _WKPreferencesSetSmartInsertDeleteEnabled
+0x19d44563c  __TEXT,__text  _WKPreferencesSetSnapshotAllPlugIns
+0x19d44287c  __TEXT,__text  _WKPreferencesSetSourceBufferChangeTypeEnabled
+0x19d4426d4  __TEXT,__text  _WKPreferencesSetSpatialNavigationEnabled
+0x19d43d510  __TEXT,__text  _WKPreferencesSetStandardFontFamily
+0x19d445690  __TEXT,__text  _WKPreferencesSetStorageAccessAPIEnabled
+0x19d4412a4  __TEXT,__text  _WKPreferencesSetStorageBlockingPolicy
+0x19d43cea0  __TEXT,__text  _WKPreferencesSetStringValueForKeyForTesting
+0x19d4455e8  __TEXT,__text  _WKPreferencesSetSubpixelAntialiasedLayerTextEnabled
+0x19d445744  __TEXT,__text  _WKPreferencesSetSubpixelCSSOMElementMetricsEnabled
+0x19d440c04  __TEXT,__text  _WKPreferencesSetSuppressesIncrementalRendering
+0x19d4457a4  __TEXT,__text  _WKPreferencesSetSyntheticEditingCommandsEnabled
+0x19d43ee90  __TEXT,__text  _WKPreferencesSetTabsToLinks
+0x19d442af8  __TEXT,__text  _WKPreferencesSetTelephoneNumberParsingEnabled
+0x19d43e758  __TEXT,__text  _WKPreferencesSetTextAreasAreResizable
+0x19d4417d8  __TEXT,__text  _WKPreferencesSetTextAutosizingEnabled
+0x19d4418ac  __TEXT,__text  _WKPreferencesSetTextAutosizingUsesIdempotentMode
+0x19d4421dc  __TEXT,__text  _WKPreferencesSetThreadedScrollingEnabled
+0x19d43ec28  __TEXT,__text  _WKPreferencesSetTiledScrollingIndicatorVisible
+0x19d43fad4  __TEXT,__text  _WKPreferencesSetTopNavigationToDataURLsAllowed
+0x19d43cdd0  __TEXT,__text  _WKPreferencesSetUInt32ValueForKeyForTesting
+0x19d43f92c  __TEXT,__text  _WKPreferencesSetUniversalAccessFromFileURLsAllowed
+0x19d442458  __TEXT,__text  _WKPreferencesSetUseGiantTiles
+0x19d44335c  __TEXT,__text  _WKPreferencesSetUserInterfaceDirectionPolicy
+0x19d445720  __TEXT,__text  _WKPreferencesSetUserTimingEnabled
+0x19d44525c  __TEXT,__text  _WKPreferencesSetVP9DecoderEnabled
+0x19d43fd50  __TEXT,__text  _WKPreferencesSetVideoPlaybackRequiresUserGesture
+0x19d442950  __TEXT,__text  _WKPreferencesSetViewGestureDebuggingEnabled
+0x19d443004  __TEXT,__text  _WKPreferencesSetVisibleDebugOverlayRegions
+0x19d43f1cc  __TEXT,__text  _WKPreferencesSetWebArchiveDebugModeEnabled
+0x19d440b30  __TEXT,__text  _WKPreferencesSetWebAudioEnabled
+0x19d44062c  __TEXT,__text  _WKPreferencesSetWebAuthenticationEnabled
+0x19d43ecfc  __TEXT,__text  _WKPreferencesSetWebGLEnabled
+0x19d443e08  __TEXT,__text  _WKPreferencesSetWebRTCPlatformCodecsInGPUProcessEnabled
+0x19d44575c  __TEXT,__text  _WKPreferencesSetWebSQLDisabled
+0x19d43f86c  __TEXT,__text  _WKPreferencesSetWebSecurityEnabled
+0x19d443c60  __TEXT,__text  _WKPreferencesSetWebShareEnabled
+0x19d443b8c  __TEXT,__text  _WKPreferencesSetWriteRichTextDataWhenCopyingOrDragging
+0x19d445768  __TEXT,__text  _WKPreferencesSetXSSAuditorEnabled
+0x19d43c858  __TEXT,__text  _WKPreferencesStartBatchingUpdates
+0x1e0d3d160  __DATA_CONST,__const  _WKPreviewActionItemIdentifierAddToReadingList
+0x1e0d3d158  __DATA_CONST,__const  _WKPreviewActionItemIdentifierCopy
+0x1e0d3d150  __DATA_CONST,__const  _WKPreviewActionItemIdentifierOpen
+0x1e0d3d148  __DATA_CONST,__const  _WKPreviewActionItemIdentifierShare
+0x19d445858  __TEXT,__text  _WKProtectionSpaceCopyHost
+0x19cd7ff5c  __TEXT,__text  _WKProtectionSpaceCopyNSURLProtectionSpace
+0x19d4458b4  __TEXT,__text  _WKProtectionSpaceCopyRealm
+0x19d4459dc  __TEXT,__text  _WKProtectionSpaceGetAuthenticationScheme
+0x19d4458f4  __TEXT,__text  _WKProtectionSpaceGetIsProxy
+0x19d445898  __TEXT,__text  _WKProtectionSpaceGetPort
+0x19d445980  __TEXT,__text  _WKProtectionSpaceGetReceivesCredentialSecurely
+0x19d445950  __TEXT,__text  _WKProtectionSpaceGetServerType
+0x19d445850  __TEXT,__text  _WKProtectionSpaceGetTypeID
+0x19d445a24  __TEXT,__text  _WKQueryPermissionResultCallbackCompleteWithDenied
+0x19d445b1c  __TEXT,__text  _WKQueryPermissionResultCallbackCompleteWithGranted
+0x19d445ba0  __TEXT,__text  _WKQueryPermissionResultCallbackCompleteWithPrompt
+0x19d445a1c  __TEXT,__text  _WKQueryPermissionResultCallbackGetTypeID
+0x19d20706c  __TEXT,__text  _WKRectCreate
+0x19d206fb4  __TEXT,__text  _WKRectGetTypeID
+0x19d2071a8  __TEXT,__text  _WKRectGetValue
+0x19d208b34  __TEXT,__text  _WKRelease
+0x19d42fe98  __TEXT,__text  _WKRemoveMockMediaDevice
+0x19d207ad0  __TEXT,__text  _WKRenderLayerCopyElementID
+0x19d207acc  __TEXT,__text  _WKRenderLayerCopyElementTagName
+0x19d207ac8  __TEXT,__text  _WKRenderLayerCopyRendererName
+0x19d207ad8  __TEXT,__text  _WKRenderLayerGetAbsoluteBounds
+0x19d207aec  __TEXT,__text  _WKRenderLayerGetBackingStoreMemoryEstimate
+0x19d207ae8  __TEXT,__text  _WKRenderLayerGetCompositingLayerType
+0x19d207ad4  __TEXT,__text  _WKRenderLayerGetElementClassNames
+0x19d207afc  __TEXT,__text  _WKRenderLayerGetFrameContentsLayer
+0x19d207af0  __TEXT,__text  _WKRenderLayerGetNegativeZOrderList
+0x19d207af4  __TEXT,__text  _WKRenderLayerGetNormalFlowList
+0x19d207af8  __TEXT,__text  _WKRenderLayerGetPositiveZOrderList
+0x19d207ac4  __TEXT,__text  _WKRenderLayerGetRenderer
+0x19d207ac0  __TEXT,__text  _WKRenderLayerGetTypeID
+0x19d207ae0  __TEXT,__text  _WKRenderLayerIsClipped
+0x19d207adc  __TEXT,__text  _WKRenderLayerIsClipping
+0x19d207ae4  __TEXT,__text  _WKRenderLayerIsReflection
+0x19d207b14  __TEXT,__text  _WKRenderObjectCopyElementID
+0x19d207b10  __TEXT,__text  _WKRenderObjectCopyElementTagName
+0x19d207b04  __TEXT,__text  _WKRenderObjectCopyName
+0x19d207b08  __TEXT,__text  _WKRenderObjectCopyTextSnippet
+0x19d207b1c  __TEXT,__text  _WKRenderObjectGetAbsolutePosition
+0x19d207b24  __TEXT,__text  _WKRenderObjectGetChildren
+0x19d207b18  __TEXT,__text  _WKRenderObjectGetElementClassNames
+0x19d207b20  __TEXT,__text  _WKRenderObjectGetFrameRect
+0x19d207b0c  __TEXT,__text  _WKRenderObjectGetTextLength
+0x19d207b00  __TEXT,__text  _WKRenderObjectGetTypeID
+0x19d42ff38  __TEXT,__text  _WKResetMockMediaDevices
+0x19d44df5c  __TEXT,__text  _WKResourceCacheManagerClearCacheForAllOrigins
+0x19d44df58  __TEXT,__text  _WKResourceCacheManagerClearCacheForOrigin
+0x19d44df54  __TEXT,__text  _WKResourceCacheManagerGetCacheOrigins
+0x19d44df4c  __TEXT,__text  _WKResourceCacheManagerGetTypeID
+0x19d208b04  __TEXT,__text  _WKRetain
+0x19d44df68  __TEXT,__text  _WKScriptMessageGetBody
+0x19d44e008  __TEXT,__text  _WKScriptMessageGetFrameInfo
+0x19d44df60  __TEXT,__text  _WKScriptMessageGetTypeID
+0x19d208050  __TEXT,__text  _WKSecurityOriginCopyDatabaseIdentifier
+0x19d208214  __TEXT,__text  _WKSecurityOriginCopyHost
+0x19d2081b4  __TEXT,__text  _WKSecurityOriginCopyProtocol
+0x19d20813c  __TEXT,__text  _WKSecurityOriginCopyToString
+0x19d207ec4  __TEXT,__text  _WKSecurityOriginCreate
+0x19d207c9c  __TEXT,__text  _WKSecurityOriginCreateFromDatabaseIdentifier
+0x19d207b30  __TEXT,__text  _WKSecurityOriginCreateFromString
+0x19d208274  __TEXT,__text  _WKSecurityOriginGetPort
+0x19d207b28  __TEXT,__text  _WKSecurityOriginGetTypeID
+0x19d2082c0  __TEXT,__text  _WKSerializedScriptValueCreate
+0x19d2082c8  __TEXT,__text  _WKSerializedScriptValueDeserialize
+0x19d2082b8  __TEXT,__text  _WKSerializedScriptValueGetTypeID
+0x19d44e170  __TEXT,__text  _WKSessionStateCopyData
+0x19d44e03c  __TEXT,__text  _WKSessionStateCreateFromData
+0x19d44e034  __TEXT,__text  _WKSessionStateGetTypeID
+0x19d42ff88  __TEXT,__text  _WKSetMockMediaDeviceIsEphemeral
+0x19d207014  __TEXT,__text  _WKSizeCreate
+0x19d206fa4  __TEXT,__text  _WKSizeGetTypeID
+0x19d2070d8  __TEXT,__text  _WKSizeGetValue
+0x19ccabf04  __TEXT,__text  _WKStringCopyCFString
+0x19d208a10  __TEXT,__text  _WKStringCopyJSString
+0x19c677810  __TEXT,__text  _WKStringCreateWithCFString
+0x19d20897c  __TEXT,__text  _WKStringCreateWithJSString
+0x19d2082d8  __TEXT,__text  _WKStringCreateWithUTF8CString
+0x19d208368  __TEXT,__text  _WKStringCreateWithUTF8CStringWithLength
+0x19d208440  __TEXT,__text  _WKStringGetCharacters
+0x19d208414  __TEXT,__text  _WKStringGetLength
+0x19d2085bc  __TEXT,__text  _WKStringGetMaximumUTF8CStringSize
+0x19d2082d0  __TEXT,__text  _WKStringGetTypeID
+0x19d2085f0  __TEXT,__text  _WKStringGetUTF8CString
+0x19d208690  __TEXT,__text  _WKStringGetUTF8CStringNonStrict
+0x19d2083e0  __TEXT,__text  _WKStringIsEmpty
+0x19d208728  __TEXT,__text  _WKStringIsEqual
+0x19d2087bc  __TEXT,__text  _WKStringIsEqualToUTF8CString
+0x19d208898  __TEXT,__text  _WKStringIsEqualToUTF8CStringIgnoringCase
+0x19d44e1b0  __TEXT,__text  _WKTextCheckerSetTestingMode
+0x19d207994  __TEXT,__text  _WKUInt64Create
+0x19d20798c  __TEXT,__text  _WKUInt64GetTypeID
+0x19d2079e8  __TEXT,__text  _WKUInt64GetValue
+0x19ccd51e8  __TEXT,__text  _WKURLCopyCFURL
+0x19d208e58  __TEXT,__text  _WKURLCopyHostName
+0x19d209080  __TEXT,__text  _WKURLCopyLastPathComponent
+0x19d208fc8  __TEXT,__text  _WKURLCopyPath
+0x19d208f10  __TEXT,__text  _WKURLCopyScheme
+0x19d208d88  __TEXT,__text  _WKURLCopyString
+0x19d208c64  __TEXT,__text  _WKURLCreateWithBaseURL
+0x19ccd50ac  __TEXT,__text  _WKURLCreateWithCFURL
+0x19d208b5c  __TEXT,__text  _WKURLCreateWithUTF8CString
+0x19d208bec  __TEXT,__text  _WKURLCreateWithUTF8String
+0x19d208b54  __TEXT,__text  _WKURLGetTypeID
+0x19d208dc8  __TEXT,__text  _WKURLIsEqual
+0x19d209268  __TEXT,__text  _WKURLRequestCopyFirstPartyForCookies
+0x19d2092b4  __TEXT,__text  _WKURLRequestCopyHTTPMethod
+0x19ccd5484  __TEXT,__text  _WKURLRequestCopyNSURLRequest
+0x19d2092f8  __TEXT,__text  _WKURLRequestCopySettingHTTPBody
+0x19d20921c  __TEXT,__text  _WKURLRequestCopyURL
+0x19c80ca3c  __TEXT,__text  _WKURLRequestCreateWithNSURLRequest
+0x19d209140  __TEXT,__text  _WKURLRequestCreateWithWKURL
+0x19d209138  __TEXT,__text  _WKURLRequestGetTypeID
+0x19d2094d4  __TEXT,__text  _WKURLRequestSetDefaultTimeoutInterval
+0x19d20952c  __TEXT,__text  _WKURLResponseCopyMIMEType
+0x19ccd55a4  __TEXT,__text  _WKURLResponseCopyNSURLResponse
+0x19d209590  __TEXT,__text  _WKURLResponseCopySuggestedFilename
+0x19d2094e0  __TEXT,__text  _WKURLResponseCopyURL
+0x19ccd54e8  __TEXT,__text  _WKURLResponseCreateWithNSURLResponse
+0x19d209628  __TEXT,__text  _WKURLResponseGetExpectedContentLength
+0x19d2094d8  __TEXT,__text  _WKURLResponseGetTypeID
+0x19d209570  __TEXT,__text  _WKURLResponseHTTPStatusCode
+0x19d209608  __TEXT,__text  _WKURLResponseIsAttachment
+0x19d44e4bc  __TEXT,__text  _WKUserContentControllerAddScriptMessageHandler
+0x19d44e370  __TEXT,__text  _WKUserContentControllerAddUserContentFilter
+0x19d44e228  __TEXT,__text  _WKUserContentControllerAddUserScript
+0x19d44e1e8  __TEXT,__text  _WKUserContentControllerCopyUserScripts
+0x19d44e1bc  __TEXT,__text  _WKUserContentControllerCreate
+0x19d44e1b4  __TEXT,__text  _WKUserContentControllerGetTypeID
+0x19d44e454  __TEXT,__text  _WKUserContentControllerRemoveAllUserContentFilters
+0x19d44e65c  __TEXT,__text  _WKUserContentControllerRemoveAllUserMessageHandlers
+0x19d44e318  __TEXT,__text  _WKUserContentControllerRemoveAllUserScripts
+0x19d44e764  __TEXT,__text  _WKUserContentExtensionStoreCompile
+0x19d44e6b4  __TEXT,__text  _WKUserContentExtensionStoreCreate
+0x19d44e6ac  __TEXT,__text  _WKUserContentExtensionStoreGetTypeID
+0x19d44e974  __TEXT,__text  _WKUserContentExtensionStoreLookup
+0x19d44ea94  __TEXT,__text  _WKUserContentExtensionStoreRemove
+0x19d2096e4  __TEXT,__text  _WKUserContentURLPatternCopyHost
+0x19d209798  __TEXT,__text  _WKUserContentURLPatternCopyScheme
+0x19d209650  __TEXT,__text  _WKUserContentURLPatternCreate
+0x19d209648  __TEXT,__text  _WKUserContentURLPatternGetTypeID
+0x19d2097d8  __TEXT,__text  _WKUserContentURLPatternIsValid
+0x19d2098f8  __TEXT,__text  _WKUserContentURLPatternMatchesSubdomains
+0x19d2097fc  __TEXT,__text  _WKUserContentURLPatternMatchesURL
+0x19d44ebbc  __TEXT,__text  _WKUserMediaPermissionRequestAllow
+0x19d44eeac  __TEXT,__text  _WKUserMediaPermissionRequestAudioDeviceUIDs
+0x19d44ed68  __TEXT,__text  _WKUserMediaPermissionRequestDeny
+0x19d44ebb4  __TEXT,__text  _WKUserMediaPermissionRequestGetTypeID
+0x19d44ef90  __TEXT,__text  _WKUserMediaPermissionRequestRequiresCameraCapture
+0x19d44efcc  __TEXT,__text  _WKUserMediaPermissionRequestRequiresDisplayCapture
+0x19d44eff4  __TEXT,__text  _WKUserMediaPermissionRequestRequiresMicrophoneCapture
+0x19d44edc8  __TEXT,__text  _WKUserMediaPermissionRequestVideoDeviceUIDs
+0x19d44f228  __TEXT,__text  _WKUserScriptCopySource
+0x19d44f020  __TEXT,__text  _WKUserScriptCreateWithSource
+0x19d44f268  __TEXT,__text  _WKUserScriptGetInjectionTime
+0x19d44f284  __TEXT,__text  _WKUserScriptGetMainFrameOnly
+0x19d44f018  __TEXT,__text  _WKUserScriptGetTypeID
+0x19d20a29c  __TEXT,__text  _WKWebArchiveCopyData
+0x19d20a0fc  __TEXT,__text  _WKWebArchiveCopyMainResource
+0x19d20a238  __TEXT,__text  _WKWebArchiveCopySubframeArchives
+0x19d20a1d4  __TEXT,__text  _WKWebArchiveCopySubresources
+0x19d209e2c  __TEXT,__text  _WKWebArchiveCreate
+0x19d209ff4  __TEXT,__text  _WKWebArchiveCreateFromRange
+0x19d209f88  __TEXT,__text  _WKWebArchiveCreateWithData
+0x19d209e24  __TEXT,__text  _WKWebArchiveGetTypeID
+0x19d20f65c  __TEXT,__text  _WKWebArchiveResourceCopyData
+0x19d20f754  __TEXT,__text  _WKWebArchiveResourceCopyMIMEType
+0x19d20f7d8  __TEXT,__text  _WKWebArchiveResourceCopyTextEncoding
+0x19d20f6c8  __TEXT,__text  _WKWebArchiveResourceCopyURL
+0x19d20f4bc  __TEXT,__text  _WKWebArchiveResourceCreate
+0x19d20f4b4  __TEXT,__text  _WKWebArchiveResourceGetTypeID
+0x1e0d3d140  __DATA_CONST,__const  _WKWebExtensionContextDeniedPermissionMatchPatternsWereRemovedNotification
+0x1e0d3d138  __DATA_CONST,__const  _WKWebExtensionContextDeniedPermissionsWereRemovedNotification
+0x1e0d3d130  __DATA_CONST,__const  _WKWebExtensionContextErrorDomain
+0x1e0d3d128  __DATA_CONST,__const  _WKWebExtensionContextErrorsDidUpdateNotification
+0x1e0d3d120  __DATA_CONST,__const  _WKWebExtensionContextGrantedPermissionMatchPatternsWereRemovedNotification
+0x1e0d3d118  __DATA_CONST,__const  _WKWebExtensionContextGrantedPermissionsWereRemovedNotification
+0x1e0d3d110  __DATA_CONST,__const  _WKWebExtensionContextNotificationUserInfoKeyMatchPatterns
+0x1e0d3d108  __DATA_CONST,__const  _WKWebExtensionContextNotificationUserInfoKeyPermissions
+0x1e0d3d100  __DATA_CONST,__const  _WKWebExtensionContextPermissionMatchPatternsWereDeniedNotification
+0x1e0d3d0f8  __DATA_CONST,__const  _WKWebExtensionContextPermissionMatchPatternsWereGrantedNotification
+0x1e0d3d0f0  __DATA_CONST,__const  _WKWebExtensionContextPermissionsWereDeniedNotification
+0x1e0d3d0e8  __DATA_CONST,__const  _WKWebExtensionContextPermissionsWereGrantedNotification
+0x1e0d3d0e0  __DATA_CONST,__const  _WKWebExtensionDataRecordErrorDomain
+0x1e0d3d0d8  __DATA_CONST,__const  _WKWebExtensionDataTypeLocal
+0x1e0d3d0d0  __DATA_CONST,__const  _WKWebExtensionDataTypeSession
+0x1e0d3d0c8  __DATA_CONST,__const  _WKWebExtensionDataTypeSynchronized
+0x1e0d3d0c0  __DATA_CONST,__const  _WKWebExtensionErrorDomain
+0x1e0d3d0b8  __DATA_CONST,__const  _WKWebExtensionMatchPatternErrorDomain
+0x1e0d3d0b0  __DATA_CONST,__const  _WKWebExtensionMessagePortErrorDomain
+0x1e0d3d0a8  __DATA_CONST,__const  _WKWebExtensionPermissionActiveTab
+0x1e0d3d0a0  __DATA_CONST,__const  _WKWebExtensionPermissionAlarms
+0x1e0d3d098  __DATA_CONST,__const  _WKWebExtensionPermissionBookmarks
+0x1e0d3d090  __DATA_CONST,__const  _WKWebExtensionPermissionClipboardWrite
+0x1e0d3d088  __DATA_CONST,__const  _WKWebExtensionPermissionContextMenus
+0x1e0d3d080  __DATA_CONST,__const  _WKWebExtensionPermissionCookies
+0x1e0d3d078  __DATA_CONST,__const  _WKWebExtensionPermissionDeclarativeNetRequest
+0x1e0d3d070  __DATA_CONST,__const  _WKWebExtensionPermissionDeclarativeNetRequestFeedback
+0x1e0d3d068  __DATA_CONST,__const  _WKWebExtensionPermissionDeclarativeNetRequestWithHostAccess
+0x1e0d3d060  __DATA_CONST,__const  _WKWebExtensionPermissionMenus
+0x1e0d3d058  __DATA_CONST,__const  _WKWebExtensionPermissionNativeMessaging
+0x1e0d3d050  __DATA_CONST,__const  _WKWebExtensionPermissionNotifications
+0x1e0d3d048  __DATA_CONST,__const  _WKWebExtensionPermissionScripting
+0x1e0d3d040  __DATA_CONST,__const  _WKWebExtensionPermissionSidePanel
+0x1e0d3d038  __DATA_CONST,__const  _WKWebExtensionPermissionStorage
+0x1e0d3d030  __DATA_CONST,__const  _WKWebExtensionPermissionTabs
+0x1e0d3d028  __DATA_CONST,__const  _WKWebExtensionPermissionUnlimitedStorage
+0x1e0d3d020  __DATA_CONST,__const  _WKWebExtensionPermissionWebNavigation
+0x1e0d3d018  __DATA_CONST,__const  _WKWebExtensionPermissionWebRequest
+0x19d509394  __TEXT,__text  _WKWebProcessMain
+0x19d8df2a8  __TEXT,__text  _WKWebPushDaemonMain
+0x19d8df2ac  __TEXT,__text  _WKWebPushToolMain
+0x19d455eb0  __TEXT,__text  _WKWebsiteDataStoreClearAllDeviceOrientationPermissions
+0x19d45630c  __TEXT,__text  _WKWebsiteDataStoreClearAppBoundSession
+0x19d456534  __TEXT,__text  _WKWebsiteDataStoreClearBundleIdentifierInNetworkProcess
+0x19d450e54  __TEXT,__text  _WKWebsiteDataStoreClearCrossOriginPreflightResultCacheForTesting
+0x19d455ef4  __TEXT,__text  _WKWebsiteDataStoreClearPrivateClickMeasurementsThroughWebsiteDataRemoval
+0x19d45618c  __TEXT,__text  _WKWebsiteDataStoreClearStorage
+0x19d4505b4  __TEXT,__text  _WKWebsiteDataStoreConfigurationClearOriginQuotaRatio
+0x19d4505f4  __TEXT,__text  _WKWebsiteDataStoreConfigurationClearTotalQuotaRatio
+0x19d44fda0  __TEXT,__text  _WKWebsiteDataStoreConfigurationCopyCacheStorageDirectory
+0x19d450278  __TEXT,__text  _WKWebsiteDataStoreConfigurationCopyCookieStorageFile
+0x19d44fe98  __TEXT,__text  _WKWebsiteDataStoreConfigurationCopyGeneralStorageDirectory
+0x19d44fab8  __TEXT,__text  _WKWebsiteDataStoreConfigurationCopyIndexedDBDatabaseDirectory
+0x19d44fbb0  __TEXT,__text  _WKWebsiteDataStoreConfigurationCopyLocalStorageDirectory
+0x19d44ff90  __TEXT,__text  _WKWebsiteDataStoreConfigurationCopyMediaKeysStorageDirectory
+0x19d44f94c  __TEXT,__text  _WKWebsiteDataStoreConfigurationCopyNetworkCacheDirectory
+0x19d450480  __TEXT,__text  _WKWebsiteDataStoreConfigurationCopyPCMMachServiceName
+0x19d450088  __TEXT,__text  _WKWebsiteDataStoreConfigurationCopyResourceLoadStatisticsDirectory
+0x19d45066c  __TEXT,__text  _WKWebsiteDataStoreConfigurationCopyResourceMonitorThrottlerDirectory
+0x19d450180  __TEXT,__text  _WKWebsiteDataStoreConfigurationCopyServiceWorkerRegistrationDirectory
+0x19d44fca8  __TEXT,__text  _WKWebsiteDataStoreConfigurationCopyWebSQLDatabaseDirectory
+0x19d44f918  __TEXT,__text  _WKWebsiteDataStoreConfigurationCreate
+0x19d4503b4  __TEXT,__text  _WKWebsiteDataStoreConfigurationGetNetworkCacheSpeculativeValidationEnabled
+0x19d450370  __TEXT,__text  _WKWebsiteDataStoreConfigurationGetPerOriginStorageQuota
+0x19d45043c  __TEXT,__text  _WKWebsiteDataStoreConfigurationGetStaleWhileRevalidateEnabled
+0x19d4503f8  __TEXT,__text  _WKWebsiteDataStoreConfigurationGetTestingSessionEnabled
+0x19d44f910  __TEXT,__text  _WKWebsiteDataStoreConfigurationGetTypeID
+0x19d450594  __TEXT,__text  _WKWebsiteDataStoreConfigurationHasOriginQuotaRatio
+0x19d4505d4  __TEXT,__text  _WKWebsiteDataStoreConfigurationHasTotalQuotaRatio
+0x19d450614  __TEXT,__text  _WKWebsiteDataStoreConfigurationOverridePersistentNotificationMinimumLifetimeForTesting
+0x19d44fde0  __TEXT,__text  _WKWebsiteDataStoreConfigurationSetCacheStorageDirectory
+0x19d4502b8  __TEXT,__text  _WKWebsiteDataStoreConfigurationSetCookieStorageFile
+0x19d44fed8  __TEXT,__text  _WKWebsiteDataStoreConfigurationSetGeneralStorageDirectory
+0x19d44faf8  __TEXT,__text  _WKWebsiteDataStoreConfigurationSetIndexedDBDatabaseDirectory
+0x19d44fbf0  __TEXT,__text  _WKWebsiteDataStoreConfigurationSetLocalStorageDirectory
+0x19d44ffd0  __TEXT,__text  _WKWebsiteDataStoreConfigurationSetMediaKeysStorageDirectory
+0x19d44fa00  __TEXT,__text  _WKWebsiteDataStoreConfigurationSetNetworkCacheDirectory
+0x19d4503d0  __TEXT,__text  _WKWebsiteDataStoreConfigurationSetNetworkCacheSpeculativeValidationEnabled
+0x19d45063c  __TEXT,__text  _WKWebsiteDataStoreConfigurationSetOverridePersistentNotificationMinimumLifetimeForTesting
+0x19d4504c0  __TEXT,__text  _WKWebsiteDataStoreConfigurationSetPCMMachServiceName
+0x19d45038c  __TEXT,__text  _WKWebsiteDataStoreConfigurationSetPerOriginStorageQuota
+0x19d4500c8  __TEXT,__text  _WKWebsiteDataStoreConfigurationSetResourceLoadStatisticsDirectory
+0x19d4506ac  __TEXT,__text  _WKWebsiteDataStoreConfigurationSetResourceMonitorThrottlerDirectory
+0x19d4501c0  __TEXT,__text  _WKWebsiteDataStoreConfigurationSetServiceWorkerRegistrationDirectory
+0x19d450458  __TEXT,__text  _WKWebsiteDataStoreConfigurationSetStaleWhileRevalidateEnabled
+0x19d450414  __TEXT,__text  _WKWebsiteDataStoreConfigurationSetTestingSessionEnabled
+0x19d44fce8  __TEXT,__text  _WKWebsiteDataStoreConfigurationSetWebSQLDatabaseDirectory
+0x19d4507a8  __TEXT,__text  _WKWebsiteDataStoreCreateNonPersistentDataStore
+0x19d4507e0  __TEXT,__text  _WKWebsiteDataStoreCreateWithConfiguration
+0x19d450ce0  __TEXT,__text  _WKWebsiteDataStoreDoesStatisticsDomainIDExistInDatabase
+0x19d451c60  __TEXT,__text  _WKWebsiteDataStoreDumpResourceLoadStatistics
+0x19d456b74  __TEXT,__text  _WKWebsiteDataStoreFlushNetworkProcessIPC
+0x19d4565e8  __TEXT,__text  _WKWebsiteDataStoreGetAllStorageAccessEntries
+0x19cd80030  __TEXT,__text  _WKWebsiteDataStoreGetDataStore
+0x19d45076c  __TEXT,__text  _WKWebsiteDataStoreGetDefaultDataStore
+0x19d455d10  __TEXT,__text  _WKWebsiteDataStoreGetFetchCacheOrigins
+0x19d455ddc  __TEXT,__text  _WKWebsiteDataStoreGetFetchCacheSizeForOrigin
+0x19d451160  __TEXT,__text  _WKWebsiteDataStoreGetHTTPCookieStore
+0x19d4508c8  __TEXT,__text  _WKWebsiteDataStoreGetNetworkProcessIdentifier
+0x19d450fb4  __TEXT,__text  _WKWebsiteDataStoreGetResourceLoadStatisticsEnabled
+0x19d450764  __TEXT,__text  _WKWebsiteDataStoreGetTypeID
+0x19d4545d4  __TEXT,__text  _WKWebsiteDataStoreHasAppBoundSession
+0x19d450f00  __TEXT,__text  _WKWebsiteDataStoreIsStatisticsEphemeral
+0x19d452ad4  __TEXT,__text  _WKWebsiteDataStoreIsStatisticsGrandfathered
+0x19d4526a4  __TEXT,__text  _WKWebsiteDataStoreIsStatisticsHasHadUserInteraction
+0x19d4527dc  __TEXT,__text  _WKWebsiteDataStoreIsStatisticsOnlyInDatabaseOnce
+0x19d451d24  __TEXT,__text  _WKWebsiteDataStoreIsStatisticsPrevalentResource
+0x19d45231c  __TEXT,__text  _WKWebsiteDataStoreIsStatisticsRegisteredAsRedirectingTo
+0x19d452158  __TEXT,__text  _WKWebsiteDataStoreIsStatisticsRegisteredAsSubFrameUnder
+0x19d451f94  __TEXT,__text  _WKWebsiteDataStoreIsStatisticsRegisteredAsSubresourceUnder
+0x19d451e5c  __TEXT,__text  _WKWebsiteDataStoreIsStatisticsVeryPrevalentResource
+0x19d4563c0  __TEXT,__text  _WKWebsiteDataStoreReinitializeAppBoundDomains
+0x19d455550  __TEXT,__text  _WKWebsiteDataStoreRemoveAllFetchCaches
+0x19d455ad0  __TEXT,__text  _WKWebsiteDataStoreRemoveAllIndexedDatabases
+0x19d455c50  __TEXT,__text  _WKWebsiteDataStoreRemoveAllServiceWorkerRegistrations
+0x19d455790  __TEXT,__text  _WKWebsiteDataStoreRemoveFetchCacheForOrigin
+0x19d450928  __TEXT,__text  _WKWebsiteDataStoreRemoveITPDataForDomain
+0x19d455b90  __TEXT,__text  _WKWebsiteDataStoreRemoveLocalStorage
+0x19d4556d0  __TEXT,__text  _WKWebsiteDataStoreRemoveMemoryCaches
+0x19d455610  __TEXT,__text  _WKWebsiteDataStoreRemoveNetworkCache
+0x19d456024  __TEXT,__text  _WKWebsiteDataStoreResetQuota
+0x19d4566c0  __TEXT,__text  _WKWebsiteDataStoreResetResourceMonitorThrottler
+0x19d450e04  __TEXT,__text  _WKWebsiteDataStoreResetServiceWorkerFetchTimeoutForTesting
+0x19d4560d8  __TEXT,__text  _WKWebsiteDataStoreResetStoragePersistedState
+0x19d4511c0  __TEXT,__text  _WKWebsiteDataStoreSetAllowsAnySSLCertificateForWebSocketTesting
+0x19d454d20  __TEXT,__text  _WKWebsiteDataStoreSetAppBoundDomainsForTesting
+0x19d455fb0  __TEXT,__text  _WKWebsiteDataStoreSetCacheModelSynchronouslyForTesting
+0x19d454f08  __TEXT,__text  _WKWebsiteDataStoreSetManagedDomainsForTesting
+0x19d456250  __TEXT,__text  _WKWebsiteDataStoreSetOriginQuotaRatioEnabled
+0x19d455eac  __TEXT,__text  _WKWebsiteDataStoreSetPerOriginStorageQuota
+0x19d451050  __TEXT,__text  _WKWebsiteDataStoreSetResourceLoadStatisticsDebugMode
+0x19d4511c4  __TEXT,__text  _WKWebsiteDataStoreSetResourceLoadStatisticsDebugModeWithCompletionHandler
+0x19d450ea4  __TEXT,__text  _WKWebsiteDataStoreSetResourceLoadStatisticsEnabled
+0x19d454a24  __TEXT,__text  _WKWebsiteDataStoreSetResourceLoadStatisticsFirstPartyHostCNAMEDomainForTesting
+0x19d454830  __TEXT,__text  _WKWebsiteDataStoreSetResourceLoadStatisticsFirstPartyWebsiteDataRemovalModeForTesting
+0x19d451280  __TEXT,__text  _WKWebsiteDataStoreSetResourceLoadStatisticsPrevalentResourceForDebugMode
+0x19d454744  __TEXT,__text  _WKWebsiteDataStoreSetResourceLoadStatisticsShouldBlockThirdPartyCookiesForTesting
+0x19d454688  __TEXT,__text  _WKWebsiteDataStoreSetResourceLoadStatisticsShouldDowngradeReferrerForTesting
+0x19d454be8  __TEXT,__text  _WKWebsiteDataStoreSetResourceLoadStatisticsThirdPartyCNAMEDomainForTesting
+0x19d453a24  __TEXT,__text  _WKWebsiteDataStoreSetResourceLoadStatisticsTimeAdvanceForTesting
+0x19d4548ec  __TEXT,__text  _WKWebsiteDataStoreSetResourceLoadStatisticsToSameSiteStrictCookiesForTesting
+0x19d450d9c  __TEXT,__text  _WKWebsiteDataStoreSetServiceWorkerFetchTimeoutForTesting
+0x19d4543d8  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsCacheMaxAgeCap
+0x19d45362c  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsCrossSiteLoadWithLinkDecoration
+0x19d451798  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsExpiredStatistic
+0x19d4529a0  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsGrandfathered
+0x19d453cfc  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsGrandfatheringTime
+0x19d4524e0  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsHasHadUserInteraction
+0x19d453ae8  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsIsRunningTest
+0x19d4513b8  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsLastSeen
+0x19d453dac  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsMaxStatisticsEntries
+0x19d451500  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsMergeStatistic
+0x19d453c4c  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsMinimumTimeBetweenDataRecordsRemoval
+0x19d451900  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsPrevalentResource
+0x19d453e58  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsPruneEntriesDownTo
+0x19d453ba4  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsShouldClassifyResourcesBeforeDataRecordsRemoval
+0x19d452c0c  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsSubframeUnderTopFrameOrigin
+0x19d452dbc  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsSubresourceUnderTopFrameOrigin
+0x19d45311c  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsSubresourceUniqueRedirectFrom
+0x19d452f6c  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsSubresourceUniqueRedirectTo
+0x19d4537f8  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsTimeToLiveUserInteraction
+0x19d45347c  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsTopFrameUniqueRedirectFrom
+0x19d4532cc  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsTopFrameUniqueRedirectTo
+0x19d451ab0  __TEXT,__text  _WKWebsiteDataStoreSetStatisticsVeryPrevalentResource
+0x19d4569dc  __TEXT,__text  _WKWebsiteDataStoreSetStorageAccessForTesting
+0x19d456774  __TEXT,__text  _WKWebsiteDataStoreSetStorageAccessPermissionForTesting
+0x19d453f04  __TEXT,__text  _WKWebsiteDataStoreStatisticsClearInMemoryAndPersistentStore
+0x19d453fbc  __TEXT,__text  _WKWebsiteDataStoreStatisticsClearInMemoryAndPersistentStoreModifiedSinceHours
+0x19d45409c  __TEXT,__text  _WKWebsiteDataStoreStatisticsClearThroughWebsiteDataRemoval
+0x19d454158  __TEXT,__text  _WKWebsiteDataStoreStatisticsDeleteCookiesForTesting
+0x19d45449c  __TEXT,__text  _WKWebsiteDataStoreStatisticsHasIsolatedSession
+0x19d4542a0  __TEXT,__text  _WKWebsiteDataStoreStatisticsHasLocalStorage
+0x19d4538bc  __TEXT,__text  _WKWebsiteDataStoreStatisticsProcessStatisticsAndDataRecords
+0x19d4550f0  __TEXT,__text  _WKWebsiteDataStoreStatisticsResetToConsistentState
+0x19d453970  __TEXT,__text  _WKWebsiteDataStoreStatisticsUpdateCookieBlocking
+0x19d4510ac  __TEXT,__text  _WKWebsiteDataStoreSyncLocalStorage
+0x19d450878  __TEXT,__text  _WKWebsiteDataStoreTerminateNetworkProcess
+0x19d45642c  __TEXT,__text  _WKWebsiteDataStoreUpdateBundleIdentifierInNetworkProcess
+0x1e0d3d010  __DATA_CONST,__const  _WKWebsiteDataTypeCookies
+0x1e0d3d008  __DATA_CONST,__const  _WKWebsiteDataTypeDiskCache
+0x1e0d3d000  __DATA_CONST,__const  _WKWebsiteDataTypeFetchCache
+0x1e0d3cff8  __DATA_CONST,__const  _WKWebsiteDataTypeFileSystem
+0x1e0d3cff0  __DATA_CONST,__const  _WKWebsiteDataTypeHashSalt
+0x1e0d3cfe8  __DATA_CONST,__const  _WKWebsiteDataTypeIndexedDBDatabases
+0x1e0d3cfe0  __DATA_CONST,__const  _WKWebsiteDataTypeLocalStorage
+0x1e0d3cfd8  __DATA_CONST,__const  _WKWebsiteDataTypeMediaKeys
+0x1e0d3cfd0  __DATA_CONST,__const  _WKWebsiteDataTypeMemoryCache
+0x1e0d3cfc8  __DATA_CONST,__const  _WKWebsiteDataTypeOfflineWebApplicationCache
+0x1e0d3cfc0  __DATA_CONST,__const  _WKWebsiteDataTypeScreenTime
+0x1e0d3cfb8  __DATA_CONST,__const  _WKWebsiteDataTypeSearchFieldRecentSearches
+0x1e0d3cfb0  __DATA_CONST,__const  _WKWebsiteDataTypeServiceWorkerRegistrations
+0x1e0d3cfa8  __DATA_CONST,__const  _WKWebsiteDataTypeSessionStorage
+0x1e0d3cfa0  __DATA_CONST,__const  _WKWebsiteDataTypeWebSQLDatabases
+0x19d456d70  __TEXT,__text  _WKWebsitePoliciesCopyCustomHeaderFields
+0x19d456c84  __TEXT,__text  _WKWebsitePoliciesCreate
+0x19d456da4  __TEXT,__text  _WKWebsitePoliciesGetAllowedAutoplayQuirks
+0x19d456f2c  __TEXT,__text  _WKWebsitePoliciesGetAllowsJSHandleCreationInPageWorld
+0x19d456dc4  __TEXT,__text  _WKWebsitePoliciesGetAutoplayPolicy
+0x19d456d00  __TEXT,__text  _WKWebsitePoliciesGetContentBlockersEnabled
+0x19d456e84  __TEXT,__text  _WKWebsitePoliciesGetDataStore
+0x19d456d48  __TEXT,__text  _WKWebsitePoliciesGetGlobalPrivacyControlEnabled
+0x19d456e24  __TEXT,__text  _WKWebsitePoliciesGetPopUpPolicy
+0x19d456c7c  __TEXT,__text  _WKWebsitePoliciesGetTypeID
+0x19d456d7c  __TEXT,__text  _WKWebsitePoliciesSetAllowedAutoplayQuirks
+0x19d456f48  __TEXT,__text  _WKWebsitePoliciesSetAllowsJSHandleCreationInPageWorld
+0x19d456df0  __TEXT,__text  _WKWebsitePoliciesSetAutoplayPolicy
+0x19d456cb0  __TEXT,__text  _WKWebsitePoliciesSetContentBlockersEnabled
+0x19d456d78  __TEXT,__text  _WKWebsitePoliciesSetCustomHeaderFields
+0x19d456ec4  __TEXT,__text  _WKWebsitePoliciesSetDataStore
+0x19d456d1c  __TEXT,__text  _WKWebsitePoliciesSetGlobalPrivacyControlEnabled
+0x19d456e50  __TEXT,__text  _WKWebsitePoliciesSetPopUpPolicy
+0x19d456f70  __TEXT,__text  _WKWindowFeaturesGetTypeID
+0x19d8df2a0  __TEXT,__text  _WKXPCServiceMain
+0x19c6565cc  __TEXT,__text  _WebContentServiceInitializer
+0x19d69efc8  __TEXT,__text  __WKAccessibilityAllowAuthenticationForTesting
+0x19d69ed84  __TEXT,__text  __WKAccessibilityRootObjectForTesting
+0x1e0d3cf98  __DATA_CONST,__const  __WKAllowNetworkLoadsOption
+0x19d69eb90  __TEXT,__text  __WKBundleFrameGenerateTestReport
+0x1e0d3cf90  __DATA_CONST,__const  __WKJavaScriptExceptionColumnNumberErrorKey
+0x1e0d3cf88  __DATA_CONST,__const  __WKJavaScriptExceptionLineNumberErrorKey
+0x1e0d3cf80  __DATA_CONST,__const  __WKJavaScriptExceptionMessageErrorKey
+0x1e0d3cf78  __DATA_CONST,__const  __WKJavaScriptExceptionSourceURLErrorKey
+0x1e0d3cf70  __DATA_CONST,__const  __WKLegacyErrorDomain
+0x1e0d3cf68  __DATA_CONST,__const  __WKLocalAuthenticatorCredentialCreationDateKey
+0x1e0d3cf60  __DATA_CONST,__const  __WKLocalAuthenticatorCredentialDisplayNameKey
+0x1e0d3cf58  __DATA_CONST,__const  __WKLocalAuthenticatorCredentialGroupKey
+0x1e0d3cf50  __DATA_CONST,__const  __WKLocalAuthenticatorCredentialIDKey
+0x1e0d3cf48  __DATA_CONST,__const  __WKLocalAuthenticatorCredentialLastModificationDateKey
+0x1e0d3cf40  __DATA_CONST,__const  __WKLocalAuthenticatorCredentialLastUsedDateKey
+0x1e0d3cf38  __DATA_CONST,__const  __WKLocalAuthenticatorCredentialNameKey
+0x1e0d3cf30  __DATA_CONST,__const  __WKLocalAuthenticatorCredentialRelyingPartyIDKey
+0x1e0d3cf28  __DATA_CONST,__const  __WKLocalAuthenticatorCredentialSynchronizableKey
+0x1e0d3cf20  __DATA_CONST,__const  __WKLocalAuthenticatorCredentialUserHandleKey
+0x1e0d3cf18  __DATA_CONST,__const  __WKMenuItemIdentifierAddHighlightToCurrentQuickNote
+0x1e0d3cf10  __DATA_CONST,__const  __WKMenuItemIdentifierAddHighlightToNewQuickNote
+0x1e0d3cf08  __DATA_CONST,__const  __WKMenuItemIdentifierCheckGrammarWithSpelling
+0x1e0d3cf00  __DATA_CONST,__const  __WKMenuItemIdentifierCheckSpelling
+0x1e0d3cef8  __DATA_CONST,__const  __WKMenuItemIdentifierCheckSpellingWhileTyping
+0x1e0d3cef0  __DATA_CONST,__const  __WKMenuItemIdentifierCopy
+0x1e0d3cee8  __DATA_CONST,__const  __WKMenuItemIdentifierCopyImage
+0x1e0d3cee0  __DATA_CONST,__const  __WKMenuItemIdentifierCopyLink
+0x1e0d3ced8  __DATA_CONST,__const  __WKMenuItemIdentifierCopyLinkWithHighlight
+0x1e0d3ced0  __DATA_CONST,__const  __WKMenuItemIdentifierCopyMediaLink
+0x1e0d3cec8  __DATA_CONST,__const  __WKMenuItemIdentifierCopySubject
+0x1e0d3cec0  __DATA_CONST,__const  __WKMenuItemIdentifierDownloadImage
+0x1e0d3ceb8  __DATA_CONST,__const  __WKMenuItemIdentifierDownloadLinkedFile
+0x1e0d3ceb0  __DATA_CONST,__const  __WKMenuItemIdentifierDownloadMedia
+0x1e0d3cea8  __DATA_CONST,__const  __WKMenuItemIdentifierGoBack
+0x1e0d3cea0  __DATA_CONST,__const  __WKMenuItemIdentifierGoForward
+0x1e0d3ce98  __DATA_CONST,__const  __WKMenuItemIdentifierInspectElement
+0x1e0d3ce90  __DATA_CONST,__const  __WKMenuItemIdentifierLookUp
+0x1e0d3ce88  __DATA_CONST,__const  __WKMenuItemIdentifierOpenFrameInNewWindow
+0x1e0d3ce80  __DATA_CONST,__const  __WKMenuItemIdentifierOpenImageInNewWindow
+0x1e0d3ce78  __DATA_CONST,__const  __WKMenuItemIdentifierOpenLink
+0x1e0d3ce70  __DATA_CONST,__const  __WKMenuItemIdentifierOpenLinkInNewWindow
+0x1e0d3ce68  __DATA_CONST,__const  __WKMenuItemIdentifierOpenMediaInNewWindow
+0x1e0d3ce60  __DATA_CONST,__const  __WKMenuItemIdentifierPaste
+0x1e0d3ce58  __DATA_CONST,__const  __WKMenuItemIdentifierPauseAllAnimations
+0x1e0d3ce50  __DATA_CONST,__const  __WKMenuItemIdentifierPauseAnimation
+0x1e0d3ce48  __DATA_CONST,__const  __WKMenuItemIdentifierPlayAllAnimations
+0x1e0d3ce40  __DATA_CONST,__const  __WKMenuItemIdentifierPlayAnimation
+0x1e0d3ce38  __DATA_CONST,__const  __WKMenuItemIdentifierProofread
+0x1e0d3ce30  __DATA_CONST,__const  __WKMenuItemIdentifierReload
+0x1e0d3ce28  __DATA_CONST,__const  __WKMenuItemIdentifierRevealImage
+0x1e0d3ce20  __DATA_CONST,__const  __WKMenuItemIdentifierRewrite
+0x1e0d3ce18  __DATA_CONST,__const  __WKMenuItemIdentifierSearchWeb
+0x1e0d3ce10  __DATA_CONST,__const  __WKMenuItemIdentifierShareMenu
+0x1e0d3ce08  __DATA_CONST,__const  __WKMenuItemIdentifierShowHideMediaControls
+0x1e0d3ce00  __DATA_CONST,__const  __WKMenuItemIdentifierShowHideMediaStats
+0x1e0d3cdf8  __DATA_CONST,__const  __WKMenuItemIdentifierShowSpellingPanel
+0x1e0d3cdf0  __DATA_CONST,__const  __WKMenuItemIdentifierShowSubstitutions
+0x1e0d3cde8  __DATA_CONST,__const  __WKMenuItemIdentifierSmartCopyPaste
+0x1e0d3cde0  __DATA_CONST,__const  __WKMenuItemIdentifierSmartDashes
+0x1e0d3cdd8  __DATA_CONST,__const  __WKMenuItemIdentifierSmartLinks
+0x1e0d3cdd0  __DATA_CONST,__const  __WKMenuItemIdentifierSmartQuotes
+0x1e0d3cdc8  __DATA_CONST,__const  __WKMenuItemIdentifierSpeechMenu
+0x1e0d3cdc0  __DATA_CONST,__const  __WKMenuItemIdentifierSpellingMenu
+0x1e0d3cdb8  __DATA_CONST,__const  __WKMenuItemIdentifierSubstitutionsMenu
+0x1e0d3cdb0  __DATA_CONST,__const  __WKMenuItemIdentifierSummarize
+0x1e0d3cda8  __DATA_CONST,__const  __WKMenuItemIdentifierTextReplacement
+0x1e0d3cda0  __DATA_CONST,__const  __WKMenuItemIdentifierToggleFullScreen
+0x1e0d3cd98  __DATA_CONST,__const  __WKMenuItemIdentifierTogglePictureInPicture
+0x1e0d3cd90  __DATA_CONST,__const  __WKMenuItemIdentifierToggleVideoViewer
+0x1e0d3cd88  __DATA_CONST,__const  __WKMenuItemIdentifierTranslate
+0x1e0d3cd80  __DATA_CONST,__const  __WKMenuItemIdentifierWritingTools
+0x1e0d3cd78  __DATA_CONST,__const  __WKReadAccessFileURLsOption
+0x1e0d3cd70  __DATA_CONST,__const  __WKRecoveryAttempterErrorKey
+0x1e0d3cd68  __DATA_CONST,__const  __WKSourceApplicationBundleIdentifierOption
+0x1e0d3cd60  __DATA_CONST,__const  __WKTextManipulationItemErrorDomain
+0x1e0d3cd58  __DATA_CONST,__const  __WKTextManipulationItemErrorItemKey
+0x1e0d3cd50  __DATA_CONST,__const  __WKTextManipulationTokenUserInfoDocumentURLKey
+0x1e0d3cd48  __DATA_CONST,__const  __WKTextManipulationTokenUserInfoRoleAttributeKey
+0x1e0d3cd40  __DATA_CONST,__const  __WKTextManipulationTokenUserInfoTagNameKey
+0x1e0d3cd38  __DATA_CONST,__const  __WKTextManipulationTokenUserInfoVisibilityKey
+0x1e0d3cd30  __DATA_CONST,__const  __WKUserContentExtensionsDomain
+0x1e0d3cd28  __DATA_CONST,__const  __WKWebExtensionActionPropertiesDidChangeNotification
+0x1e0d3cd20  __DATA_CONST,__const  __WKWebExtensionContextDeniedPermissionMatchPatternsWereRemovedNotification
+0x1e0d3cd18  __DATA_CONST,__const  __WKWebExtensionContextDeniedPermissionsWereRemovedNotification
+0x1e0d3cd10  __DATA_CONST,__const  __WKWebExtensionContextErrorDomain
+0x1e0d3cd08  __DATA_CONST,__const  __WKWebExtensionContextGrantedPermissionMatchPatternsWereRemovedNotification
+0x1e0d3cd00  __DATA_CONST,__const  __WKWebExtensionContextGrantedPermissionsWereRemovedNotification
+0x1e0d3ccf8  __DATA_CONST,__const  __WKWebExtensionContextNotificationUserInfoKeyMatchPatterns
+0x1e0d3ccf0  __DATA_CONST,__const  __WKWebExtensionContextNotificationUserInfoKeyPermissions
+0x1e0d3cce8  __DATA_CONST,__const  __WKWebExtensionContextPermissionMatchPatternsWereDeniedNotification
+0x1e0d3cce0  __DATA_CONST,__const  __WKWebExtensionContextPermissionMatchPatternsWereGrantedNotification
+0x1e0d3ccd8  __DATA_CONST,__const  __WKWebExtensionContextPermissionsWereDeniedNotification
+0x1e0d3ccd0  __DATA_CONST,__const  __WKWebExtensionContextPermissionsWereGrantedNotification
+0x1e0d3ccc8  __DATA_CONST,__const  __WKWebExtensionDataRecordErrorDomain
+0x1e0d3ccc0  __DATA_CONST,__const  __WKWebExtensionErrorDomain
+0x1e0d3ccb8  __DATA_CONST,__const  __WKWebExtensionErrorsWereUpdatedNotification
+0x1e0d3ccb0  __DATA_CONST,__const  __WKWebExtensionMatchPatternErrorDomain
+0x1e0d3cca8  __DATA_CONST,__const  __WKWebExtensionMessagePortErrorDomain
+0x1e0d3cca0  __DATA_CONST,__const  __WKWebPushActionTypeNotificationClick
+0x1e0d3cc98  __DATA_CONST,__const  __WKWebPushActionTypeNotificationClose
+0x1e0d3cc90  __DATA_CONST,__const  __WKWebPushActionTypePushEvent
+0x1e0d3cc88  __DATA_CONST,__const  __WKWebsiteDataTypeAdClickAttributions
+0x1e0d3cc80  __DATA_CONST,__const  __WKWebsiteDataTypeAlternativeServices
+0x1e0d3cc78  __DATA_CONST,__const  __WKWebsiteDataTypeCredentials
+0x1e0d3cc70  __DATA_CONST,__const  __WKWebsiteDataTypeEnhancedSecurityRecord
+0x1e0d3cc68  __DATA_CONST,__const  __WKWebsiteDataTypeFileSystem
+0x1e0d3cc60  __DATA_CONST,__const  __WKWebsiteDataTypeHSTSCache
+0x1e0d3cc58  __DATA_CONST,__const  __WKWebsiteDataTypeMediaKeys
+0x1e0d3cc50  __DATA_CONST,__const  __WKWebsiteDataTypePrivateClickMeasurements
+0x1e0d3cc48  __DATA_CONST,__const  __WKWebsiteDataTypeResourceLoadStatistics
+0x1e0d3cc40  __DATA_CONST,__const  __WKWebsiteDataTypeSearchFieldRecentSearches
+0x19d206854  __TEXT,__text  WKDataGetSpan(OpaqueWKData const*)
+0x19d979800  __TEXT,__text  IPC::messageLog()
+0x19d97980c  __TEXT,__text  IPC::messageLogMetadata()
+0x19c68cab0  __TEXT,__text  WebKit::XPCEndpoint::sendEndpointToConnection(NSObject objcproto13OS_xpc_object*)
+0x19c67a4d8  __TEXT,__text  WebKit::XPCEndpoint::XPCEndpoint()
+0x19c6be96c  __TEXT,__text  WebKit::XPCEndpointClient::connection()
+0x19c6b1b24  __TEXT,__text  WebKit::XPCEndpointClient::setEndpoint(NSObject objcproto13OS_xpc_object*)
+0x19c82ad50  __TEXT,__text  WebKit::EnvironmentUtilities::removeValuesEndingWith(char const*, char const*)
+0x19d97d0c4  __TEXT,__text  WebKit::EnvironmentUtilities::stripEntriesEndingWith(WTF::StringView, WTF::StringView)
+0x19d94b4dc  __TEXT,__text  WebKit::logAndSetCrashLogMessage(char const*)
+0x19d4f812c  __TEXT,__text  WebKit::FullscreenTouchSecheuristic::distanceScore(CGPoint const&, CGPoint const&, WTF::Seconds const&)
+0x19d4f7fd8  __TEXT,__text  WebKit::FullscreenTouchSecheuristic::scoreOfNextTouch(CGPoint)
+0x19d4f804c  __TEXT,__text  WebKit::FullscreenTouchSecheuristic::scoreOfNextTouch(CGPoint, WTF::Seconds const&)
+0x19d4f8100  __TEXT,__text  WebKit::FullscreenTouchSecheuristic::attenuationFactor(WTF::Seconds)
+0x19d4f81d0  __TEXT,__text  WebKit::FullscreenTouchSecheuristic::reset()
+0x19c8f0770  __TEXT,__text  WebKit::FullscreenTouchSecheuristicParameters::iosParameters()
+0x19d8e345c  __TEXT,__text  WebKit::XPCEndpoint::endpoint() const
+0x1ebb6ff60  __DATA,__common  __swift_FORCE_LOAD_$_swiftWebKit
+0x1e0d1c280  __DATA_CONST,__const  _dynamicRulesetID
+0x1e0d1c278  __DATA_CONST,__const  _sessionRulesetID
+0x19cd25134  __TEXT,__text  _toWebExtensionWebRequestResourceType
+```
+
+## Private
+
+```
+0x19c5d66e8  __TEXT,__text  WTF::ThreadSafeRefCountedAndCanMakeThreadSafeWeakPtr<IPC::Connection, (WTF::DestructionThread)2>::deref() const
+0x19c5d67dc  __TEXT,__text  WTF::Detail::CallableWrapper<WebKit::WebProcessPool::registerNotificationObservers()::$_0::operator()(WTF::ASCIILiteral const&) const::{lambda(int)#1}::operator()(int) const::{lambda()#1}, void>::call()
+0x19c5d6be4  __TEXT,__text  WTF::HashTableAddResult<WTF::HashTableIterator<WTF::HashTable<WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>, WTF::KeyValuePair<WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>, std::__1::pair<unsigned int, std::__1::unique_ptr<IPC::Encoder, 
+0x19c5d6e18  __TEXT,__text  WebKit::AuxiliaryProcessProxy::sendMessageAfterResuming(WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>&&, WTF::UniqueRef<IPC::Encoder>&&)
+0x19c5d6e9c  __TEXT,__text  void IPC::ArgumentCoder<std::__1::optional<unsigned long long> >::encode<IPC::Encoder, std::__1::optional<unsigned long long> const&>(IPC::Encoder&, std::__1::optional<unsigned long long> const&)
+0x19c5d6f74  __TEXT,__text  void IPC::ArgumentCoder<WTF::String>::encode<IPC::Encoder>(IPC::Encoder&, WTF::String const&)
+0x19c5d7130  __TEXT,__text  WTF::UniqueRef<IPC::Encoder> WTF::makeUniqueRefWithoutFastMallocCheck<IPC::Encoder, IPC::MessageName, unsigned long long&>(IPC::MessageName&&, unsigned long long&)
+0x19c5d7130  __TEXT,__text  WTF::UniqueRef<IPC::Encoder> WTF::makeUniqueRefWithoutFastMallocCheck<IPC::Encoder, IPC::MessageName, unsigned long long&>(IPC::MessageName&&, unsigned long long&)
+0x19c5d7130  __TEXT,__text  WTF::UniqueRef<IPC::Encoder> WTF::makeUniqueRefWithoutFastMallocCheck<IPC::Encoder, IPC::MessageName, unsigned long long&>(IPC::MessageName&&, unsigned long long&)
+0x19c5d71a8  __TEXT,__text  IPC::Encoder::encodeHeader()
+0x19c5d7678  __TEXT,__text  +[WKWebExtensionController initialize]
+0x19c5d7938  __TEXT,__text  ___swift_instantiateConcreteTypeFromMangledNameAbstractV2
+0x19c5d7a40  __TEXT,__text  WebKit::WebProcessPool::platformInitialize(WebKit::WebProcessPool::NeedsGlobalStaticInitialization)
+0x19c5d8f58  __TEXT,__text  WebKit::WebProcessPool::setNotifyState(WTF::String const&, int, unsigned long long)
+0x19c5d924c  __TEXT,__text  ___copy_helper_block_e8_32c102_ZTSKZZN6WebKit14WebProcessPool29registerNotificationObserversEvENK3$_0clERKN3WTF12ASCIILiteralEEUliE_
+0x19c5d9270  __TEXT,__text  WebKit::WebProcessProxy::auditToken() const
+0x19c5d92dc  __TEXT,__text  void WTF::ThreadSafeWeakPtrControlBlock::strongDeref<IPC::Connection, (WTF::DestructionThread)2>() const
+0x19c5d9418  __TEXT,__text  WTF::Detail::CallableWrapper<WebKit::WebProcessPool::registerNotificationObservers()::$_0::operator()(WTF::ASCIILiteral const&) const::{lambda(int)#1}::operator()(int) const::{lambda()#1}, void>::~CallableWrapper()
+0x19c5d9488  __TEXT,__text  IPC::Encoder::~Encoder()
+0x19c5d9504  __TEXT,__text  unsigned int WTF::computeHash<WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc> >(WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc> const&)
+0x19c5d9550  __TEXT,__text  IPC::Encoder::grow(unsigned long, unsigned long)
+0x19c5d96d4  __TEXT,__text  IPC::Encoder::operatorNewSlow(unsigned long)
+0x19c5d96e0  __TEXT,__text  WTF::ThreadSafeRefCountedAndCanMakeThreadSafeWeakPtr<IPC::Connection, (WTF::DestructionThread)2>::ref() const
+0x19c5d96e0  __TEXT,__text  WTF::ThreadSafeRefCountedAndCanMakeThreadSafeWeakPtr<IPC::Connection, (WTF::DestructionThread)2>::ref() const
+0x19c5d9770  __TEXT,__text  API::sharedWorldNameMap()
+0x19c5d97b8  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::WeakRef<API::ContentWorld, WTF::DefaultWeakPtrImpl> >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::WeakRef<API::ContentWorld, WTF::DefaultWeakPtrImpl> > >, WTF::DefaultHash<WTF::String>, WTF::HashMap<WTF::String, W
+0x19c5d99fc  __TEXT,__text  -[WKContentWorld _apiObject]
+0x19c5d9a04  __TEXT,__text  WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebKit::ContentWorldIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >::generate()
+0x19c5d9a60  __TEXT,__text  checkContentWorldOptions(API::ContentWorld&, _WKContentWorldConfiguration*)
+0x19c5d9b94  __TEXT,__text  -[_WKContentWorldConfiguration allowElementUserInfo]
+0x19c5d9ba0  __TEXT,__text  void API::Object::constructInWrapper<API::UserScript, WebCore::UserScript, WTF::Ref<API::ContentWorld, WTF::RawPtrTraits<API::ContentWorld>, WTF::DefaultRefDerefTraits<API::ContentWorld> > >(objc_object objcproto8WKObject*, WebCore::UserScript&&, WTF::Ref<API::ContentWorld, WTF::RawPtrTraits<API::Co
+0x19c5d9cdc  __TEXT,__text  WebKit::WebUserContentControllerProxy::addUserScript(API::UserScript&, WebKit::InjectUserScriptImmediately)
+0x19c5da08c  __TEXT,__text  API::Object::apiObjectsUnderConstruction()
+0x19c5da168  __TEXT,__text  WTF::HashTableAddResult<WTF::HashTableIterator<WTF::HashTable<API::Object*, WTF::KeyValuePair<API::Object*, void const*>, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<API::Object*, void const*> >, WTF::DefaultHash<API::Object*>, WTF::HashMap<API::Object*, void const*, WTF::DefaultHash<API::Object
+0x19c5da324  __TEXT,__text  WebKit::WebUserContentControllerProxy::WebUserContentControllerProxy()
+0x19c5da3d4  __TEXT,__text  WTF::HashTable<API::Object*, WTF::KeyValuePair<API::Object*, void const*>, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<API::Object*, void const*> >, WTF::DefaultHash<API::Object*>, WTF::HashMap<API::Object*, void const*, WTF::DefaultHash<API::Object*>, WTF::HashTraits<API::Object*>, WTF::HashTra
+0x19c5da440  __TEXT,__text  WTF::HashTable<API::Object*, WTF::KeyValuePair<API::Object*, void const*>, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<API::Object*, void const*> >, WTF::DefaultHash<API::Object*>, WTF::HashMap<API::Object*, void const*, WTF::DefaultHash<API::Object*>, WTF::HashTraits<API::Object*>, WTF::HashTra
+0x19c5da5ac  __TEXT,__text  API::Object::Object()
+0x19c5da60c  __TEXT,__text  -[WKUserContentController init]
+0x19c5da68c  __TEXT,__text  -[WKUserContentController _apiObject]
+0x19c5da694  __TEXT,__text  WebKit::InitializeWebKit2()
+0x19c5da6fc  __TEXT,__text  API::Array::create()
+0x19c5da748  __TEXT,__text  API::Object::newObject(unsigned long, API::Object::Type)
+0x19c5dae60  __TEXT,__text  WTF::HashMap<API::Object*, void const*, WTF::DefaultHash<API::Object*>, WTF::HashTraits<API::Object*>, WTF::HashTraits<void const*>, WTF::HashTableTraits, (WTF::ShouldValidateKey)1, WTF::FastMalloc>::take(API::Object* const&)
+0x19c5daecc  __TEXT,__text  WTF::HashTableIterator<WTF::HashTable<API::Object*, WTF::KeyValuePair<API::Object*, void const*>, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<API::Object*, void const*> >, WTF::DefaultHash<API::Object*>, WTF::HashMap<API::Object*, void const*, WTF::DefaultHash<API::Object*>, WTF::HashTraits<API:
+0x19c5daf74  __TEXT,__text  WTF::HashTable<API::Object*, WTF::KeyValuePair<API::Object*, void const*>, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<API::Object*, void const*> >, WTF::DefaultHash<API::Object*>, WTF::HashMap<API::Object*, void const*, WTF::DefaultHash<API::Object*>, WTF::HashTraits<API::Object*>, WTF::HashTra
+0x19c5dafe8  __TEXT,__text  WebKit::runInitializationCode(void*)
+0x19c5db050  __TEXT,__text  API::Array::Array(WTF::Vector<WTF::RefPtr<API::Object, WTF::RawPtrTraits<API::Object>, WTF::DefaultRefDerefTraits<API::Object> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>&&)
+0x19c5db0e4  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::WebPageProxy, WTF::RawPtrTraits<WebKit::WebPageProxy>, WTF::DefaultRefDerefTraits<WebKit::WebPageProxy> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5db0e4  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::WebPageProxy, WTF::RawPtrTraits<WebKit::WebPageProxy>, WTF::DefaultRefDerefTraits<WebKit::WebPageProxy> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5db0e4  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::WebPageProxy, WTF::RawPtrTraits<WebKit::WebPageProxy>, WTF::DefaultRefDerefTraits<WebKit::WebPageProxy> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5db0e4  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::WebPageProxy, WTF::RawPtrTraits<WebKit::WebPageProxy>, WTF::DefaultRefDerefTraits<WebKit::WebPageProxy> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5db0e4  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::WebPageProxy, WTF::RawPtrTraits<WebKit::WebPageProxy>, WTF::DefaultRefDerefTraits<WebKit::WebPageProxy> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5db0e4  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::WebPageProxy, WTF::RawPtrTraits<WebKit::WebPageProxy>, WTF::DefaultRefDerefTraits<WebKit::WebPageProxy> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5db0e4  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::WebPageProxy, WTF::RawPtrTraits<WebKit::WebPageProxy>, WTF::DefaultRefDerefTraits<WebKit::WebPageProxy> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5db0e4  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::WebPageProxy, WTF::RawPtrTraits<WebKit::WebPageProxy>, WTF::DefaultRefDerefTraits<WebKit::WebPageProxy> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5db0e4  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::WebPageProxy, WTF::RawPtrTraits<WebKit::WebPageProxy>, WTF::DefaultRefDerefTraits<WebKit::WebPageProxy> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5db0e4  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::WebPageProxy, WTF::RawPtrTraits<WebKit::WebPageProxy>, WTF::DefaultRefDerefTraits<WebKit::WebPageProxy> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5db0e4  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::WebPageProxy, WTF::RawPtrTraits<WebKit::WebPageProxy>, WTF::DefaultRefDerefTraits<WebKit::WebPageProxy> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5db0e4  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::WebPageProxy, WTF::RawPtrTraits<WebKit::WebPageProxy>, WTF::DefaultRefDerefTraits<WebKit::WebPageProxy> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5db0e4  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::WebPageProxy, WTF::RawPtrTraits<WebKit::WebPageProxy>, WTF::DefaultRefDerefTraits<WebKit::WebPageProxy> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5db0e4  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::WebPageProxy, WTF::RawPtrTraits<WebKit::WebPageProxy>, WTF::DefaultRefDerefTraits<WebKit::WebPageProxy> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5db0e4  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::WebPageProxy, WTF::RawPtrTraits<WebKit::WebPageProxy>, WTF::DefaultRefDerefTraits<WebKit::WebPageProxy> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5db0e4  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::WebPageProxy, WTF::RawPtrTraits<WebKit::WebPageProxy>, WTF::DefaultRefDerefTraits<WebKit::WebPageProxy> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5db160  __TEXT,__text  WebKit::webUserContentControllerProxies()
+0x19c5db1b8  __TEXT,__text  WTF::HashTable<WTF::ObjectIdentifierGeneric<WebKit::WebPageProxyIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long>, WTF::KeyValuePair<WTF::ObjectIdentifierGeneric<WebKit::WebPageProxyIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigne
+0x19c5db1b8  __TEXT,__text  WTF::HashTable<WTF::ObjectIdentifierGeneric<WebKit::WebPageProxyIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long>, WTF::KeyValuePair<WTF::ObjectIdentifierGeneric<WebKit::WebPageProxyIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigne
+0x19c5db1b8  __TEXT,__text  WTF::HashTable<WTF::ObjectIdentifierGeneric<WebKit::WebPageProxyIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long>, WTF::KeyValuePair<WTF::ObjectIdentifierGeneric<WebKit::WebPageProxyIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigne
+0x19c5db1fc  __TEXT,__text  WTF::HashTableAddResult<WTF::HashTableIterator<WTF::HashTable<WTF::ObjectIdentifierGeneric<WebKit::UserContentControllerIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long>, WTF::KeyValuePair<WTF::ObjectIdentifierGeneric<WebKit::UserContentControllerId
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db3e8  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebKit::RealmIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, un
+0x19c5db44c  __TEXT,__text  -[_WKContentWorldConfiguration setName:]
+0x19c5db4f0  __TEXT,__text  WTF::HashTable<WTF::ObjectIdentifierGeneric<WebKit::WebPageProxyIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long>, WTF::KeyValuePair<WTF::ObjectIdentifierGeneric<WebKit::WebPageProxyIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigne
+0x19c5db4f0  __TEXT,__text  WTF::HashTable<WTF::ObjectIdentifierGeneric<WebKit::WebPageProxyIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long>, WTF::KeyValuePair<WTF::ObjectIdentifierGeneric<WebKit::WebPageProxyIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigne
+0x19c5db4f0  __TEXT,__text  WTF::HashTable<WTF::ObjectIdentifierGeneric<WebKit::WebPageProxyIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long>, WTF::KeyValuePair<WTF::ObjectIdentifierGeneric<WebKit::WebPageProxyIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigne
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db6b8  __TEXT,__text  WTF::WeakPtrFactory<WebPushD::PushServiceConnection, WTF::DefaultWeakPtrImpl>::initializeIfNeeded(WebPushD::PushServiceConnection const&) const
+0x19c5db734  __TEXT,__text  -[_WKContentWorldConfiguration init]
+0x19c5db76c  __TEXT,__text  -[WKContentWorldConfiguration init]
+0x19c5db81c  __TEXT,__text  -[WKContentWorldConfiguration _apiObject]
+0x19c5db824  __TEXT,__text  -[_WKContentWorldConfiguration setDisableLegacyBuiltinOverrides:]
+0x19c5db844  __TEXT,__text  -[_WKContentWorldConfiguration setAllowAccessToClosedShadowRoots:]
+0x19c5db858  __TEXT,__text  -[_WKContentWorldConfiguration setAllowAutofill:]
+0x19c5db878  __TEXT,__text  -[_WKContentWorldConfiguration setAllowElementUserInfo:]
+0x19c5db898  __TEXT,__text  -[WKContentWorldConfiguration setInspectable:]
+0x19c5db8b8  __TEXT,__text  +[WKContentWorld(WKPrivate) _worldWithConfiguration:]
+0x19c5db8c4  __TEXT,__text  +[WKContentWorld worldWithConfiguration:]
+0x19c5dba68  __TEXT,__text  -[_WKContentWorldConfiguration name]
+0x19c5dbb3c  __TEXT,__text  API::ContentWorld::sharedWorldWithName(WTF::String const&, WTF::OptionSet<WebKit::ContentWorldOption, (WTF::ConcurrencyTag)0>)
+0x19c5dbd78  __TEXT,__text  API::ContentWorld::ContentWorld(WTF::String const&, WTF::OptionSet<WebKit::ContentWorldOption, (WTF::ConcurrencyTag)0>)
+0x19c5dbfec  __TEXT,__text  WTF::HashTable<WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebKit::ContentWorldIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >, WTF::KeyValuePair<WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebKit::ContentWorldIdentifierTyp
+0x19c5dc1ec  __TEXT,__text  unsigned int WTF::computeHash<WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> > >(WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::
+0x19c5dc1ec  __TEXT,__text  unsigned int WTF::computeHash<WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> > >(WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::
+0x19c5dc1ec  __TEXT,__text  unsigned int WTF::computeHash<WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> > >(WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::
+0x19c5dc1ec  __TEXT,__text  unsigned int WTF::computeHash<WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> > >(WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::
+0x19c5dc1ec  __TEXT,__text  unsigned int WTF::computeHash<WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> > >(WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::
+0x19c5dc1ec  __TEXT,__text  unsigned int WTF::computeHash<WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> > >(WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::
+0x19c5dc1ec  __TEXT,__text  unsigned int WTF::computeHash<WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> > >(WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::
+0x19c5dc1ec  __TEXT,__text  unsigned int WTF::computeHash<WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> > >(WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::
+0x19c5dc1ec  __TEXT,__text  unsigned int WTF::computeHash<WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> > >(WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebCore::JSHandleIdentifierType, WTF::
+0x19c5dc284  __TEXT,__text  -[_WKContentWorldConfiguration allowAccessToClosedShadowRoots]
+0x19c5dc290  __TEXT,__text  -[_WKContentWorldConfiguration allowAutofill]
+0x19c5dc29c  __TEXT,__text  -[_WKContentWorldConfiguration disableLegacyBuiltinOverrides]
+0x19c5dc2a8  __TEXT,__text  WTF::URL::URL()
+0x19c5dc304  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::WeakRef<API::ContentWorld, WTF::DefaultWeakPtrImpl> >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::WeakRef<API::ContentWorld, WTF::DefaultWeakPtrImpl> > >, WTF::DefaultHash<WTF::String>, WTF::HashMap<WTF::String, W
+0x19c5dc34c  __TEXT,__text  API::sharedWorldIdentifierMap()
+0x19c5dc3a4  __TEXT,__text  WTF::HashTable<WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebKit::ContentWorldIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >, WTF::KeyValuePair<WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebKit::ContentWorldIdentifierTyp
+0x19c5dc3ec  __TEXT,__text  -[WKContentWorldConfiguration dealloc]
+0x19c5dc460  __TEXT,__text  API::ContentWorldConfiguration::~ContentWorldConfiguration()
+0x19c5dc4c0  __TEXT,__text  -[WKUserScript initWithSource:injectionTime:forMainFrameOnly:inContentWorld:]
+0x19c5dc66c  __TEXT,__text  -[WKUserScript _apiObject]
+0x19c5dc674  __TEXT,__text  API::UserScript::UserScript(WebCore::UserScript, API::ContentWorld&)
+0x19c5dc754  __TEXT,__text  WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::Vector(WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc> const&)
+0x19c5dc754  __TEXT,__text  WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::Vector(WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc> const&)
+0x19c5dc7fc  __TEXT,__text  WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5dc890  __TEXT,__text  -[WKUserContentController addUserScript:]
+0x19c5dc910  __TEXT,__text  bool WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::reserveCapacity<(WTF::FailureAction)0>(unsigned long)
+0x19c5dc910  __TEXT,__text  bool WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::reserveCapacity<(WTF::FailureAction)0>(unsigned long)
+0x19c5dc910  __TEXT,__text  bool WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::reserveCapacity<(WTF::FailureAction)0>(unsigned long)
+0x19c5dc910  __TEXT,__text  bool WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::reserveCapacity<(WTF::FailureAction)0>(unsigned long)
+0x19c5dc910  __TEXT,__text  bool WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::reserveCapacity<(WTF::FailureAction)0>(unsigned long)
+0x19c5dc910  __TEXT,__text  bool WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::reserveCapacity<(WTF::FailureAction)0>(unsigned long)
+0x19c5dc910  __TEXT,__text  bool WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::reserveCapacity<(WTF::FailureAction)0>(unsigned long)
+0x19c5dc910  __TEXT,__text  bool WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::reserveCapacity<(WTF::FailureAction)0>(unsigned long)
+0x19c5dc9bc  __TEXT,__text  WTF::HashTable<WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::IdentityExtractor, WTF::DefaultHas
+0x19c5dc9bc  __TEXT,__text  WTF::HashTable<WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::IdentityExtractor, WTF::DefaultHas
+0x19c5dc9bc  __TEXT,__text  WTF::HashTable<WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::IdentityExtractor, WTF::DefaultHas
+0x19c5dc9bc  __TEXT,__text  WTF::HashTable<WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::IdentityExtractor, WTF::DefaultHas
+0x19c5dc9bc  __TEXT,__text  WTF::HashTable<WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::IdentityExtractor, WTF::DefaultHas
+0x19c5dc9bc  __TEXT,__text  WTF::HashTable<WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::IdentityExtractor, WTF::DefaultHas
+0x19c5dc9bc  __TEXT,__text  WTF::HashTable<WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::IdentityExtractor, WTF::DefaultHas
+0x19c5dc9bc  __TEXT,__text  WTF::HashTable<WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::IdentityExtractor, WTF::DefaultHas
+0x19c5dc9bc  __TEXT,__text  WTF::HashTable<WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::IdentityExtractor, WTF::DefaultHas
+0x19c5dc9bc  __TEXT,__text  WTF::HashTable<WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::IdentityExtractor, WTF::DefaultHas
+0x19c5dc9bc  __TEXT,__text  WTF::HashTable<WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::IdentityExtractor, WTF::DefaultHas
+0x19c5dc9bc  __TEXT,__text  WTF::HashTable<WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::IdentityExtractor, WTF::DefaultHas
+0x19c5dc9bc  __TEXT,__text  WTF::HashTable<WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::IdentityExtractor, WTF::DefaultHas
+0x19c5dc9bc  __TEXT,__text  WTF::HashTable<WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::IdentityExtractor, WTF::DefaultHas
+0x19c5dc9bc  __TEXT,__text  WTF::HashTable<WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::WeakPtr<WebKit::WebUserContentControllerProxy, WTF::DefaultWeakPtrImpl, WTF::RawPtrTraits<WTF::DefaultWeakPtrImpl> >, WTF::IdentityExtractor, WTF::DefaultHas
+0x19c5dca10  __TEXT,__text  -[WKUserContentController addScriptMessageHandler:contentWorld:name:]
+0x19c5dcbec  __TEXT,__text  WebKit::WebUserContentControllerProxy::addUserScriptMessageHandler(WebKit::WebScriptMessageHandler&)
+0x19c5dd108  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInputSource, WTF::RawPtrTraits<WebKit::SimulatedInputSource>, WTF::DefaultRefDerefTraits<WebKit::SimulatedInputSource> > >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInpu
+0x19c5dd108  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInputSource, WTF::RawPtrTraits<WebKit::SimulatedInputSource>, WTF::DefaultRefDerefTraits<WebKit::SimulatedInputSource> > >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInpu
+0x19c5dd108  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInputSource, WTF::RawPtrTraits<WebKit::SimulatedInputSource>, WTF::DefaultRefDerefTraits<WebKit::SimulatedInputSource> > >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInpu
+0x19c5dd108  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInputSource, WTF::RawPtrTraits<WebKit::SimulatedInputSource>, WTF::DefaultRefDerefTraits<WebKit::SimulatedInputSource> > >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInpu
+0x19c5dd108  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInputSource, WTF::RawPtrTraits<WebKit::SimulatedInputSource>, WTF::DefaultRefDerefTraits<WebKit::SimulatedInputSource> > >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInpu
+0x19c5dd108  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInputSource, WTF::RawPtrTraits<WebKit::SimulatedInputSource>, WTF::DefaultRefDerefTraits<WebKit::SimulatedInputSource> > >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInpu
+0x19c5dd108  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInputSource, WTF::RawPtrTraits<WebKit::SimulatedInputSource>, WTF::DefaultRefDerefTraits<WebKit::SimulatedInputSource> > >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInpu
+0x19c5dd108  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInputSource, WTF::RawPtrTraits<WebKit::SimulatedInputSource>, WTF::DefaultRefDerefTraits<WebKit::SimulatedInputSource> > >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInpu
+0x19c5dd108  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInputSource, WTF::RawPtrTraits<WebKit::SimulatedInputSource>, WTF::DefaultRefDerefTraits<WebKit::SimulatedInputSource> > >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInpu
+0x19c5dd108  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInputSource, WTF::RawPtrTraits<WebKit::SimulatedInputSource>, WTF::DefaultRefDerefTraits<WebKit::SimulatedInputSource> > >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInpu
+0x19c5dd108  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInputSource, WTF::RawPtrTraits<WebKit::SimulatedInputSource>, WTF::DefaultRefDerefTraits<WebKit::SimulatedInputSource> > >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInpu
+0x19c5dd108  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInputSource, WTF::RawPtrTraits<WebKit::SimulatedInputSource>, WTF::DefaultRefDerefTraits<WebKit::SimulatedInputSource> > >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInpu
+0x19c5dd108  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInputSource, WTF::RawPtrTraits<WebKit::SimulatedInputSource>, WTF::DefaultRefDerefTraits<WebKit::SimulatedInputSource> > >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInpu
+0x19c5dd108  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInputSource, WTF::RawPtrTraits<WebKit::SimulatedInputSource>, WTF::DefaultRefDerefTraits<WebKit::SimulatedInputSource> > >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInpu
+0x19c5dd108  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInputSource, WTF::RawPtrTraits<WebKit::SimulatedInputSource>, WTF::DefaultRefDerefTraits<WebKit::SimulatedInputSource> > >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInpu
+0x19c5dd108  __TEXT,__text  WTF::HashTable<WTF::String, WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInputSource, WTF::RawPtrTraits<WebKit::SimulatedInputSource>, WTF::DefaultRefDerefTraits<WebKit::SimulatedInputSource> > >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, WTF::Ref<WebKit::SimulatedInpu
+0x19c5dd150  __TEXT,__text  WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::Vector<WTF::makeVector<WTF::String>(NSArray*)::{lambda(unsigned long)#1}>(unsigned long, WTF::makeVector<WTF::String>(NSArray*)::{lambda(unsigned long)#1} const&, WTF::NulloptBehavior)
+0x19c5dd280  __TEXT,__text  WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::shrinkCapacity(unsigned long)
+0x19c5dd280  __TEXT,__text  WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::shrinkCapacity(unsigned long)
+0x19c5dd3e8  __TEXT,__text  WTF::PairHash<WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebKit::ContentWorldIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >, WTF::String>::hash(std::__1::pair<WebCore::ProcessQualified<WTF::ObjectIdentifierGeneric<WebKit::ContentWor
+0x19c5dd458  __TEXT,__text  API::ContentWorld::pageContentWorldSingleton()
+0x19c5dd550  __TEXT,__text  WebKit::WebScriptMessageHandler::WebScriptMessageHandler(std::__1::unique_ptr<WebKit::WebScriptMessageHandler::Client, std::__1::default_delete<WebKit::WebScriptMessageHandler::Client> >, WTF::String const&, API::ContentWorld&)
+0x19c5dd5e0  __TEXT,__text  WTF::HashTable<WTF::ObjectIdentifierGeneric<WebKit::ScriptMessageHandlerIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long>, WTF::KeyValuePair<WTF::ObjectIdentifierGeneric<WebKit::ScriptMessageHandlerIdentifierType, WTF::ObjectIdentifierMainThreadAcce
+0x19c5dd624  __TEXT,__text  -[WKUserContentController addScriptMessageHandlerWithReply:contentWorld:name:]
+0x19c5dd860  __TEXT,__text  +[WKWebExtensionMatchPattern registerCustomURLScheme:]
+0x19c5dda50  __TEXT,__text  ScriptMessageHandlerDelegate::ScriptMessageHandlerDelegate(WKUserContentController*, objc_object objcproto22WKScriptMessageHandler*, NSString*)
+0x19c5ddaf8  __TEXT,__text  WebKit::WebScriptMessageHandler::create(std::__1::unique_ptr<WebKit::WebScriptMessageHandler::Client, std::__1::default_delete<WebKit::WebScriptMessageHandler::Client> >, WTF::String const&, API::ContentWorld&)
+0x19c5ddb94  __TEXT,__text  -[WKUserContentController _addScriptMessageHandler:]
+0x19c5ddd08  __TEXT,__text  WTF::HashTable<WTF::ObjectIdentifierGeneric<WebKit::ScriptMessageHandlerIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long>, WTF::KeyValuePair<WTF::ObjectIdentifierGeneric<WebKit::ScriptMessageHandlerIdentifierType, WTF::ObjectIdentifierMainThreadAcce
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf0c  __TEXT,__text  unsigned int WTF::computeHash<WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long long>, unsigned long long> >(WTF::ObjectIdentifierGeneric<WebCore::TimelineIdentifierType, WTF::ObjectIdentifierMainThreadAccessTraits<unsigned long l
+0x19c5ddf6c  __TEXT,__text  -[WKUserScript(WKPrivate) _initWithSource:injectionTime:forMainFrameOnly:includeMatchPatternStrings:excludeMatchPatternStrings:associatedURL:contentWorld:]
+0x19c5de19c  __TEXT,__text  -[WKUserContentController addBuffer:name:contentWorld:]
+0x19c5de218  __TEXT,__text  +[WKContentWorld pageWorld]
+0x19c5de27c  __TEXT,__text  +[WKWebExtensionMatchPattern initialize]
+0x19c5de2c4  __TEXT,__text  WebKit::WebExtensionMatchPattern::registerCustomURLScheme(WTF::String)
+0x19c5de418  __TEXT,__text  WebKit::WebExtensionMatchPattern::extensionSchemes()
+0x19c5de4e0  __TEXT,__text  WTF::HashSet<WTF::String, WTF::DefaultHash<WTF::String>, WTF::HashTraits<WTF::String>, WTF::HashTableTraits, (WTF::ShouldValidateKey)1>::HashSet(std::initializer_list<WTF::String>)
+0x19c5de570  __TEXT,__text  WTF::HashTable<WTF::String, WTF::String, WTF::IdentityExtractor, WTF::DefaultHash<WTF::String>, WTF::HashTraits<WTF::String>, WTF::HashTraits<WTF::String>, WTF::FastMalloc>::computeBestTableSize(unsigned int)
+0x19c5de570  __TEXT,__text  WTF::HashTable<WTF::String, WTF::String, WTF::IdentityExtractor, WTF::DefaultHash<WTF::String>, WTF::HashTraits<WTF::String>, WTF::HashTraits<WTF::String>, WTF::FastMalloc>::computeBestTableSize(unsigned int)
+0x19c5de570  __TEXT,__text  WTF::HashTable<WTF::String, WTF::String, WTF::IdentityExtractor, WTF::DefaultHash<WTF::String>, WTF::HashTraits<WTF::String>, WTF::HashTraits<WTF::String>, WTF::FastMalloc>::computeBestTableSize(unsigned int)
+0x19c5de570  __TEXT,__text  WTF::HashTable<WTF::String, WTF::String, WTF::IdentityExtractor, WTF::DefaultHash<WTF::String>, WTF::HashTraits<WTF::String>, WTF::HashTraits<WTF::String>, WTF::FastMalloc>::computeBestTableSize(unsigned int)
+0x19c5de570  __TEXT,__text  WTF::HashTable<WTF::String, WTF::String, WTF::IdentityExtractor, WTF::DefaultHash<WTF::String>, WTF::HashTraits<WTF::String>, WTF::HashTraits<WTF::String>, WTF::FastMalloc>::computeBestTableSize(unsigned int)
+0x19c5de570  __TEXT,__text  WTF::HashTable<WTF::String, WTF::String, WTF::IdentityExtractor, WTF::DefaultHash<WTF::String>, WTF::HashTraits<WTF::String>, WTF::HashTraits<WTF::String>, WTF::FastMalloc>::computeBestTableSize(unsigned int)
+0x19c5de570  __TEXT,__text  WTF::HashTable<WTF::String, WTF::String, WTF::IdentityExtractor, WTF::DefaultHash<WTF::String>, WTF::HashTraits<WTF::String>, WTF::HashTraits<WTF::String>, WTF::FastMalloc>::computeBestTableSize(unsigned int)
+0x19c5de570  __TEXT,__text  WTF::HashTable<WTF::String, WTF::String, WTF::IdentityExtractor, WTF::DefaultHash<WTF::String>, WTF::HashTraits<WTF::String>, WTF::HashTraits<WTF::String>, WTF::FastMalloc>::computeBestTableSize(unsigned int)
+0x19c5de62c  __TEXT,__text  WTF::HashTableAddResult<WTF::HashTableIterator<WTF::HashTable<WTF::String, WTF::String, WTF::IdentityExtractor, WTF::DefaultHash<WTF::String>, WTF::HashTraits<WTF::String>, WTF::HashTraits<WTF::String>, WTF::FastMalloc>, WTF::String, WTF::String, WTF::IdentityExtractor, WTF::DefaultHash<WTF::String>
+0x19c5de818  __TEXT,__text  WebKit::WebExtensionMatchPattern::validSchemes()
+0x19c5de990  __TEXT,__text  WebKit::WebExtensionMatchPattern::supportedSchemes()
+0x19c5dead0  __TEXT,__text  WebKit::WebProcessPool::allProcessPools()
+0x19c5debb8  __TEXT,__text  WebKit::processPools()
+0x19c5dec10  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::WebProcessPool, WTF::RawPtrTraits<WebKit::WebProcessPool>, WTF::DefaultRefDerefTraits<WebKit::WebProcessPool> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::~Vector()
+0x19c5deca0  __TEXT,__text  -[_WKProcessPoolConfiguration init]
+0x19c5ded20  __TEXT,__text  API::ProcessPoolConfiguration::ProcessPoolConfiguration()
+0x19c5dedb4  __TEXT,__text  -[_WKProcessPoolConfiguration _apiObject]
+0x19c5dedbc  __TEXT,__text  API::ProcessPoolConfiguration::defaultUsesWebBackForwardCache()
+0x19c5dee34  __TEXT,__text  -[_WKProcessPoolConfiguration setInjectedBundleURL:]
+0x19c5def18  __TEXT,__text  -[_WKProcessPoolConfiguration setCachePartitionedURLSchemes:]
+0x19c5df004  __TEXT,__text  -[_WKProcessPoolConfiguration setShouldCaptureAudioInUIProcess:]
+0x19c5df00c  __TEXT,__text  -[_WKProcessPoolConfiguration setPrewarmsProcessesAutomatically:]
+0x19c5df018  __TEXT,__text  -[_WKProcessPoolConfiguration setUsesWebProcessCache:]
+0x19c5df020  __TEXT,__text  -[_WKProcessPoolConfiguration setJITEnabled:]
+0x19c5df028  __TEXT,__text  -[WKProcessPool .cxx_construct]
+0x19c5df03c  __TEXT,__text  -[WKProcessPool _initWithConfiguration:]
+0x19c5df0f4  __TEXT,__text  WebKit::WebProcessPool::WebProcessPool(API::ProcessPoolConfiguration&)
+0x19c5e0324  __TEXT,__text  API::ProcessPoolConfiguration::copy()
+0x19c5e0478  __TEXT,__text  WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::operator=(WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc> const&)
+0x19c5e0604  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::size() const
+0x19c5e0604  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::size() const
+0x19c5e0604  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::size() const
+0x19c5e0604  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::size() const
+0x19c5e0604  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::size() const
+0x19c5e0604  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::size() const
+0x19c5e0604  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::size() const
+0x19c5e0604  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::size() const
+0x19c5e0604  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::size() const
+0x19c5e0604  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::size() const
+0x19c5e0604  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::size() const
+0x19c5e0604  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::size() const
+0x19c5e0620  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::capacity() const
+0x19c5e0620  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::capacity() const
+0x19c5e0620  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::capacity() const
+0x19c5e0620  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::capacity() const
+0x19c5e0620  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::capacity() const
+0x19c5e0620  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::capacity() const
+0x19c5e0620  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::capacity() const
+0x19c5e0620  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::capacity() const
+0x19c5e0648  __TEXT,__text  WTF::VectorBufferBase<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, WTF::FastMalloc>::capacity() const
+0x19c5e0648  __TEXT,__text  WTF::VectorBufferBase<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, WTF::FastMalloc>::capacity() const
+0x19c5e0648  __TEXT,__text  WTF::VectorBufferBase<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, WTF::FastMalloc>::capacity() const
+0x19c5e0648  __TEXT,__text  WTF::VectorBufferBase<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, WTF::FastMalloc>::capacity() const
+0x19c5e0648  __TEXT,__text  WTF::VectorBufferBase<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, WTF::FastMalloc>::capacity() const
+0x19c5e0648  __TEXT,__text  WTF::VectorBufferBase<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, WTF::FastMalloc>::capacity() const
+0x19c5e0648  __TEXT,__text  WTF::VectorBufferBase<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, WTF::FastMalloc>::capacity() const
+0x19c5e0648  __TEXT,__text  WTF::VectorBufferBase<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, WTF::FastMalloc>::capacity() const
+0x19c5e0648  __TEXT,__text  WTF::VectorBufferBase<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, WTF::FastMalloc>::capacity() const
+0x19c5e0668  __TEXT,__text  WTF::Vector<WTF::String, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::clear()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e0694  __TEXT,__text  WTF::Vector<WTF::KeyValuePair<WTF::String, WebCore::AuthenticationExtensionsClientInputs::PRFValues>, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::data()
+0x19c5e06bc  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::begin()
+0x19c5e06bc  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::begin()
+0x19c5e06bc  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::begin()
+0x19c5e06bc  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::begin()
+0x19c5e06bc  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::begin()
+0x19c5e06bc  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::begin()
+0x19c5e06bc  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::begin()
+0x19c5e06bc  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::begin()
+0x19c5e06bc  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::begin()
+0x19c5e06bc  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::begin()
+0x19c5e06bc  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::begin()
+0x19c5e06bc  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::begin()
+0x19c5e06bc  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::begin()
+0x19c5e06bc  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::begin()
+0x19c5e06bc  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::begin()
+0x19c5e06bc  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::begin()
+0x19c5e06bc  __TEXT,__text  WTF::Vector<WTF::Ref<WebKit::AuthenticatorTransportService, WTF::RawPtrTraits<WebKit::AuthenticatorTransportService>, WTF::DefaultRefDerefTraits<WebKit::AuthenticatorTransportService> >, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::begin()
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06e4  __TEXT,__text  WTF::Vector<unsigned char, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::asanSetInitialBufferSizeTo(unsigned long)
+0x19c5e06f8  __TEXT,__text  void WTF::writeIntegerToBuffer<unsigned char, unsigned long long>(unsigned long long, std::__1::span<unsigned char, 18446744073709551615ul>)
+0x19c5e07cc  __TEXT,__text  WebKit::WebPreferences::WebPreferences(WTF::String const&, WTF::String const&, WTF::String const&)
+0x19c5e08ac  __TEXT,__text  WebKit::WebPreferencesKey::mediaDevicesEnabledKey()
+0x19c5e0914  __TEXT,__text  WebKit::checkUsageDescriptionStringForType(WebKit::MediaPermissionType)
+0x19c5e0b70  __TEXT,__text  invocation function for block in WebKit::get_TCC_kTCCServiceMicrophoneSingleton()
+0x19c5e0bc0  __TEXT,__text  WebKit::TCCLibrary(bool)
+0x19c5e0c50  __TEXT,__text  invocation function for block in WebKit::TCCLibrary(bool)
+0x19c5e0cb0  __TEXT,__text  invocation function for block in WebKit::initTCCTCCAccessPreflight(__CFString const*, __CFDictionary const*)
+0x19c5e0cfc  __TEXT,__text  WebKit::initTCCTCCAccessPreflight(__CFString const*, __CFDictionary const*)
+0x19c5e0d5c  __TEXT,__text  WebKit::WebPreferencesStore::setBoolValueForKey(WTF::String const&, bool)
+0x19c5e0e24  __TEXT,__text  bool WebKit::valueForKey<bool>(WTF::HashMap<WTF::String, mpark::variant<WTF::String, bool, unsigned int, double>, WTF::DefaultHash<WTF::String>, WTF::HashTraits<WTF::String>, WTF::HashTraits<mpark::variant<WTF::String, bool, unsigned int, double> >, WTF::MemoryCompactRobinHoodHashTableTraits, (WTF::
+0x19c5e0efc  __TEXT,__text  WebKit::WebPreferencesKey::inactiveMediaCaptureStreamRepromptIntervalInMinutesKey()
+0x19c5e0f60  __TEXT,__text  WTF::HashTableAddResult<WTF::HashTableIterator<WTF::RobinHoodHashTable<WTF::String, WTF::KeyValuePair<WTF::String, mpark::variant<WTF::String, bool, unsigned int, double> >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, mpark::variant<WTF::String, bool, unsigned int, double> > >, WTF:
+0x19c5e1434  __TEXT,__text  WTF::RobinHoodHashTable<WTF::String, WTF::KeyValuePair<WTF::String, mpark::variant<WTF::String, bool, unsigned int, double> >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, mpark::variant<WTF::String, bool, unsigned int, double> > >, WTF::DefaultHash<WTF::String>, WTF::HashMap<WTF::St
+0x19c5e15a8  __TEXT,__text  void WTF::HashMapTranslator<WTF::HashMap<WTF::String, mpark::variant<WTF::String, bool, unsigned int, double>, WTF::DefaultHash<WTF::String>, WTF::HashTraits<WTF::String>, WTF::HashTraits<mpark::variant<WTF::String, bool, unsigned int, double> >, WTF::MemoryCompactRobinHoodHashTableTraits, (WTF::Sho
+0x19c5e1728  __TEXT,__text  WebKit::WebPreferencesKey::maxParseDurationKey()
+0x19c5e1790  __TEXT,__text  WebKit::WebPreferencesKey::mathMLEnabledKey()
+0x19c5e17f8  __TEXT,__text  WebKit::WebPreferencesKey::managedMediaSourceLowThresholdKey()
+0x19c5e1860  __TEXT,__text  WebKit::WebPreferencesKey::lowPowerVideoAudioBufferSizeEnabledKey()
+0x19c5e18c8  __TEXT,__text  WebKit::WebPreferencesKey::appleMailPaginationQuirkEnabledKey()
+0x19c5e1930  __TEXT,__text  WebKit::WebPreferencesKey::applePayCapabilityDisclosureAllowedKey()
+0x19c5e1998  __TEXT,__text  WebKit::WebPreferencesKey::asynchronousSpellCheckingEnabledKey()
+0x19c5e1a00  __TEXT,__text  WebKit::WebPreferencesKey::videoPresentationModeAPIEnabledKey()
+0x19c5e1a68  __TEXT,__text  WebKit::WebPreferencesKey::backspaceKeyNavigationEnabledKey()
+0x19c5e1ad0  __TEXT,__text  WebKit::WebPreferencesKey::vp9DecoderEnabledKey()
+0x19c5e1b38  __TEXT,__text  WebKit::WebPreferencesKey::usesEncodingDetectorKey()
+0x19c5e1ba0  __TEXT,__text  WebKit::WebPreferencesKey::usesBackForwardCacheKey()
+0x19c5e1c08  __TEXT,__text  WebKit::WebPreferencesKey::useSystemAppearanceKey()
+0x19c5e1c70  __TEXT,__text  WebKit::WebPreferencesKey::usePreHTML5ParserQuirksKey()
+0x19c5e1cd8  __TEXT,__text  WebKit::WebPreferencesKey::textAreasAreResizableKey()
+0x19c5e1d40  __TEXT,__text  WebKit::WebPreferencesKey::temporaryTileCohortRetentionEnabledKey()
+0x19c5e1da8  __TEXT,__text  WebKit::WebPreferencesKey::telephoneNumberParsingEnabledKey()
+0x19c5e1e10  __TEXT,__text  WebKit::WebPreferencesKey::standardFontFamilyKey()
+0x19c5e1e78  __TEXT,__text  WebKit::WebPreferencesKey::standaloneKey()
+0x19c5e1ee0  __TEXT,__text  WebKit::WebPreferencesKey::smartInsertDeleteEnabledKey()
+0x19c5e1f48  __TEXT,__text  WebKit::WebPreferencesKey::shouldDisplayCaptionsKey()
+0x19c5e1fb0  __TEXT,__text  WebKit::WebPreferencesKey::shouldConvertPositionStyleOnCopyKey()
+0x19c5e2018  __TEXT,__text  WebKit::WebPreferencesKey::shouldConvertInvalidURLsToBlankKey()
+0x19c5e2080  __TEXT,__text  WebKit::WebPreferencesKey::serifFontFamilyKey()
+0x19c5e20e8  __TEXT,__text  WebKit::WebPreferencesKey::sampledPageTopColorMinHeightKey()
+0x19c5e2150  __TEXT,__text  WebKit::WebProcessPool::registerGlobalURLSchemeAsHavingCustomProtocolHandlers(WTF::String const&)
+0x19c5e2200  __TEXT,__text  +[WKBrowsingContextController registerSchemeForCustomProtocol:]
+0x19c5e2338  __TEXT,__text  IPC::Connection::getAuditToken()
+0x19c5e23d4  __TEXT,__text  invocation function for block in WebKit::WebProcessPool::registerNotificationObservers()::$_0::operator()(WTF::ASCIILiteral const&) const
+0x19c5e250c  __TEXT,__text  WebKit::WebPreferencesKey::automaticallyForceEnableScrollingIfNeededToRevealUIKey()
+0x19c5e2574  __TEXT,__text  WebKit::WebPreferencesKey::videoQualityIncludesDisplayCompositingEnabledKey()
+0x19c5e25dc  __TEXT,__text  WebKit::WebPreferencesKey::videoPresentationManagerEnabledKey()
+0x19c5e2644  __TEXT,__text  WebKit::WebPreferencesKey::spatialNavigationEnabledKey()
+0x19c5e26ac  __TEXT,__text  WebKit::WebPreferencesKey::showsURLsInToolTipsEnabledKey()
+0x19c5e2714  __TEXT,__text  WebKit::WebPreferencesKey::shouldUseServiceWorkerShortTimeoutKey()
+0x19c5e277c  __TEXT,__text  WebKit::WebPreferencesKey::shouldRestrictBaseURLSchemesKey()
+0x19c5e27e4  __TEXT,__text  WebKit::WebPreferencesKey::shouldRespectImageOrientationKey()
+0x19c5e284c  __TEXT,__text  WebKit::WebPreferencesKey::shouldDisplayTextDescriptionsKey()
+0x19c5e28b4  __TEXT,__text  WebKit::WebPreferencesKey::selectTrailingWhitespaceEnabledKey()
+0x19c5e291c  __TEXT,__text  WebKit::WebPreferencesKey::caretBrowsingEnabledKey()
+0x19c5e2984  __TEXT,__text  WebKit::WebPreferencesKey::requiresUserGestureToLoadVideoKey()
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e29ec  __TEXT,__text  WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > const& WTF::IdentityExtractor::extract<WTF::Ref<WebKit::Authenticator, WTF::RawPtrTraits<WebKit::Authenticator>, WTF::DefaultRefDerefTraits<WebKit::Authenticator> > >(WTF::Re
+0x19c5e2a00  __TEXT,__text  WTF::Vector<WebCore::HTTPHeaderMap::CommonHeader, 0ul, WTF::CrashOnOverflow, 6ul, WTF::FastMalloc>::span() const
+0x19c5e2a00  __TEXT,__text  WTF::Vector<WebCore::HTTPHeaderMap::CommonHeader, 0ul, WTF::CrashOnOverflow, 6ul, WTF::FastMalloc>::span() const
+0x19c5e2a00  __TEXT,__text  WTF::Vector<WebCore::HTTPHeaderMap::CommonHeader, 0ul, WTF::CrashOnOverflow, 6ul, WTF::FastMalloc>::span() const
+0x19c5e2a00  __TEXT,__text  WTF::Vector<WebCore::HTTPHeaderMap::CommonHeader, 0ul, WTF::CrashOnOverflow, 6ul, WTF::FastMalloc>::span() const
+0x19c5e2a00  __TEXT,__text  WTF::Vector<WebCore::HTTPHeaderMap::CommonHeader, 0ul, WTF::CrashOnOverflow, 6ul, WTF::FastMalloc>::span() const
+0x19c5e2a00  __TEXT,__text  WTF::Vector<WebCore::HTTPHeaderMap::CommonHeader, 0ul, WTF::CrashOnOverflow, 6ul, WTF::FastMalloc>::span() const
+0x19c5e2a00  __TEXT,__text  WTF::Vector<WebCore::HTTPHeaderMap::CommonHeader, 0ul, WTF::CrashOnOverflow, 6ul, WTF::FastMalloc>::span() const
+0x19c5e2a00  __TEXT,__text  WTF::Vector<WebCore::HTTPHeaderMap::CommonHeader, 0ul, WTF::CrashOnOverflow, 6ul, WTF::FastMalloc>::span() const
+0x19c5e2a00  __TEXT,__text  WTF::Vector<WebCore::HTTPHeaderMap::CommonHeader, 0ul, WTF::CrashOnOverflow, 6ul, WTF::FastMalloc>::span() const
+0x19c5e2a00  __TEXT,__text  WTF::Vector<WebCore::HTTPHeaderMap::CommonHeader, 0ul, WTF::CrashOnOverflow, 6ul, WTF::FastMalloc>::span() const
+0x19c5e2a00  __TEXT,__text  WTF::Vector<WebCore::HTTPHeaderMap::CommonHeader, 0ul, WTF::CrashOnOverflow, 6ul, WTF::FastMalloc>::span() const
+0x19c5e2a00  __TEXT,__text  WTF::Vector<WebCore::HTTPHeaderMap::CommonHeader, 0ul, WTF::CrashOnOverflow, 6ul, WTF::FastMalloc>::span() const
+0x19c5e2a00  __TEXT,__text  WTF::Vector<WebCore::HTTPHeaderMap::CommonHeader, 0ul, WTF::CrashOnOverflow, 6ul, WTF::FastMalloc>::span() const
+0x19c5e2a00  __TEXT,__text  WTF::Vector<WebCore::HTTPHeaderMap::CommonHeader, 0ul, WTF::CrashOnOverflow, 6ul, WTF::FastMalloc>::span() const
+0x19c5e2a00  __TEXT,__text  WTF::Vector<WebCore::HTTPHeaderMap::CommonHeader, 0ul, WTF::CrashOnOverflow, 6ul, WTF::FastMalloc>::span() const
+0x19c5e2a58  __TEXT,__text  void WTF::VectorTypeOperations<WTF::String>::uninitializedCopy<18446744073709551615ul>(std::__1::span<WTF::String const, 18446744073709551615ul>, std::__1::span<WTF::String, 18446744073709551615ul>)
+0x19c5e2aec  __TEXT,__text  operator new(unsigned long, NotNullTag, void*)
+0x19c5e2aec  __TEXT,__text  operator new(unsigned long, NotNullTag, void*)
+0x19c5e2b08  __TEXT,__text  WTF::StringImpl::ref()
+0x19c5e2b38  __TEXT,__text  WTF::String::String(WTF::String const&)
+0x19c5e2b78  __TEXT,__text  WTF::String::String(WTF::String const&)
+0x19c5e2bf8  __TEXT,__text  WTF::Vector<unsigned long long, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc>::operator=(WTF::Vector<unsigned long long, 0ul, WTF::CrashOnOverflow, 16ul, WTF::FastMalloc> const&)
+0x19c5e2cb4  __TEXT,__text  -[WKObject .cxx_construct]
+0x19c5e2cc8  __TEXT,__text  WebKit::WebPageGroup::WebPageGroup(WTF::String const&)
+0x19c5e317c  __TEXT,__text  WTF::String WTF::tryMakeStringFromAdapters<WTF::StringTypeAdapter<WTF::ASCIILiteral>, WTF::StringTypeAdapter<unsigned long long> >(WTF::StringTypeAdapter<WTF::ASCIILiteral>&&, WTF::StringTypeAdapter<unsigned long long>&&)
+0x19c5e320c  __TEXT,__text  WTF::RefPtr<WTF::StringImpl, WTF::RawPtrTraits<WTF::StringImpl>, WTF::DefaultRefDerefTraits<WTF::StringImpl> > WTF::tryMakeStringImplFromAdaptersInternal<WTF::StringTypeAdapter<WTF::ASCIILiteral>, WTF::StringTypeAdapter<unsigned long long> >(unsigned int, bool, WTF::StringTypeAdapter<WTF::ASCIILiter
+0x19c5e340c  __TEXT,__text  WebKit::WebPreferences::createWithLegacyDefaults(WTF::String const&, WTF::String const&, WTF::String const&)
+0x19c5e3480  __TEXT,__text  -[WKPreferences _apiObject]
+0x19c5e3488  __TEXT,__text  WebKit::WebPreferences::platformInitializeStore()
+0x19c5e9a0c  __TEXT,__text  WebKit::get_TCC_kTCCServiceMicrophoneSingleton()
+0x19c5e9a54  __TEXT,__text  WTF::HashTableIterator<WTF::RobinHoodHashTable<WTF::String, WTF::KeyValuePair<WTF::String, mpark::variant<WTF::String, bool, unsigned int, double> >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, mpark::variant<WTF::String, bool, unsigned int, double> > >, WTF::DefaultHash<WTF::String
+0x19c5e9a54  __TEXT,__text  WTF::HashTableIterator<WTF::RobinHoodHashTable<WTF::String, WTF::KeyValuePair<WTF::String, mpark::variant<WTF::String, bool, unsigned int, double> >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, mpark::variant<WTF::String, bool, unsigned int, double> > >, WTF::DefaultHash<WTF::String
+0x19c5e9b98  __TEXT,__text  WebKit::WebPreferencesStore::defaults()
+0x19c5f6880  __TEXT,__text  WebKit::WebPreferencesKey::encryptedMediaAPIEnabledKey()
+0x19c5f68e8  __TEXT,__text  WebKit::WebPreferencesKey::mediaAudioCodecIDsAllowedInLockdownModeKey()
+0x19c5f694c  __TEXT,__text  WebKit::WebPreferencesKey::mathFontFamilyKey()
+0x19c5f69b4  __TEXT,__text  WebKit::WebPreferencesKey::managedMediaSourceHighThresholdKey()
+0x19c5f6a1c  __TEXT,__text  WTF::RobinHoodHashTable<WTF::String, WTF::KeyValuePair<WTF::String, mpark::variant<WTF::String, bool, unsigned int, double> >, WTF::KeyValuePairKeyExtractor<WTF::KeyValuePair<WTF::String, mpark::variant<WTF::String, bool, unsigned int, double> > >, WTF::DefaultHash<WTF::String>, WTF::HashMap<WTF::St
+0x19c5f6bc4  __TEXT,__text  WebKit::WebPreferencesKey::longRunningMediaCaptureStreamRepromptIntervalInHoursKey()
+0x19c5f6c28  __TEXT,__text  WebKit::WebPreferencesKey::loadsImagesAutomaticallyKey()
+0x19c5f6c90  __TEXT,__text  WebKit::WebPreferencesKey::loadDeferringEnabledKey()
+0x19c5f6cf8  __TEXT,__text  WebKit::WebPreferencesKey::linkPreloadEnabledKey()
+0x19c5f6d60  __TEXT,__text  WebKit::WebPreferencesKey::linkPreconnectKey()
+0x19c5f6dc8  __TEXT,__text  WebKit::WebPreferencesKey::layoutViewportHeightExpansionFactorKey()
+0x19c5f6e30  __TEXT,__text  WebKit::WebPreferencesKey::layoutFallbackWidthKey()
+0x19c5f6e98  __TEXT,__text  WebKit::WebPreferencesKey::largeImageAsyncDecodingEnabledKey()
+0x19c5f6f00  __TEXT,__text  WebKit::WebPreferencesKey::isExtensibleSSOEnabledKey()
+0x19c5f6f64  __TEXT,__text  WebKit::WebPreferencesKey::javaScriptRuntimeFlagsKey()
+0x19c5f6fcc  __TEXT,__text  WebKit::WebPreferencesKey::javaScriptMarkupEnabledKey()
+0x19c5f7034  __TEXT,__text  WebKit::WebPreferencesKey::fantasyFontFamilyKey()
+0x19c5f709c  __TEXT,__text  WebKit::WebPreferencesKey::javaScriptCanOpenWindowsAutomaticallyKey()
+0x19c5f7104  __TEXT,__text  WebKit::WebPreferencesKey::javaScriptCanAccessClipboardKey()
+0x19c5f716c  __TEXT,__text  WebKit::WebPreferencesKey::invisibleAutoplayNotPermittedKey()
+0x19c5f71d4  __TEXT,__text  WebKit::WebPreferencesKey::interruptVideoOnPageVisibilityChangeEnabledKey()
+0x19c5f723c  __TEXT,__text  WebKit::WebPreferencesKey::fixedFontFamilyKey()
+0x19c5f72a4  __TEXT,__text  WebKit::WebPreferencesKey::interruptAudioOnPageVisibilityChangeEnabledKey()
+0x19c5f730c  __TEXT,__text  WebKit::WebPreferencesKey::interactionRegionMinimumCornerRadiusKey()
+0x19c5f7374  __TEXT,__text  WebKit::WebPreferencesKey::interactionRegionInlinePaddingKey()
+0x19c5f73dc  __TEXT,__text  WebKit::WebPreferencesKey::forceCompositingModeKey()
+0x19c5f7440  __TEXT,__text  WebKit::WebPreferencesKey::inspectorWindowFrameKey()
+0x19c5f74a4  __TEXT,__text  WebKit::WebPreferencesKey::inspectorSupportsShowingCertificateKey()
+0x19c5f750c  __TEXT,__text  WebKit::WebPreferencesKey::forceWebGLUsesLowPowerKey()
+0x19c5f7574  __TEXT,__text  WebKit::WebPreferencesKey::inspectorStartsAttachedKey()
+0x19c5f75d8  __TEXT,__text  WebKit::WebPreferencesKey::inspectorMaximumResourcesContentSizeKey()
+0x19c5f7640  __TEXT,__text  WebKit::WebPreferencesKey::inspectorAttachmentSideKey()
+0x19c5f76a4  __TEXT,__text  WebKit::WebPreferencesKey::inspectorAttachedWidthKey()
+0x19c5f7708  __TEXT,__text  WebKit::WebPreferencesKey::inspectorAttachedHeightKey()
+0x19c5f776c  __TEXT,__text  WebKit::WebPreferencesKey::inlineMediaPlaybackRequiresPlaysInlineAttributeKey()
+0x19c5f77d4  __TEXT,__text  WebKit::WebPreferencesKey::incrementalRenderingSuppressionTimeoutKey()
+0x19c5f783c  __TEXT,__text  WebKit::WebPreferencesKey::incrementalPDFLoadingEnabledKey()
+0x19c5f78a4  __TEXT,__text  WebKit::WebPreferencesKey::incompleteImageBorderEnabledKey()
+0x19c5f790c  __TEXT,__text  WebKit::WebPreferencesKey::inactiveMediaCaptureStreamRepromptWithoutUserGestureIntervalInMinutesKey()
+0x19c5f7970  __TEXT,__text  WebKit::WebPreferencesKey::hiddenPageCSSAnimationSuspensionEnabledKey()
+0x19c5f79d8  __TEXT,__text  WebKit::WebPreferencesKey::acceleratedCompositingEnabledKey()
+0x19c5f7a40  __TEXT,__text  WebKit::WebPreferencesKey::acceleratedCompositingForFixedPositionEnabledKey()
+0x19c5f7aa8  __TEXT,__text  WebKit::WebPreferencesKey::wirelessPlaybackTargetAPIEnabledKey()
+0x19c5f7b10  __TEXT,__text  WebKit::WebPreferencesKey::windowFocusRestrictedKey()
+0x19c5f7b78  __TEXT,__text  WebKit::WebPreferencesKey::webSocketEnabledKey()
+0x19c5f7be0  __TEXT,__text  WebKit::WebPreferencesKey::webSecurityEnabledKey()
+0x19c5f7c48  __TEXT,__text  WebKit::WebPreferencesKey::aggressiveTileRetentionEnabledKey()
+0x19c5f7cb0  __TEXT,__text  WebKit::WebPreferencesKey::allowContentSecurityPolicySourceStarToMatchAnyProtocolKey()
+0x19c5f7d18  __TEXT,__text  WebKit::WebPreferencesKey::allowFileAccessFromFileURLsKey()
+0x19c5f7d80  __TEXT,__text  WebKit::WebPreferencesKey::allowMultiElementImplicitSubmissionKey()
+0x19c5f7de8  __TEXT,__text  WebKit::WebPreferencesKey::allowTestOnlyIPCKey()
+0x19c5f7e50  __TEXT,__text  WebKit::WebPreferencesKey::allowsAirPlayForMediaPlaybackKey()
+0x19c5f7eb8  __TEXT,__text  WebKit::WebPreferencesKey::allowsInlineMediaPlaybackKey()
+0x19c5f7f20  __TEXT,__text  WebKit::WebPreferencesKey::allowsInlineMediaPlaybackAfterFullscreenKey()
+0x19c5f7f88  __TEXT,__text  WebKit::WebPreferencesKey::allowsPictureInPictureMediaPlaybackKey()
+0x19c5f7ff0  __TEXT,__text  WebKit::WebPreferencesKey::alternateFullScreenControlDesignEnabledKey()
+0x19c5f8058  __TEXT,__text  WebKit::WebPreferencesKey::webAudioEnabledKey()
+0x19c5f80c0  __TEXT,__text  WebKit::WebPreferencesKey::wantsBalancedSetDefersLoadingBehaviorKey()
+0x19c5f8128  __TEXT,__text  WebKit::WebPreferencesKey::animatedImageAsyncDecodingEnabledKey()
+0x19c5f8190  __TEXT,__text  WebKit::WebPreferencesKey::visualViewportEnabledKey()
+0x19c5f81f8  __TEXT,__text  WebKit::WebPreferencesKey::audioControlsScaleWithPageZoomKey()
+0x19c5f8260  __TEXT,__text  WebKit::WebPreferencesKey::videoFullscreenRequiresElementFullscreenKey()
+0x19c5f82c8  __TEXT,__text  WebKit::WebPreferencesKey::usesSingleWebProcessKey()
+0x19c5f8330  __TEXT,__text  WebKit::WebPreferencesKey::userInterfaceDirectionPolicyKey()
+0x19c5f8398  __TEXT,__text  WebKit::WebPreferencesKey::useImageDocumentForSubframePDFKey()
+0x19c5f8400  __TEXT,__text  WebKit::WebPreferencesKey::treatsAnyTextCSSLinkAsStylesheetKey()
+0x19c5f8468  __TEXT,__text  WebKit::WebPreferencesKey::textInteractionEnabledKey()
+0x19c5f84d0  __TEXT,__text  WebKit::WebPreferencesKey::textExtractionEnabledKey()
+0x19c5f8534  __TEXT,__text  WebKit::WebPreferencesKey::systemPreviewEnabledKey()
+0x19c5f859c  __TEXT,__text  WebKit::WebPreferencesKey::shouldPrintBackgroundsKey()
+0x19c5f8604  __TEXT,__text  WebKit::WebPreferencesKey::shouldIgnoreMetaViewportKey()
+0x19c5f866c  __TEXT,__text  WebKit::WebPreferencesKey::shouldEnableTextAutosizingBoostKey()
+0x19c5f86d4  __TEXT,__text  WebKit::WebPreferencesKey::sampledPageTopColorMaxDifferenceKey()
+0x19c5f873c  __TEXT,__text  WebKit::WebPreferencesKey::requiresUserGestureForMediaPlaybackKey()
+0x19c5f87a4  __TEXT,__text  WebKit::WebPreferencesKey::requiresUserGestureForAudioPlaybackKey()
+0x19c5f880c  __TEXT,__text  WebKit::WebPreferencesKey::requiresPageVisibilityToPlayAudioKey()
+0x19c5f8874  __TEXT,__text  WebKit::WebPreferencesKey::pictureInPictureAPIEnabledKey()
+0x19c5f88dc  __TEXT,__text  WebKit::WebPreferencesKey::pictographFontFamilyKey()
+0x19c5f8944  __TEXT,__text  WebKit::WebPreferencesKey::contentDispositionAttachmentSandboxEnabledKey()
+0x19c5f89ac  __TEXT,__text  WebKit::WebPreferencesKey::contentChangeObserverEnabledKey()
+0x19c5f8a14  __TEXT,__text  WebKit::WebPreferencesKey::passwordEchoEnabledKey()
+```
+First 1,000 of 79,850.
+

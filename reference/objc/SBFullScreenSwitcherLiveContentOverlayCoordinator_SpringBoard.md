@@ -1,0 +1,147 @@
+# `SBFullScreenSwitcherLiveContentOverlayCoordinator`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `SBFullScreenSwitcherSceneLiveContentOverlayDelegate`, `SBContinuousFoldResizeMorphSurface`, `SBSwitcherLiveContentOverlayCoordinating`
+- 15 instance variables, 21 properties, 90 instance methods, 0 class methods
+
+## Instance variables
+
+```
+B _liveContentOverlayUpdatesSuspended;
+q _containerOrientation;
+@"<SBSwitcherLiveContentOverlayCoordinatorDelegate>" _delegate;
+@"SBSwitcherController" _switcherController;
+@"SBContinuousFoldResizeMorphCoordinator" _resizeMorphCoordinator;
+@"NSString" _keyboardFocusSceneID;
+@"NSString" _sceneIDForTargetOfKeyboardShortcuts;
+@"NSString" _bundleIDForTargetOfKeyboardShortcuts;
+@"NSMutableDictionary" _appLayoutToLiveContentOverlayContext;
+@"NSMutableArray" _visibleAlwaysLiveAppLayouts;
+@"SBSwitcherCoordinatedLayoutStateTransitionContext" _currentCoordinatedLayoutStateTransitionContext;
+@"SBAppSwitcherSettings" _switcherSettings;
+@"NSMutableDictionary" _displayItemsToWindowRelevancyAssertions;
+@"UIApplicationSceneDeactivationAssertion" _lowRelevancyWindowResignActiveAssertion;
+@"NSSet" _lowRelevancySceneDeactivationIdentifiers;
+```
+
+## Properties
+
+```
+@property (T@"SBWindowScene",R,W,N,G_sbWindowScene) sbWindowScene;
+@property (T@"SBSceneManager",R,W,N,G_sceneManager) sceneManager;
+@property (T@"NSString",C,N,V_keyboardFocusSceneID) keyboardFocusSceneID;
+@property (T@"NSString",C,N,V_sceneIDForTargetOfKeyboardShortcuts) sceneIDForTargetOfKeyboardShortcuts;
+@property (T@"NSString",C,N,V_bundleIDForTargetOfKeyboardShortcuts) bundleIDForTargetOfKeyboardShortcuts;
+@property (T@"NSMutableDictionary",&,N,V_appLayoutToLiveContentOverlayContext) appLayoutToLiveContentOverlayContext;
+@property (T@"NSMutableArray",&,N,V_visibleAlwaysLiveAppLayouts) visibleAlwaysLiveAppLayouts;
+@property (T@"SBSwitcherCoordinatedLayoutStateTransitionContext",&,N,V_currentCoordinatedLayoutStateTransitionContext) currentCoordinatedLayoutStateTransitionContext;
+@property (T@"SBAppSwitcherSettings",&,N,V_switcherSettings) switcherSettings;
+@property (T@"NSMutableDictionary",&,N,V_displayItemsToWindowRelevancyAssertions) displayItemsToWindowRelevancyAssertions;
+@property (T@"UIApplicationSceneDeactivationAssertion",&,N,V_lowRelevancyWindowResignActiveAssertion) lowRelevancyWindowResignActiveAssertion;
+@property (T@"NSSet",&,N,V_lowRelevancySceneDeactivationIdentifiers) lowRelevancySceneDeactivationIdentifiers;
+@property (T@"SBSwitcherController",R,W,N,V_switcherController) switcherController;
+@property (T@"SBContinuousFoldResizeMorphCoordinator",&,N,V_resizeMorphCoordinator) resizeMorphCoordinator;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+@property (TB,N,GareLiveContentOverlayUpdatesSuspended,V_liveContentOverlayUpdatesSuspended) liveContentOverlayUpdatesSuspended;
+@property (Tq,N,V_containerOrientation) containerOrientation;
+@property (T@"<SBSwitcherLiveContentOverlayCoordinatorDelegate>",W,N,V_delegate) delegate;
+```
+
+## Instance methods
+
+```
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator layoutStateTransitionCoordinator:transitionDidBeginWithTransitionContext:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator switcherController];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator prepareContentOverlaysForMoveToWindowScene:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator cleanUpAfterCoordinatedLayoutStateTransitionWithContext:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator containerOrientation];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator groupOpacityRequiredWhenRemovingItemContainerForLeafAppLayout:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator switcherSettings];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator layoutStateTransitionCoordinator:transitionWillEndWithTransitionContext:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator setKeyboardFocusSceneID:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator noteKeyboardFocusDidChangeToSceneID:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _sceneDeactivationPredicateMatchingAppLayouts:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _updateSceneRelevancyWithZOrderedDisplayItems:inAppLayout:toLayoutState:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator areLiveContentOverlayUpdatesSuspended];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator setLiveContentOverlayUpdatesSuspended:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _sceneManager];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _shouldShowMultipleWindowsNotSupportedMessageForLayoutStateTransitionContext:medusaViewController:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator lowRelevancyWindowResignActiveAssertion];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator endFoldTransitionMorphForFoldTransitioningAppLayout:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator lowRelevancySceneDeactivationIdentifiers];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator currentCoordinatedLayoutStateTransitionContext];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator fullScreenSwitcherSceneLiveContentOverlay:doubleTappedStatusBar:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _presentTransientErrorMessageIfNeededForLayoutStateTransitionContext:medusaViewController:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator setContainerOrientation:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _newLiveContentOverlayForApplicationContext:layoutRole:sbsDisplayLayoutRole:zOrderIndex:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator traitsParticipantForFullScreenSwitcherSceneLiveContentOverlay:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator appLayoutWillBecomeVisible:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _deviceApplicationSceneViewControllerForAppLayout:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator appLayoutToLiveContentOverlayContext];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator prepareForCoordinatedLayoutStateTransitionWithContext:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _continuousFoldPortalContentRotationFromSwitcherController:forSceneIdentifier:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator resizeMorphCoordinator];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator setBundleIDForTargetOfKeyboardShortcuts:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _moveExistingOverlayForAppLayout:toAppLayout:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator setCurrentCoordinatedLayoutStateTransitionContext:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator keyboardFocusSceneID];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator appLayoutDidBecomeHidden:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _invalidateAssertions:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _existingOverlayTypeForAppLayout:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator setLowRelevancySceneDeactivationIdentifiers:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator setVisibleAlwaysLiveAppLayouts:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator bundleIDForTargetOfKeyboardShortcuts];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _shouldAnimateAddingLiveContentOverlayForTransitionContext:leafAppLayout:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _continuousFoldResolvedInterfaceOrientationForSwitcherController:sceneIdentifier:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _removeOverlayForAppLayout:animated:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator setLowRelevancyWindowResignActiveAssertion:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator invalidate];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator endInteractiveDisplayModeTransitionAtMode:forAppLayout:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator initWithSwitcherController:resizeMorphCoordinator:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator setDelegate:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _sbWindowScene];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _shouldCreateAssertionForType:withSceneRelevancyResult:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator layoutStateTransitionCoordinator:transitionDidEndWithTransitionContext:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator visibleAlwaysLiveAppLayouts];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator wantsHomeAffordanceAutoHideForAppLayout:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator didRotateFromInterfaceOrientation:toInterfaceOrientation:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator updateInteractiveDisplayModeTransitionProgress:forAppLayout:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator appLayoutForKeyboardFocusedScene];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator willRotateFromInterfaceOrientation:toInterfaceOrientation:alongsideContainerView:animated:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator prepareFoldTransitionMorphForFoldTransitioningAppLayout:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator beginInteractiveDisplayModeTransitionToMode:forAppLayout:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator setAppLayoutToLiveContentOverlayContext:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator wantsEdgeProtectForHomeGestureForAppLayout:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator delegate];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator setSceneViewDisplayMode:forAppLayout:animationFactory:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _configureLiveContentOverlayView:forTransitionContext:layoutRole:sbsDisplayLayoutRole:zOrderIndex:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator setSceneIDForTargetOfKeyboardShortcuts:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator fullScreenSwitcherSceneLiveContentOverlay:tappedStatusBar:tapActionType:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator appLayoutForSceneIdentifier:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator continuousFoldResizeMorphRegisterSidesForAppLayout:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator displayItemsToWindowRelevancyAssertions];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _canTransitionToOverlayType:forAppLayout:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _foldTransitionRegisterOverlay:forAppLayout:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _updateSceneRelevancyAssertionsForAppLayout:assertionTypesToCurrentAssertions:applicationSceneHandle:sceneRelevancyResult:reason:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _updateFullScreenDisplayLayoutElementsForActiveAppLayouts:inAppLayout:layoutAttributesMap:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator setSwitcherSettings:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _liveContentOverlayForLeafAppLayout:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _addOverlay:forAppLayout:animated:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _shouldShowSplitViewNotSupportedMessageForLayoutStateTransitionContext:medusaViewController:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator itemContainerForAppLayout:willBeReusedForAppLayout:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator willPerformNonAnimatedTransitionToInterfaceOrientation:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _calculateSBSDisplayLayoutElementRoleForDisplayItem:inAppLayout:zOrderIndex:layoutAttributesMap:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _layoutStateContainsElementBlockedForScreenTimeExpiration:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator setResizeMorphCoordinator:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _updateAlwaysLiveSceneContentOverlays];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator setDisplayItemsToWindowRelevancyAssertions:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _updatePortaledSceneLiveContentOverlays];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator sceneIDForTargetOfKeyboardShortcuts];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator updateContinuousFoldPortaledContent];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _supportsMovingOverlayTypeBetweenAppLayouts:];
+-[SBFullScreenSwitcherLiveContentOverlayCoordinator _itemToZOrderIndexDictionaryForAppLayout:layoutAttributesMap:];
+```

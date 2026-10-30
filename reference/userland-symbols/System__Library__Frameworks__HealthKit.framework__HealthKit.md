@@ -1,0 +1,4018 @@
+# Symbols: `/System/Library/Frameworks/HealthKit.framework/HealthKit`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__Frameworks__HealthKit.framework__HealthKit.md). **[DSC]**
+
+4,058 public symbols, 20,111 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1e0b50910  __DATA_CONST,__const  _CountAnalyzedTacogramsPast24Hours
+0x1e0b50908  __DATA_CONST,__const  _CountMobileAssetsDownloadedPast24Hours
+0x1944d7908  __TEXT,__const  _HDDefaultTimeIntervalBeforeOwnershipTransfer
+0x1944d7918  __TEXT,__const  _HDDefaultTimeIntervalForContextPruning
+0x1944d7910  __TEXT,__const  _HDDefaultTimeIntervalForContextUpdate
+0x1940d079c  __TEXT,__text  _HDHealthStoreProviderServerInterface
+0x1e0b53058  __DATA_CONST,__const  _HDOntologyTaskServerIdentifier
+0x19419bcbc  __TEXT,__text  _HDStringRepresentationForRecipientIdentifier
+0x1e0b55ad8  __DATA_CONST,__const  _HDTimeIntervalBeforeOwnershipTransferDefaultKey
+0x1944d7920  __TEXT,__const  _HDTimeIntervalBeforeUnconditionalOwnershipTransfer
+0x1e0b4ad08  __DATA_CONST,__const  _HKAccountOwnerBirthDateKeyPath
+0x1e0b4ad10  __DATA_CONST,__const  _HKAccountOwnerNameKeyPath
+0x1e0b4a788  __DATA_CONST,__const  _HKAccountOwnerTypeIdentifierAccountOwner
+0x1e0b49f60  __DATA_CONST,__const  _HKActiveDataCollectionObserverTaskServerIdentifier
+0x1e0b57cf0  __DATA_CONST,__const  _HKActivityMoveModeDefaultsKey
+0x1e0b57ce8  __DATA_CONST,__const  _HKActivityMoveModeDidUpdateNotification
+0x193feabf8  __TEXT,__text  _HKActivityMoveModeToString
+0x1e0b4a680  __DATA_CONST,__const  _HKActivitySummaryTypeIdentifier
+0x1941466f8  __TEXT,__text  _HKAllBasicUserDomainConceptPropertyTypes
+0x19403f700  __TEXT,__text  _HKAllCollectibleTypesWithStoreDemoModeEnabled
+0x194148cec  __TEXT,__text  _HKAllDeprecatedPropertyTypes
+0x194086de4  __TEXT,__text  _HKAllFeatureAvailabilityRequirementIdentifiers
+0x193fc95cc  __TEXT,__text  _HKAllFeatureAvailabilityRequirementTypes
+0x1941476a4  __TEXT,__text  _HKAllLocalizedStringPropertyTypes
+0x19414811c  __TEXT,__text  _HKAllNamedQuantityPropertyTypes
+0x194177b70  __TEXT,__text  _HKAllPredicateOperatorTypes
+0x19413ad84  __TEXT,__text  _HKAllRegisteredLoggingUnitStrings
+0x1e0b4e990  __DATA_CONST,__const  _HKAllergyReactionKeyPathManifestations
+0x1e0b4e998  __DATA_CONST,__const  _HKAllergyReactionKeyPathSeverity
+0x1e0b4ad40  __DATA_CONST,__const  _HKAllergyRecordAllergyCodingCollectionKeyPath
+0x1e0b4ad48  __DATA_CONST,__const  _HKAllergyRecordAllergyKeyPath
+0x1e0b4ad50  __DATA_CONST,__const  _HKAllergyRecordAllergyTypeCodingKeyPath
+0x1e0b4ad58  __DATA_CONST,__const  _HKAllergyRecordAllergyTypeKeyPath
+0x1e0b4ad60  __DATA_CONST,__const  _HKAllergyRecordAsserterKeyPath
+0x1e0b4ad68  __DATA_CONST,__const  _HKAllergyRecordCategoryCodingKeyPath
+0x1e0b4ad70  __DATA_CONST,__const  _HKAllergyRecordCategoryKeyPath
+0x1e0b4ad78  __DATA_CONST,__const  _HKAllergyRecordClinicalStatusCodingKeyPath
+0x1e0b4ad80  __DATA_CONST,__const  _HKAllergyRecordClinicalStatusKeyPath
+0x1e0b4ad88  __DATA_CONST,__const  _HKAllergyRecordCriticalityCodingKeyPath
+0x1e0b4ad90  __DATA_CONST,__const  _HKAllergyRecordCriticalityKeyPath
+0x1e0b4ad98  __DATA_CONST,__const  _HKAllergyRecordLastOccurrenceDateKeyPath
+0x1e0b4ada0  __DATA_CONST,__const  _HKAllergyRecordOnsetDateKeyPath
+0x1e0b4ada8  __DATA_CONST,__const  _HKAllergyRecordReactionsKeyPath
+0x1e0b4adb0  __DATA_CONST,__const  _HKAllergyRecordRecordedDateKeyPath
+0x1e0b4a750  __DATA_CONST,__const  _HKAllergyRecordTypeIdentifierAllergyRecord
+0x1e0b4adb8  __DATA_CONST,__const  _HKAllergyRecordVerificationStatusCodingKeyPath
+0x1e0b4adc0  __DATA_CONST,__const  _HKAllergyRecordVerificationStatusKeyPath
+0x19404030c  __TEXT,__text  _HKAllowReadAuthorizationForTypeWithEntitlements
+0x1940402bc  __TEXT,__text  _HKAllowShareAuthorizationForTypeWithEntitlements
+0x1e0b48fb8  __DATA_CONST,__const  _HKAnalyticsAgreementControlEntitlement
+0x194008308  __TEXT,__text  _HKAnalyticsAllowed
+0x1e0b48e38  __DATA_CONST,__const  _HKAnalyticsBooleanErrorSentinel
+0x1e0b48e30  __DATA_CONST,__const  _HKAnalyticsBoundedIntegerErrorSentinel
+0x194008500  __TEXT,__text  _HKAnalyticsDecadeBucketedAgeForAge
+0x194008530  __TEXT,__text  _HKAnalyticsDecadeBucketedAgeForAgeWithBoundsAndBucketRange
+0x194008514  __TEXT,__text  _HKAnalyticsDecadeBucketedAgeForAgeWithMinimumAge
+0x194008524  __TEXT,__text  _HKAnalyticsDecadeBucketedAgeForAgeWithMinimumAgeAndMaximumAge
+0x19441cc38  __TEXT,__const  _HKAnalyticsDefaultMaximumBucketingAge
+0x19400869c  __TEXT,__text  _HKAnalyticsErrorCategoryForFeatureAvailabilityOnboardingEligibility
+0x1940086d0  __TEXT,__text  _HKAnalyticsErrorCategoryForFeatureAvailabilityOnboardingIneligibilityReasons
+0x194008734  __TEXT,__text  _HKAnalyticsErrorDetailsForFeatureAvailabilityOnboardingEligibility
+0x194008768  __TEXT,__text  _HKAnalyticsErrorDetailsForFeatureAvailabilityOnboardingIneligibilityReasons
+0x1e0b48df0  __DATA_CONST,__const  _HKAnalyticsPropertyAreHealthNotificationsAuthorized
+0x1e0b48de0  __DATA_CONST,__const  _HKAnalyticsPropertyNameActiveWatchBuildVersion
+0x1e0b48dd8  __DATA_CONST,__const  _HKAnalyticsPropertyNameActiveWatchProductType
+0x1e0b48de8  __DATA_CONST,__const  _HKAnalyticsPropertyNameAge
+0x1e0b48e08  __DATA_CONST,__const  _HKAnalyticsPropertyNameAreHealthNotificationsAuthorized
+0x1e0b48df8  __DATA_CONST,__const  _HKAnalyticsPropertyNameBiologicalSex
+0x1e0b48e10  __DATA_CONST,__const  _HKAnalyticsPropertyNameDeviceContextCountPhone
+0x1e0b48e28  __DATA_CONST,__const  _HKAnalyticsPropertyNameDeviceContextCountVisionPro
+0x1e0b48e18  __DATA_CONST,__const  _HKAnalyticsPropertyNameDeviceContextCountWatch
+0x1e0b48e20  __DATA_CONST,__const  _HKAnalyticsPropertyNameDeviceContextCountiPad
+0x1e0b48e00  __DATA_CONST,__const  _HKAnalyticsPropertyNameIsImproveHealthAndActivityAllowed
+0x1940084c8  __TEXT,__text  _HKAnalyticsPropertyValueForBiologicalSex
+0x1940088ac  __TEXT,__text  _HKAnalyticsSigFigBinnedValue
+0x1e0b48e40  __DATA_CONST,__const  _HKAnalyticsStringErrorSentinel
+0x1e0b49068  __DATA_CONST,__const  _HKAnyLocalDeviceSourceIdentity
+0x1e0b48fe0  __DATA_CONST,__const  _HKAppReplacementEntitlement
+0x1e0b49090  __DATA_CONST,__const  _HKAppVersionOverrideEntitlement
+0x1941078f4  __TEXT,__text  _HKAppleIrregularRhythmNotificationsAlgorithmVersionForPrivateVersionString
+0x194190a88  __TEXT,__text  _HKAppleSleepTrackingTestSegment
+0x19419142c  __TEXT,__text  _HKAppleSleepingBreathingDisturbancesClassificationForQuantity
+0x1941914c0  __TEXT,__text  _HKAppleSleepingBreathingDisturbancesMinimumQuantityForClassification
+0x1940fc2d8  __TEXT,__text  _HKAppleWalkingSteadinessClassificationForQuantity
+0x1940fc530  __TEXT,__text  _HKAppleWalkingSteadinessMaximumQuantityForClassification
+0x1940fc4a0  __TEXT,__text  _HKAppleWalkingSteadinessMinimumQuantityForClassification
+0x1e0b58380  __DATA_CONST,__const  _HKAppleWatchSupportHeartURL
+0x1e0b48ed8  __DATA_CONST,__const  _HKApplicationIdentifierEntitlement
+0x193fa30b4  __TEXT,__text  _HKApplicationSDKVersionToken
+0x1944d7ad8  __TEXT,__const  _HKApproximateSecondsInADay
+0x1944d7ae0  __TEXT,__const  _HKApproximateSecondsInAHour
+0x194096aec  __TEXT,__text  _HKAtrialFibrillationDetectionIsAvailableForGeolocatedCountryCode
+0x1e0b4cac0  __DATA_CONST,__const  _HKAtrialFibrillationDetectionOnboardingCountryCodeKey
+0x1e0b4cab8  __DATA_CONST,__const  _HKAtrialFibrillationDetectionOnboardingVersionCompletedKey
+0x194096b3c  __TEXT,__text  _HKAtrialFibrillationDetectionSupportedCountries
+0x194095f3c  __TEXT,__text  _HKAtrialFibrillationDetectionSupportedStateForGeolocatedCountryCodeAndWatchOSVersion
+0x1e0b54500  __DATA_CONST,__const  _HKAttachmentClinicalRecordSchemaIdentifier
+0x1944d6c00  __TEXT,__const  _HKAttachmentDataChunkSize
+0x1e0b544f8  __DATA_CONST,__const  _HKAttachmentObjectSchemaIdentifier
+0x1e0b544f0  __DATA_CONST,__const  _HKAttachmentStoreServerIdentifier
+0x1940e7120  __TEXT,__text  _HKAudiogramClampedSensitivityPointQuantity
+0x19400ceb8  __TEXT,__text  _HKAuthorizationBooleanResultForConceptAuthorizationRecordStatus
+0x1e0b48fd0  __DATA_CONST,__const  _HKAuthorizationBypassEntitlement
+0x1eb971958  __DATA,__data  _HKAuthorizationEventBundleIdentifierKey
+0x1eb971948  __DATA,__data  _HKAuthorizationEventStream
+0x1e0b48fc8  __DATA_CONST,__const  _HKAuthorizationEventsEntitlement
+0x1941996c4  __TEXT,__text  _HKAuthorizationIdentifiersFromSharingAuthorizations
+0x1e0b48fd8  __DATA_CONST,__const  _HKAuthorizationManagerEntitlement
+0x1940403e8  __TEXT,__text  _HKAuthorizationSchemaProviderForType
+0x19400b324  __TEXT,__text  _HKAuthorizationStatusAllowsReading
+0x19400b2dc  __TEXT,__text  _HKAuthorizationStatusAllowsSharing
+0x19400b7f8  __TEXT,__text  _HKAuthorizationStatusToString
+0x194012108  __TEXT,__text  _HKAuthorizationStoreClientInterface
+0x1940121e0  __TEXT,__text  _HKAuthorizationStoreReadServerInterface
+0x194012928  __TEXT,__text  _HKAuthorizationStoreResetServerInterface
+0x194012708  __TEXT,__text  _HKAuthorizationStoreWriteServerInterface
+0x1941820e0  __TEXT,__text  _HKBLEPeripheralSourceName
+0x1e0b48fb0  __DATA_CONST,__const  _HKBackgroundWorkoutStartEntitlement
+0x1e0b4aca0  __DATA_CONST,__const  _HKBilateralQuantityTypeIdentifierAnkleDorsiflexion
+0x1e0b4ac90  __DATA_CONST,__const  _HKBilateralQuantityTypeIdentifierElbowFlexion
+0x1e0b4acb8  __DATA_CONST,__const  _HKBilateralQuantityTypeIdentifierHipFlexionKneeExtension
+0x1e0b4acb0  __DATA_CONST,__const  _HKBilateralQuantityTypeIdentifierHipFlexionKneeFlexion
+0x1e0b4ac98  __DATA_CONST,__const  _HKBilateralQuantityTypeIdentifierKneeFlexion
+0x1e0b4aca8  __DATA_CONST,__const  _HKBilateralQuantityTypeIdentifierShoulderFlexion
+0x1e0b4ad00  __DATA_CONST,__const  _HKBilateralQuantityTypeIdentifierSingleLegStanceTime
+0x193fa5b78  __TEXT,__text  _HKBitPatternCastSignedToUnsignedInt64
+0x193fa70c4  __TEXT,__text  _HKBitPatternCastUnsignedToSignedInt64
+0x1e0b49568  __DATA_CONST,__const  _HKBloodPressureClassificationCategoryAHAElevated
+0x1e0b49570  __DATA_CONST,__const  _HKBloodPressureClassificationCategoryAHAHypertensionStage1
+0x1e0b49578  __DATA_CONST,__const  _HKBloodPressureClassificationCategoryAHAHypertensionStage2
+0x1e0b49560  __DATA_CONST,__const  _HKBloodPressureClassificationCategoryAHANormal
+0x1e0b49580  __DATA_CONST,__const  _HKBloodPressureClassificationCategoryAHASevereHypertension
+0x1e0b49590  __DATA_CONST,__const  _HKBloodPressureClassificationCategoryESCElevated
+0x1e0b49598  __DATA_CONST,__const  _HKBloodPressureClassificationCategoryESCHypertension
+0x1e0b495a0  __DATA_CONST,__const  _HKBloodPressureClassificationCategoryESCHypertensiveEmergency
+0x1e0b49588  __DATA_CONST,__const  _HKBloodPressureClassificationCategoryESCNonElevated
+0x1e0b495b0  __DATA_CONST,__const  _HKBloodPressureClassificationCategoryFIGOMildlyElevated
+0x1e0b495a8  __DATA_CONST,__const  _HKBloodPressureClassificationCategoryFIGONormal
+0x1e0b495b8  __DATA_CONST,__const  _HKBloodPressureClassificationCategoryFIGOSeverelyElevated
+0x194014cc0  __TEXT,__text  _HKBloodPressureClassificationCategoryForGuidelines
+0x1e0b49558  __DATA_CONST,__const  _HKBloodPressureClassificationCategoryUnavailable
+0x194014ca0  __TEXT,__text  _HKBloodPressureClassificationGuidelinesIdentifierForGuidelines
+0x1941eb1d0  __TEXT,__text  _HKBoolValueForNanoPreferencesUserDefaultsKey
+0x193fc1c6c  __TEXT,__text  _HKCalendarComponentsFromDayIndex
+0x1941b966c  __TEXT,__text  _HKCalendarDateTransformNone
+0x1941b9680  __TEXT,__text  _HKCalendarDateTransformPreceding6PM
+0x1944d7318  __TEXT,__const  _HKCardioFitnessAgeUpperBound
+0x1944d7328  __TEXT,__const  _HKCardioFitnessDisplayVO2MaxLowerBound
+0x1e0b4dac0  __DATA_CONST,__const  _HKCardioFitnessFeatureVersion
+0x1944d7320  __TEXT,__const  _HKCardioFitnessMaximumModelAge
+0x1941dcf54  __TEXT,__text  _HKCardioFitnessRoundedThresholdValue
+0x193fd35ec  __TEXT,__text  _HKCategoryTypeAcceptsValue
+0x1e0b4a7f0  __DATA_CONST,__const  _HKCategoryTypeIdentifierAbdominalCramps
+0x1e0b4a810  __DATA_CONST,__const  _HKCategoryTypeIdentifierAcne
+0x1e0b4a858  __DATA_CONST,__const  _HKCategoryTypeIdentifierAppetiteChanges
+0x1e0b4a5b0  __DATA_CONST,__const  _HKCategoryTypeIdentifierAppleStandHour
+0x1e0b4aa38  __DATA_CONST,__const  _HKCategoryTypeIdentifierAppleWalkingSteadinessEvent
+0x1e0b51470  __DATA_CONST,__const  _HKCategoryTypeIdentifierAudioExposureEvent
+0x1e0b4ac50  __DATA_CONST,__const  _HKCategoryTypeIdentifierBiologicalSex
+0x1e0b4a9e0  __DATA_CONST,__const  _HKCategoryTypeIdentifierBladderIncontinence
+0x1e0b4acd0  __DATA_CONST,__const  _HKCategoryTypeIdentifierBleedingAfterMenopause
+0x1e0b4ac08  __DATA_CONST,__const  _HKCategoryTypeIdentifierBleedingAfterPregnancy
+0x1e0b4ac00  __DATA_CONST,__const  _HKCategoryTypeIdentifierBleedingDuringPregnancy
+0x1e0b4a800  __DATA_CONST,__const  _HKCategoryTypeIdentifierBloating
+0x1e0b4ac40  __DATA_CONST,__const  _HKCategoryTypeIdentifierBloodType
+0x1e0b4a7f8  __DATA_CONST,__const  _HKCategoryTypeIdentifierBreastPain
+0x1e0b4a648  __DATA_CONST,__const  _HKCategoryTypeIdentifierCervicalMucusQuality
+0x1e0b4a948  __DATA_CONST,__const  _HKCategoryTypeIdentifierChestTightnessOrPain
+0x1e0b4a9c8  __DATA_CONST,__const  _HKCategoryTypeIdentifierChills
+0x1e0b4a830  __DATA_CONST,__const  _HKCategoryTypeIdentifierConstipation
+0x1e0b4a8f0  __DATA_CONST,__const  _HKCategoryTypeIdentifierContraceptive
+0x1e0b4a990  __DATA_CONST,__const  _HKCategoryTypeIdentifierCoughing
+0x1e0b4a838  __DATA_CONST,__const  _HKCategoryTypeIdentifierDiarrhea
+0x1e0b4a958  __DATA_CONST,__const  _HKCategoryTypeIdentifierDizziness
+0x1e0b4a9d8  __DATA_CONST,__const  _HKCategoryTypeIdentifierDrySkin
+0x1e0b4a960  __DATA_CONST,__const  _HKCategoryTypeIdentifierECGOtherSymptom
+0x1e0b4a890  __DATA_CONST,__const  _HKCategoryTypeIdentifierEnvironmentalAudioExposureEvent
+0x1e0b4a950  __DATA_CONST,__const  _HKCategoryTypeIdentifierFainting
+0x1e0b4a840  __DATA_CONST,__const  _HKCategoryTypeIdentifierFatigue
+0x1e0b4a938  __DATA_CONST,__const  _HKCategoryTypeIdentifierFever
+0x1e0b4ac48  __DATA_CONST,__const  _HKCategoryTypeIdentifierFitzpatrickSkinType
+0x1e0b4ac68  __DATA_CONST,__const  _HKCategoryTypeIdentifierGender
+0x1e0b4aa00  __DATA_CONST,__const  _HKCategoryTypeIdentifierGeneralizedBodyAche
+0x1e0b4a9d0  __DATA_CONST,__const  _HKCategoryTypeIdentifierHairLoss
+0x1e0b4a9f8  __DATA_CONST,__const  _HKCategoryTypeIdentifierHandwashingEvent
+0x1e0b4a808  __DATA_CONST,__const  _HKCategoryTypeIdentifierHeadache
+0x1e0b4a920  __DATA_CONST,__const  _HKCategoryTypeIdentifierHeadphoneAudioExposureEvent
+0x1e0b4a988  __DATA_CONST,__const  _HKCategoryTypeIdentifierHeartburn
+0x1e0b4a778  __DATA_CONST,__const  _HKCategoryTypeIdentifierHighHeartRateEvent
+0x1e0b4a860  __DATA_CONST,__const  _HKCategoryTypeIdentifierHotFlashes
+0x1e0b4aa58  __DATA_CONST,__const  _HKCategoryTypeIdentifierHypertensionEvent
+0x1e0b4aaa0  __DATA_CONST,__const  _HKCategoryTypeIdentifierInfrequentMenstrualCycles
+0x1e0b4a660  __DATA_CONST,__const  _HKCategoryTypeIdentifierIntermenstrualBleeding
+0x1e0b4a7e8  __DATA_CONST,__const  _HKCategoryTypeIdentifierIrregularHeartRhythmEvent
+0x1e0b4aa98  __DATA_CONST,__const  _HKCategoryTypeIdentifierIrregularMenstrualCycles
+0x1e0b4a8e8  __DATA_CONST,__const  _HKCategoryTypeIdentifierLactation
+0x1e0b4aa08  __DATA_CONST,__const  _HKCategoryTypeIdentifierLossOfSmell
+0x1e0b4aa10  __DATA_CONST,__const  _HKCategoryTypeIdentifierLossOfTaste
+0x1e0b4a9f0  __DATA_CONST,__const  _HKCategoryTypeIdentifierLowCardioFitnessEvent
+0x1e0b4a7a8  __DATA_CONST,__const  _HKCategoryTypeIdentifierLowHeartRateEvent
+0x1e0b4a818  __DATA_CONST,__const  _HKCategoryTypeIdentifierLowerBackPain
+0x1e0b4a9e8  __DATA_CONST,__const  _HKCategoryTypeIdentifierMemoryLapse
+0x1e0b4acc8  __DATA_CONST,__const  _HKCategoryTypeIdentifierMenopausalState
+0x1e0b4a658  __DATA_CONST,__const  _HKCategoryTypeIdentifierMenstrualFlow
+0x1e0b4a678  __DATA_CONST,__const  _HKCategoryTypeIdentifierMindfulSession
+0x1e0b4a828  __DATA_CONST,__const  _HKCategoryTypeIdentifierMoodChanges
+0x1e0b4a848  __DATA_CONST,__const  _HKCategoryTypeIdentifierNausea
+0x1e0b4a9c0  __DATA_CONST,__const  _HKCategoryTypeIdentifierNightSweats
+0x1e0b4a650  __DATA_CONST,__const  _HKCategoryTypeIdentifierOvulationTestResult
+0x1e0b4a820  __DATA_CONST,__const  _HKCategoryTypeIdentifierPelvicPain
+0x1e0b4aa88  __DATA_CONST,__const  _HKCategoryTypeIdentifierPersistentIntermenstrualBleeding
+0x1e0b4a8e0  __DATA_CONST,__const  _HKCategoryTypeIdentifierPregnancy
+0x1e0b4aa18  __DATA_CONST,__const  _HKCategoryTypeIdentifierPregnancyTestResult
+0x1e0b4aa20  __DATA_CONST,__const  _HKCategoryTypeIdentifierProgesteroneTestResult
+0x1e0b4aa90  __DATA_CONST,__const  _HKCategoryTypeIdentifierProlongedMenstrualPeriods
+0x1e0b4a928  __DATA_CONST,__const  _HKCategoryTypeIdentifierRapidPoundingOrFlutteringHeartbeat
+0x1e0b4acf0  __DATA_CONST,__const  _HKCategoryTypeIdentifierReferenceSex
+0x1e0b4a9b0  __DATA_CONST,__const  _HKCategoryTypeIdentifierRunnyNose
+0x1e0b4a668  __DATA_CONST,__const  _HKCategoryTypeIdentifierSexualActivity
+0x1e0b4a940  __DATA_CONST,__const  _HKCategoryTypeIdentifierShortnessOfBreath
+0x1e0b4a9a8  __DATA_CONST,__const  _HKCategoryTypeIdentifierSinusCongestion
+0x1e0b4a930  __DATA_CONST,__const  _HKCategoryTypeIdentifierSkippedHeartbeat
+0x1e0b4a580  __DATA_CONST,__const  _HKCategoryTypeIdentifierSleepAnalysis
+0x1e0b4aaf0  __DATA_CONST,__const  _HKCategoryTypeIdentifierSleepApneaEvent
+0x1e0b4a850  __DATA_CONST,__const  _HKCategoryTypeIdentifierSleepChanges
+0x1e0b4a9a0  __DATA_CONST,__const  _HKCategoryTypeIdentifierSoreThroat
+0x1e0b4a8d0  __DATA_CONST,__const  _HKCategoryTypeIdentifierToothbrushingEvent
+0x1e0b4ab60  __DATA_CONST,__const  _HKCategoryTypeIdentifierUnsuccessfulBloodOxygenSaturationAnalysisEvent
+0x1e0b4a9b8  __DATA_CONST,__const  _HKCategoryTypeIdentifierVaginalDryness
+0x1e0b4a980  __DATA_CONST,__const  _HKCategoryTypeIdentifierVomiting
+0x1e0b4a998  __DATA_CONST,__const  _HKCategoryTypeIdentifierWheezing
+0x194228df0  __TEXT,__text  _HKCategoryValueSleepAnalysisAsleepValues
+0x193fb8998  __TEXT,__text  _HKCharacteristicTypeAcceptsValue
+0x1e0b4a888  __DATA_CONST,__const  _HKCharacteristicTypeIdentifierActivityMoveMode
+0x1e0b4a588  __DATA_CONST,__const  _HKCharacteristicTypeIdentifierBiologicalSex
+0x1e0b4a598  __DATA_CONST,__const  _HKCharacteristicTypeIdentifierBloodType
+0x1e0b4a590  __DATA_CONST,__const  _HKCharacteristicTypeIdentifierDateOfBirth
+0x1e0b4a630  __DATA_CONST,__const  _HKCharacteristicTypeIdentifierFitzpatrickSkinType
+0x1e0b4acf8  __DATA_CONST,__const  _HKCharacteristicTypeIdentifierReferenceSex
+0x1e0b4a698  __DATA_CONST,__const  _HKCharacteristicTypeIdentifierWheelchairUse
+0x194228890  __TEXT,__text  _HKClinicalContentAnalyticsTriggerOptionsToString
+0x194228818  __TEXT,__text  _HKClinicalContentAnalyticsTriggerReasonToString
+0x19422891c  __TEXT,__text  _HKClinicalDataCollectionReasonToString
+0x1e0b4ae08  __DATA_CONST,__const  _HKClinicalNoteRecordAuthorsKeyPath
+0x1e0b4ae10  __DATA_CONST,__const  _HKClinicalNoteRecordCategoriesCodingCollectionsKeyPath
+0x1e0b4ae18  __DATA_CONST,__const  _HKClinicalNoteRecordCategoriesKeyPath
+0x1e0b4ae20  __DATA_CONST,__const  _HKClinicalNoteRecordDocumentTypeCodingCollectionKeyPath
+0x1e0b4ae28  __DATA_CONST,__const  _HKClinicalNoteRecordDocumentTypeKeyPath
+0x1e0b4ae30  __DATA_CONST,__const  _HKClinicalNoteRecordNoteCreationDateKeyPath
+0x1e0b4ae38  __DATA_CONST,__const  _HKClinicalNoteRecordRelevantEndDateKeyPath
+0x1e0b4ae40  __DATA_CONST,__const  _HKClinicalNoteRecordRelevantStartDateKeyPath
+0x1e0b4ae48  __DATA_CONST,__const  _HKClinicalNoteRecordStatusCodingKeyPath
+0x1e0b4ae50  __DATA_CONST,__const  _HKClinicalNoteRecordStatusKeyPath
+0x1e0b4aab0  __DATA_CONST,__const  _HKClinicalNoteRecordTypeIdentifierClinicalNoteRecord
+0x1e0b4dc78  __DATA_CONST,__const  _HKClinicalRecordDisplayNameKeyPath
+0x1e0b4dc80  __DATA_CONST,__const  _HKClinicalRecordFHIRResourceKeyPath
+0x194228974  __TEXT,__text  _HKClinicalReferencedActorTypeToString
+0x1940b5c6c  __TEXT,__text  _HKClinicalTypeForDiagnosticTestResultCategory
+0x1e0b4a7b0  __DATA_CONST,__const  _HKClinicalTypeIdentifierAllergyRecord
+0x1e0b4aab8  __DATA_CONST,__const  _HKClinicalTypeIdentifierClinicalNoteRecord
+0x1e0b4a7b8  __DATA_CONST,__const  _HKClinicalTypeIdentifierConditionRecord
+0x1e0b4a970  __DATA_CONST,__const  _HKClinicalTypeIdentifierCoverageRecord
+0x1e0b4a7c0  __DATA_CONST,__const  _HKClinicalTypeIdentifierImmunizationRecord
+0x1e0b4a7c8  __DATA_CONST,__const  _HKClinicalTypeIdentifierLabResultRecord
+0x1e0b4a7d0  __DATA_CONST,__const  _HKClinicalTypeIdentifierMedicationRecord
+0x1e0b4a7d8  __DATA_CONST,__const  _HKClinicalTypeIdentifierProcedureRecord
+0x1e0b4a7e0  __DATA_CONST,__const  _HKClinicalTypeIdentifierVitalSignRecord
+0x1e0b490a0  __DATA_CONST,__const  _HKCloudSyncAttributedBundleIdentifier
+0x193fa8890  __TEXT,__text  _HKCloudSyncControlClientInterface
+0x193fa88a8  __TEXT,__text  _HKCloudSyncControlServerInterface
+0x1942281c8  __TEXT,__text  _HKCloudSyncDataUploadRequestStatusToString
+0x194228504  __TEXT,__text  _HKCloudSyncFullSyncReasonToString
+0x1e0b54c18  __DATA_CONST,__const  _HKCloudSyncObserverServerIdentifier
+0x194228220  __TEXT,__text  _HKCloudSyncOptionsToString
+0x1942284ac  __TEXT,__text  _HKCloudSyncReasonToString
+0x194228430  __TEXT,__text  _HKCloudSyncSharingTypeToString
+0x1940329f8  __TEXT,__text  _HKCodableCondensedWorkoutCollectionReadFrom
+0x1940310d0  __TEXT,__text  _HKCodableCondensedWorkoutReadFrom
+0x1940332f8  __TEXT,__text  _HKCodableLocationCoordinateReadFrom
+0x194033e2c  __TEXT,__text  _HKCodableLocationCoordinateSeriesReadFrom
+0x194034960  __TEXT,__text  _HKCodablePluginSharableModelDataReadFrom
+0x194035cac  __TEXT,__text  _HKCodableQuantitySeriesDatumReadFrom
+0x19403887c  __TEXT,__text  _HKCodableQuantitySeriesEnumerationResultCollectionReadFrom
+0x194036d9c  __TEXT,__text  _HKCodableQuantitySeriesEnumerationResultReadFrom
+0x1940352f0  __TEXT,__text  _HKCodableQuantitySeriesReadFrom
+0x1940af71c  __TEXT,__text  _HKCodeSystemDefinitionsWithCount
+0x1e0b52b20  __DATA_CONST,__const  _HKCodedSampleKeyPathGroupByConcept
+0x1e0b52b18  __DATA_CONST,__const  _HKCodedSampleKeyPathPrimaryConcept
+0x1e0b52b28  __DATA_CONST,__const  _HKCodedSampleKeyPathPrimaryConceptIdentifier
+0x1e0b4eb80  __DATA_CONST,__const  _HKCodedValueCollectionKeyPathCodedValues
+0x1e0b4eb50  __DATA_CONST,__const  _HKCodedValueKeyPathConcept
+0x193fde2f0  __TEXT,__text  _HKCompareBuildVersionStrings
+0x193fd5b28  __TEXT,__text  _HKCompareDoubles
+0x1941ed228  __TEXT,__text  _HKCompareDoublesWithAccuracy
+0x1941ed280  __TEXT,__text  _HKCompareIntegers
+0x1941c2c88  __TEXT,__text  _HKCompareUUIDBytes
+0x194170978  __TEXT,__text  _HKComparisonFilterRelationalOperatorTypes
+0x194177990  __TEXT,__text  _HKComparisonResultMatchesPredicateOperator
+0x1e0b53050  __DATA_CONST,__const  _HKConceptAttributeValueFalse
+0x1e0b53048  __DATA_CONST,__const  _HKConceptAttributeValueTrue
+0x19400ced0  __TEXT,__text  _HKConceptAuthorizationRecordAllStatuses
+0x1944d6b30  __TEXT,__const  _HKConceptIdentifierNone
+0x1e0b4f2c0  __DATA_CONST,__const  _HKConceptIndexManagerDidBecomeQuiescentNotification
+0x1e0b4f2c8  __DATA_CONST,__const  _HKConceptIndexManagerDidBecomeQuiescentNotificationProcessedSampleCountKey
+0x1944d6b10  __TEXT,__const  _HKConceptVersionNone
+0x1e0b4aea0  __DATA_CONST,__const  _HKConditionRecordAbatementKeyPath
+0x1e0b4aea8  __DATA_CONST,__const  _HKConditionRecordAsserterKeyPath
+0x1e0b4aeb0  __DATA_CONST,__const  _HKConditionRecordBodySitesCodingCollectionsKeyPath
+0x1e0b4aeb8  __DATA_CONST,__const  _HKConditionRecordBodySitesKeyPath
+0x1e0b4aec0  __DATA_CONST,__const  _HKConditionRecordCategoriesCodingCollectionsKeyPath
+0x1e0b4aec8  __DATA_CONST,__const  _HKConditionRecordCategoriesKeyPath
+0x1e0b4aed0  __DATA_CONST,__const  _HKConditionRecordClinicalStatusCodingKeyPath
+0x1e0b4aed8  __DATA_CONST,__const  _HKConditionRecordClinicalStatusKeyPath
+0x1e0b4aee0  __DATA_CONST,__const  _HKConditionRecordConditionCodingCollectionKeyPath
+0x1e0b4aee8  __DATA_CONST,__const  _HKConditionRecordConditionKeyPath
+0x1e0b4aef0  __DATA_CONST,__const  _HKConditionRecordOnsetKeyPath
+0x1e0b4aef8  __DATA_CONST,__const  _HKConditionRecordRecordedDateKeyPath
+0x1e0b4af00  __DATA_CONST,__const  _HKConditionRecordSeverityCodingCollectionKeyPath
+0x1e0b4af08  __DATA_CONST,__const  _HKConditionRecordSeverityKeyPath
+0x1e0b4a748  __DATA_CONST,__const  _HKConditionRecordTypeIdentifierConditionRecord
+0x1e0b4af10  __DATA_CONST,__const  _HKConditionRecordVerificationStatusCodingKeyPath
+0x1e0b4af18  __DATA_CONST,__const  _HKConditionRecordVerificationStatusKeyPath
+0x194228b2c  __TEXT,__text  _HKConditionallyRedactedHeartRhythmString
+0x194227ea8  __TEXT,__text  _HKConnectedGymIsMutedToday
+0x194227d70  __TEXT,__text  _HKConnectedGymSetMutedForToday
+0x194181fc0  __TEXT,__text  _HKConnectedGymSourceName
+0x1e0b48f90  __DATA_CONST,__const  _HKContributorInformationEntitlement
+0x1e0b48f20  __DATA_CONST,__const  _HKControlEntitlement
+0x193fac6f0  __TEXT,__text  _HKCopyQueryDescription
+0x1941de428  __TEXT,__text  _HKCoreMotionSupportsEstimatedWorkoutEffortForActivityType
+0x1941de410  __TEXT,__text  _HKCoreMotionSupportsRunningMetrics
+0x1941de404  __TEXT,__text  _HKCoreMotionSupportsSkiingWorkoutSessions
+0x1941de3f8  __TEXT,__text  _HKCoreMotionSupportsSwimmingWorkoutSessions
+0x1941de41c  __TEXT,__text  _HKCoreMotionSupportsWaterSubmersion
+0x1e0b4a5f8  __DATA_CONST,__const  _HKCorrelationTypeIdentifierBloodPressure
+0x1e0b4a600  __DATA_CONST,__const  _HKCorrelationTypeIdentifierFood
+0x1e0b4ce10  __DATA_CONST,__const  _HKCountryCodeAfghanistan
+0x1e0b4ce18  __DATA_CONST,__const  _HKCountryCodeAlandIslands
+0x1e0b4ce20  __DATA_CONST,__const  _HKCountryCodeAlbania
+0x1e0b4ce28  __DATA_CONST,__const  _HKCountryCodeAlgeria
+0x1e0b4ce30  __DATA_CONST,__const  _HKCountryCodeAmericanSamoa
+0x1e0b4ce38  __DATA_CONST,__const  _HKCountryCodeAndorra
+0x1e0b4ce40  __DATA_CONST,__const  _HKCountryCodeAngola
+0x1e0b4ce48  __DATA_CONST,__const  _HKCountryCodeAnguilla
+0x1e0b4ce50  __DATA_CONST,__const  _HKCountryCodeAntarctica
+0x1e0b4ce58  __DATA_CONST,__const  _HKCountryCodeAntiguaBarbuda
+0x1e0b4ce60  __DATA_CONST,__const  _HKCountryCodeArgentina
+0x1e0b4ce68  __DATA_CONST,__const  _HKCountryCodeArmenia
+0x1e0b4ce70  __DATA_CONST,__const  _HKCountryCodeAruba
+0x1e0b4ce78  __DATA_CONST,__const  _HKCountryCodeAustralia
+0x1e0b4ce80  __DATA_CONST,__const  _HKCountryCodeAustria
+0x1e0b4ce88  __DATA_CONST,__const  _HKCountryCodeAzerbaijan
+0x1e0b4ce90  __DATA_CONST,__const  _HKCountryCodeBahamas
+0x1e0b4ce98  __DATA_CONST,__const  _HKCountryCodeBahrain
+0x1e0b4cea0  __DATA_CONST,__const  _HKCountryCodeBangladesh
+0x1e0b4cea8  __DATA_CONST,__const  _HKCountryCodeBarbados
+0x1e0b4ceb0  __DATA_CONST,__const  _HKCountryCodeBelarus
+0x1e0b4ceb8  __DATA_CONST,__const  _HKCountryCodeBelgium
+0x1e0b4cec0  __DATA_CONST,__const  _HKCountryCodeBelize
+0x1e0b4cec8  __DATA_CONST,__const  _HKCountryCodeBenin
+0x1e0b4ced0  __DATA_CONST,__const  _HKCountryCodeBermuda
+0x1e0b4ced8  __DATA_CONST,__const  _HKCountryCodeBhutan
+0x1e0b4cee0  __DATA_CONST,__const  _HKCountryCodeBolivia
+0x1e0b4cee8  __DATA_CONST,__const  _HKCountryCodeBonaireSintEustatiusSaba
+0x1e0b4cef0  __DATA_CONST,__const  _HKCountryCodeBosniaHerzegovina
+0x1e0b4cef8  __DATA_CONST,__const  _HKCountryCodeBotswana
+0x1e0b4cf00  __DATA_CONST,__const  _HKCountryCodeBouvetIsland
+0x1e0b4cf08  __DATA_CONST,__const  _HKCountryCodeBrazil
+0x1e0b4cf10  __DATA_CONST,__const  _HKCountryCodeBritishIndianOceanTerritory
+0x1e0b4cf18  __DATA_CONST,__const  _HKCountryCodeBritishVirginIslands
+0x1e0b4cf20  __DATA_CONST,__const  _HKCountryCodeBruneiDarussalam
+0x1e0b4cf28  __DATA_CONST,__const  _HKCountryCodeBulgaria
+0x1e0b4cf30  __DATA_CONST,__const  _HKCountryCodeBurkinaFaso
+0x1e0b4cf38  __DATA_CONST,__const  _HKCountryCodeBurundi
+0x1e0b4cf40  __DATA_CONST,__const  _HKCountryCodeCaboVerde
+0x1e0b4cf48  __DATA_CONST,__const  _HKCountryCodeCambodia
+0x1e0b4cf50  __DATA_CONST,__const  _HKCountryCodeCameroon
+0x1e0b4cf58  __DATA_CONST,__const  _HKCountryCodeCanada
+0x1e0b4cf60  __DATA_CONST,__const  _HKCountryCodeCaymanIslands
+0x1e0b4cf68  __DATA_CONST,__const  _HKCountryCodeCentralAfricanRepublic
+0x1e0b4cf70  __DATA_CONST,__const  _HKCountryCodeChad
+0x1e0b4cf78  __DATA_CONST,__const  _HKCountryCodeChile
+0x1e0b4cf80  __DATA_CONST,__const  _HKCountryCodeChina
+0x1e0b4cf88  __DATA_CONST,__const  _HKCountryCodeChristmasIsland
+0x1e0b4cf90  __DATA_CONST,__const  _HKCountryCodeCocosIslands
+0x1e0b4cf98  __DATA_CONST,__const  _HKCountryCodeColombia
+0x1e0b4cfa0  __DATA_CONST,__const  _HKCountryCodeComoros
+0x1e0b4cfa8  __DATA_CONST,__const  _HKCountryCodeCongo
+0x1e0b4cfb0  __DATA_CONST,__const  _HKCountryCodeCookIslands
+0x1e0b4cfb8  __DATA_CONST,__const  _HKCountryCodeCostaRica
+0x1e0b4cfc0  __DATA_CONST,__const  _HKCountryCodeCotedIvoire
+0x1e0b4cfc8  __DATA_CONST,__const  _HKCountryCodeCroatia
+0x1e0b4cfd0  __DATA_CONST,__const  _HKCountryCodeCuba
+0x1e0b4cfd8  __DATA_CONST,__const  _HKCountryCodeCuracao
+0x1e0b4cfe0  __DATA_CONST,__const  _HKCountryCodeCyprus
+0x1e0b4cff0  __DATA_CONST,__const  _HKCountryCodeCzechRepublic
+0x1e0b4cfe8  __DATA_CONST,__const  _HKCountryCodeCzechia
+0x1e0b4cff8  __DATA_CONST,__const  _HKCountryCodeDemocraticRepublicCongo
+0x1e0b4d000  __DATA_CONST,__const  _HKCountryCodeDenmark
+0x1e0b4d008  __DATA_CONST,__const  _HKCountryCodeDjibouti
+0x1e0b4d010  __DATA_CONST,__const  _HKCountryCodeDominica
+0x1e0b4d018  __DATA_CONST,__const  _HKCountryCodeDominicanRepublic
+0x1e0b4d020  __DATA_CONST,__const  _HKCountryCodeEcuador
+0x1e0b4d028  __DATA_CONST,__const  _HKCountryCodeEgypt
+0x1e0b4d030  __DATA_CONST,__const  _HKCountryCodeElSalvador
+0x1e0b4d038  __DATA_CONST,__const  _HKCountryCodeEquatorialGuinea
+0x1e0b4d040  __DATA_CONST,__const  _HKCountryCodeEritrea
+0x1e0b4d048  __DATA_CONST,__const  _HKCountryCodeEstonia
+0x1e0b4d050  __DATA_CONST,__const  _HKCountryCodeEswatini
+0x1e0b4d058  __DATA_CONST,__const  _HKCountryCodeEthiopia
+0x1e0b4d060  __DATA_CONST,__const  _HKCountryCodeFalklandIslands
+0x1e0b4d068  __DATA_CONST,__const  _HKCountryCodeFaroeIslands
+0x1e0b4d070  __DATA_CONST,__const  _HKCountryCodeFiji
+0x1e0b4d078  __DATA_CONST,__const  _HKCountryCodeFinland
+0x1e0b4d080  __DATA_CONST,__const  _HKCountryCodeFrance
+0x1e0b4d088  __DATA_CONST,__const  _HKCountryCodeFrenchGuiana
+0x1e0b4d090  __DATA_CONST,__const  _HKCountryCodeFrenchPolynesia
+0x1e0b4d098  __DATA_CONST,__const  _HKCountryCodeFrenchSouthernTerritories
+0x1e0b4d0a0  __DATA_CONST,__const  _HKCountryCodeGabon
+0x1e0b4d0a8  __DATA_CONST,__const  _HKCountryCodeGambia
+0x1e0b4d0b0  __DATA_CONST,__const  _HKCountryCodeGeorgia
+0x1e0b4d0b8  __DATA_CONST,__const  _HKCountryCodeGermany
+0x1e0b4d0c0  __DATA_CONST,__const  _HKCountryCodeGhana
+0x1e0b4d0c8  __DATA_CONST,__const  _HKCountryCodeGibraltar
+0x1e0b4d0d0  __DATA_CONST,__const  _HKCountryCodeGreece
+0x1e0b4d0d8  __DATA_CONST,__const  _HKCountryCodeGreenland
+0x1e0b4d0e0  __DATA_CONST,__const  _HKCountryCodeGrenada
+0x1e0b4d0e8  __DATA_CONST,__const  _HKCountryCodeGuadeloupe
+0x1e0b4d0f0  __DATA_CONST,__const  _HKCountryCodeGuam
+0x1e0b4d0f8  __DATA_CONST,__const  _HKCountryCodeGuatemala
+0x1e0b4d100  __DATA_CONST,__const  _HKCountryCodeGuernsey
+0x1e0b4d108  __DATA_CONST,__const  _HKCountryCodeGuinea
+0x1e0b4d110  __DATA_CONST,__const  _HKCountryCodeGuineaBissau
+0x1e0b4d118  __DATA_CONST,__const  _HKCountryCodeGuyana
+0x1e0b4d120  __DATA_CONST,__const  _HKCountryCodeHaiti
+0x1e0b4d128  __DATA_CONST,__const  _HKCountryCodeHeardIslandMcDonaldIslands
+0x1e0b4d130  __DATA_CONST,__const  _HKCountryCodeHolySee
+0x1e0b4d138  __DATA_CONST,__const  _HKCountryCodeHonduras
+0x1e0b4d140  __DATA_CONST,__const  _HKCountryCodeHongKong
+0x1e0b4d148  __DATA_CONST,__const  _HKCountryCodeHungary
+0x1e0b4d150  __DATA_CONST,__const  _HKCountryCodeIceland
+0x1e0b4d158  __DATA_CONST,__const  _HKCountryCodeIndia
+0x1e0b4d160  __DATA_CONST,__const  _HKCountryCodeIndonesia
+0x1e0b4d168  __DATA_CONST,__const  _HKCountryCodeIran
+0x1e0b4d170  __DATA_CONST,__const  _HKCountryCodeIraq
+0x1e0b4d178  __DATA_CONST,__const  _HKCountryCodeIreland
+0x1e0b4d180  __DATA_CONST,__const  _HKCountryCodeIsleOfMan
+0x1e0b4d188  __DATA_CONST,__const  _HKCountryCodeIsrael
+0x1e0b4d190  __DATA_CONST,__const  _HKCountryCodeItaly
+0x1e0b4d198  __DATA_CONST,__const  _HKCountryCodeJamaica
+0x1e0b4d1a0  __DATA_CONST,__const  _HKCountryCodeJapan
+0x1e0b4d1a8  __DATA_CONST,__const  _HKCountryCodeJersey
+0x1e0b4d1b0  __DATA_CONST,__const  _HKCountryCodeJordan
+0x1e0b4d1b8  __DATA_CONST,__const  _HKCountryCodeKazakhstan
+0x1e0b4d1c0  __DATA_CONST,__const  _HKCountryCodeKenya
+0x1e0b4d1c8  __DATA_CONST,__const  _HKCountryCodeKiribati
+0x1e0b4d1d0  __DATA_CONST,__const  _HKCountryCodeKuwait
+0x1e0b4d1d8  __DATA_CONST,__const  _HKCountryCodeKyrgyzstan
+0x1e0b4d1e0  __DATA_CONST,__const  _HKCountryCodeLaos
+0x1e0b4d1e8  __DATA_CONST,__const  _HKCountryCodeLatvia
+0x1e0b4d1f0  __DATA_CONST,__const  _HKCountryCodeLebanon
+0x1e0b4d1f8  __DATA_CONST,__const  _HKCountryCodeLesotho
+0x1e0b4d200  __DATA_CONST,__const  _HKCountryCodeLiberia
+0x1e0b4d208  __DATA_CONST,__const  _HKCountryCodeLibya
+0x1e0b4d210  __DATA_CONST,__const  _HKCountryCodeLiechtenstein
+0x1e0b4d218  __DATA_CONST,__const  _HKCountryCodeLithuania
+0x1e0b4d220  __DATA_CONST,__const  _HKCountryCodeLuxembourg
+0x1e0b4d228  __DATA_CONST,__const  _HKCountryCodeMacao
+0x1e0b4d230  __DATA_CONST,__const  _HKCountryCodeMadagascar
+0x1e0b4d238  __DATA_CONST,__const  _HKCountryCodeMalawi
+0x1e0b4d240  __DATA_CONST,__const  _HKCountryCodeMalaysia
+0x1e0b4d248  __DATA_CONST,__const  _HKCountryCodeMaldives
+0x1e0b4d250  __DATA_CONST,__const  _HKCountryCodeMali
+0x1e0b4d258  __DATA_CONST,__const  _HKCountryCodeMalta
+0x1e0b4d260  __DATA_CONST,__const  _HKCountryCodeMarshallIslands
+0x1e0b4d268  __DATA_CONST,__const  _HKCountryCodeMartinique
+0x1e0b4d270  __DATA_CONST,__const  _HKCountryCodeMauritania
+0x1e0b4d278  __DATA_CONST,__const  _HKCountryCodeMauritius
+0x1e0b4d280  __DATA_CONST,__const  _HKCountryCodeMayotte
+0x1e0b4d288  __DATA_CONST,__const  _HKCountryCodeMexico
+0x1e0b4d290  __DATA_CONST,__const  _HKCountryCodeMicronesia
+0x1e0b4d298  __DATA_CONST,__const  _HKCountryCodeMoldova
+0x1e0b4d2a0  __DATA_CONST,__const  _HKCountryCodeMonaco
+0x1e0b4d2a8  __DATA_CONST,__const  _HKCountryCodeMongolia
+0x1e0b4d2b0  __DATA_CONST,__const  _HKCountryCodeMontenegro
+0x1e0b4d2b8  __DATA_CONST,__const  _HKCountryCodeMontserrat
+0x1e0b4d2c0  __DATA_CONST,__const  _HKCountryCodeMorocco
+0x1e0b4d2c8  __DATA_CONST,__const  _HKCountryCodeMozambique
+0x1e0b4d2d0  __DATA_CONST,__const  _HKCountryCodeMyanmar
+0x1e0b4d2d8  __DATA_CONST,__const  _HKCountryCodeNamibia
+0x1e0b4d2e0  __DATA_CONST,__const  _HKCountryCodeNauru
+0x1e0b4d2e8  __DATA_CONST,__const  _HKCountryCodeNepal
+0x1e0b4d2f0  __DATA_CONST,__const  _HKCountryCodeNetherlands
+0x1e0b4d2f8  __DATA_CONST,__const  _HKCountryCodeNewCaledonia
+0x1e0b4d300  __DATA_CONST,__const  _HKCountryCodeNewZealand
+0x1e0b4d308  __DATA_CONST,__const  _HKCountryCodeNicaragua
+0x1e0b4d310  __DATA_CONST,__const  _HKCountryCodeNiger
+0x1e0b4d318  __DATA_CONST,__const  _HKCountryCodeNigeria
+0x1e0b4d320  __DATA_CONST,__const  _HKCountryCodeNiue
+0x1e0b4d328  __DATA_CONST,__const  _HKCountryCodeNorfolkIsland
+0x1e0b4d338  __DATA_CONST,__const  _HKCountryCodeNorthKorea
+0x1e0b4d340  __DATA_CONST,__const  _HKCountryCodeNorthMacedonia
+0x1e0b4d330  __DATA_CONST,__const  _HKCountryCodeNorthernMarianaIslands
+0x1e0b4d348  __DATA_CONST,__const  _HKCountryCodeNorway
+0x1e0b4d350  __DATA_CONST,__const  _HKCountryCodeOman
+0x1e0b4d358  __DATA_CONST,__const  _HKCountryCodePakistan
+0x1e0b4d360  __DATA_CONST,__const  _HKCountryCodePalau
+0x1e0b4d368  __DATA_CONST,__const  _HKCountryCodePalestine
+0x1e0b4d370  __DATA_CONST,__const  _HKCountryCodePanama
+0x1e0b4d378  __DATA_CONST,__const  _HKCountryCodePapuaNewGuinea
+0x1e0b4d380  __DATA_CONST,__const  _HKCountryCodeParaguay
+0x1e0b4d388  __DATA_CONST,__const  _HKCountryCodePeru
+0x1e0b4d390  __DATA_CONST,__const  _HKCountryCodePhilippines
+0x1e0b4d398  __DATA_CONST,__const  _HKCountryCodePitcairn
+0x1e0b4d3a0  __DATA_CONST,__const  _HKCountryCodePoland
+0x1e0b4d3a8  __DATA_CONST,__const  _HKCountryCodePortugal
+0x1e0b4d3b0  __DATA_CONST,__const  _HKCountryCodePuertoRico
+0x1e0b4d3b8  __DATA_CONST,__const  _HKCountryCodeQatar
+0x1e0b4d3c0  __DATA_CONST,__const  _HKCountryCodeReunion
+0x1e0b4d3c8  __DATA_CONST,__const  _HKCountryCodeRomania
+0x1e0b4d3d0  __DATA_CONST,__const  _HKCountryCodeRussia
+0x1e0b4d3d8  __DATA_CONST,__const  _HKCountryCodeRwanda
+0x1e0b4d3e0  __DATA_CONST,__const  _HKCountryCodeSaintBarthelemy
+0x1e0b4d3e8  __DATA_CONST,__const  _HKCountryCodeSaintHelenaAscensionTristandaCunha
+0x1e0b4d3f0  __DATA_CONST,__const  _HKCountryCodeSaintKittsNevis
+0x1e0b4d3f8  __DATA_CONST,__const  _HKCountryCodeSaintLucia
+0x1e0b4d400  __DATA_CONST,__const  _HKCountryCodeSaintMartin
+0x1e0b4d408  __DATA_CONST,__const  _HKCountryCodeSaintPierreMiquelon
+0x1e0b4d410  __DATA_CONST,__const  _HKCountryCodeSaintVincentGrenadines
+0x1e0b4d418  __DATA_CONST,__const  _HKCountryCodeSamoa
+0x1e0b4d420  __DATA_CONST,__const  _HKCountryCodeSanMarino
+0x1e0b4d428  __DATA_CONST,__const  _HKCountryCodeSaoTomePrincipe
+0x1e0b4d430  __DATA_CONST,__const  _HKCountryCodeSaudiArabia
+0x1e0b4d438  __DATA_CONST,__const  _HKCountryCodeSenegal
+0x1e0b4d440  __DATA_CONST,__const  _HKCountryCodeSerbia
+0x1e0b4d448  __DATA_CONST,__const  _HKCountryCodeSeychelles
+0x1e0b4d450  __DATA_CONST,__const  _HKCountryCodeSierraLeone
+0x1e0b4d458  __DATA_CONST,__const  _HKCountryCodeSingapore
+0x1e0b4d460  __DATA_CONST,__const  _HKCountryCodeSintMaarten
+0x1e0b4d468  __DATA_CONST,__const  _HKCountryCodeSlovakia
+0x1e0b4d470  __DATA_CONST,__const  _HKCountryCodeSlovenia
+0x1e0b4d478  __DATA_CONST,__const  _HKCountryCodeSolomonIslands
+0x1e0b4d480  __DATA_CONST,__const  _HKCountryCodeSomalia
+0x1e0b4d488  __DATA_CONST,__const  _HKCountryCodeSouthAfrica
+0x1e0b4d490  __DATA_CONST,__const  _HKCountryCodeSouthGeorgiaSouthSandwichIslands
+0x1e0b4d498  __DATA_CONST,__const  _HKCountryCodeSouthKorea
+0x1e0b4d4a0  __DATA_CONST,__const  _HKCountryCodeSouthSudan
+0x1e0b4d4a8  __DATA_CONST,__const  _HKCountryCodeSpain
+0x1e0b4d4b0  __DATA_CONST,__const  _HKCountryCodeSriLanka
+0x1e0b4d4b8  __DATA_CONST,__const  _HKCountryCodeSudan
+0x1e0b4d4c0  __DATA_CONST,__const  _HKCountryCodeSuriname
+0x1e0b4d4c8  __DATA_CONST,__const  _HKCountryCodeSvalbardJanMayen
+0x1e0b4d4d0  __DATA_CONST,__const  _HKCountryCodeSweden
+0x1e0b4d4d8  __DATA_CONST,__const  _HKCountryCodeSwitzerland
+0x1e0b4d4e0  __DATA_CONST,__const  _HKCountryCodeSyria
+0x1e0b4d4e8  __DATA_CONST,__const  _HKCountryCodeTaiwan
+0x1e0b4d4f0  __DATA_CONST,__const  _HKCountryCodeTajikistan
+0x1e0b4d4f8  __DATA_CONST,__const  _HKCountryCodeTanzania
+0x1e0b4d500  __DATA_CONST,__const  _HKCountryCodeThailand
+0x1e0b4d508  __DATA_CONST,__const  _HKCountryCodeTimorLeste
+0x1e0b4d510  __DATA_CONST,__const  _HKCountryCodeTogo
+0x1e0b4d518  __DATA_CONST,__const  _HKCountryCodeTokelau
+0x1e0b4d520  __DATA_CONST,__const  _HKCountryCodeTonga
+0x1e0b4d528  __DATA_CONST,__const  _HKCountryCodeTrinidadTobago
+0x1e0b4d530  __DATA_CONST,__const  _HKCountryCodeTunisia
+0x1e0b4d538  __DATA_CONST,__const  _HKCountryCodeTurkey
+0x1e0b4d540  __DATA_CONST,__const  _HKCountryCodeTurkmenistan
+0x1e0b4d548  __DATA_CONST,__const  _HKCountryCodeTurksCaicosIslands
+0x1e0b4d550  __DATA_CONST,__const  _HKCountryCodeTuvalu
+0x1e0b4d588  __DATA_CONST,__const  _HKCountryCodeUSOutlyingIslands
+0x1e0b4d590  __DATA_CONST,__const  _HKCountryCodeUSVirginIslands
+0x1e0b4d558  __DATA_CONST,__const  _HKCountryCodeUganda
+0x1e0b4d560  __DATA_CONST,__const  _HKCountryCodeUkraine
+0x1e0b4d568  __DATA_CONST,__const  _HKCountryCodeUnitedArabEmirates
+0x1e0b4d570  __DATA_CONST,__const  _HKCountryCodeUnitedKingdom
+0x1e0b4d578  __DATA_CONST,__const  _HKCountryCodeUnitedStates
+0x1e0b4d5e0  __DATA_CONST,__const  _HKCountryCodeUnknownCountry
+0x1e0b4d580  __DATA_CONST,__const  _HKCountryCodeUruguay
+0x1e0b4d598  __DATA_CONST,__const  _HKCountryCodeUzbekistan
+0x1e0b4d5a0  __DATA_CONST,__const  _HKCountryCodeVanuatu
+0x1e0b4d5a8  __DATA_CONST,__const  _HKCountryCodeVenezuela
+0x1e0b4d5b0  __DATA_CONST,__const  _HKCountryCodeVietnam
+0x1e0b4d5b8  __DATA_CONST,__const  _HKCountryCodeWallisFutuna
+0x1e0b4d5c0  __DATA_CONST,__const  _HKCountryCodeWesternSahara
+0x1e0b4d5c8  __DATA_CONST,__const  _HKCountryCodeYemen
+0x1e0b4d5d0  __DATA_CONST,__const  _HKCountryCodeZambia
+0x1e0b4d5d8  __DATA_CONST,__const  _HKCountryCodeZimbabwe
+0x194072440  __TEXT,__text  _HKCountryMonitorControlClientInterface
+0x194072454  __TEXT,__text  _HKCountryMonitorControlServerInterface
+0x1e0b4d5e8  __DATA_CONST,__const  _HKCountrySetDictionaryCompatibilityVersionKey
+0x1e0b4d5f0  __DATA_CONST,__const  _HKCountrySetDictionaryContentVersionKey
+0x1e0b4d5f8  __DATA_CONST,__const  _HKCountrySetDictionaryCountryBitmasksKey
+0x1e0b4e9b0  __DATA_CONST,__const  _HKCoverageClassificationKeyPathName
+0x1e0b4e9a0  __DATA_CONST,__const  _HKCoverageClassificationKeyPathType
+0x1e0b4e9a8  __DATA_CONST,__const  _HKCoverageClassificationKeyPathValue
+0x1e0b4af48  __DATA_CONST,__const  _HKCoverageRecordBeneficiaryIdentifierKeyPath
+0x1e0b4af50  __DATA_CONST,__const  _HKCoverageRecordBeneficiaryKeyPath
+0x1e0b4af58  __DATA_CONST,__const  _HKCoverageRecordClassificationKeyPath
+0x1e0b4af60  __DATA_CONST,__const  _HKCoverageRecordCoverageTypeCodingCollectionKeyPath
+0x1e0b4af68  __DATA_CONST,__const  _HKCoverageRecordCoverageTypeKeyPath
+0x1e0b4af70  __DATA_CONST,__const  _HKCoverageRecordNetworkKeyPath
+0x1e0b4af78  __DATA_CONST,__const  _HKCoverageRecordPayorKeyPath
+0x1e0b4af80  __DATA_CONST,__const  _HKCoverageRecordPeriodEndDateKeyPath
+0x1e0b4af88  __DATA_CONST,__const  _HKCoverageRecordPeriodStartDateKeyPath
+0x1e0b4af90  __DATA_CONST,__const  _HKCoverageRecordPolicyHolderKeyPath
+0x1e0b4af98  __DATA_CONST,__const  _HKCoverageRecordRelationshipCodingCollectionKeyPath
+0x1e0b4afa0  __DATA_CONST,__const  _HKCoverageRecordRelationshipKeyPath
+0x1e0b4afa8  __DATA_CONST,__const  _HKCoverageRecordStatusCodingKeyPath
+0x1e0b4afb0  __DATA_CONST,__const  _HKCoverageRecordStatusKeyPath
+0x1e0b4afc0  __DATA_CONST,__const  _HKCoverageRecordSubscriberIdKeyPath
+0x1e0b4afb8  __DATA_CONST,__const  _HKCoverageRecordSubscriberIdentifierKeyPath
+0x1e0b4afc8  __DATA_CONST,__const  _HKCoverageRecordSubscriberKeyPath
+0x1e0b4a968  __DATA_CONST,__const  _HKCoverageRecordTypeIdentifierCoverageRecord
+0x1941ecb3c  __TEXT,__text  _HKCreateConcurrentDispatchQueue
+0x1941ecb44  __TEXT,__text  _HKCreateConcurrentDispatchQueueWithQOSClass
+0x193fa30ec  __TEXT,__text  _HKCreateSerialDispatchQueue
+0x193fa30f4  __TEXT,__text  _HKCreateSerialDispatchQueueWithQOSClass
+0x193fd5cdc  __TEXT,__text  _HKCreateSerialUtilityDispatchQueue
+0x194191254  __TEXT,__text  _HKCreationInterval
+0x19419125c  __TEXT,__text  _HKCreationIntervalFromEndDate
+0x1e0b4daa0  __DATA_CONST,__const  _HKCurrentFeatureYearOfRelease
+0x19409cf88  __TEXT,__text  _HKCurrentLocaleCountryCodeIfUnknown
+0x194008348  __TEXT,__text  _HKCurrentOptInVersionOnDiskForOnBoardingBundle
+0x194143458  __TEXT,__text  _HKCurrentSchemaVersionForShardIdentifier
+0x194225b30  __TEXT,__text  _HKDaemonConnectionServerInterface
+0x1e0b48f30  __DATA_CONST,__const  _HKDataAccessReportEntitlement
+0x1e0b57d50  __DATA_CONST,__const  _HKDataCacheTTRUserDefaultKey
+0x19441cd48  __TEXT,__const  _HKDataCollectionMaximumInterval
+0x194028400  __TEXT,__text  _HKDataCollectionOptionsToString
+0x194028684  __TEXT,__text  _HKDataCollectionTypeToString
+0x19441ccc0  __TEXT,__const  _HKDataCollectorPriorityDefault
+0x1e0b49fe0  __DATA_CONST,__const  _HKDataCollectorTaskServerIdentifier
+0x19404029c  __TEXT,__text  _HKDataTypeAllowsPerObjectAuthorizationAPI
+0x193fa40c8  __TEXT,__text  _HKDataTypeCodeFromTypeIdentifier
+0x1eb968aa8  __DATA,__data  _HKDataTypeDefinitions
+0x1e0b4a700  __DATA_CONST,__const  _HKDataTypeIdentifierHeartbeatSeries
+0x1e0b4ab28  __DATA_CONST,__const  _HKDataTypeIdentifierStateOfMind
+0x1e0b4abc8  __DATA_CONST,__const  _HKDataTypeIdentifierUserAnnotatedMedicationConcept
+0x194040280  __TEXT,__text  _HKDataTypeRequiresAuthorization
+0x193fbfcdc  __TEXT,__text  _HKDataTypeRequiresPerObjectAuthorization
+0x1e0b48fc0  __DATA_CONST,__const  _HKDatabaseAccessibilityAssertionEntitlement
+0x1944d6b40  __TEXT,__const  _HKDatabaseChangesQueryDefaultAnchorStrategyChangeCountLimit
+0x19401fbec  __TEXT,__text  _HKDatabaseControlClientInterface
+0x19401fc00  __TEXT,__text  _HKDatabaseControlServerInterface
+0x1e0b49ca8  __DATA_CONST,__const  _HKDatabaseValidationTaskServerIdentifier
+0x1941ecf40  __TEXT,__text  _HKDateFromDiagnosticString
+0x1941bab90  __TEXT,__text  _HKDateMax
+0x1941bab2c  __TEXT,__text  _HKDateMid
+0x1941bab24  __TEXT,__text  _HKDateMin
+0x193fcd1e8  __TEXT,__text  _HKDayIndexFromCalendarComponents
+0x1944d6cf0  __TEXT,__const  _HKDayIndexRangeZero
+0x1944d7ad0  __TEXT,__const  _HKDaysInAWeek
+0x1941b6c58  __TEXT,__text  _HKDebugStoreClientInterface
+0x1941b6c6c  __TEXT,__text  _HKDebugStoreServerInterface
+0x19403ff24  __TEXT,__text  _HKDefaultAggregationIntervalForType
+0x194040024  __TEXT,__text  _HKDefaultCollectionLatencyForType
+0x194040108  __TEXT,__text  _HKDefaultMaximumSeriesDurationForType
+0x1941370dc  __TEXT,__text  _HKDefaultObjectValidationConfiguration
+0x1941370fc  __TEXT,__text  _HKDefaultObjectValidationConfigurationIgnoringAllOptions
+0x194143590  __TEXT,__text  _HKDefaultOntologyServerBaseURL
+0x1e0b49040  __DATA_CONST,__const  _HKDefaultSourceEntitlement
+0x1e0b55ab8  __DATA_CONST,__const  _HKDefaultsKeyDataCollectorBlacklist
+0x1e0b55ac0  __DATA_CONST,__const  _HKDefaultsKeyTinkerMode
+0x1e0b55ad0  __DATA_CONST,__const  _HKDefaultsKeyTinkerSetupAlertDurationInSeconds
+0x1e0b55ac8  __DATA_CONST,__const  _HKDefaultsKeyTinkerUseNonSecureContainer
+0x1944d7b38  __TEXT,__const  _HKDeletedSamplesAvailableDays
+0x194007940  __TEXT,__text  _HKDescriptionForAnalyticsFileWithName
+0x1e0b4dc20  __DATA_CONST,__const  _HKDetailedCDAValidationErrorKey
+0x1e0b53c48  __DATA_CONST,__const  _HKDeviceConnectedGymIdentifier
+0x1e0b54668  __DATA_CONST,__const  _HKDeviceContextStoreServerIdentifier
+0x1e0b54698  __DATA_CONST,__const  _HKDeviceKeyValueStoreServerIdentifier
+0x1e0b53c40  __DATA_CONST,__const  _HKDevicePropertyEmptySentinel
+0x1e0b53c20  __DATA_CONST,__const  _HKDevicePropertyKeyFirmwareVersion
+0x1e0b53c18  __DATA_CONST,__const  _HKDevicePropertyKeyHardwareVersion
+0x1e0b53c30  __DATA_CONST,__const  _HKDevicePropertyKeyLocalIdentifier
+0x1e0b53c08  __DATA_CONST,__const  _HKDevicePropertyKeyManufacturer
+0x1e0b53c10  __DATA_CONST,__const  _HKDevicePropertyKeyModel
+0x1e0b53c00  __DATA_CONST,__const  _HKDevicePropertyKeyName
+0x1e0b53c28  __DATA_CONST,__const  _HKDevicePropertyKeySoftwareVersion
+0x1e0b53c38  __DATA_CONST,__const  _HKDevicePropertyKeyUDIDeviceIdentifier
+0x194181960  __TEXT,__text  _HKDeviceStoreClientInterface
+0x194181974  __TEXT,__text  _HKDeviceStoreServerInterface
+0x1941b7420  __TEXT,__text  _HKDiagnosticStoreClientInterface
+0x1941b7434  __TEXT,__text  _HKDiagnosticStoreServerInterface
+0x1941ed060  __TEXT,__text  _HKDiagnosticStringForDurationSinceDate
+0x1941ece48  __TEXT,__text  _HKDiagnosticStringFromDate
+0x1941ecfe8  __TEXT,__text  _HKDiagnosticStringFromDuration
+0x193faca58  __TEXT,__text  _HKDiagnosticStringFromUUID
+0x1e0b4aff8  __DATA_CONST,__const  _HKDiagnosticTestReportDiagnosticTestCodingCollectionKeyPath
+0x1e0b4b000  __DATA_CONST,__const  _HKDiagnosticTestReportDiagnosticTestKeyPath
+0x1e0b4b008  __DATA_CONST,__const  _HKDiagnosticTestReportEffectiveEndDateKeyPath
+0x1e0b4b010  __DATA_CONST,__const  _HKDiagnosticTestReportEffectiveStartDateKeyPath
+0x1e0b4b018  __DATA_CONST,__const  _HKDiagnosticTestReportIssueDateKeyPath
+0x1e0b4b020  __DATA_CONST,__const  _HKDiagnosticTestReportResultsKeyPath
+0x1e0b4b028  __DATA_CONST,__const  _HKDiagnosticTestReportStatusCodingKeyPath
+0x1e0b4b030  __DATA_CONST,__const  _HKDiagnosticTestReportStatusKeyPath
+0x1e0b4a738  __DATA_CONST,__const  _HKDiagnosticTestReportTypeIdentifierDiagnosticTestReport
+0x1e0b4b060  __DATA_CONST,__const  _HKDiagnosticTestResultBodySiteCodingCollectionKeyPath
+0x1e0b4b068  __DATA_CONST,__const  _HKDiagnosticTestResultBodySiteKeyPath
+0x1e0b4b070  __DATA_CONST,__const  _HKDiagnosticTestResultCategoriesCodingCollectionsKeyPath
+0x1e0b4b078  __DATA_CONST,__const  _HKDiagnosticTestResultCategoriesKeyPath
+0x1940b5c10  __TEXT,__text  _HKDiagnosticTestResultCategoryFromNSString
+0x1e0b4b080  __DATA_CONST,__const  _HKDiagnosticTestResultCategoryKeyPath
+0x1e0b4e9b8  __DATA_CONST,__const  _HKDiagnosticTestResultCategoryLaboratory
+0x1e0b4e9c0  __DATA_CONST,__const  _HKDiagnosticTestResultCategoryVitalSigns
+0x1e0b4b088  __DATA_CONST,__const  _HKDiagnosticTestResultCommentsKeyPath
+0x1e0b4b090  __DATA_CONST,__const  _HKDiagnosticTestResultDiagnosticTestCodingCollectionKeyPath
+0x1e0b4b098  __DATA_CONST,__const  _HKDiagnosticTestResultDiagnosticTestKeyPath
+0x1e0b4b0a0  __DATA_CONST,__const  _HKDiagnosticTestResultEffectiveEndDateKeyPath
+0x1e0b4b0a8  __DATA_CONST,__const  _HKDiagnosticTestResultEffectiveStartDateKeyPath
+0x1e0b4b0b0  __DATA_CONST,__const  _HKDiagnosticTestResultInterpretationCodingCollectionsKeyPath
+0x1e0b4b0b8  __DATA_CONST,__const  _HKDiagnosticTestResultInterpretationKeyPath
+0x1e0b4b0c0  __DATA_CONST,__const  _HKDiagnosticTestResultIssueDateKeyPath
+0x1e0b4b0c8  __DATA_CONST,__const  _HKDiagnosticTestResultMethodCodingCollectionKeyPath
+0x1e0b4b0d0  __DATA_CONST,__const  _HKDiagnosticTestResultMethodKeyPath
+0x1e0b4b0d8  __DATA_CONST,__const  _HKDiagnosticTestResultPerformersKeyPath
+0x1e0b4b0e8  __DATA_CONST,__const  _HKDiagnosticTestResultReferenceRangeStatusKeyPath
+0x1e0b4b0e0  __DATA_CONST,__const  _HKDiagnosticTestResultReferenceRangesKeyPath
+0x1e0b4b0f0  __DATA_CONST,__const  _HKDiagnosticTestResultStatusCodingKeyPath
+0x1e0b4b0f8  __DATA_CONST,__const  _HKDiagnosticTestResultStatusKeyPath
+0x1e0b4a730  __DATA_CONST,__const  _HKDiagnosticTestResultTypeIdentifierDiagnosticTestResult
+0x1e0b4b100  __DATA_CONST,__const  _HKDiagnosticTestResultValueKeyPath
+0x193fa4cf0  __TEXT,__text  _HKDispatchAsyncOnGlobalConcurrentQueue
+0x193fa31ac  __TEXT,__text  _HKDispatchQueueName
+0x1944d6b38  __TEXT,__const  _HKDistantPastTime
+0x1e0b4a6b0  __DATA_CONST,__const  _HKDocumentTypeIdentifierCDA
+0x19413ad90  __TEXT,__text  _HKDoseUnitStringForLoggingUnitCode
+0x1e0b4ca88  __DATA_CONST,__const  _HKECGOnboardingVersionOverrideKey
+0x1e0b50900  __DATA_CONST,__const  _HKECGWatchAppInstallIsAllowedDidChangeNotification
+0x1e0b58390  __DATA_CONST,__const  _HKElectrocardiogramAppBundleID
+0x1e0b4ca98  __DATA_CONST,__const  _HKElectrocardiogramFirstOnboardingCompletedKey
+0x1e0b50918  __DATA_CONST,__const  _HKElectrocardiogramFirstRecordingCompletedDefaultKey
+0x194094ac4  __TEXT,__text  _HKElectrocardiogramIsAvailableForGeolocatedCountryCode
+0x1e0b4caa8  __DATA_CONST,__const  _HKElectrocardiogramOnboardingCountryCodeKey
+0x1e0b4cab0  __DATA_CONST,__const  _HKElectrocardiogramOnboardingHistoryKey
+0x1e0b4caa0  __DATA_CONST,__const  _HKElectrocardiogramOnboardingVersionCompletedDefaultKey
+0x1e0b4dad0  __DATA_CONST,__const  _HKElectrocardiogramRecordingV1iOSDeviceIdentifierPortion
+0x1e0b4dac8  __DATA_CONST,__const  _HKElectrocardiogramRecordingV1watchOSDeviceIdentifierPortion
+0x1e0b58388  __DATA_CONST,__const  _HKElectrocardiogramRemoteDisabledSupportURL
+0x194094b14  __TEXT,__text  _HKElectrocardiogramSupportedCountries
+0x194095810  __TEXT,__text  _HKElectrocardiogramSupportedStatedForGeolocatedCountryCodeAndIOSVersion
+0x194095010  __TEXT,__text  _HKElectrocardiogramSupportedStatedForGeolocatedCountryCodeAndWatchOSVersion
+0x19410442c  __TEXT,__text  _HKElectrocardiogramSymptomsStatusFromPrivateElectrocardiogramSymptoms
+0x1e0b4cad0  __DATA_CONST,__const  _HKElectrocardiogramV1ToV2UpgradeAlertDismissed
+0x1e0b4cac8  __DATA_CONST,__const  _HKElectrocardiogramV1ToV2UpgradeBackgroundDelivered
+0x1e0b50920  __DATA_CONST,__const  _HKElectrocardiogramWatchAppInstallIsAllowed
+0x1e0b490e8  __DATA_CONST,__const  _HKEntitlementEntryCloudControl
+0x1e0b490f0  __DATA_CONST,__const  _HKEntitlementEntryCloudObserver
+0x1e0b490f8  __DATA_CONST,__const  _HKEntitlementEntryCloudParticipant
+0x1e0b49100  __DATA_CONST,__const  _HKEntitlementEntryContextSync
+0x1e0b49110  __DATA_CONST,__const  _HKEntitlementEntryMedicalIDReadSetupStatus
+0x1e0b49108  __DATA_CONST,__const  _HKEntitlementEntryMedicalIDReadWrite
+0x1e0b490d0  __DATA_CONST,__const  _HKEntitlementEntryRead
+0x1e0b490d8  __DATA_CONST,__const  _HKEntitlementEntryReset
+0x1e0b490e0  __DATA_CONST,__const  _HKEntitlementEntryWrite
+0x19400a894  __TEXT,__text  _HKEntitlementStoreClientInterface
+0x19400a8a8  __TEXT,__text  _HKEntitlementStoreServerInterface
+0x1e0b58250  __DATA_CONST,__const  _HKEntityValidationDataIdKey
+0x1e0b58240  __DATA_CONST,__const  _HKEntityValidationTableNameKey
+0x1e0b58248  __DATA_CONST,__const  _HKEntityValidationUUIDKey
+0x1e0b58258  __DATA_CONST,__const  _HKEntityValidationValueDescriptionKey
+0x1e0b58328  __DATA_CONST,__const  _HKErrorClassKey
+0x1e0b58310  __DATA_CONST,__const  _HKErrorCloudSyncDeviceNameKey
+0x1e0b58318  __DATA_CONST,__const  _HKErrorCloudSyncProductTypeKey
+0x1e0b58320  __DATA_CONST,__const  _HKErrorConceptPrefetchUnresolvedIdentifiersKey
+0x1e0b58340  __DATA_CONST,__const  _HKErrorContextKey
+0x1e0b57e40  __DATA_CONST,__const  _HKErrorDomain
+0x1e0b58338  __DATA_CONST,__const  _HKErrorParameterKey
+0x1e0b58330  __DATA_CONST,__const  _HKErrorSelectorKey
+0x1944d6b00  __TEXT,__const  _HKExternalSyncObjectCodeHKObject
+0x1e0b4e918  __DATA_CONST,__const  _HKFHIRReleaseDSTU2
+0x1940b2c64  __TEXT,__text  _HKFHIRReleaseFromNSString
+0x1e0b4e920  __DATA_CONST,__const  _HKFHIRReleaseR4
+0x1e0b4e928  __DATA_CONST,__const  _HKFHIRReleaseUnknown
+0x1e0b4e930  __DATA_CONST,__const  _HKFHIRResourceTypeAllergyIntolerance
+0x1e0b4e938  __DATA_CONST,__const  _HKFHIRResourceTypeCondition
+0x1e0b4e940  __DATA_CONST,__const  _HKFHIRResourceTypeCoverage
+0x1e0b4e948  __DATA_CONST,__const  _HKFHIRResourceTypeDiagnosticReport
+0x1e0b4e950  __DATA_CONST,__const  _HKFHIRResourceTypeDocumentReference
+0x1e0b4e958  __DATA_CONST,__const  _HKFHIRResourceTypeImmunization
+0x1e0b4e960  __DATA_CONST,__const  _HKFHIRResourceTypeMedicationDispense
+0x1e0b4e968  __DATA_CONST,__const  _HKFHIRResourceTypeMedicationOrder
+0x1e0b4e970  __DATA_CONST,__const  _HKFHIRResourceTypeMedicationRequest
+0x1e0b4e978  __DATA_CONST,__const  _HKFHIRResourceTypeMedicationStatement
+0x1e0b4e980  __DATA_CONST,__const  _HKFHIRResourceTypeObservation
+0x1e0b4e988  __DATA_CONST,__const  _HKFHIRResourceTypeProcedure
+0x1e0b4c420  __DATA_CONST,__const  _HKFeatureAvailabilityContextAdvertisableFeature
+0x1e0b4c428  __DATA_CONST,__const  _HKFeatureAvailabilityContextAnalysis
+0x1e0b4c430  __DATA_CONST,__const  _HKFeatureAvailabilityContextBackgroundDelivery
+0x1e0b4c438  __DATA_CONST,__const  _HKFeatureAvailabilityContextDemoDataGeneration
+0x1e0b4c4e8  __DATA_CONST,__const  _HKFeatureAvailabilityContextHearingAidProvincialUsage
+0x1e0b4c440  __DATA_CONST,__const  _HKFeatureAvailabilityContextHelpTile
+0x1e0b4c448  __DATA_CONST,__const  _HKFeatureAvailabilityContextHighlightGeneration
+0x1e0b4c450  __DATA_CONST,__const  _HKFeatureAvailabilityContextMutualExclusivityEnforcement
+0x1e0b4c4e0  __DATA_CONST,__const  _HKFeatureAvailabilityContextNotificationSettingsVisibility
+0x1e0b4c4c8  __DATA_CONST,__const  _HKFeatureAvailabilityContextOmitPregnancyContent
+0x1e0b4c458  __DATA_CONST,__const  _HKFeatureAvailabilityContextOnboardingInitiation
+0x1e0b4c468  __DATA_CONST,__const  _HKFeatureAvailabilityContextOnboardingLinkUserInteractionEnabled
+0x1e0b4c460  __DATA_CONST,__const  _HKFeatureAvailabilityContextOnboardingLinkVisibility
+0x1e0b4c470  __DATA_CONST,__const  _HKFeatureAvailabilityContextOnboardingPromotion
+0x1e0b4c4d8  __DATA_CONST,__const  _HKFeatureAvailabilityContextPostPregnancyAdjustmentEligibility
+0x1e0b4c4d0  __DATA_CONST,__const  _HKFeatureAvailabilityContextPregnancyAdjustmentEligibility
+0x1e0b4c528  __DATA_CONST,__const  _HKFeatureAvailabilityContextReadiness
+0x1e0b4c480  __DATA_CONST,__const  _HKFeatureAvailabilityContextSettingsUserInteractionEnabled
+0x1e0b4c478  __DATA_CONST,__const  _HKFeatureAvailabilityContextSettingsVisibility
+0x1e0b4c488  __DATA_CONST,__const  _HKFeatureAvailabilityContextSleepingSampleAnalysis
+0x1e0b4c498  __DATA_CONST,__const  _HKFeatureAvailabilityContextTipsAppNotificationEligibility
+0x1e0b4c490  __DATA_CONST,__const  _HKFeatureAvailabilityContextTipsAppVisibility
+0x1e0b4c4a8  __DATA_CONST,__const  _HKFeatureAvailabilityContextUpgradeInitiation
+0x1e0b4c4a0  __DATA_CONST,__const  _HKFeatureAvailabilityContextUpgradePromotion
+0x1e0b4c4b0  __DATA_CONST,__const  _HKFeatureAvailabilityContextUsage
+0x1e0b4c4b8  __DATA_CONST,__const  _HKFeatureAvailabilityContextUserNotificationsEnabled
+0x1e0b4c4f8  __DATA_CONST,__const  _HKFeatureAvailabilityContextWalkingSteadinessClassification
+0x1e0b4c500  __DATA_CONST,__const  _HKFeatureAvailabilityContextWalkingSteadinessEventSubmission
+0x1e0b4c510  __DATA_CONST,__const  _HKFeatureAvailabilityContextWalkingSteadinessNotOnboardedHealthChecklist
+0x1e0b4c4f0  __DATA_CONST,__const  _HKFeatureAvailabilityContextWalkingSteadinessNotificationSettingsVisibility
+0x1e0b4c508  __DATA_CONST,__const  _HKFeatureAvailabilityContextWalkingSteadinessOnboardedHealthChecklist
+0x1e0b4c518  __DATA_CONST,__const  _HKFeatureAvailabilityContextWalkingSteadinessPromotionFeatureTag
+0x1e0b4c520  __DATA_CONST,__const  _HKFeatureAvailabilityContextWalkingSteadinessShouldNotShowPregnancyContent
+0x1e0b4c4c0  __DATA_CONST,__const  _HKFeatureAvailabilityContextWatchAppAvailable
+0x194086d30  __TEXT,__text  _HKFeatureAvailabilityHealthDataRequirementStoreClientInterface
+0x193fe0dd8  __TEXT,__text  _HKFeatureAvailabilityHealthDataRequirementStoreServerInterface
+0x19409ed7c  __TEXT,__text  _HKFeatureAvailabilityOnboardingIneligibilityReasonsForRescindedStatus
+0x1e0b48f60  __DATA_CONST,__const  _HKFeatureAvailabilityReadAnyEntitlement
+0x1e0b48f50  __DATA_CONST,__const  _HKFeatureAvailabilityReadEntitlement
+0x1e0b48f68  __DATA_CONST,__const  _HKFeatureAvailabilityReadWriteAnyEntitlement
+0x1e0b48f58  __DATA_CONST,__const  _HKFeatureAvailabilityReadWriteEntitlement
+0x1e0b4c668  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierActiveRemoteDeviceIsPresentWhenRequiredForRegionAvailabilityOrDeviceCapability
+0x1e0b4c670  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierActiveWatchIsNotUnderInternalDevelopmentImportExclusion
+0x1e0b4c678  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierAgeIsPresent
+0x1e0b4c6e8  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierAuthorizationRecordsPresentOrCountryIsSupportedOnActiveRemoteDevice
+0x1e0b4c6f0  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierAuthorizationRecordsPresentOrCountryIsSupportedOnLocalDevice
+0x1e0b4c6f8  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierAuthorizationRecordsPresentOrOnboardingRecordIsPresent
+0x1e0b4c6e0  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierAuthorizationRecordsPresentWithReadAccessToObjectTypes
+0x1e0b4c680  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierBloodOxygenCompanionAnalysisIsSupportedOnActiveWatch
+0x1e0b4c688  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierBloodOxygenRecordingsAreEnabled
+0x1e0b4c690  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierCapabilityIsSupportedOnActiveRemoteDevice
+0x1e0b4c698  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierCapabilityIsSupportedOnActiveWatch
+0x1e0b4c6a0  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierCapabilityIsSupportedOnAnyWatch
+0x1e0b4c6a8  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierCountryCodeIsPresent
+0x1e0b4c6b8  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierCountryIsSupportedOnActiveRemoteDevice
+0x1e0b4c6b0  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierCountryIsSupportedOnLocalDevice
+0x1e0b4c6d0  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierCountryListIsPresentOnActiveRemoteDevice
+0x1e0b4c6c0  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierCurrentCountryCodeIsPresent
+0x1e0b4c6d8  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierCurrentCountryIsSupportedOnActiveRemoteDevice
+0x1e0b4c6c8  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierCurrentCountryIsSupportedOnLocalDevice
+0x1e0b4c700  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierFeatureFlagIsEnabled
+0x1e0b4c708  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierFeatureIsNotRemotelyDisabled
+0x1e0b4c710  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierFeatureIsOff
+0x1e0b4c718  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierFeatureIsOn
+0x1e0b4c720  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierFitnessTrackingEnabled
+0x1e0b4c750  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierGreenLightMeasurementsAreEnabled
+0x1e0b4c728  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierHealthAppIsNotHidden
+0x1e0b4c738  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierHearingAidCapabilityIsSupportedOnAnyPairedAirPods
+0x1e0b4c740  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierHearingProtectionCapabilityIsSupportedOnAnyPairedAirPods
+0x1e0b4c730  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierHearingTestCapabilityIsSupportedOnAnyPairedAirPods
+0x1e0b4c748  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierHeartRateIsEnabledInPrivacy
+0x1e0b4c758  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierHeightIsPresent
+0x1e0b4c760  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierLocalDeviceIsCapableOfPairingWithWatch
+0x1e0b4c768  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierLocalDeviceIsCapableOfWatchPairing
+0x1e0b4c770  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierMutuallyExclusiveFeatureIsOff
+0x1e0b4c838  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierNoOngoingPregnancy
+0x1e0b4c778  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierNotAgeGatedForUserDefaultsKey
+0x1e0b4c830  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierNotInPostPregnancy
+0x1e0b4c780  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierNotInStoreDemoMode
+0x1e0b4c788  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierNotificationAuthorized
+0x1e0b4c790  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierNotificationsOnForUserDefaultsKey
+0x1e0b4c7e0  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierOSEligibilityDomainIsEligible
+0x1e0b4c798  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierOnboardedBeforeTimeAgo
+0x1e0b4c7a8  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierOnboardingAcknowledged
+0x1e0b4c7b0  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierOnboardingNotAcknowledged
+0x1e0b4c7b8  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierOnboardingRecordIsNotPresent
+0x1e0b4c7c0  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierOnboardingRecordIsNotPresentForMutuallyExclusiveFeature
+0x1e0b4c7c8  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierOnboardingRecordIsPresent
+0x1e0b4c7a0  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierOnboardingRecordsArePresentForPrerequisiteFeatures
+0x1e0b4c7d8  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierOnboardingUserDefaultsKeyIsNotPresent
+0x1e0b4c7d0  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierOnboardingUserDefaultsKeyIsPresent
+0x1e0b4c7e8  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierPrerequisiteFeaturesAreOn
+0x1e0b4c7f0  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierProfileIsNotFamilySetupPairingProfile
+0x193fb22ec  __TEXT,__text  _HKFeatureAvailabilityRequirementIdentifierReflectsSensitiveData
+0x1e0b4c7f8  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierSeedIsNotExpired
+0x1e0b4c800  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierSomeRegionIsSupported
+0x1e0b4c808  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierUserDefaultsKeyIsNotPresent
+0x1e0b4c810  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierWalkingSteadinessCapabilityIsSupportedOnLocalDevice
+0x1e0b4c818  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierWatchAppIsInstalled
+0x1e0b4c820  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierWatchLowPowerModeIsOff
+0x1e0b4c828  __DATA_CONST,__const  _HKFeatureAvailabilityRequirementIdentifierWristDetectionIsEnabledForActiveWatch
+0x19409bfd4  __TEXT,__text  _HKFeatureAvailabilityRescindedStatusFromHKFeatureAvailabilityOnboardedCountrySupportedState
+0x1940a16d8  __TEXT,__text  _HKFeatureAvailabilityStoreClientInterface
+0x1940a174c  __TEXT,__text  _HKFeatureAvailabilityStoreServerInterface
+0x1941e61d8  __TEXT,__text  _HKFeatureFlagBloodOxygenSaturationEnabled
+0x1e0b4d688  __DATA_CONST,__const  _HKFeatureIdentifierAFibBurden
+0x1e0b4d698  __DATA_CONST,__const  _HKFeatureIdentifierBloodPressureJournal
+0x1e0b4d690  __DATA_CONST,__const  _HKFeatureIdentifierCardioFitness
+0x1e0b4d6a0  __DATA_CONST,__const  _HKFeatureIdentifierDepressionAndAnxietyAssessments
+0x1e0b4d6a8  __DATA_CONST,__const  _HKFeatureIdentifierElectrocardiogramRecording
+0x1e0b4d6b0  __DATA_CONST,__const  _HKFeatureIdentifierElectrocardiogramRecordingV1
+0x1e0b4d6b8  __DATA_CONST,__const  _HKFeatureIdentifierElectrocardiogramRecordingV2
+0x1e0b4d6c0  __DATA_CONST,__const  _HKFeatureIdentifierExampleFeature
+0x1e0b4d6c8  __DATA_CONST,__const  _HKFeatureIdentifierGlucoseEnhancedCharting
+0x1e0b4d7c0  __DATA_CONST,__const  _HKFeatureIdentifierHealthAge
+0x1e0b4d7b8  __DATA_CONST,__const  _HKFeatureIdentifierHealthAssessment
+0x1e0b4d6d8  __DATA_CONST,__const  _HKFeatureIdentifierHearingAid
+0x1e0b4d6e0  __DATA_CONST,__const  _HKFeatureIdentifierHearingAidV2
+0x1e0b4d6e8  __DATA_CONST,__const  _HKFeatureIdentifierHearingProtection
+0x1e0b4d6f0  __DATA_CONST,__const  _HKFeatureIdentifierHearingProtectionPPE
+0x1e0b4d6d0  __DATA_CONST,__const  _HKFeatureIdentifierHearingTest
+0x1e0b4d6f8  __DATA_CONST,__const  _HKFeatureIdentifierHighHeartRateNotifications
+0x1e0b4d700  __DATA_CONST,__const  _HKFeatureIdentifierHypertensionNotifications
+0x1e0b4d708  __DATA_CONST,__const  _HKFeatureIdentifierHypertensionNotificationsV2
+0x1e0b4d710  __DATA_CONST,__const  _HKFeatureIdentifierIrregularRhythmNotifications
+0x1e0b4d718  __DATA_CONST,__const  _HKFeatureIdentifierIrregularRhythmNotificationsV1
+0x1e0b4d720  __DATA_CONST,__const  _HKFeatureIdentifierIrregularRhythmNotificationsV2
+0x193fe10f8  __TEXT,__text  _HKFeatureIdentifierIsProvidedBySleepDaemon
+0x1e0b4d728  __DATA_CONST,__const  _HKFeatureIdentifierLabKit
+0x1e0b4d730  __DATA_CONST,__const  _HKFeatureIdentifierLowHeartRateNotifications
+0x1e0b4d738  __DATA_CONST,__const  _HKFeatureIdentifierMenstrualCycles
+0x1e0b4d740  __DATA_CONST,__const  _HKFeatureIdentifierMenstrualCyclesDeviationDetection
+0x1e0b4d748  __DATA_CONST,__const  _HKFeatureIdentifierMenstrualCyclesHeartRateInput
+0x1e0b4d750  __DATA_CONST,__const  _HKFeatureIdentifierMenstrualCyclesMenopause
+0x1e0b4d758  __DATA_CONST,__const  _HKFeatureIdentifierMenstrualCyclesWristTemperatureInput
+0x1e0b4d760  __DATA_CONST,__const  _HKFeatureIdentifierMovementEvaluations
+0x1e0b4d768  __DATA_CONST,__const  _HKFeatureIdentifierOxygenSaturationRecording
+0x1e0b4d770  __DATA_CONST,__const  _HKFeatureIdentifierOxygenSaturationRecordingCompanionAnalysis
+0x1e0b4d778  __DATA_CONST,__const  _HKFeatureIdentifierPeriodicDepressionAndAnxietyAssessmentPrompts
+0x1e0b4d780  __DATA_CONST,__const  _HKFeatureIdentifierRespiratoryRateMeasurements
+0x1e0b4d7a0  __DATA_CONST,__const  _HKFeatureIdentifierSleepActions
+0x1e0b4d7a8  __DATA_CONST,__const  _HKFeatureIdentifierSleepApneaNotifications
+0x1e0b4d790  __DATA_CONST,__const  _HKFeatureIdentifierSleepCoaching
+0x1e0b4d798  __DATA_CONST,__const  _HKFeatureIdentifierSleepTracking
+0x1e0b4d7b0  __DATA_CONST,__const  _HKFeatureIdentifierSleepingSampleAnalysis
+0x1e0b4d788  __DATA_CONST,__const  _HKFeatureIdentifierSleepingWristTemperatureMeasurements
+0x1e0b4d7c8  __DATA_CONST,__const  _HKFeatureIdentifierStateOfMindLogging
+0x1e0b4d7d0  __DATA_CONST,__const  _HKFeatureIdentifierStateOfMindLoggingPatternEscalations
+0x1e0b4d7d8  __DATA_CONST,__const  _HKFeatureIdentifierWalkingSteadinessClassifications
+0x1e0b4d7e0  __DATA_CONST,__const  _HKFeatureIdentifierWalkingSteadinessNotifications
+0x19409ec64  __TEXT,__text  _HKFeaturePropertiesChangeNotificationForFeatureIdentifier
+0x1e0b58398  __DATA_CONST,__const  _HKFeatureSettingsKeyEnabled
+0x1e0b583a8  __DATA_CONST,__const  _HKFeatureSettingsKeyLiveOnTermsAcknowledged
+0x1e0b583a0  __DATA_CONST,__const  _HKFeatureSettingsKeyNotificationsThreshold
+0x1e0b583b0  __DATA_CONST,__const  _HKFeatureSettingsKeyOnboardingAcknowledged
+0x1e0b583b8  __DATA_CONST,__const  _HKFeatureSettingsKeyOnboardingAcknowledgedDate
+0x1940a4890  __TEXT,__text  _HKFeatureUpdateVersionFromMajorVersionAndBuildVersion
+0x193fc1d78  __TEXT,__text  _HKFirstDayOfWeekForWeeklyGoalCalculations
+0x193fc9408  __TEXT,__text  _HKFitnessMachineConnectionClientInterface
+0x19420ae34  __TEXT,__text  _HKFitnessMachineConnectionInitiatorClientInterface
+0x19420ae48  __TEXT,__text  _HKFitnessMachineConnectionInitiatorServerInterface
+0x193fd9fa8  __TEXT,__text  _HKFitnessMachineConnectionServerInterface
+0x1e0b57d20  __DATA_CONST,__const  _HKFitnessModeDefaultsKey
+0x1e0b57d10  __DATA_CONST,__const  _HKFitnessModeDidChangeNotification
+0x1941ed290  __TEXT,__text  _HKForceNotUnitTesting
+0x1e0b57db8  __DATA_CONST,__const  _HKHASharedUserDefaultsKeyHearingTestUserPerformedAppleHearingTest
+0x1e0b57db0  __DATA_CONST,__const  _HKHASharedUserDefaultsKeySleepingSampleChangeNotificationsEnabled
+0x194182200  __TEXT,__text  _HKHRCoordinatorSourceName
+0x1e0b4efe8  __DATA_CONST,__const  _HKHTTPErrorDomain
+0x1e0b4eff0  __DATA_CONST,__const  _HKHTTPErrorUserInfoKeyRequestURL
+0x1e0b4eff8  __DATA_CONST,__const  _HKHTTPErrorUserInfoKeyResponseHeaderFields
+0x1e0b57d28  __DATA_CONST,__const  _HKHasWatchOnAccountDefaultsKey
+0x1944d7b40  __TEXT,__const  _HKHeadphoneAudioLevelsDoseCalculationRequiredRetentionDays
+0x1e0b55910  __DATA_CONST,__const  _HKHealthAppActivityBundleIdentifierKey
+0x1e0b558f8  __DATA_CONST,__const  _HKHealthAppActivityType
+0x1e0b55900  __DATA_CONST,__const  _HKHealthAppActivityTypeHealthRecordsAuthorizationSettings
+0x1e0b57e48  __DATA_CONST,__const  _HKHealthAppScheme
+0x1e0b57e50  __DATA_CONST,__const  _HKHealthAppSchemeDeprecated
+0x1e0b49088  __DATA_CONST,__const  _HKHealthAppSourceEntitlement
+0x1e0b52a60  __DATA_CONST,__const  _HKHealthConceptDomainBase
+0x1e0b52a70  __DATA_CONST,__const  _HKHealthConceptDomainHealthKit
+0x1e0b52a68  __DATA_CONST,__const  _HKHealthConceptDomainMedication
+0x1e0b4ac20  __DATA_CONST,__const  _HKHealthFactSampleTypeIdentifierBoolean
+0x1e0b4ac28  __DATA_CONST,__const  _HKHealthFactSampleTypeIdentifierConcept
+0x1e0b4ac30  __DATA_CONST,__const  _HKHealthFactSampleTypeIdentifierQuantity
+0x1e0b48ee8  __DATA_CONST,__const  _HKHealthKitAccessEntitlement
+0x1e0b48f08  __DATA_CONST,__const  _HKHealthKitAccessIdentifierHealthRecords
+0x1e0b48f10  __DATA_CONST,__const  _HKHealthKitAccessIdentifierVerifiableHealthRecords
+0x1e0b48ef0  __DATA_CONST,__const  _HKHealthKitBackgroundDeliveryEntitlement
+0x1e0b58350  __DATA_CONST,__const  _HKHealthKitDataTypeStringsTableName
+0x1e0b48ed0  __DATA_CONST,__const  _HKHealthKitEntitlement
+0x193fe9550  __TEXT,__text  _HKHealthKitFrameworkBundle
+0x1e0b48ef8  __DATA_CONST,__const  _HKHealthKitRecalibrateEstimatesEntitlement
+0x1e0b58348  __DATA_CONST,__const  _HKHealthKitStringsTableName
+0x1e0b48f38  __DATA_CONST,__const  _HKHealthLiteEntitlement
+0x1e0b57e58  __DATA_CONST,__const  _HKHealthProviderLoginRedirectHost
+0x1e0b57e68  __DATA_CONST,__const  _HKHealthProviderLoginRedirectScheme
+0x1e0b57e60  __DATA_CONST,__const  _HKHealthProviderLoginRedirectToken
+0x1e0b48f88  __DATA_CONST,__const  _HKHealthRecordsAccountInfoEntitlement
+0x1940c8300  __TEXT,__text  _HKHealthRecordsAccountInfoStoreClientInterface
+0x1940c8314  __TEXT,__text  _HKHealthRecordsAccountInfoStoreServerInterface
+0x1940c87f4  __TEXT,__text  _HKHealthRecordsAccountsEventFromNSNumber
+0x1e0b4ed90  __DATA_CONST,__const  _HKHealthRecordsPluginIdentifier
+0x193fb9824  __TEXT,__text  _HKHealthRecordsStoreClientInterface
+0x193fb983c  __TEXT,__text  _HKHealthRecordsStoreServerInterface
+0x19441cc70  __TEXT,__const  _HKHealthServiceDiscoveryIdentifierInvalid
+0x19441cc78  __TEXT,__const  _HKHealthServiceSessionIdentifierInvalid
+0x19401d374  __TEXT,__text  _HKHealthServicesManagerClientInterface
+0x1e0b55ae8  __DATA_CONST,__const  _HKHealthServicesPlatformRespectsOverriddenEnvironmentKey
+0x19401d388  __TEXT,__text  _HKHealthServicesServerInterface
+0x1e0b50758  __DATA_CONST,__const  _HKHealthSharingManagementNotificationSyncClientIdentifier
+0x193fa720c  __TEXT,__text  _HKHealthStoreClientInterface
+0x193fa6780  __TEXT,__text  _HKHealthStoreEndpointInterface
+0x1e0b4f170  __DATA_CONST,__const  _HKHealthStoreMachServiceName
+0x1940d0788  __TEXT,__text  _HKHealthStoreProviderClientInterface
+0x193fa67bc  __TEXT,__text  _HKHealthStoreServerInterface
+0x1940a5ef4  __TEXT,__text  _HKHealthWrapCertificateFromString
+0x194045fb4  __TEXT,__text  _HKHealthWrapCodableKeyValueReadFrom
+0x194046acc  __TEXT,__text  _HKHealthWrapCodableMessageHeaderReadFrom
+0x194047f80  __TEXT,__text  _HKHealthWrapCodableMessageKeyReadFrom
+0x194048a80  __TEXT,__text  _HKHealthWrapCodablePayloadHeaderReadFrom
+0x19404a004  __TEXT,__text  _HKHealthWrapCodableValueReadFrom
+0x1940a5ea4  __TEXT,__text  _HKHealthWrapDERDataFromString
+0x1940ea2b8  __TEXT,__text  _HKHearingLevelClassificationForSensitivity
+0x1940e4b78  __TEXT,__text  _HKHearingLevelClassificationPureToneAverageFrequencies
+0x1941078d0  __TEXT,__text  _HKHeartRateMotionContextForPrivateHeartRateContext
+0x1e0b4ca90  __DATA_CONST,__const  _HKHeartRhythmOnboardingStateDidChangeNotification
+0x1944d6850  __TEXT,__const  _HKHeartRhythmOnboardingVersionNotCompleted
+0x194107734  __TEXT,__text  _HKHeartbeatSeriesAppendDatum
+0x194107848  __TEXT,__text  _HKHeartbeatSeriesDatumAtIndex
+0x19410782c  __TEXT,__text  _HKHeartbeatSeriesDatumCountFromData
+0x1e0b48f70  __DATA_CONST,__const  _HKHeartbeatSeriesFeatureStatusReadEntitlement
+0x1940082c8  __TEXT,__text  _HKImproveHealthAndActivityAnalyticsAllowed
+0x1944d7bc0  __TEXT,__const  _HKImproveHealthRecordsDataSubmissionNotAllowed
+0x1944d7bc8  __TEXT,__const  _HKImproveHealthRecordsDataSubmissionNotDetermined
+0x19413d0e8  __TEXT,__text  _HKIndexableObjectCheckCardinalityForIndexRestore
+0x1944d6b08  __TEXT,__const  _HKIndexableObjectMaximumIndex
+0x1e0b4ec00  __DATA_CONST,__const  _HKInspectableValueCollectionKeyPathInspectableValueKeyPath
+0x1e0b4ec18  __DATA_CONST,__const  _HKInspectableValueCollectionKeyPathInspectableValuesKeyPath
+0x1e0b4ec10  __DATA_CONST,__const  _HKInspectableValueCollectionKeyPathMaxKeyPath
+0x1e0b4ec08  __DATA_CONST,__const  _HKInspectableValueCollectionKeyPathMinKeyPath
+0x1e0b4eb98  __DATA_CONST,__const  _HKInspectableValueKeyPathCodedValueCollection
+0x1e0b4eb90  __DATA_CONST,__const  _HKInspectableValueKeyPathDataAbsentReasonCodings
+0x1e0b4eb88  __DATA_CONST,__const  _HKInspectableValueKeyPathMedicalCodings
+0x19400b864  __TEXT,__text  _HKInternalAuthorizationStatusMake
+0x1941b5894  __TEXT,__text  _HKIntersectionDayIndexRange
+0x19441cd40  __TEXT,__const  _HKInvalidCollectionDuration
+0x1e0b4daa8  __DATA_CONST,__const  _HKIrregularRhythmNotificationsV1FeatureVersion
+0x1940a494c  __TEXT,__text  _HKIrregularRhythmNotificationsV1UDIDeviceIdentifier
+0x1940a48c8  __TEXT,__text  _HKIrregularRhythmNotificationsV1UpdateVersion
+0x1e0b4dab8  __DATA_CONST,__const  _HKIrregularRhythmNotificationsV1iOSDeviceIdentifierPortion
+0x1e0b4dab0  __DATA_CONST,__const  _HKIrregularRhythmNotificationsV1watchOSDeviceIdentifierPortion
+0x1e0b4db98  __DATA_CONST,__const  _HKIsAgeGatedUserDefaultsAFibBurdenKey
+0x1e0b4dba8  __DATA_CONST,__const  _HKIsAgeGatedUserDefaultsBloodPressureClassificationKey
+0x1e0b4db58  __DATA_CONST,__const  _HKIsAgeGatedUserDefaultsCardioFitnessKey
+0x1e0b4db60  __DATA_CONST,__const  _HKIsAgeGatedUserDefaultsGAD7AssessmentsKey
+0x1e0b4db38  __DATA_CONST,__const  _HKIsAgeGatedUserDefaultsHeartSensingKey
+0x1e0b4db48  __DATA_CONST,__const  _HKIsAgeGatedUserDefaultsOxygenSaturationRecordingKey
+0x1e0b4db68  __DATA_CONST,__const  _HKIsAgeGatedUserDefaultsPHQ9AssessmentsKey
+0x1e0b4dbc8  __DATA_CONST,__const  _HKIsAgeGatedUserDefaultsRespiratoryRateKey
+0x1e0b4db78  __DATA_CONST,__const  _HKIsAgeGatedUserDefaultsSleepApneaNotificationsKey
+0x1e0b4db88  __DATA_CONST,__const  _HKIsAgeGatedUserDefaultsSleepTrackingKey
+0x1e0b4dbb8  __DATA_CONST,__const  _HKIsAgeGatedUserDefaultsWalkingSteadinessKey
+0x1e0b4dbd0  __DATA_CONST,__const  _HKIsAgeGatedUserDefaultsWristTemperatureKey
+0x194146670  __TEXT,__text  _HKIsBasicUserDomainConceptPropertyType
+0x1e0b4db20  __DATA_CONST,__const  _HKIsCharacteristicMissingUserDefaultsDateOfBirthKey
+0x1e0b4db28  __DATA_CONST,__const  _HKIsCharacteristicMissingUserDefaultsHeightKey
+0x194227c9c  __TEXT,__text  _HKIsDataCacheTTREnabled
+0x194227ff0  __TEXT,__text  _HKIsDaylightTimeEnabledInPrivacy
+0x19414824c  __TEXT,__text  _HKIsDeprecatedPropertyType
+0x193feb468  __TEXT,__text  _HKIsFitnessTrackingEnabled
+0x193feb058  __TEXT,__text  _HKIsFitnessTrackingEnabledWithUserDefaults
+0x194227d1c  __TEXT,__text  _HKIsHeartRateEnabled
+0x1941431cc  __TEXT,__text  _HKIsKnownOntologyShardIdentifier
+0x19414766c  __TEXT,__text  _HKIsLocalizedStringPropertyType
+0x19414810c  __TEXT,__text  _HKIsNamedQuantityPropertyType
+0x194227c4c  __TEXT,__text  _HKIsResumableQueriesTTREnabled
+0x1e0b57d18  __DATA_CONST,__const  _HKIsStandalonePhoneFitnessModeDefaultsKey
+0x1941777d8  __TEXT,__text  _HKIsSupportedFilterOperatorType
+0x193fa7500  __TEXT,__text  _HKIsUnitTesting
+0x1941459f4  __TEXT,__text  _HKIsValidUserDomainConceptPropertyValueType
+0x1941709e4  __TEXT,__text  _HKIsValueOrContainerValidForOperatorType
+0x1e0b4f0e8  __DATA_CONST,__const  _HKJSONErrorDomain
+0x1e0b4f0f0  __DATA_CONST,__const  _HKJSONErrorKeyPathKey
+0x1e0b554f0  __DATA_CONST,__const  _HKKeyValueDomainServerIdentifier
+0x1e0b490c0  __DATA_CONST,__const  _HKKeyValueLocalReadWriteEntitlement
+0x1e0b490b0  __DATA_CONST,__const  _HKKeyValueProtectedLocalReadWriteEntitlement
+0x1e0b490b8  __DATA_CONST,__const  _HKKeyValueProtectedUbiquitousReadWriteEntitlement
+0x1e0b490c8  __DATA_CONST,__const  _HKKeyValueUbiquitousReadWriteEntitlement
+0x1940029a8  __TEXT,__text  _HKLastDayOfWeekForWeeklyGoalCalculations
+0x1e0b49078  __DATA_CONST,__const  _HKLegacySourceOverrideEntitlement
+0x19409ed28  __TEXT,__text  _HKLocalDeviceHardwareSupportsContinuousHeartRate
+0x19409eca4  __TEXT,__text  _HKLocalDeviceHardwareSupportsWristTemperatureMeasurements
+0x1e0b49080  __DATA_CONST,__const  _HKLocalDeviceSourceEntitlement
+0x1940ea5d0  __TEXT,__text  _HKLocalizedStringForHearingLevelClassification
+0x1940ea66c  __TEXT,__text  _HKLocalizedStringForUpperClampedValueAndUnit
+0x19422855c  __TEXT,__text  _HKLocalizedStringsURLForLocale
+0x1ee1b0418  __DATA_DIRTY,__common  _HKLogActivity
+0x1ee1b0440  __DATA_DIRTY,__common  _HKLogActivityCache
+0x1941e9974  __TEXT,__text  _HKLogActivityCacheCategory
+0x1941e990c  __TEXT,__text  _HKLogActivityCategory
+0x1941e99dc  __TEXT,__text  _HKLogAnalytics
+0x1941e9a44  __TEXT,__text  _HKLogAssertions
+0x1ee1b03c0  __DATA_DIRTY,__common  _HKLogAttachment
+0x1941e9aac  __TEXT,__text  _HKLogAttachmentCategory
+0x1941e9b14  __TEXT,__text  _HKLogAuthorization
+0x1941e9b7c  __TEXT,__text  _HKLogBackgroundUpdates
+0x1941e9be4  __TEXT,__text  _HKLogBloodPressureJournal
+0x1941e6b1c  __TEXT,__text  _HKLogCameraAccess
+0x1ee1b0410  __DATA_DIRTY,__common  _HKLogCoaching
+0x1941e9c4c  __TEXT,__text  _HKLogCoachingCategory
+0x1941e9cb4  __TEXT,__text  _HKLogConceptIndex
+0x1941e9d1c  __TEXT,__text  _HKLogCondenser
+0x1941e9d84  __TEXT,__text  _HKLogDaemonInitialization
+0x1ee1b0408  __DATA_DIRTY,__common  _HKLogDataCollection
+0x1941e9ebc  __TEXT,__text  _HKLogDataCollectionCategory
+0x1ee1b0400  __DATA_DIRTY,__common  _HKLogDatabase
+0x1941e9dec  __TEXT,__text  _HKLogDatabaseCategory
+0x1ee1b03b0  __DATA_DIRTY,__common  _HKLogDatabaseSQL
+0x1941e9e54  __TEXT,__text  _HKLogDatabaseSQLCategory
+0x1ee1b03f8  __DATA_DIRTY,__common  _HKLogDeepBreathing
+0x1941e9f24  __TEXT,__text  _HKLogDeepBreathingCategory
+0x1ee1b0438  __DATA_DIRTY,__common  _HKLogDefault
+0x1941e98a4  __TEXT,__text  _HKLogDefaultCategory
+0x1941e9f8c  __TEXT,__text  _HKLogDemoData
+0x1941e9ff4  __TEXT,__text  _HKLogGuestMode
+0x193fa296c  __TEXT,__text  _HKLogGymKit
+0x1941ea294  __TEXT,__text  _HKLogHLEHeartRate
+0x1941ea08c  __TEXT,__text  _HKLogHealthOntology
+0x1ee1b03f0  __DATA_DIRTY,__common  _HKLogHealthRecords
+0x1941ea0f4  __TEXT,__text  _HKLogHealthRecordsCategory
+0x1ee1b0430  __DATA_DIRTY,__common  _HKLogHearing
+0x1941ea15c  __TEXT,__text  _HKLogHearingCategory
+0x1ee1b03e8  __DATA_DIRTY,__common  _HKLogHeartRate
+0x1941ea1c4  __TEXT,__text  _HKLogHeartRateCategory
+0x1941ea22c  __TEXT,__text  _HKLogHeartRhythm
+0x193fa3fac  __TEXT,__text  _HKLogInfrastructure
+0x1941ea2fc  __TEXT,__text  _HKLogMedicalID
+0x1941ea364  __TEXT,__text  _HKLogMedication
+0x1ee1b03e0  __DATA_DIRTY,__common  _HKLogMenstrualCycles
+0x1941ea3cc  __TEXT,__text  _HKLogMenstrualCyclesCategory
+0x1ee1b03b8  __DATA_DIRTY,__common  _HKLogMentalHealth
+0x1941ea434  __TEXT,__text  _HKLogMentalHealthCategory
+0x1941ea49c  __TEXT,__text  _HKLogMobileAsset
+0x1941ea504  __TEXT,__text  _HKLogMobility
+0x1941ea56c  __TEXT,__text  _HKLogNotifications
+0x1941ea5d4  __TEXT,__text  _HKLogPerfCriticalCategory
+0x1941e6ba4  __TEXT,__text  _HKLogPhotoAccess
+0x1941e6c2c  __TEXT,__text  _HKLogPhotoTransmitted
+0x1941ea63c  __TEXT,__text  _HKLogPluginLoading
+0x193fb517c  __TEXT,__text  _HKLogProcessState
+0x1ee1b03d8  __DATA_DIRTY,__common  _HKLogQuery
+0x1941ea6a4  __TEXT,__text  _HKLogQueryCategory
+0x1941ea70c  __TEXT,__text  _HKLogRespiratory
+0x1941e91e0  __TEXT,__text  _HKLogSafeDescription
+0x1ee1b0428  __DATA_DIRTY,__common  _HKLogServices
+0x1941ea774  __TEXT,__text  _HKLogServicesCategory
+0x193fd0ec0  __TEXT,__text  _HKLogSharing
+0x1ee1b0420  __DATA_DIRTY,__common  _HKLogSleep
+0x1941ea80c  __TEXT,__text  _HKLogSleepCategory
+0x1941ea874  __TEXT,__text  _HKLogSummarySharing
+0x1ee1b03d0  __DATA_DIRTY,__common  _HKLogSync
+0x1941ea8dc  __TEXT,__text  _HKLogSyncCategory
+0x1941ea944  __TEXT,__text  _HKLogTesting
+0x1941ea9ac  __TEXT,__text  _HKLogTrainingLoad
+0x1941eaa14  __TEXT,__text  _HKLogWellnessDashboard
+0x1ee1b03c8  __DATA_DIRTY,__common  _HKLogWorkouts
+0x1941eaa7c  __TEXT,__text  _HKLogWorkoutsCategory
+0x1e0b58160  __DATA_CONST,__const  _HKMCMenstrualCyclesDefaultsDomain
+0x19418cf7c  __TEXT,__text  _HKMakeSleepDaySummaryQueryOptionsFromStringRepresentation
+0x1940ea548  __TEXT,__text  _HKMaximumDecibelQuantityForHearingLevelClassification
+0x193fc5ee4  __TEXT,__text  _HKMaximumSampleDurationForType
+0x1940f8f08  __TEXT,__text  _HKMaximumScoreForGAD7AssessmentRisk
+0x1940f98d8  __TEXT,__text  _HKMaximumScoreForPHQ9AssessmentRisk
+0x1e0b4dd28  __DATA_CONST,__const  _HKMedicalCodingSystemFHIRVersionDSTU2
+0x1e0b4dd30  __DATA_CONST,__const  _HKMedicalCodingSystemFHIRVersionR4
+0x1e0b4dd18  __DATA_CONST,__const  _HKMedicalCodingSystemIdentifierAppleHealthDataType
+0x1e0b4dd08  __DATA_CONST,__const  _HKMedicalCodingSystemIdentifierAppleHealthOntology
+0x1e0b4dd10  __DATA_CONST,__const  _HKMedicalCodingSystemIdentifierAppleHealthOntologyAdHoc
+0x1e0b4dd38  __DATA_CONST,__const  _HKMedicalCodingSystemIdentifierAppleText
+0x1e0b4dd40  __DATA_CONST,__const  _HKMedicalCodingSystemIdentifierAppleUnknown
+0x1e0b4dd20  __DATA_CONST,__const  _HKMedicalCodingSystemTextVersion1
+0x1e0b4b150  __DATA_CONST,__const  _HKMedicalHistoryAllergyRecordAllergyTypeKeyPath
+0x1e0b4b158  __DATA_CONST,__const  _HKMedicalHistoryAllergyRecordAsserterKeyPath
+0x1e0b4b160  __DATA_CONST,__const  _HKMedicalHistoryAllergyRecordClinicalStatusKeyPath
+0x1e0b4b168  __DATA_CONST,__const  _HKMedicalHistoryAllergyRecordCriticalityConceptIdentifierKeyPath
+0x1e0b4b170  __DATA_CONST,__const  _HKMedicalHistoryAllergyRecordCriticalityKeyPath
+0x1e0b4b178  __DATA_CONST,__const  _HKMedicalHistoryAllergyRecordLastOccurrenceDateKeyPath
+0x1e0b4b180  __DATA_CONST,__const  _HKMedicalHistoryAllergyRecordOnsetDateKeyPath
+0x1e0b4abd0  __DATA_CONST,__const  _HKMedicalHistoryAllergyRecordTypeIdentifierMedicalHistoryAllergyRecord
+0x1e0b4b188  __DATA_CONST,__const  _HKMedicalHistoryAllergyRecordVerificationStatusKeyPath
+0x1e0b4b1b8  __DATA_CONST,__const  _HKMedicalHistoryHealthConcernRecordAbatementDateKeyPath
+0x1e0b4b1c0  __DATA_CONST,__const  _HKMedicalHistoryHealthConcernRecordAsserterKeyPath
+0x1e0b4b1c8  __DATA_CONST,__const  _HKMedicalHistoryHealthConcernRecordBodySiteConceptIdentifiersKeyPath
+0x1e0b4b1d0  __DATA_CONST,__const  _HKMedicalHistoryHealthConcernRecordBodySiteKeyPath
+0x1e0b4b1d8  __DATA_CONST,__const  _HKMedicalHistoryHealthConcernRecordClinicalStatusKeyPath
+0x1e0b4b1e0  __DATA_CONST,__const  _HKMedicalHistoryHealthConcernRecordOnsetDateKeyPath
+0x1e0b4b1e8  __DATA_CONST,__const  _HKMedicalHistoryHealthConcernRecordSeverityKeyPath
+0x1e0b4abd8  __DATA_CONST,__const  _HKMedicalHistoryHealthConcernRecordTypeIdentifierMedicalHistoryHealthConcernRecord
+0x1e0b4b1f0  __DATA_CONST,__const  _HKMedicalHistoryHealthConcernRecordVerificationStatusKeyPath
+0x1e0b4b1f8  __DATA_CONST,__const  _HKMedicalHistoryImmunizationRecordAdministrationDateKeyPath
+0x1e0b4b200  __DATA_CONST,__const  _HKMedicalHistoryImmunizationRecordBodySiteConceptIdentifierKeyPath
+0x1e0b4b208  __DATA_CONST,__const  _HKMedicalHistoryImmunizationRecordBodySiteKeyPath
+0x1e0b4b210  __DATA_CONST,__const  _HKMedicalHistoryImmunizationRecordPerformedAtLocationKeyPath
+0x1e0b4b218  __DATA_CONST,__const  _HKMedicalHistoryImmunizationRecordPerformerKeyPath
+0x1e0b4abe8  __DATA_CONST,__const  _HKMedicalHistoryImmunizationRecordTypeIdentifierMedicalHistoryImmunizationRecord
+0x1e0b4b248  __DATA_CONST,__const  _HKMedicalHistoryLabResultRecordIssueDateKeyPath
+0x1e0b4b250  __DATA_CONST,__const  _HKMedicalHistoryLabResultRecordMethodConceptIdentifiersKeyPath
+0x1e0b4b258  __DATA_CONST,__const  _HKMedicalHistoryLabResultRecordMethodKeyPath
+0x1e0b4b260  __DATA_CONST,__const  _HKMedicalHistoryLabResultRecordPerformersKeyPath
+0x1e0b4b268  __DATA_CONST,__const  _HKMedicalHistoryLabResultRecordTestDateKeyPath
+0x1e0b4abf0  __DATA_CONST,__const  _HKMedicalHistoryLabResultRecordTypeIdentifierMedicalHistoryLabResultRecord
+0x1e0b4b270  __DATA_CONST,__const  _HKMedicalHistoryProcedureRecordBodySiteConceptIdentifiersKeyPath
+0x1e0b4b278  __DATA_CONST,__const  _HKMedicalHistoryProcedureRecordBodySiteKeyPath
+0x1e0b4b280  __DATA_CONST,__const  _HKMedicalHistoryProcedureRecordPerformedAtLocationKeyPath
+0x1e0b4b288  __DATA_CONST,__const  _HKMedicalHistoryProcedureRecordPerformedDateKeyPath
+0x1e0b4b290  __DATA_CONST,__const  _HKMedicalHistoryProcedureRecordPerformersKeyPath
+0x1e0b4b298  __DATA_CONST,__const  _HKMedicalHistoryProcedureRecordReasonConceptIdentifiersKeyPath
+0x1e0b4b2a0  __DATA_CONST,__const  _HKMedicalHistoryProcedureRecordReasonKeyPath
+0x1e0b4abe0  __DATA_CONST,__const  _HKMedicalHistoryProcedureRecordTypeIdentifierMedicalHistoryProcedureRecord
+0x1e0b4b2d0  __DATA_CONST,__const  _HKMedicalHistoryQuantitativeLabResultRecordReferenceRangesKeyPath
+0x1e0b4abf8  __DATA_CONST,__const  _HKMedicalHistoryQuantitativeLabResultRecordTypeIdentifierMedicalHistoryQuantitativeLabResultRecord
+0x1e0b4b2d8  __DATA_CONST,__const  _HKMedicalHistoryQuantitativeLabResultRecordValueKeyPath
+0x1e0b4b2e0  __DATA_CONST,__const  _HKMedicalHistoryRecordEnteredDateKeyPath
+0x1e0b4b2e8  __DATA_CONST,__const  _HKMedicalHistoryRecordNotesKeyPath
+0x1e0b4b2f0  __DATA_CONST,__const  _HKMedicalHistoryRecordPrimaryConceptIdentifierKeyPath
+0x1e0b4b2f8  __DATA_CONST,__const  _HKMedicalHistoryRecordPrimaryConceptKeyPath
+0x1e0b4b300  __DATA_CONST,__const  _HKMedicalHistoryRecordSortDateKeyPath
+0x1e0b48f28  __DATA_CONST,__const  _HKMedicalIDDataEntitlement
+0x1940b78a0  __TEXT,__text  _HKMedicalRecordAllSupportedCategoryTypes
+0x1e0b4e9e8  __DATA_CONST,__const  _HKMedicalRecordExportedFHIRVersionKey
+0x1e0b4e9f0  __DATA_CONST,__const  _HKMedicalRecordExportedJSONStringKey
+0x1e0b4e9e0  __DATA_CONST,__const  _HKMedicalRecordExportedReceivedDateKey
+0x1e0b4e9d0  __DATA_CONST,__const  _HKMedicalRecordExportedResourceIdentifierKey
+0x1e0b4e9c8  __DATA_CONST,__const  _HKMedicalRecordExportedResourceTypeKey
+0x1e0b4e9d8  __DATA_CONST,__const  _HKMedicalRecordExportedSourceURLKey
+0x1e0b4ea28  __DATA_CONST,__const  _HKMedicalRecordFHIRIdentifierKeyPath
+0x1e0b4e9f8  __DATA_CONST,__const  _HKMedicalRecordModifiedDateKeyPath
+0x1e0b4ea40  __DATA_CONST,__const  _HKMedicalRecordNoteKeyPath
+0x1e0b4ea00  __DATA_CONST,__const  _HKMedicalRecordOriginTypeKeyPath
+0x1e0b4ea20  __DATA_CONST,__const  _HKMedicalRecordSignedClinicalDataOriginIdentifierKeyPath
+0x1e0b4ea08  __DATA_CONST,__const  _HKMedicalRecordSortDateKeyPath
+0x1e0b4ea30  __DATA_CONST,__const  _HKMedicalRecordSortIdentifierModifiedDate
+0x1e0b4ea38  __DATA_CONST,__const  _HKMedicalRecordSortIdentifierSortDate
+0x1e0b4ea10  __DATA_CONST,__const  _HKMedicalRecordStateKeyPath
+0x1e0b4ea18  __DATA_CONST,__const  _HKMedicalRecordUserDomainConceptKeyPath
+0x1940ca460  __TEXT,__text  _HKMedicalRecordsStoreClientInterface
+0x1940ca474  __TEXT,__text  _HKMedicalRecordsStoreServerInterface
+0x1e0b4b308  __DATA_CONST,__const  _HKMedicationDispenseRecordDaysSupplyQuantityKeyPath
+0x1e0b4b310  __DATA_CONST,__const  _HKMedicationDispenseRecordDosagesKeyPath
+0x1e0b4b318  __DATA_CONST,__const  _HKMedicationDispenseRecordEarliestDosageDateKeyPath
+0x1e0b4b320  __DATA_CONST,__const  _HKMedicationDispenseRecordHandOverDateKeyPath
+0x1e0b4b328  __DATA_CONST,__const  _HKMedicationDispenseRecordMedicationCodingsKeyPath
+0x1e0b4b330  __DATA_CONST,__const  _HKMedicationDispenseRecordMedicationKeyPath
+0x1e0b4b338  __DATA_CONST,__const  _HKMedicationDispenseRecordPreparationDateKeyPath
+0x1e0b4b340  __DATA_CONST,__const  _HKMedicationDispenseRecordQuantityDispensedKeyPath
+0x1e0b4b348  __DATA_CONST,__const  _HKMedicationDispenseRecordStatusCodingKeyPath
+0x1e0b4b350  __DATA_CONST,__const  _HKMedicationDispenseRecordStatusKeyPath
+0x1e0b4a720  __DATA_CONST,__const  _HKMedicationDispenseRecordTypeIdentifierMedicationDispenseRecord
+0x1e0b4ec50  __DATA_CONST,__const  _HKMedicationDosageKeyPathMethod
+0x1e0b4ec48  __DATA_CONST,__const  _HKMedicationDosageKeyPathRoute
+0x1e0b4ec40  __DATA_CONST,__const  _HKMedicationDosageKeyPathSite
+0x1e0b48fa8  __DATA_CONST,__const  _HKMedicationDoseEventEntitlement
+0x1940f6b8c  __TEXT,__text  _HKMedicationDoseEventLogOriginToString
+0x1940f6bb8  __TEXT,__text  _HKMedicationDoseEventStatusToString
+0x1e0b4aad8  __DATA_CONST,__const  _HKMedicationDoseEventTypeIdentifierMedicationDoseEvent
+0x1e0b52a78  __DATA_CONST,__const  _HKMedicationGeneralFormCapsule
+0x1e0b52a80  __DATA_CONST,__const  _HKMedicationGeneralFormCream
+0x1e0b52a88  __DATA_CONST,__const  _HKMedicationGeneralFormDevice
+0x1e0b52a90  __DATA_CONST,__const  _HKMedicationGeneralFormDrops
+0x1e0b52a98  __DATA_CONST,__const  _HKMedicationGeneralFormFoam
+0x1e0b52aa0  __DATA_CONST,__const  _HKMedicationGeneralFormGel
+0x1e0b52aa8  __DATA_CONST,__const  _HKMedicationGeneralFormInhaler
+0x1e0b52ab0  __DATA_CONST,__const  _HKMedicationGeneralFormInjection
+0x1e0b52ab8  __DATA_CONST,__const  _HKMedicationGeneralFormLiquid
+0x1e0b52ac0  __DATA_CONST,__const  _HKMedicationGeneralFormLotion
+0x1e0b52ac8  __DATA_CONST,__const  _HKMedicationGeneralFormOintment
+0x1e0b52ad0  __DATA_CONST,__const  _HKMedicationGeneralFormPatch
+0x1e0b52ad8  __DATA_CONST,__const  _HKMedicationGeneralFormPowder
+0x1e0b52ae0  __DATA_CONST,__const  _HKMedicationGeneralFormSpray
+0x1e0b52ae8  __DATA_CONST,__const  _HKMedicationGeneralFormSuppository
+0x1e0b52af0  __DATA_CONST,__const  _HKMedicationGeneralFormTablet
+0x1e0b52af8  __DATA_CONST,__const  _HKMedicationGeneralFormTopical
+0x1e0b52b00  __DATA_CONST,__const  _HKMedicationGeneralFormUnknown
+0x1e0b4b380  __DATA_CONST,__const  _HKMedicationOrderDosagesKeyPath
+0x1e0b4b388  __DATA_CONST,__const  _HKMedicationOrderEarliestDosageDateKeyPath
+0x1e0b4b390  __DATA_CONST,__const  _HKMedicationOrderEndedDateKeyPath
+0x1e0b4b398  __DATA_CONST,__const  _HKMedicationOrderMedicationCodingCollectionKeyPath
+0x1e0b4b3a0  __DATA_CONST,__const  _HKMedicationOrderMedicationKeyPath
+0x1e0b4b3a8  __DATA_CONST,__const  _HKMedicationOrderNumberOfFillsKeyPath
+0x1e0b4b3b0  __DATA_CONST,__const  _HKMedicationOrderPrescriberKeyPath
+0x1e0b4b3b8  __DATA_CONST,__const  _HKMedicationOrderReasonCodingCollectionsKeyPath
+0x1e0b4b3c0  __DATA_CONST,__const  _HKMedicationOrderReasonEndedCodingCollectionKeyPath
+0x1e0b4b3c8  __DATA_CONST,__const  _HKMedicationOrderReasonEndedKeyPath
+0x1e0b4b3d0  __DATA_CONST,__const  _HKMedicationOrderReasonKeyPath
+0x1e0b4b3d8  __DATA_CONST,__const  _HKMedicationOrderStatusCodingKeyPath
+0x1e0b4b3e0  __DATA_CONST,__const  _HKMedicationOrderStatusKeyPath
+0x1e0b4b3e8  __DATA_CONST,__const  _HKMedicationOrderStatusReasonCodingCollectionKeyPath
+0x1e0b4b3f0  __DATA_CONST,__const  _HKMedicationOrderStatusReasonKeyPath
+0x1e0b4a718  __DATA_CONST,__const  _HKMedicationOrderTypeIdentifierMedicationOrder
+0x1e0b4b3f8  __DATA_CONST,__const  _HKMedicationOrderWrittenDateKeyPath
+0x1e0b4b428  __DATA_CONST,__const  _HKMedicationRecordAsserterKeyPath
+0x1e0b4b430  __DATA_CONST,__const  _HKMedicationRecordAssertionDateKeyPath
+0x1e0b4b438  __DATA_CONST,__const  _HKMedicationRecordAssertionTypeKeyPath
+0x1e0b4b440  __DATA_CONST,__const  _HKMedicationRecordDosagesKeyPath
+0x1e0b4b448  __DATA_CONST,__const  _HKMedicationRecordEarliestDosageDateKeyPath
+0x1e0b4b450  __DATA_CONST,__const  _HKMedicationRecordEffectiveEndDateKeyPath
+0x1e0b4b458  __DATA_CONST,__const  _HKMedicationRecordEffectiveStartDateKeyPath
+0x1e0b4b460  __DATA_CONST,__const  _HKMedicationRecordMedicationCodingCollectionKeyPath
+0x1e0b4b468  __DATA_CONST,__const  _HKMedicationRecordMedicationKeyPath
+0x1e0b4b470  __DATA_CONST,__const  _HKMedicationRecordNotTakenKeyPath
+0x1e0b4b478  __DATA_CONST,__const  _HKMedicationRecordReasonForUseCodingCollectionsKeyPath
+0x1e0b4b480  __DATA_CONST,__const  _HKMedicationRecordReasonForUseKeyPath
+0x1e0b4b488  __DATA_CONST,__const  _HKMedicationRecordReasonsNotTakenCodingCollectionsKeyPath
+0x1e0b4b490  __DATA_CONST,__const  _HKMedicationRecordReasonsNotTakenKeyPath
+0x1e0b4b498  __DATA_CONST,__const  _HKMedicationRecordStatusCodingKeyPath
+0x1e0b4b4a0  __DATA_CONST,__const  _HKMedicationRecordStatusKeyPath
+0x1e0b4a728  __DATA_CONST,__const  _HKMedicationRecordTypeIdentifierMedicationRecord
+0x1e0b4dad8  __DATA_CONST,__const  _HKMenstrualCyclesAlgorithmsVersion
+0x1e0b48f78  __DATA_CONST,__const  _HKMenstrualCyclesDiagnosticsEntitlement
+0x194107e44  __TEXT,__text  _HKMetadataAliasRangesForKey
+0x19410799c  __TEXT,__text  _HKMetadataAliasesForKey
+0x1e0b50b48  __DATA_CONST,__const  _HKMetadataKeyActivityType
+0x1e0b50b40  __DATA_CONST,__const  _HKMetadataKeyAlgorithmVersion
+0x1e0b50b98  __DATA_CONST,__const  _HKMetadataKeyAlpineSlopeGrade
+0x1e0b50f18  __DATA_CONST,__const  _HKMetadataKeyAppleDeviceCalibrated
+0x1e0b50ea0  __DATA_CONST,__const  _HKMetadataKeyAppleECGAlgorithmVersion
+0x1e0b50ad0  __DATA_CONST,__const  _HKMetadataKeyAppleFitnessPlusCatalogIdentifier
+0x1e0b50ad8  __DATA_CONST,__const  _HKMetadataKeyAppleFitnessPlusSession
+0x1e0b50b30  __DATA_CONST,__const  _HKMetadataKeyAppleIrregularRhythmNotificationsAlgorithmVersion
+0x1e0b50ed8  __DATA_CONST,__const  _HKMetadataKeyAudioExposureDuration
+0x1e0b50ed0  __DATA_CONST,__const  _HKMetadataKeyAudioExposureLevel
+0x1e0b50bc8  __DATA_CONST,__const  _HKMetadataKeyAverageMETs
+0x1e0b50b88  __DATA_CONST,__const  _HKMetadataKeyAverageSpeed
+0x1e0b50e28  __DATA_CONST,__const  _HKMetadataKeyBarometricPressure
+0x1e0b50b08  __DATA_CONST,__const  _HKMetadataKeyBloodGlucoseMealTime
+0x1e0b50a50  __DATA_CONST,__const  _HKMetadataKeyBodyTemperatureSensorLocation
+0x1e0b50ae8  __DATA_CONST,__const  _HKMetadataKeyCoachedWorkout
+0x1e0b50bc0  __DATA_CONST,__const  _HKMetadataKeyCrossTrainerDistance
+0x1e0b50bd8  __DATA_CONST,__const  _HKMetadataKeyCyclingFunctionalThresholdPowerTestType
+0x1e0b50b38  __DATA_CONST,__const  _HKMetadataKeyDateOfEarliestDataUsedForEstimate
+0x1e0b50a98  __DATA_CONST,__const  _HKMetadataKeyDeviceManufacturerName
+0x1e0b50a90  __DATA_CONST,__const  _HKMetadataKeyDeviceName
+0x1e0b50f10  __DATA_CONST,__const  _HKMetadataKeyDevicePlacementSide
+0x1e0b50a48  __DATA_CONST,__const  _HKMetadataKeyDeviceSerialNumber
+0x1e0b50a68  __DATA_CONST,__const  _HKMetadataKeyDigitalSignature
+0x1e0b50ba0  __DATA_CONST,__const  _HKMetadataKeyElevationAscended
+0x1e0b50ba8  __DATA_CONST,__const  _HKMetadataKeyElevationDescended
+0x1e0b50a70  __DATA_CONST,__const  _HKMetadataKeyExternalUUID
+0x1e0b50bb0  __DATA_CONST,__const  _HKMetadataKeyFitnessMachineDuration
+0x1e0b50a60  __DATA_CONST,__const  _HKMetadataKeyFoodType
+0x1e0b50be0  __DATA_CONST,__const  _HKMetadataKeyGlassesPrescriptionDescription
+0x1e0b50ac8  __DATA_CONST,__const  _HKMetadataKeyGroupFitness
+0x1e0b50ee0  __DATA_CONST,__const  _HKMetadataKeyHeadphoneGain
+0x1e0b50b18  __DATA_CONST,__const  _HKMetadataKeyHeartRateEventThreshold
+0x1e0b50db0  __DATA_CONST,__const  _HKMetadataKeyHeartRateMotionContext
+0x1e0b50de8  __DATA_CONST,__const  _HKMetadataKeyHeartRateRecoveryActivityDuration
+0x1e0b50de0  __DATA_CONST,__const  _HKMetadataKeyHeartRateRecoveryActivityType
+0x1e0b50df0  __DATA_CONST,__const  _HKMetadataKeyHeartRateRecoveryMaxObservedRecoveryHeartRate
+0x1e0b50dd8  __DATA_CONST,__const  _HKMetadataKeyHeartRateRecoveryTestType
+0x1e0b50a58  __DATA_CONST,__const  _HKMetadataKeyHeartRateSensorLocation
+0x1e0b50bb8  __DATA_CONST,__const  _HKMetadataKeyIndoorBikeDistance
+0x1e0b50ae0  __DATA_CONST,__const  _HKMetadataKeyIndoorWorkout
+0x1e0b50b00  __DATA_CONST,__const  _HKMetadataKeyInsulinDeliveryReason
+0x1e0b50b70  __DATA_CONST,__const  _HKMetadataKeyLapLength
+0x1e0b50b28  __DATA_CONST,__const  _HKMetadataKeyLowCardioFitnessEventThreshold
+0x1e0b50f78  __DATA_CONST,__const  _HKMetadataKeyMaximumLightIntensity
+0x1e0b50b90  __DATA_CONST,__const  _HKMetadataKeyMaximumSpeed
+0x1e0b50af8  __DATA_CONST,__const  _HKMetadataKeyMenstrualCycleStart
+0x1e0b50b50  __DATA_CONST,__const  _HKMetadataKeyPhysicalEffortEstimationType
+0x1e0b50f48  __DATA_CONST,__const  _HKMetadataKeyQuantityClampedToLowerBound
+0x1e0b50f50  __DATA_CONST,__const  _HKMetadataKeyQuantityClampedToUpperBound
+0x1e0b50aa8  __DATA_CONST,__const  _HKMetadataKeyReferenceRangeLowerLimit
+0x1e0b50ab0  __DATA_CONST,__const  _HKMetadataKeyReferenceRangeUpperLimit
+0x1e0b50bd0  __DATA_CONST,__const  _HKMetadataKeySWOLFScore
+0x1e0b50df8  __DATA_CONST,__const  _HKMetadataKeySessionEstimate
+0x1e0b50af0  __DATA_CONST,__const  _HKMetadataKeySexualActivityProtectionUsed
+0x1e0b50b78  __DATA_CONST,__const  _HKMetadataKeySwimmingLocationType
+0x1e0b50b80  __DATA_CONST,__const  _HKMetadataKeySwimmingStrokeStyle
+0x1e0b50a78  __DATA_CONST,__const  _HKMetadataKeySyncIdentifier
+0x1e0b50a80  __DATA_CONST,__const  _HKMetadataKeySyncVersion
+0x1e0b50a88  __DATA_CONST,__const  _HKMetadataKeyTimeZone
+0x1e0b50a38  __DATA_CONST,__const  _HKMetadataKeyUDIDeviceIdentifier
+0x1e0b50a40  __DATA_CONST,__const  _HKMetadataKeyUDIProductionIdentifier
+0x1e0b50da8  __DATA_CONST,__const  _HKMetadataKeyUserMotionContext
+0x1e0b50b10  __DATA_CONST,__const  _HKMetadataKeyVO2MaxTestType
+0x1e0b50b20  __DATA_CONST,__const  _HKMetadataKeyVO2MaxValue
+0x1e0b50aa0  __DATA_CONST,__const  _HKMetadataKeyWasTakenInLab
+0x1e0b50ab8  __DATA_CONST,__const  _HKMetadataKeyWasUserEntered
+0x1e0b50f70  __DATA_CONST,__const  _HKMetadataKeyWaterSalinity
+0x1e0b50b58  __DATA_CONST,__const  _HKMetadataKeyWeatherCondition
+0x1e0b50b68  __DATA_CONST,__const  _HKMetadataKeyWeatherHumidity
+0x1e0b50b60  __DATA_CONST,__const  _HKMetadataKeyWeatherTemperature
+0x1e0b50ac0  __DATA_CONST,__const  _HKMetadataKeyWorkoutBrandName
+0x1940ea4c0  __TEXT,__text  _HKMinimumDecibelQuantityForHearingLevelClassification
+0x19441cc48  __TEXT,__const  _HKMinimumRequiredAuthorizationTypeIdentifiers
+0x193fd41b4  __TEXT,__text  _HKMinimumSampleDurationForType
+0x1940f8ef0  __TEXT,__text  _HKMinimumScoreForGAD7AssessmentRisk
+0x1940f98c0  __TEXT,__text  _HKMinimumScoreForPHQ9AssessmentRisk
+0x1e0b48fa0  __DATA_CONST,__const  _HKMobilityWalkingSteadinessFeatureStatusReadEntitlement
+0x1e0b55c98  __DATA_CONST,__const  _HKMutableIntegerSetMutationWhileEnumeratingExceptionName
+0x193fe2b04  __TEXT,__text  _HKNSOperatingSystemVersionCompare
+0x193faea68  __TEXT,__text  _HKNSOperatingSystemVersionFromString
+0x193fe2b58  __TEXT,__text  _HKNSOperatingSystemVersionIsUnknown
+0x193fd3080  __TEXT,__text  _HKNSOperatingSystemVersionString
+0x1944d7938  __TEXT,__const  _HKNSOperatingSystemVersionUnknown
+0x1941ecc00  __TEXT,__text  _HKNSOperatingSystemVersionsEqual
+0x1e0b58260  __DATA_CONST,__const  _HKNanoAuthorizationMachServiceName
+0x1e0b583d0  __DATA_CONST,__const  _HKNanoMedicationsAppBundleID
+0x193fcd67c  __TEXT,__text  _HKNanoSyncControlClientInterface
+0x193fcd694  __TEXT,__text  _HKNanoSyncControlServerInterface
+0x1e0b48ee0  __DATA_CONST,__const  _HKNikeFuelSourceEntitlement
+0x1940fcd58  __TEXT,__text  _HKNotificationDomainIsDeprecated
+0x1940fe880  __TEXT,__text  _HKNotificationStoreClientInterface
+0x1940fe894  __TEXT,__text  _HKNotificationStoreServerInterface
+0x1e0b48f80  __DATA_CONST,__const  _HKNotificationSyncEntitlement
+0x1940ff1c4  __TEXT,__text  _HKNotificationSyncStoreClientInterface
+0x1940ff1d8  __TEXT,__text  _HKNotificationSyncStoreServerInterface
+0x1e0b4f008  __DATA_CONST,__const  _HKOAuth2ErrorBearerAuthenticateResponseErrorKey
+0x1e0b4f000  __DATA_CONST,__const  _HKOAuth2ErrorDomain
+0x1e0b4f010  __DATA_CONST,__const  _HKOAuth2ErrorHTTPStatusCodeErrorKey
+0x1e0b4f018  __DATA_CONST,__const  _HKOAuth2ErrorResponseErrorDescriptionErrorKey
+0x1e0b4f020  __DATA_CONST,__const  _HKOAuth2ErrorResponseErrorNameErrorKey
+0x1e0b4d7e8  __DATA_CONST,__const  _HKOTAFeatureAvailabilityNamespace
+0x1942280d8  __TEXT,__text  _HKObjectAuthorizationStatusForNumber
+0x1941eb144  __TEXT,__text  _HKObjectForNanoPreferencesUserDefaultsKey
+0x1e0b52818  __DATA_CONST,__const  _HKObjectSortIdentifierDataID
+0x194040430  __TEXT,__text  _HKObjectTypeForAuthorization
+0x194040460  __TEXT,__text  _HKObjectTypeSupportsLimitedHistoryAuthorization
+0x1941370d8  __TEXT,__text  _HKObjectValidationConfigurationMake
+0x19413711c  __TEXT,__text  _HKObjectValidationConfigurationWithOptions
+0x1e0b48f40  __DATA_CONST,__const  _HKObliterationEntitlement
+0x1944d6848  __TEXT,__const  _HKOnboardingMinimumRequiredAgeElectrocardiogram
+0x1e0b52ca8  __DATA_CONST,__const  _HKOntologyServerBaseHostURLCarry
+0x1e0b52c38  __DATA_CONST,__const  _HKOntologyServerBaseHostURLKey
+0x1e0b52ca0  __DATA_CONST,__const  _HKOntologyServerBaseHostURLProduction
+0x1e0b52cb0  __DATA_CONST,__const  _HKOntologyServerBaseHostURLQA
+0x1e0b52cb8  __DATA_CONST,__const  _HKOntologyServerBaseHostURLSandbox
+0x1e0b52c68  __DATA_CONST,__const  _HKOntologyShardIdentifierCHR
+0x1e0b52c50  __DATA_CONST,__const  _HKOntologyShardIdentifierCoreMeds
+0x1e0b52c58  __DATA_CONST,__const  _HKOntologyShardIdentifierInteractions
+0x1e0b52c40  __DATA_CONST,__const  _HKOntologyShardIdentifierManifest
+0x1e0b52c80  __DATA_CONST,__const  _HKOntologyShardIdentifierMedicalHistory
+0x1e0b52c78  __DATA_CONST,__const  _HKOntologyShardIdentifierMedsDemoData
+0x1e0b52c60  __DATA_CONST,__const  _HKOntologyShardIdentifierMedsEducation
+0x1e0b52c70  __DATA_CONST,__const  _HKOntologyShardIdentifierMedsScanning
+0x1e0b52c48  __DATA_CONST,__const  _HKOntologyShardIdentifierUniversal
+0x1944d6b20  __TEXT,__const  _HKOntologyShardRegistryEntrySizeUnknown
+0x1944d6b18  __TEXT,__const  _HKOntologyShardRegistryEntrySlotNone
+0x1944d6b28  __TEXT,__const  _HKOntologyShardRegistrySchemaVersionInvalid
+0x1941432c0  __TEXT,__text  _HKOntologyShardSchemaTypeForShardIdentifier
+0x1e0b52c88  __DATA_CONST,__const  _HKOntologyShardSchemaTypeManifestCSV
+0x1e0b52c98  __DATA_CONST,__const  _HKOntologyShardSchemaTypeMedsScanningResourcesZip
+0x1e0b52c90  __DATA_CONST,__const  _HKOntologyShardSchemaTypeMercuryZipTSV
+0x194109ed4  __TEXT,__text  _HKOverheadSquatCompensationsDescription
+0x194227f8c  __TEXT,__text  _HKOxygenSaturationLowBarometricPressureThresholdQuantity
+0x1e0b4dae0  __DATA_CONST,__const  _HKOxygenSaturationRecordingFeatureVersion
+0x1e0b55710  __DATA_CONST,__const  _HKPPTPluginPath
+0x1e0b48b78  __DATA_CONST,__const  _HKPauseRingsScheduleSortIdentifierEndDateIndex
+0x1e0b48b70  __DATA_CONST,__const  _HKPauseRingsScheduleSortIdentifierStartDateIndex
+0x1e0b55ae0  __DATA_CONST,__const  _HKPeriodicCountryMonitorLastCheckAttemptDateKey
+0x1e0b48d38  __DATA_CONST,__const  _HKPredicateKeyPathActivityMoveMode
+0x1e0b512d0  __DATA_CONST,__const  _HKPredicateKeyPathAverage
+0x1e0b508e0  __DATA_CONST,__const  _HKPredicateKeyPathAverageHeartRate
+0x1e0b4dc10  __DATA_CONST,__const  _HKPredicateKeyPathCDAAuthorName
+0x1e0b4dc18  __DATA_CONST,__const  _HKPredicateKeyPathCDACustodianName
+0x1e0b4dc08  __DATA_CONST,__const  _HKPredicateKeyPathCDAPatientName
+0x1e0b4dc00  __DATA_CONST,__const  _HKPredicateKeyPathCDATitle
+0x1e0b48c40  __DATA_CONST,__const  _HKPredicateKeyPathCacheIndex
+0x1e0b52ec0  __DATA_CONST,__const  _HKPredicateKeyPathCategoryTypes
+0x1e0b52728  __DATA_CONST,__const  _HKPredicateKeyPathCategoryValue
+0x1e0b4dc88  __DATA_CONST,__const  _HKPredicateKeyPathClinicalRecordFHIRResourceIdentifier
+0x1e0b4dc90  __DATA_CONST,__const  _HKPredicateKeyPathClinicalRecordFHIRResourceType
+0x1e0b52848  __DATA_CONST,__const  _HKPredicateKeyPathCorrelation
+0x1e0b51328  __DATA_CONST,__const  _HKPredicateKeyPathCount
+0x1e0b48d30  __DATA_CONST,__const  _HKPredicateKeyPathDateComponents
+0x1e0b52858  __DATA_CONST,__const  _HKPredicateKeyPathDevice
+0x1e0b508e8  __DATA_CONST,__const  _HKPredicateKeyPathECGClassification
+0x1e0b508f0  __DATA_CONST,__const  _HKPredicateKeyPathECGSymptomsStatus
+0x1e0b528c0  __DATA_CONST,__const  _HKPredicateKeyPathEndDate
+0x1e0b56ba0  __DATA_CONST,__const  _HKPredicateKeyPathFriendUUID
+0x1e0b52e78  __DATA_CONST,__const  _HKPredicateKeyPathListType
+0x1e0b502c8  __DATA_CONST,__const  _HKPredicateKeyPathLogOrigin
+0x1e0b52ee8  __DATA_CONST,__const  _HKPredicateKeyPathMappingToMedicalRecordUUID
+0x1e0b512e0  __DATA_CONST,__const  _HKPredicateKeyPathMax
+0x1e0b502e0  __DATA_CONST,__const  _HKPredicateKeyPathMedicationConceptIdentifier
+0x1e0b502b8  __DATA_CONST,__const  _HKPredicateKeyPathMedicationIdentifier
+0x1e0b502d0  __DATA_CONST,__const  _HKPredicateKeyPathMedicationUUID
+0x1e0b52840  __DATA_CONST,__const  _HKPredicateKeyPathMetadata
+0x1e0b512d8  __DATA_CONST,__const  _HKPredicateKeyPathMin
+0x1e0b512e8  __DATA_CONST,__const  _HKPredicateKeyPathMostRecent
+0x1e0b51300  __DATA_CONST,__const  _HKPredicateKeyPathMostRecentDuration
+0x1e0b512f8  __DATA_CONST,__const  _HKPredicateKeyPathMostRecentEndDate
+0x1e0b512f0  __DATA_CONST,__const  _HKPredicateKeyPathMostRecentStartDate
+0x1e0b528c8  __DATA_CONST,__const  _HKPredicateKeyPathOffsetFromStartDate
+0x1e0b51320  __DATA_CONST,__const  _HKPredicateKeyPathQuantity
+0x1e0b502c0  __DATA_CONST,__const  _HKPredicateKeyPathScheduleItemIdentifier
+0x1e0b502d8  __DATA_CONST,__const  _HKPredicateKeyPathScheduledDate
+0x1e0b52838  __DATA_CONST,__const  _HKPredicateKeyPathSource
+0x1e0b52860  __DATA_CONST,__const  _HKPredicateKeyPathSourceRevision
+0x1e0b528b8  __DATA_CONST,__const  _HKPredicateKeyPathStartDate
+0x1e0b50438  __DATA_CONST,__const  _HKPredicateKeyPathStateOfMindDomains
+0x1e0b50430  __DATA_CONST,__const  _HKPredicateKeyPathStateOfMindLabels
+0x1e0b50428  __DATA_CONST,__const  _HKPredicateKeyPathStateOfMindReflectiveInterval
+0x1e0b50420  __DATA_CONST,__const  _HKPredicateKeyPathStateOfMindValence
+0x1e0b502b0  __DATA_CONST,__const  _HKPredicateKeyPathStatus
+0x1e0b512c8  __DATA_CONST,__const  _HKPredicateKeyPathSum
+0x1e0b52830  __DATA_CONST,__const  _HKPredicateKeyPathUUID
+0x1e0b52ef0  __DATA_CONST,__const  _HKPredicateKeyPathUnresolvedConceptResolutionDefinition
+0x1e0b52f10  __DATA_CONST,__const  _HKPredicateKeyPathUserDomainConceptOCI
+0x1e0b52ef8  __DATA_CONST,__const  _HKPredicateKeyPathUserDomainConceptSemanticIdentifier
+0x1e0b52f00  __DATA_CONST,__const  _HKPredicateKeyPathUserDomainConceptTypeIdentifier
+0x1e0b52f08  __DATA_CONST,__const  _HKPredicateKeyPathUserDomainConceptUUID
+0x1e0b52850  __DATA_CONST,__const  _HKPredicateKeyPathWorkout
+0x1e0b57700  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutActivity
+0x1e0b56578  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutActivityAverageQuantity
+0x1e0b56548  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutActivityDuration
+0x1e0b56558  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutActivityEndDate
+0x1e0b56570  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutActivityMaximumQuantity
+0x1e0b56568  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutActivityMinimumQuantity
+0x1e0b56550  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutActivityStartDate
+0x1e0b56560  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutActivitySumQuantity
+0x1e0b56540  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutActivityType
+0x1e0b576f8  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutAverageQuantity
+0x1e0b576a8  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutDuration
+0x1e0b52868  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutEffortRelationship
+0x1e0b576f0  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutMaximumQuantity
+0x1e0b576e8  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutMinimumQuantity
+0x1e0b576e0  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutSumQuantity
+0x1e0b576b8  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutTotalDistance
+0x1e0b576b0  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutTotalEnergyBurned
+0x1e0b576c8  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutTotalFlightsClimbed
+0x1e0b576c0  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutTotalSwimmingStrokeCount
+0x1e0b576a0  __DATA_CONST,__const  _HKPredicateKeyPathWorkoutType
+0x194072478  __TEXT,__text  _HKPreferredRegulatoryDomainProvider
+0x1e0b49070  __DATA_CONST,__const  _HKPreferredSourceEntitlement
+0x1940a23c8  __TEXT,__text  _HKPrettyPrintedFeatureOnboardingRecord
+0x1940a2d94  __TEXT,__text  _HKPrettyPrintedFeatureSettings
+0x19408a4f0  __TEXT,__text  _HKPrettyPrintedFeatureStatus
+0x1e0b490a8  __DATA_CONST,__const  _HKPrivateAttachmentsEntitlement
+0x1e0b49000  __DATA_CONST,__const  _HKPrivateHealthKitAccessEntitlement
+0x1e0b49018  __DATA_CONST,__const  _HKPrivateHealthKitAccessIdentifierCardioFitnessMedicationUse
+0x1e0b49020  __DATA_CONST,__const  _HKPrivateHealthKitAccessIdentifierEthnicity
+0x1e0b49008  __DATA_CONST,__const  _HKPrivateHealthKitAccessIdentifierHealthRecordsPrivate
+0x1e0b49010  __DATA_CONST,__const  _HKPrivateHealthKitAccessIdentifierMenstrualCyclesSPI
+0x1e0b49030  __DATA_CONST,__const  _HKPrivateHealthKitAccessIdentifierMentalHealth
+0x1e0b49028  __DATA_CONST,__const  _HKPrivateHealthKitAccessIdentifierSleep
+0x1e0b49038  __DATA_CONST,__const  _HKPrivateHealthKitAccessIdentifierUserTrackedConcept
+0x1e0b48f18  __DATA_CONST,__const  _HKPrivateHealthKitEntitlement
+0x1e0b48f48  __DATA_CONST,__const  _HKPrivateMetadataEntitlement
+0x1e0b49098  __DATA_CONST,__const  _HKPrivateSyncEntitlement
+0x1e0b4b9a0  __DATA_CONST,__const  _HKProcedureRecordBodySitesCodingCollectionsKeyPath
+0x1e0b4b9a8  __DATA_CONST,__const  _HKProcedureRecordBodySitesKeyPath
+0x1e0b4b9b0  __DATA_CONST,__const  _HKProcedureRecordCategoryCodingCollectionKeyPath
+0x1e0b4b9b8  __DATA_CONST,__const  _HKProcedureRecordCategoryKeyPath
+0x1e0b4b9c0  __DATA_CONST,__const  _HKProcedureRecordComplicationsCodingCollectionsKeyPath
+0x1e0b4b9c8  __DATA_CONST,__const  _HKProcedureRecordComplicationsKeyPath
+0x1e0b4b9d0  __DATA_CONST,__const  _HKProcedureRecordExecutionEndDateKeyPath
+0x1e0b4b9d8  __DATA_CONST,__const  _HKProcedureRecordExecutionStartDateKeyPath
+0x1e0b4b9e0  __DATA_CONST,__const  _HKProcedureRecordFollowUpsCodingCollectionsKeyPath
+0x1e0b4b9e8  __DATA_CONST,__const  _HKProcedureRecordFollowUpsKeyPath
+0x1e0b4b9f0  __DATA_CONST,__const  _HKProcedureRecordNotPerformedKeyPath
+0x1e0b4b9f8  __DATA_CONST,__const  _HKProcedureRecordOutcomeCodingCollectionKeyPath
+0x1e0b4ba00  __DATA_CONST,__const  _HKProcedureRecordOutcomeKeyPath
+0x1e0b4ba08  __DATA_CONST,__const  _HKProcedureRecordPerformersKeyPath
+0x1e0b4ba10  __DATA_CONST,__const  _HKProcedureRecordProcedureCodingCollectionKeyPath
+0x1e0b4ba18  __DATA_CONST,__const  _HKProcedureRecordProcedureKeyPath
+0x1e0b4ba20  __DATA_CONST,__const  _HKProcedureRecordReasonCodingCollectionsKeyPath
+0x1e0b4ba28  __DATA_CONST,__const  _HKProcedureRecordReasonKeyPath
+0x1e0b4ba30  __DATA_CONST,__const  _HKProcedureRecordReasonsNotPerformedCodingCollectionsKeyPath
+0x1e0b4ba38  __DATA_CONST,__const  _HKProcedureRecordReasonsNotPerformedKeyPath
+0x1e0b4ba40  __DATA_CONST,__const  _HKProcedureRecordStatusCodingKeyPath
+0x1e0b4ba48  __DATA_CONST,__const  _HKProcedureRecordStatusKeyPath
+0x1e0b4a758  __DATA_CONST,__const  _HKProcedureRecordTypeIdentifierProcedureRecord
+0x1e0b56450  __DATA_CONST,__const  _HKProductTypePrefixAirPods
+0x1e0b563f0  __DATA_CONST,__const  _HKProductTypePrefixAppleWatch
+0x1e0b56410  __DATA_CONST,__const  _HKProductTypePrefixAppleWatch5SECellularBig
+0x1e0b56408  __DATA_CONST,__const  _HKProductTypePrefixAppleWatch5SECellularSmall
+0x1e0b56400  __DATA_CONST,__const  _HKProductTypePrefixAppleWatch5SENonCellularBig
+0x1e0b563f8  __DATA_CONST,__const  _HKProductTypePrefixAppleWatch5SENonCellularSmall
+0x1e0b56430  __DATA_CONST,__const  _HKProductTypePrefixAppleWatch6SECellularBig
+0x1e0b56428  __DATA_CONST,__const  _HKProductTypePrefixAppleWatch6SECellularSmall
+0x1e0b56420  __DATA_CONST,__const  _HKProductTypePrefixAppleWatch6SENonCellularBig
+0x1e0b56418  __DATA_CONST,__const  _HKProductTypePrefixAppleWatch6SENonCellularSmall
+0x1e0b563c8  __DATA_CONST,__const  _HKProductTypePrefixAppleWatchFirstGeneration
+0x1e0b563d0  __DATA_CONST,__const  _HKProductTypePrefixAppleWatchSeries1Series2
+0x1e0b563d8  __DATA_CONST,__const  _HKProductTypePrefixAppleWatchSeries3
+0x1e0b563e0  __DATA_CONST,__const  _HKProductTypePrefixAppleWatchSeries4
+0x1e0b563e8  __DATA_CONST,__const  _HKProductTypePrefixAppleWatchSeries5
+0x1e0b56438  __DATA_CONST,__const  _HKProductTypePrefixPhone
+0x1e0b56458  __DATA_CONST,__const  _HKProductTypePrefixPowerBeats
+0x1e0b56448  __DATA_CONST,__const  _HKProductTypePrefixVisionPro
+0x1e0b56440  __DATA_CONST,__const  _HKProductTypePrefixiPad
+0x193fe0d78  __TEXT,__text  _HKProfileStoreClientInterface
+0x193fe0d08  __TEXT,__text  _HKProfileStoreServerInterface
+0x193faad78  __TEXT,__text  _HKProgramSDKAtLeast
+0x193fc5528  __TEXT,__text  _HKProgramSDKTokenAtLeast
+0x1940402b0  __TEXT,__text  _HKPromptForLegacyPerObjectAuthorizationDuringQueries
+0x1e0b49c98  __DATA_CONST,__const  _HKProtectedDatabasePragmaName
+0x1e0b57cc8  __DATA_CONST,__const  _HKProtectedHealthDatabaseDidBecomeAvailableNotification
+0x1e0b57cd0  __DATA_CONST,__const  _HKProtectedHealthDatabaseDidBecomeUnavailableNotification
+0x1940ea350  __TEXT,__text  _HKPureToneAverageFromPureToneSensitivityPoints
+0x194120958  __TEXT,__text  _HKQuantityMax
+0x1941208d4  __TEXT,__text  _HKQuantityMin
+0x19417c7b4  __TEXT,__text  _HKQuantityRangeInclusive
+0x1e0b51318  __DATA_CONST,__const  _HKQuantitySampleSortIdentifierQuantity
+0x1944d6ad8  __TEXT,__const  _HKQuantitySeriesSampleBuilderDefaultBatchSize
+0x1e0b51168  __DATA_CONST,__const  _HKQuantitySeriesSampleBuilderTaskServerIdentifier
+0x1e0b51258  __DATA_CONST,__const  _HKQuantitySeriesSampleEditorTaskServerIdentifier
+0x1e0b4a3e8  __DATA_CONST,__const  _HKQuantityTypeIdentifierActiveEnergyBurned
+0x1e0b4a5d0  __DATA_CONST,__const  _HKQuantityTypeIdentifierAppleExerciseTime
+0x1e0b4a898  __DATA_CONST,__const  _HKQuantityTypeIdentifierAppleMoveTime
+0x1e0b4aae8  __DATA_CONST,__const  _HKQuantityTypeIdentifierAppleSleepingBreathingDisturbances
+0x1e0b4aa60  __DATA_CONST,__const  _HKQuantityTypeIdentifierAppleSleepingWristTemperature
+0x1e0b4a8b8  __DATA_CONST,__const  _HKQuantityTypeIdentifierAppleStandTime
+0x1e0b4aa30  __DATA_CONST,__const  _HKQuantityTypeIdentifierAppleWalkingSteadiness
+0x1e0b4aa28  __DATA_CONST,__const  _HKQuantityTypeIdentifierAtrialFibrillationBurden
+0x1e0b4a640  __DATA_CONST,__const  _HKQuantityTypeIdentifierBasalBodyTemperature
+0x1e0b4a3e0  __DATA_CONST,__const  _HKQuantityTypeIdentifierBasalEnergyBurned
+0x1e0b4a420  __DATA_CONST,__const  _HKQuantityTypeIdentifierBloodAlcoholContent
+0x1e0b4a408  __DATA_CONST,__const  _HKQuantityTypeIdentifierBloodGlucose
+0x1e0b4a418  __DATA_CONST,__const  _HKQuantityTypeIdentifierBloodPressureDiastolic
+0x1e0b4a410  __DATA_CONST,__const  _HKQuantityTypeIdentifierBloodPressureSystolic
+0x1e0b4a3a8  __DATA_CONST,__const  _HKQuantityTypeIdentifierBodyFatPercentage
+0x1e0b4a3b8  __DATA_CONST,__const  _HKQuantityTypeIdentifierBodyMass
+0x1e0b4a3a0  __DATA_CONST,__const  _HKQuantityTypeIdentifierBodyMassIndex
+0x1e0b4a578  __DATA_CONST,__const  _HKQuantityTypeIdentifierBodyTemperature
+0x1e0b4aba8  __DATA_CONST,__const  _HKQuantityTypeIdentifierCrossCountrySkiingSpeed
+0x1e0b4ab18  __DATA_CONST,__const  _HKQuantityTypeIdentifierCyclingCadence
+0x1e0b4ab20  __DATA_CONST,__const  _HKQuantityTypeIdentifierCyclingFunctionalThresholdPower
+0x1e0b4ab08  __DATA_CONST,__const  _HKQuantityTypeIdentifierCyclingPower
+0x1e0b4ab10  __DATA_CONST,__const  _HKQuantityTypeIdentifierCyclingSpeed
+0x1e0b4a4f0  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryBiotin
+0x1e0b4a5e8  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryCaffeine
+0x1e0b4a4c0  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryCalcium
+0x1e0b4a460  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryCarbohydrates
+0x1e0b4a548  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryChloride
+0x1e0b4a450  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryCholesterol
+0x1e0b4a538  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryChromium
+0x1e0b4a528  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryCopper
+0x1e0b4a478  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryEnergyConsumed
+0x1e0b4a440  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryFatMonounsaturated
+0x1e0b4a438  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryFatPolyunsaturated
+0x1e0b4a448  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryFatSaturated
+0x1e0b4a430  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryFatTotal
+0x1e0b4a468  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryFiber
+0x1e0b4a4e8  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryFolate
+0x1e0b4a508  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryIodine
+0x1e0b4a4c8  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryIron
+0x1e0b4a510  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryMagnesium
+0x1e0b4a530  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryManganese
+0x1e0b4a540  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryMolybdenum
+0x1e0b4a4e0  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryNiacin
+0x1e0b4a4f8  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryPantothenicAcid
+0x1e0b4a500  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryPhosphorus
+0x1e0b4a550  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryPotassium
+0x1e0b4a480  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryProtein
+0x1e0b4a4d8  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryRiboflavin
+0x1e0b4a520  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietarySelenium
+0x1e0b4a458  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietarySodium
+0x1e0b4a470  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietarySugar
+0x1e0b4a4d0  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryThiamin
+0x1e0b4a488  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryVitaminA
+0x1e0b4a498  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryVitaminB12
+0x1e0b4a490  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryVitaminB6
+0x1e0b4a4a0  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryVitaminC
+0x1e0b4a4a8  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryVitaminD
+0x1e0b4a4b0  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryVitaminE
+0x1e0b4a4b8  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryVitaminK
+0x1e0b4a628  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryWater
+0x1e0b4a518  __DATA_CONST,__const  _HKQuantityTypeIdentifierDietaryZinc
+0x1e0b4ab78  __DATA_CONST,__const  _HKQuantityTypeIdentifierDistanceCrossCountrySkiing
+0x1e0b4a608  __DATA_CONST,__const  _HKQuantityTypeIdentifierDistanceCycling
+0x1e0b4a768  __DATA_CONST,__const  _HKQuantityTypeIdentifierDistanceDownhillSnowSports
+0x1e0b4ab68  __DATA_CONST,__const  _HKQuantityTypeIdentifierDistancePaddleSports
+0x1e0b4ab70  __DATA_CONST,__const  _HKQuantityTypeIdentifierDistanceRowing
+0x1e0b4ab80  __DATA_CONST,__const  _HKQuantityTypeIdentifierDistanceSkatingSports
+0x1e0b4a6c8  __DATA_CONST,__const  _HKQuantityTypeIdentifierDistanceSwimming
+0x1e0b4a3d8  __DATA_CONST,__const  _HKQuantityTypeIdentifierDistanceWalkingRunning
+0x1e0b4a6e0  __DATA_CONST,__const  _HKQuantityTypeIdentifierDistanceWheelchair
+0x1e0b4a560  __DATA_CONST,__const  _HKQuantityTypeIdentifierElectrodermalActivity
+0x1e0b4a868  __DATA_CONST,__const  _HKQuantityTypeIdentifierEnvironmentalAudioExposure
+0x1e0b4aad0  __DATA_CONST,__const  _HKQuantityTypeIdentifierEnvironmentalSoundReduction
+0x1e0b4ab88  __DATA_CONST,__const  _HKQuantityTypeIdentifierEstimatedWorkoutEffortScore
+0x1e0b4ac88  __DATA_CONST,__const  _HKQuantityTypeIdentifierFiveTimesSitToStandTime
+0x1e0b4a3f0  __DATA_CONST,__const  _HKQuantityTypeIdentifierFlightsClimbed
+0x1e0b4a5c0  __DATA_CONST,__const  _HKQuantityTypeIdentifierForcedExpiratoryVolume1
+0x1e0b4a5b8  __DATA_CONST,__const  _HKQuantityTypeIdentifierForcedVitalCapacity
+0x1e0b4a870  __DATA_CONST,__const  _HKQuantityTypeIdentifierHeadphoneAudioExposure
+0x1e0b4a3c8  __DATA_CONST,__const  _HKQuantityTypeIdentifierHeartRate
+0x1e0b4aaa8  __DATA_CONST,__const  _HKQuantityTypeIdentifierHeartRateRecoveryOneMinute
+0x1e0b4acd8  __DATA_CONST,__const  _HKQuantityTypeIdentifierHeartRateVariabilityRMSSD
+0x1e0b4a770  __DATA_CONST,__const  _HKQuantityTypeIdentifierHeartRateVariabilitySDNN
+0x1e0b4a3b0  __DATA_CONST,__const  _HKQuantityTypeIdentifierHeight
+0x1e0b4ace0  __DATA_CONST,__const  _HKQuantityTypeIdentifierHipCircumference
+0x1e0b4ab30  __DATA_CONST,__const  _HKQuantityTypeIdentifierHypertensivePatternMeasurement
+0x1e0b4a568  __DATA_CONST,__const  _HKQuantityTypeIdentifierInhalerUsage
+0x1e0b4a710  __DATA_CONST,__const  _HKQuantityTypeIdentifierInsulinDelivery
+0x1e0b4ac58  __DATA_CONST,__const  _HKQuantityTypeIdentifierKneeBasedPushUpCount
+0x1e0b4a3c0  __DATA_CONST,__const  _HKQuantityTypeIdentifierLeanBodyMass
+0x1e0b4a3f8  __DATA_CONST,__const  _HKQuantityTypeIdentifierNikeFuel
+0x1e0b4aa40  __DATA_CONST,__const  _HKQuantityTypeIdentifierNumberOfAlcoholicBeverages
+0x1e0b4a558  __DATA_CONST,__const  _HKQuantityTypeIdentifierNumberOfTimesFallen
+0x1e0b4a400  __DATA_CONST,__const  _HKQuantityTypeIdentifierOxygenSaturation
+0x1e0b4abb0  __DATA_CONST,__const  _HKQuantityTypeIdentifierPaddleSportsSpeed
+0x1e0b4a5c8  __DATA_CONST,__const  _HKQuantityTypeIdentifierPeakExpiratoryFlowRate
+0x1e0b4a428  __DATA_CONST,__const  _HKQuantityTypeIdentifierPeripheralPerfusionIndex
+0x1e0b4ab38  __DATA_CONST,__const  _HKQuantityTypeIdentifierPhysicalEffort
+0x1e0b4ac60  __DATA_CONST,__const  _HKQuantityTypeIdentifierPlankTime
+0x1e0b4a688  __DATA_CONST,__const  _HKQuantityTypeIdentifierPushCount
+0x1e0b4a570  __DATA_CONST,__const  _HKQuantityTypeIdentifierRespiratoryRate
+0x1e0b4a6f8  __DATA_CONST,__const  _HKQuantityTypeIdentifierRestingHeartRate
+0x1e0b4aba0  __DATA_CONST,__const  _HKQuantityTypeIdentifierRowingSpeed
+0x1e0b4aa80  __DATA_CONST,__const  _HKQuantityTypeIdentifierRunningGroundContactTime
+0x1e0b4aac8  __DATA_CONST,__const  _HKQuantityTypeIdentifierRunningPower
+0x1e0b4aae0  __DATA_CONST,__const  _HKQuantityTypeIdentifierRunningSpeed
+0x1e0b4aa70  __DATA_CONST,__const  _HKQuantityTypeIdentifierRunningStrideLength
+0x1e0b4aa78  __DATA_CONST,__const  _HKQuantityTypeIdentifierRunningVerticalOscillation
+0x1e0b4ac78  __DATA_CONST,__const  _HKQuantityTypeIdentifierSingleLegStanceTime
+0x1e0b4a8b0  __DATA_CONST,__const  _HKQuantityTypeIdentifierSixMinuteWalkTestDistance
+0x1e0b4a900  __DATA_CONST,__const  _HKQuantityTypeIdentifierStairAscentSpeed
+0x1e0b4a908  __DATA_CONST,__const  _HKQuantityTypeIdentifierStairDescentSpeed
+0x1e0b4ac38  __DATA_CONST,__const  _HKQuantityTypeIdentifierStandardPushUpCount
+0x1e0b4a3d0  __DATA_CONST,__const  _HKQuantityTypeIdentifierStepCount
+0x1e0b4a6d0  __DATA_CONST,__const  _HKQuantityTypeIdentifierSwimmingStrokeCount
+0x1e0b4ab00  __DATA_CONST,__const  _HKQuantityTypeIdentifierTimeInDaylight
+0x1e0b4a638  __DATA_CONST,__const  _HKQuantityTypeIdentifierUVExposure
+0x1e0b4aac0  __DATA_CONST,__const  _HKQuantityTypeIdentifierUnderwaterDepth
+0x1e0b4a708  __DATA_CONST,__const  _HKQuantityTypeIdentifierVO2Max
+0x1e0b4a6e8  __DATA_CONST,__const  _HKQuantityTypeIdentifierWaistCircumference
+0x1e0b4a8f8  __DATA_CONST,__const  _HKQuantityTypeIdentifierWalkingAsymmetryPercentage
+0x1e0b4a8a8  __DATA_CONST,__const  _HKQuantityTypeIdentifierWalkingDoubleSupportPercentage
+0x1e0b4a760  __DATA_CONST,__const  _HKQuantityTypeIdentifierWalkingHeartRateAverage
+0x1e0b4a8c0  __DATA_CONST,__const  _HKQuantityTypeIdentifierWalkingSpeed
+0x1e0b4a8c8  __DATA_CONST,__const  _HKQuantityTypeIdentifierWalkingStepLength
+0x1e0b4aaf8  __DATA_CONST,__const  _HKQuantityTypeIdentifierWaterTemperature
+0x1e0b4abb8  __DATA_CONST,__const  _HKQuantityTypeIdentifierWorkoutEffortScore
+0x19417d150  __TEXT,__text  _HKQueryActivationStateToString
+0x19420e500  __TEXT,__text  _HKRaceRouteClusterStoreClientInterface
+0x19420e514  __TEXT,__text  _HKRaceRouteClusterStoreServerInterface
+0x1e0b48ff8  __DATA_CONST,__const  _HKReadAuthorizationBypassEntitlement
+0x1e0b48ff0  __DATA_CONST,__const  _HKReadAuthorizationOverrideEntitlement
+0x193faf0c0  __TEXT,__text  _HKRegulatoryDomainEstimateOverrideISOCode
+0x1e0b4d7f0  __DATA_CONST,__const  _HKRegulatoryDomainEstimateOverrideNoEstimateAvailable
+0x194072468  __TEXT,__text  _HKRegulatoryDomainUpdateDarwinNotificationName
+0x1e0b4cdb0  __DATA_CONST,__const  _HKRemoteFeatureAvailabilityConditionDisableBackgroundAtrialFibrillationDetection
+0x1e0b4cda8  __DATA_CONST,__const  _HKRemoteFeatureAvailabilityConditionDisableElectrocardiogramRecording
+0x1e0b4cdc0  __DATA_CONST,__const  _HKRemoteFeatureAvailabilityConditionExpireBackgroundAtrialFibrillationDetection
+0x1e0b4cdb8  __DATA_CONST,__const  _HKRemoteFeatureAvailabilityConditionExpireElectrocardiogramRecording
+0x1e0b57d60  __DATA_CONST,__const  _HKRemoteFeatureAvailabilityConditionsDidUpdateNotification
+0x1e0b4cde0  __DATA_CONST,__const  _HKRemoteFeatureAvailabilityDefaultsDomain
+0x1e0b49258  __DATA_CONST,__const  _HKRequiredReadAuthorizationTypeIdentifiersKey
+0x1e0b48f00  __DATA_CONST,__const  _HKResearchEntitlement
+0x1e0b49060  __DATA_CONST,__const  _HKResearchStudySourceEntitlement
+0x1e0b58140  __DATA_CONST,__const  _HKRespiratoryDefaultsDomain
+0x1e0b58148  __DATA_CONST,__const  _HKRespiratoryKeyBackgroundRecordingsEnabled
+0x1e0b57d48  __DATA_CONST,__const  _HKResumableQueryTTRUserDefaultKey
+0x19419189c  __TEXT,__text  _HKRollingBaselineConfigurationForQuantityType
+0x1941587d0  __TEXT,__text  _HKSafeConcept
+0x1941ecc94  __TEXT,__text  _HKSafeDivision
+0x193fb49fc  __TEXT,__text  _HKSafeObject
+0x1e0b528b0  __DATA_CONST,__const  _HKSampleSortIdentifierEndDate
+0x1e0b51310  __DATA_CONST,__const  _HKSampleSortIdentifierMostRecentEndDate
+0x1e0b51308  __DATA_CONST,__const  _HKSampleSortIdentifierMostRecentStartDate
+0x1e0b528a8  __DATA_CONST,__const  _HKSampleSortIdentifierStartDate
+0x1e0b55908  __DATA_CONST,__const  _HKSampleTypeActivityKey
+0x19441cd98  __TEXT,__const  _HKSampleTypeDefaultMaximumSampleDuration
+0x19441cda8  __TEXT,__const  _HKSampleTypeMaximumSampleDuration
+0x19441cda0  __TEXT,__const  _HKSampleTypeUnrestrictedSampleDuration
+0x1e0b4ab40  __DATA_CONST,__const  _HKScoredAssessmentTypeIdentifierGAD7
+0x1e0b4ab48  __DATA_CONST,__const  _HKScoredAssessmentTypeIdentifierPHQ9
+0x19400b81c  __TEXT,__text  _HKSelectedAuthorizationModeToString
+0x1941cba34  __TEXT,__text  _HKSemanticVersionByParsingString
+0x1941cb968  __TEXT,__text  _HKSemanticVersionCompare
+0x1941cb964  __TEXT,__text  _HKSemanticVersionFromString
+0x1941cba00  __TEXT,__text  _HKSemanticVersionIsUnknown
+0x1944d6d38  __TEXT,__const  _HKSemanticVersionUnknown
+0x1941cb9b0  __TEXT,__text  _HKSemanticVersionsEqual
+0x193fbebe0  __TEXT,__text  _HKSensitiveLogItem
+0x1e0b58178  __DATA_CONST,__const  _HKSensitiveLogsTemporaryEnablementDomain
+0x1941ecca8  __TEXT,__text  _HKSeparateTimeIntervalComponents
+0x1941ecd14  __TEXT,__text  _HKSeparateTimeIntervalComponentsWithDays
+0x1941ecdac  __TEXT,__text  _HKSeparateTimeIntervalComponentsWithWeeks
+0x194214a5c  __TEXT,__text  _HKSeriesBuilderStateToString
+0x194228718  __TEXT,__text  _HKSessionTrackerAriadneTrigger
+0x194228044  __TEXT,__text  _HKSetDaylightTimeEnabledInPrivacy
+0x1941ec9f0  __TEXT,__text  _HKSetTemporaryDirectorySuffix
+0x1941ed168  __TEXT,__text  _HKSharedResourcesDirectory
+0x1e0b540b0  __DATA_CONST,__const  _HKSharedSummaryTransactionBuilderServerIdentifier
+0x1e0b54208  __DATA_CONST,__const  _HKSharingAuthorizationRecipientStoreServerIdentifier
+0x1941996f8  __TEXT,__text  _HKSharingAuthorizationsFromAuthorizationIdentifiers
+0x1e0b542a8  __DATA_CONST,__const  _HKSharingRecipientAuthorizationStoreServerIdentifier
+0x194096b74  __TEXT,__text  _HKShouldAdvertiseAtrialFibrillationDetectionBeforeGeolocationInLocale
+0x194094b4c  __TEXT,__text  _HKShouldAdvertiseElectrocardiogramBeforeGeolocationInLocale
+0x193fbeb74  __TEXT,__text  _HKShowSensitiveLogItems
+0x1e0b58168  __DATA_CONST,__const  _HKShowSensitiveLogItemsUserDefaultsKey
+0x1e0b58170  __DATA_CONST,__const  _HKShowSensitiveLogsUntilDateUserDefaultsKey
+0x1e0b4ec58  __DATA_CONST,__const  _HKSignedClinicalDataEUDCCIssuerPrefix
+0x1e0b55320  __DATA_CONST,__const  _HKSignedClinicalDataEUDCCQRRepresentatonRewritePath
+0x1e0b55318  __DATA_CONST,__const  _HKSignedClinicalDataHealthLinkQRRepresentationRewritePath
+0x1e0b55310  __DATA_CONST,__const  _HKSignedClinicalDataQRRepresentationRewritePath
+0x1e0b4ba78  __DATA_CONST,__const  _HKSignedClinicalDataRecordCredentialTypesKeyPath
+0x1e0b4ba80  __DATA_CONST,__const  _HKSignedClinicalDataRecordDataValueKeyPath
+0x1e0b4ba88  __DATA_CONST,__const  _HKSignedClinicalDataRecordExpirationDateKeyPath
+0x1e0b4ba90  __DATA_CONST,__const  _HKSignedClinicalDataRecordIssuedDateKeyPath
+0x1e0b4ba98  __DATA_CONST,__const  _HKSignedClinicalDataRecordIssuerIdentifierKeyPath
+0x1e0b4baa0  __DATA_CONST,__const  _HKSignedClinicalDataRecordItemsKeyPath
+0x1e0b4baa8  __DATA_CONST,__const  _HKSignedClinicalDataRecordRelevantDateKeyPath
+0x1e0b4bab0  __DATA_CONST,__const  _HKSignedClinicalDataRecordSignatureStatusKeyPath
+0x1e0b4bab8  __DATA_CONST,__const  _HKSignedClinicalDataRecordSourceTypeKeyPath
+0x1e0b4bac0  __DATA_CONST,__const  _HKSignedClinicalDataRecordSubjectKeyPath
+0x1e0b4aa48  __DATA_CONST,__const  _HKSignedClinicalDataRecordTypeIdentifierSignedClinicalDataRecord
+0x1941eca90  __TEXT,__text  _HKSingletonDispatchQueueName
+0x1e0b48f98  __DATA_CONST,__const  _HKSkipInsertionFilterEntitlement
+0x1e0b4dae8  __DATA_CONST,__const  _HKSleepActionsFeatureVersion
+0x1e0b4db00  __DATA_CONST,__const  _HKSleepApneaNotificationsFeatureVersion
+0x1e0b4db10  __DATA_CONST,__const  _HKSleepApneaNotificationsiOSDeviceIdentifierPortion
+0x1e0b4db08  __DATA_CONST,__const  _HKSleepApneaNotificationswatchOSDeviceIdentifierPortion
+0x1e0b4daf0  __DATA_CONST,__const  _HKSleepCoachingFeatureVersion
+0x19419133c  __TEXT,__text  _HKSleepCopyViaSecureCoding
+0x19418ceb0  __TEXT,__text  _HKSleepDaySummaryQueryOptionsStringRepresentation
+0x194189640  __TEXT,__text  _HKSleepDaySummarySampleTypes
+0x194189748  __TEXT,__text  _HKSleepDurationGoalAdultRecommendation
+0x1941897a4  __TEXT,__text  _HKSleepDurationGoalChildRecommendation
+0x1944d6ba0  __TEXT,__const  _HKSleepDurationGoalLeeway
+0x194187f24  __TEXT,__text  _HKSleepScheduleWeekdayArrayFromWeekdays
+0x194187d80  __TEXT,__text  _HKSleepScheduleWeekdayFromWeekdayComponent
+0x1944d6ba8  __TEXT,__const  _HKSleepScheduleWeekdaysAll
+0x194188228  __TEXT,__text  _HKSleepScheduleWeekdaysFromNSString
+0x194187f14  __TEXT,__text  _HKSleepScheduleWeekdaysIsSingleDay
+0x194188614  __TEXT,__text  _HKSleepScheduleWeekdaysMake
+0x194190ea8  __TEXT,__text  _HKSleepTestAsleepSample
+0x194190eb0  __TEXT,__text  _HKSleepTestAsleepSampleWithSourceRevision
+0x194190f5c  __TEXT,__text  _HKSleepTestAwakeSample
+0x1941905dc  __TEXT,__text  _HKSleepTestCalendar
+0x194190648  __TEXT,__text  _HKSleepTestDate
+0x1941906c0  __TEXT,__text  _HKSleepTestDateInTimeZone
+0x1941908f8  __TEXT,__text  _HKSleepTestDateInterval
+0x194190990  __TEXT,__text  _HKSleepTestDateIntervalWithSeconds
+0x19419080c  __TEXT,__text  _HKSleepTestDateWithSeconds
+0x194190bc0  __TEXT,__text  _HKSleepTestDaySummary
+0x194191210  __TEXT,__text  _HKSleepTestEmptySchedule
+0x194190f70  __TEXT,__text  _HKSleepTestGoalSample
+0x194190f34  __TEXT,__text  _HKSleepTestInBedSample
+0x194190f48  __TEXT,__text  _HKSleepTestInBedSampleWithMetadata
+0x1941905e8  __TEXT,__text  _HKSleepTestMorningIndex
+0x194191124  __TEXT,__text  _HKSleepTestOverrideSchedule
+0x194190b48  __TEXT,__text  _HKSleepTestPeriod
+0x19419103c  __TEXT,__text  _HKSleepTestSchedule
+0x194191044  __TEXT,__text  _HKSleepTestScheduleWithMetadata
+0x194190a28  __TEXT,__text  _HKSleepTestSegment
+0x194190d88  __TEXT,__text  _HKSleepTestSleepSampleWithValue
+0x194190d90  __TEXT,__text  _HKSleepTestSleepSampleWithValueAndMetadata
+0x1e0b4daf8  __DATA_CONST,__const  _HKSleepTrackingFeatureVersion
+0x1e0b49048  __DATA_CONST,__const  _HKSourceCreationEntitlement
+0x1e0b49050  __DATA_CONST,__const  _HKSourceIdentitiesEntitlement
+0x194181da0  __TEXT,__text  _HKSourceOptionsForAppleDevice
+0x194182670  __TEXT,__text  _HKSourceOptionsForClinicalSource
+0x19418201c  __TEXT,__text  _HKSourceOptionsForConnectedGymSource
+0x19418213c  __TEXT,__text  _HKSourceOptionsForPeripheralSource
+0x1e0b49058  __DATA_CONST,__const  _HKSourceOwnerEntitlement
+0x1944d6b88  __TEXT,__const  _HKSourceRevisionAnyOperatingSystem
+0x1e0b53d58  __DATA_CONST,__const  _HKSourceRevisionAnyProductType
+0x1e0b53d50  __DATA_CONST,__const  _HKSourceRevisionAnyVersion
+0x193fbd350  __TEXT,__text  _HKSourceStoreClientInterface
+0x193fbd368  __TEXT,__text  _HKSourceStoreServerInterface
+0x1e0b57d08  __DATA_CONST,__const  _HKStandalonePhoneFitnessModeDidUpdateNotification
+0x1940fa758  __TEXT,__text  _HKStateOfMindAllActiveDomains
+0x1940fa73c  __TEXT,__text  _HKStateOfMindAllActiveLabels
+0x1940fa9d0  __TEXT,__text  _HKStateOfMindAllDomainCategories
+0x1e0b50440  __DATA_CONST,__const  _HKStateOfMindAllPredicateKeyPaths
+0x1940fa774  __TEXT,__text  _HKStateOfMindAssociationFromDomain
+0x1940fa778  __TEXT,__text  _HKStateOfMindAssociationIsKnown
+0x1940faa88  __TEXT,__text  _HKStateOfMindDomainFromAssociation
+0x1940fafdc  __TEXT,__text  _HKStateOfMindDomainFromNSString
+0x1940fa764  __TEXT,__text  _HKStateOfMindDomainIsKnown
+0x1940fa9a4  __TEXT,__text  _HKStateOfMindDomainsInCategory
+0x1940faa84  __TEXT,__text  _HKStateOfMindKindFromReflectiveInterval
+0x1940faaf4  __TEXT,__text  _HKStateOfMindLabelFromNSString
+0x1940fa748  __TEXT,__text  _HKStateOfMindLabelIsKnown
+0x1940fa938  __TEXT,__text  _HKStateOfMindLabelOptionsForValence
+0x1940faa80  __TEXT,__text  _HKStateOfMindReflectiveIntervalFromKind
+0x1940faa8c  __TEXT,__text  _HKStateOfMindReflectiveIntervalFromNSString
+0x1940fa788  __TEXT,__text  _HKStateOfMindValenceClassificationForValence
+0x1941adbf0  __TEXT,__text  _HKStaticSyncControlClientInterface
+0x1941adc04  __TEXT,__text  _HKStaticSyncControlServerInterface
+0x1942283a4  __TEXT,__text  _HKStaticSyncOptionsToString
+0x19410002c  __TEXT,__text  _HKStringForDeviceType
+0x19419c2f4  __TEXT,__text  _HKStringForMessageDirection
+0x19419c29c  __TEXT,__text  _HKStringForNotificationStatus
+0x19419c244  __TEXT,__text  _HKStringForSharingStatus
+0x19419c1e0  __TEXT,__text  _HKStringForSharingType
+0x194228a7c  __TEXT,__text  _HKStringFromAuthorizationBooleanResult
+0x1941ed124  __TEXT,__text  _HKStringFromBool
+0x194177b18  __TEXT,__text  _HKStringFromCompoundOperatorType
+0x194228a24  __TEXT,__text  _HKStringFromFailableBooleanResult
+0x1941ed140  __TEXT,__text  _HKStringFromFitnessMode
+0x1941430c4  __TEXT,__text  _HKStringFromHKOntologyPruneOptions
+0x19414a310  __TEXT,__text  _HKStringFromListUserDomainType
+0x1940b78ac  __TEXT,__text  _HKStringFromMedicalRecordCategoryType
+0x194142ff0  __TEXT,__text  _HKStringFromOntologyFeatureRequestOptions
+0x1941412a8  __TEXT,__text  _HKStringFromOntologyLocalizedEducationContentSectionType
+0x194141864  __TEXT,__text  _HKStringFromOntologyShardSettings
+0x194141914  __TEXT,__text  _HKStringFromOntologyShardState
+0x194141d40  __TEXT,__text  _HKStringFromOntologyShardVersion
+0x194143174  __TEXT,__text  _HKStringFromOntologyUpdateReason
+0x194228ad4  __TEXT,__text  _HKStringFromOptionalBooleanResult
+0x1941779fc  __TEXT,__text  _HKStringFromPredicateOperatorType
+0x193fa86bc  __TEXT,__text  _HKStringFromProfileType
+0x193fac880  __TEXT,__text  _HKStringFromQoS
+0x19414d940  __TEXT,__text  _HKStringFromUserDomainConceptLinkType
+0x194148cf8  __TEXT,__text  _HKStringFromUserDomainConceptPropertyMergeOptions
+0x19414836c  __TEXT,__text  _HKStringFromUserDomainConceptPropertyType
+0x194145a60  __TEXT,__text  _HKStringFromUserDomainConceptPropertyValueType
+0x194156b00  __TEXT,__text  _HKStringFromUserDomainConceptStoreChangeType
+0x194156598  __TEXT,__text  _HKStringFromUserDomainConceptStoreMethod
+0x1942289cc  __TEXT,__text  _HKStringFromWorkoutCondenserReason
+0x194007c68  __TEXT,__text  _HKSubmitAnalyticsFile
+0x19420aba0  __TEXT,__text  _HKSupportedMetricsForMachineType
+0x193fab504  __TEXT,__text  _HKSupportedUnitPreferencesVersion
+0x19422815c  __TEXT,__text  _HKSyncProtocolVersionToString
+0x1941eb0d4  __TEXT,__text  _HKSynchronizeNanoPreferencesUserDefaults
+0x194190e40  __TEXT,__text  _HKTestSleepSampleWithValueAndSource
+0x1e0b57cd8  __DATA_CONST,__const  _HKTinkerSharingOptInAcceptedNotification
+0x1e0b57ce0  __DATA_CONST,__const  _HKTinkerSharingOptInDeclinedNotification
+0x1e0b57d00  __DATA_CONST,__const  _HKTrainingLoadOnboardingCompletedDefaultsKey
+0x1e0b57cf8  __DATA_CONST,__const  _HKTrainingLoadTrackingEnabledDefaultsKey
+0x19403f600  __TEXT,__text  _HKTypeIsCollectibleWithStoreDemoModeEnabled
+0x1940401e4  __TEXT,__text  _HKTypeIsEnabled
+0x1940a4808  __TEXT,__text  _HKUDIDeviceIdentifierFromDeviceIdentifierAndBatchNumber
+0x1941b587c  __TEXT,__text  _HKUnionDayIndexRange
+0x1e0b55688  __DATA_CONST,__const  _HKUnitPreferenceControllerUnitPreferenceChangedKey
+0x1e0b55690  __DATA_CONST,__const  _HKUnitPreferenceControllerUnitPreferencesDidChangeNotification
+0x1e0b4baf0  __DATA_CONST,__const  _HKUnknownRecordDisplayNameKeyPath
+0x1e0b4a790  __DATA_CONST,__const  _HKUnknownRecordTypeIdentifierUnknownRecord
+0x1e0b49ca0  __DATA_CONST,__const  _HKUnprotectedDatabasePragmaName
+0x1e0b52b10  __DATA_CONST,__const  _HKUserAnnotatedMedicationPredicateKeyPathHasSchedule
+0x1e0b52b08  __DATA_CONST,__const  _HKUserAnnotatedMedicationPredicateKeyPathIsArchived
+0x1e0b52e10  __DATA_CONST,__const  _HKUserDomainConceptLocalizedStringNoLocale
+0x1e0b52f38  __DATA_CONST,__const  _HKUserDomainConceptSemanticIdentifierNullString
+0x1e0b52f30  __DATA_CONST,__const  _HKUserDomainConceptSemanticIdentifierSeparatorString
+0x1e0b52d30  __DATA_CONST,__const  _HKUserDomainConceptSemanticIdentifierUUIDPrefix
+0x1e0b52f28  __DATA_CONST,__const  _HKUserDomainConceptSortIdentifierAnchor
+0x1e0b52f18  __DATA_CONST,__const  _HKUserDomainConceptSortIdentifierCreationDate
+0x1e0b52f20  __DATA_CONST,__const  _HKUserDomainConceptSortIdentifierModificationDate
+0x1e0b531c8  __DATA_CONST,__const  _HKUserDomainConceptStoreServerIdentifier
+0x1e0b4f2b8  __DATA_CONST,__const  _HKUserPreferencesDidChangeNotification
+0x1e0b4ab50  __DATA_CONST,__const  _HKUserTrackedConceptTypeIdentifierMedication
+0x1e0b4bb20  __DATA_CONST,__const  _HKVaccinationRecordAdministrationDateKeyPath
+0x1e0b4bb28  __DATA_CONST,__const  _HKVaccinationRecordBodySiteCodingsKeyPath
+0x1e0b4bb30  __DATA_CONST,__const  _HKVaccinationRecordBodySiteKeyPath
+0x1e0b4bb38  __DATA_CONST,__const  _HKVaccinationRecordDoseNumberKeyPath
+0x1e0b4bb40  __DATA_CONST,__const  _HKVaccinationRecordDoseQuantityKeyPath
+0x1e0b4bb48  __DATA_CONST,__const  _HKVaccinationRecordExpirationDateKeyPath
+0x1e0b4bb50  __DATA_CONST,__const  _HKVaccinationRecordLotNumberKeyPath
+0x1e0b4bb58  __DATA_CONST,__const  _HKVaccinationRecordNotGivenKeyPath
+0x1e0b4bb60  __DATA_CONST,__const  _HKVaccinationRecordPatientReportedKeyPath
+0x1e0b4bb68  __DATA_CONST,__const  _HKVaccinationRecordPerformerKeyPath
+0x1e0b4bb70  __DATA_CONST,__const  _HKVaccinationRecordReactionKeyPath
+0x1e0b4bb78  __DATA_CONST,__const  _HKVaccinationRecordReasonsCodingsKeyPath
+0x1e0b4bb80  __DATA_CONST,__const  _HKVaccinationRecordReasonsKeyPath
+0x1e0b4bb88  __DATA_CONST,__const  _HKVaccinationRecordReasonsNotGivenCodingsKeyPath
+0x1e0b4bb90  __DATA_CONST,__const  _HKVaccinationRecordReasonsNotGivenKeyPath
+0x1e0b4bb98  __DATA_CONST,__const  _HKVaccinationRecordRouteCodingsKeyPath
+0x1e0b4bba0  __DATA_CONST,__const  _HKVaccinationRecordRouteKeyPath
+0x1e0b4bba8  __DATA_CONST,__const  _HKVaccinationRecordStatusCodingKeyPath
+0x1e0b4bbb0  __DATA_CONST,__const  _HKVaccinationRecordStatusKeyPath
+0x1e0b4a740  __DATA_CONST,__const  _HKVaccinationRecordTypeIdentifierVaccinationRecord
+0x1e0b4bbb8  __DATA_CONST,__const  _HKVaccinationRecordVaccinationCodingsKeyPath
+0x1e0b4bbc0  __DATA_CONST,__const  _HKVaccinationRecordVaccinationKeyPath
+0x1e0b4ec90  __DATA_CONST,__const  _HKVerifiableClinicalRecordCredentialTypeCOVID19
+0x1e0b4ec98  __DATA_CONST,__const  _HKVerifiableClinicalRecordCredentialTypeImmunization
+0x1e0b4eca0  __DATA_CONST,__const  _HKVerifiableClinicalRecordCredentialTypeLaboratory
+0x1e0b4eca8  __DATA_CONST,__const  _HKVerifiableClinicalRecordCredentialTypeRecovery
+0x1e0b4ecb0  __DATA_CONST,__const  _HKVerifiableClinicalRecordExpirationDateKeyPath
+0x1e0b4ecb8  __DATA_CONST,__const  _HKVerifiableClinicalRecordIssuedDateKeyPath
+0x1e0b4ecc0  __DATA_CONST,__const  _HKVerifiableClinicalRecordIssuerIdentifierKeyPath
+0x1e0b4ecc8  __DATA_CONST,__const  _HKVerifiableClinicalRecordItemNamesKeyPath
+0x1e0b4ecd0  __DATA_CONST,__const  _HKVerifiableClinicalRecordJWSRepresentationKeyPath
+0x1e0b4ecd8  __DATA_CONST,__const  _HKVerifiableClinicalRecordOriginIdentifierKeyPath
+0x1e0b4ece0  __DATA_CONST,__const  _HKVerifiableClinicalRecordRecordTypesKeyPath
+0x1e0b4ece8  __DATA_CONST,__const  _HKVerifiableClinicalRecordRelevantDateKeyPath
+0x1e0b4ec88  __DATA_CONST,__const  _HKVerifiableClinicalRecordSourceTypeEUDigitalCOVIDCertificate
+0x1e0b4ecf0  __DATA_CONST,__const  _HKVerifiableClinicalRecordSourceTypeKeyPath
+0x1e0b4ec80  __DATA_CONST,__const  _HKVerifiableClinicalRecordSourceTypeSMARTHealthCard
+0x1e0b4ecf8  __DATA_CONST,__const  _HKVerifiableClinicalRecordSubjectKeyPath
+0x1e0b4aa50  __DATA_CONST,__const  _HKVerifiableClinicalRecordTypeIdentifierVerifiableClinicalRecord
+0x1e0b4aa68  __DATA_CONST,__const  _HKVisionPrescriptionTypeIdentifier
+0x1944d7b80  __TEXT,__const  _HKWatchAudioExposureEventAvailabilityDays
+0x1944d7b70  __TEXT,__const  _HKWatchFilteredHeartRateSampleAvailabilityDays
+0x1944d7bb0  __TEXT,__const  _HKWatchKitActivitySummaryAvailabilityDays
+0x1944d7b30  __TEXT,__const  _HKWatchKitDataAvailabilityDays
+0x1944d7ba8  __TEXT,__const  _HKWatchLooseTypedAssociationAvailabilityDays
+0x1944d7b58  __TEXT,__const  _HKWatchMenstrualCycleDaySummaryAvailabilityDays
+0x1944d7b60  __TEXT,__const  _HKWatchMenstrualHealthSampleAvailabilityDays
+0x1944d7b50  __TEXT,__const  _HKWatchRestingHeartRateAvailabilityDays
+0x1944d7b90  __TEXT,__const  _HKWatchSampleAvailabilityToSupportBalanceDays
+0x1944d7b68  __TEXT,__const  _HKWatchSampleAvailabilityToSupportMenstrualCyclesAlgorithmDays
+0x1944d7b78  __TEXT,__const  _HKWatchSleepAnalysisSampleAvailabilityDays
+0x1944d7b88  __TEXT,__const  _HKWatchStateOfMindAvailabilityDays
+0x1944d7ba0  __TEXT,__const  _HKWatchThirdPartyWorkoutSampleAvailabilityDays
+0x1944d7b48  __TEXT,__const  _HKWatchWalkingSteadinessAvailabilityDays
+0x1944d7b98  __TEXT,__const  _HKWatchWorkoutEffortScoreAvailabilityDays
+0x19414db84  __TEXT,__text  _HKWeakConceptLinkTypes
+0x1941c85f4  __TEXT,__text  _HKWheelchairUseDisplayName
+0x193fa2b64  __TEXT,__text  _HKWithAutoreleasePool
+0x1941ecc24  __TEXT,__text  _HKWithUnfairLock
+0x1941fc26c  __TEXT,__text  _HKWorkoutBuilderConstructionStateToString
+0x194210a94  __TEXT,__text  _HKWorkoutClusterStoreClientInterface
+0x194210aa8  __TEXT,__text  _HKWorkoutClusterStoreServerInterface
+0x1e0b55ab0  __DATA_CONST,__const  _HKWorkoutCondenserOptInKeyHeartRate
+0x1941ffa54  __TEXT,__text  _HKWorkoutControlClientInterface
+0x1941ffa68  __TEXT,__text  _HKWorkoutControlServerInterface
+0x1e0b580e8  __DATA_CONST,__const  _HKWorkoutRecoverySceneKey
+0x1e0b4a690  __DATA_CONST,__const  _HKWorkoutRouteTypeIdentifier
+0x19421a55c  __TEXT,__text  _HKWorkoutSessionEventToString
+0x1942163c0  __TEXT,__text  _HKWorkoutSessionServerStateFromSessionState
+0x19421639c  __TEXT,__text  _HKWorkoutSessionStateFromServerState
+0x194217340  __TEXT,__text  _HKWorkoutSessionStateToString
+0x1e0b57430  __DATA_CONST,__const  _HKWorkoutSessionTaskServerIdentifier
+0x19421739c  __TEXT,__text  _HKWorkoutSessionTypeToString
+0x1e0b57708  __DATA_CONST,__const  _HKWorkoutSortIdentifierDuration
+0x1e0b57718  __DATA_CONST,__const  _HKWorkoutSortIdentifierTotalDistance
+0x1e0b57710  __DATA_CONST,__const  _HKWorkoutSortIdentifierTotalEnergyBurned
+0x1e0b57728  __DATA_CONST,__const  _HKWorkoutSortIdentifierTotalFlightsClimbed
+0x1e0b57720  __DATA_CONST,__const  _HKWorkoutSortIdentifierTotalSwimmingStrokeCount
+0x1e0b4a5f0  __DATA_CONST,__const  _HKWorkoutTypeIdentifier
+0x1e0b48fe8  __DATA_CONST,__const  _HKWriteAuthorizationOverrideEntitlement
+0x1eb971950  __DATA,__data  _HKXPCEventSendToClientKey
+0x19414897c  __TEXT,__text  _MaximumTimestampForListOfProperties
+0x194148880  __TEXT,__text  _MaximumVersionForListOfProperties
+0x1944d6858  __TEXT,__const  _NRProductVersionIOSPeaceC
+0x1944d685c  __TEXT,__const  _NRProductVersionIOSPeaceD
+0x1944d6860  __TEXT,__const  _NRProductVersionIOSPeaceE
+0x1944d6864  __TEXT,__const  _NRProductVersionIOSPeaceF
+0x1944d6868  __TEXT,__const  _NRProductVersionIOSPeaceG
+0x1944d686c  __TEXT,__const  _NRProductVersionIOSYukonPre
+0x1940c829c  __TEXT,__text  _NSStringForHealthRecordsAccountInfoStatus
+0x1940b7088  __TEXT,__text  _NSStringForSignedClinicalDataRecordSignatureStatus
+0x1940b70ac  __TEXT,__text  _NSStringForSignedClinicalDataSourceType
+0x194095f18  __TEXT,__text  _NSStringFromHKAtrialFibrillationDetectionSupportedState
+0x19418eb18  __TEXT,__text  _NSStringFromHKCategoryValueSleepAnalysis
+0x19409da88  __TEXT,__text  _NSStringFromHKCountrySetProvenance
+0x1941b58dc  __TEXT,__text  _NSStringFromHKDayIndexRange
+0x194100ecc  __TEXT,__text  _NSStringFromHKElectrocardiogramSessionEndReason
+0x194094aa0  __TEXT,__text  _NSStringFromHKElectrocardiogramSupportedState
+0x19409ec3c  __TEXT,__text  _NSStringFromHKFeatureAvailabilityOnboardedCountrySupportedState
+0x193fb224c  __TEXT,__text  _NSStringFromHKFeatureAvailabilityRequirementIdentifierRespectingSensitiveItems
+0x19409bfb0  __TEXT,__text  _NSStringFromHKFeatureAvailabilityRescindedStatus
+0x1940f9838  __TEXT,__text  _NSStringFromHKGAD7AssessmentAnswer
+0x1940f985c  __TEXT,__text  _NSStringFromHKGAD7AssessmentRisk
+0x1940c8924  __TEXT,__text  _NSStringFromHKHealthRecordsAccountsEvent
+0x1940fcdec  __TEXT,__text  _NSStringFromHKNotificationDomain
+0x1940fd06c  __TEXT,__text  _NSStringFromHKNotificationInstructionAction
+0x1940a3dd4  __TEXT,__text  _NSStringFromHKOnboardingCompletionCountryCodeProvenance
+0x1940fa2ec  __TEXT,__text  _NSStringFromHKPHQ9AssessmentAnswer
+0x1940fa310  __TEXT,__text  _NSStringFromHKPHQ9AssessmentRisk
+0x194124930  __TEXT,__text  _NSStringFromHKQuantitySeriesSampleBuilderState
+0x194188014  __TEXT,__text  _NSStringFromHKSleepScheduleWeekdays
+0x1940faa30  __TEXT,__text  _NSStringFromHKStateOfMindDomain
+0x1940faa08  __TEXT,__text  _NSStringFromHKStateOfMindLabel
+0x1940fa9dc  __TEXT,__text  _NSStringFromHKStateOfMindReflectiveInterval
+0x1940faa58  __TEXT,__text  _NSStringFromHKStateOfMindValenceClassification
+0x19410802c  __TEXT,__text  _NSStringFromPrivateElectrocardiogramClassification
+0x194124c48  __TEXT,__text  _NSStringFromQuantitySeriesSampleEditorState
+0x194187e30  __TEXT,__text  _NSWeekdayComponentFromHKSleepScheduleWeekday
+0x1ef62e738  __AUTH,__objc_data  _OBJC_CLASS_$_HKAccountOwner
+0x1ef636950  __AUTH,__objc_data  _OBJC_CLASS_$_HKAccountOwnerType
+0x1ef631c40  __AUTH,__objc_data  _OBJC_CLASS_$_HKActiveDataCollectionObserver
+0x1ef6338b8  __AUTH,__objc_data  _OBJC_CLASS_$_HKActivityCache
+0x1ef630228  __AUTH,__objc_data  _OBJC_CLASS_$_HKActivityGoalSchedule
+0x1ef635678  __AUTH,__objc_data  _OBJC_CLASS_$_HKActivityMoveModeObject
+0x1ee1af2e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKActivitySummary
+0x1ee1acd30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKActivitySummaryQuery
+0x1ee1acd08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKActivitySummaryQueryServerConfiguration
+0x1ee1adb18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKActivitySummaryType
+0x1ef62e710  __AUTH,__objc_data  _OBJC_CLASS_$_HKAdhocShardImportConfiguration
+0x1ef62e6e8  __AUTH,__objc_data  _OBJC_CLASS_$_HKAllConceptSelection
+0x1ef636928  __AUTH,__objc_data  _OBJC_CLASS_$_HKAllergyReaction
+0x1ef636900  __AUTH,__objc_data  _OBJC_CLASS_$_HKAllergyRecord
+0x1ef637fd0  __AUTH,__objc_data  _OBJC_CLASS_$_HKAllergyRecordType
+0x1ef637fa8  __AUTH,__objc_data  _OBJC_CLASS_$_HKAllowedCountries
+0x1ef633890  __AUTH,__objc_data  _OBJC_CLASS_$_HKAnalyticsDataSource
+0x1ef633868  __AUTH,__objc_data  _OBJC_CLASS_$_HKAnalyticsEnvironmentDataSource
+0x1ef633840  __AUTH,__objc_data  _OBJC_CLASS_$_HKAnalyticsEventSubmissionManager
+0x1ee1acbf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKAnchoredObjectQuery
+0x1ef631c18  __AUTH,__objc_data  _OBJC_CLASS_$_HKAsynchronousOperation
+0x1ef630200  __AUTH,__objc_data  _OBJC_CLASS_$_HKAttachment
+0x1ef62e6c0  __AUTH,__objc_data  _OBJC_CLASS_$_HKAttachmentBuilder
+0x1ef62e698  __AUTH,__objc_data  _OBJC_CLASS_$_HKAttachmentObjectIdentifierUtilities
+0x1ef62e670  __AUTH,__objc_data  _OBJC_CLASS_$_HKAttachmentReference
+0x1ef62e648  __AUTH,__objc_data  _OBJC_CLASS_$_HKAttachmentStore
+0x1ef62e620  __AUTH,__objc_data  _OBJC_CLASS_$_HKAttributeConceptSelection
+0x1ef62e5f8  __AUTH,__objc_data  _OBJC_CLASS_$_HKAudioAccessoryDevice
+0x1ef637f80  __AUTH,__objc_data  _OBJC_CLASS_$_HKAudioExposureUtilities
+0x1ef6301d8  __AUTH,__objc_data  _OBJC_CLASS_$_HKAudioExposureValue
+0x1ef638c50  __AUTH,__objc_data  _OBJC_CLASS_$_HKAudiogramSample
+0x1ee1acbc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKAudiogramSampleType
+0x1ef631bf0  __AUTH,__objc_data  _OBJC_CLASS_$_HKAudiogramSensitivityPoint
+0x1ef631bc8  __AUTH,__objc_data  _OBJC_CLASS_$_HKAudiogramSensitivityPointClampingRange
+0x1ef631ba0  __AUTH,__objc_data  _OBJC_CLASS_$_HKAudiogramSensitivityTest
+0x1ef62e5d0  __AUTH,__objc_data  _OBJC_CLASS_$_HKAuthorizationPresentationRequest
+0x1ef6368d8  __AUTH,__objc_data  _OBJC_CLASS_$_HKAuthorizationRecordDataSource
+0x1ee1ae820  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKAuthorizationRequestRecord
+0x1ef638c28  __AUTH,__objc_data  _OBJC_CLASS_$_HKAuthorizationStore
+0x1ef62e5a8  __AUTH,__objc_data  _OBJC_CLASS_$_HKBackgroundObservationExtension
+0x1ef631b78  __AUTH,__objc_data  _OBJC_CLASS_$_HKBadge
+0x1ef62e580  __AUTH,__objc_data  _OBJC_CLASS_$_HKBaseUserDomainConceptSemanticIdentifier
+0x1ef62e558  __AUTH,__objc_data  _OBJC_CLASS_$_HKBeatToBeatInstantaneousBPM
+0x1ef63a0a0  __AUTH,__objc_data  _OBJC_CLASS_$_HKBilateralQuantitySample
+0x1ef6301b0  __AUTH,__objc_data  _OBJC_CLASS_$_HKBilateralQuantityType
+0x1ef639920  __AUTH,__objc_data  _OBJC_CLASS_$_HKBiologicalSexObject
+0x1ef630188  __AUTH,__objc_data  _OBJC_CLASS_$_HKBirthDate
+0x1ef633818  __AUTH,__objc_data  _OBJC_CLASS_$_HKBirthDateType
+0x1ef62e530  __AUTH,__objc_data  _OBJC_CLASS_$_HKBloodPressureClassificationCategoryData
+0x1ef630160  __AUTH,__objc_data  _OBJC_CLASS_$_HKBloodPressureClassificationEvaluator
+0x1ef630138  __AUTH,__objc_data  _OBJC_CLASS_$_HKBloodPressureClassificationManager
+0x1ef634ae8  __AUTH,__objc_data  _OBJC_CLASS_$_HKBloodTypeObject
+0x1ef638c00  __AUTH,__objc_data  _OBJC_CLASS_$_HKBluetoothDeviceDataSource
+0x1ef62e508  __AUTH,__objc_data  _OBJC_CLASS_$_HKCBPeripheral
+0x1ef62e4e0  __AUTH,__objc_data  _OBJC_CLASS_$_HKCDADocument
+0x1ef630110  __AUTH,__objc_data  _OBJC_CLASS_$_HKCDADocumentSample
+0x1ef6398f8  __AUTH,__objc_data  _OBJC_CLASS_$_HKCalendarCache
+0x1ef6300e8  __AUTH,__objc_data  _OBJC_CLASS_$_HKCardioFitnessClassificationUtilities
+0x1ef63a3e8  __AUTH,__objc_data  _OBJC_CLASS_$_HKCardioFitnessLegacyClassificationTable
+0x1ef6300c0  __AUTH,__objc_data  _OBJC_CLASS_$_HKCardioFitnessLevelData
+0x1ef630098  __AUTH,__objc_data  _OBJC_CLASS_$_HKCardioFitnessLookupProperties
+0x1ef6368b0  __AUTH,__objc_data  _OBJC_CLASS_$_HKCardioFitnessMedicationsUseObject
+0x1ef63a410  __AUTH,__objc_data  _OBJC_CLASS_$_HKCardioFitnessThresholdCoefficientRow
+0x1ef63a4d8  __AUTH,__objc_data  _OBJC_CLASS_$_HKCardioFitnessThresholdModelSource
+0x1ef63a370  __AUTH,__objc_data  _OBJC_CLASS_$_HKCardioFitnessThresholds
+0x1ee1ae208  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKCategorySample
+0x1ee1ad5c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKCategoryType
+0x1ef634ac0  __AUTH,__objc_data  _OBJC_CLASS_$_HKChangesSyncRequest
+0x1ee1aef00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKCharacteristicType
+0x1ef62e4b8  __AUTH,__objc_data  _OBJC_CLASS_$_HKChartableCodedQuantity
+0x1ef62e490  __AUTH,__objc_data  _OBJC_CLASS_$_HKChartableCodedQuantitySet
+0x1ef637f58  __AUTH,__objc_data  _OBJC_CLASS_$_HKClinicalBrand
+0x1ef62e468  __AUTH,__objc_data  _OBJC_CLASS_$_HKClinicalCoding
+0x1ef62e440  __AUTH,__objc_data  _OBJC_CLASS_$_HKClinicalCodingCollection
+0x1ef636888  __AUTH,__objc_data  _OBJC_CLASS_$_HKClinicalConnectedAccount
+0x1ef6337f0  __AUTH,__objc_data  _OBJC_CLASS_$_HKClinicalNoteRecord
+0x1ef6337c8  __AUTH,__objc_data  _OBJC_CLASS_$_HKClinicalNoteRecordType
+0x1ef62e418  __AUTH,__objc_data  _OBJC_CLASS_$_HKClinicalRecord
+0x1ef639d30  __AUTH,__objc_data  _OBJC_CLASS_$_HKClinicalType
+0x1ef62e3f0  __AUTH,__objc_data  _OBJC_CLASS_$_HKCloudSyncAccountInfo
+0x1ef635650  __AUTH,__objc_data  _OBJC_CLASS_$_HKCloudSyncControl
+0x1ef634a98  __AUTH,__objc_data  _OBJC_CLASS_$_HKCloudSyncManagerRecordTaskRecord
+0x1ef639d08  __AUTH,__objc_data  _OBJC_CLASS_$_HKCloudSyncObserver
+0x1ef639ce0  __AUTH,__objc_data  _OBJC_CLASS_$_HKCloudSyncObserverStatus
+0x1ef637f30  __AUTH,__objc_data  _OBJC_CLASS_$_HKCloudSyncRequest
+0x1ef6337a0  __AUTH,__objc_data  _OBJC_CLASS_$_HKCloudSyncShareParticipantManager
+0x1ef62e3c8  __AUTH,__objc_data  _OBJC_CLASS_$_HKCodableCondensedWorkout
+0x1ef62e3a0  __AUTH,__objc_data  _OBJC_CLASS_$_HKCodableCondensedWorkoutCollection
+0x1ef631b50  __AUTH,__objc_data  _OBJC_CLASS_$_HKCodableLocationCoordinate
+0x1ef631b28  __AUTH,__objc_data  _OBJC_CLASS_$_HKCodableLocationCoordinateSeries
+0x1ef630070  __AUTH,__objc_data  _OBJC_CLASS_$_HKCodablePluginSharableModelData
+0x1ef633778  __AUTH,__objc_data  _OBJC_CLASS_$_HKCodableQuantitySeries
+0x1ef630048  __AUTH,__objc_data  _OBJC_CLASS_$_HKCodableQuantitySeriesDatum
+0x1ef635628  __AUTH,__objc_data  _OBJC_CLASS_$_HKCodableQuantitySeriesEnumerationResult
+0x1ef636860  __AUTH,__objc_data  _OBJC_CLASS_$_HKCodableQuantitySeriesEnumerationResultCollection
+0x1ef62e378  __AUTH,__objc_data  _OBJC_CLASS_$_HKCodedQuantity
+0x1ef62e350  __AUTH,__objc_data  _OBJC_CLASS_$_HKCodedValue
+0x1ef62e328  __AUTH,__objc_data  _OBJC_CLASS_$_HKCodedValueCollection
+0x1ef62e300  __AUTH,__objc_data  _OBJC_CLASS_$_HKCompoundConceptSelection
+0x1ef634a70  __AUTH,__objc_data  _OBJC_CLASS_$_HKConcept
+0x1ef633750  __AUTH,__objc_data  _OBJC_CLASS_$_HKConceptAttribute
+0x1ef637f08  __AUTH,__objc_data  _OBJC_CLASS_$_HKConceptAuthorizationPromptSessionContext
+0x1ef637ee0  __AUTH,__objc_data  _OBJC_CLASS_$_HKConceptAuthorizationRecord
+0x1ef638bd8  __AUTH,__objc_data  _OBJC_CLASS_$_HKConceptIdentifier
+0x1ef635600  __AUTH,__objc_data  _OBJC_CLASS_$_HKConceptRelationship
+0x1ef62e2b0  __AUTH,__objc_data  _OBJC_CLASS_$_HKConceptResolutionDefinition
+0x1ef62e288  __AUTH,__objc_data  _OBJC_CLASS_$_HKConceptSelection
+0x1ef636810  __AUTH,__objc_data  _OBJC_CLASS_$_HKConceptStore
+0x1ef6355d8  __AUTH,__objc_data  _OBJC_CLASS_$_HKConceptStoreServerConfiguration
+0x1ef630020  __AUTH,__objc_data  _OBJC_CLASS_$_HKConceptSynthesizer
+0x1ef6367e8  __AUTH,__objc_data  _OBJC_CLASS_$_HKConditionRecord
+0x1ef637eb8  __AUTH,__objc_data  _OBJC_CLASS_$_HKConditionRecordType
+0x1ef62e260  __AUTH,__objc_data  _OBJC_CLASS_$_HKContactsLensSpecification
+0x1ef62e238  __AUTH,__objc_data  _OBJC_CLASS_$_HKContactsPrescription
+0x1ef634a48  __AUTH,__objc_data  _OBJC_CLASS_$_HKContextSyncRequest
+0x1ee1adcd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKContributor
+0x1ef631b00  __AUTH,__objc_data  _OBJC_CLASS_$_HKCoreTelephonyClient
+0x1ef631ad8  __AUTH,__objc_data  _OBJC_CLASS_$_HKCoreTelephonySatelliteClient
+0x1ef634a20  __AUTH,__objc_data  _OBJC_CLASS_$_HKCorrelation
+0x1ef631ab0  __AUTH,__objc_data  _OBJC_CLASS_$_HKCorrelationQuery
+0x1ef6398d0  __AUTH,__objc_data  _OBJC_CLASS_$_HKCorrelationType
+0x1ef6349f8  __AUTH,__objc_data  _OBJC_CLASS_$_HKCountryMonitorControl
+0x1ef6367c0  __AUTH,__objc_data  _OBJC_CLASS_$_HKCountrySet
+0x1ef631a60  __AUTH,__objc_data  _OBJC_CLASS_$_HKCoverageClassification
+0x1ef636798  __AUTH,__objc_data  _OBJC_CLASS_$_HKCoverageRecord
+0x1ef637e90  __AUTH,__objc_data  _OBJC_CLASS_$_HKCoverageRecordType
+0x1ef639c90  __AUTH,__objc_data  _OBJC_CLASS_$_HKCumulativeQuantitySample
+0x1ef62e210  __AUTH,__objc_data  _OBJC_CLASS_$_HKCumulativeQuantitySeriesSample
+0x1ef631a38  __AUTH,__objc_data  _OBJC_CLASS_$_HKCurrentActivityCacheQuery
+0x1ef62e1e8  __AUTH,__objc_data  _OBJC_CLASS_$_HKCurrentActivityCacheQueryResult
+0x1ef62e1c0  __AUTH,__objc_data  _OBJC_CLASS_$_HKCurrentActivityCacheQueryServerConfiguration
+0x1ef633728  __AUTH,__objc_data  _OBJC_CLASS_$_HKCurrentLocaleCountryCodeProvider
+0x1ee1ae6b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKCyclingPowerZonesConfigurationWrapper
+0x1ef633700  __AUTH,__objc_data  _OBJC_CLASS_$_HKDaemonConnection
+0x1ef6336d8  __AUTH,__objc_data  _OBJC_CLASS_$_HKDaemonProxyProvider
+0x1ef637e68  __AUTH,__objc_data  _OBJC_CLASS_$_HKDaemonTransaction
+0x1ef638bb0  __AUTH,__objc_data  _OBJC_CLASS_$_HKDarwinNotificationDataSource
+0x1ef6355b0  __AUTH,__objc_data  _OBJC_CLASS_$_HKDataCollector
+0x1ef635588  __AUTH,__objc_data  _OBJC_CLASS_$_HKDataCollectorCollectionConfiguration
+0x1ef6349d0  __AUTH,__objc_data  _OBJC_CLASS_$_HKDataCollectorState
+0x1ef635560  __AUTH,__objc_data  _OBJC_CLASS_$_HKDataCollectorTaskServerConfiguration
+0x1ef62fff8  __AUTH,__objc_data  _OBJC_CLASS_$_HKDataFlowLink
+0x1ef63a190  __AUTH,__objc_data  _OBJC_CLASS_$_HKDataTypeAccessReport
+0x1ef63a140  __AUTH,__objc_data  _OBJC_CLASS_$_HKDataTypeAccessReportEntry
+0x1ef63a320  __AUTH,__objc_data  _OBJC_CLASS_$_HKDataTypeAccessStore
+0x1ef6398a8  __AUTH,__objc_data  _OBJC_CLASS_$_HKDatabaseAccessibilityAssertion
+0x1ee1ae038  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKDatabaseAccessibilityAssertionStore
+0x1ee1addd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKDatabaseAccessibilityAssertionStoreKeeper
+0x1ef6336b0  __AUTH,__objc_data  _OBJC_CLASS_$_HKDatabaseControl
+0x1ef62e198  __AUTH,__objc_data  _OBJC_CLASS_$_HKDatabaseValidation
+0x1ef637e40  __AUTH,__objc_data  _OBJC_CLASS_$_HKDateInterval
+0x1ef633688  __AUTH,__objc_data  _OBJC_CLASS_$_HKDateIntervalTree
+0x1ef62ffd0  __AUTH,__objc_data  _OBJC_CLASS_$_HKDebugStore
+0x1ef639f10  __AUTH,__objc_data  _OBJC_CLASS_$_HKDeletedObject
+0x1ee1add98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKDevice
+0x1ef633660  __AUTH,__objc_data  _OBJC_CLASS_$_HKDeviceContext
+0x1ef633638  __AUTH,__objc_data  _OBJC_CLASS_$_HKDeviceContextStore
+0x1ef6319e8  __AUTH,__objc_data  _OBJC_CLASS_$_HKDeviceKeyValueStorageEntry
+0x1ef633610  __AUTH,__objc_data  _OBJC_CLASS_$_HKDeviceKeyValueStorageGroup
+0x1ef6335e8  __AUTH,__objc_data  _OBJC_CLASS_$_HKDeviceKeyValueStore
+0x1ef6335c0  __AUTH,__objc_data  _OBJC_CLASS_$_HKDeviceKeyValueStoreTaskConfiguration
+0x1ef6319c0  __AUTH,__objc_data  _OBJC_CLASS_$_HKDeviceQuery
+0x1ef633598  __AUTH,__objc_data  _OBJC_CLASS_$_HKDeviceStore
+0x1ef631998  __AUTH,__objc_data  _OBJC_CLASS_$_HKDiagnosticStore
+0x1ef636770  __AUTH,__objc_data  _OBJC_CLASS_$_HKDiagnosticTestReport
+0x1ef637e18  __AUTH,__objc_data  _OBJC_CLASS_$_HKDiagnosticTestReportType
+0x1ef636748  __AUTH,__objc_data  _OBJC_CLASS_$_HKDiagnosticTestResult
+0x1ef637df0  __AUTH,__objc_data  _OBJC_CLASS_$_HKDiagnosticTestResultType
+0x1ee1acce0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKDiscreteQuantitySample
+0x1ef631970  __AUTH,__objc_data  _OBJC_CLASS_$_HKDocumentQuery
+0x1ef637dc8  __AUTH,__objc_data  _OBJC_CLASS_$_HKDocumentSample
+0x1ef639c68  __AUTH,__objc_data  _OBJC_CLASS_$_HKDocumentType
+0x1ef62e148  __AUTH,__objc_data  _OBJC_CLASS_$_HKEADFFileParser
+0x1ef62e120  __AUTH,__objc_data  _OBJC_CLASS_$_HKECGAvailabilityEngine
+0x1ef62e0f8  __AUTH,__objc_data  _OBJC_CLASS_$_HKECGAvailabilityResult
+0x1ef633570  __AUTH,__objc_data  _OBJC_CLASS_$_HKECGOnboardingVersion
+0x1ef6349a8  __AUTH,__objc_data  _OBJC_CLASS_$_HKElectrocardiogram
+0x1ef633548  __AUTH,__objc_data  _OBJC_CLASS_$_HKElectrocardiogramActiveAlgorithmVersion
+0x1ef62e0a8  __AUTH,__objc_data  _OBJC_CLASS_$_HKElectrocardiogramBuilder
+0x1ef631948  __AUTH,__objc_data  _OBJC_CLASS_$_HKElectrocardiogramQuery
+0x1ef62e080  __AUTH,__objc_data  _OBJC_CLASS_$_HKElectrocardiogramSession
+0x1ef62e058  __AUTH,__objc_data  _OBJC_CLASS_$_HKElectrocardiogramSessionConfiguration
+0x1ef62e030  __AUTH,__objc_data  _OBJC_CLASS_$_HKElectrocardiogramSessionTaskConfiguration
+0x1ef639880  __AUTH,__objc_data  _OBJC_CLASS_$_HKElectrocardiogramType
+0x1ef62e008  __AUTH,__objc_data  _OBJC_CLASS_$_HKElectrocardiogramVoltageMeasurement
+0x1ef638b88  __AUTH,__objc_data  _OBJC_CLASS_$_HKEntitlementStore
+0x1ef63a280  __AUTH,__objc_data  _OBJC_CLASS_$_HKEthnicityObject
+0x1ef633520  __AUTH,__objc_data  _OBJC_CLASS_$_HKFHIRIdentifier
+0x1ef62df90  __AUTH,__objc_data  _OBJC_CLASS_$_HKFHIRIdentifierElement
+0x1ef62df68  __AUTH,__objc_data  _OBJC_CLASS_$_HKFHIRResource
+0x1ef637da0  __AUTH,__objc_data  _OBJC_CLASS_$_HKFHIRVersion
+0x1ef631920  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureAttributes
+0x1ef638b10  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureAvailabilityContextConstraint
+0x1ef637d00  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureAvailabilityHealthDataRequirementStore
+0x1ef62ffa8  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureAvailabilityOnboardingCompletionEligibility
+0x1ef639830  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureAvailabilityOnboardingEligibility
+0x1ef6397b8  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureAvailabilityProvidingDataSource
+0x1ef62df40  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureAvailabilityRequirementEntitlement
+0x1ef6396f0  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureAvailabilityRequirementEvaluationDataSource
+0x1ef634980  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureAvailabilityRequirementFeatureSetting
+0x1ef637990  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureAvailabilityRequirementSatisfactionOverrideEligibility
+0x1ef639560  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureAvailabilityRequirementSatisfactionOverrides
+0x1ef639538  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureAvailabilityRequirementSatisfactionOverridesDataSource
+0x1ef6394e8  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureAvailabilityRequirementSet
+0x1ef634958  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureAvailabilityRequirements
+0x1ef639498  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureAvailabilityRequirementsEvaluation
+0x1ef639ee8  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureAvailabilityStore
+0x1ef639c40  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureAvailabilityStoreServerConfiguration
+0x1ef638840  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureOnboardingRecord
+0x1ef639470  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureSettings
+0x1ef639448  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureStatus
+0x1ef639420  __AUTH,__objc_data  _OBJC_CLASS_$_HKFeatureStatusManager
+0x1ef634930  __AUTH,__objc_data  _OBJC_CLASS_$_HKFitzpatrickSkinTypeObject
+0x1ef636630  __AUTH,__objc_data  _OBJC_CLASS_$_HKFixedCurrentCountryCodeProvider
+0x1ef6318d0  __AUTH,__objc_data  _OBJC_CLASS_$_HKGAD7Assessment
+0x1ef62def0  __AUTH,__objc_data  _OBJC_CLASS_$_HKGPXExporter
+0x1ef62dec8  __AUTH,__objc_data  _OBJC_CLASS_$_HKGenericDocumentSample
+0x1ef62dea0  __AUTH,__objc_data  _OBJC_CLASS_$_HKGlassesLensSpecification
+0x1ef62de78  __AUTH,__objc_data  _OBJC_CLASS_$_HKGlassesPrescription
+0x1ef62de50  __AUTH,__objc_data  _OBJC_CLASS_$_HKGymKitDataSource
+0x1ef62de28  __AUTH,__objc_data  _OBJC_CLASS_$_HKGymKitMetricsDataSource
+0x1ef62de00  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthAppIDSMessage
+0x1ef6378c8  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthChecklistUtilities
+0x1ef6378a0  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthConceptIdentifier
+0x1ef639f60  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthFactBooleanSample
+0x1ef639fb0  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthFactConceptSample
+0x1ef63a000  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthFactQuantitySample
+0x1ef63a078  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthFactSample
+0x1ef62ddd8  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthFactSampleType
+0x1ef6334d0  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthRecordsAccountInfoStore
+0x1ef639c18  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthRecordsStore
+0x1ef6334a8  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthService
+0x1ef62ddb0  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthServiceDiscovery
+0x1ef62dd88  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthServiceSession
+0x1ef6348e0  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthServicesManager
+0x1ee1af1d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKHealthStore
+0x1ee1aeed8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKHealthStoreConfiguration
+0x1ee1af180  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKHealthStoreIdentifier
+0x1ee1aeb90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKHealthStoreImplementation
+0x1ef6318a8  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthStoreProvider
+0x1ef62dd60  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthWrapCodableKeyValue
+0x1ef62dd38  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthWrapCodableMessageHeader
+0x1ef62dd10  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthWrapCodableMessageKey
+0x1ef62dce8  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthWrapCodablePayloadHeader
+0x1ef62dcc0  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthWrapCodableValue
+0x1ef62dc70  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthWrapMessage
+0x1ef62ff80  __AUTH,__objc_data  _OBJC_CLASS_$_HKHealthWrapMessageConfiguration
+0x1ef62ff58  __AUTH,__objc_data  _OBJC_CLASS_$_HKHearingLevelMetrics
+0x1ef62ff30  __AUTH,__objc_data  _OBJC_CLASS_$_HKHearingLevelSummary
+0x1ef631880  __AUTH,__objc_data  _OBJC_CLASS_$_HKHeartRatePreferencesConstants
+0x1ef62ff08  __AUTH,__objc_data  _OBJC_CLASS_$_HKHeartRateSummary
+0x1ef62fee0  __AUTH,__objc_data  _OBJC_CLASS_$_HKHeartRateSummaryBreatheStatistics
+0x1ef631858  __AUTH,__objc_data  _OBJC_CLASS_$_HKHeartRateSummaryQuery
+0x1ef635510  __AUTH,__objc_data  _OBJC_CLASS_$_HKHeartRateSummaryReading
+0x1ef62feb8  __AUTH,__objc_data  _OBJC_CLASS_$_HKHeartRateSummarySleepStatistics
+0x1ef62fe90  __AUTH,__objc_data  _OBJC_CLASS_$_HKHeartRateSummaryStatistics
+0x1ef62fe68  __AUTH,__objc_data  _OBJC_CLASS_$_HKHeartRateSummaryStatisticsBucket
+0x1ef62fe40  __AUTH,__objc_data  _OBJC_CLASS_$_HKHeartRateSummaryWorkoutRecoveryStatistics
+0x1ef62fe18  __AUTH,__objc_data  _OBJC_CLASS_$_HKHeartRateSummaryWorkoutStatistics
+0x1ef62dc48  __AUTH,__objc_data  _OBJC_CLASS_$_HKHeartRateVariabilityUtilities
+0x1ef636608  __AUTH,__objc_data  _OBJC_CLASS_$_HKHeartRhythmAvailability
+0x1ef633480  __AUTH,__objc_data  _OBJC_CLASS_$_HKHeartRhythmOnboardingHistory
+0x1ef62dc20  __AUTH,__objc_data  _OBJC_CLASS_$_HKHeartbeatSequenceSampleType
+0x1ef62dbf8  __AUTH,__objc_data  _OBJC_CLASS_$_HKHeartbeatSeriesBuilder
+0x1ef631830  __AUTH,__objc_data  _OBJC_CLASS_$_HKHeartbeatSeriesQuery
+0x1ef62fdf0  __AUTH,__objc_data  _OBJC_CLASS_$_HKHeartbeatSeriesSample
+0x1ef62dbd0  __AUTH,__objc_data  _OBJC_CLASS_$_HKIdentifierConceptSelection
+0x1ef637878  __AUTH,__objc_data  _OBJC_CLASS_$_HKImportExclusionDeviceDataSource
+0x1ef62fdc8  __AUTH,__objc_data  _OBJC_CLASS_$_HKIndexableObject
+0x1ef62fda0  __AUTH,__objc_data  _OBJC_CLASS_$_HKInspectableValue
+0x1ef62dba8  __AUTH,__objc_data  _OBJC_CLASS_$_HKInspectableValueCollection
+0x1ef62fd78  __AUTH,__objc_data  _OBJC_CLASS_$_HKInspectableValueInRange
+0x1ef62db80  __AUTH,__objc_data  _OBJC_CLASS_$_HKIntegerSet
+0x1ef6317e0  __AUTH,__objc_data  _OBJC_CLASS_$_HKJSONValidator
+0x1ef62db58  __AUTH,__objc_data  _OBJC_CLASS_$_HKJSONVisitor
+0x1ee1ace70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKKeyValueDomain
+0x1ee1ace48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKKeyValueDomainServerConfiguration
+0x1ef62db30  __AUTH,__objc_data  _OBJC_CLASS_$_HKLensSpecification
+0x1ef633920  __AUTH,__objc_data  _OBJC_CLASS_$_HKLinkSetWrapper
+0x1ef633458  __AUTH,__objc_data  _OBJC_CLASS_$_HKListUserDomainConcept
+0x1ef62db08  __AUTH,__objc_data  _OBJC_CLASS_$_HKListUserDomainConceptSemanticIdentifier
+0x1ef62dae0  __AUTH,__objc_data  _OBJC_CLASS_$_HKLiveWorkoutBuilder
+0x1ef62dab8  __AUTH,__objc_data  _OBJC_CLASS_$_HKLiveWorkoutDataSource
+0x1ef62da90  __AUTH,__objc_data  _OBJC_CLASS_$_HKLiveWorkoutZoneUpdate
+0x1ef62da68  __AUTH,__objc_data  _OBJC_CLASS_$_HKLocalAppInstallationManager
+0x1ef633430  __AUTH,__objc_data  _OBJC_CLASS_$_HKMCMenopauseModel
+0x1ef631790  __AUTH,__objc_data  _OBJC_CLASS_$_HKMCPregnancyDatesFactory
+0x1ef6393f8  __AUTH,__objc_data  _OBJC_CLASS_$_HKMCPregnancyModel
+0x1ef6387f0  __AUTH,__objc_data  _OBJC_CLASS_$_HKMCPregnancyStateQuery
+0x1ef6387c8  __AUTH,__objc_data  _OBJC_CLASS_$_HKMCPregnancyStateQueryConfiguration
+0x1ef631768  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalBaseUserDomainConcept
+0x1ef6348b8  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalCoding
+0x1ef634890  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalCodingCollection
+0x1ef62da40  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalCodingConceptSelection
+0x1ef6354e8  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalCodingSystem
+0x1ef633408  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalDate
+0x1ef62da18  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalDateInterval
+0x1ef62af48  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalHistoryAllergyRecord
+0x1ef62fd50  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalHistoryAllergyRecordType
+0x1ef62af20  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalHistoryHealthConcernRecord
+0x1ef62fd28  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalHistoryHealthConcernRecordType
+0x1ef62aef8  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalHistoryImmunizationRecord
+0x1ef62fd00  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalHistoryImmunizationRecordType
+0x1ef62aed0  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalHistoryLabResultRecord
+0x1ef62fcd8  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalHistoryLabResultRecordType
+0x1ef62aea8  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalHistoryProcedureRecord
+0x1ef62fcb0  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalHistoryProcedureRecordType
+0x1ef62ae80  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalHistoryQuantitativeLabResultRecord
+0x1ef62fc88  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalHistoryQuantitativeLabResultRecordType
+0x1ef62ae58  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalHistoryRecord
+0x1ef62fc60  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalHistoryRecordType
+0x1ee1ad410  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKMedicalIDStore
+0x1ef6333e0  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalIDSyncRequest
+0x1ef6365e0  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalRecord
+0x1ef6333b8  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalRecordOriginIdentifier
+0x1ef631740  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalRecordsStore
+0x1ef637850  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalType
+0x1ef631718  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalUserDomainConcept
+0x1ef62d9f0  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicalUserDomainConceptSemanticIdentifier
+0x1ef62d9c8  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedication
+0x1ef62d9a0  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicationComponent
+0x1ef62d978  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicationConcept
+0x1ef6365b8  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicationDispenseRecord
+0x1ef637828  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicationDispenseRecordType
+0x1ef62fc38  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicationDisplayNameComponents
+0x1ef62d950  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicationDosage
+0x1ef634868  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicationDoseEvent
+0x1ef6354c0  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicationDoseEventType
+0x1ef62fc10  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicationIdentifier
+0x1ef62d928  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicationIngredient
+0x1ef62fbe8  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicationLoggingUnit
+0x1ef636590  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicationOrder
+0x1ef637800  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicationOrderType
+0x1ef636568  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicationRecord
+0x1ef6377d8  __AUTH,__objc_data  _OBJC_CLASS_$_HKMedicationRecordType
+0x1ef62d900  __AUTH,__objc_data  _OBJC_CLASS_$_HKMetadataValueRange
+0x1ef6316f0  __AUTH,__objc_data  _OBJC_CLASS_$_HKMobileCountryCode
+0x1ef62d8d8  __AUTH,__objc_data  _OBJC_CLASS_$_HKMulberryRecordType
+0x1ef62fb98  __AUTH,__objc_data  _OBJC_CLASS_$_HKMultiTypeSampleIterator
+0x1ef62fb70  __AUTH,__objc_data  _OBJC_CLASS_$_HKMultimap
+0x1ef62d8b0  __AUTH,__objc_data  _OBJC_CLASS_$_HKMutableIntegerSet
+0x1ef633390  __AUTH,__objc_data  _OBJC_CLASS_$_HKNanoRegistryDeviceUtility
+0x1ef6387a0  __AUTH,__objc_data  _OBJC_CLASS_$_HKNanoRegistryPairingAndSwitchingNotificationDataSource
+0x1ef638778  __AUTH,__objc_data  _OBJC_CLASS_$_HKNanoSyncControl
+0x1ef62fb48  __AUTH,__objc_data  _OBJC_CLASS_$_HKNanoSyncPairedDeviceInfo
+0x1ef6316c8  __AUTH,__objc_data  _OBJC_CLASS_$_HKNanoSyncPairedDevicesSnapshot
+0x1ef62fb20  __AUTH,__objc_data  _OBJC_CLASS_$_HKNotificationInstruction
+0x1ef62d888  __AUTH,__objc_data  _OBJC_CLASS_$_HKNotificationInstructionDiagnosticDescription
+0x1ef62faf8  __AUTH,__objc_data  _OBJC_CLASS_$_HKNotificationInstructionDiagnosticQuery
+0x1ef633340  __AUTH,__objc_data  _OBJC_CLASS_$_HKNotificationStore
+0x1ef62fad0  __AUTH,__objc_data  _OBJC_CLASS_$_HKNotificationSyncStore
+0x1ef62d860  __AUTH,__objc_data  _OBJC_CLASS_$_HKNotificationSyncStoreServerConfiguration
+0x1ef6377b0  __AUTH,__objc_data  _OBJC_CLASS_$_HKOSEligibilityDataSource
+0x1ee1af1a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKObject
+0x1ee1ae8c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKObjectAuthorizationPromptSession
+0x1ef637788  __AUTH,__objc_data  _OBJC_CLASS_$_HKObjectAuthorizationPromptSessionContext
+0x1ef637760  __AUTH,__objc_data  _OBJC_CLASS_$_HKObjectAuthorizationPromptSessionMetadata
+0x1ef637738  __AUTH,__objc_data  _OBJC_CLASS_$_HKObjectAuthorizationRecord
+0x1ef636540  __AUTH,__objc_data  _OBJC_CLASS_$_HKObjectAuthorizationSetStatusContext
+0x1ee1af040  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKObjectType
+0x1ef6393d0  __AUTH,__objc_data  _OBJC_CLASS_$_HKObserverBridge
+0x1ef635498  __AUTH,__objc_data  _OBJC_CLASS_$_HKObserverBridgeHandle
+0x1ee1ace20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKObserverQuery
+0x1ee1ae870  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKObserverSet
+0x1ef6393a8  __AUTH,__objc_data  _OBJC_CLASS_$_HKOnboardingCompletion
+0x1ef634818  __AUTH,__objc_data  _OBJC_CLASS_$_HKOntologyEducationContentSectionData
+0x1ef6347f0  __AUTH,__objc_data  _OBJC_CLASS_$_HKOntologyLocalizedEducationContent
+0x1ef6347c8  __AUTH,__objc_data  _OBJC_CLASS_$_HKOntologyLocalizedEducationContentSection
+0x1ef633318  __AUTH,__objc_data  _OBJC_CLASS_$_HKOntologyShardRegistryEntry
+0x1ef62faa8  __AUTH,__objc_data  _OBJC_CLASS_$_HKOntologyVersion
+0x1ef63a0f0  __AUTH,__objc_data  _OBJC_CLASS_$_HKOverheadSquatSample
+0x1ef6316a0  __AUTH,__objc_data  _OBJC_CLASS_$_HKPHQ9Assessment
+0x1ef62fa80  __AUTH,__objc_data  _OBJC_CLASS_$_HKPIIRedactor
+0x1ef62d838  __AUTH,__objc_data  _OBJC_CLASS_$_HKPPT
+0x1ef6332f0  __AUTH,__objc_data  _OBJC_CLASS_$_HKPairedDeviceAppInstallationManager
+0x1ef6347a0  __AUTH,__objc_data  _OBJC_CLASS_$_HKPairedFeatureAttributes
+0x1ef635470  __AUTH,__objc_data  _OBJC_CLASS_$_HKPauseRingsSchedule
+0x1ef631678  __AUTH,__objc_data  _OBJC_CLASS_$_HKPersistentTimer
+0x1ef62d7e8  __AUTH,__objc_data  _OBJC_CLASS_$_HKPluginLoader
+0x1ef631650  __AUTH,__objc_data  _OBJC_CLASS_$_HKPluginProxyProvider
+0x1ef639ec0  __AUTH,__objc_data  _OBJC_CLASS_$_HKPrescriptionType
+0x1ef636518  __AUTH,__objc_data  _OBJC_CLASS_$_HKProcedureRecord
+0x1ef637710  __AUTH,__objc_data  _OBJC_CLASS_$_HKProcedureRecordType
+0x1ef62fa58  __AUTH,__objc_data  _OBJC_CLASS_$_HKProductVersions
+0x1ee1af158  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKProfileIdentifier
+0x1ef638728  __AUTH,__objc_data  _OBJC_CLASS_$_HKProfileStore
+0x1ee1aec80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKProxyProvider
+0x1ef62d798  __AUTH,__objc_data  _OBJC_CLASS_$_HKQAStatistics
+0x1ee1aef78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKQuantity
+0x1ef635448  __AUTH,__objc_data  _OBJC_CLASS_$_HKQuantityDatum
+0x1ef6376e8  __AUTH,__objc_data  _OBJC_CLASS_$_HKQuantityRange
+0x1ee1aecf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKQuantitySample
+0x1ef62d770  __AUTH,__objc_data  _OBJC_CLASS_$_HKQuantitySeriesSampleBuilder
+0x1ef62d748  __AUTH,__objc_data  _OBJC_CLASS_$_HKQuantitySeriesSampleBuilderTaskServerConfiguration
+0x1ef62d720  __AUTH,__objc_data  _OBJC_CLASS_$_HKQuantitySeriesSampleEditor
+0x1ef62d6f8  __AUTH,__objc_data  _OBJC_CLASS_$_HKQuantitySeriesSampleEditorTaskServerConfiguration
+0x1ef6364f0  __AUTH,__objc_data  _OBJC_CLASS_$_HKQuantitySeriesSampleQuery
+0x1ee1aed48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKQuantityType
+0x1ee1ae190  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKQuery
+0x1ee1acfd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKQueryAnchor
+0x1ee1adbb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKQueryDescriptor
+0x1ee1aea50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKQueryServerConfiguration
+0x1ef631628  __AUTH,__objc_data  _OBJC_CLASS_$_HKQuerySortConstraint
+0x1ee1aeb40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKQuerySubscriptionAnchor
+0x1ef62fa30  __AUTH,__objc_data  _OBJC_CLASS_$_HKRaceRouteCluster
+0x1ef62fa08  __AUTH,__objc_data  _OBJC_CLASS_$_HKRaceRouteClusterStore
+0x1ef62f9e0  __AUTH,__objc_data  _OBJC_CLASS_$_HKRaceRouteLocationSeriesQuery
+0x1ef62f9b8  __AUTH,__objc_data  _OBJC_CLASS_$_HKRateLimiter
+0x1ef62d6a8  __AUTH,__objc_data  _OBJC_CLASS_$_HKRatioValue
+0x1ee1ad0c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKRecalibrateEstimatesRequestRecord
+0x1ef62d680  __AUTH,__objc_data  _OBJC_CLASS_$_HKReferenceRange
+0x1ef63a230  __AUTH,__objc_data  _OBJC_CLASS_$_HKReferenceSexObject
+0x1ef638700  __AUTH,__objc_data  _OBJC_CLASS_$_HKRegionAvailability
+0x1ef634750  __AUTH,__objc_data  _OBJC_CLASS_$_HKRegulatoryDomainEstimate
+0x1ef635420  __AUTH,__objc_data  _OBJC_CLASS_$_HKRegulatoryDomainManager
+0x1ef62d658  __AUTH,__objc_data  _OBJC_CLASS_$_HKRelationshipConceptSelection
+0x1ef6353f8  __AUTH,__objc_data  _OBJC_CLASS_$_HKRemoteFeatureAvailabilityRuleSet
+0x1ef631600  __AUTH,__objc_data  _OBJC_CLASS_$_HKRollingBaselineConfiguration
+0x1ee1af090  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKSample
+0x1ef6376c0  __AUTH,__objc_data  _OBJC_CLASS_$_HKSampleCountQuery
+0x1ef634728  __AUTH,__objc_data  _OBJC_CLASS_$_HKSampleIteratorQuery
+0x1ef634700  __AUTH,__objc_data  _OBJC_CLASS_$_HKSampleIteratorQueryCursor
+0x1ef62d630  __AUTH,__objc_data  _OBJC_CLASS_$_HKSampleListDataProviderFilter
+0x1ee1ad3e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKSampleQuery
+0x1ee1af018  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKSampleType
+0x1ef6346d8  __AUTH,__objc_data  _OBJC_CLASS_$_HKSampleTypeChange
+0x1ef6315d8  __AUTH,__objc_data  _OBJC_CLASS_$_HKScoredAssessment
+0x1ef6346b0  __AUTH,__objc_data  _OBJC_CLASS_$_HKScoredAssessmentType
+0x1ef62d608  __AUTH,__objc_data  _OBJC_CLASS_$_HKSecondaryDevicePairingAgent
+0x1ef62d5e0  __AUTH,__objc_data  _OBJC_CLASS_$_HKSecondaryPairedDeviceConfiguration
+0x1ef6364c8  __AUTH,__objc_data  _OBJC_CLASS_$_HKSemanticDate
+0x1ef62d5b8  __AUTH,__objc_data  _OBJC_CLASS_$_HKSeriesBuilder
+0x1ef62d590  __AUTH,__objc_data  _OBJC_CLASS_$_HKSeriesBuilderConfiguration
+0x1ef634688  __AUTH,__objc_data  _OBJC_CLASS_$_HKSeriesSample
+0x1ef639b78  __AUTH,__objc_data  _OBJC_CLASS_$_HKSeriesType
+0x1ef634660  __AUTH,__objc_data  _OBJC_CLASS_$_HKSharedSummary
+0x1ef6315b0  __AUTH,__objc_data  _OBJC_CLASS_$_HKSharedSummaryCloudSyncManager
+0x1ef632f08  __AUTH,__objc_data  _OBJC_CLASS_$_HKSharedSummaryQuery
+0x1ef634638  __AUTH,__objc_data  _OBJC_CLASS_$_HKSharedSummaryTransaction
+0x1ef634610  __AUTH,__objc_data  _OBJC_CLASS_$_HKSharedSummaryTransactionBuilder
+0x1ef631588  __AUTH,__objc_data  _OBJC_CLASS_$_HKSharedSummaryTransactionBuilderTaskConfiguration
+0x1ef6353d0  __AUTH,__objc_data  _OBJC_CLASS_$_HKSharedSummaryTransactionQuery
+0x1ef632ee0  __AUTH,__objc_data  _OBJC_CLASS_$_HKSharingAuthorization
+0x1ef62d568  __AUTH,__objc_data  _OBJC_CLASS_$_HKSharingAuthorizationRecipientStore
+0x1ef62d540  __AUTH,__objc_data  _OBJC_CLASS_$_HKSharingAuthorizationRecipientStoreTaskConfiguration
+0x1ef62d518  __AUTH,__objc_data  _OBJC_CLASS_$_HKSharingRecipientAuthorizationStore
+0x1ef62d4f0  __AUTH,__objc_data  _OBJC_CLASS_$_HKSharingRecipientAuthorizationStoreTaskConfiguration
+0x1ef62f8f0  __AUTH,__objc_data  _OBJC_CLASS_$_HKSharingRecipientIdentifier
+0x1ef631560  __AUTH,__objc_data  _OBJC_CLASS_$_HKSignedClinicalDataItem
+0x1ef6364a0  __AUTH,__objc_data  _OBJC_CLASS_$_HKSignedClinicalDataRecord
+0x1ef636478  __AUTH,__objc_data  _OBJC_CLASS_$_HKSignedClinicalDataRecordType
+0x1ef631538  __AUTH,__objc_data  _OBJC_CLASS_$_HKSignedClinicalDataSubject
+0x1ef62d4c8  __AUTH,__objc_data  _OBJC_CLASS_$_HKSignedClinicalDataUtilities
+0x1ef636450  __AUTH,__objc_data  _OBJC_CLASS_$_HKSleepDaySummary
+0x1ef6353a8  __AUTH,__objc_data  _OBJC_CLASS_$_HKSleepDaySummaryCacheSettings
+0x1ef62f8c8  __AUTH,__objc_data  _OBJC_CLASS_$_HKSleepDaySummaryCollection
+0x1ef62f8a0  __AUTH,__objc_data  _OBJC_CLASS_$_HKSleepDaySummaryCollectionQuery
+0x1ef636428  __AUTH,__objc_data  _OBJC_CLASS_$_HKSleepDaySummaryDurationCollection
+0x1ef636400  __AUTH,__objc_data  _OBJC_CLASS_$_HKSleepDaySummaryDurationStrategy
+0x1ef6363d8  __AUTH,__objc_data  _OBJC_CLASS_$_HKSleepDaySummaryDurationStrategySet
+0x1ef6363b0  __AUTH,__objc_data  _OBJC_CLASS_$_HKSleepDaySummaryDurations
+0x1ef636388  __AUTH,__objc_data  _OBJC_CLASS_$_HKSleepDaySummaryQuery
+0x1ef635380  __AUTH,__objc_data  _OBJC_CLASS_$_HKSleepDaySummaryQueryConfiguration
+0x1ef632eb8  __AUTH,__objc_data  _OBJC_CLASS_$_HKSleepMetrics
+0x1ef631510  __AUTH,__objc_data  _OBJC_CLASS_$_HKSleepMetricsEngine
+0x1ef636360  __AUTH,__objc_data  _OBJC_CLASS_$_HKSleepPeriod
+0x1ef636338  __AUTH,__objc_data  _OBJC_CLASS_$_HKSleepPeriodSegment
+0x1ee1adb90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKSleepSchedule
+0x1ef6314e8  __AUTH,__objc_data  _OBJC_CLASS_$_HKSortedQueryAnchor
+0x1ef62f878  __AUTH,__objc_data  _OBJC_CLASS_$_HKSortedSampleArray
+0x1ee1aea78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKSource
+0x1ef6314c0  __AUTH,__objc_data  _OBJC_CLASS_$_HKSourceAliasMappings
+0x1ef632e90  __AUTH,__objc_data  _OBJC_CLASS_$_HKSourceQuery
+0x1ee1adee0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKSourceRevision
+0x1ef637698  __AUTH,__objc_data  _OBJC_CLASS_$_HKSourceStore
+0x1ef62d4a0  __AUTH,__objc_data  _OBJC_CLASS_$_HKStateMachine
+0x1ef62d450  __AUTH,__objc_data  _OBJC_CLASS_$_HKStateMachineState
+0x1ef62d428  __AUTH,__objc_data  _OBJC_CLASS_$_HKStateMachineTransition
+0x1ef632e68  __AUTH,__objc_data  _OBJC_CLASS_$_HKStateOfMind
+0x1ef636310  __AUTH,__objc_data  _OBJC_CLASS_$_HKStateOfMindType
+0x1ef6345e8  __AUTH,__objc_data  _OBJC_CLASS_$_HKStateSyncRequest
+0x1ef631498  __AUTH,__objc_data  _OBJC_CLASS_$_HKStaticSyncControl
+0x1ee1ad0a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKStatistics
+0x1ef637670  __AUTH,__objc_data  _OBJC_CLASS_$_HKStatisticsCollection
+0x1ef631470  __AUTH,__objc_data  _OBJC_CLASS_$_HKStatisticsCollectionCacheSettings
+0x1ef6386d8  __AUTH,__objc_data  _OBJC_CLASS_$_HKStatisticsCollectionQuery
+0x1ef6362e8  __AUTH,__objc_data  _OBJC_CLASS_$_HKStatisticsQuery
+0x1ee1acfb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKStringCache
+0x1ef6345c0  __AUTH,__objc_data  _OBJC_CLASS_$_HKSummarySharingEntry
+0x1ef634598  __AUTH,__objc_data  _OBJC_CLASS_$_HKSummarySharingEntryStore
+0x1ef632e40  __AUTH,__objc_data  _OBJC_CLASS_$_HKSummarySharingSyncRequest
+0x1ef62d400  __AUTH,__objc_data  _OBJC_CLASS_$_HKSurveyResponse
+0x1ef62d3d8  __AUTH,__objc_data  _OBJC_CLASS_$_HKSurveyResponseType
+0x1ef635358  __AUTH,__objc_data  _OBJC_CLASS_$_HKSynchronousObserverSet
+0x1ef62d3b0  __AUTH,__objc_data  _OBJC_CLASS_$_HKTableFormatter
+0x1ee1aec58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKTaskConfiguration
+0x1ee1aec30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKTaskServerProxyProvider
+0x1ef62ae30  __AUTH,__objc_data  _OBJC_CLASS_$_HKTrailingDailyAverageConfiguration
+0x1ef6362c0  __AUTH,__objc_data  _OBJC_CLASS_$_HKUCUMUnitDisplayConverter
+0x1ee1aeeb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKUnit
+0x1ee1af298  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKUnitPreferenceController
+0x1ef636298  __AUTH,__objc_data  _OBJC_CLASS_$_HKUnknownRecord
+0x1ef636270  __AUTH,__objc_data  _OBJC_CLASS_$_HKUnknownRecordType
+0x1ef62d360  __AUTH,__objc_data  _OBJC_CLASS_$_HKUnprocessedBloodOxygenDataSample
+0x1ef631448  __AUTH,__objc_data  _OBJC_CLASS_$_HKUnprocessedBloodOxygenDataType
+0x1ef637648  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserAnnotatedMedication
+0x1ef62f850  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserAnnotatedMedicationQuery
+0x1ef634570  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserAnnotatedMedicationType
+0x1ef639380  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserDefaultsDataSource
+0x1ef634548  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserDomainConcept
+0x1ef634520  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserDomainConceptBasicProperty
+0x1ef632e18  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserDomainConceptLink
+0x1ef6344f8  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserDomainConceptLinkCollection
+0x1ef631c80  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserDomainConceptLinkStructWrapper
+0x1ef6344d0  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserDomainConceptLocalizedString
+0x1ef62f828  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserDomainConceptNamedQuantity
+0x1ef6344a8  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserDomainConceptProperty
+0x1ef634480  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserDomainConceptPropertyCollection
+0x1ef635330  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserDomainConceptQuery
+0x1ef634430  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserDomainConceptQueryResult
+0x1ef632df0  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserDomainConceptSemanticIdentifier
+0x1ef634408  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserDomainConceptStore
+0x1ef635308  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserDomainConceptTypeIdentifier
+0x1ef637620  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserNotificationsDataSource
+0x1ef62d310  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserTrackedConcept
+0x1ef62f800  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserTrackedConceptQuery
+0x1ef631420  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserTrackedConceptType
+0x1ef62d2c0  __AUTH,__objc_data  _OBJC_CLASS_$_HKUserTrackedMedication
+0x1ef636248  __AUTH,__objc_data  _OBJC_CLASS_$_HKVaccinationRecord
+0x1ef6375f8  __AUTH,__objc_data  _OBJC_CLASS_$_HKVaccinationRecordType
+0x1ef6313f8  __AUTH,__objc_data  _OBJC_CLASS_$_HKValueHistogram
+0x1ef6313d0  __AUTH,__objc_data  _OBJC_CLASS_$_HKValueHistogramCollection
+0x1ef632dc8  __AUTH,__objc_data  _OBJC_CLASS_$_HKValueHistogramCollectionQuery
+0x1ef631380  __AUTH,__objc_data  _OBJC_CLASS_$_HKValueHistogramSegment
+0x1ef62d298  __AUTH,__objc_data  _OBJC_CLASS_$_HKVerifiableClinicalRecord
+0x1ef631358  __AUTH,__objc_data  _OBJC_CLASS_$_HKVerifiableClinicalRecordQuery
+0x1ef62d270  __AUTH,__objc_data  _OBJC_CLASS_$_HKVerifiableClinicalRecordSubject
+0x1ef632da0  __AUTH,__objc_data  _OBJC_CLASS_$_HKVerifiableClinicalRecordType
+0x1ef631330  __AUTH,__objc_data  _OBJC_CLASS_$_HKVisionPrescription
+0x1ef62d248  __AUTH,__objc_data  _OBJC_CLASS_$_HKVisionPrism
+0x1ef632d78  __AUTH,__objc_data  _OBJC_CLASS_$_HKWatchAppAvailability
+0x1ef638688  __AUTH,__objc_data  _OBJC_CLASS_$_HKWatchAppInstallationDataSource
+0x1ef632d50  __AUTH,__objc_data  _OBJC_CLASS_$_HKWatchAppInstallationManager
+0x1ef638660  __AUTH,__objc_data  _OBJC_CLASS_$_HKWatchLowPowerModeDataSource
+0x1ef639b50  __AUTH,__objc_data  _OBJC_CLASS_$_HKWheelchairUseObject
+0x1ee1aeff0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKWorkout
+0x1ee1aeb18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKWorkoutActivity
+0x1ee1acb78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKWorkoutActivityNodeWrapper
+0x1ef62d220  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutBuilder
+0x1ee1ae7d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKWorkoutBuilderConfiguration
+0x1ef62d1f8  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutBuilderQuantity
+0x1ef631308  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutBuilderSampleQuery
+0x1ef62d1d0  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutBuilderStatistics
+0x1ef6312e0  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutCluster
+0x1ef6312b8  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutClusterStore
+0x1ef631290  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutCondenserControl
+0x1ee1ae910  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKWorkoutConfiguration
+0x1ef632d28  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutControl
+0x1ef62d1a8  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutDataSource
+0x1ef62d180  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutDataSourceConfiguration
+0x1ef631268  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutEffortRelationship
+0x1ef631240  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutEffortRelationshipQuery
+0x1ee1acf38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKWorkoutEvent
+0x1ef62d158  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutMirroringDataUpdate
+0x1ef6343e0  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutRoute
+0x1ef62d130  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutRouteBuilder
+0x1ef62d108  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutRouteDataSource
+0x1ef6343b8  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutRouteQuery
+0x1ef62f7d8  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutSession
+0x1ee1ae7a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKWorkoutSessionTaskConfiguration
+0x1ef631218  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutTrainingLoad
+0x1ef6311f0  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutTrainingLoadCollection
+0x1ef6311c8  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutTrainingLoadCollectionQuery
+0x1ef6311a0  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutTrainingLoadCollectionQueryResults
+0x1ef62f7b0  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutTrainingLoadQuery
+0x1ef62d0e0  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutTrainingLoadQueryResults
+0x1ee1adaf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKWorkoutType
+0x1ef631178  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutUtilities
+0x1ee1aeac8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKWorkoutZoneConfigurationWrapper
+0x1ef62d0b8  __AUTH,__objc_data  _OBJC_CLASS_$_HKWorkoutZoneDurationWrapper
+0x1ee1accb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKWorkoutZoneGroupWrapper
+0x1ee1aea28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKWorkoutZoneHeartRateConfigurationSettingsWrapper
+0x1ee1aea00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKWorkoutZoneWrapper
+0x1ef639358  __AUTH,__objc_data  _OBJC_CLASS_$_HKWristDetectionSettingDataSource
+0x1ef639330  __AUTH,__objc_data  _OBJC_CLASS_$_HKWristDetectionSettingManager
+0x1ef62f788  __AUTH,__objc_data  _OBJC_CLASS_$_HKXPCEventObserver
+0x1ee1adac8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKActivityCacheComparisonFilter
+0x1ee1acf10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKActivityStatisticsQuantityInfo
+0x1ef636220  __AUTH,__objc_data  _OBJC_CLASS_$__HKActivityStatisticsQuery
+0x1ef6352e0  __AUTH,__objc_data  _OBJC_CLASS_$__HKActivityStatisticsQueryResult
+0x1ef6352b8  __AUTH,__objc_data  _OBJC_CLASS_$__HKActivityStatisticsQueryServerConfiguration
+0x1ef635290  __AUTH,__objc_data  _OBJC_CLASS_$__HKActivityStatisticsStandHourInfo
+0x1ef635268  __AUTH,__objc_data  _OBJC_CLASS_$__HKActivityStatisticsWorkoutInfo
+0x1ee1adaa0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKActivitySummaryComparisonFilter
+0x1ef62d040  __AUTH,__objc_data  _OBJC_CLASS_$__HKAppURLSpecification
+0x1ef62f760  __AUTH,__objc_data  _OBJC_CLASS_$__HKArchiveCreator
+0x1ef6375d0  __AUTH,__objc_data  _OBJC_CLASS_$__HKAuthorizationModeInfo
+0x1ef6375a8  __AUTH,__objc_data  _OBJC_CLASS_$__HKAuthorizationRecord
+0x1ef62cff0  __AUTH,__objc_data  _OBJC_CLASS_$__HKBackgroundObservationExtensionContext
+0x1ef62cfc8  __AUTH,__objc_data  _OBJC_CLASS_$__HKBackgroundObservationExtensionHostContext
+0x1ef62cfa0  __AUTH,__objc_data  _OBJC_CLASS_$__HKBackgroundObservationExtensionRemoteContext
+0x1ee1af220  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKBehavior
+0x1ef631128  __AUTH,__objc_data  _OBJC_CLASS_$__HKBooleanFilter
+0x1ee1ada78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKCDADocumentSampleComparisonFilter
+0x1ee1ae640  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKCFGExpression
+0x1ee1ae5f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKCFGNode
+0x1ee1ae5a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKCFGNonTerminal
+0x1ee1ae4d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKCFGTerminal
+0x1ee1ada50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKCategorySampleComparisonFilter
+0x1ee1ad2f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKClinicalContact
+0x1ee1ada28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKClinicalRecordComparisonFilter
+0x1ee1ada00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKComparisonFilter
+0x1ee1ad488  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKCompoundFilter
+0x1ee1ad9d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKConceptIndexableComparisonFilter
+0x1ee1ae488  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKContextFreeGrammar
+0x1ef62ced8  __AUTH,__objc_data  _OBJC_CLASS_$__HKCorrelationPlaceholder
+0x1ef6351f0  __AUTH,__objc_data  _OBJC_CLASS_$__HKCurrentActivitySummaryQuery
+0x1ef6361d0  __AUTH,__objc_data  _OBJC_CLASS_$__HKCurrentWorkoutSnapshot
+0x1ef634318  __AUTH,__objc_data  _OBJC_CLASS_$__HKDaemonPreferences
+0x1ef6351c8  __AUTH,__objc_data  _OBJC_CLASS_$__HKDatabaseChangesQuery
+0x1ef632cd8  __AUTH,__objc_data  _OBJC_CLASS_$__HKDateIntervalCollection
+0x1ef637558  __AUTH,__objc_data  _OBJC_CLASS_$__HKDateRangeQuery
+0x1ef6310b0  __AUTH,__objc_data  _OBJC_CLASS_$__HKDeepBreathingSession
+0x1ef62ce88  __AUTH,__objc_data  _OBJC_CLASS_$__HKDeepBreathingSessionConfiguration
+0x1ef639b28  __AUTH,__objc_data  _OBJC_CLASS_$__HKDelayedOperation
+0x1ee1ad9b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKDiagnosticTestResultComparisonFilter
+0x1ee1ad988  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKDiscreteQuantitySampleComparisonFilter
+0x1ee1ad960  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKElectrocardiogramComparisonFilter
+0x1ee1ad2d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKEmergencyContact
+0x1ee1ad3c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKEntitlements
+0x1ef62f6e8  __AUTH,__objc_data  _OBJC_CLASS_$__HKExpiringCompletionTimer
+0x1ee1aed70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKFeatureFlags
+0x1ee1ae988  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKFilter
+0x1ef632c60  __AUTH,__objc_data  _OBJC_CLASS_$__HKFitnessFriendAchievement
+0x1ef6342c8  __AUTH,__objc_data  _OBJC_CLASS_$__HKFitnessFriendActivitySnapshot
+0x1ee1ad2a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKFitnessFriendObjectComparisonFilter
+0x1ef6351a0  __AUTH,__objc_data  _OBJC_CLASS_$__HKFitnessFriendWorkout
+0x1ef62f6c0  __AUTH,__objc_data  _OBJC_CLASS_$__HKFitnessMachine
+0x1ef632c38  __AUTH,__objc_data  _OBJC_CLASS_$__HKFitnessMachineConnection
+0x1ef631088  __AUTH,__objc_data  _OBJC_CLASS_$__HKFitnessMachineConnectionInitiator
+0x1ef62cde8  __AUTH,__objc_data  _OBJC_CLASS_$__HKFitnessMachineSessionConfiguration
+0x1ef632c10  __AUTH,__objc_data  _OBJC_CLASS_$__HKHeartRateRecoveryQueryUtility
+0x1ee1ad5a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKListUserDomainConceptComparisonFilter
+0x1ef62f698  __AUTH,__objc_data  _OBJC_CLASS_$__HKLocationShifter
+0x1ee1acdf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKMedicalHistoryRecordComparisonFilter
+0x1ef6361a8  __AUTH,__objc_data  _OBJC_CLASS_$__HKMedicalIDAllergy
+0x1ef636180  __AUTH,__objc_data  _OBJC_CLASS_$__HKMedicalIDCondition
+0x1ef639e70  __AUTH,__objc_data  _OBJC_CLASS_$__HKMedicalIDData
+0x1ef636158  __AUTH,__objc_data  _OBJC_CLASS_$__HKMedicalIDMedication
+0x1ee1ad938  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKMedicalRecordComparisonFilter
+0x1ee1ad578  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKMedicalUserDomainConceptComparisonFilter
+0x1ee1ad280  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKMedicationDoseEventComparisonFilter
+0x1ef632be8  __AUTH,__objc_data  _OBJC_CLASS_$__HKMobileAssetDownloadManager
+0x1ef63a1e0  __AUTH,__objc_data  _OBJC_CLASS_$__HKMulberryRecordSample
+0x1ee1ad910  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKObjectComparisonFilter
+0x1ef631060  __AUTH,__objc_data  _OBJC_CLASS_$__HKObjectTypeAnchor
+0x1ef631038  __AUTH,__objc_data  _OBJC_CLASS_$__HKObjectTypeAnchorQuery
+0x1ef63a2f8  __AUTH,__objc_data  _OBJC_CLASS_$__HKPredicateValidator
+0x1ef635150  __AUTH,__objc_data  _OBJC_CLASS_$__HKQuantityDistributionData
+0x1ef635128  __AUTH,__objc_data  _OBJC_CLASS_$__HKQuantityDistributionQuery
+0x1ee1ad8e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKQuantitySampleComparisonFilter
+0x1ef634278  __AUTH,__objc_data  _OBJC_CLASS_$__HKQueryUtilities
+0x1ee1ad8c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKSampleComparisonFilter
+0x1ef62ccf8  __AUTH,__objc_data  _OBJC_CLASS_$__HKSampleQueryUtility
+0x1ef632bc0  __AUTH,__objc_data  _OBJC_CLASS_$__HKSampleTypeQuery
+0x1ee1ad258  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKStateOfMindComparisonFilter
+0x1ee1ad230  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKUserAnnotatedMedicationComparisonFilter
+0x1ee1ad550  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKUserDomainConceptComparisonFilter
+0x1ee1ad208  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKVerifiableClinicalRecordComparisonFilter
+0x1ef62f620  __AUTH,__objc_data  _OBJC_CLASS_$__HKWeakObserversMap
+0x1ef639308  __AUTH,__objc_data  _OBJC_CLASS_$__HKWheelchairUseCharacteristicCache
+0x1ee1ad1e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKWorkoutActivityComparisonFilter
+0x1ef62cc58  __AUTH,__objc_data  _OBJC_CLASS_$__HKWorkoutBuilderSampleQueryConfiguration
+0x1ee1ad898  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKWorkoutComparisonFilter
+0x1ef62f5f8  __AUTH,__objc_data  _OBJC_CLASS_$__HKWorkoutEvent
+0x1ef636090  __AUTH,__objc_data  _OBJC_CLASS_$__HKWorkoutObserver
+0x1ef636068  __AUTH,__objc_data  _OBJC_CLASS_$__HKWorkoutObserverConfiguration
+0x1ef62f5d0  __AUTH,__objc_data  _OBJC_CLASS_$__HKWorkoutRouteStore
+0x1ef62f5a8  __AUTH,__objc_data  _OBJC_CLASS_$__HKWorkoutSessionSnapshot
+0x1ef62cc08  __AUTH,__objc_data  _OBJC_CLASS_$__HKXMLExtractor
+0x1ef62cb90  __AUTH,__objc_data  _OBJC_CLASS_$__HKXMLTranslator
+0x1ef62cb68  __AUTH,__objc_data  _OBJC_CLASS_$__HKXMLValidator
+0x1ef636040  __AUTH,__objc_data  _OBJC_CLASS_$__HKXPCAuditToken
+0x1ee1aee88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKXPCConnection
+0x1ef62f580  __AUTH,__objc_data  _OBJC_CLASS_$__HKZipArchiveEntry
+0x1ef62f558  __AUTH,__objc_data  _OBJC_CLASS_$__HKZipArchiveExtractor
+0x1ef62e890  __AUTH,__objc_data  _OBJC_CLASS_$__TtC9HealthKit15HKWorkoutMetric
+0x1ef62e7f0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC9HealthKit26HKWorkoutMetricsDataSource
+0x1ef62e778  __AUTH,__objc_data  _OBJC_CLASS_$__TtC9HealthKit39HKWorkoutMetricsDataSourceConfiguration
+0x1ef6356b8  __AUTH,__objc_data  _OBJC_CLASS_$___HKBridgedLocale
+0x1eb962e3c  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableCondensedWorkout._condenserDate
+0x1eb962e38  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableCondensedWorkout._condenserVersion
+0x1eb962e24  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableCondensedWorkout._creationDate
+0x1eb962e34  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableCondensedWorkout._duration
+0x1eb962e2c  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableCondensedWorkout._endDate
+0x1eb962e18  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableCondensedWorkout._has
+0x1eb962e1c  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableCondensedWorkout._persistentID
+0x1eb962e28  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableCondensedWorkout._startDate
+0x1eb962e30  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableCondensedWorkout._type
+0x1eb962e20  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableCondensedWorkout._uuid
+0x1eb962e40  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableCondensedWorkoutCollection._workouts
+0x1eb962e44  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableLocationCoordinate._has
+0x1eb962e48  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableLocationCoordinate._latitude
+0x1eb962e4c  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableLocationCoordinate._longitude
+0x1eb962e50  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableLocationCoordinateSeries._coordinates
+0x1eb962e54  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableLocationCoordinateSeries._has
+0x1eb962e58  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableLocationCoordinateSeries._resumeDate
+0x1eb962e64  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodablePluginSharableModelData._sourceLocaleIdentifier
+0x1eb962e60  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodablePluginSharableModelData._sourceTimeZoneIdentifier
+0x1eb962e5c  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodablePluginSharableModelData._userData
+0x1eb962e68  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeries._values
+0x1eb962e78  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesDatum._duration
+0x1eb962e6c  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesDatum._has
+0x1eb962e70  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesDatum._timeInterval
+0x1eb962e74  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesDatum._value
+0x1eb962e90  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesEnumerationResult._count
+0x1eb962e84  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesEnumerationResult._dataTypeCode
+0x1eb962e98  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesEnumerationResult._endTime
+0x1eb962e7c  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesEnumerationResult._has
+0x1eb962e80  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesEnumerationResult._persistentID
+0x1eb962ea4  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesEnumerationResult._quantitySample
+0x1eb962ea0  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesEnumerationResult._seriesIndex
+0x1eb962e9c  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesEnumerationResult._sourceID
+0x1eb962e94  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesEnumerationResult._startTime
+0x1eb962e88  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesEnumerationResult._uuid
+0x1eb962e8c  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesEnumerationResult._value
+0x1eb962eac  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesEnumerationResultCollection._has
+0x1eb962eb0  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesEnumerationResultCollection._latestSampleStartTime
+0x1eb962ea8  __DATA,__objc_ivar  OBJC_IVAR_$_HKCodableQuantitySeriesEnumerationResultCollection._results
+0x1eb962fac  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableKeyValue._key
+0x1eb962fb0  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableKeyValue._value
+0x1eb962fd8  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableMessageHeader._compressed
+0x1eb962fcc  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableMessageHeader._encryptedHMACKey
+0x1eb962fbc  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableMessageHeader._encryptedMessageKey
+0x1eb962fc0  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableMessageHeader._encryptionIdentity
+0x1eb962fb4  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableMessageHeader._has
+0x1eb962fc8  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableMessageHeader._studyIdentifier
+0x1eb962fdc  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableMessageHeader._studyUUID
+0x1eb962fd0  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableMessageHeader._trailingHMACLength
+0x1eb962fd4  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableMessageHeader._trailingSHALength
+0x1eb962fc4  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableMessageHeader._uploadUUID
+0x1eb962fb8  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableMessageHeader._version
+0x1eb962fe4  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableMessageKey._iv
+0x1eb962fe0  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableMessageKey._key
+0x1eb963004  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodablePayloadHeader._applicationData
+0x1eb962fe8  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodablePayloadHeader._channel
+0x1eb962ffc  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodablePayloadHeader._endDate
+0x1eb962ff4  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodablePayloadHeader._has
+0x1eb963008  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodablePayloadHeader._keyValuePairs
+0x1eb963000  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodablePayloadHeader._payloadIdentifier
+0x1eb962fec  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodablePayloadHeader._payloadType
+0x1eb962ff8  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodablePayloadHeader._startDate
+0x1eb962ff0  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodablePayloadHeader._subjectUUID
+0x1eb963014  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableValue._bytes
+0x1eb96300c  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableValue._has
+0x1eb96301c  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableValue._integer
+0x1eb963018  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableValue._string
+0x1eb963010  __DATA,__objc_ivar  OBJC_IVAR_$_HKHealthWrapCodableValue._type
+0x1eb965444  __DATA,__objc_ivar  OBJC_IVAR_$_HKIntegerSet._set
+0x1eb964138  __DATA,__objc_ivar  OBJC_IVAR_$_HKUnit._scaleOffset
+0x1eb965490  __DATA,__objc_ivar  OBJC_IVAR_$_HKWatchAppInstallationManager._queue
+0x1eb965958  __DATA,__objc_ivar  OBJC_IVAR_$_HKWorkout._duration
+0x1eb965968  __DATA,__objc_ivar  OBJC_IVAR_$_HKWorkout._goal
+0x1eb965964  __DATA,__objc_ivar  OBJC_IVAR_$_HKWorkout._goalType
+0x1eb96596c  __DATA,__objc_ivar  OBJC_IVAR_$_HKWorkout._isWatchWorkout
+0x1eb965950  __DATA,__objc_ivar  OBJC_IVAR_$_HKWorkout._workoutActivityType
+0x1eb965954  __DATA,__objc_ivar  OBJC_IVAR_$_HKWorkout._workoutEvents
+0x1eb965528  __DATA,__objc_ivar  OBJC_IVAR_$_HKWorkoutBuilder._currentActivity
+0x1eb96552c  __DATA,__objc_ivar  OBJC_IVAR_$_HKWorkoutBuilder._lock
+0x1ef62cb40  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAccountOwner
+0x1ef636018  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAccountOwnerType
+0x1ef630f48  __AUTH,__objc_data  _OBJC_METACLASS_$_HKActiveDataCollectionObserver
+0x1ef632ad0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKActivityCache
+0x1ef62f530  __AUTH,__objc_data  _OBJC_METACLASS_$_HKActivityGoalSchedule
+0x1ef635088  __AUTH,__objc_data  _OBJC_METACLASS_$_HKActivityMoveModeObject
+0x1ee1af2c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKActivitySummary
+0x1ee1acc68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKActivitySummaryQuery
+0x1ee1acdd0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKActivitySummaryQueryServerConfiguration
+0x1ee1ad870  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKActivitySummaryType
+0x1ef62cb18  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAdhocShardImportConfiguration
+0x1ef62caf0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAllConceptSelection
+0x1ef635ff0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAllergyReaction
+0x1ef635fc8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAllergyRecord
+0x1ef637490  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAllergyRecordType
+0x1ef637468  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAllowedCountries
+0x1ef632aa8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAnalyticsDataSource
+0x1ef632a80  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAnalyticsEnvironmentDataSource
+0x1ef632a58  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAnalyticsEventSubmissionManager
+0x1ee1acb50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKAnchoredObjectQuery
+0x1ef630f20  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAsynchronousOperation
+0x1ef62f508  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAttachment
+0x1ef62cac8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAttachmentBuilder
+0x1ef62caa0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAttachmentObjectIdentifierUtilities
+0x1ef62ca78  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAttachmentReference
+0x1ef62ca50  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAttachmentStore
+0x1ef62ca28  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAttributeConceptSelection
+0x1ef62ca00  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAudioAccessoryDevice
+0x1ef637440  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAudioExposureUtilities
+0x1ef62f4e0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAudioExposureValue
+0x1ef638610  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAudiogramSample
+0x1ee1acb28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKAudiogramSampleType
+0x1ef630ef8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAudiogramSensitivityPoint
+0x1ef630ed0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAudiogramSensitivityPointClampingRange
+0x1ef630ea8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAudiogramSensitivityTest
+0x1ef62c9d8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAuthorizationPresentationRequest
+0x1ef635fa0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAuthorizationRecordDataSource
+0x1ee1ae780  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKAuthorizationRequestRecord
+0x1ef6385e8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKAuthorizationStore
+0x1ef62c9b0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKBackgroundObservationExtension
+0x1ef630e80  __AUTH,__objc_data  _OBJC_METACLASS_$_HKBadge
+0x1ef62c988  __AUTH,__objc_data  _OBJC_METACLASS_$_HKBaseUserDomainConceptSemanticIdentifier
+0x1ef62c960  __AUTH,__objc_data  _OBJC_METACLASS_$_HKBeatToBeatInstantaneousBPM
+0x1ef63a0c8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKBilateralQuantitySample
+0x1ef62f4b8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKBilateralQuantityType
+0x1ef6392e0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKBiologicalSexObject
+0x1ef62f490  __AUTH,__objc_data  _OBJC_METACLASS_$_HKBirthDate
+0x1ef632a30  __AUTH,__objc_data  _OBJC_METACLASS_$_HKBirthDateType
+0x1ef63ba60  __AUTH,__data  _OBJC_METACLASS_$_HKBloodPressureClassificationCategoryData
+0x1ef63be18  __AUTH,__data  _OBJC_METACLASS_$_HKBloodPressureClassificationEvaluator
+0x1ef63bdf0  __AUTH,__data  _OBJC_METACLASS_$_HKBloodPressureClassificationManager
+0x1ef634228  __AUTH,__objc_data  _OBJC_METACLASS_$_HKBloodTypeObject
+0x1ef6385c0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKBluetoothDeviceDataSource
+0x1ef62c938  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCBPeripheral
+0x1ef62c910  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCDADocument
+0x1ef62f468  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCDADocumentSample
+0x1ef6392b8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCalendarCache
+0x1ef62f440  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCardioFitnessClassificationUtilities
+0x1ef63a3c0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCardioFitnessLegacyClassificationTable
+0x1ef62f418  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCardioFitnessLevelData
+0x1ef62f3f0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCardioFitnessLookupProperties
+0x1ef635f78  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCardioFitnessMedicationsUseObject
+0x1ef63a438  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCardioFitnessThresholdCoefficientRow
+0x1ef63a4b0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCardioFitnessThresholdModelSource
+0x1ef63a398  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCardioFitnessThresholds
+0x1ee1ae1e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKCategorySample
+0x1ee1ad528  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKCategoryType
+0x1ef634200  __AUTH,__objc_data  _OBJC_METACLASS_$_HKChangesSyncRequest
+0x1ee1aee38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKCharacteristicType
+0x1ef62c8e8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKChartableCodedQuantity
+0x1ef62c8c0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKChartableCodedQuantitySet
+0x1ef637418  __AUTH,__objc_data  _OBJC_METACLASS_$_HKClinicalBrand
+0x1ef62c898  __AUTH,__objc_data  _OBJC_METACLASS_$_HKClinicalCoding
+0x1ef62c870  __AUTH,__objc_data  _OBJC_METACLASS_$_HKClinicalCodingCollection
+0x1ef635f50  __AUTH,__objc_data  _OBJC_METACLASS_$_HKClinicalConnectedAccount
+0x1ef632a08  __AUTH,__objc_data  _OBJC_METACLASS_$_HKClinicalNoteRecord
+0x1ef6329e0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKClinicalNoteRecordType
+0x1ef62c848  __AUTH,__objc_data  _OBJC_METACLASS_$_HKClinicalRecord
+0x1ef639b00  __AUTH,__objc_data  _OBJC_METACLASS_$_HKClinicalType
+0x1ef62c820  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCloudSyncAccountInfo
+0x1ef635060  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCloudSyncControl
+0x1ef63c570  __AUTH,__data  _OBJC_METACLASS_$_HKCloudSyncManagerRecordTaskRecord
+0x1ef639e48  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCloudSyncObserver
+0x1ef639ad8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCloudSyncObserverStatus
+0x1ef638598  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCloudSyncRequest
+0x1ef6329b8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCloudSyncShareParticipantManager
+0x1ef62c7f8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCodableCondensedWorkout
+0x1ef62c7d0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCodableCondensedWorkoutCollection
+0x1ef630e58  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCodableLocationCoordinate
+0x1ef630e30  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCodableLocationCoordinateSeries
+0x1ef62f3c8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCodablePluginSharableModelData
+0x1ef632990  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCodableQuantitySeries
+0x1ef62f3a0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCodableQuantitySeriesDatum
+0x1ef635f28  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCodableQuantitySeriesEnumerationResult
+0x1ef635038  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCodableQuantitySeriesEnumerationResultCollection
+0x1ef62c7a8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCodedQuantity
+0x1ef62c780  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCodedValue
+0x1ef62c758  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCodedValueCollection
+0x1ef62c730  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCompoundConceptSelection
+0x1ef6341d8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKConcept
+0x1ef632968  __AUTH,__objc_data  _OBJC_METACLASS_$_HKConceptAttribute
+0x1ef6373f0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKConceptAuthorizationPromptSessionContext
+0x1ef6373c8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKConceptAuthorizationRecord
+0x1ef638570  __AUTH,__objc_data  _OBJC_METACLASS_$_HKConceptIdentifier
+0x1ef635010  __AUTH,__objc_data  _OBJC_METACLASS_$_HKConceptRelationship
+0x1ef62c6e0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKConceptResolutionDefinition
+0x1ef62c6b8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKConceptSelection
+0x1ef635ed8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKConceptStore
+0x1ef634fe8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKConceptStoreServerConfiguration
+0x1ef62f378  __AUTH,__objc_data  _OBJC_METACLASS_$_HKConceptSynthesizer
+0x1ef635eb0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKConditionRecord
+0x1ef6373a0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKConditionRecordType
+0x1ef62c690  __AUTH,__objc_data  _OBJC_METACLASS_$_HKContactsLensSpecification
+0x1ef62c668  __AUTH,__objc_data  _OBJC_METACLASS_$_HKContactsPrescription
+0x1ef6341b0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKContextSyncRequest
+0x1ee1adc58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKContributor
+0x1ef630e08  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCoreTelephonyClient
+0x1ef630de0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCoreTelephonySatelliteClient
+0x1ef634188  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCorrelation
+0x1ef630db8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCorrelationQuery
+0x1ef639290  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCorrelationType
+0x1ef634160  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCountryMonitorControl
+0x1ef635e88  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCountrySet
+0x1ef630d68  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCoverageClassification
+0x1ef635e60  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCoverageRecord
+0x1ef637378  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCoverageRecordType
+0x1ef639268  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCumulativeQuantitySample
+0x1ef62c640  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCumulativeQuantitySeriesSample
+0x1ef630d40  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCurrentActivityCacheQuery
+0x1ef62c618  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCurrentActivityCacheQueryResult
+0x1ef62c5f0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCurrentActivityCacheQueryServerConfiguration
+0x1ef632940  __AUTH,__objc_data  _OBJC_METACLASS_$_HKCurrentLocaleCountryCodeProvider
+0x1ee1af560  __DATA_DIRTY,__data  _OBJC_METACLASS_$_HKCyclingPowerZonesConfigurationWrapper
+0x1ef632918  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDaemonConnection
+0x1ef6328f0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDaemonProxyProvider
+0x1ef637350  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDaemonTransaction
+0x1ef638548  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDarwinNotificationDataSource
+0x1ef634fc0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDataCollector
+0x1ef634f98  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDataCollectorCollectionConfiguration
+0x1ef634138  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDataCollectorState
+0x1ef634f70  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDataCollectorTaskServerConfiguration
+0x1ef62f350  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDataFlowLink
+0x1ef63a1b8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDataTypeAccessReport
+0x1ef63a168  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDataTypeAccessReportEntry
+0x1ef63a348  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDataTypeAccessStore
+0x1ef638520  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDatabaseAccessibilityAssertion
+0x1ee1af530  __DATA_DIRTY,__data  _OBJC_METACLASS_$_HKDatabaseAccessibilityAssertionStore
+0x1ee1af508  __DATA_DIRTY,__data  _OBJC_METACLASS_$_HKDatabaseAccessibilityAssertionStoreKeeper
+0x1ef6328c8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDatabaseControl
+0x1ef62c5c8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDatabaseValidation
+0x1ef637328  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDateInterval
+0x1ef6328a0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDateIntervalTree
+0x1ef62f328  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDebugStore
+0x1ef639df8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDeletedObject
+0x1ee1add20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKDevice
+0x1ef632878  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDeviceContext
+0x1ef632850  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDeviceContextStore
+0x1ef630cf0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDeviceKeyValueStorageEntry
+0x1ef632828  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDeviceKeyValueStorageGroup
+0x1ef632800  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDeviceKeyValueStore
+0x1ef6327d8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDeviceKeyValueStoreTaskConfiguration
+0x1ef630cc8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDeviceQuery
+0x1ef6327b0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDeviceStore
+0x1ef630ca0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDiagnosticStore
+0x1ef635e38  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDiagnosticTestReport
+0x1ef637300  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDiagnosticTestReportType
+0x1ef635e10  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDiagnosticTestResult
+0x1ef6372d8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDiagnosticTestResultType
+0x1ee1acc40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKDiscreteQuantitySample
+0x1ef630c78  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDocumentQuery
+0x1ef6372b0  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDocumentSample
+0x1ef639a88  __AUTH,__objc_data  _OBJC_METACLASS_$_HKDocumentType
+0x1ef62c578  __AUTH,__objc_data  _OBJC_METACLASS_$_HKEADFFileParser
+0x1ef62c550  __AUTH,__objc_data  _OBJC_METACLASS_$_HKECGAvailabilityEngine
+0x1ef62c528  __AUTH,__objc_data  _OBJC_METACLASS_$_HKECGAvailabilityResult
+0x1ef632788  __AUTH,__objc_data  _OBJC_METACLASS_$_HKECGOnboardingVersion
+0x1ef634110  __AUTH,__objc_data  _OBJC_METACLASS_$_HKElectrocardiogram
+0x1ef632760  __AUTH,__objc_data  _OBJC_METACLASS_$_HKElectrocardiogramActiveAlgorithmVersion
+0x1ef62c4d8  __AUTH,__objc_data  _OBJC_METACLASS_$_HKElectrocardiogramBuilder
+```
+First 3,000 of 4,058.
+
+## Private
+
+```
+0x193fa26a0  __TEXT,__text  -[HKDaemonTransaction _initWithName:]
+0x193fa2768  __TEXT,__text  -[HKNanoSyncPairedDevicesSnapshot .cxx_destruct]
+0x193fa27a0  __TEXT,__text  -[_HKExpiringCompletionTimer dealloc]
+0x193fa2800  __TEXT,__text  -[_HKExpiringCompletionTimer .cxx_destruct]
+0x193fa2868  __TEXT,__text  -[HKObserverSet .cxx_destruct]
+0x193fa28b8  __TEXT,__text  -[HKDaemonTransaction dealloc]
+0x193fa2934  __TEXT,__text  -[HKDaemonTransaction .cxx_destruct]
+0x193fa29a4  __TEXT,__text  +[NSError(HealthKit) hk_assignError:code:description:]
+0x193fa2a04  __TEXT,__text  -[_HKBehavior features]
+0x193fa2b20  __TEXT,__text  std::__1::__function::__func<_HKFeatureFlags*  block_pointer __strong(), _HKFeatureFlags* ()>::destroy()
+0x193fa2b2c  __TEXT,__text  std::__1::__function::__func<bool  block_pointer __strong(), bool ()>::destroy()
+0x193fa2c10  __TEXT,__text  -[_HKFeatureFlags databaseSemaphoreLogging]
+0x193fa2d18  __TEXT,__text  -[_HKFeatureFlags databaseStateCacheTransactionScoped]
+0x193fa2e20  __TEXT,__text  +[HKHealthStoreImplementation healthStoreImplementationFor:sourceBundle:endpoint:shared:]
+0x193fa32dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa32fc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3310  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3324  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa333c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa333c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3350  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3350  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3350  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3350  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3350  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3368  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3388  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa3388  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa3388  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa3388  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa3388  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa3388  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa3388  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa3388  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa3388  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa3388  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fa33a8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa33c0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa33c0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa33c0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa33d0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa33f0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3418  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3440  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa3440  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa3440  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa3440  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa3440  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa3458  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3464  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3484  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3484  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3484  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3484  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3484  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3484  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3484  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3498  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa34b8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa34d8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa34d8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa34d8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa34d8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa34e8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa34fc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa350c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa352c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa354c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa354c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa354c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa354c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa354c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa354c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa354c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa3558  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3580  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa35a0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa35c0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa35dc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa35fc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3604  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3624  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3644  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3664  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3684  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa36a4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa36c4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa36e4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3704  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3724  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3744  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3764  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3784  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa37a4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa37c4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa37e4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3804  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3824  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3834  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3850  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3870  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa388c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa38ac  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa38cc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa38f4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3914  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3924  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3940  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3960  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3980  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa39a0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa39c0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa39e0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3a00  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3a0c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3a2c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3a48  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3a68  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3a88  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3aa8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3ac8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3ae8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3b08  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3b28  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3b48  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3b68  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3b88  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3ba8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3bc8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3bf0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3c10  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3c30  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3c58  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3c80  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3ca0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3cc8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3cdc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3d04  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3d24  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3d44  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3d64  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3d84  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3da4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3dc4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3dd8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3df8  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3e18  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3e28  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3e48  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3e70  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3e9c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3eb0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3ec4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3ee4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3f04  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3f24  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3f44  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3f5c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3f70  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3f90  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x193fa3fe4  __TEXT,__text  _HKLogInfrastructure.cold.1
+0x193fa3ff8  __TEXT,__text  __HKInitializeLogging.cold.1
+0x193fa3ff8  __TEXT,__text  __HKInitializeLogging.cold.1
+0x193fa3ffc  __TEXT,__text  +[HKObjectType _typeCodeForIdentifier:]
+0x193fa40d8  __TEXT,__text  +[HKObjectType _lock_dataTypeWithCode:expectedClass:]
+0x193fa4274  __TEXT,__text  -[HKProxyProvider initWithSource:serviceIdentifier:exportedObject:exportedInterface:remoteInterface:]
+0x193fa4410  __TEXT,__text  ___68-[HKHealthStoreImplementation _serverProxyWithHandler:errorHandler:]_block_invoke
+0x193fa45d0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa45e4  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x193fa45e4  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x193fa45e4  __TEXT,__text  _OUTLINED_FUNCTION_7
+0x193fa45f4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa4608  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa4608  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa461c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa4634  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa4648  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa4654  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa4660  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa4660  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa4674  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x193fa4674  __TEXT,__text  _OUTLINED_FUNCTION_11
+0x193fa4680  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa469c  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x193fa469c  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x193fa469c  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x193fa469c  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x193fa469c  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x193fa46ac  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa46c8  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa46c8  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa46dc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa46f4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa4704  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa4724  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa4724  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa4724  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa4724  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa4724  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa4734  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa4740  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa474c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa4760  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa4780  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa4780  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa478c  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa47a0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa47b4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa47d4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa47e4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa47fc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x193fa480c  __TEXT,__text  -[HKHealthStore init]
+0x193fa4818  __TEXT,__text  -[_HKBehavior init]
+0x193fa48b8  __TEXT,__text  -[_HKBehavior _setSharedBehaviors]
+0x193fa49cc  __TEXT,__text  -[HKHealthStore initWithListenerEndpoint:debugIdentifier:]
+0x193fa4b64  __TEXT,__text  +[_HKBehavior sharedBehavior]
+0x193fa4be0  __TEXT,__text  -[_HKBehavior _initializeDeviceType]
+0x193fa4c10  __TEXT,__text  -[_HKBehavior .cxx_construct]
+0x193fa4c64  __TEXT,__text  +[_HKBehavior _isAppleInternalInstall]
+0x193fa4da0  __TEXT,__text  +[HKHealthStore isHealthDataAvailable]
+0x193fa4e18  __TEXT,__text  -[_HKBehavior setFeatureRequirementOverrides:]
+0x193fa4e20  __TEXT,__text  -[_HKBehavior _setDeviceSpecificBehaviors]
+0x193fa4fd4  __TEXT,__text  -[_HKBehavior isAppleWatch]
+0x193fa4fe4  __TEXT,__text  -[_HKBehavior isIPhone]
+0x193fa4ff4  __TEXT,__text  std::__1::__function::__func<_HKFeatureFlags*  block_pointer __strong(), _HKFeatureFlags* ()>::operator()()
+0x193fa5004  __TEXT,__text  ___HKLogInfrastructure_block_invoke
+0x193fa5034  __TEXT,__text  ___HKDispatchAsyncOnGlobalConcurrentQueue_block_invoke
+0x193fa5074  __TEXT,__text  ___38+[_HKBehavior _isAppleInternalInstall]_block_invoke
+0x193fa50ec  __TEXT,__text  ____HKInitializeLogging_block_invoke
+0x193fa52d8  __TEXT,__text  ___37+[HKProfileIdentifier primaryProfile]_block_invoke
+0x193fa5348  __TEXT,__text  +[HKProfileIdentifier primaryProfile]
+0x193fa5380  __TEXT,__text  +[HKProfileIdentifier primaryProfile].cold.1
+0x193fa5394  __TEXT,__text  -[HKProfileIdentifier _init]
+0x193fa53cc  __TEXT,__text  -[_HKBehavior isRealityDevice]
+0x193fa53dc  __TEXT,__text  -[_HKBehavior isiPad]
+0x193fa53ec  __TEXT,__text  -[_HKBehavior isDeviceSupported]
+0x193fa53f4  __TEXT,__text  ___23-[_HKBehavior features]_block_invoke
+0x193fa5418  __TEXT,__text  -[_HKFeatureFlags .cxx_construct]
+0x193fa554c  __TEXT,__text  -[_HKFeatureFlags hoplite]
+0x193fa5654  __TEXT,__text  std::__1::__function::__func<bool  block_pointer __strong(), bool ()>::operator()()
+0x193fa5664  __TEXT,__text  ___26-[_HKFeatureFlags hoplite]_block_invoke
+0x193fa5678  __TEXT,__text  -[HKObserverSet _registerObserver:queue:runIfFirstObserver:]
+0x193fa57d0  __TEXT,__text  -[HKObserverSet registerObserver:]
+0x193fa57e0  __TEXT,__text  -[HKObserverSet notifyObserver:handler:]
+0x193fa5874  __TEXT,__text  ___47-[HKObserverSet _notifyObserver:queue:handler:]_block_invoke
+0x193fa5888  __TEXT,__text  -[HKHealthStoreConfiguration initWithCoder:]
+0x193fa5a98  __TEXT,__text  -[HKObserverSet registerObserver:queue:]
+0x193fa5aa8  __TEXT,__text  -[HKObserverSet unregisterObserver:]
+0x193fa5ab4  __TEXT,__text  -[HKObserverSet _notifyObserver:queue:handler:]
+0x193fa5b7c  __TEXT,__text  ___56-[NSDictionary(HealthKit) hk_filteredDictionaryForKeys:]_block_invoke
+0x193fa5be4  __TEXT,__text  -[_HKXPCAuditToken copyWithZone:]
+0x193fa5be8  __TEXT,__text  -[HKObserverSet _unregisterObserver:runIfLastObserver:]
+0x193fa5ca8  __TEXT,__text  -[HKHealthStoreImplementation _lock_connectionWithError:]
+0x193fa5de4  __TEXT,__text  -[HKHealthStoreImplementation _wrappedErrorHandler:proxy:]
+0x193fa5eb0  __TEXT,__text  -[HKHealthStoreImplementation healthStoreConfiguration]
+0x193fa5ec4  __TEXT,__text  -[HKHealthStoreConfiguration encodeWithCoder:]
+0x193fa5fcc  __TEXT,__text  -[HKProfileIdentifier encodeWithCoder:]
+0x193fa602c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa603c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa604c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa605c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa606c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa607c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa608c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa609c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa60ac  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa60bc  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa60cc  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa60dc  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa60ec  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa60fc  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa610c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa611c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa612c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa613c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa614c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa615c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa616c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa6198  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa61c4  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa61f0  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa6200  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa6210  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa6220  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa6230  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa6240  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa626c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa627c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa628c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa629c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa62ac  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa62bc  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa62cc  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa62dc  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa62ec  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa62fc  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa630c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa631c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa632c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa633c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa634c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa635c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa636c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa637c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa638c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa639c  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa63ac  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa63bc  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa63cc  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa63dc  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa6408  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa6434  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa6444  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa6454  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa6464  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa6474  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa6484  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa6494  __TEXT,__text  ___Block_byref_object_copy_
+0x193fa64a4  __TEXT,__text  -[HKHealthStoreImplementation _synchronousServerProxyWithErrorHandler:]
+0x193fa67b8  __TEXT,__text  -[HKHealthStoreImplementation remoteInterface]
+0x193fa67f4  __TEXT,__text  ___HKHealthStoreEndpointInterface_block_invoke
+0x193fa6874  __TEXT,__text  _HKHealthStoreEndpointInterface.cold.1
+0x193fa6888  __TEXT,__text  _HKHealthStoreServerInterface.cold.1
+0x193fa689c  __TEXT,__text  ___HKHealthStoreServerInterface_block_invoke
+0x193fa70c8  __TEXT,__text  ___HKHealthStoreClientInterface_block_invoke
+0x193fa7104  __TEXT,__text  ___73-[HKHealthStoreImplementation initWithHealthStore:sourceBundle:endpoint:]_block_invoke
+0x193fa7110  __TEXT,__text  -[HKHealthStoreImplementation _connectionQueue_setUpWithEndpoint:]
+0x193fa7244  __TEXT,__text  -[HKHealthStoreImplementation exportedInterface]
+0x193fa7248  __TEXT,__text  _HKHealthStoreClientInterface.cold.1
+0x193fa725c  __TEXT,__text  +[HKHealthStoreIdentifier primaryStoreIdentifier]
+0x193fa72f0  __TEXT,__text  _HKApplicationSDKVersionToken.cold.1
+0x193fa7304  __TEXT,__text  +[HKHealthStoreImplementation requireExplicitSystemMachServiceEnablement]
+0x193fa7348  __TEXT,__text  -[_HKBehavior isAppleInternalInstall]
+0x193fa7350  __TEXT,__text  ___49+[HKHealthStoreIdentifier primaryStoreIdentifier]_block_invoke
+0x193fa7380  __TEXT,__text  ___HKApplicationSDKVersionToken_block_invoke
+0x193fa73a0  __TEXT,__text  -[NSXPCInterface(HealthKit) hk_setArrayOfClass:forSelector:argumentIndex:ofReply:]
+0x193fa7408  __TEXT,__text  -[NSXPCInterface(HealthKit) _cachedSetForArrayOfClass:]
+0x193fa74d4  __TEXT,__text  -[HKHealthStoreImplementation clientQueue]
+0x193fa74e8  __TEXT,__text  -[HKHealthStoreImplementation daemonLaunchDarwinNotificationName]
+0x193fa74fc  __TEXT,__text  -[HKProfileIdentifier copyWithZone:]
+0x193fa7548  __TEXT,__text  _HKIsUnitTesting.cold.1
+0x193fa755c  __TEXT,__text  -[HKHealthStoreImplementation initWithHealthStore:sourceBundle:endpoint:]
+0x193fa7a14  __TEXT,__text  ___HKIsUnitTesting_block_invoke
+0x193fa7a64  __TEXT,__text  -[HKHealthStore initForHKHealthStoreImplementation]
+0x193fa7a9c  __TEXT,__text  -[HKHealthStore implementation]
+0x193fa7b74  __TEXT,__text  +[HKObjectType _dataTypeWithCode:expectedClass:]
+0x193fa7c10  __TEXT,__text  +[HKHealthStore requireExplicitSystemMachServiceEnablement]
+0x193fa7c1c  __TEXT,__text  -[HKHealthStore _faultIfInappropriateHost]
+0x193fa7e00  __TEXT,__text  +[HKObjectType _typeWithIdentifier:expectedClass:]
+0x193fa7e50  __TEXT,__text  ___copy_constructor_8_8_s0_s8_s16_s24_s32_t40w4
+0x193fa7eb8  __TEXT,__text  -[HKObjectType _initWithCode:]
+0x193fa7f04  __TEXT,__text  ___destructor_8_s0_s8_s16_s24_s32
+0x193fa7f4c  __TEXT,__text  +[HKObjectType categoryTypeForIdentifier:]
+0x193fa7fb0  __TEXT,__text  -[HKHealthStore healthStoreConfiguration]
+0x193fa8090  __TEXT,__text  -[_HKBehavior currentDeviceClass]
+0x193fa80c8  __TEXT,__text  -[HKHealthStore authorizationStatusForType:]
+0x193fa8120  __TEXT,__text  -[HKHealthStoreImplementation authorizationStatusForType:]
+0x193fa82f8  __TEXT,__text  -[_HKFeatureFlags simplifiedLogging]
+0x193fa8410  __TEXT,__text  -[_HKFeatureFlags omakase]
+0x193fa8588  __TEXT,__text  -[_HKMedicalIDData allergiesList]
+0x193fa8590  __TEXT,__text  -[_HKMedicalIDData conditionsList]
+0x193fa8630  __TEXT,__text  -[HKProfileIdentifier description]
+0x193fa8768  __TEXT,__text  -[HKDeviceKeyValueStoreTaskConfiguration copyWithZone:]
+0x193fa87c4  __TEXT,__text  -[HKDeviceKeyValueStoreTaskConfiguration .cxx_destruct]
+0x193fa87d8  __TEXT,__text  +[HKObjectType _typeWithIdentifier:]
+0x193fa87e0  __TEXT,__text  -[_HKMedicalIDData birthdate]
+0x193fa87e8  __TEXT,__text  -[_HKMedicalIDData weight]
+0x193fa87f0  __TEXT,__text  -[_HKMedicalIDData medicalConditions]
+0x193fa87f8  __TEXT,__text  -[_HKMedicalIDData shareDuringEmergency]
+0x193fa8800  __TEXT,__text  -[HKHealthStore profileIdentifier]
+0x193fa8884  __TEXT,__text  -[HKDatabaseAccessibilityAssertion isValid]
+0x193fa888c  __TEXT,__text  -[HKCloudSyncControl exportedInterface]
+0x193fa88a4  __TEXT,__text  -[HKCloudSyncControl remoteInterface]
+0x193fa8b10  __TEXT,__text  -[HKUnitPreferenceController initWithHealthStore:]
+0x193fa8b4c  __TEXT,__text  -[HKUnitPreferenceController _initWithHealthStore:completion:]
+0x193fa8c34  __TEXT,__text  +[HKHealthChecklistUtilities shared]
+0x193fa8c58  __TEXT,__text  -[HKUnitPreferenceController _initHKUnitPreferencesWithCompletion:]
+0x193fa8ccc  __TEXT,__text  -[HKUnitPreferenceController _generateDefaultHKUnitPreferences]
+0x193fa9240  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa9258  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa9284  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa9284  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa9294  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x193fa9294  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x193fa92ac  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa92c0  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa92c0  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa92cc  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa92d8  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa92e4  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x193fa92e4  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x193fa92f0  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa92f0  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa9304  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x193fa930c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x193fa930c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x193faa430  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x193faa444  __TEXT,__text  _OUTLINED_FUNCTION_9
+0x193faa450  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x193faa468  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x193faa474  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x193faa480  __TEXT,__text  -[HKUnitPreferenceController _fetchHKUnitPreferencesWithAttempt:completion:]
+0x193faa52c  __TEXT,__text  -[HKUnitPreferenceController _refreshHKUnitPreferencesWithCompletion:]
+0x193faa698  __TEXT,__text  +[HKUnit degreeAngleUnit]
+0x193faa6ac  __TEXT,__text  -[HKCalendarCache init]
+0x193faa710  __TEXT,__text  +[HKQuery configurationClass]
+0x193faa71c  __TEXT,__text  ___71-[HKHealthStoreImplementation _synchronousServerProxyWithErrorHandler:]_block_invoke_2
+0x193faa814  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa81c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa824  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa82c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa834  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa83c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa844  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa84c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa854  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa85c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa864  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa86c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa874  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa87c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa884  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa88c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa894  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa89c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa8a4  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa8ac  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa8b4  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa8bc  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa8c4  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa8cc  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa8d4  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa8dc  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa8e4  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa8ec  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa8f4  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa8fc  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa904  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa90c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa914  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa91c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa924  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa92c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa934  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa93c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa944  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa94c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa954  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa95c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa964  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa96c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa974  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa97c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa984  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa98c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa994  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa99c  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa9a4  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa9ac  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa9b4  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa9bc  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa9c4  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa9cc  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa9d4  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa9dc  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa9e4  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa9ec  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa9f4  __TEXT,__text  ___Block_byref_object_dispose_
+0x193faa9fc  __TEXT,__text  -[NSSet(HealthKit) hk_map:]
+0x193faab64  __TEXT,__text  ___71-[HKHealthStoreImplementation _synchronousServerProxyWithErrorHandler:]_block_invoke
+0x193faac38  __TEXT,__text  -[HKCalendarCache calendarForTimeZone:]
+0x193faad34  __TEXT,__text  -[HKCalendarCache .cxx_destruct]
+0x193faad6c  __TEXT,__text  +[HKSampleQuery configurationClass]
+0x193faaef4  __TEXT,__text  -[HKQuantityType(DefaultUnit) defaultUnitForLocale:version:]
+0x193fab528  __TEXT,__text  -[HKHealthStoreImplementation preferredUnitsForQuantityTypes:completion:]
+0x193fab590  __TEXT,__text  ___81-[HKHealthStoreImplementation preferredUnitsForQuantityTypes:version:completion:]_block_invoke
+0x193fab5a0  __TEXT,__text  -[HKObjectType identifier]
+0x193fab608  __TEXT,__text  -[HKQuantityType canonicalUnit]
+0x193fab690  __TEXT,__text  +[HKObjectType seriesTypeForIdentifier:]
+0x193fab764  __TEXT,__text  -[_HKWheelchairUseCharacteristicCache initWithHealthStore:]
+0x193fab76c  __TEXT,__text  ___63-[_HKWheelchairUseCharacteristicCache _lock_fetchWheelchairUse]_block_invoke
+0x193fab840  __TEXT,__text  -[HKHealthStore wheelchairUseWithError:]
+0x193fab888  __TEXT,__text  -[_HKWheelchairUseCharacteristicCache _lock_fetchWheelchairUse]
+0x193fab914  __TEXT,__text  -[HKHealthChecklistUtilities isMedicalIDAvailable]
+0x193fab970  __TEXT,__text  -[HKQuery queue_populateConfiguration:]
+0x193faba04  __TEXT,__text  -[HKObjectType encodeWithCoder:]
+0x193faba58  __TEXT,__text  -[HKObjectType code]
+0x193faba60  __TEXT,__text  +[HKQuery serverInterface]
+0x193fabb00  __TEXT,__text  +[HKQuery _cachedInterfaceForProtocol:configurationHandler:]
+0x193fabbf4  __TEXT,__text  +[HKQuery serverInterfaceProtocol]
+0x193fabc00  __TEXT,__text  -[HKQuantityType .cxx_destruct]
+0x193fabc14  __TEXT,__text  -[_HKAuthorizationRecord .cxx_destruct]
+0x193fabc4c  __TEXT,__text  -[HKQuery initWithQueryDescriptors:]
+0x193fabcfc  __TEXT,__text  -[HKQuery _initWithObjectType:predicate:]
+0x193fabde0  __TEXT,__text  -[HKQuery _filterForPredicate:objectType:]
+0x193fabf50  __TEXT,__text  ___72-[HKQuery activateWithClientQueue:healthStore:delegate:time:completion:]_block_invoke.86
+0x193fac15c  __TEXT,__text  -[HKObjectType copyWithZone:]
+0x193fac160  __TEXT,__text  -[HKObjectType .cxx_destruct]
+0x193fac16c  __TEXT,__text  +[HKObjectType dataTypeWithCode:]
+0x193fac174  __TEXT,__text  -[HKObjectType _definition]
+0x193fac194  __TEXT,__text  ___113-[HKQueryServerProxyProvider fetchProxyServiceEndpointFromSource:serviceIdentifier:endpointHandler:errorHandler:]_block_invoke
+0x193fac298  __TEXT,__text  -[HKQuery _queue_activateWithHealthStore:activationUUID:isReactivating:completion:]
+0x193fac56c  __TEXT,__text  -[HKTaskServerProxyProvider initWithHealthStore:taskIdentifier:exportedObject:exportedInterface:remoteInterface:taskUUID:]
+0x193fac64c  __TEXT,__text  -[HKQuery description]
+0x193fac8f8  __TEXT,__text  -[HKQuery queue_validate]
+0x193fac8fc  __TEXT,__text  -[HKQueryServerConfiguration copyWithZone:]
+0x193fac9ec  __TEXT,__text  -[HKTaskConfiguration copyWithZone:]
+0x193faca08  __TEXT,__text  -[HKQueryServerConfiguration init]
+0x193facaac  __TEXT,__text  -[HKQueryServerConfiguration .cxx_destruct]
+0x193facb08  __TEXT,__text  -[_HKSampleQueryConfiguration copyWithZone:]
+0x193facbc8  __TEXT,__text  -[_HKSampleQueryConfiguration .cxx_destruct]
+0x193facc10  __TEXT,__text  -[HKSortedSampleArray init]
+0x193facc8c  __TEXT,__text  -[HKSortedSampleArray setSortDescriptor:]
+0x193facc98  __TEXT,__text  +[HKObjectType quantityTypeForIdentifier:]
+0x193faccfc  __TEXT,__text  ____HKBaseUnitGrammar_block_invoke_2
+0x193facd44  __TEXT,__text  ____HKBaseUnitGrammar_block_invoke_10
+0x193facd58  __TEXT,__text  +[HKBaseUnit _uniquedRootUnit:]
+0x193facf04  __TEXT,__text  +[HKBaseUnit _uniquedRootUnitFromDefinition:]
+0x193fad020  __TEXT,__text  ___72-[_HKCFGNonTerminal _tryNodesForExpressions:nodes:context:solutionTest:]_block_invoke
+0x193fad098  __TEXT,__text  -[HKHealthStoreImplementation _serverProxyWithHandler:errorHandler:]
+0x193fad198  __TEXT,__text  -[HKQueryServerConfiguration setObjectType:]
+0x193fad1a4  __TEXT,__text  -[HKObjectType hash]
+0x193fad1dc  __TEXT,__text  -[HKQuantityType _initWithCode:]
+0x193fad228  __TEXT,__text  +[HKUnit unitFromString:]
+0x193fad3a0  __TEXT,__text  +[_HKCFGReplacementRule ruleWithLHS:RHS:nodeEvaluator:]
+0x193fad77c  __TEXT,__text  +[_HKContextFreeGrammar grammarWithRootNonTerminal:emptyStringEvaluator:]
+0x193fad7e0  __TEXT,__text  -[_HKCFGNonTerminal _checkForCycles]
+0x193fad830  __TEXT,__text  ____HKBaseUnitGrammar_block_invoke
+0x193fadf2c  __TEXT,__text  +[_HKCFGNonTerminal nonTerminalWithLabel:]
+0x193fadf74  __TEXT,__text  +[_HKCFGTerminal terminalMatchingIntegerWithCondition:]
+0x193fadf78  __TEXT,__text  +[_HKFactorization factorizationFromString:factorGrammar:]
+0x193fae3b0  __TEXT,__text  +[_HKCFGTerminalNode nodeWithValue:rangeOfString:]
+0x193fae414  __TEXT,__text  -[_HKCFGNode initWithRangeOfString:]
+0x193fae464  __TEXT,__text  +[_HKCFGNonTerminalNode nodeWithChildren:rule:rangeOfString:]
+0x193fae4f8  __TEXT,__text  -[_HKCFGNonTerminalNode evaluate]
+0x193fae55c  __TEXT,__text  +[HKBaseUnit _rootUnitWithDefinition:]
+0x193fae5dc  __TEXT,__text  -[HKBaseUnit _initWithUnitString:proportionalSize:scaleOffset:]
+0x193fae664  __TEXT,__text  -[HKUnit _init]
+0x193fae6a4  __TEXT,__text  -[HKBaseUnit hash]
+0x193fae6ac  __TEXT,__text  __HKBaseUnitGrammar
+0x193fae6e4  __TEXT,__text  -[_HKCFGNonTerminal _tryNodesForExpressions:nodes:context:solutionTest:]
+0x193fae898  __TEXT,__text  -[HKRemoteFeatureAvailabilityWatchOSVersionLessThanRule setTargetVersion:]
+0x193fae8b8  __TEXT,__text  -[HKRemoteFeatureAvailabilityBaseRule initWithRawValue:dataSource:]
+0x193fae96c  __TEXT,__text  -[HKRemoteFeatureAvailabilityIOSBuildVersionGreaterThanRule processUserInfo:]
+0x193fae9c4  __TEXT,__text  -[HKRemoteFeatureAvailabilityIOSVersionLessThanRule processUserInfo:]
+0x193faebf4  __TEXT,__text  ___HKNSOperatingSystemVersionFromString_block_invoke
+0x193faec2c  __TEXT,__text  -[HKRemoteFeatureAvailabilityIOSVersionLessThanRule setTargetVersion:]
+0x193faec4c  __TEXT,__text  -[HKRemoteFeatureAvailabilityIOSBuildVersionLessThanRule processUserInfo:]
+0x193faeca4  __TEXT,__text  -[HKRemoteFeatureAvailabilityWatchOSBuildVersionGreaterThanRule processUserInfo:]
+0x193faecfc  __TEXT,__text  -[HKRemoteFeatureAvailabilityWatchOSBuildVersionLessThanRule processUserInfo:]
+0x193faed54  __TEXT,__text  +[HKCountryMonitorControl checkCurrentCountry]
+0x193faeda0  __TEXT,__text  +[_HKBehavior _currentOSVersion]
+0x193faedc8  __TEXT,__text  -[NSError(HealthKit) hk_isHealthKitErrorWithCode:]
+0x193faee04  __TEXT,__text  -[NSObject(HealthKit) hk_safeDictionaryForKeyPath:error:]
+0x193faee84  __TEXT,__text  -[HKFeatureAvailabilityOnboardingCompletionEligibility initWithOnboardingCompletion:onboardingEligibility:]
+0x193faef20  __TEXT,__text  -[HKRegulatoryDomainManager currentEstimate].cold.1
+0x193faef98  __TEXT,__text  -[HKRegulatoryDomainManager currentEstimate]
+0x193faf208  __TEXT,__text  ___33-[HKRegulatoryDomainManager init]_block_invoke
+0x193faf214  __TEXT,__text  -[HKRegulatoryDomainManager init]
+0x193faf220  __TEXT,__text  ___44-[HKRegulatoryDomainManager currentEstimate]_block_invoke
+0x193faf234  __TEXT,__text  -[HKRegulatoryDomainEstimate initWithEstimate:]
+0x193faf32c  __TEXT,__text  -[HKRegulatoryDomainManager .cxx_destruct]
+0x193faf338  __TEXT,__text  ___62+[HKCountryMonitorControl checkCurrentCountryWithHealthStore:]_block_invoke
+0x193faf3f8  __TEXT,__text  -[HKCountryMonitorControl dealloc]
+0x193faf494  __TEXT,__text  -[HKCountryMonitorControl .cxx_destruct]
+0x193faf4a0  __TEXT,__text  ___86-[HKCountryMonitorControl fetchCurrentISOCountryCodeAndNotifyObserversWithCompletion:]_block_invoke_2
+0x193faf4c4  __TEXT,__text  -[HKHealthStoreImplementation dealloc]
+0x193faf578  __TEXT,__text  -[HKHealthStoreImplementation .cxx_destruct]
+0x193faf7c4  __TEXT,__text  -[HKBluetoothDeviceDataSource _devicesWithError:]
+0x193faf8a4  __TEXT,__text  -[HKBluetoothDeviceDataSource pairedDevicesWithError:]
+0x193faf8f0  __TEXT,__text  -[_HKBehavior supportsBluetoothDiscovery]
+0x193faf8f8  __TEXT,__text  -[HKCountrySet copyWithZone:]
+0x193faf8fc  __TEXT,__text  -[HKAllowedCountries copyWithZone:]
+0x193faf900  __TEXT,__text  -[HKRegionAvailability .cxx_destruct]
+0x193faf938  __TEXT,__text  -[HKAllowedCountries .cxx_destruct]
+0x193faf97c  __TEXT,__text  -[HKFeatureAvailabilityRequirementCurrentCountryIsSupportedOnLocalDevice isSatisfiedWithDataSource:error:]
+0x193fafa2c  __TEXT,__text  -[HKAllowedCountries _initWithCategory:version:localCountrySet:remoteState:remoteCountrySet:]
+0x193fafb88  __TEXT,__text  -[_HKAllowedInSomeCountriesAvailability initWithAllowedCountries:]
+0x193fafc18  __TEXT,__text  -[HKRegionAvailability _initWithCategory:version:allowedCountries:]
+0x193fafdf8  __TEXT,__text  +[HKCountrySetBitmaskPath pathWithBitmask:index:]
+0x193fafe44  __TEXT,__text  ___23-[HKCountrySet isEmpty]_block_invoke
+0x193fafe68  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fafe7c  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fafe90  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fafea4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fafeb8  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fafecc  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fafed8  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fafeec  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fafef8  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193faff18  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193faff24  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193faff34  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193faff64  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193faff74  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193faff94  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193faffa8  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193faffc4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193faffd0  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193faffe4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x193fafff8  __TEXT,__text  ___34-[NSDictionary(HealthKit) hk_map:]_block_invoke
+0x193fb00a0  __TEXT,__text  ___99+[HKFeatureAvailabilityRequirementsEvaluation evaluationOfRequirements:dataSource:overrides:error:]_block_invoke
+0x193fb00c0  __TEXT,__text  ___34-[NSDictionary(HealthKit) hk_map:]_block_invoke_2
+0x193fb00d8  __TEXT,__text  -[HKRemoteFeatureAvailabilityRuleSet .cxx_destruct]
+0x193fb0110  __TEXT,__text  -[_HKAllowedCountriesInLocalSet initWithLocalCountrySet:]
+0x193fb01c4  __TEXT,__text  ___89-[HKFeatureAvailabilityRequirementSet evaluationByContextWithDataSource:overrides:error:]_block_invoke
+0x193fb0280  __TEXT,__text  -[HKFeatureAvailabilityRequirementSatisfactionOverrides .cxx_destruct]
+0x193fb02c4  __TEXT,__text  -[HKFeatureAvailabilityOnboardingEligibility .cxx_destruct]
+0x193fb02d0  __TEXT,__text  -[HKFeatureAvailabilityRequirementEvaluationDataSource onboardingEligibilityForFeatureWithIdentifier:error:]
+0x193fb051c  __TEXT,__text  -[HKFeatureAvailabilityRequirementEvaluationDataSource regionAvailabilityForFeatureWithIdentifier:error:]
+0x193fb0650  __TEXT,__text  ___143-[HKHealthStoreImplementation fetchTaskServerEndpointForIdentifier:pluginURL:taskUUID:instanceUUID:configuration:endpointHandler:errorHandler:]_block_invoke_3
+0x193fb0664  __TEXT,__text  ___86-[HKCountryMonitorControl fetchCurrentISOCountryCodeAndNotifyObserversWithCompletion:]_block_invoke_3
+0x193fb0670  __TEXT,__text  -[HKFeatureStatusManager _queue_featureStatusWithEvaluationContext:requirements:overrides:error:]
+0x193fb0884  __TEXT,__text  -[HKFeatureAvailabilityRequirementSet evaluationByContextWithDataSource:overrides:error:]
+0x193fb0a6c  __TEXT,__text  -[HKFeatureAvailabilityRequirementSet evaluationForContext:dataSource:overrides:error:]
+0x193fb0b10  __TEXT,__text  -[HKFeatureAvailabilityRequirementEvaluationDataSource currentCountryCode]
+0x193fb0b18  __TEXT,__text  -[HKFeatureAvailabilityRequirementEvaluationDataSource onboardingEligibilityForFeatureWithIdentifier:countryCode:error:]
+0x193fb0c20  __TEXT,__text  -[HKFeatureAvailabilityRequirementCurrentCountryCodeIsPresent isSatisfiedWithDataSource:error:]
+0x193fb0cd0  __TEXT,__text  -[_HKAllowedCountriesInLocalAndRemoteIntersectionMissingRemoteRestriction initWithLocalCountrySet:remoteState:]
+0x193fb0df8  __TEXT,__text  -[HKFeatureSettings copyWithZone:]
+0x193fb0dfc  __TEXT,__text  -[HKOnboardingCompletion copyWithZone:]
+0x193fb0e00  __TEXT,__text  -[HKFeatureAvailabilityOnboardingEligibility copyWithZone:]
+0x193fb0e04  __TEXT,__text  -[HKFeatureAvailabilityOnboardingCompletionEligibility .cxx_destruct]
+0x193fb0e3c  __TEXT,__text  -[HKFeatureStatusManager dealloc]
+0x193fb0e98  __TEXT,__text  -[HKFeatureAvailabilityRequirementEvaluationDataSource .cxx_destruct]
+0x193fb0fd4  __TEXT,__text  -[HKFeatureAvailabilityHealthDataRequirementDataSource .cxx_destruct]
+0x193fb100c  __TEXT,__text  -[HKFeatureAvailabilityContextConstraint .cxx_destruct]
+0x193fb1018  __TEXT,__text  -[HKFixedCurrentCountryCodeProvider .cxx_destruct]
+0x193fb1024  __TEXT,__text  -[HKImportExclusionDeviceDataSource .cxx_destruct]
+0x193fb1030  __TEXT,__text  -[HKObserverBridge dealloc]
+0x193fb1180  __TEXT,__text  -[HKWatchAppInstallationDataSource .cxx_destruct]
+0x193fb11f0  __TEXT,__text  -[HKObserverBridge .cxx_destruct]
+0x193fb1228  __TEXT,__text  -[HKOSEligibilityDataSource .cxx_destruct]
+0x193fb1260  __TEXT,__text  -[HKNanoRegistryPairingAndSwitchingNotificationDataSource .cxx_destruct]
+0x193fb1274  __TEXT,__text  -[HKWristDetectionSettingDataSource .cxx_destruct]
+0x193fb1288  __TEXT,__text  -[HKUserDefaultsDataSource .cxx_destruct]
+0x193fb129c  __TEXT,__text  -[HKBluetoothDeviceDataSource _endDiscovery]
+0x193fb1338  __TEXT,__text  -[HKBluetoothDeviceDataSource .cxx_destruct]
+0x193fb13a8  __TEXT,__text  -[HKFeatureStatusProvidingDataSource .cxx_destruct]
+0x193fb1400  __TEXT,__text  -[HKFeatureAvailabilityProvidingDataSource .cxx_destruct]
+0x193fb1458  __TEXT,__text  -[HKBluetoothDeviceDataSource init]
+0x193fb1490  __TEXT,__text  -[HKObserverBridge init]
+0x193fb1518  __TEXT,__text  -[HKOnboardingCompletion .cxx_destruct]
+0x193fb1568  __TEXT,__text  -[HKFeatureAvailabilityOnboardingEligibilityRequirement hash]
+0x193fb15c8  __TEXT,__text  -[HKFeatureAvailabilityRequirementEvaluationDataSource onboardingRecordForFeatureWithIdentifier:error:]
+0x193fb1734  __TEXT,__text  ___89-[HKFeatureStatusManager _queue_updateFeatureStatusWithRequestDrivenByObservation:error:]_block_invoke
+0x193fb1848  __TEXT,__text  -[HKFeatureAvailabilityOnboardingEligibilityRequirement isEqual:]
+0x193fb18b8  __TEXT,__text  -[HKFeatureAvailabilityLocalRequirementEvaluationContext .cxx_destruct]
+0x193fb198c  __TEXT,__text  -[HKOSEligibilityDataSource init]
+0x193fb19c4  __TEXT,__text  -[HKFeatureStatusManager .cxx_destruct]
+0x193fb1a4c  __TEXT,__text  -[HKFeatureOnboardingRecord .cxx_destruct]
+0x193fb1a84  __TEXT,__text  -[_HKDelayedOperation .cxx_destruct]
+0x193fb1aec  __TEXT,__text  -[HKFeatureAvailabilityRequirementSet _initWithRequirementsByContext:]
+0x193fb1b60  __TEXT,__text  -[HKFeatureStatusManager initWithFeatureAvailabilityProviding:featureAvailabilityDataSource:contextConstraint:]
+0x193fb1d88  __TEXT,__text  -[HKFeatureStatusProvidingDataSource init]
+0x193fb1e34  __TEXT,__text  -[HKFeatureAvailabilityRequirementSet allRequirements]
+0x193fb1ee4  __TEXT,__text  -[HKFeatureAvailabilityRequirementSet initWithRequirementsByContext:]
+0x193fb1f38  __TEXT,__text  ___69-[HKFeatureAvailabilityRequirementSet initWithRequirementsByContext:]_block_invoke
+0x193fb1fb4  __TEXT,__text  -[HKFeatureAvailabilityContextConstraint acceptsContext:]
+0x193fb1fc8  __TEXT,__text  ___37-[NSDictionary(HealthKit) hk_filter:]_block_invoke
+0x193fb203c  __TEXT,__text  -[HKFeatureAvailabilityRequirementSet copyApplyingContextConstraint:]
+0x193fb20f8  __TEXT,__text  ___69-[HKFeatureAvailabilityRequirementSet copyApplyingContextConstraint:]_block_invoke
+0x193fb2104  __TEXT,__text  -[HKFeatureSettings .cxx_destruct]
+0x193fb213c  __TEXT,__text  ___49-[HKFeatureStatusManager featureStatusWithError:]_block_invoke
+0x193fb222c  __TEXT,__text  ___59+[HKFeatureAvailabilityContextConstraint onlySomeContexts:]_block_invoke
+0x193fb2238  __TEXT,__text  -[HKFeatureOnboardingRecord copyWithZone:]
+0x193fb223c  __TEXT,__text  ___54-[HKFeatureAvailabilityRequirementSet allRequirements]_block_invoke
+0x193fb2244  __TEXT,__text  ___68-[HKFeatureOnboardingRecord onboardedCountryCodesForOnboardingState]_block_invoke
+0x193fb22a0  __TEXT,__text  ___91-[HKFeatureAvailabilityRequirementsEvaluation unsatisfiedRequirementIdentifiersDescription]_block_invoke
+0x193fb22a8  __TEXT,__text  ___80-[HKFeatureAvailabilityRequirementsEvaluation unsatisfiedRequirementIdentifiers]_block_invoke
+0x193fb2344  __TEXT,__text  -[HKFeatureAvailabilityRequirementSet allHealthDataRequirements]
+0x193fb2484  __TEXT,__text  -[HKFeatureAvailabilityHealthDataRequirementDataSource withPrewarmedEvaluationOfRequirementSet:error:handler:]
+0x193fb2568  __TEXT,__text  -[HKFeatureAvailabilityRequirementEvaluationDataSource performLocalEvaluation:]
+0x193fb2668  __TEXT,__text  -[HKFeatureAvailabilityHealthDataRequirementDataSource newInstanceForEvaluation]
+0x193fb269c  __TEXT,__text  ___89-[HKFeatureStatusManager _queue_updateFeatureStatusWithRequestDrivenByObservation:error:]_block_invoke_2
+0x193fb26b0  __TEXT,__text  -[HKSynchronousObserverSet notifyObservers:]
+0x193fb27e0  __TEXT,__text  -[HKFeatureAvailabilityRequirementSet .cxx_destruct]
+0x193fb27ec  __TEXT,__text  -[HKFeatureStatus .cxx_destruct]
+0x193fb2824  __TEXT,__text  -[HKFeatureAvailabilityRequirementsEvaluation .cxx_destruct]
+0x193fb285c  __TEXT,__text  -[HKFeatureStatusManager _queue_updateFeatureStatusWithRequestDrivenByObservation:error:]
+0x193fb2c1c  __TEXT,__text  -[HKBluetoothDeviceDataSource dealloc]
+0x193fb2c64  __TEXT,__text  -[HKFeatureAvailabilityProvidingDataSource initWithHealthDataSource:]
+0x193fb2d34  __TEXT,__text  -[HKFeatureAvailabilityBaseRequirement _hk_featureAvailabilityRequirements]
+0x193fb2d9c  __TEXT,__text  ___60-[_HKDelayedOperation initWithMode:clock:queue:delay:block:]_block_invoke
+0x193fb2dd0  __TEXT,__text  -[_HKDelayedOperation _queue_executeBlockIfScheduled]
+0x193fb2ebc  __TEXT,__text  -[HKQueryServerConfiguration initWithCoder:]
+0x193fb3050  __TEXT,__text  -[_HKFeatureFlags databasePerfTrace]
+0x193fb3158  __TEXT,__text  -[_HKBehavior futureMigrationsEnabled]
+0x193fb3274  __TEXT,__text  std::__1::__function::__func<-[_HKBehavior futureMigrationsEnabled]::$_4, bool ()>::destroy()
+0x193fb3278  __TEXT,__text  -[HKObserverSet notifyObservers:]
+0x193fb3280  __TEXT,__text  -[HKTaskConfiguration initWithCoder:]
+0x193fb3284  __TEXT,__text  -[HKHealthStore executeQuery:]
+0x193fb328c  __TEXT,__text  -[NSSet(HealthKit) hk_mapToDictionary:]
+0x193fb3440  __TEXT,__text  -[HKObjectType _predicateForSDKVersionToken:]
+0x193fb3448  __TEXT,__text  +[HKUnit largeCalorieUnit]
+0x193fb345c  __TEXT,__text  +[_HKBehavior _hasTelephonyCapability]
+0x193fb3468  __TEXT,__text  -[HKHealthStoreConfiguration initWithSourceBundleIdentifier:sourceVersion:debugIdentifier:profileIdentifier:applicationSDKVersionToken:daemonLaunchDarwinNotificationName:writeAuthorizationUsageDescriptionOverride:readAuthorizationUsageDescriptionOverride:clinicalReadAuthorizationUsageDescriptionOver
+0x193fb361c  __TEXT,__text  -[NSArray(HealthKit) hk_containsObjectPassingTest:]
+0x193fb3650  __TEXT,__text  -[_HKFeatureFlags xpcGatedSecondaryJournalMerge]
+0x193fb3758  __TEXT,__text  -[HKHealthStore dealloc]
+0x193fb37ac  __TEXT,__text  -[HKHealthStore .cxx_destruct]
+0x193fb3894  __TEXT,__text  -[HKHealthStoreConfiguration .cxx_destruct]
+0x193fb3920  __TEXT,__text  -[NSArray(HealthKit) hk_firstObjectPassingTest:]
+0x193fb3a60  __TEXT,__text  -[HKProxyProvider dealloc]
+0x193fb3ae0  __TEXT,__text  -[HKTaskServerProxyProvider .cxx_destruct]
+0x193fb3b50  __TEXT,__text  -[HKProxyProvider .cxx_destruct]
+0x193fb3bec  __TEXT,__text  -[_HKXPCConnection dealloc]
+0x193fb3c44  __TEXT,__text  -[_HKXPCConnection .cxx_destruct]
+0x193fb3c9c  __TEXT,__text  -[HKProxyProvider _getSynchronousProxyWithHandler:errorHandler:]
+0x193fb3e08  __TEXT,__text  ___40-[HKMedicalIDStore medicalIDSetUpStatus]_block_invoke
+0x193fb3e7c  __TEXT,__text  -[HKHealthStoreImplementation _applicationDidBecomeActive:]
+0x193fb3f04  __TEXT,__text  +[HKMedicalIDStore clientInterface]
+0x193fb3f3c  __TEXT,__text  +[HKMedicalIDStore setupStatusServerInterface]
+0x193fb3f74  __TEXT,__text  +[HKMedicalIDStore setupStatusClientInterface]
+0x193fb3fac  __TEXT,__text  -[_HKCFGExpression setIsPrivate:]
+0x193fb3fb4  __TEXT,__text  -[_HKCFGStringTerminal characterSet]
+0x193fb4070  __TEXT,__text  +[HKUserDefaultsDataSource privacyPreferencesDataSource]
+0x193fb40d0  __TEXT,__text  -[HKQuery setShouldSuppressDataCollection:]
+0x193fb40d8  __TEXT,__text  -[HKProfileIdentifier .cxx_destruct]
+0x193fb40e4  __TEXT,__text  -[NSArray(HealthKit) hk_map:]
+0x193fb424c  __TEXT,__text  ___63-[HKProxyProvider _fetchEndpointAndConnectionWithContinuation:]_block_invoke
+0x193fb42a4  __TEXT,__text  -[HKProxyProvider _lock_flushContinuationsWithConnection:error:]
+0x193fb43ec  __TEXT,__text  ___55-[HKProxyProvider _fetchProxyWithHandler:errorHandler:]_block_invoke
+0x193fb45e0  __TEXT,__text  ___55-[HKProxyProvider _fetchProxyWithHandler:errorHandler:]_block_invoke_3
+0x193fb45f4  __TEXT,__text  ___68-[HKHealthStoreImplementation _serverProxyWithHandler:errorHandler:]_block_invoke_2
+0x193fb46d4  __TEXT,__text  ___32-[NSArray(HealthKit) hk_filter:]_block_invoke
+0x193fb46e4  __TEXT,__text  ___143-[HKHealthStoreImplementation fetchTaskServerEndpointForIdentifier:pluginURL:taskUUID:instanceUUID:configuration:endpointHandler:errorHandler:]_block_invoke
+0x193fb47ec  __TEXT,__text  ___143-[HKHealthStoreImplementation fetchTaskServerEndpointForIdentifier:pluginURL:taskUUID:instanceUUID:configuration:endpointHandler:errorHandler:]_block_invoke_2
+0x193fb49c8  __TEXT,__text  -[_HKXPCExportedObjectProxy .cxx_destruct]
+0x193fb4aac  __TEXT,__text  -[NSObject(HealthKit) hk_safeValueIfExistsForKeyPath:class:error:]
+0x193fb4b30  __TEXT,__text  -[NSArray(HealthKit) hk_allObjectsPassTest:]
+0x193fb4c50  __TEXT,__text  ___60-[HKCountrySet initWithDictionaryRepresentation:provenance:]_block_invoke
+0x193fb4c9c  __TEXT,__text  -[HKCountrySet .cxx_destruct]
+0x193fb4ca8  __TEXT,__text  +[_HKEntitlements entitlementsWithConnection:error:]
+0x193fb4dfc  __TEXT,__text  +[HKDaemonTransaction transactionWithOwner:activityName:]
+0x193fb4ec0  __TEXT,__text  +[NSError(HealthKit) hk_error:description:]
+0x193fb4fbc  __TEXT,__text  -[_HKCFGIntegerTerminal characterSet]
+0x193fb5040  __TEXT,__text  -[_HKCFGStringTerminal setCaseSensitive:]
+0x193fb504c  __TEXT,__text  -[HKQuery _throwInvalidArgumentExceptionIfHasBeenExecuted:]
+0x193fb5174  __TEXT,__text  -[HKQuery queue]
+0x193fb51b4  __TEXT,__text  _HKLogProcessState.cold.1
+0x193fb51c8  __TEXT,__text  ___HKLogProcessState_block_invoke
+0x193fb51f8  __TEXT,__text  -[_HKXPCConnection initWithUnderlyingConnection:]
+0x193fb529c  __TEXT,__text  -[NSSet(HealthKit) hk_containsObjectPassingTest:]
+0x193fb53b8  __TEXT,__text  ___58-[HKHealthStoreImplementation authorizationStatusForType:]_block_invoke_2
+0x193fb53c8  __TEXT,__text  ___58-[HKHealthStoreImplementation authorizationStatusForType:]_block_invoke
+0x193fb5458  __TEXT,__text  +[HKObjectType stateOfMindType]
+0x193fb5468  __TEXT,__text  __HKBaseUnitGrammar.cold.1
+0x193fb547c  __TEXT,__text  -[_HKCFGNodeCache init]
+0x193fb54e4  __TEXT,__text  -[_HKCFGTerminal _tryNodesWithContext:solutionTest:]
+0x193fb55c0  __TEXT,__text  ___55-[_HKCFGNonTerminal _tryNodesWithContext:solutionTest:]_block_invoke
+0x193fb5650  __TEXT,__text  ___43-[_HKCFGNonTerminal _parseTreeWithContext:]_block_invoke
+0x193fb56c8  __TEXT,__text  -[_HKCFGParseContext .cxx_destruct]
+0x193fb5700  __TEXT,__text  -[_HKCFGNodeCache .cxx_destruct]
+0x193fb570c  __TEXT,__text  ____BuildFactorizationGrammar_block_invoke_3
+0x193fb5754  __TEXT,__text  ____BuildFactorizationGrammar_block_invoke_6
+0x193fb57bc  __TEXT,__text  -[_HKFactorization init]
+0x193fb5824  __TEXT,__text  -[_HKCFGNonTerminalNode .cxx_destruct]
+0x193fb5868  __TEXT,__text  -[_HKCFGTerminalNode .cxx_destruct]
+0x193fb5874  __TEXT,__text  -[_HKFactorization .cxx_destruct]
+0x193fb5880  __TEXT,__text  ____HKBaseUnitGrammar_block_invoke_3
+0x193fb5930  __TEXT,__text  ____HKBaseUnitGrammar_block_invoke_11
+0x193fb5978  __TEXT,__text  -[HKQuantityType initWithIdentifier:]
+0x193fb5a0c  __TEXT,__text  ____HKBaseUnitGrammar_block_invoke_8
+0x193fb5a20  __TEXT,__text  -[HKQuery queryDescriptors]
+0x193fb5a28  __TEXT,__text  -[HKObjectType(Logging) sensitiveLoggingIdentifier]
+0x193fb5ab4  __TEXT,__text  -[_HKCFGNonTerminal _label]
+0x193fb5abc  __TEXT,__text  -[_HKCFGStringTerminal _label]
+0x193fb5ac4  __TEXT,__text  -[_HKCFGReplacementRule rightHandSide]
+0x193fb5acc  __TEXT,__text  -[HKHealthStore preferredUnitsForQuantityTypes:completion:]
+0x193fb5b3c  __TEXT,__text  -[HKHealthStoreImplementation applicationSDKVersionToken]
+0x193fb5b90  __TEXT,__text  -[HKQuery activationUUID]
+0x193fb5b9c  __TEXT,__text  -[HKObjectType isEqual:]
+0x193fb5bfc  __TEXT,__text  -[HKHealthStore executeQuery:activationHandler:]
+0x193fb5c70  __TEXT,__text  -[HKHealthStoreImplementation executeQuery:queue:activationHandler:]
+0x193fb5e2c  __TEXT,__text  -[HKHealthStoreImplementation _addQuery:]
+0x193fb5ef4  __TEXT,__text  -[HKObjectType(Logging) requiresSensitiveHealthLogs]
+0x193fb5f88  __TEXT,__text  -[HKHealthStoreImplementation preferredUnitsForQuantityTypes:version:completion:]
+0x193fb60b4  __TEXT,__text  -[HKHealthStoreImplementation _objectCompletionOnClientQueue:]
+0x193fb6150  __TEXT,__text  +[HKQuery configureServerInterface:]
+0x193fb6154  __TEXT,__text  ___74-[HKProxyProvider _fetchRetryingProxyWithErrorCount:handler:errorHandler:]_block_invoke
+0x193fb6190  __TEXT,__text  -[HKQuery activationState]
+0x193fb61a0  __TEXT,__text  -[HKQuery activateWithClientQueue:healthStore:delegate:time:completion:]
+0x193fb6494  __TEXT,__text  +[HKQuery clientInterface]
+0x193fb6534  __TEXT,__text  -[HKQuery objectType]
+0x193fb65a8  __TEXT,__text  -[HKQuery predicate]
+0x193fb661c  __TEXT,__text  -[HKTaskConfiguration encodeWithCoder:]
+0x193fb6620  __TEXT,__text  -[HKQuery setActivationUUID:]
+0x193fb6628  __TEXT,__text  -[HKObjectType initWithCoder:]
+0x193fb66b4  __TEXT,__text  -[HKQueryServerConfiguration encodeWithCoder:]
+0x193fb67f4  __TEXT,__text  +[HKBaseUnit _uniquedUnitWithPrefix:rootUnit:]
+0x193fb6800  __TEXT,__text  +[HKBaseUnit _uniquedUnitWithPrefix:conversionConstant:rootUnit:]
+0x193fb6940  __TEXT,__text  -[HKBaseUnit unitString]
+0x193fb6948  __TEXT,__text  __unitStringForUnit
+0x193fb69fc  __TEXT,__text  -[HKBaseUnit _unitByPrefixing:withConversionConstant:]
+0x193fb6b74  __TEXT,__text  __Prefixes
+0x193fb6bac  __TEXT,__text  __Prefixes.cold.1
+0x193fb6bc0  __TEXT,__text  ____Prefixes_block_invoke
+0x193fb6c84  __TEXT,__text  -[HKUnit initWithCoder:]
+0x193fb6d4c  __TEXT,__text  -[HKQueryServerConfiguration setShouldDeactivateAfterInitialResults:]
+0x193fb6d60  __TEXT,__text  -[HKQueryServerConfiguration setShouldSuppressDataCollection:]
+0x193fb6d74  __TEXT,__text  -[HKQueryServerConfiguration setActivationTime:]
+0x193fb6d88  __TEXT,__text  -[HKHealthStoreImplementation _removeQueryFromPendingActivationQueries:]
+0x193fb6dec  __TEXT,__text  +[HKQuery shouldApplyAdditionalPredicateForObjectType:]
+0x193fb6df4  __TEXT,__text  -[HKQueryServerConfiguration setFilter:]
+0x193fb6e08  __TEXT,__text  +[HKQuery taskIdentifier]
+0x193fb6e24  __TEXT,__text  ___26+[HKQuery serverInterface]_block_invoke
+0x193fb6e30  __TEXT,__text  -[HKQueryServerConfiguration setDebugIdentifier:]
+0x193fb6e3c  __TEXT,__text  -[HKQueryServerConfiguration setQualityOfService:]
+0x193fb6e50  __TEXT,__text  -[HKQuery exportedInterface]
+0x193fb6e6c  __TEXT,__text  ___26+[HKQuery clientInterface]_block_invoke
+0x193fb6e78  __TEXT,__text  +[HKQuery configureClientInterface:]
+0x193fb6e7c  __TEXT,__text  -[HKQuery remoteInterface]
+0x193fb6e98  __TEXT,__text  +[HKSource _sourceBundleIdentifierWithEntitlements:processBundleIdentifier:isExtension:]
+0x193fb6f5c  __TEXT,__text  ___115-[HKHealthStoreImplementation taskServerEndpointForIdentifier:pluginURL:taskUUID:instanceUUID:configuration:error:]_block_invoke_2
+0x193fb7054  __TEXT,__text  ___40-[HKMedicalIDStore medicalIDSetUpStatus]_block_invoke_2
+0x193fb7064  __TEXT,__text  +[HKMedicalIDStore clientInterface].cold.1
+0x193fb7078  __TEXT,__text  +[HKMedicalIDStore setupStatusServerInterface].cold.1
+0x193fb708c  __TEXT,__text  +[HKMedicalIDStore setupStatusClientInterface].cold.1
+0x193fb70a0  __TEXT,__text  -[HKHealthStoreImplementation taskServerEndpointForIdentifier:pluginURL:taskUUID:instanceUUID:configuration:error:]
+0x193fb7360  __TEXT,__text  ___35+[HKMedicalIDStore clientInterface]_block_invoke
+0x193fb739c  __TEXT,__text  ___46+[HKMedicalIDStore setupStatusClientInterface]_block_invoke
+0x193fb73d8  __TEXT,__text  ___46+[HKMedicalIDStore setupStatusServerInterface]_block_invoke
+0x193fb7414  __TEXT,__text  -[HKHealthStoreIdentifier initPrimaryStoreIdentifier]
+0x193fb746c  __TEXT,__text  -[_HKCFGStringTerminal _minimumLength]
+0x193fb7474  __TEXT,__text  +[_HKFactorization factorizationWithFactor:exponent:]
+0x193fb7498  __TEXT,__text  -[HKBaseUnit encodeWithCoder:]
+0x193fb74d0  __TEXT,__text  -[_HKCompoundUnit .cxx_destruct]
+0x193fb7508  __TEXT,__text  ___70-[HKUnitPreferenceController _refreshHKUnitPreferencesWithCompletion:]_block_invoke
+0x193fb7630  __TEXT,__text  ___70-[HKUnitPreferenceController _refreshHKUnitPreferencesWithCompletion:]_block_invoke_2
+0x193fb76b8  __TEXT,__text  -[HKUnitPreferenceController _lock_updatePreferredUnits:]
+0x193fb7818  __TEXT,__text  -[HKUnitPreferenceController _changedKeysBetweenDictionary:andDictionary:]
+0x193fb7990  __TEXT,__text  ___76-[HKUnitPreferenceController _fetchHKUnitPreferencesWithAttempt:completion:]_block_invoke
+0x193fb79d8  __TEXT,__text  -[_HKWheelchairUseCharacteristicCache isWheelchairUser]
+0x193fb7a18  __TEXT,__text  -[_HKWheelchairUseCharacteristicCache _lock_isWheelchairUser]
+0x193fb7a58  __TEXT,__text  -[_HKWheelchairUseCharacteristicCache _lock_fetchWheelchairUseIfNecessary]
+0x193fb7aa0  __TEXT,__text  -[_HKCFGNonTerminal setCharactersToBeSkipped:]
+0x193fb7aa8  __TEXT,__text  +[_HKBaseDimension _uniquedDimensionWithName:configuration:].cold.1
+0x193fb7abc  __TEXT,__text  -[HKUnit _baseUnitReductionAndProportionalSize:withCycleSet:]
+0x193fb7afc  __TEXT,__text  -[_HKFactorization enumerateFactorsWithHandler:]
+0x193fb7c4c  __TEXT,__text  ___77-[_HKCompoundUnit _computeBaseUnitReductionAndProportionalSize:withCycleSet:]_block_invoke
+0x193fb7cec  __TEXT,__text  -[_HKFactorization copyWithZone:]
+0x193fb7d90  __TEXT,__text  -[HKQuantity _initWithUnit:doubleValue:]
+0x193fb7e20  __TEXT,__text  -[HKWheelchairUseObject _initWithWheelchairUse:]
+0x193fb7ee0  __TEXT,__text  -[HKHealthStoreImplementation wheelchairUseWithError:]
+0x193fb7fd4  __TEXT,__text  -[HKObserverSet _notifyObserversInGroup:handler:]
+0x193fb813c  __TEXT,__text  -[HKHealthStoreImplementation _characteristicForDataType:error:]
+0x193fb83f4  __TEXT,__text  -[HKQuery queue_queryDidFinishActivation:success:error:]
+0x193fb83fc  __TEXT,__text  +[HKObjectType characteristicTypeForIdentifier:]
+0x193fb8460  __TEXT,__text  -[HKCharacteristicType(HKAdditions) _validateCharacteristic:error:]
+0x193fb8a04  __TEXT,__text  ___39-[NSSet(HealthKit) hk_mapToDictionary:]_block_invoke
+0x193fb8a1c  __TEXT,__text  -[HKUnit encodeWithCoder:]
+0x193fb8a7c  __TEXT,__text  -[HKHealthStoreImplementation fetchTaskServerEndpointForIdentifier:pluginURL:taskUUID:instanceUUID:configuration:endpointHandler:errorHandler:]
+0x193fb8c98  __TEXT,__text  -[HKBaseUnit .cxx_destruct]
+0x193fb8cdc  __TEXT,__text  -[HKUnit .cxx_destruct]
+0x193fb8d14  __TEXT,__text  -[HKBaseUnit initWithCoder:]
+0x193fb8e54  __TEXT,__text  ___62-[HKHealthStoreImplementation _objectCompletionOnClientQueue:]_block_invoke
+0x193fb8f3c  __TEXT,__text  ___62-[HKHealthStoreImplementation _objectCompletionOnClientQueue:]_block_invoke_2
+0x193fb8f5c  __TEXT,__text  -[HKBaseUnit awakeAfterUsingCoder:]
+0x193fb90dc  __TEXT,__text  -[_HKCFGParseContext decrementRecursiveDepth]
+0x193fb90ec  __TEXT,__text  -[HKUnit _isCompatibleWithUnit:]
+0x193fb915c  __TEXT,__text  -[HKUnit _dimensionReduction]
+0x193fb918c  __TEXT,__text  +[HKQuantity quantityWithUnit:doubleValue:]
+0x193fb91e4  __TEXT,__text  -[HKQuantity _unit]
+0x193fb91ec  __TEXT,__text  -[HKQuantity doubleValueForUnit:]
+0x193fb9270  __TEXT,__text  -[_HKWheelchairUseCharacteristicCache registerObserver:]
+0x193fb92b8  __TEXT,__text  -[HKUnit _valueByConvertingValue:toUnit:]
+0x193fb9358  __TEXT,__text  +[_HKBaseDimension _uniquedDimensionWithName:configuration:]
+0x193fb9434  __TEXT,__text  -[_HKDimension init]
+0x193fb9474  __TEXT,__text  +[HKUnit countUnit]
+0x193fb9488  __TEXT,__text  ___53+[_HKBaseDimension _uniquedDefinedDimensionWithName:]_block_invoke
+0x193fb95bc  __TEXT,__text  -[HKHealthStore identifier]
+0x193fb95c8  __TEXT,__text  -[HKHealthRecordsStore initWithHealthStore:]
+0x193fb981c  __TEXT,__text  +[HKHealthRecordsStore taskIdentifier]
+0x193fb9820  __TEXT,__text  -[HKHealthRecordsStore exportedInterface]
+0x193fb9838  __TEXT,__text  -[HKHealthRecordsStore remoteInterface]
+0x193fb9920  __TEXT,__text  +[NSJSONSerialization(HealthKit) hk_JSONObjectSecureCodingClasses]
+0x193fb9958  __TEXT,__text  +[NSJSONSerialization(HealthKit) hk_JSONObjectSecureCodingClasses].cold.1
+0x193fb996c  __TEXT,__text  ___66+[NSJSONSerialization(HealthKit) hk_JSONObjectSecureCodingClasses]_block_invoke
+0x193fb9a54  __TEXT,__text  ___33+[HKProxyProvider _relaunchQueue]_block_invoke
+0x193fb9a8c  __TEXT,__text  +[HKProxyProvider _relaunchQueue]
+0x193fb9b20  __TEXT,__text  -[HKHealthRecordsStore fetchCurrentIngestionStatusWithCompletion:]
+0x193fb9c84  __TEXT,__text  -[HKHealthRecordsStore _fetchHealthRecordsPluginServerProxyWithHandler:errorHandler:]
+0x193fb9c8c  __TEXT,__text  -[_HKWheelchairUseCharacteristicCache _lock_needsFetch]
+0x193fb9cc0  __TEXT,__text  +[_HKBaseDimension nullDimension]
+0x193fb9cd4  __TEXT,__text  ___60+[_HKBaseDimension _uniquedDimensionWithName:configuration:]_block_invoke
+0x193fb9d04  __TEXT,__text  ___33+[_HKBaseDimension nullDimension]_block_invoke
+0x193fb9d8c  __TEXT,__text  +[HKUnit _nullUnit]
+0x193fb9de4  __TEXT,__text  +[_HKCompoundUnit unitWithBaseUnits:]
+0x193fb9e2c  __TEXT,__text  +[_HKFactorization factorization]
+0x193fb9e48  __TEXT,__text  -[HKUnit isEqual:]
+0x193fb9ee8  __TEXT,__text  -[HKUnit copyWithZone:]
+0x193fb9eec  __TEXT,__text  -[HKUnit _reduceIfNecessaryWithCycleSet:]
+0x193fba01c  __TEXT,__text  -[HKBaseUnit _computeBaseUnitReductionAndProportionalSize:withCycleSet:]
+0x193fba188  __TEXT,__text  -[HKBaseUnit proportionalSize]
+0x193fba190  __TEXT,__text  -[HKBaseUnit _baseUnits]
+0x193fba1a4  __TEXT,__text  -[_HKCFGReplacementRule lengthIncrease]
+0x193fba1ac  __TEXT,__text  -[_HKCFGNode rangeOfString]
+0x193fba1b8  __TEXT,__text  -[HKConductanceUnit dimension]
+0x193fba1c4  __TEXT,__text  -[_HKCFGParseContext lengthAllowance]
+0x193fba1cc  __TEXT,__text  +[HKQuery(HKPredicates) predicateForCategorySamplesEqualToValues:]
+0x193fba240  __TEXT,__text  ___66+[HKQuery(HKPredicates) predicateForCategorySamplesEqualToValues:]_block_invoke
+0x193fba27c  __TEXT,__text  -[_HKCFGNonTerminal _tryNodesWithContext:solutionTest:]
+0x193fba6d0  __TEXT,__text  -[HKHealthStore fetchTaskServerEndpointForIdentifier:pluginURL:taskUUID:instanceUUID:configuration:endpointHandler:errorHandler:]
+0x193fba7b4  __TEXT,__text  ____BuildFactorizationGrammar_block_invoke_4
+0x193fba858  __TEXT,__text  +[HKQuery(HKPredicates) predicateForCategorySamplesWithOperatorType:value:]
+0x193fba910  __TEXT,__text  -[_HKCFGParseContext scanner]
+0x193fba918  __TEXT,__text  +[HKBaseUnit unitFromString:]
+0x193fba9b4  __TEXT,__text  ___36-[_HKFeatureFlags simplifiedLogging]_block_invoke
+0x193fba9c8  __TEXT,__text  -[_HKCFGStringTerminal _scanValue:withScanner:]
+0x193fbaa6c  __TEXT,__text  ___39-[_HKFeatureFlags health365ContentRoom]_block_invoke
+0x193fbaa80  __TEXT,__text  -[_HKFeatureFlags cycleTrackingOrchestration]
+0x193fbab88  __TEXT,__text  ___45-[_HKFeatureFlags cycleTrackingOrchestration]_block_invoke
+0x193fbab9c  __TEXT,__text  -[_HKFeatureFlags orchestrationMedications]
+0x193fbaca4  __TEXT,__text  ___43-[_HKFeatureFlags orchestrationMedications]_block_invoke
+0x193fbacd0  __TEXT,__text  -[_HKCFGParseContext increaseLengthAllowance:]
+0x193fbace0  __TEXT,__text  ____BuildFactorizationGrammar_block_invoke_7
+```
+First 1,000 of 20,111.
+

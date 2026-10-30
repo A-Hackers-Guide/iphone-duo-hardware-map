@@ -1,0 +1,283 @@
+# Symbols: `/System/Library/AccessibilityBundles/HealthExperienceUI.axbundle/HealthExperienceUI`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__AccessibilityBundles__HealthExperienceUI.axbundle__HealthExperienceUI.md). **[DSC]**
+
+104 public symbols, 163 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1ee8a9a08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXHealthExperienceUIGlue
+0x1ee8a99e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AdvertisableFeatureTableViewCellAccessibility
+0x1ee8a99b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CenteredIconDescriptionCollectionViewCellAccessibility
+0x1ee8a9990  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ChromeHostViewCellAccessibility
+0x1ee8a9968  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CollectionViewListDisclosureCellAccessibility
+0x1ee8a9940  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ContentConfigurationCollectionViewListCellAccessibility
+0x1ee8a9918  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ContentConfigurationHostCellAccessibility
+0x1ee8a98f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_DataTypeDetailDescriptionCellAccessibility
+0x1ee8a98c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_DataTypeDetailDisclosureCellAccessibility
+0x1ee8a98a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_DataTypeDetailFavoritesCellAccessibility
+0x1ee8a9878  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_DataTypeDetailUnitCellAccessibility
+0x1ee8a9850  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_DataTypeNoDataAvailableCellAccessibility
+0x1ee8a9828  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_DataTypeTileHeaderViewAccessibility
+0x1ee8a9800  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_DefaultHeaderCollectionReusableViewAccessibility
+0x1ee8a97d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_DismissibleTileHeaderViewAccessibility
+0x1ee8a97b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HealthExperienceUI_CellWithAccessoryViewAccessibility
+0x1ee8a9788  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HealthExperienceUI_CollectionViewCellAccessibility
+0x1ee8a9760  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HealthExperienceUI_EditFavoritesCollectionViewCellAccessibility
+0x1ee8a9738  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HealthExperienceUI_ProfileContactOptionsCellAccessibility
+0x1ee8a9710  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HealthExperienceUI_SwitchCollectionViewCellAccessibility
+0x1ee8a96e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HostViewCellAccessibility
+0x1ee8a96c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_ListContentConfigurationHostCellAccessibility
+0x1ee8a9698  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MessageWithActionTileViewAccessibility
+0x1ee8a9670  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MessageWithActionTileViewWithImageAccessibility
+0x1ee8a9648  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MultiselectTableViewCellAccessibility
+0x1ee8a9620  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_PromotionTileViewAccessibility
+0x1ee8a95f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___AdvertisableFeatureTableViewCellAccessibility_super
+0x1ee8a95d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CenteredIconDescriptionCollectionViewCellAccessibility_super
+0x1ee8a95a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___ChromeHostViewCellAccessibility_super
+0x1ee8a9580  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___CollectionViewListDisclosureCellAccessibility_super
+0x1ee8a9558  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___ContentConfigurationCollectionViewListCellAccessibility_super
+0x1ee8a9530  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___ContentConfigurationHostCellAccessibility_super
+0x1ee8a9508  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___DataTypeDetailDescriptionCellAccessibility_super
+0x1ee8a94e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___DataTypeDetailDisclosureCellAccessibility_super
+0x1ee8a94b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___DataTypeDetailFavoritesCellAccessibility_super
+0x1ee8a9490  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___DataTypeDetailUnitCellAccessibility_super
+0x1ee8a9468  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___DataTypeNoDataAvailableCellAccessibility_super
+0x1ee8a9440  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___DataTypeTileHeaderViewAccessibility_super
+0x1ee8a9418  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___DefaultHeaderCollectionReusableViewAccessibility_super
+0x1ee8a93f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___DismissibleTileHeaderViewAccessibility_super
+0x1ee8a93c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HealthExperienceUI_CellWithAccessoryViewAccessibility_super
+0x1ee8a93a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HealthExperienceUI_CollectionViewCellAccessibility_super
+0x1ee8a9378  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HealthExperienceUI_EditFavoritesCollectionViewCellAccessibility_super
+0x1ee8a9350  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HealthExperienceUI_ProfileContactOptionsCellAccessibility_super
+0x1ee8a9328  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HealthExperienceUI_SwitchCollectionViewCellAccessibility_super
+0x1ee8a9300  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HostViewCellAccessibility_super
+0x1ee8a92d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___ListContentConfigurationHostCellAccessibility_super
+0x1ee8a92b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___MessageWithActionTileViewAccessibility_super
+0x1ee8a9288  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___MessageWithActionTileViewWithImageAccessibility_super
+0x1ee8a9260  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___MultiselectTableViewCellAccessibility_super
+0x1ee8a9238  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___PromotionTileViewAccessibility_super
+0x1ee8a9210  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXHealthExperienceUIGlue
+0x1ee8a91e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AdvertisableFeatureTableViewCellAccessibility
+0x1ee8a91c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CenteredIconDescriptionCollectionViewCellAccessibility
+0x1ee8a9198  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ChromeHostViewCellAccessibility
+0x1ee8a9170  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CollectionViewListDisclosureCellAccessibility
+0x1ee8a9148  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ContentConfigurationCollectionViewListCellAccessibility
+0x1ee8a9120  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ContentConfigurationHostCellAccessibility
+0x1ee8a90f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_DataTypeDetailDescriptionCellAccessibility
+0x1ee8a90d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_DataTypeDetailDisclosureCellAccessibility
+0x1ee8a90a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_DataTypeDetailFavoritesCellAccessibility
+0x1ee8a9080  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_DataTypeDetailUnitCellAccessibility
+0x1ee8a9058  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_DataTypeNoDataAvailableCellAccessibility
+0x1ee8a9030  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_DataTypeTileHeaderViewAccessibility
+0x1ee8a9008  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_DefaultHeaderCollectionReusableViewAccessibility
+0x1ee8a8fe0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_DismissibleTileHeaderViewAccessibility
+0x1ee8a8fb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HealthExperienceUI_CellWithAccessoryViewAccessibility
+0x1ee8a8f90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HealthExperienceUI_CollectionViewCellAccessibility
+0x1ee8a8f68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HealthExperienceUI_EditFavoritesCollectionViewCellAccessibility
+0x1ee8a8f40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HealthExperienceUI_ProfileContactOptionsCellAccessibility
+0x1ee8a8f18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HealthExperienceUI_SwitchCollectionViewCellAccessibility
+0x1ee8a8ef0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HostViewCellAccessibility
+0x1ee8a8ec8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_ListContentConfigurationHostCellAccessibility
+0x1ee8a8ea0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MessageWithActionTileViewAccessibility
+0x1ee8a8e78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MessageWithActionTileViewWithImageAccessibility
+0x1ee8a8e50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MultiselectTableViewCellAccessibility
+0x1ee8a8e28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_PromotionTileViewAccessibility
+0x1ee8a8e00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___AdvertisableFeatureTableViewCellAccessibility_super
+0x1ee8a8dd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CenteredIconDescriptionCollectionViewCellAccessibility_super
+0x1ee8a8db0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___ChromeHostViewCellAccessibility_super
+0x1ee8a8d88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___CollectionViewListDisclosureCellAccessibility_super
+0x1ee8a8d60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___ContentConfigurationCollectionViewListCellAccessibility_super
+0x1ee8a8d38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___ContentConfigurationHostCellAccessibility_super
+0x1ee8a8d10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___DataTypeDetailDescriptionCellAccessibility_super
+0x1ee8a8ce8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___DataTypeDetailDisclosureCellAccessibility_super
+0x1ee8a8cc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___DataTypeDetailFavoritesCellAccessibility_super
+0x1ee8a8c98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___DataTypeDetailUnitCellAccessibility_super
+0x1ee8a8c70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___DataTypeNoDataAvailableCellAccessibility_super
+0x1ee8a8c48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___DataTypeTileHeaderViewAccessibility_super
+0x1ee8a8c20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___DefaultHeaderCollectionReusableViewAccessibility_super
+0x1ee8a8bf8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___DismissibleTileHeaderViewAccessibility_super
+0x1ee8a8bd0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HealthExperienceUI_CellWithAccessoryViewAccessibility_super
+0x1ee8a8ba8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HealthExperienceUI_CollectionViewCellAccessibility_super
+0x1ee8a8b80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HealthExperienceUI_EditFavoritesCollectionViewCellAccessibility_super
+0x1ee8a8b58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HealthExperienceUI_ProfileContactOptionsCellAccessibility_super
+0x1ee8a8b30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HealthExperienceUI_SwitchCollectionViewCellAccessibility_super
+0x1ee8a8b08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HostViewCellAccessibility_super
+0x1ee8a8ae0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___ListContentConfigurationHostCellAccessibility_super
+0x1ee8a8ab8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___MessageWithActionTileViewAccessibility_super
+0x1ee8a8a90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___MessageWithActionTileViewWithImageAccessibility_super
+0x1ee8a8a68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___MultiselectTableViewCellAccessibility_super
+0x1ee8a8a40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___PromotionTileViewAccessibility_super
+0x193de9304  __TEXT,__text  _accessibilityCinnamonLocalizedString
+0x193de9270  __TEXT,__text  _accessibilityLocalizedString
+```
+
+## Private
+
+```
+0x193de8f70  __TEXT,__text  +[AXHealthExperienceUIGlue accessibilityInitializeBundle]
+0x193de8ff8  __TEXT,__text  ___57+[AXHealthExperienceUIGlue accessibilityInitializeBundle]_block_invoke
+0x193de9000  __TEXT,__text  ___57+[AXHealthExperienceUIGlue accessibilityInitializeBundle]_block_invoke_2
+0x193de9054  __TEXT,__text  ___57+[AXHealthExperienceUIGlue accessibilityInitializeBundle]_block_invoke_3
+0x193de9398  __TEXT,__text  +[HealthExperienceUI_CollectionViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193de93a4  __TEXT,__text  +[HealthExperienceUI_CollectionViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193de93b0  __TEXT,__text  +[HealthExperienceUI_CollectionViewCellAccessibility _accessibilityPerformValidations:]
+0x193de9450  __TEXT,__text  -[HealthExperienceUI_CollectionViewCellAccessibility _axIsSelectable]
+0x193de95dc  __TEXT,__text  -[HealthExperienceUI_CollectionViewCellAccessibility _axDelegateForCheckingSelectabilityFromCollectionView:]
+0x193de96cc  __TEXT,__text  -[HealthExperienceUI_CollectionViewCellAccessibility _axDataTypeTileHeaderViewForCell:]
+0x193de9778  __TEXT,__text  ___87-[HealthExperienceUI_CollectionViewCellAccessibility _axDataTypeTileHeaderViewForCell:]_block_invoke
+0x193de97a0  __TEXT,__text  +[ContentConfigurationHostCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193de97ac  __TEXT,__text  +[ContentConfigurationHostCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193de97b8  __TEXT,__text  +[ContentConfigurationHostCellAccessibility _accessibilityPerformValidations:]
+0x193de97d0  __TEXT,__text  -[ContentConfigurationHostCellAccessibility isAccessibilityElement]
+0x193de97d8  __TEXT,__text  -[ContentConfigurationHostCellAccessibility accessibilityLabel]
+0x193de97dc  __TEXT,__text  -[ContentConfigurationHostCellAccessibility accessibilityTraits]
+0x193de9844  __TEXT,__text  +[PromotionTileViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193de9850  __TEXT,__text  +[PromotionTileViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193de985c  __TEXT,__text  +[PromotionTileViewAccessibility _accessibilityPerformValidations:]
+0x193de987c  __TEXT,__text  -[PromotionTileViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x193de991c  __TEXT,__text  +[ContentConfigurationCollectionViewListCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193de9928  __TEXT,__text  +[ContentConfigurationCollectionViewListCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193de9934  __TEXT,__text  +[ContentConfigurationCollectionViewListCellAccessibility _accessibilityPerformValidations:]
+0x193de9984  __TEXT,__text  -[ContentConfigurationCollectionViewListCellAccessibility accessibilityTraits]
+0x193de9a28  __TEXT,__text  ___78-[ContentConfigurationCollectionViewListCellAccessibility accessibilityTraits]_block_invoke
+0x193de9a70  __TEXT,__text  +[MessageWithActionTileViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193de9a7c  __TEXT,__text  +[MessageWithActionTileViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193de9a88  __TEXT,__text  +[MessageWithActionTileViewAccessibility _accessibilityPerformValidations:]
+0x193de9b18  __TEXT,__text  -[MessageWithActionTileViewAccessibility accessibilityLabel]
+0x193de9bf0  __TEXT,__text  +[MessageWithActionTileViewWithImageAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193de9bfc  __TEXT,__text  +[MessageWithActionTileViewWithImageAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193de9c08  __TEXT,__text  +[MessageWithActionTileViewWithImageAccessibility _accessibilityPerformValidations:]
+0x193de9c48  __TEXT,__text  -[MessageWithActionTileViewWithImageAccessibility isAccessibilityElement]
+0x193de9c50  __TEXT,__text  -[MessageWithActionTileViewWithImageAccessibility accessibilityLabel]
+0x193de9c98  __TEXT,__text  -[MessageWithActionTileViewWithImageAccessibility accessibilityActivationPoint]
+0x193de9d34  __TEXT,__text  ___79-[MessageWithActionTileViewWithImageAccessibility accessibilityActivationPoint]_block_invoke
+0x193de9d80  __TEXT,__text  -[MessageWithActionTileViewWithImageAccessibility accessibilityTraits]
+0x193de9dc8  __TEXT,__text  +[CenteredIconDescriptionCollectionViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193de9dd4  __TEXT,__text  +[CenteredIconDescriptionCollectionViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193de9de0  __TEXT,__text  +[CenteredIconDescriptionCollectionViewCellAccessibility _accessibilityPerformValidations:]
+0x193de9de4  __TEXT,__text  -[CenteredIconDescriptionCollectionViewCellAccessibility isAccessibilityElement]
+0x193de9dec  __TEXT,__text  -[CenteredIconDescriptionCollectionViewCellAccessibility accessibilityLabel]
+0x193de9df0  __TEXT,__text  -[CenteredIconDescriptionCollectionViewCellAccessibility accessibilityTraits]
+0x193de9e00  __TEXT,__text  +[AdvertisableFeatureTableViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193de9e0c  __TEXT,__text  +[AdvertisableFeatureTableViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193de9e18  __TEXT,__text  +[AdvertisableFeatureTableViewCellAccessibility _accessibilityPerformValidations:]
+0x193de9e1c  __TEXT,__text  -[AdvertisableFeatureTableViewCellAccessibility isAccessibilityElement]
+0x193de9e24  __TEXT,__text  -[AdvertisableFeatureTableViewCellAccessibility accessibilityValue]
+0x193de9e64  __TEXT,__text  -[AdvertisableFeatureTableViewCellAccessibility accessibilityActivationPoint]
+0x193de9eac  __TEXT,__text  -[AdvertisableFeatureTableViewCellAccessibility accessibilityTraits]
+0x193de9ee4  __TEXT,__text  -[AdvertisableFeatureTableViewCellAccessibility _axFeatureSwitch]
+0x193de9f60  __TEXT,__text  ___65-[AdvertisableFeatureTableViewCellAccessibility _axFeatureSwitch]_block_invoke
+0x193de9fac  __TEXT,__text  +[DismissibleTileHeaderViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193de9fb8  __TEXT,__text  +[DismissibleTileHeaderViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193de9fc4  __TEXT,__text  +[DismissibleTileHeaderViewAccessibility _accessibilityPerformValidations:]
+0x193dea004  __TEXT,__text  -[DismissibleTileHeaderViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x193dea09c  __TEXT,__text  +[DefaultHeaderCollectionReusableViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193dea0a8  __TEXT,__text  +[DefaultHeaderCollectionReusableViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193dea0b4  __TEXT,__text  +[DefaultHeaderCollectionReusableViewAccessibility _accessibilityPerformValidations:]
+0x193dea0cc  __TEXT,__text  -[DefaultHeaderCollectionReusableViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x193dea118  __TEXT,__text  -[DefaultHeaderCollectionReusableViewAccessibility setContentConfiguration:]
+0x193dea164  __TEXT,__text  -[DefaultHeaderCollectionReusableViewAccessibility _axAddHeaderAnnotations]
+0x193dea274  __TEXT,__text  ___75-[DefaultHeaderCollectionReusableViewAccessibility _axAddHeaderAnnotations]_block_invoke
+0x193dea2c0  __TEXT,__text  -[DefaultHeaderCollectionReusableViewAccessibility isAccessibilityElement]
+0x193dea2c8  __TEXT,__text  +[HealthExperienceUI_EditFavoritesCollectionViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193dea2d4  __TEXT,__text  +[HealthExperienceUI_EditFavoritesCollectionViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193dea2e0  __TEXT,__text  +[HealthExperienceUI_EditFavoritesCollectionViewCellAccessibility _accessibilityPerformValidations:]
+0x193dea320  __TEXT,__text  -[HealthExperienceUI_EditFavoritesCollectionViewCellAccessibility accessibilityTraits]
+0x193dea39c  __TEXT,__text  +[ChromeHostViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193dea3a8  __TEXT,__text  +[ChromeHostViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193dea3b4  __TEXT,__text  +[ChromeHostViewCellAccessibility _accessibilityPerformValidations:]
+0x193dea3c4  __TEXT,__text  -[ChromeHostViewCellAccessibility isAccessibilityElement]
+0x193dea400  __TEXT,__text  ___57-[ChromeHostViewCellAccessibility isAccessibilityElement]_block_invoke
+0x193dea488  __TEXT,__text  -[ChromeHostViewCellAccessibility setAccessibilityIdentifier:]
+0x193dea4e8  __TEXT,__text  -[ChromeHostViewCellAccessibility _accessibilityMediaAnalysisOptions]
+0x193dea4f0  __TEXT,__text  +[HealthExperienceUI_ProfileContactOptionsCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193dea4fc  __TEXT,__text  +[HealthExperienceUI_ProfileContactOptionsCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193dea508  __TEXT,__text  +[HealthExperienceUI_ProfileContactOptionsCellAccessibility _accessibilityPerformValidations:]
+0x193dea50c  __TEXT,__text  -[HealthExperienceUI_ProfileContactOptionsCellAccessibility _accessibilityLoadAccessibilityInformation]
+0x193dea678  __TEXT,__text  ___103-[HealthExperienceUI_ProfileContactOptionsCellAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke
+0x193dea6c4  __TEXT,__text  ___103-[HealthExperienceUI_ProfileContactOptionsCellAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_2
+0x193dea6cc  __TEXT,__text  -[HealthExperienceUI_ProfileContactOptionsCellAccessibility layoutSubviews]
+0x193dea718  __TEXT,__text  +[DataTypeTileHeaderViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193dea724  __TEXT,__text  +[DataTypeTileHeaderViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193dea730  __TEXT,__text  +[DataTypeTileHeaderViewAccessibility _accessibilityPerformValidations:]
+0x193dea734  __TEXT,__text  -[DataTypeTileHeaderViewAccessibility isAccessibilityElement]
+0x193dea73c  __TEXT,__text  -[DataTypeTileHeaderViewAccessibility accessibilityLabel]
+0x193dea740  __TEXT,__text  -[DataTypeTileHeaderViewAccessibility accessibilityTraits]
+0x193dea7b4  __TEXT,__text  -[DataTypeTileHeaderViewAccessibility _axIsContainingCellSelectable]
+0x193dea820  __TEXT,__text  +[DataTypeDetailDescriptionCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193dea82c  __TEXT,__text  +[DataTypeDetailDescriptionCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193dea838  __TEXT,__text  +[DataTypeDetailDescriptionCellAccessibility _accessibilityPerformValidations:]
+0x193dea83c  __TEXT,__text  -[DataTypeDetailDescriptionCellAccessibility _accessibilityLoadAccessibilityInformation]
+0x193dea8a4  __TEXT,__text  ___88-[DataTypeDetailDescriptionCellAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke
+0x193dea8d4  __TEXT,__text  +[HealthExperienceUI_SwitchCollectionViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193dea8e0  __TEXT,__text  +[HealthExperienceUI_SwitchCollectionViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193dea8ec  __TEXT,__text  +[HealthExperienceUI_SwitchCollectionViewCellAccessibility _accessibilityPerformValidations:]
+0x193dea8f0  __TEXT,__text  -[HealthExperienceUI_SwitchCollectionViewCellAccessibility isAccessibilityElement]
+0x193dea8f8  __TEXT,__text  -[HealthExperienceUI_SwitchCollectionViewCellAccessibility accessibilityLabel]
+0x193dea8fc  __TEXT,__text  -[HealthExperienceUI_SwitchCollectionViewCellAccessibility accessibilityValue]
+0x193dea974  __TEXT,__text  -[HealthExperienceUI_SwitchCollectionViewCellAccessibility accessibilityTraits]
+0x193dea9e0  __TEXT,__text  -[HealthExperienceUI_SwitchCollectionViewCellAccessibility accessibilityActivationPoint]
+0x193deaa5c  __TEXT,__text  -[HealthExperienceUI_SwitchCollectionViewCellAccessibility _axSwitchView]
+0x193deaa94  __TEXT,__text  +[DataTypeNoDataAvailableCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193deaaa0  __TEXT,__text  +[DataTypeNoDataAvailableCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193deaaac  __TEXT,__text  +[DataTypeNoDataAvailableCellAccessibility _accessibilityPerformValidations:]
+0x193deaab0  __TEXT,__text  -[DataTypeNoDataAvailableCellAccessibility isAccessibilityElement]
+0x193deaab8  __TEXT,__text  -[DataTypeNoDataAvailableCellAccessibility accessibilityLabel]
+0x193deaabc  __TEXT,__text  -[DataTypeNoDataAvailableCellAccessibility accessibilityTraits]
+0x193deab04  __TEXT,__text  +[DataTypeDetailUnitCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193deab10  __TEXT,__text  +[DataTypeDetailUnitCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193deab1c  __TEXT,__text  +[DataTypeDetailUnitCellAccessibility _accessibilityPerformValidations:]
+0x193deab20  __TEXT,__text  -[DataTypeDetailUnitCellAccessibility isAccessibilityElement]
+0x193deab28  __TEXT,__text  -[DataTypeDetailUnitCellAccessibility accessibilityLabel]
+0x193deab2c  __TEXT,__text  +[HealthExperienceUI_CellWithAccessoryViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193deab38  __TEXT,__text  +[HealthExperienceUI_CellWithAccessoryViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193deab44  __TEXT,__text  +[HealthExperienceUI_CellWithAccessoryViewAccessibility _accessibilityPerformValidations:]
+0x193deab48  __TEXT,__text  -[HealthExperienceUI_CellWithAccessoryViewAccessibility isAccessibilityElement]
+0x193deab50  __TEXT,__text  -[HealthExperienceUI_CellWithAccessoryViewAccessibility accessibilityLabel]
+0x193deab54  __TEXT,__text  -[HealthExperienceUI_CellWithAccessoryViewAccessibility accessibilityValue]
+0x193deabcc  __TEXT,__text  -[HealthExperienceUI_CellWithAccessoryViewAccessibility accessibilityTraits]
+0x193deac38  __TEXT,__text  -[HealthExperienceUI_CellWithAccessoryViewAccessibility accessibilityActivationPoint]
+0x193deacb4  __TEXT,__text  -[HealthExperienceUI_CellWithAccessoryViewAccessibility _axSwitchView]
+0x193deacec  __TEXT,__text  +[ListContentConfigurationHostCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193deacf8  __TEXT,__text  +[ListContentConfigurationHostCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193dead04  __TEXT,__text  +[ListContentConfigurationHostCellAccessibility _accessibilityPerformValidations:]
+0x193dead08  __TEXT,__text  -[ListContentConfigurationHostCellAccessibility isAccessibilityElement]
+0x193dead10  __TEXT,__text  -[ListContentConfigurationHostCellAccessibility accessibilityLabel]
+0x193dead14  __TEXT,__text  -[ListContentConfigurationHostCellAccessibility accessibilityTraits]
+0x193dead24  __TEXT,__text  +[MultiselectTableViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193dead30  __TEXT,__text  +[MultiselectTableViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193dead3c  __TEXT,__text  +[MultiselectTableViewCellAccessibility _accessibilityPerformValidations:]
+0x193deade8  __TEXT,__text  -[MultiselectTableViewCellAccessibility isAccessibilityElement]
+0x193deadf0  __TEXT,__text  -[MultiselectTableViewCellAccessibility accessibilityLabel]
+0x193deae78  __TEXT,__text  -[MultiselectTableViewCellAccessibility accessibilityTraits]
+0x193deaef4  __TEXT,__text  +[CollectionViewListDisclosureCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193deaf00  __TEXT,__text  +[CollectionViewListDisclosureCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193deaf0c  __TEXT,__text  +[CollectionViewListDisclosureCellAccessibility _accessibilityPerformValidations:]
+0x193deaf10  __TEXT,__text  -[CollectionViewListDisclosureCellAccessibility isAccessibilityElement]
+0x193deaf18  __TEXT,__text  -[CollectionViewListDisclosureCellAccessibility accessibilityLabel]
+0x193deaf1c  __TEXT,__text  -[CollectionViewListDisclosureCellAccessibility accessibilityTraits]
+0x193deaf2c  __TEXT,__text  +[HostViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193deaf38  __TEXT,__text  +[HostViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193deaf44  __TEXT,__text  +[HostViewCellAccessibility _accessibilityPerformValidations:]
+0x193deaf5c  __TEXT,__text  -[HostViewCellAccessibility _axButton]
+0x193deafa4  __TEXT,__text  ___38-[HostViewCellAccessibility _axButton]_block_invoke
+0x193deaff0  __TEXT,__text  -[HostViewCellAccessibility accessibilityActivationPoint]
+0x193deb06c  __TEXT,__text  -[HostViewCellAccessibility isAccessibilityElement]
+0x193deb074  __TEXT,__text  -[HostViewCellAccessibility accessibilityLabel]
+0x193deb078  __TEXT,__text  -[HostViewCellAccessibility accessibilityTraits]
+0x193deb0f8  __TEXT,__text  +[DataTypeDetailDisclosureCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193deb104  __TEXT,__text  +[DataTypeDetailDisclosureCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193deb110  __TEXT,__text  +[DataTypeDetailDisclosureCellAccessibility _accessibilityPerformValidations:]
+0x193deb114  __TEXT,__text  -[DataTypeDetailDisclosureCellAccessibility isAccessibilityElement]
+0x193deb11c  __TEXT,__text  -[DataTypeDetailDisclosureCellAccessibility accessibilityLabel]
+0x193deb120  __TEXT,__text  -[DataTypeDetailDisclosureCellAccessibility accessibilityTraits]
+0x193deb168  __TEXT,__text  +[DataTypeDetailFavoritesCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193deb174  __TEXT,__text  +[DataTypeDetailFavoritesCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193deb180  __TEXT,__text  +[DataTypeDetailFavoritesCellAccessibility _accessibilityPerformValidations:]
+0x193deb184  __TEXT,__text  -[DataTypeDetailFavoritesCellAccessibility isAccessibilityElement]
+0x193deb18c  __TEXT,__text  -[DataTypeDetailFavoritesCellAccessibility accessibilityLabel]
+0x193deb190  __TEXT,__text  -[DataTypeDetailFavoritesCellAccessibility accessibilityTraits]
+```
+

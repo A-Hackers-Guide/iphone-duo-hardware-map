@@ -1,0 +1,29 @@
+## aopfw-v68aop.RELEASE
+BUILD-INFO[402]:{"DisplayName":"roottask.IOP_ASC8_ETEXT.RELEASE","DisplayVersion":"1223.40.8~1601","BuildTime":"2026-10-03T15:51:36-0700","ProjectName":"pitayaOS","ProductName":"roottask.IOP_ASC8_ETEXT.RELEASE","SourceVersion":"1223.40.8","BuildVersion":"1601","BuildConfiguration":"RELEASE","BuildType":"Official","Compiler":"clang-2100.4.1.1","SdkVersion":"27.2","SdkBuild":"24B91004","TargetArchitectures":"arm64e"}
+PROGRAM:AOPALSDriverV68Trusted  PROJECT:AppleEmbeddedLightSensor-2300.52.5
+PROGRAM:AOPALSDriverV68Untrusted  PROJECT:AppleEmbeddedLightSensor-2300.52.5
+PROGRAM:AtlantisFirmwareiPhone19TrustedCustomer  PROJECT:AtlantisFirmware-57.0.0
+PROGRAM:AtlantisFirmwareiPhone19UntrustedCustomer  PROJECT:AtlantisFirmware-57.0.0
+PROGRAM:AudioProviderFrameworkR3_trusted  PROJECT:AudioProviderFramework-600.21
+PROGRAM:AudioProviderFrameworkR3_untrusted  PROJECT:AudioProviderFramework-600.21
+PROGRAM:ESDVersion  PROJECT:EmbeddedSystemDefinitions-
+PROGRAM:RTKitAudioFramework  PROJECT:RTKitAudioFramework-610.1
+PROGRAM:RTKitAudioPeripherals  PROJECT:RTKitAudioPeripherals-610.2
+PROGRAM:RailEnergyBecketts  PROJECT:powerlog-3486.52.2
+PROGRAM:SPUMotion8160v68  PROJECT:CoreLocation-3187.0.1
+PROGRAM:SPUMotion8160v68Trusted  PROJECT:CoreLocation-3187.0.1
+PROGRAM:SPUMotionTightbeam  PROJECT:CoreLocation-3187.0.1
+PROGRAM:VoiceTrigger64V5_trusted  PROJECT:AppleAOPVoiceTriggerFirmware-600.15
+PROGRAM:VoiceTrigger64V5_untrusted  PROJECT:AppleAOPVoiceTriggerFirmware-600.15
+PROGRAM:iphone19AOPAudio_trusted  PROJECT:AppleAOPAudioFirmware-610.18
+PROGRAM:iphone19AOPAudio_untrusted  PROJECT:AppleAOPAudioFirmware-610.18
+RTKit_armv8_cl4_Oz_flto_pac-3514.40.18.release
+## aop2fw-v68aop2.RELEASE
+BUILD-INFO[390]:{"DisplayName":"roottask.IOP_ASC8.RELEASE","DisplayVersion":"1223.40.8~1601","BuildTime":"2026-10-03T15:46:14-0700","ProjectName":"pitayaOS","ProductName":"roottask.IOP_ASC8.RELEASE","SourceVersion":"1223.40.8","BuildVersion":"1601","BuildConfiguration":"RELEASE","BuildType":"Official","Compiler":"clang-2100.4.1.1","SdkVersion":"27.2","SdkBuild":"24B91004","TargetArchitectures":"arm64e"}
+PROGRAM:AFKNonShared  PROJECT:AppleFirmwareKit-743.40.4
+PROGRAM:AppleFirmwareKit  PROJECT:AppleFirmwareKit-743.40.4
+PROGRAM:ExclavesMessageQueueProducerIOP  PROJECT:AlwaysOnExclaves-66.40.15
+PROGRAM:PolarisExclaveMessageQueueProducer  PROJECT:Polaris-1
+RTKit_armv8_cl4_Oz_flto_pac-3514.40.18.release
+## V68_MtpFirmware
+RTKit_armv8_chinook_Oz_flto-3514.40.18.release

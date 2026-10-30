@@ -1,0 +1,88 @@
+# `/System/Library/FeatureFlags/Domain/PerfPowerServices.plist`
+
+From the upgrade restore ramdisk (141-29011-104.dmg). 4,985 bytes.
+
+- `DTS`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `PPSSignpostController`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `accounting_forward_race`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `accounting_merging`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `app_deletion`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `battery_health_details`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `battery_usage_ui`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `bdc_1hz_logging`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `bgsql_dedicated_cache`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `bui_25`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `bui_backend_iOS`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `bui_background_app_usage_insight`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `bui_charging_limit`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `bui_dts_al`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `bui_dts_frontend`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `bui_dts_runtime_and_accounting`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `bui_dts_usage_graph_aggregations`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `bui_graph_intervals_iOS`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `bui_improved_service_handoff`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `bui_last_charge_iOS`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `bui_lpm_ipad_ipod`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `bui_powerout`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `bui_screen_state_guard`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `bui_tlc_notif_iOS`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `debug_profile_upgrade`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `drain_comparison_breakdown_dependent`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `elp_ca`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `enableSubSecondAssertionOptimization`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `metricKitContextualizedData`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `msp_monitor`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `override_allowlist`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `powerlog_set_permissions`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `pre_unlock_telemetry`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `safeguard_upload`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `signpost_reader_idle_exit`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `smc_redesign`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `switch_to_incremental_vacuum`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `tasking_ce_copy_tables`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `tasking_text_mss`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `trial_tasking`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `ursa`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `xpc_hourly_drop_tracking`:
+  - `DevelopmentPhase`: `FeatureComplete`

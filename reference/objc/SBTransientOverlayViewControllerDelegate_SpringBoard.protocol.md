@@ -1,0 +1,30 @@
+# `SBTransientOverlayViewControllerDelegate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 20 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[SBTransientOverlayViewControllerDelegate transientOverlayViewController:requestZStackParticipantPreferencesUpdateWithReason:];
+-[SBTransientOverlayViewControllerDelegate transientOverlayViewControllerNeedsProximityDetectionUpdate:];
+-[SBTransientOverlayViewControllerDelegate transientOverlayViewControllerDidUpdateHIDEventDeferringDisabled:];
+-[SBTransientOverlayViewControllerDelegate defaultPreferredInterfaceOrientationForPresentationForTransientOverlayViewController:];
+-[SBTransientOverlayViewControllerDelegate isKeyboardVisibleForSpringBoardForTransientOverlayViewController:];
+-[SBTransientOverlayViewControllerDelegate transientOverlayViewControllerNeedsContentOpaqueUpdate:];
+-[SBTransientOverlayViewControllerDelegate transientOverlayViewControllerNeedsGestureDismissalStyleUpdate:];
+-[SBTransientOverlayViewControllerDelegate transientOverlayViewControllerNeedsSceneDeactivationUpdate:];
+-[SBTransientOverlayViewControllerDelegate transientOverlayDidUpdateSupportedInterfaceOrientations:];
+-[SBTransientOverlayViewControllerDelegate transientOverlayViewControllerDidEndRotation:];
+-[SBTransientOverlayViewControllerDelegate transientOverlayViewControllerWillBeginRotation:toInterfaceOrientation:];
+-[SBTransientOverlayViewControllerDelegate transientOverlayViewControllerNeedsWindowHitTestingUpdate:];
+-[SBTransientOverlayViewControllerDelegate transientOverlayViewControllerIsForegroundActive:];
+-[SBTransientOverlayViewControllerDelegate transientOverlayViewControllerNeedsStatusBarAppearanceUpdate:];
+-[SBTransientOverlayViewControllerDelegate defaultShouldAutorotateForTransientOverlayViewController:];
+-[SBTransientOverlayViewControllerDelegate transientOverlayViewControllerNeedsFeaturePolicyUpdate:];
+-[SBTransientOverlayViewControllerDelegate transientOverlayViewControllerDidUpdatePresentationPrefersStatusBarHidden:];
+-[SBTransientOverlayViewControllerDelegate defaultSupportedInterfaceOrientationsForTransientOverlayViewController:];
+-[SBTransientOverlayViewControllerDelegate transientOverlayViewControllerNeedsWhitePointAdaptivityStyleUpdate:];
+-[SBTransientOverlayViewControllerDelegate transientOverlayViewControllerNeedsOrientationUpdatesDisabledUpdate:];
+```

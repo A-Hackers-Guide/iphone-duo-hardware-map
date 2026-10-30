@@ -1,0 +1,72 @@
+# `IOThunderboltPath`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.iokit.IOThunderboltFamily`](../kexts/com.apple.iokit.IOThunderboltFamily.md)
+- Object size: `0x160` (352 bytes)
+- Metaclass: `0xfffffe000ba1cc28`; metaclass vtable `0xfffffe0008410ab8`; class vtable `0xfffffe00084106b0`
+- Registration (init): `0xfffffe000a50a810`
+- Superclasses: [`IOThunderboltAbstractPath`](IOThunderboltAbstractPath.md)
+
+## Strings in its kext that name it (60)
+
+- `%lldus IOThunderboltPath<%p>::findBestPath - path %d - route = 0x%llx port = 0x%x hw_bw = %d req_alloc_bw = %d req_bw_avail = %d req_bw = %d\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - new_port %d route = 0x%llx port = 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::allocate - (1) allocated input hop id %d for dst port %p status = 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - add start_port route = 0x%llx port = 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::getNextPortsArray - odd port index\n`
+- `%lldus IOThunderboltPath<%p>::createPathTable - not enough bandwidth\n`
+- `%lldus IOThunderboltPath<%p>::findCandidatePaths - candidate_paths = %p\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - use new path, maximize \n`
+- `%lldus IOThunderboltPath<%p>::configCommandCallback - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltPath<%p>::setDestinationPort - fLocalState = %d destination_port = %p\n`
+- `%lldus IOThunderboltPath<%p>::activate - fLocalState = %d\n`
+- `%lldus IOThunderboltPath<%p>::deallocate - fLocalState = %d\n`
+- `%lldus IOThunderboltPath<%p>::processNFCActivationResults - didn't lock, old_value = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - path uses primary lane - discard path %d\n`
+- `%lldus IOThunderboltPath<%p>::allocate - dst_port %p != fDestinationPort %p\n`
+- `%lldus IOThunderboltPath<%p>::doUpdate - 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath ------------------------- \n`
+- `%lldus IOThunderboltPath<%p>::getMinLinkRate - done, min_available_bandwidth = %d\n`
+- `%lldus IOThunderboltPath<%p>::destroyResources\n`
+- `%lldus IOThunderboltPath<%p>::mergeLists - failed to find inflection point\n`
+- `%lldus IOThunderboltPath<%p>::beginNextActivationWrite - route 0x%llx, src_port = %d, src_hopID = %d, counter_id = %d, packet = 0x%08x %08x %08x\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - path uses a zero hw bandwidth port - discard path %d\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - port 0 to current list\n`
+- `%lldus IOThunderboltPath<%p>::configCommandCallback - command completion in illegal state = %d\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - add lists for ports > 1\n`
+- `%lldus IOThunderboltPath<%p>::setSourcePort - fLocalState = %d source_port = %p\n`
+- `%lldus IOThunderboltPath<%p>::doHopDeactivations - skipping invalid hop_index %d\n`
+- `%lldus IOThunderboltPath<%p>::findCandidatePaths\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - downstream_port = %p, upstream_port = %p\n`
+- `%lldus IOThunderboltPath<%p>::findCandidatePaths - find dst to nhi paths - fDestinationPort = %p\n`
+- `%lldus IOThunderboltPath<%p>::mergeLists - found a loop, discarding\n`
+- `%lldus IOThunderboltPath<%p>::doHopDeactivations - dst_route_string = 0x%llx, src_port_number = %d, src_hop_id = %d\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - start_switch = %p\n`
+- `%lldus IOThunderboltPath<%p>::findCandidatePaths ------------------------- \n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - path uses internal link - discard path %d\n`
+- `%lldus IOThunderboltPath<%p>::allocate - allocated input hop id %d for src port %p status = 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - free_bw = %d length = %d score = %d\n`
+- `%lldus IOThunderboltPath<%p>::createPathTable - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::doHopDeactivations - hop_index = %d\n`
+- `%lldus IOThunderboltPath<%p>::update - dispatchAsync( IOThunderboltPath<%p>::doUpdate )\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - ERROR can't find ports\n`
+- `%lldus IOThunderboltPath<%p>::update - fLocalState = %d\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - ERROR can't allocate NFC\n`
+- `%lldus IOThunderboltPath<%p>::allocate - (1) allocated input hop id %d for dst port %p dst counter id = %d status = 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::allocate - dst_port->getMaxInHopID = %d\n`
+- `%lldus IOThunderboltPath<%p>::deactivate - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::doHopDeactivations - ERROR: starting hop deactivations failed with 0x%08x, moving on to NFC\n`
+- `%lldus IOThunderboltPath<%p>::getPacketForPath - index = %d, valid = %d, clearISE = %d\n`
+- `%lldus IOThunderboltPath<%p>::pollForQNE - hop_index = %d, dst_route_string = 0x%llx, src_port_number = %d, src_hop_id = %d\n`
+- `%lldus IOThunderboltPath<%p>::destroyPathTable - table = %p count = %d\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - path uses secondary lane - discard path %d\n`
+- `%lldus IOThunderboltPath<%p>::findUpstreamPaths - path %d - route = 0x%llx port = 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - in_port = %p, in_port_num = %d, out_port = %p out_port_num = %d\n`
+- `%lldus IOThunderboltPath<%p>::findBestPath - src_to_nhi_list = %p status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::configureFromDescription - description->pathType = 0x%x startroute = 0x%llx\n`
+- `%lldus IOThunderboltPath<%p>::createResources - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltPath<%p>::findCandidatePaths - find src to nhi paths - fSourcePort = %p\n`
+- `%lldus IOThunderboltPath<%p>::update - ERROR: status = 0x%x\n`
+- `%lldus IOThunderboltPath<%p>::getNextPortsArray - found a loop, ignoring next port\n`
+- `%lldus IOThunderboltPath<%p>::getAvailableBandwidth - hw_bandwidth = %d, allocated_bandwidth = %d, available_bandwidth = %d, min_available_bandwidth = %d\n`

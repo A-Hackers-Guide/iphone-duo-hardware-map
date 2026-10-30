@@ -1,0 +1,91 @@
+# `SBHomeGestureExclusionTrapezoidSettings`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `PTSettings`
+- 16 instance variables, 16 properties, 33 instance methods, 1 class methods
+
+## Instance variables
+
+```
+B _showExclusionTrapezoidDebugView;
+B _landscapeTrapezoidEnabled;
+B _allowHorizontalSwipesOutsideLandscapeTrapezoid;
+B _portraitTrapezoidEnabled;
+B _portraitTrapezoidEnabledOnlyForKeyboards;
+B _allowHorizontalSwipesOutsidePortraitTrapezoid;
+d _landscapeTrapezoidHeight;
+d _landscapeTrapezoidBaseHeight;
+d _landscapeTrapezoidAdjacentXDistanceFromEdge;
+d _landscapeTrapezoidOpposingXDistanceFromEdge;
+d _landscapeTrapezoidAdjacentXPercentageFromEdge;
+d _landscapeTrapezoidOpposingXPercentageFromEdge;
+d _portraitTrapezoidHeight;
+d _portraitTrapezoidBaseHeight;
+d _portraitTrapezoidAdjacentXDistanceFromEdge;
+d _portraitTrapezoidOpposingXDistanceFromEdge;
+```
+
+## Properties
+
+```
+@property (TB,N,V_showExclusionTrapezoidDebugView) showExclusionTrapezoidDebugView;
+@property (TB,N,V_landscapeTrapezoidEnabled) landscapeTrapezoidEnabled;
+@property (TB,N,V_allowHorizontalSwipesOutsideLandscapeTrapezoid) allowHorizontalSwipesOutsideLandscapeTrapezoid;
+@property (Td,N,V_landscapeTrapezoidHeight) landscapeTrapezoidHeight;
+@property (Td,N,V_landscapeTrapezoidBaseHeight) landscapeTrapezoidBaseHeight;
+@property (Td,N,V_landscapeTrapezoidAdjacentXDistanceFromEdge) landscapeTrapezoidAdjacentXDistanceFromEdge;
+@property (Td,N,V_landscapeTrapezoidOpposingXDistanceFromEdge) landscapeTrapezoidOpposingXDistanceFromEdge;
+@property (Td,N,V_landscapeTrapezoidAdjacentXPercentageFromEdge) landscapeTrapezoidAdjacentXPercentageFromEdge;
+@property (Td,N,V_landscapeTrapezoidOpposingXPercentageFromEdge) landscapeTrapezoidOpposingXPercentageFromEdge;
+@property (TB,N,V_portraitTrapezoidEnabled) portraitTrapezoidEnabled;
+@property (TB,N,V_portraitTrapezoidEnabledOnlyForKeyboards) portraitTrapezoidEnabledOnlyForKeyboards;
+@property (TB,N,V_allowHorizontalSwipesOutsidePortraitTrapezoid) allowHorizontalSwipesOutsidePortraitTrapezoid;
+@property (Td,N,V_portraitTrapezoidHeight) portraitTrapezoidHeight;
+@property (Td,N,V_portraitTrapezoidBaseHeight) portraitTrapezoidBaseHeight;
+@property (Td,N,V_portraitTrapezoidAdjacentXDistanceFromEdge) portraitTrapezoidAdjacentXDistanceFromEdge;
+@property (Td,N,V_portraitTrapezoidOpposingXDistanceFromEdge) portraitTrapezoidOpposingXDistanceFromEdge;
+```
+
+## Class methods
+
+```
++[SBHomeGestureExclusionTrapezoidSettings settingsControllerModule];
+```
+
+## Instance methods
+
+```
+-[SBHomeGestureExclusionTrapezoidSettings landscapeTrapezoidOpposingXDistanceFromEdge];
+-[SBHomeGestureExclusionTrapezoidSettings portraitTrapezoidEnabledOnlyForKeyboards];
+-[SBHomeGestureExclusionTrapezoidSettings setLandscapeTrapezoidOpposingXPercentageFromEdge:];
+-[SBHomeGestureExclusionTrapezoidSettings setLandscapeTrapezoidHeight:];
+-[SBHomeGestureExclusionTrapezoidSettings allowHorizontalSwipesOutsidePortraitTrapezoid];
+-[SBHomeGestureExclusionTrapezoidSettings setPortraitTrapezoidHeight:];
+-[SBHomeGestureExclusionTrapezoidSettings showExclusionTrapezoidDebugView];
+-[SBHomeGestureExclusionTrapezoidSettings portraitTrapezoidEnabled];
+-[SBHomeGestureExclusionTrapezoidSettings setPortraitTrapezoidOpposingXDistanceFromEdge:];
+-[SBHomeGestureExclusionTrapezoidSettings landscapeTrapezoidOpposingXPercentageFromEdge];
+-[SBHomeGestureExclusionTrapezoidSettings setShowExclusionTrapezoidDebugView:];
+-[SBHomeGestureExclusionTrapezoidSettings setLandscapeTrapezoidEnabled:];
+-[SBHomeGestureExclusionTrapezoidSettings allowHorizontalSwipesOutsideLandscapeTrapezoid];
+-[SBHomeGestureExclusionTrapezoidSettings portraitTrapezoidAdjacentXDistanceFromEdge];
+-[SBHomeGestureExclusionTrapezoidSettings setDefaultValues];
+-[SBHomeGestureExclusionTrapezoidSettings portraitTrapezoidHeight];
+-[SBHomeGestureExclusionTrapezoidSettings landscapeTrapezoidAdjacentXPercentageFromEdge];
+-[SBHomeGestureExclusionTrapezoidSettings setLandscapeTrapezoidAdjacentXDistanceFromEdge:];
+-[SBHomeGestureExclusionTrapezoidSettings setPortraitTrapezoidBaseHeight:];
+-[SBHomeGestureExclusionTrapezoidSettings portraitTrapezoidBaseHeight];
+-[SBHomeGestureExclusionTrapezoidSettings setPortraitTrapezoidAdjacentXDistanceFromEdge:];
+-[SBHomeGestureExclusionTrapezoidSettings setPortraitTrapezoidEnabledOnlyForKeyboards:];
+-[SBHomeGestureExclusionTrapezoidSettings setPortraitTrapezoidEnabled:];
+-[SBHomeGestureExclusionTrapezoidSettings landscapeTrapezoidBaseHeight];
+-[SBHomeGestureExclusionTrapezoidSettings setLandscapeTrapezoidOpposingXDistanceFromEdge:];
+-[SBHomeGestureExclusionTrapezoidSettings portraitTrapezoidOpposingXDistanceFromEdge];
+-[SBHomeGestureExclusionTrapezoidSettings setAllowHorizontalSwipesOutsidePortraitTrapezoid:];
+-[SBHomeGestureExclusionTrapezoidSettings setLandscapeTrapezoidAdjacentXPercentageFromEdge:];
+-[SBHomeGestureExclusionTrapezoidSettings landscapeTrapezoidEnabled];
+-[SBHomeGestureExclusionTrapezoidSettings setLandscapeTrapezoidBaseHeight:];
+-[SBHomeGestureExclusionTrapezoidSettings setAllowHorizontalSwipesOutsideLandscapeTrapezoid:];
+-[SBHomeGestureExclusionTrapezoidSettings landscapeTrapezoidAdjacentXDistanceFromEdge];
+-[SBHomeGestureExclusionTrapezoidSettings landscapeTrapezoidHeight];
+```

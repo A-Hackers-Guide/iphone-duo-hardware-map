@@ -1,0 +1,72 @@
+# `IOThunderboltEEPROM`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.iokit.IOThunderboltFamily`](../kexts/com.apple.iokit.IOThunderboltFamily.md)
+- Object size: `0x380` (896 bytes)
+- Metaclass: `0xfffffe000ba1d518`; metaclass vtable `0xfffffe000841f3e8`; class vtable `0xfffffe000841f168`
+- Registration (init): `0xfffffe000a59ab4c`
+- Superclasses: none registered (derives from a kernel-core root such as OSObject)
+
+## Strings in its kext that name it (60)
+
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::addressWrite - i = %d,\tSK = 1, status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readDROM - fSwitch not set in regular mode!\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - enable = %d, clear kEE_BB_REQ\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - uid: 0x%llx\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getPortLinkID - adapterType = 0x%06x disabled = %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getDROM - Error getting DROM from I/O Registry (0x%x)\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::doesPortHaveMicro - adapterType = 0x%06x disabled = %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::dataRead - i = %d,\tD0 = 0, status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - Failed CRC8 Verification: 0x%x != 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getDROM - fSwitch = %p fUIDOnlyMode = %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - enable = %d, set kEE_CS\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - waiting for kEE_BB_RDY\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - isCaptive:0x%x bandwidth:0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - rid: 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - Port number is either 0 or exceeds maximum allowed value!\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getDROM - Error reading DROM from EEPROM (0x%x)\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getGenericEntry - found type: 0x%x \n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - enable = %d, clear kEE_CS, status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - parsing entry at offset 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::addressWrite - i = %d,\tDI = 1, status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readDROM - DROM Offset 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - Failed CRC32 Verification: 0x%x != 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readSynchronous - Error getting DROM 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - overstepped buffer size!\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readSynchronous - status = 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - portNum: 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - waiting for kEE_BB_RDY fEECRegisterCache = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readDROMFromRegistry\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readSynchronous - fUIDOnlyMode = %d\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - DP Port v2 - entryLength: 0x%x hasPreferredPort: 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readSynchronous - set Persistence to 0x%x, status = 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData \n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - Basic Port - disabled: 0x%x adapterType: 0x%06X\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - modelID: 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getGenericEntry - overstepped buffer size!\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - modelRev: 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::addressWrite - i = %d,\tDI = 0, status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getAuxMicro - found aux micro descriptor of type 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - Asserting kEE_BB_REQ\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - hasDualLinkPort:%u linkID:%u dualLinkPortRID:0x%x dualLinkPeerPortNum:0x%x microType:0x%x microRID:0x%x microAID:0x%x hasIntPeerPort:%u intPeerPortRID:0x%x intPeerPortNum:0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getMicroForPort - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - Size: %u ROM buffer size: %u\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::dataWrite - i = %d,\tSK = 1, status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readDROM - DROM lengthOffset 0x%x length %u status 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::initWithController\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::addressWrite - i = %d,\tSK = 0, status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - enable = %d, clear kEE_BB\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::dataWrite - i = %d,\tDI = 0, status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - CRC8: 0x%x Len: 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - waiting for kEE_BB_REQ\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - pciDeviceNum:0x%x pciFunctionNum:0x%x isUpAdapter:%u\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::readSynchronous\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::patchDROM - fSwitch not set in regular mode!\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - isSlotDevice:0x%x isLeafDevice:0x%x requiredBandwidth:0x%x maxBandwidth:0x%x reqBandIn:0x%x maxBandIn:0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - waiting for kEE_BB\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::enableROMAccess - waiting for kEE_BB_REQ fEECRegisterCache = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getAuxMicro - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::parseDROMData - preferredNullPort: 0x%x\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::getDROM - Failed to get a reliable DROM (status=0x%x), retry %d...\n`
+- `%lldus IOThunderboltEEPROM<%p>(0x%llx)::doesPortHaveInternalPeerPort - portNumber = %d, hasIntPeerPort = %d\n`

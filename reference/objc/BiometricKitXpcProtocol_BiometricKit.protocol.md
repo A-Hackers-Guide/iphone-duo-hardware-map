@@ -1,0 +1,83 @@
+# `BiometricKitXpcProtocol` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit`](../userland/System__Library__PrivateFrameworks__BiometricKit.framework__BiometricKit.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 73 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[BiometricKitXpcProtocol getProtectedConfigurationForUser:client:replyBlock:];
+-[BiometricKitXpcProtocol isPeriocularEnrollmentSupported:replyBlock:];
+-[BiometricKitXpcProtocol pullDebugImageData:rotated:client:replyBlock:];
+-[BiometricKitXpcProtocol setTemplate:forIdentity:client:replyBlock:];
+-[BiometricKitXpcProtocol enrollContinue:replyBlock:];
+-[BiometricKitXpcProtocol cancel:replyBlock:];
+-[BiometricKitXpcProtocol isAriadneSignpostsEnabled:replyBlock:];
+-[BiometricKitXpcProtocol dropUnlockToken:replyBlock:];
+-[BiometricKitXpcProtocol registerDSID:options:client:replyBlock:];
+-[BiometricKitXpcProtocol getLastMatchEvent:replyBlock:];
+-[BiometricKitXpcProtocol setUserDSID:options:client:replyBlock:];
+-[BiometricKitXpcProtocol getSensorInfo:replyBlock:];
+-[BiometricKitXpcProtocol disconnect:replyBlock:];
+-[BiometricKitXpcProtocol notifyAppIsInactive:client:];
+-[BiometricKitXpcProtocol pullCalibrationData:replyBlock:];
+-[BiometricKitXpcProtocol removePeriocularTemplatesWithOptions:async:client:replyBlock:];
+-[BiometricKitXpcProtocol startNewMatchAttempt:replyBlock:];
+-[BiometricKitXpcProtocol getNodeTopologyForIdentity:client:replyBlock:];
+-[BiometricKitXpcProtocol diagnostics:options:client:replyBlock:];
+-[BiometricKitXpcProtocol getPeriocularMatchState:client:replyBlock:];
+-[BiometricKitXpcProtocol isXARTAvailable:replyBlock:];
+-[BiometricKitXpcProtocol removeAllPreferencesWithClient:replyBlock:];
+-[BiometricKitXpcProtocol isFingerOn:replyBlock:];
+-[BiometricKitXpcProtocol getSystemProtectedConfiguration:replyBlock:];
+-[BiometricKitXpcProtocol match:options:async:client:replyBlock:];
+-[BiometricKitXpcProtocol getPreferencesValueForKey:client:replyBlock:];
+-[BiometricKitXpcProtocol getCalibrationDataInfo:replyBlock:];
+-[BiometricKitXpcProtocol pullAlignmentData:replyBlock:];
+-[BiometricKitXpcProtocol getCountersignedStoreToken:replyBlock:];
+-[BiometricKitXpcProtocol getProvisioningState:replyBlock:];
+-[BiometricKitXpcProtocol setPreferencesValue:forKey:client:replyBlock:];
+-[BiometricKitXpcProtocol registerDelegate:client:replyBlock:];
+-[BiometricKitXpcProtocol removeIdentity:options:async:client:replyBlock:];
+-[BiometricKitXpcProtocol resetAppleConnectCounter:replyBlock:];
+-[BiometricKitXpcProtocol pullMatchPolicyInfoData:replyBlock:];
+-[BiometricKitXpcProtocol setSystemProtectedConfiguration:options:async:client:replyBlock:];
+-[BiometricKitXpcProtocol completeEnrollment:replyBlock:];
+-[BiometricKitXpcProtocol getSensorCalibrationStatus:replyBlock:];
+-[BiometricKitXpcProtocol detectPresenceWithOptions:async:client:replyBlock:];
+-[BiometricKitXpcProtocol enroll:user:options:async:client:replyBlock:];
+-[BiometricKitXpcProtocol setProtectedConfiguration:user:options:async:client:replyBlock:];
+-[BiometricKitXpcProtocol getBioLockoutStateForUser:client:replyBlock:];
+-[BiometricKitXpcProtocol enableBackgroundFdet:client:replyBlock:];
+-[BiometricKitXpcProtocol forceBioLockoutForUser:options:client:replyBlock:];
+-[BiometricKitXpcProtocol getIdentitiesDatabaseUUIDForUser:client:replyBlock:];
+-[BiometricKitXpcProtocol getDeviceState:replyBlock:];
+-[BiometricKitXpcProtocol timestampEvent:absoluteTime:client:replyBlock:];
+-[BiometricKitXpcProtocol updateIdentity:options:async:client:replyBlock:];
+-[BiometricKitXpcProtocol listAccessories:replyBlock:];
+-[BiometricKitXpcProtocol identities:client:replyBlock:];
+-[BiometricKitXpcProtocol connect:client:replyBlock:];
+-[BiometricKitXpcProtocol registerStoreToken:client:replyBlock:];
+-[BiometricKitXpcProtocol queryIdentityMigrationFailureForUser:clear:client:replyBlock:];
+-[BiometricKitXpcProtocol getIdentitiesDatabaseHashForUser:client:replyBlock:];
+-[BiometricKitXpcProtocol fileRadarWithLogs:description:client:replyBlock:];
+-[BiometricKitXpcProtocol notifyAppIsBackground:client:];
+-[BiometricKitXpcProtocol pauseFaceDetectTimer:client:replyBlock:];
+-[BiometricKitXpcProtocol getLogs:client:replyBlock:];
+-[BiometricKitXpcProtocol getDeviceHardwareState:replyBlock:];
+-[BiometricKitXpcProtocol getBiometryAvailabilityForUser:client:replyBlock:];
+-[BiometricKitXpcProtocol getDeviceProperties:replyBlock:];
+-[BiometricKitXpcProtocol getExpressModeStateForUser:client:replyBlock:];
+-[BiometricKitXpcProtocol enableMatchAutoRetry:client:replyBlock:];
+-[BiometricKitXpcProtocol getFreeIdentityCount:user:client:replyBlock:];
+-[BiometricKitXpcProtocol getIdentityFromUUID:client:replyBlock:];
+-[BiometricKitXpcProtocol logEventOrCode:];
+-[BiometricKitXpcProtocol suspendEnrollment:client:replyBlock:];
+-[BiometricKitXpcProtocol getFreeIdentityCountForUser:accessoryGroup:client:replyBlock:];
+-[BiometricKitXpcProtocol pullCaptureBuffer:replyBlock:];
+-[BiometricKitXpcProtocol setDebugImages:client:replyBlock:];
+-[BiometricKitXpcProtocol removeAllIdentitiesForUser:options:async:client:replyBlock:];
+-[BiometricKitXpcProtocol getMaxIdentityCount:client:replyBlock:];
+-[BiometricKitXpcProtocol prewarmCamera:client:replyBlock:];
+```

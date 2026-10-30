@@ -1,0 +1,18 @@
+# `IODPLegacyDualDVIService`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.iokit.IODisplayPortFamily`](../kexts/com.apple.iokit.IODisplayPortFamily.md)
+- Object size: `0x540` (1,344 bytes)
+- Metaclass: `0xfffffe000b9f3a00`; metaclass vtable `0xfffffe0008367c60`; class vtable `0xfffffe0008366c90`
+- Registration (init): `0xfffffe000a0c5d70`
+- Superclasses: [`IODPService`](IODPService.md) → [`IOAVService`](IOAVService.md) → [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## IOKit personalities that instantiate it (1)
+
+- `IODPLegacyDualDVIService` in [`com.apple.iokit.IODisplayPortFamily`](../kexts/com.apple.iokit.IODisplayPortFamily.md): `IOProviderClass` = `IODPDevice`
+
+## Strings in its kext that name it (2)
+
+- `IODPLegacyDualDVIService`
+- `site.IODPLegacyDualDVIService`

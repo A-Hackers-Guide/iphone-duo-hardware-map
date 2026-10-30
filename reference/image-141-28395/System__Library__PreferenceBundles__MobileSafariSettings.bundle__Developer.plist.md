@@ -1,0 +1,65 @@
+# `/System/Library/PreferenceBundles/MobileSafariSettings.bundle/Developer.plist`
+
+From the small APFS image 141-28395-106.dmg. 1,332 bytes.
+
+- `items`:
+  -
+    - `SafariStorageSettingsControllerDataSourceClassName`: `SafariWebsiteDataDataSource`
+    - `cell`: `PSLinkCell`
+    - `detail`: `SafariStorageSettingsController`
+    - `id`: `REMOVE_WEBSITE_DATA`
+    - `label`: `Website Data Button Title`
+  -
+    - `cell`: `PSGroupCell`
+    - `footerCellClass`: `PSFooterHyperlinkView`
+    - `id`: `PRIVACY_SETTINGS`
+  -
+    - `cell`: `PSSwitchCell`
+    - `get`: `blockAllNewWebsiteDataEnabled`
+    - `id`: `BLOCK_ALL_NEW_COOKIES`
+    - `label`: `Block All Cookies`
+    - `safariRestricted`: `isBlockAllNewWebsiteDataRestricted:`
+    - `set`: `safariToggleBlockAllNewWebsiteData:forSpecifier:`
+  -
+    - `cell`: `PSSwitchCell`
+    - `containerBundleID`: `com.apple.mobilesafari`
+    - `default`: `1`
+    - `defaults`: `com.apple.mobilesafari`
+    - `id`: `PRIVATE_CLICK_MEASUREMENT`
+    - `key`: `PrivateClickMeasurementEnabled`
+    - `label`: `Privacy Preserving Ad Measurement`
+  -
+    - `cell`: `PSSwitchCell`
+    - `containerBundleID`: `com.apple.mobilesafari`
+    - `default`: `1`
+    - `defaults`: `com.apple.mobilesafari`
+    - `id`: `APPLE_PAY_DISCLOSURE_ALLOWED`
+    - `key`: `SafariApplePayDisclosureAllowed`
+    - `label`: `Check for Apple Pay`
+  -
+    - `cell`: `PSGroupCell`
+  -
+    - `cell`: `PSSwitchCell`
+    - `containerBundleID`: `com.apple.mobilesafari`
+    - `default`: `1`
+    - `defaults`: `com.apple.mobilesafari`
+    - `get`: `isJavaScriptEnabled:`
+    - `id`: `JAVASCRIPT_ENABLED`
+    - `key`: `JavaScriptEnabled`
+    - `label`: `JavaScript`
+    - `safariRestricted`: `isJavaScriptRestricted:`
+  -
+    - `cell`: `PSGroupCell`
+    - `id`: `REMOTE_INSPECTOR_ID`
+  -
+    - `cell`: `PSGroupCell`
+    - `id`: `REMOTE_AUTOMATION_ID`
+  -
+    - `cell`: `PSGroupCell`
+  -
+    - `cell`: `PSLinkCell`
+    - `detail`: `SafariWebKitExperimentalFeaturesSettingsController`
+    - `id`: `EXPERIMENTAL_FEATURES_ID`
+    - `label`: `Feature Flags`
+    - `searchPlist`: `ExperimentalFeatures`
+- `title`: `Advanced Settings Title`

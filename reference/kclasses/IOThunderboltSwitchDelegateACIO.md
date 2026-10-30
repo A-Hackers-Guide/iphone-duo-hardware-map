@@ -1,0 +1,72 @@
+# `IOThunderboltSwitchDelegateACIO`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.iokit.IOThunderboltFamily`](../kexts/com.apple.iokit.IOThunderboltFamily.md)
+- Object size: `0xb8` (184 bytes)
+- Metaclass: `0xfffffe000ba1d950`; metaclass vtable `0xfffffe00084261f8`; class vtable `0xfffffe0008426058`
+- Registration (init): `0xfffffe000a5e4414`
+- Superclasses: [`IOThunderboltSwitchDelegate`](IOThunderboltSwitchDelegate.md)
+
+## Strings in its kext that name it (60)
+
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::enterSpecialMode - port %d about to enable and reset registered state!\n`
+- `%lldus IOThunderboltSwitchDelegateACIO<%p>(0x%llx)::initWithController - acioPortDisable: 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::identifyHWRevision - return status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::exitSpecialMode invalidating port %d\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::updateWakeEnables - port_group_offset = 0x%x\n`
+- `%lldus Error: IOThunderboltSwitchDelegateACIO(%x@%llx)::initWithController Error writing to VSEC register: fACIOVSECRegOffset: 0x%08x, fACIOVSECRegValue: 0x%08x, VSEC Length: %d, offset greater than VSEC Length\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::identifyHWRevision - string_buffer = %s\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::readACIOCounters - reading chunk offset 0x%x, num dwords 0x%x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::configureSpecialMode - poffset = 0x%x data = 0x%08x mask = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::setupSpecialModes - key %s not found\n`
+- `%lldus Error: IOThunderboltSwitchDelegateACIO(%x@%llx)::initWithController Unable to find VSEC block with id: 0x%x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::identifyHWRevision\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::initWithController acio_fw_configuration: 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::preConfigureRouter - writing acio_fw_debug 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::overrideDeviceHeader\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::exitSpecialMode disabling and invalidating port %d\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::updateWakeEnables - modified port = %d offset = 0x%x with data = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::getRootDROM - guid = 0x%016llx\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::enterSpecialMode - port %d about to invalidate!\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%d@0x%llx)::publishSocketIDs - found port-number = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%d@0x%llx)::publishSocketIDs - hardware_service = %p status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::saveSleepState - return status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::getRootDROM - drom_buffer[0] = 0x%x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::getRootDROM - drom_buffer = %p\n`
+- `%lldus IOThunderboltSwitchDelegateACIO::overrideIsPortDisabled - port_number=0x%X disabled by boot-arg!\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::initWithController acio_fw_debug: 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::setupSpecialModes - found key = %s fSupportedSpecialMode = 0x%08x temp_status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::preConfigureRouter - vsec_offset = 0x%x status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::isLinkUp - connected = %d\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::setupSpecialModes - hardware_service = %p status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::updateWakeEnables - write device offset = 0x%x data = 0x%08x mask = 0x%08x - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::identifyHWRevision - string_offset = 0x%x string_length = 0x%x status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::updateWakeEnables - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::readACIOCounters - got vsec length: 0x%x, minus header: 0x%x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%d)::aggregateACIOCounters - aggregate counters\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::saveSleepState - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::initWithController Writing to VSEC register: fACIOVSECRegOffset: 0x%08x, fACIOVSECRegValue: 0x%08x, status: 0x%x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::readACIOCounters\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::preConfigureRouter - writing acio_fw_panic 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::enterSpecialMode - port %d adapter type = 0x%08x actual adapter type = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::restoreSleepState - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::updateWakeEnables - port %d is a primary NULL port\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::postConfigureRouter - vsec_offset = 0x%x status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::getRootDROM\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::updateCableParameters - offset = 0x%x value = 0x%08x current = 0x%08x cached = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::processXDomainLinkPreload - depth = %d \n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::preConfigureRouter - writing acio_fw_config 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::configureSpecialMode - write special mode VSEC\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::portSupportsDeviceScan - device_scan_supported = %d\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::restoreSleepState - return status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%d@0x%llx)::publishSocketIDs - using RID+1 = 0x%08x status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::initWithController acio_fw_panic: 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::lateSleepPhase3 - status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%d@0x%llx)::overrideDevicesConnectedState - found_devices = %d in_use = %d\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::setupSpecialModes - fSupportedSpecialMode = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::lateSleepPhase3 - vsec_offset = 0x%x status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::processXDomainLinkPreload - finished status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::getRootDROM - drom_data = %p\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::getRootDROM - old_drom_data = %p\n`
+- `%lldus IOThunderboltSwitchDelegateACIO(%x@%llx)::lateSleepPhase3 - write enter sleep, offset = 0x%x data = 0x%08x - status = 0x%08x\n`

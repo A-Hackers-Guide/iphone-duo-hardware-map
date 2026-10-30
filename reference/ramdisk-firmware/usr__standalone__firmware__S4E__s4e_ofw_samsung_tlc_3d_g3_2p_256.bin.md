@@ -1,0 +1,286 @@
+# `usr/standalone/firmware/S4E/s4e_ofw_samsung_tlc_3d_g3_2p_256.bin`
+
+- File size: 434,176 bytes
+
+## Payload [FW]
+
+- Size after IM4P unwrap / decompression: 434,176 bytes
+- Format: raw binary
+
+## Identity strings (versions, build tags) [FW]
+
+- `AppleMSPS4-13.174~1`
+
+## Strings (267) [FW]
+
+Printable runs of 6+ characters with at least three letters, in file order, with payload offset. For RTKit co-processor firmware these are the log formats, task names, endpoint names and assertions that describe what the processor does.
+
+```
+00000670  msp_core_samsung_tlc_3d_g3_2p_256-13.174.0
+0000172c  #F0FBF
+0000182e  \LUF.[>
+000018a4  QF*FCF
+000018f2  PFBF#F
+00001998  FWLDETOC
+00001b43  a)bjb>K
+00001c2b  `hFAFO
+00002265  C0`WHp`D
+00002448  msp_rom_extension-13.174.0
+000025c8  app_main
+00003ed0  Undefined
+00003ee0  Software Int
+00003ef0  Prefetch Abort
+00003f00  Data Abort
+00003f10  Reserved Exception
+00003f82  hFqFzF
+00005a33   1F*FCF
+00005b3b   1F*FCF
+00005b83   1F*FCF
+00005bcb   1F*FCF
+00005d02  pG(HCn
+000061c9  `(FAF"F)
+00006253  `(FAF"F)
+00006359  H1FRFCF
+00006385  H1FRFCF
+000063b5  H1FRFCF
+00006d15  hYNYMA
+000074cd  hIh+`(`)`j` I)`h`N
+0000823d  qhh40&
+00008e45  F0HlF0"
+00009625  %`avI!`A
+0000a2d6  LP0epeO
+0000a3b7  h#a%pGM
+0000a4b0  OFWB )
+0000af50  H`bLbH cbH
+0000bfa0  p!)`RIrP!h!
+0000c812  !4>jjH9H
+0000ca49  R0FaFZF
+0000caa4  sh2hpi
+0000cab8  uish2h
+0000cf04  &IZFCF
+0000d0a5  r`hCF]
+0000d273  rIhA`pG
+0000d582   FQFuF
+0000d58e   FAFZF
+0000d773    u!Mhi
+0000dd39  *WIky_
+0000e571  FrT1DJx
+0000e8a8  0FAFRF#F
+0000e8d9  $0FAFRF
+0000f146  +F1FJFMF
+0000f214  @F1FJF
+0000f4a1  &QFYE\FO
+0000f61e  $`KhVI
+0000fe9e  !Fnj0F
+0001059d  F hEh<H
+00012176  AFFj0F
+00012895  %0ItF!`O
+00012a10  PF!FBF3F
+00012a76  0F)FBF
+00013683  d#IAdC
+00013a87  DBy&K[
+00013c60  UUUU3333
+00013e78  *FbI1`4`
+00014045  F"hLNMI
+00014f77  Qgfff<
+000169fc  UUUU3333
+00017011  !$"LFPF
+00017054  FL xFM
+000189ae  MLfF x
+00018ffc  0"fFPFO
+00019573  b1`aFp`
+000199a1  FYFPF"
+0001a15e  jIJojI
+0001ad31  F FQFBF
+0001af5c  ^F2FAD
+0001cdd3   0c xpc
+0001d584  ]L^MAE
+0001daa5  `F`VFqi@F
+0001dc1d  xHC4!HC
+0001e404   FYFRF
+0001fd50  ,hhh1`O
+00020915  i!bBibb
+00021044  BToCEBTC
+00021788  ha'HAy
+00021ff5  h!`Aha`
+00022005  i!aAiaa
+00022015  j!bAjab
+00022025  k!cAkac
+0002210a  HVf`!`O
+0002378b  F(FYFBF
+000237b8  (FAF"F
+00023a1c  iL hAn(F
+00023d66  1FRFXF
+00023e31  F"LUFO
+00023f9c  WN!FWL
+00024121  FKH,Fo
+000244b8  (F1F"FCF
+00024c85  )eNeM5`
+00024ddd  ` FRF+F
+00024f3c   F1F*FCF
+00026a5d  FYhJh#H#L
+00026d2c  )FBmCn
+0002754b  `0xqxA
+00027a9d  b8jyj c
+00027f04  5F)iQE
+0002814b  "ekPFAF
+000281a4  TDa\1p
+0002875c  %Mhh"I#J
+00028c6e  Ml*CJd#
+00028d0d   uutcpb1
+00028d20  E@tfpe
+00029130  XF1F*FCF
+000295ff  !EuDcAb
+00029612  EPDfAe
+0002a186  % AppGM
+0002a329  ,(hKILJ
+0002a91e  X@0FAF]
+0002b5c4  UUUU3333
+0002c2af  BZabhO
+0002c347  k!kYfak
+0002c357  g!lYgal
+0002c7f5  D `)hnh
+0002cf30  AaZ`pG
+0002d57e  5hAL F
+0002df80  1h Frh
+0002e289  0XCszO
+0002edae  yHyIzJ
+0002ee33  k_Mlj F
+0002ee7c  NM,hhh @
+0002fcab  b#crH@~iN
+0002ffc7   BvpG<
+000303e3  aFIGKJ
+0003065e  qHBF[F
+0003067d   0vVFjH
+00030885  FKHBhKMKI
+00030aec  PFYFBF
+0003199d   1!BFO
+0003255b  FmF`x)
+00032d96  0F)FBF
+00032dea  0F!FBF
+00033a90  )xjx@N
+00033b22  @FYF"F
+00033e5d  1(FQCO
+000347d0  0F!FBF
+000349b0   x"Fax
+00034dd9   1F0aPF0"
+000353b0  0FAF"F]
+00035790  QF(NBF0F
+000358cc  (FQFBF
+000358f6  (FQFBF
+00035918  (FQFBF
+000359d0  `xmF'I*F
+00035de0  pGpG#H
+00036311   pGVUUUO
+00036c1e  P"0hFFj
+000373ba  1FRFCF
+0003800e  mN6hfL
+0003abe7  hhI!` `
+0003afa4  UUUU3333
+0003b9ad  FRF3FeF!F
+0003b9ba  xi!FRF3F
+0003ba9e  xi*FSF
+0003bab4  xiYF*FSF
+0003bb04  xi*FSF
+0003c3d2  mL&hfLfM%`&`
+0003ce87  d hah;J
+0003e02a  0DqD\V D
+0003ea65   aFrFO
+0003eb59  #IFbFO
+00040788  )FBFMF
+00040858  @F[xvL
+00041c0d   $(,048<@DHLP`lpt
+00041d7c  REXTFWLDR5FWXTRAPTSDHBTCPBBT$4BDBToC
+0004207c  DDDDDDDD
+0004225c  DDDDDDDD
+00042394  PPPPPPPP
+000429f8  012ABC
+00045758  c.'>*GAq{g
+00045787  lEq0E"
+000457d0  ffffffff
+00045860  msp_core_samsung_tlc_3d_g3_2p_256-13.174.0
+00045937  !INTERACTIVEhelloscmd
+000459f8  app_main
+00045a08  ASI Device Info
+00045a18  Uknown
+00045a30  tlc_3d_v4_2p_256
+00045a41  Internal Only Mode requires Automatic value to be used
+00045a78  EUB mode can not use Automatic value
+00045a9d  msp-nand-drive-v1.174-tigris_hdp
+00045ac0  AppleMSPS4-13.174~1
+0004c604  DCCBCCC
+0004c63d  DDD$"""
+0004c6c5  DDDD"""
+000510b3  `NH aNH`aNH
+000510bf  aNH bNH`bNH
+000510d3  cNH dNH f(Fff
+0005177e  $"`xea
+00051c7b  h+Nqh'M
+00051c90   FZFCF
+00051f6a  %FLFfF
+00052d44   zaz"\
+00053307  Npi Dpa@F
+000536bd   pGHipG
+00053f8d  #0hqhHJ
+00054080  XF1FRF
+000540dc  pGpGpGpG
+00054398  XF1FRF
+0005450c   F1FRF
+0005465c  `@Q`jhQ@
+00055660  4@LNtC
+0005580c  emi_ext
+00055868  S9U9SBUBSCUCL
+00055f8f  pslf-P
+00056412  zSZ^w$
+00057f58  ZFNLSF&FV
+000580e0  phTF?N
+000586db  F)F FEF
+00059506  @DAz!CAr
+000596e8  def_appl_ext
+0005a4d5  F`IKx`J
+0005a81c  &FrFd#
+0005ac6b  h1Nqh-M
+0005ac80   FZFCF
+0005b9f4   zaz"\
+0005bfb7  Npi Dpa@F
+0005c36d   pGHipGX
+0005c980  sHH`vH
+0005c9b8   hjIJjBc
+0005ce1d  xjqic(c
+0005d112  000000LLLLLL??????,,,,,,_
+0005d677  xZCPCO
+0005dd3a  nxQC6J
+0005e41e   F1F*FCF
+0005e4d8  7HBx7M)y
+0005e9a8  XF1FRF
+0005f02d    p.IHy
+0005f144  PF)FBF
+0005f660  ,@IMlC
+0005f8e8  slbt_ext
+0005f940  S9U9SBUBSCUCL
+0005f9bf  Z____HYX_____SDK_SAM_TSB_HPN_03D_
+000603d4  pts_update_ext
+00062071  F"F+F4FEF
+00062d1a  qY!CqQ
+0006346d  H0"`cXF
+0006454f  1!aPJB
+00064566  Ah0FBF
+00065016  #:CLLXAH
+0006586c  1h Frh
+00065b12   t FRx0
+00066225  !F`XFD
+00066373  `D"AFo
+00066799  CcN3@`
+00068017  F jbx_
+00068518  QF,NBF0F
+0006865d   pGVUUU
+000688c0  msp_fw_loader_samsung_tlc_3d_g3_2p_256-13.174.0
+000689e0  REXTFWLDR5FWXTRAPTSDHBTCPBBT$4BDBToC
+00068f50  app_main
+00068f59  Internal Only Mode requires Automatic value to be used
+00068f90  EUB mode can not use Automatic value
+00068fb5  msp-nand-drive-v1.174-tigris_hdp
+00069228  DCCBCCC
+00069261  DDD$"""
+000692e9  DDDD"""
+```

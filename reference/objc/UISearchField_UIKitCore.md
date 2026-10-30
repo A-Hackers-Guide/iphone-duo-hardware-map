@@ -1,0 +1,23 @@
+# `UISearchField`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `UITextField`
+- 0 instance variables, 0 properties, 7 instance methods, 1 class methods
+
+## Class methods
+
+```
++[UISearchField defaultHeight];
+```
+
+## Instance methods
+
+```
+-[UISearchField rightViewRectForBounds:];
+-[UISearchField _shouldSendContentChangedNotificationsIfOnlyMarkedTextChanged];
+-[UISearchField initWithFrame:];
+-[UISearchField _availableTextRectExcludingButtonsForBounds:];
+-[UISearchField _placeholderColor];
+-[UISearchField iconRect];
+-[UISearchField setPaddingTop:paddingLeft:];
+```

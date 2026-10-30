@@ -1,0 +1,1445 @@
+# Symbols: `/System/Library/Frameworks/ContactsUI.framework/ContactsUI`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__Frameworks__ContactsUI.framework__ContactsUI.md). **[DSC]**
+
+428 public symbols, 19,389 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x19f6acc54  __TEXT,__text  _ABAddressBookBundle
+0x19f6acd1c  __TEXT,__text  _ABAddressBookGetDefaultRotationContentSettings
+0x19f49948c  __TEXT,__text  _ABAddressBookSetAutorotationEnabled
+0x19f6accec  __TEXT,__text  _ABAddressBookShouldAllowAutorotation
+0x1ebc56e08  __DATA,__data  _ABCapabilitiesConferenceHistoryChanged
+0x1e0dbd720  __DATA_CONST,__const  _ABHilightedColorAttributeName
+0x1e0dbd718  __DATA_CONST,__const  _ABNotesFontAttributeName
+0x1e0dbd710  __DATA_CONST,__const  _ABNotesTextColorAttributeName
+0x1e0dbd708  __DATA_CONST,__const  _ABTextStyleAttributeName
+0x19f841bc8  __TEXT,__const  _CNActionsViewDefaultSpacing
+0x19f841bd0  __TEXT,__const  _CNActionsViewLargeTextSpacing
+0x1ebc58268  __DATA,__data  _CNAvatarViewDefaultSize
+0x1e0dbd700  __DATA_CONST,__const  _CNContactFilterDictionaryKeyFullTextString
+0x1ebc56e00  __DATA,__data  _CNContactNavigationControllerOptionAllowsLargeTitles
+0x1ebc56df8  __DATA,__data  _CNContactNavigationControllerOptionAllowsSearch
+0x1e0dbd6f8  __DATA_CONST,__const  _CNContactPickerViewControllerPickerDidHideNotification
+0x1e0dbd6f0  __DATA_CONST,__const  _CNContactPickerViewControllerPickerDidShowNotification
+0x1e0dbd6e8  __DATA_CONST,__const  _CNContactUIBirthdaysKey
+0x1e0dbd6e0  __DATA_CONST,__const  _CNContactUISystemCalendarKey
+0x19f49f33c  __TEXT,__text  _CNContactsUIBundle
+0x1ebc56df0  __DATA,__data  _CNMeCardSharingPickerViewControllerDidSaveNotification
+0x1e0dbd6c8  __DATA_CONST,__const  _CNNonBreakingSpaceString
+0x1ebc56de8  __DATA,__data  _CNQuickActionCategoryAddToContacts
+0x1ebc56de0  __DATA,__data  _CNQuickActionCategoryAudioCall
+0x1ebc56dd8  __DATA,__data  _CNQuickActionCategoryInfo
+0x1ebc56dd0  __DATA,__data  _CNQuickActionCategoryInstantMessage
+0x1ebc56dc8  __DATA,__data  _CNQuickActionCategoryMail
+0x1ebc56dc0  __DATA,__data  _CNQuickActionCategoryVideoCall
+0x1e0dbd6c0  __DATA_CONST,__const  _CNUIAvatarViewErrorDomain
+0x1ebc56db8  __DATA,__data  _CNUIContactActionDestinationType
+0x1ebc56db0  __DATA,__data  _CNUIContactActionDestinationTypeEmail
+0x1ebc56da8  __DATA,__data  _CNUIContactActionDestinationTypeFaceTime
+0x1ebc56da0  __DATA,__data  _CNUIContactActionDestinationTypeFaceTimeAudio
+0x1ebc56d98  __DATA,__data  _CNUIContactActionDestinationTypePhoneNumber
+0x1ebc56d90  __DATA,__data  _CNUIContactActionFaceTimeMediaType
+0x1ebc56d88  __DATA,__data  _CNUIContactActionFaceTimeMediaTypeAudioOnly
+0x1ebc56d80  __DATA,__data  _CNUIContactActionFaceTimeMediaTypeVideo
+0x1ebc56d78  __DATA,__data  _CNUIContactActionShareActivityType
+0x1ebc56d70  __DATA,__data  _CNUIContactActionTapPropertyIdentifier
+0x1ebc56d68  __DATA,__data  _CNUIContactActionTypeAddToFavorites
+0x1ebc56d60  __DATA,__data  _CNUIContactActionTypeFaceTime
+0x1ebc56d58  __DATA,__data  _CNUIContactActionTypeLink
+0x1ebc56d50  __DATA,__data  _CNUIContactActionTypeSendMessage
+0x1ebc56d48  __DATA,__data  _CNUIContactActionTypeShare
+0x1ebc56d40  __DATA,__data  _CNUIContactActionTypeTapProperty
+0x1ebc56d38  __DATA,__data  _CNUIContactActionTypeUnlink
+0x1e0dbd6b8  __DATA_CONST,__const  _CNUIContactsUIErrorDomain
+0x1ebc56d30  __DATA,__data  _CNUIDataCollectorActionTypeAttributeContact
+0x1ebc56d28  __DATA,__data  _CNUIDataCollectorActionTypeAttributeLabeledValue
+0x19f6ad320  __TEXT,__text  _CNUIIsActivity
+0x19f4a4c44  __TEXT,__text  _CNUIIsContacts
+0x19f6ad410  __TEXT,__text  _CNUIIsDDActionsService
+0x19f49f1ec  __TEXT,__text  _CNUIIsFaceTime
+0x19f6ad398  __TEXT,__text  _CNUIIsFirstParty
+0x19f49abb0  __TEXT,__text  _CNUIIsMessages
+0x19f49f668  __TEXT,__text  _CNUIIsMobilePhone
+0x19f49f264  __TEXT,__text  _CNUIIsWatchCompanion
+0x19f62a010  __TEXT,__text  _CNUILogAccountsAndGroupsList
+0x19f498430  __TEXT,__text  _CNUILogAvatarView
+0x19f62a090  __TEXT,__text  _CNUILogContactCard
+0x19f4a711c  __TEXT,__text  _CNUILogContactList
+0x19f62a110  __TEXT,__text  _CNUILogContactPhotoPicker
+0x19f49de40  __TEXT,__text  _CNUILogContactStoreDataSource
+0x19f62a490  __TEXT,__text  _CNUILogForgetSharingContact
+0x19f62a290  __TEXT,__text  _CNUILogPosters
+0x19f62a310  __TEXT,__text  _CNUILogRemoteAlert
+0x19f62a390  __TEXT,__text  _CNUILogStarkSiriExperiment
+0x19f62a410  __TEXT,__text  _CNUILogStarkUtilities
+0x19f62a210  __TEXT,__text  _CNUILogTesting
+0x19f62a190  __TEXT,__text  _CNUILogViewService
+0x19f6ace44  __TEXT,__text  _CNUIPixelAlignedPoint
+0x19f6ad084  __TEXT,__text  _CNUIPixelAlignedRect
+0x19f6acf64  __TEXT,__text  _CNUIPixelAlignedSize
+0x19f6acd38  __TEXT,__text  _CNUIRoundToScale
+0x19f6acdb0  __TEXT,__text  _CNUIRoundToViewScale
+0x19f629e6c  __TEXT,__text  _CNUISetLoggingBlock
+0x19f6ad288  __TEXT,__text  _CNUISetUseSiriLocalization
+0x19f6ad294  __TEXT,__text  _CNUIShouldUseSiriLocalization
+0x1ef6f4490  __AUTH,__objc_data  _OBJC_CLASS_$_CNActionItem
+0x1ee1e43c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNActionView
+0x1ef6f4508  __AUTH,__objc_data  _OBJC_CLASS_$_CNActionsView
+0x1ef6ee1a8  __AUTH,__objc_data  _OBJC_CLASS_$_CNAvatarAccessoryView
+0x1ee1e2e58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNAvatarCardController
+0x1ee1e2f70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNAvatarImageRenderer
+0x1ee1e2ef8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNAvatarImageRendererSettings
+0x1ee1e2ed0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNAvatarImageRenderingScope
+0x1ef6edfc8  __AUTH,__objc_data  _OBJC_CLASS_$_CNAvatarPosterCarouselLikenessFingerprint
+0x1ee1e46b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNAvatarView
+0x1ef6f4670  __AUTH,__objc_data  _OBJC_CLASS_$_CNAvatarViewController
+0x1ee1e2ac0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNAvatarViewControllerSettings
+0x1ef6f32e8  __AUTH,__objc_data  _OBJC_CLASS_$_CNBadgingAvatarBadgeStyleSettings
+0x1ef6f4260  __AUTH,__objc_data  _OBJC_CLASS_$_CNBadgingAvatarViewController
+0x1ee1e2c50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNCapabilitiesManager
+0x1ef6f1c18  __AUTH,__objc_data  _OBJC_CLASS_$_CNCardActionGroupItem
+0x1ef6f32c0  __AUTH,__objc_data  _OBJC_CLASS_$_CNCardGroup
+0x1ef6f1a88  __AUTH,__objc_data  _OBJC_CLASS_$_CNCardGroupItem
+0x1ef6f18d0  __AUTH,__objc_data  _OBJC_CLASS_$_CNCardPropertyGroup
+0x1ef6f1768  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactAction
+0x1ef6f3270  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactActionsContext
+0x1ef6ede38  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactCardFieldItem
+0x1ef6ede10  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactCardFieldPicker
+0x1ef6edde8  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactCardFieldPickerCell
+0x1ef6eddc0  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactCardFieldPickerDataSource
+0x1ee1e3100  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNContactCardFieldPickerPhotoCell
+0x1ef6edd98  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactCardFieldSection
+0x1ee1e4550  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNContactCell
+0x1ef6edcf8  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactContentContainerViewController
+0x1ef6edcd0  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactContentDisplayViewController
+0x1ef6edca8  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactContentEditViewController
+0x1ee1e2bb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNContactContentUnitaryViewController
+0x1ee1e35b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNContactContentViewController
+0x1ef6edc58  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactContentViewControllerConfiguration
+0x1ef6edc30  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactCustomDataSource
+0x1ef6edc08  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactCustomViewConfiguration
+0x1ef6edb40  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactEditAuthorizationManager
+0x1ef6f31d0  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactFilter
+0x1ef6edaa0  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactGridViewController
+0x1ef6eda50  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactGroupVisualizer
+0x1ef6f3180  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactHeaderCollapsedView
+0x1ee1e4528  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNContactHeaderDisplayView
+0x1ee1e42f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNContactHeaderEditView
+0x1ee1e3240  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNContactHeaderStaticDisplayView
+0x1ee1e4500  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNContactHeaderView
+0x1ef6f4468  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactInlineActionsViewController
+0x1ee1e4370  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNContactListBannerView
+0x1ef6f2ff0  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactListViewController
+0x1ef6f13a8  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactMenuDisplayingAction
+0x1ef6f2fa0  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactNavigationController
+0x1ee1e2cf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNContactOrbActionsController
+0x1ef6ed870  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactPicker
+0x1ef6f4210  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactPickerViewController
+0x1ef6f41e8  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactQuickActionsController
+0x1ef6f3d60  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactQuickActionsDisambiguationMenuPresentation
+0x1ef6f41c0  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactRecentsReference
+0x1ef6e5c28  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactSavedAutoFillDetailsController
+0x1ef6f2f78  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactSection
+0x1ef6f3d38  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactStoreDataSource
+0x1ef6f2f50  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactStoreFilter
+0x1ef6f46e8  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactStyle
+0x1ee1e3420  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNContactView
+0x1ef6f4198  __AUTH,__objc_data  _OBJC_CLASS_$_CNContactViewCache
+0x1ee1e2b38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNContactViewController
+0x1ef6ed500  __AUTH,__objc_data  _OBJC_CLASS_$_CNCustomIndexedContactsStore
+0x1ef6e8948  __AUTH,__objc_data  _OBJC_CLASS_$_CNDeviceListServiceDeviceInfo
+0x1ef6ed3e8  __AUTH,__objc_data  _OBJC_CLASS_$_CNGeminiBadge
+0x1ef6f3cc0  __AUTH,__objc_data  _OBJC_CLASS_$_CNGroupAvatarViewController
+0x1ef6f4440  __AUTH,__objc_data  _OBJC_CLASS_$_CNGroupIdentity
+0x1ef6ed370  __AUTH,__objc_data  _OBJC_CLASS_$_CNGroupIdentityActionItem
+0x1ee1e42a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNGroupIdentityHeaderViewController
+0x1ef6ed320  __AUTH,__objc_data  _OBJC_CLASS_$_CNGroupIdentityInlineActionsViewConfiguration
+0x1ef6e80e8  __AUTH,__objc_data  _OBJC_CLASS_$_CNIDSDeviceListService
+0x1ef6f2d20  __AUTH,__objc_data  _OBJC_CLASS_$_CNImageDerivedColorBackgroundUtilities
+0x1ef6f4148  __AUTH,__objc_data  _OBJC_CLASS_$_CNImageDerivedColorGenerator
+0x1ef6ed280  __AUTH,__objc_data  _OBJC_CLASS_$_CNLabeledBadge
+0x1ef6ed258  __AUTH,__objc_data  _OBJC_CLASS_$_CNLimitedAccessContactPickerViewController
+0x1ef6ed230  __AUTH,__objc_data  _OBJC_CLASS_$_CNLimitedAccessSelectedContactsCell
+0x1ee1e33f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNMaskingTableView
+0x1ef6ed1b8  __AUTH,__objc_data  _OBJC_CLASS_$_CNMeCardSharingContactAvatarProvider
+0x1ef6f4120  __AUTH,__objc_data  _OBJC_CLASS_$_CNMeCardSharingContactNameProvider
+0x1ef6ed190  __AUTH,__objc_data  _OBJC_CLASS_$_CNMeCardSharingDataSource
+0x1ef6ed118  __AUTH,__objc_data  _OBJC_CLASS_$_CNMeCardSharingNameFormatter
+0x1ef6f2c58  __AUTH,__objc_data  _OBJC_CLASS_$_CNMeCardSharingOnboardingAudienceViewController
+0x1ef6f2c30  __AUTH,__objc_data  _OBJC_CLASS_$_CNMeCardSharingOnboardingEditViewController
+0x1ef6f2c08  __AUTH,__objc_data  _OBJC_CLASS_$_CNMeCardSharingOnboardingViewController
+0x1ee1e2e30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNMeCardSharingPickerViewController
+0x1ef6ed050  __AUTH,__objc_data  _OBJC_CLASS_$_CNMeCardSharingResult
+0x1ee1e4230  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNMeCardSharingSettingsViewController
+0x1ee1e30b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNMonogrammer
+0x1ef6ecf10  __AUTH,__objc_data  _OBJC_CLASS_$_CNMultipleUnknownContactsViewController
+0x1ef6f0c50  __AUTH,__objc_data  _OBJC_CLASS_$_CNPhotoPickerConfiguration
+0x1ef6f09a8  __AUTH,__objc_data  _OBJC_CLASS_$_CNPhotoPickerVariantsManager
+0x1ee1e4690  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNPhotoPickerViewController
+0x1ef6ecb28  __AUTH,__objc_data  _OBJC_CLASS_$_CNPostalAddressEditorNavigationController
+0x1ef6f0908  __AUTH,__objc_data  _OBJC_CLASS_$_CNPrivateAccessAggregator
+0x1ef6f08e0  __AUTH,__objc_data  _OBJC_CLASS_$_CNPrivateAccessEntry
+0x1ef6f0700  __AUTH,__objc_data  _OBJC_CLASS_$_CNPropertyGroupItem
+0x1ef6ec948  __AUTH,__objc_data  _OBJC_CLASS_$_CNQuickAction
+0x1ef6ec8f8  __AUTH,__objc_data  _OBJC_CLASS_$_CNQuickActionsView
+0x1ef6f43f0  __AUTH,__objc_data  _OBJC_CLASS_$_CNSNaPSetupFlowManager
+0x1ef6f3a40  __AUTH,__objc_data  _OBJC_CLASS_$_CNSharedLayout
+0x1ef6ec6f0  __AUTH,__objc_data  _OBJC_CLASS_$_CNSharedProfileBannerStyle
+0x1ef6ec6c8  __AUTH,__objc_data  _OBJC_CLASS_$_CNSharedProfileBannerView
+0x1ef6f43c8  __AUTH,__objc_data  _OBJC_CLASS_$_CNSharedProfileOnboardingController
+0x1ef6ec600  __AUTH,__objc_data  _OBJC_CLASS_$_CNSharingProfileAvatarItemProviderConfiguration
+0x1ef6ec5b0  __AUTH,__objc_data  _OBJC_CLASS_$_CNSharingProfileMeCardUpdater
+0x1ef6ec560  __AUTH,__objc_data  _OBJC_CLASS_$_CNSharingProfileOnboardingAudienceCatalystViewController
+0x1ef6ec538  __AUTH,__objc_data  _OBJC_CLASS_$_CNSharingProfileOnboardingAudienceViewController
+0x1ef6f2af0  __AUTH,__objc_data  _OBJC_CLASS_$_CNSharingProfileOnboardingFlowManager
+0x1ef6ec510  __AUTH,__objc_data  _OBJC_CLASS_$_CNSharingProfileOnboardingFlowResult
+0x1ef6ec498  __AUTH,__objc_data  _OBJC_CLASS_$_CNSharingProfileOnboardingPhotoSelectionResult
+0x1ef6ec470  __AUTH,__objc_data  _OBJC_CLASS_$_CNSharingProfileOnboardingPhotoSelectionViewController
+0x1ef6ec448  __AUTH,__objc_data  _OBJC_CLASS_$_CNSharingProfileOnboardingPosePickerController
+0x1ef6f03e0  __AUTH,__objc_data  _OBJC_CLASS_$_CNStarkCardViewController
+0x1ef6ec2e0  __AUTH,__objc_data  _OBJC_CLASS_$_CNStarkContactDisplayViewController
+0x1ef6f0390  __AUTH,__objc_data  _OBJC_CLASS_$_CNStarkContactViewController
+0x1ef6ec240  __AUTH,__objc_data  _OBJC_CLASS_$_CNStarkContactsBrowserViewController
+0x1ef6ec218  __AUTH,__objc_data  _OBJC_CLASS_$_CNStarkContactsListViewController
+0x1ef6ec100  __AUTH,__objc_data  _OBJC_CLASS_$_CNSyndicationViewController
+0x1ee1e3e98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNTransportButton
+0x1ef6f0340  __AUTH,__objc_data  _OBJC_CLASS_$_CNUIAcceptedContactActionsManager
+0x1ef6ebfc0  __AUTH,__objc_data  _OBJC_CLASS_$_CNUIAcceptedContactConfiguration
+0x1ee1e2ca0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNUIColorRepository
+0x1ef6ebed0  __AUTH,__objc_data  _OBJC_CLASS_$_CNUIContactsAuthorizationController
+0x1ee1e3038  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNUIContactsEnvironment
+0x1ef6f2a50  __AUTH,__objc_data  _OBJC_CLASS_$_CNUIDataCollector
+0x1ef6f40f8  __AUTH,__objc_data  _OBJC_CLASS_$_CNUIDraggingContacts
+0x1ef6ebd68  __AUTH,__objc_data  _OBJC_CLASS_$_CNUIFamilyMemberContactItem
+0x1ef6ebd40  __AUTH,__objc_data  _OBJC_CLASS_$_CNUIFamilyMemberContactsController
+0x1ef6ebd18  __AUTH,__objc_data  _OBJC_CLASS_$_CNUIFamilyMemberContactsEditingStrategy
+0x1ef6ebc78  __AUTH,__objc_data  _OBJC_CLASS_$_CNUIFamilyMemberDowntimeContactPickerController
+0x1ef6ebc28  __AUTH,__objc_data  _OBJC_CLASS_$_CNUIFamilyMemberWhitelistedContactsController
+0x1ef6f29d8  __AUTH,__objc_data  _OBJC_CLASS_$_CNUIFavoritesEntryPicker
+0x1ef6f29b0  __AUTH,__objc_data  _OBJC_CLASS_$_CNUINavigationListItem
+0x1ee1e4460  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNUINavigationListViewController
+0x1ef6f39a0  __AUTH,__objc_data  _OBJC_CLASS_$_CNUISharedProfileNavigationBarPalette
+0x1ee1e2740  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNUIVisualIdentityEditorViewController
+0x1ef6ebb10  __AUTH,__objc_data  _OBJC_CLASS_$_CNUnknownContactsController
+0x1ef6f0110  __AUTH,__objc_data  _OBJC_CLASS_$_CNVCardImportController
+0x1ef6ebae8  __AUTH,__objc_data  _OBJC_CLASS_$_CNVCardViewController
+0x1ef6f40a8  __AUTH,__objc_data  _OBJC_CLASS_$_CNVisualIdentity
+0x1ee1e45c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNVisualIdentityAvatarViewController
+0x1ef6f4058  __AUTH,__objc_data  _OBJC_CLASS_$_CNVisualIdentityContactAvatarProvider
+0x1ee1e4668  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_CNVisualIdentityPickerViewController
+0x1ef6e87c0  __AUTH,__objc_data  _OBJC_CLASS_$_ContactsButtonSlotTraits
+0x1ef6eb980  __AUTH,__objc_data  _OBJC_CLASS_$__CNAvatarView
+0x1ef6e85f8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI12CNTipsHelper
+0x1ef6e84f8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI15CNTipHeaderView
+0x1ef6e8358  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI18DuplicatesUIHelper
+0x1ef6e81f8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI19FindMyLocateSession
+0x1ef6e8190  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI20CNWallpaperUtilities
+0x1ef6e7a08  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI22PosterEditFlowReporter
+0x1ee1e2880  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI25CNAvatarView_SwiftWrapper
+0x1ef6e77e0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI26CNHostingRemovePhotoButton
+0x1ef6e7750  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI26CNPosterPreviewViewWrapper
+0x1ef6e73d8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI31CNPosterEditorViewConfiguration
+0x1ef6e72b0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI32CNHostingPosterSnapshotImageView
+0x1ef6e71e0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI32CNPosterPreviewViewConfiguration
+0x1ef6e70f0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI32ContactCardSwiftUIViewController
+0x1ef6e6fa0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI33CNMemojiPosterConfigurationReader
+0x1ef6e6ea0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI33CNWallpaperConfigurationGenerator
+0x1ef6e6dc8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI33ContactListMergeUnifyActionHelper
+0x1ef6e6cb8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI34CNPosterOnboardingPrivacyViewModel
+0x1ef6e6c38  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI35CNContactGroupVisualizerViewWrapper
+0x1ef6e6ba0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI35CNMonogramPosterConfigurationReader
+0x1ef6e6848  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI36CNPosterOnboardingPrivacyViewWrapper
+0x1ef6e67b8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI36CNPosterOnboardingWelcomeViewWrapper
+0x1ef6e6690  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI37CNAvatarPosterPairCollectionPreWarmer
+0x1ef6e6328  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI37CNPosterSetupAvatarPreviewViewWrapper
+0x1ef6e5b98  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI40CNWallpaperSuggestionsGalleryViewWrapper
+0x1ef6e59c8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI49CNAvatarPosterPairCollectionViewControllerWrapper
+0x1ef6e58b0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC10ContactsUI49CNPosterOnboardingSettingsAnimationViewController
+0x1ef6f4378  __AUTH,__objc_data  _OBJC_METACLASS_$_CNActionItem
+0x1ee1e3df8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNActionView
+0x1ef6f4350  __AUTH,__objc_data  _OBJC_METACLASS_$_CNActionsView
+0x1ef6eb818  __AUTH,__objc_data  _OBJC_METACLASS_$_CNAvatarAccessoryView
+0x1ee1e2e80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNAvatarCardController
+0x1ee1e2f48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNAvatarImageRenderer
+0x1ee1e2f20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNAvatarImageRendererSettings
+0x1ee1e2ea8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNAvatarImageRenderingScope
+0x1ef6eb638  __AUTH,__objc_data  _OBJC_METACLASS_$_CNAvatarPosterCarouselLikenessFingerprint
+0x1ee1e4438  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNAvatarView
+0x1ef6f45d0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNAvatarViewController
+0x1ee1e2a98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNAvatarViewControllerSettings
+0x1ef6f27d0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNBadgingAvatarBadgeStyleSettings
+0x1ef6f4008  __AUTH,__objc_data  _OBJC_METACLASS_$_CNBadgingAvatarViewController
+0x1ee1e2c00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNCapabilitiesManager
+0x1ef6eff30  __AUTH,__objc_data  _OBJC_METACLASS_$_CNCardActionGroupItem
+0x1ef6f3900  __AUTH,__objc_data  _OBJC_METACLASS_$_CNCardGroup
+0x1ef6efda0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNCardGroupItem
+0x1ef6f2780  __AUTH,__objc_data  _OBJC_METACLASS_$_CNCardPropertyGroup
+0x1ef6efaa8  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactAction
+0x1ef6f2758  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactActionsContext
+0x1ef6eb4a8  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactCardFieldItem
+0x1ef6eb480  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactCardFieldPicker
+0x1ef6eb458  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactCardFieldPickerCell
+0x1ef6eb430  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactCardFieldPickerDataSource
+0x1ee1e30d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNContactCardFieldPickerPhotoCell
+0x1ef6eb408  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactCardFieldSection
+0x1ee1e45a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNContactCell
+0x1ef6eb368  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactContentContainerViewController
+0x1ef6eb340  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactContentDisplayViewController
+0x1ef6eb318  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactContentEditViewController
+0x1ee1e2b88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNContactContentUnitaryViewController
+0x1ee1e3600  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNContactContentViewController
+0x1ef6eb2c8  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactContentViewControllerConfiguration
+0x1ef6eb2a0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactCustomDataSource
+0x1ef6eb278  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactCustomViewConfiguration
+0x1ef6eb1b0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactEditAuthorizationManager
+0x1ef6f26b8  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactFilter
+0x1ef6eb110  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactGridViewController
+0x1ef6eb0c0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactGroupVisualizer
+0x1ef6f2668  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactHeaderCollapsedView
+0x1ee1e4410  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNContactHeaderDisplayView
+0x1ee1e3d58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNContactHeaderEditView
+0x1ee1e3218  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNContactHeaderStaticDisplayView
+0x1ee1e4640  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNContactHeaderView
+0x1ef6f4328  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactInlineActionsViewController
+0x1ee1e3d30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNContactListBannerView
+0x1ef6f24b0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactListViewController
+0x1ef6ef6e8  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactMenuDisplayingAction
+0x1ef6f2460  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactNavigationController
+0x1ee1e2cc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNContactOrbActionsController
+0x1ef6eaee0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactPicker
+0x1ef6f3fe0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactPickerViewController
+0x1ef6f3fb8  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactQuickActionsController
+0x1ef6f3810  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactQuickActionsDisambiguationMenuPresentation
+0x1ef6f3f90  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactRecentsReference
+0x1ef6f72b0  __AUTH,__data  _OBJC_METACLASS_$_CNContactSavedAutoFillDetailsController
+0x1ef6f2438  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactSection
+0x1ef6f37e8  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactStoreDataSource
+0x1ef6f2410  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactStoreFilter
+0x1ef6f4698  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactStyle
+0x1ee1e33d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNContactView
+0x1ef6f3f68  __AUTH,__objc_data  _OBJC_METACLASS_$_CNContactViewCache
+0x1ee1e2b60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNContactViewController
+0x1ef6eab70  __AUTH,__objc_data  _OBJC_METACLASS_$_CNCustomIndexedContactsStore
+0x1ef6f7288  __AUTH,__data  _OBJC_METACLASS_$_CNDeviceListServiceDeviceInfo
+0x1ef6eaa58  __AUTH,__objc_data  _OBJC_METACLASS_$_CNGeminiBadge
+0x1ef6f3770  __AUTH,__objc_data  _OBJC_METACLASS_$_CNGroupAvatarViewController
+0x1ef6f4300  __AUTH,__objc_data  _OBJC_METACLASS_$_CNGroupIdentity
+0x1ef6ea9e0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNGroupIdentityActionItem
+0x1ee1e3ce0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNGroupIdentityHeaderViewController
+0x1ef6ea990  __AUTH,__objc_data  _OBJC_METACLASS_$_CNGroupIdentityInlineActionsViewConfiguration
+0x1ef6f7260  __AUTH,__data  _OBJC_METACLASS_$_CNIDSDeviceListService
+0x1ef6f2208  __AUTH,__objc_data  _OBJC_METACLASS_$_CNImageDerivedColorBackgroundUtilities
+0x1ef6f7c60  __AUTH,__data  _OBJC_METACLASS_$_CNImageDerivedColorGenerator
+0x1ef6ea8f0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNLabeledBadge
+0x1ef6ea8c8  __AUTH,__objc_data  _OBJC_METACLASS_$_CNLimitedAccessContactPickerViewController
+0x1ef6ea8a0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNLimitedAccessSelectedContactsCell
+0x1ee1e33a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNMaskingTableView
+0x1ef6ea828  __AUTH,__objc_data  _OBJC_METACLASS_$_CNMeCardSharingContactAvatarProvider
+0x1ef6f44e0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNMeCardSharingContactNameProvider
+0x1ef6ea800  __AUTH,__objc_data  _OBJC_METACLASS_$_CNMeCardSharingDataSource
+0x1ef6ea788  __AUTH,__objc_data  _OBJC_METACLASS_$_CNMeCardSharingNameFormatter
+0x1ef6f2140  __AUTH,__objc_data  _OBJC_METACLASS_$_CNMeCardSharingOnboardingAudienceViewController
+0x1ef6f2118  __AUTH,__objc_data  _OBJC_METACLASS_$_CNMeCardSharingOnboardingEditViewController
+0x1ef6f20f0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNMeCardSharingOnboardingViewController
+0x1ee1e2d18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNMeCardSharingPickerViewController
+0x1ef6ea6c0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNMeCardSharingResult
+0x1ee1e3c40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNMeCardSharingSettingsViewController
+0x1ee1e3088  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNMonogrammer
+0x1ef6ea580  __AUTH,__objc_data  _OBJC_METACLASS_$_CNMultipleUnknownContactsViewController
+0x1ef6eef68  __AUTH,__objc_data  _OBJC_METACLASS_$_CNPhotoPickerConfiguration
+0x1ef6eecc0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNPhotoPickerVariantsManager
+0x1ee1e4708  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNPhotoPickerViewController
+0x1ef6ea198  __AUTH,__objc_data  _OBJC_METACLASS_$_CNPostalAddressEditorNavigationController
+0x1ef6eec20  __AUTH,__objc_data  _OBJC_METACLASS_$_CNPrivateAccessAggregator
+0x1ef6eebf8  __AUTH,__objc_data  _OBJC_METACLASS_$_CNPrivateAccessEntry
+0x1ef6f2078  __AUTH,__objc_data  _OBJC_METACLASS_$_CNPropertyGroupItem
+0x1ef6e9f90  __AUTH,__objc_data  _OBJC_METACLASS_$_CNQuickAction
+0x1ef6e9f18  __AUTH,__objc_data  _OBJC_METACLASS_$_CNQuickActionsView
+0x1ef6f4530  __AUTH,__objc_data  _OBJC_METACLASS_$_CNSNaPSetupFlowManager
+0x1ef6f34f0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNSharedLayout
+0x1ef6e9d38  __AUTH,__objc_data  _OBJC_METACLASS_$_CNSharedProfileBannerStyle
+0x1ef6e9d10  __AUTH,__objc_data  _OBJC_METACLASS_$_CNSharedProfileBannerView
+0x1ef6f44b8  __AUTH,__objc_data  _OBJC_METACLASS_$_CNSharedProfileOnboardingController
+0x1ef6e9c48  __AUTH,__objc_data  _OBJC_METACLASS_$_CNSharingProfileAvatarItemProviderConfiguration
+0x1ef6e9bf8  __AUTH,__objc_data  _OBJC_METACLASS_$_CNSharingProfileMeCardUpdater
+0x1ef6e9ba8  __AUTH,__objc_data  _OBJC_METACLASS_$_CNSharingProfileOnboardingAudienceCatalystViewController
+0x1ef6e9b80  __AUTH,__objc_data  _OBJC_METACLASS_$_CNSharingProfileOnboardingAudienceViewController
+0x1ef6f1fb0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNSharingProfileOnboardingFlowManager
+0x1ef6e9b58  __AUTH,__objc_data  _OBJC_METACLASS_$_CNSharingProfileOnboardingFlowResult
+0x1ef6e9ae0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNSharingProfileOnboardingPhotoSelectionResult
+0x1ef6e9ab8  __AUTH,__objc_data  _OBJC_METACLASS_$_CNSharingProfileOnboardingPhotoSelectionViewController
+0x1ef6e9a90  __AUTH,__objc_data  _OBJC_METACLASS_$_CNSharingProfileOnboardingPosePickerController
+0x1ef6ee748  __AUTH,__objc_data  _OBJC_METACLASS_$_CNStarkCardViewController
+0x1ef6e9928  __AUTH,__objc_data  _OBJC_METACLASS_$_CNStarkContactDisplayViewController
+0x1ef6ee6f8  __AUTH,__objc_data  _OBJC_METACLASS_$_CNStarkContactViewController
+0x1ef6e9888  __AUTH,__objc_data  _OBJC_METACLASS_$_CNStarkContactsBrowserViewController
+0x1ef6e9860  __AUTH,__objc_data  _OBJC_METACLASS_$_CNStarkContactsListViewController
+0x1ef6e9748  __AUTH,__objc_data  _OBJC_METACLASS_$_CNSyndicationViewController
+0x1ee1e3858  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNTransportButton
+0x1ef6ee6a8  __AUTH,__objc_data  _OBJC_METACLASS_$_CNUIAcceptedContactActionsManager
+0x1ef6e9608  __AUTH,__objc_data  _OBJC_METACLASS_$_CNUIAcceptedContactConfiguration
+0x1ee1e2c78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNUIColorRepository
+0x1ef6e9518  __AUTH,__objc_data  _OBJC_METACLASS_$_CNUIContactsAuthorizationController
+0x1ee1e2fc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNUIContactsEnvironment
+0x1ef6f1f10  __AUTH,__objc_data  _OBJC_METACLASS_$_CNUIDataCollector
+0x1ef6f3f18  __AUTH,__objc_data  _OBJC_METACLASS_$_CNUIDraggingContacts
+0x1ef6e93b0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNUIFamilyMemberContactItem
+0x1ef6e9388  __AUTH,__objc_data  _OBJC_METACLASS_$_CNUIFamilyMemberContactsController
+0x1ef6e9360  __AUTH,__objc_data  _OBJC_METACLASS_$_CNUIFamilyMemberContactsEditingStrategy
+0x1ef6e92c0  __AUTH,__objc_data  _OBJC_METACLASS_$_CNUIFamilyMemberDowntimeContactPickerController
+0x1ef6e9270  __AUTH,__objc_data  _OBJC_METACLASS_$_CNUIFamilyMemberWhitelistedContactsController
+0x1ef6f1e98  __AUTH,__objc_data  _OBJC_METACLASS_$_CNUIFavoritesEntryPicker
+0x1ef6f1e70  __AUTH,__objc_data  _OBJC_METACLASS_$_CNUINavigationListItem
+0x1ee1e3808  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNUINavigationListViewController
+0x1ef6f3450  __AUTH,__objc_data  _OBJC_METACLASS_$_CNUISharedProfileNavigationBarPalette
+0x1ee1e47e8  __DATA_DIRTY,__data  _OBJC_METACLASS_$_CNUIVisualIdentityEditorViewController
+0x1ef6e9158  __AUTH,__objc_data  _OBJC_METACLASS_$_CNUnknownContactsController
+0x1ef6ee478  __AUTH,__objc_data  _OBJC_METACLASS_$_CNVCardImportController
+0x1ef6e9130  __AUTH,__objc_data  _OBJC_METACLASS_$_CNVCardViewController
+0x1ef6f3ec8  __AUTH,__objc_data  _OBJC_METACLASS_$_CNVisualIdentity
+0x1ee1e37e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNVisualIdentityAvatarViewController
+0x1ef6f3e78  __AUTH,__objc_data  _OBJC_METACLASS_$_CNVisualIdentityContactAvatarProvider
+0x1ee1e46e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_CNVisualIdentityPickerViewController
+0x1ef6f7238  __AUTH,__data  _OBJC_METACLASS_$_ContactsButtonSlotTraits
+0x1ef6e8fc8  __AUTH,__objc_data  _OBJC_METACLASS_$__CNAvatarView
+0x1ef6f7bb0  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI12CNTipsHelper
+0x1ef6f7208  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI15CNTipHeaderView
+0x1ef6f7b88  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI18DuplicatesUIHelper
+0x1ef6f7900  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI19FindMyLocateSession
+0x1ef6f71b8  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI20CNWallpaperUtilities
+0x1ef6f78d8  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI22PosterEditFlowReporter
+0x1ee1e47a0  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtC10ContactsUI25CNAvatarView_SwiftWrapper
+0x1ef6f7b60  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI26CNHostingRemovePhotoButton
+0x1ef6f7108  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI26CNPosterPreviewViewWrapper
+0x1ef6f78b0  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI31CNPosterEditorViewConfiguration
+0x1ef6f7b38  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI32CNHostingPosterSnapshotImageView
+0x1ef6f7068  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI32CNPosterPreviewViewConfiguration
+0x1ef6f7b10  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI32ContactCardSwiftUIViewController
+0x1ef6f7040  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI33CNMemojiPosterConfigurationReader
+0x1ef6f7888  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI33CNWallpaperConfigurationGenerator
+0x1ef6f7018  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI33ContactListMergeUnifyActionHelper
+0x1ef6f6fe8  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI34CNPosterOnboardingPrivacyViewModel
+0x1ef6f6fc0  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI35CNContactGroupVisualizerViewWrapper
+0x1ef6f6f90  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI35CNMonogramPosterConfigurationReader
+0x1ef6f6f10  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI36CNPosterOnboardingPrivacyViewWrapper
+0x1ef6f7860  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI36CNPosterOnboardingWelcomeViewWrapper
+0x1ef6f6ee0  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI37CNAvatarPosterPairCollectionPreWarmer
+0x1ef6f6e88  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI37CNPosterSetupAvatarPreviewViewWrapper
+0x1ef6f7810  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI40CNWallpaperSuggestionsGalleryViewWrapper
+0x1ef6f6e38  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI49CNAvatarPosterPairCollectionViewControllerWrapper
+0x1ef6f77c0  __AUTH,__data  _OBJC_METACLASS_$__TtC10ContactsUI49CNPosterOnboardingSettingsAnimationViewController
+0x19f629e94  __TEXT,__text  __CNUILog
+0x19f841bb8  __TEXT,__const  _kCNActionViewMaxLabelWidth
+0x19f841bb0  __TEXT,__const  _kCNActionViewPlatterSize
+0x19f841bc0  __TEXT,__const  _kCNTransportButtonSize
+```
+
+## Private
+
+```
+0x19f4981a0  __TEXT,__text  ___29-[CNAvatarView _setContacts:]_block_invoke
+0x19f4981a8  __TEXT,__text  -[CNAvatarView _setContacts:]
+0x19f498478  __TEXT,__text  -[CNAvatarView setImage:state:]
+0x19f498e94  __TEXT,__text  ___swift_project_value_buffer
+0x19f498f9c  __TEXT,__text  __afterCACommitHandler
+0x19f499000  __TEXT,__text  ___swift_instantiateConcreteTypeFromMangledNameV2
+0x19f499054  __TEXT,__text  +[CNAvatarView descriptorForRequiredKeysWithThreeDTouchEnabled:]
+0x19f4990c4  __TEXT,__text  +[CNAvatarView descriptorForRequiredKeysWithThreeDTouchEnabled:shouldUseCachingRenderer:description:]
+0x19f4993f0  __TEXT,__text  +[CNContact(UIAdditions) suggestionsEnabled]
+0x19f499438  __TEXT,__text  ___44+[CNContact(UIAdditions) suggestionsEnabled]_block_invoke
+0x19f499498  __TEXT,__text  -[CNSharedProfileOnboardingController initWithContactStore:]
+0x19f4994fc  __TEXT,__text  -[CNSharedProfileOnboardingController initWithContactStore:stateController:]
+0x19f49959c  __TEXT,__text  +[CNCapabilitiesManager defaultCapabilitiesManager]
+0x19f4995e4  __TEXT,__text  +[CNUIContactsEnvironment currentEnvironment]
+0x19f499678  __TEXT,__text  ___45+[CNUIContactsEnvironment currentEnvironment]_block_invoke
+0x19f4996a8  __TEXT,__text  ___51-[CNUIContactsEnvironment defaultSchedulerProvider]_block_invoke
+0x19f4996b0  __TEXT,__text  -[CNUISchedulerProvider init]
+0x19f4996fc  __TEXT,__text  +[CNUISchedulerProvider makeBackgroundScheduler]
+0x19f499754  __TEXT,__text  ___39-[CNUIContactsEnvironment contactStore]_block_invoke
+0x19f49975c  __TEXT,__text  -[CNUISharedProfileNavigationBarPalette init]
+0x19f499bb0  __TEXT,__text  ___49-[CNUIContactsEnvironment contactChangesNotifier]_block_invoke
+0x19f499c10  __TEXT,__text  +[CNAvatarViewControllerSettings settingsWithContactStore:threeDTouchEnabled:]
+0x19f499d58  __TEXT,__text  +[CNAvatarViewControllerSettings settingsWithLikenessResolver:likenessRenderer:contactStore:threeDTouchEnabled:schedulerProvider:backgroundStyle:]
+0x19f499e14  __TEXT,__text  ___50-[CNUIContactsEnvironment cachingLikenessRenderer]_block_invoke
+0x19f499e1c  __TEXT,__text  -[CNGroupIdentity initGroupWithName:photo:contacts:]
+0x19f499e24  __TEXT,__text  -[CNGroupIdentity initGroupWithName:photo:contacts:identifier:]
+0x19f499f0c  __TEXT,__text  -[CNAvatarView initWithSettings:]
+0x19f49a02c  __TEXT,__text  -[CNAvatarCardController setActionMenuHelper:]
+0x19f49a038  __TEXT,__text  -[CNAvatarView layoutSubviews]
+0x19f49a7f8  __TEXT,__text  -[CNAvatarView avatarViewDidFinishRendering]
+0x19f49ac28  __TEXT,__text  -[CNAvatarViewController_LegacyAvatarView setThreeDTouchEnabled:]
+0x19f49ac8c  __TEXT,__text  -[CNAvatarViewControllerSettings .cxx_destruct]
+0x19f49acdc  __TEXT,__text  ___50-[CNUIContactsEnvironment cachingLikenessResolver]_block_invoke
+0x19f49ace4  __TEXT,__text  -[CNAvatarViewController initWithSettings:]
+0x19f49ad90  __TEXT,__text  -[CNAvatarViewController_LegacyAvatarView style]
+0x19f49ada4  __TEXT,__text  -[CNAvatarViewController_LegacyAvatarView initWithSettings:]
+0x19f49aec0  __TEXT,__text  -[CNAvatarViewController_LegacyAvatarView setAvatarView:]
+0x19f49aed4  __TEXT,__text  -[CNAvatarViewController_LegacyAvatarView avatarView]
+0x19f49aefc  __TEXT,__text  -[CNAvatarViewController_LegacyAvatarView contacts]
+0x19f49af10  __TEXT,__text  -[CNAvatarViewController_LegacyAvatarView loadView]
+0x19f49b074  __TEXT,__text  -[CNAvatarViewController_LegacyAvatarView imageRenderer]
+0x19f49b088  __TEXT,__text  -[CNAvatarViewController_LegacyAvatarView isThreeDTouchEnabled]
+0x19f49b09c  __TEXT,__text  -[CNAvatarViewController_LegacyAvatarView contactStore]
+0x19f49b0b0  __TEXT,__text  -[CNAvatarViewController_LegacyAvatarView setContacts:]
+0x19f49b138  __TEXT,__text  -[CNAvatarViewController_LegacyAvatarView schedulerProvider]
+0x19f49b14c  __TEXT,__text  ___101+[CNAvatarView descriptorForRequiredKeysWithThreeDTouchEnabled:shouldUseCachingRenderer:description:]_block_invoke_2
+0x19f49b1c0  __TEXT,__text  ___65+[CNVisualIdentityPickerViewController descriptorForRequiredKeys]_block_invoke
+0x19f49b1f0  __TEXT,__text  +[CNVisualIdentityPickerViewController descriptorForRequiredKeys]
+0x19f49b284  __TEXT,__text  +[CNContactPhotoView descriptorForRequiredKeysWithThreeDTouchEnabled:]
+0x19f49b3a8  __TEXT,__text  +[CNAvatarCardController avatarCardEnabledForTraitCollection:]
+0x19f49b3f8  __TEXT,__text  ___101+[CNAvatarView descriptorForRequiredKeysWithThreeDTouchEnabled:shouldUseCachingRenderer:description:]_block_invoke
+0x19f49b46c  __TEXT,__text  ___71+[CNContactFormatter(UIAdditions) sharedFullNameFormatterWithFallBacks]_block_invoke
+0x19f49b4bc  __TEXT,__text  +[CNContactFormatter(UIAdditions) sharedFullNameFormatterWithFallBacks]
+0x19f49b504  __TEXT,__text  ___57+[CNMonogrammer descriptorForRequiredKeysIncludingImage:]_block_invoke
+0x19f49b600  __TEXT,__text  +[CNAvatarView makeDescriptorForRequiredKeysWithThreeDTouchEnabled:shouldUseCachingRenderer:]
+0x19f49b74c  __TEXT,__text  +[CNMonogrammer descriptorForRequiredKeysIncludingImage:]
+0x19f49b7d0  __TEXT,__text  +[CNContactOrbHeaderView descriptorForRequiredKeysForContactFormatter:includingAvatarViewDescriptors:]
+0x19f49b8a0  __TEXT,__text  +[CNContactOrbHeaderView descriptorForRequiredKeysIncludingAvatarViewDescriptors:]
+0x19f49bae8  __TEXT,__text  +[CNContactOrbActionsController descriptorForRequiredKeys]
+0x19f49bc1c  __TEXT,__text  +[CNContactActionsController descriptorForRequiredKeys]
+0x19f49bcf8  __TEXT,__text  +[CNQuickActionsManager descriptorForRequiredKeys]
+0x19f49bd40  __TEXT,__text  ___50+[CNQuickActionsManager descriptorForRequiredKeys]_block_invoke
+0x19f49be20  __TEXT,__text  +[CNContactViewController descriptorForRequiredKeys]
+0x19f49be2c  __TEXT,__text  +[CNContactContentViewController classForContentViewControllerImpl]
+0x19f49beac  __TEXT,__text  +[CNContactContentUnitaryViewController descriptorForRequiredKeys]
+0x19f49bf08  __TEXT,__text  +[CNContactContentUnitaryViewController descriptorForRequiredKeysWithDescription:]
+0x19f49bfc4  __TEXT,__text  ___58+[CNContactFormatter(UIAdditions) sharedFullNameFormatter]_block_invoke
+0x19f49c008  __TEXT,__text  +[CNContactHeaderDisplayView descriptorForRequiredKeysForContactFormatter:]
+0x19f49c0f8  __TEXT,__text  ___82+[CNContactContentUnitaryViewController descriptorForRequiredKeysWithDescription:]_block_invoke
+0x19f49c550  __TEXT,__text  +[CNContactFormatter(UIAdditions) sharedFullNameFormatter]
+0x19f49c598  __TEXT,__text  +[CNContactHeaderView descriptorForRequiredKeys]
+0x19f49c5a0  __TEXT,__text  +[CNContactHeaderView descriptorForRequiredKeysIncludingAvatarViewDescriptors:]
+0x19f49c8b0  __TEXT,__text  +[CNContactContentViewController descriptorForRequiredKeys]
+0x19f49c8cc  __TEXT,__text  +[CNVisualIdentityPickerViewController makeDescriptorForRequiredKeys]
+0x19f49ca78  __TEXT,__text  +[CNAvatarImageRendererSettings defaultSettings]
+0x19f49ca80  __TEXT,__text  +[CNAvatarImageRendererSettings defaultSettingsWithCacheSize:]
+0x19f49ca88  __TEXT,__text  +[CNAvatarImageRendererSettings defaultSettingsWithCacheSize:skipContactLookup:]
+0x19f49cb1c  __TEXT,__text  +[CNAvatarImageRendererSettings settingsWithContactStore:cacheSize:skipContactLookup:]
+0x19f49cbb4  __TEXT,__text  +[CNAvatarImageRendererSettings settingsWithContactStore:cacheSize:schedulerProvider:skipContactLookup:]
+0x19f49cbc4  __TEXT,__text  +[CNAvatarImageRendererSettings settingsWithContactStore:cacheSize:schedulerProvider:concurrentCaches:skipContactLookup:personaId:]
+0x19f49cd44  __TEXT,__text  -[CNAvatarImageRendererSettings initWithLikenessResolver:likenessRenderer:schedulerProvider:]
+0x19f49ce08  __TEXT,__text  -[CNAvatarImageRenderer initWithSettings:]
+0x19f49ceac  __TEXT,__text  -[CNAvatarImageRendererSettings likenessResolver]
+0x19f49ceb4  __TEXT,__text  -[CNAvatarImageRendererSettings likenessRenderer]
+0x19f49cebc  __TEXT,__text  -[CNAvatarImageRendererSettings schedulerProvider]
+0x19f49cec4  __TEXT,__text  -[CNAvatarImageRendererSettings .cxx_destruct]
+0x19f49cf08  __TEXT,__text  +[CNAvatarImageRenderingScope scopeWithPointSize:scale:rightToLeft:style:]
+0x19f49d098  __TEXT,__text  +[CNSiriContactContextProvider descriptorForRequiredKeys]
+0x19f49d144  __TEXT,__text  _getCNAssistantConversionClass
+0x19f49d218  __TEXT,__text  ___getCNAssistantConversionClass_block_invoke
+0x19f49d404  __TEXT,__text  _block_copy_helper
+0x19f49d414  __TEXT,__text  _block_copy_helper
+0x19f49d424  __TEXT,__text  _block_copy_helper
+0x19f49d434  __TEXT,__text  _block_copy_helper
+0x19f49d444  __TEXT,__text  _block_copy_helper
+0x19f49d454  __TEXT,__text  _block_copy_helper
+0x19f49d464  __TEXT,__text  _block_copy_helper
+0x19f49d474  __TEXT,__text  _block_copy_helper
+0x19f49d484  __TEXT,__text  _block_copy_helper
+0x19f49d494  __TEXT,__text  _block_copy_helper
+0x19f49d4a4  __TEXT,__text  _block_copy_helper
+0x19f49d4b4  __TEXT,__text  _block_copy_helper
+0x19f49d4c4  __TEXT,__text  _block_copy_helper
+0x19f49d4d4  __TEXT,__text  _block_copy_helper
+0x19f49d4e4  __TEXT,__text  _block_copy_helper
+0x19f49d4f4  __TEXT,__text  _block_copy_helper
+0x19f49d504  __TEXT,__text  _block_copy_helper
+0x19f49d514  __TEXT,__text  _block_copy_helper
+0x19f49d524  __TEXT,__text  _block_copy_helper
+0x19f49d534  __TEXT,__text  _block_copy_helper
+0x19f49d544  __TEXT,__text  _block_copy_helper
+0x19f49d554  __TEXT,__text  _block_copy_helper
+0x19f49d564  __TEXT,__text  _block_copy_helper
+0x19f49d6e8  __TEXT,__text  ___swift_instantiateConcreteTypeFromMangledNameAbstractV2
+0x19f49d744  __TEXT,__text  -[CNSharedProfileOnboardingController shouldShowOnboarding]
+0x19f49d77c  __TEXT,__text  -[CNSharedProfileOnboardingController stateController]
+0x19f49d784  __TEXT,__text  -[CNSharedProfileOnboardingStateController shouldShowOnboarding]
+0x19f49d840  __TEXT,__text  -[CNSharedProfileOnboardingStateController alwaysShowSNaPOnboarding]
+0x19f49d8fc  __TEXT,__text  +[CNSharedProfileOnboardingStateController userDefaults]
+0x19f49d92c  __TEXT,__text  -[CNSharedProfileOnboardingStateController lastShownOnboardingVersion]
+0x19f49d9e0  __TEXT,__text  +[CNSharedProfileOnboardingStateController log]
+0x19f49da28  __TEXT,__text  +[CNAvatarViewControllerSettings defaultSettingsWithCacheSize:threeDTouchEnabled:]
+0x19f49daac  __TEXT,__text  +[CNAvatarViewControllerSettings settingsWithContactStore:cacheSize:threeDTouchEnabled:]
+0x19f49dc4c  __TEXT,__text  ___47+[CNSharedProfileOnboardingStateController log]_block_invoke
+0x19f49dc84  __TEXT,__text  -[CNSharedProfileOnboardingController presentOnboardingFlowIfNeededForMode:fromViewController:]
+0x19f49ddc0  __TEXT,__text  -[CNUIContactsEnvironment setLaunchCheckinRegistrar:]
+0x19f49ddcc  __TEXT,__text  -[CNUIContactsEnvironment defaultSchedulerProvider]
+0x19f49de88  __TEXT,__text  -[CNContactStoreDataSource initWithStore:]
+0x19f49e010  __TEXT,__text  +[CNContactStoreFilter contactStoreFilterFromPreferencesWithContactStore:]
+0x19f49e0d8  __TEXT,__text  ___CNUILogContactStoreDataSource_block_invoke
+0x19f49e110  __TEXT,__text  +[CNContactNavigationController newContactFormatter]
+0x19f49e160  __TEXT,__text  -[CNContactStoreDataSource setContactFormatter:]
+0x19f49e16c  __TEXT,__text  -[CNContactStoreDataSource _reloadWithSchedulingMethod:]
+0x19f49e2d8  __TEXT,__text  -[CNContactStoreSnapshot prepareEnoughContacts]
+0x19f49e390  __TEXT,__text  -[CNSharedLayout addContactButton]
+0x19f49e398  __TEXT,__text  -[CNContactStoreDataSource contactFormatter]
+0x19f49e3a0  __TEXT,__text  -[CNContactStoreDataSource currentSnapshot]
+0x19f49e3e8  __TEXT,__text  ___56-[CNContactStoreDataSource _reloadWithSchedulingMethod:]_block_invoke
+0x19f49e600  __TEXT,__text  +[CNContactListStyleProvider contactListStyleWithContactStyle:]
+0x19f49e64c  __TEXT,__text  -[CNSharedLayout init]
+0x19f49e74c  __TEXT,__text  -[CNContactStyle init]
+0x19f49eac8  __TEXT,__text  +[CNUIColorRepository contactStyleDefaultTextColor]
+0x19f49ead4  __TEXT,__text  -[CNContactNavigationController initWithDataSource:contactFormatter:applyGroupFilterFromPreferences:environment:allowsLargeTitles:allowsSearch:]
+0x19f49f088  __TEXT,__text  -[CNAccountsAndGroupsItem initWithType:nameProvider:]
+0x19f49f11c  __TEXT,__text  -[CNContactViewCache init]
+0x19f49f170  __TEXT,__text  +[CNContactStyle currentStyle]
+0x19f49f2dc  __TEXT,__text  +[CNContactStyle defaultStyle]
+0x19f49f300  __TEXT,__text  ___CNContactsUIBundle_block_invoke
+0x19f49f384  __TEXT,__text  -[CNContactStoreDataSource displayName]
+0x19f49f6e0  __TEXT,__text  ___51-[CNUIContactsEnvironment inProcessActivityManager]_block_invoke
+0x19f49f6e8  __TEXT,__text  +[CNUIContactsEnvironmentServicesProvider applicationWorkspace]
+0x19f49f70c  __TEXT,__text  -[CNContactFilter fullTextString]
+0x19f4a0104  __TEXT,__text  +[CNContactListViewController collectionViewLayout]
+0x19f4a0180  __TEXT,__text  -[CNContactNavigationController setAllowsCardEditing:]
+0x19f4a0194  __TEXT,__text  -[CNContactNavigationController setAllowsCardDeletion:]
+0x19f4a01a8  __TEXT,__text  -[CNContactNavigationController setAllowsContactBlocking:]
+0x19f4a0250  __TEXT,__text  -[CNContactNavigationController initWithDataSource:withOptions:]
+0x19f4a036c  __TEXT,__text  -[CNContactNavigationController initWithDataSource:environment:allowsLargeTitles:allowsSearch:]
+0x19f4a0384  __TEXT,__text  -[CNContactNavigationController setAccountsAndGroupsDataSource:]
+0x19f4a0398  __TEXT,__text  -[CNContactNavigationController setAllowsLargeTitles:]
+0x19f4a03ac  __TEXT,__text  -[CNUISchedulerProvider backgroundSchedulerWithQualityOfService:]
+0x19f4a148c  __TEXT,__text  +[CNAvatarViewControllerSettings defaultSettings]
+0x19f4a1828  __TEXT,__text  _UIEdgeInsetsInsetRect
+0x19f4a1900  __TEXT,__text  -[CNGroupIdentity contacts]
+0x19f4a1908  __TEXT,__text  +[CNAvatarView maxContactAvatars]
+0x19f4a1914  __TEXT,__text  -[CNGroupIdentity groupPhoto]
+0x19f4a199c  __TEXT,__text  ___swift_allocate_value_buffer
+0x19f4a19ec  __TEXT,__text  ___CNUILogAvatarView_block_invoke
+0x19f4a1fdc  __TEXT,__text  ___swift_closure_destructor.3
+0x19f4a1fe0  __TEXT,__text  ___swift_closure_destructor.3
+0x19f4a1fe4  __TEXT,__text  ___swift_closure_destructor.3
+0x19f4a1fe8  __TEXT,__text  ___swift_closure_destructor.3
+0x19f4a2014  __TEXT,__text  ___swift_closure_destructor.41
+0x19f4a2018  __TEXT,__text  ___swift_closure_destructor.41
+0x19f4a201c  __TEXT,__text  ___swift_closure_destructor.3Tm
+0x19f4a201c  __TEXT,__text  ___swift_closure_destructor.3Tm
+0x19f4a2058  __TEXT,__text  ___swift_closure_destructor.13
+0x19f4a2084  __TEXT,__text  ___swift_closure_destructor
+0x19f4a20b8  __TEXT,__text  ___swift_closure_destructor
+0x19f4a20bc  __TEXT,__text  ___swift_closure_destructor
+0x19f4a21a0  __TEXT,__text  ___swift_closure_destructor
+0x19f4a2228  __TEXT,__text  ___swift_closure_destructor
+0x19f4a2254  __TEXT,__text  ___swift_closure_destructor
+0x19f4a2258  __TEXT,__text  ___swift_closure_destructor
+0x19f4a228c  __TEXT,__text  ___swift_closure_destructor
+0x19f4a22b8  __TEXT,__text  ___swift_closure_destructor
+0x19f4a22bc  __TEXT,__text  ___swift_closure_destructor
+0x19f4a22e8  __TEXT,__text  ___swift_closure_destructor
+0x19f4a2428  __TEXT,__text  ___swift_closure_destructor
+0x19f4a24b0  __TEXT,__text  ___swift_closure_destructor
+0x19f4a24ec  __TEXT,__text  ___swift_closure_destructor
+0x19f4a2518  __TEXT,__text  ___swift_closure_destructor
+0x19f4a254c  __TEXT,__text  ___swift_closure_destructor
+0x19f4a2578  __TEXT,__text  ___swift_closure_destructor
+0x19f4a25a4  __TEXT,__text  ___swift_closure_destructor
+0x19f4a25a8  __TEXT,__text  ___swift_closure_destructor
+0x19f4a25d4  __TEXT,__text  ___swift_closure_destructor
+0x19f4a25d8  __TEXT,__text  ___swift_closure_destructor
+0x19f4a2604  __TEXT,__text  ___swift_closure_destructor
+0x19f4a2630  __TEXT,__text  ___swift_closure_destructor
+0x19f4a2634  __TEXT,__text  ___swift_closure_destructor
+0x19f4a2670  __TEXT,__text  ___swift_closure_destructor
+0x19f4a2674  __TEXT,__text  ___swift_closure_destructor
+0x19f4a277c  __TEXT,__text  ___swift_closure_destructor
+0x19f4a27f8  __TEXT,__text  ___swift_closure_destructor
+0x19f4a2834  __TEXT,__text  ___swift_closure_destructor
+0x19f4a2860  __TEXT,__text  ___swift_closure_destructor
+0x19f4a28a4  __TEXT,__text  ___swift_closure_destructor
+0x19f4a28a8  __TEXT,__text  ___swift_closure_destructor
+0x19f4a293c  __TEXT,__text  ___swift_closure_destructor
+0x19f4a2968  __TEXT,__text  ___swift_closure_destructor
+0x19f4a2978  __TEXT,__text  ___swift_closure_destructor
+0x19f4a297c  __TEXT,__text  ___swift_closure_destructor
+0x19f4a29a8  __TEXT,__text  ___swift_closure_destructor
+0x19f4a29ac  __TEXT,__text  ___swift_closure_destructor
+0x19f4a29b0  __TEXT,__text  ___swift_closure_destructor
+0x19f4a29b4  __TEXT,__text  ___swift_closure_destructor
+0x19f4a29f0  __TEXT,__text  ___swift_closure_destructor
+0x19f4a2a00  __TEXT,__text  ___swift_closure_destructor
+0x19f4a2b70  __TEXT,__text  ___swift_memcpy1_1
+0x19f4a2b7c  __TEXT,__text  ___swift_noop_void_return
+0x19f4a2b80  __TEXT,__text  ___swift_project_boxed_opaque_existential_0
+0x19f4a2b80  __TEXT,__text  ___swift_project_boxed_opaque_existential_0
+0x19f4a2b80  __TEXT,__text  ___swift_project_boxed_opaque_existential_0
+0x19f4a2dd4  __TEXT,__text  ___swift_closure_destructor.67
+0x19f4a2dd8  __TEXT,__text  ___swift_closure_destructor.67
+0x19f4a2ddc  __TEXT,__text  ___swift_closure_destructor.67
+0x19f4a2de0  __TEXT,__text  +[CNAvatarView defaultThreeDTouchSupport]
+0x19f4a43a4  __TEXT,__text  -[_CNAvatarImageProvider imageForSize:scale:]
+0x19f4a43ac  __TEXT,__text  -[_CNAvatarImageProvider imageForSize:scale:style:]
+0x19f4a4564  __TEXT,__text  -[_CNAvatarImageProvider likenessProvider]
+0x19f4a456c  __TEXT,__text  -[_CNAvatarImageProvider .cxx_destruct]
+0x19f4a4578  __TEXT,__text  +[CNUIColorRepository monogrammerBackgroundWhiteColor]
+0x19f4a4584  __TEXT,__text  ___57+[CNMonogrammer descriptorForRequiredKeysIncludingImage:]_block_invoke_2
+0x19f4a4674  __TEXT,__text  +[CNMonogrammer _initialsForContact:]
+0x19f4a47f8  __TEXT,__text  __isRomanName
+0x19f4a4850  __TEXT,__text  -[CNContactStoreFilter showsEverything]
+0x19f4a48a8  __TEXT,__text  -[CNUIContactsEnvironment launchCheckinRegistrar]
+0x19f4a48b0  __TEXT,__text  -[CNContactNavigationController showCardForContact:resetFilter:resetSearch:fallbackToFirstContact:scrollToContact:animated:]
+0x19f4a48d8  __TEXT,__text  -[CNContactSection setTitle:]
+0x19f4a48e4  __TEXT,__text  -[CNContactStoreDataSource filter]
+0x19f4a48ec  __TEXT,__text  -[CNContactNavigationController contactListViewController]
+0x19f4a4900  __TEXT,__text  -[CNContactListViewController setShouldDisplayMeContactBanner:]
+0x19f4a4924  __TEXT,__text  -[CNContactNavigationController shouldShowAccountsAndGroups]
+0x19f4a4958  __TEXT,__text  -[CNContactNavigationController accountsAndGroupsViewController]
+0x19f4a4ad8  __TEXT,__text  -[CNContactStoreFilter copyWithZone:]
+0x19f4a4bd8  __TEXT,__text  -[CNContactFilter setFullTextString:]
+0x19f4a4be0  __TEXT,__text  -[CNContactNavigationController dataSource]
+0x19f4a4c20  __TEXT,__text  -[CNVCardImportController setDelegate:]
+0x19f4a4c2c  __TEXT,__text  +[CNUIColorRepository contactsApplicationTintColor]
+0x19f4a4c38  __TEXT,__text  -[CNContactSection setSortKey:]
+0x19f4a4cbc  __TEXT,__text  -[CNContactNavigationController setSharedLayout:]
+0x19f4a4cd0  __TEXT,__text  +[CNUIColorRepository contactStyleDefaultBackgroundColor]
+0x19f4a4cdc  __TEXT,__text  -[CNContactFilter copyWithZone:]
+0x19f4a4d2c  __TEXT,__text  -[CNUIContactsEnvironment runningInContactsAppOniPad]
+0x19f4a4d80  __TEXT,__text  -[CNContactStoreDataSource store]
+0x19f4a4d88  __TEXT,__text  -[CNVCardImportController initWithContactStore:presentationDelegate:]
+0x19f4a4d94  __TEXT,__text  -[CNVCardImportController initWithContactStore:presentationDelegate:targetGroup:targetContainer:]
+0x19f4a4e8c  __TEXT,__text  ___swift_closure_destructor.124
+0x19f4a4eb8  __TEXT,__text  ___swift_closure_destructor.124
+0x19f4a4ebc  __TEXT,__text  ___swift_closure_destructor.11
+0x19f4a4ec0  __TEXT,__text  ___swift_closure_destructor.11
+0x19f4a4ec4  __TEXT,__text  ___swift_closure_destructor.11
+0x19f4a4ec8  __TEXT,__text  ___swift_closure_destructor.11
+0x19f4a5030  __TEXT,__text  ___swift_closure_destructor.15
+0x19f4a5034  __TEXT,__text  ___swift_closure_destructor.15
+0x19f4a503c  __TEXT,__text  ___swift_closure_destructor.15
+0x19f4a5068  __TEXT,__text  ___swift_closure_destructor.15
+0x19f4a5078  __TEXT,__text  ___swift_closure_destructor.15
+0x19f4a50a4  __TEXT,__text  ___swift_closure_destructor.11Tm
+0x19f4a50a4  __TEXT,__text  ___swift_closure_destructor.11Tm
+0x19f4a50d8  __TEXT,__text  ___swift_closure_destructor.11Tm
+0x19f4a5128  __TEXT,__text  ___swift_closure_destructor.7
+0x19f4a515c  __TEXT,__text  ___swift_closure_destructor.7
+0x19f4a5160  __TEXT,__text  ___swift_closure_destructor.7
+0x19f4a5164  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x19f4a5164  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x19f4a5164  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x19f4a5164  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x19f4a5194  __TEXT,__text  _block_destroy_helper
+0x19f4a519c  __TEXT,__text  _block_destroy_helper
+0x19f4a51a4  __TEXT,__text  _block_destroy_helper
+0x19f4a51ac  __TEXT,__text  _block_destroy_helper
+0x19f4a51b4  __TEXT,__text  _block_destroy_helper
+0x19f4a51bc  __TEXT,__text  _block_destroy_helper
+0x19f4a51c4  __TEXT,__text  _block_destroy_helper
+0x19f4a51cc  __TEXT,__text  _block_destroy_helper
+0x19f4a51d4  __TEXT,__text  _block_destroy_helper
+0x19f4a51dc  __TEXT,__text  _block_destroy_helper
+0x19f4a51e4  __TEXT,__text  _block_destroy_helper
+0x19f4a51ec  __TEXT,__text  _block_destroy_helper
+0x19f4a51f4  __TEXT,__text  _block_destroy_helper
+0x19f4a51fc  __TEXT,__text  _block_destroy_helper
+0x19f4a5204  __TEXT,__text  _block_destroy_helper
+0x19f4a520c  __TEXT,__text  _block_destroy_helper
+0x19f4a5214  __TEXT,__text  _block_destroy_helper
+0x19f4a521c  __TEXT,__text  _block_destroy_helper
+0x19f4a5224  __TEXT,__text  _block_destroy_helper
+0x19f4a522c  __TEXT,__text  _block_destroy_helper
+0x19f4a5234  __TEXT,__text  _block_destroy_helper
+0x19f4a523c  __TEXT,__text  _block_destroy_helper
+0x19f4a5244  __TEXT,__text  _block_destroy_helper
+0x19f4a524c  __TEXT,__text  ___56-[CNContactStoreDataSource _reloadWithSchedulingMethod:]_block_invoke.200
+0x19f4a52c8  __TEXT,__text  ___69-[CNContactStoreDataSource preferredForNameMeContactWithKeysToFetch:]_block_invoke
+0x19f4a5300  __TEXT,__text  -[CNContactListViewController isValidIndexPath:]
+0x19f4a545c  __TEXT,__text  -[CNCapabilitiesManager hasForceTouchCapability]
+0x19f4a5468  __TEXT,__text  +[CNAccount(UIAdditions) _cnui_requestRefreshWithUserAction:]
+0x19f4a5590  __TEXT,__text  ___56-[CNContactListViewController bundleCanManageDuplicates]_block_invoke
+0x19f4a5618  __TEXT,__text  -[CNAvatarViewController_LegacyAvatarView _canShowWhileLocked]
+0x19f4a5620  __TEXT,__text  -[CNContactSection setIdentifier:]
+0x19f4a562c  __TEXT,__text  -[CNContactListViewController setCellStateSelected:forContact:animated:]
+0x19f4a578c  __TEXT,__text  -[CNContactSection setRange:]
+0x19f4a5794  __TEXT,__text  ___60-[CNContactStoreSnapshot _loadContactsInRange:inBackground:]_block_invoke
+0x19f4a57a0  __TEXT,__text  -[CNContactSection sortKey]
+0x19f4a57a8  __TEXT,__text  ___36-[CNUIContactsEnvironment collation]_block_invoke
+0x19f4a57b0  __TEXT,__text  -[CNContactSection range]
+0x19f4a57bc  __TEXT,__text  +[CNContactListViewController descriptorForRequiredKeysForPreferredForNameMeContact]
+0x19f4a5804  __TEXT,__text  ___84+[CNContactListViewController descriptorForRequiredKeysForPreferredForNameMeContact]_block_invoke
+0x19f4a590c  __TEXT,__text  +[CNAvatarViewController descriptorForRequiredKeysWithThreeDTouchEnabled:]
+0x19f4a5918  __TEXT,__text  ___56-[CNContactStoreDataSource _reloadWithSchedulingMethod:]_block_invoke.197
+0x19f4a5920  __TEXT,__text  +[CNContactListBannerView descriptorForRequiredKeys]
+0x19f4a5968  __TEXT,__text  ___52+[CNContactListBannerView descriptorForRequiredKeys]_block_invoke
+0x19f4a5a4c  __TEXT,__text  -[CNContactStoreSnapshot init]
+0x19f4a5b48  __TEXT,__text  -[CNContactStoreDataSource preferredForNameMeContactWithKeysToFetch:]
+0x19f4a5e40  __TEXT,__text  -[CNContactDataSourceLIFOScheduler init]
+0x19f4a5ee4  __TEXT,__text  -[CNContactStoreSnapshot countOf_contacts]
+0x19f4a5f7c  __TEXT,__text  -[CNContactStoreDataSource withReloadLock_prepareNewSnapshot]
+0x19f4a5fdc  __TEXT,__text  -[CNSharedLayout setSplitViewDisplayMode:]
+0x19f4a6064  __TEXT,__text  -[CNContactNavigationController setHideGroupsButton:]
+0x19f4a6684  __TEXT,__text  -[CNAvatarViewController .cxx_destruct]
+0x19f4a66c8  __TEXT,__text  +[CNAvatarViewController defaultImplementation]
+0x19f4a66d4  __TEXT,__text  -[CNAvatarViewController setObjectViewControllerDelegate:]
+0x19f4a66e8  __TEXT,__text  -[CNAvatarViewController_LegacyAvatarView setDelegate:]
+0x19f4a66fc  __TEXT,__text  -[CNContactListBannerView init]
+0x19f4a7164  __TEXT,__text  ___CNUILogContactList_block_invoke
+0x19f4a719c  __TEXT,__text  -[CNContactNavigationController checkForFacebookContactsWithDelay:allowAlert:]
+0x19f4a724c  __TEXT,__text  -[CNContactListViewController _applicationEnteringForeground:]
+0x19f4a72d4  __TEXT,__text  ___51-[CNContactListViewController createCollectionView]_block_invoke
+0x19f4a7314  __TEXT,__text  ___51-[CNContactListViewController createCollectionView]_block_invoke_4
+0x19f4a73a4  __TEXT,__text  ___51-[CNContactListViewController createCollectionView]_block_invoke_6
+0x19f4a73fc  __TEXT,__text  -[CNContactNavigationController shouldShowRightAddButton]
+0x19f4a74a8  __TEXT,__text  -[CNContactStoreDataSource contacts]
+0x19f4a74e8  __TEXT,__text  -[CNContactListCollectionViewCell initWithFrame:]
+0x19f4a753c  __TEXT,__text  -[CNContactListCollectionViewCell setContactListStyleApplier:]
+0x19f4a7550  __TEXT,__text  -[CNContactListCollectionViewCell setContactMatchInfo:completionBlock:]
+0x19f4a7730  __TEXT,__text  -[CNContactListCollectionViewCell contactFormatter]
+0x19f4a7744  __TEXT,__text  -[CNContactListCollectionViewCell isContactBlocked]
+0x19f4a7790  __TEXT,__text  -[CNContactListCollectionViewCell fetchBlockedStatus]
+0x19f4a7814  __TEXT,__text  -[CNContactListCollectionViewCell contact]
+0x19f4a7828  __TEXT,__text  -[CNContactListViewController cellContentUnavailableConfiguration]
+0x19f4a783c  __TEXT,__text  ___53-[CNContactListViewController _updateCountStringNow:]_block_invoke_2
+0x19f4a78c0  __TEXT,__text  -[CNSharedLayout searchBarPlacementForTraitCollection:]
+0x19f4a7a00  __TEXT,__text  -[CNContactListCollectionViewCell hasSubtitle]
+0x19f4a7a14  __TEXT,__text  +[CNUIFontRepository contactStyleDefaultTextFont]
+0x19f4a7a2c  __TEXT,__text  -[CNContactStoreFilter predicate]
+0x19f4a7bcc  __TEXT,__text  -[CNContactListCollectionViewCell isMeCard]
+0x19f4a7be0  __TEXT,__text  ___42-[CNContactListSearchController searchBar]_block_invoke
+0x19f4a7c40  __TEXT,__text  -[CNContactListCollectionViewCell avatarContainerView]
+0x19f4a7c54  __TEXT,__text  -[CNContactListStyleApplier applyTextColorsToContentConfiguration:usingState:forCell:]
+0x19f4a7d9c  __TEXT,__text  ___51-[CNContactListCollectionViewCell applyAccessories]_block_invoke
+0x19f4a7e08  __TEXT,__text  -[CNContactListCollectionViewCell setIsMeCard:]
+0x19f4a7e2c  __TEXT,__text  -[CNContactListCollectionViewCell setAllowsMultiSelection:]
+0x19f4a7e40  __TEXT,__text  -[CNContactListCollectionViewCell setAllowsMultiSelectContextMenus:]
+0x19f4a7e54  __TEXT,__text  ___57-[CNContactListStyleApplier applyContactListStyleToCell:]_block_invoke
+0x19f4a7edc  __TEXT,__text  ___51-[CNContactListViewController createCollectionView]_block_invoke_5
+0x19f4a7f14  __TEXT,__text  ___51-[CNContactListViewController createCollectionView]_block_invoke_2
+0x19f4a7ff0  __TEXT,__text  ___51-[CNContactListViewController createCollectionView]_block_invoke_3
+0x19f4a8080  __TEXT,__text  ___51-[CNContactListViewController createCollectionView]_block_invoke_7
+0x19f4a80c0  __TEXT,__text  -[CNContactListViewController _contactAtIndexPath:]
+0x19f4a81f4  __TEXT,__text  -[CNContactStoreSnapshot objectIn_contactsAtIndex:]
+0x19f4a8504  __TEXT,__text  -[CNContactListCollectionViewCell setContactFormatter:]
+0x19f4a8518  __TEXT,__text  -[CNContactListCollectionViewCell contactListStyleApplier]
+0x19f4a852c  __TEXT,__text  -[CNContactListCollectionViewCell setContact:]
+0x19f4a865c  __TEXT,__text  -[CNUIAfterCACommitScheduler scheduler]
+0x19f4a8664  __TEXT,__text  -[CNAvatarImageRenderer placeholderImageProvider]
+0x19f4a86e8  __TEXT,__text  -[CNAvatarImageRenderer resolver]
+0x19f4a86f0  __TEXT,__text  -[_CNAvatarImageProvider initWithLikenessProvider:]
+0x19f4a8774  __TEXT,__text  -[CNContactNavigationController updateNavigationButtonsAnimated:]
+0x19f4a877c  __TEXT,__text  -[CNContactNavigationController updateNavigationButtonsAnimated:viewWillAppear:]
+0x19f4a8824  __TEXT,__text  -[CNContactNavigationController setContactStyle:]
+0x19f4a88d8  __TEXT,__text  -[CNContactNavigationController setContactListStyleApplier:]
+0x19f4a8940  __TEXT,__text  -[CNContactNavigationController contactListStyleApplier]
+0x19f4a8954  __TEXT,__text  +[CNLabeledValue(UIAdditions) localizedDisplayStringForLabel:propertyName:]
+0x19f4a8b50  __TEXT,__text  -[CNContactListViewController contactFormatter]
+0x19f4a8b64  __TEXT,__text  -[CNUIContactsEnvironment nts_lazyInProcessActivityManager]
+0x19f4a93f4  __TEXT,__text  -[CNContactNavigationController applicationDidResume]
+0x19f4a93fc  __TEXT,__text  -[CNContactListBannerView setMeContact:footnoteTitle:footnoteValue:]
+0x19f4a960c  __TEXT,__text  ___62-[CNContactListViewController refreshTableViewHeaderWithSize:]_block_invoke_6
+0x19f4a9618  __TEXT,__text  -[CNContactStoreFilter .cxx_destruct]
+0x19f4a9688  __TEXT,__text  -[CNContactListViewController initWithDataSource:searchable:environment:shouldUseLargeTitle:]
+0x19f4a9aac  __TEXT,__text  -[CNContactListViewController setShouldHideDuplicates:]
+0x19f4a9ac0  __TEXT,__text  -[CNAvatarView setDisplayedImageState:]
+0x19f4a9ad4  __TEXT,__text  -[CNContactListViewController setShouldAllowDrops:]
+0x19f4a9ae8  __TEXT,__text  -[CNContactListViewController searchResultsController]
+0x19f4a9afc  __TEXT,__text  -[CNContactListViewController setContactListStyleApplier:]
+0x19f4a9b50  __TEXT,__text  -[CNAvatarView setGroupViewConfigurationUpdateToken:]
+0x19f4a9b64  __TEXT,__text  +[UIImage(CNUI) cnui_imageNamed:]
+0x19f4a9bcc  __TEXT,__text  -[NSString(CNUI) cnui_containsNonLatinCharacters]
+0x19f4a9bd0  __TEXT,__text  -[CNAvatarView cardController]
+0x19f4a9be4  __TEXT,__text  -[CNUIContactsEnvironment contactChangesNotifier]
+0x19f4a9c58  __TEXT,__text  -[CNAvatarViewController_LegacyAvatarView didUpdateContentForAvatarView:]
+0x19f4a9ce0  __TEXT,__text  +[UIFont(ABFonts) ab_preferredContentSizeCategoryIsAccessibilityCategory]
+0x19f4a9d9c  __TEXT,__text  ___62-[CNContactListViewController refreshTableViewHeaderWithSize:]_block_invoke_5
+0x19f4a9e1c  __TEXT,__text  -[CNContactFilter .cxx_destruct]
+0x19f4a9e28  __TEXT,__text  -[CNContactListViewController setDisableContextMenus:]
+0x19f4a9e3c  __TEXT,__text  -[CNContactListViewController setShouldAllowDrags:]
+0x19f4a9e50  __TEXT,__text  -[CNContactListViewController setShouldDisplayCount:]
+0x19f4a9e64  __TEXT,__text  -[CNContactListViewController setContactFormatter:]
+0x19f4a9ef8  __TEXT,__text  -[CNContactListViewController setDelegate:]
+0x19f4a9f84  __TEXT,__text  -[CNContactListViewController isSearching]
+0x19f4a9ff4  __TEXT,__text  +[CNLimitedAccessPickerSupport isPickerLimitedAccess:]
+0x19f4aa000  __TEXT,__text  -[CNContactListStyleWrapperProvider contactStyle]
+0x19f4aa008  __TEXT,__text  -[CNContactListViewController isPickerWithToolbarSearchField]
+0x19f4aa0d0  __TEXT,__text  -[CNContactListStyleWrapperProvider tableBackgroundFilteredColor]
+0x19f4aa110  __TEXT,__text  -[CNContactListCollectionViewCell configuredAsBlocked]
+0x19f4aa124  __TEXT,__text  ___getHKMedicalIDStoreClass_block_invoke
+0x19f4aa1ec  __TEXT,__text  -[CNHealthStoreManager nts_lazyMedicalIDStore]
+0x19f4aa2f8  __TEXT,__text  ___45-[CNContactListViewController viewDidAppear:]_block_invoke
+0x19f4aa3b0  __TEXT,__text  _getHKHealthStoreClass
+0x19f4aa484  __TEXT,__text  -[CNContactStyle listTextColor]
+0x19f4aa48c  __TEXT,__text  -[CNContactListStyleWrapperProvider cellNameTextFont]
+0x19f4aa4cc  __TEXT,__text  -[CNContactListCollectionViewCell cancelAsyncOperations]
+0x19f4aa50c  __TEXT,__text  -[CNContactListCollectionViewCell summaryCancelationToken]
+0x19f4aa520  __TEXT,__text  -[CNContactListCollectionViewCell setSummaryCancelationToken:]
+0x19f4aa534  __TEXT,__text  ___144-[CNContactNavigationController initWithDataSource:contactFormatter:applyGroupFilterFromPreferences:environment:allowsLargeTitles:allowsSearch:]_block_invoke
+0x19f4aa5b8  __TEXT,__text  +[CNUIDraftSupport loadNewContactDraft]
+0x19f4aa5cc  __TEXT,__text  -[CNContactStoreDataSource setShouldRevalidateFilterOnStoreChange:]
+0x19f4aa5d4  __TEXT,__text  ___42-[CNSharedLayout setSplitViewDisplayMode:]_block_invoke
+0x19f4aa5dc  __TEXT,__text  -[CNSharedLayout updateDelegates]
+0x19f4aa6ec  __TEXT,__text  ___53-[CNContactListViewController _updateCountStringNow:]_block_invoke_3
+0x19f4aa6fc  __TEXT,__text  ___53-[CNContactListViewController _updateCountStringNow:]_block_invoke
+0x19f4aa828  __TEXT,__text  -[CNContactListViewController _contactCountTelemetry:]
+0x19f4aa8f4  __TEXT,__text  __LargeDatabasesSignpostLogQueue
+0x19f4aa93c  __TEXT,__text  -[CNContactListSearchController searchBar]
+0x19f4aa9b0  __TEXT,__text  ___56-[CNHealthStoreManager notifyHandlersWithMedicalIDData:]_block_invoke
+0x19f4aab3c  __TEXT,__text  ___56-[CNHealthStoreManager notifyHandlersWithMedicalIDData:]_block_invoke_2
+0x19f4aab58  __TEXT,__text  ___61-[CNContactListViewController startHandlingEmergencyContacts]_block_invoke
+0x19f4aad04  __TEXT,__text  -[CNContactListStyleDefaultProvider tableSeparatorLeadingInsetForListAppearance:]
+0x19f4aad08  __TEXT,__text  ___58-[CNContactListViewController updateDuplicatesCountBanner]_block_invoke
+0x19f4aad18  __TEXT,__text  ___70-[UICollectionViewController(CNUI) _cnui_updateAccountsRefreshControl]_block_invoke_2
+0x19f4aae0c  __TEXT,__text  ____LargeDatabasesSignpostLogQueue_block_invoke
+0x19f4aae68  __TEXT,__text  ___71-[CNContactListViewController fetchDuplicatesCountWithCompletionBlock:]_block_invoke_2
+0x19f4aaf1c  __TEXT,__text  -[CNAvatarViewController_LegacyAvatarView delegate]
+0x19f4aaf44  __TEXT,__text  ___62-[CNContactListViewController refreshTableViewHeaderWithSize:]_block_invoke
+0x19f4ab260  __TEXT,__text  -[CNContactFilter isEqual:]
+0x19f4ab34c  __TEXT,__text  -[CNContactListViewController setBlockListNotificationToken:]
+0x19f4ab360  __TEXT,__text  -[CNContactListViewController setLimitedAccessPickerType:]
+0x19f4ab374  __TEXT,__text  -[CNContactListViewController setLimitedAccessContactCaption:]
+0x19f4ab388  __TEXT,__text  -[CNContactListViewController dataSource]
+0x19f4ab3f4  __TEXT,__text  -[CNContactListViewController setAllowsMultiSelectContextMenus:]
+0x19f4ab418  __TEXT,__text  -[CNContactListViewController setupContactListForMultiSelectContextMenus]
+0x19f4ab4c0  __TEXT,__text  -[CNContactNavigationController viewDidLoad]
+0x19f4ab584  __TEXT,__text  -[CNContactListViewController deselectAllSelectedIndexPathsAnimated:]
+0x19f4ab7a8  __TEXT,__text  -[CNContactListViewController adjustTableViewOffsetForIncomingSearchUI]
+0x19f4abbf0  __TEXT,__text  +[CNUIFontRepository contactListBannerTitleFontPrimary]
+0x19f4abc78  __TEXT,__text  -[CNContactStyle groupedBackgroundColor]
+0x19f4abc80  __TEXT,__text  -[CNHealthStoreManager nts_lazyHealthStore]
+0x19f4abcc4  __TEXT,__text  ___54-[CNHealthStoreManager updateAndDispatchMedicalIDData]_block_invoke
+0x19f4abde8  __TEXT,__text  _HealthKitLibrary
+0x19f4abf3c  __TEXT,__text  -[CNContactListViewController additionalSectionsAtTopCount]
+0x19f4abf9c  __TEXT,__text  ___53-[CNHealthStoreManager registerMedicalIDDataHandler:]_block_invoke_2
+0x19f4ac00c  __TEXT,__text  -[CNContactListSectionHeaderFooterView layoutSubviews]
+0x19f4ac114  __TEXT,__text  -[CNUISchedulerProvider backgroundScheduler]
+0x19f4ac118  __TEXT,__text  ___38-[CNHealthStoreManager medicalIDStore]_block_invoke
+0x19f4ac120  __TEXT,__text  -[CNContactListViewController refreshDuplicates]
+0x19f4ac1d4  __TEXT,__text  -[CNAvatarView traitCollectionDidChange:]
+0x19f4ac278  __TEXT,__text  -[CNAvatarView style]
+0x19f4ac28c  __TEXT,__text  -[CNStarkContactsListViewController canManageDuplicateContacts]
+0x19f4ac294  __TEXT,__text  -[CNContactListViewController shouldHideDuplicates]
+0x19f4ac2a8  __TEXT,__text  -[CNContactListViewController bundleCanManageDuplicates]
+0x19f4ac34c  __TEXT,__text  -[CNContactListViewController isViewingTopLevelAllContacts]
+0x19f4ac360  __TEXT,__text  -[CNContactListViewController duplicatesController]
+0x19f4ac3d4  __TEXT,__text  ___51-[CNContactListViewController duplicatesController]_block_invoke
+0x19f4ac434  __TEXT,__text  -[CNDuplicateContactsController resetDuplicates]
+0x19f4ac448  __TEXT,__text  -[CNDuplicateContactsController findDuplicates]
+0x19f4ac550  __TEXT,__text  -[CNContactListViewController canManageDuplicateContacts]
+0x19f4ac5e4  __TEXT,__text  -[CNDuplicateContactsController isBusy]
+0x19f4ac600  __TEXT,__text  ___47-[CNDuplicateContactsController findDuplicates]_block_invoke
+0x19f4ac68c  __TEXT,__text  -[CNDuplicateContactsController refreshManagedDuplicates]
+0x19f4ac694  __TEXT,__text  -[CNDuplicateContactsController refreshManagedDuplicatesWithCompletionBlock:]
+0x19f4ac730  __TEXT,__text  ___77-[CNDuplicateContactsController refreshManagedDuplicatesWithCompletionBlock:]_block_invoke
+0x19f4ac780  __TEXT,__text  -[CNDuplicateContactsController updateDuplicatesCounts]
+0x19f4ac7f8  __TEXT,__text  ___55-[CNDuplicateContactsController updateDuplicatesCounts]_block_invoke
+0x19f4ac880  __TEXT,__text  -[CNDuplicateContactsController newDuplicatesCount]
+0x19f4ac888  __TEXT,__text  -[CNDuplicateContactsController allDuplicatesCount]
+0x19f4ac890  __TEXT,__text  -[CNContactContentUnitaryViewController geminiDataSourceDidUpdate:]
+0x19f4acbb8  __TEXT,__text  -[CNContactContentUnitaryViewController cardEditingGeminiGroup]
+0x19f4acbcc  __TEXT,__text  -[CNCardPropertyGeminiGroup editingItems]
+0x19f4acc10  __TEXT,__text  -[CNCardPropertyGeminiGroup shouldShowGemini]
+0x19f4acc24  __TEXT,__text  -[CNContactContentUnitaryViewController indexPathOfEditingPropertyItem:]
+0x19f4acc2c  __TEXT,__text  -[CNContactContentUnitaryViewController indexPathOfPropertyItem:editing:]
+0x19f4acc98  __TEXT,__text  -[CNContactContentUnitaryViewController editingGroups]
+0x19f4accac  __TEXT,__text  -[CNContactContentUnitaryViewController shouldShowGemini]
+0x19f4acdc8  __TEXT,__text  -[CNContactHeaderStaticDisplayView allowsPickerActions]
+0x19f4acddc  __TEXT,__text  -[CNStarkHeaderPlatterView canBecomeFocused]
+0x19f4acde4  __TEXT,__text  -[CNStarkHeaderPlatterView didUpdateFocusInContext:withAnimationCoordinator:]
+0x19f4aceac  __TEXT,__text  -[CNStarkHeaderPlatterView _updateForFocusedState:]
+0x19f4acfc4  __TEXT,__text  +[CNUIColorRepository carPlaySiriButtonBackgroundHighlightedColor]
+0x19f4acfd0  __TEXT,__text  +[CNUIColorRepository carPlaySiriButtonTextHighlightedColor]
+0x19f4acfdc  __TEXT,__text  -[CNStarkHeaderPlatterView label]
+0x19f4acff0  __TEXT,__text  -[CNStarkHeaderPlatterView accessory]
+0x19f4ad004  __TEXT,__text  -[CNContactStyle usesInsetPlatterStyle]
+0x19f4ad024  __TEXT,__text  -[CNContactStyle contactViewPlatterStyle]
+0x19f4ad02c  __TEXT,__text  -[CNContactListCollectionViewCell layoutSubviews]
+0x19f4ad07c  __TEXT,__text  -[CNContactListCollectionViewCell setHasBeenDisplayed:]
+0x19f4ad090  __TEXT,__text  -[CNContactListHeaderView layoutSubviews]
+0x19f4ad114  __TEXT,__text  -[CNContactContentUnitaryViewController editingContactView]
+0x19f4ad244  __TEXT,__text  -[CNContactContentUnitaryViewController sectionOfGroup:inTableView:]
+0x19f4ad2dc  __TEXT,__text  -[CNContactContentUnitaryViewController _currentGroupsForTableView:]
+0x19f4ad320  __TEXT,__text  -[CNContactContentUnitaryViewController geminiDataSource]
+0x19f4ad334  __TEXT,__text  -[CNContactContentUnitaryViewController shouldUseStaticHeader]
+0x19f4ad3a0  __TEXT,__text  -[CNContactContentUnitaryViewController staticDisplayHeaderView]
+0x19f4ad540  __TEXT,__text  -[CNContactHeaderStaticDisplayView updateGeminiResult:]
+0x19f4ad724  __TEXT,__text  -[CNContactHeaderStaticDisplayView geminiView]
+0x19f4ad734  __TEXT,__text  -[CNContactHeaderStaticDisplayView setGeminiResult:]
+0x19f4ad740  __TEXT,__text  -[CNContactHeaderView contacts]
+0x19f4ad754  __TEXT,__text  -[CNContactHeaderView useDualSimParity]
+0x19f4ad768  __TEXT,__text  -[CNContactHeaderStaticDisplayView geminiPicker]
+0x19f4ad77c  __TEXT,__text  -[CNContactHeaderStaticDisplayView setShouldShowGemini:]
+0x19f4ad824  __TEXT,__text  -[CNCardPropertyGeminiGroup setGeminiResult:]
+0x19f4ad928  __TEXT,__text  -[CNCardPropertyGroup propertyItems]
+0x19f4ad93c  __TEXT,__text  -[CNPropertyGroupGeminiItem setGeminiResult:]
+0x19f4ad950  __TEXT,__text  -[CNCardPropertyGeminiGroup setShouldShowGemini:]
+0x19f4ad964  __TEXT,__text  -[CNStarkContactInfoViewController contactGeminiView]
+0x19f4ad978  __TEXT,__text  -[CNContactGeminiView setGeminiResult:]
+0x19f4ada24  __TEXT,__text  -[CNContactGeminiView updateGeminiViewForChannel:channelUsage:calculateLayout:]
+0x19f4adc94  __TEXT,__text  -[CNContactGeminiView chevronView]
+0x19f4adca8  __TEXT,__text  -[CNContactGeminiView geminiBadge]
+0x19f4adcbc  __TEXT,__text  -[CNContactGeminiView localizedChannelUsageFromGeminiUsage:]
+0x19f4add58  __TEXT,__text  -[CNContactHeaderView setNeedsLabelSizeCalculation:]
+0x19f4add6c  __TEXT,__text  -[CNStarkContactInfoViewController geminiDataSourceDidUpdate:]
+0x19f4ade2c  __TEXT,__text  -[CNStarkContactInfoViewController setGeminiResult:]
+0x19f4ade40  __TEXT,__text  -[CNContactGeminiView useDualSimParity]
+0x19f4ade54  __TEXT,__text  -[CNStarkContactsListViewController viewDidLayoutSubviews]
+0x19f4adee0  __TEXT,__text  -[CNContactListViewController viewDidLayoutSubviews]
+0x19f4ae020  __TEXT,__text  -[CNContactListViewController pendingLayoutBlocks]
+0x19f4ae034  __TEXT,__text  -[CNContactNavigationController hostIdiom]
+0x19f4ae048  __TEXT,__text  -[CNContactNavigationController updateNavigationButtonsInSearchMode:animated:]
+0x19f4ae6c4  __TEXT,__text  -[CNContactNavigationController shouldShowLeftCloseAndRightGroupsButton]
+0x19f4ae6c8  __TEXT,__text  -[CNContactNavigationController isSinglePickerOnVisionOS]
+0x19f4ae71c  __TEXT,__text  -[CNContactNavigationController shouldShowLeftCancelAndRightDoneButton]
+0x19f4ae758  __TEXT,__text  -[CNContactNavigationController allowsCanceling]
+0x19f4ae76c  __TEXT,__text  -[CNContactNavigationController shouldShowLeftDoneAndRightAddButton]
+0x19f4ae7ac  __TEXT,__text  -[CNContactNavigationController shouldShowLeftDoneAndRightEditButton]
+0x19f4ae7cc  __TEXT,__text  -[CNContactNavigationController shouldShowRightAddAndCancelButton]
+0x19f4ae818  __TEXT,__text  -[CNContactNavigationController shouldShowRightCancelButton]
+0x19f4ae864  __TEXT,__text  -[CNContactNavigationController allowsCardEditing]
+0x19f4ae8c4  __TEXT,__text  -[CNContactNavigationController isContactProviderDataSource]
+0x19f4ae95c  __TEXT,__text  -[CNContactStoreDataSource filteredContainer]
+0x19f4aeb64  __TEXT,__text  -[CNContactStoreFilter containerIdentifiers]
+0x19f4aeb78  __TEXT,__text  -[CNContactNavigationController isAcceptedIntroductionsDataSource]
+0x19f4aec10  __TEXT,__text  -[CNContactNavigationController canAddContacts]
+0x19f4aece8  __TEXT,__text  -[CNContactStoreFilter isServerFilter]
+0x19f4aecfc  __TEXT,__text  -[CNContactNavigationController shouldShowMailButton]
+0x19f4aedac  __TEXT,__text  -[CNContactListViewController originalDataSource]
+0x19f4aedc0  __TEXT,__text  -[CNContactStoreDataSource filterShowsSingleGroup]
+0x19f4aee58  __TEXT,__text  -[CNContactNavigationController hideMailToGroupButton]
+0x19f4aee6c  __TEXT,__text  -[CNContactStoreDataSource filterShowsSingleExchangeFolder]
+0x19f4aeeb8  __TEXT,__text  -[CNContactStoreFilter groupIdentifiers]
+0x19f4aeecc  __TEXT,__text  -[CNContactNavigationController refreshMailButtonEnabled]
+0x19f4aefb4  __TEXT,__text  -[CNContactNavigationController updateLeftNavigationButtonAnimated:]
+0x19f4af1c4  __TEXT,__text  -[CNContactNavigationController hideGroupsButton]
+0x19f4af1d8  __TEXT,__text  -[CNContactNavigationController allowsDone]
+0x19f4af1ec  __TEXT,__text  -[CNContactNavigationController limitedAccessPickerType]
+0x19f4af200  __TEXT,__text  -[CNContactNavigationController shouldShowLeftCancelAndRightAddButton]
+0x19f4af240  __TEXT,__text  -[CNContactNavigationController shouldShowGroupsBackButton]
+0x19f4af288  __TEXT,__text  -[CNContactNavigationController accountsAndGroupsDataSource]
+0x19f4af29c  __TEXT,__text  -[CNDuplicateContactsController setIsAlreadyFindingDuplicates:]
+0x19f4af2a4  __TEXT,__text  -[CNContactListViewController meContactBanner]
+0x19f4af304  __TEXT,__text  ___47-[CNDuplicateContactsController findDuplicates]_block_invoke_2
+0x19f4af310  __TEXT,__text  -[CNContactListViewController setPendingLayoutBlocks:]
+0x19f4af324  __TEXT,__text  -[CNContactListViewController pendingSearchControllerActivation]
+0x19f4af338  __TEXT,__text  -[CNContactListViewController updateMeContactBannerTopKeyline]
+0x19f4af480  __TEXT,__text  -[CNContactListBannerView setTopSeparatorWithInset:andLength:]
+0x19f4af5b4  __TEXT,__text  -[CNContactListViewController layoutSelectButtonView]
+0x19f4af794  __TEXT,__text  -[CNContactListViewController isDisplayingContentUnavailableViewAsCell]
+0x19f4af7c8  __TEXT,__text  -[CNContactListViewController shouldDisplayCreateNewContactAsRow]
+0x19f4af7fc  __TEXT,__text  -[CNContactListViewController isShowingDuplicatesBanner]
+0x19f4af810  __TEXT,__text  +[CNAvatarImageRenderer descriptorForRequiredKeys]
+0x19f4af8ec  __TEXT,__text  -[CNAvatarImageRenderer avatarImageForContacts:scope:]
+0x19f4af8fc  __TEXT,__text  -[CNAvatarImageRenderer avatarImageForContacts:withBadges:scope:]
+0x19f4afc40  __TEXT,__text  -[CNAvatarImageRenderer schedulerProvider]
+0x19f4afc48  __TEXT,__text  -[CNUISchedulerProvider immediateScheduler]
+0x19f4afc88  __TEXT,__text  -[CNAvatarImageRenderer renderAvatarsForContacts:withBadges:scope:placeholder:workScheduler:imageHandler:]
+0x19f4afda0  __TEXT,__text  -[CNAvatarImageRenderer runScopeBasedImageObservable:scope:imageHandler:]
+0x19f4afe40  __TEXT,__text  -[CNAvatarImageRenderer runScopeBasedImageObservable:scope:observer:]
+0x19f4aff2c  __TEXT,__text  -[CNUISchedulerProvider schedulerProvider]
+0x19f4aff34  __TEXT,__text  ___106-[CNAvatarImageRenderer renderAvatarsForContacts:withBadges:scope:placeholder:workScheduler:imageHandler:]_block_invoke
+0x19f4aff4c  __TEXT,__text  -[CNAvatarImageRenderer renderedLikenessesForContacts:withBadges:scope:placeholder:workScheduler:]
+0x19f4b0124  __TEXT,__text  -[CNAvatarImageRenderer renderer]
+0x19f4b012c  __TEXT,__text  -[CNUILikenessRenderingScope(CNAvatarImageRenderingScope) likenessRenderingScope]
+0x19f4b0130  __TEXT,__text  +[UIImage(CNUI) cnui_symbolImageNamed:scale:weight:withColor:useFixedSize:compatibleWithTextStyle:]
+0x19f4b02ac  __TEXT,__text  -[CNContactGeminiView shouldDisplayBadge]
+0x19f4b02fc  __TEXT,__text  -[CNContactGeminiView localizedLabelFromGeminiChannel:]
+0x19f4b03c0  __TEXT,__text  -[CNContactGeminiView geminiResult]
+0x19f4b03d4  __TEXT,__text  -[CNContactGeminiView typeLabel]
+0x19f4b03e8  __TEXT,__text  -[CNContactGeminiView geminiLabel]
+0x19f4b03fc  __TEXT,__text  -[CNContactGeminiView backgroundColor]
+0x19f4b0410  __TEXT,__text  -[CNContactGeminiView geminiViewChevronImage]
+0x19f4b049c  __TEXT,__text  +[UIImage(CNUI) cnui_symbolImageForDynamicallySizedContactCardChevronWithColor:]
+0x19f4b04c4  __TEXT,__text  -[CNContactGeminiView shouldDisplayChevron]
+0x19f4b04c8  __TEXT,__text  -[CNContactGeminiView allowsPickerActions]
+0x19f4b04dc  __TEXT,__text  -[CNStarkContactInfoViewController shouldShowGemini]
+0x19f4b0548  __TEXT,__text  -[CNStarkContactInfoViewController geminiResult]
+0x19f4b055c  __TEXT,__text  -[CNStarkContactInfoViewController contact]
+0x19f4b0570  __TEXT,__text  +[CNContactContentDisplayViewController shouldShowGeminiForResult:contact:]
+0x19f4b067c  __TEXT,__text  -[CNStarkCardViewController traitCollectionDidChange:]
+0x19f4b06c8  __TEXT,__text  -[CNStarkContactsListViewController handleSiriHeaderViewTap:]
+0x19f4b09d8  __TEXT,__text  -[CNContactListViewController shouldDisplayAddNewContactRow]
+0x19f4b09ec  __TEXT,__text  -[CNContactStoreSnapshot dataSource]
+0x19f4b0a0c  __TEXT,__text  -[CNContactListViewController shouldShowLimitedAccessTip]
+0x19f4b0a20  __TEXT,__text  -[CNContactListViewController selectButton]
+0x19f4b0a34  __TEXT,__text  -[CNContactListViewController selectAllButtonOffsetAccountingForSectionHeaders]
+0x19f4b0aac  __TEXT,__text  -[CNStarkContactsListViewController contactListTableView]
+0x19f4b0ac0  __TEXT,__text  -[CNContactListViewController collectionViewShouldDisplayCreateNewContact]
+0x19f4b0afc  __TEXT,__text  -[CNContactListViewController isShowingLimitedAccessTip]
+0x19f4b0b3c  __TEXT,__text  -[CNContactListViewController hasNoContacts]
+0x19f4b0bb4  __TEXT,__text  -[CNContactStoreDataSource isLoading]
+0x19f4b0bbc  __TEXT,__text  -[CNContactStoreSnapshot contacts]
+0x19f4b0bc8  __TEXT,__text  -[CNContactListViewController searchBar]
+0x19f4b0bdc  __TEXT,__text  -[CNContactListViewController selectButtonView]
+0x19f4b0bf0  __TEXT,__text  -[CNStarkActionView enabled]
+0x19f4b0c04  __TEXT,__text  -[CNStarkActionView button]
+0x19f4b0c18  __TEXT,__text  -[CNStarkActionViewButton setFillColor:]
+0x19f4b0c54  __TEXT,__text  -[CNStarkActionView enabledGlyphColor]
+0x19f4b0c68  __TEXT,__text  +[CNAccount(UIAdditions) _cnui_accountStore]
+0x19f4b0c74  __TEXT,__text  ___61+[CNAccount(UIAdditions) _cnui_requestRefreshWithUserAction:]_block_invoke
+0x19f4b0eb8  __TEXT,__text  -[CNStarkContactsListViewController hadScrollAccessoryAtLastHeaderViewUpdate]
+0x19f4b0ecc  __TEXT,__text  -[CNContactListHeaderView pointInside:withEvent:]
+0x19f4b0f68  __TEXT,__text  -[CNContactListHeaderView headerView]
+0x19f4b0f7c  __TEXT,__text  -[CNContactContentUnitaryViewController applicationLeftForeground:]
+0x19f4b0fd4  __TEXT,__text  +[CNUIColorRepository carPlaySiriButtonBackgroundColor]
+0x19f4b1014  __TEXT,__text  +[CNUIColorRepository carPlaySiriButtonTextColor]
+0x19f4b1020  __TEXT,__text  -[CNStarkCardViewController layoutConstraints]
+0x19f4b1034  __TEXT,__text  -[CNStarkContactInfoViewController layoutConstraints]
+0x19f4b1048  __TEXT,__text  -[CNStarkContactInfoViewController setLayoutConstraints:]
+0x19f4b105c  __TEXT,__text  -[CNStarkActionsController resetLayoutConstraints]
+0x19f4b10e4  __TEXT,__text  -[CNStarkActionsController setLayoutConstraints:]
+0x19f4b10f8  __TEXT,__text  +[CNUIFontRepository carPlayQuickActionButtonTitleFont]
+0x19f4b1108  __TEXT,__text  -[CNStarkActionView label]
+0x19f4b111c  __TEXT,__text  -[CNStarkActionView stateUpdated]
+0x19f4b13f8  __TEXT,__text  -[CNStarkActionView title]
+0x19f4b140c  __TEXT,__text  -[CNStarkActionView selected]
+0x19f4b1420  __TEXT,__text  +[CNUIColorRepository carPlayQuickActionButtonTitleTextColorEnabled]
+0x19f4b142c  __TEXT,__text  -[CNStarkActionView disabledStrokeColor]
+0x19f4b1440  __TEXT,__text  -[CNStarkActionView disabledFillColor]
+0x19f4b1454  __TEXT,__text  -[CNStarkActionView disabledButtonFocused]
+0x19f4b1468  __TEXT,__text  -[CNStarkActionView disabledGlyphColor]
+0x19f4b147c  __TEXT,__text  +[CNUIColorRepository carPlayQuickActionButtonTitleTextColorDisabled]
+0x19f4b1488  __TEXT,__text  -[CNStarkContactInfoViewController updateViewConstraints]
+0x19f4b1518  __TEXT,__text  -[CNStarkContactInfoViewController setupLayoutConstraints]
+0x19f4b17b0  __TEXT,__text  -[CNStarkContactInfoViewController stackView]
+0x19f4b17c4  __TEXT,__text  -[CNStarkActionsController updateViewConstraints]
+0x19f4b1854  __TEXT,__text  -[CNStarkActionsController setupLayoutConstraints]
+0x19f4b1f88  __TEXT,__text  -[CNStarkActionsController willTransitionToBoundsWidth]
+0x19f4b1f9c  __TEXT,__text  -[CNStarkActionsController setWillTransitionToBoundsWidth:]
+0x19f4b1fb0  __TEXT,__text  -[CNStarkActionsController messageActionView]
+0x19f4b1fc4  __TEXT,__text  -[CNStarkActionsController callActionView]
+0x19f4b1fd8  __TEXT,__text  -[CNStarkActionsController directionsActionView]
+0x19f4b1fec  __TEXT,__text  -[CNStarkCardViewController updateViewConstraints]
+0x19f4b207c  __TEXT,__text  -[CNStarkCardViewController setupLayoutConstraints]
+0x19f4b2c14  __TEXT,__text  -[CNStarkCardViewController centeringLayoutGuide]
+0x19f4b2c28  __TEXT,__text  -[CNStarkCardViewController actionsController]
+0x19f4b2c3c  __TEXT,__text  -[CNStarkCardViewController avatarAndDetailsLayoutGuide]
+0x19f4b2c50  __TEXT,__text  -[CNStarkCardViewController avatarViewController]
+0x19f4b2c64  __TEXT,__text  -[CNStarkCardViewController contactInfoViewController]
+0x19f4b2c78  __TEXT,__text  ___46-[CNStarkActionViewButton updateConfiguration]_block_invoke
+0x19f4b2c80  __TEXT,__text  -[CNStarkActionViewButton updateConfiguration]
+0x19f4b2e5c  __TEXT,__text  -[CNStarkActionViewButton buttonImage]
+0x19f4b2e70  __TEXT,__text  -[CNStarkActionViewButton showsStroke]
+0x19f4b2e84  __TEXT,__text  -[CNStarkActionViewButton shapeCornerRadius]
+0x19f4b2e98  __TEXT,__text  ___46-[CNStarkActionViewButton updateConfiguration]_block_invoke_2
+0x19f4b2ea0  __TEXT,__text  -[CNStarkActionViewButton fillColor]
+0x19f4b2eb4  __TEXT,__text  -[CNStarkActionViewButton setHighlighted:]
+0x19f4b2f00  __TEXT,__text  -[CNStarkActionView actionViewTouchDown:]
+0x19f4b2f04  __TEXT,__text  -[CNStarkActionView select]
+0x19f4b2f4c  __TEXT,__text  -[CNStarkActionView setSelected:]
+0x19f4b2f60  __TEXT,__text  -[CNStarkActionView selectedStrokeColor]
+0x19f4b2f74  __TEXT,__text  -[CNStarkActionView selectedFillColor]
+0x19f4b2f88  __TEXT,__text  -[CNStarkActionView delegate]
+0x19f4b2fb0  __TEXT,__text  -[CNStarkActionsController quickActionsController]
+0x19f4b2fc4  __TEXT,__text  -[CNContactQuickActionsController executeTapBehaviorForActionType:shouldFallbackToDisambiguationMenu:]
+0x19f4b3110  __TEXT,__text  -[CNContactQuickActionsController hasDefaultActionForActionType:]
+0x19f4b3188  __TEXT,__text  +[CNContactQuickActionsController log]
+0x19f4b31d0  __TEXT,__text  _FBSOpenApplicationServiceFunction
+0x19f4b31dc  __TEXT,__text  -[CNStarkActionView deselect]
+0x19f4b320c  __TEXT,__text  -[CNAvatarView sizeThatFits:]
+0x19f4b321c  __TEXT,__text  -[CNAvatarView imageView]
+0x19f4b3230  __TEXT,__text  -[CNAvatarView alternativeImageView]
+0x19f4b3244  __TEXT,__text  -[CNAvatarView _renderContactsImage]
+0x19f4b3910  __TEXT,__text  -[CNAvatarView _updateRegistration]
+0x19f4b3b8c  __TEXT,__text  -[CNAvatarView rendererToken]
+0x19f4b3ba0  __TEXT,__text  -[CNAvatarView currentLikenessScope]
+0x19f4b3d64  __TEXT,__text  -[CNAvatarView backgroundStyle]
+0x19f4b3d78  __TEXT,__text  -[CNAvatarView maskedAvatarIndices]
+0x19f4b3d8c  __TEXT,__text  -[CNContactListViewController dismissKeyboard]
+0x19f4b3e08  __TEXT,__text  -[CNContactListViewController isPathToCreateNewContactRow:]
+0x19f4b3e64  __TEXT,__text  -[CNContactListViewController isPathToDuplicatesBanner:]
+0x19f4b3ec0  __TEXT,__text  -[CNContactListViewController isPathToContentUnavailableRow:]
+0x19f4b3f1c  __TEXT,__text  -[CNContactListViewController isPathToLimitedAccessTipRow:]
+0x19f4b3f78  __TEXT,__text  -[CNContactListViewController canSelectContactAtCollectionViewIndexPath:]
+0x19f4b3fbc  __TEXT,__text  -[CNContactListViewController dataSourceIndexPathForCollectionViewIndexPath:]
+0x19f4b4028  __TEXT,__text  -[CNContactListViewController dataSourceSectionIndexForCollectionViewSection:]
+0x19f4b4054  __TEXT,__text  -[CNContactListViewController canSelectContactAtIndexPath:]
+0x19f4b4100  __TEXT,__text  -[CNContactListViewController limitedAccessPickerType]
+0x19f4b4114  __TEXT,__text  -[CNContactListViewController delegate]
+0x19f4b413c  __TEXT,__text  -[CNContactListViewController collectionView:canPerformPrimaryActionForItemAtIndexPath:]
+0x19f4b41d4  __TEXT,__text  -[CNContactListViewController collectionView:shouldSelectItemAtIndexPath:]
+0x19f4b42b0  __TEXT,__text  -[CNContactListViewController canPerformAction:withSender:]
+0x19f4b439c  __TEXT,__text  -[CNContactListViewController collectionView:didSelectItemAtIndexPath:]
+0x19f4b4504  __TEXT,__text  -[CNContactListViewController updateSelectedContactCount]
+0x19f4b4590  __TEXT,__text  -[CNContactListCollectionView updateSelectedContactCount]
+0x19f4b4634  __TEXT,__text  -[CNContactListCollectionView setSelectedCount:]
+0x19f4b466c  __TEXT,__text  -[CNContactListViewController updateInResponseToLimitedAccessSelectionChanged]
+0x19f4b4724  __TEXT,__text  +[CNLimitedAccessPickerSupport isPickerLimitedAccessWithMultiSelect:]
+0x19f4b473c  __TEXT,__text  -[CNContactListViewController collectionView:performPrimaryActionForItemAtIndexPath:]
+0x19f4b47f4  __TEXT,__text  -[CNContactListViewController showCardForSelectedContactAtIndexPath:]
+0x19f4b4934  __TEXT,__text  -[CNContactListViewController _contactAtCollectionViewIndexPath:]
+0x19f4b49f0  __TEXT,__text  -[CNContactListViewController isDuplicatesRowSection:]
+0x19f4b4a1c  __TEXT,__text  -[CNContactListViewController _sections]
+0x19f4b4a30  __TEXT,__text  -[CNContactStoreDataSource sections]
+0x19f4b4a70  __TEXT,__text  -[CNContactStoreSnapshot sections]
+0x19f4b4e90  __TEXT,__text  -[CNContactStoreFilter limitedAccessIdentifiers]
+0x19f4b4ea4  __TEXT,__text  -[CNContactListViewController isHandlingSearch]
+0x19f4b4eb8  __TEXT,__text  -[CNStarkContactsListViewController contactListViewController:didSelectContact:shouldScrollToContact:]
+0x19f4b508c  __TEXT,__text  +[CNStarkCardViewController descriptorForRequiredKeys]
+0x19f4b51ac  __TEXT,__text  +[CNStarkContactInfoViewController descriptorForRequiredKeys]
+0x19f4b527c  __TEXT,__text  +[CNStarkActionsController descriptorForRequiredKeys]
+0x19f4b5288  __TEXT,__text  +[CNContactQuickActionsController descriptorForRequiredKeys]
+0x19f4b5364  __TEXT,__text  -[CNStarkContactsListViewController displayedContactProperties]
+0x19f4b5378  __TEXT,__text  -[CNStarkCardViewController initWithContact:displayedContactProperties:]
+0x19f4b54dc  __TEXT,__text  +[CNAvatarViewControllerSettings defaultSettingsWithBackgroundStyle:]
+0x19f4b55b8  __TEXT,__text  -[CNUIContactsEnvironment cachingLikenessResolver]
+0x19f4b562c  __TEXT,__text  -[CNUIContactsEnvironment nts_lazyCachingLikenessResolver]
+0x19f4b5674  __TEXT,__text  -[CNUIContactsEnvironment cachingLikenessRenderer]
+0x19f4b56e8  __TEXT,__text  -[CNUIContactsEnvironment nts_lazyCachingLikenessRenderer]
+0x19f4b5770  __TEXT,__text  -[CNUIContactsEnvironment contactStore]
+0x19f4b57e4  __TEXT,__text  -[CNUIContactsEnvironment nts_lazyContactStore]
+0x19f4b5870  __TEXT,__text  +[CNAvatarViewControllerSettings threeDTouchEnabledDefaultValue]
+0x19f4b5878  __TEXT,__text  -[CNUIContactsEnvironment nts_lazyDefaultSchedulerProvider]
+0x19f4b58c8  __TEXT,__text  -[CNAvatarViewControllerSettings initWithLikenessResolver:likenessRenderer:contactStore:threeDTouchEnabled:schedulerProvider:backgroundStyle:personaId:]
+0x19f4b59d0  __TEXT,__text  -[CNAvatarViewControllerSettings likenessRenderer]
+0x19f4b59d8  __TEXT,__text  -[CNAvatarViewControllerSettings threeDTouchEnabled]
+0x19f4b59e0  __TEXT,__text  -[CNAvatarViewControllerSettings style]
+0x19f4b59e8  __TEXT,__text  -[CNAvatarViewControllerSettings contactStore]
+0x19f4b59f0  __TEXT,__text  -[CNStarkContactInfoViewController initWithContact:]
+0x19f4b5ba8  __TEXT,__text  -[CNContactGeminiView initWithFrame:]
+0x19f4b5e8c  __TEXT,__text  +[CNUIColorRepository contactCardRecentBadgeTextDynamicColor]
+0x19f4b5f0c  __TEXT,__text  ___40-[CNUIContactsEnvironment geminiManager]_block_invoke
+0x19f4b5f14  __TEXT,__text  -[CNUIContactsEnvironment nts_lazyGeminiManager]
+0x19f4b5f5c  __TEXT,__text  -[CNStarkContactInfoViewController traitCollectionDidChange:]
+0x19f4b6014  __TEXT,__text  -[CNStarkContactInfoViewController resetLayoutConstraints]
+0x19f4b609c  __TEXT,__text  -[CNStarkActionView enabledStrokeColor]
+0x19f4b60b0  __TEXT,__text  -[CNStarkActionView actionViewTapped:]
+0x19f4b60b4  __TEXT,__text  -[CNStarkActionView choose]
+0x19f4b60b8  __TEXT,__text  -[CNStarkActionsController actionViewTapped:]
+0x19f4b6164  __TEXT,__text  -[CNContactQuickActionsController actionTypes]
+0x19f4b616c  __TEXT,__text  -[CNContactQuickActionsController actionListModelsByActionType]
+0x19f4b6174  __TEXT,__text  -[CNContactQuickActionsController contactQuickActionViewContainer]
+0x19f4b6194  __TEXT,__text  -[CNAvatarView setRendererToken:]
+0x19f4b61a8  __TEXT,__text  -[CNContactQuickActionsController userActionContext]
+0x19f4b61b0  __TEXT,__text  -[CNAvatarView imageRenderer]
+0x19f4b61c4  __TEXT,__text  -[CNStarkCardViewController resetLayoutConstraints]
+0x19f4b624c  __TEXT,__text  -[CNStarkCardViewController setLayoutConstraints:]
+0x19f4b6260  __TEXT,__text  +[CNUIFontRepository carPlayContactInfoViewPrimaryLabelFont]
+0x19f4b6270  __TEXT,__text  +[CNUIFontRepository carPlayFontWithBoldWeightStyle:]
+0x19f4b632c  __TEXT,__text  -[CNStarkContactInfoViewController primaryLabel]
+0x19f4b6340  __TEXT,__text  +[CNUIFontRepository carPlayContactInfoViewSecondaryLabelFont]
+0x19f4b6350  __TEXT,__text  +[CNUIFontRepository carPlayFontWithStyle:]
+0x19f4b63f4  __TEXT,__text  -[CNStarkContactInfoViewController secondaryLabel]
+0x19f4b6408  __TEXT,__text  -[CNStarkActionsController traitCollectionDidChange:]
+0x19f4b6454  __TEXT,__text  -[CNStarkActionsController layoutConstraints]
+0x19f4b6468  __TEXT,__text  -[CNStarkActionView traitCollectionDidChange:]
+0x19f4b6508  __TEXT,__text  -[CNStarkActionViewButton setStrokeColor:]
+0x19f4b6544  __TEXT,__text  -[CNStarkActionView enabledFillColor]
+0x19f4b6558  __TEXT,__text  -[CNStarkActionView selectedGlyphColor]
+0x19f4b656c  __TEXT,__text  -[CNStarkActionView notifyDelegateAboutUserChoice]
+0x19f4b65cc  __TEXT,__text  -[CNStarkActionView actionType]
+0x19f4b65e0  __TEXT,__text  -[CNContactQuickActionsController executeTapBehaviorForActionType:]
+0x19f4b65e8  __TEXT,__text  -[CNContactQuickActionsController performAction:]
+0x19f4b682c  __TEXT,__text  -[CNStarkActionView actionViewTouchUp:]
+0x19f4b6830  __TEXT,__text  -[CNAvatarView displayedImageState]
+0x19f4b6844  __TEXT,__text  -[CNAvatarView autoUpdateContact]
+0x19f4b6858  __TEXT,__text  +[CNAvatarImageRenderingScope scopeWithPointSize:scale:strokeWidth:strokeColor:rightToLeft:style:backgroundStyle:color:maskedAvatarIndices:]
+0x19f4b6940  __TEXT,__text  -[CNAvatarView contacts]
+0x19f4b6954  __TEXT,__text  +[CNContactGeminiView requiresConstraintBasedLayout]
+0x19f4b695c  __TEXT,__text  -[CNStarkActionsController initWithContact:]
+0x19f4b6c0c  __TEXT,__text  -[CNStarkActionsController _isMessagesDefaultAppImpl]
+0x19f4b6c98  __TEXT,__text  -[CNUIContactsEnvironment applicationWorkspace]
+0x19f4b6d0c  __TEXT,__text  ___47-[CNUIContactsEnvironment applicationWorkspace]_block_invoke
+0x19f4b6d14  __TEXT,__text  -[CNContactListViewController collectionView:shouldHighlightItemAtIndexPath:]
+0x19f4b6e24  __TEXT,__text  -[CNAvatarViewControllerSettings schedulerProvider]
+0x19f4b6e2c  __TEXT,__text  +[CNGeminiBadge geminiBadgeWithText:]
+0x19f4b6e78  __TEXT,__text  -[CNLabeledBadge initWithFrame:]
+0x19f4b6f88  __TEXT,__text  +[CNUIFontRepository contactCardRecentBadgeFont]
+0x19f4b6fa0  __TEXT,__text  +[CNUIColorRepository contactCardLabeledBadgeBackgroundDynamicColor]
+0x19f4b7020  __TEXT,__text  +[UIImage(CNUI) cnui_symbolImageForContactCardChevron]
+0x19f4b7074  __TEXT,__text  +[CNUIColorRepository contactCardChevronImageColor]
+0x19f4b7080  __TEXT,__text  +[UIImage(CNUI) cnui_symbolImageForContactCardChevronWithColor:]
+0x19f4b70a8  __TEXT,__text  -[CNUIContactsEnvironment geminiManager]
+0x19f4b711c  __TEXT,__text  -[CNAvatarView schedulerProvider]
+0x19f4b7130  __TEXT,__text  -[CNUISchedulerProvider suspendableBackgroundScheduler]
+0x19f4b7138  __TEXT,__text  -[CNUISchedulerProvider mainThreadScheduler]
+0x19f4b7178  __TEXT,__text  ___36-[CNAvatarView _renderContactsImage]_block_invoke
+0x19f4b71cc  __TEXT,__text  -[CNAvatarView allowStaleRendering]
+0x19f4b71e0  __TEXT,__text  -[CNAvatarView delegate]
+0x19f4b7208  __TEXT,__text  -[CNAvatarView isUpdatingGroupViewConfiguration]
+0x19f4b723c  __TEXT,__text  -[CNAvatarView groupViewConfigurationUpdateToken]
+0x19f4b7250  __TEXT,__text  -[CNAvatarView avatarView]
+0x19f4b7264  __TEXT,__text  -[CNAvatarView setContacts:]
+0x19f4b7340  __TEXT,__text  -[CNUIContactsEnvironment nts_lazyApplicationWorkspace]
+0x19f4b738c  __TEXT,__text  -[CNStarkActionsController isMessagesDefaultApp]
+0x19f4b73a0  __TEXT,__text  +[CNContactQuickActionsDisambiguationMenuPresentation modalPresentation]
+0x19f4b73c8  __TEXT,__text  -[CNContactQuickActionsDisambiguationMenuPresentation initBase]
+0x19f4b7400  __TEXT,__text  -[CNContactQuickActionsController initWithActionTypes:contactQuickActionViewContainer:disambiguationMenuPresentation:]
+0x19f4b74e0  __TEXT,__text  +[CNContactQuickActionsController sharedDataSource]
+0x19f4b7528  __TEXT,__text  -[CNContactQuickActionsController initWithActionTypes:contactQuickActionViewContainer:disambiguationMenuPresentation:userActionListDataSource:schedulerProvider:userActionContext:]
+0x19f4b7780  __TEXT,__text  +[CNUINavigationListStyleProvider carPlayStyle]
+0x19f4b77a4  __TEXT,__text  -[CNContactQuickActionsController setNavigationListStyle:]
+0x19f4b7808  __TEXT,__text  -[CNContactQuickActionsController disambiguationMenuController]
+0x19f4b7810  __TEXT,__text  -[CNContactQuickActionsController setDelegate:]
+0x19f4b781c  __TEXT,__text  -[CNContactQuickActionsController setIsCarPlay:]
+0x19f4b7824  __TEXT,__text  +[CNStarkActionView quickActionButtonWithDelegate:]
+0x19f4b79e0  __TEXT,__text  -[CNStarkActionView initWithDelegate:]
+0x19f4b7a8c  __TEXT,__text  -[CNStarkActionView setActionPlatterSize:]
+0x19f4b7aa0  __TEXT,__text  -[CNStarkActionView setActionLabelOffset:]
+0x19f4b7ab4  __TEXT,__text  +[CNUIColorRepository carPlayQuickActionButtonBackgroundStrokeColorDisabled]
+0x19f4b7ac0  __TEXT,__text  -[CNStarkActionView setDisabledStrokeColor:]
+0x19f4b7ad4  __TEXT,__text  -[CNStarkActionView setDisabledFillColor:]
+0x19f4b7ae8  __TEXT,__text  +[CNUIColorRepository carPlayQuickActionButtonGlyphColorDisabled]
+0x19f4b7af4  __TEXT,__text  +[CNUIColorRepository carPlayQuickActionButtonBackgroundFillColorDisabled]
+0x19f4b7afc  __TEXT,__text  -[CNStarkActionView setDisabledGlyphColor:]
+0x19f4b7b10  __TEXT,__text  +[CNUIColorRepository carPlayQuickActionButtonBackgroundStrokeColorEnabled]
+0x19f4b7b1c  __TEXT,__text  -[CNStarkActionView setEnabledStrokeColor:]
+0x19f4b7b30  __TEXT,__text  +[CNUIColorRepository carPlayQuickActionButtonBackgroundFillColorEnabled]
+0x19f4b7b70  __TEXT,__text  -[CNStarkActionView setEnabledFillColor:]
+0x19f4b7b84  __TEXT,__text  +[CNUIColorRepository carPlayQuickActionButtonGlyphColorEnabled]
+0x19f4b7b90  __TEXT,__text  -[CNStarkActionView setEnabledGlyphColor:]
+0x19f4b7ba4  __TEXT,__text  +[CNUIColorRepository carPlayQuickActionButtonBackgroundStrokeColorSelected]
+0x19f4b7bb0  __TEXT,__text  -[CNStarkActionView setSelectedStrokeColor:]
+0x19f4b7bc4  __TEXT,__text  +[CNUIColorRepository carPlayQuickActionButtonBackgroundFillColorSelected]
+0x19f4b7bd0  __TEXT,__text  -[CNStarkActionView setSelectedFillColor:]
+0x19f4b7be4  __TEXT,__text  +[CNUIColorRepository carPlayQuickActionButtonGlyphColorSelected]
+0x19f4b7bf0  __TEXT,__text  -[CNStarkActionView setSelectedGlyphColor:]
+0x19f4b7c04  __TEXT,__text  -[CNStarkActionView setupLabel]
+0x19f4b7e14  __TEXT,__text  -[CNStarkActionView setupButton]
+0x19f4b7ef4  __TEXT,__text  -[CNStarkActionViewButton init]
+0x19f4b7f48  __TEXT,__text  -[CNStarkActionView actionPlatterSize]
+0x19f4b7f5c  __TEXT,__text  -[CNStarkActionViewButton setShapeCornerRadius:]
+0x19f4b7f70  __TEXT,__text  -[CNStarkActionView setupConstraints]
+0x19f4b8304  __TEXT,__text  -[CNStarkActionView actionLabelOffset]
+0x19f4b8318  __TEXT,__text  -[CNStarkActionView setupClickGestureRecognizer]
+0x19f4b8390  __TEXT,__text  -[CNStarkActionView setActionType:]
+0x19f4b8504  __TEXT,__text  +[UIImage(CNUI) cnui_carPlayUserActionSymbolImageForActionType:]
+0x19f4b8570  __TEXT,__text  +[UIImage(CNUI) cnui_symbolImageNamed:scale:withColor:useFixedSize:compatibleWithTextStyle:]
+0x19f4b8584  __TEXT,__text  -[CNStarkActionViewButton setButtonImage:]
+0x19f4b85c0  __TEXT,__text  -[CNStarkCardViewController viewDidLoad]
+0x19f4b8680  __TEXT,__text  -[CNStarkCardViewController setupViewControllers]
+0x19f4b8860  __TEXT,__text  -[CNAvatarView initWithImageRenderer:threeDTouchEnabled:contactStore:style:schedulerProvider:backgroundStyle:]
+0x19f4b8884  __TEXT,__text  -[CNAvatarView setStateCaptureHandle:]
+0x19f4b8898  __TEXT,__text  -[CNAvatarView setupAvatarCardControllerIfNeeded]
+0x19f4b8960  __TEXT,__text  -[CNAvatarView isThreeDTouchEnabled]
+0x19f4b8974  __TEXT,__text  -[CNAvatarView setShowsContactOnTap:]
+0x19f4b8994  __TEXT,__text  -[CNAvatarView setAutoUpdateContact:]
+0x19f4b89b8  __TEXT,__text  -[CNAvatarView descriptorForRequiredKeys]
+0x19f4b89f4  __TEXT,__text  -[CNAvatarView setDelegate:]
+0x19f4b8a08  __TEXT,__text  -[CNStarkContactInfoViewController viewDidLoad]
+0x19f4b8a7c  __TEXT,__text  -[CNStarkContactInfoViewController setupViews]
+0x19f4b8fac  __TEXT,__text  +[CNUIColorRepository carPlayContactInfoViewPrimaryLabelTextColor]
+0x19f4b8fb8  __TEXT,__text  +[CNUIColorRepository carPlayContactInfoViewSecondaryLabelTextColor]
+0x19f4b8fc4  __TEXT,__text  -[CNContactGeminiView setAllowsPickerActions:]
+0x19f4b8fd8  __TEXT,__text  -[CNContactGeminiView setAb_textAttributes:]
+0x19f4b9068  __TEXT,__text  -[UILabel(ABUIAdditions) setAb_textAttributes:]
+0x19f4b91a8  __TEXT,__text  -[CNStarkContactInfoViewController updateViews]
+0x19f4b9364  __TEXT,__text  -[CNStarkActionsController viewDidLoad]
+0x19f4b940c  __TEXT,__text  -[CNStarkActionsController setupViews]
+0x19f4b952c  __TEXT,__text  -[CNStarkActionsController updateViews]
+0x19f4b9584  __TEXT,__text  -[CNStarkActionsController contact]
+0x19f4b9598  __TEXT,__text  -[CNContactQuickActionsController setContact:]
+0x19f4b9660  __TEXT,__text  -[CNContactQuickActionsController cleanUpAfterLatestActionDiscovery]
+0x19f4b9738  __TEXT,__text  -[CNContactQuickActionsController userActionListDataSource]
+0x19f4b9740  __TEXT,__text  -[CNContactQuickActionsController actionDiscoveryToken]
+0x19f4b9748  __TEXT,__text  -[CNContactQuickActionsController setActionDiscoveryToken:]
+0x19f4b9754  __TEXT,__text  -[CNContactQuickActionsController setActionListModelsByActionType:]
+0x19f4b9760  __TEXT,__text  -[CNContactQuickActionsController discoverActions]
+0x19f4b9b00  __TEXT,__text  -[CNContactQuickActionsController contact]
+0x19f4b9b08  __TEXT,__text  -[CNContactQuickActionsController schedulerProvider]
+0x19f4b9b10  __TEXT,__text  -[CNContactQuickActionsController allModelsObservable]
+0x19f4b9cb4  __TEXT,__text  ___54-[CNContactQuickActionsController allModelsObservable]_block_invoke
+0x19f4b9db4  __TEXT,__text  -[CNUISchedulerProvider newSerialSchedulerWithName:]
+0x19f4b9e0c  __TEXT,__text  -[CNStarkCardViewController setupLayoutGuides]
+0x19f4b9eb4  __TEXT,__text  -[CNStarkCardViewController setCenteringLayoutGuide:]
+0x19f4b9ec8  __TEXT,__text  -[CNStarkCardViewController setAvatarAndDetailsLayoutGuide:]
+0x19f4b9edc  __TEXT,__text  -[CNStarkCardViewController updateViewControllers]
+0x19f4b9f88  __TEXT,__text  -[CNStarkCardViewController contact]
+0x19f4b9f9c  __TEXT,__text  -[CNAvatarView resetGroupUpdateTokenIfNeeded]
+0x19f4ba010  __TEXT,__text  -[CNAvatarView shouldUpdateWithContacts:]
+0x19f4ba0c8  __TEXT,__text  -[CNAvatarView shouldUpdateMaskedAvatars]
+0x19f4ba0dc  __TEXT,__text  -[CNAvatarView setShouldUpdateMaskedAvatars:]
+0x19f4ba0f0  __TEXT,__text  -[CNAvatarView clearImage]
+0x19f4ba0fc  __TEXT,__text  -[CNUIContactsEnvironment nts_lazyContactChangesNotifier]
+0x19f4ba144  __TEXT,__text  -[CNStarkCardViewController updateNavigationItems]
+0x19f4ba2c0  __TEXT,__text  -[CNUISchedulerProvider newSynchronousSerialSchedulerWithName:]
+0x19f4ba318  __TEXT,__text  ___54-[CNContactQuickActionsController allModelsObservable]_block_invoke_2
+0x19f4ba330  __TEXT,__text  ___54-[CNContactQuickActionsController allModelsObservable]_block_invoke_3
+0x19f4ba3dc  __TEXT,__text  ___50-[CNContactQuickActionsController discoverActions]_block_invoke
+0x19f4ba4b0  __TEXT,__text  +[CNUIColorRepository carPlayTableViewBackgroundColor]
+0x19f4ba4f0  __TEXT,__text  -[CNAvatarView didMoveToWindow]
+0x19f4ba54c  __TEXT,__text  -[CNAvatarView _updateCardActions]
+0x19f4ba634  __TEXT,__text  -[CNStarkActionView intrinsicContentSize]
+0x19f4ba674  __TEXT,__text  -[CNContactListCollectionViewCell preferredLayoutAttributesFittingAttributes:]
+0x19f4ba7ac  __TEXT,__text  -[CNContactListViewController indexTitlesForCollectionView:]
+0x19f4ba850  __TEXT,__text  -[CNStarkActionView canBecomeFocused]
+0x19f4ba854  __TEXT,__text  ___50-[CNContactQuickActionsController discoverActions]_block_invoke_2
+0x19f4ba8dc  __TEXT,__text  -[CNContactQuickActionsController processDiscoveredModels:]
+0x19f4baa00  __TEXT,__text  -[CNContactQuickActionsController storeDiscoveredModels:]
+0x19f4baa78  __TEXT,__text  -[CNContactQuickActionsController reportStoredModelsToQuickActionContainer]
+0x19f4babd8  __TEXT,__text  -[CNContactQuickActionsController reportStoredModel:forActionType:toQuickActionContainer:]
+0x19f4bac94  __TEXT,__text  -[CNStarkActionsController viewForActionType:]
+0x19f4bade0  __TEXT,__text  ___46-[CNStarkActionsController viewForActionType:]_block_invoke
+0x19f4bae24  __TEXT,__text  -[CNStarkActionView setEnabled:]
+0x19f4bae38  __TEXT,__text  -[CNStarkActionView setTitle:]
+0x19f4bae74  __TEXT,__text  -[CNContactQuickActionsController modelTrackingDelegate]
+0x19f4bae94  __TEXT,__text  -[CNContactListViewController viewDidDisappear:]
+0x19f4baf3c  __TEXT,__text  -[CNContactListViewController isSearchController]
+0x19f4baf44  __TEXT,__text  -[CNContactListViewController(Tips) tipKitStopObservation]
+0x19f4bb104  __TEXT,__text  -[CNContactListViewController(Tips) setTipView:]
+0x19f4bb2f4  __TEXT,__text  -[CNContactListViewController(Tips) tipKitContentView]
+0x19f4bb4a4  __TEXT,__text  -[CNContactListViewController updatelimitedAccessContactSelection]
+0x19f4bb4ec  __TEXT,__text  -[CNContactListViewController limitedAccessContactsFromCurrentSelection]
+0x19f4bb6fc  __TEXT,__text  -[CNContactListViewController setLimitedAccessContactSelection:]
+0x19f4bb710  __TEXT,__text  -[CNContactListViewController setIsCurrentViewStillOpen:]
+0x19f4bb724  __TEXT,__text  +[CNUIDraggingContacts readableTypeIdentifiersForItemProvider]
+0x19f4bb7a4  __TEXT,__text  -[CNUISchedulerProvider inlineScheduler]
+0x19f4bb7e4  __TEXT,__text  +[CNAvatarViewController avatarViewController]
+0x19f4bb848  __TEXT,__text  -[CNAvatarViewControllerSettings personaId]
+0x19f4bb850  __TEXT,__text  -[CNAvatarView initWithImageRenderer:threeDTouchEnabled:contactStore:style:schedulerProvider:backgroundStyle:personaId:]
+0x19f4bbb40  __TEXT,__text  -[CNAvatarView contactStore]
+0x19f4bbb68  __TEXT,__text  -[CNAvatarView borderColor]
+0x19f4bbb7c  __TEXT,__text  -[CNAvatarView borderWidth]
+0x19f4bbb90  __TEXT,__text  -[CNAvatarView setAvatarView:]
+0x19f4bbba4  __TEXT,__text  -[CNAvatarView setBorderColor:]
+0x19f4bbc20  __TEXT,__text  -[CNAvatarView setBorderWidth:]
+0x19f4bbc90  __TEXT,__text  +[CNAvatarImageRenderingScope scopeWithPointSize:scale:strokeWidth:strokeColor:rightToLeft:style:]
+0x19f4bbd1c  __TEXT,__text  -[CNAvatarView dealloc]
+0x19f4bbdc0  __TEXT,__text  -[CNAvatarView stateCaptureHandle]
+0x19f4bbdd4  __TEXT,__text  -[CNAvatarView .cxx_destruct]
+0x19f4bc038  __TEXT,__text  -[CNAvatarViewController_LegacyAvatarView .cxx_destruct]
+0x19f4bc0c8  __TEXT,__text  -[CNGroupIdentity .cxx_destruct]
+0x19f4bc49c  __TEXT,__text  ___120-[CNAvatarView initWithImageRenderer:threeDTouchEnabled:contactStore:style:schedulerProvider:backgroundStyle:personaId:]_block_invoke
+0x19f4bc668  __TEXT,__text  +[CNVisualIdentityAvatarViewController maxContactAvatars]
+0x19f4bc678  __TEXT,__text  +[CNGroupAvatarViewController maxContactAvatars]
+0x19f4bc684  __TEXT,__text  -[CNGroupIdentity updateContacts:]
+0x19f4bc688  __TEXT,__text  -[CNGroupIdentity setContacts:]
+0x19f4bc694  __TEXT,__text  ___44-[CNAvatarView avatarViewDidFinishRendering]_block_invoke
+0x19f4bc6b0  __TEXT,__text  ___44-[CNAvatarView avatarViewDidFinishRendering]_block_invoke_2
+0x19f4bd030  __TEXT,__text  -[CNAvatarView isDisplayingContent]
+0x19f4bd094  __TEXT,__text  ___swift_instantiateGenericMetadata
+0x19f4bd164  __TEXT,__text  -[CNAvatarView setAsynchronousRendering:]
+0x19f4bd178  __TEXT,__text  -[CNAvatarCardController setActionCategories:]
+0x19f4bd180  __TEXT,__text  ___44-[CNAvatarView avatarViewDidFinishRendering]_block_invoke_3
+0x19f4bd244  __TEXT,__text  ___44-[CNAvatarView avatarViewDidFinishRendering]_block_invoke_4
+0x19f4bd258  __TEXT,__text  ___44-[CNAvatarView avatarViewDidFinishRendering]_block_invoke_5
+0x19f4bd2a8  __TEXT,__text  -[UIViewController(ABPresentation) ab_isInPopover]
+0x19f4bd2b0  __TEXT,__text  -[UIViewController(ABPresentation) _ab_isInPopoverRecursive:]
+0x19f4bd474  __TEXT,__text  -[CNAvatarCardController .cxx_destruct]
+0x19f4bd528  __TEXT,__text  -[CNActionMenuHelper .cxx_destruct]
+0x19f4bd584  __TEXT,__text  -[CNAvatarView notifyDelegateOfGroupConfigurationUpdateWithError:]
+0x19f4bd684  __TEXT,__text  -[CNAvatarView updateViewWithGroupIdentity:]
+0x19f4c4af0  __TEXT,__text  +[CNCapabilitiesManager _setDefaultCapabilitiesManager:]
+0x19f4c4b00  __TEXT,__text  -[CNCapabilitiesManager dealloc]
+0x19f4c4bfc  __TEXT,__text  _getIDSServiceAvailabilityControllerClass
+0x19f4c4cd0  __TEXT,__text  _getIDSServiceNameFaceTime
+0x19f4c4e28  __TEXT,__text  -[CNCapabilitiesManager resetCache]
+0x19f4c4e94  __TEXT,__text  ___35-[CNCapabilitiesManager resetCache]_block_invoke
+0x19f4c4ed4  __TEXT,__text  -[CNCapabilitiesManager isSensitiveUIAllowed]
+0x19f4c4ee0  __TEXT,__text  -[CNCapabilitiesManager hasTelephonyCapability]
+0x19f4c4eec  __TEXT,__text  -[CNCapabilitiesManager hasCellularTelephonyCapability]
+0x19f4c4f08  __TEXT,__text  _getTUCallCapabilitiesClass
+0x19f4c4fdc  __TEXT,__text  -[CNCapabilitiesManager hasCellularTelephonyHardwareCapability]
+0x19f4c4fe8  __TEXT,__text  -[CNCapabilitiesManager hasCellularDataCapability]
+0x19f4c4ff4  __TEXT,__text  -[CNCapabilitiesManager hasSMSCapability]
+0x19f4c5000  __TEXT,__text  -[CNCapabilitiesManager hasVibratorCapability]
+0x19f4c500c  __TEXT,__text  -[CNCapabilitiesManager hasSiriCapability]
+0x19f4c5018  __TEXT,__text  -[CNCapabilitiesManager hasCameraCapability]
+0x19f4c5024  __TEXT,__text  -[CNCapabilitiesManager isEmailConfigured]
+0x19f4c50b8  __TEXT,__text  -[CNCapabilitiesManager isMMSConfigured]
+0x19f4c50d8  __TEXT,__text  -[CNCapabilitiesManager isMadridConfigured]
+0x19f4c5144  __TEXT,__text  -[CNCapabilitiesManager isConferencingAvailable]
+0x19f4c51c8  __TEXT,__text  -[CNCapabilitiesManager isConferencingEverGonnaBeAvailable]
+0x19f4c520c  __TEXT,__text  -[CNCapabilitiesManager hasPreviouslyConferencedWithID:]
+0x19f4c53d8  __TEXT,__text  ___56-[CNCapabilitiesManager hasPreviouslyConferencedWithID:]_block_invoke
+0x19f4c53f4  __TEXT,__text  -[CNCapabilitiesManager conferenceURLForPhoneNumber:]
+0x19f4c5480  __TEXT,__text  -[CNCapabilitiesManager conferenceURLForDestinationID:]
+0x19f4c550c  __TEXT,__text  -[CNCapabilitiesManager addIDSServiceAvailabilityListener:selector:]
+0x19f4c5598  __TEXT,__text  _getIDSServiceAvailabilityDidChangeNotification
+0x19f4c56f0  __TEXT,__text  -[CNCapabilitiesManager removeIDSServiceAvailabilityListener:]
+0x19f4c5764  __TEXT,__text  -[CNCapabilitiesManager _startListeningToIDSServiceAvailabilityIfNecessary]
+0x19f4c5808  __TEXT,__text  -[CNCapabilitiesManager _startListeningToIDSIDQueryControllerIfNecessary]
+0x19f4c58a4  __TEXT,__text  -[CNCapabilitiesManager idStatusUpdatedForDestinations:service:]
+```
+First 1,000 of 19,389.
+

@@ -1,0 +1,87 @@
+# `OTControlProtocol` (protocol)
+
+- Image: [`/System/Library/Frameworks/Security.framework/Security`](../userland/System__Library__Frameworks__Security.framework__Security.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- 0 instance variables, 0 properties, 78 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[OTControlProtocol reroll:reply:];
+-[OTControlProtocol generateInheritanceKey:uuid:reply:];
+-[OTControlProtocol fetchEgoPeerID:reply:];
+-[OTControlProtocol performCKServerUnreadableDataRemoval:isDBRv2:accountIsW:altDSID:reply:];
+-[OTControlProtocol setCDPEnabled:reply:];
+-[OTControlProtocol trustedFullPeers:reply:];
+-[OTControlProtocol removeInheritanceKey:uuid:reply:];
+-[OTControlProtocol simulateReceivePush:reply:];
+-[OTControlProtocol createCustodianRecoveryKey:uuid:reply:];
+-[OTControlProtocol removeLocalSecureElementIdentityPeerID:secureElementIdentityPeerID:reply:];
+-[OTControlProtocol enableWalrus:preRecords:isDBRv2:pdpState:reply:];
+-[OTControlProtocol resetAndEstablish:resetReason:idmsTargetContext:idmsCuttlefishPassword:notifyIdMS:accountSettings:isDBRv2:accountIsW:reply:];
+-[OTControlProtocol status:xpcFd:reply:];
+-[OTControlProtocol fetchTrustedDeviceList:reply:];
+-[OTControlProtocol checkCustodianRecoveryKey:uuid:reply:];
+-[OTControlProtocol fetchCliqueStatus:configuration:reply:];
+-[OTControlProtocol fetchAllViableBottles:source:reply:];
+-[OTControlProtocol setLocalSecureElementIdentity:secureElementIdentity:reply:];
+-[OTControlProtocol waitForOctagonUpgrade:reply:];
+-[OTControlProtocol preflightRecoverOctagonUsingRecoveryKey:recoveryKey:reply:];
+-[OTControlProtocol storeInheritanceKey:ik:reply:];
+-[OTControlProtocol getAccountMetadata:reply:];
+-[OTControlProtocol appleAccountSignedOut:reply:];
+-[OTControlProtocol fetchEscrowContents:reply:];
+-[OTControlProtocol leaveClique:reply:];
+-[OTControlProtocol notifyIDMSTrustLevelChangeForAltDSID:reply:];
+-[OTControlProtocol removeCustodianRecoveryKey:uuid:reply:];
+-[OTControlProtocol startOctagonStateMachine:reply:];
+-[OTControlProtocol isRecoveryKeySet:reply:];
+-[OTControlProtocol establish:reply:];
+-[OTControlProtocol escrowCheck:isBackgroundCheck:reply:];
+-[OTControlProtocol tapToRadar:description:radar:reply:];
+-[OTControlProtocol fetchTrustStatus:configuration:reply:];
+-[OTControlProtocol rpcPrepareIdentityAsApplicantWithArguments:configuration:reply:];
+-[OTControlProtocol icscRepairInvalidateCacheVersion:reply:];
+-[OTControlProtocol recreateInheritanceKey:uuid:oldIK:reply:];
+-[OTControlProtocol setAccountSetting:setting:reply:];
+-[OTControlProtocol fetchEscrowRecords:source:reply:];
+-[OTControlProtocol fetchTrustedSecureElementIdentities:reply:];
+-[OTControlProtocol disableWalrus:preRecords:isDBRv2:pdpState:reply:];
+-[OTControlProtocol clearCliqueFromAccount:resetReason:isDBRv2:reply:];
+-[OTControlProtocol rpcEpochWithArguments:configuration:reply:];
+-[OTControlProtocol createInheritanceKey:uuid:claimTokenData:wrappingKeyData:reply:];
+-[OTControlProtocol rpcVoucherWithArguments:configuration:peerID:permanentInfo:permanentInfoSig:stableInfo:stableInfoSig:maxCapability:reply:];
+-[OTControlProtocol peerDeviceNamesByPeerID:reply:];
+-[OTControlProtocol appleAccountSignedIn:reply:];
+-[OTControlProtocol checkInheritanceKey:uuid:reply:];
+-[OTControlProtocol setMachineIDOverride:machineID:reply:];
+-[OTControlProtocol invalidateEscrowCache:reply:];
+-[OTControlProtocol tlkRecoverabilityForEscrowRecordData:recordData:source:reply:];
+-[OTControlProtocol icscRepairReset:reply:];
+-[OTControlProtocol resetAccountCDPContents:idmsTargetContext:idmsCuttlefishPassword:notifyIdMS:reply:];
+-[OTControlProtocol healthCheck:skipRateLimitingCheck:repair:danglingPeerCleanup:caesarPeerCleanup:updateIdMS:forceStableTrustedDeviceIDReroll:reply:];
+-[OTControlProtocol fetchAccountWideSettingsWithForceFetch:arguments:reply:];
+-[OTControlProtocol postCDPFollowupResult:success:type:error:reply:];
+-[OTControlProtocol setUserControllableViewsSyncStatus:enabled:reply:];
+-[OTControlProtocol rpcJoinWithArguments:configuration:vouchData:vouchSig:reply:];
+-[OTControlProtocol refetchCKKSPolicy:reply:];
+-[OTControlProtocol preflightJoinWithInheritanceKey:inheritanceKey:reply:];
+-[OTControlProtocol preflightJoinWithCustodianRecoveryKey:custodianRecoveryKey:reply:];
+-[OTControlProtocol restoreFromBottle:entropy:bottleID:reply:];
+-[OTControlProtocol joinWithRecoveryKey:recoveryKey:reply:];
+-[OTControlProtocol totalTrustedPeers:reply:];
+-[OTControlProtocol fetchAccountSettings:reply:];
+-[OTControlProtocol joinWithCustodianRecoveryKey:custodianRecoveryKey:reply:];
+-[OTControlProtocol fetchStableTrustedDeviceID:reply:];
+-[OTControlProtocol getCDPStatus:reply:];
+-[OTControlProtocol removeFriendsInClique:peerIDs:reply:];
+-[OTControlProtocol createRecoveryKey:recoveryKey:reply:];
+-[OTControlProtocol joinWithInheritanceKey:inheritanceKey:reply:];
+-[OTControlProtocol recoverWithRecoveryKey:recoveryKey:reply:];
+-[OTControlProtocol simulateReceiveTDLChangePush:reply:];
+-[OTControlProtocol removeRecoveryKey:reply:];
+-[OTControlProtocol createInheritanceKey:uuid:reply:];
+-[OTControlProtocol areRecoveryKeysDistrusted:reply:];
+-[OTControlProtocol fetchUserControllableViewsSyncStatus:reply:];
+-[OTControlProtocol waitForPriorityViewKeychainDataRecovery:reply:];
+-[OTControlProtocol resetAndEstablish:resetReason:isDBRv2:accountIsW:reply:];
+```

@@ -1,0 +1,185 @@
+# `usr/standalone/firmware/nfrestore/firmware/fw/SN450V_FW_B1_03_01_015_rev48923467.bin`
+
+- File size: 276,984 bytes
+
+## Payload [FW]
+
+- Size after IM4P unwrap / decompression: 276,984 bytes
+- Format: raw binary
+
+## Strings (170) [FW]
+
+Printable runs of 6+ characters with at least three letters, in file order, with payload offset. For RTKit co-processor firmware these are the log formats, task names, endpoint names and assertions that describe what the processor does.
+
+```
+00000b14  ywt~a),
+000019cc  o[fpDs
+00001c55  jAm%Ex
+00001fe4  _O+qMK
+0000223b  :!"`JeZ
+0000333d  TYz\(T
+00003c20  uYt&y3
+00003c5f  *h=kOgZ
+0000403e  :TDH4W
+0000493d  "Lq:#AZj
+00004abb  MjF9KXP
+00004c29  zQ;ABF
+00005e1d  G2Z@Fth
+00006150  =afIE{SA
+00006685  +SHW5B
+00006de6  %6Tzz$
+00006f7e  %lPFw_6
+000071d0  ELZL7-G
+000078d9  3$4FEl
+00007e6e  /w$FnU
+00008d05  8$MFPK
+00009321  YKr86J
+00009b1f  ~#lPN`
+00009beb  J<4SzNe
+0000bc65  kT]#mTP
+0000bde5  vPuGE}6f
+0000c65f  fpD-Lp
+0000c929  vzXHT+
+0000d055  Mxm"v4:
+0000dae4  -q|5R!(GjVP
+0000e17f  :XovhT]
+0000e26a  }uUdYa
+0000e527  zK~FZC
+0000e69c  zKt}RJ
+0000ebfe  f6kMi`
+0000f0a0  j9LOMZ
+0000f482  sIuOsc
+0000fa03  HbMD{K
+0000fe6e  gUfp>W
+000107f5  s=SrCHs
+000109ab  LbqGQ2
+000119e5  yUF&+WM
+00011b83  e,jSy2
+000123d6  :He9tjB
+000126ae  ALWQDs=,D
+0001282c  l2k%ZxV
+000128a7  zhf1PC3
+0001334d  'i/4Qni
+00013933  U0h`hvz]
+000145ec  %`9SJX
+000147e9  DVfL@_S
+00014df9  c4fBa%r?
+000157b8  _=FbUU2
+0001584d  7CBDI&
+00015f42  RQd4&vX?c
+000171e3  SFV@#Zg
+000175a9  YmVm(V
+00017841  2{x(bZb
+00017dfd  ),,8hAL/^
+00018050  TSxG$o*=7D
+00018152  ~ZjQ?;U
+00018273  v[waYA
+00018a49  KWJta|=
+00018c51  JZ.cEF~Ps
+0001a1f6  {8*zQNA7
+0001aa8a  ECK}f(u*\
+0001ade9  vGuP`Z2
+0001b8b8  {4fvzR:
+0001bc8a  swFqi5
+0001bee7  JgYu\x
+0001c245  P<kDhwlg
+0001ca28  OkY*i/e2
+0001d3c4  Y$zzZ_
+0001d74c  )9ZZa=
+0001d97d  O1-wGH)
+0001ed9a  u+dHdbi(#S
+0001f10f  $vyKPCpE}E0<
+0001f6eb  ,+:%DDQ>B
+0001ff99  DLscf3>mK<
+00020402  L&jwR%M
+00020a02  nrj^Y!~o2lkm@
+00020aa3  W^@PSeQ
+00020b12  {bBH&-
+0002172c  tTbu]L
+00021e8a  *8jyNTaL
+00022551  el]cme
+0002307a  D;GXXxr
+000236db  :YRi2t
+00023763  fke`UX
+00024036  S)+#HXS
+000243b8  qeq?HM
+00024b30  (]zck_
+00024f53  k-FTus
+00025306  %,ujsh'W
+00026108  IBS]NE
+00027731  =UGkjUJs
+00027a18  Kkt+rA:
+00027a4b  h.}kxp
+00027e6e  K4Yc52yZU
+00027f3f  i.Kej<
+000280d6  =yfi:fa
+0002888c  I3Sav5
+000288bd  th0cZq7c
+00029412  nIyBRu
+0002a025  nedkv^d
+0002aa50  |UYMWE
+0002aaa4  |yPvXW
+0002bef8  EV,cKs
+0002c3a7  HbX}1%
+0002c6f2  PdkK$p
+0002caa2  FeF2LhF
+0002cc7c  QjG\'f
+0002d210  W?bzFx
+0002db32  W[&,tDl
+0002e615  $B-1rNd
+0002f396  U$8|kdyj
+0002f4ba  n^r6!uPw
+0002f4c9  Lwj|_f
+0002f5f7   z*uCqd.
+0002f6b5  uxf$s]H
+0002fd50   ICMnk
+000302e7  ;%hoK<
+0003039e  4jFM0b
+000304f8  pRZA*qZAUsCq
+00030939  J@hVaTlT
+00030c21  gWC<]N
+000316df  wf(oNk
+0003258d  r2RvXd
+00033280  nGjH=7
+00033b18  :x#HyX+
+00035797  qa/zxT
+00035aae  G_6GZde
+00035f26  f`eZN_
+00036197  4 WRE1
+00036b0b   xKj$'
+00036b27  { 'TnC
+00036d5b  {FDLbq
+0003727e  NL ?#lOU
+0003811e  v/Csia
+00038764  [:cAZ{gk
+00039d2c  AbuW:z
+0003b36f  {}gefu
+0003b549  Wj\;qQUj
+0003b57b  yfHjDF
+0003bab3  afh7h}W
+0003c0d4  UvG{Qd
+0003c1d9  WMg8?-
+0003c2bd  G,Zt;UVUb
+0003cbfa  \TJAh[
+0003ccd6  fIaW~6
+0003cdbc  }QGTP(
+0003d059  tD'nOn
+0003d3aa  33x~wpNu
+0003d5eb  QUc]TA
+0003dca0  *y"ycr8
+0003dd92  hwDGxl
+0003dfe2  inI_DN
+0003e15b  iKm[YZA
+0003e5cf  MEZ-^I
+0003e623  lmEgs"po!<
+00040eda  rVIhqd5
+000412fb  cGe9+Q
+0004194e  h!&YXf
+00041d50  9SX+VoQfE>
+00041ee0  ZZCUDU
+0004284f  t+Rtd\
+00042bd7  f-0HAH!^
+00042cb7  XxvrYB
+00043744  xqY=pd
+000438ed  4XjJR7
+```

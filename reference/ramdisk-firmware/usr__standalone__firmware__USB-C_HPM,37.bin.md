@@ -1,0 +1,469 @@
+# `usr/standalone/firmware/USB-C_HPM,37.bin`
+
+- File size: 512,320 bytes
+
+## Payload [FW]
+
+- Size after IM4P unwrap / decompression: 512,320 bytes
+- Format: raw binary
+
+## Identity strings (versions, build tags) [FW]
+
+- `Apple Inc.`
+
+## Strings (450) [FW]
+
+Printable runs of 6+ characters with at least three letters, in file order, with payload offset. For RTKit co-processor firmware these are the log formats, task names, endpoint names and assertions that describe what the processor does.
+
+```
+0000406c  APP EM  
+00004200  DROM    
+0000426a  Apple Inc.
+00004277  Studio Display
+00004600  ARC PARM
+00004720  PtoSPtoQWake
+00004800  EE_CIO  
+00004a00  EE_PCIE 
+00004e00  EE_DMA  
+00005000  EE_XHC_EMEP     
+00005200  EE_XHC   
+00005600  EE_PCIE_PHY
+00005a00  EE_USB_RETIMER  
+00006000  EE_PCIE_DN2
+00006200  EE_RESERVED_11  
+00006400  EE_RESERVED_12  
+00006600  EE_RESERVED_13  
+00006800  EE_USB_ADP      
+00006e00  PATCHES 
+00007624  DP_OUT_U_CODE
+00007656  CONFIG7
+0000af80  "zXzzzV
+0000af8e  zE`q~sWz)zP}
+0000af9b  z}D:DDD<9;<B=DBD>>=BB=D<D??ADCu(mu)
+0000bcbf  uT@uUouV
+0000d626  DP_IN_U_CODE
+0000d6b6  CONFIG
+0001122e  uI@uJD
+000127c9  RYS1?u
+00012f70  uiUujUukUul
+00012f85  uiUujUukUul
+00012f9a  uiUujUukUul
+00012faf  uiUujUukUul
+00015678  ptAp@4g
+000158de  )Q,RIqY
+00015928  A(Q8aHqX
+000160a5  bbHb`Ib[
+0001697d  700tps
+00016a46  3r Ipx
+00017006  GpU RfI
+000170ca  pU RfI
+00017e5b  @AABF+8
+00018045  3``dbG3QQ
+00018c00  ERR !CMDENUMLnk2I2CFPPSRLnk0
+000191e5  R&IpU 
+0001a536  rfQB%J
+0001a53f  D BeJ,
+0001a6da  r$JPw rdJ
+0001b758  hAxQ(a
+0001b8d6  U#`UCRA
+0001ba26  QGidWia\
+0001c3e6  RbE2$+2dDL
+0001c627  pU RfI
+0001c949  B",BbR(
+0001cef8  H_)qGt<
+0001d27f  pxtpf 
+0001d307  IRgFHo@E
+0001d379  P85PXu`U
+0001d41f  BfWR&FRfX
+0001da68  "00tEx
+0001dc2f  eRf#B,
+0001e1f4  iIxWpu
+0001f3ec  tHQ8A 
+0001f75a  Gpf be
+00021186  P3 2Fkh
+000211ae  R%vPPdW
+000211bd  8Ar#wppdw
+000211ed  pU RFkh
+0002122f  ")zLd@" 
+0002134a  R)wPPdPR
+00021604  `U RCkH
+000216ed  y-PRT@F
+00021a3a  `D BeI
+00021bc3  B)IpD 
+00021bcc  BiIKUg
+000235e1  pU RSy
+000235e8  Gpf bSx
+000237db  D BeJ-
+00023c5c  ,2$JpU
+000246ee  CLC_CONFIG:
+00025595  p(wHuhv
+000277a6  ptAp@4g
+00028252  %P`4j3PTAVE
+00028862  JRPPtRG
+00028bfa  ``TbGN
+00028c38  ``dbGO
+00028c83  `dAbGT
+00028d87  )aPD 00
+00028d91  @@@tIq
+00029c00  300tfC
+0002a7ea  @)P9`IpY
+0002ae2d  uRMTBa<
+0002afb7  jUBE8".>
+0002b058  `htba7
+0002b113  DBa5Vd
+0002b169  B-NPD 
+0002b1d0  [@@dBN
+0002b2e3  BMT2a4R!9
+0002bd87  PX!RFp
+0002bdf0  PX!RFp
+0002bed7  RMTBa72a<
+0002c6a6  PDC@At
+0002c6bf  wcpptra
+0002d0bb  Iqb.>B
+0002d159  a""Hvb.>ra
+0002d245  <I<GrO
+0002d732  Gpf bO
+0002d974  B!7RoU2
+0002de50  zZYR@u
+0002df24  bP6PPtY
+0002e1e5  bgPB!9
+0002e3aa  @@tBa)
+0002e513  PPtRa)
+0002e627  ``tba)
+0002eb4b  2EqB.>2U
+0002f14c  b,Upf 
+0002f914  PPtjUR
+0002fdbe  @BApf J3
+0002fe2f   ht xArL
+00030085  )A9QIaYqi
+00030095  b(A8QHaXqq
+000300d6  @HtB@Hh
+0003062d  pxuz""
+00030724  CIO_PHY_SECTION:
+00030887  "23DTev
+00030899  "23DUefw
+000308ab  !"23CDTUevw
+000308be  ""33CDTUefvw
+000308f9  !"3Tev
+00030904  "2CTefw
+00031424  TTRRPPNNNNLLJJJJ::::::::88664422
+000314c6  ptAp@4g
+00031e99  zxpptf=
+00032268  ``TbGN
+000322a6  ``dbGOE
+000322f1  `dAbGT
+00033304  300tfC
+00033fee  rMTrMVrO
+000343b8  hmzfbo>
+0003441f  jUBE8"/>
+000344c9  `htba5
+00034616  @JAPD BO
+00034655  BMT2a0R!7
+0003478b  [@@dBO
+00034981  p`tba5
+00034a59  RmXr!0
+00034f0f  TBa4R!9b!4R
+000351d1  2Mdb!7bO
+000351f6  ERMTFA
+0003526b  bMVRa1
+0003530a  px!rHp
+0003537c  PX!RFpF
+00035850  PPt"!9
+00035cc6  GpU RF
+000364a9  TPPt@E
+0003687d   jcpUcg
+00036d60  RGqb/>RW
+00036ddd  e`PtRa%
+00036ed8  B!*ZDR
+00037292  />HqrH
+0003744c  bP6PPtY
+00037463  X"!9PPd
+00037585  z2!3JJB@u
+000376c7  "Hub/>ra!"FvB/>Ra
+00037b36  u`bAba#
+00037e44  Vba(Ra/r
+00037eb2  dBa(2a/R
+00037efd  2a.PPtRa&F
+00037f1c  2a.PPtRa&
+00037f80  Ba.``tba&
+0003870c  b,Upf 
+00038ed4  PPtjUR
+0003937e  @BApf J3
+000393ef   ht xArL
+00039661  pxuz""
+00039758  DP__PHY_SECTION:
+000398bb  "23DTev
+000398cd  "23DUefw
+000398df  !"23CDTUevw
+000398f2  ""33CDTUefvw
+0003992d  !"3Tev
+00039938  "2CTefw
+0003a388  TTRRPPNNNNLLJJJJ::::::::88664422
+0003a42a  ptAp@4g
+0003a6f2  ;D@@tPDc
+0003a7bb  ;D@@tPDc
+0003aeae  %P`4j3PTAVE
+0003b41a  JRPPtRG
+0003b7a6  ``TbGN
+0003b7e4  ``dbGO
+0003b82f  `dAbGT
+0003b933  )aPD 00
+0003b93d  @@@tIq
+0003d46f  jUBE8".,
+0003d510  `htba0
+0003d58f  BMT2a-R!2
+0003d61d  }R!1RNu
+0003d629  [@@dBNw
+0003d745  vbMTRa5
+0003d9d5  bmX2!0
+0003dc23  b!/LGw6
+0003ddc8  dTR!1R
+0003ddd1  EQb!1b
+0003dfbb  TBa/b!/R
+0003e073  BMT2a0
+0003efd8  B!0RoU2
+0003f367   jcpUcg
+0003fb51  "FtR.,
+0003feae  bP6PPtY
+0003ffdd  zB!2ZZR@u
+000404c7  u`bAba#
+0004070b  pptra$F
+00040742  gra&ba,
+00040787  PPtRa$F
+000407a3  @@tBa$
+000408d6  pptra$
+000409e9  @" "CkF
+00041638  PPtjUR
+00041ae2  @BApf J3
+00041b53   ht xArL
+00042115  pxuz""
+0004220c  PE__PHY_SECTION:
+0004236f  "23DTev
+00042381  "23DUefw
+00042393  !"23CDTUevw
+000423a6  ""33CDTUefvw
+000423e1  !"3Tev
+000423ec  "2CTefw
+00042dec  TTRRPPNNNNLLJJJJ::::::::88664422
+00043000  ARC CACHE
+000434d4  shu{u{u{u{u{u{
+00043841  7zpZq:rJ 
+000439f5  pzqZr:s
+00043a0f  5hqjrJs
+000441da  Ii\zHc
+000449c1  7JpJ"@
+00044c3e  /yahp{B#
+0004662d  rhvJ#@ 
+00046be9  7zpZq:r
+00046f5d  "@$jqb
+00046f71  1JpjqJ#
+00047837  qHwhuZpB#
+00047bed  w(vHuJ 
+00047c6c  zpZq:r
+00047ea7  rzsS!>
+000483e5  qHwhuJ 
+00048e41  pzqZrJ!
+00049ba5  pghp{B#
+0004a62f   JrJs>
+0004ae74  Jpjq*r
+0004ae84  Jpjq*r
+0004aee8  zpZq:r
+0004b407  pjrjsf
+0004b415  rjsJ$@
+0004b423  qJrjsJ$@
+0004bf70  rhu{t{
+0004c11e  h&$xZx
+0004c198  zpZq:rhvJ&
+0004c84b  0zpZqJ!
+0004c97e  \yanp{4
+0004d5e9  7zpZq:rJ 
+0004d68c  +`=`uxC
+0004d847  qzrJ"@ (p
+0004daeb  pzqZrJ!
+0004e1a4  zpZq:rhv
+0004ea20  Zp:qHw
+0004eb01  rhuJ#@ 
+0004ef13  1jpJqJ#@
+0004fa64  ZpJ!@ 
+0004fc18  ZpJ @ 
+0005090d  pjqJ"@
+0005158f  pzqZrJ!
+000516c9  pzqZr:s
+000518f5  pzqZrJ!
+00051a80  zpZq:rJ&
+00051ae9  1*pJrjsR
+000521f9  7Zp:qHw
+0005276f  p(wHuhv
+0005285c  :pJp*q
+00053102  bmp{@#
+00053122  cmp{@#
+00053142  amp{B#
+00053407  w:vZv[vL!
+00053984  :uZu;uJ&@
+00054b9a  ZrJ%@ 
+00055f0d  4jpJ"@
+0005699a  PzrnY#
+000569c2  PzrnBs
+00056a2e  Pzrncs
+00056ad4  PzrnB#
+000575ff  ~bnp{@#
+000576b4  dnp{B#
+00057ec4  zpZq:rJ 
+00058835  p(wHuJ!
+00058d2d  pzqZr:s
+000591d0  zpZq:r
+000591ee  aip{B#
+00059511  w(vHuJ$
+00059cd5  p(wHvJ!
+0005aae6  :pJvJp
+0005b204  zbS%C!
+0005b20c  zb@,C&zbS$C
+0005bc65  `3nBqn
+0005bce5  4jpJ"@
+0005c165  rzsJ"@ Jv
+0005c184  JwJqJr
+0005c96c  o{jpJ!
+0005d040  zu:uZu
+0005d094  bmp{B#
+0005d0d1  !E#JtYwJ$
+0005db75  pzqZr:s
+0005dba0  jpJq*r
+0005de99  7Zp:qHw
+0005deaf  $JpJ @ 
+0005e614  SWPPU"Q(
+0005ec28  JpJqJr
+0005ee7b  2*pJqJ"
+0005f5c4  jp*qjrjs
+0005f5d2  *qjrjs
+000604b0  zpZqJ!@ 
+00060d78  zpZqJ 
+000616d0  anp{B#
+00061718  amp{Jp
+00061845  pzqZrhw
+00061e3a  anp{*p
+00061e58  bnp{@'
+00061e78  cnp{@'
+0006303f  pzqZr:s
+00063a00  CSS     
+00063c00  RSA+EXP 
+00063e00  skip list
+00064000  SEC DGST
+0006a826  Apple Inc.
+0006a831  Studio Display
+0006a840  http://support.apple.com/kb/HT204237
+0006a865  Thunderbolt Display. For further assistance see http://thunderbolttechnology.net/tbt-alt-mode/
+0006a8c4  DisplayPort Display. For further assistance see http://help.vesa.org/dp-usb-type-c/
+0006b07d   Ha&H%IAe&I
+0006b4f5  FpGPhpG
+0006bbf1  FHh#O$N$M
+0006bf89  pApFH@
+0006bfbc  EHpGHh
+0006c0b3   DFUfV$
+0006c0d3   !CMDT$
+0006c177   !CMDDFUfp
+0006c20b  $AMtphkAO@
+0006c2a4  "HtqAk!H9C40
+0006c414  hFA]8F
+0006c5c7   APP t6
+0006c5e3   DFUfUSBw
+0006c80f  CHb0h@
+0006c833  CHbph@
+0006c9e8  GSkXDFUmDFUdDRSTEUSBVOUTLDCMRDCl!CMD
+0006cb83  !!uau@!
+0006cf34  iFh|I|
+0006cfc9   0piFhyIy
+0006d3a3   CFUmCFUa
+0006d3db   SFWiBISTDBMaPDOf
+0006d3ef   AMBy%>
+0006d3f7   FvbsFvin
+0006d403   CFUpAPP VOUTUFPfDFUf
+0006d5a3   BOOTV8
+0006d7df   CRYm`
+0006db19  hWhC@O@;CZ
+0006db2c  qHzJ 0@
+0006db85  Cxw\Hl0
+0006dd43  wVH@z@
+0006e0e9  x9FGx?
+0006e609  FFHCJ 8
+0006ea10  kHgIBz@1
+0006eaaa  7LCI 4
+0006eeb4  SHFISJ
+0006effb   HRST!CMD a
+0006fbe6  OHYL 0
+0006fd2b   APP PDOf!CMD '
+00070a07   DFUfga
+00070a3b   APP E8
+00070cdc  XCfIgK
+00070d57   AC0FHCd!
+00071553  FoNpO]M
+00071991  @ alH@8
+00071b3b   !CMD`'
+00072240  PIRK 9Ih ;
+000722f2  5O5J>xRx
+0007237b   SRDOSRDY
+00072aab  syHAx@y
+00072b25  1HCF!I
+00073d09  pjFPp0H
+00074777   Not Supported
+0007494d  $ 0@zRO
+00074ed3   !CMD@)
+00074f62  HhFIIx
+0007539c   "hIfH
+000753b2   "bIaH
+00075437  "(F"p6JBK
+00075967   SFWiV8
+00075c2d  Cxb"H@8Fa!H
+00075d3d  cRO8h @
+00076525  Ce`ehv
+0007652d  Ce`ehv
+00076545  Ce`ehv
+00076555  Ce`ehv
+0007655d  Ce`ehv
+00076565  Ce`ehv
+00076579  Cc`bhs
+000765ff  czL@4"j
+00076613  `a`BkI
+000766fb  C bEHLJ
+00076a87   VOUTp
+00076abd  !HCEI@
+00076c9e  (i C(azO
+00076d4d  $%FPO8i
+00076e22   LNh#I h
+00076ea7   USBwba
+00076eaf   APP DISCUFPfDFUf
+000778ab   DFUf(0
+000778b7   DISCq
+00077d03   DFUfX
+00077fd6  yL$! xxMHCA
+00078053  xHCZI@
+0007808d  xHCKI@
+000782cf  N$!0xHC
+00078444  0x$"PCiM
+000784ae  1x$"QCJ
+000784f0  0x$!HCA
+00078526  1x$"QCI
+0007854e  <x$#!FYC
+00078617   IECSCFUsCFUaHIPDCFUm
+00078d2c  WKXHl3
+00078d81  x$ ACAH
+0007918d  '@:SdD2J`
+000792ac  CFUm(0
+000792b7   !CMDl
+000792c7   CFUp\
+000792cf   APP CFUaCFUsIECSQ
+00079385  x$!ACl:
+000793ab  N=x$ ECl>
+00079448  ZL_O x$!HCl?
+0007948d  x$ ACl;IJ
+000798a3  C8p`pPH!!
+000798af  pWJXI. 
+0007994d  qHq8x !
+00079a95  HAj?"R
+00079a9d  CAbAjb
+0007a24f   DFUf@'
+0007a4b0  jFRxIy
+0007a8a2  FHlF"8
+0007c6ec  CD3217   HW     FW000.000.00 ZACE2-AC              
+0007cdb7  adQ6s0
+0007ce99  6&"pPG
+```

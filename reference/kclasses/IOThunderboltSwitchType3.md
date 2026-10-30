@@ -1,0 +1,72 @@
+# `IOThunderboltSwitchType3`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.iokit.IOThunderboltFamily`](../kexts/com.apple.iokit.IOThunderboltFamily.md)
+- Object size: `0x280` (640 bytes)
+- Metaclass: `0xfffffe000ba1d6a8`; metaclass vtable `0xfffffe0008421fb0`; class vtable `0xfffffe0008421188`
+- Registration (init): `0xfffffe000a5ae1e4`
+- Superclasses: [`IOThunderboltSwitchLC`](IOThunderboltSwitchLC.md) → [`IOThunderboltSwitchLegacy`](IOThunderboltSwitchLegacy.md) → [`IOThunderboltSwitch`](IOThunderboltSwitch.md) → [`IOThunderboltNub`](IOThunderboltNub.md) → [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## Strings in its kext that name it (60)
+
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireI2CLock\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapterSynchronous\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::releaseLock - cannot unlock!\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapter - ERROR: dropDPSemaphore failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropI2CLockSynchronous - dispatchSync( dropI2CLock )\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapters - ERROR: acquireSemaphore failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireI2CLockSynchronous - ERROR: dispatchSync failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireSemaphore - acquired semaphore, 0x%x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::free\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - ERROR: could not fetch VID (0x%08x)\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::finalize\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - ERROR: could not fetch HW rev (0x%08x)\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::wakeAllPortsInternal - port NOT in USB mode\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::wakeAllPortsInternal - fSkipEnumeration = true\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapter - setIOReturnParameter( 0x%08x )\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::enablePlugEvents - disable_mask = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireI2CLockSynchronous\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireI2CLock - locked, 0x%x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::enablePlugEvents - data (before) = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::setupIECSCommandQueue - find GPIO capability for switch at route = 0x%llx\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropDPAdapter - ERROR: acquireSemaphore failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - tbt_flags = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - skip_enumeration = %d\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapterSynchronous - ERROR: dispatchSync failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapter\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapterSynchronous - dispatchSync( acquireDPAdapter, port 0x%x )\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::wakeAllPortsInternal - LC %d usb_plugged=%d data=0x%08x temp_status=0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::discoverMicroForPort - ERROR: status = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropI2CLockSynchronous\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - ERROR: could not fetch DID (0x%08x)\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::wakeAllPortsInternal - port in USB mode\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapterSynchronous - ERROR: acquireDPAdapter failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireSemaphore\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - ace_a1_device = %d, efi_support = %d, host_type_3 = %d, enumerate_all_devices = %d\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - VID = 0x%08x, kIECSVendorIDTI = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropI2CLockSynchronous - ERROR: dropDPAdapter failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropDPAdapterSynchronous\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropDPAdapter - ERROR: releaseSemaphore failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireI2CLockSynchronous - dispatchSync( acquireI2CLock )\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::setupIECSCommandQueue - count = %d offset=0x%x fLength=0x%x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::discoverMicroForPort - port = %d\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireDPAdapter - WARNING: allocation = 0x%08x, returning kIOReturnBusy\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropDPAdapterSynchronous - dispatchSync( dropDPAdapter, port 0x%x )\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::releaseLock\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireSemaphore - retry acquire-semaphore, 0x%x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::releaseSemaphore\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::releaseSemaphore - cannot release!\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropI2CLockSynchronous - ERROR: dispatchSync failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::getDevicesConnectedState - found_devices = %d\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropDPAdapterSynchronous - ERROR: dispatchSync failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::setupIECSCommandQueue - find LC capability for switch at route = 0x%llx\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::updateDPPortAffinity\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropDPAdapter\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropDPAdapter - setIOReturnParameter( 0x%08x )\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - DID = 0x%08x, kIECSDeviceIDAce1 = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::shouldSkipEnumeration - hw_rev = 0x%02x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireI2CLockSynchronous - ERROR: acquireDPAdapter failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::dropDPAdapterSynchronous - ERROR: dropDPAdapter failed with 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::enablePlugEvents - data (after) = 0x%08x\n`
+- `%lldus IOThunderboltSwitchType3<%p>(0x%llx)::acquireI2CLock - retry lock, 0x%x\n`

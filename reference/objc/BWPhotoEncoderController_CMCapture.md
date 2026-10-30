@@ -1,0 +1,195 @@
+# `BWPhotoEncoderController`
+
+- Image: [`/System/Library/PrivateFrameworks/CMCapture.framework/CMCapture`](../userland/System__Library__PrivateFrameworks__CMCapture.framework__CMCapture.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `BWStillImageProcessorController`
+- Protocols: `BWPhotoEncoderControllerInputUpdatesDelegate`, `BWInferenceFormatProvider`
+- 43 instance variables, 10 properties, 115 instance methods, 1 class methods
+
+## Instance variables
+
+```
+@"BWPhotoEncoderControllerConfiguration" _configuration;
+@"NSObject<OS_dispatch_queue>" _prewarmQueue;
+@"NSObject<OS_dispatch_queue>" _previewGenerationQueue;
+@"NSObject<OS_dispatch_group>" _previewGenerationGroup;
+@"FigCapturePixelConverter" _previewPixelConverter;
+@"FigCapturePixelConverter" _thumbnailPixelConverter;
+@"FigCapturePixelConverter" _clientThumbnailPixelConverter;
+@"FigCapturePixelConverter" _photoLibraryThumbnailPixelConverter;
+@"BWCMPhotoEncoderManager" _cmPhotoEncoderManager;
+@"BWDNGEncoderManager" _dngEncoderManager;
+@"BWDNGEncoderManager" _provenanceDngEncoderManager;
+{os_unfair_lock_s="_os_unfair_lock_opaque"I} _provenanceDNGInfoLock;
+@"NSDictionary" _provenanceDNGInfo;
+^{opaqueCMFormatDescription=} _provenanceFormatDescription;
+Q _dngBitDepth;
+Q _maxThreads;
+@"FigCapturePixelConverter" _jpegPixelConverter;
+@"NSDictionary" _resolvedVideoFormatsByAttachedMediaKey;
+f _heifQualityOverride;
+B _heifForceEmbedThumb;
+B _heifUseTiling;
+i _heifTileWidth;
+i _heifTileHeight;
+B _allowHEIFPrewarming;
+@"BWInferenceEngine" _inferenceEngine;
+B _preparedInferenceEngine;
+AB _opportunisticInferenceCompleted;
+@"NSObject<OS_dispatch_group>" _inferenceGroup;
+@"BWInferenceVideoFormat" _inferenceInputVideoFormat;
+^{opaqueCMFormatDescription=} _inferenceInputFormatDescription;
+@"NSDictionary" _adaptiveQualityValueForHEIF;
+@"<CMISmartStyleProcessor>" _smartStyleProcessor;
+B _preparedStylesProcessor;
+d _aspectRatioUsedForStyleConfiguration;
+^{__CVBuffer=} _smartStyleDeltaMapPixelBuffer;
+^{__CVBuffer=} _smartStyleDecompressedStyledPixelBuffer;
+B _clientExpectsCameraMountedInLandscapeOrientation;
+@"<BWPhotoEncoderControllerDelegate>" _primaryOwnerDelegate;
+@"NSMutableDictionary" _inputsByCaptureIdentifier;
+@"NSObject<OS_dispatch_queue>" _inputsByCaptureIdentifierQueue;
+@"NSObject<OS_dispatch_queue>" _encodingQueue;
+@"NSObject<OS_dispatch_group>" _encodingGroup;
+B _preferMainImageDownscalingFactorByAttachedMediaKeyFromSampleBuffer;
+```
+
+## Properties
+
+```
+@property (T@"NSDictionary",&,V_resolvedVideoFormatsByAttachedMediaKey) resolvedVideoFormatsByAttachedMediaKey;
+@property (TB,N,V_clientExpectsCameraMountedInLandscapeOrientation) clientExpectsCameraMountedInLandscapeOrientation;
+@property (T@"<BWPhotoEncoderControllerDelegate>",W,V_primaryOwnerDelegate) primaryOwnerDelegate;
+@property (T@"NSString",R,N) currentInputsCaptureRequestIdentifier;
+@property (T@"NSDictionary",R,N) provenanceDNGInfo;
+@property (TB,N,V_preferMainImageDownscalingFactorByAttachedMediaKeyFromSampleBuffer) preferMainImageDownscalingFactorByAttachedMediaKeyFromSampleBuffer;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Class methods
+
+```
++[BWPhotoEncoderController usesCustomProcessingFlow];
+```
+
+## Instance methods
+
+```
+-[BWPhotoEncoderController prepareForCurrentConfigurationToBecomeLive];
+-[BWPhotoEncoderController setPreferMainImageDownscalingFactorByAttachedMediaKeyFromSampleBuffer:];
+-[BWPhotoEncoderController _decompressSmartStylePhotoSurface:];
+-[BWPhotoEncoderController _flushCurrentRequest];
+-[BWPhotoEncoderController _handlePrewarmForConstantColorConfidenceMapForEncodingScheme:requestedStillImageCaptureSettings:confidenceMapDimensions:];
+-[BWPhotoEncoderController preferMainImageDownscalingFactorByAttachedMediaKeyFromSampleBuffer];
+-[BWPhotoEncoderController outputFormatForAttachedMediaKey:];
+-[BWPhotoEncoderController _ensureSetupForPostponedResources:];
+-[BWPhotoEncoderController _waitForPreviewGenerationQueueToComplete];
+-[BWPhotoEncoderController _prepareSmartStyleRenderingProcessorIfNeeded:];
+-[BWPhotoEncoderController intermediateResourceTrackingAllowedForAttachedMediaKey:];
+-[BWPhotoEncoderController _thumbnailOptionsForImageWithMetadata:encodingScheme:requestedStillImageCaptureSettings:resolvedStillImageCaptureSettings:processingFlags:cropRect:codecType:maxPixelSize:];
+-[BWPhotoEncoderController _addSmartStyleLinearThumbnailForEncodingScheme:sampleBuffer:primaryOutputAspectRatio:];
+-[BWPhotoEncoderController _addThumbnailForEncodingScheme:thumbnailPixelBuffer:metadata:requestedStillImageCaptureSettings:resolvedStillImageCaptureSettings:processingFlags:cropRect:codecType:maxPixelSize:parentImageHandle:];
+-[BWPhotoEncoderController _outputDimensionsForSbuf:primaryImageMetadata:sourceDimensions:requestedStillImageCaptureSettings:isStereoPhotoCapture:isPrimaryFrame:];
+-[BWPhotoEncoderController currentInputsCaptureRequestIdentifier];
+-[BWPhotoEncoderController _addSegmentationMasksForEncodingScheme:attachedMediaKey:sampleBuffer:primaryOutputAspectRatio:settingsID:orientation:parentImageHandle:];
+-[BWPhotoEncoderController provenanceDNGInfo];
+-[BWPhotoEncoderController _addSmartStyleMetadataForEncodingScheme:sampleBuffer:requestedStillImageCaptureSettings:];
+-[BWPhotoEncoderController _addSmartStyleDeltaMapForEncodingScheme:sampleBuffer:stillImageSettings:primaryOutputAspectRatio:];
+-[BWPhotoEncoderController _addAlternateImageForEncodingScheme:flexGTCColorSpace:isP3primaries:tonemapItemMetadata:parentImageHandle:gainMapHandle:];
+-[BWPhotoEncoderController clientExpectsCameraMountedInLandscapeOrientation];
+-[BWPhotoEncoderController _optionsForEncodingScheme:pixelBuffer:imageDimensions:processingFlags:metadata:thumbnailOptions:requestedStillImageCaptureSettings:resolvedStillImageCaptureSettings:cropRect:usePixelsOutsideCrop:allowSensorOrientationRotation:containerOptionsOut:encodingOptionsOut:];
+-[BWPhotoEncoderController inputVideoFormatForAttachedMediaKey:];
+-[BWPhotoEncoderController _getAssetsSizeForEncodingScheme:containerSizeOut:thumbnailSizeOut:auxiliaryImagesSizeOut:];
+-[BWPhotoEncoderController process];
+-[BWPhotoEncoderController _addTextureStylePersonInstanceMasksForEncodingScheme:sampleBuffer:primaryOutputAspectRatio:settingsID:orientation:parentImageHandle:];
+-[BWPhotoEncoderController _waitForPiecemealEncodingQueueToComplete];
+-[BWPhotoEncoderController _addConstantColorConfidenceMapForEncodingScheme:sampleBuffer:];
+-[BWPhotoEncoderController dealloc];
+-[BWPhotoEncoderController _waitForPiecemealEncodingGroupToComplete];
+-[BWPhotoEncoderController _performInferenceWithBuffer:];
+-[BWPhotoEncoderController _personMaskEncodingNeededForSettings:encodingScheme:deferredPhotoProxy:adjustedPhoto:personMaskValidHint:];
+-[BWPhotoEncoderController setResolvedVideoFormatsByAttachedMediaKey:];
+-[BWPhotoEncoderController _depthEncodingOptionsFromDepthMetadata:pixelFormat:];
+-[BWPhotoEncoderController _addPortraitEffectsMatteForEncodingScheme:sampleBuffer:primaryOutputAspectRatio:parentImageHandle:];
+-[BWPhotoEncoderController _adjustAspectRatio:settings:applyOutputAspectRatioOverride:];
+-[BWPhotoEncoderController _desiredOrientationForOrientation:encodingScheme:];
+-[BWPhotoEncoderController _encodePrimarySbuf:metadata:processingFlags:primaryImageHandleInOut:];
+-[BWPhotoEncoderController _handlePrewarmForFSINCMasksForEncodingScheme:requestedStillImageCaptureSettings:];
+-[BWPhotoEncoderController reset];
+-[BWPhotoEncoderController _postponeSelectResourceAllocations];
+-[BWPhotoEncoderController _newAuxiliaryImagePropertiesFromSemanticMatteSampleBuffer:];
+-[BWPhotoEncoderController _addMetadataAttachmentsForEncodingScheme:sampleBuffer:requestedSettings:captureType:parentImageHandle:exifExtraRotationDegrees:];
+-[BWPhotoEncoderController _newAuxiliaryImagePropertiesFromPortraitEffectsMatteMetadata:];
+-[BWPhotoEncoderController _handlePrewarmForPortraitEffectsMatteForEncodingScheme:requestedStillImageCaptureSettings:];
+-[BWPhotoEncoderController _addProvenanceSensorRawForEncodingScheme:sampleBuffer:];
+-[BWPhotoEncoderController _addGainMapForEncodingScheme:sampleBuffer:outputDimensions:primaryOutputAspectRatio:parentImageHandle:];
+-[BWPhotoEncoderController initWithConfiguration:];
+-[BWPhotoEncoderController _newMetadataAttachmentsForEncodingScheme:sampleBuffer:requestedSettings:captureType:exifExtraRotationDegrees:];
+-[BWPhotoEncoderController _finalImageExpectingSmartStyleReversibilityDataForDeferredPhotoProxy:settings:adjustedPhoto:];
+-[BWPhotoEncoderController _waitForPrewarmingQueueToComplete];
+-[BWPhotoEncoderController _releaseResources];
+-[BWPhotoEncoderController _tagStereoPairGroupForEncodingScheme:stereoPhotoImageHandles:groupMetadata:];
+-[BWPhotoEncoderController _addDepthForEncodingScheme:sampleBuffer:primaryOutputAspectRatio:parentImageHandle:];
+-[BWPhotoEncoderController _closeContainerForEncodingScheme:];
+-[BWPhotoEncoderController inputInferenceVideoFormatForAttachedMediaKey:];
+-[BWPhotoEncoderController _processSbuf];
+-[BWPhotoEncoderController inputForStillImageSettings:portType:portraitAdjustedImage:optionalSampleBuffer:piecemealEncodingMode:];
+-[BWPhotoEncoderController outputVideoFormatForAttachedMediaKey:];
+-[BWPhotoEncoderController _cropRectForRequestedSettings:inputDimensions:outputDimensions:metadata:processingFlags:applyOutputAspectRatioOverride:];
+-[BWPhotoEncoderController _generatePreviewForSampleBuffer:requestedStillImageCaptureSettings:cropRect:previewPixelBuffer:];
+-[BWPhotoEncoderController _semanticSegmentationMatteMediaKeysEncodingNeededForSettings:encodingScheme:deferredPhotoProxy:adjustedPhoto:personMaskValidHint:];
+-[BWPhotoEncoderController setPrimaryOwnerDelegate:];
+-[BWPhotoEncoderController _addOrPrewarmForAttachedMediaKey:encodingScheme:sampleBuffer:metadata:stillImageSettings:parentImageHandle:];
+-[BWPhotoEncoderController inputFormatForAttachedMediaKey:];
+-[BWPhotoEncoderController _encoderManagerForEncodingScheme:];
+-[BWPhotoEncoderController _propagateSampleBufferGainMapMetadata:toSampleBufferMetadata:];
+-[BWPhotoEncoderController _handlePrewarmForGainMapForEncodingScheme:requestedStillImageCaptureSettings:prewarmingMetadata:];
+-[BWPhotoEncoderController type];
+-[BWPhotoEncoderController _waitUntilTimeoutForInferenceGroupToCompleteAndReturnStatus];
+-[BWPhotoEncoderController _addOrPrewarmAuxImagesIfNeededForEncodingScheme:sampleBuffer:metadata:stillImageSettings:processingFlags:parentImageHandle:];
+-[BWPhotoEncoderController _handlePrewarmForMainImageForEncodingScheme:prewarmingMetadata:stillImageSettings:reservedPrimaryImageHandleOut:];
+-[BWPhotoEncoderController _exifExtraRotationDegreesForEncodingScheme:];
+-[BWPhotoEncoderController prepare];
+-[BWPhotoEncoderController _flushInputsByCaptureIdentifier];
+-[BWPhotoEncoderController _loadCreateAndSetupSmartStyleRenderingProcessor];
+-[BWPhotoEncoderController _addCompressedThumbnailForEncodingScheme:thumbnailSurface:thumbnailSurfaceSize:];
+-[BWPhotoEncoderController _primaryOutputAspectRatioForSettings:];
+-[BWPhotoEncoderController legacySensorOrientationRotationDegreesForCapture];
+-[BWPhotoEncoderController _addValue:toAuxiliaryImageProperties:namespace:prefix:key:];
+-[BWPhotoEncoderController _addBakedInSensorOrientationOptionsToDictionary:encodingScheme:orientation:allowSensorOrientationRotation:];
+-[BWPhotoEncoderController resolvedVideoFormatsByAttachedMediaKey];
+-[BWPhotoEncoderController _newAuxiliaryImagePropertiesForFSINCMask:fsincMatteVersion:];
+-[BWPhotoEncoderController requestForInput:delegate:errOut:];
+-[BWPhotoEncoderController _smartStyleReversibilityDataNeededForSettings:adjustedPhoto:deferredPhotoProxy:];
+-[BWPhotoEncoderController waitForAllAsynchronousProcessingToComplete];
+-[BWPhotoEncoderController _computeAndAddSmartStyleDeltaMapToClosedSurfaceContainer:sampleBuffer:encodingScheme:stillImageSettings:processingFlags:];
+-[BWPhotoEncoderController _getColorSpacePropertiesForSourcePixelFormat:sourceWidth:sourceHeight:destinationPixelFormat:];
+-[BWPhotoEncoderController _addGainMapMetadataForEncodingScheme:sampleBuffer:parentImageHandle:];
+-[BWPhotoEncoderController cancelProcessing];
+-[BWPhotoEncoderController _updateSmartStyleDeltaMapForSampleBufferIfNeeded:decompressedStyledPixelBuffer:stillImageSettings:encodingScheme:processingFlags:];
+-[BWPhotoEncoderController _encodePhotoForEncodingScheme:pixelBuffer:imageDimensions:processingFlags:metadata:thumbnailOptions:requestedStillImageCaptureSettings:resolvedStillImageCaptureSettings:cropRect:usePixelsOutsideCrop:allowSensorOrientationRotation:mainImageHandleInOut:];
+-[BWPhotoEncoderController _prewarmAndReserveMainImageHandleForEncodingScheme:prewarmingMetadata:stillImageSettings:reservedPrimaryImageHandleOut:];
+-[BWPhotoEncoderController primaryOwnerDelegate];
+-[BWPhotoEncoderController _removeCurrentRequestFromInputsByCaptureIdentifier];
+-[BWPhotoEncoderController _encodeDNGForEncodingScheme:rawSampleBuffer:dngDictionary:requestedSettings:captureType:cropRect:dngContainsDepthData:dngContainsSemanticSegmentationMattes:processingFlags:];
+-[BWPhotoEncoderController mainImageDownscalingFactorForAttachedMediaKey:attachedMediaMetadata:];
+-[BWPhotoEncoderController _addQualityOptionsToDictionary:codecType:pixelBuffer:imageDimensions:metadata:requestedStillImageCaptureSettings:resolvedStillImageCaptureSettings:enableHEIFTiling:enableHEIFOrientation:auxImageType:];
+-[BWPhotoEncoderController _newRawMetadataAttachmentsForEncodingScheme:sampleBuffer:dngDictionary:requestedSettings:captureType:dngContainsDepthData:dngContainsSemanticSegmentationMattes:];
+-[BWPhotoEncoderController inputReceivedSbufForPiecemealEncoding:sbuf:attachedMediaKey:primaryImageMetadata:processingFlags:];
+-[BWPhotoEncoderController _depthEncodingNeededForSettings:deferredPhotoProxy:];
+-[BWPhotoEncoderController inputReceivedNewInputData:];
+-[BWPhotoEncoderController _generatePhotoSurfaceFromEncodedImageBuffer:photoSurfaceOut:photoSurfaceSizeOut:];
+-[BWPhotoEncoderController _updateStillImageProcessingFlagsWithDepthMetadataForSbuf:stillImageSettings:];
+-[BWPhotoEncoderController _handlePrewarmForDepthForEncodingScheme:requestedStillImageCaptureSettings:prewarmingMetadata:];
+-[BWPhotoEncoderController _closeContainerAndCopySurfaceForEncodingScheme:];
+-[BWPhotoEncoderController piecemealEncodeSampleBuffer:];
+-[BWPhotoEncoderController _newAuxImageEncodingTriggerSbufForSettings:metadata:];
+-[BWPhotoEncoderController setClientExpectsCameraMountedInLandscapeOrientation:];
+-[BWPhotoEncoderController _addBakedInSensorOrientationOptionsToDictionary:encodingScheme:metadata:allowSensorOrientationRotation:];
+-[BWPhotoEncoderController _waitForPreviewGenerationGroupToComplete];
+-[BWPhotoEncoderController _addSmartStyleUnstyledImageForEncodingScheme:sampleBuffer:primaryOutputAspectRatio:stillImageSettings:];
+-[BWPhotoEncoderController _newGainMapAuxiliaryImagePropertiesForEncodingScheme:sampleBuffer:denormalizedCropRect:requiresPhotosAdjustment:encodingOptionsOut:flexGTCColorSpaceOut:tonemapItemMetadataOut:isP3PrimariesOut:];
+-[BWPhotoEncoderController _addTextureStyleMetadataForEncodingScheme:sampleBuffer:requestedStillImageCaptureSettings:resolvedStillImageCaptureSettings:];
+```

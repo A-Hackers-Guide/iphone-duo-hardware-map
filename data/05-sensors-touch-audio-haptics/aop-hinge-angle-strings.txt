@@ -1,0 +1,51 @@
+AON PTD outgrew reserved heap. %lu of %d entries
+CMSPUMedinaStateService.cpp
+CraneAngleRelay: Could not find crane service '%s'
+CraneAngleRelay: failed to set min angle threshold (%x)
+CraneAngleRelay: failed to set report interval (%x)
+HES:0x%x ts:%llu
+MedinaStateAOP.c
+Unable to check update status of PTD entry(%#x): %#x
+Unable to read PTD entry(%#x): %#x
+Unable to write PTD entry(%#x): %#x
+[CMAngleEstimatorInterface] Angle: %.2f deg, state=%u, isValid=%u
+[CMAngleEstimatorInterface] Angle=%.2f deg, relGyroBias=%.3f deg/s, rot0=[%.3f, %.3f, %.3f] deg, rot1=[%.3f, %.3f, %.3f] deg, accelBias0=[%.4f, %.4f] g, accelBias1=[%.4f, %.4f] g, yOffset=%.3f deg, applyOffset=%u, externalCal=%u
+[CMAngleEstimatorInterface] Health: resets=%u, angle=[%.1f, %.1f] deg, rot0=%.3f deg, rot1=%.3f deg, relBias=%.3f deg/s, accelBias0=%.4f g, accelBias1=%.4f g
+[CMAngleEstimatorInterface] cal: gyroScaleDevY=[%.4f,%.4f] percent, gyroBiasY=[%.6f,%.6f] deg/s, accelBiasXZ=[[%.6f,%.6f],[%.6f,%.6f]] g
+[CMAngleGyroBiasEstimator] Resetting IMU%u bias estimator (invalid covariance or NaN)
+[CMAngleOffsetCalibrator] Pushed candidate=%.4f deg (raw=%.4f deg), median=%.4f deg, n=%zu
+[CMAngleSimulator] Status changed from Running to PostSim, t=%llu
+[CMAngleSimulator] Status changed from Scheduled to Running, sA=%f, eA=%f, dur=%llu, del=%llu, opts=%u, t=%llu
+[CMSPUAngleService] AP off
+[CMSPUAngleService] AP on
+[CMSPUAngleService] Endpoint 0x%p is class %u, but expected class %u
+[CMSPUAngleService] FIR config changed to { numTaps = %u, { %.2f, %.2f, %.2f, %.2f, %.2f } }
+[CMSPUAngleService] FIR config size mismatch. Received %u bytes, expected %lu bytes
+[CMSPUAngleService] FIR numTaps (%u) > kCMAngleMaxNumFIRTaps (%u)
+[CMSPUAngleService] PTD = 0x%llX, mechanicalAngleDegrees = %f, isAngleValid = %d, timestamp = %llu
+[CMSPUAngleService] Processing command 0x%02x
+[CMSPUAngleService] Ready notification for endpoint 0x%p (class %u); addClient returned %u
+[CMSPUAngleService] SPU_aon_ptd_write_entry failed with %u
+[CMSPUAngleService] Sending simulated new calibration report
+[CMSPUAngleService] Sent wake event: ma=%f, p=%u, s=%u, began=%llu, cur=%llu, now=%llu
+[CMSPUAngleService] State changed from %d to %d; ma=%f, p=%u, t=%llu, isAPAwake=%d
+[CMSPUAngleService] Unsupported command 0x%02x
+[CMSPUAngleService] kSpuPropertyCoreMotionMinAngleThreshold (%f) not in [%f, %f]
+[CMSPUAngleService] kSpuPropertyCoreMotionMinAngleThresholdToWake (%f) not in [%f, %f]
+[CMSPUAngleService] processCommand called when not ready.
+[CMSPUAngleService] setProperty called when not ready
+[CMSPUHES] HES changed to %u, t=%llu
+[MedinaState] Failed to create MedinaStateService --> EIC Tightbeam endpoint, ret=%d
+[MedinaState] Failed to start MedinaStateService --> EIC Tightbeam server, status=%d
+[MedinaState] MedinaStateService --> EIC Tightbeam endpoint ready
+[MedinaState] MedinaStateService --> EIC Tightbeam server started successfully
+[MedinaState] state changed from %u to %u, t=%llu, hes=%u, faceDownStatic=%u, angleDeg=%.2f, propertyA=%u, propertyB=%u, propertyC=%u
+[MedinaState] system not ready due to one or more upstream service interfaces failing to initialize
+[MedinaState] t, %llu, state, %d, sensorFlag, %d, hes, %d, angleState, %d, angleDegrees, %.2f
+[MedinaState][Query] MedinaStateCode,%u,LastMedinaStateCode,%u,queryTimestamp,%llu,lastTransitionTimestamp,%llu
+[SensorControl][MedinaState] state,%u,timestamp,%llu
+[SensorControl][Sensor] accel update stale,facedownDetectorState,%u,timestamp,%llu,lastAccelTimestamp,%llu,medinaState,%u,lastMedinaStateTimestamp,%llu
+crane-hes-cli
+crane-hes-srvr
+crane_hes
+isPTDLoggingEnabled

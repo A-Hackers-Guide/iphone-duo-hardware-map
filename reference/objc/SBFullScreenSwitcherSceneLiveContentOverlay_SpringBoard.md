@@ -1,0 +1,207 @@
+# `SBFullScreenSwitcherSceneLiveContentOverlay`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `SBFullScreenSwitcherSceneLiveContentOverlay`, `SBDeviceApplicationSceneHandleObserver`, `SBMedusaDecoratedDeviceApplicationSceneViewControllerDelegate`, `SBDeviceApplicationSceneViewControllerDelegate`, `FBSceneLayerManagerObserver`, `FBSceneObserver`
+- 28 instance variables, 31 properties, 127 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"UIApplicationSceneClientSettingsDiffInspector" _clientSettingsInspector;
+@"NSMutableDictionary" _backboardSceneHostRegistrations;
+q _touchBehavior;
+B _displayLayoutElementActive;
+B _isFrozen;
+B _isInSteadyState;
+q _occlusionState;
+@"SBWindowScene" _sbWindowScene;
+@"SBSceneHandleActiveAppearanceAssertion" _activeAppearanceAssertion;
+{UIRectCornerRadii="topLeft"d"bottomLeft"d"bottomRight"d"topRight"d} _cornerRadii;
+B _maximized;
+B _asyncRenderingEnabled;
+B _wantsEnhancedWindowingEnabled;
+B _shouldPreventFlatteningUnoccludedScenes;
+B _disableFlattening;
+B _wantsMinificationFilter;
+B _asyncRenderingDisabled;
+B _asynchronousRenderingTemporarilyDisabled;
+B _blurred;
+B _matchMovedToScene;
+@"<SBSwitcherLiveContentOverlayDelegate>" _delegate;
+@"BSUIOrientationTransformWrapperView" _orientationWrapperView;
+@"UIViewController<SBDeviceApplicationSceneViewControlling>" _deviceApplicationSceneViewController;
+@"SBSceneViewStatusBarAssertion" _statusBarAssertion;
+@"SBSDisplayLayoutElement" _displayLayoutElement;
+@"<BSInvalidatable>" _displayLayoutElementAssertion;
+q _containerOrientation;
+@"<SBFullScreenSwitcherSceneLiveContentOverlayDelegate>" _switcherSceneLiveContentOverlayDelegate;
+```
+
+## Properties
+
+```
+@property (T@"BSUIOrientationTransformWrapperView",R,N,V_orientationWrapperView) orientationWrapperView;
+@property (T@"UIViewController<SBDeviceApplicationSceneViewControlling>",R,N,V_deviceApplicationSceneViewController) deviceApplicationSceneViewController;
+@property (T@"SBSceneViewStatusBarAssertion",R,N,V_statusBarAssertion) statusBarAssertion;
+@property (T@"SBSDisplayLayoutElement",R,N,V_displayLayoutElement) displayLayoutElement;
+@property (T@"<BSInvalidatable>",&,N,V_displayLayoutElementAssertion) displayLayoutElementAssertion;
+@property (TB,R,N,V_wantsMinificationFilter) wantsMinificationFilter;
+@property (TB,R,N,V_asyncRenderingDisabled) asyncRenderingDisabled;
+@property (TB,R,N,V_asynchronousRenderingTemporarilyDisabled) asynchronousRenderingTemporarilyDisabled;
+@property (TB,R,N,GisBlurred,V_blurred) blurred;
+@property (TB,R,N,GisMatchMovedToScene,V_matchMovedToScene) matchMovedToScene;
+@property (Tq,N,V_containerOrientation) containerOrientation;
+@property (T@"<SBFullScreenSwitcherSceneLiveContentOverlayDelegate>",W,N,V_switcherSceneLiveContentOverlayDelegate) switcherSceneLiveContentOverlayDelegate;
+@property (T@"<SBSwitcherLiveContentOverlayDelegate>",W,N,V_delegate) delegate;
+@property (T@"UIView",R,N) contentOverlayView;
+@property (TB,R,N,GisAsyncRenderingEnabled,V_asyncRenderingEnabled) asyncRenderingEnabled;
+@property (TB,N,V_wantsEnhancedWindowingEnabled) wantsEnhancedWindowingEnabled;
+@property (TB,N) resizesHostedContext;
+@property (TB,N,V_shouldPreventFlatteningUnoccludedScenes) shouldPreventFlatteningUnoccludedScenes;
+@property (TB,N,V_disableFlattening) disableFlattening;
+@property (Tq,N) preferredLandscapeSceneBarPosition;
+@property (TQ,N) preferredHingeEdge;
+@property (TB,R,N) requiresLegacyRotationSupport;
+@property (Tq,R,N) touchBehavior;
+@property (TB,N,GisMaximized,V_maximized) maximized;
+@property (T{UIRectCornerRadii=dddd},N) cornerRadii;
+@property (Tq,N) activeAppearance;
+@property (TB,N,GisDisplayLayoutElementActive) displayLayoutElementActive;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[SBFullScreenSwitcherSceneLiveContentOverlay cornerRadii];
+-[SBFullScreenSwitcherSceneLiveContentOverlay sceneHandle:clientConnectedForScene:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay sceneHandle:didUpdateClientSettings:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay containerOrientation];
+-[SBFullScreenSwitcherSceneLiveContentOverlay resizesHostedContext];
+-[SBFullScreenSwitcherSceneLiveContentOverlay sceneHandle:didUpdateContentState:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setUsesBrightSceneViewBackgroundMaterial:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setDisplayLayoutElementActive:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay noteKeyboardFocusDidChangeToSceneID:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay handleVolumeDownButtonPress];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setOcclusionState:inSteadyState:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setWantsEnhancedWindowingEnabled:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay preferredInterfaceOrientation];
+-[SBFullScreenSwitcherSceneLiveContentOverlay updateDisplayLayoutElementWithBuilder:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay isMaximized];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setResizesHostedContext:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setPreferredHingeEdge:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay noteGeometryMayHaveChanged];
+-[SBFullScreenSwitcherSceneLiveContentOverlay overlaySceneHandle];
+-[SBFullScreenSwitcherSceneLiveContentOverlay preferredHingeEdge];
+-[SBFullScreenSwitcherSceneLiveContentOverlay handleHomeButtonLongPress];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setContainerOrientation:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay init];
+-[SBFullScreenSwitcherSceneLiveContentOverlay supportedInterfaceOrientations];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setShouldPreventFlatteningUnoccludedScenes:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay sceneHandle:didUpdateSettingsWithDiff:previousSettings:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setPreferredLandscapeSceneBarPosition:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay contentViewController];
+-[SBFullScreenSwitcherSceneLiveContentOverlay isAsyncRenderingEnabled];
+-[SBFullScreenSwitcherSceneLiveContentOverlay dealloc];
+-[SBFullScreenSwitcherSceneLiveContentOverlay applicationSceneViewController:didRequestWindowControlsAdaptiveStyle:adaptive:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay activeAppearance];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setCornerRadii:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay isBlurred];
+-[SBFullScreenSwitcherSceneLiveContentOverlay handleHeadsetButtonPress:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setMatchMovedToScene:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay handleLockButtonPress];
+-[SBFullScreenSwitcherSceneLiveContentOverlay liveSceneIdentityToken];
+-[SBFullScreenSwitcherSceneLiveContentOverlay prepareOverlayForContentRotation];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setAsyncRenderingEnabled:withMinificationFilterEnabled:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay handleVolumeUpButtonPress];
+-[SBFullScreenSwitcherSceneLiveContentOverlay applicationSceneViewController:statusBarTapped:tapActionType:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setBlurViewIconScale:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay applicationSceneViewController:didChangePreferredStatusBarAxis:withAnimationParameters:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay preferredLandscapeSceneBarPosition];
+-[SBFullScreenSwitcherSceneLiveContentOverlay updateWindowControlsLayout:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay handleHomeButtonDoublePress];
+-[SBFullScreenSwitcherSceneLiveContentOverlay updateTopAffordanceContextMenuWithOptions:selectedActionType:layout:hidden:interfaceOrientation:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay invalidate];
+-[SBFullScreenSwitcherSceneLiveContentOverlay applicationSceneViewController:statusBarDoubleTapped:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay contentOverlayView];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setDelegate:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setDimmed:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay _sbWindowScene];
+-[SBFullScreenSwitcherSceneLiveContentOverlay touchBehavior];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setStatusBarHidden:nubViewHidden:animator:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay didRotateFromInterfaceOrientation:toInterfaceOrientation:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay disableFlattening];
+-[SBFullScreenSwitcherSceneLiveContentOverlay willRotateFromInterfaceOrientation:toInterfaceOrientation:alongsideContainerView:animated:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay wantsEnhancedWindowingEnabled];
+-[SBFullScreenSwitcherSceneLiveContentOverlay isContentUpdating];
+-[SBFullScreenSwitcherSceneLiveContentOverlay configureWithWorkspaceEntity:referenceFrame:contentOrientation:containerOrientation:layoutRole:sbsDisplayLayoutRole:zOrderIndex:spaceConfiguration:floatingConfiguration:hasClassicAppOrientationMismatch:sizingPolicy:resetsSceneViewDisplayMode:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay applicationSceneViewControllerDidUpdateHomeAffordanceSupportedOrientations:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay asyncRenderingDisabled];
+-[SBFullScreenSwitcherSceneLiveContentOverlay delegate];
+-[SBFullScreenSwitcherSceneLiveContentOverlay windowControlsLayoutForApplicationSceneViewController:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setDisableFlattening:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay backgroundActivitiesToSuppress];
+-[SBFullScreenSwitcherSceneLiveContentOverlay windowControlsView];
+-[SBFullScreenSwitcherSceneLiveContentOverlay leadingStatusBarStyle];
+-[SBFullScreenSwitcherSceneLiveContentOverlay currentStatusBarStyleAttributes];
+-[SBFullScreenSwitcherSceneLiveContentOverlay statusBarAssertion];
+-[SBFullScreenSwitcherSceneLiveContentOverlay isDisplayLayoutElementActive];
+-[SBFullScreenSwitcherSceneLiveContentOverlay disableAsynchronousRenderingForNextCommit];
+-[SBFullScreenSwitcherSceneLiveContentOverlay applicationSceneViewController:didUpdateStatusBarHidden:withAnimation:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setTouchBehavior:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay willPerformNonAnimatedTransitionToInterfaceOrientation:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay sceneLayerManagerDidUpdateLayers:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay sceneLayerManagerDidStopTrackingLayers:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay currentStatusBarHeight];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setLiveContentBlurEnabled:duration:blurDelay:iconViewScale:began:completion:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay trailingStatusBarStyle];
+-[SBFullScreenSwitcherSceneLiveContentOverlay shouldPreventFlatteningUnoccludedScenes];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setActiveAppearance:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay overlayType];
+-[SBFullScreenSwitcherSceneLiveContentOverlay handleHomeButtonPress];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setMaximized:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay requiresLegacyRotationSupport];
+-[SBFullScreenSwitcherSceneLiveContentOverlay applicationSceneViewControllerIsInNonrotatingWindow:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay orientationWrapperView];
+-[SBFullScreenSwitcherSceneLiveContentOverlay newSnapshotView];
+-[SBFullScreenSwitcherSceneLiveContentOverlay _medusaDecoratedDeviceApplicationSceneViewController];
+-[SBFullScreenSwitcherSceneLiveContentOverlay _sceneHandleForHardwareButtonEvents];
+-[SBFullScreenSwitcherSceneLiveContentOverlay _settingsDidUpdateEdgeProtectOrAutoHideOnHomeGrabberView];
+-[SBFullScreenSwitcherSceneLiveContentOverlay _updateAsyncRendering];
+-[SBFullScreenSwitcherSceneLiveContentOverlay _updateDisplayLayoutElementActive];
+-[SBFullScreenSwitcherSceneLiveContentOverlay _updateFlatteningMode];
+-[SBFullScreenSwitcherSceneLiveContentOverlay _updateFullOcclusionState];
+-[SBFullScreenSwitcherSceneLiveContentOverlay _updateOrientationWrapper];
+-[SBFullScreenSwitcherSceneLiveContentOverlay _updatePreferredWindowControlsPlacementForSceneHandle:contentState:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay _updateTopAffordanceAutoHide];
+-[SBFullScreenSwitcherSceneLiveContentOverlay _updateTouchBehaviorForScene:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay asynchronousRenderingTemporarilyDisabled];
+-[SBFullScreenSwitcherSceneLiveContentOverlay bestHomeAffordanceOrientationForOrientation:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay deviceApplicationSceneViewController];
+-[SBFullScreenSwitcherSceneLiveContentOverlay displayLayoutElement];
+-[SBFullScreenSwitcherSceneLiveContentOverlay displayLayoutElementAssertion];
+-[SBFullScreenSwitcherSceneLiveContentOverlay hitTestedToTopAffordance:window:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay isMatchMovedToScene];
+-[SBFullScreenSwitcherSceneLiveContentOverlay medusaDecoratedApplicationSceneViewController:didChangePreferredStatusBarAxis:withAnimationParameters:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay medusaDecoratedApplicationSceneViewController:didUpdateStatusBarHidden:withAnimation:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay medusaDecoratedDeviceApplicationSceneViewController:statusBarDoubleTapped:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay medusaDecoratedDeviceApplicationSceneViewController:statusBarTapped:tapActionType:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay medusaDecoratedDeviceApplicationSceneViewController:topAffordanceActionPerformed:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay medusaDecoratedDeviceApplicationSceneViewControllerDidUpdateHomeAffordanceSupportedOrientations:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay medusaDecoratedDeviceApplicationSceneViewControllerIsInNonrotatingWindow:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay newPortaledLiveContentOverlayView];
+-[SBFullScreenSwitcherSceneLiveContentOverlay prepareOverlayForMoveToWindowScene:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setAsyncRenderingDisabled:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setContentReferenceSize:interfaceOrientation:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setDisplayLayoutElementAssertion:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setStatusBarPartAlphas:nubViewHidden:animator:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay setSwitcherSceneLiveContentOverlayDelegate:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay switcherSceneLiveContentOverlayDelegate];
+-[SBFullScreenSwitcherSceneLiveContentOverlay updateAppNameVisibilityInActiveLeadingStatusBarWithBlock:];
+-[SBFullScreenSwitcherSceneLiveContentOverlay wantsMinificationFilter];
+-[SBFullScreenSwitcherSceneLiveContentOverlay windowControlsLayoutForMedusaDecoratedDeviceApplicationSceneViewController:];
+```

@@ -1,0 +1,19 @@
+# `UIAdaptivePresentationControllerDelegate` (protocol)
+
+- Image: [`/System/Library/Frameworks/PencilKit.framework/PencilKit`](../userland/System__Library__Frameworks__PencilKit.framework__PencilKit.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 9 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[UIAdaptivePresentationControllerDelegate adaptivePresentationStyleForPresentationController:traitCollection:];
+-[UIAdaptivePresentationControllerDelegate adaptivePresentationStyleForPresentationController:];
+-[UIAdaptivePresentationControllerDelegate presentationController:willPresentWithAdaptiveStyle:transitionCoordinator:];
+-[UIAdaptivePresentationControllerDelegate presentationControllerShouldDismiss:];
+-[UIAdaptivePresentationControllerDelegate presentationControllerDidAttemptToDismiss:];
+-[UIAdaptivePresentationControllerDelegate presentationControllerWillDismiss:];
+-[UIAdaptivePresentationControllerDelegate presentationControllerDidDismiss:];
+-[UIAdaptivePresentationControllerDelegate presentationController:prepareAdaptivePresentationController:];
+-[UIAdaptivePresentationControllerDelegate presentationController:viewControllerForAdaptivePresentationStyle:];
+```

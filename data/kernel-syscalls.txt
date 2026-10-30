@@ -1,0 +1,559 @@
+   • Found                     bsd_syscall_table=0xfffffe0007efe6c0
+0   0xfffffe000b1c3f38: syscall                          munge=0x0                ret=int      narg=0 bytes=0  int syscall(void); // indirect syscall
+1   0xfffffe000b16d45c: exit                             munge=0xfffffe000ae0be7c ret=void     narg=1 bytes=4  void exit(int rval);
+2   0xfffffe000b1754f0: fork                             munge=0x0                ret=int      narg=0 bytes=0  int fork(void);
+3   0xfffffe000b1c46ec: read                             munge=0xfffffe000ae0bea4 ret=ssize_t  narg=3 bytes=12 ssize_t read(int fd, user_addr_t cbuf, user_size_t nbyte);
+4   0xfffffe000b1c5360: write                            munge=0xfffffe000ae0bea4 ret=ssize_t  narg=3 bytes=12 ssize_t write(int fd, user_addr_t cbuf, user_size_t nbyte);
+5   0xfffffe000ae51f4c: open                             munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int open(user_addr_t path, int flags, int mode);
+6   0xfffffe000b14beb8: sys_close                        munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int sys_close(int fd);
+7   0xfffffe000b170e20: wait4                            munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int wait4(int pid, user_addr_t status, int options, user_addr_t rusage);
+8   0xfffffe000b1c3f08: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+9   0xfffffe000ae533b0: link                             munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int link(user_addr_t path, user_addr_t link);
+10  0xfffffe000ae54740: unlink                           munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int unlink(user_addr_t path);
+11  0xfffffe000b1c3f08: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+12  0xfffffe000ae508ec: sys_chdir                        munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int sys_chdir(user_addr_t path);
+13  0xfffffe000ae5067c: sys_fchdir                       munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int sys_fchdir(int fd);
+14  0xfffffe000ae5280c: mknod                            munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int mknod(user_addr_t path, int mode, int dev);
+15  0xfffffe000ae57788: chmod                            munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int chmod(user_addr_t path, int mode);
+16  0xfffffe000ae57cec: chown                            munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int chown(user_addr_t path, int uid, int gid);
+17  0xfffffe000b1c3f08: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+18  0xfffffe000ae4faf0: getfsstat                        munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int getfsstat(user_addr_t buf, int bufsize, int flags);
+19  0xfffffe000b1c3f08: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+20  0xfffffe000b185e00: getpid                           munge=0x0                ret=int      narg=0 bytes=0  int getpid(void);
+21  0xfffffe000b1c3f08: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+22  0xfffffe000b1c3f08: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+23  0xfffffe000b186590: setuid                           munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int setuid(uid_t uid);
+24  0xfffffe000b185f04: getuid                           munge=0x0                ret=int      narg=0 bytes=0  int getuid(void);
+25  0xfffffe000b185f38: geteuid                          munge=0x0                ret=int      narg=0 bytes=0  int geteuid(void);
+26  0xfffffe000b1bda94: ptrace                           munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int ptrace(int req, pid_t pid, caddr_t addr, int data);
+27  0xfffffe000b2077c0: recvmsg                          munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int recvmsg(int s, struct msghdr *msg, int flags);
+28  0xfffffe000b2062fc: sendmsg                          munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int sendmsg(int s, caddr_t msg, int flags);
+29  0xfffffe000b207098: recvfrom                         munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int recvfrom(int s, void *buf, size_t len, int flags, struct sockaddr *from, int *fromlenaddr);
+30  0xfffffe000b204e58: accept                           munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int accept(int s, caddr_t name, socklen_t *anamelen);
+31  0xfffffe000b2092e8: getpeername                      munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int getpeername(int fdes, caddr_t asa, socklen_t *alen);
+32  0xfffffe000b209174: getsockname                      munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int getsockname(int fdes, caddr_t asa, socklen_t *alen);
+33  0xfffffe000ae557f4: access                           munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int access(user_addr_t path, int flags);
+34  0xfffffe000ae569b0: chflags                          munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int chflags(char *path, int flags);
+35  0xfffffe000ae56d88: fchflags                         munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int fchflags(int fd, int flags);
+36  0xfffffe000ae4e93c: sync                             munge=0x0                ret=int      narg=0 bytes=0  int sync(void);
+37  0xfffffe000b1903a0: kill                             munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int kill(int pid, int signum, int posix);
+38  0xfffffe000b1401e8: sys_crossarch_trap               munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int sys_crossarch_trap(uint32_t name);
+39  0xfffffe000b185e2c: getppid                          munge=0x0                ret=int      narg=0 bytes=0  int getppid(void);
+40  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+41  0xfffffe000b145e9c: sys_dup                          munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int sys_dup(u_int fd);
+42  0xfffffe000b1cb830: pipe                             munge=0x0                ret=int      narg=0 bytes=0  int pipe(void);
+43  0xfffffe000b186030: getegid                          munge=0x0                ret=int      narg=0 bytes=0  int getegid(void);
+44  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+45  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+46  0xfffffe000b18d844: sigaction                        munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int sigaction(int signum, struct __sigaction *nsa, struct sigaction *osa);
+47  0xfffffe000b185ffc: getgid                           munge=0x0                ret=int      narg=0 bytes=0  int getgid(void);
+48  0xfffffe000b18e448: sigprocmask                      munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int sigprocmask(int how, user_addr_t mask, user_addr_t omask);
+49  0xfffffe000b187a70: getlogin                         munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int getlogin(char *namebuf, u_int namelen);
+50  0xfffffe000b187d20: setlogin                         munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int setlogin(char *namebuf);
+51  0xfffffe000b136080: acct                             munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int acct(char *path);
+52  0xfffffe000b18e78c: sigpending                       munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int sigpending(struct sigvec *osv);
+53  0xfffffe000b190238: sigaltstack                      munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int sigaltstack(struct sigaltstack *nss, struct sigaltstack *oss);
+54  0xfffffe000b1c58a8: ioctl                            munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int ioctl(int fd, u_long com, caddr_t data);
+55  0xfffffe000b1bd434: reboot                           munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int reboot(int opt, char *msg);
+56  0xfffffe000ae5d510: revoke                           munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int revoke(char *path);
+57  0xfffffe000ae53b14: symlink                          munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int symlink(char *path, char *link);
+58  0xfffffe000ae568d0: readlink                         munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int readlink(char *path, char *buf, int count);
+59  0xfffffe000b1696d0: execve                           munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int execve(char *fname, char **argp, char **envp);
+60  0xfffffe000ae5d3cc: umask                            munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int umask(int newmask);
+61  0xfffffe000ae50b44: chroot                           munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int chroot(user_addr_t path);
+62  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+63  0xfffffe000b1c3f38: invalid                          munge=0x0                ret=int      narg=0 bytes=0  int invalid(void);
+64  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+65  0xfffffe000b176a94: msync                            munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int msync(caddr_ut addr, size_ut len, int flags);
+66  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+67  0xfffffe000b1c83d8: oslog_coproc_reg                 munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int oslog_coproc_reg(const char *uuid, const char *file_path, size_t file_path_len);
+68  0xfffffe000b1c8230: oslog_coproc                     munge=0xfffffe000ae0c604 ret=int      narg=7 bytes=36 int oslog_coproc(void *buff, uint64_t buff_len, uint32_t type, const char *uuid, uint64_t timestamp, uint32_t offset, uint32_t stream_log);
+69  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+70  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+71  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+72  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+73  0xfffffe000b176bd0: munmap                           munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int munmap(caddr_ut addr, size_ut len);
+74  0xfffffe000b176c7c: mprotect                         munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int mprotect(caddr_ut addr, size_ut len, int prot);
+75  0xfffffe000b176ed8: madvise                          munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int madvise(caddr_ut addr, size_ut len, int behav);
+76  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+77  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+78  0xfffffe000b1770c4: mincore                          munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int mincore(caddr_ut addr, size_ut len, user_addr_t vec);
+79  0xfffffe000b186064: getgroups                        munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int getgroups(u_int gidsetsize, gid_t *gidset);
+80  0xfffffe000b18796c: setgroups                        munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int setgroups(u_int gidsetsize, gid_t *gidset);
+81  0xfffffe000b185e40: getpgrp                          munge=0x0                ret=int      narg=0 bytes=0  int getpgrp(void);
+82  0xfffffe000b1862f4: setpgid                          munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int setpgid(int pid, int pgid);
+83  0xfffffe000b1b7ac0: setitimer                        munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int setitimer(u_int which, struct itimerval *itv, struct itimerval *oitv);
+84  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+85  0xfffffe000b231e98: swapon                           munge=0x0                ret=int      narg=0 bytes=0  int swapon(void);
+86  0xfffffe000b1b7814: getitimer                        munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int getitimer(u_int which, struct itimerval *itv);
+87  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+88  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+89  0xfffffe000b145e70: sys_getdtablesize                munge=0x0                ret=int      narg=0 bytes=0  int sys_getdtablesize(void);
+90  0xfffffe000b146948: sys_dup2                         munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int sys_dup2(u_int from, u_int to);
+91  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+92  0xfffffe000b146f4c: sys_fcntl                        munge=0xfffffe000ae0c49c ret=int      narg=3 bytes=12 int sys_fcntl(int fd, int cmd, long arg);
+93  0xfffffe000b1c5ff4: select                           munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int select(int nd, u_int32_t *in, u_int32_t *ou, u_int32_t *ex, struct timeval *tv);
+94  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+95  0xfffffe000ae590a4: fsync                            munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int fsync(int fd);
+96  0xfffffe000b1888d0: setpriority                      munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int setpriority(int which, id_t who, int prio);
+97  0xfffffe000b203db4: socket                           munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int socket(int domain, int type, int protocol);
+98  0xfffffe000b204e90: connect                          munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int connect(int s, caddr_t name, socklen_t namelen);
+99  0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+100 0xfffffe000b188128: getpriority                      munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int getpriority(int which, id_t who);
+101 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+102 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+103 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+104 0xfffffe000b20425c: bind                             munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int bind(int s, caddr_t name, socklen_t namelen);
+105 0xfffffe000b208fac: setsockopt                       munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int setsockopt(int s, int level, int name, caddr_t val, socklen_t valsize);
+106 0xfffffe000b20454c: listen                           munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int listen(int s, int backlog);
+107 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+108 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+109 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+110 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+111 0xfffffe000b18e7d8: sigsuspend                       munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int sigsuspend(sigset_t mask);
+112 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+113 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+114 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+115 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+116 0xfffffe000b1b74c0: gettimeofday                     munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int gettimeofday(struct timeval *tp, struct timezone *tzp, uint64_t *mach_absolute_time);
+117 0xfffffe000b189eec: getrusage                        munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int getrusage(int who, struct rusage *rusage);
+118 0xfffffe000b209078: getsockopt                       munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int getsockopt(int s, int level, int name, caddr_t val, socklen_t *avalsize);
+119 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+120 0xfffffe000b1c4c48: readv                            munge=0xfffffe000ae0bea4 ret=ssize_t  narg=3 bytes=12 ssize_t readv(int fd, struct iovec *iovp, u_int iovcnt);
+121 0xfffffe000b1c57d0: writev                           munge=0xfffffe000ae0bea4 ret=ssize_t  narg=3 bytes=12 ssize_t writev(int fd, struct iovec *iovp, u_int iovcnt);
+122 0xfffffe000b1b7608: settimeofday                     munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int settimeofday(struct timeval *tv, struct timezone *tzp);
+123 0xfffffe000ae5858c: fchown                           munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int fchown(int fd, int uid, int gid);
+124 0xfffffe000ae57be8: fchmod                           munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int fchmod(int fd, int mode);
+125 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+126 0xfffffe000b186af4: setreuid                         munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int setreuid(uid_t ruid, uid_t euid);
+127 0xfffffe000b187220: setregid                         munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int setregid(gid_t rgid, gid_t egid);
+128 0xfffffe000ae59f0c: rename                           munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int rename(char *from, char *to);
+129 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+130 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+131 0xfffffe000b14cb5c: sys_flock                        munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int sys_flock(int fd, int how);
+132 0xfffffe000ae52fdc: mkfifo                           munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int mkfifo(user_addr_t path, int mode);
+133 0xfffffe000b205cec: sendto                           munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int sendto(int s, caddr_t buf, size_t len, int flags, caddr_t to, socklen_t tolen);
+134 0xfffffe000b208f48: shutdown                         munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int shutdown(int s, int how);
+135 0xfffffe000b2058e8: socketpair                       munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int socketpair(int domain, int type, int protocol, int *rsv);
+136 0xfffffe000ae5c954: mkdir                            munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int mkdir(user_addr_t path, int mode);
+137 0xfffffe000ae5cadc: rmdir                            munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int rmdir(char *path);
+138 0xfffffe000ae58618: utimes                           munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int utimes(char *path, struct timeval *tptr);
+139 0xfffffe000ae58a78: futimes                          munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int futimes(int fd, struct timeval *tptr);
+140 0xfffffe000b238a08: adjtime                          munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int adjtime(struct timeval *delta, struct timeval *olddelta);
+141 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+142 0xfffffe000b1c7c74: gethostuuid                      munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int gethostuuid(unsigned char *uuid_buf, const struct timespec *timeoutp);
+143 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+144 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+145 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+146 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+147 0xfffffe000b186200: setsid                           munge=0x0                ret=int      narg=0 bytes=0  int setsid(void);
+148 0xfffffe000b1c9104: pipe2                            munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int pipe2(int *fildes, int flags);
+149 0xfffffe000b146ea4: sys_dup3                         munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int sys_dup3(u_int from, u_int to, int flags);
+150 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+151 0xfffffe000b185e54: getpgid                          munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int getpgid(pid_t pid);
+152 0xfffffe000b185ddc: setprivexec                      munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int setprivexec(int flag);
+153 0xfffffe000b1c4940: pread                            munge=0xfffffe000ae0c34c ret=ssize_t  narg=4 bytes=20 ssize_t pread(int fd, user_addr_t buf, user_size_t nbyte, off_t offset);
+154 0xfffffe000b1c55c8: pwrite                           munge=0xfffffe000ae0c34c ret=ssize_t  narg=4 bytes=20 ssize_t pwrite(int fd, user_addr_t buf, user_size_t nbyte, off_t offset);
+155 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+156 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+157 0xfffffe000ae4ef50: statfs                           munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int statfs(char *path, struct statfs *buf);
+158 0xfffffe000ae4f5d8: fstatfs                          munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int fstatfs(int fd, struct statfs *buf);
+159 0xfffffe000ae4d7c0: unmount                          munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int unmount(user_addr_t path, int flags);
+160 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+161 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+162 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+163 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+164 0xfffffe000ae4e794: funmount                         munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int funmount(int fd, int flags);
+165 0xfffffe000ae4ef44: quotactl                         munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int quotactl(const char *path, int cmd, int uid, caddr_t arg);
+166 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+167 0xfffffe000ae4bbb8: mount                            munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int mount(char *type, char *path, int flags, caddr_t data);
+168 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+169 0xfffffe000b180ee4: csops                            munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int csops(pid_t pid, uint32_t ops, user_addr_t useraddr, user_size_t usersize);
+170 0xfffffe000b181df8: csops_audittoken                 munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int csops_audittoken(pid_t pid, uint32_t ops, user_addr_t useraddr, user_size_t usersize, user_addr_t uaudittoken);
+171 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+172 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+173 0xfffffe000b17174c: waitid                           munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int waitid(idtype_t idtype, id_t id, siginfo_t *infop, int options);
+174 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+175 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+176 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+177 0xfffffe000b134aa4: kdebug_typefilter                munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int kdebug_typefilter(void** addr, size_t* size);
+178 0xfffffe000b135120: kdebug_trace_string              munge=0xfffffe000ae0c0ec ret=uint64_t narg=3 bytes=16 uint64_t kdebug_trace_string(uint32_t debugid, uint64_t str_id, const char *str);
+179 0xfffffe000b134c48: kdebug_trace64                   munge=0xfffffe000ae0c244 ret=int      narg=5 bytes=36 int kdebug_trace64(uint32_t code, uint64_t arg1, uint64_t arg2, uint64_t arg3, uint64_t arg4);
+180 0xfffffe000b134bd0: kdebug_trace                     munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int kdebug_trace(uint32_t code, u_long arg1, u_long arg2, u_long arg3, u_long arg4);
+181 0xfffffe000b186e98: setgid                           munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int setgid(gid_t gid);
+182 0xfffffe000b187048: setegid                          munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int setegid(gid_t egid);
+183 0xfffffe000b186930: seteuid                          munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int seteuid(uid_t euid);
+184 0xfffffe000b2eafb8: sigreturn                        munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int sigreturn(struct ucontext *uctx, int infostyle, user_addr_t token);
+185 0xfffffe000b1bd580: sys_panic_with_data              munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int sys_panic_with_data(uuid_t uuid, void *addr, uint32_t len, uint32_t flags, const char *msg);
+186 0xfffffe000b22876c: thread_selfcounts                munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int thread_selfcounts(uint32_t kind, user_addr_t buf, user_size_t size);
+187 0xfffffe000ae5923c: fdatasync                        munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int fdatasync(int fd);
+188 0xfffffe000ae5615c: stat                             munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int stat(user_addr_t path, user_addr_t ub);
+189 0xfffffe000b14c810: sys_fstat                        munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int sys_fstat(int fd, user_addr_t ub);
+190 0xfffffe000ae56254: lstat                            munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int lstat(user_addr_t path, user_addr_t ub);
+191 0xfffffe000ae563d0: pathconf                         munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int pathconf(char *path, int name);
+192 0xfffffe000b14c86c: sys_fpathconf                    munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int sys_fpathconf(int fd, int name);
+193 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+194 0xfffffe000b189cc8: getrlimit                        munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int getrlimit(u_int which, struct rlimit *rlp);
+195 0xfffffe000b189390: setrlimit                        munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int setrlimit(u_int which, struct rlimit *rlp);
+196 0xfffffe000ae5cdf4: getdirentries                    munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int getdirentries(int fd, char *buf, u_int count, long *basep);
+197 0xfffffe000b175d88: mmap                             munge=0xfffffe000ae0c424 ret=addr_t   narg=6 bytes=28 addr_t mmap(caddr_ut addr, size_ut len, int prot, int flags, int fd, off_t pos);
+198 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+199 0xfffffe000ae54f20: lseek                            munge=0xfffffe000ae0c0ec ret=off_t    narg=3 bytes=16 off_t lseek(int fd, off_t offset, int whence);
+200 0xfffffe000ae58b48: truncate                         munge=0xfffffe000ae0bfdc ret=int      narg=2 bytes=12 int truncate(char *path, off_t length);
+201 0xfffffe000ae59088: ftruncate                        munge=0xfffffe000ae0bfdc ret=int      narg=2 bytes=12 int ftruncate(int fd, off_t length);
+202 0xfffffe000b19c310: sysctl                           munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int sysctl(int *name, u_int namelen, void *old, size_t *oldlenp, void *new, size_t newlen);
+203 0xfffffe000b17736c: mlock                            munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int mlock(caddr_ut addr, size_ut len);
+204 0xfffffe000b177408: munlock                          munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int munlock(caddr_ut addr, size_ut len);
+205 0xfffffe000ae53f7c: undelete                         munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int undelete(user_addr_t path);
+206 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+207 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+208 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+209 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+210 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+211 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+212 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+213 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+214 0xfffffe000ae56d30: fchflagsat                       munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int fchflagsat(int fd, char *path, int flags, int flag);
+215 0xfffffe000ae5d47c: getumask                         munge=0x0                ret=int      narg=0 bytes=0  int getumask(void);
+216 0xfffffe000ae51ee0: open_dprotected_np               munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int open_dprotected_np(user_addr_t path, int flags, int class, int dpflags, int mode);
+217 0xfffffe000ae60c64: fsgetpath_ext                    munge=0xfffffe000ae0c2e4 ret=ssize_t  narg=5 bytes=24 ssize_t fsgetpath_ext(user_addr_t buf, size_t bufsize, user_addr_t fsid, uint64_t objid, uint32_t options);
+218 0xfffffe000ae51bb8: openat_dprotected_np             munge=0xfffffe000ae0bf54 ret=int      narg=7 bytes=28 int openat_dprotected_np(int fd, user_addr_t path, int flags, int class, int dpflags, int mode, int authfd);
+219 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+220 0xfffffe000ae144b4: getattrlist                      munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int getattrlist(const char *path, struct attrlist *alist, void *attributeBuffer, size_t bufferSize, u_long options);
+221 0xfffffe000ae1571c: setattrlist                      munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int setattrlist(const char *path, struct attrlist *alist, void *attributeBuffer, size_t bufferSize, u_long options);
+222 0xfffffe000ae5d7dc: getdirentriesattr                munge=0xfffffe000ae0bf94 ret=int      narg=8 bytes=32 int getdirentriesattr(int fd, struct attrlist *alist, void *buffer, size_t buffersize, u_long *count, u_long *basep, u_long *newstate, u_long options);
+223 0xfffffe000ae5db8c: exchangedata                     munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int exchangedata(const char *path1, const char *path2, u_long options);
+224 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+225 0xfffffe000ae5e154: searchfs                         munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int searchfs(const char *path, struct fssearchblock *searchblock, uint32_t *nummatches, uint32_t scriptcode, uint32_t options, struct searchstate *state);
+226 0xfffffe000ae54704: delete                           munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int delete(user_addr_t path);
+227 0xfffffe000ae59278: copyfile                         munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int copyfile(char *from, char *to, int mode, int flags);
+228 0xfffffe000ae116f0: fgetattrlist                     munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int fgetattrlist(int fd, struct attrlist *alist, void *attributeBuffer, size_t bufferSize, u_long options);
+229 0xfffffe000ae1658c: fsetattrlist                     munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int fsetattrlist(int fd, struct attrlist *alist, void *attributeBuffer, size_t bufferSize, u_long options);
+230 0xfffffe000b1c7514: poll                             munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int poll(struct pollfd *fds, u_int nfds, int timeout);
+231 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+232 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+233 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+234 0xfffffe000ae5f990: getxattr                         munge=0xfffffe000ae0bf1c ret=ssize_t  narg=6 bytes=24 ssize_t getxattr(user_addr_t path, user_addr_t attrname, user_addr_t value, size_t size, uint32_t position, int options);
+235 0xfffffe000ae5fc88: fgetxattr                        munge=0xfffffe000ae0bf1c ret=ssize_t  narg=6 bytes=24 ssize_t fgetxattr(int fd, user_addr_t attrname, user_addr_t value, size_t size, uint32_t position, int options);
+236 0xfffffe000ae5fefc: setxattr                         munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int setxattr(user_addr_t path, user_addr_t attrname, user_addr_t value, size_t size, uint32_t position, int options);
+237 0xfffffe000ae60150: fsetxattr                        munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int fsetxattr(int fd, user_addr_t attrname, user_addr_t value, size_t size, uint32_t position, int options);
+238 0xfffffe000ae60378: removexattr                      munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int removexattr(user_addr_t path, user_addr_t attrname, int options);
+239 0xfffffe000ae605a0: fremovexattr                     munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int fremovexattr(int fd, user_addr_t attrname, int options);
+240 0xfffffe000ae60704: listxattr                        munge=0xfffffe000ae0bec4 ret=ssize_t  narg=4 bytes=16 ssize_t listxattr(user_addr_t path, user_addr_t namebuf, size_t bufsize, int options);
+241 0xfffffe000ae6095c: flistxattr                       munge=0xfffffe000ae0bec4 ret=ssize_t  narg=4 bytes=16 ssize_t flistxattr(int fd, user_addr_t namebuf, size_t bufsize, int options);
+242 0xfffffe000ae5e324: fsctl                            munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int fsctl(const char *path, u_long cmd, caddr_t data, u_int options);
+243 0xfffffe000b1878b0: initgroups                       munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int initgroups(u_int gidsetsize, gid_t *gidset, int gmuid);
+244 0xfffffe000b164980: posix_spawn                      munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int posix_spawn(pid_t *pid, const char *path, const struct _posix_spawn_args_desc *adesc, char **argv, char **envp);
+245 0xfffffe000ae5f89c: ffsctl                           munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int ffsctl(int fd, u_long cmd, caddr_t data, u_int options);
+246 0xfffffe000b13920c: aio_readv                        munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int aio_readv(user_addr_t aiocbp);
+247 0xfffffe000b139d78: aio_writev                       munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int aio_writev(user_addr_t aiocbp);
+248 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+249 0xfffffe000ae5f880: fsctlat                          munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int fsctlat(int fd, const char *path, u_long cmd, caddr_t data, u_int options);
+250 0xfffffe000b176dd0: minherit                         munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int minherit(caddr_ut addr, size_ut len, int inherit);
+251 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+252 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+253 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+254 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+255 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+256 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+257 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+258 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+259 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+260 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+261 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+262 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+263 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+264 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+265 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+266 0xfffffe000b21674c: shm_open                         munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int shm_open(const char *name, int oflag, int mode);
+267 0xfffffe000b217af0: shm_unlink                       munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int shm_unlink(const char *name);
+268 0xfffffe000b214124: sem_open                         munge=0xfffffe000ae0bec4 ret=addr_t   narg=4 bytes=16 addr_t sem_open(const char *name, int oflag, int mode, int value);
+269 0xfffffe000b215130: sem_close                        munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int sem_close(sem_t *sem);
+270 0xfffffe000b214ef8: sem_unlink                       munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int sem_unlink(const char *name);
+271 0xfffffe000b215244: sem_wait                         munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int sem_wait(sem_t *sem);
+272 0xfffffe000b215470: sem_trywait                      munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int sem_trywait(sem_t *sem);
+273 0xfffffe000b21564c: sem_post                         munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int sem_post(sem_t *sem);
+274 0xfffffe000b19c674: sys_sysctlbyname                 munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int sys_sysctlbyname(const char *name, size_t namelen, void *old, size_t *oldlenp, void *new, size_t newlen);
+275 0xfffffe000b1c3f08: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+276 0xfffffe000b1c3f08: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+277 0xfffffe000ae51998: open_extended                    munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int open_extended(user_addr_t path, int flags, uid_t uid, gid_t gid, int mode, user_addr_t xsecurity);
+278 0xfffffe000ae5d31c: umask_extended                   munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int umask_extended(int newmask, user_addr_t xsecurity);
+279 0xfffffe000ae55b1c: stat_extended                    munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int stat_extended(user_addr_t path, user_addr_t ub, user_addr_t xsecurity, user_addr_t xsecurity_size);
+280 0xfffffe000ae56218: lstat_extended                   munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int lstat_extended(user_addr_t path, user_addr_t ub, user_addr_t xsecurity, user_addr_t xsecurity_size);
+281 0xfffffe000b14c124: sys_fstat_extended               munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int sys_fstat_extended(int fd, user_addr_t ub, user_addr_t xsecurity, user_addr_t xsecurity_size);
+282 0xfffffe000ae5711c: chmod_extended                   munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int chmod_extended(user_addr_t path, uid_t uid, gid_t gid, int mode, user_addr_t xsecurity);
+283 0xfffffe000ae57a04: fchmod_extended                  munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int fchmod_extended(int fd, uid_t uid, gid_t gid, int mode, user_addr_t xsecurity);
+284 0xfffffe000ae552a4: access_extended                  munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int access_extended(user_addr_t entries, size_t size, user_addr_t results, uid_t uid);
+285 0xfffffe000b18742c: sys_settid                       munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int sys_settid(uid_t uid, gid_t gid);
+286 0xfffffe000b185f6c: gettid                           munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int gettid(uid_t *uidp, gid_t *gidp);
+287 0xfffffe000b187a1c: setsgroups                       munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int setsgroups(int setlen, user_addr_t guidset);
+288 0xfffffe000b186120: getsgroups                       munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int getsgroups(user_addr_t setlen, user_addr_t guidset);
+289 0xfffffe000b187a28: setwgroups                       munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int setwgroups(int setlen, user_addr_t guidset);
+290 0xfffffe000b18612c: getwgroups                       munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int getwgroups(user_addr_t setlen, user_addr_t guidset);
+291 0xfffffe000ae52e70: mkfifo_extended                  munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int mkfifo_extended(user_addr_t path, uid_t uid, gid_t gid, int mode, user_addr_t xsecurity);
+292 0xfffffe000ae5c4a8: mkdir_extended                   munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int mkdir_extended(user_addr_t path, uid_t uid, gid_t gid, int mode, user_addr_t xsecurity);
+293 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+294 0xfffffe000b231ea4: shared_region_check_np           munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int shared_region_check_np(uint64_t *start_address);
+295 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+296 0xfffffe000b23749c: vm_pressure_monitor              munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int vm_pressure_monitor(int wait_for_pressure, int nsecs_monitored, uint32_t *pages_reclaimed);
+297 0xfffffe000b1268d0: psynch_rw_longrdlock             munge=0xfffffe000ae0beec ret=uint     narg=5 bytes=20 uint psynch_rw_longrdlock(user_addr_t rwlock, uint32_t lgenval, uint32_t ugenval, uint32_t rw_wc, int flags);
+298 0xfffffe000b1269ac: psynch_rw_yieldwrlock            munge=0xfffffe000ae0beec ret=uint     narg=5 bytes=20 uint psynch_rw_yieldwrlock(user_addr_t rwlock, uint32_t lgenval, uint32_t ugenval, uint32_t rw_wc, int flags);
+299 0xfffffe000b1269ec: psynch_rw_downgrade              munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int psynch_rw_downgrade(user_addr_t rwlock, uint32_t lgenval, uint32_t ugenval, uint32_t rw_wc, int flags);
+300 0xfffffe000b1269e0: psynch_rw_upgrade                munge=0xfffffe000ae0beec ret=uint     narg=5 bytes=20 uint psynch_rw_upgrade(user_addr_t rwlock, uint32_t lgenval, uint32_t ugenval, uint32_t rw_wc, int flags);
+301 0xfffffe000b126710: psynch_mutexwait                 munge=0xfffffe000ae0c2e4 ret=uint     narg=5 bytes=24 uint psynch_mutexwait(user_addr_t mutex, uint32_t mgen, uint32_t  ugen, uint64_t tid, uint32_t flags);
+302 0xfffffe000b126744: psynch_mutexdrop                 munge=0xfffffe000ae0c2e4 ret=uint     narg=5 bytes=24 uint psynch_mutexdrop(user_addr_t mutex, uint32_t mgen, uint32_t  ugen, uint64_t tid, uint32_t flags);
+303 0xfffffe000b126778: psynch_cvbroad                   munge=0xfffffe000ae0c2a4 ret=uint     narg=7 bytes=44 uint psynch_cvbroad(user_addr_t cv, uint64_t cvlsgen, uint64_t cvudgen, uint32_t flags, user_addr_t mutex, uint64_t mugen, uint64_t tid);
+304 0xfffffe000b1267c8: psynch_cvsignal                  munge=0xfffffe000ae0c134 ret=uint     narg=8 bytes=44 uint psynch_cvsignal(user_addr_t cv, uint64_t cvlsgen, uint32_t cvugen, int thread_port, user_addr_t mutex, uint64_t mugen, uint64_t tid, uint32_t flags);
+305 0xfffffe000b126820: psynch_cvwait                    munge=0xfffffe000ae0c17c ret=uint     narg=8 bytes=44 uint psynch_cvwait(user_addr_t cv, uint64_t cvlsgen, uint32_t cvugen, user_addr_t mutex, uint64_t mugen, uint32_t flags, int64_t sec, uint32_t nsec);
+306 0xfffffe000b126904: psynch_rw_rdlock                 munge=0xfffffe000ae0beec ret=uint     narg=5 bytes=20 uint psynch_rw_rdlock(user_addr_t rwlock, uint32_t lgenval, uint32_t ugenval, uint32_t rw_wc, int flags);
+307 0xfffffe000b126978: psynch_rw_wrlock                 munge=0xfffffe000ae0beec ret=uint     narg=5 bytes=20 uint psynch_rw_wrlock(user_addr_t rwlock, uint32_t lgenval, uint32_t ugenval, uint32_t rw_wc, int flags);
+308 0xfffffe000b126938: psynch_rw_unlock                 munge=0xfffffe000ae0beec ret=uint     narg=5 bytes=20 uint psynch_rw_unlock(user_addr_t rwlock, uint32_t lgenval, uint32_t ugenval, uint32_t rw_wc, int flags);
+309 0xfffffe000b12696c: psynch_rw_unlock2                munge=0xfffffe000ae0beec ret=uint     narg=5 bytes=20 uint psynch_rw_unlock2(user_addr_t rwlock, uint32_t lgenval, uint32_t ugenval, uint32_t rw_wc, int flags);
+310 0xfffffe000b185eac: getsid                           munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int getsid(pid_t pid);
+311 0xfffffe000b187648: sys_settid_with_pid              munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int sys_settid_with_pid(pid_t pid, int assume);
+312 0xfffffe000b126878: psynch_cvclrprepost              munge=0xfffffe000ae0bf54 ret=int      narg=7 bytes=28 int psynch_cvclrprepost(user_addr_t cv, uint32_t cvgen, uint32_t cvugen, uint32_t cvsgen, uint32_t prepocnt, uint32_t preposeq, uint32_t flags);
+313 0xfffffe000b138628: aio_fsync                        munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int aio_fsync(int op, user_addr_t aiocbp);
+314 0xfffffe000b139248: aio_return                       munge=0xfffffe000ae0be7c ret=ssize_t  narg=1 bytes=4  ssize_t aio_return(user_addr_t aiocbp);
+315 0xfffffe000b139704: aio_suspend                      munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int aio_suspend(user_addr_t aiocblist, int nent, user_addr_t timeoutp);
+316 0xfffffe000b13774c: aio_cancel                       munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int aio_cancel(int fd, user_addr_t aiocbp);
+317 0xfffffe000b13844c: aio_error                        munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int aio_error(user_addr_t aiocbp);
+318 0xfffffe000b1391d0: aio_read                         munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int aio_read(user_addr_t aiocbp);
+319 0xfffffe000b139d68: aio_write                        munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int aio_write(user_addr_t aiocbp);
+320 0xfffffe000b139d88: lio_listio                       munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int lio_listio(int mode, user_addr_t aiocblist, int nent, user_addr_t sigp);
+321 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+322 0xfffffe000b18a604: iopolicysys                      munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int iopolicysys(int cmd, void *arg);
+323 0xfffffe000b2263ec: process_policy                   munge=0xfffffe000ae0c45c ret=int      narg=7 bytes=32 int process_policy(int scope, int action, int policy, int policy_subtype, user_addr_t attrp, pid_t target_pid, uint64_t target_threadid);
+324 0xfffffe000b177478: enosys                           munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int enosys(void);
+325 0xfffffe000b177484: enosys                           munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int enosys(void);
+326 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+327 0xfffffe000b186578: issetugid                        munge=0x0                ret=int      narg=0 bytes=0  int issetugid(void);
+328 0xfffffe000b18ec9c: __pthread_kill                   munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int __pthread_kill(int thread_port, int sig);
+329 0xfffffe000b18fdf4: __pthread_sigmask                munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int __pthread_sigmask(int how, user_addr_t set, user_addr_t oset);
+330 0xfffffe000b18fed4: __sigwait                        munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int __sigwait(user_addr_t set, user_addr_t sig);
+331 0xfffffe000b18e974: __disable_threadsignal           munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int __disable_threadsignal(int value);
+332 0xfffffe000b18e994: __pthread_markcancel             munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int __pthread_markcancel(int thread_port);
+333 0xfffffe000b18ea2c: __pthread_canceled               munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int __pthread_canceled(int  action);
+334 0xfffffe000b18eabc: __semwait_signal                 munge=0xfffffe000ae0c374 ret=int      narg=6 bytes=28 int __semwait_signal(int cond_sem, int mutex_sem, int timeout, int relative, int64_t tv_sec, int32_t tv_nsec);
+335 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+336 0xfffffe000b2204e0: proc_info                        munge=0xfffffe000ae0c314 ret=int      narg=6 bytes=28 int proc_info(int32_t callnum, int32_t pid, uint32_t flavor, uint64_t arg, user_addr_t buffer, int32_t buffersize);
+337 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+338 0xfffffe000ae5619c: stat64                           munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int stat64(user_addr_t path, user_addr_t ub);
+339 0xfffffe000b14c84c: sys_fstat64                      munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int sys_fstat64(int fd, user_addr_t ub);
+340 0xfffffe000ae56294: lstat64                          munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int lstat64(user_addr_t path, user_addr_t ub);
+341 0xfffffe000ae561dc: stat64_extended                  munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int stat64_extended(user_addr_t path, user_addr_t ub, user_addr_t xsecurity, user_addr_t xsecurity_size);
+342 0xfffffe000ae562d4: lstat64_extended                 munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int lstat64_extended(user_addr_t path, user_addr_t ub, user_addr_t xsecurity, user_addr_t xsecurity_size);
+343 0xfffffe000b14c830: sys_fstat64_extended             munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int sys_fstat64_extended(int fd, user_addr_t ub, user_addr_t xsecurity, user_addr_t xsecurity_size);
+344 0xfffffe000ae5d25c: getdirentries64                  munge=0xfffffe000ae0bec4 ret=ssize_t  narg=4 bytes=16 ssize_t getdirentries64(int fd, void *buf, user_size_t bufsize, off_t *position);
+345 0xfffffe000ae4f7fc: statfs64                         munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int statfs64(char *path, struct statfs64 *buf);
+346 0xfffffe000ae4f998: fstatfs64                        munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int fstatfs64(int fd, struct statfs64 *buf);
+347 0xfffffe000ae4ff38: getfsstat64                      munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int getfsstat64(user_addr_t buf, int bufsize, int flags);
+348 0xfffffe000ae50a18: __pthread_chdir                  munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int __pthread_chdir(user_addr_t path);
+349 0xfffffe000ae506b8: __pthread_fchdir                 munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int __pthread_fchdir(int fd);
+350 0xfffffe000b125f6c: enosys                           munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int enosys(void);
+351 0xfffffe000b125f78: enosys                           munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int enosys(void);
+352 0xfffffe000b14e5e4: guarded_ftruncate_np             munge=0xfffffe000ae0bff4 ret=int      narg=3 bytes=16 int guarded_ftruncate_np(int fd, const guardid_t *guard, off_t length);
+353 0xfffffe000b125f84: enosys                           munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int enosys(void);
+354 0xfffffe000b125f90: enosys                           munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int enosys(void);
+355 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+356 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+357 0xfffffe000b125f9c: enosys                           munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int enosys(void);
+358 0xfffffe000b125fa8: enosys                           munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int enosys(void);
+359 0xfffffe000b125fb4: enosys                           munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int enosys(void);
+360 0xfffffe000b126538: bsdthread_create                 munge=0xfffffe000ae0beec ret=addr_t   narg=5 bytes=20 addr_t bsdthread_create(user_addr_t func, user_addr_t func_arg, user_addr_t stack, user_addr_t pthread, uint32_t flags);
+361 0xfffffe000b12660c: bsdthread_terminate              munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int bsdthread_terminate(user_addr_t stackaddr, size_t freesize, uint32_t port, user_addr_t sema_or_ulock);
+362 0xfffffe000b153ebc: kqueue                           munge=0x0                ret=int      narg=0 bytes=0  int kqueue(void);
+363 0xfffffe000b158e68: kevent                           munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int kevent(int fd, const struct kevent *changelist, int nchanges, struct kevent *eventlist, int nevents, const struct timespec *timeout);
+364 0xfffffe000ae5822c: lchown                           munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int lchown(user_addr_t path, uid_t owner, gid_t group);
+365 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+366 0xfffffe000b126564: bsdthread_register               munge=0xfffffe000ae0bf54 ret=int      narg=7 bytes=28 int bsdthread_register(user_addr_t threadstart, user_addr_t wqthread, uint32_t flags, user_addr_t stack_addr_hint, user_addr_t targetconc_ptr, uint32_t dispatchqueue_offset, uint32_t tsd_offset);
+367 0xfffffe000b12a8bc: workq_open                       munge=0x0                ret=int      narg=0 bytes=0  int workq_open(void);
+368 0xfffffe000b12d390: workq_kernreturn                 munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int workq_kernreturn(int options, user_addr_t item, int affinity, int prio);
+369 0xfffffe000b15935c: kevent64                         munge=0xfffffe000ae0bf54 ret=int      narg=7 bytes=28 int kevent64(int fd, const struct kevent64_s *changelist, int nchanges, struct kevent64_s *eventlist, int nevents, unsigned int flags, const struct timespec *timeout);
+370 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+371 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+372 0xfffffe000b1266f4: thread_selfid                    munge=0x0                ret=uint64_t narg=0 bytes=0  uint64_t thread_selfid(void);
+373 0xfffffe000b1c7da0: ledger                           munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int ledger(int cmd, caddr_t arg1, caddr_t arg2, caddr_t arg3);
+374 0xfffffe000b158a20: kevent_qos                       munge=0xfffffe000ae0bf94 ret=int      narg=8 bytes=32 int kevent_qos(int fd, const struct kevent_qos_s *changelist, int nchanges, struct kevent_qos_s *eventlist, int nevents, void *data_out, size_t *data_available, unsigned int flags);
+375 0xfffffe000b158458: kevent_id                        munge=0xfffffe000ae0c544 ret=int      narg=8 bytes=36 int kevent_id(uint64_t id, const struct kevent_qos_s *changelist, int nchanges, struct kevent_qos_s *eventlist, int nevents, void *data_out, size_t *data_available, unsigned int flags);
+376 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+377 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+378 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+379 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+380 0xfffffe000b169704: __mac_execve                     munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int __mac_execve(char *fname, char **argp, char **envp, struct mac *mac_p);
+381 0xfffffe000b47a888: __mac_syscall                    munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int __mac_syscall(char *policy, int call, user_addr_t arg);
+382 0xfffffe000b47a0b8: __mac_get_file                   munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int __mac_get_file(char *path_p, struct mac *mac_p);
+383 0xfffffe000b47a5c4: __mac_set_file                   munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int __mac_set_file(char *path_p, struct mac *mac_p);
+384 0xfffffe000b47a300: __mac_get_link                   munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int __mac_get_link(char *path_p, struct mac *mac_p);
+385 0xfffffe000b47a800: __mac_set_link                   munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int __mac_set_link(char *path_p, struct mac *mac_p);
+386 0xfffffe000b479c60: __mac_get_proc                   munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int __mac_get_proc(struct mac *mac_p);
+387 0xfffffe000b479cd0: __mac_set_proc                   munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int __mac_set_proc(struct mac *mac_p);
+388 0xfffffe000b479e34: __mac_get_fd                     munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int __mac_get_fd(int fd, struct mac *mac_p);
+389 0xfffffe000b47a388: __mac_set_fd                     munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int __mac_set_fd(int fd, struct mac *mac_p);
+390 0xfffffe000b479b44: __mac_get_pid                    munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int __mac_get_pid(pid_t pid, struct mac *mac_p);
+391 0xfffffe000b1c3f08: enosys                           munge=0x0                ret=int      narg=0 bytes=0  int enosys(void);
+392 0xfffffe000b1c3f08: enosys                           munge=0x0                ret=int      narg=0 bytes=0  int enosys(void);
+393 0xfffffe000b1c3f08: enosys                           munge=0x0                ret=int      narg=0 bytes=0  int enosys(void);
+394 0xfffffe000b1c7320: pselect                          munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int pselect(int nd, u_int32_t *in, u_int32_t *ou, u_int32_t *ex, const struct timespec *ts, const struct sigset_t *mask);
+395 0xfffffe000b1c7358: pselect_nocancel                 munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int pselect_nocancel(int nd, u_int32_t *in, u_int32_t *ou, u_int32_t *ex, const struct timespec *ts, const struct sigset_t *mask);
+396 0xfffffe000b1c45d4: read_nocancel                    munge=0xfffffe000ae0bea4 ret=ssize_t  narg=3 bytes=12 ssize_t read_nocancel(int fd, user_addr_t cbuf, user_size_t nbyte);
+397 0xfffffe000b1c5240: write_nocancel                   munge=0xfffffe000ae0bea4 ret=ssize_t  narg=3 bytes=12 ssize_t write_nocancel(int fd, user_addr_t cbuf, user_size_t nbyte);
+398 0xfffffe000ae520bc: open_nocancel                    munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int open_nocancel(user_addr_t path, int flags, int mode);
+399 0xfffffe000b14c0d0: sys_close_nocancel               munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int sys_close_nocancel(int fd);
+400 0xfffffe000b170570: wait4_nocancel                   munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int wait4_nocancel(int pid, user_addr_t status, int options, user_addr_t rusage);
+401 0xfffffe000b2077f8: recvmsg_nocancel                 munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int recvmsg_nocancel(int s, struct msghdr *msg, int flags);
+402 0xfffffe000b206334: sendmsg_nocancel                 munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int sendmsg_nocancel(int s, caddr_t msg, int flags);
+403 0xfffffe000b2070d0: recvfrom_nocancel                munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int recvfrom_nocancel(int s, void *buf, size_t len, int flags, struct sockaddr *from, int *fromlenaddr);
+404 0xfffffe000b2045cc: accept_nocancel                  munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int accept_nocancel(int s, caddr_t name, socklen_t *anamelen);
+405 0xfffffe000b176acc: msync_nocancel                   munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int msync_nocancel(caddr_ut addr, size_ut len, int flags);
+406 0xfffffe000b146f84: sys_fcntl_nocancel               munge=0xfffffe000ae0c49c ret=int      narg=3 bytes=12 int sys_fcntl_nocancel(int fd, int cmd, long arg);
+407 0xfffffe000b1c602c: select_nocancel                  munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int select_nocancel(int nd, u_int32_t *in, u_int32_t *ou, u_int32_t *ex, struct timeval *tv);
+408 0xfffffe000ae59230: fsync_nocancel                   munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int fsync_nocancel(int fd);
+409 0xfffffe000b204ec8: connect_nocancel                 munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int connect_nocancel(int s, caddr_t name, socklen_t namelen);
+410 0xfffffe000b18e904: sigsuspend_nocancel              munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int sigsuspend_nocancel(sigset_t mask);
+411 0xfffffe000b1c4c24: readv_nocancel                   munge=0xfffffe000ae0bea4 ret=ssize_t  narg=3 bytes=12 ssize_t readv_nocancel(int fd, struct iovec *iovp, u_int iovcnt);
+412 0xfffffe000b1c57a8: writev_nocancel                  munge=0xfffffe000ae0bea4 ret=ssize_t  narg=3 bytes=12 ssize_t writev_nocancel(int fd, struct iovec *iovp, u_int iovcnt);
+413 0xfffffe000b205d24: sendto_nocancel                  munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int sendto_nocancel(int s, caddr_t buf, size_t len, int flags, caddr_t to, socklen_t tolen);
+414 0xfffffe000b1c4828: pread_nocancel                   munge=0xfffffe000ae0c34c ret=ssize_t  narg=4 bytes=20 ssize_t pread_nocancel(int fd, user_addr_t buf, user_size_t nbyte, off_t offset);
+415 0xfffffe000b1c54a4: pwrite_nocancel                  munge=0xfffffe000ae0c34c ret=ssize_t  narg=4 bytes=20 ssize_t pwrite_nocancel(int fd, user_addr_t buf, user_size_t nbyte, off_t offset);
+416 0xfffffe000b170ea0: waitid_nocancel                  munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int waitid_nocancel(idtype_t idtype, id_t id, siginfo_t *infop, int options);
+417 0xfffffe000b1c754c: poll_nocancel                    munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int poll_nocancel(struct pollfd *fds, u_int nfds, int timeout);
+418 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+419 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void);
+420 0xfffffe000b21527c: sem_wait_nocancel                munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int sem_wait_nocancel(sem_t *sem);
+421 0xfffffe000b13973c: aio_suspend_nocancel             munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int aio_suspend_nocancel(user_addr_t aiocblist, int nent, user_addr_t timeoutp);
+422 0xfffffe000b18ff0c: __sigwait_nocancel               munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int __sigwait_nocancel(user_addr_t set, user_addr_t sig);
+423 0xfffffe000b18eb08: __semwait_signal_nocancel        munge=0xfffffe000ae0c374 ret=int      narg=6 bytes=28 int __semwait_signal_nocancel(int cond_sem, int mutex_sem, int timeout, int relative, int64_t tv_sec, int32_t tv_nsec);
+424 0xfffffe000ae4bbf8: __mac_mount                      munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int __mac_mount(char *type, char *path, int flags, caddr_t data, struct mac *mac_p);
+425 0xfffffe000b47afcc: __mac_get_mount                  munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int __mac_get_mount(char *path, struct mac *mac_p);
+426 0xfffffe000ae4fb34: __mac_getfsstat                  munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int __mac_getfsstat(user_addr_t buf, int bufsize, user_addr_t mac, int macsize, int flags);
+427 0xfffffe000ae60b24: fsgetpath                        munge=0xfffffe000ae0c34c ret=ssize_t  narg=4 bytes=20 ssize_t fsgetpath(user_addr_t buf, size_t bufsize, user_addr_t fsid, uint64_t objid);
+428 0xfffffe000b125f48: enosys                           munge=0x0                ret=uint     narg=0 bytes=0  uint enosys(void);
+429 0xfffffe000b125f54: enosys                           munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int enosys(void);
+430 0xfffffe000b14cd7c: sys_fileport_makeport            munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int sys_fileport_makeport(int fd, user_addr_t portnamep);
+431 0xfffffe000b14d68c: sys_fileport_makefd              munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int sys_fileport_makefd(mach_port_name_t port);
+432 0xfffffe000b125f60: enosys                           munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int enosys(void);
+433 0xfffffe000b185108: pid_suspend                      munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int pid_suspend(int pid);
+434 0xfffffe000b185554: pid_resume                       munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int pid_resume(int pid);
+435 0xfffffe000b185698: pid_hibernate                    munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int pid_hibernate(int pid);
+436 0xfffffe000b1857ec: pid_shutdown_sockets             munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int pid_shutdown_sockets(int pid, int level);
+437 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+438 0xfffffe000b1c3f38: nosys                            munge=0x0                ret=int      narg=0 bytes=0  int nosys(void); // old 'nosys'
+439 0xfffffe000b237530: kas_info                         munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int kas_info(int selector, void *value, size_t *size);
+440 0xfffffe000b1a7ad4: memorystatus_control             munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int memorystatus_control(uint32_t command, int32_t pid, uint32_t flags, user_addr_t buffer, size_t buffersize);
+441 0xfffffe000b14d970: guarded_open_np                  munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int guarded_open_np(user_addr_t path, const guardid_t *guard, u_int guardflags, int flags, int mode);
+442 0xfffffe000b14dee8: guarded_close_np                 munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int guarded_close_np(int fd, const guardid_t *guard);
+443 0xfffffe000b14de40: guarded_kqueue_np                munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int guarded_kqueue_np(const guardid_t *guard, u_int guardflags);
+444 0xfffffe000b14e058: change_fdguard_np                munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int change_fdguard_np(int fd, const guardid_t *guard, u_int guardflags, const guardid_t *nguard, u_int nguardflags, int *fdflagsp);
+445 0xfffffe000b1bd77c: usrctl                           munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int usrctl(uint32_t flags);
+446 0xfffffe000b18bf90: proc_rlimit_control              munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int proc_rlimit_control(pid_t pid, int flavor, void *arg);
+447 0xfffffe000b205168: connectx                         munge=0xfffffe000ae0bf94 ret=int      narg=8 bytes=32 int connectx(int socket, const sa_endpoints_t *endpoints, sae_associd_t associd, unsigned int flags, const struct iovec *iov, unsigned int iovcnt, size_t *len, sae_connid_t *connid);
+448 0xfffffe000b205858: disconnectx                      munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int disconnectx(int s, sae_associd_t aid, sae_connid_t cid);
+449 0xfffffe000b20581c: peeloff                          munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int peeloff(int s, sae_associd_t aid);
+450 0xfffffe000b204238: socket_delegate                  munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int socket_delegate(int domain, int type, int protocol, pid_t epid);
+451 0xfffffe000b1c8068: telemetry                        munge=0xfffffe000ae0c4c4 ret=int      narg=6 bytes=48 int telemetry(uint64_t cmd, uint64_t deadline, uint64_t interval, uint64_t leeway, uint64_t arg4, uint64_t arg5);
+452 0xfffffe000b23c844: proc_uuid_policy                 munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int proc_uuid_policy(uint32_t operation, uuid_t uuid, size_t uuidlen, uint32_t flags);
+453 0xfffffe000b19e464: memorystatus_get_level           munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int memorystatus_get_level(user_addr_t level);
+454 0xfffffe000b226c9c: system_override                  munge=0xfffffe000ae0c4d4 ret=int      narg=2 bytes=16 int system_override(uint64_t timeout, uint64_t flags);
+455 0xfffffe000ae60c80: vfs_purge                        munge=0x0                ret=int      narg=0 bytes=0  int vfs_purge(void);
+456 0xfffffe000b1b7168: sfi_ctl                          munge=0xfffffe000ae0c014 ret=int      narg=4 bytes=20 int sfi_ctl(uint32_t operation, uint32_t sfi_class, uint64_t time, uint64_t *out_time);
+457 0xfffffe000b1b72d4: sfi_pidctl                       munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int sfi_pidctl(uint32_t operation, pid_t pid, uint32_t sfi_flags, uint32_t *out_sfi_flags);
+458 0xfffffe000b1cc84c: coalition                        munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int coalition(uint32_t operation, uint64_t *cid, uint32_t flags);
+459 0xfffffe000b1cca04: coalition_info                   munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int coalition_info(uint32_t flavor, uint64_t *cid, void *buffer, size_t *bufsize);
+460 0xfffffe000af6ed10: necp_match_policy                munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int necp_match_policy(uint8_t *parameters, size_t parameters_size, struct necp_aggregate_result *returned_result);
+461 0xfffffe000ae147ac: getattrlistbulk                  munge=0xfffffe000ae0c3f4 ret=int      narg=5 bytes=24 int getattrlistbulk(int dirfd, struct attrlist *alist, void *attributeBuffer, size_t bufferSize, uint64_t options);
+462 0xfffffe000ae596c0: clonefileat                      munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int clonefileat(int src_dirfd, user_addr_t src, int dst_dirfd, user_addr_t dst, uint32_t flags);
+463 0xfffffe000ae52398: openat                           munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int openat(int fd, user_addr_t path, int flags, int mode);
+464 0xfffffe000ae52204: openat_nocancel                  munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int openat_nocancel(int fd, user_addr_t path, int flags, int mode);
+465 0xfffffe000ae5c46c: renameat                         munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int renameat(int fromfd, char *from, int tofd, char *to);
+466 0xfffffe000ae55ac4: faccessat                        munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int faccessat(int fd, user_addr_t path, int amode, int flag);
+467 0xfffffe000ae579ac: fchmodat                         munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int fchmodat(int fd, user_addr_t path, int mode, int flag);
+468 0xfffffe000ae583ac: fchownat                         munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int fchownat(int fd, user_addr_t path, uid_t uid, gid_t gid, int flag);
+469 0xfffffe000ae56310: fstatat                          munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int fstatat(int fd, user_addr_t path, user_addr_t ub, int flag);
+470 0xfffffe000ae56370: fstatat64                        munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int fstatat64(int fd, user_addr_t path, user_addr_t ub, int flag);
+471 0xfffffe000ae53ab8: linkat                           munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int linkat(int fd1, user_addr_t path, int fd2, user_addr_t link, int flag);
+472 0xfffffe000ae5477c: unlinkat                         munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int unlinkat(int fd, user_addr_t path, int flag);
+473 0xfffffe000ae56940: readlinkat                       munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int readlinkat(int fd, user_addr_t path, user_addr_t buf, size_t bufsize);
+474 0xfffffe000ae53f48: symlinkat                        munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int symlinkat(user_addr_t *path1, int fd, user_addr_t path2);
+475 0xfffffe000ae5ca18: mkdirat                          munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int mkdirat(int fd, user_addr_t path, int mode);
+476 0xfffffe000ae14728: getattrlistat                    munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int getattrlistat(int fd, const char *path, struct attrlist *alist, void *attributeBuffer, size_t bufferSize, u_long options);
+477 0xfffffe000b183aec: proc_trace_log                   munge=0xfffffe000ae0bfdc ret=int      narg=2 bytes=12 int proc_trace_log(pid_t pid, uint64_t uniqueid);
+478 0xfffffe000b12b550: bsdthread_ctl                    munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int bsdthread_ctl(user_addr_t cmd, user_addr_t arg1, user_addr_t arg2, user_addr_t arg3);
+479 0xfffffe000ae523fc: openbyid_np                      munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int openbyid_np(user_addr_t fsid, user_addr_t objid, int oflags);
+480 0xfffffe000b207aa0: recvmsg_x                        munge=0xfffffe000ae0bec4 ret=ssize_t  narg=4 bytes=16 ssize_t recvmsg_x(int s, struct msghdr_x *msgp, u_int cnt, int flags);
+481 0xfffffe000b206554: sendmsg_x                        munge=0xfffffe000ae0bec4 ret=ssize_t  narg=4 bytes=16 ssize_t sendmsg_x(int s, struct msghdr_x *msgp, u_int cnt, int flags);
+482 0xfffffe000b18c164: thread_selfusage                 munge=0x0                ret=uint64_t narg=0 bytes=0  uint64_t thread_selfusage(void);
+483 0xfffffe000b1c3f08: enosys                           munge=0x0                ret=int      narg=0 bytes=0  int enosys(void);
+484 0xfffffe000b14dbdc: guarded_open_dprotected_np       munge=0xfffffe000ae0bf54 ret=int      narg=7 bytes=28 int guarded_open_dprotected_np(user_addr_t path, const guardid_t *guard, u_int guardflags, int flags, int dpclass, int dpflags, int mode);
+485 0xfffffe000b14e490: guarded_write_np                 munge=0xfffffe000ae0bec4 ret=ssize_t  narg=4 bytes=16 ssize_t guarded_write_np(int fd, const guardid_t *guard, user_addr_t cbuf, user_size_t nbyte);
+486 0xfffffe000b14e500: guarded_pwrite_np                munge=0xfffffe000ae0c3f4 ret=ssize_t  narg=5 bytes=24 ssize_t guarded_pwrite_np(int fd, const guardid_t *guard, user_addr_t buf, user_size_t nbyte, off_t offset);
+487 0xfffffe000b14e570: guarded_writev_np                munge=0xfffffe000ae0bec4 ret=ssize_t  narg=4 bytes=16 ssize_t guarded_writev_np(int fd, const guardid_t *guard, struct iovec *iovp, int iovcnt);
+488 0xfffffe000ae5c404: renameatx_np                     munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int renameatx_np(int fromfd, char *from, int tofd, char *to, u_int flags);
+489 0xfffffe000b177490: mremap_encrypted                 munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int mremap_encrypted(caddr_ut addr, size_ut len, uint32_t cryptid, uint32_t cputype, uint32_t cpusubtype);
+490 0xfffffe000af79c98: netagent_trigger                 munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int netagent_trigger(uuid_t agent_uuid, size_t agent_uuidlen);
+491 0xfffffe000b1bffd4: stack_snapshot_with_config       munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int stack_snapshot_with_config(int stackshot_config_version, user_addr_t stackshot_config, size_t stackshot_config_size);
+492 0xfffffe000b1c0644: microstackshot                   munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int microstackshot(user_addr_t tracebuf, uint32_t tracebuf_size, uint32_t flags);
+493 0xfffffe000b1c3f08: grab_pgo_data                    munge=0x0                ret=int      narg=0 bytes=0  int grab_pgo_data(void);
+494 0xfffffe000b1cd1a8: persona                          munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int persona(uint32_t operation, uint32_t flags, struct kpersona_info *info, uid_t *id, size_t *idlen, char *path);
+495 0xfffffe000b1c3f08: enosys                           munge=0x0                ret=int      narg=0 bytes=0  int enosys(void);
+496 0xfffffe000b1c3f6c: mach_eventlink_signal            munge=0xfffffe000ae0bfdc ret=uint64_t narg=2 bytes=12 uint64_t mach_eventlink_signal(mach_port_name_t eventlink_port, uint64_t signal_count);
+497 0xfffffe000b1c3f9c: mach_eventlink_wait_until        munge=0xfffffe000ae0c274 ret=uint64_t narg=5 bytes=28 uint64_t mach_eventlink_wait_until(mach_port_name_t eventlink_port, uint64_t wait_count, uint64_t deadline, uint32_t clock_id, uint32_t option);
+498 0xfffffe000b1c3fdc: mach_eventlink_signal_wait_until munge=0xfffffe000ae0c20c ret=uint64_t narg=6 bytes=36 uint64_t mach_eventlink_signal_wait_until(mach_port_name_t eventlink_port, uint64_t wait_count, uint64_t signal_count, uint64_t deadline, uint32_t clock_id, uint32_t option);
+499 0xfffffe000b1cf5c4: work_interval_ctl                munge=0xfffffe000ae0c10c ret=int      narg=4 bytes=20 int work_interval_ctl(uint32_t operation, uint64_t work_interval_id, void *arg, size_t len);
+500 0xfffffe000ae0b268: getentropy                       munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int getentropy(void *buffer, size_t size);
+501 0xfffffe000af5b8b0: necp_open                        munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int necp_open(int flags);
+502 0xfffffe000af5d39c: necp_client_action               munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int necp_client_action(int necp_fd, uint32_t action, uuid_t client_id, size_t client_id_len, uint8_t *buffer, size_t buffer_size);
+503 0xfffffe000b27c6e0: __nexus_open                     munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int __nexus_open(struct nxctl_init *init, uint32_t init_len);
+504 0xfffffe000b27cedc: __nexus_register                 munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int __nexus_register(int ctl, struct nxprov_reg *reg, uint32_t reg_len, uuid_t *prov_uuid, uint32_t prov_uuid_len);
+505 0xfffffe000b27d508: __nexus_deregister               munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int __nexus_deregister(int ctl, uuid_t prov_uuid, uint32_t prov_uuid_len);
+506 0xfffffe000b27d874: __nexus_create                   munge=0xfffffe000ae0beec ret=int      narg=5 bytes=20 int __nexus_create(int ctl, uuid_t prov_uuid, uint32_t prov_uuid_len, uuid_t *nx_uuid, uint32_t nx_uuid_len);
+507 0xfffffe000b27dd88: __nexus_destroy                  munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int __nexus_destroy(int ctl, uuid_t nx_uuid, uint32_t nx_uuid_len);
+508 0xfffffe000b27e124: __nexus_get_opt                  munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int __nexus_get_opt(int ctl, uint32_t opt, void *aoptval, uint32_t *aoptlen);
+509 0xfffffe000b27e4c4: __nexus_set_opt                  munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int __nexus_set_opt(int ctl, uint32_t opt, const void *aoptval, uint32_t optlen);
+510 0xfffffe000b2554d8: __channel_open                   munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int __channel_open(struct ch_init *init, uint32_t init_len);
+511 0xfffffe000b25610c: __channel_get_info               munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int __channel_get_info(int c, struct ch_info *cinfo, uint32_t cinfolen);
+512 0xfffffe000b256410: __channel_sync                   munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int __channel_sync(int c, int mode, int flags);
+513 0xfffffe000b257498: __channel_get_opt                munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int __channel_get_opt(int c, uint32_t opt, void *aoptval, uint32_t *aoptlen);
+514 0xfffffe000b2578cc: __channel_set_opt                munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int __channel_set_opt(int c, uint32_t opt, const void *aoptval, uint32_t optlen);
+515 0xfffffe000b1ce0d8: sys_ulock_wait                   munge=0xfffffe000ae0c014 ret=int      narg=4 bytes=20 int sys_ulock_wait(uint32_t operation, void *addr, uint64_t value, uint32_t timeout);
+516 0xfffffe000b1cf14c: sys_ulock_wake                   munge=0xfffffe000ae0bff4 ret=int      narg=3 bytes=16 int sys_ulock_wake(uint32_t operation, void *addr, uint64_t wake_value);
+517 0xfffffe000ae59e38: fclonefileat                     munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int fclonefileat(int src_fd, int dst_dirfd, user_addr_t dst, uint32_t flags);
+518 0xfffffe000ae60d84: fs_snapshot                      munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int fs_snapshot(uint32_t op, int dirfd, user_addr_t name1, user_addr_t name2, user_addr_t data, uint32_t flags);
+519 0xfffffe000b1c3f08: enosys                           munge=0x0                ret=int      narg=0 bytes=0  int enosys(void);
+520 0xfffffe000b190c78: terminate_with_payload           munge=0xfffffe000ae0c5c4 ret=int      narg=7 bytes=36 int terminate_with_payload(int pid, uint32_t reason_namespace, uint64_t reason_code, void *payload, uint32_t payload_size, const char *reason_string, uint64_t reason_flags);
+521 0xfffffe000b16d2d0: abort_with_payload               munge=0xfffffe000ae0c58c ret=void     narg=6 bytes=32 void abort_with_payload(uint32_t reason_namespace, uint64_t reason_code, void *payload, uint32_t payload_size, const char *reason_string, uint64_t reason_flags);
+522 0xfffffe000af2c4ec: necp_session_open                munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int necp_session_open(int flags);
+523 0xfffffe000af348f8: necp_session_action              munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int necp_session_action(int necp_fd, uint32_t action, uint8_t *in_buffer, size_t in_buffer_length, uint8_t *out_buffer, size_t out_buffer_length);
+524 0xfffffe000ae163a8: setattrlistat                    munge=0xfffffe000ae0bf1c ret=int      narg=6 bytes=24 int setattrlistat(int fd, const char *path, struct attrlist *alist, void *attributeBuffer, size_t bufferSize, uint32_t options);
+525 0xfffffe000b00c26c: net_qos_guideline                munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int net_qos_guideline(struct net_qos_param *param, uint32_t param_len);
+526 0xfffffe000ae4ca38: fmount                           munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int fmount(const char *type, int fd, int flags, void *data);
+527 0xfffffe000b2380b4: ntp_adjtime                      munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int ntp_adjtime(struct timex *tp);
+528 0xfffffe000b237f14: ntp_gettime                      munge=0xfffffe000ae0be7c ret=int      narg=1 bytes=4  int ntp_gettime(struct ntptimeval *ntvp);
+529 0xfffffe000b16d334: os_fault_with_payload            munge=0xfffffe000ae0c58c ret=int      narg=6 bytes=32 int os_fault_with_payload(uint32_t reason_namespace, uint64_t reason_code, void *payload, uint32_t payload_size, const char *reason_string, uint64_t reason_flags);
+530 0xfffffe000b155938: kqueue_workloop_ctl              munge=0xfffffe000ae0c10c ret=int      narg=4 bytes=20 int kqueue_workloop_ctl(user_addr_t cmd, uint64_t options, user_addr_t addr, size_t sz);
+531 0xfffffe000b1b8974: __mach_bridge_remote_time        munge=0xfffffe000ae0c4dc ret=uint64_t narg=1 bytes=8  uint64_t __mach_bridge_remote_time(uint64_t local_timestamp);
+532 0xfffffe000b1cce58: coalition_ledger                 munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int coalition_ledger(uint32_t operation, uint64_t *cid, void *buffer, size_t *bufsize);
+533 0xfffffe000b1c810c: log_data                         munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int log_data(unsigned int tag, unsigned int flags, void *buffer, unsigned int size);
+534 0xfffffe000b1aa0f8: memorystatus_available_memory    munge=0x0                ret=uint64_t narg=0 bytes=0  uint64_t memorystatus_available_memory(void);
+535 0xfffffe000b2e996c: objc_bp_assist_cfg_np            munge=0xfffffe000ae0c4d4 ret=int      narg=2 bytes=16 int objc_bp_assist_cfg_np(uint64_t adr, uint64_t ctl);
+536 0xfffffe000b2329a8: shared_region_map_and_slide_2_np munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int shared_region_map_and_slide_2_np(uint32_t files_count, const struct shared_file_np *files, uint32_t mappings_count, const shared_file_mapping_slide_np_ut *mappings_u);
+537 0xfffffe000ae50ef8: pivot_root                       munge=0xfffffe000ae0be8c ret=int      narg=2 bytes=8  int pivot_root(const char *new_rootfs_path_before, const char *old_rootfs_path_after);
+538 0xfffffe000b184b30: task_inspect_for_pid             munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int task_inspect_for_pid(mach_port_name_t target_tport, int pid, mach_port_name_t *t);
+539 0xfffffe000b184e1c: task_read_for_pid                munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int task_read_for_pid(mach_port_name_t target_tport, int pid, mach_port_name_t *t);
+540 0xfffffe000b1c4cc0: sys_preadv                       munge=0xfffffe000ae0c34c ret=ssize_t  narg=4 bytes=20 ssize_t sys_preadv(int fd, struct iovec *iovp, int iovcnt, off_t offset);
+541 0xfffffe000b1c5850: sys_pwritev                      munge=0xfffffe000ae0c34c ret=ssize_t  narg=4 bytes=20 ssize_t sys_pwritev(int fd, struct iovec *iovp, int iovcnt, off_t offset);
+542 0xfffffe000b1c4c9c: sys_preadv_nocancel              munge=0xfffffe000ae0c34c ret=ssize_t  narg=4 bytes=20 ssize_t sys_preadv_nocancel(int fd, struct iovec *iovp, int iovcnt, off_t offset);
+543 0xfffffe000b1c5828: sys_pwritev_nocancel             munge=0xfffffe000ae0c34c ret=ssize_t  narg=4 bytes=20 ssize_t sys_pwritev_nocancel(int fd, struct iovec *iovp, int iovcnt, off_t offset);
+544 0xfffffe000b1ce120: sys_ulock_wait2                  munge=0xfffffe000ae0c03c ret=int      narg=5 bytes=32 int sys_ulock_wait2(uint32_t operation, void *addr, uint64_t value, uint64_t timeout, uint64_t value2);
+545 0xfffffe000b226180: proc_info_extended_id            munge=0xfffffe000ae0c3ac ret=int      narg=8 bytes=40 int proc_info_extended_id(int32_t callnum, int32_t pid, uint32_t flavor, uint32_t flags, uint64_t ext_id, uint64_t arg, user_addr_t buffer, int32_t buffersize);
+546 0xfffffe000b229008: tracker_action                   munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int tracker_action(int action, char *buffer, size_t buffer_size);
+547 0xfffffe000b141cd8: debug_syscall_reject             munge=0xfffffe000ae0c4dc ret=int      narg=1 bytes=8  int debug_syscall_reject(uint64_t packed_selectors);
+548 0xfffffe000b141ccc: sys_debug_syscall_reject_config  munge=0xfffffe000ae0c4cc ret=int      narg=3 bytes=24 int sys_debug_syscall_reject_config(uint64_t packed_selectors1, uint64_t packed_selectors2, uint64_t flags);
+549 0xfffffe000ae4cc54: graftdmg                         munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int graftdmg(int dmg_fd, const char *mountdir, uint32_t graft_type, graftdmg_args_un *gda);
+550 0xfffffe000b236ec4: map_with_linking_np              munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int map_with_linking_np(void *regions, uint32_t region_count, void *link_info, uint32_t link_info_size);
+551 0xfffffe000ae5654c: freadlink                        munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int freadlink(int fd, user_addr_t buf, user_size_t bufsize);
+552 0xfffffe000b1cbc38: sys_record_system_event          munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int sys_record_system_event(uint32_t type, uint32_t subsystem, const char *event, const char *payload);
+553 0xfffffe000ae530a0: mkfifoat                         munge=0xfffffe000ae0bea4 ret=int      narg=3 bytes=12 int mkfifoat(int fd, user_addr_t path, int mode);
+554 0xfffffe000ae52da4: mknodat                          munge=0xfffffe000ae0bec4 ret=int      narg=4 bytes=16 int mknodat(int fd, user_addr_t path, int mode, int dev);
+555 0xfffffe000ae4d5b4: ungraftdmg                       munge=0xfffffe000ae0bfdc ret=int      narg=2 bytes=12 int ungraftdmg(const char *mountdir, uint64_t flags);
+556 0xfffffe000b1ccfa0: sys_coalition_policy_set         munge=0xfffffe000ae0c4fc ret=int      narg=3 bytes=16 int sys_coalition_policy_set(uint64_t cid, uint32_t flavor, uint32_t value);
+557 0xfffffe000b1cd084: sys_coalition_policy_get         munge=0xfffffe000ae0c4e4 ret=int      narg=2 bytes=12 int sys_coalition_policy_get(uint64_t cid, uint32_t flavor);

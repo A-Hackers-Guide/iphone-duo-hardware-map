@@ -1,0 +1,1459 @@
+# `com.apple.driver.AppleHapticsSupportLEAP`
+
+- Name: AppleHapticsSupportLEAP
+- Version: `11.6`
+- UUID: `8C057C89-55E4-35E9-9C44-B4EAF4577893`
+- Source version: `11.6.0.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleEmbeddedAudioLibs`](com.apple.driver.AppleEmbeddedAudioLibs.md) 1.0.0, [`com.apple.driver.AppleFirmwareUpdateKext`](com.apple.driver.AppleFirmwareUpdateKext.md) 1.0.0, [`com.apple.driver.AppleSMC`](com.apple.driver.AppleSMC.md) 1.0.0, [`com.apple.iokit.CoreAnalyticsFamily`](com.apple.iokit.CoreAnalyticsFamily.md) 1.0, [`com.apple.iokit.IOHIDFamily`](com.apple.iokit.IOHIDFamily.md) 1.4, [`com.apple.iokit.IOReportFamily`](com.apple.iokit.IOReportFamily.md) 1.0, [`com.apple.kec.Libm`](com.apple.kec.Libm.md) 1.0.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 11.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 11.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 11.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 11.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 11.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 11.0
+
+## Device-tree nodes it binds (1) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/haptics-support-interface`](../devicetree/root__arm-io__haptics-support-interface.md) | `AppleHapticsSupportLEAP` | `haptics-support,leap` |
+
+## IOKit personalities (1) [KC]
+
+### AppleHapticsSupport
+- `CFBundleIdentifier`: `com.apple.driver.AppleHapticsSupportLEAP`
+- `IOClass`: `AppleHapticsSupportLEAP`
+- `IONameMatch`:
+  - `haptics-support,leap`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHapticsSupportLEAP`
+- `IOProviderClass`: `AppleARMIODevice`
+- `IOUserClientClass`: `AppleHapticsSupportUserClient`
+
+
+## C++ classes (38) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AHSActiveSessionEvent` | 0x28 | AHSEvent |
+| `AHSAggregatedSessionEvent` | 0x20 | AHSEvent |
+| `AHSCal` | 0x1f0 |  |
+| `AHSCommandQueue` | 0x1a8 | IOEventSource |
+| `AHSCoreAnalyticsPublisher` | 0x48 | AHSPublisher |
+| `AHSEvent` | 0x20 |  |
+| `AHSEventCollection` | 0x18 |  |
+| `AHSEventLogger` | 0x20 |  |
+| `AHSFirmwareReadyNotifier` | 0x88 | IOService → IORegistryEntry |
+| `AHSFunctionBase` | 0x38 | AppleARMFunction |
+| `AHSFunctionNotifySessionChange` | 0x38 | AHSFunctionBase → AppleARMFunction |
+| `AHSFunctionNotifyWatchdogOccurred` | 0x38 | AHSFunctionBase → AppleARMFunction |
+| `AHSFunctionSetAveragePowerBudget` | 0x38 | AHSFunctionBase → AppleARMFunction |
+| `AHSFunctionSetHapticDebugChannels` | 0x38 | AHSFunctionBase → AppleARMFunction |
+| `AHSFunctionSetPeakPowerBudget` | 0x38 | AHSFunctionBase → AppleARMFunction |
+| `AHSFunctionSetTravelScaler` | 0x38 | AHSFunctionBase → AppleARMFunction |
+| `AHSIOReporterPublisher` | 0x90 | AHSPublisher |
+| `AHSInteger` | 0x10 |  |
+| `AHSLeela` | 0x60 |  |
+| `AHSLeelaEnergyUsedAccumulator` | 0x40 |  |
+| `AHSLeelaPhone` | 0xd0 | AHSLeela |
+| `AHSLeelaPhoneCal` | 0x1f8 | AHSCal |
+| `AHSLeelaPowerEstimator` | 0x48 |  |
+| `AHSLeelaSymbols` | 0x20 | AHSSymbols |
+| `AHSPowerInterface` | 0xc0 | IOService → IORegistryEntry |
+| `AHSPowerInterfaceUserClient` | 0xe0 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `AHSPublisher` | 0x18 |  |
+| `AHSRecurringTimer` | 0x38 |  |
+| `AHSSegmentFinder` | 0x30 |  |
+| `AHSSessionEvent` | 0x20 | AHSEvent |
+| `AHSStatsAggregator` | 0x38 |  |
+| `AHSSymbols` | 0x20 |  |
+| `AHSSystemLogPublisher` | 0x28 | AHSPublisher |
+| `AHSTemperaturePowerSMCReporter` | 0x38 |  |
+| `AHSTemperatureReporter` | 0xe8 | IOHIDEventService → IOService → IORegistryEntry |
+| `AppleHapticsSupport` | 0x178 | IOService → IORegistryEntry |
+| `AppleHapticsSupportLEAP` | 0x240 | AppleHapticsSupport → IOService → IORegistryEntry |
+| `AppleHapticsSupportUserClient` | 0xe0 | IOUserClient → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1800)
+Flags         = NoUndefs, DyldLink, TwoLevel, WeakDefines, BindsToWeak, DylibInCache
+000: LC_SEGMENT_64 sz=0x00008d47 off=0x0050fbe0-0x00518927 addr=0xfffffe0007513be0-0xfffffe000751c927 r--/r--   __TEXT            
+	sz=0x000003e0 off=0x00510350-0x00510730 addr=0xfffffe0007514350-0xfffffe0007514730               __TEXT.__const            
+	sz=0x00007811 off=0x00510730-0x00517f41 addr=0xfffffe0007514730-0xfffffe000751bf41               __TEXT.__cstring          (CstringLiterals)
+	sz=0x000009e6 off=0x00517f41-0x00518927 addr=0xfffffe000751bf41-0xfffffe000751c927               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x0003badc off=0x01fbda30-0x01ff950c addr=0xfffffe0008fc1a30-0xfffffe0008ffd50c r-x/r-x   __TEXT_EXEC       
+	sz=0x0003b41c off=0x01fbda30-0x01ff8e4c addr=0xfffffe0008fc1a30-0xfffffe0008ffce4c          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000006c0 off=0x01ff8e4c-0x01ff950c addr=0xfffffe0008ffce4c-0xfffffe0008ffd50c          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00001b70 off=0x0494b260-0x0494cdd0 addr=0xfffffe000b94f260-0xfffffe000b950dd0 rw-/rw-   __DATA            
+	sz=0x000006ac off=0x0494b260-0x0494b90c addr=0xfffffe000b94f260-0xfffffe000b94f90c               __DATA.__data             
+	sz=0x00000658 off=0x00000000-0x00000658 addr=0xfffffe000b94f910-0xfffffe000b94ff68               __DATA.__common           (Zerofill)
+	sz=0x00000e60 off=0x00000000-0x00000e60 addr=0xfffffe000b94ff70-0xfffffe000b950dd0               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00008df0 off=0x01104f28-0x0110dd18 addr=0xfffffe0008108f28-0xfffffe0008111d18 rw-/rw-   __DATA_CONST      
+	sz=0x000000f8 off=0x01104f28-0x01105020 addr=0xfffffe0008108f28-0xfffffe0008109020         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000108 off=0x01105020-0x01105128 addr=0xfffffe0008109020-0xfffffe0008109128         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00007440 off=0x01105128-0x0110c568 addr=0xfffffe0008109128-0xfffffe0008110568         __DATA_CONST.__const            
+	sz=0x00000090 off=0x0110c568-0x0110c5f8 addr=0xfffffe0008110568-0xfffffe00081105f8         __DATA_CONST.__weak_got         (NonLazySymbolPointers)
+	sz=0x00001280 off=0x0110c5f8-0x0110d878 addr=0xfffffe00081105f8-0xfffffe0008111878         __DATA_CONST.__kalloc_type      
+	sz=0x00000050 off=0x0110d878-0x0110d8c8 addr=0xfffffe0008111878-0xfffffe00081118c8         __DATA_CONST.__kalloc_var       
+	sz=0x00000360 off=0x0110d8c8-0x0110dc28 addr=0xfffffe00081118c8-0xfffffe0008111c28         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000f0 off=0x0110dc28-0x0110dd18 addr=0xfffffe0008111c28-0xfffffe0008111d18         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 264 at 0x04adc928
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     8C057C89-55E4-35E9-9C44-B4EAF4577893
+008: LC_SOURCE_VERSION           11.6.0.0.0
+009: LC_FUNCTION_STARTS          offset=0x004aa4b20 size=0x5f0
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleExecutable`: `AppleHapticsSupportLEAP`
+- `CFBundleIdentifier`: `com.apple.driver.AppleHapticsSupportLEAP`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleHapticsSupportLEAP`
+- `CFBundleNumericVersion`: `291536896`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `11.6`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `11.6`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2018 Apple Inc. All rights reserved.`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleHapticsSupportLEAP.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198900491296`
+- `_PrelinkExecutableRelativePath`: `AppleHapticsSupportLEAP`
+- `_PrelinkExecutableSize`: `323971`
+- `_PrelinkExecutableSourceAddr`: `-2198900491296`
+- `_PrelinkKmodInfo`: `-2198828944800`
+
+## Strings (1299) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `BDFault`
+- `DP1iNoLE9Bnb9+0aSGdDu8qbdcc=`
+- `FiraAfb9WDtvYEv1i00s1p1x/1A=`
+- `QaLPH3yGBRDk++uRuzZOgH8nQ3o=`
+- `bZ4Zz7XlnsYADHqOBOvyDR3KXpc=`
+- `jtcYJHNaWJtME7c80bbTN2HULeU=`
+- `bool`
+- `site.AHSEventLogger`
+- `executePublishSessionEndSymbols`
+- `CPFault`
+- `yHviCPLe+6Risl7qUrvwIS3cGfE=`
+- `S8mIGwqic1PHxsOKeg+m2/WYn8g=`
+- `%s::%s failed to send haptic assets: 0x%08X\n`
+- `hdscpBl4O4Iy8NIlOVJecFoaH7Q=`
+- `.`
+- `error determining majorDotMinor`
+- `couldn't append word`
+- `KU945PLnsejXkt0xY81qcO5AAr4=`
+- `publish`
+- `error preparing firmware setup requests`
+- `nY+zk3MAfCyEWA1HPipuEKH0wV0=`
+- `IUe8VFO9mIJAVtzKNRbf4JUxQts=`
+- `AvgTime`
+- `akciFWUpdateFoundHandler`
+- `AHSStatsAggregator`
+- `patchFWBinary`
+- `-cal-mi`
+- `i8`
+- `no symbol type or length`
+- `+iKQkiKobnAdI3FEgJBpVbCApmY=`
+- `ControllerVersion`
+- `missing firmware entry`
+- `5Qkb5+VWkUP43+sYM0hdtsNF88Q=`
+- `unable to create segment finder`
+- `maxTempDiffCTEHall`
+- `missing channel selection symbols`
+- `bounded_ptr<T>::operator*: Dereferencing this pointer would access memory outside of the bounds set originally`
+- `Index`
+- `peakCount_accumulated`
+- `%s%lu.%0*lu`
+- `Ws5xv0Nm6rKDfusBIoWyN0jfaMg=`
+- `command AP max`
+- `x/TxcdZGWr7tHP9gydvrC0QAB5Y=`
+- `can't read 0 symbols`
+- `energySaved_uJ`
+- `%s::%s %s%s\n`
+- `iSE2JBPJN2af1+GQa4ytC5Fqrz0=`
+- `3KDhAVd1GEShtB7/Kye2Cd+ZVuA=`
+- `FltAC`
+- `%s::%s param3 is not an OSData\n`
+- `4OjQrw8A0hUFXpbR5MkXO+C8xIg=`
+- `This bounded_ptr is pointing to memory outside of what can be represented by a native pointer.`
+- `SysconfigKey`
+- `FaultBit`
+- `earEw8jxjcUYlmfTOlnWmUhWj08=`
+- `AHSFunctionSetPeakPowerBudget`
+- `setPeakPowerBudgetRange`
+- `slew AP max`
+- `ValidateChecksum/Checksum/Field`
+- `couldn't set dataByFieldName on published sysconfig dictionary`
+- `no memory for transformed values`
+- `HW7pwuqrpt9CSYb4LrtNqe+rGm8=`
+- `OjBiIkARukNSQ5+1LDWYOmNPXVg=`
+- `amp2Clip`
+- `_readMetaDataFillSymbolInfo`
+- `AccessOptions`
+- `121111121222121212221121121211122211111111122212111111121111111121111112`
+- `AOPZeroSlewFault`
+- `could not add chunk granule to symbol data`
+- `failed to create arm found notifier`
+- `AHSEventLogger.hpp`
+- `SdFault`
+- `rcFnI2frLzIEHh4v2soIbOHTUJo=`
+- `FltL2`
+- `AggregationScheme`
+- `AHSLeela`
+- `qr8QZruIuvQitKyGwXkGhTGA4os=`
+- `clcl-cal-mi`
+- `failed to find deobfuscatedsystemLogLabel`
+- `site.AHSTemperaturePowerSMCReporter`
+- `IOUserClientDefaultLockingSingleThreadExternalMethod`
+- `PatchFromSysconfig`
+- `xeINgIBfgvI1pK/uy6oBrh6qojY=`
+- `ahs_armf_debug`
+- `/2++aSoFZssA6dyKvC9qiwiAdEA=`
+- `75M9my8K7GvgD7hKW/JQkNoL2GM=`
+- `qQvycklpf3lJCn7Ts1kJ+owLuHg=`
+- `AHSAggregatedSessionEvent`
+- `error`
+- `Emp`
+- `CoreAnalyticsHub`
+- `failed to prepare load firmware request`
+- `iPktG2sMlOMYrf/aNXkphWCMpec=`
+- `5ZkjPSEl5c9LjpiMW5e4YR/3VWA=`
+- `StaPT`
+- `bounded_ptr<T>::operator->: Accessing a member through this pointer would access memory outside of the bounds set originally`
+- `site.AHSFunctionNotifyWatchdogOccurred`
+- `esVBTgEsY58uIrONZA+fPktqt1I=`
+- `commandAPMax`
+- `iYxILEDNr1KcuDoop6JTb4uh4C0=`
+- `sC4wgTAzfrIn9LBOayPzxdux5a4=`
+- `%s::%s cal loading failure reason: %s\n`
+- `calculatedPositionFault`
+- `L1Zab3/dyCreY17gb4dY75nxbtc=`
+- `e5ouUJAiNN15s3qyAldEI1WeD40=`
+- `_createAKCIWriteRequest`
+- `preparePatchCacheRequest`
+- `unsupported symbol type`
+- `3u65DrQvYloPQEuTN5ofif4YXXo=`
+- `8Mgnsz2ONlt5LfAhPCjcfAhHrMw=`
+- `FltHRH`
+- `L1Fault`
+- `Mean`
+- `e9p4bLO3SXXy4pMyMNz0MHSL5ro=`
+- `12111122`
+- `%s::%s falling back to voltage passthrough\n`
+- `error creating the write request`
+- `speakerAttenuationFault`
+- `%s::%s unable to parse version string\n`
+- `zDc+n4xy1jkpvo3mAcn2M0s83as=`
+- `K+aGPQlleV2JWrCVosXiB92SnJc=`
+- `SWT`
+- `FltOZ`
+- `hapticAssetsDownloadCallback`
+- `sUhnjM6odC4eshHlTF5/PKLcgd0=`
+- `cDPpD83aFp0vXQjaF1B7DF21ICk=`
+- `site.AHSLeelaPhone`
+- `StaDB`
+- `sysconfig description not found at path`
+- `createCAPublisher`
+- `missing chunk symbol mapping info`
+- `no client request`
+- `missing symbol: `
+- `ValidateSysconfig`
+- `6MTA9Tpabbjcov9Zs9JchREX2NA=`
+- `UBGZNrOGokrPWCvP0wPZh8r7Q3g=`
+- `symbol value not dictionary`
+- `missing VersionToPathMap`
+- `no table entry for `
+- `aR08FlvQv+7SRbOq61JQODSDb9g=`
+- `symtab entry not found`
+- `no bins`
+- `repeatedHESDataFault`
+- `OaIlcUUGABPW/IXECKK+MoqsruE=`
+- `FltL0`
+- `faults detected: L0Fault`
+- `MemoryAndBinary`
+- `ModuleSerial`
+- `CurrentPower1s`
+- `AHSTemperaturePowerSMCReporter::%s SMC Service is not available in this product!\n`
+- `failed to create IOReporter publisher`
+- `Data`
+- `iCgpwvlBGeX3kvZh2JGZZGYJFPw=`
+- `U5s6ILV/e3bnQs1CLXegNQOPNLE=`
+- `active`
+- `OzCrbxKFd7spIMABCfWYaBPxcHk=`
+- `setAveragePowerBudgetRange`
+- `FirmwareBinaryOriginal`
+- `BPFault`
+- `PT`
+- `SAFault`
+- `%s::%s %s: %s\n`
+- `1212`
+- `3CUwzgkdcNnus3w3J8SS7vHwGtU=`
+- `1222222`
+- `failed to create sysconfig iterator`
+- `unable to init constants`
+- `FltAI`
+- `TotalTime`
+- `attemptFirmwareSetup`
+- `site.AppleHapticsSupportLEAP`
+- `char`
+- `pMVjfxtNA0x3SJgE3Gn/fAS+dn4=`
+- `FltL1`
+- `%s::%s param3 OSData word count = %zu, expected >= 2\n`
+- `Ya/PvlaDRwE2f/2JxNQO4H2ksDc=`
+- `failed to create HID temperature reporter`
+- `100 ms`
+- `IOUserClientDefaultLockingSetProperties`
+- `KdG5VjbCDuQuC5lqvEPgvsa1ocM=`
+- `%s::%s Cal data size mismatch\n`
+- `U1Om5UR3wLYMET9CpcBiMGhigLM=`
+- `failed to read symbol from live memory: `
+- `ActCount`
+- `debug flag set to ignore AHSFunctionSetAveragePowerBudget\n`
+- `AppleAOPAudioDeviceNode`
+- `D0zPWhl4Ahh11tOiXCjLoe2JmH8=`
+- `AHSLeelaEnergyUsedAccumulator`
+- `StaTp`
+- `No suitable coefficients`
+- `setPeakPowerBudget`
+- `The offset of the pointer inside its valid memory range can't be represented using int32_t`
+- `site.AHSLeelaEnergyUsedAccumulator`
+- `KHbMqOf+cmXGhxpzMoXbuQ725LU=`
+- `GB5RPbWlxnDlnz1iv+Ea6vdPR10=`
+- `faults detected: InFault`
+- `FltHRL`
+- `faults detected: SAFault`
+- `site.AppleHapticsSupport`
+- `AHSCommandQueue`
+- `amp2bpeIstL3Fault`
+- `%s::%s error executing boot actions; falling back to unpatched firmware`
+- `%s::%s unable to add event source\n`
+- `isSoftwareThrottled`
+- `missing auxiliary boot actions`
+- `minGain`
+- `AHSFunctionSetHapticDebugChannels`
+- `czklrql/sTGp9UeuZs0ppl9YesA=`
+- `Begin`
+- `amp2Err`
+- `Max`
+- `TimeStampsMs`
+- `IOUserClientDefaultLocking`
+- `missing sysconfig description cache`
+- `Failed checksum verification`
+- `PowerSav`
+- `failed to obtain endpoint publishers`
+- `patchData`
+- `wSsyoMwXs/iQnHbXsb/mwyhQC9Q=`
+- `ACFault`
+- `amp2bpeIstL2Fault`
+- `Values`
+- `pvKK3P8dgk6tkdZc5VyUfQig110=`
+- `IdlPerce`
+- `faults detected: PLFault`
+- `isCTEOutOfRange`
+- `Ncxh4McPKC+0h7UUvN1oqsysvP0=`
+- `Symbols`
+- `No major version view found`
+- `i16`
+- `%s `
+- `error processing source data`
+- `f32`
+- `28zKf0Y44jbE71bLbcB+/Df3ggo=`
+- `MemoryAndCache`
+- `Haptic.`
+- `MinimumSupportedBatteryBudget1ms`
+- `DescribeSysconfig`
+- `ampOpenCircuitFault`
+- `isEmpty`
+- `1212121`
+- `site.AppleHapticsSupportUserClient`
+- `initialOffset_nm`
+- `unable to create patch cache request`
+- `z/rU904RZZCICdPkCvS36t8r9kU=`
+- `SrzSo8MkxunEwxu/wr0nP9ppoUM=`
+- `Symbol`
+- `activity latency`
+- `position velocity max`
+- `Major/Field`
+- `%s::%s failed\n`
+- `setPowerBudget`
+- `restore`
+- `qia3KZmjGaJML9HI88/IlhydVUA=`
+- `KRWU7VxpjMsKjEQDAxIfrBpmObo=`
+- `QJN8a3OWaUdLdAeIhF+zfvZED9A=`
+- `max temp cte`
+- `12122222222222222212121212212222222222222222222222222111111111`
+- `%s::%s error key: %s\n`
+- `failed to send request`
+- `No expected magic value found`
+- `loggedP3cCompressionGainMin`
+- `debug flag set to ignore AHSFunctionSetPeakPowerBudget\n`
+- `parkingPower_uW`
+- `site.AHSSessionEvent`
+- `121111111211111111`
+- `jCQIRSykKM3D7njBsJqzRzUCUKg=`
+- `AZFault`
+- `rWleubv2gQBu2YVAEJNEV1Syp9g=`
+- `site.AHSSymbols`
+- `getSysconfigBlob`
+- `Sysconfig size did not match what was expected`
+- `vmveTcxERBbNj1oDDyeKFPmL3jw=`
+- `faults detected: BPFault`
+- `AHSCal`
+- `KVTxlWUtmIOqk7ylcf73oX9IV3E=`
+- `AHSPowerInterface`
+- `lnkRQ7tTF8/ckXtuz7CGr81yneY=`
+- `IVDOiTylenRopheYlWkhGepQmZI=`
+- `CCal`
+- `failed to process session stop symbols`
+- `_readLiveSymbols`
+- `tMI7Hza8bYgw59phYWSd11wD6hU=`
+- `FltL3`
+- `unable to create read metadata`
+- `site.AHSFirmwareReadyNotifier`
+- `6DJY/KriUHcz2sjMckFEtLe0PCc=`
+- `YbLVUSnv+hO+Tte/emKnkfceQGU=`
+- `max`
+- `%s::%s session unexpectedly ended while not polling`
+- `faults detected: HRHFault`
+- `PatchFromCoefficients`
+- `jZx3R4r9uv/QMWWntcRUdVddWdw=`
+- `throttling gain min`
+- `callFunction`
+- `Coefficients`
+- `CoreAnalytics Event generated by AppleHapticsSupport exceeds maximum size. Size of event: %u\n`
+- `AppleSMC`
+- `faults detected: AIFault`
+- `unable to create address`
+- `MaximumSupportedBatteryBudget1ms`
+- `failed to create timer event source`
+- `source data cannot be viewed`
+- `failed to create published sysconfig dict`
+- `u16`
+- `Q7q/iGtrk8V0p7L7GRBs4o000z8=`
+- `maxSlew`
+- `missing boot actions`
+- `srPvrNoeuieh43gGFqkrlWPDOlk=`
+- `%s %s`
+- `LPg3PQVJMIJyV6d/Olc0m6K4ONs=`
+- `phPe8qGEd3H/QLVu2Jqbgm3D7RM=`
+- `pKgxpQnhrEXseDB9CBA3ZFevW2I=`
+- `failed to get request result`
+- `failed to unserialize haptic assets`
+- `ylvdwOgBAwuGQ1LFGeXL7qYgoSE=`
+- `Length`
+- `faults detected: RAFault`
+- `maxPowerError100ms_mW`
+- `CoefficientsKey`
+- `faults detected: TSFault`
+- `zRy6P1Mfkjgi0bWfOyib1lPSTtk=`
+- `9LjPiYxkq8JnkYxQkapyPJBuFpo=`
+- `missing source view`
+- `/CtmZRmd6P5epoOhlISPts/WtFs=`
+- `FltIB`
+- `parkingVoltage_uV`
+- `inactive`
+- `No major field found`
+- `version cannot be viewed`
+- `ceGzb8khRh8CjbP7RFmYCb86tYU=`
+- `bad checksum`
+- `BitDepth`
+- `KwM8Ztno1mLlLgtrZtXr4cMIV4s=`
+- `ZoDwMMj6A2Vfy1UDom24oAlqVD8=`
+- `hallResistanceLowFault`
+- `Failed to find original and fallback calibration data`
+- `site.AHSFunctionSetPeakPowerBudget`
+- `failed to create System Log publisher`
+- `4reNIbV/kI45iBxsoPcgGlWUuy8=`
+- `StaMG`
+- `TNuTnvtd/ADiXv4+HnsbEiUN2D0=`
+- `12`
+- `%s::%s segment entries %zu and %zu overlap\n`
+- `failed to append publisher`
+- `error publishing session end symbols`
+- `site.AHSPowerInterface`
+- `too many data sources`
+- `Value`
+- `IOUserClientEntitlements`
+- `no memory`
+- `missing path `
+- ` @%s:%d`
+- `HapticAssetsSent`
+- `0ieudJIV9JJgRXlTKF0OAPztFAQ=`
+- `121111121222121212221111`
+- `couldn't create firmware setup objects and select coefficients`
+- `gBJ8GdN6NIrz6PeuXK/trqsO61U=`
+- `eD6M2wAcbNrf5u062ATYEhAqCYk=`
+- `amp2bpeIstL1Fault`
+- `isTemperatureThrottled`
+- `PP`
+- `thermal-budget-range`
+- `Minor/Field`
+- `rUyX125FroLuGFlCbhGwvVSZtzM=`
+- `q06zqWRkW6gZ6VfkgDNH/hvjVhg=`
+- `unable to allocate iterator`
+- `u8`
+- `iZ2ocXqbaojyjw1eB5u+ap68YC0=`
+- `isCalibrationMismatched`
+- `couldn't create provider property name`
+- `ValidateMagic/Magic/Field`
+- `Version/Source`
+- `HRLFault`
+- `LTwbCYkCmpwMRaZY1fl8p19drRE=`
+- `EPFault`
+- `lpmc`
+- `A0b8+LBwZFVOkqA2AjkIlZ/x/t8=`
+- `%s::%s segmap footer version=%u does not match expected=%u\n`
+- `activeTime_ms_accumulated`
+- `idleTime_ms_accumulated`
+- `copySystemCalData`
+- `%s::%s error: %s\n`
+- `debug flag set to ignore AHSFunctionNotifySessionChange\n`
+- `evy/mc67tDkwggyFuKCzC52XdlU=`
+- `integer`
+- `aXLArFce0XlZOsPHhxsqU5950Ys=`
+- `missing symbol type`
+- `bounded_ptr<T>::operator+=(n): Adding the specified number of bytes to the offset representing the current position would overflow.`
+- `1eM1Ykd7VaiJ3n6M1n4GZiXJ6uM=`
+- `7Af34P1HkjFjTK58053kR27Aps4=`
+- `empty`
+- `ccal-cal`
+- `readLiveSymbolAs`
+- `DebugChannelMap`
+- `WKnDhFudYSwlvApvH8UYIURVaho=`
+- `PTFault`
+- `couldn't create provider fallback property name`
+- `handleSessionBeganInWorkLoop`
+- `begin`
+- `failed to get number for key`
+- `01l9SFj5PwAlP/bzIumnSkez33U=`
+- `34KkLa0haOq1pVok+UA+ADUGLx8=`
+- `initReporter`
+- `site.AHSEventCollection`
+- `peakCount_dividedBy_duration_s`
+- `powerSaved_uJ`
+- `failed to prepare patch cache request`
+- `could not create context restorer`
+- `5mCXF2njQKlAARwJg1CdJVzPQhQ=`
+- `bstErr`
+- `_maybeWriteLiveSymbolsInWorkloop`
+- `couldn't build patches`
+- `error patching from sysconfig`
+- `qVVMx1setGYTKYGaRfkNDrJIUBo=`
+- `faults detected: FFFault`
+- `RP5YptDbsn0ZqNQDB1r9fkSVJss=`
+- `executePatchFromSysconfig`
+- `6Oy2VSfLTKo+8/+kNKULk3Kb/4Q=`
+- `tcal-cal`
+- `bad size`
+- `f8IM1EP2dO4+fZ8kRVhWOBFoa+4=`
+- `loggedCalculatedF0`
+- `SampleRate`
+- `failed to ensure AHSActiveSessionEvent`
+- `%s::%s binary length=%u does not match expected=%zu\n`
+- `SystemLogLabel`
+- `EventFieldEnableSymbolName`
+- `AHSTemperaturePowerSMCReporter::%s Failed to get SMC driver!\n`
+- `AHSCoreAnalyticsPublisher`
+- `%s::%s negative offset\n`
+- `No sysconfig key found in field`
+- `3mnbtm1yHF8KLhMtRHookDtk5Zk=`
+- `FltFF`
+- `failed to ensure aggregated session event`
+- `aggregation_duration_ms`
+- `ozbwgOP/Nd305RBvYQuiqDKh4hs=`
+- `/u0Uv112UMjZFPGgQydXcTy6yCI=`
+- `unable to create AKCI write request`
+- `ResourceID`
+- `site.AHSFunctionNotifySessionChange`
+- `debug flag set to ignore AHSFunctionSetHapticDebugChannels\n`
+- `SymbolTable`
+- `2QJ15oKgxf5yeGGLKUiNDdMqQfc=`
+- `%s::%s unable to allocate space for segmap entries\n`
+- `SoSjQbJepRaXfALymylvIS/PP74=`
+- `g7XezomSvkL6KROIKuOTz4GEpGo=`
+- `ykPvhCjbxNtNPTkzmImZ3qLJKJY=`
+- `U2Q8o9/BeyVU9H9YdraGwA7pCi0=`
+- `3wvpYPNcyw8jjezTm5aFXpxqQpc=`
+- `failed to initialize CA publisher`
+- `bad version`
+- `PostSilence`
+- `K5BHjv3Rg2/cQdNloeKbMYgfnuc=`
+- `unsupported boot action key`
+- `ZPrmvoZxmvN3ccB4j0b3lyXNts4=`
+- `%s::%s sort failure or symbols overlap\n`
+- `_createChunkMetaData`
+- `\"%s\" @%s:%d`
+- `faults detected: ASFault`
+- `AHSFirmwareReadyNotifier`
+- `false`
+- `SPlG1g6hcRM7tAqMmPW/FvjZ3Gc=`
+- `UM28K98pDv6Fs1QXBRBqlNRSgHk=`
+- `AHSSystemLogPublisher`
+- `faults detected: HRLFault`
+- `UZ/wZ43lMo9pVS26jTdYSjWZlGY=`
+- `8GLF4u7NU2KUYbiy095E42EhGSs=`
+- `FltRA`
+- `PLFault`
+- `site.AHSLeelaSymbols`
+- `Fchb4VaIQvM2QNXb7Rspgpt/qvE=`
+- `MTFault`
+- `ampInterruptStatusSticky`
+- `bad magic`
+- `%s::%s not ready to set power budget, no AKCI\n`
+- `3Ape2hyGp21TbqJtwPgiNmWadBU=`
+- `ng4jxkj0vz50hNDMYYtCnCJX/dc=`
+- `invalid event field type`
+- `Source`
+- `handleNewFW`
+- `HapticsFirmware/SymbolTable`
+- `GAG0mDk6VHYO07W+pruSTAs3bBM=`
+- `12111112122212121222112112121112221111111112221`
+- `unable to create AKCI read request`
+- `unable to setup FW specific policies`
+- `site.AHSLeelaPhoneCal`
+- `ACilYuouP2Tp3DSpLzyqj2Cqs/U=`
+- `FltAS`
+- `createIOReporterPublisher`
+- `slice does not fit in chunk data`
+- `Fp/bdSfn0YhtozPQgcKlO4uOeS8=`
+- `T`
+- `Dp/EOthGvqXcnWE9LE0fhz0++Ck=`
+- `live temperature invalid`
+- `TDMax`
+- `sysconfig description cache not found`
+- `Coefficients-`
+- `PJMqAftfv5NWY8LlQDTcowYJFro=`
+- `haptic enable assert time`
+- `energy_uJ_dividedBy_duration_s`
+- `FltPT`
+- `GpUoEA5ajQDAolC+wnKD2OSRKkY=`
+- `unable to allocate coeffs`
+- `65/Ji8jTzZjY87l60ohZ21vVkUc=`
+- `oXVWFu51/PbnGNIz04J0b2/L5sc=`
+- `AHSStart`
+- `No minor version view found`
+- `HapticsFirmware/HapticsBootActions`
+- `site.AHSCal`
+- `AHSFunctionNotifyWatchdogOccurred`
+- `deriveFWFeatures`
+- `no memory for value dictionary`
+- `3Ap1N4TYHWWAoSRhF+EYgCE6Pg4=`
+- `qGRTuPYEsnRTxdVfyKubuluVY2w=`
+- `12111112122212121`
+- `executeDescribeSysconfig`
+- `firmware root missing kFirmwareKey`
+- `hnMW/FLnQFEnBhmVaVwvf7FXNzw=`
+- `minTARNDepth`
+- `debug flag set to ignore AHSFunctionSetTravelScaler\n`
+- `3+ZIdPpJFIeYgCzpa5QU0lwLOZQ=`
+- `%s %s\n`
+- `PSClVersion`
+- `com.apple.ahs.userclientaccess`
+- `L46Pua042B0t88QkHKvVBg2Vqdk=`
+- `com.apple.hid.haptics.session`
+- `failed to write symbols`
+- `patchRegPost`
+- `initHapticAssetsSupport`
+- `ZqxK6HQeXdAjoGIN3+hbxh461Ck=`
+- `couldn't patch`
+- `7+nviHbNnmz9SqwVZh8oOjejxv8=`
+- `FltCP`
+- `failed to create FUD nub`
+- `start`
+- `nFuotbWoW2whs7G8bBnGbB8x/8k=`
+- `ltSmrPyZJYuTl26Q08fe6xOgiLo=`
+- `86p6oWsv00eeZgqh5u1BFEPI2d0=`
+- `2EPLdgy99DckOduwRNTA+RKRanQ=`
+- `failed to process AKCI read results`
+- `AHSActiveSessionEvent`
+- `%s::%s %s is missing %s key\n`
+- `failed to initialize syslog publisher`
+- `9f6xbDuXRT0COzE9flHK3yOrU0I=`
+- `4H5/3FBc0F8NprELnTFXuFXZbUY=`
+- `HapticsAudioInterfaceType`
+- `clcl-cal`
+- `missing`
+- `AKCIFound`
+- `AppleHapticsSupportLEAP`
+- `No checksum field found`
+- `%s::%s not ready to send AKCI request (no request)\n`
+- `ahs_debug`
+- `Driver-specific firmware handling failed`
+- `findSMCDevice`
+- `IOReporterChannelId`
+- `faults detected: BZFault`
+- `MinimumSupportedBatteryBudget100ms`
+- `unknown`
+- `end`
+- `SourceView.hpp`
+- `Vv0bq5BKbLeaDPsayRPXEM/w8z0=`
+- `missing symbol table`
+- `1211112`
+- `%s::%s %s`
+- `IOReporterChannelName`
+- `%s::%s failed to find FW ready nub`
+- `unable to set stride`
+- `%s::%s %s\n`
+- `prepareFirmwareSetupRequests`
+- `mLEpXpqGtzDuhD+uhF4d9CYfzMs=`
+- `ozK1lZ004642CIptRzJS/sO/Bas=`
+- `fu4QSv9zWRG3kEmdmZAUOJYU7R4=`
+- `FltTS`
+- `MGC`
+- `TDMin`
+- `couldn't determine fallback path`
+- `bounded_array_ref: Can't construct from a size greater than UINT32_MAX`
+- `8Pk/bv2t9TM3x3IfprGqscIPCqo=`
+- `maxTempHall`
+- `minTempCTE`
+- `CCh9t8rXv0zp3nkwGmBh7X/It8U=`
+- `12111`
+- `AHSPowerInterfaceUserClient`
+- `sr2lpFj6jSkD9rdyhOF6BZU+j7I=`
+- `FltMT`
+- `Stride`
+- `repeatedAmpDataFault`
+- `SDIgaQEfO1ev6FTsFXXk8215YOw=`
+- `Firmware setup failed`
+- `boolean value from symbol is invalid`
+- `%s::%s %s is missing from symbol table\n`
+- `executeValidateSysconfig`
+- `HapticsBootActions`
+- `VdzNSkPz17NRWtO9IBJHS3yioCA=`
+- `I2KASknM6zgCTb88aWnUILK+eWE=`
+- `Tq9dZJqDV3YA/MxlhObI9E9NOpQ=`
+- `min`
+- `FltEP`
+- `estimatedPositionFault`
+- `JREY614guy0KWtO1IKWCgFEBeys=`
+- `Granules`
+- `failed to create aggregated analytics timer`
+- `AFGD3ViW5A3a0ENt0hFP575lhyo=`
+- `MSMed`
+- `faults detected: OCFault`
+- `lbkgpDFMwIS8qGT84n6gvqIFATk=`
+- `processSessionStopSymbols`
+- `AppleHapticsSupportTemperatureReporter`
+- `runAction`
+- `1211111212221212111111111111`
+- `f64`
+- `FltPL`
+- `FirmwareSetUp`
+- `callPlatformFunction`
+- `MajorDotMinorToPathMap`
+- `fkzkTrZcMTFY4b2OcoWmV8UActs=`
+- `unsupported version`
+- `AHSFunctionNotifySessionChange`
+- `Unable to find matching coeff bin`
+- `m///eUJbe5rW+Ayw/QTqjovJ7HQ=`
+- `3fGpa2v9jF25oYoFacL8H7fiBb4=`
+- `AHSSessionEvent`
+- `site.AHSActiveSessionEvent`
+- `RAFault`
+- `ContextRestoreValues`
+- `3O0xJZH4aX/r5MzGPXw07m5mMno=`
+- `_createAKCIReadRequests`
+- `38Tbn6fwq6GxH1fn61j0qMGTeMI=`
+- `failed to read symbols`
+- `Type`
+- `VersionToPathMap`
+- `%s::%s name=%s, value=0x%08X, loadAddress=0x%08X, fileOffset=0x%08X, segmapLoadAddress=0x%08X, segmapFileOffset=0x%08X, segmapFileSize=0x%08X\n`
+- `missing field name`
+- `OCFault`
+- `11`
+- `ccal-cal-mi`
+- `f0_max`
+- `AppleHapticsSupportUserClient`
+- `121211`
+- `tgpavmkSYIxqZ7A8WxYoseO9MY8=`
+- `H+2Op/KYavv6UUoCMk4jIfc/X+4=`
+- `oSGcr2r5b9dREVC0jy4FTdlTnhI=`
+- `MG`
+- `AHSFunctionSetAveragePowerBudget`
+- `failed to find sysconfig key in sysconfig description cache`
+- `%s::%s %s%s`
+- `Mk/Nhk15aKzNOwEHOIG8D2ESqZ0=`
+- `FltBR`
+- `energy_uJ_accumulated`
+- `faults detected: MTFault`
+- `_writeSymbolsImpl`
+- `endpoint publishers not found`
+- `shutdownFault`
+- `%s::%s - Defaulting to old CPMS Plumbing Interface\n`
+- `TSFault`
+- `audioSaturationFault`
+- `unable to set type`
+- `stopped`
+- `audio-haptic`
+- `HP7PsMWYDbcCE6Erlt0GO9W7/vc=`
+- `sL/W6KwZy92Igfun8mZ1dkXwd4M=`
+- `qrZ3twReAvam3Vg0dlMBlcuDc8Q=`
+- `AccumEnergy`
+- `no suitable sysconfig path available in firmware`
+- `failed to create published sysconfig dict iterator`
+- `ronTDxUc2qPyRbs59nQU3jqN/PA=`
+- `ikpDxnm/oTC2MaQl2GagQ/d8fEk=`
+- `InFault`
+- `%s::%s Unable to get workloop\n`
+- `site.AHSPublisher`
+- `SPPS`
+- `StaIO`
+- `faults detected: ACFault`
+- `maxParkingAbortVoltage_mV`
+- `speakerAttenuationInvalidFault`
+- `failed to initialize ioreporter publisher`
+- `pscl-cal`
+- `121222222222222222121212122122222222222222222222222221111111111`
+- `Path`
+- `uGVoD/4R4j23KM2atdlhllSWc04=`
+- `unable to create iterator`
+- `failed to create assets iterator`
+- `minPeakPowerBudget_mW`
+- `AhVtd+0FX2KbJmj7YNIEhAfLeXQ=`
+- `1 ms`
+- `Sysconfig`
+- `701Li7uRxl++R4OGLW1S17POvQY=`
+- `minTempHall`
+- `5ugKSV8cy/qLrw7qFOdMonz6sIw=`
+- `initWithOwnerAndFW`
+- `kDBkMN5R9qZArNGAzXDzobEsiGo=`
+- `findSegmentEntryInfo`
+- `%s context restore failed during session %s\n`
+- `CCqC6bsM5Zq2C6w6B7mlFtwH+DQ=`
+- `cuUsG5VgphkotWKwWtAfaXHEYdk=`
+- `site.AHSSegmentFinder`
+- `W/uhPsQVTAoymDHsIK78GWTHCb4=`
+- `maxTempCTE`
+- `AvgPower`
+- `%s::%s Failed to send AKCI %s request\n`
+- `failed to get symbol value`
+- `could not find _aopStatsAggregators or _hapticStatsReporter`
+- `E+VM4JgWjx+h25oojlOWgGMXsDs=`
+- `gi7kyrrlFLNCCmQsoBOG6iC/FEY=`
+- `site.AHSRecurringTimer`
+- `nPp1tjNHYRi1R9qMJmQExL+SuZc=`
+- `FltAZ`
+- `Version`
+- `int`
+- `invalid endpoint found`
+- `VKs5ZTKuIUySuvaV0PhbDfTYu4E=`
+- `8rkNLQMbWCcF0SjSDktB01NvLd8=`
+- `M1v3pjktZAFgINDPW9CMNqJyf6Y=`
+- `extractLegacyCoefficients`
+- `AudioResourceManagerInterface`
+- `FirmwareVersion`
+- `unexpected type`
+- `OSBoundedPtr.h`
+- `missing sysconfig description for sysconfig key`
+- `FltBD`
+- `unable to patch FW binary`
+- `kXjGIlBlnf+0rO+aHwz+wh/MB2A=`
+- `GFwpcRnH71nzv5gK08CKOpkSbHM=`
+- `pscl-cal-mi`
+- `BaUysCvUoq5+ylygmLgOAbezxy8=`
+- `%s::%s parking timeout detected\n`
+- `site.AHSIOReporterPublisher`
+- `temperature max`
+- `unable to create chunk metadata`
+- `not ready`
+- `1222221`
+- `121`
+- `site.AHSLeelaPowerEstimator`
+- `SymbolName`
+- `HapticsFirmware`
+- `3btmpLK5AkXCZmzz/A0c2He4HW8=`
+- `site.ClosureInvoker`
+- `\"CoreAnalytics Event generated by AppleHapticsSupport exceeds maximum size\" @%s:%d`
+- `handleTimeout`
+- `EventFieldName`
+- `unable to allocate space for patched binary`
+- `KGsxe9c3HdC0ox6RXYdikqd7cYk=`
+- `CrPTh`
+- `FltSd`
+- `amp2ShortErr`
+- `1zDr395X3N03YeT57aC0RTm9LxM=`
+- `jX909DZYXMXdduKrfhgpEkUu65M=`
+- `DB`
+- `initialBiasFault`
+- `qPQ6eqpC9Iz+w50YhK2vQvlctpQ=`
+- `site.AHSInteger`
+- `com.apple.ahs.poweruserclientaccess`
+- `energy_uJ`
+- `HRHFault`
+- `count is too large`
+- `IOReporterReportingScheme`
+- `sessionCount`
+- `failed to create power estimator`
+- `121221112`
+- `UrCIB1s1ngE8Mz0SS+CL1yz4/5o=`
+- `unsupported patch info`
+- `unknown error`
+- `failed to get IOReporting parameters`
+- `AHSEventCollection`
+- `JalaDBji3w0O0e8jHOfYdGLOxAM=`
+- `missing assets array`
+- `position displacement max`
+- `temperature_mDegC`
+- `MNPaBH6wjQNs6WFKUhD2B3slYBQ=`
+- `CrAct`
+- `L0Fault`
+- `minTempDiffCTEHall`
+- `0GX9Gk7QauHYTP3qLzAHjNy3mLI=`
+- `FirmwareFeatures`
+- `faults detected: CPFault`
+- `Si/UMuLQD3JwZH5zKV2G3Ki2KmQ=`
+- `site.AHSFunctionSetHapticDebugChannels`
+- `failed to create SMC thermal reporter`
+- `jPNz+hQp0qtTd/Dc4ivQg090sPo=`
+- `FltBP`
+- `L3Fault`
+- `faults detected: AZFault`
+- `coefficients-version`
+- `Firmware object is not a dictionary`
+- `symbols to read at session end doesn't exist`
+- `amendFirmwarePatches`
+- `unsupported sysconfig version `
+- `failed to create published sysconfig`
+- `onCwrMLWg0n0ywVPAxmQU8F0Tdk=`
+- `-`
+- `oPtvDZXSuof5J1XfjGAGv+gfPO4=`
+- `AHSSymbols`
+- `AHSTemperatureReporter`
+- `The range of valid memory is too large to be represented by this type, or [begin, end) is not a well-formed range`
+- `count-rate`
+- `RLKFe+tH2BCeW80A+TS0lk09f78=`
+- `Count`
+- `9YET88++gVp/qFrhfslR/0NCyoo=`
+- `POSvaH5X6V18s5UfHNy+aPy0sPw=`
+- `LnxnxuLADbzKO7dd4sGevOsp04o=`
+- `updateReport`
+- `site.AHSPowerInterfaceUserClient`
+- `weightedAmplitude`
+- `yxQbsJ1PmAUdRmcpqMZBMQ9xFWw=`
+- `yXgm9N0vI9/Faij0xWpZ0XDp+7o=`
+- `faults detected: PTFault`
+- `values must be non-null`
+- `chunk info is missing granules`
+- `n82pscksp0KImirozOkjRGvBNqk=`
+- `coefficients could not be selected`
+- `jXkeewWS/gn1FnFDB/Kalh0En9Q=`
+- `MSHigh`
+- `MatchingCoeffBinIndex`
+- `faults detected: RHFault`
+- `gSKkf2kr9T8nsYHaHczupNoLnvg=`
+- `CalLoadingFailureReason`
+- `bounded_ptr<T>::operator+=(n): Calculating the number of bytes to add to the offset (n * sizeof(T)) would trigger an overflow`
+- `1211`
+- `FirmwarePatchesTransformedForCache`
+- `ASFault`
+- `OZFault`
+- `minP3CCompressionGain`
+- `f+feF6qvdPhHIqZ11gdHdX22j9Q=`
+- `o53T8vaEljp83Nm08CfmOIvBGKs=`
+- `AppleHapticsAudioInterface`
+- `xACsGS4jB9cYbyN92hQeEFCgKu8=`
+- `AHSRecurringTimer`
+- `AHSEventLogger`
+- `energy used (uJ)`
+- `41hf8JkVKe3eYsqkOotzEe6+QrY=`
+- `Min`
+- `setup error`
+- `couldn't lower sysconfig key string`
+- `FFFault`
+- `integratorFault`
+- `maxTARNDepth`
+- `ViN6g47gRztVtXeEs3vxeGYm43k=`
+- `error patching coefficients`
+- `PSCl`
+- `PreSilence`
+- `symbol data missing from read: `
+- `no memory for iterator`
+- `forced unpatched firmware fallback debug flag enabled`
+- `RHFault`
+- `3uL6/6woNOSIi75Xn3gOsV/A7lE=`
+- `8sG4wZzd3FA4rpRUtRnJoRWeQc4=`
+- `WatchdogOccurred`
+- `FirmwareReadyTimestamp`
+- `AHSSegmentFinder`
+- `7vsxD7LwpgQ6scx6fY8pGqmiWCA=`
+- `yPQs+ykkX3Lue30oFLh2J7fuORc=`
+- `IOUserClientClass`
+- `site.T`
+- `txkSl8WINIB2fcqP+vMXp2UjScE=`
+- `parkingTimeoutFault`
+- `setAveragePowerBudget`
+- `failed to create IOReporters`
+- `no symbol table`
+- `energySaved_uJ_accumulated`
+- `minGainCompression`
+- `unable to allocate results`
+- `array`
+- `lrQmFcE8CgnBptKb9IuIVAeOhUs=`
+- `EkQGyoTdckeGJHXcUmo2bcYYqZI=`
+- `maybeSendAKCIRequest`
+- `bad datatype`
+- `121211222121`
+- `logHapticsStoppedStatistics`
+- `activeTime_ms_dividedBy_duration_s`
+- `invalid regpost binary slice`
+- `no suitable coefficients available in firmware`
+- `AppleHapticsSupport`
+- `unable to set length`
+- `missing version string`
+- `%d`
+- `couldn't set sourceViewData on dataByFieldName dictionary`
+- `failed to log aggregated session event`
+- `tcal-cal-mi`
+- `dict doesn't contain fw binary`
+- `AKCIAudioResourceManagerFound`
+- `6BOTMrczgEi4UKFcTdZcUqb50Cw=`
+- `getTemperatureCelsius`
+- `initConstants`
+- `HapticsCoefficients`
+- `No name found in field`
+- `OKUquNBKXJ9q5U9CQu1ar5aCsgY=`
+- `f1KeY0na9nqdqWAWNPTeWghMZ4U=`
+- `dynamicBias_nm`
+- `initEventSources`
+- `couldn't build value dictionary`
+- `stats-aggregation`
+- `executeBootActions`
+- `QU3h/9DUGMFnWohnYVr8vF8zjhM=`
+- `FltRH`
+- `unable to create sorted array`
+- `pWu5ujpAuvbZ83PXk0w9jQ6l5wk=`
+- `no symbol values provided`
+- `hallResistanceHighFault`
+- `BtVKDWt59S/Xvc2u0PaMvLW8jgQ=`
+- `CrTTh`
+- `lpf2MZtltKQ3gR+BKeoEcJ6QueU=`
+- `AHSLeelaPhoneCal`
+- `fVkIwI6iTpSwFBW1EisZnneWP60=`
+- `%s::%s %s value is neither an OSNumber or OSData\n`
+- `kFirmwareKey dict doesn't contain kFirmwareBinaryKey`
+- `ddOA6oU5l9Zvx5NQHpDstfzqMqM=`
+- `I/6k12TogBrB7wiFA+JnQDqFRAM=`
+- `No minor field found`
+- `trackingError`
+- `dOWN6RlzY6SU6hgRqXdBkq3nYpE=`
+- `LfPL1f8hWc1LZRdb3FICHd1yWXQ=`
+- `MaximumSupportedBatteryBudget100ms`
+- `Failed to enqueue work`
+- `Unknown`
+- `ZBrfOSK2XRW8wsZN0gUtuYX1Uck=`
+- `DuRU5jI8AxJXRjwcsznBMP3Rs7o=`
+- `duration_ms_accumulated`
+- `mjl9HRXWiW9AQs0C3T+1bTowORU=`
+- `failed to populate legacy endpoint publishers`
+- `unable to find coefficients`
+- `Field`
+- `%s::%s failed to send AKCI request: IOReturn = 0x%08X\n`
+- `one of the write requests failed`
+- `J5PgqWCpcHydiBialwQseOIQiCU=`
+- `unsupported channel`
+- `attempted activity count`
+- `Name`
+- `endpoint publishers is null`
+- `vWK+dSGN9sUIOzNCMbhuE85AeZs=`
+- `effectiveFullAmplitudeCycle`
+- `1`
+- `%s::%s unable to find matching segment entry for load_address=0x%x, length=%u\n`
+- `executePatchFromCoefficients`
+- `m51DQcZED/REu16cPmh7b3kpEQM=`
+- `Controller version value missing`
+- `teCCQC3xd1G8AGIadX+kIwPAklk=`
+- `8eUXFfosy/j10+l/c2fH6IuCdtk=`
+- `idleTime_ms`
+- `insufficient regpost entries remaining`
+- `6eYY0/MmCL+qM7F/64kbLfY9cnI=`
+- `FltBZ`
+- `ttMH6SmYHVbWtJ8AKZgmowVAw6U=`
+- `regpre`
+- `IO`
+- `ftc`
+- `dynamicBiasFault`
+- `%s::%s failed to write asset symbols\n`
+- `%s::%s unable to find matching regpost entry for load_address=0x%x, length=%u\n`
+- `-cal`
+- `ModuleF0`
+- `failed to read live status bits`
+- `Size`
+- `En/J/8nDK9cc0i56AnmNFaG69tA=`
+- `A7F04aE480GNZ8wu7Y7OATtQoB8=`
+- `StaDM`
+- `activityCount_accumulated`
+- `isSWPowerThrottlingActive`
+- `mixedTrajectoryFault`
+- `%s::%s not ready to send AKCI request (no AKCI nub)\n`
+- `/whaPas6+h0ZLJhTQcEyE4isPNs=`
+- `ReferenceOnly`
+- `%s::%s patching would clobber next segment\n`
+- `createFirmwareSetupObjectsAndSelectCoefficients`
+- `Lf4/RtmDMPu32Ho1QOMyOld7vME=`
+- `CrMSH`
+- `unable to set symbol info`
+- `no symbol names found`
+- `site.AHSAggregatedSessionEvent`
+- `wlnoGQDbmmVfyV1wFuaAnKasliM=`
+- `uxb2rF5Bhfrftq3JqNYfon+LAeA=`
+- `6uSiwgcqn2432kZJ2pK62tVTqQQ=`
+- `stop`
+- `%s::%s param4 (AppleARMFunction**) is null\n`
+- `AHSFunctionBase`
+- `XrqTdj5ra2oUIh27jrscQhlF7tM=`
+- `failed to ensure AHSSessionEvent`
+- `VNmjXF2CcAofN8yXrpTR8VGU124=`
+- `TQpoFv+BdAMM9YS7ExUCNr5EFYo=`
+- `StaPV`
+- `xtKvqFX5vCAmCtRH1sMLKrMx0lM=`
+- `yqz0/5GD6dT24eP7sUAP14XFnpA=`
+- `akciAudioResourceManagerFoundHandler`
+- `12111112122212121111111212122`
+- `IdleTimePct`
+- `StaDm`
+- `Unable to find coefficients container`
+- `AuqD9HdMSIMXPD4hXYcWog4bgqg=`
+- `12121122212111111121222222`
+- `121111111`
+- `YvVvb2ehGR+weOEmB/sIkjPGr6U=`
+- `PowT`
+- `accumulation`
+- `FW Version`
+- `com.apple.hid.haptics.activeSession2`
+- `G1iMxafgqwr6rRL3iRneQ+GlqUo=`
+- `site.AHSTemperatureReporter`
+- `FirmwareBinaryPatched`
+- `float`
+- `gYk3fYp7mql9mKgqwUGB6RKykAY=`
+- `faults detected: L1Fault`
+- `xTxIFKq1wPOK+TYEwwlYvajGnBk=`
+- `failed to send AKCI request`
+- `missing data key`
+- `%s::%s failed to create energy used accumulator\n`
+- `too few bytes returned`
+- `AHSInteger`
+- `initWith`
+- `klAsDGGqmWCyYt+uUncW3PZo1Z0=`
+- `gdBWoQSffQZ8XzC8HjSc6iyMVRo=`
+- `AHSTemperaturePowerSMCReporter::%s Failed to cast to AppleSMCFamily!\n`
+- `Unable to find symbol table in FW image`
+- `Failed to create sourceview with checksum field`
+- `%s::%s forcibly falling back to unpatched firmware through debug flag\n`
+- `fEyRCwjchX3LTPXaI3KFj7YUIms=`
+- `kwL1sggfPZMSYFILtaQtuxcFNNY=`
+- `parkingTime_us`
+- `id0`
+- `true`
+- `thermalShutdownFault`
+- `i32`
+- `WIO1cltlM3FmtG/pLe82JXK7cnk=`
+- `%s::%s unsupported ARMFunctionID: 0x%08X\n`
+- `3aGoSjEPPci8w+VNwtX/d9rnl7c=`
+- `1FkiSGGNuWb9lfqYc0tfzO78Dpc=`
+- `BZFault`
+- `StaMS`
+- `Scale`
+- `notifyHapticsSessionChange`
+- `site.AHSFunctionSetTravelScaler`
+- `regpost`
+- `JKLV3d3ad0iHDhkW65FzxFbwD9A=`
+- `vnJ7dD0NMhFwIYbiWuaurmlDeDA=`
+- `WYUCeGGHeBqsTCdE8yCdVoCzPTI=`
+- `FltOC`
+- `f0_min`
+- `Controller version coefficient missing`
+- `UZ9gsO0KW6xvjVUo/xbNHDOsY0U=`
+- `peakCount`
+- `assets validation failed`
+- `AHSLeelaPhone`
+- `6fHu6gW1U5Fc3iuNKQslyMa8lrQ=`
+- `8bYRYFPzVV9E5lhgx4AX4DzAigk=`
+- `com.apple.hid.haptics.aggregatedSession`
+- `Haptics`
+- `setHapticDebugChannels`
+- `112`
+- `createSymbolFileAddressMap`
+- `ValidateMagic/Expected`
+- `F9ghqcaUB5COeR2Ejl5oCVmtCNg=`
+- `version cannot be determined from blob`
+- `Coeffs`
+- `faults detected: BDFault`
+- `highFrequencyFault`
+- `CmdQFill`
+- `End`
+- `wsU9ZpSCFCWKJsqcqEXXrAwX+Oc=`
+- `RO8B/zg0WL6Hn+9ztFVwKpLDqCQ=`
+- `faults detected: L2Fault`
+- `auxiliary boot action key count must be one`
+- `missing coefficients via `
+- `DtwjH/IjameFuv0QcrwLn7Si9+k=`
+- `AHSTemperaturePowerSMCReporter`
+- `ampBrownoutFault`
+- `no endpoints found at path`
+- `7m7+WgWVlb4nRir3GNribegtTSM=`
+- `PEZyioTxjYAyhrnnJTD+06i0arw=`
+- `IBFault`
+- `wsLIsT3Z6ob+ZViS/qkn7HcLUi8=`
+- `qMR3Q5+EQ/+vppa+vr1Qr99rXvA=`
+- `AHSEvent`
+- `AHSIOReporterPublisher`
+- `site.AHSSystemLogPublisher`
+- `expected address mismatch`
+- `createSourceViewWithField`
+- `missing MajorDotMinorToPathMap`
+- `%s::%s unable to create cal derived coeffs\n`
+- `f0Variation`
+- `x904obii5SzLK5wJVODihB+l7bQ=`
+- `MatchingCoeffBinFound`
+- `started`
+- `lNlqfen5ujAE/oCvwMoX2JZxrC0=`
+- `Features`
+- `site.AHSCommandQueue`
+- `PublishSessionEndSymbols`
+- `faults detected: L3Fault`
+- `_readSymbols`
+- `failed to add timer event source`
+- `12112`
+- `/`
+- `Failed magic verification`
+- `ampBpeThrottledFault`
+- `NmuWEMkPo1af2CCSPena/1BntsE=`
+- `publishSysconfig`
+- `%s`
+- `IjRfLwVL8+4OPhzD1DbkZc6XAF8=`
+- `FltIn`
+- `%s::%s unexpected timeout while not polling`
+- `%s::%s queue overflow\n`
+- `activityCount`
+- `zmE2l2Ii7oJOVKqB/usXfXDFwMA=`
+- `MSLow`
+- `failed to read live temperature`
+- `bounded_array_ref: n + m is larger than the size of any bounded_array_ref`
+- `leap`
+- `AFUFWReceived`
+- `Unable to unserialize XML: `
+- `bNxmo8YXa24wcDZRF2TIMdD5N28=`
+- `%s::%s missing required constants in coeffs\n`
+- `Failed to create sourceview with magic field`
+- `MS`
+- `BRFault`
+- `faults detected: OZFault`
+- `AHSFunctionSetTravelScaler`
+- `2kINVgzalp0eM0PjFMxG47Vma+0=`
+- `byiyv6LLj2DSYgqOMwsjzgN2RsQ=`
+- `createCalDerivedCoeffs`
+- `handleSessionEndedInWorkLoop`
+- `event field type not found`
+- `%s::%s failed to find segmap entry\n`
+- `GqZHlDB4C589hL+GI6yluQIQAeo=`
+- `PV`
+- `faults detected: EPFault`
+- `TCalVersion`
+- `12111211112211111111111111111111111111111111111111112`
+- `field not found`
+- `caQhEaHLAotAx8LqNbJWR42LOqk=`
+- `9Ez4kNIvOqIp0KH9FJHTwXjNxMw=`
+- `JW7SuD3dkB/OsdPMNuidkvWoeTI=`
+- `L2Fault`
+- `init`
+- `AIFault`
+- `FltSA`
+- `patch cache`
+- `average`
+- ` `
+- `assets object is not a dict`
+- `AHSLeelaSymbols`
+- `cYTWOQvgv4M0ua0sCZxdAS9BfXw=`
+- `6hK7FPqb1jXKz7eBmPMAsLZO0Ls=`
+- `BootActions`
+- `kscdw4UCj2TyPFF/sI+ZX8zo4Jw=`
+- `YZ8TJMz9ru4xjIpHfllKWJ4Nf+U=`
+- `HapticsFirmware/AuxiliaryBootActions`
+- `p5xqkIaGd21CoMhFgfWQkWUFIg0=`
+- `_readMetaDataCreate`
+- `invalid reporting scheme`
+- `fastFilterConvergenceFault`
+- `peak-power-range`
+- `faults detected: SdFault`
+- `VssKVKccC77D+c38bQqG+CoHsPg=`
+- `ujSgW67X7W1RqPrMji+TMQ3UFpA=`
+- `LsivR3yZANWq+14jMefshy4LY70=`
+- `2paTKzVZcSXl+amCvZwYYQikM+Y=`
+- `Nuf1lIx/I8rTNSDqj0Sl2snItFw=`
+- `XVstXev7K4IY32COfy3klKf+kzA=`
+- `38gSJquC+iAT21cHND4WaVZKYII=`
+- `APZeroSlewFault`
+- `CrMSL`
+- `CrMSM`
+- `identifier`
+- `EventFieldType`
+- `site.AHSCoreAnalyticsPublisher`
+- `activeTime_ms`
+- `createSystemLogPublisher`
+- `DavuNOpMAbs/BBzaoOxjZkqkLFw=`
+- `J5A3eHLHg1w1cCXoERIbIB/Pgy8=`
+- `validateCal`
+- `8mv1IOYHDyk7a1uJL+iGJknnF6U=`
+- `AHSPublisher`
+- `version must be source, not value`
+- `A2FvTzOBxHiBBX2K1iN6jmOY1oU=`
+- `uyOBRYBUGD3cMSotFUXzI5efe88=`
+- `TT`
+- `maxPowerError1ms_mW`
+- `missing debug channel map`
+- `bounded_array_ref: invalid slice provided, the indices are of bounds for the bounded_array_ref`
+- `%s::%s segmap footer magic=0x%08X does not match expected=0x%08X\n`
+- `42n7i/PXvNNDbvh9MjVZfTDzhgk=`
+- `H71FqVED0Np+d7BCHWvuDLfYLS8=`
+- `_processAKCIReadResults`
+- `site.AHSFunctionSetAveragePowerBudget`
+- `minAveragePowerBudget_mW`
+- `raw-accumulation`
+- `getCalPtr`
+- `Rate`
+- `missing required values`
+- `Endpoints`
+- `haptics boot action key count must be one`
+- `RepeatCount`
+- `KgKzpmUxrKPJpycmWHq78GbQqnY=`
+- `YXpSH70W3Ow09e+o7qBJFa3mk8k=`
+- `failed to find symbol name`
+- `5JPQHat+oQVPZwv7p+OxPC6J7xQ=`
+- `load firmware`
+- `unable to set address`
+- `notifyWatchdogOccurred`
+- `t2ML0GITk1qK+nW2GwbLxgKvuOU=`
+- `Offset`
+- `5tPrfK/0Nm87ufn4wAD6vmebtd4=`
+- `kKKPFuBN44QDkcDIT4jb0PdGhDE=`
+- `site.AHSFunctionBase`
+- `uRY2gVPis0iRltIZT2CnjFprgH0=`
+- `%s::%s Failed to find original and fallback calibration data for key %s`
+- `TCal`
+- `DutyCycle`
+- `SuTvs9lttcDBrlI/jeuk2BBNcak=`
+- `CLCL`
+- `mismatched count and length`
+- `powerLimitFault`
+- `missing symbol info length`
+- `l754Ydz9l36UROkoq62SKZ+Sjww=`
+- `Address`
+- `idleTime_ms_dividedBy_duration_s`
+- `JySGrbEekf5KVNjbZG2aYyvVOIo=`
+- `0+9dlkx4QbQq3P5FrLpK0iF4AVw=`
+- `missing read meta data symbol info`
+- `%s::%s XML unserialize error: %s\n`
+- `RwRAGzgGHj7nFL8h5XNytxDhB0g=`
+- `unable to read symbol`
+- `prepareLoadFirmwareRequest`
+- `u32`
+- `amp2bpeIstL0Fault`
+- `vLYmRPEDkzcSb0iXdiSwoSjBMkw=`
+- `DySeTlqhxhrscnb4ZToHWIyJeJw=`
+- `ysqO/84AXwBF/3+6aF6vqQVlx9w=`
+- `loggedF0Variation`
+- `AFUHapticAssetsReceived`
+- `FirmwarePatches`
+- `VF2MQ8bpsRGM3x6iaS/4Qruq9+s=`
+- `StaMg`
+- `site.AHSLeela`
+- `createDebugChannelWrites`
+- `ZtCIB32oasZ4GAideh/4eAwnuz4=`
+- `r40aYsxaxu6pB23ki2XfbyjGSvw=`
+- `TmhswS5Rt69bPDuH1hGYRFTtXjM=`
+- `missing data sources`
+- `regpost segmap entry missing`
+- `unable to create new firmware request`
+- `obfSNxJ91qTzaKu40haL3vXY3JY=`
+- `haptic BPE attenuation max`
+- `Assets`
+- `failed to create debug channel writes`
+- `2nDsse6GT/0WaoFqw9moWbivvfE=`
+- `calculatedF0`
+- `could not view footer\n`
+- `HapticBpeAttenuationMaxdB`
+- `duration_ms`
+- `Stats`
+- `3iGK9DEzQdRSWoSZkM+Ewm6NXo4=`
+- `wf7BEPbURWsl3MtkeilkWlhlIQw=`
+- `faults detected: IBFault`
+- `unable to create AKCI request list`
+- `faults detected: BRFault`
+- `%s::%s failed to patch %s\n`
+- `missing wrapped source view`
+- `ampStatusCriticalFault`
+- `operator()`
+- `site.AHSStatsAggregator`
+- `site.AHSEvent`
+- `AHSLeelaPowerEstimator`
+
+**[__TEXT.__os_log]**
+
+- `%s::%s Setting average power budget range: min=%u mW, max=%u mW\n`
+- `%s::%s parking status = 0x%08X\n`
+- `%s::%s %s=%u`
+- `%s::%s begin=0x%08X length=%u index=%u\n`
+- `%s::%s received haptic assets\n`
+- `%s::%s watchdog notification occurred\n`
+- `%s::%s unserializing payload with %u bytes\n`
+- `%s::%s firmware version = %ld.%ld.%ld`
+- `%s::%s Failed to find original calibration data for key %s`
+- `%s::%s started\n`
+- `%s::%s\n`
+- `%s::%s haptics session %s\n`
+- `%s::%s Setting Average Power Budget through AHSPowerInterface \n`
+- `%s::%s Cal checksum error: checksum 0x%04X + sum 0x%04X != 0\n`
+- `%s::%s found AKCI\n`
+- `%s::%s Setting Peak Power Budget Range: min=%u, max=%u\n`
+- `%s::%s Setting Average Power Budget Range: min=%u, max=%u\n`
+- `AHSSystemLogPublisher::%s %s = 0x%x`
+- `%s::%s energy used=%s`
+- `%s::%s Live symbol reads cannot be performed when haptics are inactive \n`
+- `%s::%s writing %s to address 0x%08X\n`
+- `%s::%s setting haptic debug channels\n`
+- `{\"caller\":\"%s::%s\",\"_energyUsedBaseline\":%s,\"_energyUsedAccumulation\":%s}`
+- `%s::%s Skipping live symbol write — LEAP is not powered on\n`
+- `%s::%s sending AKCI request\n`
+- `%s::%s firmware set up successfully via AKCI %s request`
+- `%s::%s haptics session new_state == previous_state == %s\n`
+- `%s::%s validationStatus = %u, options = 0x%08X\n`
+- `%s::%s new budget=%u mW for %s timescale via budget symbol %s\n`
+- `%s::%s chunkIndex=%u numBytes=%u\n`
+- `%s::%s feature %s enabled`
+- `AHSTemperaturePowerSMCReporter::%s SMC sensor-exchange unavailable; SMC thermal writes disabled\n`
+- `{\"caller\":\"%s::%s\",\"_polling\":%s,\"_sessionOngoing\":%s,\"_windows\":{\"oldest\":{\"energyUsed\":%s,\"baseline\":%s},\"latest\":{\"energyUsed\":%s,\"baseline\":%s}}}`
+- `%s::%s found audio resource manager akci\n`
+- `%s::%s Setting Peak Power Budget through AHSPowerInterface \n`
+- `%s::%s Setting peak power budget range: min=%u mW, max=%u mW\n`
+- `%s::%s haptic assets sent\n`

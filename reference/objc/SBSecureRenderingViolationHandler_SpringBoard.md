@@ -1,0 +1,31 @@
+# `SBSecureRenderingViolationHandler`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `SBFSecureRenderingViolationHandling`
+- 1 instance variables, 4 properties, 5 instance methods, 0 class methods
+
+## Instance variables
+
+```
+B _capturingDisplayDump;
+```
+
+## Properties
+
+```
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[SBSecureRenderingViolationHandler secureDisplayCoordinator:didReceiveSecureRenderingViolations:];
+-[SBSecureRenderingViolationHandler _captureRadarAttachmentsWithCompletion:];
+-[SBSecureRenderingViolationHandler _markArchiveAsPurgeableAtURL:];
+-[SBSecureRenderingViolationHandler _shouldPromptForSecureDrawViolations];
+-[SBSecureRenderingViolationHandler handleSecureModeViolations:];
+```

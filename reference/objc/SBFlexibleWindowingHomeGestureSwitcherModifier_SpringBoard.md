@@ -1,0 +1,198 @@
+# `SBFlexibleWindowingHomeGestureSwitcherModifier`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBGestureSwitcherModifier`
+- Protocols: `SBHomeGestureDockSwitcherModifierDelegate`, `SBHomeGestureFinalDestinationSwitcherModifierDelegate`
+- 59 instance variables, 6 properties, 112 instance methods, 0 class methods
+
+## Instance variables
+
+```
+B _inMultitasking;
+@"UIViewFloatAnimatableProperty" _inMultitaskingChangedProperty;
+B _canEnterExposeMultitasking;
+B _inExposeMultitasking;
+@"UIViewFloatAnimatableProperty" _inExposeMultitaskingChangedProperty;
+{CGPoint="x"d"y"d} _touchOffset;
+d _lastFrameOffsetX;
+d _lastTranslationXForRubberbanding;
+d _translationXLostToRubberbanding;
+B _hasTriggeredCardFlyIn;
+d _translationYWhenTriggeredCardFlyIn;
+B _hasBecomeCoplanarSinceGestureFromSwitcherBegan;
+{CGPoint="x"d"y"d} _gestureLiftOffVelocity;
+{CGPoint="x"d"y"d} _gestureLiftOffTranslation;
+{CGPoint="x"d"y"d} _translationAdjustmentForStartingFromSwitcher;
+{CGPoint="x"d"y"d} _translationAdjustmentForStartingFromHomeScreen;
+d _progressToInSwitcherCardScale;
+d _progressToMaxTranslation;
+{CGPoint="x"d"y"d} _translation;
+{CGPoint="x"d"y"d} _velocity;
+d _stackedProgress;
+{CGPoint="x"d"y"d} _initialCentroid;
+{CGPoint="x"d"y"d} _centroid;
+{CGPoint="x"d"y"d} _centroidAdjustment;
+d _absoluteScale;
+{CGPoint="x"d"y"d} _translationWithoutScale;
+@"CADisplayLink" _displayLink;
+d _lastTouchTimestamp;
+q _gestureHoldTimer;
+{CGPoint="x"d"y"d} _initialTouchLocation;
+{CGPoint="x"d"y"d} _lastTouchLocation;
+B _everTranslatedUpwards;
+B _cancelledGestureForEmptySwitcher;
+d _toHomeScreenAlpha;
+d _toHomeScreenBlurProgress;
+d _toHomeScreenDimmingAlpha;
+d _homeGestureXOffsetFactor;
+B _didWarmupFlyInHaptic;
+B _didPlayFlyInHaptic;
+B _gestureHasBegun;
+B _gestureHasEnded;
+@"SBSwitcherModifier" _multitaskingModifier;
+@"SBCoplanarSwitcherModifier" _coplanarLayoutModifier;
+@"SBHomeGestureDockSwitcherModifier" _dockModifier;
+@"SBHomeGestureFinalDestinationSwitcherModifier" _finalDestinationModifier;
+@"SBDismissSiriSwitcherModifier" _dismissSiriModifier;
+@"SBAppLayout" _selectedAppLayout;
+q _startingEnvironmentMode;
+B _scrunchInitiated;
+B _continuingGesture;
+B _lastGestureWasAnArcSwipe;
+B _shouldResignActive;
+d _homeGestureMinimumCardScale;
+d _homeGestureMinimumCardScaleRubberBandingRange;
+B _hideSplitViewHandles;
+q _selectedIndex;
+Q _cachedAppLayoutsGenCount;
+B _laysOutNeighboringCards;
+B _providesHomeScreenDimmingAlpha;
+```
+
+## Properties
+
+```
+@property (TB,N,V_laysOutNeighboringCards) laysOutNeighboringCards;
+@property (TB,N,V_providesHomeScreenDimmingAlpha) providesHomeScreenDimmingAlpha;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[SBFlexibleWindowingHomeGestureSwitcherModifier handleGestureEvent:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier scaleForIndex:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _displayLinkFired:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier titleOpacityForIndex:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier homeScreenScale];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier isContainerStatusBarVisible];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier homeScreenBackdropBlurProgress];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier homeScreenDimmingAlpha];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _applyPrototypeSettings];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _updateInMultitaskingIfNeededWithEvent:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier isSwitcherWindowUserInteractionEnabled];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier shouldUseAnchorPointToPinLayoutRolesToSpace:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier homeScreenAlpha];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier isHomeScreenContentRequired];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier didMoveToParentModifier:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _inSwitcherCenterYOffsetWhenPresented];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier handleHomeGestureSettingsChangedEvent:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _updateTranslationAdjustmentForGestureFromHomeScreenIfNeededWithEvent:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _distanceYToMaxTranslation];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier animationAttributesForLayoutElement:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier adjustedAppLayoutsForAppLayouts:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier visibleSplitViewHandleNubViews];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _rubberbandedTranslationForAdjacentCards];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier homeScreenBackdropBlurType];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _switcherCardScale];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _isTranslationPastDistanceThresholdToUnconditionallyGoHome:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier liftOffTranslationForGestureEnd];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _responseForStudyLogDidBeginGesture];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier unconditionalDistanceThresholdForHome];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _responseForUpdatingIconViewVisibility:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier visibleSplitViewHandleDimmingViews];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier debugDescription];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier isSwitcherWindowVisible];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier titleAndIconOpacityForIndex:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier appLayoutsToCacheSnapshots];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier dimmingAlphaForLayoutRole:inAppLayout:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier handleTransitionEvent:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier shouldPinLayoutRolesToSpace:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _updateForGestureDidBeginWithEvent:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _responseForSBEventGestureBeganWithTimeDelta:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier isWallpaperRequiredForSwitcher];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier visibleAppLayouts];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier perspectiveAngleForLayoutRole:inAppLayout:withPerspectiveAngle:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier perspectiveAngleForIndex:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier opacityForLayoutRole:inAppLayout:atIndex:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier laysOutNeighboringCards];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier handleSwitcherSettingsChangedEvent:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier shadowOpacityForLayoutRole:atIndex:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier scaleForLayoutRole:inAppLayout:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier frameForLayoutRole:inAppLayout:withBounds:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier contentOffsetForIndex:alignment:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier headerStyleForIndex:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier wallpaperStyle];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _responseForUpdatingLayoutForGestureBegan];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier frameForIndex:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier dealloc];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier selectedAppLayout];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier wallpaperScale];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _hasTraveledSufficientDistanceForHomeOrAppSwitcher];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier keyboardSuppressionMode];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier wallpaperOverlayAlphaForIndex:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier initWithGestureID:selectedAppLayout:startingEnvironmentMode:multitaskingModifier:scrunchInitiated:continuingGesture:lastGestureWasAnArcSwipe:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _selectedAppLayoutIndex];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _scaleForAdjacentCards];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _responseForCancelingSystemGesturesIfNeededWithFinalDestination:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _beginAnimatingMultitaskingPropertyWithMode:settings:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _unadjustedGestureTranslation];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _responseForSBEventGestureEndWithEvent:finalDestination:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _scaleForOffscreenAdjacentCardsForFlyIn];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier cornerRadiiForLayoutRole:inAppLayout:withCornerRadii:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier handleRemovalEvent:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier providesHomeScreenDimmingAlpha];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _updateForGestureDidChangeWithEvent:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _responseForActivatingFinalDestination:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _inMultitaskingForLocation:translation:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier isShowingOrAnimatingCardsForFlyIn];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _responseForStudyLogDidEndGestureWithEvent:finalDestination:destinationReason:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _scaleForTranslation:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier isHitTestBlockingViewVisible];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _updateShouldResignActiveWithEvent:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _frameOffsetForTranslation:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier appLayoutsToResignActive];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _updateGestureTranslationVelocityAndProgressWithEvent:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _newDockModifierRequiringVerticalSwipeToTrackDock:startingEnvironmentMode:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier occlusionStateForLayoutRole:inAppLayout:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _layoutSettingsForAppLayout:layoutSettings:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _hasPausedEnoughForFlyIn];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _coplanarSpacing];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _updateStackedProgress];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _shouldResignActiveBasedOnCardScale];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _centerYOffsetDuringGesture];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _shouldPositionAdjacentCardsOffscreenForFlyIn];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier setLaysOutNeighboringCards:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier lighteningAlphaForIndex:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _preventPositioningCardsOffscreenForFlatBottomEdgeSwipe];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier preferredStatusBarAxis];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _updateFrameOffsetForXRubberbandingForTranslation:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier setProvidesHomeScreenDimmingAlpha:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier asyncRenderingAttributesForAppLayout:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _cornerRadiusSettings];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier liftOffVelocityForGestureEnd];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _isSelectedAppLayoutAtIndex:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _updateForGestureDidEndWithEvent:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _distanceYToInSwitcherCardScale];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier appLayoutToAttachSlideOverTongue];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _responseForActivatingReachabilityIfNeededWithFinalDestination:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _gestureProgressToMaxTranslationForTranslation:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier currentFinalDestination];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier hiddenContentStatusBarPartsForLayoutRole:inAppLayout:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier appLayoutsToCacheFullsizeSnapshots];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _beginAnimatingExposeMultitaskingPropertyWithMode:settings:];
+-[SBFlexibleWindowingHomeGestureSwitcherModifier _getActivePositionAndScaleForLayoutRole:inAppLayout:withBounds:outPosition:outScale:];
+```

@@ -1,0 +1,556 @@
+# Device tree
+
+552 nodes of `DeviceTree.v68ap.im4p`, parsed byte-exact by `tools/adt.py`.
+
+- [`/`](root.md) — V68AP, iPhone19,4 → **AppleARMPE**
+  - [`/machine-timeouts`](root__machine-timeouts.md)
+  - [`/chosen`](root__chosen.md)
+    - [`/chosen/manifest-properties`](root__chosen__manifest-properties.md)
+    - [`/chosen/manifest-object-properties`](root__chosen__manifest-object-properties.md)
+    - [`/chosen/boot-object-manifests`](root__chosen__boot-object-manifests.md)
+    - [`/chosen/secure-boot-hashes`](root__chosen__secure-boot-hashes.md)
+    - [`/chosen/dynamic-object-map`](root__chosen__dynamic-object-map.md)
+    - [`/chosen/memory-map`](root__chosen__memory-map.md)
+    - [`/chosen/carveout-memory-map`](root__chosen__carveout-memory-map.md)
+    - [`/chosen/lock-regs`](root__chosen__lock-regs.md)
+      - [`/chosen/lock-regs/amcc`](root__chosen__lock-regs__amcc.md)
+        - [`/chosen/lock-regs/amcc/amcc-ctrr-a`](root__chosen__lock-regs__amcc__amcc-ctrr-a.md)
+        - [`/chosen/lock-regs/amcc/amcc-ctrr-b`](root__chosen__lock-regs__amcc__amcc-ctrr-b.md)
+        - [`/chosen/lock-regs/amcc/amcc-ctrr-c`](root__chosen__lock-regs__amcc__amcc-ctrr-c.md)
+        - [`/chosen/lock-regs/amcc/amcc-ctrr-d`](root__chosen__lock-regs__amcc__amcc-ctrr-d.md)
+    - [`/chosen/iBoot`](root__chosen__iBoot.md)
+    - [`/chosen/memory-report`](root__chosen__memory-report.md)
+      - [`/chosen/memory-report/zeroization-report`](root__chosen__memory-report__zeroization-report.md)
+  - [`/options`](root__options.md)
+  - [`/cpus`](root__cpus.md)
+    - [`/cpus/cpu0`](root__cpus__cpu0.md) — apple,sawtooth, ARM,v8
+      - [`/cpus/cpu0/:borneo_h19a_3`](root__cpus__cpu0___borneo_h19a_3.md)
+      - [`/cpus/cpu0/:borneo_h19p_3`](root__cpus__cpu0___borneo_h19p_3.md)
+    - [`/cpus/cpu1`](root__cpus__cpu1.md) — apple,sawtooth, ARM,v8
+      - [`/cpus/cpu1/:borneo_h19a_3`](root__cpus__cpu1___borneo_h19a_3.md)
+      - [`/cpus/cpu1/:borneo_h19p_3`](root__cpus__cpu1___borneo_h19p_3.md)
+    - [`/cpus/cpu2`](root__cpus__cpu2.md) — apple,sawtooth, ARM,v8
+      - [`/cpus/cpu2/:borneo_h19a_3`](root__cpus__cpu2___borneo_h19a_3.md)
+      - [`/cpus/cpu2/:borneo_h19p_3`](root__cpus__cpu2___borneo_h19p_3.md)
+    - [`/cpus/cpu3`](root__cpus__cpu3.md) — apple,sawtooth, ARM,v8
+      - [`/cpus/cpu3/:borneo_h19a_3`](root__cpus__cpu3___borneo_h19a_3.md)
+      - [`/cpus/cpu3/:borneo_h19p_3`](root__cpus__cpu3___borneo_h19p_3.md)
+    - [`/cpus/cpu4`](root__cpus__cpu4.md) — apple,everest, ARM,v8
+      - [`/cpus/cpu4/:borneo_h19a_4`](root__cpus__cpu4___borneo_h19a_4.md)
+      - [`/cpus/cpu4/:borneo_h19p_4`](root__cpus__cpu4___borneo_h19p_4.md)
+    - [`/cpus/cpu5`](root__cpus__cpu5.md) — apple,everest, ARM,v8
+      - [`/cpus/cpu5/:borneo_h19a_4`](root__cpus__cpu5___borneo_h19a_4.md)
+      - [`/cpus/cpu5/:borneo_h19p_4`](root__cpus__cpu5___borneo_h19p_4.md)
+  - [`/aliases`](root__aliases.md)
+  - [`/memory`](root__memory.md)
+  - [`/pram`](root__pram.md)
+  - [`/vram`](root__vram.md)
+  - [`/arm-io`](root__arm-io.md) — arm-io,t8160 → **AppleSoCIOPSD**
+    - [`/arm-io/aic`](root__arm-io__aic.md) — aic,3 → **AppleInterruptControllerV3**
+    - [`/arm-io/aic-timebase`](root__arm-io__aic-timebase.md)
+    - [`/arm-io/pmgr-child`](root__arm-io__pmgr-child.md) — pmgr2,t8160 → **AppleT8160PMGR**
+    - [`/arm-io/pmgr`](root__arm-io__pmgr.md) — pmgr2,arch → **ApplePMGRv2**
+      - [`/arm-io/pmgr/pmgrtools`](root__arm-io__pmgr__pmgrtools.md) — pmgrtools
+      - [`/arm-io/pmgr/clpc`](root__arm-io__pmgr__clpc.md) — clpc,t8160 → **AppleCLPC**
+      - [`/arm-io/pmgr/ppm`](root__arm-io__pmgr__ppm.md) — ppm,iphoneacsk → **ApplePPMCPMSv2**
+    - [`/arm-io/wdt`](root__arm-io__wdt.md) — wdt,t8101, wdt,s5l8960x → **AppleARMWatchdogTimer**
+    - [`/arm-io/gpio0`](root__arm-io__gpio0.md) — gpio,t8101 → **AppleT8101GPIOIC**
+    - [`/arm-io/mcc`](root__arm-io__mcc.md) — mcc,t8160 → **AppleT8160MemCacheController**
+    - [`/arm-io/error-handler`](root__arm-io__error-handler.md) — error-handler,t8160 → **AppleSoCErrorHandler**
+      - [`/arm-io/error-handler/amcc-error-handler`](root__arm-io__error-handler__amcc-error-handler.md)
+      - [`/arm-io/error-handler/dcs-error-handler`](root__arm-io__error-handler__dcs-error-handler.md)
+      - [`/arm-io/error-handler/pmgr-error-handler`](root__arm-io__error-handler__pmgr-error-handler.md)
+      - [`/arm-io/error-handler/cllt-error-handler`](root__arm-io__error-handler__cllt-error-handler.md)
+      - [`/arm-io/error-handler/sep-error-handler`](root__arm-io__error-handler__sep-error-handler.md)
+      - [`/arm-io/error-handler/ni0-error-handler`](root__arm-io__error-handler__ni0-error-handler.md)
+      - [`/arm-io/error-handler/ni1-error-handler`](root__arm-io__error-handler__ni1-error-handler.md)
+      - [`/arm-io/error-handler/ni2-error-handler`](root__arm-io__error-handler__ni2-error-handler.md)
+      - [`/arm-io/error-handler/ni3-error-handler`](root__arm-io__error-handler__ni3-error-handler.md)
+      - [`/arm-io/error-handler/ni4-error-handler`](root__arm-io__error-handler__ni4-error-handler.md)
+      - [`/arm-io/error-handler/nsi-error-handler`](root__arm-io__error-handler__nsi-error-handler.md)
+      - [`/arm-io/error-handler/pio-error-handler`](root__arm-io__error-handler__pio-error-handler.md)
+      - [`/arm-io/error-handler/psd-error-handler`](root__arm-io__error-handler__psd-error-handler.md)
+      - [`/arm-io/error-handler/gpce-error-handler`](root__arm-io__error-handler__gpce-error-handler.md)
+      - [`/arm-io/error-handler/ipce-error-handler`](root__arm-io__error-handler__ipce-error-handler.md)
+      - [`/arm-io/error-handler/sac-error-handler`](root__arm-io__error-handler__sac-error-handler.md)
+    - [`/arm-io/soc-misc`](root__arm-io__soc-misc.md) — soc-misc,t8160 → **AppleSoCMisc**
+    - [`/arm-io/soc-reporter`](root__arm-io__soc-reporter.md) — soc-reporter,t8160 → **AppleSoCReporter**
+    - [`/arm-io/fpwm`](root__arm-io__fpwm.md) — fpwm,s5l8920x → **AppleS5L8920XFPWM**
+    - [`/arm-io/event-log-handler`](root__arm-io__event-log-handler.md) — event-log-handler,t8101 → **AppleEventLogHandler**
+    - [`/arm-io/spi1`](root__arm-io__spi1.md) — spi-1,spimc → **AppleSPIMCController**
+      - [`/arm-io/spi1/mesa`](root__arm-io__spi1__mesa.md) — biosensor,mesa → **AppleMesa, AppleSandDollar**
+    - [`/arm-io/aes`](root__arm-io__aes.md) — aes,s8000 → **AppleS8000AESAccelerator**
+    - [`/arm-io/aop`](root__arm-io__aop.md) — iop,ascwrap-v8 → **AppleASCWrapV8**
+      - [`/arm-io/aop/iop-aop-nub`](root__arm-io__aop__iop-aop-nub.md) — iop-nub,rtbuddy-v2 → **AppleLVBOOST, AppleSPUTimesyncV2, RTBuddy**
+        - [`/arm-io/aop/iop-aop-nub/aop-pio-filters`](root__arm-io__aop__iop-aop-nub__aop-pio-filters.md)
+        - [`/arm-io/aop/iop-aop-nub/aop-gapf-filters`](root__arm-io__aop__iop-aop-nub__aop-gapf-filters.md)
+        - [`/arm-io/aop/iop-aop-nub/als2a`](root__arm-io__aop__iop-aop-nub__als2a.md)
+        - [`/arm-io/aop/iop-aop-nub/als2b`](root__arm-io__aop__iop-aop-nub__als2b.md)
+        - [`/arm-io/aop/iop-aop-nub/accel_1`](root__arm-io__aop__iop-aop-nub__accel_1.md)
+        - [`/arm-io/aop/iop-aop-nub/gyro_1`](root__arm-io__aop__iop-aop-nub__gyro_1.md)
+        - [`/arm-io/aop/iop-aop-nub/hgaccel_1`](root__arm-io__aop__iop-aop-nub__hgaccel_1.md)
+        - [`/arm-io/aop/iop-aop-nub/accel`](root__arm-io__aop__iop-aop-nub__accel.md)
+        - [`/arm-io/aop/iop-aop-nub/hgaccel`](root__arm-io__aop__iop-aop-nub__hgaccel.md)
+        - [`/arm-io/aop/iop-aop-nub/gyro`](root__arm-io__aop__iop-aop-nub__gyro.md)
+        - [`/arm-io/aop/iop-aop-nub/compass`](root__arm-io__aop__iop-aop-nub__compass.md)
+        - [`/arm-io/aop/iop-aop-nub/compass_1`](root__arm-io__aop__iop-aop-nub__compass_1.md)
+        - [`/arm-io/aop/iop-aop-nub/pressure`](root__arm-io__aop__iop-aop-nub__pressure.md)
+        - [`/arm-io/aop/iop-aop-nub/spherecontrol`](root__arm-io__aop__iop-aop-nub__spherecontrol.md)
+        - [`/arm-io/aop/iop-aop-nub/prox`](root__arm-io__aop__iop-aop-nub__prox.md)
+        - [`/arm-io/aop/iop-aop-nub/SPUApp`](root__arm-io__aop__iop-aop-nub__SPUApp.md) → **AppleSPUAppDriver**
+        - [`/arm-io/aop/iop-aop-nub/aop-audio`](root__arm-io__aop__iop-aop-nub__aop-audio.md) — iop-audio,aop-service → **AOPAudioService, AppleAOPAudioController**
+        - [`/arm-io/aop/iop-aop-nub/aop-voicetrigger`](root__arm-io__aop__iop-aop-nub__aop-voicetrigger.md) — iop-audio,aop-service → **AOPAudioService**
+        - [`/arm-io/aop/iop-aop-nub/smc-control`](root__arm-io__aop__iop-aop-nub__smc-control.md) → **AppleAOPSMCDriver**
+        - [`/arm-io/aop/iop-aop-nub/aop-smart-cover`](root__arm-io__aop__iop-aop-nub__aop-smart-cover.md)
+        - [`/arm-io/aop/iop-aop-nub/rose`](root__arm-io__aop__iop-aop-nub__rose.md) → **AppleSPURoseDriver, AppleSPURoseDriverV2**
+        - [`/arm-io/aop/iop-aop-nub/jarvis`](root__arm-io__aop__iop-aop-nub__jarvis.md)
+        - [`/arm-io/aop/iop-aop-nub/als`](root__arm-io__aop__iop-aop-nub__als.md)
+        - [`/arm-io/aop/iop-aop-nub/gnss`](root__arm-io__aop__iop-aop-nub__gnss.md) → **AppleSPUGNSSDriver**
+        - [`/arm-io/aop/iop-aop-nub/dcp-control`](root__arm-io__aop__iop-aop-nub__dcp-control.md) → **AppleSPUDCPDriver**
+        - [`/arm-io/aop/iop-aop-nub/grimaldi-control`](root__arm-io__aop__iop-aop-nub__grimaldi-control.md) → **AppleSPUGrimaldiDriver**
+        - [`/arm-io/aop/iop-aop-nub/cma`](root__arm-io__aop__iop-aop-nub__cma.md)
+    - [`/arm-io/aop-exclave-mailbox`](root__arm-io__aop-exclave-mailbox.md) — iop,secure-rtbuddy-proxy → **SecureRTBuddyProxy**
+    - [`/arm-io/aop-exclave-ioreporting`](root__arm-io__aop-exclave-ioreporting.md) — iop,secure-rtbuddy-ioreporting → **SecureRTBuddyIOReporting**
+    - [`/arm-io/aop2`](root__arm-io__aop2.md) — iop,ascwrap-v8 → **AppleASCWrapV8**
+      - [`/arm-io/aop2/iop-aop2-nub`](root__arm-io__aop2__iop-aop2-nub.md) — iop-nub,rtbuddy-v2 → **RTBuddy**
+    - [`/arm-io/aop2-exclave-mailbox`](root__arm-io__aop2-exclave-mailbox.md) — iop,secure-rtbuddy-proxy → **SecureRTBuddyProxy**
+    - [`/arm-io/aop2-exclave-ioreporting`](root__arm-io__aop2-exclave-ioreporting.md)
+    - [`/arm-io/aop-gpio`](root__arm-io__aop-gpio.md) — gpio,t8101 → **AppleT8101GPIOIC**
+    - [`/arm-io/nub-gpio`](root__arm-io__nub-gpio.md) — gpio,t8101 → **AppleT8101GPIOIC**
+    - [`/arm-io/smc-gpio`](root__arm-io__smc-gpio.md) — gpio,t8101 → **AppleT8101GPIOIC**
+    - [`/arm-io/mtp-gpio`](root__arm-io__mtp-gpio.md) — gpio,t8101 → **AppleT8101GPIOIC**
+    - [`/arm-io/pmp`](root__arm-io__pmp.md) — iop,ascwrap-v8 → **AppleASCWrapV8**
+      - [`/arm-io/pmp/iop-pmp-nub`](root__arm-io__pmp__iop-pmp-nub.md) — iop-nub,rtbuddy-v2 → **RTBuddy**
+        - [`/arm-io/pmp/iop-pmp-nub/:borneo_h19a_0`](root__arm-io__pmp__iop-pmp-nub___borneo_h19a_0.md)
+        - [`/arm-io/pmp/iop-pmp-nub/:borneo_h19p_0`](root__arm-io__pmp__iop-pmp-nub___borneo_h19p_0.md)
+        - [`/arm-io/pmp/iop-pmp-nub/:borneo_h19a_1`](root__arm-io__pmp__iop-pmp-nub___borneo_h19a_1.md)
+        - [`/arm-io/pmp/iop-pmp-nub/:borneo_h19p_1`](root__arm-io__pmp__iop-pmp-nub___borneo_h19p_1.md)
+        - [`/arm-io/pmp/iop-pmp-nub/:borneo_h19a_2`](root__arm-io__pmp__iop-pmp-nub___borneo_h19a_2.md)
+        - [`/arm-io/pmp/iop-pmp-nub/:borneo_h19p_2`](root__arm-io__pmp__iop-pmp-nub___borneo_h19p_2.md)
+    - [`/arm-io/sep`](root__arm-io__sep.md) — iop-sep,ascwrap-v8 → **AppleASCWrapV8SEP**
+      - [`/arm-io/sep/iop-sep-nub`](root__arm-io__sep__iop-sep-nub.md) — iop-nub,sep → **AppleSEPManager**
+        - [`/arm-io/sep/iop-sep-nub/Sandcat`](root__arm-io__sep__iop-sep-nub__Sandcat.md)
+        - [`/arm-io/sep/iop-sep-nub/xART`](root__arm-io__sep__iop-sep-nub__xART.md)
+        - [`/arm-io/sep/iop-sep-nub/InvalidateHmac`](root__arm-io__sep__iop-sep-nub__InvalidateHmac.md)
+    - [`/arm-io/dart-sep`](root__arm-io__dart-sep.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-sep/mapper-sep`](root__arm-io__dart-sep__mapper-sep.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-sep/mapper-sep-exclave`](root__arm-io__dart-sep__mapper-sep-exclave.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/esm`](root__arm-io__esm.md) — iop,exclave-sep-manager → **ExclaveSEPManagerProxy**
+    - [`/arm-io/sio`](root__arm-io__sio.md) — iop,ascwrap-v8 → **AppleASCWrapV8**
+      - [`/arm-io/sio/iop-sio-nub`](root__arm-io__sio__iop-sio-nub.md) — iop-nub,rtbuddy-v2 → **RTBuddy**
+        - [`/arm-io/sio/iop-sio-nub/sio-dma`](root__arm-io__sio__iop-sio-nub__sio-dma.md) — sio-dma-controller
+    - [`/arm-io/dart-sio`](root__arm-io__dart-sio.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-sio/mapper-sio`](root__arm-io__dart-sio__mapper-sio.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-sio/mapper-aes`](root__arm-io__dart-sio__mapper-aes.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/dart-sbr`](root__arm-io__dart-sbr.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-sbr/mapper-aop`](root__arm-io__dart-sbr__mapper-aop.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-sbr/mapper-aop2`](root__arm-io__dart-sbr__mapper-aop2.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-sbr/mapper-exclave-aop`](root__arm-io__dart-sbr__mapper-exclave-aop.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-sbr/mapper-exclave-aop2`](root__arm-io__dart-sbr__mapper-exclave-aop2.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-sbr/mapper-mtp`](root__arm-io__dart-sbr__mapper-mtp.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-sbr/mapper-pmp`](root__arm-io__dart-sbr__mapper-pmp.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-sbr/mapper-admac-leap-ns`](root__arm-io__dart-sbr__mapper-admac-leap-ns.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-sbr/mapper-admac-base-ns`](root__arm-io__dart-sbr__mapper-admac-base-ns.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-sbr/mapper-admac-leap-s`](root__arm-io__dart-sbr__mapper-admac-leap-s.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-sbr/mapper-admac-base-s`](root__arm-io__dart-sbr__mapper-admac-base-s.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-sbr/mapper-scm`](root__arm-io__dart-sbr__mapper-scm.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-sbr/mapper-rsm`](root__arm-io__dart-sbr__mapper-rsm.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/ans`](root__arm-io__ans.md) — iop,ascwrap-v8 → **AppleASCWrapV8**
+      - [`/arm-io/ans/iop-ans-nub`](root__arm-io__ans__iop-ans-nub.md) — iop-nub,rtbuddy-v2 → **RTBuddy**
+    - [`/arm-io/sart-ans`](root__arm-io__sart-ans.md) — sart,coastguard → **IOCoastGuardSARTMapper**
+    - [`/arm-io/smc`](root__arm-io__smc.md) — iop,ascwrap-v8 → **AppleASCWrapV8**
+      - [`/arm-io/smc/iop-smc-nub`](root__arm-io__smc__iop-smc-nub.md) — iop-nub,rtbuddy-v2 → **RTBuddy**
+        - [`/arm-io/smc/iop-smc-nub/smc-pmu`](root__arm-io__smc__iop-smc-nub__smc-pmu.md) — smc-pmu → **AppleSMCPMU**
+        - [`/arm-io/smc/iop-smc-nub/smc-charger`](root__arm-io__smc__iop-smc-nub__smc-charger.md) → **AppleSMCCharger**
+        - [`/arm-io/smc/iop-smc-nub/smc-ext-charger`](root__arm-io__smc__iop-smc-nub__smc-ext-charger.md) → **AppleSMCWirelessCharger**
+        - [`/arm-io/smc/iop-smc-nub/smc-aop`](root__arm-io__smc__iop-smc-nub__smc-aop.md) → **AppleAOPSMC**
+        - [`/arm-io/smc/iop-smc-nub/smc-power-out`](root__arm-io__smc__iop-smc-nub__smc-power-out.md) → **AppleSMCPowerOut**
+        - [`/arm-io/smc/iop-smc-nub/smc-acam`](root__arm-io__smc__iop-smc-nub__smc-acam.md) — smc-acam → **AppleSMCACAMDriver**
+        - [`/arm-io/smc/iop-smc-nub/smc-charger-util`](root__arm-io__smc__iop-smc-nub__smc-charger-util.md) → **AppleSMCChargerUtil**
+    - [`/arm-io/aon-ptd`](root__arm-io__aon-ptd.md) — ptd,v1 → **ApplePTD, AppleSPUAONPTDDriver**
+    - [`/arm-io/rsm`](root__arm-io__rsm.md) — rsm,t8101
+    - [`/arm-io/dockchannel-uart`](root__arm-io__dockchannel-uart.md) — aapl,dock-channels → **AppleSerialShim**
+    - [`/arm-io/mtp`](root__arm-io__mtp.md) — iop,ascwrap-v8 → **AppleASCWrapV8**
+      - [`/arm-io/mtp/iop-mtp-nub`](root__arm-io__mtp__iop-mtp-nub.md) — iop-nub,rtbuddy-v2 → **RTBuddy**
+        - [`/arm-io/mtp/iop-mtp-nub/multi-touch2`](root__arm-io__mtp__iop-mtp-nub__multi-touch2.md)
+        - [`/arm-io/mtp/iop-mtp-nub/sync-agent`](root__arm-io__mtp__iop-mtp-nub__sync-agent.md)
+        - [`/arm-io/mtp/iop-mtp-nub/multi-touch`](root__arm-io__mtp__iop-mtp-nub__multi-touch.md) → **AppleSPUControl**
+        - [`/arm-io/mtp/iop-mtp-nub/nova`](root__arm-io__mtp__iop-mtp-nub__nova.md)
+        - [`/arm-io/mtp/iop-mtp-nub/mtp`](root__arm-io__mtp__iop-mtp-nub__mtp.md)
+    - [`/arm-io/mtp-aop-mux`](root__arm-io__mtp-aop-mux.md) — hid-transport,mux
+    - [`/arm-io/mt-bt-timestamp-sync`](root__arm-io__mt-bt-timestamp-sync.md) — timestamp-sync → **AppleMultitouchTimestampSync**
+    - [`/arm-io/uart0`](root__arm-io__uart0.md) — uart-1,samsung → **AppleSamsungSerial, AppleSerialShim**
+      - [`/arm-io/uart0/debug-console`](root__arm-io__uart0__debug-console.md)
+    - [`/arm-io/i2c2`](root__arm-io__i2c2.md) — i2c,t8101, i2c,s5l8940x → **AppleARMSoftIICController, AppleS5L8940XI2CController**
+      - [`/arm-io/i2c2/audio-codec`](root__arm-io__i2c2__audio-codec.md) — audio-control,cs42l79 → **AppleCS42L79Audio**
+    - [`/arm-io/i2c3`](root__arm-io__i2c3.md) — i2c,t8101, i2c,s5l8940x → **AppleARMSoftIICController, AppleS5L8940XI2CController**
+      - [`/arm-io/i2c3/display-eeprom`](root__arm-io__i2c3__display-eeprom.md) — eeprom,i2c → **AppleARMI2CEEPROM**
+        - [`/arm-io/i2c3/display-eeprom/display-eeprom-data`](root__arm-io__i2c3__display-eeprom__display-eeprom-data.md) — diagnostic-data,format1 → **AppleDiagnosticDataAccessReadOnly**
+        - [`/arm-io/i2c3/display-eeprom/display-eeprom-generic-data`](root__arm-io__i2c3__display-eeprom__display-eeprom-generic-data.md) — display-generic-data,rw → **AppleEmbeddedTouchEEPROMDriver**
+      - [`/arm-io/i2c3/display-eeprom-hi`](root__arm-io__i2c3__display-eeprom-hi.md) — eeprom,i2c → **AppleARMI2CEEPROM**
+        - [`/arm-io/i2c3/display-eeprom-hi/display-eeprom-data-hi`](root__arm-io__i2c3__display-eeprom-hi__display-eeprom-data-hi.md) — diagnostic-data,format1 → **AppleDiagnosticDataAccessReadOnly**
+      - [`/arm-io/i2c3/display-eeprom-2`](root__arm-io__i2c3__display-eeprom-2.md) — eeprom,i2c → **AppleARMI2CEEPROM**
+        - [`/arm-io/i2c3/display-eeprom-2/display-eeprom-data-2`](root__arm-io__i2c3__display-eeprom-2__display-eeprom-data-2.md) — diagnostic-data,format1 → **AppleDiagnosticDataAccessReadOnly**
+        - [`/arm-io/i2c3/display-eeprom-2/display-eeprom-generic-data-2`](root__arm-io__i2c3__display-eeprom-2__display-eeprom-generic-data-2.md) — display-generic-data,rw → **AppleEmbeddedTouchEEPROMDriver**
+      - [`/arm-io/i2c3/display-eeprom-2-hi`](root__arm-io__i2c3__display-eeprom-2-hi.md) — eeprom,i2c → **AppleARMI2CEEPROM**
+        - [`/arm-io/i2c3/display-eeprom-2-hi/display-eeprom-data-2-hi`](root__arm-io__i2c3__display-eeprom-2-hi__display-eeprom-data-2-hi.md) — diagnostic-data,format1 → **AppleDiagnosticDataAccessReadOnly**
+      - [`/arm-io/i2c3/mogul-display`](root__arm-io__i2c3__mogul-display.md) — mogul,a1222 → **MogulAuthI2CRelayInterface, MogulAuthSMCRelayInterface**
+      - [`/arm-io/i2c3/mogul-display2`](root__arm-io__i2c3__mogul-display2.md) — mogul,a1222 → **MogulAuthI2CRelayInterface, MogulAuthSMCRelayInterface**
+    - [`/arm-io/i2c4`](root__arm-io__i2c4.md) — i2c,t8101, i2c,s5l8940x → **AppleARMSoftIICController, AppleS5L8940XI2CController**
+      - [`/arm-io/i2c4/mogul-mlb`](root__arm-io__i2c4__mogul-mlb.md) — mogul,a1222 → **MogulAuthI2CRelayInterface, MogulAuthSMCRelayInterface**
+    - [`/arm-io/nub-spmi0`](root__arm-io__nub-spmi0.md) — aapl,spmi → **AppleSPMIController**
+      - [`/arm-io/nub-spmi0/pmu-main`](root__arm-io__nub-spmi0__pmu-main.md) — pmu,spmi, pmu,becketts → **AppleDialogSPMIPMU, ApplePMUFirmwareDriver**
+        - [`/arm-io/nub-spmi0/pmu-main/sgpio-bridge-pmu-main`](root__arm-io__nub-spmi0__pmu-main__sgpio-bridge-pmu-main.md) — sgpio-bridge → **AppleSGPIOHostBridgeController**
+          - [`/arm-io/nub-spmi0/pmu-main/sgpio-bridge-pmu-main/pmu-secondary`](root__arm-io__nub-spmi0__pmu-main__sgpio-bridge-pmu-main__pmu-secondary.md) — pmu,spmi, pmu,fairmont → **AppleDialogSPMIPMU, ApplePMUFirmwareDriver**
+      - [`/arm-io/nub-spmi0/btm`](root__arm-io__nub-spmi0__btm.md) — btm,phone → **AppleBTM**
+    - [`/arm-io/nub-spmi1`](root__arm-io__nub-spmi1.md) — aapl,spmi → **AppleSPMIController**
+      - [`/arm-io/nub-spmi1/shamisen`](root__arm-io__nub-spmi1__shamisen.md)
+      - [`/arm-io/nub-spmi1/stonehenge`](root__arm-io__nub-spmi1__stonehenge.md)
+    - [`/arm-io/nub-spmi2`](root__arm-io__nub-spmi2.md) — aapl,spmi → **AppleSPMIController**
+      - [`/arm-io/nub-spmi2/spmi-hpm0`](root__arm-io__nub-spmi2__spmi-hpm0.md) — usbc,cbtl1702,spmi → **AppleHPMARMSPMI**
+    - [`/arm-io/aop-spmi0`](root__arm-io__aop-spmi0.md) — aapl,spmi → **AppleSPMIController**
+      - [`/arm-io/aop-spmi0/wlan-heb`](root__arm-io__aop-spmi0__wlan-heb.md)
+      - [`/arm-io/aop-spmi0/baseband-heb`](root__arm-io__aop-spmi0__baseband-heb.md) — baseband,heb → **AppleBasebandSPMIHEB, AppleSARSPMIHEB**
+      - [`/arm-io/aop-spmi0/stockholm-spmi`](root__arm-io__aop-spmi0__stockholm-spmi.md) — nfc,primary,spmi → **AppleStockholmSPMI**
+        - [`/arm-io/aop-spmi0/stockholm-spmi/stockholm`](root__arm-io__aop-spmi0__stockholm-spmi__stockholm.md) — nfc,primary,gpio → **AppleStockholmControl**
+      - [`/arm-io/aop-spmi0/hammerfest-spmi`](root__arm-io__aop-spmi0__hammerfest-spmi.md) — nfc,secondary,spmi → **AppleStockholmSPMI**
+        - [`/arm-io/aop-spmi0/hammerfest-spmi/hammerfest`](root__arm-io__aop-spmi0__hammerfest-spmi__hammerfest.md) — nfc,secondary,gpio → **AppleStockholmControl**
+      - [`/arm-io/aop-spmi0/uwb0`](root__arm-io__aop-spmi0__uwb0.md)
+    - [`/arm-io/aop-spmi1`](root__arm-io__aop-spmi1.md) — aapl,spmi → **AppleSPMIController**
+      - [`/arm-io/aop-spmi1/uwb`](root__arm-io__aop-spmi1__uwb.md)
+      - [`/arm-io/aop-spmi1/wlan-idc`](root__arm-io__aop-spmi1__wlan-idc.md) — wlan,idc → **AppleSARSPMIIDCWLAN**
+      - [`/arm-io/aop-spmi1/baseband-idc`](root__arm-io__aop-spmi1__baseband-idc.md) — baseband,idc → **AppleBasebandSPMIHEB, AppleSARSPMIIDC**
+    - [`/arm-io/display-crossbar0`](root__arm-io__display-crossbar0.md) — display-crossbar,t8112 → **AppleT8112DisplayCrossbar**
+    - [`/arm-io/atc0-dpxbar`](root__arm-io__atc0-dpxbar.md) — atc-dpxbar,t602x → **AppleT602XATCDPXBAR**
+    - [`/arm-io/atc0-dpphy`](root__arm-io__atc0-dpphy.md) — atc-dpphy,t8160
+    - [`/arm-io/atc-phy0`](root__arm-io__atc-phy0.md) — atc-phy,t8160 → **AppleT8160TypeCPhy**
+    - [`/arm-io/dart-usb0`](root__arm-io__dart-usb0.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-usb0/mapper-usb`](root__arm-io__dart-usb0__mapper-usb.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/usb-drd0`](root__arm-io__usb-drd0.md) — usb-drd,t8160 → **AppleT8160USBXDCI, AppleT8160USBXHCI**
+      - [`/arm-io/usb-drd0/usb-drd0-port-hs`](root__arm-io__usb-drd0__usb-drd0-port-hs.md)
+      - [`/arm-io/usb-drd0/:borneo_h19a_5`](root__arm-io__usb-drd0___borneo_h19a_5.md)
+      - [`/arm-io/usb-drd0/:borneo_h19p_5`](root__arm-io__usb-drd0___borneo_h19p_5.md)
+        - [`/arm-io/usb-drd0/:borneo_h19p_5/usb-drd0-port-ss`](root__arm-io__usb-drd0___borneo_h19p_5__usb-drd0-port-ss.md)
+    - [`/arm-io/dcp`](root__arm-io__dcp.md) — iop,ascwrap-v8 → **AppleASCWrapV8**
+      - [`/arm-io/dcp/iop-dcp-nub`](root__arm-io__dcp__iop-dcp-nub.md) — iop-nub,rtbuddy-v2 → **RTBuddy**
+    - [`/arm-io/dcp0-expert`](root__arm-io__dcp0-expert.md) — dcp-expert-v1 → **AppleDCPExpert**
+    - [`/arm-io/disp0`](root__arm-io__disp0.md) — disp0,t8160 → **AppleCLCD2**
+      - [`/arm-io/disp0/hilo`](root__arm-io__disp0__hilo.md)
+    - [`/arm-io/dart-dcp`](root__arm-io__dart-dcp.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-dcp/mapper-dcp`](root__arm-io__dart-dcp__mapper-dcp.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-dcp/mapper-dcp-exclave`](root__arm-io__dart-dcp__mapper-dcp-exclave.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/dart-disp0`](root__arm-io__dart-disp0.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-disp0/mapper-disp0`](root__arm-io__dart-disp0__mapper-disp0.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-disp0/mapper-disp0-piodma`](root__arm-io__dart-disp0__mapper-disp0-piodma.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-disp0/mapper-disp0-scl`](root__arm-io__dart-disp0__mapper-disp0-scl.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-disp0/mapper-disp0-sca`](root__arm-io__dart-disp0__mapper-disp0-sca.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/dart-dispgrt`](root__arm-io__dart-dispgrt.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-dispgrt/mapper-dispgrt`](root__arm-io__dart-dispgrt__mapper-dispgrt.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/dart-disp0-isoc`](root__arm-io__dart-disp0-isoc.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-disp0-isoc/mapper-disp0-dpa`](root__arm-io__dart-disp0-isoc__mapper-disp0-dpa.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/admac-dispint0`](root__arm-io__admac-dispint0.md) — admac,v5p0 → **AudioDMAController**
+    - [`/arm-io/admac-dispint0-ced-ssw`](root__arm-io__admac-dispint0-ced-ssw.md) — admacled,v1p0 → **AudioDMACLLTEscalationDetector**
+    - [`/arm-io/dp-audio0`](root__arm-io__dp-audio0.md) → **DCPAVAudioDMADelegate**
+    - [`/arm-io/dcp-sac-controller`](root__arm-io__dcp-sac-controller.md) → **DCPAVSACController**
+    - [`/arm-io/dcp-exclave-mailbox`](root__arm-io__dcp-exclave-mailbox.md) — iop,secure-rtbuddy-proxy → **SecureRTBuddyProxy**
+    - [`/arm-io/dcp-exclave-ioreporting`](root__arm-io__dcp-exclave-ioreporting.md) — iop,secure-rtbuddy-ioreporting → **SecureRTBuddyIOReporting**
+    - [`/arm-io/exdisplaypipe`](root__arm-io__exdisplaypipe.md) — exdisplaypipe,t8160 → **EXDisplayPipe**
+    - [`/arm-io/exdisplaypipe-s-proxy`](root__arm-io__exdisplaypipe-s-proxy.md)
+    - [`/arm-io/dcpsec`](root__arm-io__dcpsec.md) — iop,ascwrap-v8 → **AppleASCWrapV8**
+      - [`/arm-io/dcpsec/iop-dcpsec-nub`](root__arm-io__dcpsec__iop-dcpsec-nub.md) — iop-nub,rtbuddy-v2 → **RTBuddy**
+    - [`/arm-io/dcpsec-expert`](root__arm-io__dcpsec-expert.md) — dcp-expert-v1 → **AppleDCPExpert**
+    - [`/arm-io/dispsec`](root__arm-io__dispsec.md) — dispsec,t8160 → **AppleCLCD2**
+      - [`/arm-io/dispsec/hilo`](root__arm-io__dispsec__hilo.md)
+    - [`/arm-io/dart-dcpsec`](root__arm-io__dart-dcpsec.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-dcpsec/mapper-dcpsec`](root__arm-io__dart-dcpsec__mapper-dcpsec.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-dcpsec/mapper-dcpsec-exclave`](root__arm-io__dart-dcpsec__mapper-dcpsec-exclave.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/dart-dispsec`](root__arm-io__dart-dispsec.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-dispsec/mapper-dispsec`](root__arm-io__dart-dispsec__mapper-dispsec.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-dispsec/mapper-dispsec-piodma`](root__arm-io__dart-dispsec__mapper-dispsec-piodma.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-dispsec/mapper-dispsec-scl`](root__arm-io__dart-dispsec__mapper-dispsec-scl.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-dispsec/mapper-dispsec-sca`](root__arm-io__dart-dispsec__mapper-dispsec-sca.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/dart-dispsecgrt`](root__arm-io__dart-dispsecgrt.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-dispsecgrt/mapper-dispsecgrt`](root__arm-io__dart-dispsecgrt__mapper-dispsecgrt.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/dcpsec-sac-controller`](root__arm-io__dcpsec-sac-controller.md) — dcp-sac-controller → **DCPAVSACController**
+    - [`/arm-io/dcpsec-exclave-mailbox`](root__arm-io__dcpsec-exclave-mailbox.md) — iop,secure-rtbuddy-proxy → **SecureRTBuddyProxy**
+    - [`/arm-io/dcpsec-exclave-ioreporting`](root__arm-io__dcpsec-exclave-ioreporting.md) — iop,secure-rtbuddy-ioreporting → **SecureRTBuddyIOReporting**
+    - [`/arm-io/exdisplaypipe1`](root__arm-io__exdisplaypipe1.md) — exdisplaypipe1,t8160 → **EXDisplayPipe**
+    - [`/arm-io/exdisplaypipe1-s-proxy`](root__arm-io__exdisplaypipe1-s-proxy.md)
+    - [`/arm-io/dispext0`](root__arm-io__dispext0.md) — dispext0,t8160 → **AppleCLCD2**
+    - [`/arm-io/dcpext0-expert`](root__arm-io__dcpext0-expert.md) — dcp-expert-v1 → **AppleDCPExpert**
+    - [`/arm-io/dcpext0`](root__arm-io__dcpext0.md) — iop,ascwrap-v8 → **AppleASCWrapV8**
+      - [`/arm-io/dcpext0/iop-dcpext0-nub`](root__arm-io__dcpext0__iop-dcpext0-nub.md) — iop-nub,rtbuddy-v2 → **RTBuddy**
+    - [`/arm-io/dart-dcpext0`](root__arm-io__dart-dcpext0.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-dcpext0/mapper-dcpext0`](root__arm-io__dart-dcpext0__mapper-dcpext0.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-dcpext0/mapper-dcpext0-exclave`](root__arm-io__dart-dcpext0__mapper-dcpext0-exclave.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/dart-dispext0`](root__arm-io__dart-dispext0.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-dispext0/mapper-dispext0`](root__arm-io__dart-dispext0__mapper-dispext0.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-dispext0/mapper-dispext0-piodma`](root__arm-io__dart-dispext0__mapper-dispext0-piodma.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/dart-dispext0-isoc`](root__arm-io__dart-dispext0-isoc.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-dispext0-isoc/mapper-dispext0-dpa`](root__arm-io__dart-dispext0-isoc__mapper-dispext0-dpa.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/admac-dispext0`](root__arm-io__admac-dispext0.md) — admac,v5p0 → **AudioDMAController**
+    - [`/arm-io/admac-dispext0-ced-ssw`](root__arm-io__admac-dispext0-ced-ssw.md) — admacled,v1p0 → **AudioDMACLLTEscalationDetector**
+    - [`/arm-io/dp-audio1`](root__arm-io__dp-audio1.md) → **DCPAVAudioDMADelegate**
+    - [`/arm-io/scaler0`](root__arm-io__scaler0.md) — scaler,t8101, scaler,s5l8960x → **AppleM2ScalerCSCDriver**
+    - [`/arm-io/dart-scaler`](root__arm-io__dart-scaler.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-scaler/mapper-scaler`](root__arm-io__dart-scaler__mapper-scaler.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-scaler/mapper-scaler-piodma`](root__arm-io__dart-scaler__mapper-scaler-piodma.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/jpeg`](root__arm-io__jpeg.md) — jpeg,t8101, jpeg,s5l8920x → **AppleJPEGDriver**
+    - [`/arm-io/dart-jpeg`](root__arm-io__dart-jpeg.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-jpeg/mapper-jpeg`](root__arm-io__dart-jpeg__mapper-jpeg.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/ispRtb`](root__arm-io__ispRtb.md) — iop-isp,ascwrap-v8 → **AppleASCWrapV8SISP**
+      - [`/arm-io/ispRtb/iop-isp-nub`](root__arm-io__ispRtb__iop-isp-nub.md) — iop-nub,rtbuddy-v2 → **RTBuddy**
+    - [`/arm-io/isp`](root__arm-io__isp.md) — isp,isp-generic-ex, isp,s5l8960x → **AppleCamera**
+    - [`/arm-io/dart-isp`](root__arm-io__dart-isp.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-isp/mapper-isp`](root__arm-io__dart-isp__mapper-isp.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-isp/mapper-isp-mpm`](root__arm-io__dart-isp__mapper-isp-mpm.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-isp/mapper-isp-epipe0-exclave`](root__arm-io__dart-isp__mapper-isp-epipe0-exclave.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-isp/mapper-isp-epipe1-exclave`](root__arm-io__dart-isp__mapper-isp-epipe1-exclave.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-isp/mapper-isp-piodma1-exclave`](root__arm-io__dart-isp__mapper-isp-piodma1-exclave.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-isp/mapper-isp-exclave-secure1`](root__arm-io__dart-isp__mapper-isp-exclave-secure1.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/isp-exclave-proxy`](root__arm-io__isp-exclave-proxy.md) — isp,isp-exclave-proxy → **AppleExclaveCameraProxy**
+    - [`/arm-io/isp-exclave-s-proxy`](root__arm-io__isp-exclave-s-proxy.md)
+    - [`/arm-io/eic`](root__arm-io__eic.md)
+    - [`/arm-io/ave`](root__arm-io__ave.md) — ave2 → **AppleAVE2Driver**
+    - [`/arm-io/dart-ave`](root__arm-io__dart-ave.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-ave/mapper-ave`](root__arm-io__dart-ave__mapper-ave.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/avd`](root__arm-io__avd.md) — avd,t8103 → **AppleAVD**
+    - [`/arm-io/dart-avd`](root__arm-io__dart-avd.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-avd/mapper-avd`](root__arm-io__dart-avd__mapper-avd.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-avd/mapper-avd-piodma`](root__arm-io__dart-avd__mapper-avd-piodma.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-avd/mapper-avd-adsbuf`](root__arm-io__dart-avd__mapper-avd-adsbuf.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/ane0`](root__arm-io__ane0.md) — iop-ane,ascwrap-v8 → **AppleASCWrapV8ANE**
+      - [`/arm-io/ane0/iop-ane0-nub`](root__arm-io__ane0__iop-ane0-nub.md) — iop-nub,rtbuddy-v2 → **RTBuddy**
+    - [`/arm-io/dart-ane0`](root__arm-io__dart-ane0.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-ane0/mapper-ane0`](root__arm-io__dart-ane0__mapper-ane0.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-ane0/mapper-ane0-iso1`](root__arm-io__dart-ane0__mapper-ane0-iso1.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-ane0/mapper-ane0-iso2`](root__arm-io__dart-ane0__mapper-ane0-iso2.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-ane0/mapper-ane0-iso3`](root__arm-io__dart-ane0__mapper-ane0-iso3.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-ane0/mapper-ane0-iso4`](root__arm-io__dart-ane0__mapper-ane0-iso4.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-ane0/mapper-ane0-iso5`](root__arm-io__dart-ane0__mapper-ane0-iso5.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-ane0/mapper-ane0-iso6`](root__arm-io__dart-ane0__mapper-ane0-iso6.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-ane0/mapper-ane0-iso7`](root__arm-io__dart-ane0__mapper-ane0-iso7.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-ane0/mapper-ane0-mpm`](root__arm-io__dart-ane0__mapper-ane0-mpm.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/ane1`](root__arm-io__ane1.md) — iop-ane,ascwrap-v8 → **AppleASCWrapV8ANE**
+      - [`/arm-io/ane1/iop-ane1-nub`](root__arm-io__ane1__iop-ane1-nub.md) — iop-nub,rtbuddy-v2 → **RTBuddy**
+    - [`/arm-io/dart-ane1`](root__arm-io__dart-ane1.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-ane1/mapper-ane1`](root__arm-io__dart-ane1__mapper-ane1.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-ane1/mapper-ane1-iso1`](root__arm-io__dart-ane1__mapper-ane1-iso1.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-ane1/mapper-ane1-iso2`](root__arm-io__dart-ane1__mapper-ane1-iso2.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-ane1/mapper-ane1-iso3`](root__arm-io__dart-ane1__mapper-ane1-iso3.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-ane1/mapper-ane1-iso4`](root__arm-io__dart-ane1__mapper-ane1-iso4.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-ane1/mapper-ane1-iso5`](root__arm-io__dart-ane1__mapper-ane1-iso5.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-ane1/mapper-ane1-iso6`](root__arm-io__dart-ane1__mapper-ane1-iso6.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-ane1/mapper-ane1-iso7`](root__arm-io__dart-ane1__mapper-ane1-iso7.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-ane1/mapper-ane1-mpm`](root__arm-io__dart-ane1__mapper-ane1-mpm.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/ane-exclave-proxy`](root__arm-io__ane-exclave-proxy.md) — ane,ane-exclave-proxy → **ANEExclaveProxy**
+    - [`/arm-io/ane1-exclave-proxy`](root__arm-io__ane1-exclave-proxy.md) — ane,ane1-exclave-proxy → **ANEExclaveProxy**
+    - [`/arm-io/sgx`](root__arm-io__sgx.md) — gpu,t8160 → **AGXAcceleratorG19P**
+    - [`/arm-io/gfx-asc`](root__arm-io__gfx-asc.md) — iop,ascwrap-v8 → **AppleASCWrapV8**
+      - [`/arm-io/gfx-asc/iop-gfx-nub`](root__arm-io__gfx-asc__iop-gfx-nub.md) — iop-nub,rtbuddy-v2 → **RTBuddy**
+    - [`/arm-io/gfx1-asc`](root__arm-io__gfx1-asc.md) — iop,ascwrap-v8 → **AppleASCWrapV8**
+      - [`/arm-io/gfx1-asc/iop-gfx1-nub`](root__arm-io__gfx1-asc__iop-gfx1-nub.md) — iop-nub,rtbuddy-v2 → **RTBuddy**
+    - [`/arm-io/mapper-gfx-asc`](root__arm-io__mapper-gfx-asc.md) — iommu-mapper,gfx → **AGXArmFirmwareMapper**
+    - [`/arm-io/iop-audio-controller`](root__arm-io__iop-audio-controller.md) — iop-audio,controller → **IOPAudioController**
+      - [`/arm-io/iop-audio-controller/audio-hp`](root__arm-io__iop-audio-controller__audio-hp.md) — iop-adma-stream,mca → **AppleAOPAudioClientManager, AppleIOPADMAStream**
+        - [`/arm-io/iop-audio-controller/audio-hp/audio-codec`](root__arm-io__iop-audio-controller__audio-hp__audio-codec.md) — audio-data,cs42l79
+      - [`/arm-io/iop-audio-controller/audio-leap-internal-loopback`](root__arm-io__iop-audio-controller__audio-leap-internal-loopback.md) — iop-adma-stream,leap → **AppleAOPAudioClientManager, AppleIOPADMAStream**
+        - [`/arm-io/iop-audio-controller/audio-leap-internal-loopback/audio-leap-internal-loopback`](root__arm-io__iop-audio-controller__audio-leap-internal-loopback__audio-leap-internal-loopback.md) — audio-data,external → **AppleAOPAudioClientManager, AppleExternalSecondaryAudio**
+      - [`/arm-io/iop-audio-controller/audio-mca-loopback`](root__arm-io__iop-audio-controller__audio-mca-loopback.md) — iop-adma-stream,mca → **AppleIOPADMAStream**
+        - [`/arm-io/iop-audio-controller/audio-mca-loopback/audio-mca-loopback`](root__arm-io__iop-audio-controller__audio-mca-loopback__audio-mca-loopback.md) — audio-data,audio-loopback → **AppleSecondaryAudio**
+      - [`/arm-io/iop-audio-controller/audio-receiver`](root__arm-io__iop-audio-controller__audio-receiver.md) — iop-adma-stream,mca → **AppleIOPADMAStream**
+        - [`/arm-io/iop-audio-controller/audio-receiver/audio-receiver`](root__arm-io__iop-audio-controller__audio-receiver__audio-receiver.md) — audio-data,external → **AppleExternalSecondaryAudio**
+      - [`/arm-io/iop-audio-controller/audio-flicker`](root__arm-io__iop-audio-controller__audio-flicker.md) — iop-adma-stream,mca → **AppleIOPADMAStream**
+        - [`/arm-io/iop-audio-controller/audio-flicker/audio-flicker`](root__arm-io__iop-audio-controller__audio-flicker__audio-flicker.md) — audio-data,external → **AppleExternalSecondaryAudio**
+      - [`/arm-io/iop-audio-controller/audio-s-leap-internal-loopback`](root__arm-io__iop-audio-controller__audio-s-leap-internal-loopback.md) — iop-adma-stream,leap → **AppleIOPADMAStream**
+        - [`/arm-io/iop-audio-controller/audio-s-leap-internal-loopback/audio-s-leap-internal-loopback`](root__arm-io__iop-audio-controller__audio-s-leap-internal-loopback__audio-s-leap-internal-loopback.md) — audio-data,external → **AppleExternalSecondaryAudio**
+      - [`/arm-io/iop-audio-controller/lp-mic-device`](root__arm-io__iop-audio-controller__lp-mic-device.md) — iop-audio,lp-mic-device → **IOPAudioLPMicDevice**
+      - [`/arm-io/iop-audio-controller/lp-mic-io-buffer-device`](root__arm-io__iop-audio-controller__lp-mic-io-buffer-device.md) — iop-audio,isolated-io-buffer-device → **IOPAudioIsolatedIOBufferDevice**
+      - [`/arm-io/iop-audio-controller/siri-listening-device`](root__arm-io__iop-audio-controller__siri-listening-device.md) — iop-audio,client-manager-device → **IOPAudioClientManagerDevice**
+      - [`/arm-io/iop-audio-controller/lp-mic-injection-device`](root__arm-io__iop-audio-controller__lp-mic-injection-device.md) — iop-adma-stream,mca → **AppleIOPADMAStream**
+        - [`/arm-io/iop-audio-controller/lp-mic-injection-device/lp-mic-injection-device`](root__arm-io__iop-audio-controller__lp-mic-injection-device__lp-mic-injection-device.md) — audio-data,external → **AppleExternalSecondaryAudio**
+      - [`/arm-io/iop-audio-controller/audio-speaker-mca`](root__arm-io__iop-audio-controller__audio-speaker-mca.md) — iop-adma-stream,mca → **AppleIOPADMAStream**
+        - [`/arm-io/iop-audio-controller/audio-speaker-mca/audio-speaker`](root__arm-io__iop-audio-controller__audio-speaker-mca__audio-speaker.md) — audio-data,cs35l28
+      - [`/arm-io/iop-audio-controller/audio-speaker-tap`](root__arm-io__iop-audio-controller__audio-speaker-tap.md) — iop-adma-stream,mca → **AppleIOPADMAStream**
+        - [`/arm-io/iop-audio-controller/audio-speaker-tap/audio-speaker-tap`](root__arm-io__iop-audio-controller__audio-speaker-tap__audio-speaker-tap.md) — audio-data,external → **AppleExternalSecondaryAudio**
+      - [`/arm-io/iop-audio-controller/audio-speaker`](root__arm-io__iop-audio-controller__audio-speaker.md) — audio-iop-speaker → **IOPAudioSpeaker**
+      - [`/arm-io/iop-audio-controller/audio-haptic`](root__arm-io__iop-audio-controller__audio-haptic.md) — audio-control,audio-iop-haptics → **IOPHaptics**
+      - [`/arm-io/iop-audio-controller/audio-haptic-transport`](root__arm-io__iop-audio-controller__audio-haptic-transport.md) — iop-adma-stream,leap → **AppleIOPADMAStream**
+        - [`/arm-io/iop-audio-controller/audio-haptic-transport/audio-haptic`](root__arm-io__iop-audio-controller__audio-haptic-transport__audio-haptic.md) — audio-data,audio-iop-haptics
+      - [`/arm-io/iop-audio-controller/audio-hw-pcm-audiomgr`](root__arm-io__iop-audio-controller__audio-hw-pcm-audiomgr.md) — iop-audio,pcm-asset-manager-device → **AppleAOPAudioPCMAssetManagerDevice, IOPAudioPCMAssetManagerDevice**
+      - [`/arm-io/iop-audio-controller/audio-hpdbg`](root__arm-io__iop-audio-controller__audio-hpdbg.md) — audio-control,audio-iop-haptic-debug → **IOPHapticDebug**
+      - [`/arm-io/iop-audio-controller/audio-hpdbg-transport`](root__arm-io__iop-audio-controller__audio-hpdbg-transport.md) — iop-adma-stream,leap → **AppleIOPADMAStream**
+        - [`/arm-io/iop-audio-controller/audio-hpdbg-transport/audio-hpdbg`](root__arm-io__iop-audio-controller__audio-hpdbg-transport__audio-hpdbg.md) — audio-data,audio-iop-hpdbg
+      - [`/arm-io/iop-audio-controller/audio-haptic-leap`](root__arm-io__iop-audio-controller__audio-haptic-leap.md) — iop-audio,haptics-leap-control-device → **AppleAOPAudioHapticLEAP, IOPAudioHapticsLEAPControlDevice**
+      - [`/arm-io/iop-audio-controller/audio-haptic-parking`](root__arm-io__iop-audio-controller__audio-haptic-parking.md)
+    - [`/arm-io/iop-voicetrigger-controller`](root__arm-io__iop-voicetrigger-controller.md) — iop-audio,controller → **IOPAudioController**
+      - [`/arm-io/iop-voicetrigger-controller/audio-vt-device`](root__arm-io__iop-voicetrigger-controller__audio-vt-device.md) — iop-audio,isolated-vt-device → **IOPAudioIsolatedVoiceTriggerDevice**
+    - [`/arm-io/admac-aop-ced-ssw`](root__arm-io__admac-aop-ced-ssw.md) — admacled,v1p0 → **AudioDMACLLTEscalationDetector**
+    - [`/arm-io/admac-base-ns`](root__arm-io__admac-base-ns.md) — admac-evolution,v5p0 → **AudioDMAController**
+      - [`/arm-io/admac-base-ns/base-ns-adma-rx-2`](root__arm-io__admac-base-ns__base-ns-adma-rx-2.md) — audio-dma-channel,v4p0
+      - [`/arm-io/admac-base-ns/base-ns-adma-rx-3`](root__arm-io__admac-base-ns__base-ns-adma-rx-3.md) — audio-dma-channel,v4p0
+      - [`/arm-io/admac-base-ns/base-ns-adma-rx-4`](root__arm-io__admac-base-ns__base-ns-adma-rx-4.md) — audio-dma-channel,v4p0
+      - [`/arm-io/admac-base-ns/base-ns-adma-rx-5`](root__arm-io__admac-base-ns__base-ns-adma-rx-5.md) — audio-dma-channel,v4p0
+      - [`/arm-io/admac-base-ns/base-ns-adma-tx-7`](root__arm-io__admac-base-ns__base-ns-adma-tx-7.md) — audio-dma-channel,v4p0
+      - [`/arm-io/admac-base-ns/base-ns-adma-tx-8`](root__arm-io__admac-base-ns__base-ns-adma-tx-8.md) — audio-dma-channel,v4p0
+      - [`/arm-io/admac-base-ns/base-ns-adma-rx-8`](root__arm-io__admac-base-ns__base-ns-adma-rx-8.md) — audio-dma-channel,v4p0
+    - [`/arm-io/admac-leap-ns`](root__arm-io__admac-leap-ns.md) — admac-evolution,v5p0 → **AudioDMAController**
+      - [`/arm-io/admac-leap-ns/leap-ns-adma-tx-1`](root__arm-io__admac-leap-ns__leap-ns-adma-tx-1.md) — audio-dma-channel,v4p0
+      - [`/arm-io/admac-leap-ns/leap-ns-adma-rx-1`](root__arm-io__admac-leap-ns__leap-ns-adma-rx-1.md) — audio-dma-channel,v4p0
+      - [`/arm-io/admac-leap-ns/leap-ns-adma-tx-2`](root__arm-io__admac-leap-ns__leap-ns-adma-tx-2.md) — audio-dma-channel,v4p0
+      - [`/arm-io/admac-leap-ns/leap-ns-adma-tx-3`](root__arm-io__admac-leap-ns__leap-ns-adma-tx-3.md) — audio-dma-channel,v4p0
+      - [`/arm-io/admac-leap-ns/leap-ns-adma-rx-3`](root__arm-io__admac-leap-ns__leap-ns-adma-rx-3.md) — audio-dma-channel,v4p0
+    - [`/arm-io/admac-base-s`](root__arm-io__admac-base-s.md) — admac-evolution,v5p0 → **AudioDMAController**
+      - [`/arm-io/admac-base-s/base-s-adma-tx-2`](root__arm-io__admac-base-s__base-s-adma-tx-2.md) — audio-dma-channel,v4p0
+      - [`/arm-io/admac-base-s/base-s-adma-tx-3`](root__arm-io__admac-base-s__base-s-adma-tx-3.md) — audio-dma-channel,v4p0
+      - [`/arm-io/admac-base-s/base-s-adma-rx-4`](root__arm-io__admac-base-s__base-s-adma-rx-4.md) — audio-dma-channel,v4p0
+    - [`/arm-io/admac-hp-mic-ec-proxy`](root__arm-io__admac-hp-mic-ec-proxy.md) — admac-ec-proxy → **DMAChannelProxy**
+    - [`/arm-io/admac-speaker-tx-ec-proxy`](root__arm-io__admac-speaker-tx-ec-proxy.md) — admac-ec-proxy → **DMAChannelProxy**
+    - [`/arm-io/admac-receiver-tx-ec-proxy`](root__arm-io__admac-receiver-tx-ec-proxy.md) — admac-ec-proxy → **DMAChannelProxy**
+    - [`/arm-io/audio-speaker-tx-stream-proxy`](root__arm-io__audio-speaker-tx-stream-proxy.md) — iisaudio,isolated-output-stream-proxy → **IISAudioIsolatedOutputStreamECProxy**
+    - [`/arm-io/audio-receiver-tx-stream-proxy`](root__arm-io__audio-receiver-tx-stream-proxy.md) — iisaudio,isolated-output-stream-proxy → **IISAudioIsolatedOutputStreamECProxy**
+    - [`/arm-io/admac-sllb-ec-proxy`](root__arm-io__admac-sllb-ec-proxy.md) — admac-ec-proxy → **DMAChannelProxy**
+    - [`/arm-io/audio-sllb-proxy`](root__arm-io__audio-sllb-proxy.md) — iisaudio,isolated-stream-proxy → **IISAudioIsolatedStreamECProxy**
+    - [`/arm-io/admac-leap-s`](root__arm-io__admac-leap-s.md) — admac-evolution,v5p0 → **AudioDMAController**
+      - [`/arm-io/admac-leap-s/leap-s-adma-rx-2`](root__arm-io__admac-leap-s__leap-s-adma-rx-2.md) — audio-dma-channel,v4p0
+    - [`/arm-io/audio-hp-proxy`](root__arm-io__audio-hp-proxy.md) — iisaudio,isolated-stream-proxy → **IISAudioIsolatedStreamECProxy**
+    - [`/arm-io/audio-shared-dart-proxy`](root__arm-io__audio-shared-dart-proxy.md) → **SharedDARTMapperProxy**
+    - [`/arm-io/apcie`](root__arm-io__apcie.md) — apcie,t8160 → **AppleT8160PCIe**
+      - [`/arm-io/apcie/pci-bridge0`](root__arm-io__apcie__pci-bridge0.md) — apcie-bridge → **APCIECoreRCGen5p1HostBridge**
+        - [`/arm-io/apcie/pci-bridge0/centauri-control`](root__arm-io__apcie__pci-bridge0__centauri-control.md)
+        - [`/arm-io/apcie/pci-bridge0/centauri-alpha`](root__arm-io__apcie__pci-bridge0__centauri-alpha.md)
+        - [`/arm-io/apcie/pci-bridge0/centauri-beta`](root__arm-io__apcie__pci-bridge0__centauri-beta.md)
+      - [`/arm-io/apcie/pci-bridge1`](root__arm-io__apcie__pci-bridge1.md) — apcie-bridge → **APCIECoreRCGen5p1HostBridge**
+        - [`/arm-io/apcie/pci-bridge1/baseband-pcie-leda`](root__arm-io__apcie__pci-bridge1__baseband-pcie-leda.md) → **AppleConvergedPCILedaBB**
+    - [`/arm-io/dart-apcie0`](root__arm-io__dart-apcie0.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-apcie0/mapper-apcie0-control`](root__arm-io__dart-apcie0__mapper-apcie0-control.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-apcie0/mapper-apcie0-alpha`](root__arm-io__dart-apcie0__mapper-apcie0-alpha.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-apcie0/mapper-apcie0-beta`](root__arm-io__dart-apcie0__mapper-apcie0-beta.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-apcie0/mapper-apcie0-piodma`](root__arm-io__dart-apcie0__mapper-apcie0-piodma.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-apcie0/mapper-apcie0-plce`](root__arm-io__dart-apcie0__mapper-apcie0-plce.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/apcie0-piodma`](root__arm-io__apcie0-piodma.md) — pcie-apiodma,gen3p0 → **ApplePCIePIODMA**
+    - [`/arm-io/apcie0-plce`](root__arm-io__apcie0-plce.md) — plce,t8160 → **APCIECoreRCGen5PLCE**
+    - [`/arm-io/dart-apcie1`](root__arm-io__dart-apcie1.md) — dart,t8110 → **AppleT8110DART**
+      - [`/arm-io/dart-apcie1/mapper-apcie1`](root__arm-io__dart-apcie1__mapper-apcie1.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-apcie1/mapper-apcie1-piodma`](root__arm-io__dart-apcie1__mapper-apcie1-piodma.md) — iommu-mapper → **IODARTMapper**
+      - [`/arm-io/dart-apcie1/mapper-apcie1-plce`](root__arm-io__dart-apcie1__mapper-apcie1-plce.md) — iommu-mapper → **IODARTMapper**
+    - [`/arm-io/apcie1-piodma`](root__arm-io__apcie1-piodma.md) — pcie-apiodma,gen3p0 → **ApplePCIePIODMA**
+    - [`/arm-io/apcie1-plce`](root__arm-io__apcie1-plce.md) — plce,t8160 → **APCIECoreRCGen5PLCE**
+    - [`/arm-io/smctempsensor0`](root__arm-io__smctempsensor0.md) — smc-tempsensor → **AppleSMCSensorDispatcher**
+    - [`/arm-io/cpu-debug-interface`](root__arm-io__cpu-debug-interface.md) → **AppleARMLightEmUp**
+    - [`/arm-io/dbgCPU`](root__arm-io__dbgCPU.md) — AppleDebugCPU
+    - [`/arm-io/aod2`](root__arm-io__aod2.md) — aod,t8101, aod,s5l8960x
+    - [`/arm-io/aod3`](root__arm-io__aod3.md) — aod,t8101, aod,s5l8960x
+    - [`/arm-io/aod4`](root__arm-io__aod4.md) — aod,t8101, aod,s5l8960x
+    - [`/arm-io/haptics-support-interface`](root__arm-io__haptics-support-interface.md) — haptics-support,leap → **AppleHapticsSupportLEAP**
+    - [`/arm-io/audio-resource-manager`](root__arm-io__audio-resource-manager.md) — audio,embedded-resource-manager → **AppleEmbeddedAudioResourceManager**
+    - [`/arm-io/bluetooth`](root__arm-io__bluetooth.md)
+    - [`/arm-io/grimaldi`](root__arm-io__grimaldi.md) — aop,h16,vd5b704 → **AppleCameraPhotonDetector**
+    - [`/arm-io/gpio-canary`](root__arm-io__gpio-canary.md) — gpio-canary,t8101 → **AppleGPIOCanary**
+    - [`/arm-io/sapt`](root__arm-io__sapt.md)
+    - [`/arm-io/msg`](root__arm-io__msg.md) — msg-mapper → **AppleMSGKext**
+    - [`/arm-io/secure-repair`](root__arm-io__secure-repair.md) — secure-repair,1 → **AppleSecureRepair**
+    - [`/arm-io/baseband-ptd`](root__arm-io__baseband-ptd.md) — baseband,ptd → **AppleBasebandSARPTD**
+    - [`/arm-io/apple-processor-trace`](root__arm-io__apple-processor-trace.md) — apple-processor-trace,t8160 → **AppleProcessorTraceT8160**
+    - [`/arm-io/device-supports-gf2`](root__arm-io__device-supports-gf2.md)
+  - [`/buttons`](root__buttons.md) — buttons → **AppleM68Buttons**
+  - [`/port-usb-c-1`](root__port-usb-c-1.md) — dock,usb-c
+  - [`/port-magsafe-1`](root__port-magsafe-1.md) — dock,0pin → **IOAccessoryDock0PinBuiltin**
+  - [`/backlight`](root__backlight.md) → **AppleARMBacklight**
+  - [`/core-brightness`](root__core-brightness.md)
+    - [`/core-brightness/brightness-primary`](root__core-brightness__brightness-primary.md)
+    - [`/core-brightness/brightness-secondary`](root__core-brightness__brightness-secondary.md)
+    - [`/core-brightness/brightness-secondary-doe1`](root__core-brightness__brightness-secondary-doe1.md)
+  - [`/exbright`](root__exbright.md) → **EXBrightKext**
+    - [`/exbright/contrast-indicator-0`](root__exbright__contrast-indicator-0.md)
+    - [`/exbright/contrast-indicator-1`](root__exbright__contrast-indicator-1.md)
+  - [`/display-health-monitor`](root__display-health-monitor.md) → **DisplayHealthMonitorCompanion**
+  - [`/socd-trace-ram`](root__socd-trace-ram.md)
+  - [`/baseband`](root__baseband.md) — baseband,int1 → **AppleBasebandINT1**
+  - [`/sacm-general`](root__sacm-general.md) — sacm → **AppleARMSlowAdaptiveClockingManager**
+  - [`/sacm-jasper`](root__sacm-jasper.md) — sacm → **AppleARMSlowAdaptiveClockingManager**
+  - [`/defaults`](root__defaults.md) → **AppleImage4, AppleMobileApNonce, Image4**
+  - [`/product`](root__product.md)
+    - [`/product/display0`](root__product__display0.md)
+    - [`/product/display1`](root__product__display1.md)
+    - [`/product/iopm`](root__product__iopm.md)
+    - [`/product/camera`](root__product__camera.md)
+    - [`/product/facetime`](root__product__facetime.md)
+    - [`/product/maps`](root__product__maps.md)
+    - [`/product/haptics`](root__product__haptics.md)
+    - [`/product/audio`](root__product__audio.md)
+  - [`/filesystems`](root__filesystems.md)
+    - [`/filesystems/fstab`](root__filesystems__fstab.md)
+      - [`/filesystems/fstab/xart-vol`](root__filesystems__fstab__xart-vol.md)
+      - [`/filesystems/fstab/system-vol`](root__filesystems__fstab__system-vol.md)
+      - [`/filesystems/fstab/preboot-vol`](root__filesystems__fstab__preboot-vol.md)
+      - [`/filesystems/fstab/data-vol`](root__filesystems__fstab__data-vol.md)
+      - [`/filesystems/fstab/baseband-vol`](root__filesystems__fstab__baseband-vol.md)
+      - [`/filesystems/fstab/update-vol`](root__filesystems__fstab__update-vol.md)
+      - [`/filesystems/fstab/hardware-vol`](root__filesystems__fstab__hardware-vol.md)
+    - [`/filesystems/fstab-ephemeral-recovery-data`](root__filesystems__fstab-ephemeral-recovery-data.md)
+      - [`/filesystems/fstab-ephemeral-recovery-data/ephemeral-recovery-data-vol`](root__filesystems__fstab-ephemeral-recovery-data__ephemeral-recovery-data-vol.md)
+      - [`/filesystems/fstab-ephemeral-recovery-data/preboot-vol`](root__filesystems__fstab-ephemeral-recovery-data__preboot-vol.md)
+      - [`/filesystems/fstab-ephemeral-recovery-data/hardware-vol`](root__filesystems__fstab-ephemeral-recovery-data__hardware-vol.md)
+    - [`/filesystems/fstab-ephemeral-diag-data`](root__filesystems__fstab-ephemeral-diag-data.md)
+      - [`/filesystems/fstab-ephemeral-diag-data/ephemeral-diag-data-vol`](root__filesystems__fstab-ephemeral-diag-data__ephemeral-diag-data-vol.md)
+      - [`/filesystems/fstab-ephemeral-diag-data/baseband-vol`](root__filesystems__fstab-ephemeral-diag-data__baseband-vol.md)
+      - [`/filesystems/fstab-ephemeral-diag-data/update-vol`](root__filesystems__fstab-ephemeral-diag-data__update-vol.md)
+      - [`/filesystems/fstab-ephemeral-diag-data/preboot-vol`](root__filesystems__fstab-ephemeral-diag-data__preboot-vol.md)
+      - [`/filesystems/fstab-ephemeral-diag-data/hardware-vol`](root__filesystems__fstab-ephemeral-diag-data__hardware-vol.md)
+    - [`/filesystems/fstab-ephemeral-devrecov-data`](root__filesystems__fstab-ephemeral-devrecov-data.md)
+      - [`/filesystems/fstab-ephemeral-devrecov-data/xart-vol`](root__filesystems__fstab-ephemeral-devrecov-data__xart-vol.md)
+      - [`/filesystems/fstab-ephemeral-devrecov-data/ephemeral-diag-data-vol`](root__filesystems__fstab-ephemeral-devrecov-data__ephemeral-diag-data-vol.md)
+      - [`/filesystems/fstab-ephemeral-devrecov-data/preboot-vol`](root__filesystems__fstab-ephemeral-devrecov-data__preboot-vol.md)
+      - [`/filesystems/fstab-ephemeral-devrecov-data/hardware-vol`](root__filesystems__fstab-ephemeral-devrecov-data__hardware-vol.md)
+  - [`/fillmore`](root__fillmore.md) — fillmore,bt
+  - [`/iboot-syscfg`](root__iboot-syscfg.md)
+    - [`/iboot-syscfg/manifest-entitlements`](root__iboot-syscfg__manifest-entitlements.md)
+  - [`/centauri`](root__centauri.md) → **AppleCentauriManagerHelper**
+  - [`/dart-tlbi-aperture`](root__dart-tlbi-aperture.md)
+  - [`/ced-ssw`](root__ced-ssw.md)
+    - [`/ced-ssw/ced_tunable_mask`](root__ced-ssw__ced_tunable_mask.md)
+    - [`/ced-ssw/ced_disable_mask`](root__ced-ssw__ced_disable_mask.md)
+  - [`/osenvironments`](root__osenvironments.md)
+    - [`/osenvironments/recovery-environment`](root__osenvironments__recovery-environment.md)
+      - [`/osenvironments/recovery-environment/ephemeral-recovery-data-volume`](root__osenvironments__recovery-environment__ephemeral-recovery-data-volume.md)
+      - [`/osenvironments/recovery-environment/ephemeral-storage`](root__osenvironments__recovery-environment__ephemeral-storage.md)
+      - [`/osenvironments/recovery-environment/no-sepfw-load-at-boot`](root__osenvironments__recovery-environment__no-sepfw-load-at-boot.md)
+      - [`/osenvironments/recovery-environment/no-protected-data-access`](root__osenvironments__recovery-environment__no-protected-data-access.md)
+      - [`/osenvironments/recovery-environment/amfi-allows-trust-cache-load`](root__osenvironments__recovery-environment__amfi-allows-trust-cache-load.md)
+      - [`/osenvironments/recovery-environment/disable-av-content-protection`](root__osenvironments__recovery-environment__disable-av-content-protection.md)
+      - [`/osenvironments/recovery-environment/use-recovery-securityd`](root__osenvironments__recovery-environment__use-recovery-securityd.md)
+      - [`/osenvironments/recovery-environment/disable-accessory-firmware`](root__osenvironments__recovery-environment__disable-accessory-firmware.md)
+      - [`/osenvironments/recovery-environment/image4-allow-magazine-updates`](root__osenvironments__recovery-environment__image4-allow-magazine-updates.md)
+    - [`/osenvironments/diagnostics-environment`](root__osenvironments__diagnostics-environment.md)
+      - [`/osenvironments/diagnostics-environment/ephemeral-diag-data-volume`](root__osenvironments__diagnostics-environment__ephemeral-diag-data-volume.md)
+      - [`/osenvironments/diagnostics-environment/ephemeral-storage`](root__osenvironments__diagnostics-environment__ephemeral-storage.md)
+      - [`/osenvironments/diagnostics-environment/disable-transport-rm`](root__osenvironments__diagnostics-environment__disable-transport-rm.md)
+      - [`/osenvironments/diagnostics-environment/no-protected-data-access`](root__osenvironments__diagnostics-environment__no-protected-data-access.md)
+      - [`/osenvironments/diagnostics-environment/amfi-allows-trust-cache-load`](root__osenvironments__diagnostics-environment__amfi-allows-trust-cache-load.md)
+    - [`/osenvironments/darwinos-ramdisk-environment`](root__osenvironments__darwinos-ramdisk-environment.md)
+      - [`/osenvironments/darwinos-ramdisk-environment/isp-horizon`](root__osenvironments__darwinos-ramdisk-environment__isp-horizon.md)
+      - [`/osenvironments/darwinos-ramdisk-environment/ephemeral-recovery-data-volume`](root__osenvironments__darwinos-ramdisk-environment__ephemeral-recovery-data-volume.md)
+      - [`/osenvironments/darwinos-ramdisk-environment/ephemeral-storage`](root__osenvironments__darwinos-ramdisk-environment__ephemeral-storage.md)
+      - [`/osenvironments/darwinos-ramdisk-environment/no-protected-data-access`](root__osenvironments__darwinos-ramdisk-environment__no-protected-data-access.md)
+      - [`/osenvironments/darwinos-ramdisk-environment/disable-ephemeral-data-mode`](root__osenvironments__darwinos-ramdisk-environment__disable-ephemeral-data-mode.md)
+      - [`/osenvironments/darwinos-ramdisk-environment/no-sepfw-load-at-boot`](root__osenvironments__darwinos-ramdisk-environment__no-sepfw-load-at-boot.md)
+    - [`/osenvironments/macos-darwinos-environment`](root__osenvironments__macos-darwinos-environment.md)
+      - [`/osenvironments/macos-darwinos-environment/set-macos-darwinos-env`](root__osenvironments__macos-darwinos-environment__set-macos-darwinos-env.md)
+      - [`/osenvironments/macos-darwinos-environment/set-unrestricted-subsystem-root`](root__osenvironments__macos-darwinos-environment__set-unrestricted-subsystem-root.md)
+    - [`/osenvironments/embedded-darwinos-environment`](root__osenvironments__embedded-darwinos-environment.md)
+      - [`/osenvironments/embedded-darwinos-environment/set-embedded-darwinos-env`](root__osenvironments__embedded-darwinos-environment__set-embedded-darwinos-env.md)
+      - [`/osenvironments/embedded-darwinos-environment/set-unrestricted-subsystem-root`](root__osenvironments__embedded-darwinos-environment__set-unrestricted-subsystem-root.md)
+    - [`/osenvironments/trusted-darwinos-environment`](root__osenvironments__trusted-darwinos-environment.md)
+      - [`/osenvironments/trusted-darwinos-environment/set-trusted-darwinos-env`](root__osenvironments__trusted-darwinos-environment__set-trusted-darwinos-env.md)
+      - [`/osenvironments/trusted-darwinos-environment/set-userspace-reboot-rem`](root__osenvironments__trusted-darwinos-environment__set-userspace-reboot-rem.md)
+      - [`/osenvironments/trusted-darwinos-environment/set-unrestricted-subsystem-root`](root__osenvironments__trusted-darwinos-environment__set-unrestricted-subsystem-root.md)
+    - [`/osenvironments/repair-environment`](root__osenvironments__repair-environment.md)
+      - [`/osenvironments/repair-environment/set-repair-env`](root__osenvironments__repair-environment__set-repair-env.md)
+    - [`/osenvironments/device-recovery-environment`](root__osenvironments__device-recovery-environment.md)
+      - [`/osenvironments/device-recovery-environment/ephemeral-devrecov-data-volume`](root__osenvironments__device-recovery-environment__ephemeral-devrecov-data-volume.md)
+      - [`/osenvironments/device-recovery-environment/ephemeral-storage`](root__osenvironments__device-recovery-environment__ephemeral-storage.md)
+      - [`/osenvironments/device-recovery-environment/amfi-allows-trust-cache-load`](root__osenvironments__device-recovery-environment__amfi-allows-trust-cache-load.md)
+  - [`/exclaves-test`](root__exclaves-test.md) — exclaves-test → **AppleExclaveExampleKext**
+  - [`/:borneo`](root___borneo.md)
+  - [`/:version`](root___version.md)

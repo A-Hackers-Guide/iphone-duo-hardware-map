@@ -1,0 +1,1762 @@
+# Symbols: `/System/Library/PrivateFrameworks/AXRuntime.framework/AXRuntime`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__PrivateFrameworks__AXRuntime.framework__AXRuntime.md). **[DSC]**
+
+745 public symbols, 1,445 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x193a83344  __TEXT,__text  _AXAPIEnabled
+0x193aa0900  __TEXT,__text  _AXArrayForString
+0x193a8334c  __TEXT,__text  _AXAttributeAllowsRequeryWhenRemoteElementFails
+0x193a92370  __TEXT,__text  _AXAttributeForXCAttribute
+0x1e0b1c928  __DATA_CONST,__const  _AXAuditClippingTest
+0x1e0b1c920  __DATA_CONST,__const  _AXAuditContrastDetectionTest
+0x1e0b1c918  __DATA_CONST,__const  _AXAuditDynamicTextSupportTest
+0x1e0b1c910  __DATA_CONST,__const  _AXAuditElementLabelUsesImageNameTest
+0x1e0b1c908  __DATA_CONST,__const  _AXAuditInaccessibileElementTest
+0x1e0b1c900  __DATA_CONST,__const  _AXAuditIssueAdditionalInfoKey
+0x1e0b1c8f8  __DATA_CONST,__const  _AXAuditIssueBackgroundColorKey
+0x1e0b1c8f0  __DATA_CONST,__const  _AXAuditIssueElementKey
+0x1e0b1c8e8  __DATA_CONST,__const  _AXAuditIssueElementRectKey
+0x1e0b1c8e0  __DATA_CONST,__const  _AXAuditIssueFontSizeKey
+0x1e0b1c8d8  __DATA_CONST,__const  _AXAuditIssueForegroundColorKey
+0x1e0b1c8d0  __DATA_CONST,__const  _AXAuditIssueIdentifierKey
+0x1e0b1c8c8  __DATA_CONST,__const  _AXAuditIssueTextKey
+0x1e0b1c8c0  __DATA_CONST,__const  _AXAuditIssueTypeKey
+0x1e0b1c8b8  __DATA_CONST,__const  _AXAuditMissingTraitNotEnabledTest
+0x1e0b1c8b0  __DATA_CONST,__const  _AXAuditShouldHonorGroupsOption
+0x1e0b1c8a8  __DATA_CONST,__const  _AXAuditShouldRunTestOption
+0x1e0b1c8a0  __DATA_CONST,__const  _AXAuditSpinRunLoopOption
+0x193a7ea48  __TEXT,__text  _AXBroadcastNotificationToAllClients
+0x193aaaa24  __TEXT,__text  _AXBundleForElement
+0x193a94244  __TEXT,__text  _AXConvertIncomingValue
+0x193a94828  __TEXT,__text  _AXConvertOutgoingValue
+0x193a94734  __TEXT,__text  _AXConvertPidToAXElement
+0x193a861b4  __TEXT,__text  _AXConvertPointFromHostedCoordinates
+0x193a863a8  __TEXT,__text  _AXConvertPointToHostedCoordinates
+0x193a85fa0  __TEXT,__text  _AXConvertRectFromHostedCoordinates
+0x193a85d44  __TEXT,__text  _AXConvertRectToHostedCoordinates
+0x193a9b634  __TEXT,__text  _AXCreateAXAttributedStringFromCFAttributedString
+0x1eb9393f8  __DATA,__data  _AXDictationControllerNotificationControllerKey
+0x1eb9393f0  __DATA,__data  _AXDictationControllerStartedListeningNotification
+0x1eb9393e8  __DATA,__data  _AXDictationControllerStoppedListeningNotification
+0x193a89cf4  __TEXT,__text  _AXDisableAccessibilityOnTermination
+0x193a89c64  __TEXT,__text  _AXDoesRequestingClientDeserveAutomation
+0x1e0b1c898  __DATA_CONST,__const  _AXElementGroupTestingItemsKey
+0x1e0b1c890  __DATA_CONST,__const  _AXElementGroupTestingTraitsKey
+0x1e0b1c888  __DATA_CONST,__const  _AXElementTestingFrameKey
+0x1e0b1c880  __DATA_CONST,__const  _AXElementTestingLabelKey
+0x1e0b1c878  __DATA_CONST,__const  _AXElementTestingTraitsKey
+0x1e0b1c870  __DATA_CONST,__const  _AXElementTestingValueKey
+0x193a923e0  __TEXT,__text  _AXExpandedStatusAttributeForValue
+0x1eb939420  __DATA,__data  _AXFetchEventAllEvents
+0x193a9b5a4  __TEXT,__text  _AXGetCFAttributedStringFromAXAttributedString
+0x193a88bb4  __TEXT,__text  _AXGetCurrentSerializationStyle
+0x1e0b1c868  __DATA_CONST,__const  _AXInteractionLocationDescriptorAttributedNameKey
+0x1e0b1c860  __DATA_CONST,__const  _AXInteractionLocationDescriptorContextIDKey
+0x1e0b1c858  __DATA_CONST,__const  _AXInteractionLocationDescriptorContextSpacePointKey
+0x1e0b1c850  __DATA_CONST,__const  _AXInteractionLocationDescriptorDefaultName
+0x1e0b1c848  __DATA_CONST,__const  _AXInteractionLocationDescriptorFixedScreenSpacePointKey
+0x1e0b1c840  __DATA_CONST,__const  _AXInteractionLocationDescriptorPointValueKey
+0x1e0b1c838  __DATA_CONST,__const  _AXInteractionLocationDescriptorViewPointerNumberKey
+0x193a9b5f8  __TEXT,__text  _AXIsAXAttributedString
+0x193a9ff84  __TEXT,__text  _AXLabelAndValueForElements
+0x193a9f788  __TEXT,__text  _AXLabelForElements
+0x193a88120  __TEXT,__text  _AXObserverAddNotification
+0x193a87ec0  __TEXT,__text  _AXObserverCreate
+0x193a87ec8  __TEXT,__text  _AXObserverCreateWithPidObserver
+0x193a884a4  __TEXT,__text  _AXObserverGetRunLoopSource
+0x193a92fcc  __TEXT,__text  _AXObserverGetTypeID
+0x193a884b0  __TEXT,__text  _AXObserverRemoveNotification
+0x193a83214  __TEXT,__text  _AXOverrideRequestingClientType
+0x193a80d1c  __TEXT,__text  _AXPidSuspend
+0x193a7e1b4  __TEXT,__text  _AXPidUnsuspend
+0x193a8d0ec  __TEXT,__text  _AXProcessCanContactSystemWideServer
+0x193a941c0  __TEXT,__text  _AXProcessEverWantsMLElements
+0x193a941e8  __TEXT,__text  _AXProcessWantsMLElementsForBundle
+0x193a9422c  __TEXT,__text  _AXProcessesWantMLElements
+0x193a7c464  __TEXT,__text  _AXPushNotificationToSystemForBroadcast
+0x193a93bf4  __TEXT,__text  _AXReadAllUtilitiesElementsToCombineForReadAll
+0x193aa487c  __TEXT,__text  _AXRemoteElementConcatSceneUUIDAndContextId
+0x193a7f394  __TEXT,__text  _AXRemoteElementFromObject
+0x193a89c28  __TEXT,__text  _AXRequestingClient
+0x193a89cb8  __TEXT,__text  _AXRequestingClientSupportsMLElements
+0x193a95c04  __TEXT,__text  _AXRuntimeIsAppleTV
+0x193a965d0  __TEXT,__text  _AXSerializeCFType
+0x193a7ca98  __TEXT,__text  _AXSerializeCFType3
+0x193a7c880  __TEXT,__text  _AXSerializeWrapper
+0x193a88bfc  __TEXT,__text  _AXSetCurrentSerializationStyle
+0x193a7c398  __TEXT,__text  _AXSetPipPid
+0x193a940f8  __TEXT,__text  _AXSetProcessWantsMLElementForBundle
+0x193a9d970  __TEXT,__text  _AXStringFromAXAttributedString
+0x193a9e6e0  __TEXT,__text  _AXTentativePidSuspend
+0x1e0b1c830  __DATA_CONST,__const  _AXUIAccessibilityAnnouncementPriorityDefault
+0x1e0b1c828  __DATA_CONST,__const  _AXUIAccessibilityAnnouncementPriorityHigh
+0x1e0b1c820  __DATA_CONST,__const  _AXUIAccessibilityAnnouncementPriorityLow
+0x1e0b1c818  __DATA_CONST,__const  _AXUIAccessibilityAssistiveTechnologyKey
+0x1e0b1c810  __DATA_CONST,__const  _AXUIAccessibilityCustomRotorLinkCount
+0x1e0b1c808  __DATA_CONST,__const  _AXUIAccessibilityCustomRotorVisibleInTouchRotorKey
+0x1e0b1c800  __DATA_CONST,__const  _AXUIAccessibilityElementCountKey
+0x1e0b1c7f8  __DATA_CONST,__const  _AXUIAccessibilityHonorsGroupsKey
+0x1e0b1c7f0  __DATA_CONST,__const  _AXUIAccessibilityIncludeRemoteElements
+0x1e0b1c7e8  __DATA_CONST,__const  _AXUIAccessibilityNavigationDirection
+0x1e0b1c7e0  __DATA_CONST,__const  _AXUIAccessibilityShouldAlwaysScrollKey
+0x1e0b1c7d8  __DATA_CONST,__const  _AXUIAccessibilitySortKey
+0x1e0b1c7d0  __DATA_CONST,__const  _AXUIAccessibilitySpeechAttributeAnnouncementPriority
+0x1e0b1c7c8  __DATA_CONST,__const  _AXUIAccessibilitySpeechAttributeLanguage
+0x1e0b1c7c0  __DATA_CONST,__const  _AXUIAccessibilitySpeechAttributePhonemeSubstitution
+0x1e0b1c7b8  __DATA_CONST,__const  _AXUIAccessibilitySpeechAttributePitch
+0x1e0b1c7b0  __DATA_CONST,__const  _AXUIAccessibilitySpeechAttributePunctuation
+0x1e0b1c7a8  __DATA_CONST,__const  _AXUIAccessibilitySpeechAttributeQueueAnnouncement
+0x1e0b1c7a0  __DATA_CONST,__const  _AXUIAccessibilitySpeechAttributeSSML
+0x1e0b1c798  __DATA_CONST,__const  _AXUIAccessibilitySpeechAttributeSpellOut
+0x1e0b1c790  __DATA_CONST,__const  _AXUIAccessibilitySpeechAttributeTextualContext
+0x1e0b1c788  __DATA_CONST,__const  _AXUIAccessibilityTextAttributeCustom
+0x1e0b1c780  __DATA_CONST,__const  _AXUIAccessibilityTextAttributeHeadingLevel
+0x193a879e8  __TEXT,__text  _AXUICreateApplicationElementForElement
+0x193aa4998  __TEXT,__text  _AXUIElementConvertOutgoingType
+0x193a85a1c  __TEXT,__text  _AXUIElementCopyApplicationAndContextAtPosition
+0x193a85a24  __TEXT,__text  _AXUIElementCopyApplicationAndContextAtPositionWithDisplayID
+0x193a85a10  __TEXT,__text  _AXUIElementCopyApplicationAtPosition
+0x193a84114  __TEXT,__text  _AXUIElementCopyAttributeValue
+0x193a834a8  __TEXT,__text  _AXUIElementCopyAttributeValueRecursive
+0x193a879cc  __TEXT,__text  _AXUIElementCopyElementAtPosition
+0x193a87738  __TEXT,__text  _AXUIElementCopyElementAtPositionWithParams
+0x193a8770c  __TEXT,__text  _AXUIElementCopyElementUsingContextIdAtPosition
+0x193a8775c  __TEXT,__text  _AXUIElementCopyElementUsingDisplayIdAtPosition
+0x193a86608  __TEXT,__text  _AXUIElementCopyElementWithParameters
+0x193a84d9c  __TEXT,__text  _AXUIElementCopyMultipleAttributeValues
+0x193a84090  __TEXT,__text  _AXUIElementCopyParameterizedAttributeValue
+0x193a84188  __TEXT,__text  _AXUIElementCopyParameterizedAttributeValueRecursive
+0x193a8796c  __TEXT,__text  _AXUIElementCreateSystemWide
+0x193a87a80  __TEXT,__text  _AXUIElementGetPid
+0x193a810a8  __TEXT,__text  _AXUIElementGetTypeID
+0x193a87de8  __TEXT,__text  _AXUIElementIsApplication
+0x193a89c58  __TEXT,__text  _AXUIElementLastGlobalError
+0x193a92fbc  __TEXT,__text  _AXUIElementMessagingTimeout
+0x193a857cc  __TEXT,__text  _AXUIElementPerformAction
+0x193a84974  __TEXT,__text  _AXUIElementPerformActionWithValue
+0x193a85468  __TEXT,__text  _AXUIElementPerformFencedActionWithValue
+0x193a87b44  __TEXT,__text  _AXUIElementRegisterForApplicationDeath
+0x193a87eac  __TEXT,__text  _AXUIElementRegisterSystemWideServerDeathCallback
+0x193a84a3c  __TEXT,__text  _AXUIElementSetAttributeValue
+0x193a87e0c  __TEXT,__text  _AXUIElementSetMessagingTimeout
+0x193a87c78  __TEXT,__text  _AXUIElementSharedKeyboardApp
+0x193a84980  __TEXT,__text  _AXUIElementSharedSystemApp
+0x193a85f58  __TEXT,__text  _AXUIElementSharedSystemWide
+0x193a8a48c  __TEXT,__text  _AXUncaughtException
+0x193a96844  __TEXT,__text  _AXUnserializeCFType
+0x193a7e63c  __TEXT,__text  _AXUnserializeCFType3
+0x193a83bd0  __TEXT,__text  _AXUnserializeWrapper
+0x193a9b0bc  __TEXT,__text  _AXValidateDictionaryAsDragWireFormat
+0x193a9b294  __TEXT,__text  _AXValidateDictionaryAsDropWireFormat
+0x193a91dac  __TEXT,__text  _AXValueCreate
+0x193a91f10  __TEXT,__text  _AXValueGetType
+0x193a91c6c  __TEXT,__text  _AXValueGetTypeID
+0x193a91fa8  __TEXT,__text  _AXValueGetValue
+0x193a92228  __TEXT,__text  _AXXCAttributeForAttribute
+0x193ab4794  __TEXT,__text  _AX_CGPathEnumerateElementsUsingBlock
+0x193ac8f80  __TEXT,__text  _AccessibilityDefs_server
+0x193ac8448  __TEXT,__text  _AccessibilityDefs_server_routine
+0x193a9acf4  __TEXT,__text  _MSHCreateMIGServerSource
+0x193a9aa88  __TEXT,__text  _MSHCreateMachServerSource
+0x193a9ae7c  __TEXT,__text  _MSHGetMachPortFromSource
+0x193a9aed0  __TEXT,__text  _MSHMIGSourceSetNoSendersCallback
+0x193a9b068  __TEXT,__text  _MSHMIGSourceSetSendOnceCallback
+0x1ee295b68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXAttributedString
+0x1ee295a78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXClientSideValueTransformer
+0x1ee295a00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXElement
+0x1ee295af0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXElementAttributedString
+0x1ef61ef28  __AUTH,__objc_data  _OBJC_CLASS_$_AXElementFetcher
+0x1ef61ef00  __AUTH,__objc_data  _OBJC_CLASS_$_AXElementFocusedAppFetchOptions
+0x1ef61eed8  __AUTH,__objc_data  _OBJC_CLASS_$_AXElementGroup
+0x1ef61eeb0  __AUTH,__objc_data  _OBJC_CLASS_$_AXElementGroupPruner
+0x1ef61ee88  __AUTH,__objc_data  _OBJC_CLASS_$_AXElementGrouper
+0x1ef61ee60  __AUTH,__objc_data  _OBJC_CLASS_$_AXElementGroupingKeyboardExtrasConsolidationPass
+0x1ef61ee38  __AUTH,__objc_data  _OBJC_CLASS_$_AXElementTransactionLogging
+0x1ef61ee10  __AUTH,__objc_data  _OBJC_CLASS_$_AXMVisionFeature_AXRuntime
+0x1ef61ede8  __AUTH,__objc_data  _OBJC_CLASS_$_AXNotificationObserver
+0x1ef61ef78  __AUTH,__objc_data  _OBJC_CLASS_$_AXObserverElementPair
+0x1ee2959b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXPidSuspensionInfo
+0x1ef61edc0  __AUTH,__objc_data  _OBJC_CLASS_$_AXProfileDatabase
+0x1ef61ed98  __AUTH,__objc_data  _OBJC_CLASS_$_AXProfileEntry
+0x1ef61ed70  __AUTH,__objc_data  _OBJC_CLASS_$_AXProfileTransaction
+0x1ee295be0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXRemoteElement
+0x1ef61ed48  __AUTH,__objc_data  _OBJC_CLASS_$_AXRemoteMLElement
+0x1ef61ed20  __AUTH,__objc_data  _OBJC_CLASS_$_AXScribbleElement
+0x1ef61ecf8  __AUTH,__objc_data  _OBJC_CLASS_$_AXScribbleManager
+0x1ee295c08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXSimpleRuntimeManager
+0x1ee295a50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXUIElement
+0x1ef61ecd0  __AUTH,__objc_data  _OBJC_CLASS_$_AXUIMLElement
+0x1ef61eca8  __AUTH,__objc_data  _OBJC_CLASS_$_AXUIMockElement
+0x1ef61ec80  __AUTH,__objc_data  _OBJC_CLASS_$_AXVisualElementGrouper
+0x1ee295b40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__AXObjectCacheHelper
+0x1ef61ec58  __AUTH,__objc_data  _OBJC_CLASS_$___AXMVisionFeature_AXRuntime_super
+0x1eb93899c  __DATA,__objc_ivar  OBJC_IVAR_$_AXUIMockElement._performActionLog
+0x1eb9389a4  __DATA,__objc_ivar  OBJC_IVAR_$_AXUIMockElement._usesCarriageReturnAsLinesSeparator
+0x1eb938998  __DATA,__objc_ivar  OBJC_IVAR_$_AXUIMockElement._writableAttributes
+0x1ee295b90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXAttributedString
+0x1ee295aa0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXClientSideValueTransformer
+0x1ee2959d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXElement
+0x1ee295ac8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXElementAttributedString
+0x1ef61ec30  __AUTH,__objc_data  _OBJC_METACLASS_$_AXElementFetcher
+0x1ef61ec08  __AUTH,__objc_data  _OBJC_METACLASS_$_AXElementFocusedAppFetchOptions
+0x1ef61ebe0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXElementGroup
+0x1ef61ebb8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXElementGroupPruner
+0x1ef61eb90  __AUTH,__objc_data  _OBJC_METACLASS_$_AXElementGrouper
+0x1ef61eb68  __AUTH,__objc_data  _OBJC_METACLASS_$_AXElementGroupingKeyboardExtrasConsolidationPass
+0x1ef61eb40  __AUTH,__objc_data  _OBJC_METACLASS_$_AXElementTransactionLogging
+0x1ef61eb18  __AUTH,__objc_data  _OBJC_METACLASS_$_AXMVisionFeature_AXRuntime
+0x1ef61eaf0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXNotificationObserver
+0x1ef61ef50  __AUTH,__objc_data  _OBJC_METACLASS_$_AXObserverElementPair
+0x1ee295988  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXPidSuspensionInfo
+0x1ef61eac8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXProfileDatabase
+0x1ef61eaa0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXProfileEntry
+0x1ef61ea78  __AUTH,__objc_data  _OBJC_METACLASS_$_AXProfileTransaction
+0x1ee295bb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXRemoteElement
+0x1ef61ea50  __AUTH,__objc_data  _OBJC_METACLASS_$_AXRemoteMLElement
+0x1ef61ea28  __AUTH,__objc_data  _OBJC_METACLASS_$_AXScribbleElement
+0x1ef61ea00  __AUTH,__objc_data  _OBJC_METACLASS_$_AXScribbleManager
+0x1ee295c30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXSimpleRuntimeManager
+0x1ee295a28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXUIElement
+0x1ef61e9d8  __AUTH,__objc_data  _OBJC_METACLASS_$_AXUIMLElement
+0x1ef61e9b0  __AUTH,__objc_data  _OBJC_METACLASS_$_AXUIMockElement
+0x1ef61e988  __AUTH,__objc_data  _OBJC_METACLASS_$_AXVisualElementGrouper
+0x1ee295b18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__AXObjectCacheHelper
+0x1ef61e960  __AUTH,__objc_data  _OBJC_METACLASS_$___AXMVisionFeature_AXRuntime_super
+0x193a9680c  __TEXT,__text  _SerializeCFType
+0x1e0b1c778  __DATA_CONST,__const  _UIAccessibilityAcceptedInlineTextCompletion
+0x1eb9393e0  __DATA,__data  _UIAccessibilityCustomRotorActionIdentifierToken
+0x1e0b1c770  __DATA_CONST,__const  _UIAccessibilityInlineTextCompletion
+0x1e0b1c768  __DATA_CONST,__const  _UIAccessibilityPosterBoardInlineWidgetPidKey
+0x1e0b1c760  __DATA_CONST,__const  _UIAccessibilityPosterBoardInlineWidgetUUIDKey
+0x1eb9393d8  __DATA,__data  _UIAccessibilityTableIndexToken
+0x1eb9393d0  __DATA,__data  _UIAccessibilityTokenAccessibilityLanguage
+0x1eb9393c8  __DATA,__data  _UIAccessibilityTokenAlternateInterpretation
+0x1eb9393c0  __DATA,__data  _UIAccessibilityTokenAngularMeasurement
+0x1e0b1c758  __DATA_CONST,__const  _UIAccessibilityTokenAnnounceEvenIfSystemSleeping
+0x1eb9393b8  __DATA,__data  _UIAccessibilityTokenAnnouncementPriority
+0x1eb9393b0  __DATA,__data  _UIAccessibilityTokenAnnouncementRequestID
+0x1eb9393a8  __DATA,__data  _UIAccessibilityTokenAssistantString
+0x1eb9393a0  __DATA,__data  _UIAccessibilityTokenAttachment
+0x1eb939398  __DATA,__data  _UIAccessibilityTokenBlockquoteAttribution
+0x1eb939390  __DATA,__data  _UIAccessibilityTokenBlockquoteLevel
+0x1eb939388  __DATA,__data  _UIAccessibilityTokenBold
+0x1eb939380  __DATA,__data  _UIAccessibilityTokenBrailleDisplayOnly
+0x1e0b1c750  __DATA_CONST,__const  _UIAccessibilityTokenBrailleOverride
+0x1eb939378  __DATA,__data  _UIAccessibilityTokenCharacterSuppressFlavorSpeech
+0x1eb939370  __DATA,__data  _UIAccessibilityTokenCharacterTimeToSpeak
+0x1eb939368  __DATA,__data  _UIAccessibilityTokenClockTime
+0x1eb939360  __DATA,__data  _UIAccessibilityTokenCollaborationAttributionIds
+0x1eb939358  __DATA,__data  _UIAccessibilityTokenConvertTextToLowercase
+0x1eb939350  __DATA,__data  _UIAccessibilityTokenDate
+0x1eb939348  __DATA,__data  _UIAccessibilityTokenDescriptionOverrideLanguage
+0x1eb939340  __DATA,__data  _UIAccessibilityTokenDictationAnnouncement
+0x1eb939338  __DATA,__data  _UIAccessibilityTokenDurationTimeHHMM
+0x1eb939330  __DATA,__data  _UIAccessibilityTokenDurationTimeHHMMSS
+0x1eb939328  __DATA,__data  _UIAccessibilityTokenDurationTimeMMSS
+0x1eb939320  __DATA,__data  _UIAccessibilityTokenDynamicContentAnnouncement
+0x1eb939318  __DATA,__data  _UIAccessibilityTokenFontFamily
+0x1eb939310  __DATA,__data  _UIAccessibilityTokenFontName
+0x1eb939308  __DATA,__data  _UIAccessibilityTokenFontSize
+0x1eb939300  __DATA,__data  _UIAccessibilityTokenForegroundColor
+0x1eb9392f8  __DATA,__data  _UIAccessibilityTokenHighPitch
+0x1eb9392f0  __DATA,__data  _UIAccessibilityTokenHighlightedText
+0x1eb9392e8  __DATA,__data  _UIAccessibilityTokenHint
+0x1eb9392e0  __DATA,__data  _UIAccessibilityTokenIgnoreLeadingCommas
+0x1eb9392d8  __DATA,__data  _UIAccessibilityTokenIgnoreSubstitution
+0x1eb9392d0  __DATA,__data  _UIAccessibilityTokenIndentationLevel
+0x1e0b1c748  __DATA_CONST,__const  _UIAccessibilityTokenIsImageResourceName
+0x1eb9392c8  __DATA,__data  _UIAccessibilityTokenIsLiveRegionRemoval
+0x1e0b1c740  __DATA_CONST,__const  _UIAccessibilityTokenIsSystemSymbolName
+0x1eb9392c0  __DATA,__data  _UIAccessibilityTokenItalic
+0x1eb9392b8  __DATA,__data  _UIAccessibilityTokenLanguage
+0x1eb9392b0  __DATA,__data  _UIAccessibilityTokenLineSpacing
+0x1e0b1c738  __DATA_CONST,__const  _UIAccessibilityTokenLink
+0x1eb9392a8  __DATA,__data  _UIAccessibilityTokenListItemIdentifier
+0x1eb9392a0  __DATA,__data  _UIAccessibilityTokenListItemLabel
+0x1eb939298  __DATA,__data  _UIAccessibilityTokenListItemLevel
+0x1eb939290  __DATA,__data  _UIAccessibilityTokenLiteralText
+0x1eb939288  __DATA,__data  _UIAccessibilityTokenLiteralTextRanges
+0x1eb939280  __DATA,__data  _UIAccessibilityTokenLiveRegionAnnouncement
+0x1eb939278  __DATA,__data  _UIAccessibilityTokenLowPitch
+0x1eb939270  __DATA,__data  _UIAccessibilityTokenMathEquation
+0x1eb939268  __DATA,__data  _UIAccessibilityTokenMathTreePosition
+0x1eb939260  __DATA,__data  _UIAccessibilityTokenMisspelled
+0x1eb939258  __DATA,__data  _UIAccessibilityTokenNSLanguage
+0x1eb939250  __DATA,__data  _UIAccessibilityTokenNumber
+0x1eb939248  __DATA,__data  _UIAccessibilityTokenOverrideLanguage
+0x1eb939240  __DATA,__data  _UIAccessibilityTokenParagraphAlignment
+0x1eb939238  __DATA,__data  _UIAccessibilityTokenPassthroughOnlyPasteboardOp
+0x1eb939230  __DATA,__data  _UIAccessibilityTokenPassthroughOnlyReordering
+0x1eb939228  __DATA,__data  _UIAccessibilityTokenPhoneContext
+0x1eb939220  __DATA,__data  _UIAccessibilityTokenPhoneNumber
+0x1eb939218  __DATA,__data  _UIAccessibilityTokenPhoneticText
+0x1eb939210  __DATA,__data  _UIAccessibilityTokenPlaceholder
+0x1eb939208  __DATA,__data  _UIAccessibilityTokenPlaySoundSimultaneously
+0x1eb939200  __DATA,__data  _UIAccessibilityTokenPoliteAnnouncement
+0x1eb9391f8  __DATA,__data  _UIAccessibilityTokenProactiveSuggestionSlot
+0x1eb9391f0  __DATA,__data  _UIAccessibilityTokenReplaceWithActiveActivity
+0x1eb9391e8  __DATA,__data  _UIAccessibilityTokenReplaceWithCellularName
+0x1eb9391e0  __DATA,__data  _UIAccessibilityTokenReplaceWithWiFiSSID
+0x1eb9391d8  __DATA,__data  _UIAccessibilityTokenReplacementCandidate
+0x1e0b1c730  __DATA_CONST,__const  _UIAccessibilityTokenRequiresEditingStyleResolution
+0x1eb9391d0  __DATA,__data  _UIAccessibilityTokenResolveMisspelledLocally
+0x1eb9391c8  __DATA,__data  _UIAccessibilityTokenScreenDimmed
+0x1eb9391c0  __DATA,__data  _UIAccessibilityTokenSecure
+0x1eb9391b8  __DATA,__data  _UIAccessibilityTokenShareSheetTextSlot
+0x1eb9391b0  __DATA,__data  _UIAccessibilityTokenShareSheetTransportSlot
+0x1eb9391a8  __DATA,__data  _UIAccessibilityTokenSocialAttributionIds
+0x1eb9391a0  __DATA,__data  _UIAccessibilityTokenSpeakAsCharacter
+0x1eb939198  __DATA,__data  _UIAccessibilityTokenSpeakDigits
+0x1eb939190  __DATA,__data  _UIAccessibilityTokenSpeakLiteralPunctuation
+0x1eb939188  __DATA,__data  _UIAccessibilityTokenSpeakNoPunctuation
+0x1eb939180  __DATA,__data  _UIAccessibilityTokenSpeakPunctuationCounts
+0x1e0b1c728  __DATA_CONST,__const  _UIAccessibilityTokenSpeakValuePartOnDifference
+0x1eb939178  __DATA,__data  _UIAccessibilityTokenStrikethrough
+0x1eb939170  __DATA,__data  _UIAccessibilityTokenStyleName
+0x1eb939168  __DATA,__data  _UIAccessibilityTokenSuppressBrailleOutput
+0x1eb939160  __DATA,__data  _UIAccessibilityTokenSystemAnnouncement
+0x1eb939158  __DATA,__data  _UIAccessibilityTokenSystemNotificationAlert
+0x1eb939150  __DATA,__data  _UIAccessibilityTokenTelephonyCarrierString
+0x1eb939148  __DATA,__data  _UIAccessibilityTokenTextDeletion
+0x1eb939140  __DATA,__data  _UIAccessibilityTokenTextInsertion
+0x1eb939138  __DATA,__data  _UIAccessibilityTokenTextOperationRelated
+0x1eb939130  __DATA,__data  _UIAccessibilityTokenTextSubstitution
+0x1eb939128  __DATA,__data  _UIAccessibilityTokenUnderline
+0x1eb939120  __DATA,__data  _UIAccessibilityTokenVeryPoliteAnnouncement
+0x193a969ec  __TEXT,__text  _UnserializeCFType
+0x193a9ef58  __TEXT,__text  __AXAddAssociatedPid
+0x193a9dd0c  __TEXT,__text  __AXAddNotificationObserver
+0x193a93494  __TEXT,__text  __AXAddToElementCache
+0x193a7e830  __TEXT,__text  __AXBroadcastEventProcessNotification
+0x193a83394  __TEXT,__text  __AXCallingFromSameApp
+0x193a93380  __TEXT,__text  __AXClearElementCache
+0x193a7f11c  __TEXT,__text  __AXCreateAXUIElementWithElement
+0x193a82fe8  __TEXT,__text  __AXCreateAXUIElementWithElementUsingLocalRemoteElement
+0x193a82ed4  __TEXT,__text  __AXElementForAXUIElementUniqueId
+0x193a93844  __TEXT,__text  __AXElementFromElementCache
+0x193a7d024  __TEXT,__text  __AXGetPortFromCache
+0x193a9dcd0  __TEXT,__text  __AXIgnoreNextNotification
+0x193a93428  __TEXT,__text  __AXInitializeElementCache
+0x193a9dc60  __TEXT,__text  __AXInitializeObserverAccess
+0x193a93724  __TEXT,__text  __AXIsInElementCache
+0x193a9eb00  __TEXT,__text  __AXIsPidAssociated
+0x193a9eb44  __TEXT,__text  __AXIsPidAssociatedWithDisplayType
+0x193a91c14  __TEXT,__text  __AXIsWebTouchContainerType
+0x193a88770  __TEXT,__text  __AXKeyboardAppPid
+0x193ac7998  __TEXT,__text  __AXMIGAddNotification
+0x193a7d5ec  __TEXT,__text  __AXMIGBroadcastNotification
+0x193ac6c1c  __TEXT,__text  __AXMIGCopyAttributeValue
+0x193ac76b8  __TEXT,__text  __AXMIGCopyElementAtPosition
+0x193ac8100  __TEXT,__text  __AXMIGCopyMultipleAttributeValues
+0x193ac7db4  __TEXT,__text  __AXMIGCopyParameterizedAttributeValue
+0x193ac71f8  __TEXT,__text  __AXMIGPerformAction
+0x193ac73ec  __TEXT,__text  __AXMIGPerformActionWithValue
+0x193a805bc  __TEXT,__text  __AXMIGPostNotification
+0x193ac7ba4  __TEXT,__text  __AXMIGRemoveNotification
+0x193ac6f38  __TEXT,__text  __AXMIGSetAttributeValue
+0x193a7fdb8  __TEXT,__text  __AXManagePidState
+0x193a9dcc4  __TEXT,__text  __AXNextIgnoredNotification
+0x193a9e010  __TEXT,__text  __AXNotificationObserverClientDied
+0x193a93034  __TEXT,__text  __AXObserverCreateInternal
+0x193a94238  __TEXT,__text  __AXPidFromAuditToken
+0x193a9e96c  __TEXT,__text  __AXPidIsAssociatedInternal
+0x193a7d804  __TEXT,__text  __AXPidIsSuspended
+0x193a9ebf4  __TEXT,__text  __AXPidIsSuspendedWithDisplayType
+0x193a9eca4  __TEXT,__text  __AXPutPidOnTimeoutProbation
+0x193a89e8c  __TEXT,__text  __AXRaiseIfCallingAXRuntimeOffMainThread
+0x193a83180  __TEXT,__text  __AXReleasePortFromCache
+0x193a9dedc  __TEXT,__text  __AXRemoveNotificationObserver
+0x193a8d018  __TEXT,__text  __AXRemoveObserverForPort
+0x193a831fc  __TEXT,__text  __AXRequestingClientForSelfMachMessage
+0x193a89c34  __TEXT,__text  __AXResetRequestingClient
+0x193a82fdc  __TEXT,__text  __AXRetrieveExistingAXUIElementWithElement
+0x193a89cd0  __TEXT,__text  __AXRuntimeGetCallbacksForUnitTesting
+0x193a88c58  __TEXT,__text  __AXSetAllowsSuspendedAppServer
+0x193a82e44  __TEXT,__text  __AXSetApplicationElementHandler
+0x193a933a0  __TEXT,__text  __AXSetNextElementCacheUniqueUID
+0x193a8d07c  __TEXT,__text  __AXSetObserverForPort
+0x193a89c40  __TEXT,__text  __AXSetRequestingClient
+0x193a89e80  __TEXT,__text  __AXSetSystemWideServerUsesDedicatedThread
+0x193a89e44  __TEXT,__text  __AXShouldDispatchNonMainThreadCallbacksOnMainThread
+0x193a89e6c  __TEXT,__text  __AXShouldDispatchNonMainThreadCallbacksOnMainThreadPopReason
+0x193a89e58  __TEXT,__text  __AXShouldDispatchNonMainThreadCallbacksOnMainThreadPushReason
+0x193a8c9e0  __TEXT,__text  __AXTraitsAsString
+0x193a8c9e8  __TEXT,__text  __AXTraitsAsStringInternal
+0x193a8c9d0  __TEXT,__text  __AXTraitsRemoveTrait
+0x193a87704  __TEXT,__text  __AXUIElementCopyElementAtPositionInHostedCoordinatesWithParams
+0x193a86728  __TEXT,__text  __AXUIElementCopyElementAtPositionWithParams
+0x193a810d8  __TEXT,__text  __AXUIElementCreateAppElementWithPid
+0x193a8a880  __TEXT,__text  __AXUIElementCreateData
+0x193a8114c  __TEXT,__text  __AXUIElementCreateInternal
+0x193a8a7b0  __TEXT,__text  __AXUIElementCreateWithData
+0x193a8a730  __TEXT,__text  __AXUIElementCreateWithID
+0x193a8a6b4  __TEXT,__text  __AXUIElementCreateWithPIDAndID
+0x193a865ac  __TEXT,__text  __AXUIElementElementBeingHitTested
+0x193a8a578  __TEXT,__text  __AXUIElementGetAppAXReadyCallback
+0x193a8a698  __TEXT,__text  __AXUIElementIDForElement
+0x193a7ed30  __TEXT,__text  __AXUIElementPostNotification
+0x193a8a54c  __TEXT,__text  __AXUIElementRegisterAppAXReadyCallback
+0x193a8a504  __TEXT,__text  __AXUIElementRegisterNotificationBypassCallback
+0x193a9dcdc  __TEXT,__text  __AXUIElementRegisterNotificationObserverDiedCallback
+0x193a8a484  __TEXT,__text  __AXUIElementRegisterServerWithRunLoop
+0x193a8a514  __TEXT,__text  __AXUIElementRegisterSystemWideServerBroadcastRelayerCallback
+0x193a89f58  __TEXT,__text  __AXUIElementRegisterSystemWideServerWithRunLoop
+0x193a8a59c  __TEXT,__text  __AXUIElementRemoteBridgeMachPortForAXServer
+0x193a8a4f8  __TEXT,__text  __AXUIElementServerRegistered
+0x193a8659c  __TEXT,__text  __AXUIElementSetElementBeingHitTested
+0x193a92fa4  __TEXT,__text  __AXUIElementSetGlobalTimeout
+0x193a89c4c  __TEXT,__text  __AXUIElementSetLastGlobalError
+0x193a833ec  __TEXT,__text  __AXUIElementSetMachPortForNextMessage
+0x193a8a5a8  __TEXT,__text  __AXUIElementUnregisterServer
+0x193a7cf60  __TEXT,__text  __AXUIElementValidate
+0x193a88c64  __TEXT,__text  __AXUIScreenConvertToCAScreen
+0x193a865e0  __TEXT,__text  __AXUISetConvertToCAScreenBlock
+0x193a91cd4  __TEXT,__text  __AXValueCreateFromInternalData
+0x1e378cc68  __AUTH_CONST,__const  __AXXMIGAccessibilityDefs_subsystem
+0x193a8c420  __TEXT,__text  __AXXMIGAddNotification
+0x193a7e334  __TEXT,__text  __AXXMIGBroadcastNotification
+0x193a8a9a0  __TEXT,__text  __AXXMIGCopyAttributeValue
+0x193a8c0f8  __TEXT,__text  __AXXMIGCopyElementAtPosition
+0x193a8ae74  __TEXT,__text  __AXXMIGCopyMultipleAttributeValues
+0x193a8b314  __TEXT,__text  __AXXMIGCopyParameterizedAttributeValue
+0x193a8bb28  __TEXT,__text  __AXXMIGPerformAction
+0x193a8bd40  __TEXT,__text  __AXXMIGPerformActionWithValue
+0x193a7fa80  __TEXT,__text  __AXXMIGPostNotification
+0x193a8c72c  __TEXT,__text  __AXXMIGRemoveNotification
+0x193a8b7d4  __TEXT,__text  __AXXMIGSetAttributeValue
+0x193a82eb8  __TEXT,__text  __UIAXElementForAXUIElementRef
+0x193a7f128  __TEXT,__text  ___AXCreateAXUIElementWithElement
+0x193a82fd0  __TEXT,__text  ___AXRuntimeApplicationElement
+0x193aa07dc  __TEXT,__text  ___AXStringForVariables
+0x193aa0810  __TEXT,__text  ___AXStringForVariablesWithVariadics
+0x193a939d0  __TEXT,__text  __doesElementFrame
+0x1eb939758  __DATA,__common  _gAXObserverLock
+0x1ee295fd0  __DATA_DIRTY,__common  _gAXPortLock
+0x1eb939764  __DATA,__common  _gAXSuspendedPidsLock
+0x1eb939760  __DATA,__common  _gAXTimeoutProbationPidsLock
+0x1ee295fd8  __DATA_DIRTY,__common  _gSerializeBufferKey
+0x1eb939748  __DATA,__common  _gSystemWideServerBroadcastRelayerCallback
+0x1eb939740  __DATA,__common  _gSystemWideServerBroadcastRelayerCallbackInfo
+0x1eb938f38  __DATA,__data  _kAXAccessibilityLoaded
+0x1eb938f30  __DATA,__data  _kAXAccessibilityTurnedOffNotification
+0x193accfa8  __TEXT,__const  _kAXAdjustableTrait
+0x193accff8  __TEXT,__const  _kAXAlertTrait
+0x193acce90  __TEXT,__const  _kAXAllowsDirectInteractionTrait
+0x193accef0  __TEXT,__const  _kAXAllowsLayoutChangeInStatusBarTrait
+0x193accf58  __TEXT,__const  _kAXAllowsNativeSlidingTrait
+0x1eb938f28  __DATA,__data  _kAXAnnouncementAppSwitchBorderSound
+0x1eb938f20  __DATA,__data  _kAXAnnouncementBorderHitSound
+0x1eb938f18  __DATA,__data  _kAXAnnouncementCollaborationOccurredSound
+0x1eb938f10  __DATA,__data  _kAXAnnouncementCompletionKeyRequestID
+0x1eb938f08  __DATA,__data  _kAXAnnouncementEnteredValidStateSound
+0x1eb938f00  __DATA,__data  _kAXAnnouncementExitedValidStateSound
+0x1eb938ef8  __DATA,__data  _kAXAnnouncementStackShotSound
+0x1eb938ef0  __DATA,__data  _kAXAnnouncementTypeAlertSound
+0x1eb938ee8  __DATA,__data  _kAXAnnouncementTypeDidActivateElementSound
+0x1eb938ee0  __DATA,__data  _kAXAnnouncementTypeDockHideSound
+0x1eb938ed8  __DATA,__data  _kAXAnnouncementTypeDockShowSound
+0x1eb938ed0  __DATA,__data  _kAXAnnouncementTypeFolderClosedSound
+0x1eb938ec8  __DATA,__data  _kAXAnnouncementTypeFolderOpenedSound
+0x1eb938ec0  __DATA,__data  _kAXAnnouncementTypeFolderOpeningSound
+0x1eb938eb8  __DATA,__data  _kAXAnnouncementTypeKeyboardAppearSound
+0x1eb938eb0  __DATA,__data  _kAXAnnouncementTypeKeyboardDisappearSound
+0x1eb938ea8  __DATA,__data  _kAXAnnouncementTypeLockScreenAuthenticationFailureSound
+0x1eb938ea0  __DATA,__data  _kAXAnnouncementTypeLockScreenTouchIDAuthenticationSuccessSound
+0x1eb938e98  __DATA,__data  _kAXAnnouncementTypeNoItemExistsSound
+0x1eb938e90  __DATA,__data  _kAXAnnouncementTypePassthroughSound
+0x1eb938e88  __DATA,__data  _kAXAnnouncementTypeProgressMadeSound
+0x1eb938e80  __DATA,__data  _kAXAnnouncementTypeReorderSound
+0x1eb938e78  __DATA,__data  _kAXAnnouncementTypeScrollSound
+0x1eb938e70  __DATA,__data  _kAXAnnouncementTypeShowInHoverText
+0x1eb938e68  __DATA,__data  _kAXAnnouncementTypeStopSpeech
+0x1eb938e60  __DATA,__data  _kAXAnnouncementTypeSuccessSound
+0x1eb938e58  __DATA,__data  _kAXAnnouncementTypeTutorialMagicTapStart
+0x1eb938e50  __DATA,__data  _kAXAnnouncementTypeTutorialMagicTapStop
+0x1eb938e48  __DATA,__data  _kAXAnnouncementTypeTutorialSuccess
+0x1eb938e40  __DATA,__data  _kAXAnnouncementTypeWindowingStashedSound
+0x1eb938e38  __DATA,__data  _kAXAnnouncementTypeWindowingUnstashedSound
+0x1eb938e30  __DATA,__data  _kAXAnnouncementUserInfoKeyAnnouncement
+0x1eb938e28  __DATA,__data  _kAXAnnouncementUserInfoKeyIgnorable
+0x1eb938e20  __DATA,__data  _kAXAnnouncementUserInfoKeyPreAnnouncementSoundID
+0x1eb938e18  __DATA,__data  _kAXAnnouncementWebPageLoadingSound
+0x1eb938e10  __DATA,__data  _kAXAppIsRunningAsExtensionKey
+0x1eb939400  __DATA,__data  _kAXApplicationUID
+0x193accfb8  __TEXT,__const  _kAXAutoCorrectCandidateTrait
+0x1eb938e08  __DATA,__data  _kAXAutoCorrectionForContinuousPathKey
+0x193accf00  __TEXT,__const  _kAXBackButtonTrait
+0x193accf98  __TEXT,__const  _kAXBookContentTrait
+0x1eb938e00  __DATA,__data  _kAXBundleIDKey
+0x193acce30  __TEXT,__const  _kAXButtonTrait
+0x1eb938df8  __DATA,__data  _kAXCACCustomCommandDictionaryKey
+0x1eb938df0  __DATA,__data  _kAXCACCustomCommandIdentifierKey
+0x1eb938de8  __DATA,__data  _kAXCaptionsDisplayedTextRuns
+0x193acce98  __TEXT,__const  _kAXCausesPageTurnTrait
+0x193accf78  __TEXT,__const  _kAXContainedByFieldsetTrait
+0x193accf70  __TEXT,__const  _kAXContainedByLandmarkTrait
+0x193accf68  __TEXT,__const  _kAXContainedByListTrait
+0x193accf60  __TEXT,__const  _kAXContainedByTableTrait
+0x193accfc0  __TEXT,__const  _kAXDeleteKeyTrait
+0x1eb938de0  __DATA,__data  _kAXDidFinishSpeakingAssistantNotification
+0x193accf40  __TEXT,__const  _kAXDraggableTrait
+0x1eb938dd8  __DATA,__data  _kAXElementKey
+0x1eb938dd0  __DATA,__data  _kAXFocusItemFrameKey
+0x1eb938dc8  __DATA,__data  _kAXFocusItemLabelKey
+0x193accee0  __TEXT,__const  _kAXFolderIconTrait
+0x193acceb0  __TEXT,__const  _kAXFooterTrait
+0x1eb938dc0  __DATA,__data  _kAXForceUpdateChangeToken
+0x193acd018  __TEXT,__const  _kAXGestureHandlerRegionTrait
+0x193accf48  __TEXT,__const  _kAXGesturePracticeRegionTrait
+0x193accea8  __TEXT,__const  _kAXHeaderTrait
+0x193accfd0  __TEXT,__const  _kAXIgnoreItemChooserTrait
+0x193acce48  __TEXT,__const  _kAXImageTrait
+0x193accfe8  __TEXT,__const  _kAXInactiveTrait
+0x1e0b1bb70  __DATA_CONST,__const  _kAXInsertTextActionKeyCreatesUndoableAction
+0x1e0b1bb68  __DATA_CONST,__const  _kAXInsertTextActionKeySource
+0x1e0b1bb60  __DATA_CONST,__const  _kAXInsertTextActionKeyText
+0x193acced0  __TEXT,__const  _kAXIsEditingTrait
+0x193acce60  __TEXT,__const  _kAXKeyboardKeyTrait
+0x193acced8  __TEXT,__const  _kAXLaunchIconTrait
+0x193acce38  __TEXT,__const  _kAXLinkTrait
+0x1eb939408  __DATA,__data  _kAXLookingGlassUID
+0x193accf30  __TEXT,__const  _kAXMapTrait
+0x193accfe0  __TEXT,__const  _kAXMathEquationTrait
+0x193accfb0  __TEXT,__const  _kAXMenuItemTrait
+0x1eb938db8  __DATA,__data  _kAXMoveToElementNotificationKeyEchoSameTouchContainer
+0x1eb938db0  __DATA,__data  _kAXMoveToElementNotificationKeyElement
+0x1eb938da8  __DATA,__data  _kAXMoveToElementNotificationKeyIgnoreTouchInProgress
+0x1eb938da0  __DATA,__data  _kAXMoveToElementNotificationKeyShouldPlayTrackingSound
+0x1eb938d98  __DATA,__data  _kAXMoveToElementNotificationKeyShouldRefocusIfSameElement
+0x1eb938d90  __DATA,__data  _kAXMoveToElementNotificationKeyShouldScrollToElement
+0x1eb938d88  __DATA,__data  _kAXMoveToElementNotificationKeySyncNativeFocus
+0x1eb938d80  __DATA,__data  _kAXMoveToPreviousFirstResponderKey
+0x1eb938d78  __DATA,__data  _kAXMoveToSceneIdentifierKey
+0x193acce78  __TEXT,__const  _kAXNotEnabledTrait
+0x1eb938d70  __DATA,__data  _kAXNotificationDataKey
+0x1eb938d68  __DATA,__data  _kAXPageScrollFailed
+0x1eb938d60  __DATA,__data  _kAXPageScrollIsCrownScroll
+0x1eb938d58  __DATA,__data  _kAXPageScrollShouldSpeakElement
+0x1eb938d50  __DATA,__data  _kAXParentElementKey
+0x1eb938d48  __DATA,__data  _kAXPerformElementUpdateImmediatelyToken
+0x193accec8  __TEXT,__const  _kAXPickerElementTrait
+0x1eb938d40  __DATA,__data  _kAXPidKey
+0x193acce58  __TEXT,__const  _kAXPlaysSoundTrait
+0x193accf50  __TEXT,__const  _kAXPopupButtonTrait
+0x193acd010  __TEXT,__const  _kAXProminentIconTrait
+0x193accfd8  __TEXT,__const  _kAXRadioButtonTrait
+0x193acd000  __TEXT,__const  _kAXReadOnlyTrait
+0x193acd028  __TEXT,__const  _kAXRemoveSentinelTrait
+0x1eb938d38  __DATA,__data  _kAXScreenChangeMenuBar
+0x1eb938d30  __DATA,__data  _kAXScreenChangePopup
+0x1eb938d28  __DATA,__data  _kAXScreenChangeSourceIdentifier
+0x1eb938d20  __DATA,__data  _kAXScreenWillWakeNotificationKeyWakeReason
+0x1eb938d18  __DATA,__data  _kAXScreenWillWakeNotificationWakeReasonGeneral
+0x1eb938d10  __DATA,__data  _kAXScreenWillWakeNotificationWakeReasonHeySiri
+0x1eb938d08  __DATA,__data  _kAXScrollWithContentPullDown
+0x193accf18  __TEXT,__const  _kAXScrollableTrait
+0x193acce88  __TEXT,__const  _kAXSearchFieldTrait
+0x193accef8  __TEXT,__const  _kAXSecureTextFieldTrait
+0x193acce50  __TEXT,__const  _kAXSelectedTrait
+0x1eb938d00  __DATA,__data  _kAXSelectionChangedRemoteUserOperation
+0x193accf10  __TEXT,__const  _kAXSelectionDismissesItemTrait
+0x1eb938cf8  __DATA,__data  _kAXShouldIgnorePreviousFocusedElementKey
+0x1e0b1bb58  __DATA_CONST,__const  _kAXSimulatePressAtPointActionKeyAdditionalInfo
+0x1e0b1bb50  __DATA_CONST,__const  _kAXSimulatePressAtPointActionKeyDelay
+0x1e0b1bb48  __DATA_CONST,__const  _kAXSimulatePressAtPointActionKeyDisplayID
+0x1e0b1bb40  __DATA_CONST,__const  _kAXSimulatePressAtPointActionKeyFingerIndex
+0x1e0b1bb38  __DATA_CONST,__const  _kAXSimulatePressAtPointActionKeyForce
+0x1e0b1bb30  __DATA_CONST,__const  _kAXSimulatePressAtPointActionKeyPoint
+0x1e0b1bb28  __DATA_CONST,__const  _kAXSimulatePressAtPointActionKeySecureName
+0x1e0b1bb20  __DATA_CONST,__const  _kAXSimulatePressAtPointActionKeyWindowContextID
+0x193acd020  __TEXT,__const  _kAXSnapshotItemContainerTrait
+0x193accf20  __TEXT,__const  _kAXSpacerTrait
+0x193accfa0  __TEXT,__const  _kAXStartsMediaSessionTrait
+0x193acce68  __TEXT,__const  _kAXStaticTextTrait
+0x193accee8  __TEXT,__const  _kAXStatusBarElementTrait
+0x193acce70  __TEXT,__const  _kAXSummaryElementTrait
+0x193accff0  __TEXT,__const  _kAXSupportsTrackingDetailTrait
+0x193accf88  __TEXT,__const  _kAXSupportsZoomTrait
+0x193accea0  __TEXT,__const  _kAXTabBarTrait
+0x193accfc8  __TEXT,__const  _kAXTabButtonTrait
+0x193accf28  __TEXT,__const  _kAXTableIndexTrait
+0x193accf90  __TEXT,__const  _kAXTextAreaTrait
+0x193accec0  __TEXT,__const  _kAXTextEntryTrait
+0x1eb938cf0  __DATA,__data  _kAXTextOperationActionBold
+0x1eb938ce8  __DATA,__data  _kAXTextOperationActionCopy
+0x1eb938ce0  __DATA,__data  _kAXTextOperationActionCut
+0x1eb938cd8  __DATA,__data  _kAXTextOperationActionDecreaseFontSize
+0x1eb938cd0  __DATA,__data  _kAXTextOperationActionDefine
+0x1eb938cc8  __DATA,__data  _kAXTextOperationActionDelete
+0x1eb938cc0  __DATA,__data  _kAXTextOperationActionIncreaseFontSize
+0x1eb938cb8  __DATA,__data  _kAXTextOperationActionItalics
+0x1eb938cb0  __DATA,__data  _kAXTextOperationActionMoveDown
+0x1eb938ca8  __DATA,__data  _kAXTextOperationActionMoveUp
+0x1eb938ca0  __DATA,__data  _kAXTextOperationActionPaste
+0x1eb938c98  __DATA,__data  _kAXTextOperationActionRedo
+0x1eb938c90  __DATA,__data  _kAXTextOperationActionReplace
+0x1eb938c88  __DATA,__data  _kAXTextOperationActionScanText
+0x1eb938c80  __DATA,__data  _kAXTextOperationActionSelect
+0x1eb938c78  __DATA,__data  _kAXTextOperationActionSelectAll
+0x1eb938c70  __DATA,__data  _kAXTextOperationActionShare
+0x1eb938c68  __DATA,__data  _kAXTextOperationActionSpeak
+0x1eb938c60  __DATA,__data  _kAXTextOperationActionSpeakSentence
+0x1eb938c58  __DATA,__data  _kAXTextOperationActionSpeakSpellOut
+0x1eb938c50  __DATA,__data  _kAXTextOperationActionUnderline
+0x1eb938c48  __DATA,__data  _kAXTextOperationActionUndo
+0x1eb938c40  __DATA,__data  _kAXTextOperationActionWritingTools
+0x193accf38  __TEXT,__const  _kAXTextOperationsAvailableTrait
+0x193accf08  __TEXT,__const  _kAXToggleTrait
+0x193accf80  __TEXT,__const  _kAXTouchContainerTrait
+0x1eb939418  __DATA,__data  _kAXUIServerFakePid
+0x193acce80  __TEXT,__const  _kAXUpdatesFrequentlyTrait
+0x1eb938c38  __DATA,__data  _kAXValueChangeTypeAutofill
+0x1eb938c30  __DATA,__data  _kAXValueChangeTypeDelete
+0x1eb938c28  __DATA,__data  _kAXValueChangeTypeDictation
+0x1eb938c20  __DATA,__data  _kAXValueChangeTypeInsert
+0x1eb938c18  __DATA,__data  _kAXValueChangeTypeMarkingBegan
+0x1eb938c10  __DATA,__data  _kAXValueChangeTypeMarkingEnded
+0x1eb938c08  __DATA,__data  _kAXValueChangeTypeReplacement
+0x1eb938c00  __DATA,__data  _kAXValueChangeTypeSingleInsert
+0x1eb938bf8  __DATA,__data  _kAXValueChangeUserInfoKeyChangeType
+0x1eb938bf0  __DATA,__data  _kAXValueChangeUserInfoKeyInputDelegate
+0x1eb938be8  __DATA,__data  _kAXValueChangeUserInfoKeyInsertedTextOrNil
+0x1eb938be0  __DATA,__data  _kAXValueChangeUserInfoKeyIsHoverTypingOnly
+0x1eb938bd8  __DATA,__data  _kAXValueChangeUserInfoKeyIsQuiet
+0x1eb938bd0  __DATA,__data  _kAXValueChangeUserInfoKeyIsSecureText
+0x1eb938bc8  __DATA,__data  _kAXValueChangeUserInfoKeyValueAfter
+0x1eb938bc0  __DATA,__data  _kAXValueChangeUserInfoKeyValueBefore
+0x1eb938bb8  __DATA,__data  _kAXValueChangeUserInfoKeyValueSubmitted
+0x1eb938bb0  __DATA,__data  _kAXValueHoverTypingInputFrame
+0x193acce40  __TEXT,__const  _kAXVisitedTrait
+0x193acceb8  __TEXT,__const  _kAXWebContentTrait
+0x193acd008  __TEXT,__const  _kAXWebInteractiveVideoTrait
+0x1e0b1bb18  __DATA_CONST,__const  _kAXXCAttributeAbsoluteValue
+0x1e0b1bb10  __DATA_CONST,__const  _kAXXCAttributeActiveKeyboard
+0x1e0b1bb08  __DATA_CONST,__const  _kAXXCAttributeApplication
+0x1e0b1bb00  __DATA_CONST,__const  _kAXXCAttributeApplicationBundleIdentifier
+0x1e0b1baf8  __DATA_CONST,__const  _kAXXCAttributeApplicationOrientation
+0x1e0b1baf0  __DATA_CONST,__const  _kAXXCAttributeAssistiveTechnologyFocused
+0x1e0b1bae8  __DATA_CONST,__const  _kAXXCAttributeAutomationType
+0x1e0b1bae0  __DATA_CONST,__const  _kAXXCAttributeAvailableKeyplanes
+0x1e0b1bad8  __DATA_CONST,__const  _kAXXCAttributeBackgroundTextColor
+0x1e0b1bad0  __DATA_CONST,__const  _kAXXCAttributeBannerIsStickyAttribute
+0x1e0b1bac8  __DATA_CONST,__const  _kAXXCAttributeCallState
+0x1e0b1bac0  __DATA_CONST,__const  _kAXXCAttributeCarPlayAppApplication
+0x1e0b1bab8  __DATA_CONST,__const  _kAXXCAttributeCenterPoint
+0x1e0b1bab0  __DATA_CONST,__const  _kAXXCAttributeChildren
+0x1e0b1baa8  __DATA_CONST,__const  _kAXXCAttributeChildrenCount
+0x1e0b1baa0  __DATA_CONST,__const  _kAXXCAttributeCustomActions
+0x1e0b1ba98  __DATA_CONST,__const  _kAXXCAttributeCustomAutomationProperties
+0x1e0b1ba90  __DATA_CONST,__const  _kAXXCAttributeDatePickerComponentType
+0x1e0b1ba88  __DATA_CONST,__const  _kAXXCAttributeDatePickerPossibleValues
+0x1e0b1ba80  __DATA_CONST,__const  _kAXXCAttributeElementBaseType
+0x1e0b1ba78  __DATA_CONST,__const  _kAXXCAttributeElementType
+0x1e0b1ba70  __DATA_CONST,__const  _kAXXCAttributeExpandedStatusCollapsed
+0x1e0b1ba68  __DATA_CONST,__const  _kAXXCAttributeExpandedStatusExpanded
+0x1e0b1ba60  __DATA_CONST,__const  _kAXXCAttributeExpandedStatusUnsupported
+0x1e0b1ba58  __DATA_CONST,__const  _kAXXCAttributeFauxCollectionViewCellsDisabled
+0x1e0b1ba50  __DATA_CONST,__const  _kAXXCAttributeFauxTableViewCellsDisabled
+0x1e0b1ba48  __DATA_CONST,__const  _kAXXCAttributeFocusedApplications
+0x1e0b1ba40  __DATA_CONST,__const  _kAXXCAttributeForegroundTextColor
+0x1e0b1ba38  __DATA_CONST,__const  _kAXXCAttributeFrame
+0x1e0b1ba30  __DATA_CONST,__const  _kAXXCAttributeHasNativeFocus
+0x1e0b1ba28  __DATA_CONST,__const  _kAXXCAttributeHasVariantKeys
+0x1e0b1ba20  __DATA_CONST,__const  _kAXXCAttributeHeaderElements
+0x1e0b1ba18  __DATA_CONST,__const  _kAXXCAttributeHint
+0x1e0b1ba10  __DATA_CONST,__const  _kAXXCAttributeHorizontalSizeClass
+0x1e0b1ba08  __DATA_CONST,__const  _kAXXCAttributeIdentifier
+0x1e0b1ba00  __DATA_CONST,__const  _kAXXCAttributeInputIdentifier
+0x1e0b1b9f8  __DATA_CONST,__const  _kAXXCAttributeIsAppSwitcherVisible
+0x1e0b1b9f0  __DATA_CONST,__const  _kAXXCAttributeIsComboBox
+0x1e0b1b9e8  __DATA_CONST,__const  _kAXXCAttributeIsElement
+0x1e0b1b9e0  __DATA_CONST,__const  _kAXXCAttributeIsExpanded
+0x1e0b1b9d8  __DATA_CONST,__const  _kAXXCAttributeIsOpaqueElementProvider
+0x1e0b1b9d0  __DATA_CONST,__const  _kAXXCAttributeIsRemoteElement
+0x1e0b1b9c8  __DATA_CONST,__const  _kAXXCAttributeIsStarkElement
+0x1e0b1b9c0  __DATA_CONST,__const  _kAXXCAttributeIsUserInteractionEnabled
+0x1e0b1b9b8  __DATA_CONST,__const  _kAXXCAttributeIsValid
+0x1e0b1b9b0  __DATA_CONST,__const  _kAXXCAttributeIsVisible
+0x1e0b1b9a8  __DATA_CONST,__const  _kAXXCAttributeKeyboardKeyRepresentedString
+0x1e0b1b9a0  __DATA_CONST,__const  _kAXXCAttributeLabel
+0x1e0b1b998  __DATA_CONST,__const  _kAXXCAttributeLanguage
+0x1e0b1b990  __DATA_CONST,__const  _kAXXCAttributeLocalizationBundleID
+0x1e0b1b988  __DATA_CONST,__const  _kAXXCAttributeLocalizationBundlePath
+0x1e0b1b980  __DATA_CONST,__const  _kAXXCAttributeLocalizedStringKey
+0x1e0b1b978  __DATA_CONST,__const  _kAXXCAttributeLocalizedStringTableName
+0x1e0b1b970  __DATA_CONST,__const  _kAXXCAttributeMainWindow
+0x1e0b1b968  __DATA_CONST,__const  _kAXXCAttributeMaxScrubberPosition
+0x1e0b1b960  __DATA_CONST,__const  _kAXXCAttributeMaxValue
+0x1e0b1b958  __DATA_CONST,__const  _kAXXCAttributeMinScrubberPosition
+0x1e0b1b950  __DATA_CONST,__const  _kAXXCAttributeMinValue
+0x1e0b1b948  __DATA_CONST,__const  _kAXXCAttributeNativeFocusElement
+0x1e0b1b940  __DATA_CONST,__const  _kAXXCAttributeNativeFocusPreferredElement
+0x1e0b1b938  __DATA_CONST,__const  _kAXXCAttributeNativeFocusableElements
+0x1e0b1b930  __DATA_CONST,__const  _kAXXCAttributeOpaqueElementParent
+0x1e0b1b928  __DATA_CONST,__const  _kAXXCAttributePageCount
+0x1e0b1b920  __DATA_CONST,__const  _kAXXCAttributePageIndex
+0x1e0b1b918  __DATA_CONST,__const  _kAXXCAttributeParent
+0x1e0b1b910  __DATA_CONST,__const  _kAXXCAttributePassiveEventListenMode
+0x1e0b1b908  __DATA_CONST,__const  _kAXXCAttributePassiveEventListenModeEventDelay
+0x1e0b1b900  __DATA_CONST,__const  _kAXXCAttributePath
+0x1e0b1b8f8  __DATA_CONST,__const  _kAXXCAttributePickerType
+0x1e0b1b8f0  __DATA_CONST,__const  _kAXXCAttributePictureInPictureWindow
+0x1e0b1b8e8  __DATA_CONST,__const  _kAXXCAttributePlaceholderValue
+0x1e0b1b8e0  __DATA_CONST,__const  _kAXXCAttributeResponderElement
+0x1e0b1b8d8  __DATA_CONST,__const  _kAXXCAttributeRunningApplications
+0x1e0b1b8d0  __DATA_CONST,__const  _kAXXCAttributeScrollContentSize
+0x1e0b1b8c8  __DATA_CONST,__const  _kAXXCAttributeScrollOffset
+0x1e0b1b8c0  __DATA_CONST,__const  _kAXXCAttributeScrollStatus
+0x1e0b1b8b8  __DATA_CONST,__const  _kAXXCAttributeSelectedTextRange
+0x1e0b1b8b0  __DATA_CONST,__const  _kAXXCAttributeSideAppDivider
+0x1e0b1b8a8  __DATA_CONST,__const  _kAXXCAttributeSystemAppApplication
+0x1e0b1b8a0  __DATA_CONST,__const  _kAXXCAttributeSystemAutomationProperties
+0x1e0b1b898  __DATA_CONST,__const  _kAXXCAttributeTraits
+0x1e0b1b890  __DATA_CONST,__const  _kAXXCAttributeTruncatedValue
+0x1e0b1b888  __DATA_CONST,__const  _kAXXCAttributeURL
+0x1e0b1b880  __DATA_CONST,__const  _kAXXCAttributeUserTestingActions
+0x1e0b1b878  __DATA_CONST,__const  _kAXXCAttributeUserTestingElements
+0x1e0b1b870  __DATA_CONST,__const  _kAXXCAttributeUserTestingSnapshot
+0x1e0b1b868  __DATA_CONST,__const  _kAXXCAttributeValidBackingElement
+0x1e0b1b860  __DATA_CONST,__const  _kAXXCAttributeValue
+0x1e0b1b858  __DATA_CONST,__const  _kAXXCAttributeVariantKeys
+0x1e0b1b850  __DATA_CONST,__const  _kAXXCAttributeVerticalSizeClass
+0x1e0b1b848  __DATA_CONST,__const  _kAXXCAttributeViewAlpha
+0x1e0b1b840  __DATA_CONST,__const  _kAXXCAttributeViewControllerClassName
+0x1e0b1b838  __DATA_CONST,__const  _kAXXCAttributeViewControllerTitle
+0x1e0b1b830  __DATA_CONST,__const  _kAXXCAttributeVisibleCells
+0x1e0b1b828  __DATA_CONST,__const  _kAXXCAttributeVisibleFrame
+0x1e0b1b820  __DATA_CONST,__const  _kAXXCAttributeVisibleHorizontalScrollArea
+0x1e0b1b818  __DATA_CONST,__const  _kAXXCAttributeVisiblePoint
+0x1e0b1b810  __DATA_CONST,__const  _kAXXCAttributeVisibleSections
+0x1e0b1b808  __DATA_CONST,__const  _kAXXCAttributeVisibleVerticalScrollArea
+0x1e0b1b800  __DATA_CONST,__const  _kAXXCAttributeWindowContextId
+0x1e0b1b7f8  __DATA_CONST,__const  _kAXXCAttributeWindowDisplayId
+0x1e0b1b7f0  __DATA_CONST,__const  _kAXXCAttributeZoomScale
+0x1e0b1b7e8  __DATA_CONST,__const  _kAXXCParameterizedAttributeApplicationForPosition
+0x1e0b1b7e0  __DATA_CONST,__const  _kAXXCParameterizedAttributeApplicationState
+0x1e0b1b7d8  __DATA_CONST,__const  _kAXXCParameterizedAttributeChildrenWithRange
+0x1e0b1b7d0  __DATA_CONST,__const  _kAXXCParameterizedAttributeContextIdForPoint
+0x1e0b1b7c8  __DATA_CONST,__const  _kAXXCParameterizedAttributeContextIdForPointWithDisplayId
+0x1e0b1b7c0  __DATA_CONST,__const  _kAXXCParameterizedAttributeConvertHostedViewFrame
+0x1e0b1b7b8  __DATA_CONST,__const  _kAXXCParameterizedAttributeConvertHostedViewPosition
+0x1e0b1b7b0  __DATA_CONST,__const  _kAXXCParameterizedAttributeConvertHostedViewPositionFromContext
+0x1e0b1b7a8  __DATA_CONST,__const  _kAXXCParameterizedAttributeConvertPositionToContext
+0x1e0b1b7a0  __DATA_CONST,__const  _kAXXCParameterizedAttributeFocusedOpaqueElement
+0x1e0b1b798  __DATA_CONST,__const  _kAXXCParameterizedAttributeKeyboardKeyForString
+0x1e0b1b790  __DATA_CONST,__const  _kAXXCParameterizedAttributeMoveFocusToNextOpaqueElement
+0x1e0b1b788  __DATA_CONST,__const  _kAXXCParameterizedAttributeNextDockForDisplayID
+0x1e0b1b780  __DATA_CONST,__const  _kAXXCParameterizedAttributeOpaqueElementsParameterized
+0x1e0b1b778  __DATA_CONST,__const  _kAXXCParameterizedAttributeUserTestingSnapshotParameterized
+0x1eb939754  __DATA,__common  _sSystemWideAppServerPID
+0x1eb939738  __DATA,__common  _sSystemWideServerPID
+```
+
+## Private
+
+```
+0x193a7cd0c  __TEXT,__text  -[NSDictionary(AXPropertyListCoersion) _axRecursivelyPropertyListCoercedRepresentationWithError:]
+0x193a7d400  __TEXT,__text  -[NSString(AXPropertyListCoersion) _axDictionaryKeyReplacementRepresentation]
+0x193a7d404  __TEXT,__text  ___AXPushNotificationToSystemForBroadcast_block_invoke_2
+0x193a7d7ec  __TEXT,__text  ____AXReleasePortFromCache_block_invoke
+0x193a7d89c  __TEXT,__text  __allDisplayTypes
+0x193a7da74  __TEXT,__text  __AXPidIsSuspendedInternal
+0x193a7dd4c  __TEXT,__text  ____AXGetPortFromCache_block_invoke
+0x193a7de40  __TEXT,__text  _mshMIGPerform
+0x193a7e330  __TEXT,__text  -[NSString(AXPropertyListCoersion) _axRecursivelyPropertyListCoercedRepresentationWithError:]
+0x193a7e524  __TEXT,__text  __XBroadcastNotification
+0x193a7e9f0  __TEXT,__text  -[NSObject(AXAttributedStringAdditions) isAXAttributedString]
+0x193a7e9f8  __TEXT,__text  ____AXBroadcastEventProcessNotification_block_invoke_2
+0x193a7ec20  __TEXT,__text  ___AXBroadcastNotificationToAllClients_block_invoke
+0x193a7ed2c  __TEXT,__text  -[NSNumber(AXPropertyListCoersion) _axRecursivelyReconstitutedRepresentationFromPropertyListWithError:]
+0x193a7f048  __TEXT,__text  -[NSString(AXPropertyListCoersion) _axReconstitutedRepresentationForDictionaryKeyReplacement]
+0x193a7f118  __TEXT,__text  ___AXUIElementDeallocate
+0x193a7f58c  __TEXT,__text  -[NSDictionary(AXPropertyListCoersion) _axRecursivelyReconstitutedRepresentationFromPropertyListWithError:]
+0x193a7f818  __TEXT,__text  +[AXPidSuspensionInfo shared]
+0x193a7f860  __TEXT,__text  __XPostNotification
+0x193a7f994  __TEXT,__text  -[AXPidSuspensionInfo suspendedPidsForDisplay:]
+0x193a7fa78  __TEXT,__text  -[AXObserverElementPair observer]
+0x193a7fcd4  __TEXT,__text  -[AXPidSuspensionInfo timeoutProbationPidsForDisplay:]
+0x193a80488  __TEXT,__text  ____AXUIElementPostNotification_block_invoke_2
+0x193a807c4  __TEXT,__text  __AXRemoveSuspendedPid
+0x193a80a4c  __TEXT,__text  __terminationEmptyHandler
+0x193a80a50  __TEXT,__text  -[NSNumber(AXPropertyListCoersion) _axRecursivelyPropertyListCoercedRepresentationWithError:]
+0x193a80a54  __TEXT,__text  -[AXAttributedString dealloc]
+0x193a80ab4  __TEXT,__text  -[AXAttributedString characterAtIndex:]
+0x193a80b04  __TEXT,__text  -[NSString(AXPropertyListCoersion) _axRecursivelyReconstitutedRepresentationFromPropertyListWithError:]
+0x193a80b08  __TEXT,__text  -[AXPidSuspensionInfo associatedRemotePidsForDisplay:]
+0x193a80bec  __TEXT,__text  _mshHash
+0x193a80bf4  __TEXT,__text  -[AXPidSuspensionInfo tentativeSuspendedPidsForDisplay:]
+0x193a80cd8  __TEXT,__text  ___52+[AXRemoteElement registerRemoteElement:remotePort:]_block_invoke
+0x193a80e98  __TEXT,__text  _mshGetPort
+0x193a80ea0  __TEXT,__text  _serializeBufferDestructor
+0x193a80eb0  __TEXT,__text  -[AXRemoteElement initWithUUID:andRemotePid:andContextId:]
+0x193a80f84  __TEXT,__text  -[AXRemoteElement setUuid:]
+0x193a80f90  __TEXT,__text  -[AXRemoteElement setRemotePid:]
+0x193a80f98  __TEXT,__text  -[AXRemoteElement setContextId:]
+0x193a80fa0  __TEXT,__text  -[AXRemoteElement setContextRetrieval:]
+0x193a80fa8  __TEXT,__text  -[AXRemoteElement setPidRetrieval:]
+0x193a80fb0  __TEXT,__text  -[AXRemoteElement setMachPort:]
+0x193a81030  __TEXT,__text  -[AXRemoteElement contextId]
+0x193a81094  __TEXT,__text  -[AXRemoteElement contextRetrieval]
+0x193a8109c  __TEXT,__text  -[AXRemoteElement setRemoteChildrenDelegate:]
+0x193a811c8  __TEXT,__text  -[AXRemoteElement uuid]
+0x193a822a4  __TEXT,__text  +[AXSimpleRuntimeManager sharedManager]
+0x193a822ec  __TEXT,__text  ___39+[AXSimpleRuntimeManager sharedManager]_block_invoke
+0x193a8231c  __TEXT,__text  -[AXSimpleRuntimeManager start]
+0x193a824a8  __TEXT,__text  __copyAttributeValueCallback
+0x193a825d4  __TEXT,__text  __setAttributeValueCallback
+0x193a82688  __TEXT,__text  __serverPerformActionCallback
+0x193a82720  __TEXT,__text  __performActionWithValueCallback
+0x193a827e0  __TEXT,__text  __copyElementAtPositionCallback
+0x193a82934  __TEXT,__text  __copyParameterizedAttributeValueCallback
+0x193a82ab0  __TEXT,__text  __copyMultipleAttributeValuesCallback
+0x193a82d14  __TEXT,__text  __AXStartSystemWideServerThread
+0x193a82de0  __TEXT,__text  __axNotificationObserverDiedHandler
+0x193a82e50  __TEXT,__text  _AXSimpleRuntimeApplicationElementRetrieval
+0x193a82f9c  __TEXT,__text  ____AXElementForAXUIElementUniqueId_block_invoke
+0x193a82ff4  __TEXT,__text  -[AXSimpleRuntimeManager systemWideServer]
+0x193a82ffc  __TEXT,__text  -[AXSimpleRuntimeManager setSystemWideServer:]
+0x193a83004  __TEXT,__text  -[AXSimpleRuntimeManager dedicatedServerThread]
+0x193a8300c  __TEXT,__text  -[AXSimpleRuntimeManager setDedicatedServerThread:]
+0x193a83014  __TEXT,__text  -[AXSimpleRuntimeManager started]
+0x193a8301c  __TEXT,__text  -[AXSimpleRuntimeManager setStarted:]
+0x193a83024  __TEXT,__text  -[AXSimpleRuntimeManager parameterizedAttributeCallback]
+0x193a8302c  __TEXT,__text  -[AXSimpleRuntimeManager setParameterizedAttributeCallback:]
+0x193a83034  __TEXT,__text  -[AXSimpleRuntimeManager attributeCallback]
+0x193a8303c  __TEXT,__text  -[AXSimpleRuntimeManager setAttributeCallback:]
+0x193a83044  __TEXT,__text  -[AXSimpleRuntimeManager setAttributeCallback]
+0x193a8304c  __TEXT,__text  -[AXSimpleRuntimeManager setSetAttributeCallback:]
+0x193a83054  __TEXT,__text  -[AXSimpleRuntimeManager performActionCallback]
+0x193a8305c  __TEXT,__text  -[AXSimpleRuntimeManager setPerformActionCallback:]
+0x193a83064  __TEXT,__text  -[AXSimpleRuntimeManager clientObserverCallback]
+0x193a8306c  __TEXT,__text  -[AXSimpleRuntimeManager setClientObserverCallback:]
+0x193a83074  __TEXT,__text  -[AXSimpleRuntimeManager hitTestCallback]
+0x193a8307c  __TEXT,__text  -[AXSimpleRuntimeManager setHitTestCallback:]
+0x193a83084  __TEXT,__text  -[AXSimpleRuntimeManager applicationElementCallback]
+0x193a8308c  __TEXT,__text  -[AXSimpleRuntimeManager setApplicationElementCallback:]
+0x193a83094  __TEXT,__text  -[AXSimpleRuntimeManager outgoingValuePreprocessor]
+0x193a8309c  __TEXT,__text  -[AXSimpleRuntimeManager setOutgoingValuePreprocessor:]
+0x193a830a4  __TEXT,__text  -[AXSimpleRuntimeManager .cxx_destruct]
+0x193a83124  __TEXT,__text  ____AXBroadcastEventProcessNotification_block_invoke
+0x193a83240  __TEXT,__text  __AXDetermineRequestingClient
+0x193a83b14  __TEXT,__text  __AXIPCToPidTimedOut
+0x193a83cc8  __TEXT,__text  __AXHandleRemoteElementCallthrough
+0x193a85b1c  __TEXT,__text  _copyApplicationAtPosition
+0x193a86730  __TEXT,__text  __AXUIElementCopyElementAtPositionCommon
+0x193a87adc  __TEXT,__text  ___AXUIElementSharedSystemWide_block_invoke
+0x193a87c6c  __TEXT,__text  ___AXUIElementSharedSystemApp_block_invoke
+0x193a87db8  __TEXT,__text  ___AXUIElementSharedKeyboardApp_block_invoke
+0x193a887a4  __TEXT,__text  ____AXGetPortFromCache_block_invoke.35
+0x193a88880  __TEXT,__text  _portInvalidationCallback
+0x193a88b14  __TEXT,__text  ___AXUIElementRegisterForApplicationDeath_block_invoke
+0x193a88b44  __TEXT,__text  ___AXUIElementRegisterForApplicationDeath_block_invoke_2
+0x193a88f78  __TEXT,__text  ____AXUIScreenConvertToCAScreen_block_invoke
+0x193a8904c  __TEXT,__text  ____AXDetermineRequestingClient_block_invoke
+0x193a89540  __TEXT,__text  ___getSelfAuditToken_block_invoke
+0x193a8957c  __TEXT,__text  ____SystemWideServerPortName_block_invoke
+0x193a895b4  __TEXT,__text  __AXHandleRemoteElementCallthroughForArray
+0x193a89924  __TEXT,__text  ____AXUIElementCopyElementAtPositionCommon_block_invoke
+0x193a899bc  __TEXT,__text  ____AXUIElementCopyElementAtPositionCommon_block_invoke.93
+0x193a89a28  __TEXT,__text  ___portInvalidationCallback_block_invoke
+0x193a89ad0  __TEXT,__text  ___portInvalidationCallback_block_invoke.106
+0x193a89b88  __TEXT,__text  ___AXInitSerializationStyle_block_invoke
+0x193a89fe0  __TEXT,__text  __AXUIElementRegisterServerWithRunLoopInternal
+0x193a8a8e8  __TEXT,__text  ___AXPushNotificationToSystemForBroadcast_block_invoke
+0x193a8a944  __TEXT,__text  ____AXUIElementPostNotification_block_invoke
+0x193a8ad34  __TEXT,__text  __handleNonMainThreadCallback
+0x193a8ae1c  __TEXT,__text  ____AXXMIGCopyAttributeValue_block_invoke
+0x193a8b2bc  __TEXT,__text  ____AXXMIGCopyMultipleAttributeValues_block_invoke
+0x193a8b77c  __TEXT,__text  ____AXXMIGCopyParameterizedAttributeValue_block_invoke
+0x193a8bad0  __TEXT,__text  ____AXXMIGSetAttributeValue_block_invoke
+0x193a8bcf4  __TEXT,__text  ____AXXMIGPerformAction_block_invoke
+0x193a8c0a0  __TEXT,__text  ____AXXMIGPerformActionWithValue_block_invoke
+0x193a8c3c0  __TEXT,__text  ____AXXMIGCopyElementAtPosition_block_invoke
+0x193a8d13c  __TEXT,__text  ___AXProcessCanContactSystemWideServer_block_invoke
+0x193a8d1a8  __TEXT,__text  _axObserverDeadNameHandler
+0x193a8d29c  __TEXT,__text  _apiNotifyCallback
+0x193a8d2ac  __TEXT,__text  ___hasEntitlementForAuditToken
+0x193a8d4c4  __TEXT,__text  __InvalidateAuditTokenCache
+0x193a8d4f0  __TEXT,__text  ____handleNonMainThreadCallback_block_invoke
+0x193a8d528  __TEXT,__text  ___AXObserverCookieDeallocate
+0x193a8d544  __TEXT,__text  ___AXObserverCookieEqual
+0x193a8d584  __TEXT,__text  ___AXObserverCookieHash
+0x193a8d58c  __TEXT,__text  ___AXObserverCookieCopyDescription
+0x193a8d5dc  __TEXT,__text  -[AXUIMockElement copyWithZone:]
+0x193a8d6c8  __TEXT,__text  +[AXUIMockElement applyElementAttributeCacheScheme:]
+0x193a8d6cc  __TEXT,__text  +[AXUIMockElement uiElementAtCoordinate:]
+0x193a8d6ec  __TEXT,__text  -[AXUIMockElement init]
+0x193a8d798  __TEXT,__text  -[AXUIMockElement isMockElement]
+0x193a8d7a0  __TEXT,__text  -[AXUIMockElement axElement]
+0x193a8d7a8  __TEXT,__text  -[AXUIMockElement visibleElements]
+0x193a8d7b0  __TEXT,__text  -[AXUIMockElement startLoggingActions]
+0x193a8d820  __TEXT,__text  -[AXUIMockElement endLoggingActions]
+0x193a8d864  __TEXT,__text  -[AXUIMockElement performBlockWhileLoggingPerformedActions:]
+0x193a8d8b0  __TEXT,__text  -[AXUIMockElement description]
+0x193a8d99c  __TEXT,__text  -[AXUIMockElement _valueForAttribute:]
+0x193a8da38  __TEXT,__text  -[AXUIMockElement enableCache:]
+0x193a8da3c  __TEXT,__text  -[AXUIMockElement disableCache]
+0x193a8da40  __TEXT,__text  -[AXUIMockElement isEqual:]
+0x193a8db00  __TEXT,__text  -[AXUIMockElement setWritable:forAXAttribute:]
+0x193a8dbb8  __TEXT,__text  -[AXUIMockElement canSetAXAttribute:]
+0x193a8dbc0  __TEXT,__text  -[AXUIMockElement uiElementWithAXAttribute:]
+0x193a8dc24  __TEXT,__text  -[AXUIMockElement canPerformAXAction:]
+0x193a8dc2c  __TEXT,__text  -[AXUIMockElement setValue:forAXAttribute:]
+0x193a8dd00  __TEXT,__text  -[AXUIMockElement setValue:forAXParameterizedAttribute:]
+0x193a8ddd4  __TEXT,__text  -[AXUIMockElement arrayWithAXAttribute:]
+0x193a8ddd8  __TEXT,__text  -[AXUIMockElement stringWithAXAttribute:]
+0x193a8de40  __TEXT,__text  -[AXUIMockElement objectWithAXAttribute:]
+0x193a8de44  __TEXT,__text  -[AXUIMockElement boolWithAXAttribute:]
+0x193a8de7c  __TEXT,__text  -[AXUIMockElement floatWithAXAttribute:]
+0x193a8debc  __TEXT,__text  -[AXUIMockElement longWithAXAttribute:]
+0x193a8def4  __TEXT,__text  -[AXUIMockElement numberWithAXAttribute:]
+0x193a8e024  __TEXT,__text  -[AXUIMockElement pointWithAXAttribute:]
+0x193a8e06c  __TEXT,__text  -[AXUIMockElement sizeWithAXAttribute:]
+0x193a8e0b4  __TEXT,__text  -[AXUIMockElement rangeWithAXAttribute:]
+0x193a8e1d4  __TEXT,__text  -[AXUIMockElement pathWithAXAttribute:]
+0x193a8e1dc  __TEXT,__text  -[AXUIMockElement rectWithAXAttribute:]
+0x193a8e23c  __TEXT,__text  -[AXUIMockElement urlWithAXAttribute:]
+0x193a8e240  __TEXT,__text  -[AXUIMockElement uiElementArrayForAXAttribute:]
+0x193a8e244  __TEXT,__text  -[AXUIMockElement arrayCountWithAXAttribute:]
+0x193a8e27c  __TEXT,__text  -[AXUIMockElement fillStaticCache]
+0x193a8e280  __TEXT,__text  -[AXUIMockElement objectWithAXAttribute:parameter:]
+0x193a8ea34  __TEXT,__text  -[AXUIMockElement cachedAttributes]
+0x193a8ea9c  __TEXT,__text  -[AXUIMockElement copyCachedAttributes]
+0x193a8ec08  __TEXT,__text  -[AXUIMockElement uiElementsWithAttribute:]
+0x193a8ec0c  __TEXT,__text  -[AXUIMockElement uiElementsWithAttribute:parameter:]
+0x193a8ec10  __TEXT,__text  -[AXUIMockElement performAXAction:]
+0x193a8ece8  __TEXT,__text  -[AXUIMockElement performAXAction:withValue:]
+0x193a8ee60  __TEXT,__text  -[AXUIMockElement performAXAction:withValue:fencePort:]
+0x193a8eee8  __TEXT,__text  -[AXUIMockElement previousElementsWithCount:]
+0x193a8ef24  __TEXT,__text  -[AXUIMockElement nextElementsWithCount:]
+0x193a8ef60  __TEXT,__text  -[AXUIMockElement nextElementsWithParameters:]
+0x193a8ef9c  __TEXT,__text  -[AXUIMockElement previousElementsWithParameters:]
+0x193a8efd8  __TEXT,__text  -[AXUIMockElement uiElementsWithAttribute:parameter:fetchAttributes:]
+0x193a8efdc  __TEXT,__text  -[AXUIMockElement isValid]
+0x193a8efe4  __TEXT,__text  -[AXUIMockElement isValidForApplication:]
+0x193a8efec  __TEXT,__text  -[AXUIMockElement pid]
+0x193a8eff4  __TEXT,__text  -[AXUIMockElement updateCacheWithAttributes:]
+0x193a8eff8  __TEXT,__text  -[AXUIMockElement updateCache:]
+0x193a8f080  __TEXT,__text  -[AXUIMockElement setAXAttribute:withBOOL:]
+0x193a8f15c  __TEXT,__text  -[AXUIMockElement setAXAttribute:withString:]
+0x193a8f208  __TEXT,__text  -[AXUIMockElement setAXAttribute:withLong:]
+0x193a8f2e4  __TEXT,__text  -[AXUIMockElement setAXAttribute:withFloat:]
+0x193a8f3c0  __TEXT,__text  -[AXUIMockElement setAXAttribute:withNumber:]
+0x193a8f46c  __TEXT,__text  -[AXUIMockElement setAXAttribute:withPoint:]
+0x193a8f554  __TEXT,__text  -[AXUIMockElement setAXAttribute:withSize:]
+0x193a8f63c  __TEXT,__text  -[AXUIMockElement setAXAttribute:withRange:]
+0x193a8f69c  __TEXT,__text  -[AXUIMockElement setAXAttribute:withUIElement:]
+0x193a8f6f8  __TEXT,__text  -[AXUIMockElement setAXAttribute:withUIElementArray:]
+0x193a8f754  __TEXT,__text  -[AXUIMockElement setAXAttribute:withArray:]
+0x193a8f7b0  __TEXT,__text  -[AXUIMockElement setAXAttribute:withObject:]
+0x193a8f80c  __TEXT,__text  -[AXUIMockElement setAXAttribute:withObject:synchronous:]
+0x193a8f868  __TEXT,__text  -[AXUIMockElement pointForLineNumber:]
+0x193a8f880  __TEXT,__text  -[AXUIMockElement _lineNumberForPoint:]
+0x193a8f890  __TEXT,__text  -[AXUIMockElement hash]
+0x193a8f8f8  __TEXT,__text  -[AXUIMockElement usesCarriageReturnAsLinesSeparator]
+0x193a8f90c  __TEXT,__text  -[AXUIMockElement setUsesCarriageReturnAsLinesSeparator:]
+0x193a8f920  __TEXT,__text  -[AXUIMockElement attributes]
+0x193a8f934  __TEXT,__text  -[AXUIMockElement setAttributes:]
+0x193a8f948  __TEXT,__text  -[AXUIMockElement isApplication]
+0x193a8f95c  __TEXT,__text  -[AXUIMockElement setIsApplication:]
+0x193a8f970  __TEXT,__text  -[AXUIMockElement handleActionBlock]
+0x193a8f984  __TEXT,__text  -[AXUIMockElement setHandleActionBlock:]
+0x193a8f990  __TEXT,__text  -[AXUIMockElement cacheUpdatedCallback]
+0x193a8f9a4  __TEXT,__text  -[AXUIMockElement setCacheUpdatedCallback:]
+0x193a8f9b0  __TEXT,__text  -[AXUIMockElement .cxx_destruct]
+0x193a8fa34  __TEXT,__text  -[AXElementGroupingKeyboardExtrasConsolidationPass shouldTransformGroup:forGrouper:]
+0x193a8fbc8  __TEXT,__text  -[AXElementGroupingKeyboardExtrasConsolidationPass transformGroup:forGrouper:]
+0x193a8fe88  __TEXT,__text  -[AXElementGrouper init]
+0x193a8fea4  __TEXT,__text  -[AXElementGrouper initWithHeuristics:]
+0x193a8fef0  __TEXT,__text  -[AXElementGrouper minimumGroupSize]
+0x193a8fef8  __TEXT,__text  -[AXElementGrouper maximumGroupSize]
+0x193a8ff0c  __TEXT,__text  -[AXElementGrouper preferredGroupSize]
+0x193a8ff24  __TEXT,__text  -[AXElementGrouper thresholdForDeterminingEqualSize]
+0x193a8ff48  __TEXT,__text  -[AXElementGrouper transformationPasses]
+0x193a8ffd4  __TEXT,__text  -[AXElementGrouper groupElementsInRootGroup:]
+0x193a90048  __TEXT,__text  -[AXElementGrouper _groupRemovingImpossibleGroups:isRootLevel:]
+0x193a9038c  __TEXT,__text  -[AXElementGrouper _frame:isApproximatelySameSizeAsFrame:]
+0x193a903f0  __TEXT,__text  -[AXElementGrouper _flattenHierarchyForGroup:rootLevel:]
+0x193a907bc  __TEXT,__text  -[AXElementGrouper _applyTransformationPass:toGroup:]
+0x193a90a1c  __TEXT,__text  -[AXElementGrouper _applyTransformationPassesToRootGroup:]
+0x193a90b50  __TEXT,__text  -[AXElementGrouper _buildHierarchyForGroup:indexOfKeyboard:]
+0x193a90f48  __TEXT,__text  -[AXElementGrouper _groupablesForItems:]
+0x193a91070  __TEXT,__text  -[AXElementGrouper heuristics]
+0x193a91078  __TEXT,__text  -[AXElementGrouper setHeuristics:]
+0x193a91080  __TEXT,__text  -[AXVisualElementGrouper initWithHeuristics:]
+0x193a9110c  __TEXT,__text  -[AXVisualElementGrouper _groupablesForItems:]
+0x193a91800  __TEXT,__text  -[AXVisualElementGrouper maximumNeighbourDistance]
+0x193a91808  __TEXT,__text  -[AXVisualElementGrouper setMaximumNeighbourDistance:]
+0x193a91810  __TEXT,__text  -[AXVisualElementGrouper maximumDistanceForAligningEdges]
+0x193a91818  __TEXT,__text  -[AXVisualElementGrouper setMaximumDistanceForAligningEdges:]
+0x193a91820  __TEXT,__text  -[AXElementGroupPruner _prunedGroupable:]
+0x193a91b08  __TEXT,__text  -[AXElementGroupPruner pruneRootGroup:]
+0x193a920c0  __TEXT,__text  ___AXValueEqual
+0x193a92124  __TEXT,__text  ___AXValueHash
+0x193a92138  __TEXT,__text  ___AXValueCopyDescription
+0x193a92324  __TEXT,__text  ___AXXCAttributeForAttribute_block_invoke
+0x193a92420  __TEXT,__text  ____AXCAInitializeLookup_block_invoke
+0x193a92eb4  __TEXT,__text  ___AXUIElementInitialize
+0x193a930d4  __TEXT,__text  ___AXUIElementEqual
+0x193a93120  __TEXT,__text  ___AXUIElementHash
+0x193a93138  __TEXT,__text  ___AXUIElementCopyDescription
+0x193a93188  __TEXT,__text  ___AXObserverDeallocate
+0x193a93214  __TEXT,__text  ___AXObserverEqual
+0x193a93228  __TEXT,__text  ___AXObserverHash
+0x193a93230  __TEXT,__text  ___AXObserverCopyDescription
+0x193a93274  __TEXT,__text  -[_AXObjectCacheHelper dealloc]
+0x193a93378  __TEXT,__text  -[_AXObjectCacheHelper .cxx_destruct]
+0x193a93394  __TEXT,__text  ____AXClearElementCache_block_invoke
+0x193a93414  __TEXT,__text  ____AXSetNextElementCacheUniqueUID_block_invoke
+0x193a93450  __TEXT,__text  ____AXInitializeElementCache_block_invoke
+0x193a935a8  __TEXT,__text  ____AXAddToElementCache_block_invoke
+0x193a937f4  __TEXT,__text  ____AXIsInElementCache_block_invoke
+0x193a9394c  __TEXT,__text  ____AXElementFromElementCache_block_invoke
+0x193a939b8  __TEXT,__text  ____AXInternalRemoveFromElementCache_block_invoke
+0x193a94190  __TEXT,__text  ___AXSetProcessWantsMLElementForBundle_block_invoke
+0x193a95b34  __TEXT,__text  ___AXConvertOutgoingValue_block_invoke
+0x193a95b5c  __TEXT,__text  ___AXConvertOutgoingValue_block_invoke.19
+0x193a95bb0  __TEXT,__text  ___AXConvertOutgoingValue_block_invoke_2
+0x193a95c0c  __TEXT,__text  ___getBKSHIDEventAuthenticationMessageClass_block_invoke
+0x193a95dfc  __TEXT,__text  ___BackBoardServicesLibraryCore_block_invoke
+0x193a95e70  __TEXT,__text  -[AXNotificationObserver initWithNotifications:]
+0x193a95e7c  __TEXT,__text  -[AXNotificationObserver initWithNotifications:registrationQueue:]
+0x193a95fd8  __TEXT,__text  ___66-[AXNotificationObserver initWithNotifications:registrationQueue:]_block_invoke
+0x193a96138  __TEXT,__text  __accessibilityNotificationCallback
+0x193a96140  __TEXT,__text  -[AXNotificationObserver _registerForAXNotifications:]
+0x193a963e8  __TEXT,__text  -[AXNotificationObserver _didObserveNotification:notificationData:]
+0x193a964fc  __TEXT,__text  -[AXNotificationObserver dealloc]
+0x193a9655c  __TEXT,__text  -[AXNotificationObserver delegate]
+0x193a9657c  __TEXT,__text  -[AXNotificationObserver setDelegate:]
+0x193a96588  __TEXT,__text  -[AXNotificationObserver notifications]
+0x193a96590  __TEXT,__text  -[AXNotificationObserver setNotifications:]
+0x193a9659c  __TEXT,__text  -[AXNotificationObserver .cxx_destruct]
+0x193a96718  __TEXT,__text  _getSerializeMethodForType
+0x193a96970  __TEXT,__text  __logAndReturn
+0x193a96a00  __TEXT,__text  ___getSerializeMethodForType_block_invoke
+0x193a96dec  __TEXT,__text  _cfStringSerialize
+0x193a96e78  __TEXT,__text  _cfNumberSerialize
+0x193a96f0c  __TEXT,__text  _cfBooleanSerialize
+0x193a96f60  __TEXT,__text  _axUIElementSerialize
+0x193a96fc4  __TEXT,__text  _axValueSerialize
+0x193a9705c  __TEXT,__text  _cfArraySerialize
+0x193a97154  __TEXT,__text  _cfDictionarySerialize
+0x193a97244  __TEXT,__text  _cfDataSerialize
+0x193a972c8  __TEXT,__text  _cfDateSerialize
+0x193a97324  __TEXT,__text  _cfURLSerialize
+0x193a97474  __TEXT,__text  _cfUUIDSerialize
+0x193a97598  __TEXT,__text  _cfNullSerialize
+0x193a975e0  __TEXT,__text  _cfAttributedStringSerialize
+0x193a977ec  __TEXT,__text  _cgColorSerialize
+0x193a97978  __TEXT,__text  _cgPathSerialize
+0x193a97a34  __TEXT,__text  _ctFontSerialize
+0x193a97aec  __TEXT,__text  _reserveSpace
+0x193a97bc8  __TEXT,__text  _serializeArrayApplier
+0x193a97c4c  __TEXT,__text  _serializeDictApplier
+0x193a97d08  __TEXT,__text  ___encodePathElementIntoData
+0x193a97dd0  __TEXT,__text  _bogusUnserialize
+0x193a97e54  __TEXT,__text  _cfStringUnserialize
+0x193a98060  __TEXT,__text  _cfNumberUnserialize
+0x193a983dc  __TEXT,__text  _cfBooleanUnserialize
+0x193a984f8  __TEXT,__text  _cfArrayUnserialize
+0x193a98918  __TEXT,__text  _cfDictionaryUnserialize
+0x193a98d30  __TEXT,__text  _cfDataUnserialize
+0x193a98f08  __TEXT,__text  _cfDateUnserialize
+0x193a99054  __TEXT,__text  _cfURLUnserialize
+0x193a992c8  __TEXT,__text  _cfNullUnserialize
+0x193a993bc  __TEXT,__text  _cfAttributedStringUnserialize
+0x193a99bf4  __TEXT,__text  _axElementUnserialize
+0x193a99d78  __TEXT,__text  _axValueUnserialize
+0x193a99f94  __TEXT,__text  _cgColorUnserialize
+0x193a9a2dc  __TEXT,__text  _cgPathUnserialize
+0x193a9a7c8  __TEXT,__text  _cfUUIDUnserialize
+0x193a9a958  __TEXT,__text  _ctFontUnserialize
+0x193a9ac0c  __TEXT,__text  _mshRelease
+0x193a9ac80  __TEXT,__text  _mshCopyDescription
+0x193a9acc0  __TEXT,__text  _mshEqual
+0x193a9acd4  __TEXT,__text  _mshPerform
+0x193a9b668  __TEXT,__text  +[AXAttributedString axAttributedStringWithString:]
+0x193a9b6cc  __TEXT,__text  -[AXAttributedString classForCoder]
+0x193a9b6d8  __TEXT,__text  +[AXAttributedString string]
+0x193a9b6e4  __TEXT,__text  -[AXAttributedString initWithString:]
+0x193a9b7fc  __TEXT,__text  -[AXAttributedString initWithCFAttributedString:]
+0x193a9b968  __TEXT,__text  -[AXAttributedString initWithStringOrAttributedString:]
+0x193a9b9ec  __TEXT,__text  -[AXAttributedString mutableCopyWithZone:]
+0x193a9b9f0  __TEXT,__text  -[AXAttributedString copyWithZone:]
+0x193a9ba90  __TEXT,__text  -[AXAttributedString stringByTrimmingCharactersInSet:]
+0x193a9bbcc  __TEXT,__text  -[AXAttributedString convertAttachmentsWithBlock:]
+0x193a9bd28  __TEXT,__text  -[AXAttributedString length]
+0x193a9bd44  __TEXT,__text  -[AXAttributedString getCharacters:range:]
+0x193a9bdb0  __TEXT,__text  -[AXAttributedString substringWithRange:]
+0x193a9be0c  __TEXT,__text  -[AXAttributedString replaceCharactersInRange:withString:]
+0x193a9be2c  __TEXT,__text  -[AXAttributedString replaceString:]
+0x193a9be7c  __TEXT,__text  -[AXAttributedString cfAttributedString]
+0x193a9be90  __TEXT,__text  -[AXAttributedString attributedString]
+0x193a9bea4  __TEXT,__text  -[AXAttributedString setAttributes:]
+0x193a9bfc8  __TEXT,__text  -[AXAttributedString setAttribute:forKey:]
+0x193a9c038  __TEXT,__text  -[AXAttributedString setAttribute:forKey:withRange:]
+0x193a9c140  __TEXT,__text  -[AXAttributedString addAttribute:forKey:withRange:]
+0x193a9c160  __TEXT,__text  -[AXAttributedString removeAttributes:]
+0x193a9c2ac  __TEXT,__text  -[AXAttributedString setAttributes:withRange:]
+0x193a9c350  __TEXT,__text  -[AXAttributedString axAttributedStringByReplacingOccurrencesOfString:withString:]
+0x193a9c3c8  __TEXT,__text  -[AXAttributedString axStringByReplacingCharactersInRange:withString:]
+0x193a9c45c  __TEXT,__text  -[AXAttributedString stringByReplacingOccurrencesOfString:withString:options:range:]
+0x193a9c940  __TEXT,__text  ___84-[AXAttributedString stringByReplacingOccurrencesOfString:withString:options:range:]_block_invoke
+0x193a9ca2c  __TEXT,__text  -[AXAttributedString appendString:]
+0x193a9ca98  __TEXT,__text  -[AXAttributedString appendFormat:]
+0x193a9cb10  __TEXT,__text  -[AXAttributedString appendAXAttributedString:]
+0x193a9cb58  __TEXT,__text  -[AXAttributedString appendStringOrAXAttributedString:]
+0x193a9cbcc  __TEXT,__text  -[AXAttributedString attributesAtIndex:effectiveRange:]
+0x193a9cc4c  __TEXT,__text  -[AXAttributedString attribute:atIndex:effectiveRange:]
+0x193a9ccf4  __TEXT,__text  -[AXAttributedString attributeValueForKey:]
+0x193a9ce10  __TEXT,__text  ___43-[AXAttributedString attributeValueForKey:]_block_invoke
+0x193a9ce78  __TEXT,__text  -[AXAttributedString enumerateAttributesUsingBlock:]
+0x193a9cecc  __TEXT,__text  -[AXAttributedString enumerateAttributesInRange:usingBlock:]
+0x193a9cefc  __TEXT,__text  -[AXAttributedString enumerateAttribute:inRange:options:usingBlock:]
+0x193a9cf10  __TEXT,__text  -[AXAttributedString isAXAttributedString]
+0x193a9cf18  __TEXT,__text  -[AXAttributedString hasAttributes]
+0x193a9cfd4  __TEXT,__text  ___35-[AXAttributedString hasAttributes]_block_invoke
+0x193a9d038  __TEXT,__text  -[AXAttributedString string]
+0x193a9d04c  __TEXT,__text  -[AXAttributedString lowercaseString]
+0x193a9d0e0  __TEXT,__text  -[AXAttributedString uppercaseString]
+0x193a9d174  __TEXT,__text  -[AXAttributedString attributedSubstringFromRange:]
+0x193a9d294  __TEXT,__text  -[AXAttributedString coalescedAttributes]
+0x193a9d33c  __TEXT,__text  ___41-[AXAttributedString coalescedAttributes]_block_invoke
+0x193a9d47c  __TEXT,__text  -[AXAttributedString coalescedFontAttributes]
+0x193a9d708  __TEXT,__text  -[AXAttributedString hasAttribute:]
+0x193a9d810  __TEXT,__text  -[AXAttributedString substringFromIndex:]
+0x193a9d950  __TEXT,__text  -[AXAttributedString axAttributedStringDescription]
+0x193a9d96c  __TEXT,__text  -[AXAttributedString description]
+0x193a9d9c0  __TEXT,__text  -[NSObject(AXAttributedStringAdditions) _accessibilityAttributedLocalizedString]
+0x193a9d9cc  __TEXT,__text  -[NSObject(AXAttributedStringAdditions) _setAccessibilityAttributedLocalizedString:]
+0x193a9da88  __TEXT,__text  +[AXElementAttributedString _isSerializableAccessibilityElement]
+0x193a9da90  __TEXT,__text  -[AXElementAttributedString dealloc]
+0x193a9daec  __TEXT,__text  -[AXObserverElementPair initWithObserver:]
+0x193a9db54  __TEXT,__text  -[AXObserverElementPair isEqual:]
+0x193a9dbe8  __TEXT,__text  -[AXObserverElementPair description]
+0x193a9dc48  __TEXT,__text  -[AXObserverElementPair setObserver:]
+0x193a9dc54  __TEXT,__text  -[AXObserverElementPair .cxx_destruct]
+0x193a9dc88  __TEXT,__text  ____AXInitializeObserverAccess_block_invoke
+0x193a9ddcc  __TEXT,__text  ____AXAddNotificationObserver_block_invoke
+0x193a9df9c  __TEXT,__text  ____AXRemoveNotificationObserver_block_invoke
+0x193a9e1dc  __TEXT,__text  ____AXNotificationObserverClientDied_block_invoke
+0x193a9e4c0  __TEXT,__text  ___29+[AXPidSuspensionInfo shared]_block_invoke
+0x193a9e4f0  __TEXT,__text  -[AXPidSuspensionInfo init]
+0x193a9e5a0  __TEXT,__text  -[AXPidSuspensionInfo associatedRemotePidCacheForDisplay:]
+0x193a9e684  __TEXT,__text  -[AXPidSuspensionInfo .cxx_destruct]
+0x193a9e83c  __TEXT,__text  ____AXManagePidState_block_invoke
+0x193a9ee08  __TEXT,__text  ____AXPutPidOnTimeoutProbation_block_invoke
+0x193a9f1c0  __TEXT,__text  ____AXAddAssociatedPid_block_invoke
+0x193a9f1c8  __TEXT,__text  __AXClearAssociatedPids
+0x193a9f51c  __TEXT,__text  ___getCADisplayClass_block_invoke
+0x193a9f70c  __TEXT,__text  ___QuartzCoreLibraryCore_block_invoke
+0x193a9f780  __TEXT,__text  ____AXClearAssociatedPids_block_invoke
+0x193a9fb90  __TEXT,__text  __AXLabelForElement
+0x193a9fcd0  __TEXT,__text  __appendAttributedString
+0x193aa038c  __TEXT,__text  __AXLabelAndValueForElement
+0x193aa0998  __TEXT,__text  -[NSString(AXExtensions) _ax_rangeOfNextUnitWithStartPosition:direction:withCharacterSet:]
+0x193aa0afc  __TEXT,__text  -[NSString(AXExtensions) ax_lineFromPosition:inDirection:]
+0x193aa0b68  __TEXT,__text  -[NSString(AXExtensions) ax_paragraphFromPosition:inDirection:]
+0x193aa0b78  __TEXT,__text  -[NSString(AXExtensions) ax_sentenceFromPosition:inDirection:]
+0x193aa0b88  __TEXT,__text  -[NSString(AXExtensions) ax_wordFromPosition:inDirection:]
+0x193aa0b98  __TEXT,__text  -[NSString(AXExtensions) ax_lineRangeForPosition:]
+0x193aa0cf0  __TEXT,__text  -[NSString(AXExtensions) _axUnit:fromPosition:inDirection:]
+0x193aa1108  __TEXT,__text  -[NSString(AXExtensions) axAttributedStringWithAttributes:]
+0x193aa1168  __TEXT,__text  -[AXScribbleElement initWithText:geometry:]
+0x193aa1204  __TEXT,__text  -[AXScribbleElement renderedText]
+0x193aa120c  __TEXT,__text  -[AXScribbleElement setRenderedText:]
+0x193aa1218  __TEXT,__text  -[AXScribbleElement geometry]
+0x193aa1224  __TEXT,__text  -[AXScribbleElement setGeometry:]
+0x193aa1230  __TEXT,__text  -[AXScribbleElement .cxx_destruct]
+0x193aa123c  __TEXT,__text  -[AXScribbleManager init]
+0x193aa1294  __TEXT,__text  -[AXScribbleManager foundScribbleElement:atSearchPoint:]
+0x193aa12a0  __TEXT,__text  -[AXScribbleManager hideSelectedElement]
+0x193aa12d0  __TEXT,__text  -[AXScribbleManager isUniqueElement:]
+0x193aa13b4  __TEXT,__text  -[AXScribbleManager searchPointToNSString:]
+0x193aa13dc  __TEXT,__text  -[AXScribbleManager nsStringToSearchPoint:]
+0x193aa1474  __TEXT,__text  -[AXScribbleManager nextSearchPoint:]
+0x193aa14a4  __TEXT,__text  -[AXScribbleManager lastSearchPoint]
+0x193aa14ac  __TEXT,__text  -[AXScribbleManager setLastSearchPoint:]
+0x193aa14b4  __TEXT,__text  -[AXScribbleManager lastFetchedElement]
+0x193aa14bc  __TEXT,__text  -[AXScribbleManager setLastFetchedElement:]
+0x193aa14c8  __TEXT,__text  -[AXScribbleManager .cxx_destruct]
+0x193aa14d4  __TEXT,__text  -[AXProfileEntry description]
+0x193aa1520  __TEXT,__text  -[AXProfileEntry type]
+0x193aa1528  __TEXT,__text  -[AXProfileEntry setType:]
+0x193aa1530  __TEXT,__text  -[AXProfileEntry uid]
+0x193aa153c  __TEXT,__text  -[AXProfileEntry setUid:]
+0x193aa1544  __TEXT,__text  -[AXProfileEntry pid]
+0x193aa154c  __TEXT,__text  -[AXProfileEntry setPid:]
+0x193aa1554  __TEXT,__text  -[AXProfileEntry attribute]
+0x193aa155c  __TEXT,__text  -[AXProfileEntry setAttribute:]
+0x193aa1564  __TEXT,__text  -[AXProfileEntry valueSize]
+0x193aa156c  __TEXT,__text  -[AXProfileEntry setValueSize:]
+0x193aa1574  __TEXT,__text  -[AXProfileEntry valueHash]
+0x193aa157c  __TEXT,__text  -[AXProfileEntry setValueHash:]
+0x193aa1584  __TEXT,__text  -[AXProfileEntry duration]
+0x193aa158c  __TEXT,__text  -[AXProfileEntry setDuration:]
+0x193aa1594  __TEXT,__text  -[AXProfileEntry appName]
+0x193aa159c  __TEXT,__text  -[AXProfileEntry setAppName:]
+0x193aa15a8  __TEXT,__text  -[AXProfileEntry .cxx_destruct]
+0x193aa15b4  __TEXT,__text  +[AXProfileDatabase sharedDatabase]
+0x193aa15fc  __TEXT,__text  ___35+[AXProfileDatabase sharedDatabase]_block_invoke
+0x193aa162c  __TEXT,__text  -[AXProfileDatabase init]
+0x193aa16bc  __TEXT,__text  __gatherTransactionSummary
+0x193aa1844  __TEXT,__text  -[AXProfileDatabase registerEntry:]
+0x193aa184c  __TEXT,__text  -[AXProfileDatabase transactionSummary]
+0x193aa1a50  __TEXT,__text  -[AXProfileDatabase debugStatistics]
+0x193aa1e98  __TEXT,__text  -[AXProfileDatabase .cxx_destruct]
+0x193aa1ea4  __TEXT,__text  -[AXProfileTransaction attribute]
+0x193aa1eac  __TEXT,__text  -[AXProfileTransaction setAttribute:]
+0x193aa1eb4  __TEXT,__text  -[AXProfileTransaction element]
+0x193aa1ebc  __TEXT,__text  -[AXProfileTransaction setElement:]
+0x193aa1ec4  __TEXT,__text  -[AXProfileTransaction start]
+0x193aa1ecc  __TEXT,__text  -[AXProfileTransaction setStart:]
+0x193aa1ed4  __TEXT,__text  +[AXElementTransactionLogging sharedLogger]
+0x193aa1f1c  __TEXT,__text  ___43+[AXElementTransactionLogging sharedLogger]_block_invoke
+0x193aa1f4c  __TEXT,__text  -[AXElementTransactionLogging init]
+0x193aa1fcc  __TEXT,__text  +[AXElementTransactionLogging transactionSummary]
+0x193aa2014  __TEXT,__text  -[AXElementTransactionLogging willFetchAttribute:forElement:]
+0x193aa20f0  __TEXT,__text  ___61-[AXElementTransactionLogging willFetchAttribute:forElement:]_block_invoke
+0x193aa2188  __TEXT,__text  -[AXElementTransactionLogging _appNameForUIElement:pid:]
+0x193aa2298  __TEXT,__text  -[AXElementTransactionLogging failedTransaction:]
+0x193aa2320  __TEXT,__text  ___49-[AXElementTransactionLogging failedTransaction:]_block_invoke
+0x193aa24e8  __TEXT,__text  -[AXElementTransactionLogging finishedTransaction:withValue:]
+0x193aa24f0  __TEXT,__text  -[AXElementTransactionLogging finishedTransaction:withValue:amortization:]
+0x193aa2628  __TEXT,__text  ___74-[AXElementTransactionLogging finishedTransaction:withValue:amortization:]_block_invoke
+0x193aa2804  __TEXT,__text  -[AXElementTransactionLogging .cxx_destruct]
+0x193aa2848  __TEXT,__text  +[AXRemoteElement initialize]
+0x193aa2870  __TEXT,__text  ___29+[AXRemoteElement initialize]_block_invoke
+0x193aa28bc  __TEXT,__text  +[AXRemoteElement _isSerializableAccessibilityElement]
+0x193aa28c4  __TEXT,__text  -[AXRemoteElement localHostingWindowContextId]
+0x193aa28c8  __TEXT,__text  -[AXRemoteElement platformCleanup]
+0x193aa28cc  __TEXT,__text  -[AXRemoteElement remotePid]
+0x193aa2930  __TEXT,__text  -[AXRemoteElement _accessibilityContextId]
+0x193aa2994  __TEXT,__text  -[AXRemoteElement _accessibilityTextOperations]
+0x193aa29d4  __TEXT,__text  -[AXRemoteElement _accessibilityTextViewTextOperationResponder]
+0x193aa2a38  __TEXT,__text  -[AXRemoteElement _accessibilityHandwritingElement]
+0x193aa2bb0  __TEXT,__text  -[AXRemoteElement setAccessibilityContainer:]
+0x193aa2c74  __TEXT,__text  -[AXRemoteElement dealloc]
+0x193aa2da4  __TEXT,__text  -[AXRemoteElement uuidHash]
+0x193aa2ddc  __TEXT,__text  -[AXRemoteElement _getRemoteValuesOffMainThread:]
+0x193aa2fbc  __TEXT,__text  ___49-[AXRemoteElement _getRemoteValuesOffMainThread:]_block_invoke
+0x193aa301c  __TEXT,__text  ___49-[AXRemoteElement _getRemoteValuesOffMainThread:]_block_invoke_2
+0x193aa3094  __TEXT,__text  -[AXRemoteElement getLeafElementsFromRemoteSide:]
+0x193aa3128  __TEXT,__text  ___49-[AXRemoteElement getLeafElementsFromRemoteSide:]_block_invoke
+0x193aa3218  __TEXT,__text  -[AXRemoteElement _remoteElementWithAttribute:limitToRemoteSubviews:]
+0x193aa3788  __TEXT,__text  ___69-[AXRemoteElement _remoteElementWithAttribute:limitToRemoteSubviews:]_block_invoke
+0x193aa3804  __TEXT,__text  ___69-[AXRemoteElement _remoteElementWithAttribute:limitToRemoteSubviews:]_block_invoke_2
+0x193aa3894  __TEXT,__text  ___69-[AXRemoteElement _remoteElementWithAttribute:limitToRemoteSubviews:]_block_invoke_3
+0x193aa3918  __TEXT,__text  -[AXRemoteElement _accessibilityActiveKeyboard]
+0x193aa3980  __TEXT,__text  -[AXRemoteElement _accessibilityResponderElement]
+0x193aa398c  __TEXT,__text  -[AXRemoteElement _accessibilityFirstElement]
+0x193aa3998  __TEXT,__text  -[AXRemoteElement _accessibilityLastElement]
+0x193aa39a4  __TEXT,__text  -[AXRemoteElement _accessibilityIsGroupedParent]
+0x193aa39ac  __TEXT,__text  -[AXRemoteElement _accessibilitySortedElementsWithin]
+0x193aa39f4  __TEXT,__text  -[AXRemoteElement _accessibilityAutomationType]
+0x193aa39fc  __TEXT,__text  -[AXRemoteElement accessibilityElements]
+0x193aa3b88  __TEXT,__text  ___40-[AXRemoteElement accessibilityElements]_block_invoke
+0x193aa3bdc  __TEXT,__text  +[AXRemoteElement remoteElementForBlock:]
+0x193aa3c1c  __TEXT,__text  +[AXRemoteElement registeredRemoteElements]
+0x193aa3c28  __TEXT,__text  ___43+[AXRemoteElement registeredRemoteElements]_block_invoke
+0x193aa3c30  __TEXT,__text  +[AXRemoteElement remoteElementsForBlock:]
+0x193aa3d3c  __TEXT,__text  ___42+[AXRemoteElement remoteElementsForBlock:]_block_invoke
+0x193aa3d4c  __TEXT,__text  +[AXRemoteElement remoteElementsForContextId:]
+0x193aa3dc0  __TEXT,__text  ___46+[AXRemoteElement remoteElementsForContextId:]_block_invoke
+0x193aa3df4  __TEXT,__text  +[AXRemoteElement registerRemoteElement:remotePort:]
+0x193aa4210  __TEXT,__text  ___52+[AXRemoteElement registerRemoteElement:remotePort:]_block_invoke.47
+0x193aa4254  __TEXT,__text  -[AXRemoteElement unregister]
+0x193aa4298  __TEXT,__text  -[AXRemoteElement containerAccessibilityFrame]
+0x193aa429c  __TEXT,__text  -[AXRemoteElement accessibilityFrame]
+0x193aa4490  __TEXT,__text  -[AXRemoteElement _accessibilityHasVisibleFrame]
+0x193aa45c8  __TEXT,__text  -[AXRemoteElement _accessibilityIncreaseSelection:]
+0x193aa461c  __TEXT,__text  -[AXRemoteElement description]
+0x193aa4730  __TEXT,__text  -[AXRemoteElement _accessibilitySetFocusOnElement:]
+0x193aa4774  __TEXT,__text  -[AXRemoteElement _accessibilitySetNativeFocus]
+0x193aa47ac  __TEXT,__text  -[AXRemoteElement onClientSide]
+0x193aa47b4  __TEXT,__text  -[AXRemoteElement setOnClientSide:]
+0x193aa47bc  __TEXT,__text  -[AXRemoteElement remoteChildrenDelegate]
+0x193aa47dc  __TEXT,__text  -[AXRemoteElement machPort]
+0x193aa47e4  __TEXT,__text  -[AXRemoteElement accessibilityContainer]
+0x193aa4804  __TEXT,__text  -[AXRemoteElement deniesDirectAppConnection]
+0x193aa480c  __TEXT,__text  -[AXRemoteElement setDeniesDirectAppConnection:]
+0x193aa4814  __TEXT,__text  -[AXRemoteElement pidRetrieval]
+0x193aa481c  __TEXT,__text  -[AXRemoteElement .cxx_destruct]
+0x193aa48fc  __TEXT,__text  -[AXRemoteMLElement initWithUUID:andContextId:]
+0x193aa4cb8  __TEXT,__text  ___AXUIElementConvertOutgoingType_block_invoke
+0x193aa4d0c  __TEXT,__text  ___AXUIElementConvertOutgoingType_block_invoke_2
+0x193aa4d88  __TEXT,__text  -[AXUIElement copyWithZone:]
+0x193aa4e58  __TEXT,__text  +[AXUIElement systemWideAXUIElement]
+0x193aa4e64  __TEXT,__text  +[AXUIElement uiSystemWideApplication]
+0x193aa4e70  __TEXT,__text  +[AXUIElement applyElementAttributeCacheScheme:]
+0x193aa54bc  __TEXT,__text  ___48+[AXUIElement applyElementAttributeCacheScheme:]_block_invoke
+0x193aa54cc  __TEXT,__text  +[AXUIElement applyElementCustomAttributeCacheScheme:]
+0x193aa5564  __TEXT,__text  ___54+[AXUIElement applyElementCustomAttributeCacheScheme:]_block_invoke
+0x193aa5574  __TEXT,__text  +[AXUIElement initialize]
+0x193aa56bc  __TEXT,__text  ___25+[AXUIElement initialize]_block_invoke
+0x193aa5708  __TEXT,__text  +[AXUIElement uiElementWithAXElement:]
+0x193aa5854  __TEXT,__text  +[AXUIElement uiElementWithAXElement:cache:]
+0x193aa59c0  __TEXT,__text  +[AXUIElement proxiedMLElementsForApp:]
+0x193aa5ac0  __TEXT,__text  +[AXUIElement scrollAncestorAtCoordinate:]
+0x193aa5c00  __TEXT,__text  -[AXUIElement _activeKeyboardContextId]
+0x193aa5c78  __TEXT,__text  +[AXUIElement uiElementAtCoordinate:forApplication:contextId:displayId:allowSameProcess:]
+0x193aa5c80  __TEXT,__text  +[AXUIElement uiElementAtCoordinate:forApplication:contextId:displayId:allowSameProcess:coordinateIsInHostedCoordinates:]
+0x193aa5c88  __TEXT,__text  +[AXUIElement uiElementAtCoordinate:forApplication:contextId:displayId:allowSameProcess:coordinateIsInHostedCoordinates:hitTestType:]
+0x193aa5f44  __TEXT,__text  +[AXUIElement uiElementAtCoordinate:forApplication:contextId:]
+0x193aa5f50  __TEXT,__text  +[AXUIElement uiElementAtCoordinate:displayId:]
+0x193aa5f58  __TEXT,__text  +[AXUIElement uiElementAtCoordinate:displayId:allowSameProcess:]
+0x193aa602c  __TEXT,__text  +[AXUIElement uiElementAtCoordinate:]
+0x193aa6034  __TEXT,__text  +[AXUIElement uiElementAtCoordinate:startWithElement:]
+0x193aa6150  __TEXT,__text  +[AXUIElement uiApplicationWithPid:]
+0x193aa61fc  __TEXT,__text  +[AXUIElement uiApplicationAtCoordinate:]
+0x193aa6204  __TEXT,__text  +[AXUIElement uiApplicationAtCoordinate:displayId:]
+0x193aa62a4  __TEXT,__text  +[AXUIElement uiApplicationForContext:]
+0x193aa647c  __TEXT,__text  -[AXUIElement initWithAXElement:cache:]
+0x193aa6544  __TEXT,__text  -[AXUIElement initWithAXElement:]
+0x193aa657c  __TEXT,__text  -[AXUIElement dealloc]
+0x193aa65d0  __TEXT,__text  -[AXUIElement cachedAttributes]
+0x193aa662c  __TEXT,__text  -[AXUIElement copyCachedAttributes]
+0x193aa678c  __TEXT,__text  -[AXUIElement _cachedValueForAttribute:]
+0x193aa68fc  __TEXT,__text  -[AXUIElement _setCachedValue:forAttribute:]
+0x193aa69b8  __TEXT,__text  -[AXUIElement pid]
+0x193aa69f0  __TEXT,__text  -[AXUIElement hash]
+0x193aa6a38  __TEXT,__text  -[AXUIElement isEqual:]
+0x193aa6ae8  __TEXT,__text  -[AXUIElement axElement]
+0x193aa6b04  __TEXT,__text  -[AXUIElement setAXElement:]
+0x193aa6b4c  __TEXT,__text  -[AXUIElement _invalidate]
+0x193aa6b54  __TEXT,__text  -[AXUIElement modifyStaticCacheValue:]
+0x193aa6c48  __TEXT,__text  -[AXUIElement setCachedAttributes:]
+0x193aa6cb4  __TEXT,__text  -[AXUIElement enableCache:]
+0x193aa6cc4  __TEXT,__text  -[AXUIElement disableCache]
+0x193aa6dfc  __TEXT,__text  -[AXUIElement _createCache:]
+0x193aa6f4c  __TEXT,__text  ___28-[AXUIElement _createCache:]_block_invoke
+0x193aa6f64  __TEXT,__text  -[AXUIElement updateCacheWithAttributes:]
+0x193aa70cc  __TEXT,__text  -[AXUIElement isValidForApplication:]
+0x193aa7228  __TEXT,__text  -[AXUIElement isValid]
+0x193aa72a4  __TEXT,__text  -[AXUIElement _outputCache]
+0x193aa7450  __TEXT,__text  -[AXUIElement updateCache:]
+0x193aa7530  __TEXT,__text  -[AXUIElement arrayWithAXAttribute:]
+0x193aa7778  __TEXT,__text  -[AXUIElement stringWithAXAttribute:]
+0x193aa79a0  __TEXT,__text  -[AXUIElement boolWithAXAttribute:]
+0x193aa7b44  __TEXT,__text  -[AXUIElement numberWithAXAttribute:]
+0x193aa7cac  __TEXT,__text  -[AXUIElement pointWithAXAttribute:]
+0x193aa7e78  __TEXT,__text  -[AXUIElement pathWithAXAttribute:]
+0x193aa7fd0  __TEXT,__text  -[AXUIElement rectWithAXAttribute:]
+0x193aa81a4  __TEXT,__text  -[AXUIElement rangeWithAXAttribute:]
+0x193aa8388  __TEXT,__text  -[AXUIElement colorWithAXAttribute:]
+0x193aa849c  __TEXT,__text  -[AXUIElement objectWithAXAttribute:]
+0x193aa8644  __TEXT,__text  -[AXUIElement objectWithAXAttribute:parameter:]
+0x193aa871c  __TEXT,__text  -[AXUIElement valueArrayWithAXAttributes:]
+0x193aa8968  __TEXT,__text  -[AXUIElement performAXAction:withValue:]
+0x193aa8970  __TEXT,__text  -[AXUIElement performAXAction:withValue:fencePort:]
+0x193aa8a24  __TEXT,__text  -[AXUIElement canPerformAXAction:]
+0x193aa8ab4  __TEXT,__text  -[AXUIElement performAXAction:]
+0x193aa8b24  __TEXT,__text  -[AXUIElement uiElementsWithAttribute:parameter:]
+0x193aa8b2c  __TEXT,__text  -[AXUIElement uiElementsWithAttribute:parameter:fetchAttributes:]
+0x193aa8dcc  __TEXT,__text  -[AXUIElement uiElementsWithAttribute:]
+0x193aa8dd4  __TEXT,__text  -[AXUIElement nextElementsWithParameters:]
+0x193aa8de8  __TEXT,__text  -[AXUIElement previousElementsWithParameters:]
+0x193aa8dfc  __TEXT,__text  -[AXUIElement nextElementsWithCount:]
+0x193aa8ecc  __TEXT,__text  -[AXUIElement nextElementsIncludingPrefetchedAttributesWithCount:]
+0x193aa8f9c  __TEXT,__text  -[AXUIElement previousElementsWithCount:]
+0x193aa906c  __TEXT,__text  -[AXUIElement childrenIncludingPrefetchedAttributesWithCount:]
+0x193aa913c  __TEXT,__text  -[AXUIElement _elementsWithParameter:parameters:prefetchAttributes:]
+0x193aa9418  __TEXT,__text  -[AXUIElement setAXAttribute:withBOOL:]
+0x193aa9498  __TEXT,__text  -[AXUIElement setAXAttribute:withString:]
+0x193aa950c  __TEXT,__text  -[AXUIElement setAXAttribute:withLong:]
+0x193aa9574  __TEXT,__text  -[AXUIElement setAXAttribute:withFloat:]
+0x193aa95dc  __TEXT,__text  -[AXUIElement setAXAttribute:withNumber:]
+0x193aa9638  __TEXT,__text  -[AXUIElement setAXAttribute:withPoint:]
+0x193aa96c0  __TEXT,__text  -[AXUIElement setAXAttribute:withSize:]
+0x193aa9748  __TEXT,__text  -[AXUIElement setAXAttribute:withRange:]
+0x193aa97d0  __TEXT,__text  -[AXUIElement setAXAttribute:withUIElement:]
+0x193aa989c  __TEXT,__text  -[AXUIElement setAXAttribute:withUIElementArray:]
+0x193aa9a1c  __TEXT,__text  -[AXUIElement setAXAttribute:withArray:]
+0x193aa9a90  __TEXT,__text  -[AXUIElement setAXAttribute:withObject:synchronous:]
+0x193aa9b88  __TEXT,__text  ___53-[AXUIElement setAXAttribute:withObject:synchronous:]_block_invoke
+0x193aa9bd4  __TEXT,__text  -[AXUIElement isMockElement]
+0x193aa9bdc  __TEXT,__text  -[AXUIElement isMLElement]
+0x193aa9be4  __TEXT,__text  -[AXUIElement setAXAttribute:withObject:]
+0x193aa9bec  __TEXT,__text  -[AXUIElement _selectedTextRange]
+0x193aa9c20  __TEXT,__text  -[AXUIElement _objectForRange:withParameterizedAttribute:]
+0x193aa9c9c  __TEXT,__text  -[AXUIElement _attributedValueForRange:]
+0x193aa9d04  __TEXT,__text  -[AXUIElement _valueForRange:]
+0x193aa9d6c  __TEXT,__text  -[AXUIElement _lineStartPosition]
+0x193aa9db8  __TEXT,__text  -[AXUIElement _lineEndPosition]
+0x193aa9e04  __TEXT,__text  -[AXUIElement _lineRangeForPosition:]
+0x193aa9f90  __TEXT,__text  -[AXUIElement _lineRangeWithFaultTolerance:forward:]
+0x193aaa030  __TEXT,__text  -[AXUIElement nextCursorRangeInDirection:unit:outputRange:currentCursorRange:outputStyleSpeakToRight:]
+0x193aaa874  __TEXT,__text  ___102-[AXUIElement nextCursorRangeInDirection:unit:outputRange:currentCursorRange:outputStyleSpeakToRight:]_block_invoke
+0x193aaa954  __TEXT,__text  -[AXUIElement .cxx_destruct]
+0x193aaa960  __TEXT,__text  +[AXMVisionFeature_AXRuntime(SafeCategory) safeCategoryTargetClassName]
+0x193aaa96c  __TEXT,__text  +[AXMVisionFeature_AXRuntime(SafeCategory) safeCategoryBaseClass]
+0x193aaa978  __TEXT,__text  -[AXMVisionFeature_AXRuntime setActivationPoint:]
+0x193aaa9d4  __TEXT,__text  -[AXMVisionFeature_AXRuntime activationPoint]
+0x193aaaa2c  __TEXT,__text  +[AXUIMLElement setPerformFuzzyHitTestNextTime:]
+0x193aaaa38  __TEXT,__text  +[AXUIMLElement performFuzzyHitTestNextTime]
+0x193aaaa44  __TEXT,__text  +[AXUIMLElement setFrameDelegate:]
+0x193aaaa54  __TEXT,__text  +[AXUIMLElement cachedElementForParent:]
+0x193aaaab4  __TEXT,__text  +[AXUIMLElement sharedFingerController]
+0x193aaaafc  __TEXT,__text  ___39+[AXUIMLElement sharedFingerController]_block_invoke
+0x193aaabe0  __TEXT,__text  -[AXUIMLElement initWithParentElement:]
+0x193aaae0c  __TEXT,__text  ___39-[AXUIMLElement initWithParentElement:]_block_invoke
+0x193aaae40  __TEXT,__text  -[AXUIMLElement frame]
+0x193aaae44  __TEXT,__text  -[AXUIMLElement _isTopLevelMLElement]
+0x193aaae74  __TEXT,__text  -[AXUIMLElement topLevelMLElement]
+0x193aaae78  __TEXT,__text  -[AXUIMLElement _topLevelMLElement]
+0x193aaaf10  __TEXT,__text  -[AXUIMLElement _appElement]
+0x193aaaf6c  __TEXT,__text  -[AXUIMLElement _topLevelAppElement]
+0x193aab104  __TEXT,__text  -[AXUIMLElement isValid]
+0x193aab10c  __TEXT,__text  -[AXUIMLElement isValidForApplication:]
+0x193aab114  __TEXT,__text  -[AXUIMLElement arrayWithAXAttribute:]
+0x193aab150  __TEXT,__text  -[AXUIMLElement stringWithAXAttribute:]
+0x193aab294  __TEXT,__text  -[AXUIMLElement boolWithAXAttribute:]
+0x193aab328  __TEXT,__text  -[AXUIMLElement numberWithAXAttribute:]
+0x193aab420  __TEXT,__text  +[AXUIMLElement _appRelativeRectForRect:contextId:]
+0x193aab69c  __TEXT,__text  ___51+[AXUIMLElement _appRelativeRectForRect:contextId:]_block_invoke
+0x193aab6cc  __TEXT,__text  +[AXUIMLElement _screenRelativeRectForRect:contextId:]
+0x193aab750  __TEXT,__text  -[AXUIMLElement rectWithAXAttribute:]
+0x193aab7f0  __TEXT,__text  -[AXUIMLElement pathWithAXAttribute:]
+0x193aab840  __TEXT,__text  -[AXUIMLElement pointWithAXAttribute:]
+0x193aab928  __TEXT,__text  -[AXUIMLElement rangeWithAXAttribute:]
+0x193aab934  __TEXT,__text  -[AXUIMLElement colorWithAXAttribute:]
+0x193aab93c  __TEXT,__text  -[AXUIMLElement objectWithAXAttribute:]
+0x193aaba5c  __TEXT,__text  -[AXUIMLElement valueArrayWithAXAttributes:]
+0x193aaba64  __TEXT,__text  -[AXUIMLElement uiElementsWithAttribute:]
+0x193aabab8  __TEXT,__text  -[AXUIMLElement uiElementsWithAttribute:parameter:]
+0x193aabac0  __TEXT,__text  -[AXUIMLElement uiElementsWithAttribute:parameter:fetchAttributes:]
+0x193aabac8  __TEXT,__text  -[AXUIMLElement objectWithAXAttribute:parameter:]
+0x193aabad0  __TEXT,__text  -[AXUIMLElement canPerformAXAction:]
+0x193aabb20  __TEXT,__text  -[AXUIMLElement performAXAction:]
+0x193aabb2c  __TEXT,__text  -[AXUIMLElement performAXAction:withValue:fencePort:]
+0x193aabc54  __TEXT,__text  -[AXUIMLElement _handleScrollToVisible:]
+0x193aac094  __TEXT,__text  ___40-[AXUIMLElement _handleScrollToVisible:]_block_invoke
+0x193aac138  __TEXT,__text  ___40-[AXUIMLElement _handleScrollToVisible:]_block_invoke_2
+0x193aac1e8  __TEXT,__text  -[AXUIMLElement _handleScroll:]
+0x193aac2e8  __TEXT,__text  -[AXUIMLElement enableCache:]
+0x193aac2ec  __TEXT,__text  -[AXUIMLElement disableCache]
+0x193aac2f0  __TEXT,__text  -[AXUIMLElement updateCache:]
+0x193aac2f4  __TEXT,__text  -[AXUIMLElement updateCacheWithAttributes:]
+0x193aac348  __TEXT,__text  -[AXUIMLElement nextElementsWithParameters:]
+0x193aac3ac  __TEXT,__text  -[AXUIMLElement previousElementsWithParameters:]
+0x193aac410  __TEXT,__text  -[AXUIMLElement nextElementsWithCount:]
+0x193aac418  __TEXT,__text  -[AXUIMLElement nextElementsWithCount:baseElement:]
+0x193aac434  __TEXT,__text  -[AXUIMLElement previousElementsWithCount:]
+0x193aac43c  __TEXT,__text  -[AXUIMLElement previousElementsWithCount:baseElement:]
+0x193aac458  __TEXT,__text  -[AXUIMLElement setAXAttribute:withBOOL:]
+0x193aac4a4  __TEXT,__text  -[AXUIMLElement setAXAttribute:withString:]
+0x193aac508  __TEXT,__text  -[AXUIMLElement setAXAttribute:withLong:]
+0x193aac554  __TEXT,__text  -[AXUIMLElement setAXAttribute:withFloat:]
+0x193aac5a8  __TEXT,__text  -[AXUIMLElement setAXAttribute:withNumber:]
+0x193aac60c  __TEXT,__text  -[AXUIMLElement setAXAttribute:withPoint:]
+0x193aac668  __TEXT,__text  -[AXUIMLElement setAXAttribute:withSize:]
+0x193aac6c4  __TEXT,__text  -[AXUIMLElement setAXAttribute:withRange:]
+0x193aac720  __TEXT,__text  -[AXUIMLElement setAXAttribute:withUIElement:]
+0x193aac784  __TEXT,__text  -[AXUIMLElement setAXAttribute:withUIElementArray:]
+0x193aac7e8  __TEXT,__text  -[AXUIMLElement setAXAttribute:withArray:]
+0x193aac84c  __TEXT,__text  -[AXUIMLElement setAXAttribute:withObject:]
+0x193aac8b0  __TEXT,__text  -[AXUIMLElement setAXAttribute:withObject:synchronous:]
+0x193aac91c  __TEXT,__text  +[AXUIMLElement _interfaceOrientationForElement:]
+0x193aaca20  __TEXT,__text  +[AXUIMLElement _applyAXTraitsForElement:uiClass:]
+0x193aacc80  __TEXT,__text  +[AXUIMLElement _convertFrameToPortraitUp:fromOrientation:appFrame:]
+0x193aace44  __TEXT,__text  +[AXUIMLElement initialize]
+0x193aace6c  __TEXT,__text  ___27+[AXUIMLElement initialize]_block_invoke
+0x193aacf18  __TEXT,__text  +[AXUIMLElement clearCaches]
+0x193aacf94  __TEXT,__text  ___28+[AXUIMLElement clearCaches]_block_invoke
+0x193aacfd0  __TEXT,__text  +[AXUIMLElement clearCachesForAppsExcluding:]
+0x193aad0c8  __TEXT,__text  ___45+[AXUIMLElement clearCachesForAppsExcluding:]_block_invoke
+0x193aad0d4  __TEXT,__text  ___45+[AXUIMLElement clearCachesForAppsExcluding:]_block_invoke_2
+0x193aad26c  __TEXT,__text  +[AXUIMLElement setAutoRefresh:forApp:]
+0x193aad384  __TEXT,__text  ___39+[AXUIMLElement setAutoRefresh:forApp:]_block_invoke
+0x193aad3c0  __TEXT,__text  +[AXUIMLElement _fireRefreshTimer]
+0x193aad43c  __TEXT,__text  ___34+[AXUIMLElement _fireRefreshTimer]_block_invoke
+0x193aad5e8  __TEXT,__text  +[AXUIMLElement _setCachedMLElements:forID:]
+0x193aad70c  __TEXT,__text  ___44+[AXUIMLElement _setCachedMLElements:forID:]_block_invoke
+0x193aad75c  __TEXT,__text  +[AXUIMLElement _cachedMLElementsForID:]
+0x193aad8e4  __TEXT,__text  ___40+[AXUIMLElement _cachedMLElementsForID:]_block_invoke
+0x193aad944  __TEXT,__text  -[AXUIMLElement _reconciledElements]
+0x193aad990  __TEXT,__text  -[AXUIMLElement _reconcileElements:]
+0x193aad998  __TEXT,__text  -[AXUIMLElement _forceMLElementRefresh:postDelegateCallback:completionBlock:]
+0x193aadb08  __TEXT,__text  ___77-[AXUIMLElement _forceMLElementRefresh:postDelegateCallback:completionBlock:]_block_invoke
+0x193aadb5c  __TEXT,__text  -[AXUIMLElement _currentMLElements]
+0x193aadd94  __TEXT,__text  ___35-[AXUIMLElement _currentMLElements]_block_invoke
+0x193aaddd8  __TEXT,__text  ___35-[AXUIMLElement _currentMLElements]_block_invoke.427
+0x193aade14  __TEXT,__text  -[AXUIMLElement isProbablyEqual:]
+0x193aae00c  __TEXT,__text  +[AXUIMLElement _textDetectionOptions:options:]
+0x193aae284  __TEXT,__text  +[AXUIMLElement _windowContextInformation:]
+0x193aae668  __TEXT,__text  +[AXUIMLElement _queue_createMLElements:postDelegateCallback:]
+0x193aaf5e4  __TEXT,__text  ___62+[AXUIMLElement _queue_createMLElements:postDelegateCallback:]_block_invoke
+0x193aaf7d8  __TEXT,__text  ___62+[AXUIMLElement _queue_createMLElements:postDelegateCallback:]_block_invoke_2
+0x193aaf7e0  __TEXT,__text  ___62+[AXUIMLElement _queue_createMLElements:postDelegateCallback:]_block_invoke.444
+0x193aafb58  __TEXT,__text  ___copy_helper_block_e8_96n12_8_8_s0_t8w32144n15_8_8_s0_s8_t16w8
+0x193aafbb8  __TEXT,__text  ___destroy_helper_block_e8_96n4_8_s0144n7_8_s0_s8
+0x193aafbf0  __TEXT,__text  -[AXUIMLElement _applyCustomActionsForFeature:screenScale:screenRect:elements:]
+0x193aafd94  __TEXT,__text  -[AXUIMLElement copyAttributeValue:]
+0x193aafd9c  __TEXT,__text  -[AXUIMLElement copyAttributeValue:parameter:]
+0x193aafda4  __TEXT,__text  -[AXUIMLElement copyAttributeValue:parameter:baseElement:]
+0x193aaff50  __TEXT,__text  -[AXUIMLElement _reconcileAppElementsWithMLElements:flattenedElements:]
+0x193ab0210  __TEXT,__text  -[AXUIMLElement _shouldPromoteElement:]
+0x193ab0218  __TEXT,__text  -[AXUIMLElement _shouldDemoteElement:withMLElements:]
+0x193ab0348  __TEXT,__text  -[AXUIMLElement _flattenedAppElements]
+0x193ab0570  __TEXT,__text  ___38-[AXUIMLElement _flattenedAppElements]_block_invoke
+0x193ab05c0  __TEXT,__text  -[AXUIMLElement _findMatchingElementForMLElement:flattenedAppElements:]
+0x193ab0778  __TEXT,__text  -[AXUIMLElement copyElementAtPosition:]
+0x193ab0a38  __TEXT,__text  ___39-[AXUIMLElement copyElementAtPosition:]_block_invoke
+0x193ab0ddc  __TEXT,__text  +[AXUIMLElement elementsInDirection:withElement:nextElements:]
+0x193ab0fe4  __TEXT,__text  -[AXUIMLElement isMLElement]
+0x193ab0fec  __TEXT,__text  -[AXUIMLElement _simulateScrollAction:withScreenDistanceFactor:forVisibleAction:]
+0x193ab1200  __TEXT,__text  ___81-[AXUIMLElement _simulateScrollAction:withScreenDistanceFactor:forVisibleAction:]_block_invoke
+0x193ab13d0  __TEXT,__text  ___81-[AXUIMLElement _simulateScrollAction:withScreenDistanceFactor:forVisibleAction:]_block_invoke_2
+0x193ab146c  __TEXT,__text  ___81-[AXUIMLElement _simulateScrollAction:withScreenDistanceFactor:forVisibleAction:]_block_invoke_3
+0x193ab1520  __TEXT,__text  -[AXUIMLElement label]
+0x193ab1534  __TEXT,__text  -[AXUIMLElement setLabel:]
+0x193ab1548  __TEXT,__text  -[AXUIMLElement portraitUpFrame]
+0x193ab1560  __TEXT,__text  -[AXUIMLElement setPortraitUpFrame:]
+0x193ab1578  __TEXT,__text  -[AXUIMLElement rotatedFrame]
+0x193ab1590  __TEXT,__text  -[AXUIMLElement setRotatedFrame:]
+0x193ab15a8  __TEXT,__text  -[AXUIMLElement rotatedCenterPoint]
+0x193ab15bc  __TEXT,__text  -[AXUIMLElement setRotatedCenterPoint:]
+0x193ab15d0  __TEXT,__text  -[AXUIMLElement screenFrame]
+0x193ab15e8  __TEXT,__text  -[AXUIMLElement setScreenFrame:]
+0x193ab1600  __TEXT,__text  -[AXUIMLElement mlGeneration]
+0x193ab1614  __TEXT,__text  -[AXUIMLElement setMlGeneration:]
+0x193ab1628  __TEXT,__text  -[AXUIMLElement .cxx_destruct]
+0x193ab16ac  __TEXT,__text  ___getAXPIFingerControllerClass_block_invoke
+0x193ab1774  __TEXT,__text  _AccessibilityPhysicalInteractionLibrary
+0x193ab18c4  __TEXT,__text  ___AccessibilityPhysicalInteractionLibraryCore_block_invoke
+0x193ab1938  __TEXT,__text  ___getAXMTextDetectionOptionsClass_block_invoke
+0x193ab1a00  __TEXT,__text  _AXMediaUtilitiesLibrary
+0x193ab1b5c  __TEXT,__text  ___AXMediaUtilitiesLibraryCore_block_invoke
+0x193ab1bd0  __TEXT,__text  ___getAXMDisplayManagerClass_block_invoke
+0x193ab1c98  __TEXT,__text  ___getAXMVisionScreenRecognitionOptionsClass_block_invoke
+0x193ab1d60  __TEXT,__text  ___getAXMScreenRecognitionCenterClass_block_invoke
+0x193ab1e28  __TEXT,__text  ___getAXMVisionFeatureClass_block_invoke
+0x193ab1ef0  __TEXT,__text  ___getAXSettingsClass_block_invoke
+0x193ab20e0  __TEXT,__text  ___getAXMIntersectionOverUnionSymbolLoc_block_invoke
+0x193ab2130  __TEXT,__text  ___getAXMRatioOfIntersectedAreaToSmallerRectAreaSymbolLoc_block_invoke
+0x193ab2180  __TEXT,__text  ___getAXNamedReplayableGestureClass_block_invoke
+0x193ab2248  __TEXT,__text  +[AXElement elementWithAXUIElement:]
+0x193ab2280  __TEXT,__text  +[AXElement elementWithUIElement:]
+0x193ab22cc  __TEXT,__text  +[AXElement elementsWithUIElements:]
+0x193ab2424  __TEXT,__text  +[AXElement primaryApp]
+0x193ab2494  __TEXT,__text  +[AXElement unregisterNotifications:]
+0x193ab24a0  __TEXT,__text  +[AXElement registerNotifications:withIdentifier:withHandler:]
+0x193ab2970  __TEXT,__text  -[AXElement displayIdForContextId:]
+0x193ab2a44  __TEXT,__text  -[AXElement contextIdForPoint:]
+0x193ab2b2c  __TEXT,__text  -[AXElement contextIdHostingContextId:]
+0x193ab2c00  __TEXT,__text  +[AXElement elementAtCoordinate:withVisualPadding:displayID:allowSameProcess:]
+0x193ab2cb8  __TEXT,__text  +[AXElement elementAtCoordinate:withVisualPadding:displayID:]
+0x193ab2cc8  __TEXT,__text  +[AXElement elementAtCoordinate:withVisualPadding:allowSameProcess:]
+0x193ab2cdc  __TEXT,__text  +[AXElement elementAtCoordinate:withVisualPadding:]
+0x193ab2cf0  __TEXT,__text  +[AXElement systemWideElement]
+0x193ab2d38  __TEXT,__text  ___30+[AXElement systemWideElement]_block_invoke
+0x193ab2df8  __TEXT,__text  +[AXElement backboardProcess]
+0x193ab2dfc  __TEXT,__text  +[AXElement applicationAtCoordinate:]
+0x193ab2eb0  __TEXT,__text  +[AXElement systemEventDispatchElement]
+0x193ab2f0c  __TEXT,__text  -[AXElement initWithAXUIElement:]
+0x193ab2f58  __TEXT,__text  -[AXElement initWithUIElement:]
+0x193ab3030  __TEXT,__text  +[AXElement elementWithData:]
+0x193ab30a4  __TEXT,__text  -[AXElement serializeToData]
+0x193ab3120  __TEXT,__text  -[AXElement dealloc]
+0x193ab316c  __TEXT,__text  -[AXElement hash]
+0x193ab31f4  __TEXT,__text  -[AXElement isEqual:]
+0x193ab32a4  __TEXT,__text  -[AXElement description]
+0x193ab3310  __TEXT,__text  -[AXElement elementForAttribute:]
+0x193ab3318  __TEXT,__text  -[AXElement elementForAttribute:shouldFetchAttributes:]
+0x193ab3324  __TEXT,__text  -[AXElement _elementForAttribute:shouldUpdateCache:shouldFetchAttributes:]
+0x193ab33fc  __TEXT,__text  -[AXElement elementForAttribute:parameter:]
+0x193ab3434  __TEXT,__text  -[AXElement elementsForAttribute:parameter:]
+0x193ab3590  __TEXT,__text  -[AXElement elementsForAttribute:]
+0x193ab36ec  __TEXT,__text  -[AXElement elementRef]
+0x193ab36f4  __TEXT,__text  -[AXElement isSystemWideElement]
+0x193ab3734  __TEXT,__text  -[AXElement isBackboardProcess]
+0x193ab3738  __TEXT,__text  -[AXElement isPassivelyListeningForEvents]
+0x193ab3784  __TEXT,__text  -[AXElement setPassivelyListeningForEvents:]
+0x193ab37ec  __TEXT,__text  -[AXElement currentApplication]
+0x193ab382c  __TEXT,__text  +[AXElement defaultSystemShellFocusedApplicationWithOptions:]
+0x193ab38c4  __TEXT,__text  -[AXElement systemShellFocusedApplicationWithOptions:]
+0x193ab3ec8  __TEXT,__text  +[AXElement defaultSystemShellCurrentApplications]
+0x193ab3f10  __TEXT,__text  -[AXElement currentApplications]
+0x193ab3f14  __TEXT,__text  +[AXElement defaultSystemShellCurrentApplicationsIgnoringSiri]
+0x193ab3f5c  __TEXT,__text  -[AXElement currentApplicationsIgnoringSiri]
+0x193ab3f60  __TEXT,__text  -[AXElement systemShellCurrentApplications]
+0x193ab4040  __TEXT,__text  -[AXElement systemShellCurrentApplicationsIgnoringSiri]
+0x193ab4120  __TEXT,__text  -[AXElement springBoardApplication]
+0x193ab412c  __TEXT,__text  -[AXElement systemShellApplication]
+0x193ab4138  __TEXT,__text  -[AXElement applicationIsModal]
+0x193ab4174  __TEXT,__text  -[AXElement focusedOccludedAppSceneIdentifiers]
+0x193ab41b8  __TEXT,__text  +[AXElement defaultSystemShellApplication]
+0x193ab41ec  __TEXT,__text  +[AXElement systemApplication]
+0x193ab41f0  __TEXT,__text  -[AXElement systemApplication]
+0x193ab41fc  __TEXT,__text  +[AXElement defaultSystemShellApplicationPid]
+0x193ab4230  __TEXT,__text  +[AXElement systemAppPid]
+0x193ab4234  __TEXT,__text  +[AXElement carPlaySystemShellApplication]
+0x193ab4280  __TEXT,__text  +[AXElement accessibilityUIServerApplication]
+0x193ab42cc  __TEXT,__text  -[AXElement carPlaySystemApplication]
+0x193ab42d8  __TEXT,__text  -[AXElement accessibilityUIServerApplication]
+0x193ab42e4  __TEXT,__text  -[AXElement sendUserEventOccurred]
+0x193ab42ec  __TEXT,__text  -[AXElement systemPressTVSelectButton]
+0x193ab42f4  __TEXT,__text  -[AXElement systemPressTVPlayPauseButton]
+0x193ab42fc  __TEXT,__text  -[AXElement systemPressTVUpButton]
+0x193ab4304  __TEXT,__text  -[AXElement systemPressTVDownButton]
+0x193ab430c  __TEXT,__text  -[AXElement systemPressTVLeftButton]
+0x193ab4314  __TEXT,__text  -[AXElement systemPressTVRightButton]
+0x193ab431c  __TEXT,__text  -[AXElement systemPressTVMenuButton]
+0x193ab4324  __TEXT,__text  -[AXElement systemLongPressTVMenuButton]
+0x193ab432c  __TEXT,__text  -[AXElement systemPressTVHomeButton]
+0x193ab4334  __TEXT,__text  -[AXElement systemLongPressTVHomeButton]
+0x193ab433c  __TEXT,__text  -[AXElement systemPressTVSiriButton]
+0x193ab4344  __TEXT,__text  -[AXElement elementTransactionSummary]
+0x193ab4350  __TEXT,__text  -[AXElement convertRect:toContextId:]
+0x193ab4358  __TEXT,__text  -[AXElement convertRect:toContextId:displayId:]
+0x193ab44fc  __TEXT,__text  -[AXElement convertRect:fromContextId:]
+0x193ab4504  __TEXT,__text  -[AXElement convertRect:fromContextId:displayId:]
+0x193ab46a8  __TEXT,__text  -[AXElement convertPoint:fromContextId:]
+0x193ab46b0  __TEXT,__text  -[AXElement convertPoint:fromContextId:displayId:]
+0x193ab46bc  __TEXT,__text  -[AXElement convertPoint:toContextId:]
+0x193ab46c4  __TEXT,__text  -[AXElement convertPoint:toContextId:displayId:]
+0x193ab46d0  __TEXT,__text  -[AXElement convertPath:fromContextId:]
+0x193ab46d8  __TEXT,__text  -[AXElement convertPath:fromContextId:displayId:]
+0x193ab48bc  __TEXT,__text  ___49-[AXElement convertPath:fromContextId:displayId:]_block_invoke
+0x193ab4a08  __TEXT,__text  ___AX_CGPathEnumerateElementsUsingBlock_block_invoke
+0x193ab4a98  __TEXT,__text  __CGPathEnumerationIteration
+0x193ab4ae0  __TEXT,__text  -[AXElement updateCache:]
+0x193ab4ae8  __TEXT,__text  -[AXElement clearCachedFrame:cachedVisibleFrame:]
+0x193ab4b50  __TEXT,__text  -[AXElement applicationOrientation]
+0x193ab4ba4  __TEXT,__text  -[AXElement isScreenLocked]
+0x193ab4be0  __TEXT,__text  -[AXElement visibleElements]
+0x193ab4c40  __TEXT,__text  -[AXElement firstResponder]
+0x193ab4c48  __TEXT,__text  -[AXElement firstResponderForFocus]
+0x193ab4c50  __TEXT,__text  -[AXElement nativeFocusElement]
+0x193ab4c58  __TEXT,__text  -[AXElement nativeFocusPreferredElement]
+0x193ab4c60  __TEXT,__text  -[AXElement firstElementInApplication]
+0x193ab4c68  __TEXT,__text  -[AXElement firstElementInApplicationForFocus]
+0x193ab4c70  __TEXT,__text  -[AXElement bundleId]
+0x193ab4c7c  __TEXT,__text  -[AXElement processName]
+0x193ab4c88  __TEXT,__text  -[AXElement isSpringBoard]
+0x193ab4cc8  __TEXT,__text  -[AXElement isSystemApplication]
+0x193ab4d4c  __TEXT,__text  -[AXElement isControlCenterVisible]
+0x193ab4d58  __TEXT,__text  -[AXElement isDictationListening]
+0x193ab4d90  __TEXT,__text  -[AXElement isAXUIServer]
+0x193ab4dd0  __TEXT,__text  -[AXElement explorerElements]
+0x193ab4e24  __TEXT,__text  -[AXElement nativeFocusableElements]
+0x193ab4e78  __TEXT,__text  -[AXElement elementsWithSemanticContext]
+0x193ab4ecc  __TEXT,__text  -[AXElement siriContentNativeFocusableElements]
+0x193ab4f20  __TEXT,__text  -[AXElement siriContentElementsWithSemanticContext]
+0x193ab4f74  __TEXT,__text  -[AXElement focusContainersForCurrentSceneIdentifier:]
+0x193ab505c  __TEXT,__text  ___54-[AXElement focusContainersForCurrentSceneIdentifier:]_block_invoke
+0x193ab50cc  __TEXT,__text  ___54-[AXElement focusContainersForCurrentSceneIdentifier:]_block_invoke_2
+0x193ab50dc  __TEXT,__text  -[AXElement focusedSceneIdentifier]
+0x193ab50e8  __TEXT,__text  -[AXElement currentFocusContainer]
+0x193ab50f0  __TEXT,__text  -[AXElement elementsMatchingText:]
+0x193ab52f0  __TEXT,__text  -[AXElement application]
+0x193ab52f8  __TEXT,__text  -[AXElement remoteApplication]
+0x193ab5368  __TEXT,__text  -[AXElement isAccessibleElement]
+0x193ab5374  __TEXT,__text  -[AXElement isVisible]
+0x193ab5380  __TEXT,__text  -[AXElement label]
+0x193ab538c  __TEXT,__text  -[AXElement speakThisString]
+0x193ab5398  __TEXT,__text  -[AXElement accessibilityLocalizedStringKey]
+0x193ab53a4  __TEXT,__text  -[AXElement accessibilityLocalizationBundleID]
+0x193ab53b0  __TEXT,__text  -[AXElement accessibilityLocalizationBundlePath]
+0x193ab53bc  __TEXT,__text  -[AXElement accessibilityLocalizedStringTableName]
+0x193ab53c8  __TEXT,__text  -[AXElement hint]
+0x193ab53d4  __TEXT,__text  -[AXElement speechInputLabel]
+0x193ab5414  __TEXT,__text  -[AXElement userInputLabels]
+0x193ab5420  __TEXT,__text  -[AXElement setValue:]
+0x193ab5430  __TEXT,__text  -[AXElement value]
+0x193ab543c  __TEXT,__text  -[AXElement url]
+0x193ab54a4  __TEXT,__text  -[AXElement path]
+0x193ab5538  __TEXT,__text  -[AXElement language]
+0x193ab5544  __TEXT,__text  -[AXElement identifier]
+0x193ab5550  __TEXT,__text  -[AXElement axIdentifier]
+0x193ab555c  __TEXT,__text  -[AXElement traits]
+0x193ab559c  __TEXT,__text  -[AXElement auditIssuesForOptions:]
+0x193ab560c  __TEXT,__text  -[AXElement centerPoint]
+0x193ab5618  __TEXT,__text  -[AXElement visiblePoint]
+0x193ab5624  __TEXT,__text  -[AXElement _convertRectFromWindowCoordinates:]
+0x193ab5718  __TEXT,__text  -[AXElement frame]
+0x193ab5768  __TEXT,__text  -[AXElement textCursorFrame]
+0x193ab5834  __TEXT,__text  -[AXElement visibleFrame]
+0x193ab5884  __TEXT,__text  -[AXElement focusableFrameForZoom]
+0x193ab5950  __TEXT,__text  -[AXElement isValid]
+0x193ab595c  __TEXT,__text  -[AXElement containerType]
+0x193ab599c  __TEXT,__text  -[AXElement isTouchContainer]
+0x193ab5a38  __TEXT,__text  -[AXElement containerTypes]
+0x193ab5a44  __TEXT,__text  -[AXElement touchContainer]
+0x193ab5bec  __TEXT,__text  -[AXElement accessibleAncestor]
+0x193ab5c64  __TEXT,__text  -[AXElement accessibleDescendants]
+0x193ab5ce8  __TEXT,__text  -[AXElement isKeyboardKey]
+0x193ab5cf0  __TEXT,__text  -[AXElement keyboardContainer]
+0x193ab5d5c  __TEXT,__text  -[AXElement isMathEquation]
+0x193ab5d64  __TEXT,__text  -[AXElement hasWebContent]
+0x193ab5d6c  __TEXT,__text  -[AXElement hasTextEntry]
+0x193ab5d74  __TEXT,__text  -[AXElement isMap]
+0x193ab5dcc  __TEXT,__text  -[AXElement variantKeys]
+0x193ab5e50  __TEXT,__text  -[AXElement hasVariantKeys]
+0x193ab5eac  __TEXT,__text  -[AXElement _textOperationsOperator]
+0x193ab5efc  __TEXT,__text  -[AXElement textOperations]
+0x193ab5f74  __TEXT,__text  -[AXElement typingCandidates]
+0x193ab5fdc  __TEXT,__text  -[AXElement setAssistiveTechFocused:]
+0x193ab60d0  __TEXT,__text  ___37-[AXElement setAssistiveTechFocused:]_block_invoke
+0x193ab616c  __TEXT,__text  -[AXElement assistiveTechFocused]
+0x193ab6178  __TEXT,__text  -[AXElement customActions]
+0x193ab61cc  __TEXT,__text  -[AXElement _customActionsWithVisitedElements:]
+0x193ab62cc  __TEXT,__text  -[AXElement drags]
+0x193ab641c  __TEXT,__text  -[AXElement drops]
+0x193ab656c  __TEXT,__text  -[AXElement roleDescription]
+0x193ab65b0  __TEXT,__text  -[AXElement rowRange]
+0x193ab65fc  __TEXT,__text  -[AXElement textualContext]
+0x193ab6640  __TEXT,__text  -[AXElement isComboBox]
+0x193ab667c  __TEXT,__text  -[AXElement required]
+0x193ab66b8  __TEXT,__text  -[AXElement selectedTextRange]
+0x193ab6724  __TEXT,__text  -[AXElement setSelectedTextRange:]
+0x193ab6774  __TEXT,__text  -[AXElement _objectForRange:withParameterizedAttribute:]
+0x193ab67f0  __TEXT,__text  -[AXElement boundsForTextRange:]
+0x193ab6988  __TEXT,__text  -[AXElement nextElementsWithCount:]
+0x193ab69f4  __TEXT,__text  -[AXElement previousElementsWithCount:]
+0x193ab6a60  __TEXT,__text  -[AXElement hasAllTraits:]
+0x193ab6a8c  __TEXT,__text  -[AXElement hasAnyTraits:]
+0x193ab6ab8  __TEXT,__text  -[AXElement hasOnlyTraits:]
+0x193ab6ae4  __TEXT,__text  -[AXElement distanceToElement:]
+0x193ab6b98  __TEXT,__text  -[AXElement distanceToPoint:]
+0x193ab6c1c  __TEXT,__text  -[AXElement isAccessibilityOpaqueElementProvider]
+0x193ab6c28  __TEXT,__text  -[AXElement isNativeFocused]
+0x193ab6c34  __TEXT,__text  -[AXElement viewHierarchyHasNativeFocus]
+0x193ab6c40  __TEXT,__text  -[AXElement setNativeFocus]
+0x193ab6c4c  __TEXT,__text  -[AXElement eligibleForIconVision]
+0x193ab6cac  __TEXT,__text  -[AXElement semanticContext]
+0x193ab6d14  __TEXT,__text  -[AXElement pid]
+0x193ab6d4c  __TEXT,__text  -[AXElement elementParent]
+0x193ab6d5c  __TEXT,__text  -[AXElement remoteParent]
+0x193ab6dc4  __TEXT,__text  -[AXElement scanningBehaviorTraits]
+0x193ab6e18  __TEXT,__text  -[AXElement _remoteParentForContextID]
+0x193ab6e80  __TEXT,__text  -[AXElement canPerformZoom]
+0x193ab6ef8  __TEXT,__text  -[AXElement canPerformTrackingDetail]
+0x193ab6f3c  __TEXT,__text  -[AXElement _showContextMenuWithTargetPointValue:]
+0x193ab6fc0  __TEXT,__text  -[AXElement showContextMenu]
+0x193ab702c  __TEXT,__text  -[AXElement scrollToVisible]
+0x193ab7168  __TEXT,__text  -[AXElement canScrollInAtLeastOneDirection]
+0x193ab7218  __TEXT,__text  -[AXElement supportsAction:]
+0x193ab73d0  __TEXT,__text  -[AXElement performAction:]
+0x193ab75c0  __TEXT,__text  -[AXElement performAction:withValue:]
+0x193ab769c  __TEXT,__text  -[AXElement scrollAncestorForScrollAction:]
+0x193ab77dc  __TEXT,__text  -[AXElement windowDisplayId]
+0x193ab787c  __TEXT,__text  -[AXElement windowContextId]
+0x193ab791c  __TEXT,__text  -[AXElement fbSceneIdentifier]
+0x193ab79a4  __TEXT,__text  -[AXElement windowSceneIdentifier]
+0x193ab7a00  __TEXT,__text  -[AXElement _windowSceneIdentityToken]
+0x193ab7a0c  __TEXT,__text  -[AXElement isDisplayContentActive]
+0x193ab7a18  __TEXT,__text  -[AXElement windowSceneBelongsToContinuityDisplay]
+0x193ab7a24  __TEXT,__text  -[AXElement supportedGestures]
+0x193ab7a30  __TEXT,__text  -[AXElement canPerformActivate]
+0x193ab7b28  __TEXT,__text  -[AXElement _performActivate]
+0x193ab7c2c  __TEXT,__text  -[AXElement canPerformSecondaryActivate]
+0x193ab7c64  __TEXT,__text  -[AXElement press]
+0x193ab7db8  __TEXT,__text  ___18-[AXElement press]_block_invoke
+0x193ab7dc8  __TEXT,__text  -[AXElement simulateTapWithFingerIndex:]
+0x193ab7dfc  __TEXT,__text  -[AXElement simulateTapWithFingerIndex:withPoint:]
+```
+First 1,000 of 1,445.
+

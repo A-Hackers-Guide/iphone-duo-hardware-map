@@ -1,0 +1,34 @@
+# `/System/Library/PrivateFrameworks/ContactsPersistence.framework/ContactsPersistence`
+
+iOS 27.2 dyld shared cache image, version `3846.200.91.2.1`. Light page: libraries and type names only. **[DSC]**
+
+## Linked libraries (17)
+
+- `/System/Library/PrivateFrameworks/ContactsMetrics.framework/ContactsMetrics`
+- `/System/Library/Frameworks/Foundation.framework/Foundation`
+- `/System/Library/PrivateFrameworks/vCard.framework/vCard`
+- `/System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation`
+- `/System/Library/Frameworks/CoreData.framework/CoreData`
+- `/System/Library/Frameworks/Accounts.framework/Accounts`
+- `/usr/lib/libobjc.A.dylib`
+- `/usr/lib/libSystem.B.dylib`
+- `/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation`
+- `/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics`
+- `/usr/lib/swift/libswiftCore.dylib`
+- `/usr/lib/swift/libswiftCoreFoundation.dylib`
+- `/usr/lib/swift/libswiftDispatch.dylib`
+- `/usr/lib/swift/libswiftObjectiveC.dylib`
+- `/usr/lib/swift/libswiftXPC.dylib`
+- `/usr/lib/swift/libswift_Builtin_float.dylib`
+- `/usr/lib/swift/libswiftos.dylib`
+
+## Objective-C: 160 classes, 26 protocols (method count not recorded on light pages)
+
+### Classes
+
+`ABCDAddressingGrammar`, `ABCDAlertTone`, `ABCDCalendarURI`, `ABCDContact`, `ABCDContactDate`, `ABCDContactIndex`, `ABCDContainer`, `ABCDContainerDiff`, `ABCDContainerPermissions`, `ABCDContainerUpdate`, `ABCDCustomProperty`, `ABCDCustomPropertyValue`, `ABCDDateComponents`, `ABCDDateUtils`, `ABCDDeletedRecordLog`, `ABCDDistributionListConfig`, `ABCDEmailAddress`, `ABCDGroup`, `ABCDInfo`, `ABCDLegacyFilesystemImageHelper`, `ABCDMessagingAddress`, `ABCDNote`, `ABCDOwnedObject`, `ABCDPhoneNumber`, `ABCDPlatform`, `ABCDPostalAddress`, `ABCDProviderMetadata`, `ABCDRecord`, `ABCDRecordNameFormatter`, `ABCDRelatedName`, `ABCDService`, `ABCDSmartGroup`, `ABCDSocialProfile`, `ABCDSubscribedContact`, `ABCDSubscribedGroup`, `ABCDURLAddress`, `ABCDUnknownProperty`, `ABCustomPropertyDescription`, `ACAccount`, `CNACAccountCollection`, `CNAccountCollectionUpdateWatcher`, `CNAddPersistentStoreResult`, `CNCDCardDAVLegacyCustomPropertyMigrator`, `CNCDChangeHistoryClient`, `CNCDContact`, `CNCDContactIndexMigrator`, `CNCDContainer`, `CNCDCoreDataDeprecations`, `CNCDDatabaseCachingPreparer`, `CNCDDatabaseCompatibilityAnalysis`, `CNCDDatabaseLegacyIdentifierRebuilder`, `CNCDDatabaseMarkForRemovalTask`, `CNCDDatabasePreflightResult`, `CNCDDatabasePreflightTask`, `CNCDDatabasePreparation`, `CNCDDatabasePreparationRequest`, `CNCDDatabasePreparationResult`, `CNCDDatabasePreparationTask`, `CNCDDatabaseRemoval`, `CNCDDatabaseRemovalRequest`, `CNCDDatabaseRemovalResult`, `CNCDDatabaseSimplePreparer`, `CNCDDuplicateContainerMigrator`, `CNCDDuplicateCustomPropertyMigrator`, `CNCDDuplicateInfoCleanupMigrator`, `CNCDEmailAddress`, `CNCDError`, `CNCDFetchRequest`, `CNCDIOSLegacyIdentifierRegistrar`, `CNCDIOSLegacyIdentifierRegistrarInMemoryPersistence`, `CNCDIOSLegacyIdentifierRegistrarOnDiskPropertyListPersistence`, `CNCDIOSLegacyIdentifierRegistrarState`, `CNCDIOSLegacyIdentifierRegistrationRequest`, `CNCDIOSLegacyIdentifierRegistrations`, `CNCDIOSLegacyIdentifierSaveDistributor`, `CNCDIOSLegacyIdentifierTargetRecords`, `CNCDIOSLegacyIdentifierXPCRegistrar`, `CNCDInMemoryPersistenceBackend`, `CNCDInMemoryPersistenceBackendAccountDescription`, `CNCDLabelMigrator`, `CNCDLocalAccountDescription`, `CNCDManagedObjectContext`, `CNCDManagedObjectContextSaveListener`, `CNCDMessagingAddress`, `CNCDMigrator`, `CNCDNote`, `CNCDNoteAccessViolationReporter`, `CNCDOrphanPropertyMigrator`, `CNCDOrphanRecordMigrator`, `CNCDOwnedObject`, `CNCDPersistenceContext`, `CNCDPersistenceMetrics`, `CNCDPersistenceStack`, `CNCDPersistentBackend`, `CNCDPersistentStoreCoordinator`, `CNCDPersistentStoreOptionsBuilder`, `CNCDPhoneNumber`, `CNCDPhoneNumberMigrator`, `CNCDPostalAddress`, `CNCDProviderMetadata`, `CNCDRecord`, `CNCDRemoteExchangeSyncPersistentStoreEndpointFactory`, `CNCDRemotePersistence`, `CNCDRemotePersistentStoreDescriptor`, `CNCDRemotePersistentStoreEndpointFactory`, `CNCDRemotePersistentStoreEndpointFetchRequest`, `CNCDRemotePersistentStoreEndpointFetchResponse`, `CNCDService`, `CNCDTestManagedObjectContextSession`, `CNCDTestPersistenceStack`, `CNCDURLAddress`, `CNCDURLVerifier`, `CNCDUnifiedContactInfo`, `CNCDUnknownPropertyMigrator`, `CNCDVCardSerialization`, `CNContactStoreChangesNotifier`, `CNContactStoreNotificationInfo`, `CNCustomPropertyMigrationTask`, `CNDelegateAccessAccountCollection`, `CNDescriptionBuilder`, `CNEWSContactFolder`, `CNEWSContactMapping`, `CNEWSDistributionListMapping`, `CNEWSItemMapping`, `CNEWSMapping`, `CNEmptyAccountCollection`, `CNEnvironment`, `CNEnvironmentTestDouble`, `CNOnDiskAccountCollection`, `CNOnDiskAccountDescription`, `CNPersistentStoreBuilder`, `CNPersistentStoreCoordinatorBuildTask`, `CNPersistentStoreCoordinatorCache`, `CNPersistentStoreCoordinatorCacheEntry`, `CNPersistentStoreCoordinatorFactory`, `CNPersistentStoreCoordinatorResult`, `CNPersistentStoreCoordinatorUpdater`, `CNPersistentStoreDescription`, `CNTempFileHelper`, `CNTestAccountCollection`, `CNTestAccountDescription`, `NSManagedObject`, `NSNumber`, `_CNCDDatabaseInProcessRemover`, `_CNCDDatabaseXPCRemover`, `_CNCDManagedObjectContext_ConfinedUnavailable`, `_CNCDManagedObjectContext_PrivateQueue`, `_CNCDURLVerifier`, `_TtC19ContactsPersistence18CNCDMeCardImporter`, `_TtC19ContactsPersistence19CNCDFileSystemPhoto`, `_TtC19ContactsPersistence19OpenDirectoryFacade`, `_TtC19ContactsPersistence19SimpleCoreDataStack`, `_TtC19ContactsPersistence26CNCDMeCardMacBuddyImporter`, `_TtC19ContactsPersistence27CNCDFileSystemPhotoMigrator`, `_TtC19ContactsPersistence29OpenDirectoryFacadeTestDouble`, `_TtC19ContactsPersistence31CNCDMeCardOpenDirectoryImporter`, `_TtC19ContactsPersistence35CNCDContactVCardParsedResultBuilder`, `_TtC19ContactsPersistence42CNCDContactVCardParsedResultBuilderFactory`, `_TtCC19ContactsPersistence19CNCDFileSystemPhotoP33_7DF0F0C34F4DC3D385D6DC9AAC3F043E12CodingHelper`, `_TtCC19ContactsPersistence27CNCDFileSystemPhotoMigrator16FileManagerProxy`
+
+### Protocols
+
+`ABCDContactFallbackAlternateName`, `ABCDContainedRecord`, `ABCDContainerUpdate`, `ACMonitoredAccountStoreDelegateProtocol`, `CNAccountCollection`, `CNAccountDescription`, `CNAddPersistentStoreResult`, `CNCDDatabasePreparation`, `CNCDDatabaseRemoval`, `CNCDIOSLegacyIdentifierRegistrarPersistence`, `CNCDIOSLegacyIdentifierRegistration`, `CNCDManagedObjectContext`, `CNCDNoteAccessViolation`, `CNCDPersistenceBackend`, `CNCDRemotePersistenceService`, `CNContactsAccountsServiceProtocol`, `CNFileManager`, `CNPersistentStoreBuilder`, `CNRetryDelegate`, `CNVCardParsedResultBuilder`, `CNVCardParsedResultBuilderFactory`, `NSCoding`, `NSCopying`, `NSObject`, `NSSecureCoding`, `NSXPCStoreServerEndpointFactory`
+

@@ -1,0 +1,134 @@
+# `SBTraitsEmbeddedDisplayPipelineManager`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBTraitsPipelineManager`
+- Protocols: `TRAArbiterInputsDataSource`, `SBBacklightControllerObserver`, `SBLayoutStateTransitionObserver`, `SBTraitsParticipantDelegate`, `TRAArbiterObserver`, `SBAmbientPresentationObserver`, `SBFDevicePoseProviderObserver`, `SBDisplayContentModeTransitionObserver`, `SBDeviceOrientationUpdateDeferralObserver`, `SBCompanionScenePresenterObserving`
+- 42 instance variables, 5 properties, 66 instance methods, 0 class methods
+
+## Instance variables
+
+```
+q _lastNonFlatOrientation;
+@"SBFDevicePoseProvider" _devicePoseProvider;
+q _surfaceType;
+@"TRAArbitrationInputs" _inputs;
+@"TRAArbitrationKeyboardInputs" _keyboardInputs;
+@"TRAArbitrationInterfaceIdiomInputs" _deviceIdiomInputs;
+@"TRAArbitrationUserInterfaceStyleInputs" _userInterfaceStyleInputs;
+@"TRAArbitrationDeviceOrientationInputs" _deviceOrientationInputs;
+@"SBTraitsInputsOrientationLockValidator" _orientationLockInputsValidator;
+@"SBTraitsInputsOrientationNonFlatOverrideValidator" _lastNonFlatOverrideInputsValidator;
+@"TRAArbitrationAmbientPresentationInputs" _ambientPresentationInputs;
+@"SBTraitsInputsKeyboardFocusValidator" _keyboardFocusInputsValidator;
+@"SBWindowSceneOrientationLockManager" _orientationLockManager;
+@"SBDeviceOrientationUpdateDeferralManager" _deviceOrientationUpdateDeferralManager;
+@"NSMutableDictionary" _deviceOrientationUpdateDeferralAssertionsByReason;
+B _suppressingOrientationUpdateAnimation;
+B _backlightOffDeferralHeldInAlwaysOn;
+B _isDevicePoseOverridingOrientationLock;
+B _isSceneAccessoryIgnoringOrientationLock;
+@"SBTraitsInputsOrientationLockValidator" _continuousFoldLockValidator;
+@"<BSInvalidatable>" _continuousFoldDeviceOrientationDeferralAssertion;
+q _continuousFoldPinnedDeviceOrientation;
+Q _continuousFoldHolderCount;
+B _isContinuousFoldSettleWindowActive;
+Q _continuousFoldSettleGeneration;
+@"SBMedusa1oSettings" _medusaSettings;
+@"SBTraitsEmbeddedDisplayRolesAndDefaultPoliciesProvider" _rolesAndDefaultPoliciesProvider;
+@"SBTraitsHomeFollowsSwitcherRawPolicySpecifier" _homeFollowsSwitcherSpecifier;
+@"SBTraitsHomeInIsolationPolicySpecifier" _homeIsolationSpecifier;
+@"SBTraitsDockFollowsHomePolicySpecifier" _dockFollowsHomeSpecifier;
+@"SBTraitsControlCenterInIsolationPolicySpecifier" _controlCenterIsolationSpecifier;
+B _isCoversheetPresented;
+@"SBTraitsCoverSheetInIsolationPolicySpecifier" _coverSheetIsolationSpecifier;
+@"SBTraitsCoverSheetFollowsDeviceOrientationPolicySpecifier" _coverSheetFollowsDeviceOrientationSpecifier;
+@"SBTraitsCoverSheetFollowsSecureAppOrientationPolicySpecifier" _coverSheetFollowsSecureAppOrientationSpecifier;
+@"SBTraitsUnlockedEnvironmentFollowsCoverSheetInsteadOfDeviceOrientation" _unlockedEnvironmentFollowsCoverSheetInsteadOfDeviceOrientation;
+@"SBAmbientFollowsRawDeviceOrientationPolicySpecifier" _ambientFollowsRawDeviceOrientationSpecifier;
+@"SBTraitsAssistantIslandPolicySpecifier" _assistantIslandSpecifier;
+@"TRAParticipant" _activeOrientationParticipant;
+B _settingUpPipeline;
+Q _arbiterRunningUpdatesCount;
+@"<BSInvalidatable>" _stateCaptureInvalidatable;
+```
+
+## Properties
+
+```
+@property (T@"TRAArbitrationInputs",R,N) inputs;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[SBTraitsEmbeddedDisplayPipelineManager backlightController:didTransitionToBacklightState:source:];
+-[SBTraitsEmbeddedDisplayPipelineManager layoutStateTransitionCoordinator:transitionDidBeginWithTransitionContext:];
+-[SBTraitsEmbeddedDisplayPipelineManager _controlCenterWillDismiss:];
+-[SBTraitsEmbeddedDisplayPipelineManager _noteInputsNeedUpdateAnimated:reason:];
+-[SBTraitsEmbeddedDisplayPipelineManager _orientationInputsForDeviceOrientation:];
+-[SBTraitsEmbeddedDisplayPipelineManager _orientationStateDescription];
+-[SBTraitsEmbeddedDisplayPipelineManager _updateContinuousFoldPinInstalled];
+-[SBTraitsEmbeddedDisplayPipelineManager _updateDeviceOrientationAnimated:forReason:];
+-[SBTraitsEmbeddedDisplayPipelineManager inputs];
+-[SBTraitsEmbeddedDisplayPipelineManager displayContentModeCoordinator:handleDisplayContentModeTransition:];
+-[SBTraitsEmbeddedDisplayPipelineManager ambientPresentationController:willUpdatePresented:];
+-[SBTraitsEmbeddedDisplayPipelineManager dealloc];
+-[SBTraitsEmbeddedDisplayPipelineManager _controlCenterIsOnTheSameWindowScene:];
+-[SBTraitsEmbeddedDisplayPipelineManager displayContentModeCoordinator:handleSwapTransitionFromPrimaryWindowScene:toPrimaryWindowScene:withContinuationLockProvider:];
+-[SBTraitsEmbeddedDisplayPipelineManager ambientPresentationController:didUpdatePresented:];
+-[SBTraitsEmbeddedDisplayPipelineManager _updateInputs];
+-[SBTraitsEmbeddedDisplayPipelineManager _broadcastActiveInterfaceOrientationWithAnimationSettings:reason:];
+-[SBTraitsEmbeddedDisplayPipelineManager didChangeSettingsForParticipant:context:];
+-[SBTraitsEmbeddedDisplayPipelineManager ambientPresentationController:didUpdateAmbientDisplayStyle:];
+-[SBTraitsEmbeddedDisplayPipelineManager _bootOrientation];
+-[SBTraitsEmbeddedDisplayPipelineManager updatePreferencesForParticipant:updater:];
+-[SBTraitsEmbeddedDisplayPipelineManager continuousFoldPinnedInterfaceOrientation];
+-[SBTraitsEmbeddedDisplayPipelineManager _noteCoverSheetWillDismiss];
+-[SBTraitsEmbeddedDisplayPipelineManager _layoutCoordinator];
+-[SBTraitsEmbeddedDisplayPipelineManager initWithArbiter:sceneDelegate:userInterfaceStyleProvider:];
+-[SBTraitsEmbeddedDisplayPipelineManager setupDefaultPipelineForArbiter:];
+-[SBTraitsEmbeddedDisplayPipelineManager startListeningForLockScreenUIPresentations];
+-[SBTraitsEmbeddedDisplayPipelineManager startObservingSceneAccessoryPresentations];
+-[SBTraitsEmbeddedDisplayPipelineManager startObservingLayoutStateTransitions];
+-[SBTraitsEmbeddedDisplayPipelineManager systemArbitratedDeviceOrientation];
+-[SBTraitsEmbeddedDisplayPipelineManager poseProvider:didUpdateFromPose:toPose:];
+-[SBTraitsEmbeddedDisplayPipelineManager startObservingAmbientPresentation];
+-[SBTraitsEmbeddedDisplayPipelineManager userInterfaceStyleStageRoles];
+-[SBTraitsEmbeddedDisplayPipelineManager zOrderStageRoles];
+-[SBTraitsEmbeddedDisplayPipelineManager layoutStateTransitionCoordinator:transitionDidEndWithTransitionContext:];
+-[SBTraitsEmbeddedDisplayPipelineManager _broadcastCurrentDeviceOrientationWithReason:];
+-[SBTraitsEmbeddedDisplayPipelineManager _continuousFoldPinNeedsPoseSettleWindow];
+-[SBTraitsEmbeddedDisplayPipelineManager _controlCenterDidDismiss:];
+-[SBTraitsEmbeddedDisplayPipelineManager _evaluateNonFlatOverrideNecessityForCurrentDeviceOrientation:];
+-[SBTraitsEmbeddedDisplayPipelineManager _noteCoverSheetDidDismiss];
+-[SBTraitsEmbeddedDisplayPipelineManager _noteCoverSheetDidPresent];
+-[SBTraitsEmbeddedDisplayPipelineManager _noteCoverSheetWillPresent];
+-[SBTraitsEmbeddedDisplayPipelineManager _takeContinuousFoldPinHoldForReason:];
+-[SBTraitsEmbeddedDisplayPipelineManager _updateDeviceOrientationDeferralAssertions];
+-[SBTraitsEmbeddedDisplayPipelineManager _releaseContinuousFoldDeviceOrientationLockValidator:];
+-[SBTraitsEmbeddedDisplayPipelineManager _updateHomeFollowsSwitcherAnimationForLayoutState:];
+-[SBTraitsEmbeddedDisplayPipelineManager _isBacklightOn];
+-[SBTraitsEmbeddedDisplayPipelineManager _updateOrientationLockInputsValidator];
+-[SBTraitsEmbeddedDisplayPipelineManager acquireContinuousFoldDeviceOrientationLock:];
+-[SBTraitsEmbeddedDisplayPipelineManager acquireContinuousFoldDeviceOrientationLockExtension];
+-[SBTraitsEmbeddedDisplayPipelineManager arbiter:didCompleteUpdateWithContext:];
+-[SBTraitsEmbeddedDisplayPipelineManager arbiter:willBeginUpdateWithContext:];
+-[SBTraitsEmbeddedDisplayPipelineManager companionScenePresenter:hostingDidChange:];
+-[SBTraitsEmbeddedDisplayPipelineManager deviceOrientationUpdateDeferralStateDidChange:forWindowScene:];
+-[SBTraitsEmbeddedDisplayPipelineManager _noteInputsNeedUpdateWithAnimationSettings:fence:reason:];
+-[SBTraitsEmbeddedDisplayPipelineManager lastNonFlatDeviceOrientation];
+-[SBTraitsEmbeddedDisplayPipelineManager orientationStageRoles];
+-[SBTraitsEmbeddedDisplayPipelineManager defaultOrientationAnimationSettingsAnimatable:];
+-[SBTraitsEmbeddedDisplayPipelineManager ambientPresentationStageRoles];
+-[SBTraitsEmbeddedDisplayPipelineManager startObservingBacklight];
+-[SBTraitsEmbeddedDisplayPipelineManager supportsLiveDeviceRotation];
+-[SBTraitsEmbeddedDisplayPipelineManager _userOrientationLockChanged:];
+-[SBTraitsEmbeddedDisplayPipelineManager systemArbitratedInterfaceOrientation];
+-[SBTraitsEmbeddedDisplayPipelineManager setResolvedKeyboardFocusContext:];
+-[SBTraitsEmbeddedDisplayPipelineManager userInterfaceStyleDidUpdateWithAnimationSettings:fence:];
+-[SBTraitsEmbeddedDisplayPipelineManager _addLastNonFlatOverrideInputsValidatorIfNeeded];
+```

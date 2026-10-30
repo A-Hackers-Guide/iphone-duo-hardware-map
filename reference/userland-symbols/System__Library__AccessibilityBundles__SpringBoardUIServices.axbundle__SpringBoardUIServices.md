@@ -1,0 +1,339 @@
+# Symbols: `/System/Library/AccessibilityBundles/SpringBoardUIServices.axbundle/SpringBoardUIServices`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__AccessibilityBundles__SpringBoardUIServices.axbundle__SpringBoardUIServices.md). **[DSC]**
+
+115 public symbols, 208 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1ee31e410  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXSpringBoardUIServicesGlue
+0x1ee31e3c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBEmptyButtonViewAccessibility
+0x1ee31e398  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBPasscodeNumberPadButtonAccessibility
+0x1ee31e370  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBPowerDownViewAccessibility
+0x1ee31d2e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBSUIBuddyMultitaskingFlowOptionViewAccessibility
+0x1ee31e348  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBSUIWallpaperButtonAccessibility
+0x1ee31e320  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBSUIWallpaperPreviewViewAccessibility
+0x1ee31e2f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUIAppleLogoViewAccessibility
+0x1ee31e2d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUICallToActionLabelAccessibility
+0x1ee31e2a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUILegibilityLabelAccessibility
+0x1ee31e280  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUILongNumericPasscodeEntryFieldAccessibility
+0x1ee31e258  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUIPasscodeBiometricAuthenticationViewAccessibility
+0x1ee31e230  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUIPasscodeEntryFieldAccessibility
+0x1ee31e208  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUIPasscodeLockNumberPadAccessibility
+0x1ee31e1e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUIPasscodeLockViewBaseAccessibility
+0x1ee31e1b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUIPasscodeLockViewSimpleFixedDigitKeypadAccessibility
+0x1ee31e190  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUIPasscodeLockViewWithKeyboardAccessibility
+0x1ee31e168  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUIPasscodeLockViewWithKeypadAccessibility
+0x1ee31e140  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUIPasscodePillButtonAccessibility
+0x1ee31e118  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUIPasscodeTextFieldAccessibility
+0x1ee31e0f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUIProudLockIconViewAccessibility
+0x1ee31e0c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUIRemoteAlertServiceViewControllerAccessibility
+0x1ee31e0a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUIRingViewLabelButtonAccessibility
+0x1ee31e078  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUISimpleFixedDigitPasscodeEntryFieldAccessibility
+0x1ee31e050  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUISpotlightBarNavigationControllerAccessibility
+0x1ee31d380  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUISystemApertureCAPackageButtonAccessibility
+0x1ee31e028  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUISystemApertureElementSourceAccessibility
+0x1ee31e000  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUISystemApertureSecureWindowAccessibility
+0x1ee31dfd8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SBUIVibrantButtonAccessibility
+0x1ee31dfb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBEmptyButtonViewAccessibility_super
+0x1ee31df88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBPasscodeNumberPadButtonAccessibility_super
+0x1ee31df60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBPowerDownViewAccessibility_super
+0x1ee31d2b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBSUIBuddyMultitaskingFlowOptionViewAccessibility_super
+0x1ee31df38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBSUIWallpaperButtonAccessibility_super
+0x1ee31df10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBSUIWallpaperPreviewViewAccessibility_super
+0x1ee31dee8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUIAppleLogoViewAccessibility_super
+0x1ee31dec0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUICallToActionLabelAccessibility_super
+0x1ee31de98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUILegibilityLabelAccessibility_super
+0x1ee31de70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUILongNumericPasscodeEntryFieldAccessibility_super
+0x1ee31de48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUIPasscodeBiometricAuthenticationViewAccessibility_super
+0x1ee31de20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUIPasscodeEntryFieldAccessibility_super
+0x1ee31ddf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUIPasscodeLockNumberPadAccessibility_super
+0x1ee31ddd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUIPasscodeLockViewBaseAccessibility_super
+0x1ee31dda8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUIPasscodeLockViewSimpleFixedDigitKeypadAccessibility_super
+0x1ee31dd80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUIPasscodeLockViewWithKeyboardAccessibility_super
+0x1ee31dd58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUIPasscodeLockViewWithKeypadAccessibility_super
+0x1ee31dd30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUIPasscodePillButtonAccessibility_super
+0x1ee31dd08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUIPasscodeTextFieldAccessibility_super
+0x1ee31dce0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUIProudLockIconViewAccessibility_super
+0x1ee31dcb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUIRemoteAlertServiceViewControllerAccessibility_super
+0x1ee31dc90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUIRingViewLabelButtonAccessibility_super
+0x1ee31dc68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUISimpleFixedDigitPasscodeEntryFieldAccessibility_super
+0x1ee31dc40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUISpotlightBarNavigationControllerAccessibility_super
+0x1ee31d358  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUISystemApertureCAPackageButtonAccessibility_super
+0x1ee31dc18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUISystemApertureElementSourceAccessibility_super
+0x1ee31dbf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUISystemApertureSecureWindowAccessibility_super
+0x1ee31dbc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___SBUIVibrantButtonAccessibility_super
+0x1ee31e3e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXSpringBoardUIServicesGlue
+0x1ee31dba0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBEmptyButtonViewAccessibility
+0x1ee31db78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBPasscodeNumberPadButtonAccessibility
+0x1ee31db50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBPowerDownViewAccessibility
+0x1ee31d290  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBSUIBuddyMultitaskingFlowOptionViewAccessibility
+0x1ee31db28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBSUIWallpaperButtonAccessibility
+0x1ee31db00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBSUIWallpaperPreviewViewAccessibility
+0x1ee31dad8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUIAppleLogoViewAccessibility
+0x1ee31dab0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUICallToActionLabelAccessibility
+0x1ee31da88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUILegibilityLabelAccessibility
+0x1ee31da60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUILongNumericPasscodeEntryFieldAccessibility
+0x1ee31da38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUIPasscodeBiometricAuthenticationViewAccessibility
+0x1ee31da10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUIPasscodeEntryFieldAccessibility
+0x1ee31d9e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUIPasscodeLockNumberPadAccessibility
+0x1ee31d9c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUIPasscodeLockViewBaseAccessibility
+0x1ee31d998  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUIPasscodeLockViewSimpleFixedDigitKeypadAccessibility
+0x1ee31d970  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUIPasscodeLockViewWithKeyboardAccessibility
+0x1ee31d948  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUIPasscodeLockViewWithKeypadAccessibility
+0x1ee31d920  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUIPasscodePillButtonAccessibility
+0x1ee31d8f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUIPasscodeTextFieldAccessibility
+0x1ee31d8d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUIProudLockIconViewAccessibility
+0x1ee31d8a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUIRemoteAlertServiceViewControllerAccessibility
+0x1ee31d880  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUIRingViewLabelButtonAccessibility
+0x1ee31d858  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUISimpleFixedDigitPasscodeEntryFieldAccessibility
+0x1ee31d830  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUISpotlightBarNavigationControllerAccessibility
+0x1ee31d330  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUISystemApertureCAPackageButtonAccessibility
+0x1ee31d808  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUISystemApertureElementSourceAccessibility
+0x1ee31d7e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUISystemApertureSecureWindowAccessibility
+0x1ee31d7b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SBUIVibrantButtonAccessibility
+0x1ee31d790  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBEmptyButtonViewAccessibility_super
+0x1ee31d768  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBPasscodeNumberPadButtonAccessibility_super
+0x1ee31d740  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBPowerDownViewAccessibility_super
+0x1ee31d268  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBSUIBuddyMultitaskingFlowOptionViewAccessibility_super
+0x1ee31d718  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBSUIWallpaperButtonAccessibility_super
+0x1ee31d6f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBSUIWallpaperPreviewViewAccessibility_super
+0x1ee31d6c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUIAppleLogoViewAccessibility_super
+0x1ee31d6a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUICallToActionLabelAccessibility_super
+0x1ee31d678  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUILegibilityLabelAccessibility_super
+0x1ee31d650  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUILongNumericPasscodeEntryFieldAccessibility_super
+0x1ee31d628  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUIPasscodeBiometricAuthenticationViewAccessibility_super
+0x1ee31d600  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUIPasscodeEntryFieldAccessibility_super
+0x1ee31d5d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUIPasscodeLockNumberPadAccessibility_super
+0x1ee31d5b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUIPasscodeLockViewBaseAccessibility_super
+0x1ee31d588  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUIPasscodeLockViewSimpleFixedDigitKeypadAccessibility_super
+0x1ee31d560  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUIPasscodeLockViewWithKeyboardAccessibility_super
+0x1ee31d538  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUIPasscodeLockViewWithKeypadAccessibility_super
+0x1ee31d510  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUIPasscodePillButtonAccessibility_super
+0x1ee31d4e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUIPasscodeTextFieldAccessibility_super
+0x1ee31d4c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUIProudLockIconViewAccessibility_super
+0x1ee31d498  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUIRemoteAlertServiceViewControllerAccessibility_super
+0x1ee31d470  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUIRingViewLabelButtonAccessibility_super
+0x1ee31d448  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUISimpleFixedDigitPasscodeEntryFieldAccessibility_super
+0x1ee31d420  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUISpotlightBarNavigationControllerAccessibility_super
+0x1ee31d308  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUISystemApertureCAPackageButtonAccessibility_super
+0x1ee31d3f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUISystemApertureElementSourceAccessibility_super
+0x1ee31d3d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUISystemApertureSecureWindowAccessibility_super
+0x1ee31d3a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___SBUIVibrantButtonAccessibility_super
+0x189da9204  __TEXT,__text  _accessibilitySBLocalizedString
+```
+
+## Private
+
+```
+0x189da9010  __TEXT,__text  +[SBUIAppleLogoViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189da901c  __TEXT,__text  +[SBUIAppleLogoViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189da9028  __TEXT,__text  +[SBUIAppleLogoViewAccessibility _accessibilityPerformValidations:]
+0x189da90b8  __TEXT,__text  -[SBUIAppleLogoViewAccessibility isAccessibilityElement]
+0x189da90c0  __TEXT,__text  -[SBUIAppleLogoViewAccessibility accessibilityLabel]
+0x189da9178  __TEXT,__text  -[SBUIAppleLogoViewAccessibility accessibilityValue]
+0x189da91f4  __TEXT,__text  -[SBUIAppleLogoViewAccessibility accessibilityTraits]
+0x189da92e8  __TEXT,__text  +[AXSpringBoardUIServicesGlue accessibilityInitializeBundle]
+0x189da936c  __TEXT,__text  ___60+[AXSpringBoardUIServicesGlue accessibilityInitializeBundle]_block_invoke
+0x189da9374  __TEXT,__text  ___60+[AXSpringBoardUIServicesGlue accessibilityInitializeBundle]_block_invoke_2
+0x189da93c8  __TEXT,__text  ___60+[AXSpringBoardUIServicesGlue accessibilityInitializeBundle]_block_invoke_3
+0x189da9620  __TEXT,__text  +[SBSUIBuddyMultitaskingFlowOptionViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189da962c  __TEXT,__text  +[SBSUIBuddyMultitaskingFlowOptionViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189da9638  __TEXT,__text  +[SBSUIBuddyMultitaskingFlowOptionViewAccessibility _accessibilityPerformValidations:]
+0x189da9678  __TEXT,__text  -[SBSUIBuddyMultitaskingFlowOptionViewAccessibility isAccessibilityElement]
+0x189da9680  __TEXT,__text  -[SBSUIBuddyMultitaskingFlowOptionViewAccessibility accessibilityLabel]
+0x189da9684  __TEXT,__text  -[SBSUIBuddyMultitaskingFlowOptionViewAccessibility accessibilityTraits]
+0x189da96d0  __TEXT,__text  +[SBSUIWallpaperButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189da96dc  __TEXT,__text  +[SBSUIWallpaperButtonAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189da96e8  __TEXT,__text  +[SBSUIWallpaperButtonAccessibility _accessibilityPerformValidations:]
+0x189da9700  __TEXT,__text  -[SBSUIWallpaperButtonAccessibility _containerViewForLegacyFocusRing]
+0x189da9760  __TEXT,__text  +[SBUIPasscodeBiometricAuthenticationViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189da976c  __TEXT,__text  +[SBUIPasscodeBiometricAuthenticationViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189da9778  __TEXT,__text  +[SBUIPasscodeBiometricAuthenticationViewAccessibility _accessibilityPerformValidations:]
+0x189da9808  __TEXT,__text  -[SBUIPasscodeBiometricAuthenticationViewAccessibility _updateSubviews]
+0x189da9854  __TEXT,__text  -[SBUIPasscodeBiometricAuthenticationViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x189da98e0  __TEXT,__text  +[SBUISystemApertureElementSourceAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189da98ec  __TEXT,__text  +[SBUISystemApertureElementSourceAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189da98f8  __TEXT,__text  +[SBUISystemApertureElementSourceAccessibility _accessibilityPerformValidations:]
+0x189da99d0  __TEXT,__text  -[SBUISystemApertureElementSourceAccessibility _handleSceneResizeAction:]
+0x189da9c18  __TEXT,__text  -[SBUISystemApertureElementSourceAccessibility traverseTreeForElementsFromView:]
+0x189da9dc4  __TEXT,__text  +[SBEmptyButtonViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189da9dd0  __TEXT,__text  +[SBEmptyButtonViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189da9ddc  __TEXT,__text  -[SBEmptyButtonViewAccessibility accessibilityRespondsToUserInteraction]
+0x189da9de4  __TEXT,__text  +[SBPasscodeNumberPadButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189da9df0  __TEXT,__text  +[SBPasscodeNumberPadButtonAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189da9dfc  __TEXT,__text  +[SBPasscodeNumberPadButtonAccessibility _accessibilityPerformValidations:]
+0x189da9e6c  __TEXT,__text  -[SBPasscodeNumberPadButtonAccessibility accessibilityTraits]
+0x189da9e8c  __TEXT,__text  -[SBPasscodeNumberPadButtonAccessibility accessibilityValue]
+0x189da9e94  __TEXT,__text  -[SBPasscodeNumberPadButtonAccessibility accessibilityHint]
+0x189da9f58  __TEXT,__text  -[SBPasscodeNumberPadButtonAccessibility _accessibilitySupportsDirectioOrbManipulation]
+0x189da9f60  __TEXT,__text  -[SBPasscodeNumberPadButtonAccessibility _accessibilityHasSensitiveCursorContent]
+0x189da9f68  __TEXT,__text  +[SBPowerDownViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189da9f74  __TEXT,__text  +[SBPowerDownViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189da9f80  __TEXT,__text  +[SBPowerDownViewAccessibility _accessibilityPerformValidations:]
+0x189daa00c  __TEXT,__text  -[SBPowerDownViewAccessibility initWithFrame:]
+0x189daa064  __TEXT,__text  -[SBPowerDownViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x189daa2b4  __TEXT,__text  ___74-[SBPowerDownViewAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke
+0x189daa2f4  __TEXT,__text  ___74-[SBPowerDownViewAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_2
+0x189daa350  __TEXT,__text  +[SBSUIWallpaperPreviewViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189daa35c  __TEXT,__text  +[SBSUIWallpaperPreviewViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189daa368  __TEXT,__text  +[SBSUIWallpaperPreviewViewAccessibility _accessibilityPerformValidations:]
+0x189daa410  __TEXT,__text  -[SBSUIWallpaperPreviewViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x189daa4d4  __TEXT,__text  -[SBSUIWallpaperPreviewViewAccessibility initWithFrame:wallpaperView:disableParallax:]
+0x189daa52c  __TEXT,__text  +[SBUICallToActionLabelAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189daa538  __TEXT,__text  +[SBUICallToActionLabelAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189daa544  __TEXT,__text  +[SBUICallToActionLabelAccessibility _accessibilityPerformValidations:]
+0x189daa5b8  __TEXT,__text  -[SBUICallToActionLabelAccessibility accessibilityTraits]
+0x189daa600  __TEXT,__text  -[SBUICallToActionLabelAccessibility isAccessibilityElement]
+0x189daa608  __TEXT,__text  -[SBUICallToActionLabelAccessibility _accessibilitySupportsActivateAction]
+0x189daa610  __TEXT,__text  -[SBUICallToActionLabelAccessibility _accessibilityScannerShouldUseActivateInPointMode]
+0x189daa618  __TEXT,__text  -[SBUICallToActionLabelAccessibility accessibilityActivate]
+0x189daa680  __TEXT,__text  -[SBUICallToActionLabelAccessibility accessibilityAttributedLabel]
+0x189daa844  __TEXT,__text  -[SBUICallToActionLabelAccessibility _accessibilityHandlePreboardUnlock]
+0x189daa880  __TEXT,__text  -[SBUICallToActionLabelAccessibility _accessibilityTryUnlockForControllerClassName:]
+0x189daa99c  __TEXT,__text  ___84-[SBUICallToActionLabelAccessibility _accessibilityTryUnlockForControllerClassName:]_block_invoke
+0x189daa9ec  __TEXT,__text  ___84-[SBUICallToActionLabelAccessibility _accessibilityTryUnlockForControllerClassName:]_block_invoke_2
+0x189daa9f8  __TEXT,__text  +[SBUILegibilityLabelAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189daaa04  __TEXT,__text  +[SBUILegibilityLabelAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189daaa10  __TEXT,__text  +[SBUILegibilityLabelAccessibility _accessibilityPerformValidations:]
+0x189daaabc  __TEXT,__text  -[SBUILegibilityLabelAccessibility accessibilityLabel]
+0x189daac30  __TEXT,__text  -[SBUILegibilityLabelAccessibility _accessibilityOverridesInvisibility]
+0x189daad0c  __TEXT,__text  -[SBUILegibilityLabelAccessibility accessibilityScroll:]
+0x189daadb8  __TEXT,__text  -[SBUILegibilityLabelAccessibility _accessibilityViewIsVisible]
+0x189daae94  __TEXT,__text  -[SBUILegibilityLabelAccessibility isAccessibilityElement]
+0x189daaf68  __TEXT,__text  -[SBUILegibilityLabelAccessibility accessibilityTraits]
+0x189dab02c  __TEXT,__text  -[SBUILegibilityLabelAccessibility accessibilityFrame]
+0x189dab11c  __TEXT,__text  -[SBUILegibilityLabelAccessibility accessibilityRespondsToUserInteraction]
+0x189dab194  __TEXT,__text  -[SBUILegibilityLabelAccessibility _accessibilityMediaAnalysisOption]
+0x189dab19c  __TEXT,__text  -[SBUILegibilityLabelAccessibility _accessibilityParentView]
+0x189dab244  __TEXT,__text  +[SBUILongNumericPasscodeEntryFieldAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dab250  __TEXT,__text  +[SBUILongNumericPasscodeEntryFieldAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dab25c  __TEXT,__text  +[SBUILongNumericPasscodeEntryFieldAccessibility _accessibilityPerformValidations:]
+0x189dab2a4  __TEXT,__text  -[SBUILongNumericPasscodeEntryFieldAccessibility setShowsOkButton:]
+0x189dab2f0  __TEXT,__text  -[SBUILongNumericPasscodeEntryFieldAccessibility _accessibilityHasSensitiveCursorContent]
+0x189dab2f8  __TEXT,__text  +[SBUIPasscodeEntryFieldAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dab304  __TEXT,__text  +[SBUIPasscodeEntryFieldAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dab310  __TEXT,__text  +[SBUIPasscodeEntryFieldAccessibility _accessibilityPerformValidations:]
+0x189dab3ac  __TEXT,__text  -[SBUIPasscodeEntryFieldAccessibility isAccessibilityElement]
+0x189dab3b4  __TEXT,__text  -[SBUIPasscodeEntryFieldAccessibility accessibilityElementAtIndex:]
+0x189dab3c0  __TEXT,__text  -[SBUIPasscodeEntryFieldAccessibility shouldInsertPasscodeText:]
+0x189dab428  __TEXT,__text  -[SBUIPasscodeEntryFieldAccessibility deleteLastCharacter]
+0x189dab47c  __TEXT,__text  +[SBUISystemApertureSecureWindowAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dab488  __TEXT,__text  +[SBUISystemApertureSecureWindowAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dab494  __TEXT,__text  +[SBUISystemApertureSecureWindowAccessibility _accessibilityPerformValidations:]
+0x189dab498  __TEXT,__text  -[SBUISystemApertureSecureWindowAccessibility _accessibilityIsInJindo]
+0x189dab4a0  __TEXT,__text  +[SBUIPasscodeLockNumberPadAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dab4ac  __TEXT,__text  +[SBUIPasscodeLockNumberPadAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dab4b8  __TEXT,__text  +[SBUIPasscodeLockNumberPadAccessibility _accessibilityPerformValidations:]
+0x189dab55c  __TEXT,__text  -[SBUIPasscodeLockNumberPadAccessibility _accessibilityIsSoftwareKeyboardMimic]
+0x189dab564  __TEXT,__text  -[SBUIPasscodeLockNumberPadAccessibility _accessibilitySoftwareMimicKeyboard]
+0x189dab568  __TEXT,__text  -[SBUIPasscodeLockNumberPadAccessibility _configureAdditionalButtons]
+0x189dab6b4  __TEXT,__text  +[SBUISystemApertureCAPackageButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dab6c0  __TEXT,__text  +[SBUISystemApertureCAPackageButtonAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dab6cc  __TEXT,__text  +[SBUISystemApertureCAPackageButtonAccessibility _accessibilityPerformValidations:]
+0x189dab6d0  __TEXT,__text  -[SBUISystemApertureCAPackageButtonAccessibility accessibilityLabel]
+0x189dab6dc  __TEXT,__text  +[SBUIPasscodeLockViewBaseAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dab6e8  __TEXT,__text  +[SBUIPasscodeLockViewBaseAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dab6f4  __TEXT,__text  +[SBUIPasscodeLockViewBaseAccessibility _accessibilityPerformValidations:]
+0x189dab920  __TEXT,__text  -[SBUIPasscodeLockViewBaseAccessibility _accessibilitySupportsHandwriting]
+0x189dab928  __TEXT,__text  -[SBUIPasscodeLockViewBaseAccessibility _accessibilityHandwritingAttributePreferredCharacterSet]
+0x189dab970  __TEXT,__text  -[SBUIPasscodeLockViewBaseAccessibility _accessibilityHandwritingAttributeAllowedCharacterSets]
+0x189dab9ec  __TEXT,__text  -[SBUIPasscodeLockViewBaseAccessibility _accessibilityHasDeletableText]
+0x189dabaf4  __TEXT,__text  ___71-[SBUIPasscodeLockViewBaseAccessibility _accessibilityHasDeletableText]_block_invoke
+0x189dabb28  __TEXT,__text  -[SBUIPasscodeLockViewBaseAccessibility _accessibilityHandwritingAttributeShouldEchoCharacter]
+0x189dabb30  __TEXT,__text  -[SBUIPasscodeLockViewBaseAccessibility _accessibilityHandwritingAttributeShouldPlayKeyboardSecureClickSound]
+0x189dabb38  __TEXT,__text  -[SBUIPasscodeLockViewBaseAccessibility _accessibilitySupportsTextInsertionAndDeletion]
+0x189dabb40  __TEXT,__text  -[SBUIPasscodeLockViewBaseAccessibility _accessibilityInsertText:]
+0x189dabc00  __TEXT,__text  ___66-[SBUIPasscodeLockViewBaseAccessibility _accessibilityInsertText:]_block_invoke
+0x189dabc98  __TEXT,__text  -[SBUIPasscodeLockViewBaseAccessibility _accessibilityActivateKeyboardReturnKey]
+0x189dabd24  __TEXT,__text  -[SBUIPasscodeLockViewBaseAccessibility _resetForFailedPasscode:]
+0x189dabda8  __TEXT,__text  -[SBUIPasscodeLockViewBaseAccessibility resetForSuccess]
+0x189dabdec  __TEXT,__text  -[SBUIPasscodeLockViewBaseAccessibility _accessibilityReplaceCharactersAtCursor:withString:]
+0x189dabebc  __TEXT,__text  ___92-[SBUIPasscodeLockViewBaseAccessibility _accessibilityReplaceCharactersAtCursor:withString:]_block_invoke
+0x189dabf1c  __TEXT,__text  -[SBUIPasscodeLockViewBaseAccessibility _accessibilityEntryFieldIsFirstResponder]
+0x189dabfa8  __TEXT,__text  -[SBUIPasscodeLockViewBaseAccessibility _updateStatusTextForBioEvent:animated:]
+0x189dac0d0  __TEXT,__text  -[SBUIPasscodeLockViewBaseAccessibility becomeFirstResponder]
+0x189dac238  __TEXT,__text  ___Block_byref_object_copy_
+0x189dac248  __TEXT,__text  ___Block_byref_object_dispose_
+0x189dac250  __TEXT,__text  ___61-[SBUIPasscodeLockViewBaseAccessibility becomeFirstResponder]_block_invoke
+0x189dac2c4  __TEXT,__text  -[SBUIPasscodeLockViewBaseAccessibility _setPasscodeLockViewState:animated:]
+0x189dac32c  __TEXT,__text  ___76-[SBUIPasscodeLockViewBaseAccessibility _setPasscodeLockViewState:animated:]_block_invoke
+0x189dac340  __TEXT,__text  +[SBUIPasscodeLockViewSimpleFixedDigitKeypadAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dac34c  __TEXT,__text  +[SBUIPasscodeLockViewSimpleFixedDigitKeypadAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dac358  __TEXT,__text  -[SBUIPasscodeLockViewSimpleFixedDigitKeypadAccessibility accessibilityViewIsModal]
+0x189dac37c  __TEXT,__text  +[SBUIPasscodeLockViewWithKeyboardAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dac388  __TEXT,__text  +[SBUIPasscodeLockViewWithKeyboardAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dac394  __TEXT,__text  +[SBUIPasscodeLockViewWithKeyboardAccessibility _accessibilityPerformValidations:]
+0x189dac3e8  __TEXT,__text  -[SBUIPasscodeLockViewWithKeyboardAccessibility updateStatusText:subtitle:animated:]
+0x189dac524  __TEXT,__text  +[SBUIPasscodePillButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dac530  __TEXT,__text  +[SBUIPasscodePillButtonAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dac53c  __TEXT,__text  +[SBUIPasscodePillButtonAccessibility _accessibilityPerformValidations:]
+0x189dac57c  __TEXT,__text  -[SBUIPasscodePillButtonAccessibility isAccessibilityElement]
+0x189dac584  __TEXT,__text  -[SBUIPasscodePillButtonAccessibility accessibilityTraits]
+0x189dac594  __TEXT,__text  -[SBUIPasscodePillButtonAccessibility accessibilityLabel]
+0x189dac5a0  __TEXT,__text  +[SBUIPasscodeTextFieldAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dac5ac  __TEXT,__text  +[SBUIPasscodeTextFieldAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dac5b8  __TEXT,__text  +[SBUIPasscodeTextFieldAccessibility _accessibilityPerformValidations:]
+0x189dac64c  __TEXT,__text  -[SBUIPasscodeTextFieldAccessibility isAccessibilityElement]
+0x189dac654  __TEXT,__text  -[SBUIPasscodeTextFieldAccessibility accessibilityLabel]
+0x189dac660  __TEXT,__text  -[SBUIPasscodeTextFieldAccessibility accessibilityTraits]
+0x189dac6a8  __TEXT,__text  -[SBUIPasscodeTextFieldAccessibility insertText:]
+0x189dac708  __TEXT,__text  -[SBUIPasscodeTextFieldAccessibility deleteBackward]
+0x189dac75c  __TEXT,__text  -[SBUIPasscodeTextFieldAccessibility _accessibilitySupportsHandwriting]
+0x189dac764  __TEXT,__text  +[SBUIProudLockIconViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dac770  __TEXT,__text  +[SBUIProudLockIconViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dac77c  __TEXT,__text  +[SBUIProudLockIconViewAccessibility _accessibilityPerformValidations:]
+0x189dac8b4  __TEXT,__text  -[SBUIProudLockIconViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x189daca48  __TEXT,__text  ___80-[SBUIProudLockIconViewAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke
+0x189daca80  __TEXT,__text  ___80-[SBUIProudLockIconViewAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke_2
+0x189dacac0  __TEXT,__text  -[SBUIProudLockIconViewAccessibility _accessibilityMediaAnalysisOptions]
+0x189dacac8  __TEXT,__text  -[SBUIProudLockIconViewAccessibility lockViewIsAccessibilityElement]
+0x189dacb24  __TEXT,__text  -[SBUIProudLockIconViewAccessibility accessibilityRespondsToUserInteraction]
+0x189dacb2c  __TEXT,__text  -[SBUIProudLockIconViewAccessibility lockViewAccessibilityLabel]
+0x189dacc40  __TEXT,__text  -[SBUIProudLockIconViewAccessibility _accessibilityIsInSleepState]
+0x189dacde0  __TEXT,__text  -[SBUIProudLockIconViewAccessibility _accessibilityIsBuddyRunning]
+0x189dace24  __TEXT,__text  -[SBUIProudLockIconViewAccessibility initWithFrame:]
+0x189dace70  __TEXT,__text  -[SBUIProudLockIconViewAccessibility setState:animated:updateText:options:completion:]
+0x189dacf7c  __TEXT,__text  ___86-[SBUIProudLockIconViewAccessibility setState:animated:updateText:options:completion:]_block_invoke
+0x189dad014  __TEXT,__text  +[SBUIRemoteAlertServiceViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dad020  __TEXT,__text  +[SBUIRemoteAlertServiceViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dad02c  __TEXT,__text  +[SBUIRemoteAlertServiceViewControllerAccessibility _accessibilityPerformValidations:]
+0x189dad080  __TEXT,__text  -[SBUIRemoteAlertServiceViewControllerAccessibility prepareForActivationWithContext:completion:]
+0x189dad0cc  __TEXT,__text  +[SBUIRingViewLabelButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dad0d8  __TEXT,__text  +[SBUIRingViewLabelButtonAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dad0e4  __TEXT,__text  +[SBUIRingViewLabelButtonAccessibility _accessibilityPerformValidations:]
+0x189dad124  __TEXT,__text  -[SBUIRingViewLabelButtonAccessibility isAccessibilityElement]
+0x189dad12c  __TEXT,__text  -[SBUIRingViewLabelButtonAccessibility accessibilityLabel]
+0x189dad174  __TEXT,__text  -[SBUIRingViewLabelButtonAccessibility accessibilityTraits]
+0x189dad184  __TEXT,__text  +[SBUISimpleFixedDigitPasscodeEntryFieldAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dad190  __TEXT,__text  +[SBUISimpleFixedDigitPasscodeEntryFieldAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dad19c  __TEXT,__text  +[SBUISimpleFixedDigitPasscodeEntryFieldAccessibility _accessibilityPerformValidations:]
+0x189dad2d4  __TEXT,__text  -[SBUISimpleFixedDigitPasscodeEntryFieldAccessibility isAccessibilityElement]
+0x189dad348  __TEXT,__text  -[SBUISimpleFixedDigitPasscodeEntryFieldAccessibility accessibilityLabel]
+0x189dad390  __TEXT,__text  -[SBUISimpleFixedDigitPasscodeEntryFieldAccessibility accessibilityValue]
+0x189dad428  __TEXT,__text  -[SBUISimpleFixedDigitPasscodeEntryFieldAccessibility accessibilityTraits]
+0x189dad468  __TEXT,__text  -[SBUISimpleFixedDigitPasscodeEntryFieldAccessibility reset]
+0x189dad4d8  __TEXT,__text  -[SBUISimpleFixedDigitPasscodeEntryFieldAccessibility _appendString:]
+0x189dad548  __TEXT,__text  -[SBUISimpleFixedDigitPasscodeEntryFieldAccessibility _deleteLastCharacter]
+0x189dad5ec  __TEXT,__text  -[SBUISimpleFixedDigitPasscodeEntryFieldAccessibility _resetForFailedPasscode:]
+0x189dad65c  __TEXT,__text  -[SBUISimpleFixedDigitPasscodeEntryFieldAccessibility _autofillForBiometricAuthenticationWithCompletion:]
+0x189dad6cc  __TEXT,__text  -[SBUISimpleFixedDigitPasscodeEntryFieldAccessibility _axNumberOfEnteredDigits]
+0x189dad77c  __TEXT,__text  -[SBUISimpleFixedDigitPasscodeEntryFieldAccessibility _axBulletStringForEnteredDigits]
+0x189dad804  __TEXT,__text  -[SBUISimpleFixedDigitPasscodeEntryFieldAccessibility _accessibilitySupportsTextInsertionAndDeletion]
+0x189dad80c  __TEXT,__text  -[SBUISimpleFixedDigitPasscodeEntryFieldAccessibility _accessibilityHandwritingAttributeAcceptsContractedBraille]
+0x189dad814  __TEXT,__text  +[SBUISpotlightBarNavigationControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dad820  __TEXT,__text  +[SBUISpotlightBarNavigationControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dad82c  __TEXT,__text  +[SBUISpotlightBarNavigationControllerAccessibility _accessibilityPerformValidations:]
+0x189dad890  __TEXT,__text  -[SBUISpotlightBarNavigationControllerAccessibility _accessibilityNavigationControllerShouldSendScreenChange]
+0x189dad954  __TEXT,__text  +[SBUIVibrantButtonAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dad960  __TEXT,__text  +[SBUIVibrantButtonAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dad96c  __TEXT,__text  +[SBUIVibrantButtonAccessibility _accessibilityPerformValidations:]
+0x189dad9ac  __TEXT,__text  -[SBUIVibrantButtonAccessibility isAccessibilityElement]
+0x189dad9b4  __TEXT,__text  -[SBUIVibrantButtonAccessibility accessibilityLabel]
+0x189dada10  __TEXT,__text  -[SBUIVibrantButtonAccessibility accessibilityTraits]
+0x189dada20  __TEXT,__text  +[SBUIPasscodeLockViewWithKeypadAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x189dada2c  __TEXT,__text  +[SBUIPasscodeLockViewWithKeypadAccessibility(SafeCategory) safeCategoryBaseClass]
+0x189dada38  __TEXT,__text  +[SBUIPasscodeLockViewWithKeypadAccessibility _accessibilityPerformValidations:]
+```
+

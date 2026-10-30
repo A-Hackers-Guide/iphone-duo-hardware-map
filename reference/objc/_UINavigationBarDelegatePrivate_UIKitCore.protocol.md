@@ -1,0 +1,75 @@
+# `_UINavigationBarDelegatePrivate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `UINavigationBarDelegate`
+- 0 instance variables, 0 properties, 65 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[_UINavigationBarDelegatePrivate _navigationBarTransitionVariant];
+-[_UINavigationBarDelegatePrivate _transitionCoordinator];
+-[_UINavigationBarDelegatePrivate _shouldCrossFadeNavigationBar];
+-[_UINavigationBarDelegatePrivate _navigationBarTransitionOverlay];
+-[_UINavigationBarDelegatePrivate _layoutMarginsforNavigationBar:];
+-[_UINavigationBarDelegatePrivate _isCurrentTransitionPreemptable];
+-[_UINavigationBarDelegatePrivate _allowLargeTitleDonationToViewControllerContentForNavigationBar:];
+-[_UINavigationBarDelegatePrivate _customNavigationTransitionDuration];
+-[_UINavigationBarDelegatePrivate _effectiveDelegateForNavigationItem:];
+-[_UINavigationBarDelegatePrivate _effectiveSearchControllerForScopeBarGivenTopNavigationItem:];
+-[_UINavigationBarDelegatePrivate _effectiveSearchControllerForSearchBarGivenTopNavigationItem:];
+-[_UINavigationBarDelegatePrivate _externalOverflowItemForNavigationBar:];
+-[_UINavigationBarDelegatePrivate _hasInterruptibleNavigationTransition];
+-[_UINavigationBarDelegatePrivate _incomingNavigationBarFrame];
+-[_UINavigationBarDelegatePrivate _navigationBar:getContentOffsetOfObservedScrollViewIfApplicable:velocity:];
+-[_UINavigationBarDelegatePrivate _navigationBar:itemBackButtonUpdated:];
+-[_UINavigationBarDelegatePrivate _navigationBar:itemEnabledAutoScrollTransition:];
+-[_UINavigationBarDelegatePrivate _navigationBar:preferredHeightForTransitionToHeightRange:];
+-[_UINavigationBarDelegatePrivate _navigationBar:requestPopToItem:];
+-[_UINavigationBarDelegatePrivate _navigationBar:topItemUpdatedBarCompressionBehavior:];
+-[_UINavigationBarDelegatePrivate _navigationBar:topItemUpdatedContentLayout:];
+-[_UINavigationBarDelegatePrivate _navigationBar:topItemUpdatedLargeTitleDisplayMode:];
+-[_UINavigationBarDelegatePrivate _navigationBar:topItemUpdatedNavigationBarSafeAreaAdjustment:];
+-[_UINavigationBarDelegatePrivate _navigationBar:topItemUpdatedSearchBarPlacementAllowsExternalIntegration:];
+-[_UINavigationBarDelegatePrivate _navigationBar:topItemUpdatedSearchBarPlacementAllowsToolbarIntegration:];
+-[_UINavigationBarDelegatePrivate _navigationBar:topItemUpdatedSearchController:];
+-[_UINavigationBarDelegatePrivate _navigationBarAdditionalActionsForBackButtonMenu:];
+-[_UINavigationBarDelegatePrivate _navigationBarAllowsInlineSearch:];
+-[_UINavigationBarDelegatePrivate _navigationBarChangedSize:];
+-[_UINavigationBarDelegatePrivate _navigationBarDidChangeStyle:];
+-[_UINavigationBarDelegatePrivate _navigationBarDidEndAnimation:];
+-[_UINavigationBarDelegatePrivate _navigationBarDidUpdateExternalRepresentation:];
+-[_UINavigationBarDelegatePrivate _navigationBarDidUpdateMinimizationTopSafeAreaOffset:];
+-[_UINavigationBarDelegatePrivate _navigationBarDidUpdateStack:];
+-[_UINavigationBarDelegatePrivate _navigationBarDidUpdateUserInterfaceStyle];
+-[_UINavigationBarDelegatePrivate _navigationBarDidUpdateVisibility:];
+-[_UINavigationBarDelegatePrivate _navigationBarLayoutIsInInteractiveScroll];
+-[_UINavigationBarDelegatePrivate _navigationBarPrepareToAnimateTransition:];
+-[_UINavigationBarDelegatePrivate _navigationBarSearchAllowsToolbarIntegration:];
+-[_UINavigationBarDelegatePrivate _navigationBarShouldGenerateExternalRepresentation:];
+-[_UINavigationBarDelegatePrivate _navigationBarShouldShowSidebarToggleInNSToolbar:];
+-[_UINavigationBarDelegatePrivate _navigationBarShouldUpdateProgress];
+-[_UINavigationBarDelegatePrivate _navigationBarToUseForMarginsInNavigationBar:];
+-[_UINavigationBarDelegatePrivate _navigationBarTopItemIsNestedNavigationController:];
+-[_UINavigationBarDelegatePrivate _navigationBarWillBeginCoordinatedTransitionAnimations:];
+-[_UINavigationBarDelegatePrivate _navigationBarWillChangeHeightForManualShowOrHideOfSearchScopeBar:];
+-[_UINavigationBarDelegatePrivate _navigationBarWillRunAutomaticDeferredShowsScopeBar:];
+-[_UINavigationBarDelegatePrivate _navigationBarWindowForInterfaceOrientation:];
+-[_UINavigationBarDelegatePrivate _navigationItemDidUpdateSearchController:oldSearchController:];
+-[_UINavigationBarDelegatePrivate _navigationItemDidUpdateToolbarAvoidsKeyboard:];
+-[_UINavigationBarDelegatePrivate _navigationItemShouldDeferSearchPresentationOrDismissalForScrollViewAnimation:];
+-[_UINavigationBarDelegatePrivate _popNavigationBar:item:];
+-[_UINavigationBarDelegatePrivate _repositionNavigationBarForTransition:];
+-[_UINavigationBarDelegatePrivate _scrollPocketCollectorInteractionForNavigationBar:];
+-[_UINavigationBarDelegatePrivate _shouldCrossFadeNavigationBarBackgroundVisibility];
+-[_UINavigationBarDelegatePrivate _shouldDisplaySearchBarInlineForEffectiveSearchControllerGivenTopNavigationItem:traitCollection:];
+-[_UINavigationBarDelegatePrivate _updatePaletteConstraints];
+-[_UINavigationBarDelegatePrivate _updatePalettesWithBlock:];
+-[_UINavigationBarDelegatePrivate _verticalBarAvoidanceInsetsForNavigationBar:];
+-[_UINavigationBarDelegatePrivate _willPerformCustomNavigationTransitionForPop];
+-[_UINavigationBarDelegatePrivate _willPerformCustomNavigationTransitionForPush];
+-[_UINavigationBarDelegatePrivate enableBackButtonDuringTransition];
+-[_UINavigationBarDelegatePrivate isNavigationBarHidden];
+-[_UINavigationBarDelegatePrivate navigationBarDidChangeOpacity:];
+-[_UINavigationBarDelegatePrivate navigationBarDidResizeForPrompt:];
+```

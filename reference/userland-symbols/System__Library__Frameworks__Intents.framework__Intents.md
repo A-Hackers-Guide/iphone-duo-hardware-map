@@ -1,0 +1,4018 @@
+# Symbols: `/System/Library/Frameworks/Intents.framework/Intents`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__Frameworks__Intents.framework__Intents.md). **[DSC]**
+
+5,487 public symbols, 28,014 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x18d0e77dc  __TEXT,__text  _CNContactRelationForPBContactHandle
+0x18d0e73c0  __TEXT,__text  _CNLabeledValueForPBContactHandle
+0x18d0f0304  __TEXT,__text  _INAccountTypeGetBackingType
+0x18d0f0318  __TEXT,__text  _INAccountTypeGetFacadeType
+0x18d0f0448  __TEXT,__text  _INAccountTypeGetLocalizedName
+0x18d0f0334  __TEXT,__text  _INAccountTypeGetName
+0x18d0f02f4  __TEXT,__text  _INAccountTypeHasBackingType
+0x18d0f035c  __TEXT,__text  _INAccountTypeWithString
+0x18cfda128  __TEXT,__text  _INActivateCarSignalIntentResponseCodeGetName
+0x18d36cfb4  __TEXT,__text  _INAddCallParticipantIntentResponseCodeGetName
+0x18d264444  __TEXT,__text  _INAddMediaIntentResponseCodeGetName
+0x18d00fc2c  __TEXT,__text  _INAddTasksIntentResponseCodeGetName
+0x18cfedc6c  __TEXT,__text  _INAlarmDomainGetIntentDescriptionWithDataClass
+0x18cfedc04  __TEXT,__text  _INAlarmDomainGetIntentDescriptionWithFacadeClass
+0x18cfea848  __TEXT,__text  _INAlarmDomainGetIntentDescriptionWithName
+0x18cfeb400  __TEXT,__text  _INAlarmDomainGetIntentDescriptionWithType
+0x18cfedd3c  __TEXT,__text  _INAlarmDomainGetIntentResponseDescriptionWithDataClass
+0x18cfedcd4  __TEXT,__text  _INAlarmDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfec1d8  __TEXT,__text  _INAlarmDomainGetIntentResponseDescriptionWithName
+0x18cfece88  __TEXT,__text  _INAlarmDomainGetIntentResponseDescriptionWithType
+0x18d330304  __TEXT,__text  _INAlarmPeriodGetBackingType
+0x18d330314  __TEXT,__text  _INAlarmPeriodGetFacadeType
+0x18d330460  __TEXT,__text  _INAlarmPeriodGetLocalizedName
+0x18d330330  __TEXT,__text  _INAlarmPeriodGetName
+0x18d3302f8  __TEXT,__text  _INAlarmPeriodHasBackingType
+0x18d330358  __TEXT,__text  _INAlarmPeriodWithString
+0x18d3397f4  __TEXT,__text  _INAlarmReferenceTypeGetBackingType
+0x18d339808  __TEXT,__text  _INAlarmReferenceTypeGetFacadeType
+0x18d3398e0  __TEXT,__text  _INAlarmReferenceTypeGetLocalizedName
+0x18d339820  __TEXT,__text  _INAlarmReferenceTypeGetName
+0x18d3397e4  __TEXT,__text  _INAlarmReferenceTypeHasBackingType
+0x18d339848  __TEXT,__text  _INAlarmReferenceTypeWithString
+0x18d34142c  __TEXT,__text  _INAlarmRepeatScheduleOptionsAddBackingType
+0x18d3413a4  __TEXT,__text  _INAlarmRepeatScheduleOptionsContainsBackingType
+0x18d341268  __TEXT,__text  _INAlarmRepeatScheduleOptionsEnumerateBackingTypes
+0x18d34184c  __TEXT,__text  _INAlarmRepeatScheduleOptionsGetLocalizedNames
+0x18d34153c  __TEXT,__text  _INAlarmRepeatScheduleOptionsGetNames
+0x18d3414b4  __TEXT,__text  _INAlarmRepeatScheduleOptionsRemoveBackingType
+0x18d341654  __TEXT,__text  _INAlarmRepeatScheduleOptionsWithNames
+0x18d342b20  __TEXT,__text  _INAlarmSearchStatusGetBackingType
+0x18d342b34  __TEXT,__text  _INAlarmSearchStatusGetFacadeType
+0x18d342c10  __TEXT,__text  _INAlarmSearchStatusGetLocalizedName
+0x18d342b50  __TEXT,__text  _INAlarmSearchStatusGetName
+0x18d342b10  __TEXT,__text  _INAlarmSearchStatusHasBackingType
+0x18d342b78  __TEXT,__text  _INAlarmSearchStatusWithString
+0x18d3445cc  __TEXT,__text  _INAlarmSearchTypeGetBackingType
+0x18d3445e0  __TEXT,__text  _INAlarmSearchTypeGetFacadeType
+0x18d3446d4  __TEXT,__text  _INAlarmSearchTypeGetLocalizedName
+0x18d3445f8  __TEXT,__text  _INAlarmSearchTypeGetName
+0x18d3445bc  __TEXT,__text  _INAlarmSearchTypeHasBackingType
+0x18d344620  __TEXT,__text  _INAlarmSearchTypeWithString
+0x18d0f922c  __TEXT,__text  _INAmountTypeGetBackingType
+0x18d0f9240  __TEXT,__text  _INAmountTypeGetFacadeType
+0x18d0f9354  __TEXT,__text  _INAmountTypeGetLocalizedName
+0x18d0f925c  __TEXT,__text  _INAmountTypeGetName
+0x18d0f921c  __TEXT,__text  _INAmountTypeHasBackingType
+0x18d0f9284  __TEXT,__text  _INAmountTypeWithString
+0x18d32b88c  __TEXT,__text  _INAnnouncementSoundTypeGetBackingType
+0x18d32b89c  __TEXT,__text  _INAnnouncementSoundTypeGetFacadeType
+0x18d32b8e8  __TEXT,__text  _INAnnouncementSoundTypeGetLocalizedName
+0x18d32b8a8  __TEXT,__text  _INAnnouncementSoundTypeGetName
+0x18d32b880  __TEXT,__text  _INAnnouncementSoundTypeHasBackingType
+0x18d32b8c4  __TEXT,__text  _INAnnouncementSoundTypeWithString
+0x1e097bea0  __DATA_CONST,__const  _INAnswerCallIntentIdentifier
+0x18d2764c0  __TEXT,__text  _INAnswerCallIntentResponseCodeGetName
+0x18d1874bc  __TEXT,__text  _INAppCanDonateIntent
+0x18d187520  __TEXT,__text  _INAppHasExtensionForIntent
+0x18d187680  __TEXT,__text  _INAppIntentVocabularyInBundleProxy
+0x18d188384  __TEXT,__text  _INAppProxyForAppOrContainedPluginWithBundleIdentifier
+0x18d1785e8  __TEXT,__text  _INAppResolverLogInitIfNeeded
+0x1e097be98  __DATA_CONST,__const  _INAppResolverOptionsIncludeUserActivityTypesKey
+0x1e097be90  __DATA_CONST,__const  _INAppResolverOptionsSkipSupportedIntentsCheckKey
+0x18d00d034  __TEXT,__text  _INAppendToNoteIntentResponseCodeGetName
+0x18d01f8bc  __TEXT,__text  _INAudioCallTTYTypeGetBackingType
+0x18d01f8d0  __TEXT,__text  _INAudioCallTTYTypeGetFacadeType
+0x18d01f98c  __TEXT,__text  _INAudioCallTTYTypeGetLocalizedName
+0x18d01f8e8  __TEXT,__text  _INAudioCallTTYTypeGetName
+0x18d01f8ac  __TEXT,__text  _INAudioCallTTYTypeHasBackingType
+0x18d01f910  __TEXT,__text  _INAudioCallTTYTypeWithString
+0x18d0919a0  __TEXT,__text  _INBalanceTypeGetBackingType
+0x18d0919b4  __TEXT,__text  _INBalanceTypeGetFacadeType
+0x18d091a74  __TEXT,__text  _INBalanceTypeGetLocalizedName
+0x18d0919d0  __TEXT,__text  _INBalanceTypeGetName
+0x18d091990  __TEXT,__text  _INBalanceTypeHasBackingType
+0x18d0919f8  __TEXT,__text  _INBalanceTypeWithString
+0x18d0f2098  __TEXT,__text  _INBillTypeGetBackingType
+0x18d0f20ac  __TEXT,__text  _INBillTypeGetFacadeType
+0x18d0f2380  __TEXT,__text  _INBillTypeGetLocalizedName
+0x18d0f20c8  __TEXT,__text  _INBillTypeGetName
+0x18d0f2088  __TEXT,__text  _INBillTypeHasBackingType
+0x18d0f20f0  __TEXT,__text  _INBillTypeWithString
+0x18d302d6c  __TEXT,__text  _INBinarySettingValueGetBackingType
+0x18d302d80  __TEXT,__text  _INBinarySettingValueGetFacadeType
+0x18d302e40  __TEXT,__text  _INBinarySettingValueGetLocalizedName
+0x18d302d9c  __TEXT,__text  _INBinarySettingValueGetName
+0x18d302d5c  __TEXT,__text  _INBinarySettingValueHasBackingType
+0x18d302dc4  __TEXT,__text  _INBinarySettingValueWithString
+0x18d117e6c  __TEXT,__text  _INBloodValueTypeGetBackingType
+0x18d117e7c  __TEXT,__text  _INBloodValueTypeGetFacadeType
+0x18d117fc8  __TEXT,__text  _INBloodValueTypeGetLocalizedName
+0x18d117e98  __TEXT,__text  _INBloodValueTypeGetName
+0x18d117e60  __TEXT,__text  _INBloodValueTypeHasBackingType
+0x18d117ec0  __TEXT,__text  _INBloodValueTypeWithString
+0x18d312c24  __TEXT,__text  _INBoundedSettingValueGetBackingType
+0x18d312c38  __TEXT,__text  _INBoundedSettingValueGetFacadeType
+0x18d312cf8  __TEXT,__text  _INBoundedSettingValueGetLocalizedName
+0x18d312c54  __TEXT,__text  _INBoundedSettingValueGetName
+0x18d312c14  __TEXT,__text  _INBoundedSettingValueHasBackingType
+0x18d312c7c  __TEXT,__text  _INBoundedSettingValueWithString
+0x18cf33c8c  __TEXT,__text  _INBundleProxyCanDonateIntent
+0x18d18acb4  __TEXT,__text  _INCExtensionPlugInBundleManagerPath
+0x18d05f358  __TEXT,__text  _INCSLocalizedString
+0x18cfc63a8  __TEXT,__text  _INCacheableGetSerializationQueue
+0x18cfede0c  __TEXT,__text  _INCalendarEventDomainGetIntentDescriptionWithDataClass
+0x18cfedda4  __TEXT,__text  _INCalendarEventDomainGetIntentDescriptionWithFacadeClass
+0x18cfea8c4  __TEXT,__text  _INCalendarEventDomainGetIntentDescriptionWithName
+0x18cfeb47c  __TEXT,__text  _INCalendarEventDomainGetIntentDescriptionWithType
+0x18cfededc  __TEXT,__text  _INCalendarEventDomainGetIntentResponseDescriptionWithDataClass
+0x18cfede74  __TEXT,__text  _INCalendarEventDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfec254  __TEXT,__text  _INCalendarEventDomainGetIntentResponseDescriptionWithName
+0x18cfecf04  __TEXT,__text  _INCalendarEventDomainGetIntentResponseDescriptionWithType
+0x18d170d64  __TEXT,__text  _INCallAudioRouteGetBackingType
+0x18d170d90  __TEXT,__text  _INCallAudioRouteGetFacadeType
+0x18d170e70  __TEXT,__text  _INCallAudioRouteGetLocalizedName
+0x18d170db8  __TEXT,__text  _INCallAudioRouteGetName
+0x18d170d40  __TEXT,__text  _INCallAudioRouteHasBackingType
+0x18d170df4  __TEXT,__text  _INCallAudioRouteWithString
+0x18d03e610  __TEXT,__text  _INCallCapabilityGetBackingType
+0x18d03e62c  __TEXT,__text  _INCallCapabilityGetFacadeType
+0x18d03e6d8  __TEXT,__text  _INCallCapabilityGetLocalizedName
+0x18d03e64c  __TEXT,__text  _INCallCapabilityGetName
+0x18d03e600  __TEXT,__text  _INCallCapabilityHasBackingType
+0x18d17aec0  __TEXT,__text  _INCallCapabilityOptionsAddBackingType
+0x18d17ae9c  __TEXT,__text  _INCallCapabilityOptionsContainsBackingType
+0x18d17ae28  __TEXT,__text  _INCallCapabilityOptionsEnumerateBackingTypes
+0x18d17b0d0  __TEXT,__text  _INCallCapabilityOptionsGetLocalizedNames
+0x18d17af10  __TEXT,__text  _INCallCapabilityOptionsGetNames
+0x18d17aee8  __TEXT,__text  _INCallCapabilityOptionsRemoveBackingType
+0x18d17af90  __TEXT,__text  _INCallCapabilityOptionsWithNames
+0x18d03e678  __TEXT,__text  _INCallCapabilityWithString
+0x18d0b39a0  __TEXT,__text  _INCallDestinationTypeGetBackingType
+0x18d0b39b4  __TEXT,__text  _INCallDestinationTypeGetFacadeType
+0x18d0b3aac  __TEXT,__text  _INCallDestinationTypeGetLocalizedName
+0x18d0b39d0  __TEXT,__text  _INCallDestinationTypeGetName
+0x18d0b3990  __TEXT,__text  _INCallDestinationTypeHasBackingType
+0x18d0b39f8  __TEXT,__text  _INCallDestinationTypeWithString
+0x18d372378  __TEXT,__text  _INCallInviteTypeGetBackingType
+0x18d37238c  __TEXT,__text  _INCallInviteTypeGetFacadeType
+0x18d37244c  __TEXT,__text  _INCallInviteTypeGetLocalizedName
+0x18d3723a8  __TEXT,__text  _INCallInviteTypeGetName
+0x18d372368  __TEXT,__text  _INCallInviteTypeHasBackingType
+0x18d3723d0  __TEXT,__text  _INCallInviteTypeWithString
+0x18d0df4b4  __TEXT,__text  _INCallRecordTypeGetBackingType
+0x18d0df4d8  __TEXT,__text  _INCallRecordTypeGetFacadeType
+0x18d0df630  __TEXT,__text  _INCallRecordTypeGetLocalizedName
+0x18d0df500  __TEXT,__text  _INCallRecordTypeGetName
+0x18d0df4a4  __TEXT,__text  _INCallRecordTypeHasBackingType
+0x18d0fd5c8  __TEXT,__text  _INCallRecordTypeOptionsAddBackingType
+0x18d0fd540  __TEXT,__text  _INCallRecordTypeOptionsContainsBackingType
+0x18d0fd404  __TEXT,__text  _INCallRecordTypeOptionsEnumerateBackingTypes
+0x18d0fd9e8  __TEXT,__text  _INCallRecordTypeOptionsGetLocalizedNames
+0x18d0fd6d8  __TEXT,__text  _INCallRecordTypeOptionsGetNames
+0x18d0fd650  __TEXT,__text  _INCallRecordTypeOptionsRemoveBackingType
+0x18d0fd7f0  __TEXT,__text  _INCallRecordTypeOptionsWithNames
+0x18d0df528  __TEXT,__text  _INCallRecordTypeWithString
+0x18cfedfac  __TEXT,__text  _INCallsDomainGetIntentDescriptionWithDataClass
+0x18cfedf44  __TEXT,__text  _INCallsDomainGetIntentDescriptionWithFacadeClass
+0x18cfb3038  __TEXT,__text  _INCallsDomainGetIntentDescriptionWithName
+0x18cfb74a4  __TEXT,__text  _INCallsDomainGetIntentDescriptionWithType
+0x18cfee07c  __TEXT,__text  _INCallsDomainGetIntentResponseDescriptionWithDataClass
+0x18cfee014  __TEXT,__text  _INCallsDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfec2d0  __TEXT,__text  _INCallsDomainGetIntentResponseDescriptionWithName
+0x18cfecf80  __TEXT,__text  _INCallsDomainGetIntentResponseDescriptionWithType
+0x18cfe4514  __TEXT,__text  _INCancelRideIntentResponseCodeGetName
+0x1e097be88  __DATA_CONST,__const  _INCancelWorkoutIntentIdentifier
+0x18d1e8708  __TEXT,__text  _INCancelWorkoutIntentResponseCodeGetName
+0x18d1bb494  __TEXT,__text  _INCarAirCirculationModeGetBackingType
+0x18d1bb4b0  __TEXT,__text  _INCarAirCirculationModeGetFacadeType
+0x18d1bb55c  __TEXT,__text  _INCarAirCirculationModeGetLocalizedName
+0x18d1bb4d0  __TEXT,__text  _INCarAirCirculationModeGetName
+0x18d1bb484  __TEXT,__text  _INCarAirCirculationModeHasBackingType
+0x18d1bb4fc  __TEXT,__text  _INCarAirCirculationModeWithString
+0x18d01cd78  __TEXT,__text  _INCarAudioSourceGetBackingType
+0x18d01cd8c  __TEXT,__text  _INCarAudioSourceGetFacadeType
+0x18d01cef4  __TEXT,__text  _INCarAudioSourceGetLocalizedName
+0x18d01cda8  __TEXT,__text  _INCarAudioSourceGetName
+0x18d01cd68  __TEXT,__text  _INCarAudioSourceHasBackingType
+0x18d01cdd0  __TEXT,__text  _INCarAudioSourceWithString
+0x1e097be80  __DATA_CONST,__const  _INCarChargingConnectorTypeCCS1
+0x1e097be78  __DATA_CONST,__const  _INCarChargingConnectorTypeCCS2
+0x1e097be70  __DATA_CONST,__const  _INCarChargingConnectorTypeCHAdeMO
+0x1e097be68  __DATA_CONST,__const  _INCarChargingConnectorTypeGBTAC
+0x1e097be60  __DATA_CONST,__const  _INCarChargingConnectorTypeGBTDC
+0x18d34d4f4  __TEXT,__text  _INCarChargingConnectorTypeGetBackingType
+0x18d34d4cc  __TEXT,__text  _INCarChargingConnectorTypeGetFacadeObject
+0x1e097be58  __DATA_CONST,__const  _INCarChargingConnectorTypeJ1772
+0x1e097be50  __DATA_CONST,__const  _INCarChargingConnectorTypeMennekes
+0x1e097be48  __DATA_CONST,__const  _INCarChargingConnectorTypeNACSAC
+0x1e097be40  __DATA_CONST,__const  _INCarChargingConnectorTypeNACSDC
+0x1e097be38  __DATA_CONST,__const  _INCarChargingConnectorTypeTesla
+0x18d34d648  __TEXT,__text  _INCarChargingConnectorTypeValueAsString
+0x18d162c1c  __TEXT,__text  _INCarDefrosterGetBackingType
+0x18d162c30  __TEXT,__text  _INCarDefrosterGetFacadeType
+0x18d162cf0  __TEXT,__text  _INCarDefrosterGetLocalizedName
+0x18d162c4c  __TEXT,__text  _INCarDefrosterGetName
+0x18d162c0c  __TEXT,__text  _INCarDefrosterHasBackingType
+0x18d162c74  __TEXT,__text  _INCarDefrosterWithString
+0x18cfee14c  __TEXT,__text  _INCarPlayDomainGetIntentDescriptionWithDataClass
+0x18cfee0e4  __TEXT,__text  _INCarPlayDomainGetIntentDescriptionWithFacadeClass
+0x18cfea940  __TEXT,__text  _INCarPlayDomainGetIntentDescriptionWithName
+0x18cfeb4f8  __TEXT,__text  _INCarPlayDomainGetIntentDescriptionWithType
+0x18cfee21c  __TEXT,__text  _INCarPlayDomainGetIntentResponseDescriptionWithDataClass
+0x18cfee1b4  __TEXT,__text  _INCarPlayDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfec34c  __TEXT,__text  _INCarPlayDomainGetIntentResponseDescriptionWithName
+0x18cfecffc  __TEXT,__text  _INCarPlayDomainGetIntentResponseDescriptionWithType
+0x18d04dcf0  __TEXT,__text  _INCarSeatGetBackingType
+0x18d04dd14  __TEXT,__text  _INCarSeatGetFacadeType
+0x18d04dedc  __TEXT,__text  _INCarSeatGetLocalizedName
+0x18d04dd3c  __TEXT,__text  _INCarSeatGetName
+0x18d04dce0  __TEXT,__text  _INCarSeatHasBackingType
+0x18d04dd64  __TEXT,__text  _INCarSeatWithString
+0x18d1200a4  __TEXT,__text  _INCarSignalOptionsAddBackingType
+0x18d120080  __TEXT,__text  _INCarSignalOptionsContainsBackingType
+0x18d12000c  __TEXT,__text  _INCarSignalOptionsEnumerateBackingTypes
+0x18d1202b4  __TEXT,__text  _INCarSignalOptionsGetLocalizedNames
+0x18d1200f4  __TEXT,__text  _INCarSignalOptionsGetNames
+0x18d1200cc  __TEXT,__text  _INCarSignalOptionsRemoveBackingType
+0x18d120174  __TEXT,__text  _INCarSignalOptionsWithNames
+0x1e097be30  __DATA_CONST,__const  _INCarouselBundleIdentifier
+0x18d217ca4  __TEXT,__text  _INCervicalMucusQualityValueTypeGetBackingType
+0x18d217cb4  __TEXT,__text  _INCervicalMucusQualityValueTypeGetFacadeType
+0x18d217dac  __TEXT,__text  _INCervicalMucusQualityValueTypeGetLocalizedName
+0x18d217cd0  __TEXT,__text  _INCervicalMucusQualityValueTypeGetName
+0x18d217c98  __TEXT,__text  _INCervicalMucusQualityValueTypeHasBackingType
+0x18d217cf8  __TEXT,__text  _INCervicalMucusQualityValueTypeWithString
+0x18d33d5e0  __TEXT,__text  _INChangeAlarmStatusIntentResponseCodeGetName
+0x18d3350c0  __TEXT,__text  _INChangeAlarmStatusOperationGetBackingType
+0x18d3350d4  __TEXT,__text  _INChangeAlarmStatusOperationGetFacadeType
+0x18d335194  __TEXT,__text  _INChangeAlarmStatusOperationGetLocalizedName
+0x18d3350f0  __TEXT,__text  _INChangeAlarmStatusOperationGetName
+0x18d3350b0  __TEXT,__text  _INChangeAlarmStatusOperationHasBackingType
+0x18d335118  __TEXT,__text  _INChangeAlarmStatusOperationWithString
+0x1e097be28  __DATA_CONST,__const  _INCodableAttributeArraySizeClassAccessoryCircular
+0x1e097be20  __DATA_CONST,__const  _INCodableAttributeArraySizeClassAccessoryCorner
+0x1e097be18  __DATA_CONST,__const  _INCodableAttributeArraySizeClassAccessoryInline
+0x1e097be10  __DATA_CONST,__const  _INCodableAttributeArraySizeClassAccessoryRectangular
+0x1e097be08  __DATA_CONST,__const  _INCodableAttributeArraySizeClassExtraLarge
+0x1e097be00  __DATA_CONST,__const  _INCodableAttributeArraySizeClassLarge
+0x1e097bdf8  __DATA_CONST,__const  _INCodableAttributeArraySizeClassMedium
+0x1e097bdf0  __DATA_CONST,__const  _INCodableAttributeArraySizeClassSmall
+0x18d0f3578  __TEXT,__text  _INCodableAttributeClassFromType
+0x18cf38d14  __TEXT,__text  _INCodableAttributeMetadataClassWithMetadataTypeName
+0x18d1c7fbc  __TEXT,__text  _INCodableAttributeMetadataInputTypeAsString
+0x18cf7c6c8  __TEXT,__text  _INCodableAttributeMetadataInputTypeWithString
+0x18cf36500  __TEXT,__text  _INCodableAttributeMetadataTypeNameWithTypeName
+0x18d1adbac  __TEXT,__text  _INCodableDateComponentsAttributeMetadataFormatAsString
+0x18cfaef08  __TEXT,__text  _INCodableDateComponentsAttributeMetadataFormatFromString
+0x18d1adbd8  __TEXT,__text  _INCodableDateComponentsAttributeMetadataStyleAsString
+0x18cfaefc8  __TEXT,__text  _INCodableDateComponentsAttributeMetadataStyleFromString
+0x18d1adb80  __TEXT,__text  _INCodableDateComponentsAttributeMetadataTypeAsString
+0x18cfaee3c  __TEXT,__text  _INCodableDateComponentsAttributeMetadataTypeFromString
+0x18d0415b0  __TEXT,__text  _INCodableDescriptionClassFromType
+0x1e097bde8  __DATA_CONST,__const  _INCodableObjectAttributeTypeNameDouble
+0x1e097bde0  __DATA_CONST,__const  _INCodableObjectAttributeTypeNameLong
+0x18d1acf94  __TEXT,__text  _INCodablePersonAttributeMetadataTypeAsString
+0x18cf3e908  __TEXT,__text  _INCodablePersonAttributeMetadataTypeWithString
+0x18d1a99c4  __TEXT,__text  _INCodablePlacemarkAttributeMetadataTypeAsString
+0x18cf43420  __TEXT,__text  _INCodablePlacemarkAttributeMetadataTypeWithString
+0x18cf372fc  __TEXT,__text  _INCodableScalarAttributeTypeFromString
+0x18d10c55c  __TEXT,__text  _INCodableStringAttributeMetadataCapitalizationAsString
+0x18cf388c8  __TEXT,__text  _INCodableStringAttributeMetadataCapitalizationWithString
+0x18d11a58c  __TEXT,__text  _INCodableTimeIntervalAttributeMetadataUnitAsCalendarUnit
+0x18d11a564  __TEXT,__text  _INCodableTimeIntervalAttributeMetadataUnitAsString
+0x18cfaff8c  __TEXT,__text  _INCodableTimeIntervalAttributeMetadataUnitWithString
+0x1e097bdd8  __DATA_CONST,__const  _INConfigureHomeIntentIdentifier
+0x18d03645c  __TEXT,__text  _INConfigureHomeIntentResponseCodeGetName
+0x18cfee2ec  __TEXT,__text  _INContactDomainGetIntentDescriptionWithDataClass
+0x18cfee284  __TEXT,__text  _INContactDomainGetIntentDescriptionWithFacadeClass
+0x18cfea9bc  __TEXT,__text  _INContactDomainGetIntentDescriptionWithName
+0x18cfeb574  __TEXT,__text  _INContactDomainGetIntentDescriptionWithType
+0x18cfee3bc  __TEXT,__text  _INContactDomainGetIntentResponseDescriptionWithDataClass
+0x18cfee354  __TEXT,__text  _INContactDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfec3c8  __TEXT,__text  _INContactDomainGetIntentResponseDescriptionWithName
+0x18cfed078  __TEXT,__text  _INContactDomainGetIntentResponseDescriptionWithType
+0x18d189028  __TEXT,__text  _INContainingAppBundleIdentifierForBundle
+0x18d187440  __TEXT,__text  _INContainingAppProxyForCurrentProcess
+0x18cf467b0  __TEXT,__text  _INContainingBundleIdentifierForCurrentProcess
+0x18d1873ac  __TEXT,__text  _INContainingBundleURLForCurrentProcess
+0x1e097bdd0  __DATA_CONST,__const  _INControlHomeIntentIdentifier
+0x18d046eb8  __TEXT,__text  _INControlHomeIntentResponseCodeGetName
+0x18d3389a0  __TEXT,__text  _INCreateAlarmIntentResponseCodeGetName
+0x18d33e774  __TEXT,__text  _INCreateAlarmSuccessCodeGetBackingType
+0x18d33e788  __TEXT,__text  _INCreateAlarmSuccessCodeGetFacadeType
+0x18d33e844  __TEXT,__text  _INCreateAlarmSuccessCodeGetLocalizedName
+0x18d33e7a0  __TEXT,__text  _INCreateAlarmSuccessCodeGetName
+0x18d33e764  __TEXT,__text  _INCreateAlarmSuccessCodeHasBackingType
+0x18d33e7c8  __TEXT,__text  _INCreateAlarmSuccessCodeWithString
+0x18d19cc08  __TEXT,__text  _INCreateEventConfirmationReasonGetBackingType
+0x18d19cc1c  __TEXT,__text  _INCreateEventConfirmationReasonGetFacadeType
+0x18d19ccdc  __TEXT,__text  _INCreateEventConfirmationReasonGetLocalizedName
+0x18d19cc38  __TEXT,__text  _INCreateEventConfirmationReasonGetName
+0x18d19cbf8  __TEXT,__text  _INCreateEventConfirmationReasonHasBackingType
+0x18d19cc60  __TEXT,__text  _INCreateEventConfirmationReasonWithString
+0x18d0b405c  __TEXT,__text  _INCreateEventIntentResponseCodeGetName
+0x18d109d14  __TEXT,__text  _INCreateNoteIntentResponseCodeGetName
+0x18d22da14  __TEXT,__text  _INCreateTaskListIntentResponseCodeGetName
+0x18d247304  __TEXT,__text  _INCreateTimerIntentResponseCodeGetName
+0x18d039470  __TEXT,__text  _INCustomIntentTypeName
+0x18d0e7b74  __TEXT,__text  _INDateComponentsForNSDateComponents
+0x18d0e7e4c  __TEXT,__text  _INDateComponentsForNSLabeledDates
+0x18d0de7cc  __TEXT,__text  _INDateSearchTypeGetBackingType
+0x18d0de7e4  __TEXT,__text  _INDateSearchTypeGetFacadeType
+0x18d0de8b8  __TEXT,__text  _INDateSearchTypeGetLocalizedName
+0x18d0de814  __TEXT,__text  _INDateSearchTypeGetName
+0x18d0de7c0  __TEXT,__text  _INDateSearchTypeHasBackingType
+0x18d0de83c  __TEXT,__text  _INDateSearchTypeWithString
+0x18d32068c  __TEXT,__text  _INDayOfWeekOptionsAddBackingType
+0x18d320618  __TEXT,__text  _INDayOfWeekOptionsContainsBackingType
+0x18d3204fc  __TEXT,__text  _INDayOfWeekOptionsEnumerateBackingTypes
+0x18d320a50  __TEXT,__text  _INDayOfWeekOptionsGetLocalizedNames
+0x18d320774  __TEXT,__text  _INDayOfWeekOptionsGetNames
+0x18d320700  __TEXT,__text  _INDayOfWeekOptionsRemoveBackingType
+0x18d320874  __TEXT,__text  _INDayOfWeekOptionsWithNames
+0x18d32ef14  __TEXT,__text  _INDeleteAlarmIntentResponseCodeGetName
+0x18d2aec60  __TEXT,__text  _INDeleteEventConfirmationReasonGetBackingType
+0x18d2aec70  __TEXT,__text  _INDeleteEventConfirmationReasonGetFacadeType
+0x18d2aecbc  __TEXT,__text  _INDeleteEventConfirmationReasonGetLocalizedName
+0x18d2aec7c  __TEXT,__text  _INDeleteEventConfirmationReasonGetName
+0x18d2aec54  __TEXT,__text  _INDeleteEventConfirmationReasonHasBackingType
+0x18d2aec98  __TEXT,__text  _INDeleteEventConfirmationReasonWithString
+0x18d149a78  __TEXT,__text  _INDeleteEventIntentResponseCodeGetName
+0x18d128508  __TEXT,__text  _INDeleteHealthSampleIntentResponseCodeGetName
+0x18d315178  __TEXT,__text  _INDeleteParkingLocationIntentResponseCodeGetName
+0x18d2a677c  __TEXT,__text  _INDeleteTasksIntentResponseCodeGetName
+0x18d2491c0  __TEXT,__text  _INDeleteTimerIntentResponseCodeGetName
+0x18d3128ec  __TEXT,__text  _INDeviceCategoryGetBackingType
+0x18d312900  __TEXT,__text  _INDeviceCategoryGetFacadeType
+0x18d312af4  __TEXT,__text  _INDeviceCategoryGetLocalizedName
+0x18d31291c  __TEXT,__text  _INDeviceCategoryGetName
+0x18d3128dc  __TEXT,__text  _INDeviceCategoryHasBackingType
+0x18d312944  __TEXT,__text  _INDeviceCategoryWithString
+0x18d2d005c  __TEXT,__text  _INDeviceClassGetBackingType
+0x18d2d006c  __TEXT,__text  _INDeviceClassGetFacadeType
+0x18d2d01d4  __TEXT,__text  _INDeviceClassGetLocalizedName
+0x18d2d0088  __TEXT,__text  _INDeviceClassGetName
+0x18d2d0050  __TEXT,__text  _INDeviceClassHasBackingType
+0x18d2d00b0  __TEXT,__text  _INDeviceClassWithString
+0x18d2599b0  __TEXT,__text  _INDeviceIdiomGetBackingType
+0x18d2599c4  __TEXT,__text  _INDeviceIdiomGetFacadeType
+0x18d259af4  __TEXT,__text  _INDeviceIdiomGetLocalizedName
+0x18d2599e0  __TEXT,__text  _INDeviceIdiomGetName
+0x18d2599a0  __TEXT,__text  _INDeviceIdiomHasBackingType
+0x18d259a08  __TEXT,__text  _INDeviceIdiomWithString
+0x18d189f38  __TEXT,__text  _INDictionaryWithContentsOfURLs
+0x18d189de8  __TEXT,__text  _INDictionaryWithObjectsForKeysPassingTest
+0x18d188440  __TEXT,__text  _INDisplayableOrLaunchableBundleIdForBundleIdFromUserActivity
+0x18d0e6880  __TEXT,__text  _INEditDistanceBetweenStrings
+0x18d370db4  __TEXT,__text  _INEditMessageIntentResponseCodeGetName
+0x1e097bdc8  __DATA_CONST,__const  _INEndWorkoutIntentIdentifier
+0x18d044b54  __TEXT,__text  _INEndWorkoutIntentResponseCodeGetName
+0x18d246f38  __TEXT,__text  _INEventAttributeGetBackingType
+0x18d246f4c  __TEXT,__text  _INEventAttributeGetFacadeType
+0x18d24700c  __TEXT,__text  _INEventAttributeGetLocalizedName
+0x18d246f68  __TEXT,__text  _INEventAttributeGetName
+0x18d246f28  __TEXT,__text  _INEventAttributeHasBackingType
+0x18d246f90  __TEXT,__text  _INEventAttributeWithString
+0x18d26817c  __TEXT,__text  _INEventParticipantStatusGetBackingType
+0x18d26818c  __TEXT,__text  _INEventParticipantStatusGetFacadeType
+0x18d2682bc  __TEXT,__text  _INEventParticipantStatusGetLocalizedName
+0x18d2681a8  __TEXT,__text  _INEventParticipantStatusGetName
+0x18d268170  __TEXT,__text  _INEventParticipantStatusHasBackingType
+0x18d2681d0  __TEXT,__text  _INEventParticipantStatusWithString
+0x18d258b20  __TEXT,__text  _INExecutionContextGetBackingType
+0x18d258b34  __TEXT,__text  _INExecutionContextGetFacadeType
+0x18d258cb8  __TEXT,__text  _INExecutionContextGetLocalizedName
+0x18d258b50  __TEXT,__text  _INExecutionContextGetName
+0x18d258b10  __TEXT,__text  _INExecutionContextHasBackingType
+0x18d258b78  __TEXT,__text  _INExecutionContextWithString
+0x1e097bdc0  __DATA_CONST,__const  _INExtensionAttributesIntentsSupportedKey
+0x1e097bdb8  __DATA_CONST,__const  _INExtensionAttributesRestrictedIntentsWhileLockedKey
+0x1e097bdb0  __DATA_CONST,__const  _INExtensionAttributesRestrictedWhileProtectedDataUnavailableKey
+0x1e097bda8  __DATA_CONST,__const  _INExtensionAttributesSupportedIntentsKey
+0x1e097bda0  __DATA_CONST,__const  _INExtensionAttributesSupportedMediaCategoriesKey
+0x1e097bd98  __DATA_CONST,__const  _INExtensionMatchingErrorDomain
+0x18cf56f04  __TEXT,__text  _INExtractAppInfoFromSiriLaunchId
+0x18cf57bb8  __TEXT,__text  _INExtractAppInfoFromSiriLaunchIdWithoutLaunchServices
+0x18cfd6d70  __TEXT,__text  _INExtractKeyImage
+0x18d2a8140  __TEXT,__text  _INFileURLAuditTokenEquals
+0x18d2a803c  __TEXT,__text  _INFileURLGetAssociatedAuditToken
+0x18d2a7f3c  __TEXT,__text  _INFileURLHasAssociatedAuditToken
+0x18d2a80b4  __TEXT,__text  _INFileURLRemoveAssociatedAuditToken
+0x18d2a7fa0  __TEXT,__text  _INFileURLSetAssociatedAuditToken
+0x18d2a819c  __TEXT,__text  _INFileURLSetMarkedForDeletionOnDeallocation
+0x18cfee48c  __TEXT,__text  _INFilesDomainGetIntentDescriptionWithDataClass
+0x18cfee424  __TEXT,__text  _INFilesDomainGetIntentDescriptionWithFacadeClass
+0x18cfeaa38  __TEXT,__text  _INFilesDomainGetIntentDescriptionWithName
+0x18cfeb5f0  __TEXT,__text  _INFilesDomainGetIntentDescriptionWithType
+0x18cfee55c  __TEXT,__text  _INFilesDomainGetIntentResponseDescriptionWithDataClass
+0x18cfee4f4  __TEXT,__text  _INFilesDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfec444  __TEXT,__text  _INFilesDomainGetIntentResponseDescriptionWithName
+0x18cfed0f4  __TEXT,__text  _INFilesDomainGetIntentResponseDescriptionWithType
+0x18d2cd228  __TEXT,__text  _INFindDeviceAndPlaySoundIntentResponseCodeGetName
+0x18cfee62c  __TEXT,__text  _INFindDeviceDomainGetIntentDescriptionWithDataClass
+0x18cfee5c4  __TEXT,__text  _INFindDeviceDomainGetIntentDescriptionWithFacadeClass
+0x18cfeaab4  __TEXT,__text  _INFindDeviceDomainGetIntentDescriptionWithName
+0x18cfeb66c  __TEXT,__text  _INFindDeviceDomainGetIntentDescriptionWithType
+0x18cfee6fc  __TEXT,__text  _INFindDeviceDomainGetIntentResponseDescriptionWithDataClass
+0x18cfee694  __TEXT,__text  _INFindDeviceDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfec4c0  __TEXT,__text  _INFindDeviceDomainGetIntentResponseDescriptionWithName
+0x18cfed170  __TEXT,__text  _INFindDeviceDomainGetIntentResponseDescriptionWithType
+0x18d2cc730  __TEXT,__text  _INFindEventsIntentResponseCodeGetName
+0x18d1886e4  __TEXT,__text  _INFindMatchingAppsForIntent
+0x18cfee7cc  __TEXT,__text  _INFocusStatusDomainGetIntentDescriptionWithDataClass
+0x18cfee764  __TEXT,__text  _INFocusStatusDomainGetIntentDescriptionWithFacadeClass
+0x18cfeab30  __TEXT,__text  _INFocusStatusDomainGetIntentDescriptionWithName
+0x18cfeb6e8  __TEXT,__text  _INFocusStatusDomainGetIntentDescriptionWithType
+0x18cfee89c  __TEXT,__text  _INFocusStatusDomainGetIntentResponseDescriptionWithDataClass
+0x18cfee834  __TEXT,__text  _INFocusStatusDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfec53c  __TEXT,__text  _INFocusStatusDomainGetIntentResponseDescriptionWithName
+0x18cfed1ec  __TEXT,__text  _INFocusStatusDomainGetIntentResponseDescriptionWithType
+0x18cff084c  __TEXT,__text  _INGenericDomainGetIntentDescriptionWithDataClass
+0x18cff07e4  __TEXT,__text  _INGenericDomainGetIntentDescriptionWithFacadeClass
+0x18cfeb36c  __TEXT,__text  _INGenericDomainGetIntentDescriptionWithName
+0x18cfec01c  __TEXT,__text  _INGenericDomainGetIntentDescriptionWithType
+0x18cff091c  __TEXT,__text  _INGenericDomainGetIntentResponseDescriptionWithDataClass
+0x18cff08b4  __TEXT,__text  _INGenericDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfecdf4  __TEXT,__text  _INGenericDomainGetIntentResponseDescriptionWithName
+0x18cfedb20  __TEXT,__text  _INGenericDomainGetIntentResponseDescriptionWithType
+0x18cfee96c  __TEXT,__text  _INGeoDomainGetIntentDescriptionWithDataClass
+0x18cfee904  __TEXT,__text  _INGeoDomainGetIntentDescriptionWithFacadeClass
+0x18cfeabac  __TEXT,__text  _INGeoDomainGetIntentDescriptionWithName
+0x18cfeb764  __TEXT,__text  _INGeoDomainGetIntentDescriptionWithType
+0x18cfeea3c  __TEXT,__text  _INGeoDomainGetIntentResponseDescriptionWithDataClass
+0x18cfee9d4  __TEXT,__text  _INGeoDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfec5b8  __TEXT,__text  _INGeoDomainGetIntentResponseDescriptionWithName
+0x18cfed268  __TEXT,__text  _INGeoDomainGetIntentResponseDescriptionWithType
+0x18d1ad65c  __TEXT,__text  _INGetCarLockStatusIntentResponseCodeGetName
+0x18d1a1bcc  __TEXT,__text  _INGetCarPowerLevelStatusIntentResponseCodeGetName
+0x18d2bbc20  __TEXT,__text  _INGetReservationDetailsIntentResponseCodeGetName
+0x1e097bd90  __DATA_CONST,__const  _INGetRideStatusIntentIdentifier
+0x18d0bcdfc  __TEXT,__text  _INGetRideStatusIntentResponseCodeGetName
+0x18d2fd7c8  __TEXT,__text  _INGetSettingIntentResponseCodeGetName
+0x18d0b4ef0  __TEXT,__text  _INGetVisualCodeIntentResponseCodeGetName
+0x1e097bd88  __DATA_CONST,__const  _INHangUpCallIntentIdentifier
+0x18d27ac50  __TEXT,__text  _INHangUpCallIntentResponseCodeGetName
+0x1eb5e8d50  __DATA,__data  _INHelperServiceName
+0x18cf4e224  __TEXT,__text  _INHelperServingXPCInterface
+0x18d271e88  __TEXT,__text  _INHomeAttributeLimitGetBackingType
+0x18d271ea4  __TEXT,__text  _INHomeAttributeLimitGetFacadeType
+0x18d271f50  __TEXT,__text  _INHomeAttributeLimitGetLocalizedName
+0x18d271ec4  __TEXT,__text  _INHomeAttributeLimitGetName
+0x18d271e78  __TEXT,__text  _INHomeAttributeLimitHasBackingType
+0x18d271ef0  __TEXT,__text  _INHomeAttributeLimitWithString
+0x18d04f544  __TEXT,__text  _INHomeAttributeTypeGetBackingType
+0x18d04f558  __TEXT,__text  _INHomeAttributeTypeGetFacadeType
+0x18d04fcf8  __TEXT,__text  _INHomeAttributeTypeGetLocalizedName
+0x18d04f570  __TEXT,__text  _INHomeAttributeTypeGetName
+0x18d04f534  __TEXT,__text  _INHomeAttributeTypeHasBackingType
+0x18d04f598  __TEXT,__text  _INHomeAttributeTypeWithString
+0x18d271fd4  __TEXT,__text  _INHomeAttributeUnitGetBackingType
+0x18d271fe8  __TEXT,__text  _INHomeAttributeUnitGetFacadeType
+0x18d2720e0  __TEXT,__text  _INHomeAttributeUnitGetLocalizedName
+0x18d272004  __TEXT,__text  _INHomeAttributeUnitGetName
+0x18d271fc4  __TEXT,__text  _INHomeAttributeUnitHasBackingType
+0x18d27202c  __TEXT,__text  _INHomeAttributeUnitWithString
+0x18d2525e8  __TEXT,__text  _INHomeAttributeValueTypeGetBackingType
+0x18d2525fc  __TEXT,__text  _INHomeAttributeValueTypeGetFacadeType
+0x18d25270c  __TEXT,__text  _INHomeAttributeValueTypeGetLocalizedName
+0x18d252614  __TEXT,__text  _INHomeAttributeValueTypeGetName
+0x18d2525d8  __TEXT,__text  _INHomeAttributeValueTypeHasBackingType
+0x18d25263c  __TEXT,__text  _INHomeAttributeValueTypeWithString
+0x18d36060c  __TEXT,__text  _INHomeAutomationEntityTypeGetBackingType
+0x18d36061c  __TEXT,__text  _INHomeAutomationEntityTypeGetFacadeType
+0x18d3606dc  __TEXT,__text  _INHomeAutomationEntityTypeGetLocalizedName
+0x18d360638  __TEXT,__text  _INHomeAutomationEntityTypeGetName
+0x18d360600  __TEXT,__text  _INHomeAutomationEntityTypeHasBackingType
+0x18d360660  __TEXT,__text  _INHomeAutomationEntityTypeWithString
+0x18cfeeb0c  __TEXT,__text  _INHomeCommunicationDomainGetIntentDescriptionWithDataClass
+0x18cfeeaa4  __TEXT,__text  _INHomeCommunicationDomainGetIntentDescriptionWithFacadeClass
+0x18cfeac28  __TEXT,__text  _INHomeCommunicationDomainGetIntentDescriptionWithName
+0x18cfeb7e0  __TEXT,__text  _INHomeCommunicationDomainGetIntentDescriptionWithType
+0x18cfeebdc  __TEXT,__text  _INHomeCommunicationDomainGetIntentResponseDescriptionWithDataClass
+0x18cfeeb74  __TEXT,__text  _INHomeCommunicationDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfec634  __TEXT,__text  _INHomeCommunicationDomainGetIntentResponseDescriptionWithName
+0x18cfed2e4  __TEXT,__text  _INHomeCommunicationDomainGetIntentResponseDescriptionWithType
+0x18d0e3364  __TEXT,__text  _INHomeDeviceTypeGetBackingType
+0x18d0e3388  __TEXT,__text  _INHomeDeviceTypeGetFacadeType
+0x18d0e38e8  __TEXT,__text  _INHomeDeviceTypeGetLocalizedName
+0x18d0e33ac  __TEXT,__text  _INHomeDeviceTypeGetName
+0x18d0e3354  __TEXT,__text  _INHomeDeviceTypeHasBackingType
+0x18d0e33d4  __TEXT,__text  _INHomeDeviceTypeWithString
+0x18d0b68ec  __TEXT,__text  _INHomeEntityTypeGetBackingType
+0x18d0b6910  __TEXT,__text  _INHomeEntityTypeGetFacadeType
+0x18d0b6a9c  __TEXT,__text  _INHomeEntityTypeGetLocalizedName
+0x18d0b6934  __TEXT,__text  _INHomeEntityTypeGetName
+0x18d0b68dc  __TEXT,__text  _INHomeEntityTypeHasBackingType
+0x18d0b695c  __TEXT,__text  _INHomeEntityTypeWithString
+0x18cfeecac  __TEXT,__text  _INHomeKitDomainGetIntentDescriptionWithDataClass
+0x18cfeec44  __TEXT,__text  _INHomeKitDomainGetIntentDescriptionWithFacadeClass
+0x18cfeaca4  __TEXT,__text  _INHomeKitDomainGetIntentDescriptionWithName
+0x18cfeb85c  __TEXT,__text  _INHomeKitDomainGetIntentDescriptionWithType
+0x18cfeed7c  __TEXT,__text  _INHomeKitDomainGetIntentResponseDescriptionWithDataClass
+0x18cfeed14  __TEXT,__text  _INHomeKitDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfec6b0  __TEXT,__text  _INHomeKitDomainGetIntentResponseDescriptionWithName
+0x18cfed360  __TEXT,__text  _INHomeKitDomainGetIntentResponseDescriptionWithType
+0x18d28d900  __TEXT,__text  _INHomeSceneTypeGetBackingType
+0x18d28d914  __TEXT,__text  _INHomeSceneTypeGetFacadeType
+0x18d28da08  __TEXT,__text  _INHomeSceneTypeGetLocalizedName
+0x18d28d92c  __TEXT,__text  _INHomeSceneTypeGetName
+0x18d28d8f0  __TEXT,__text  _INHomeSceneTypeHasBackingType
+0x18d28d954  __TEXT,__text  _INHomeSceneTypeWithString
+0x18d2527ec  __TEXT,__text  _INHomeServiceSubtypeGetBackingType
+0x18d252800  __TEXT,__text  _INHomeServiceSubtypeGetFacadeType
+0x18d2528dc  __TEXT,__text  _INHomeServiceSubtypeGetLocalizedName
+0x18d25281c  __TEXT,__text  _INHomeServiceSubtypeGetName
+0x18d2527dc  __TEXT,__text  _INHomeServiceSubtypeHasBackingType
+0x18d252844  __TEXT,__text  _INHomeServiceSubtypeWithString
+0x18d250190  __TEXT,__text  _INHomeServiceTypeGetBackingType
+0x18d2501a4  __TEXT,__text  _INHomeServiceTypeGetFacadeType
+0x18d250650  __TEXT,__text  _INHomeServiceTypeGetLocalizedName
+0x18d2501bc  __TEXT,__text  _INHomeServiceTypeGetName
+0x18d250180  __TEXT,__text  _INHomeServiceTypeHasBackingType
+0x18d2501e4  __TEXT,__text  _INHomeServiceTypeWithString
+0x18d2717e0  __TEXT,__text  _INHomeTaskOutcomeGetBackingType
+0x18d2717f4  __TEXT,__text  _INHomeTaskOutcomeGetFacadeType
+0x18d271ae4  __TEXT,__text  _INHomeTaskOutcomeGetLocalizedName
+0x18d271810  __TEXT,__text  _INHomeTaskOutcomeGetName
+0x18d2717d0  __TEXT,__text  _INHomeTaskOutcomeHasBackingType
+0x18d271838  __TEXT,__text  _INHomeTaskOutcomeWithString
+0x18d271c80  __TEXT,__text  _INHomeUserTaskTypeGetBackingType
+0x18d271c94  __TEXT,__text  _INHomeUserTaskTypeGetFacadeType
+0x18d271da8  __TEXT,__text  _INHomeUserTaskTypeGetLocalizedName
+0x18d271cb0  __TEXT,__text  _INHomeUserTaskTypeGetName
+0x18d271c70  __TEXT,__text  _INHomeUserTaskTypeHasBackingType
+0x18d271cd8  __TEXT,__text  _INHomeUserTaskTypeWithString
+0x18d274598  __TEXT,__text  _INIdentifyIncomingCallerIntentResponseCodeGetName
+0x18cf5b7d8  __TEXT,__text  _INImageDataHasSupportedImageSignature
+0x18d3f1c50  __TEXT,__const  _INImageDefaultScaledSize
+0x18cf3b9bc  __TEXT,__text  _INImageProxyInjectionQueue
+0x18cfd68a8  __TEXT,__text  _INImageProxyInjectionUtilitiesInjectProxiesIntoObject
+0x18cf3b5d0  __TEXT,__text  _INImageProxyInjectionUtilitiesInjectProxiesIntoObjectWithContinuationHandler
+0x18cfb108c  __TEXT,__text  _INImageProxyInjectionUtilitiesInjectProxiesIntoSlotComposer
+0x18d292f6c  __TEXT,__text  _INIncomingCallStatusCodeGetBackingType
+0x18d292f88  __TEXT,__text  _INIncomingCallStatusCodeGetFacadeType
+0x18d293034  __TEXT,__text  _INIncomingCallStatusCodeGetLocalizedName
+0x18d292fa8  __TEXT,__text  _INIncomingCallStatusCodeGetName
+0x18d292f5c  __TEXT,__text  _INIncomingCallStatusCodeHasBackingType
+0x18d292fd4  __TEXT,__text  _INIncomingCallStatusCodeWithString
+0x18cfd71bc  __TEXT,__text  _INInsertKeyImageExtraction
+0x18d25892c  __TEXT,__text  _INIntentCategoryGetBackingType
+0x18d258950  __TEXT,__text  _INIntentCategoryGetFacadeType
+0x18d2589a0  __TEXT,__text  _INIntentCategoryGetLocalizedName
+0x18d258978  __TEXT,__text  _INIntentCategoryGetName
+0x18d25891c  __TEXT,__text  _INIntentCategoryHasBackingType
+0x18cf38a34  __TEXT,__text  _INIntentCategoryWithString
+0x18cf7ea0c  __TEXT,__text  _INIntentCreate
+0x18cf7ec60  __TEXT,__text  _INIntentCreateFromDictionary
+0x18d18ab30  __TEXT,__text  _INIntentDefinitionLocalizableFileURLsForBundleProxy
+0x18d18a79c  __TEXT,__text  _INIntentDefinitionLocalizableFileURLsForBundleRecord
+0x18d18ab70  __TEXT,__text  _INIntentDefinitionLocalizableFileURLsForInstalledApps
+0x18cf3845c  __TEXT,__text  _INIntentDefinitionNamespacedName
+0x1e097bd10  __DATA_CONST,__const  _INIntentDefinitionSystem
+0x18d18a5d0  __TEXT,__text  _INIntentDefinitionURLsForBundleProxy
+0x18d18a648  __TEXT,__text  _INIntentDefinitionURLsForInstalledApps
+0x18d191a34  __TEXT,__text  _INIntentError
+0x1e097bd08  __DATA_CONST,__const  _INIntentErrorDomain
+0x1e097bd00  __DATA_CONST,__const  _INIntentResolutionResultErrorDomain
+0x18cfccc78  __TEXT,__text  _INIntentResponseCreate
+0x18d0d5e80  __TEXT,__text  _INIntentResponseIsAutoSendFailure
+0x18d0d5e88  __TEXT,__text  _INIntentResponseIsFailure
+0x18d096130  __TEXT,__text  _INIntentResponseObserverXPCInterface
+0x18cf3b398  __TEXT,__text  _INIntentResponseWithTypedIntentResponse
+0x18cfec098  __TEXT,__text  _INIntentSchemaGetIntentDescriptionWithDataClass
+0x18cf45c24  __TEXT,__text  _INIntentSchemaGetIntentDescriptionWithFacadeClass
+0x18cf48148  __TEXT,__text  _INIntentSchemaGetIntentDescriptionWithName
+0x18cf81e00  __TEXT,__text  _INIntentSchemaGetIntentDescriptionWithType
+0x18cfea788  __TEXT,__text  _INIntentSchemaGetIntentNames
+0x18cfedb9c  __TEXT,__text  _INIntentSchemaGetIntentResponseDescriptionWithDataClass
+0x18cf56ff4  __TEXT,__text  _INIntentSchemaGetIntentResponseDescriptionWithFacadeClass
+0x18cf9498c  __TEXT,__text  _INIntentSchemaGetIntentResponseDescriptionWithName
+0x18cfcce44  __TEXT,__text  _INIntentSchemaGetIntentResponseDescriptionWithType
+0x18cfec100  __TEXT,__text  _INIntentSchemaGetIntentResponseNames
+0x18cfec160  __TEXT,__text  _INIntentSchemaGetIntentResponseTypes
+0x18cfea7e8  __TEXT,__text  _INIntentSchemaGetIntentTypes
+0x18d249ec8  __TEXT,__text  _INIntentSlotDescriptionsWithCodable
+0x18d231a8c  __TEXT,__text  _INIntentSlotValueRedactedActivityFromActivity
+0x18d28b3ac  __TEXT,__text  _INIntentSlotValueRedactedAirlineFromAirline
+0x18d286c90  __TEXT,__text  _INIntentSlotValueRedactedAirportFromAirport
+0x18d2c4914  __TEXT,__text  _INIntentSlotValueRedactedAirportGateFromAirportGate
+0x18d32f918  __TEXT,__text  _INIntentSlotValueRedactedAlarmFromAlarm
+0x18d3301fc  __TEXT,__text  _INIntentSlotValueRedactedAlarmSearchFromAlarmSearch
+0x18d319a5c  __TEXT,__text  _INIntentSlotValueRedactedAnnouncementFromAnnouncement
+0x18d3222e4  __TEXT,__text  _INIntentSlotValueRedactedAnnouncementRecordFromAnnouncementRecord
+0x18d2be444  __TEXT,__text  _INIntentSlotValueRedactedAppIdentifierFromAppIdentifier
+0x18d259814  __TEXT,__text  _INIntentSlotValueRedactedArchivedObjectFromArchivedObject
+0x18d0b04a8  __TEXT,__text  _INIntentSlotValueRedactedBalanceAmountValueFromBalanceAmountValue
+0x18d11faac  __TEXT,__text  _INIntentSlotValueRedactedBillDetailsValueFromBillDetailsValue
+0x18d21f1cc  __TEXT,__text  _INIntentSlotValueRedactedBillPayeeValueFromBillPayeeValue
+0x18d34542c  __TEXT,__text  _INIntentSlotValueRedactedBoatReservationFromBoatReservation
+0x18d2f15d0  __TEXT,__text  _INIntentSlotValueRedactedBoatTripFromBoatTrip
+0x18d012da4  __TEXT,__text  _INIntentSlotValueRedactedBoolFromBool
+0x18d012f10  __TEXT,__text  _INIntentSlotValueRedactedBoolsFromBools
+0x18d34710c  __TEXT,__text  _INIntentSlotValueRedactedBusReservationFromBusReservation
+0x18d2ef470  __TEXT,__text  _INIntentSlotValueRedactedBusTripFromBusTrip
+0x18d29b140  __TEXT,__text  _INIntentSlotValueRedactedCalendarEventFromCalendarEvent
+0x18d36996c  __TEXT,__text  _INIntentSlotValueRedactedCallGroupConversationFilterFromCallGroupConversationFilter
+0x18d36584c  __TEXT,__text  _INIntentSlotValueRedactedCallGroupConversationFromCallGroupConversation
+0x18d01c970  __TEXT,__text  _INIntentSlotValueRedactedCallGroupFromCallGroup
+0x18d372970  __TEXT,__text  _INIntentSlotValueRedactedCallInviteFromCallInvite
+0x18d34c8ec  __TEXT,__text  _INIntentSlotValueRedactedCallRecordFilterFromCallRecordFilter
+0x18d0ca8f4  __TEXT,__text  _INIntentSlotValueRedactedCallRecordValueFromCallRecordValue
+0x18d34e138  __TEXT,__text  _INIntentSlotValueRedactedCarChargingConnectorPowerFromCarChargingConnectorPower
+0x18d2d5d98  __TEXT,__text  _INIntentSlotValueRedactedCarFromCar
+0x18d34f950  __TEXT,__text  _INIntentSlotValueRedactedCarHeadUnitFromCarHeadUnit
+0x18d18c070  __TEXT,__text  _INIntentSlotValueRedactedColorFromColor
+0x18d32bd14  __TEXT,__text  _INIntentSlotValueRedactedConnectedCallFromConnectedCall
+0x18d0e8960  __TEXT,__text  _INIntentSlotValueRedactedContactCardFromContactCard
+0x18d2922d0  __TEXT,__text  _INIntentSlotValueRedactedContactEventTriggerFromContactEventTrigger
+0x18d0f6e7c  __TEXT,__text  _INIntentSlotValueRedactedContactFromContact
+0x18d0e2d70  __TEXT,__text  _INIntentSlotValueRedactedContactRelationshipFromContactRelationship
+0x18d0f6fe4  __TEXT,__text  _INIntentSlotValueRedactedContactsFromContacts
+0x18d1416dc  __TEXT,__text  _INIntentSlotValueRedactedCurrencyAmountFromCurrencyAmount
+0x18d1415f8  __TEXT,__text  _INIntentSlotValueRedactedCurrencyAmountValueFromCurrencyAmountValue
+0x18d141844  __TEXT,__text  _INIntentSlotValueRedactedCurrencyAmountsFromCurrencyAmounts
+0x18d0d5e6c  __TEXT,__text  _INIntentSlotValueRedactedCustomObjectFromCustomObject
+0x18d0b1984  __TEXT,__text  _INIntentSlotValueRedactedDateTimeRangeFromDateTimeRange
+0x18d0b1af0  __TEXT,__text  _INIntentSlotValueRedactedDateTimeRangesFromDateTimeRanges
+0x18d2d0888  __TEXT,__text  _INIntentSlotValueRedactedDeviceDetailFromDeviceDetail
+0x18d3062ac  __TEXT,__text  _INIntentSlotValueRedactedDeviceFromDevice
+0x18d0f79a4  __TEXT,__text  _INIntentSlotValueRedactedDialingContactFromDialingContact
+0x18d0f7ba0  __TEXT,__text  _INIntentSlotValueRedactedDialingContactsFromDialingContacts
+0x18d186910  __TEXT,__text  _INIntentSlotValueRedactedDistanceFromDistance
+0x18d186a74  __TEXT,__text  _INIntentSlotValueRedactedDistancesFromDistances
+0x18d0cb1e4  __TEXT,__text  _INIntentSlotValueRedactedDoubleFromDouble
+0x18d0cb350  __TEXT,__text  _INIntentSlotValueRedactedDoublesFromDoubles
+0x18d29a91c  __TEXT,__text  _INIntentSlotValueRedactedEnergiesFromEnergies
+0x18d29a7b8  __TEXT,__text  _INIntentSlotValueRedactedEnergyFromEnergy
+0x18d230508  __TEXT,__text  _INIntentSlotValueRedactedEventFromEvent
+0x18d1aa340  __TEXT,__text  _INIntentSlotValueRedactedEventParticipantFromEventParticipant
+0x18cfd9d94  __TEXT,__text  _INIntentSlotValueRedactedFinancialAccountValueFromFinancialAccountValue
+0x18d2895ec  __TEXT,__text  _INIntentSlotValueRedactedFlightFromFlight
+0x18d09c6d0  __TEXT,__text  _INIntentSlotValueRedactedFlightReservationFromFlightReservation
+0x18d36b6c4  __TEXT,__text  _INIntentSlotValueRedactedFocusStatusFromFocusStatus
+0x18d232a84  __TEXT,__text  _INIntentSlotValueRedactedGeographicalFeatureFromGeographicalFeature
+0x18d313914  __TEXT,__text  _INIntentSlotValueRedactedGetSettingResponseDataFromGetSettingResponseData
+0x18d35c4f8  __TEXT,__text  _INIntentSlotValueRedactedHomeAutomationEntityProviderFromHomeAutomationEntityProvider
+0x18d3621f4  __TEXT,__text  _INIntentSlotValueRedactedHomeAutomationFromEntityFromHomeAutomationFromEntity
+0x18d250084  __TEXT,__text  _INIntentSlotValueRedactedHomeContentFromHomeContent
+0x18d033fc8  __TEXT,__text  _INIntentSlotValueRedactedHomeEntityFromHomeEntity
+0x18d27058c  __TEXT,__text  _INIntentSlotValueRedactedHomeEntityResponseFromHomeEntityResponse
+0x18d2524c4  __TEXT,__text  _INIntentSlotValueRedactedHomeFilterFromHomeFilter
+0x18d26f958  __TEXT,__text  _INIntentSlotValueRedactedHomeUserTaskFromHomeUserTask
+0x18d2716d4  __TEXT,__text  _INIntentSlotValueRedactedHomeUserTaskResponseFromHomeUserTaskResponse
+0x18d102e44  __TEXT,__text  _INIntentSlotValueRedactedImageValueFromImageValue
+0x18d00ec80  __TEXT,__text  _INIntentSlotValueRedactedIntegerFromInteger
+0x18d00edec  __TEXT,__text  _INIntentSlotValueRedactedIntegersFromIntegers
+0x18d195d90  __TEXT,__text  _INIntentSlotValueRedactedLocationFromLocation
+0x18d195ef4  __TEXT,__text  _INIntentSlotValueRedactedLocationsFromLocations
+0x18d02766c  __TEXT,__text  _INIntentSlotValueRedactedLodgingReservationFromLodgingReservation
+0x18d00ef60  __TEXT,__text  _INIntentSlotValueRedactedLongFromLong
+0x18d00f0cc  __TEXT,__text  _INIntentSlotValueRedactedLongssFromLongs
+0x18d10ea70  __TEXT,__text  _INIntentSlotValueRedactedMassFromMass
+0x18d10ebd4  __TEXT,__text  _INIntentSlotValueRedactedMassesFromMasses
+0x18d2c72e8  __TEXT,__text  _INIntentSlotValueRedactedMediaDestinationFromMediaDestination
+0x18d29b614  __TEXT,__text  _INIntentSlotValueRedactedMediaItemGroupFromMediaItemGroup
+0x18d28d658  __TEXT,__text  _INIntentSlotValueRedactedMediaItemValueFromMediaItemValue
+0x18d25dc64  __TEXT,__text  _INIntentSlotValueRedactedMediaSearchFromMediaSearch
+0x18d2f2058  __TEXT,__text  _INIntentSlotValueRedactedMediaSubItemFromMediaSubItem
+0x18d258264  __TEXT,__text  _INIntentSlotValueRedactedMessageLinkMetadataFromMessageLinkMetadata
+0x18d0d3a5c  __TEXT,__text  _INIntentSlotValueRedactedMessageReactionFromMessageReaction
+0x18d01c594  __TEXT,__text  _INIntentSlotValueRedactedModifyNicknameFromModifyNickname
+0x18d0c17a8  __TEXT,__text  _INIntentSlotValueRedactedModifyRelationshipFromModifyRelationship
+0x18d06a8f8  __TEXT,__text  _INIntentSlotValueRedactedNoteFromNote
+0x18d309218  __TEXT,__text  _INIntentSlotValueRedactedNumericSettingValueFromNumericSettingValue
+0x18d01c05c  __TEXT,__text  _INIntentSlotValueRedactedPaymentAmountValueFromPaymentAmountValue
+0x18d09ff38  __TEXT,__text  _INIntentSlotValueRedactedPaymentMethodFromPaymentMethod
+0x18d09fe20  __TEXT,__text  _INIntentSlotValueRedactedPaymentMethodValueFromPaymentMethodValue
+0x18d16a36c  __TEXT,__text  _INIntentSlotValueRedactedPaymentRecordFromPaymentRecord
+0x18d23154c  __TEXT,__text  _INIntentSlotValueRedactedPlaceFromPlace
+0x18d2f84e0  __TEXT,__text  _INIntentSlotValueRedactedPrivateAddMediaIntentDataFromPrivateAddMediaIntentData
+0x18d2f3ac4  __TEXT,__text  _INIntentSlotValueRedactedPrivateMediaIntentDataFromPrivateMediaIntentData
+0x18d2e4388  __TEXT,__text  _INIntentSlotValueRedactedPrivateMediaItemValueDataFromPrivateMediaItemValueData
+0x18d2eb074  __TEXT,__text  _INIntentSlotValueRedactedPrivatePlayMediaIntentDataFromPrivatePlayMediaIntentData
+0x18d31e154  __TEXT,__text  _INIntentSlotValueRedactedPrivateSearchForMediaIntentDataFromPrivateSearchForMediaIntentData
+0x18d2f9604  __TEXT,__text  _INIntentSlotValueRedactedPrivateUpdateMediaAffinityIntentDataFromPrivateUpdateMediaAffinityIntentData
+0x18d29f8f0  __TEXT,__text  _INIntentSlotValueRedactedRentalCarFromRentalCar
+0x18d12f8b8  __TEXT,__text  _INIntentSlotValueRedactedRentalCarReservationFromRentalCarReservation
+0x18d2c565c  __TEXT,__text  _INIntentSlotValueRedactedReservationActionFromReservationAction
+0x18d2b69e0  __TEXT,__text  _INIntentSlotValueRedactedReservationWrapperFromReservationWrapper
+0x18d07b984  __TEXT,__text  _INIntentSlotValueRedactedRestaurantReservationFromRestaurantReservation
+0x18d2852f8  __TEXT,__text  _INIntentSlotValueRedactedSeatFromSeat
+0x18d302364  __TEXT,__text  _INIntentSlotValueRedactedSettingMetadataFromSettingMetadata
+0x18d2c07b4  __TEXT,__text  _INIntentSlotValueRedactedShortcutOverviewFromShortcutOverview
+0x18d340b30  __TEXT,__text  _INIntentSlotValueRedactedSleepAlarmAttributeFromSleepAlarmAttribute
+0x18d09dffc  __TEXT,__text  _INIntentSlotValueRedactedSpatialEventTriggerFromSpatialEventTrigger
+0x18d2f3700  __TEXT,__text  _INIntentSlotValueRedactedSpeakerIDInfoFromSpeakerIDInfo
+0x18d10ae7c  __TEXT,__text  _INIntentSlotValueRedactedSpeedFromSpeed
+0x18d10afe0  __TEXT,__text  _INIntentSlotValueRedactedSpeedsFromSpeeds
+0x18d374000  __TEXT,__text  _INIntentSlotValueRedactedStartCallRequestMetadataFromStartCallRequestMetadata
+0x18d3744b4  __TEXT,__text  _INIntentSlotValueRedactedStickerFromSticker
+0x18d027f38  __TEXT,__text  _INIntentSlotValueRedactedStringFromString
+0x18d02809c  __TEXT,__text  _INIntentSlotValueRedactedStringsFromStrings
+0x18d35a4e0  __TEXT,__text  _INIntentSlotValueRedactedSupportedTrafficIncidentTypeFromSupportedTrafficIncidentType
+0x18d191938  __TEXT,__text  _INIntentSlotValueRedactedTaskFromTask
+0x18d1d761c  __TEXT,__text  _INIntentSlotValueRedactedTaskListFromTaskList
+0x18d037e48  __TEXT,__text  _INIntentSlotValueRedactedTemperatureFromTemperature
+0x18d037fac  __TEXT,__text  _INIntentSlotValueRedactedTemperaturesFromTemperatures
+0x18d0e3258  __TEXT,__text  _INIntentSlotValueRedactedTemporalEventTriggerFromTemporalEventTrigger
+0x18d29e8a0  __TEXT,__text  _INIntentSlotValueRedactedTicketedEventFromTicketedEvent
+0x18d1471f4  __TEXT,__text  _INIntentSlotValueRedactedTicketedEventReservationFromTicketedEventReservation
+0x18d24d730  __TEXT,__text  _INIntentSlotValueRedactedTimerFromTimer
+0x18d217b9c  __TEXT,__text  _INIntentSlotValueRedactedTrainReservationFromTrainReservation
+0x18d29d9dc  __TEXT,__text  _INIntentSlotValueRedactedTrainTripFromTrainTrip
+0x18d0f6b40  __TEXT,__text  _INIntentSlotValueRedactedValueFromContactValue
+0x18d041454  __TEXT,__text  _INIntentSlotValueRedactedValueFromDecimalNumberValue
+0x18d1868a0  __TEXT,__text  _INIntentSlotValueRedactedValueFromDistanceValue
+0x18d29a748  __TEXT,__text  _INIntentSlotValueRedactedValueFromEnergyValue
+0x18d195d24  __TEXT,__text  _INIntentSlotValueRedactedValueFromLocationValue
+0x18d10ea00  __TEXT,__text  _INIntentSlotValueRedactedValueFromMassValue
+0x18d10ae0c  __TEXT,__text  _INIntentSlotValueRedactedValueFromSpeedValue
+0x18d027ecc  __TEXT,__text  _INIntentSlotValueRedactedValueFromStringValue
+0x18d037dd8  __TEXT,__text  _INIntentSlotValueRedactedValueFromTemperatureValue
+0x18d0b6778  __TEXT,__text  _INIntentSlotValueRedactedValueFromURLValue
+0x18d0b3c5c  __TEXT,__text  _INIntentSlotValueRedactedValueFromUUIDValue
+0x18d09f0d0  __TEXT,__text  _INIntentSlotValueRedactedValueFromVolumeValue
+0x18d25a5c8  __TEXT,__text  _INIntentSlotValueRedactedVoiceCommandDeviceInformationFromVoiceCommandDeviceInformation
+0x18d26a678  __TEXT,__text  _INIntentSlotValueRedactedVoiceCommandStepInfoFromVoiceCommandStepInfo
+0x18d09f140  __TEXT,__text  _INIntentSlotValueRedactedVolumeFromVolume
+0x18d09f2a4  __TEXT,__text  _INIntentSlotValueRedactedVolumesFromVolumes
+0x18d324b88  __TEXT,__text  _INIntentSlotValueRedactedWholeHouseAudioMetadataFromWholeHouseAudioMetadata
+0x18d3550f0  __TEXT,__text  _INIntentSlotValueRedactedWorkoutAssociatedItemFromWorkoutAssociatedItem
+0x18d35b89c  __TEXT,__text  _INIntentSlotValueRedactedWorkoutCustomizationFromWorkoutCustomization
+0x18d231708  __TEXT,__text  _INIntentSlotValueTransformFromActivities
+0x18d231648  __TEXT,__text  _INIntentSlotValueTransformFromActivity
+0x18d28af78  __TEXT,__text  _INIntentSlotValueTransformFromAirline
+0x18d28b02c  __TEXT,__text  _INIntentSlotValueTransformFromAirlines
+0x18d28685c  __TEXT,__text  _INIntentSlotValueTransformFromAirport
+0x18d2c44c0  __TEXT,__text  _INIntentSlotValueTransformFromAirportGate
+0x18d2c4584  __TEXT,__text  _INIntentSlotValueTransformFromAirportGates
+0x18d286910  __TEXT,__text  _INIntentSlotValueTransformFromAirports
+0x18d32f2b8  __TEXT,__text  _INIntentSlotValueTransformFromAlarm
+0x18d32fbe4  __TEXT,__text  _INIntentSlotValueTransformFromAlarmSearch
+0x18d32fdb4  __TEXT,__text  _INIntentSlotValueTransformFromAlarmSearchs
+0x18d32f478  __TEXT,__text  _INIntentSlotValueTransformFromAlarms
+0x18d319608  __TEXT,__text  _INIntentSlotValueTransformFromAnnouncement
+0x18d321e6c  __TEXT,__text  _INIntentSlotValueTransformFromAnnouncementRecord
+0x18d321f50  __TEXT,__text  _INIntentSlotValueTransformFromAnnouncementRecords
+0x18d3196cc  __TEXT,__text  _INIntentSlotValueTransformFromAnnouncements
+0x18cf8749c  __TEXT,__text  _INIntentSlotValueTransformFromAppIdentifier
+0x18d2be17c  __TEXT,__text  _INIntentSlotValueTransformFromAppIdentifiers
+0x18d259420  __TEXT,__text  _INIntentSlotValueTransformFromArchivedObject
+0x18d2594b4  __TEXT,__text  _INIntentSlotValueTransformFromArchivedObjects
+0x18d0b01cc  __TEXT,__text  _INIntentSlotValueTransformFromBalanceAmountValue
+0x18d11f42c  __TEXT,__text  _INIntentSlotValueTransformFromBillDetailsValue
+0x18d11f62c  __TEXT,__text  _INIntentSlotValueTransformFromBillDetailsValues
+0x18d21ed38  __TEXT,__text  _INIntentSlotValueTransformFromBillPayeeValue
+0x18d21ee28  __TEXT,__text  _INIntentSlotValueTransformFromBillPayeeValues
+0x18d344d70  __TEXT,__text  _INIntentSlotValueTransformFromBoatReservation
+0x18d344f68  __TEXT,__text  _INIntentSlotValueTransformFromBoatReservations
+0x18d2f1074  __TEXT,__text  _INIntentSlotValueTransformFromBoatTrip
+0x18d2f11bc  __TEXT,__text  _INIntentSlotValueTransformFromBoatTrips
+0x18cf4719c  __TEXT,__text  _INIntentSlotValueTransformFromBool
+0x18cf47118  __TEXT,__text  _INIntentSlotValueTransformFromBoolValue
+0x18d012af4  __TEXT,__text  _INIntentSlotValueTransformFromBoolValues
+0x18d012844  __TEXT,__text  _INIntentSlotValueTransformFromBools
+0x18d346a50  __TEXT,__text  _INIntentSlotValueTransformFromBusReservation
+0x18d346c48  __TEXT,__text  _INIntentSlotValueTransformFromBusReservations
+0x18d2eeea4  __TEXT,__text  _INIntentSlotValueTransformFromBusTrip
+0x18d2ef020  __TEXT,__text  _INIntentSlotValueTransformFromBusTrips
+0x18d29ab98  __TEXT,__text  _INIntentSlotValueTransformFromCalendarEvent
+0x18d29ad0c  __TEXT,__text  _INIntentSlotValueTransformFromCalendarEvents
+0x18d01c690  __TEXT,__text  _INIntentSlotValueTransformFromCallGroup
+0x18d365364  __TEXT,__text  _INIntentSlotValueTransformFromCallGroupConversation
+0x18d369470  __TEXT,__text  _INIntentSlotValueTransformFromCallGroupConversationFilter
+0x18d369594  __TEXT,__text  _INIntentSlotValueTransformFromCallGroupConversationFilters
+0x18d365478  __TEXT,__text  _INIntentSlotValueTransformFromCallGroupConversations
+0x18cfb7694  __TEXT,__text  _INIntentSlotValueTransformFromCallGroups
+0x18d3724d4  __TEXT,__text  _INIntentSlotValueTransformFromCallInvite
+0x18d3725cc  __TEXT,__text  _INIntentSlotValueTransformFromCallInvites
+0x18cfb69a4  __TEXT,__text  _INIntentSlotValueTransformFromCallRecordFilter
+0x18d34c618  __TEXT,__text  _INIntentSlotValueTransformFromCallRecordFilters
+0x18cfb6b58  __TEXT,__text  _INIntentSlotValueTransformFromCallRecordValue
+0x18d0ca62c  __TEXT,__text  _INIntentSlotValueTransformFromCallRecordValues
+0x18d2d5788  __TEXT,__text  _INIntentSlotValueTransformFromCar
+0x18d34dce8  __TEXT,__text  _INIntentSlotValueTransformFromCarChargingConnectorPower
+0x18d34ddc0  __TEXT,__text  _INIntentSlotValueTransformFromCarChargingConnectorPowers
+0x18d34f55c  __TEXT,__text  _INIntentSlotValueTransformFromCarHeadUnit
+0x18d34f5f0  __TEXT,__text  _INIntentSlotValueTransformFromCarHeadUnits
+0x18d2d5930  __TEXT,__text  _INIntentSlotValueTransformFromCars
+0x18d18bca8  __TEXT,__text  _INIntentSlotValueTransformFromColor
+0x18d0b9dec  __TEXT,__text  _INIntentSlotValueTransformFromCondition
+0x18d32b928  __TEXT,__text  _INIntentSlotValueTransformFromConnectedCall
+0x18d32b9b8  __TEXT,__text  _INIntentSlotValueTransformFromConnectedCalls
+0x18cf981a4  __TEXT,__text  _INIntentSlotValueTransformFromContact
+0x18d0e7fb4  __TEXT,__text  _INIntentSlotValueTransformFromContactCard
+0x18d0e8258  __TEXT,__text  _INIntentSlotValueTransformFromContactCards
+0x18d291eec  __TEXT,__text  _INIntentSlotValueTransformFromContactEventTrigger
+0x18d291f7c  __TEXT,__text  _INIntentSlotValueTransformFromContactEventTriggers
+0x18cf965b4  __TEXT,__text  _INIntentSlotValueTransformFromContactHandle
+0x18d0e297c  __TEXT,__text  _INIntentSlotValueTransformFromContactRelationship
+0x18d0e2a10  __TEXT,__text  _INIntentSlotValueTransformFromContactRelationships
+0x18d0f677c  __TEXT,__text  _INIntentSlotValueTransformFromContactValue
+0x18d0f65dc  __TEXT,__text  _INIntentSlotValueTransformFromContactValueWithAlternatives
+0x18cf984c4  __TEXT,__text  _INIntentSlotValueTransformFromContactValueWithScoredAlternatives
+0x18d0f6784  __TEXT,__text  _INIntentSlotValueTransformFromContactValues
+0x18cf98040  __TEXT,__text  _INIntentSlotValueTransformFromContacts
+0x18d140f58  __TEXT,__text  _INIntentSlotValueTransformFromCurrencyAmount
+0x18cfa710c  __TEXT,__text  _INIntentSlotValueTransformFromCurrencyAmountValue
+0x18d1411b8  __TEXT,__text  _INIntentSlotValueTransformFromCurrencyAmountValues
+0x18d141060  __TEXT,__text  _INIntentSlotValueTransformFromCurrencyAmounts
+0x18cf97d10  __TEXT,__text  _INIntentSlotValueTransformFromCustomObject
+0x18d0d5ba4  __TEXT,__text  _INIntentSlotValueTransformFromCustomObjects
+0x18cf9a2b0  __TEXT,__text  _INIntentSlotValueTransformFromDataString
+0x18d1cb374  __TEXT,__text  _INIntentSlotValueTransformFromDataStringList
+0x18cf955e0  __TEXT,__text  _INIntentSlotValueTransformFromDataStrings
+0x18d0b5438  __TEXT,__text  _INIntentSlotValueTransformFromDataValue
+0x18d0b54a0  __TEXT,__text  _INIntentSlotValueTransformFromDataValues
+0x18cfa5bb0  __TEXT,__text  _INIntentSlotValueTransformFromDateTime
+0x18cf77710  __TEXT,__text  _INIntentSlotValueTransformFromDateTimeRange
+0x18cfc5354  __TEXT,__text  _INIntentSlotValueTransformFromDateTimeRangeValue
+0x18d0b157c  __TEXT,__text  _INIntentSlotValueTransformFromDateTimeRangeValues
+0x18d0b1424  __TEXT,__text  _INIntentSlotValueTransformFromDateTimeRanges
+0x18d077150  __TEXT,__text  _INIntentSlotValueTransformFromDateTimes
+0x18d0412dc  __TEXT,__text  _INIntentSlotValueTransformFromDecimalNumberValue
+0x18d305e5c  __TEXT,__text  _INIntentSlotValueTransformFromDevice
+0x18d2d02f0  __TEXT,__text  _INIntentSlotValueTransformFromDeviceDetail
+0x18d2d0468  __TEXT,__text  _INIntentSlotValueTransformFromDeviceDetails
+0x18d305f28  __TEXT,__text  _INIntentSlotValueTransformFromDevices
+0x18d0f7254  __TEXT,__text  _INIntentSlotValueTransformFromDialingContact
+0x18d0f7510  __TEXT,__text  _INIntentSlotValueTransformFromDialingContacts
+0x18d1234ac  __TEXT,__text  _INIntentSlotValueTransformFromDictionary
+0x18d185d70  __TEXT,__text  _INIntentSlotValueTransformFromDistance
+0x18d1858f0  __TEXT,__text  _INIntentSlotValueTransformFromDistanceValue
+0x18d185c18  __TEXT,__text  _INIntentSlotValueTransformFromDistanceValues
+0x18d185e78  __TEXT,__text  _INIntentSlotValueTransformFromDistances
+0x18cf49808  __TEXT,__text  _INIntentSlotValueTransformFromDouble
+0x18cf499e0  __TEXT,__text  _INIntentSlotValueTransformFromDoubleValue
+0x18d0caf34  __TEXT,__text  _INIntentSlotValueTransformFromDoubleValues
+0x18d0cac84  __TEXT,__text  _INIntentSlotValueTransformFromDoubles
+0x18d29a17c  __TEXT,__text  _INIntentSlotValueTransformFromEnergies
+0x18d29a074  __TEXT,__text  _INIntentSlotValueTransformFromEnergy
+0x18d299d88  __TEXT,__text  _INIntentSlotValueTransformFromEnergyValue
+0x18d299f1c  __TEXT,__text  _INIntentSlotValueTransformFromEnergyValues
+0x18d2300c4  __TEXT,__text  _INIntentSlotValueTransformFromEvent
+0x18d1a9e64  __TEXT,__text  _INIntentSlotValueTransformFromEventParticipant
+0x18d1a9f88  __TEXT,__text  _INIntentSlotValueTransformFromEventParticipants
+0x18d230184  __TEXT,__text  _INIntentSlotValueTransformFromEvents
+0x18d231b88  __TEXT,__text  _INIntentSlotValueTransformFromFile
+0x18cfa6354  __TEXT,__text  _INIntentSlotValueTransformFromFiles
+0x18cfd97e4  __TEXT,__text  _INIntentSlotValueTransformFromFinancialAccountValue
+0x18cfd9970  __TEXT,__text  _INIntentSlotValueTransformFromFinancialAccountValues
+0x18d289044  __TEXT,__text  _INIntentSlotValueTransformFromFlight
+0x18d09c014  __TEXT,__text  _INIntentSlotValueTransformFromFlightReservation
+0x18d09c20c  __TEXT,__text  _INIntentSlotValueTransformFromFlightReservations
+0x18d2891b8  __TEXT,__text  _INIntentSlotValueTransformFromFlights
+0x18d36b2e8  __TEXT,__text  _INIntentSlotValueTransformFromFocusStatus
+0x18d36b37c  __TEXT,__text  _INIntentSlotValueTransformFromFocusStatuses
+0x18d184f14  __TEXT,__text  _INIntentSlotValueTransformFromGEOLatLng
+0x18d184f88  __TEXT,__text  _INIntentSlotValueTransformFromGEOLatLngs
+0x18d1930a4  __TEXT,__text  _INIntentSlotValueTransformFromGEOLocation
+0x18d193200  __TEXT,__text  _INIntentSlotValueTransformFromGEOLocations
+0x18d232640  __TEXT,__text  _INIntentSlotValueTransformFromGeographicalFeature
+0x18d232700  __TEXT,__text  _INIntentSlotValueTransformFromGeographicalFeatures
+0x18d3133f4  __TEXT,__text  _INIntentSlotValueTransformFromGetSettingResponseData
+0x18d313538  __TEXT,__text  _INIntentSlotValueTransformFromGetSettingResponseDatas
+0x18d1cfa7c  __TEXT,__text  _INIntentSlotValueTransformFromHomeAction
+0x18d1cfc0c  __TEXT,__text  _INIntentSlotValueTransformFromHomeActions
+0x18d0517e8  __TEXT,__text  _INIntentSlotValueTransformFromHomeAttribute
+0x18d0e3df4  __TEXT,__text  _INIntentSlotValueTransformFromHomeAttributeValue
+0x18d0e4004  __TEXT,__text  _INIntentSlotValueTransformFromHomeAttributeValues
+0x18d051948  __TEXT,__text  _INIntentSlotValueTransformFromHomeAttributes
+0x18cf7ae6c  __TEXT,__text  _INIntentSlotValueTransformFromHomeAutomationEntityProvider
+0x18d35bf94  __TEXT,__text  _INIntentSlotValueTransformFromHomeAutomationEntityProviders
+0x18d361e84  __TEXT,__text  _INIntentSlotValueTransformFromHomeAutomationFromEntities
+0x18d361dc0  __TEXT,__text  _INIntentSlotValueTransformFromHomeAutomationFromEntity
+0x18d24fc40  __TEXT,__text  _INIntentSlotValueTransformFromHomeContent
+0x18d24fd00  __TEXT,__text  _INIntentSlotValueTransformFromHomeContents
+0x18d033a50  __TEXT,__text  _INIntentSlotValueTransformFromHomeEntities
+0x18d0337e0  __TEXT,__text  _INIntentSlotValueTransformFromHomeEntity
+0x18d270148  __TEXT,__text  _INIntentSlotValueTransformFromHomeEntityResponse
+0x18d270208  __TEXT,__text  _INIntentSlotValueTransformFromHomeEntityResponses
+0x18d251ce8  __TEXT,__text  _INIntentSlotValueTransformFromHomeFilter
+0x18d251fa8  __TEXT,__text  _INIntentSlotValueTransformFromHomeFilters
+0x18d26f4d4  __TEXT,__text  _INIntentSlotValueTransformFromHomeUserTask
+0x18d27129c  __TEXT,__text  _INIntentSlotValueTransformFromHomeUserTaskResponse
+0x18d271360  __TEXT,__text  _INIntentSlotValueTransformFromHomeUserTaskResponses
+0x18d26f5c8  __TEXT,__text  _INIntentSlotValueTransformFromHomeUserTasks
+0x18cf49fc0  __TEXT,__text  _INIntentSlotValueTransformFromImageValue
+0x18d102ba4  __TEXT,__text  _INIntentSlotValueTransformFromImageValues
+0x18cfa608c  __TEXT,__text  _INIntentSlotValueTransformFromInteger
+0x18cfc1874  __TEXT,__text  _INIntentSlotValueTransformFromIntegerValue
+0x18d00e720  __TEXT,__text  _INIntentSlotValueTransformFromIntegerValues
+0x18d00e1c0  __TEXT,__text  _INIntentSlotValueTransformFromIntegers
+0x18d100c60  __TEXT,__text  _INIntentSlotValueTransformFromIntent
+0x18d27f450  __TEXT,__text  _INIntentSlotValueTransformFromIntentExecutionResult
+0x18d27f560  __TEXT,__text  _INIntentSlotValueTransformFromIntentExecutionResults
+0x18d100da8  __TEXT,__text  _INIntentSlotValueTransformFromIntents
+0x18d0d0d34  __TEXT,__text  _INIntentSlotValueTransformFromJSONDictionary
+0x18cfa61a8  __TEXT,__text  _INIntentSlotValueTransformFromLocation
+0x18d194e4c  __TEXT,__text  _INIntentSlotValueTransformFromLocationValue
+0x18d195288  __TEXT,__text  _INIntentSlotValueTransformFromLocationValues
+0x18d194fd8  __TEXT,__text  _INIntentSlotValueTransformFromLocations
+0x18d026ef4  __TEXT,__text  _INIntentSlotValueTransformFromLodgingReservation
+0x18d027148  __TEXT,__text  _INIntentSlotValueTransformFromLodgingReservations
+0x18cf64fc8  __TEXT,__text  _INIntentSlotValueTransformFromLong
+0x18cf64f44  __TEXT,__text  _INIntentSlotValueTransformFromLongValue
+0x18d00e9d0  __TEXT,__text  _INIntentSlotValueTransformFromLongValues
+0x18d00e318  __TEXT,__text  _INIntentSlotValueTransformFromLongs
+0x18d10e11c  __TEXT,__text  _INIntentSlotValueTransformFromMass
+0x18d10dd58  __TEXT,__text  _INIntentSlotValueTransformFromMassValue
+0x18d10dfc4  __TEXT,__text  _INIntentSlotValueTransformFromMassValues
+0x18d10e224  __TEXT,__text  _INIntentSlotValueTransformFromMasses
+0x18d2c6eb4  __TEXT,__text  _INIntentSlotValueTransformFromMediaDestination
+0x18d2c6f78  __TEXT,__text  _INIntentSlotValueTransformFromMediaDestinations
+0x18d29b2e0  __TEXT,__text  _INIntentSlotValueTransformFromMediaItemGroup
+0x18cf87310  __TEXT,__text  _INIntentSlotValueTransformFromMediaItemGroups
+0x18cf6c26c  __TEXT,__text  _INIntentSlotValueTransformFromMediaItemValue
+0x18cf6e48c  __TEXT,__text  _INIntentSlotValueTransformFromMediaItemValues
+0x18cf77460  __TEXT,__text  _INIntentSlotValueTransformFromMediaSearch
+0x18d25d99c  __TEXT,__text  _INIntentSlotValueTransformFromMediaSearchs
+0x18d2f1f2c  __TEXT,__text  _INIntentSlotValueTransformFromMediaSubItem
+0x18cf6edb0  __TEXT,__text  _INIntentSlotValueTransformFromMediaSubItems
+0x18cfa5438  __TEXT,__text  _INIntentSlotValueTransformFromMessage
+0x18cfa64cc  __TEXT,__text  _INIntentSlotValueTransformFromMessageLinkMetadata
+0x18d257f9c  __TEXT,__text  _INIntentSlotValueTransformFromMessageLinkMetadatas
+0x18cfa6b38  __TEXT,__text  _INIntentSlotValueTransformFromMessageReaction
+0x18d0d3794  __TEXT,__text  _INIntentSlotValueTransformFromMessageReactions
+0x18cfa82ac  __TEXT,__text  _INIntentSlotValueTransformFromMessages
+0x18d01c158  __TEXT,__text  _INIntentSlotValueTransformFromModifyNickname
+0x18d01c21c  __TEXT,__text  _INIntentSlotValueTransformFromModifyNicknames
+0x18d0c136c  __TEXT,__text  _INIntentSlotValueTransformFromModifyRelationship
+0x18d0c1430  __TEXT,__text  _INIntentSlotValueTransformFromModifyRelationships
+0x18d06a320  __TEXT,__text  _INIntentSlotValueTransformFromNote
+0x18d18c0c4  __TEXT,__text  _INIntentSlotValueTransformFromNoteContent
+0x18d18c1b4  __TEXT,__text  _INIntentSlotValueTransformFromNoteContents
+0x18d06a4a8  __TEXT,__text  _INIntentSlotValueTransformFromNotes
+0x18d17eb7c  __TEXT,__text  _INIntentSlotValueTransformFromNull
+0x18d17eb88  __TEXT,__text  _INIntentSlotValueTransformFromNulls
+0x18d308e04  __TEXT,__text  _INIntentSlotValueTransformFromNumericSettingValue
+0x18d308eb8  __TEXT,__text  _INIntentSlotValueTransformFromNumericSettingValues
+0x18d01bc28  __TEXT,__text  _INIntentSlotValueTransformFromPaymentAmountValue
+0x18d01bce8  __TEXT,__text  _INIntentSlotValueTransformFromPaymentAmountValues
+0x18d09f794  __TEXT,__text  _INIntentSlotValueTransformFromPaymentMethod
+0x18d09f520  __TEXT,__text  _INIntentSlotValueTransformFromPaymentMethodValue
+0x18d09f630  __TEXT,__text  _INIntentSlotValueTransformFromPaymentMethodValues
+0x18d09f8a8  __TEXT,__text  _INIntentSlotValueTransformFromPaymentMethods
+0x18d169d44  __TEXT,__text  _INIntentSlotValueTransformFromPaymentRecord
+0x18d169f08  __TEXT,__text  _INIntentSlotValueTransformFromPaymentRecords
+0x18d231044  __TEXT,__text  _INIntentSlotValueTransformFromPlace
+0x18d23116c  __TEXT,__text  _INIntentSlotValueTransformFromPlaces
+0x18d05c878  __TEXT,__text  _INIntentSlotValueTransformFromPower
+0x18d05c51c  __TEXT,__text  _INIntentSlotValueTransformFromPowerValue
+0x18d05c720  __TEXT,__text  _INIntentSlotValueTransformFromPowerValues
+0x18d05c980  __TEXT,__text  _INIntentSlotValueTransformFromPowers
+0x18d2f802c  __TEXT,__text  _INIntentSlotValueTransformFromPrivateAddMediaIntentData
+0x18d2f8120  __TEXT,__text  _INIntentSlotValueTransformFromPrivateAddMediaIntentDatas
+0x18cf6fe70  __TEXT,__text  _INIntentSlotValueTransformFromPrivateMediaIntentData
+0x18d2f37fc  __TEXT,__text  _INIntentSlotValueTransformFromPrivateMediaIntentDatas
+0x18cf6fb3c  __TEXT,__text  _INIntentSlotValueTransformFromPrivateMediaItemValueData
+0x18d2e40c0  __TEXT,__text  _INIntentSlotValueTransformFromPrivateMediaItemValueDatas
+0x18cf6e8e0  __TEXT,__text  _INIntentSlotValueTransformFromPrivatePlayMediaIntentData
+0x18d2eadac  __TEXT,__text  _INIntentSlotValueTransformFromPrivatePlayMediaIntentDatas
+0x18d31dc48  __TEXT,__text  _INIntentSlotValueTransformFromPrivateSearchForMediaIntentData
+0x18d31dd70  __TEXT,__text  _INIntentSlotValueTransformFromPrivateSearchForMediaIntentDatas
+0x18d2f91b0  __TEXT,__text  _INIntentSlotValueTransformFromPrivateUpdateMediaAffinityIntentData
+0x18d2f9274  __TEXT,__text  _INIntentSlotValueTransformFromPrivateUpdateMediaAffinityIntentDatas
+0x18d0ba49c  __TEXT,__text  _INIntentSlotValueTransformFromProperty
+0x18d29f444  __TEXT,__text  _INIntentSlotValueTransformFromRentalCar
+0x18d12f140  __TEXT,__text  _INIntentSlotValueTransformFromRentalCarReservation
+0x18d12f394  __TEXT,__text  _INIntentSlotValueTransformFromRentalCarReservations
+0x18d29f530  __TEXT,__text  _INIntentSlotValueTransformFromRentalCars
+0x18d2c51d0  __TEXT,__text  _INIntentSlotValueTransformFromReservationAction
+0x18d2c52b0  __TEXT,__text  _INIntentSlotValueTransformFromReservationActions
+0x18d2b635c  __TEXT,__text  _INIntentSlotValueTransformFromReservationWrapper
+0x18d2b64e4  __TEXT,__text  _INIntentSlotValueTransformFromReservationWrappers
+0x18d07b268  __TEXT,__text  _INIntentSlotValueTransformFromRestaurantReservation
+0x18d07b490  __TEXT,__text  _INIntentSlotValueTransformFromRestaurantReservations
+0x18d0f11e4  __TEXT,__text  _INIntentSlotValueTransformFromRideOption
+0x18d0f1714  __TEXT,__text  _INIntentSlotValueTransformFromRideOptions
+0x18d07d228  __TEXT,__text  _INIntentSlotValueTransformFromRideStatus
+0x18d284e8c  __TEXT,__text  _INIntentSlotValueTransformFromSeat
+0x18d284f58  __TEXT,__text  _INIntentSlotValueTransformFromSeats
+0x18d28354c  __TEXT,__text  _INIntentSlotValueTransformFromSendMessageAttachment
+0x18cf9a50c  __TEXT,__text  _INIntentSlotValueTransformFromSendMessageAttachments
+0x18d301ee8  __TEXT,__text  _INIntentSlotValueTransformFromSettingMetadata
+0x18d301fc0  __TEXT,__text  _INIntentSlotValueTransformFromSettingMetadatas
+0x18d2c024c  __TEXT,__text  _INIntentSlotValueTransformFromShortcutOverview
+0x18d2c03a0  __TEXT,__text  _INIntentSlotValueTransformFromShortcutOverviews
+0x18d3406f4  __TEXT,__text  _INIntentSlotValueTransformFromSleepAlarmAttribute
+0x18d3407b8  __TEXT,__text  _INIntentSlotValueTransformFromSleepAlarmAttributes
+0x18d09db0c  __TEXT,__text  _INIntentSlotValueTransformFromSpatialEventTrigger
+0x18d09dc2c  __TEXT,__text  _INIntentSlotValueTransformFromSpatialEventTriggers
+0x18cf7a9ac  __TEXT,__text  _INIntentSlotValueTransformFromSpeakerIDInfo
+0x18d2f3438  __TEXT,__text  _INIntentSlotValueTransformFromSpeakerIDInfos
+0x18d10a768  __TEXT,__text  _INIntentSlotValueTransformFromSpeed
+0x18d10a498  __TEXT,__text  _INIntentSlotValueTransformFromSpeedValue
+0x18d10a610  __TEXT,__text  _INIntentSlotValueTransformFromSpeedValues
+0x18d10a870  __TEXT,__text  _INIntentSlotValueTransformFromSpeeds
+0x18cfb78f8  __TEXT,__text  _INIntentSlotValueTransformFromStartCallRequestMetadata
+0x18d373cc8  __TEXT,__text  _INIntentSlotValueTransformFromStartCallRequestMetadatas
+0x18cfa6c64  __TEXT,__text  _INIntentSlotValueTransformFromSticker
+0x18d3740fc  __TEXT,__text  _INIntentSlotValueTransformFromStickers
+0x18cf81bf8  __TEXT,__text  _INIntentSlotValueTransformFromString
+0x18cf707c4  __TEXT,__text  _INIntentSlotValueTransformFromStringValue
+0x18d027c2c  __TEXT,__text  _INIntentSlotValueTransformFromStringValues
+0x18cf732a4  __TEXT,__text  _INIntentSlotValueTransformFromStrings
+0x18d35a0b0  __TEXT,__text  _INIntentSlotValueTransformFromSupportedTrafficIncidentType
+0x18d35a16c  __TEXT,__text  _INIntentSlotValueTransformFromSupportedTrafficIncidentTypes
+0x18d1911d4  __TEXT,__text  _INIntentSlotValueTransformFromTask
+0x18d1d7080  __TEXT,__text  _INIntentSlotValueTransformFromTaskList
+0x18d1d71ec  __TEXT,__text  _INIntentSlotValueTransformFromTaskLists
+0x18d19143c  __TEXT,__text  _INIntentSlotValueTransformFromTasks
+0x18d03765c  __TEXT,__text  _INIntentSlotValueTransformFromTemperature
+0x18d037330  __TEXT,__text  _INIntentSlotValueTransformFromTemperatureValue
+0x18d037504  __TEXT,__text  _INIntentSlotValueTransformFromTemperatureValues
+0x18d037764  __TEXT,__text  _INIntentSlotValueTransformFromTemperatures
+0x18d0e2e74  __TEXT,__text  _INIntentSlotValueTransformFromTemporalEventTrigger
+0x18d0e2f04  __TEXT,__text  _INIntentSlotValueTransformFromTemporalEventTriggers
+0x18d29e3d4  __TEXT,__text  _INIntentSlotValueTransformFromTicketedEvent
+0x18d146b38  __TEXT,__text  _INIntentSlotValueTransformFromTicketedEventReservation
+0x18d146d30  __TEXT,__text  _INIntentSlotValueTransformFromTicketedEventReservations
+0x18d29e4d4  __TEXT,__text  _INIntentSlotValueTransformFromTicketedEvents
+0x18d24d220  __TEXT,__text  _INIntentSlotValueTransformFromTimer
+0x18d24d368  __TEXT,__text  _INIntentSlotValueTransformFromTimers
+0x18cf7a808  __TEXT,__text  _INIntentSlotValueTransformFromTimestamp
+0x18d213e44  __TEXT,__text  _INIntentSlotValueTransformFromTimestamps
+0x18d2174e0  __TEXT,__text  _INIntentSlotValueTransformFromTrainReservation
+0x18d2176d8  __TEXT,__text  _INIntentSlotValueTransformFromTrainReservations
+0x18d29d410  __TEXT,__text  _INIntentSlotValueTransformFromTrainTrip
+0x18d29d58c  __TEXT,__text  _INIntentSlotValueTransformFromTrainTrips
+0x18d0b61e4  __TEXT,__text  _INIntentSlotValueTransformFromURLValue
+0x18d0b641c  __TEXT,__text  _INIntentSlotValueTransformFromURLValues
+0x18d0b3b68  __TEXT,__text  _INIntentSlotValueTransformFromUUIDValue
+0x18d25a194  __TEXT,__text  _INIntentSlotValueTransformFromVoiceCommandDeviceInformation
+0x18d25a260  __TEXT,__text  _INIntentSlotValueTransformFromVoiceCommandDeviceInformations
+0x18d26a210  __TEXT,__text  _INIntentSlotValueTransformFromVoiceCommandStepInfo
+0x18d26a2e8  __TEXT,__text  _INIntentSlotValueTransformFromVoiceCommandStepInfos
+0x18d09e5ac  __TEXT,__text  _INIntentSlotValueTransformFromVolume
+0x18d09e0f8  __TEXT,__text  _INIntentSlotValueTransformFromVolumeValue
+0x18d09e454  __TEXT,__text  _INIntentSlotValueTransformFromVolumeValues
+0x18d09e6b4  __TEXT,__text  _INIntentSlotValueTransformFromVolumes
+0x18d17a680  __TEXT,__text  _INIntentSlotValueTransformFromWellnessMetadataPair
+0x18d17a814  __TEXT,__text  _INIntentSlotValueTransformFromWellnessMetadataPairs
+0x18d181554  __TEXT,__text  _INIntentSlotValueTransformFromWellnessObjectResultValue
+0x18d18165c  __TEXT,__text  _INIntentSlotValueTransformFromWellnessObjectResultValues
+0x18d20e558  __TEXT,__text  _INIntentSlotValueTransformFromWellnessUnitType
+0x18d20eb98  __TEXT,__text  _INIntentSlotValueTransformFromWellnessUnitTypes
+0x18d06f694  __TEXT,__text  _INIntentSlotValueTransformFromWellnessValue
+0x18d06f72c  __TEXT,__text  _INIntentSlotValueTransformFromWellnessValues
+0x18cf7ab30  __TEXT,__text  _INIntentSlotValueTransformFromWholeHouseAudioMetadata
+0x18d3245b8  __TEXT,__text  _INIntentSlotValueTransformFromWholeHouseAudioMetadatas
+0x18d354c24  __TEXT,__text  _INIntentSlotValueTransformFromWorkoutAssociatedItem
+0x18d354d3c  __TEXT,__text  _INIntentSlotValueTransformFromWorkoutAssociatedItems
+0x18d35b4a8  __TEXT,__text  _INIntentSlotValueTransformFromWorkoutCustomization
+0x18d35b53c  __TEXT,__text  _INIntentSlotValueTransformFromWorkoutCustomizations
+0x18d231928  __TEXT,__text  _INIntentSlotValueTransformToActivities
+0x18d23186c  __TEXT,__text  _INIntentSlotValueTransformToActivity
+0x18d28b190  __TEXT,__text  _INIntentSlotValueTransformToAirline
+0x18d28b248  __TEXT,__text  _INIntentSlotValueTransformToAirlines
+0x18d286a74  __TEXT,__text  _INIntentSlotValueTransformToAirport
+0x18d2c46e8  __TEXT,__text  _INIntentSlotValueTransformToAirportGate
+0x18d2c47b0  __TEXT,__text  _INIntentSlotValueTransformToAirportGates
+0x18d286b2c  __TEXT,__text  _INIntentSlotValueTransformToAirports
+0x18d32f5dc  __TEXT,__text  _INIntentSlotValueTransformToAlarm
+0x18d32ff18  __TEXT,__text  _INIntentSlotValueTransformToAlarmSearch
+0x18d330098  __TEXT,__text  _INIntentSlotValueTransformToAlarmSearchs
+0x18d32f7b4  __TEXT,__text  _INIntentSlotValueTransformToAlarms
+0x18d319830  __TEXT,__text  _INIntentSlotValueTransformToAnnouncement
+0x18d3220b4  __TEXT,__text  _INIntentSlotValueTransformToAnnouncementRecord
+0x18d322180  __TEXT,__text  _INIntentSlotValueTransformToAnnouncementRecords
+0x18d3198f8  __TEXT,__text  _INIntentSlotValueTransformToAnnouncements
+0x18cfc0768  __TEXT,__text  _INIntentSlotValueTransformToAppIdentifier
+0x18d2be2e0  __TEXT,__text  _INIntentSlotValueTransformToAppIdentifiers
+0x18d259618  __TEXT,__text  _INIntentSlotValueTransformToArchivedObject
+0x18d2596b0  __TEXT,__text  _INIntentSlotValueTransformToArchivedObjects
+0x18d0b0350  __TEXT,__text  _INIntentSlotValueTransformToBalanceAmountValue
+0x18d11f790  __TEXT,__text  _INIntentSlotValueTransformToBillDetailsValue
+0x18d11f948  __TEXT,__text  _INIntentSlotValueTransformToBillDetailsValues
+0x18d21ef8c  __TEXT,__text  _INIntentSlotValueTransformToBillPayeeValue
+0x18d21f068  __TEXT,__text  _INIntentSlotValueTransformToBillPayeeValues
+0x18d3450cc  __TEXT,__text  _INIntentSlotValueTransformToBoatReservation
+0x18d3452c8  __TEXT,__text  _INIntentSlotValueTransformToBoatReservations
+0x18d2f1320  __TEXT,__text  _INIntentSlotValueTransformToBoatTrip
+0x18d2f146c  __TEXT,__text  _INIntentSlotValueTransformToBoatTrips
+0x18cf48eb0  __TEXT,__text  _INIntentSlotValueTransformToBool
+0x18cf48f70  __TEXT,__text  _INIntentSlotValueTransformToBoolValue
+0x18d012c4c  __TEXT,__text  _INIntentSlotValueTransformToBoolValues
+0x18d01299c  __TEXT,__text  _INIntentSlotValueTransformToBools
+0x18d346dac  __TEXT,__text  _INIntentSlotValueTransformToBusReservation
+0x18d346fa8  __TEXT,__text  _INIntentSlotValueTransformToBusReservations
+0x18d2ef184  __TEXT,__text  _INIntentSlotValueTransformToBusTrip
+0x18d2ef30c  __TEXT,__text  _INIntentSlotValueTransformToBusTrips
+0x18d29ae70  __TEXT,__text  _INIntentSlotValueTransformToCalendarEvent
+0x18d29afdc  __TEXT,__text  _INIntentSlotValueTransformToCalendarEvents
+0x18d01c750  __TEXT,__text  _INIntentSlotValueTransformToCallGroup
+0x18d3655dc  __TEXT,__text  _INIntentSlotValueTransformToCallGroupConversation
+0x18d3696f8  __TEXT,__text  _INIntentSlotValueTransformToCallGroupConversationFilter
+0x18d369808  __TEXT,__text  _INIntentSlotValueTransformToCallGroupConversationFilters
+0x18d3656e8  __TEXT,__text  _INIntentSlotValueTransformToCallGroupConversations
+0x18d01c80c  __TEXT,__text  _INIntentSlotValueTransformToCallGroups
+0x18d372730  __TEXT,__text  _INIntentSlotValueTransformToCallInvite
+0x18d37280c  __TEXT,__text  _INIntentSlotValueTransformToCallInvites
+0x18cfb3934  __TEXT,__text  _INIntentSlotValueTransformToCallRecordFilter
+0x18d34c788  __TEXT,__text  _INIntentSlotValueTransformToCallRecordFilters
+0x18cfb3aec  __TEXT,__text  _INIntentSlotValueTransformToCallRecordValue
+0x18d0ca790  __TEXT,__text  _INIntentSlotValueTransformToCallRecordValues
+0x18d2d5a94  __TEXT,__text  _INIntentSlotValueTransformToCar
+0x18d34df24  __TEXT,__text  _INIntentSlotValueTransformToCarChargingConnectorPower
+0x18d34dfd4  __TEXT,__text  _INIntentSlotValueTransformToCarChargingConnectorPowers
+0x18d34f754  __TEXT,__text  _INIntentSlotValueTransformToCarHeadUnit
+0x18d34f7ec  __TEXT,__text  _INIntentSlotValueTransformToCarHeadUnits
+0x18d2d5c34  __TEXT,__text  _INIntentSlotValueTransformToCars
+0x18d18be40  __TEXT,__text  _INIntentSlotValueTransformToColor
+0x18d32bb1c  __TEXT,__text  _INIntentSlotValueTransformToConnectedCall
+0x18d32bbb0  __TEXT,__text  _INIntentSlotValueTransformToConnectedCalls
+0x18cfa725c  __TEXT,__text  _INIntentSlotValueTransformToContact
+0x18d0e83bc  __TEXT,__text  _INIntentSlotValueTransformToContactCard
+0x18d0e87fc  __TEXT,__text  _INIntentSlotValueTransformToContactCards
+0x18d2920e0  __TEXT,__text  _INIntentSlotValueTransformToContactEventTrigger
+0x18d29216c  __TEXT,__text  _INIntentSlotValueTransformToContactEventTriggers
+0x18cfc7a18  __TEXT,__text  _INIntentSlotValueTransformToContactHandle
+0x18d0e2b74  __TEXT,__text  _INIntentSlotValueTransformToContactRelationship
+0x18d0e2c0c  __TEXT,__text  _INIntentSlotValueTransformToContactRelationships
+0x18cfa73c8  __TEXT,__text  _INIntentSlotValueTransformToContactValue
+0x18d0f69dc  __TEXT,__text  _INIntentSlotValueTransformToContactValues
+0x18cf9d98c  __TEXT,__text  _INIntentSlotValueTransformToContacts
+0x18d141310  __TEXT,__text  _INIntentSlotValueTransformToCurrencyAmount
+0x18cfc8484  __TEXT,__text  _INIntentSlotValueTransformToCurrencyAmountValue
+0x18d1414b0  __TEXT,__text  _INIntentSlotValueTransformToCurrencyAmountValues
+0x18d141368  __TEXT,__text  _INIntentSlotValueTransformToCurrencyAmounts
+0x18cf97e90  __TEXT,__text  _INIntentSlotValueTransformToCustomObject
+0x18d0d5d08  __TEXT,__text  _INIntentSlotValueTransformToCustomObjects
+0x18cfc1cf4  __TEXT,__text  _INIntentSlotValueTransformToDataString
+0x18d1cb3b4  __TEXT,__text  _INIntentSlotValueTransformToDataStringList
+0x18cf96120  __TEXT,__text  _INIntentSlotValueTransformToDataStrings
+0x18d0b55f8  __TEXT,__text  _INIntentSlotValueTransformToDataValue
+0x18d0b5650  __TEXT,__text  _INIntentSlotValueTransformToDataValues
+0x18cfbfc94  __TEXT,__text  _INIntentSlotValueTransformToDateTime
+0x18cf6bec0  __TEXT,__text  _INIntentSlotValueTransformToDateTimeRange
+0x18cf6f3e0  __TEXT,__text  _INIntentSlotValueTransformToDateTimeRangeValue
+0x18d0b182c  __TEXT,__text  _INIntentSlotValueTransformToDateTimeRangeValues
+0x18d0b16d4  __TEXT,__text  _INIntentSlotValueTransformToDateTimeRanges
+0x18d0772a8  __TEXT,__text  _INIntentSlotValueTransformToDateTimes
+0x18d041368  __TEXT,__text  _INIntentSlotValueTransformToDecimalNumberValue
+0x18d30608c  __TEXT,__text  _INIntentSlotValueTransformToDevice
+0x18d2d05cc  __TEXT,__text  _INIntentSlotValueTransformToDeviceDetail
+0x18d2d0724  __TEXT,__text  _INIntentSlotValueTransformToDeviceDetails
+0x18d306148  __TEXT,__text  _INIntentSlotValueTransformToDevices
+0x18d0f7668  __TEXT,__text  _INIntentSlotValueTransformToDialingContact
+0x18d0f784c  __TEXT,__text  _INIntentSlotValueTransformToDialingContacts
+0x18d123aac  __TEXT,__text  _INIntentSlotValueTransformToDictionary
+0x18d186700  __TEXT,__text  _INIntentSlotValueTransformToDistance
+0x18d185fd0  __TEXT,__text  _INIntentSlotValueTransformToDistanceValue
+0x18d1865b8  __TEXT,__text  _INIntentSlotValueTransformToDistanceValues
+0x18d186758  __TEXT,__text  _INIntentSlotValueTransformToDistances
+0x18cf497b0  __TEXT,__text  _INIntentSlotValueTransformToDouble
+0x18cf49f44  __TEXT,__text  _INIntentSlotValueTransformToDoubleValue
+0x18d0cb08c  __TEXT,__text  _INIntentSlotValueTransformToDoubleValues
+0x18d0caddc  __TEXT,__text  _INIntentSlotValueTransformToDoubles
+0x18d29a600  __TEXT,__text  _INIntentSlotValueTransformToEnergies
+0x18d29a5a8  __TEXT,__text  _INIntentSlotValueTransformToEnergy
+0x18d29a2d4  __TEXT,__text  _INIntentSlotValueTransformToEnergyValue
+0x18d29a460  __TEXT,__text  _INIntentSlotValueTransformToEnergyValues
+0x18d2302e8  __TEXT,__text  _INIntentSlotValueTransformToEvent
+0x18d1aa0ec  __TEXT,__text  _INIntentSlotValueTransformToEventParticipant
+0x18d1aa1dc  __TEXT,__text  _INIntentSlotValueTransformToEventParticipants
+0x18d2303a4  __TEXT,__text  _INIntentSlotValueTransformToEvents
+0x18cfc85f0  __TEXT,__text  _INIntentSlotValueTransformToFile
+0x18cfc8780  __TEXT,__text  _INIntentSlotValueTransformToFiles
+0x18cfd9ad4  __TEXT,__text  _INIntentSlotValueTransformToFinancialAccountValue
+0x18cfd9c30  __TEXT,__text  _INIntentSlotValueTransformToFinancialAccountValues
+0x18d28931c  __TEXT,__text  _INIntentSlotValueTransformToFlight
+0x18d09c370  __TEXT,__text  _INIntentSlotValueTransformToFlightReservation
+0x18d09c56c  __TEXT,__text  _INIntentSlotValueTransformToFlightReservations
+0x18d289488  __TEXT,__text  _INIntentSlotValueTransformToFlights
+0x18d36b4e0  __TEXT,__text  _INIntentSlotValueTransformToFocusStatus
+0x18d36b560  __TEXT,__text  _INIntentSlotValueTransformToFocusStatuses
+0x18d1850e0  __TEXT,__text  _INIntentSlotValueTransformToGEOLatLng
+0x18d185148  __TEXT,__text  _INIntentSlotValueTransformToGEOLatLngs
+0x18d193358  __TEXT,__text  _INIntentSlotValueTransformToGEOLocation
+0x18d193468  __TEXT,__text  _INIntentSlotValueTransformToGEOLocations
+0x18d232864  __TEXT,__text  _INIntentSlotValueTransformToGeographicalFeature
+0x18d232920  __TEXT,__text  _INIntentSlotValueTransformToGeographicalFeatures
+0x18d31369c  __TEXT,__text  _INIntentSlotValueTransformToGetSettingResponseData
+0x18d3137b0  __TEXT,__text  _INIntentSlotValueTransformToGetSettingResponseDatas
+0x18d1cfd70  __TEXT,__text  _INIntentSlotValueTransformToHomeAction
+0x18d1cfee0  __TEXT,__text  _INIntentSlotValueTransformToHomeActions
+0x18d051aac  __TEXT,__text  _INIntentSlotValueTransformToHomeAttribute
+0x18d0e4168  __TEXT,__text  _INIntentSlotValueTransformToHomeAttributeValue
+0x18d0e4368  __TEXT,__text  _INIntentSlotValueTransformToHomeAttributeValues
+0x18d051bf4  __TEXT,__text  _INIntentSlotValueTransformToHomeAttributes
+0x18d35c0f8  __TEXT,__text  _INIntentSlotValueTransformToHomeAutomationEntityProvider
+0x18d35c394  __TEXT,__text  _INIntentSlotValueTransformToHomeAutomationEntityProviders
+0x18d362090  __TEXT,__text  _INIntentSlotValueTransformToHomeAutomationFromEntities
+0x18d361fe8  __TEXT,__text  _INIntentSlotValueTransformToHomeAutomationFromEntity
+0x18d24fe64  __TEXT,__text  _INIntentSlotValueTransformToHomeContent
+0x18d24ff20  __TEXT,__text  _INIntentSlotValueTransformToHomeContents
+0x18d033e64  __TEXT,__text  _INIntentSlotValueTransformToHomeEntities
+0x18d033bb4  __TEXT,__text  _INIntentSlotValueTransformToHomeEntity
+0x18d27036c  __TEXT,__text  _INIntentSlotValueTransformToHomeEntityResponse
+0x18d270428  __TEXT,__text  _INIntentSlotValueTransformToHomeEntityResponses
+0x18d25210c  __TEXT,__text  _INIntentSlotValueTransformToHomeFilter
+0x18d252360  __TEXT,__text  _INIntentSlotValueTransformToHomeFilters
+0x18d26f72c  __TEXT,__text  _INIntentSlotValueTransformToHomeUserTask
+0x18d2714c4  __TEXT,__text  _INIntentSlotValueTransformToHomeUserTaskResponse
+0x18d271570  __TEXT,__text  _INIntentSlotValueTransformToHomeUserTaskResponses
+0x18d26f7f4  __TEXT,__text  _INIntentSlotValueTransformToHomeUserTasks
+0x18cf4a1c4  __TEXT,__text  _INIntentSlotValueTransformToImageValue
+0x18d102cfc  __TEXT,__text  _INIntentSlotValueTransformToImageValues
+0x18cfc7c44  __TEXT,__text  _INIntentSlotValueTransformToInteger
+0x18cfc7c9c  __TEXT,__text  _INIntentSlotValueTransformToIntegerValue
+0x18d00e878  __TEXT,__text  _INIntentSlotValueTransformToIntegerValues
+0x18d00e470  __TEXT,__text  _INIntentSlotValueTransformToIntegers
+0x18d100f00  __TEXT,__text  _INIntentSlotValueTransformToIntent
+0x18d27f6c4  __TEXT,__text  _INIntentSlotValueTransformToIntentExecutionResult
+0x18d27f7dc  __TEXT,__text  _INIntentSlotValueTransformToIntentExecutionResults
+0x18d101074  __TEXT,__text  _INIntentSlotValueTransformToIntents
+0x18d0d0e08  __TEXT,__text  _INIntentSlotValueTransformToJSONDictionary
+0x18cfc88ec  __TEXT,__text  _INIntentSlotValueTransformToLocation
+0x18cfcc11c  __TEXT,__text  _INIntentSlotValueTransformToLocationValue
+0x18d195bcc  __TEXT,__text  _INIntentSlotValueTransformToLocationValues
+0x18d195130  __TEXT,__text  _INIntentSlotValueTransformToLocations
+0x18d0272ac  __TEXT,__text  _INIntentSlotValueTransformToLodgingReservation
+0x18d027508  __TEXT,__text  _INIntentSlotValueTransformToLodgingReservations
+0x18cf66600  __TEXT,__text  _INIntentSlotValueTransformToLong
+0x18cf66658  __TEXT,__text  _INIntentSlotValueTransformToLongValue
+0x18d00eb28  __TEXT,__text  _INIntentSlotValueTransformToLongValues
+0x18d00e5c8  __TEXT,__text  _INIntentSlotValueTransformToLongs
+0x18d10e860  __TEXT,__text  _INIntentSlotValueTransformToMass
+0x18d10e37c  __TEXT,__text  _INIntentSlotValueTransformToMassValue
+0x18d10e718  __TEXT,__text  _INIntentSlotValueTransformToMassValues
+0x18d10e8b8  __TEXT,__text  _INIntentSlotValueTransformToMasses
+0x18d2c70dc  __TEXT,__text  _INIntentSlotValueTransformToMediaDestination
+0x18d2c7184  __TEXT,__text  _INIntentSlotValueTransformToMediaDestinations
+0x18d29b438  __TEXT,__text  _INIntentSlotValueTransformToMediaItemGroup
+0x18d29b4b0  __TEXT,__text  _INIntentSlotValueTransformToMediaItemGroups
+0x18cf6ab74  __TEXT,__text  _INIntentSlotValueTransformToMediaItemValue
+0x18cf6aa10  __TEXT,__text  _INIntentSlotValueTransformToMediaItemValues
+0x18cf6b910  __TEXT,__text  _INIntentSlotValueTransformToMediaSearch
+0x18d25db00  __TEXT,__text  _INIntentSlotValueTransformToMediaSearchs
+0x18d2f1fc0  __TEXT,__text  _INIntentSlotValueTransformToMediaSubItem
+0x18cf6b170  __TEXT,__text  _INIntentSlotValueTransformToMediaSubItems
+0x18cfc720c  __TEXT,__text  _INIntentSlotValueTransformToMessage
+0x18cfc7d74  __TEXT,__text  _INIntentSlotValueTransformToMessageLinkMetadata
+0x18d258100  __TEXT,__text  _INIntentSlotValueTransformToMessageLinkMetadatas
+0x18cfcc038  __TEXT,__text  _INIntentSlotValueTransformToMessageReaction
+0x18d0d38f8  __TEXT,__text  _INIntentSlotValueTransformToMessageReactions
+0x18cfc5878  __TEXT,__text  _INIntentSlotValueTransformToMessages
+0x18d01c380  __TEXT,__text  _INIntentSlotValueTransformToModifyNickname
+0x18d01c430  __TEXT,__text  _INIntentSlotValueTransformToModifyNicknames
+0x18d0c1594  __TEXT,__text  _INIntentSlotValueTransformToModifyRelationship
+0x18d0c1644  __TEXT,__text  _INIntentSlotValueTransformToModifyRelationships
+0x18d06a60c  __TEXT,__text  _INIntentSlotValueTransformToNote
+0x18d18c30c  __TEXT,__text  _INIntentSlotValueTransformToNoteContent
+0x18d18c454  __TEXT,__text  _INIntentSlotValueTransformToNoteContents
+0x18d06a794  __TEXT,__text  _INIntentSlotValueTransformToNotes
+0x18d17ecd8  __TEXT,__text  _INIntentSlotValueTransformToNull
+0x18d17ecfc  __TEXT,__text  _INIntentSlotValueTransformToNulls
+0x18d30901c  __TEXT,__text  _INIntentSlotValueTransformToNumericSettingValue
+0x18d3090b4  __TEXT,__text  _INIntentSlotValueTransformToNumericSettingValues
+0x18d01be4c  __TEXT,__text  _INIntentSlotValueTransformToPaymentAmountValue
+0x18d01bef8  __TEXT,__text  _INIntentSlotValueTransformToPaymentAmountValues
+0x18d09fc4c  __TEXT,__text  _INIntentSlotValueTransformToPaymentMethod
+0x18d09fa00  __TEXT,__text  _INIntentSlotValueTransformToPaymentMethodValue
+0x18d09fae8  __TEXT,__text  _INIntentSlotValueTransformToPaymentMethodValues
+0x18d09fcc8  __TEXT,__text  _INIntentSlotValueTransformToPaymentMethods
+0x18d16a06c  __TEXT,__text  _INIntentSlotValueTransformToPaymentRecord
+0x18d16a208  __TEXT,__text  _INIntentSlotValueTransformToPaymentRecords
+0x18d2312d0  __TEXT,__text  _INIntentSlotValueTransformToPlace
+0x18d2313e8  __TEXT,__text  _INIntentSlotValueTransformToPlaces
+0x18d05cec4  __TEXT,__text  _INIntentSlotValueTransformToPower
+0x18d05cad8  __TEXT,__text  _INIntentSlotValueTransformToPowerValue
+0x18d05cd7c  __TEXT,__text  _INIntentSlotValueTransformToPowerValues
+0x18d05cf1c  __TEXT,__text  _INIntentSlotValueTransformToPowers
+0x18d2f8284  __TEXT,__text  _INIntentSlotValueTransformToPrivateAddMediaIntentData
+0x18d2f837c  __TEXT,__text  _INIntentSlotValueTransformToPrivateAddMediaIntentDatas
+0x18cf6cdc8  __TEXT,__text  _INIntentSlotValueTransformToPrivateMediaIntentData
+0x18d2f3960  __TEXT,__text  _INIntentSlotValueTransformToPrivateMediaIntentDatas
+0x18cf6a784  __TEXT,__text  _INIntentSlotValueTransformToPrivateMediaItemValueData
+0x18d2e4224  __TEXT,__text  _INIntentSlotValueTransformToPrivateMediaItemValueDatas
+0x18cf6cac0  __TEXT,__text  _INIntentSlotValueTransformToPrivatePlayMediaIntentData
+0x18d2eaf10  __TEXT,__text  _INIntentSlotValueTransformToPrivatePlayMediaIntentDatas
+0x18d31ded4  __TEXT,__text  _INIntentSlotValueTransformToPrivateSearchForMediaIntentData
+0x18d31dff0  __TEXT,__text  _INIntentSlotValueTransformToPrivateSearchForMediaIntentDatas
+0x18d2f93d8  __TEXT,__text  _INIntentSlotValueTransformToPrivateUpdateMediaAffinityIntentData
+0x18d2f94a0  __TEXT,__text  _INIntentSlotValueTransformToPrivateUpdateMediaAffinityIntentDatas
+0x18cf9bdfc  __TEXT,__text  _INIntentSlotValueTransformToProperty
+0x18d29f694  __TEXT,__text  _INIntentSlotValueTransformToRentalCar
+0x18d12f4f8  __TEXT,__text  _INIntentSlotValueTransformToRentalCarReservation
+0x18d12f754  __TEXT,__text  _INIntentSlotValueTransformToRentalCarReservations
+0x18d29f78c  __TEXT,__text  _INIntentSlotValueTransformToRentalCars
+0x18d2c5414  __TEXT,__text  _INIntentSlotValueTransformToReservationAction
+0x18d2c54f8  __TEXT,__text  _INIntentSlotValueTransformToReservationActions
+0x18d2b6648  __TEXT,__text  _INIntentSlotValueTransformToReservationWrapper
+0x18d2b687c  __TEXT,__text  _INIntentSlotValueTransformToReservationWrappers
+0x18d07b5f4  __TEXT,__text  _INIntentSlotValueTransformToRestaurantReservation
+0x18d07b820  __TEXT,__text  _INIntentSlotValueTransformToRestaurantReservations
+0x18d0f186c  __TEXT,__text  _INIntentSlotValueTransformToRideOption
+0x18d0f1e40  __TEXT,__text  _INIntentSlotValueTransformToRideOptions
+0x18d07db9c  __TEXT,__text  _INIntentSlotValueTransformToRideStatus
+0x18d0f68ec  __TEXT,__text  _INIntentSlotValueTransformToScoredContactValue
+0x18d2850bc  __TEXT,__text  _INIntentSlotValueTransformToSeat
+0x18d285194  __TEXT,__text  _INIntentSlotValueTransformToSeats
+0x18d283900  __TEXT,__text  _INIntentSlotValueTransformToSendMessageAttachment
+0x18cfc1f50  __TEXT,__text  _INIntentSlotValueTransformToSendMessageAttachments
+0x18d302124  __TEXT,__text  _INIntentSlotValueTransformToSettingMetadata
+0x18d302200  __TEXT,__text  _INIntentSlotValueTransformToSettingMetadatas
+0x18d2c0504  __TEXT,__text  _INIntentSlotValueTransformToShortcutOverview
+0x18d2c0650  __TEXT,__text  _INIntentSlotValueTransformToShortcutOverviews
+0x18d34091c  __TEXT,__text  _INIntentSlotValueTransformToSleepAlarmAttribute
+0x18d3409cc  __TEXT,__text  _INIntentSlotValueTransformToSleepAlarmAttributes
+0x18d09dd90  __TEXT,__text  _INIntentSlotValueTransformToSpatialEventTrigger
+0x18d09de98  __TEXT,__text  _INIntentSlotValueTransformToSpatialEventTriggers
+0x18cfc03f0  __TEXT,__text  _INIntentSlotValueTransformToSpeakerIDInfo
+0x18d2f359c  __TEXT,__text  _INIntentSlotValueTransformToSpeakerIDInfos
+0x18d10ac6c  __TEXT,__text  _INIntentSlotValueTransformToSpeed
+0x18d10a9c8  __TEXT,__text  _INIntentSlotValueTransformToSpeedValue
+0x18d10ab24  __TEXT,__text  _INIntentSlotValueTransformToSpeedValues
+0x18d10acc4  __TEXT,__text  _INIntentSlotValueTransformToSpeeds
+0x18d373e2c  __TEXT,__text  _INIntentSlotValueTransformToStartCallRequestMetadata
+0x18d373e9c  __TEXT,__text  _INIntentSlotValueTransformToStartCallRequestMetadatas
+0x18d374260  __TEXT,__text  _INIntentSlotValueTransformToSticker
+0x18d374350  __TEXT,__text  _INIntentSlotValueTransformToStickers
+0x18cf6a4f0  __TEXT,__text  _INIntentSlotValueTransformToString
+0x18cf6a548  __TEXT,__text  _INIntentSlotValueTransformToStringValue
+0x18d027d84  __TEXT,__text  _INIntentSlotValueTransformToStringValues
+0x18cf6bc1c  __TEXT,__text  _INIntentSlotValueTransformToStrings
+0x18d35a2d0  __TEXT,__text  _INIntentSlotValueTransformToSupportedTrafficIncidentType
+0x18d35a37c  __TEXT,__text  _INIntentSlotValueTransformToSupportedTrafficIncidentTypes
+0x18d1915a0  __TEXT,__text  _INIntentSlotValueTransformToTask
+0x18d1d7350  __TEXT,__text  _INIntentSlotValueTransformToTaskList
+0x18d1d74b8  __TEXT,__text  _INIntentSlotValueTransformToTaskLists
+0x18d1917d4  __TEXT,__text  _INIntentSlotValueTransformToTasks
+0x18d037c38  __TEXT,__text  _INIntentSlotValueTransformToTemperature
+0x18d0378bc  __TEXT,__text  _INIntentSlotValueTransformToTemperatureValue
+0x18d037af0  __TEXT,__text  _INIntentSlotValueTransformToTemperatureValues
+0x18d037c90  __TEXT,__text  _INIntentSlotValueTransformToTemperatures
+0x18d0e3068  __TEXT,__text  _INIntentSlotValueTransformToTemporalEventTrigger
+0x18d0e30f4  __TEXT,__text  _INIntentSlotValueTransformToTemporalEventTriggers
+0x18d29e638  __TEXT,__text  _INIntentSlotValueTransformToTicketedEvent
+0x18d146e94  __TEXT,__text  _INIntentSlotValueTransformToTicketedEventReservation
+0x18d147090  __TEXT,__text  _INIntentSlotValueTransformToTicketedEventReservations
+0x18d29e73c  __TEXT,__text  _INIntentSlotValueTransformToTicketedEvents
+0x18d24d4cc  __TEXT,__text  _INIntentSlotValueTransformToTimer
+0x18d24d5cc  __TEXT,__text  _INIntentSlotValueTransformToTimers
+0x18d213f9c  __TEXT,__text  _INIntentSlotValueTransformToTimestamp
+0x18d21402c  __TEXT,__text  _INIntentSlotValueTransformToTimestamps
+0x18d21783c  __TEXT,__text  _INIntentSlotValueTransformToTrainReservation
+0x18d217a38  __TEXT,__text  _INIntentSlotValueTransformToTrainReservations
+0x18d29d6f0  __TEXT,__text  _INIntentSlotValueTransformToTrainTrip
+0x18d29d878  __TEXT,__text  _INIntentSlotValueTransformToTrainTrips
+0x18d0b6574  __TEXT,__text  _INIntentSlotValueTransformToURLValue
+0x18d0b6630  __TEXT,__text  _INIntentSlotValueTransformToURLValues
+0x18d0b3be4  __TEXT,__text  _INIntentSlotValueTransformToUUIDValue
+0x18d25a3c4  __TEXT,__text  _INIntentSlotValueTransformToVoiceCommandDeviceInformation
+0x18d25a464  __TEXT,__text  _INIntentSlotValueTransformToVoiceCommandDeviceInformations
+0x18d26a44c  __TEXT,__text  _INIntentSlotValueTransformToVoiceCommandStepInfo
+0x18d26a514  __TEXT,__text  _INIntentSlotValueTransformToVoiceCommandStepInfos
+0x18d09ef30  __TEXT,__text  _INIntentSlotValueTransformToVolume
+0x18d09e80c  __TEXT,__text  _INIntentSlotValueTransformToVolumeValue
+0x18d09ede8  __TEXT,__text  _INIntentSlotValueTransformToVolumeValues
+0x18d09ef88  __TEXT,__text  _INIntentSlotValueTransformToVolumes
+0x18d17a978  __TEXT,__text  _INIntentSlotValueTransformToWellnessMetadataPair
+0x18d17ab48  __TEXT,__text  _INIntentSlotValueTransformToWellnessMetadataPairs
+0x18d1817c0  __TEXT,__text  _INIntentSlotValueTransformToWellnessObjectResultValue
+0x18d1818c8  __TEXT,__text  _INIntentSlotValueTransformToWellnessObjectResultValues
+0x18d20ecf0  __TEXT,__text  _INIntentSlotValueTransformToWellnessUnitType
+0x18d20fac4  __TEXT,__text  _INIntentSlotValueTransformToWellnessUnitTypes
+0x18d06f890  __TEXT,__text  _INIntentSlotValueTransformToWellnessValue
+0x18d06f948  __TEXT,__text  _INIntentSlotValueTransformToWellnessValues
+0x18d32471c  __TEXT,__text  _INIntentSlotValueTransformToWholeHouseAudioMetadata
+0x18d324a24  __TEXT,__text  _INIntentSlotValueTransformToWholeHouseAudioMetadatas
+0x18d354ea0  __TEXT,__text  _INIntentSlotValueTransformToWorkoutAssociatedItem
+0x18d354f8c  __TEXT,__text  _INIntentSlotValueTransformToWorkoutAssociatedItems
+0x18d35b6a0  __TEXT,__text  _INIntentSlotValueTransformToWorkoutCustomization
+0x18d35b738  __TEXT,__text  _INIntentSlotValueTransformToWorkoutCustomizations
+0x1e097bcf8  __DATA_CONST,__const  _INIntentTestConfirmUnexpectedException
+0x1e097bcf0  __DATA_CONST,__const  _INIntentTestHandleUnexpectedException
+0x1e097bce8  __DATA_CONST,__const  _INIntentTestResolveUnexpectedException
+0x18cf708a0  __TEXT,__text  _INIntentWithTypedIntent
+0x1e097bce0  __DATA_CONST,__const  _INIntentsExtensionDiscoveryEntitlement
+0x1e097bcd8  __DATA_CONST,__const  _INIntentsExtensionHandleInAppEntitlement
+0x1e097bcd0  __DATA_CONST,__const  _INIntentsFrameworkBundleIdentifier
+0x1e097bcc8  __DATA_CONST,__const  _INIntentsFrameworkLocalizationTableName
+0x18d187cdc  __TEXT,__text  _INIntentsRestrictedWhileLocked
+0x18d188160  __TEXT,__text  _INIntentsRestrictedWhileProtectedDataUnavailable
+0x1e097bcc0  __DATA_CONST,__const  _INIntentsServiceExtensionPointName
+0x1e097bcb8  __DATA_CONST,__const  _INIntentsUIServiceExtensionPointName
+0x1e097bcb0  __DATA_CONST,__const  _INInteractionAudioCallContentType
+0x1e097bca8  __DATA_CONST,__const  _INInteractionContentType
+0x1e097bca0  __DATA_CONST,__const  _INInteractionMediaAirPlayContentType
+0x1e097bc98  __DATA_CONST,__const  _INInteractionMediaPlaybackContentType
+0x1e097bc90  __DATA_CONST,__const  _INInteractionMessageContentType
+0x1e097bc88  __DATA_CONST,__const  _INInteractionSpotlightDomain
+0x1e097bc80  __DATA_CONST,__const  _INInteractionSpotlightIdentifierPrefix
+0x1e097bc78  __DATA_CONST,__const  _INInteractionVideoCallContentType
+0x18cf3b2b4  __TEXT,__text  _INInteractionWithTypedInteraction
+0x18d186cf0  __TEXT,__text  _INIsDeviceLocked
+0x18d187940  __TEXT,__text  _INIsHomeAccessory
+0x18d1878c4  __TEXT,__text  _INIsHomepod
+0x18d1890b4  __TEXT,__text  _INIsInternalInstall
+0x18cf429c8  __TEXT,__text  _INIsReservationInteraction
+0x18cf61c44  __TEXT,__text  _INIssueSandboxExtensionToProcess
+0x18cf79fd0  __TEXT,__text  _INIssueSandboxExtensionsForFileURLEnumerable
+0x18cfbae68  __TEXT,__text  _INIssueSandboxExtensionsForFileURLEnumerableToProcess
+0x1e097bc70  __DATA_CONST,__const  _INItemIntentClassAttribute
+0x1e097bc68  __DATA_CONST,__const  _INItemIntentDataAttribute
+0x1e097bc60  __DATA_CONST,__const  _INJoinCallIntentIdentifier
+0x18d362e2c  __TEXT,__text  _INJoinCallIntentResponseCodeGetName
+0x18d0e5044  __TEXT,__text  _INKeyImageUtilitiesDefaultCompareSubProducers
+0x18d0e4e38  __TEXT,__text  _INKeyImageUtilitiesKeyImageBySubProducerComparison
+0x18d0e50c8  __TEXT,__text  _INKeyImageUtilitiesSortedSubProducersForSlotComposingProducer
+0x1e097bc58  __DATA_CONST,__const  _INLPLinkMetadataTypeIdentifier
+0x18d2d2c54  __TEXT,__text  _INListCarsIntentResponseCodeGetName
+0x1e097bc50  __DATA_CONST,__const  _INListRideOptionsIntentIdentifier
+0x18d0bb6f8  __TEXT,__text  _INListRideOptionsIntentResponseCodeGetName
+0x18d2be668  __TEXT,__text  _INListShortcutsIntentResponseCodeGetName
+0x18cf9f368  __TEXT,__text  _INLocalAppBundleIdentifierForIntentBundleIdentifier
+0x18d1b2510  __TEXT,__text  _INLocationSearchTypeGetBackingType
+0x18d1b252c  __TEXT,__text  _INLocationSearchTypeGetFacadeType
+0x18d1b2578  __TEXT,__text  _INLocationSearchTypeGetLocalizedName
+0x18d1b2538  __TEXT,__text  _INLocationSearchTypeGetName
+0x18d1b2504  __TEXT,__text  _INLocationSearchTypeHasBackingType
+0x18d1b2554  __TEXT,__text  _INLocationSearchTypeWithString
+0x1eb5e8d48  __DATA,__data  _INLogCategoryAppResolver
+0x1eb5e8d40  __DATA,__data  _INLogCategoryIntents
+0x1eb5e9ac0  __DATA,__common  _INLogContextAppResolver
+0x18cfc3e58  __TEXT,__text  _INLogInitIfNeeded
+0x1eb5e8d38  __DATA,__data  _INLogShortcutsSubsystem
+0x1eb5e8d30  __DATA,__data  _INLogSiriSubsystem
+0x18d35369c  __TEXT,__text  _INMapsTransportTypeGetBackingType
+0x18d3536ac  __TEXT,__text  _INMapsTransportTypeGetFacadeType
+0x18d3537a4  __TEXT,__text  _INMapsTransportTypeGetLocalizedName
+0x18d3536c8  __TEXT,__text  _INMapsTransportTypeGetName
+0x18d353690  __TEXT,__text  _INMapsTransportTypeHasBackingType
+0x18d359a50  __TEXT,__text  _INMapsTransportTypeOptionsAddBackingType
+0x18d359a00  __TEXT,__text  _INMapsTransportTypeOptionsContainsBackingType
+0x18d359924  __TEXT,__text  _INMapsTransportTypeOptionsEnumerateBackingTypes
+0x18d359d6c  __TEXT,__text  _INMapsTransportTypeOptionsGetLocalizedNames
+0x18d359af8  __TEXT,__text  _INMapsTransportTypeOptionsGetNames
+0x18d359aa4  __TEXT,__text  _INMapsTransportTypeOptionsRemoveBackingType
+0x18d359bc8  __TEXT,__text  _INMapsTransportTypeOptionsWithNames
+0x18d3536f0  __TEXT,__text  _INMapsTransportTypeWithString
+0x18d263334  __TEXT,__text  _INMediaAffinityTypeGetBackingType
+0x18d263344  __TEXT,__text  _INMediaAffinityTypeGetFacadeType
+0x18d2633f0  __TEXT,__text  _INMediaAffinityTypeGetLocalizedName
+0x18d263364  __TEXT,__text  _INMediaAffinityTypeGetName
+0x18d263328  __TEXT,__text  _INMediaAffinityTypeHasBackingType
+0x18d263390  __TEXT,__text  _INMediaAffinityTypeWithString
+0x18d32a210  __TEXT,__text  _INMediaConfidenceLevelGetBackingType
+0x18d32a228  __TEXT,__text  _INMediaConfidenceLevelGetFacadeType
+0x18d32a2fc  __TEXT,__text  _INMediaConfidenceLevelGetLocalizedName
+0x18d32a258  __TEXT,__text  _INMediaConfidenceLevelGetName
+0x18d32a204  __TEXT,__text  _INMediaConfidenceLevelHasBackingType
+0x18d32a280  __TEXT,__text  _INMediaConfidenceLevelWithString
+0x18d26786c  __TEXT,__text  _INMediaDestinationTypeGetBackingType
+0x18d26787c  __TEXT,__text  _INMediaDestinationTypeGetFacadeType
+0x18d267928  __TEXT,__text  _INMediaDestinationTypeGetLocalizedName
+0x18d26789c  __TEXT,__text  _INMediaDestinationTypeGetName
+0x18d267860  __TEXT,__text  _INMediaDestinationTypeHasBackingType
+0x18d2678c8  __TEXT,__text  _INMediaDestinationTypeWithString
+0x18cfeee4c  __TEXT,__text  _INMediaDomainGetIntentDescriptionWithDataClass
+0x18cfeede4  __TEXT,__text  _INMediaDomainGetIntentDescriptionWithFacadeClass
+0x18cf6a370  __TEXT,__text  _INMediaDomainGetIntentDescriptionWithName
+0x18cfeb8d8  __TEXT,__text  _INMediaDomainGetIntentDescriptionWithType
+0x18cfeef1c  __TEXT,__text  _INMediaDomainGetIntentResponseDescriptionWithDataClass
+0x18cfeeeb4  __TEXT,__text  _INMediaDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cf94c78  __TEXT,__text  _INMediaDomainGetIntentResponseDescriptionWithName
+0x18cfed3dc  __TEXT,__text  _INMediaDomainGetIntentResponseDescriptionWithType
+0x18d244fd8  __TEXT,__text  _INMediaItemTypeGetBackingType
+0x18d244fe8  __TEXT,__text  _INMediaItemTypeGetFacadeType
+0x18d245284  __TEXT,__text  _INMediaItemTypeGetLocalizedName
+0x18d245004  __TEXT,__text  _INMediaItemTypeGetName
+0x18d244fcc  __TEXT,__text  _INMediaItemTypeHasBackingType
+0x18d24502c  __TEXT,__text  _INMediaItemTypeWithString
+0x18d264200  __TEXT,__text  _INMediaReferenceGetBackingType
+0x18d264210  __TEXT,__text  _INMediaReferenceGetFacadeType
+0x18d2642bc  __TEXT,__text  _INMediaReferenceGetLocalizedName
+0x18d264230  __TEXT,__text  _INMediaReferenceGetName
+0x18d2641f4  __TEXT,__text  _INMediaReferenceHasBackingType
+0x18d26425c  __TEXT,__text  _INMediaReferenceWithString
+0x18d2675fc  __TEXT,__text  _INMediaSortOrderGetBackingType
+0x18d26760c  __TEXT,__text  _INMediaSortOrderGetFacadeType
+0x18d267758  __TEXT,__text  _INMediaSortOrderGetLocalizedName
+0x18d267628  __TEXT,__text  _INMediaSortOrderGetName
+0x18d2675f0  __TEXT,__text  _INMediaSortOrderHasBackingType
+0x18d267650  __TEXT,__text  _INMediaSortOrderWithString
+0x18cfe45c8  __TEXT,__text  _INMenstruationValueTypeGetBackingType
+0x18cfe45d8  __TEXT,__text  _INMenstruationValueTypeGetFacadeType
+0x18cfe4698  __TEXT,__text  _INMenstruationValueTypeGetLocalizedName
+0x18cfe45f4  __TEXT,__text  _INMenstruationValueTypeGetName
+0x18cfe45bc  __TEXT,__text  _INMenstruationValueTypeHasBackingType
+0x18cfe461c  __TEXT,__text  _INMenstruationValueTypeWithString
+0x18d0dc010  __TEXT,__text  _INMessageAttributeGetBackingType
+0x18d0dc024  __TEXT,__text  _INMessageAttributeGetFacadeType
+0x18d0dc11c  __TEXT,__text  _INMessageAttributeGetLocalizedName
+0x18d0dc040  __TEXT,__text  _INMessageAttributeGetName
+0x18d0dc000  __TEXT,__text  _INMessageAttributeHasBackingType
+0x18cfa1308  __TEXT,__text  _INMessageAttributeOptionsAddBackingType
+0x18d119ba0  __TEXT,__text  _INMessageAttributeOptionsContainsBackingType
+0x18cf9de44  __TEXT,__text  _INMessageAttributeOptionsEnumerateBackingTypes
+0x18d119de8  __TEXT,__text  _INMessageAttributeOptionsGetLocalizedNames
+0x18cfa101c  __TEXT,__text  _INMessageAttributeOptionsGetNames
+0x18d119bf0  __TEXT,__text  _INMessageAttributeOptionsRemoveBackingType
+0x18d119c44  __TEXT,__text  _INMessageAttributeOptionsWithNames
+0x18d0dc068  __TEXT,__text  _INMessageAttributeWithString
+0x18d26b590  __TEXT,__text  _INMessageEffectTypeGetBackingType
+0x18d26b5a4  __TEXT,__text  _INMessageEffectTypeGetFacadeType
+0x18d26b77c  __TEXT,__text  _INMessageEffectTypeGetLocalizedName
+0x18d26b5c0  __TEXT,__text  _INMessageEffectTypeGetName
+0x18d26b580  __TEXT,__text  _INMessageEffectTypeHasBackingType
+0x18d26b5e8  __TEXT,__text  _INMessageEffectTypeWithString
+0x18d252990  __TEXT,__text  _INMessageLinkMediaTypeGetBackingType
+0x18d2529a8  __TEXT,__text  _INMessageLinkMediaTypeGetFacadeType
+0x18d252ce8  __TEXT,__text  _INMessageLinkMediaTypeGetLocalizedName
+0x18d252abc  __TEXT,__text  _INMessageLinkMediaTypeGetName
+0x18d252984  __TEXT,__text  _INMessageLinkMediaTypeHasBackingType
+0x18d252ae4  __TEXT,__text  _INMessageLinkMediaTypeWithString
+0x18d156198  __TEXT,__text  _INMessagePlaybackStateGetBackingType
+0x18d1561a8  __TEXT,__text  _INMessagePlaybackStateGetFacadeType
+0x18d156254  __TEXT,__text  _INMessagePlaybackStateGetLocalizedName
+0x18d1561c8  __TEXT,__text  _INMessagePlaybackStateGetName
+0x18d15618c  __TEXT,__text  _INMessagePlaybackStateHasBackingType
+0x18d1561f4  __TEXT,__text  _INMessagePlaybackStateWithString
+0x18d0d5108  __TEXT,__text  _INMessageReactionTypeGetBackingType
+0x18d0d51a4  __TEXT,__text  _INMessageReactionTypeGetFacadeType
+0x18d0d5410  __TEXT,__text  _INMessageReactionTypeGetLocalizedName
+0x18d0d51cc  __TEXT,__text  _INMessageReactionTypeGetName
+0x18d0d50e0  __TEXT,__text  _INMessageReactionTypeHasBackingType
+0x18d0d5298  __TEXT,__text  _INMessageReactionTypeWithString
+0x18d2cb55c  __TEXT,__text  _INMessageSoundTypeGetBackingType
+0x18d2cb56c  __TEXT,__text  _INMessageSoundTypeGetFacadeType
+0x18d2cb5b8  __TEXT,__text  _INMessageSoundTypeGetLocalizedName
+0x18d2cb578  __TEXT,__text  _INMessageSoundTypeGetName
+0x18d2cb550  __TEXT,__text  _INMessageSoundTypeHasBackingType
+0x18d2cb594  __TEXT,__text  _INMessageSoundTypeWithString
+0x18cfeefec  __TEXT,__text  _INMessagesDomainGetIntentDescriptionWithDataClass
+0x18cfeef84  __TEXT,__text  _INMessagesDomainGetIntentDescriptionWithFacadeClass
+0x18cf61d9c  __TEXT,__text  _INMessagesDomainGetIntentDescriptionWithName
+0x18cfa0754  __TEXT,__text  _INMessagesDomainGetIntentDescriptionWithType
+0x18cfef0bc  __TEXT,__text  _INMessagesDomainGetIntentResponseDescriptionWithDataClass
+0x18cfef054  __TEXT,__text  _INMessagesDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfa2c78  __TEXT,__text  _INMessagesDomainGetIntentResponseDescriptionWithName
+0x18cfcd130  __TEXT,__text  _INMessagesDomainGetIntentResponseDescriptionWithType
+0x18d2525c0  __TEXT,__text  _INMetadataPlistDictionary
+0x18d290c50  __TEXT,__text  _INMobileSpaceGetBackingType
+0x18d290c68  __TEXT,__text  _INMobileSpaceGetFacadeType
+0x18d290cb4  __TEXT,__text  _INMobileSpaceGetLocalizedName
+0x18d290c74  __TEXT,__text  _INMobileSpaceGetName
+0x18d290c44  __TEXT,__text  _INMobileSpaceHasBackingType
+0x18d290c90  __TEXT,__text  _INMobileSpaceWithString
+0x18d1ecc70  __TEXT,__text  _INNoteContentTypeGetBackingType
+0x18d1ecc80  __TEXT,__text  _INNoteContentTypeGetFacadeType
+0x18d1ecd2c  __TEXT,__text  _INNoteContentTypeGetLocalizedName
+0x18d1ecca0  __TEXT,__text  _INNoteContentTypeGetName
+0x18d1ecc64  __TEXT,__text  _INNoteContentTypeHasBackingType
+0x18d1ecccc  __TEXT,__text  _INNoteContentTypeWithString
+0x18cfef18c  __TEXT,__text  _INNotebookDomainGetIntentDescriptionWithDataClass
+0x18cfef124  __TEXT,__text  _INNotebookDomainGetIntentDescriptionWithFacadeClass
+0x18cfead20  __TEXT,__text  _INNotebookDomainGetIntentDescriptionWithName
+0x18cfeb954  __TEXT,__text  _INNotebookDomainGetIntentDescriptionWithType
+0x18cfef25c  __TEXT,__text  _INNotebookDomainGetIntentResponseDescriptionWithDataClass
+0x18cfef1f4  __TEXT,__text  _INNotebookDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfec72c  __TEXT,__text  _INNotebookDomainGetIntentResponseDescriptionWithName
+0x18cfed458  __TEXT,__text  _INNotebookDomainGetIntentResponseDescriptionWithType
+0x18cfea614  __TEXT,__text  _INNotebookItemTypeGetBackingType
+0x18cfea62c  __TEXT,__text  _INNotebookItemTypeGetFacadeType
+0x18cfea700  __TEXT,__text  _INNotebookItemTypeGetLocalizedName
+0x18cfea65c  __TEXT,__text  _INNotebookItemTypeGetName
+0x18cfea608  __TEXT,__text  _INNotebookItemTypeHasBackingType
+0x18cfea684  __TEXT,__text  _INNotebookItemTypeWithString
+0x18d311b8c  __TEXT,__text  _INNumericSettingUnitGetBackingType
+0x18d311b9c  __TEXT,__text  _INNumericSettingUnitGetFacadeType
+0x18d311be8  __TEXT,__text  _INNumericSettingUnitGetLocalizedName
+0x18d311ba8  __TEXT,__text  _INNumericSettingUnitGetName
+0x18d311b80  __TEXT,__text  _INNumericSettingUnitHasBackingType
+0x18d311bc4  __TEXT,__text  _INNumericSettingUnitWithString
+0x18cf42b74  __TEXT,__text  _INObjectIsConsideredNil
+0x18d18968c  __TEXT,__text  _INObjectWithTypedObject
+0x18d31cf24  __TEXT,__text  _INOpenSettingIntentResponseCodeGetName
+0x18d2a9518  __TEXT,__text  _INOutgoingMessageTypeGetBackingType
+0x18d2a9534  __TEXT,__text  _INOutgoingMessageTypeGetFacadeType
+0x18d2a95e0  __TEXT,__text  _INOutgoingMessageTypeGetLocalizedName
+0x18d2a9554  __TEXT,__text  _INOutgoingMessageTypeGetName
+0x18d2a9508  __TEXT,__text  _INOutgoingMessageTypeHasBackingType
+0x18d2a9580  __TEXT,__text  _INOutgoingMessageTypeWithString
+0x18d1ccfac  __TEXT,__text  _INOvulationValueTypeGetBackingType
+0x18d1ccfbc  __TEXT,__text  _INOvulationValueTypeGetFacadeType
+0x18d1cd07c  __TEXT,__text  _INOvulationValueTypeGetLocalizedName
+0x18d1ccfd8  __TEXT,__text  _INOvulationValueTypeGetName
+0x18d1ccfa0  __TEXT,__text  _INOvulationValueTypeHasBackingType
+0x18d1cd000  __TEXT,__text  _INOvulationValueTypeWithString
+0x18cf57750  __TEXT,__text  _INParseCustomIntentTypeName
+0x18d2cc3a4  __TEXT,__text  _INParsecCategoryGetBackingType
+0x18d2cc3b4  __TEXT,__text  _INParsecCategoryGetFacadeType
+0x18d2cc500  __TEXT,__text  _INParsecCategoryGetLocalizedName
+0x18d2cc3d0  __TEXT,__text  _INParsecCategoryGetName
+0x18d2cc398  __TEXT,__text  _INParsecCategoryHasBackingType
+0x18d2cc3f8  __TEXT,__text  _INParsecCategoryWithString
+0x18d24bbf0  __TEXT,__text  _INPauseTimerIntentResponseCodeGetName
+0x1e097bc48  __DATA_CONST,__const  _INPauseWorkoutIntentIdentifier
+0x18d1ba8e0  __TEXT,__text  _INPauseWorkoutIntentResponseCodeGetName
+0x18d0fc974  __TEXT,__text  _INPayBillIntentResponseCodeGetName
+0x18d0e3b8c  __TEXT,__text  _INPaymentMethodTypeGetBackingType
+0x18d0e3ba0  __TEXT,__text  _INPaymentMethodTypeGetFacadeType
+0x18d0e3cec  __TEXT,__text  _INPaymentMethodTypeGetLocalizedName
+0x18d0e3bbc  __TEXT,__text  _INPaymentMethodTypeGetName
+0x18d0e3b7c  __TEXT,__text  _INPaymentMethodTypeHasBackingType
+0x18d0e3be4  __TEXT,__text  _INPaymentMethodTypeWithString
+0x18d02c280  __TEXT,__text  _INPaymentStatusGetBackingType
+0x18d02c294  __TEXT,__text  _INPaymentStatusGetFacadeType
+0x18d02c38c  __TEXT,__text  _INPaymentStatusGetLocalizedName
+0x18d02c2b0  __TEXT,__text  _INPaymentStatusGetName
+0x18d02c270  __TEXT,__text  _INPaymentStatusHasBackingType
+0x18d02c2d8  __TEXT,__text  _INPaymentStatusWithString
+0x18cfef32c  __TEXT,__text  _INPaymentsDomainGetIntentDescriptionWithDataClass
+0x18cfef2c4  __TEXT,__text  _INPaymentsDomainGetIntentDescriptionWithFacadeClass
+0x18cfead9c  __TEXT,__text  _INPaymentsDomainGetIntentDescriptionWithName
+0x18cfeb9d0  __TEXT,__text  _INPaymentsDomainGetIntentDescriptionWithType
+0x18cfef3fc  __TEXT,__text  _INPaymentsDomainGetIntentResponseDescriptionWithDataClass
+0x18cfef394  __TEXT,__text  _INPaymentsDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfec7a8  __TEXT,__text  _INPaymentsDomainGetIntentResponseDescriptionWithName
+0x18cfed4d4  __TEXT,__text  _INPaymentsDomainGetIntentResponseDescriptionWithType
+0x18d0606b4  __TEXT,__text  _INPersonHandleLabelEqualsCNLabeledValue
+0x18d060514  __TEXT,__text  _INPersonHandleLabelEqualsCNLabeledValueWithLanguages
+0x18d0604b8  __TEXT,__text  _INPersonHandleLabelForCNLabeledValue
+0x18d05f7c4  __TEXT,__text  _INPersonHandleLabelForCNLabeledValueWithLanguages
+0x18d178634  __TEXT,__text  _INPersonHandleLabelGetBackingType
+0x18d178610  __TEXT,__text  _INPersonHandleLabelGetFacadeObject
+0x1e097bc40  __DATA_CONST,__const  _INPersonHandleLabelHome
+0x1e097bc38  __DATA_CONST,__const  _INPersonHandleLabelHomeFax
+0x1e097bc30  __DATA_CONST,__const  _INPersonHandleLabelMain
+0x1e097bc28  __DATA_CONST,__const  _INPersonHandleLabelMobile
+0x1e097bc20  __DATA_CONST,__const  _INPersonHandleLabelOther
+0x1e097bc18  __DATA_CONST,__const  _INPersonHandleLabelPager
+0x1e097bc10  __DATA_CONST,__const  _INPersonHandleLabelSchool
+0x18d178788  __TEXT,__text  _INPersonHandleLabelValueAsString
+0x1e097bc08  __DATA_CONST,__const  _INPersonHandleLabelWork
+0x1e097bc00  __DATA_CONST,__const  _INPersonHandleLabelWorkFax
+0x1e097bbf8  __DATA_CONST,__const  _INPersonHandleLabeliPhone
+0x1e097bbf0  __DATA_CONST,__const  _INPersonRelationshipAssistant
+0x1e097bbe8  __DATA_CONST,__const  _INPersonRelationshipBrother
+0x1e097bbe0  __DATA_CONST,__const  _INPersonRelationshipChild
+0x1e097bbd8  __DATA_CONST,__const  _INPersonRelationshipDaughter
+0x1e097bbd0  __DATA_CONST,__const  _INPersonRelationshipFather
+0x1e097bbc8  __DATA_CONST,__const  _INPersonRelationshipFriend
+0x18d0b4a94  __TEXT,__text  _INPersonRelationshipGetBackingType
+0x18d0b4a70  __TEXT,__text  _INPersonRelationshipGetFacadeObject
+0x1e097bbc0  __DATA_CONST,__const  _INPersonRelationshipManager
+0x1e097bbb8  __DATA_CONST,__const  _INPersonRelationshipMother
+0x1e097bbb0  __DATA_CONST,__const  _INPersonRelationshipParent
+0x1e097bba8  __DATA_CONST,__const  _INPersonRelationshipPartner
+0x1e097bba0  __DATA_CONST,__const  _INPersonRelationshipSister
+0x1e097bb98  __DATA_CONST,__const  _INPersonRelationshipSon
+0x1e097bb90  __DATA_CONST,__const  _INPersonRelationshipSpouse
+0x18d0b4c3c  __TEXT,__text  _INPersonRelationshipValueAsString
+0x18d05ec78  __TEXT,__text  _INPersonToCSPerson
+0x18d25b7fc  __TEXT,__text  _INPersonalPlaceTypeGetBackingType
+0x18d25b81c  __TEXT,__text  _INPersonalPlaceTypeGetFacadeType
+0x18d25b8c8  __TEXT,__text  _INPersonalPlaceTypeGetLocalizedName
+0x18d25b83c  __TEXT,__text  _INPersonalPlaceTypeGetName
+0x18d25b7ec  __TEXT,__text  _INPersonalPlaceTypeHasBackingType
+0x18d25b868  __TEXT,__text  _INPersonalPlaceTypeWithString
+0x18d220a44  __TEXT,__text  _INPhotoAttributeOptionsAddBackingType
+0x18d220890  __TEXT,__text  _INPhotoAttributeOptionsContainsBackingType
+0x18d2204b4  __TEXT,__text  _INPhotoAttributeOptionsEnumerateBackingTypes
+0x18d2214f0  __TEXT,__text  _INPhotoAttributeOptionsGetLocalizedNames
+0x18d220d9c  __TEXT,__text  _INPhotoAttributeOptionsGetNames
+0x18d220bf0  __TEXT,__text  _INPhotoAttributeOptionsRemoveBackingType
+0x18d2210ac  __TEXT,__text  _INPhotoAttributeOptionsWithNames
+0x18cfef4cc  __TEXT,__text  _INPhotosDomainGetIntentDescriptionWithDataClass
+0x18cfef464  __TEXT,__text  _INPhotosDomainGetIntentDescriptionWithFacadeClass
+0x18cfeae18  __TEXT,__text  _INPhotosDomainGetIntentDescriptionWithName
+0x18cfeba4c  __TEXT,__text  _INPhotosDomainGetIntentDescriptionWithType
+0x18cfef59c  __TEXT,__text  _INPhotosDomainGetIntentResponseDescriptionWithDataClass
+0x18cfef534  __TEXT,__text  _INPhotosDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfec824  __TEXT,__text  _INPhotosDomainGetIntentResponseDescriptionWithName
+0x18cfed550  __TEXT,__text  _INPhotosDomainGetIntentResponseDescriptionWithType
+0x18d32b194  __TEXT,__text  _INPlayAnnouncementSoundIntentResponseCodeGetName
+0x18d0341ec  __TEXT,__text  _INPlayAudioMessageIntentResponseCodeGetName
+0x18d24369c  __TEXT,__text  _INPlayMediaIntentResponseCodeGetName
+0x1e097bb88  __DATA_CONST,__const  _INPlayMediaIntentResponseNowPlayingInfoArtworkKey
+0x18d2c9d90  __TEXT,__text  _INPlayMessageSoundIntentResponseCodeGetName
+0x1e097bb80  __DATA_CONST,__const  _INPlayVoicemailIntentIdentifier
+0x18d17b470  __TEXT,__text  _INPlayVoicemailIntentResponseCodeGetName
+0x18d2679a8  __TEXT,__text  _INPlaybackQueueLocationGetBackingType
+0x18d2679b8  __TEXT,__text  _INPlaybackQueueLocationGetFacadeType
+0x18d267a78  __TEXT,__text  _INPlaybackQueueLocationGetLocalizedName
+0x18d2679d4  __TEXT,__text  _INPlaybackQueueLocationGetName
+0x18d26799c  __TEXT,__text  _INPlaybackQueueLocationHasBackingType
+0x18d2679fc  __TEXT,__text  _INPlaybackQueueLocationWithString
+0x18d2447fc  __TEXT,__text  _INPlaybackRepeatModeGetBackingType
+0x18d244810  __TEXT,__text  _INPlaybackRepeatModeGetFacadeType
+0x18d2448cc  __TEXT,__text  _INPlaybackRepeatModeGetLocalizedName
+0x18d244828  __TEXT,__text  _INPlaybackRepeatModeGetName
+0x18d2447ec  __TEXT,__text  _INPlaybackRepeatModeHasBackingType
+0x18d244850  __TEXT,__text  _INPlaybackRepeatModeWithString
+0x18d188674  __TEXT,__text  _INPluginKitCompatiblePathFromPath
+0x18d1320ec  __TEXT,__text  _INPreferredCallProviderGetBackingType
+0x18d132104  __TEXT,__text  _INPreferredCallProviderGetFacadeType
+0x18d1321c4  __TEXT,__text  _INPreferredCallProviderGetLocalizedName
+0x18d132120  __TEXT,__text  _INPreferredCallProviderGetName
+0x18d1320dc  __TEXT,__text  _INPreferredCallProviderHasBackingType
+0x18d132148  __TEXT,__text  _INPreferredCallProviderWithString
+0x18d0104dc  __TEXT,__text  _INPrivacyEntitlementOptionsAddBackingType
+0x18d0104b8  __TEXT,__text  _INPrivacyEntitlementOptionsContainsBackingType
+0x18d010444  __TEXT,__text  _INPrivacyEntitlementOptionsEnumerateBackingTypes
+0x18cfc0a2c  __TEXT,__text  _INPrivacyEntitlementOptionsForIntentMetadata
+0x18cf98444  __TEXT,__text  _INPrivacyEntitlementOptionsForValueMetadata
+0x18d0106ec  __TEXT,__text  _INPrivacyEntitlementOptionsGetLocalizedNames
+0x18d01052c  __TEXT,__text  _INPrivacyEntitlementOptionsGetNames
+0x18d0cecf8  __TEXT,__text  _INPrivacyEntitlementOptionsMissingForExtension
+0x18d010504  __TEXT,__text  _INPrivacyEntitlementOptionsRemoveBackingType
+0x18d0105ac  __TEXT,__text  _INPrivacyEntitlementOptionsWithNames
+0x18d0cefb4  __TEXT,__text  _INPrivacyEntitlementValidateIntentMetadata
+0x18cf47810  __TEXT,__text  _INPrivacyEntitlementValidateValueMetadata
+0x18d186e7c  __TEXT,__text  _INProcessHasEntitlement
+0x18d0ce7d8  __TEXT,__text  _INQueryHealthSampleIntentResponseCodeGetName
+0x1e097bb78  __DATA_CONST,__const  _INQueryHomeIntentIdentifier
+0x18cfd3360  __TEXT,__text  _INQueryHomeIntentResponseCodeGetName
+0x18cfef66c  __TEXT,__text  _INRRaaSDomainGetIntentDescriptionWithDataClass
+0x18cfef604  __TEXT,__text  _INRRaaSDomainGetIntentDescriptionWithFacadeClass
+0x18cfeae94  __TEXT,__text  _INRRaaSDomainGetIntentDescriptionWithName
+0x18cfebac8  __TEXT,__text  _INRRaaSDomainGetIntentDescriptionWithType
+0x18cfef73c  __TEXT,__text  _INRRaaSDomainGetIntentResponseDescriptionWithDataClass
+0x18cfef6d4  __TEXT,__text  _INRRaaSDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfec8a0  __TEXT,__text  _INRRaaSDomainGetIntentResponseDescriptionWithName
+0x18cfed5cc  __TEXT,__text  _INRRaaSDomainGetIntentResponseDescriptionWithType
+0x18cfef80c  __TEXT,__text  _INRadioDomainGetIntentDescriptionWithDataClass
+0x18cfef7a4  __TEXT,__text  _INRadioDomainGetIntentDescriptionWithFacadeClass
+0x18cfeaf10  __TEXT,__text  _INRadioDomainGetIntentDescriptionWithName
+0x18cfebb44  __TEXT,__text  _INRadioDomainGetIntentDescriptionWithType
+0x18cfef8dc  __TEXT,__text  _INRadioDomainGetIntentResponseDescriptionWithDataClass
+0x18cfef874  __TEXT,__text  _INRadioDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfec91c  __TEXT,__text  _INRadioDomainGetIntentResponseDescriptionWithName
+0x18cfed648  __TEXT,__text  _INRadioDomainGetIntentResponseDescriptionWithType
+0x18d0ac280  __TEXT,__text  _INRadioTypeGetBackingType
+0x18d0ac294  __TEXT,__text  _INRadioTypeGetFacadeType
+0x18d0ac38c  __TEXT,__text  _INRadioTypeGetLocalizedName
+0x18d0ac2b0  __TEXT,__text  _INRadioTypeGetName
+0x18d0ac270  __TEXT,__text  _INRadioTypeHasBackingType
+0x18d0ac2d8  __TEXT,__text  _INRadioTypeWithString
+0x18d347ff4  __TEXT,__text  _INReadActionTypeGetBackingType
+0x18d348010  __TEXT,__text  _INReadActionTypeGetFacadeType
+0x18d3480bc  __TEXT,__text  _INReadActionTypeGetLocalizedName
+0x18d348030  __TEXT,__text  _INReadActionTypeGetName
+0x18d347fe4  __TEXT,__text  _INReadActionTypeHasBackingType
+0x18d34805c  __TEXT,__text  _INReadActionTypeWithString
+0x1e097bb70  __DATA_CONST,__const  _INReadAnnouncementIntentIdentifier
+0x18d319118  __TEXT,__text  _INReadAnnouncementIntentResponseCodeGetName
+0x18d047f70  __TEXT,__text  _INRecurrenceFrequencyGetBackingType
+0x18d047f90  __TEXT,__text  _INRecurrenceFrequencyGetFacadeType
+0x18d0480e4  __TEXT,__text  _INRecurrenceFrequencyGetLocalizedName
+0x18d047fec  __TEXT,__text  _INRecurrenceFrequencyGetName
+0x18d047f64  __TEXT,__text  _INRecurrenceFrequencyHasBackingType
+0x18d048014  __TEXT,__text  _INRecurrenceFrequencyWithString
+0x18d132514  __TEXT,__text  _INRelativeReferenceGetBackingType
+0x18d132530  __TEXT,__text  _INRelativeReferenceGetFacadeType
+0x18d1325dc  __TEXT,__text  _INRelativeReferenceGetLocalizedName
+0x18d132550  __TEXT,__text  _INRelativeReferenceGetName
+0x18d132504  __TEXT,__text  _INRelativeReferenceHasBackingType
+0x18d13257c  __TEXT,__text  _INRelativeReferenceWithString
+0x18d217e78  __TEXT,__text  _INRelativeSettingGetBackingType
+0x18d217e8c  __TEXT,__text  _INRelativeSettingGetFacadeType
+0x18d217f68  __TEXT,__text  _INRelativeSettingGetLocalizedName
+0x18d217ea8  __TEXT,__text  _INRelativeSettingGetName
+0x18d217e68  __TEXT,__text  _INRelativeSettingHasBackingType
+0x18d217ed0  __TEXT,__text  _INRelativeSettingWithString
+0x18d1875c0  __TEXT,__text  _INRemoveItemAtPath
+0x18d350a60  __TEXT,__text  _INReportIncidentIntentResponseCodeGetName
+0x1e097bb68  __DATA_CONST,__const  _INRequestPaymentIntentIdentifier
+0x18d1bae18  __TEXT,__text  _INRequestPaymentIntentResponseCodeGetName
+0x1e097bb60  __DATA_CONST,__const  _INRequestRideIntentIdentifier
+0x18d063a10  __TEXT,__text  _INRequestRideIntentResponseCodeGetName
+0x18d2c6378  __TEXT,__text  _INReservationActionTypeGetBackingType
+0x18d2c6394  __TEXT,__text  _INReservationActionTypeGetFacadeType
+0x18d2c63e0  __TEXT,__text  _INReservationActionTypeGetLocalizedName
+0x18d2c63a0  __TEXT,__text  _INReservationActionTypeGetName
+0x18d2c636c  __TEXT,__text  _INReservationActionTypeHasBackingType
+0x18d2c63bc  __TEXT,__text  _INReservationActionTypeWithString
+0x18d287804  __TEXT,__text  _INReservationStatusGetBackingType
+0x18d287814  __TEXT,__text  _INReservationStatusGetFacadeType
+0x18d2878f0  __TEXT,__text  _INReservationStatusGetLocalizedName
+0x18d287830  __TEXT,__text  _INReservationStatusGetName
+0x18d2877f8  __TEXT,__text  _INReservationStatusHasBackingType
+0x18d287858  __TEXT,__text  _INReservationStatusWithString
+0x18cfef9ac  __TEXT,__text  _INReservationsDomainGetIntentDescriptionWithDataClass
+0x18cfef944  __TEXT,__text  _INReservationsDomainGetIntentDescriptionWithFacadeClass
+0x18cfeaf8c  __TEXT,__text  _INReservationsDomainGetIntentDescriptionWithName
+0x18cfebbc0  __TEXT,__text  _INReservationsDomainGetIntentDescriptionWithType
+0x18cfefa7c  __TEXT,__text  _INReservationsDomainGetIntentResponseDescriptionWithDataClass
+0x18cfefa14  __TEXT,__text  _INReservationsDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfec998  __TEXT,__text  _INReservationsDomainGetIntentResponseDescriptionWithName
+0x18cfed6c4  __TEXT,__text  _INReservationsDomainGetIntentResponseDescriptionWithType
+0x18d2469c8  __TEXT,__text  _INResetTimerIntentResponseCodeGetName
+0x18cf3a0f8  __TEXT,__text  _INResolveInstanceMethod
+0x18d357774  __TEXT,__text  _INResolveObjectReferenceIntentResponseCodeGetName
+0x18d245bcc  __TEXT,__text  _INResumeTimerIntentResponseCodeGetName
+0x1e097bb58  __DATA_CONST,__const  _INResumeWorkoutIntentIdentifier
+0x18d04e480  __TEXT,__text  _INResumeWorkoutIntentResponseCodeGetName
+0x18d2df6f4  __TEXT,__text  _INRetrieveParkingLocationIntentResponseCodeGetName
+0x18d053474  __TEXT,__text  _INRideFeedbackTypeOptionsAddBackingType
+0x18d053450  __TEXT,__text  _INRideFeedbackTypeOptionsContainsBackingType
+0x18d0533dc  __TEXT,__text  _INRideFeedbackTypeOptionsEnumerateBackingTypes
+0x18d053684  __TEXT,__text  _INRideFeedbackTypeOptionsGetLocalizedNames
+0x18d0534c4  __TEXT,__text  _INRideFeedbackTypeOptionsGetNames
+0x18d05349c  __TEXT,__text  _INRideFeedbackTypeOptionsRemoveBackingType
+0x18d053544  __TEXT,__text  _INRideFeedbackTypeOptionsWithNames
+0x18d093938  __TEXT,__text  _INRidePhaseGetBackingType
+0x18d09395c  __TEXT,__text  _INRidePhaseGetFacadeType
+0x18d093a7c  __TEXT,__text  _INRidePhaseGetLocalizedName
+0x18d093984  __TEXT,__text  _INRidePhaseGetName
+0x18d093928  __TEXT,__text  _INRidePhaseHasBackingType
+0x18d0939ac  __TEXT,__text  _INRidePhaseWithString
+0x18cfefb4c  __TEXT,__text  _INRidesharingDomainGetIntentDescriptionWithDataClass
+0x18cfefae4  __TEXT,__text  _INRidesharingDomainGetIntentDescriptionWithFacadeClass
+0x18cfeb008  __TEXT,__text  _INRidesharingDomainGetIntentDescriptionWithName
+0x18cfebc3c  __TEXT,__text  _INRidesharingDomainGetIntentDescriptionWithType
+0x18cfefc1c  __TEXT,__text  _INRidesharingDomainGetIntentResponseDescriptionWithDataClass
+0x18cfefbb4  __TEXT,__text  _INRidesharingDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfeca14  __TEXT,__text  _INRidesharingDomainGetIntentResponseDescriptionWithName
+0x18cfed740  __TEXT,__text  _INRidesharingDomainGetIntentResponseDescriptionWithType
+0x1e097bb50  __DATA_CONST,__const  _INRunVoiceCommandIntentIdentifier
+0x18d0108e0  __TEXT,__text  _INRunVoiceCommandIntentResponseCodeGetName
+0x18d25bdc4  __TEXT,__text  _INRunWorkflowIntentResponseCodeGetName
+0x18d0238e4  __TEXT,__text  _INSaveHealthSampleIntentResponseCodeGetName
+0x18d315f14  __TEXT,__text  _INSaveParkingLocationIntentResponseCodeGetName
+0x1e097bb48  __DATA_CONST,__const  _INSaveProfileInCarIntentIdentifier
+0x18d1cafd0  __TEXT,__text  _INSaveProfileInCarIntentResponseCodeGetName
+0x18d1723bc  __TEXT,__text  _INScanVisualCodeIntentResponseCodeGetName
+0x18cf59170  __TEXT,__text  _INSchemaFileExtensions
+0x18d18a20c  __TEXT,__text  _INSchemaURLsForIntentNamesWithBundle
+0x18cf58f68  __TEXT,__text  _INSchemaURLsWithBundle
+0x18d0396b4  __TEXT,__text  _INSchemaURLsWithBundleURL
+0x18d03978c  __TEXT,__text  _INSchemaURLsWithCFBundle
+0x18d0394b4  __TEXT,__text  _INSchemaWithApplicationProxy
+0x18cf570c8  __TEXT,__text  _INSchemaWithTypeName
+0x18d344218  __TEXT,__text  _INSearchAlarmIntentResponseCodeGetName
+0x1e097bb40  __DATA_CONST,__const  _INSearchCallHistoryIntentIdentifier
+0x18d068dfc  __TEXT,__text  _INSearchCallHistoryIntentResponseCodeGetName
+0x18d211f44  __TEXT,__text  _INSearchForAccountsIntentResponseCodeGetName
+0x18d0f954c  __TEXT,__text  _INSearchForBillsIntentResponseCodeGetName
+0x18d2dab9c  __TEXT,__text  _INSearchForContactIntentResponseCodeGetName
+0x18d2d9c68  __TEXT,__text  _INSearchForMeCardIntentResponseCodeGetName
+0x18d266850  __TEXT,__text  _INSearchForMediaIntentResponseCodeGetName
+0x1e097bb38  __DATA_CONST,__const  _INSearchForMessagesIntentIdentifier
+0x18cfc15ec  __TEXT,__text  _INSearchForMessagesIntentResponseCodeGetName
+0x1e097bb30  __DATA_CONST,__const  _INSearchForNotebookItemsIntentIdentifier
+0x18d0d5fdc  __TEXT,__text  _INSearchForNotebookItemsIntentResponseCodeGetName
+0x1e097bb28  __DATA_CONST,__const  _INSearchForPhotosIntentIdentifier
+0x18d0b9f78  __TEXT,__text  _INSearchForPhotosIntentResponseCodeGetName
+0x18d24e12c  __TEXT,__text  _INSearchForTimersIntentResponseCodeGetName
+0x18cf56688  __TEXT,__text  _INSecurityScopeFlagsAreDefault
+0x18cf564e8  __TEXT,__text  _INSecurityScopeHasValidSignature
+0x18cf55f78  __TEXT,__text  _INSecurityScopeIsStructurallyWellFormed
+0x18cfe8218  __TEXT,__text  _INSecurityScopeLogDescription
+0x18cfe8c60  __TEXT,__text  _INSecurityScopePreservedURL
+0x18cf568d0  __TEXT,__text  _INSecurityScopeResolvedURL
+0x18cf55e74  __TEXT,__text  _INSecurityScopeValidatedURL
+0x1e097bb20  __DATA_CONST,__const  _INSendAnnouncementIntentIdentifier
+0x18d2fc358  __TEXT,__text  _INSendAnnouncementIntentResponseCodeGetName
+0x1e097bb18  __DATA_CONST,__const  _INSendMessageIntentIdentifier
+0x18d3f1c90  __TEXT,__const  _INSendMessageIntentResponseCodeFailureMessageAttachmentError
+0x18d3f1c98  __TEXT,__const  _INSendMessageIntentResponseCodeFailureMessageLocationNotAllowed
+0x18d146340  __TEXT,__text  _INSendMessageIntentResponseCodeGetName
+0x1e097bb10  __DATA_CONST,__const  _INSendPaymentIntentIdentifier
+0x18d1af208  __TEXT,__text  _INSendPaymentIntentResponseCodeGetName
+0x18d150008  __TEXT,__text  _INSendRideFeedbackIntentResponseCodeGetName
+0x1e097bb08  __DATA_CONST,__const  _INSetAudioSourceInCarIntentIdentifier
+0x18d077f00  __TEXT,__text  _INSetAudioSourceInCarIntentResponseCodeGetName
+0x18d306ae8  __TEXT,__text  _INSetBinarySettingIntentResponseCodeGetName
+0x18d10d2cc  __TEXT,__text  _INSetCarLockStatusIntentResponseCodeGetName
+0x1e097bb00  __DATA_CONST,__const  _INSetClimateSettingsInCarIntentIdentifier
+0x18d0d69fc  __TEXT,__text  _INSetClimateSettingsInCarIntentResponseCodeGetName
+0x1e097baf8  __DATA_CONST,__const  _INSetDefrosterSettingsInCarIntentIdentifier
+0x18d0a912c  __TEXT,__text  _INSetDefrosterSettingsInCarIntentResponseCodeGetName
+0x18d302588  __TEXT,__text  _INSetLabeledSettingIntentResponseCodeGetName
+0x1e097baf0  __DATA_CONST,__const  _INSetMessageAttributeIntentIdentifier
+0x18cfdc810  __TEXT,__text  _INSetMessageAttributeIntentResponseCodeGetName
+0x18d2de184  __TEXT,__text  _INSetNicknameIntentResponseCodeGetName
+0x18d2fcb24  __TEXT,__text  _INSetNumericSettingIntentResponseCodeGetName
+0x1e097bae8  __DATA_CONST,__const  _INSetProfileInCarIntentIdentifier
+0x18d096330  __TEXT,__text  _INSetProfileInCarIntentResponseCodeGetName
+0x1e097bae0  __DATA_CONST,__const  _INSetRadioStationIntentIdentifier
+0x18d012470  __TEXT,__text  _INSetRadioStationIntentResponseCodeGetName
+0x18d2dc270  __TEXT,__text  _INSetRelationshipIntentResponseCodeGetName
+0x1e097bad8  __DATA_CONST,__const  _INSetSeatSettingsInCarIntentIdentifier
+0x18d0b080c  __TEXT,__text  _INSetSeatSettingsInCarIntentResponseCodeGetName
+0x18d0f9dc4  __TEXT,__text  _INSetTaskAttributeIntentResponseCodeGetName
+0x18d2fff24  __TEXT,__text  _INSetTemporalSettingIntentResponseCodeGetName
+0x18d245514  __TEXT,__text  _INSetTimerAttributeIntentResponseCodeGetName
+0x18d189124  __TEXT,__text  _INSetterFromString
+0x18d306864  __TEXT,__text  _INSettingActionGetBackingType
+0x18d306878  __TEXT,__text  _INSettingActionGetFacadeType
+0x18d306938  __TEXT,__text  _INSettingActionGetLocalizedName
+0x18d306894  __TEXT,__text  _INSettingActionGetName
+0x18d306854  __TEXT,__text  _INSettingActionHasBackingType
+0x18d3068bc  __TEXT,__text  _INSettingActionWithString
+0x18cfefcec  __TEXT,__text  _INSettingsDomainGetIntentDescriptionWithDataClass
+0x18cfefc84  __TEXT,__text  _INSettingsDomainGetIntentDescriptionWithFacadeClass
+0x18cfeb084  __TEXT,__text  _INSettingsDomainGetIntentDescriptionWithName
+0x18cfebcb8  __TEXT,__text  _INSettingsDomainGetIntentDescriptionWithType
+0x18cfefdbc  __TEXT,__text  _INSettingsDomainGetIntentResponseDescriptionWithDataClass
+0x18cfefd54  __TEXT,__text  _INSettingsDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfeca90  __TEXT,__text  _INSettingsDomainGetIntentResponseDescriptionWithName
+0x18cfed7bc  __TEXT,__text  _INSettingsDomainGetIntentResponseDescriptionWithType
+0x18d0e95bc  __TEXT,__text  _INSexualActivityValueTypeGetBackingType
+0x18d0e95cc  __TEXT,__text  _INSexualActivityValueTypeGetFacadeType
+0x18d0e9678  __TEXT,__text  _INSexualActivityValueTypeGetLocalizedName
+0x18d0e95ec  __TEXT,__text  _INSexualActivityValueTypeGetName
+0x18d0e95b0  __TEXT,__text  _INSexualActivityValueTypeHasBackingType
+0x18d0e9618  __TEXT,__text  _INSexualActivityValueTypeWithString
+0x18d2e7278  __TEXT,__text  _INShareETAIntentResponseCodeGetName
+0x18d2e6d4c  __TEXT,__text  _INShareETAMediumOptionsAddBackingType
+0x18d2e6d08  __TEXT,__text  _INShareETAMediumOptionsContainsBackingType
+0x18d2e6c4c  __TEXT,__text  _INShareETAMediumOptionsEnumerateBackingTypes
+0x18d2e7014  __TEXT,__text  _INShareETAMediumOptionsGetLocalizedNames
+0x18d2e6ddc  __TEXT,__text  _INShareETAMediumOptionsGetNames
+0x18d2e6d94  __TEXT,__text  _INShareETAMediumOptionsRemoveBackingType
+0x18d2e6e94  __TEXT,__text  _INShareETAMediumOptionsWithNames
+0x18d36bc30  __TEXT,__text  _INShareFocusStatusIntentResponseCodeGetName
+0x18d187850  __TEXT,__text  _INSharedResourcesDirectory
+0x18d320db8  __TEXT,__text  _INShortcutAvailabilityOptionsAddBackingType
+0x18d320d44  __TEXT,__text  _INShortcutAvailabilityOptionsContainsBackingType
+0x18d320c28  __TEXT,__text  _INShortcutAvailabilityOptionsEnumerateBackingTypes
+0x18d32117c  __TEXT,__text  _INShortcutAvailabilityOptionsGetLocalizedNames
+0x18d320ea0  __TEXT,__text  _INShortcutAvailabilityOptionsGetNames
+0x18d320e2c  __TEXT,__text  _INShortcutAvailabilityOptionsRemoveBackingType
+0x18d320fa0  __TEXT,__text  _INShortcutAvailabilityOptionsWithNames
+0x1e097bad0  __DATA_CONST,__const  _INShortcutTypeIdentifier
+0x1e097bac8  __DATA_CONST,__const  _INShortcutsAppBundleIdentifierPrefix
+0x18d28dbec  __TEXT,__text  _INShowHomeIntentResponseCodeGetName
+0x1eb5e8d28  __DATA,__data  _INSignpostExtensionLaunch
+0x1eb5e8d20  __DATA,__data  _INSignpostSiriAirPlayAudioPairPath
+0x1eb5e8d18  __DATA,__data  _INSignpostSiriAirPlayDeviceSearchError
+0x1eb5e8d10  __DATA,__data  _INSignpostSiriAirPlayDeviceSearchPartialError
+0x1eb5e8d08  __DATA,__data  _INSignpostSiriAirPlayReconnaissanceSessionCreateWithEndpointFeatures
+0x1eb5e8d00  __DATA,__data  _INSignpostSiriAirPlayReconnaissanceSessionSetTargetAudioSessionID
+0x1eb5e8cf8  __DATA,__data  _INSignpostSiriAirPlayRouteSetup
+0x1eb5e8cf0  __DATA,__data  _INSignpostSiriAirPlaySetAudioSessionCategory
+0x1eb5e8ce8  __DATA,__data  _INSignpostSiriAirPlaySetOutputDeviceError
+0x1eb5e8ce0  __DATA,__data  _INSignpostSiriAirPlaySetOutputDeviceSuccess
+0x1eb5e8cd8  __DATA,__data  _INSignpostSiriAirPlaySetOutputDevices
+0x18d188188  __TEXT,__text  _INSiriIntentsRestrictedWhileLocked
+0x18d1881a0  __TEXT,__text  _INSiriIntentsRestrictedWhileProtectedDataUnavailable
+0x1ee0fa348  __DATA_DIRTY,__common  _INSiriLogContextIntents
+0x18d188178  __TEXT,__text  _INSiriSupportedIntentsByExtensions
+0x18d3485a0  __TEXT,__text  _INSkipAnnouncementIntentResponseCodeGetName
+0x18d339124  __TEXT,__text  _INSnoozeAlarmIntentResponseCodeGetName
+0x18d2a58b8  __TEXT,__text  _INSnoozeTasksIntentResponseCodeGetName
+0x18d1e0afc  __TEXT,__text  _INSortTypeGetBackingType
+0x18d1e0b14  __TEXT,__text  _INSortTypeGetFacadeType
+0x18d1e0bc0  __TEXT,__text  _INSortTypeGetLocalizedName
+0x18d1e0b34  __TEXT,__text  _INSortTypeGetName
+0x18d1e0aec  __TEXT,__text  _INSortTypeHasBackingType
+0x18d1e0b60  __TEXT,__text  _INSortTypeWithString
+0x18d145174  __TEXT,__text  _INSpatialEventGetBackingType
+0x18d14518c  __TEXT,__text  _INSpatialEventGetFacadeType
+0x18d145238  __TEXT,__text  _INSpatialEventGetLocalizedName
+0x18d1451ac  __TEXT,__text  _INSpatialEventGetName
+0x18d145168  __TEXT,__text  _INSpatialEventHasBackingType
+0x18d1451d8  __TEXT,__text  _INSpatialEventWithString
+0x18d2f970c  __TEXT,__text  _INSpeakerIDConfidenceGetBackingType
+0x18d2f971c  __TEXT,__text  _INSpeakerIDConfidenceGetFacadeType
+0x18d2f9814  __TEXT,__text  _INSpeakerIDConfidenceGetLocalizedName
+0x18d2f9738  __TEXT,__text  _INSpeakerIDConfidenceGetName
+0x18d2f9700  __TEXT,__text  _INSpeakerIDConfidenceHasBackingType
+0x18d2f9760  __TEXT,__text  _INSpeakerIDConfidenceWithString
+0x1e097bac0  __DATA_CONST,__const  _INStartAudioCallIntentIdentifier
+0x18d0d10d0  __TEXT,__text  _INStartAudioCallIntentResponseCodeGetName
+0x18d2c9a5c  __TEXT,__text  _INStartCallIntentConfirmationReasonGetBackingType
+0x18d2c9a9c  __TEXT,__text  _INStartCallIntentConfirmationReasonGetFacadeType
+0x18d2c9bc0  __TEXT,__text  _INStartCallIntentConfirmationReasonGetLocalizedName
+0x18d2c9ac4  __TEXT,__text  _INStartCallIntentConfirmationReasonGetName
+0x18d2c9a38  __TEXT,__text  _INStartCallIntentConfirmationReasonHasBackingType
+0x18d2c9b28  __TEXT,__text  _INStartCallIntentConfirmationReasonWithString
+0x1e097bab8  __DATA_CONST,__const  _INStartCallIntentIdentifier
+0x18d27fb44  __TEXT,__text  _INStartCallIntentResponseCodeGetName
+0x1e097bab0  __DATA_CONST,__const  _INStartPhotoPlaybackIntentIdentifier
+0x18cfd1224  __TEXT,__text  _INStartPhotoPlaybackIntentResponseCodeGetName
+0x1e097baa8  __DATA_CONST,__const  _INStartVideoCallIntentIdentifier
+0x18d103e34  __TEXT,__text  _INStartVideoCallIntentResponseCodeGetName
+0x1e097baa0  __DATA_CONST,__const  _INStartWorkoutIntentIdentifier
+0x18d00f488  __TEXT,__text  _INStartWorkoutIntentResponseCodeGetName
+0x18d375678  __TEXT,__text  _INStickerTypeGetBackingType
+0x18d3756e0  __TEXT,__text  _INStickerTypeGetFacadeType
+0x18d375864  __TEXT,__text  _INStickerTypeGetLocalizedName
+0x18d375708  __TEXT,__text  _INStickerTypeGetName
+0x18d375660  __TEXT,__text  _INStickerTypeHasBackingType
+0x18d375794  __TEXT,__text  _INStickerTypeWithString
+0x1e097ba98  __DATA_CONST,__const  _INStopAnnouncementIntentIdentifier
+0x18d323d40  __TEXT,__text  _INStopAnnouncementIntentResponseCodeGetName
+0x18d2e8ab8  __TEXT,__text  _INStopShareETAIntentResponseCodeGetName
+0x18d1881b8  __TEXT,__text  _INSupportedActionsForAppProxy
+0x18d1879bc  __TEXT,__text  _INSupportedIntentsByExtensions
+0x18d188228  __TEXT,__text  _INSupportedMediaCategories
+0x18d2525cc  __TEXT,__text  _INSupportedTypesPlist
+0x18d187854  __TEXT,__text  _INSupportsPairedDevice
+0x1e097ba90  __DATA_CONST,__const  _INSyncSlotActivityName
+0x1e097ba88  __DATA_CONST,__const  _INSyncSlotAudiobookAuthorName
+0x1e097ba80  __DATA_CONST,__const  _INSyncSlotAudiobookTitle
+0x1e097ba78  __DATA_CONST,__const  _INSyncSlotAutoShortcutName
+0x1e097ba70  __DATA_CONST,__const  _INSyncSlotCarName
+0x1e097ba68  __DATA_CONST,__const  _INSyncSlotCarProfileName
+0x1e097ba60  __DATA_CONST,__const  _INSyncSlotContactGroupName
+0x1e097ba58  __DATA_CONST,__const  _INSyncSlotContactName
+0x1e097ba50  __DATA_CONST,__const  _INSyncSlotMediaUserContext
+0x1e097ba48  __DATA_CONST,__const  _INSyncSlotMusicArtistName
+0x1e097ba40  __DATA_CONST,__const  _INSyncSlotNotebookItemGroupName
+0x1e097ba38  __DATA_CONST,__const  _INSyncSlotNotebookItemTitle
+0x1e097ba30  __DATA_CONST,__const  _INSyncSlotPaymentsAccountNickname
+0x1e097ba28  __DATA_CONST,__const  _INSyncSlotPaymentsOrganizationName
+0x1e097ba20  __DATA_CONST,__const  _INSyncSlotPersonName
+0x1e097ba18  __DATA_CONST,__const  _INSyncSlotPhotoAlbumName
+0x1e097ba10  __DATA_CONST,__const  _INSyncSlotPhotoMemoryName
+0x1e097ba08  __DATA_CONST,__const  _INSyncSlotPhotoTagName
+0x1e097ba00  __DATA_CONST,__const  _INSyncSlotPlaylistTitle
+0x1e097b9f8  __DATA_CONST,__const  _INSyncSlotShowTitle
+0x1e097b9f0  __DATA_CONST,__const  _INSyncSlotVoiceCommandName
+0x18d0393d8  __TEXT,__text  _INSyncedSchemaWithBundleID
+0x18d2a00e0  __TEXT,__text  _INTaskPriorityGetBackingType
+0x18d2a00f0  __TEXT,__text  _INTaskPriorityGetFacadeType
+0x18d2a019c  __TEXT,__text  _INTaskPriorityGetLocalizedName
+0x18d2a0110  __TEXT,__text  _INTaskPriorityGetName
+0x18d2a00d4  __TEXT,__text  _INTaskPriorityHasBackingType
+0x18d2a013c  __TEXT,__text  _INTaskPriorityWithString
+0x18d290704  __TEXT,__text  _INTaskReferenceGetBackingType
+0x18d290714  __TEXT,__text  _INTaskReferenceGetFacadeType
+0x18d290760  __TEXT,__text  _INTaskReferenceGetLocalizedName
+0x18d290720  __TEXT,__text  _INTaskReferenceGetName
+0x18d2906f8  __TEXT,__text  _INTaskReferenceHasBackingType
+0x18d29073c  __TEXT,__text  _INTaskReferenceWithString
+0x18d21801c  __TEXT,__text  _INTaskStatusGetBackingType
+0x18d218034  __TEXT,__text  _INTaskStatusGetFacadeType
+0x18d2180e0  __TEXT,__text  _INTaskStatusGetLocalizedName
+0x18d218054  __TEXT,__text  _INTaskStatusGetName
+0x18d218010  __TEXT,__text  _INTaskStatusHasBackingType
+0x18d218080  __TEXT,__text  _INTaskStatusWithString
+0x18d117d28  __TEXT,__text  _INTaskTypeGetBackingType
+0x18d117d40  __TEXT,__text  _INTaskTypeGetFacadeType
+0x18d117dec  __TEXT,__text  _INTaskTypeGetLocalizedName
+0x18d117d60  __TEXT,__text  _INTaskTypeGetName
+0x18d117d1c  __TEXT,__text  _INTaskTypeHasBackingType
+0x18d117d8c  __TEXT,__text  _INTaskTypeWithString
+0x18d2cb6f8  __TEXT,__text  _INTaskWarningCodeOptionsAddBackingType
+0x18d2cb6b4  __TEXT,__text  _INTaskWarningCodeOptionsContainsBackingType
+0x18d2cb5f8  __TEXT,__text  _INTaskWarningCodeOptionsEnumerateBackingTypes
+0x18d2cb9c0  __TEXT,__text  _INTaskWarningCodeOptionsGetLocalizedNames
+0x18d2cb788  __TEXT,__text  _INTaskWarningCodeOptionsGetNames
+0x18d2cb740  __TEXT,__text  _INTaskWarningCodeOptionsRemoveBackingType
+0x18d2cb840  __TEXT,__text  _INTaskWarningCodeOptionsWithNames
+0x18d29fab8  __TEXT,__text  _INTemporalEventTriggerTypeOptionsAddBackingType
+0x18d29fa88  __TEXT,__text  _INTemporalEventTriggerTypeOptionsContainsBackingType
+0x18d29f9ec  __TEXT,__text  _INTemporalEventTriggerTypeOptionsEnumerateBackingTypes
+0x18d29fd20  __TEXT,__text  _INTemporalEventTriggerTypeOptionsGetLocalizedNames
+0x18d29fb20  __TEXT,__text  _INTemporalEventTriggerTypeOptionsGetNames
+0x18d29faec  __TEXT,__text  _INTemporalEventTriggerTypeOptionsRemoveBackingType
+0x18d29fbc0  __TEXT,__text  _INTemporalEventTriggerTypeOptionsWithNames
+0x18cf820ec  __TEXT,__text  _INThisProcessCanMapLSDatabase
+0x18d186f94  __TEXT,__text  _INThisProcessHasAssistantdEntitlement
+0x18cfce2a0  __TEXT,__text  _INThisProcessHasEntitlement
+0x18d186f4c  __TEXT,__text  _INThisProcessHasSiriDeveloperEntitlement
+0x18d186f5c  __TEXT,__text  _INThisProcessHasSiriDeveloperEntitlementWithoutCheckingBundle
+0x18cfb795c  __TEXT,__text  _INThisProcessIsAssistantd
+0x18d186fe8  __TEXT,__text  _INThisProcessIsCarousel
+0x18cf9c740  __TEXT,__text  _INThisProcessIsDonatingBySiri
+0x18d18735c  __TEXT,__text  _INThisProcessIsRunningAsInstance
+0x18d186fa0  __TEXT,__text  _INThisProcessIsSiri
+0x18d187234  __TEXT,__text  _INThisProcessIsSystemProcess
+0x18d18719c  __TEXT,__text  _INThisProcessIsTrustedSiriIntentForwarder
+0x18d2c642c  __TEXT,__text  _INTicketedEventCategoryGetBackingType
+0x18d2c6448  __TEXT,__text  _INTicketedEventCategoryGetFacadeType
+0x18d2c6494  __TEXT,__text  _INTicketedEventCategoryGetLocalizedName
+0x18d2c6454  __TEXT,__text  _INTicketedEventCategoryGetName
+0x18d2c6420  __TEXT,__text  _INTicketedEventCategoryHasBackingType
+0x18d2c6470  __TEXT,__text  _INTicketedEventCategoryWithString
+0x18d24ea28  __TEXT,__text  _INTimerStateGetBackingType
+0x18d24ea38  __TEXT,__text  _INTimerStateGetFacadeType
+0x18d24eae4  __TEXT,__text  _INTimerStateGetLocalizedName
+0x18d24ea58  __TEXT,__text  _INTimerStateGetName
+0x18d24ea1c  __TEXT,__text  _INTimerStateHasBackingType
+0x18d24ea84  __TEXT,__text  _INTimerStateWithString
+0x18d174d3c  __TEXT,__text  _INTimerTypeGetBackingType
+0x18d174d4c  __TEXT,__text  _INTimerTypeGetFacadeType
+0x18d174df8  __TEXT,__text  _INTimerTypeGetLocalizedName
+0x18d174d6c  __TEXT,__text  _INTimerTypeGetName
+0x18d174d30  __TEXT,__text  _INTimerTypeHasBackingType
+0x18d174d98  __TEXT,__text  _INTimerTypeWithString
+0x18cfefe8c  __TEXT,__text  _INTimersDomainGetIntentDescriptionWithDataClass
+0x18cfefe24  __TEXT,__text  _INTimersDomainGetIntentDescriptionWithFacadeClass
+0x18cfbeae8  __TEXT,__text  _INTimersDomainGetIntentDescriptionWithName
+0x18cfebd34  __TEXT,__text  _INTimersDomainGetIntentDescriptionWithType
+0x18cfeff5c  __TEXT,__text  _INTimersDomainGetIntentResponseDescriptionWithDataClass
+0x18cfefef4  __TEXT,__text  _INTimersDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfecb0c  __TEXT,__text  _INTimersDomainGetIntentResponseDescriptionWithName
+0x18cfed838  __TEXT,__text  _INTimersDomainGetIntentResponseDescriptionWithType
+0x18d25b3b8  __TEXT,__text  _INToggleStateGetBackingType
+0x18d25b480  __TEXT,__text  _INToggleStateGetDisplayName
+0x18d25b3d4  __TEXT,__text  _INToggleStateGetFacadeType
+0x18d25b4a4  __TEXT,__text  _INToggleStateGetLocalizedName
+0x18d25b3f4  __TEXT,__text  _INToggleStateGetName
+0x18d25b3a8  __TEXT,__text  _INToggleStateHasBackingType
+0x18d25b420  __TEXT,__text  _INToggleStateWithString
+0x18d359eec  __TEXT,__text  _INTrafficIncidentTypeGetBackingType
+0x18d359f00  __TEXT,__text  _INTrafficIncidentTypeGetFacadeType
+0x18d359ff4  __TEXT,__text  _INTrafficIncidentTypeGetLocalizedName
+0x18d359f18  __TEXT,__text  _INTrafficIncidentTypeGetName
+0x18d359edc  __TEXT,__text  _INTrafficIncidentTypeHasBackingType
+0x18d359f40  __TEXT,__text  _INTrafficIncidentTypeWithString
+0x18d03b524  __TEXT,__text  _INTransferMoneyIntentResponseCodeGetName
+0x18d05a124  __TEXT,__text  _INTriggerMethodGetBackingType
+0x18d05a140  __TEXT,__text  _INTriggerMethodGetFacadeType
+0x18d05a244  __TEXT,__text  _INTriggerMethodGetLocalizedName
+0x18d05a184  __TEXT,__text  _INTriggerMethodGetName
+0x18d05a114  __TEXT,__text  _INTriggerMethodHasBackingType
+0x18d05a1ac  __TEXT,__text  _INTriggerMethodWithString
+0x18cfd6a54  __TEXT,__text  _INTrimToKeyImage
+0x18d189a1c  __TEXT,__text  _INTypedIntentResponseWithIntentResponse
+0x18cf785ac  __TEXT,__text  _INTypedIntentWithIntent
+0x18d189af8  __TEXT,__text  _INTypedInteractionWithInteraction
+0x18d18922c  __TEXT,__text  _INTypedObjectWithCustomObject
+0x18d36f2f0  __TEXT,__text  _INUnsendMessagesIntentResponseCodeGetName
+0x1e097b9e8  __DATA_CONST,__const  _INUpcomingMediaManagerDefaultsDomain
+0x1e097b9e0  __DATA_CONST,__const  _INUpcomingMediaSpotlightDomain
+0x18d33dddc  __TEXT,__text  _INUpdateAlarmIntentResponseCodeGetName
+0x18d3394d8  __TEXT,__text  _INUpdateAlarmOperationGetBackingType
+0x18d3394f4  __TEXT,__text  _INUpdateAlarmOperationGetFacadeType
+0x18d3395a0  __TEXT,__text  _INUpdateAlarmOperationGetLocalizedName
+0x18d339514  __TEXT,__text  _INUpdateAlarmOperationGetName
+0x18d3394c8  __TEXT,__text  _INUpdateAlarmOperationHasBackingType
+0x18d339540  __TEXT,__text  _INUpdateAlarmOperationWithString
+0x18d022edc  __TEXT,__text  _INUpdateEventConfirmationReasonGetBackingType
+0x18d022ef8  __TEXT,__text  _INUpdateEventConfirmationReasonGetFacadeType
+0x18d022fa4  __TEXT,__text  _INUpdateEventConfirmationReasonGetLocalizedName
+0x18d022f18  __TEXT,__text  _INUpdateEventConfirmationReasonGetName
+0x18d022ecc  __TEXT,__text  _INUpdateEventConfirmationReasonHasBackingType
+0x18d022f44  __TEXT,__text  _INUpdateEventConfirmationReasonWithString
+0x18d13383c  __TEXT,__text  _INUpdateEventIntentResponseCodeGetName
+0x18d25f3bc  __TEXT,__text  _INUpdateMediaAffinityIntentResponseCodeGetName
+0x18cf67710  __TEXT,__text  _INUserActivityDeserializeFromBackingStore
+0x18cf94748  __TEXT,__text  _INUserActivityDeserializeFromData
+0x18d188500  __TEXT,__text  _INUserActivityGetSerializationQueue
+0x18cf5a444  __TEXT,__text  _INUserActivitySerializeToBackingStore
+0x18cfc6ad4  __TEXT,__text  _INUserActivitySerializeToData
+0x18d0e5360  __TEXT,__text  _INUserNotificationTypeGetBackingType
+0x18d0e537c  __TEXT,__text  _INUserNotificationTypeGetFacadeType
+0x18d0e5428  __TEXT,__text  _INUserNotificationTypeGetLocalizedName
+0x18d0e539c  __TEXT,__text  _INUserNotificationTypeGetName
+0x18d0e5350  __TEXT,__text  _INUserNotificationTypeHasBackingType
+0x18d0e53c8  __TEXT,__text  _INUserNotificationTypeWithString
+0x18cf557b0  __TEXT,__text  _INUserSupportDirectoryPath
+0x18d2d8584  __TEXT,__text  _INValidateReservationInteraction
+0x18cff002c  __TEXT,__text  _INVisualCodeDomainGetIntentDescriptionWithDataClass
+0x18cfeffc4  __TEXT,__text  _INVisualCodeDomainGetIntentDescriptionWithFacadeClass
+0x18cfeb100  __TEXT,__text  _INVisualCodeDomainGetIntentDescriptionWithName
+0x18cfebdb0  __TEXT,__text  _INVisualCodeDomainGetIntentDescriptionWithType
+0x18cff00fc  __TEXT,__text  _INVisualCodeDomainGetIntentResponseDescriptionWithDataClass
+0x18cff0094  __TEXT,__text  _INVisualCodeDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfecb88  __TEXT,__text  _INVisualCodeDomainGetIntentResponseDescriptionWithName
+0x18cfed8b4  __TEXT,__text  _INVisualCodeDomainGetIntentResponseDescriptionWithType
+0x18d150034  __TEXT,__text  _INVisualCodeTypeGetBackingType
+0x18d150044  __TEXT,__text  _INVisualCodeTypeGetFacadeType
+0x18d150158  __TEXT,__text  _INVisualCodeTypeGetLocalizedName
+0x18d150060  __TEXT,__text  _INVisualCodeTypeGetName
+0x18d150028  __TEXT,__text  _INVisualCodeTypeHasBackingType
+0x18d150088  __TEXT,__text  _INVisualCodeTypeWithString
+0x18d18ad0c  __TEXT,__text  _INVocabulariesByLocaleByAddingInvocationPhrases
+0x18cff01cc  __TEXT,__text  _INVoiceCommandsDomainGetIntentDescriptionWithDataClass
+0x18cff0164  __TEXT,__text  _INVoiceCommandsDomainGetIntentDescriptionWithFacadeClass
+0x18cfeb17c  __TEXT,__text  _INVoiceCommandsDomainGetIntentDescriptionWithName
+0x18cfebe2c  __TEXT,__text  _INVoiceCommandsDomainGetIntentDescriptionWithType
+0x18cff029c  __TEXT,__text  _INVoiceCommandsDomainGetIntentResponseDescriptionWithDataClass
+0x18cff0234  __TEXT,__text  _INVoiceCommandsDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfecc04  __TEXT,__text  _INVoiceCommandsDomainGetIntentResponseDescriptionWithName
+0x18cfed930  __TEXT,__text  _INVoiceCommandsDomainGetIntentResponseDescriptionWithType
+0x18d0cd7f8  __TEXT,__text  _INVoicemailPlaybackStateGetBackingType
+0x18d0cd808  __TEXT,__text  _INVoicemailPlaybackStateGetFacadeType
+0x18d0cd8c8  __TEXT,__text  _INVoicemailPlaybackStateGetLocalizedName
+0x18d0cd824  __TEXT,__text  _INVoicemailPlaybackStateGetName
+0x18d0cd7ec  __TEXT,__text  _INVoicemailPlaybackStateHasBackingType
+0x18d0cd84c  __TEXT,__text  _INVoicemailPlaybackStateWithString
+0x1e097b9d8  __DATA_CONST,__const  _INVoocabularyChangedNotification
+0x18cff036c  __TEXT,__text  _INWellnessDomainGetIntentDescriptionWithDataClass
+0x18cff0304  __TEXT,__text  _INWellnessDomainGetIntentDescriptionWithFacadeClass
+0x18cfeb1f8  __TEXT,__text  _INWellnessDomainGetIntentDescriptionWithName
+0x18cfebea8  __TEXT,__text  _INWellnessDomainGetIntentDescriptionWithType
+0x18cff043c  __TEXT,__text  _INWellnessDomainGetIntentResponseDescriptionWithDataClass
+0x18cff03d4  __TEXT,__text  _INWellnessDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfecc80  __TEXT,__text  _INWellnessDomainGetIntentResponseDescriptionWithName
+0x18cfed9ac  __TEXT,__text  _INWellnessDomainGetIntentResponseDescriptionWithType
+0x18d09c7d0  __TEXT,__text  _INWellnessObjectTypeGetBackingType
+0x18d09c7e0  __TEXT,__text  _INWellnessObjectTypeGetFacadeType
+0x18d09d064  __TEXT,__text  _INWellnessObjectTypeGetLocalizedName
+0x18d09c7fc  __TEXT,__text  _INWellnessObjectTypeGetName
+0x18d09c7c4  __TEXT,__text  _INWellnessObjectTypeHasBackingType
+0x18d09c824  __TEXT,__text  _INWellnessObjectTypeWithString
+0x18d224cd4  __TEXT,__text  _INWellnessQueryResultTypeGetBackingType
+0x18d224ce4  __TEXT,__text  _INWellnessQueryResultTypeGetFacadeType
+0x18d224e4c  __TEXT,__text  _INWellnessQueryResultTypeGetLocalizedName
+0x18d224d00  __TEXT,__text  _INWellnessQueryResultTypeGetName
+0x18d224cc8  __TEXT,__text  _INWellnessQueryResultTypeHasBackingType
+0x18d224d28  __TEXT,__text  _INWellnessQueryResultTypeWithString
+0x18d17dbfc  __TEXT,__text  _INWellnessQuestionTypeGetBackingType
+0x18d17dc0c  __TEXT,__text  _INWellnessQuestionTypeGetFacadeType
+0x18d17dd3c  __TEXT,__text  _INWellnessQuestionTypeGetLocalizedName
+0x18d17dc28  __TEXT,__text  _INWellnessQuestionTypeGetName
+0x18d17dbf0  __TEXT,__text  _INWellnessQuestionTypeHasBackingType
+0x18d17dc50  __TEXT,__text  _INWellnessQuestionTypeWithString
+0x18cff050c  __TEXT,__text  _INWorkflowDomainGetIntentDescriptionWithDataClass
+0x18cff04a4  __TEXT,__text  _INWorkflowDomainGetIntentDescriptionWithFacadeClass
+0x18cfeb274  __TEXT,__text  _INWorkflowDomainGetIntentDescriptionWithName
+0x18cfebf24  __TEXT,__text  _INWorkflowDomainGetIntentDescriptionWithType
+0x18cff05dc  __TEXT,__text  _INWorkflowDomainGetIntentResponseDescriptionWithDataClass
+0x18cff0574  __TEXT,__text  _INWorkflowDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfeccfc  __TEXT,__text  _INWorkflowDomainGetIntentResponseDescriptionWithName
+0x18cfeda28  __TEXT,__text  _INWorkflowDomainGetIntentResponseDescriptionWithType
+0x18d3541ac  __TEXT,__text  _INWorkoutAssociatedItemLabelGetBackingType
+0x18d3541c0  __TEXT,__text  _INWorkoutAssociatedItemLabelGetFacadeType
+0x18d3542b4  __TEXT,__text  _INWorkoutAssociatedItemLabelGetLocalizedName
+0x18d3541d8  __TEXT,__text  _INWorkoutAssociatedItemLabelGetName
+0x18d35419c  __TEXT,__text  _INWorkoutAssociatedItemLabelHasBackingType
+0x18d354200  __TEXT,__text  _INWorkoutAssociatedItemLabelWithString
+0x18d3551fc  __TEXT,__text  _INWorkoutContentRatingLabelGetBackingType
+0x18d355214  __TEXT,__text  _INWorkoutContentRatingLabelGetFacadeType
+0x18d3552c0  __TEXT,__text  _INWorkoutContentRatingLabelGetLocalizedName
+0x18d355234  __TEXT,__text  _INWorkoutContentRatingLabelGetName
+0x18d3551ec  __TEXT,__text  _INWorkoutContentRatingLabelHasBackingType
+0x18d355260  __TEXT,__text  _INWorkoutContentRatingLabelWithString
+0x18d0caa00  __TEXT,__text  _INWorkoutGoalUnitTypeGetBackingType
+0x18d0caa14  __TEXT,__text  _INWorkoutGoalUnitTypeGetFacadeType
+0x18d0cab94  __TEXT,__text  _INWorkoutGoalUnitTypeGetLocalizedName
+0x18d0caa2c  __TEXT,__text  _INWorkoutGoalUnitTypeGetName
+0x18d0ca9f0  __TEXT,__text  _INWorkoutGoalUnitTypeHasBackingType
+0x18d0caa54  __TEXT,__text  _INWorkoutGoalUnitTypeWithString
+0x18d02fca0  __TEXT,__text  _INWorkoutLocationTypeGetBackingType
+0x18d02fcb8  __TEXT,__text  _INWorkoutLocationTypeGetFacadeType
+0x18d02fd64  __TEXT,__text  _INWorkoutLocationTypeGetLocalizedName
+0x18d02fcd8  __TEXT,__text  _INWorkoutLocationTypeGetName
+0x18d02fc90  __TEXT,__text  _INWorkoutLocationTypeHasBackingType
+0x18d02fd04  __TEXT,__text  _INWorkoutLocationTypeWithString
+0x1e097b9d0  __DATA_CONST,__const  _INWorkoutNameIdentifierCrosstraining
+0x1e097b9c8  __DATA_CONST,__const  _INWorkoutNameIdentifierCycle
+0x1e097b9c0  __DATA_CONST,__const  _INWorkoutNameIdentifierDance
+0x1e097b9b8  __DATA_CONST,__const  _INWorkoutNameIdentifierElliptical
+0x1e097b9b0  __DATA_CONST,__const  _INWorkoutNameIdentifierExercise
+0x18d22cab8  __TEXT,__text  _INWorkoutNameIdentifierGetBackingType
+0x18d22ca94  __TEXT,__text  _INWorkoutNameIdentifierGetFacadeObject
+0x1e097b9a8  __DATA_CONST,__const  _INWorkoutNameIdentifierHighIntensityIntervalTraining
+0x1e097b9a0  __DATA_CONST,__const  _INWorkoutNameIdentifierHike
+0x1e097b998  __DATA_CONST,__const  _INWorkoutNameIdentifierIndoorcycle
+0x1e097b990  __DATA_CONST,__const  _INWorkoutNameIdentifierIndoorrun
+0x1e097b988  __DATA_CONST,__const  _INWorkoutNameIdentifierIndoorwalk
+0x1e097b980  __DATA_CONST,__const  _INWorkoutNameIdentifierMove
+0x1e097b978  __DATA_CONST,__const  _INWorkoutNameIdentifierOther
+0x1e097b970  __DATA_CONST,__const  _INWorkoutNameIdentifierRower
+0x1e097b968  __DATA_CONST,__const  _INWorkoutNameIdentifierRun
+0x1e097b960  __DATA_CONST,__const  _INWorkoutNameIdentifierSit
+0x1e097b958  __DATA_CONST,__const  _INWorkoutNameIdentifierStairs
+0x1e097b950  __DATA_CONST,__const  _INWorkoutNameIdentifierStand
+0x1e097b948  __DATA_CONST,__const  _INWorkoutNameIdentifierSteps
+0x1e097b940  __DATA_CONST,__const  _INWorkoutNameIdentifierSwim
+0x18d22cd40  __TEXT,__text  _INWorkoutNameIdentifierValueAsString
+0x1e097b938  __DATA_CONST,__const  _INWorkoutNameIdentifierWalk
+0x1e097b930  __DATA_CONST,__const  _INWorkoutNameIdentifierYoga
+0x18d355344  __TEXT,__text  _INWorkoutSequenceLabelGetBackingType
+0x18d35535c  __TEXT,__text  _INWorkoutSequenceLabelGetFacadeType
+0x18d355408  __TEXT,__text  _INWorkoutSequenceLabelGetLocalizedName
+0x18d35537c  __TEXT,__text  _INWorkoutSequenceLabelGetName
+0x18d355334  __TEXT,__text  _INWorkoutSequenceLabelHasBackingType
+0x18d3553a8  __TEXT,__text  _INWorkoutSequenceLabelWithString
+0x18cff06ac  __TEXT,__text  _INWorkoutsDomainGetIntentDescriptionWithDataClass
+0x18cff0644  __TEXT,__text  _INWorkoutsDomainGetIntentDescriptionWithFacadeClass
+0x18cfeb2f0  __TEXT,__text  _INWorkoutsDomainGetIntentDescriptionWithName
+0x18cfebfa0  __TEXT,__text  _INWorkoutsDomainGetIntentDescriptionWithType
+0x18cff077c  __TEXT,__text  _INWorkoutsDomainGetIntentResponseDescriptionWithDataClass
+0x18cff0714  __TEXT,__text  _INWorkoutsDomainGetIntentResponseDescriptionWithFacadeClass
+0x18cfecd78  __TEXT,__text  _INWorkoutsDomainGetIntentResponseDescriptionWithName
+0x18cfedaa4  __TEXT,__text  _INWorkoutsDomainGetIntentResponseDescriptionWithType
+0x18d3f1bc8  __TEXT,__const  _IntentsVersionNumber
+0x18d3f1ba0  __TEXT,__const  _IntentsVersionString
+0x18d0e7ab8  __TEXT,__text  _NSDateComponentsForINDateComponents
+0x18d0e7bd8  __TEXT,__text  _NSLabeledDatesForINDateComponents
+0x18d0e71d8  __TEXT,__text  _NSPersonNameComponentsForPBContactCard
+0x1ef561d30  __AUTH,__objc_data  _OBJC_CLASS_$_DummyHandlerProvider
+0x1ef566498  __AUTH,__objc_data  _OBJC_CLASS_$_INAccountTypeResolutionResult
+0x1ef566470  __AUTH,__objc_data  _OBJC_CLASS_$_INActivateCarSignalIntent
+0x1ef561d08  __AUTH,__objc_data  _OBJC_CLASS_$_INActivateCarSignalIntentResponse
+0x1ef561ce0  __AUTH,__objc_data  _OBJC_CLASS_$_INActivity
+0x1ef568fb8  __AUTH,__objc_data  _OBJC_CLASS_$_INAddCallParticipantIntent
+0x1ef568798  __AUTH,__objc_data  _OBJC_CLASS_$_INAddCallParticipantIntentResponse
+0x1ef568f90  __AUTH,__objc_data  _OBJC_CLASS_$_INAddCallParticipantParticipantResolutionResult
+0x1ee0f8218  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INAddMediaIntent
+0x1ef564418  __AUTH,__objc_data  _OBJC_CLASS_$_INAddMediaIntentResponse
+0x1ee0f7728  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INAddMediaMediaDestinationResolutionResult
+0x1ee0f78e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INAddMediaMediaItemResolutionResult
+0x1ee0f6b98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INAddTasksContactEventTriggerResolutionResult
+0x1ee0f8010  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INAddTasksIntent
+0x1ef561cb8  __AUTH,__objc_data  _OBJC_CLASS_$_INAddTasksIntentResponse
+0x1ee0f6b70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INAddTasksTargetTaskListMemberResolutionResult
+0x1ee0f6b48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INAddTasksTargetTaskListResolutionResult
+0x1ee0f6b20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INAddTasksTemporalEventTriggerResolutionResult
+0x1ef561c90  __AUTH,__objc_data  _OBJC_CLASS_$_INAirline
+0x1ef561c68  __AUTH,__objc_data  _OBJC_CLASS_$_INAirport
+0x1ef561c40  __AUTH,__objc_data  _OBJC_CLASS_$_INAirportGate
+0x1ef561c18  __AUTH,__objc_data  _OBJC_CLASS_$_INAlarm
+0x1ef561bf0  __AUTH,__objc_data  _OBJC_CLASS_$_INAlarmRepeatScheduleOptionsResolutionResult
+0x1ef561bc8  __AUTH,__objc_data  _OBJC_CLASS_$_INAlarmResolutionResult
+0x1ef561ba0  __AUTH,__objc_data  _OBJC_CLASS_$_INAlarmSearch
+0x1ef561b78  __AUTH,__objc_data  _OBJC_CLASS_$_INAlarmSearchTypeResolutionResult
+0x1ef561b50  __AUTH,__objc_data  _OBJC_CLASS_$_INAnnouncement
+0x1ef561b28  __AUTH,__objc_data  _OBJC_CLASS_$_INAnnouncementRecord
+0x1ef561b00  __AUTH,__objc_data  _OBJC_CLASS_$_INAnnouncementResolutionResult
+0x1ee0f6120  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INAnswerCallIntent
+0x1ef568770  __AUTH,__objc_data  _OBJC_CLASS_$_INAnswerCallIntentResponse
+0x1ef567bb8  __AUTH,__objc_data  _OBJC_CLASS_$_INAppDescriptor
+0x1ef561ad8  __AUTH,__objc_data  _OBJC_CLASS_$_INAppIdentifier
+0x1ef561ab0  __AUTH,__objc_data  _OBJC_CLASS_$_INAppIdentifierResolutionResult
+0x1ee0f85d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INAppInfo
+0x1ee0f8998  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INAppIntent
+0x1ef565228  __AUTH,__objc_data  _OBJC_CLASS_$_INAppIntentDeliverer
+0x1ef566448  __AUTH,__objc_data  _OBJC_CLASS_$_INAppIntentDescriptor
+0x1ef563130  __AUTH,__objc_data  _OBJC_CLASS_$_INAppIntentDispatcher
+0x1ef568ae0  __AUTH,__objc_data  _OBJC_CLASS_$_INAppResolver
+0x1ef566d30  __AUTH,__objc_data  _OBJC_CLASS_$_INAppResolverOptions
+0x1ee0f7250  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INAppendToNoteIntent
+0x1ef561a88  __AUTH,__objc_data  _OBJC_CLASS_$_INAppendToNoteIntentResponse
+0x1ef5643f0  __AUTH,__objc_data  _OBJC_CLASS_$_INArchivedObject
+0x1ef561a60  __AUTH,__objc_data  _OBJC_CLASS_$_INBalanceAmount
+0x1ef566420  __AUTH,__objc_data  _OBJC_CLASS_$_INBalanceTypeResolutionResult
+0x1ef561a38  __AUTH,__objc_data  _OBJC_CLASS_$_INBillDetails
+0x1ef561a10  __AUTH,__objc_data  _OBJC_CLASS_$_INBillPayee
+0x1ef5663f8  __AUTH,__objc_data  _OBJC_CLASS_$_INBillPayeeResolutionResult
+0x1ef5663d0  __AUTH,__objc_data  _OBJC_CLASS_$_INBillTypeResolutionResult
+0x1ef5643c8  __AUTH,__objc_data  _OBJC_CLASS_$_INBinarySettingValueResolutionResult
+0x1ef5619e8  __AUTH,__objc_data  _OBJC_CLASS_$_INBoatReservation
+0x1ef5619c0  __AUTH,__objc_data  _OBJC_CLASS_$_INBoatTrip
+0x1ef5643a0  __AUTH,__objc_data  _OBJC_CLASS_$_INBookRestaurantReservationIntent
+0x1ef561998  __AUTH,__objc_data  _OBJC_CLASS_$_INBookRestaurantReservationIntentResponse
+0x1ee0f82b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INBooleanResolutionResult
+0x1ef564378  __AUTH,__objc_data  _OBJC_CLASS_$_INBoundedSettingValueResolutionResult
+0x1ef5663a8  __AUTH,__objc_data  _OBJC_CLASS_$_INBundleAccessGrant
+0x1ef566380  __AUTH,__objc_data  _OBJC_CLASS_$_INBundleAccessManager
+0x1ef561970  __AUTH,__objc_data  _OBJC_CLASS_$_INBusReservation
+0x1ef561948  __AUTH,__objc_data  _OBJC_CLASS_$_INBusTrip
+0x1ee0f9870  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCache
+0x1ee0f8c68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCalendarEvent
+0x1ef561920  __AUTH,__objc_data  _OBJC_CLASS_$_INCalendarEventResolutionResult
+0x1ee0f6008  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCallCapabilityResolutionResult
+0x1ee0f5fe0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCallDestinationTypeResolutionResult
+0x1ef563108  __AUTH,__objc_data  _OBJC_CLASS_$_INCallGroup
+0x1ef5618f8  __AUTH,__objc_data  _OBJC_CLASS_$_INCallGroupConversation
+0x1ef5618d0  __AUTH,__objc_data  _OBJC_CLASS_$_INCallGroupConversationFilter
+0x1ef568f68  __AUTH,__objc_data  _OBJC_CLASS_$_INCallGroupConversationResolutionResult
+0x1ef5618a8  __AUTH,__objc_data  _OBJC_CLASS_$_INCallInvite
+0x1ef566358  __AUTH,__objc_data  _OBJC_CLASS_$_INCallRecord
+0x1ef565200  __AUTH,__objc_data  _OBJC_CLASS_$_INCallRecordFilter
+0x1ee0f5fb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCallRecordResolutionResult
+0x1ee0f5f90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCallRecordTypeOptionsResolutionResult
+0x1ef561880  __AUTH,__objc_data  _OBJC_CLASS_$_INCallRecordTypeResolutionResult
+0x1ef561858  __AUTH,__objc_data  _OBJC_CLASS_$_INCancelRideIntent
+0x1ef561830  __AUTH,__objc_data  _OBJC_CLASS_$_INCancelRideIntentResponse
+0x1ef566330  __AUTH,__objc_data  _OBJC_CLASS_$_INCancelWorkoutIntent
+0x1ef561808  __AUTH,__objc_data  _OBJC_CLASS_$_INCancelWorkoutIntentResponse
+0x1ef5617e0  __AUTH,__objc_data  _OBJC_CLASS_$_INCar
+0x1ef5630e0  __AUTH,__objc_data  _OBJC_CLASS_$_INCarAirCirculationModeResolutionResult
+0x1ef5630b8  __AUTH,__objc_data  _OBJC_CLASS_$_INCarAudioSourceResolutionResult
+0x1ef5617b8  __AUTH,__objc_data  _OBJC_CLASS_$_INCarChargingConnectorPower
+0x1ef563090  __AUTH,__objc_data  _OBJC_CLASS_$_INCarDefrosterResolutionResult
+0x1ef561790  __AUTH,__objc_data  _OBJC_CLASS_$_INCarHeadUnit
+0x1ef563068  __AUTH,__objc_data  _OBJC_CLASS_$_INCarSeatResolutionResult
+0x1ef563040  __AUTH,__objc_data  _OBJC_CLASS_$_INCarSignalOptionsResolutionResult
+0x1ef561768  __AUTH,__objc_data  _OBJC_CLASS_$_INChangeAlarmStatusAlarmResolutionResult
+0x1ef561740  __AUTH,__objc_data  _OBJC_CLASS_$_INChangeAlarmStatusIntent
+0x1ef561718  __AUTH,__objc_data  _OBJC_CLASS_$_INChangeAlarmStatusIntentResponse
+0x1ef5616f0  __AUTH,__objc_data  _OBJC_CLASS_$_INChangeAlarmStatusOperationResolutionResult
+0x1ee0fa040  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodable
+0x1ee0f9cf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableAttribute
+0x1ee0f98e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableAttributeDialog
+0x1ee0f99d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableAttributeMetadata
+0x1ee0f98c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableAttributePromptDialog
+0x1ee0f9960  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableAttributeRelationship
+0x1ee0f95f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableAttributeUnsupportedReason
+0x1ee0f9618  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableBooleanAttributeMetadata
+0x1ee0f9258  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableCurrencyAmountAttributeMetadata
+0x1ee0f9ca8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableCustomObjectAttribute
+0x1ee0f9410  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableDateComponentsAttributeMetadata
+0x1ee0f9320  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableDecimalAttributeMetadata
+0x1ee0f9c30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableDescription
+0x1ee0f9028  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableEnum
+0x1ee0f97d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableEnumAttribute
+0x1ee0f9780  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableEnumAttributeMetadata
+0x1ee0f9000  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableEnumValue
+0x1ee0f8808  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableEnumValueSynonym
+0x1ee0f92f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableFileAttributeMetadata
+0x1ee0f9528  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableIntegerAttributeMetadata
+0x1ee0f9f00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableLocalizationTable
+0x1ee0f9230  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableMeasurementAttributeMetadata
+0x1ee0f9578  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableNumberAttributeMetadata
+0x1ee0f9c08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableObjectAttribute
+0x1ee0f9398  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodablePersonAttributeMetadata
+0x1ee0f9758  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodablePlacemarkAttributeMetadata
+0x1ee0f9c80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableScalarAttribute
+0x1ee0f9820  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableStringAttributeMetadata
+0x1ee0f9370  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableTimeIntervalAttributeMetadata
+0x1ee0f9208  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCodableURLAttributeMetadata
+0x1ef5548b0  __AUTH,__objc_data  _OBJC_CLASS_$_INConfigurableDescriptor
+0x1ef5651d8  __AUTH,__objc_data  _OBJC_CLASS_$_INConfigureHomeIntent
+0x1ef5616c8  __AUTH,__objc_data  _OBJC_CLASS_$_INConfigureHomeIntentResponse
+0x1ef563018  __AUTH,__objc_data  _OBJC_CLASS_$_INConfirmIntentForwardingAction
+0x1ef562ff0  __AUTH,__objc_data  _OBJC_CLASS_$_INConfirmIntentForwardingActionResponse
+0x1ef5616a0  __AUTH,__objc_data  _OBJC_CLASS_$_INConnectedCall
+0x1ef561678  __AUTH,__objc_data  _OBJC_CLASS_$_INContactCard
+0x1ef561650  __AUTH,__objc_data  _OBJC_CLASS_$_INContactEventTrigger
+0x1ee0f6af8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INContactEventTriggerResolutionResult
+0x1ef561628  __AUTH,__objc_data  _OBJC_CLASS_$_INContactRelationship
+0x1ef554888  __AUTH,__objc_data  _OBJC_CLASS_$_INControlDescriptor
+0x1ef566808  __AUTH,__objc_data  _OBJC_CLASS_$_INControlHomeIntent
+0x1ef561600  __AUTH,__objc_data  _OBJC_CLASS_$_INControlHomeIntentResponse
+0x1ef5615d8  __AUTH,__objc_data  _OBJC_CLASS_$_INCreateAlarmIntent
+0x1ef5615b0  __AUTH,__objc_data  _OBJC_CLASS_$_INCreateAlarmIntentResponse
+0x1ef564350  __AUTH,__objc_data  _OBJC_CLASS_$_INCreateEventIntent
+0x1ef562fc8  __AUTH,__objc_data  _OBJC_CLASS_$_INCreateEventIntentResponse
+0x1ee0f79a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCreateNoteIntent
+0x1ef561588  __AUTH,__objc_data  _OBJC_CLASS_$_INCreateNoteIntentResponse
+0x1ee0f7070  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCreateTaskListIntent
+0x1ef561560  __AUTH,__objc_data  _OBJC_CLASS_$_INCreateTaskListIntentResponse
+0x1ef569198  __AUTH,__objc_data  _OBJC_CLASS_$_INCreateTimerIntent
+0x1ef567730  __AUTH,__objc_data  _OBJC_CLASS_$_INCreateTimerIntentResponse
+0x1ef568ab8  __AUTH,__objc_data  _OBJC_CLASS_$_INCreateTimerLabelResolutionResult
+0x1ee0f8f60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCurrencyAmount
+0x1ef566308  __AUTH,__objc_data  _OBJC_CLASS_$_INCurrencyAmountResolutionResult
+0x1ee0f8a38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INCustomObject
+0x1ef5667e0  __AUTH,__objc_data  _OBJC_CLASS_$_INDailyRoutineRelevanceProvider
+0x1ee0f7228  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INDateComponentsRange
+0x1ee0f87b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INDateComponentsRangeResolutionResult
+0x1ef5651b0  __AUTH,__objc_data  _OBJC_CLASS_$_INDateComponentsResolutionResult
+0x1ef5667b8  __AUTH,__objc_data  _OBJC_CLASS_$_INDateRelevanceProvider
+0x1ee0f6ad0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INDateSearchTypeResolutionResult
+0x1ef566790  __AUTH,__objc_data  _OBJC_CLASS_$_INDefaultCardTemplate
+0x1ee0f9488  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INDeferredLocalizedString
+0x1ef561538  __AUTH,__objc_data  _OBJC_CLASS_$_INDeleteAlarmAlarmResolutionResult
+0x1ef561510  __AUTH,__objc_data  _OBJC_CLASS_$_INDeleteAlarmIntent
+0x1ef5614e8  __AUTH,__objc_data  _OBJC_CLASS_$_INDeleteAlarmIntentResponse
+0x1ef564328  __AUTH,__objc_data  _OBJC_CLASS_$_INDeleteEventIntent
+0x1ef562fa0  __AUTH,__objc_data  _OBJC_CLASS_$_INDeleteEventIntentResponse
+0x1ef5614c0  __AUTH,__objc_data  _OBJC_CLASS_$_INDeleteHealthSampleIntent
+0x1ef561498  __AUTH,__objc_data  _OBJC_CLASS_$_INDeleteHealthSampleIntentResponse
+0x1ef565188  __AUTH,__objc_data  _OBJC_CLASS_$_INDeleteParkingLocationIntent
+0x1ef561470  __AUTH,__objc_data  _OBJC_CLASS_$_INDeleteParkingLocationIntentResponse
+0x1ee0f6aa8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INDeleteTasksIntent
+0x1ef561448  __AUTH,__objc_data  _OBJC_CLASS_$_INDeleteTasksIntentResponse
+0x1ee0f6a80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INDeleteTasksTaskListResolutionResult
+0x1ee0f6a58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INDeleteTasksTaskResolutionResult
+0x1ef568a90  __AUTH,__objc_data  _OBJC_CLASS_$_INDeleteTimerIntent
+0x1ef567708  __AUTH,__objc_data  _OBJC_CLASS_$_INDeleteTimerIntentResponse
+0x1ef561420  __AUTH,__objc_data  _OBJC_CLASS_$_INDeviceDetail
+0x1ef5613f8  __AUTH,__objc_data  _OBJC_CLASS_$_INDeviceDetailResolutionResult
+0x1ee0f7980  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INDoubleResolutionResult
+0x1ee0f6a30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INEditMessageIntent
+0x1ef568d60  __AUTH,__objc_data  _OBJC_CLASS_$_INEditMessageIntentResponse
+0x1ef567118  __AUTH,__objc_data  _OBJC_CLASS_$_INEndWorkoutIntent
+0x1ef5613d0  __AUTH,__objc_data  _OBJC_CLASS_$_INEndWorkoutIntentResponse
+0x1ef5613a8  __AUTH,__objc_data  _OBJC_CLASS_$_INEnergyResolutionResult
+0x1ef5676e0  __AUTH,__objc_data  _OBJC_CLASS_$_INEnumResolutionResult
+0x1ef561380  __AUTH,__objc_data  _OBJC_CLASS_$_INEvent
+0x1ef564300  __AUTH,__objc_data  _OBJC_CLASS_$_INEventAttributeResolutionResult
+0x1ef561358  __AUTH,__objc_data  _OBJC_CLASS_$_INEventParticipant
+0x1ef561330  __AUTH,__objc_data  _OBJC_CLASS_$_INEventParticipantResolutionResult
+0x1ee0f8a88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INExecutionFrameworkMapper
+0x1ee0f8790  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INExecutionInfo
+0x1ee0f8768  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INExecutionInfoResolver
+0x1ef569580  __AUTH,__objc_data  _OBJC_CLASS_$_INExtension
+0x1ef565160  __AUTH,__objc_data  _OBJC_CLASS_$_INExtensionContext
+0x1ef566ce0  __AUTH,__objc_data  _OBJC_CLASS_$_INExtensionContextHost
+0x1ee0f6fd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INExtensionContextSlotResolutionResult
+0x1ee0f9d48  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INFile
+0x1ef5612e0  __AUTH,__objc_data  _OBJC_CLASS_$_INFileProperty
+0x1ef5662e0  __AUTH,__objc_data  _OBJC_CLASS_$_INFileResolutionResult
+0x1ef5612b8  __AUTH,__objc_data  _OBJC_CLASS_$_INFindDeviceAndPlaySoundDeviceResolutionResult
+0x1ef561290  __AUTH,__objc_data  _OBJC_CLASS_$_INFindDeviceAndPlaySoundIntent
+0x1ef561268  __AUTH,__objc_data  _OBJC_CLASS_$_INFindDeviceAndPlaySoundIntentResponse
+0x1ef5642b0  __AUTH,__objc_data  _OBJC_CLASS_$_INFindEventsIntent
+0x1ef562f78  __AUTH,__objc_data  _OBJC_CLASS_$_INFindEventsIntentResponse
+0x1ef561240  __AUTH,__objc_data  _OBJC_CLASS_$_INFlight
+0x1ef561218  __AUTH,__objc_data  _OBJC_CLASS_$_INFlightReservation
+0x1ef5611f0  __AUTH,__objc_data  _OBJC_CLASS_$_INFocusStatus
+0x1ef562f50  __AUTH,__objc_data  _OBJC_CLASS_$_INFocusStatusCenter
+0x1ef5611c8  __AUTH,__objc_data  _OBJC_CLASS_$_INGeographicalFeature
+0x1ef564288  __AUTH,__objc_data  _OBJC_CLASS_$_INGetAvailableRestaurantReservationBookingDefaultsIntent
+0x1ef5611a0  __AUTH,__objc_data  _OBJC_CLASS_$_INGetAvailableRestaurantReservationBookingDefaultsIntentResponse
+0x1ef564260  __AUTH,__objc_data  _OBJC_CLASS_$_INGetAvailableRestaurantReservationBookingsIntent
+0x1ef561178  __AUTH,__objc_data  _OBJC_CLASS_$_INGetAvailableRestaurantReservationBookingsIntentResponse
+0x1ef5662b8  __AUTH,__objc_data  _OBJC_CLASS_$_INGetCarLockStatusIntent
+0x1ef561150  __AUTH,__objc_data  _OBJC_CLASS_$_INGetCarLockStatusIntentResponse
+0x1ef566768  __AUTH,__objc_data  _OBJC_CLASS_$_INGetCarPowerLevelStatusIntent
+0x1ef561128  __AUTH,__objc_data  _OBJC_CLASS_$_INGetCarPowerLevelStatusIntentResponse
+0x1ef566cb8  __AUTH,__objc_data  _OBJC_CLASS_$_INGetIntentParameterDefaultValueForwardingAction
+0x1ef566c90  __AUTH,__objc_data  _OBJC_CLASS_$_INGetIntentParameterDefaultValueForwardingActionResponse
+0x1ef561100  __AUTH,__objc_data  _OBJC_CLASS_$_INGetIntentParameterOptionsForwardingAction
+0x1ef5610d8  __AUTH,__objc_data  _OBJC_CLASS_$_INGetIntentParameterOptionsForwardingActionResponse
+0x1ef566740  __AUTH,__objc_data  _OBJC_CLASS_$_INGetOnScreenContentForwardingAction
+0x1ef565138  __AUTH,__objc_data  _OBJC_CLASS_$_INGetOnScreenContentForwardingActionResponse
+0x1ee0f7fe8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INGetReservationDetailsIntent
+0x1ef5610b0  __AUTH,__objc_data  _OBJC_CLASS_$_INGetReservationDetailsIntentResponse
+0x1ef564238  __AUTH,__objc_data  _OBJC_CLASS_$_INGetRestaurantGuestIntent
+0x1ef561088  __AUTH,__objc_data  _OBJC_CLASS_$_INGetRestaurantGuestIntentResponse
+0x1ef566c68  __AUTH,__objc_data  _OBJC_CLASS_$_INGetRideStatusIntent
+0x1ef561060  __AUTH,__objc_data  _OBJC_CLASS_$_INGetRideStatusIntentResponse
+0x1ef564210  __AUTH,__objc_data  _OBJC_CLASS_$_INGetSettingIntent
+0x1ef562f28  __AUTH,__objc_data  _OBJC_CLASS_$_INGetSettingIntentResponse
+0x1ef562f00  __AUTH,__objc_data  _OBJC_CLASS_$_INGetSettingResponseData
+0x1ef566c40  __AUTH,__objc_data  _OBJC_CLASS_$_INGetUserCurrentRestaurantReservationBookingsIntent
+0x1ef561038  __AUTH,__objc_data  _OBJC_CLASS_$_INGetUserCurrentRestaurantReservationBookingsIntentResponse
+0x1ef565110  __AUTH,__objc_data  _OBJC_CLASS_$_INGetVisualCodeIntent
+0x1ef561010  __AUTH,__objc_data  _OBJC_CLASS_$_INGetVisualCodeIntentResponse
+0x1ef5641e8  __AUTH,__objc_data  _OBJC_CLASS_$_INHandleIntentForwardingAction
+0x1ef5641c0  __AUTH,__objc_data  _OBJC_CLASS_$_INHandleIntentForwardingActionResponse
+0x1ee0f5f68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INHangUpCallIntent
+0x1ef568748  __AUTH,__objc_data  _OBJC_CLASS_$_INHangUpCallIntentResponse
+0x1ef560fe8  __AUTH,__objc_data  _OBJC_CLASS_$_INHealthUnitResolutionResult
+0x1ef562ed8  __AUTH,__objc_data  _OBJC_CLASS_$_INHelperServiceAccessSpecifier
+0x1ef560fc0  __AUTH,__objc_data  _OBJC_CLASS_$_INHomeAction
+0x1ef560f98  __AUTH,__objc_data  _OBJC_CLASS_$_INHomeAttribute
+0x1ef560f70  __AUTH,__objc_data  _OBJC_CLASS_$_INHomeAttributeRange
+0x1ef560f48  __AUTH,__objc_data  _OBJC_CLASS_$_INHomeAttributeValue
+0x1ef560f20  __AUTH,__objc_data  _OBJC_CLASS_$_INHomeAutomationEntityProvider
+0x1ef560ef8  __AUTH,__objc_data  _OBJC_CLASS_$_INHomeAutomationFromEntity
+0x1ef560ed0  __AUTH,__objc_data  _OBJC_CLASS_$_INHomeContent
+0x1ef560ea8  __AUTH,__objc_data  _OBJC_CLASS_$_INHomeEntity
+0x1ef560e80  __AUTH,__objc_data  _OBJC_CLASS_$_INHomeEntityResponse
+0x1ef560e58  __AUTH,__objc_data  _OBJC_CLASS_$_INHomeFilter
+0x1ef5650e8  __AUTH,__objc_data  _OBJC_CLASS_$_INHomeFilterResolutionResult
+0x1ef560e30  __AUTH,__objc_data  _OBJC_CLASS_$_INHomeUserTask
+0x1ef5650c0  __AUTH,__objc_data  _OBJC_CLASS_$_INHomeUserTaskResolutionResult
+0x1ef560e08  __AUTH,__objc_data  _OBJC_CLASS_$_INHomeUserTaskResponse
+0x1ee0f5f40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INIdentifyIncomingCallerIntent
+0x1ef568720  __AUTH,__objc_data  _OBJC_CLASS_$_INIdentifyIncomingCallerIntentResponse
+0x1ee0fa108  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INImage
+0x1ee0f96b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INImageBundle
+0x1ee0f9eb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INImageFilePersistence
+0x1ef560de0  __AUTH,__objc_data  _OBJC_CLASS_$_INImageNoteContent
+0x1ee0f8920  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INImageProxyInjectionOperation
+0x1ee0f9fc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INImageServiceConnection
+0x1ee0f9e88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INImageServiceRegistry
+0x1ef566c18  __AUTH,__objc_data  _OBJC_CLASS_$_INIntegerResolutionResult
+0x1ee0fa180  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INIntent
+0x1ef560db8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentActivitySlotValueTransformer
+0x1ef560d90  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentAirlineSlotValueTransformer
+0x1ef560d68  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentAirportGateSlotValueTransformer
+0x1ef560d40  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentAirportSlotValueTransformer
+0x1ef560d18  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentAlarmSearchSlotValueTransformer
+0x1ef560cf0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentAlarmSlotValueTransformer
+0x1ef560cc8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentAnnouncementRecordSlotValueTransformer
+0x1ef560ca0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentAnnouncementSlotValueTransformer
+0x1ef560c78  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentAppIdentifierSlotValueTransformer
+0x1ef560c50  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentArchivedObjectSlotValueTransformer
+0x1ef560c28  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentBalanceAmountSlotValueTransformer
+0x1ef560c00  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentBillDetailsSlotValueTransformer
+0x1ef560bd8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentBillPayeeSlotValueTransformer
+0x1ef560bb0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentBoatReservationSlotValueTransformer
+0x1ef560b88  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentBoatTripSlotValueTransformer
+0x1ee0f81f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INIntentBooleanSlotValueTransformer
+0x1ef560b60  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentBusReservationSlotValueTransformer
+0x1ef560b38  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentBusTripSlotValueTransformer
+0x1ef560b10  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentCalendarEventSlotValueTransformer
+0x1ef560ae8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentCallGroupConversationFilterSlotValueTransformer
+0x1ef560ac0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentCallGroupConversationSlotValueTransformer
+0x1ef560a98  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentCallGroupSlotValueTransformer
+0x1ef560a70  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentCallInviteSlotValueTransformer
+0x1ef560a48  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentCallRecordFilterSlotValueTransformer
+0x1ef560a20  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentCallRecordSlotValueTransformer
+0x1ef5609f8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentCarChargingConnectorPowerSlotValueTransformer
+0x1ef5609d0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentCarHeadUnitSlotValueTransformer
+0x1ef5609a8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentCarSlotValueTransformer
+0x1ee0f9c58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INIntentCodableDescription
+0x1ef560980  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentCodablePhrase
+0x1ef560958  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentConnectedCallSlotValueTransformer
+0x1ef560930  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentContactCardSlotValueTransformer
+0x1ef560908  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentContactEventTriggerSlotValueTransformer
+0x1ef5608e0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentContactRelationshipSlotValueTransformer
+0x1ef5608b8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentCurrencyAmountSlotValueTransformer
+0x1ef560890  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentDateComponentsRangeSlotValueTransformer
+0x1ef568f40  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentDateComponentsSlotValueTransformer
+0x1ef566bf0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentDateSlotValueTransformer
+0x1ef560868  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentDecimalNumberSlotValueTransformer
+0x1ee0f5f18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INIntentDeliverer
+0x1ee0f8e70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INIntentDescription
+0x1ef566bc8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentDescriptor
+0x1ef560840  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentDeviceDetailSlotValueTransformer
+0x1ef560818  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentDialingContactSlotValueTransformer
+0x1ef5607f0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentDictionarySlotValueTransformer
+0x1ef5607c8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentDistanceSlotValueTransformer
+0x1ee0f8e20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INIntentDonationMetadata
+0x1ef569558  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentDoubleSlotValueTransformer
+0x1ef5607a0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentEnergySlotValueTransformer
+0x1ef560778  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentEventParticipantSlotValueTransformer
+0x1ef560750  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentEventSlotValueTransformer
+0x1ef562eb0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentExecutionInfo
+0x1ef560728  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentExecutionResult
+0x1ef560700  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentExecutionResultResolutionResult
+0x1ef566290  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentFileSlotValueTransformer
+0x1ef5606d8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentFlightReservationSlotValueTransformer
+0x1ef5606b0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentFlightSlotValueTransformer
+0x1ef560688  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentFocusStatusSlotValueTransformer
+0x1ef568d38  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentForwardingAction
+0x1ef568a40  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentForwardingActionResponse
+0x1ef560660  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentGEOLatLngSlotValueTransformer
+0x1ef560638  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentGeographicalFeatureSlotValueTransformer
+0x1ef560610  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentGetSettingResponseDataSlotValueTransformer
+0x1ef5605e8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentHomeActionSlotValueTransformer
+0x1ef5605c0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentHomeAttributeSlotValueTransformer
+0x1ef560598  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentHomeAttributeValueSlotValueTransformer
+0x1ef560570  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentHomeAutomationEntityProviderSlotValueTransformer
+0x1ef560548  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentHomeAutomationFromEntitySlotValueTransformer
+0x1ef560520  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentHomeContentSlotValueTransformer
+0x1ef5604f8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentHomeEntityResponseSlotValueTransformer
+0x1ef5604d0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentHomeEntitySlotValueTransformer
+0x1ef5604a8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentHomeFilterSlotValueTransformer
+0x1ef560480  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentHomeUserTaskResponseSlotValueTransformer
+0x1ef560458  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentHomeUserTaskSlotValueTransformer
+0x1ef568d10  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentImageSlotValueTransformer
+0x1ef560430  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentIntegerSlotValueTransformer
+0x1ef560408  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentIntentExecutionResultSlotValueTransformer
+0x1ef5603e0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentIntentSlotValueTransformer
+0x1ef5603b8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentJSONDictionarySlotValueTransformer
+0x1ef560390  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentKeyParameter
+0x1ef560368  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentLocationSlotValueTransformer
+0x1ef560340  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentLodgingReservationSlotValueTransformer
+0x1ee0f6e68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INIntentLongSlotValueTransformer
+0x1ef560318  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentMassSlotValueTransformer
+0x1ef5602f0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentMediaDestinationSlotValueTransformer
+0x1ef5602c8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentMediaItemGroupSlotValueTransformer
+0x1ef5602a0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentMediaItemSlotValueTransformer
+0x1ef560278  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentMediaSearchSlotValueTransformer
+0x1ef560250  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentMediaSubItemSlotValueTransformer
+0x1ef560228  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentMessageAttachmentSlotValueTransformer
+0x1ef560200  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentMessageLinkMetadataSlotValueTransformer
+0x1ef5549a0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentMessageReactionSlotValueTransformer
+0x1ef5601d8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentMessageSlotValueTransformer
+0x1ef5601b0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentModifyNicknameSlotValueTransformer
+0x1ef560188  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentModifyRelationshipSlotValueTransformer
+0x1ef560160  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentNoteContentSlotValueTransformer
+0x1ef560138  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentNoteSlotValueTransformer
+0x1ef560110  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentNullSlotValueTransformer
+0x1ef5600e8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentNumericSettingValueSlotValueTransformer
+0x1ee0f5ef0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INIntentObjectSlotValueTransformer
+0x1ef5600c0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentPaymentAccountSlotValueTransformer
+0x1ef560098  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentPaymentAmountSlotValueTransformer
+0x1ef560070  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentPaymentMethodSlotValueTransformer
+0x1ef560048  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentPaymentRecordSlotValueTransformer
+0x1ef567b40  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentPersonSlotValueTransformer
+0x1ef560020  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentPlaceSlotValueTransformer
+0x1ef569530  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentPlacemarkSlotValueTransformer
+0x1ef55fff8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentPowerSlotValueTransformer
+0x1ef55ffd0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentPrivateAddMediaIntentDataSlotValueTransformer
+0x1ef55ffa8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentPrivateMediaIntentDataSlotValueTransformer
+0x1ef55ff80  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentPrivateMediaItemValueDataSlotValueTransformer
+0x1ef55ff58  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentPrivatePlayMediaIntentDataSlotValueTransformer
+0x1ef55ff30  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentPrivateSearchForMediaIntentDataSlotValueTransformer
+0x1ef55ff08  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentPrivateUpdateMediaAffinityIntentDataSlotValueTransformer
+0x1ef55fee0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentRentalCarReservationSlotValueTransformer
+0x1ef55feb8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentRentalCarSlotValueTransformer
+0x1ef55fe90  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentReservationActionSlotValueTransformer
+0x1ef55fe68  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentReservationWrapperSlotValueTransformer
+0x1ee0f8da8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INIntentResolutionResult
+0x1ee0f9cd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INIntentResponse
+0x1ee0f9460  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INIntentResponseCodableCode
+0x1ee0f93e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INIntentResponseCodableDescription
+0x1ee0f7200  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INIntentResponseDescription
+0x1ef55fe40  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentRestaurantReservationSlotValueTransformer
+0x1ef55fe18  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentRideOptionSlotValueTransformer
+0x1ef55fdf0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentRideStatusSlotValueTransformer
+0x1ef55fdc8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentSeatSlotValueTransformer
+0x1ef55fda0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentSettingDeviceSlotValueTransformer
+0x1ef55fd78  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentSettingMetadataSlotValueTransformer
+0x1ef55fd50  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentShortcutOverviewSlotValueTransformer
+0x1ef55fd28  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentSleepAlarmAttributeSlotValueTransformer
+0x1ee0f9078  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INIntentSlotDescription
+0x1ef55fd00  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentSpatialEventTriggerSlotValueTransformer
+0x1ef567870  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentSpeakableStringSlotValueTransformer
+0x1ef55fcd8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentSpeakerIDInfoSlotValueTransformer
+0x1ef55fcb0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentSpeedSlotValueTransformer
+0x1ef554860  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentStartCallRequestMetadataSlotValueTransformer
+0x1ef554838  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentStickerSlotValueTransformer
+0x1ef55fc88  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentStringSlotValueTransformer
+0x1ef55fc60  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentSupportedTrafficIncidentTypeSlotValueTransformer
+0x1ef55fc38  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentTaskListSlotValueTransformer
+0x1ef55fc10  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentTaskSlotValueTransformer
+0x1ef55fbe8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentTemperatureSlotValueTransformer
+0x1ef55fbc0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentTemporalEventTriggerSlotValueTransformer
+0x1ef55fb98  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentTest
+0x1ef55fb70  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentTestResolvedParameter
+0x1ef55fb48  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentTestResult
+0x1ef55fb20  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentTicketedEventReservationSlotValueTransformer
+0x1ef55faf8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentTicketedEventSlotValueTransformer
+0x1ef55fad0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentTimerSlotValueTransformer
+0x1ef55faa8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentTrainReservationSlotValueTransformer
+0x1ef55fa80  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentTrainTripSlotValueTransformer
+0x1ef565098  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentURLSlotValueTransformer
+0x1ef55fa58  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentUUIDSlotValueTransformer
+0x1ef55fa30  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentUtilsExportHelper
+0x1ef55fa08  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentVocabularyKnowledge
+0x1ef55f9e0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentVoiceCommandDeviceInformationSlotValueTransformer
+0x1ef55f9b8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentVoiceCommandStepInfoSlotValueTransformer
+0x1ef55f990  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentVolumeSlotValueTransformer
+0x1ef55f968  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentWellnessMetadataPairSlotValueTransformer
+0x1ef55f940  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentWellnessObjectResultValueSlotValueTransformer
+0x1ef55f918  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentWellnessUnitTypeSlotValueTransformer
+0x1ef55f8f0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentWellnessValueSlotValueTransformer
+0x1ef55f8c8  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentWholeHouseAudioMetadataSlotValueTransformer
+0x1ef55f8a0  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentWorkoutAssociatedItemSlotValueTransformer
+0x1ef55f878  __AUTH,__objc_data  _OBJC_CLASS_$_INIntentWorkoutCustomizationSlotValueTransformer
+0x1ee0f8d80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INInteraction
+0x1ef567b90  __AUTH,__objc_data  _OBJC_CLASS_$_INItemProviderRequestMetadata
+0x1ef567b18  __AUTH,__objc_data  _OBJC_CLASS_$_INJSONDecoder
+0x1ee0f78b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INJSONEncoder
+0x1ee0f7890  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INJSONEncoderConfiguration
+0x1ef55f850  __AUTH,__objc_data  _OBJC_CLASS_$_INJoinCallGroupConversationResolutionResult
+0x1ef568f18  __AUTH,__objc_data  _OBJC_CLASS_$_INJoinCallIntent
+0x1ef5686f8  __AUTH,__objc_data  _OBJC_CLASS_$_INJoinCallIntentResponse
+0x1ef564198  __AUTH,__objc_data  _OBJC_CLASS_$_INKeyImageExtraction
+0x1ef55f828  __AUTH,__objc_data  _OBJC_CLASS_$_INLengthResolutionResult
+0x1ef5686d0  __AUTH,__objc_data  _OBJC_CLASS_$_INLinkActionProvider
+0x1ef564170  __AUTH,__objc_data  _OBJC_CLASS_$_INListCarsIntent
+0x1ef55f800  __AUTH,__objc_data  _OBJC_CLASS_$_INListCarsIntentResponse
+0x1ef566ba0  __AUTH,__objc_data  _OBJC_CLASS_$_INListRideOptionsIntent
+0x1ef55f7d8  __AUTH,__objc_data  _OBJC_CLASS_$_INListRideOptionsIntentResponse
+0x1ef55f7b0  __AUTH,__objc_data  _OBJC_CLASS_$_INListShortcutsIntent
+0x1ef55f788  __AUTH,__objc_data  _OBJC_CLASS_$_INListShortcutsIntentResponse
+0x1ef566718  __AUTH,__objc_data  _OBJC_CLASS_$_INLocationRelevanceProvider
+0x1ee0f6a08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INLocationSearchTypeResolutionResult
+0x1ef55f760  __AUTH,__objc_data  _OBJC_CLASS_$_INLodgingReservation
+0x1ef55f738  __AUTH,__objc_data  _OBJC_CLASS_$_INMassResolutionResult
+0x1ee0f7700  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INMediaAffinityTypeResolutionResult
+0x1ef566b78  __AUTH,__objc_data  _OBJC_CLASS_$_INMediaDestination
+0x1ee0f76d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INMediaDestinationResolutionResult
+0x1ee0f90f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INMediaItem
+0x1ee0f76b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INMediaItemResolutionResult
+0x1ee0f8f10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INMediaSearch
+0x1ef55f710  __AUTH,__objc_data  _OBJC_CLASS_$_INMediaSubItem
+0x1ef566268  __AUTH,__objc_data  _OBJC_CLASS_$_INMediaUserContext
+0x1ee0f7958  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INMessage
+0x1ee0f7e08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INMessageAttributeOptionsResolutionResult
+0x1ee0f7de0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INMessageAttributeResolutionResult
+0x1ee0f7db8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INMessageEffectTypeResolutionResult
+0x1ef562e88  __AUTH,__objc_data  _OBJC_CLASS_$_INMessageLinkMetadata
+0x1ef554978  __AUTH,__objc_data  _OBJC_CLASS_$_INMessageReaction
+0x1ef55f6e8  __AUTH,__objc_data  _OBJC_CLASS_$_INModifyNickname
+0x1ef55f6c0  __AUTH,__objc_data  _OBJC_CLASS_$_INModifyNicknameResolutionResult
+0x1ef55f698  __AUTH,__objc_data  _OBJC_CLASS_$_INModifyRelationship
+0x1ef55f670  __AUTH,__objc_data  _OBJC_CLASS_$_INModifyRelationshipResolutionResult
+0x1ee0f8c40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INNote
+0x1ef55f648  __AUTH,__objc_data  _OBJC_CLASS_$_INNoteContent
+0x1ee0f69e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INNoteContentResolutionResult
+0x1ef55f620  __AUTH,__objc_data  _OBJC_CLASS_$_INNoteContentTypeResolutionResult
+0x1ee0f69b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INNoteResolutionResult
+0x1ee0f6990  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INNotebookItemTypeResolutionResult
+0x1ef567af0  __AUTH,__objc_data  _OBJC_CLASS_$_INNumberResolutionResult
+0x1ef562e60  __AUTH,__objc_data  _OBJC_CLASS_$_INNumericSettingValue
+0x1ef564148  __AUTH,__objc_data  _OBJC_CLASS_$_INNumericSettingValueResolutionResult
+0x1ee0f9168  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INObject
+0x1ef565070  __AUTH,__objc_data  _OBJC_CLASS_$_INObjectCollection
+0x1ee0f7048  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INObjectResolutionResult
+0x1ef565048  __AUTH,__objc_data  _OBJC_CLASS_$_INObjectSection
+0x1ef564120  __AUTH,__objc_data  _OBJC_CLASS_$_INOpenSettingIntent
+0x1ef562e38  __AUTH,__objc_data  _OBJC_CLASS_$_INOpenSettingIntentResponse
+0x1ee0f7d90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INOutgoingMessageTypeResolutionResult
+0x1ef5666f0  __AUTH,__objc_data  _OBJC_CLASS_$_INParameter
+0x1ee0f9b40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INParameterCombination
+0x1ef5676b8  __AUTH,__objc_data  _OBJC_CLASS_$_INParameterContexts
+0x1ef5666c8  __AUTH,__objc_data  _OBJC_CLASS_$_INParameterImage
+0x1ef5686a8  __AUTH,__objc_data  _OBJC_CLASS_$_INPauseTimerIntent
+0x1ef567690  __AUTH,__objc_data  _OBJC_CLASS_$_INPauseTimerIntentResponse
+0x1ef5670f0  __AUTH,__objc_data  _OBJC_CLASS_$_INPauseWorkoutIntent
+0x1ef55f5f8  __AUTH,__objc_data  _OBJC_CLASS_$_INPauseWorkoutIntentResponse
+0x1ef5670c8  __AUTH,__objc_data  _OBJC_CLASS_$_INPayBillIntent
+0x1ef55f5d0  __AUTH,__objc_data  _OBJC_CLASS_$_INPayBillIntentResponse
+0x1ef55f5a8  __AUTH,__objc_data  _OBJC_CLASS_$_INPaymentAccount
+0x1ef566240  __AUTH,__objc_data  _OBJC_CLASS_$_INPaymentAccountResolutionResult
+0x1ef55f580  __AUTH,__objc_data  _OBJC_CLASS_$_INPaymentAmount
+0x1ef566218  __AUTH,__objc_data  _OBJC_CLASS_$_INPaymentAmountResolutionResult
+0x1ee0f8f38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INPaymentMethod
+0x1ef55f558  __AUTH,__objc_data  _OBJC_CLASS_$_INPaymentMethodResolutionResult
+0x1ef55f530  __AUTH,__objc_data  _OBJC_CLASS_$_INPaymentRecord
+0x1ef5661f0  __AUTH,__objc_data  _OBJC_CLASS_$_INPaymentStatusResolutionResult
+0x1ee0fa068  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INPerson
+0x1ee0f8b78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INPersonHandle
+0x1ee0f8880  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INPersonResolutionResult
+0x1ef55f508  __AUTH,__objc_data  _OBJC_CLASS_$_INPlace
+0x1ee0f7688  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INPlacemarkResolutionResult
+0x1ef55f4e0  __AUTH,__objc_data  _OBJC_CLASS_$_INPlayAnnouncementSoundIntent
+0x1ef55f4b8  __AUTH,__objc_data  _OBJC_CLASS_$_INPlayAnnouncementSoundIntentResponse
+0x1ee0f81c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INPlayAudioMessageIntent
+0x1ef5699b8  __AUTH,__objc_data  _OBJC_CLASS_$_INPlayAudioMessageIntentResponse
+0x1ee0f8740  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INPlayMediaIntent
+0x1ef5640f8  __AUTH,__objc_data  _OBJC_CLASS_$_INPlayMediaIntentResponse
+0x1ee0f7660  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INPlayMediaMediaItemResolutionResult
+0x1ee0f7638  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INPlayMediaPlaybackSpeedResolutionResult
+0x1ee0f7d68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INPlayMessageSoundIntent
+0x1ef569990  __AUTH,__objc_data  _OBJC_CLASS_$_INPlayMessageSoundIntentResponse
+0x1ee0f6e40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INPlayVoicemailIntent
+0x1ef568680  __AUTH,__objc_data  _OBJC_CLASS_$_INPlayVoicemailIntentResponse
+0x1ee0f7610  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INPlaybackQueueLocationResolutionResult
+0x1ee0f75e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INPlaybackRepeatModeResolutionResult
+0x1ee0f9fa0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INPortableImageLoader
+0x1ee0f7d40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INPreferences
+0x1ee0f5ec8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INPreferredCallProviderResolutionResult
+0x1ef55f490  __AUTH,__objc_data  _OBJC_CLASS_$_INPriceRange
+0x1ef55f468  __AUTH,__objc_data  _OBJC_CLASS_$_INPrivateAddMediaIntentData
+0x1ef55f440  __AUTH,__objc_data  _OBJC_CLASS_$_INPrivateMediaIntentData
+0x1ef5640d0  __AUTH,__objc_data  _OBJC_CLASS_$_INPrivateMediaItemValueData
+0x1ef5661c8  __AUTH,__objc_data  _OBJC_CLASS_$_INPrivatePlayMediaIntentData
+0x1ef55f418  __AUTH,__objc_data  _OBJC_CLASS_$_INPrivateSearchForMediaIntentData
+0x1ef55f3f0  __AUTH,__objc_data  _OBJC_CLASS_$_INPrivateUpdateMediaAffinityIntentData
+0x1ef55f3c8  __AUTH,__objc_data  _OBJC_CLASS_$_INQueryHealthSampleIntent
+0x1ef55f3a0  __AUTH,__objc_data  _OBJC_CLASS_$_INQueryHealthSampleIntentResponse
+0x1ef565020  __AUTH,__objc_data  _OBJC_CLASS_$_INQueryHomeIntent
+0x1ef55f378  __AUTH,__objc_data  _OBJC_CLASS_$_INQueryHomeIntentResponse
+0x1ef55f350  __AUTH,__objc_data  _OBJC_CLASS_$_INRadioTypeResolutionResult
+0x1ef5670a0  __AUTH,__objc_data  _OBJC_CLASS_$_INReadAnnouncementIntent
+0x1ef55f328  __AUTH,__objc_data  _OBJC_CLASS_$_INReadAnnouncementIntentResponse
+0x1ef569968  __AUTH,__objc_data  _OBJC_CLASS_$_INRecurrenceRule
+0x1ef562e10  __AUTH,__objc_data  _OBJC_CLASS_$_INRelativeReferenceResolutionResult
+0x1ef562de8  __AUTH,__objc_data  _OBJC_CLASS_$_INRelativeSettingResolutionResult
+0x1ef567078  __AUTH,__objc_data  _OBJC_CLASS_$_INRelevanceProvider
+0x1ef5693f0  __AUTH,__objc_data  _OBJC_CLASS_$_INRelevantShortcut
+0x1ef568ef0  __AUTH,__objc_data  _OBJC_CLASS_$_INRelevantShortcutStore
+0x1ee0f8a60  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INRemoteImageProxy
+0x1ef55f300  __AUTH,__objc_data  _OBJC_CLASS_$_INRentalCar
+0x1ef55f2d8  __AUTH,__objc_data  _OBJC_CLASS_$_INRentalCarReservation
+0x1ef564ff8  __AUTH,__objc_data  _OBJC_CLASS_$_INReportIncidentIncidentTypeResolutionResult
+0x1ef564fd0  __AUTH,__objc_data  _OBJC_CLASS_$_INReportIncidentIntent
+0x1ef55f2b0  __AUTH,__objc_data  _OBJC_CLASS_$_INReportIncidentIntentResponse
+0x1ef5661a0  __AUTH,__objc_data  _OBJC_CLASS_$_INRequestPaymentCurrencyAmountResolutionResult
+0x1ef567ac8  __AUTH,__objc_data  _OBJC_CLASS_$_INRequestPaymentIntent
+0x1ef55f288  __AUTH,__objc_data  _OBJC_CLASS_$_INRequestPaymentIntentResponse
+0x1ef566178  __AUTH,__objc_data  _OBJC_CLASS_$_INRequestPaymentPayerResolutionResult
+0x1ef567aa0  __AUTH,__objc_data  _OBJC_CLASS_$_INRequestRideIntent
+0x1ef55f260  __AUTH,__objc_data  _OBJC_CLASS_$_INRequestRideIntentResponse
+0x1ef55f238  __AUTH,__objc_data  _OBJC_CLASS_$_INReservation
+0x1ef55f210  __AUTH,__objc_data  _OBJC_CLASS_$_INReservationAction
+0x1ef568658  __AUTH,__objc_data  _OBJC_CLASS_$_INResetTimerIntent
+0x1ef567668  __AUTH,__objc_data  _OBJC_CLASS_$_INResetTimerIntentResponse
+0x1ef562dc0  __AUTH,__objc_data  _OBJC_CLASS_$_INResolveIntentParametersForwardingAction
+0x1ef562d98  __AUTH,__objc_data  _OBJC_CLASS_$_INResolveIntentParametersForwardingActionResponse
+0x1ef55f1e8  __AUTH,__objc_data  _OBJC_CLASS_$_INResolveObjectReferenceIntent
+0x1ef55f1c0  __AUTH,__objc_data  _OBJC_CLASS_$_INResolveObjectReferenceIntentResponse
+0x1ef55f198  __AUTH,__objc_data  _OBJC_CLASS_$_INRestaurant
+0x1ef55f170  __AUTH,__objc_data  _OBJC_CLASS_$_INRestaurantGuest
+0x1ef55f148  __AUTH,__objc_data  _OBJC_CLASS_$_INRestaurantGuestDisplayPreferences
+0x1ef55f120  __AUTH,__objc_data  _OBJC_CLASS_$_INRestaurantGuestResolutionResult
+0x1ef55f0f8  __AUTH,__objc_data  _OBJC_CLASS_$_INRestaurantOffer
+0x1ef55f0d0  __AUTH,__objc_data  _OBJC_CLASS_$_INRestaurantReservation
+0x1ef55f0a8  __AUTH,__objc_data  _OBJC_CLASS_$_INRestaurantReservationBooking
+0x1ef55f080  __AUTH,__objc_data  _OBJC_CLASS_$_INRestaurantReservationUserBooking
+0x1ef566150  __AUTH,__objc_data  _OBJC_CLASS_$_INRestaurantResolutionResult
+0x1ef568630  __AUTH,__objc_data  _OBJC_CLASS_$_INResumeTimerIntent
+0x1ef567640  __AUTH,__objc_data  _OBJC_CLASS_$_INResumeTimerIntentResponse
+0x1ef567050  __AUTH,__objc_data  _OBJC_CLASS_$_INResumeWorkoutIntent
+0x1ef55f058  __AUTH,__objc_data  _OBJC_CLASS_$_INResumeWorkoutIntentResponse
+0x1ef564fa8  __AUTH,__objc_data  _OBJC_CLASS_$_INRetrieveParkingLocationIntent
+0x1ef55f030  __AUTH,__objc_data  _OBJC_CLASS_$_INRetrieveParkingLocationIntentResponse
+0x1ef55f008  __AUTH,__objc_data  _OBJC_CLASS_$_INRideCompletionStatus
+0x1ef55efe0  __AUTH,__objc_data  _OBJC_CLASS_$_INRideDriver
+0x1ef55efb8  __AUTH,__objc_data  _OBJC_CLASS_$_INRideFareLineItem
+0x1ef55ef90  __AUTH,__objc_data  _OBJC_CLASS_$_INRideOption
+0x1ef55ef68  __AUTH,__objc_data  _OBJC_CLASS_$_INRidePartySizeOption
+0x1ef564080  __AUTH,__objc_data  _OBJC_CLASS_$_INRideStatus
+0x1ef55ef40  __AUTH,__objc_data  _OBJC_CLASS_$_INRideVehicle
+0x1ee0f9be0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INRootCodableDescription
+0x1ef562d70  __AUTH,__objc_data  _OBJC_CLASS_$_INRunVoiceCommandIntent
+0x1ef562d48  __AUTH,__objc_data  _OBJC_CLASS_$_INRunVoiceCommandIntentResponse
+0x1ef5693c8  __AUTH,__objc_data  _OBJC_CLASS_$_INRunWorkflowIntent
+0x1ef562d20  __AUTH,__objc_data  _OBJC_CLASS_$_INRunWorkflowIntentResponse
+0x1ef564058  __AUTH,__objc_data  _OBJC_CLASS_$_INRunWorkflowWorkflowResolutionResult
+0x1ef55ef18  __AUTH,__objc_data  _OBJC_CLASS_$_INSaveHealthSampleIntent
+0x1ef55eef0  __AUTH,__objc_data  _OBJC_CLASS_$_INSaveHealthSampleIntentResponse
+0x1ef55eec8  __AUTH,__objc_data  _OBJC_CLASS_$_INSaveHealthSampleRecordDateResolutionResult
+0x1ef564f80  __AUTH,__objc_data  _OBJC_CLASS_$_INSaveParkingLocationIntent
+0x1ef55eea0  __AUTH,__objc_data  _OBJC_CLASS_$_INSaveParkingLocationIntentResponse
+0x1ef566128  __AUTH,__objc_data  _OBJC_CLASS_$_INSaveProfileInCarIntent
+0x1ef55ee78  __AUTH,__objc_data  _OBJC_CLASS_$_INSaveProfileInCarIntentResponse
+0x1ef564f58  __AUTH,__objc_data  _OBJC_CLASS_$_INScanVisualCodeIntent
+0x1ef55ee50  __AUTH,__objc_data  _OBJC_CLASS_$_INScanVisualCodeIntentResponse
+0x1ee0f9690  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSchema
+0x1ef5690d0  __AUTH,__objc_data  _OBJC_CLASS_$_INScoredPerson
+0x1ef55ee28  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchAlarmAlarmResolutionResult
+0x1ef55ee00  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchAlarmIntent
+0x1ef55edd8  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchAlarmIntentResponse
+0x1ee0f6968  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSearchCallHistoryIntent
+0x1ef568608  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchCallHistoryIntentResponse
+0x1ef567028  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchForAccountsIntent
+0x1ef55edb0  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchForAccountsIntentResponse
+0x1ef567000  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchForBillsIntent
+0x1ef55ed88  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchForBillsIntentResponse
+0x1ef55ed60  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchForContactIntent
+0x1ef55ed38  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchForContactIntentResponse
+0x1ef55ed10  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchForMeCardIntent
+0x1ef55ece8  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchForMeCardIntentResponse
+0x1ee0f81a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSearchForMediaIntent
+0x1ef564030  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchForMediaIntentResponse
+0x1ee0f75c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSearchForMediaMediaItemResolutionResult
+0x1ee0f7fc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSearchForMessagesIntent
+0x1ef569940  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchForMessagesIntentResponse
+0x1ee0f6e18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSearchForNotebookItemsIntent
+0x1ef55ecc0  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchForNotebookItemsIntentResponse
+0x1ef566fd8  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchForPhotosIntent
+0x1ef55ec98  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchForPhotosIntentResponse
+0x1ef5685e0  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchForTimersIntent
+0x1ef567618  __AUTH,__objc_data  _OBJC_CLASS_$_INSearchForTimersIntentResponse
+0x1ef55ec70  __AUTH,__objc_data  _OBJC_CLASS_$_INSeat
+0x1ef55ec20  __AUTH,__objc_data  _OBJC_CLASS_$_INSendAnnouncementAnnouncementResolutionResult
+0x1ef55ebf8  __AUTH,__objc_data  _OBJC_CLASS_$_INSendAnnouncementIntent
+0x1ef55ebd0  __AUTH,__objc_data  _OBJC_CLASS_$_INSendAnnouncementIntentResponse
+0x1ef55eba8  __AUTH,__objc_data  _OBJC_CLASS_$_INSendAnnouncementRecipientResolutionResult
+0x1ee0f5ea0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSendMessageAttachment
+0x1ee0f8b00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSendMessageIntent
+0x1ef568a18  __AUTH,__objc_data  _OBJC_CLASS_$_INSendMessageIntentDonationMetadata
+0x1ee0f6940  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSendMessageIntentResponse
+0x1ee0f7d18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSendMessageRecipientResolutionResult
+0x1ef566100  __AUTH,__objc_data  _OBJC_CLASS_$_INSendPaymentCurrencyAmountResolutionResult
+0x1ef569508  __AUTH,__objc_data  _OBJC_CLASS_$_INSendPaymentIntent
+0x1ef55eb80  __AUTH,__objc_data  _OBJC_CLASS_$_INSendPaymentIntentResponse
+0x1ef5660d8  __AUTH,__objc_data  _OBJC_CLASS_$_INSendPaymentPayeeResolutionResult
+0x1ef55eb58  __AUTH,__objc_data  _OBJC_CLASS_$_INSendRideFeedbackIntent
+0x1ef55eb30  __AUTH,__objc_data  _OBJC_CLASS_$_INSendRideFeedbackIntentResponse
+0x1ee0f6fa8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSerializedCacheItem
+0x1ef5694e0  __AUTH,__objc_data  _OBJC_CLASS_$_INService_Subsystem
+0x1ef5660b0  __AUTH,__objc_data  _OBJC_CLASS_$_INSetAudioSourceInCarIntent
+0x1ef55eb08  __AUTH,__objc_data  _OBJC_CLASS_$_INSetAudioSourceInCarIntentResponse
+0x1ef564008  __AUTH,__objc_data  _OBJC_CLASS_$_INSetBinarySettingIntent
+0x1ef562cf8  __AUTH,__objc_data  _OBJC_CLASS_$_INSetBinarySettingIntentResponse
+0x1ef566088  __AUTH,__objc_data  _OBJC_CLASS_$_INSetCarLockStatusIntent
+0x1ef55eae0  __AUTH,__objc_data  _OBJC_CLASS_$_INSetCarLockStatusIntentResponse
+0x1ef566060  __AUTH,__objc_data  _OBJC_CLASS_$_INSetClimateSettingsInCarIntent
+0x1ef55eab8  __AUTH,__objc_data  _OBJC_CLASS_$_INSetClimateSettingsInCarIntentResponse
+0x1ef566038  __AUTH,__objc_data  _OBJC_CLASS_$_INSetDefrosterSettingsInCarIntent
+0x1ef55ea90  __AUTH,__objc_data  _OBJC_CLASS_$_INSetDefrosterSettingsInCarIntentResponse
+0x1ef563fe0  __AUTH,__objc_data  _OBJC_CLASS_$_INSetLabeledSettingIntent
+0x1ef562cd0  __AUTH,__objc_data  _OBJC_CLASS_$_INSetLabeledSettingIntentResponse
+0x1ee0f7cf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSetMessageAttributeIntent
+0x1ef569918  __AUTH,__objc_data  _OBJC_CLASS_$_INSetMessageAttributeIntentResponse
+0x1ef55ea68  __AUTH,__objc_data  _OBJC_CLASS_$_INSetNicknameIntent
+0x1ef55ea40  __AUTH,__objc_data  _OBJC_CLASS_$_INSetNicknameIntentResponse
+0x1ef563fb8  __AUTH,__objc_data  _OBJC_CLASS_$_INSetNumericSettingIntent
+0x1ef562ca8  __AUTH,__objc_data  _OBJC_CLASS_$_INSetNumericSettingIntentResponse
+0x1ef566010  __AUTH,__objc_data  _OBJC_CLASS_$_INSetProfileInCarIntent
+0x1ef55ea18  __AUTH,__objc_data  _OBJC_CLASS_$_INSetProfileInCarIntentResponse
+0x1ef55e9f0  __AUTH,__objc_data  _OBJC_CLASS_$_INSetRadioStationIntent
+0x1ef55e9c8  __AUTH,__objc_data  _OBJC_CLASS_$_INSetRadioStationIntentResponse
+0x1ef55e9a0  __AUTH,__objc_data  _OBJC_CLASS_$_INSetRelationshipIntent
+0x1ef55e978  __AUTH,__objc_data  _OBJC_CLASS_$_INSetRelationshipIntentResponse
+0x1ef565fe8  __AUTH,__objc_data  _OBJC_CLASS_$_INSetSeatSettingsInCarIntent
+0x1ef55e950  __AUTH,__objc_data  _OBJC_CLASS_$_INSetSeatSettingsInCarIntentResponse
+0x1ee0f6918  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSetTaskAttributeContactEventTriggerResolutionResult
+0x1ee0f71d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSetTaskAttributeIntent
+0x1ef55e928  __AUTH,__objc_data  _OBJC_CLASS_$_INSetTaskAttributeIntentResponse
+0x1ee0f68f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSetTaskAttributeTemporalEventTriggerResolutionResult
+0x1ef563f90  __AUTH,__objc_data  _OBJC_CLASS_$_INSetTemporalSettingIntent
+0x1ef562c80  __AUTH,__objc_data  _OBJC_CLASS_$_INSetTemporalSettingIntentResponse
+0x1ef5685b8  __AUTH,__objc_data  _OBJC_CLASS_$_INSetTimerAttributeIntent
+0x1ef5675f0  __AUTH,__objc_data  _OBJC_CLASS_$_INSetTimerAttributeIntentResponse
+0x1ef568590  __AUTH,__objc_data  _OBJC_CLASS_$_INSetTimerAttributeTargetTimerResolutionResult
+0x1ef563f68  __AUTH,__objc_data  _OBJC_CLASS_$_INSettingActionResolutionResult
+0x1ef563f40  __AUTH,__objc_data  _OBJC_CLASS_$_INSettingDevice
+0x1ef563f18  __AUTH,__objc_data  _OBJC_CLASS_$_INSettingMetadata
+0x1ef563ef0  __AUTH,__objc_data  _OBJC_CLASS_$_INSettingMetadataResolutionResult
+0x1ef565fc0  __AUTH,__objc_data  _OBJC_CLASS_$_INShareETAIntent
+0x1ef55e900  __AUTH,__objc_data  _OBJC_CLASS_$_INShareETAIntentResponse
+0x1ef564f30  __AUTH,__objc_data  _OBJC_CLASS_$_INShareETARecipientResolutionResult
+0x1ef562c58  __AUTH,__objc_data  _OBJC_CLASS_$_INShareFocusStatusIntent
+0x1ef55e8d8  __AUTH,__objc_data  _OBJC_CLASS_$_INShareFocusStatusIntentResponse
+0x1ee0f85b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INShortcut
+0x1ef55e8b0  __AUTH,__objc_data  _OBJC_CLASS_$_INShortcutOverview
+0x1ef565f98  __AUTH,__objc_data  _OBJC_CLASS_$_INShowHomeIntent
+0x1ef55e888  __AUTH,__objc_data  _OBJC_CLASS_$_INShowHomeIntentResponse
+0x1ef55e860  __AUTH,__objc_data  _OBJC_CLASS_$_INShowPersonInteractionsIntent
+0x1ef55e838  __AUTH,__objc_data  _OBJC_CLASS_$_INSkipAnnouncementIntent
+0x1ef55e810  __AUTH,__objc_data  _OBJC_CLASS_$_INSkipAnnouncementIntentResponse
+0x1ef55e7e8  __AUTH,__objc_data  _OBJC_CLASS_$_INSleepAlarmAttribute
+0x1ef55e7c0  __AUTH,__objc_data  _OBJC_CLASS_$_INSnoozeAlarmAlarmResolutionResult
+0x1ef55e798  __AUTH,__objc_data  _OBJC_CLASS_$_INSnoozeAlarmIntent
+0x1ef55e770  __AUTH,__objc_data  _OBJC_CLASS_$_INSnoozeAlarmIntentResponse
+0x1ee0f6df0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSnoozeTasksIntent
+0x1ef55e748  __AUTH,__objc_data  _OBJC_CLASS_$_INSnoozeTasksIntentResponse
+0x1ee0f68c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSnoozeTasksTaskResolutionResult
+0x1ef55e720  __AUTH,__objc_data  _OBJC_CLASS_$_INSpatialEventTrigger
+0x1ee0f68a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSpatialEventTriggerResolutionResult
+0x1ee0f8bf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSpeakableString
+0x1ee0f8538  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INSpeakableStringResolutionResult
+0x1ef55e6f8  __AUTH,__objc_data  _OBJC_CLASS_$_INSpeakerIDInfo
+0x1ef55e6d0  __AUTH,__objc_data  _OBJC_CLASS_$_INSpeedResolutionResult
+0x1ee0f8178  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INStartAudioCallIntent
+0x1ef568568  __AUTH,__objc_data  _OBJC_CLASS_$_INStartAudioCallIntentResponse
+0x1ee0f5e78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INStartCallCallCapabilityResolutionResult
+0x1ef562c30  __AUTH,__objc_data  _OBJC_CLASS_$_INStartCallCallRecordToCallBackResolutionResult
+0x1ee0f5e50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INStartCallContactResolutionResult
+0x1ee0f8970  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_INStartCallIntent
+0x1ef567848  __AUTH,__objc_data  _OBJC_CLASS_$_INStartCallIntentDonationMetadata
+0x1ef568540  __AUTH,__objc_data  _OBJC_CLASS_$_INStartCallIntentResponse
+```
+First 3,000 of 5,487.
+
+## Private
+
+```
+0x18cf33bf0  __TEXT,__text  -[INAppInfo init]
+0x18cf33c30  __TEXT,__text  ___42+[INAppInfo appInfoWithApplicationRecord:]_block_invoke
+0x18cf33d6c  __TEXT,__text  __INContainingBundleProxyWithBundleProxy
+0x18cf33e18  __TEXT,__text  -[INAppInfo .cxx_destruct]
+0x18cf33ed4  __TEXT,__text  ___51-[LSApplicationRecord(Intents) in_supportedIntents]_block_invoke
+0x18cf33f30  __TEXT,__text  ___89+[INAppInfo _appInfoWithApplicationRecord:applicationExtensionRecords:userActivityTypes:]_block_invoke
+0x18cf33f9c  __TEXT,__text  +[INIntent initialize]
+0x18cf34000  __TEXT,__text  +[INAppInfo _appInfoWithApplicationRecord:applicationExtensionRecords:userActivityTypes:]
+0x18cf346a0  __TEXT,__text  +[INImage initialize]
+0x18cf34720  __TEXT,__text  ___INLogInitIfNeeded_block_invoke
+0x18cf34758  __TEXT,__text  -[INAppInfo setSupportsMultiwindow:]
+0x18cf34760  __TEXT,__text  +[INAppInfo appInfoWithAppProxy:]
+0x18cf34914  __TEXT,__text  ___89+[INAppInfo _appInfoWithApplicationRecord:applicationExtensionRecords:userActivityTypes:]_block_invoke_2
+0x18cf34980  __TEXT,__text  ___89+[INAppInfo _appInfoWithApplicationRecord:applicationExtensionRecords:userActivityTypes:]_block_invoke_3
+0x18cf349ec  __TEXT,__text  -[INAppInfo setDevelopmentRegion:]
+0x18cf349f4  __TEXT,__text  -[INAppInfo setCounterpartIdentifiers:]
+0x18cf349fc  __TEXT,__text  +[INAppInfo appInfoWithApplicationRecord:]
+0x18cf34b6c  __TEXT,__text  -[LSApplicationRecord(Intents) in_supportedIntents]
+0x18cf34e48  __TEXT,__text  -[INCodableAttribute modifier]
+0x18cf34e50  __TEXT,__text  -[INCodableLocalizationTable copyWithZone:]
+0x18cf34ec8  __TEXT,__text  -[INCodableLocalizationTable .cxx_destruct]
+0x18cf34f00  __TEXT,__text  -[INCodableDescription init]
+0x18cf34f68  __TEXT,__text  -[NSUserActivity(IntentsAdditions) interaction]
+0x18cf350b8  __TEXT,__text  -[NSUserActivity(IntentsAdditions) _setAccessedInteraction:]
+0x18cf35118  __TEXT,__text  -[INSchema init]
+0x18cf351d8  __TEXT,__text  -[INSchema _typesWithDictionary:filename:bundleIdentifier:]
+0x18cf356ac  __TEXT,__text  -[INSchema _initWithContentsOfURLs:bundleIdentifier:mainBundleIdentifier:contentOptions:]
+0x18cf35d8c  __TEXT,__text  -[INSchema _codableDescriptionWithDictionary:intentDefinitionNamespace:filename:bundleIdentifier:codableDescriptionClass:]
+0x18cf35e78  __TEXT,__text  -[INCodableDescription setSchema:]
+0x18cf35e84  __TEXT,__text  -[INTypeCodableDescription updateWithDictionary:]
+0x18cf36140  __TEXT,__text  -[INCodableStringAttributeMetadata updateWithDictionary:]
+0x18cf3657c  __TEXT,__text  -[INCodableDescription updateWithDictionary:]
+0x18cf369e4  __TEXT,__text  -[INCodableAttribute updateWithDictionary:]
+0x18cf37250  __TEXT,__text  -[INCodableScalarAttribute updateWithDictionary:]
+0x18cf373e0  __TEXT,__text  -[INIntentCodableDescription updateWithDictionary:]
+0x18cf37ac8  __TEXT,__text  -[INSchema _loadIntentsFromArrayOfDictionaries:intentDefinitionNamespace:fromFile:bundleIdentifier:referencedCodableDescriptions:contentOptions:]
+0x18cf37f6c  __TEXT,__text  -[INCodableEnumAttribute updateWithDictionary:]
+0x18cf38158  __TEXT,__text  __INParameterCombinationsWithDictionary
+0x18cf38410  __TEXT,__text  -[INRootCodableDescription init]
+0x18cf384c4  __TEXT,__text  ___105+[INCodableDescription _calculateReferencedCodableDescriptionsFromAttributes:usingTypes:foundAttributes:]_block_invoke
+0x18cf38678  __TEXT,__text  -[INSchema _intentWithDictionary:intentDefinitionNamespace:filename:bundleIdentifier:]
+0x18cf38720  __TEXT,__text  -[INCodableCustomObjectAttribute _assignCodableDescription]
+0x18cf388a8  __TEXT,__text  -[INCodableAttribute _codableDescription]
+0x18cf38960  __TEXT,__text  -[INCodableAttributeMetadata(__INCodableAttributeMetadataINIntentParameterMetadataPlaceholderID) __INCodableDescriptionPlaceholderIDKey]
+0x18cf389a4  __TEXT,__text  +[INInteraction initialize]
+0x18cf38a08  __TEXT,__text  +[INIntentCodableDescription(__Input) __InputKey]
+0x18cf38a14  __TEXT,__text  +[INTypeCodableDescription(__INCodableAttributeDisplayName) __INCodableAttributeDisplayNameKey]
+0x18cf38a20  __TEXT,__text  +[INIntentResponseCodableDescription(__INCodableAttributeDefault) __INCodableAttributeDefaultKey]
+0x18cf38a2c  __TEXT,__text  -[INCodableDescription setClassName:]
+0x18cf38c8c  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterMetadata) __INCodableDescriptionMetadataKey]
+0x18cf38cd0  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterFixedSizeArray) __INCodableDescriptionFixedSizeArrayKey]
+0x18cf38d90  __TEXT,__text  -[INCodableAttributeMetadata updateWithDictionary:]
+0x18cf38ea4  __TEXT,__text  -[INImageBundle copyWithZone:]
+0x18cf38f34  __TEXT,__text  -[INImageServiceConnection serviceIdentifier]
+0x18cf38fc8  __TEXT,__text  -[INImage _initWithIdentifier:]
+0x18cf39048  __TEXT,__text  -[_INBundleImage setImageName:]
+0x18cf39054  __TEXT,__text  -[INImage _setRenderingMode:]
+0x18cf3905c  __TEXT,__text  -[_INBundleImage imageBundle]
+0x18cf39070  __TEXT,__text  -[INImageBundle .cxx_destruct]
+0x18cf390a8  __TEXT,__text  ___52-[INImageServiceRegistry _reprioritizeImageServices]_block_invoke
+0x18cf39188  __TEXT,__text  -[INImageBundle init]
+0x18cf391cc  __TEXT,__text  -[INImageServiceConnection servicePriority]
+0x18cf3925c  __TEXT,__text  -[INImageBundle setBundleType:]
+0x18cf39264  __TEXT,__text  -[_INBundleImage setImageBundle:]
+0x18cf39270  __TEXT,__text  -[INImageBundle bundlePath]
+0x18cf39278  __TEXT,__text  -[INImageBundle setBundlePath:]
+0x18cf392d8  __TEXT,__text  -[INImageBundle bundleType]
+0x18cf392e0  __TEXT,__text  -[INImageBundle bundleIdentifier]
+0x18cf392e8  __TEXT,__text  -[INImageBundle setBundleIdentifier:]
+0x18cf392f0  __TEXT,__text  +[INCache sharedCache]
+0x18cf39338  __TEXT,__text  -[INCache _init]
+0x18cf3939c  __TEXT,__text  -[INCache addCacheableObject:]
+0x18cf39460  __TEXT,__text  -[INImage(INCacheSupport) cacheIdentifier]
+0x18cf39464  __TEXT,__text  -[_INBundleImage _identifier]
+0x18cf39468  __TEXT,__text  -[_INBundleImage stringRepresentation]
+0x18cf39604  __TEXT,__text  -[INTypeCodableDescription _attributesKey]
+0x18cf39620  __TEXT,__text  -[INTypeCodableDescription _attributeKey]
+0x18cf3963c  __TEXT,__text  -[INCodableScalarAttribute(__INCodableScalarAttributeINIntentParameterType) __INCodableDescriptionTypeKey]
+0x18cf39680  __TEXT,__text  +[INTypeCodableDescription(__INCodableScalarAttributeType) __INCodableScalarAttributeTypeKey]
+0x18cf3968c  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterName) __INCodableDescriptionNameKey]
+0x18cf396d0  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterDisplayName) __INCodableDescriptionDisplayNameKey]
+0x18cf39714  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterDisplayNameID) __INCodableDescriptionDisplayNameIDKey]
+0x18cf39758  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterDisplayPriority) __INCodableDescriptionDisplayPriorityKey]
+0x18cf3979c  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterDefault) __INCodableDescriptionDefaultKey]
+0x18cf397e0  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterSupportsSearch) __INCodableDescriptionSupportsSearchKey]
+0x18cf39824  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterConfigurable) __INCodableDescriptionConfigurableKey]
+0x18cf39868  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterWindowSize) __INCodableDescriptionWindowSizeKey]
+0x18cf398ac  __TEXT,__text  -[INCodableAttribute _setCodableDescription:]
+0x18cf398b8  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterSupportsResolution) __INCodableDescriptionSupportsResolutionKey]
+0x18cf398fc  __TEXT,__text  -[INCodableAttributeMetadata _codableDescription]
+0x18cf3993c  __TEXT,__text  -[INCodableAttributeMetadata initWithName:codableAttribute:]
+0x18cf399d0  __TEXT,__text  -[INCodableAttributeMetadata(__INCodableAttributeMetadataINIntentParameterMetadataPlaceholder) __INCodableDescriptionPlaceholderKey]
+0x18cf39a14  __TEXT,__text  -[INCodableAttributeMetadata codableAttribute]
+0x18cf39a34  __TEXT,__text  +[INTypeCodableDescription(__INCodableAttributeSupportsResolution) __INCodableAttributeSupportsResolutionKey]
+0x18cf39a40  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterSupportsDynamicEnumeration) __INCodableDescriptionSupportsDynamicEnumerationKey]
+0x18cf39a84  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterSupportsMultipleValues) __INCodableDescriptionSupportsMultipleValuesKey]
+0x18cf39ac8  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterPromptDialogs) __INCodableDescriptionPromptDialogsKey]
+0x18cf39b0c  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterArraySizes) __INCodableDescriptionArraySizesKey]
+0x18cf39b50  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterUnsupportedReasons) __INCodableDescriptionUnsupportedReasonsKey]
+0x18cf39b94  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterEnumType) __INCodableDescriptionEnumTypeKey]
+0x18cf39bd8  __TEXT,__text  ___INCodableAttributeMetadataTypeNameWithTypeName_block_invoke
+0x18cf39d68  __TEXT,__text  ___37+[INSchema _supportedTypesDictionary]_block_invoke
+0x18cf39ed4  __TEXT,__text  ___INCodableAttributeMetadataClassWithMetadataTypeName_block_invoke
+0x18cf39f30  __TEXT,__text  ___INCodableAttributeMetadataClassWithMetadataTypeName_block_invoke_2
+0x18cf3a020  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterRelationship) __INCodableDescriptionRelationshipKey]
+0x18cf3a064  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterEntityKeypath) __INCodableDescriptionEntityKeypathKey]
+0x18cf3a0a8  __TEXT,__text  -[INCodableAttribute _attributeTagKey]
+0x18cf3a0ac  __TEXT,__text  -[INCodableAttribute(__INCodableAttributeINIntentParameterTag) __INCodableDescriptionTagKey]
+0x18cf3a0f0  __TEXT,__text  -[INCodableAttribute propertyName]
+0x18cf3a6bc  __TEXT,__text  __INGetPropertyInfo
+0x18cf3a77c  __TEXT,__text  -[INObject setDisplayImage:]
+0x18cf3a788  __TEXT,__text  -[INObject displayString]
+0x18cf3a790  __TEXT,__text  __INGetPropertyType
+0x18cf3a8c4  __TEXT,__text  -[INObject pronunciationHint]
+0x18cf3a8cc  __TEXT,__text  -[INObject alternativeSpeakableMatches]
+0x18cf3a8d4  __TEXT,__text  -[INInteraction _setContextExtensionUUID:]
+0x18cf3a8dc  __TEXT,__text  -[INIntent(Images) _intents_preferredScaledImageSize]
+0x18cf3a8ec  __TEXT,__text  -[INInteraction _donateInteractionWithBundleId:completion:]
+0x18cf3ab84  __TEXT,__text  -[INObject setAlternativeSpeakableMatches:]
+0x18cf3ad58  __TEXT,__text  -[INIntent setValue:forUndefinedKey:]
+0x18cf3af48  __TEXT,__text  -[INObject .cxx_destruct]
+0x18cf3afbc  __TEXT,__text  -[INIntent .cxx_destruct]
+0x18cf3b06c  __TEXT,__text  -[INCodable .cxx_destruct]
+0x18cf3b0b4  __TEXT,__text  -[_INPBIntentMetadata dealloc]
+0x18cf3b104  __TEXT,__text  -[_INPBIntentMetadata .cxx_destruct]
+0x18cf3b490  __TEXT,__text  -[INInteraction intentResponse]
+0x18cf3b498  __TEXT,__text  -[INInteraction direction]
+0x18cf3b4a0  __TEXT,__text  -[INIntent _preferredInteractionDirection]
+0x18cf3b4a8  __TEXT,__text  -[INInteraction setDirection:]
+0x18cf3b4b0  __TEXT,__text  -[INIntent _className]
+0x18cf3b554  __TEXT,__text  -[INInteraction _contextExtensionUUID]
+0x18cf3b55c  __TEXT,__text  +[INIntent(NSExtensionContext) _sharedExtensionContextUUIDForIntentClassName:]
+0x18cf3ba04  __TEXT,__text  ___INImageProxyInjectionQueue_block_invoke
+0x18cf3ba60  __TEXT,__text  -[INInteraction _injectProxiesForImages:completion:]
+0x18cf3bcf0  __TEXT,__text  -[INInteraction copyWithZone:]
+0x18cf3be5c  __TEXT,__text  -[INInteraction initWithIntent:response:]
+0x18cf3bf74  __TEXT,__text  -[INInteraction _commonInit]
+0x18cf3c010  __TEXT,__text  -[INIntent copyWithZone:]
+0x18cf3c108  __TEXT,__text  -[INIntent _init]
+0x18cf3c140  __TEXT,__text  -[INCodable copyWithZone:]
+0x18cf3c20c  __TEXT,__text  ___28-[INCodable _writeTo:error:]_block_invoke
+0x18cf3c214  __TEXT,__text  -[INCodable _writeTo:error:]
+0x18cf3c4d0  __TEXT,__text  ___28-[INCodable _writeTo:error:]_block_invoke_3
+0x18cf3ceb4  __TEXT,__text  ___28-[INCodable _writeTo:error:]_block_invoke_2
+0x18cf3d078  __TEXT,__text  ___50-[INCodableCustomObjectAttribute valueTransformer]_block_invoke
+0x18cf3d204  __TEXT,__text  +[INObject resolveInstanceMethod:]
+0x18cf3d210  __TEXT,__text  -[INObject subtitleString]
+0x18cf3d218  __TEXT,__text  -[INObject identifier]
+0x18cf3d220  __TEXT,__text  -[INCustomObject valueForUndefinedKey:]
+0x18cf3d224  __TEXT,__text  -[INCustomObject valueForProperty:]
+0x18cf3d238  __TEXT,__text  -[INObject displayImage]
+0x18cf3d240  __TEXT,__text  -[NSString(ProtoUtils) _intents_encodeForProto]
+0x18cf3d25c  __TEXT,__text  -[INCodableObjectAttribute valueTransformer]
+0x18cf3d398  __TEXT,__text  -[INCodable _readFrom:error:]
+0x18cf3d6d4  __TEXT,__text  ___29-[INCodable _readFrom:error:]_block_invoke_2
+0x18cf3de74  __TEXT,__text  -[INCodableCustomObjectAttribute codableDescription]
+0x18cf3df60  __TEXT,__text  -[NSString(ProtoUtils) _intents_decodeFromProto]
+0x18cf3e274  __TEXT,__text  ___29-[INCodable _readFrom:error:]_block_invoke
+0x18cf3e3e8  __TEXT,__text  -[INAppInfo supportedActionsByExtensions]
+0x18cf3e3f0  __TEXT,__text  -[INAppInfo setSupportedIntents:]
+0x18cf3e3f8  __TEXT,__text  -[INAppInfo setActionsRestrictedWhileLocked:]
+0x18cf3e400  __TEXT,__text  +[INCodableDescription(__INCodableScalarAttributeType) __INCodableScalarAttributeTypeKey]
+0x18cf3e40c  __TEXT,__text  -[INSchema _mainBundleIdentifier]
+0x18cf3e414  __TEXT,__text  +[INCodableDescription(__INCodableAttributeFixedSizeArray) __INCodableAttributeFixedSizeArrayKey]
+0x18cf3e420  __TEXT,__text  -[INIntentCodableDescription setUserConfirmationRequired:]
+0x18cf3e434  __TEXT,__text  -[INCodableEnumAttribute enumNamespace]
+0x18cf3e448  __TEXT,__text  +[INIntentCodableDescription(__KeyParameter) __KeyParameterKey]
+0x18cf3e454  __TEXT,__text  +[INIntentCodableDescription(__Hash) __HashKey]
+0x18cf3e460  __TEXT,__text  -[_INBundleImage imageName]
+0x18cf3e474  __TEXT,__text  -[_INBundleImage _isSystem]
+0x18cf3e4b0  __TEXT,__text  ___45-[INImageServiceConnection serviceIdentifier]_block_invoke
+0x18cf3e55c  __TEXT,__text  ___47-[INImageServiceRegistry registerImageService:]_block_invoke
+0x18cf3e5b8  __TEXT,__text  ___INThisProcessIsSiri_block_invoke
+0x18cf3e61c  __TEXT,__text  ___INThisProcessIsCarousel_block_invoke
+0x18cf3e680  __TEXT,__text  ___22+[INCache sharedCache]_block_invoke
+0x18cf3e6b4  __TEXT,__text  -[INImage encodeWithCoder:]
+0x18cf3e784  __TEXT,__text  -[_INBundleImage .cxx_destruct]
+0x18cf3e7cc  __TEXT,__text  -[INImage .cxx_destruct]
+0x18cf3e7d8  __TEXT,__text  +[INImage systemImageNamed:]
+0x18cf3e888  __TEXT,__text  -[INIntentCodableDescription _setKeyAttributeName:]
+0x18cf3e894  __TEXT,__text  +[INIntentResponseCodableDescription(__Parameters) __ParametersKey]
+0x18cf3e8a0  __TEXT,__text  +[INIntentResponseCodableDescription(__INCodableAttributeDisplayName) __INCodableAttributeDisplayNameKey]
+0x18cf3e8ac  __TEXT,__text  +[INIntentResponseCodableDescription(__INCodableAttributeDisplayNameID) __INCodableAttributeDisplayNameIDKey]
+0x18cf3e8b8  __TEXT,__text  -[INCodableAttributeDialog _codableAttribute]
+0x18cf3e8d8  __TEXT,__text  +[INCodableDescription(__INCodableAttributeUnsupportedReasonFormatString) __INCodableAttributeUnsupportedReasonFormatStringKey]
+0x18cf3e8e4  __TEXT,__text  +[INCodableDescription(__INCodableAttributeUnsupportedReasonFormatStringID) __INCodableAttributeUnsupportedReasonFormatStringIDKey]
+0x18cf3e8f0  __TEXT,__text  +[INCodableDescription(__INCodableAttributeUnsupportedReasonCode) __INCodableAttributeUnsupportedReasonCodeKey]
+0x18cf3e8fc  __TEXT,__text  +[INCodableDescription(__INCodablePersonAttributeMetadataType) __INCodablePersonAttributeMetadataTypeKey]
+0x18cf3e9bc  __TEXT,__text  -[INCodableAttributeDialog updateWithDictionary:]
+0x18cf3ea60  __TEXT,__text  ___43-[INCodableAttribute updateWithDictionary:]_block_invoke_2
+0x18cf3eac4  __TEXT,__text  +[INCodableDescription(__INCodableAttributePromptDialogFormatStringID) __INCodableAttributePromptDialogFormatStringIDKey]
+0x18cf3ead0  __TEXT,__text  +[INCodableDescription(__INCodableAttributeMetadataPlaceholderID) __INCodableAttributeMetadataPlaceholderIDKey]
+0x18cf3eadc  __TEXT,__text  +[INCodableDescription(__INCodableAttributeSupportsDynamicEnumeration) __INCodableAttributeSupportsDynamicEnumerationKey]
+0x18cf3eae8  __TEXT,__text  ___43-[INCodableAttribute updateWithDictionary:]_block_invoke
+0x18cf3ebb4  __TEXT,__text  -[INCodableObjectAttribute updateWithDictionary:]
+0x18cf3ecc8  __TEXT,__text  -[INCodableCustomObjectAttribute objectTypeNamespace]
+0x18cf3ecdc  __TEXT,__text  -[INCodableDescription attributes]
+0x18cf3ece4  __TEXT,__text  -[INCodableAttribute setPropertyName:]
+0x18cf3ecec  __TEXT,__text  -[INCodablePersonAttributeMetadata updateWithDictionary:]
+0x18cf3edcc  __TEXT,__text  ___50-[INCodableCustomObjectAttribute valueTransformer]_block_invoke_2
+0x18cf3f264  __TEXT,__text  -[INCodableDescription className]
+0x18cf3f26c  __TEXT,__text  -[_INPBIntentMetadata readFrom:]
+0x18cf40900  __TEXT,__text  -[INInteraction identifier]
+0x18cf40908  __TEXT,__text  -[INInteraction setIdentifier:]
+0x18cf40910  __TEXT,__text  -[INInteraction dateInterval]
+0x18cf40918  __TEXT,__text  -[INInteraction setDateInterval:]
+0x18cf40920  __TEXT,__text  -[INInteraction groupIdentifier]
+0x18cf40928  __TEXT,__text  -[INInteraction setGroupIdentifier:]
+0x18cf40930  __TEXT,__text  -[INInteraction intentHandlingStatus]
+0x18cf40938  __TEXT,__text  -[INInteraction setIntentHandlingStatus:]
+0x18cf40940  __TEXT,__text  -[INInteraction _donatedBySiri]
+0x18cf40948  __TEXT,__text  -[INInteraction _snippet]
+0x18cf40950  __TEXT,__text  -[INInteraction _setSnippet:]
+0x18cf4095c  __TEXT,__text  ___Block_byref_object_copy_
+0x18cf4096c  __TEXT,__text  ___24-[INWatchdogTimer start]_block_invoke
+0x18cf40974  __TEXT,__text  -[INIntent(INImageProxyInjecting) _injectProxiesForImages:completion:]
+0x18cf40a34  __TEXT,__text  -[INIntent(INImageProxyInjecting) _injectProxyForDefaultImage:completion:]
+0x18cf40b34  __TEXT,__text  -[INIntent _defaultImage]
+0x18cf40c48  __TEXT,__text  -[INIntent _metadata]
+0x18cf40cd8  __TEXT,__text  -[INIntent _type]
+0x18cf40d7c  __TEXT,__text  -[INIntent _defaultImageName]
+0x18cf40e88  __TEXT,__text  -[INIntentCodableDescription defaultImageName]
+0x18cf40e9c  __TEXT,__text  -[INIntent extensionBundleId]
+0x18cf40edc  __TEXT,__text  -[INIntent launchId]
+0x18cf40f1c  __TEXT,__text  ___70-[INIntent(INImageProxyInjecting) _injectProxiesForImages:completion:]_block_invoke
+0x18cf40fd0  __TEXT,__text  -[INIntent(INImageProxyInjecting) _injectProxiesForParameterImages:completion:]
+0x18cf410dc  __TEXT,__text  -[INIntent _parameterImages]
+0x18cf412d8  __TEXT,__text  -[INCodableAttributeRelationship initWithCodableAttribute:]
+0x18cf41340  __TEXT,__text  -[INRootCodableDescription initWithCoder:]
+0x18cf41424  __TEXT,__text  -[INCodableAttribute _setUnsupportedReasons:]
+0x18cf4142c  __TEXT,__text  -[INCodableAttribute _setPromptDialogs:]
+0x18cf41434  __TEXT,__text  -[INCodableDescription initWithCoder:]
+0x18cf418dc  __TEXT,__text  -[INCodableAttribute initWithCoder:]
+0x18cf41e90  __TEXT,__text  -[INCodableAttributeMetadata initWithCoder:]
+0x18cf4203c  __TEXT,__text  -[INCodableObjectAttribute initWithCoder:]
+0x18cf42150  __TEXT,__text  -[INCodableAttributeDialog initWithCoder:]
+0x18cf42284  __TEXT,__text  ___59-[INInteraction _donateInteractionWithBundleId:completion:]_block_invoke.92
+0x18cf42484  __TEXT,__text  -[INCodable _nonNilAttributes]
+0x18cf42650  __TEXT,__text  -[INCodableDescription displayOrderedAttributes]
+0x18cf4287c  __TEXT,__text  -[INCodableAttributeRelationship initWithCoder:]
+0x18cf42a60  __TEXT,__text  -[INCodableObjectAttribute hash]
+0x18cf42acc  __TEXT,__text  -[INTypeCodableDescription encodeWithCoder:]
+0x18cf42b6c  __TEXT,__text  -[INInteraction intent]
+0x18cf42dfc  __TEXT,__text  -[INCustomObject .cxx_destruct]
+0x18cf42e10  __TEXT,__text  -[INInteraction .cxx_destruct]
+0x18cf42e84  __TEXT,__text  -[INIntentCodableDescription .cxx_destruct]
+0x18cf42f80  __TEXT,__text  -[INRootCodableDescription .cxx_destruct]
+0x18cf42fc8  __TEXT,__text  -[INTypeCodableDescription .cxx_destruct]
+0x18cf43010  __TEXT,__text  -[INCodableDescription .cxx_destruct]
+0x18cf430b0  __TEXT,__text  -[INCodableObjectAttribute .cxx_destruct]
+0x18cf430f8  __TEXT,__text  -[INCodableAttribute .cxx_destruct]
+0x18cf431c8  __TEXT,__text  -[INCodableAttributeRelationship .cxx_destruct]
+0x18cf43210  __TEXT,__text  -[INCodableStringAttributeMetadata .cxx_destruct]
+0x18cf43258  __TEXT,__text  -[INCodableAttributeMetadata .cxx_destruct]
+0x18cf432a4  __TEXT,__text  -[INCodableCustomObjectAttribute .cxx_destruct]
+0x18cf432fc  __TEXT,__text  -[INCodablePlacemarkAttributeMetadata updateWithDictionary:]
+0x18cf433dc  __TEXT,__text  -[INCodablePlacemarkAttributeMetadata(__INCodablePlacemarkAttributeMetadataINIntentParameterMetadataType) __INCodableDescriptionTypeKey]
+0x18cf4349c  __TEXT,__text  -[INCodableAttribute relationship]
+0x18cf434a4  __TEXT,__text  -[INTypeCodableDescription setDisplayName:]
+0x18cf434b0  __TEXT,__text  -[INSchema isSystem]
+0x18cf434b8  __TEXT,__text  -[INCodableObjectAttribute setTypeName:]
+0x18cf434c4  __TEXT,__text  -[INCodableDescription _updateAttributesByName]
+0x18cf43604  __TEXT,__text  -[INCodableDescription setIntentDefinitionNamespace:]
+0x18cf4360c  __TEXT,__text  -[INCodableDescription _setLocalizationTable:]
+0x18cf43614  __TEXT,__text  -[INCodableDescription setMainBundleIdentifier:]
+0x18cf4361c  __TEXT,__text  ____INParameterCombinationsWithDictionary_block_invoke
+0x18cf43658  __TEXT,__text  -[INCodableLocalizationTable initWithBundleIdentifier:tableName:]
+0x18cf436f4  __TEXT,__text  -[INIntentCodableDescription _attributesKey]
+0x18cf43710  __TEXT,__text  +[INIntentCodableDescription(__Parameters) __ParametersKey]
+0x18cf4371c  __TEXT,__text  -[INIntentCodableDescription _attributeKey]
+0x18cf43738  __TEXT,__text  +[INIntentCodableDescription(__Parameter) __ParameterKey]
+0x18cf43744  __TEXT,__text  -[INCodableCustomObjectAttribute updateWithDictionary:]
+0x18cf43820  __TEXT,__text  -[INCodableCustomObjectAttribute(__INCodableCustomObjectAttributeINIntentParameterObjectType) __INCodableDescriptionObjectTypeKey]
+0x18cf43864  __TEXT,__text  +[INCodableDescription(__INCodableCustomObjectAttributeObjectType) __INCodableCustomObjectAttributeObjectTypeKey]
+0x18cf43870  __TEXT,__text  -[INCodableCustomObjectAttribute(__INCodableCustomObjectAttributeINIntentParameterObjectTypeNamespace) __INCodableDescriptionObjectTypeNamespaceKey]
+0x18cf438b4  __TEXT,__text  +[INCodableDescription(__INCodableCustomObjectAttributeObjectTypeNamespace) __INCodableCustomObjectAttributeObjectTypeNamespaceKey]
+0x18cf438c0  __TEXT,__text  -[INSchema _types]
+0x18cf438c8  __TEXT,__text  -[INCodableCustomObjectAttribute objectTypeName]
+0x18cf438dc  __TEXT,__text  +[INCodableDescription(__INCodableObjectAttributeType) __INCodableObjectAttributeTypeKey]
+0x18cf438e8  __TEXT,__text  +[INCodableDescription(__INCodableAttributeDisplayNameID) __INCodableAttributeDisplayNameIDKey]
+0x18cf438f4  __TEXT,__text  +[INCodableDescription(__INCodableAttributeDefault) __INCodableAttributeDefaultKey]
+0x18cf43900  __TEXT,__text  +[INCodableDescription(__INCodableAttributeSupportsResolution) __INCodableAttributeSupportsResolutionKey]
+0x18cf4390c  __TEXT,__text  -[INTypeCodableDescription setDisplayNameLocID:]
+0x18cf43918  __TEXT,__text  -[INCodableDescription schema]
+0x18cf43aa8  __TEXT,__text  +[INCodableDescription(__INCodableAttributeName) __INCodableAttributeNameKey]
+0x18cf43ab4  __TEXT,__text  +[INCodableDescription(__INCodableAttributeDisplayName) __INCodableAttributeDisplayNameKey]
+0x18cf43ac0  __TEXT,__text  +[INCodableDescription(__INCodableAttributeSupportsSearch) __INCodableAttributeSupportsSearchKey]
+0x18cf43acc  __TEXT,__text  +[INCodableDescription(__INCodableAttributeWindowSize) __INCodableAttributeWindowSizeKey]
+0x18cf43ad8  __TEXT,__text  +[INCodableDescription(__INCodableAttributeSupportsMultipleValues) __INCodableAttributeSupportsMultipleValuesKey]
+0x18cf43ae4  __TEXT,__text  +[INCodableDescription(__INCodableAttributePromptDialogs) __INCodableAttributePromptDialogsKey]
+0x18cf43af0  __TEXT,__text  -[INCodableObjectAttribute(__INCodableObjectAttributeINIntentParameterType) __INCodableDescriptionTypeKey]
+0x18cf43b34  __TEXT,__text  -[INCodableDescription typeName]
+0x18cf43b3c  __TEXT,__text  -[INCodableDescription _nullable_schema]
+0x18cf43b5c  __TEXT,__text  -[INCodableScalarAttribute initWithPropertyName:type:]
+0x18cf43bec  __TEXT,__text  -[INCodableAttribute setModifier:]
+0x18cf43bf4  __TEXT,__text  -[INCodableAttribute setDisplayPriorityRank:]
+0x18cf43bfc  __TEXT,__text  -[INCodableDescription setAttributes:]
+0x18cf43c38  __TEXT,__text  +[INCodableDescription(__INCodableAttributeDisplayPriority) __INCodableAttributeDisplayPriorityKey]
+0x18cf43c44  __TEXT,__text  +[INCodableDescription(__INCodableAttributeConfigurable) __INCodableAttributeConfigurableKey]
+0x18cf43c50  __TEXT,__text  -[INCodableDescription encodeWithCoder:]
+0x18cf43d58  __TEXT,__text  ___48-[INCodableDescription displayOrderedAttributes]_block_invoke
+0x18cf43d64  __TEXT,__text  -[INCodableAttribute hash]
+0x18cf43e24  __TEXT,__text  -[INCodableAttribute isEqual:]
+0x18cf43fc0  __TEXT,__text  -[INRootCodableDescription encodeWithCoder:]
+0x18cf44048  __TEXT,__text  -[INCodableAttribute encodeWithCoder:]
+0x18cf4420c  __TEXT,__text  -[INCodableObjectAttribute encodeWithCoder:]
+0x18cf442ac  __TEXT,__text  -[INCodableAttributeMetadata encodeWithCoder:]
+0x18cf4434c  __TEXT,__text  -[INCodableObjectAttribute isEqual:]
+0x18cf44454  __TEXT,__text  -[INCodableAttributeRelationship encodeWithCoder:]
+0x18cf444cc  __TEXT,__text  -[INParameterCombination .cxx_destruct]
+0x18cf44528  __TEXT,__text  -[INObject initWithIdentifier:displayString:]
+0x18cf44530  __TEXT,__text  -[INCodableScalarAttribute isEqual:]
+0x18cf445c8  __TEXT,__text  -[INCodableAttributeDialog .cxx_destruct]
+0x18cf44608  __TEXT,__text  -[INCodableBooleanAttributeMetadata .cxx_destruct]
+0x18cf4468c  __TEXT,__text  -[NSUserActivity(IntentsAdditions) _setEligibleForPrediction:]
+0x18cf44690  __TEXT,__text  +[INCodableDescription(__INCodableAttributePromptDialogFormatString) __INCodableAttributePromptDialogFormatStringKey]
+0x18cf4469c  __TEXT,__text  +[INCodableDescription(__INCodableAttributePromptDialogType) __INCodableAttributePromptDialogTypeKey]
+0x18cf446a8  __TEXT,__text  +[INCodableDescription(__INCodableAttributeArraySizes) __INCodableAttributeArraySizesKey]
+0x18cf446b4  __TEXT,__text  +[INCodableDescription(__INCodableAttributeUnsupportedReasons) __INCodableAttributeUnsupportedReasonsKey]
+0x18cf446c0  __TEXT,__text  +[INCodableDescription(__INCodableAttributeMetadata) __INCodableAttributeMetadataKey]
+0x18cf446cc  __TEXT,__text  +[INCodableDescription(__INCodableAttributeEnumType) __INCodableAttributeEnumTypeKey]
+0x18cf446d8  __TEXT,__text  +[INCodableDescription(__INCodableAttributeRelationship) __INCodableAttributeRelationshipKey]
+0x18cf446e4  __TEXT,__text  +[INCodableDescription(__INCodableAttributeEntityKeypath) __INCodableAttributeEntityKeypathKey]
+0x18cf446f0  __TEXT,__text  +[INCodableDescription(__INCodableAttributeTag) __INCodableAttributeTagKey]
+0x18cf446fc  __TEXT,__text  -[INCodableBooleanAttributeMetadata updateWithDictionary:]
+0x18cf449fc  __TEXT,__text  +[INCodableDescription(__INCodableAttributeMetadataPlaceholder) __INCodableAttributeMetadataPlaceholderKey]
+0x18cf44a08  __TEXT,__text  -[INCodableBooleanAttributeMetadata(__INCodableBooleanAttributeMetadataINIntentParameterMetadataDefaultValue) __INCodableDescriptionDefaultValueKey]
+0x18cf44a4c  __TEXT,__text  +[INCodableDescription(__INCodableBooleanAttributeMetadataDefaultValue) __INCodableBooleanAttributeMetadataDefaultValueKey]
+0x18cf44a58  __TEXT,__text  -[INCodableBooleanAttributeMetadata(__INCodableBooleanAttributeMetadataINIntentParameterMetadataFalseDisplayName) __INCodableDescriptionFalseDisplayNameKey]
+0x18cf44a9c  __TEXT,__text  -[INCodableAttributeDialog encodeWithCoder:]
+0x18cf44b54  __TEXT,__text  +[INCodableDescription(__INCodableBooleanAttributeMetadataFalseDisplayName) __INCodableBooleanAttributeMetadataFalseDisplayNameKey]
+0x18cf44b60  __TEXT,__text  -[INCodableBooleanAttributeMetadata(__INCodableBooleanAttributeMetadataINIntentParameterMetadataFalseDisplayNameID) __INCodableDescriptionFalseDisplayNameIDKey]
+0x18cf44ba4  __TEXT,__text  +[INCodableDescription(__INCodableBooleanAttributeMetadataFalseDisplayNameID) __INCodableBooleanAttributeMetadataFalseDisplayNameIDKey]
+0x18cf44bb0  __TEXT,__text  -[INCodableBooleanAttributeMetadata(__INCodableBooleanAttributeMetadataINIntentParameterMetadataTrueDisplayName) __INCodableDescriptionTrueDisplayNameKey]
+0x18cf44bf4  __TEXT,__text  +[INCodableDescription(__INCodableBooleanAttributeMetadataTrueDisplayName) __INCodableBooleanAttributeMetadataTrueDisplayNameKey]
+0x18cf44c00  __TEXT,__text  -[INCodableBooleanAttributeMetadata(__INCodableBooleanAttributeMetadataINIntentParameterMetadataTrueDisplayNameID) __INCodableDescriptionTrueDisplayNameIDKey]
+0x18cf44c44  __TEXT,__text  +[INCodableDescription(__INCodableBooleanAttributeMetadataTrueDisplayNameID) __INCodableBooleanAttributeMetadataTrueDisplayNameIDKey]
+0x18cf44c50  __TEXT,__text  -[INIntentCodableDescription attributes]
+0x18cf44d78  __TEXT,__text  +[INIntentCodableDescription _intentClassNameWithDictionary:]
+0x18cf44eb0  __TEXT,__text  +[INIntentCodableDescription(__ClassName) __ClassNameKey]
+0x18cf44ebc  __TEXT,__text  +[INIntentCodableDescription(__ClassPrefix) __ClassPrefixKey]
+0x18cf44ec8  __TEXT,__text  +[INIntentCodableDescription(__Title) __TitleKey]
+0x18cf44ed4  __TEXT,__text  +[INIntentCodableDescription(__Description) __DescriptionKey]
+0x18cf44ee0  __TEXT,__text  -[INIntentCodableDescription setTitle:]
+0x18cf44eec  __TEXT,__text  +[INIntentCodableDescription(__TitleID) __TitleIDKey]
+0x18cf44ef8  __TEXT,__text  -[INIntentCodableDescription setTitleLocID:]
+0x18cf44f04  __TEXT,__text  -[INIntentCodableDescription setDescriptiveText:]
+0x18cf44f10  __TEXT,__text  +[INIntentCodableDescription(__DescriptionID) __DescriptionIDKey]
+0x18cf44f1c  __TEXT,__text  -[INIntentCodableDescription setDescriptiveTextLocID:]
+0x18cf44f28  __TEXT,__text  +[INIntentCodableDescription(__Verb) __VerbKey]
+0x18cf44f34  __TEXT,__text  -[INIntentCodableDescription setVerb:]
+0x18cf44f40  __TEXT,__text  +[INIntentCodableDescription(__Category) __CategoryKey]
+0x18cf44f4c  __TEXT,__text  -[INIntentCodableDescription setIntentCategory:]
+0x18cf44f60  __TEXT,__text  +[INIntentCodableDescription(__DefaultImageName) __DefaultImageNameKey]
+0x18cf44f6c  __TEXT,__text  -[INIntentCodableDescription setDefaultImageName:]
+0x18cf44f78  __TEXT,__text  +[INIntentCodableDescription(__UserConfirmationRequired) __UserConfirmationRequiredKey]
+0x18cf44f84  __TEXT,__text  +[INIntentCodableDescription(__Configurable) __ConfigurableKey]
+0x18cf44f90  __TEXT,__text  -[INIntentCodableDescription setConfigurable:]
+0x18cf44fa4  __TEXT,__text  +[INIntentCodableDescription(__Deprecated) __DeprecatedKey]
+0x18cf44fb0  __TEXT,__text  -[INIntentCodableDescription setDeprecated:]
+0x18cf44fc4  __TEXT,__text  +[INIntentCodableDescription(__Foreground) __ForegroundKey]
+0x18cf44fd0  __TEXT,__text  -[INIntentCodableDescription setForeground:]
+0x18cf44fe4  __TEXT,__text  +[INIntentCodableDescription(__IneligibleForSuggestions) __IneligibleForSuggestionsKey]
+0x18cf44ff0  __TEXT,__text  -[INIntentCodableDescription setEligibleForSuggestions:]
+0x18cf45004  __TEXT,__text  +[INIntentCodableDescription(__EligibleForWidgets) __EligibleForWidgetsKey]
+0x18cf45010  __TEXT,__text  -[INIntentCodableDescription setEligibleForWidgets:]
+0x18cf45024  __TEXT,__text  -[INIntentCodableDescription _setInputAttributeName:]
+0x18cf45030  __TEXT,__text  +[INIntentCodableDescription(__VerbAssociations) __VerbAssociationsKey]
+0x18cf4503c  __TEXT,__text  -[INIntentCodableDescription setEntityVerbs:]
+0x18cf45048  __TEXT,__text  +[INIntentCodableDescription(__Entity) __EntityKey]
+0x18cf45054  __TEXT,__text  -[INCodableDescription setSemanticRoot:]
+0x18cf4505c  __TEXT,__text  -[INIntentCodableDescription setVersioningHash:]
+0x18cf45068  __TEXT,__text  +[INIntentCodableDescription(__Phrases) __PhrasesKey]
+0x18cf45074  __TEXT,__text  -[INSchema _intentResponseWithDictionary:intentDefinitionNamespace:className:filename:bundleIdentifier:referencedCodableDescriptions:]
+0x18cf451b0  __TEXT,__text  +[INIntentResponseCodableDescription(__INCodableStringAttributeMetadataDisableSmartDashes) __INCodableStringAttributeMetadataDisableSmartDashesKey]
+0x18cf451bc  __TEXT,__text  -[INCodableScalarAttribute setType:]
+0x18cf451d0  __TEXT,__text  -[INIntentResponseCodableDescription _setOutputAttributeName:]
+0x18cf451e4  __TEXT,__text  -[INIntentResponseCodableCode setFormatStringLocID:]
+0x18cf451ec  __TEXT,__text  -[INRootCodableDescription _establishReferencedCodableDescriptionsUsingTypes:]
+0x18cf45284  __TEXT,__text  -[INRootCodableDescription _setReferencedCodableDescriptions:]
+0x18cf45308  __TEXT,__text  -[INIntentCodableDescription _establishReferencedCodableDescriptionsUsingTypes:intentResponseCodableDescription:]
+0x18cf45420  __TEXT,__text  +[INCodableDescription _calculateReferencedCodableDescriptionsFromAttributes:usingTypes:]
+0x18cf454a4  __TEXT,__text  +[INCodableDescription _calculateReferencedCodableDescriptionsFromAttributes:usingTypes:foundAttributes:]
+0x18cf45578  __TEXT,__text  -[INSchema _setObjectDescription:forClass:identifier:]
+0x18cf45660  __TEXT,__text  +[INIntentResponse initialize]
+0x18cf456c4  __TEXT,__text  -[INSchema intentWithName:]
+0x18cf4578c  __TEXT,__text  -[INIntent _initWithIdentifier:schema:name:data:]
+0x18cf459e8  __TEXT,__text  -[INSchema intentCodableDescriptionWithIntentClassName:]
+0x18cf45b78  __TEXT,__text  -[INSchema _objectDescriptionForClass:identifier:]
+0x18cf45ca8  __TEXT,__text  -[INIntent _initWithIdentifier:backingStore:schema:error:]
+0x18cf45ffc  __TEXT,__text  -[INIntent backingStore]
+0x18cf46004  __TEXT,__text  -[INIntent _inCodable]
+0x18cf46074  __TEXT,__text  -[INIntent _setMetadata:]
+0x18cf46120  __TEXT,__text  -[INCodableDescription attributeByName:]
+0x18cf46150  __TEXT,__text  -[INSchema _parameterCombinationsForClassName:]
+0x18cf461d0  __TEXT,__text  -[INSchema _configurableParameterCombinationsForClassName:]
+0x18cf46250  __TEXT,__text  -[INIntent _intentCategory]
+0x18cf462d0  __TEXT,__text  -[INIntentCodableDescription intentCategory]
+0x18cf462e4  __TEXT,__text  -[INIntent _setIntentCategory:]
+0x18cf46344  __TEXT,__text  -[INIntentCodableDescription verb]
+0x18cf46358  __TEXT,__text  -[INIntent _setCategoryVerb:]
+0x18cf463ac  __TEXT,__text  -[INIntentCodableDescription userConfirmationRequired]
+0x18cf463c0  __TEXT,__text  -[INIntent _setUserConfirmationRequired:]
+0x18cf46404  __TEXT,__text  -[INIntentCodableDescription versioningHash]
+0x18cf46418  __TEXT,__text  -[INIntent initWithIdentifier:backingStore:]
+0x18cf46544  __TEXT,__text  -[_INPBIntentMetadata launchId]
+0x18cf46558  __TEXT,__text  -[INIntent init]
+0x18cf46830  __TEXT,__text  -[INIntent _setLaunchId:]
+0x18cf46884  __TEXT,__text  -[INObject initWithIdentifier:displayString:pronunciationHint:]
+0x18cf46948  __TEXT,__text  +[INIntent resolveInstanceMethod:]
+0x18cf46954  __TEXT,__text  __INClassFromType
+0x18cf46a88  __TEXT,__text  __INLookupNameInModule
+0x18cf46bd0  __TEXT,__text  ____INClassFromType_block_invoke
+0x18cf46bd8  __TEXT,__text  __INSetIdProperty
+0x18cf46cf0  __TEXT,__text  -[INIntent setValue:forProperty:]
+0x18cf46d0c  __TEXT,__text  -[INCodableCustomObjectAttribute valueTransformer]
+0x18cf46e14  __TEXT,__text  __INGetIdProperty
+0x18cf46e8c  __TEXT,__text  -[INObject valueForProperty:]
+0x18cf46fb0  __TEXT,__text  -[INObject _valueForKeyDictionary]
+0x18cf46ff8  __TEXT,__text  ___29-[INObject valueForProperty:]_block_invoke
+0x18cf47004  __TEXT,__text  -[INCodableScalarAttribute type]
+0x18cf47018  __TEXT,__text  -[INCodableObjectAttribute typeName]
+0x18cf4702c  __TEXT,__text  -[_INPBIntentMetadata hasBackgroundLaunch]
+0x18cf47044  __TEXT,__text  ____INSharedClassPrefixRegularExpression_block_invoke
+0x18cf47088  __TEXT,__text  -[INCodableCustomObjectAttribute hash]
+0x18cf47110  __TEXT,__text  -[INCodableAttribute displayPriorityRank]
+0x18cf472a4  __TEXT,__text  -[INIntentBooleanSlotValueTransformer reverseTransformedValue:]
+0x18cf47508  __TEXT,__text  -[_INPBBool readFrom:]
+0x18cf47510  __TEXT,__text  +[INCodableDescription(__INCodableAttributeRelationshipPredicateName) __INCodableAttributeRelationshipPredicateNameKey]
+0x18cf47800  __TEXT,__text  -[_INCodableAttributeRelationshipValueTransformer .cxx_destruct]
+0x18cf47a68  __TEXT,__text  -[_INPBDouble readFrom:]
+0x18cf48038  __TEXT,__text  -[_INPBImageValue readFrom:]
+0x18cf48040  __TEXT,__text  -[INIntentImageSlotValueTransformer reverseTransformedValue:]
+0x18cf480a8  __TEXT,__text  -[INCustomObject _initWithCodableDescription:]
+0x18cf48140  __TEXT,__text  -[INAppInfo setRequiresAppLaunchPreflight:]
+0x18cf48434  __TEXT,__text  -[INParameterCombination _setLocalizationTable:]
+0x18cf4843c  __TEXT,__text  -[INIntent encodeWithCoder:]
+0x18cf485ac  __TEXT,__text  -[INAppInfo supportedIntents]
+0x18cf485b4  __TEXT,__text  -[INIntent _redactedDictionaryRepresentation]
+0x18cf485b8  __TEXT,__text  ___45-[NSDictionary(Intents) descriptionAtIndent:]_block_invoke
+0x18cf48634  __TEXT,__text  -[INIntent _dictionaryRepresentation]
+0x18cf486a0  __TEXT,__text  -[NSDictionary(Intents) descriptionAtIndent:]
+0x18cf487d0  __TEXT,__text  -[NSObject(Intents) descriptionAtIndent:]
+0x18cf48870  __TEXT,__text  -[INIntent descriptionAtIndent:]
+0x18cf48920  __TEXT,__text  -[INObject _dictionaryRepresentation]
+0x18cf48c38  __TEXT,__text  -[INAppIntent encodeWithCoder:]
+0x18cf48d20  __TEXT,__text  -[INIntent _indexingHash]
+0x18cf48f08  __TEXT,__text  -[INIntentBooleanSlotValueTransformer transformedValue:]
+0x18cf48fe0  __TEXT,__text  -[_INPBBool .cxx_destruct]
+0x18cf48ff4  __TEXT,__text  -[_INPBBoolValue .cxx_destruct]
+0x18cf49008  __TEXT,__text  +[INIntentCodableDescription supportsSecureCoding]
+0x18cf49010  __TEXT,__text  -[INRootCodableDescription referencedCodableDescriptions]
+0x18cf49070  __TEXT,__text  -[INCodableScalarAttribute encodeWithCoder:]
+0x18cf490f0  __TEXT,__text  -[INCodablePlacemarkAttributeMetadata encodeWithCoder:]
+0x18cf49170  __TEXT,__text  -[INIntentCodableDescription encodeWithCoder:]
+0x18cf493f0  __TEXT,__text  -[INCodableCustomObjectAttribute encodeWithCoder:]
+0x18cf494bc  __TEXT,__text  -[INCodableBooleanAttributeMetadata encodeWithCoder:]
+0x18cf495bc  __TEXT,__text  -[INIntent intentDescription]
+0x18cf495fc  __TEXT,__text  -[INIntent description]
+0x18cf49604  __TEXT,__text  -[INIntentImageSlotValueTransformer transformedValue:]
+0x18cf4966c  __TEXT,__text  -[INObject setValue:forProperty:]
+0x18cf49910  __TEXT,__text  -[INIntentDoubleSlotValueTransformer reverseTransformedValue:]
+0x18cf49978  __TEXT,__text  -[INIntentDoubleSlotValueTransformer transformedValue:]
+0x18cf49cfc  __TEXT,__text  -[INGetUserCurrentRestaurantReservationBookingsIntent setEarliestBookingDateForResults:]
+0x18cf49d08  __TEXT,__text  +[NSExtension(Intents) _intents_extensionMatchingAttributesForIntents:]
+0x18cf49d18  __TEXT,__text  -[INGetUserCurrentRestaurantReservationBookingsIntent .cxx_destruct]
+0x18cf49d88  __TEXT,__text  -[_INPBDouble writeTo:]
+0x18cf49e98  __TEXT,__text  -[_INPBDoubleValue writeTo:]
+0x18cf49f38  __TEXT,__text  ___33-[INObject setValue:forProperty:]_block_invoke
+0x18cf49fb4  __TEXT,__text  -[INCodableBooleanAttributeMetadata setTrueDisplayNameID:]
+0x18cf4a154  __TEXT,__text  -[_INPBImageValue .cxx_destruct]
+0x18cf4a430  __TEXT,__text  -[_INDataImage .cxx_destruct]
+0x18cf4a478  __TEXT,__text  -[INIntent setBackingStore:]
+0x18cf4a480  __TEXT,__text  -[INImage _setImageSize:]
+0x18cf4a488  __TEXT,__text  -[_INPBIntentMetadata categoryVerb]
+0x18cf4a49c  __TEXT,__text  -[INCodableNumberAttributeMetadata .cxx_destruct]
+0x18cf4a4f8  __TEXT,__text  -[INCodableTimeIntervalAttributeMetadata .cxx_destruct]
+0x18cf4a554  __TEXT,__text  -[INCodableScalarAttribute hash]
+0x18cf4a5d4  __TEXT,__text  -[INIntent _setRecordRoute:]
+0x18cf4a5dc  __TEXT,__text  -[INCodable _initWithCodableDescription:data:error:]
+0x18cf4a6d8  __TEXT,__text  -[INCodableAttributeDialog _setCodableAttribute:]
+0x18cf4a6e4  __TEXT,__text  -[INAppIntent .cxx_destruct]
+0x18cf4a77c  __TEXT,__text  -[INCodableAttributeDialog formatString]
+0x18cf4a784  __TEXT,__text  -[INCodableDateComponentsAttributeMetadata .cxx_destruct]
+0x18cf4a7cc  __TEXT,__text  -[_INPBDouble .cxx_destruct]
+0x18cf4a7e0  __TEXT,__text  -[_INPBDoubleValue .cxx_destruct]
+0x18cf4a7f4  __TEXT,__text  -[INCodable _objectDescription]
+0x18cf4a808  __TEXT,__text  -[_INPBIntentMetadata hasIsPrimaryDisplayDisabled]
+0x18cf4a820  __TEXT,__text  -[INIntent _nonNilParameters]
+0x18cf4aa0c  __TEXT,__text  +[INCodableCustomObjectAttribute _isSupportedClass:]
+0x18cf4ab40  __TEXT,__text  -[_INPBDoubleValue hasValue]
+0x18cf4ab58  __TEXT,__text  -[INCodableBooleanAttributeMetadata setFalseDisplayName:]
+0x18cf4ab64  __TEXT,__text  -[INCodableAttribute promptDialogs]
+0x18cf4ab6c  __TEXT,__text  -[_INPBIntentMetadata hasIdiom]
+0x18cf4ab84  __TEXT,__text  -[_INPBIntentMetadata suggestedInvocationPhrase]
+0x18cf4ab98  __TEXT,__text  -[INCodable initWithCodableDescription:data:]
+0x18cf4acb4  __TEXT,__text  -[INImage _imageSize]
+0x18cf4acbc  __TEXT,__text  +[INCodableScalarAttribute supportsSecureCoding]
+0x18cf4acc4  __TEXT,__text  -[INCodableAttribute setFixedSizeArray:]
+0x18cf4accc  __TEXT,__text  +[INImage imageWithImageData:]
+0x18cf4ad18  __TEXT,__text  -[INCodableAttribute setConfigurable:]
+0x18cf4ad20  __TEXT,__text  -[_INPBDoubleValue value]
+0x18cf4ad34  __TEXT,__text  -[INCodableAttribute setRelationship:]
+0x18cf4ad40  __TEXT,__text  +[INIntentDoubleSlotValueTransformer reverseTransformedValueClass]
+0x18cf4ad4c  __TEXT,__text  -[_INPBIntentMetadata clearShortcutAvailabilities]
+0x18cf4ad5c  __TEXT,__text  -[INCodable valueForPropertyNamed:]
+0x18cf4adb8  __TEXT,__text  -[INAppIntent _setLaunchId:]
+0x18cf4adf8  __TEXT,__text  -[INCodable isValidKey:]
+0x18cf4ae74  __TEXT,__text  -[_INPBIntentMetadata setLaunchId:]
+0x18cf4aeb4  __TEXT,__text  -[_INPBIntentMetadata hasMsLimitReached]
+0x18cf4aecc  __TEXT,__text  -[INCodable setValue:forPropertyNamed:]
+0x18cf4afcc  __TEXT,__text  -[_INPBIntentMetadata hasExecutionContext]
+0x18cf4afe4  __TEXT,__text  -[_INPBIntentMetadata setIntentCategory:]
+0x18cf4b028  __TEXT,__text  -[_INPBImageValue hasRenderingMode]
+0x18cf4b040  __TEXT,__text  -[INCodableAttribute setMetadata:]
+0x18cf4b04c  __TEXT,__text  -[INCodableAttribute setDisplayName:]
+0x18cf4b054  __TEXT,__text  -[INCodableAttribute setWindowSize:]
+0x18cf4b05c  __TEXT,__text  -[INCodableAttribute setSupportsSearch:]
+0x18cf4b064  __TEXT,__text  -[INAppIntent initWithAppBundleIdentifier:appIntentIdentifier:serializedParameters:]
+0x18cf4b074  __TEXT,__text  -[INCodableAttribute setSupportsResolution:]
+0x18cf4b07c  __TEXT,__text  -[_INPBIntentMetadata originatingDeviceIdsIdentifier]
+0x18cf4b090  __TEXT,__text  +[INSchema _supportedClasses]
+0x18cf4b0d8  __TEXT,__text  -[_INPBIntentMetadata hasVersioningHash]
+0x18cf4b0f0  __TEXT,__text  -[INCodableBooleanAttributeMetadata setFalseDisplayNameID:]
+0x18cf4b0fc  __TEXT,__text  -[INCodableAttribute _setTypeString:]
+0x18cf4b104  __TEXT,__text  -[INFile hash]
+0x18cf4b16c  __TEXT,__text  -[INPerson hash]
+0x18cf4b2d4  __TEXT,__text  -[INPersonHandle hash]
+0x18cf4b36c  __TEXT,__text  -[INPersonHandle value]
+0x18cf4b374  __TEXT,__text  +[INImage registerImageLoadersOnce]
+0x18cf4b39c  __TEXT,__text  -[INImage _preferredScaledSize]
+0x18cf4b3a4  __TEXT,__text  -[INImage _renderingMode]
+0x18cf4b3ac  __TEXT,__text  -[INCache removeAllCacheableObjects]
+0x18cf4b3b4  __TEXT,__text  ___73+[_INVocabularyStoreManager _iterateVocabularyWithSummary:optionalBlock:]_block_invoke_3
+0x18cf4b608  __TEXT,__text  ___73+[_INVocabularyStoreManager _iterateVocabularyWithSummary:optionalBlock:]_block_invoke
+0x18cf4b838  __TEXT,__text  ___73+[_INVocabularyStoreManager _iterateVocabularyWithSummary:optionalBlock:]_block_invoke.50
+0x18cf4bc30  __TEXT,__text  -[_INVocabularyGenerationDocument initWithContentsOfFile:]
+0x18cf4bd18  __TEXT,__text  -[_INVocabularyGenerationDocument .cxx_destruct]
+0x18cf4bd8c  __TEXT,__text  ___73+[_INVocabularyStoreManager _iterateVocabularyWithSummary:optionalBlock:]_block_invoke_2
+0x18cf4bf14  __TEXT,__text  +[_INVocabularyStoreManager _latestVocabularyStringsAt:]
+0x18cf4c150  __TEXT,__text  -[INFile copyWithZone:]
+0x18cf4c154  __TEXT,__text  +[INFile fileWithData:filename:typeIdentifier:]
+0x18cf4c1d8  __TEXT,__text  -[INFile encodeWithCoder:]
+0x18cf4c4e8  __TEXT,__text  -[INFile _initWithData:filename:fileURL:typeIdentifier:removedOnCompletion:]
+0x18cf4c5f0  __TEXT,__text  -[INFile fileURL]
+0x18cf4c6cc  __TEXT,__text  -[INFile filename]
+0x18cf4c700  __TEXT,__text  -[INFile dealloc]
+0x18cf4c8e4  __TEXT,__text  -[INFile .cxx_destruct]
+0x18cf4c988  __TEXT,__text  +[INFile supportsSecureCoding]
+0x18cf4c990  __TEXT,__text  -[INFile initWithCoder:]
+0x18cf4cec0  __TEXT,__text  -[INFile _setItemProviderRequestMetadata:]
+0x18cf4cec8  __TEXT,__text  +[INFile fileWithFileURL:filename:typeIdentifier:]
+0x18cf4cf4c  __TEXT,__text  -[INPerson initWithHandle:nameComponents:displayName:image:contactIdentifier:]
+0x18cf4d01c  __TEXT,__text  -[INPerson initWithHandle:displayName:contactIdentifier:]
+0x18cf4d030  __TEXT,__text  -[_INVocabularyItem .cxx_destruct]
+0x18cf4d074  __TEXT,__text  -[_INVocabularyItem copyWithZone:]
+0x18cf4d0ac  __TEXT,__text  -[_INVocabularyGenerationDocument setValidity:]
+0x18cf4d0b4  __TEXT,__text  -[_INVocabularyGenerationDocument _initWithDictionary:]
+0x18cf4d11c  __TEXT,__text  -[_INVocabularyGenerationDocument _takeValuesFromDictionary:]
+0x18cf4d528  __TEXT,__text  -[_INVocabularyGenerationDocument setResetOnNextSync:]
+0x18cf4d530  __TEXT,__text  -[_INVocabularyGenerationDocument _stringForSelector:from:]
+0x18cf4d59c  __TEXT,__text  -[_INVocabularyGenerationDocument _valueForSelector:ofClass:from:]
+0x18cf4d61c  __TEXT,__text  -[_INVocabularyGenerationDocument setThisGeneration:]
+0x18cf4d624  __TEXT,__text  -[_INVocabularyGenerationDocument setAppBundleID:]
+0x18cf4d62c  __TEXT,__text  -[_INVocabularyGenerationDocument setIntentSlot:]
+0x18cf4d634  __TEXT,__text  -[_INVocabularyItem initWithString:vocabularyIdentifier:requiresUserIdentification:]
+0x18cf4d6fc  __TEXT,__text  -[_INVocabularyItem string]
+0x18cf4d704  __TEXT,__text  -[_INVocabularyItem validate]
+0x18cf4d7ac  __TEXT,__text  -[_INVocabularyItem vocabularyIdentifier]
+0x18cf4d7b4  __TEXT,__text  -[_INVocabularyItem _setSiriID:]
+0x18cf4d7bc  __TEXT,__text  -[_INVocabularyGenerationDocument setVocabularyItems:]
+0x18cf4d90c  __TEXT,__text  -[INSendMessageIntent _metadata]
+0x18cf4d94c  __TEXT,__text  -[INSendMessageIntent _typedBackingStore]
+0x18cf4d9a4  __TEXT,__text  +[INImage imageWithURL:]
+0x18cf4da54  __TEXT,__text  -[INImage _setPreferredScaledSize:]
+0x18cf4da5c  __TEXT,__text  -[INImage copyWithZone:]
+0x18cf4da8c  __TEXT,__text  -[INImage _copyWithSubclass:]
+0x18cf4db48  __TEXT,__text  -[_INDataImage imageData]
+0x18cf4db5c  __TEXT,__text  -[_INVocabularyGenerationDocument _clearVocabularyItemCaches]
+0x18cf4db94  __TEXT,__text  -[_INVocabularyItem _initWithVocabularyItem:]
+0x18cf4dc58  __TEXT,__text  -[_INVocabularyItem requiresUserIdentification]
+0x18cf4dc60  __TEXT,__text  -[_INVocabularyItem _initWithUncheckedString:vocabularyIdentifier:requiresUserIdentification:]
+0x18cf4dd04  __TEXT,__text  -[_INVocabularyItem _siriID]
+0x18cf4dd0c  __TEXT,__text  -[_INVocabularyGenerationDocument vocabularyItems]
+0x18cf4dd14  __TEXT,__text  -[INAppInfo setDefinedIntents:]
+0x18cf4dd1c  __TEXT,__text  -[INAppInfo setSupportedMediaCategories:]
+0x18cf4dd24  __TEXT,__text  -[INAppInfo setApplicationIdentifier:]
+0x18cf4dd2c  __TEXT,__text  -[INAppInfo setSupportedIntentsByApp:]
+0x18cf4dd34  __TEXT,__text  -[INAppInfo setSupportedActions:]
+0x18cf4dd3c  __TEXT,__text  -[INAppInfo setSupportedActionsByExtensions:]
+0x18cf4dd44  __TEXT,__text  -[INImageFilePersistence init]
+0x18cf4de08  __TEXT,__text  -[INImageFilePersistence _setSupportedClasses:]
+0x18cf4de10  __TEXT,__text  -[INImageFilePersistence servicePriority]
+0x18cf4de18  __TEXT,__text  -[INAppInfo supportedMediaCategories]
+0x18cf4de20  __TEXT,__text  -[INAppInfo setSupportedIntentsGroupedByExtensionPoints:]
+0x18cf4de28  __TEXT,__text  -[INAppInfo setActionsRestrictedWhileProtectedDataUnavailable:]
+0x18cf4de30  __TEXT,__text  ___42-[INPortableImageLoader serviceIdentifier]_block_invoke
+0x18cf4dedc  __TEXT,__text  -[INPortableImageLoader serviceIdentifier]
+0x18cf4df70  __TEXT,__text  -[INImageServiceRegistry _reprioritizeImageServices]
+0x18cf4dfd8  __TEXT,__text  -[INImageFilePersistence serviceIdentifier]
+0x18cf4e03c  __TEXT,__text  +[INImageServiceRegistry sharedInstance]
+0x18cf4e0d0  __TEXT,__text  -[INImageServiceConnection init]
+0x18cf4e5b0  __TEXT,__text  -[INImageServiceRegistry registerImageService:]
+0x18cf4e69c  __TEXT,__text  -[INPortableImageLoader servicePriority]
+0x18cf4e6a4  __TEXT,__text  -[INPersonHandle initWithValue:type:label:]
+0x18cf4e748  __TEXT,__text  -[INPerson initWithPersonHandle:nameComponents:displayName:image:contactIdentifier:customIdentifier:isMe:]
+0x18cf4e898  __TEXT,__text  -[INPerson initWithPersonHandle:nameComponents:displayName:image:contactIdentifier:customIdentifier:]
+0x18cf4e8bc  __TEXT,__text  -[INPersonHandle copyWithZone:]
+0x18cf4e8c0  __TEXT,__text  -[INPersonHandle initWithValue:type:]
+0x18cf4e8c8  __TEXT,__text  -[INStringLocalizer initWithLanguageCode:]
+0x18cf4ea38  __TEXT,__text  -[INPerson(Readable) _intents_readableHandleWithLocalizer:metadata:]
+0x18cf4ec48  __TEXT,__text  -[INStringLocalizer .cxx_destruct]
+0x18cf4ecb0  __TEXT,__text  -[INPerson encodeWithCoder:]
+0x18cf4ee00  __TEXT,__text  -[INPerson personHandle]
+0x18cf4ee08  __TEXT,__text  -[INPersonHandle type]
+0x18cf4ee10  __TEXT,__text  -[INPerson displayName]
+0x18cf4ef40  __TEXT,__text  +[INPerson supportsSecureCoding]
+0x18cf4ef48  __TEXT,__text  +[INPersonHandle supportsSecureCoding]
+0x18cf4ef50  __TEXT,__text  -[INPersonHandle encodeWithCoder:]
+0x18cf4f000  __TEXT,__text  -[INPerson customIdentifier]
+0x18cf4f008  __TEXT,__text  -[INPerson image]
+0x18cf4f010  __TEXT,__text  -[INPerson nameComponents]
+0x18cf4f018  __TEXT,__text  -[INPerson contactIdentifier]
+0x18cf4f020  __TEXT,__text  -[INFile _isFileURLBased]
+0x18cf4f030  __TEXT,__text  -[INPersonHandle label]
+0x18cf4f038  __TEXT,__text  -[INPerson relationship]
+0x18cf4f040  __TEXT,__text  -[INPerson isMe]
+0x18cf4f048  __TEXT,__text  -[INPerson isContactSuggestion]
+0x18cf4f050  __TEXT,__text  -[INPerson setIsMe:]
+0x18cf4f058  __TEXT,__text  -[INPerson setAliases:]
+0x18cf4f060  __TEXT,__text  -[INPerson .cxx_destruct]
+0x18cf4f110  __TEXT,__text  -[INPersonHandle .cxx_destruct]
+0x18cf4f148  __TEXT,__text  -[INPerson copyWithZone:]
+0x18cf4f14c  __TEXT,__text  -[INPerson initWithCoder:]
+0x18cf4f4b8  __TEXT,__text  -[INPersonHandle initWithCoder:]
+0x18cf4f5cc  __TEXT,__text  -[INPerson _initWithUserInput:personHandle:nameComponents:displayName:image:contactIdentifier:customIdentifier:relationship:aliases:suggestionType:isMe:scoredAlternatives:sourceAppBundleIdentifier:phonemeData:isContactSuggestion:searchProvider:]
+0x18cf4f844  __TEXT,__text  -[INPersonHandle initWithValue:type:label:emergencyType:faceTimeType:suggested:]
+0x18cf4f904  __TEXT,__text  -[INFile typeIdentifier]
+0x18cf4f90c  __TEXT,__text  -[INPerson aliases]
+0x18cf4f914  __TEXT,__text  -[INAppDescriptor localizedName]
+0x18cf4f91c  __TEXT,__text  -[INAppResolver resolvedAppIntentMatchingDescriptor:availableActions:availableEntities:]
+0x18cf4f9f4  __TEXT,__text  _INDescriptorContainsBundleIdentifiers
+0x18cf4fa68  __TEXT,__text  -[INAppDescriptor bundleIdentifier]
+0x18cf4fa70  __TEXT,__text  -[INAppDescriptor applicationRecord]
+0x18cf4fb2c  __TEXT,__text  -[INAppIntentDescriptor intentIdentifier]
+0x18cf4fb40  __TEXT,__text  -[INAppDescriptor extensionBundleIdentifier]
+0x18cf4fb48  __TEXT,__text  -[INAppDescriptor initWithLocalizedName:bundleIdentifier:extensionBundleIdentifier:counterpartIdentifiers:teamIdentifier:supportedIntents:bundleURL:documentTypes:]
+0x18cf4fcd0  __TEXT,__text  -[INAppDescriptor bundleURL]
+0x18cf4fcd8  __TEXT,__text  ____INTimersDomainLoadIntentDescriptionIfNeeded_block_invoke
+0x18cf50cb0  __TEXT,__text  __INIntentSchemaBuildIntentSlotDescriptionMap
+0x18cf50d84  __TEXT,__text  ____INTimersDomainLoadIntentResponseDescriptionIfNeeded_block_invoke
+0x18cf515a0  __TEXT,__text  -[LSApplicationRecord(Intents) in_documentTypes]
+0x18cf51704  __TEXT,__text  -[INPerson setPhonemeData:]
+0x18cf5170c  __TEXT,__text  -[INPerson setSourceAppBundleIdentifier:]
+0x18cf51714  __TEXT,__text  +[_INSiriAuthorizationManager _tccAccessInfoForBundle:]
+0x18cf51950  __TEXT,__text  ___75+[_INSiriAuthorizationManager _siriAuthorizationStatusForAppID:intentSlot:]_block_invoke.12
+0x18cf51c48  __TEXT,__text  +[_INSiriAuthorizationManager _siriAuthorizationStatusForAppID:]
+0x18cf51c50  __TEXT,__text  +[_INSiriAuthorizationManager _siriAuthorizationStatusForAppID:intentSlot:]
+0x18cf51dd0  __TEXT,__text  ___75+[_INSiriAuthorizationManager _siriAuthorizationStatusForAppID:intentSlot:]_block_invoke.13
+0x18cf51f3c  __TEXT,__text  +[_INSiriAuthorizationManager _rawSiriAuthorizationStatusForAppID:]
+0x18cf52204  __TEXT,__text  +[_INSiriAuthorizationManager _siriEnabled]
+0x18cf522f0  __TEXT,__text  -[_INBundleImage _name]
+0x18cf522f4  __TEXT,__text  +[INImage imageNamed:]
+0x18cf523c4  __TEXT,__text  -[_INBundleImage _setBundleIdentifier:]
+0x18cf52418  __TEXT,__text  -[_INPBSendMessageIntent intentMetadata]
+0x18cf5242c  __TEXT,__text  -[_INPBSendMessageIntent .cxx_destruct]
+0x18cf52528  __TEXT,__text  -[_INBundleImage encodeWithCoder:]
+0x18cf525c8  __TEXT,__text  -[INImageBundle encodeWithCoder:]
+0x18cf5263c  __TEXT,__text  __INFieldEquals
+0x18cf5269c  __TEXT,__text  -[INPerson(INInteraction) initWithPersonHandle:nameComponents:displayName:image:contactIdentifier:customIdentifier:aliases:suggestionType:]
+0x18cf526f4  __TEXT,__text  -[INPerson _initWithUserInput:personHandle:nameComponents:displayName:image:contactIdentifier:customIdentifier:relationship:aliases:suggestionType:isMe:alternatives:sourceAppBundleIdentifier:phonemeData:isContactSuggestion:]
+0x18cf528a4  __TEXT,__text  +[INPerson toNilScoredPersons:]
+0x18cf52a1c  __TEXT,__text  -[INImageServiceRegistry init]
+0x18cf52ab4  __TEXT,__text  ___35+[INImage registerImageLoadersOnce]_block_invoke
+0x18cf52b80  __TEXT,__text  ___40+[INImageServiceRegistry sharedInstance]_block_invoke
+0x18cf52bb0  __TEXT,__text  -[INAppInfo supportedIntentsGroupedByExtensionPoints]
+0x18cf52bb8  __TEXT,__text  -[_INDataImage _copyWithSubclass:]
+0x18cf52c70  __TEXT,__text  -[_INDataImage _setImageData:]
+0x18cf52d00  __TEXT,__text  -[_INDataImage _identifier]
+0x18cf52d40  __TEXT,__text  -[_INDataImage _sha256HashUUID]
+0x18cf52e3c  __TEXT,__text  -[INPersonHandle isEqual:]
+0x18cf52f40  __TEXT,__text  ___INImageProxyInjectionUtilitiesInjectProxiesIntoObjectWithContinuationHandler_block_invoke.15
+0x18cf53218  __TEXT,__text  ___94+[INRemoteImageProxy requestProxyByStoringImage:qualityOfService:scaled:storeType:completion:]_block_invoke.18
+0x18cf532ac  __TEXT,__text  ___INImageProxyInjectionUtilitiesInjectProxiesIntoObjectWithContinuationHandler_block_invoke_2.22
+0x18cf53394  __TEXT,__text  ___INImageProxyInjectionUtilitiesInjectProxiesIntoObjectWithContinuationHandler_block_invoke_2
+0x18cf536b0  __TEXT,__text  +[INRemoteImageProxy requestProxyByStoringImage:qualityOfService:scaled:storeType:completion:]
+0x18cf538c8  __TEXT,__text  ___INImageProxyInjectionUtilitiesInjectProxiesIntoObjectWithContinuationHandler_block_invoke.13
+0x18cf53a14  __TEXT,__text  -[INImage _setBundleIdentifier:]
+0x18cf53a18  __TEXT,__text  ___Block_byref_object_dispose_
+0x18cf53a20  __TEXT,__text  ___79-[INImageServiceConnection storeImage:scaled:qualityOfService:storeType:error:]_block_invoke
+0x18cf53af0  __TEXT,__text  -[_INDataImage _isEligibleForProxying]
+0x18cf53af8  __TEXT,__text  std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, INSystemApp, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::pair<std::__1::basic_string<char, std::__1::char_tra
+0x18cf53d6c  __TEXT,__text  -[INSystemAppMapper init]
+0x18cf55518  __TEXT,__text  std::__1::pair<std::__1::__tree_end_node<std::__1::__tree_node_base<void*>*>*, std::__1::__tree_node_base<void*>*&> std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, INSystemApp>, std::__1::__map_value_compare<std::__1::bas
+0x18cf555d4  __TEXT,__text  std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__init_internal_buffer[abi:fqe220106](unsigned long)
+0x18cf55664  __TEXT,__text  -[INAppResolver linkActionProvider]
+0x18cf5566c  __TEXT,__text  -[INLinkActionProvider metadataProvider]
+0x18cf55768  __TEXT,__text  +[_INVocabularyStoreManager _customVocabularyDirectory]
+0x18cf557f8  __TEXT,__text  +[_INVocabulary supportedVocabularyStringTypes]
+0x18cf55840  __TEXT,__text  ___INAppResolverLogInitIfNeeded_block_invoke
+0x18cf55878  __TEXT,__text  +[INSystemAppGrouping groupingForKey:iOS:macOS:watchOS:tvOS:]
+0x18cf55974  __TEXT,__text  -[INSystemAppGrouping setKey:]
+0x18cf55980  __TEXT,__text  -[INSystemAppGrouping setIOS:]
+0x18cf5598c  __TEXT,__text  -[INSystemAppGrouping setMacOS:]
+0x18cf55998  __TEXT,__text  -[INSystemAppGrouping setWatchOS:]
+0x18cf559a4  __TEXT,__text  -[INSystemAppGrouping setTvOS:]
+0x18cf559b0  __TEXT,__text  +[INSystemAppGrouping groupingForKey:iOS:macOS:watchOS:]
+0x18cf559d4  __TEXT,__text  -[INSystemAppGrouping key]
+0x18cf559dc  __TEXT,__text  -[INLinkActionProvider cachedActions]
+0x18cf55a88  __TEXT,__text  ___37-[INLinkActionProvider cachedActions]_block_invoke
+0x18cf55a94  __TEXT,__text  -[INLinkActionProvider cachedActionIdentifiersForBundleIdentifier:]
+0x18cf55b88  __TEXT,__text  ___67-[INLinkActionProvider cachedActionIdentifiersForBundleIdentifier:]_block_invoke
+0x18cf55b94  __TEXT,__text  -[INLinkActionProvider supportedActionIdentifiersForBundleIdentifier:]
+0x18cf55d20  __TEXT,__text  ___getLNMetadataProviderClass_block_invoke
+0x18cf563fc  __TEXT,__text  __INTokenLengthFromScopeData
+0x18cf56464  __TEXT,__text  __INTokenField
+0x18cf568d8  __TEXT,__text  +[_INVocabularyStoreManager _iterateVocabularyWithSummary:optionalBlock:]
+0x18cf56b4c  __TEXT,__text  -[INFile _isMarkedForDeletionOnDeallocation]
+0x18cf56b9c  __TEXT,__text  -[INIntent isGenericIntent]
+0x18cf56be8  __TEXT,__text  -[INIntent _categoryVerb]
+0x18cf56cb4  __TEXT,__text  -[_INPBIntentMetadata setCategoryVerb:]
+0x18cf56cf4  __TEXT,__text  -[_INPBIntentMetadata clearRequiredEntitlements]
+0x18cf56d04  __TEXT,__text  __INGetLongLongProperty
+0x18cf56d3c  __TEXT,__text  -[INIntent typeName]
+0x18cf56e90  __TEXT,__text  __INSetLongLongProperty
+0x18cf57078  __TEXT,__text  +[INPreferences sharedPreferences]
+0x18cf570c0  __TEXT,__text  -[INPreferences _setCachedSiriLanguageCode:]
+0x18cf5786c  __TEXT,__text  _INApplicationBundleIdentifierFromBundleIdentifier
+0x18cf57cc4  __TEXT,__text  -[_INPBIntentMetadata systemExtensionBundleId]
+0x18cf57cd8  __TEXT,__text  -[INIntent isEqual:]
+0x18cf57d7c  __TEXT,__text  -[INObject description]
+0x18cf57d84  __TEXT,__text  -[INObject descriptionAtIndent:]
+0x18cf57e34  __TEXT,__text  -[INInteraction donateInteractionWithCompletion:]
+0x18cf57f04  __TEXT,__text  ___49-[INInteraction donateInteractionWithCompletion:]_block_invoke
+0x18cf58aa4  __TEXT,__text  -[INIntent _validParameterCombinations]
+0x18cf58aac  __TEXT,__text  -[INIntent valueForUndefinedKey:]
+0x18cf58c78  __TEXT,__text  -[INIntent valueForProperty:]
+0x18cf58c7c  __TEXT,__text  -[_INPBIntentResponsePayloadSuccess setResponseTypeName:]
+0x18cf58cbc  __TEXT,__text  -[INIntentResponse _commonInit]
+0x18cf58e40  __TEXT,__text  +[INSchema _defaultSchemaForBundle:contentOptions:]
+0x18cf58f58  __TEXT,__text  +[INSchema _defaultSchemaForBundle:]
+0x18cf58f60  __TEXT,__text  +[INSchema _applicationBundleIdentifierFromBundleIdentifier:]
+0x18cf591b8  __TEXT,__text  -[INIntentResponse _type]
+0x18cf59264  __TEXT,__text  -[_INPBIntentResponse payloadSuccess]
+0x18cf59278  __TEXT,__text  -[_INPBIntentResponsePayloadSuccess responseTypeName]
+0x18cf5928c  __TEXT,__text  -[INIntentResponse _payloadResponseTypeName]
+0x18cf592d0  __TEXT,__text  -[INIntentResponse _inCodable]
+0x18cf59340  __TEXT,__text  -[INIntentResponse _responseMessagePBRepresentation]
+0x18cf59434  __TEXT,__text  -[INIntentResponse _intentResponseCode]
+0x18cf594c4  __TEXT,__text  -[INIntentResponse _intentResponseCodableCode]
+0x18cf59548  __TEXT,__text  -[INIntentResponseCodableDescription intentResponseCodeWithCode:]
+0x18cf5970c  __TEXT,__text  -[INIntent parametersByName]
+0x18cf59928  __TEXT,__text  -[INIntentResponse _intentHandlingStatus]
+0x18cf59960  __TEXT,__text  -[INIntent _typedBackingStore]
+0x18cf599b8  __TEXT,__text  -[INCodable _dictionaryRepresentationWithNullValues:]
+0x18cf59d48  __TEXT,__text  -[INIntent _intentInstanceDescription]
+0x18cf5a02c  __TEXT,__text  -[INIntentResponse _code]
+0x18cf5a164  __TEXT,__text  -[_INPBIntentResponsePayloadSuccess responseMessageData]
+0x18cf5a178  __TEXT,__text  -[_INPBIntentResponse payloadFailure]
+0x18cf5a18c  __TEXT,__text  +[INIntentResponse _codeFromType:errorCode:appLaunchRequested:]
+0x18cf5a1dc  __TEXT,__text  -[INIntentResponse setValue:forProperty:]
+0x18cf5a1f8  __TEXT,__text  -[INIntentResponse setValue:forUndefinedKey:]
+0x18cf5a35c  __TEXT,__text  -[INIntentDescription handleSelector]
+0x18cf5a380  __TEXT,__text  -[INIntentResponse _setPayloadResponseTypeName:]
+0x18cf5a3d4  __TEXT,__text  -[INIntentResponse setUserActivity:]
+0x18cf5a4e0  __TEXT,__text  -[INIntentResponse _setResponseMessagePBRepresentation:]
+0x18cf5a544  __TEXT,__text  -[INCodable data]
+0x18cf5a650  __TEXT,__text  -[INIntentResponse _setPayloadResponseMessageData:]
+0x18cf5a6a4  __TEXT,__text  -[_INPBIntentResponsePayloadSuccess setResponseMessageData:]
+0x18cf5a6e4  __TEXT,__text  -[_INPBIntentResponse hasType]
+0x18cf5a6fc  __TEXT,__text  -[_INPBIntentResponse hasPayloadFailure]
+0x18cf5a718  __TEXT,__text  -[_INPBIntentResponsePayloadFailure hasErrorCode]
+0x18cf5a730  __TEXT,__text  -[_INPBIntentResponsePayloadFailure hasAppLaunchRequested]
+0x18cf5a748  __TEXT,__text  -[INIntent _validParameterCombinationsWithSchema:]
+0x18cf5a8f8  __TEXT,__text  -[INIntent _parameterCombinations]
+0x18cf5a998  __TEXT,__text  -[INCodable _int32ValueForAttribute:]
+0x18cf5a9d0  __TEXT,__text  +[INIntentResponse _errorCodeFromCode:]
+0x18cf5a9d8  __TEXT,__text  +[INIntentResponse _typeFromCode:]
+0x18cf5a9fc  __TEXT,__text  +[INIntentResponse _appLaunchRequestedFromCode:]
+0x18cf5aa08  __TEXT,__text  -[INIntentResponse copyWithZone:]
+0x18cf5aa90  __TEXT,__text  -[_INPBDouble values]
+0x18cf5aaa4  __TEXT,__text  -[INIntentResponse _setCode:]
+0x18cf5ac14  __TEXT,__text  -[_INPBIntentResponse setType:]
+0x18cf5ac58  __TEXT,__text  -[_INPBIntentResponse setPayloadSuccess:]
+0x18cf5ac6c  __TEXT,__text  -[_INPBIntentResponsePayloadSuccess copyWithZone:]
+0x18cf5ad28  __TEXT,__text  -[_INPBIntentResponse hasPayloadSuccess]
+0x18cf5ad44  __TEXT,__text  -[_INPBIntentResponse userActivity]
+0x18cf5ad58  __TEXT,__text  -[_INPBIntentResponse setPayloadFailure:]
+0x18cf5ad6c  __TEXT,__text  -[_INPBIntentResponsePayloadSuccess hasShouldOpenContainingApplication]
+0x18cf5ad84  __TEXT,__text  -[_INPBIntentResponse hasRequiresAuthentication]
+0x18cf5ad9c  __TEXT,__text  -[_INPBIntentResponse hasRequiresProtectedData]
+0x18cf5adb4  __TEXT,__text  -[_INPBIntentResponse type]
+0x18cf5adc8  __TEXT,__text  -[INIntentResponse backingStore]
+0x18cf5ae2c  __TEXT,__text  -[INAppIntentDescriptor initWithIntentIdentifier:localizedName:bundleIdentifier:extensionBundleIdentifier:counterpartIdentifiers:teamIdentifier:supportedIntents:supportedEntities:bundleURL:documentTypes:]
+0x18cf5af34  __TEXT,__text  -[INAppResolver cachedResults]
+0x18cf5af3c  __TEXT,__text  -[INAppIntentDescriptor hash]
+0x18cf5afc8  __TEXT,__text  -[INAppDescriptor hash]
+0x18cf5b0d0  __TEXT,__text  -[INAppDescriptor counterpartIdentifiers]
+0x18cf5b0d8  __TEXT,__text  +[INAppResolver sharedResolver]
+0x18cf5b120  __TEXT,__text  -[INAppResolver cacheHasResultForDescriptor:]
+0x18cf5b1d8  __TEXT,__text  -[INAppDescriptor teamIdentifier]
+0x18cf5b1e0  __TEXT,__text  -[INAppDescriptor supportedIntents]
+0x18cf5b1e8  __TEXT,__text  -[INAppDescriptor documentTypes]
+0x18cf5b1f0  __TEXT,__text  -[INAppIntentDescriptor supportedEntities]
+0x18cf5b204  __TEXT,__text  -[INAppIntentDescriptor initWithIntentIdentifier:applicationRecord:supportedAppIntents:supportedEntities:]
+0x18cf5b330  __TEXT,__text  -[LSApplicationRecord(Intents) in_counterpartIdentifiers]
+0x18cf5b3ac  __TEXT,__text  -[_INDataImage initWithImageData:]
+0x18cf5b43c  __TEXT,__text  -[INRemoteImageProxy .cxx_destruct]
+0x18cf5b484  __TEXT,__text  -[_INDataImage _imageData]
+0x18cf5b488  __TEXT,__text  -[_INDataImage encodeWithCoder:]
+0x18cf5b508  __TEXT,__text  -[INImageFilePersistence .cxx_destruct]
+0x18cf5b540  __TEXT,__text  -[INHelperServiceAccessSpecifier .cxx_destruct]
+0x18cf5b578  __TEXT,__text  -[INPortableImageLoader .cxx_destruct]
+0x18cf5b584  __TEXT,__text  -[_INDataImage initWithCoder:]
+0x18cf5b6cc  __TEXT,__text  -[INImage initWithCoder:]
+0x18cf5ba58  __TEXT,__text  -[INRemoteImageProxy _identifier]
+0x18cf5ba98  __TEXT,__text  -[INRemoteImageProxy _URLRepresentation]
+0x18cf5bbc8  __TEXT,__text  -[INRemoteImageProxy _proxyIdentifier]
+0x18cf5bbdc  __TEXT,__text  -[INRemoteImageProxy _storageServiceIdentifier]
+0x18cf5bbf0  __TEXT,__text  -[INRemoteImageProxy _initWithURLRepresentation:]
+0x18cf5be34  __TEXT,__text  ___68-[INImageServiceConnection loadDataImageFromImage:scaledSize:error:]_block_invoke_2
+0x18cf5beb0  __TEXT,__text  +[INHelperServiceAccessSpecifier accessSpecifierUnrestricted]
+0x18cf5bedc  __TEXT,__text  -[INHelperServiceAccessSpecifier initWithAccessLevel:associatedAppBundleIdentifier:auditToken:]
+0x18cf5bf80  __TEXT,__text  -[INPortableImageLoader loadImageDataFromImage:accessSpecifier:completion:]
+0x18cf5c1f4  __TEXT,__text  -[INLinkActionProvider isCachingLinkMetadata]
+0x18cf5c1fc  __TEXT,__text  -[INLinkActionProvider cacheActionIdentifiers:forBundleIdentifier:]
+0x18cf5c2f4  __TEXT,__text  ___67-[INLinkActionProvider cacheActionIdentifiers:forBundleIdentifier:]_block_invoke
+0x18cf5c300  __TEXT,__text  -[INLinkActionProvider supportedEntityIdentifiersForBundleIdentifier:]
+0x18cf5c48c  __TEXT,__text  -[INLinkActionProvider cachedEntities]
+0x18cf5c538  __TEXT,__text  ___38-[INLinkActionProvider cachedEntities]_block_invoke
+0x18cf5c544  __TEXT,__text  -[INLinkActionProvider cachedEntityIdentifiersForBundleIdentifier:]
+0x18cf5c638  __TEXT,__text  ___67-[INLinkActionProvider cachedEntityIdentifiersForBundleIdentifier:]_block_invoke
+0x18cf5c644  __TEXT,__text  -[INLinkActionProvider cacheEntityIdentifiers:forBundleIdentifier:]
+0x18cf5c73c  __TEXT,__text  ___67-[INLinkActionProvider cacheEntityIdentifiers:forBundleIdentifier:]_block_invoke
+0x18cf5c748  __TEXT,__text  -[INAppResolver _resolvedAppIntentMatchingDescriptor:availableActions:availableEntities:]
+0x18cf5d494  __TEXT,__text  _INActionsAndApplicationRecordMatchesRequirementsFromDescriptor
+0x18cf5d57c  __TEXT,__text  _INApplicationRecordMatchesRequirementsFromDescriptor
+0x18cf5d8c0  __TEXT,__text  +[INSystemAppMapper supportedIntentsOverridesForBundleIdentifier:]
+0x18cf5db4c  __TEXT,__text  +[INAppResolver supportedIntentsOverridesForThirdPartyBundleIdentifier:]
+0x18cf5db58  __TEXT,__text  -[INSystemAppMatch .cxx_destruct]
+0x18cf5dba8  __TEXT,__text  -[INAppResolver cacheResult:forDescriptor:]
+0x18cf5dc60  __TEXT,__text  -[INAppDescriptor copyWithZone:]
+0x18cf5dc64  __TEXT,__text  -[INPortableImageLoader helper]
+0x18cf5dd58  __TEXT,__text  -[INRemoteImageProxy(INPortableImageLoader) _loadImageDataAndSizeWithHelper:accessSpecifier:completion:]
+0x18cf5de5c  __TEXT,__text  -[INRemoteImageProxy unproxyImageFromService:reply:]
+0x18cf5e138  __TEXT,__text  -[INRemoteImageProxy isValid]
+0x18cf5e170  __TEXT,__text  -[INImageFilePersistence retrieveImageWithIdentifier:completion:]
+0x18cf5e630  __TEXT,__text  -[INImageFilePersistence _filePathForImageWithFileName:]
+0x18cf5e9d4  __TEXT,__text  ___52-[INRemoteImageProxy unproxyImageFromService:reply:]_block_invoke
+0x18cf5ec40  __TEXT,__text  -[_INDataImage isEqual:]
+0x18cf5ecf0  __TEXT,__text  -[INImage isEqual:]
+0x18cf5ede4  __TEXT,__text  ___104-[INRemoteImageProxy(INPortableImageLoader) _loadImageDataAndSizeWithHelper:accessSpecifier:completion:]_block_invoke
+0x18cf5ee1c  __TEXT,__text  -[_INDataImage(INPortableImageLoader) _loadImageDataAndSizeWithHelper:accessSpecifier:completion:]
+0x18cf5efb0  __TEXT,__text  ___98-[_INDataImage(INPortableImageLoader) _loadImageDataAndSizeWithHelper:accessSpecifier:completion:]_block_invoke
+0x18cf5f038  __TEXT,__text  ___75-[INPortableImageLoader loadImageDataFromImage:accessSpecifier:completion:]_block_invoke
+0x18cf5f0f8  __TEXT,__text  -[INImage _imageData]
+0x18cf5f100  __TEXT,__text  +[INImageServiceConnection sharedConnection]
+0x18cf5f148  __TEXT,__text  -[INImageServiceConnection loadDataImageFromImage:scaledSize:error:]
+0x18cf5f424  __TEXT,__text  -[INPortableImageLoader encodeWithCoder:]
+0x18cf5f428  __TEXT,__text  -[INRemoteImageProxy initWithCoder:]
+0x18cf5f4fc  __TEXT,__text  -[INPortableImageLoader initWithCoder:]
+0x18cf5f534  __TEXT,__text  +[INHelperServiceAccessSpecifier accessSpecifierAppropriateForXPCConnection:]
+0x18cf5f8f8  __TEXT,__text  -[INImage _uri]
+0x18cf5f900  __TEXT,__text  -[INRemoteImageProxy _setProxyIdentifier:]
+0x18cf5f90c  __TEXT,__text  -[INRemoteImageProxy _setStorageServiceIdentifier:]
+0x18cf5f918  __TEXT,__text  -[INRemoteImageProxy encodeWithCoder:]
+0x18cf5f9b8  __TEXT,__text  __INImageFilePersistenceDirectoryPathWithStoreTypeCreateIfNeeded
+0x18cf5fafc  __TEXT,__text  -[INImageServiceConnection synchronousServiceProxyWithErrorHandler:]
+0x18cf5fbdc  __TEXT,__text  -[INImageFilePersistence storeImage:scaled:qualityOfService:storeType:error:]
+0x18cf60654  __TEXT,__text  -[INImageFilePersistence canStoreImage:]
+0x18cf606e8  __TEXT,__text  -[INImageFilePersistence _supportedClasses]
+0x18cf606f0  __TEXT,__text  -[INImageServiceConnection canStoreImage:]
+0x18cf606fc  __TEXT,__text  -[INImageServiceConnection storeImage:scaled:qualityOfService:storeType:error:]
+0x18cf60d90  __TEXT,__text  -[INImageServiceConnection _localStorageCache]
+0x18cf60dd8  __TEXT,__text  -[INRemoteImageProxy isEqual:]
+0x18cf60edc  __TEXT,__text  -[INWatchdogTimer isCanceled]
+0x18cf60f88  __TEXT,__text  +[INRemoteImageProxy requestProxyByStoringImage:qualityOfService:scaled:storeType:error:]
+0x18cf614fc  __TEXT,__text  -[INImageServiceRegistry(INImageStorageServiceRegistry) imageStorageServices]
+0x18cf615e0  __TEXT,__text  ___29-[INWatchdogTimer isCanceled]_block_invoke
+0x18cf61614  __TEXT,__text  ___77-[INImageServiceRegistry(INImageStorageServiceRegistry) imageStorageServices]_block_invoke
+0x18cf61660  __TEXT,__text  ___INImageProxyInjectionUtilitiesInjectProxiesIntoObjectWithContinuationHandler_block_invoke.21
+0x18cf61768  __TEXT,__text  -[INWatchdogTimer .cxx_destruct]
+0x18cf617a0  __TEXT,__text  -[INWatchdogTimer _cancelIfNotAlreadyCanceled]
+0x18cf617d8  __TEXT,__text  -[INWatchdogTimer _isCanceled]
+0x18cf617fc  __TEXT,__text  -[INWatchdogTimer _cancel]
+0x18cf6183c  __TEXT,__text  -[INWatchdogTimer initWithTimeoutInterval:onQueue:timeoutHandler:]
+0x18cf619a0  __TEXT,__text  -[INWatchdogTimer _start]
+0x18cf61a30  __TEXT,__text  -[INWatchdogTimer start]
+0x18cf61aa4  __TEXT,__text  -[INWatchdogTimer cancelIfNotAlreadyCanceled]
+0x18cf61b50  __TEXT,__text  -[INWatchdogTimer dealloc]
+0x18cf61ba8  __TEXT,__text  ___45-[INWatchdogTimer cancelIfNotAlreadyCanceled]_block_invoke
+0x18cf61bdc  __TEXT,__text  ___77-[INImageServiceRegistry(INImageStorageServiceRegistry) imageStorageServices]_block_invoke_2
+0x18cf61c34  __TEXT,__text  -[INImage _name]
+0x18cf61c3c  __TEXT,__text  +[INRemoteImageProxy supportsSecureCoding]
+0x18cf61d00  __TEXT,__text  ___INIssueSandboxExtensionToProcess_block_invoke
+0x18cf61e18  __TEXT,__text  -[INSendMessageIntent _setMetadata:]
+0x18cf61e6c  __TEXT,__text  -[INSendMessageIntent _intentCategory]
+0x18cf61e74  __TEXT,__text  -[INSendMessageIntent _categoryVerb]
+0x18cf61e80  __TEXT,__text  -[_INPBIntentResponse requiresAuthentication]
+0x18cf61e94  __TEXT,__text  -[INIntentResponse valueForUndefinedKey:]
+0x18cf61fd4  __TEXT,__text  -[INIntentResponse _requiresAuthentication]
+0x18cf61fdc  __TEXT,__text  -[INInteraction _setDonatedBySiri:]
+0x18cf62038  __TEXT,__text  -[INIntentResponse valueForProperty:]
+0x18cf6203c  __TEXT,__text  +[INCodableEnumAttribute supportsSecureCoding]
+0x18cf62044  __TEXT,__text  -[INCodableEnumAttribute encodeWithCoder:]
+0x18cf620f4  __TEXT,__text  +[INCodableEnumAttributeMetadata supportsSecureCoding]
+0x18cf620fc  __TEXT,__text  -[INCodableEnumAttributeMetadata encodeWithCoder:]
+0x18cf6217c  __TEXT,__text  -[INCodableEnumAttribute codableEnum]
+0x18cf62264  __TEXT,__text  +[INCodableEnum supportsSecureCoding]
+0x18cf6226c  __TEXT,__text  -[INCodableEnum encodeWithCoder:]
+0x18cf623b8  __TEXT,__text  -[INCodableEnum type]
+0x18cf623c0  __TEXT,__text  -[INCodableEnum displayName]
+0x18cf623c8  __TEXT,__text  -[INCodableEnum displayNameID]
+0x18cf623d0  __TEXT,__text  -[INCodableEnum enumNamespace]
+0x18cf623d8  __TEXT,__text  -[INCodableEnum values]
+0x18cf623e0  __TEXT,__text  +[INCodableEnumValue supportsSecureCoding]
+0x18cf623e8  __TEXT,__text  -[INCodableEnumValue encodeWithCoder:]
+0x18cf6250c  __TEXT,__text  -[INCodableEnumValue name]
+0x18cf62514  __TEXT,__text  -[INCodableEnumValue displayName]
+0x18cf6251c  __TEXT,__text  -[INCodableEnumValue displayNameLocID]
+0x18cf62524  __TEXT,__text  -[INCodableEnumValue synonyms]
+0x18cf6252c  __TEXT,__text  -[INCodableEnum _localizationTable]
+0x18cf62534  __TEXT,__text  +[NSKeyedUnarchiver(Intents) _in_safeUnarchivedObjectOfClasses:fromData:error:]
+0x18cf625d4  __TEXT,__text  +[INCodable supportsSecureCoding]
+0x18cf625dc  __TEXT,__text  +[INIntent supportsSecureCoding]
+0x18cf625e4  __TEXT,__text  -[INIntent setIdentifier:]
+0x18cf625ec  __TEXT,__text  -[INIntent initWithCoder:]
+0x18cf629a4  __TEXT,__text  -[INCodable initWithCoder:]
+0x18cf62c90  __TEXT,__text  -[INIntentCodableDescription initWithCoder:]
+0x18cf6304c  __TEXT,__text  -[_INPBPair setKey:]
+0x18cf6308c  __TEXT,__text  -[_INPBImageValue setRenderingMode:]
+0x18cf630d0  __TEXT,__text  -[_INPBImageValue setType:]
+0x18cf63114  __TEXT,__text  -[_INPBImageValue setUri:]
+0x18cf63154  __TEXT,__text  -[_INPBPair addPairImageValue:]
+0x18cf631d0  __TEXT,__text  -[_INPBSendMessageIntent setIntentMetadata:]
+0x18cf63b80  __TEXT,__text  -[INSendMessageIntent recipients]
+0x18cf63bd8  __TEXT,__text  -[_INPBImageValue uri]
+0x18cf63bec  __TEXT,__text  -[_INPBImageValue type]
+0x18cf63c00  __TEXT,__text  -[_INPBImageValue width]
+0x18cf63c14  __TEXT,__text  -[_INPBImageValue height]
+0x18cf63c28  __TEXT,__text  -[_INPBImageValue renderingMode]
+0x18cf63c3c  __TEXT,__text  -[INSendMessageIntent conversationIdentifier]
+0x18cf63c90  __TEXT,__text  -[INSendMessageIntent speakableGroupName]
+0x18cf63ce8  __TEXT,__text  +[INCodableBooleanAttributeMetadata supportsSecureCoding]
+0x18cf63cf0  __TEXT,__text  -[INCodableBooleanAttributeMetadata initWithCoder:]
+0x18cf63ed4  __TEXT,__text  -[INCodableBooleanAttributeMetadata setDefaultValue:]
+0x18cf63ee0  __TEXT,__text  -[INCodableAttribute setDisplayNameID:]
+0x18cf63ee8  __TEXT,__text  -[INCodableBooleanAttributeMetadata setTrueDisplayName:]
+0x18cf63ef4  __TEXT,__text  +[INCodableObjectAttribute supportsSecureCoding]
+0x18cf63efc  __TEXT,__text  +[INCodableAttributeRelationship supportsSecureCoding]
+0x18cf63f04  __TEXT,__text  -[INSchema intentResponseCodableDescriptionWithIntentResponseClassName:]
+0x18cf64078  __TEXT,__text  -[INIntentResponseCodableDescription attributes]
+0x18cf6416c  __TEXT,__text  +[INTypeCodableDescription supportsSecureCoding]
+0x18cf64174  __TEXT,__text  -[INCodableStringAttributeMetadata setCapitalization:]
+0x18cf64188  __TEXT,__text  -[INCodableAttribute setSupportsDynamicEnumeration:]
+0x18cf64190  __TEXT,__text  -[INCodableAttribute setEntityKeypath:]
+0x18cf64198  __TEXT,__text  +[INCodableStringAttributeMetadata supportsSecureCoding]
+0x18cf641a0  __TEXT,__text  -[INCodableScalarAttribute initWithCoder:]
+0x18cf64248  __TEXT,__text  -[INCodableStringAttributeMetadata initWithCoder:]
+0x18cf643e4  __TEXT,__text  -[INCodableStringAttributeMetadata setMultiline:]
+0x18cf643f8  __TEXT,__text  -[INCodableStringAttributeMetadata setDisableAutocorrect:]
+0x18cf6440c  __TEXT,__text  -[INCodableStringAttributeMetadata setDisableSmartDashes:]
+0x18cf64420  __TEXT,__text  -[INCodableStringAttributeMetadata setDisableSmartQuotes:]
+0x18cf64434  __TEXT,__text  -[INCodableStringAttributeMetadata setDefaultValue:]
+0x18cf64440  __TEXT,__text  -[INCodableStringAttributeMetadata setDefaultValueID:]
+0x18cf6444c  __TEXT,__text  +[INCodableAttributePromptDialog supportsSecureCoding]
+0x18cf64454  __TEXT,__text  -[INCodableAttributePromptDialog initWithCoder:]
+0x18cf644d4  __TEXT,__text  +[INCodableCustomObjectAttribute supportsSecureCoding]
+0x18cf644dc  __TEXT,__text  -[INCodableCustomObjectAttribute initWithCoder:]
+0x18cf645f8  __TEXT,__text  -[INTypeCodableDescription initWithCoder:]
+0x18cf64708  __TEXT,__text  -[INCodableLocalizationTable initWithCoder:]
+0x18cf647c8  __TEXT,__text  -[INCodableCustomObjectAttribute isEqual:]
+0x18cf64930  __TEXT,__text  -[INCodableAttributeRelationship _codableDescription]
+0x18cf64970  __TEXT,__text  +[INCodableDescription(__INCodableAttributeRelationshipParentName) __INCodableAttributeRelationshipParentNameKey]
+0x18cf6497c  __TEXT,__text  -[INCodableAttributeRelationship(__INCodableAttributeRelationshipINIntentParameterRelationshipPredicateName) __INCodableDescriptionPredicateNameKey]
+0x18cf649c0  __TEXT,__text  -[INCodableObjectAttribute objectClass]
+0x18cf64a04  __TEXT,__text  -[_INCodableAttributeRelationshipValueTransformer initWithCodableAttribute:]
+0x18cf64a74  __TEXT,__text  -[INCodableAttributeRelationship(__INCodableAttributeRelationshipINIntentParameterRelationshipPredicateValues) __INCodableDescriptionPredicateValuesKey]
+0x18cf64ab8  __TEXT,__text  +[INCodableDescription(__INCodableAttributeRelationshipPredicateValues) __INCodableAttributeRelationshipPredicateValuesKey]
+0x18cf64ac4  __TEXT,__text  -[INCodableAttributeRelationship(__INCodableAttributeRelationshipINIntentParameterRelationshipPredicateValue) __INCodableDescriptionPredicateValueKey]
+0x18cf64b08  __TEXT,__text  +[INCodableDescription(__INCodableAttributeRelationshipPredicateValue) __INCodableAttributeRelationshipPredicateValueKey]
+0x18cf64b14  __TEXT,__text  -[_INCodableObjectAttributeRelationshipNumberValueTransformer transformedValue:]
+0x18cf64b98  __TEXT,__text  -[INCodableAttributeRelationship codableAttribute]
+0x18cf64bb8  __TEXT,__text  -[INCodableAttributeRelationship(__INCodableAttributeRelationshipINIntentParameterRelationshipParentName) __INCodableDescriptionParentNameKey]
+0x18cf64bfc  __TEXT,__text  -[INCodableObjectAttribute _relationshipValueTransformerClass]
+0x18cf650d0  __TEXT,__text  -[INIntentLongSlotValueTransformer reverseTransformedValue:]
+0x18cf65138  __TEXT,__text  -[_INPBLong readFrom:]
+0x18cf65420  __TEXT,__text  -[_INPBLong values]
+0x18cf65434  __TEXT,__text  -[_INPBLongValue value]
+0x18cf65448  __TEXT,__text  +[INCodableNumberAttributeMetadata supportsSecureCoding]
+0x18cf65450  __TEXT,__text  -[INCodableNumberAttributeMetadata encodeWithCoder:]
+0x18cf65530  __TEXT,__text  +[INCodableLocalizationTable supportsSecureCoding]
+0x18cf65538  __TEXT,__text  -[INCodableLocalizationTable encodeWithCoder:]
+0x18cf65598  __TEXT,__text  -[INCodableStringAttributeMetadata encodeWithCoder:]
+0x18cf656d8  __TEXT,__text  -[INCodable _setData:error:]
+0x18cf65768  __TEXT,__text  -[INCodable _valueForAttribute:]
+0x18cf657dc  __TEXT,__text  -[INCodable _dataWithError:]
+0x18cf65844  __TEXT,__text  -[INCodable _valueForAttribute:ofClass:]
+0x18cf65948  __TEXT,__text  +[INIntentBooleanSlotValueTransformer reverseTransformedValueClass]
+0x18cf65954  __TEXT,__text  +[INIntentBooleanSlotValueTransformer transformedValueClass]
+```
+First 1,000 of 28,014.
+

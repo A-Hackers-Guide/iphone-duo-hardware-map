@@ -1,0 +1,7 @@
+*.im4p
+*.ipsw
+*.raw
+*.decompressed
+__pycache__/
+.DS_Store
+.claude/

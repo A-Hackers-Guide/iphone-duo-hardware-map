@@ -1,0 +1,53 @@
+# `/System/Library/PreferenceBundles/MobileSafariSettings.bundle/WebBrowsing.plist`
+
+From the small APFS image 141-28395-106.dmg. 1,219 bytes.
+
+- `items`:
+  -
+    - `cell`: `PSGroupCell`
+  -
+    - `cell`: `PSLinkListCell`
+    - `detail`: `SafariAutoFillSettingsController`
+    - `id`: `AUTO_FILL`
+    - `label`: `AutoFill`
+    - `safariAvailable`: `isAutoFillAvailable:`
+    - `safariRestricted`: `isAutoFillRestricted:`
+  -
+    - `cell`: `PSGroupCell`
+    - `footerCellClass`: `PSFooterHyperlinkView`
+    - `id`: `PRIVACY`
+    - `label`: `Privacy`
+  -
+    - `cell`: `PSSwitchCell`
+    - `get`: `trackerProtectionEnabled`
+    - `id`: `TRACKER_PROTECTION`
+    - `label`: `Prevent Cross-Site Tracking`
+    - `safariRestricted`: `isTrackerProtectionRestricted:`
+    - `set`: `safariToggleTrackerProtection:forSpecifier:`
+  -
+    - `cell`: `PSSwitchCell`
+    - `containerBundleID`: `com.apple.mobilesafari`
+    - `defaults`: `com.apple.mobilesafari`
+    - `get`: `isSafariFraudWarningEnabled:`
+    - `id`: `WARN_ABOUT_FRAUDULENT_WEBSITES`
+    - `key`: `WarnAboutFraudulentWebsites`
+    - `label`: `Fraudulent Website Warning`
+    - `safariRestricted`: `isSafariFraudWarningRestricted:`
+    - `set`: `safariFraudWarningsToggled:forSpecifier:`
+  -
+    - `cell`: `PSGroupCell`
+    - `id`: `HISTORY_AND_WEBSITE_DATA`
+  -
+    - `buttonAction`: `showClearHistoryAndDataConfirmation:`
+    - `cell`: `PSButtonCell`
+    - `id`: `CLEAR_HISTORY_AND_DATA`
+    - `label`: `Clear Data Button Title`
+    - `safariRestricted`: `isClearHistoryRestricted:`
+  -
+    - `cell`: `PSGroupCell`
+  -
+    - `cell`: `PSLinkCell`
+    - `detail`: `SafariDeveloperSettingsController`
+    - `id`: `ADVANCED`
+    - `label`: `Advanced Button Title`
+    - `searchPlist`: `Developer`

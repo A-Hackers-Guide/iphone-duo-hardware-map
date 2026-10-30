@@ -1,0 +1,45 @@
+# `PUOneUpPresentationHelperDelegate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/CameraUI.framework/CameraUI`](../userland/System__Library__PrivateFrameworks__CameraUI.framework__CameraUI.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 35 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[PUOneUpPresentationHelperDelegate oneUpPresentationOrigin:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperViewController:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelper:willPresentOneUpViewController:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperSearchQueryMatchInfo:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperShouldAutoPlay:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelper:transitionTypeWithProposedTransitionType:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperStateDidChange:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperEnableFreezeLayoutOnOrientationChange:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperPreventRevealInMomentAction:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperPreventAlbumAttributionWidget:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperPreventPeopleOrnament:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelper:didPresentOneUpViewController:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperAdditionalOptions:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperWantsShowInLibraryButton:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperShouldLeaveContentOnSecondScreen:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperOriginalViewController:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperShouldDisableAutoPlayback:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperPreventHideAssetAction:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelper:presentingScrollViewForAssetReference:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelper:didDismissOneUpViewController:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperPreferredBarStyle:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperContextualVideoThumbnailIdentifier:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperViewHostingTilingView:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperShouldAllowVideoContentDuringTransitions:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperPreferredModalPresentationStyle:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelper:previewScrubberDidBecomeAvailable:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelper:willPresentOneUpPreviewViewController:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperAssetUUIDsAllowedToHighlightText:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperDisableFinalFadeoutAnimation:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperMatchedAudioIdentifiers:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperMatchedHumanActionIdentifiers:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperMatchedPersonLocalIdentifiers:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperMatchedSceneIdentifiers:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperTextsToHighlight:];
+-[PUOneUpPresentationHelperDelegate oneUpPresentationHelperViewHostingGestureRecognizers:];
+```

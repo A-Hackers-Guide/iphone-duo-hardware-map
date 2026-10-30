@@ -1,0 +1,155 @@
+# `/System/Library/PrivateFrameworks/ImagePlaygroundInternal.framework/ImagePlaygroundInternal`
+
+iOS 27.2 dyld shared cache image, version `198.2.12.600.0`. Light page: libraries and type names only. **[DSC]**
+
+## Linked libraries (138)
+
+- `/System/Library/PrivateFrameworks/VisualGeneration.framework/VisualGeneration`
+- `/System/Library/PrivateFrameworks/VisionKitCore.framework/VisionKitCore`
+- `/usr/lib/libbsm.0.dylib`
+- `/System/Library/PrivateFrameworks/Feedback.framework/Feedback`
+- `/System/Library/Frameworks/ImagePlayground.framework/ImagePlayground`
+- `/System/Library/PrivateFrameworks/InputToolKit.framework/InputToolKit`
+- `/System/Library/PrivateFrameworks/MediaAnalysis.framework/MediaAnalysis`
+- `/System/Library/PrivateFrameworks/SuggestedImage.framework/SuggestedImage`
+- `/System/Library/PrivateFrameworks/Stickers.framework/Stickers`
+- `/System/Library/PrivateFrameworks/SensitiveContentAnalysisML.framework/SensitiveContentAnalysisML`
+- `/System/Library/Frameworks/Foundation.framework/Foundation`
+- `/usr/lib/libobjc.A.dylib`
+- `/usr/lib/libc++.1.dylib`
+- `/usr/lib/libSystem.B.dylib`
+- `/System/Library/Frameworks/AVFoundation.framework/AVFoundation`
+- `/System/Library/Frameworks/Accessibility.framework/Accessibility`
+- `/System/Library/Frameworks/Accounts.framework/Accounts`
+- `/System/Library/Frameworks/AppIntents.framework/AppIntents`
+- `/System/Library/Frameworks/BackgroundTasks.framework/BackgroundTasks`
+- `/System/Library/Frameworks/Combine.framework/Combine`
+- `/System/Library/Frameworks/Contacts.framework/Contacts`
+- `/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation`
+- `/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics`
+- `/System/Library/Frameworks/CoreImage.framework/CoreImage`
+- `/System/Library/Frameworks/CoreServices.framework/CoreServices`
+- `/System/Library/Frameworks/CoreText.framework/CoreText`
+- `/System/Library/Frameworks/CoreTransferable.framework/CoreTransferable`
+- `/System/Library/Frameworks/CoreVideo.framework/CoreVideo`
+- `/System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport`
+- `/System/Library/Frameworks/ExtensionFoundation.framework/ExtensionFoundation`
+- `/System/Library/Frameworks/ExtensionKit.framework/ExtensionKit`
+- `/System/Library/Frameworks/FoundationModels.framework/FoundationModels`
+- `/System/Library/Frameworks/ImageIO.framework/ImageIO`
+- `/System/Library/Frameworks/LinkPresentation.framework/LinkPresentation`
+- `/System/Library/Frameworks/Metal.framework/Metal`
+- `/System/Library/Frameworks/NaturalLanguage.framework/NaturalLanguage`
+- `/System/Library/Frameworks/Network.framework/Network`
+- `/System/Library/Frameworks/OSLog.framework/OSLog`
+- `/System/Library/Frameworks/PencilKit.framework/PencilKit`
+- `/System/Library/Frameworks/Photos.framework/Photos`
+- `/System/Library/Frameworks/PhotosUI.framework/PhotosUI`
+- `/System/Library/Frameworks/QuartzCore.framework/QuartzCore`
+- `/System/Library/Frameworks/RealityFoundation.framework/RealityFoundation`
+- `/System/Library/Frameworks/Security.framework/Security`
+- `/System/Library/Frameworks/SwiftUI.framework/SwiftUI`
+- `/System/Library/Frameworks/Symbols.framework/Symbols`
+- `/System/Library/Frameworks/TipKit.framework/TipKit`
+- `/System/Library/Frameworks/Translation.framework/Translation`
+- `/System/Library/Frameworks/UIKit.framework/UIKit`
+- `/System/Library/Frameworks/UserNotifications.framework/UserNotifications`
+- `/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox`
+- `/System/Library/Frameworks/Vision.framework/Vision`
+- `/System/Library/Frameworks/_AppIntents_SwiftUI.framework/_AppIntents_SwiftUI`
+- `/System/Library/Frameworks/_PhotosUI_SwiftUI.framework/_PhotosUI_SwiftUI`
+- `/System/Library/PrivateFrameworks/AXCoreUtilities.framework/AXCoreUtilities`
+- `/System/Library/PrivateFrameworks/AXMediaUtilities.framework/AXMediaUtilities`
+- `/System/Library/PrivateFrameworks/AccessibilitySharedUISupport.framework/AccessibilitySharedUISupport`
+- `/System/Library/PrivateFrameworks/AppProtection.framework/AppProtection`
+- `/System/Library/PrivateFrameworks/AppProtectionUI.framework/AppProtectionUI`
+- `/System/Library/PrivateFrameworks/AppleIntelligenceReporting.framework/AppleIntelligenceReporting`
+- `/System/Library/PrivateFrameworks/BackgroundSystemTasks.framework/BackgroundSystemTasks`
+- `/System/Library/PrivateFrameworks/CloudSubscriptionFeatures.framework/CloudSubscriptionFeatures`
+- `/System/Library/PrivateFrameworks/ContactsUICore.framework/ContactsUICore`
+- `/System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics`
+- `/System/Library/PrivateFrameworks/CoreEmoji.framework/CoreEmoji`
+- `/System/Library/PrivateFrameworks/EmojiFoundation.framework/EmojiFoundation`
+- `/System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags`
+- `/System/Library/PrivateFrameworks/FeedbackService.framework/FeedbackService`
+- `/System/Library/PrivateFrameworks/GenerativeExperiencesUI.framework/GenerativeExperiencesUI`
+- `/System/Library/PrivateFrameworks/GenerativeFunctionsFoundation.framework/GenerativeFunctionsFoundation`
+- `/System/Library/PrivateFrameworks/GenerativeModels.framework/GenerativeModels`
+- `/System/Library/PrivateFrameworks/GenerativeModelsFoundation.framework/GenerativeModelsFoundation`
+- `/System/Library/PrivateFrameworks/GenerativePartnerService.framework/GenerativePartnerService`
+- `/System/Library/PrivateFrameworks/GenerativePartnerServiceUI.framework/GenerativePartnerServiceUI`
+- `/System/Library/PrivateFrameworks/IconServices.framework/IconServices`
+- `/System/Library/PrivateFrameworks/ImageGenerationServices.framework/ImageGenerationServices`
+- `/System/Library/PrivateFrameworks/InputAnalytics.framework/InputAnalytics`
+- `/System/Library/PrivateFrameworks/IntelligencePlatformLibrary.framework/IntelligencePlatformLibrary`
+- `/System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration`
+- `/System/Library/PrivateFrameworks/MediaAnalysisServices.framework/MediaAnalysisServices`
+- `/System/Library/PrivateFrameworks/ModelCatalog.framework/ModelCatalog`
+- `/System/Library/PrivateFrameworks/ModelManagerServices.framework/ModelManagerServices`
+- `/System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit`
+- `/System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats`
+- `/System/Library/PrivateFrameworks/PhotosUICore.framework/PhotosUICore`
+- `/System/Library/PrivateFrameworks/PhotosUIEdit.framework/PhotosUIEdit`
+- `/System/Library/PrivateFrameworks/PhotosUIPrivate.framework/PhotosUIPrivate`
+- `/System/Library/PrivateFrameworks/PosterBoardServices.framework/PosterBoardServices`
+- `/System/Library/PrivateFrameworks/PrintKitUI.framework/PrintKitUI`
+- `/System/Library/PrivateFrameworks/PrivateCloudCompute.framework/PrivateCloudCompute`
+- `/System/Library/PrivateFrameworks/PromptKit.framework/PromptKit`
+- `/System/Library/PrivateFrameworks/Sage.framework/Sage`
+- `/System/Library/PrivateFrameworks/Settings.framework/Settings`
+- `/System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet`
+- `/System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking`
+- `/System/Library/PrivateFrameworks/TokenGeneration.framework/TokenGeneration`
+- `/System/Library/PrivateFrameworks/TokenGenerationCore.framework/TokenGenerationCore`
+- `/System/Library/PrivateFrameworks/Trial.framework/Trial`
+- `/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation`
+- `/System/Library/PrivateFrameworks/VFX.framework/VFX`
+- `/System/Library/PrivateFrameworks/VectorSearch.framework/VectorSearch`
+- `/System/Library/PrivateFrameworks/VisualUnderstanding.framework/VisualUnderstanding`
+- `/usr/lib/libAccessibility.dylib`
+- `/usr/lib/libMobileGestalt.dylib`
+- `/usr/lib/libmecabra.dylib`
+- `/usr/lib/swift/libswiftARKit.dylib`
+- `/usr/lib/swift/libswiftAVFoundation.dylib`
+- `/usr/lib/swift/libswiftAccelerate.dylib`
+- `/usr/lib/swift/libswiftCompression.dylib`
+- `/usr/lib/swift/libswiftCore.dylib`
+- `/usr/lib/swift/libswiftCoreAudio.dylib`
+- `/usr/lib/swift/libswiftCoreAudio_Private.dylib`
+- `/usr/lib/swift/libswiftCoreFoundation.dylib`
+- `/usr/lib/swift/libswiftCoreImage.dylib`
+- `/usr/lib/swift/libswiftCoreLocation.dylib`
+- `/usr/lib/swift/libswiftCoreMIDI.dylib`
+- `/usr/lib/swift/libswiftDispatch.dylib`
+- `/usr/lib/swift/libswiftGLKit.dylib`
+- `/usr/lib/swift/libswiftIntents.dylib`
+- `/usr/lib/swift/libswiftMLCompute.dylib`
+- `/usr/lib/swift/libswiftMetal.dylib`
+- `/usr/lib/swift/libswiftMetalKit.dylib`
+- `/usr/lib/swift/libswiftModelIO.dylib`
+- `/usr/lib/swift/libswiftNaturalLanguage.dylib`
+- `/usr/lib/swift/libswiftOSLog.dylib`
+- `/usr/lib/swift/libswiftObjectiveC.dylib`
+- `/usr/lib/swift/libswiftObservation.dylib`
+- `/usr/lib/swift/libswiftQuartzCore.dylib`
+- `/usr/lib/swift/libswiftSceneKit.dylib`
+- `/usr/lib/swift/libswiftSpatial.dylib`
+- `/usr/lib/swift/libswiftSpriteKit.dylib`
+- `/usr/lib/swift/libswiftSynchronization.dylib`
+- `/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib`
+- `/usr/lib/swift/libswiftXPC.dylib`
+- `/usr/lib/swift/libswift_Builtin_float.dylib`
+- `/usr/lib/swift/libswift_Concurrency.dylib`
+- `/usr/lib/swift/libswiftos.dylib`
+- `/usr/lib/swift/libswiftsimd.dylib`
+
+## Objective-C: 280 classes, 38 protocols (method count not recorded on light pages)
+
+### Classes
+
+`GPDataConversionUtils`, `GPInProcessGenerationProgressViewController`, `GPInProcessImageEditionViewController`, `GPInProcessImagePickerViewController`, `GPInProcessMagicPaperViewController`, `GPMagicPaperState`, `GPRestImageGenerationAppleConnectTokenGenerator`, `MADService`, `VFXRenderer`, `VFXView`, `_TtC23ImagePlaygroundInternal10HTTPClient`, `_TtC23ImagePlaygroundInternal11AppSettings`, `_TtC23ImagePlaygroundInternal11FaceFetcher`, `_TtC23ImagePlaygroundInternal12GPAlertStack`, `_TtC23ImagePlaygroundInternal12PhotoLibrary`, `_TtC23ImagePlaygroundInternal12StickerSaver`, `_TtC23ImagePlaygroundInternal13DebugSettings`, `_TtC23ImagePlaygroundInternal13FeedbackInput`, `_TtC23ImagePlaygroundInternal13PeopleRecency`, `_TtC23ImagePlaygroundInternal14CardSizeHolder`, `_TtC23ImagePlaygroundInternal14ErrorViewModel`, `_TtC23ImagePlaygroundInternal14MagicViewModel`, `_TtC23ImagePlaygroundInternal14NonUIGenerator`, `_TtC23ImagePlaygroundInternal14_PersonFetcher`, `_TtC23ImagePlaygroundInternal15AppStateMonitor`, `_TtC23ImagePlaygroundInternal15CreationContext`, `_TtC23ImagePlaygroundInternal15DetailViewModel`, `_TtC23ImagePlaygroundInternal15EffectViewModel`, `_TtC23ImagePlaygroundInternal15OptionsFeatures`, `_TtC23ImagePlaygroundInternal15PCCUsageMonitor`, `_TtC23ImagePlaygroundInternal15PromptViewModel`, `_TtC23ImagePlaygroundInternal15RESTImageEditor`, `_TtC23ImagePlaygroundInternal15ServicesFetcher`, `_TtC23ImagePlaygroundInternal15ServicesStartup`, `_TtC23ImagePlaygroundInternal16AssetDragSession`, `_TtC23ImagePlaygroundInternal16EffectTransition`, `_TtC23ImagePlaygroundInternal16GenerationHandle`, `_TtC23ImagePlaygroundInternal16StageCoordinator`, `_TtC23ImagePlaygroundInternal16_FeedbackManager`, `_TtC23ImagePlaygroundInternal16_PeopleRetrieval`, `_TtC23ImagePlaygroundInternal17AsyncClosureQueue`, `_TtC23ImagePlaygroundInternal17GenerationContext`, `_TtC23ImagePlaygroundInternal17NavigationManager`, `_TtC23ImagePlaygroundInternal17PersonFaceGallery`, `_TtC23ImagePlaygroundInternal17PlaygroundLibrary`, `_TtC23ImagePlaygroundInternal17PreviewsViewModel`, `_TtC23ImagePlaygroundInternal17TapToRadarManager`, `_TtC23ImagePlaygroundInternal18ComposingViewModel`, `_TtC23ImagePlaygroundInternal18DebugInfoViewModel`, `_TtC23ImagePlaygroundInternal18DeviceCapabilities`, `_TtC23ImagePlaygroundInternal18EmojiImageProvider`, `_TtC23ImagePlaygroundInternal18EmojiImageRenderer`, `_TtC23ImagePlaygroundInternal18GPUIExtensionState`, `_TtC23ImagePlaygroundInternal18GPVFXViewObservers`, `_TtC23ImagePlaygroundInternal18ImageKeyFaceLoader`, `_TtC23ImagePlaygroundInternal18PhotoGridViewModel`, `_TtC23ImagePlaygroundInternal18SessionUndoManager`, `_TtC23ImagePlaygroundInternal18SuggestionTextView`, `_TtC23ImagePlaygroundInternal18VFXEffectViewModel`, `_TtC23ImagePlaygroundInternal18VisualEffectLoader`, `_TtC23ImagePlaygroundInternal19AppearanceViewModel`, `_TtC23ImagePlaygroundInternal19CameraAuthViewModel`, `_TtC23ImagePlaygroundInternal19ComposingFocusState`, `_TtC23ImagePlaygroundInternal19NotificationManager`, `_TtC23ImagePlaygroundInternal19OnboardingImageView`, `_TtC23ImagePlaygroundInternal19PromptTextViewModel`, `_TtC23ImagePlaygroundInternal19VisualEffectRENodes`, `_TtC23ImagePlaygroundInternal19_SystemPhotoLibrary`, `_TtC23ImagePlaygroundInternal20ComposingViewActions`, `_TtC23ImagePlaygroundInternal20CreateImageViewModel`, `_TtC23ImagePlaygroundInternal20DeleteAssetOperation`, `_TtC23ImagePlaygroundInternal20EmojiButtonViewModel`, `_TtC23ImagePlaygroundInternal20ImagePredictableSeed`, `_TtC23ImagePlaygroundInternal20InputAnalyticsHelper`, `_TtC23ImagePlaygroundInternal20MagicEffectViewModel`, `_TtC23ImagePlaygroundInternal20PersonTextSuggestion`, `_TtC23ImagePlaygroundInternal20PhotoAdjustViewModel`, `_TtC23ImagePlaygroundInternal20PromptInputViewModel`, `_TtC23ImagePlaygroundInternal20SketchCaptionService`, `_TtC23ImagePlaygroundInternal20StylePickerViewModel`, `_TtC23ImagePlaygroundInternal20_NotificationService`, `_TtC23ImagePlaygroundInternal21CuratedPromptCategory`, `_TtC23ImagePlaygroundInternal21EditSuggestionService`, `_TtC23ImagePlaygroundInternal21ExternalGeneratorInfo`, `_TtC23ImagePlaygroundInternal21GenerationCoordinator`, `_TtC23ImagePlaygroundInternal21GenmojiNameTranslator`, `_TtC23ImagePlaygroundInternal21KeyboardEventListener`, `_TtC23ImagePlaygroundInternal21ObservableAppSettings`, `_TtC23ImagePlaygroundInternal21PeoplePickerViewModel`, `_TtC23ImagePlaygroundInternal21PhotosFaceCropFetcher`, `_TtC23ImagePlaygroundInternal21PlaygroundImageScaler`, `_TtC23ImagePlaygroundInternal21PromptConceptAnalyzer`, `_TtC23ImagePlaygroundInternal21PromptEffectViewModel`, `_TtC23ImagePlaygroundInternal21RecentStickersFetcher`, `_TtC23ImagePlaygroundInternal21ResetContextOperation`, `_TtC23ImagePlaygroundInternal21_AppProtectionManager`, `_TtC23ImagePlaygroundInternal22CardActionBarViewModel`, `_TtC23ImagePlaygroundInternal22CreationContextFactory`, `_TtC23ImagePlaygroundInternal22DetailViewModel_Legacy`, `_TtC23ImagePlaygroundInternal22EffectCompletionSignal`, `_TtC23ImagePlaygroundInternal22GeneratedPreviewsStore`, `_TtC23ImagePlaygroundInternal22ImagePredictableOutput`, `_TtC23ImagePlaygroundInternal22PromptAnalyzerProvider`, `_TtC23ImagePlaygroundInternal22PromptUITextSuggestion`, `_TtC23ImagePlaygroundInternal22_CuratedPromptsManager`, `_TtC23ImagePlaygroundInternal23AbstractEffectViewModel`, `_TtC23ImagePlaygroundInternal23AppearanceCellViewModel`, `_TtC23ImagePlaygroundInternal23AppearanceImageRenderer`, `_TtC23ImagePlaygroundInternal23CameraPickerCoordinator`, `_TtC23ImagePlaygroundInternal23CharacterStorageManager`, `_TtC23ImagePlaygroundInternal23ContextualMenuViewModel`, `_TtC23ImagePlaygroundInternal23DuplicateAssetOperation`, `_TtC23ImagePlaygroundInternal23ExternalImageGPSAdapter`, `_TtC23ImagePlaygroundInternal23ExternalImageVGFAdapter`, `_TtC23ImagePlaygroundInternal23FacePickerGridViewModel`, `_TtC23ImagePlaygroundInternal23GenerationRecipeFactory`, `_TtC23ImagePlaygroundInternal23GenericCharacterManager`, `_TtC23ImagePlaygroundInternal23ObservableDebugSettings`, `_TtC23ImagePlaygroundInternal23PersonAttributesManager`, `_TtC23ImagePlaygroundInternal23PlaygroundHomeViewModel`, `_TtC23ImagePlaygroundInternal23ShareActivityItemSource`, `_TtC23ImagePlaygroundInternal23VisualEffectViewManager`, `_TtC23ImagePlaygroundInternal24ComposingFooterViewModel`, `_TtC23ImagePlaygroundInternal24FeedbackSectionViewModel`, `_TtC23ImagePlaygroundInternal24FloatingBubblesViewModel`, `_TtC23ImagePlaygroundInternal24HomeAnimationCoordinator`, `_TtC23ImagePlaygroundInternal24MecabraHiraganaConverter`, `_TtC23ImagePlaygroundInternal24PeopleSuggestionAnalyzer`, `_TtC23ImagePlaygroundInternal24VisualEffectSceneManager`, `_TtC23ImagePlaygroundInternal24_PeoplePickerDataFetcher`, `_TtC23ImagePlaygroundInternal25BackgroundTaskCoordinator`, `_TtC23ImagePlaygroundInternal25CharacterEditingViewModel`, `_TtC23ImagePlaygroundInternal25ExternalGenerationSession`, `_TtC23ImagePlaygroundInternal25GenerationProgressManager`, `_TtC23ImagePlaygroundInternal25GenmojiComposingViewModel`, `_TtC23ImagePlaygroundInternal25PhotoGridElementViewModel`, `_TtC23ImagePlaygroundInternal25PlaygroundAssetCollection`, `_TtC23ImagePlaygroundInternal25VisualSummarizationClient`, `_TtC23ImagePlaygroundInternal25_ConditioningImageFactory`, `_TtC23ImagePlaygroundInternal26GenerationBlockedViewModel`, `_TtC23ImagePlaygroundInternal26OnboardingGradientFadeView`, `_TtC23ImagePlaygroundInternal26SpanPersonAssociationStore`, `_TtC23ImagePlaygroundInternal27DirectManipulationViewModel`, `_TtC23ImagePlaygroundInternal27ExternalProviderInfoManager`, `_TtC23ImagePlaygroundInternal27FacePickerCarouselViewModel`, `_TtC23ImagePlaygroundInternal27FacePickerPersistentStorage`, `_TtC23ImagePlaygroundInternal27GPServiceSideExportedObject`, `_TtC23ImagePlaygroundInternal27ManagedConfigurationService`, `_TtC23ImagePlaygroundInternal27NotificationDelegateHandler`, `_TtC23ImagePlaygroundInternal27OBKFacePickerViewController`, `_TtC23ImagePlaygroundInternal27VisualGenerationImageEditor`, `_TtC23ImagePlaygroundInternal28AppProtectionShieldViewModel`, `_TtC23ImagePlaygroundInternal28ExternalProviderStyleManager`, `_TtC23ImagePlaygroundInternal28GenerativePlaygroundProvider`, `_TtC23ImagePlaygroundInternal28ImageGenerationPersonFetcher`, `_TtC23ImagePlaygroundInternal28LoadRecipeInContextOperation`, `_TtC23ImagePlaygroundInternal28PeoplePickerViewModel_Legacy`, `_TtC23ImagePlaygroundInternal28PhotoAndPeopleInputViewModel`, `_TtC23ImagePlaygroundInternal28PhotoLibraryPopulationSource`, `_TtC23ImagePlaygroundInternal28PromptContentTextureRenderer`, `_TtC23ImagePlaygroundInternal28ServiceSideConnectionManager`, `_TtC23ImagePlaygroundInternal28SpanPersonAssociationService`, `_TtC23ImagePlaygroundInternal29ComposingAnimationCoordinator`, `_TtC23ImagePlaygroundInternal29GeneratingBlobEffectViewModel`, `_TtC23ImagePlaygroundInternal29OnboardingSheetViewController`, `_TtC23ImagePlaygroundInternal29PerformanceMitigationNotifier`, `_TtC23ImagePlaygroundInternal29PromptElementConceptExtractor`, `_TtC23ImagePlaygroundInternal29UNNotificationPlatformAdapter`, `_TtC23ImagePlaygroundInternal30ExternalProviderLatencyManager`, `_TtC23ImagePlaygroundInternal30LoadGPRecipeInContextOperation`, `_TtC23ImagePlaygroundInternal30RandomWebImagePopulationSource`, `_TtC23ImagePlaygroundInternal31ConditioningImageShelfViewModel`, `_TtC23ImagePlaygroundInternal31EffectProgressDurationEstimator`, `_TtC23ImagePlaygroundInternal31GeneratedImageNavigationService`, `_TtC23ImagePlaygroundInternal31PeoplePickerInternalCoordinator`, `_TtC23ImagePlaygroundInternal31UnavailableOrComposingViewModel`, `_TtC23ImagePlaygroundInternal32CuratedPromptsEmbeddingGenerator`, `_TtC23ImagePlaygroundInternal32GPImageDescriptionViewController`, `_TtC23ImagePlaygroundInternal32ImageConditioningPickerViewModel`, `_TtC23ImagePlaygroundInternal32VisualEffectAnimationCoordinator`, `_TtC23ImagePlaygroundInternal32WeakPhotoLibraryUpdatingDelegate`, `_TtC23ImagePlaygroundInternal33DirectManipulationStateController`, `_TtC23ImagePlaygroundInternal34ImageGenerationOnboardingViewModel`, `_TtC23ImagePlaygroundInternal34ImageGenerationServicesImageEditor`, `_TtC23ImagePlaygroundInternal35ImageConditioningSuggestionsFetcher`, `_TtC23ImagePlaygroundInternal35ImageGenerationPersonSelectionState`, `_TtC23ImagePlaygroundInternal35WeakCuratedPromptsManagerSubscriber`, `_TtC23ImagePlaygroundInternal36GenerationBlockedAvailabilityService`, `_TtC23ImagePlaygroundInternal36PhotoLibraryAssetItemProviderWriting`, `_TtC23ImagePlaygroundInternal37CuratedPromptsEmbeddingStorageManager`, `_TtC23ImagePlaygroundInternal38ImageConditioningRepresentationsSource`, `_TtC23ImagePlaygroundInternal38ImageGenerationImplicitPersonalization`, `_TtC23ImagePlaygroundInternal39AccessibilityDescriptionEditorViewModel`, `_TtC23ImagePlaygroundInternal39ImageConditioningRepresentationsManager`, `_TtC23ImagePlaygroundInternal39PhotoGridElementContextualMenuViewModel`, `_TtC23ImagePlaygroundInternal40DescriptionFieldWithSuggestionsViewModel`, `_TtC23ImagePlaygroundInternal43AddImageConditioningRepresentationOperation`, `_TtC23ImagePlaygroundInternal46ImageConditioningRepresentationsManager_Legacy`, `_TtC23ImagePlaygroundInternal46RemoveImageConditioningRepresentationOperation`, `_TtC23ImagePlaygroundInternal9Analytics`, `_TtC23ImagePlaygroundInternal9Canceller`, `_TtC23ImagePlaygroundInternal9GPVFXView`, `_TtC23ImagePlaygroundInternalP33_3A7772BE3346296E60BB9FC425022F628Notifier`, `_TtC23ImagePlaygroundInternalP33_4C0B534CDB5848E3CFA58FCB078C3E1319ResourceBundleClass`, `_TtC23ImagePlaygroundInternalP33_4D568BA100DC44CD3D92998B4E11ACB018NoRedirectDelegate`, `_TtC23ImagePlaygroundInternalP33_50C2682787BF8D5A2A874B8E982FBF1535StatusBarHidingNavigationController`, `_TtC23ImagePlaygroundInternalP33_549449CDF04F9477D080554EB59EE57514AsyncSemaphore`, `_TtC23ImagePlaygroundInternalP33_549449CDF04F9477D080554EB59EE57514GetRecipeActor`, `_TtC23ImagePlaygroundInternalP33_63E026FEFA6E69A5FDBB94AAFDEED58125SketchCaptionModelSession`, `_TtC23ImagePlaygroundInternalP33_6F9DC991015F7CE04C579F930D0DEE2B17LoadingBlobCACore`, `_TtC23ImagePlaygroundInternalP33_6F9DC991015F7CE04C579F930D0DEE2B17LoadingBlobCAView`, `_TtC23ImagePlaygroundInternalP33_822B85E184EE5D7826980698E111F73C11TimeoutTrip`, `_TtC23ImagePlaygroundInternalP33_822B85E184EE5D7826980698E111F73C15StreamHeartbeat`, `_TtC23ImagePlaygroundInternalP33_9A2DD80BC67442A95615BF21831E47B321ModalWindowHeightView`, `_TtC23ImagePlaygroundInternalP33_A042BD663B7F2679B951937F6E4E00D726ImagePlaygroundStyleSource`, `_TtC23ImagePlaygroundInternalP33_A1C9631F0CA760AEB38DE110BDADF00B13MecabraEngine`, `_TtC23ImagePlaygroundInternalP33_C76C3098C884A19015AAD19343BC164913LayerRenderer`, `_TtC23ImagePlaygroundInternalP33_C76C3098C884A19015AAD19343BC164929AnimationBezierCurveGenerator`, `_TtC23ImagePlaygroundInternalP33_C869AA378DCBF432CD6A5C82634DC1C121AssetDataCancellation`, `_TtC23ImagePlaygroundInternalP33_DADC25B431C41FBBA3C139BF4609921418PhotoLibrarySource`, `_TtC23ImagePlaygroundInternalP33_E47DE514D30F4EEC9D1E28762A39C4C712TitleAndIcon`, `_TtC23ImagePlaygroundInternalP33_E75559995DA4352C80020934CA82336626BackgroundTaskTimerWrapper`, `_TtCC23ImagePlaygroundInternal14NonUIGeneratorP33_A4A6B2279B4943086706F677B8B22A2211RateLimiter`, `_TtCC23ImagePlaygroundInternal17TapToRadarManager7LogItem`, `_TtCC23ImagePlaygroundInternal17TapToRadarManager9LogReason`, `_TtCC23ImagePlaygroundInternal18VisualEffectLoaderP33_F067466C0B1FCBE721B712985AD132C311EffectCache`, `_TtCC23ImagePlaygroundInternal19VisualEffectRENodesP33_C76C3098C884A19015AAD19343BC164928VisualEffectAnimationClosure`, `_TtCC23ImagePlaygroundInternal19VisualEffectRENodesP33_C76C3098C884A19015AAD19343BC164934VisualEffectFloatCallbackAnimation`, `_TtCC23ImagePlaygroundInternal19VisualEffectRENodesP33_C76C3098C884A19015AAD19343BC164935VisualEffectFloatParameterAnimation`, `_TtCC23ImagePlaygroundInternal22ImagePredictableOutputP33_5C3CA63E38422A6691DD6C93E2E9CDDD31ComposingPredictableOutputAsset`, `_TtCC23ImagePlaygroundInternal22PromptAnalyzerProviderP33_5E2EBAA076801C225C0FC3DDA14673D214WeakDataSource`, `_TtCC23ImagePlaygroundInternal27ExternalProviderInfoManagerP33_D6A5F49BEE51B87CB3C49B04CD4EF98139WeakExternalProviderInfoManagerObserver`, `_TtCC23ImagePlaygroundInternal39ImageConditioningRepresentationsManagerP33_03B8BC2A6CBC7E4707DD3E7BAE11031B51WeakImageConditioningRepresentationsManagerObserver`, `_TtCC23ImagePlaygroundInternal46ImageConditioningRepresentationsManager_LegacyP33_7131FB13DB35E435CBFF5F32746907F558WeakImageConditioningRepresentationsManager_LegacyObserver`, `_TtCC23ImagePlaygroundInternalP33_A1C9631F0CA760AEB38DE110BDADF00B13MecabraEngine16MecabraCandidate`, `_TtCCV23ImagePlaygroundInternal15ImageGeneration16GPImageGenerator21EmojiGeneratorStorage`, `_TtCCV23ImagePlaygroundInternal15ImageGeneration16GPImageGenerator27GenerativePlaygroundStorage`, `_TtCFC23ImagePlaygroundInternal32GPImageDescriptionViewControllergP33_5475699B788A0A9CD9CC836EEF562C8327fakePresentingVieControllerCSo16UIViewControllerL_28FakePresentingViewController`, `_TtCV23ImagePlaygroundInternal14PromptTextView11Coordinator`, `_TtCV23ImagePlaygroundInternal14WallpaperSaver11Coordinator`, `_TtCV23ImagePlaygroundInternal15CreateImageViewP33_5DE3FE6B8EFCF921DE92C95B01DE2D3918ScrollOffsetHolder`, `_TtCV23ImagePlaygroundInternal15ImageGeneration12RequestQueue`, `_TtCV23ImagePlaygroundInternal15ImageGeneration16GPImageGenerator`, `_TtCV23ImagePlaygroundInternal15ImageGeneration18DemoImageGenerator`, `_TtCV23ImagePlaygroundInternal15ImageGeneration18RESTImageGenerator`, `_TtCV23ImagePlaygroundInternal15ImageGeneration20ImageFromRecipeCache`, `_TtCV23ImagePlaygroundInternal15ImageGeneration20MockupImageGenerator`, `_TtCV23ImagePlaygroundInternal15ImageGeneration20VettedImageGenerator`, `_TtCV23ImagePlaygroundInternal15ImageGeneration30ExternalProviderImageGenerator`, `_TtCV23ImagePlaygroundInternal15ImageGeneration7Manager`, `_TtCV23ImagePlaygroundInternal17CreateImageIntentP33_C423F62BB3200EEBDE4B8A9ABC649DCE13ProgressTimer`, `_TtCV23ImagePlaygroundInternal19GenerateImageIntentP33_50504F73824CD7AFE65FB3553340865613ProgressTimer`, `_TtCV23ImagePlaygroundInternal20DirectManipulationUI10TapToRadar`, `_TtCV23ImagePlaygroundInternal20DirectManipulationUI12AddViewModel`, `_TtCV23ImagePlaygroundInternal20DirectManipulationUI13MoveViewModel`, `_TtCV23ImagePlaygroundInternal20DirectManipulationUI15StatusViewModel`, `_TtCV23ImagePlaygroundInternal20DirectManipulationUI16ReplaceViewModel`, `_TtCV23ImagePlaygroundInternal20DirectManipulationUI18ResizableViewModel`, `_TtCV23ImagePlaygroundInternal20DirectManipulationUI20KeyboardStateMonitor`, `_TtCV23ImagePlaygroundInternal20DirectManipulationUI25SegmentedSubjectViewModel`, `_TtCV23ImagePlaygroundInternal20DirectManipulationUI26SegmentationInputViewModel`, `_TtCV23ImagePlaygroundInternal20DirectManipulationUI27EditInteractionMenuHostView`, `_TtCV23ImagePlaygroundInternal20DirectManipulationUI31SegmentationInputViewController`, `_TtCV23ImagePlaygroundInternal20DirectManipulationUIP33_030859F2A148795F66FB7DF5B1C59E3814TextFieldState`, `_TtCV23ImagePlaygroundInternal20DirectManipulationUIP33_030859F2A148795F66FB7DF5B1C59E3816CenteredTextView`, `_TtCV23ImagePlaygroundInternal20StickerSaveAnimation11Coordinator`, `_TtCV23ImagePlaygroundInternal22DirectManipulationCore9Segmenter`, `_TtCV23ImagePlaygroundInternal26ConditioningImageShelfItem15DeletionHandler`, `_TtCV23ImagePlaygroundInternal26FrameworkViewRepresentableP33_8381055C53B101B53D1633297D3E35E410NativeView`, `_TtCV23ImagePlaygroundInternal28ComposingRegularFooterButton21TransitionCoordinator`, `_TtCV23ImagePlaygroundInternal32PromptLightEffectsBackgroundView11Coordinator`, `_TtCV23ImagePlaygroundInternal33ImageDescriptionViewRepresentable11Coordinator`, `_TtCV23ImagePlaygroundInternal36PhotoEditViewControllerRepresentable11Coordinator`, `_TtCV23ImagePlaygroundInternalP33_2B28436132EA01EB0AA9F21A7D49596732TwoFingerPanGestureRepresentable11Coordinator`, `_TtCV23ImagePlaygroundInternalP33_F7A31DD48C0E6047AECEDAEA9316698D35ImageGenerationCharacterEditingView11Coordinator`, `_TtCVV23ImagePlaygroundInternal20DirectManipulationUI12ResizeCursorP33_EE391B6DD7AE1A531644A3AFED9B5AC824_ResizeCursorBundleToken`, `_TtCVV23ImagePlaygroundInternal20DirectManipulationUI23EditInteractionMenuView11Coordinator`, `_TtCVV23ImagePlaygroundInternal20DirectManipulationUIP33_030859F2A148795F66FB7DF5B1C59E3813Representable11Coordinator`, `_TtCVV23ImagePlaygroundInternalP33_9A2DD80BC67442A95615BF21831E47B333SimultaneousDownwardSwipeModifier23DownwardSwipeRecognizer11Coordinator`, `_UIActivityItemCustomizationGroup`
+
+### Protocols
+
+`APBaseExtensionShieldViewDelegate`, `AXSSImageDescriptionViewControllerDelegate`, `CNKeyDescriptor`, `GPImageEditionViewControllerProtocol`, `GPImagePickerViewControllerDelegate`, `GPImagePickerViewControllerProtocol`, `MTLAllocation`, `MTLDevice`, `MTLResource`, `MTLTexture`, `NSCoding`, `NSCopying`, `NSItemProviderWriting`, `NSObject`, `NSSecureCoding`, `NSURLSessionDelegate`, `NSURLSessionTaskDelegate`, `OS_dispatch_source`, `OS_dispatch_source_memorypressure`, `OS_dispatch_source_timer`, `PEPhotoKitMediaDestinationDelegate`, `PHPhotoLibraryChangeObserver`, `PUPhotoEditViewControllerPresentationDelegate`, `PUPhotoEditViewControllerSessionDelegate`, `PXPRUIInlinePosterEditingViewControllerDelegate`, `UIActivityItemSource`, `UIEditMenuInteractionDelegate`, `UIGestureRecognizerDelegate`, `UIImagePickerControllerDelegate`, `UINavigationControllerDelegate`, `UIScrollViewDelegate`, `UITextViewDelegate`, `UNUserNotificationCenterDelegate`, `VFXWorldRendererDelegate`, `_TtP15ImagePlayground14GPHostProtocol_`, `_TtP15ImagePlayground16GPNonUIExtension_`, `_TtP15ImagePlayground17GPServiceProtocol_`, `_TtP23ImagePlaygroundInternalP33_3394ABBF62EAD3FE2F2B737965FC134934GenmojiCreationSuggestionDisabling_`
+

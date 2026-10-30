@@ -1,0 +1,277 @@
+# `PKStrokeGenerator`
+
+- Image: [`/System/Library/Frameworks/PencilKit.framework/PencilKit`](../userland/System__Library__Frameworks__PencilKit.framework__PencilKit.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `PKInputProvider`
+- 72 instance variables, 43 properties, 133 instance methods, 3 class methods
+
+## Instance variables
+
+```
+d _latestNonPredictedTimestamp;
+{vector<PKInputPoint, std::allocator<PKInputPoint>>="__begin_"^{?}"__end_"^{?}""{?="__cap_"^{?}}} _drawPoints;
+{vector<_PKStrokePoint, std::allocator<_PKStrokePoint>>="__begin_"^{_PKStrokePoint}"__end_"^{_PKStrokePoint}""{?="__cap_"^{_PKStrokePoint}}} _outputPoints;
+q _outputImmutableCount;
+B _inputHasChanged;
+{_PKStrokePoint="timestamp"d"location"{CGPoint="x"d"y"d}"radius"d"aspectRatio"d"edgeWidth"d"force"d"azimuth"d"altitude"d"opacity"d"radius2"d"threshold"d"elevation"d} _baseValues;
+@"NSObject<OS_dispatch_queue>" _inputQueue;
+@"PKStroke" _currentStroke;
+q _currentInputType;
+Q _currentActiveInputProperties;
+q _immutableCount;
+q _missedUpdates;
+{vector<PKInputPoint, std::allocator<PKInputPoint>>="__begin_"^{?}"__end_"^{?}""{?="__cap_"^{?}}} _updatedDrawPoints;
+B _drawingEndedButNotFinished;
+d _endTimestamp;
+@"NSObject<OS_dispatch_semaphore>" _drawingWaitForFinishSemaphore;
+B _keepPredictedTouchesAtEndOfStroke;
+B _currentShouldClearAzimuth;
+B _currentRollAngleEnabled;
+d _currentBaseRollAngle;
+d _currentAdditionalRollAngle;
+B _enableDidUpdateRoll;
+@"PKInputPointExtraRollLatencyFilter" _extraRollLatencyFilter;
+@"PKInputPointRollNoiseFilter" _rollNoiseFilter;
+@"PKInputPointExtraLatencyFilter" _extraLatencyFilter;
+{os_unfair_lock_s="_os_unfair_lock_opaque"I} _baseRollAngleLock;
+d _currentStrokeRollBaseValue;
+d _currentStrokeRollDeltaMin;
+d _currentStrokeRollDeltaMax;
+@"NSArray" _allInputPointFilters;
+B _shouldSetIsSafeForStyleInventorFlag;
+B _captureLiveData;
+B _isPreviewing;
+B _rollAngleEnabled;
+B _shouldClearAzimuth;
+B _useRuler;
+B _isSnappedToRulerTopSide;
+B _canSnapToRuler;
+B _isSnappedToRuler;
+d _baseRollAngle;
+@"<PKStrokeGeneratorDelegate>" _delegate;
+d _elevationPointsPerMillimeter;
+d _additionalRollAngle;
+d _rulerWidth;
+d _strokeMaxForce;
+@"NSObject<OS_dispatch_queue>" _outputQueue;
+d _touchSensitivity;
+^v _inputProvider;
+^v _pixelSmoothingFilter;
+^v _pointReductionFilter;
+^v _startHookFilter;
+^v _endHookFilter;
+^v _velocityFilter;
+^v _directionAngleFilter;
+^v _inputSmoother;
+^v _noiseSmoother;
+^v _propertySmoother;
+^v _inputToOutputFilter;
+^v _startCapFilter;
+^v _animationFilter;
+^v _azimuthFilter;
+^v _endDelayFilter;
+^v _endCapFilter;
+^v _fountainPenFilter;
+^v _rulerExtremaFilter;
+^v _estimatedAltitudeAndAzimuthFilter;
+^v _compressionFilter;
+^v _decompressionFilter;
+d _eraserIndicatorAlpha;
+d _inputScale;
+{CGPoint="x"d"y"d} _lastPoint;
+{CGAffineTransform="a"d"b"d"c"d"d"d"tx"d"ty"d} _rulerTransform;
+```
+
+## Properties
+
+```
+@property (T{CGAffineTransform=dddddd},N,V_rulerTransform) rulerTransform;
+@property (TB,N,V_useRuler) useRuler;
+@property (Td,N,V_rulerWidth) rulerWidth;
+@property (TB,N,V_isSnappedToRulerTopSide) isSnappedToRulerTopSide;
+@property (TB,N,V_canSnapToRuler) canSnapToRuler;
+@property (Td,N,V_strokeMaxForce) strokeMaxForce;
+@property (T{CGPoint=dd},V_lastPoint) lastPoint;
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_outputQueue) outputQueue;
+@property (Td,N,V_touchSensitivity) touchSensitivity;
+@property (T^v,N,V_inputProvider) inputProvider;
+@property (T^v,N,V_pixelSmoothingFilter) pixelSmoothingFilter;
+@property (T^v,N,V_pointReductionFilter) pointReductionFilter;
+@property (T^v,N,V_startHookFilter) startHookFilter;
+@property (T^v,N,V_endHookFilter) endHookFilter;
+@property (T^v,N,V_velocityFilter) velocityFilter;
+@property (T^v,N,V_directionAngleFilter) directionAngleFilter;
+@property (T^v,N,V_inputSmoother) inputSmoother;
+@property (T^v,N,V_noiseSmoother) noiseSmoother;
+@property (T^v,N,V_propertySmoother) propertySmoother;
+@property (T^v,N,V_inputToOutputFilter) inputToOutputFilter;
+@property (T^v,N,V_startCapFilter) startCapFilter;
+@property (T^v,N,V_animationFilter) animationFilter;
+@property (T^v,N,V_azimuthFilter) azimuthFilter;
+@property (T^v,N,V_endDelayFilter) endDelayFilter;
+@property (T^v,N,V_endCapFilter) endCapFilter;
+@property (T^v,N,V_fountainPenFilter) fountainPenFilter;
+@property (T^v,N,V_rulerExtremaFilter) rulerExtremaFilter;
+@property (T^v,N,V_estimatedAltitudeAndAzimuthFilter) estimatedAltitudeAndAzimuthFilter;
+@property (T^v,N,V_compressionFilter) compressionFilter;
+@property (T^v,N,V_decompressionFilter) decompressionFilter;
+@property (TB,V_isSnappedToRuler) isSnappedToRuler;
+@property (TB,R) lastPointIsMasked;
+@property (Td,V_eraserIndicatorAlpha) eraserIndicatorAlpha;
+@property (Td,N,V_inputScale) inputScale;
+@property (T@"<PKStrokeGeneratorDelegate>",W,N,V_delegate) delegate;
+@property (Tq,R,D,N) inputType;
+@property (TQ,R,N) activeInputProperties;
+@property (TB,N,V_captureLiveData) captureLiveData;
+@property (TB,N,V_isPreviewing) isPreviewing;
+@property (Td,N,V_elevationPointsPerMillimeter) elevationPointsPerMillimeter;
+@property (Td,V_additionalRollAngle) additionalRollAngle;
+@property (TB,V_rollAngleEnabled) rollAngleEnabled;
+@property (TB,V_shouldClearAzimuth) shouldClearAzimuth;
+```
+
+## Class methods
+
+```
++[PKStrokeGenerator initialize];
++[PKStrokeGenerator inputPointsFromPath:maxSegmentLength:velocityForDistanceFunction:];
++[PKStrokeGenerator inputPointsFromPoints:velocityForDistanceFunction:];
+```
+
+## Instance methods
+
+```
+-[PKStrokeGenerator init];
+-[PKStrokeGenerator dealloc];
+-[PKStrokeGenerator reset];
+-[PKStrokeGenerator inputScale];
+-[PKStrokeGenerator setIsPreviewing:];
+-[PKStrokeGenerator setDelegate:];
+-[PKStrokeGenerator inputType];
+-[PKStrokeGenerator setVelocityFilter:];
+-[PKStrokeGenerator captureLiveData];
+-[PKStrokeGenerator activeInputProperties];
+-[PKStrokeGenerator delegate];
+-[PKStrokeGenerator velocityFilter];
+-[PKStrokeGenerator setInputScale:];
+-[PKStrokeGenerator setCaptureLiveData:];
+-[PKStrokeGenerator isPreviewing];
+-[PKStrokeGenerator addPoint:];
+-[PKStrokeGenerator lastPoint];
+-[PKStrokeGenerator setLastPoint:];
+-[PKStrokeGenerator addPoints:];
+-[PKStrokeGenerator outputFilter];
+-[PKStrokeGenerator latestTimestamp];
+-[PKStrokeGenerator setOutputQueue:];
+-[PKStrokeGenerator animationFilter];
+-[PKStrokeGenerator drawingCancelledWithCompletion:];
+-[PKStrokeGenerator startHookFilter];
+-[PKStrokeGenerator _alwaysUseRollAngleForFountainPen];
+-[PKStrokeGenerator _drawingAddPoint:];
+-[PKStrokeGenerator _drawingUpdateAllPointsDidTimeout:updateSemaphore:];
+-[PKStrokeGenerator _drawingUpdateAllPointsDidTimeoutWithStrokeUUID:];
+-[PKStrokeGenerator _latestStrokePoint];
+-[PKStrokeGenerator _newStrokeWithCurrentDataAndStrokeDataUUID:];
+-[PKStrokeGenerator _removePredictedTouches];
+-[PKStrokeGenerator _updatePredictedTouches];
+-[PKStrokeGenerator additionalRollAngle];
+-[PKStrokeGenerator allowSnappingToRuler:width:];
+-[PKStrokeGenerator azimuthFilter];
+-[PKStrokeGenerator canSnapToRuler];
+-[PKStrokeGenerator closeStroke];
+-[PKStrokeGenerator compressionFilter];
+-[PKStrokeGenerator configureFilters];
+-[PKStrokeGenerator copyInputUpdatedRangeFromIndex:into:];
+-[PKStrokeGenerator decompressionFilter];
+-[PKStrokeGenerator directionAngleFilter];
+-[PKStrokeGenerator distanceToRulerCenter:];
+-[PKStrokeGenerator drawingBeganWithStroke:inputType:activeInputProperties:inputScale:start:];
+-[PKStrokeGenerator drawingEndedEstimatesTimeout:completion:];
+-[PKStrokeGenerator drawingUpdateAllPoints];
+-[PKStrokeGenerator drawingUpdateAllPointsDidTimeoutWithStrokeUUID:];
+-[PKStrokeGenerator drawingUpdatePoint:];
+-[PKStrokeGenerator elevationPointsPerMillimeter];
+-[PKStrokeGenerator endCapFilter];
+-[PKStrokeGenerator endDelayFilter];
+-[PKStrokeGenerator endHookFilter];
+-[PKStrokeGenerator eraserIndicatorAlpha];
+-[PKStrokeGenerator estimatedAltitudeAndAzimuthFilter];
+-[PKStrokeGenerator fetchFilteredPointsFromIndex:accessBlock:];
+-[PKStrokeGenerator fountainPenFilter];
+-[PKStrokeGenerator getInputUpdatedRangeFromIndex:];
+-[PKStrokeGenerator getRulerSnapLineOriginAndTangent:andNormal:];
+-[PKStrokeGenerator getUpdatedRangeFromIndex:];
+-[PKStrokeGenerator initWithStrokeNoiseSmoothing:];
+-[PKStrokeGenerator inputProvider];
+-[PKStrokeGenerator inputSmoother];
+-[PKStrokeGenerator inputToOutputFilter];
+-[PKStrokeGenerator isSnappedToRuler];
+-[PKStrokeGenerator isSnappedToRulerTopSide];
+-[PKStrokeGenerator lastPointIsMasked];
+-[PKStrokeGenerator latestNonPredictedTimestamp];
+-[PKStrokeGenerator maskToRuler];
+-[PKStrokeGenerator newStrokeWithCurrentData];
+-[PKStrokeGenerator newStrokeWithCurrentDataCopy];
+-[PKStrokeGenerator noiseSmoother];
+-[PKStrokeGenerator outputCurrentStrokePoint:lastPoint:];
+-[PKStrokeGenerator outputPoint:baseValues:lastPoint:];
+-[PKStrokeGenerator outputQueue];
+-[PKStrokeGenerator pixelSmoothingFilter];
+-[PKStrokeGenerator pointReductionFilter];
+-[PKStrokeGenerator propertySmoother];
+-[PKStrokeGenerator resetFilters];
+-[PKStrokeGenerator rollAngleEnabled];
+-[PKStrokeGenerator rulerExtremaFilter];
+-[PKStrokeGenerator rulerTransform];
+-[PKStrokeGenerator rulerWidth];
+-[PKStrokeGenerator setAdditionalRollAngle:];
+-[PKStrokeGenerator setAnimationFilter:];
+-[PKStrokeGenerator setAzimuthFilter:];
+-[PKStrokeGenerator setCanSnapToRuler:];
+-[PKStrokeGenerator setCompressionFilter:];
+-[PKStrokeGenerator setDecompressionFilter:];
+-[PKStrokeGenerator setDirectionAngleFilter:];
+-[PKStrokeGenerator setElevationPointsPerMillimeter:];
+-[PKStrokeGenerator setEndCapFilter:];
+-[PKStrokeGenerator setEndDelayFilter:];
+-[PKStrokeGenerator setEndHookFilter:];
+-[PKStrokeGenerator setEraserIndicatorAlpha:];
+-[PKStrokeGenerator setEstimatedAltitudeAndAzimuthFilter:];
+-[PKStrokeGenerator setFountainPenFilter:];
+-[PKStrokeGenerator setInputProvider:];
+-[PKStrokeGenerator setInputSmoother:];
+-[PKStrokeGenerator setInputToOutputFilter:];
+-[PKStrokeGenerator setIsSnappedToRuler:];
+-[PKStrokeGenerator setIsSnappedToRulerTopSide:];
+-[PKStrokeGenerator setNoiseSmoother:];
+-[PKStrokeGenerator setPixelSmoothingFilter:];
+-[PKStrokeGenerator setPointReductionFilter:];
+-[PKStrokeGenerator setPropertySmoother:];
+-[PKStrokeGenerator setRollAngleEnabled:];
+-[PKStrokeGenerator setRulerExtremaFilter:];
+-[PKStrokeGenerator setRulerTransform:];
+-[PKStrokeGenerator setRulerWidth:];
+-[PKStrokeGenerator setShouldClearAzimuth:];
+-[PKStrokeGenerator setStartCapFilter:];
+-[PKStrokeGenerator setStartHookFilter:];
+-[PKStrokeGenerator setStrokeMaxForce:];
+-[PKStrokeGenerator setTouchSensitivity:];
+-[PKStrokeGenerator setUseRuler:];
+-[PKStrokeGenerator setupForInk:maximumSupportedContentVersion:];
+-[PKStrokeGenerator shouldClearAzimuth];
+-[PKStrokeGenerator shouldSnapPointToRuler:];
+-[PKStrokeGenerator snapPointToRuler:];
+-[PKStrokeGenerator snapToRuler];
+-[PKStrokeGenerator startCapFilter];
+-[PKStrokeGenerator strokeFromInputPoints:inputType:ink:inputScale:randomSeed:strokeClass:];
+-[PKStrokeGenerator strokeFromLineSegments:maxSegmentLength:ink:inputScale:strokeClass:];
+-[PKStrokeGenerator strokeFromPath:ink:inputScale:maxSegmentLength:velocityForDistanceFunction:strokeClass:];
+-[PKStrokeGenerator strokeFromPoints:count:ink:inputScale:strokeClass:];
+-[PKStrokeGenerator strokeFromPoints:sourceStroke:inputScale:averageInputPoint:];
+-[PKStrokeGenerator strokeMaxForce];
+-[PKStrokeGenerator touchSensitivity];
+-[PKStrokeGenerator updateImmutableCount];
+-[PKStrokeGenerator updateRulerSnapping];
+-[PKStrokeGenerator useRuler];
+-[PKStrokeGenerator whenFinishedProcessingPointsCallCompletion:];
+```

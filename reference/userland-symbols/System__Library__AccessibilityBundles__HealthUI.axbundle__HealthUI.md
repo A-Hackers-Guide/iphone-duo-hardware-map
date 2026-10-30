@@ -1,0 +1,300 @@
+# Symbols: `/System/Library/AccessibilityBundles/HealthUI.axbundle/HealthUI`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__AccessibilityBundles__HealthUI.axbundle__HealthUI.md). **[DSC]**
+
+106 public symbols, 178 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x193def604  __TEXT,__text  _AXBloodTypeStringFromString
+0x193def7a0  __TEXT,__text  _AXLocalizedStringFromTimeScope
+0x193def544  __TEXT,__text  _AXMoveFocusToPicker
+0x193def780  __TEXT,__text  _AXStringFromTimeScope
+0x1ee8946f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXHealthUIGlue
+0x1ee894650  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKAudiogramChartViewControllerAccessibility
+0x1ee894628  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKCalendarScrollViewControllerAccessibility
+0x1ee894600  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKDisplayTypeContextVerticalCollectionViewCellAccessibility
+0x1ee8945d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKElectrocardiogramAxisViewAccessibility
+0x1ee8945b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKElectrocardiogramCardViewAccessibility
+0x1ee894588  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKElectrocardiogramChartTableViewCellAccessibility
+0x1ee894560  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKElectrocardiogramChartViewAccessibility
+0x1ee894538  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKExportPDFControlAccessibility
+0x1ee894510  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKGraphViewAccessibility
+0x1ee8944e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKInteractiveChartAnnotationViewAccessibility
+0x1ee8944c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKInteractiveChartViewControllerAccessibility
+0x1ee894498  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKListItemLabelAccessibility
+0x1ee894470  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKMonthDayCellAccessibility
+0x1ee894448  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKMonthWeekViewAccessibility
+0x1ee894420  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKNumberedListItemViewAccessibility
+0x1ee8943f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKOnboardingBaseViewControllerAccessibility
+0x1ee8943d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKOnboardingCompactDatePickerViewAccessibility
+0x1ee893980  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKPopulationNormsClassificationCollectionViewCellAccessibility
+0x1ef625920  __AUTH,__objc_data  _OBJC_CLASS_$_HKSimpleDataEntryPlainTextCellAccessibility
+0x1ee893958  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKSingleAudiogramChartViewControllerAccessibility
+0x1ee8943a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKSwitchTableViewCellAccessibility
+0x1ee894380  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_HKWeekdayHeaderPaletteViewAccessibility
+0x1ee894358  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_UITextFieldAccessibility__HealthKit__UIKit
+0x1ee894330  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__HKTimeScopeControlBarAccessibility
+0x1ee894308  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKAudiogramChartViewControllerAccessibility_super
+0x1ee8942e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKCalendarScrollViewControllerAccessibility_super
+0x1ee8942b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKDisplayTypeContextVerticalCollectionViewCellAccessibility_super
+0x1ee894290  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKElectrocardiogramAxisViewAccessibility_super
+0x1ee894268  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKElectrocardiogramCardViewAccessibility_super
+0x1ee894678  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKElectrocardiogramChartTableViewCellAccessibility_super
+0x1ee894240  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKElectrocardiogramChartViewAccessibility_super
+0x1ee894218  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKExportPDFControlAccessibility_super
+0x1ee8941f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKGraphViewAccessibility_super
+0x1ee8941c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKInteractiveChartAnnotationViewAccessibility_super
+0x1ee8941a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKInteractiveChartViewControllerAccessibility_super
+0x1ee894178  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKListItemLabelAccessibility_super
+0x1ee894150  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKMonthDayCellAccessibility_super
+0x1ee894128  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKMonthWeekViewAccessibility_super
+0x1ee894100  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKNumberedListItemViewAccessibility_super
+0x1ee8940d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKOnboardingBaseViewControllerAccessibility_super
+0x1ee8940b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKOnboardingCompactDatePickerViewAccessibility_super
+0x1ee893930  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKPopulationNormsClassificationCollectionViewCellAccessibility_super
+0x1ef6258f8  __AUTH,__objc_data  _OBJC_CLASS_$___HKSimpleDataEntryPlainTextCellAccessibility_super
+0x1ee893908  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKSingleAudiogramChartViewControllerAccessibility_super
+0x1ee894088  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKSwitchTableViewCellAccessibility_super
+0x1ee894060  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___HKWeekdayHeaderPaletteViewAccessibility_super
+0x1ee894038  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___UITextFieldAccessibility__HealthKit__UIKit_super
+0x1ee894010  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$____HKTimeScopeControlBarAccessibility_super
+0x1ee8946c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXHealthUIGlue
+0x1ee893fe8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKAudiogramChartViewControllerAccessibility
+0x1ee893fc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKCalendarScrollViewControllerAccessibility
+0x1ee893f98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKDisplayTypeContextVerticalCollectionViewCellAccessibility
+0x1ee893f70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKElectrocardiogramAxisViewAccessibility
+0x1ee893f48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKElectrocardiogramCardViewAccessibility
+0x1ee893f20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKElectrocardiogramChartTableViewCellAccessibility
+0x1ee893ef8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKElectrocardiogramChartViewAccessibility
+0x1ee893ed0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKExportPDFControlAccessibility
+0x1ee893ea8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKGraphViewAccessibility
+0x1ee893e80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKInteractiveChartAnnotationViewAccessibility
+0x1ee893e58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKInteractiveChartViewControllerAccessibility
+0x1ee893e30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKListItemLabelAccessibility
+0x1ee893e08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKMonthDayCellAccessibility
+0x1ee893de0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKMonthWeekViewAccessibility
+0x1ee893db8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKNumberedListItemViewAccessibility
+0x1ee893d90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKOnboardingBaseViewControllerAccessibility
+0x1ee893d68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKOnboardingCompactDatePickerViewAccessibility
+0x1ee8938e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKPopulationNormsClassificationCollectionViewCellAccessibility
+0x1ef625948  __AUTH,__objc_data  _OBJC_METACLASS_$_HKSimpleDataEntryPlainTextCellAccessibility
+0x1ee8938b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKSingleAudiogramChartViewControllerAccessibility
+0x1ee893d40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKSwitchTableViewCellAccessibility
+0x1ee893d18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_HKWeekdayHeaderPaletteViewAccessibility
+0x1ee893cf0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_UITextFieldAccessibility__HealthKit__UIKit
+0x1ee893cc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__HKTimeScopeControlBarAccessibility
+0x1ee893ca0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKAudiogramChartViewControllerAccessibility_super
+0x1ee893c78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKCalendarScrollViewControllerAccessibility_super
+0x1ee893c50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKDisplayTypeContextVerticalCollectionViewCellAccessibility_super
+0x1ee893c28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKElectrocardiogramAxisViewAccessibility_super
+0x1ee893c00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKElectrocardiogramCardViewAccessibility_super
+0x1ee893bd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKElectrocardiogramChartTableViewCellAccessibility_super
+0x1ee893bb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKElectrocardiogramChartViewAccessibility_super
+0x1ee8946a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKExportPDFControlAccessibility_super
+0x1ee893b88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKGraphViewAccessibility_super
+0x1ee893b60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKInteractiveChartAnnotationViewAccessibility_super
+0x1ee893b38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKInteractiveChartViewControllerAccessibility_super
+0x1ee893b10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKListItemLabelAccessibility_super
+0x1ee893ae8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKMonthDayCellAccessibility_super
+0x1ee893ac0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKMonthWeekViewAccessibility_super
+0x1ee893a98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKNumberedListItemViewAccessibility_super
+0x1ee893a70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKOnboardingBaseViewControllerAccessibility_super
+0x1ee893a48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKOnboardingCompactDatePickerViewAccessibility_super
+0x1ee893890  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKPopulationNormsClassificationCollectionViewCellAccessibility_super
+0x1ef6258d0  __AUTH,__objc_data  _OBJC_METACLASS_$___HKSimpleDataEntryPlainTextCellAccessibility_super
+0x1ee893868  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKSingleAudiogramChartViewControllerAccessibility_super
+0x1ee893a20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKSwitchTableViewCellAccessibility_super
+0x1ee8939f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___HKWeekdayHeaderPaletteViewAccessibility_super
+0x1ee8939d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___UITextFieldAccessibility__HealthKit__UIKit_super
+0x1ee8939a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$____HKTimeScopeControlBarAccessibility_super
+0x1eb946dd8  __DATA,__common  __Failover
+0x193def234  __TEXT,__text  _accessibiityStringForBloodType
+0x193def178  __TEXT,__text  _accessibilityLocalizedString
+0x193def7d0  __TEXT,__text  _accessibilityYodelLocalizedString
+```
+
+## Private
+
+```
+0x193def184  __TEXT,__text  _accessibilityLocalizedStringFromTable
+0x193def280  __TEXT,__text  +[AXHealthUIGlue accessibilityInitializeBundle]
+0x193def2dc  __TEXT,__text  ___47+[AXHealthUIGlue accessibilityInitializeBundle]_block_invoke
+0x193def2e4  __TEXT,__text  ___47+[AXHealthUIGlue accessibilityInitializeBundle]_block_invoke_2
+0x193def338  __TEXT,__text  ___47+[AXHealthUIGlue accessibilityInitializeBundle]_block_invoke_3
+0x193def33c  __TEXT,__text  ___47+[AXHealthUIGlue accessibilityInitializeBundle]_block_invoke_4
+0x193def5f4  __TEXT,__text  ___AXMoveFocusToPicker_block_invoke
+0x193def7dc  __TEXT,__text  ___AXIsBloodTypeString_block_invoke
+0x193def818  __TEXT,__text  +[HKSingleAudiogramChartViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193def824  __TEXT,__text  +[HKSingleAudiogramChartViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193def830  __TEXT,__text  +[HKSingleAudiogramChartViewControllerAccessibility _accessibilityPerformValidations:]
+0x193defbe4  __TEXT,__text  -[HKSingleAudiogramChartViewControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x193defc38  __TEXT,__text  -[HKSingleAudiogramChartViewControllerAccessibility viewDidAppear:]
+0x193defc8c  __TEXT,__text  -[HKSingleAudiogramChartViewControllerAccessibility graphView:didUpdateSelectedPoint:]
+0x193defcd8  __TEXT,__text  -[HKSingleAudiogramChartViewControllerAccessibility graphViewDidEndSelection:]
+0x193defd24  __TEXT,__text  -[HKSingleAudiogramChartViewControllerAccessibility _axSetupGraphViewDescription]
+0x193deff48  __TEXT,__text  ___81-[HKSingleAudiogramChartViewControllerAccessibility _axSetupGraphViewDescription]_block_invoke
+0x193df0078  __TEXT,__text  ___Block_byref_object_copy_
+0x193df0088  __TEXT,__text  ___Block_byref_object_dispose_
+0x193df0090  __TEXT,__text  ___81-[HKSingleAudiogramChartViewControllerAccessibility _axSetupGraphViewDescription]_block_invoke.512
+0x193df014c  __TEXT,__text  -[HKSingleAudiogramChartViewControllerAccessibility _axUpdateAXElementsForGraphView]
+0x193df0abc  __TEXT,__text  ___84-[HKSingleAudiogramChartViewControllerAccessibility _axUpdateAXElementsForGraphView]_block_invoke
+0x193df0b58  __TEXT,__text  ___84-[HKSingleAudiogramChartViewControllerAccessibility _axUpdateAXElementsForGraphView]_block_invoke_2
+0x193df0bf4  __TEXT,__text  -[HKSingleAudiogramChartViewControllerAccessibility _axCollectSeriesDataForGraphView:]
+0x193df0f74  __TEXT,__text  ___86-[HKSingleAudiogramChartViewControllerAccessibility _axCollectSeriesDataForGraphView:]_block_invoke
+0x193df1004  __TEXT,__text  ___86-[HKSingleAudiogramChartViewControllerAccessibility _axCollectSeriesDataForGraphView:]_block_invoke_2
+0x193df111c  __TEXT,__text  ___86-[HKSingleAudiogramChartViewControllerAccessibility _axCollectSeriesDataForGraphView:]_block_invoke_3
+0x193df1124  __TEXT,__text  -[HKSingleAudiogramChartViewControllerAccessibility _axUpdateSelectionAXElementsForGraphView]
+0x193df1398  __TEXT,__text  -[HKSingleAudiogramChartViewControllerAccessibility _axHearingSensitivityFormatter]
+0x193df13e8  __TEXT,__text  -[HKSingleAudiogramChartViewControllerAccessibility _axSelectedXCoordinateForGraphView:]
+0x193df1648  __TEXT,__text  +[HKPopulationNormsClassificationCollectionViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df1654  __TEXT,__text  +[HKPopulationNormsClassificationCollectionViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df1660  __TEXT,__text  +[HKPopulationNormsClassificationCollectionViewCellAccessibility _accessibilityPerformValidations:]
+0x193df16a0  __TEXT,__text  -[HKPopulationNormsClassificationCollectionViewCellAccessibility isAccessibilityElement]
+0x193df16a8  __TEXT,__text  -[HKPopulationNormsClassificationCollectionViewCellAccessibility accessibilityLabel]
+0x193df16ac  __TEXT,__text  -[HKPopulationNormsClassificationCollectionViewCellAccessibility accessibilityTraits]
+0x193df1728  __TEXT,__text  +[HKInteractiveChartAnnotationViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df1734  __TEXT,__text  +[HKInteractiveChartAnnotationViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df1740  __TEXT,__text  +[HKInteractiveChartAnnotationViewAccessibility _accessibilityPerformValidations:]
+0x193df1838  __TEXT,__text  -[HKInteractiveChartAnnotationViewAccessibility isAccessibilityElement]
+0x193df1840  __TEXT,__text  -[HKInteractiveChartAnnotationViewAccessibility accessibilityLabel]
+0x193df1934  __TEXT,__text  ___67-[HKInteractiveChartAnnotationViewAccessibility accessibilityLabel]_block_invoke
+0x193df1994  __TEXT,__text  -[HKInteractiveChartAnnotationViewAccessibility accessibilityTraits]
+0x193df1b20  __TEXT,__text  -[HKInteractiveChartAnnotationViewAccessibility _accessibilitySupplementaryFooterViews]
+0x193df1bbc  __TEXT,__text  +[HKOnboardingCompactDatePickerViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df1bc8  __TEXT,__text  +[HKOnboardingCompactDatePickerViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df1bd4  __TEXT,__text  +[HKOnboardingCompactDatePickerViewAccessibility _accessibilityPerformValidations:]
+0x193df1c50  __TEXT,__text  -[HKOnboardingCompactDatePickerViewAccessibility _setUpInitialLabel:]
+0x193df1da0  __TEXT,__text  ___69-[HKOnboardingCompactDatePickerViewAccessibility _setUpInitialLabel:]_block_invoke
+0x193df1e90  __TEXT,__text  -[HKOnboardingCompactDatePickerViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x193df1ec8  __TEXT,__text  +[HKSimpleDataEntryPlainTextCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df1ed4  __TEXT,__text  +[HKSimpleDataEntryPlainTextCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df1ee0  __TEXT,__text  +[HKSimpleDataEntryPlainTextCellAccessibility _accessibilityPerformValidations:]
+0x193df1fa8  __TEXT,__text  -[HKSimpleDataEntryPlainTextCellAccessibility _axSetInputTextFieldActivationSelectsRow]
+0x193df2154  __TEXT,__text  ___87-[HKSimpleDataEntryPlainTextCellAccessibility _axSetInputTextFieldActivationSelectsRow]_block_invoke
+0x193df225c  __TEXT,__text  ___87-[HKSimpleDataEntryPlainTextCellAccessibility _axSetInputTextFieldActivationSelectsRow]_block_invoke_2
+0x193df2268  __TEXT,__text  -[HKSimpleDataEntryPlainTextCellAccessibility initWithIntention:reuseIdentifier:]
+0x193df22b8  __TEXT,__text  -[HKSimpleDataEntryPlainTextCellAccessibility _accessibilityLoadAccessibilityInformation]
+0x193df2304  __TEXT,__text  +[HKAudiogramChartViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df2310  __TEXT,__text  +[HKAudiogramChartViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df231c  __TEXT,__text  +[HKAudiogramChartViewControllerAccessibility _accessibilityPerformValidations:]
+0x193df2390  __TEXT,__text  +[HKOnboardingBaseViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df239c  __TEXT,__text  +[HKOnboardingBaseViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df23a8  __TEXT,__text  +[HKOnboardingBaseViewControllerAccessibility _accessibilityPerformValidations:]
+0x193df23e8  __TEXT,__text  -[HKOnboardingBaseViewControllerAccessibility setUpConstraints]
+0x193df2434  __TEXT,__text  +[HKCalendarScrollViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df2440  __TEXT,__text  +[HKCalendarScrollViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df244c  __TEXT,__text  +[HKCalendarScrollViewControllerAccessibility _accessibilityPerformValidations:]
+0x193df24cc  __TEXT,__text  -[HKCalendarScrollViewControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x193df2534  __TEXT,__text  -[HKCalendarScrollViewControllerAccessibility viewDidAppear:]
+0x193df2580  __TEXT,__text  +[HKDisplayTypeContextVerticalCollectionViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df258c  __TEXT,__text  +[HKDisplayTypeContextVerticalCollectionViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df2598  __TEXT,__text  +[HKDisplayTypeContextVerticalCollectionViewCellAccessibility _accessibilityPerformValidations:]
+0x193df2684  __TEXT,__text  -[HKDisplayTypeContextVerticalCollectionViewCellAccessibility isAccessibilityElement]
+0x193df268c  __TEXT,__text  -[HKDisplayTypeContextVerticalCollectionViewCellAccessibility accessibilityLabel]
+0x193df2734  __TEXT,__text  -[HKDisplayTypeContextVerticalCollectionViewCellAccessibility accessibilityTraits]
+0x193df27b0  __TEXT,__text  -[HKDisplayTypeContextVerticalCollectionViewCellAccessibility accessibilityCustomActions]
+0x193df2904  __TEXT,__text  ___89-[HKDisplayTypeContextVerticalCollectionViewCellAccessibility accessibilityCustomActions]_block_invoke
+0x193df29e8  __TEXT,__text  ___89-[HKDisplayTypeContextVerticalCollectionViewCellAccessibility accessibilityCustomActions]_block_invoke_2
+0x193df2a2c  __TEXT,__text  +[HKElectrocardiogramAxisViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df2a38  __TEXT,__text  +[HKElectrocardiogramAxisViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df2a44  __TEXT,__text  +[HKElectrocardiogramAxisViewAccessibility _accessibilityPerformValidations:]
+0x193df2a48  __TEXT,__text  -[HKElectrocardiogramAxisViewAccessibility accessibilityElementsHidden]
+0x193df2a50  __TEXT,__text  +[HKElectrocardiogramCardViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df2a5c  __TEXT,__text  +[HKElectrocardiogramCardViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df2a68  __TEXT,__text  +[HKElectrocardiogramCardViewAccessibility _accessibilityPerformValidations:]
+0x193df2a6c  __TEXT,__text  -[HKElectrocardiogramCardViewAccessibility isAccessibilityElement]
+0x193df2a74  __TEXT,__text  -[HKElectrocardiogramCardViewAccessibility accessibilityLabel]
+0x193df2a78  __TEXT,__text  -[HKElectrocardiogramCardViewAccessibility accessibilityHint]
+0x193df2a8c  __TEXT,__text  -[HKElectrocardiogramCardViewAccessibility accessibilityTraits]
+0x193df2ad4  __TEXT,__text  +[HKElectrocardiogramChartTableViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df2ae0  __TEXT,__text  +[HKElectrocardiogramChartTableViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df2aec  __TEXT,__text  +[HKElectrocardiogramChartTableViewCellAccessibility _accessibilityPerformValidations:]
+0x193df2b80  __TEXT,__text  -[HKElectrocardiogramChartTableViewCellAccessibility _accessibilityLoadAccessibilityInformation]
+0x193df2be8  __TEXT,__text  -[HKElectrocardiogramChartTableViewCellAccessibility accessibilityElements]
+0x193df2cb8  __TEXT,__text  -[HKElectrocardiogramChartTableViewCellAccessibility initWithGridSize:reuseIdentifier:]
+0x193df2d10  __TEXT,__text  +[HKElectrocardiogramChartViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df2d1c  __TEXT,__text  +[HKElectrocardiogramChartViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df2d28  __TEXT,__text  +[HKElectrocardiogramChartViewAccessibility _accessibilityPerformValidations:]
+0x193df2d2c  __TEXT,__text  -[HKElectrocardiogramChartViewAccessibility accessibilityElementsHidden]
+0x193df2d34  __TEXT,__text  +[HKExportPDFControlAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df2d40  __TEXT,__text  +[HKExportPDFControlAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df2d4c  __TEXT,__text  +[HKExportPDFControlAccessibility _accessibilityPerformValidations:]
+0x193df2d50  __TEXT,__text  -[HKExportPDFControlAccessibility isAccessibilityElement]
+0x193df2d58  __TEXT,__text  -[HKExportPDFControlAccessibility accessibilityTraits]
+0x193df2d68  __TEXT,__text  -[HKExportPDFControlAccessibility accessibilityLabel]
+0x193df2d6c  __TEXT,__text  +[HKInteractiveChartViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df2d78  __TEXT,__text  +[HKInteractiveChartViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df2d84  __TEXT,__text  +[HKInteractiveChartViewControllerAccessibility _accessibilityPerformValidations:]
+0x193df31bc  __TEXT,__text  -[HKInteractiveChartViewControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x193df3280  __TEXT,__text  +[HKInteractiveChartViewControllerAccessibility _axConfigureGraphViewInfoFromData:forGraphView:]
+0x193df34e4  __TEXT,__text  +[HKInteractiveChartViewControllerAccessibility _axConfigureGraphAccessibilityFromData:forGraphView:]
+0x193df39c0  __TEXT,__text  +[HKInteractiveChartViewControllerAccessibility _axTrimAndInterpolateValues:withXvalues:]
+0x193df3d40  __TEXT,__text  -[HKInteractiveChartViewControllerAccessibility _setDateSelectorToVisibleRange]
+0x193df3d8c  __TEXT,__text  -[HKInteractiveChartViewControllerAccessibility _replacePrimaryGraphViewControllerWithTimeScope:anchorDate:animated:]
+0x193df3e3c  __TEXT,__text  ___117-[HKInteractiveChartViewControllerAccessibility _replacePrimaryGraphViewControllerWithTimeScope:anchorDate:animated:]_block_invoke
+0x193df3ef8  __TEXT,__text  -[HKInteractiveChartViewControllerAccessibility _displayNameForDisplayType:]
+0x193df3fcc  __TEXT,__text  -[HKInteractiveChartViewControllerAccessibility graphView:didUpdateSelectedPoint:]
+0x193df408c  __TEXT,__text  -[HKInteractiveChartViewControllerAccessibility graphViewDidEndSelection:]
+0x193df40f4  __TEXT,__text  +[HKListItemLabelAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df4100  __TEXT,__text  +[HKListItemLabelAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df410c  __TEXT,__text  +[HKListItemLabelAccessibility _accessibilityPerformValidations:]
+0x193df4180  __TEXT,__text  -[HKListItemLabelAccessibility isAccessibilityElement]
+0x193df4188  __TEXT,__text  -[HKListItemLabelAccessibility accessibilityLabel]
+0x193df4194  __TEXT,__text  +[HKMonthDayCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df41a0  __TEXT,__text  +[HKMonthDayCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df41ac  __TEXT,__text  +[HKMonthDayCellAccessibility _accessibilityPerformValidations:]
+0x193df4258  __TEXT,__text  -[HKMonthDayCellAccessibility isAccessibilityElement]
+0x193df4260  __TEXT,__text  -[HKMonthDayCellAccessibility accessibilityLabel]
+0x193df4330  __TEXT,__text  -[HKMonthDayCellAccessibility accessibilityTraits]
+0x193df4404  __TEXT,__text  +[HKMonthWeekViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df4410  __TEXT,__text  +[HKMonthWeekViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df441c  __TEXT,__text  +[HKMonthWeekViewAccessibility _accessibilityPerformValidations:]
+0x193df44a8  __TEXT,__text  -[HKMonthWeekViewAccessibility isAccessibilityElement]
+0x193df44b0  __TEXT,__text  -[HKMonthWeekViewAccessibility _accessibilityHitTestShouldFallbackToNearestChild]
+0x193df44b8  __TEXT,__text  -[HKMonthWeekViewAccessibility accessibilityElements]
+0x193df4690  __TEXT,__text  +[HKNumberedListItemViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df469c  __TEXT,__text  +[HKNumberedListItemViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df46a8  __TEXT,__text  +[HKNumberedListItemViewAccessibility _accessibilityPerformValidations:]
+0x193df46e8  __TEXT,__text  -[HKNumberedListItemViewAccessibility isAccessibilityElement]
+0x193df46f0  __TEXT,__text  -[HKNumberedListItemViewAccessibility accessibilityLabel]
+0x193df46fc  __TEXT,__text  +[HKSwitchTableViewCellAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df4708  __TEXT,__text  +[HKSwitchTableViewCellAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df4714  __TEXT,__text  +[HKSwitchTableViewCellAccessibility _accessibilityPerformValidations:]
+0x193df4734  __TEXT,__text  -[HKSwitchTableViewCellAccessibility isAccessibilityElement]
+0x193df473c  __TEXT,__text  -[HKSwitchTableViewCellAccessibility accessibilityTraits]
+0x193df477c  __TEXT,__text  -[HKSwitchTableViewCellAccessibility accessibilityActivationPoint]
+0x193df47cc  __TEXT,__text  -[HKSwitchTableViewCellAccessibility accessibilityValue]
+0x193df4814  __TEXT,__text  +[UITextFieldAccessibility__HealthKit__UIKit(SafeCategory) safeCategoryTargetClassName]
+0x193df4820  __TEXT,__text  +[UITextFieldAccessibility__HealthKit__UIKit(SafeCategory) safeCategoryBaseClass]
+0x193df482c  __TEXT,__text  -[UITextFieldAccessibility__HealthKit__UIKit accessibilityValue]
+0x193df48b8  __TEXT,__text  +[HKWeekdayHeaderPaletteViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df48c4  __TEXT,__text  +[HKWeekdayHeaderPaletteViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df48d0  __TEXT,__text  +[HKWeekdayHeaderPaletteViewAccessibility _accessibilityPerformValidations:]
+0x193df48d4  __TEXT,__text  -[HKWeekdayHeaderPaletteViewAccessibility accessibilityElementsHidden]
+0x193df48dc  __TEXT,__text  +[_HKTimeScopeControlBarAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df48e8  __TEXT,__text  +[_HKTimeScopeControlBarAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df48f4  __TEXT,__text  +[_HKTimeScopeControlBarAccessibility _accessibilityPerformValidations:]
+0x193df49ac  __TEXT,__text  -[_HKTimeScopeControlBarAccessibility _accessibilityLoadAccessibilityInformation]
+0x193df4ad0  __TEXT,__text  ___81-[_HKTimeScopeControlBarAccessibility _accessibilityLoadAccessibilityInformation]_block_invoke
+0x193df4b5c  __TEXT,__text  +[HKGraphViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x193df4b68  __TEXT,__text  +[HKGraphViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x193df4b74  __TEXT,__text  +[HKGraphViewAccessibility _accessibilityPerformValidations:]
+0x193df4be8  __TEXT,__text  -[HKGraphViewAccessibility _accessibilityChartElements]
+0x193df4bf4  __TEXT,__text  -[HKGraphViewAccessibility _accessibilitySetChartElements:]
+0x193df4c00  __TEXT,__text  -[HKGraphViewAccessibility _updateGraphViewConfigurationIfNecessary]
+0x193df4c4c  __TEXT,__text  -[HKGraphViewAccessibility _accessibilityClearElements]
+0x193df4d10  __TEXT,__text  ___55-[HKGraphViewAccessibility _accessibilityClearElements]_block_invoke
+0x193df4d18  __TEXT,__text  -[HKGraphViewAccessibility _accessibilitySupportsChartsV2]
+0x193df4d20  __TEXT,__text  -[HKGraphViewAccessibility accessibilityChartDescriptor]
+0x193df4e64  __TEXT,__text  -[HKGraphViewAccessibility _accessibilityDataSeries]
+0x193df5048  __TEXT,__text  -[HKGraphViewAccessibility _accessibilityScaledYValue:]
+0x193df50ac  __TEXT,__text  -[HKGraphViewAccessibility _accessibilitySeriesTitle]
+0x193df50e4  __TEXT,__text  -[HKGraphViewAccessibility _accessibilityXAxis]
+0x193df5184  __TEXT,__text  -[HKGraphViewAccessibility _accessibilityYAxis]
+0x193df530c  __TEXT,__text  ___47-[HKGraphViewAccessibility _accessibilityYAxis]_block_invoke
+0x193df5398  __TEXT,__text  -[HKGraphViewAccessibility _accessibilityIsContinuous]
+0x193df53c0  __TEXT,__text  -[HKGraphViewAccessibility _accessibilityChartSummary]
+```
+

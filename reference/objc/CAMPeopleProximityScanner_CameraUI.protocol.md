@@ -1,0 +1,24 @@
+# `CAMPeopleProximityScanner` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/CameraUI.framework/CameraUI`](../userland/System__Library__PrivateFrameworks__CameraUI.framework__CameraUI.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 3 properties, 6 instance methods, 0 class methods
+
+## Properties
+
+```
+@property (T@"NSObject<OS_dispatch_queue>",R,N) queue;
+@property (T@"<CAMPeopleProximityScannerDelegate>",R,W,N) delegate;
+@property (TB,R,N) isScanning;
+```
+
+## Instance methods
+
+```
+-[CAMPeopleProximityScanner isScanning];
+-[CAMPeopleProximityScanner initWithQueue:delegate:];
+-[CAMPeopleProximityScanner queue];
+-[CAMPeopleProximityScanner delegate];
+-[CAMPeopleProximityScanner stopDiscovery];
+-[CAMPeopleProximityScanner startDiscoveryWithScanRate:timeout:];
+```

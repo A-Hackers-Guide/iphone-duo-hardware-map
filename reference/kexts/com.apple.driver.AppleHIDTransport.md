@@ -1,0 +1,1686 @@
+# `com.apple.driver.AppleHIDTransport`
+
+- Name: AppleHIDTransport
+- Version: `1010.1`
+- UUID: `D72B215F-0ED0-30CE-98E3-1C45B81ABF29`
+- Source version: `10110.1.0.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleInputDeviceSupport`](com.apple.driver.AppleInputDeviceSupport.md) 1.0, [`com.apple.driver.AppleSMC`](com.apple.driver.AppleSMC.md) 1.0, [`com.apple.driver.AppleSPU`](com.apple.driver.AppleSPU.md) 1.0, [`com.apple.iokit.IOHIDFamily`](com.apple.iokit.IOHIDFamily.md) 1.4, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 11.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 11.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 11.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 11.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 11.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (2) [KC]
+
+### AppleHIDTransportDeviceDummy
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDTransport`
+- `IOClass`: `AppleHIDTransportDeviceDummy`
+- `IONameMatch`:
+  - `hid-transport,dummy`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHIDTransport`
+- `IOProviderClass`: `IOPlatformDevice`
+
+### AppleHIDTransportHIDDevice
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDTransport`
+- `IOClass`: `AppleHIDTransportHIDDevice`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleHIDTransport`
+- `IOPropertyMatch`:
+  - `InterfaceType`: `HID`
+- `IOProviderClass`: `AppleHIDTransportInterface`
+
+
+## C++ classes (30) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AHTEeprom` | 0x38 |  |
+| `AHTFunction` | 0x38 |  |
+| `AHTFunctionDisplayMessage` | 0x30 | AppleARMFunction |
+| `AHTFunctionExecutor` | 0x40 |  |
+| `AHTFunctionInfo` | 0x30 |  |
+| `AHTFunctionKill` | 0x30 | AppleARMFunction |
+| `AHTFunctionPing` | 0x30 | AppleARMFunction |
+| `AHTFunctionSequence` | 0x20 |  |
+| `AHTMemoryDumpExtractor` | 0x28 |  |
+| `AppleHIDTransportBootloader` | 0x148 | AIDService → IOService → IORegistryEntry |
+| `AppleHIDTransportBootloaderCBOR` | 0x160 | AppleHIDTransportBootloaderPassive → AppleHIDTransportBootloader → AIDService → IOService → IORegistryEntry |
+| `AppleHIDTransportBootloaderFlatPack` | 0x348 | AppleHIDTransportBootloaderPassive → AppleHIDTransportBootloader → AIDService → IOService → IORegistryEntry |
+| `AppleHIDTransportBootloaderHIDDevice` | 0x170 | AppleHIDTransportBootloader → AIDService → IOService → IORegistryEntry |
+| `AppleHIDTransportBootloaderPassive` | 0x150 | AppleHIDTransportBootloader → AIDService → IOService → IORegistryEntry |
+| `AppleHIDTransportBootloaderUserClient` | 0x110 | AIDUserClient → IOUserClient → IOService → IORegistryEntry |
+| `AppleHIDTransportDRAMUsageStats` | 0x48 | AppleHIDTransportStats |
+| `AppleHIDTransportDevice` | 0x118 | AIDService → IOService → IORegistryEntry |
+| `AppleHIDTransportDeviceDummy` | 0x120 | AppleHIDTransportDevice → AIDService → IOService → IORegistryEntry |
+| `AppleHIDTransportDeviceUserClient` | 0x120 | AIDUserClient → IOUserClient → IOService → IORegistryEntry |
+| `AppleHIDTransportHIDDevice` | 0xe8 | IOHIDDevice → IOService → IORegistryEntry |
+| `AppleHIDTransportInterface` | 0x1d0 | AIDInterface → AIDService → IOService → IORegistryEntry |
+| `AppleHIDTransportInterfaceUserClient` | 0x110 | AIDUserClient → IOUserClient → IOService → IORegistryEntry |
+| `AppleHIDTransportManagement` | 0x250 | AppleHIDTransportInterface → AIDInterface → AIDService → IOService → IORegistryEntry |
+| `AppleHIDTransportProtocol` | 0xe8 | AIDService → IOService → IORegistryEntry |
+| `AppleHIDTransportProtocolNone` | 0xe8 | AppleHIDTransportProtocol → AIDService → IOService → IORegistryEntry |
+| `AppleHIDTransportSMCNotifier` | 0x48 |  |
+| `AppleHIDTransportStats` | 0x30 |  |
+| `BinaryEncoder` | 0x18 |  |
+| `BinaryEncoderHCC2x` | 0x20 | BinaryEncoder |
+| `BinaryEncoderManager` | 0x20 |  |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1640)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0000d61a off=0x004d3ea0-0x004e14ba addr=0xfffffe00074d7ea0-0xfffffe00074e54ba r--/r--   __TEXT            
+	sz=0x000002f3 off=0x004d4568-0x004d485b addr=0xfffffe00074d8568-0xfffffe00074d885b               __TEXT.__const            
+	sz=0x0000c987 off=0x004d485b-0x004e11e2 addr=0xfffffe00074d885b-0xfffffe00074e51e2               __TEXT.__cstring          (CstringLiterals)
+	sz=0x000002d8 off=0x004e11e2-0x004e14ba addr=0xfffffe00074e51e2-0xfffffe00074e54ba               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x00077274 off=0x01e7c6c0-0x01ef3934 addr=0xfffffe0008e806c0-0xfffffe0008ef7934 r-x/r-x   __TEXT_EXEC       
+	sz=0x00076984 off=0x01e7c6c0-0x01ef3044 addr=0xfffffe0008e806c0-0xfffffe0008ef7044          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000008f0 off=0x01ef3044-0x01ef3934 addr=0xfffffe0008ef7044-0xfffffe0008ef7934          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x000009d8 off=0x04949390-0x04949d68 addr=0xfffffe000b94d390-0xfffffe000b94dd68 rw-/rw-   __DATA            
+	sz=0x000003e8 off=0x04949390-0x04949778 addr=0xfffffe000b94d390-0xfffffe000b94d778               __DATA.__data             
+	sz=0x000004c0 off=0x00000000-0x000004c0 addr=0xfffffe000b94d778-0xfffffe000b94dc38               __DATA.__common           (Zerofill)
+	sz=0x00000130 off=0x00000000-0x00000130 addr=0xfffffe000b94dc38-0xfffffe000b94dd68               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x0000a490 off=0x010db120-0x010e55b0 addr=0xfffffe00080df120-0xfffffe00080e95b0 rw-/rw-   __DATA_CONST      
+	sz=0x000000c8 off=0x010db120-0x010db1e8 addr=0xfffffe00080df120-0xfffffe00080df1e8         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x000000c8 off=0x010db1e8-0x010db2b0 addr=0xfffffe00080df1e8-0xfffffe00080df2b0         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00009288 off=0x010db2b0-0x010e4538 addr=0xfffffe00080df2b0-0xfffffe00080e8538         __DATA_CONST.__const            
+	sz=0x00000ac0 off=0x010e4538-0x010e4ff8 addr=0xfffffe00080e8538-0xfffffe00080e8ff8         __DATA_CONST.__kalloc_type      
+	sz=0x00000478 off=0x010e4ff8-0x010e5470 addr=0xfffffe00080e8ff8-0xfffffe00080e9470         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000140 off=0x010e5470-0x010e55b0 addr=0xfffffe00080e9470-0xfffffe00080e95b0         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 326 at 0x04adb4dc
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     D72B215F-0ED0-30CE-98E3-1C45B81ABF29
+008: LC_SOURCE_VERSION           10110.1.0.0.0
+009: LC_FUNCTION_STARTS          offset=0x004aa2938 size=0xd78
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleHIDTransport`
+- `CFBundleIdentifier`: `com.apple.driver.AppleHIDTransport`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleHIDTransport`
+- `CFBundleNumericVersion`: `0`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1010.1`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1010.1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `"Copyright © 2016 Apple Inc. All rights reserved. [AppleInputDeviceSupport_kexts-10110.1]"`
+- `OSBundleCompatibleVersion`: `1.0`
+- `OSBundleRequired`: `Console`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleHIDTransport.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198900736352`
+- `_PrelinkExecutableRelativePath`: `AppleHIDTransport`
+- `_PrelinkExecutableSize`: `587510`
+- `_PrelinkExecutableSourceAddr`: `-2198900736352`
+- `_PrelinkKmodInfo`: `-2198828952688`
+
+## Strings (1528) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `CoverGlass`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Invalid %s property: it's not a dictionary`
+- `[0x%llx][%llx][%s::%s]: Update phase : %s`
+- `TimeoutUs`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Null firmware array provided`
+- `parseReadyStatus`
+- `val`
+- `result`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Description not found`
+- `interfaceType`
+- `[0x%llx][%llx][%s::%s]: No '%s' entry found, not creating encoders`
+- `cborFirmware`
+- `[0x%llx][%llx][%s::%s]: kConfigResponsePacketType was overwritten to use report ID 0x%02X`
+- `getMemoryDumpInfoForInterface`
+- `propName`
+- `[0x%llx][%llx][%s::%s]: Skipping power state transition: status = %s (0x%08X)`
+- `[0x%llx][%llx][%s::%s]: Memory dump size %d > max size %d`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Interface with name '%s' already exists`
+- `section->getObject(\"Address\")`
+- `[0x%llx][%llx][%s::%s]: Property %s not found in %s`
+- `[0x%llx][%llx][%s::%s]: Found %s in iface %u`
+- `Personality`
+- `CalibrationPropertyName`
+- `[0x%llx][%llx][%s::%s]: Verifying lock chip status`
+- `srcBytes`
+- `_relayManager`
+- `[0x%llx][%llx][%s::%s]: ERROR!! function-%s() returned 0x%08x`
+- `Script`
+- `IOReportLegend`
+- `VarEqual`
+- `DeviceMatchingDictionary`
+- `comparisonResult`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Couldnt add entry to dictionary`
+- `isSetReportAllowed`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Output report too long`
+- `prepareFirmwareUpdate`
+- `found data %s\n`
+- `[0x%llx][%llx][%s::%s]: Instantiating bootloader %s`
+- `false`
+- `propVal`
+- `bounded_ptr<T>::operator+=(n): Adding the specified number of bytes to the offset representing the current position would overflow.`
+- `HIDDescriptor`
+- `mapPowerStateToNotificationType`
+- `[0x%llx][%llx][%s::%s]: Removing property '%s'`
+- `descriptor->payload`
+- `result == 0 `
+- `readProperty`
+- `propertyHeaderDict`
+- `[0x%llx][%llx][%s::%s]: ERROR!! No descriptor property`
+- `[0x%llx][%llx][%s::%s]: Queuing initial report.`
+- `BigEndian`
+- `AHTFunctionPing`
+- `isSupportedWithinTable`
+- `[0x%llx][%llx][%s::%s]: Enabling SMC notifier!`
+- `[0x%llx][%llx][%s::%s]: Property does not have address. But dont skip collection`
+- `1211111`
+- `memoryDumps->setObject(memoryDump)`
+- `OS Boot`
+- `site.CallParam`
+- `byteCount == sizeof(captureMemDumpReport)`
+- `externalResourceAction`
+- `use-static-config`
+- `configSequence`
+- `src`
+- `outMemoryDumpInfo`
+- `Generic Section`
+- `Mach Architecture`
+- `argValues`
+- `[0x%llx][%llx][%s::%s]: Removing %s because it's not present in the new config`
+- `value || maxValue || minValue`
+- `[0x%llx][%llx][%s::%s]: The interface is ready. Ignoring.`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unsupported binary encoder '%s'`
+- `bytesWritten == _contents->getLength()`
+- `subTypeNum`
+- `AppleHIDTransportDeviceUserClient`
+- `checkRepairHistory`
+- `[0x%llx][%llx][%s::%s]: No personality. Skipping.`
+- `setPowerGatedWillHas`
+- `MatchingTimeoutMs`
+- `extractChunkSize`
+- `[0x%llx][%llx][%s::%s]: Ignoring kill request (powerState:%u)`
+- `personalityDict`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Consecutive bootload failures %u exceeding maximum limit %u`
+- `length`
+- `getPropertyLengthArgument`
+- `[0x%llx][%llx][%s::%s]: Verifying image contents...`
+- `comparisonType`
+- `configBool`
+- `sendNotification`
+- `Sleep`
+- `site.AppleHIDTransportDeviceUserClient`
+- `notify`
+- `configure`
+- `[0x%llx][%llx][%s::%s]: %s (id=%d) received capture memory dump response with ID=%u, status=0x%08X (%s)`
+- `Requirements`
+- `getMemoryDumpLevel`
+- `Property Sources`
+- `Enable`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/AHTFunctionExecutor.cpp`
+- `ioService`
+- `level`
+- `[0x%llx][%llx][%s::%s]: Firmware loaded`
+- `InterfaceDisabled`
+- `[0x%llx][%llx][%s::%s]: Fetching report 0x%X for property %s`
+- `MTP.SharedDRAMUsage`
+- `delay`
+- `cacheBootloaderConfig`
+- `sizeof(header) < rawPayload->getLength()`
+- `AsyncRegistration`
+- `_bootloaderType`
+- `osBool`
+- `memoryDump->setObject(\"Payload\", payload)`
+- `Read`
+- `%.*s\n`
+- `ret`
+- `OSDynamicCast(OSString, image->getObject(kPropertyVariableNameKey))`
+- `site.AHTFunctionPing`
+- `sectionHeader.size < kMaxSectionSize`
+- `[0x%llx][%llx][%s::%s]: Invalid property: %s`
+- `[0x%llx][%llx][%s::%s]: Repair history detected for %s`
+- `sleep-sequence`
+- `addRelatedInterfaceNotification`
+- `overridePropertiesDict`
+- `allParameterConfigs`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/AppleHIDTransportManagement.cpp`
+- `[0x%llx][%llx][%s::%s]: reportId 0x%02X`
+- `_downloaderTimer`
+- `bufferMD`
+- `OffsetLength`
+- `dstBytes`
+- `[0x%llx][%llx][%s::%s]: Sending calibration blob %s for iface %u (%s) from source: %s`
+- `[0x%llx][%llx][%s::%s]: Requested kill. Killing device (sinceLastBoot:%ums)`
+- `offsetNumber`
+- `Off`
+- `AppleDiagnosticDataDisplay`
+- `[0x%llx][%llx][%s::%s]: ERROR!! data retrieval failed, result = 0x%08x`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/AppleHIDTransportBootloaderHIDDevice.cpp`
+- `functionExecutor`
+- `/chosen`
+- `[0x%llx][%llx][%s::%s]: [%s] : %s`
+- `This bounded_ptr is pointing to memory outside of what can be represented by a native pointer.`
+- `_functionProvider`
+- `instructions`
+- `param`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Couldn't allocate OSNumber`
+- `Payload`
+- `[0x%llx][%llx][%s::%s]: Firmware is empty`
+- `updated`
+- `data`
+- `OSDynamicCast(OSNumber, image->getObject(kPropertyBranchOffsetKey))`
+- `[0x%llx][%llx][%s::%s]: Waking up`
+- `blockAccessGated`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Report is too small %llu < %lu`
+- `RepairHistory`
+- `OverrideDictionary`
+- `handleChunkedWrite`
+- `BinaryEncoderManager`
+- `loadFirmware`
+- `memoryDumpCount`
+- `[0x%llx][%llx][%s::%s]: Debouncing kill request (sinceLastBoot:%ums)`
+- `[0x%llx][%llx][%s::%s]: Updating Property Header`
+- `Report ID`
+- `readOffset + size <= runtimeData->getLength()`
+- `deviceSerialKey`
+- `param->threadCall`
+- `TimestampMs`
+- `loadPropertyForImage`
+- `The range of valid memory is too large to be represented by this type, or [begin, end) is not a well-formed range`
+- `[0x%llx][%llx][%s::%s]: Loaded firmware for %s interface (id=%u) due to power state change: ret=0x%08X (%s)`
+- `[0x%llx][%llx][%s::%s]: Key : %s`
+- `[0x%llx][%llx][%s::%s]: We have the same ancestor!!`
+- `_smcPhandle`
+- `Low`
+- `WatchdogResetCount`
+- `memoryDump`
+- `parseLocationId`
+- `site.AHTFunction`
+- `FaceID`
+- `[0x%llx][%llx][%s::%s]: Enabling relay!`
+- `Overridden`
+- `setPropertiesLegacy`
+- `cacheCalibration`
+- `OSDynamicCast(OSNumber, calibrationDict->getObject(kPropertyLengthKey))`
+- `handleWake`
+- `handleResetRequest`
+- `handleConfigRequestFromThread_block_invoke`
+- `readPropertyGated`
+- `itemIter`
+- `[0x%llx][%llx][%s::%s]: Creating %d encoders`
+- `cborFirmware->getLength() == requiredSize`
+- `%u`
+- `[0x%llx][%llx][%s::%s]: Checking requirement : %s`
+- `initialReport->getLength() > 0`
+- `_interface`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Interface with id %u already exists`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Wrong value for key %s for interface %u`
+- `Mask`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unknown function type for %s: %s`
+- `[0x%llx][%llx][%s::%s]: [%s] condition %s`
+- `expectedCalibrationSize && expectedCalibrationSize->unsigned32BitValue() == calibrationData->getLength()`
+- `HIDContinuousRecorder`
+- `Firmware Version`
+- `CalibrationDescriptor`
+- `offsetVal + refLength <= variableData->getLength()`
+- `Data`
+- `_descriptorWorkloop`
+- `getBootloader()->validateScript(sectionScript) == 0 `
+- `validateEeprom`
+- `MaxControlReportLength`
+- `DefaultProperties`
+- `Watchdog Reset Count`
+- `registerUserClient`
+- `verifyChecksum`
+- `copyImagePayload`
+- `handleMemoryDump`
+- `(ioRet == kIOReturnSuccess) || (ioRet == kIOReturnNotReady)`
+- `_commandGate`
+- `site.AppleHIDTransportInterface`
+- `NotifyAllResets`
+- `beginDrainPollingFifo`
+- `ModelNumber`
+- `spuInterfaceHandle`
+- `chunkSize`
+- `Manufacturer`
+- `Type`
+- `[0x%llx][%llx][%s::%s]: %s already exist. Bypassing.`
+- `[0x%llx][%llx][%s::%s]: Property %s contains an override, skipping property load.`
+- `bInterfaceNumber`
+- `calibrationDescriptor`
+- `encoder`
+- `osNumber`
+- `instructions->appendBytes(&instructionsEntry, sizeof(instructionsEntry))`
+- `ioRet == 0 `
+- `[0x%llx][%llx][%s::%s]: Closing device before terminating protocol`
+- `mergedReference`
+- `[0x%llx][%llx][%s::%s]: Requirements satisfied - Execute this phase`
+- `_recursiveLocks > 0`
+- `newMemoryDumpInfoOSData`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot create iterator`
+- `addr`
+- `killDeviceGated`
+- `Not`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Couldn't create property from reference %s starting at %u with %u bytes (length %u)`
+- `ProductString`
+- `MaxInputReportLength`
+- `VariableDefinition`
+- `notificationType`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot add available interfaces list`
+- `SelfContained`
+- `updatePropertyGated`
+- `terminateClients`
+- `root`
+- `[0x%llx][%llx][%s::%s]: FDR load completed for interface %s, will fetch calibration data now`
+- `Management`
+- `functionID`
+- `retCleanUp == 0 `
+- `B16@?0^{OSObject=^^?i}8`
+- `[0x%llx][%llx][%s::%s]: interface %u, resource %u, action %u, reason %u, timestamp %llu`
+- `getMemoryDumpInfoForInterface_block_invoke`
+- `externalResources`
+- `getDescriptor`
+- `Magic Value`
+- `%s Version`
+- `propertiesDict`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Dictionary iterator is unavailable`
+- `notifyWithResult`
+- `[0x%llx][%llx][%s::%s]: ERROR!! FlatPack Config is missing required key %s`
+- `!_smc`
+- `argNum->unsigned8BitValue() < numArgs`
+- `LessThan`
+- `Delay`
+- `AppleHIDTransportManagement`
+- `parseHIDDescriptor`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unsupported transport version %u`
+- `reportBuffer->getLength() >= sizeof(ConfiguredFunctionCallRequest)`
+- `Enable/Disable Delay not found`
+- `ThirdParty`
+- `taskBuffer`
+- `cacheResult == 0 `
+- `returnBytes->appendBytes(argOutput.get())`
+- `site.AppleHIDTransportDeviceDummy`
+- `mergedDict->merge(headerDict)`
+- `[0x%llx][%llx][%s::%s]: Report Id 0x%x found in getReportAllowList`
+- `112122`
+- `propertyData`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Sleeping waiting for capture memory dump response failed with error 0x%08X`
+- `EncodedPayload`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Firmware loading time exceeded timeout period of %u ms`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Error: Unknown power state notification`
+- `sectionlevels`
+- `False`
+- `payloadPtr`
+- `Passive`
+- `IOReportLegendPublic`
+- `(ret == kIOReturnSuccess) || (ret == kIOReturnUnsupported)`
+- `instructions->appendBytes(&instructionsHeader, sizeof(instructionsHeader))`
+- `[0x%llx][%llx][%s::%s]: FW update complete msg for %s: firmware update ID %u, result %s (0x%08X)`
+- `memoryDumpSections`
+- `InputReportLoggingBufferMaxUsagePercent`
+- `Value`
+- `reqIter`
+- `121111121222121211111111111111121212`
+- `RestoreOS`
+- `12`
+- `[0x%llx][%llx][%s::%s]: Fetching property %s from reference %s`
+- `121121211`
+- `SetReport`
+- `_report`
+- `[0x%llx][%llx][%s::%s]: Capturing memory dump for %s interface (id=%d), memoryDumpID=%d, memoryDumpPhysAddr=0x%016llX, memoryDumpSize=%d, internalInstall=%d`
+- `[0x%llx][%llx][%s::%s]: Hardcoded deassert`
+- `[0x%llx][%llx][%s::%s]: function-%s(*%u)`
+- `Binary`
+- `metaDict`
+- `overridePropertiesGated`
+- `Memory Dump Timeout Ms`
+- `HIDEventDriverEnabled`
+- `_fMemoryDumpSerializer`
+- `VariableName`
+- `deviceMatch->merge(matchingDict)`
+- `ShouldCache`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Couldn't create interface`
+- `Invalid Interface`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot find ARM functions for %s`
+- `[0x%llx][%llx][%s::%s]: Calibration blob %s not found for interface %u (%s)`
+- `memoryDump->getObject(\"Mach Architecture Flavor\")`
+- `AppleHIDTransportBootloader`
+- `_firmwareArray`
+- `[0x%llx][%llx][%s::%s]: Reading property %s from %s`
+- `[0x%llx][%llx][%s::%s]: ERROR!! FDR property %s not valid`
+- `descriptor->chunkSizeDescriptor`
+- `_notifyCallbackOwner`
+- `[0x%llx][%llx][%s::%s]: FlatPack table end found`
+- `[0x%llx][%llx][%s::%s]: Building instructions and contents...`
+- `[0x%llx][%llx][%s::%s]: Firmware size is bigger than max (%u > %u)`
+- `size > 0 && size <= sizeof(readValue)`
+- `property || (!property && !data)`
+- `overrideProperties`
+- `post-reset-memory-dump-sequence`
+- `On`
+- `IgnoreError`
+- `calibrationKey || defaultData`
+- `userClient`
+- `IOUserClientClass`
+- `setCurrentPersonality`
+- `!_memoryDumps`
+- `Off Without Reset`
+- `findEepromDriver`
+- `handleConfigResponse`
+- `OSDynamicCast(OSNumber, descriptor->getObject(kPropertyOffsetKey))`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/AppleHIDTransportBootloaderFlatPack.cpp`
+- `_contentsSharedMemoryBlock`
+- `AppleHIDTransportProtocolNone`
+- `FDR - interface`
+- `mask`
+- `VolumeButton`
+- `%s-restore`
+- `[0x%llx][%llx][%s::%s]: Report Id 0x%x found in setReportAllowList`
+- `[0x%llx][%llx][%s::%s]: Skipping updating reporters data because we are pending memory dump`
+- `handleLoadImage`
+- `[0x%llx][%llx][%s::%s]: Scheduled config value request on separate thread`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Failed to update property source dictionary with key value pair (%s, %s)`
+- `[0x%llx][%llx][%s::%s]: function-%s(bytes from property %s, length=%llu)`
+- `memoryDumpSectionsCount`
+- `GetReportAllowlist`
+- `AHTFunctionExecutor`
+- `site.AHTFunctionCallThreadParam`
+- `_lockGate`
+- `AppleHIDTransportBootloaderUserClient`
+- `[0x%llx][%llx][%s::%s]: Old property '%s' [StrVal : %s]`
+- `checkResult`
+- `Property Header`
+- `memDesc`
+- `callARMFunctionSequence`
+- `allParameterConfigs && allAgumentData`
+- `[0x%llx][%llx][%s::%s]: ERROR!! %s not available`
+- `[0x%llx][%llx][%s::%s]: ERROR!! logEvent failed, result = 0x%08x`
+- `OSDynamicCast(OSData, image->getObject(kPropertyPayloadKey))`
+- `reference`
+- `calibrationDict`
+- `extractor`
+- `payloadNum`
+- `[0x%llx][%llx][%s::%s]: Waiting for firmware loading...`
+- `endDrainPollingFifo`
+- `MaxDRAMUsageInLastDay`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/AHTFunction.cpp`
+- `createProtocol`
+- `init`
+- `outputMD`
+- `[0x%llx][%llx][%s::%s]: reportID : %d`
+- `sizeObject`
+- `retVal == 0 `
+- `[0x%llx][%llx][%s::%s]: ERROR!! Slave bootloader doesn't support updateProperty`
+- `_eepromContentKey`
+- `site.AppleHIDTransportBootloaderHIDDevice`
+- `[0x%llx][%llx][%s::%s]: ERROR!! %s received stale firmware update ID (%u, expecting %u)`
+- `[0x%llx][%llx][%s::%s]: function-%s(provided bytes, length=%llu)`
+- `Name`
+- `image-tag`
+- `AppleHIDTransportStats`
+- `ChunkSize`
+- `HIDRelayUSBInterface`
+- `getValueFromObject`
+- `requirement`
+- `[0x%llx][%llx][%s::%s]: Skipping verification for lock chip status`
+- `ZeroedData`
+- `argumentData`
+- `[0x%llx][%llx][%s::%s]: Memory dump decoded successfully`
+- `Calibration`
+- `lockSharedResources`
+- `_memoryDumpCommandGate`
+- `owningTask`
+- `OSDynamicCast(OSNumber, image->getObject(kPropertyOffsetLengthKey))`
+- `hid-fw-personality`
+- `notifyReportData->getLength() == sizeof(notifyReport) + notifyReport.argSizes[0] + notifyReport.argSizes[1] + notifyReport.argSizes[2]`
+- `[0x%llx][%llx][%s::%s]: Evaluating validation condition for %s`
+- `BitShift`
+- `!referenceDict`
+- `Reporters`
+- `site.SetReportContext`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Parameter configs contains unsupported type:%s`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/BinaryEncoder/BinaryEncoderManager.cpp`
+- `site.AppleHIDTransportBootloaderFlatPack`
+- `stop`
+- `description`
+- `[0x%llx][%llx][%s::%s]: Key \"%s\" in override dictionary matches with property`
+- `EEPROM`
+- `[0x%llx][%llx][%s::%s]: Notifying power state event %d from %s (0x%02X) to %s (0x%02X)`
+- `[0x%llx][%llx][%s::%s]: %s related interface %s appeared`
+- `propDict`
+- `_panicReg`
+- `built-in`
+- `SkipPublishPropertySource`
+- `FDR`
+- `_fOwner`
+- `handleReady`
+- `memoryDump->setObject(\"Sections\", memoryDumpSections)`
+- `Checking for %s\n`
+- `Validation`
+- `setPowerGatedAtomic`
+- `PropertyID`
+- `relayTeardown`
+- `smcNotificationThread`
+- `iterSections`
+- `AHTOverrideWorkLoopAtInit`
+- `FIFOid`
+- `sizeWritten == sizeOfPropertyData`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Report ID 0x%02X failed with error 0x%08X. Ignoring error.`
+- `site.AppleHIDTransportProtocol`
+- `HIDRelayHostWakeCapable`
+- `phandle`
+- `resetDeviceGated`
+- `initialReport`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/AppleHIDTransportStats.cpp`
+- `0123456789ABCDEF`
+- `12111111`
+- `notifyCallbackOwner`
+- `memoryDumpInfo`
+- `AltFunc`
+- `Reload Default Personality`
+- `ChunkedWriteCal`
+- `_accessBlocked`
+- `[0x%llx][%llx][%s::%s]: %s serial number: %s`
+- `memoryDumpConfig`
+- `[0x%llx][%llx][%s::%s]: Comparison %llu > %llu: %s`
+- `!config`
+- `property`
+- `parseCalibrationDescriptor`
+- `PropertyLength`
+- `getZeroedDataArgument`
+- `AHTFunctionDisplayMessage`
+- `readMemoryDump`
+- `_eventLogger`
+- `Offset`
+- `AppleHIDTransportInterface`
+- `VarLessThan`
+- `DefaultDumpLevelInternal`
+- `AHTFunction`
+- `smc-notifier-phandle`
+- `AppleHIDTransportBootloaderPassive`
+- `Interface \"DefaultProperties\"`
+- `reportBuffer->getLength() == reportSize`
+- `[0x%llx][%llx][%s::%s]: %s(&%llu, &%llu)`
+- `[0x%llx][%llx][%s::%s]: Personality set to '%s'`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Component array not found`
+- `registerDRAMUsageDataCollection`
+- `[0x%llx][%llx][%s::%s]: FW payload write : %u%%`
+- `validateCalibrationDescriptor`
+- `functionCache->getCount() > 0`
+- `externalResourceActionGated`
+- `memoryDump->setObject(\"Mach Architecture Flavor\", machArchitectureFlavor)`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Inactive device`
+- `MergeFromHeader`
+- `_relatedInterface`
+- `sizeOfPropertyData <= maxPropertySize`
+- `_encoders`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Couldn't add entry %s`
+- `site.AHTMemoryDumpExtractor`
+- `Config0`
+- `[0x%llx][%llx][%s::%s]: Options: 0x%08X`
+- `[0x%llx][%llx][%s::%s]: ERROR!! EEPROM property %s not valid`
+- `[0x%llx][%llx][%s::%s]: Performing update for %s...`
+- `size`
+- `DisableValidation`
+- `[0x%llx][%llx][%s::%s]: %s(0, 0, &%llu)`
+- `OSDynamicCast(OSNumber, descriptor->getObject(kPropertyLengthKey))`
+- `enumerationComplete`
+- `bcrt`
+- `CmCl`
+- `_doomclockTimeout`
+- `Property Name`
+- `calibrationData`
+- `Integer`
+- `dCfg`
+- `hasReachedMaxConsecutiveBootFailuresLimit`
+- `_relatedInterfaceNotify`
+- `formChunkWriteDescriptor`
+- `[0x%llx][%llx][%s::%s]: AHTFunction request for interfaceId %u, functionId %s, reason %u, timestamp %llu`
+- `flatPackConfig`
+- `Address`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Firmware loading failed`
+- `[0x%llx][%llx][%s::%s]: Relaying readProperty to master`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Couldn't copy descriptor`
+- `request`
+- `[0x%llx][%llx][%s::%s]: interface %u, status %u`
+- `captureMemoryDump`
+- `[0x%llx][%llx][%s::%s]: State: 0x%x`
+- `dictionaryBuffer`
+- `sharedMemoryBlock->getBuffer()->getCapacity() < UINT32_MAX`
+- `memoryDump->getObject(\"Mach Architecture\")`
+- `Constructed Firmware`
+- `logger`
+- `newLoggerUserClientGated`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/AppleHIDTransportBootloader.cpp`
+- `InterfaceConfig`
+- `_interfacesMemoryDumpInfo`
+- `handleDescriptor`
+- `vcrt`
+- `outputPD->prepare() == 0 `
+- `[0x%llx][%llx][%s::%s]: Actual [%llu], Reference [%llu]`
+- `Run Pre-FDR Update`
+- `Power Off On Shutdown`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Invalid response from initial report.`
+- `[0x%llx][%llx][%s::%s]: Interface has already been %s`
+- `eepromDictionary`
+- `readCurrentProperty`
+- `HIDServiceEnabled`
+- `[0x%llx][%llx][%s::%s]: logDRAMUsage, memoryFifoCount = %d`
+- `_currentFwUpdateInfo.inProgress`
+- `Restart`
+- `ConfigResponsePacketTypeOverride`
+- `[0x%llx][%llx][%s::%s]: function-%s()`
+- `readMemoryDumpSections`
+- `Invalid parameters: %p, %p, %lu\n`
+- `AppleHIDTransportBootloaderFlatPack`
+- `getBootloader()->executeScript(sectionScript) == 0 `
+- `site.AHTFunctionSequence`
+- `equal`
+- `header->magic == PropertyHeader::kMagic`
+- `AppleHIDTransportDRAMUsageStats`
+- `prpc`
+- `[0x%llx][%llx][%s::%s]: Property %s reference did not define an offset or size. Using entire payload`
+- `PropertyName`
+- `bOffset`
+- `descriptor.payload`
+- `deviceHandle`
+- `OSDynamicCast(OSString, descriptor->getObject(kPropertyVariableNameKey))`
+- `section->getObject(\"Name\")`
+- `loadDefaultCalibration`
+- `propertySource`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Couldn't create OSNumber. Notification %u in interface %u not sent`
+- `refLength > 0`
+- `site.AppleHIDTransportProtocolNone`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot allocate product string`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Couldn't get interface descriptor for iface %u: error 0x%08x`
+- `%s-serial-number`
+- `bytes`
+- `[0x%llx][%llx][%s::%s]: ERROR!! '%s' length is invalid: %u > %u`
+- `[0x%llx][%llx][%s::%s]: Loading personality %s`
+- `[0x%llx][%llx][%s::%s]: Waiting for capture memory dump response message...`
+- `memoryDumpInfoPacked`
+- `memoryDumpInfoPacked->getLength() == sizeof(MemoryDumpInfo)`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Fail to notify after ARM function call with error 0x%08X for interface %u, functionID %s reason %u, timestamp %llu`
+- `[0x%llx][%llx][%s::%s]: ERROR!! %s, %s file: %s, line: %d, value: 0x%08X`
+- `keyIterator`
+- `not detected`
+- `[0x%llx][%llx][%s::%s]: reload all properties`
+- `[0x%llx][%llx][%s::%s]: Attempting to lock chip`
+- `site.ConfigRequestThreadParam`
+- `Enable/Disable Type not found`
+- `site.AppleHIDTransportBootloader`
+- `MinValue`
+- `_interfaceToBoot`
+- `[0x%llx][%llx][%s::%s]: Scheduled reset request on a separate thread`
+- `initSingle`
+- `[0x%llx][%llx][%s::%s]: Prop [%s] does not exist`
+- `[0x%llx][%llx][%s::%s]: Registering interface.`
+- `argOutput`
+- `[0x%llx][%llx][%s::%s]: Wake received from interface %u (%s) at timestamp %llu`
+- `DisableDelayUs`
+- `name`
+- `[0x%llx][%llx][%s::%s]: Requirements not satisfied - Skip this phase`
+- `ParameterConfigs`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/AppleHIDTransportProtocol.cpp`
+- `setEnable`
+- `MTUB`
+- `[0x%llx][%llx][%s::%s]: %s related interface pending. Waiting for it to appear.`
+- `validateInterfaceInfo`
+- `ifArray`
+- `timestampMs`
+- `dumpLevel`
+- `updateProperty`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Registry property %s not valid`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Failed to send mach notification with type %u (err=0x%X)`
+- `serial`
+- `[0x%llx][%llx][%s::%s]: ERROR!! unserializedBytes = nil, errorString = %s`
+- `IsLockChipReport`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Parameter of type %s cannot have overwrites`
+- `[0x%llx][%llx][%s::%s]: Waking up sleeping FW update thread for %s...`
+- `getPropertyValueArgument`
+- `_interfaces`
+- `HIDRelayManagerDeviceConfig`
+- `smcResult == kSMCSuccess`
+- `AHTFunctionSequence`
+- `Mux`
+- `N/A`
+- `121121`
+- `[0x%llx][%llx][%s::%s]: response 0x%02llx bytes @ 0x%02llx :%s`
+- `ProductID`
+- `contents->appendBytes(firmwareData)`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot add location id`
+- `[0x%llx][%llx][%s::%s]: Executing memory dump script for %s`
+- `[0x%llx][%llx][%s::%s]: Skipping memory dump capture for interface %u (%s) due to level being 0`
+- `site.AppleHIDTransportDRAMUsageStats`
+- `OSDynamicCast(OSDictionary, image->getObject(kPropertyMatchingDictionaryKey))`
+- `[0x%llx][%llx][%s::%s]: Variable [%s] is %s than reference value`
+- `[0x%llx][%llx][%s::%s]: Missing payload for property %s`
+- `SectionLevels`
+- `funcType`
+- `_downloaders`
+- `_prioritySleepWakeNotifier`
+- `The offset of the pointer inside its valid memory range can't be represented using int32_t`
+- `NotifyPowerStateChange`
+- `maxDRAMUsageInLastDayObj && totalDRAMCapacityObj`
+- `[0x%llx][%llx][%s::%s]: Using specified %u bytes for config request`
+- `cacheFunctionExecutor`
+- `setObjectSucceed`
+- `_bootloader`
+- `setDownloadCompletedAction`
+- `nameStr`
+- `_recursiveLocks != 0`
+- `MSRk`
+- `hid-merge-personality`
+- `config`
+- `[0x%llx][%llx][%s::%s]: ERROR!! entry in array is empty`
+- `bCountryCode`
+- `[0x%llx][%llx][%s::%s]: Report Id 0x%x NOT found in getReportAllowList`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Power on failed. Consecutive boot failures: %u`
+- `HIDServiceSupport`
+- `site.AppleHIDTransportDevice`
+- `[0x%llx][%llx][%s::%s]: ERROR!! dictData is nullptr`
+- `1211`
+- `AppleHIDTransportHIDDevice`
+- `personalityName`
+- `[0x%llx][%llx][%s::%s]: Sleeping %ums to ensure min %ums `
+- `deviceTerminationMatch`
+- `[0x%llx][%llx][%s::%s]: ERROR!! %s got a memory dump version mistach, got %u, expected %u`
+- `[0x%llx][%llx][%s::%s]: Executing section script for %s`
+- `powerHasChanged`
+- `bootloaderObj`
+- `Primary`
+- `command`
+- `EnableValidation`
+- `bCfg`
+- `filteredFirmwareArray`
+- `getBootloader()->readyToMemoryDump(magicAddress, magicValue)`
+- `sectionSize`
+- `Input`
+- `[0x%llx][%llx][%s::%s]: Drain was active during stop, cleaning up`
+- `High`
+- `checkNewImage`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Ignoring previous error`
+- `dataBuf`
+- `_allFunctionConfigs`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Bad configuration provided: result %s (0x%08X)`
+- `setContentsSharedMemoryBlock`
+- `[0x%llx][%llx][%s::%s]: Running loadImage asynchronously`
+- `printPtr <= BufferSizePerLog`
+- `site.AppleHIDTransportBootloaderPassive`
+- `ARMFunctionConfigurations`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unserialized Bytes can't be converted to dictionary`
+- `[0x%llx][%llx][%s::%s]: Device matched!`
+- `1211111212221212111111111111111212`
+- `handleDeferredBootload_block_invoke`
+- `[0x%llx][%llx][%s::%s]: AHTFunction Notify for interfaceId %u, functionId %s, reason %u, timestamp %llu Returned data size:%u, arg0Size:%u, arg1Size:%u, arg2Size:%u`
+- `AppleHIDTransport`
+- `createPayload`
+- `callFunction`
+- `reportBuffer->getLength() >= sizeof(*requestWithBytes)`
+- `interface`
+- `setMemoryDumpLevel`
+- `Reference`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Failed to notify user client %p (err=0x%X)`
+- `unknown error`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unsupported value type`
+- `SetReportAllowlist`
+- `relatedInterfaceNotificationHandler_block_invoke`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Data is invalid`
+- `expected`
+- `sizeNumber`
+- `images`
+- `[0x%llx][%llx][%s::%s]: Fetching property %s`
+- `ReportersDuringSleep`
+- `interfaceId`
+- `getPower`
+- `varDataEmpty || varDataLargeEnough`
+- `initWithTargetDataAndSymbol`
+- `_validKeys`
+- `newReportDescriptor`
+- `parseAvailableInterfaces`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Invalid interface id %u`
+- `propertyString`
+- `[0x%llx][%llx][%s::%s]: %s(&%llu)`
+- `[0x%llx][%llx][%s::%s]: Device shutting down, skipping power off.`
+- `sleepUntilTimeElapsed`
+- `[0x%llx][%llx][%s::%s]: inBufferSize=%u`
+- `1211111212221212111111211111111112211211111111`
+- `AppleHIDTransportProtocol`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Failed to get device name`
+- `[0x%llx][%llx][%s::%s]: ERROR!! %s firmware update status indiciates failure (0x%08X, %s)`
+- `acquireUpdateAccess`
+- `mergedDict`
+- `argData`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot acquire report gate`
+- `_panicRegDesc`
+- `memoryDumpSectionConfigs`
+- `maxDRAMUsageInLastDayArray && totalDRAMCapacityArray`
+- `eventPayload`
+- `ChunkedWrite`
+- `getahtFunctions`
+- `loggerProvider`
+- `getImageDownloader`
+- `number`
+- `getIntegerArgument`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unknown type! 0x%x`
+- `contentsIndex == instructionsHeader.numEntries`
+- `_ahtFunctions`
+- `reportBuffer->getLength() == (sizeof(*requestWithBytes) + requestWithBytes->bytesSize)`
+- `byteCount == sizeof(response)`
+- `HIDBuiltIn`
+- `_allFunctionConfigs->getCount() > 0`
+- `performUpdate`
+- `smc`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot create arm function dictionary`
+- `Mach Architecture Flavor`
+- `EnableDelayUs`
+- `Config1`
+- `((uint64_t)headerSize + payloadSize + footerSize) <= payload->getLength()`
+- `[0x%llx][%llx][%s::%s]: Repair history entry not found`
+- `createImageArrayForPersonality`
+- `ret == kIOReturnSuccess || ret == kIOReturnUnsupported`
+- `[0x%llx][%llx][%s::%s]: Attempting to read core dump for %s`
+- `defaultProperties`
+- `request.version == 1`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot find %s in iface %u`
+- `Protocol`
+- `personalityKey`
+- `DRAM_Size`
+- `[0x%llx][%llx][%s::%s]: Waiting for device to show up`
+- `owner`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Couldn't send report to shared resource '%s' in interface %u: 0x%08x`
+- `add`
+- `HID Bootloadable`
+- `updateSectionSizes`
+- `PowerMethod`
+- `calibrationBuffer`
+- `allAgumentData->getCount() <= kMaxFunctionArgCount && allAgumentData->getCount() == allParameterConfigs->getCount()`
+- `getDataArgument`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Config report with id %u for iface %u is too big: %u > %u`
+- `Size`
+- `SysCfg`
+- `[0x%llx][%llx][%s::%s]: logDRAMUsage, idx = %d, id = %u, maxDRAMUsageInLastDay = %llu, totalDRAMCapacity = %llu, isSerialLogEnabled = %x`
+- `function-%s`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Failed to construct function with name: %s`
+- `memoryDumpConfigs`
+- `newLocationIDNumber`
+- `[0x%llx][%llx][%s::%s]: Sending initial get report. Expecting %u bytes back.`
+- `HIDRelayManagerUSBInterfaces`
+- `[0x%llx][%llx][%s::%s]: Verified FlatPack instructions with contents size = %u, number of entries = %u`
+- `_functionExecutors`
+- `[0x%llx][%llx][%s::%s]: Kill device is disabled. Touch chip not being restarted automatically.`
+- `readPayload`
+- `OSBoundedPtr.h`
+- `site.AppleHIDTransportBootloaderUserClient`
+- `dest`
+- `[0x%llx][%llx][%s::%s]: Run In RestoreOS = %u, Run In BootedOS = %u - In %s, skipping image loading for %s`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/AppleHIDTransportDeviceDummy.cpp`
+- `_transport`
+- `Components`
+- `aht-disable-eeprom`
+- `owner && callback`
+- `DelayUs`
+- `resumeAccessGated`
+- `VersionNumber`
+- `[0x%llx][%llx][%s::%s]: %s's AIDImageDownloader hasn't finished loading calibration data, will handle calibration request later`
+- `startGated`
+- `Inactive`
+- `argumentData->getCapacity() > 0`
+- `reportBuffer`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Property %s doesn't exist`
+- `Product`
+- `[0x%llx][%llx][%s::%s]: Scheduled ARM function request on separate thread`
+- `configuredData`
+- `[0x%llx][%llx][%s::%s]: Created relay interface name : %s_%x`
+- `_instructions`
+- `_workloop`
+- `handlePendingCalibrationDescriptor_block_invoke`
+- `DeviceReset`
+- `componentArray`
+- `[0x%llx][%llx][%s::%s]: No location id`
+- `[0x%llx][%llx][%s::%s]: Parsed %s`
+- `notifyReportData->appendBytes(&notifyReport, sizeof(notifyReport))`
+- `AHTMemoryDumpExtractor`
+- `IsFunctionOptional`
+- `[0x%llx][%llx][%s::%s]: %s = %s`
+- `function`
+- `callPlatformFunction`
+- `[0x%llx][%llx][%s::%s]: Waking up sleeping memory dump thread for %s...`
+- `AppleHIDTransportDevice`
+- `[0x%llx][%llx][%s::%s]: Header found for %s`
+- `%s_%x`
+- `_pendingCalibrationDescriptors`
+- `interfaceName`
+- `AlsC`
+- `[0x%llx][%llx][%s::%s]: ERROR!! No variable defined [%s]`
+- `byte array requirement`
+- `LCfg`
+- `[0x%llx][%llx][%s::%s]: Repair history property not found`
+- `MaxConsecutiveBootFailures`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Failed to send mach msg (err=0x%X)`
+- `OSDynamicCast(OSNumber, image->getObject(kPropertyPropertyIDKey))`
+- `11`
+- `validationConfig`
+- `Constructed Firmware Version`
+- `SerialNumber`
+- `interfaceInfo`
+- `nameLen < keySize`
+- `payloadObj`
+- `encodedFirmwareData`
+- `sectionConfigs && sectionCount`
+- `updateReportGated`
+- `[0x%llx][%llx][%s::%s]: Loading EEPROM content from key: %s`
+- `AppleHIDTransportBootloaderHIDDevice`
+- `enumerate`
+- `Battery`
+- `readMemoryDumps`
+- `isGetReportAllowed`
+- `variables`
+- `callFunctionFromThread_block_invoke`
+- `allAgumentData->setObject(argumentData)`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unsupported section type %u`
+- `[0x%llx][%llx][%s::%s]: No Memory Dumps Found`
+- `doRequirementCheck`
+- `copyAndCheckProperty`
+- `unserializedBytes`
+- `RequireReadback`
+- `descriptor.chunkSizeDescriptor`
+- `[0x%llx][%llx][%s::%s]: Loading image for %s completed: ID %u, result %s (0x%08X)`
+- `offset + sizeof(header) <= size`
+- `[0x%llx][%llx][%s::%s]: %s capture memory dump completed: ID %u, result %s (0x%08X)`
+- `FooterSize`
+- `BootloaderPropertyEqual`
+- `[0x%llx][%llx][%s::%s]: Current State: %s (0x%02X) -> Requested State: %s (0x%02X)`
+- `_provider && _provider->getWorkLoop()`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot set locationId in interfaceInfo`
+- `VendorID`
+- `sectionLevel`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Property %s not valid`
+- `ControlReportWhitelist`
+- `12111112122212121111111211212`
+- `12112`
+- `section->getObject(\"Size\")`
+- `12111112122212121111121112211211111`
+- `i8@?0`
+- `sendInitialReport`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Invalidating EEPROM content`
+- `invalidate`
+- `Allow VHCI Wake`
+- `size != -1`
+- `releaseUpdateAccess`
+- `createInterface`
+- `parseConfigEntries`
+- `personality`
+- `source`
+- `ReportersReportID`
+- `[0x%llx][%llx][%s::%s]: Sleeping...`
+- `Shutdown`
+- `willTerminate`
+- `responseMemDesc`
+- `lengthVal <= sizeof(*chunkSize)`
+- `interfaceNumber`
+- `AvailableInterfaces`
+- `Generic Memory`
+- `call`
+- `FSCl`
+- `requestKill_block_invoke`
+- `numBytes <= sizeof(*outValue)`
+- `[0x%llx][%llx][%s::%s]: ERROR!! descriptor is null`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Invalid type %u`
+- `dictDataDRAMFIFOid`
+- `12111112122212121111111111112111121212121211111222221111221111111121111121`
+- `HID`
+- `setReport`
+- `interfaceIdNumber`
+- `[0x%llx][%llx][%s::%s]: Creating image array from dictionary`
+- `propertyToRead`
+- `AHTEeprom`
+- `memoryDump->setObject(\"Config\", memoryDumpConfigs)`
+- `ExternalResources`
+- `comparisonValue`
+- `bootloader`
+- `statCollection`
+- `parameterConfig`
+- `Boot`
+- `parsePanicRegister`
+- `SrvP`
+- `[0x%llx][%llx][%s::%s]: Using downloader : 0x%llx`
+- `type`
+- `enabled`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Invalid SMC config key %s`
+- `[0x%llx][%llx][%s::%s]: Successfully collected memory dump`
+- `[0x%llx][%llx][%s::%s]: Calibration key '%s' is empty.`
+- `iReporter`
+- `SkipPayloadVerification`
+- `[0x%llx][%llx][%s::%s]: Required size for encoding: %d`
+- `!foundTableStart && !foundTableEnd`
+- `parseSerialNumber`
+- `, probably OK for the first power change`
+- `Reset`
+- `BootedOS`
+- `_queueEventSource`
+- `BinaryEncoder`
+- `string`
+- `mergeFromHeader || validReferenceLocation`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Control report too long`
+- `handlePrioritySystemPowerStateChange`
+- `publishPropertiesFromConfig`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Failed to remove property`
+- `None`
+- `[0x%llx][%llx][%s::%s]: Decoding CBOR memory dump`
+- `HeaderSize`
+- `success`
+- `DelayMs`
+- `writeOffset + size <= argumentData->getLength()`
+- `_lockOwner == current_thread()`
+- `Resume`
+- `site.AppleHIDTransportManagement`
+- `[0x%llx][%llx][%s::%s]: ERROR!! %s received stale memory dump ID (%u, expecting %u)`
+- `osobject`
+- `PayloadSize`
+- `jReporter`
+- `mergeConfig`
+- `OSDynamicCast(OSNumber, image->getObject(kPropertyDelayKey))`
+- `clearConfiguration`
+- `!isPendingMemoryDumps()`
+- `site.AppleHIDTransportSMCNotifier`
+- `[0x%llx][%llx][%s::%s]: AsyncRegistration. Waiting to finalize.`
+- `Disable`
+- `[0x%llx][%llx][%s::%s]: ERROR!! eventPayload is nullptr`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/AppleHIDTransportHIDDevice.cpp`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Get report [0x%2X] buf does not equal expected result`
+- `ret == true`
+- `cacheAHTFunctions`
+- `[0x%llx][%llx][%s::%s]: Terminating relay manager`
+- `Firmware`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Invalid '%s' at offset %u: 0x%16llx < 0x%16llx`
+- `[0x%llx][%llx][%s::%s]: Prop [%s] : %s`
+- `Bootload Timeout Ms`
+- `InterfaceName`
+- `AppleDiagnosticDataAccessReadOnly`
+- `Protocol SMC Handler Config`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unknown interface type %u`
+- `properties`
+- `site.AppleHIDTransportHIDDevice`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Ignoring received memory dump request: consecutive bootload failures exceeding maximum limit`
+- `panicReg->getCount() == 2`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unsupported comparison type: %s`
+- `Camera`
+- `Memory Dumps Level`
+- `Supports Memory Dump`
+- `Publish Reports`
+- `eeprom-property`
+- `_transportDevice`
+- `deviceNotificationHandler`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Indefinite length not supported!`
+- `_binaryEncoderManager`
+- `continueRequirementCheck`
+- `FirstInputReceived`
+- `[0x%llx][%llx][%s::%s]: No HID device type specified, using default`
+- `queueActionGated`
+- `handleAHTFunctionRequest`
+- `dumpCaptureMask`
+- `[0x%llx][%llx][%s::%s]: Loaded first boot personality %s`
+- `Pre-Reset Memory Dump`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Hasn't finished processing the descriptors. Waiting for descriptors.`
+- `[0x%llx][%llx][%s::%s]: Wait %dus`
+- `notification && notification->getCount() >= 3`
+- `ComparisonValue`
+- `[0x%llx][%llx][%s::%s]: Loading %s from %s`
+- `reqs`
+- `PowerState`
+- `[0x%llx][%llx][%s::%s]: Sending FW payload : Offset [%u] Length [%u]`
+- `sectionConfig`
+- `AppleHIDTransportProtocol%s`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Invalid '%s' at offset %u: 0x%16llx != 0x%16llx`
+- `personalities`
+- `bounded_ptr<T>::operator*: Dereferencing this pointer would access memory outside of the bounds set originally`
+- `Interface Config`
+- `varName`
+- `121111121222121211111121111111111221121111`
+- `encoderName`
+- `dict`
+- `req`
+- `[0x%llx][%llx][%s::%s]: Handling memory dump for interface %s`
+- `cb`
+- `_panicRegMap`
+- `tcrt`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unknown requirement type %s`
+- `variableName`
+- `threadCall`
+- `AppleHIDTransportSMCNotifier`
+- `[0x%llx][%llx][%s::%s]: %s(*%u)`
+- `notifyReportData`
+- `[0x%llx][%llx][%s::%s]: ERROR!! bad data retrieved`
+- `initWithTask`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Function %s specified the TimeoutUs key in a customer build. This timeout will be ignored`
+- `[0x%llx][%llx][%s::%s]: No handle available. No locationId generated`
+- `handleAHTFunctionNotify`
+- `sectionName`
+- `[0x%llx][%llx][%s::%s]: %s: function found`
+- `[0x%llx][%llx][%s::%s]: ERROR!! %s: not found`
+- `MemoryDumpOnBootFailure`
+- `refLength <= sizeof(uint64_t)`
+- `[0x%llx][%llx][%s::%s]: Firmware successfully encoded as CBOR.`
+- `handleMemoryDumpRequestFromThread_block_invoke`
+- `sendConfigReport`
+- `IOPlatformPanicAction`
+- `section`
+- `BackGlass`
+- `[0x%llx][%llx][%s::%s]: Device shutting down, powering off interface.`
+- `waitForDeviceMatch`
+- `argNum`
+- `1212`
+- `[0x%llx][%llx][%s::%s]: Relaying overrideProperties to master`
+- `[0x%llx][%llx][%s::%s]: No interface config`
+- `descriptor`
+- `[0x%llx][%llx][%s::%s]: Variable [%s] is %s to reference value`
+- `interfacesData`
+- `strcmp(encoderName->getCStringNoCopy(), getEncoderName()) == 0`
+- `[0x%llx][%llx][%s::%s]: Skipping read core dump for %s due to section levels=0x%x and driver level=0x%x `
+- `%s-firstboot`
+- `!isInactive()`
+- `com.apple.hid.transport.user-access`
+- `[0x%llx][%llx][%s::%s]: Skipping common ancestor check`
+- `*dest`
+- `[0x%llx][%llx][%s::%s]: %s has Run In Booted OS = false, skipping load firmware`
+- `ResetCount`
+- `[0x%llx][%llx][%s::%s]: Parsing %s entry`
+- `setPower`
+- `[0x%llx][%llx][%s::%s]: Skipping chip locking`
+- `parseDescriptor`
+- `GreaterThan`
+- `InputReportLoggingDroppedFrames`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/AppleHIDTransportDevice.cpp`
+- `Firmware Config Version`
+- `image`
+- `[0x%llx][%llx][%s::%s]: Report Id 0x%x NOT found in setReportAllowList`
+- `configString`
+- `array`
+- `[0x%llx][%llx][%s::%s]: InterfaceId:%u not configured with any functions`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Invalid '%s' at offset %u: 0x%16llx > 0x%16llx`
+- `copyAndCheckPropertyOrReference`
+- `[0x%llx][%llx][%s::%s]: Device terminating!`
+- `offsetNumBytes`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unknown type: %s`
+- `_panicRegDesc->prepare() == 0 `
+- `DefaultDumpLevelCustomer`
+- `section->getObject(\"DumpCaptureMask\")`
+- `start`
+- `[0x%llx][%llx][%s::%s]: Validating EEPROM, attempt %d`
+- `mergeFromHeader`
+- `_deviceHandle`
+- `[0x%llx][%llx][%s::%s]: Creating binary encoder '%s'`
+- `num`
+- `contents->getLength() == contentsSize`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot allocate dictionary`
+- `[0x%llx][%llx][%s::%s]: Loaded restore personality %s`
+- `[0x%llx][%llx][%s::%s]: Merging dictionary '%s'`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/AHTEeprom.cpp`
+- `[0x%llx][%llx][%s::%s]: %d`
+- `WriteOffset`
+- `Magic Address`
+- `cacheConfig`
+- `[0x%llx][%llx][%s::%s]: %s: not found`
+- `psd2`
+- `[0x%llx][%llx][%s::%s]: ERROR!! EEPROM read failed after %u attempts.`
+- `InitialReport`
+- `[0x%llx][%llx][%s::%s]: Loading firmware for interface %u (%s) due to power state change`
+- `performMemoryDumpSequence`
+- `key`
+- `[0x%llx][%llx][%s::%s]: HID Device handle located`
+- `!_encoders->getObject(encoderName->getCStringNoCopy())`
+- `[0x%llx][%llx][%s::%s]: Waiting for firmware complete message...`
+- `[0x%llx][%llx][%s::%s]: Calibration key '%s' is bigger than max size (%u > %u).`
+- `LocationId`
+- `[0x%llx][%llx][%s::%s]: Not replacing property '%s' since it's already set to false.`
+- `SerialEnabled`
+- `[0x%llx][%llx][%s::%s]: reportID = 0x%02x, retVal = 0x%08x, response size = %llu`
+- `1211122`
+- `provider`
+- `[0x%llx][%llx][%s::%s]: ERROR!! No protocol specified%s.`
+- `HIDRelaySupport`
+- `_providerService`
+- `setProperty(kAHTPropertyHeaderKey, propertyHeaderDict)`
+- `outputMD->prepare() == 0 `
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/AppleHIDTransportBootloaderCBOR.cpp`
+- `verifyFlatPackInstructionsAndGetSize`
+- `Unknown component: %s\n`
+- `_userClients`
+- `_powerMethod >= kPowerMethodTypeAtomic && _powerMethod < kPowerMethodTypeCount`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unknown power method %u`
+- `[0x%llx][%llx][%s::%s]: Powering off interface due to power state transition failure`
+- `externalMethod`
+- `payload->getLength() <= memDesc->getCapacity()`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Invalid report size %u. It should be %lu`
+- `[0x%llx][%llx][%s::%s]: `
+- `[0x%llx][%llx][%s::%s]: Trying to load restore personality %s`
+- `RejectControlRequests`
+- `TerminationTimeoutMs`
+- `[0x%llx][%llx][%s::%s]: Requirement (%s) not satisfied - Skip this entry (%s)`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unknown ready status %u`
+- `handleMemoryDumpRequest`
+- `levelNum`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Fail to send config response with error 0x%08X for interface %u, resource %u, action %u, reason %u, timestamp %llu`
+- `IncludesReportID`
+- `readOffsetObject && writeOffsetObject && sizeObject`
+- `contents`
+- `firmwareUpdateComplete`
+- `smcMatch`
+- `smcNotification`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot add desciriptor`
+- `EnableFunctionType`
+- `memoryDumpData`
+- `Multitouch`
+- `str`
+- `[0x%llx][%llx][%s::%s]: %s functype: %s`
+- `BinaryEncoderHCC2x`
+- `asyncLoadImage`
+- `12111112122212121121112221112`
+- `OSDynamicCast(OSNumber, image->getObject(kPropertyReportIDKey))`
+- `[0x%llx][%llx][%s::%s]: Reset request for interfaceId %u`
+- `validateConfig`
+- `Description`
+- `AppleHIDTransportInterfaceUserClient`
+- `newCountryCodeNumber`
+- `[0x%llx][%llx][%s::%s]: Waiting for device to tear down`
+- `updateInterfacesReportersData`
+- `filterByRequirements`
+- `sections`
+- `[0x%llx][%llx][%s::%s]: %s = %u`
+- `deviceMatch`
+- `handleMemoryDumpResponse`
+- `doomclockTimeoutAction`
+- `iter`
+- `setPropertiesGated`
+- `true`
+- `found`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Error unserializing property header: %s`
+- `logDRAMUsage`
+- `memoryDumps->serialize(_fMemoryDumpSerializer)`
+- `readPointer`
+- `[0x%llx][%llx][%s::%s]: Run In RestoreOS = %u, In %s, skipping image loading for interface %s`
+- `SharedResources`
+- `offset + sectionHeader.size <= size`
+- `requestThreadParam`
+- `handleCalibrationDescriptor`
+- `[0x%llx][%llx][%s::%s]: Caching function executor for interfaceId:%u`
+- `site.AHTFunctionInfo`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Ignoring unknown image type '%s'`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Device teardown wait failed [res = 0x%08X]`
+- `?`
+- `121111`
+- `notifyUserClients`
+- `[0x%llx][%llx][%s::%s]: Skipping payload verification`
+- `[0x%llx][%llx][%s::%s]: Loading firmware for %s...`
+- `ArgNum`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Couldn't load default calibration`
+- `site.AHTEeprom`
+- `Length`
+- `valueObj`
+- `copy`
+- `unknown`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/SMCNotifier/AppleHIDTransportSMCNotifier.cpp`
+- `report->getLength() >= sizeof(request)`
+- `getBootloader()->executeScript(memoryDumpScript) == 0 `
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/AppleHIDTransportInterface.cpp`
+- `HIDDeviceType`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Set report [0x%02X] returned [0x%08X]`
+- `[0x%llx][%llx][%s::%s]: FW Update complete`
+- `decodeObject`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Type 0x%x not supported in this CBOR implementation!`
+- `[0x%llx][%llx][%s::%s]: Entry[%u] (%s) - '%s', command %u, size %u, encoding '%s'`
+- `[0x%llx][%llx][%s::%s]: Waking up...`
+- `Config`
+- `MaxValue`
+- `[0x%llx][%llx][%s::%s]: Trying to load first boot personality %s`
+- `[0x%llx][%llx][%s::%s]: Set property '%s' [class : %s][StrVal : %s]`
+- `[0x%llx][%llx][%s::%s]: Resume called before block. Simulating acquireAccessGated call to match locks.`
+- `[0x%llx][%llx][%s::%s]: %s(&0x%llx, &0x%llx, &0x%llx)`
+- `Chip Locked`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Invalid property: %s`
+- `\"%s\" @%s:%d`
+- `updateReportersData`
+- `pre-reset-memory-dump-sequence`
+- `memoryFifoCount && fifoIds && maxDRAMUsageInLastDayArray->getCount() == memoryFifoCount && totalDRAMCapacityArray->getCount() == memoryFifoCount`
+- `[0x%llx][%llx][%s::%s]: Looking for common ancestor!`
+- `offset`
+- `cacheFirmware`
+- `1211111212221212111111111111111112`
+- `functionConfig`
+- `[0x%llx][%llx][%s::%s]: Variable %s at offset %u has a byte array %s to the reference value in %s`
+- `contentsIndex < instructionsHeader.numEntries`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot allocate descriptor`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot add product string`
+- `Sections`
+- `And`
+- `memoryDumps`
+- `system-state-notify`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Couldn't set interface descriptor keyhole for iface %u: error 0x%08x`
+- `machArchitecture && machArchitectureFlavor`
+- `mt-disable-kill`
+- `[0x%llx][%llx][%s::%s]: Doomclock timeout after %usec`
+- `[0x%llx][%llx][%s::%s]: statCollection`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Failed to read memory dump '%s'`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Failing validation due to failed ARM function call %s`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Validation failed: 0x%08X`
+- `site.BinaryEncoderHCC2x`
+- `AppleHIDTransportDeviceDummy`
+- `removeConfig`
+- `[0x%llx][%llx][%s::%s]: Removing array '%s'`
+- `releaseAccessGated`
+- `relayDict`
+- `[0x%llx][%llx][%s::%s]: %s FW update completed: ID %u, result %s (0x%08X)`
+- `_protocol`
+- `configureReport`
+- `PropertyValue`
+- `Overwrites`
+- `provider && functionRegistry && allFunctionConfigs`
+- `encodeObject`
+- `Interface Property (syscfg/EDT/FW image)`
+- `delayUsNum`
+- `_functions`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Power state transition failed: status = %s (0x%08X)`
+- `Default Value`
+- `site.BinaryEncoderManager`
+- `[0x%llx][%llx][%s::%s]: FlatPack table start found`
+- `dictDataIsSerialEnabled && dictKeyMaxDRAMUsageInLastDay && dictKeyIsSerialEnabled && dictKeyDRAMTotalSize && dictKeyDRAMFIFOid`
+- `less`
+- `buildFlatPackInstructions`
+- `[0x%llx][%llx][%s::%s]: ERROR!! %s does not have a firmware update in progress`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/BinaryEncoder/BinaryEncoders/BinaryEncoder.cpp`
+- `propertyStr`
+- `1211111212221212111111111111211112121212121111122222111122`
+- `[0x%llx][%llx][%s::%s]: Removing dictionary '%s'`
+- `PropertyEqual`
+- `allFunctionConfigs->getCount() > 0`
+- `bootloader-type`
+- `power-sequence`
+- `reportAction`
+- `12221`
+- `AppleHIDTransportBootloaderCBOR`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Invalid shared resource '%s'`
+- `TouchID`
+- `site.AHTFunctionExecutor`
+- `[0x%llx][%llx][%s::%s]: %s interface`
+- `Built-In`
+- `not equal`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Fail to convert array to iterator`
+- `site.AppleHIDTransportStats`
+- `SetProperty`
+- `Quiesce`
+- `address`
+- `numBytesNumber`
+- `sizeWritten == sizeOfMemoryDumps`
+- `Sequence`
+- `121111121222121211111211122112111111`
+- `osObject`
+- `HIDDefaultBehavior`
+- `!encoder`
+- `Device Property (syscfg/EDT/FW image)`
+- `[0x%llx][%llx][%s::%s]: Memory Dump:`
+- `AppleHIDTransportBootloader%s`
+- `propSourcesDict`
+- `type < (sizeof(typeStrings) / sizeof(OSSharedPtr<const OSSymbol>))`
+- `interfaceMatch->setObject(gIONameMatchKey, interfaceName)`
+- `NotifyParameter`
+- `Apple`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Failed to publish property sources`
+- `[0x%llx][%llx][%s::%s]: Invalid interface`
+- `Protocol Binary Config`
+- `Firmware Config`
+- `ReadOffset`
+- `[0x%llx][%llx][%s::%s]: Request for AHTFunction with ID:%s`
+- `HIDRelayManagerFirmwarePortName`
+- `site.AHTFunctionDisplayMessage`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Couldn't send done report to iface %u: error 0x%08x`
+- `unregisterUserClient`
+- `Or`
+- `maxSize`
+- `interfaceMatch`
+- `keyStr`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/AHTMemoryDumpExtractor.cpp`
+- `InterfaceLocked`
+- `[0x%llx][%llx][%s::%s]: Asynchronous reports are not supported`
+- `matchingDict`
+- `site.AppleHIDTransportBootloaderCBOR`
+- `[0x%llx][%llx][%s::%s]: Prepared instructions for interface %s: version = %u, interface = %u, number of entries = %u, contents addr = 0x%016llX`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Unknown type id %u`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot set interface type to invalid in interface %u`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Couldn't send calibration blob %s to iface %u (%s) report: %s (0x%08x)`
+- `[0x%llx][%llx][%s::%s]: ERROR!! %s is too big: %u > %u`
+- `[0x%llx][%llx][%s::%s]: No country code`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Task doesn't have the right entitlements`
+- `offset + sizeof(sectionHeader) <= size`
+- `reportDescriptor`
+- `convertLegacyFunctionType`
+- `hid-restore-personality`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Invalid %s property: %s`
+- `_eepromDriver`
+- `12111112122212121111112111111111122112111121`
+- `foundTableStart && !foundTableEnd`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot set interface type to invalid`
+- `ret == 0 `
+- `getReport`
+- `bufferWithKey`
+- `[0x%llx][%llx][%s::%s]: Memory dump request for interfaceId %u`
+- `value`
+- `forceOffRet == 0 `
+- `variableData`
+- `FunctionName`
+- `generateLocationId`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Relay manager nub already exists, terminate.`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Truncated config entry`
+- `mgmtDescriptor`
+- `Device Tree Overrides`
+- `reset`
+- `Branch`
+- `OSDynamicCast(OSString, calibrationDict->getObject(kPropertyCalibrationPropertyNameKey))`
+- `ready`
+- `disabled`
+- `drainPollingFifo`
+- `registerNotificationPort`
+- `GetReport`
+- `header.version <= kDescriptorPacketVersion1`
+- `HIDRelayBehavior`
+- `Device SMC Handler Config`
+- `detected`
+- `[0x%llx][%llx][%s::%s]: Skipping pre-FDR update for %s`
+- `Default`
+- `[0x%llx][%llx][%s::%s]: Skipping updating reporters data because we are not on`
+- `load`
+- `propertyValue`
+- `outValue`
+- `[0x%llx][%llx][%s::%s]: Mach notification queue is full, current notification is dropped`
+- `allParameterConfigs->getCount() <= kMaxFunctionArgCount`
+- `[0x%llx][%llx][%s::%s]: Loading image for %s...`
+- `[0x%llx][%llx][%s::%s]: Found SMC with matching phandle!`
+- `Property`
+- `publishPropertySource`
+- `referenceProperty`
+- `/Library/Caches/com.apple.xbs/E73FC9D7-BE45-44E9-B88F-6699B0BA54E2/TemporaryDirectory.Q71yhO/Sources/AppleInputDeviceSupport_kexts/AppleHIDTransport/AppleHIDTransportBootloaderUserClient.cpp`
+- `BranchOffset`
+- `[0x%llx][%llx][%s::%s]: ERROR!! printPtr = 0x%08llx > 0x%08zx`
+- `site.HandleMemoryDumpRequestThreadParam`
+- `PreconstructedBootloadPacketType`
+- `header->size + sizeof(header) < rawPayload->getLength()`
+- `[0x%llx][%llx][%s::%s]: Merging array '%s'`
+- `_eepromContent`
+- `device`
+- `[0x%llx][%llx][%s::%s]: ERROR!! %s does not have a memory dump in progress`
+- `Min Power Off Ms`
+- `AHTFunctionKill`
+- `MaxSize`
+- `[0x%llx][%llx][%s::%s]: interface %u`
+- `AHTFunctionInfo`
+- `writeOutCurrentProperty`
+- `handleStart`
+- `[0x%llx][%llx][%s::%s]: Scheduled memory dump request on a separate thread`
+- `[0x%llx][%llx][%s::%s]: Notified %s of capture memory dump completed: ID %u, result %s (0x%08X)`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Failed to create property source dict`
+- `site.BinaryEncoder`
+- `memoryDump->setObject(\"Mach Architecture\", machArchitecture)`
+- `_hcrEventLogger`
+- `12111112122212121111112111111111122112111`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Could not get property %s`
+- `[0x%llx][%llx][%s::%s]: Skipping removing property '%s' since it has been overwritten.`
+- `HIDRelayManagerSupport`
+- `site.AHTFunctionKill`
+- `Checksum`
+- `hid`
+- `parseProductString`
+- `[0x%llx][%llx][%s::%s]: Skipping section %s (address=0x%08X, size=%u, mask=0x%08X, level=0x%08X)`
+- `Calibration Source`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Transition from %s to %s is not a valid transition`
+- `doFirmwareUpdate`
+- `propertyIDObj`
+- `[0x%llx][%llx][%s::%s]: ERROR!! %s has not received fw to load`
+- `firmwareData`
+- `memoryDump->setObject(\"TimestampMs\", timestampMs)`
+- `ComparisonType`
+- `validateProperty`
+- `Post-Reset Memory Dump`
+- `AsyncDescriptorDone`
+- `validateChunkSizeDescriptor`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot allocate location id`
+- `descriptorComplete`
+- `iterDumps`
+- `[0x%llx][%llx][%s::%s]: ERROR!! %s call returned 0x%08X`
+- `configUint8`
+- `removeDuplicateReporters`
+- `propertyName`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Ignoring received reset request: consecutive bootload failures exceeding maximum limit`
+- `MaxOutputReportLength`
+- `memoryDumpDeviceGated`
+- `[0x%llx][%llx][%s::%s]: Triggering memory dump due to boot failure`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Sleeping waiting for FW update result failed with error 0x%08X`
+- `memoryDump->setObject(\"Interface\", interfaceName)`
+- `DescriptorComplete`
+- `InputReportLogging`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot load %s from %s`
+- `entry`
+- `Unknown`
+- `shouldSkipPayloadVerification || OSDynamicCast(OSData, image->getObject(kPropertyPayloadKey))`
+- `firmwareArray`
+- `acquireAccessGated`
+- `PanicRegister`
+- `loadImage`
+- `smcPhandle`
+- `function-reset`
+- `DisableFunctionType`
+- `[0x%llx][%llx][%s::%s]: Comparison %llu < %llu: %s`
+- `repair-history`
+- `notifyPowerStateChange`
+- `_statCollectionTimer`
+- `nameLen < inBufferSize`
+- `callARMFunction`
+- `functionName`
+- `getEncodedSize`
+- `Interface`
+- `checkPropertyEqual`
+- `[0x%llx][%llx][%s::%s]: Searching for HID device type: %s`
+- `ahtFunctions`
+- `121`
+- `newVariableData`
+- `_configurationResult == 0 `
+- `McTUB`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Invalid checksum for property '%s' (%08X)`
+- `imageProperty`
+- `reset-sequence`
+- `VarByteArrayEqual`
+- `site.AppleHIDTransportInterfaceUserClient`
+- `Memory Dump`
+- `[0x%llx][%llx][%s::%s]: %s has a related interface %s. Installing notification`
+- `currentPropertyData`
+- `outputPD`
+- `not less`
+- `121111112`
+- `site.NotifyThreadParam`
+- `notifyReportData->appendBytes(returnData->returnBytes)`
+- `_loadingState == kLoadingStateIdle`
+- `ReportID`
+- `retVal == kIOReturnSuccess`
+- `[0x%llx][%llx][%s::%s]: FW payload write complete`
+- `DumpCaptureMask`
+- `[0x%llx][%llx][%s::%s]: Reading section %s (address=0x%08X, size=%u, mask=0x%08X, level=0x%08X)`
+- `shouldAbort`
+- `[0x%llx][%llx][%s::%s]: Memory Dump Level set to '%d'`
+- `headerDict`
+- `owner && action`
+- `Notify`
+- `121111121222121211111121111111111221121111112222111122222222222222222222222222222222222222222222222222212`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Invalid size %u for location id`
+- `parseTransport`
+- `handleConfigRequest`
+- `requiredSize`
+- `report->readBytes(0, &request, sizeof(request)) == sizeof(request)`
+- `performValidation`
+- `boolRet`
+- `loadPersonality`
+- `[0x%llx][%llx][%s::%s]: %s bootload pending. Waiting for firmware download.`
+- `eeprom-read-property`
+- `reportID`
+- `handleReport`
+- `parseResourcesDescriptor`
+- `setPowerGated`
+- `LogPayload`
+- `hidrelay-enable`
+- `payload`
+- `configUint32`
+- `[0x%llx][%llx][%s::%s]: Unexpected reset notification mapped from the provided power state change`
+- `writeOutMemoryDumps`
+- `map`
+- `DeviceMatching`
+- `[0x%llx][%llx][%s::%s]: ERROR!! Cannot allocate locationId`
+- `Requirement`
+- `Display`
+- `[0x%llx][%llx][%s::%s]: Image not available yet. Waiting for download.`
+- `InterfaceType`
+- `entryType`
+
+**[__TEXT.__os_log]**
+
+- `[AHTPF::%s]: ERROR!! Param 1 should contain a message ID`
+- `[AHTPF::%s]: ERROR!! data length %u`
+- `[AHTPF::%s]: ERROR!! No functionOut`
+- `[AHTPF::%s]: ERROR!! Invalid signature 0x%08X`
+- `[AHTPF::%s]: ERROR!! Target is not an AppleHIDTransportDevice object`
+- `[AHTPF::%s]: ERROR!! Param 1 should point to a boolean`
+- `[AHTPF::%s]: ERROR!! param3 is not OSData`
+- `[AHTPF::%s]: ERROR!! Cannot allocate ARM function`
+- `[AHTPF::%s]: ERROR!! Calling to super failed`
+- `[AHTPF::%s]: ERROR!! No params should be passed in ARM function`

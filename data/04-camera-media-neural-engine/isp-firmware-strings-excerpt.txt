@@ -1,0 +1,188 @@
+# Excerpts: strings(1) of Firmware/isp_bni/adc-boreas-v68.im4p payload (IM4P type ispf), iOS 27.2 24B91020
+## RTKit build
+RTKit_armv8_tempest_smp_Oz_flto_pac-3514.40.18.release
+boreas/P borneo v68 SMP
+## V68 board-specific strings
+./h10isp/common/misc/H19/CPowerSupplyV68.cpp
+CConnectivityTableV68
+CPowerSupplyV68
+V68 optical card ID: %x 
+V68_GPIO_ISP_TO_CAM_PMU1_RESET
+V68_GPIO_ISP_GPIO1
+V68_GPIO_ISP_TO_GENLOCK_LS_EN
+V68_GPIO_ISP_GPIO3
+V68_CLK_CAM_PMU1_TO_WIDE_24M
+V68_CLK_CAM_PMU1_TO_SWIDE_24M
+V68_CLK_CAM_PMU1_TO_INTCAM_24M
+V68_CLK_CAM_PMU1_TO_FCAM_24M
+V68_GPIO_CAM_PMU1_NC_GPIO0
+V68_GPIO_CAM_PMU1_TO_WIDE_SHDN
+V68_GPIO_CAM_PMU1_TO_SWIDE_SHDN
+V68_GPIO_CAM_PMU1_TO_INTCAM_SHDN
+V68_GPIO_CAM_PMU1_TO_FCAM_SHDN
+V68_GPIO_CAM_PMU1_NC_GPIO5
+V68_GPIO_CAM_PMU1_NC_GPIO6
+V68_GPIO_CAM_PMU1_TO_STROBE_HWEN
+V68_GPIO_CAM_PMU1_NC_GPIO8
+V68_GPIO_CAM_PMU1_TO_BOOST_VSEL_RESET
+V68_GPIO_CAM_PMU1_NC_GPIO10
+V68_GPIO_CAM_PMU1_TO_PVDD_RESET
+V68_GPIO_CAM_PMU1_NC_GPIO12
+V68_PMU1_WIDE_DVDD
+V68_PMU1_INTCAM_SWIDE_DVDD_BUCK1
+V68_PMU1_WIDE_FCAM_INTCAM_SWIDE_VDDIO
+V68_PMU1_INTCAM_AVDD2
+V68_PMU1_SWIDE_AVDD2
+V68_PMU1_WIDE_AVDD2
+V68_PMU1_INTCAM_AVDD1
+V68_PMU1_SWIDE_AVDD1
+V68_PMU1_WIDE_AVDD1
+V68_PMU1_VLDO7_NC
+V68_PMU1_VLDO8_NC
+V68_PMU1_VLDO9_NC
+V68_PMU1_VLDO10_NC
+V68_PMU1_VLDO11_NC
+V68_PMU1_IO_SW_NC
+V68_PP_CAM_VCM_PVDD
+V68_PMU1_TDIE_BUCKS
+V68_PMU1_TDIE_LDOS
+V68_PMU_FAIRMONT
+%s: V68 P1 PDX-D was rotated 180 degree from RGGB to BGGR 
+IMX972_V68P1::IMX972_Common_base_20240514_max24db
+CNVMParserV68.cpp
+## Sensor driver classes
+CImageSensorBasic
+CImageSensorIMX3x3
+CImageSensorIMX575
+CImageSensorIMX903
+CImageSensorIMX905
+CImageSensorIMX907
+CImageSensorIMX915
+CImageSensorIMX915_M3
+CImageSensorIMX916
+CImageSensorIMX916_M3
+CImageSensorIMX919
+CImageSensorIMX954
+CImageSensorIMX954_M3
+CImageSensorIMX972
+CImageSensorIMX972_M3
+CImageSensorIMX973
+CImageSensorIMX982
+CImageSensorS5KJMB
+CImageSensorVD56G8
+CImageSensorVD56G8Security
+CImageSensorVD56G8Utility
+CImageSensor_M3
+## Sensor descriptor ids
+CH%zu %-11s id: WY_IMX343_1x1HVC
+CH%zu %-11s id: MT_IMX353_2x1HHC
+CH%zu %-11s id: JU_VD56G0_1x1HV
+CH%zu %-11s id: TX_IMX403_1x1HVD
+CH%zu %-11s id: IN_IMX405_2x1HHC
+CH%zu %-11s id: MT_IMX353_2x1HHC_H10
+CH%zu %-11s id: ON_IMX503_1x1HVD
+CH%zu %-11s id: WI_IMX603_1x1HVD
+CH%zu %-11s id: AR_IMX613_2x1HHC
+CH%zu %-11s id: SC_IMX714_2x1HVC
+CH%zu %-11s id: CHS_IMX914_2x1HVC
+CH%zu %-11s id: CLO_IMX919_2x1HVC
+CH%zu %-11s id: DB_IMX703_1x1HVD
+CH%zu %-11s id: BE_IMX713_2x1HVC
+CH%zu %-11s id: PT_IMX772_2x1HVC
+CH%zu %-11s id: KV_IMX803_1x1HVD
+CH%zu %-11s id: PDX_IMX972_1x1HHY
+CH%zu %-11s id: PDX_IMX972_1x1HHY_ROT180
+CH%zu %-11s id: AST_IMX972_1x1HHY
+CH%zu %-11s id: SEA_IMX982_1x1HHY
+CH%zu %-11s id: MEM_IMX973_1x1HHY
+CH%zu %-11s id: HT_IMX633_1x1HVD
+CH%zu %-11s id: MW_IMX904_1x1HVD
+CH%zu %-11s id: VR_IMX913_2x1HVC
+CH%zu %-11s id: ATW_IMX954_1x1HHY
+CH%zu %-11s id: BOI_IMX905_1x1HVD
+CH%zu %-11s id: SBN_IMX824_2x1HVC
+CH%zu %-11s id: PSM_S5KJMB_1x1HHY
+CH%zu %-11s id: UNKNOWN
+## M3-variant drivers
+IMX954_M3 Driver Initialized with M3 support
+%s IMX954: running at 24mHz over M3
+IMX972_M3 Driver Initialized with M3 support
+%s IMX972: running at 24mHz over M3
+%s IMX915: running at 24mHz over M3
+%s IMX916: running at 24mHz over M3
+## Module tuning set names (*_common)
+Allster_TN_common
+villanova_appleton_a0_common
+IMX905_A1::furei_common
+IMX905_A0::furei_common
+IMX907_ES1::clyne_common
+Glenbrook_RNO_A0_v005_common
+Lakeville_BOS_A0_v006_common
+palmira_common
+IMX972_V68P1::IMX972_Common_base_20240514_max24db
+IMX972_Common_base_20240514_max24db
+IMX973_Common_base_20240514
+IMX982_Common_base_20240222
+## Strobe / GPIO / lens driver classes
+CGPIODriver
+CGPIODriverAdams
+CGPIODriverAlda
+CGPIODriverAldaST
+CGPIODriverAlex
+CGPIODriverAvedon
+CGPIODriverFairmont
+CGPIODriverISP
+CGPIODriverSN65709X
+CLensCtrlAFAssist
+CLensCtrlAfAssist
+CLensCtrlAfDrv
+CLensCtrlApsDrv
+CLensCtrlDrv
+CLensCtrlDrvBackground
+CLensCtrlDrvFaultManager
+CLensCtrlOisDrv
+CLensCtrlVaDrv
+CStrobeAntlia
+CStrobeCP5100
+CStrobeCP5100CfgA
+CStrobeCP5100CfgB
+CStrobeDriver
+CStrobeQuark
+CStrobeRegulus
+CStrobeRigel
+## Under-display camera
+Deprecated! ISP_PROPERTY_ALGOCONTROL_UDC_MULTI_PASS_ENABLE
+Please use official cmd instead: CISP_CMD_CH_UDC_MULTI_PASS_ENABLE
+[%s] CH = %zu UDC Multi-Pass ISP enable=%d, useCase=%d, tappingPoint=%d
+CISP_CMD_CH_UDC_MULTI_PASS_ENABLE
+MLVNR UDC can not keep up, ch=%d, frame=%d
+## CIL (indicator) / pixel masking
+}tmd`_^accd_^abb`Z[^kpqmh`]WVURQRSVScg=537>TUO4--,,,08=2.6-*0/.---.--40348@CILMKE99AGNOR[hr
+{rswropnmkkigfc_\Y[\_fbZSQLHFC@=7.+.1-1;A1-,++,04,*+-0.-2+)***,-40;04/00///-02/././-,,,-0017?CILMQUX[]abdfhkiegedceeggilmpoq
+}tmd`_^accd_^abb`Z[^kpqmh`]WVURQRSVScg=537>TUO4--,,,08=2.6-*0/.---.--40348@CILMKE99AGNOR[hr
+{rswropnmkkigfc_\Y[\_fbZSQLHFC@=7.+.1-1;A1-,++,04,*+-0.-2+)***,-40;04/00///-02/././-,,,-0017?CILMQUX[]abdfhkiegedceeggilmpoq
+CISP_CMD_CIL_BREAKER_ACTIVATED
+skip AF process because pixel masking is on
+skip AWB process because pixel masking is on
+Ignoring VCP err since CIL breaker is activated, ch: %zu irq: %#x
+ch %zu fc %d cilTargetFc %llu rvRecv %d fvRecv %d pixel masking is on
+Host meta data buffer unavailable, pixel masking is on
+CILDataBlockedIrq!
+CILCal
+%s: Enable CIL error interrupt
+%s: Disable CIL error interrupt
+CILMonitorThread
+CILMonitor.c
+CILMonitorThread
+CILMonitor.c
+## ISP<->ANE IPC
+  AneIpcVersion : Major 0x%x, Minor 0x%x
+./h10isp/filters/ane/CAneClient.cpp
+AneIpc not initialized, delay 3ms to re-try
+CAneClient Property Operation(%s): id %d 
+CAneClientCmdPool
+CAneClientPipe
+[AneIpc] ER: aneclient not initialized
+[AneIpc] aneclient not initialized
+[DSI] bufNbr=%d, maxAneIpcBufMsg=%d
+pCmd->bufNbr > maxAneIpcBufMsg

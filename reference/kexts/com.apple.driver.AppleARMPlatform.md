@@ -1,0 +1,2081 @@
+# `com.apple.driver.AppleARMPlatform`
+
+- Name: AppleARMPlatform
+- Version: `1.0.2`
+- UUID: `CA2B78E6-0F7B-393C-BDBB-D06905EB8BDE`
+- Source version: `1150.40.5.0.0`
+- Depends on: [`com.apple.iokit.IOReportFamily`](com.apple.iokit.IOReportFamily.md) 1.0, [`com.apple.iokit.IOSlowAdaptiveClockingFamily`](com.apple.iokit.IOSlowAdaptiveClockingFamily.md) 1.0, [`com.apple.iokit.IOStorageFamily`](com.apple.iokit.IOStorageFamily.md) 1.5, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 22.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (12) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [``](../devicetree/root.md) | `AppleARMPE` | `AppleARM` |
+| [`/arm-io/i2c2`](../devicetree/root__arm-io__i2c2.md) | `AppleARMSoftIICController` | `iic,soft` |
+| [`/arm-io/i2c3`](../devicetree/root__arm-io__i2c3.md) | `AppleARMSoftIICController` | `iic,soft` |
+| [`/arm-io/i2c3/display-eeprom`](../devicetree/root__arm-io__i2c3__display-eeprom.md) | `AppleARMI2CEEPROM` | `eeprom,i2c` |
+| [`/arm-io/i2c3/display-eeprom-hi`](../devicetree/root__arm-io__i2c3__display-eeprom-hi.md) | `AppleARMI2CEEPROM` | `eeprom,i2c` |
+| [`/arm-io/i2c3/display-eeprom-2`](../devicetree/root__arm-io__i2c3__display-eeprom-2.md) | `AppleARMI2CEEPROM` | `eeprom,i2c` |
+| [`/arm-io/i2c3/display-eeprom-2-hi`](../devicetree/root__arm-io__i2c3__display-eeprom-2-hi.md) | `AppleARMI2CEEPROM` | `eeprom,i2c` |
+| [`/arm-io/i2c4`](../devicetree/root__arm-io__i2c4.md) | `AppleARMSoftIICController` | `iic,soft` |
+| [`/arm-io/cpu-debug-interface`](../devicetree/root__arm-io__cpu-debug-interface.md) | `AppleARMLightEmUp` | `cpu-debug-interface` |
+| [`/backlight`](../devicetree/root__backlight.md) | `AppleARMBacklight` | `backlight` |
+| [`/sacm-general`](../devicetree/root__sacm-general.md) | `AppleARMSlowAdaptiveClockingManager` | `sacm` |
+| [`/sacm-jasper`](../devicetree/root__sacm-jasper.md) | `AppleARMSlowAdaptiveClockingManager` | `sacm` |
+
+## IOKit personalities (17) [KC]
+
+### AppleARMBacklight
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `IOClass`: `AppleARMBacklight`
+- `IONameMatch`: `backlight`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleARMPlatform`
+- `IOProviderClass`: `IOPlatformDevice`
+- `backlight-control`: `True`
+
+### AppleARMBootPerf
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `IOClass`: `AppleARMBootPerf`
+- `IOMatchCategory`: `AppleARMBootPerf`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleARMPlatform`
+- `IOProviderClass`: `IOResources`
+- `IOResourceMatch`: `IOKit`
+
+### AppleARMCFIFlashController
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `IOClass`: `AppleARMCFIFlashController`
+- `IONameMatch`: `nor-flash,cfi`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleARMPlatform`
+- `IOProviderClass`: `AppleARMIODevice`
+
+### AppleARMCPU
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `IOClass`: `AppleARMCPU`
+- `IONameMatch`: `cpu`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleARMPlatform`
+- `IOProbeScore`: `100`
+- `IOProviderClass`: `IOPlatformDevice`
+
+### AppleARMFabricTrace
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `IOClass`: `AppleARMFabricTrace`
+- `IONameMatch`: `gen-aft`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleARMPlatform`
+- `IOProviderClass`: `IOService`
+
+### AppleARMI2CEEPROM
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `IOClass`: `AppleARMI2CEEPROM`
+- `IONameMatch`: `eeprom,i2c`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleARMPlatform`
+- `IOProviderClass`: `AppleARMIICDevice`
+
+### AppleARMLightEmUp
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `IOClass`: `AppleARMLightEmUp`
+- `IONameMatch`: `cpu-debug-interface`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleARMPlatform`
+- `IOProviderClass`: `IOService`
+
+### AppleARMNMI
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `IOClass`: `AppleARMNMI`
+- `IONameMatch`: `programmer-switch`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleARMPlatform`
+- `IOProviderClass`: `AppleARMIODevice`
+
+### AppleARMNORNVRAM1
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `IOClass`: `AppleARMNORNVRAM`
+- `IONameMatch`: `nvram,chrp`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleARMPlatform`
+- `IOProviderClass`: `AppleARMNORFlashDevice`
+
+### AppleARMNORNVRAM2
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `IOClass`: `AppleARMNORNVRAM`
+- `IONameMatch`: `nvram,nor`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleARMPlatform`
+- `IOProviderClass`: `AppleARMNORFlashDevice`
+
+### AppleARMNORPanicLog
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `IOClass`: `AppleARMNORPanicLog`
+- `IONameMatch`: `paniclog`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleARMPlatform`
+- `IOProviderClass`: `AppleARMNORFlashDevice`
+
+### AppleARMPE
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `IOClass`: `AppleARMPE`
+- `IONameMatch`: `AppleARM`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleARMPlatform`
+- `IOProbeScore`: `1000`
+- `IOProviderClass`: `IOPlatformExpertDevice`
+
+### AppleARMPWMBacklight
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `IOClass`: `AppleARMPWMBacklight`
+- `IONameMatch`: `backlight,pwm`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleARMPlatform`
+- `IOProviderClass`: `AppleARMPWMDevice`
+
+### AppleARMSFRManifest
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `IOClass`: `AppleARMSFRManifest`
+- `IOMatchCategory`: `AppleARMSFRManifest`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleARMPlatform`
+- `IOProviderClass`: `IOResources`
+- `IOResourceMatch`: `IOKit`
+
+### AppleARMSPIFlashController
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `IOClass`: `AppleARMSPIFlashController`
+- `IONameMatch`: `nor-flash,spi`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleARMPlatform`
+- `IOProviderClass`: `AppleARMSPIDevice`
+
+### AppleARMSlowAdaptiveClockingManager
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `IOClass`: `AppleARMSlowAdaptiveClockingManager`
+- `IONameMatch`: `sacm`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleARMPlatform`
+- `IOProviderClass`: `IOPlatformDevice`
+
+### AppleARMSoftIICController
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `IOClass`: `AppleARMSoftIICController`
+- `IONameMatch`: `iic,soft`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleARMPlatform`
+- `IOProbeScore`: `100`
+- `IOProviderClass`: `AppleARMIODevice`
+
+
+## C++ classes (74) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AggressorUserClient` | 0x120 | IOUserClient → IOService → IORegistryEntry |
+| `AppleARMBacklight` | 0x370 | IOService → IORegistryEntry |
+| `AppleARMBacklightFunction` | 0x28 | AppleARMFunction |
+| `AppleARMBacklightPCCUpdateFunction` | 0x30 | AppleARMFunction |
+| `AppleARMBootPerf` | 0x90 | IOService → IORegistryEntry |
+| `AppleARMCFIFlashController` | 0x110 | AppleARMNORFlashController → IOService → IORegistryEntry |
+| `AppleARMCPU` | 0xf8 | IOCPU → IOService → IORegistryEntry |
+| `AppleARMCPUPerformanceArbiter` | 0xb8 | IOService → IORegistryEntry |
+| `AppleARMCPUPerformanceServiceNub` | 0xa0 | IOService → IORegistryEntry |
+| `AppleARMFabricTrace` | 0x98 | IOService → IORegistryEntry |
+| `AppleARMFunction` | 0x28 |  |
+| `AppleARMFunctionAssertReset` | 0x28 | AppleARMFunction |
+| `AppleARMFunctionEventTimestamp` | 0x28 | AppleARMFunction |
+| `AppleARMFunctionPerfAdvise` | 0x38 | AppleARMFunction |
+| `AppleARMFunctionSlowAdaptiveClocking` | 0x40 | AppleARMFunction |
+| `AppleARMFunctionSlowAdaptiveClockingAggressor` | 0x38 | AppleARMFunction |
+| `AppleARMFunctionUSBDataMonitor` | 0x28 | AppleARMFunction |
+| `AppleARMI2CEEPROM` | 0xa8 | AppleARMNORFlashController → IOService → IORegistryEntry |
+| `AppleARMIICController` | 0x108 | IOService → IORegistryEntry |
+| `AppleARMIICDevice` | 0xa0 | IOService → IORegistryEntry |
+| `AppleARMIICUserClient` | 0xd8 | IOUserClient → IOService → IORegistryEntry |
+| `AppleARMIO` | 0xd8 | IOPlatformIO → IOService → IORegistryEntry |
+| `AppleARMIODevice` | 0x108 | IOService → IORegistryEntry |
+| `AppleARMLightEmUp` | 0x90 | IOService → IORegistryEntry |
+| `AppleARMMIPIDSIController` | 0x90 | IOService → IORegistryEntry |
+| `AppleARMMIPIDSIDevice` | 0x90 | IOService → IORegistryEntry |
+| `AppleARMNMI` | 0x90 | IOService → IORegistryEntry |
+| `AppleARMNORFlashController` | 0x90 | IOService → IORegistryEntry |
+| `AppleARMNORFlashDevice` | 0xa0 | IOService → IORegistryEntry |
+| `AppleARMNORNVRAM` | 0xa0 | IONVRAMController → IOService → IORegistryEntry |
+| `AppleARMNORPanicLog` | 0x90 | IOService → IORegistryEntry |
+| `AppleARMNORPanicLogDevice` | 0xa8 | IOBlockStorageDevice → IOService → IORegistryEntry |
+| `AppleARMPE` | 0x128 | IODTPlatformExpert → IOPlatformExpert → IOService → IORegistryEntry |
+| `AppleARMPWM` | 0x88 | IOService → IORegistryEntry |
+| `AppleARMPWMBacklight` | 0xe0 | IOService → IORegistryEntry |
+| `AppleARMPWMBacklightControllerUpdateFunction` | 0x30 | AppleARMFunction |
+| `AppleARMPWMCaptureTimestampFunction` | 0x38 | AppleARMFunctionEventTimestamp → AppleARMFunction |
+| `AppleARMPWMDevice` | 0xe0 | IOService → IORegistryEntry |
+| `AppleARMPWMInOutPulseController` | 0xb8 | IOService → IORegistryEntry |
+| `AppleARMPerformanceController` | 0x7b0 | IOService → IORegistryEntry |
+| `AppleARMPerformanceControllerCLPCNub` | 0x98 | IOService → IORegistryEntry |
+| `AppleARMPerformanceControllerFunctionAssertReset` | 0x38 | AppleARMFunctionAssertReset → AppleARMFunction |
+| `AppleARMPerformanceControllerFunctionCLPCEnabled` | 0x30 | AppleARMFunction |
+| `AppleARMPerformanceControllerFunctionCPUIdle` | 0x30 | AppleARMFunction |
+| `AppleARMPerformanceControllerFunctionClockGate` | 0x30 | AppleARMFunction |
+| `AppleARMPerformanceControllerFunctionPerfAdvise` | 0x40 | AppleARMFunctionPerfAdvise → AppleARMFunction |
+| `AppleARMPerformanceControllerFunctionPowerGate` | 0x30 | AppleARMFunction |
+| `AppleARMQuadSPIController` | 0xe8 | AppleARMSPIController → IOService → IORegistryEntry |
+| `AppleARMQuadSPIDevice` | 0xe0 | AppleARMSPIDevice → IOService → IORegistryEntry |
+| `AppleARMQuadSPIDeviceUserClient` | 0xd8 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `AppleARMRTC` | 0xf0 | IOService → IORegistryEntry |
+| `AppleARMSFRManifest` | 0x88 | IOService → IORegistryEntry |
+| `AppleARMSPICommand` | 0xc0 | IOCommand |
+| `AppleARMSPIController` | 0xe8 | IOService → IORegistryEntry |
+| `AppleARMSPIDevice` | 0xe0 | IOService → IORegistryEntry |
+| `AppleARMSPIDeviceUserClient` | 0xd8 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `AppleARMSPIFlashController` | 0x1cf0 | AppleARMNORFlashController → IOService → IORegistryEntry |
+| `AppleARMSPMIController` | 0x110 | IOInterruptController → IOService → IORegistryEntry |
+| `AppleARMSPMIControllerUserClient` | 0xd8 | IOUserClient → IOService → IORegistryEntry |
+| `AppleARMSPMIDevice` | 0xa8 | IOService → IORegistryEntry |
+| `AppleARMSPMIDeviceUserClient` | 0xd8 | IOUserClient → IOService → IORegistryEntry |
+| `AppleARMSlowAdaptiveClockingManager` | 0xc0 | IOSlowAdaptiveClockingManager → IOService → IORegistryEntry |
+| `AppleARMSoftIICController` | 0x120 | AppleARMIICController → IOService → IORegistryEntry |
+| `AppleARMTraceController` | 0x90 | IOService → IORegistryEntry |
+| `AppleFabricTraceUserClient` | 0xe8 | IOUserClient → IOService → IORegistryEntry |
+| `AppleMCCUserClient` | 0xe0 | IOUserClient → IOService → IORegistryEntry |
+| `AppleMemCacheController` | 0x460 | IOService → IORegistryEntry |
+| `AppleMemCacheDataSetsFunction` | 0x38 | AppleARMFunction |
+| `AppleMemCacheEvent` | 0x30 | IOCommand |
+| `MCClient` | 0x28 |  |
+| `MCCommand` | 0x38 | IOCommand |
+| `MCCommandQueue` | 0x78 | IOEventSource |
+| `MCDataStreamInfoObject` | 0x20 |  |
+| `VictimUserClient` | 0x118 | IOUserClient → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x000109f7 off=0x0016ccf0-0x0017d6e7 addr=0xfffffe0007170cf0-0xfffffe00071816e7 r--/r--   __TEXT            
+	sz=0x00001ae0 off=0x0016d410-0x0016eef0 addr=0xfffffe0007171410-0xfffffe0007172ef0               __TEXT.__const            
+	sz=0x00001553 off=0x0016eef0-0x00170443 addr=0xfffffe0007172ef0-0xfffffe0007174443               __TEXT.__os_log           
+	sz=0x0000d2a4 off=0x00170443-0x0017d6e7 addr=0xfffffe0007174443-0xfffffe00071816e7               __TEXT.__cstring          (CstringLiterals)
+001: LC_SEGMENT_64 sz=0x0005474c off=0x016e9130-0x0173d87c addr=0xfffffe00086ed130-0xfffffe000874187c r-x/r-x   __TEXT_EXEC       
+	sz=0x000539ec off=0x016e9130-0x0173cb1c addr=0xfffffe00086ed130-0xfffffe0008740b1c          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000d60 off=0x0173cb1c-0x0173d87c addr=0xfffffe0008740b1c-0xfffffe000874187c          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00001409 off=0x0492f940-0x04930d49 addr=0xfffffe000b933940-0xfffffe000b934d49 rw-/rw-   __DATA            
+	sz=0x000006c8 off=0x0492f940-0x04930008 addr=0xfffffe000b933940-0xfffffe000b934008               __DATA.__data             
+	sz=0x00000cd8 off=0x00000000-0x00000cd8 addr=0xfffffe000b934008-0xfffffe000b934ce0               __DATA.__common           (Zerofill)
+	sz=0x00000069 off=0x00000000-0x00000069 addr=0xfffffe000b934ce0-0xfffffe000b934d49               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00018f18 off=0x00faed18-0x00fc7c30 addr=0xfffffe0007fb2d18-0xfffffe0007fcbc30 rw-/rw-   __DATA_CONST      
+	sz=0x00000128 off=0x00faed18-0x00faee40 addr=0xfffffe0007fb2d18-0xfffffe0007fb2e40         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000128 off=0x00faee40-0x00faef68 addr=0xfffffe0007fb2e40-0xfffffe0007fb2f68         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00016b30 off=0x00faef68-0x00fc5a98 addr=0xfffffe0007fb2f68-0xfffffe0007fc9a98         __DATA_CONST.__const            
+	sz=0x00000370 off=0x00fc5a98-0x00fc5e08 addr=0xfffffe0007fc9a98-0xfffffe0007fc9e08         __DATA_CONST.__kalloc_var       
+	sz=0x00001580 off=0x00fc5e08-0x00fc7388 addr=0xfffffe0007fc9e08-0xfffffe0007fcb388         __DATA_CONST.__kalloc_type      
+	sz=0x000006b0 off=0x00fc7388-0x00fc7a38 addr=0xfffffe0007fcb388-0xfffffe0007fcba38         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000001f8 off=0x00fc7a38-0x00fc7c30 addr=0xfffffe0007fcba38-0xfffffe0007fcbc30         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 491 at 0x04ad2188
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     CA2B78E6-0F7B-393C-BDBB-D06905EB8BDE
+008: LC_SOURCE_VERSION           1150.40.5.0.0
+009: LC_FUNCTION_STARTS          offset=0x004a974a8 size=0xaf8
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleARMPlatform`
+- `CFBundleGetInfoString`: `Copyright © 2009 Apple Inc. All rights reserved.`
+- `CFBundleIdentifier`: `com.apple.driver.AppleARMPlatform`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleARMPlatform`
+- `CFBundleNumericVersion`: `16941056`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0.2`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1.0.2`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `OSBundleCompatibleVersion`: `1.0.0`
+- `OSBundleRequired`: `Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleARMPlatform.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198904304400`
+- `_PrelinkExecutableRelativePath`: `AppleARMPlatform`
+- `_PrelinkExecutableSize`: `521316`
+- `_PrelinkExecutableSourceAddr`: `-2198904304400`
+- `_PrelinkKmodInfo`: `-2198829057728`
+
+## Strings (1756) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `VictimUserClient::removeFreqs -- removing: freq=%lluHz bandwidth=%dHz priority=%d\n`
+- `en`
+- `AppleARMPerformanceControllerDVBBoostTimeoutUS3`
+- `virtual void AppleARMLightEmUp::stop(IOService *)`
+- `brightness-nit-cap`
+- `use-trinity`
+- `%s::%s:  - skipping first setting of level \n`
+- `wakeup-data`
+- `AppleARMPerformanceControllerPerformanceDomainCount`
+- `AppleARMPerformanceControllerDVBPeriodUS3`
+- `AppleARMSPMIDevice`
+- `MSR`
+- `AMC Stats`
+- `20`
+- `%s::%s: tableMaxIndex=%d, x1=%ld, x2=%lld/1000, x3=%ld, y1=%lld/1000, y3=%lld/1000, y2=%lld/1000, dac=%d (normalized=%lld/1000)\n`
+- `evaluateDataStream`
+- `reg`
+- `*** %s:\n***    %s for CPU %d (%d) must match interrupts[0] (%d)\n`
+- `VictimUserClient::getNumFreqs\n`
+- `SecureRootCallBack`
+- `queueEvent`
+- `com.apple.driver.spi.device.user-access`
+- `kSMC_ASC`
+- `site.const OSSymbol *`
+- `AppleARMPerformanceController::traceBufferEnable: Trace is %sabled\n`
+- `display-backlight-compensation-v1`
+- `dcpexpert-service-cb`
+- `af-stop-clock`
+- `AppleARMPerformanceControllerFunctionAssertReset`
+- `AppleARMPerformanceControllerDVCGracePeriodUS1`
+- `PERF_ARBITER_NOTIFY`
+- `_dcsOdtsES`
+- `USB3HostAltConfig`
+- `%s::%s: vers=%d.%d, iMid=%d, iMax=%d, nitsAt20mA=%d\n`
+- `legacyBacklightRamp`
+- `VictimUserClient::registerVictim - Registering victim!\n`
+- `DVB Relax Count`
+- `lMidPanel`
+- `raw-panel-serial-number`
+- `%s::%s: Setting of property is not permitted for PID %d!\n`
+- `%s::%s: registered pending property updates\n`
+- `%s:%d: DSID management is disabled\n\n`
+- `AppleARMNORFlashController`
+- `AppleARMPerformanceController.cpp`
+- `dcs-enable-thermal-loop`
+- `%s:%d: Failed to initialize shared data queue\n`
+- `function-cpu_idle`
+- `AppleARMPerformanceController: TurboLag Enabled on Performance Domain %u with %uus timeout\n`
+- `ClockID`
+- `[%s]:%s:%d:[error] No reg prop\n`
+- `Display1`
+- `AppleARMSoftIICController`
+- `_eraseSector`
+- `site.AppleARMPWMCaptureTimestampFunction`
+- `site.AppleMemCacheController`
+- `dma-capable`
+- `%s: malformed actions list\n`
+- `backlight-logging`
+- `nits2mAmps2ndOrderCoef`
+- `%s::%s: nits2mAmps0thOrderCoef=%ld\n`
+- `_mCachePtdDrvToCtrl && _mCachePtdDrvToCtrl->num_entries && (_mCachePtdDrvToCtrl->num_entries >= _quotaReqPtdEntryCount+_cmdPtdEntryCount)`
+- `data`
+- `ds != NULL`
+- `%s:%d: Invalid arguments to registerForPeriodicCall()\n\n`
+- `spiPollCtl`
+- `AppleARMPerformanceControllerTraceBufferNomenclature`
+- `repeat`
+- `%s::%s: AppleARMPWMBacklight::callPlatformFunction (\"%s\",waitForFunction = %d,p1 = %p,p2 = %p) \n`
+- `current-for-max-backlight`
+- `lMaxPanel`
+- `use-AAB-architecture`
+- `%s::%s: no milliAmps2DACTablePart2 data\n`
+- `calibratedMinCurrent`
+- `\"AppleARMPerformanceController: PD%u performance state set higher then limit voltage supports\" @%s:%d`
+- `kISP_Stats`
+- `%s:%s:%u - Unable to find %s property\n`
+- `Enabled`
+- `ds`
+- `%s::%s:%d:  ERROR: Invalid region address: 0x%llx\n\n`
+- `AppleARMPerformanceController`
+- `Reason`
+- `eraseArea`
+- `uncalMilliNits`
+- `PreStrobe`
+- `site.AppleARMNORPanicLogDevice`
+- `nvram-current-bank`
+- `mc_cmd_ack_ptd_count`
+- `aap-factor`
+- `%s:%d: Stream:%s quotaGroup:%d priority:%d DSID:[%d-%d] Policy:%d Size:%d Persistence:%d\n\n`
+- `AppleARMCPUPerformanceArbiter`
+- `publishBelow`
+- `AppleARMPerformanceController: Dynamic Voltage Control Enabled on Performance Domain %u with %uus activity timeout and %uus grace period\n`
+- `%s:%d: Failed to add timer to workloop\n\n`
+- `_waitWriteEnabled`
+- `Disable`
+- `setBacklightEnableGated`
+- `\"CPU configuration in device tree is invalid\" @%s:%d`
+- `sac-test-framework-node`
+- `spmi-verbose`
+- `Unable to enablePsdService, result=%08x\n`
+- `%s::%s: %s: RegisterFunctionParent with ARMFn failed, some functionality may not be supported \n`
+- `AppleARMSFRManifest: Error: Failed to create OSData object\n`
+- `%s:%d: Received unsupported type %d\n\n`
+- `getGMTTimeOfDay`
+- `NewEMASt`
+- `plc-lv-threshold`
+- `SecureRootName`
+- `\"phys_carveout_size == 0\" @%s:%d`
+- `dvc-grace-period`
+- `pdmvr-rules`
+- `ARBITER`
+- `AppleARMPerformanceControllerDVBRelaxTimeoutUS1`
+- `%s:%d: enableDataStream: Ignoring request from non-user client\n\n`
+- `cti-enable`
+- `AppleARMPerformanceController Code Profiling`
+- `spmi.driver`
+- `%s:%d: Limiting data collection counters to %d\n\n`
+- `delegate-platform-functions`
+- `%s: starting...\n`
+- `\"%s clockFrequenciesNCLK[x%x] = %d is unknown: incompatible iBoot and AppleARMIO\\n\" @%s:%d`
+- `site.AppleARMIODevice`
+- `\"%s: missing page size\" @%s:%d`
+- `%s::%s:  - framebuffer OFF (skip changing level)\n`
+- `nits2DAC`
+- `_ctrl`
+- `AppleARMCPU`
+- `AppleARMSFRManifest: Successfully published sfr-manifest\n`
+- `sfr-manifest-hash`
+- `/iBoot`
+- `12111112122212121111112`
+- `ptd-ranges`
+- `%s:%s:%u - Error: read/write buffer mismatch offset: %#x length: %#x\n`
+- `    Performance State %.2u : .psPerformanceDivider: %s .psVoltageRequired: %.2u`
+- `AggressorUserClient::initWithTask owningTask invalid\n`
+- `me != NULL`
+- `pwm-frequency`
+- `%s::%s: no calibratedMaxCurrent data\n`
+- `%s::%s: Backlight calibration data %lu\n`
+- `%s::%s: AAP hardware doesn't exist can't set AAP strength\n`
+- `bool AppleARMBacklight::isDarkBoot()`
+- `%s::%s: Brightness scalar %ld/1000 -> %ld/1000\n`
+- `site.AppleARMIICDevice *`
+- `\"%s: Invalid DevicePowerState\" @%s:%d`
+- `%s: length=0x%08x, offset=0x%08x, _qspiDevice=%p, _qspiPageProgramCmd=%x\n`
+- `backlight-level`
+- `IOMaximumBlockCountWrite`
+- `MTP`
+- `%s::%s: Backlight is forced to be off\n`
+- `IODeviceTree:/arm-io/mcc`
+- `%s:%d: Ignoring invalid stream id %d\n\n`
+- `%s:iicWakeData #%d- reg=0x%02x, interval=0x%08x, delay=0x%08x\n`
+- `callPlatformFunction`
+- `isDarkBoot`
+- `interrupts`
+- `pclk`
+- `cpuIdle(enter) Exec Time`
+- `1211111212221212111`
+- `121111121222121211112222222212111111211111121111112111111211111121111112111111211111121111112111111211111121111112111111211111121111112111111211111121111112111111211111121111112111111211111121111112111111211111121111112111111211111121111112111111211111121111112111111211111121111112111111211111121111`
+- `kMSR_OverlappingRegions`
+- `site.AppleARMTraceController`
+- `Apple`
+- `IOPlatformSleepAction`
+- `calibration-data`
+- `AppleARMPWMBacklightControllerUpdateFunction`
+- `Success`
+- `%s::%s: AAP hardware not powered ON\n`
+- `AppleARMFunctionFunction`
+- `i2c-logsize`
+- `site.char`
+- `1211112`
+- `AggressorUserClient::getNumFreqs\n`
+- `ACPU`
+- `writePTD`
+- `page-size`
+- `PMP`
+- `workLoop`
+- `IODARTMapper`
+- `function-backlight_enable1`
+- `calibratedMidCurrent`
+- `backlight-dim-step`
+- `MIE factor`
+- `AppleARMQuadSPIController`
+- `AppleARMPerformanceController: Pseudo-CPU Policy Enabled\n`
+- `PERF_CPU_IDLE_TIMER`
+- `Wakeup`
+- `clientNotifyThread`
+- `_identifyNORDevice`
+- `set-enabled`
+- `%s::%s: backlight level update = %d\n`
+- `LeaderRead`
+- `mipi-send-data`
+- `testMode`
+- `function-ipi_dispatch_other`
+- `clock-frequencies-nclk`
+- `%s:%s:%u - unaligned - length: %#x offset: %#x\n`
+- `CPU Package Active Time`
+- `%s:%d: Invalid client id %d\n\n`
+- `%s[%s]:%s:%u - SPI Flash status write enable %d - error %#x\n`
+- `duty-cycle`
+- `AppleARMBootPerf: Warning: profile->magic (0x%x) != 'BTRC'\n`
+- `PowerByCalendarDate`
+- `mcc_clampwaycount`
+- `kGPU_Reads`
+- `%s::%s: kIOHIDDisplayBacklightLevelKey not found in NVRAM\n`
+- `dpb-factor`
+- `voltage-states%u`
+- `configPtr != nullptr`
+- `121111111111222222111222`
+- `mipi-command`
+- `%s:%d: disableDataStream: Invalid arguments\n\n`
+- `bool AppleARMCPU::_validateConfiguration()`
+- `UnusedArg`
+- `CurrentVoltSt`
+- `/Library/Caches/com.apple.xbs/C48E7483-DDEB-4ACD-902F-2D30CC3F58BF/TemporaryDirectory.DMJ0ua/Sources/AppleARMPlatform/AppleARMSPMI.cpp`
+- `Reset`
+- `DataStream Cache Usage`
+- `nits2Slider`
+- `AppleARMSFRManifest: Error: Failed to find manifest entry region\n`
+- `%s:%d: User Client only mode: %d\n\n`
+- `DVB Timeout Count`
+- `AssertMacros: %s, %s file: %s, line: %d, value: %lld\n`
+- `IOReturn AppleMemCacheController::updateCacheSize(uint32_t, bool)`
+- `_waitStatusBitsClear`
+- `red-coefficient`
+- `MicroAmps value`
+- `%s::%s: MIE update %lx\n`
+- `function-error_handler`
+- `AppleARMPerformanceControllerDVDThresholdUS3`
+- `virtual void AppleMemCacheController::initDCSThermalLoop(IOService *)`
+- `site.MCDataStream`
+- `AFKEndpointInterface`
+- `DisplayBrightnessNitsNVRAM`
+- `AppleARMSFRManifest: Found %d matching hash entries\n`
+- `changeQuota`
+- `MCPolicyMgrPMP::MCPolicyMgrPMP(uint32_t, IOService *)`
+- `site.AppleARMIICDevice`
+- `VictimUserClient::addFreqs - registering the following with SAC\n`
+- `%s:%d: This process didn't enable data collection\n\n`
+- `CpuNumber`
+- `%s:%d: There is no shared data queue\n\n`
+- `function-iic_scl`
+- `kISP_TemporalFiltering`
+- `VictimUserClient::stop\n`
+- `virtual bool AppleMemCacheController::start(IOService *)`
+- `pre-strobe-nit`
+- `%s::%s: No BlueCoefficient, using default\n`
+- `%s::%s: setting defaultBrightness to %lld/1000\n`
+- `%s::%s: Unable to obtain DCP pwr assertion ARMfn: %s! \n`
+- `backlightUpdateTimerCallback`
+- `\"MEMCachePolicyManager: %s:%u REQUIRE failed: %s\" @%s:%d`
+- `*** %s:\n***    Max CPU count is zero\n`
+- `site.AppleARMIICController`
+- `AppleARMIICController::start buffer=%p entries=%u\n`
+- `site.IICWakeInfo`
+- `%s:%d: Failed to map memory descriptor to copy data stream info\n\n`
+- `IORTC`
+- `virtual edt_ptd_range_config *AppleMemCacheController::getPTDRange(const char *, uint32_t)`
+- `DVC Grace Count`
+- `[%s]:%s:%d:[error] setSPMIConfig=0x%08x\n`
+- `12111112122212121111122111212`
+- `1211111212221212111122222211`
+- `%s: no reg prop\n`
+- `hardware-max-current-limit`
+- `disable-quad-writes`
+- `%s::%s: AppleARMPWMBacklight::defaultBrightness = %d\n`
+- `kGPU_USCDataReads`
+- `AppleUSBCableType`
+- `DisplayBrightnessMilliAmps`
+- `AppleARMQuadSPIDeviceUserClient`
+- `MemCachePolicyManager.cpp`
+- `12111112122212121111111111111211121`
+- `master`
+- `AppleARMPE::getGMTTimeOfDay can not provide time of day: RTC did not show up\n`
+- `site.AppleARMPerformanceControllerFunctionPerfAdvise`
+- `%s:%d: Sending command to PMP\n\n`
+- `AppleRawBrickIDVoltages`
+- `plc-update`
+- `displayOnContinuousTimestamp`
+- `12111`
+- `turbolag-timeout`
+- `AggressorUserClient::stop\n`
+- `AGXAccelerator`
+- `DAC2NitsTable`
+- `%s::%s: no mA2Nits0thOrderCoef data, use zero\n`
+- `%s::%s: no nits2mAmps0thOrderCoef data, use zero\n`
+- `%s::%s: nvram backlight level = 0x%lx\n`
+- `UncalMilliNits value`
+- `AppleARMCPUPerformanceArbiter::stop\n`
+- `cpu-max-core-count`
+- `dvb-boost-timeout`
+- `enable-pdmvr`
+- `EnterExit`
+- `%s: updated log mask to: %08x\n`
+- `pmp_ptd_update_space_offset`
+- `AppleVoltageDictionary`
+- `%s::%s: AAP hardware returned unknown error: %s (%#x)\n`
+- `VictimUserClient::removeFreqs -- no frequencies to remove!\n`
+- `121111121222121212`
+- `%s::%s:%d:  WARN: mapped_mem already mapped.\n\n`
+- `void MCCommandQueue::queueEvent(MCCommand *)`
+- `backlight-calibration-parameters`
+- `mA2Nits1stOrderCoef`
+- `%s::%s: *** backlight level update failed with error (%s)\n`
+- `site.AppleARMIICUserClient`
+- `(*freqDataSize / sizeof(IOSACVictimFrequency) == %u, _mVictimsCount == %d\n`
+- `%s::%s: Unsupported platfrom for this call`
+- `%s::%s: Setting mAmps=%ld/1000 and iDAC=%d\n`
+- `%s::%s: kIOHIDDisplayBrightnessSliderPositionKey=%u%% (%#x)\n`
+- `MemCachePolicyManagerPMP.cpp`
+- `AppleARMPerformanceControllerTurboLagTimeoutUS1`
+- `CpuActiveTicksHigh`
+- `%s[%s]:%s:%u - writes unsupported\n`
+- `AppleARMPWMBacklight`
+- `site.AppleARMNORNVRAM`
+- `getDataStreamConfigEntryCount`
+- `IOMaximumBlockCountRead`
+- `cpu-id`
+- `VictimUserClient::initWithTask owningTask invalid\n`
+- `auto-start`
+- `IOReportLegendPublic`
+- `ior-hist-config`
+- `12111121`
+- `com.apple.driver.quadSPI.device.user-access`
+- `VictimUserClient::sRemoveFreqs\n`
+- `AggressorUserClient::aggressorActionMultiple -- count = %d\n`
+- `value`
+- `*** %s:\n***    Expected ipi_dispatch %d for CPU %d actual %d\n`
+- `kDSID0`
+- `AppleARMBootPerf: Error: failed to publish profile data (%d)\n`
+- `VictimUserClient:initWithTask::super failed\n`
+- `    Voltage State %.2u : .vsPerformanceLimit: %s .vsDeviceConstraint:`
+- `AppleARMSPMIDeviceUserClient`
+- `AppleARMCPUPerformanceArbiter::start\n`
+- `wakeup-device`
+- `%s:%d: registerForPeriodicCall registered\n\n`
+- `%s: parent not SPI controller\n`
+- `AppleARMSPICommand`
+- `spiflash.debug`
+- `initWith`
+- `%s::%s: Pre-strobe sequence %s\n`
+- `site.AppleARMSPIDeviceUserClient`
+- `site.AppleARMNMI`
+- `enable-turbolag`
+- `AppleARMPerformanceControllerVoltageStates`
+- `site.AppleARMPerformanceControllerFunctionCPUIdle`
+- `AppleARMPerformanceControllerCodeProfiling`
+- `PERF_VOLT_CHG_DOMx`
+- `121111121222121211111111111121121111`
+- `%s:%d: Datastreams are not configured yet\n\n`
+- `InterruptControllerName`
+- `AppleARMPerformanceControllerTurboLagTimeoutUS2`
+- `NewEvent`
+- `site.AppleARMSPMIDeviceUserClient`
+- `CVAVE`
+- `%s:%d: Periodic tracer is disabled\n\n`
+- `registerClient_block_invoke`
+- `AppleARMBacklightFunction`
+- `NMI`
+- `AppleARMPerformanceControllerDVBPeriodUS2`
+- `_programBytes`
+- `setInstanceRequestedSize`
+- `%s: could not create panic log block device\n`
+- `11212211111111111111111111111111111111111111111111111111111111111111111111111111211122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222221122221`
+- `cluster-type`
+- `DVC Relax Count`
+- `IOPMUBootAppName`
+- `AppleARMFunctionUSBDataMonitor`
+- `IOBSD`
+- `%s::%s: %s::%s: Backlight off - PCC update - scalar: %ld/1000, lastNitsInPendingDict: %lld/1000\n\n`
+- `21122211112`
+- `VictimUserClient::start failed to start provider\n`
+- `PERF_SRAMEMA_DOMx`
+- `SC`
+- `%s:%d: DeQueued event\n\n`
+- `milliAmps2DACTablePart1`
+- `%s::%s:  dac=%d -> nits=%d, Buttons? %d\n`
+- `getWorkLoop()->inGate()`
+- `%s:%d: dsidArray list is null\n\n`
+- `USB3DeviceNeedsAuthentication`
+- `%s::%s: _lMidProduct=%ld\n`
+- `Not engaged`
+- `dcpExpertCallback`
+- `%s: could not attach mother class\n`
+- `IOHibernateState`
+- `ignore-power-down`
+- `PERF_CPU_TICKS`
+- `mcc_debug`
+- `CurrentNits`
+- `[CBPWR] %s DCP FE pwr assertion. %s (0x%x)`
+- `AppleARMSlowAdaptiveClockingManager`
+- `AppleARMNORPanicLog`
+- `sendCommandToPMP`
+- `site.AppleARMCFIFlashController`
+- `newAppleARMFunction`
+- `i2c-verbose`
+- `%s::%s: no DAC2NitsTable data\n`
+- `%s: could not start the panic log device\n`
+- `%s.livelog`
+- `%s:%s:%u - Error writing buffer length: %#x - %#x\n`
+- `AppleARMPerformanceControllerPerformanceDomainDVC`
+- `frequency`
+- `kANE_IntermediateSpillsHi`
+- `AppleRawBatteryVoltage`
+- `%s::%s: Harmony scaler update: _pccEnabled: %d, scalar: %ld/1000, _lastNits: %lld/1000\n`
+- `%s:%s:%u - NORFlash device erase() failed, ret=0x%08x\n`
+- `VictimUserClient::addFreqs\n`
+- `AppleARMPerformanceControllerPerformanceDomainDPSM`
+- `222222212`
+- `%s::%s: Milliamp threshold exceeded at %ld/1000 mA\n`
+- `%s::%s: AAP _aapFactor=%ld/1000 (%#lx) ret=%s (%#x)\n`
+- `12211`
+- `%s:%d: Command completed\n\n`
+- `%s[%s]:%s:%u - cannot be locked\n`
+- `IOPMUBootErrorClear`
+- `playback backlight factors report`
+- `com.apple.private.dfr.brightness-access`
+- `copyDataStreamInfo`
+- `EmbeddedDeviceTypePanicLog`
+- `*** %s:\n***    Duplicate CPU entry for id %d\n`
+- `VictimUserClient::removeFreqs\n`
+- `Idle Time Histogram`
+- `TL Grace Count`
+- `CPU Idle Path`
+- `initWithInfo`
+- `%s:%d: Client for id %d is already registered. Name: %s callbackOption: %d \n\n`
+- `%s: length=0x%08x, offset=0x%08x\n`
+- `/cpus`
+- `power-gates`
+- `writeRegion`
+- `MaintenanceWakeCalendarDate`
+- `ANS`
+- `IOReturn AppleMemCacheController::copyDataStreamInfo(MCDataStreamId, dataStreamInfo *)_block_invoke`
+- `IOUserClientDefaultLocking`
+- `\"%s: unknown provider type\" @%s:%d`
+- `sendQuotaRequestToPMP`
+- `AppleARMBootPerf: Error: profile handoff region size is 0, nothing to copy\n`
+- `VictimUserClient::registerVictim - ERROR - failed to register victim due to incorrect data size\n`
+- `fclk`
+- `AppleARMPerformanceControllerPerformanceStates`
+- `TL High State Count`
+- `AppleARMPWM`
+- `site.AppleARMPWMBacklightControllerUpdateFunction`
+- `%s:%d: Mem descriptor pointer is null\n\n`
+- `writeBytes`
+- `enable-dvb`
+- `%s[%s]:%s:%u - unaligned - length: %#x offset: %#x\n`
+- `_eraseBlock`
+- `light-em-up`
+- `IOPMUBootErrorFailCount`
+- `%s::%s: _lMaxProduct=%ld, _lMidProduct=%ld, _lMinProduct=%ld, _lMaxPanel=%ld, _lMidPanel=%ld, _lMinPanel=%ld, _milliAmps2NitsScaleFactor=%lld\n`
+- `%s:%d: M$PMP CMD %x, %d \n\n`
+- `IOUserClientClass`
+- `\"AppleARMPerformanceController::initVoltageAndPerformanceStates: provider is missing voltage-states%u property\" @%s:%d`
+- `AppleARMPerformanceControllerDVDPeriodUS1`
+- `high-period`
+- `AppleARMI2CEEPROM`
+- `USBHostAltConfig`
+- `%s::%s: backlight-calibration-parameters: DCP Expert write result: %d \n`
+- `function-platform_cache`
+- `SIO`
+- `%s:%d: registerForPeriodicCall: timer already registered\n\n`
+- `%s[%s]:%s:%u - WRSR(%#02x), pre=%#02x, post=%#02x\n`
+- `%s::%s: dim-ramp-max-step=%ld\n`
+- `dcp-power-assertion-for-aot`
+- `AppleARMSlowAdaptiveClockingManager::newUserClient - Creating a %s\n`
+- `%s: wrong provider class\n`
+- `VictimUserClient`
+- `VictimUserClient::addFreqs - Failed to add freqs\n`
+- `secure-root-prefix`
+- `AppleARMPerformanceControllerDVBRelaxTimeoutUS3`
+- `kGPU_ASC`
+- `0x%x (UNDEFINED)`
+- `Detached`
+- `exportDBClToDCP`
+- `boost-performance%u`
+- `site.AppleARMPerformanceControllerFunctionAssertReset`
+- `pData->getLength() >= sizeof(AppleARMSPMIConfig)`
+- `%s::%s: DCP Expert Service found\n`
+- `%s::%s: DCP Expert Service not found, DBCl will not work\n`
+- `\"Data streams per group exceeded the limit\\n\" @%s:%d`
+- `%s: %d.%06d [%3dus] %c %02X %2dB device: %0llX state %04X (%s)\n`
+- `kSEP_ASC`
+- `kSC_ASC`
+- `AppleARMBootPerf: Error: failed to publish profile data on resume (%d)\n`
+- `VictimUserClient::getFreqList -- not enough memory allocated\n`
+- `clock-ids`
+- `milliAmps2DACPart2MaxCurrent`
+- `dcp-pwr-assertion-slp-only`
+- `function-disp_aap_ctrl`
+- `CompensationTweak`
+- `Asynronous`
+- `setDataStreamConfig`
+- `%s:%d: Force updating ds %s to size %d\n\n`
+- `site.AppleARMFunctionAssertReset`
+- `com.apple.spmi`
+- `disable-mcc`
+- `function-backlight_update`
+- `IODisplayParameters`
+- `%s::%s: no Nits2DACTable data\n`
+- `121111121222121211212121211212121`
+- `Active Time Histogram`
+- `_mCachePtdCtrlToSmc`
+- `USBHost`
+- `%s::%s: Pre-strobe iDAC=%d default \n`
+- `%s::%s: relNits=%lld/1000, mA=%lld/1000, _milliAmps2NitsScaleFactor=%lld/1000\n`
+- `write`
+- `Forced `
+- `%s:%d: %s, StreamID: %x, ClientID: %x, Size: %x\n\n`
+- `AppleARMPerformanceController: Dynamic Performance State Management Enabled on Performance Domain %u\n`
+- `site.AppleARMSPIDevice`
+- `pollctl`
+- `%s::%s: Using cached value - %d (%x)\n`
+- `MCCommandQueue`
+- `kPCIe_Link`
+- `site.AppleARMQuadSPIController`
+- `AppleARMCPU.cpp`
+- `VictimUserClient::sGetNumFreqs\n`
+- `dvb-thermal-period`
+- `AppleARMPerformanceController configured with %.2u Performance Domains\n`
+- `%02x `
+- `site.AppleARMMIPIDSIDevice`
+- `IOPMU`
+- `updateBacklightLevel`
+- `VictimUserClient::sGetFreqList\n`
+- `AppleARMIO.cpp`
+- `service-gates`
+- `%s:%s Attempted to iterate through devices on SPI controller with no devices.\n`
+- `site.AppleARMPWMBacklight`
+- `%s: stopping...\n`
+- `%s::%s: no milliAmps2DACPart1MaxCurrent data\n`
+- `%s::%s: mA2Nits1stOrderCoef=%ld\n`
+- `VictimUserClient::clientDied\n`
+- `externalMethod`
+- `12111112122212121111111111121`
+- `sMethodExtTransfer`
+- `kSC_Streams`
+- `%s::%s: no LminProduct data\n`
+- `%s::%s: no conversion table\n`
+- `function-backlight_ramp`
+- `_ptdMemoryMap`
+- `_ptdBaseAddr`
+- `%s: inputSize=%#x, outputSize=%#x\n`
+- `AppleUSBCableDetect`
+- `%s::%s: no milliAmps2DACPart2MaxCurrent data\n`
+- `DPB factor`
+- `%s::%s: No change in DPB scale factor = %ld -> skip update\n`
+- `/chosen`
+- `function-ipi_dispatch`
+- `CPU Features`
+- `site.AppleMemCacheDataSetsFunction`
+- `void AppleARMLightEmUp::ignite() const`
+- `%s::%s: enable toggle with enabled=%ld _lastNits=%lld/1000, iDAC=0x%x\n`
+- `_setBacklightLevelGated`
+- `getDataStreamConfigEntry`
+- `AppleARMPerformanceControllerPerformanceDomains`
+- `AppleARMPerformanceControllerDVDPeriodUS3`
+- `11111111`
+- `%s[%s]:%s:%u - invalid - length: %#x offset: %#x\n`
+- `intensity-config`
+- `%s:%d: Disable all data streams\n\n`
+- `AppleARMCPUPerformanceArbiter::init\n`
+- `121111121222121211112222111111112111212111111111111111121222222222222222222111221111111221111122111212111222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222112222222122222222122222212222211222222222222211121`
+- `DDBFollowerRead`
+- `%s:%d: ptdMemMapIdx: %d\n\n`
+- `high_time`
+- `product`
+- `LminProduct`
+- `%s::%s: DPB %ld/1000 -> %ld/1000\n`
+- `1211111212221212111111111112`
+- `pctb`
+- `%s:%d: Initialized client %s for object %s. callbackOption: %d \n\n`
+- `AVE`
+- `clientObject`
+- `default-pulse`
+- `low-period`
+- `one`
+- `*** %s:\n***    CPU doesn't use AIC IPI's but function-ipi_dispatch_other defined\n`
+- `AppleARMNORFlashDevice`
+- `AppleARMPerformanceControllerFunctionCLPCEnabled`
+- `GPU`
+- `IOReturn AppleMemCacheController::ackCommand(unsigned int)`
+- `%s:%d: Request for size on stream %s instance %d is invalid\n`
+- `%s::%s: no calibratedMidCurrent data\n`
+- `green-coefficient`
+- `%s::%s: need to apply pending property updates\n`
+- `%s::%s:  %s backlight level update (policy: %d | type: %d) \n`
+- `displayOnTimestamp`
+- `%s::%s: PCC update: pccOut: %ld/1000, scalar: %ld/1000 -> brightness %lld/1000\n`
+- `AppleARMSFRManifest: Error: Invalid input\n`
+- `AppleARMCPUPerformanceServiceNub`
+- `AppleARMCPUPerformanceArbiter::probe\n`
+- `rc == kIOReturnSuccess`
+- `function-backlight_enable`
+- `lMinProduct`
+- `PreStrobeConfigCurrent`
+- `%s::%s: %s: dark_boot: %d val: %d result:%d\n`
+- `VictimUserClient::removeFreqs -- requested to remove all freqs, calling VictimUserClient::clearFreqs\n`
+- `PERF_PCEVENT`
+- `AggressorUserClient::getSafeFreqList\n`
+- `%s::%s: DPB update %lx\n`
+- `AppleEmbeddedNVMeController`
+- `virtual bool AppleARMNORPanicLogDevice::init(UInt64, OSDictionary *)`
+- `enable_debugger`
+- `ema-settings%u`
+- `AppleARMMIPIDSIDevice`
+- `%s: %s: powering up...\n`
+- `kISP_PyramidNoiseReduction`
+- `kANE_EventLogging`
+- `backlight-update-policy`
+- `display-type-A`
+- `AppleARMPerformanceControllerFunctionPowerGate`
+- `AppleARMPerformanceControllerDVBPeriodUS0`
+- `AggressorUserClient::initWithTask\n`
+- `1211111212221212111121221122`
+- `kGPU_RenderTargetND`
+- `%s::%s: _calibratedMaxCurrent=%ld\n`
+- `%s::%s: Pre-strobe is not available for this device. \n`
+- `\"Invalid datastream configuration parameters. config:%s configEntryCount%d\\n\" @%s:%d`
+- `clock-frequencies`
+- `AppleARMPERemoveCoprovider`
+- `AppleARMPE::setGMTTimeOfDay can not provide time of day RTC did not show up\n`
+- `AppleRawDrainVoltages`
+- `%s: could not allocate a AppleARMNORPanicLogDevice\n`
+- `%s:%d: configuration entry count: %d\n\n`
+- `l2-access-penalty`
+- `region-id-55`
+- `\"Invalid devicetree: %s size %d %s size %d\\n\" @%s:%d`
+- `service-reset`
+- `AggressorUserClient::sGetNumFreqs\n`
+- `loadAndExportWhitepointCorrectionTable`
+- `ledcalibration-LEDc`
+- `[CBPWR] holdAssertionOnlyWhenAPSleeps = %d`
+- `VictimUserClient::deregisterVictim - Deregistering victim!\n`
+- `211111111`
+- `AppleARMPerformanceController::attachToChild : child -> %p\n`
+- `%s[%s]:%s:%u - Error erasing block @ sector %#x - %#x\n`
+- `%s[%s]:%s:%u - JEDEC ID: %#x\n`
+- `timerCallback`
+- `/chosen/secure-boot-hashes`
+- `AppleARMSFRManifest: Error: Failed to find property %s\n`
+- `%s:%s:%u - Error: read/write buffer mismatch at %#x \n`
+- `PowerRelativeToShutdown`
+- `site.AggressorUserClient`
+- `ptd-range`
+- `AppleARMSPIDeviceUserClient`
+- `_programBytesQuad`
+- `%s::%s: _calibratedMidCurrent=%ld\n`
+- `%s::%s: Backlight changing due to DPB scaleFactor change %ld (%ld)\n`
+- `('chosen', 'memory', 'options', 'aliases')`
+- `Unknown Domain`
+- `AppleARMPerformanceControllerDVCGracePeriodUS0`
+- `%s:%d: Found mcc_clampwaycount in boot-args. Way count clamped to %d ways\n\n`
+- `static unsigned int AppleARMLightEmUp::CPUHalter::Expression::init(Expression &, const OSData *, unsigned int)`
+- `%ld`
+- `handlePCCUpdate`
+- `bool AppleARMNORPanicLog::createBlockStorageDevice()`
+- `%s:%d: Stream:%s priority:%d DSID:[%d-%d] Policy:%d Size:%d Persistence:%d\n\n`
+- `121111121222121211222112111122111`
+- `site.AppleARMPerformanceControllerFunctionClockGate`
+- `%s::%s: AppleARMPWMBacklight::callPlatformFunction( signature = 0x%x )\n`
+- `uint32_t MemCacheManagerInterface::getQuotaGrpRequestedSize(uint32_t)`
+- `handlePriorityBasedAllocation`
+- `AppleARMBootPerf: Error: profile handoff region not found (%d)\n`
+- `12111112122212121121`
+- `site.AppleARMRTC`
+- `AggressorUserClient::sSetAggressorIndexActionType\n`
+- `getRequestedSize`
+- `IOPMUBootDebug`
+- `panel-gamma`
+- `read`
+- `Valid`
+- `%s:%d: Invalid data stream id: %d\n\n`
+- `1`
+- `Found nameString: %s\n`
+- `Not enough space %0x < %0lx\n`
+- `site.AppleARMFabricTrace`
+- `site.AppleARMPerformanceController`
+- `\"AppleARMPerformanceController::initVoltageAndPerformanceStates: provider is missing performance-domain-features property\" @%s:%d`
+- `usbphyclk`
+- `usbphy-frequency`
+- `AppleARMPerformanceController: Dynamic Voltage Dithering Enabled on Performance Domain %u with %uus period and %uus threshold\n`
+- `AppleARMPerformanceControllerCLPCNub`
+- `Enable`
+- `site.MCClient`
+- `set-one-shot`
+- `%s:%d: Stream %s instance %d is greater than max supported instances(%d)\n\n`
+- `AppleFabricTraceUserClient`
+- `AggressorUserClient::clientClose\n`
+- `IOFunctionParent%08lX`
+- `min`
+- `use-Nits2DACTable`
+- `virtual bool AppleARMNORPanicLog::start(IOService *)`
+- `site.transferArgs_t`
+- `AppleARMCPUPerformanceArbiter::free\n`
+- `_mCachePtdCtrlToDrv && _mCachePtdCtrlToDrv->num_entries && (_mCachePtdCtrlToDrv->num_entries >= _quotaRspPtdEntryCount+_cmdAckPtdEntryCount)`
+- `AppleARMFunctionDextTarget`
+- `start`
+- `%s::%s:%d:  ERROR: IODeviceMemory::withRange() failed.\n`
+- `kSIODMA_ASC`
+- `%s::%s: Dual backlight controller system\n`
+- `backlight-marketing-table`
+- `setProperties`
+- `enableODTSTimer_block_invoke`
+- `%s:%d: Failed to allocate memory of size %lu bytes\n\n`
+- `%s: status=%#02x\n`
+- `dual-backlight-controllers`
+- `%s::%s: Using DBV2Nits table (offset %d DBV)\n`
+- `%s:%s:%u - bank size=%#X, bank count=%#X, current bank=%#X\n`
+- `AppleARMSFRManifest: Error: Failed to publish %s\n`
+- `\"Unexpected allocation policy(%d)\\n\" @%s:%d`
+- `VictimUserClient::getFreqList\n`
+- `%s::%s: *** nothing in the setProperties dictionary\n`
+- `%s:%d: enableDataStreamForTest for stream %s size %d from driverInstance %d\n\n`
+- `ACC`
+- `%s:%d: Failed to setup timer for periodic tracing\n\n`
+- `%s::%s: nits2mAmps1stOrderCoef=%ld\n`
+- `new-backlight-architecture`
+- `dcp-brightness-nits`
+- `AppleARMSFRManifest: Error: Failed to find manifest hash\n`
+- `AppleARMPerformanceControllerDVCActiveTimeoutUS3`
+- `AggressorUserClient::registerAggressor - ERROR - failed to register aggressor\n`
+- `%s[%s]:%s:%u - Error transferring data at %#x offset - %#x\n`
+- `%s::%s: No valid backlight cal data in syscfg.. Use defaults\n`
+- `%s::%s: For slider=%ld(%lld) ==> nits=%lld, set iDAC to %d (0x%x)\n`
+- `%s::%s: nits2Slider - x1=%lld/1000, x2=%lld/1000, x3=%lld/1000, y1=%lld/1000, y3=%lld/1000, y2=%lld/1000\n`
+- `%s::%s: search results: high=%d mid=%d low=%d (+DBV offset %d)\n`
+- `max_cpus`
+- `AppleARMFunctionEventTimestamp`
+- `121112111121111`
+- `%s::%s: AppleARMPWMBacklight -> change to %d %p\n`
+- `kAVE_LoRes`
+- `%s::%s: display-backlight-compensation-v1 DCP Expert write result: %d \n`
+- `brightness-nits`
+- `calibratedNits2Nits`
+- `121111121222121211`
+- ` .psDeviceConstraint:`
+- `WakeRelativeToSleep`
+- `AggressorUserClient::setFreqList\n`
+- `mipi-receive-data`
+- `pwm-config`
+- `milliAmps2NitsScaleFactor`
+- `overrideImin`
+- `setPeriodicCallInterval`
+- `%s[%s]:%s:%u - unknown JEDEC ID: %#x\n`
+- `on`
+- `off`
+- `%s::%s:  - skipping second setting of level \n`
+- `%s:%d: Read: M$PMP %x Lower64 %llx Upper64 %llx\n\n`
+- `AppleARMRTC publishing service!^^^^^^\n`
+- `121111121222121211222`
+- `initWithRegistryEntry`
+- `writeBuffer`
+- `max`
+- `DBVMin`
+- `VictimUserClient::registerVictim - ERROR - failed to register victim\n`
+- `*%u%03u`
+- `[%s]:%s:%d: CmdEnd[%d], %X - %s 0x%04x - #%x %uus, 0x%08x\n`
+- `121111121222121211222112111122111112`
+- `%s: reg too short\n`
+- `set-amplitude`
+- `virtual bool AppleARMNORPanicLogDevice::attach(IOService *)`
+- `createMemoryMap`
+- `site.AppleARMPerformanceControllerFunctionPowerGate`
+- `[%s]:%s:%d: %s`
+- `configurePeriodicTracer_block_invoke`
+- `%s:%d: Failed to allocate memory for data packet(size: %u)\n\n`
+- `_writeEnable`
+- `IOPMUBootErrorPanicCount`
+- `iDAC2MilliAmpsTable`
+- `AppleARMIICDevice`
+- `121111121222121211112111112`
+- `pin-groups`
+- `dvd`
+- `AppleARMLightEmUpIgnite`
+- `AppleARMSFRManifest: Error: Failed to allocate Memory map region\n`
+- `_quotaReqPtdIdx:0x%x _quotaRspPtdIdx:0x%x _cmdPtdIdx:0x%x _cmdAckPtdIdx:0x%x\n`
+- `AppleARMFabricTrace`
+- `\n`
+- `enableDeviceClockGated() Exec Time`
+- `site.AppleARMPWMDevice`
+- `LmaxProduct`
+- `%s::%s: sP step %ld (0x%02lx -> 0x%02lx) duration %ld.%03llds (step %ld.%06llds, inc=%ld, mie=%d, user=%ld)\n`
+- `brightness-nits-max`
+- `l3-cache-id`
+- `CPU Package Idle Time`
+- `event`
+- `override-boot-brightness-nits`
+- `%s::%s: tableMaxIndex=%d, x1=%ld, x2=%lld/1000, x3=%ld, y1=%lld/1000, y3=%lld/1000, y2=%lld/1000, mA=%lld/1000 (normalized=%lld/1000)\n`
+- `iDAC2Nits`
+- `%s:%d: Invalid arguments.\n\n`
+- `_mCachePtdDrvToCtrl`
+- `*** %s:\n***    Invalid cpus/%s property length: %d\n`
+- `getAppleARMFunctionUserHandler`
+- `setDevicePowerState`
+- `no-rtc`
+- `%s:%d: MCACHE-PMP management is enabled\n\n`
+- `display-backlight-compensation`
+- `restoreDefaultQuotas`
+- `reg-private`
+- `VictimUserClient::addFreqs - registering: freq=%lluHz bandwidth=%dHz priority=%d\n`
+- `MCDataStreamUpdate`
+- `%s::%s: could not merge dictionary \n`
+- `%s::%s: nits=%lld/1000, mA=%lld/1000\n`
+- `121111121222121211111112`
+- `AppleARMNORPanicLogDevice`
+- `AppleARMBootPerf`
+- `AppleARMFunctionAssertReset`
+- `\"AppleARMPerformanceController::initVoltageAndPerformanceStates: Failed to find voltage requirement for performance state %.2u\" @%s:%d`
+- `Taking`
+- `%s:%d: Memory descriptor prepare failure. rc:0x%x\n\n`
+- `I`
+- `%s:%d: Periodic tracer interval set to %dms\n\n`
+- `AppleMemCacheDataSetsFunction`
+- `%s[%s]:%s:%u - disabling quad writes\n`
+- `kISP_MsBeProcFar`
+- `AppleChargeRateLimitIndex`
+- `%s::%s: mA2Nits2ndOrderCoef=%ld\n`
+- `VictimUserClient::sAddFreqs\n`
+- `VictimUserClient::removeFreqs -- removeVictims call to SAC failed\n`
+- `%s:%s:%u - invalid - regionIndex: %#x RegionCount: %#x\n`
+- `1211111212221212122212212121111112121`
+- `\"AppleARMPerformanceController::start: pcDeviceClockIDMax (%u) must not be greater then kAppleARMPerformanceControllerDeviceClockIDMax (%d)\" @%s:%d`
+- `uANE`
+- `dcs-true-mr4-read-support`
+- `%s:%d: MemCache Policy management is disabled\n\n`
+- `DVB Grace Count`
+- `1211111212221212111111222121111121`
+- `%s: setSPIConfig ret=%08x\n`
+- `site.AppleARMFunctionUSBDataMonitor`
+- `%s::%s: Using %d Backlight Controllers\n`
+- `%s::%s: no backlight update function\n`
+- `%s::%s: no DBV offset data\n`
+- `AppleARMPerformanceControllerDeviceClockNames`
+- `121111`
+- `PERF_ARBITER_SET_PERF`
+- `%s:%d: Failed to alloc data stream info object\n\n`
+- `BrightnessMicroAmps`
+- `%s::%s: Need maketing table for the new Architecture\n`
+- `%s::%s: no LmidProduct data\n`
+- `brightness-nits-cap`
+- `AggressorUserClient::registerAggressor - Registering Frequency %llu±%dHz\n`
+- `%s:%d: writePTD: 0x%08llx, 0x%08llx\n\n`
+- `_validateSR`
+- `kANE_Prefetch`
+- `IOPMUBootForceThermalTrap`
+- `USBDeviceNeedsAuthentication`
+- `Engaged`
+- `site.AppleARMFunctionSlowAdaptiveClocking`
+- `site.AppleARMBacklightFunction`
+- `device-clocks-min`
+- `function-saca`
+- `dsConfigEntry != NULL`
+- `%s:%d: EnQueued event \n\n`
+- `intensity`
+- `site.AppleARMBacklightPCCUpdateFunction`
+- `site.AppleARMCPUPerformanceServiceNub`
+- `%s: iicWakeDeviceCount=%u\n`
+- `kDisplay_BICReads`
+- `kPMP_ASC`
+- `%s::%s: DAC is percentage of max nits? %d\n`
+- `%s::%s: Using SPMI backlight: %d\n`
+- `%s::%s: raw initial step = %ld.%06llds\n`
+- `%s::%s: Set Backlight enabled=%ld _lastNits=%lld/1000, iDAC=0x%x\n`
+- `%s:%d: enableDataStream: Invalid data stream id: %d\n\n`
+- `B24@?0^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}8^{IONotifier=^^?i}16`
+- `getIODeviceClocks`
+- `AggressorUserClient::clientDied\n`
+- `spmi-logsize`
+- `Authenticate`
+- `%s:%d: _dcsOdtsES is disabled\n\n`
+- `bool AppleMemCacheController::sendCommandToPMP(MCCommand *, MCCommandQueue *)`
+- `AppleARMPerformanceControllerFunctionPerfAdvise`
+- `%s:%d: Notifying client '%s' on stream '%s'. Size: 0x%x\n\n`
+- `mc_quota_req_ptd_count`
+- `%s: CPU %d: halting CPU %d...\n`
+- `%s::%s: setting initial user brightness = %lld/1000\n`
+- `CPU Stats`
+- `SleepServiceWakeCalendarKey`
+- `AutoWakePriv`
+- `AggressorUserClient::getFreqList\n`
+- `%s:%d: _dcsOdtsES is enabled\n\n`
+- `duty cycle`
+- `Nits2DACTable`
+- `DeviceUsagePage`
+- `dataCollector`
+- `registerForPeriodicCall`
+- `kGPU_SparseTranslationReads`
+- `IOPMUBootForcePrecharge`
+- `exportCalibration`
+- `DeviceUsage`
+- `site.struct MCDataStreamConfig`
+- `all-iic.livelog`
+- `Device Stats`
+- `site.AppleARMPerformanceControllerFunctionCLPCEnabled`
+- `tempData`
+- `%s::%s: Pre-strobe iDAC=%d overriden \n`
+- `AppleARMSFRManifest: Found HASH property\n`
+- `AppleARMSPMIController`
+- `all-spmi.livelog`
+- `ANE`
+- `IOUserClientEntitlements`
+- `%s: completed, duration=%04d.%06d, ret=0x%08x\n`
+- `1222`
+- `%s:%d: enableDataStream for stream %s size %d from driverInstance %d\n\n`
+- `site.AppleARMCPUPerformanceArbiter`
+- `%s:%d: No device\n\n`
+- `ExtrRegWrite`
+- `IOUserClientDefaultLockingSetProperties`
+- `%s[%s]:%s:%u - status: %#08x, waiting for mask %#0x to clear\n`
+- `function-sac`
+- `VictimUserClient::clientClose\n`
+- `AppleARMIO`
+- `Voltage Domain Performance States`
+- `AppleARMPerformanceControllerDVBBoostTimeoutUS0`
+- `WakeByCalendarDate`
+- `kANS_ASC`
+- `%s::%s: no DBV max data\n`
+- `%s:%d: No data collection buffer available\n\n`
+- `DarkBootButtonPush`
+- `avg-rgb`
+- `AppleARMPerformanceControllerDVCGracePeriodUS3`
+- `AppleARMPerformanceControllerDVDFactor1`
+- `CPU`
+- `SMC`
+- `pmpEntry`
+- `backlight-table`
+- `AppleARMFunction`
+- `site.AppleARMIO`
+- `PMPolicy`
+- ` %08x`
+- `site.AppleARMLightEmUp`
+- `%s::%s: no mA2Nits2ndOrderCoef data\n`
+- `mc_quota_rsp_ptd_count`
+- `enable`
+- `AppleARMPerformanceControllerDVBRelaxTimeoutUS2`
+- `voltLevel`
+- `LmidProduct`
+- `mA2Nits0thOrderCoef`
+- `backlight-calibration`
+- `spmi-backlight`
+- `Error`
+- `%s::%s: Set backlight %s\n`
+- `nits2CalibratedNits`
+- `getNVRAMProperties`
+- `function-enable_core`
+- `interrupt-controller`
+- `max-nit-value`
+- `%s::%s: no milliAmps2DACTablePart1 data\n`
+- `backlight-nits`
+- `VictimUserClient::start failed to init _mDriver\n`
+- `\"ClientId %d is beyond allowed limit of %d\\n\" @%s:%d`
+- `interval`
+- `ActualPerfSt`
+- `com.apple.driver.SPMI.user-access`
+- `site.MCCommand`
+- `%#08x`
+- `%s:%d: MemCache Policy Management is disabled\n\n`
+- `site.AppleARMNORFlashDevice`
+- `site.AppleARMPE`
+- `dvd-period`
+- `%s:%s:%u - _norNFDevice device writeBytes() failed, ret=0x%08x\n`
+- `site.AppleMCCUserClient`
+- `arbiter`
+- `AppleARMPerformanceController: Dynamic Voltage Boost Enabled on Performance Domain %u with %uus boost timeout and %uus relax timeout\n`
+- `dis`
+- `interface`
+- `-disable_mcc`
+- `_readBufferQuad`
+- `site.AppleARMPWMInOutPulseController`
+- `*** %s:\n***    CPU %d interrupts[2] not equal to interrupts[0]+1\n`
+- `site.MCPolicyMgrPMP`
+- `stepper`
+- `pdmvr`
+- `AggressorUserClient::setAggressorKey - ERROR - failed to set aggressor key due to incorrect data size\n`
+- `void MCCommandQueue::queueEvent(memcache_cmd_entry *)`
+- `fTarget`
+- `%s:%d: Received ack for cmd id:%d\n\n`
+- `AppleARMBootPerf: Warning: profile->pc_bytes (%u) is not supported\n`
+- `site.AppleARMFunctionPerfAdvise`
+- `finished`
+- `%s:%d: _ptdUpdateSpaceOffset: 0x%x\n\n`
+- `%s[%s]:%s:%u - SPI Flash status busy - error %#x\n`
+- `AppleRawCurrentCapacity`
+- `setPowerState`
+- `%s::%s: *** toggle on/off with a duration\n`
+- `copyDSIDs_block_invoke`
+- `lMaxProduct`
+- `dcp-backlight-enable`
+- `AppleARMBacklightPCCUpdateFunction`
+- `AppleARMSlowAdaptiveClockingManager::newUserClient - ERROR - unsupported UserClient type\n`
+- `AppleARMNMI`
+- `AppleARMPerformanceControllerDVBBoostTimeoutUS1`
+- `%s: selector=%u\n`
+- `default-hz`
+- `%s::%s: updated NVRAM with level 0x%lx\n`
+- `AppleARMSFRManifest: Error: Failed to find matching hash key\n`
+- `*** %s:\n***    CPU id %d from CPU ordinal %d '%s' property is out of range [0..%d]\n`
+- `SoC Stats`
+- `PCIe`
+- `21`
+- `mie-factor`
+- `*** %s:\n***    Length for CPU %d '%s' property is %d should be %d\n`
+- `AppleARMIICUserClient`
+- `AppleSPMIBacklight`
+- `site.AppleFabricTraceUserClient`
+- `ExtRegReadLong`
+- `function-iic_sda`
+- `kANE_IntermediateSpillsLo`
+- `kISP_ASC`
+- `%s::%s:%d:  Received unsupported selector %u\n\n`
+- `USB3Host`
+- `%s::%s: Using new Backlight Architecture %d\n`
+- `DBV2NitsTable`
+- `TL Low State Count`
+- `AppleARMPerformanceControllerDVCActiveTimeoutUS2`
+- `12111112122212121121211111111111111111111111111121111111111111111111111111111111111111111111111111111111111111111111111111111111111212112121`
+- `virtual bool AppleARMLightEmUp::start(IOService *)`
+- `%s::%s: No change in the backlight level = %u -> skip update\n`
+- `%s:%s:%u - Unable to find chosen node\n`
+- `AppleARMSFRManifest: Error: Failed to open reg-entry %s%s\n`
+- `VictimUserClient::start\n`
+- `wrap-trace`
+- `AppleARMSPMIController::start buffer=%p entries=%u\n`
+- `kMTP_ASC`
+- `EnableBacklight`
+- `AppleARMSFRManifest`
+- `site._PerformanceNubNode`
+- `1211111`
+- `\"AppleARMPerformanceController::start: pcDeviceClockIDMin (%u) and pcDeviceClockIDMax (%u) must be non zero\" @%s:%d`
+- `_spmiControllerInterface->isValidConfig(configPtr)`
+- `%s:%d: deRegisterPeriodicCall\n\n`
+- `cmd_entry`
+- `site.AppleARMSPIFlashController`
+- `amplitude`
+- `USBDevice`
+- `VictimUserClient::addFreqs - memcpy failed\n`
+- `\"ioDeviceClocks NULL size was %d\\n\" @%s:%d`
+- `dumpDataStream`
+- `site.AppleARMNORFlashController`
+- `AppleARMPEFindCoprovider`
+- `AppleARMPerformanceControllerDeviceEnables`
+- `AppleARMPerformanceControllerDVDPeriodUS2`
+- `AggressorUserClient::setAggressorKey\n`
+- `i8@?0`
+- `cmd`
+- `%s:%s Attempted to enqueue SPI transaction on SPI controller with no devices.\n`
+- `lMinPanel`
+- `12111112122212121112`
+- `*** %s:\n***    Actual CPU count (%d) greater than max (%d)\n`
+- `setGMTTimeOfDay`
+- `STEPPER`
+- `\"AppleARMPerformanceController::initVoltageAndPerformanceStates: provider is missing nominal-performance%u property\" @%s:%d`
+- `AggressorUserClient::start failed to init _mDriver\n`
+- `%s:%d: Wokeup on on event cmdId %d\n\n`
+- `Releasing`
+- `%s::%s: _userBrightness=%ld, value=%ld, userValue=%ld\n`
+- `VictimUserClient::sClearFreqs\n`
+- `site.AppleARMSPMIControllerUserClient`
+- `Unknown`
+- `%s::%s: slider2Nits - tableMaxIndex=%d, x1=%lld/1000, x2=%lld/1000, x3=%lld/1000, y1=%lld/1000, y3=%lld/1000, y2=%lld/1000\n`
+- `hwtrace`
+- `NULL`
+- `%s:%d: Failed to find config entry for DataStream %s\n\n`
+- `AppleARMFunctionSymbol`
+- `dma-coherent`
+- `trace-to-dram`
+- ` .psEMASetting %.2u :`
+- `AppleARMPerformanceControllerDVBFactor0`
+- `AppleARMPerformanceControllerDVDThresholdUS0`
+- `DVD Stats`
+- `AppleMemCacheController.cpp`
+- `IOUserClientDefaultLockingSingleThreadExternalMethod`
+- `%s::%s: PCC update %lx\n`
+- `milliAmps2iDAC`
+- `%s: could not attach the panic log device\n`
+- `%s:%d: %sQuota update for stream %s. PrevSize: 0x%x newSize: 0x%x totalAssignedCache: 0x%x\n\n`
+- `#port-devices`
+- `AppleARMRTC started!#####\n`
+- `--`
+- `AppleARMSFRManifest: Error: Failed to map Memory region\n`
+- `hclk`
+- `SEP`
+- `milliAmps2DACTablePart2`
+- `plc-activate-threshold`
+- `%s::%s: could not initWithDictionary \n`
+- `AppleARMSPMIControllerUserClient`
+- `kAVE_ASC`
+- `rawBrightness`
+- `iDAC2milliAmps`
+- `*** %s:\n***    fromPath failed to find /cpus in device tree\n`
+- `AggressorUserClient::start failed to initialize %s\n`
+- `site.AppleARMSPMIDevice`
+- `kANE_ThirdPartyVictims`
+- `handleMessageGated`
+- `override-boot-brightness`
+- `eraseBank`
+- `%s: Found AppleEmbeddedNVMeController service\n`
+- `VictimUserClient::clearFreqs\n`
+- `clientMemoryForType`
+- `pcp`
+- `DVC Timeout Count`
+- `handleStateChanges() Exec Time`
+- `BusOwnership`
+- `low_time`
+- `setBacklightLevelGated`
+- `%s:%d: enableDataStream Writing to MCache-PMP for quota group %d, Requested Size :%d, Flags: 0x%x\n\n`
+- `use-dcp-passthrough`
+- `%s::%s: Using cached value from NVRAM - %d (%x)\n`
+- `[CBPWR] AOD Active = %d`
+- `handleDarkBootFlagGated`
+- `%s: Could not find AppleEmbeddedNVMeController service\n`
+- `AppleARMSFRManifest: Error: Failed to find entry %s%s\n`
+- `VictimUserClient::sRegisterVictim\n`
+- `nominal-performance%u`
+- `site.AppleARMMIPIDSIController`
+- `%s::%s: no iDAC2MilliAmpsTable data\n`
+- `%s::%s: _slopeLessThanLmidBlock2=%lld, _interceptLessThanLmidBlock2=%lld, _slopeGreaterThanLmidBlock2=%lld, _interceptGreaterThanLmidBlock2=%lld\n`
+- `/chosen/boot-object-manifests`
+- `boot-manifest-hash`
+- `%s:%d: M$PMP %x, %x, %llx \n\n`
+- `clock-gates`
+- `%s:%d: Unsupported streamId %u.\n\n`
+- `%s:%d: AppleMemCacheDataSetsFunction::callFunction action:%ld\n\n`
+- `blue-coefficient`
+- `0x%08x`
+- `*** %s:\n***    Length for CPU ordinal %d '%s' property is %d should be 0x%lx\n`
+- `[%s]:%s:%d:[error] Wrong reg data\n`
+- `enableDataCollection_block_invoke`
+- `12111112122212121`
+- `pcc-enable`
+- `AppleARMPerformanceControllerDVBPeriodUS1`
+- `%s:%d: Sleeping on event cmdId %d\n\n`
+- `milliAmps2RelativeNits`
+- `getDataStreamObject`
+- `AppleARMPerformanceControllerDVBFactor1`
+- `CpusActive`
+- `AggressorUserClient::sSetFreqList\n`
+- `copyLogs`
+- `121121`
+- `kISP_WarperHDR`
+- `kMMU_DART`
+- `%s::%s: No AAP function\n`
+- `*** %s:\n***    CPU doesn't use AIC IPI's but function-ipi_dispatch defined\n`
+- `sync-backlight-off`
+- `calibratedMaxCurrent`
+- `ON`
+- `AppleARMNORNVRAM`
+- `AppleARMI2CEEPROM.cpp`
+- `AppleEFIDump`
+- `%d`
+- `IODeviceTree:/arm-io/pmp0/iop-pmp0-nub`
+- `pm-policy`
+- `AppleARMPerformanceControllerDVDThresholdUS1`
+- `readBuffer`
+- `AppleRawMaxCapacity`
+- `VictimUserClient::addFreqs -- victims exist, going through validation process\n`
+- `AppleARMPerformanceControllerDVCActiveTimeoutUS0`
+- `seq`
+- `%s: %s: power state: %d...\n`
+- `%s::%s: nits2mAmps2ndOrderCoef=%ld\n`
+- `IONVRAM`
+- `%s::%s: Requesting to set %lld/1000 nits\n`
+- `RegRead`
+- `DDBLeaderRead`
+- `%s[%s]:%s:%u - Error erasing %#x sector - %#x\n`
+- `enabled`
+- `void AppleARMLightEmUp::halt(unsigned int) const`
+- `kACC_Critical`
+- `nits2mAmps1stOrderCoef`
+- `%s::%s: No GreenCoefficient, using default\n`
+- `_quotaReqPtdEntryCount: %d _quotaRspPtdEntryCount:%d _cmdPtdEntryCount:%d _cmdAckPtdEntryCount:%d\n`
+- `void MCPolicyMgrPMP::readPTD(uint32_t, PTDEntry *) const`
+- `com.apple.driver.I2C.device.user-access`
+- `VictimUserClient::addFreqs - adding: freq=%lluHz bandwidth=%dHz priority=%d\n`
+- `AppleARMSPIDevice`
+- `Request State`
+- `l3-cache-size`
+- `com.apple.private.SACTestFrameworkRunner`
+- `#performance-domains`
+- `jtag`
+- `enable-pcp`
+- `AppleARMPerformanceControllerDVBBoostTimeoutUS2`
+- `AppleARMPerformanceControllerDVDPeriodUS0`
+- `ReqVoltSt`
+- `block-erase-supported`
+- `AppleARMPWMCaptureTimestampFunction`
+- `%s::%s: AppleARMPWMBacklight::callPlatformFunction (calling super) \n`
+- `kCompressedMetaData`
+- `kACC_SuperDuperCritical`
+- `IOPMUBootStage`
+- `site.AppleARMBacklight`
+- `dim-ramp-max-step`
+- `no-aic-ipi-required`
+- `site.AppleARMFunction`
+- `VictimUserClient::addFreqs -- duplicates in provided frequencies\n`
+- `getDataCollectionMemDescriptor_block_invoke`
+- `mode`
+- `dfr-brightness-control`
+- `mA2Nits2ndOrderCoef`
+- `backlight report`
+- `\"Assert failed: %s\" @%s:%d`
+- `%s:%d: Failed to allocate DataStream object for stream %s\n\n`
+- `IOFunctionParent%08X`
+- `auto-arm`
+- `dpsm`
+- `12111112122212121121111`
+- `kAVE_LumaRefs`
+- `kGPU_ParameterBufferWrite`
+- `l2-cache-size`
+- `no-pc-stats`
+- `NewPerfSt`
+- `AppleARMRTC service registered!$$$$$\n`
+- `%s:%d: Failed to create timer\n\n`
+- `%s::%s: mA2Nits0thOrderCoef=%ld\n`
+- `nits2mAmps0thOrderCoef`
+- `%s::%s: _minDACLevel=%d _maxDACLevel=%d\n`
+- `  Performance Domain %.2u : pcVoltageStateCount: %.2u pcPerformanceStateCount: %.2u\n`
+- `/%u`
+- `site.AppleARMPerformanceControllerCLPCNub`
+- `%s:%d: Failed to create mem descriptor for shared data queue\n\n`
+- `%s::%s: Dark boot done - ignoring message \n`
+- `%s::%s: enable toggle with enabled=%ld userBrightness=%ld / value=0x%lx\n`
+- `*** %s:\n***    memory allocation failed\n`
+- `ctm-trace`
+- `ExtRegWriteLong`
+- `set-duty-cycle`
+- `lMidProduct`
+- `scaler`
+- `cap`
+- `disablePolicyManagement`
+- `kDisplay_PDCData`
+- `MilliNits value`
+- `dsid_mgmt`
+- `%s:%d: Failed to get info about streamId %d. rc:0x%x\n\n`
+- `logNewCommand`
+- `%s:%d: Failed to setup timer for data collection\n\n`
+- `ackCommand`
+- `Configuration`
+- `i2c-debug-options`
+- `VictimUserClient::registerVictim - ERROR - invalid character '%c'\n`
+- `getWorkLoop()->inGate() == false`
+- `input`
+- `AppleRawExternalConnected`
+- `[CBPWR] kIOMessageSystemHasPoweredOn`
+- `%s::%s: PCC sent an update. pccOut: %ld/1000, scalar: %ld/1000\n`
+- `112`
+- `running`
+- `ExtRegRead`
+- `milliAmps2DACPart1MaxCurrent`
+- `use-AAP`
+- `Found wakeup-device: %s\n`
+- `site.IODeviceClock`
+- `%s::%s:%d:  ERROR: You must call kMemoryMap before IOConnectMapMemory\n\n`
+- `AppleARMPerformanceControllerFunctionCPUIdle`
+- `AppleARMPerformanceControllerDVBFactor2`
+- `1211111212221212111122121112`
+- `\"%s: data is too short.\\n\" @%s:%d`
+- `%s::%s: ALS: AppleARMBacklight::handleMessageGated - framebufferState -> %d\n`
+- `mcache-stream`
+- `AppleARMPE::getGMTTimeOfDay can not provide time of day: RTC appeared, but \"getGMTTimeOfDay\" call failed with %x\n`
+- `DVD States`
+- `kDisplay_NonAllocating`
+- `display-backlight-calibration`
+- `%s::%s: _calibratedMinCurrent=%ld uA\n`
+- `%s::%s: ALS: AppleARMBacklight::setBacklightEnableGated %d (set level to 0x%x)\n`
+- `%s:%d: Invalid arguments. Request ptr is null\n\n`
+- `AppleARMIIC.cpp`
+- `AppleARMPerformanceController configured with ignorePowerDown = %u\n`
+- `\"AppleARMPerformanceController: PD%u new voltage state (%u) less then limit voltage state (%u)\" @%s:%d`
+- `AggressorUserClient::sSetAggressorKey\n`
+- `MemCacheDataStream.cpp`
+- `PreStrobeConfigNits`
+- `_mCachePtdCtrlToDrv`
+- `callAppleARMFunction`
+- `AggressorUserClient::aggressorActionSingle -- SAC Callback -- _mAggressorFreqList/_mAggressorNoiseWidthList NOT INITIALIZED?\n`
+- `max-write-time`
+- `setPropertiesGated`
+- `AppleARMCPU-AllCPU-Initialized`
+- `AppleARMPerformanceController: Performance Domain Matrix Voltage Requests Enabled\n`
+- `AppleMemCacheEvent`
+- `mcache-pmp`
+- `registerClient`
+- `site.AppleARMI2CEEPROM`
+- `brightness`
+- `dvd-threshold`
+- `turbolag`
+- `\"AppleARMPerformanceController::_mapVoltageLevelToPerfState : voltageLevel not found\" @%s:%d`
+- `AggressorUserClient::sGetFreqList\n`
+- `%s: panic log has more than one region, this is wrong\n`
+- `%s:%d: Failed to get DS configuration\n\n`
+- `service-name`
+- `AggressorUserClient::start\n`
+- `%s[%s]:%s:%u - Error programming %#x sector - %#x\n`
+- `[CBPWR] kIOMessageSystemWillSleep`
+- `RawBrightness value`
+- `AppleARMFunctionSlowAdaptiveClockingAggressor`
+- `unknown additional device information`
+- `\"QuotaGroup %d is not supported\\n\" @%s:%d`
+- `enable-dvd`
+- `[%s]:%s:%d: Copied %d entries\n`
+- `\"StreamId %d is beyond allowed limit of %d\\n\" @%s:%d`
+- `%s[%s]:%s:%u - _programBytes error, ret=%#x\n`
+- `kDisplay_FBReplay`
+- `kISP_NonAllocating`
+- `%s:%d: Failed to set quota size for Stream:%s priority:%d DSID:[%d-%d] Policy:%d Size:%d Persistence:%d\n\n`
+- `/chosen/iBoot`
+- `%s::%s:%d:  error 0x%x\n\n`
+- `CPU PingPong`
+- `AppleARMPerformanceControllerTurboLagTimeoutUS0`
+- `kAVD_InfoSamples`
+- `MaxDimmingStep`
+- `\"AppleARMPerformanceController::attachToChild couldn't allocate memory\\n\" @%s:%d`
+- `AppleARMRTC`
+- `USB3Device`
+- `%s:%d: Failed to alloc DataStream object\n\n`
+- `site.AppleARMCPU`
+- `root`
+- `%s:%s:%u - Error erasing flash region: %#x length: %#x - %#x\n`
+- `dvc-active-timeout`
+- `com.apple.private.kernel.system-override`
+- `%s::%s: Using Nits2DAC table  %d\n`
+- `%s::%s: nits=%d -> dac=%d, Buttons? %d\n`
+- `AppleARMSFRManifest: Error: Failed to publish sfr manifest\n`
+- `sizeof(memcache_cmd_entry) <= _quotaReqPtdEntryCount * kBytesPerPtdEntry`
+- `1211111212221212112111111111122`
+- `%s:%d: Received unsupported selector %d\n\n`
+- `performance-domain-features`
+- `pmp_ptd_reg_idx`
+- `-dcs_enable_thermal_loop`
+- `AppleARMSFRManifest: Error: Failed to get virtual address\n`
+- `sfr-manifest-size`
+- `site.AppleARMBootPerf`
+- `VictimUserClient::initWithTask\n`
+- `site.AppleARMPerformanceControllerPerformanceDomain`
+- `AppleARMPerformanceControllerDVDVoltageLimit`
+- `AppleARMPerformanceControllerPerformanceStateCount`
+- `\"AppleARMPerformanceController::initVoltageAndPerformanceStates: performance-domain-features property is the wrong size\" @%s:%d`
+- `AppleARMRTC registering service!@@@@@@\n`
+- `%s:%d: Failed to to find data stream object for stream %d\n\n`
+- `site.AppleARMFunctionEventTimestamp`
+- `dvc`
+- `CLPC`
+- `PERF_CLOCK_GATE`
+- `AppleARMPWMDevice`
+- `hertz_millisecs`
+- `\"%s: 'cpu-debug-interface.light-em-up': property is undefined.\\n\" @%s:%d`
+- `kAOP_ASC`
+- `site.VictimUserClient`
+- `PERF_PERF_CHG_DOMx`
+- `AggressorUserClient::sGetSafeFreqList\n`
+- `pData != nullptr`
+- `kANE_Kernel`
+- `%s::%s: Display type %s - vendor %c\n`
+- `AppleARMSFRManifest: Error: Failed to find matching hash entries\n`
+- `%s:%d: Deprioritize on stream %s on request from client\n\n`
+- `AppleARMFunctionData`
+- `%s::%s: no backlight enable function\n`
+- `%s: could not initialize the panic log device\n`
+- `*** %s:\n***    %s for CPU %d (%d) must match interrupts[2] (%d)\n`
+- `AppleARMFunctionPerfAdvise`
+- `AppleARMPerformanceControllerDVDFactor3`
+- `site.AppleARMSPICommand`
+- `AppleARMSPIFlashController`
+- `%s::%s: Using DCP passthrough architecture %d\n`
+- `logFinishCommand`
+- `Reg0Write`
+- `site.AppleMemCacheEvent`
+- `tempData && (tempData->getLength() == sizeof(uint32_t))`
+- `nvram-bank-size`
+- `CPU Performance States`
+- `function-voltage_domain%u`
+- `AggressorUserClient::setAggressorKey - ERROR - invalid character '%c'\n`
+- `%s: no mask supplied\n`
+- `1211222`
+- `kANE_ASC`
+- `site.AppleARMNORPanicLog`
+- `site.AppleARMQuadSPIDeviceUserClient`
+- `cpuIdle(exit) Exec Time`
+- `callFunction`
+- `%s: super::init failed\n`
+- `%s@%s:%s::%s: pollctl bad len %lu\n`
+- `plc-dbv-threshold`
+- `nvram-bank-count`
+- `AppleARMTraceController`
+- `%s: could not initialize mother class\n`
+- `%s:%d: Updating assigned size for stream %s to 0x%x -> 0x%x bytes\n`
+- `AggressorUserClient::start failed to attach %s to arm-io\n`
+- `ctrlEffort`
+- `result == 0 `
+- `checkForWork`
+- `%s::%s: ramp took %d.%06ds\n`
+- `LimitVoltSt`
+- `AggressorUserClient::aggressorActionSingle -- SAC Callback -- Selecting Frequency %llu±%dHz\n`
+- `AggressorUserClient::sDeregisterAggressor\n`
+- `%s:%d: Invalid arguments\n\n`
+- `v16@?0^{IOTimerEventSource=^^?i^{IOEventSource}^{OSObject}^?B^{IOWorkLoop}^v^{ExpansionData}^vQ^{ExpansionData}}8`
+- `deRegisterPeriodicCall`
+- `site.AppleARMSPIController`
+- `pcc-brightness`
+- `%s:%d: Invalid timer argument\n\n`
+- `AppleARMPWMInOutPulseController`
+- `AppleARMLightEmUp.cpp`
+- `kANE_Victims`
+- `kANE_FrameCriticalVictims`
+- `%s::%s: no mA2Nits1stOrderCoef data\n`
+- `AppleARMQuadSPIDevice`
+- `site.AppleARMSFRManifest`
+- `IOService::init(from, gIODTPlane)`
+- `%s:%d: Initialized data stream object. Stream: %s, dsConfigIndex: %d\n\n`
+- `kACC_NonCritical`
+- `pre-strobe-current`
+- `setAvailableCacheSize`
+- `%s: invalid provider class\n`
+- `LeaderWrite`
+- `%s:%d: Blocking on for command completion\n\n`
+- `%s::%s: Using entitlement check %d\n`
+- `%s::%s: For _lastNits=%lld/1000, with dpbScaleFactor=%lld/1000(%ld), set iDAC to %d (0x%x)\n`
+- `Performance Arbiter Stats`
+- `Content Hint`
+- `AppleARMPerformanceControllerDVBRelaxTimeoutUS0`
+- `ior-cat`
+- `AppleARMNORNVRAM.cpp`
+- `\"Illegal config in %s EDT entry, no wakeup-data\\n\" @%s:%d`
+- `VictimUserClient::sDeregisterVictim\n`
+- `%s::%s:%d:  \n`
+- `[%s]:%s:%d:[error] init failed\n`
+- `IODTNVRAM`
+- `%s::%s: updated NVRAM with level 0x%x\n`
+- `%s::%s: %s backlight\n`
+- `AggressorUserClient::sRegisterAggressor\n`
+- `Shutdown`
+- `\"%s: data is too malformed.\\n\" @%s:%d`
+- `%s::%s: BL capping is incorrect! Please check your EDT configuration, dbvDelta %u\n`
+- `nits2milliAmps`
+- `%s:%d: enableDataStream: Failed to allocate DataStream object for stream %s\n\n`
+- `%s:%d: disableDataStream for stream %s\n\n`
+- `%s:%d: Request on stream %s for size 0x%x bytes. Current stream size: 0x%x Total assigned cache: 0x%x\n\n`
+- `l2-cache-id`
+- `AppleMCCUserClient`
+- `site.struct _ArbiterNode`
+- `AppleARMPerformanceControllerTurboLagTimeoutUS3`
+- `NewVoltSt`
+- `%s::%s: AppleARMPWMBacklight::start complete\n`
+- `%s::%s: No RedCoeffiecient, using default\n`
+- `update_stream_entry`
+- `#device-bytes`
+- `AppleARMPerformanceControllerDVBFactor3`
+- `*size >= count * sizeof(spmiLogEnt)`
+- `AVD`
+- `_mcPolicy`
+- `%s::%s: Trinity is %s\n`
+- `%s::%s: Setting the backlight driver log level to %d (kIOHIDBacklightLogLevelKey)`
+- `*** %s:\n***    Missing '%s' property for CPU %d\n`
+- `%s:%s:%u - cannot be locked\n`
+- `Performance State Changes`
+- `BrightnessMilliNits`
+- `FadePeriod`
+- `AppleARMCPU-BootCPU-Initialized`
+- `[%s]:%s:%d: CmdEnd[%d], %X - %s 0x%04x - #%x %uus\n`
+- `MCClient`
+- `cmdQueue`
+- `%s:%d: registerForPeriodicCall timer set to %d us. _timerInterval:%d ms\n\n`
+- `[CBPWR] Cannot take/release DCP FE pwr assertion, _dcpPwrAssrtionFn is missing.`
+- `%s::%s: Pending backlight update -> cache backlight level = %u\n`
+- `AppleARMSFRManifest: Error: Failed to locate manifest information\n`
+- `aclk`
+- `%s:%d: Enabling DCS thermal control loop with timeout of %d msecs\n\n`
+- `%s:%d: Available cache size changed to %d bytes\n\n`
+- `disableDataStream`
+- `1211111212221212111222222222222222`
+- `iboot-profile-data`
+- `Event`
+- `AOP`
+- `mcache_pmp == true`
+- `MCDataStreamInfoObject`
+- `AppleARMIICController`
+- `nclk`
+- `coprovider-group`
+- `kGPU_USCDataWrites`
+- `unknown revision`
+- `%s:%d: Found -disable_mcc in boot-args, will skip switching to M$ into cache mode\n`
+- `dsInfo != NULL`
+- `AppleRegisterDump`
+- `/secure-boot-hashes`
+- `Sleep`
+- `site.AppleARMSoftIICController`
+- `AggressorUserClient::start found %d nodes with name arm-io, this should not happen\n`
+- `sclk`
+- `AggressorUserClient:initWithTask::super failed\n`
+- `AggressorUserClient::aggressorActionMultiple -- SAC Callback -- buffer=%d, Frequency %llu±%dHz\n`
+- `Panicing from IOKit spmi command\n`
+- `set-hz`
+- `[%s]:%s:%d: CmdStart[%d], %X - %s 0x%04x - #0x%x\n`
+- `/chosen/carveout-memory-map`
+- `121111121222121211111111111`
+- `AppleARMPE`
+- `AggressorUserClient::deregisterAggressor - Deregistering aggressor!\n`
+- `kGPU_FBToDisplay`
+- `site.MCDataStreamInfoObject`
+- `12111112122212121111111112221112211111121222222221222222222221111111222222122121212121222222221112211122222212`
+- `VictimUserClient::getFreqList -- memcpy failed\n`
+- `AppleARMPerformanceControllerFunctionClockGate`
+- `AppleARMMIPIDSIController`
+- `kGPU_SeivedRenderTargetND`
+- `AppleARMBacklight`
+- `%s::%s: Buttons?  %d\n`
+- `slider2Nits`
+- `%s:%d: Invalid index %d into config array(max index: %d)\n\n`
+- `arm-io`
+- `%s:%s:%u - Error writing buffer: %p length: %#x - %#x\n`
+- `AppleARMPerformanceControllerDVDFactor0`
+- `AggressorUserClient::start failed to start provider\n`
+- `AggressorUserClient::getSafeFreqList: populating with %llu±%d Hz\n`
+- `Synchronous`
+- `\"%s: unexpected resume.\" @%s:%d`
+- `DBVMax`
+- `%s::%s:  - set initial value \n`
+- `site.AppleARMQuadSPIDevice`
+- `enableDataStream`
+- `VictimUserClient::addFreqs - Failed to add Freqs\n`
+- `1211111212221212122`
+- `AppleARMPerformanceControllerDVCGracePeriodUS2`
+- `JEDEC-ID`
+- `%s::%s: no LmaxProduct data\n`
+- `%s::%s: Backlight is off -> skipping level update\n`
+- `sfr-manifest-data`
+- `site.AbsoluteTime`
+- `%s:%s:%u - Error: read/write buffer mismatch offset=%#x length: %#x\n`
+- `AppleARMFabricTrace.cpp`
+- `mcc_analyze`
+- `site.AppleARMPWM`
+- `IOService`
+- `setActive`
+- `kISP_PyramidFusion`
+- `AppleARMBootPerf: Warning: buffer size (0x%llx) is less than %lu\n`
+- `%s:%d: Received request with selector %d\n\n`
+- `121111121222121212111111111222`
+- `kDisplay_ASC`
+- `%s::%s: no nits2mAmps2ndOrderCoef data\n`
+- `%s::%s: Too little calibration data. Actual: %d, Expected: %ld\n`
+- `function-dcp_enable`
+- `AppleARMSFRManifest: Error: Failed to find property table\n`
+- `no-suspend`
+- `12111111`
+- `enable-ms`
+- `nitsThresholdPLC`
+- `%s::%s: Backlight update was scheduled. Current backlight level = %u, delay = %u ns\n`
+- `%s::%s: Pre-strobe OFF (display off) \n`
+- `%s::%s:  calibratedNits=%lld/1000 nits=%lld/1000 segment1 (m=%lld/1000, c=%lld/1000), segment2 (m=%lld/1000, c=%lld/1000)\n`
+- `AppleARMSFRManifest: Error: Failed to open reg-entry %s\n`
+- `mc_cmd_ptd_count`
+- `dcs-thermal-loop-timeout`
+- `kACC_SuperCriticalLLC`
+- `Clock Gate Control`
+- `AggressorUserClient`
+- `_writeWRSR`
+- `set-high-ns`
+- `121111121222121211221`
+- `AppleARMPerformanceControllerVoltageStateCount`
+- `AggressorUserClient::setAggressorIndexActionType\n`
+- `Display`
+- `handlePCCUpdateGated`
+- `%s:%s:%u - NORFlash device read() failed, ret=0x%08x\n`
+- `AppleARMPerformanceControllerDVDFactor2`
+- `CpuIdleTicksLow`
+- `len > handle`
+- `brightness report`
+- `kern.darkboot`
+- `dual-spi-nand`
+- `iicLogBuf == nullptr\n`
+- `site.AppleARMSPMIController`
+- `site.AppleARMFunctionSlowAdaptiveClockingAggressor`
+- `getStreamDefaultSize`
+- `AppleARMBootPerf: Warning: profile->count (%u) > maxPossibleCount (%u)\n`
+- `rtc`
+- `device-clocks-max`
+- `PERF_CPU_IDLE`
+- `MCCommand`
+- `%s::%s: _lMinProduct=%ld\n`
+- `%s::%s: mAmps out of range(%d IOFixed), capping to _hardwareMaxCurrent(%d IOFixed) \n`
+- `PanicLog`
+- `site.OSAsyncReference64`
+- `AppleARMLightEmUp`
+- `%s::%s: Trinity update: _pccEnabled: %d, pccOut: %lld/1000, harmony scalar: %ld/1000, brightnessOut: %lld/1000\n`
+- `restore-on-resume`
+- `\"In structure does not match required structure\\n\" @%s:%d`
+- `AggressorUserClient::registerAggressor - Registering aggressor!\n`
+- `_programBytesSST`
+- `IOReportLegend`
+- `ISP`
+- `%s::%s: _lMaxProduct=%ld\n`
+- `%s::%s: Dark boot button press - enabling backlight \n`
+- `IODeviceTree:/arm-io/pmp/iop-pmp-nub`
+- `Primary%ld`
+- `ptd-ranges-smc`
+- `function-enable`
+- `AppleARMPerformanceControllerDVCActiveTimeoutUS1`
+- `DVCVoltSt`
+- `VCPU`
+- `period`
+- `[CBPWR] kIOMessageSystemWillNotSleep`
+- `UserBrightness value`
+- `%s::%s:%d:  Input size  (%d) does not match of aftDRAMConfig_t (%lu)\n\n`
+- `Unsupported`
+- `RegWrite`
+- `%s:%d: Unsupported streamId value %u\n\n`
+- `disableAllDataStreams`
+- `AppleARMCFIFlashController`
+- `com.apple.private.mcc.datacollection-access`
+- `enable-dvc`
+- `%s::%s: AppleARMPWMBacklight::start: no backlight enable function\n`
+- `12111112122212121122`
+- `%s:%d: Invalid client object in the info structure\n\n`
+- `kGPU_RenderTarget`
+- `%s::%s: %ld\n`
+- `\t%s entry %4d: %d.%06d [%3dms] %c %02X %2dB device: %0llX state %04X (%s)\n`
+- `clpc`
+- `dvb`
+- `periodicTracer`
+- `%s[%s]:%s:%u - invalid length\n`
+- `armFunctionCallback`
+- `current-for-mid-backlight`
+- `%s::%s: Pre-strobe ON - brightness override \n`
+- `enableDataStreamForTest`
+- `SecureRoot`
+- `%s::%s: no nits2mAmps1stOrderCoef data\n`
+- `%s::%s: Pre-strobe iDAC=%d overriden in EDT \n`
+- `DisplayBrightnessSliderPosition`
+- `readPTD`
+- `printDSConfigArray`
+- `IOPlatformWakeAction`
+- `eraseRegion`
+- `dvb-relax-timeout`
+- `11`
+- `CpuIdleTicksHigh`
+- `CpuActiveTicksLow`
+- `AppleARMIODevice`
+- `211122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222211222222212222222212222221222221122222222222`
+- `\"AppleARMPerformanceController: PD%u SRAM EMA %u is faster than voltage %u can allow\" @%s:%d`
+- `%s:%d: Failed to alloc/initialize client object\n\n`
+- `%s:%d: Failed to add timer event source\n\n`
+- `AppleARMSPIController`
+- `set-low-ns`
+- `uses-percentage`
+- `AppleMemCacheController`
+- `site.MCCommandQueue`
+- `121111121222121211122`
+- `OFF`
+- `site.AppleARMSlowAdaptiveClockingManager`
+- `AppleARMFunctionSlowAdaptiveClocking`
+- `AppleARMSFRManifest: Starting\n`
+- `AppleARMPerformanceControllerDVDThresholdUS2`
+
+**[__TEXT.__os_log]**
+
+- `Failed to allocate DataStream object for stream %s\n`
+- `registerForPeriodicCall timer set to %d us. _timerInterval:%d ms\n`
+- `Blocking on for command completion\n`
+- `Request for size on stream %s instance %d is invalid`
+- `Failed to alloc DataStream object\n`
+- `enableDataStream: Ignoring request from non-user client\n`
+- `enableDataStream: Failed to allocate DataStream object for stream %s\n`
+- `disableDataStream for stream %s\n`
+- `MemCache Policy management is disabled\n`
+- `User Client only mode: %d\n`
+- `This process didn't enable data collection\n`
+- `Periodic tracer interval set to %dms\n`
+- `AppleMemCacheDataSetsFunction::callFunction action:%ld\n`
+- `MemCache Policy Management is disabled\n`
+- `Unsupported streamId %u.\n`
+- `Memory descriptor prepare failure. rc:0x%x\n`
+- `Failed to add timer to workloop\n`
+- `ptdMemMapIdx: %d\n`
+- `Enabling DCS thermal control loop with timeout of %d msecs\n`
+- `Failed to allocate memory of size %lu bytes\n`
+- `Failed to create mem descriptor for shared data queue\n`
+- `Request on stream %s for size 0x%x bytes. Current stream size: 0x%x Total assigned cache: 0x%x\n`
+- `Invalid client object in the info structure\n`
+- `_ptdUpdateSpaceOffset: 0x%x\n`
+- `Invalid client id %d\n`
+- `Invalid arguments to registerForPeriodicCall()\n`
+- `deRegisterPeriodicCall\n`
+- `Command completed\n`
+- `Initialized data stream object. Stream: %s, dsConfigIndex: %d\n`
+- `Mem descriptor pointer is null\n`
+- `Initialized client %s for object %s. callbackOption: %d \n`
+- `Found mcc_clampwaycount in boot-args. Way count clamped to %d ways\n`
+- `Stream %s instance %d is greater than max supported instances(%d)\n`
+- `Failed to alloc data stream info object\n`
+- `Invalid arguments.\n`
+- `M$PMP CMD %x, %d \n`
+- `enableDataStream Writing to MCache-PMP for quota group %d, Requested Size :%d, Flags: 0x%x\n`
+- `[%s]:%s:%d: CmdEnd[%d], %X - %s 0x%04x - #%x %uus\n`
+- `[%s]:%s:%d: Copied %d entries\n`
+- `MCACHE-PMP management is enabled\n`
+- `Notifying client '%s' on stream '%s'. Size: 0x%x\n`
+- `Failed to create timer\n`
+- `Unsupported streamId value %u\n`
+- `enableDataStreamForTest for stream %s size %d from driverInstance %d\n`
+- `Received unsupported selector %d\n`
+- `Failed to setup timer for periodic tracing\n`
+- `Failed to to find data stream object for stream %d\n`
+- `Stream:%s quotaGroup:%d priority:%d DSID:[%d-%d] Policy:%d Size:%d Persistence:%d\n`
+- `Datastreams are not configured yet\n`
+- `No data collection buffer available\n`
+- `Found -disable_mcc in boot-args, will skip switching to M$ into cache mode`
+- `Failed to allocate memory for data packet(size: %u)\n`
+- `Failed to set quota size for Stream:%s priority:%d DSID:[%d-%d] Policy:%d Size:%d Persistence:%d\n`
+- `enableDataStream: Invalid data stream id: %d\n`
+- `disableDataStream: Invalid arguments\n`
+- `No device\n`
+- `Received unsupported type %d\n`
+- `writePTD: 0x%08llx, 0x%08llx\n`
+- `Periodic tracer is disabled\n`
+- `EnQueued event \n`
+- `Ignoring invalid stream id %d\n`
+- `enableDataStream for stream %s size %d from driverInstance %d\n`
+- `%sQuota update for stream %s. PrevSize: 0x%x newSize: 0x%x totalAssignedCache: 0x%x\n`
+- `Force updating ds %s to size %d\n`
+- `[%s]:%s:%d: CmdStart[%d], %X - %s 0x%04x - #0x%x\n`
+- `[%s]:%s:%d: %s`
+- `[%s]:%s:%d: CmdEnd[%d], %X - %s 0x%04x - #%x %uus, 0x%08x\n`
+- `dsidArray list is null\n`
+- `Failed to find config entry for DataStream %s\n`
+- `Received ack for cmd id:%d\n`
+- `configuration entry count: %d\n`
+- `Read: M$PMP %x Lower64 %llx Upper64 %llx\n`
+- `Wokeup on on event cmdId %d\n`
+- `Invalid index %d into config array(max index: %d)\n`
+- `Available cache size changed to %d bytes\n`
+- `Disable all data streams\n`
+- `Failed to get DS configuration\n`
+- `Deprioritize on stream %s on request from client\n`
+- `Updating assigned size for stream %s to 0x%x -> 0x%x bytes`
+- `Invalid data stream id: %d\n`
+- `Failed to map memory descriptor to copy data stream info\n`
+- `Client for id %d is already registered. Name: %s callbackOption: %d \n`
+- `Failed to setup timer for data collection\n`
+- `There is no shared data queue\n`
+- `M$PMP %x, %x, %llx \n`
+- `Failed to get info about streamId %d. rc:0x%x\n`
+- `_dcsOdtsES is disabled\n`
+- `Invalid arguments\n`
+- `Failed to initialize shared data queue`
+- `registerForPeriodicCall registered\n`
+- `Sending command to PMP\n`
+- `DeQueued event\n`
+- `%s, StreamID: %x, ClientID: %x, Size: %x\n`
+- `Stream:%s priority:%d DSID:[%d-%d] Policy:%d Size:%d Persistence:%d\n`
+- `Received request with selector %d\n`
+- `Limiting data collection counters to %d\n`
+- `_dcsOdtsES is enabled\n`
+- `registerForPeriodicCall: timer already registered\n`
+- `Failed to add timer event source\n`
+- `Sleeping on event cmdId %d\n`
+- `Invalid arguments. Request ptr is null\n`
+- `Failed to alloc/initialize client object\n`
+- `Invalid timer argument\n`
+- `DSID management is disabled\n`

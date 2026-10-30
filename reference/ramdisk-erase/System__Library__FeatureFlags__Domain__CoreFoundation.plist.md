@@ -1,0 +1,16 @@
+# `/System/Library/FeatureFlags/Domain/CoreFoundation.plist`
+
+From the erase/recovery restore ramdisk (141-28940-105.dmg, runs restored_external). 884 bytes.
+
+- `CFNotificationCenterRestoreState`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `CFPasteboardURLEnhancements`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `CFPreferencesWorkloops`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `CFStringROM`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `Colorado`:
+  - `DevelopmentPhase`: `FeatureComplete`
+- `EndpointSecurityPasteEvent`:
+  - `DevelopmentPhase`: `FeatureComplete`

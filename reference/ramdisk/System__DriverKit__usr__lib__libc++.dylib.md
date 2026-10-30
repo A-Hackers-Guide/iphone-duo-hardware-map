@@ -1,0 +1,129 @@
+# `/System/DriverKit/usr/lib/libc++.dylib`
+
+From the upgrade restore ramdisk (141-29011-104.dmg). 454,432 bytes.
+
+## Header
+
+```
+Magic         = 64-bit MachO
+Type          = DYLIB
+CPU           = AARCH64, 0xc caps: USR00
+Commands      = 20 (Size: 2032)
+Flags         = NoUndefs, DyldLink, TwoLevel, WeakDefines, BindsToWeak, NoReexportedDylibs, AppExtensionSafe
+```
+
+## Linked libraries (3)
+
+- `/System/DriverKit/usr/lib/libc++.dylib (compatibility version 1.0.0, current version 2200.32.0)`
+- `/System/DriverKit/usr/lib/libSystem.dylib (compatibility version 1.0.0, current version 1359.40.3)`
+- `/System/DriverKit/usr/lib/libc++abi.dylib (compatibility version 1.0.0, current version 2200.32.0)`
+
+## Entitlements
+
+```xml
+  - no entitlements
+```
+
+## Strings (99)
+
+```
+11920928955078125
+142108547152020037174224853515625
+17763568394002504646778106689453125
+6938893903907228377647697925567626953125
+bad_weak_ptr
+25
+244140625
+4656612873077392578125
+227373675443232059478759765625
+std::bad_function_call
+: 
+bad_variant_access
+2384185791015625
+nan(snan)
+15625
+762939453125
+1490116119384765625
+116415321826934814453125
+72759576141834259033203125
+filesystem error: %s [\"%s\"] [\"%s\"]
+bad any cast
+1220703125
+1387778780781445675529539585113525390625
+..
+/
+%f
+generic
+625
+11102230246251565404236316680908203125
+0e+00
+6103515625
+9094947017729282379150390625
+1136868377216160297393798828125
+55511151231257827021181583404541015625
+filesystem error: %s
+.
+nan
+23283064365386962890625
+88817841970012523233890533447265625
+444089209850062616169452667236328125
+34694469519536141888238489627838134765625
+78125
+3814697265625
+19073486328125
+2220446049250313080847263336181640625
+clock_gettime(CLOCK_MONOTONIC_RAW) failed
+bad access to std::expected
+unspecified system_category error
+inf
+59604644775390625
+system_error was thrown in -fno-exceptions mode with error %i and message \"%s\"
+5
+37252902984619140625
+1818989403545856475830078125
+277555756156289135105907917022705078125
+bad_alloc was thrown in -fno-exceptions mode
+%Lf
+152587890625
+2910383045673370361328125
+45474735088646411895751953125
+867361737988403547205962240695953369140625
+__next_prime overflow
+30517578125
+95367431640625
+7450580596923828125
+5684341886080801486968994140625
+710542735760100185871124267578125
+filesystem error: %s [\"%s\"]
+overflow_error was thrown in -fno-exceptions mode with message \"%s\"
+stoul
+48828125
+582076609134674072265625
+28421709430404007434844970703125
+\\
+runtime_error was thrown in -fno-exceptions mode with message \"%s\"
+stoull
+stold
+: no conversion
+125
+476837158203125
+298023223876953125
+clock_gettime(CLOCK_REALTIME) failed
+: out of range
+unspecified generic_category error
+system
+nan(ind)
+1953125
+9765625
+186264514923095703125
+14551915228366851806640625
+363797880709171295166015625
+3552713678800500929355621337890625
+bad_optional_access
+3125
+390625
+931322574615478515625
+173472347597680709441192448139190673828125
+stoll
+invalid_argument was thrown in -fno-exceptions mode with message \"%s\"
+```

@@ -1,0 +1,33 @@
+# `ICDocCamExtractedDocumentControllerDelegate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/DocumentCamera.framework/DocumentCamera`](../userland/System__Library__PrivateFrameworks__DocumentCamera.framework__DocumentCamera.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 23 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerDidTapDone:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerDidTapRetake:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentController:didTapRecrop:index:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentController:shareDocument:sender:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentController:startMarkupOnDocument:inkStyle:startPresentBlock:dismissCompletionBlock:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerDidApplyFilter:forDocument:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerDidChangeTitle:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerDidDeleteDocument:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerDidDismiss];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerDidMovePageFromIndex:toIndex:forDocument:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerDidRotateDocument:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerDidSelectCopyFromMenuForDocument:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerDidSelectShareFromMenuForDocument:sourceRect:sourceView:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerDidTapAddImage];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerDidTapDone:scanDataDelegate:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerDiscardMarkupModelDataForDocument:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerImageForDocument:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerImageSizeForDocument:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerLoadThumbnailForDocument:size:completionBlock:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerMarkupModelDataForDocument:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerTitle];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerUncroppedImageForDocument:];
+-[ICDocCamExtractedDocumentControllerDelegate extractedDocumentControllerUndoManager];
+```

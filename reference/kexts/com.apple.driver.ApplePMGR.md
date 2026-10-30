@@ -1,0 +1,1984 @@
+# `com.apple.driver.ApplePMGR`
+
+- Name: ApplePMGR
+- Version: `1`
+- UUID: `58E8C4E2-D8F9-3B09-A287-2A96D667BB7B`
+- Source version: `1976.40.3.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.iokit.IOReportFamily`](com.apple.iokit.IOReportFamily.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (1) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/pmgr`](../devicetree/root__arm-io__pmgr.md) | `ApplePMGRv2` | `pmgr2,arch` |
+
+## IOKit personalities (2) [KC]
+
+### AppleBringUpPMGR
+- `CFBundleIdentifier`: `com.apple.driver.ApplePMGR`
+- `IOClass`: `AppleBringUpPMGR`
+- `IONameMatch`: `pmgr1,bring-up`
+- `IOPersonalityPublisher`: `com.apple.driver.ApplePMGR`
+- `IOPlatformActiveAction`: `90000`
+- `IOPlatformHaltRestartAction`: `90000`
+- `IOPlatformQuiesceAction`: `90000`
+- `IOPlatformSleepAction`: `600`
+- `IOPlatformWakeAction`: `600`
+- `IOProviderClass`: `AppleARMIODevice`
+
+### ApplePMGRv2
+- `CFBundleIdentifier`: `com.apple.driver.ApplePMGR`
+- `IOClass`: `ApplePMGRv2`
+- `IONameMatch`: `pmgr2,arch`
+- `IOPersonalityPublisher`: `com.apple.driver.ApplePMGR`
+- `IOPlatformActiveAction`: `90000`
+- `IOPlatformHaltRestartAction`: `90000`
+- `IOPlatformQuiesceAction`: `90000`
+- `IOPlatformSleepAction`: `600`
+- `IOPlatformWakeAction`: `600`
+- `IOProviderClass`: `AppleARMIODevice`
+
+
+## C++ classes (37) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AbstractPMGR` | 0x88 | IOService → IORegistryEntry |
+| `AppleBringUpPMGR` | 0x738d8 | ApplePMGR → ApplePMGRBase → IOPMGR → IOService → IORegistryEntry |
+| `ApplePMGR` | 0x738d8 | ApplePMGRBase → IOPMGR → IOService → IORegistryEntry |
+| `ApplePMGRBase` | 0x88 | IOPMGR → IOService → IORegistryEntry |
+| `ApplePMGRFunctionAssertReset` | 0x38 | AppleARMFunctionAssertReset → AppleARMFunction |
+| `ApplePMGRFunctionAvoidPerfState` | 0x38 | AppleARMFunction |
+| `ApplePMGRFunctionCLPCEnabled` | 0x30 | AppleARMFunction |
+| `ApplePMGRFunctionCPUIdle` | 0x30 | AppleARMFunction |
+| `ApplePMGRFunctionClockGate` | 0x30 | AppleARMFunction |
+| `ApplePMGRFunctionEnableAutoClockGate` | 0x38 | AppleARMFunction |
+| `ApplePMGRFunctionEnableCPUCore` | 0x38 | AppleARMFunction |
+| `ApplePMGRFunctionEnablePSDService` | 0x30 | AppleARMFunction |
+| `ApplePMGRFunctionEnableTouchClock` | 0x40 | AppleARMFunction |
+| `ApplePMGRFunctionGetServiceState` | 0x30 | AppleARMFunction |
+| `ApplePMGRFunctionGetValidPerfState` | 0x40 | AppleARMFunction |
+| `ApplePMGRFunctionISPRefClock` | 0x48 | AppleARMFunction |
+| `ApplePMGRFunctionPDMClockBypass` | 0x30 | AppleARMFunction |
+| `ApplePMGRFunctionPLLOffMode` | 0x38 | AppleARMFunction |
+| `ApplePMGRFunctionPMPInterrupt` | 0x48 | AppleARMFunction |
+| `ApplePMGRFunctionPerfCycleCount` | 0x40 | AppleARMFunction |
+| `ApplePMGRFunctionPowerGate` | 0x30 | AppleARMFunction |
+| `ApplePMGRFunctionROSC` | 0x50 | AppleARMFunction |
+| `ApplePMGRFunctionReconfigTrigger` | 0x38 | AppleARMFunction |
+| `ApplePMGRFunctionResetPSDService` | 0x30 | AppleARMFunction |
+| `ApplePMGRFunctionSEPSleepPrep` | 0x38 | AppleARMFunction |
+| `ApplePMGRFunctionSetATCDpClockSource` | 0x30 | AppleARMFunction |
+| `ApplePMGRFunctionSetPerfState` | 0x40 | AppleARMFunction |
+| `ApplePMGRFunctionSetTouchClockSource` | 0x30 | AppleARMFunction |
+| `ApplePMGRFunctionStartS2RTimer` | 0x30 | AppleARMFunction |
+| `ApplePMGRFunctionStub` | 0x30 | AppleARMFunction |
+| `ApplePMGRFunctionUSBClock` | 0x40 | AppleARMFunction |
+| `ApplePMGRFunctionVideoClock` | 0x38 | AppleARMFunction |
+| `ApplePMGRFunctionVoteCriticalLltMode` | 0x38 | AppleARMFunction |
+| `ApplePMGRFunctionWaitForDeviceEvent` | 0x40 | AppleARMFunction |
+| `ApplePMGRNub` | 0x740 | IOService → IORegistryEntry |
+| `ApplePMGRUserClient` | 0xe0 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `ApplePMGRv2` | 0x700 | ApplePMGRBase → IOPMGR → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x00010af0 off=0x00689e70-0x0069a960 addr=0xfffffe000768de70-0xfffffe000769e960 r--/r--   __TEXT            
+	sz=0x0001011c off=0x0068a588-0x0069a6a4 addr=0xfffffe000768e588-0xfffffe000769e6a4               __TEXT.__cstring          (CstringLiterals)
+	sz=0x000002b0 off=0x0069a6b0-0x0069a960 addr=0xfffffe000769e6b0-0xfffffe000769e960               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x000612f0 off=0x022fb2b0-0x0235c5a0 addr=0xfffffe00092ff2b0-0xfffffe00093605a0 r-x/r-x   __TEXT_EXEC       
+	sz=0x00060ad0 off=0x022fb2b0-0x0235bd80 addr=0xfffffe00092ff2b0-0xfffffe000935fd80          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000820 off=0x0235bd80-0x0235c5a0 addr=0xfffffe000935fd80-0xfffffe00093605a0          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00000878 off=0x049832e8-0x04983b60 addr=0xfffffe000b9872e8-0xfffffe000b987b60 rw-/rw-   __DATA            
+	sz=0x00000138 off=0x049832e8-0x04983420 addr=0xfffffe000b9872e8-0xfffffe000b987420               __DATA.__data             
+	sz=0x000005e0 off=0x00000000-0x000005e0 addr=0xfffffe000b987420-0xfffffe000b987a00               __DATA.__common           (Zerofill)
+	sz=0x00000160 off=0x00000000-0x00000160 addr=0xfffffe000b987a00-0xfffffe000b987b60               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x0000dae0 off=0x011854e8-0x01192fc8 addr=0xfffffe00081894e8-0xfffffe0008196fc8 rw-/rw-   __DATA_CONST      
+	sz=0x00000040 off=0x011854e8-0x01185528 addr=0xfffffe00081894e8-0xfffffe0008189528         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000040 off=0x01185528-0x01185568 addr=0xfffffe0008189528-0xfffffe0008189568         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x0000ba20 off=0x01185568-0x01190f88 addr=0xfffffe0008189568-0xfffffe0008194f88         __DATA_CONST.__const            
+	sz=0x00000b40 off=0x01190f88-0x01191ac8 addr=0xfffffe0008194f88-0xfffffe0008195ac8         __DATA_CONST.__kalloc_type      
+	sz=0x00000ff0 off=0x01191ac8-0x01192ab8 addr=0xfffffe0008195ac8-0xfffffe0008196ab8         __DATA_CONST.__kalloc_var       
+	sz=0x00000410 off=0x01192ab8-0x01192ec8 addr=0xfffffe0008196ab8-0xfffffe0008196ec8         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000f8 off=0x01192ec8-0x01192fc0 addr=0xfffffe0008196ec8-0xfffffe0008196fc0         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000008 off=0x01192fc0-0x01192fc8 addr=0xfffffe0008196fc0-0xfffffe0008196fc8         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 291 at 0x04ae127c
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     58E8C4E2-D8F9-3B09-A287-2A96D667BB7B
+008: LC_SOURCE_VERSION           1976.40.3.0.0
+009: LC_FUNCTION_STARTS          offset=0x004aaba20 size=0xd30
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `ApplePMGR`
+- `CFBundleGetInfoString`: `Copyright © 2014 Apple Inc. All rights reserved.`
+- `CFBundleIdentifier`: `com.apple.driver.ApplePMGR`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `ApplePMGR`
+- `CFBundleNumericVersion`: `16809984`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2014 Apple. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0`
+- `OSBundleRequired`: `Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/ApplePMGR.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198898942352`
+- `_PrelinkExecutableRelativePath`: `ApplePMGR`
+- `_PrelinkExecutableSize`: `524600`
+- `_PrelinkExecutableSourceAddr`: `-2198898942352`
+- `_PrelinkKmodInfo`: `-2198828715288`
+
+## Strings (1810) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `bool ApplePMGR::_getBit(UInt32, DeviceIDGroupMask *)`
+- `(_provider->_pmpV2() || _provider->_ptdExists())`
+- `void ApplePMGR::writeANEClkGenReg(UInt32, UInt32, UInt32, UInt32)`
+- `\"ApplePMGR: %s:%u REQUIRE failed: %s\" @%s:%d`
+- `void ApplePMGR::writePMGRClkGenSOCReg(UInt32, UInt32, UInt32)`
+- `ApplePMGR:   %-16s| ID = %#04x | FLAGS = %#02x | PERF = %s + %#010x\n`
+- `_bridges[bridge][die].counters`
+- `UInt64 ApplePMGR::_getCPUComplexCPMPowerGateCount(CPUComplex *)`
+- `virtual bool ApplePMGRFunctionPerfCycleCount::initWithTargetDataAndSymbol(IOService *, const OSData *, const OSSymbol *)`
+- `PMGR_DEBUG_PWRCTL`
+- `k < perfDomain->voltageStateCount`
+- `voltage-states20`
+- `virtual bool ApplePMGR::roscDataUpdate(PerfDomainID, const RoscData *, bool, UInt32)`
+- `ApplePMGRFunctionSetTouchClockSource`
+- `cpu-scw`
+- `void ApplePMGR::_publishTraceProperties()`
+- `ApplePMGR: Powering down clusters associated with devices that are set to PowerOff\n`
+- `UInt64 ApplePMGR::_getCPUComplexIdleExitCount(CPUComplex *)`
+- `UInt32 ApplePMGR::getVirtToPhysComplexInDie(UInt32)`
+- `  %s + %#010x`
+- `virtual void PSAnalytics::publish()`
+- `ApplePMGR: Copying HW DPE node data\n`
+- `void ApplePMGR::_waitForCioClusterCompleteGated(UInt64, UInt32, UInt32, bool)`
+- `ApplePMGR:   %s + %#010x | Register Count = %u\n`
+- `MISC_CORES`
+- `_socClusterDataCount < kClusterIDMaxCount`
+- `ApplePMGR: High Perf State Max Credits = %llu\n`
+- `param1 && param2`
+- `_regGroups[kRegGroupGPU2TrigCtl].valid`
+- `entry`
+- `deviceGroupID`
+- `channelID != 0`
+- `cllt-floor`
+- `com.apple.private.kernel.system-override`
+- `ApplePMGRFunctionGetServiceState`
+- `AMCC`
+- `GPU CS`
+- `start`
+- `E_ACC_CPU2_IMPL`
+- `_interruptConfig[i].intIndex < _interruptConfigCount`
+- `\"ApplePMGR: %s:%u \" \"device %x (%s) wrong perfDomainID %x\\n\" @%s:%d`
+- `GFX4`
+- `func`
+- `AppleARMPerformanceControllerPerformanceDomainCount`
+- `_apWakeSourceCount <= kAPWakeSourceMaxCount`
+- `_frequencies`
+- `site.ApplePMGRFunctionGetServiceState`
+- `ns`
+- `\"invalid pmp version\" @%s:%d`
+- `numMemGroups <= kPwrGateRetentionMemGroupSizeMax`
+- `_wakeTimeCounterCount <= kWakeTimeCounterMaxCount`
+- `dpe-without-pmp`
+- `perfDomain->roscAppleARMFunctionPending != kRoscTypeIDCount`
+- `md0`
+- `power gated`
+- `ApplePMGR: %s: autoPowerGating=%s\n`
+- `ISP`
+- `state < domain->perfStateCount`
+- `cpm-power-gating-hack`
+- `site.PwrGateRegGroupData`
+- `socDVFSHandle`
+- `AppleARMPerformanceControllerDVDThresholdUS1`
+- `cluster->powerStateReporter`
+- `void ApplePMGR::writePMGRAONMiniMiscReg(UInt32, UInt32, UInt32)`
+- `ptd-ranges`
+- `site.ApplePMGRFunctionCLPCEnabled`
+- `ApplePMGRFunctionEnableCPUCore`
+- `_paramDVDFactorsValid()`
+- `ApplePMGRFunctionAssertReset`
+- `site.ApplePMGRFunctionCPUIdle`
+- `void ApplePMGR::writePMGRSOCGpce1Reg(UInt32, UInt32, UInt32)`
+- `ApplePMGR: chipRevMinor = %x\n`
+- `die <= 1`
+- `\"ApplePMGR: %s:%u \" \"_deviceIDToIndexMap[%x] == %x != kIndexReserved\" @%s:%d`
+- `_gPMGR[chiplet]`
+- `_socEventCountReporter`
+- `_optionalBridges & (0x1 << i)`
+- `first-acc-dvfm-map-state`
+- `GFX1_TVM`
+- `sleepDepth <= kPwrGateSleepDepthMax`
+- `void ApplePMGR::updateDie1CPUVoltages()`
+- `virtual IOReturn ApplePMGRFunctionEnableAutoClockGate::callFunction(void *, void *, void *)`
+- `122222222222`
+- `type < NUM_CA_PMGR_EVENT`
+- `E_ACC_CPU1_IMPL`
+- `cpuComplex->idleEntryLatencyReporter`
+- `void ApplePMGR::_setPwrGateRetentionV2(DeviceID, bool, UInt32)`
+- `ApplePMGRFunctionCPUIdle`
+- `\"Attempting to register for scheduler callbacks via ApplePMGR\" @%s:%d`
+- `PCORE`
+- `panic-nub-pg-wa`
+- `on`
+- `GFX2-SRAM`
+- `disp-tvm`
+- `LIO_CLK_RST`
+- `clock gated`
+- `Enable`
+- `virtual void ApplePMGR::setPLLOffMode(RegMap, UInt32, UInt32, UInt32)`
+- `_clocks`
+- `data->getLength() / sizeof(UInt32) == 5`
+- `virtual void ApplePMGR::quiesceHW()`
+- `gpu3-trig`
+- `-restore`
+- `voltage-states0`
+- `Device States`
+- `ApplePMGR: Parameters:\n`
+- `\"ApplePMGR: %s:%u \" \"acquireDeviceLocks took %lld us, startTime %lld, energyLockTime %lld, perfLocktime %lld, device %x\\n\" @%s:%d`
+- `index < kDeviceIDMaxCount`
+- `_regGroups[kRegGroupECPUTrigCtl].valid`
+- `device-set-%d`
+- `AVE`
+- `_regGroups[kRegGroupAFRTrigCtl].valid`
+- `ANEFrequencies`
+- `\"ApplePMGR: %s:%u \" \"device %x is perf counter only, not suitable for %s\" @%s:%d`
+- `ApplePMGR: Interrupt received with intIndex = %u, cnt = %u\n`
+- `quiesce`
+- `ApplePMGR%sRoscData`
+- `void ApplePMGR::writePMGRSOCGpce0Reg(UInt32, UInt32, UInt32)`
+- `IOReturn ApplePMGR::_getClockReqMemoryPMC(unsigned int, void *)`
+- `die < getDieCount()`
+- `site.ApplePMGRNub`
+- `tGraphClient`
+- `virtual void ApplePMGR::enableFANE(bool)`
+- `handle != ApplePMGR::kInvalidIndex`
+- `site.ApplePMGRFunctionEnableCPUCore`
+- `void ApplePTD::_writePTD(void *, UInt32, UInt64, UInt32) const`
+- `apsc-sleep-dcs`
+- `E_ACC_CPM_IMPL`
+- `void ApplePMGR::_enableBridgeByteCounters(Bridge, bool, bool, UInt32)`
+- `CLOCK_GATE_LAT_OFF`
+- `dvtm-hack`
+- `ApplePMGR: AP wake sources: %#x\n`
+- `ApplePMGRv2.cpp`
+- `gfx1-tvm`
+- `deprecate-virtual-perf-devices`
+- `Voltage`
+- `site.ApplePMGRFunctionResetPSDService`
+- `periodic-calib`
+- `AGX_DFNDR_DVFM_CLKGEN`
+- `_interruptCount == _interruptConfigCount * _dieCount`
+- `function-perf-boost`
+- `ApplePMGR: Restoring device perf counters\n`
+- `ApplePMGRFunctionEnableTouchClock`
+- `ptd-range`
+- `atcusb-poll`
+- `cpmgr`
+- `1211112112`
+- `site.AbstractPMGR`
+- `PMGRCLKGEN_SOC_TOP_DVFMCOP`
+- `ApplePMGR: Perf State: %u:\n`
+- `P_ACC1_CPM_DVFM`
+- `_energyCounterMaps`
+- `CPU Core Idle Time`
+- `ApplePMGR: Restoring ACC %u event perf counters\n`
+- `(_getEdtPropertyVer() == kEdtPropertyV1) || (_getEdtPropertyVer() == kEdtPropertyV2)`
+- `(_psRegGroups[(group)].validRegsMask & (0x1 << (index))) || (_getEdtPropertyVer() == kEdtPropertyV2)`
+- `_nubCount < kNubMaxCount`
+- `PMC_DVFM_IF`
+- `bridgeCounter->configCount == bridgeCounterConfigCount`
+- `voltage-states1`
+- `ApplePMGR: Register Groups:\n`
+- `virtual void ApplePMGR::checkEnergy(EnergyNode *, UInt64)`
+- `histogram->binWidths`
+- `void ApplePMGR::_setPSAutoMinLevel(PSRegGroup, PSRegIndex, PSLevel, UInt32)`
+- `com.apple.private.ApplePMGRUserClient.access`
+- `avemsr-tvm`
+- `site.const OSSymbol *`
+- `md`
+- `virtual void ApplePMGR::panicHW()`
+- `virtual void ApplePMGR::enableACG(bool)`
+- `wake-time-events`
+- `_target`
+- `amx-thrtl`
+- `ApplePMGR: Perf Register Counters:\n`
+- `PMGR_SOC_PWR_STATE_TRANS`
+- `_energyCounterMaps[i].devices`
+- `(_psRegGroups[(psRegGroup)].validRegsMask & (0x1 << (psRegIndex))) || (_getEdtPropertyVer() == kEdtPropertyV2)`
+- `ApplePMGR: PMC Avoid PerfState domainID:mask=%d:0x%x\n\n`
+- `_pwrGateRegToPowerDomainIDMap`
+- `AppleARMPerformanceControllerDeviceEnables`
+- `ret`
+- `E_ACC_CPU5_IMPL`
+- `PCPM1`
+- `perfStateFrequenciesMHz`
+- `void ApplePMGR::_initPerfCountersV1(IOService *)`
+- `IOUserClientEntitlements`
+- `_dieStride`
+- `\"ApplePMGR: %s:%u ASSERT failed: %s\" @%s:%d`
+- `index <= 3`
+- `ApplePMGR: Effective Freq = %llu MHz\n`
+- `E`
+- `CLTM-s`
+- `virtual bool ApplePMGRUserClient::start(IOService *)`
+- `cluster-enable-timeout-ms`
+- `group < kRegGroupCount`
+- `ApplePMGR: [Die %u] %s: %s_PS: %#x: MANUAL_PS=%d, AUTO_PM_EN=%s\n`
+- `events`
+- `UInt32 ApplePMGRv2::_getParamValue(Param)`
+- `noise-hack`
+- `ane-acg-hack`
+- `virtual void ApplePMGR::enableCPUFixedFreqRelock(VoltageRail, bool)`
+- `ApplePMGR: [Die %u] %s: PWR_%s_CFG0: %#x: SLEEP_DEPTH=%d\n`
+- `\"checkCpuEnergy core %u current value %llu previousValue %llu deltaValue %llu\" @%s:%d`
+- `DCS_PERF_BOOST`
+- `void ApplePMGRv2::_cpuTopologyInit()`
+- `site.DeviceID`
+- `virtual void ApplePMGR::_handlePerfStateRequest(UInt32, PerfDomainID, UInt32)`
+- `_perfDomainIDToIndexMap[0][perfDomainID] != kIndexReserved`
+- `ApplePMGRFunctionSetATCDpClockSource`
+- `111111111111111111122222222122121111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111`
+- `domain->data->type == kPerfDomainTypeSOC`
+- `bpr`
+- `id >= kPMPDomainIDBegin`
+- `P_ACC0_CPU1_IMPL`
+- `cluster-lock-group`
+- `local < MAX_PTD_RANGE`
+- `sram-debug`
+- `GFX6-SRAM`
+- `GFX7`
+- `\"ApplePMGR: %s:%u \" \"addr 0x%lx map %d (%s) 0x%x & 0x%llx is 0x%llx vs. 0x%llx after %u ticks die %u\\n\" @%s:%d`
+- `energy-counter`
+- `121111222`
+- `void ApplePMGR::_configureBridge(Bridge, UInt32)`
+- `getRegMap(kRegMapPACCPwrCtl)->memMap`
+- `ApplePMGR: Nub found: %s\n`
+- `void ApplePMGR::_roscDataReadGated(uintptr_t, uintptr_t, uintptr_t)`
+- `GFX5-SRAM`
+- `12211112`
+- `ECPU-SRAM`
+- `GFX3`
+- `PMGR_SOC_SOUTH`
+- `perfDomain->perfStateChangeLatencyReporter`
+- `ApplePMGR:   [Die %u] %-16s| ID = %#04x | FLAGS = %#04x | PS = %s + %#010x | PERF: %s + %#010x | CHANNEL_ID: 0x%llx\n`
+- `UInt32 ApplePMGR::getDeviceIDFromReg(RegMap, UInt32)`
+- `virtual IOReturn ApplePMGRFunctionROSC::callFunction(void *, void *, void *)`
+- `E_ACC_CPU4_IMPL`
+- `CPM`
+- `soc-clusters`
+- `UInt32 ApplePMGR::readPMGRAONFuseReg(UInt32, UInt32)`
+- `ApplePMGR: Factor = %u\n`
+- `free-running-counter`
+- `site.ApplePMGRFunctionStub`
+- `path != NULL`
+- `_pmgrProvider->_regGroups[ApplePMGR::kRegGroupPMCMBOX].valid`
+- `sep-pwr-gating-hack`
+- `cpuComplex->dvd.stateReporter`
+- `site.PwrGateRegToPowerDomainIDMap`
+- `perfDomainID == kPerfDomainIDANE || perfDomainID == kPerfDomainIDANE1`
+- `gpu-pwc-win-size`
+- `AGX_GCPMS_PTS_PPC`
+- `UInt32 ApplePMGR::getDevicePSRegOffset(UInt32)`
+- `\"ApplePMGRNub: %s:%u REQUIRE failed: %s\" @%s:%d`
+- `Performance States`
+- `UInt32 ApplePMGR::readANEClkGenReg(UInt32, UInt32, UInt32)`
+- `validParam(kParamDVDPeriodUS)`
+- `ApplePMGR: %s perfDomain %d continue rosc Aging shift read try %d success %d\n\n`
+- `bridge-counters`
+- `void ApplePMGR::_restorePerfCountersV2()`
+- `_perfDomainID < ApplePMGR::kPerfDomainIDMaxCount`
+- `_roscReporter`
+- `\"ApplePMGR: %s:%u \" \"_perfStateToID state >= maxPerfStateCount, state %u, perfStateCount %u domain %s pendingState %u currState %u targetState %u\" @%s:%d`
+- `void ApplePMGR::_setPwrGateRetention(PwrGateRegGroup, PwrGateRegIndex, DeviceID, bool, PwrGateRetentionNumFFGroups, PwrGateRetentionNumMemGroups, UInt32)`
+- `ApplePMGR: [Die 1] %s: Skipping (voltageStatesID %u not in mapping table)\n`
+- `core < _cpuCoreCount`
+- `site.AppleBringUpPMGR`
+- `virtual bool ApplePMGRv2::start(IOService *)`
+- `sizeof(hwStatsName) > strlen(name)`
+- `ApplePMGR:  perfCounterID = 0x%x activeTime = 0x%llx\n`
+- `_commandGate`
+- `UInt32 ApplePMGR::readPMGRSOCVolmanReg(UInt32, UInt32)`
+- `\"ApplePMGR: %s:%u \" \"%s currentPerfState %d devices %s %s %s %s %s driver in %s state\" @%s:%d`
+- `ApplePMGR: CPU topology initialized from XNU: %u cores, %u complexes\n`
+- `site.ApplePMGRFunctionROSC`
+- `voltage-states13`
+- `ApplePMGR: Events:\n`
+- `\"configCPUComplexPowerState() called but not implemented!\" @%s:%d`
+- `ApplePMGRFunctionPerfCycleCount`
+- `voter-agent`
+- `soc-cluster-power-gating`
+- `cpu-energy-debug`
+- `AppleARMPerformanceControllerDVDFactor1-lpm`
+- `device-bridges`
+- `GFX-SRAM`
+- `bool ApplePMGR::validFeature(Feature)`
+- `virtual bool ApplePMGR::_getDeviceStatus(DeviceID, UInt32)`
+- `virtual ApplePMGRAnalytics *ApplePMGR::getAnalyticsManager(ApplePMGRAnalytics::ca_pmgr_type_t, ApplePMGRAnalytics::ca_ps_state_t, UInt32)`
+- `ApplePMGR: Registering nub: %s\n`
+- `virtual bool ApplePMC::pmcWriteLTR(UInt32)`
+- `ACCSlewRateAnalytics: Failed to create event dictionary\n`
+- `ApplePMGR: Power Domains:\n`
+- `IOReturn ApplePMGR::_pmpWriteDashBoardSetDeviceState(DeviceID, UInt32, UInt32)`
+- `clocks`
+- `ApplePMGR: Restoring clock perf counters\n`
+- `void ApplePMGRv2::_publishNubs(IORegistryEntry *)`
+- `NUB_FR_GLOBAL_AP_CONTROLS`
+- `param1`
+- `ApplePMGR: Warning: DIE1 %s infoDict is missing\n`
+- `LatencyEvents.cpp`
+- `(psRegIndex) < _getMaxDevicePsRegSize()`
+- `void ApplePMGR::writePMGRAONFuseReg(UInt32, UInt32, UInt32)`
+- `IOPlatformFunctionHandlerSet`
+- `AON Fuse`
+- `_regGroups[kRegGroupTouch].valid`
+- `_pmc != NULL`
+- `ClockID`
+- `P_ACC0_CPM_PWRCTL`
+- `PMS_PMC`
+- `energyCounter->cpuDeviceID != kIDReserved`
+- `UInt64 ApplePMGR::_getCPUComplexDownTime(CPUComplex *, UInt64)`
+- `_deviceEventHistograms[id]`
+- `PMP_EXT_SW_GEN`
+- `\"ApplePMGR: %s:%u \" \"device %s (%x) not set in group %x index %x\\n\" @%s:%d`
+- `PS Auto PM Stats`
+- `CPU Complex DVD States`
+- `void ApplePMGR::waitPMGRSOCPsReg(UInt32, UInt32, UInt32, UInt32, UInt32)`
+- `virtual UInt64 ApplePMGR::_getEventActiveTime(UInt32, UInt32)`
+- `ApplePMGRUserClient.cpp`
+- `cllt-freq-change-level`
+- `cllt-usb-config`
+- `\"ApplePMGR: %s:%u \" \"_syncDeviceStatusChange takes too long execTime %llu us threshold %llu us PsLevelChangeTime %llu us turningOn %x threadSlept %x\" @%s:%d`
+- `configIndex + bridgeCounter->configCount <= bridgeCounterConfigCount`
+- `virtual void ApplePMGR::setTouchClockSource(UInt32)`
+- `virtual IOReturn ApplePMGR::_getClockReqMemory(unsigned int, void *)`
+- `(PerfState)minPerfState < maxPerfStates`
+- `voltage-changes`
+- `_xnuClusterPowerUpLatencyReporter`
+- `perfDomain->roscDataSymbol`
+- `voltage-states10`
+- `site.UInt32`
+- `void ApplePMGR::waitGFXClkGenReg(UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)`
+- `ApplePMGR:         fANE1: %u\n`
+- `bridge->counterConfigs == bridgeCounterConfigs`
+- `void ApplePMGR::waitPMGRSOCGpce1Reg(UInt32, UInt32, UInt32, UInt32, UInt32)`
+- `perfDomain->perfStateReporter`
+- `device->minPerfState == 0`
+- `UInt32 ApplePMGR::readPMGRSOCClltReg(UInt32, UInt32)`
+- `ApplePMGR: ROSC: PerfDomain %d apply new guardband\n\n`
+- `void ApplePMGR::_handleCPUPerfRequest(CPUComplex *, UInt32, bool, UInt32, ApplePMGRNub::PerfLimitingReason)`
+- `void ApplePMGR::_initAnalyticsTimer()`
+- `running`
+- `apsc-sleep-soc`
+- `virtual UInt32 ApplePMGR::readReg32(RegMap, UInt32, UInt32)`
+- `site.ApplePMGRFunctionAssertReset`
+- `P`
+- `die < _dieCount`
+- `cpuCore->activeTimeReporter`
+- `ApplePMGR: [Die %u] PTD-PMP-STATUS = 0x%llx\n`
+- `virtual void ApplePMGR::_handleCPUPerfRequest(UInt32, UInt32, bool, UInt32, ApplePMGRNub::PerfLimitingReason)`
+- `site.EventData`
+- `MCPU`
+- `oprtp`
+- `CPU`
+- `void ApplePMGR::submitVoteCriticalLltModeGated(bool, UInt32, UInt32)`
+- `CLOCK_GATE_LAT_ON`
+- `P_ACC1_CPM_PWRCTL`
+- `rosc.%s.V`
+- `ApplePMGR:     IDS: %u\n`
+- `\"ApplePMGR: %s:%u \" \"Unexpected PS state MANUAL_PS=%x for %s\" @%s:%d`
+- `(clusterID = getPhysicalClusterID(clusterID)) != kClusterIDNone`
+- `sn`
+- `run-max`
+- `halt/restart`
+- `Performance State Change Latency`
+- `ApplePMGR:     ANEFrequencies:\n`
+- `%.*s_POWER_OFF`
+- `ApplePMGRFunctionWaitForDeviceEvent`
+- `site.PSAnalytics`
+- `ACCSlewRateAnalytics: CoreAnalytics Send Event Failure: 0x%x\n`
+- `soc-dpe`
+- `\"ApplePMGR: %s:%u \" \"%s PerfDomain %x >= %x (kPerfDomainIDMax)\\n\" @%s:%d`
+- `ap-voter-agent-idx`
+- `AbstractPMGR`
+- `acc-dpe-tel0-mode`
+- `PMS_MPMGRCLKGEN_SOC`
+- `inst`
+- `%s%u_%u`
+- `FAB`
+- `CLTM-f`
+- `UInt32 ApplePMGR::getComplexToDie(UInt32) const`
+- `AppleBringUpPMGR.cpp`
+- `clpc-voter-agent-idx`
+- `\"ApplePMGR: %s:%u \" \"Invalid map %d\\n\" @%s:%d`
+- `site.UInt32*`
+- `UInt32 ApplePMGR::getVirtToPhysComplex(UInt32)`
+- `21`
+- `_regGroups[kRegGroupSOCTVM].valid`
+- `args`
+- `IOReturn ApplePMGRNub::getPTDRangeInfo(UInt32, PTDRangeInfo &)`
+- `pmp-voter-agent-idx`
+- `MINI_ACG_CLK_CFG`
+- `voltage-states18`
+- `\"ApplePMGR: %s:%u \" \"Cannot have both the following properties _pmpV2() and _ptdExists()\" @%s:%d`
+- `UInt32 ApplePMGR::getReMapSize(RegMap)`
+- `GPU_TRIG_CTL`
+- `CPU Complex Thermal/UPO Limiting`
+- `void ApplePMGR::_enablePSNoWakeup(PSRegGroup, PSRegIndex, bool)`
+- `void ApplePMGR::_waitForPMPReadyActionGatedv2(UInt32)`
+- `void ApplePMGR::_enableIdleHandshakeGated(uintptr_t, uintptr_t)`
+- `MSR`
+- `voltage-states19`
+- `virtual void ApplePMGR::setL2CFlushTimeout(UInt32)`
+- `void ApplePMGR::_initFreeRunningCounters(IOService *)`
+- `virtual bool ApplePMGRFunctionEnableAutoClockGate::initWithTargetDataAndSymbol(IOService *, const OSData *, const OSSymbol *)`
+- `MCPM`
+- `ApplePMGRFunctionPLLOffMode`
+- `site.ApplePMGRFunctionReconfigTrigger`
+- `edt-property-ver`
+- `PERF_CLOCK_GATE`
+- `virtual bool ApplePMGRFunctionROSC::initWithTargetDataAndSymbol(IOService *, const OSData *, const OSSymbol *)`
+- `12111112122212121`
+- `PMGR_AON_MINI_PWR_STATE_TRANS`
+- `UInt64 ApplePMGR::_getCPUCoreDownExitCount(CPUCore *)`
+- `POWER_GATE_LAT_OFF`
+- `l2c-wpd`
+- `skip-ps-lock`
+- `virtual void ApplePMGR::enableDVMR(VoltageRail, bool)`
+- `\"Deadline: 0x%llx, AbsTime: 0x%llx PMP-DevHandle : 0x%x, Expected: {%llx}: Actual: {%llx} PmpTool {%llx %llx %llx %llx}\" @%s:%d`
+- `UInt64 ApplePMGR::_getCPUCorePerfLevelEntryCount(CPUComplex *, UInt32)`
+- `PERF_PERF_CHG_DOMx`
+- `P_ACC1_CPU5_IMPL`
+- `id <= kEnergyCounterIDMax`
+- `ApplePMGR:         fANE2: %u\n`
+- `virtual UInt64 ApplePMGR::_getEnergyCounter(UInt32, UInt32)`
+- `ApplePMGR:  deepestSleepStateWakeTime = 0x%llx\n`
+- `ApplePMGRFunctionISPRefClock`
+- `void ApplePTD::_setIrq(void *, UInt32, UInt32, UInt32)`
+- `data`
+- `UInt64 ApplePMGR::_perfStateToID(PerfDomain *, PerfState)`
+- `ApplePMGRFunctionEnablePSDService`
+- `_latencyObjCount >= count`
+- `dict`
+- `virtual void ApplePMGRv2::enableCPUCores(UInt64, bool)`
+- `_bridgeSettingsVersion == kBridgeSettingsVersionDriverManaged`
+- `UInt32 ApplePMGR::readPMGRAONPwrStateTransReg(UInt32, UInt32)`
+- `void ApplePMGR::_snapshotPerfCountersACC(bool, UInt32)`
+- `void ApplePMGR::_notifyPMC(uintptr_t, uintptr_t, uintptr_t)`
+- `cpu < _cpuCoreCount`
+- `SNE_ANEDPEPPT_SOC_PTS_PWC`
+- `_cpuEventReporter`
+- `_gpuStartRoscReading == NULL`
+- `XNU Cluster Power-Up Latency`
+- `Events`
+- `state < domain->voltageStateSRAMCount`
+- `ApplePMGR: _wakeTimeEventIDs[%d] = %x\n`
+- `IOReturn ApplePMGRNub::disablePTDEntryInterrupt(UInt32, UInt32)`
+- `pcpu-trig`
+- `pmgr-trace`
+- `voltage-states5`
+- `cpuComplex->dvd.thermalUPOLimitingReporter`
+- `site.ApplePMGRFunctionSetATCDpClockSource`
+- `CLUSTER_CTL`
+- `ApplePMGR: %s\n`
+- `voltage-states20-sram`
+- `ApplePMGR: chipRevMajor = %x\n`
+- `void ApplePMGR::setATCDpClockSourceGated(UInt32, UInt32, UInt32, UInt32)`
+- `clusterID != kClusterIDNone`
+- `chiplet-count`
+- `tp`
+- `cpu-fixed-freq-pll-relock`
+- `PMS_PMGRCLKGEN_SOUTH`
+- `PMGR_AON_AON_TVM_VOLMAN`
+- `_perfDomains`
+- `ApplePMGR:   %s + %#x | Valid Registers = %#010x\n`
+- `void ApplePMGR::_printDeviceGroups()`
+- `ApplePMGR: Device 0x%x Vote Perf Domain %x Perf State %x on Power-Off \n`
+- `UInt32 ApplePMGR::_getPerformanceLimit(CPUComplex *)`
+- `_deviceEventCounterReporter`
+- `_interruptCount < kInterruptMaxCount`
+- `ApplePMGR:   %-32s = %#x\n`
+- `IOReturn ApplePMGR::_pmpWriteDashBoardSetPerfState(DeviceID, UInt32, UInt32, UInt32, UInt32)`
+- `ApplePMGR: [Die %u] %s: Skipping list append for level=%s\n`
+- `ApplePMGR: %s: %u -> %u\n`
+- `ApplePMGR: Low Perf State Max Credits = %llu\n`
+- `%.*s_POWER_ON`
+- `axi2af-hack`
+- `GPU2_TRIG_CTL`
+- `ca-pmgr-group`
+- `interrupts`
+- `site.UInt64`
+- `energyMapIndex < kEnergyCounterMaxDeviceCount`
+- `CPU Stats`
+- `void ApplePMGR::writePMGRAONPwrStateTransReg(UInt32, UInt32, UInt32)`
+- `DISP`
+- `ApplePMGR: Dock FIFO agent: %u\n`
+- `AppleARMPerformanceControllerPerformanceDomainDPSM`
+- `ApplePMGR::PSLevel ApplePMGR::_getPSLevel(DeviceID, UInt32)`
+- `_bridges[bridge][die].deviceID`
+- `ApplePMGR::DeviceID ApplePMGR::_getDeviceParentsID(DeviceData *, UInt8)`
+- `void ApplePMGR::_handleCPUPerfStateRequest(CPUComplex *, UInt32, bool)`
+- `ApplePMGR: highFreqMHz = %llu MHz\n`
+- `PMGR_AON_MINI_MISC`
+- `_socPerfCounterReporter`
+- `cpuComplex->idleExitLatencyReporter`
+- `ApplePMGR:     DVFMStates:\n`
+- `void ApplePMGR::_snapshotPerfCountersV1(bool)`
+- `ApplePMGRFunctionCLPCEnabled`
+- `virtual IOReturn ApplePMGRFunctionAvoidPerfState::callFunction(void *, void *, void *)`
+- `PSAnalytics.cpp`
+- `vdd-cio-rail-pg`
+- `ApplePMGR::RegMapData *ApplePMGR::getRegMap(RegMap, UInt32)`
+- `ApplePMGR: Perf Domain: %s ID = %#x:\n`
+- `void ApplePMGR::_saveBridgeByteCounters(Bridge, UInt32)`
+- `ApplePMGR: lowFreqMHz = %llu MHz\n`
+- `UInt32 ApplePMGR::getCoreToDie(UInt32) const`
+- `UInt64 ApplePMGR::_getPerfCounterChannelId(PerfCounterData *, UInt32)`
+- `site.ApplePMGRFunctionEnablePSDService`
+- `PMGR_SOC`
+- `P_ACC1_CPM_DBG`
+- `die-stride`
+- `ApplePMGR: Bring up mode\n`
+- `bridgeCounterCount == _bridgeCount`
+- `_bridges[i]`
+- `IODeviceTree:/arm-io/pmgr`
+- `rail == kVoltageRailCPU || rail == kVoltageRailPCPU`
+- `parentID <= kEnergyCounterIDMax`
+- `P_ACC1_CPU4_IMPL`
+- `GFX3-SRAM`
+- `UInt32 ApplePMGR::getFeatureValue(Feature)`
+- `AppleARMPerformanceControllerPerformanceDomainDVC`
+- `void ApplePMGR::_syncDeviceStatusChange(DeviceStatusChangeData *, UInt32)`
+- `ApplePMGR: %s: %u -> %u (pend)\n`
+- `ApplePMGR::PSRegGroup ApplePMGR::_getDevicePsRegGroup(DeviceID)`
+- `\"ApplePMGR: %s:%u \" \"Lock took %lld  us\\n\" @%s:%d`
+- `site.IOInterruptEventSource *`
+- `PCPM`
+- `2222111`
+- `site.SOCPerfBoostData`
+- `site.PerfGroupData`
+- `ANE`
+- `SOC_REST`
+- `mask`
+- `ApplePMGR::PerfDomain *ApplePMGR::_deviceIDToPerfDomain(DeviceID, UInt32)`
+- `void ApplePMGR::_updatePerfDomainDeviceState(PerfDomainID, PerfState, DeviceID, UInt32)`
+- `AOP.unclaimed%u`
+- `pwrGateRegIndex < kPwrGateRegGroupSize`
+- `ActualPerfSt`
+- `DISPEXT`
+- `virtual void ApplePMC::writeReg32(UInt32, UInt32, UInt32)`
+- `PMGR_SOC_TVM`
+- `AGX_DFNDR_DVFM_MGPU`
+- `ECPU_TRIG_CTL`
+- `_devices`
+- `hw-dpe-reg`
+- `array2`
+- `CpusActive`
+- `site.ApplePMGRFunctionSetPerfState`
+- `%.*s`
+- `psRegGroup < _psRegGroupCount`
+- `_regGroups[kRegGroupANE1TrigCtl].valid`
+- `ApplePMGR: Clusters:\n`
+- `clusterID < kClusterIDMaxCount`
+- `!data`
+- `accCluster`
+- `UInt64 ApplePMGR::_getCPUComplexDownExitCount(CPUComplex *)`
+- `virtual UInt32 ApplePMGR::readPMGRSOCPwrGateReg(UInt32, UInt32)`
+- `_interruptEventSource[i]`
+- `data->getLength() * 8 >= _bridgeCount`
+- `GFX2`
+- `true`
+- `getRegMap(kRegMapACCImpl)->memMap`
+- `feature < kFeatureCount`
+- `ApplePMGR: Energy Counters:\n`
+- `bridge < _bridgeCount`
+- `virtual UInt8 ApplePMGR::getPhysicalClusterID(ClusterID)`
+- `UInt64 ApplePMGR::_getSOCPerfCounter(PerfRegGroup, PerfRegIndex, UInt32)`
+- `\"ApplePMGR: %s:%u \" \"Die %u, Deadline: 0x%llx, AbsTime: 0x%llx PMP Failed to Come Online within 30 seconds\" @%s:%d`
+- `ApplePMGR::EventData *ApplePMGR::_eventIDToEventData(EventID)`
+- `(SInt64) upTime > 0`
+- `site.ApplePMGRFunctionISPRefClock`
+- `virtual IOReturn ApplePMGRFunctionVoteCriticalLltMode::callFunction(void *, void *, void *)`
+- `cpu-apsc`
+- `_energyNodes[energyNodeIndex].address`
+- `%s_CPU%u`
+- `CPU Core Active Time`
+- `UInt32 ApplePMGR::readPMGRReg(UInt32, UInt32)`
+- `\"ApplePMGR die %u device 0x%x %s count reached %u (run-max) %u (clock-off)\\n\" @%s:%d`
+- `PerfState ApplePMGR::_getPerfDomainCurrentState(PerfDomainID, UInt32)`
+- `void ApplePMGR::_enableAONPerfCountersV2()`
+- `pmgr-reconfig-events`
+- `cpuComplex->dvd.perfLimitingReportingThresholdCount > 0`
+- `UInt32 ApplePMGR::getDevicePSRegMap(UInt32)`
+- `ApplePMGR: [Die %d] PwrGateRetentionV2 devID:0x%x reg:0x%x, %s data:0x%x\n`
+- `perf-groups`
+- `site.ApplePMGRFunctionVoteCriticalLltMode`
+- `ApplePTD.cpp`
+- `cluster-agent`
+- `site.ClusterData`
+- `_interruptConfig[i].id <= kInterruptIDMax`
+- `voltage-states30`
+- `fANE0`
+- `validParam(kParamDVDThresholdUS)`
+- `\"ApplePMGR: %s:%u \" \"roscData[%d].node(%d) -1 < %d\\n\" @%s:%d`
+- `ApplePMGRFunctionReconfigTrigger`
+- `BAT`
+- `E_ACC_CPU0_IMPL`
+- `ANE1_PERF_STATE`
+- `virtual IOReturn ApplePMGR::setProperties(OSObject *)`
+- `ApplePMGR: %s: %s_PS: %#x: POWER_GATED=%u\n`
+- `(group) < _perfRegGroupCount`
+- `chipletCount >= chipInstances`
+- `UInt32 ApplePMGRv2::_getCoreToDie(UInt32)`
+- `slew_rate`
+- `ane-trig`
+- `gpu1-trig`
+- `pmgr-debug-restore-counter`
+- `socCluster->data->flags & kSOCClusterFlagInterrupt`
+- `_pmpDeviceCount <= MAX_PMP_DEVICE_CNT`
+- `UInt32 ApplePMGR::getPhysCoreInComplex(UInt32)`
+- `void ApplePTD::_enableIrq(void *, UInt32, UInt32)`
+- `dvmr`
+- `optional-bridge-mask`
+- `ApplePMGR: Override device id %x name %s for RevMajor %u RevMinor %u\n`
+- `ApplePMGR:   [Die %u] %2u | optional\n`
+- `virtual void ApplePMGR::enableCluster(ClusterID, bool, bool, UInt32, bool)`
+- `SInt32 ApplePMGR::_getPMPDeviceIndex(DeviceID, UInt32)`
+- `void ApplePMGR::_snapshotPerfCountersV2(bool)`
+- `die < _target->getDieCount()`
+- `TOUCH`
+- `ANE_TVM`
+- `ApplePMGR: CPU cores=%u, CPM=%s\n`
+- `complex < _cpuComplexCount`
+- `dvfs-domain`
+- `ApplePMGR: [Die %u] _syncDevicePsStatusV1 turning on %s\n`
+- `site.ApplePMGRFunctionPDMClockBypass`
+- `OSDictionary *ApplePMGRNub::getPerfDomainInfo(enum PerfDomain, UInt32)`
+- `generic-ptd`
+- `PMGR_AON_FUSE`
+- `#bridges`
+- `_energyNodes[i].address`
+- `virtual void ApplePMGR::quiesceACC(UInt32)`
+- `virtual void ApplePMGR::configMiscCores(UInt64, bool)`
+- `ApplePMGR:   %-16s| ID = %#04x | TYPE = %u | PERF = %s + %#010x\n`
+- `UInt32 ApplePMGR::_getMaxDevicePsRegSize()`
+- `mode <= 2`
+- `ApplePMGR::PSLevel ApplePMGR::_getPSLevel(PSRegGroup, PSRegIndex, UInt32)`
+- `ApplePMGR::PowerDomainData *ApplePMGR::_deviceIDToPowerDomainData(DeviceID)`
+- `ApplePMGRFunctionSetPerfState`
+- `operator new`
+- `_deviceDCSStateReq`
+- `ACCSlewRateAnalytics::ACCSlewRateAnalytics(IOService *, ca_pmgr_type_t)`
+- `sleep`
+- `void ApplePMGR::writePMGRSOCClltReg(UInt32, UInt32, UInt32)`
+- `void ApplePMGR::writePMGRSOCPwrStateTransReg(UInt32, UInt32, UInt32)`
+- `ApplePMGR: Total DPE Node count = %llu\n`
+- `id - kPMPDomainIDBegin < kNumPMPDomains`
+- `site.ApplePMGRFunctionPerfCycleCount`
+- `rosc`
+- `AppleARMPerformanceControllerDVDPeriodUS1`
+- `PCPU1_TRIG_CTL`
+- `energy-counters`
+- `site.ACCSlewRateAnalytics`
+- `AppleARMPerformanceControllerDVDFactor1`
+- `GRAPHICS_AGX_PMGR`
+- `P_ACC1_CPU1_IMPL`
+- `ApplePMGR: Started %s\n`
+- `perfDomain->perfStateFrequenciesMHz`
+- `void ApplePMGR::_deviceIdCheck(DeviceID)`
+- `cpuComplex->dvd.perfLimitingReportingThresholdCount <= kPerfLimitingReportingThresholdCountMax`
+- `cluster_id < _cpuComplexCount`
+- `_regMaps[map][die].memMap`
+- `devices_%u_%u`
+- `ApplePMGR: [Die %u], Matched core %u with acc-cores index %u\n`
+- `(psRegGroup) < _psRegGroupCount`
+- `unused`
+- `void ApplePMGR::_saveBridgeEventCounters(Bridge, UInt32)`
+- `\"ApplePMGR: %s:%u \" \"%s pendingPerfState device %s driver in %s state. Debug: While Loop time elapsed = %llu, debugStart = %llu, deadline = %llu\" @%s:%d`
+- `IOReturn ApplePMGRFunctionPMPInterrupt::_callFunctionPMP(void *, void *, void *)`
+- `void ApplePMGR::_initUserClient()`
+- `ApplePMGRv2: Starting %s\n`
+- `\"ApplePMGR: %s:%u \" \"pmc-pmgr: 0x%x, ApplePMC: BWR INF Disabled\" @%s:%d`
+- `com.apple.socpm.slew_rate`
+- `root`
+- `\"%s\" @%s:%d`
+- `ApplePMGR:         fANE0: %u\n`
+- `_pmpPtdRange`
+- `void ApplePMGR::_updateDeviceStatus(DeviceID, PSLevel, PSLevel, DeviceStatusChangeData *, UInt32 *, UInt32)`
+- `IOReturn ApplePMGRNub::writePTDEntry(UInt32, UInt32, UInt64)`
+- `12222222222222222222222222`
+- `virtual void ApplePMGR::initDriver(IOService *)`
+- `_apWakeSources[i].index < kAPWakeSourceMaxCount`
+- `AFR`
+- `IDS`
+- `UInt64 ApplePMGR::_getCPUComplexPerfStateEntryCount(CPUComplex *, PerfState)`
+- `(roscData[i].node >= 1) && (roscData[i].node <= sizeof(roscValues)/sizeof(roscValues[0]))`
+- `CpuNumber`
+- `PMS_MPMGR_SOC`
+- `PMGR_SOC_VOLMAN`
+- `site.ApplePMGR`
+- `virtual UInt64 ApplePMGR::getCPUPerfCounter(CPUPerfCounterType, UInt32, bool, UInt32)`
+- `virtual bool ApplePMGRFunctionISPRefClock::initWithTargetDataAndSymbol(IOService *, const OSData *, const OSSymbol *)`
+- `PMGR_SOC_MINI_PS`
+- `PCPU1`
+- `ApplePMGR: HW DPE Node count = %d\n`
+- `map == kRegMapPMGR`
+- `void ApplePMGR::_syncDeviceStatus(bool)`
+- `virtual void ApplePMGR::dumpRegs32(RegMap, UInt32, UInt32, UInt32, IOPhysicalAddress, Regs32 *)`
+- `clock-off`
+- `rail == kVoltageRailCPU`
+- `virtual void ApplePMGR::writePMGRSOCPwrGateReg(UInt32, UInt32, UInt32)`
+- `ApplePMGR:   %s:\n`
+- `array1`
+- `dieID < _dieCount`
+- `data->getLength() / sizeof(UInt32) > 3`
+- `P_ACC1_CPU0_IMPL`
+- `PCPU-SRAM`
+- `Core %d Idle Time Histogram`
+- `virtual void ApplePMGR::enableSingingCapWidget(VoltageRail, bool)`
+- `UInt64 ApplePMGR::_getCPUCorePerfStateEnergyAccumulator(CPUCore *, PerfState)`
+- `UInt64 ApplePMGR::_getCPUCorePerfLevelTime(CPUComplex *, UInt32)`
+- `void ApplePMGR::getCorePhysID(UInt32, UInt32 *, UInt32 *)`
+- `droop-slowdown`
+- `P_ACC1_CPM_IMPL`
+- `site.DevicePSCheckB4SleepData`
+- `\"ApplePMGR: %s:%u \" \"BootOK unexpectedly set for %s\" @%s:%d`
+- `ApplePMGR: [Die %u] %s initialDeviceStatus = %s\n`
+- `CPU Complex Idle Time Histogram`
+- `deviceID != kIDReserved`
+- `boost-agent`
+- `device->bridges[j] < _bridgeCount`
+- `void ApplePMGR::writePMGRAONMiniPsReg(UInt32, UInt32, UInt32)`
+- `IOReturn ApplePMGR::_pmpWriteDashBoard(PMPCommand, uintptr_t *, UInt32)`
+- `UInt64 ApplePMGR::_getCPUComplexVoltageStateTime(CPUComplex *, VoltageState)`
+- `site.ApplePMGRFunctionWaitForDeviceEvent`
+- `soc-apsc`
+- `com.apple.private.pmgr.nrg.reporting`
+- `\"ApplePMGR: %s:%u \" \"%s %x request %s.%d > %d\\n\" @%s:%d`
+- `flag.index < kAPWakeSourceMaxCount`
+- `DVMRWeightTypes`
+- `ApplePMGR:   %-16s| ID = %#04x | Physical ID = %#04x | FLAGS = %#04x | intID = %#04x | voltageRail = %#04x \n`
+- `_perfRegGroups`
+- `virtual IOReturn ApplePMGRFunctionSetPerfState::callFunction(void *, void *, void *)`
+- `%s`
+- `offset != UINT32_MAX`
+- `IOReturn ApplePMGR::_getBWRReqMemoryPMP(unsigned int, void *)`
+- `site.ApplePMGRFunctionVideoClock`
+- `void ApplePTD::_disableIrq(void *, UInt32, UInt32)`
+- `virtual UInt32 ApplePMC::readPMCMailbox(UInt32, UInt32)`
+- `P_ACC0_CPU2_IMPL`
+- `deviceIDMapCount[die][hwDpeRegData[i].deviceID] <= kDeviceEnergyNodeMaxCount`
+- `UInt32 ApplePMGR::_getPSForceNoAccess(PSRegGroup, PSRegIndex, UInt32)`
+- `virtual ApplePMGR::PSLevel ApplePMGR::getClusterPowerState(ClusterID, UInt32)`
+- `\"ApplePMGR: %s:%u \" \"Missing EDT property: misc-cores-offset\" @%s:%d`
+- `soc-devices`
+- `UInt32 ApplePMC::_getFeatureValue(FeaturePMC)`
+- `site.BridgeData*`
+- `\"ApplePMGR: %s:%u \" \"%s not found\\n\" @%s:%d`
+- `(!_isDeviceVotingForAccCPD(device)) || (device->clusterID != kIDReserved)`
+- `voltage-states31`
+- `ApplePMGR:         %llu\n`
+- `AppleARMPerformanceControllerPerformanceStateCount`
+- `virtual void ApplePMGR::_handleCPUPerfStateRequest(UInt32, UInt32, bool)`
+- `core < _xnuTopology->num_cpus`
+- `false`
+- `CPU Complex Voltage State Time`
+- `\"ApplePMGR: %s:%u \" \" currentPerfState %u devices %s %s %s %s %s driver in %s state\" @%s:%d`
+- `OFF`
+- `_devicePerfStateList[i]`
+- `void ApplePMGR::_cpuIdle(CPUCore *, bool, UInt64 *)`
+- `ApplePMGRAnalytics *PMGR_CA_FACTORY::getAnalyticsManager(IOService *, ApplePMGRAnalytics::ca_pmgr_type_t, ApplePMGRAnalytics::ca_ps_state_t, UInt32)`
+- `ApplePMGRBase`
+- `E_ACC_CPM_DBG`
+- `\"ApplePMGR: %s:%u \" \"Bridge %d has no mapping\\n\" @%s:%d`
+- `regGroup->valid`
+- `void ApplePMGR::writePMGRSOCEastReg(UInt32, UInt32, UInt32)`
+- `virtual void ApplePMGR::writePMGRSOCClusterCtlReg(UInt32, UInt32, UInt32)`
+- `ApplePMGR:   [Die %u] %-11s | %#llx -> %#llx\n`
+- `ApplePMGR:     %s\n`
+- `void ApplePMGR::_setBit(UInt32, DeviceIDGroupMask *, bool)`
+- `pwrgate-regs`
+- `\"ApplePMGR: %s:%u \" \"ACC Cluster PD PMP Notification exceeds %u msec. CurTime: 0x%llx, Deadline: 0x%llx\" @%s:%d`
+- `UInt32 ApplePMGR::readPMGRSOCClusterCtlReg(UInt32, UInt32)`
+- `ApplePMGR: Performance Domains:\n`
+- `index != kInvalidIndex`
+- `PERF_CPU_IDLE`
+- `tunableh_print_configuration`
+- `ApplePMGRNub`
+- `pmgr-regdump-panic`
+- `PMGR_SOC_PS`
+- `SNE1_ANECLKGEN_TOP`
+- `ApplePMGR: [Die %u] %s: _CFG0: %#x: RETENTION enable=%d FFGroups=%d MemGroups=%d\n`
+- `UInt64 ApplePMGR::_getCPUComplexIdleTime(CPUComplex *, UInt64)`
+- `_workLoop->addEventSource(_interruptEventSource[rcnt]) == kIOReturnSuccess`
+- `range->num_entries <= sizeof(UInt64) * CHAR_BIT`
+- `_pmpVoterIdx < _voterAgentsCount`
+- `ANE_DPE_PPT`
+- `0`
+- `virtual void ApplePMGR::waitReg32(RegMap, UInt32, UInt32, UInt32, UInt32, UInt32)`
+- `ApplePMGR: ROSC: PerfDomain %d succes %d\n\n`
+- `power-domains`
+- `_clpcVoterIdx < _voterAgentsCount`
+- `ApplePMGR.cpp`
+- `IOReportLegend`
+- `\"ApplePMGR: %s:%u \" \"CPU Lock execution took %lld us startTime %llu endTime %llu \\n\" @%s:%d`
+- `GFX4-SRAM`
+- `%s v%u`
+- `UInt32 ApplePMGR::readGFXClkGenReg(UInt32, UInt32, UInt32)`
+- `ApplePMGR::PSLevel ApplePMGR::_getPSActualLevel(PSRegGroup, PSRegIndex, UInt32)`
+- `UInt64 ApplePMGR::_getCPUComplexVoltageStateEntryCount(CPUComplex *, VoltageState)`
+- `afr-tvm`
+- `AGX_GCPMS_PTS_PWC0`
+- `AXI2AF Stats`
+- `_energyNodes[energyNodeIndex].lock`
+- `deviceIDMapCount[memory->deviceID[i]] <= kDeviceEnergyNodeMaxCount`
+- `cpuComplex->powerState == kPSLevelPowerOff`
+- `type < kComplexTypeCount`
+- `AWAKE`
+- `ANE_TRIG_CTL`
+- `_regGroups[kRegGroupDPE0Cfg].valid`
+- `ApplePMGR: State[%u]: voltageState=%u, voltage=%u mV, perfLimit=0x%x\n`
+- `virtual bool ApplePMGRFunctionEnableTouchClock::initWithTargetDataAndSymbol(IOService *, const OSData *, const OSSymbol *)`
+- `ApplePMGRFunctionStartS2RTimer`
+- `NUB_DOCK_CHANNELS`
+- `_bridges`
+- `soc-device-die-offset`
+- `voltage-states11`
+- `_energyNodes[i].lock`
+- `\"addr 0x%lx map %d (%s) offset 0x%x (%s) val 0x%x & mask 0x%x != 0x%x (expected) after %u ticks die %u\\n\" @%s:%d`
+- `_perfGroupCount <= kMaxPerfGroupsCount`
+- `AppleBringUpPMGR`
+- `ApplePMGR:         Frequency: %u\n`
+- `ApplePMGR: %s perfDomain %d success rosc Aging shift read and apply\n\n`
+- `pmgr-analytics`
+- `UInt64 ApplePTD::_irqStatus(void *, UInt32)`
+- `dcsDVFSHandle`
+- `dieNBridgeDeviceMem`
+- `perfDomain->roscCommandSymbol`
+- `void ApplePMGR::writeGFXClkGenReg(UInt32, UInt32, UInt32, UInt32)`
+- `UInt64 ApplePMGR::_getDeviceEnergy(DeviceID, UInt32)`
+- `#device-sets`
+- `bool ApplePMGRNub::initWithRegistryEntry(IORegistryEntry *, IOService *)`
+- `virtual void ApplePMC::stateChange(bool, UInt32, UInt32, bool)`
+- `static void *ACCSlewRateAnalytics::operator new(size_t)`
+- `_deviceStateExternalReporter`
+- `StateID`
+- `localCPU != -1`
+- `None`
+- `virtual void ApplePMGR::enableTouchClock(bool, UInt32, UInt32)`
+- `\"ApplePMGR: %s:%u \" \"_powerDomainIDToIndexMap[%x] == %x != kIndexReserved\" @%s:%d`
+- `virtual UInt32 ApplePMGR::_getPerformanceLimit(UInt32)`
+- `_powerDomains`
+- `E_ACC_CPU3_IMPL`
+- `!getFeatureValue(kFeatureAPWakeSourcesDisable)`
+- `fANE1`
+- `_regGroups[kRegGroupGPU3TrigCtl].valid`
+- `void ApplePMGR::writePMGRSOCSouthReg(UInt32, UInt32, UInt32)`
+- `ApplePMGR: Enabling ACC %u perf counters, enable= %u\n`
+- `virtual UInt32 ApplePMGR::_getCIOClusterIndex(UInt32)`
+- `perf-regs`
+- `result`
+- `voltage-states9-sram`
+- `virtual void ApplePMGR::waitPMGRSOCClusterCtlReg(UInt32, UInt32, UInt32, UInt32, UInt32)`
+- `ApplePMGR:     DVMRWeights:\n`
+- `AppleARMPerformanceControllerDeviceClockNames`
+- `NewPerfSt`
+- `ApplePMGR.h`
+- `UInt32 ApplePMGRv2::_getComplexToDie(UInt32)`
+- `ecpu-trig`
+- `acc-harvesting`
+- `ISP_REF0_CLK_CFG`
+- `ApplePMGR: Enabled die %u interrupt %s id=%#x index=%u\n`
+- `!(perfDomain->data->flags & kPerfDomainFlagPMPManaged)`
+- `voltage-states2`
+- `TRUE`
+- `data->getLength() / sizeof(UInt32) > 2`
+- `PMGR_SOC_EAST`
+- `found`
+- `SOC_GFX`
+- `_perfBoostLevel`
+- `void ApplePMGR::waitANEClkGenReg(UInt32, UInt32, UInt32, UInt32, UInt32, UInt32)`
+- `_devDVFSStateList`
+- `param2`
+- `ptr`
+- `reset-noaccess-poll`
+- `121212`
+- `site.DeviceEventHistogram`
+- `ppm`
+- `void ApplePMGR::writePMGRSOCTvmReg(UInt32, UInt32, UInt32)`
+- `UInt64 ApplePMGR::_getCPUCoreIdleExitCount(CPUCore *)`
+- `void ApplePMGRNub::requestPerfState(UInt32, enum PerfDomain, UInt32)`
+- `getRegMap(kRegMapACCPwrCtl)->memMap`
+- `UInt64 ApplePMGR::_getDpeNodeEnergy(UInt32)`
+- `ApplePMGR: ROSC: PerfDomain %d return to default guardband\n\n`
+- `_perfDomainIDToIndexMap[die][perfDomainID] != kIndexReserved`
+- `_accEventPerfCounterCount < kAccEventPerfCounterMaxCount`
+- `_deviceSetCount <= kSetReserved`
+- `VDEC`
+- `dcs-tvm`
+- `AGX_DVFM_CLKGEN`
+- `GPU1_TRIG_CTL`
+- `virtual void ApplePMGR::writeReg32(RegMap, UInt32, UInt32, UInt32)`
+- `AppleARMPerformanceControllerVoltageStateCount`
+- `ApplePMGR: %s: %s_PS: %#x: CLOCK_GATED=%u\n`
+- `ApplePMGR: FW DPE Node count = %u\n`
+- `index < _energyNodeCount`
+- `l2c-retention`
+- `IOReportLegendPublic`
+- `ApplePMGR: Dock FIFO channel: %u\n`
+- `virtual void ApplePMGR::restoreACC(UInt32, bool)`
+- `void ApplePMGR::_enableSOCPerfCounter(PerfRegGroup, PerfRegIndex, UInt8, bool, UInt32)`
+- `auto ApplePMGR::getTunedDVMRWeightTypeFromTables(UInt32, UInt8, const DVMRWeightTable *, UInt8)::(anonymous class)::operator()(UInt64, UInt8, UInt8, UInt8) const`
+- `P_ACC1_CPU3_IMPL`
+- `GFX1-SRAM`
+- `void ApplePMGR::_setPerfState(UInt32, PerfDomainID, UInt32)`
+- `void ApplePMGR::_syncDevicePsStatusV1(bool)`
+- `ApplePMGRFunctionROSC`
+- `virtual bool ApplePMC::getBoostMemory(UInt16, UInt64 *)`
+- `_cpuCoreCount`
+- `Core %d Active Time Histogram`
+- `IOMemoryMap *ApplePMGR::getBridgeMemMap(Bridge, UInt32)`
+- `virtual UInt64 ApplePMGR::getPerfCycleCount(UInt32, UInt32, UInt32)`
+- `ApplePMGR: Devices:\n`
+- `timeout-panic-pmp`
+- `site.VoltageState`
+- `match`
+- `pmptoolData`
+- `list[index].die < _dieCount`
+- `numFFGroups <= kPwrGateRetentionFFGroupSizeMax`
+- `site.ApplePMGRFunctionUSBClock`
+- `maxTime`
+- `ps-regs`
+- `ApplePMGRUserClient`
+- `ApplePMGR%sFixedFreq`
+- `_regGroups[kRegGroupPCPUTrigCtl].valid`
+- `domain->data->flags & kPerfDomainFlagNubManaged`
+- `requestedBucket <= cpuComplex->dvd.perfLimitingReportingThresholdCount`
+- `getPMGRChildInstances`
+- `ncalls`
+- `RT_FABRIC`
+- `scratchRegIndex < kScratchRegIndexSpare + kScratchRegSpareCount`
+- `SOC_TVM`
+- `name`
+- `domain->voltageStatesSRAM`
+- `\"ApplePMGR: %s:%u \" \"_pwrGateRegToPowerDomainIDMap[0x%x][0x%x] = 0x%x != kIDReserved\" @%s:%d`
+- `ApplePMGR::DeviceData *ApplePMGR::_deviceIDToDeviceData(DeviceID)`
+- `handle != ApplePMGR::kInvalidHandle`
+- `c1ppt-trig`
+- `Idle Exit Latency`
+- `ApplePMGRv2`
+- `DRAM`
+- `IOPlatformFunctionHandlerMaxBusDelay`
+- `_legend`
+- `rosc.%s.T`
+- `%s v%u idle`
+- `UInt32 ApplePMGR::readPMGRAONMiniMiscReg(UInt32, UInt32)`
+- `UInt64 ApplePMGR::_getCPUCorePerfStateEnergy(CPUCore *, PerfState)`
+- `group != kPSRegGroupSize`
+- `\"ApplePMGR: %s:%u \" \"pmc-pmgr: 0x%x, ApplePMC: DVMR INF Disabled\" @%s:%d`
+- `DVMRWeights`
+- `ApplePMGR: \n`
+- `UInt32 ApplePMGR::getCPUComplexCoreCount(PerfDomainID, UInt32)`
+- `ACCSlewRateAnalytics.cpp`
+- `intIndex < _interruptCount`
+- `ApplePMGR%sRoscCommand`
+- `\"ApplePMGR: %s:%u \" \" pendingPerfState device %s driver in %s state\" @%s:%d`
+- `UInt64 ApplePMGR::_getCPUComplexPerfStateTime(CPUComplex *, PerfState)`
+- `*_perfDomainIndex < ApplePMGR::kPerfStateReqMaxDomains`
+- `site.SlewRateEvents`
+- `Droop`
+- `Core Performance Level`
+- `powerDomainID <= kPowerDomainIDMax`
+- `PMGR_SOC_PWRGATE`
+- `Event Counts`
+- `ApplePMGR: \t[Die %u] %s: %s_PS: No change to PS\n`
+- `ApplePMGR: Enabling perf counters, enable= %u\n`
+- `memDescr`
+- `PMC_IOP_MBOX`
+- `_workLoop`
+- `site.PerfRegGroupData`
+- `ApplePMGR: Warning: DIE1 %s Invalid DVFMStates array (dvfmStates=%p, count=%u)\n`
+- `misc-acg-offset`
+- `pwrgateretention-workaround`
+- `cluster->data->intID <= kInterruptIDMax`
+- `_devicePSCheckB4SleepData`
+- `%s Latency`
+- `clpc-cpu-mhz`
+- `ApplePMGR: Bridges:\n`
+- `ApplePMGR: \t0x%x\n`
+- `ApplePMGR: High Perf State Limit = %u\n`
+- `pmgr-dock-fifo-channel`
+- `site.PSRegGroupData`
+- `_interruptEventSource`
+- `void ApplePMGR::writeReg64(RegMap, UInt32, UInt64, UInt32)`
+- `void ApplePMGR::waitPMGRSOCGpce0Reg(UInt32, UInt32, UInt32, UInt32, UInt32)`
+- `ApplePMGR: Restoring ACC %u device perf counters\n`
+- `(perfDomainID == kIDReserved) || (perfDomainID <= kPerfDomainIDMax)`
+- `\"ApplePMGR: %s:%u \" \"%s power > max threshold. Power = %llu mW, max threshold = %llu mW, current energy = %llu, currTicks = %llu\" @%s:%d`
+- `perfDomain->devicePerfStateRequirements`
+- `light-em-up`
+- `_energyCounterReporter`
+- `bridge-settings-version`
+- `!(device->flags & kDeviceFlagVirtual)`
+- `ApplePMGR: Preparing SEP for sleep\n`
+- `eventID != kIDReserved`
+- `ApplePMGR::PSRegIndex ApplePMGR::_getDevicePsRegIndex(DeviceID)`
+- `ap-wake-source-flags`
+- `roscDataInit(perfDomain->data->id, perfDomain->roscData, &perfDomain->roscDataCount)`
+- `map < kRegMapCount`
+- `self`
+- `void ApplePMGR::_sendACCStateChangeNotificationGated(uintptr_t, uintptr_t)`
+- `void ApplePMGR::_resetDeviceGated(uintptr_t, uintptr_t)`
+- `_perfCounters`
+- `121111`
+- `PMS_PMS_ASCWRAP_TOP_CHINOOK_ASC_CHINOOK`
+- `function-mcc_ctrl`
+- `die > 0 || perfDomain->cpuComplex->deviceID == kIDReserved`
+- `(energyCounterID == kIDReserved) || (energyCounterID <= kEnergyCounterIDMax)`
+- `retention_config_mem`
+- `_regGroups[kRegGroupGPU1TrigCtl].valid`
+- `UInt32 ApplePMGR::readPMGRSOCMiscReg(UInt32, UInt32)`
+- `virtual UInt64 ApplePMGR::_getEventCount(UInt32, UInt32)`
+- `_interruptConfigCount < kInterruptMaxCount`
+- `ApplePMGR: [Die %u] Bridge %u, virtual address = 0x%p, physical address = 0x%p\n`
+- `CPU Complex Active Time Histogram`
+- `void ApplePMGR::_snapshotClockPerfCounter(ClockData *, UInt32)`
+- `cpuComplex->coreActiveCount > 0`
+- `pwrGateRegGroup < _pwrGateRegGroupCount`
+- `site.ApplePMGRv2`
+- `virtual bool ApplePMGRFunctionPLLOffMode::initWithTargetDataAndSymbol(IOService *, const OSData *, const OSSymbol *)`
+- `cllt-cpm1-pg-level`
+- `_workLoop->addEventSource(_commandGate) == kIOReturnSuccess`
+- `cpuComplex->idleTimeReporter`
+- `nstates <= perfStateCount`
+- `virtual bool ApplePMGRFunctionWaitForDeviceEvent::initWithTargetDataAndSymbol(IOService *, const OSData *, const OSSymbol *)`
+- `ApplePMGRFunctionVoteCriticalLltMode`
+- `1211111212221212111212121211212121111122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222212`
+- `IOReturn ApplePMGRNub::dashboardOpsExternal(uint32_t, uintptr_t *)`
+- `ane-dpe`
+- `XNU Cluster Power-Down Latency`
+- `lost-perf-thresholds`
+- `ApplePMGR:         MaxDVMRWeight: %u\n`
+- `void ApplePMGR::_enablePerfCountersACC(bool, UInt32)`
+- `virtual void ApplePMGR::_pmPerformanceBoost(UInt32)`
+- `_perfGroups`
+- `virtual bool ApplePMGRFunctionGetValidPerfState::initWithTargetDataAndSymbol(IOService *, const OSData *, const OSSymbol *)`
+- `site.PerfDomain`
+- `site.DeviceIDMask`
+- `_energyNodes[i].memoryMap`
+- `cllt-calibrate-level`
+- `_fuseDataReporter`
+- `ApplePMGR: [Die %u] %s initial refCount = %u\n`
+- `bool ApplePMGR::validParam(Param)`
+- `ApplePMGR: Perf Domain Info:\n`
+- `BRINGUP_UNKNOWN`
+- `\"ApplePMGR: %s:%u \" \"Deadline: 0x%llx, AbsTime: 0x%llx XNU ACC cluster rail-gating callback failed to respond in %d seconds\" @%s:%d`
+- `deviceID <= kDeviceIDMax`
+- `_deviceAutoPMReporter`
+- `_regGroups[kRegGroupFABTrigCtl].valid`
+- `\"ApplePMGR: %s:%u \" \"_regIndex = 0x%x, _regGroup = 0x%x, _perfRegGroups[(_regGroup)].regCount = 0x%x\" @%s:%d`
+- `void ApplePMGR::_snapshotRosc(IOReportChannelList *)`
+- `dvd->limitingReasonDVDFactor1 != ApplePMGRNub::kPerfLimitingReasonNone`
+- `(!sum) || (roscData->type == kRoscTypeDataRaw)`
+- `void ApplePMGR::_restorePerfCountersV1()`
+- `_gPMGR[id]`
+- `wake-perf-boost`
+- `acc-cores`
+- `parentID != kIndexReserved`
+- `_pmgrProvider->_regGroups[ApplePMGR::kRegGroupPMCDVFM].valid`
+- `id <= kDeviceIDMax`
+- `cpuComplex->voltageTimeReporter`
+- `ApplePMGR: Perf Register Groups:\n`
+- `%s: addr=0x%llx mask=0x%llx value=0x%llx...\n`
+- `BUCK`
+- `virtual void ApplePMC::waitReg32(UInt32, UInt32, UInt32, UInt32, UInt32)`
+- `ave-tvm`
+- `disp2-tvm`
+- `dvd-threshold-us`
+- `pmgr-disable-pscheck-panic`
+- `UInt32 ApplePMGR::getRegGroupOffset(enum RegGroup)`
+- `ApplePMGR: Group %u:\n`
+- `\"ApplePMGR: %s:%u \" \"Die %u, Deadline: 0x%llx, AbsTime: 0x%llx PMP Failed to Come Online within %llu ticks\" @%s:%d`
+- `ApplePMGR: Interrupt identified as die %u %s cluster power up\n`
+- `voltage-states17-sram`
+- `voltage-states4`
+- `_regGroups[kRegGroupPCPU1TrigCtl].valid`
+- `site.ClockData`
+- `voltageState < perfDomain->voltageStateCount`
+- `ApplePMGRFunctionPMPInterrupt`
+- `UInt32 ApplePMGR::readPMGRSOCGpce0Reg(UInt32, UInt32)`
+- `perf-counters`
+- `site.ApplePMGRFunctionSetTouchClockSource`
+- `site.ApplePMGRFunctionPLLOffMode`
+- `virtual bool LatencyEvents::getLatStats(UInt64 *, UInt64 *, UInt64 *, UInt32 *)`
+- `virtual UInt32 ApplePMC::readReg32(UInt32, UInt32)`
+- `ANE_DPE_SYS`
+- `PCPU_TRIG_CTL`
+- `site.SOCCluster`
+- `MaxDVMRWeight`
+- `UInt64 ApplePMGR::readReg64(RegMap, UInt32, UInt32)`
+- `S2R_AOP`
+- `MINI_MISC_CFG`
+- `voltage-states14-sram`
+- `voltage-states18-sram`
+- `pmgr`
+- `_bwrMsg->num_entries % _dieCount == 0`
+- `MtrPolynomGFX`
+- `ApplePMGR: Skipping %s (type=%u, not CPU)\n`
+- `IOUserClientDefaultLocking`
+- `IODeviceTree:/arm-io/pmp/iop-pmp-nub`
+- `IODeviceTree:/arm-io/pmp0/iop-pmp0-nub`
+- `rosc.%s.r%d`
+- `soc-device`
+- `DCS_CLK_GATE`
+- `SMX_PWR_GATE`
+- `LDO`
+- `SOC_AON`
+- `ApplePMGR:         Voltage: %u\n`
+- `DIE_%u_%s`
+- `cfg->num_entries`
+- `!_isCPUDevice((DeviceID)deviceID)`
+- `(roscData->counter == 0) || (roscData->type != kRoscTypeDataRaw)`
+- `virtual bool ApplePMGR::roscDataRead(PerfDomainID, RoscTypeID, RoscReadPhase, UInt32)`
+- `_analyticsTimer`
+- `site.ApplePMGRFunctionGetValidPerfState`
+- `SNE_ANECLKGEN_TOP`
+- `ApplePMGR: Energy Nodes\n`
+- `\"ApplePMGR: %s:%u \" \"%s pendingPerfState device %s driver in %s state\" @%s:%d`
+- `ApplePMGR::PerfState ApplePMGR::_updateCPUComplexPerfState(CPUComplex *, PerfState, bool, PerfState)`
+- `voterID < sizeof(_criticalLltModeVotes[0]) * CHAR_BIT`
+- `xnuTopology`
+- `void ApplePMC::_enableStaticVoterInterface(UInt32, bool, UInt32)`
+- `l2c-acc-sleep`
+- `cpu-fast-pll-relock`
+- `ECPM`
+- `UInt32 ApplePMGR::getPerfStateCount(PerfDomainID, UInt32)`
+- `UInt32 ApplePMGR::readPMGRSOCPwrStateTransReg(UInt32, UInt32)`
+- `UInt64 ApplePMGR::_getCPUCorePowerGateCount(CPUCore *)`
+- `UInt64 ApplePMGR::_getCPUCorePerfStateEntryCount(CPUCore *, PerfState)`
+- `\"ApplePMGR: %s:%u \" \"Missing EDT property: misc-acg-offset\" @%s:%d`
+- `_deviceByteCounterReporter`
+- `getRegMap(kRegMapPCPMImpl)->memMap`
+- `UInt32 ApplePMGR::readPMGRSOCSouthReg(UInt32, UInt32)`
+- `virtual`
+- `ApplePMGRv2: Started %s\n`
+- `virtual void ApplePMGRv2::_enablePSDService(uintptr_t, uintptr_t, uintptr_t, uintptr_t, char *)`
+- `static void *PSAnalytics::operator new(size_t)`
+- `DEV0x%x`
+- `volman-sw-err-check`
+- `_psRegGroups`
+- `site.PwrgateRetentionData`
+- `ApplePMGR: Restoring SOC DPE Counters\n`
+- `pcpu1-trig`
+- `idle-hack`
+- `ap-wake-sources-disable`
+- `void ApplePMGR::initRegMap(RegMap, UInt32, UInt32, bool)`
+- `cluster->data->intID != kIDReserved`
+- `(length & (2 * sizeof(UInt32) - 1)) == 0`
+- `off`
+- `Cluster Power States`
+- `apsc-snooze`
+- `E_ACC_CPM_PWRCTL`
+- `%s%u`
+- `ApplePMGR: Features:\n`
+- `*length < kDeviceParentClusterMaxCount`
+- `virtual void ApplePMGR::_enableDeviceAutoClockGatingGated(uintptr_t, uintptr_t, uintptr_t)`
+- `ApplePMGR:   %-16s| ID = %#04x | TYPE = %#02x | SUB-TYPE = %#02x | OFFSET = %#010x | OFFSET1 = %#010x \n`
+- `(width * index) < (sizeof(val) * CHAR_BIT)`
+- `CPU_FABRIC`
+- `_notifyXNUForClusterPowerGatingThreadCall`
+- `getRegMap(kRegMapPACC1PwrCtl)->memMap`
+- `_regGroups[kRegGroupANETrigCtl].valid`
+- `cluster-ctl-offset`
+- `1211112`
+- `void ApplePTD::_initPTDDriver(ApplePMGR *, const char *, const char *)`
+- `feature < kFeaturePMCCount`
+- `histogram->binValues`
+- `UInt32 ApplePMGR::readPMGRAONMiniPsReg(UInt32, UInt32)`
+- `virtual void AppleBringUpPMGR::initRegGroups()`
+- `PMP_STATUS`
+- `_energyNodes[i].deviceMemory`
+- `_devicePerfStateList`
+- `ApplePMGR: %s: autoClockGating=%s\n`
+- `(powerDomainID == kIDReserved) || (powerDomainID <= kPowerDomainIDMax)`
+- `minTime`
+- `\"ApplePMGR: %s:%u \" \"pmc-pmgr: 0x%x, ApplePMC: VOTER INF Disabled\" @%s:%d`
+- `SNE_ANEDPEPPT_SOC_PTS_PPC`
+- `pmgr-profile`
+- `voltage-states15-sram`
+- `void ApplePMGR::_ringPMPDoorbell(PMPDoorBell, UInt32, UInt32 *)`
+- `void ApplePMGR::_initPMPv2()`
+- `ApplePMGR: [Die %u] %s: reset\n`
+- `ApplePMGR::PowerDomainData *ApplePMGR::_powerDomainIDToPowerDomainData(PowerDomainID)`
+- `void ApplePMGR::_cpuIdleTimer(CPUCore *, UInt64 *)`
+- `PMGR_SOC_CLLT`
+- `parentID < id || getRegMap(kRegMapPMGRSOCEast)->memMap || (_deviceIDToDeviceData(parentID)->flags & kDeviceFlagVirtual)`
+- `group < _psRegGroupCount`
+- `(group) < _pwrGateRegGroupCount`
+- `void ApplePMGR::_initPMC()`
+- `ApplePMGR: Restoring power domain perf counters\n`
+- `virtual bool ApplePMGRFunctionUSBClock::initWithTargetDataAndSymbol(IOService *, const OSData *, const OSSymbol *)`
+- `_pmgr`
+- `P_ACC0_CPU3_IMPL`
+- `perf-domains`
+- `perfDomain->perfStateChangeThreadCall`
+- `UInt32 ApplePMGR::_getPTDIndex(const char *)`
+- `void ApplePMGR::_enablePerfCountersV2(bool)`
+- `UnusedArg`
+- `virtual bool ApplePMC::getBWRMemory(UInt32, UInt64 *)`
+- `_deviceSOCStateReq`
+- `dvd-factor`
+- `HIP`
+- `_accCoreDataCount <= kCPUCoreMaxCount`
+- `acc-clusters`
+- `psRegIndex < _getMaxDevicePsRegSize()`
+- `(index) < _getMaxDevicePsRegSize()`
+- `virtual IOReturn ApplePMGR::_getPTDRangeInfo(UInt32, ApplePMGRNub::PTDRangeInfo *, UInt32 *)`
+- `powerDomainID != kIDReserved`
+- `ANEDPEPPT_SOC_DPE_LEE`
+- `Idle Entry Latency`
+- `site.ApplePMGRNub::DeviceDVFSState`
+- `AFC_PWR_GATE`
+- `%.*s_CLK_OFF`
+- `GPU CS SRAM`
+- `socgm-tvm`
+- `%.*s WR`
+- `Bandwidth`
+- `UInt32 ApplePMGR::readPMGRSOCGpce1Reg(UInt32, UInt32)`
+- `ApplePMGR:     [Die %u] V%uP%u | Voltage = %4u mV | Frequency = %4u MHz\n`
+- `ApplePMGR:   %-16s| ID = %#04x | TYPE = %u | INDEX = %u\n`
+- `_perfRegGroupCount <= kMaxPerfGroupsCount`
+- `ApplePMGRFunctionClockGate`
+- `P_ACC0_CPU0_IMPL`
+- `PMGRCLKGEN_SOC_TOP`
+- `_psRegToDeviceIDMap`
+- `_regGroups[kRegGroupC1PPTTrigCtl].valid`
+- `none`
+- `ApplePMGR:         %u\n`
+- `_regGroups[kRegGroupClusterCtl].valid`
+- `virtual bool ApplePMGR::setWakeTimeFromSleep()`
+- `cpu-power-gate-latency-us`
+- `_retentMemData`
+- `CPU Complex Voltage States`
+- `and other devices`
+- `PerfState ApplePMGR::_getPerfDomainDeviceState(PerfDomainID, DeviceID, UInt32)`
+- `\"ApplePMGR: %s:%u \" \"_updateCPUComplexPerfState takes too long execTime %llu us deltaSetPerfState %llu perfDomainID %x\" @%s:%d`
+- `ApplePMGR: _pmPerformanceBoost maxStallNs %u %s %u\n\n`
+- `UInt32 ApplePMGR::getCoreToComplex(UInt32) const`
+- `PMGR_SOC_DPE`
+- `cpuComplex->lock`
+- `virtual void ApplePMGR::configISPRefClock(UInt32, UInt32, UInt32)`
+- `UInt32 ApplePMGR::perfStateToVoltage(PerfDomainID, PerfState, bool, UInt32)`
+- `deviceID < kDeviceIDMaxCount`
+- `_socClusters`
+- `ApplePMGR: [Die %u] %s: %s (%u) %s (%u)\n`
+- `void ApplePMGR::_publishNubs(IORegistryEntry *)`
+- `_params[i].value == value`
+- `\"newPerf (%d) and newPerfTrue (%d) differ, but no reason given\" @%s:%d`
+- `void ApplePMGR::_traceThermalUPOPerfLimiting(CPUComplex *, PerfState, PerfState, PerfState)`
+- `ApplePMGR: Restoring event perf counters\n`
+- `ApplePMGRFunctionPowerGate`
+- `site.PTDRangeInfo`
+- `UInt64 ApplePMGRNub::getPTDInterruptStatus(UInt32)`
+- `site.LatencyEvents`
+- `pmgr-disable-energy-panic`
+- `GPU3_TRIG_CTL`
+- `_interrupts`
+- `ap-wake-sources`
+- `!(enabled && device->minPerfState > 0)`
+- `j < kEnergyNodeMaxCount`
+- `void ApplePMGR::_updateDevicePerfDomainRequirementsGated(uintptr_t, uintptr_t, uintptr_t, uintptr_t)`
+- `_frCounters`
+- `E_ACC_CPM_DVFM`
+- `PCPU1-SRAM`
+- `ApplePMGR: %s: refreshIntervalUS=%u, address=0x%llx splitReg=%s, alwaysOn=%s, readOnly=%s, maxPower_mW=%u, deviceID=0x%x, scaleFactor=%d, regWidth=%u\n`
+- `ApplePMGR: [Die %u] PTD-SOC-DEV-PS-ACK: Device=0x%x psAckEntry=0x%llx psAckEntryNewData=0x%x\n`
+- `ApplePMGR: PerfDomainID %u is invalid\n\n`
+- `DCS_PWR_GATE`
+- `\"ApplePMGR: %s:%u \" \"Cio cluster Failed to Come Online within 10 seconds. deadline: 0x%llx, absTime: 0x%llx die %u\" @%s:%d`
+- `ApplePMGRFunctionGetValidPerfState`
+- `clpc`
+- `_pwrGateRegGroups[(group)].validRegsMask & (0x1 << (index))`
+- `_regGroups[kRegGroupPMCDVFM].valid`
+- `length == 1`
+- `flags <= 1`
+- `llc-thrtl`
+- `pmgr-dock-fifo-agent`
+- `firstCPUID < _xnuTopology->num_cpus`
+- `_regGroups[kRegGroupMiscACG].valid`
+- `UInt32 ApplePMGR::readPMGRSOCEastReg(UInt32, UInt32)`
+- `void ApplePMGR::_handleACCEvent(enum cpu_event, unsigned int)`
+- `void ApplePMGR::_initPerfCountersV2(IOService *)`
+- `\"%s, Out of Memory \\n\" @%s:%d`
+- `\"ApplePMGR: %s:%u \" \"_deviceIdCheck failed, duplication for device Id %x \" @%s:%d`
+- `%sDTL%c%x`
+- `void ApplePMGR::waitPMGRSOCSouthReg(UInt32, UInt32, UInt32, UInt32, UInt32)`
+- `_perfBoostNames[i]`
+- `11111111111111111112222222212212`
+- `ane-tvm`
+- `UPO`
+- `_reporters`
+- `CPU Core Performance States`
+- `function-pmp_control`
+- `AppleARMPerformanceControllerTraceBufferNomenclature`
+- `perfLimitReason >= ApplePMGRNub::kPerfLimitingReasonDVDFactor1Count`
+- `SLP_S2R`
+- `acc-notification-timeout`
+- `check-ps-b4-sleep`
+- `ps-groups`
+- `PMGR-CoreAnalytics Send Event Failure: 0x%x \n`
+- `IOReturn ApplePMGRNub::enablePTDEntryInterrupt(UInt32, UInt32)`
+- `cluster->hysteresisTimer`
+- `id != kIDReserved`
+- `fANE2`
+- `void ApplePMGR::_enableSOCPerfCounter(PerfRegGroup, PerfRegIndex, bool, bool, UInt32)`
+- `IOReturn ApplePMGRNub::readPTDEntry(UInt32, UInt32, PTDEntry &)`
+- `gfx-tvm`
+- `PMGR_AON`
+- `param < kParamCount`
+- `pmpDevHandle < MAX_PMP_DEVICE_CNT`
+- `_die < _target->getDieCount()`
+- `ApplePMGRFunctionAvoidPerfState`
+- `mcx-fast-pcpu-frequency`
+- `CPU Events`
+- `voltage-states16-sram`
+- `void ApplePMGR::_clusterHysteresisTimeoutHandler(IOTimerEventSource *)`
+- `AFNC_PWR_GATE`
+- `warm-tvm`
+- `axi2af-axi-config`
+- `reporter`
+- `ApplePMGR: Warning: DIE1 voltage state count mismatch for %s: %u vs %u, using shared\n`
+- `virtual void ApplePMGRv2::_enableDevice(uintptr_t, uintptr_t, uintptr_t, uintptr_t)`
+- `AbstractPMGR *ApplePMGRv2::getChildPMGRInstance(UInt32) const`
+- `_interruptEventSource[rcnt]`
+- `default-boot-ok`
+- `int-dis-threshold`
+- `ANE_SOC_DPE_TEMP`
+- `PMGR_SOC_CLUSTER_CTL`
+- `ApplePMGR: Starting %s\n`
+- `cpuComplex->coreCount > 0`
+- `range->num_entries`
+- `bwr-agent`
+- `aes-domain-hack`
+- `ApplePMGR: Copying FW DPE node data\n`
+- `_regGroups[kRegGroupISPRef0ClkCfg].valid`
+- `_deviceSets`
+- `avgTime`
+- `\"ApplePMGR: %s:%u \" \"map %d (%s) offset 0x%lx > mapSize (0x%lx)\\n\" @%s:%d`
+- `void ApplePMGR::_snapshotEventPerfCounter(EventData *, UInt32)`
+- `dcs-perf-state-hacks`
+- `perf-counter-version`
+- `void ApplePMC::_getPMCProperties()`
+- `GFX5`
+- `ApplePMGR: die:%d Quiesce PS check, %s PS device(%d:%s) not powered off(0x%x) before entering sleep\n`
+- `ApplePMGR: Skipping %s nub due to 'clpc=0' in boot-args or EDT\n`
+- `ApplePMGRFunctionUSBClock`
+- `ApplePMGR:         StateID: %u\n`
+- `physicalClusterID != kClusterIDNone`
+- `validParam(kParamCPUPowerGateLatencyUS)`
+- `ApplePMGR: Found Remote/Child PMGR Instance:%u @ 0x%p\n`
+- `cpu-tvm`
+- `die-count`
+- `IOReturn ApplePMGR::_getBWRReqMemoryPMC(unsigned int, void *)`
+- `pmp`
+- `site.EnergyCounterMap`
+- `void ApplePMGR::_getDeviceClusterIDs(DeviceData *, ClusterID *, UInt32 *)`
+- `_interruptCount >= _nubPTDRangeCount`
+- `%.*s RD`
+- `AFI_PWR_GATE`
+- `voter-rail-data`
+- `ppt-thrtl`
+- `SNE_SNECTRL`
+- `_workLoop->addEventSource(_interruptEventSource[i]) == kIOReturnSuccess`
+- `12211111222212212111111222121111112`
+- `void ApplePMGR::_setPwrGateSleepDepth(PwrGateRegGroup, PwrGateRegIndex, DeviceID, PwrGateSleepDepth, UInt32)`
+- `UInt32 ApplePMGR::getThermalUPOPerfLimiting(CPUComplex *, PerfState, PerfState, UInt32 *, UInt32 *)`
+- `data->getLength() / sizeof(UInt32) == 3`
+- `pmc`
+- `device->bridgeCount <= kDeviceBridgesMaxCount`
+- `DCS`
+- `UInt64 ApplePMGR::_getCPUCoreIdleTime(CPUCore *, UInt64)`
+- `ApplePMGR: Skipping %s (die=%u, not DIE1)\n`
+- `ApplePMGRFunctionSEPSleepPrep`
+- `fab-tvm`
+- `fane`
+- `ApplePMGR: Restoring ACC %u counters\n`
+- `void ApplePMGR::_enableBridgeEventCounters(Bridge, bool, bool, UInt32)`
+- `ApplePMGR: [Die %u] _syncDevicePsStatusV2() turning on %s\n`
+- `NRT_FABRIC`
+- `rd`
+- `name != NULL`
+- `GFX1`
+- `ApplePMGR:   %-32s = %u\n`
+- `virtual void ApplePMGR::_cpuIdleInit(ml_processor_info_t *)`
+- `_IDLE`
+- `virtual IOReturn ApplePMGRFunctionClockGate::callFunction(void *, void *, void *)`
+- `AGX_DVFM_MGPU`
+- `parentID > id`
+- `_xnuClusterPowerDownLatencyReporter`
+- `GFX7-SRAM`
+- `ApplePMGR: [Die 0] PTD-DVFS-CEIL: msg=0%#llx\n`
+- `void ApplePMGR::roscPolynomPublish(PerfDomainID, UInt32, UInt32, UInt32 *)`
+- `perfState < socPerfStateCount`
+- `perfState < dcsPerfStateCount`
+- `virtual bool ApplePMGRFunctionSetPerfState::initWithTargetDataAndSymbol(IOService *, const OSData *, const OSSymbol *)`
+- `acc-cluster-power-gating`
+- `panic-debug-switch-pg-wa`
+- `pmp-ready-time-threshold-s`
+- `DPE0_CFG`
+- `1`
+- `\"ApplePMGR: %s:%u \" \" requestedPerfState %u driver in %s state\" @%s:%d`
+- `ret == kIOReturnSuccess`
+- `voltage-states17`
+- `AppleARMPerformanceControllerPerformanceDomains`
+- `\"Interrupt index %u is registered and enabled but not handled.\" @%s:%d`
+- `domain`
+- `void ApplePMGR::waitPMGRClkGenSOCReg(UInt32, UInt32, UInt32, UInt32, UInt32)`
+- `active`
+- `bridge-counter-configs`
+- `voltage-states5-sram`
+- `CPU Complex Idle Time`
+- `void ApplePMGR::_snapshotDevicePerfCounter(DeviceData *, UInt32)`
+- `ApplePMGR: [Die %u] PTD-SOC-DEV-DVFS: Device=0x%x level=%d msg=0x%llx\n`
+- `12111121`
+- `ApplePMGRFunctionEnableAutoClockGate`
+- `pmgr-debug-always-on`
+- `_pmpPtdRangeCount <= MAX_PTD_RANGE`
+- `ApplePMGR: Claimed AP wake source: %s\n`
+- `ApplePMGR: Dock FIFO client: %s\n`
+- `ApplePMGR: ApplePMGR Warning: %s:%u %s set to %s (id %x) while driver in %s state\n\n`
+- `com.apple.private.ApplePMGRUserClient.get-bpr`
+- `CPU%u`
+- `UInt32 ApplePMGR::getParamValue(Param)`
+- `IMX_PWR_GATE`
+- `dr`
+- `void ApplePMGR::_enablePSForceNoAccess(PSRegGroup, PSRegIndex, bool)`
+- `\"ApplePMGR: %s:%u \" \"[Die %u] %s reset while not powered on (id %x)\\n\" @%s:%d`
+- `void ApplePMGR::_updateCPUIdleTimeStat(CPUComplex *, UInt64)`
+- `P_ACC0_CPM_DBG`
+- `ApplePMGR:     DVMRWeightTypes:\n`
+- `_lockGrp`
+- `voltage-states%u`
+- `cpuCore->idleTimeReporter`
+- `virtual SInt32 ApplePMGR::getEnergyNodeProperties(UInt32, UInt32, UInt32)`
+- `virtual bool ApplePMGRFunctionVideoClock::initWithTargetDataAndSymbol(IOService *, const OSData *, const OSSymbol *)`
+- `site.ApplePMGRFunctionAvoidPerfState`
+- `Power Gate Count`
+- `POWER_GATE_LAT_ON`
+- `GRAPHICS_AGXBMPRCLKGEN_TOP`
+- `voltage-states1-sram`
+- `cpuComplex->powerGateCountReporter`
+- `AMCC_PWR_GATE`
+- `_cpuCoreCount < kCPUCoreMaxCount`
+- `ApplePMGR: Active = %s\n`
+- `clpc-match-version`
+- `site.BridgeData`
+- `bridge-settings-%d`
+- `ECPU`
+- `SOC`
+- `ApplePMGR: %s: ptdRangeHandle=%u ptdRangeIndex=%u\n`
+- `_workLoop->inGate()`
+- `\"ApplePMGR: %s:%u \" \"%s power > upper bound. Power = %llu mW, upper bound = %u mW, currentTime %llu deltaNj %llu deltaTime %llu value %llu\" @%s:%d`
+- `site.RoscData`
+- `ApplePMGR: Clocks:\n`
+- `1211111212221212111111111111`
+- `bridge-settings`
+- `CPU Complex Performance States`
+- `IOInterruptState ApplePMGR::_acquireDeviceLocks(DeviceData *, UInt32)`
+- `_cioClusterData`
+- `misc-cores-offset`
+- `_pmgrProvider`
+- `deviceBridges->bridges[j] < _bridgeCount`
+- `ApplePMGR: Device %s is associated with %u cluster(s):\n`
+- `\"ApplePMGR: %s:%u \" \"light-em-up=1 not supported for S2R\" @%s:%d`
+- `void ApplePMGRv2::getPMGRChildInstances()`
+- `dpe-thrtl`
+- `NUB_MPMGR_AON`
+- `interrupt-config`
+- `ApplePMGR: Register Maps:\n`
+- `ApplePMGR: Restoring perf domain counters\n`
+- `UInt32 ApplePTD::_getPTDRanges(const char *, edt_ptd_range_config **, const char *)`
+- `Energy Model`
+- `virtual void ApplePMGR::clearClusterInterruptStatus(ClusterID, UInt32)`
+- `_ptdDriver`
+- `void ApplePMGR::_waitForXNUClusterPowerGatingThreadCall()`
+- `id <= kClockIDMax`
+- `void ApplePMGR::_notifyXNUForClusterPowerGating(ClusterID, bool, UInt32)`
+- `ApplePMGR: Powering up clusters associated with devices that are set to RunMax, die %u\n`
+- `(firstState > 0) && (firstState >= minTableState)`
+- `%.*s_CLK_ON`
+- `(energyCounterID != kIDReserved) || ((dynamicCap == 0 && staticCap == 0) || (_getEdtPropertyVer() == kEdtPropertyV2))`
+- `rail == kVoltageRailCPU || rail == kVoltageRailPCPU || rail == kVoltageRailPCPU1`
+- `state < NUM_LOGICAL_PS_STATE`
+- `site.PSRegToDeviceIDMap`
+- `axi2afConfigDataCount == _bridgeCount`
+- `void ApplePMGR::_enableDeviceGated(uintptr_t, uintptr_t, uintptr_t, uintptr_t)`
+- `UInt64 ApplePMGR::_getCPUCorePerfStateTime(CPUCore *, PerfState, UInt64)`
+- `bridge-counter-version`
+- `voltage-states19-sram`
+- `_clusters`
+- `%s-cluster-hyst-us`
+- `ApplePMGR: PwrGate Register Groups:\n`
+- `virtual void ApplePMGR::_enableDevice(uintptr_t, uintptr_t, uintptr_t, uintptr_t)`
+- `_dieCount <= kDieMaxCount`
+- `bridge-reg-index`
+- `_bwrMsg`
+- `UInt64 ApplePMGR::_getCoreChannelID(UInt32, UInt32, UInt32)`
+- `Frequency`
+- `site.ApplePTD::Entry`
+- `IOUserClientDefaultLockingSetProperties`
+- `ANE1_TVM`
+- `voltage-states9`
+- `RMX_PWR_GATE`
+- `void ApplePMGRFunctionROSC::startRoscMeasurement()`
+- `die < ApplePMGRAnalytics::kPSMaxNumDies`
+- `perf-state-change-enhanced`
+- `virtual void ApplePMGR::enableCPUCluster(unsigned int)`
+- `virtual void ApplePMC::restorePMC(UInt32)`
+- `ANE_PERF_STATE`
+- `\"ApplePMGR: %s:%u \" \"%x (%s) wrong energy counter %x\\n\" @%s:%d`
+- `_regGroups[kRegGroupGPUTrigCtl].valid`
+- `ApplePMGR: PS Register Groups:\n`
+- `ApplePMGR:  eventID = 0x%x activeTime = 0x%llx\n`
+- `ApplePMGR: Error: DIE1 %s voltage state %u has perfLimit=0, reverting to shared\n`
+- `wake`
+- `ane1-trig`
+- `cllt-dispext-config`
+- `pmgr-debug-energy-model`
+- `cpuComplex->voltageStateReporter`
+- `_deviceSetStatus`
+- `virtual void ApplePMGR::validateDevicePSLevel(DevicePSValidationType, UInt32, RegMap, UInt32)`
+- `_eventIDToIndexMap[eventID] != kIndexReserved`
+- `_events`
+- `_getEdtPropertyVer() == kEdtPropertyV2`
+- `ApplePMGRFunctionStub`
+- `rosc-apply`
+- `site.CPUComplex`
+- `GFX6`
+- `virtual bool ApplePMGRFunctionPMPInterrupt::initWithTargetDataAndSymbol(IOService *, const OSData *, const OSSymbol *)`
+- `ACCSlewRateAnalytics: Failed to create event name string\n`
+- `_psLock`
+- `void ApplePMGR::_cpuComplexInit(CPUComplex *)`
+- `ApplePMGR:   %s (ID = %#04x):\n`
+- `ApplePMGR: \t\t%2x %s\n\n`
+- `auto ApplePMGR::getTunedDVMRWeightTypeFromTables(UInt32, UInt8, const DVMRWeightTable *, UInt8)::(anonymous class)::operator()(UInt64, UInt8, UInt8) const`
+- `gpu-trig`
+- `_cpuComplexCount`
+- `virtual void ApplePMGR::enableThrottler(Throttler, bool)`
+- `device->flags & kDeviceFlagPerfCounter`
+- `*length < kDeviceStatusChangeListMaxLenght`
+- `virtual UInt64 ApplePMGR::_getDeviceIdleTime(UInt32, UInt32)`
+- `void ApplePMGR::_setPerfCounterName(UInt32, char *, size_t, UInt32)`
+- `MISC_ACG`
+- `cpuComplex->corePerfStateReporter`
+- `GPU SRAM`
+- `ROSC`
+- `clock->flags & kClockFlagPerfCounter`
+- `perfDomain->perfStateMinVoltageStates`
+- `_ptdRangesSize == kNumPTDRanges * sizeof(UInt32)`
+- `(divider > 0) && (divider <= PMGR_TOUCH_CTL_CLK_DIVISOR_SMASK)`
+- `void ApplePMGR::writePMGRSOCPsReg(UInt32, UInt32, UInt32)`
+- `void ApplePMGR::_handleSOCPerfStateRequest(PerfDomain *, PerfState, bool, DeviceID)`
+- `ApplePMGR: Unexpected AP wake reason, publishing as %s\n`
+- `handle->getAnalyticsType() == type`
+- `ApplePMGRFunctionResetPSDService`
+- `deliveredBucket <= cpuComplex->dvd.perfLimitingReportingThresholdCount`
+- `site.PowerDomainData`
+- `ApplePMGR: %s, Num instances: %d\n`
+- `site.ApplePMGRFunctionPMPInterrupt`
+- `void ApplePMC::_enableDynamicVoterInterface(bool, UInt16, UInt32)`
+- `DVFMStates`
+- `dvfm-voter-dev`
+- `UInt32 ApplePMGR::readPMGRSOCPsReg(UInt32, UInt32)`
+- `void ApplePMGR::_dashBoardOpsGated(PTDCommand, uintptr_t *, UInt32)`
+- `GFX_TVM`
+- `GFX`
+- `cpuComplex->activeTimeReporter`
+- `UInt32 ApplePMGR::readPMGRClkGenSOCReg(UInt32, UInt32)`
+- `entry < cfg->num_entries`
+- `void ApplePMGR::_syncDevicePerfDomainRequirement(DeviceStatusChangeData *, UInt32)`
+- `id <= kPowerDomainIDMax`
+- `ApplePMC.cpp`
+- `_pwrGateRegGroups`
+- `voltage-states15`
+- `void ApplePMGR::_restorePerfCountersACC(UInt32)`
+- `\"ApplePMGR: %s:%u \" \"pmc-pmgr: 0x%x, ApplePMC: BOOST INF Disabled\" @%s:%d`
+- `dcsPerfStateCount && socPerfStateCount`
+- `pmgr-ver`
+- `die0BridgeDeviceMem`
+- `voltage-states14`
+- `\"ApplePMGR: %s:%u \" \"_psRegToDeviceIDMap[0x%x][0x%x] = 0x%x != kIDReserved\" @%s:%d`
+- `IOReturn ApplePMGR::_pmpWriteDashBoardSetVirtualDeviceState(DeviceID, UInt32, UInt32)`
+- `_analyticsLockGrp`
+- `railID < kMaxRailID`
+- `void ApplePTD::_readPTD(void *, UInt32, Entry *, UInt32) const`
+- `dvmr-agent`
+- `check-energy-ver`
+- `devices`
+- `perfDomainIndex != kIndexReserved`
+- `void ApplePMGR::_readBridgeByteCounters(Bridge, UInt64 *, UInt64 *, UInt32)`
+- `ApplePMGR: Low Perf State Limit = %u\n`
+- `void ApplePMGRv2::_initAnalyticsTimer()`
+- `_workLoop->addEventSource(cluster->hysteresisTimer) == kIOReturnSuccess`
+- `void ApplePMGR::waitPMGRSOCEastReg(UInt32, UInt32, UInt32, UInt32, UInt32)`
+- `fab-trig`
+- `ptd-driver-version`
+- `virtual bool ApplePMGR::start(IOService *)`
+- `UInt64 ApplePMGR::_getCPUCoreDownTime(CPUCore *, UInt64)`
+- `_gPMGR[CPU_CHIPLET]`
+- `_energyNodes[energyNodeIndex].deviceMemory`
+- `CPU Complex Active Time`
+- `accCluster->psLevel == kPSLevelPowerOff`
+- `AnalyticsFactory.cpp`
+- `ApplePMGR: %s cluster power down hysteresis interval set to %u us\n`
+- `ApplePMGR: [Die 1] %s: Using shared voltage states (no %s property)\n`
+- `NewEvent`
+- `P_ACC0_CPM_DVFM`
+- `void ApplePMGR::waitPMGRReg(UInt32, UInt32, UInt32, UInt32, UInt32)`
+- `ApplePMGRArmFunctions.cpp`
+- `12111122`
+- `site.ApplePMGRFunctionSEPSleepPrep`
+- `ApplePMGR: [Die %u] Matched complex %u with acc-clusters index %u\n`
+- `_enableDeviceGated`
+- `bool ApplePMGRv2::_validParam(Param)`
+- `site.ApplePMGRBase`
+- `void ApplePMC::_initVoteAggregator()`
+- `virtual void ApplePMGR::disableCPUCluster(unsigned int)`
+- `void ApplePMGR::_setSOCPerfCounter(PerfRegGroup, PerfRegIndex, UInt64, UInt32)`
+- `regs != NULL`
+- `cio-cluster`
+- `\"invalid EDT version\" @%s:%d`
+- `ApplePMGR: %s: wasDisabled=%s\n`
+- `virtual IOReturn ApplePMGRFunctionCPUIdle::callFunction(void *, void *, void *)`
+- `GPU`
+- `PMGR_SOC_MISC`
+- `IOHibernateState`
+- `virtual ApplePMGRAnalytics *ApplePMGRv2::getAnalyticsManager(ApplePMGRAnalytics::ca_pmgr_type_t, ApplePMGRAnalytics::ca_ps_state_t, UInt32)`
+- `\"ApplePMGR: %s:%u \" \"pmc-pmgr: 0x%x, ApplePMC LTR INF Disabled\" @%s:%d`
+- `panic`
+- `perfDomain->roscDataCount > 0`
+- `\"ApplePMGR: %s:%u \" \"device %x (%s) wrong powerDomainID %x\\n\" @%s:%d`
+- `ANE_DPE_CPMS`
+- `\"ApplePMGR: %s:%u \" \"device perf counter flag is set with perf counter V2 deviceID 0x%x\" @%s:%d`
+- `P_ACC0_CPU5_IMPL`
+- `perfDomain->psLock`
+- `ApplePMGR: %s: refreshIntervalUS=%u, address=0x%llx, maxPower_mW=%u\n`
+- `ApplePMGR: die:%d Parent PS check, %s PS device(%d:%s) not powered off(0x%x) before powering off device 0x%x:%s\n`
+- `virtual void ApplePMGR::enableCPUComplex(UInt32, bool)`
+- `ApplePMGR: Single-die system, skipping DIE1 voltage state patching\n`
+- `M`
+- `virtual void ApplePMGR::getCurrentCoreComplex(UInt32 *, UInt32 *)`
+- `_regGroups[regGroup].valid`
+- `site.ApplePMGRFunctionEnableAutoClockGate`
+- `_clusterLockGrp`
+- `vco-hack`
+- `site.DeviceSetData`
+- `P_ACC0_CPM_IMPL`
+- `device-check-ps-b4-sleep`
+- `param3`
+- `vdd-cio-rail-always-on`
+- `void ApplePMGR::_quiescePerfStateChanges()`
+- `CPM_PWR_GATE`
+- `P_ACC1_CPU2_IMPL`
+- `perfDomain->devicePerfStateRequirements[die]`
+- `voltage-states16`
+- `_operatingPointReporter`
+- `scratchRegIndex < kScratchRegIndexSpare`
+- `ApplePMGRFunctionPDMClockBypass`
+- `AppleARMPerformanceControllerDVDFactor1-upo`
+- `cllt-disp0-config`
+- `IOUserClientDefaultLockingSingleThreadExternalMethod`
+- `dvfm-cop-action`
+- `ApplePMGR: CPU count constraint detected. %s detected as invalid core. CPU complex %u has %u core(s) valid\n`
+- `EnterExit`
+- `virtual IOReturn ApplePMGRFunctionGetValidPerfState::callFunction(void *, void *, void *)`
+- `AppleARMPerformanceControllerDVDFactor1-slowloop`
+- `IOReturn ApplePMGR::getBootProgressRegister(UInt32 *)`
+- `l2c-flush-timeout`
+- `_accClusterDataCount <= kCPUComplexMaxCount`
+- `ApplePMGR: AP wake source: %2u: %s\n`
+- `(group) < _psRegGroupCount`
+- `virtual void ApplePMGR::enableTVM(VoltageRail, bool, bool, UInt32)`
+- `gpu2-trig`
+- `pmgr-debug`
+- `cpu_or_cluster < _cpuComplexCount`
+- `\"ApplePMGR: %s:%u \" \"roscRef[roscData[%d].node(%d) - 1] (%d) < %d\\n\" @%s:%d`
+- `site.ApplePMGRFunctionEnableTouchClock`
+- `site.DeviceData`
+- `ECORE`
+- `PMC_DVFM_IF_COUNTERS`
+- `frc-cpm-on-hack`
+- `ApplePMGR`
+- `PMGR Counters`
+- `*cpuComplexIndex != -1`
+- `\"ApplePMGR: %s:%u \" \"%s currentPerfState %d devices %s %s %s %s %s driver in %s state. Debug: While Loop time elapsed = %llu, debugStart = %llu, deadline = %llu\" @%s:%d`
+- `id < chipInstances`
+- `dieId < _dieCount`
+- `%s_%u`
+- `ApplePMGRNub.cpp`
+- `pmgr-debug-no-wakeup`
+- `%.*s_IDLE`
+- `_retentFFData`
+- `virtual void ApplePMGR::setCPUPerfCounter(CPUPerfCounterType, UInt32, bool, UInt64, UInt32)`
+- `com.apple.socpm.DIE%u.%s`
+- `cllt-isp-config`
+- `_roscDataReadGated`
+- `index != kIndexReserved`
+- `snooze-counter`
+- `afr-trig`
+- `AppleARMPerformanceControllerDVDFactor1-hip`
+- `PMGRCLKGEN_AON_TOP`
+- `virtual void ApplePMGR::pmPerformanceBoostChange(const OSSymbol *, SOCPerfBoostData, PerfBoostState)`
+- `dvd-period-us`
+- `_frCounterCount < UINT16_MAX`
+- `cpu-power-gate-latency-ns`
+- `aon-tvm`
+- `PMS_PTS_PTD`
+- `virtual UInt32 ApplePMGR::_returnCPUPerfStateInfo(UInt32, UInt32, UInt32 *, UInt32 *, double *)`
+- `UInt32 ApplePMC::_voteAggregator(UInt32, DVFSHandle, UInt32)`
+- `ane1-tvm`
+- `DISP2`
+- `AMCC_CLK_GATE`
+- `_gpuStartRoscReading != NULL`
+- `PSAnalytics::PSAnalytics(IOService *, ca_pmgr_type_t, ca_ps_state_t, UInt32)`
+- `pmgr-debug-devices`
+- `ApplePMGR: Complex count constraint detected. %s perf domain detected as invalid complex. %u valid complexes detected\n`
+- `voltage-states13-sram`
+- `cpuPerfStateCount == cpuComplex->perfDomain->voltageStateCount`
+- `\"ApplePMGR: %s:%u \" \"validateDevicePSLevel: Invalid parent device ID for non-sleep PS validation\" @%s:%d`
+- `(index) < kPwrGateRegGroupSize`
+- `ptd-dvfs-ceil-range`
+- `m:0x%-6llx, M:0x%-6llx, A:0x%-6llx, N:0x%-2x`
+- `power-off`
+- `CLTM-a`
+- `_cpuComplexCount <= kClusterIDMaxCount`
+- `site.ApplePMGRUserClient`
+- `ANE1_DPE_CPMS`
+- `PS_RESET_LAT`
+- `SERVICE_GATE_LAT_ON`
+- `retention_config_ff`
+- `ApplePMGR: [Die 1] %s: Updated DVFMStates in infoDict with new voltage/frequency data\n`
+- `energyNodeIndex < kEnergyNodeMaxCount`
+- `site.PerfCounterData`
+- `pmpExtSWGenRegDescr`
+- `LPM`
+- `void ApplePMGR::writePMGRSOCVolmanReg(UInt32, UInt32, UInt32)`
+- `UInt32 ApplePMGR::readPMGRSOCTvmReg(UInt32, UInt32)`
+- `cllt-cpm0-pg-level`
+- `IODeviceTree:/arm-io/ptd`
+- `\"ApplePMGR: %s:%u \" \"[Die %u] %s reset (id %x) while driver in %s state\\n\" @%s:%d`
+- `P_ACC0_CPU4_IMPL`
+- `void ApplePMGR::_initGenericPTD()`
+- `ApplePMGR: [Die %u] %s: %s\n`
+- `ApplePMGRv2.h`
+- `soc-tvm`
+- `ApplePMGR:   %-16s| ID = %#04x | FLAGS = %#02x | PERF =  %s + %#010x | PWRGATE = %s + %#010x\n`
+- `_getEdtPropertyVer() == kEdtPropertyV1`
+- `121111211`
+- `eh`
+- `ApplePMGR: Device Groups:\n`
+- `data->getLength() / sizeof(UInt32) == 4`
+- `site.IOInterruptEventSource*`
+- `\"ApplePMGRUserClient: %s:%u REQUIRE failed: %s\" @%s:%d`
+- `ANE1_TRIG_CTL`
+- `clkSel <= 1`
+- `_socEventReporter`
+- `void ApplePMGR::waitReg64(RegMap, UInt32, UInt64, UInt64, UInt32, UInt32)`
+- `config-ret-mem-grp-mode`
+- `_cpuCoreCount <= kCPUCoreMaxCount`
+- `void ApplePMGR::_resetDVD(CPUComplex *)`
+- `SERVICE_RESET_LAT_ON`
+- `_voterRailDataCount <= kPMCRailCount`
+- `const char *ApplePMC::_getRailName(RailID)`
+- `_energyNodes[energyNodeIndex].memoryMap`
+- `void ApplePMGR::writePMGRReg(UInt32, UInt32, UInt32)`
+- `clusterIDs[j] != kIDReserved`
+- `UInt32 ApplePMGR::perfStateToFrequencyMHz(PerfDomainID, PerfState, UInt32)`
+- `void ApplePMGR::writePMGRSOCMiscReg(UInt32, UInt32, UInt32)`
+- `ApplePMGR:   [Die %u] %2u | %#llx -> %#llx\n`
+- `ON`
+- `PCPU`
+- `frequencyMHzRequested`
+- `dvc-debug`
+- `SoC Stats`
+- `cpuComplex->corePerfLevelReporter`
+- `ApplePMGR:   %-16s | %s + %#010x\n`
+- `void ApplePMGR::_setPSLevel(PSRegGroup, PSRegIndex, DeviceID, PSLevel, bool, UInt32)`
+- `ApplePMGR: [Die %u] PTD-SOC-DEV-PS-REQ: Device=0x%x level=%d psEntry=0x%llx\n`
+- `_dvfsMsg`
+- `perfDomainID == kPerfDomainIDGFX`
+- `_apVoterIdx < _voterAgentsCount`
+- `PMS_DEVC_TOP`
+- `_deviceStateReporter`
+- `perfDomain->perfStateCount < kCPUPerfStateMaxCount`
+- `bool ApplePMGR::_setPSReset(PSRegGroup, PSRegIndex, DeviceID, UInt32, bool)`
+- `site.ApplePTD`
+- `LimitVoltSt`
+- `id <= kDeviceBridgesIDMax`
+- `FALSE`
+- `PSU`
+- `_ptdRangeInfo`
+- `site.ApplePMGRFunctionStartS2RTimer`
+- `IOReturn ApplePMGRFunctionPMPInterrupt::_callFunctionPMPv2(void *, void *, void *)`
+- `range < _nubPTDRangeCount`
+- `agent->flag == VOTERFLAG::kSTATICPS`
+- `virtual void ApplePMGR::initPMP()`
+- `ApplePMGR: %s: refreshIntervalUS=%u, ptdRangeHandle=%u, ptdRangeIndex=%u\n`
+- `_perfBoostNames`
+- `site.ApplePMGRFunctionClockGate`
+- `getRegMap(kRegMapCPMImpl)->memMap`
+- `SERVICE_GATE_LAT_OFF`
+- `\"ApplePMGR: %s:%u \" \"%d Voter EDT Prop should have AON flag set\" @%s:%d`
+- `voltage-states%u-sram`
+- `pmgr-dock-fifo-client`
+- `site.FreeRunningCounterData`
+- `12111112122212121122211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121112111211121121212212222221111211111122211211121211112222222222222222222222222222222222222222222222222`
+- `site.ApplePMGRFunctionPowerGate`
+- `site.DeviceIDMask *`
+- `UInt32 ApplePMGR::_returnCPUPerfStateInfo(CPUComplex *, UInt32, UInt32 *, UInt32 *, double *)`
+- `SLP_DDR`
+- `clusters`
+- `ApplePMGRFunctionVideoClock`

@@ -1,0 +1,28 @@
+# `SBSUIRemoteAlertSceneHostComponentDelegate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 18 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponent:didChangePreferredStatusBarAxisWithAnimationSettings:];
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponent:didChangeWallpaperStyleWithAnimationSettings:];
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponentDidChangeContentOpaque:];
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponentDidChangeDesiredIdleTimerSettings:];
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponentDidChangeHIDEventDeferringDisabled:];
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponentDidChangeWhitePointAdaptivityStyle:];
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponentDidDeactivate:];
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponent:didChangePreferredStatusBarVisibilityWithAnimationSettings:];
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponentDidChangeShouldDisableOrientationUpdates:];
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponentDidChangeDismissalAnimationStyle:];
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponentDidChangeAllowsAlertStacking:];
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponentDidInvalidate:];
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponent:didSetIdleTimerDisabled:forReason:];
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponent:didChangeBackgroundActivitiesToSuppressWithAnimationSettings:];
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponentDidChangeDesiredAutoLockDuration:];
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponentDidChangeSupportedInterfaceOrientations:];
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponentDidChangeSwipeDismissalStyle:];
+-[SBSUIRemoteAlertSceneHostComponentDelegate remoteAlertSceneHostComponentDidChangePreferredSceneDeactivationReason:];
+```

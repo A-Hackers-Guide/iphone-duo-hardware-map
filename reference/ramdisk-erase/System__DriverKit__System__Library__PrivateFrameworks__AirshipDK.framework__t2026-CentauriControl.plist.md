@@ -1,0 +1,474 @@
+# `/System/DriverKit/System/Library/PrivateFrameworks/AirshipDK.framework/t2026-CentauriControl.plist`
+
+From the erase/recovery restore ramdisk (141-28940-105.dmg, runs restored_external). 22,855 bytes.
+
+- `auxiliary_contexts`: `{}`
+- `boot_ipc_stages`:
+  - `boot`:
+    - `client_registers`:
+      - `secondary_ftab_header_name`:
+        - `bank`: `0`
+        - `length`: `4`
+        - `offset`: `32884`
+    - `image_interrupt`: `main`
+    - `image_table`: `True`
+    - `registers`:
+      - `image_address_hi`:
+        - `bank`: `0`
+        - `offset`: `32840`
+      - `image_address_lo`:
+        - `bank`: `0`
+        - `offset`: `32836`
+      - `image_doorbell`:
+        - `bank`: `0`
+        - `offset`: `36976`
+      - `image_response`:
+        - `bank`: `0`
+        - `offset`: `32832`
+      - `image_size`:
+        - `bank`: `0`
+        - `offset`: `32844`
+    - `resource`: `boot`
+    - `success_code`: `1`
+  - `lpm-boot`:
+    - `image_interrupt`: `main`
+    - `image_table`: `True`
+    - `registers`:
+      - `image_address_hi`:
+        - `bank`: `0`
+        - `offset`: `32840`
+      - `image_address_lo`:
+        - `bank`: `0`
+        - `offset`: `32836`
+      - `image_doorbell`:
+        - `bank`: `0`
+        - `offset`: `36976`
+      - `image_response`:
+        - `bank`: `0`
+        - `offset`: `32832`
+      - `image_size`:
+        - `bank`: `0`
+        - `offset`: `32844`
+    - `resource`: `boot`
+    - `success_code`: `1`
+  - `rom`:
+    - `client_registers`:
+      - `boot_mode`:
+        - `bank`: `0`
+        - `length`: `4`
+        - `offset`: `32828`
+      - `boot_nonce`:
+        - `bank`: `0`
+        - `length`: `8`
+        - `offset`: `32820`
+      - `boot_nonce_doorbell`:
+        - `bank`: `0`
+        - `length`: `4`
+        - `offset`: `36868`
+      - `boot_nonce_hash`:
+        - `bank`: `0`
+        - `length`: `32`
+        - `offset`: `32788`
+      - `chip_info`:
+        - `bank`: `0`
+        - `length`: `4`
+        - `offset`: `32776`
+      - `domain_mode`:
+        - `bank`: `0`
+        - `length`: `4`
+        - `offset`: `32772`
+      - `ecid`:
+        - `bank`: `0`
+        - `length`: `8`
+        - `offset`: `32780`
+      - `host_platform_id`:
+        - `bank`: `0`
+        - `length`: `4`
+        - `offset`: `32892`
+      - `host_platform_sub_variant_id`:
+        - `bank`: `0`
+        - `length`: `4`
+        - `offset`: `32888`
+    - `failure_code`:
+      - `2`
+      - `3`
+      - `4`
+      - `5`
+      - `6`
+      - `7`
+    - `image_interrupt`: `main`
+    - `image_table`: `True`
+    - `registers`:
+      - `image_address_hi`:
+        - `bank`: `0`
+        - `offset`: `32840`
+      - `image_address_lo`:
+        - `bank`: `0`
+        - `offset`: `32836`
+      - `image_doorbell`:
+        - `bank`: `0`
+        - `offset`: `36864`
+      - `image_response`:
+        - `bank`: `0`
+        - `offset`: `32832`
+      - `image_size`:
+        - `bank`: `0`
+        - `offset`: `32844`
+    - `resource`: `boot`
+    - `success_code`: `1`
+- `chipset`: `t2026`
+- `device_info`:
+  - `exec_stage`:
+    - `bank`: `0`
+    - `offset`: `32768`
+  - `exec_stage_interrupt`: `main`
+- `doorbells`:
+  - `SystemEvents`:
+    - `ipc_stage`: `os`
+    - `mode`: `index`
+    - `register`:
+      - `bank`: `0`
+      - `offset`: `36972`
+    - `resource`: `SystemEvents`
+    - `vector`: `27`
+  - `ringdb`:
+    - `ipc_stage`:
+      - `os`
+      - `lpm-os`
+    - `mode`: `index`
+    - `multi`:
+      - `count`: `13`
+    - `register`:
+      - `bank`: `0`
+      - `offset`: `36864`
+    - `vector`: `0`
+- `driver_ioservice_params`:
+  - `device_power_off_timeout_ms`: `15000`
+  - `device_power_on_timeout_ms`: `5000`
+  - `ipc_power_off_timeout_ms`: `2000`
+  - `ipc_power_on_timeout_ms`: `2000`
+  - `queues`:
+    - `default`:
+      - `roles`:
+        - `main`
+        - `doorbell`
+        - `interrupt`
+- `errata`:
+  - `ring_header_footer_scaling`: `True`
+  - `skip_window_configuration`: `True`
+  - `window_base_mask`: `1099511627775`
+- `exec_stages`:
+  - `abort`:
+    - `value`: `3`
+  - `boot`:
+    - `ipc_stage`: `boot`
+    - `value`: `1`
+  - `lpm-boot`:
+    - `ipc_stage`: `lpm-boot`
+    - `value`: `6`
+  - `lpm-os`:
+    - `ipc_stage`: `lpm-os`
+    - `value`: `7`
+  - `os`:
+    - `ipc_stage`: `os`
+    - `value`: `2`
+  - `preboot`:
+    - `value`: `4`
+  - `rom`:
+    - `ipc_stage`: `rom`
+    - `value`: `0`
+- `interrupts`:
+  - `main`:
+    - `queue`: `interrupt`
+    - `vector`: `0`
+- `limits`:
+  - `doorbell_timer_tolerance_us`: `150`
+  - `nominal_state_dump_size`: `1048576`
+- `main_ipc_stages`:
+  - `lpm-os`:
+    - `cr_index_count`: `1`
+    - `ipc_running_timeout`: `2000`
+    - `ipc_status_interrupt`: `main`
+    - `mcr`:
+      - `interrupt`: `main`
+      - `ring_size`: `16`
+    - `mtr`:
+      - `debug`:
+        - `completed_transfer_log_depth`: `32`
+        - `dump_pending_transfer_stats`: `True`
+      - `doorbell`:
+        - `name`: `ringdb`
+        - `selector`: `0`
+      - `in_place`: `False`
+      - `interrupt`: `main`
+      - `ring_size`: `16`
+    - `peripheral_info_interrupt`: `main`
+    - `registers`:
+      - `context_info_address_hi`:
+        - `bank`: `0`
+        - `offset`: `32856`
+      - `context_info_address_lo`:
+        - `bank`: `0`
+        - `offset`: `32852`
+      - `ipc_control`:
+        - `bank`: `0`
+        - `offset`: `36988`
+      - `ipc_status`:
+        - `bank`: `0`
+        - `offset`: `32848`
+      - `sleep_control`:
+        - `bank`: `0`
+        - `offset`: `36984`
+      - `window_base_hi`:
+        - `bank`: `0`
+        - `offset`: `16408`
+      - `window_base_lo`:
+        - `bank`: `0`
+        - `offset`: `16404`
+      - `window_size`:
+        - `bank`: `0`
+        - `offset`: `16412`
+    - `tr_index_count`: `13`
+    - `version`: `768`
+  - `os`:
+    - `cr_index_count`: `1`
+    - `ipc_running_timeout`: `2000`
+    - `ipc_status_interrupt`: `main`
+    - `mcr`:
+      - `interrupt`: `main`
+      - `ring_size`: `16`
+    - `mtr`:
+      - `debug`:
+        - `completed_transfer_log_depth`: `32`
+        - `dump_pending_transfer_stats`: `True`
+      - `doorbell`:
+        - `name`: `ringdb`
+        - `selector`: `0`
+      - `in_place`: `False`
+      - `interrupt`: `main`
+      - `ring_size`: `16`
+    - `peripheral_info_interrupt`: `main`
+    - `registers`:
+      - `context_info_address_hi`:
+        - `bank`: `0`
+        - `offset`: `32856`
+      - `context_info_address_lo`:
+        - `bank`: `0`
+        - `offset`: `32852`
+      - `ipc_control`:
+        - `bank`: `0`
+        - `offset`: `36988`
+      - `ipc_status`:
+        - `bank`: `0`
+        - `offset`: `32848`
+      - `sleep_control`:
+        - `bank`: `0`
+        - `offset`: `36984`
+      - `window_base_hi`:
+        - `bank`: `0`
+        - `offset`: `16408`
+      - `window_base_lo`:
+        - `bank`: `0`
+        - `offset`: `16404`
+      - `window_size`:
+        - `bank`: `0`
+        - `offset`: `16412`
+    - `tr_index_count`: `13`
+    - `version`: `768`
+- `protocol`: `acipc`
+- `resources`:
+  - `SystemEvents`: `{}`
+  - `aonsensed`: `{}`
+  - `binlogger`: `{}`
+  - `boot`: `{}`
+  - `cchi`: `{}`
+  - `coexlogger`: `{}`
+  - `dbg`: `{}`
+  - `loopback`: `{}`
+- `role`: `CentauriControl`
+- `transfer_rings`:
+  - `aonsensed-rx`:
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `12`
+    - `doorbell_moderation`:
+      - `interval_usec`: `1000`
+      - `leeway_usec`: `50`
+    - `exec_stage`: `os`
+    - `id`: `12`
+    - `in_place`: `True`
+    - `index_array_vector`: `12`
+    - `interrupt`: `main`
+    - `nominal_transfer_size`: `1024`
+    - `optimized_completion`: `False`
+    - `resource`: `aonsensed`
+    - `ring_size`: `4`
+  - `aonsensed-tx`:
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `11`
+    - `doorbell_moderation`:
+      - `interval_usec`: `1000`
+      - `leeway_usec`: `50`
+    - `exec_stage`: `os`
+    - `id`: `11`
+    - `in_place`: `True`
+    - `index_array_vector`: `11`
+    - `interrupt`: `main`
+    - `nominal_transfer_size`: `1024`
+    - `optimized_completion`: `False`
+    - `resource`: `aonsensed`
+    - `ring_size`: `4`
+  - `binlogger-rx`:
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `2`
+    - `doorbell_moderation`:
+      - `interval_usec`: `1000`
+      - `leeway_usec`: `50`
+    - `exec_stage`:
+      - `os`
+      - `lpm-os`
+    - `id`: `2`
+    - `in_place`: `True`
+    - `index_array_vector`: `2`
+    - `interrupt`: `main`
+    - `nominal_transfer_size`: `4096`
+    - `optimized_completion`: `False`
+    - `resource`: `binlogger`
+    - `ring_size`: `16`
+  - `binlogger-tx`:
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `1`
+    - `doorbell_moderation`:
+      - `interval_usec`: `1000`
+      - `leeway_usec`: `50`
+    - `exec_stage`:
+      - `os`
+      - `lpm-os`
+    - `id`: `1`
+    - `in_place`: `True`
+    - `index_array_vector`: `1`
+    - `interrupt`: `main`
+    - `nominal_transfer_size`: `4096`
+    - `optimized_completion`: `False`
+    - `resource`: `binlogger`
+    - `ring_size`: `16`
+  - `cchi-rx`:
+    - `completion_footer_size`: `1024`
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `4`
+    - `doorbell_moderation`:
+      - `interval_usec`: `1000`
+      - `leeway_usec`: `50`
+    - `exec_stage`:
+      - `os`
+      - `lpm-os`
+    - `id`: `4`
+    - `in_place`: `True`
+    - `index_array_vector`: `4`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `cchi`
+    - `ring_size`: `16`
+    - `transfer_footer_size`: `1024`
+  - `cchi-tx`:
+    - `debug`:
+      - `completed_transfer_log_depth`: `32`
+      - `dump_pending_transfer_stats`: `True`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `3`
+    - `doorbell_moderation`:
+      - `interval_usec`: `1000`
+      - `leeway_usec`: `50`
+    - `exec_stage`:
+      - `os`
+      - `lpm-os`
+    - `id`: `3`
+    - `in_place`: `True`
+    - `index_array_vector`: `3`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `cchi`
+    - `ring_size`: `16`
+    - `transfer_footer_size`: `1024`
+  - `coexlogger-rx`:
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `8`
+    - `doorbell_moderation`:
+      - `interval_usec`: `1000`
+      - `leeway_usec`: `50`
+    - `exec_stage`: `os`
+    - `id`: `8`
+    - `in_place`: `True`
+    - `index_array_vector`: `8`
+    - `interrupt`: `main`
+    - `nominal_transfer_size`: `4096`
+    - `optimized_completion`: `False`
+    - `resource`: `coexlogger`
+    - `ring_size`: `4`
+  - `dbg-rx`:
+    - `completion_footer_size`: `256`
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `5`
+    - `doorbell_moderation`:
+      - `interval_usec`: `1000`
+      - `leeway_usec`: `50`
+    - `exec_stage`:
+      - `os`
+      - `lpm-os`
+    - `id`: `5`
+    - `in_place`: `True`
+    - `index_array_vector`: `5`
+    - `interrupt`: `main`
+    - `optimized_completion`: `False`
+    - `resource`: `dbg`
+    - `ring_size`: `16`
+    - `transfer_footer_size`: `256`
+  - `loopback-rx`:
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `10`
+    - `doorbell_moderation`:
+      - `interval_usec`: `1000`
+      - `leeway_usec`: `50`
+    - `exec_stage`: `os`
+    - `id`: `10`
+    - `in_place`: `True`
+    - `index_array_vector`: `10`
+    - `interrupt`: `main`
+    - `nominal_transfer_size`: `4096`
+    - `optimized_completion`: `False`
+    - `resource`: `loopback`
+    - `ring_size`: `2`
+  - `loopback-tx`:
+    - `doorbell`:
+      - `name`: `ringdb`
+      - `selector`: `9`
+    - `doorbell_moderation`:
+      - `interval_usec`: `1000`
+      - `leeway_usec`: `50`
+    - `exec_stage`: `os`
+    - `id`: `9`
+    - `in_place`: `True`
+    - `index_array_vector`: `9`
+    - `interrupt`: `main`
+    - `nominal_transfer_size`: `4096`
+    - `optimized_completion`: `False`
+    - `resource`: `loopback`
+    - `ring_size`: `2`
+- `vendor`: `Centauri`

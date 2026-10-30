@@ -1,0 +1,23 @@
+# `SBUIRemoteAlertServiceInterface` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- 0 instance variables, 0 properties, 14 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[SBUIRemoteAlertServiceInterface configureWithContext:completion:];
+-[SBUIRemoteAlertServiceInterface didTransitionToAttachedToWindowedAccessory:windowedAccessoryCutoutFrameInScreen:];
+-[SBUIRemoteAlertServiceInterface handleDoubleHeightStatusBarTap];
+-[SBUIRemoteAlertServiceInterface setUserInfo:];
+-[SBUIRemoteAlertServiceInterface didInvalidateForRemoteAlert];
+-[SBUIRemoteAlertServiceInterface handleButtonActions:];
+-[SBUIRemoteAlertServiceInterface prepareForActivationWithContext:completion:];
+-[SBUIRemoteAlertServiceInterface handleHeadsetButtonPressed:];
+-[SBUIRemoteAlertServiceInterface handleHomeButtonPressed];
+-[SBUIRemoteAlertServiceInterface handleLockButtonPressed];
+-[SBUIRemoteAlertServiceInterface handleVolumeDownButtonPressed];
+-[SBUIRemoteAlertServiceInterface handleVolumeUpButtonPressed];
+-[SBUIRemoteAlertServiceInterface noteActivatedForActivityContinuationWithIdentifier:];
+-[SBUIRemoteAlertServiceInterface noteActivatedWithPresentationMode:];
+```

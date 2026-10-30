@@ -1,0 +1,221 @@
+# `PKSelectionInteraction`
+
+- Image: [`/System/Library/Frameworks/PencilKit.framework/PencilKit`](../userland/System__Library__Frameworks__PencilKit.framework__PencilKit.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `UIInteraction`, `UIGestureRecognizerDelegate`
+- 42 instance variables, 26 properties, 132 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"<PKSelectionRendering>" _lassoRenderer;
+@"PKSelectionGlowRenderer" _glowRenderer;
+@"UIBezierPath" _lassoPath;
+{CGPoint="x"d"y"d} _lastTapLocation;
+d _lastTapTimestamp;
+q _currentTapCount;
+{CGPoint="x"d"y"d} _lastDoubleTapAndDragLocation;
+d _lastDoubleTapAndDragTimestamp;
+@"NSMutableArray" _tapAndDragVelocityArray;
+q _tapAndDragVelocityCount;
+q _currentlyDraggedKnob;
+q _knobDragMode;
+d _knobDragInitialTimestamp;
+{CGPoint="x"d"y"d} _knobDragInitialLocation;
+{CGPoint="x"d"y"d} _undraggedKnobLocationInStrokeSpace;
+{CGPoint="x"d"y"d} _currentScrollOffset;
+@"NSArray" _firstStrokesInInitialStrokes;
+@"NSArray" _lastStrokesInInitialStrokes;
+q _modificationType;
+@"NSMutableArray" _selectionViewGestures;
+@"PKDrawingAdjustmentKnob" _insertSpaceAffordance;
+@"UIPanGestureRecognizer" _insertSpaceAffordanceGesture;
+@"PKTextInputKeyboardSuppressionPolicyDelegate" _keyboardSuppressionPolicyDelegate;
+B _enabled;
+B __didCancelSelection;
+B _insertSpaceEnabled;
+@"<PKSelectionInteractionDelegate>" _delegate;
+@"UIView" _view;
+@"UIPanGestureRecognizer" _lassoGestureRecognizer;
+@"UITapGestureRecognizer" _noOpTapGestureRecognizer;
+@"UITapGestureRecognizer" _progressiveTapGestureRecognizer;
+@"UILongPressGestureRecognizer" _longPressGestureRecognizer;
+@"UILongPressGestureRecognizer" _tapAndHoldToSelectLongPressGestureRecognizer;
+@"UITapAndAHalfRecognizer" _modifySelectionRecognizer;
+@"UILongPressGestureRecognizer" _knobBrushGestureRecognizer;
+@"UIPanGestureRecognizer" _knobDragGestureRecognizer;
+@"PKSelectionController" _selectionController;
+@"NSMutableOrderedSet" _smartSelectedStrokes;
+@"NSOrderedSet" _initialStrokeSelectionBeforeModification;
+@"PKDrawing" _currentDrawing;
+@"UILongPressGestureRecognizer" _pencilLongPressGestureRecognizer;
+{CGPoint="x"d"y"d} __drawingBeganLocation;
+```
+
+## Properties
+
+```
+@property (T@"UIView",W,N,V_view) view;
+@property (T@"UIPanGestureRecognizer",&,N,V_lassoGestureRecognizer) lassoGestureRecognizer;
+@property (T@"UITapGestureRecognizer",&,N,V_noOpTapGestureRecognizer) noOpTapGestureRecognizer;
+@property (T@"UITapGestureRecognizer",&,N,V_progressiveTapGestureRecognizer) progressiveTapGestureRecognizer;
+@property (T@"UILongPressGestureRecognizer",&,N,V_longPressGestureRecognizer) longPressGestureRecognizer;
+@property (T@"UILongPressGestureRecognizer",&,N,V_tapAndHoldToSelectLongPressGestureRecognizer) tapAndHoldToSelectLongPressGestureRecognizer;
+@property (T@"UITapAndAHalfRecognizer",&,N,V_modifySelectionRecognizer) modifySelectionRecognizer;
+@property (T@"UILongPressGestureRecognizer",&,N,V_knobBrushGestureRecognizer) knobBrushGestureRecognizer;
+@property (T@"UIPanGestureRecognizer",&,N,V_knobDragGestureRecognizer) knobDragGestureRecognizer;
+@property (T@"PKSelectionController",W,N,V_selectionController) selectionController;
+@property (T{CGPoint=dd},N,V__drawingBeganLocation) _drawingBeganLocation;
+@property (TB,N,V__didCancelSelection) _didCancelSelection;
+@property (T@"NSMutableOrderedSet",&,N,V_smartSelectedStrokes) smartSelectedStrokes;
+@property (T@"NSOrderedSet",&,N,V_initialStrokeSelectionBeforeModification) initialStrokeSelectionBeforeModification;
+@property (T@"PKDrawing",&,N,V_currentDrawing) currentDrawing;
+@property (T@"UILongPressGestureRecognizer",&,N,V_pencilLongPressGestureRecognizer) pencilLongPressGestureRecognizer;
+@property (TB,N,V_insertSpaceEnabled) insertSpaceEnabled;
+@property (T@"<PKSelectionInteractionDelegate>",W,N,V_delegate) delegate;
+@property (TB,N,GisEnabled,V_enabled) enabled;
+@property (TB,R,N) hasStrokesOrElementsSelection;
+@property (TB,R,N) hasCurrentSelection;
+@property (TB,R,N) currentSelectionHasStrokes;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[PKSelectionInteraction _didAddSelectionView:];
+-[PKSelectionInteraction _isWithinRepeatedTapTimeForGesture:];
+-[PKSelectionInteraction knobBrushGestureRecognizer];
+-[PKSelectionInteraction noOpTapGestureRecognizer];
+-[PKSelectionInteraction setSelectionController:];
+-[PKSelectionInteraction _intersectedStrokesInDrawing:forSelectionInput:existingSelection:completion:];
+-[PKSelectionInteraction gestureRecognizer:shouldRequireFailureOfGestureRecognizer:];
+-[PKSelectionInteraction _knobForLocation:forInputType:];
+-[PKSelectionInteraction _updateSmartSelectionWithDragToLocation:liveScrollOffset:completion:];
+-[PKSelectionInteraction firstStrokeAtLocation:];
+-[PKSelectionInteraction _locationShouldFlipOverRightKnob_LTR:];
+-[PKSelectionInteraction smartSelectedStrokes];
+-[PKSelectionInteraction setInitialStrokeSelectionBeforeModification:];
+-[PKSelectionInteraction setModifySelectionRecognizer:];
+-[PKSelectionInteraction _didEndLassoSelectionWithPath:];
+-[PKSelectionInteraction lassoGestureRecognizer];
+-[PKSelectionInteraction _locationShouldFlipOverRightKnob_RTL:];
+-[PKSelectionInteraction longPressGestureRecognizer];
+-[PKSelectionInteraction currentDrawing];
+-[PKSelectionInteraction _updateStateIfNecessaryWithOldModificationType:newModificationType:];
+-[PKSelectionInteraction _isLassoAddingSpace:];
+-[PKSelectionInteraction setSmartSelectedStrokes:];
+-[PKSelectionInteraction setKnobDragGestureRecognizer:];
+-[PKSelectionInteraction _didDragKnob:];
+-[PKSelectionInteraction _selectionTypeForVelocity:];
+-[PKSelectionInteraction _pointFromViewToStrokeSpace:inDrawing:];
+-[PKSelectionInteraction _closestStrokesToCorner:fromStrokes:];
+-[PKSelectionInteraction setPencilLongPressGestureRecognizer:];
+-[PKSelectionInteraction setKnobBrushGestureRecognizer:];
+-[PKSelectionInteraction _updateAllowedTouchTypesForSelectedInk:hasCurrentSelection:];
+-[PKSelectionInteraction _selectionTypeForTapCount:];
+-[PKSelectionInteraction tapAndHoldToSelectLongPressGestureRecognizer];
+-[PKSelectionInteraction _dismissEditMenuIfNecessary];
+-[PKSelectionInteraction _addInsertSpaceAffordanceGestureIfNecessary];
+-[PKSelectionInteraction _clearLiveSelectionPath];
+-[PKSelectionInteraction _dragShouldBeginForSession:];
+-[PKSelectionInteraction _updateAllowedTouchTypesForSelectedInk:];
+-[PKSelectionInteraction clampInputPointForSelection:forDrawing:];
+-[PKSelectionInteraction setNoOpTapGestureRecognizer:];
+-[PKSelectionInteraction setView:];
+-[PKSelectionInteraction _didBeginDraggingSelection:];
+-[PKSelectionInteraction _addInsertSpaceAffordance];
+-[PKSelectionInteraction _updateUndraggedKnobLocationForKnobDrag];
+-[PKSelectionInteraction _updateProgressiveTapSelectionWithSelectionInput:existingSelection:];
+-[PKSelectionInteraction _updateVelocityWindowWithTouch:location:];
+-[PKSelectionInteraction _locationShouldFlipOverLeftKnob:];
+-[PKSelectionInteraction knobsContainPoint:forInputType:];
+-[PKSelectionInteraction isEnabled];
+-[PKSelectionInteraction _didLongPressExternalElementAtLocation:];
+-[PKSelectionInteraction _updateLiveLassoPath:];
+-[PKSelectionInteraction _selectionShouldReceiveTouchForPoint:];
+-[PKSelectionInteraction _lastStrokesInStrokes:];
+-[PKSelectionInteraction _updateAllowedTouchTypesForLassoGR];
+-[PKSelectionInteraction didResizeExternalElements];
+-[PKSelectionInteraction view];
+-[PKSelectionInteraction setDelegate:];
+-[PKSelectionInteraction _locationShouldFlipOverLeftKnob_RTL:];
+-[PKSelectionInteraction _willRemoveSelectionView:];
+-[PKSelectionInteraction gestureRecognizerShouldBegin:];
+-[PKSelectionInteraction setProgressiveTapGestureRecognizer:];
+-[PKSelectionInteraction _visibleOnscreenStrokesForDrawing:];
+-[PKSelectionInteraction _adornmentLayers];
+-[PKSelectionInteraction insertSpaceEnabled];
+-[PKSelectionInteraction selectionController];
+-[PKSelectionInteraction knobDragGestureRecognizer];
+-[PKSelectionInteraction _locationShouldFlipOverRightKnob:];
+-[PKSelectionInteraction _cleanupInsertSpaceAffordance];
+-[PKSelectionInteraction setEnabled:];
+-[PKSelectionInteraction willMoveToView:];
+-[PKSelectionInteraction progressiveTapGestureRecognizer];
+-[PKSelectionInteraction _didBeginSelection:];
+-[PKSelectionInteraction _didBrushWithKnob:];
+-[PKSelectionInteraction _didSmartSelectTap:];
+-[PKSelectionInteraction gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:];
+-[PKSelectionInteraction hasCurrentSelection];
+-[PKSelectionInteraction delegate];
+-[PKSelectionInteraction _handleSingleTap:];
+-[PKSelectionInteraction didTapWithExternalGesture:];
+-[PKSelectionInteraction hasStrokesOrElementsSelection];
+-[PKSelectionInteraction hasStrokesAtLocation:];
+-[PKSelectionInteraction _gestures];
+-[PKSelectionInteraction _updateTapGestureHistoryWithLocation:gesture:];
+-[PKSelectionInteraction setTapAndHoldToSelectLongPressGestureRecognizer:];
+-[PKSelectionInteraction setInsertSpaceEnabled:];
+-[PKSelectionInteraction _locationShouldFlipOverLeftKnob_LTR:];
+-[PKSelectionInteraction _updateSmartSelectionWithInput:modificationType:completion:];
+-[PKSelectionInteraction initialStrokeSelectionBeforeModification];
+-[PKSelectionInteraction _toolPickerDidShowHide:];
+-[PKSelectionInteraction _didTapAndDrag:];
+-[PKSelectionInteraction pencilLongPressGestureRecognizer];
+-[PKSelectionInteraction _updateInsertSpaceAffordancePosition];
+-[PKSelectionInteraction setLassoGestureRecognizer:];
+-[PKSelectionInteraction _updateSmartSelectionWithInput:modificationType:];
+-[PKSelectionInteraction _pressAndHoldLinearExpand:];
+-[PKSelectionInteraction _setupGestures];
+-[PKSelectionInteraction _calculateFirstAndLastStrokeForKnobPlacement];
+-[PKSelectionInteraction _timestampForTouch:];
+-[PKSelectionInteraction _cancelDeferredPasteFromTappingAction];
+-[PKSelectionInteraction _eatGesture:];
+-[PKSelectionInteraction setLongPressGestureRecognizer:];
+-[PKSelectionInteraction _knobForLocation:];
+-[PKSelectionInteraction _selectionInteractionShouldForwardAtPoint:forEvent:];
+-[PKSelectionInteraction _drawingForLocation:];
+-[PKSelectionInteraction set_didCancelSelection:];
+-[PKSelectionInteraction _didEndDraggingSelection:];
+-[PKSelectionInteraction _updateSmartSelectionWithDragToLocation:liveScrollOffset:initialSelectedWord:completion:];
+-[PKSelectionInteraction _selectViaContinuousTapWithInput:];
+-[PKSelectionInteraction currentSelectionHasStrokes];
+-[PKSelectionInteraction initWithSelectionController:];
+-[PKSelectionInteraction _isRepeatedTap:];
+-[PKSelectionInteraction _liveSelectionGestureStillActive];
+-[PKSelectionInteraction _didGrabInsertSpaceAffordance:];
+-[PKSelectionInteraction _timestampForGestureRecognizer:];
+-[PKSelectionInteraction _selectionInteractionShouldBeginAtPoint:forEvent:orGestureRecognizer:];
+-[PKSelectionInteraction isLTR];
+-[PKSelectionInteraction setCurrentDrawing:];
+-[PKSelectionInteraction _updateVelocityWindowWithTimestamp:location:];
+-[PKSelectionInteraction gesturesAllowedForPaletteState];
+-[PKSelectionInteraction set_drawingBeganLocation:];
+-[PKSelectionInteraction _undraggedKnobLocation:forInitialStrokeBounds:];
+-[PKSelectionInteraction _resetVelocityWindow];
+-[PKSelectionInteraction didMoveToView:];
+-[PKSelectionInteraction dismissEditMenuIfNecessary];
+-[PKSelectionInteraction _selectionModifierGestures];
+-[PKSelectionInteraction _firstStrokesInStrokes:];
+-[PKSelectionInteraction modifySelectionRecognizer];
+-[PKSelectionInteraction _drawingBeganLocation];
+-[PKSelectionInteraction _didCancelSelection];
+-[PKSelectionInteraction _insertSpaceAffordanceEnabled];
+-[PKSelectionInteraction _updateSmartSelectionWithInput:modificationType:liveScrollOffset:completion:];
+-[PKSelectionInteraction _gesturesForLiveSelection];
+-[PKSelectionInteraction _didEndLassoAddingSpaceAtLocation:];
+```

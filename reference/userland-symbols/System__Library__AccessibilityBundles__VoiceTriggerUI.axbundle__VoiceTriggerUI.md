@@ -1,0 +1,145 @@
+# Symbols: `/System/Library/AccessibilityBundles/VoiceTriggerUI.axbundle/VoiceTriggerUI`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__AccessibilityBundles__VoiceTriggerUI.axbundle__VoiceTriggerUI.md). **[DSC]**
+
+43 public symbols, 86 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1e0b06bc8  __DATA_CONST,__const  _AXIsInstructionLabelKey
+0x1ee8ad718  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_AXVoiceTriggerUIGlue
+0x1ee8ad6f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VTUIEnrollTrainingViewAccessibility
+0x1ee8ad6c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VTUIEnrollTrainingViewControllerAccessibility
+0x1ee8ad6a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VTUIEnrollmentBaseViewAccessibility
+0x1ee8ad678  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VTUIEnrollmentSetupIntroViewAccessibility
+0x1ee8ad268  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VTUIEnrollmentSetupIntroViewControllerOrbAccessibility
+0x1ee8ad240  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VTUISiriDataSharingOptInViewControllerAccessibility
+0x1ee8ad3a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VTUISiriEducationViewControllerAccessibility
+0x1ee8ad650  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VTUIVoiceSelectionOptionsViewAccessibility
+0x1ee8ad380  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_VTUIVoiceSelectionViewAccessibility
+0x1ee8ad628  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___VTUIEnrollTrainingViewAccessibility_super
+0x1ee8ad600  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___VTUIEnrollTrainingViewControllerAccessibility_super
+0x1ee8ad5d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___VTUIEnrollmentBaseViewAccessibility_super
+0x1ee8ad5b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___VTUIEnrollmentSetupIntroViewAccessibility_super
+0x1ee8ad218  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___VTUIEnrollmentSetupIntroViewControllerOrbAccessibility_super
+0x1ee8ad1f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___VTUISiriDataSharingOptInViewControllerAccessibility_super
+0x1ee8ad358  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___VTUISiriEducationViewControllerAccessibility_super
+0x1ee8ad588  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___VTUIVoiceSelectionOptionsViewAccessibility_super
+0x1ee8ad330  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$___VTUIVoiceSelectionViewAccessibility_super
+0x1ee8ad560  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_AXVoiceTriggerUIGlue
+0x1ee8ad538  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VTUIEnrollTrainingViewAccessibility
+0x1ee8ad510  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VTUIEnrollTrainingViewControllerAccessibility
+0x1ee8ad4e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VTUIEnrollmentBaseViewAccessibility
+0x1ee8ad4c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VTUIEnrollmentSetupIntroViewAccessibility
+0x1ee8ad1c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VTUIEnrollmentSetupIntroViewControllerOrbAccessibility
+0x1ee8ad1a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VTUISiriDataSharingOptInViewControllerAccessibility
+0x1ee8ad308  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VTUISiriEducationViewControllerAccessibility
+0x1ee8ad498  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VTUIVoiceSelectionOptionsViewAccessibility
+0x1ee8ad2e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_VTUIVoiceSelectionViewAccessibility
+0x1ee8ad470  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___VTUIEnrollTrainingViewAccessibility_super
+0x1ee8ad448  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___VTUIEnrollTrainingViewControllerAccessibility_super
+0x1ee8ad420  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___VTUIEnrollmentBaseViewAccessibility_super
+0x1ee8ad3f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___VTUIEnrollmentSetupIntroViewAccessibility_super
+0x1ee8ad178  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___VTUIEnrollmentSetupIntroViewControllerOrbAccessibility_super
+0x1ee8ad150  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___VTUISiriDataSharingOptInViewControllerAccessibility_super
+0x1ee8ad2b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___VTUISiriEducationViewControllerAccessibility_super
+0x1ee8ad3d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___VTUIVoiceSelectionOptionsViewAccessibility_super
+0x1ee8ad290  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$___VTUIVoiceSelectionViewAccessibility_super
+0x1e0b06c18  __DATA_CONST,__const  __AXAggregatedLabelElementsKey
+0x1ee8ad740  __DATA_DIRTY,__common  __Failover
+0x1935f6040  __TEXT,__text  _accessibilityLocalizedString
+0x1e0b06bd0  __DATA_CONST,__const  _kVTUIKeyInstruction
+```
+
+## Private
+
+```
+0x1935f5e88  __TEXT,__text  +[AXVoiceTriggerUIGlue accessibilityBundles]
+0x1935f5e90  __TEXT,__text  +[AXVoiceTriggerUIGlue accessibilityInitializeBundle]
+0x1935f5f14  __TEXT,__text  ___53+[AXVoiceTriggerUIGlue accessibilityInitializeBundle]_block_invoke
+0x1935f5f1c  __TEXT,__text  ___53+[AXVoiceTriggerUIGlue accessibilityInitializeBundle]_block_invoke_2
+0x1935f5f64  __TEXT,__text  ___53+[AXVoiceTriggerUIGlue accessibilityInitializeBundle]_block_invoke_3
+0x1935f60d0  __TEXT,__text  +[VTUISiriDataSharingOptInViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x1935f60dc  __TEXT,__text  +[VTUISiriDataSharingOptInViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x1935f60e8  __TEXT,__text  +[VTUISiriDataSharingOptInViewControllerAccessibility _accessibilityPerformValidations:]
+0x1935f6100  __TEXT,__text  -[VTUISiriDataSharingOptInViewControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x1935f6168  __TEXT,__text  -[VTUISiriDataSharingOptInViewControllerAccessibility viewWillAppear:]
+0x1935f61d0  __TEXT,__text  -[VTUISiriDataSharingOptInViewControllerAccessibility viewWillDisappear:]
+0x1935f6238  __TEXT,__text  +[VTUIEnrollmentSetupIntroViewControllerOrbAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x1935f6244  __TEXT,__text  +[VTUIEnrollmentSetupIntroViewControllerOrbAccessibility(SafeCategory) safeCategoryBaseClass]
+0x1935f6250  __TEXT,__text  +[VTUIEnrollmentSetupIntroViewControllerOrbAccessibility _accessibilityPerformValidations:]
+0x1935f6268  __TEXT,__text  -[VTUIEnrollmentSetupIntroViewControllerOrbAccessibility viewWillAppear:]
+0x1935f62d0  __TEXT,__text  -[VTUIEnrollmentSetupIntroViewControllerOrbAccessibility viewWillDisappear:]
+0x1935f6338  __TEXT,__text  +[VTUISiriEducationViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x1935f6344  __TEXT,__text  +[VTUISiriEducationViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x1935f6350  __TEXT,__text  +[VTUISiriEducationViewControllerAccessibility _accessibilityPerformValidations:]
+0x1935f63cc  __TEXT,__text  -[VTUISiriEducationViewControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x1935f6418  __TEXT,__text  -[VTUISiriEducationViewControllerAccessibility _accessibilityHideVideoPlayer]
+0x1935f64e0  __TEXT,__text  -[VTUISiriEducationViewControllerAccessibility viewWillAppear:]
+0x1935f652c  __TEXT,__text  +[VTUIVoiceSelectionOptionsViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x1935f6538  __TEXT,__text  +[VTUIVoiceSelectionOptionsViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x1935f6544  __TEXT,__text  +[VTUIVoiceSelectionOptionsViewAccessibility _accessibilityPerformValidations:]
+0x1935f65c4  __TEXT,__text  -[VTUIVoiceSelectionOptionsViewAccessibility tableView:didSelectRowAtIndexPath:]
+0x1935f6648  __TEXT,__text  -[VTUIVoiceSelectionOptionsViewAccessibility _tableCellForVoiceViewModel:indexPath:]
+0x1935f66a4  __TEXT,__text  ___84-[VTUIVoiceSelectionOptionsViewAccessibility _tableCellForVoiceViewModel:indexPath:]_block_invoke
+0x1935f66c4  __TEXT,__text  +[VTUIVoiceSelectionViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x1935f66d0  __TEXT,__text  +[VTUIVoiceSelectionViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x1935f66dc  __TEXT,__text  +[VTUIVoiceSelectionViewAccessibility _accessibilityPerformValidations:]
+0x1935f66e0  __TEXT,__text  -[VTUIVoiceSelectionViewAccessibility accessibilityViewIsModal]
+0x1935f66e8  __TEXT,__text  +[VTUIEnrollTrainingViewControllerAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x1935f66f4  __TEXT,__text  +[VTUIEnrollTrainingViewControllerAccessibility(SafeCategory) safeCategoryBaseClass]
+0x1935f6700  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _axSiriDidRetry]
+0x1935f670c  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _axSetSiriDidRetry:]
+0x1935f6718  __TEXT,__text  +[VTUIEnrollTrainingViewControllerAccessibility _accessibilityPerformValidations:]
+0x1935f6ae8  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _axRemoveNotificationObservers]
+0x1935f6ba4  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _accessibilityLoadAccessibilityInformation]
+0x1935f6d78  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility dealloc]
+0x1935f6dcc  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _setupEnrollTrainingView]
+0x1935f6e28  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _showGMIntroView]
+0x1935f6e88  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _showEducationView]
+0x1935f6f2c  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _showEnrollmentSuccessView]
+0x1935f7018  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _axShowTrainingInstructionBlock]
+0x1935f7024  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _axSetShowTrainingInstructionBlock:]
+0x1935f7074  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _showTrainingInstruction:afterDelay:isRetry:animate:]
+0x1935f71ac  __TEXT,__text  ___101-[VTUIEnrollTrainingViewControllerAccessibility _showTrainingInstruction:afterDelay:isRetry:animate:]_block_invoke
+0x1935f71fc  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _accessibilitySuperShowTrainingInstruction:afterDelay:isRetry:animate:]
+0x1935f7234  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _showStatusMessage:afterDelay:completion:]
+0x1935f72c4  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _continueToTrainingFromIntro]
+0x1935f7324  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _startEnrollment]
+0x1935f7370  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _setLanguageOptionsAndContinue]
+0x1935f73bc  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _showSiriDataSharingOptIn]
+0x1935f742c  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _showVoiceSelectionViewForRecognitionLanguage:]
+0x1935f748c  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _axAnnounceInstructionWithNumber:]
+0x1935f77f0  __TEXT,__text  ___Block_byref_object_copy_
+0x1935f7800  __TEXT,__text  ___Block_byref_object_dispose_
+0x1935f7808  __TEXT,__text  ___82-[VTUIEnrollTrainingViewControllerAccessibility _axAnnounceInstructionWithNumber:]_block_invoke
+0x1935f78f8  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _axAnnounceString:]
+0x1935f7954  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _axHandleAnnouncementDidFinishNotification:]
+0x1935f79dc  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _axHandleVoiceOverStatusChangedNotification:]
+0x1935f7a30  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility AXSuspendAudioTimer]
+0x1935f7a3c  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility setAXSuspendAudioTimer:]
+0x1935f7a48  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _axHandleElementFocusedNotification:]
+0x1935f7c40  __TEXT,__text  ___85-[VTUIEnrollTrainingViewControllerAccessibility _axHandleElementFocusedNotification:]_block_invoke
+0x1935f7c88  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _axHandleSuspendAudioTimerFired:]
+0x1935f7c90  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _axSuspendAudio:]
+0x1935f7d38  __TEXT,__text  ___65-[VTUIEnrollTrainingViewControllerAccessibility _axSuspendAudio:]_block_invoke
+0x1935f7d88  __TEXT,__text  -[VTUIEnrollTrainingViewControllerAccessibility _accessibilitySetAccessibilityElementsIfNeeded]
+0x1935f7f38  __TEXT,__text  +[VTUIEnrollmentSetupIntroViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x1935f7f44  __TEXT,__text  +[VTUIEnrollmentSetupIntroViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x1935f7f50  __TEXT,__text  +[VTUIEnrollmentSetupIntroViewAccessibility _accessibilityPerformValidations:]
+0x1935f7fe4  __TEXT,__text  -[VTUIEnrollmentSetupIntroViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x1935f8060  __TEXT,__text  -[VTUIEnrollmentSetupIntroViewAccessibility initWithFrame:]
+0x1935f80ac  __TEXT,__text  +[VTUIEnrollmentBaseViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x1935f80b8  __TEXT,__text  +[VTUIEnrollmentBaseViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x1935f80c4  __TEXT,__text  +[VTUIEnrollmentBaseViewAccessibility _accessibilityPerformValidations:]
+0x1935f8150  __TEXT,__text  -[VTUIEnrollmentBaseViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x1935f8208  __TEXT,__text  -[VTUIEnrollmentBaseViewAccessibility _setupUI]
+0x1935f8254  __TEXT,__text  +[VTUIEnrollTrainingViewAccessibility(SafeCategory) safeCategoryTargetClassName]
+0x1935f8260  __TEXT,__text  +[VTUIEnrollTrainingViewAccessibility(SafeCategory) safeCategoryBaseClass]
+0x1935f826c  __TEXT,__text  +[VTUIEnrollTrainingViewAccessibility _accessibilityPerformValidations:]
+0x1935f838c  __TEXT,__text  -[VTUIEnrollTrainingViewAccessibility _accessibilityLoadAccessibilityInformation]
+0x1935f84b0  __TEXT,__text  -[VTUIEnrollTrainingViewAccessibility initWithFrame:]
+0x1935f84fc  __TEXT,__text  -[VTUIEnrollTrainingViewAccessibility _setupUI]
+```
+

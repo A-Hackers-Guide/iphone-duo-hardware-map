@@ -1,0 +1,3426 @@
+# `com.apple.iokit.IOAccessoryManager`
+
+- Name: IOAccessoryManager
+- Version: `1.0.0`
+- UUID: `DACA0EFB-54C1-34CF-A9A3-94D61B1F8A1B`
+- Source version: `1068.40.6.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleOnboardSerial`](com.apple.driver.AppleOnboardSerial.md) 1.0, [`com.apple.iokit.IOHIDFamily`](com.apple.iokit.IOHIDFamily.md) 2.0.0, [`com.apple.iokit.IOSerialFamily`](com.apple.iokit.IOSerialFamily.md) 1.0.4, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0.0b1, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (1) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/port-magsafe-1`](../devicetree/root__port-magsafe-1.md) | `IOAccessoryDock0PinBuiltin` | `dock,0pin` |
+
+## IOKit personalities (23) [KC]
+
+### Bulk Data
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOAccessoryPowerMode`: `2`
+- `IOClass`: `IOAccessoryIDBusBulkData`
+- `IOMatchCategory`: `BD`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOProviderClass`: `IOAccessoryManagerAID`
+
+### Bulk Data EA
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOAccessoryIDBusBulkDataEndpointFunction`: `1`
+- `IOClass`: `IOAccessoryIDBusEA`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOProviderClass`: `IOAccessoryBulkDataEndpoint`
+
+### Bulk Data HID
+- `Authenticated`: `True`
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `ExtendedData`:
+  - `61865984`
+  - `61931520`
+  - `61997056`
+  - `62062592`
+  - `62259200`
+- `HIDDefaultBehavior`: ``
+- `IOAccessoryIDBusBulkDataEndpointFunction`: `2`
+- `IOClass`: `IOAccessoryIDBusHIDDevice`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOProviderClass`: `IOAccessoryBulkDataEndpoint`
+
+### Bulk Data HID Input
+- `Authenticated`: `True`
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `ExtendedData`:
+  - `61865984`
+  - `61931520`
+  - `61997056`
+  - `62062592`
+  - `62259200`
+- `HIDDefaultBehavior`: ``
+- `IOAccessoryIDBusBulkDataEndpointFunction`: `8`
+- `IOClass`: `IOAccessoryIDBusHIDDevice`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOProviderClass`: `IOAccessoryBulkDataEndpoint`
+
+### Bulk Data PD
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOAccessoryIDBusBulkDataEndpointFunction`: `5`
+- `IOClass`: `IOAccessoryIDBusPD`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOProviderClass`: `IOAccessoryBulkDataEndpoint`
+
+### Bulk Data Proxy PD
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOAccessoryIDBusBulkDataEndpointFunction`: `6`
+- `IOClass`: `IOAccessoryIDBusProxyPD`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOProviderClass`: `IOAccessoryBulkDataEndpoint`
+
+### Bulk Data SNTP
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOAccessoryDeviceDynamicPort`: `True`
+- `IOAccessoryIDBusBulkDataEndpointFunction`: `9`
+- `IOClass`: `IOAccessoryPortIDBusSNTP`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOProviderClass`: `IOAccessoryBulkDataEndpoint`
+
+### Bulk Data System States
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOAccessoryDeviceDynamicPort`: `True`
+- `IOAccessoryIDBusBulkDataEndpointFunction`: `10`
+- `IOClass`: `IOAccessoryIDBusSystemStates`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOProviderClass`: `IOAccessoryBulkDataEndpoint`
+
+### Dock 0-pin
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOClass`: `IOAccessoryDock0PinBuiltin`
+- `IONameMatch`:
+  - `dock,0pin`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOProviderClass`: `IOService`
+
+### Dock 30-pin
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOClass`: `IOAccessoryDock30PinBuiltIn`
+- `IONameMatch`:
+  - `dock,30pin`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOProviderClass`: `IOService`
+
+### Dock USB UFP
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOClass`: `IOAccessoryDockUSB_UFP`
+- `IONameMatch`:
+  - `dock,usb-ufp`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOProviderClass`: `IOService`
+
+### HSAID Bulk Data
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOAccessoryPowerMode`: `2`
+- `IOClass`: `IOAccessoryHSAIDBulkData`
+- `IOMatchCategory`: `BD`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOProviderClass`: `IOAccessoryManagerHSAID`
+
+### IAP ID Bus
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOAccessoryDeviceDynamicPort`: `True`
+- `IOAccessoryIDBusBulkDataEndpointFunction`: `4`
+- `IOClass`: `IOAccessoryPortIDBus`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOProviderClass`: `IOAccessoryBulkDataEndpoint`
+
+### IAP Serial Port
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOAccessoryDevicePort`: `1`
+- `IOClass`: `IOAccessoryPortSerialSync`
+- `IOMatchCategory`: `IOAccessoryPort`
+- `IONameMatch`: `iap,uart`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOProviderClass`: `AppleOnboardSerialSync`
+
+### IOPort Auto Match
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOClass`: `IOPort`
+- `IONameMatch`:
+  - `port`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOProviderClass`: `IOPlatformDevice`
+
+### KeyboardA Property Merge
+- `CFBundleIdentifier`: `com.apple.iokit.IOHIDFamily`
+- `IOClass`: `IOHIDProviderPropertyMerger`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOPropertyMatch`:
+  - `ProductID`: `53521`
+  - `VendorID`: `1133`
+- `IOProviderClass`: `IOHIDDevice`
+- `IOProviderMergeProperties`:
+  - `RequiresCompassResetOnConnect`: `True`
+
+### KeyboardB Property Merge
+- `CFBundleIdentifier`: `com.apple.iokit.IOHIDFamily`
+- `IOClass`: `IOHIDProviderPropertyMerger`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOPropertyMatch`:
+  - `ProductID`: `53520`
+  - `VendorID`: `1133`
+- `IOProviderClass`: `IOHIDDevice`
+- `IOProviderMergeProperties`:
+  - `RequiresCompassResetOnConnect`: `True`
+
+### Power Source Detect
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOClass`: `IOAccessoryUSBPowerSourceDetect`
+- `IOMatchCategory`: `IOAccessoryUSBPowerSourceDetect`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOPropertyMatch`:
+  -
+    - `IOAccessoryUSBModeType`: `0`
+  -
+    - `IOAccessoryUSBModeType`: `1`
+- `IOProviderClass`: `IOAccessoryManager`
+
+### Transport Restricted Mode - 30pin
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOClass`: `IOAccessoryTRM`
+- `IOMatchCategory`: `IOAccessoryTRM`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOPropertyMatch`:
+  -
+    - `PortType`: `13`
+- `IOProviderClass`: `IOAccessoryManager`
+
+### Transport Restricted Mode - Lightning
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOClass`: `IOAccessoryTRM`
+- `IOMatchCategory`: `IOAccessoryTRM`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOPropertyMatch`:
+  -
+    - `PortType`: `12`
+- `IOProviderClass`: `IOAccessoryManager`
+
+### USB Connect Shim - 30pin
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOClass`: `IOAccessoryUSBConnectShim`
+- `IOMatchCategory`: `IOAccessoryUSBConnectShim`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOPropertyMatch`:
+  -
+    - `IOAccessoryPrimaryDevicePort`: `1`
+    - `PortType`: `13`
+- `IOProviderClass`: `IOAccessoryManager`
+
+### USB Connect Shim - Lightning
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOClass`: `IOAccessoryUSBConnectShim`
+- `IOMatchCategory`: `IOAccessoryUSBConnectShim`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOPropertyMatch`:
+  -
+    - `IOAccessoryPrimaryDevicePort`: `1`
+    - `PortType`: `12`
+- `IOProviderClass`: `IOAccessoryManager`
+
+### VADResourceArbiter
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `IOClass`: `VADResourceArbiter`
+- `IOPersonalityPublisher`: `com.apple.iokit.IOAccessoryManager`
+- `IOPropertyMatch`:
+  -
+    - `RequiresEisAfeArbiter`: `True`
+- `IOProviderClass`: `IOAccessoryManager`
+- `IOUserClientClass`: `VADResourceArbiterUserClient`
+
+
+## C++ classes (128) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AIDSnifferInterface` | 0xb0 | IOService → IORegistryEntry |
+| `AppleNotificationQueue` | 0x68 |  |
+| `HSAIDAckPacket` | 0x40 |  |
+| `HSAIDCommand` | 0x38 | IOCommand |
+| `HSAIDPacket` | 0x30 | IOCommand |
+| `HSAIDReceivePacket` | 0x30 | HSAIDPacket → IOCommand |
+| `HSAIDReceivePacketPool` | 0x40 | IOCommandPool |
+| `HSAIDTransmitCommand` | 0x50 | HSAIDCommand → IOCommand |
+| `HSAIDTransmitCommandPool` | 0x38 | IOCommandPool |
+| `HSAIDTransmitPacket` | 0x38 | HSAIDPacket → IOCommand |
+| `HSAIDTransmitPacketPool` | 0x40 | IOCommandPool |
+| `HSAIDUserClientAccessory` | 0x938 | IOUserClient → IOService → IORegistryEntry |
+| `HSAIDUserClientHost` | 0x938 | IOUserClient → IOService → IORegistryEntry |
+| `IOAccessoryAuthProtocolInterface` | 0xa0 | IOAccessoryPort → IOAccessoryTransport → IOService → IORegistryEntry |
+| `IOAccessoryBulkDataEndpoint` | 0x98 | IOService → IORegistryEntry |
+| `IOAccessoryConfigStreamInterface` | 0x540 | IOService → IORegistryEntry |
+| `IOAccessoryConfigStreamUserClient` | 0xe8 | IOUserClient → IOService → IORegistryEntry |
+| `IOAccessoryDock0PinBuiltin` | 0xe20 | IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `IOAccessoryDock30Pin` | 0xe18 | IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `IOAccessoryDock30PinBuiltIn` | 0xe58 | IOAccessoryDock30Pin → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `IOAccessoryDock9Pin` | 0x1030 | IOAccessoryManagerAID → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `IOAccessoryDockUSB_UFP` | 0xe20 | IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `IOAccessoryEAInterface` | 0xa0 | IOService → IORegistryEntry |
+| `IOAccessoryEAInterfaceUserClient` | 0x130 | IOUserClient → IOService → IORegistryEntry |
+| `IOAccessoryHIDDeviceEndpoint` | 0x118 | IOHIDDevice → IOService → IORegistryEntry |
+| `IOAccessoryHIDDeviceInterface` | 0x108 | IOService → IORegistryEntry |
+| `IOAccessoryHIDDeviceUserClient` | 0xe8 | IOUserClient → IOService → IORegistryEntry |
+| `IOAccessoryHSAIDBulkData` | 0x108 | IOService → IORegistryEntry |
+| `IOAccessoryHSAIDBulkDataEndpoint` | 0xe0 | IOAccessoryBulkDataEndpoint → IOService → IORegistryEntry |
+| `IOAccessoryHSAIDBusTransport` | 0x148 | IOAccessoryTransport → IOService → IORegistryEntry |
+| `IOAccessoryIDBusBulkData` | 0x1c8 | IOService → IORegistryEntry |
+| `IOAccessoryIDBusBulkDataEndpoint` | 0xa0 | IOAccessoryBulkDataEndpoint → IOService → IORegistryEntry |
+| `IOAccessoryIDBusEA` | 0xc0 | IOAccessoryEAInterface → IOService → IORegistryEntry |
+| `IOAccessoryIDBusHIDDevice` | 0x130 | IOHIDDevice → IOService → IORegistryEntry |
+| `IOAccessoryIDBusPD` | 0x178 | IOService → IORegistryEntry |
+| `IOAccessoryIDBusPDSupplyData` | 0x38 | IOAccessoryPowerSourceSupplyData |
+| `IOAccessoryIDBusProxyPD` | 0x130 | IOService → IORegistryEntry |
+| `IOAccessoryIDBusSystemStates` | 0xe0 | IOService → IORegistryEntry |
+| `IOAccessoryIDBusSystemStatesUserClient` | 0xe8 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `IOAccessoryIDBusTransport` | 0xd8 | IOAccessoryTransport → IOService → IORegistryEntry |
+| `IOAccessoryIDBusUserClient` | 0xe8 | IOUserClient → IOService → IORegistryEntry |
+| `IOAccessoryManager` | 0xe18 | IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `IOAccessoryManagerAID` | 0xe58 | IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `IOAccessoryManagerHSAID` | 0xe78 | IOAccessoryManagerAID → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `IOAccessoryManagerOrion` | 0xe98 | IOAccessoryManagerHSAID → IOAccessoryManagerAID → IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `IOAccessoryManagerUSBC` | 0xe30 | IOAccessoryManager → IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `IOAccessoryManagerUserClient` | 0xe0 | IOUserClient → IOService → IORegistryEntry |
+| `IOAccessoryOOBPairingInterface` | 0xb0 | IOService → IORegistryEntry |
+| `IOAccessoryOOBPairingInterfaceUserClient` | 0x128 | IOUserClient → IOService → IORegistryEntry |
+| `IOAccessoryPort` | 0x98 | IOAccessoryTransport → IOService → IORegistryEntry |
+| `IOAccessoryPortDataQueue` | 0x28 | IOSharedDataQueue → IODataQueue |
+| `IOAccessoryPortIDBus` | 0xb0 | IOAccessoryPort → IOAccessoryTransport → IOService → IORegistryEntry |
+| `IOAccessoryPortIDBusSNTP` | 0xb0 | IOAccessoryPort → IOAccessoryTransport → IOService → IORegistryEntry |
+| `IOAccessoryPortSerial` | 0x1d8 | IOAccessoryPort → IOAccessoryTransport → IOService → IORegistryEntry |
+| `IOAccessoryPortSerialSync` | 0x1f8 | IOAccessoryPortSerial → IOAccessoryPort → IOAccessoryTransport → IOService → IORegistryEntry |
+| `IOAccessoryPortUserClient` | 0xe8 | IOUserClient → IOService → IORegistryEntry |
+| `IOAccessoryPowerSource` | 0xd8 | IOAccessoryTransport → IOService → IORegistryEntry |
+| `IOAccessoryPowerSourceBehavior` | 0x78 |  |
+| `IOAccessoryPowerSourceItem` | 0x28 |  |
+| `IOAccessoryPowerSourceItemBehavior` | 0x30 | IOAccessoryPowerSourceItem |
+| `IOAccessoryPowerSourceItemBrickID` | 0x38 | IOAccessoryPowerSourceItemLowVoltageLimit → IOAccessoryPowerSourceItem |
+| `IOAccessoryPowerSourceItemBrickLimit` | 0x30 | IOAccessoryPowerSourceItem |
+| `IOAccessoryPowerSourceItemCurrentBase` | 0x30 | IOAccessoryPowerSourceItem |
+| `IOAccessoryPowerSourceItemCurrentOffset` | 0x30 | IOAccessoryPowerSourceItem |
+| `IOAccessoryPowerSourceItemDebounce` | 0x30 | IOAccessoryPowerSourceItem |
+| `IOAccessoryPowerSourceItemExternal` | 0x30 | IOAccessoryPowerSourceItemLowVoltageLimit → IOAccessoryPowerSourceItem |
+| `IOAccessoryPowerSourceItemLowVoltageLimit` | 0x30 | IOAccessoryPowerSourceItem |
+| `IOAccessoryPowerSourceItemOrion` | 0x30 | IOAccessoryPowerSourceItemLowVoltageLimit → IOAccessoryPowerSourceItem |
+| `IOAccessoryPowerSourceItemPD` | 0x38 | IOAccessoryPowerSourceItem |
+| `IOAccessoryPowerSourceItemPDPlatformCurrentLimit` | 0x38 | IOAccessoryPowerSourceItem |
+| `IOAccessoryPowerSourceItemRestrictions` | 0x38 | IOAccessoryPowerSourceItem |
+| `IOAccessoryPowerSourceItemUSBDevice` | 0x30 | IOAccessoryPowerSourceItemLowVoltageLimit → IOAccessoryPowerSourceItem |
+| `IOAccessoryPowerSourceItemUSBHost` | 0x30 | IOAccessoryPowerSourceItemLowVoltageLimit → IOAccessoryPowerSourceItem |
+| `IOAccessoryPowerSourceItemUSB_ChargingPort` | 0x40 | IOAccessoryPowerSourceItemLowVoltageLimit → IOAccessoryPowerSourceItem |
+| `IOAccessoryPowerSourceItemUSB_DataContactDetect` | 0x38 | IOAccessoryPowerSourceItem |
+| `IOAccessoryPowerSourceItemUSB_TypeC_Current` | 0x38 | IOAccessoryPowerSourceItemLowVoltageLimit → IOAccessoryPowerSourceItem |
+| `IOAccessoryPowerSourceSupplyData` | 0x28 |  |
+| `IOAccessoryTRM` | 0xe8 | IOService → IORegistryEntry |
+| `IOAccessoryTransport` | 0x90 | IOService → IORegistryEntry |
+| `IOAccessoryUSBConnectShim` | 0xe0 | IOService → IORegistryEntry |
+| `IOAccessoryUSBPowerSourceDetect` | 0xe8 | IOService → IORegistryEntry |
+| `IOAccessoryUSBTypeCCurrentDetect` | 0xf0 | IOService → IORegistryEntry |
+| `IOPort` | 0x1a8 | IOPortFamily → IOService → IORegistryEntry |
+| `IOPortAIDController` | 0x1c0 | IOPort → IOPortFamily → IOService → IORegistryEntry |
+| `IOPortFamily` | 0xd8 | IOService → IORegistryEntry |
+| `IOPortFeature` | 0xe0 | IOPortFamily → IOService → IORegistryEntry |
+| `IOPortFeatureLDCM` | 0x1a0 | IOPortFeature → IOPortFamily → IOService → IORegistryEntry |
+| `IOPortFeatureLDCMDataQueue` | 0x28 | IOSharedDataQueue → IODataQueue |
+| `IOPortFeatureLDCMUserClient` | 0xf0 | IOPortFeatureUserClient → IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `IOPortFeaturePower` | 0xe8 | IOPortFeature → IOPortFamily → IOService → IORegistryEntry |
+| `IOPortFeaturePowerIn` | 0xe8 | IOPortFeaturePower → IOPortFeature → IOPortFamily → IOService → IORegistryEntry |
+| `IOPortFeaturePowerSource` | 0x108 | IOPortFamily → IOService → IORegistryEntry |
+| `IOPortFeaturePowerSourceOption` | 0x38 |  |
+| `IOPortFeaturePowerSourceOptionFixed` | 0x40 | IOPortFeaturePowerSourceOption |
+| `IOPortFeatureRFCoEx` | 0x198 | IOPortFeature → IOPortFamily → IOService → IORegistryEntry |
+| `IOPortFeatureUserClient` | 0xe8 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `IOPortTransport` | 0x180 | IOPortTransportState → IOService → IORegistryEntry |
+| `IOPortTransportAIDBus` | 0x1c8 | IOPortTransport → IOPortTransportState → IOService → IORegistryEntry |
+| `IOPortTransportAIDBusUserClient` | 0xf8 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+| `IOPortTransportComponent` | 0xe0 | IOPortFamily → IOService → IORegistryEntry |
+| `IOPortTransportComponentCC` | 0xe8 | IOPortTransportComponent → IOPortFamily → IOService → IORegistryEntry |
+| `IOPortTransportComponentCCUSBPD` | 0xf0 | IOPortTransportComponentCC → IOPortTransportComponent → IOPortFamily → IOService → IORegistryEntry |
+| `IOPortTransportComponentCCUSBPDSOP` | 0xf0 | IOPortTransportComponentCCUSBPD → IOPortTransportComponentCC → IOPortTransportComponent → IOPortFamily → IOService → IORegistryEntry |
+| `IOPortTransportComponentCCUSBPDSOPp` | 0xf0 | IOPortTransportComponentCCUSBPD → IOPortTransportComponentCC → IOPortTransportComponent → IOPortFamily → IOService → IORegistryEntry |
+| `IOPortTransportProtocol` | 0xe8 | IOPortFamily → IOService → IORegistryEntry |
+| `IOPortTransportProtocolCCUSBPDSSAM` | 0x100 | IOPortTransportProtocol → IOPortFamily → IOService → IORegistryEntry |
+| `IOPortTransportState` | 0x180 | IOService → IORegistryEntry |
+| `IOPortTransportStateCC` | 0x180 | IOPortTransportState → IOService → IORegistryEntry |
+| `IOPortTransportStateCIO` | 0x1a0 | IOPortTunnelingTransportState → IOPortTransportState → IOService → IORegistryEntry |
+| `IOPortTransportStateDisplayPort` | 0x198 | IOPortTransportState → IOService → IORegistryEntry |
+| `IOPortTransportStateIIC` | 0x180 | IOPortTransportState → IOService → IORegistryEntry |
+| `IOPortTransportStateOrderedSet` | 0x48 | OSOrderedSet → OSCollection |
+| `IOPortTransportStatePCIe` | 0x180 | IOPortTransportState → IOService → IORegistryEntry |
+| `IOPortTransportStateSD` | 0x190 | IOPortTransportState → IOService → IORegistryEntry |
+| `IOPortTransportStateSWN` | 0x188 | IOPortTunnelingTransportState → IOPortTransportState → IOService → IORegistryEntry |
+| `IOPortTransportStateUSB` | 0x1a0 | IOPortTransportState → IOService → IORegistryEntry |
+| `IOPortTransportStateUSB2` | 0x1a8 | IOPortTransportStateUSB → IOPortTransportState → IOService → IORegistryEntry |
+| `IOPortTransportStateUSB3` | 0x1a8 | IOPortTransportStateUSB → IOPortTransportState → IOService → IORegistryEntry |
+| `IOPortTransportUserClient` | 0xf0 | IOUserClient → IOService → IORegistryEntry |
+| `IOPortTunnelingTransportState` | 0x188 | IOPortTransportState → IOService → IORegistryEntry |
+| `IOPortUserClient` | 0xf0 | IOUserClient → IOService → IORegistryEntry |
+| `IOServiceNotificationManager` | 0x70 |  |
+| `OSOrderedSetEquality` | 0x48 | OSOrderedSet → OSCollection |
+| `OSSetEquality` | 0x20 | OSSet → OSCollection |
+| `OSValueObject<IOAccessoryIDBusTransport::TransferData>` | 0x18 |  |
+| `VADResourceArbiter` | 0xb0 | IOService → IORegistryEntry |
+| `VADResourceArbiterUserClient` | 0xe0 | IOUserClient → IOService → IORegistryEntry |
+| `_Message` | 0x20 |  |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x00023c4e off=0x009987f0-0x009bc43e addr=0xfffffe000799c7f0-0xfffffe00079c043e r--/r--   __TEXT            
+	sz=0x000002b8 off=0x00998f10-0x009991c8 addr=0xfffffe000799cf10-0xfffffe000799d1c8               __TEXT.__const            
+	sz=0x00011078 off=0x009991c8-0x009aa240 addr=0xfffffe000799d1c8-0xfffffe00079ae240               __TEXT.__cstring          (CstringLiterals)
+	sz=0x000121fe off=0x009aa240-0x009bc43e addr=0xfffffe00079ae240-0xfffffe00079c043e               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x000e181c off=0x02f7b020-0x0305c83c addr=0xfffffe0009f7f020-0xfffffe000a06083c r-x/r-x   __TEXT_EXEC       
+	sz=0x000e0c6c off=0x02f7b020-0x0305bc8c addr=0xfffffe0009f7f020-0xfffffe000a05fc8c          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000bb0 off=0x0305bc8c-0x0305c83c addr=0xfffffe000a05fc8c-0xfffffe000a06083c          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00001fe2 off=0x049ec8e0-0x049ee8c2 addr=0xfffffe000b9f08e0-0xfffffe000b9f28c2 rw-/rw-   __DATA            
+	sz=0x000007e8 off=0x049ec8e0-0x049ed0c8 addr=0xfffffe000b9f08e0-0xfffffe000b9f10c8               __DATA.__data             
+	sz=0x000016b8 off=0x00000000-0x000016b8 addr=0xfffffe000b9f10c8-0xfffffe000b9f2780               __DATA.__common           (Zerofill)
+	sz=0x00000142 off=0x00000000-0x00000142 addr=0xfffffe000b9f2780-0xfffffe000b9f28c2               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x0002e008 off=0x0131e358-0x0134c360 addr=0xfffffe0008322358-0xfffffe0008350360 rw-/rw-   __DATA_CONST      
+	sz=0x00000348 off=0x0131e358-0x0131e6a0 addr=0xfffffe0008322358-0xfffffe00083226a0         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000340 off=0x0131e6a0-0x0131e9e0 addr=0xfffffe00083226a0-0xfffffe00083229e0         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x0002ac98 off=0x0131e9e0-0x01349678 addr=0xfffffe00083229e0-0xfffffe000834d678         __DATA_CONST.__const            
+	sz=0x00002500 off=0x01349678-0x0134bb78 addr=0xfffffe000834d678-0xfffffe000834fb78         __DATA_CONST.__kalloc_type      
+	sz=0x000005d8 off=0x0134bb78-0x0134c150 addr=0xfffffe000834fb78-0xfffffe0008350150         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000001f0 off=0x0134c150-0x0134c340 addr=0xfffffe0008350150-0xfffffe0008350340         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000020 off=0x0134c340-0x0134c360 addr=0xfffffe0008350340-0xfffffe0008350360         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 436 at 0x04af0158
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     DACA0EFB-54C1-34CF-A9A3-94D61B1F8A1B
+008: LC_SOURCE_VERSION           1068.40.6.0.0
+009: LC_FUNCTION_STARTS          offset=0x004abc1e0 size=0x19f8
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `IOAccessoryManager`
+- `CFBundleIdentifier`: `com.apple.iokit.IOAccessoryManager`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `IOAccessoryManager`
+- `CFBundleNumericVersion`: `16809984`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersion`: `1.0.0`
+- `CFBundleShortVersionString`: `1.0.0`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1.0.0`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2019 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.0`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/IOAccessoryManager.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198895736848`
+- `_PrelinkExecutableRelativePath`: `IOAccessoryManager`
+- `_PrelinkExecutableSize`: `1266772`
+- `_PrelinkExecutableSourceAddr`: `-2198895736848`
+- `_PrelinkKmodInfo`: `-2198828283680`
+
+## Strings (2965) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `timestamp`
+- `site.IOAccessoryPowerSourceItemCurrentOffset`
+- `112221121`
+- `com.apple.iokit.IOPort.TRM.user-access`
+- `IOAccessoryHIDDeviceNumEndpoints`
+- `IOAccessoryPortSerialSync`
+- `%s::%s: %s: !_timer\n\n`
+- `%s::%s: %s: ~~~ configureAccessoryPower applied\n`
+- `max-bdrr`
+- `IOAccessoryManagerAID::handleDigitalID\n`
+- `acc_debug`
+- `ArchitectureVersion`
+- `%s::%s: %s: blind charge @ 500mA, returned %#x\n`
+- `site.IOPortTransport`
+- `dcp`
+- `v16@?0^{AppleNotificationQueue=^^?i^?^v^v^?^v^vB^{OSArray}^{_IOLock}^{thread_call}I}8`
+- `_logBulkDataInfo`
+- `SOP`
+- `site.IOPortTransportComponentCCUSBPD`
+- `isChargingCableConnected`
+- `IOAccessoryAccessoryModelNumber`
+- `MMC`
+- `acc_debug_hid_msg`
+- `runMikeyBusHeadsetTimeoutGated`
+- `cc voltage`
+- `%s: sending control %02x\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] :HIDDescriptor errCode %x, len %llu, _useDraftVer=%d \n`
+- `IOAccessoryHSAIDBusTransport:%s: called\n`
+- `IOPortFeaturePowerIn`
+- `Not Supported`
+- `IOAccessoryDock9Pin::BrickWAR`
+- `%s::%s: %s: setTimeout failed\n\n`
+- `12112112`
+- `charger`
+- `/defaults`
+- `acc-bwar-limit`
+- `%x.%x.%x.%x`
+- `updatePendingTransmitPacket`
+- `LDCM_StateDescription`
+- `IOPortTransport`
+- `RF Ready`
+- `Failed`
+- `IOAccessoryHSAIDBusTransport::receivedACK: Unexpected ACK number, got %u, expected %u\n`
+- `site.IOAccessoryAuthProtocolInterface`
+- `initWithEndpointID`
+- `forcePowerGateEnable`
+- `%s::%s: %s: giving up on _allowedFeaturesAvailable\n`
+- `1211112`
+- `DeviceAuthRequired`
+- `HSAIDBus`
+- `Unauthorized`
+- `GracePeriodReason`
+- `_setMitigationsEnabled`
+- `121121`
+- `%u`
+- `OpticalCable`
+- `IOAccessoryDock9Pin::handleIDBusCommandForMagicPullDownDropout`
+- `DevicePlatformID`
+- `PDUSB Peripheral`
+- `PSD`
+- `IOAccessoryHSAIDBusTransport:%s: HSAID enabled\n`
+- `_getACMTRMStatus`
+- `site.IOAccessoryPowerSource`
+- `IOPortFeature`
+- `System Authorized`
+- `IOAccessoryManagerOrion::handleAccessoryDetect`
+- `%s::%s: %s: Requesting accessory name status: 0x%x\n\n`
+- `waitForTransportSignalingDeferral`
+- `Set`
+- `low voltage`
+- `suspendTimeout`
+- `_dropAllNotifications`
+- `IOAccessoryConfigStreamCategoryList`
+- `site.IOAccessoryPowerSourceItemLowVoltageLimit`
+- `IOAccessoryPowerSourceItemBrickID`
+- `(no provider)`
+- `IOAccessorySupportedPowerModes`
+- `IOAccessoryManagerInductiveRegionCodeData`
+- `setForcePortWet`
+- `USBData`
+- `enable-acsleep`
+- `createFeature`
+- `Ethernet`
+- `SNR_AMP_FAILURE`
+- `LOOPBACK_FAILURE`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d), wake sleeping threads \n`
+- `com.apple.iokit.IOPortFeature.LDCM`
+- `updateDescription_block_invoke`
+- `Role`
+- `EEPROM Version`
+- `IOAccessoryHSAIDBusTransport::receiveLongFormPacket: Received packet with command data longer than available buffer space (%u > %u)\n`
+- `%s::%s failed to open transport (0x%x)\n`
+- `IOAccessoryConfigStreamDevInfoPPID`
+- `pd charger`
+- `%s::%s: %s: manager is inactive\n`
+- `handleStop`
+- `IOAccessoryManagerInductiveFwVersionData`
+- `site.IOPortTransportState`
+- `12111112122212121111112111111222`
+- `completeTransferInternal`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReportMulti: ep %u, len %llu \n`
+- `IOUserClientDefaultLockingSingleThreadExternalMethod`
+- `site.IOAccessoryPortSerialSync`
+- `12111112122212121111112111112122222222112211111112122`
+- `_requestPortNumber`
+- `removeObject`
+- `%s::%s: %s: could not find IOAccessoryManager\n`
+- `12111112122212121121112221111111211122`
+- `UserOverrideActive`
+- `1211111212221212111111111111111111111`
+- `extequestGetProperty: scalarInputCount %d, structureInputSize %d, scalarOutputCount %d, structureOutputSize %d\n`
+- `_validatePortNumber`
+- `[ERROR] %s::%s(): [%s%s%s] createFeature returned NULL for supported feature! (currentFeatureType: %d [%s])\n\n`
+- `IOAccessoryManagerUserClient`
+- `start_block_invoke`
+- `site.IOPortFeatureLDCM`
+- `%s::%s: %s: Sending link state command with current limit %d.\n`
+- `built-in`
+- `site.IOPortTransportAIDBus`
+- `IOAccessoryManagerNeedsAuthCPMGWorkaround`
+- `[ERROR] %s::%s(): [%s%s%s] Cannot init port type - it is already set! (m_portType: %d, portType: %d)\n\n`
+- `init`
+- `DisplayPort`
+- `2.x`
+- `_completeIDBusInfoInternal`
+- `IOPortTransportStateUSB2`
+- `CIO`
+- `MaxLaneCount`
+- `site.IOAccessoryIDBusBulkData`
+- `IOPortFeaturePower`
+- `type-c rcpt 091216`
+- `%s::%s: %s: reservePins %#x\n`
+- `121111121222121211`
+- `LDCM_MeasurementStatusDescription`
+- `_updateConnectionActive_block_invoke`
+- `ParentPortTypeDescription`
+- `1.4`
+- `setSpeedClass`
+- `Device Vendor ID`
+- `1211111212221212111111111111`
+- `IOAccessoryInterfaceModuleSerialNumber`
+- `OSOrderedSetEquality`
+- `terminate`
+- `%s::%s(): [%s@%s: %s%s%s] Registering service %s= ()... (provider: %s@%s)\n`
+- `AsymmetricModeSupported`
+- `IOPortTunnelingTransportState`
+- `User Authorized`
+- `Class 7`
+- `() _endpoint %s `
+- `processNotifications`
+- `site.IOAccessoryIDBusTransport`
+- `featureMatchingForService`
+- `acc_config_stream_enable`
+- `%s::%s: %s: %s\n`
+- `IOPortFeatureLDCMUserClient`
+- `%s::%s(): [%s@%s: %s%s%s] Setting data role... (dataRole: %d [%s])\n`
+- `%s: unsupported combination of CC and PD\n`
+- `TRMDomain_Inductive`
+- `IOPortTransportProtocol`
+- `_createAndStartFeatures`
+- `site.IOAccessoryHSAIDBulkData`
+- `1211211`
+- `setAuthenticationRequired`
+- `Owner`
+- `extSetProperty scalarInputCount %d, structureInputSize %d\n`
+- `IOAccessoryHIDDeviceInterface::%s [%d / %d], isInactive=%d, in commandGate, retrieve endpoint descriptor \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) _receiveDataMsg: commandID %x, %llu bytes, isInactive %d, isInactive %d, status %x \n`
+- `%s::%s: %s: ~~~ goldbondBehavior %d _MikeyBusHeadsetGoldbondState %d _isMikeyBusAudioPlaying = %d processBehaviorChange=%d processVoltageChange=%d  \n`
+- `_setUserOverrideActive`
+- `%s:IOAccessoryConfigStreamInterface::%s commandID:%x payloadLength:%02llX sizeof(cmdID)=%lu \n`
+- `%s: [%d] fixed PD supply - voltage %d, currentLimit %d -> %d, cc %d\n`
+- `EDID`
+- `hid-cache-depth`
+- `site.IOAccessoryUSBConnectShim`
+- `%s::%s: %s: ~~~ Disable PORT failed\n`
+- `Metadata`
+- `Vendor ID`
+- `releaseResource`
+- `PDPowerRoleSource`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d), got Descriptor data %d bytes (soFar %d / %d), _getDescriptorsFailed=%d \n`
+- `IOAccessoryHIDDeviceCountryCode`
+- `sendMessages`
+- `11211`
+- `site.IOPortNumberNode`
+- `requestResource`
+- `%s: - PDO[%d] 0x%08x\n`
+- `v16@?0^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}8`
+- `Allow Automatically When Unlocked`
+- `Product ID (SOP1)`
+- `IOAccessoryIDBusSystemStates::%s user present changed %d -> %d\n`
+- `%s:IOAccessoryConfigStreamInterface::%s _initialRetrievalFinished %d, _numCategories %d, categoryID/Index %x/%d, propertyID/Index %x/%d, infoDataLen %llu, ret %x \n`
+- `DeviceOpenedByEventSystem`
+- `IOAccessoryInterfaceDeviceSerialNumber`
+- `site.IOAccessoryPowerSourceItemUSBHost`
+- `site.IOAccessoryIDBusHIDDevice`
+- `%s::%s: %s: could not send ID read command: %s\n`
+- `_isSupervisedAccessoryAttached`
+- `Gen 1`
+- `IOAccessoryIDBusProxyPD`
+- `FeatureTypeDescription`
+- `resetAllowedFeaturesGatedPreservingInductiveEarlyAttach`
+- `Inductive`
+- `AccessoryMode`
+- `IOAccessoryManagerSleepPower`
+- `IOAccessoryAccessoryHardwareVersion`
+- `SupervisedAccessoryAttached`
+- `TRM_TransportSupervised`
+- `%s:%s:%d\n`
+- `maximum voltage`
+- `hsaid-verbose`
+- `%s::%s: %s: getAccessoryDigitalID: 0x%x\n`
+- `adapter family`
+- `AppleCredentialManager`
+- `%s::attachIfnet: ifnet_attach failed (%d)\n`
+- `site.IOAccessoryPowerSourceItemPDPlatformCurrentLimit`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `%s::%s(): [%s@%s: %s%s%s] Setting data role override... (dataRole: %d [%s])\n`
+- `kern.osversion`
+- `%s: receieveDataBuff for kIOAccessoryPortIDBusRetDataTransferRead failed\n`
+- `_setRFClientResponseStatus_block_invoke`
+- `Generation`
+- `Apple MagSafe Charger`
+- `d+ voltage`
+- `Force Restricted`
+- `site.IOAccessoryDock30Pin`
+- `%s::%s: %s: aborted since we're about to sleep\n`
+- `IOAccessoryHSAIDBusTransport::receiveLongFormPacket: Fragmented packets currently unsupported\n`
+- `%s::%s: %s: reservePins(%d) %#x\n`
+- `1222212`
+- `DriverStatusDescription`
+- `IOPortFeatureLDCM.dryToWet`
+- `VPD`
+- `configureAccessorySleepPowerGated`
+- `%s: AppleUSBCableDetect %d\n`
+- `FeatureType`
+- `%s:IOAccessoryConfigStreamInterface::%s %llu bytes, isInactive %d \n`
+- `max nominal voltage`
+- `site.HSAIDTransmitCommand`
+- `isAsymmetricModeSupported`
+- `%s::%s: %s: hw overrun\n`
+- `LDCMPinDescription`
+- `TransportsActive`
+- `%s::%s(): [%s%s%s] Disabling port feature: %d [%s] (isBootedFromRamDisk(): %s)\n\n`
+- `121111121222121211111111221211112122221222222111111111122`
+- `%s::%s: %s: willSleep skip setup\n`
+- `%s:IOAccessoryHIDDeviceInterface::%s %llu bytes, isInactive %d \n`
+- `assertBusResetInternalGated`
+- `osenvironment`
+- `ParentBuiltInPortTypeDescription`
+- `IOPortTransportComponentCCUSBPD`
+- `AccessorySourceCapabilityModes`
+- `configureAccessoryPowerGated`
+- `<print error>`
+- `Class 8`
+- `com.apple.driver.VADResource.user-access`
+- `1211222`
+- `121111121222121211111121111`
+- `USB3`
+- ` [*]`
+- `extSetProperty: ENTER\n`
+- `OSSetEquality`
+- `authcp_fix_mode`
+- `startTransferData`
+- `Contactless`
+- `setAuthenticationTimeout`
+- `WinningPowerSourceOption`
+- `BatteryPack`
+- `OvercurrentCount`
+- `%s:%s resource release timeout priority=%d`
+- `_Message`
+- `%s: timeout waiting for command %d`
+- `IOAccessoryManagerInductiveExtendedID`
+- `setRegistrationHandler_block_invoke`
+- `%s:IOAccessoryConfigStreamInterface::%s RetPropertyData: categoryID %x, propertyID %x, _sentPropertyDataRequestWithSleep %d, _initialRetrievalFinished %d \n`
+- `B16@?0^{OSObject=^^?i}8`
+- `IOPortFeatureLDCM`
+- `Product`
+- `%s:%s resource release resource for priority=%d`
+- `%s::%s: %s: ConfigChange\n`
+- `IOAccessoryHSAIDBusTransport:%s: Accessory ACKed HSAID Suspend state\n`
+- `HSAIDReceivePacketPool`
+- `Power Source Items`
+- `setDataRole`
+- `IOAccessoryIDBusSystemStatesUserClient`
+- `setActive_block_invoke`
+- `aid-component`
+- `function-acc_sw_en`
+- `12111112122212121111`
+- `OverrideBase`
+- `Signaling Pair`
+- `site.IOPortFeaturePowerSourceOption`
+- `%s::%s(): [%s@%s: %s%s%s] Registering service %s@%s... (transportType: %d, provider: %s@%s)\n`
+- `%s::%s: ret=0x%x acc1=0x%x, acc2=0x%x, set PowerModeOff?\n`
+- `IOAccessoryPortIDBus`
+- `%s queued report. Total queued: %d\n`
+- `setLinkTrainingMode`
+- `site.IOAccessoryPowerSourceItemBehavior`
+- `IOAccessoryUSBCurrentLimitMaximum`
+- `processAccessoryPowerModeExtOffRequest`
+- `TRM_StateDescription`
+- `%s:%s super::start failed\n`
+- `resolved high voltage`
+- `IOAccessoryHSAIDBusTransport:%s: Resetting receive sequence number to %u\n`
+- `IOAccessoryDock9Pin::continuedDetect`
+- `IOAccessoryUSBConnectType`
+- `setLDCMPin`
+- `%s: unknown response received command %02x length %lu error 0x%08x (%s)\n`
+- `Vendor ID (SOP1)`
+- `ActiveCable`
+- `A2384`
+- `transmitNextPacket`
+- `requestGetPropertyData`
+- `IOAccessoryConfigStreamDevInfoVID`
+- `IOAccessoryManagerPortAuthentication`
+- `SD`
+- `IOAccessoryManagerUSBC`
+- `_requestPropertyDataIfRequired`
+- `StateDescription`
+- `Passive Cable`
+- `port`
+- `%s::%s: %s: no VBUS detected when starting powerhandshake\n`
+- `%s: kAIDPDCmdProxyStatus _proxyStatus %d\n`
+- `dry`
+- `%s:IOAccessoryHIDDeviceInterface::%s - END ret %x, isInactive() %d \n`
+- `site.IOPortFeaturePowerSource`
+- `setDisplayPortPinAssignment`
+- `setSuperSpeedSignaling`
+- `SignalingFrequenciesGenerationCount`
+- `site.IOAccessoryIDBusProxyPD`
+- `IOAccessoryHSAIDBusTransport::receiveLongFormPacket: Exiting bus error state\n`
+- `GenerationDescription`
+- `IOAccessoryTransportType`
+- `goldbondDisablePort`
+- `%s::%s: %s: downstream manager has no upstream manager\n`
+- `setNominalSignalingFrequencies`
+- `AuthorizationStatus`
+- `%s::%s: %s: %s: LSAID bus transport not found\n`
+- `IOAccessoryHSAIDBusTransport::receiveLongFormPacket: No rx packets\n`
+- `initWithPortTypeAndNumber`
+- `Device`
+- `Product Name`
+- `%s::%s: %s: accessory info string has exceeded maximum length\n`
+- `site.IOAccessoryHIDDeviceEndpoint`
+- `IOPortFeatureUserClient`
+- `IOAccessoryUSBSuperSpeedActive`
+- `[ERROR] %s::%s(): [%s%s%s] Error starting %s!\n\n`
+- `Low`
+- `480 Mbps (High Speed)`
+- `MagSafe 2`
+- `_reservePortID`
+- `%s:IOAccessoryHIDDeviceInterface::%s [ep %u/%u] \n`
+- `_finishStartGated`
+- `addPowerSourceOptions_block_invoke`
+- `site.IOPortUserClient`
+- `HDMI`
+- `ConnectionActive`
+- `121111121222121211111111`
+- `NominalSignalingFrequenciesHz`
+- `HSAIDUserClientAccessory::cancelTransmit: called\n`
+- `IOAccessoryHSAIDBusTransport:%s: Exiting bus error after receiving a packet\n`
+- `_removeTransports_block_invoke`
+- `TRM`
+- `_clearWaveformCache`
+- `%s:%s:%d Failed to transfer HID descriptor command: %s!\n`
+- `IOAccessoryHSAIDBusTransport::generateACK: cancel failed\n`
+- `IOAccessoryIDBusUserClient`
+- `%s::%s: %s:  ~~~  _mbGoldbondLifetimeSec(%d) > _mikeyBusGoldbondDisableSec(%d) DISABLE PORT  \n`
+- `IOAccessoryUSBPower`
+- `handleIDBusState`
+- `setLDCMPin returned error:0x%x`
+- `IOAccessoryDock9Pin::handleIDBusCommandForMagicPullDown: GetState\n`
+- `class`
+- `IOAccessoryOOBPairingInterface`
+- `IOAccessoryPowerSourceBehavior`
+- `hsaid`
+- `%s::%s(): [%s@%s: %s%s%s] Found ACM service after startup! (transportType: %d, parentPortType: %d, parentPortNumber: %d)\n`
+- `IOAccessoryManagerHSAID`
+- `copyPortWithTypeAndNumber`
+- `IOUserClientDefaultLocking`
+- `site.IOAccessoryPort`
+- `maximum power`
+- `site.IOPortFeaturePower`
+- `Device Protocol`
+- `_IOServiceNotificationManagerRegistrationHandlerHandlerToBlock`
+- `Manufacturer ID`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDResponse:HIDDescriptor errCode %x, len %llu, _useDraftVer=%d \n`
+- `%s:_receiveData receieveDataBuff for kIOAccessoryIDBusBulkDataSNTPBroadcastCommand. Ignoring for now. Path not implemented. \n`
+- `IOAccessoryManagerAID`
+- `configureDPDNConfigOverrideGated`
+- `willTerminate`
+- `Ready`
+- `LaneCount`
+- `%s:IOAccessoryHIDDeviceInterface::%s RetHIDReport, commandID %x, bytes %llu >= %llu \n`
+- `B24@?0r^{OSSymbol=^^?ib14b18*{smrq_slink={?=^{smrq_slink}}}}8^{OSObject=^^?i}16`
+- `%s:_receiveData unknown command %02x length %lu\n`
+- `IOAccessoryUSBTypeCCurrentDetect`
+- `accessoryDetectGated`
+- `IOAccessoryHSAIDBusTransport:%s: Setting power state %lu->%lu\n`
+- `1.5 Mbps (Low Speed)`
+- `IOPortTransportUserClient`
+- `sendData`
+- `_removePowerSource`
+- `IOAccessoryManagerOrion`
+- `%s::%s: %s: ID bus not available and debug enabled; skipping power handshake and allowing charge\n`
+- `TransportTypeDescription`
+- `TRM_IdentificationRestricted`
+- `%s::%s: %s: ID info failed after %lu retries, aborting\n`
+- `IOService`
+- `IOServiceNotificationManager`
+- `12111112122212121111112122222222222222222211222`
+- `cancelTransmitInternal`
+- `feature-rf-coex-rf-cl-tout-ms`
+- `%s::%s: %s: could not start ID command: %s\n`
+- `Limited`
+- `IOAccessoryPortUserClient`
+- `IOAccessoryHSAIDBusTransport:%s: Suspend timer timed out!\n`
+- `grantResourceAccess`
+- `Data`
+- `IOAccessoryPowerSourceItemPD`
+- `mergeMetadata`
+- `_initIndex_block_invoke`
+- `setGeneration`
+- `USBCharger`
+- `IOAccessoryDockUSB_UFP::handleAccessoryDetect`
+- `RFClientsEnabled`
+- `%s: kAIDPDDataMsg_Source_Capabilities, numDataObjects %d, _sourceState %d\n`
+- `_handleGetEndpointDescriptor`
+- `_removeTransport`
+- `(null))`
+- `12111112122212121111111122121111212222122222211122`
+- `121111121222121211112211122112`
+- `setBootComplete_block_invoke`
+- `setMaxReceivingFrequency`
+- `121122`
+- `RoleDescription`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) requestLen %d (0x%04x), requestOffset %d (0x%04x), _userDraftVer %d\n`
+- `Device Vendor Name`
+- `%s::%s: %s:  cm override count %u\n`
+- `IOAccessoryIDBusPD`
+- `i8@?0`
+- `12121112`
+- `%s: kAIDPDDataMsg_Request requestObject %x, objectPosition %d, numDataObjects %d\n`
+- `removeMetadata`
+- `Hardware Controlled`
+- `com.apple.private.IOPortTransportAIDBusUserClient.access`
+- `openTransport_block_invoke`
+- `%s::%s: _powerState=%d, _powerStateInternal=%d, _sleeping=%d, _accessoryPowerModeExtOffRequested %d\n`
+- `%s::%s: %s: received unexpected error: %s\n`
+- `1211111212221212111112222112`
+- `PortType`
+- `%s:%s:%d: _idRetries: %u\n`
+- `IOAccessoryIDBusBulkDataEndpoint`
+- `releasePinsForType: UNSUPPORTED!`
+- `Host`
+- `[ERROR] %s::%s(): [%s%s%s] Dynamic port reservation pool is exhausted! (portType: %d)\n\n`
+- `v16@?0^{IOTimerEventSource=^^?i^{IOEventSource}^{OSObject}^?B^{IOWorkLoop}^v^{ExpansionData}^vQ^{ExpansionData}}8`
+- `%s::%s: %s: ~~~ isChargingCable %d\n`
+- `IOAccessoryPowerSourceItemRestrictions`
+- `\"%s: could not find system ID: %s %s\" @%s:%d`
+- `ComponentName`
+- `IOAccessoryPowerMode`
+- `Charger`
+- `rfcoex-disable`
+- `%s: unknown packet received command %02x length %lu\n`
+- `HostSinkCapabilities`
+- `_isPortNumberReserved`
+- `IOPortTransportState`
+- `HashStatusDescription`
+- `site.IOPortFeaturePowerSourceOptionFixed`
+- `IOAccessoryPowerSource`
+- `site.TransferCompletionArgs`
+- `ComponentFunction`
+- `IOAccessoryIDBusSystemStates: Ignoring low-power wake\n`
+- `IOAccessoryIDBusTransport`
+- `RFClientResponseStatusDescription`
+- `%s:_receiveResponse ERROR: unexpected response from accessory. BD Command %02x length %lu\n`
+- `ProtocolName`
+- `_updateNominalSignalingFrequenciesHz_block_invoke`
+- `transport-tunneled`
+- `%s Dequeuing older report due to overflow!\n`
+- `site.IOAccessoryPowerSourceItemUSBDevice`
+- `getFeatureAllowed`
+- `IOPortTransportStateSD`
+- `Manufacture Date`
+- `%s::%s: %s: state %d, success %d\n`
+- `MitigationsStatus`
+- `DeviceProductName`
+- `%s, receiveDataBuff error, 0x%x:'%s' \n`
+- `runGoldbondStateMachineGated`
+- `IOAccessoryPowerSourceItemUSBDevice`
+- `Class 4`
+- `site.IOAccessoryHIDDeviceInterface`
+- `_handleDescriptorResponseForEndpoint`
+- `addPowerSources_block_invoke`
+- `%s::%s: %s: usbPower=%d\n`
+- `IOAccessoryManagerInductiveDeviceID`
+- `feature-rf-coex-tp-tout-ms`
+- `%s::%s: %s: allowedFeaturesMask %x, removeProperty\n`
+- `Class 3`
+- `No Error`
+- `%5u `
+- `Card Type`
+- `LegacyAdapter`
+- `%s::%s: %s: Sent zone 2 read (error code: 0x%x)\n`
+- `member`
+- `_copyWaveform`
+- `IOAccessoryPowerSourceItemOrion`
+- `Processing`
+- `startTransmit`
+- `debounce`
+- `IOPortTransportStatePCIe`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `runAllowedFeaturesAvailableTimedOutGated`
+- `i36@?0I8^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}12^v20Q28`
+- `TRM_GracePeriodReasonDescription`
+- `component-function`
+- `Vendor Id`
+- `%s: failed to alloc protocolString\n`
+- `PropertyList`
+- `TRM_State`
+- `%s:%s:%d EnabledByEventSystemKey set!\n`
+- `%llu`
+- `_removeFeatures`
+- `%s::%s: %s: ~~~ Disable PORT success\n`
+- `DeviceFirmwareRevision`
+- `121111121222121211111111111121`
+- `SuperSpeedSignalingDescription`
+- `RFClientTimeoutMS`
+- `%s: targetRdoPosition %d, _numAccessoryCapabilities %d, _confirmedAccessoryRdoPosition %d, _requestedAccessoryRdoPosition %d\n`
+- `%s:IOAccessoryHIDDeviceInterface::%s commandID:%02X payloadLength:%02llX sizeof(cmdID)=%lu \n`
+- `1211111212221212111111112212111121222212222221111222`
+- `PowerSourceName`
+- `setSignalingPair`
+- `1211111212221212112212`
+- `com.apple.iokit.IOPort.user-access`
+- `receive timeout`
+- `acc-mpdms`
+- `behavior`
+- `%s::%s: %s: could not find system ID: %s\n`
+- `121111121222121211112221112112222`
+- `transport-index`
+- `%s::%s: %s: sending attach event to iap\n`
+- `USB 3.x`
+- `%s::%s: Set InflowDisable for Vbus=%d, power handshake state=%d, _currentLimitMode=%d\n`
+- `external`
+- `%s::%s: %s: Clearing accessory power forced off\n`
+- `cancelTransfer`
+- `_sendCommand_block_invoke`
+- `IOAccessoryManagerInductiveFamilyID`
+- `generic`
+- `_updateTRMState_block_invoke`
+- `enabled`
+- `%s::%s: %s: sending detach event to iap\n`
+- `Sink`
+- `IOAccessoryHSAIDBusTransport:%s: Trying to enter Suspend!\n`
+- `IOAccessoryHSAIDBusTransport::transmitACK: startTransmit failed (%s)\n`
+- `receiveLongFormPacket`
+- `DisplayPortPinAssignment`
+- `_getMeasurementDataQueue`
+- `_setLiquidDetected`
+- `extSetProperty: categoryID %04x, propertyID %02x, dataSize %u, ret %x\n`
+- `%s::%s: %s: shouldOverrideAU %d\n`
+- `80 Gbps`
+- `IOAccessoryPowerSourceItemUSBHost`
+- `12112222`
+- `configureUSBModeGated`
+- `site.IOPortTransportStateUSB`
+- `site.IOAccessoryDock0PinBuiltin`
+- `A3385`
+- `site.OSOrderedSetEquality`
+- `clientClose`
+- `%s::%s:%d: !_smcChoosesPDO\n`
+- `111`
+- `Failed to allocate data object!!`
+- `TransportClientsEnabled`
+- `ParentTransportTypeDescription`
+- `addTunneledTransport`
+- `CacheMissThreshold`
+- `%s::%s: %s: could not set up serial port: %s\n`
+- `IOAccessoryBatteryPack`
+- `Policy Authorized`
+- `IOAccessoryHSAIDBusTransport:%s: Bus error state %u (%s)\n`
+- `startTransmitInternal`
+- `IOAccessoryTRM`
+- `IOAccessoryUSBConnectTypePublished`
+- `Pending`
+- `(Undefined)`
+- `Device Model Name`
+- `IOAccessoryIDBusSystemStates::%s user active changed %d -> %d\n`
+- `kIOAccessoryManagerUSBPreventSourceDetection`
+- `KIS`
+- `1211111212221212111111211112112212122222222122121212`
+- `%s:%s:%d Handling report! Reports in queue: %d\n`
+- `IOAccessoryHSAIDBusTransport:%s: No commands to transmit\n`
+- `LDCM_MeasurementStatus`
+- `/options`
+- `IOAccessoryOrientation`
+- `IOAccessoryPowerSourceItemDebounce`
+- `%s:_receiveResponse unknown command %02x length %lu\n`
+- `%s:%s:%d: _idSequence: %u\n`
+- `site.IOAccessoryEAInterfaceUserClient`
+- `_removeTransports`
+- `handleIDBusCommandForWorkarounds`
+- `site._Message`
+- `CacheMiss`
+- `IOAccessoryPortManagerPrimaryPort`
+- `RFClientMitigationStatusDescription`
+- `%s: unsupported combination of CC and PD proxy\n`
+- `IOAccessoryManagerAccessoryPowerModeOnAtStart`
+- `completeTransfer`
+- `feature-rf-coex-rf-cl`
+- `%s::_receiveResponse get report failed with error 0x%08x\n`
+- `Could not malloc SNTP data buffer.`
+- `_sendSystemWakeCommand`
+- `acc_system_id`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) detachFromParent on IOAccessory plane \n`
+- `objects`
+- `Class 0`
+- `_copyData`
+- `_setForcePortWet`
+- `SpecRevision`
+- `TRM_PolicyReason`
+- `IOAccessory`
+- `InflowDisable`
+- `IOAccessoryUSBCurrentLimitBase`
+- `Tunneled`
+- `bcdDevice`
+- `handleMetadataChanges`
+- `%s::%s: %s: could not allocate accessory detection timers\n`
+- `_closeHSAIDTransport`
+- `Product Type`
+- `IOAccessoryHSAIDBusTransport::receivedACK: cancel failed\n`
+- `site.IOPortTransportStateOrderedSet`
+- `FeaturesSupported`
+- `failed to remove notifier %#x\n`
+- `%s: packet received command %02x length %lu\n`
+- `ComponentType`
+- `IOAccessoryManagerInductiveAuthTimedOut`
+- `IOAccessoryHSAIDBusTransport:%s: Pending transmit packet ACKed\n`
+- `cancelTransfersGated`
+- `ConnectionUUID`
+- `brick id 4`
+- `site.IOPortTransportStateUSB2`
+- `IOAccessoryDock9Pin`
+- `%s::%s: %s: IOAccessoryDevice with no ID!\n`
+- `%s::%s: %s: Accessory DigitalID matches P275. Changing current limit for kIOAccessoryPowerModeLow to 100mA\n`
+- `12111112122212121111112111121`
+- `SuperSpeedSignaling`
+- `121111121222121211121121112`
+- `v16@?0*8`
+- `CC`
+- `Class 1`
+- `_enqueueMeasurementData`
+- `dropAllNotifications`
+- `IOAccessoryTransport`
+- `IOAccessoryHSAIDBusTransport:%s: Called\n`
+- `setBusErrorState_block_invoke`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) _receiveDataMsg: commandID %x, data(%llu bytes):%s \n`
+- `%s::%s: %s: %s::%s: setPowerHandshakeState(kPowerHandshakeLimit)\n`
+- `setAuthenticationStatus`
+- `setActive`
+- `IOAccessoryHSAIDBusTransport::receiveLongFormPacket: Received packet with unexpected sequence number. Got %u, expected %u\n`
+- `setSignalingPin`
+- `IOAccessoryPowerRole`
+- `%s: invalid vSafe5V PDO: %08x`
+- `DeviceActiveOOBPairingType`
+- `%s::%s: %s: () _endpoint %s \n`
+- `IOAccessoryIDBusTransportInternalAuth`
+- `site.T`
+- `MagSafe Battery Pack`
+- `Idle`
+- `feature-ldcm-hw-version`
+- `DeviceVendorName`
+- `%s: overriding system ID %u, was %u\n`
+- `%s::%s:%d: messageType:0x%x\n`
+- `site.IOAccessoryIDBusHIDBufferEntry`
+- `extRequestGetProperty: categoryID %04x, propertyID %02x, ret %x\n`
+- `transport-usb-data-role`
+- `com.apple.iokit.IOPortFamily`
+- `site.IOAccessoryPowerSourceItemOrion`
+- `dcd detect`
+- `IOAccessoryDock9Pin::determinePowerSupply`
+- `reserveDynamicPortID`
+- `%s::_receiveResponse set report failed with error 0x%08x (%s)\n`
+- `IOAccessoryHSAIDBusTransport:%s: cancelTransmitInternal 2\n`
+- `%s::%s(): Found USB Connect Shim during start! (m_mgrPrimaryPortID: %d)\n`
+- `%s:IOAccessoryConfigStreamInterface::%s RetDevInfo: ver %u, reserved %x, numOfCategories %d \n`
+- `site.IOPortFamily`
+- `IOAccessoryHSAIDBusTransport:%s: Queued ACK=%u\n`
+- `_addPowerSource`
+- `orion-hv-enable`
+- `%s::%s: %s: PH disabled since debounce is %u\n`
+- `TRM_DeviceLocked`
+- `Ask for New Accessories`
+- `%s::%s: %s:  kIOAccDockLocBuiltIn, _voltageDetectionES %p, _voltageDetectionEnabled %d, _voltageDetectionIntervalSec %d\n`
+- `_handleNotification_block_invoke`
+- `HSAIDUserClientHost`
+- `MagSafe 3`
+- `reservePinsForType: UNSUPPORTED!`
+- `%s::%s: %s: nvram _mbGoldbondLifetimeSec=%d elapsedSec=%llu _mikeyBusGoldbondDisableSec=%d\n\n`
+- `clientMemoryForType`
+- `ParentFeatureType`
+- `VDO Count`
+- `model-number`
+- `TransportClientTimeoutMS`
+- `Self-Test`
+- `trm-enabled`
+- `8.1 Gbps (HBR3)`
+- `IOAccessoryHSAIDBusTransport:%s: sequence %u\n`
+- `_processNotifications`
+- `12111112122212121111111111111111111111`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDResponse: errCode %x, respID %u, len %llu \n`
+- `AutoMatched`
+- `%s:IOAccessoryConfigStreamInterface::%s commandID %x, data(%llu bytes):%s \n`
+- `1211111212221212111`
+- `extConfigurePower`
+- `receiveData_block_invoke`
+- `systemWillShutdown_block_invoke`
+- `%s::%s: %s: \n`
+- `site.IOPortAIDController`
+- `site.AppleNotificationQueue`
+- `WakeHostState`
+- `%s: chargerFunction: ilim=%dmA type=%x\n`
+- `%s::%s: %s: ! unexpected state %d\n`
+- `site.IOAccessoryPowerSourceItemDebounce`
+- `setSinkCount`
+- `IOAccessoryHSAIDBusTransport:%s: Sending HSAID Suspend result %s\n`
+- `IOAccessoryHSAIDBusTransport:%s: %u command(s) queued\n`
+- `Manufacturer`
+- `[ERROR] %s::%s(): [%s%s%s] Cannot release port number reservation owned by another port! (portNumber: %d, portType: %d, pCurrentNode->ownerRegistryEntryID: %llu, registryEntryID: %llu)\n\n`
+- `site.IOAccessoryIDBusUserClient`
+- `%s::%s: %s: forcePowerGateEnable: UNSUPPORTED!\n\n`
+- `12222`
+- `removeTunneledTransports`
+- `setMitigationsEnabled`
+- `disable_block_invoke`
+- `1221`
+- `IOAccessoryHSAIDBusTransport:%s: Ack transmit complete ACK=%u\n`
+- `removeTransport`
+- `Application ID`
+- `site.IOAccessoryPortSerial`
+- `IOAccessoryIDBusBulkData`
+- `IOPortFeatureRFCoEx`
+- `Audio Jack (Mini)`
+- `PropertyData`
+- `IOAccessoryUSBCurrentLimit`
+- `Index`
+- `%s::%s: %s: unexpected orientation change %d => %d\n\n`
+- `transportMatchingForService`
+- `[ERROR] %s::%s(): [%s%s%s] Could not find parent transport! (path: %s)\n\n`
+- `%s:%s:%d: _idCmdSending: %u\n`
+- `Ignore`
+- `%s::%s(): [%s@%s: %s%s%s] Updating data role... (dataRole: %d [%s] -> %d [%s], isOverride: %s, client: %s, m_dataRole: %d [%s], m_dataRoleOverride: %d [%s])\n`
+- `_reservePortNumber`
+- `min voltage`
+- `Failure`
+- `_setIndex`
+- `%s:%s:%d: Endpoint %d has timed out on report type: %x, reportID: %x\n`
+- `%s:%s:%d: _idCmdSent: %llu\n`
+- `Primary D+/D- Status`
+- `%s::%s: %s: could not create serial timeout event source\n`
+- `FeaturesEnabled`
+- `UserAuthorizationPending`
+- `%s::%s: %s: handshake aborted\n\n`
+- `%s: responsePayloadLength too large: %llu\n`
+- `EffectiveConfigProfile`
+- `%s Sleep timed out\n`
+- `invalid CRC`
+- `_setWaveformExtractionEnabled`
+- `%s:IOAccessoryConfigStreamInterface::%s RetCategoryInfo: index %d, categoryID %x, numProperties %llu, requested index %d \n`
+- `%s: response received command %02x length %llu : %s\n`
+- `ProductName`
+- `%s::%s: %s: could not clear PD_RS232_S_LE\n`
+- `exitBusError`
+- `IOAccessoryIDBusSystemStates`
+- `addTransport_block_invoke`
+- `%s:%s priority=%d pendingRelease=%d activeResource=%d\n`
+- `CategoryID`
+- `site.IOAccessoryPowerSourceItem`
+- `brick id 5`
+- `%s:IOAccessoryHIDDeviceInterface::%s ep %u, isInactive()=%d \n`
+- `%s:IOAccessoryConfigStreamInterface::%s commandID %x, %llu bytes, isInactive %d, status %x \n`
+- `%s::%s: %s: powerStateOrdinal %lu, whatDevice %p, status %#x\n`
+- `updateNominalSignalingFrequenciesForTransport`
+- `Accessory Detached`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `authCPMGFixMode %d, Unknown workaround requirement!! for command [%02x] \n`
+- `Max Current (mA)`
+- `initWithFeatureType`
+- `IOAccessoryInterfaceDeviceInfo`
+- `setLDCMMitigationsEnabled`
+- `IOAccessoryDock0PinBuiltin`
+- `%s::%s: %s: can't get workloop\n`
+- `Authenticated`
+- `20 Gbps`
+- `121111121222121211111111111111`
+- `IOAccessoryPortIDBusSNTP`
+- `12111112122212121111121121121111112211212`
+- `IOAccessoryHSAIDBusTransport::start: Called\n`
+- `40 Gbps`
+- `_publishConfigInfo`
+- `site.AIDTransferCompletion`
+- `PowerSourceType`
+- `setGoldbondBehavior`
+- `crnd`
+- `acc_hid_use_draft_ver`
+- `IOAccessoryIDBusBulkDataEndpointFunction`
+- `_updateStatusGated`
+- `determineUSBCharger`
+- `%s:IOAccessoryHIDDeviceInterface::%s [ep %u/%u] call attach\n`
+- `function-acc_pwr`
+- `IOAccessoryHSAIDBusTransport:%s: Exiting bus error state\n`
+- `setPrimaryDPDMStatus`
+- `UserAuthorizationStatusDescription`
+- `transports-supported`
+- `managerNotification`
+- `MitigationsSupported`
+- `%s: could not open ID bus\n`
+- `IOAccessoryEAInterface`
+- `IOAccessoryIDBusTransportMaxReceive`
+- `%s::%s: %s: ~~~ music stopped... _isMikeyBusRetained = true\n`
+- `1211212`
+- `_getACMTRMState`
+- `updateStatus`
+- `WakeDetectionState`
+- `[ERROR] %s::%s(): [%s@%s: %s%s%s] Error starting %s!\n`
+- `retransmitPendingPacket`
+- `%s::%s: %s: transferData->rxData == NULL\n`
+- `acc-cm-override-charger-count`
+- `%s::%s: %s: %#x, %#x, %#x, %#x\n`
+- `%s::%s: %s: elapsed ms %llu, _brickWARBrickIDDetected %d, removal/arrival %llu/%llu\n`
+- `secondary detect voltage`
+- `TunneledTransportsSupported`
+- `setMaxLaneCount`
+- `%s:IOAccessoryHIDDeviceInterface::%s [ep %u/%u] setProperty DescriptorKey \n`
+- `Gen 2`
+- `%s IOAccessoryInductiveIdentifierUpdate: fwVersionData %08x, fwVersionString %s \n`
+- `TRMDomain_Generic`
+- `IOAccessoryHSAIDBusTransport:%s: Packet transmit complete SEQ=%u ACK=%u CMD=%u\n`
+- `setPortDeviceTreeEntry`
+- `_startTransfer`
+- `LOOPBACK_MEASUREMENT`
+- `site.IOPortTransportStateCIO`
+- `IOPortFeaturePowerSource`
+- `IOAccessoryHSAIDBusTransport:%s: Sending break and exiting Suspend!\n`
+- `IOAccessoryDock30Pin`
+- `[ERROR] %s::%s(): Could not find parent port! (m_provider: %s@%s)\n`
+- `setDriverStatus`
+- `site.IOPortTransportStateDisplayPort`
+- `TransportsProvisioned`
+- `parent`
+- `updateMBGoldbondLifetimeCounter`
+- `development-cert`
+- `TransportNominalSignalingFrequenciesHz`
+- `UART`
+- `%s::%s: updateStatusInternal returned false, remove power source item\n`
+- `Hash`
+- `_setAuthorizationStatus`
+- `ParentComponentName`
+- `createPowerSourceItemsInternal`
+- `IOAccessoryPrimaryDevicePort`
+- `DeviceSupportedOOBPairingTypes`
+- `voltage max`
+- `ForceLSX`
+- `TunnelAdapterType`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) Enter \n`
+- `121111121222121211112222111212212222222222212222222222121`
+- `no ack received`
+- `%s%s%s`
+- `%X`
+- `setVDOs`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) RetHIDReportMulti: entryLen %llu, processedDataLen %llu, reportDataLen %llu \n`
+- `site.IOServiceNotificationManager`
+- `adapter info`
+- `brick id`
+- `enable_block_invoke`
+- `Port-%s`
+- `AuthorizationPending`
+- `TRM_Hash`
+- `setLiquidDetected`
+- `setCableGeneration`
+- `unsupported orientation`
+- `%s::%s: %s: dock does not suport serial\n`
+- `getDPDNConfig`
+- `site.HSAIDReceivePacketPool`
+- `extRequestGetProperty: ENTER\n`
+- `IOAccessoryUSBActive`
+- `Measure`
+- `_getReportGated`
+- `site.IOAccessoryPortIDBusSNTP`
+- `extSetProperty categoryID %04X, propertyID %04x, dataLen %u / %u\n`
+- `_copyParentPortForService`
+- `setPowerHandshakeState`
+- `%s::%s: %s: ~~~ Force kIOAccessoryPowerModeLowVoltage due to goldbond\n`
+- `dequeueCommandForTransmit`
+- `Remote Wake Event`
+- `ConnectionCount`
+- `2.7 Gbps (HBR)`
+- `%s:_receiveData receieveDataBuff for kIOAccessoryIDBusBulkDataSNTPResponseCommand \n`
+- `%s::%s: %s: isInactive\n\n`
+- `MGIDWARetryCount`
+- `%u.0.0.0`
+- `Rejected`
+- `TRM_Profile`
+- `SerialNumber`
+- `IOAccessoryHSAIDBusTransport:%s: Queued %u byte packet to driver for transmit\n`
+- `%s::%s: disconnect, removeProperty(gIOAccessoryPowerHandshakeKey)\n`
+- `Power Out`
+- `Clearing debounce.`
+- `CableSpeed`
+- `generateACK`
+- `site.IOAccessoryPowerSourceItemUSB_TypeC_Current`
+- `IOAccessoryPowerSourceItemBehavior`
+- `Failed to allocate transfer data object for Sleep!!`
+- `SupervisedTransportsRestricted`
+- `%s::%s: %s: ERROR: Could not enqueue received data buffer\n`
+- `selectPinsForVoltageDetectGated`
+- `%s IOAccessoryInductiveIdentifierUpdate: familyID(%d) %02x, extendedID(%d) %02x, deviceType(%d) %02x, deviceID(%d) %06x \n`
+- `_handleCreateEndpoint`
+- `IOAccessoryIDBusSystemStates::%s Sending state info: 0x%x 0x%x 0x%x 0x%x\n`
+- `site.IOAccessoryPowerSourceItemExternal`
+- `-restore`
+- `IOAccessoryIDBusHIDDevice`
+- `IOAccessoryHSAIDBusTransport:%s: Retransmitted %u byte packet\n`
+- `IOAccessoryAuthProtocolInterface`
+- `1212211`
+- `Smart Connector`
+- `handleBrickWARGated`
+- `registerService`
+- `messageClients`
+- `RREF_FAILURE`
+- `_receiveData`
+- `DPOverdrive`
+- `extequestGetProperty: categoryID %04X, propertyID %02X\n`
+- `Enabled`
+- `_releasePortNumber`
+- `setUserOverrideActive`
+- `fixed`
+- `%s:IOAccessoryHIDDeviceInterface::%s _hidInfoReceived=%d \n`
+- `PortDataRole`
+- `setLDCMUserOverrideActive`
+- `221`
+- `handleUSBPowerChange`
+- `12221`
+- `IOPortFeatureLDCMDataQueue`
+- `Inductive In-Band`
+- `121111121222121211112222222222222222222222222222222222222212121`
+- `site.AIDSnifferInterface`
+- `Disabled`
+- `_setAuthorizationStatus_block_invoke`
+- `IOAccessoryDockUSB_UFP`
+- `IOAccessoryConfigStreamDevInfoPID`
+- `TRM_ProfileDescription`
+- `Speed Class`
+- `AIDSnifferInterface`
+- `kIOMessageServicePropertyChange: can't find allowedFeatures property! \n`
+- `setDPOverdriveActive`
+- `site.IOAccessoryManagerOrion`
+- `findPortPropertiesForRegistryEntry`
+- `AccessorySourceCapabilities`
+- `configureAccessoryPowerInternal`
+- `setAuthenticationStatus_block_invoke_2`
+- `%s (%s) _idPartialResponse %p, RestartOnTimeoutYes, reset and restart from beginning`
+- `site.IOPortTransportComponentCCUSBPDSOPp`
+- `DataRole`
+- `iPhone Air MagSafe Battery`
+- `IODeviceTree:/chosen`
+- `SWN`
+- `Speed Class Description`
+- `Unknown Error`
+- `_completeIDBusReadCommandInternal`
+- `IOAccessoryUSBChargingVoltage`
+- `%s::%s: %s: could not add event source: %s\n`
+- `LinkRate`
+- `setExplicitParentPort`
+- `%s::%s: %s: ~~~ music started... _isMikeyBusRetained = false\n`
+- `%s handleAccessoryDetect, detect change = %x (override %d), ID change = %x (override %d), result %d \n`
+- `%s::%s: %s: could not allocate USB event interrupt\n`
+- `%s::%s: %s: Disabling HSAID!\n`
+- `disable-auth-t818`
+- `_findPortNumberReservation`
+- `v8@?0`
+- `HSAIDTransmitPacket`
+- `1211111212221212111111211111`
+- `IOAccessoryUSBCurrentLimitOffset`
+- `removeTunneledTransport`
+- `%s::attachIfnet: ifnet_allocate_extended failed (%d)\n`
+- `PropertyID`
+- `%s::%s: %s: %s: [%d] PDO unhandled\n\n`
+- `PolicyReason`
+- `1.x`
+- `_getHIDDescriptor`
+- `function-acc_sleep_pwr`
+- `%s:%s:%d: _idReadSequence: %u\n`
+- `%s: overriding system ID %u, error: %s\n`
+- `IOUserClientEntitlements`
+- `current offset`
+- `%s::%s: %s: relinquished serial port %s\n`
+- `site.IOAccessoryConfigStreamUserClient`
+- `IOPortTransportStateOrderedSet`
+- `acc-mb-ld-lifetime`
+- `%s: %s, _needsAuthCPMGWorkaround %d -> %d \n`
+- `_updateNominalSignalingFrequenciesHz_block_invoke_5`
+- `PCIe`
+- `IIC`
+- `Active`
+- `%s::%s: %s: power handshake verification failed\n`
+- `%s::%s: kIOAccDigitalIDHPMNotSupp, set PowerModeOff?\n`
+- `%s::%s: %s: cpType=0x%x, brickID=%d, I=%dmA\n`
+- `%s::%s: %s:  ~~~  _mbGoldbondLifetimeSec(%u) > _mikeyBusGoldbondDisableSec(%u) [%d] DISABLE PORT  \n`
+- `receiveDataMessage`
+- `Unrestricted`
+- `%s:IOAccessoryHIDDeviceInterface::%s commandID %x, data(%llu bytes):%s \n`
+- `%s::%s: %s: unexpected ID info response %02x\n`
+- `AppleNotificationQueue`
+- `AuthenticationStatus`
+- `121111121222121211222211122`
+- `IOAccessoryHSAIDBusTransport:%s: Received %u byte packet\n`
+- `_updateAuthorizationState`
+- `_copyOrRemoveTransportFromDict_block_invoke`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `brick id 1`
+- `site.IOAccessoryPowerSourceItemRestrictions`
+- `RXed packet different from TXed packet`
+- `_updateAuthorizationState_block_invoke_2`
+- `IOAccessoryManager`
+- `SOP''`
+- `setAccessoryMode`
+- `%s IOAccessoryInductiveIdentifierUpdate: Unknown inductive identifier 0x%08x ! \n`
+- `terminate_block_invoke`
+- `IOAccessoryIDBusSystemStates::%s boot complete\n`
+- `[ERROR] %s::%s(): [%s%s%s] Cannot call setParentPort() after start() has been called!\n\n`
+- `%s:%s granting access to priority=%d\n`
+- `ParentPortNumber`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `AuthorizationStatusDescription`
+- `setDataRate`
+- `30-Pin`
+- `primary detect voltage`
+- `_handleMitigationsForLiquidState`
+- `setHPDState`
+- `IOAccessoryConfigStreamNumOfCategories`
+- `HSAIDTransmitCommand`
+- `%s:IOAccessoryHIDDeviceInterface::%s RetHIDResponse: [ep %u], errCode %x, respID %u, len %llu \n`
+- `%s::%s: %s: sw overrun\n`
+- `hsaid-sniff`
+- `setPowerStatusGated`
+- `setPowerState_block_invoke`
+- `%s::%s: %s: data=%02x:%02x:%02x:%02x:%02x:%02x\n`
+- `A2140`
+- `usb host`
+- `LDCM_MitigationsEnabled`
+- `_propertyIDForIndex`
+- `start_block_invoke_4`
+- `%s::%s: %s: kicking _allowedFeaturesAvailable watchdog\n`
+- `has-ironman-charging`
+- `IOServiceNotificationManager.cpp`
+- `%s: [%d] PDO variable : min/maxVoltage %d/%d, maxCurrent %d\n`
+- `setMitigationsStatus`
+- `queueCommandForTransmit`
+- `matchPropertyTable`
+- `12111112122212121111112111112122222222112211111112122112`
+- `Device Function`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReportMulti: entryLen %llu, reportLen %llu \n`
+- `Lightning`
+- `IOAccessoryConfigStreamIdentifier`
+- `%s: confirmed RDO %d, maxVoltage %d, maxCurrent %d\n`
+- `feature-ldcm-arch-version`
+- `HPD_State`
+- `_setPropertiesGated`
+- `Class 11`
+- `12111`
+- `HSAIDPacket`
+- `receivedACK`
+- `HSAIDCommand`
+- `FireWire 800`
+- `setLDCMLiquidDetected`
+- `%s::%s: %s: accessory inserted in unsupported orientation\n`
+- `acc_config_stream_ignore_auth`
+- `%s::%s: %s: kUSB_DP %#x\n`
+- `121111121222121211111111221211112122221222222111`
+- `4.x`
+- `IOAccessoryCopyManager`
+- `[ERROR] %s::%s(): [%s%s%s] Port number %u is already reserved! (portType: %d)\n\n`
+- `site.IOAccessoryPowerSourceItemCurrentBase`
+- `ioaupsd_debug`
+- `setAuthenticationStatus_block_invoke`
+- `IOAccessoryHSAIDBusTransport::receiveLongFormPacket: Received packet shorter than minimum long format packet size (%u)\n`
+- `IOAccessoryHSAIDBusTransport:%s: Configuring bus error timer\n`
+- `Class Code`
+- `updateGoldbondOverrideCounts`
+- `%s::%s: %s: _powerState=%d, _powerStateInternal=%d, _sleeping=%d, _accessoryPowerModeExtOffRequested %d\n`
+- `TRM_TransportRestricted`
+- `framing error`
+- `/Library/Caches/com.apple.xbs/57E7CEDF-D2F1-48F3-8178-28CE2C2D767C/TemporaryDirectory.2qean2/Sources/IOAccessoryManager/IOAccessoryIDBusTransport.cpp`
+- `site.IOAccessoryPowerSourceItemUSB_DataContactDetect`
+- `%s::%s: %s: Turning off accessory power temporarily\n`
+- `resetAccessoryPowerGated`
+- `Calibrate`
+- `Self Test`
+- `LDCM_LiquidDetected`
+- `IOAccessoryPowerSourceItemCurrentOffset`
+- `IOAccessoryManagerInductiveOOBPairingEarlyInfo`
+- `%s:IOAccessoryHIDDeviceInterface::%s END success=%d \n`
+- `IOPortTransportStateCIO`
+- `serialThread`
+- `Power Brick`
+- `aid`
+- `IOAccessoryAccessoryManufacturer`
+- `1211111212221212111111112212111121222212222221111`
+- `IOAccessoryHSAIDBusTransport::receivedACK: Command transmit complete\n`
+- `%s::%s(): bootedFromRamDisk: %s, dockSupportsTRM: %s (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): Registering service %s... (m_mgrPrimaryPortID: %d)\n`
+- `handleIDBusCommand:%d: Kong workaround\n`
+- `portable device type`
+- `5.4 Gbps (HBR2)`
+- `Port-%s@%u`
+- `%s:IOAccessoryConfigStreamInterface::%s wait for auth! (%d / %d / %d)\n`
+- `MitigationsStatusDescription`
+- `_checkForInitialProperties`
+- `MitigationsEnabled`
+- `addTransport_block_invoke_2`
+- `setSpecificationVersion`
+- `Legacy30PinAccessory`
+- `VADResourceArbiter`
+- `Restricted`
+- `IOAccessoryHSAIDBusTransport:%s: Starting timer!\n`
+- `%s::%s: %s: setPMAssertionLevel(%llu) kIOPMDriverAssertionLevelOff returns %#x\n`
+- `_requestPropertyDataIfRequired_block_invoke`
+- `calculateAuthorizationState`
+- `%s:IOAccessoryHIDDeviceInterface::%s ver %u, ep_count %u \n`
+- `%s:IOAccessoryHIDDeviceInterface::%s [ep %u/%u] END ret 0x%x \n`
+- `[ERROR] %s::%s(): [%s@%s: %s%s%s] Error starting %s! Couldn't start!\n`
+- `initWithHandler`
+- `site.IOPortTransportAIDBusUserClient`
+- `site.IOPortTransportStateUSB3`
+- `site.IOPortTransportStateSD`
+- `%02X`
+- `%s::%s: %s: status %#x\n`
+- `HSAIDTransmitCommandPool`
+- `Wireless`
+- `getMagSafeSupported`
+- `enqueueMessage`
+- `HSAIDAckPacket`
+- `requestAccessoryInfoString`
+- `IOAccessoryUSBModeType`
+- `%s:%s:%d: _idCmdInProgress: %x\n`
+- `FullyCharged`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d), skip remove0EventSource, commandGate(%d), getWorkLoop(%d), _commandGateOnEventSource(%d) \n`
+- `processBufferQueue_block_invoke`
+- `%s::%s: %s: could not register for power events\n`
+- `IOPlatformExpertDevice`
+- `orion`
+- `Not Available`
+- `IOAccessoryHIDDeviceVID`
+- `IOAccessoryIDBusSystemStates::%s message: 0x%x\n`
+- `site.IOPortTransportProtocolCCUSBPDSSAM`
+- `_createAndStartFeatures_block_invoke`
+- `IOAccessoryPowerSourceItemUSB_DataContactDetect`
+- `requestAccessorySourceCapabilities`
+- `setProperties`
+- `_updateMeasurementTimerInterval`
+- `updateMetadata`
+- `updateAllProperties`
+- `ParentPortType`
+- `%s::%s: %s: Accessory IDBulkData Version %x not supported\n`
+- `pd data objects`
+- `Address Description`
+- `IOAccessoryIDBusTransportMaxTransmit`
+- `setCableActive`
+- `IOPortFeatureLDCM.measurement`
+- `IOAccessoryHIDDeviceInterface`
+- `%s::%s: %s: ~~~ Disable the MikeyBus headset\n`
+- `%u.%u.%u`
+- `IOAccessoryActivePowerMode`
+- `1211111212221212111111111111111111111122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `receiveSerialEvent`
+- `IOAccessoryHSAIDBusTransport:%s: type %u\n`
+- `IOAccessoryDock9Pin::handleIDBusCommandForMagicPullDown`
+- `%s::%s(): [%s%s%s] Registering service... (providerPath: %s, options: %u)\n\n`
+- `IOAccessoryManagerInductiveDeviceType`
+- `Always Allow`
+- `_handleStartGated_block_invoke`
+- `_handleStartGated_block_invoke_2`
+- `%s::%s: %s: Received %u byte packet\n`
+- `site.IOAccessoryDock30PinBuiltIn`
+- `Signaling Pin`
+- `port-number`
+- `power limit`
+- `%s::%s: Clear InflowDisable, Power Handshake completed\n`
+- `feature-rf-coex-tp-cl`
+- `free`
+- `IOUserClientDefaultLockingSetProperties`
+- `%s:IOAccessoryConfigStreamInterface::%s auth passed %d, failed %d\n`
+- `Ask Every Time`
+- `IOAccessoryUSBTypeCCurrentDetect::start: super::start failed\n`
+- `[ERROR] %s::%s(): Error starting %s!\n`
+- `%s::%s: %s: framing error\n`
+- `Description`
+- `Unknown`
+- `MeasurementStatus`
+- `IOAccessoryAccessoryVersionInfo`
+- `IOPortUserClient`
+- `transmitComplete_block_invoke`
+- `1211111212221212112122`
+- `site.IOPortTransportStatePCIe`
+- `IOAccessoryPowerSourceItemExternal`
+- `IOAccessoryHSAIDBusTransport::transmitNextPacket: Attempting to transmit packet while in bus error state\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) commandID %x, %llu bytes \n`
+- `USB 2.0`
+- `site.IOPortFeature`
+- `setRFClientMitigationStatus_block_invoke`
+- `%s::%s: %s: revoking mask=0x%x\n`
+- `calculateAuthorizationState_block_invoke`
+- `10 Gbps (UHBR10)`
+- `setRole`
+- `serviceWillRegister`
+- `%s: kAIDPDDataMsg_Request sent kAIDPDCtlMsg_Accept, waiting for PS_RDY\n`
+- `ParentTransportType`
+- `start_block_invoke_3`
+- `_handleSleepDeadline`
+- `copyTransports_block_invoke`
+- `_addProvisionedTransportsForRegistryEntry`
+- `max current`
+- `IOAccessoryIDBusBulkDataEndpointID`
+- `UUID`
+- `_isFeatureDisabled`
+- `IOAccessoryHIDDeviceInterface::%s [%d / %d], isInactive=%d, in commandGate, create endpoint \n`
+- `handleResetResponse`
+- `%s::%s(): Setting USB Restricted Mode: %s... (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s: %s: Bad buffer length:%04X\n`
+- `_handleStartGated`
+- `function-acc_detect`
+- `primary-port-id`
+- `enableNotifications`
+- `Plug Event`
+- `USBNoData`
+- `IONVRAM-FORCESYNCNOW-PROPERTY`
+- `%s::%s: %s:  ~~~ _cmOverrideChargerCount %d\n`
+- `finishStart`
+- `ROM Version`
+- `Vendor ID (SOP)`
+- `IOAccessoryHSAIDBusTransport:%s: Ignoring setPowerState during low-power wake\n`
+- `%s:IOAccessoryConfigStreamInterface::%s Not enabled! (%d / %d / %d) \n`
+- `max power`
+- `site.IOPortTransportStateCC`
+- `IOAccessoryIDBusSystemStates::%s No state info.`
+- `processAccessoryPowerModeExtOffRequestGated`
+- `Device Model ID`
+- `site.IOAccessoryManagerUSBC`
+- `(null)`
+- `stop`
+- `1211112111`
+- `_releasePortID`
+- `site.IOAccessoryPowerSourceSupplyData`
+- `No Action`
+- `acc-mpdrms`
+- `type-c plug 091216`
+- `dcd timestamp`
+- `YES`
+- `debounce deadline`
+- `%s::%s: %s: power state change %#x, mgr %#x\n`
+- `Voltage (mV)`
+- `other`
+- `IOAccessoryDock0Pin::handleAccessoryDetect`
+- `Device Locked`
+- `IOAccessoryPort`
+- `voltage min`
+- `IOAccessoryHSAIDBusTransport:%s: Received ACK packet\n`
+- `Apple MagSafe Duo Charger`
+- `type-c advertisement`
+- `site.IOPortTransportComponent`
+- `IOAccessoryPowerCurrentLimits`
+- `Timeout`
+- `_updateTRMState`
+- `%s::_receiveResponse get report failed with error 0x%08x (%s)\n`
+- `%s: AppleUSBCableType %s\n`
+- `%s::%s: %s: handling messageType %#x has returned %#x\n`
+- `%s: unknown response received command %02x length %lu\n`
+- `behaviors`
+- `USB2`
+- `Class 5`
+- `%s::%s: %s: max Rx Bulk Data Read length %llu\n`
+- `IOAccessoryAccessoryPPID`
+- `IOAccessoryIDBusSystemStates::%s Invalid state info payload length %llu:`
+- `IOAccessoryHIDDeviceEndpoint::%s endpointID %d \n`
+- `/chosen`
+- `%s:IOAccessoryConfigStreamInterface::%s _numCategories %d, numProperties %d, No properties found for categoryID 0x%04x ! \n`
+- `%s::%s: %s: Configuring Accessory Power Ready %d->%d\n`
+- `NULL`
+- `setSpecRevision`
+- `IOAccessoryHSAIDBusTransport:%s: HSAID disabled\n`
+- `_updatePreDefinedMetadataProperties`
+- `handleDetectChange`
+- `Not Ready`
+- `121111121222121211212111221112112`
+- `%s gave up waiting for accessory name string!\n`
+- `site.HSAIDPacket`
+- `[ERROR] %s::%s(): [%s%s%s] Could not reserve dynamic port number! (m_portType: %d)\n\n`
+- `acc-phms`
+- `unblockTransport`
+- `12112211211111`
+- `%s::%s: %s: AccID = %d (prev %d) AccDetect = %d (prev %d)\n`
+- `_handleNotification`
+- `variable`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDResponse:HIDReport wake _descriptorInFlight \n`
+- `IOAccessoryHSAIDBusTransport:%s: cancelTransmitInternal 1\n`
+- `sendBusReset`
+- `Max Power (mW)`
+- `%s::%s: %s: getDPDNConfig: ret:%s\n`
+- `IOAccessoryHSAIDBusTransport`
+- `%s: kAIDPDCtlMsg_PS_RDY _requestedAccessoryRdoPosition %d, _sourceCapsPending %d\n`
+- `ModelNumber`
+- `site.IOAccessoryTRM`
+- `DataRateDescription`
+- `%s::%s: %s: handleIDBusResponse:%d: RspMGIDWAWriteMemory status: 0x%x\n\n`
+- `%s::%s: %s: ACTIVATE kMikeyBusHeadsetGoldbondEnabledPlusVoltage, %#x / %d / %d\n`
+- `extInjectIncomingData: no received data to process! \n`
+- `_receiveResponse`
+- `setMetadata`
+- `HostSourceCapabilities`
+- `acc-pd-wait-retry`
+- `%s::%s(): [%s@%s: %s%s%s] m_parentPort->isFeatureEnabled(kIOPortFeatureTRM): %s, this->isTRMSupported(): %s, (transportType: %d, parentPortType: %d, parentPortNumber: %d)\n`
+- `IOAccessoryHIDDeviceUserClient`
+- `%s:%s:%d buffer queue has %d reports. Emptying queue!\n`
+- `%s::%s: %s: could not get accessory manager\n`
+- `_setSupportedFeaturesForRegistryEntry`
+- `IOAccessorySleepPowerCurrentLimit`
+- `site.IOAccessoryManagerHSAID`
+- `cancelTransfers`
+- `site.IOPortFeatureRFCoEx`
+- `IOAccessoryUSBConnectString`
+- `Card Type Description`
+- `RREF_MEASUREMENT`
+- `ProductID`
+- `tag`
+- `%s:IOAccessoryConfigStreamInterface::%s END \n`
+- `IOAccessoryAccessorySerialNumber`
+- `^{OSObject=^^?i}16@?0^{OSObject=^^?i}8`
+- `site.IOAccessoryPowerSourceBehavior`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `_isHashInCache_block_invoke`
+- `A2458`
+- `_propertyIndexForID`
+- `setHash_block_invoke`
+- `SDHC`
+- `rd`
+- `IOAccessoryPowerSourceItemUSB_ChargingPort`
+- `%s gave up waiting for model number string!\n`
+- `%s:IOAccessoryConfigStreamInterface::%s _initialRetrievalFinished %d, _numCategories %d, categoryID/Index %x/%d, propertyID/Index %x/%d, ret %x \n`
+- `charging port type`
+- `handlePowerSourceChanged_block_invoke`
+- `SinkDeviceOUI`
+- `IOAccessoryHSAIDBusTransport:%s: Exiting bus error after receiving an ACK\n`
+- `kIOMessageServicePropertyChange: allowedFeatures = 0x%x \n`
+- `kIOAccessoryManagerUSBRemapChargeThrough`
+- `%s::%s: %s: (%d)\n`
+- `_processBootArgs`
+- `adapter id`
+- `%s:%s:%d: error : threadRet: %d`
+- `_setReportGated`
+- `IOAccessoryPortStreamType`
+- `PDUSB Host`
+- `1211111212221212111121111112`
+- `start_block_invoke_2`
+- `%s::%s: %s: Failed to send link state command.\n`
+- `setProperty`
+- `IOAccessoryHSAIDBusTransport::receiveData: Invalid short format packet length %u\n`
+- `%s::%s: %s: accessoryConnect=%d\n`
+- `BCONN`
+- `A3466`
+- `IOAccessoryPowerSourceSupplyData`
+- `resolved max nominal voltage`
+- `setUserActive_block_invoke`
+- `_priorityPowerNotification_block_invoke`
+- `1211111212221212111111112212111121222212222221112212`
+- `122111221`
+- `Cached`
+- `IOAccessoryHSAIDBusTransport:%s: Received HSAID command 0x%02x\n`
+- `PortDescription`
+- `_removeTransport_block_invoke`
+- `%s configStreamAccInfoUpdated %d, messageClients kIOAccessoryConfigStreamMessageInfoChanged \n`
+- `%s:IOAccessoryConfigStreamInterface::%s _numCategories %d \n`
+- `acc-pdproxy-hvc`
+- `Address`
+- `shouldOverrideAU`
+- `Virtual`
+- `IOAccessoryDock9Pin::handleIDBusCommandForMagicPullDown: !supportsHvc\n`
+- `setFirmwareVersion`
+- `IOAccessoryIDBusSystemStates::%s Received ack for: 0x%x\n`
+- `setWakeHostState`
+- `_publishMFiDevInfoData`
+- `DeviceModelNumber`
+- `%s:IOAccessoryHIDDeviceInterface::%s [ep %u/%u] add to _endpoints \n`
+- `%s::%s: %s: integrity error\n`
+- `IOAccessoryHSAIDBusTransport:%s: %u command(s) dequeued\n`
+- `DataRoleDescription`
+- `[ERROR] %s::%s(): [%s%s%s] Error starting %s! (providerPath: %s)\n\n`
+- `%s IOAccessoryInductiveIdentifierUpdate: can't find any inductive identification property! \n`
+- `site.IOAccessoryOOBPairingInterfaceUserClient`
+- `%s::%s: %s: unaccepted bulk data command error as ID read response %02x:%02x:%02x:%02x:%02x\n`
+- `addPowerSourceOption`
+- `%s::%s: %s: error:%s\n\n`
+- `%s::%s: %s: dpdnConfig: 0x%x 0x%x\n`
+- `AuthenticationTimeoutS`
+- `site.IOAccessoryOOBPairingInterface`
+- `_isExemptAccessoryAttached`
+- `ioaps_debug`
+- `%s:IOAccessoryConfigStreamInterface::%s RetPropertyData: catIndex %d / %d, propIndex %d, categoryID %x, propertyID %x, dataLen %llu, requested ID %x-%x \n`
+- `DeviceHardwareRevision`
+- `IOAccessoryHIDDeviceEndpointDescriptor`
+- `IOAccessoryHSAIDBusTransport::receiveLongFormPacket: Received packet longer than receive buffer size (%u > %u)\n`
+- `%s::%s: %s: ID command failed after %lu retries, aborting\n`
+- `site.IOAccessoryIDBusSystemStates`
+- `_handleNotifications`
+- `accessoryDetect`
+- `Device ID`
+- `%s:_receiveResponse Received kIOAccessoryIDBusBulkDataSNTPRequestResponse. command %02x length %lu\n`
+- `transferData`
+- `flushFIFO`
+- `%s::tapCommand: Failed to allocate %lu byte packet (%d)\n`
+- `initWithTask`
+- `Priority`
+- `12 Mbps (Full Speed)`
+- `~~~ measurement [%d] (%d):: `
+- `DriverStatus`
+- `HashStatus`
+- `site.IOPortTransportUserClient`
+- `13.5 Gbps (UHBR13.5)`
+- `Product ID (SOP)`
+- `%s::%s: %s: serial port not found\n`
+- `unrecognized`
+- `site.IOPortTransportComponentCCUSBPDSOP`
+- `disableDetect`
+- `site.IOPortTunnelingTransportState`
+- `IOAccessoryDeviceDynamicPort`
+- `setLegacy30PinAccessory`
+- `%s: authcp_fix_mode %d`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReport: ep %u, reportID %u, len %llu \n`
+- `IOAccessoryHSAIDBulkData:%s:%d\n`
+- `IOAccessoryConfigStreamInterface`
+- `acc-pdproxy-timeout`
+- `PreResume`
+- `Power In`
+- `max voltage`
+- `Debouncing transition.`
+- `setAuthorizationStatus`
+- `IOAccessoryHSAIDBusTransport::validateAndUpdateReceivedSequenceNumber: seqno check failed\n`
+- `IOAccHID-%d`
+- `%s:IOAccessoryHIDDeviceInterface::%s ENTER \n`
+- `type-c rcpt tstr`
+- `TransportType`
+- `IOAccessoryHIDDevicePID`
+- `SOP'`
+- `site.Client`
+- `[ERROR] %s::%s(): Failed to start %s!\n`
+- `IOAccessoryUSBConnectShim`
+- `setHash`
+- `%s::%s: %s: could not open accessory port\n`
+- `aid-sniff`
+- `trm_enabled`
+- `NEGATIVE_CAP_RES`
+- `IOPortTransportStateUSB`
+- `owner`
+- `IOAccessoryConfigStreamUserClient`
+- `site.IOAccessoryPowerSourceItemUSB_ChargingPort`
+- `configureAllowedFeatures`
+- `IOPortTransportStateDisplayPort`
+- `IOAccessoryHSAIDBulkDataEndpoint`
+- `maximum current`
+- `site.IOPortFeatureUserClient`
+- `%s::%s: handleAccessoryPowerWillChange, confirm PowerModeOff\n`
+- `%s Queueing active: %d for endpoint id: %d function: %d`
+- `5 Gbps`
+- `_removeFeatures_block_invoke`
+- `IOAccessoryPowerSourceItemCurrentBase`
+- `PredefinedMetadataKeys`
+- `%s::%s: %s: Configuring Accessory Power to (%d)\n`
+- `port-type`
+- `IOAccessoryPowerSourceItemPDPlatformCurrentLimit`
+- `adjustMetadata`
+- `%s::%s: %s: !_ccMgr\n\n`
+- `orion-hs`
+- `transports-provisioned`
+- `_addTransportToDict_block_invoke`
+- `Class 6`
+- `mb-acc-vlow`
+- `%s::%s: %s: handleIDBusResponse:%d: RspMGIDWAReadMemory 0x%llx\n\n`
+- `IOAccessoryUSBPowerSourceDetect`
+- `IODTNVRAM`
+- `acc-pd-pow`
+- `%s: response received command %02x length %lu\n`
+- `%s: truncating report from %lu to %lu bytes\n`
+- `publishResourcesGated`
+- `Trace`
+- `%s::%s: %s: accessory ID did not complete after %u retries (state %u)\n`
+- `handleAccessoryPowerDidChange`
+- `site.IOAccessoryHSAIDBusTransport`
+- `IOAccessoryHSAIDBusTransport:%s: Received %u byte command\n`
+- `%s::%s: %s:  cm override charger count %u\n`
+- `%s::%s: %s: ~~~ voltage goldbond _configuredGoldbondBehavior = %d powerMode = %d\n`
+- `ParentPortBuiltIn`
+- `HSAIDTransmitCommand::reset: Warning, resetting command with packets attached\n`
+- `%s:IOAccessoryConfigStreamInterface::%s send initial!  (%d / %d / %d)\n`
+- `getAccessoryPowerInfo`
+- `%s:IOAccessoryHIDDeviceInterface::%s Enter \n`
+- `%s:IOAccessoryHIDDeviceInterface::%s ep %u, isInactive=%d \n`
+- `%s:%s:%d: _idReadInProgress: %x\n`
+- `validateAndUpdateReceivedSequenceNumber`
+- `TunneledTransportsProvisioned`
+- `_addHashToCache_block_invoke`
+- `Specification Version Description`
+- `%s::%s: %s: Successfully sent link state command.\n`
+- `com.apple.ioam.ldcm.d9`
+- `A3250`
+- `%s provisional object voltage max/min %d/%d, current %d\n`
+- `BranchDeviceOUI`
+- `%s::%s: %s: Called\n`
+- `ProtocolString`
+- `XXXXX `
+- `20 Gbps (UHBR20)`
+- `IOAccessoryHSAIDBusTransport:%s: Received ping packet\n`
+- `acc-allow-down-hvc`
+- `%s:IOAccessoryConfigStreamInterface::%s END success=%d \n`
+- `acc-pd-timeout`
+- `AuthenticationStatusDescription`
+- `_addIDToCache`
+- `IOAccessoryPowerSourceItemUSB_TypeC_Current`
+- `12111112122212121111111211111112112222`
+- `AccessorySinkCapabilities`
+- `%s::%s: %s: can't create command gate\n`
+- `Device Model Revision`
+- `121111121222121211111121111111211`
+- `%s::%s: %s: unexpected event %x %x\n`
+- `_sendSystemStateMessage`
+- `[ERROR] %s::%s(): Error starting %s! (provider: %s@%s)\n`
+- `smc`
+- `%s: setConnectedState: %d -> %d, accID: %d -> %d \n`
+- `%s IOAccessoryInductiveIdentifierUpdate: fwVersionData(%d) %08x, configStreamAccInfoUpdated %d \n`
+- `handleStateChange`
+- `SDSC`
+- `12111112122212121111111122121111212222122222211122122`
+- `TransportsUnauthorized`
+- `Transport Timeout`
+- `d- voltage`
+- `Class 2`
+- `Unsupported`
+- `handleIDBusResponse:%d: RspGetState\n`
+- `start`
+- `site.IOAccessoryConfigStreamInterface`
+- `[ERROR] %s::%s(): [%s%s%s] Could not reserve port number %u! (m_portType: %d)\n\n`
+- `CacheMissCount`
+- `setupSerialPort`
+- `_setEnabledFeatures`
+- `_disableOVPInterrupts`
+- `NO`
+- `_sendCommand`
+- `site.IOAccessoryIDBusPDSupplyData`
+- `1211111212221212111111`
+- `site.IOAccessoryPortDataQueue`
+- `HPD_StateDescription`
+- `addTransport`
+- `[ERROR] %s::%s(): [%s%s%s] Cannot call setPortDeviceTreeEntry() after start() has been called!\n\n`
+- `[ERROR] %s::%s(): [EDT] Invalid value for /defaults/%s!\n`
+- `IOPortTransportStateSWN`
+- `_copyCachedData`
+- `%s:IOAccessoryConfigStreamInterface::%s categoryID %x, propertyID %x, in commandGate, retrieve propertyData \n`
+- `Not Applicable`
+- `%s::%s(): [%s%s%s] Registering service... (providerPath: %s)\n\n`
+- `IOAccHID-%d-%d`
+- `v24@?0B8B12^{IOServiceNotificationManager=^^?i^{IOService}^{OSString}IIB^{OSOrderedSetEquality}^{_IOLock}BBB^{_IORecursiveLock}^?^v^v^{IONotifier}}16`
+- `12111112122212121111222222222222222222222222222222222222221`
+- `newUserClient`
+- `BSD Name`
+- `Failed to allocate transfer data object for GetLastError!!`
+- `%s::%s: %s: ~~~ leaving MikeyBus headset active because of user request : %d / %#x\n`
+- `receiveData`
+- `%s::%s: !getAccessoryPowerReady(); set PowerModeOff?\n`
+- `%s::%s: %s: Unabled to retrieve allowedFeaturesMask property, use default %x\n`
+- `provisional`
+- `%s:IOAccessoryHIDDeviceInterface::%s [ep %u/%u] call start \n`
+- `%s:IOAccessoryHIDDeviceInterface::%s RetHIDInfo: ver %u, ep_count %u, vid %02x%02x, pid %02x%02x, country %u \n`
+- `10 Gbps`
+- `%s::%s: Set InflowDisable for Power Handshake\n`
+- `12111112122212121111111111111`
+- `IOAccessoryPowerSourceItemBrickLimit`
+- `site.IOAccessoryPowerSourceItemBrickLimit`
+- `SSAM`
+- `Wi-Fi`
+- `None`
+- `Subsystem Vendor Id`
+- `%s::%s: %s: _overrideMbAccLowVoltage %d, _overrideMbIdBusAssert %d\n`
+- `1211111212221212111111211112`
+- `kIOAccessoryManagerUSBPowerIgnore`
+- `%s::%s: %s: (%d) found Adapter driver\n`
+- `%s:%s:%d: _idCmdSending: %llu\n`
+- `smc-charger`
+- `Ignored`
+- `transmitACK`
+- `acc-pd-log`
+- `stress-rack`
+- `IOAccessoryHIDDeviceIdentifier`
+- `%s::%s: %s: line break\n`
+- `port-features`
+- `usb brick`
+- `TRM_CacheMissThreshold`
+- `site.IOAccessoryUSBTypeCCurrentDetect`
+- `ParentComponentDescription`
+- `[ERROR] %s::%s(): Could not find parent port! (transportType: %d)\n`
+- `_copyID`
+- `message`
+- `%s::%s: %s: kUSB_DM %#x\n`
+- `IOAccessoryManagerType`
+- `site.IOPortTransportComponentCC`
+- `%s%u`
+- `removePowerSources`
+- `triggerHPDIRQ`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) END, isInactive %d, ret=%#x \n`
+- `site.IOAccessoryIDBusBulkDataEndpoint`
+- `IOAccessoryDigitalID`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d), removeEventSource \n`
+- `_setMeasurementStatus`
+- `site.VADResourceArbiterUserClient`
+- `[ERROR] %s::%s(): [%s%s%s] Failed to initialize %s!\n\n`
+- `SDXC`
+- `_startIDBusInfoInternal`
+- `IOAccessoryIDBusEA`
+- `handleServiceReregistration`
+- `acc-pdproxy-log`
+- `site.HSAIDTransmitPacket`
+- `3.x`
+- `%s::%s: %s: can't create workloop\n`
+- `low voltage current limit`
+- `Not Required`
+- `receiveSerialByte`
+- `%s::%s: %s: could not allocate receive queue\n`
+- `IOAccessoryManagerOrion::start: _powerRole:%x\n`
+- `setLDCMMeasurementStatus`
+- `IOAccessoryDock9Pin::handleIDBusCommandForMagicPullDown: GetState: status:0x%x\n`
+- `initWithService`
+- `IOAccessoryManagerUserClient::%s: PowerModeOff\n`
+- `setUserAuthorizationStatus`
+- `LDCM_State`
+- `IOAccessoryDock9Pin::handleIDBusCommand: GetState\n`
+- `DeviceDockType`
+- `handleDigitalID`
+- `IOAccessoryPowerSourceItemLowVoltageLimit`
+- `_getCachedWaveform`
+- `_handleACMMessage`
+- `_receiveDataMsg_block_invoke_2`
+- `registerNotificationPort`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) send GetHIDDescriptor \n`
+- `%s::%s: %s: ID read command failed after %lu retries, aborting\n`
+- `Max Receiving Frequency`
+- `%s: USB Power (VBUS) Present: %d, Physical Connection (CON_DET): %d\n`
+- `IOPortFeatureLDCM.wetToDry`
+- `_handleNotificationGated`
+- `%s: _needsAuthCPMGWorkaround %d -> %d \n`
+- `12111112122212121121112221112121122`
+- `notifyPowerSourceChange`
+- `IOPortTransportComponent`
+- `site.IOAccessoryHSAIDBulkDataEndpoint`
+- `%s::%s: %s: reacquired serial port %s\n`
+- `_isCachedAccessoryAttached`
+- `IOAccessoryHIDDeviceEndpointIdentifier`
+- `t818-auth-timeout`
+- `1211111121112`
+- `handleStart`
+- `IOAccessoryHSAIDBulkData`
+- `IOAccessoryAccessoryName`
+- `ProxySourceCapabilities`
+- `%s::%s: %s: allowedFeaturesMask %x, setProperty\n`
+- `%s:IOAccessoryHIDDeviceInterface::%s END \n`
+- `_handleAccessoryInfo`
+- `12111112122212121121111111122`
+- ` %02x`
+- `configureAccessoryPowerReady`
+- `%s::%s: %s: Restoring accessory power state to %d\n`
+- `Class 10`
+- `LiquidDetected`
+- `component-type`
+- `updateStatusInternal`
+- `AuthenticationRequired`
+- `_startIdentification`
+- `Device Id`
+- `site.IOAccessoryManager`
+- `LinkRateDescription`
+- `site.IOAccessoryBulkDataEndpoint`
+- `%s:%s:%d: _idReadRequest: %x\n`
+- `handleErrorResponse`
+- `Specification Version`
+- `handleIDBusResponse`
+- `%s:%s:%d Failed to get descriptor!\n`
+- `IOPortTransportProtocolCCUSBPDSSAM`
+- `adapter description`
+- `IOPortTransportStateUSB3`
+- `initPortType`
+- `%s::%s: %s: accessory needs PH override\n`
+- `_receiveDataMsg_block_invoke`
+- `site.IOAccessoryPowerSourceItemBrickID`
+- `%s::%s: %s: releasePins %#x\n`
+- `Not Set`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `%s::%s: %s: USB=%x ACCx=%x DB=%x MB=%x UART=%x PWR=%x HV=%x AI=%x AU=%x PU=%x BP=%x PO=%x CC=%x BD=%x HS=%x HPM=%x\n`
+- `site.IOPortFeaturePowerIn`
+- `dcd voltage`
+- `acc-cm-override-count`
+- `A2580`
+- `usb charger`
+- `acc-pd-hvc`
+- `%s::%s: %s: terminating due to error:%s\n\n`
+- `[ERROR] %s::%s(): Couldn't find ACM service!\n`
+- `sdp`
+- `DeviceSerialNumber`
+- `%s::%s: %s: %d\n`
+- `%02x `
+- `requestMeasurement`
+- `setLaneCount`
+- `BuiltIn`
+- `Class 9`
+- `%s:IOAccessoryHIDDeviceInterface::%s _commandGate(%d), _commandGateOnEventSource=%d \n`
+- `_startIDBusCommandInternal`
+- `startTransfer_block_invoke`
+- `setPlugOrientation`
+- `setSyncMode`
+- `IOAccessoryHSAIDBusTransport::transmitNextPacket: startTransmit failed (%s)\n`
+- `Apple Inc.`
+- `usb type-c`
+- `TRM_RelaxedPeriod`
+- `UserAuthorizationTimestamp`
+- `wet`
+- `%s:IOAccessoryHIDDeviceInterface::%s commandID %x, %llu bytes, isInactive %d, status %x \n`
+- `TransportsSupported`
+- `_updateHashStatus_block_invoke`
+- `IOAccessoryDevicePort`
+- `site.HSAIDTransmitCommandPool`
+- `%s::%s: %s: Accessory Power Forced OFF!\n`
+- `kHashNotAvailable`
+- `IOAccessoryIDBusSystemStates::%s Failed to send state info (0x%x)!\n`
+- `IOAccessoryManagerAID.cpp`
+- `acc-bwar-interval`
+- `%s::%s: %s:  ~~~ _cmOverrideCount %d\n`
+- `site.IOPortTransportStateSWN`
+- `%s::%s(): [%s@%s: %s%s%s] Found ACM service during startup! (transportType: %d, parentPortType: %d, parentPortNumber: %d)\n`
+- `TRM_CacheMiss`
+- `publishResources`
+- `site.OSSetEquality`
+- `IOPortTransportAIDBus`
+- `configureAccessoryPowerReadyGated`
+- `No Link`
+- `CableGeneration`
+- `site.IOPortTransportProtocol`
+- `site.IOAccessoryIDBusPD`
+- `12111112122212121111111111112`
+- `%s::%s: %s: new baud rate %u\n`
+- `handleIDBusState: already in progress\n`
+- `Failed to allocate transfer data object!!`
+- `acc-pdproxy-debounce`
+- `OVP Error`
+- `%s::%s: %s: !matchingDictionary\n\n`
+- `Device Subclass`
+- `smc-ext-charger`
+- `%s::%s: %s: (%d) look for Adapter driver\n`
+- `IOAccessoryManagerAllowedFeatures`
+- `_updateHashStatus`
+- `setForceLSXActive`
+- `121111121222121211111121111122`
+- `IOAccessoryAccessoryFirmwareVersion`
+- `%s::%s: %s: disallowing low voltage power\n`
+- `Product Revision Level`
+- `EDIDChanged`
+- `%s::attachIfnet: bpf_attach failed (%d)\n`
+- `setWakeDetectionState`
+- `battery`
+- `Complete`
+- `%s::%s: %s: ()\n`
+- `%s::%s: %s: Setting current limit to %d based on state %d\n`
+- `IOAccessoryEAInterfaceUserClient`
+- `PortNumber`
+- `%s::%s: %s: no digital ID after %llus\n`
+- `MikeyBus`
+- `%s:%s:%d: _infoInProgressCount: %x\n`
+- `sendBreak`
+- `features-supported`
+- `%s::%s: %s: could not get accessory port\n`
+- `IOAccessoryBulkDataEndpoint`
+- `IOAccessoryHSAIDBusTransport:%s: startTransmit failed (%s)\n`
+- `MGIDWAState`
+- `site.IOPortTransportStateIIC`
+- `%s:IOAccessoryConfigStreamInterface::%s _numCategories %d, ret %x \n`
+- `invalid post-SYNC byte`
+- `received break`
+- `IOPortTransportAIDBusUserClient`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) END \n`
+- `Mini DP`
+- `handleAccessoryPowerWillChange`
+- `_clearCachedData`
+- `12111112122212121111222122112`
+- `%s: sending data %02x : %s\n`
+- `Specification Revision`
+- `%s::%s(): Could not set USB RM state - no reference to USB Connect Shim!\n`
+- `%s::%s: %s: Sending zone 2 read\n`
+- `AIDBus`
+- `LOW_IMPEDANCE`
+- `Product ID`
+- `1211111212221212111111111111112`
+- `%s: pdData : minVoltage %d, maxVoltage %d, maxNominalVoltage %d, maxCurrentLimit %d\n`
+- `_categoryIndexForID`
+- `IOPortTransportComponentCCUSBPDSOPp`
+- `Device Class`
+- `%s::%s: Set InflowDisable\n`
+- `IOPortTransportStateIIC`
+- `IOAccessoryHSAIDBulkDataVersion`
+- `High`
+- `12111112122212121111112111112`
+- `IOAccessoryDock30PinBuiltIn`
+- `_addTerminatedTransportHash`
+- `_runVoltageDetectStateMachineGated`
+- `site.struct IOAccVoltageDetectEventReport`
+- `B24@?0^{IOService=^^?i^{ExpansionData}^{OSDictionary}^{OSDictionary}^{ExpansionData}^{IOService}i^{IOService}[2I]QQ^{IOServicePM}B^vi^{IOInterruptSource}}8^{IONotifier=^^?i}16`
+- `%s::%s: %s: !psdObjects\n`
+- `com.apple.private.IOAccessoryIDBusSystemStatesUserClient.access`
+- `TRM_GracePeriodReason`
+- `Serial Number`
+- `_hidResponseErrorToIOReturn`
+- `IOAccessoryPowerHandshake`
+- `IOAccessoryPortSerial`
+- `121111121222121211111121111121222222221122111111121221111222222122221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211221211`
+- `setLegacyAdapter`
+- `LinkTrainingMode`
+- `hsaid-bd`
+- `IOPortFamily`
+- `Success`
+- `_portWetDryStateTransitionCheck`
+- `1.62 Gbps (RBR)`
+- `Reference`
+- `setDataRoleOverride`
+- `Resume`
+- `transport-type`
+- `_completeIDBusCommandInternal`
+- `cancelTransferGated`
+- `Source`
+- `DetectionIgnoreVBUS`
+- `acc-pd-src-cap`
+- `%s: receieveDataBuff failed! \n`
+- `Class`
+- `IOAccessoryHIDDeviceEndpoint`
+- `IOAccessoryPowerSourceItem`
+- `IOAccessoryHSAIDBusTransport::processSinglePacketCommand: No transmit packets available\n`
+- `%s: could not find DigitalID\n`
+- `1212`
+- `acc_debug_config_stream_msg`
+- `acc_config_stream_disable_complete`
+- `_startIDBusReadCommandInternal`
+- `IOPortTransportComponentCC`
+- `IOUserClientClass`
+- `%s::%s: %s: Sent zone 2 write (error code: 0x%x)\n`
+- `IOPortTransportStateCC`
+- `PowerSourceOptions`
+- `Loopback`
+- `121111121222121211111121111222211222222211111222222`
+- `blockTransport`
+- `IOAccConfig-%d`
+- `max absolute voltage`
+- `HardwareVersion`
+- `MeasurementStatusDescription`
+- `IOPortFeaturePowerSourceOptionFixed`
+- `LDCMPin`
+- `12111112122212121111112111111`
+- `USB-A`
+- `%s:IOAccessoryConfigStreamInterface::%s \n`
+- `IOAccessoryOOBPairingInterfaceUserClient`
+- `receiveDataBuff`
+- `%s Couldn't queue report due to failed allocation!\n`
+- `linkStateTransferCompletion`
+- `trm-disable-port`
+- `IOPort`
+- `site.IOPortFeatureLDCMDataQueue`
+- `type`
+- `AsymmetricModeSupportedBit`
+- `122222111112121`
+- `[ERROR] %s::%s(): [%s@%s: %s%s%s] Error starting %s! No provider!\n`
+- `%s::%s: %s: ~~~ idbus goldbond assertAidBusReset\n`
+- `LDCM`
+- `IOAccessoryHIDDeviceInterface::%s ENTER\n`
+- `received non-SYNC byte while idle`
+- `Triggered`
+- `rootdev`
+- `SinkDeviceID`
+- `IOAccessoryHSAIDBusTransport::outputCommand: Fragmented packets not supported\n`
+- `serial`
+- `[ERROR] %s::%s(): Could not find parent built-in port! (m_provider: %s@%s)\n`
+- `ParentBuiltInPortNumber`
+- `AuthorizationRequired`
+- `site.IOAccessoryManagerAID`
+- `shouldOverridePowerHandshake`
+- `site.IOPortFeatureLDCMUserClient`
+- `performCommandV3`
+- `FirmwareVersion`
+- `%s::%s: %s: psStatus %d, psTimestamp %llu\n`
+- `RF CoEx`
+- `current limit`
+- `handleIDBusCommand`
+- `IOPortTransportComponentCCUSBPDSOP`
+- `_setUserAuthorizationStatus`
+- `%s::%s: %s: goldbondBehavior %d desiredVoltage = %u\n\n`
+- `%s::%s: %s: could not create serial receive thread\n`
+- `%s::attachIfnet: Unable to find free unit number\n`
+- `IOAccessoryHIDDeviceInterface::%s END, status %x \n`
+- `initWithCapabilities`
+- `site.HSAIDCommand`
+- `Baseband`
+- `HSAIDTransmitPacketPool`
+- `site.HSAIDAckPacket`
+- `%s::%s: PowerModeOff\n`
+- `AddressDescription`
+- `IOPortFeaturePowerSourceOption`
+- `%s::%s: %s:  mb voltage detected lifetime sec %u\n`
+- `%s::%s: Set InflowDisable, Power Handshake failed\n`
+- `site.HSAIDUserClientHost`
+- `precharge-time`
+- `type-c plug`
+- `cp`
+- `_sleepWakeNotification`
+- `checkRpValueTimer`
+- `Product Type Description`
+- `completeTransferCallback`
+- `site.IOAccessoryIDBusSystemStatesUserClient`
+- `\"%s: could not find system ID: %s <NO ESN_STATUS!>\" @%s:%d`
+- `recheckAccessoryVersionInfo`
+- `%s::%s: %s: Sending zone 2 write\n`
+- `%s::%s: checkOverrideMbAccLowVoltage, set PowerModeOff?\n`
+- `%s::%s: %s: Processing power state change to %d\n`
+- `invalid receive length`
+- `SD Card`
+- `%s::%s: %s: ID bus not available and debug enabled; overriding power handshake\n`
+- `A3502`
+- `Power Source Behavior`
+- `IOAccessoryUSBCurrentLimitBaseSetting`
+- `%s:IOAccessoryHIDDeviceInterface::%s _handleStartThreadCall(%d) \n`
+- `%s: role swap timed out\n`
+- `cdp`
+- `%s: unexpected responsePayloadLength: %llu\n`
+- `site.VADResourceArbiter`
+- `resourceReleaseTimeout`
+- `%s:IOAccessoryConfigStreamInterface::%s Enter \n`
+- `ready`
+- `removePowerSourceOptions_block_invoke`
+- `%s::%s: %s:  ~~~ disabled, _voltageDetectionEnabled %d\n`
+- `_handleAutoRetrieveCategory`
+- `IOAccessoryID`
+- `12122112`
+- `site.HSAIDReceivePacket`
+- `%s::%s: %s: failed to clear PT on accessory power off: %s\n`
+- `@`
+- `Device Unlocked`
+- `Inactive`
+- `IOPortAIDController`
+- `%s::%s(): Found USB Connect Shim! (m_mgrPrimaryPortID: %d)\n`
+- `runVoltageDetectStateMachineGated`
+- `IOAccessoryIDBusPDSupplyData`
+- `handleStartThreadCall`
+- `site.IOAccessoryManagerUserClient`
+- `_updateDataRole_block_invoke`
+- `TransportsBlocked`
+- `requestAccessoryPowerOffGated`
+- `site.IOAccessoryHIDDeviceUserClient`
+- `IOAccessoryHSAIDBusTransport::outputCommand: No transmit commands available\n`
+- `function-dock_parent`
+- `disableNotifications`
+- `IOAccessoryUSBConnectShimEnableACSleepKey`
+- `UserAuthorizationStatus`
+- `handleAccessoryDetect`
+- `handleIDBusCommandForMagicPullDown`
+- `_setLDCMState`
+- `ParentBuiltInPortType`
+- `SinkCount`
+- `%s:_receiveResponse Received kIOAccessoryIDBusBulkDataSNTPBroadcastCommand. command %02x length %lu\n`
+- `IOAccessoryHSAIDBusTransport::receiveLongFormPacket: Received unrecognized HSAID accessory to host command (0x%02x)\n`
+- `OSValueObject<IOAccessoryIDBusTransport::TransferData>`
+- `Not Monitored`
+- `PDUSB Hub`
+- `DataRate`
+- `setCableOptical`
+- `PortDataRoleDescription`
+- `USB-C`
+- `IOAccessoryDock9Pin::handleIDBusCommand: GetState: status: 0x%x\n`
+- `continuedDetect`
+- `BranchDeviceID`
+- `HSAIDUserClientAccessory`
+- `outputCommand`
+- `IOAccessoryHSAIDBusTransport:%s: cancelTransmitInternal\n`
+- `IOAccessoryHSAIDBusTransport:%s: Suspended and in on state! Recovering by sending a break!\n`
+- `Subsystem Id`
+- `_handleNotification_block_invoke_2`
+- `handleHighSpeedMode`
+- `site.IOAccessoryPortUserClient`
+- `A3503`
+- `site.IOAccessoryEAInterface`
+- `setPropertyData`
+- `IOAccessoryPowerReady`
+- `initWithTransportType`
+- `transferDataGated`
+- `_cacheWaveformForDryToWet`
+- `1211111212221212111121111121`
+- `PreventSourceDetection`
+- `got IOAccessoryInductiveIdentifierUpdate! check Inductive Identification \n`
+- `IOAccessoryManagerInductiveOOBPairingHostInfo`
+- `TransportDescription`
+- `disabled`
+- `IOAccessoryAccessoryDockType`
+- `State`
+- `OVP_DETECTED`
+- `ManufacturerName`
+- `voltage`
+- `VDOs`
+- `site.IOPort`
+- `site.IOAccessoryIDBusEA`
+- `VADResourceArbiterUserClient`
+- `UNKNOWN`
+- `IOAccessoryIDBusState`
+- `%s::%s: %s: unexpected ID read response %02x:%02x:%02x:%02x:%02x\n`
+- `setPowerState`
+- `DeviceSupportsSupports2Way`
+- `IOAccessoryHSAIDBusTransport::receiveData: Receiving fragmented commands not supported\n`
+- `setUserPresent_block_invoke`
+- `LDCM_UserOverrideActive`
+- `_publishDevInfoData`
+- `site.HSAIDTransmitPacketPool`
+- `brick id 2`
+- `%s: [%d] low voltage - currentLimit %d, cc %d\n`
+- `%s: [%d] PDO fixed : maxVoltage %d, maxCurrent %d\n`
+- `IOAccessoryDetect`
+- `%s::%s:%d: _lastValue:%d\n`
+- `IOAccessoryDock30Pin::handleAccessoryDetect`
+- `usb device`
+- `IOAccessoryPortDataQueue`
+- `site.IOAccessoryTransport`
+- `ConnectionActiveDurationS`
+- `[ERROR] %s::%s(): [%s%s%s] Failed to start port feature: %d [%s]...\n\n`
+- `RF Timeout`
+- `UID`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) RetHIDReportMulti: report(%llu bytes):%s \n`
+- `HostAltConfig`
+- `setCardType`
+- `setMeasurementStatus`
+- `%02X `
+- `Authorized`
+- `IOAccessoryDock9Pin::handleIDBusCommandForPowerHandshakeDebounce`
+- `%s::%s: %s: sending resistor id %u \n`
+- `IOAccessoryIDBusBulkDataVersion`
+- `setPinConfiguration`
+- `%s::%s: %s: removing property kIOAccessoryAccessoryVersionInfo\n`
+- `IOAccessoryDock9Pin::handleAccessoryDetect`
+- `121111121222121211211222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222221111111122`
+- `setLDCMState`
+- `_copyCachedWaveform`
+- `%s:IOAccessoryHIDDeviceInterface::%s RetHIDReportMulti, commandID %x, bytes %llu >= %llu \n`
+- `12112`
+- `%s::%s: sleepPower=%d, allowedFeaturesMask=0x%x, state=0x%x; set PowerModeOff?\n`
+- `%s:IOAccessoryHIDDeviceInterface::%s [ep %u/%u] setProperty EndpointIDKey \n`
+- `IOAccessoryHSAIDBusTransport:%s: transmitACK\n`
+- `site.IOAccessoryPowerSourceItemPD`
+- `power status`
+- `_updateAuthorizationState_block_invoke`
+- `configureAccessoryPower`
+- `TRM_CacheMissCount`
+- `IOAccessoryHSAIDBusTransport:%s: %u acked by accessory\n`
+- `Sync Mode`
+- `PortTypeDescription`
+- `Undefined`
+- `121111121222121211111111221211112122221222222111222`
+- `IOAccessoryHIDDeviceEndpointID`
+- `site.IOAccessoryDockUSB_UFP`
+- `%s::%s: %s: releasePins(%d) %#x\n`
+- `Debounce set to %d`
+- `function-read_acc`
+- `Active Cable`
+- `site.IOAccessoryDock9Pin`
+- `setMagicPullDownState`
+- `site.IOAccessoryPortIDBus`
+- `IOAccessoryHSAIDBusTransport::transmitACK: Attempting to transmit ACK while in bus error state\n`
+- `ESN_STATUS`
+- `site.IOAccessoryUSBPowerSourceDetect`
+- `IOAccessoryIDBusPD::handleConfigChanged: 0x%x 0x%x\n`
+- `%s::%s: %s: unexpected ID response %02x:%02x:%02x:%02x:%02x to cmd %02x endpoint %02x\n`
+- `site.HSAIDUserClientAccessory`
+- `current limit offset`
+- `PREEMPTED`
+- `hid-cache-ep2`
+- `resolved current limit`
+- `IOAccessoryManagerSystemID`
+- `setLinkRate`
+- `%s::%s: %s: could not send ID command: %s\n`
+- `%s::%s: %s: %s: ID bus transport not found\n`
+- `MagSafe`
+- `rfcoex-rf-cl`
+- `AID`
+- `%s::%s: %s:  ~~~ returning %#x, unusedPins :: %d %d %d %d, isAttached %d \n`
+- `setCableSpeed`
+- `%s::%s: %s: could not find power source\n`
+- `_receiveDataMsg`
+- `processLDCMV4Measurement`
+- `hid-cache-ep1`
+- `%s:%s:%d Failed to register read response action: %s!\n`
+- `_setWinningPowerSourceOption`
+- `HSAIDReceivePacket`
+- `PlugOrientation`
+- `IOAccessoryMagicPullDown`
+
+**[__TEXT.__os_log]**
+
+- `%s::%s(): [Boot Arg] %s=0x%08x\n`
+- `%s::%s(): isMember: %s (anObject: %p, currentObject: %p, memberObject: %s, *memberObject: %p)\n`
+- `[ERROR] [%s%s%s] Invalid RF client: %d\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** [Unknown] - Restricting Transport ***\n`
+- `%s Unknown packet received commandID:%02X payloadLength:%02llX`
+- `%s::%s(): _restrictedMode: %s\n`
+- `%s::%s(): [%s%s%s] Could not find reservation with port number %u!\n\n`
+- `%s::%s(): [%s%s%s] Removed transport! (transportType: %d [%s], index: %u)\n\n`
+- `%s::%s(): id:%#llx, owner=%p tag=%p itemSet=%p removeTagSet=%p\n`
+- `[ERROR] Failed to copy LDCM data! (target: %s)\n`
+- `%s::%s(): [%s%s%s] Cancelling RF client response timer... (m_rfClientTimeoutMS: %u)\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** LUAT ***\n`
+- `[ERROR] [%s@%s: %s%s%s] Couldn't find ACM TRM Device Locked property!\n`
+- `[ERROR] [%s@%s: %s%s%s] Couldn't find ACM TRM Cache Miss Count property!\n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s (ep %d), got too may Descriptor bytes (soFar %d > %d) \n`
+- `IOAccessoryConfigStreamUserClient::%s type %u, options %#x \n`
+- `[ERROR] %s:%s:%d ret %x \n`
+- `[ERROR] Invalid transport-type: %u!\n`
+- `IOAccessoryHIDDeviceUserClient::%s type %u, options %#x \n`
+- `%s::%s(): [%s%s%s] firmwareVersion: %s\n\n`
+- `%s::%s(): [%s%s%s] Cached waveform for dry→wet transition (timestamp: %llu, size: %u bytes)\n\n`
+- `%s::%s(): Setting authentication status... (target: %s, newAuthenticationStatus: %d [%s])\n`
+- `[ERROR] [%s%s%s] kernel_thread_start() failed! (ret: %d)\n\n`
+- `%s::%s(): Initializing port type to: %d [%s]\n`
+- `%s::%s(): [%s%s%s] Updating pre-defined metadata properties...\n\n`
+- `[ERROR] Invalid port-type! (length: %u)\n`
+- `[ERROR] [%s@%s: %s%s%s] Couldn't find ACM TRM Grace Period Reason property!\n`
+- `[ERROR] Invalid portNumber: %d!\n`
+- `%s::%s(): Searching registry for %s, %s properties... (depth: %d, registryEntry: %s)\n`
+- `[ERROR] [%s%s%s] Cannot add transport - transports of type %d [%s] are blocked for RF desense!\n\n`
+- `%s::%s(): [%s%s%s] Removing transports... (transportType: %d [%s])\n\n`
+- `%s::%s(): [%s%s%s] Added transport! (transportType: %d [%s], index: %u)\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] Terminating %s...\n`
+- `%s::%s(): Stopping %s...\n`
+- `[ERROR] Cannot remove key: %s\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d)\n\n`
+- `pCurrentNode->pNextNode->portNumber: %u\n`
+- `[ERROR] [%s%s%s] Invalid port number provided! (portNumber: %u)\n\n`
+- `%s::%s(): [%s%s%s] [Boot Arg] %s=%u\n\n`
+- `%s::%s(): Clearing cached LDCM data... (target: %s)\n`
+- `%s::%s(): [%s@%s: %s%s%s] m_notificationQueue->isProcessingNotifications(): %s\n`
+- `%s::%s(): Ignoring MB! (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): Handling notifications...\n`
+- `%s::%s(): Cancelled pending notification handler invocation!\n`
+- `%s::%s(): [%s%s%s] Removing power source (powerSourceName: %s)...\n\n`
+- `%s::%s(): Setting user override active... (target: %s, userOverrideActive: %s)\n`
+- `%s::%s(): [%s] m_messageQueue->getCount(): %d\n\n`
+- `IOAccessoryOOBPairingInterface::start\n`
+- `[ERROR] IOAccessoryHIDDeviceInterface::%s failed to setup endpoints! ret %x \n`
+- `%s: kIOAccessoryIDBusRetHIDReportRead`
+- `%s: kIOAccessoryIDBusRetHIDReportMultipleRead`
+- `%s::%s(): Starting %s... (provider: %s@%s)\n`
+- `%s:%s::%s: cat %x, prop %x \n`
+- `%s::%s(): [%s@%s: %s%s%s] Updated %d pre-defined metadata properties!\n`
+- `%s::%s(): [%s%s%s] ←←← WET→DRY TRANSITION: systemAsleep=%s CLAIM WAKE (stay in LPW)\n\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReport: call handleReport: InputReport, len %llu \n`
+- `%s::%s(): [%s%s%s] No transports found! (transportType: %d [%s])\n\n`
+- `[ERROR] %s Unknown packet received commandID:%x payloadLength:%02llX\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** [Restricted] - Transports Remaining Restricted ***\n`
+- `%s::%s(): [%s@%s: %s%s%s] Updating TRM state...\n`
+- `%s::%s(): Invalid port type: %d!\n`
+- `%s::%s(): [%s%s%s] TRM disabled - stress rack device!\n\n`
+- `[ERROR] [%s%s%s] Invalid architectureVersion: %d!\n\n`
+- `handlePairingData %llu bytes\n`
+- `%s::%s(): Setting authorization status... (target: %s, newAuthorizationStatus: %d [%s])\n`
+- `%s::%s(): Received a link response 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x\n`
+- `[ERROR] Couldn't find ACM TRM state!\n`
+- `%s::%s(): Notifications are disabled, exiting handler!\n`
+- `%s::%s(): [%s@%s: %s%s%s] Stopping %s...\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** Cache Miss - On Refresh ***\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s HIDDeviceEndpointDescriptorKey set for ep %d! %d bytes \n\n`
+- `%s::%s(): Processing %u notification(s)...\n`
+- `[ERROR] [%s%s%s] Mitigations not supported on this device\n\n`
+- `%s:IOAccessoryHIDDeviceInterface::%s RetHIDResponse: [ep %u] \n`
+- `%s::%s(): policyReasonNumber: %s, gracePeriodReasonNumber: %s, cacheMissBoolean: %s\n`
+- `%s::%s(): Waiting for thread call to finish executing...\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s HIDDeviceEndpointIDKey set! ep %d -> %d \n\n`
+- `%s::%s(): Mapping measurement data queue memory... (m_userClientDescription: %s)\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** RTANRTUD ***\n`
+- `extInjectOutgoingGetHIDReport endpointID %d, reportType %d, reportID %d\n`
+- `%s::%s(): [%s%s%s] Skipping duplicate valid measurement (data unchanged)\n\n`
+- `%s:IOAccessoryHIDDeviceInterface::%s [ep %u], RetHIDReportMulti len %llu \n`
+- `%s::%s(): [%s%s%s] Removed %u power source options!\n\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s truncating report from %lu to %lu bytes\n\n`
+- `%s::%s(): [%s%s%s] Inserting new reservation for port number %u... (before current) (portType: %d)\n\n`
+- `%s::%s(): [%s%s%s] Inserting new reservation for port number %u... (portType: %d)\n\n`
+- `%s::%s(): [%s] Sending message type 0x%08x from service %s@%s...\n\n`
+- `%s:IOAccessoryConfigStreamInterface::%s categoryID/Index %x/%d, propertyID/Index %x/%d, forceSendRequest %d, ret %x\n`
+- `%s::%s(): [%s@%s: %s%s%s] authorizationStatus: %d [%s]\n`
+- `%s::%s(): [%s@%s: %s%s%s] wakeHostState: %d [%s]\n`
+- `%s::%s(): Queue memory descriptor is NULL\n`
+- `%s::%s(): Unblocking transport... (transportType: %d [%s], client: %s)\n`
+- `%s::%s(): Initializing %s... (serviceDescription: %s)\n`
+- `%s::%s(): [%s%s%s] Attaching to %s plane...\n\n`
+- `%s::%s(): Initializing %s... (transportType: %d)\n`
+- `[ERROR] [%s@%s: %s%s%s] Couldn't find ACM service!\n`
+- `%s::%s(): [%s%s%s] No valid cached waveform available\n\n`
+- `[ERROR] %s:IOAccessoryHIDDeviceInterface::%s ep %u / %u, failed to attach! endpoints(%d) \n`
+- `%s::%s(): m_status.state: %d (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): Validating port number %u...\n`
+- `[ERROR] start() has already been called on this service! (service: %s, newProvider: %s)\n`
+- `%s::%s(): [%s@%s: %s%s%s] m_trmInfo.acmState.cacheMissCount: %d -> %d, m_trmInfo.acmState.cacheMissThreshold: %d -> %d\n`
+- `%s::%s(): [%s%s%s] Mitigations not supported on this device\n\n`
+- `%s::%s(): idsn: %llu (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): Handling interface device info change... (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): *** UAAA *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): *** CM *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): Initializing %s... (portType: %d, portNumber: %d)\n`
+- `%s::%s(): [%s%s%s] Updated description... ('%s' -> '%s')\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] foundHash: %s, hashInCache: %s\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) reportType %d, len %llu, _reportActive %d, isInactive %d \n\n`
+- `%s::%s(): Setting measurement status... (target: %s, measurementStatus: %s)\n`
+- `%s::%s(): [%s%s%s] Transport is not enabled for RF CoEx port feature!\n\n`
+- `%s::%s(): [%s] Sending message from service %s... (type: 0x%08x, arg: %lu, argSize: %lu)\n\n`
+- `%s::%s(): Firmware Version: %s\n`
+- `%s::%s(): Hardware Version: %s\n`
+- `[ERROR] Couldn't find ACM TRM grace period reason!\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDResponse:Generic errCode %x, len %llu \n`
+- `[ERROR] [%s%s%s] Failed to extract port feature from %s!\n\n`
+- `%s::%s(): [%s%s%s] Updated %d pre-defined metadata properties!\n\n`
+- `[ERROR] [%s@%s: %s%s%s] Transport has been terminated, ignoring method invocation!\n`
+- `getBDADDR: bdAddr %p, bdAddrLen %p\n`
+- `%s::%s(): [%s%s%s] Updating authorization state...\n\n`
+- `%s::%s(): Preparing to terminate user client... (provider: %s)\n`
+- `%s::%s(): [%s@%s: %s%s%s] driverStatus: %d [%s]\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** [Force Restricted] - Restricting Transport ***\n`
+- `%s::%s(): [%s@%s: %s%s%s] Implicitly adding terminated transport's hash to TRM cache... (currentHashEntry->transportType: %d [%s], connectionUUID: %s)\n`
+- `%s::%s(): [%s%s%s] Wet detected - mitigations suppressed by user override\n\n`
+- `%s::%s(): [%s%s%s] Ignoring LPW notification - timer remains suspended\n\n`
+- `%s::%s(): Received authorization state change notification... (transport: %s, transportRestricted: %s)\n`
+- `%s::%s(): Updating pin configuration...\n`
+- `%s:IOAccessoryConfigStreamInterface::%s \n`
+- `%s:IOAccessoryConfigStreamInterface::%s categoryID %x, categoryIndex %d\n`
+- `%s::%s(): [%s@%s: %s%s%s] Updating all properties...\n`
+- `[ERROR] [%s%s%s] Couldn't find power source to remove!\n\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s Exit %d \n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReportMulti: after handleReport ret %x \n`
+- `%s::%s(): [%s%s%s] Transport not found! (transportType: %d [%s], index: %u)\n\n`
+- `%s::%s(): [EDT] /defaults/%s=%u\n`
+- `%s::%s(): [%s] Freeing %s...\n\n`
+- `%s::%s(): [%s%s%s] liquidDetected: %s\n\n`
+- `%s::%s(): Calling completion handler...\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** LUBAANRT ***\n`
+- `%s::%s(): service: %s@%s, builtInOnly: %s, waitForBuiltInPort: %s\n`
+- `%s::%s(): [%s%s%s] Adding terminated transport hash... (hashEntry.transportType: %d [%s], hashEntry.hash: %s, hashEntry.hashTimestampS: %llu\n\n`
+- `%s::%s(): Copying LDCM data... (target: %s)\n`
+- `[ERROR] %s:IOAccessoryConfigStreamInterface::%s RetCategoryInfo: Failed to allocate buffer for category(%x) property data !!! \n`
+- `%s::%s(): [%s@%s: %s%s%s] Setting nominal signaling frequencies... (nominalSignalingFrequenciesHz: %s, nominalSignalingFrequenciesHz.count: %d)\n`
+- `%s::%s(): [%s%s%s] Wet detected - enabling corrosion mitigations\n\n`
+- `[ERROR] [%s%s%s] Lower layer returned NULL data\n\n`
+- `%s:IOAccessoryHIDDeviceInterface::%s %llu bytes, isInactive %d \n`
+- `%s::%s(): id: %s, idSize: %lu bytes (m_mgrPrimaryPortID: %d)\n`
+- `[ERROR] [%s%s%s] Invalid port type: %d!\n\n`
+- `[ERROR] [%s%s%s] Invalid port type! (portType: %d)\n\n`
+- `[ERROR] [%s%s%s] Failed to enqueue measurement data - queue may be full\n\n`
+- `getPairingData: no _receivePairData\n`
+- `%s::%s(): Ignoring IDBBD! (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): [%s%s%s] Creating feature... (featureType: %d [%s])\n\n`
+- `%s::%s(): [%s%s%s] measurementStatus: %d [%s]\n\n`
+- `[ERROR] [%s%s%s] Failed to serialize property: '%s'!\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] m_trmInfo.identificationRestricted: [%s -> %s], m_trmInfo.transportRestricted: [%s -> %s], m_trmInfo.state: %d, m_authorizationStatus: %d, m_active: %s\n`
+- `[ERROR] [%s%s%s] Failed to copy waveform: 0x%x\n\n`
+- `[ERROR] [%s%s%s] Failed to create supported transports array!\n\n`
+- `%s::%s(): [%s%s%s] authorizationRequired: %s -> %s, authorizationPending: %s -> %s, userAuthorizationPending: %s -> %s, supervisedTransportActive: %s -> %s\n\n`
+- `[ERROR] [%s] Invalid object type! Dropping from queue...\n\n`
+- `[ERROR] Couldn't release port ID %d - port ID wasn't reserved!\n`
+- `%s::%s(): [%s@%s: %s%s%s] hpdState: %d\n`
+- `[ERROR] %s Unknown packet received commandID:%02X payloadLength:%02llX\n`
+- `%s::%s(): policyReasonNumber: %d, gracePeriodReasonNumber: %d, cacheMissBoolean: %d\n`
+- `%s::%s(): *** [Restricted] - No Accessories Attached - Restricting transports *** (m_mgrPrimaryPortID: %d)\n`
+- `[ERROR] [%s%s%s] Failed to create supported features array!\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] Removing metadata... (keys: %s, keys.count: %d)\n`
+- `%s::%s(): [%s%s%s] Port feature [%s] is disabled!\n\n`
+- `%s::%s(): [%s%s%s] Stopping feature...\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] Removing tunneled transports... (transportType: %d)\n`
+- `[ERROR] RetHIDReport: _endpoints not allocated!\n`
+- `%s::%s(): [%s%s%s] Setting VDOs... (vdoArray->getCount(): %u)\n\n`
+- `%s::%s(): Enabling notifications...\n`
+- `%s:%s [ep %d] RetHIDResponse:Generic wake _reportStatus %d, _reportActive %d \n`
+- `%s::%s(): Walking up %s plane...\n`
+- `%s::%s(): [%s%s%s] Appending new reservation for port number %u... (portType: %d)\n\n`
+- `%s::%s(): Blocking transport... (transportType: %d [%s], client: %s)\n`
+- `%s::%s(): [%s%s%s] Setting metadata... (metadata: %s, metadata.count: %d)\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] Stopping %s... (this: %s@%s, provider: %s@%s)\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** [Limited] - Cached accessory attached - Not restricting transport ***\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** [Restricted] - User Authorized Transport ***\n`
+- `%s::%s(): [%s%s%s] Wet→dry transition detected (prev: %u, curr: %u)\n\n`
+- `IOAccessoryOOBPairingInterface::stop\n`
+- `registerReceiveCallbacks: notifyReceivedData\n`
+- `%s::%s(): Name: %s\n`
+- `[ERROR] Invalid authentication status - cannot set authentication status to %d [%s] from user client in this state! (currentAuthenticationStatus: %d [%s])\n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReportMulti: failed to create report buffer! len %llu \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) HIDDeviceEndpoint _receiveDataMsg: END commandID %x, %llu bytes, isInactive %d, status %x \n`
+- `%s::%s(): [%s%s%s] m_rfClientMitigationStatus['%s']: [%s] -> [%s]\n\n`
+- `%s::%s(): [%s%s%s] Waiting for transport signaling deferral... (transport: %s)\n\n`
+- `[ERROR] [%s%s%s] Invalid transport type provided in %s! (transportType: %u)\n\n`
+- `%s:IOAccessoryConfigStreamInterface::%s categoryIndex %d, propertyIndex %d, numProperties %llu\n`
+- `[ERROR] [%s@%s: %s%s%s] Cannot set authorization status to %d [%s]!\n`
+- `[ERROR] [%s%s%s] Lower layer returned NULL waveform\n\n`
+- `%s::%s(): [%s%s%s] Cached waveform timestamp mismatch (requested: %llu, cached: %llu) - not returning\n\n`
+- `notifyActiveTypeChange %d\n`
+- `%s::%s(): Setting high speed mode... (result: %s)\n`
+- `%s::%s(): Handling Attach/Detach/AccessoryDetected/ConfigChange/USBConnectChange notification... (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): *** GPSAANRTUD *** (m_mgrPrimaryPortID: %d)\n`
+- `%s:IOAccessoryConfigStreamInterface::%s type %x\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** LNRT ***\n`
+- `%s::%s(): Matched transport service! (transportType: %d [%s], parentPortType: %d, parentPortNumber: %d, transportRestricted: %s)\n`
+- `%s::%s(): *** RNAART *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): Notifications are disabled, skipping processing!\n`
+- `%s::%s(): activeCable: %s\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDResponse:HIDReport errCode %x, len %llu \n`
+- `%s::%s(): Found %s port number %u! (%s)\n`
+- `%s:IOAccessoryConfigStreamInterface::%s catIndex %d, Failed to publish all DevInfo \n`
+- `%s::%s(): [%s@%s: %s%s%s] No hash to add to TRM cache! (m_hashStatus: [%s])\n`
+- `[ERROR] [%s%s%s] '%s' EDT property not found!\n\n`
+- `%s::%s(): Enabling... (transmitMaxCommandDataLength: %d, transmitPreambleLength: %d, receiveMaxCommandDataLength: %d)\n`
+- `%s::%s(): [%s%s%s] Incrementing connection count... [%u -> %u]\n\n`
+- `%s::%s(): [%s%s%s] [Boot Arg] %s=0x%08x\n\n`
+- `%s::%s(): [%s%s%s] userAuthorizationStatus: %d [%s]\n\n`
+- `(%#lx, %#lx) _allowedFeaturesMask=%#x allowAlwaysMask=%#x\n`
+- `[ERROR] Could not set initial state!\n`
+- `%s::%s(): Handling notification... (notificationType: %d) (m_mgrPrimaryPortID: %d)\n`
+- `[ERROR] [%s%s%s] Invalid port feature type: %d!\n\n`
+- `%s::%s(): [%s%s%s] currentTransport: %s, currentAuthorizationRequired: %s, currentAuthorizationPending: %s, currentUserAuthorizationPending: %s, currentSupervisedTransportActive: %s, isActive: %s, isTransportRestricted: %s\n\n`
+- `[ERROR] Invalid dataLen (%llu) for property string data!\n`
+- `%s::%s(): [%s%s%s] Finished starting %s! (provider: %s@%s)\n\n`
+- `%s::%s(): [%s%s%s] Terminating %s...\n\n`
+- `[ERROR] [%s%s%s] Metadata key must be type OSNumber! Ignoring adjustment...\n\n`
+- `%s::%s(): Received kIOMessageServiceIsRequestingClose - closing HSAID transport...\n`
+- `%s::%s(): [%s@%s: %s%s%s] legacyAdapter: %s\n`
+- `%s::%s(): Did not find an upstream service in %s plane! (service: %s@%s)\n`
+- `%s::%s(): [%s%s%s] Released transport signaling deferral! (transport: %s, releaseReason: %d [%s], sleepDurationMS: %llu)\n\n`
+- `%s::%s(): [%s] m_messageQueue->getCapacity(): %d\n\n`
+- `%s::%s(): target: %p\n`
+- `%s:IOAccessoryConfigStreamInterface::%s categoryIndex %d, _numCategories %d, numProperties %llu, propertyID %x\n`
+- `%s:IOAccessoryHIDDeviceInterface::%s wakeUp _hidInfo \n`
+- `%s::%s(): Requesting accessory model...\n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s get report failed with error 0x%08x\n\n`
+- `IOAccessoryHIDDeviceUserClient::%s \n`
+- `%s::%s(): [%s%s%s] state: %d [%s]\n\n`
+- `%s::%s(): [%s%s%s] System wake from sleep - resuming periodic measurement timer\n\n`
+- `%s::%s(): Requesting accessory hardware version...\n`
+- `[ERROR] [%s@%s: %s%s%s] ACMKernTRMAuthorizedAccessoryDetachedInDomain(0x%04x, 0x%04x) failed! (ret: %d)\n`
+- `%s::%s(): USB active! (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): *** GPTRR *** (m_mgrPrimaryPortID: %d)\n`
+- `[ERROR] Cannot set key: %s\n`
+- `%s::%s(): [%s@%s: %s%s%s] Removing all tunneled transports...\n`
+- `%s::%s(): [%s@%s: %s%s%s] hash: %s\n`
+- `[ERROR] [%s@%s: %s%s%s] ACMKernTRMAccessoryAuthorizedInDomain(0x%04x, 0x%04x) failed! (ret: %d)\n`
+- `%s::%s(): [%s@%s: %s%s%s] Handling notification... (notificationType: %d)\n`
+- `%s::%s(): [%s@%s: %s%s%s] HPD state changed! (hpdState: %d)\n`
+- `[ERROR] Use %s::initWithCapabilities()!\n`
+- `[ERROR] transport2 invalid!\n`
+- `[ERROR] [%s%s%s] Failed to request periodic measurement: 0x%x\n\n`
+- `%s::%s(): idSize: %lu bytes (m_mgrPrimaryPortID: %d)\n`
+- `[ERROR] Unknown notification type: %d! (m_mgrPrimaryPortID: %d)\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDResponse:HIDDescriptor errCode %x, len %llu, Ignored! \n`
+- `[ERROR] %s:IOAccessoryConfigStreamInterface::%s %llu bytes > UINT32_MAX! \n`
+- `%s::%s(): [%s@%s: %s%s%s] Finished starting %s!\n`
+- `[ERROR] Invalid portType: %d!\n`
+- `%s::%s(): [%s@%s: %s%s%s] authenticationStatus: %d [%s]\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** [Limited] - Transport Active - Not restricting transport until detach ***\n`
+- `%s::%s(): [%s@%s: %s%s%s] policyReasonNumber: %s, gracePeriodReasonNumber: %s, profileNumber: %s, deviceLockedBoolean: %s, cacheMissBoolean: %s, cacheMissCountNumber: %s, cacheMissThresholdNumber: %s, relaxedPeriodBoolean: %s\n`
+- `[ERROR] [%s@%s: %s%s%s] Unknown link bitrate: %llu!\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s:%d (ep %d) after commandSleep, _reportStatus %d, _reportActive %d, isInactive %d \n\n`
+- `%s:%s ckFound %d, Set Detect IDLE PowerState!\n\n`
+- `%s::%s(): [%s%s%s] Searching for reservation with port number %u... (portType: %d)\n\n`
+- `%s:IOAccessoryConfigStreamInterface::%s categoryIndex %d, propertyID %x, propertyIndex %d\n`
+- `%s::%s(): [%s%s%s] Stopping component...\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** [Limited] - User authorized transport ***\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** LSAT ***\n`
+- `%s::%s(): [%s@%s: %s%s%s] Adding hash to TRM cache... (m_hashStatus: [%s], connectionUUID: %s)\n`
+- `%s::%s(): [%s@%s: %s%s%s] cardType: %d [%s]\n`
+- `[ERROR] [%s%s%s] Failed to create measurement data queue!\n\n`
+- `[ERROR] [%s%s%s] Failed to add %u power source!\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** [Restricted] - Transport Not Active - Restricting Transport ***\n`
+- `%s::%s(): [%s@%s: %s%s%s] Handling metadata changes... (shouldReregisterService: %s)\n`
+- `%s::%s(): Requesting accessory serial number...\n`
+- `%s::%s(): [%s%s%s] Attaching to %s plane... (portType: %d [%s], portNumber: %d)\n\n`
+- `%s::%s(): Found %s port %s@%s for service %s%s%s!\n`
+- `%s::%s(): Getting measurement data queue... (target: %s)\n`
+- `%s::%s(): No cached waveform available\n`
+- `extInjectOutgoingSetHIDReport scalarInputCount %d, structureInputSize %d\n`
+- `[ERROR] [%s%s%s] Failed to create measurement timer!\n\n`
+- `%s::%s(): [%s%s%s] LDCM: Empty port, no charger present - setting mitigations to Triggered\n\n`
+- `registerReceiveCallbacks: notifyActivePairingType\n`
+- `%s:IOAccessoryHIDDeviceInterface::%s \n`
+- `%s::%s(): Walking up IOService plane...\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** [Limited] - Transport Not Active - Restricting Transport *** \n`
+- `%s::%s(): [%s@%s: %s%s%s] policyReasonNumber: %d, gracePeriodReasonNumber: %d, profileNumber: %d, deviceLocked: %s, cacheMiss: %s, relaxedPeriod: %s\n`
+- `%s::%s(): [%s%s%s] Caching waveform for dry→wet transition (timestamp: %llu)\n\n`
+- `[ERROR] [%s%s%s] Port has been terminated, ignoring method invocation!\n\n`
+- `[ERROR] Failed to copy LDCM waveform! (target: %s)\n`
+- `[ERROR] Could not create serializer type: %d!\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** [Unrestricted] - Not restricting transport ***\n`
+- `extInjectIncomingData dataLen %llu\n`
+- `%s::%s(): [%s%s%s] ═══ LDCM INTERRUPT ═══ status=%d [%s]\n\n`
+- `%s::%s(): [%s%s%s] RF CoEx disabled for system by boot-arg!\n\n`
+- `%s::%s(): Freeing %s...\n`
+- `[ERROR] [%s@%s: %s%s%s] Couldn't find ACM TRM grace period reason!\n`
+- `%s::%s(): [%s%s%s] Processing measurement: systemAsleep=%s (timer=%s) reason=%u\n\n`
+- `[ERROR] IOAccessoryHIDDeviceInterface::%s failed startup! status %x \n`
+- `[ERROR] RetHIDReport: endpointID out of range!\n`
+- `%s::%s(): Calling registration handler... (didRegister: %s, firstRegister: %s)\n`
+- `[ERROR] Invalid transport-tunneled: %d!\n`
+- `%s::%s(): [%s%s%s] Updating metadata...\n\n`
+- `[ERROR] Invalid transport-index! (length: %u)\n`
+- `[ERROR] [%s%s%s] Invalid transport type provided in %s! (value: %d)\n\n`
+- `%s:IOAccessoryConfigStreamInterface::%s _initialRetrievalFinished %d, _numCategories %d, categoryID/Index %x/%d, propertyID/Index %x/%d\n`
+- `[ERROR] %s:IOAccessoryConfigStreamInterface::%s RetCategoryInfo: index %d, categoryID %x, numProperties %llu, CatgoryIndex too large (max %d) \n`
+- `[ERROR] [%s%s%s] Invaid metadata type!\n\n`
+- `[ERROR] Invalid transport-tunneled! (length: %u)\n`
+- `[ERROR] RetHIDResponse: _endpointsLock=NULL !!\n`
+- `%s::%s(): [%s@%s: %s%s%s] superSpeedSignaling: %d [%s]\n`
+- `%s::%s(): [Boot Arg] %s=%u\n`
+- `%s::%s(): [%s%s%s] (Re)starting RF client response timer... (m_rfClientTimeoutMS: %u)\n\n`
+- `%s::%s(): [%s%s%s] Handling metadata changes... (shouldReregisterService: %s)\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] Setting metadata... (metadata: %s, metadata.count: %d)\n`
+- `[ERROR] [%s@%s: %s%s%s] Invalid TRM state: %d!\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** [Limited] - USB Billboard accessory attached - Not restricting transport ***\n`
+- `[ERROR] [%s%s%s] LDCM not supported on %s!\n\n`
+- `%s::%s(): Searching for built-in port... (portType: %d [%s], portNumber: %d, waitForBuiltInPort: %s)\n`
+- `[ERROR] [%s@%s: %s%s%s] Couldn't add terminated transport's hash to ACM TRM cache! (result: %d)\n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReport: failed to create report buffer! len %llu \n`
+- `%s::%s(): Finished stopping %s! (%s@%s)\n`
+- `[ERROR] [%s%s%s] No createFeature() implementation! (featureType: %d [%s])\n\n`
+- `%s::%s(): Setting liquid detected... (target: %s, liquidDetected: %s)\n`
+- `[ERROR] [%s%s%s] Timed out waiting for RF client responses! (transport: %s, m_transportTimeoutMS: %u, sleepDurationMS: %llu)\n\n`
+- `%s:IOAccessoryConfigStreamInterface::%s propertyChange: auth passed %d, failed %d\n`
+- `%s::%s(): [%s%s%s] Dry + empty receptacle - disabling mitigations\n\n`
+- `%s::%s(): Supports HSAID: %s\n`
+- `%s::%s(): ID Bus Bulk data enabled! (m_mgrPrimaryPortID: %d)\n`
+- `[ERROR] Couldn't add ID to cache! (m_mgrPrimaryPortID: %d)\n`
+- `%s:IOAccessoryConfigStreamInterface::%s categoryIndex %d / %d, categoryID %x, numProperties %u \n`
+- `%s::%s(): [%s@%s: %s%s%s] *** CM ***\n`
+- `%s::%s(): ldcmPin: %d [%s]\n`
+- `%s::%s(): [%s%s%s] primaryDPDMStatus: %d, deferNotification: %s\n\n`
+- `%s::%s(): [%s%s%s] setLDCMState: %d [%s]\n\n`
+- `%s::%s(): Could not create feature matching dictionary!\n`
+- `%s::%s(): Setting mitigations enabled... (target: %s, mitigationsEnabled: %s)\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** [Restricted] - Restore Authorized Transport ***\n`
+- `%s::%s(): [%s@%s: %s%s%s] Set transport index! (m_transportType: %d, m_index: %u)\n`
+- `[ERROR] [%s@%s: %s%s%s] Couldn't find ACM TRM Cache Miss Threshold property!\n`
+- `registerReceiveCallbacks: notifyReceivedInfo\n`
+- `%s::%s(): Starting HID...\n`
+- `[ERROR] Invalid power source!\n`
+- `%s::%s(): [%s@%s: %s%s%s] Adding tunneled transport...\n`
+- `%s::%s(): [%s%s%s] Starting %s...\n\n`
+- `getPairingData: dataAvailable %d, transferLength %d\n`
+- `%s::%s(): *** [Restricted] - Exempt accessory attached - Not restricting transports *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): [%s%s%s] Port feature [%s] enabled by boot-arg! (featureSupported: %s)\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** UNRT ***\n`
+- `%s::%s(): *** GPNAART *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): [%s@%s: %s%s%s] Starting %s...\n`
+- `[ERROR] [%s@%s: %s%s%s] Transport has already been added!\n`
+- `%s::%s(): [%s@%s: %s%s%s] Calculating authorization state...\n`
+- `kIOAccessoryOOBPairingInterfaceConnectMethodGetPairData: structureOutputSize %d\n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) threadRet %d \n\n`
+- `%s::%s(): Published RM status! (supervisedTransportsRestricted: %s, supervisedAccessoryAttached: %s, state: %d, gracePeriodReason: %d) (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): [%s%s%s] Removed transport! (transport: %s)\n\n`
+- `%s::%s(): Finished starting %s!\n`
+- `%s::%s(): cachedAccessoryAttached: %s, idExists: %s (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): Preparing to terminate user client... (m_userClientDescription: %s)\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** RTNART ***\n`
+- `%s::%s(): [%s@%s: %s%s%s] cacheMissCountNumber: %d, cacheMissThresholdNumber: %d\n`
+- `[ERROR] [%s@%s: %s%s%s] Couldn't add hash to ACM TRM cache! (result: %d)\n`
+- `[ERROR] [%s%s%s] Failed to process LDCM V4 measurement data: 0x%x\n\n`
+- `%s::%s(): %s=%u\n`
+- `%s::%s(): *** [Grace Period] - Transports Remaining Restricted *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): *** REAANRT *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): Debouncing power status.\n`
+- `%s::%s(): Finished stopping %s!\n`
+- `%s::%s(): Searching registry for %s, %s, %s, %s, %s properties... (depth: %d)\n`
+- `[ERROR] [%s@%s: %s%s%s] Invaid metadata type!\n`
+- `%s::%s(): [%s%s%s] Sleep/wake notification handler registered for timer power management\n\n`
+- `getBDADDR: dataAvailable %d, transferLength %d\n`
+- `%s::%s(): supervisedAccessoryAttached: %s, m_status.supervisedAccessoryAttached: %s (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): [%s%s%s] Added transport! (transport: %s)\n\n`
+- `[ERROR] [%s%s%s] Could not process device tree properties!\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] speedClass: %d [%s]\n`
+- `%s::%s(): Disabling notifications...\n`
+- `%s::%s(): Invalid authorization status - cannot set authorization status to %d [%s] from user client in this state! (currentAuthorizationStatus: %d [%s])\n`
+- `%s::%s(): Stopping %s... (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): usbConnectType: %d, usbPower: %s, ignoreVbus: %s (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): currentState: %d, m_status.state: %d, currentGracePeriodReason: %d, m_status.gracePeriodReason: %d, currentCacheMiss: %s, m_status.cacheMiss: %s (m_mgrPrimaryPortID: %d)\n`
+- `[ERROR] [%s%s%s] Must provide pointer to return reserved port number!\n\n`
+- `%s::%s(): [%s%s%s] m_rfClientMitigationStatusReason['%s']: [%s] -> [%s]\n\n`
+- `%s::%s(): [%s] Re-registering service...\n\n`
+- `IOAccessoryHIDDeviceUserClient::%s type %u, success %d \n`
+- `[ERROR] Couldn't reserve dynamic port ID!\n`
+- `[ERROR] [%s%s%s] Invalid object in array! (object: %s)\n\n`
+- `[ERROR] m_commandGate == NULL! Dropping all pending notifications...\n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) Unknown packet received commandID:%02X payloadLength:%02llX \n`
+- `[ERROR] [%s%s%s] Multiple transports of this type are not allowed on this port! (transportType: %d [%s], index: %u)\n\n`
+- `[ERROR] [%s%s%s] Failed to extract transport type from %s!\n\n`
+- `[ERROR] Cannot allocate memory for logging!\n`
+- `[ERROR] Null data for property string data!\n`
+- `%s::%s(): [%s@%s: %s%s%s] Calling ACMKernTRMAccessoryAuthorizedInDomain(0x%04x, 0x%04x)...\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** [Limited] - System authorized transport ***\n`
+- `[ERROR] [%s%s%s] Failed to register sleep/wake notification handler!\n\n`
+- `%s::%s(): Failed to copy metadata!\n`
+- `%s::%s(): Setting user authorization status... (target: %s, newUserAuthorizationStatus: %d [%s])\n`
+- `%s::%s(): *** [Restricted] - Transports Remaining Restricted *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): firstRegister: %s\n`
+- `%s::%s(): [%s@%s: %s%s%s] currentSystemUptimeS: %llu, m_explicitUserAuthorizationTimestampS: %llu\n`
+- `%s::%s(): [%s%s%s] Rescheduling mitigations poll timer on wake (was not scheduled during sleep)\n\n`
+- `[ERROR] %s:IOAccessoryHIDDeviceInterface::%s ep %u / %u, failed to create! endpoints(%d) \n`
+- `%s::%s(): Requesting accessory name...\n`
+- `[ERROR] [%s%s%s] Failed to add power source options!\n\n`
+- `%s::%s(): deviceInfo: (vid: %u, pid: %u) (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): dpPinAssignment: %d\n`
+- `%s::%s(): [%s] Enqueueing message type: 0x%08x...\n\n`
+- `[ERROR] Invalid port-number! (length: %u)\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** RTRR ***\n`
+- `%s::%s(): Client missing entitlement!\n`
+- `%s::%s(): [%s@%s: %s%s%s] active: %s\n`
+- `%s::%s(): Model: %s\n`
+- `[ERROR] LDCM not supported on %s!\n`
+- `[ERROR] [%s%s%s] Could not find RF CoEx feature!\n\n`
+- `%s:IOAccessoryConfigStreamInterface::%s RetPropertyData: Finished retrieving all property data for categoryID %x \n`
+- `%s::%s(): [%s@%s: %s%s%s] *** Cache Miss ***\n`
+- `extInjectOutgoingGetHIDReport scalarInputCount %d, structureInputSize %d\n`
+- `%s::%s(): [%s%s%s] Finished starting %s! (providerPath: %s)\n\n`
+- `%s::%s(): Added power source option!\n`
+- `%s::%s(): *** RSAANRTUD *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): [%s%s%s] signalingPin: %d, deferNotification: %s\n\n`
+- `%s::%s(): [%s%s%s] syncMode: %d, deferNotification: %s\n\n`
+- `%s:IOAccessoryConfigStreamInterface::%s categoryIndex %d, propertyIndex %d\n`
+- `%s::%s(): [%s%s%s] Adjusting metadata... (key: %s, delta: %lld)\n\n`
+- `[ERROR] RetHIDReportMulti: _endpointsLock=NULL !!\n`
+- `[ERROR] RetHIDReportMulti: _endpoints not allocated!\n`
+- `%s::%s(): [%s@%s: %s%s%s] dpOverdriveActive: %s\n`
+- `%s::%s(): [%s@%s: %s%s%s] WakeDetectionState: %d [%s]\n`
+- `%s::%s(): [%s%s%s] RF client [%s] %s by boot-arg!\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** LTNART ***\n`
+- `[ERROR] copyDevicePlatformID: missing implementation!\n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s:%d (ep %d) \n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReportMulti: reportDataLen error! processedDataLen %llu, entryLen %llu, reportDataLen %llu \n`
+- `pPreviousNode->portNumber: N/A\n`
+- `%s::%s(): Stopping %s... (this: %s@%s, m_userClientDescription: %s)\n`
+- `%s::%s(): Copying LDCM waveform... (target: %s)\n`
+- `[ERROR] [%s%s%s] Timed out waiting for %u RF client response(s)! (m_rfClientTimeoutMS: %u)\n\n`
+- `%s:%s::%s: DevInfo categories were not seen or already retrieved. \n`
+- `%s:IOAccessoryConfigStreamInterface::%s categoryID %x, catIndex %d / %d, numProp %d \n`
+- `%s::%s(): Transition to Unrestricted mode, adding accessory ID to cache (if attached)... (m_mgrPrimaryPortID: %d)\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) after commandSleep _reportStatus, _reportActive %d, isInactive %d, ret %x \n\n`
+- `%s::%s(): Setting property table specified port type: %d...\n`
+- `%s::%s(): [%s%s%s] Starting %s... (providerPath: %s)\n\n`
+- `%s::%s(): Successfully mapped measurement data queue memory\n`
+- `%s::%s(): [%s@%s: %s%s%s] Merging metadata... (metadata: %s, metadata.count: %d)\n`
+- `%s::%s(): [%s@%s: %s%s%s] Handling state change...\n`
+- `%s::%s(): [%s@%s: %s%s%s] m_trmInfo.acmState.state: %d -> %d [%s -> %s], m_trmInfo.acmState.gracePeriodReason: %d -> %d [%s -> %s], m_trmInfo.acmState.profile: %d -> %d [%s -> %s], m_trmInfo.acmState.deviceLocked: %s -> %s, m_trmInfo.acmState.cacheMiss: %s -> %s, m_trmInfo.acmState.relaxedPeriod: %s`
+- `%s::%s(): [%s%s%s] userOverrideActive: %s\n\n`
+- `%s::%s(): ID bus info doesn't exist for this dock! (m_mgrPrimaryPortID: %d)\n`
+- `IOAccessoryConfigStreamUserClient::%s \n`
+- `[ERROR] [%s@%s: %s%s%s] Failed to create supported tunneled transports array!\n`
+- `%s::%s(): [%s%s%s] ForcePortWet override active — treating measurement as wet\n\n`
+- `[ERROR] [%s%s%s] Invalid user authorization status - cannot set user authorization status to %d [%s]! (currentUserAuthorizationStatus: %d [%s])\n\n`
+- `%s::%s(): Did not find parent built-in port in %s plane, searching registry for %s and %s properties... (depth: %d)\n`
+- `%s::%s(): [%s%s%s] Looping through port number reservations...\n\n`
+- `%s::%s(): [%s%s%s] Creating port features...\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] Removing tunneled transport...\n`
+- `[ERROR] Invalid built-in port number: %u!\n`
+- `[ERROR] [%s@%s: %s%s%s] Could not find RF CoEx feature!\n`
+- `%s::%s(): [%s@%s: %s%s%s] laneCount: %u\n`
+- `%s::%s(): Resetting USB mode... (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): Setting LDCM State... (target: %s, LDCMState: %s)\n`
+- `%s::%s(): Finished starting %s! (provider: %s@%s)\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** [Restricted] - Transport Active - Not restricting transport until detach ***\n`
+- `extInjectOutgoingData scalarInputCount %d, structureInputSize %d\n`
+- `%s::%s(): Handling ACM state change... (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): Did not find port properties for registry entry! (registryEntry: %s)\n`
+- `%s::%s(): [%s%s%s] Handling state change...\n\n`
+- `%s::%s(): [%s%s%s] Releasing port number %u... (portType: %d)\n\n`
+- `%s::%s(): [%s%s%s] Removing all transports...\n\n`
+- `%s:IOAccessoryConfigStreamInterface::%s categoryIndex %d, propertyIndex %d / %llu, propertyID %x (%llu bytes) \n`
+- `%s::%s(): [%s@%s: %s%s%s] *** URT ***\n`
+- `[ERROR] [%s%s%s] Failed to request measurement from lower layer: 0x%x\n\n`
+- `%s::%s(): Manufacturer: %s\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) threadRet %d \n`
+- `[ERROR] [%s%s%s] Invalid transportType: %d!\n\n`
+- `[ERROR] [%s%s%s] Cannot modify metadata key '%s' unless connection is active!\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] authTimeout: %u seconds\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** LCAANRT ***\n`
+- `[ERROR] [%s@%s: %s%s%s] Invalid property type! Skipping...\n`
+- `%s::%s(): plugOrientation: %d\n`
+- `%s::%s(): [%s%s%s] Adding transport... (transportType: %d [%s], index: %u)\n\n`
+- `[ERROR] [%s%s%s] Error setting supported features for %s!\n\n`
+- `%s::%s(): [%s] Sending %u message(s)... (m_propertyChanged: %s)\n\n`
+- `%s:IOAccessoryConfigStreamInterface::%s categoryID/Index %x/%d, propertyID/Index %x/%d\n`
+- `%s::%s(): [%s%s%s] Merging metadata... (metadata: %s, metadata.count: %d)\n\n`
+- `[ERROR] [%s%s%s] rawData is NULL\n\n`
+- `[ERROR] [%s%s%s] Invalid waveform data length: %u (expected %d)\n\n`
+- `IOAccessoryOOBPairingInterface::free\n`
+- `%s::%s(): [%s] Cleared message queue!\n\n`
+- `%s:IOAccessoryConfigStreamInterface::%s catIndex %d, Failed to publish all MFiDevInfo \n`
+- `%s:IOAccessoryHIDDeviceInterface::%s RetHIDResponse: [ep %u], call _receiveDataMsg, commandID %d, len %llu, status %d \n`
+- `%s::%s(): Thread call scheduled!\n`
+- `%s::%s(): Received ACM message!\n`
+- `%s::%s(): Added %u power sources!\n`
+- `%s::%s(): [%s%s%s] Releasing reservation for port number %u...\n\n`
+- `%s::%s(): Removed %u transports!\n`
+- `[ERROR] [%s@%s: %s%s%s] Invalid serializer type: %d!\n`
+- `getPairingData data %p, dataLen %p\n`
+- `kIOAccessoryOOBPairingInterfaceConnectMethodGetPairInfo: structureOutputSize %d\n`
+- `%s::%s(): [%s@%s: %s%s%s] active: %d [%s] -> %d [%s]\n`
+- `%s::%s(): [%s%s%s] Freeing %s...\n\n`
+- `[ERROR] [%s%s%s] The provided transport doesn't exist on this port!\n\n`
+- `%s::%s(): [%s%s%s] entryPath: %s\n\n`
+- `[ERROR] [%s@%s: %s%s%s] Failed to create tunneled provisioned transports array!\n`
+- `%s::%s(): [%s@%s: %s%s%s] Starting authentication timer for %u seconds... (uptimeS: %llu)\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** RUAT ***\n`
+- `%s::%s(): [%s@%s: %s%s%s] Accepting %s hash for %s transport...\n`
+- `registerReceiveCallbacks\n`
+- `%s::%s(): Released port ID %d!\n`
+- `[ERROR] [%s%s%s] Failed to register for transport notifications! (transport: %s)\n\n`
+- `%s::%s(): [%s%s%s] Inserting new reservation for port number %u... (after current) (portType: %d)\n\n`
+- `%s::%s(): [%s%s%s] Messaging clients... (messageType: 0x%08x)\n\n`
+- `[ERROR] Invalid transport-type! (length: %u)\n`
+- `[ERROR] [%s%s%s] Invalid architecture version! (m_architectureVersion: %d)\n\n`
+- `%s Unknown errorCode %u ! \n`
+- `IOAccessoryConfigStreamUserClient::%s type %u, success %d \n`
+- `[ERROR] transport1 invalid!\n`
+- `%s::%s(): [%s%s%s] Did not find a parent port, attaching under registry root in %s plane...\n\n`
+- `[ERROR] [%s%s%s] Failed to generate string for port feature %d!\n\n`
+- `%s:IOAccessoryConfigStreamInterface::%s [%d/%d] categoryID %x ?= %x\n`
+- `[ERROR] [%s@%s: %s%s%s] Couldn't read ACM TRM profile!\n`
+- `%s::%s(): [%s@%s: %s%s%s] role: %d [%s] -> %d [%s]\n`
+- `[ERROR] %s:IOAccessoryHIDDeviceInterface::%s could not create start thread call \n`
+- `%s::%s(): Handling accessory info packet... (responseLength: %d)\n`
+- `%s::%s(): Found port properties for registry entry! (portType: %d [%s], portNumber: %d, registryEntry: %s)\n`
+- `%s::%s(): [%s%s%s] Set connection UUID: %s\n\n`
+- `%s::%s(): anObject: %p, memberObject: %p\n`
+- `%s::%s(): m_userClientDescription: %s\n`
+- `[ERROR] [%s%s%s] Invalid property type! Skipping...\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] m_trmInfo.identificationRestricted: [%s -> %s], m_trmInfo.transportRestricted: [%s -> %s], m_trmInfo.state: %d [%s], m_authorizationStatus: %d [%s], m_active: %s\n`
+- `%s:IOAccessoryHIDDeviceInterface::%s handleStartThreadCall was already scheduled \n`
+- `%s::%s(): Dropping all %u notifications...\n`
+- `[ERROR] [%s%s%s] Failed to create active transports array!\n\n`
+- `%s::%s(): Successfully registered notification port for measurement data queue\n`
+- `[ERROR] [%s%s%s] Service has been terminated, ignoring method invocation!\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** [Limited] - Transport Remaining Restricted ***\n`
+- `%s::%s(): [%s%s%s] Dry→wet transition detected (prev: %u, curr: %u)\n\n`
+- `%s::%s(): Reserved port ID %d!\n`
+- `[ERROR] Could not open HSAID transport!\n`
+- `%s::%s(): Serial Number: %s\n`
+- `%s::%s(): supervisedTransportsRestricted: %s, supervisedAccessoryAttached: %s, state: %d, gracePeriodReason: %d, cacheMiss: %s, previousSupervisedTransportsRestricted: %s (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): [%s] Sending message from service %s... (type: 0x%08x, arg: %s, argSize: %lu)\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] Updating hash status...\n`
+- `%s::%s(): [%s%s%s] RAW DATA: status=0x%02x mostRecentMeas=0x%02x | portStatus=%u pin=%u completion=%u lowImp=%u\n\n`
+- `%s::%s(): Stopping %s... (this: %s@%s, m_provider: %s@%s)\n`
+- `[ERROR] [%s%s%s] Invalid power source!\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] dateRate: %d [%s]\n`
+- `[ERROR] [%s%s%s] Transport has already been started!\n\n`
+- `[ERROR] [%s%s%s] Invalid port type: %d\n\n`
+- `[ERROR] [%s@%s: %s%s%s] Couldn't find tunneled transport to remove! (transportType: %d, index: %u)\n`
+- `%s::%s(): [%s@%s: %s%s%s] m_hashStatus: %d -> %d [%s -> %s]\n`
+- `[ERROR] RetHIDReportMulti: endpointID out of range!\n`
+- `%s::%s(): *** [Restricted] - Supervised Accessory Attached - Not restricting transport until detach *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): *** [Force Restricted] - Restricting transports *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): *** supervisedTransportsRestricted: %s *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): Did not find an upstream service in %s plane with '%s' and '%s' properties! (service: %s@%s)\n`
+- `%s::%s(): [%s%s%s] Clearing connection UUID...\n\n`
+- `%s::%s(): ref: %p\n`
+- `%s::%s(): [%s@%s: %s%s%s] m_notificationQueue completion handler fired!\n`
+- `%s::%s(): [%s@%s: %s%s%s] Updating pre-defined metadata properties...\n`
+- `%s::%s(): Setting hash... (target: %s)\n`
+- `[ERROR] [%s%s%s] Invalid number of VDOs! (count: %u, expecting: >= %u)\n\n`
+- `%s::%s(): *** RTRR *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): [%s%s%s] Port feature [%s] disabled by boot-arg! (featureSupported: %s)\n\n`
+- `%s::%s(): [%s%s%s] Removing feature (featureType: %d [%s])...\n\n`
+- `%s::%s(): [%s%s%s] →→→ DRY→WET TRANSITION: systemAsleep=%s CLAIM WAKE (full wake)\n\n`
+- `%s::%s(): Added %u power source options!\n`
+- `%s::%s(): m_status.supervisedAccessoryAttached: %s, accessoryIDExists: %s, isCachedAccessoryAttached: %s, m_dockSupportsID: %s, previousSupervisedTransportsRestricted: %s (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): legacy30PinAccessory: %s\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDResponse:HIDReport _reportActive %d, _reportStatus %d \n`
+- `%s:%s [ep %d] RetHIDResponse:HIDReport wake _reportStatus %d, _reportActive %d \n`
+- `Found reservation for port number %u!\n`
+- `%s::%s(): id:%#llx, newPowerStatus %d, newTimestamp %llu, newItemSet %p, newItemTag %p, now %llu\n`
+- `[ERROR] [%s%s%s] Invalid key type! Skipping...\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] Cancelling auth timer... (uptimeS: %llu)\n`
+- `[ERROR] [%s@%s: %s%s%s] Couldn't report cache miss to ACM! (result: %d)\n`
+- `[ERROR] [%s@%s: %s%s%s] Couldn't read ACM TRM state!\n`
+- `%s::%s(): [%s%s%s] Updated measurement timer interval: %llu ms (%s)\n\n`
+- `%s::%s(): opticalCable: %s\n`
+- `IOAccessoryConfigStreamUserClient::%s type %u \n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s:%d\n\n`
+- `%s::%s(): Closing %s... (m_userClientDescription: %s)\n`
+- `%s::%s(): [%s%s%s] maxReceivingFrequency: %d, deferNotification: %s\n\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) _receiveDataMsg: Exit early, commandID %x, %llu bytes, isInactive %d, status %x \n\n`
+- `%s::%s(): [%s%s%s] Received message from %s%s%s (messageType: 0x%08x)!\n\n`
+- `%s::%s(): Unsupported architecture version: %d\n`
+- `%s:IOAccessoryConfigStreamInterface::%s categoryIndex %d, propertyIndex %d, propertyID %x\n`
+- `[ERROR] %s:IOAccessoryConfigStreamInterface::%s RetCategoryInfo: index %d, categoryID %x, numProperties %llu, Invalid # of properties !!! (max %d) \n`
+- `%s::%s(): [%s@%s: %s%s%s] *** CMOR ***\n`
+- `%s::%s(): [%s%s%s] LDCM: Empty port, was Failed - resetting to Triggered to dismiss intrusive UI\n\n`
+- `[ERROR] [%s%s%s] Invalid data length: %zu (expected %d)\n\n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) Failed to GetHIDDescriptor! \n\n`
+- `%s singleReport invalid length:%02X (MinLen:%02X, MaxLen:%02llX)`
+- `%s::%s(): [%s%s%s] specRevision: %d\n\n`
+- `%s::%s(): didRegister: %s\n`
+- `%s::%s(): [%s@%s: %s%s%s] m_hashTimestampS: %llu, lastTerminatedTransportHashEntry.hashTimestampS: %llu\n`
+- `%s::%s(): Reserved dynamic port ID %d!\n`
+- `[ERROR] RetHIDResponse: _endpoints not allocated!\n`
+- `[ERROR] Failed to start %s!\n`
+- `%s::%s(): *** [Grace Period] - Cached accessory attached - Not restricting transports *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): *** GPCAANRT *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): Handling notification... (notificationType: %d, count: %u)\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** FRRT ***\n`
+- `%s::%s(): [%s%s%s] mitigationsEnabled: %s\n\n`
+- `%s::%s(): [%s%s%s] Handling mitigations for liquid state: %s\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] sinkCount: %u\n`
+- `[ERROR] [%s%s%s] This power source is not the owner of the power source option!\n\n`
+- `[ERROR] Couldn't check ACM TRM cache! (m_mgrPrimaryPortID: %d)\n`
+- `[ERROR] [%s@%s: %s%s%s] Invalid dataRole! (dataRole: %d, isOverride: %s)\n`
+- `%s::%s(): %s: Serial=%d detected, setting _hsEnabled to false, and _hsLinkState to AID\n\n`
+- `%s:IOAccessoryConfigStreamInterface::%s [%d/%llu] propertyID %x ?= %x\n`
+- `%s::%s(): [%s@%s: %s%s%s] Finished starting %s! (provider: %s@%s)\n`
+- `%s::%s(): [%s@%s: %s%s%s] Transition to Unrestricted mode, adding transport hash to cache (if attached)... (%s)\n`
+- `[ERROR] [%s%s%s] Parent port is NULL!!!\n\n`
+- `%s:IOAccessoryHIDDeviceInterface::%s thread_call_cancel returned false \n`
+- `[ERROR] RetHIDReport: Couldn't get endpoint for endpointID! %d / %d\n`
+- `%s::%s(): Closing HSAID transport due to detach...\n`
+- `[ERROR] Unknown AI_STR value: %d\n`
+- `%s::%s(): [%s%s%s] Cleared waveform cache\n\n`
+- `%s::%s(): [%s%s%s] Registering service...\n\n`
+- `[ERROR] [%s%s%s] Failed to add %u power source options!\n\n`
+- `[ERROR] [%s%s%s] Invalid client service!\n\n`
+- `%s::%s(): [%s%s%s] Adding power source (powerSourceName: %s)...\n\n`
+- `%s::%s(): Could not find %s port number %u!\n`
+- `%s::%s(): [%s%s%s] Received kIOPortTransportState_Message_AuthorizationStateChange from %s%s%s...\n\n`
+- `%s::%s(): [%s%s%s] Appending new reservation for port number %u...(portType: %d)\n\n`
+- `%s::%s(): [%s%s%s] Updating metadata... (key: %s)\n\n`
+- `[ERROR] [%s@%s: %s%s%s] Couldn't check ACM TRM cache! (result: %d)\n`
+- `getBDADDR: no _receivePairInfo\n`
+- `%s::%s(): [%s@%s: %s%s%s] linkTrainingMode: %d\n`
+- `%s::%s(): Handling notification (gated)... (notificationType: %d) (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): [%s%s%s] No reservations exist, creating first reservation for port number %u... (portType: %d)\n\n`
+- `%s::%s(): [%s%s%s] m_connectionActive: %s, m_connectionCount: %u, m_connectionUUID: %s\n\n`
+- `%s::%s(): [%s%s%s] TRM enabled for system by boot-arg!\n\n`
+- `%s:IOAccessoryConfigStreamInterface::%s categoryID/Index %x/%d, propertyID/Index %x/%d, forceSendRequest %d, waitForResponse %d\n`
+- `%s::%s(): [%s@%s: %s%s%s] authRequired: %s\n`
+- `%s::%s(): *** FRRT *** (m_mgrPrimaryPortID: %d)\n`
+- `[ERROR] Invalid m_status.state: %d! (m_mgrPrimaryPortID: %d)\n`
+- `[ERROR] [%s@%s: %s%s%s] Wake Host State can only be set in Host mode! (dataRole: %d [%s], wakeHostState: %d [%s])\n`
+- `pCurrentNode->pNextNode->portNumber: N/A\n`
+- `%s::%s(): [%s%s%s] Prepending new reservation for port number %u... (portType: %d)\n\n`
+- `%s::%s(): Creating and starting port feature: %d [%s]...\n`
+- `%s::%s(): currentService: %s@%s\n`
+- `%s::%s(): [%s@%s: %s%s%s] Authentication timed out! (uptimeS: %llu)\n`
+- `[ERROR] [%s@%s: %s%s%s] Failed to serialize type: %d!\n`
+- `[ERROR] Cannot release non-dynamic port ID! (portID: %d)\n`
+- `%s singleReport IOBufferMemoryDescriptor::withBytes failed`
+- `%s::%s(): [%s@%s: %s%s%s] cableGeneration: %d\n`
+- `%s::%s(): *** Cache Miss *** (m_mgrPrimaryPortID: %d)\n`
+- `[ERROR] [%s%s%s] Failed to generate symbol for transport type %d!\n\n`
+- `%s::%s(): Starting %s...\n`
+- `[ERROR] RetHIDResponse: endpointID out of range!\n`
+- `%s::%s(): [%s%s%s] Removing all power sources...\n\n`
+- `%s::%s(): [%s%s%s] signalingPair: %d, deferNotification: %s\n\n`
+- `[ERROR] %s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReport: after handleReport ret %x \n`
+- `%s::%s(): [%s%s%s] Received kIOPortTransportState_Message_TransportActiveChange from %s%s%s...\n\n`
+- `%s::%s(): Did not find an upstream port in %s plane! (service: %s@%s)\n`
+- `pCurrentNode->portNumber: %u\n`
+- `%s::%s(): Finished stopping %s! (this: %s@%s, provider: %s@%s)\n`
+- `%s::%s(): [%s@%s: %s%s%s] forceLSXActive: %s\n`
+- `%s::%s(): [%s%s%s] Handling notification... (notificationType: %d)\n\n`
+- `[ERROR] [%s%s%s] Invalid RF client provided in %s! (rfClient: %u)\n\n`
+- `%s::%s(): [%s%s%s] Stopping %s...\n\n`
+- `%s::%s(): Configuring USB Mode... (usbMode: %d)\n`
+- `%s::%s(): [%s@%s: %s%s%s] Finished waiting for notifications to finish processing!\n`
+- `%s::%s(): Requesting accessory firmware version...\n`
+- `%s::%s(): MikeyBus enabled! (m_mgrPrimaryPortID: %d)\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s Enter after super::init() \n`
+- `%s::%s(): Measurement data queue is NULL\n`
+- `%s::%s(): Copying cached LDCM data... (target: %s)\n`
+- `extInjectIncomingData structureInputSize %d\n`
+- `[ERROR] [%s%s%s] Invalid owner service!\n\n`
+- `[ERROR] Couldn't find ACM TRM Cache Miss property!\n`
+- `%s::%s(): Invalid built-in port number: %u!\n`
+- `[ERROR] Invalid built-in port number: %d!\n`
+- `%s::%s(): [%s%s%s] Created and started %d port features!\n\n`
+- `%s::%s(): Disabling OVP interrupts... (target: %s)\n`
+- `[ERROR] [%s%s%s] Invalid value for device tree property! (currentPropertyKey: %s)\n\n`
+- `%s::%s(): [%s%s%s] Removing metadata... (keys: %s, keys.count: %d)\n\n`
+- `[ERROR] Invalid transport-index: %d!\n`
+- `[ERROR] [%s@%s: %s%s%s] Invalid key type! Skipping...\n`
+- `%s::%s(): [%s@%s: %s%s%s] Initialized transport index! (tunneled: %s, m_transportType: %d, m_index: %u)\n`
+- `%s::%s(): [%s@%s: %s%s%s] Processing _eNotificationType_TRM_ACM_Message_CacheRefreshed...\n`
+- `%s::%s(): [%s@%s: %s%s%s] linkRate: %u [%s]\n`
+- `%s:%s ckFound %d, Set Detect MAX PowerState!\n\n`
+- `[ERROR] [%s%s%s] Invalid port feature provided in %s! (value: %d)\n\n`
+- `%s:%s::%s: needSendRequest %d, catIndex %d, propIndex %d, cat %x \n`
+- `[ERROR] [%s@%s: %s%s%s] Couldn't find ACM TRM Cache Miss property!\n`
+- `%s::%s(): Updating all properties...\n`
+- `%s::%s(): Copying cached LDCM waveform... (target: %s)\n`
+- `[ERROR] [%s%s%s] Parent port is not a built-in port!\n\n`
+- `%s::%s(): [%s%s%s] Ignoring mitigation status update! (generationCount: %u, m_signalingFrequenciesGenerationCount: %u)\n\n`
+- `%s::%s(): Timed out waiting for RF client response from: [%s]\n`
+- `[ERROR] [%s%s%s] Could not create serializer! (property: %s)\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** LTRR ***\n`
+- `[ERROR] [%s%s%s] Failed to process measurement data: 0x%x\n\n`
+- `%s::%s(): Closing HSAID transport...\n`
+- `%s::%s(): Requesting accessory manufacturer...\n`
+- `%s:%s digitalID(%02x %02x %02x %02x %02x %02x), ckDigitalID(%02x %02x %02x %02x %02x %02x), ckFound %d\n\n`
+- `%s::%s(): Transitioning to Force Restricted mode... (m_mgrPrimaryPortID: %d)\n`
+- `[ERROR] [%s%s%s] Error starting %s!\n\n`
+- `%s::%s(): [%s%s%s] Removing metadata... (key: %s)\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] Calling ACMKernTRMAuthorizedAccessoryDetachedInDomain(0x%04x, 0x%04x)...\n`
+- `%s::%s(): [%s%s%s] Dry but receptacle occupied - keeping mitigations as-is\n\n`
+- `%s::%s(): Failed to add power source option!\n`
+- `%s::%s(): digitalID: %s (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): [%s%s%s] Stopping protocol...\n\n`
+- `%s::%s(): Setting waveform extraction enabled... (target: %s, waveformExtractionEnabled: %s)\n`
+- `[ERROR] Failed to terminate %s! (this: %s@%s, m_provider: %s@%s)\n`
+- `%s:IOAccessoryConfigStreamInterface::%s categoryID %x \n`
+- `[ERROR] [%s%s%s] Could not serialize property: '%s'!\n\n`
+- `[ERROR] %s:IOAccessoryHIDDeviceInterface::%s %llu bytes, isInactive %d, ret 0x%x \n`
+- `%s::%s(): *** GPNRT *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): [%s%s%s] Attaching under parent port %s in %s plane...\n\n`
+- `%s::%s(): [%s%s%s] Could not find %s property! (entry: %s)\n\n`
+- `%s::%s(): [%s%s%s] TRM disabled for system by boot-arg!\n\n`
+- `[ERROR] %s:IOAccessoryConfigStreamInterface::%s RetPropertyData: Error getting propertyID for catIndex %d, propIndex %d \n`
+- `%s::%s(): [%s@%s: %s%s%s] Starting %s... (provider: %s@%s)\n`
+- `%s::%s(): [%s@%s: %s%s%s] Messaging clients... (messageType: 0x%08x)\n`
+- `%s::%s(): [%s@%s: %s%s%s] Processing _eNotificationType_TRM_ACM_Message_PropertyChange...\n`
+- `extInjectOutgoingData endpointID %d, dataLen %llu\n`
+- `%s::%s(): [%s%s%s] Periodic measurement timer created and started (interval: %llu ms)\n\n`
+- `%s`
+- `[ERROR] [%s%s%s] Failed to generate string for transport type %d!\n\n`
+- `%s:IOAccessoryConfigStreamInterface::%s categoryID %x, _numCategories %d\n`
+- `%s::%s(): [%s@%s: %s%s%s] Checking TRM cache for hash... (m_hashStatus: [%s])\n`
+- `%s::%s(): [%s%s%s] Retrieved cached waveform (timestamp: %llu, size: %u bytes)\n\n`
+- `%s::%s(): *** [Unrestricted] - Allowing All Accessories *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): currentEntry: %s@%s\n`
+- `[ERROR] [%s%s%s] Invalid transport type: %d\n\n`
+- `%s::%s(): [%s%s%s] Setting metadata... (key: %s, value: %s)\n\n`
+- `[ERROR] [%s@%s: %s%s%s] Can only set index before start()!\n`
+- `%s::%s(): [%s@%s: %s%s%s] HPD IRQ triggered!\n`
+- `%s::%s(): *** URT *** (m_mgrPrimaryPortID: %d)\n`
+- `[ERROR] [%s%s%s] Client does not own this power source!\n\n`
+- `%s::%s(): [%s%s%s] TRM disabled by boot-arg!\n\n`
+- `%s::%s(): magSafeSupported: %s\n`
+- `%s::%s(): Provider unavailable or inactive\n`
+- `%s::%s(): [%s@%s: %s%s%s] active: %s (transportType: %d [%s])\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** LTANRTUD ***\n`
+- `[ERROR] [%s%s%s] Failed to copy raw LDCM data: 0x%x\n\n`
+- `%s::%s(): Starting HSAID identification...\n`
+- `[ERROR] [%s%s%s] Failed to remove power source option! (index: %u)\n\n`
+- `%s::%s(): [%s%s%s] Setting provider specified port number: %d... (entryForPortProperties: %s%s%s)\n\n`
+- `[ERROR] [%s%s%s] Error setting supported transports for %s!\n\n`
+- `%s::%s(): Setting forcePortWet... (target: %s, forcePortWet: %s)\n`
+- `[ERROR] [%s@%s: %s%s%s] Couldn't find tunneled transport to remove!\n`
+- `%s::%s(): [%s%s%s] requestMeasurement called with reason: %u\n\n`
+- `%s::%s(): Failed to create OSData!\n`
+- `%s::%s(): Setting property table specified port number: %d...\n`
+- `[ERROR] [%s%s%s] The provided transport is not provisioned on this port! (transport: %s)\n\n`
+- `[ERROR] [%s%s%s] Couldn't find device tree property! (currentPropertyKey: %s)\n\n`
+- `%s:IOAccessoryConfigStreamInterface::%s catIndex %d \n`
+- `%s::%s(): [%s@%s: %s%s%s] transportType: %d, index: %u\n`
+- `%s::%s(): [%s@%s: %s%s%s] Removing metadata... (key: %s)\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** RRAT ***\n`
+- `IOAccessoryHIDDeviceUserClient::%s type %u \n`
+- `%s::%s(): [%s@%s: %s%s%s] specificationVersion: %d [%s]\n`
+- `[ERROR] %s:%s [ep %u/%u], failed to start! endpoints(%d) \n`
+- `%s::%s(): Invalid user authorization status - cannot set user authorization status to %d [%s] from user client in this state! (currentUserAuthorizationStatus: %d [%s])\n`
+- `%s:IOAccessoryConfigStreamInterface::%s _initialRetrievalFinished %d, _numCategories %d, categoryID/Index %x/%d, propertyID/Index %x/%d, infoDataLen %llu\n`
+- `[ERROR] [%s@%s: %s%s%s] Failed to generate string for transport type %d!\n`
+- `%s::%s(): [%s@%s: %s%s%s] Implicitly marking transport as user authorized...\n`
+- `%s::%s(): [%s%s%s] mitigationsStatus: %d [%s]\n\n`
+- `%s::%s(): [%s%s%s] Scheduled immediate measurement on wake\n\n`
+- `handleBDADDR %llu bytes\n`
+- `%s:IOAccessoryHIDDeviceInterface::%s thread_call_cancel returned true \n`
+- `[ERROR] [%s%s%s] Failed to remove %u power source options!\n\n`
+- `%s:%s::%s: Finished retrieving initial properties inform clients of configStream info change. \n`
+- `(%#lx, %#lx) _allowedFeaturesMask=%#x\n`
+- `%s::%s(): Processing notifications...\n`
+- `[ERROR] [%s%s%s] Invalid portType: %d!\n\n`
+- `%s::%s(): [%s%s%s] Stopping %s... (%s@%s)\n\n`
+- `%s::%s(): Registering notification port for measurement data queue... (m_userClientDescription: %s)\n`
+- `%s::%s(): Output buffer too small: %u < %u\n`
+- `%s::%s(): [%s%s%s] Updating nominal signaling frequencies for transport %s... (nominalSignalingFrequenciesHz: %s, nominalSignalingFrequenciesHz.count: %d)\n\n`
+- `%s:IOAccessoryConfigStreamInterface::%s Unknown propertyID(%x) \n`
+- `%s::%s(): *** [Grace Period] - No Accessories Attached - Restricting transports *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): *** [Unknown] - Restricting transports *** (m_mgrPrimaryPortID: %d)\n`
+- `[ERROR] [%s%s%s] Cannot set kIOPortLDCMStateNotSupported!\n\n`
+- `%s::%s(): [%s%s%s] Could not release reservation with port number %u!\n\n`
+- `[ERROR] [%s%s%s] Could not find %s property! (entry: %s)\n\n`
+- `%s::%s(): Successfully returned measurement data queue memory type\n`
+- `%s::%s(): Stopping %s... (this: %s@%s, provider: %s)\n`
+- `%s::%s(): Initializing %s...\n`
+- `[ERROR] Dynamic port IDs exhausted!\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) threadRet %d\n\n`
+- `%s::%s(): [%s%s%s] Setting provider specified port type: %d [%s]... (entryForPortProperties: %s%s%s)\n\n`
+- `%s::%s(): [%s%s%s] [Boot Arg] %s=0x%04x\n\n`
+- `%s::%s(): [%s%s%s] Updating all properties...\n\n`
+- `extInjectOutgoingSetHIDReport endpointID %d, reportType %d, reportID %d, dataLen %llu\n`
+- `[ERROR] [%s%s%s] Failed to enqueue measurement data: 0x%x\n\n`
+- `%s::%s(): [%s%s%s] Mitigations not supported\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] generation: %d\n`
+- `%s::%s(): UART enabled! (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): *** [Grace Period] - Supervised Accessory Attached - Not restricting transport until detach *** (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): accessoryMode: %d\n`
+- `%s:IOAccessoryConfigStreamInterface::%s categoryIndex %d, _numCategories %d, propertyID %x\n`
+- `%s::%s(): [%s@%s: %s%s%s] Handling metadata changes... (shouldReregisterService: %s, m_handleMetadataChangesRecursionCount: %u)\n`
+- `%s::%s(): [%s@%s: %s%s%s] *** [Limited] - Not restricting transport ***\n`
+- `%s::%s(): [%s@%s: %s%s%s] No hash to check TRM cache for! (m_hashStatus: [%s])\n`
+- `%s::%s(): [%s%s%s] ✗✗✗ MEASUREMENT ERROR: %s (pin=%u completion=%u lowImp=%u)\n\n`
+- `%s::%s(): *** [Grace Period] - Not restricting transports *** (m_mgrPrimaryPortID: %d)\n`
+- `externalMethod: selector %d\n`
+- `[ERROR] [%s%s%s] Transport with same type and index already exists on this port! (transportType: %d [%s], index: %u)\n\n`
+- `[ERROR] [%s@%s: %s%s%s] Error generating TRM hash!\n`
+- `%s::%s(): [%s%s%s] --- NO TRANSITION: systemAsleep=%s CLAIM WAKE (stay in LPW - measurement only)\n\n`
+- `%s::%s(): [%s%s%s] forcePortWet: %s\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] maxLaneCount: %u\n`
+- `%s::%s(): Updating status...\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] wake _reportActive \n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s [ep %d] RetHIDReportMulti: call handleReport: InputReport, entryLen %llu, reportLen %llu \n`
+- `[ERROR] [%s%s%s] Cannot set user authorization status when no supervised transports are active! (userAuthorizationStatus: %d [%s], currentUserAuthorizationStatus: %d [%s])\n\n`
+- `[ERROR] %s:IOAccessoryConfigStreamInterface::%s RetDevInfo: numCategories(%d) too large! limit to %d \n`
+- `%s::%s(): [%s@%s: %s%s%s] Setting metadata... (key: %s, pValue: %s)\n`
+- `[ERROR] [%s%s%s] Unsupported architecture version: %d\n\n`
+- `[ERROR] Can't reserve port ID %d - port ID already reserved!\n`
+- `%s::%s(): [%s%s%s] Setting winning power source option... (powerSource: %s, powerSourceOption: %s)\n\n`
+- `%s::%s(): [%s%s%s] Finished starting %s!\n\n`
+- `[ERROR] [%s%s%s] Failed to create enabled features array!\n\n`
+- `[ERROR] [%s%s%s] Failed to create provisioned transports array!\n\n`
+- `%s:IOAccessoryConfigStreamInterface::%s categoryIndex %d / %d, categoryID %x, propertyIndex %d /%d, valid %d \n`
+- `[ERROR] %s:IOAccessoryHIDDeviceInterface::%s %llu bytes > UINT32_MAX! \n`
+- `%s::%s(): [%s%s%s] Removing transport (transportType: %d [%s], index: %u)...\n\n`
+- `%s::%s(): [%s%s%s] Removing transport... (transport: %s)\n\n`
+- `%s::%s(): [%s%s%s] Removing all features...\n\n`
+- `[ERROR] Failed to copy cached LDCM data! (target: %s)\n`
+- `%s::%s(): Successfully copied cached waveform (size: %u bytes, timestamp: %llu)\n`
+- `%s::%s(): [%s%s%s] m_rfClientResponseStatus['%s']: [%s] -> [%s]\n\n`
+- `%s::%s(): [%s%s%s] Starting %s... (path: %s)\n\n`
+- `%s::%s(): [%s@%s: %s%s%s] transportType: %d\n`
+- `[ERROR] [%s@%s: %s%s%s] Failed to create provisioned tunneled transports array!\n`
+- `%s::%s(): [%s%s%s] System entering sleep - suspending periodic measurement timer\n\n`
+- `%s:IOAccessoryHIDDeviceInterface::%s [ep %u], reportID %u, len %llu \n`
+- `%s::%s(): [%s@%s: %s%s%s] cableSpeed: %d\n`
+- `%s:IOAccessoryHIDDeviceEndpoint::%s (ep %d) attachToParent on IOAccessory plane \n\n`
+- `[ERROR] [%s%s%s] Failed to add transport!\n\n`
+- `[ERROR] [%s@%s: %s%s%s] Couldn't find ACM TRM Relaxed Period property!\n`
+- `[ERROR] RetHIDReport: _endpointsLock=NULL !!\n`
+- `[ERROR] RetHIDReportMulti: Couldn't get endpoint for endpointID! %d / %d\n`
+- `%s::%s(): Added ID to cache! (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): Thread call cancelled! (already pending)\n`
+- `[ERROR] m_mgr is NULL! (m_mgrPrimaryPortID: %d)\n`
+- `%s::%s(): [%s%s%s] Overriding preset port type %d [%s] with %d [%s] specified in EDT...\n\n`
+- `[ERROR] [%s%s%s] Invalid built-in port number: %d!\n\n`
+- `%s::%s(): [%s%s%s] Dry + empty receptacle - disabling user override\n\n`
+- `%s::%s(): Waiting %llums for port to appear... (portType: %d [%s], portNumber: %d)\n`
+- `%s::%s(): Did not find an built-in port for service! (service: %s@%s)\n`
+- `pPreviousNode->portNumber: %u\n`

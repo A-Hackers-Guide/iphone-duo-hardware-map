@@ -1,0 +1,210 @@
+# `SBContinuousExposeHomeGestureSwitcherModifier`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBGestureSwitcherModifier`
+- Protocols: `SBHomeGestureDockSwitcherModifierDelegate`, `SBHomeGestureFinalDestinationSwitcherModifierDelegate`
+- 57 instance variables, 6 properties, 126 instance methods, 0 class methods
+
+## Instance variables
+
+```
+B _inMultitasking;
+@"UIViewFloatAnimatableProperty" _inMultitaskingChangedProperty;
+@"UIViewFloatAnimatableProperty" _arcSwipePullingChangedProperty;
+B _canEnterExposeMultitasking;
+B _inExposeMultitasking;
+@"UIViewFloatAnimatableProperty" _inExposeMultitaskingChangedProperty;
+{CGPoint="x"d"y"d} _touchOffset;
+d _translationYWhenTriggeredMultitasking;
+B _hasBecomeCoplanarSinceGestureFromSwitcherBegan;
+{CGPoint="x"d"y"d} _gestureLiftOffVelocity;
+{CGPoint="x"d"y"d} _gestureLiftOffTranslation;
+{CGPoint="x"d"y"d} _translationAdjustmentForStartingFromSwitcher;
+{CGPoint="x"d"y"d} _translationAdjustmentForStartingFromHomeScreen;
+d _progressToInSwitcherCardScale;
+d _progressToMaxTranslation;
+{CGPoint="x"d"y"d} _translation;
+{CGPoint="x"d"y"d} _velocity;
+d _stackedProgress;
+{CGPoint="x"d"y"d} _initialCentroid;
+{CGPoint="x"d"y"d} _centroid;
+{CGPoint="x"d"y"d} _centroidAdjustment;
+d _absoluteScale;
+{CGPoint="x"d"y"d} _translationWithoutScale;
+@"CADisplayLink" _displayLink;
+d _lastTouchTimestamp;
+q _gestureHoldTimer;
+{CGPoint="x"d"y"d} _initialTouchLocation;
+{CGPoint="x"d"y"d} _lastTouchLocation;
+B _everTranslatedUpwards;
+B _cancelledGestureForEmptySwitcher;
+d _toHomeScreenAlpha;
+d _toHomeScreenBlurProgress;
+d _toHomeScreenDimmingAlpha;
+d _homeGestureMinimumCardScale;
+d _homeGestureMinimumCardScaleRubberBandingRange;
+B _didWarmupFlyInHaptic;
+B _didPlayFlyInHaptic;
+B _gestureHasBegun;
+B _gestureHasEnded;
+@"SBAppSwitcherContinuousExposeSwitcherModifier" _appSwitcherModifier;
+@"SBSwitcherModifier" _exposeModifier;
+@"SBHomeGestureDockSwitcherModifier" _dockModifier;
+@"SBHomeGestureFinalDestinationSwitcherModifier" _finalDestinationModifier;
+@"SBDismissSiriSwitcherModifier" _dismissSiriModifier;
+@"SBAppLayout" _selectedAppLayout;
+@"SBAppLayout" _arcSwipePulledStripAppLayout;
+q _startingEnvironmentMode;
+B _scrunchInitiated;
+B _continuingGesture;
+B _lastGestureWasAnArcSwipe;
+B _shouldResignActive;
+@"SBFlexibleWindowingAutoLayoutSpace" _autoLayoutSpaceWithDraggedItemExcluded;
+B _hideSplitViewHandles;
+q _selectedIndex;
+Q _cachedAppLayoutsGenCount;
+B _laysOutNeighboringCards;
+B _providesHomeScreenDimmingAlpha;
+```
+
+## Properties
+
+```
+@property (TB,N,V_laysOutNeighboringCards) laysOutNeighboringCards;
+@property (TB,N,V_providesHomeScreenDimmingAlpha) providesHomeScreenDimmingAlpha;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+```
+
+## Instance methods
+
+```
+-[SBContinuousExposeHomeGestureSwitcherModifier handleGestureEvent:];
+-[SBContinuousExposeHomeGestureSwitcherModifier scaleForIndex:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _displayLinkFired:];
+-[SBContinuousExposeHomeGestureSwitcherModifier anchorPointForIndex:];
+-[SBContinuousExposeHomeGestureSwitcherModifier titleOpacityForIndex:];
+-[SBContinuousExposeHomeGestureSwitcherModifier homeScreenScale];
+-[SBContinuousExposeHomeGestureSwitcherModifier isContainerStatusBarVisible];
+-[SBContinuousExposeHomeGestureSwitcherModifier homeScreenBackdropBlurProgress];
+-[SBContinuousExposeHomeGestureSwitcherModifier homeScreenDimmingAlpha];
+-[SBContinuousExposeHomeGestureSwitcherModifier _applyPrototypeSettings];
+-[SBContinuousExposeHomeGestureSwitcherModifier _updateInMultitaskingIfNeededWithEvent:];
+-[SBContinuousExposeHomeGestureSwitcherModifier isSwitcherWindowUserInteractionEnabled];
+-[SBContinuousExposeHomeGestureSwitcherModifier shouldUseAnchorPointToPinLayoutRolesToSpace:];
+-[SBContinuousExposeHomeGestureSwitcherModifier homeScreenAlpha];
+-[SBContinuousExposeHomeGestureSwitcherModifier isHomeScreenContentRequired];
+-[SBContinuousExposeHomeGestureSwitcherModifier didMoveToParentModifier:];
+-[SBContinuousExposeHomeGestureSwitcherModifier cornerRadiiForIndex:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _inSwitcherCenterYOffsetWhenPresented];
+-[SBContinuousExposeHomeGestureSwitcherModifier adjustedSpaceAccessoryViewAnchorPoint:forAppLayout:];
+-[SBContinuousExposeHomeGestureSwitcherModifier handleHomeGestureSettingsChangedEvent:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _updateTranslationAdjustmentForGestureFromHomeScreenIfNeededWithEvent:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _distanceYToMaxTranslation];
+-[SBContinuousExposeHomeGestureSwitcherModifier animationAttributesForLayoutElement:];
+-[SBContinuousExposeHomeGestureSwitcherModifier adjustedAppLayoutsForAppLayouts:];
+-[SBContinuousExposeHomeGestureSwitcherModifier visibleSplitViewHandleNubViews];
+-[SBContinuousExposeHomeGestureSwitcherModifier _rubberbandedTranslationForAdjacentCards];
+-[SBContinuousExposeHomeGestureSwitcherModifier homeScreenBackdropBlurType];
+-[SBContinuousExposeHomeGestureSwitcherModifier _switcherCardScale];
+-[SBContinuousExposeHomeGestureSwitcherModifier _isTranslationPastDistanceThresholdToUnconditionallyGoHome:];
+-[SBContinuousExposeHomeGestureSwitcherModifier adjustedSpaceAccessoryViewFrame:forAppLayout:];
+-[SBContinuousExposeHomeGestureSwitcherModifier liftOffTranslationForGestureEnd];
+-[SBContinuousExposeHomeGestureSwitcherModifier _responseForStudyLogDidBeginGesture];
+-[SBContinuousExposeHomeGestureSwitcherModifier visibleHomeAffordanceLayoutElements];
+-[SBContinuousExposeHomeGestureSwitcherModifier unconditionalDistanceThresholdForHome];
+-[SBContinuousExposeHomeGestureSwitcherModifier _responseForUpdatingIconViewVisibility:];
+-[SBContinuousExposeHomeGestureSwitcherModifier visibleSplitViewHandleDimmingViews];
+-[SBContinuousExposeHomeGestureSwitcherModifier topMostLayoutElements];
+-[SBContinuousExposeHomeGestureSwitcherModifier debugDescription];
+-[SBContinuousExposeHomeGestureSwitcherModifier isSwitcherWindowVisible];
+-[SBContinuousExposeHomeGestureSwitcherModifier titleAndIconOpacityForIndex:];
+-[SBContinuousExposeHomeGestureSwitcherModifier appLayoutsForContinuousExposeIdentifier:];
+-[SBContinuousExposeHomeGestureSwitcherModifier appLayoutsToCacheSnapshots];
+-[SBContinuousExposeHomeGestureSwitcherModifier dimmingAlphaForLayoutRole:inAppLayout:];
+-[SBContinuousExposeHomeGestureSwitcherModifier handleTransitionEvent:];
+-[SBContinuousExposeHomeGestureSwitcherModifier shouldPinLayoutRolesToSpace:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _updateForGestureDidBeginWithEvent:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _responseForSBEventGestureBeganWithTimeDelta:];
+-[SBContinuousExposeHomeGestureSwitcherModifier adjustedSpaceAccessoryViewScale:forAppLayout:];
+-[SBContinuousExposeHomeGestureSwitcherModifier isWallpaperRequiredForSwitcher];
+-[SBContinuousExposeHomeGestureSwitcherModifier visibleAppLayouts];
+-[SBContinuousExposeHomeGestureSwitcherModifier perspectiveAngleForLayoutRole:inAppLayout:withPerspectiveAngle:];
+-[SBContinuousExposeHomeGestureSwitcherModifier perspectiveAngleForIndex:];
+-[SBContinuousExposeHomeGestureSwitcherModifier opacityForLayoutRole:inAppLayout:atIndex:];
+-[SBContinuousExposeHomeGestureSwitcherModifier laysOutNeighboringCards];
+-[SBContinuousExposeHomeGestureSwitcherModifier handleSwitcherSettingsChangedEvent:];
+-[SBContinuousExposeHomeGestureSwitcherModifier shadowOpacityForLayoutRole:atIndex:];
+-[SBContinuousExposeHomeGestureSwitcherModifier scaleForLayoutRole:inAppLayout:];
+-[SBContinuousExposeHomeGestureSwitcherModifier frameForLayoutRole:inAppLayout:withBounds:];
+-[SBContinuousExposeHomeGestureSwitcherModifier contentOffsetForIndex:alignment:];
+-[SBContinuousExposeHomeGestureSwitcherModifier wallpaperStyle];
+-[SBContinuousExposeHomeGestureSwitcherModifier _responseForUpdatingLayoutForGestureBegan];
+-[SBContinuousExposeHomeGestureSwitcherModifier frameForIndex:];
+-[SBContinuousExposeHomeGestureSwitcherModifier dealloc];
+-[SBContinuousExposeHomeGestureSwitcherModifier selectedAppLayout];
+-[SBContinuousExposeHomeGestureSwitcherModifier wallpaperScale];
+-[SBContinuousExposeHomeGestureSwitcherModifier _hasTraveledSufficientDistanceForHomeOrAppSwitcher];
+-[SBContinuousExposeHomeGestureSwitcherModifier keyboardSuppressionMode];
+-[SBContinuousExposeHomeGestureSwitcherModifier wallpaperOverlayAlphaForIndex:];
+-[SBContinuousExposeHomeGestureSwitcherModifier initWithGestureID:selectedAppLayout:startingEnvironmentMode:multitaskingModifier:scrunchInitiated:continuingGesture:lastGestureWasAnArcSwipe:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _selectedAppLayoutIndex];
+-[SBContinuousExposeHomeGestureSwitcherModifier _responseForCancelingSystemGesturesIfNeededWithFinalDestination:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _beginAnimatingMultitaskingPropertyWithMode:settings:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _unadjustedGestureTranslation];
+-[SBContinuousExposeHomeGestureSwitcherModifier _responseForSBEventGestureEndWithEvent:finalDestination:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _scaleForOffscreenAdjacentCardsForFlyIn];
+-[SBContinuousExposeHomeGestureSwitcherModifier cornerRadiiForLayoutRole:inAppLayout:withCornerRadii:];
+-[SBContinuousExposeHomeGestureSwitcherModifier handleRemovalEvent:];
+-[SBContinuousExposeHomeGestureSwitcherModifier providesHomeScreenDimmingAlpha];
+-[SBContinuousExposeHomeGestureSwitcherModifier _updateForGestureDidChangeWithEvent:];
+-[SBContinuousExposeHomeGestureSwitcherModifier wallpaperGradientAttributesForLayoutRole:inAppLayout:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _responseForActivatingFinalDestination:];
+-[SBContinuousExposeHomeGestureSwitcherModifier isShowingOrAnimatingCardsForFlyIn];
+-[SBContinuousExposeHomeGestureSwitcherModifier _responseForStudyLogDidEndGestureWithEvent:finalDestination:destinationReason:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _scaleForTranslation:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _updateShouldResignActiveWithEvent:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _frameOffsetForTranslation:];
+-[SBContinuousExposeHomeGestureSwitcherModifier appLayoutsToResignActive];
+-[SBContinuousExposeHomeGestureSwitcherModifier _updateGestureTranslationVelocityAndProgressWithEvent:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _newDockModifierRequiringVerticalSwipeToTrackDock:startingEnvironmentMode:];
+-[SBContinuousExposeHomeGestureSwitcherModifier occlusionStateForLayoutRole:inAppLayout:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _layoutSettingsForAppLayout:layoutSettings:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _hasPausedEnoughForFlyIn];
+-[SBContinuousExposeHomeGestureSwitcherModifier _coplanarSpacing];
+-[SBContinuousExposeHomeGestureSwitcherModifier _updateStackedProgress];
+-[SBContinuousExposeHomeGestureSwitcherModifier _shouldResignActiveBasedOnCardScale];
+-[SBContinuousExposeHomeGestureSwitcherModifier _centerYOffsetDuringGesture];
+-[SBContinuousExposeHomeGestureSwitcherModifier _shouldPositionAdjacentCardsOffscreenForFlyIn];
+-[SBContinuousExposeHomeGestureSwitcherModifier setLaysOutNeighboringCards:];
+-[SBContinuousExposeHomeGestureSwitcherModifier lighteningAlphaForIndex:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _preventPositioningCardsOffscreenForFlatBottomEdgeSwipe];
+-[SBContinuousExposeHomeGestureSwitcherModifier preferredStatusBarAxis];
+-[SBContinuousExposeHomeGestureSwitcherModifier setProvidesHomeScreenDimmingAlpha:];
+-[SBContinuousExposeHomeGestureSwitcherModifier asyncRenderingAttributesForAppLayout:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _cornerRadiusSettings];
+-[SBContinuousExposeHomeGestureSwitcherModifier shadowStyleForLayoutRole:inAppLayout:];
+-[SBContinuousExposeHomeGestureSwitcherModifier liftOffVelocityForGestureEnd];
+-[SBContinuousExposeHomeGestureSwitcherModifier _isSelectedAppLayoutAtIndex:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _updateForGestureDidEndWithEvent:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _distanceYToInSwitcherCardScale];
+-[SBContinuousExposeHomeGestureSwitcherModifier appLayoutToAttachSlideOverTongue];
+-[SBContinuousExposeHomeGestureSwitcherModifier footerViewIconAlignmentForAppLayout:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _responseForActivatingReachabilityIfNeededWithFinalDestination:];
+-[SBContinuousExposeHomeGestureSwitcherModifier appLayoutToScrollToBeforeTransitioning];
+-[SBContinuousExposeHomeGestureSwitcherModifier isHomeAffordanceSupportedForAppLayout:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _gestureProgressToMaxTranslationForTranslation:];
+-[SBContinuousExposeHomeGestureSwitcherModifier currentFinalDestination];
+-[SBContinuousExposeHomeGestureSwitcherModifier hiddenContentStatusBarPartsForLayoutRole:inAppLayout:];
+-[SBContinuousExposeHomeGestureSwitcherModifier appLayoutsToCacheFullsizeSnapshots];
+-[SBContinuousExposeHomeGestureSwitcherModifier _beginAnimatingArcSwipePullingPropertyWithMode:settings:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _beginAnimatingExposeMultitaskingPropertyWithMode:settings:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _getActivePositionAndScaleForLayoutRole:inAppLayout:withBounds:outPosition:outScale:];
+-[SBContinuousExposeHomeGestureSwitcherModifier _maxPerspectiveAngleForSelectedAppLayout];
+-[SBContinuousExposeHomeGestureSwitcherModifier _nextRecentAppLayout];
+-[SBContinuousExposeHomeGestureSwitcherModifier _previousRecentAppLayout];
+-[SBContinuousExposeHomeGestureSwitcherModifier _rangeForPerspectiveAngleProgressOfAppLayout:outMin:outMax:];
+-[SBContinuousExposeHomeGestureSwitcherModifier continuousExposeIdentifiersInSwitcher];
+```

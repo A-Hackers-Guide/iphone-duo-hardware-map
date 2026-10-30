@@ -1,0 +1,46 @@
+# `VKCImageAnalysisInteractionDelegate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/CameraUI.framework/CameraUI`](../userland/System__Library__PrivateFrameworks__CameraUI.framework__CameraUI.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 36 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteraction:shouldShowLookupForItemFromCallout:];
+-[VKCImageAnalysisInteractionDelegate contentsRectForImageAnalysisInteraction:];
+-[VKCImageAnalysisInteractionDelegate contentImageForImageAnalysisInteraction:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteractionSubjectInteractionInProgressDidChange:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteractionDidBeginSubjectAnalysis:];
+-[VKCImageAnalysisInteractionDelegate feedbackTypeForImageAnalysisInteraction:];
+-[VKCImageAnalysisInteractionDelegate isShowingLivePhotoForImageAnalysisInteraction:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteraction:didRequestLiveTextButtonSelectedState:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteraction:liveTextButtonDidChangeToVisible:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteraction:didTapVisualSearchIndicatorWithNormalizedBoundingBox:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteractionDidCompleteSubjectAnalysis:];
+-[VKCImageAnalysisInteractionDelegate contentViewForImageAnalysisInteraction:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteraction:requestsHeicVIRepresentationWithCompletion:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteractionDidDismissVisualSearchController:];
+-[VKCImageAnalysisInteractionDelegate presentingViewControllerForImageAnalysisInteraction:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteraction:shouldBeginAtPoint:forAnalysisType:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteraction:livePhotoShouldPlay:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteraction:visualIntelligenceVluEnabledDidChange:];
+-[VKCImageAnalysisInteractionDelegate feedbackMetadataForImageAnalysisInteraction:];
+-[VKCImageAnalysisInteractionDelegate feedbackOptionsForImageAnalysisInteraction:];
+-[VKCImageAnalysisInteractionDelegate hasActiveTextSelectionDidChangeForImageAnalysisInteraction:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteraction:highlightSelectedItemsValueDidChange:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteraction:imageAnalysisBarItemPressed:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteraction:imageAnalysisButtonPressed:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteraction:isDraggingVisualIntelligenceSheetDidChange:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteraction:prepareForCalloutAction:competion:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteraction:shouldHandleShareWithRanges:boundingRect:selectedText:selectedAttributedText:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteraction:updateAttributedStringForCopy:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteraction:updateStringForCopy:];
+-[VKCImageAnalysisInteractionDelegate imageAnalysisInteraction:visualIntelligenceDidRequestTranslationOverlay:];
+-[VKCImageAnalysisInteractionDelegate isVisualIntelligenceSheetPresentedDidChangeForImageAnalysisInteraction:];
+-[VKCImageAnalysisInteractionDelegate promisedFeedbackAttachementsForImageAnalysisInteraction:];
+-[VKCImageAnalysisInteractionDelegate quickActionProcessingCompleteForImageAnalysisInteraction:];
+-[VKCImageAnalysisInteractionDelegate textSelectionDidChangeForImageAnalysisInteraction:];
+-[VKCImageAnalysisInteractionDelegate videoPreviewAvailableForImageAnalysisInteraction:];
+-[VKCImageAnalysisInteractionDelegate writeFeedbackAttachementForImageAnalysisInteraction:to:];
+```

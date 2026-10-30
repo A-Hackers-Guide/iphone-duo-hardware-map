@@ -1,0 +1,72 @@
+# `AppleGasGaugeUpdate`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.driver.AppleSmartBatteryManagerEmbedded`](../kexts/com.apple.driver.AppleSmartBatteryManagerEmbedded.md)
+- Object size: `0xc0` (192 bytes)
+- Metaclass: `0xfffffe000b99ea08`; metaclass vtable `0xfffffe000822cc38`; class vtable `0xfffffe000822c6e0`
+- Registration (init): `0xfffffe000973109c`
+- Superclasses: [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## Strings in its kext that name it (60)
+
+- `AppleGasGaugeUpdate ERROR: Failed to set command 'read info'. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate ERROR: error in gas gauge communication (%x)\n`
+- `AppleGasGaugeUpdateUserClient ERROR: invalid length in MD input:%llu\n`
+- `AppleGasGaugeUpdate: writeData checkpoint: transfer done\n`
+- `AppleGasGaugeUpdate ERROR: Operation '%u' failed at offset:%zu. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate ERROR: Failed to read UID. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate ERROR: timeout: waiting for command '%u'\n`
+- `site.AppleGasGaugeUpdateUserClient`
+- `AppleGasGaugeUpdateUserClient ERROR: no data or MD\n`
+- `AppleGasGaugeUpdate ERROR: error in gas gauge update (%x)\n`
+- `AppleGasGaugeUpdate ERROR: invalid notification data: expected OSNumber\n`
+- `AppleGasGaugeUpdate ERROR: Failed to pass image types '%u'. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate: invalid notification\n`
+- `AppleGasGaugeUpdate ERROR: failed to write key '%c%c%c%c' rc:%#x=%s\n`
+- `AppleGasGaugeUpdate ERROR: failed to read key '%c%c%c%c' rc:%#x=%s\n`
+- `AppleGasGaugeUpdate`
+- `AppleGasGaugeUpdateUserClient ERROR: invalid length:%llu>%llu\n`
+- `AppleGasGaugeUpdate WARN: Failed to read updater status. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate ERROR: Failed to set command 'read nonce'. rc:0x%x\n`
+- `AppleGasGaugeUpdate ERROR: Failed to set command 'start update'. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate: writeData checkpoint: init done\n`
+- `AppleGasGaugeUpdateUserClient ERROR: invalid length in struct input:%u, %llu\n`
+- `AppleGasGaugeUpdate ERROR: Failed to read nonce. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate ERROR: Failed to pass signature2 for command '%u'. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate ERROR: Failed to create SMC control key\n`
+- `AppleGasGaugeUpdate ERROR: Failed to poll updater status. op:%u offset:%zu rc:0x%x\n`
+- `AppleGasGaugeUpdate ERROR: Failed to set command 'read updater status'. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate ERROR: timeout: waiting for UID\n`
+- `AppleGasGaugeUpdateUserClient`
+- `AppleGasGaugeUpdate ERROR: failed to create UserClient\n`
+- `AppleGasGaugeUpdate ERROR: failed to initialize UserClient\n`
+- `AppleGasGaugeUpdate ERROR: failed to register notifier\n`
+- `AppleGasGaugeUpdate: writeData checkpoint: start\n`
+- `AppleGasGaugeUpdate ERROR: Failed to set command 'commit image'. rc:0x%x\n`
+- `site.AppleGasGaugeUpdate`
+- `AppleGasGaugeUpdate ERROR: failed to read key '%c%c%c%c' retry:%zu rc:%#x=%s\n`
+- `AppleGasGaugeUpdate ERROR: Failed to set command 'read UID'. rc:0x%x\n`
+- `AppleGasGaugeUpdate ERROR: Failed to pass data for command '%u'at offset:%zu. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate ERROR: Failed to pass image type '%u' for command '%u'. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate ERROR: updater error:%u, op:%u\n`
+- `AppleGasGaugeUpdate ERROR: Failed to set command '%u' at offset:%zu. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdateUserClient ERROR: invalid type:%llu\n`
+- `AppleGasGaugeUpdate ERROR: updater in invalid state '%u'\n`
+- `AppleGasGaugeUpdate ERROR: invalid provider\n`
+- `AppleGasGaugeUpdate ERROR: Failed to read info3. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate ERROR: invalid notification data\n`
+- `AppleGasGaugeUpdate ERROR: Failed to pass length for command '%u'. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate ERROR: Failed to set command 'read info 2'. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate ERROR: timeout: waiting for op '%u'\n`
+- `AppleGasGaugeUpdate ERROR: Failed to pass signature1 for command '%u'. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate ERROR: Failed to set command '%u'. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate: _sendData: type=%llu, length=%llu\n`
+- `AppleGasGaugeUpdate ERROR: unexpected updater status: actual:%u expected:%u op:%u\n`
+- `AppleGasGaugeUpdate ERROR: timeout: waiting for image commit\n`
+- `AppleGasGaugeUpdate ERROR: Failed to set command 'read info 3'. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate ERROR: timeout: waiting for command '%u' at offset %zu\n`
+- `AppleGasGaugeUpdate ERROR: Failed to read info. rc:0x%x=%s\n`
+- `AppleGasGaugeUpdate: writeDataData checkpoint: start transfer of %zu bytes\n`
+- `AppleGasGaugeUpdate ERROR: received notification for op:%u, expected op:%u\n`
+- `AppleGasGaugeUpdateUserClient ERROR: no self\n`

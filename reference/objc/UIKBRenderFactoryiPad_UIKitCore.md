@@ -1,0 +1,90 @@
+# `UIKBRenderFactoryiPad`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `UIKBRenderFactoryiPhone`
+- 0 instance variables, 0 properties, 80 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[UIKBRenderFactoryiPad assetIdiom];
+-[UIKBRenderFactoryiPad muttitapReverseKeyImageName];
+-[UIKBRenderFactoryiPad supportsPaddles];
+-[UIKBRenderFactoryiPad keyCornerRadius];
+-[UIKBRenderFactoryiPad thinKeycapsFontNameForKey:];
+-[UIKBRenderFactoryiPad skinnyKeyThreshold];
+-[UIKBRenderFactoryiPad dismissKeyOffset];
+-[UIKBRenderFactoryiPad lightKeycapsFontNameForKey:];
+-[UIKBRenderFactoryiPad _traitsForKey:onKeyplane:];
+-[UIKBRenderFactoryiPad _row4ControlSegmentWidthRight];
+-[UIKBRenderFactoryiPad wideShadowPaddleInsets];
+-[UIKBRenderFactoryiPad shouldClearBaseDisplayStringForVariants:];
+-[UIKBRenderFactoryiPad variantSymbolFrameInsets];
+-[UIKBRenderFactoryiPad variantAnnotationTextOffset];
+-[UIKBRenderFactoryiPad symbolImageControlKeyFontSize];
+-[UIKBRenderFactoryiPad variantGeometriesForGeometry:variantCount:rowLimit:annotationIndex:];
+-[UIKBRenderFactoryiPad _customizeTraits:forPopupForKey:withRenderingContext:keycapsFontName:fallbackFontName:];
+-[UIKBRenderFactoryiPad _row4ControlSegmentWidthLeft];
+-[UIKBRenderFactoryiPad messagesWriteboardKeyImageName];
+-[UIKBRenderFactoryiPad multitapCompleteKeyImageName];
+-[UIKBRenderFactoryiPad variantPaddedFrameInsets];
+-[UIKBRenderFactoryiPad variantDisplayFrameInsets];
+-[UIKBRenderFactoryiPad iPadFudgeLayout];
+-[UIKBRenderFactoryiPad rowLimitForKey:];
+-[UIKBRenderFactoryiPad deleteKeyOffset];
+-[UIKBRenderFactoryiPad dualStringKeyFontSizeAdjustment];
+-[UIKBRenderFactoryiPad moreKeyFontSize];
+-[UIKBRenderFactoryiPad returnKeyOffset];
+-[UIKBRenderFactoryiPad stringKeyOffset];
+-[UIKBRenderFactoryiPad tabKeyImageName];
+-[UIKBRenderFactoryiPad ZWNJKeyImageName];
+-[UIKBRenderFactoryiPad ZWNJKeyOffset];
+-[UIKBRenderFactoryiPad _customizeGeometry:forKey:contents:];
+-[UIKBRenderFactoryiPad _customizePopupTraits:forKey:onKeyplane:];
+-[UIKBRenderFactoryiPad _customizeSymbolStyle:forKey:contents:onKeyplane:];
+-[UIKBRenderFactoryiPad _onLeftSide:onKeyplane:];
+-[UIKBRenderFactoryiPad _popupStyleForKey:];
+-[UIKBRenderFactoryiPad additionalDynamicDrawingInsets];
+-[UIKBRenderFactoryiPad bottomRowDefaultFontSize];
+-[UIKBRenderFactoryiPad capslockKeyImageName];
+-[UIKBRenderFactoryiPad cornerRadiusForKey:];
+-[UIKBRenderFactoryiPad defaultPathWeight];
+-[UIKBRenderFactoryiPad defaultVariantGeometrySize];
+-[UIKBRenderFactoryiPad defaultVariantSizeThreshold];
+-[UIKBRenderFactoryiPad deleteKeyFontSize];
+-[UIKBRenderFactoryiPad dictationKeyFontSize];
+-[UIKBRenderFactoryiPad dictationKeyOffset];
+-[UIKBRenderFactoryiPad dismissKeyFontSize];
+-[UIKBRenderFactoryiPad dismissKeySymbolFrame];
+-[UIKBRenderFactoryiPad displayContentsForKey:];
+-[UIKBRenderFactoryiPad dualStringKeyOffset];
+-[UIKBRenderFactoryiPad emailDotKeyFontSize];
+-[UIKBRenderFactoryiPad facemarkKeyFontSize];
+-[UIKBRenderFactoryiPad fallbackFontSize];
+-[UIKBRenderFactoryiPad fontSizeAdjustmentForNonAlphanumericKeycaps];
+-[UIKBRenderFactoryiPad iPadSansHomeButtonLayout];
+-[UIKBRenderFactoryiPad insetFrame:forKey:];
+-[UIKBRenderFactoryiPad internationalKeyFontSize];
+-[UIKBRenderFactoryiPad internationalKeyOffset];
+-[UIKBRenderFactoryiPad keyInsetBottom];
+-[UIKBRenderFactoryiPad lowQualityLayeredBackgroundColorName];
+-[UIKBRenderFactoryiPad messagesTypeKeyplanSwitchKeyFontSize];
+-[UIKBRenderFactoryiPad predictiveKeyCornerRadius];
+-[UIKBRenderFactoryiPad returnKeySymbolFrameInset];
+-[UIKBRenderFactoryiPad secondaryShiftKeyOffset];
+-[UIKBRenderFactoryiPad setupLayoutSegments];
+-[UIKBRenderFactoryiPad shiftKeyFontSize];
+-[UIKBRenderFactoryiPad shiftKeyOffset];
+-[UIKBRenderFactoryiPad shiftKeySymbolFrame];
+-[UIKBRenderFactoryiPad shouldOverlayAlternateTagKey:onKeyplane:];
+-[UIKBRenderFactoryiPad shouldOverlayDictationKey:onKeyplane:];
+-[UIKBRenderFactoryiPad smallKanaKeyFontSize];
+-[UIKBRenderFactoryiPad spaceKeyFontSize];
+-[UIKBRenderFactoryiPad stringKeyFontSize];
+-[UIKBRenderFactoryiPad supportsInputTraits:forKeyplane:];
+-[UIKBRenderFactoryiPad symbolFrameInset];
+-[UIKBRenderFactoryiPad symbolImageControlKeyOffset];
+-[UIKBRenderFactoryiPad tinyPunctuationGlyphFontSize];
+-[UIKBRenderFactoryiPad tinyPunctuationGlyphOffset];
+-[UIKBRenderFactoryiPad zhuyinFirstToneKeyFontSize];
+```

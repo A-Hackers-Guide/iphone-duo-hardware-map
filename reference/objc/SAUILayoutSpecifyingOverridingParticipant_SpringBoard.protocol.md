@@ -1,0 +1,27 @@
+# `SAUILayoutSpecifyingOverridingParticipant` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `SABehaviorOverridingParticipant`
+- 0 instance variables, 0 properties, 17 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[SAUILayoutSpecifyingOverridingParticipant preferredEdgeOutsetsForLayoutMode:suggestedOutsets:maximumOutsets:forTargetWithOverrider:isDefaultValue:];
+-[SAUILayoutSpecifyingOverridingParticipant customizationOptionsForLayoutMode:forTargetWithOverrider:isDefaultValue:];
+-[SAUILayoutSpecifyingOverridingParticipant layoutHostContainerViewWillLayoutSubviews:forTargetWithOverrider:];
+-[SAUILayoutSpecifyingOverridingParticipant preferredLayoutModeForTargetWithOverrider:isDefaultValue:];
+-[SAUILayoutSpecifyingOverridingParticipant minimumSupportedLayoutModeForTargetWithOverrider:isDefaultValue:];
+-[SAUILayoutSpecifyingOverridingParticipant layoutHostContainerViewDidLayoutSubviews:forTargetWithOverrider:];
+-[SAUILayoutSpecifyingOverridingParticipant isProvidedViewConcentric:inLayoutMode:forTargetWithOverrider:isDefaultValue:];
+-[SAUILayoutSpecifyingOverridingParticipant isRequestingMenuPresentationForTargetWithOverrider:isDefaultValue:];
+-[SAUILayoutSpecifyingOverridingParticipant maximumSupportedLayoutModeForTargetWithOverrider:isDefaultValue:];
+-[SAUILayoutSpecifyingOverridingParticipant layoutModePreferenceForTargetWithOverrider:isDefaultValue:];
+-[SAUILayoutSpecifyingOverridingParticipant setLayoutMode:reason:forTargetWithOverrider:];
+-[SAUILayoutSpecifyingOverridingParticipant setPreferredLayoutMode:reason:forTargetWithOverrider:];
+-[SAUILayoutSpecifyingOverridingParticipant sizeThatFitsSize:forProvidedView:inLayoutMode:forTargetWithOverrider:isDefaultValue:];
+-[SAUILayoutSpecifyingOverridingParticipant isMinimalPresentationPossibleForTargetWithOverrider:isDefaultValue:];
+-[SAUILayoutSpecifyingOverridingParticipant isInteractiveDismissalEnabledForTargetWithOverrider:isDefaultValue:];
+-[SAUILayoutSpecifyingOverridingParticipant preferredLayoutModeAssertionForTargetWithOverrider:isDefaultValue:];
+-[SAUILayoutSpecifyingOverridingParticipant layoutModeForTargetWithOverrider:isDefaultValue:];
+```

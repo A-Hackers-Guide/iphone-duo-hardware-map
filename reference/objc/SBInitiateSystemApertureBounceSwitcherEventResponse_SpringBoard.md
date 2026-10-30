@@ -1,0 +1,29 @@
+# `SBInitiateSystemApertureBounceSwitcherEventResponse`
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `SBSwitcherModifierEventResponse`
+- 2 instance variables, 2 properties, 5 instance methods, 0 class methods
+
+## Instance variables
+
+```
+@"SBAppLayout" _appLayout;
+@"NSUUID" _suppressionIdentifierToInvalidate;
+```
+
+## Properties
+
+```
+@property (T@"SBAppLayout",R,N,V_appLayout) appLayout;
+@property (T@"NSUUID",R,N,V_suppressionIdentifierToInvalidate) suppressionIdentifierToInvalidate;
+```
+
+## Instance methods
+
+```
+-[SBInitiateSystemApertureBounceSwitcherEventResponse appLayout];
+-[SBInitiateSystemApertureBounceSwitcherEventResponse type];
+-[SBInitiateSystemApertureBounceSwitcherEventResponse descriptionBuilderWithMultilinePrefix:];
+-[SBInitiateSystemApertureBounceSwitcherEventResponse initWithAppLayout:suppressionIdentifierToInvalidate:];
+-[SBInitiateSystemApertureBounceSwitcherEventResponse suppressionIdentifierToInvalidate];
+```

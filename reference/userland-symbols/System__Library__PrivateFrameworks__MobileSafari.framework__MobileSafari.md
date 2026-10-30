@@ -1,0 +1,2066 @@
+# Symbols: `/System/Library/PrivateFrameworks/MobileSafari.framework/MobileSafari`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__PrivateFrameworks__MobileSafari.framework__MobileSafari.md). **[DSC]**
+
+1,049 public symbols, 10,357 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1ef4a2410  __AUTH,__objc_data  _OBJC_CLASS_$_SFAcceptSharedTabGroupInProfileDialogController
+0x1ef4ac038  __AUTH,__objc_data  _OBJC_CLASS_$_SFActionsMenuButton
+0x1ef4a23e8  __AUTH,__objc_data  _OBJC_CLASS_$_SFActivityNotificationViewController
+0x1ef4a23c0  __AUTH,__objc_data  _OBJC_CLASS_$_SFAlertControllerContentViewController
+0x1ef4aa160  __AUTH,__objc_data  _OBJC_CLASS_$_SFAnimationSettings
+0x1ef4a2398  __AUTH,__objc_data  _OBJC_CLASS_$_SFAppDistributorWrapper
+0x1ef4aa138  __AUTH,__objc_data  _OBJC_CLASS_$_SFAppLinkBanner
+0x1ef4a2370  __AUTH,__objc_data  _OBJC_CLASS_$_SFAppStoreLinkTableViewCell
+0x1ef4a2348  __AUTH,__objc_data  _OBJC_CLASS_$_SFAutoFillInternalFeedbackActivityNotificationViewController
+0x1ef4a2320  __AUTH,__objc_data  _OBJC_CLASS_$_SFAvailableAppTableViewCell
+0x1ef4aa110  __AUTH,__objc_data  _OBJC_CLASS_$_SFAvatarStackView
+0x1ef4aa0e8  __AUTH,__objc_data  _OBJC_CLASS_$_SFBackdropView
+0x1ef4aa0c0  __AUTH,__objc_data  _OBJC_CLASS_$_SFBadgeContainerView
+0x1ef4ac010  __AUTH,__objc_data  _OBJC_CLASS_$_SFBannerTheme
+0x1ee2efa20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFBarButtonGroupContainer
+0x1ef4a9ff8  __AUTH,__objc_data  _OBJC_CLASS_$_SFBarButtonGroupContainerConfiguration
+0x1ef4a9fd0  __AUTH,__objc_data  _OBJC_CLASS_$_SFBasicDialog
+0x1ef4a9fa8  __AUTH,__objc_data  _OBJC_CLASS_$_SFBlockBasedCAAnimationDelegate
+0x1ef4a9f80  __AUTH,__objc_data  _OBJC_CLASS_$_SFBlockBasedPopoverSourceInfo
+0x1ef4a9f58  __AUTH,__objc_data  _OBJC_CLASS_$_SFBookmarkTouchIconRequest
+0x1ef4a9f30  __AUTH,__objc_data  _OBJC_CLASS_$_SFBookmarksLockCoordinator
+0x1ef4a9f08  __AUTH,__objc_data  _OBJC_CLASS_$_SFBorderView
+0x1ef4a9ee0  __AUTH,__objc_data  _OBJC_CLASS_$_SFBrowserApplication
+0x1ef4a9eb8  __AUTH,__objc_data  _OBJC_CLASS_$_SFBrowserController
+0x1ef4abfe8  __AUTH,__objc_data  _OBJC_CLASS_$_SFBrowserMenuProvider
+0x1ef4a9e68  __AUTH,__objc_data  _OBJC_CLASS_$_SFBrowserStateSQLiteStore
+0x1ef4a9e40  __AUTH,__objc_data  _OBJC_CLASS_$_SFBrowsingAssistant
+0x1ef4a9e18  __AUTH,__objc_data  _OBJC_CLASS_$_SFBrowsingAssistantCardItem
+0x1ef4abfc0  __AUTH,__objc_data  _OBJC_CLASS_$_SFBrowsingAssistantFavoritedMenuActionsStore
+0x1ef4a9df0  __AUTH,__objc_data  _OBJC_CLASS_$_SFBrowsingAssistantMenuSection
+0x1ef4a22a8  __AUTH,__objc_data  _OBJC_CLASS_$_SFBrowsingAssistantSearchResultView
+0x1ef4a2280  __AUTH,__objc_data  _OBJC_CLASS_$_SFBrowsingDataDeletionRequest
+0x1ee2f2c20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFCapsuleCollectionView
+0x1ee2f2bd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFCapsuleNavigationBar
+0x1ef4a9d00  __AUTH,__objc_data  _OBJC_CLASS_$_SFCapsuleNavigationBarTheme
+0x1ee2f2fe0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFCapsuleURLField
+0x1ee2f2ba8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFCapsuleView
+0x1ef4a9c60  __AUTH,__objc_data  _OBJC_CLASS_$_SFCatalogPlatterPresentationController
+0x1ef4a2258  __AUTH,__objc_data  _OBJC_CLASS_$_SFClearHistoryUtilities
+0x1ef4a2230  __AUTH,__objc_data  _OBJC_CLASS_$_SFClearHistoryViewController
+0x1ee2f2b80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFClickableButton
+0x1ef4a9c38  __AUTH,__objc_data  _OBJC_CLASS_$_SFClipLink
+0x1ef4a2208  __AUTH,__objc_data  _OBJC_CLASS_$_SFClipLinkBanner
+0x1ef4a9c10  __AUTH,__objc_data  _OBJC_CLASS_$_SFCloseButton
+0x1ef4a9be8  __AUTH,__objc_data  _OBJC_CLASS_$_SFClusterPreviewItem
+0x1ef4a21b8  __AUTH,__objc_data  _OBJC_CLASS_$_SFClusterPreviewItemConfiguration
+0x1ee2f1780  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFClusterPreviewItemView
+0x1ef4a9bc0  __AUTH,__objc_data  _OBJC_CLASS_$_SFClusterSettingsItem
+0x1ef4a2190  __AUTH,__objc_data  _OBJC_CLASS_$_SFClusterSettingsItemView
+0x1ef4a2168  __AUTH,__objc_data  _OBJC_CLASS_$_SFClusteringAccessoryButton
+0x1ef4a9b98  __AUTH,__objc_data  _OBJC_CLASS_$_SFCollaborationUnifiedBarItem
+0x1ef4a2140  __AUTH,__objc_data  _OBJC_CLASS_$_SFCommandForwardingView
+0x1ef4ac268  __AUTH,__objc_data  _OBJC_CLASS_$_SFContentBlockerManagerProxy
+0x1ee2f2838  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFCrashBanner
+0x1ef4a9b48  __AUTH,__objc_data  _OBJC_CLASS_$_SFDefaultStartPageVisualStyleProvider
+0x1ef4a9b20  __AUTH,__objc_data  _OBJC_CLASS_$_SFDeviceUtilities
+0x1ef4a9af8  __AUTH,__objc_data  _OBJC_CLASS_$_SFDialog
+0x1ef4a9ad0  __AUTH,__objc_data  _OBJC_CLASS_$_SFDialogAction
+0x1ee2f2b58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFDialogController
+0x1ee2f30a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFDialogView
+0x1ef4a20c8  __AUTH,__objc_data  _OBJC_CLASS_$_SFDropletEffectView
+0x1ef4a20a0  __AUTH,__objc_data  _OBJC_CLASS_$_SFDropletItemView
+0x1ef4a9a30  __AUTH,__objc_data  _OBJC_CLASS_$_SFEditableEffect
+0x1ef4a9a08  __AUTH,__objc_data  _OBJC_CLASS_$_SFEditableEffectStore
+0x1ef4a99e0  __AUTH,__objc_data  _OBJC_CLASS_$_SFEditableEffectView
+0x1ef4a2078  __AUTH,__objc_data  _OBJC_CLASS_$_SFEditableProperty
+0x1ef4a2050  __AUTH,__objc_data  _OBJC_CLASS_$_SFEffectViewEditorViewController
+0x1ef4a2028  __AUTH,__objc_data  _OBJC_CLASS_$_SFEnhancedSiriAvailabilityMonitor
+0x1ef4a2000  __AUTH,__objc_data  _OBJC_CLASS_$_SFExpandingTextView
+0x1ef4a1fd8  __AUTH,__objc_data  _OBJC_CLASS_$_SFExtensionWrapper
+0x1ef4a1fb0  __AUTH,__objc_data  _OBJC_CLASS_$_SFExtensionsProfilesDataSource
+0x1ef4a99b8  __AUTH,__objc_data  _OBJC_CLASS_$_SFFaviconView
+0x1ef4a1f88  __AUTH,__objc_data  _OBJC_CLASS_$_SFFeatureAvailabilityWrapper
+0x1ef4ac178  __AUTH,__objc_data  _OBJC_CLASS_$_SFFeatureManager
+0x1ef4a9990  __AUTH,__objc_data  _OBJC_CLASS_$_SFFolderPickerList
+0x1ef4a9940  __AUTH,__objc_data  _OBJC_CLASS_$_SFGradientView
+0x1ef4a1f60  __AUTH,__objc_data  _OBJC_CLASS_$_SFHighlightActivityNotificationViewController
+0x1ee2f2810  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFHighlightBanner
+0x1ef4a9918  __AUTH,__objc_data  _OBJC_CLASS_$_SFHighlightBannerTracker
+0x1ef4a1f38  __AUTH,__objc_data  _OBJC_CLASS_$_SFHighlightContactList
+0x1ef4a1ec0  __AUTH,__objc_data  _OBJC_CLASS_$_SFIconGenerator
+0x1ef4a1e98  __AUTH,__objc_data  _OBJC_CLASS_$_SFIntelligenceLabel
+0x1ee2f27e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFLinkBanner
+0x1ef4a98c8  __AUTH,__objc_data  _OBJC_CLASS_$_SFLinkHoverEvent
+0x1ef4a1e70  __AUTH,__objc_data  _OBJC_CLASS_$_SFLockdownStatusBar
+0x1ef4a1e48  __AUTH,__objc_data  _OBJC_CLASS_$_SFMagicExtensionBanner
+0x1ef4a98a0  __AUTH,__objc_data  _OBJC_CLASS_$_SFManageExtensionsViewController
+0x1ef4a9878  __AUTH,__objc_data  _OBJC_CLASS_$_SFManagedBookmark
+0x1ef4a1e20  __AUTH,__objc_data  _OBJC_CLASS_$_SFManagedBookmarkCompletionMatch
+0x1ef4a9850  __AUTH,__objc_data  _OBJC_CLASS_$_SFManagedBookmarkFolder
+0x1ef4a9828  __AUTH,__objc_data  _OBJC_CLASS_$_SFManagedBookmarksController
+0x1ef4a9800  __AUTH,__objc_data  _OBJC_CLASS_$_SFMediaCaptureStatusBarManager
+0x1ef4abf98  __AUTH,__objc_data  _OBJC_CLASS_$_SFMenuPresentingButton
+0x1ef4abf70  __AUTH,__objc_data  _OBJC_CLASS_$_SFMenuPresentingButtonWithLongPressAction
+0x1ee2f2fb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFMoreMenuButton
+0x1ef4abf20  __AUTH,__objc_data  _OBJC_CLASS_$_SFNavigationBarItem
+0x1ef4abef8  __AUTH,__objc_data  _OBJC_CLASS_$_SFNavigationBarToggleButton
+0x1ef4a1dd0  __AUTH,__objc_data  _OBJC_CLASS_$_SFNotifyMeWhenBanner
+0x1ef4a97b0  __AUTH,__objc_data  _OBJC_CLASS_$_SFNotifyMeWhenController
+0x1ef49e4f8  __AUTH,__objc_data  _OBJC_CLASS_$_SFOnDemandSummarizationFeedbackController
+0x1ef4a9788  __AUTH,__objc_data  _OBJC_CLASS_$_SFOnDeviceSummarization
+0x1ef4a9760  __AUTH,__objc_data  _OBJC_CLASS_$_SFOnboardingControllerProvider
+0x1ef4aaff0  __AUTH,__objc_data  _OBJC_CLASS_$_SFOnboardingCoordinator
+0x1ef4aada0  __AUTH,__objc_data  _OBJC_CLASS_$_SFOnboardingTipController
+0x1ee2f1368  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFOneStepBookmarkingButton
+0x1ef4a9738  __AUTH,__objc_data  _OBJC_CLASS_$_SFOrderedContainerView
+0x1ef4a1da8  __AUTH,__objc_data  _OBJC_CLASS_$_SFOverlayProvider
+0x1ef4acae8  __AUTH,__objc_data  _OBJC_CLASS_$_SFPebbleWebsiteDataStoreManager
+0x1ef4a1d80  __AUTH,__objc_data  _OBJC_CLASS_$_SFPerSiteSettingsEntity
+0x1ee2f2b30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFPinnableBanner
+0x1ef4a1d58  __AUTH,__objc_data  _OBJC_CLASS_$_SFPinnedOverflowItemView
+0x1ef4a96e8  __AUTH,__objc_data  _OBJC_CLASS_$_SFPlaceholderView
+0x1ef4a96c0  __AUTH,__objc_data  _OBJC_CLASS_$_SFPopoverSizingTableViewController
+0x1ef4a9620  __AUTH,__objc_data  _OBJC_CLASS_$_SFPrivacyReportGridTableViewCell
+0x1ef4a95f8  __AUTH,__objc_data  _OBJC_CLASS_$_SFPrivacyReportGridView
+0x1ef4a9580  __AUTH,__objc_data  _OBJC_CLASS_$_SFPrivacyReportOverviewView
+0x1ef4a1d08  __AUTH,__objc_data  _OBJC_CLASS_$_SFPrivateBrowsingPrivacyProtectionsBanner
+0x1ef4a1ce0  __AUTH,__objc_data  _OBJC_CLASS_$_SFProgressView
+0x1ef4ac1f0  __AUTH,__objc_data  _OBJC_CLASS_$_SFProximityHandoffPayload
+0x1ef4a94e0  __AUTH,__objc_data  _OBJC_CLASS_$_SFQuickLookDocument
+0x1ef4a1cb8  __AUTH,__objc_data  _OBJC_CLASS_$_SFQuickLookDocumentController
+0x1ef4a1c68  __AUTH,__objc_data  _OBJC_CLASS_$_SFQuickLookDocumentView
+0x1ef4a1c40  __AUTH,__objc_data  _OBJC_CLASS_$_SFQuickLookDocumentWriter
+0x1ef4abed0  __AUTH,__objc_data  _OBJC_CLASS_$_SFReaderFontOptionsController
+0x1ef4a94b8  __AUTH,__objc_data  _OBJC_CLASS_$_SFRecentSearchesStartPageController
+0x1ef4a1c18  __AUTH,__objc_data  _OBJC_CLASS_$_SFRelatedTabOverviewMetrics
+0x1ef4a9490  __AUTH,__objc_data  _OBJC_CLASS_$_SFRelatedTabsInfo
+0x1ef4a1bf0  __AUTH,__objc_data  _OBJC_CLASS_$_SFRequiredCameraAndMicrophoneDialog
+0x1ef4a1b78  __AUTH,__objc_data  _OBJC_CLASS_$_SFSafariSettingsBrowsingDataExportController
+0x1ee2f2680  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFScreenTimeOverlayViewController
+0x1ef4abe80  __AUTH,__objc_data  _OBJC_CLASS_$_SFScribbleController
+0x1ef4abe58  __AUTH,__objc_data  _OBJC_CLASS_$_SFScribbleOverlay
+0x1ee2f24e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFScribbleSelectionOverlay
+0x1ef4a9468  __AUTH,__objc_data  _OBJC_CLASS_$_SFScrollingPanGestureRecognizer
+0x1ef4a1b50  __AUTH,__objc_data  _OBJC_CLASS_$_SFSearchEngineControllerWrapper
+0x1ef4a1b28  __AUTH,__objc_data  _OBJC_CLASS_$_SFSearchFieldIconContainerView
+0x1ef4a9418  __AUTH,__objc_data  _OBJC_CLASS_$_SFSegmentedViewController
+0x1ef4a93f0  __AUTH,__objc_data  _OBJC_CLASS_$_SFShadowView
+0x1ef4a93c8  __AUTH,__objc_data  _OBJC_CLASS_$_SFSiriLinkCoordinator
+0x1ef4a93a0  __AUTH,__objc_data  _OBJC_CLASS_$_SFSiriReaderPlaybackController
+0x1ef4a9378  __AUTH,__objc_data  _OBJC_CLASS_$_SFSiriVoiceUtilities
+0x1ef4a9300  __AUTH,__objc_data  _OBJC_CLASS_$_SFSnapshotImageView
+0x1ee2ef560  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFStartPageCustomizationViewController
+0x1ee2f26a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFStartPageFilledBackgroundCell
+0x1ef4aacf0  __AUTH,__objc_data  _OBJC_CLASS_$_SFStartPageHostedViewCell
+0x1ef4aab50  __AUTH,__objc_data  _OBJC_CLASS_$_SFStartPageOnboardingCellConfiguration
+0x1ef4a9210  __AUTH,__objc_data  _OBJC_CLASS_$_SFStartPageViewController
+0x1ee2f24b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFStepper
+0x1ef4a1a88  __AUTH,__objc_data  _OBJC_CLASS_$_SFStepperContainer
+0x1ef4a1a60  __AUTH,__objc_data  _OBJC_CLASS_$_SFStepperView
+0x1ef4a91e8  __AUTH,__objc_data  _OBJC_CLASS_$_SFStoreBanner
+0x1ef4a91c0  __AUTH,__objc_data  _OBJC_CLASS_$_SFStoreBannerTracker
+0x1ef4a9198  __AUTH,__objc_data  _OBJC_CLASS_$_SFSummarizationAnimationCoordinator
+0x1ef4a9170  __AUTH,__objc_data  _OBJC_CLASS_$_SFSwipeToTabOverviewTipCoordinator
+0x1ef4a9148  __AUTH,__objc_data  _OBJC_CLASS_$_SFSyntheticBookmarkFolder
+0x1ef4a9120  __AUTH,__objc_data  _OBJC_CLASS_$_SFSystemAlert
+0x1ef4a1a38  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabGroupActivityItemConfiguration
+0x1ef4a1a10  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabGroupBanner
+0x1ee2f2658  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFTabGroupTitleView
+0x1ef4a90f8  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabHoverPreviewController
+0x1ef4a90d0  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabIconPool
+0x1ef4a90a8  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabIconRegistration
+0x1ef4a9080  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSnapshot
+0x1ef4a9058  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSnapshotContent
+0x1ef4a9030  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSnapshotMetadata
+0x1ef4a9008  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSnapshotMetadataStore
+0x1ef4a8fe0  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSnapshotPool
+0x1ef4a19e8  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSnapshotRegistration
+0x1ef4a8fb8  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSnapshotVisibility
+0x1ef4a8f90  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabStateData
+0x1ee2f2308  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFTabSwitcher
+0x1ef4a8f68  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSwitcherConfiguration
+0x1ef4a8f40  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSwitcherContent
+0x1ef4a19c0  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSwitcherDropDestination
+0x1ef4a1998  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSwitcherDropIntent
+0x1ef4a8f18  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSwitcherItem
+0x1ef4a8ef0  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSwitcherItemFilter
+0x1ef4a8ec8  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSwitcherPage
+0x1ef4a8ea0  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSwitcherPageOverlay
+0x1ef4a8e78  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSwitcherPagePeekingOverlay
+0x1ef4a1970  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSwitcherProfile
+0x1ef4a8e50  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSwitcherScrollPosition
+0x1ef4a8e28  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSwitcherSection
+0x1ef4a1948  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSwitcherShareConfiguration
+0x1ef4a8e00  __AUTH,__objc_data  _OBJC_CLASS_$_SFTabSwitcherTransaction
+0x1ef4a8960  __AUTH,__objc_data  _OBJC_CLASS_$_SFTableViewDiffableDataSource
+0x1ef4a8938  __AUTH,__objc_data  _OBJC_CLASS_$_SFTestConsoleLogRecorder
+0x1ef4a8910  __AUTH,__objc_data  _OBJC_CLASS_$_SFTextSearchMatchesCounter
+0x1ef4abe30  __AUTH,__objc_data  _OBJC_CLASS_$_SFThemeColorBarTheme
+0x1ef4abe08  __AUTH,__objc_data  _OBJC_CLASS_$_SFThemeColorEffectView
+0x1ef4a88e8  __AUTH,__objc_data  _OBJC_CLASS_$_SFTipsCoordinator
+0x1ef4a88c0  __AUTH,__objc_data  _OBJC_CLASS_$_SFToastViewController
+0x1ef4a1920  __AUTH,__objc_data  _OBJC_CLASS_$_SFTooltip
+0x1ef4abd90  __AUTH,__objc_data  _OBJC_CLASS_$_SFTouchDownGestureRecognizer
+0x1ef4a8898  __AUTH,__objc_data  _OBJC_CLASS_$_SFTouchPassthroughView
+0x1ef4abd68  __AUTH,__objc_data  _OBJC_CLASS_$_SFTouchUpGestureRecognizer
+0x1ef4a8870  __AUTH,__objc_data  _OBJC_CLASS_$_SFTraitAlternateTintColor
+0x1ef4a8848  __AUTH,__objc_data  _OBJC_CLASS_$_SFTraitAlternateUserInterfaceStyle
+0x1ef4a8820  __AUTH,__objc_data  _OBJC_CLASS_$_SFTraitBackgroundBlurEffect
+0x1ef4a87f8  __AUTH,__objc_data  _OBJC_CLASS_$_SFTraitBarTintStyleTrait
+0x1ef4a87d0  __AUTH,__objc_data  _OBJC_CLASS_$_SFTraitIsInSegmentedViewController
+0x1ef4a87a8  __AUTH,__objc_data  _OBJC_CLASS_$_SFTraitStartPageAttributionViewBackdropGroupName
+0x1ef4a8780  __AUTH,__objc_data  _OBJC_CLASS_$_SFTraitStartPageCellBackdropGroupName
+0x1ef4a8758  __AUTH,__objc_data  _OBJC_CLASS_$_SFTraitUsesSidebarPresentation
+0x1ef4a8730  __AUTH,__objc_data  _OBJC_CLASS_$_SFTraitUsesVibrantAppearance
+0x1ef49e4d0  __AUTH,__objc_data  _OBJC_CLASS_$_SFTraitVerticalBarRectEdge
+0x1ef4a8708  __AUTH,__objc_data  _OBJC_CLASS_$_SFTraitWebpageThemeColor
+0x1ef4a86e0  __AUTH,__objc_data  _OBJC_CLASS_$_SFTransitionCoordinator
+0x1ef4a1880  __AUTH,__objc_data  _OBJC_CLASS_$_SFUIBarButtonItemPopoverSourceInfo
+0x1ef4ac1a0  __AUTH,__objc_data  _OBJC_CLASS_$_SFURLAutocompleteSuggestionProvider
+0x1ef4a8640  __AUTH,__objc_data  _OBJC_CLASS_$_SFURLCompletionMatchBookmarkData
+0x1ef4a8618  __AUTH,__objc_data  _OBJC_CLASS_$_SFURLCompletionMatchBookmarkListData
+0x1ef4a85f0  __AUTH,__objc_data  _OBJC_CLASS_$_SFURLCompletionMatchCloudTabData
+0x1ef4a1858  __AUTH,__objc_data  _OBJC_CLASS_$_SFURLFieldOverlayButtonItem
+0x1ef4a1830  __AUTH,__objc_data  _OBJC_CLASS_$_SFURLFieldOverlayConfiguration
+0x1ee2f1c20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFURLFieldOverlayView
+0x1ef4abd40  __AUTH,__objc_data  _OBJC_CLASS_$_SFURLLabel
+0x1ee2f2f40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFUnifiedBar
+0x1ee2f2f18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFUnifiedBarButton
+0x1ef4a85c8  __AUTH,__objc_data  _OBJC_CLASS_$_SFUnifiedBarButtonView
+0x1ef4a85a0  __AUTH,__objc_data  _OBJC_CLASS_$_SFUnifiedBarContentArrangement
+0x1ee2f2ef0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFUnifiedBarItem
+0x1ef4a8578  __AUTH,__objc_data  _OBJC_CLASS_$_SFUnifiedBarItemArrangement
+0x1ee2f3030  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFUnifiedBarItemView
+0x1ef4a8528  __AUTH,__objc_data  _OBJC_CLASS_$_SFUnifiedBarMetrics
+0x1ef4abcf0  __AUTH,__objc_data  _OBJC_CLASS_$_SFUnifiedBarTheme
+0x1ef4a8500  __AUTH,__objc_data  _OBJC_CLASS_$_SFUnifiedTabBar
+0x1ef4a8488  __AUTH,__objc_data  _OBJC_CLASS_$_SFUnifiedTabBarItem
+0x1ef4a8460  __AUTH,__objc_data  _OBJC_CLASS_$_SFUnifiedTabBarItemAccessoryButtonArrangement
+0x1ef4a8438  __AUTH,__objc_data  _OBJC_CLASS_$_SFUnifiedTabBarItemArrangement
+0x1ef4a1768  __AUTH,__objc_data  _OBJC_CLASS_$_SFUnifiedTabBarItemPosition
+0x1ee2f2ec8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFUnifiedTabBarItemTitleContainerView
+0x1ef4a8410  __AUTH,__objc_data  _OBJC_CLASS_$_SFUnifiedTabBarItemTitleContainerViewTheme
+0x1ee2f2ea0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_SFUnifiedTabBarItemView
+0x1ef4a8320  __AUTH,__objc_data  _OBJC_CLASS_$_SFUnifiedTabBarMetrics
+0x1ef4a82f8  __AUTH,__objc_data  _OBJC_CLASS_$_SFUnifiedTabBarScrollPosition
+0x1ef4a82d0  __AUTH,__objc_data  _OBJC_CLASS_$_SFUnifiedTabBarSection
+0x1ef4a82a8  __AUTH,__objc_data  _OBJC_CLASS_$_SFUnreadIndicator
+0x1ef4a8280  __AUTH,__objc_data  _OBJC_CLASS_$_SFVibrantSeparatorView
+0x1ef4a8258  __AUTH,__objc_data  _OBJC_CLASS_$_SFVoiceSearchManager
+0x1ef4a8230  __AUTH,__objc_data  _OBJC_CLASS_$_SFWallpaperViewController
+0x1ef4a8208  __AUTH,__objc_data  _OBJC_CLASS_$_SFWebExtension
+0x1ef4a16a0  __AUTH,__objc_data  _OBJC_CLASS_$_SFWebExtensionButton
+0x1ef4a81e0  __AUTH,__objc_data  _OBJC_CLASS_$_SFWebExtensionButtonConfiguration
+0x1ef4a1678  __AUTH,__objc_data  _OBJC_CLASS_$_SFWebExtensionEnabledRemotelyBanner
+0x1ef4a1628  __AUTH,__objc_data  _OBJC_CLASS_$_SFWebExtensionPermissionBanner
+0x1ef4a1600  __AUTH,__objc_data  _OBJC_CLASS_$_SFWebExtensionPermissionGrantedBanner
+0x1ef4abcc8  __AUTH,__objc_data  _OBJC_CLASS_$_SFWebExtensionsController
+0x1ef4a81b8  __AUTH,__objc_data  _OBJC_CLASS_$_SFWebFormAccessoryViewWrapper
+0x1ef4a1588  __AUTH,__objc_data  _OBJC_CLASS_$_SFWebpageStatusBarView
+0x1ef4a2a58  __AUTH,__objc_data  _OBJC_CLASS_$__SFAppDistributorWrapper
+0x1ef4abca0  __AUTH,__objc_data  _OBJC_CLASS_$__SFBarTheme
+0x1ef4a8190  __AUTH,__objc_data  _OBJC_CLASS_$__SFBookmarkFolderTouchIconProvider
+0x1ef4a8168  __AUTH,__objc_data  _OBJC_CLASS_$__SFBrowserSavedState
+0x1ef4a8140  __AUTH,__objc_data  _OBJC_CLASS_$__SFBrowserWindowSettings
+0x1ef4a8118  __AUTH,__objc_data  _OBJC_CLASS_$__SFBrowserWindowStateData
+0x1ee2f2e78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__SFCompressedBarButton
+0x1ee2f2e50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__SFDimmingButton
+0x1ef4a1560  __AUTH,__objc_data  _OBJC_CLASS_$__SFDropSession
+0x1ef4a80f0  __AUTH,__objc_data  _OBJC_CLASS_$__SFFaviconProvider
+0x1ee2f30f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__SFFluidProgressView
+0x1ef4a80c8  __AUTH,__objc_data  _OBJC_CLASS_$__SFFolderPickerItem
+0x1ef4a8078  __AUTH,__objc_data  _OBJC_CLASS_$__SFNavigationIntent
+0x1ef4a8050  __AUTH,__objc_data  _OBJC_CLASS_$__SFNavigationIntentBuilder
+0x1ef4ac128  __AUTH,__objc_data  _OBJC_CLASS_$__SFSavedAccountTouchIconCache
+0x1ef4a8028  __AUTH,__objc_data  _OBJC_CLASS_$__SFSavedAccountTouchIconRequest
+0x1ef4abc78  __AUTH,__objc_data  _OBJC_CLASS_$__SFSiteIcon
+0x1ee2f2a40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__SFSiteIconView
+0x1ef4ac100  __AUTH,__objc_data  _OBJC_CLASS_$__SFSiteMetadataManager
+0x1ef4ab3e8  __AUTH,__objc_data  _OBJC_CLASS_$__SFTipsCoordinator
+0x1ef4abc50  __AUTH,__objc_data  _OBJC_CLASS_$__SFTouchIconCache
+0x1ef4a8000  __AUTH,__objc_data  _OBJC_CLASS_$__SFTouchIconFetchOperation
+0x1ef4a7fd8  __AUTH,__objc_data  _OBJC_CLASS_$__SFUIViewPopoverSourceInfo
+0x1ef4a1510  __AUTH,__objc_data  _OBJC_CLASS_$__SFWebClipHelper
+0x1ef4a2ac8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari18RelatedTabOverview
+0x1ef4ab2b0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari18SFCachedPageLayout
+0x1ef49e438  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari18SiriLinkDataSource
+0x1ef4ab080  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari23SFCapsulePageLayoutInfo
+0x1ef4aaed0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari25SFCapsulePageLayoutBottom
+0x1ef4aa8f8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari25SFStartPageOnboardingCell
+0x1ef4aa6d0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari26SFCapsulePageLayoutFadeOut
+0x1ef4aa5d8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari26SFCapsulePageLayoutMinibar
+0x1ef49eab0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari27SFCapsulePageLayoutVertical
+0x1ee2f1418  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari29SFFluidCollectionReusableView
+0x1ef4a2930  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari30SFCapsulePageLayoutTopFloating
+0x1ef4aa4c0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari30SFFluidTabOverviewReusableView
+0x1ef4aa3c8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari33SFCapsulePageLayoutBottomSquished
+0x1ef4aa2d0  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari34SFCapsulePageLayoutMinibarSquished
+0x1ef4aedc8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari34SFCapsulePageLayoutVerticalFocused
+0x1ef49e538  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari35SFBookmarksCollectionViewController
+0x1ef4ac730  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari35SFCapsulePageLayoutVerticalSquished
+0x1ef4a2848  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari37SFCapsulePageLayoutTopFloatingFocused
+0x1ef4a27d8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari37WBSNotifyMeWhenNotificationController
+0x1ef4a26e8  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari38SFCapsulePageLayoutTopFloatingSquished
+0x1ef4a2450  __AUTH,__objc_data  _OBJC_CLASS_$__TtC12MobileSafari38SFEditBookmarkCollectionViewController
+0x1eb23d54c  __DATA,__objc_ivar  OBJC_IVAR_$_SFWebExtensionsController._dialogController
+0x1ef4a0340  __AUTH,__objc_data  _OBJC_METACLASS_$_SFAcceptSharedTabGroupInProfileDialogController
+0x1ef4b6b40  __AUTH,__data  _OBJC_METACLASS_$_SFActionsMenuButton
+0x1ef4a0318  __AUTH,__objc_data  _OBJC_METACLASS_$_SFActivityNotificationViewController
+0x1ef4a02f0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFAlertControllerContentViewController
+0x1ef4b2f00  __AUTH,__data  _OBJC_METACLASS_$_SFAnimationSettings
+0x1ef4a02c8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFAppDistributorWrapper
+0x1ef4a4bd0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFAppLinkBanner
+0x1ef4a02a0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFAppStoreLinkTableViewCell
+0x1ef4a0278  __AUTH,__objc_data  _OBJC_METACLASS_$_SFAutoFillInternalFeedbackActivityNotificationViewController
+0x1ef4a0250  __AUTH,__objc_data  _OBJC_METACLASS_$_SFAvailableAppTableViewCell
+0x1ef4a4ba8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFAvatarStackView
+0x1ef4b2ed0  __AUTH,__data  _OBJC_METACLASS_$_SFBackdropView
+0x1ef4a4b80  __AUTH,__objc_data  _OBJC_METACLASS_$_SFBadgeContainerView
+0x1ef4ab9c8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFBannerTheme
+0x1ee2f3660  __DATA_DIRTY,__data  _OBJC_METACLASS_$_SFBarButtonGroupContainer
+0x1ef4b2ea8  __AUTH,__data  _OBJC_METACLASS_$_SFBarButtonGroupContainerConfiguration
+0x1ef4a4ab8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFBasicDialog
+0x1ef4a4a90  __AUTH,__objc_data  _OBJC_METACLASS_$_SFBlockBasedCAAnimationDelegate
+0x1ef4a4a68  __AUTH,__objc_data  _OBJC_METACLASS_$_SFBlockBasedPopoverSourceInfo
+0x1ef4a4a40  __AUTH,__objc_data  _OBJC_METACLASS_$_SFBookmarkTouchIconRequest
+0x1ef4a4a18  __AUTH,__objc_data  _OBJC_METACLASS_$_SFBookmarksLockCoordinator
+0x1ef4b2e80  __AUTH,__data  _OBJC_METACLASS_$_SFBorderView
+0x1ef4a49f0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFBrowserApplication
+0x1ef4a49c8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFBrowserController
+0x1ef4ab9a0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFBrowserMenuProvider
+0x1ef4a4978  __AUTH,__objc_data  _OBJC_METACLASS_$_SFBrowserStateSQLiteStore
+0x1ef4b2e58  __AUTH,__data  _OBJC_METACLASS_$_SFBrowsingAssistant
+0x1ef4b2e28  __AUTH,__data  _OBJC_METACLASS_$_SFBrowsingAssistantCardItem
+0x1ef4b6b10  __AUTH,__data  _OBJC_METACLASS_$_SFBrowsingAssistantFavoritedMenuActionsStore
+0x1ef4b2dd0  __AUTH,__data  _OBJC_METACLASS_$_SFBrowsingAssistantMenuSection
+0x1ef4a01d8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFBrowsingAssistantSearchResultView
+0x1ef4a01b0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFBrowsingDataDeletionRequest
+0x1ee2f2a18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFCapsuleCollectionView
+0x1ee2f29c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFCapsuleNavigationBar
+0x1ef4a4888  __AUTH,__objc_data  _OBJC_METACLASS_$_SFCapsuleNavigationBarTheme
+0x1ee2f2e28  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFCapsuleURLField
+0x1ee2f29a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFCapsuleView
+0x1ef4b2da0  __AUTH,__data  _OBJC_METACLASS_$_SFCatalogPlatterPresentationController
+0x1ef4a0188  __AUTH,__objc_data  _OBJC_METACLASS_$_SFClearHistoryUtilities
+0x1ef4a0160  __AUTH,__objc_data  _OBJC_METACLASS_$_SFClearHistoryViewController
+0x1ee2f2978  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFClickableButton
+0x1ef4a47e8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFClipLink
+0x1ef4a0138  __AUTH,__objc_data  _OBJC_METACLASS_$_SFClipLinkBanner
+0x1ef4a47c0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFCloseButton
+0x1ef4a4798  __AUTH,__objc_data  _OBJC_METACLASS_$_SFClusterPreviewItem
+0x1ef4a00e8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFClusterPreviewItemConfiguration
+0x1ee2f1758  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFClusterPreviewItemView
+0x1ef4a4770  __AUTH,__objc_data  _OBJC_METACLASS_$_SFClusterSettingsItem
+0x1ef4a00c0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFClusterSettingsItemView
+0x1ef4b0870  __AUTH,__data  _OBJC_METACLASS_$_SFClusteringAccessoryButton
+0x1ef4a4748  __AUTH,__objc_data  _OBJC_METACLASS_$_SFCollaborationUnifiedBarItem
+0x1ef4b0848  __AUTH,__data  _OBJC_METACLASS_$_SFCommandForwardingView
+0x1ef4ac240  __AUTH,__objc_data  _OBJC_METACLASS_$_SFContentBlockerManagerProxy
+0x1ee2f2798  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFCrashBanner
+0x1ef4a46f8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFDefaultStartPageVisualStyleProvider
+0x1ef4a46d0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFDeviceUtilities
+0x1ef4a46a8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFDialog
+0x1ef4a4680  __AUTH,__objc_data  _OBJC_METACLASS_$_SFDialogAction
+0x1ee2f2770  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFDialogController
+0x1ee2f3008  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFDialogView
+0x1ef4b0820  __AUTH,__data  _OBJC_METACLASS_$_SFDropletEffectView
+0x1ef4b07f8  __AUTH,__data  _OBJC_METACLASS_$_SFDropletItemView
+0x1ef4b2d70  __AUTH,__data  _OBJC_METACLASS_$_SFEditableEffect
+0x1ef4b2d48  __AUTH,__data  _OBJC_METACLASS_$_SFEditableEffectStore
+0x1ef4b2d20  __AUTH,__data  _OBJC_METACLASS_$_SFEditableEffectView
+0x1ef4b07d0  __AUTH,__data  _OBJC_METACLASS_$_SFEditableProperty
+0x1ef4b07a8  __AUTH,__data  _OBJC_METACLASS_$_SFEffectViewEditorViewController
+0x1ef4b2cf8  __AUTH,__data  _OBJC_METACLASS_$_SFEnhancedSiriAvailabilityMonitor
+0x1ef4a0048  __AUTH,__objc_data  _OBJC_METACLASS_$_SFExpandingTextView
+0x1ef4a0020  __AUTH,__objc_data  _OBJC_METACLASS_$_SFExtensionWrapper
+0x1ef49fff8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFExtensionsProfilesDataSource
+0x1ef4a45e0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFFaviconView
+0x1ef49ffd0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFFeatureAvailabilityWrapper
+0x1ef4ac0d8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFFeatureManager
+0x1ef4a45b8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFFolderPickerList
+0x1ef4a4568  __AUTH,__objc_data  _OBJC_METACLASS_$_SFGradientView
+0x1ef49ffa8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFHighlightActivityNotificationViewController
+0x1ee2f2748  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFHighlightBanner
+0x1ef4a4540  __AUTH,__objc_data  _OBJC_METACLASS_$_SFHighlightBannerTracker
+0x1ef49ff80  __AUTH,__objc_data  _OBJC_METACLASS_$_SFHighlightContactList
+0x1ef49ff08  __AUTH,__objc_data  _OBJC_METACLASS_$_SFIconGenerator
+0x1ef4b0778  __AUTH,__data  _OBJC_METACLASS_$_SFIntelligenceLabel
+0x1ee2f2720  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFLinkBanner
+0x1ef4a44f0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFLinkHoverEvent
+0x1ef49fee0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFLockdownStatusBar
+0x1ef49feb8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFMagicExtensionBanner
+0x1ef4a44c8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFManageExtensionsViewController
+0x1ef4a44a0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFManagedBookmark
+0x1ef49fe90  __AUTH,__objc_data  _OBJC_METACLASS_$_SFManagedBookmarkCompletionMatch
+0x1ef4a4478  __AUTH,__objc_data  _OBJC_METACLASS_$_SFManagedBookmarkFolder
+0x1ef4a4450  __AUTH,__objc_data  _OBJC_METACLASS_$_SFManagedBookmarksController
+0x1ef4a4428  __AUTH,__objc_data  _OBJC_METACLASS_$_SFMediaCaptureStatusBarManager
+0x1ef4b6ae8  __AUTH,__data  _OBJC_METACLASS_$_SFMenuPresentingButton
+0x1ef4b6ac0  __AUTH,__data  _OBJC_METACLASS_$_SFMenuPresentingButtonWithLongPressAction
+0x1ee2f2e00  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFMoreMenuButton
+0x1ef4ab950  __AUTH,__objc_data  _OBJC_METACLASS_$_SFNavigationBarItem
+0x1ef4ab928  __AUTH,__objc_data  _OBJC_METACLASS_$_SFNavigationBarToggleButton
+0x1ef49fe40  __AUTH,__objc_data  _OBJC_METACLASS_$_SFNotifyMeWhenBanner
+0x1ef4b2cd0  __AUTH,__data  _OBJC_METACLASS_$_SFNotifyMeWhenController
+0x1ef4b2ca8  __AUTH,__data  _OBJC_METACLASS_$_SFOnDemandSummarizationFeedbackController
+0x1ef4b2c80  __AUTH,__data  _OBJC_METACLASS_$_SFOnDeviceSummarization
+0x1ef4a43d8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFOnboardingControllerProvider
+0x1ef4b2c58  __AUTH,__data  _OBJC_METACLASS_$_SFOnboardingCoordinator
+0x1ef4b2c30  __AUTH,__data  _OBJC_METACLASS_$_SFOnboardingTipController
+0x1ee2f3878  __DATA_DIRTY,__data  _OBJC_METACLASS_$_SFOneStepBookmarkingButton
+0x1ef4a43b0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFOrderedContainerView
+0x1ef49fe18  __AUTH,__objc_data  _OBJC_METACLASS_$_SFOverlayProvider
+0x1ef4b7000  __AUTH,__data  _OBJC_METACLASS_$_SFPebbleWebsiteDataStoreManager
+0x1ef49fdf0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFPerSiteSettingsEntity
+0x1ee2f26f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFPinnableBanner
+0x1ef49fdc8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFPinnedOverflowItemView
+0x1ef4b2c08  __AUTH,__data  _OBJC_METACLASS_$_SFPlaceholderView
+0x1ef4a4360  __AUTH,__objc_data  _OBJC_METACLASS_$_SFPopoverSizingTableViewController
+0x1ef4a42c0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFPrivacyReportGridTableViewCell
+0x1ef4a4298  __AUTH,__objc_data  _OBJC_METACLASS_$_SFPrivacyReportGridView
+0x1ef4a4220  __AUTH,__objc_data  _OBJC_METACLASS_$_SFPrivacyReportOverviewView
+0x1ef49fd78  __AUTH,__objc_data  _OBJC_METACLASS_$_SFPrivateBrowsingPrivacyProtectionsBanner
+0x1ef49fd50  __AUTH,__objc_data  _OBJC_METACLASS_$_SFProgressView
+0x1ef4ac218  __AUTH,__objc_data  _OBJC_METACLASS_$_SFProximityHandoffPayload
+0x1ef4a4180  __AUTH,__objc_data  _OBJC_METACLASS_$_SFQuickLookDocument
+0x1ef49fd28  __AUTH,__objc_data  _OBJC_METACLASS_$_SFQuickLookDocumentController
+0x1ef49fcd8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFQuickLookDocumentView
+0x1ef49fcb0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFQuickLookDocumentWriter
+0x1ef4b6a98  __AUTH,__data  _OBJC_METACLASS_$_SFReaderFontOptionsController
+0x1ef4b2be0  __AUTH,__data  _OBJC_METACLASS_$_SFRecentSearchesStartPageController
+0x1ef4b0750  __AUTH,__data  _OBJC_METACLASS_$_SFRelatedTabOverviewMetrics
+0x1ef4b2bb8  __AUTH,__data  _OBJC_METACLASS_$_SFRelatedTabsInfo
+0x1ef49fc88  __AUTH,__objc_data  _OBJC_METACLASS_$_SFRequiredCameraAndMicrophoneDialog
+0x1ef49fc10  __AUTH,__objc_data  _OBJC_METACLASS_$_SFSafariSettingsBrowsingDataExportController
+0x1ee2f2630  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFScreenTimeOverlayViewController
+0x1ef4ab8d8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFScribbleController
+0x1ef4ab8b0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFScribbleOverlay
+0x1ee2f4668  __DATA_DIRTY,__data  _OBJC_METACLASS_$_SFScribbleSelectionOverlay
+0x1ef4a4158  __AUTH,__objc_data  _OBJC_METACLASS_$_SFScrollingPanGestureRecognizer
+0x1ef49fbe8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFSearchEngineControllerWrapper
+0x1ef4b0728  __AUTH,__data  _OBJC_METACLASS_$_SFSearchFieldIconContainerView
+0x1ef4b2b90  __AUTH,__data  _OBJC_METACLASS_$_SFSegmentedViewController
+0x1ef4a4108  __AUTH,__objc_data  _OBJC_METACLASS_$_SFShadowView
+0x1ef4b2b68  __AUTH,__data  _OBJC_METACLASS_$_SFSiriLinkCoordinator
+0x1ef4a40e0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFSiriReaderPlaybackController
+0x1ef4a40b8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFSiriVoiceUtilities
+0x1ef4a4040  __AUTH,__objc_data  _OBJC_METACLASS_$_SFSnapshotImageView
+0x1ee2ef538  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFStartPageCustomizationViewController
+0x1ee2f2468  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFStartPageFilledBackgroundCell
+0x1ef4b2b40  __AUTH,__data  _OBJC_METACLASS_$_SFStartPageHostedViewCell
+0x1ef4b2b18  __AUTH,__data  _OBJC_METACLASS_$_SFStartPageOnboardingCellConfiguration
+0x1ef4a3f50  __AUTH,__objc_data  _OBJC_METACLASS_$_SFStartPageViewController
+0x1ee2f4640  __DATA_DIRTY,__data  _OBJC_METACLASS_$_SFStepper
+0x1ef4b0700  __AUTH,__data  _OBJC_METACLASS_$_SFStepperContainer
+0x1ef49fb48  __AUTH,__objc_data  _OBJC_METACLASS_$_SFStepperView
+0x1ef4a3f28  __AUTH,__objc_data  _OBJC_METACLASS_$_SFStoreBanner
+0x1ef4a3f00  __AUTH,__objc_data  _OBJC_METACLASS_$_SFStoreBannerTracker
+0x1ef4b2af0  __AUTH,__data  _OBJC_METACLASS_$_SFSummarizationAnimationCoordinator
+0x1ef4b2ac8  __AUTH,__data  _OBJC_METACLASS_$_SFSwipeToTabOverviewTipCoordinator
+0x1ef4a3ed8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFSyntheticBookmarkFolder
+0x1ef4a3eb0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFSystemAlert
+0x1ef49fb20  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTabGroupActivityItemConfiguration
+0x1ef49faf8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTabGroupBanner
+0x1ee2f2608  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFTabGroupTitleView
+0x1ef4a3e88  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTabHoverPreviewController
+0x1ef4b2aa0  __AUTH,__data  _OBJC_METACLASS_$_SFTabIconPool
+0x1ef4b2a78  __AUTH,__data  _OBJC_METACLASS_$_SFTabIconRegistration
+0x1ef4b2a28  __AUTH,__data  _OBJC_METACLASS_$_SFTabSnapshot
+0x1ef4b2a00  __AUTH,__data  _OBJC_METACLASS_$_SFTabSnapshotContent
+0x1ef4b29d8  __AUTH,__data  _OBJC_METACLASS_$_SFTabSnapshotMetadata
+0x1ef4b29b0  __AUTH,__data  _OBJC_METACLASS_$_SFTabSnapshotMetadataStore
+0x1ef4b2980  __AUTH,__data  _OBJC_METACLASS_$_SFTabSnapshotPool
+0x1ef4b06d8  __AUTH,__data  _OBJC_METACLASS_$_SFTabSnapshotRegistration
+0x1ef4b2958  __AUTH,__data  _OBJC_METACLASS_$_SFTabSnapshotVisibility
+0x1ef4a3e60  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTabStateData
+0x1ee2f4588  __DATA_DIRTY,__data  _OBJC_METACLASS_$_SFTabSwitcher
+0x1ef4b2930  __AUTH,__data  _OBJC_METACLASS_$_SFTabSwitcherConfiguration
+0x1ef4b2908  __AUTH,__data  _OBJC_METACLASS_$_SFTabSwitcherContent
+0x1ef4b06b0  __AUTH,__data  _OBJC_METACLASS_$_SFTabSwitcherDropDestination
+0x1ef4b0688  __AUTH,__data  _OBJC_METACLASS_$_SFTabSwitcherDropIntent
+0x1ef4b28d8  __AUTH,__data  _OBJC_METACLASS_$_SFTabSwitcherItem
+0x1ef4b28b0  __AUTH,__data  _OBJC_METACLASS_$_SFTabSwitcherItemFilter
+0x1ef4b2880  __AUTH,__data  _OBJC_METACLASS_$_SFTabSwitcherPage
+0x1ef4b2858  __AUTH,__data  _OBJC_METACLASS_$_SFTabSwitcherPageOverlay
+0x1ef4b2830  __AUTH,__data  _OBJC_METACLASS_$_SFTabSwitcherPagePeekingOverlay
+0x1ef4b0658  __AUTH,__data  _OBJC_METACLASS_$_SFTabSwitcherProfile
+0x1ef4b2800  __AUTH,__data  _OBJC_METACLASS_$_SFTabSwitcherScrollPosition
+0x1ef4b27d8  __AUTH,__data  _OBJC_METACLASS_$_SFTabSwitcherSection
+0x1ef4b0628  __AUTH,__data  _OBJC_METACLASS_$_SFTabSwitcherShareConfiguration
+0x1ef4b27a8  __AUTH,__data  _OBJC_METACLASS_$_SFTabSwitcherTransaction
+0x1ef4a3e38  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTableViewDiffableDataSource
+0x1ef4a3e10  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTestConsoleLogRecorder
+0x1ef4a3de8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTextSearchMatchesCounter
+0x1ef4ab888  __AUTH,__objc_data  _OBJC_METACLASS_$_SFThemeColorBarTheme
+0x1ef4ab860  __AUTH,__objc_data  _OBJC_METACLASS_$_SFThemeColorEffectView
+0x1ef4a3dc0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTipsCoordinator
+0x1ef4a3d98  __AUTH,__objc_data  _OBJC_METACLASS_$_SFToastViewController
+0x1ef4b0600  __AUTH,__data  _OBJC_METACLASS_$_SFTooltip
+0x1ef4ab7e8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTouchDownGestureRecognizer
+0x1ef4a3d70  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTouchPassthroughView
+0x1ef4ab7c0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTouchUpGestureRecognizer
+0x1ef4a3d48  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTraitAlternateTintColor
+0x1ef4a3d20  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTraitAlternateUserInterfaceStyle
+0x1ef4a3cf8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTraitBackgroundBlurEffect
+0x1ef4a3cd0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTraitBarTintStyleTrait
+0x1ef4a3ca8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTraitIsInSegmentedViewController
+0x1ef4a3c80  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTraitStartPageAttributionViewBackdropGroupName
+0x1ef4a3c58  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTraitStartPageCellBackdropGroupName
+0x1ef4a3c30  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTraitUsesSidebarPresentation
+0x1ef4a3c08  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTraitUsesVibrantAppearance
+0x1ef49e350  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTraitVerticalBarRectEdge
+0x1ef4a3be0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTraitWebpageThemeColor
+0x1ef4a3bb8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFTransitionCoordinator
+0x1ef49fa58  __AUTH,__objc_data  _OBJC_METACLASS_$_SFUIBarButtonItemPopoverSourceInfo
+0x1ef4ac1c8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFURLAutocompleteSuggestionProvider
+0x1ef4a3b18  __AUTH,__objc_data  _OBJC_METACLASS_$_SFURLCompletionMatchBookmarkData
+0x1ef4a3af0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFURLCompletionMatchBookmarkListData
+0x1ef4a3ac8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFURLCompletionMatchCloudTabData
+0x1ef49fa30  __AUTH,__objc_data  _OBJC_METACLASS_$_SFURLFieldOverlayButtonItem
+0x1ef49fa08  __AUTH,__objc_data  _OBJC_METACLASS_$_SFURLFieldOverlayConfiguration
+0x1ee2f17d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFURLFieldOverlayView
+0x1ef4ab798  __AUTH,__objc_data  _OBJC_METACLASS_$_SFURLLabel
+0x1ee2f2d60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFUnifiedBar
+0x1ee2f2d38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFUnifiedBarButton
+0x1ef4a3aa0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFUnifiedBarButtonView
+0x1ef4a3a78  __AUTH,__objc_data  _OBJC_METACLASS_$_SFUnifiedBarContentArrangement
+0x1ee2f2d10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFUnifiedBarItem
+0x1ef4a3a50  __AUTH,__objc_data  _OBJC_METACLASS_$_SFUnifiedBarItemArrangement
+0x1ee2f2ce8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFUnifiedBarItemView
+0x1ef4a3a00  __AUTH,__objc_data  _OBJC_METACLASS_$_SFUnifiedBarMetrics
+0x1ef4ab748  __AUTH,__objc_data  _OBJC_METACLASS_$_SFUnifiedBarTheme
+0x1ef4a39d8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFUnifiedTabBar
+0x1ef4a3960  __AUTH,__objc_data  _OBJC_METACLASS_$_SFUnifiedTabBarItem
+0x1ef4a3938  __AUTH,__objc_data  _OBJC_METACLASS_$_SFUnifiedTabBarItemAccessoryButtonArrangement
+0x1ef4a3910  __AUTH,__objc_data  _OBJC_METACLASS_$_SFUnifiedTabBarItemArrangement
+0x1ef49f940  __AUTH,__objc_data  _OBJC_METACLASS_$_SFUnifiedTabBarItemPosition
+0x1ee2f2cc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFUnifiedTabBarItemTitleContainerView
+0x1ef4a38e8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFUnifiedTabBarItemTitleContainerViewTheme
+0x1ee2f2c98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_SFUnifiedTabBarItemView
+0x1ef4a37f8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFUnifiedTabBarMetrics
+0x1ef4a37d0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFUnifiedTabBarScrollPosition
+0x1ef4a37a8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFUnifiedTabBarSection
+0x1ef4a3780  __AUTH,__objc_data  _OBJC_METACLASS_$_SFUnreadIndicator
+0x1ef4a3758  __AUTH,__objc_data  _OBJC_METACLASS_$_SFVibrantSeparatorView
+0x1ef4a3730  __AUTH,__objc_data  _OBJC_METACLASS_$_SFVoiceSearchManager
+0x1ef4a3708  __AUTH,__objc_data  _OBJC_METACLASS_$_SFWallpaperViewController
+0x1ef4a36e0  __AUTH,__objc_data  _OBJC_METACLASS_$_SFWebExtension
+0x1ef49f878  __AUTH,__objc_data  _OBJC_METACLASS_$_SFWebExtensionButton
+0x1ef4a36b8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFWebExtensionButtonConfiguration
+0x1ef49f850  __AUTH,__objc_data  _OBJC_METACLASS_$_SFWebExtensionEnabledRemotelyBanner
+0x1ef49f800  __AUTH,__objc_data  _OBJC_METACLASS_$_SFWebExtensionPermissionBanner
+0x1ef49f7d8  __AUTH,__objc_data  _OBJC_METACLASS_$_SFWebExtensionPermissionGrantedBanner
+0x1ef4ab720  __AUTH,__objc_data  _OBJC_METACLASS_$_SFWebExtensionsController
+0x1ef4a3690  __AUTH,__objc_data  _OBJC_METACLASS_$_SFWebFormAccessoryViewWrapper
+0x1ef49f760  __AUTH,__objc_data  _OBJC_METACLASS_$_SFWebpageStatusBarView
+0x1ef4b05d8  __AUTH,__data  _OBJC_METACLASS_$__SFAppDistributorWrapper
+0x1ef4ab6f8  __AUTH,__objc_data  _OBJC_METACLASS_$__SFBarTheme
+0x1ef4a3668  __AUTH,__objc_data  _OBJC_METACLASS_$__SFBookmarkFolderTouchIconProvider
+0x1ef4a3640  __AUTH,__objc_data  _OBJC_METACLASS_$__SFBrowserSavedState
+0x1ef4a3618  __AUTH,__objc_data  _OBJC_METACLASS_$__SFBrowserWindowSettings
+0x1ef4a35f0  __AUTH,__objc_data  _OBJC_METACLASS_$__SFBrowserWindowStateData
+0x1ee2f2c70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__SFCompressedBarButton
+0x1ee2f2c48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__SFDimmingButton
+0x1ef49f738  __AUTH,__objc_data  _OBJC_METACLASS_$__SFDropSession
+0x1ef4a35c8  __AUTH,__objc_data  _OBJC_METACLASS_$__SFFaviconProvider
+0x1ee2f30d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__SFFluidProgressView
+0x1ef4a35a0  __AUTH,__objc_data  _OBJC_METACLASS_$__SFFolderPickerItem
+0x1ef4a3550  __AUTH,__objc_data  _OBJC_METACLASS_$__SFNavigationIntent
+0x1ef4a3528  __AUTH,__objc_data  _OBJC_METACLASS_$__SFNavigationIntentBuilder
+0x1ef4ac088  __AUTH,__objc_data  _OBJC_METACLASS_$__SFSavedAccountTouchIconCache
+0x1ef4a3500  __AUTH,__objc_data  _OBJC_METACLASS_$__SFSavedAccountTouchIconRequest
+0x1ef4ab6d0  __AUTH,__objc_data  _OBJC_METACLASS_$__SFSiteIcon
+0x1ee2f2860  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__SFSiteIconView
+0x1ef4ac060  __AUTH,__objc_data  _OBJC_METACLASS_$__SFSiteMetadataManager
+0x1ef4b2758  __AUTH,__data  _OBJC_METACLASS_$__SFTipsCoordinator
+0x1ef4ab6a8  __AUTH,__objc_data  _OBJC_METACLASS_$__SFTouchIconCache
+0x1ef4a34d8  __AUTH,__objc_data  _OBJC_METACLASS_$__SFTouchIconFetchOperation
+0x1ef4a34b0  __AUTH,__objc_data  _OBJC_METACLASS_$__SFUIViewPopoverSourceInfo
+0x1ef49f6e8  __AUTH,__objc_data  _OBJC_METACLASS_$__SFWebClipHelper
+0x1ef4b0538  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari18RelatedTabOverview
+0x1ef4b2618  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari18SFCachedPageLayout
+0x1ef4b25e8  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari18SiriLinkDataSource
+0x1ef4b2518  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari23SFCapsulePageLayoutInfo
+0x1ef4b24c8  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari25SFCapsulePageLayoutBottom
+0x1ef4b2498  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari25SFStartPageOnboardingCell
+0x1ef4b2410  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari26SFCapsulePageLayoutFadeOut
+0x1ef4b23e0  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari26SFCapsulePageLayoutMinibar
+0x1ef4afae8  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari27SFCapsulePageLayoutVertical
+0x1ee2f3820  __DATA_DIRTY,__data  _OBJC_METACLASS_$__TtC12MobileSafari29SFFluidCollectionReusableView
+0x1ef4b0468  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari30SFCapsulePageLayoutTopFloating
+0x1ef4b2308  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari30SFFluidTabOverviewReusableView
+0x1ef4b2290  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari33SFCapsulePageLayoutBottomSquished
+0x1ef4b2260  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari34SFCapsulePageLayoutMinibarSquished
+0x1ef4b7fd0  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari34SFCapsulePageLayoutVerticalFocused
+0x1ef4b2238  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari35SFBookmarksCollectionViewController
+0x1ef4b6ea8  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari35SFCapsulePageLayoutVerticalSquished
+0x1ef4b0360  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari37SFCapsulePageLayoutTopFloatingFocused
+0x1ef4b0330  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari37WBSNotifyMeWhenNotificationController
+0x1ef4b0300  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari38SFCapsulePageLayoutTopFloatingSquished
+0x1ef4b02d0  __AUTH,__data  _OBJC_METACLASS_$__TtC12MobileSafari38SFEditBookmarkCollectionViewController
+0x1872a0ed8  __TEXT,__text  _SFAccessibilityIdentifierForUnifiedTabBarItemAccessoryButtonType
+0x1872b7574  __TEXT,__text  _SFAccessibilityTitleForBarItem
+0x18725e600  __TEXT,__text  _SFActionsMenuSections
+0x18725ec4c  __TEXT,__text  _SFAddOperationActions
+0x1e0730bf8  __DATA_CONST,__const  _SFAlwaysShowBookmarksBarDefaultsKey
+0x1e0730c00  __DATA_CONST,__const  _SFAutoMinimizeLoweredBarKey
+0x187230b74  __TEXT,__text  _SFBarBackgroundAlphaForSquishTransformFactor
+0x18717c094  __TEXT,__text  _SFBarContentAlphaForSquishTransformFactor
+0x1e0733d88  __DATA_CONST,__const  _SFBasicDialogActionXGlyph
+0x1e0733d80  __DATA_CONST,__const  _SFBasicDialogResponsePasswordKey
+0x1e0733d70  __DATA_CONST,__const  _SFBasicDialogResponseSelectedActionIndex
+0x1e0733d78  __DATA_CONST,__const  _SFBasicDialogResponseTextKey
+0x1e0730c08  __DATA_CONST,__const  _SFBookmarkButtonStyleInFavoritesBarKey
+0x1e0730f48  __DATA_CONST,__const  _SFBookmarksClusteringHideDebugMenu
+0x1e0730f18  __DATA_CONST,__const  _SFBookmarksCollectionBookmarksViewModeKey
+0x1e0730f20  __DATA_CONST,__const  _SFBookmarksCollectionReadingListViewModeKey
+0x1e0730f28  __DATA_CONST,__const  _SFBookmarksCollectionViewFolderModeKey
+0x1e0730f30  __DATA_CONST,__const  _SFBookmarksCollectionViewSortOptionKey
+0x1e0730f38  __DATA_CONST,__const  _SFBookmarksCollectionViewSortOrderKey
+0x1e0736090  __DATA_CONST,__const  _SFBrowserKeyCommandPropertyBookmarksSortByOption
+0x1e0736098  __DATA_CONST,__const  _SFBrowserKeyCommandPropertyBookmarksSortByOrder
+0x1e0736068  __DATA_CONST,__const  _SFBrowserKeyCommandPropertyIndex
+0x1e0736070  __DATA_CONST,__const  _SFBrowserKeyCommandPropertyMask
+0x1e0736078  __DATA_CONST,__const  _SFBrowserKeyCommandPropertyProfileIdentifier
+0x1e0736088  __DATA_CONST,__const  _SFBrowserKeyCommandPropertyTabGroupUUIDString
+0x1e0736080  __DATA_CONST,__const  _SFBrowserKeyCommandPropertyTabUUIDString
+0x1e07338a8  __DATA_CONST,__const  _SFBrowserViewDidLoadNotification
+0x1e0733580  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionAddBookmark
+0x1e0733588  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionAddToFavorites
+0x1e0733590  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionAddToQuickNote
+0x1e0733598  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionAddToReadingList
+0x1e0733620  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionClearScribbleEdits
+0x1e07336b0  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionCustomizeMenu
+0x1e0733640  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionDebugCluster
+0x1e0733660  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionEditTabBar
+0x1e07336a0  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionFastAddBookmark
+0x1e0733628  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionFileScribbleRadar
+0x1e0733720  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionFileTranslationRadar
+0x1e07336d8  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionFindOnPage
+0x1e07335a0  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionHideToolbar
+0x1e0733668  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionListenToPage
+0x1e0733688  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionMagicExtensionCreated
+0x1e0733678  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionMagicExtensionsEntry
+0x1e07336e0  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionManageExtensions
+0x1e07335a8  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionMoveToTabGroup
+0x1e0733698  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionNotifyMeWhenDebugEntry
+0x1e0733690  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionNotifyMeWhenEntry
+0x1e0733700  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionPreferredLanguages
+0x1e07335b0  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionPrintCurrentTab
+0x1e0733728  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionPrivacyAndSecurity
+0x1e07335b8  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionPrivacyReport
+0x1e07336c8  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionReaderOptions
+0x1e0733708  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionReloadTranslatedWebpage
+0x1e07335f0  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionReportAutoFillIssue
+0x1e0733680  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionReportMagicExtensionsIssue
+0x1e0733710  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionReportTranslationIssue
+0x1e0733630  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionReportWebCompatibilityIssue
+0x1e0733638  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionReportWebCompatibilityIssueAfterReload
+0x1e07335c0  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionRequestDesktopOrMobileWebsite
+0x1e07335f8  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionSaveAutoFillMetadata
+0x1e0733600  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionSavePageComplete
+0x1e0733618  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionScribble
+0x1e07336a8  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionShare
+0x1e07336e8  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionShowDownloads
+0x1e0733648  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionShowPageClusteringInspector
+0x1e0733650  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionShowTabBarPrototypingSettings
+0x1e0733670  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionSummarization
+0x1e07336d0  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionSummarize
+0x1e0733730  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionTabActions
+0x1e0733608  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionToggleAdvancedPrivacyProtections
+0x1e07335e8  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionToggleAllAnimations
+0x1e07335c8  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionToggleContentBlockers
+0x1e07335d0  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionToggleMediaState
+0x1e07335e0  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionToggleOtherTabsAudio
+0x1e07335d8  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionTogglePinningTab
+0x1e0733610  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionTogglePrivateRelay
+0x1e07336c0  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionToggleReader
+0x1e0733718  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionTranslateWebpage
+0x1e07336f8  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionTranslationOptions
+0x1e0733578  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionUnknown
+0x1e07336b8  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionWebpageZoom
+0x1e07336f0  __DATA_CONST,__const  _SFBrowsingAssistantMenuActionWebsiteSettings
+0x1e0733500  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierCurrentTab
+0x1e0733520  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierCustomize
+0x1e0733548  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierDownloads
+0x1e0733568  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierEditPrivacyAndSecurityActions
+0x1e0733560  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierEditTabActions
+0x1e07334f8  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierExtensions
+0x1e07334e0  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierFavorites
+0x1e0733540  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierIntelligence
+0x1e0733518  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierInternalDebug
+0x1e0733538  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierListenToPageControls
+0x1e0733570  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierMagicExtensionCreated
+0x1e0733558  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierMoreActions
+0x1e0733550  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierPageIndicators
+0x1e0733530  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierReader
+0x1e07334e8  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierScribble
+0x1e0733528  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierShareAndBookmarks
+0x1e07334f0  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierTranslate
+0x1e07334d8  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierUnknown
+0x1e0733508  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierWebsiteActions
+0x1e0733510  __DATA_CONST,__const  _SFBrowsingAssistantMenuSectionIdentifierWebsiteSettings
+0x1e0733658  __DATA_CONST,__const  _SFBrowsingAssistantMenuViewSecurityInformation
+0x1872e7d80  __TEXT,__text  _SFCACornerRadiiMake
+0x187257060  __TEXT,__text  _SFCapsuleBottomBarPaddingForTopLayoutStyle
+0x187695b08  __TEXT,__const  _SFCapsuleCollectionViewAutomaticWidthDimension
+0x187257150  __TEXT,__text  _SFCapsuleCollectionViewMaximumContentSizeCategoryForMinibar
+0x1872571c0  __TEXT,__text  _SFCapsuleCollectionViewMaximumContentSizeCategoryForToolbarButtons
+0x187695ef0  __TEXT,__const  _SFCapsuleFocusedPadding
+0x187695f10  __TEXT,__const  _SFCapsuleLockdownStatusBarMinimizedSpacing
+0x187695f18  __TEXT,__const  _SFCapsuleLockdownStatusBarSpacing
+0x187695f20  __TEXT,__const  _SFCapsuleMinimizedContentInset
+0x1872570ec  __TEXT,__text  _SFCapsuleSideMarginForViewWithBoundsSafeAreaInsets
+0x1e0734440  __DATA_CONST,__const  _SFCapsuleSupplementaryViewLeadingButton
+0x1e0734448  __DATA_CONST,__const  _SFCapsuleSupplementaryViewLockdownStatusBar
+0x1e0734450  __DATA_CONST,__const  _SFCapsuleSupplementaryViewPlatter
+0x1e0734458  __DATA_CONST,__const  _SFCapsuleSupplementaryViewToolbar
+0x1e0734460  __DATA_CONST,__const  _SFCapsuleSupplementaryViewTrailingButton
+0x1e0734468  __DATA_CONST,__const  _SFCapsuleSupplementaryViewVerticalToolbar
+0x187695ee8  __TEXT,__const  _SFCapsuleToolbarHeight
+0x187256f44  __TEXT,__text  _SFCapsuleTopBarPaddingForTopLayoutStyleWithStatusBar
+0x1e0730f88  __DATA_CONST,__const  _SFCapsuleUsesSystemConcentricCornersKey
+0x187695db8  __TEXT,__const  _SFCapsuleWithToolbarBackgroundCornerRadius
+0x187695ed8  __TEXT,__const  _SFCapsuleWithToolbarHeight
+0x1871daf90  __TEXT,__text  _SFChromeVisibilityForScrollDistance
+0x1e0730c10  __DATA_CONST,__const  _SFClearHistoryLastEnabledCloseAllTabsKey
+0x1e0730c18  __DATA_CONST,__const  _SFClearHistoryLastSelectedAllProfilesKey
+0x1e0730c20  __DATA_CONST,__const  _SFClearHistoryLastSelectedTimeFrameKey
+0x1872fb73c  __TEXT,__text  _SFCloudTabRestorationWindowHasElapsed
+0x1872fb6d0  __TEXT,__text  _SFCloudTabRestorationWindowStart
+0x1e07325c0  __DATA_CONST,__const  _SFClusteringAccessoryButtonDidBecomeVisibleNotification
+0x1872f5724  __TEXT,__text  _SFColorForMediaStateIcon
+0x18725f304  __TEXT,__text  _SFConfigurableMenuActions
+0x187230b5c  __TEXT,__text  _SFContrastingStatusBarStyleForInterfaceStyle
+0x187696080  __TEXT,__const  _SFControlEventClickDown
+0x187696088  __TEXT,__const  _SFControlEventLongPress
+0x1872e7a9c  __TEXT,__text  _SFConvertInsetsFromCoordinateSpaceToSpace
+0x18729f7ec  __TEXT,__text  _SFCreateAppSuggestionBannerFromMetaTagContent
+0x187294b1c  __TEXT,__text  _SFCreditCardIconForType
+0x1872663b8  __TEXT,__text  _SFDataOwnerForWebViewInteraction
+0x1e0730f50  __DATA_CONST,__const  _SFDebugAlwaysShowAddToReadingListAddressBarButton
+0x1e0730ee8  __DATA_CONST,__const  _SFDebugEnableUnlimitedTabs
+0x1e0730ee0  __DATA_CONST,__const  _SFDebugEnableWebPageClustering
+0x1872aa710  __TEXT,__text  _SFDebugMenuEnabled
+0x18725ed14  __TEXT,__text  _SFDefaultActionsMenuFavoritedActions
+0x1e0730f70  __DATA_CONST,__const  _SFDefaultBrowserBypassPromptingKey
+0x1e0730f78  __DATA_CONST,__const  _SFDefaultBrowserLastRequestBundleIDKey
+0x1e0730f68  __DATA_CONST,__const  _SFDefaultBrowserPromptVersionKey
+0x1871fb704  __TEXT,__text  _SFDefaultBrowserSelectionStateKey
+0x1e0730f60  __DATA_CONST,__const  _SFDefaultBrowserSetUpLaterCountKey
+0x1e0730f58  __DATA_CONST,__const  _SFDefaultBrowserUserSelectedDisabledBrowserKey
+0x1e0730fb8  __DATA_CONST,__const  _SFDefaultSearchEngineOnboardingCardDeferralCountKey
+0x1e0730fb0  __DATA_CONST,__const  _SFDefaultSearchEngineOnboardingCardIsDeferredKey
+0x1872b3028  __TEXT,__text  _SFDefaultWebExtensionsPreferenceValues
+0x1872b2ef4  __TEXT,__text  _SFDeferrableUpdateViewCanUpdateContents
+0x1872b2c5c  __TEXT,__text  _SFDeferrableUpdateViewDidMoveToWindow
+0x1872b2e78  __TEXT,__text  _SFDeferrableUpdateViewShouldAttemptToUpdateContents
+0x1874b1168  __TEXT,__text  _SFDeletePebbleCookiesForHighLevelDomains
+0x1874b17a8  __TEXT,__text  _SFDeletePebbleWebsiteData
+0x1872308f8  __TEXT,__text  _SFDeviceIsAlwaysReachable
+0x1872308c0  __TEXT,__text  _SFDeviceSupportsPointerInteractions
+0x187695f28  __TEXT,__const  _SFDialogViewMaximumContentViewSize
+0x1e07338a0  __DATA_CONST,__const  _SFDidGetTextInputModeDirectionality
+0x1e0730f00  __DATA_CONST,__const  _SFDidMigrateAutoFillFeedbackOutOfFavoritedMenuActionsKey
+0x1e0730f08  __DATA_CONST,__const  _SFDidMigratePreActionsMenuFavoritedMenuActionsKey
+0x1e0730e98  __DATA_CONST,__const  _SFDidPromptSearchEngineAlertUDIDKey
+0x1e0730c28  __DATA_CONST,__const  _SFDisableBackgroundColorInTabBarKey
+0x1e0730f98  __DATA_CONST,__const  _SFDisableDarkBackgroundColorInLightTabBarKey
+0x1e0730f90  __DATA_CONST,__const  _SFDisableLightBackgroundColorInDarkTabBarKey
+0x18718a794  __TEXT,__text  _SFEdgeInsetsForInsetingRectToRect
+0x1e0730c30  __DATA_CONST,__const  _SFEnableFormatMenuInUnifiedBarKey
+0x1e0730c38  __DATA_CONST,__const  _SFEnableStandaloneTabBarKey
+0x1e0730eb0  __DATA_CONST,__const  _SFEnableTabGroupSuggestions
+0x187695ce0  __TEXT,__const  _SFExtraBarSpacingAfterWindowControls
+0x18716f6b8  __TEXT,__text  _SFFadeOutImage
+0x1e0730ef8  __DATA_CONST,__const  _SFFavoritedMenuActionsKey
+0x1874b0e88  __TEXT,__text  _SFFetchPebbleCookies
+0x18722fdb0  __TEXT,__text  _SFFloorRectToPixels
+0x1871fb8f8  __TEXT,__text  _SFFocusGroupIdentifierForOwner
+0x1e0730f80  __DATA_CONST,__const  _SFHasMigratedToSolariumCapsuleLayoutStyleKey
+0x1e0730fa8  __DATA_CONST,__const  _SFHideBarsWhenScrollingKey
+0x187230b8c  __TEXT,__text  _SFInterpolateColor
+0x1872e7c78  __TEXT,__text  _SFInterpolateEdgeInsets
+0x1872e77f8  __TEXT,__text  _SFInterpolateRect
+0x18725f498  __TEXT,__text  _SFIsMenuActionConfigurable
+0x187294b6c  __TEXT,__text  _SFLargeCreditCardIconForType
+0x1e0730ef0  __DATA_CONST,__const  _SFLastActiveProfile
+0x1e0730f40  __DATA_CONST,__const  _SFLastSelectedBookmarksFolderTimeKey
+0x1e0730c40  __DATA_CONST,__const  _SFLoweredBarAdditionalBottomObscuredInsetKey
+0x1e0730c48  __DATA_CONST,__const  _SFLoweredBarVerticalMinimizingSwipeThresholdKey
+0x1e0732fb8  __DATA_CONST,__const  _SFManageWebExtensionsViewDidDismissNotification
+0x1e0734528  __DATA_CONST,__const  _SFManagedBookmarksDidChangeNotification
+0x1e0730ec0  __DATA_CONST,__const  _SFMatchedTextColorInSearchSuggestion
+0x1e0730ed0  __DATA_CONST,__const  _SFMatchedTextWeightInSearchSuggestion
+0x1876964d8  __TEXT,__const  _SFMaximumRecentlyClosedTabCount
+0x187695d38  __TEXT,__const  _SFMaximumTabCountInNewTabGroup
+0x187695d30  __TEXT,__const  _SFMaximumTabCountWithoutPrompt
+0x1872f5714  __TEXT,__text  _SFMediaStateIconIsCaptureDevice
+0x187695cd8  __TEXT,__const  _SFMinimumScrollIndicatorInsetInPopover
+0x187696560  __TEXT,__const  _SFMinimumThemeColorOverlayOpacity
+0x18725ee04  __TEXT,__text  _SFMorePageMenuSections
+0x1872f5644  __TEXT,__text  _SFMultipleOtherTabsTitleForTogglingMediaStateIcon
+0x1872e7718  __TEXT,__text  _SFNSStringFromScrollIndicatorInsets
+0x1e0730c50  __DATA_CONST,__const  _SFNewDocumentShortcutBehaviorKey
+0x1e0730c58  __DATA_CONST,__const  _SFNewTabBehaviorIsStartPage
+0x1874b1d78  __TEXT,__text  _SFNotifyPebblePreferenceUpdated
+0x1872f55cc  __TEXT,__text  _SFOtherTabsTitleForTogglingMediaStateIcon
+0x1872e7d90  __TEXT,__text  _SFOutsetCACornerRadii
+0x1e07351b8  __DATA_CONST,__const  _SFPebbleWebsiteDataStoreManagerDidChangeDataStoreNotificationName
+0x1e0732190  __DATA_CONST,__const  _SFPinnedOverflowItemViewReuseIdentifier
+0x1e0730c60  __DATA_CONST,__const  _SFPreferredCapsuleLayoutStyleKey
+0x18725eac0  __TEXT,__text  _SFPrivacyAndSecurityActions
+0x1872e7d10  __TEXT,__text  _SFProjectedOffsetForOffsetWithVelocity
+0x1e0735ee0  __DATA_CONST,__const  _SFRecentlyClosedTabsWereAddedNotification
+0x1e0735ed8  __DATA_CONST,__const  _SFRecentlyClosedTabsWereRemovedNotification
+0x1e0735ee8  __DATA_CONST,__const  _SFRemovedTabStateDataKey
+0x1872e7ca8  __TEXT,__text  _SFRubberBandOffsetForOffset
+0x1e0730fa0  __DATA_CONST,__const  _SFSafariViewControllerUsesSoftPocketKey
+0x1876963f8  __TEXT,__const  _SFScrollIndicatorInsetsZero
+0x18725f084  __TEXT,__text  _SFSectionToConfigurableMenuActions
+0x18725e720  __TEXT,__text  _SFSectionToMenuActions
+0x1872fb780  __TEXT,__text  _SFSeedCloudTabsRestorationUUIDIfAbsent
+0x1871fb930  __TEXT,__text  _SFShouldHandleSelectionForPresses
+0x1872fb770  __TEXT,__text  _SFShouldSeedCloudTabsRestorationUUID
+0x1e0730c68  __DATA_CONST,__const  _SFShowTabBarDefaultsKey
+0x1e0730c70  __DATA_CONST,__const  _SFShowsIconsInFavoritesBarKey
+0x1e0730c78  __DATA_CONST,__const  _SFShowsWebpageStatusBarKey
+0x187230318  __TEXT,__text  _SFSmallSafariIconLinkImage
+0x187695cd0  __TEXT,__const  _SFStandardStatusBarHeight
+0x1e0734cb0  __DATA_CONST,__const  _SFStartPageAttributionViewBackdropGroupName
+0x1e0730c80  __DATA_CONST,__const  _SFStartPageCachedNumberOfTrackersKey
+0x1e0734ca8  __DATA_CONST,__const  _SFStartPageCellBackdropGroupName
+0x187696010  __TEXT,__const  _SFStartPageDefaultTopPadding
+0x1e0730c88  __DATA_CONST,__const  _SFStartPageLastCloudDeviceKey
+0x187696018  __TEXT,__const  _SFStartPageMinimumDistanceForUnfocusGesture
+0x1e0732b70  __DATA_CONST,__const  _SFStatePersistenceLegacyPlistVersionKey
+0x1e0732bb0  __DATA_CONST,__const  _SFStatePersistenceTabBrowsingModeKey
+0x1e0732bb8  __DATA_CONST,__const  _SFStatePersistenceTabIsDisplayingStandaloneImageKey
+0x1e0732bc0  __DATA_CONST,__const  _SFStatePersistenceTabLastViewedTimeKey
+0x1e0732bc8  __DATA_CONST,__const  _SFStatePersistenceTabOrderIndexKey
+0x1e0732c28  __DATA_CONST,__const  _SFStatePersistenceTabOwningGroupUUIDKey
+0x1e0732bd0  __DATA_CONST,__const  _SFStatePersistenceTabOwningWindowUUIDKey
+0x1e0732c30  __DATA_CONST,__const  _SFStatePersistenceTabProfileIdentifierKey
+0x1e0732bd8  __DATA_CONST,__const  _SFStatePersistenceTabReaderActiveKey
+0x1e0732be0  __DATA_CONST,__const  _SFStatePersistenceTabReaderTopScrollOffsetKey
+0x1e0732be8  __DATA_CONST,__const  _SFStatePersistenceTabReadingListBookmarkIDKey
+0x1e0732bf0  __DATA_CONST,__const  _SFStatePersistenceTabSessionStateKey
+0x1e0732bf8  __DATA_CONST,__const  _SFStatePersistenceTabSourceApplicationBundleIdentifierKey
+0x1e0732c38  __DATA_CONST,__const  _SFStatePersistenceTabSummaryTextKey
+0x1e0732c00  __DATA_CONST,__const  _SFStatePersistenceTabTitleKey
+0x1e0732c40  __DATA_CONST,__const  _SFStatePersistenceTabTopicTitleKey
+0x1e0732c08  __DATA_CONST,__const  _SFStatePersistenceTabURLKey
+0x1e0732c10  __DATA_CONST,__const  _SFStatePersistenceTabUUIDKey
+0x1e0732c18  __DATA_CONST,__const  _SFStatePersistenceTabUserVisibleURLKey
+0x1e0732c20  __DATA_CONST,__const  _SFStatePersistenceTabWasOpenedFromLink
+0x1e0732b78  __DATA_CONST,__const  _SFStatePersistenceWindowActivePrivateTabIndexKey
+0x1e0732ba8  __DATA_CONST,__const  _SFStatePersistenceWindowActiveProfileIdentifierKey
+0x1e0732b80  __DATA_CONST,__const  _SFStatePersistenceWindowActiveTabIndexKey
+0x1e0732b88  __DATA_CONST,__const  _SFStatePersistenceWindowPrivateTabsKey
+0x1e0732b90  __DATA_CONST,__const  _SFStatePersistenceWindowSceneIDKey
+0x1e0732b98  __DATA_CONST,__const  _SFStatePersistenceWindowTabsKey
+0x1e0732ba0  __DATA_CONST,__const  _SFStatePersistenceWindowUUIDKey
+0x1e0730ec8  __DATA_CONST,__const  _SFSuggestedTextColorInSearchSuggestion
+0x1e0730ed8  __DATA_CONST,__const  _SFSuggestedTextWeightInSearchSuggestion
+0x18716c668  __TEXT,__text  _SFSystemImageNameForBarItem
+0x18716b08c  __TEXT,__text  _SFSystemImageNameForBarItemFilled
+0x1872f54a8  __TEXT,__text  _SFSystemImageNameForMediaStateIcon
+0x1872f54cc  __TEXT,__text  _SFSystemImageNameForTogglingMediaStateIcon
+0x1e0732080  __DATA_CONST,__const  _SFTabGroupDidBeginSharingNotification
+0x1e0731438  __DATA_CONST,__const  _SFTabGroupTapActionIdentifier
+0x1e0730c90  __DATA_CONST,__const  _SFTabLayoutIdentifierKey
+0x18725eb90  __TEXT,__text  _SFTabOperationActions
+0x187201550  __TEXT,__text  _SFTabOverviewMaximumNumberOfColumns
+0x187695940  __TEXT,__const  _SFTabOverviewMaximumWidthUsingCompactAppearance
+0x1872014a0  __TEXT,__text  _SFTabOverviewMinimumItemWidthForBounds
+0x1872015b0  __TEXT,__text  _SFTabOverviewNumberOfColumns
+0x1872016e8  __TEXT,__text  _SFTabOverviewScaleTranslationForZPosition
+0x187201720  __TEXT,__text  _SFTabOverviewVanishingPointForView
+0x187695948  __TEXT,__const  _SFTabOverviewZScaleFactor
+0x18723048c  __TEXT,__text  _SFTintImage
+0x1872f5514  __TEXT,__text  _SFTitleForTogglingMediaStateIcon
+0x187695dc0  __TEXT,__const  _SFTopCapsuleBackgroundCornerRadius
+0x187695ee0  __TEXT,__const  _SFTopCapsuleHeight
+0x18725eef8  __TEXT,__text  _SFUnconfigurableMenuActions
+0x1872f54f0  __TEXT,__text  _SFUnfilledSystemImageNameForTogglingMediaStateIcon
+0x1e0730fc0  __DATA_CONST,__const  _SFUnifiedBarEnableNarrowTabsKey
+0x1e0730c98  __DATA_CONST,__const  _SFUnifiedBarMaximumActiveTabWidthKey
+0x1e0730ca0  __DATA_CONST,__const  _SFUnifiedBarMaximumExtendedActiveTabWidthKey
+0x1e0730ca8  __DATA_CONST,__const  _SFUnifiedBarMaximumNarrowActiveTabWidthKey
+0x1e0730cb0  __DATA_CONST,__const  _SFUnifiedBarMinimumActiveTabWidthRatioKey
+0x1e0730cb8  __DATA_CONST,__const  _SFUnifiedBarMinimumExtendedInactiveTabWidthKey
+0x1e0730cc0  __DATA_CONST,__const  _SFUnifiedBarMinimumLandscapeInactiveTabWidthKey
+0x1e0730cc8  __DATA_CONST,__const  _SFUnifiedBarMinimumNarrowInactiveTabWidthKey
+0x1e0730cd0  __DATA_CONST,__const  _SFUnifiedBarMinimumPortraitInactiveTabWidthKey
+0x1e0730fd0  __DATA_CONST,__const  _SFUnifiedBarMinimumWidthToCollapseHighPriorityItemsKey
+0x1e0730fc8  __DATA_CONST,__const  _SFUnifiedBarMinimumWidthToCollapseItemsKey
+0x1e0730fd8  __DATA_CONST,__const  _SFUnifiedBarMinimumWidthToForceSeparateTabBarKey
+0x187695e70  __TEXT,__const  _SFUnifiedTabBarContentLevelDefault
+0x187695e78  __TEXT,__const  _SFUnifiedTabBarContentLevelRaised
+0x1872a0f00  __TEXT,__text  _SFUnifiedTabBarItemAccessoryButtonTypeEnumerateCases
+0x187249254  __TEXT,__text  _SFUnifiedTabBarItemCornerRadiiMake
+0x187696048  __TEXT,__const  _SFUnifiedTabBarItemTitleContainerViewDimmedTextAlpha
+0x187696050  __TEXT,__const  _SFUnifiedTabBarItemTitleContainerViewLabelFadeOutDistance
+0x1e0730bc8  __DATA_CONST,__const  _SFUnifiedTabBarItemViewReuseIdentifier
+0x1e07351b0  __DATA_CONST,__const  _SFUpdateSmartSearchFieldLayoutImmediatelyNotificationKey
+0x1e0730eb8  __DATA_CONST,__const  _SFUseHTTPSOnlyKey
+0x1e0730fe0  __DATA_CONST,__const  _SFUserDefaultsUpdateUUIDKey
+0x18729f73c  __TEXT,__text  _SFValueFromKeyValueString
+0x1e0735930  __DATA_CONST,__const  _SFVoiceSearchAvailabilityDidChangeNotification
+0x187696148  __TEXT,__const  _SFWebExtensionButtonIconSize
+0x1e0732fa8  __DATA_CONST,__const  _SFWebExtensionIdentifierToBaseURIMapBundleKey
+0x1e0732fb0  __DATA_CONST,__const  _SFWebExtensionIdentifierToWebExtensionDataMapBundleKey
+0x18722feb4  __TEXT,__text  _SFWidthIsNarrow
+0x1872b741c  __TEXT,__text  __SFAccessibilityIdentifierForBarItem
+0x1e0730cd8  __DATA_CONST,__const  __SFAllowMediaCaptureOnInsecureSites
+0x1e0730ce0  __DATA_CONST,__const  __SFApplePayDisclosureAllowedKey
+0x187165720  __TEXT,__text  __SFApplicationNameForDesktopUserAgent
+0x18729596c  __TEXT,__text  __SFApplicationNameForUserAgent
+0x1e0730ce8  __DATA_CONST,__const  __SFAudioPlaybackRequiresUserActionKey
+0x1872f5704  __TEXT,__text  __SFAudioStateForTogglingNonMirroredMediaStateIcon
+0x1e0730cf0  __DATA_CONST,__const  __SFAutomaticallyArchiveReadingListItemsEnabledKey
+0x1e0730cf8  __DATA_CONST,__const  __SFAutoplayPlayingPauseQuirkEnabledKey
+0x187162f54  __TEXT,__text  __SFBackdropEffectForBarTintStyle
+0x18722ff4c  __TEXT,__text  __SFBackdropGroupNameForOwner
+0x18716c554  __TEXT,__text  __SFBarItemEnumerateCases
+0x187696180  __TEXT,__const  __SFBarItemNull
+0x1e0730da8  __DATA_CONST,__const  __SFBookmarkFeatureTextBackfillCompletedForAltDSIDKey
+0x1872e77b4  __TEXT,__text  __SFCGPointsEqualWithEpsilon
+0x1872e7828  __TEXT,__text  __SFCGRectGrowToSize
+0x1872e79d0  __TEXT,__text  __SFCGRectOfSizeAlignedWithPoint
+0x1872e788c  __TEXT,__text  __SFCGRectOfSizeAlignedWithinRect
+0x18716fbac  __TEXT,__text  __SFCeilingFloatToPixels
+0x18717d87c  __TEXT,__text  __SFClamp
+0x18717ee50  __TEXT,__text  __SFClampPercent
+0x1e0730d00  __DATA_CONST,__const  __SFCloudTabsDeviceUUIDForRestorationDebugSyncLogDefaultsKey
+0x1e0730d08  __DATA_CONST,__const  __SFCloudTabsDeviceUUIDForRestorationDefaultsKey
+0x1e0730d10  __DATA_CONST,__const  __SFCloudTabsPreviousSyncUpDateKey
+0x1e0730d18  __DATA_CONST,__const  __SFCloudTabsPreviousSyncUpTabCountKey
+0x1e0730d20  __DATA_CONST,__const  __SFCloudTabsRestorationFirstAttemptDateDefaultsKey
+0x187281990  __TEXT,__text  __SFContentBlockerStateURL
+0x1871657ec  __TEXT,__text  __SFContentBlockerStoreURL
+0x1872d6f44  __TEXT,__text  __SFContextInfoWithComment
+0x1872e7a4c  __TEXT,__text  __SFContinuousCornerRadiusMatchingRadiusWithInset
+0x1872958c8  __TEXT,__text  __SFCustomUserAgentStringIfNeeded
+0x187255038  __TEXT,__text  __SFDarkTintStyleForStyle
+0x1e0730d28  __DATA_CONST,__const  __SFDebugAcceptInsecureCertificatesInTestsPreferenceKey
+0x1e0730d30  __DATA_CONST,__const  __SFDebugContentDispositionHeaderStartsDownloadsKey
+0x1e0730d38  __DATA_CONST,__const  __SFDebugDownloadAttributeForcesDownloadsKey
+0x1e0730d40  __DATA_CONST,__const  __SFDebugEnableDownloadsInSubframesKey
+0x1e0730d48  __DATA_CONST,__const  __SFDebugPromptForDownloadsOnNavigationResponseKey
+0x1e0730d50  __DATA_CONST,__const  __SFDebugReaderGlyphDisplayDurationPreferenceKey
+0x1872306d8  __TEXT,__text  __SFDefaultLayoutMargins
+0x1e0730d58  __DATA_CONST,__const  __SFDemoSiriSuggestionsKey
+0x18723095c  __TEXT,__text  __SFDeviceAlertStyle
+0x187189404  __TEXT,__text  __SFDeviceHasHomeButton
+0x1872307f8  __TEXT,__text  __SFDeviceHasRectangularScreen
+0x187161690  __TEXT,__text  __SFDeviceIsPad
+0x1872309d4  __TEXT,__text  __SFDeviceStatusBarHasNonTransparentBackground
+0x1871649b8  __TEXT,__text  __SFDeviceSupportsDesktopSitesByDefault
+0x187165114  __TEXT,__text  __SFDeviceSupportsWebKitFullscreenAPI
+0x1e0730d60  __DATA_CONST,__const  __SFDidClearOldCertificateBypassesDefaultsKey
+0x1e0730d68  __DATA_CONST,__const  __SFDisableICECandidateFiltering
+0x1e0730d70  __DATA_CONST,__const  __SFDownloadExpirationIntervalDefaultsKey
+0x1e0730d78  __DATA_CONST,__const  __SFEnableDownloadImport
+0x1e0730d80  __DATA_CONST,__const  __SFEnableEnumeratingAllNetworkInterfaces
+0x1e0730d88  __DATA_CONST,__const  __SFEnableFullScreenAPIOnPhone
+0x1e0730d90  __DATA_CONST,__const  __SFEnableMediaCapture
+0x1e0730d98  __DATA_CONST,__const  __SFEnableMockCaptureDevices
+0x18716fb6c  __TEXT,__text  __SFEqualWithEpsilon
+0x18717cd74  __TEXT,__text  __SFFlipRectInCoordinateSpace
+0x1871c02d4  __TEXT,__text  __SFFloorFloatToPixels
+0x18722fda4  __TEXT,__text  __SFFloorSize
+0x1872e77e4  __TEXT,__text  __SFGreaterThanOrEqualWithEpsilon
+0x1e0730da0  __DATA_CONST,__const  __SFHasCompletedReadingListArchivePreferenceMigrationKey
+0x1872f5848  __TEXT,__text  __SFHighestPriorityMediaStateIcon
+0x187295bd8  __TEXT,__text  __SFIPhoneSafariUserAgentString
+0x1872f543c  __TEXT,__text  __SFImageForMediaStateIcon
+0x1e0730db0  __DATA_CONST,__const  __SFInlineMediaPlaybackRequiresPlaysInlineAttributeKey
+0x187230730  __TEXT,__text  __SFInsetIsInvalid
+0x18716fd7c  __TEXT,__text  __SFInterpolate
+0x1e0730db8  __DATA_CONST,__const  __SFInvisibleAutoplayNotPermittedKey
+0x1871630b8  __TEXT,__text  __SFIsDarkTintStyle
+0x187162f38  __TEXT,__text  __SFIsPrivateTintStyle
+0x1e0730dc0  __DATA_CONST,__const  __SFJavaScriptCanOpenWindowsAutomaticallyDefaultsKey
+0x1e0730dc8  __DATA_CONST,__const  __SFJavaScriptEnabledDefaultsKey
+0x1e0730dd0  __DATA_CONST,__const  __SFLastUnviewedDownloadDateKey
+0x1e0730dd8  __DATA_CONST,__const  __SFLegacyEncryptedMediaAPIEnabledKey
+0x187255058  __TEXT,__text  __SFLightTintStyleForStyle
+0x1e0730de0  __DATA_CONST,__const  __SFLocalTabGroupUUIDsBySceneIDDefaultsKey
+0x187295a84  __TEXT,__text  __SFMacSafariUserAgentString
+0x1e0730de8  __DATA_CONST,__const  __SFMainContentUserGestureOverrideEnabledKey
+0x1e0730df0  __DATA_CONST,__const  __SFManagedMediaSourceHighThresholdKey
+0x1e0730df8  __DATA_CONST,__const  __SFManagedMediaSourceLowThresholdKey
+0x1e0730e00  __DATA_CONST,__const  __SFMediaPlaybackAllowsInlineKey
+0x1e0730e08  __DATA_CONST,__const  __SFMediaPlaybackRequiresUserActionKey
+0x1e0730e10  __DATA_CONST,__const  __SFMediaSourceEnabledKey
+0x1872f5808  __TEXT,__text  __SFMediaStateIconForWBSMediaCaptureState
+0x1872f56bc  __TEXT,__text  __SFMediaStateIconIsMuted
+0x1872f56f4  __TEXT,__text  __SFMediaStateIconMirroredMediaCaptureState
+0x1872f56d4  __TEXT,__text  __SFMediaStateIconMutedVariant
+0x1e0730e18  __DATA_CONST,__const  __SFNanoBlockAllCookiesEnabledKey
+0x1e0730e20  __DATA_CONST,__const  __SFOfflineReadingListArchiveUsedDefaultsKey
+0x18722fe94  __TEXT,__text  __SFOnePixel
+0x1e0730e28  __DATA_CONST,__const  __SFOpenLinksInBackgroundDefaultsKey
+0x1e0730e30  __DATA_CONST,__const  __SFPerDocumentAutoplayBehaviorQuirkEnabledKey
+0x1872306f4  __TEXT,__text  __SFPointIsInvalid
+0x1872d71d4  __TEXT,__text  __SFPopoverSourceInfoForViewController
+0x1872d705c  __TEXT,__text  __SFPopoverSourceInfoUnwrap
+0x1e0730e38  __DATA_CONST,__const  __SFPrivateBrowsingDefaultsKey
+0x1e0730f10  __DATA_CONST,__const  __SFPrivateSearchEngineStringDefaultsKey
+0x1e0730e40  __DATA_CONST,__const  __SFReaderConfigurationDefaultsKey
+0x1e0730e48  __DATA_CONST,__const  __SFReadingListFetcherScheduleBackgroundTasksImmediatelyKey
+0x187230794  __TEXT,__text  __SFRectIsInvalid
+0x18722ff8c  __TEXT,__text  __SFResizableImageWithContinuousCurveCorners
+0x18717922c  __TEXT,__text  __SFRoundEdgeInsetsToPixels
+0x18717885c  __TEXT,__text  __SFRoundFloatToPixels
+0x18722fd14  __TEXT,__text  __SFRoundPointToPixels
+0x18716adb4  __TEXT,__text  __SFRoundRectToPixels
+0x18722fd5c  __TEXT,__text  __SFRoundSizeToPixels
+0x187281748  __TEXT,__text  __SFSFAppContainerURL
+0x187281bcc  __TEXT,__text  __SFSafariCloudTabsMetadataPath
+0x187161944  __TEXT,__text  __SFSafariContainerPath
+0x1871619ec  __TEXT,__text  __SFSafariContainerURL
+0x187165890  __TEXT,__text  __SFSafariGroupContainerURL
+0x1e0730e50  __DATA_CONST,__const  __SFSafariHighLevelDomainsAndPortsToUseOnlyAvailableIdentityWithoutPromptingSettingsKey
+0x187161994  __TEXT,__text  __SFSafariIconImageCacheDirectoryPath
+0x1872300b0  __TEXT,__text  __SFSafariIconLinkImage
+0x187161d90  __TEXT,__text  __SFSafariMetadataCacheDirectoryPath
+0x1871d7eec  __TEXT,__text  __SFSafariNonContaineredSettingsDirectoryPath
+0x1e0730e58  __DATA_CONST,__const  __SFSafariPerSitePreferenceDidChangeNotification
+0x187281808  __TEXT,__text  __SFSafariPreferencesDomain
+0x187281938  __TEXT,__text  __SFSafariSavedStateDirectoryPath
+0x1872817b0  __TEXT,__text  __SFSafariTemporaryDirectoryPath
+0x187281b74  __TEXT,__text  __SFSafariTestContentDirectoryPath
+0x187281c48  __TEXT,__text  __SFSafeBrowsingPreferencesPlistPath
+0x18722fcb4  __TEXT,__text  __SFScreenNativeScale
+0x18716af10  __TEXT,__text  __SFScreenScale
+0x1e0730e60  __DATA_CONST,__const  __SFSearchEngineStringDefaultsKey
+0x1e0730e68  __DATA_CONST,__const  __SFShouldCaptureAudioInUIProcessKey
+0x1e0732270  __DATA_CONST,__const  __SFSiteIconViewAccessibilityIdentifierImageView
+0x1e0732268  __DATA_CONST,__const  __SFSiteIconViewAccessibilityIdentifierMonogramLabel
+0x18722fec8  __TEXT,__text  __SFSizeClassForWidth
+0x1872b754c  __TEXT,__text  __SFStringForBarItem
+0x187255010  __TEXT,__text  __SFStringForTintStyle
+0x187230aa0  __TEXT,__text  __SFToolbarContentSizeCategoryForPreferredCategory
+0x1872e77a4  __TEXT,__text  __SFUninterpolate
+0x1e0730e70  __DATA_CONST,__const  __SFUserAgentDefaultsKey
+0x1e0730e78  __DATA_CONST,__const  __SFVideoPlaybackRequiresUserActionKey
+0x1e0730e80  __DATA_CONST,__const  __SFWarnAboutFraudulentWebsitesDefaultsKey
+0x1e07350a0  __DATA_CONST,__const  __SFWebArchiveMIMEType
+0x187281a34  __TEXT,__text  __SFWebExtensionContentBlockerStoreURL
+0x187281ad8  __TEXT,__text  __SFWebExtensionContentBlockerStoreURLForProfileServerID
+0x1e0730e88  __DATA_CONST,__const  __SFWebKitShowLinkPreviewsDefaultsKey
+0x1e0730e90  __DATA_CONST,__const  __SFWebKitSiteSpecificHacksEnabledKey
+0x187696000  __TEXT,__const  _kFindOnPageUndefinedNumberOfMatches
+0x1e0730ea0  __DATA_CONST,__const  _kLastSelectedBookmarksFolderDefaultsKey
+0x1e0730ea8  __DATA_CONST,__const  _kSafariLastSelectedBookmarksFolderFavoritesFolder
+0x1e07340b0  __DATA_CONST,__const  _unknownSymbolFallbackSymbolName
+```
+
+## Private
+
+```
+0x1871616c8  __TEXT,__text  __SFSizeClassForWidth.cold.1
+0x1871616c8  __TEXT,__text  __SFSizeClassForWidth.cold.1
+0x1871616c8  __TEXT,__text  __SFSizeClassForWidth.cold.1
+0x1871616c8  __TEXT,__text  __SFSizeClassForWidth.cold.1
+0x1871616c8  __TEXT,__text  __SFSizeClassForWidth.cold.1
+0x1871616cc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1871616cc  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1871616e0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1871616f4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x187161708  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x187161730  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x187161730  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x187161730  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x18716173c  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x187161750  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x187161770  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x187161790  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1871617a0  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1871617b4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1871617d4  __TEXT,__text  _OUTLINED_FUNCTION_0
+0x1871617e4  __TEXT,__text  ____SFDeviceIsPad_block_invoke
+0x18716192c  __TEXT,__text  +[SFBrowserApplication initialize]
+0x187161938  __TEXT,__text  +[_SFBrowserSavedState setShouldMergeAllWindowsIfNeeded:]
+0x187161a44  __TEXT,__text  -[_SFBookmarkFolderTouchIconProvider init]
+0x187161b8c  __TEXT,__text  ___ensureImageCacheDirectory_block_invoke
+0x187161c98  __TEXT,__text  -[_SFFaviconProvider initWithPersistenceBaseURL:persistenceName:preferredIconSize:atScale:allScales:isReadOnly:shouldCheckIntegrityWhenOpeningDatabaseBlock:]
+0x187161d10  __TEXT,__text  ___42-[_SFBookmarkFolderTouchIconProvider init]_block_invoke
+0x187161de8  __TEXT,__text  -[_SFSiteMetadataManager initWithInjectedBundleURL:imageCacheDirectoryURL:cacheIsReadOnly:metadataType:]
+0x187162344  __TEXT,__text  ___104-[_SFSiteMetadataManager initWithInjectedBundleURL:imageCacheDirectoryURL:cacheIsReadOnly:metadataType:]_block_invoke
+0x1871623c4  __TEXT,__text  -[SFWebExtensionsController setProfileDelegate:]
+0x1871623d8  __TEXT,__text  -[SFWebExtensionsController extensionsEnabled]
+0x1871623e0  __TEXT,__text  +[SFFeatureManager sharedFeatureManager]
+0x187162418  __TEXT,__text  +[SFFeatureManager sharedFeatureManager].cold.1
+0x18716242c  __TEXT,__text  ___40+[SFFeatureManager sharedFeatureManager]_block_invoke
+0x18716245c  __TEXT,__text  -[SFFeatureManager init]
+0x1871624cc  __TEXT,__text  -[SFFeatureManager allowsUnlimitedTabs]
+0x187162504  __TEXT,__text  -[SFFeatureManager allowsUnlimitedTabs].cold.1
+0x187162518  __TEXT,__text  ___39-[SFFeatureManager allowsUnlimitedTabs]_block_invoke
+0x187162568  __TEXT,__text  -[SFWebExtensionsController setProcessPool:]
+0x18716270c  __TEXT,__text  -[SFWebExtensionsController setApplicationNameForUserAgent:]
+0x187162720  __TEXT,__text  -[SFWebExtensionsController setNavigationIntentHandler:]
+0x187162734  __TEXT,__text  +[SFTestConsoleLogRecorder recordConsoleLogIfRunningTest:]
+0x187162844  __TEXT,__text  -[SFWebExtensionsController _webViewConfiguration]
+0x187162a30  __TEXT,__text  -[SFWebExtensionsController applicationNameForUserAgent]
+0x187162a44  __TEXT,__text  -[SFWebExtensionsController processPool]
+0x187163028  __TEXT,__text  +[_SFBarTheme backdropEffectForStyle:]
+0x187163030  __TEXT,__text  __SFBackdropEffectForBarTintStyle.cold.1
+0x187163044  __TEXT,__text  +[_SFBarTheme themeWithBarTintStyle:preferredBarTintColor:controlsTintColor:]
+0x1871630b0  __TEXT,__text  +[_SFBarTheme backdropIsDarkForStyle:]
+0x1871630d0  __TEXT,__text  +[UIColor(MobileSafariExtras) sf_safariAccentColor]
+0x1871630dc  __TEXT,__text  -[SFBrowserMenuProvider setWebExtensionsController:]
+0x1871630e8  __TEXT,__text  ___swift_allocate_boxed_opaque_existential_0Tm
+0x1871630e8  __TEXT,__text  ___swift_allocate_boxed_opaque_existential_0Tm
+0x1871630e8  __TEXT,__text  ___swift_allocate_boxed_opaque_existential_0Tm
+0x1871630e8  __TEXT,__text  ___swift_allocate_boxed_opaque_existential_0Tm
+0x187163184  __TEXT,__text  ___swift_instantiateConcreteTypeFromMangledNameV2
+0x187163220  __TEXT,__text  +[_SFBarTheme themeWithBarTintStyle:]
+0x18716322c  __TEXT,__text  -[_SFBarTheme initWithBarTintStyle:preferredBarTintColor:controlsTintColor:]
+0x187163640  __TEXT,__text  +[_SFBarTheme controlsTintColorForStyle:]
+0x1871636a0  __TEXT,__text  +[UIColor(MobileSafariExtras) sf_colorNamed:]
+0x187163714  __TEXT,__text  -[_SFBarTheme .cxx_destruct]
+0x1871637ec  __TEXT,__text  ____SFBackdropEffectForBarTintStyle_block_invoke
+0x18716384c  __TEXT,__text  -[SFUnifiedBarTheme initWithBarTintStyle:preferredBarTintColor:controlsTintColor:]
+0x187163c58  __TEXT,__text  _makeTitleTheme
+0x187163d00  __TEXT,__text  +[UIColor(MobileSafariExtras) sf_transparentBarHairlineColor]
+0x187163d0c  __TEXT,__text  -[SFUnifiedBarTheme .cxx_destruct]
+0x18716424c  __TEXT,__text  _block_destroy_helper.35
+0x187164250  __TEXT,__text  _block_destroy_helper.35
+0x187164254  __TEXT,__text  _block_destroy_helper.35
+0x187164268  __TEXT,__text  ___swift_closure_destructor.32
+0x18716426c  __TEXT,__text  ___swift_closure_destructor.32
+0x187164270  __TEXT,__text  ___swift_closure_destructor.32
+0x187164274  __TEXT,__text  ___swift_closure_destructor.32
+0x187164338  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x187164338  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x187164338  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x187164338  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x187164338  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x187164338  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x187164338  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x187164338  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x187164338  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x187164338  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x187164338  __TEXT,__text  ___swift_destroy_boxed_opaque_existential_0
+0x187164368  __TEXT,__text  -[SFThemeColorBarTheme initWithBarTintStyle:preferredBarTintColor:controlsTintColor:]
+0x187164524  __TEXT,__text  -[SFUnifiedTabBarItemTitleContainerViewTheme .cxx_destruct]
+0x187164580  __TEXT,__text  _block_destroy_helper
+0x187164588  __TEXT,__text  _block_destroy_helper
+0x187164590  __TEXT,__text  _block_destroy_helper
+0x187164598  __TEXT,__text  _block_destroy_helper
+0x1871645a0  __TEXT,__text  _block_destroy_helper
+0x1871645a8  __TEXT,__text  _block_destroy_helper
+0x1871645b0  __TEXT,__text  _block_destroy_helper
+0x1871645b8  __TEXT,__text  _block_destroy_helper
+0x1871645c0  __TEXT,__text  _block_destroy_helper
+0x1871645c8  __TEXT,__text  _block_destroy_helper
+0x1871645d0  __TEXT,__text  _block_destroy_helper
+0x1871645d8  __TEXT,__text  _block_destroy_helper
+0x1871645e0  __TEXT,__text  _block_destroy_helper
+0x1871645e8  __TEXT,__text  _block_destroy_helper
+0x1871645f0  __TEXT,__text  _block_destroy_helper
+0x1871645f8  __TEXT,__text  _block_destroy_helper
+0x187164600  __TEXT,__text  _block_destroy_helper
+0x187164608  __TEXT,__text  _block_destroy_helper
+0x187164610  __TEXT,__text  _block_destroy_helper
+0x187164618  __TEXT,__text  _block_destroy_helper
+0x187164620  __TEXT,__text  _block_destroy_helper
+0x187164628  __TEXT,__text  _block_destroy_helper
+0x187164630  __TEXT,__text  _block_destroy_helper
+0x187164638  __TEXT,__text  _block_destroy_helper
+0x187164640  __TEXT,__text  _block_destroy_helper
+0x187164648  __TEXT,__text  _block_destroy_helper
+0x187164650  __TEXT,__text  _block_destroy_helper
+0x187164658  __TEXT,__text  _block_destroy_helper
+0x187164660  __TEXT,__text  _block_destroy_helper
+0x187164668  __TEXT,__text  _block_destroy_helper
+0x187164670  __TEXT,__text  _block_destroy_helper
+0x18716468c  __TEXT,__text  _block_destroy_helper
+0x187164694  __TEXT,__text  _block_destroy_helper
+0x18716469c  __TEXT,__text  _block_destroy_helper
+0x1871646a4  __TEXT,__text  _block_destroy_helper
+0x1871646ac  __TEXT,__text  _block_destroy_helper
+0x1871646b4  __TEXT,__text  _block_destroy_helper
+0x1871646bc  __TEXT,__text  _block_destroy_helper
+0x1871646c4  __TEXT,__text  _block_destroy_helper
+0x1871646cc  __TEXT,__text  _block_destroy_helper
+0x1871646d4  __TEXT,__text  _block_destroy_helper
+0x1871646f0  __TEXT,__text  _block_destroy_helper
+0x1871646f8  __TEXT,__text  _block_destroy_helper
+0x187164700  __TEXT,__text  _block_destroy_helper
+0x187164708  __TEXT,__text  _block_destroy_helper
+0x187164710  __TEXT,__text  _block_destroy_helper
+0x187164718  __TEXT,__text  _block_destroy_helper
+0x187164720  __TEXT,__text  _block_destroy_helper
+0x187164728  __TEXT,__text  _block_destroy_helper
+0x187164730  __TEXT,__text  _block_destroy_helper
+0x187164738  __TEXT,__text  _block_destroy_helper
+0x187164740  __TEXT,__text  _block_destroy_helper
+0x187164748  __TEXT,__text  _block_destroy_helper
+0x187164750  __TEXT,__text  _block_destroy_helper
+0x187164758  __TEXT,__text  _block_destroy_helper
+0x187164760  __TEXT,__text  _block_destroy_helper
+0x187164768  __TEXT,__text  _block_destroy_helper
+0x187164770  __TEXT,__text  _block_destroy_helper
+0x187164778  __TEXT,__text  _block_destroy_helper
+0x187164780  __TEXT,__text  _block_destroy_helper
+0x187164788  __TEXT,__text  _block_destroy_helper
+0x187164790  __TEXT,__text  _block_destroy_helper
+0x187164798  __TEXT,__text  _block_destroy_helper
+0x1871647a0  __TEXT,__text  _block_destroy_helper
+0x1871647a8  __TEXT,__text  _block_destroy_helper
+0x1871647b0  __TEXT,__text  _block_destroy_helper
+0x1871647b8  __TEXT,__text  _block_destroy_helper
+0x1871647c0  __TEXT,__text  _block_destroy_helper
+0x1871647c8  __TEXT,__text  _block_destroy_helper
+0x1871647d0  __TEXT,__text  _block_destroy_helper
+0x1871647d8  __TEXT,__text  _block_destroy_helper
+0x1871647e0  __TEXT,__text  _block_destroy_helper
+0x1871647e8  __TEXT,__text  _block_destroy_helper
+0x1871647f0  __TEXT,__text  _block_destroy_helper
+0x1871647f8  __TEXT,__text  _block_destroy_helper
+0x187164800  __TEXT,__text  _block_destroy_helper
+0x187164808  __TEXT,__text  _block_destroy_helper
+0x187164810  __TEXT,__text  _block_destroy_helper
+0x18716482c  __TEXT,__text  _block_destroy_helper
+0x187164834  __TEXT,__text  _block_destroy_helper
+0x18716483c  __TEXT,__text  _block_destroy_helper
+0x187164844  __TEXT,__text  _block_destroy_helper
+0x18716484c  __TEXT,__text  _block_destroy_helper
+0x187164854  __TEXT,__text  _block_destroy_helper
+0x18716485c  __TEXT,__text  _block_destroy_helper
+0x187164864  __TEXT,__text  _block_destroy_helper
+0x18716486c  __TEXT,__text  _block_destroy_helper
+0x187164874  __TEXT,__text  _block_destroy_helper
+0x18716487c  __TEXT,__text  -[SFThemeColorBarTheme .cxx_destruct]
+0x187164900  __TEXT,__text  -[SFBrowserMenuProvider setBookmarkCollection:]
+0x18716490c  __TEXT,__text  -[SFBrowserMenuProvider setSiteMetadataManager:]
+0x187164918  __TEXT,__text  -[SFBrowserMenuProvider setHistoryListProvider:]
+0x187164924  __TEXT,__text  +[SFBrowserMenuProvider sharedProvider]
+0x1871649f0  __TEXT,__text  __SFDeviceSupportsDesktopSitesByDefault.cold.1
+0x187164a40  __TEXT,__text  -[SFStoreBannerTracker categoryName]
+0x187164a4c  __TEXT,__text  -[SFBrowserMenuProvider setOpenNewDocumentProvider:]
+0x187164c98  __TEXT,__text  +[_SFBrowserWindowSettings settings]
+0x187164d40  __TEXT,__text  ___36+[_SFBrowserWindowSettings settings]_block_invoke
+0x187164d6c  __TEXT,__text  -[_SFBrowserWindowSettings init]
+0x187164dd0  __TEXT,__text  -[_SFBrowserWindowSettings _initializeSettingsDictionaryIfNeeded]
+0x187164ebc  __TEXT,__text  ___65-[_SFBrowserWindowSettings _initializeSettingsDictionaryIfNeeded]_block_invoke
+0x187164f24  __TEXT,__text  -[_SFBrowserWindowSettings validateWindowSettingsWithUUIDs:]
+0x187165108  __TEXT,__text  ___60-[_SFBrowserWindowSettings validateWindowSettingsWithUUIDs:]_block_invoke
+0x18716514c  __TEXT,__text  -[SFUnifiedTabBarItemArrangement init]
+0x18716515c  __TEXT,__text  -[SFBrowserMenuProvider setRecentlyClosedTabsProvider:]
+0x187165194  __TEXT,__text  ____SFDeviceSupportsWebKitFullscreenAPI_block_invoke
+0x187165280  __TEXT,__text  -[SFClusterSettingsItem init]
+0x18716561c  __TEXT,__text  __SFDeviceSupportsWebKitFullscreenAPI.cold.1
+0x187165630  __TEXT,__text  -[SFUnifiedTabBarSection initWithIdentifier:items:isPinned:]
+0x1871656dc  __TEXT,__text  ____SFDeviceSupportsDesktopSitesByDefault_block_invoke
+0x1871658e8  __TEXT,__text  ___39+[SFBrowserMenuProvider sharedProvider]_block_invoke
+0x187165914  __TEXT,__text  -[SFBrowserMenuProvider init]
+0x187165a6c  __TEXT,__text  -[SFBrowserMenuProvider _updateHistoryClearingAvailabilityAndRebuildIfNecessary]
+0x187165b44  __TEXT,__text  ___80-[SFBrowserMenuProvider _updateHistoryClearingAvailabilityAndRebuildIfNecessary]_block_invoke
+0x187165c14  __TEXT,__text  _block_destroy_helper.81
+0x187165c18  __TEXT,__text  _block_destroy_helper.81
+0x187165c1c  __TEXT,__text  _block_destroy_helper.81
+0x187165c20  __TEXT,__text  _block_destroy_helper.81
+0x187165c24  __TEXT,__text  ___swift_closure_destructor.78
+0x187165c58  __TEXT,__text  ___swift_closure_destructor.78
+0x187165c5c  __TEXT,__text  ___swift_closure_destructor.78
+0x187165c60  __TEXT,__text  ___swift_closure_destructor.78
+0x187165c64  __TEXT,__text  ___swift_closure_destructor.78
+0x187165e44  __TEXT,__text  __swift_implicitisolationactor_to_executor_cast
+0x187165f48  __TEXT,__text  ___swift_closure_destructor.27
+0x187165f74  __TEXT,__text  ___swift_closure_destructor.27
+0x187165f84  __TEXT,__text  ___swift_closure_destructor.27
+0x187165fc0  __TEXT,__text  ___swift_closure_destructor.27
+0x187165fc4  __TEXT,__text  ___swift_closure_destructor.27
+0x187165fc8  __TEXT,__text  ___swift_closure_destructor.27
+0x187165fcc  __TEXT,__text  ___swift_closure_destructor.27
+0x187165fd0  __TEXT,__text  ___swift_closure_destructor.27
+0x187165fe0  __TEXT,__text  ___swift_closure_destructor.27
+0x187165fe4  __TEXT,__text  ___swift_closure_destructor.27
+0x187165fe8  __TEXT,__text  ___swift_closure_destructor.27
+0x187165fec  __TEXT,__text  ___swift_closure_destructor.22
+0x187165ffc  __TEXT,__text  ___swift_closure_destructor.22
+0x187166000  __TEXT,__text  ___swift_closure_destructor.18
+0x187166004  __TEXT,__text  ___swift_closure_destructor.18
+0x187166008  __TEXT,__text  ___swift_closure_destructor.18
+0x18716600c  __TEXT,__text  ___swift_closure_destructor.18
+0x187166158  __TEXT,__text  ___swift_closure_destructor.18
+0x187166168  __TEXT,__text  ___swift_closure_destructor.18
+0x18716619c  __TEXT,__text  ___swift_closure_destructor.18
+0x1871661a0  __TEXT,__text  ___swift_closure_destructor.18
+0x1871661d4  __TEXT,__text  ___swift_closure_destructor.18
+0x187166200  __TEXT,__text  ___swift_closure_destructor.18
+0x18716622c  __TEXT,__text  -[SFUnifiedBarItem setViewReuseIdentifier:]
+0x187166234  __TEXT,__text  -[SFBrowserController setProxy:]
+0x187166248  __TEXT,__text  -[SFUnifiedTabBarItem setUUID:]
+0x187166270  __TEXT,__text  -[SFUnifiedTabBarItem init]
+0x187166308  __TEXT,__text  -[SFUnifiedTabBarItem setTitle:]
+0x187166378  __TEXT,__text  -[SFUnifiedTabBarItem itemView]
+0x1871663dc  __TEXT,__text  -[SFUnifiedBarItem reusableView]
+0x1871663e4  __TEXT,__text  -[SFUnifiedBarItem setPinned:]
+0x1871663ec  __TEXT,__text  +[SFClusterSettingsItem viewReuseIdentifier]
+0x1871663f8  __TEXT,__text  ___47-[SFFeatureManager preferredCapsuleLayoutStyle]_block_invoke
+0x187166e88  __TEXT,__text  _block_copy_helper.80
+0x187166e8c  __TEXT,__text  _block_copy_helper.80
+0x187166e90  __TEXT,__text  _block_copy_helper.80
+0x187166e94  __TEXT,__text  _block_copy_helper.80
+0x187167ae0  __TEXT,__text  -[_SFBrowserWindowSettings privateBrowsingEnabledForWindowWithUUID:]
+0x187167af4  __TEXT,__text  -[_SFBrowserWindowSettings _boolValueForKey:windowUUID:]
+0x187167b2c  __TEXT,__text  -[_SFBrowserWindowSettings _numberForKey:windowUUID:]
+0x187167bac  __TEXT,__text  +[UIMenu(MobileSafariExtras) safari_menuWithTitle:image:identifier:options:uncachedChildrenProvider:]
+0x187167d20  __TEXT,__text  +[UIMenu(MobileSafariExtras) sf_bookmarkMenu]
+0x187167d48  __TEXT,__text  +[UIMenu(MobileSafariExtras) safari_menuWithTitle:image:identifier:options:cachedChildrenProvider:]
+0x187167ebc  __TEXT,__text  +[UIMenu(MobileSafariExtras) safari_menuWithTitle:uncachedChildrenProvider:]
+0x187167ed0  __TEXT,__text  +[UIMenu(MobileSafariExtras) safari_menuWithUncachedChildrenProvider:]
+0x1871680f4  __TEXT,__text  +[NSBundle(MobileSafariFrameworkExtras) sf_mobileSafariFrameworkBundle]
+0x187168130  __TEXT,__text  +[SFStoreBannerTracker sharedTracker]
+0x187168168  __TEXT,__text  +[SFStoreBannerTracker sharedTracker].cold.1
+0x18716817c  __TEXT,__text  ___37+[SFStoreBannerTracker sharedTracker]_block_invoke
+0x1871681ac  __TEXT,__text  +[SFHighlightBannerTracker sharedTracker]
+0x1871681e4  __TEXT,__text  +[SFHighlightBannerTracker sharedTracker].cold.1
+0x1871681f8  __TEXT,__text  ___41+[SFHighlightBannerTracker sharedTracker]_block_invoke
+0x187168228  __TEXT,__text  -[SFCapsulePageAdapter setLockdownStatusBar:]
+0x187168390  __TEXT,__text  -[SFCapsuleCollectionView setSelectedItemIndex:animated:]
+0x1871684fc  __TEXT,__text  -[SFCapsuleNavigationBar initForSizingWithFrame:layoutStyle:]
+0x187169060  __TEXT,__text  -[SFCapsulePageAdapter initWithItem:atIndex:selectedItemIndex:]
+0x1871690f0  __TEXT,__text  ___51-[SFCapsuleCollectionView updateSupplementaryViews]_block_invoke
+0x187169748  __TEXT,__text  -[SFCapsulePageAdapter capsuleHeightForWidth:defaultHeight:state:]
+0x187169e0c  __TEXT,__text  ___52-[SFCapsuleCollectionView _setIndexesOfLoadedViews:]_block_invoke
+0x187169eb8  __TEXT,__text  ___52-[SFCapsuleCollectionView _setIndexesOfLoadedViews:]_block_invoke_2
+0x187169f24  __TEXT,__text  ___SFFadeOutImage_block_invoke_2
+0x18716a018  __TEXT,__text  ___swift_closure_destructor.16
+0x18716a01c  __TEXT,__text  ___swift_closure_destructor.16
+0x18716a020  __TEXT,__text  ___swift_closure_destructor.16
+0x18716a04c  __TEXT,__text  ___swift_closure_destructor.16
+0x18716a050  __TEXT,__text  ___swift_closure_destructor.16
+0x18716a054  __TEXT,__text  ___swift_closure_destructor.16
+0x18716a080  __TEXT,__text  ___swift_closure_destructor.16
+0x18716a090  __TEXT,__text  ___swift_closure_destructor.16
+0x18716a0bc  __TEXT,__text  +[_SFBarTheme themeWithTheme:]
+0x18716a1d4  __TEXT,__text  -[SFCapsulePageLayoutHidden setBaseLayout:]
+0x18716a304  __TEXT,__text  -[SFCapsulePageLayoutBottomToolbarFocused .cxx_destruct]
+0x18716aad4  __TEXT,__text  -[UIView(SafariServicesExtras) sf_applyContentSizeCategoryLimitsForToolbarButton]
+0x18716ac90  __TEXT,__text  _CACornerRadiiMake
+0x18716af70  __TEXT,__text  -[SFCapsulePageAdapter .cxx_destruct]
+0x18716afa8  __TEXT,__text  -[UIView(SafariServicesExtras) _sf_usesLeftToRightLayout]
+0x18716afb8  __TEXT,__text  +[UIView(SafariServicesExtras) _sf_usesLeftToRightLayoutOnView:]
+0x18716aff8  __TEXT,__text  ___swift_noop_void_return
+0x18716b204  __TEXT,__text  +[SFVoiceSearchManager sharedManager]
+0x18716b23c  __TEXT,__text  +[SFVoiceSearchManager sharedManager].cold.1
+0x18716bd34  __TEXT,__text  _block_copy_helper.54
+0x18716bd38  __TEXT,__text  _block_copy_helper.54
+0x18716bedc  __TEXT,__text  _block_destroy_helper.55
+0x18716bee0  __TEXT,__text  _block_destroy_helper.55
+0x18716bee4  __TEXT,__text  ___swift_closure_destructor.52
+0x18716bee8  __TEXT,__text  ___swift_closure_destructor.52
+0x18716beec  __TEXT,__text  ___swift_closure_destructor.52
+0x18716bf18  __TEXT,__text  ___swift_closure_destructor.52
+0x18716bfd0  __TEXT,__text  _block_copy_helper
+0x18716bfe0  __TEXT,__text  _block_copy_helper
+0x18716bff0  __TEXT,__text  _block_copy_helper
+0x18716c000  __TEXT,__text  _block_copy_helper
+0x18716c010  __TEXT,__text  _block_copy_helper
+0x18716c020  __TEXT,__text  _block_copy_helper
+0x18716c030  __TEXT,__text  _block_copy_helper
+0x18716c040  __TEXT,__text  _block_copy_helper
+0x18716c050  __TEXT,__text  _block_copy_helper
+0x18716c060  __TEXT,__text  _block_copy_helper
+0x18716c070  __TEXT,__text  _block_copy_helper
+0x18716c080  __TEXT,__text  _block_copy_helper
+0x18716c090  __TEXT,__text  _block_copy_helper
+0x18716c0a0  __TEXT,__text  _block_copy_helper
+0x18716c0b0  __TEXT,__text  _block_copy_helper
+0x18716c0c0  __TEXT,__text  _block_copy_helper
+0x18716c0d0  __TEXT,__text  _block_copy_helper
+0x18716c0e0  __TEXT,__text  _block_copy_helper
+0x18716c0f0  __TEXT,__text  _block_copy_helper
+0x18716c100  __TEXT,__text  _block_copy_helper
+0x18716c110  __TEXT,__text  _block_copy_helper
+0x18716c120  __TEXT,__text  _block_copy_helper
+0x18716c130  __TEXT,__text  _block_copy_helper
+0x18716c140  __TEXT,__text  _block_copy_helper
+0x18716c150  __TEXT,__text  _block_copy_helper
+0x18716c160  __TEXT,__text  _block_copy_helper
+0x18716c170  __TEXT,__text  _block_copy_helper
+0x18716c180  __TEXT,__text  _block_copy_helper
+0x18716c190  __TEXT,__text  _block_copy_helper
+0x18716c1a0  __TEXT,__text  _block_copy_helper
+0x18716c1b0  __TEXT,__text  _block_copy_helper
+0x18716c1c0  __TEXT,__text  _block_copy_helper
+0x18716c1d0  __TEXT,__text  _block_copy_helper
+0x18716c1e0  __TEXT,__text  _block_copy_helper
+0x18716c1f0  __TEXT,__text  _block_copy_helper
+0x18716c200  __TEXT,__text  _block_copy_helper
+0x18716c210  __TEXT,__text  _block_copy_helper
+0x18716c220  __TEXT,__text  _block_copy_helper
+0x18716c230  __TEXT,__text  _block_copy_helper
+0x18716c240  __TEXT,__text  _block_copy_helper
+0x18716c250  __TEXT,__text  _block_copy_helper
+0x18716c260  __TEXT,__text  _block_copy_helper
+0x18716c270  __TEXT,__text  _block_copy_helper
+0x18716c280  __TEXT,__text  _block_copy_helper
+0x18716c290  __TEXT,__text  _block_copy_helper
+0x18716c2a0  __TEXT,__text  _block_copy_helper
+0x18716c2b0  __TEXT,__text  _block_copy_helper
+0x18716c2c0  __TEXT,__text  _block_copy_helper
+0x18716c2d0  __TEXT,__text  _block_copy_helper
+0x18716c2e0  __TEXT,__text  _block_copy_helper
+0x18716c2f0  __TEXT,__text  _block_copy_helper
+0x18716c300  __TEXT,__text  _block_copy_helper
+0x18716c310  __TEXT,__text  _block_copy_helper
+0x18716c320  __TEXT,__text  _block_copy_helper
+0x18716c330  __TEXT,__text  _block_copy_helper
+0x18716c340  __TEXT,__text  _block_copy_helper
+0x18716c350  __TEXT,__text  _block_copy_helper
+0x18716c360  __TEXT,__text  _block_copy_helper
+0x18716c370  __TEXT,__text  _block_copy_helper
+0x18716c380  __TEXT,__text  _block_copy_helper
+0x18716c390  __TEXT,__text  _block_copy_helper
+0x18716c3a0  __TEXT,__text  _block_copy_helper
+0x18716c3b0  __TEXT,__text  _block_copy_helper
+0x18716c3c0  __TEXT,__text  _block_copy_helper
+0x18716c3d0  __TEXT,__text  _block_copy_helper
+0x18716c3e0  __TEXT,__text  _block_copy_helper
+0x18716c3f0  __TEXT,__text  _block_copy_helper
+0x18716c400  __TEXT,__text  _block_copy_helper
+0x18716c410  __TEXT,__text  _block_copy_helper
+0x18716c420  __TEXT,__text  _block_copy_helper
+0x18716c430  __TEXT,__text  _block_copy_helper
+0x18716c440  __TEXT,__text  _block_copy_helper
+0x18716c450  __TEXT,__text  _block_copy_helper
+0x18716c460  __TEXT,__text  _block_copy_helper
+0x18716c470  __TEXT,__text  _block_copy_helper
+0x18716c480  __TEXT,__text  _block_copy_helper
+0x18716c490  __TEXT,__text  _block_copy_helper
+0x18716c4a0  __TEXT,__text  _block_copy_helper
+0x18716c4b0  __TEXT,__text  _block_copy_helper
+0x18716c4c0  __TEXT,__text  _block_copy_helper
+0x18716c4d0  __TEXT,__text  _block_copy_helper
+0x18716c4e0  __TEXT,__text  _block_copy_helper
+0x18716c4f0  __TEXT,__text  _block_copy_helper
+0x18716c500  __TEXT,__text  _block_copy_helper
+0x18716c510  __TEXT,__text  _block_copy_helper
+0x18716c520  __TEXT,__text  _block_copy_helper
+0x18716c530  __TEXT,__text  _block_copy_helper
+0x18716c540  __TEXT,__text  _block_copy_helper
+0x18716c5a0  __TEXT,__text  __swift_stdlib_malloc_size
+0x18716c78c  __TEXT,__text  ___swift_instantiateConcreteTypeFromMangledNameAbstractV2
+0x18716dcf4  __TEXT,__text  _block_copy_helper.23
+0x18716dcf8  __TEXT,__text  _block_copy_helper.23
+0x18716dcfc  __TEXT,__text  _block_copy_helper.23
+0x18716de48  __TEXT,__text  ___32-[SFCapsuleView setContentView:]_block_invoke
+0x18716e02c  __TEXT,__text  ___swift_memcpy32_8
+0x18716e604  __TEXT,__text  +[UIImageSymbolConfiguration(SafariServicesExtras) safari_barButtonConfiguration]
+0x18716e680  __TEXT,__text  ___SFFadeOutImage_block_invoke
+0x18716e6b4  __TEXT,__text  +[UIImageSymbolConfiguration(SafariServicesExtras) safari_URLFieldButtonConfiguration]
+0x18716e730  __TEXT,__text  -[UIView(_SFBarItem) sf_configureLargeContentViewerForBarItem:]
+0x18716e7d4  __TEXT,__text  ___32-[SFCapsuleView setContentView:]_block_invoke_2
+0x18716f1dc  __TEXT,__text  _SFFadeOutImage.cold.1
+0x18716f1f0  __TEXT,__text  -[SFURLLabel _updateFadeOutImage]
+0x18716f268  __TEXT,__text  -[SFCapsuleNavigationBar _updateButtonAlphaForMinimizedPercent:]
+0x18716f888  __TEXT,__text  -[SFURLLabel initWithFadeOutDistance:]
+0x18716fa98  __TEXT,__text  -[SFURLLabel _updateSize]
+0x18716fb84  __TEXT,__text  -[NSLayoutConstraint(MobileSafariFrameworkExtras) sf_withPriority:]
+0x18716fbdc  __TEXT,__text  ___38-[_SFFluidProgressView layoutSubviews]_block_invoke
+0x18716fd90  __TEXT,__text  ___61-[SFUnifiedTabBarItemTitleContainerView intrinsicContentSize]_block_invoke_2
+0x18716fe64  __TEXT,__text  -[SFCapsuleNavigationBarTheme _titleThemeIsMinimized:]
+0x18716ff5c  __TEXT,__text  -[SFCapsuleNavigationBar _updateProgressViewFillColor]
+0x187170078  __TEXT,__text  -[SFCapsuleNavigationBar _updatePageFormatButtonForNavigationBarItem:shouldResetDiscovery:]
+0x1871702b8  __TEXT,__text  ___58-[SFCapsuleNavigationBar _createTrailingButtonConstraints]_block_invoke
+0x187170480  __TEXT,__text  -[SFCapsuleNavigationBar updateConstraints]
+0x1871707b8  __TEXT,__text  ___43-[SFCapsuleNavigationBar updateConstraints]_block_invoke
+0x187170e74  __TEXT,__text  ___swift_closure_destructor.47
+0x187170e84  __TEXT,__text  ___swift_closure_destructor.47
+0x187170eb0  __TEXT,__text  ___swift_closure_destructor.47
+0x187170edc  __TEXT,__text  ___swift_closure_destructor.47
+0x187170ee0  __TEXT,__text  ___swift_closure_destructor.47
+0x187170ee4  __TEXT,__text  ___swift_closure_destructor.42
+0x187170ee8  __TEXT,__text  ___swift_closure_destructor.42
+0x187171014  __TEXT,__text  ___swift_closure_destructor.42
+0x187171018  __TEXT,__text  ___swift_closure_destructor.38
+0x187171044  __TEXT,__text  ___swift_closure_destructor.38
+0x187171048  __TEXT,__text  ___swift_closure_destructor.38
+0x18717104c  __TEXT,__text  ___swift_closure_destructor.45Tm
+0x18717104c  __TEXT,__text  ___swift_closure_destructor.45Tm
+0x18717104c  __TEXT,__text  ___swift_closure_destructor.45Tm
+0x187173a38  __TEXT,__text  ___swift_closure_destructor
+0x187173af4  __TEXT,__text  ___swift_closure_destructor
+0x187173b20  __TEXT,__text  ___swift_closure_destructor
+0x187173b4c  __TEXT,__text  ___swift_closure_destructor
+0x187173b78  __TEXT,__text  ___swift_closure_destructor
+0x187173ba4  __TEXT,__text  ___swift_closure_destructor
+0x187173ba8  __TEXT,__text  ___swift_closure_destructor
+0x187173bd4  __TEXT,__text  ___swift_closure_destructor
+0x187173c00  __TEXT,__text  ___swift_closure_destructor
+0x187173c2c  __TEXT,__text  ___swift_closure_destructor
+0x187173c58  __TEXT,__text  ___swift_closure_destructor
+0x187173c8c  __TEXT,__text  ___swift_closure_destructor
+0x187173cb8  __TEXT,__text  ___swift_closure_destructor
+0x187173ce4  __TEXT,__text  ___swift_closure_destructor
+0x187173d10  __TEXT,__text  ___swift_closure_destructor
+0x187173d3c  __TEXT,__text  ___swift_closure_destructor
+0x187173d68  __TEXT,__text  ___swift_closure_destructor
+0x187173d6c  __TEXT,__text  ___swift_closure_destructor
+0x187173d98  __TEXT,__text  ___swift_closure_destructor
+0x187173dc4  __TEXT,__text  ___swift_closure_destructor
+0x187173df0  __TEXT,__text  ___swift_closure_destructor
+0x187173e1c  __TEXT,__text  ___swift_closure_destructor
+0x187173e48  __TEXT,__text  ___swift_closure_destructor
+0x187173e74  __TEXT,__text  ___swift_closure_destructor
+0x187173ea8  __TEXT,__text  ___swift_closure_destructor
+0x187173ed4  __TEXT,__text  ___swift_closure_destructor
+0x187173f00  __TEXT,__text  ___swift_closure_destructor
+0x187173f2c  __TEXT,__text  ___swift_closure_destructor
+0x187173f58  __TEXT,__text  ___swift_closure_destructor
+0x187173f84  __TEXT,__text  ___swift_closure_destructor
+0x187173fb0  __TEXT,__text  ___swift_closure_destructor
+0x187173ff4  __TEXT,__text  ___swift_closure_destructor
+0x187174038  __TEXT,__text  ___swift_closure_destructor
+0x187174064  __TEXT,__text  ___swift_closure_destructor
+0x187174098  __TEXT,__text  ___swift_closure_destructor
+0x1871740c4  __TEXT,__text  ___swift_closure_destructor
+0x187174100  __TEXT,__text  ___swift_closure_destructor
+0x18717412c  __TEXT,__text  ___swift_closure_destructor
+0x187174158  __TEXT,__text  ___swift_closure_destructor
+0x187174184  __TEXT,__text  ___swift_closure_destructor
+0x1871741b0  __TEXT,__text  ___swift_closure_destructor
+0x1871741dc  __TEXT,__text  ___swift_closure_destructor
+0x187174210  __TEXT,__text  ___swift_closure_destructor
+0x187174214  __TEXT,__text  ___swift_closure_destructor
+0x187174240  __TEXT,__text  ___swift_closure_destructor
+0x18717426c  __TEXT,__text  ___swift_closure_destructor
+0x18717427c  __TEXT,__text  ___swift_closure_destructor
+0x1871742b0  __TEXT,__text  ___swift_closure_destructor
+0x1871742dc  __TEXT,__text  ___swift_closure_destructor
+0x187174308  __TEXT,__text  ___swift_closure_destructor
+0x187174318  __TEXT,__text  ___swift_closure_destructor
+0x18717434c  __TEXT,__text  ___swift_closure_destructor
+0x187174390  __TEXT,__text  ___swift_closure_destructor
+0x1871743c4  __TEXT,__text  ___swift_closure_destructor
+0x1871743f0  __TEXT,__text  ___swift_closure_destructor
+0x187174494  __TEXT,__text  ___swift_closure_destructor
+0x1871744c0  __TEXT,__text  ___swift_closure_destructor
+0x1871744ec  __TEXT,__text  ___swift_closure_destructor
+0x187174528  __TEXT,__text  ___swift_closure_destructor
+0x187174554  __TEXT,__text  ___swift_closure_destructor
+0x187174580  __TEXT,__text  ___swift_closure_destructor
+0x1871745ac  __TEXT,__text  ___swift_closure_destructor
+0x1871745d8  __TEXT,__text  ___swift_closure_destructor
+0x187174604  __TEXT,__text  ___swift_closure_destructor
+0x187174638  __TEXT,__text  ___swift_closure_destructor
+0x187174664  __TEXT,__text  ___swift_closure_destructor
+0x187174690  __TEXT,__text  ___swift_closure_destructor
+0x187174694  __TEXT,__text  ___swift_closure_destructor
+0x1871746c0  __TEXT,__text  ___swift_closure_destructor
+0x1871746ec  __TEXT,__text  ___swift_closure_destructor
+0x187174718  __TEXT,__text  ___swift_closure_destructor
+0x187174a6c  __TEXT,__text  ___swift_closure_destructor
+0x187174a98  __TEXT,__text  ___swift_closure_destructor
+0x187174ad4  __TEXT,__text  ___swift_closure_destructor
+0x187174b08  __TEXT,__text  ___swift_closure_destructor
+0x187174b34  __TEXT,__text  ___swift_closure_destructor
+0x187174b60  __TEXT,__text  ___swift_closure_destructor
+0x187174b8c  __TEXT,__text  ___swift_closure_destructor
+0x187174b90  __TEXT,__text  ___swift_closure_destructor
+0x187174bbc  __TEXT,__text  ___swift_closure_destructor
+0x187174be8  __TEXT,__text  ___swift_closure_destructor
+0x187174c1c  __TEXT,__text  ___swift_closure_destructor
+0x187174c48  __TEXT,__text  ___swift_closure_destructor
+0x187174c74  __TEXT,__text  ___swift_closure_destructor
+0x187174ca0  __TEXT,__text  ___swift_closure_destructor
+0x187174cd4  __TEXT,__text  ___swift_closure_destructor
+0x187174d00  __TEXT,__text  ___swift_closure_destructor
+0x187174d2c  __TEXT,__text  ___swift_closure_destructor
+0x187174d58  __TEXT,__text  ___swift_closure_destructor
+0x187174e74  __TEXT,__text  ___swift_closure_destructor
+0x187174ea0  __TEXT,__text  ___swift_closure_destructor
+0x187174eb0  __TEXT,__text  ___swift_closure_destructor
+0x187174edc  __TEXT,__text  ___swift_closure_destructor
+0x187174f08  __TEXT,__text  ___swift_closure_destructor
+0x187174f0c  __TEXT,__text  ___swift_closure_destructor
+0x187174f38  __TEXT,__text  ___swift_closure_destructor
+0x1871750a8  __TEXT,__text  ___swift_closure_destructor
+0x1871750d4  __TEXT,__text  ___swift_closure_destructor
+0x187175194  __TEXT,__text  ___swift_closure_destructor
+0x1871751c8  __TEXT,__text  ___swift_closure_destructor
+0x187175204  __TEXT,__text  ___swift_closure_destructor
+0x187175230  __TEXT,__text  ___swift_closure_destructor
+0x18717525c  __TEXT,__text  ___swift_closure_destructor
+0x187175290  __TEXT,__text  ___swift_closure_destructor
+0x1871752bc  __TEXT,__text  ___swift_closure_destructor
+0x1871752cc  __TEXT,__text  ___swift_closure_destructor
+0x187175300  __TEXT,__text  ___swift_closure_destructor
+0x18717532c  __TEXT,__text  ___swift_closure_destructor
+0x187175330  __TEXT,__text  ___swift_closure_destructor
+0x187175334  __TEXT,__text  ___swift_closure_destructor
+0x187175360  __TEXT,__text  ___swift_closure_destructor
+0x18717539c  __TEXT,__text  ___swift_closure_destructor
+0x1871753b4  __TEXT,__text  ___swift_closure_destructor
+0x1871753e0  __TEXT,__text  ___swift_closure_destructor
+0x1871753f0  __TEXT,__text  ___swift_closure_destructor
+0x18717541c  __TEXT,__text  ___swift_closure_destructor
+0x187175448  __TEXT,__text  ___swift_closure_destructor
+0x187175474  __TEXT,__text  ___swift_closure_destructor
+0x187175484  __TEXT,__text  ___swift_closure_destructor
+0x1871754b0  __TEXT,__text  ___swift_closure_destructor
+0x1871754dc  __TEXT,__text  ___swift_closure_destructor
+0x187175508  __TEXT,__text  ___swift_closure_destructor
+0x18717550c  __TEXT,__text  ___swift_closure_destructor
+0x187175538  __TEXT,__text  ___swift_closure_destructor
+0x18717556c  __TEXT,__text  ___swift_closure_destructor
+0x187175598  __TEXT,__text  ___swift_closure_destructor
+0x1871755dc  __TEXT,__text  ___swift_closure_destructor
+0x187175608  __TEXT,__text  ___swift_closure_destructor
+0x18717563c  __TEXT,__text  ___swift_closure_destructor
+0x187175a08  __TEXT,__text  ___swift_closure_destructor.260
+0x187175a0c  __TEXT,__text  ___swift_closure_destructor.260
+0x1871776dc  __TEXT,__text  ___swift_closure_destructor.467
+0x1871776e0  __TEXT,__text  ___swift_closure_destructor.464
+0x1871776e4  __TEXT,__text  ___swift_closure_destructor.464
+0x187177788  __TEXT,__text  -[SFUnifiedTabBarItemTitleContainerViewTheme init]
+0x18717780c  __TEXT,__text  ___54-[SFUnifiedTabBarItemTitleContainerView setCollapsed:]_block_invoke
+0x187177814  __TEXT,__text  -[UIApplication(MobileSafariFrameworkExtras) safari_currentKeyboardInputIsRTL]
+0x187177974  __TEXT,__text  ___78-[UIApplication(MobileSafariFrameworkExtras) safari_currentKeyboardInputIsRTL]_block_invoke
+0x187177a4c  __TEXT,__text  -[UIApplication(MobileSafariFrameworkExtras) safari_prefersRTLLayout]
+0x18717883c  __TEXT,__text  ___61-[SFUnifiedTabBarItemTitleContainerView intrinsicContentSize]_block_invoke
+0x187178848  __TEXT,__text  -[SFCapsuleNavigationBar item]
+0x18717888c  __TEXT,__text  -[SFBannerTheme .cxx_destruct]
+0x1871792ac  __TEXT,__text  +[SFFeatureManager supportsWebpageStatusBar]
+0x1871792b0  __TEXT,__text  ___61-[SFUnifiedTabBarItemTitleContainerView _layoutArrangedViews]_block_invoke_5
+0x18717a4b8  __TEXT,__text  -[UIView(SafariGraphicsUtilities) ss_setUntransformedFrame:]
+0x18717af04  __TEXT,__text  +[UIView(SafariGraphicsUtilities) sf_animate:usingDefaultTimingWithOptions:animations:completion:]
+0x18717b408  __TEXT,__text  -[SFUnifiedTabBarItemTitleContainerView _spacingBetweenView:nextView:]
+0x18717b570  __TEXT,__text  -[SFUnifiedTabBarItemTitleContainerView _layoutArrangedViews]
+0x18717bb40  __TEXT,__text  ___46-[SFCapsuleView setAccessoryView:coordinator:]_block_invoke
+0x18717bbe4  __TEXT,__text  ___37-[SFCapsuleCollectionView reloadData]_block_invoke_2
+0x18717bc50  __TEXT,__text  -[SFThemeColorEffectView _updateFillColor]
+0x18717bd0c  __TEXT,__text  ___78-[UIApplication(MobileSafariFrameworkExtras) safari_currentKeyboardInputIsRTL]_block_invoke_3
+0x18717bd1c  __TEXT,__text  +[UITraitCollection(MobileSafariExtras) safari_setVerticalBarRectEdge:matchingTraits:]
+0x18717c054  __TEXT,__text  -[SFFaviconView setTrailingInset:]
+0x18717c0ac  __TEXT,__text  -[SFCapsuleView setAccessoryView:coordinator:]
+0x18717c3e4  __TEXT,__text  -[UITraitCollection(MobileSafariExtras) sf_verticalBarRectEdge]
+0x18717c4e8  __TEXT,__text  -[SFURLLabel layoutSubviews]
+0x18717c878  __TEXT,__text  ___61-[SFUnifiedTabBarItemTitleContainerView _layoutArrangedViews]_block_invoke_2
+0x18717c898  __TEXT,__text  ___61-[SFUnifiedTabBarItemTitleContainerView _layoutArrangedViews]_block_invoke_4
+0x18717cc90  __TEXT,__text  ___61-[SFUnifiedTabBarItemTitleContainerView _layoutArrangedViews]_block_invoke_7
+0x18717cd18  __TEXT,__text  +[_SFFluidProgressView progressBarHeightWithPreferredStyle:]
+0x18717cd38  __TEXT,__text  ___61-[SFUnifiedTabBarItemTitleContainerView _layoutArrangedViews]_block_invoke_6
+0x18717cdf4  __TEXT,__text  ___70-[SFUnifiedTabBarItemTitleContainerView _spacingBetweenView:nextView:]_block_invoke
+0x18717ce18  __TEXT,__text  ___61-[SFUnifiedTabBarItemTitleContainerView _layoutArrangedViews]_block_invoke
+0x18717d030  __TEXT,__text  ___48-[SFFaviconView _updateIconBackingColorAndInset]_block_invoke
+0x18717d624  __TEXT,__text  ___59-[SFUnifiedTabBarItemTitleContainerView initWithAlignment:]_block_invoke
+0x18717d6a8  __TEXT,__text  ___57-[SFCapsuleNavigationBar _createLeadingButtonConstraints]_block_invoke
+0x18717d974  __TEXT,__text  -[SFCapsulePageAdapter lockdownStatusBar]
+0x18717d97c  __TEXT,__text  -[SFCapsulePageAdapter preferredSizeForSupplementaryWithIdentifier:fittingSize:horizontalFittingPriority:verticalFittingPriority:]
+0x18717da20  __TEXT,__text  -[SFCapsulePageAdapter preferredCapsuleSizeForState:]
+0x18717dac0  __TEXT,__text  -[SFCapsuleNavigationBar _updateShowsPrivateAnnotation]
+0x18717db30  __TEXT,__text  -[UIView(SafariServicesExtras) _sf_setOrderedSubviews:count:]
+0x18717ddc0  __TEXT,__text  ___45-[SFCapsuleCollectionView layOutContentViews]_block_invoke
+0x18717de3c  __TEXT,__text  -[SFCapsulePageAdapter isSelected]
+0x18717de64  __TEXT,__text  -[SFCapsuleCollectionView infoWithEffectiveLayoutExemptFromHidden:inBlock:]
+0x18717e4a4  __TEXT,__text  ___48-[SFCapsuleCollectionView infoForCapsuleOnPage:]_block_invoke
+0x18717e4b0  __TEXT,__text  -[SFCapsulePageAdapter itemIndex]
+0x18717e814  __TEXT,__text  ___69-[SFCapsuleCollectionView infoForSupplementaryWithIdentifier:onPage:]_block_invoke
+0x18717ec3c  __TEXT,__text  ___68-[SFCapsuleCollectionView _layOutItems:atIndexes:selectedItemIndex:]_block_invoke_3
+0x18717ee70  __TEXT,__text  ___41-[SFCapsuleCollectionView layoutSubviews]_block_invoke
+0x187180af0  __TEXT,__text  ___swift_allocate_value_buffer
+0x187180b40  __TEXT,__text  ___swift_project_value_buffer
+0x187181d5c  __TEXT,__text  ___swift_closure_destructor.175
+0x187185b14  __TEXT,__text  ___75+[UIView(SafariServicesExtras) safari_performWithoutRetargetingAnimations:]_block_invoke
+0x187185f7c  __TEXT,__text  ___67-[SFCapsuleCollectionView obscuredInsetsForState:ignoringKeyboard:]_block_invoke
+0x187185fbc  __TEXT,__text  -[UIView(SafariServicesExtras) _sf_isFullScreenWidth]
+0x187187cfc  __TEXT,__text  ___swift_closure_destructor.123
+0x187187d28  __TEXT,__text  ___swift_closure_destructor.123
+0x187187d2c  __TEXT,__text  ___swift_closure_destructor.123
+0x187187d30  __TEXT,__text  ___swift_closure_destructor.123
+0x187187e18  __TEXT,__text  ___swift_mutable_project_boxed_opaque_existential_1
+0x1871893d4  __TEXT,__text  ___swift_project_boxed_opaque_existential_1Tm
+0x1871893d4  __TEXT,__text  ___swift_project_boxed_opaque_existential_1Tm
+0x1871893d4  __TEXT,__text  ___swift_project_boxed_opaque_existential_1Tm
+0x1871893d4  __TEXT,__text  ___swift_project_boxed_opaque_existential_1Tm
+0x1871893d4  __TEXT,__text  ___swift_project_boxed_opaque_existential_1Tm
+0x187189798  __TEXT,__text  __SFDeviceHasHomeButton.cold.1
+0x187189798  __TEXT,__text  __SFDeviceHasHomeButton.cold.1
+0x18718979c  __TEXT,__text  ___swift_closure_destructor.130
+0x187189864  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x187189874  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x187189888  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x187189898  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1871898a4  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1871898b8  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1871898cc  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1871898e0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x1871898f0  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x187189900  __TEXT,__text  _OUTLINED_FUNCTION_1
+0x187189acc  __TEXT,__text  -[SFCapsuleCollectionView performIgnoringKeyboard:]
+0x187189cb8  __TEXT,__text  _UIEdgeInsetsInsetRect
+0x187189cd4  __TEXT,__text  _UIEdgeInsetsInsetRect
+0x187189ce8  __TEXT,__text  _UIEdgeInsetsInsetRect
+0x187189d5c  __TEXT,__text  -[SFCapsuleCollectionView layOutSupplementaryViews]
+0x18718a2b8  __TEXT,__text  ___51-[SFCapsuleCollectionView layOutSupplementaryViews]_block_invoke
+0x18718a35c  __TEXT,__text  ___51-[SFCapsuleCollectionView layOutSupplementaryViews]_block_invoke_2
+0x18718a4c4  __TEXT,__text  ___68-[SFCapsuleCollectionView _layOutItems:atIndexes:selectedItemIndex:]_block_invoke
+0x18718a510  __TEXT,__text  ___68-[SFCapsuleCollectionView _layOutItems:atIndexes:selectedItemIndex:]_block_invoke_4
+0x18718a8d0  __TEXT,__text  -[SFCapsuleCollectionView _selectedItemContentMinimizationPercent]
+0x18718a8f8  __TEXT,__text  -[UIView(SafariGraphicsUtilities) ss_untransformedFrame]
+0x18718a97c  __TEXT,__text  ___68-[SFCapsuleCollectionView _layOutItems:atIndexes:selectedItemIndex:]_block_invoke_2
+0x18718ab68  __TEXT,__text  ___46-[SFCapsuleCollectionView _updateCapsuleAlpha]_block_invoke_2
+0x18718ac70  __TEXT,__text  ___46-[SFCapsuleCollectionView _updateCapsuleAlpha]_block_invoke_3
+0x18718ac88  __TEXT,__text  ___46-[SFCapsuleCollectionView _updateCapsuleAlpha]_block_invoke
+0x18718ae98  __TEXT,__text  ___51-[SFCapsuleCollectionView _updateContentBlurRadius]_block_invoke
+0x18718bd2c  __TEXT,__text  ___swift_closure_destructor.274
+0x18718bd3c  __TEXT,__text  ___swift_closure_destructor.274
+0x18718bd40  __TEXT,__text  ___swift_closure_destructor.274
+0x18718bd6c  __TEXT,__text  ___swift_closure_destructor.270
+0x18718bd70  __TEXT,__text  ___swift_closure_destructor.270
+0x18718be30  __TEXT,__text  ___swift_closure_destructor.270
+0x18718bec0  __TEXT,__text  _block_copy_helper.331
+0x18718bec4  __TEXT,__text  _block_copy_helper.626
+0x18718c35c  __TEXT,__text  -[SFUnifiedTabBarItemTitleContainerView _alphaForView:]
+0x18718c3c4  __TEXT,__text  ___swift_closure_destructor.188
+0x18718c3c8  __TEXT,__text  ___swift_closure_destructor.188
+0x18718c428  __TEXT,__text  -[SFURLLabel _updateMask]
+0x18718c644  __TEXT,__text  ____SFDeviceHasHomeButton_block_invoke
+0x18718cbe4  __TEXT,__text  ___swift_closure_destructor.195
+0x18718cbe8  __TEXT,__text  ___swift_closure_destructor.195
+0x18718cbec  __TEXT,__text  ___swift_closure_destructor.195
+0x18718cbfc  __TEXT,__text  ___swift_closure_destructor.195
+0x18718cc00  __TEXT,__text  _block_copy_helper.198
+0x18718cc04  __TEXT,__text  _block_copy_helper.198
+0x18718cd68  __TEXT,__text  ___swift_closure_destructor.191
+0x18718cd6c  __TEXT,__text  ___swift_closure_destructor.191
+0x18718cd70  __TEXT,__text  _block_destroy_helper.199
+0x18718cd74  __TEXT,__text  _block_destroy_helper.199
+0x18718cd9c  __TEXT,__text  ___swift_closure_destructor.126
+0x18718cdd0  __TEXT,__text  ___swift_closure_destructor.126
+0x18718cdd4  __TEXT,__text  ___swift_closure_destructor.126
+0x18718cde4  __TEXT,__text  ___swift_closure_destructor.126
+0x18718cde8  __TEXT,__text  ___swift_closure_destructor.126
+0x18718cfd8  __TEXT,__text  _block_copy_helper.597
+0x18718d16c  __TEXT,__text  -[SFURLLabel _minimumScaleFactor]
+0x18718d240  __TEXT,__text  ___61-[UIView(SafariServicesExtras) _sf_setOrderedSubviews:count:]_block_invoke
+0x18718d2b8  __TEXT,__text  -[UIViewController(MobileSafariFrameworkExtras) safari_updateApplicationBackgroundStyle]
+0x187190d14  __TEXT,__text  _block_copy_helper.243
+0x187191498  __TEXT,__text  _block_copy_helper.248
+0x1871922cc  __TEXT,__text  _block_copy_helper.235
+0x187193cc0  __TEXT,__text  +[UIFont(MobileSafariFrameworkExtras) safari_monospacedDigitFontForTextStyle:]
+0x187193d34  __TEXT,__text  +[UIFont(MobileSafariFrameworkExtras) safari_fontDescriptorWithMonospacedDigitAttributes:]
+0x187193e6c  __TEXT,__text  +[UIImage(MobileSafariFrameworkExtras) sf_imageNamed:]
+0x187196aa4  __TEXT,__text  ___swift_closure_destructor.154
+0x187196aa8  __TEXT,__text  ___swift_closure_destructor.154
+0x187196aac  __TEXT,__text  ___swift_closure_destructor.154
+0x187196ad8  __TEXT,__text  ___swift__destructor
+0x187196b04  __TEXT,__text  ___swift__destructor
+0x187196b30  __TEXT,__text  ___swift__destructor
+0x187196b5c  __TEXT,__text  ___swift__destructor
+0x187196b88  __TEXT,__text  ___swift__destructor
+0x187196bb4  __TEXT,__text  ___swift__destructor
+0x187196be0  __TEXT,__text  ___swift__destructor
+0x187196c0c  __TEXT,__text  ___swift__destructor
+0x187196c38  __TEXT,__text  ___swift__destructor
+0x187196c64  __TEXT,__text  ___swift__destructor
+0x187196c90  __TEXT,__text  ___swift__destructor
+0x187196cbc  __TEXT,__text  ___swift__destructor
+0x187196ce8  __TEXT,__text  ___swift__destructor
+0x187196d14  __TEXT,__text  ___swift__destructor
+0x187196d40  __TEXT,__text  ___swift__destructor
+0x187196d6c  __TEXT,__text  ___swift__destructor
+0x187196d98  __TEXT,__text  ___swift__destructor
+0x187196dc4  __TEXT,__text  ___swift__destructor
+0x187196df0  __TEXT,__text  ___swift__destructor
+0x187196e1c  __TEXT,__text  ___swift__destructor
+0x187196e48  __TEXT,__text  ___swift__destructor
+0x187196e74  __TEXT,__text  ___swift__destructor
+0x187196ea0  __TEXT,__text  ___swift__destructor
+0x187196ecc  __TEXT,__text  ___swift__destructor
+0x187196ef8  __TEXT,__text  ___swift__destructor
+0x187196f24  __TEXT,__text  ___swift__destructor
+0x187196f50  __TEXT,__text  ___swift__destructor
+0x187196f7c  __TEXT,__text  ___swift__destructor
+0x187196fa8  __TEXT,__text  ___swift__destructor
+0x187196fd4  __TEXT,__text  ___swift__destructor
+0x187197000  __TEXT,__text  ___swift__destructor
+0x18719702c  __TEXT,__text  ___swift__destructor
+0x187197058  __TEXT,__text  ___swift__destructor
+0x187197084  __TEXT,__text  ___swift__destructor
+0x1871970b0  __TEXT,__text  ___swift__destructor
+0x1871970dc  __TEXT,__text  ___swift__destructor
+0x187197108  __TEXT,__text  ___swift__destructor
+0x187197134  __TEXT,__text  ___swift__destructor
+0x187197160  __TEXT,__text  ___swift__destructor
+0x18719718c  __TEXT,__text  ___swift__destructor
+0x1871971b8  __TEXT,__text  ___swift__destructor
+0x1871971e4  __TEXT,__text  ___swift__destructor
+0x187197210  __TEXT,__text  ___swift__destructor
+0x18719723c  __TEXT,__text  ___swift__destructor
+0x187197268  __TEXT,__text  ___swift__destructor
+0x187197294  __TEXT,__text  ___swift__destructor
+0x1871972c0  __TEXT,__text  ___swift__destructor
+0x1871972ec  __TEXT,__text  ___swift__destructor
+0x187197318  __TEXT,__text  ___swift__destructor
+0x187197344  __TEXT,__text  ___swift__destructor
+0x187197370  __TEXT,__text  ___swift__destructor
+0x18719739c  __TEXT,__text  ___swift__destructor
+0x1871973c8  __TEXT,__text  ___swift__destructor
+0x1871973f4  __TEXT,__text  ___swift__destructor
+0x187197420  __TEXT,__text  ___swift__destructor
+0x18719744c  __TEXT,__text  ___swift__destructor
+0x187197478  __TEXT,__text  ___swift__destructor
+0x1871974a4  __TEXT,__text  ___swift__destructor
+0x1871974d0  __TEXT,__text  ___swift__destructor
+0x1871974fc  __TEXT,__text  ___swift__destructor
+0x187197528  __TEXT,__text  ___swift__destructor
+0x187197554  __TEXT,__text  ___swift__destructor
+0x187197580  __TEXT,__text  ___swift__destructor
+0x1871975ac  __TEXT,__text  ___swift__destructor
+0x1871975d8  __TEXT,__text  ___swift__destructor
+0x187197604  __TEXT,__text  ___swift__destructor
+0x187197630  __TEXT,__text  ___swift__destructor
+0x18719765c  __TEXT,__text  ___swift__destructor
+0x187197688  __TEXT,__text  ___swift__destructor
+0x1871976b4  __TEXT,__text  ___swift__destructor
+0x1871976e0  __TEXT,__text  ___swift__destructor
+0x18719770c  __TEXT,__text  ___swift__destructor
+0x187197738  __TEXT,__text  ___swift__destructor
+0x187197820  __TEXT,__text  ___swift__destructor.157
+0x187197824  __TEXT,__text  ___swift_exist.box.addr_destructor
+0x187197834  __TEXT,__text  ___swift_exist.box.addr_destructor
+0x1871978b0  __TEXT,__text  ___swift_exist.box.addr_destructor
+0x18719792c  __TEXT,__text  ___swift_exist.box.addr_destructor
+0x18719793c  __TEXT,__text  ___swift_exist.box.addr_destructor
+0x187197970  __TEXT,__text  ___swift_exist.box.addr_destructor
+0x1871979a4  __TEXT,__text  ___swift_exist.box.addr_destructor
+0x1871979e8  __TEXT,__text  ___swift_exist.box.addr_destructor
+0x1871979ec  __TEXT,__text  ___swift_exist.box.addr_destructor
+0x187197a30  __TEXT,__text  ___swift_exist.box.addr_destructor
+0x187197a64  __TEXT,__text  ___swift_exist.box.addr_destructor
+0x187197a68  __TEXT,__text  ___swift_exist.box.addr_destructor
+0x187197a9c  __TEXT,__text  ___swift_exist.box.addr_destructor
+0x187197aa0  __TEXT,__text  ___swift_exist.box.addr_destructor
+0x187197ab0  __TEXT,__text  ___swift_exist.box.addr_destructor
+0x187197b28  __TEXT,__text  ___swift_exist.box.addr_destructor
+0x187197b2c  __TEXT,__text  ___swift_closure_destructor.101
+0x187197b30  __TEXT,__text  ___swift_closure_destructor.101
+0x187197b40  __TEXT,__text  ___swift_closure_destructor.57Tm
+0x187197b40  __TEXT,__text  ___swift_closure_destructor.57Tm
+0x187197b40  __TEXT,__text  ___swift_closure_destructor.57Tm
+0x187197b40  __TEXT,__text  ___swift_closure_destructor.57Tm
+0x187197b40  __TEXT,__text  ___swift_closure_destructor.57Tm
+0x187197b40  __TEXT,__text  ___swift_closure_destructor.57Tm
+0x187197b40  __TEXT,__text  ___swift_closure_destructor.57Tm
+0x187197b40  __TEXT,__text  ___swift_closure_destructor.57Tm
+0x187197b40  __TEXT,__text  ___swift_closure_destructor.57Tm
+0x187197b40  __TEXT,__text  ___swift_closure_destructor.57Tm
+0x187197b40  __TEXT,__text  ___swift_closure_destructor.57Tm
+0x187197b74  __TEXT,__text  ___swift_closure_destructor.57Tm
+0x187197ba8  __TEXT,__text  ___swift_closure_destructor.238
+0x187197bac  __TEXT,__text  ___swift_closure_destructor.238
+0x18719a49c  __TEXT,__text  _block_copy_helper.13
+0x18719a4a0  __TEXT,__text  _block_copy_helper.13
+0x18719a5f8  __TEXT,__text  ___swift_closure_destructor.11
+0x18719a5fc  __TEXT,__text  ___swift_closure_destructor.11
+0x18719a600  __TEXT,__text  ___swift_closure_destructor.11
+0x18719a62c  __TEXT,__text  ___swift_closure_destructor.11
+0x18719a658  __TEXT,__text  ___swift_closure_destructor.11
+0x18719a68c  __TEXT,__text  ___swift_closure_destructor.11
+0x18719a6b8  __TEXT,__text  ___swift_closure_destructor.11
+0x18719a6e4  __TEXT,__text  ___swift_closure_destructor.11
+0x18719a6e8  __TEXT,__text  ___swift_closure_destructor.11
+0x18719a6ec  __TEXT,__text  ___swift_closure_destructor.11
+0x18719a6f0  __TEXT,__text  ___swift_closure_destructor.11
+0x18719a71c  __TEXT,__text  ___swift_closure_destructor.11
+0x18719a720  __TEXT,__text  ___swift_closure_destructor.11
+0x18719a730  __TEXT,__text  ___swift_closure_destructor.11
+0x18719daa4  __TEXT,__text  +[SFTraitVerticalBarRectEdge name]
+0x1871a11e8  __TEXT,__text  ___swift_instantiateGenericMetadata
+0x1871a1328  __TEXT,__text  +[SFTraitVerticalBarRectEdge identifier]
+0x1871a14a4  __TEXT,__text  _block_copy_helper.279
+0x1871a14a8  __TEXT,__text  ___swift_closure_destructor.223
+0x1871a14ac  __TEXT,__text  ___swift_closure_destructor.223
+0x1871a2124  __TEXT,__text  _block_copy_helper.245
+0x1871a2dd4  __TEXT,__text  _block_copy_helper.299
+0x1871a2dd8  __TEXT,__text  _block_copy_helper.272
+0x1871a2ddc  __TEXT,__text  _block_copy_helper.265
+0x1871a2de0  __TEXT,__text  _block_copy_helper.265
+0x1871a2de4  __TEXT,__text  _block_copy_helper.252
+0x1871a2de8  __TEXT,__text  _block_copy_helper.252
+0x1871a426c  __TEXT,__text  ___swift_memcpy16_8
+0x1871a5b10  __TEXT,__text  _block_destroy_helper.598
+0x1871a6688  __TEXT,__text  _block_copy_helper.460
+0x1871a8bd8  __TEXT,__text  ___swift_closure_destructor.587
+0x1871a8bdc  __TEXT,__text  ___swift_closure_destructor.590
+0x1871a8be0  __TEXT,__text  ___swift_closure_destructor.594
+0x1871a8fd0  __TEXT,__text  -[SFBrowserStateSQLiteStore _openDatabaseAndCheckIntegrity:]
+0x1871a9160  __TEXT,__text  -[SFBrowserStateSQLiteStore _migrateToCurrentSchemaVersionIfNeeded]
+0x1871a91f8  __TEXT,__text  -[SFBrowserStateSQLiteStore _isDatabaseOpen]
+0x1871a9208  __TEXT,__text  -[_SFBrowserSavedState _readBrowserControllersSavedState]
+0x1871a9254  __TEXT,__text  +[_SFBrowserSavedState shouldMergeAllWindowsIfNeeded]
+0x1871a9260  __TEXT,__text  -[SFBrowserStateSQLiteStore mergeAllWindows]
+0x1871a92d4  __TEXT,__text  -[SFBrowserStateSQLiteStore _mergeAllWindowsIfNeeded]
+0x1871a9c0c  __TEXT,__text  SafariShared::SuddenTerminationDisabler::~SuddenTerminationDisabler()
+0x1871a9c48  __TEXT,__text  ___43-[SFBrowserStateSQLiteStore browserWindows]_block_invoke
+0x1871a9dd8  __TEXT,__text  -[_SFBrowserSavedState recentlyClosedTabsForProfileWithIdentifier:]
+0x1871a9eb4  __TEXT,__text  -[SFBrowserStateSQLiteStore recentlyClosedWindows]
+0x1871aa488  __TEXT,__text  -[SFWebExtensionsController setViewControllerToPresentDialogsFrom:]
+0x1871aa4c4  __TEXT,__text  -[SFDialogController init]
+0x1871aa514  __TEXT,__text  ___44+[SFSiriVoiceUtilities sharedVoiceUtilities]_block_invoke
+0x1871aa544  __TEXT,__text  ___34+[_SFSiteIcon defaultIconKeyColor]_block_invoke
+0x1871aa5f0  __TEXT,__text  -[NSString(MobileSafariFrameworkExtras) safari_isSingleEmoji]
+0x1871aa64c  __TEXT,__text  +[SFBookmarkTouchIconRequest requestWithBookmark:iconGenerationEnabled:backgroundColor:]
+0x1871aa6b8  __TEXT,__text  -[_SFTouchIconCache canHandleRequest:]
+0x1871aa738  __TEXT,__text  -[SFVoiceSearchManager _voiceSearchAvailability]
+0x1871aa8e8  __TEXT,__text  -[SFDefaultStartPageVisualStyleProvider siteIconSizeForContainerSize:].cold.1
+0x1871aa8fc  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1871aa90c  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1871aa920  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1871aa930  __TEXT,__text  _OUTLINED_FUNCTION_3
+0x1871aa940  __TEXT,__text  -[SFStartPageSectionHeaderTitleView update]
+0x1871aae4c  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1871aae58  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1871aae64  __TEXT,__text  _OUTLINED_FUNCTION_5
+0x1871aae70  __TEXT,__text  ___97-[SFStartPageSectionHeader configureUsingSection:visualStyleProvider:resolvingActionsUsingBlock:]_block_invoke
+0x1871aaec8  __TEXT,__text  ___61-[SFStartPageCollectionViewController _sectionForIdentifier:]_block_invoke
+0x1871aaf0c  __TEXT,__text  -[SFStartPageCollectionViewController _applyCurrentSnapshotAnimatingDifferences:]
+0x1871ab464  __TEXT,__text  -[SFStartPageCollectionViewController _reuseIdentifierForCellWithIdentifier:section:]
+0x1871ab648  __TEXT,__text  -[SFInteractiveBannerCell configureUsingBanner:]
+0x1871abe28  __TEXT,__text  -[SFTipsCoordinator setObserver:]
+0x1871abe34  __TEXT,__text  -[SFTipsCoordinator startObserving]
+0x1871acc78  __TEXT,__text  int SafariShared::_WBSSQLiteDatabaseExecuteAndReturnError<>(WBSSQLiteDatabase*, NSError* __autoreleasing*, NSString*)
+0x1871acd94  __TEXT,__text  -[SFBrowserStateSQLiteStore _schemaVersion]
+0x1871ace2c  __TEXT,__text  WBSSQLiteRowEnumerator* SafariShared::WBSSQLiteDatabaseFetch<>(WBSSQLiteDatabase*, NSString*)
+0x1871acec0  __TEXT,__text  ___44-[SFBrowserStateSQLiteStore mergeAllWindows]_block_invoke
+0x1871ad04c  __TEXT,__text  -[SFBrowserStateSQLiteStore browserWindows]
+0x1871ad11c  __TEXT,__text  WBSSQLiteRowEnumerator* SafariShared::WBSSQLiteDatabaseFetch<SFBrowserWindowType>(WBSSQLiteDatabase*, NSString*, SFBrowserWindowType&&)
+0x1871ad1c4  __TEXT,__text  -[_SFBrowserSavedState _readRecentlyClosedTabsStateIfNecessary]
+0x1871ad1dc  __TEXT,__text  -[_SFBrowserSavedState readRecentlyClosedTabsState]
+0x1871ad4e8  __TEXT,__text  ___50-[SFBrowserStateSQLiteStore recentlyClosedWindows]_block_invoke
+0x1871ad650  __TEXT,__text  -[SFWallpaperViewController init]
+0x1871adcc4  __TEXT,__text  +[NSUserActivity(MobileSafariFrameworkExtras) _sf_windowCreationActivityFromSceneConnectionOptions:]
+0x1871add4c  __TEXT,__text  -[SFMediaCaptureStatusBarManager _recordingDocument]
+0x1871adfe4  __TEXT,__text  +[SFSiriVoiceUtilities sharedVoiceUtilities]
+0x1871ae01c  __TEXT,__text  +[SFSiriVoiceUtilities sharedVoiceUtilities].cold.1
+0x1871ae030  __TEXT,__text  -[SFSiriVoiceUtilities init]
+0x1871ae0bc  __TEXT,__text  -[SFSiriVoiceUtilities activeSiriReaderSessionIdentifier]
+0x1871ae0c4  __TEXT,__text  ___81-[SFStartPageCollectionViewController _applyCurrentSnapshotAnimatingDifferences:]_block_invoke
+0x1871ae1ac  __TEXT,__text  +[_SFSiteMetadataManager sharedSiteMetadataManager]
+0x1871ae21c  __TEXT,__text  +[_SFSiteIcon _defaultIconSize]
+0x1871ae240  __TEXT,__text  -[SFVoiceSearchManager _updateDictationAvailability]
+0x1871ae2b8  __TEXT,__text  _getAFPreferencesClass
+0x1871ae38c  __TEXT,__text  ___78-[UIApplication(MobileSafariFrameworkExtras) safari_currentKeyboardInputIsRTL]_block_invoke_4
+0x1871ae448  __TEXT,__text  -[SFCapsuleNavigationBar _updateKeyboardInputMode:]
+0x1871ae4c4  __TEXT,__text  -[SFCapsuleView _updateKeyboardInputMode:]
+0x1871ae5b4  __TEXT,__text  _block_destroy_helper.14
+0x1871ae5b8  __TEXT,__text  _block_destroy_helper.14
+0x1871ae5bc  __TEXT,__text  -[SFDefaultStartPageVisualStyleProvider siteIconSizeForContainerSize:]
+0x1871ae664  __TEXT,__text  -[SFStartPageSectionHeaderTitleView configureUsingSection:visualStyleProvider:]
+0x1871ae788  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1871ae794  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1871ae7a4  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1871ae7b8  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1871ae7c8  __TEXT,__text  _OUTLINED_FUNCTION_2
+0x1871ae7d4  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1871ae7ec  __TEXT,__text  _OUTLINED_FUNCTION_4
+0x1871ae7f8  __TEXT,__text  ___79-[SFStartPageCollectionViewController _configureHeader:forSection:atIndexPath:]_block_invoke
+0x1871ae890  __TEXT,__text  ___81-[SFStartPageCollectionViewController _applyCurrentSnapshotAnimatingDifferences:]_block_invoke_4
+0x1871ae8ac  __TEXT,__text  ___81-[SFStartPageCollectionViewController _applyCurrentSnapshotAnimatingDifferences:]_block_invoke_5
+0x1871ae8c8  __TEXT,__text  ___81-[SFStartPageCollectionViewController _applyCurrentSnapshotAnimatingDifferences:]_block_invoke_2
+0x1871aea94  __TEXT,__text  +[UIVisualEffectView(MobileSafariFrameworkExtras) sf_startPageCellBackgroundEffectViewWithShadow:]
+0x1871aea9c  __TEXT,__text  +[UIVisualEffectView(MobileSafariFrameworkExtras) sf_startPageCellBackgroundEffectViewWithShadow:shadowRadius:].cold.1
+0x1871aea9c  __TEXT,__text  +[UIVisualEffectView(MobileSafariFrameworkExtras) sf_startPageCellBackgroundEffectViewWithShadow:shadowRadius:].cold.1
+0x1871aeaa0  __TEXT,__text  +[UIVisualEffectView(MobileSafariFrameworkExtras) sf_startPageCellBackgroundEffectViewWithShadow:shadowRadius:]
+0x1871aec5c  __TEXT,__text  +[UIVisualEffectView(MobileSafariFrameworkExtras) sf_startPageBackgroundTraits]
+0x1871b6518  __TEXT,__text  ___swift_closure_destructor.138
+0x1871b651c  __TEXT,__text  ___swift_closure_destructor.138
+0x1871b6520  __TEXT,__text  ___swift_closure_destructor.138
+0x1871ba404  __TEXT,__text  ___swift_closure_destructor.256
+0x1871ba408  __TEXT,__text  ___swift_closure_destructor.256
+0x1871ba40c  __TEXT,__text  ___swift_closure_destructor.256
+0x1871ba438  __TEXT,__text  ___swift_closure_destructor.256
+0x1871ba43c  __TEXT,__text  ___swift_closure_destructor.252
+0x1871bb89c  __TEXT,__text  _block_destroy_helper.52
+0x1871bb8a0  __TEXT,__text  _block_destroy_helper.52
+0x1871bb8a4  __TEXT,__text  _block_destroy_helper.52
+0x1871bb8a8  __TEXT,__text  ___swift_closure_destructor.2
+0x1871bb8ac  __TEXT,__text  ___swift_closure_destructor.2
+0x1871bb8b0  __TEXT,__text  ___swift_closure_destructor.2
+0x1871bb8b4  __TEXT,__text  ___swift_closure_destructor.2
+0x1871bb8b8  __TEXT,__text  ___swift_closure_destructor.2
+0x1871bb8c8  __TEXT,__text  ___swift_closure_destructor.2
+0x1871bb8cc  __TEXT,__text  ___swift_closure_destructor.2
+0x1871bb8d0  __TEXT,__text  ___swift_closure_destructor.2
+0x1871bb8e0  __TEXT,__text  ___swift_closure_destructor.2
+0x1871bb8f0  __TEXT,__text  ___swift_closure_destructor.2
+0x1871bb900  __TEXT,__text  ___swift_closure_destructor.2
+0x1871bb92c  __TEXT,__text  ___swift_closure_destructor.2
+0x1871bb93c  __TEXT,__text  ___swift_closure_destructor.2
+0x1871bb940  __TEXT,__text  ___swift_closure_destructor.2
+0x1871bc974  __TEXT,__text  ___56+[UIColor(MobileSafariExtras) sf_barHairlineShadowColor]_block_invoke
+0x1871bc9bc  __TEXT,__text  -[SFWallpaperViewController hasWallpaper]
+0x1871bcb1c  __TEXT,__text  ___swift_closure_destructor.81
+0x1871bcb20  __TEXT,__text  ___swift_closure_destructor.81
+0x1871bcb4c  __TEXT,__text  ___swift_closure_destructor.81
+0x1871bcb50  __TEXT,__text  ___swift_closure_destructor.81
+0x1871bcb54  __TEXT,__text  -[SFStartPageCollectionViewController _siteIconLayoutForEnvironment:sectionInsets:]
+0x1871bcc58  __TEXT,__text  -[SFStartPageCollectionViewController _siteIconSectionLayoutForEnvironment:]
+0x1871bcf08  __TEXT,__text  ___64-[SFStartPageCollectionViewController _makeCollectionViewLayout]_block_invoke
+0x1871bd0b4  __TEXT,__text  _headerSupplementaryItemLayout
+0x1871bd174  __TEXT,__text  -[SFStartPageViewController coalesceDataReloadWithBlock:animatingDifferences:]
+0x1871bdf64  __TEXT,__text  _block_destroy_helper.92
+0x1871bdf68  __TEXT,__text  _block_destroy_helper.92
+0x1871beb8c  __TEXT,__text  -[_SFTouchIconCache _didLoadTouchIcon:withCacheSettingsEntry:]
+0x1871bee08  __TEXT,__text  -[SFStartPageCollectionViewController _configureCell:forIdentifier:indexPath:]
+0x1871bf9fc  __TEXT,__text  -[SFStartPageViewController updateNavigationBarTintColor]
+0x1871bfd90  __TEXT,__text  _block_copy_helper.51
+0x1871bfd94  __TEXT,__text  _block_copy_helper.51
+0x1871bfd98  __TEXT,__text  _block_copy_helper.51
+0x1871bfff4  __TEXT,__text  ___swift_closure_destructor.41
+0x1871bfff8  __TEXT,__text  ___swift_closure_destructor.41
+0x1871bfffc  __TEXT,__text  ___swift_closure_destructor.41
+0x1871c0030  __TEXT,__text  ___swift_closure_destructor.41
+0x1871c0074  __TEXT,__text  ___57-[SFStartPageViewController updateNavigationBarTintColor]_block_invoke_2
+0x1871c0198  __TEXT,__text  ___68-[SFStartPageViewController resetToRootViewWithCustomizationPolicy:]_block_invoke
+0x1871c0248  __TEXT,__text  -[SFStartPageBackgroundUIVisualEffectBackdropView updateCaptureGroup]
+0x1871c0390  __TEXT,__text  ___56-[SFStartPageCollectionViewController _setUpDataSource:]_block_invoke
+0x1871c17b4  __TEXT,__text  -[UINavigationItem(MobileSafariFrameworkExtras) sf_isEmpty]
+0x1871c1844  __TEXT,__text  ___57-[SFStartPageViewController updateNavigationBarTintColor]_block_invoke
+0x1871c1984  __TEXT,__text  -[SFStartPageCollectionViewController _bannerSectionLayoutForEnvironment:includingHeader:]
+0x1871c3010  __TEXT,__text  ___swift_closure_destructor.249
+0x1871c3960  __TEXT,__text  -[SFUnifiedTabBarSection .cxx_destruct]
+0x1871c4140  __TEXT,__text  ___swift_closure_destructor.44
+0x1871c416c  __TEXT,__text  ___swift_closure_destructor.44
+0x1871c4170  __TEXT,__text  ___swift_closure_destructor.44
+0x1871c4174  __TEXT,__text  ___swift_closure_destructor.44
+0x1871c4288  __TEXT,__text  _block_destroy_helper.24
+0x1871c428c  __TEXT,__text  _block_destroy_helper.24
+0x1871c4290  __TEXT,__text  _block_destroy_helper.24
+0x1871c47d4  __TEXT,__text  ___swift_closure_destructor.88
+0x1871c47d8  __TEXT,__text  ___swift_closure_destructor.88
+0x1871c47dc  __TEXT,__text  ___swift_closure_destructor.88
+0x1871c47e0  __TEXT,__text  ___swift_closure_destructor.84
+0x1871c47e4  __TEXT,__text  ___swift_closure_destructor.84
+0x1871c47e8  __TEXT,__text  ___swift_closure_destructor.84
+0x1871c4870  __TEXT,__text  ___swift_closure_destructor.84
+0x1871c4874  __TEXT,__text  ___swift_closure_destructor.84
+0x1871c4878  __TEXT,__text  ___swift_closure_destructor.84
+0x1871c487c  __TEXT,__text  ___swift_closure_destructor.278
+0x1871c4880  __TEXT,__text  ___swift_closure_destructor.278
+0x1871c4b78  __TEXT,__text  ___swift_closure_destructor.48
+0x1871c4b7c  __TEXT,__text  ___swift_closure_destructor.48
+0x1871c4b80  __TEXT,__text  ___swift_closure_destructor.48
+0x1871c4b84  __TEXT,__text  ___swift_closure_destructor.48
+0x1871c4b88  __TEXT,__text  ___swift_closure_destructor.48
+0x1871c4c38  __TEXT,__text  -[SFWallpaperViewController userInterfaceStyleToUseOverWallpaper]
+0x1871c4d10  __TEXT,__text  -[SFPrivacyReportBannerCell _privacyProxyAvailabilityChanged:]
+0x1871c4e20  __TEXT,__text  ___44-[SFWallpaperViewController updateWallpaper]_block_invoke
+0x1871c522c  __TEXT,__text  ___swift__destructor.21
+0x1871c5230  __TEXT,__text  -[_SFDimmingButton .cxx_destruct]
+0x1871c54f0  __TEXT,__text  ___52-[SFSiriVoiceUtilities fetchAvailableVoiceLanguages]_block_invoke_2
+0x1871c55c0  __TEXT,__text  ___52-[SFSiriVoiceUtilities fetchAvailableVoiceLanguages]_block_invoke_3
+0x1871c6be0  __TEXT,__text  _get_enum_tag_for_layout_string 12MobileSafari11TabOverviewC7OverlayVSg
+```
+First 1,000 of 10,357.
+

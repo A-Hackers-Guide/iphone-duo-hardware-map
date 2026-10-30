@@ -1,0 +1,955 @@
+# `com.apple.driver.AppleBiometricSensor`
+
+- Name: AppleBiometricSensor
+- Version: `2`
+- UUID: `AEA181D8-E50D-36D3-996D-E5B162A692F0`
+- Source version: `294.0.0.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.iokit.CoreAnalyticsFamily`](com.apple.iokit.CoreAnalyticsFamily.md) 1.0, [`com.apple.iokit.IOBiometricFamily`](com.apple.iokit.IOBiometricFamily.md) 1.0, [`com.apple.iokit.IOHIDFamily`](com.apple.iokit.IOHIDFamily.md) 1.4, [`com.apple.iokit.IOReportFamily`](com.apple.iokit.IOReportFamily.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (2) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/spi1/mesa`](../devicetree/root__arm-io__spi1__mesa.md) | `AppleMesa` | `biosensor,mesa` |
+| [`/arm-io/spi1/mesa`](../devicetree/root__arm-io__spi1__mesa.md) | `AppleSandDollar` | `biosensor,mesa` |
+
+## IOKit personalities (4) [KC]
+
+### AppleMesa
+- `CFBundleIdentifier`: `com.apple.driver.AppleBiometricSensor`
+- `IOCFPlugInTypes`:
+  - `3F3B04CC-A07A-46A5-9DDF-78768C966771`: `AppleBiometricSensor.kext/PlugIns/AppleMesaLib.plugin`
+- `IOClass`: `AppleMesa`
+- `IONameMatch`:
+  - `biosensor,mesa`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleBiometricSensor`
+- `IOProviderClass`: `AppleARMSPIDevice`
+- `IOUserClientClass`: `AppleMesaUserClient`
+
+### AppleMesaResources
+- `CFBundleIdentifier`: `com.apple.driver.AppleBiometricSensor`
+- `IOClass`: `AppleMesaResources`
+- `IOMatchCategory`: `AppleMesaResources`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleBiometricSensor`
+- `IOProviderClass`: `IOResources`
+
+### AppleMesaShim
+- `CFBundleIdentifier`: `com.apple.driver.AppleBiometricSensor`
+- `DeviceUsagePairs`:
+  -
+    - `DeviceUsage`: `11`
+    - `DeviceUsagePage`: `65280`
+  -
+    - `DeviceUsage`: `16`
+    - `DeviceUsagePage`: `32`
+- `IOClass`: `AppleMesaShim`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleBiometricSensor`
+- `IOProviderClass`: `AppleMesa`
+
+### AppleSandDollar
+- `CFBundleIdentifier`: `com.apple.driver.AppleBiometricSensor`
+- `IOCFPlugInTypes`:
+  - `3F3B04CC-A07A-46A5-9DDF-78768C966771`: `AppleBiometricSensor.kext/PlugIns/AppleMesaLib.plugin`
+- `IOClass`: `AppleSandDollar`
+- `IONameMatch`:
+  - `biosensor,mesa`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleBiometricSensor`
+- `IOProviderClass`: `AppleARMSPIDevice`
+- `IOUserClientClass`: `AppleMesaUserClient`
+
+
+## C++ classes (11) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleBiometricSensor` | 0x90 | IOService → IORegistryEntry |
+| `AppleBiometricSensorEmulatorBaseClass` | 0x88 | IOService → IORegistryEntry |
+| `AppleBiometricSensorEventSource` | 0x60 | IOEventSource |
+| `AppleMesa` | 0x3d8 | AppleSPIBiometricSensor → AppleBiometricSensor → IOService → IORegistryEntry |
+| `AppleMesaARMFunction` | 0x38 | AppleARMFunction |
+| `AppleMesaCommand` | 0x58 | IOCommand |
+| `AppleMesaResources` | 0x90 | IOService → IORegistryEntry |
+| `AppleMesaShim` | 0xe0 | AppleEmbeddedHIDEventService → IOHIDEventService → IOService → IORegistryEntry |
+| `AppleMesaUserClientBase` | 0xd8 | IOUserClient → IOService → IORegistryEntry |
+| `AppleSPIBiometricSensor` | 0xd0 | AppleBiometricSensor → IOService → IORegistryEntry |
+| `AppleSandDollar` | 0x3e0 | AppleMesa → AppleSPIBiometricSensor → AppleBiometricSensor → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1560)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0000e868 off=0x003a9890-0x003b80f8 addr=0xfffffe00073ad890-0xfffffe00073bc0f8 r--/r--   __TEXT            
+	sz=0x0000336a off=0x003a9f08-0x003ad272 addr=0xfffffe00073adf08-0xfffffe00073b1272               __TEXT.__cstring          (CstringLiterals)
+	sz=0x0000a9bc off=0x003ad272-0x003b7c2e addr=0xfffffe00073b1272-0xfffffe00073bbc2e               __TEXT.__os_log           
+	sz=0x000004c8 off=0x003b7c30-0x003b80f8 addr=0xfffffe00073bbc30-0xfffffe00073bc0f8               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x00023990 off=0x019ecb70-0x01a10500 addr=0xfffffe00089f0b70-0xfffffe0008a14500 r-x/r-x   __TEXT_EXEC       
+	sz=0x000233f0 off=0x019ecb70-0x01a0ff60 addr=0xfffffe00089f0b70-0xfffffe0008a13f60          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000005a0 off=0x01a0ff60-0x01a10500 addr=0xfffffe0008a13f60-0xfffffe0008a14500          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00000350 off=0x04933cc8-0x04934018 addr=0xfffffe000b937cc8-0xfffffe000b938018 rw-/rw-   __DATA            
+	sz=0x00000188 off=0x04933cc8-0x04933e50 addr=0xfffffe000b937cc8-0xfffffe000b937e50               __DATA.__data             
+	sz=0x000001c8 off=0x00000000-0x000001c8 addr=0xfffffe000b937e50-0xfffffe000b938018               __DATA.__common           (Zerofill)
+003: LC_SEGMENT_64 sz=0x00004500 off=0x00ff6210-0x00ffa710 addr=0xfffffe0007ffa210-0xfffffe0007ffe710 rw-/rw-   __DATA_CONST      
+	sz=0x00000038 off=0x00ff6210-0x00ff6248 addr=0xfffffe0007ffa210-0xfffffe0007ffa248         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000038 off=0x00ff6248-0x00ff6280 addr=0xfffffe0007ffa248-0xfffffe0007ffa280         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00003d60 off=0x00ff6280-0x00ff9fe0 addr=0xfffffe0007ffa280-0xfffffe0007ffdfe0         __DATA_CONST.__const            
+	sz=0x000003c0 off=0x00ff9fe0-0x00ffa3a0 addr=0xfffffe0007ffdfe0-0xfffffe0007ffe3a0         __DATA_CONST.__kalloc_type      
+	sz=0x000002d0 off=0x00ffa3a0-0x00ffa670 addr=0xfffffe0007ffe3a0-0xfffffe0007ffe670         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000a0 off=0x00ffa670-0x00ffa710 addr=0xfffffe0007ffe670-0xfffffe0007ffe710         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 200 at 0x04ad3e3c
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     AEA181D8-E50D-36D3-996D-E5B162A692F0
+008: LC_SOURCE_VERSION           294.0.0.0.0
+009: LC_FUNCTION_STARTS          offset=0x004a9aaa8 size=0x4a8
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleBiometricSensor`
+- `CFBundleIdentifier`: `com.apple.driver.AppleBiometricSensor`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleBiometricSensor`
+- `CFBundleNumericVersion`: `33587200`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0.0`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `2`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2021 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.0`
+- `OSBundleRequired`: `Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleBiometricSensor.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198901958512`
+- `_PrelinkExecutableRelativePath`: `AppleBiometricSensor`
+- `_PrelinkExecutableSize`: `223816`
+- `_PrelinkExecutableSourceAddr`: `-2198901958512`
+- `_PrelinkKmodInfo`: `-2198829040440`
+
+## Strings (788) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `mesa-current-power-down`
+- `onResetFinishCallback`
+- `ioCommand`
+- `This callback should only be triggered on devices with SSHB!`
+- `bytesRead == _fwLen`
+- `powerUp`
+- `maxAverageCurrent3v0`
+- `powerStateWillChangeToGated`
+- `close`
+- `logRecoveryReason`
+- `setFingerOnState`
+- `GetSensorNonceGated`
+- `TransferData`
+- `setCurrentState`
+- `exceededSample4Current3v0Count`
+- `Calculating CRC16 failed.`
+- `TriggerESDReset`
+- `txBuffer`
+- `setProperties`
+- `fwBuffer`
+- `commandBufferSize <= kMaxCommandBufferSize`
+- `121111121222121211111111111`
+- `LockSensor`
+- `Complete`
+- `1211111212221212121111211221112122221122222222222222222222212222222222111111121222221211212111222222222222222211111112222222`
+- `_userClientLock`
+- `-restore`
+- `success`
+- `tryFillSetParamBuffer`
+- `_reporters`
+- `121111121222121212`
+- `site.AppleSPIBiometricSensor`
+- `probe`
+- `maxCurrent1v8`
+- `boundedPayload.size() <= tagsSize`
+- `121111121222121211`
+- `exceededSample5Current3v0Count`
+- `exceededSample3Current1v8Count`
+- `readLDOCurrent`
+- `readLDOCurrent(_monitorCurrent3v0Function, _monitorCurrent3v0Values, sampleCount, &_monitorCurrent3v0Index, &current3v0) == 0 `
+- `%02x `
+- `mesa-verbose`
+- `r == 0 `
+- `timer`
+- `off`
+- `EncryptedFactoryClear`
+- `tmpTxMD`
+- `command`
+- `inCaptureMD`
+- `AppleMesaShim`
+- `HandleCMDSyncCallback`
+- `ResetGated`
+- `Idle`
+- `12111112122212121211112112`
+- `function-mesa_pwr1v8`
+- `exceededAveragePowerCount`
+- `powerDownHighCurrent`
+- `readSensorData`
+- `RX memory descriptor could not be created likely because of no memory.`
+- `mesa-current-1v8-threshold`
+- `_coreAnalyticsService`
+- `exceededSample4Current1v8Count`
+- `ProvisionSensorGated`
+- `LockLowerHalfKey`
+- `DeviceUsagePairs`
+- `EncryptedGetModuleSerialNumberGated`
+- `function-over-current-detection`
+- `calculateAverageCurrent(_monitorCurrent3v0Values, sampleCount, _monitorCurrent3v0Index, _monitor_power_avg_count, &averageCurrent3v0) == 0 `
+- `_sendEncryptedCommand`
+- `handleCMDAsync`
+- `recoveryWatchdogForSSHBAction`
+- `TX buffer length is non-zero but its data pointer is NULL.`
+- `disableSensorGated`
+- `_currentState == kIdle`
+- `initWithTargetDataAndSymbol`
+- `captureLen >= length + offset`
+- `site.AppleMesaShim`
+- `1211111212221212111111121211`
+- `mesa-patch-directly`
+- `mesa-wff-watchdog-period`
+- `AppleBiometricSensorEmulator`
+- `_workLoop`
+- `sensor-id`
+- `monitor-power-threshold`
+- `payloadSize <= (kParameterTerminatorOffset - kParameterCCM_B0Offset)`
+- `spi-frequency`
+- `exceededCurrent1v8Percentage`
+- `transmitSequenceCounterInitialization`
+- `SetEncryptedParameters`
+- `sanddollar-converter`
+- `powerDownAverageCurrent1v8`
+- `calculateAverageCurrent(_monitorCurrent1v8Values, sampleCount, _monitorCurrent1v8Index, 2, &average2Current1v8) == 0 `
+- `\"%s\" @%s:%d`
+- `AppleBiometricSensor`
+- `calculateAverageCurrent(_monitorCurrent1v8Values, sampleCount, _monitorCurrent1v8Index, _monitor_current_avg_count, &averageCurrent1v8) == 0 `
+- `handleClose`
+- `WriteUpperHalfKey`
+- `mesa-power-on-delay`
+- `HighCurrent`
+- `_sensorEmulator`
+- `AppleSandDollar`
+- `_handleMessageGated`
+- `_currentState != kDeviceError`
+- `powerDownHighCurrent() == 0 `
+- `UnpairUpperHalfKey`
+- `Authenticate`
+- `EncryptedGetModuleSerialNumber`
+- `TX memory descriptor could not be created likely because of no memory.`
+- `SensorID`
+- `mode`
+- `exceededSample2Current1v8Count`
+- `_handleCMD`
+- `recoveryFinishCallbackForSSHB`
+- `_setPropertiesGated`
+- `calculateAverageCurrent(_monitorCurrent1v8Values, sampleCount, _monitorCurrent1v8Index, current1v8HighCount, &stats.powerDownAverageCurrent1v8) == 0 `
+- `Buffer smaller than CRC16 itself!`
+- `false`
+- `/Library/Caches/com.apple.xbs/56F15675-1195-4005-99F1-4A3BD4B8790B/TemporaryDirectory.afkHo1/Sources/AppleBiometricSensor/AppleMesa.cpp`
+- `monitor-current-3v0-count`
+- `getCoreAnalyticsService`
+- `max2AverageCurrent1v8`
+- `max3AverageCurrent1v8`
+- `_canInitiateFaultRecovery`
+- `_recoveryWatchdogForSSHB`
+- `postAnalyticsEvent`
+- `PauseCaptureGated`
+- `createReporters`
+- `bounded_array_ref: invalid slice provided, the indices are of bounds for the bounded_array_ref`
+- `result != (((signed)((((unsigned)(0x38))&0x3f)<<26))|(((0)&0xfff)<<14)|0x1)`
+- `This action should only be triggered on devices with SSHB!`
+- `EncryptedFactoryClearGated`
+- `handleCMDSync_WaitForCompletion`
+- `AppleMesaARMFunction`
+- `maxCurrent3v0`
+- `ReprovisionSensorGated`
+- `GoToProductionModeGated`
+- `IdleGated`
+- `_cmdResponseTimer`
+- `valuesIndex`
+- `monitor-power-avg-count`
+- `readLDOCurrent(_monitorCurrent1v8Function, _monitorCurrent1v8Values, sampleCount, &_monitorCurrent1v8Index, &current1v8) == 0 `
+- `spi-clock-phase`
+- `!poweringOnDisabledDevice`
+- `checkCRC16ANSI`
+- `inSize > 0`
+- `outAverage`
+- `sendDeferredCommands`
+- `bounded_array_ref: Can't construct from a size greater than UINT32_MAX`
+- `site.AppleBiometricSensorEventSource`
+- `OK`
+- `exceededSample1Current1v8Count`
+- `SetParametersGated`
+- `ReprovisionSEPKey`
+- `12111112122212121`
+- `initializeHardware`
+- `fwLen > 0`
+- `GoToProductionMode`
+- `CalibrateAndUpdateNVMGated`
+- `postHourlyPowerUpdate`
+- `calculateAverageCurrent(_monitorCurrent3v0Values, sampleCount, _monitorCurrent3v0Index, 3, &average3Current3v0) == 0 `
+- `Recovery request was denied, will try again unless maximum retries reached.`
+- `valid`
+- `commandBufSize >= localCommandBuf.size()`
+- `postHourlyUpdate(&stats) == 0 `
+- `payloadSize <= (kParameterTerminatorOffset - kParameterTagOffset)`
+- `ABSE data transfer failed.`
+- `AppleMesa`
+- `values`
+- `emulatorMode`
+- `AppleBiometricSensorEventSource`
+- `site.AppleMesaResources`
+- `esdResetPercentage`
+- `handleCMDSync`
+- `SendEncryptedCommand`
+- `exceededCurrent3v0Percentage`
+- `_monitorCurrent3v0Values`
+- `!_aopDriverSleeping`
+- `AssertMacros: %s, %s file: %s, line: %d, value: %lld\n`
+- `_captureWatchdogTimer`
+- `GetSerialNumberGated`
+- `site.BiometricSensorCapture`
+- `stringSize`
+- `function-bb_gpio`
+- `monitor-current-3v0-threshold`
+- `valuesCount > 0`
+- `mesa-state`
+- `StartCapture`
+- `CoreAnalyticsHub`
+- `121112111211`
+- `tmpRxMD`
+- `postHourlyUpdate`
+- `transmitProvisioning`
+- `SetEncryptedParametersGated`
+- `!getWorkLoop()->onThread()`
+- `SensorTypeMismatch`
+- `armTimerWithTimeout`
+- `size > 0`
+- `mesa-spi-freq`
+- `AppleMesaCommand`
+- `i8@?0`
+- `rxDataBufferRawPtr`
+- `handleInterrupt`
+- `EncryptedWriteUpperHalfKeyGated`
+- `disabled`
+- `mesa-drive-1v8`
+- `_commandPool`
+- `stats`
+- `exceededCurrent3v0Count`
+- `refreshSensorStatus`
+- `StartFingerDetect`
+- `LockUpperHalfKeyGated`
+- `powerMonitorContinuation`
+- `SessionKeyExchange`
+- `This bounded_ptr is pointing to memory outside of what can be represented by a native pointer.`
+- `GoToProductionModeWithParametersGated`
+- `monitor-current-value-type`
+- `SessionKeyExchangeGated`
+- `1`
+- `value`
+- `X162Bypass`
+- `powerDownHighCurrentGated`
+- `GetModuleSerialNumber`
+- `monitor-power-interval`
+- `postHourlyHighCurrentUpdate`
+- `captureWatchdogAction`
+- `status.size() == kStatusByteCount`
+- `reportStatusMessages`
+- `TransferDataGated`
+- `init`
+- `super::start(provider)`
+- `maxPower`
+- `LoadPatchGated`
+- `WriteUpperHalfKeyGated`
+- `ProvisionSensor`
+- `size >= sensorDataMessage`
+- `boundedPayload.size() <= (kParameterCCM_B0Size + kParameterMACSize + tagsSize)`
+- `exceededSample3Current3v0Count`
+- `InitializeSequenceCounter`
+- `commandResponseTimeoutAction`
+- `iterator`
+- `bufferSize`
+- `MesaSelfTest`
+- `powerOnReset`
+- `Filling the setParameter buffer failed.`
+- `GetSerialNumber`
+- `handleOpen`
+- `size <= Constants::kMaxTransferSize`
+- `RePairingSessionKeyExchange`
+- `exceededAverageCurrent3v0Count`
+- `calculatedAverage <= 4294967295U`
+- `sleepCommandTransmitResult == 0 `
+- `commandBufSize >= 64`
+- `StopSSHBHB`
+- `com.apple.appleBiometricSensor.powerMonitor.highCurrentUpdate`
+- `refreshSensorStatusWithRetry`
+- `site.AppleMesa`
+- `ClearPatchOverride`
+- `maxAverageCurrent1v8`
+- `handleStateMachine`
+- `ReprovisionSEPKeyGated`
+- `/Library/Caches/com.apple.xbs/56F15675-1195-4005-99F1-4A3BD4B8790B/TemporaryDirectory.afkHo1/Sources/AppleBiometricSensor/ABSLogging.c`
+- `canGuaranteeTxBufferUntouched`
+- `12112111111`
+- `exceededCurrent1v8Count`
+- `message`
+- `SetParameters`
+- `InitializeSequenceCounterGated`
+- `/Library/Caches/com.apple.xbs/56F15675-1195-4005-99F1-4A3BD4B8790B/TemporaryDirectory.afkHo1/Sources/AppleBiometricSensor/AppleMesaResources.cpp`
+- `inPatch->complete() == 0 `
+- `spi-freq`
+- `RePairingSessionKeyExchangeGated`
+- `ReprovisionSensor`
+- `Sleeping the WorkLoop's thread is heavily discouraged because it blocks all other EventSources`
+- `_handleInterrupt`
+- `_checkImageCRC`
+- `crcOK`
+- `AppleMesaResources`
+- `callPlatformFunction`
+- `dispatch-hid-events`
+- `site.AppleMesaARMFunction`
+- `function-mesa_pwr`
+- `skipFingerDetect`
+- `SetPower`
+- `SensorTest`
+- `StartBurnIn`
+- `mesa-dispatch-hid`
+- `GetStatusGated`
+- `EncryptedWriteUpperHalfKey`
+- `dispatchCaptureReady`
+- `result == 0 `
+- `recoveryRequestResult == 0 `
+- `(length != 0) || (offset == 0)`
+- `mesa-skip-sanity-check`
+- `mesa-power-on-1v8-3v0-delay`
+- `GetStatus`
+- `(_currentState != kDeviceDisabled) || _setSensorPowerUserOverride`
+- `AppleBiometricSensor: start(): SensorStatus: %5zuB | %s\n`
+- `com.apple.appleBiometricSensor.powerMonitor.hourlyUpdate`
+- `requestIntentionalReset`
+- `buffer`
+- `mesa-sensor-id`
+- `matchingService`
+- `open`
+- `IOReportLegendPublic`
+- `IOReportLegend`
+- `waitFor`
+- `transferData`
+- `_powerFunction`
+- `me`
+- `powerMonitorThread`
+- `captureBuf`
+- `_mesa`
+- `_handleSensorSpecificResponse`
+- `RX buffer length is non-zero but its data pointer is NULL.`
+- `outCRC`
+- `inSize < Constants::kMaxTransferSize`
+- `longReset`
+- `loadPatch`
+- `Getting an IOCommand from IOCommandPool failed.`
+- `invalid`
+- `aopMesaDriver`
+- `currentFunction`
+- `_monitorCurrent1v8Values`
+- `IOHibernateState`
+- `Create`
+- `transmitData`
+- `result`
+- `calculateAverageCurrent(_monitorCurrent3v0Values, sampleCount, _monitorCurrent3v0Index, _monitor_current_avg_count, &averageCurrent3v0) == 0 `
+- `1211112`
+- `AppleMesaUserClientBase`
+- `inData`
+- `mesa-esd-auto-start-capture`
+- `maxAveragePower`
+- `UnpairUpperHalfKeyGated`
+- `OSBoundedPtr.h`
+- `EncryptedModifyTheDevGid`
+- `calculateAverageCurrent`
+- `function-mesa-reset-ntfy`
+- `bufferToString`
+- `_interruptAction`
+- `requestFaultRecoveryReset`
+- `AppleSPIBiometricSensor`
+- `function-over-current`
+- `calculateAverageCurrent(_monitorCurrent1v8Values, sampleCount, _monitorCurrent1v8Index, 3, &average3Current1v8) == 0 `
+- `payloadSize <= (commandBuffer.size() - kParameterCRCSize - kParameterCCM_B0Offset)`
+- `StartFingerDetectGated`
+- `site.AppleBiometricSensor`
+- `_commandGate`
+- `/Library/Caches/com.apple.xbs/56F15675-1195-4005-99F1-4A3BD4B8790B/TemporaryDirectory.afkHo1/Sources/AppleBiometricSensor/AppleSandDollar.cpp`
+- `/Library/Caches/com.apple.xbs/56F15675-1195-4005-99F1-4A3BD4B8790B/TemporaryDirectory.afkHo1/Sources/AppleBiometricSensor/AppleSPIBiometricSensor.cpp`
+- `useCaptureType`
+- `_handleAttachment`
+- `enableSensorGated`
+- `EncryptedLockLowerHalfKeyGated`
+- `site.AppleSandDollar`
+- `outSerialNumberBufLen`
+- `function-monitor-current-3v0`
+- `mesa-power-off-delay`
+- `valuesCount`
+- `StopCapture`
+- `ClearPatchOverrideGated`
+- `rxBuffer`
+- `Quick `
+- `function-monitor-current-1v8`
+- `mesa-esd-recovery`
+- `_sensorResetAOPFunction`
+- `IOTES for SSHB recovery needs to be non-null!`
+- `StartBurnInGated`
+- `AppleBiometricSensorEmulatorBaseClass`
+- `provider`
+- `true`
+- `max2AverageCurrent3v0`
+- `max3AverageCurrent3v0`
+- `postHourlyPowerUpdate(&stats) == 0 `
+- `16BitMode`
+- `SetPowerGated`
+- `Reset`
+- `calculateAverageCurrent(_monitorCurrent3v0Values, sampleCount, _monitorCurrent3v0Index, current3v0HighCount, &stats.powerDownAverageCurrent3v0) == 0 `
+- `Attempting to arm a timer with a nullptr address.`
+- `TriggerSPIError`
+- `LockSensorGated`
+- `site.AppleMesaUserClientBase`
+- `postHourlyHighCurrentUpdate(&stats) == 0 `
+- `shortReset`
+- `patch-version`
+- `StartCaptureGated`
+- `callFunction`
+- `The range of valid memory is too large to be represented by this type, or [begin, end) is not a well-formed range`
+- `exceededSample1Current3v0Count`
+- `exceededSample2Current3v0Count`
+- `calculateAverageCurrent(_monitorCurrent3v0Values, sampleCount, _monitorCurrent3v0Index, 2, &average2Current3v0) == 0 `
+- `(lowByte != 0) || (highByte != 0)`
+- `disarmTimer`
+- `LoadPatch`
+- `PatchGated`
+- `boundedPayload.size() <= parameterDataSize`
+- `string`
+- `badSensorStatus`
+- `rd`
+- `collectedSampleCount`
+- `_interruptActionABSEReplay`
+- `FillEncryptedCommandBuffer`
+- `LockUpperHalfKey`
+- `operator()`
+- `checkForWork`
+- `monitor-current-1v8-count`
+- `InterruptError`
+- `exceededSample5Current1v8Count`
+- `Patch`
+- `site.AppleBiometricSensorEmulatorBaseClass`
+- `start`
+- `averageCount > 0`
+- `GetModuleSerialNumberGated`
+- `DHKeyExchange`
+- `SendEncryptedCommandGated`
+- `Potential error: checking CRC for a buffer that's larger than maximum transfer size!`
+- `propertyData->getLength() == sizeof(uint32_t)`
+- `X162Verbose`
+- `monitor-current-avg-count`
+- `err == 0 `
+- `wasResetWaitConditionSet`
+- `GetSensorNonce`
+- `free`
+- `SPI data transfer failed.`
+- `site.AppleMesaCommand`
+- `powerStateDidChangeToGated`
+- `Attempting to disarm a timer with a nullptr address.`
+- `CompleteCommand`
+- `The offset of the pointer inside its valid memory range can't be represented using int32_t`
+- `enabled`
+- `_spiController`
+- `SPIError`
+- `LockLowerHalfKeyGated`
+- `_handleSensorSpecificCMD`
+- `eventName`
+- `StopSSHBHBGated`
+- `captureReady`
+- `mesa-power-off-3v0-1v8-delay`
+- `SerialNumber`
+- `exceededAverageCurrent1v8Count`
+- `bounded_ptr<T>::operator+=(n): Adding the specified number of bytes to the offset representing the current position would overflow.`
+- `monitor-enable-power-down`
+- `eventPayload`
+- `esdResetCount`
+- `mesa-spi-clock-phase`
+- `crcResult == 0 `
+- `IOTimerEventSource for SSHB recovery needs to be non-null!`
+- `isOpen(inOwner)`
+- `GoToProductionModeWithParameters`
+- `on`
+- `SensorTestGated`
+- `com.apple.appleBiometricSensor.powerMonitor.powerUpdate`
+- `EncryptedModifyTheDevGidGated`
+- `getHibernateState`
+- `powerDown`
+- `121111121222121212111121122111212222112222222222222222222221222222222211111112122222121121211122222222222222221111111222222`
+- `powerDownAverageCurrent3v0`
+- `bufferSize >= kResponseCRCSize`
+- `exchangeData`
+- `monitor-current-1v8-threshold`
+- `_sensorEventSourcesLock`
+- `matchingDict`
+- `setPropertiesGated`
+- `PauseCapture`
+- `_fwLen > 0`
+- `EncryptedLockLowerHalfKey`
+- `enableInterrupts`
+- `_sensorEventSources`
+- `_client`
+- `_sensorDataMD`
+- `calculateAverageCurrent(_monitorCurrent1v8Values, sampleCount, _monitorCurrent1v8Index, _monitor_power_avg_count, &averageCurrent1v8) == 0 `
+- `(_currentState != kDeviceError)`
+- `(_currentState != kDeviceDisabled)`
+- `OSDynamicCast from IOCommandPool's IOCommand to AppleMesaCommand failed.`
+- `DHKeyExchangeGated`
+- `bounded_ptr<T>::operator*: Dereferencing this pointer would access memory outside of the bounds set originally`
+- `crc16ansi`
+- `ok`
+- `CalibrateAndUpdateNVM`
+- `mesa-current-3v0-threshold`
+
+**[__TEXT.__os_log]**
+
+- `%s: 3V %s`
+- `%s: Failed to get AppleMesa provider!`
+- `%s: CRC check: unexpected length (%d bytes) for Sensor Data Message`
+- `%s: Target power state ID same as current power state ID: %llu`
+- `%s: Current: 3v0=%d/%dmA, 1v8=%d/%dmA, Pwr=%d/%dmW, Avg: 3v0=%d/%d,%d/%d,%d/%dmA, 1v8=%d/%d,%d/%d,%d/%dmA, Pwr=%d/%dmW, Limit: %d, %d, %d`
+- `%s: entry: forClient=%p`
+- `%s: Status={%#02x, %#02x, %#02x, %#02x, %#02x, %#02x, %#02x, %#02x, %#02x, %#02x, %#02x, %#02x, %#02x, %#02x, %#02x, %#02x}`
+- `%s: Bad sensor status or fetching status failed, retrying...`
+- `%s: entry: state=%d`
+- `%s: Invalid data size for data available: %u`
+- `%s: FingerON`
+- `%s: Hitting capture watchdog in capture finger on`
+- `%s: time out waiting for interrupt in finger on, try to reset`
+- `%s: Put the sensor in Paused mode during imaging`
+- `%s: entry, reason=%d`
+- `%s: calling runAction(LoadPatchGated)`
+- `%s: CRC check: unexpected image length (%zu bytes)`
+- `%s: dynamic cast failed for %s`
+- `%s: interrupts not created`
+- `%s: Corrupted sensor status`
+- `%s: CRC check: unexpected length (%u bytes) for subarray %zu`
+- `%s: CRC: actual=0x%04x, expected=0x%04x - %s`
+- `%s: status 0x%x, sensor status 0x%x`
+- `%s: mask=0x%X, bad=%s`
+- `%s: entry: forClient=%p, isOpen()=%x`
+- `%s: useCaptureType= %u`
+- `%s: entry: sender=%p`
+- `%s: kCMDStopSSHBHB finished succesfully`
+- `%s: SSHB test in progress, skipping sensor disable.`
+- `%s: kEncryptedWriteUpperHalfKeySent`
+- `%s: Put Sensor in Finger detect mode`
+- `%s: Deferred idle command sent. Dropping image`
+- `%s: Stats:`
+- `%s: kCMDGetModuleSerialNum: CRC - %s`
+- `%s: AppleSPIBiometricSensor::_interruptAction - interrupt suppressed due to sensorEmulation`
+- `%s: sensor sanity checking failed on start, power cycle`
+- `%s: pHandleCMDSyncContext->done=%s`
+- `%s: (Long) Reset the sensor`
+- `%s: Put Sensor in Burn In mode`
+- `%s: entry, capture=%p`
+- `%s: Found Navajo\n`
+- `%s: Sensor has been disabled due to high current`
+- `%s: LockSensor CMD`
+- `%s: k(RePairing)SessionKeyExchangeSent called without a valid key..`
+- `%s: Force Idle, Complete pending command`
+- `%s: kCMDGetSensorNonce SecurityAssurance: 0x%x`
+- `%s: kCMDReprovisionSEPKey: received unexpected response, length of data = %zu`
+- `%s: Sensor has been disabled due to high current.`
+- `%s: ECHO CMD`
+- `%s: kCMDInitializeSequenceCounter called without a valid encrypted data..`
+- `%s: ProvisionSensor invalid root key size`
+- `%s: LockLowerHalfKey CMD`
+- `%s: HVBOOST enabled`
+- `%s: entry: _cmd=0x%x`
+- `%s: Target state same as current state: %u`
+- `%s: Type: 0x%x`
+- `%s: MesaSEP denied request for recovery due to: %s`
+- `%s: unsupported pending command in imagiing mode %d`
+- `%s: ERROR _patch=%p`
+- `%s:  - changing mode from %d to %d`
+- `%s: entry, result=%d`
+- `%s: kCMDStartBurnIn failed. Sensor status=0x%x`
+- `%s: capture watchdog timer disabled`
+- `%s: (kCMDSkipFingerDetect) Set Parameter failed with err = %#x`
+- `%s: CalibrateAndUpdateNVM CMD`
+- `%s: Encrypted command 0x%x failed`
+- `Wrote: %5zuB | %s\n`
+- `%s: exit, ret=%d`
+- `%s: AppleMesa::handleCMD -- kCMDSetEncryptedParameters buffer too large.`
+- `%s: Echo Message Response`
+- `%s: Failed CRC check on subarray %zu. Calculated 0x%X - Expected 0x%X`
+- `%s: Failed to allocate %#llx bytes`
+- `%s: entry`
+- `%s: entry: context=%p, _cmd=0x%x, status=0x%x`
+- `%s: entry: _lastCmd=0x%x, _currentState=%d`
+- `%s: Reset complete – sensor is up!`
+- `%s: SPI frequency overridden to %d in device tree`
+- `%s: (RePairing)SessionKeyExchange SecurityAssurance: 0x%x`
+- `%s: kCMDInitializeSequenceCounter received an error response..`
+- `%s: CRC check failed on subarray %zu. Calculated 0x%X - Expected 0x%X`
+- `%s: GoToProductionModeWithParameters invalid command size`
+- `%s: Failed to create command gate!`
+- `%s: HostIntDepth setting failed with err = %#x`
+- `%s: kCMDReprovisionSensor: received unexpected response, length of data = %zu`
+- `%s: Setup 8 bit mode`
+- `%s: entry: %p, %p`
+- `%s: entry: lastCmd=0x%x, dataBuffer=%p, dataLength=%zu`
+- `%s: kCMDEncryptedGetModuleSerialNum: data buffer has unexpected length = %zu`
+- `%s: Read HeartBeat history response`
+- `%s: service matched`
+- `%s: entry: pContext(done)=%p`
+- `%s: context=%p, cmd=0x%x: continue`
+- `%s: Setup Patch Enable on the sensor`
+- `%s: SPI error detected. Ignore mask = 0x%X`
+- `%s: (RePairing)SessionKeyExchange CMD`
+- `%s: EncryptedLockLowerHalfKey CMD`
+- `%s: Go To Production Mode with Parameters`
+- `%s: done`
+- `%s: Power cycle the sensor`
+- `%s: capture watchdog timer enabled`
+- `%s: Sensor already in capture mode, ignore`
+- `%s: kCMDBurnIn failed. Not in kSensorIdle. _currentState=0x%x`
+- `%s: Initiating transfer with TX: %p %llx, RX: %p %llx`
+- `%s: CRC check failed on Sensor Data Message. Calculated 0x%X - Expected 0x%X`
+- `%s: AppleSPIBiometricSensor::enableInterrupts exit`
+- `%s: TestCMD timeout -> Interrupt line broken`
+- `%s: sent patch to sensor`
+- `%s: Put Sensor in %sCapture mode`
+- `%s: A new recovery request should be fired in approximately %ums.`
+- `%s: Sleep the sensor in imaging`
+- `%s: AppleBiometricSensorEventSource::%s: result=%x`
+- `%s: Provision: CRC check failed`
+- `%s: provision status 0x%x, sensor status 0x%x`
+- `%s: Pause sent, finger on -> Complete pause capture command`
+- `%s: Do nothing`
+- `%s: entry, type=%d`
+- `%s: kCMDGetSensorNonce CRC check failed`
+- `%s: exit, success=%d`
+- `%s: Trying to recover from abnormal state`
+- `%s: Switching from kCaptureFingerON to kIdle`
+- `%s: Setup 16 bit mode`
+- `%s: powerControlType: %d wakeOnMenuPin: %d`
+- `%s: Emulator interrupt`
+- `%s: RECOVERY: Reason %d, Last command 0x%x`
+- `%s: TEST CMD response`
+- `%s: entry: desiredPowerState=%d`
+- `%s: service match failed for %s`
+- `%s: Put sensor in Read Data mode`
+- `%s: ignore command in bypass mode`
+- `%s: WriteUpperHalfKey invalid key size`
+- `%s: WriteUpperHalfKey CMD`
+- ` Read: %5zuB | %s\n`
+- `%s: Sensor has been disabled due to user requirement`
+- `%s: kCMDPauseCapture failed. Sensor not in caputre state. _currentState=%x`
+- `%s: EncryptedLockLowerHalfKey invalid buffer size`
+- `%s: %2ld: %3u`
+- `%s: kCMDGetModuleSerialNum: data buffer has unexpected length = %zu`
+- `%s: Get Sensor Nonce`
+- `%s: INTERRUPTED!!!`
+- `%s: Spurious interrupt`
+- `%s: kCalibrateAndUpdateNVMSent`
+- `%s: Nothing to do, skipping`
+- `%s: kCMDGetSensorNonce received an error response..`
+- `%s: kUnpairUpperHalfKeySent`
+- `%s: AppleSPIBiometricSensor::enableInterrupts %s`
+- `%s: Changing state from %u to %u`
+- `%s: Setup the Host INT threshold`
+- `%s: (RePairing)SessionKeyExchange invalid session key size`
+- `%s: Provision: Invalid response size`
+- `%s: Reprovision response`
+- `%s: 1V8 off`
+- `%s: AppleSPIBiometricSensor::start`
+- `%s: unexpected sensor type 0x%x (expected: 0x%x) - disabling the sensor`
+- `%s: X162Bypass= %u`
+- `%s: interrupt on Mesa wakeup`
+- `%s: EncryptedWriteUpperHalfKey invalid key size`
+- `%s: kCMDLockSensor`
+- `%s: kEncryptedLockLowerHalfKeySent`
+- `%s: entry: inPatchOverride=%p`
+- `%s: Exceeded Current High Samples 3v0: %d, %d, %d, %d, %d,  High Samples 1v8: %d, %d, %d, %d, %d`
+- `%s: Sensor in unknown state, reset and try again = %x`
+- `%s: AppleMesa::handleCMD -- Encryted command 0x%x buffer too large.`
+- `%s: Unexpected reset`
+- `%s: Reprovision SEP Key ResponseCode: 0x%x`
+- `%s: Unrecognized subcommand 0x%x`
+- `%s: IDLE did not take effect yet. Wait to see if it was just a pending interrupt`
+- `%s: entry: _cmd=0x%x, _refcon=%p, result=0x%x`
+- `%s: kCMDGetSensorNonce: valid`
+- `%s: kCMDGetSensorNonce unexpected length..`
+- `%s: AOP woke up`
+- `%s: kCMDStartBurnIn finished succesfully`
+- `%s: kCMDInitializeSequenceCounter unexpected length..`
+- `%s: entry, SubCommand: 0x%x\n`
+- `%s: Changing power state from %llu to %llu`
+- `%s: patch load done interrupt`
+- `%s: Provision ResponseCode: 0x%x`
+- `%s: (kCMDSetEncryptedParameters) Set Parameter was successful`
+- `%s: kCMDLockLowerHalfKey`
+- `%s: Get Serial Number`
+- `%s: Sensor already in finger detect mode, ignore`
+- `%s: entry: result=0x%x`
+- `%s: kCMDGetSerialNum received unexpected length = %zu`
+- `%s: k(RePairing)SessionKeyExchangeSent unexpected length..`
+- `%s: Failed to create interrupt event source!`
+- `%s: AppleSPIBiometricSensor::_interruptAction -- error from handleInterrupt (%s)`
+- `%s: entry: fwBuffer=%p, fwLen=%llu`
+- `%s: A reset was sent but the chip doesn't think it was reset.. Something is wrong..`
+- `%s: IDLE CMD response`
+- `%s: entry, fingerOn=%d, _fingerOnState=%d`
+- `%s: Put Sensor in Menu pin capture mode`
+- `%s: SSHB watchdog recovery was successful!`
+- `%s: GoToProductionMode response`
+- `%s: Sensor has been disabled due to user requirement.`
+- `%s: Command DHKeyExchange is in progress, skipping ESDRecovery.`
+- `%s: Sent message of %llu bytes`
+- `%s: entry: powerState=%d`
+- `%s: Error from SPI transfer (%s)`
+- `%s: Dropping command 0x%x`
+- `%s: EncryptedWriteUpperHalfKey CMD`
+- `%s: bad sensor status in capture watchdog, trying to reset`
+- `%s: Paused state, dropping image (%zu bytes)`
+- `%s: kCMDGetSensorNonce Error SecurityAssurance: 0x%x`
+- `%s: AppleSPIBiometricSensor::free`
+- `%s: Arming a watchdog that will try to recover the sensor. Current attempt: %u`
+- `%s: TIMEOUT!!!`
+- `%s: CalibrateAndUpdateNVM invalid key size`
+- `%s: capture watchdog hits an interrupt`
+- `%s: (RePairing)SessionKeyExchange response`
+- `%s: Encrypted command 0x%x was successful`
+- `%s: disabling the sensor`
+- `%s: InitializeSequenceCounter CMD`
+- `%s: AppleBiometricSensorEventSource::%s: es=%p`
+- `%s: AppleSPIBiometricSensor::enableInterrupts ABSEReplay - disable interrupts`
+- `%s: exit, result=0x%x, ret=%s`
+- `%s: (Short) Reset the sensor`
+- `%s: Finger detect watchdog timer enabled`
+- `%s: IDLE CMD Successful`
+- `%s: (kCMDSkipFingerDetect) Set Parameter was successful`
+- `%s: patch load failed. Something is wrong..`
+- `%s: Switching from kFdetFingerON to kIdle`
+- `%s: kWriteUpperHalfKeySent`
+- `%s: Sensor was previously in Finger ON state`
+- `%s: Failed to acquire workLoop!`
+- `%s: RestoreOS, not waiting for AOP.`
+- `%s:  - unknown provider: %p `
+- `%s: hibernateState: %d`
+- `%s: Request for recovery was succesfully accepted; MesaSEP will soon initiate recovery`
+- `%s: HostIntDepth specified size too large: %u`
+- `%s: entry: _currentState=%d, _cmd=0x%x`
+- `%s: Sensor with patch loaded but in bootROM`
+- `%s: exit, waking=%p, done=%d`
+- `%s: Unexpected reset (watchdog)`
+- `%s: handle command in imaging mode`
+- `%s: (kCMDHostIntDepth) Set Parameter was successful`
+- `%s: Switching from kCaptureFingerOFF to kSensorIdle`
+- `%s: Reprovision SEP Key response`
+- `%s: exit`
+- `%s: Sleep the sensor`
+- `%s: Put the sensor in Paused mode`
+- `%s: UnpairUpperHalfKey CMD`
+- `%s: kCMDStopSSHBHB failed. Sensor status=0x%x`
+- `%s: k(RePairing)SessionKeyExchangeSent received an error response..`
+- `%s: AssertMacros: %s (value = 0x%lx), %s file: %s, line: %d`
+- `%s: exit, err=0x%x`
+- `%s: Setup skip finger`
+- `%s: (kSetImageBitDepthSent ) Set Parameter failed with err = %#x`
+- `%s: InitializeSequenceCounter response`
+- `%s: AppleSPIBiometricSensor::enableInterrupts(%s)`
+- `%s: AppleSPIBiometricSensor::_setPropertiesGated`
+- `%s: called with eventsources still enabled`
+- `%s: Read HeartBeat history`
+- `%s: Initiate attach to AppleBiometricSensorEmulator`
+- `%s: Sensor in already in capture state.`
+- `%s: SSHB watchdog recovery failed to finish. Making a new attempt!`
+- `%s: HostIntDepth Set`
+- `%s: kCMDDHKeyExchange: received unexpected response, length of data = %zu`
+- `%s: txBuffer.length()=%zu rxBuffer.length()=%zu`
+- `%s: 1V8 on`
+- `%s: bad sensor status in wakeup path`
+- `%s: Sensor was previously in Finger OFF state`
+- `%s: Provision SecurityAssurance: 0x%x`
+- `%s:  - emulator interrupt`
+- `%s: entry: cmd=0x%x, param0=%p, param1=%p, param2=%p`
+- `%s: %zu bytes read`
+- `%s: kCMDEncryptedGetModuleSerialNum: data buffer is null`
+- `%s: Unknown provider: %p`
+- `%s: kCMDStartCapture failed. Not in kSensorIdle or kCapturePaused state. _currentState=%x`
+- `%s: LockUpperHalfKey CMD`
+- `%s: kCMDStartFingerDetect failed. Not in kSensorIdle. _currentState=%x`
+- `%s: Not enough data to read in capture mode(%u)`
+- `%s: (kCMDSetImageBitDepth ) Set Parameter was successful`
+- `%s: continue`
+- `%s: InitializeSequenceCounter invalid size`
+- `%s: _patch=%p`
+- `%s: FingerOFF`
+- `%s: entry: result=0x%x, refcon=%p`
+- `%s: entry: context=%p, command->_cmd=0x%x, _lastCmd=0x%x, _currentState=%d`
+- `%s: (kCMDSetEncryptedParameters) Set Parameter failed with err = %#x`
+- `%s: Sensor switched succesfully to kIdle`
+- `%s: AppleSPIBiometricSensor::start returning succesfully`
+- `%s: Looking for AOP driver...`
+- `%s: kCMDSetupPatchEnable was sent but the chip is not in IDLE state. Something is wrong..`
+- `%s: kLockUpperHalfKeySent`
+- `%s: Waiting %dms`
+- `%s: Initiate detach from AppleBiometricSensorEmulator`
+- `%s: exit, pContext=%p, err=0x%x`
+- `%s: exit, context=%p, cmd=0x%x, err=0x%x`
+- `%s: Provision response`
+- `%s: Reprovision ResponseCode: 0x%x`
+- `%s: AppleSPIBiometricSensor::_interruptAction`
+- `%s: Idle the sensor in imaging`
+- `%s: kCMDGetSerialNum received an error response..`
+- `%s: GoToProductionMode command failed with err = %#x`
+- `%s: loaded patch vers=%d`
+- `%s: Finger off in pause mode but the sensor is not idle, force Idle`
+- `%s: Wake from hibernation`
+- `%s: Idle the sensor`
+- `%s: GoToProduction CMD`
+- `%s: Over current detected, power down sensor`
+- `%s: AOP is going to sleep`
+- `%s: Not defined message`
+- `%s: kFdetSent`
+- `%s: GetStatus() hits an interrupt`
+- `%s: kCMDMenuPinCapture failed. Not in kSensorIdle or patch not loaded. _currentState=%x`
+- `%s: Encrypted command 0x%x failed with err=0x%x`
+- `%s: Get Sensor Nonce response`
+- `%s: kCMDStopSSHBHB failed. Not in kSensorIdle. _currentState=0x%x`
+- `%s: kStartCaptureSent`

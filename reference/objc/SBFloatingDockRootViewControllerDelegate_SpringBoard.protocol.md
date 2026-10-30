@@ -1,0 +1,37 @@
+# `SBFloatingDockRootViewControllerDelegate` (protocol)
+
+- Image: [`/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard`](../userland/System__Library__PrivateFrameworks__SpringBoard.framework__SpringBoard.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Protocols: `NSObject`
+- 0 instance variables, 0 properties, 27 instance methods, 0 class methods
+
+## Instance methods
+
+```
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewController:didChangeToFrame:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewController:floatingDockWantsToBePresented:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewController:willChangeToHeight:interactive:];
+-[SBFloatingDockRootViewControllerDelegate reconnectHostingClient:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewControllerShouldHandlePanGestureRecognizer:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewController:acquireOrderFloatingDockContainerBeforeLibraryAssertionForReason:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewController:canHandleDataDropSession:inIconListView:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewController:dataDropSessionDidUpdate:inIconListView:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewController:didChangeIconList:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewController:didEndEditingWithUserIconCount:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewController:finishDownloadAnimationDidEndForIconView:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewController:finishDownloadAnimationWillBeginForIconView:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewController:modifyProgress:interactive:completion:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewController:willPerformTransitionWithFolder:presenting:withTransitionCoordinator:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewController:willTransitionToSize:withTransitionCoordinator:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewControllerDidEndPresentationTransition:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewControllerDidStartEditing:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewControllerShouldConstrainPlatterDuringEditing:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewControllerShouldHideWhenEmpty:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewDidBecomeVisible:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewDidResignVisible:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewWillBecomeVisible:];
+-[SBFloatingDockRootViewControllerDelegate floatingDockRootViewWillResignVisible:];
+-[SBFloatingDockRootViewControllerDelegate foregroundLibraryContainerViewControllerForFloatingDockRootViewController:];
+-[SBFloatingDockRootViewControllerDelegate isDefaultLibraryContainerViewControllerForegroundForFloatingDockRootViewController:];
+-[SBFloatingDockRootViewControllerDelegate libraryContainerViewControllerForFloatingDockRootViewController:];
+-[SBFloatingDockRootViewControllerDelegate minimumHomeScreenScaleForFloatingDockRootViewController:];
+```

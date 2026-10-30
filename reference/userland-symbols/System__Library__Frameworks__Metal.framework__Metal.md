@@ -1,0 +1,2423 @@
+# Symbols: `/System/Library/Frameworks/Metal.framework/Metal`
+
+Symbol table of this image in the iOS 27.2 dyld shared cache (`ipsw dyld macho -n --demangle`). The class-level view is on the [image page](../userland/System__Library__Frameworks__Metal.framework__Metal.md). **[DSC]**
+
+1,406 public symbols, 14,756 private symbols, 0 undefined (imported).
+
+## Public (external)
+
+```
+0x1e0e878f0  __DATA_CONST,__const  _MTL4CommandQueueErrorDomain
+0x1a50d5724  __TEXT,__text  _MTLAPIDebugEnabled
+0x1a51064dc  __TEXT,__text  _MTLAddDevice
+0x1a526bd80  __TEXT,__text  _MTLAddMessageObserver
+0x1a51a47b8  __TEXT,__text  _MTLBVHDescriptorForMTLAccelerationStructureDescriptor
+0x1e0e878e8  __DATA_CONST,__const  _MTLBinaryArchiveDomain
+0x1ebd8f800  __DATA,__data  _MTLBinaryFunctionPerformanceKeyFunctionName
+0x1a5207018  __TEXT,__text  _MTLCPUCacheModeString
+0x1a52080c0  __TEXT,__text  _MTLCalculateSourceBufferSizeAndAlignment
+0x1a5211204  __TEXT,__text  _MTLCaptureEnabled
+0x1e0e878e0  __DATA_CONST,__const  _MTLCaptureErrorDomain
+0x1e0e878d8  __DATA_CONST,__const  _MTLCommandBufferCommitTime
+0x1e0e878d0  __DATA_CONST,__const  _MTLCommandBufferCompletionHandlerEnqueueTime
+0x1e0e878c8  __DATA_CONST,__const  _MTLCommandBufferCompletionHandlerExecutionTime
+0x1e0e878b8  __DATA_CONST,__const  _MTLCommandBufferCreationTime
+0x1e0e878b0  __DATA_CONST,__const  _MTLCommandBufferEncoderInfoErrorKey
+0x1e0e878a8  __DATA_CONST,__const  _MTLCommandBufferEnqueueTime
+0x1e0e878a0  __DATA_CONST,__const  _MTLCommandBufferErrorDomain
+0x1e0e87898  __DATA_CONST,__const  _MTLCommandBufferKernelCompleteTime
+0x1e0e87890  __DATA_CONST,__const  _MTLCommandBufferKernelScheduledTime
+0x1e0e87888  __DATA_CONST,__const  _MTLCommandBufferSubmitToHWTime
+0x1e0e87880  __DATA_CONST,__const  _MTLCommandBufferSubmitToKernelTime
+0x1e0e87878  __DATA_CONST,__const  _MTLCommonCounterClipperInvocations
+0x1e0e87870  __DATA_CONST,__const  _MTLCommonCounterClipperPrimitivesOut
+0x1e0e87868  __DATA_CONST,__const  _MTLCommonCounterComputeKernelInvocations
+0x1e0e87860  __DATA_CONST,__const  _MTLCommonCounterFragmentCycles
+0x1e0e87858  __DATA_CONST,__const  _MTLCommonCounterFragmentInvocations
+0x1e0e87850  __DATA_CONST,__const  _MTLCommonCounterFragmentsPassed
+0x1e0e87848  __DATA_CONST,__const  _MTLCommonCounterPostTessellationVertexCycles
+0x1e0e87840  __DATA_CONST,__const  _MTLCommonCounterPostTessellationVertexInvocations
+0x1e0e87838  __DATA_CONST,__const  _MTLCommonCounterRenderTargetWriteCycles
+0x1e0e87830  __DATA_CONST,__const  _MTLCommonCounterSetStageUtilization
+0x1e0e87828  __DATA_CONST,__const  _MTLCommonCounterSetStatistic
+0x1e0e87820  __DATA_CONST,__const  _MTLCommonCounterSetTimestamp
+0x1e0e87818  __DATA_CONST,__const  _MTLCommonCounterTessellationCycles
+0x1e0e87810  __DATA_CONST,__const  _MTLCommonCounterTessellationInputPatches
+0x1e0e87808  __DATA_CONST,__const  _MTLCommonCounterTimestamp
+0x1e0e87800  __DATA_CONST,__const  _MTLCommonCounterTotalCycles
+0x1e0e877f8  __DATA_CONST,__const  _MTLCommonCounterVertexCycles
+0x1e0e877f0  __DATA_CONST,__const  _MTLCommonCounterVertexInvocations
+0x1a51fa350  __TEXT,__text  _MTLCompareDictionary
+0x1a51fa2a4  __TEXT,__text  _MTLCompareFunctionList
+0x1ebd8f7f8  __DATA,__data  _MTLCompileTimeStatisticsKeyBackend
+0x1ebd8f7f0  __DATA,__data  _MTLCompileTimeStatisticsKeyBackendCompilerBuildRequest
+0x1ebd8f7e8  __DATA,__data  _MTLCompileTimeStatisticsKeyBinaryFunctions
+0x1ebd8f7e0  __DATA,__data  _MTLCompileTimeStatisticsKeyCachedFunction
+0x1ebd8f7d8  __DATA,__data  _MTLCompileTimeStatisticsKeyCompilerTotal
+0x1ebd8f7d0  __DATA,__data  _MTLCompileTimeStatisticsKeyDriverTotal
+0x1ebd8f7c8  __DATA,__data  _MTLCompileTimeStatisticsKeyDynamicLibraries
+0x1ebd8f7c0  __DATA,__data  _MTLCompileTimeStatisticsKeyFrameworkInstrumentation
+0x1ebd8f7b8  __DATA,__data  _MTLCompileTimeStatisticsKeyFrameworkTotal
+0x1ebd8f7b0  __DATA,__data  _MTLCompileTimeStatisticsKeyFunctionName
+0x1ebd8f7a8  __DATA,__data  _MTLCompileTimeStatisticsKeyLibrariesFromSource
+0x1ebd8f7a0  __DATA,__data  _MTLCompileTimeStatisticsKeyMTLCompilerService
+0x1ebd8f798  __DATA,__data  _MTLCompileTimeStatisticsKeyOptimization
+0x1ebd8f790  __DATA,__data  _MTLCompileTimeStatisticsKeyPipelineTotal
+0x1ebd8f788  __DATA,__data  _MTLCompileTimeStatisticsKeyPipelines
+0x1ebd8f780  __DATA,__data  _MTLCompileTimeStatisticsKeyPipelinesCompute
+0x1ebd8f778  __DATA,__data  _MTLCompileTimeStatisticsKeyPipelinesRender
+0x1ebd8f770  __DATA,__data  _MTLCompileTimeStatisticsKeyTotal
+0x1ebd8f768  __DATA,__data  _MTLCompileTimeStatisticsKeyTranslator
+0x1a52112e8  __TEXT,__text  _MTLCopyAllDevices
+0x1e0e877e8  __DATA_CONST,__const  _MTLCounterDescriptionClipperInvocations
+0x1e0e877e0  __DATA_CONST,__const  _MTLCounterDescriptionClipperPrimitivesOut
+0x1e0e877d8  __DATA_CONST,__const  _MTLCounterDescriptionComputeKernelInvocations
+0x1e0e877d0  __DATA_CONST,__const  _MTLCounterDescriptionFragmentCycles
+0x1e0e877c8  __DATA_CONST,__const  _MTLCounterDescriptionFragmentInvocations
+0x1e0e877c0  __DATA_CONST,__const  _MTLCounterDescriptionFragmentsPassed
+0x1e0e877b8  __DATA_CONST,__const  _MTLCounterDescriptionPostTessellationVertexCycles
+0x1e0e877b0  __DATA_CONST,__const  _MTLCounterDescriptionPostTessellationVertexInvocations
+0x1e0e877a8  __DATA_CONST,__const  _MTLCounterDescriptionRenderTargetWriteCycles
+0x1e0e877a0  __DATA_CONST,__const  _MTLCounterDescriptionTessellationCycles
+0x1e0e87798  __DATA_CONST,__const  _MTLCounterDescriptionTessellationInputPatches
+0x1e0e87790  __DATA_CONST,__const  _MTLCounterDescriptionTimestamp
+0x1e0e87788  __DATA_CONST,__const  _MTLCounterDescriptionTotalCycles
+0x1e0e87780  __DATA_CONST,__const  _MTLCounterDescriptionVertexCycles
+0x1e0e87778  __DATA_CONST,__const  _MTLCounterDescriptionVertexInvocations
+0x1e0e87770  __DATA_CONST,__const  _MTLCounterErrorDomain
+0x1e0e87768  __DATA_CONST,__const  _MTLCounterSetDescriptionStageUtilization
+0x1e0e87760  __DATA_CONST,__const  _MTLCounterSetDescriptionStatistics
+0x1e0e87758  __DATA_CONST,__const  _MTLCounterSetDescriptionTimestamp
+0x1a52113f4  __TEXT,__text  _MTLCountersLayerEnabled
+0x1a5106dbc  __TEXT,__text  _MTLCreateCompilerConnectionManager
+0x1a5209904  __TEXT,__text  _MTLCreateCompressor
+0x1a5211210  __TEXT,__text  _MTLCreateSimulatorDevice
+0x1a51a8270  __TEXT,__text  _MTLCreateStructTypeFromArgumentDescriptors
+0x1a50c6c1c  __TEXT,__text  _MTLCreateSystemDefaultDevice
+0x1a5280f88  __TEXT,__text  _MTLDataTypeGetAlignment
+0x1a510bacc  __TEXT,__text  _MTLDataTypeGetComponentCount
+0x1a51226ac  __TEXT,__text  _MTLDataTypeGetComponentType
+0x1a5280b34  __TEXT,__text  _MTLDataTypeGetShaderTypeName
+0x1a52809fc  __TEXT,__text  _MTLDataTypeGetSignedType
+0x1a5122900  __TEXT,__text  _MTLDataTypeGetSize
+0x1a5280a28  __TEXT,__text  _MTLDataTypeGetVectorDataType
+0x1a5267998  __TEXT,__text  _MTLDataTypeString
+0x1a50d15b0  __TEXT,__text  _MTLDebugValidateMTLPixelFormat
+0x1e0e87750  __DATA_CONST,__const  _MTLDeviceErrorDomain
+0x1a50d4f0c  __TEXT,__text  _MTLDispatchListAppendBlock
+0x1a50d48ac  __TEXT,__text  _MTLDispatchListApply
+0x1e0e87748  __DATA_CONST,__const  _MTLDynamicLibraryDomain
+0x1a51d0548  __TEXT,__text  _MTLDynamicLibraryLoadOptionsFromPipelineOptions
+0x1ebd8f760  __DATA,__data  _MTLDynamicLibraryPerformanceKeyInstallName
+0x1a51a8b48  __TEXT,__text  _MTLEnumerateIndirectResources
+0x1a50d4cc8  __TEXT,__text  _MTLFailureTypeGetEnabled
+0x1a50d4ce8  __TEXT,__text  _MTLFailureTypeGetErrorModeType
+0x1a52735c0  __TEXT,__text  _MTLFailureTypeSetErrorModeType
+0x1a51c2ed4  __TEXT,__text  _MTLFeatureSetSupportsSamplingFromPixelFormat
+0x1a510ff44  __TEXT,__text  _MTLFunctionTypeString
+0x1a5100a30  __TEXT,__text  _MTLGPUDebugEnabled
+0x1a51c2fdc  __TEXT,__text  _MTLGPUFamilySupportsSamplingFromPixelFormat
+0x1a5158ad4  __TEXT,__text  _MTLGPUOperationString
+0x1a5142c04  __TEXT,__text  _MTLGetDefaultCompilerProcessesCount
+0x1a5207598  __TEXT,__text  _MTLGetDisallowedTextureUsagesWhenSwizzling
+0x1a50d7140  __TEXT,__text  _MTLGetEnvDefault
+0x1a51f9e20  __TEXT,__text  _MTLGetEnvDefaultDouble
+0x1a51fc058  __TEXT,__text  _MTLGetGPUArchiverCachePath
+0x1a514694c  __TEXT,__text  _MTLGetGPUFamilyFromFeatureSet
+0x1a5142c0c  __TEXT,__text  _MTLGetMaximumCompilerProcessesCount
+0x1a51fc020  __TEXT,__text  _MTLGetModulesCachePath
+0x1a51429e0  __TEXT,__text  _MTLGetOptimalCompilerProcessesCount
+0x1a51fcbb8  __TEXT,__text  _MTLGetOverridenDeviceCreationFlags
+0x1a50f28e4  __TEXT,__text  _MTLGetPackFloatFunction
+0x1a5142f44  __TEXT,__text  _MTLGetPackSintFunction
+0x1a5142d68  __TEXT,__text  _MTLGetPackUintFunction
+0x1a50efadc  __TEXT,__text  _MTLGetProcessName
+0x1a527361c  __TEXT,__text  _MTLGetReportFailureBlock
+0x1a510b2e0  __TEXT,__text  _MTLGetShaderCachePath
+0x1a52080b8  __TEXT,__text  _MTLGetTextureLevelInfoForDevice
+0x1a50f259c  __TEXT,__text  _MTLGetTextureLevelInfoForDeviceWithOptions
+0x1a5191808  __TEXT,__text  _MTLGetUnpackFloatFunction
+0x1a5191e74  __TEXT,__text  _MTLGetUnpackSintFunction
+0x1a5191c98  __TEXT,__text  _MTLGetUnpackUintFunction
+0x1a5273548  __TEXT,__text  _MTLGetWarningMode
+0x1a51442b0  __TEXT,__text  _MTLHazardTrackingModeString
+0x1a527dfc4  __TEXT,__text  _MTLIOAccelCommandBufferStorageAllocResourceAtIndex
+0x1a527e170  __TEXT,__text  _MTLIOAccelCommandBufferStorageBeginKernelCommands
+0x1a527e4a4  __TEXT,__text  _MTLIOAccelCommandBufferStorageBeginSegment
+0x1a527d820  __TEXT,__text  _MTLIOAccelCommandBufferStorageCreate
+0x1a527d838  __TEXT,__text  _MTLIOAccelCommandBufferStorageCreateExt
+0x1a527dbec  __TEXT,__text  _MTLIOAccelCommandBufferStorageDealloc
+0x1a527e2cc  __TEXT,__text  _MTLIOAccelCommandBufferStorageEndKernelCommands
+0x1a527e544  __TEXT,__text  _MTLIOAccelCommandBufferStorageEndSegment
+0x1a527e2f8  __TEXT,__text  _MTLIOAccelCommandBufferStorageFinalizeShmemHeader
+0x1a527e43c  __TEXT,__text  _MTLIOAccelCommandBufferStorageGetSegmentListPointers
+0x1a527dea4  __TEXT,__text  _MTLIOAccelCommandBufferStorageGrowKernelCommandBuffer
+0x1a527d9e8  __TEXT,__text  _MTLIOAccelCommandBufferStorageGrowSegmentList
+0x1a527e5f4  __TEXT,__text  _MTLIOAccelCommandBufferStoragePoolCreate
+0x1a527e750  __TEXT,__text  _MTLIOAccelCommandBufferStoragePoolCreateStorage
+0x1a527e648  __TEXT,__text  _MTLIOAccelCommandBufferStoragePoolDealloc
+0x1a527e6c8  __TEXT,__text  _MTLIOAccelCommandBufferStoragePoolPurge
+0x1a527dcfc  __TEXT,__text  _MTLIOAccelCommandBufferStoragePoolReturnStorage
+0x1a527dd84  __TEXT,__text  _MTLIOAccelCommandBufferStorageReleaseAllResources
+0x1a527e130  __TEXT,__text  _MTLIOAccelCommandBufferStorageReleaseDeviceShmems
+0x1a527dc6c  __TEXT,__text  _MTLIOAccelCommandBufferStorageReset
+0x1a527e5a0  __TEXT,__text  _MTLIOAccelCommandBufferStorageResumeSegment
+0x1a518399c  __TEXT,__text  _MTLIOAccelDeviceShmemRelease
+0x1a51c0934  __TEXT,__text  _MTLIOAccelPooledResourceRelease
+0x1a51d0b08  __TEXT,__text  _MTLIOAccelResourcePoolCreatePooledResource
+0x1a520921c  __TEXT,__text  _MTLIOCompressionContextAppendData
+0x1a520903c  __TEXT,__text  _MTLIOCompressionContextDefaultChunkSize
+0x1a52090c4  __TEXT,__text  _MTLIOCreateCompressionContext
+0x1a5209950  __TEXT,__text  _MTLIOCreateDecompressionContext
+0x1a5209b24  __TEXT,__text  _MTLIODecompressionContextOffset
+0x1a5209b4c  __TEXT,__text  _MTLIODecompressionContextRead
+0x1a5209b40  __TEXT,__text  _MTLIODecompressionContextSize
+0x1a5209ac4  __TEXT,__text  _MTLIODecompressionContextStagingBufferSize
+0x1a5209d14  __TEXT,__text  _MTLIODecompressionContextValidate
+0x1a523414c  __TEXT,__text  _MTLIODefaultCommandsInFlightForDevice
+0x1a5209a84  __TEXT,__text  _MTLIODestroyDecompressionContext
+0x1e0e87740  __DATA_CONST,__const  _MTLIOErrorDomain
+0x1a520927c  __TEXT,__text  _MTLIOFlushAndDestroyCompressionContext
+0x1a5234148  __TEXT,__text  _MTLIOMaxCommandsInFlightForDevice
+0x1a5234128  __TEXT,__text  _MTLIOQosClassForPriority
+0x1e0e87738  __DATA_CONST,__const  _MTLLibraryErrorDomain
+0x1ebd8f758  __DATA,__data  _MTLLibraryPerformanceKeyCachedLibrary
+0x1ebd8f750  __DATA,__data  _MTLLibraryPerformanceKeyCoreImageSPI
+0x1ebd8f748  __DATA,__data  _MTLLibraryPerformanceKeyFunctionNames
+0x1ebd8f740  __DATA,__data  _MTLLibraryPerformanceKeyFunctionSpecialization
+0x1ebd8f738  __DATA,__data  _MTLLibraryPerformanceKeyTotalFrontendTotalTime
+0x1e0e87730  __DATA_CONST,__const  _MTLLogStateErrorDomain
+0x1a51fc0fc  __TEXT,__text  _MTLMakeShaderCacheWritableByAllUsers
+0x1e0e87728  __DATA_CONST,__const  _MTLMessageArrayKey
+0x1a51fcba0  __TEXT,__text  _MTLOverrideDeviceCreationFlags
+0x1a50f27c0  __TEXT,__text  _MTLPackColor
+0x1ebd8f730  __DATA,__data  _MTLPipelinePerformanceKeyALUCount
+0x1ebd8f728  __DATA,__data  _MTLPipelinePerformanceKeyBranchCount
+0x1ebd8f720  __DATA,__data  _MTLPipelinePerformanceKeyCompilationTime
+0x1ebd8f718  __DATA,__data  _MTLPipelinePerformanceKeyCompileTimeStatistics
+0x1ebd8f710  __DATA,__data  _MTLPipelinePerformanceKeyDeviceAtomicCount
+0x1ebd8f708  __DATA,__data  _MTLPipelinePerformanceKeyDeviceLoadCount
+0x1ebd8f700  __DATA,__data  _MTLPipelinePerformanceKeyDeviceStoreCount
+0x1ebd8f6f8  __DATA,__data  _MTLPipelinePerformanceKeyFP16InstructionCount
+0x1ebd8f6f0  __DATA,__data  _MTLPipelinePerformanceKeyFP32InstructionCount
+0x1ebd8f6e8  __DATA,__data  _MTLPipelinePerformanceKeyFragmentShader
+0x1ebd8f6e0  __DATA,__data  _MTLPipelinePerformanceKeyGASNativeInstructionCount
+0x1ebd8f6d8  __DATA,__data  _MTLPipelinePerformanceKeyINT16InstructionCount
+0x1ebd8f6d0  __DATA,__data  _MTLPipelinePerformanceKeyINT32InstructionCount
+0x1ebd8f6c8  __DATA,__data  _MTLPipelinePerformanceKeyInstructionCount
+0x1ebd8f6c0  __DATA,__data  _MTLPipelinePerformanceKeyLoopCount
+0x1ebd8f6b8  __DATA,__data  _MTLPipelinePerformanceKeyMaxTemporaryRegisters
+0x1ebd8f6b0  __DATA,__data  _MTLPipelinePerformanceKeyMaxTheoreticalOccupancy
+0x1ebd8f6a8  __DATA,__data  _MTLPipelinePerformanceKeyMaxThreadgroupMemory
+0x1ebd8f6a0  __DATA,__data  _MTLPipelinePerformanceKeyMaxUniformRegisters
+0x1ebd8f698  __DATA,__data  _MTLPipelinePerformanceKeyMeshShader
+0x1ebd8f690  __DATA,__data  _MTLPipelinePerformanceKeyNonSmashableAtomicInstructionCount
+0x1ebd8f688  __DATA,__data  _MTLPipelinePerformanceKeyObjectShader
+0x1ebd8f680  __DATA,__data  _MTLPipelinePerformanceKeyRemarks
+0x1ebd8f678  __DATA,__data  _MTLPipelinePerformanceKeySmashableAtomicInstructionCount
+0x1ebd8f670  __DATA,__data  _MTLPipelinePerformanceKeySpillsCount
+0x1ebd8f668  __DATA,__data  _MTLPipelinePerformanceKeyTemporaryRegisterCount
+0x1ebd8f660  __DATA,__data  _MTLPipelinePerformanceKeyTextureReadCount
+0x1ebd8f658  __DATA,__data  _MTLPipelinePerformanceKeyTextureWriteCount
+0x1ebd8f650  __DATA,__data  _MTLPipelinePerformanceKeyThreadInvariantSpillsCount
+0x1ebd8f648  __DATA,__data  _MTLPipelinePerformanceKeyThreadgroupAtomicCount
+0x1ebd8f640  __DATA,__data  _MTLPipelinePerformanceKeyThreadgroupLoadCount
+0x1ebd8f638  __DATA,__data  _MTLPipelinePerformanceKeyThreadgroupMemory
+0x1ebd8f630  __DATA,__data  _MTLPipelinePerformanceKeyThreadgroupStoreCount
+0x1ebd8f628  __DATA,__data  _MTLPipelinePerformanceKeyUniformRegisterCount
+0x1ebd8f620  __DATA,__data  _MTLPipelinePerformanceKeyVertexShader
+0x1ebd8f618  __DATA,__data  _MTLPipelinePerformanceKeyWaitCount
+0x1a51c3110  __TEXT,__text  _MTLPixelFormatCompatibilityString
+0x1a50d5730  __TEXT,__text  _MTLPixelFormatComputeTotalSizeUsed
+0x1a51c3244  __TEXT,__text  _MTLPixelFormatComputeiOSTotalSizeUsed
+0x1a51470c4  __TEXT,__text  _MTLPixelFormatGetInfo
+0x1a50c6f5c  __TEXT,__text  _MTLPixelFormatGetInfoForDevice
+0x1a511fde8  __TEXT,__text  _MTLPixelFormatGetName
+0x1a52a20f8  __TEXT,__text  _MTLProgressBinsEnableVirtualSubstreams
+0x1a52a2018  __TEXT,__text  _MTLProgressBinsForceBarrier
+0x1a521d08c  __TEXT,__text  _MTLProgressBinsFree
+0x1a521d0c8  __TEXT,__text  _MTLProgressBinsGetActiveSubstream
+0x1a521d0c0  __TEXT,__text  _MTLProgressBinsGetNumberOfSubstreams
+0x1a521cfd0  __TEXT,__text  _MTLProgressBinsMake
+0x1a52a2208  __TEXT,__text  _MTLProgressBinsReset
+0x1a521d584  __TEXT,__text  _MTLProgressBinsSelectSubstreamWithBufferWriteSize
+0x1a521d184  __TEXT,__text  _MTLProgressBinsSelectSubstreamWithDescriptor
+0x1a521d508  __TEXT,__text  _MTLProgressBinsSelectSubstreamWithPrimitiveCount
+0x1a521d0d0  __TEXT,__text  _MTLProgressBinsSynchronizeBuffer
+0x1a52a2108  __TEXT,__text  _MTLProgressBinsSynchronizeBufferAccess
+0x1a521d5e0  __TEXT,__text  _MTLProgressBinsUpdate
+0x1a528046c  __TEXT,__text  _MTLPurgeableStateString
+0x1a50f8a04  __TEXT,__text  _MTLRangeAllocatorAllocate
+0x1a51915d8  __TEXT,__text  _MTLRangeAllocatorAllocateRange
+0x1a50d6770  __TEXT,__text  _MTLRangeAllocatorDeallocate
+0x1a51420ec  __TEXT,__text  _MTLRangeAllocatorDestroy
+0x1a51915c8  __TEXT,__text  _MTLRangeAllocatorGetFragmentCapacity
+0x1a51915c0  __TEXT,__text  _MTLRangeAllocatorGetFragmentCount
+0x1a5191710  __TEXT,__text  _MTLRangeAllocatorGetFreeCount
+0x1a5191754  __TEXT,__text  _MTLRangeAllocatorGetFreeSize
+0x1a5191798  __TEXT,__text  _MTLRangeAllocatorGetMaxFreeSize
+0x1a50f2020  __TEXT,__text  _MTLRangeAllocatorInit
+0x1a510cec4  __TEXT,__text  _MTLRangeAllocatorInitWithStartRange
+0x1a51915d0  __TEXT,__text  _MTLRangeAllocatorSetFragmentCapacityIncrement
+0x1a51c3348  __TEXT,__text  _MTLReadWriteTextureIsSupported
+0x1a52a7068  __TEXT,__text  _MTLReleaseAssertionFailure
+0x1a526bf70  __TEXT,__text  _MTLRemoveMessageObserver
+0x1a526ccc8  __TEXT,__text  _MTLRenderPipelineColorAttachmentDescriptorDescription
+0x1a5273668  __TEXT,__text  _MTLReportFailure
+0x1a513d144  __TEXT,__text  _MTLReportFailureTypeEnabled
+0x1a50d3d70  __TEXT,__text  _MTLResourceListAddResource
+0x1a5142490  __TEXT,__text  _MTLResourceListPoolCreateResourceList
+0x1a52802d4  __TEXT,__text  _MTLResourceListRelease
+0x1a51441e4  __TEXT,__text  _MTLResourceOptionsString
+0x1a52254d4  __TEXT,__text  _MTLSamplerBorderColorString
+0x1a51fc154  __TEXT,__text  _MTLSetCompilerTestMode
+0x1a5273628  __TEXT,__text  _MTLSetReportFailureBlock
+0x1a51430f0  __TEXT,__text  _MTLSetShaderCachePath
+0x1a5273580  __TEXT,__text  _MTLSetWarningMode
+0x1a5104a18  __TEXT,__text  _MTLShouldEnableNewCompilerScheduler
+0x1a51fa72c  __TEXT,__text  _MTLSizeToNSArray
+0x1a5280494  __TEXT,__text  _MTLSparsePageSizeString
+0x1a5207044  __TEXT,__text  _MTLStorageModeString
+0x1a5267d48  __TEXT,__text  _MTLTagTypeString
+0x1e0e87720  __DATA_CONST,__const  _MTLTensorDomain
+0x1a520721c  __TEXT,__text  _MTLTextureCompressionTypeString
+0x1a520739c  __TEXT,__text  _MTLTextureSwizzleChannelsToKey
+0x1a5207398  __TEXT,__text  _MTLTextureSwizzleKeyToChannels
+0x1a520740c  __TEXT,__text  _MTLTextureSwizzleString
+0x1a52073a0  __TEXT,__text  _MTLTextureSwizzleViewSwizzle
+0x1a5206ff4  __TEXT,__text  _MTLTextureTypeString
+0x1a5207068  __TEXT,__text  _MTLTextureUsageString
+0x1a50d7214  __TEXT,__text  _MTLTraceEnabled
+0x1a5158a10  __TEXT,__text  _MTLTraceEnabledSPI
+0x1a5158a40  __TEXT,__text  _MTLTraceEventSPI
+0x1a5192018  __TEXT,__text  _MTLUnpackColor
+0x1a5203f54  __TEXT,__text  _MTLValidateFeatureSupport
+0x1a5204040  __TEXT,__text  _MTLValidateFeatureSupportWithContext
+0x1a510c978  __TEXT,__text  _MTLValidationEnabled
+0x1e0e87718  __DATA_CONST,__const  _MTLValidationErrorDomain
+0x1a526efa0  __TEXT,__text  _MTLVertexAmplificationModeString
+0x1a5308740  __TEXT,__const  _NSDeviceCertificationMacPerformanceGamingTier1
+0x1a5308748  __TEXT,__const  _NSDeviceCertificationMacPerformanceGamingTier2
+0x1a5308730  __TEXT,__const  _NSDeviceCertificationiPadPerformanceGamingTier1
+0x1a5308738  __TEXT,__const  _NSDeviceCertificationiPadPerformanceGamingTier2
+0x1a5308728  __TEXT,__const  _NSDeviceCertificationiPhonePerformanceGaming
+0x1e0e87710  __DATA_CONST,__const  _NSProcessInfoPerformanceProfileDidChangeNotification
+0x1a5308750  __TEXT,__const  _NSProcessPerformanceProfileDefault
+0x1a5308758  __TEXT,__const  _NSProcessPerformanceProfileSustained
+0x1ef742380  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4AccelerationStructureBoundingBoxGeometryDescriptor
+0x1ef742358  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4AccelerationStructureCurveGeometryDescriptor
+0x1ef742330  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4AccelerationStructureDescriptor
+0x1ef742308  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4AccelerationStructureGeometryDescriptor
+0x1ef7422e0  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4AccelerationStructureMotionBoundingBoxGeometryDescriptor
+0x1ef7422b8  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4AccelerationStructureMotionCurveGeometryDescriptor
+0x1ef742290  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4AccelerationStructureMotionTriangleGeometryDescriptor
+0x1ef742268  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4AccelerationStructureTriangleGeometryDescriptor
+0x1ef7413e0  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4ArchiveReply
+0x1ef742240  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4ArgumentTableDescriptor
+0x1ef742218  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4BinaryFunctionDescriptor
+0x1ef7413b8  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4BinaryFunctionReflection
+0x1ef7421f0  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4CommandAllocatorDescriptor
+0x1ef7421c8  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4CommandBufferOptions
+0x1ef7421a0  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4CommandQueueDescriptor
+0x1ef742178  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4CommitOptions
+0x1ef742150  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4CompilerDescriptor
+0x1ef742128  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4CompilerTaskOptions
+0x1ef742100  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4ComputePipelineDescriptor
+0x1ef7420d8  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4CounterHeapDescriptor
+0x1ef7420b0  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4FunctionDescriptor
+0x1ef742088  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4IndirectInstanceAccelerationStructureDescriptor
+0x1ef742060  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4InstanceAccelerationStructureDescriptor
+0x1ef742038  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4LibraryDescriptor
+0x1ef742010  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4LibraryFunctionDescriptor
+0x1ef741fe8  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4MachineLearningPipelineDescriptor
+0x1ef741fc0  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4MachineLearningPipelineReflection
+0x1ef741f98  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4MeshRenderPipelineDescriptor
+0x1ef741f70  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4PipelineDataSetSerializerDescriptor
+0x1ef741f48  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4PipelineDescriptor
+0x1ef741f20  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4PipelineOptions
+0x1ef741ef8  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4PipelineStageDynamicLinkingDescriptor
+0x1ef741ed0  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4PrimitiveAccelerationStructureDescriptor
+0x1ef741ea8  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4RenderPassDescriptor
+0x1ef741e80  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4RenderPipelineBinaryFunctionsDescriptor
+0x1ef741e58  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4RenderPipelineColorAttachmentDescriptor
+0x1ef741e30  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4RenderPipelineColorAttachmentDescriptorArray
+0x1ef741e08  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4RenderPipelineDescriptor
+0x1ef741de0  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4RenderPipelineDynamicLinkingDescriptor
+0x1ef741db8  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4SpecializedFunctionDescriptor
+0x1ef741d90  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4StaticLinkingDescriptor
+0x1ef741d68  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4StitchedFunctionDescriptor
+0x1ef741d40  __AUTH,__objc_data  _OBJC_CLASS_$_MTL4TileRenderPipelineDescriptor
+0x1ef744428  __AUTH,__objc_data  _OBJC_CLASS_$_MTLAccelerationStructureAllocationDescriptor
+0x1ee29e078  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLAccelerationStructureBoundingBoxGeometryDescriptor
+0x1ee29bbc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLAccelerationStructureCurveGeometryDescriptor
+0x1ee29d808  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLAccelerationStructureDescriptor
+0x1ee29d7e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLAccelerationStructureGeometryDescriptor
+0x1ee29d7b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor
+0x1ee29b990  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLAccelerationStructureMotionCurveGeometryDescriptor
+0x1ee29d790  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLAccelerationStructureMotionTriangleGeometryDescriptor
+0x1ee29b968  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLAccelerationStructurePassDescriptor
+0x1ee29b940  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLAccelerationStructurePassSampleBufferAttachmentDescriptor
+0x1ee29b918  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray
+0x1ee29d768  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLAccelerationStructureTriangleGeometryDescriptor
+0x1ee29cf20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLArchitecture
+0x1ee29e870  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLArgument
+0x1ee29da10  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLArgumentDescriptor
+0x1ee29e460  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLArrayType
+0x1ee29dee8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLAttribute
+0x1ee29dd58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLAttributeDescriptor
+0x1ee29d9e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLAttributeDescriptorArray
+0x1ef7443d8  __AUTH,__objc_data  _OBJC_CLASS_$_MTLBVHBoundingBoxGeometryDescriptor
+0x1ee29b3f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLBVHBuilder
+0x1ef7443b0  __AUTH,__objc_data  _OBJC_CLASS_$_MTLBVHCurveGeometryDescriptor
+0x1ef744388  __AUTH,__objc_data  _OBJC_CLASS_$_MTLBVHDescriptor
+0x1ef744360  __AUTH,__objc_data  _OBJC_CLASS_$_MTLBVHGeometryDescriptor
+0x1ef744338  __AUTH,__objc_data  _OBJC_CLASS_$_MTLBVHPolygonGeometryDescriptor
+0x1ee29e9b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLBinaryArchiveDescriptor
+0x1ee29d740  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLBlitPassDescriptor
+0x1ee29d718  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLBlitPassSampleBufferAttachmentDescriptor
+0x1ee29d6f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLBlitPassSampleBufferAttachmentDescriptorArray
+0x1ee29c4d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLBufferDescriptor
+0x1ee29d9c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLBufferLayoutDescriptor
+0x1ee29d998  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLBufferLayoutDescriptorArray
+0x1ef744298  __AUTH,__objc_data  _OBJC_CLASS_$_MTLBufferRelocation
+0x1ee29d970  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLCaptureDescriptor
+0x1ee29e960  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLCaptureManager
+0x1ee29c160  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLCaptureScope
+0x1ee29dd30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLCommandBufferDescriptor
+0x1ee29ddd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLCommandQueueDescriptor
+0x1ee29ce08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLCommandQueueDescriptorInternal
+0x1ef744248  __AUTH,__objc_data  _OBJC_CLASS_$_MTLCommandQueueSPIStats
+0x1ee29bd78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLCompileBuiltinFunctionRequestData
+0x1ee29ce80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLCompileFunctionRequestData
+0x1ee29dcb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLCompileOptions
+0x1ee29dec0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLCompiler
+0x1ee29d6c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLComputePassDescriptor
+0x1ee29d6a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLComputePassSampleBufferAttachmentDescriptor
+0x1ee29d678  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLComputePassSampleBufferAttachmentDescriptorArray
+0x1ee29e320  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLComputePipelineDescriptor
+0x1ee29db78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLComputePipelineReflection
+0x1ef7441a8  __AUTH,__objc_data  _OBJC_CLASS_$_MTLConstantRelocation
+0x1ef744180  __AUTH,__objc_data  _OBJC_CLASS_$_MTLCounterInternal
+0x1ee29d650  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLCounterSampleBufferDescriptor
+0x1ef744158  __AUTH,__objc_data  _OBJC_CLASS_$_MTLCounterSampleBufferDescriptorInternal
+0x1ef744130  __AUTH,__objc_data  _OBJC_CLASS_$_MTLCounterSetInternal
+0x1ef744108  __AUTH,__objc_data  _OBJC_CLASS_$_MTLDebugInstrumentationData
+0x1ee29e910  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLDepthStencilDescriptor
+0x1ef744068  __AUTH,__objc_data  _OBJC_CLASS_$_MTLDynamicLibraryDescriptorSPI
+0x1ef744040  __AUTH,__objc_data  _OBJC_CLASS_$_MTLEmulationIndirectArgumentBufferLayout
+0x1ee29ea00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionConstant
+0x1ee29ed20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionConstantValues
+0x1ee29e410  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionDescriptor
+0x1ee29c340  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionReflection
+0x1ee29c2c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionReflectionInternal
+0x1ee29dc68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionStitchingAttributeAlwaysInline
+0x1ef741390  __AUTH,__objc_data  _OBJC_CLASS_$_MTLFunctionStitchingAttributeKernel
+0x1ee29b120  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionStitchingBuiltinThreadPositionInGrid
+0x1ee29aef0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionStitchingBuiltinThreadPositionInThreadgroup
+0x1ee29b1c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionStitchingEarlyReturnNode
+0x1ee29e208  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionStitchingFunctionNode
+0x1ee29b2b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionStitchingFunctionNodeSPI
+0x1ee29e230  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionStitchingGraph
+0x1ee29b288  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionStitchingGraphSPI
+0x1ee29b0d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionStitchingInputBuffer
+0x1ee29b0a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionStitchingInputBufferAddress
+0x1ee29b080  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionStitchingInputImageblock
+0x1ee29e1e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionStitchingInputNode
+0x1ee29b058  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionStitchingInputSampler
+0x1ee29b030  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionStitchingInputTexture
+0x1ee29b008  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLFunctionStitchingInputThreadgroup
+0x1ef744018  __AUTH,__objc_data  _OBJC_CLASS_$_MTLFunctionVariant
+0x1ee29b3c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLGPUBVHBuilder
+0x1ef741368  __AUTH,__objc_data  _OBJC_CLASS_$_MTLGenericAddressSpaceDispatchInfo
+0x1ef743ff0  __AUTH,__objc_data  _OBJC_CLASS_$_MTLGenericBVHBufferSizesSPI
+0x1ef743fc8  __AUTH,__objc_data  _OBJC_CLASS_$_MTLGenericBVHBuffersSPI
+0x1ee29e258  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLHeapDescriptor
+0x1ef743fa0  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelAccelerationStructure
+0x1ef743f78  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelBlitCommandEncoder
+0x1ef743f50  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelBuffer
+0x1ef743f28  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelCommandBuffer
+0x1ef743f00  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelCommandEncoder
+0x1ef743ed8  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelCommandQueue
+0x1ef743eb0  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelComputeCommandEncoder
+0x1ef743e88  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelDebugCommandEncoder
+0x1ee29bd50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLIOAccelDevice
+0x1ef743e60  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelDeviceShmem
+0x1ef743e38  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelDeviceShmemPool
+0x1ef743e10  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelFence
+0x1ef743de8  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelHeap
+0x1ef743dc0  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelIOCommandBuffer
+0x1ef7414f8  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelIOCommandQueue
+0x1ef7414d0  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelIOHandleCompressed
+0x1ef7414a8  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelIOHandleRaw
+0x1ef743d98  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelIndirectArgumentEncoder
+0x1ef743d70  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelIndirectCommandBuffer
+0x1ef743d48  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelIndirectComputeCommand
+0x1ef743d20  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelIndirectRenderCommand
+0x1ef743cf8  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelIntersectionFunctionTable
+0x1ef743cd0  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelParallelRenderCommandEncoder
+0x1ef743ca8  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelPooledResource
+0x1ef743c80  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelRenderCommandEncoder
+0x1ee29bc88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLIOAccelResource
+0x1ef743c58  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelResourcePool
+0x1ef743c30  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelResourceStateCommandEncoder
+0x1ef743c08  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelTexture
+0x1ef743be0  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelTextureLayout
+0x1ef743bb8  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOAccelVisibleFunctionTable
+0x1ee29b8c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLIOCommandQueueDescriptor
+0x1ef743b90  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIOCompressor
+0x1ee29d628  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLIndirectCommandBufferDescriptor
+0x1ef743af0  __AUTH,__objc_data  _OBJC_CLASS_$_MTLIndirectCommandBufferDescriptorInternal
+0x1ee29ad38  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLIndirectConstantArgument
+0x1ee29b8a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLIndirectInstanceAccelerationStructureDescriptor
+0x1ee29d600  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLInstanceAccelerationStructureDescriptor
+0x1ee29d5d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLIntersectionFunctionDescriptor
+0x1ee29d5b0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLIntersectionFunctionTableDescriptor
+0x1ee29e848  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLLinkedFunctions
+0x1ee29bb98  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLLogStateDescriptor
+0x1ef741d18  __AUTH,__objc_data  _OBJC_CLASS_$_MTLLogicalToPhysicalColorAttachmentMap
+0x1ee29b9e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLMeshRenderPipelineDescriptor
+0x1ef743aa0  __AUTH,__objc_data  _OBJC_CLASS_$_MTLMessage
+0x1ef741340  __AUTH,__objc_data  _OBJC_CLASS_$_MTLMessageDecoder
+0x1ef743a78  __AUTH,__objc_data  _OBJC_CLASS_$_MTLMessageFilter
+0x1ee29d588  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLMotionKeyframeData
+0x1ee29db50  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLPipelineBufferDescriptor
+0x1ee29ed70  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLPipelineBufferDescriptorArray
+0x1ee29e780  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLPointerType
+0x1ee29d560  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLPrimitiveAccelerationStructureDescriptor
+0x1ef743a00  __AUTH,__objc_data  _OBJC_CLASS_$_MTLProfileControl
+0x1ee29d538  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLRasterizationRateLayerArray
+0x1ef7439d8  __AUTH,__objc_data  _OBJC_CLASS_$_MTLRasterizationRateLayerArrayInternal
+0x1ee29d510  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLRasterizationRateLayerDescriptor
+0x1ef7439b0  __AUTH,__objc_data  _OBJC_CLASS_$_MTLRasterizationRateLayerDescriptorInternal
+0x1ee29d4e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLRasterizationRateMapDescriptor
+0x1ee29d4c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLRasterizationRateSampleArray
+0x1ef743960  __AUTH,__objc_data  _OBJC_CLASS_$_MTLRasterizationRateSampleArrayInternal
+0x1ee29ebe0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLRenderPassAttachmentDescriptor
+0x1ee29ebb8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLRenderPassColorAttachmentDescriptor
+0x1ee29eb90  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLRenderPassColorAttachmentDescriptorArray
+0x1ee29e3c0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLRenderPassDepthAttachmentDescriptor
+0x1ee29eb68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLRenderPassDescriptor
+0x1ee29d498  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLRenderPassSampleBufferAttachmentDescriptor
+0x1ee29eb40  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLRenderPassSampleBufferAttachmentDescriptorArray
+0x1ee29e398  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLRenderPassStencilAttachmentDescriptor
+0x1ee29ecd0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLRenderPipelineColorAttachmentDescriptor
+0x1ee29eca8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLRenderPipelineColorAttachmentDescriptorArray
+0x1ee29ec80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLRenderPipelineDescriptor
+0x1ee29e050  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLRenderPipelineFunctionsDescriptor
+0x1ee29dd08  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLRenderPipelineReflection
+0x1ee29bf30  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLResidencySetDescriptor
+0x1ef741318  __AUTH,__objc_data  _OBJC_CLASS_$_MTLResourceAddressRangeArray
+0x1ef743910  __AUTH,__objc_data  _OBJC_CLASS_$_MTLResourceAllocationInfo
+0x1ee29ccc8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLResourceList
+0x1ee29dfb0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLResourceListPool
+0x1ee29d470  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLResourceStatePassDescriptor
+0x1ee29d448  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLResourceStatePassSampleBufferAttachmentDescriptor
+0x1ee29d420  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLResourceStatePassSampleBufferAttachmentDescriptorArray
+0x1ef7444a0  __AUTH,__objc_data  _OBJC_CLASS_$_MTLResourceViewPoolDescriptor
+0x1ee29ea28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLSamplerDescriptor
+0x1ef7412f0  __AUTH,__objc_data  _OBJC_CLASS_$_MTLShaderValidationConfiguration
+0x1ee29d3f8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLSharedEventHandle
+0x1ee29dc18  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLSharedEventListener
+0x1ee29d3d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLSharedTextureHandle
+0x1ee29d948  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLStageInputOutputDescriptor
+0x1ee29e8e8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLStencilDescriptor
+0x1ee29e1b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLStitchedLibraryDescriptor
+0x1ee29b260  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLStitchedLibraryDescriptorSPI
+0x1ee29e500  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLStructMember
+0x1ee29e4d8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLStructType
+0x1ef743870  __AUTH,__objc_data  _OBJC_CLASS_$_MTLTag
+0x1ee29c9d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLTargetDeviceArchitecture
+0x1ef7412c8  __AUTH,__objc_data  _OBJC_CLASS_$_MTLTensorAuxiliaryPlaneDescriptor
+0x1ef7412a0  __AUTH,__objc_data  _OBJC_CLASS_$_MTLTensorAuxiliaryPlaneDescriptorMap
+0x1ef741278  __AUTH,__objc_data  _OBJC_CLASS_$_MTLTensorAuxiliaryPlaneType
+0x1ef741228  __AUTH,__objc_data  _OBJC_CLASS_$_MTLTensorBufferAttachments
+0x1ef741cf0  __AUTH,__objc_data  _OBJC_CLASS_$_MTLTensorDescriptor
+0x1ef741cc8  __AUTH,__objc_data  _OBJC_CLASS_$_MTLTensorExtents
+0x1ef741ca0  __AUTH,__objc_data  _OBJC_CLASS_$_MTLTensorReferenceType
+0x1ee29edc0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLTextureDescriptor
+0x1ee29e550  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLTextureReferenceType
+0x1ef741c78  __AUTH,__objc_data  _OBJC_CLASS_$_MTLTextureViewDescriptor
+0x1ee29dbf0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLTileRenderPipelineColorAttachmentDescriptor
+0x1ee29db28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLTileRenderPipelineColorAttachmentDescriptorArray
+0x1ee29db00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLTileRenderPipelineDescriptor
+0x1ee29e820  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLType
+0x1ee29e5a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLVertexAttribute
+0x1ee29e758  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLVertexAttributeDescriptor
+0x1ee29e730  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLVertexAttributeDescriptorArray
+0x1ee29e708  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLVertexBufferLayoutDescriptor
+0x1ee29e6e0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLVertexBufferLayoutDescriptorArray
+0x1ee29e6b8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLVertexDescriptor
+0x1ee29e2d0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$_MTLVisibleFunctionTableDescriptor
+0x1ef741200  __AUTH,__objc_data  _OBJC_CLASS_$__MTL4Archive
+0x1ef7411d8  __AUTH,__objc_data  _OBJC_CLASS_$__MTL4ArgumentTable
+0x1ef7411b0  __AUTH,__objc_data  _OBJC_CLASS_$__MTL4BinaryFunction
+0x1ee29ba80  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTL4CommandAllocator
+0x1ee29abf8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTL4CommandBuffer
+0x1ef741160  __AUTH,__objc_data  _OBJC_CLASS_$__MTL4CommandEncoder
+0x1ee29ba58  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTL4CommandQueue
+0x1ef741138  __AUTH,__objc_data  _OBJC_CLASS_$__MTL4CommitFeedback
+0x1ef741110  __AUTH,__objc_data  _OBJC_CLASS_$__MTL4CommitFeedbackDispatch
+0x1ef7410e8  __AUTH,__objc_data  _OBJC_CLASS_$__MTL4Compiler
+0x1ef7410c0  __AUTH,__objc_data  _OBJC_CLASS_$__MTL4CompilerTask
+0x1ef741098  __AUTH,__objc_data  _OBJC_CLASS_$__MTL4ComputeCommandEncoder
+0x1ef741048  __AUTH,__objc_data  _OBJC_CLASS_$__MTL4DispatchBlockCompilerTask
+0x1ef741020  __AUTH,__objc_data  _OBJC_CLASS_$__MTL4DispatchGroupCompilerTask
+0x1ef740ff8  __AUTH,__objc_data  _OBJC_CLASS_$__MTL4MachineLearningCommandEncoder
+0x1ef740fd0  __AUTH,__objc_data  _OBJC_CLASS_$__MTL4MachineLearningPipelineState
+0x1ef740fa8  __AUTH,__objc_data  _OBJC_CLASS_$__MTL4PipelineDataSetSerializer
+0x1ef740f80  __AUTH,__objc_data  _OBJC_CLASS_$__MTL4RenderCommandEncoder
+0x1ef743848  __AUTH,__objc_data  _OBJC_CLASS_$__MTLAccelerationStructureCommandEncoder
+0x1ee29cb88  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLAllocation
+0x1ee29c908  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLBinaryArchive
+0x1ee29cca0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLCommandBuffer
+0x1ee29ae78  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLCommandBufferDescriptor
+0x1ee29aba8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLCommandBufferEncoderInfo
+0x1ee29cc28  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLCommandEncoder
+0x1ee29cde0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLCommandQueue
+0x1ee29b620  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLComputePipelineState
+0x1ef743820  __AUTH,__objc_data  _OBJC_CLASS_$__MTLDebugCommandEncoder
+0x1ee29c4a8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLDepthStencilState
+0x1ee29e0c8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLDevice
+0x1ee29b3a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLDynamicLibrary
+0x1ee29b440  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLFence
+0x1ee29cac0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLFunction
+0x1ee29b300  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLFunctionHandle
+0x1ef7437f8  __AUTH,__objc_data  _OBJC_CLASS_$__MTLFunctionLogDebugLocation
+0x1ee29b490  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLHeap
+0x1ef744450  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIOCommandBuffer
+0x1ef7437d0  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIOCommandQueue
+0x1ef7437a8  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIOHandleCompressed
+0x1ef743780  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIOHandleRaw
+0x1ef743708  __AUTH,__objc_data  _OBJC_CLASS_$__MTLImageBlockArguments
+0x1ee29ae00  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLIndirectArgumentBufferLayout
+0x1ee29add8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLIndirectArgumentEncoder
+0x1ef740f58  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIndirectBlendColor
+0x1ef7436e0  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIndirectComputeCommand
+0x1ef740f30  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIndirectDepthBiasInfo
+0x1ef740f08  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIndirectDepthTestBounds
+0x1ef7436b8  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIndirectDispatchThreadgroupsArguments
+0x1ef743690  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIndirectDispatchThreadsArguments
+0x1ef743668  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIndirectDrawArguments
+0x1ef743640  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIndirectDrawIndexedArguments
+0x1ef743618  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIndirectDrawIndexedPatchesArguments
+0x1ef7435f0  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIndirectDrawMeshThreadgroupsArguments
+0x1ef7435c8  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIndirectDrawMeshThreadsArguments
+0x1ef7435a0  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIndirectDrawPatchesArguments
+0x1ef743578  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIndirectRenderCommand
+0x1ef740ee0  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIndirectScissorRects
+0x1ef740eb8  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIndirectStencilReferenceValues
+0x1ef743550  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIndirectTessellationFactorArguments
+0x1ef740e90  __AUTH,__objc_data  _OBJC_CLASS_$__MTLIndirectViewports
+0x1ee29cd68  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLLibrary
+0x1ef740e68  __AUTH,__objc_data  _OBJC_CLASS_$__MTLLogState
+0x1ee29e0f0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLObjectWithLabel
+0x1ef743500  __AUTH,__objc_data  _OBJC_CLASS_$__MTLParallelRenderCommandEncoder
+0x1ee29cef8  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLPipelineCache
+0x1ef7434d8  __AUTH,__objc_data  _OBJC_CLASS_$__MTLPipelineStateBinary
+0x1ef7434b0  __AUTH,__objc_data  _OBJC_CLASS_$__MTLProgramAddressTable
+0x1ef743488  __AUTH,__objc_data  _OBJC_CLASS_$__MTLProgramAddressTableMappedBinary
+0x1ef743460  __AUTH,__objc_data  _OBJC_CLASS_$__MTLRasterizationRateMap
+0x1ee29c778  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLRenderPipelineState
+0x1ee29e0a0  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLResource
+0x1ef740e18  __AUTH,__objc_data  _OBJC_CLASS_$__MTLResourceViewPool
+0x1ef743438  __AUTH,__objc_data  _OBJC_CLASS_$__MTLSWRaytracingAccelerationStructureCommandEncoder
+0x1ee29c840  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLSamplerState
+0x1ee29bb20  __DATA_DIRTY,__objc_data  _OBJC_CLASS_$__MTLSharedEvent
+0x1ef740df0  __AUTH,__objc_data  _OBJC_CLASS_$__MTLTensor
+0x1ef740dc8  __AUTH,__objc_data  _OBJC_CLASS_$__MTLTensorAuxiliaryPlane
+0x1ef740da0  __AUTH,__objc_data  _OBJC_CLASS_$__MTLTextureViewPool
+0x1ef743410  __AUTH,__objc_data  _OBJC_CLASS_$__PipelineLibrarySerializer
+0x1ebd891b4  __DATA,__objc_ivar  OBJC_IVAR_$_MTLCaptureScope._commandQueue
+0x1ebd891b0  __DATA,__objc_ivar  OBJC_IVAR_$_MTLCaptureScope._device
+0x1ebd891b8  __DATA,__objc_ivar  OBJC_IVAR_$_MTLCaptureScope._mtl4CommandQueue
+0x1ebd8a0fc  __DATA,__objc_ivar  OBJC_IVAR_$_MTLCounterInternal._description
+0x1ebd8a0f8  __DATA,__objc_ivar  OBJC_IVAR_$_MTLCounterInternal._name
+0x1ebd8a10c  __DATA,__objc_ivar  OBJC_IVAR_$_MTLCounterSampleBufferDescriptorInternal._counterSet
+0x1ebd8a114  __DATA,__objc_ivar  OBJC_IVAR_$_MTLCounterSampleBufferDescriptorInternal._label
+0x1ebd8a118  __DATA,__objc_ivar  OBJC_IVAR_$_MTLCounterSampleBufferDescriptorInternal._sampleCount
+0x1ebd8a110  __DATA,__objc_ivar  OBJC_IVAR_$_MTLCounterSampleBufferDescriptorInternal._storageMode
+0x1ebd8a108  __DATA,__objc_ivar  OBJC_IVAR_$_MTLCounterSetInternal._counters
+0x1ebd8a104  __DATA,__objc_ivar  OBJC_IVAR_$_MTLCounterSetInternal._description
+0x1ebd8a100  __DATA,__objc_ivar  OBJC_IVAR_$_MTLCounterSetInternal._name
+0x1ebd8a1e0  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelBuffer._deallocator
+0x1ebd8a1f0  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelBuffer._iosurface
+0x1ebd8a1d4  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelBuffer._length
+0x1ebd8a1d8  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelBuffer._masterBuffer
+0x1ebd8a1e8  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelBuffer._masterBufferIndex
+0x1ebd8a1ec  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelBuffer._masterBufferOffset
+0x1ebd8a1e4  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelBuffer._masterHeapIndex
+0x1ebd8a1dc  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelBuffer._pointer
+0x1ebd89778  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelCommandBuffer._device
+0x1ebd8a3ac  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelCommandQueue._commandQueue
+0x1ebd8a3a8  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelCommandQueue._device
+0x1ebd8abd8  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelDebugCommandEncoder._api_resourceList
+0x1ebd8abcc  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelDebugCommandEncoder._kernelCommandBufferCurrent
+0x1ebd8abd0  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelDebugCommandEncoder._kernelCommandBufferEnd
+0x1ebd8abd4  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelDebugCommandEncoder._resourceList
+0x1ebd8a24c  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelDevice._accelID
+0x1ebd8a234  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelDevice._acceleratorPort
+0x1ebd8a220  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelDevice._commandBufferStoragePool
+0x1ebd8a23c  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelDevice._configBits
+0x1ebd8a240  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelDevice._deviceBits
+0x1ebd8a22c  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelDevice._deviceRef
+0x1ebd8a210  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelDevice._numCommandBuffers
+0x1ebd8a254  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelDevice._segmentByteThreshold
+0x1ebd8a250  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelDevice._sharedMemorySize
+0x1ebd8a228  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelDevice._sharedRef
+0x1ebd8a230  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelDevice._storageCreateParams
+0x1ebd8a244  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelDevice._textureRam
+0x1ebd8a248  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelDevice._videoRam
+0x1ebd8a0f0  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelFence._device
+0x1ebd8a0f4  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelFence._fenceIndex
+0x1ebd8abf4  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelHeap._resource
+0x1ebd8a2ec  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelResource._res
+0x1ebd8a194  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._allowGPUOptimizedContents
+0x1ebd8a160  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._arrayLength
+0x1ebd8a198  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._buffer
+0x1ebd8a1d0  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._bufferBytesPerRow
+0x1ebd8a1cc  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._bufferOffset
+0x1ebd8a1a4  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._deallocator
+0x1ebd8a15c  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._depth
+0x1ebd8a174  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._framebufferOnly
+0x1ebd8a158  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._height
+0x1ebd8a18c  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._iosurface
+0x1ebd8a190  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._iosurfacePlane
+0x1ebd8a17c  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._isCompressed
+0x1ebd8a1c8  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._isDrawable
+0x1ebd8a1a0  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._length
+0x1ebd8a19c  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._masterBuffer
+0x1ebd8a1b4  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._masterBufferIndex
+0x1ebd8a1b8  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._masterBufferOffset
+0x1ebd8a1b0  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._masterHeapIndex
+0x1ebd8a164  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._mipmapLevelCount
+0x1ebd8a1bc  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._numFaces
+0x1ebd8a184  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._parentRelativeLevel
+0x1ebd8a188  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._parentRelativeSlice
+0x1ebd8a180  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._parentTexture
+0x1ebd8a150  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._pixelFormat
+0x1ebd8a1a8  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._pointer
+0x1ebd8a1ac  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._rootResourceIsSuballocatedBuffer
+0x1ebd8a1c0  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._rotation
+0x1ebd8a168  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._sampleCount
+0x1ebd8a170  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._shareable
+0x1ebd8a178  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._swizzle
+0x1ebd8a14c  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._textureType
+0x1ebd8a16c  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._usage
+0x1ebd8a154  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._width
+0x1ebd8a1c4  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIOAccelTexture._writeSwizzleEnabled
+0x1ebd8aa1c  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIndirectConstantArgument._alignment
+0x1ebd8aa28  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIndirectConstantArgument._aluType
+0x1ebd8aa20  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIndirectConstantArgument._dataSize
+0x1ebd8aa18  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIndirectConstantArgument._dataType
+0x1ebd8aa24  __DATA,__objc_ivar  OBJC_IVAR_$_MTLIndirectConstantArgument._pixelFormat
+0x1ebd8acc8  __DATA,__objc_ivar  OBJC_IVAR_$_MTLResourceAddressRangeArray._count
+0x1ebd8accc  __DATA,__objc_ivar  OBJC_IVAR_$_MTLResourceAddressRangeArray._ranges
+0x1ebd8ad24  __DATA,__objc_ivar  OBJC_IVAR_$_MTLSharedEventHandle._priv
+0x1ebd8a11c  __DATA,__objc_ivar  OBJC_IVAR_$_MTLSharedTextureHandle._priv
+0x1ebd8a134  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandAllocator._device
+0x1ebd8a140  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandAllocator._globalTraceObjectID
+0x1ebd8a138  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandAllocator._privateDataTable
+0x1ebd89318  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandBuffer._commandAllocator
+0x1ebd892f8  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandBuffer._device
+0x1ebd89314  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandBuffer._globalTraceObjectID
+0x1ebd8931c  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandBuffer._labelTraceID
+0x1ebd8ac24  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandEncoder._commandAllocator
+0x1ebd8ac28  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandEncoder._device
+0x1ebd8ac30  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandEncoder._globalTraceObjectID
+0x1ebd8ac34  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandEncoder._labelTraceID
+0x1ebd8ace8  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandQueue._backgroundTrackingPID
+0x1ebd8acec  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandQueue._device
+0x1ebd8ad04  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandQueue._globalTraceObjectID
+0x1ebd8ad08  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandQueue._labelTraceID
+0x1ebd8acfc  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandQueue._lastCommittedCommandBuffer
+0x1ebd8ad00  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandQueue._lastCommittedCommandBufferGeneration
+0x1ebd8acf4  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CommandQueue._submissionQueue
+0x1ebd8a59c  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CompilerTask._completionHandlerCondition
+0x1ebd8a5b4  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CompilerTask._hasNoPendingCompletionHandlers
+0x1ebd8a5b0  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CompilerTask._status
+0x1ebd8a5a8  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CompilerTask._statusCondition
+0x1ebd8a588  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CompilerTask._statusMutex
+0x1ebd8a590  __DATA,__objc_ivar  OBJC_IVAR_$__MTL4CompilerTask._tokenCondition
+0x1ebd89c1c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLAllocation._allocationType
+0x1ebd8ae58  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._StatEnabled
+0x1ebd8aebc  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._commitTime
+0x1ebd8aec4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._completedCallbacksDone
+0x1ebd8ae18  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._completedCond
+0x1ebd8aea0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._completedDispatchList
+0x1ebd8aea4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._completedDispatchListTail
+0x1ebd8aef0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._completionHandlerEnqueueTime
+0x1ebd8aed8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._completionHandlerExecutionTime
+0x1ebd8aeec  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._completionInterruptTime
+0x1ebd8ae74  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._creatingProgressEncoder
+0x1ebd8ae44  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._creationTime
+0x1ebd8aeb8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._currentCommandEncoder
+0x1ebd8ae7c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._deadlineProfile
+0x1ebd8ae84  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._didComplete
+0x1ebd8ae80  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._encoderInfos
+0x1ebd8aeb4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._enqueueTime
+0x1ebd8ae08  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._error
+0x1ebd8aed4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._globalTraceObjectID
+0x1ebd8aee0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._gpuEndTime
+0x1ebd8aedc  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._gpuStartTime
+0x1ebd8ae50  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._hasPresent
+0x1ebd8aed0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._kernelEndTime
+0x1ebd8aecc  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._kernelStartTime
+0x1ebd8af08  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._labelTraceID
+0x1ebd8ae64  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._listIndex
+0x1ebd8ae38  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._logState
+0x1ebd8ae28  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._logs
+0x1ebd8ae14  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._mutex
+0x1ebd8ae10  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._needsCommandBufferSemaphoreSignal
+0x1ebd8ae78  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._needsFrameworkAssistedErrorTracking
+0x1ebd8ae60  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._numEncoders
+0x1ebd8aec8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._numPresentWaits
+0x1ebd8ae54  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._numThisCommandBuffer
+0x1ebd8af00  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._ownedByParallelEncoder
+0x1ebd8ae5c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._perfSampleHandlerBlock
+0x1ebd8ae2c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._privateData
+0x1ebd8ae30  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._privateDataOffset
+0x1ebd8ae34  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._privateLoggingBuffer
+0x1ebd8ae40  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._profilingEnabled
+0x1ebd8aef4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._profilingResults
+0x1ebd8ae6c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._progressBuffer
+0x1ebd8ae70  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._progressOffset
+0x1ebd8ae0c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._queue
+0x1ebd8ae3c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._requiresBindingLogState
+0x1ebd8aeb0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._retainedObjects
+0x1ebd8ae20  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._retainedReferences
+0x1ebd8aec0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._scheduledCallbacksDone
+0x1ebd8ae1c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._scheduledCond
+0x1ebd8ae98  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._scheduledDispatchList
+0x1ebd8ae9c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._scheduledDispatchListTail
+0x1ebd8ae48  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._skipRender
+0x1ebd8aea8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._status
+0x1ebd8af04  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._strongObjectReferences
+0x1ebd8aee8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._submitToHardwareTime
+0x1ebd8aee4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._submitToKernelTime
+0x1ebd8ae90  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._swiftConcurrencyCompletedWaiters
+0x1ebd8ae94  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._swiftConcurrencyCompletedWaitersTail
+0x1ebd8ae88  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._swiftConcurrencyScheduledWaiters
+0x1ebd8ae8c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._swiftConcurrencyScheduledWaitersTail
+0x1ebd8aefc  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._syncDispatchList
+0x1ebd8aef8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._syncDispatchListTail
+0x1ebd8ae24  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._synchronousDebugMode
+0x1ebd8aeac  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._userDictionary
+0x1ebd8ae4c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandBuffer._wakeOnCommit
+0x1ebd8a868  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandEncoder._commandBuffer
+0x1ebd8a87c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandEncoder._debugSignposts
+0x1ebd8a864  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandEncoder._device
+0x1ebd8a880  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandEncoder._globalTraceObjectID
+0x1ebd8a870  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandEncoder._isProgressTrackingEncoder
+0x1ebd8a884  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandEncoder._labelTraceID
+0x1ebd8a86c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandEncoder._needsFrameworkAssistedErrorTracking
+0x1ebd8a878  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandEncoder._numThisEncoder
+0x1ebd8a874  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandEncoder._progressFence
+0x1ebd8af88  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._StatEnabled
+0x1ebd8af90  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._StatLocations
+0x1ebd8af8c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._StatOptions
+0x1ebd8af38  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._backgroundTrackingPID
+0x1ebd8af54  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._commandBufferSemaphore
+0x1ebd8af74  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._commandQueueDispatch
+0x1ebd8af80  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._commandQueueEventSource
+0x1ebd8af60  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._commitQueue
+0x1ebd8af64  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._commitSynchronously
+0x1ebd8af7c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._commitsWithQoS
+0x1ebd8af68  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._completionQueue
+0x1ebd8af78  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._completionQueueDispatch
+0x1ebd8af84  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._dev
+0x1ebd8af6c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._disableCrossQueueHazardTracking
+0x1ebd8af50  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._executionEnabled
+0x1ebd8afa4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._forceImmediateSubmissionOnCommitThread
+0x1ebd8afb4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._globalTraceObjectID
+0x1ebd8afb8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._labelTraceID
+0x1ebd8af9c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._listIndex
+0x1ebd8af98  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._logState
+0x1ebd8af58  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._maxCommandBufferCount
+0x1ebd8af34  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._numCommandBuffers
+0x1ebd8af70  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._openGLQueue
+0x1ebd8af3c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._pendingQueue
+0x1ebd8af44  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._pendingQueueLock
+0x1ebd8af94  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._perfSampleHandlerBlock
+0x1ebd8afa0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._presentScheduledSemaphore
+0x1ebd8afa8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._privateDataTable
+0x1ebd8afb0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._profilingEnabled
+0x1ebd8af5c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._qosLevel
+0x1ebd8afac  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._skipRender
+0x1ebd8af4c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._submittedGroup
+0x1ebd8af40  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._submittedQueue
+0x1ebd8af48  __DATA,__objc_ivar  OBJC_IVAR_$__MTLCommandQueue._submittedQueueLock
+0x1ebd8ad44  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDepthStencilState._device
+0x1ebd8ad48  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDepthStencilState._label
+0x1ebd8a038  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._acquireCount
+0x1ebd8a03c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._commandQueueCount
+0x1ebd8a040  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._commandQueueID
+0x1ebd8a05c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._commandQueueLimit
+0x1ebd8a044  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._commandQueueWaitLock
+0x1ebd8a034  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._globalTraceObjectID
+0x1ebd8a04c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._kRateLimitCriticalCommandQueues
+0x1ebd8a054  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._kRateLimitEnabled
+0x1ebd8a058  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._kRateLimitShouldOnlyLogOnce
+0x1ebd8a050  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._kRateLimitTimePenalty
+0x1ebd8a000  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._limits
+0x1ebd8a030  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._logBufferResidencyLock
+0x1ebd8a02c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._logStateDescriptor
+0x1ebd8a020  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._needsEncoderTypeMatchingProgressBlits
+0x1ebd8a048  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._nextCommandQueueAllowedDateBuffer
+0x1ebd8a01c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._progressTrackBufferStack
+0x1ebd8a028  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._progressTrackComputePipeline
+0x1ebd8a024  __DATA,__objc_ivar  OBJC_IVAR_$__MTLDevice._progressTrackRenderPipeline
+0x1ebd8a70c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLFunction._debugInstrumentationData
+0x1ebd8a6e8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLFunction._device
+0x1ebd8a724  __DATA,__objc_ivar  OBJC_IVAR_$__MTLFunction._functionConstantDictionary
+0x1ebd8a720  __DATA,__objc_ivar  OBJC_IVAR_$__MTLFunction._functionConstants
+0x1ebd8a6f4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLFunction._functionType
+0x1ebd8a6ec  __DATA,__objc_ivar  OBJC_IVAR_$__MTLFunction._libraryData
+0x1ebd8a704  __DATA,__objc_ivar  OBJC_IVAR_$__MTLFunction._name
+0x1ebd8a714  __DATA,__objc_ivar  OBJC_IVAR_$__MTLFunction._options
+0x1ebd8a728  __DATA,__objc_ivar  OBJC_IVAR_$__MTLFunction._precompiledOutput
+0x1ebd8a6f0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLFunction._vendorPrivate
+0x1ebd8a6f8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLFunction._vertexAttributes
+0x1ebd8a45c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLHeap._heapResourceOptions
+0x1ebd8a458  __DATA,__objc_ivar  OBJC_IVAR_$__MTLHeap._heapType
+0x1ebd891d8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOCommandBuffer._currentStagingBuffer
+0x1ebd891e0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOCommandBuffer._currentStagingBufferOffset
+0x1ebd891dc  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOCommandBuffer._currentStagingBufferRemainingBytes
+0x1ebd89200  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOCommandBuffer._enqueued
+0x1ebd89218  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOCommandBuffer._labelTraceID
+0x1ebd891f8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOCommandBuffer._resourceList
+0x1ebd891fc  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOCommandBuffer._retained
+0x1ebd891d4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOCommandBuffer._status
+0x1ebd8a4e8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOCommandQueue._commitQueue
+0x1ebd8a520  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOCommandQueue._labelTraceID
+0x1ebd8a504  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOCommandQueue._maxWorkerThreads
+0x1ebd8a50c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOCommandQueue._priority
+0x1ebd8a508  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOCommandQueue._resourceListPool
+0x1ebd8a500  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOCommandQueue._type
+0x1ebd8a4bc  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOHandleCompressed._device
+0x1ebd8a4c0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOHandleCompressed._fd
+0x1ebd8a4c8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOHandleCompressed._labelTraceID
+0x1ebd8a4b0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOHandleRaw._device
+0x1ebd8a4b4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOHandleRaw._fd
+0x1ebd8a4b8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIOHandleRaw._labelTraceID
+0x1ebd89a30  __DATA,__objc_ivar  OBJC_IVAR_$__MTLImageBlockArguments._height
+0x1ebd89a2c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLImageBlockArguments._width
+0x1ebd89798  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectArgumentBufferLayout._private
+0x1ebd8979c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectArgumentEncoder._device
+0x1ebd897a0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectArgumentEncoder._layout
+0x1ebd89a90  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectBlendColor.alpha
+0x1ebd89a8c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectBlendColor.blue
+0x1ebd89a88  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectBlendColor.green
+0x1ebd89a84  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectBlendColor.red
+0x1ebd89a44  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDepthBiasInfo.clamp
+0x1ebd89a3c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDepthBiasInfo.depthBias
+0x1ebd89a40  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDepthBiasInfo.slopeScale
+0x1ebd89aa8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDepthTestBounds.maxBounds
+0x1ebd89aa4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDepthTestBounds.minBounds
+0x1ebd89a24  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDispatchThreadgroupsArguments._threadgroupsPerGrid
+0x1ebd89a28  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDispatchThreadgroupsArguments._threadsPerThreadgroup
+0x1ebd89a34  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDispatchThreadsArguments._threadsPerGrid
+0x1ebd89a38  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDispatchThreadsArguments._threadsPerThreadgroup
+0x1ebd89970  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawArguments._baseInstance
+0x1ebd8996c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawArguments._instanceCount
+0x1ebd89960  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawArguments._primitiveType
+0x1ebd89968  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawArguments._vertexCount
+0x1ebd89964  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawArguments._vertexStart
+0x1ebd89994  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedArguments._baseInstance
+0x1ebd89990  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedArguments._baseVertex
+0x1ebd89984  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedArguments._indexBufferGPUVirtualAddress
+0x1ebd89988  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedArguments._indexBufferOffset
+0x1ebd89980  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedArguments._indexBufferVirtualAddress
+0x1ebd89978  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedArguments._indexCount
+0x1ebd8997c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedArguments._indexType
+0x1ebd8998c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedArguments._instanceCount
+0x1ebd89974  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedArguments._primitiveType
+0x1ebd899d8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedPatchesArguments._baseInstance
+0x1ebd899e0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedPatchesArguments._controlPointIndexBufferGPUVirtualAddress
+0x1ebd899d0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedPatchesArguments._controlPointIndexBufferOffset
+0x1ebd899cc  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedPatchesArguments._controlPointIndexBufferVirtualAddress
+0x1ebd899d4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedPatchesArguments._instanceCount
+0x1ebd899b8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedPatchesArguments._numberOfPatchControlPoints
+0x1ebd899c0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedPatchesArguments._patchCount
+0x1ebd899dc  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedPatchesArguments._patchIndexBufferGPUVirtualAddress
+0x1ebd899c8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedPatchesArguments._patchIndexBufferOffset
+0x1ebd899c4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedPatchesArguments._patchIndexBufferVirtualAddress
+0x1ebd899bc  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawIndexedPatchesArguments._patchStart
+0x1ebd899e4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawMeshThreadgroupsArguments.threadgroupsPerGrid
+0x1ebd899ec  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawMeshThreadgroupsArguments.threadsPerMeshThreadgroup
+0x1ebd899e8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawMeshThreadgroupsArguments.threadsPerObjectThreadgroup
+0x1ebd899fc  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawMeshThreadsArguments.threadsPerGrid
+0x1ebd89a04  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawMeshThreadsArguments.threadsPerMeshThreadgroup
+0x1ebd89a00  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawMeshThreadsArguments.threadsPerObjectThreadgroup
+0x1ebd899b4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawPatchesArguments._baseInstance
+0x1ebd899b0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawPatchesArguments._instanceCount
+0x1ebd89998  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawPatchesArguments._numberOfPatchControlPoints
+0x1ebd899a0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawPatchesArguments._patchCount
+0x1ebd899a8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawPatchesArguments._patchIndexBufferGPUVirtualAddress
+0x1ebd899ac  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawPatchesArguments._patchIndexBufferOffset
+0x1ebd899a4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawPatchesArguments._patchIndexBufferVirtualAddress
+0x1ebd8999c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectDrawPatchesArguments._patchStart
+0x1ebd89a68  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectScissorRects.count
+0x1ebd89a64  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectScissorRects.scissorRects
+0x1ebd89a78  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectStencilReferenceValues.backReferenceValue
+0x1ebd89a74  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectStencilReferenceValues.frontReferenceValue
+0x1ebd89a18  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectTessellationFactorArguments._GPUVirtualAddress
+0x1ebd89a1c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectTessellationFactorArguments._instanceStride
+0x1ebd89a20  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectTessellationFactorArguments._scale
+0x1ebd89a14  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectTessellationFactorArguments._virtualAddress
+0x1ebd89a58  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectViewports.count
+0x1ebd89a54  __DATA,__objc_ivar  OBJC_IVAR_$__MTLIndirectViewports.viewports
+0x1ebd893b0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLLogState._device
+0x1ebd893c0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLLogState._handlers
+0x1ebd893a8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLLogState._logBuffer
+0x1ebd893b8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLLogState._logBufferLock
+0x1ebd893ac  __DATA,__objc_ivar  OBJC_IVAR_$__MTLLogState._logBufferResidencySet
+0x1ebd893a4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLLogState._logBufferSize
+0x1ebd893b4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLLogState._logHandlerLock
+0x1ebd893a0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLLogState._logLevel
+0x1ebd893bc  __DATA,__objc_ivar  OBJC_IVAR_$__MTLLogState._usedForShaderValidation
+0x1ebd8a294  __DATA,__objc_ivar  OBJC_IVAR_$__MTLParallelRenderCommandEncoder._StatEnabled
+0x1ebd8a27c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLParallelRenderCommandEncoder._commandBuffer
+0x1ebd8a290  __DATA,__objc_ivar  OBJC_IVAR_$__MTLParallelRenderCommandEncoder._commandBuffers
+0x1ebd8a2a4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLParallelRenderCommandEncoder._commandBuffersCount
+0x1ebd8a28c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLParallelRenderCommandEncoder._commandBuffersSize
+0x1ebd8a2a8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLParallelRenderCommandEncoder._debugSignposts
+0x1ebd8a274  __DATA,__objc_ivar  OBJC_IVAR_$__MTLParallelRenderCommandEncoder._device
+0x1ebd8a2ac  __DATA,__objc_ivar  OBJC_IVAR_$__MTLParallelRenderCommandEncoder._globalTraceObjectID
+0x1ebd8a2b0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLParallelRenderCommandEncoder._labelTraceID
+0x1ebd8a284  __DATA,__objc_ivar  OBJC_IVAR_$__MTLParallelRenderCommandEncoder._lock
+0x1ebd8a29c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLParallelRenderCommandEncoder._needsFrameworkAssistedErrorTracking
+0x1ebd8a298  __DATA,__objc_ivar  OBJC_IVAR_$__MTLParallelRenderCommandEncoder._numThisEncoder
+0x1ebd8a2a0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLParallelRenderCommandEncoder._progressFence
+0x1ebd8a278  __DATA,__objc_ivar  OBJC_IVAR_$__MTLParallelRenderCommandEncoder._queue
+0x1ebd8a280  __DATA,__objc_ivar  OBJC_IVAR_$__MTLParallelRenderCommandEncoder._renderPassDescriptor
+0x1ebd8a288  __DATA,__objc_ivar  OBJC_IVAR_$__MTLParallelRenderCommandEncoder._retainedReferences
+0x1ebd89f8c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLPipelineStateBinary._binary
+0x1ebd89f94  __DATA,__objc_ivar  OBJC_IVAR_$__MTLPipelineStateBinary._debugIdentifier
+0x1ebd89f90  __DATA,__objc_ivar  OBJC_IVAR_$__MTLPipelineStateBinary._uniqueIdentifier
+0x1ebd89fa8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLProgramAddressTable._binaryMappingsEncoderInternal
+0x1ebd89fac  __DATA,__objc_ivar  OBJC_IVAR_$__MTLProgramAddressTable._binaryMappingsPerInvocation
+0x1ebd89fb0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLProgramAddressTable._encoderInternalBinaries
+0x1ebd89fa0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLProgramAddressTableMappedBinary._binaryUniqueId
+0x1ebd89f98  __DATA,__objc_ivar  OBJC_IVAR_$__MTLProgramAddressTableMappedBinary._mappedAddress
+0x1ebd89f9c  __DATA,__objc_ivar  OBJC_IVAR_$__MTLProgramAddressTableMappedBinary._mappedSize
+0x1ebd89fa4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLProgramAddressTableMappedBinary._type
+0x1ebd8a3e4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLSamplerState._device
+0x1ebd8a3f4  __DATA,__objc_ivar  OBJC_IVAR_$__MTLSamplerState._gpuAddress
+0x1ebd8a3e8  __DATA,__objc_ivar  OBJC_IVAR_$__MTLSamplerState._label
+0x1ebd8a3ec  __DATA,__objc_ivar  OBJC_IVAR_$__MTLSamplerState._pixelFormat
+0x1ebd8a3f0  __DATA,__objc_ivar  OBJC_IVAR_$__MTLSamplerState._resourceIndex
+0x1ebd891a8  __DATA,__objc_ivar  OBJC_IVAR_$__PipelineLibrarySerializer._binarySerializer
+0x1ef741c50  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4AccelerationStructureBoundingBoxGeometryDescriptor
+0x1ef741c28  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4AccelerationStructureCurveGeometryDescriptor
+0x1ef741c00  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4AccelerationStructureDescriptor
+0x1ef741bd8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4AccelerationStructureGeometryDescriptor
+0x1ef741bb0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4AccelerationStructureMotionBoundingBoxGeometryDescriptor
+0x1ef741b88  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4AccelerationStructureMotionCurveGeometryDescriptor
+0x1ef741b60  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4AccelerationStructureMotionTriangleGeometryDescriptor
+0x1ef741b38  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4AccelerationStructureTriangleGeometryDescriptor
+0x1ef740d78  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4ArchiveReply
+0x1ef741b10  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4ArgumentTableDescriptor
+0x1ef741ae8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4BinaryFunctionDescriptor
+0x1ef740d50  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4BinaryFunctionReflection
+0x1ef741ac0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4CommandAllocatorDescriptor
+0x1ef741a98  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4CommandBufferOptions
+0x1ef741a70  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4CommandQueueDescriptor
+0x1ef741a48  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4CommitOptions
+0x1ef741a20  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4CompilerDescriptor
+0x1ef7419f8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4CompilerTaskOptions
+0x1ef7419d0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4ComputePipelineDescriptor
+0x1ef7419a8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4CounterHeapDescriptor
+0x1ef741980  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4FunctionDescriptor
+0x1ef741958  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4IndirectInstanceAccelerationStructureDescriptor
+0x1ef741930  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4InstanceAccelerationStructureDescriptor
+0x1ef741908  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4LibraryDescriptor
+0x1ef7418e0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4LibraryFunctionDescriptor
+0x1ef7418b8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4MachineLearningPipelineDescriptor
+0x1ef741890  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4MachineLearningPipelineReflection
+0x1ef741868  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4MeshRenderPipelineDescriptor
+0x1ef741840  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4PipelineDataSetSerializerDescriptor
+0x1ef741818  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4PipelineDescriptor
+0x1ef7417f0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4PipelineOptions
+0x1ef7417c8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4PipelineStageDynamicLinkingDescriptor
+0x1ef7417a0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4PrimitiveAccelerationStructureDescriptor
+0x1ef741778  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4RenderPassDescriptor
+0x1ef741750  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4RenderPipelineBinaryFunctionsDescriptor
+0x1ef741728  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4RenderPipelineColorAttachmentDescriptor
+0x1ef741700  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4RenderPipelineColorAttachmentDescriptorArray
+0x1ef7416d8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4RenderPipelineDescriptor
+0x1ef7416b0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4RenderPipelineDynamicLinkingDescriptor
+0x1ef741688  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4SpecializedFunctionDescriptor
+0x1ef741660  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4StaticLinkingDescriptor
+0x1ef741638  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4StitchedFunctionDescriptor
+0x1ef741610  __AUTH,__objc_data  _OBJC_METACLASS_$_MTL4TileRenderPipelineDescriptor
+0x1ef7433e8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLAccelerationStructureAllocationDescriptor
+0x1ee29d3a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLAccelerationStructureBoundingBoxGeometryDescriptor
+0x1ee29b878  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLAccelerationStructureCurveGeometryDescriptor
+0x1ee29d380  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLAccelerationStructureDescriptor
+0x1ee29d358  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLAccelerationStructureGeometryDescriptor
+0x1ee29d330  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor
+0x1ee29b850  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLAccelerationStructureMotionCurveGeometryDescriptor
+0x1ee29d308  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLAccelerationStructureMotionTriangleGeometryDescriptor
+0x1ee29b828  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLAccelerationStructurePassDescriptor
+0x1ee29b800  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLAccelerationStructurePassSampleBufferAttachmentDescriptor
+0x1ee29b7d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLAccelerationStructurePassSampleBufferAttachmentDescriptorArray
+0x1ee29d2e0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLAccelerationStructureTriangleGeometryDescriptor
+0x1ee29cea8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLArchitecture
+0x1ee29e7d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLArgument
+0x1ee29d920  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLArgumentDescriptor
+0x1ee29e438  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLArrayType
+0x1ee29dbc8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLAttribute
+0x1ee29d8f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLAttributeDescriptor
+0x1ee29d8d0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLAttributeDescriptorArray
+0x1ef743398  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLBVHBoundingBoxGeometryDescriptor
+0x1ee29b378  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLBVHBuilder
+0x1ef743370  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLBVHCurveGeometryDescriptor
+0x1ef743348  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLBVHDescriptor
+0x1ef743320  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLBVHGeometryDescriptor
+0x1ef7432f8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLBVHPolygonGeometryDescriptor
+0x1ee29e988  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLBinaryArchiveDescriptor
+0x1ee29d2b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLBlitPassDescriptor
+0x1ee29d290  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLBlitPassSampleBufferAttachmentDescriptor
+0x1ee29d268  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLBlitPassSampleBufferAttachmentDescriptorArray
+0x1ee29c480  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLBufferDescriptor
+0x1ee29d8a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLBufferLayoutDescriptor
+0x1ee29d880  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLBufferLayoutDescriptorArray
+0x1ef743258  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLBufferRelocation
+0x1ee29d858  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLCaptureDescriptor
+0x1ee29e938  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLCaptureManager
+0x1ee29c138  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLCaptureScope
+0x1ee29dda8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLCommandBufferDescriptor
+0x1ee29dd80  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLCommandQueueDescriptor
+0x1ee29cdb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLCommandQueueDescriptorInternal
+0x1ef743208  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLCommandQueueSPIStats
+0x1ee29bda0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLCompileBuiltinFunctionRequestData
+0x1ee29ce58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLCompileFunctionRequestData
+0x1ee29dc90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLCompileOptions
+0x1ee29de48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLCompiler
+0x1ee29d240  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLComputePassDescriptor
+0x1ee29d218  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLComputePassSampleBufferAttachmentDescriptor
+0x1ee29d1f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLComputePassSampleBufferAttachmentDescriptorArray
+0x1ee29e2f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLComputePipelineDescriptor
+0x1ee29dad8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLComputePipelineReflection
+0x1ef743168  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLConstantRelocation
+0x1ef743140  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLCounterInternal
+0x1ee29d1c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLCounterSampleBufferDescriptor
+0x1ef743118  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLCounterSampleBufferDescriptorInternal
+0x1ef7430f0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLCounterSetInternal
+0x1ef7430c8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLDebugInstrumentationData
+0x1ee29e8c0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLDepthStencilDescriptor
+0x1ef743028  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLDynamicLibraryDescriptorSPI
+0x1ef743000  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLEmulationIndirectArgumentBufferLayout
+0x1ee29e9d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionConstant
+0x1ee29ecf8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionConstantValues
+0x1ee29e3e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionDescriptor
+0x1ee29c318  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionReflection
+0x1ee29c2f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionReflectionInternal
+0x1ee29dc40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionStitchingAttributeAlwaysInline
+0x1ef740d28  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLFunctionStitchingAttributeKernel
+0x1ee29b0f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionStitchingBuiltinThreadPositionInGrid
+0x1ee29aec8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionStitchingBuiltinThreadPositionInThreadgroup
+0x1ee29b198  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionStitchingEarlyReturnNode
+0x1ee29e190  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionStitchingFunctionNode
+0x1ee29b238  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionStitchingFunctionNodeSPI
+0x1ee29e168  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionStitchingGraph
+0x1ee29b210  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionStitchingGraphSPI
+0x1ee29afe0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionStitchingInputBuffer
+0x1ee29afb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionStitchingInputBufferAddress
+0x1ee29af90  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionStitchingInputImageblock
+0x1ee29e140  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionStitchingInputNode
+0x1ee29af68  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionStitchingInputSampler
+0x1ee29af40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionStitchingInputTexture
+0x1ee29af18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLFunctionStitchingInputThreadgroup
+0x1ef742fd8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLFunctionVariant
+0x1ee29b350  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLGPUBVHBuilder
+0x1ef740d00  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLGenericAddressSpaceDispatchInfo
+0x1ef742fb0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLGenericBVHBufferSizesSPI
+0x1ef742f88  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLGenericBVHBuffersSPI
+0x1ee29e280  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLHeapDescriptor
+0x1ef742f60  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelAccelerationStructure
+0x1ef742f38  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelBlitCommandEncoder
+0x1ef742f10  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelBuffer
+0x1ef742ee8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelCommandBuffer
+0x1ef742ec0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelCommandEncoder
+0x1ef742e98  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelCommandQueue
+0x1ef742e70  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelComputeCommandEncoder
+0x1ef742e48  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelDebugCommandEncoder
+0x1ee29bc38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLIOAccelDevice
+0x1ef742e20  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelDeviceShmem
+0x1ef742df8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelDeviceShmemPool
+0x1ef742dd0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelFence
+0x1ef742da8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelHeap
+0x1ef741480  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelIOCommandBuffer
+0x1ef741458  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelIOCommandQueue
+0x1ef741430  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelIOHandleCompressed
+0x1ef741408  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelIOHandleRaw
+0x1ef742d80  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelIndirectArgumentEncoder
+0x1ef742d58  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelIndirectCommandBuffer
+0x1ef742d30  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelIndirectComputeCommand
+0x1ef742d08  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelIndirectRenderCommand
+0x1ef742ce0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelIntersectionFunctionTable
+0x1ef742cb8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelParallelRenderCommandEncoder
+0x1ef742c90  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelPooledResource
+0x1ef742c68  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelRenderCommandEncoder
+0x1ee29bc10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLIOAccelResource
+0x1ef742c40  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelResourcePool
+0x1ef742c18  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelResourceStateCommandEncoder
+0x1ef742bf0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelTexture
+0x1ef742bc8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelTextureLayout
+0x1ef742ba0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOAccelVisibleFunctionTable
+0x1ee29b788  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLIOCommandQueueDescriptor
+0x1ef742b78  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIOCompressor
+0x1ee29d1a0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLIndirectCommandBufferDescriptor
+0x1ef742ad8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLIndirectCommandBufferDescriptorInternal
+0x1ee29ace8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLIndirectConstantArgument
+0x1ee29b760  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLIndirectInstanceAccelerationStructureDescriptor
+0x1ee29d178  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLInstanceAccelerationStructureDescriptor
+0x1ee29d150  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLIntersectionFunctionDescriptor
+0x1ee29d128  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLIntersectionFunctionTableDescriptor
+0x1ee29e7f8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLLinkedFunctions
+0x1ee29b738  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLLogStateDescriptor
+0x1ef7415e8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLLogicalToPhysicalColorAttachmentMap
+0x1ee29b9b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLMeshRenderPipelineDescriptor
+0x1ef742a88  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLMessage
+0x1ef740cd8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLMessageDecoder
+0x1ef742a60  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLMessageFilter
+0x1ee29d100  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLMotionKeyframeData
+0x1ee29dab0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLPipelineBufferDescriptor
+0x1ee29ed48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLPipelineBufferDescriptorArray
+0x1ee29e690  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLPointerType
+0x1ee29d0d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLPrimitiveAccelerationStructureDescriptor
+0x1ef7429e8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLProfileControl
+0x1ee29d0b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLRasterizationRateLayerArray
+0x1ef7429c0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLRasterizationRateLayerArrayInternal
+0x1ee29d088  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLRasterizationRateLayerDescriptor
+0x1ef742998  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLRasterizationRateLayerDescriptorInternal
+0x1ee29d060  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLRasterizationRateMapDescriptor
+0x1ee29d038  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLRasterizationRateSampleArray
+0x1ef742948  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLRasterizationRateSampleArrayInternal
+0x1ee29eb18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLRenderPassAttachmentDescriptor
+0x1ee29eaf0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLRenderPassColorAttachmentDescriptor
+0x1ee29eac8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLRenderPassColorAttachmentDescriptorArray
+0x1ee29e370  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLRenderPassDepthAttachmentDescriptor
+0x1ee29eaa0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLRenderPassDescriptor
+0x1ee29d010  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLRenderPassSampleBufferAttachmentDescriptor
+0x1ee29ea78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLRenderPassSampleBufferAttachmentDescriptorArray
+0x1ee29e348  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLRenderPassStencilAttachmentDescriptor
+0x1ee29ec58  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLRenderPipelineColorAttachmentDescriptor
+0x1ee29ec30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLRenderPipelineColorAttachmentDescriptorArray
+0x1ee29ec08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLRenderPipelineDescriptor
+0x1ee29e000  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLRenderPipelineFunctionsDescriptor
+0x1ee29dce0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLRenderPipelineReflection
+0x1ee29beb8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLResidencySetDescriptor
+0x1ef740cb0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLResourceAddressRangeArray
+0x1ef7428f8  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLResourceAllocationInfo
+0x1ee29cc78  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLResourceList
+0x1ee29df88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLResourceListPool
+0x1ee29cfe8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLResourceStatePassDescriptor
+0x1ee29cfc0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLResourceStatePassSampleBufferAttachmentDescriptor
+0x1ee29cf98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLResourceStatePassSampleBufferAttachmentDescriptorArray
+0x1ef7415c0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLResourceViewPoolDescriptor
+0x1ee29ea50  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLSamplerDescriptor
+0x1ef740c88  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLShaderValidationConfiguration
+0x1ee29cf70  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLSharedEventHandle
+0x1ee29dba0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLSharedEventListener
+0x1ee29cf48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLSharedTextureHandle
+0x1ee29d830  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLStageInputOutputDescriptor
+0x1ee29e898  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLStencilDescriptor
+0x1ee29e118  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLStitchedLibraryDescriptor
+0x1ee29b1e8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLStitchedLibraryDescriptorSPI
+0x1ee29e4b0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLStructMember
+0x1ee29e488  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLStructType
+0x1ef742858  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLTag
+0x1ee29c980  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLTargetDeviceArchitecture
+0x1ef740c60  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLTensorAuxiliaryPlaneDescriptor
+0x1ef740c38  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLTensorAuxiliaryPlaneDescriptorMap
+0x1ef740c10  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLTensorAuxiliaryPlaneType
+0x1ef740bc0  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLTensorBufferAttachments
+0x1ef741598  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLTensorDescriptor
+0x1ef741570  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLTensorExtents
+0x1ef741548  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLTensorReferenceType
+0x1ee29ed98  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLTextureDescriptor
+0x1ee29e528  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLTextureReferenceType
+0x1ef741520  __AUTH,__objc_data  _OBJC_METACLASS_$_MTLTextureViewDescriptor
+0x1ee29da88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLTileRenderPipelineColorAttachmentDescriptor
+0x1ee29da60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLTileRenderPipelineColorAttachmentDescriptorArray
+0x1ee29da38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLTileRenderPipelineDescriptor
+0x1ee29e7a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLType
+0x1ee29e578  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLVertexAttribute
+0x1ee29e668  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLVertexAttributeDescriptor
+0x1ee29e640  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLVertexAttributeDescriptorArray
+0x1ee29e618  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLVertexBufferLayoutDescriptor
+0x1ee29e5f0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLVertexBufferLayoutDescriptorArray
+0x1ee29e5c8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLVertexDescriptor
+0x1ee29e2a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$_MTLVisibleFunctionTableDescriptor
+0x1ef740b98  __AUTH,__objc_data  _OBJC_METACLASS_$__MTL4Archive
+0x1ef740b70  __AUTH,__objc_data  _OBJC_METACLASS_$__MTL4ArgumentTable
+0x1ef740b48  __AUTH,__objc_data  _OBJC_METACLASS_$__MTL4BinaryFunction
+0x1ee29ba30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTL4CommandAllocator
+0x1ee29abd0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTL4CommandBuffer
+0x1ef740af8  __AUTH,__objc_data  _OBJC_METACLASS_$__MTL4CommandEncoder
+0x1ee29ba08  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTL4CommandQueue
+0x1ef740ad0  __AUTH,__objc_data  _OBJC_METACLASS_$__MTL4CommitFeedback
+0x1ef740aa8  __AUTH,__objc_data  _OBJC_METACLASS_$__MTL4CommitFeedbackDispatch
+0x1ef740a80  __AUTH,__objc_data  _OBJC_METACLASS_$__MTL4Compiler
+0x1ef740a58  __AUTH,__objc_data  _OBJC_METACLASS_$__MTL4CompilerTask
+0x1ef740a30  __AUTH,__objc_data  _OBJC_METACLASS_$__MTL4ComputeCommandEncoder
+0x1ef7409e0  __AUTH,__objc_data  _OBJC_METACLASS_$__MTL4DispatchBlockCompilerTask
+0x1ef7409b8  __AUTH,__objc_data  _OBJC_METACLASS_$__MTL4DispatchGroupCompilerTask
+0x1ef740990  __AUTH,__objc_data  _OBJC_METACLASS_$__MTL4MachineLearningCommandEncoder
+0x1ef740968  __AUTH,__objc_data  _OBJC_METACLASS_$__MTL4MachineLearningPipelineState
+0x1ef740940  __AUTH,__objc_data  _OBJC_METACLASS_$__MTL4PipelineDataSetSerializer
+0x1ef740918  __AUTH,__objc_data  _OBJC_METACLASS_$__MTL4RenderCommandEncoder
+0x1ef742830  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLAccelerationStructureCommandEncoder
+0x1ee29cb38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLAllocation
+0x1ee29c958  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLBinaryArchive
+0x1ee29cd18  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLCommandBuffer
+0x1ee29aea0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLCommandBufferDescriptor
+0x1ee29ac20  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLCommandBufferEncoderInfo
+0x1ee29cbd8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLCommandEncoder
+0x1ee29ce30  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLCommandQueue
+0x1ee29b5a8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLComputePipelineState
+0x1ef742808  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLDebugCommandEncoder
+0x1ee29c368  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLDepthStencilState
+0x1ee29df60  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLDevice
+0x1ee29b328  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLDynamicLibrary
+0x1ee29b418  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLFence
+0x1ee29ca48  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLFunction
+0x1ee29b2d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLFunctionHandle
+0x1ef7427e0  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLFunctionLogDebugLocation
+0x1ee29b468  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLHeap
+0x1ef742790  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIOCommandBuffer
+0x1ef742768  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIOCommandQueue
+0x1ef742740  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIOHandleCompressed
+0x1ef742718  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIOHandleRaw
+0x1ef7426a0  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLImageBlockArguments
+0x1ee29adb0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLIndirectArgumentBufferLayout
+0x1ee29ad88  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLIndirectArgumentEncoder
+0x1ef7408f0  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIndirectBlendColor
+0x1ef742678  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIndirectComputeCommand
+0x1ef7408c8  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIndirectDepthBiasInfo
+0x1ef7408a0  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIndirectDepthTestBounds
+0x1ef742650  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIndirectDispatchThreadgroupsArguments
+0x1ef742628  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIndirectDispatchThreadsArguments
+0x1ef742600  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIndirectDrawArguments
+0x1ef7425d8  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIndirectDrawIndexedArguments
+0x1ef7425b0  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIndirectDrawIndexedPatchesArguments
+0x1ef742588  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIndirectDrawMeshThreadgroupsArguments
+0x1ef742560  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIndirectDrawMeshThreadsArguments
+0x1ef742538  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIndirectDrawPatchesArguments
+0x1ef742510  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIndirectRenderCommand
+0x1ef740878  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIndirectScissorRects
+0x1ef740850  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIndirectStencilReferenceValues
+0x1ef7424e8  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIndirectTessellationFactorArguments
+0x1ef740828  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLIndirectViewports
+0x1ee29cd40  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLLibrary
+0x1ef740800  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLLogState
+0x1ee29df38  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLObjectWithLabel
+0x1ef742498  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLParallelRenderCommandEncoder
+0x1ee29ced0  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLPipelineCache
+0x1ef742470  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLPipelineStateBinary
+0x1ef742448  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLProgramAddressTable
+0x1ef742420  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLProgramAddressTableMappedBinary
+0x1ef7423f8  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLRasterizationRateMap
+0x1ee29c6d8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLRenderPipelineState
+0x1ee29df10  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLResource
+0x1ef7407b0  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLResourceViewPool
+0x1ef7423d0  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLSWRaytracingAccelerationStructureCommandEncoder
+0x1ee29c8b8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLSamplerState
+0x1ee29baa8  __DATA_DIRTY,__objc_data  _OBJC_METACLASS_$__MTLSharedEvent
+0x1ef740788  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLTensor
+0x1ef740760  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLTensorAuxiliaryPlane
+0x1ef740738  __AUTH,__objc_data  _OBJC_METACLASS_$__MTLTextureViewPool
+0x1ef7423a8  __AUTH,__objc_data  _OBJC_METACLASS_$__PipelineLibrarySerializer
+0x1a5204ac4  __TEXT,__text  __MTLAddCompileBinaryFunctionPerformanceStatistics
+0x1a5204a84  __TEXT,__text  __MTLAddCompileDynamicLibraryPerformanceStatistics
+0x1a5204958  __TEXT,__text  __MTLAddCompileLibraryPerformanceStatistics
+0x1a5204b04  __TEXT,__text  __MTLAddCompilePipelinePerformanceStatistics
+0x1a5249720  __TEXT,__text  __MTLAddCompilerServiceCompileTimeStats
+0x1a5208248  __TEXT,__text  __MTLAdjustMTLSize
+0x1a5267450  __TEXT,__text  __MTLCompatibleTextureDataTypeAndPixelFormat
+0x1a52674a0  __TEXT,__text  __MTLCompatibleTextureDataTypeAndPixelFormatInfo
+0x1a50e7d40  __TEXT,__text  __MTLCompilePerformanceStatisticsEnabled
+0x1a52047c8  __TEXT,__text  __MTLCompileTimeStatistics
+0x1a50de0fc  __TEXT,__text  __MTLConstantDataSize
+0x1a51514e0  __TEXT,__text  __MTLDecodeLinkingInfo
+0x1a5151420  __TEXT,__text  __MTLEncodeLinkingInfo
+0x1a520412c  __TEXT,__text  __MTLFeatureSetDictionary
+0x1ebd8f610  __DATA,__data  __MTLGLLabel
+0x1a5203db8  __TEXT,__text  __MTLGPUFamilyString
+0x1a525e1e0  __TEXT,__text  __MTLGetAttachmentSize
+0x1a525ca98  __TEXT,__text  __MTLGetSerializedVertexFormat
+0x1a5111fcc  __TEXT,__text  __MTLHashState
+0x1a5317c40  __TEXT,__const  __MTLInvalidResourceIndex
+0x1a50c6cf0  __TEXT,__text  __MTLIsInternalBuild
+0x1a51ff670  __TEXT,__text  __MTLLibraryTypeString
+0x1a50d2a18  __TEXT,__text  __MTLMessageContextBegin_
+0x1a50d2a2c  __TEXT,__text  __MTLMessageContextEnd
+0x1a526c244  __TEXT,__text  __MTLMessageContextEndNewNSError
+0x1a51414ec  __TEXT,__text  __MTLMessageContextPush_
+0x1a526c224  __TEXT,__text  __MTLMessageTypeFromFailureType
+0x1a526c01c  __TEXT,__text  __MTLNotifyMessageObservers
+0x1a5204354  __TEXT,__text  __MTLSetCompileTimeStatisticsEnabled
+0x1a5264fec  __TEXT,__text  __MTLTensorDataTypeToString
+0x1a5264f84  __TEXT,__text  __MTLTensorElementCount
+0x1a5237134  __TEXT,__text  __MTLTensorExtentsAreEqual
+0x1a5265184  __TEXT,__text  __MTLTensorIsPackedFormatType
+0x1a5265194  __TEXT,__text  __MTLTensorPlaneTypeToString
+0x1a50d57cc  __TEXT,__text  __MTLValidateRenderPassDescriptorTileProperties
+0x1a5230d70  __TEXT,__text  generateFunctionHash(MTL4FunctionDescriptor*)
+0x1a528f6b0  __TEXT,__text  MTLAttributeFormatSize(MTLAttributeFormat)
+0x1a5143e9c  __TEXT,__text  _MTLRequestHashToString(MTLUINT256_t)
+0x1a528f610  __TEXT,__text  MTLAttributeFormatAlignment(MTLAttributeFormat)
+0x1a528f660  __TEXT,__text  MTLAttributeFormatComponentCount(MTLAttributeFormat)
+0x1a52319e4  __TEXT,__text  generatePipelineHashWithDescriptor(MTL4PipelineDescriptor*)
+0x1a51c9884  __TEXT,__text  MTLAccelerationStructureInstanceDescriptorSize(MTLAccelerationStructureInstanceDescriptorType)
+0x1a51c98d4  __TEXT,__text  isValidMTLAccelerationStructureInstanceDescriptorType(MTLAccelerationStructureInstanceDescriptorType)
+0x1a5317c48  __TEXT,__const  __defaultSamplePositions_1
+0x1a5317cc0  __TEXT,__const  __defaultSamplePositions_16
+0x1a5317c50  __TEXT,__const  __defaultSamplePositions_2
+0x1a5317c60  __TEXT,__const  __defaultSamplePositions_4
+0x1a5317c80  __TEXT,__const  __defaultSamplePositions_8
+0x1a5207984  __TEXT,__text  __mtlNumMipmapLevelsForSize
+0x1a50d6d14  __TEXT,__text  __mtlValidateArgumentsForTextureViewOnDevice
+0x1a50d2354  __TEXT,__text  __mtlValidateMTLTextureSwizzleKey
+0x1a50d3934  __TEXT,__text  __mtlValidateStrideTextureParameters
+0x1a5207364  __TEXT,__text  __mtlValidateTextureUsage
+0x1a51fc100  __TEXT,__text  _getShaderCachePath
+0x1a516eeb8  __TEXT,__text  _initLogMode
+0x1a51c3434  __TEXT,__text  _isRGBPixelFormat
+0x1a526efcc  __TEXT,__text  _isVertexAmplificationModeValid
+0x1e0e85b20  __DATA_CONST,__const  _kMTLDrawablePresentationFIFO
+0x1e0e85b18  __DATA_CONST,__const  _kMTLDrawablePresentationMode
+0x1e0e85b10  __DATA_CONST,__const  _kMTLDrawablePresentationTimeInterval
+0x1ebd8b4b0  __DATA,__data  _kMetalRegistryID
+0x1ebd8b4a8  __DATA,__data  _kMetalTextureArrayLength
+0x1ebd8b498  __DATA,__data  _kMetalTextureDepth
+0x1ebd8b488  __DATA,__data  _kMetalTextureGPUOptimization
+0x1ebd8b480  __DATA,__data  _kMetalTextureHeight
+0x1ebd8b478  __DATA,__data  _kMetalTextureMipmapLevelCount
+0x1ebd8b470  __DATA,__data  _kMetalTexturePixelFormat
+0x1ebd8b460  __DATA,__data  _kMetalTextureResourceOptions
+0x1ebd8b450  __DATA,__data  _kMetalTextureSampleCount
+0x1ebd8b448  __DATA,__data  _kMetalTextureSparseValue
+0x1ebd8b440  __DATA,__data  _kMetalTextureSwizzleKey
+0x1ebd8b438  __DATA,__data  _kMetalTextureType
+0x1ebd8b430  __DATA,__data  _kMetalTextureUsage
+0x1ebd8b428  __DATA,__data  _kMetalTextureWidth
+0x1ebd8b420  __DATA,__data  _kMetalTextureWriteAccessPattern
+0x1ebd8fc30  __DATA,__common  _logMode
+0x1a5121124  __TEXT,__text  _newDataTypeDescriptionForIndirectArgument
+0x1a52301a0  __TEXT,__text  _newFunctionReflectionWithFunctionDescriptor
+0x1a51fc138  __TEXT,__text  _setShaderCachePath
+0x1a5264de4  __TEXT,__text  _tensorDataTypeBitCount
+0x1a52651c0  __TEXT,__text  _validateDispatchThreadsPerThreadgroupWithRTPTG
+0x1a528101c  __TEXT,__text  _validateMTLDataTypeConstant
+0x1a510fd60  __TEXT,__text  _validateRequiredThreadsPerThreadgroup
+```
+
+## Private
+
+```
+0x1a50c6718  __TEXT,__text  MTLDeviceArrayInitialize()
+0x1a50c6cfc  __TEXT,__text  _MTLRegisterDevices
+0x1a50c6d9c  __TEXT,__text  ___MTLCreateSystemDefaultDevice_block_invoke
+0x1a50c6e20  __TEXT,__text  +[MTLTextureDescriptor alloc]
+0x1a50c6e24  __TEXT,__text  +[MTLTextureDescriptor allocWithZone:]
+0x1a50c6ea4  __TEXT,__text  -[MTLTextureDescriptorInternal init]
+0x1a50c6fd4  __TEXT,__text  MTLPixelFormatGetInfoForFeatureSetQuery(MTLPixelFormatQuery&, MTLPixelFormat)
+0x1a50d1524  __TEXT,__text  MTLPixelFormatQuery::supportsFamily(MTLGPUFamily)
+0x1a50d1580  __TEXT,__text  -[MTLTextureDescriptorInternal setPixelFormat:]
+0x1a50d1610  __TEXT,__text  adjustPixelFormatForiOSDevice(MTLPixelFormat, MTLPixelFormatInfo const&, unsigned long*, unsigned long*, unsigned char*, bool, bool)
+0x1a50d1dbc  __TEXT,__text  -[_MTLDevice minimumLinearTextureAlignmentForPixelFormat:]
+0x1a50d1e8c  __TEXT,__text  -[_MTLDevice supportsFamily:]
+0x1a50d1ea0  __TEXT,__text  -[_MTLObjectWithLabel init]
+0x1a50d1ee4  __TEXT,__text  -[_MTLCommandBuffer initWithQueue:retainedReferences:synchronousDebugMode:]
+0x1a50d22cc  __TEXT,__text  -[_MTLCommandQueue getAndIncrementNumCommandBuffers]
+0x1a50d22f4  __TEXT,__text  -[_MTLAllocation initWithAllocationType:]
+0x1a50d234c  __TEXT,__text  -[_MTLDevice supportsNonPrivateDepthStencilTextures]
+0x1a50d2430  __TEXT,__text  _MTLMessageContextEndNewNSErrorOrAbort(_MTLMessageContext*, bool, NSString*, unsigned long)
+0x1a50d2850  __TEXT,__text  _validateMTLStorageMode
+0x1a50d291c  __TEXT,__text  -[_MTLDevice minLinearTextureAlignmentForPixelFormat:]
+0x1a50d298c  __TEXT,__text  -[_MTLObjectWithLabel dealloc]
+0x1a50d29dc  __TEXT,__text  -[_MTLResource init]
+0x1a50d2a40  __TEXT,__text  -[MTLTextureDescriptorInternal validateWithDevice:]
+0x1a50d3898  __TEXT,__text  _validateMTLResourceOptions
+0x1a50d392c  __TEXT,__text  -[MTLTextureDescriptorInternal rotation]
+0x1a50d3d5c  __TEXT,__text  -[_MTLCommandBuffer setCurrentCommandEncoder:]
+0x1a50d3e34  __TEXT,__text  MTLResourceListChunksAddEntry(MTLResourceListPrivate&, unsigned long long)
+0x1a50d3ec4  __TEXT,__text  MTLResourceListAddHashValue(MTLResourceListPrivate&, unsigned long long)
+0x1a50d4058  __TEXT,__text  -[_MTLCommandEncoder endEncoding]
+0x1a50d4434  __TEXT,__text  -[_MTLCommandBuffer commit]
+0x1a50d4560  __TEXT,__text  -[_MTLDevice supportsLossyCompression]
+0x1a50d4568  __TEXT,__text  -[_MTLObjectWithLabel retainedLabel]
+0x1a50d45a8  __TEXT,__text  -[_MTLCommandBuffer dealloc]
+0x1a50d490c  __TEXT,__text  -[_MTLCommandEncoder device]
+0x1a50d4920  __TEXT,__text  -[_MTLCommandEncoder dealloc]
+0x1a50d49dc  __TEXT,__text  -[_MTLCommandQueue commitCommandBuffer:wake:]
+0x1a50d4b4c  __TEXT,__text  ___40-[_MTLCommandQueue submitCommandBuffer:]_block_invoke
+0x1a50d4b80  __TEXT,__text  -[_MTLObjectWithLabel label]
+0x1a50d4b9c  __TEXT,__text  -[_MTLDevice supportsFamily:withFamilyArray:count:]
+0x1a50d4bcc  __TEXT,__text  _allocElement
+0x1a50d4cb8  __TEXT,__text  _MTLAtomicIncrement
+0x1a50d4cb8  __TEXT,__text  _MTLAtomicIncrement
+0x1a50d4d40  __TEXT,__text  -[_MTLObjectWithLabel setLabel:]
+0x1a50d4da8  __TEXT,__text  -[_MTLCommandQueue enqueueCommandBuffer:]
+0x1a50d4e58  __TEXT,__text  -[MTLRenderPassColorAttachmentDescriptorInternal setTexture:]
+0x1a50d4ea8  __TEXT,__text  -[_MTLCommandBuffer addCompletedHandler:]
+0x1a50d4f84  __TEXT,__text  -[MTLRenderPassColorAttachmentDescriptorInternal setLoadAction:]
+0x1a50d4f8c  __TEXT,__text  -[MTLRenderPassDescriptorInternal validate:width:height:hasOverriddenRenderTargetDimension:]
+0x1a50d5030  __TEXT,__text  __MTLValidateRenderPassDescriptorCommon
+0x1a50d5cc0  __TEXT,__text  -[_MTLCommandEncoder initWithCommandBuffer:]
+0x1a50d6024  __TEXT,__text  -[_MTLDeviceFeatureQueries familySupportsNonPrivateDepthStencilTextures]
+0x1a50d603c  __TEXT,__text  -[_MTLDeviceFeatureQueries familySupportsLossyCompression]
+0x1a50d6054  __TEXT,__text  -[_MTLDevice minTilePixels]
+0x1a50d6070  __TEXT,__text  -[_MTLCommandBuffer skipRender]
+0x1a50d6084  __TEXT,__text  -[_MTLCommandBuffer didCompleteWithStartTime:endTime:error:]
+0x1a50d6418  __TEXT,__text  -[MTLResourceList releaseAllObjectsAndReset]
+0x1a50d64ac  __TEXT,__text  MTLResourceListChunkFreeEntries(MTLResourceListChunk*)
+0x1a50d6500  __TEXT,__text  -[_MTLCommandBuffer didScheduleWithStartTime:endTime:error:]
+0x1a50d6708  __TEXT,__text  -[_MTLCommandBuffer didSchedule:error:]
+0x1a50d670c  __TEXT,__text  -[_MTLCommandBuffer addScheduledHandler:]
+0x1a50d68d4  __TEXT,__text  -[MTLRenderPassColorAttachmentDescriptorArrayInternal _descriptorAtIndex:]
+0x1a50d6910  __TEXT,__text  -[_MTLCommandQueue commandBufferDidComplete:startTime:completionTime:error:]
+0x1a50d69f0  __TEXT,__text  -[MTLRenderPassDescriptorInternal setRenderTargetWidth:]
+0x1a50d69f8  __TEXT,__text  -[_MTLDevice commandBufferErrorOptions]
+0x1a50d6a00  __TEXT,__text  +[MTLTextureDescriptor texture2DDescriptorWithPixelFormat:width:height:mipmapped:]
+0x1a50d6aa8  __TEXT,__text  -[_MTLDeviceFeatureQueries familySupportsMTL4LateBoundRenderTargets]
+0x1a50d6ac0  __TEXT,__text  -[MTLRenderPassSampleBufferAttachmentDescriptorArrayInternal _descriptorAtIndex:]
+0x1a50d6acc  __TEXT,__text  -[_MTLCommandBuffer ownedByParallelEncoder]
+0x1a50d6ae0  __TEXT,__text  -[_MTLCommandBuffer errorOptions]
+0x1a50d6af4  __TEXT,__text  -[MTLPrivateDataTable setPrivateData:privateDataOffset:logState:]
+0x1a50d6b50  __TEXT,__text  -[MTLTextureDescriptorInternal setWidth:]
+0x1a50d6b58  __TEXT,__text  -[_MTLHeap type]
+0x1a50d6b6c  __TEXT,__text  -[_MTLDevice limits]
+0x1a50d6b74  __TEXT,__text  -[_MTLCommandEncoder globalTraceObjectID]
+0x1a50d6b88  __TEXT,__text  -[MTLTextureDescriptorInternal usage]
+0x1a50d6b90  __TEXT,__text  -[MTLTextureDescriptorInternal storageMode]
+0x1a50d6b9c  __TEXT,__text  -[MTLTextureDescriptorInternal descriptorPrivate]
+0x1a50d6ba4  __TEXT,__text  -[_MTLDevice maxTextureWidth2D]
+0x1a50d6bc0  __TEXT,__text  -[MTLRenderPassDescriptorInternal validate:width:height:]
+0x1a50d6be8  __TEXT,__text  -[MTLTextureDescriptorInternal setHeight:]
+0x1a50d6bf0  __TEXT,__text  -[_MTLCommandBuffer enqueue]
+0x1a50d6c80  __TEXT,__text  -[MTLRenderPassColorAttachmentDescriptorInternal setStoreAction:]
+0x1a50d6c88  __TEXT,__text  -[MTLTextureDescriptorInternal setProtectionOptions:]
+0x1a50d6c90  __TEXT,__text  -[_MTLCommandQueue setPrivateData:privateDataOffset:logState:]
+0x1a50d6ca4  __TEXT,__text  -[_MTLCommandBuffer executeSynchronizationNotifications:]
+0x1a50d6cf4  __TEXT,__text  -[MTLRenderPassDescriptorInternal setRenderTargetHeight:]
+0x1a50d6cfc  __TEXT,__text  -[_MTLDeviceFeatureQueries familySupportsExtendedXR10Formats]
+0x1a50d70e8  __TEXT,__text  -[MTLRenderPassColorAttachmentDescriptorInternal _descriptorPrivate]
+0x1a50d70f0  __TEXT,__text  -[_MTLDevice supportsMTL4LateBoundRenderTargets]
+0x1a50d70f8  __TEXT,__text  -[_MTLDevice supportsExtendedXR10Formats]
+0x1a50d7100  __TEXT,__text  -[MTLTargetDeviceArchitecture init]
+0x1a50d7184  __TEXT,__text  getMaxSupportedLLVMVersion(bool)
+0x1a50d7244  __TEXT,__text  MTLHashKey::~MTLHashKey()
+0x1a50d7244  __TEXT,__text  MTLHashKey::~MTLHashKey()
+0x1a50d7278  __TEXT,__text  std::__1::vector<MTLUINT256_t, std::__1::allocator<MTLUINT256_t> >::reserve(unsigned long)
+0x1a50d7310  __TEXT,__text  MTLEnvVarAggregator::isInternalBuild(bool)
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7394  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7468  __TEXT,__text  _MTLGetMTLCompilerLLVMVersionForDevice(objc_object objcproto9MTLDevice*)
+0x1a50d751c  __TEXT,__text  MTLHashKey::MTLHashKey(MTLHashKey const&)
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d7520  __TEXT,__text  void std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_trai
+0x1a50d765c  __TEXT,__text  MTLHashKey::MTLHashKey(MTLHashKey const&)
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7704  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50d7750  __TEXT,__text  _MTLDeviceIsFrozen(objc_object objcproto9MTLDevice*)
+0x1a50d7770  __TEXT,__text  invocation function for block in MTLCompilerScheduler::buildRequest(unsigned int, std::__1::shared_ptr<MTLCompilerRequest>, bool, objc_object*, void  block_pointer(MTLCompilerError, NSObject objcproto16OS_dispatch_data*, char const*))
+0x1a50d7810  __TEXT,__text  MTLEnvVarAggregator::GET_AGX_LOG_SHADER_COMPILER_REQUEST(bool, bool)
+0x1a50d7874  __TEXT,__text  MTLEnvVarAggregator::GET_MTL_FORCE_COMPILER_FAILURE(bool, bool)
+0x1a50d78d8  __TEXT,__text  invocation function for block in MTLSchedulerRequest::generateXPCBlock(qos_class_t, int)
+0x1a50d84a0  __TEXT,__text  MTLXPCCompilerConnection::xpcHandler(NSObject objcproto13OS_xpc_object*)
+0x1a50d8510  __TEXT,__text  MTLXPCCompilerConnection::eventHandler(NSObject objcproto13OS_xpc_object*)
+0x1a50d8554  __TEXT,__text  LibraryWithFile::setPosition(unsigned long long)
+0x1a50d8588  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::__1::basic_string<char, std::
+0x1a50d8588  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::__1::basic_string<char, std::
+0x1a50d8588  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::__1::basic_string<char, std::
+0x1a50d8588  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::__1::basic_string<char, std::
+0x1a50d8588  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::__1::basic_string<char, std::
+0x1a50d8588  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::__1::basic_string<char, std::
+0x1a50d8588  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::__1::basic_string<char, std::
+0x1a50d8588  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::__1::basic_string<char, std::
+0x1a50d8588  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::__1::basic_string<char, std::
+0x1a50d8588  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::__1::basic_string<char, std::
+0x1a50d8588  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::__1::basic_string<char, std::
+0x1a50d8588  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::__1::basic_string<char, std::
+0x1a50d8588  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::__1::basic_string<char, std::
+0x1a50d8588  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::__1::basic_string<char, std::
+0x1a50d8588  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::__1::basic_string<char, std::
+0x1a50d8588  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::__1::basic_string<char, std::
+0x1a50d8588  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, bool>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::__1::basic_string<char, std::
+0x1a50d85dc  __TEXT,__text  _MTLGetLibrariesCache(_MTLDevice*)
+0x1a50d866c  __TEXT,__text  MTLLibraryData::mutex() const
+0x1a50d8674  __TEXT,__text  LibraryWithFile::readBytes(void*, unsigned long)
+0x1a50d86ac  __TEXT,__text  LibraryWithData::setPosition(unsigned long long)
+0x1a50d86d4  __TEXT,__text  LibraryWithData::readBytes(void*, unsigned long)
+0x1a50d8738  __TEXT,__text  MTLCachedLibraryData::release()
+0x1a50d8744  __TEXT,__text  MTLLibraryDataWithArchive::MTLLibraryDataWithArchive(MTLLibraryCache*, MTLUINT256_t const&, NSString*)
+0x1a50d8828  __TEXT,__text  MTLLibraryDataWithArchive::parseArchive(NSError**, bool, objc_object objcproto9MTLDevice*)
+0x1a50d88a8  __TEXT,__text  MTLLibraryCache::newLibraryData(MTLUINT256_t const&, NSError**, MTLLibraryData*  block_pointer(NSError**))
+0x1a50d89c0  __TEXT,__text  std::__1::map<MTLLibraryIdentifier, MTLLibraryData*, std::__1::less<MTLLibraryIdentifier>, std::__1::allocator<std::__1::pair<MTLLibraryIdentifier const, MTLLibraryData*> > >::operator[](MTLLibraryIdentifier&&)
+0x1a50d89c0  __TEXT,__text  std::__1::map<MTLLibraryIdentifier, MTLLibraryData*, std::__1::less<MTLLibraryIdentifier>, std::__1::allocator<std::__1::pair<MTLLibraryIdentifier const, MTLLibraryData*> > >::operator[](MTLLibraryIdentifier&&)
+0x1a50d89c0  __TEXT,__text  std::__1::map<MTLLibraryIdentifier, MTLLibraryData*, std::__1::less<MTLLibraryIdentifier>, std::__1::allocator<std::__1::pair<MTLLibraryIdentifier const, MTLLibraryData*> > >::operator[](MTLLibraryIdentifier&&)
+0x1a50d89c0  __TEXT,__text  std::__1::map<MTLLibraryIdentifier, MTLLibraryData*, std::__1::less<MTLLibraryIdentifier>, std::__1::allocator<std::__1::pair<MTLLibraryIdentifier const, MTLLibraryData*> > >::operator[](MTLLibraryIdentifier&&)
+0x1a50d8a4c  __TEXT,__text  MTLLibraryDataWithArchive::parseArchiveSync(NSError**, bool, objc_object objcproto9MTLDevice*)
+0x1a50d9b94  __TEXT,__text  LibraryWithData::LibraryWithData(MTLLibraryCache*, MTLUINT256_t const&, NSObject objcproto16OS_dispatch_data*, NSString*)
+0x1a50d9c18  __TEXT,__text  MTLLibraryDataWithArchive::parseHeaderExtension(LibraryHeader, MTLLibraryDataWithArchive::HeaderExtensionData&, NSError**)
+0x1a50da1b8  __TEXT,__text  MTLLibraryDataWithArchive::parseDynamicHeaderSection(NSError**)
+0x1a50da660  __TEXT,__text  LibraryWithData::getFileSize()
+0x1a50da670  __TEXT,__text  MTLLibraryData::MTLLibraryData(MTLUINT256_t const*)
+0x1a50da6d0  __TEXT,__text  LibraryWithData::getPosition()
+0x1a50da6e0  __TEXT,__text  MTLLibraryDataWithArchive::parseImportedSymbolListSection(NSError**)
+0x1a50dabc8  __TEXT,__text  MTLLibraryData::release()
+0x1a50dac24  __TEXT,__text  MTLLibraryCache::releaseLibraryData(MTLLibraryData*)
+0x1a50dac70  __TEXT,__text  MTLLibraryDataWithArchive::parseVariableListSection(NSError**)
+0x1a50db2c8  __TEXT,__text  MTLLibraryDataWithArchive::parseScriptSection(NSError**)
+0x1a50db484  __TEXT,__text  MTLLibraryData::retain()
+0x1a50db48c  __TEXT,__text  _MTLAtomicDecrement
+0x1a50db48c  __TEXT,__text  _MTLAtomicDecrement
+0x1a50db49c  __TEXT,__text  MTLLibraryDataWithArchive::getFunctionAtOffset(unsigned long long, MTLFunctionData&, MTLLibraryDataWithArchive::AdditionalFunctionData&)
+0x1a50dc05c  __TEXT,__text  MTLLibraryDataWithArchive::newFunction(NSString*, objc_object objcproto9MTLDevice*)
+0x1a50dc3d4  __TEXT,__text  ___130-[_MTLFunctionInternal newSpecializedFunctionWithDescriptor:destinationArchive:functionCache:sync:compilerTask:completionHandler:]_block_invoke
+0x1a50dc6e8  __TEXT,__text  MTLLibraryBuilder::newLibraryDataWithArchive(objc_object objcproto9MTLDevice*, NSObject objcproto16OS_dispatch_data*, NSString*, NSError**)
+0x1a50dc8f4  __TEXT,__text  -[_MTLFunctionInternal .cxx_construct]
+0x1a50dc940  __TEXT,__text  -[_MTLFunction initWithName:type:libraryData:device:]
+0x1a50dcadc  __TEXT,__text  -[_MTLFunctionInternal initWithName:type:libraryData:functionData:inheritedLibraryPath:device:]
+0x1a50dcc0c  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, DataBlock>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__
+0x1a50dcc0c  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, DataBlock>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__
+0x1a50dcc0c  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, DataBlock>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__
+0x1a50dcc0c  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, DataBlock>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__
+0x1a50dcc0c  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, DataBlock>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__
+0x1a50dcc0c  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, DataBlock>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__
+0x1a50dcc0c  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, DataBlock>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__
+0x1a50dcc0c  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, DataBlock>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__
+0x1a50dcc0c  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, DataBlock>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__
+0x1a50dcc0c  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, DataBlock>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__
+0x1a50dcc0c  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, DataBlock>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__
+0x1a50dcc0c  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, DataBlock>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__
+0x1a50dcc0c  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, DataBlock>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__
+0x1a50dcc0c  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, DataBlock>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__
+0x1a50dcc0c  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, DataBlock>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__
+0x1a50dcc0c  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, DataBlock>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__
+0x1a50dcc0c  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, DataBlock>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__
+0x1a50dccfc  __TEXT,__text  MTLLibraryBuilder::newFunctionWithNameWithArchive(objc_object objcproto9MTLDevice*, NSObject objcproto16OS_dispatch_data*, NSString*, NSString, NSError**)
+0x1a50dcdb8  __TEXT,__text  invocation function for block in MTLLibraryBuilder::newLibraryDataWithArchive(objc_object objcproto9MTLDevice*, NSObject objcproto16OS_dispatch_data*, NSString*, NSError**)
+0x1a50dce60  __TEXT,__text  MTLUINT256_t const** std::__1::vector<MTLUINT256_t const*, std::__1::allocator<MTLUINT256_t const*> >::__emplace_back_slow_path<MTLUINT256_t const*>(MTLUINT256_t const*&&)
+0x1a50dce60  __TEXT,__text  MTLUINT256_t const** std::__1::vector<MTLUINT256_t const*, std::__1::allocator<MTLUINT256_t const*> >::__emplace_back_slow_path<MTLUINT256_t const*>(MTLUINT256_t const*&&)
+0x1a50dce60  __TEXT,__text  MTLUINT256_t const** std::__1::vector<MTLUINT256_t const*, std::__1::allocator<MTLUINT256_t const*> >::__emplace_back_slow_path<MTLUINT256_t const*>(MTLUINT256_t const*&&)
+0x1a50dce60  __TEXT,__text  MTLUINT256_t const** std::__1::vector<MTLUINT256_t const*, std::__1::allocator<MTLUINT256_t const*> >::__emplace_back_slow_path<MTLUINT256_t const*>(MTLUINT256_t const*&&)
+0x1a50dcf20  __TEXT,__text  +[MTLFunctionConstantValues alloc]
+0x1a50dcf24  __TEXT,__text  +[MTLFunctionConstantValues allocWithZone:]
+0x1a50dcfa4  __TEXT,__text  -[MTLFunctionConstantValuesInternal init]
+0x1a50dd028  __TEXT,__text  +[MTLFunctionDescriptor alloc]
+0x1a50dd02c  __TEXT,__text  +[MTLFunctionDescriptor allocWithZone:]
+0x1a50dd064  __TEXT,__text  -[MTLFunctionDescriptor init]
+0x1a50dd0c8  __TEXT,__text  -[_MTLLibrary newFunctionWithNameInternal:]
+0x1a50dd1e4  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, MTLConstantStorage::ConstantData>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::_
+0x1a50dd214  __TEXT,__text  -[_MTLFunctionInternal newSpecializedFunctionWithDescriptor:destinationArchive:functionCache:sync:compilerTask:completionHandler:]
+0x1a50ddbb4  __TEXT,__text  std::__1::__tree<std::__1::__value_type<unsigned short, MTLConstantStorage::ConstantData>, std::__1::__map_value_compare<unsigned short, std::__1::pair<unsigned short const, MTLConstantStorage::ConstantData>, std::__1::less<unsigned short> >, std::__1::allocator<std::__1::pair<unsigned short const, 
+0x1a50ddbe4  __TEXT,__text  -[_MTLCommandBuffer GPUStartTime]
+0x1a50ddc08  __TEXT,__text  -[MTLTextureDescriptorInternal compressionFootprint]
+0x1a50ddc10  __TEXT,__text  -[MTLTextureDescriptorInternal setTextureType:]
+0x1a50ddc18  __TEXT,__text  -[_MTLCommandBuffer globalTraceObjectID]
+0x1a50ddc2c  __TEXT,__text  -[MTLTextureDescriptorInternal resourceOptions]
+0x1a50ddc34  __TEXT,__text  -[MTLTextureDescriptorInternal protectionOptions]
+0x1a50ddc3c  __TEXT,__text  -[_MTLDeviceFeatureQueries familySupportsNonPrivateMSAATextures]
+0x1a50ddc54  __TEXT,__text  -[_MTLCommandBuffer error]
+0x1a50ddc80  __TEXT,__text  -[_MTLCommandBuffer commandQueue]
+0x1a50ddc94  __TEXT,__text  -[_MTLDevice maxTextureHeight2D]
+0x1a50ddcb0  __TEXT,__text  -[_MTLCommandBuffer privateDataOffset]
+0x1a50ddcc4  __TEXT,__text  -[MTLTextureDescriptorInternal compressionMode]
+0x1a50ddccc  __TEXT,__text  -[_MTLCommandEncoder numThisEncoder]
+0x1a50ddce0  __TEXT,__text  -[_MTLCommandQueue submitCommandBuffer:]
+0x1a50ddd98  __TEXT,__text  -[_MTLCommandBuffer privateData]
+0x1a50dddac  __TEXT,__text  -[MTLRenderPassDescriptorInternal _descriptorPrivate]
+0x1a50dddb4  __TEXT,__text  -[MTLRenderPassDescriptorInternal setFineGrainedBackgroundVisibilityEnabled:]
+0x1a50dddbc  __TEXT,__text  -[MTLTextureDescriptorInternal cpuCacheMode]
+0x1a50dddc8  __TEXT,__text  -[MTLTextureDescriptorInternal setMipmapLevelCount:]
+0x1a50dddd0  __TEXT,__text  -[_MTLCommandBuffer isStatEnabled]
+0x1a50ddde4  __TEXT,__text  -[MTLRenderPassColorAttachmentDescriptorInternal setLevel:]
+0x1a50dddec  __TEXT,__text  -[MTLTextureDescriptorInternal textureType]
+0x1a50dddf4  __TEXT,__text  -[MTLTextureDescriptorInternal setStorageMode:]
+0x1a50dde5c  __TEXT,__text  -[MTLTextureDescriptorInternal setUsage:]
+0x1a50dde64  __TEXT,__text  -[MTLFunctionConstantValuesInternal copyWithZone:]
+0x1a50ddf1c  __TEXT,__text  MTLConstantStorage::MTLConstantStorage(MTLConstantStorage const&)
+0x1a50ddf6c  __TEXT,__text  MTLConstantStorage::ConstantData::ConstantData(MTLConstantStorage::ConstantData const&)
+0x1a50de038  __TEXT,__text  MTLConstantStorage::ConstantData::ConstantData(MTLDataType, void const*)
+0x1a50de310  __TEXT,__text  -[MTLBinaryKey dealloc]
+0x1a50de374  __TEXT,__text  std::__1::__shared_ptr_emplace<MultiLevelBinaryFSCache, std::__1::allocator<MultiLevelBinaryFSCache> >::__on_zero_shared()
+0x1a50de390  __TEXT,__text  std::__1::__shared_ptr_emplace<MultiLevelBinaryFSCache, std::__1::allocator<MultiLevelBinaryFSCache> >::__on_zero_shared_weak()
+0x1a50de394  __TEXT,__text  MultiLevelBinaryFSCache::~MultiLevelBinaryFSCache()
+0x1a50de398  __TEXT,__text  -[MTLCompileFunctionRequestData dealloc]
+0x1a50de44c  __TEXT,__text  MTLCompilerRequest::~MTLCompilerRequest()
+0x1a50de49c  __TEXT,__text  MTLSchedulerRequest::~MTLSchedulerRequest()
+0x1a50de514  __TEXT,__text  MTLSchedulerRequest::release()
+0x1a50de5a4  __TEXT,__text  MTLLibraryCache::removeLibraryData(MTLUINT256_t)
+0x1a50de634  __TEXT,__text  std::__1::__tree<std::__1::__value_type<MTLUINT256_t, std::__1::pair<unsigned int, unsigned long long> >, std::__1::__map_value_compare<MTLUINT256_t, std::__1::pair<MTLUINT256_t const, std::__1::pair<unsigned int, unsigned long long> >, CompareHash>, std::__1::allocator<std::__1::pair<MTLUINT256_t c
+0x1a50de634  __TEXT,__text  std::__1::__tree<std::__1::__value_type<MTLUINT256_t, std::__1::pair<unsigned int, unsigned long long> >, std::__1::__map_value_compare<MTLUINT256_t, std::__1::pair<MTLUINT256_t const, std::__1::pair<unsigned int, unsigned long long> >, CompareHash>, std::__1::allocator<std::__1::pair<MTLUINT256_t c
+0x1a50de634  __TEXT,__text  std::__1::__tree<std::__1::__value_type<MTLUINT256_t, std::__1::pair<unsigned int, unsigned long long> >, std::__1::__map_value_compare<MTLUINT256_t, std::__1::pair<MTLUINT256_t const, std::__1::pair<unsigned int, unsigned long long> >, CompareHash>, std::__1::allocator<std::__1::pair<MTLUINT256_t c
+0x1a50de6a8  __TEXT,__text  MTLCompilerRequest::setRequestType(MTLBuildRequestType)
+0x1a50de6b0  __TEXT,__text  MTLCompilerRequest::MTLCompilerRequest()
+0x1a50de6b0  __TEXT,__text  MTLCompilerRequest::MTLCompilerRequest()
+0x1a50de6f0  __TEXT,__text  MTLSchedulerRequest::MTLSchedulerRequest(qos_class_t)
+0x1a50de6f0  __TEXT,__text  MTLSchedulerRequest::MTLSchedulerRequest(qos_class_t)
+0x1a50de74c  __TEXT,__text  MTLCompilerRequest::setRequestData(NSObject objcproto16OS_dispatch_data*)
+0x1a50de780  __TEXT,__text  _MTLDebugIgnoreFailOnMissFlag()
+0x1a50de7e4  __TEXT,__text  MTLEnvVarAggregator::GET_MTL_REPLACE_FAST_MATH_WITH_RELAXED_MATH(bool, bool)
+0x1a50de848  __TEXT,__text  MultiLevelCacheBase::initialize(_MTLPipelineCache*, MTLCompilerCache*, MTLFailOnCacheMiss)
+0x1a50de9a4  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<HashKey, void*>*> std::__1::__hash_table<HashKey, KeyHashFunction, std::__1::equal_to<HashKey>, std::__1::allocator<HashKey> >::find<HashKey>(HashKey const&)
+0x1a50de9a4  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<HashKey, void*>*> std::__1::__hash_table<HashKey, KeyHashFunction, std::__1::equal_to<HashKey>, std::__1::allocator<HashKey> >::find<HashKey>(HashKey const&)
+0x1a50de9a4  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<HashKey, void*>*> std::__1::__hash_table<HashKey, KeyHashFunction, std::__1::equal_to<HashKey>, std::__1::allocator<HashKey> >::find<HashKey>(HashKey const&)
+0x1a50de9a4  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<HashKey, void*>*> std::__1::__hash_table<HashKey, KeyHashFunction, std::__1::equal_to<HashKey>, std::__1::allocator<HashKey> >::find<HashKey>(HashKey const&)
+0x1a50de9a4  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<HashKey, void*>*> std::__1::__hash_table<HashKey, KeyHashFunction, std::__1::equal_to<HashKey>, std::__1::allocator<HashKey> >::find<HashKey>(HashKey const&)
+0x1a50de9a4  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<HashKey, void*>*> std::__1::__hash_table<HashKey, KeyHashFunction, std::__1::equal_to<HashKey>, std::__1::allocator<HashKey> >::find<HashKey>(HashKey const&)
+0x1a50de9a4  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<HashKey, void*>*> std::__1::__hash_table<HashKey, KeyHashFunction, std::__1::equal_to<HashKey>, std::__1::allocator<HashKey> >::find<HashKey>(HashKey const&)
+0x1a50de9a4  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<HashKey, void*>*> std::__1::__hash_table<HashKey, KeyHashFunction, std::__1::equal_to<HashKey>, std::__1::allocator<HashKey> >::find<HashKey>(HashKey const&)
+0x1a50de9a4  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<HashKey, void*>*> std::__1::__hash_table<HashKey, KeyHashFunction, std::__1::equal_to<HashKey>, std::__1::allocator<HashKey> >::find<HashKey>(HashKey const&)
+0x1a50de9a4  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<HashKey, void*>*> std::__1::__hash_table<HashKey, KeyHashFunction, std::__1::equal_to<HashKey>, std::__1::allocator<HashKey> >::find<HashKey>(HashKey const&)
+0x1a50de9a4  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<HashKey, void*>*> std::__1::__hash_table<HashKey, KeyHashFunction, std::__1::equal_to<HashKey>, std::__1::allocator<HashKey> >::find<HashKey>(HashKey const&)
+0x1a50de9a4  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<HashKey, void*>*> std::__1::__hash_table<HashKey, KeyHashFunction, std::__1::equal_to<HashKey>, std::__1::allocator<HashKey> >::find<HashKey>(HashKey const&)
+0x1a50dea64  __TEXT,__text  -[MTLBinaryKey initWithHash:]
+0x1a50deb00  __TEXT,__text  MultiLevelBinaryFSCache::initialize(NSArray<objc_object objcproto16MTLBinaryArchive*>*, _MTLPipelineCache*, MTLCompilerCache*, MTLFailOnCacheMiss)
+0x1a50deb84  __TEXT,__text  MultiLevelCacheFactory::createBinaryCache(NSArray<objc_object objcproto16MTLBinaryArchive*>*, objc_object objcproto16MTLBinaryArchive, _MTLPipelineCache*, MTLCompilerCache*, MTLFailOnCacheMiss)
+0x1a50dedc4  __TEXT,__text  MultiLevelBinaryCache::getElement(MTLBinaryKey*, NSObject objcproto16OS_dispatch_data*&, NSObject objcproto16OS_dispatch_data*&, MTLReflectionType)
+0x1a50deec4  __TEXT,__text  -[MTLCompileFunctionRequestData init]
+0x1a50def24  __TEXT,__text  validateLanguageVersion(unsigned int, unsigned int)
+0x1a50df0a0  __TEXT,__text  validateAIRVersion(unsigned int, unsigned int)
+0x1a50df1ac  __TEXT,__text  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<CompilerOutputType, NSObject objcproto16OS_dispatch_data*>, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<CompilerOutputType, NSObject objcproto16OS_dispatch_data*>, std::__1::__unordered_map_hasher<CompilerOut
+0x1a50df254  __TEXT,__text  deserializeCompilerOutputData(unsigned char const*, unsigned long, unsigned long&, std::__1::unordered_map<CompilerOutputType, NSObject objcproto16OS_dispatch_data*, std::__1::hash<CompilerOutputType>, std::__1::equal_to<CompilerOutputType>, std::__1::allocator<std::__1::pair<CompilerOutputType cons
+0x1a50df348  __TEXT,__text  -[MTLCompiler cacheLegacyCompilerData:cachedData:hashMap:libraryData:functionCache:]
+0x1a50df510  __TEXT,__text  ___122-[MTLCompiler compileFunctionRequestInternal:frameworkLinking:linkDataSize:reflectionOnly:compilerTask:completionHandler:]_block_invoke
+0x1a50dfb08  __TEXT,__text  -[MTLCompiler addLegacyCompiledOutput:cachedCompiledOutput:importedSymbols:importedLibraries:hashKey:type:functionCache:]
+0x1a50dfbc4  __TEXT,__text  ___destroy_helper_block_e8_88c173_ZTSNSt3__110shared_ptrINS_13unordered_mapI18CompilerOutputTypePU27objcproto16OS_dispatch_data8NSObjectNS_4hashIS2_EENS_8equal_toIS2_EENS_9allocatorINS_4pairIKS2_S5_EEEEEEEE104c173_ZTSNSt3__110shared_ptrINS_13unordered_mapI18CompilerOutputTypePU27objcproto16OS_dispat
+0x1a50dfc20  __TEXT,__text  MTLCompilerFSCache::addElement(MTLUINT256_t, void const*, unsigned long)
+0x1a50dfddc  __TEXT,__text  MTLCompilerFSCache::flushElement(fscache_element_s*)
+0x1a50dfe28  __TEXT,__text  MultiLevelBinaryFSCache::addElement(MTLBinaryKey*, MTLBinaryEntry*)
+0x1a50dfee8  __TEXT,__text  -[MTLBinaryEntry dealloc]
+0x1a50dff70  __TEXT,__text  MTLCompilerServiceRequestHandler::~MTLCompilerServiceRequestHandler()
+0x1a50dff74  __TEXT,__text  std::__1::__shared_ptr_emplace<MTLCompilerServiceRequestHandler, std::__1::allocator<MTLCompilerServiceRequestHandler> >::__on_zero_shared()
+0x1a50dff7c  __TEXT,__text  MTLCompilerServiceRequestHandler::~MTLCompilerServiceRequestHandler()
+0x1a50dffb0  __TEXT,__text  std::__1::__shared_ptr_emplace<MTLCompilerServiceRequestHandler, std::__1::allocator<MTLCompilerServiceRequestHandler> >::__on_zero_shared_weak()
+0x1a50dffb4  __TEXT,__text  ___destroy_helper_block_e8_40c46_ZTSNSt3__110shared_ptrI18MTLCompilerRequestEE
+0x1a50dffc4  __TEXT,__text  MTLCompilerProcess::canReceiveThreadUnsafeRequests() const
+0x1a50dffcc  __TEXT,__text  MTLCompilerScheduler::cleanupCancelledRequests()
+0x1a50e0210  __TEXT,__text  MTLCompilerScheduler::getNextRequest(MTLCompilerConnection*, std::__1::unique_lock<std::__1::mutex>&, MTLCompilerScheduler::MTLCompilerSchedulerWorkstealRequirement const&)
+0x1a50e02b0  __TEXT,__text  ___destroy_helper_block_e8_40c47_ZTSNSt3__110shared_ptrI19MTLSchedulerRequestEE
+0x1a50e02c0  __TEXT,__text  MTLCompilerScheduler::selectBestRequest(MTLCompilerScheduler::MTLCompilerSchedulerWorkstealRequirement const&)
+0x1a50e0538  __TEXT,__text  std::__1::__shared_ptr_pointer<MTLCompilerRequest*, std::__1::shared_ptr<MTLCompilerRequest>::__shared_ptr_default_delete<MTLCompilerRequest, MTLCompilerRequest>, std::__1::allocator<MTLCompilerRequest> >::__on_zero_shared()
+0x1a50e0560  __TEXT,__text  MTLCompilerFunctionRequest::~MTLCompilerFunctionRequest()
+0x1a50e058c  __TEXT,__text  MTLCompilerFunctionRequest::~MTLCompilerFunctionRequest()
+0x1a50e0670  __TEXT,__text  std::__1::__shared_ptr_pointer<MTLCompilerRequest*, std::__1::shared_ptr<MTLCompilerRequest>::__shared_ptr_default_delete<MTLCompilerRequest, MTLCompilerRequest>, std::__1::allocator<MTLCompilerRequest> >::__on_zero_shared_weak()
+0x1a50e0674  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50e0674  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50e0674  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50e0674  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50e0674  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50e0674  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50e0674  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50e0674  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50e0674  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50e0674  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50e0674  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50e0674  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50e0674  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50e0674  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<unsigned long, MTLStructTypeInternal*>, std::__1::__unordered_map_hasher<unsigned long, std::__1::pair<unsigned long const, MTLStructTypeInternal*>, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long> >, std::__1::__unordered_map_equal<
+0x1a50e06d4  __TEXT,__text  std::__1::__shared_ptr_emplace<std::__1::unordered_map<CompilerOutputType, NSObject objcproto16OS_dispatch_data*, std::__1::hash<CompilerOutputType>, std::__1::equal_to<CompilerOutputType>, std::__1::allocator<std::__1::pair<CompilerOutputType const, NSObject objcproto16OS_dispatch_data*> > >, std::
+0x1a50e06d8  __TEXT,__text  FunctionReplyParameters::FunctionReplyParameters(MTLCompilerError, NSString*, std::__1::unordered_map<CompilerOutputType, NSObject objcproto16OS_dispatch_data*, std::__1::hash<CompilerOutputType>, std::__1::equal_to<CompilerOutputType>, std::__1::allocator<std::__1::pair<CompilerOutputType const, NS
+0x1a50e0964  __TEXT,__text  -[MTLCompiler releaseHashMaps:]
+0x1a50e09a8  __TEXT,__text  std::__1::__shared_ptr_emplace<std::__1::unordered_map<CompilerOutputType, MTLBinaryKey*, std::__1::hash<CompilerOutputType>, std::__1::equal_to<CompilerOutputType>, std::__1::allocator<std::__1::pair<CompilerOutputType const, MTLBinaryKey*> > >, std::__1::allocator<std::__1::unordered_map<CompilerO
+0x1a50e09b0  __TEXT,__text  -[MTLCompiler releaseCompilerOutputBlocks:]
+0x1a50e09f4  __TEXT,__text  std::__1::__shared_ptr_emplace<std::__1::unordered_map<CompilerOutputType, NSObject objcproto16OS_dispatch_data*, std::__1::hash<CompilerOutputType>, std::__1::equal_to<CompilerOutputType>, std::__1::allocator<std::__1::pair<CompilerOutputType const, NSObject objcproto16OS_dispatch_data*> > >, std::
+0x1a50e09fc  __TEXT,__text  -[_MTLRenderPipelineState initWithDevice:pipelineStateDescriptor:]
+0x1a50e0cbc  __TEXT,__text  -[MTLBinaryKey value]
+0x1a50e0cc8  __TEXT,__text  std::__1::__shared_ptr_emplace<std::__1::unordered_map<CompilerOutputType, MTLBinaryKey*, std::__1::hash<CompilerOutputType>, std::__1::equal_to<CompilerOutputType>, std::__1::allocator<std::__1::pair<CompilerOutputType const, MTLBinaryKey*> > >, std::__1::allocator<std::__1::unordered_map<CompilerO
+0x1a50e0ccc  __TEXT,__text  -[MTLRenderPipelineDescriptorInternal dealloc]
+0x1a50e0de0  __TEXT,__text  -[MTLRenderPipelineColorAttachmentDescriptorArrayInternal dealloc]
+0x1a50e0e4c  __TEXT,__text  -[MTLRenderPipelineColorAttachmentDescriptorInternal dealloc]
+0x1a50e0e84  __TEXT,__text  -[MTLPipelineBufferDescriptorArrayInternal dealloc]
+0x1a50e0ef0  __TEXT,__text  -[MTLLinkedFunctionsInternal dealloc]
+0x1a50e0f54  __TEXT,__text  std::__1::map<unsigned short, MTLConstantStorage::ConstantData, std::__1::less<unsigned short>, std::__1::allocator<std::__1::pair<unsigned short const, MTLConstantStorage::ConstantData> > >::operator[](unsigned short const&)
+0x1a50e0f54  __TEXT,__text  std::__1::map<unsigned short, MTLConstantStorage::ConstantData, std::__1::less<unsigned short>, std::__1::allocator<std::__1::pair<unsigned short const, MTLConstantStorage::ConstantData> > >::operator[](unsigned short const&)
+0x1a50e1018  __TEXT,__text  -[MTLFunctionConstantValuesInternal dealloc]
+0x1a50e1094  __TEXT,__text  std::__1::__shared_ptr_emplace<MultiLevelFunctionCache, std::__1::allocator<MultiLevelFunctionCache> >::__on_zero_shared()
+0x1a50e10b0  __TEXT,__text  MultiLevelFunctionCache::~MultiLevelFunctionCache()
+0x1a50e10b4  __TEXT,__text  std::__1::__shared_ptr_emplace<MultiLevelFunctionCache, std::__1::allocator<MultiLevelFunctionCache> >::__on_zero_shared_weak()
+0x1a50e10b8  __TEXT,__text  -[_MTLFunctionInternal bitcodeDataInternal]
+0x1a50e11fc  __TEXT,__text  MultiLevelAirCache::addElement(MTLHashKey const&, MTLAirEntry*)
+0x1a50e127c  __TEXT,__text  MultiLevelAirCache::addElement(MTLBinaryKey*, MTLAirEntry*)
+0x1a50e138c  __TEXT,__text  ___92-[_MTLLibrary newFunctionWithDescriptor:destinationArchive:functionCache:completionHandler:]_block_invoke
+0x1a50e1508  __TEXT,__text  -[MTLLinkedFunctionsInternal copyWithZone:]
+0x1a50e1578  __TEXT,__text  _MTLPopulateLinkedFunctionExtraData(MTLLinkedFunctions const*)
+0x1a50e1960  __TEXT,__text  createFunctionArray(flatbuffers::FlatBufferBuilder&, NSArray<objc_object objcproto11MTLFunction*>*)
+0x1a50e1b18  __TEXT,__text  -[_MTLDevice requiresBFloat16Emulation]
+0x1a50e1b38  __TEXT,__text  -[_MTLDevice isCollectingPipelines]
+0x1a50e1b68  __TEXT,__text  -[_MTLDevice loadDynamicLibrariesForFunction:insertLibraries:error:]
+0x1a50e1b74  __TEXT,__text  MTLLibraryBuilder::newFunctionAtIndexWithArchive(objc_object objcproto9MTLDevice*, NSObject objcproto16OS_dispatch_data*, NSString*, unsigned int, NSError**)
+0x1a50e1c9c  __TEXT,__text  MTLLibraryDataWithArchive::functionNames()
+0x1a50e1cc4  __TEXT,__text  MTLLibraryDataWithArchive::allocateFunctionNames()
+0x1a50e1e10  __TEXT,__text  -[MTLRenderPipelineDescriptorInternal copyWithZone:]
+0x1a50e2238  __TEXT,__text  +[MTLRenderPipelineColorAttachmentDescriptor alloc]
+0x1a50e223c  __TEXT,__text  -[MTLRenderPipelineColorAttachmentDescriptorInternal init]
+0x1a50e2288  __TEXT,__text  +[MTLRenderPipelineColorAttachmentDescriptor allocWithZone:]
+0x1a50e2308  __TEXT,__text  MTLCachedLibraryData::importedSymbols()
+0x1a50e2310  __TEXT,__text  MTLCachedLibraryData::importedLibraries()
+0x1a50e2318  __TEXT,__text  MTLLibraryDataWithArchive::libraryPath()
+0x1a50e2320  __TEXT,__text  invocation function for block in MTLCompilerScheduler::createBlockWithData(std::__1::shared_ptr<MTLSchedulerRequest>)
+0x1a50e24f0  __TEXT,__text  +[MTLRenderPipelineDescriptor alloc]
+0x1a50e24f4  __TEXT,__text  +[MTLRenderPipelineDescriptor allocWithZone:]
+0x1a50e2574  __TEXT,__text  -[MTLRenderPipelineDescriptorInternal init]
+0x1a50e26ec  __TEXT,__text  +[MTLRenderPipelineColorAttachmentDescriptorArray alloc]
+0x1a50e26f0  __TEXT,__text  +[MTLRenderPipelineColorAttachmentDescriptorArray allocWithZone:]
+0x1a50e2770  __TEXT,__text  +[MTLPipelineBufferDescriptorArray alloc]
+0x1a50e2774  __TEXT,__text  +[MTLPipelineBufferDescriptorArray allocWithZone:]
+0x1a50e27f4  __TEXT,__text  -[MTLRenderPipelineDescriptorInternal setVertexFunction:]
+0x1a50e285c  __TEXT,__text  +[MTLVertexBufferLayoutDescriptor allocWithZone:]
+0x1a50e28dc  __TEXT,__text  -[MTLVertexBufferLayoutDescriptorInternal init]
+0x1a50e292c  __TEXT,__text  +[MTLVertexBufferLayoutDescriptorArray alloc]
+0x1a50e2930  __TEXT,__text  +[MTLVertexBufferLayoutDescriptorArray allocWithZone:]
+0x1a50e29b0  __TEXT,__text  +[MTLVertexAttributeDescriptorArray alloc]
+0x1a50e29b4  __TEXT,__text  +[MTLVertexAttributeDescriptorArray allocWithZone:]
+0x1a50e2a34  __TEXT,__text  +[MTLVertexBufferLayoutDescriptor alloc]
+0x1a50e2a38  __TEXT,__text  -[MTLVertexDescriptorInternal copyWithZone:]
+0x1a50e2b00  __TEXT,__text  -[MTLVertexDescriptorInternal newSerializedDescriptor]
+0x1a50e2e1c  __TEXT,__text  validateVertexAttribute(MTLVertexBufferLayoutDescriptorInternal const*, int, MTLVertexAttributeDescriptorInternal const&, _MTLMessageContext*)
+0x1a50e2ea4  __TEXT,__text  validateFunctionStepRate(_MTLFunction*, MTLVertexStepFunction, unsigned long, _MTLMessageContext*)
+0x1a50e2fec  __TEXT,__text  -[MTLVertexAttributeDescriptorInternal copyWithZone:]
+0x1a50e3030  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<unsigned long long>(unsigned long long)
+0x1a50e3094  __TEXT,__text  -[MTLRenderPipelineDescriptorInternal setFragmentFunction:]
+0x1a50e30fc  __TEXT,__text  -[MTLRenderPipelineDescriptorInternal validateWithDevice:error:]
+0x1a50e31d4  __TEXT,__text  validateMTLPixelFormat(MTLPixelFormat, _MTLMessageContext*)
+0x1a50e3244  __TEXT,__text  -[MTLRenderPipelineDescriptorInternal newSerializedVertexDataWithFlags:options:error:]
+0x1a50e3590  __TEXT,__text  _MTLSerializePluginDataDictionary
+0x1a50e36a0  __TEXT,__text  +[MTLLinkedFunctions allocWithZone:]
+0x1a50e3720  __TEXT,__text  LoaderContext::getImage(NSString*) const
+0x1a50e3788  __TEXT,__text  +[MTLLinkedFunctions alloc]
+0x1a50e378c  __TEXT,__text  LoaderContext::setInsertLibraries(NSArray<objc_object objcproto20MTLDynamicLibrarySPI*>*)
+0x1a50e38a8  __TEXT,__text  _validateMTLCompareFunction
+0x1a50e38c8  __TEXT,__text  -[MTLRenderPipelineDescriptorInternal isLogicOperationEnabled]
+0x1a50e38d4  __TEXT,__text  LoaderContext::finish(unsigned long, NSError**)
+0x1a50e39f8  __TEXT,__text  -[MTLRenderPipelineDescriptorInternal newPipelineScript]
+0x1a50e39fc  __TEXT,__text  _MTLCreateRenderPipelineScriptFromDescriptor(MTLRenderPipelineDescriptor*)
+0x1a50e3ae4  __TEXT,__text  _MTLCreateRenderPipelineScriptFromDescriptor(flatbuffers::FlatBufferBuilder&, MTLRenderPipelineDescriptor*)
+0x1a50e3d80  __TEXT,__text  -[_MTLDevice registerRenderPipelineDescriptor:]
+0x1a50e3de8  __TEXT,__text  MTLLibraryDataWithArchive::readFunctionPublicOrPrivateMetadata(unsigned long long, _MTLFunction*, FunctionMetadataType)
+0x1a50e4d1c  __TEXT,__text  -[_MTLFunctionInternal initializePublicMetadata]
+0x1a50e4dd0  __TEXT,__text  MTLLibraryDataWithArchive::readFunctionMetadata(unsigned long long, _MTLFunction*, FunctionMetadataType)
+0x1a50e4de0  __TEXT,__text  -[MTLRenderPipelineColorAttachmentDescriptorArrayInternal _descriptorAtIndex:]
+0x1a50e4dec  __TEXT,__text  NSObject objcproto16OS_dispatch_data* createSerializedFragmentData<MTLRenderPipelineDescriptorPrivate>(unsigned long, unsigned long, MTLRenderPipelineDescriptorPrivate const&)
+0x1a50e51a8  __TEXT,__text  validateWithDevice(objc_object objcproto9MTLDevice*, MTLRenderPipelineDescriptorPrivate const&)
+0x1a50e54bc  __TEXT,__text  void validateRenderRasterAndLater<MTLRenderPipelineDescriptorPrivate>(_MTLMessageContext*, objc_object objcproto9MTLDevice*, MTLRenderPipelineDescriptorPrivate const&)
+0x1a50e5d50  __TEXT,__text  -[MTLRenderPipelineDescriptorInternal newSerializedFragmentDataWithFlags:options:]
+0x1a50e5d64  __TEXT,__text  _validateFunction
+0x1a50e5e18  __TEXT,__text  -[MTLLoader loadLibrariesWithDevice:function:insertLibraries:options:error:]
+0x1a50e5f58  __TEXT,__text  LoaderContext::load(_MTLFunction*, unsigned long, NSError**)
+0x1a50e6054  __TEXT,__text  LoaderContext::addImage(MTLLibraryData*, NSString*)
+0x1a50e6154  __TEXT,__text  -[_MTLDevice loadDynamicLibrariesForFunction:insertLibraries:options:error:]
+0x1a50e6160  __TEXT,__text  MTLConstantStorage::findConstantValue(MTLFunctionConstant*)
+0x1a50e6270  __TEXT,__text  MTLConstantStorage::makeValue(flatbuffers::FlatBufferBuilder&, MTLDataType, void const*)
+0x1a50e67dc  __TEXT,__text  std::__1::__tree<std::__1::__value_type<unsigned short, MTLConstantStorage::ConstantData>, std::__1::__map_value_compare<unsigned short, std::__1::pair<unsigned short const, MTLConstantStorage::ConstantData>, std::__1::less<unsigned short> >, std::__1::allocator<std::__1::pair<unsigned short const, 
+0x1a50e6854  __TEXT,__text  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, MTLConstantStorage::ConstantData>, std::__1::__map_value_compare<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::pair<std::_
+0x1a50e68cc  __TEXT,__text  MTLConstantStorage::constantAirScriptForFunction(_MTLFunction*, NSString*, NSString*, NSString**)
+0x1a50e6d60  __TEXT,__text  -[_MTLFunctionInternal specializedFunctionHash:requestData:airScript:constants:specializedName:privateFunctions:completionHandler:]
+0x1a50e6f24  __TEXT,__text  createHashForType(MTLBuildRequestType, void const*, unsigned long, MTLUINT256_t const&, MTLCompilerFunctionRequest const*, NSString*, NSArray<_MTLFunction*>*)
+0x1a50e7308  __TEXT,__text  MultiLevelCacheFactory::createFunctionCache(objc_object objcproto9MTLDevice*, NSArray<objc_object objcproto16MTLBinaryArchive*>*, objc_object, _MTLPipelineCache*, MTLCompilerCache*, MTLFailOnCacheMiss)
+0x1a50e7424  __TEXT,__text  MTLConstantStorage::serializedConstantDataForFunction(_MTLFunction*, unsigned long*, NSString**)
+0x1a50e7714  __TEXT,__text  -[MTLFunctionConstantValuesInternal serializedConstantDataForFunction:dataSize:errorMessage:]
+0x1a50e7728  __TEXT,__text  MTLConstantStorage::getConstantCountForFunction(_MTLFunction*, NSString**, bool)
+0x1a50e793c  __TEXT,__text  -[MTLFunctionConstantValuesInternal newConstantScriptForFunction:name:specializedName:errorMessage:]
+0x1a50e7954  __TEXT,__text  MTLConstantStorage::addString(flatbuffers::FlatBufferBuilder&, NSString*)
+0x1a50e79c4  __TEXT,__text  MTLGetCompilerOptions(objc_object objcproto12MTLDeviceSPI*, unsigned long, unsigned long, MTLCompileType, bool, MTLCompilerBitCodeType)
+0x1a50e7bf8  __TEXT,__text  MultiLevelFunctionCache::newFunctionWithKey(MTLHashKey const&, NSString*)
+0x1a50e7d08  __TEXT,__text  MultiLevelAirCache::failOnBinaryArchiveMiss() const
+0x1a50e7d14  __TEXT,__text  MTLHashKey::MTLHashKey(MTLUINT256_t const&)
+0x1a50e7d14  __TEXT,__text  MTLHashKey::MTLHashKey(MTLUINT256_t const&)
+0x1a50e7d78  __TEXT,__text  MTLCompilerFSCache::getElementImpl(MTLUINT256_t, void**, unsigned long*)
+0x1a50e7fe8  __TEXT,__text  MultiLevelBinaryCache::failOnBinaryArchiveMiss() const
+0x1a50e7ff4  __TEXT,__text  -[MTLCompiler validateLanguageAndAIRVersionForFunction:completionHandler:]
+0x1a50e8140  __TEXT,__text  MTLHashKey::MTLHashKey(MTLFunctionToolList const&)
+0x1a50e83b0  __TEXT,__text  getGPUCompilerHashForScript(void const*, MTLFunctionType)
+0x1a50e8490  __TEXT,__text  __getPipelineFrameworkHash
+0x1a50e8690  __TEXT,__text  FunctionHashFactory::createHash(CompilerOutputType, NSObject objcproto16OS_dispatch_data*, NSObject objcproto16OS_dispatch_data*)
+0x1a50e8880  __TEXT,__text  FunctionHashFactory::createHash(CompilerOutputType, void const*, unsigned long, void const*, unsigned long)
+0x1a50e89b8  __TEXT,__text  FunctionHashFactory::functionHashStringForType(CompilerOutputType)
+0x1a50e8a7c  __TEXT,__text  MTLHashKey::MTLHashKey(MTLFunctionToolList const&)
+0x1a50e8a80  __TEXT,__text  FunctionHashFactory::getGPUCompilerSPIOptionsMask(NSDictionary<NSString*, objc_object*>*)
+0x1a50e8f58  __TEXT,__text  flatbuffers::Offset<Air::FragmentFunctionDescriptor> createFragmentFunctionDescriptorImpl<MTLRenderPipelineDescriptorPrivate>(flatbuffers::FlatBufferBuilder&, MTLRenderPipelineDescriptorPrivate const*, flatbuffers::Offset<Air::LinkedFunctions> const&, bool)
+0x1a50e9224  __TEXT,__text  -[MTLCompiler getFunctionId:airScript:vendorPluginFunctionId:bitcodeHashList:]
+0x1a50e9474  __TEXT,__text  FunctionHashFactory::FunctionHashFactory(_MTLFunctionInternal*, MTLFunctionData const&, MTLCompilerOption, NSDictionary<NSString*, objc_object*>*, NSArray<objc_object objcproto11MTLFunction*>*, NSArray<objc_object objcproto11MTLFunction*>)
+0x1a50e9918  __TEXT,__text  -[MTLCompiler compileFunctionRequestInternal:frameworkLinking:linkDataSize:reflectionOnly:compilerTask:completionHandler:]
+0x1a50ebdd4  __TEXT,__text  MTLCompilerFSCache::openSync()
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec1dc  __TEXT,__text  unsigned int* std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__emplace_back_slow_path<unsigned int>(unsigned int&&)
+0x1a50ec29c  __TEXT,__text  flatbuffers::FlatBufferBuilder::CreateString(char const*, unsigned long)
+0x1a50ec314  __TEXT,__text  flatbuffers::FlatBufferBuilder::PreAlign(unsigned long, unsigned long)
+0x1a50ec34c  __TEXT,__text  flatbuffers::vector_downward::fill(unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec3c8  __TEXT,__text  flatbuffers::Offset<flatbuffers::Vector<flatbuffers::Offset<flatbuffers::String> > > flatbuffers::FlatBufferBuilder::CreateVector<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String> const*, unsigned long)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec44c  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddOffset<void>(unsigned short, flatbuffers::Offset<void>)
+0x1a50ec4c4  __TEXT,__text  flatbuffers::FlatBufferBuilder::EndTable(unsigned int)
+0x1a50ec688  __TEXT,__text  createLinkedFunctions(flatbuffers::FlatBufferBuilder&, MTLLinkedFunctions const*)
+0x1a50ec8d4  __TEXT,__text  MultiLevelCacheBase::getElement(MTLUINT256_t const*, NSObject objcproto16OS_dispatch_data*&)
+0x1a50eca00  __TEXT,__text  flatbuffers::vector_downward::push(unsigned char const*, unsigned long)
+0x1a50eca70  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddElement<unsigned int>(unsigned short, unsigned int, unsigned int)
+0x1a50ecad0  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddElement<unsigned char>(unsigned short, unsigned char, unsigned char)
+0x1a50ecb30  __TEXT,__text  flatbuffers::FlatBufferBuilder::Finish(unsigned int, char const*, bool)
+0x1a50ecc1c  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<unsigned char>(unsigned char)
+0x1a50ecc84  __TEXT,__text  flatbuffers::FlatBufferBuilder::TrackField(unsigned short, unsigned int)
+0x1a50ecd04  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddElement<unsigned short>(unsigned short, unsigned short, unsigned short)
+0x1a50ecd64  __TEXT,__text  flatbuffers::FlatBufferBuilder::Align(unsigned long)
+0x1a50ecd98  __TEXT,__text  flatbuffers::vector_downward::reallocate(unsigned long)
+0x1a50ecf88  __TEXT,__text  flatbuffers::FlatBufferBuilder::~FlatBufferBuilder()
+0x1a50ecfdc  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<unsigned int>(unsigned int)
+0x1a50ecfdc  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<unsigned int>(unsigned int)
+0x1a50ed040  __TEXT,__text  createVertexFunctionDescriptor(flatbuffers::FlatBufferBuilder&, MTLRenderPipelineDescriptor const*, flatbuffers::Offset<Air::LinkedFunctions> const&, bool)
+0x1a50ed780  __TEXT,__text  createFragmentColorAttachmentDescriptorVector(flatbuffers::FlatBufferBuilder&, MTLRenderPipelineColorAttachmentDescriptorArrayInternal const*)
+0x1a50edad4  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddElement<float>(unsigned short, float, float)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb30  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<flatbuffers::String>(flatbuffers::Offset<flatbuffers::String>)
+0x1a50edb80  __TEXT,__text  flatbuffers::vector_downward::~vector_downward()
+0x1a50edc5c  __TEXT,__text  unsigned int flatbuffers::FlatBufferBuilder::PushElement<unsigned short>(unsigned short)
+0x1a50edcc0  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddElement<unsigned long long>(unsigned short, unsigned long long, unsigned long long)
+0x1a50edd20  __TEXT,__text  createPipelineBufferDescriptorVector(flatbuffers::FlatBufferBuilder&, MTLPipelineBufferDescriptorArrayInternal const*)
+0x1a50edee4  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddStruct<Mtl4::Version>(unsigned short, Mtl4::Version const*)
+0x1a50edee4  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddStruct<Mtl4::Version>(unsigned short, Mtl4::Version const*)
+0x1a50edee4  __TEXT,__text  void flatbuffers::FlatBufferBuilder::AddStruct<Mtl4::Version>(unsigned short, Mtl4::Version const*)
+0x1a50edf7c  __TEXT,__text  flatbuffers::DetachedBuffer::~DetachedBuffer()
+0x1a50ee060  __TEXT,__text  MultiLevelBinaryCache::failOnCacheMiss() const
+0x1a50ee070  __TEXT,__text  MTLCompilerFunctionRequest::setRunFrameworkPasses(bool)
+0x1a50ee078  __TEXT,__text  MTLCompilerConnectionManager::getLLVMVersion() const
+0x1a50ee080  __TEXT,__text  MTLCompilerFunctionRequest::setTargetLLVMBitcodeVersion(unsigned int)
+0x1a50ee088  __TEXT,__text  MTLCompilerFunctionRequest::setPipelineData(NSObject objcproto16OS_dispatch_data*)
+0x1a50ee0bc  __TEXT,__text  MTLCompilerFunctionRequest::setlinkDataSize(unsigned long)
+0x1a50ee0c4  __TEXT,__text  MTLCompilerFunctionRequest::MTLCompilerFunctionRequest()
+0x1a50ee0c4  __TEXT,__text  MTLCompilerFunctionRequest::MTLCompilerFunctionRequest()
+0x1a50ee120  __TEXT,__text  MTLCompilerFunctionRequest::setRequestHash(MTLUINT256_t)
+0x1a50ee130  __TEXT,__text  MTLCompilerFunctionRequest::setFunction(_MTLFunction*)
+0x1a50ee174  __TEXT,__text  MTLCompilerFunctionRequest::setPrivateVisibleFunctions(NSArray<_MTLFunction*>*)
+0x1a50ee19c  __TEXT,__text  MTLCompilerFunctionRequest::setOptions(unsigned int)
+0x1a50ee1a4  __TEXT,__text  MTLCompilerFunctionRequest::setLimits(unsigned int, unsigned int)
+0x1a50ee1b0  __TEXT,__text  MTLCompilerFunctionRequest::setVisibleFunctions(NSArray<_MTLFunction*>*)
+0x1a50ee1d8  __TEXT,__text  MTLCompilerFunctionRequest::setVisibleFunctionGroups(NSDictionary<NSString*, NSArray<objc_object objcproto11MTLFunction*>*>*)
+0x1a50ee200  __TEXT,__text  MTLCompilerRequest::setMaxAccelerationStructureTraversalDepth(unsigned int)
+0x1a50ee208  __TEXT,__text  -[MTLCompiler downgradeRequest:frameworkData:compilerTask:error:]
+0x1a50ee350  __TEXT,__text  MTLCompilerFunctionRequest::shouldRunFrameworkPasses() const
+0x1a50ee358  __TEXT,__text  MTLCompilerFunctionRequest::setGPUCompilerSPIOptions(NSDictionary*)
+0x1a50ee390  __TEXT,__text  MTLCompilerFunctionRequest::setAirScript(NSObject objcproto16OS_dispatch_data*)
+0x1a50ee3cc  __TEXT,__text  MTLCompilerFunctionRequest::setPlatform(unsigned long long)
+0x1a50ee3d4  __TEXT,__text  MTLCompilerFunctionRequest::setPipelineArchiverUnitId(NSObject objcproto16OS_dispatch_data*)
+0x1a50ee3e8  __TEXT,__text  MTLCompilerConnectionManagerInternal::getCompilerPluginAtIndex(unsigned long long)
+0x1a50ee408  __TEXT,__text  ___copy_helper_block_e8_88c173_ZTSNSt3__110shared_ptrINS_13unordered_mapI18CompilerOutputTypePU27objcproto16OS_dispatch_data8NSObjectNS_4hashIS2_EENS_8equal_toIS2_EENS_9allocatorINS_4pairIKS2_S5_EEEEEEEE104c173_ZTSNSt3__110shared_ptrINS_13unordered_mapI18CompilerOutputTypePU27objcproto16OS_dispatch_
+0x1a50ee47c  __TEXT,__text  MTLCompilerScheduler::buildRequest(unsigned int, MTLCompilerRequest*, bool, objc_object*, void  block_pointer(MTLCompilerError, NSObject objcproto16OS_dispatch_data*, char const*))
+0x1a50ee55c  __TEXT,__text  MTLCompilerScheduler::QOSToID(qos_class_t)
+0x1a50ee5c0  __TEXT,__text  MTLCompilerScheduler::buildRequest(unsigned int, std::__1::shared_ptr<MTLCompilerRequest>, bool, objc_object*, void  block_pointer(MTLCompilerError, NSObject objcproto16OS_dispatch_data*, char const*))
+0x1a50eec7c  __TEXT,__text  MTLCompilerScheduler::getBestConnection(std::__1::shared_ptr<MTLSchedulerRequest> const&, std::__1::unique_lock<std::__1::mutex>&)
+0x1a50ef1c0  __TEXT,__text  MTLCompilerScheduler::assignQosToRequest(std::__1::shared_ptr<MTLSchedulerRequest> const&)
+0x1a50ef254  __TEXT,__text  ___copy_helper_block_e8_40c47_ZTSNSt3__110shared_ptrI19MTLSchedulerRequestEE
+0x1a50ef274  __TEXT,__text  MTLCompilerProcess::isAlive() const
+0x1a50ef27c  __TEXT,__text  MTLCompilerProcess::isIdle() const
+0x1a50ef2c0  __TEXT,__text  MTLCompilerConnection::isIdle() const
+0x1a50ef2dc  __TEXT,__text  MTLSchedulerRequest::generateXPCBlock(qos_class_t, int)
+0x1a50ef3dc  __TEXT,__text  MTLCompilerRequest::getRequestType() const
+0x1a50ef3e4  __TEXT,__text  MTLXPCCompilerConnection::checkConnectionAlive(unsigned long long)
+0x1a50efa48  __TEXT,__text  MTLCompilerServiceRequestHandler::MTLCompilerServiceRequestHandler(NSObject objcproto13OS_xpc_object* const&)
+0x1a50efa48  __TEXT,__text  MTLCompilerServiceRequestHandler::MTLCompilerServiceRequestHandler(NSObject objcproto13OS_xpc_object* const&)
+0x1a50efa54  __TEXT,__text  _MTLGetLLVMVersionFromDevice(objc_object objcproto9MTLDevice*)
+0x1a50efa58  __TEXT,__text  __MTLGetAIRVersionForLLVMBitcodeVersion
+0x1a50efa78  __TEXT,__text  MTLLibraryData::overrideTriple()
+0x1a50efa80  __TEXT,__text  __getForcedAIRVersion
+0x1a50efad4  __TEXT,__text  MTLCompilerBuiltinRequest::builtinScript() const
+0x1a50efb14  __TEXT,__text  MTLXPCCompilerConnection::createConnectionHandle()
+0x1a50efbbc  __TEXT,__text  invocation function for block in MTLXPCCompilerConnection::createConnectionHandle()
+0x1a50efc24  __TEXT,__text  MTLXPCCompilerConnection::compilerProcessSpawnAfterCrashRequest(NSObject objcproto13OS_xpc_object* const&)
+0x1a50efc30  __TEXT,__text  MTLXPCCompilerConnection::compilerProcessCompileRequest(NSObject objcproto13OS_xpc_object* const&)
+0x1a50efc3c  __TEXT,__text  MTLCompilerServiceRequestHandler::getXPCDictionary()
+0x1a50efc44  __TEXT,__text  MTLCompilerFunctionRequest::serializedRequest(unsigned int, char**)
+0x1a50f0f88  __TEXT,__text  serializeVisibleFunctions(NSArray<_MTLFunction*>*, std::__1::vector<MTLBuildBinaryRequest, std::__1::allocator<MTLBuildBinaryRequest> >&, char*, char**)
+0x1a50f11b4  __TEXT,__text  MTLCompilerFunctionRequest::storeOutputInBinaryArchive()
+0x1a50f11bc  __TEXT,__text  ___copy_helper_block_e8_40c46_ZTSNSt3__110shared_ptrI18MTLCompilerRequestEE
+0x1a50f11dc  __TEXT,__text  MTLCompilerScheduler::createBlockWithData(std::__1::shared_ptr<MTLSchedulerRequest>)
+0x1a50f1290  __TEXT,__text  MTLCompilerConnection::scheduleRequest(bool, std::__1::shared_ptr<MTLSchedulerRequest>, std::__1::unique_lock<std::__1::mutex>&)
+0x1a50f1490  __TEXT,__text  MTLLibraryDataWithArchive::parseBitCodeHeader(unsigned long long, unsigned long long, unsigned long long&, unsigned long long&, unsigned int&)
+0x1a50f16c8  __TEXT,__text  MTLLibraryData::copyBitCode(void*, unsigned long long, unsigned long long)
+0x1a50f1788  __TEXT,__text  flatbuffers::DefaultAllocator::deallocate(unsigned char*, unsigned long)
+0x1a50f17ac  __TEXT,__text  MultiLevelCacheBase::failOnPipelineCacheMiss() const
+0x1a50f17b8  __TEXT,__text  Air::PipelineScript::pipeline_as_render() const
+0x1a50f17b8  __TEXT,__text  Air::PipelineScript::pipeline_as_render() const
+0x1a50f1808  __TEXT,__text  MTLCompileTypeForFunction(_MTLFunction*)
+0x1a50f1840  __TEXT,__text  MultiLevelBinaryCache::getElement(MTLBinaryKey*, NSObject objcproto16OS_dispatch_data*&)
+0x1a50f1954  __TEXT,__text  getFragmentHash(Air::FragmentFunctionDescriptor const*, MTLFrameworkHashFlags)
+0x1a50f1cb4  __TEXT,__text  +[MTLHeapDescriptor alloc]
+0x1a50f1cb8  __TEXT,__text  +[MTLHeapDescriptor allocWithZone:]
+0x1a50f1d38  __TEXT,__text  -[MTLTextureDescriptorInternal resourceIndex]
+0x1a50f1d40  __TEXT,__text  -[MTLHeapDescriptorInternal init]
+0x1a50f1df0  __TEXT,__text  -[MTLHeapDescriptorInternal validateWithDevice:]
+0x1a50f1fb0  __TEXT,__text  -[_MTLHeap initWithType:options:]
+0x1a50f2078  __TEXT,__text  -[MTLHeapDescriptorInternal dealloc]
+0x1a50f20d0  __TEXT,__text  -[_MTLCommandQueue _submitAvailableCommandBuffers]
+0x1a50f23ac  __TEXT,__text  -[MTLCompileFunctionRequestData destinationBinaryArchive]
+0x1a50f23b4  __TEXT,__text  -[MTLCompiler compileFunctionRequest:compilerTask:completionHandler:]
+0x1a50f2464  __TEXT,__text  -[MTLPipelineBufferDescriptorArrayInternal _descriptorAtIndex:]
+0x1a50f2470  __TEXT,__text  -[MTLRenderPassDescriptorInternal stencilAttachment]
+0x1a50f24d8  __TEXT,__text  ___113-[_MTLFunctionInternal newSpecializedFunctionWithDescriptor:destinationArchive:functionCache:compilerTask:error:]_block_invoke
+0x1a50f251c  __TEXT,__text  +[MTLLinkedFunctionsInternal allocWithZone:]
+0x1a50f2708  __TEXT,__text  -[MTLRenderPipelineDescriptorInternal vertexFunction]
+0x1a50f2710  __TEXT,__text  ___39-[_MTLCommandQueue setSubmissionQueue:]_block_invoke
+0x1a50f2720  __TEXT,__text  -[_MTLDevice maxColorAttachments]
+0x1a50f273c  __TEXT,__text  validateBlendFactorNotDualSourced(unsigned long, unsigned int, _MTLMessageContext*)
+0x1a50f2ee0  __TEXT,__text  MTLGetPackFloatFunction::$_46::__invoke(float const*, void*)
+0x1a50f2f4c  __TEXT,__text  void std::__1::__introsort<std::__1::_ClassicAlgPolicy, MTLHashKey::MTLHashKey(MTLUINT256_t const&, std::__1::vector<MTLUINT256_t, std::__1::allocator<MTLUINT256_t> >&, std::__1::vector<std::__1::pair<unsigned int, MTLUINT256_t const>, std::__1::allocator<std::__1::pair<unsigned int, MTLUINT256_t co
+0x1a50f2f4c  __TEXT,__text  void std::__1::__introsort<std::__1::_ClassicAlgPolicy, MTLHashKey::MTLHashKey(MTLUINT256_t const&, std::__1::vector<MTLUINT256_t, std::__1::allocator<MTLUINT256_t> >&, std::__1::vector<std::__1::pair<unsigned int, MTLUINT256_t const>, std::__1::allocator<std::__1::pair<unsigned int, MTLUINT256_t co
+0x1a50f2f4c  __TEXT,__text  void std::__1::__introsort<std::__1::_ClassicAlgPolicy, MTLHashKey::MTLHashKey(MTLUINT256_t const&, std::__1::vector<MTLUINT256_t, std::__1::allocator<MTLUINT256_t> >&, std::__1::vector<std::__1::pair<unsigned int, MTLUINT256_t const>, std::__1::allocator<std::__1::pair<unsigned int, MTLUINT256_t co
+0x1a50f2f4c  __TEXT,__text  void std::__1::__introsort<std::__1::_ClassicAlgPolicy, MTLHashKey::MTLHashKey(MTLUINT256_t const&, std::__1::vector<MTLUINT256_t, std::__1::allocator<MTLUINT256_t> >&, std::__1::vector<std::__1::pair<unsigned int, MTLUINT256_t const>, std::__1::allocator<std::__1::pair<unsigned int, MTLUINT256_t co
+0x1a50f2f4c  __TEXT,__text  void std::__1::__introsort<std::__1::_ClassicAlgPolicy, MTLHashKey::MTLHashKey(MTLUINT256_t const&, std::__1::vector<MTLUINT256_t, std::__1::allocator<MTLUINT256_t> >&, std::__1::vector<std::__1::pair<unsigned int, MTLUINT256_t const>, std::__1::allocator<std::__1::pair<unsigned int, MTLUINT256_t co
+0x1a50f2f4c  __TEXT,__text  void std::__1::__introsort<std::__1::_ClassicAlgPolicy, MTLHashKey::MTLHashKey(MTLUINT256_t const&, std::__1::vector<MTLUINT256_t, std::__1::allocator<MTLUINT256_t> >&, std::__1::vector<std::__1::pair<unsigned int, MTLUINT256_t const>, std::__1::allocator<std::__1::pair<unsigned int, MTLUINT256_t co
+0x1a50f2f4c  __TEXT,__text  void std::__1::__introsort<std::__1::_ClassicAlgPolicy, MTLHashKey::MTLHashKey(MTLUINT256_t const&, std::__1::vector<MTLUINT256_t, std::__1::allocator<MTLUINT256_t> >&, std::__1::vector<std::__1::pair<unsigned int, MTLUINT256_t const>, std::__1::allocator<std::__1::pair<unsigned int, MTLUINT256_t co
+0x1a50f2f4c  __TEXT,__text  void std::__1::__introsort<std::__1::_ClassicAlgPolicy, MTLHashKey::MTLHashKey(MTLUINT256_t const&, std::__1::vector<MTLUINT256_t, std::__1::allocator<MTLUINT256_t> >&, std::__1::vector<std::__1::pair<unsigned int, MTLUINT256_t const>, std::__1::allocator<std::__1::pair<unsigned int, MTLUINT256_t co
+0x1a50f2f4c  __TEXT,__text  void std::__1::__introsort<std::__1::_ClassicAlgPolicy, MTLHashKey::MTLHashKey(MTLUINT256_t const&, std::__1::vector<MTLUINT256_t, std::__1::allocator<MTLUINT256_t> >&, std::__1::vector<std::__1::pair<unsigned int, MTLUINT256_t const>, std::__1::allocator<std::__1::pair<unsigned int, MTLUINT256_t co
+0x1a50f2f4c  __TEXT,__text  void std::__1::__introsort<std::__1::_ClassicAlgPolicy, MTLHashKey::MTLHashKey(MTLUINT256_t const&, std::__1::vector<MTLUINT256_t, std::__1::allocator<MTLUINT256_t> >&, std::__1::vector<std::__1::pair<unsigned int, MTLUINT256_t const>, std::__1::allocator<std::__1::pair<unsigned int, MTLUINT256_t co
+0x1a50f502c  __TEXT,__text  -[MTLCompiler getFunctionId:]
+0x1a50f532c  __TEXT,__text  void std::__1::__introsort<std::__1::_ClassicAlgPolicy, FunctionHashFactory::FunctionHashFactory(_MTLFunctionInternal*, MTLFunctionData const&, MTLCompilerOption, NSDictionary<NSString*, objc_object*>*, NSArray<objc_object objcproto11MTLFunction*>*, NSArray<objc_object objcproto11MTLFunction*>)::{la
+0x1a50f67b0  __TEXT,__text  -[MTLAirEntry dealloc]
+0x1a50f681c  __TEXT,__text  ___destroy_helper_block_e8_88c51_ZTSNSt3__110shared_ptrI23MultiLevelFunctionCacheEE
+0x1a50f682c  __TEXT,__text  prepareVisibleFunctionHeader(_MTLFunction const*, MTLBuildBinaryRequest&, unsigned long long&)
+0x1a50f6970  __TEXT,__text  -[MTLCommandQueueDescriptorInternal dealloc]
+0x1a50f69d4  __TEXT,__text  -[_MTLCommandQueue setLabel:]
+0x1a50f6a0c  __TEXT,__text  +[MTLStencilDescriptor alloc]
+0x1a50f6a10  __TEXT,__text  +[MTLStencilDescriptor allocWithZone:]
+0x1a50f6a90  __TEXT,__text  -[MTLStencilDescriptorInternal init]
+0x1a50f6ae8  __TEXT,__text  +[MTLDepthStencilDescriptor alloc]
+0x1a50f6aec  __TEXT,__text  +[MTLDepthStencilDescriptor allocWithZone:]
+0x1a50f6b6c  __TEXT,__text  -[MTLDepthStencilDescriptorInternal init]
+0x1a50f6bb8  __TEXT,__text  -[MTLStencilDescriptorInternal copyWithZone:]
+0x1a50f6c08  __TEXT,__text  -[MTLDepthStencilDescriptorInternal dealloc]
+0x1a50f6c64  __TEXT,__text  +[MTLRenderPassColorAttachmentDescriptor alloc]
+0x1a50f6c68  __TEXT,__text  +[MTLRenderPassStencilAttachmentDescriptor alloc]
+0x1a50f6c6c  __TEXT,__text  -[MTLRenderPassStencilAttachmentDescriptorInternal setTexture:]
+0x1a50f6cbc  __TEXT,__text  +[MTLRenderPassDepthAttachmentDescriptor alloc]
+0x1a50f6cc0  __TEXT,__text  -[MTLRenderPassSampleBufferAttachmentDescriptorArrayInternal dealloc]
+0x1a50f6d2c  __TEXT,__text  -[MTLRenderPassDescriptorInternal dealloc]
+0x1a50f6d90  __TEXT,__text  -[MTLRenderPassColorAttachmentDescriptorArrayInternal dealloc]
+0x1a50f6e0c  __TEXT,__text  -[MTLRenderPassColorAttachmentDescriptorInternal dealloc]
+0x1a50f6e60  __TEXT,__text  -[MTLRenderPassDepthAttachmentDescriptorInternal dealloc]
+0x1a50f6eb4  __TEXT,__text  -[MTLRenderPassStencilAttachmentDescriptorInternal dealloc]
+0x1a50f6f08  __TEXT,__text  +[MTLRenderPassDescriptor allocWithZone:]
+0x1a50f6f88  __TEXT,__text  +[MTLRenderPassColorAttachmentDescriptorArray alloc]
+0x1a50f6ffc  __TEXT,__text  +[MTLRenderPassSampleBufferAttachmentDescriptorArray alloc]
+0x1a50f7000  __TEXT,__text  +[MTLRenderPassSampleBufferAttachmentDescriptorArray allocWithZone:]
+0x1a50f7080  __TEXT,__text  +[MTLRenderPassColorAttachmentDescriptor allocWithZone:]
+0x1a50f7100  __TEXT,__text  +[MTLRenderPassDescriptor alloc]
+0x1a50f7104  __TEXT,__text  -[MTLRenderPassDescriptorInternal init]
+0x1a50f7198  __TEXT,__text  -[MTLRenderPassColorAttachmentDescriptorInternal init]
+0x1a50f7208  __TEXT,__text  +[MTLRenderPassStencilAttachmentDescriptor allocWithZone:]
+0x1a50f7288  __TEXT,__text  -[MTLRenderPassStencilAttachmentDescriptorInternal init]
+0x1a50f72f0  __TEXT,__text  +[MTLRenderPassDepthAttachmentDescriptor allocWithZone:]
+0x1a50f7370  __TEXT,__text  -[MTLRenderPassDepthAttachmentDescriptorInternal init]
+0x1a50f73d8  __TEXT,__text  -[MTLRenderPassDepthAttachmentDescriptorInternal setTexture:]
+0x1a50f7428  __TEXT,__text  getVertexHash(Air::VertexFunctionDescriptor const*)
+0x1a50f74fc  __TEXT,__text  MTLLibraryDataWithArchive::~MTLLibraryDataWithArchive()
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f75b0  __TEXT,__text  std::__1::__hash_table<std::__1::__hash_value_type<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int, unsigned int>, unsigned int>, std::__1::__unordered_map_hasher<std::__1::tuple<std::__1::basic_string<char, std::__1::char_traits<ch
+0x1a50f7600  __TEXT,__text  MTLCachedLibraryData::~MTLCachedLibraryData()
+0x1a50f76e4  __TEXT,__text  LibraryWithData::~LibraryWithData()
+```
+First 1,000 of 14,756.
+

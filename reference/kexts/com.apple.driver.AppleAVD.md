@@ -1,0 +1,1924 @@
+# `com.apple.driver.AppleAVD`
+
+- Name: AppleAVD
+- Version: `995`
+- UUID: `F9835757-F6A1-3593-AE91-73B9BAACDF10`
+- Source version: `995.0.0.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.FairPlayIOKit`](com.apple.driver.FairPlayIOKit.md) 3.3.0d1, [`com.apple.iokit.CoreAnalyticsFamily`](com.apple.iokit.CoreAnalyticsFamily.md) 1.0, [`com.apple.iokit.IOSurface`](com.apple.iokit.IOSurface.md) 52.6.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 9.0.0d1, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 9.0.0d1, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 9.0.0d1, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 9.0.0d1, [`com.apple.kpi.private`](com.apple.kpi.private.md) 22.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 9.0.0d1
+
+## Device-tree nodes it binds (1) [DT][KC]
+
+| Node | IOClass | matched on |
+|---|---|---|
+| [`/arm-io/avd`](../devicetree/root__arm-io__avd.md) | `AppleAVD` | `avd,t8103` |
+
+## IOKit personalities (1) [KC]
+
+### s5l8920x
+- `CFBundleIdentifier`: `com.apple.driver.AppleAVD`
+- `IOClass`: `AppleAVD`
+- `IONameMatch`:
+  - `avd,s5l8920x`
+  - `avd,t8020`
+  - `avd,t8030`
+  - `avd,t8101`
+  - `avd,t8103`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleAVD`
+- `IOPlatformSleepAction`: `100`
+- `IOPlatformWakeAction`: `100`
+- `IOProviderClass`: `AppleARMIODevice`
+
+
+## C++ classes (2) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleAVD` | 0x5060 | IOService → IORegistryEntry |
+| `AppleAVDUserClient` | 0x6158 | IOUserClient2022 → IOUserClient → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1800)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0011b40c off=0x0017f180-0x0029a58c addr=0xfffffe0007183180-0xfffffe000729e58c r--/r--   __TEXT            
+	sz=0x0001d318 off=0x0017f8e8-0x0019cc00 addr=0xfffffe00071838e8-0xfffffe00071a0c00               __TEXT.__os_log           
+	sz=0x00008588 off=0x0019cc00-0x001a5188 addr=0xfffffe00071a0c00-0xfffffe00071a9188               __TEXT.__cstring          (CstringLiterals)
+	sz=0x000f53cc off=0x001a51c0-0x0029a58c addr=0xfffffe00071a91c0-0xfffffe000729e58c               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x00067ebc off=0x017431c0-0x017ab07c addr=0xfffffe00087471c0-0xfffffe00087af07c r-x/r-x   __TEXT_EXEC       
+	sz=0x000677cc off=0x017431c0-0x017aa98c addr=0xfffffe00087471c0-0xfffffe00087ae98c          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x000006f0 off=0x017aa98c-0x017ab07c addr=0xfffffe00087ae98c-0xfffffe00087af07c          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x000013c4 off=0x04930f60-0x04932324 addr=0xfffffe000b934f60-0xfffffe000b936324 rw-/rw-   __DATA            
+	sz=0x00001334 off=0x04930f60-0x04932294 addr=0xfffffe000b934f60-0xfffffe000b936294               __DATA.__data             
+	sz=0x00000078 off=0x00000000-0x00000078 addr=0xfffffe000b936298-0xfffffe000b936310               __DATA.__common           (Zerofill)
+	sz=0x00000014 off=0x00000000-0x00000014 addr=0xfffffe000b936310-0xfffffe000b936324               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00009c40 off=0x00fc9718-0x00fd3358 addr=0xfffffe0007fcd718-0xfffffe0007fd7358 rw-/rw-   __DATA_CONST      
+	sz=0x00000010 off=0x00fc9718-0x00fc9728 addr=0xfffffe0007fcd718-0xfffffe0007fcd728         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000010 off=0x00fc9728-0x00fc9738 addr=0xfffffe0007fcd728-0xfffffe0007fcd738         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00004eb8 off=0x00fc9738-0x00fce5f0 addr=0xfffffe0007fcd738-0xfffffe0007fd25f0         __DATA_CONST.__const            
+	sz=0x00003b00 off=0x00fce5f0-0x00fd20f0 addr=0xfffffe0007fd25f0-0xfffffe0007fd60f0         __DATA_CONST.__kalloc_type      
+	sz=0x00000e10 off=0x00fd20f0-0x00fd2f00 addr=0xfffffe0007fd60f0-0xfffffe0007fd6f00         __DATA_CONST.__kalloc_var       
+	sz=0x00000378 off=0x00fd2f00-0x00fd3278 addr=0xfffffe0007fd6f00-0xfffffe0007fd7278         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000d0 off=0x00fd3278-0x00fd3348 addr=0xfffffe0007fd7278-0xfffffe0007fd7348         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000010 off=0x00fd3348-0x00fd3358 addr=0xfffffe0007fd7348-0xfffffe0007fd7358         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 248 at 0x04ad2c28
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     F9835757-F6A1-3593-AE91-73B9BAACDF10
+008: LC_SOURCE_VERSION           995.0.0.0.0
+009: LC_FUNCTION_STARTS          offset=0x004a98090 size=0xcc8
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `en`
+- `CFBundleExecutable`: `AppleAVD`
+- `CFBundleGetInfoString`: `AppleAVD 995 Copyright © 2016-2022 Apple Inc. All rights reserved.`
+- `CFBundleIdentifier`: `com.apple.driver.AppleAVD`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleAVD`
+- `CFBundleNumericVersion`: `0`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `995`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `995`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleAVD.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198904229504`
+- `_PrelinkExecutableRelativePath`: `AppleAVD`
+- `_PrelinkExecutableSize`: `1630924`
+- `_PrelinkExecutableSourceAddr`: `-2198904229504`
+- `_PrelinkKmodInfo`: `-2198829052064`
+
+## Strings (1794) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__os_log]**
+
+- `AppleAVD: INFO: %s(): ## R/W DQ: %d %d; OQ: %d %d\n`
+- `AppleAVD: ERROR: %s(): Failed to allocate AppleAVDPower object\n`
+- `AppleAVD: INFO: %s(): M3 Retention Not Supported!\n\n`
+- `AppleAVD: INFO: %s(): not supported HW Type %d\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeAllocatedUserMapKernel - IOMemoryDescriptor::withOptions API failed. %d \n\n`
+- `AppleAVD: ERROR: %s(): CmdSetProperty (cid = %2d.%d) ACK = %d FAILED!!!!\n`
+- `AppleAVD: ERROR: %s(): failed to allocate m_coreInfoList! status 0x%x\n`
+- `AppleAVD: INFO: %s(): pWrap is NULL, assuming this is Ixora\n`
+- `AppleAVD: ERROR: %s(): [Core %u] function-set_perf_state_floor is NULL!\n`
+- `AppleAVD: ERROR: %s(): Failed to create rail gating timer source\n\n`
+- `AppleAVD: INFO: %s(): avdConn. Aperture %d \n\n`
+- `AppleAVD: ERROR: %s(): Failed to cast newService to CoreAnalyticsHub\n\n`
+- `AppleAVD: INFO: %s(): AVD is not powered off in the retention state (power stage = %d), aborting!\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: m_Provider == NULL\n\n`
+- `AppleAVD: WARNING: %s(): NULL pKernelMemInfo (index = %d)!\n\n`
+- `AppleAVD: INFO: %s(): Shared buffer was never allocated!\n`
+- `AppleAVD: ERROR: %s(): clientID %d not matching with resubmit client %d\n`
+- `AppleAVD: INFO: %s(): Not supported AVD2 Revision %x\n`
+- `AppleAVD: INFO: %s(): M3 Retention Supported!\n\n`
+- `AppleAVD: INFO: %s(): [Core %u] Failed to boot\n`
+- `AppleAVD: INFO: %s(): mapper/DART is inactive!\n`
+- `AppleAVD: INFO: %s(): vp scheduling by Fw\n`
+- `AppleAVD: ERROR: %s(): Likely an issue of mismatched KEXT vs plugin / test app\n`
+- `AppleAVD: ERROR: %s(): addFrameToRefLists failed in->frameNumber = %d\n`
+- `AppleAVD: INFO: %s(): %s returning kIOReturnSuccess always for 'drmi' %d\n`
+- `AppleAVD: ERROR: %s(): unexpected start logic!! m_hwDeviceType = %d\n`
+- `AppleAVD: ERROR: %s(): FW size is 0!. This is unexpected. Check if mBoot/IPCE had loaded AVD FW or not.\n`
+- `AppleAVD: INFO: %s(): m_hwDeviceType = %d - Borage\n\n`
+- `AppleAVD: INFO: %s(): Clean up input. Do not allow one-core platforms to choose which core to use\n`
+- `AppleAVD: ERROR: %s(): invalid requested state!\n`
+- `AppleAVD: ERROR: %s(): buffer has device memory cache mode!\n\n`
+- `AppleAVD: INFO: %s(): sending encrypt property clientID %d for frame %d\n`
+- `AppleAVD: INFO: %s(): [Hv0Cfg] %08x %08x %08x %08x\n`
+- `AppleAVD: ERROR: %s(): Failed to allocate IOLock m_diagLock\n`
+- `AppleAVD: INFO: %s(): only avd1 enabled (test mode); avdId = %d\n`
+- `AppleAVD: ERROR: %s(): Failed to create AVD message box connection\n\n`
+- `AppleAVD: ERROR: %s(): Failed to wait for MCpu boot - mcpu NULL!\n`
+- `AppleAVD: INFO: %s(): t-out Handler: HW Timer event source found! Core%d!!\n`
+- `AppleAVD: INFO: %s(): m_foxtrotRetryCount %u\n`
+- `AppleAVD: INFO: %s(): clientID: %d - codecType: %d - isTestApp: %d - width: %d - height: %d - chromaFormat: %d - loadValue: %llu\n`
+- `AppleAVD: INFO: %s(): m_maxFrameParamsInFlight changed from %d to %d\n`
+- `AppleAVD: ERROR: %s(): failed to grab PQ! hwDeviceType: %d\n`
+- `AppleAVD: INFO: %s(): Unsupported Codec Type %d for ApComm\n`
+- `AppleAVD: ERROR: %s(): enter error code %d sub error %d\n`
+- `AppleAVD: ERROR: %s(): Provided client did not match the entry in the user client list at index %u\n\n`
+- `AppleAVD: INFO: %s(): AVD driver sees AVD0, but not AVD1 yet. Do not register service yet.\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: m_WorkLoop == NULL\n\n`
+- `AppleAVD: ERROR: %s(): Failed for wait for DART mapper to become active (status 0x%x)\n\n`
+- `AppleAVD: WARNING: %s(): NULL session struct for client %d\n\n`
+- `AppleAVD: ERROR: %s(): bufIdx %d used yet\n`
+- `AppleAVD: ERROR: %s(): should not have happen - invalid avdCore number %d(%d), nCid=%d, active=%d \n`
+- `AppleAVD: ERROR: %s(): [FrameDone] cID %2d.%d, fNo: %8d, pCycle = %8d, cmpTOffset = %8d, %8d\n`
+- `AppleAVD: ERROR: %s(): Failed to transition Driver state to kAvdDriverInactiveRG (result = %u)\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: failed to gen segments: 0x%08x\n\n`
+- `AppleAVD: ERROR: %s(): setKDCryptRef failed\n\n`
+- `AppleAVD: INFO: %s(): buffer still in-use, not ready to unmap, ref_count=%d, IOSID=%u\n\n`
+- `AppleAVD: INFO: %s(): AVD ADS module valid bits not set yet! Waiting until valid. status=0x%x\n`
+- `AppleAVD: ERROR: %s(): [Core %u] failed to grab WrapCtrl! hwDeviceType: %d\n\n`
+- `AppleAVD: INFO: %s(): CAVDCMD_SET_PROPERTY (%d := %d)\n`
+- `AppleAVD: INFO: %s(): setMemoryDescriptor success after flushing mapper cache\n`
+- `AppleAVD: INFO: %s(): dartStatus 0x%x dartAddr 0x%08x%08x isWrPanic=%d\n`
+- `AppleAVD: ERROR: %s(): Failed to submit START command to PQ for client %d, status = %d\n\n`
+- `AppleAVD: ERROR: %s(): map_ref_count overflow for IOSID %d, refusing remap\n\n`
+- `AppleAVD: ERROR: %s(): Field size (%d) not supported\n`
+- `AppleAVD: INFO: %s(): vpInstrFifoSize: 0x%llx - vpInstrFifoSizeBig: 0x%llx - vpInstrFifoCount: 0x%x\n`
+- `AppleAVD: INFO: %s(): @@@@@@@ cmdID %d frameNumber %d! numEntries %d\n`
+- `AppleAVD: WARNING: %s(): status: %d - physical memory size 0x%zx\n`
+- `AppleAVD: INFO: %s(): coreID: %d - SID: %d - Found DVA 0! 0x%llx\n`
+- `AppleAVD: INFO: %s(): sliceNum > max encrypted slices allowed:%d\n`
+- `AppleAVD: WARNING: %s(): MCC Handle = NULL\n`
+- `AppleAVD: INFO: %s(): AVDM3 not ready, return and try again later\n`
+- `AppleAVD: INFO: %s(): return OK\n`
+- `AppleAVD: INFO: %s(): AVD Driver is registered for power management!\n`
+- `AppleAVD: ERROR: %s(): clientID %d attempted underflow!\n`
+- `AppleAVD: ERROR: %s(): clientID %d not matching with reset client %d \n`
+- `AppleAVD: INFO: %s(): AVD ADS status valid bits set! status=0x%x\n`
+- `AppleAVD: INFO: %s(): maxDecoderPixelRate is NULL or length > 4 bytes\n`
+- `AppleAVD: ERROR: %s(): Failed to initialize AppleAVDCoreFlightControl! status: 0x%x\n`
+- `AppleAVD: INFO: %s(): AVD0 (%p) == AVD1 (%p) - only call setPowerStateOff() once\n`
+- `AppleAVD: INFO: %s(): physMemSize: 0x%zx\n`
+- `AppleAVD: ERROR: %s(): Receive FATAL error vpIdx %u vp err_stat 0x%x ctuLast 0x%x status 0x%x sDataBytes 0x%x dmaIrq 0x%x dmaErrorType %u dmaError 0x%x adsStatus 0x%x, dmaCnt %d\n\n`
+- `AppleAVD: ERROR: %s(): Invalid offset into userspace pointer (0x%llx) or iosid (%d)\n`
+- `AppleAVD: ERROR: %s(): numWorks[%u] (%u) exceeds maximum number of work units per VP (%u)\n\n`
+- `AppleAVD: ERROR: %s(): Should not be called\n`
+- `AppleAVD: INFO: %s(): user client not valid \n\n`
+- `AppleAVD: ERROR: %s(): No power! Failed to run cmdHandleHWTimeout action! status: 0x%x - waitCnt: %d x %d\n`
+- `AppleAVD: ERROR: %s(): decode frame (%d) submission for clientID %d failed with %d\n`
+- `AppleAVD: ERROR: %s(): Invalid hwDeviceType (%d)! status 0x%x\n`
+- `AppleAVD: INFO: %s(): m_coreCount: %d - avdTier: %d\n`
+- `AppleAVD: ERROR: %s(): state (= %d) is not ready\n`
+- `AppleAVD: INFO: %s(): [AvpCfg] %08x %08x %08x %08x\n`
+- `AppleAVD: ERROR: %s(): Client ID not found in waiters list!\n`
+- `AppleAVD: INFO: %s(): PQ empty !!\n\n`
+- `AppleAVD: ERROR: %s(): IOSurface is NULL!\n`
+- `AppleAVD: ERROR: %s(): - bad parameter - size - %llu\n`
+- `AppleAVD: WARNING: %s(): Something went wrong! midSpeedRequestCount != 0 - %d\n`
+- `AppleAVD: INFO: %s(): unable to send command to gate, client %4d.%d, frame %d, status 0x%x, m_testAppIsBoss %d\n`
+- `AppleAVD: ERROR: %s(): Translation/check of patch list (0x%llx) failed, error=%d\n`
+- `AppleAVD: ERROR: %s(): [Core %u] enableDeviceClock(%u, %u) returned %d\n`
+- `AppleAVD: INFO: %s(): map frameParams.... as kAvdMemType_DATA\n\n`
+- `AppleAVD: ERROR: %s(): %u: invalid command patcher!\n`
+- `AppleAVD: ERROR: %s(): Timed out waiting for STOP commands to return - status: %d\n\n`
+- `AppleAVD: ERROR: %s(): invalid bufIdx %d\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeAllocMapKernelOnly - IOMemoryDescriptor::prepare failed with err=%d\n`
+- `AppleAVD: ERROR: %s(): Cannot unmap buffer in-use\n\n`
+- `AppleAVD: INFO: %s(): removing from deferral list! pDesc: %p - pDestDMACommand: %p - sid: %d\n`
+- `AppleAVD: ERROR: %s(): -CAvdApComm- Error m_regIO = Nil\n`
+- `AppleAVD: INFO: %s(): line: %d: Exceeded max try count\n`
+- `AppleAVD: ERROR: %s(): start() failed \n\n`
+- `AppleAVD: WARNING: %s(): m_analytics init failed - error %d\n\n`
+- `AppleAVD: INFO: %s(): Opening first user client, requesting power change to active\n`
+- `AppleAVD: INFO: %s(): Requesting %d -- Available M$ size = %d, DSID = %d\n`
+- `AppleAVD: WARNING: %s(): invalid streamFPS! Forcing streamFPS to 30! previous streamFPS: %d\n`
+- `AppleAVD: ERROR: %s(): AVDM3 not ready after %d loops\n`
+- `AppleAVD: ERROR: %s(): initFairPlayServiceReference failed with %d\n`
+- `AppleAVD: ERROR: %s(): clientID %d not matching with reset client %d\n`
+- `AppleAVD: ERROR: %s(): [Error] no matching int source %p for int idx %d\n`
+- `AppleAVD: INFO: %s(): m_pendingPowerStateChange is false, likely external, skipping!\n`
+- `AppleAVD: ERROR: %s(): failed to allocate fpsHistoryBuffer!\n`
+- `AppleAVD: ERROR: %s(): Something went wrong! DVA not mapped!\n`
+- `AppleAVD: ERROR: %s(): Invalid mapType=%d for userspace parsing\n`
+- `AppleAVD: ERROR: %s(): Invalid mapType=%d\n`
+- `AppleAVD: INFO: %s(): FULL! m_validEntryCount: %d >= m_maxEntryCount: %d\n`
+- `AppleAVD: ERROR: %s(): Resubmission for entry %u after power-up failed (returned %u)\n`
+- `AppleAVD: ERROR: %s(): [VpDone] cID %2d.%d, fNo: %8d\n\n`
+- `AppleAVD: WARNING: %s(): status: %d, CAVDCMD.Start cid = %d\n`
+- `AppleAVD: INFO: %s(): work unit sliceIdx OOB!\n`
+- `AppleAVD: INFO: %s(): AppleAVD::decryptFrame_CTRMode initialClearBytes out of bounds! initialClearBytes:%d dataLength:%d\n`
+- `AppleAVD: ERROR: %s(): invalid coreIndex (%d)! coreCount is %d\n`
+- `AppleAVD: INFO: %s(): AppleAVD::decryptFrame_CTRSliceData -- invalid m_pFairPlayRef\n\n`
+- `AppleAVD: INFO: %s(): ----> %llx (%p), %llx (%p)\n\n`
+- `AppleAVD: ERROR: %s(): invalid numMappers: %d or coreID: %d\n`
+- `AppleAVD: INFO: %s(): enter client %d\n`
+- `AppleAVD: ERROR: %s(): state (= %d) is not uninitialized\n`
+- `AppleAVD: WARNING: %s(): sampled invalid parsing mode type (%d)\n\n`
+- `AppleAVD: INFO: %s(): allocate FrameP\n`
+- `AppleAVD: WARNING: %s(): [WARNING] AVD MC stream was assigned multiple DSID %d\n`
+- `AppleAVD: INFO: %s(): avd.start (driver image) fwVer = %08x, size = %8d.. sizeof(uCAvdCmd24) = %zu\n`
+- `AppleAVD: WARNING: %s(): Wait for power change failed with 0x%x!\n`
+- `AppleAVD: WARNING: %s(): Something went wrong! m_decodeSessionCount overflow! clientID: %d - m_decodeSessionCount: %d\n`
+- `AppleAVD: INFO: %s(): invalid slice data size patch request!\n`
+- `AppleAVD: ERROR: %s(): m_commandPatcher init Failed!\n`
+- `AppleAVD: INFO: %s(): ecid = %llx, board_id = %hx, chip_id = %x\n\n`
+- `AppleAVD: WARNING: %s(): Prevented OOB write. outputSize %zu, chunkSize %llu, chunkStart %llu\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: m_numDvaBits < %d\n\n`
+- `AppleAVD: ERROR: %s(): clientID %d.%d frameNumber %d error %d, offsetIndex %d, isHwErr %d\n`
+- `AppleAVD: ERROR: %s(): Copy from userspace decode buffer to kernel decode buffer failed, error=%d\n`
+- `AppleAVD: ERROR: %s(): Invalid totalSliceRegistersSize %d\n`
+- `AppleAVD: INFO: %s(): avdId=0: pMCC=%p pMCStrm=%p [en=%d]\n`
+- `AppleAVD: ERROR: %s(): :: Cannot register AppleAVD with M$ driver\n`
+- `AppleAVD: WARNING: %s(): Perf counter is already in power off state\n`
+- `AppleAVD: INFO: %s(): AppleAVD::KDGetAocpPolicy returned %x for contextID %d m_KDDecryptRef:%p encryptionScheme:%d aocpPolicy:%llu\n`
+- `AppleAVD: INFO: %s(): platform_chip_id is %s\n\n`
+- `AppleAVD: INFO: %s(): AVD driver sees AVD1, but not AVD0 yet. Do not register service yet.\n`
+- `AppleAVD: INFO: %s(): Setting Critical State as FALSE - size: 0x%llx/0x%x\n`
+- `AppleAVD: INFO: %s(): Cannot save M3 Context before forcing panic, power stage = %u\n\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: m_pDartPowerLock == NULL\n\n`
+- `AppleAVD: ERROR: %s(): Invalid provider\n`
+- `AppleAVD: ERROR: %s(): %s has error.\n`
+- `AppleAVD: INFO: %s(): process PID %d has max %d decode sessions maxUserClientCount %d\n`
+- `AppleAVD: WARNING: %s(): nMCSize is %u! (avdDSID = %d)\n\n`
+- `AppleAVD: ERROR: %s(): m_analytics is NULL!\n\n`
+- `AppleAVD: INFO: %s(): initializing avdsm!\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: fCommandPools[%d] == NULL\n\n`
+- `AppleAVD: ERROR: %s(): Mismatch between decryptDataBuffer size (%u) and inputBuffer size (%u)\n`
+- `AppleAVD: ERROR: %s(): MCC Handle = NULL\n`
+- `AppleAVD: INFO: %s(): Not all update bits in this resource group are zero. num_zeros = %d. total = %d. Retry.\n`
+- `AppleAVD: INFO: %s(): Current index: [%d]\n\n`
+- `AppleAVD: WARNING: %s(): cmdID: %d not supported!\n`
+- `AppleAVD: WARNING: %s(): uncompressedSize %zu, outputSize %zu\n`
+- `AppleAVD: ERROR: %s(): decryptDataBuffer allocateMemory failed: %d \n\n`
+- `AppleAVD: ERROR: %s(): allocateMemory failed: %d \n\n`
+- `AppleAVD: ERROR: %s(): Error allocating decryptDataBuffer\n`
+- `AppleAVD: WARNING: %s(): [WARNING] Could not enable %d with MCC driver\n`
+- `AppleAVD: INFO: %s(): ReceiveCommand: outbox0 empty\n\n`
+- `AppleAVD: ERROR: %s(): reference cmp %d has error %s .\n`
+- `AppleAVD: INFO: %s(): HR timestamp: %llu\n\n`
+- `AppleAVD: ERROR: %s(): Failed to power up AVD, power stage = %u\n`
+- `AppleAVD: ERROR: %s(): Failed to allocate IOLock m_sharedMemLock - status: 0x%x\n`
+- `AppleAVD: WARNING: %s(): CRC mismatch. Reference %u Output %u\n`
+- `AppleAVD: INFO: %s(): Invalid resolution\n`
+- `AppleAVD: INFO: %s(): for kEncryptionScheme_Fairplay, Required HDCP Type is %llx %d %p\n`
+- `AppleAVD: WARNING: %s(): m_analytics was not correctly started - error %d\n\n`
+- `AppleAVD: INFO: %s(): dartStatus 0x%x dartAddr 0x%x isWrPanic=%d\n`
+- `AppleAVD: ERROR: %s(): all numWorks are ZERO! Fail to enqueue!\n\n`
+- `AppleAVD: INFO: %s(): Loaded tunables, but written vs read back values are different\n`
+- `AppleAVD: INFO: %s(): [%p] client %p; m_pUserClientList[0..3] = [%p, %p, %p, %p] clientid %d, m_numActiveUserClients %d\n\n`
+- `AppleAVD: ERROR: %s(): failed to get the PramQ information for client %d frame %d\n`
+- `AppleAVD: WARNING: %s(): invalid minSpeedRequest (%d)! forcing to kDecodeSpeedForceSlow!\n`
+- `AppleAVD: WARNING: %s(): Invalid AVD core index (%u >= %u)\n`
+- `AppleAVD: ERROR: %s(): IOSurf %d not correctly protected! required options = 0x%llx, got options 0x%llx\n\n`
+- `AppleAVD: ERROR: %s(): Failed to create Oracle attack cleared timer source\n\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeInputBuffer - IOMemoryDescriptor::withOptions API failed. %d \n\n`
+- `AppleAVD: ERROR: %s(): sleepCommandGate failed with %d\n\n`
+- `AppleAVD: ERROR: %s(): invalid clientID! status 0x%x\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: kIODARTFunctionSetParameter kIODARTIOMDCacheSizeKey failed\n\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: destDMACommand == NULL\n\n`
+- `AppleAVD: ERROR: %s(): should not be used...\n`
+- `AppleAVD: ERROR: %s(): invalid index %d!\n`
+- `AppleAVD: INFO: %s(): @@@@@@@ priority queue not empty! numEntries %d\n`
+- `AppleAVD: INFO: %s(): WARNING!! Attempting to change OnDemandMapEnable with multiple clients opened (%d)! currently %s - requested %s\n`
+- `AppleAVD: INFO: %s(): On-Demand DVA Mapping %s\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeAllocMapUserOnly - IOMemoryDescriptor::prepare failed with err=%d\n`
+- `AppleAVD: WARNING: %s(): clientID %d wait for queue empty timed out (%llu)\n`
+- `AppleAVD: INFO: %s(): chunkExists: chunkSize %llu, chunkStart %llu\n`
+- `AppleAVD: ERROR: %s(): %s() called outside of gated context\n`
+- `AppleAVD: ERROR: %s(): NULL workloop\n`
+- `AppleAVD: ERROR: %s(): owner == NULL\n\n`
+- `AppleAVD: WARNING: %s(): attempting kAvdDriverInactiveRG from %d\n`
+- `AppleAVD: ERROR: %s(): FRM DONE (cid: %2d.%d, fno: %8d, codecT: %d) FAILED!!\n`
+- `AppleAVD: WARNING: %s(): m_memInfoArray %p m_memInfoCount %d exists! Cleaning up before allocating\n`
+- `AppleAVD: ERROR: %s(): -CAvdMcpu- Error m_regIO = Nil\n`
+- `AppleAVD: INFO: %s(): invalid ixora tunable id %d\n`
+- `AppleAVD: INFO: %s(): ADS status - chipID:%d - boardID:%d - ecID:%d - time:%d\n`
+- `AppleAVD: ERROR: %s(): t-out Handler:  WARNING! Couldn't find AVD Core Index! Defaulting to Core0!\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeIOSurface - IOMemoryDescriptor::prepare failed with err=%d\n`
+- `AppleAVD: ERROR: %s(): No Dart Error expected\n\n`
+- `AppleAVD: INFO: %s(): Detected! %u occurrences in %llu seconds\n\n`
+- `AppleAVD: ERROR: %s(): slice data sizes mismatch!\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: fMapper[%d] == NULL\n\n`
+- `AppleAVD: ERROR: %s(): (REF) Incorrect buffer options!! isBufferCorrectOptions %d surfid %d otherIOSurfaceProtectionOptionsFromFairPlay %lld\n`
+- `AppleAVD: INFO: %s(): [DmaTop] %08x %08x %08x %08x\n`
+- `AppleAVD: INFO: %s(): map frameParams.... as kAvdMemType_DATA1, aid = %d\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeAllocMapKernelOnlyCached - IOMemoryDescriptor::withOptions API failed. %d \n\n`
+- `AppleAVD: INFO: %s(): pKernelMemInfo->xfer NULL\n`
+- `AppleAVD: WARNING: %s(): m_IOSurfaceRoot is not valid! Skipping mapper registeration for IOSurface Deallocation Early Purge...\n`
+- `AppleAVD: ERROR: %s(): driverKernelTimeoutOverride (%dms) exceeds max timeout (%dms)!\n`
+- `AppleAVD: WARNING: %s(): Input Buffer Remapping - timeout status: %d\n`
+- `AppleAVD: ERROR: %s(): Calling processFrameDone()!\n`
+- `AppleAVD: INFO: %s(): EMPTY! m_validEntryCount: %d\n`
+- `AppleAVD: ERROR: %s(): NULL AVD IORegistryEntry!\n`
+- `AppleAVD: INFO: %s(): clientID %d frame %d needs to invalidate with ADS!\n`
+- `AppleAVD: ERROR: %s(): Timer callback should not have been reached as PSD is not supported!\n\n`
+- `AppleAVD: WARNING: %s(): retainCount is already 0!\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: DARTErrorHandler install failed 0x%08x\n\n`
+- `AppleAVD: INFO: %s(): set KEY(H13)\n\n`
+- `AppleAVD: ERROR: %s(): Failed to decrypt frameNum=%d\n`
+- `AppleAVD: INFO: %s(): avd.start fwVer = %08x, size = %8d.. sizeof(uCAvdCmd24) = %zu\n`
+- `AppleAVD: INFO: %s(): mctl status=%08x, ctulast=%08x\n`
+- `AppleAVD: INFO: %s(): Removing command from client %d.\n\n`
+- `AppleAVD: ERROR: %s(): attach() failed \n\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeIOSurface - ioSurface is read-only\n\n`
+- `AppleAVD: ERROR: %s(): CAVDCMD_ERR_DMA_AZD_DECOMP_READ error happens\n\n`
+- `AppleAVD: INFO: %s(): PriorityQueue underflow!\n\n`
+- `AppleAVD: ERROR: %s(): AppleAVDUserClient::setResolutionInfo for contextID %d returned kIOReturnError: %d \n\n`
+- `AppleAVD: ERROR: %s(): allocation for m_completedSessions failed!!\n\n`
+- `AppleAVD: ERROR: %s(): Invalid PQ/ApComm state for coreID: %u\n\n`
+- `AppleAVD: WARNING: %s(): status: %d, CAVDCMD.SetProperty cid = %d\n`
+- `AppleAVD: INFO: %s(): Falling back to decryption method %d, got key type %d\n\n`
+- `AppleAVD: ERROR: %s(): (DISP) Incorrect buffer options!! isBufferCorrectOptions: %d surfid %d otherIOSurfaceProtectionOptionsFromFairPlay %lld\n`
+- `AppleAVD: ERROR: %s(): Error (status=%d)\n`
+- `AppleAVD: ERROR: %s(): Failed to deallocate shared buffer! status: 0x%x\n`
+- `AppleAVD: ERROR: %s(): unmapInfo is NULL!\n`
+- `AppleAVD: INFO: %s(): ASSERT @ %s() :: Line %d Assert Broken \n\n`
+- `AppleAVD: INFO: %s(): current assigned M$ size %d < expected %d\n`
+- `AppleAVD: INFO: %s(): Rail Gating Timer expired\n`
+- `AppleAVD: ERROR: %s(): Decryption is not allowed (0x%x)\n`
+- `AppleAVD: ERROR: %s(): Unable to map decryptDataBuffer\n`
+- `AppleAVD: ERROR: %s(): Invalid decodeBuffer sizes, reqOptSize=%d, workUnitSize=%d\n`
+- `AppleAVD: INFO: %s(): ------------------------- Mappings START -------------------------\n\n`
+- `AppleAVD: INFO: %s(): [Core %u] AVD reset function returned %d\n`
+- `AppleAVD: INFO: %s(): (in)ValidClientID: %d for HReset. nCid: %d \n`
+- `AppleAVD: INFO: %s(): coreIndex: %d - loadScore: %llu - activeLoadRate: %llu - totalClientLoadRate: %llu\n`
+- `AppleAVD: INFO: %s(): ---- %08x ## %d %d %d ##\n`
+- `AppleAVD: ERROR: %s(): Failed to init m_showExistingFrames\n`
+- `AppleAVD: ERROR: %s(): Bad decrypt arguments byteOffset=%u, dataLength=%u, buffer size=%u\n`
+- `AppleAVD: ERROR: %s(): cleaning up!\n`
+- `AppleAVD: ERROR: %s(): decodeBufferSize too large! (%u > %u)\n\n`
+- `AppleAVD: ERROR: %s(): failed to allocate buffer! maxEntryCount: %d\n`
+- `AppleAVD: INFO: %s(): AppleAVD::decryptFrame_KeyDelivery -- invalid m_KDDecryptRef\n\n`
+- `AppleAVD: INFO: %s(): Unsupported pMemBaseRegPhysical = %llx\n`
+- `AppleAVD: WARNING: %s(): attempting kAvdDriverInactivePending from %d\n`
+- `AppleAVD: WARNING: %s(): attempting kAvdDriverActivePending from %d\n`
+- `AppleAVD: ERROR: %s(): failed to allocate & map memory!\n`
+- `AppleAVD: INFO: %s(): waiting... freeEntryCount: %d\n`
+- `AppleAVD: ERROR: %s(): Decode buffer sizes overflow, reqOptSize=%d, sliceRegistersSize=%d, workUnitSize=%d\n`
+- `AppleAVD: ERROR: %s(): Timed out waiting for ADS STATUS bits to become valid, timeoutCount=%u, status=0x%x\n`
+- `AppleAVD: WARNING: %s(): bufIdx %d already AVAILABLE, skipping reset to avoid in-flight underflow\n`
+- `AppleAVD: INFO: %s(): [Core %u] m_setPerfStateFunctionHandle = %p\n`
+- `AppleAVD: INFO: %s(): underflow! Advancing empty queue! m3HwRdPos %d m3CmdQueueWrPos %d\n\n`
+- `AppleAVD: INFO: %s(): Resubmitting entry %u: cmd %u [c:%u,f:%u]\n`
+- `AppleAVD: WARNING: %s(): sampled invalid color depth (%d)\n\n`
+- `AppleAVD: INFO: %s(): maxUserClientCountProcess: %d m_maxUserClientCount %d\n`
+- `AppleAVD: INFO: %s(): workloop already been created... %p, workloop=%p\n`
+- `AppleAVD: WARNING: %s(): chunkEnd overflow. chunkSize %llu, chunkStart %llu\n`
+- `AppleAVD: ERROR: %s(): NULL crypt ref!\n\n`
+- `AppleAVD: WARNING: %s(): %s() : Enable VP done property command is not submitted to FW... Try again.\n`
+- `AppleAVD: INFO: %s(): should not be used...\n`
+- `AppleAVD: ERROR: %s(): actualAllocSize > 32 bits!\n\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeAllocMapUserKernel - IOMemoryDescriptor::prepare failed with err=%d\n`
+- `AppleAVD: ERROR: %s(): Received cmdType %u for Foxtrot in %u state\n`
+- `AppleAVD: INFO: %s(): clientID %d was assigned to core: %d - loadBalanceMode: %d\n`
+- `AppleAVD: WARNING: %s(): invalid coreIndex (%d)! coreCount is %d - forcing VMIN!\n`
+- `AppleAVD: ERROR: %s(): Attempting to set invalid client ID (%d >= %d)\n`
+- `AppleAVD: ERROR: %s(): Exceeded buffers to release (%d)\n`
+- `AppleAVD: ERROR: %s(): [l:%u] PO Msg Box mapping failed\n`
+- `AppleAVD: INFO: %s(): reached max number of decode sessions activeclients %d!\n`
+- `AppleAVD: INFO: %s(): Already in SoftReset state...\n\n`
+- `AppleAVD: ERROR: %s(): registerPowerDriver returned 0x%x!\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeAllocMapUserKernel - map failed for memory Descriptor failed. %d \n\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeAllocatedUserMapKernel - IOMemoryDescriptor::prepare failed with err=%d\n`
+- `AppleAVD: INFO: %s(): unsupported maptype\n`
+- `AppleAVD: INFO: %s(): Wrong AVD Major Version: %d !!\n`
+- `AppleAVD: WARNING: %s(): Overwritting an existing analytics entry for client %d\n\n`
+- `AppleAVD: WARNING: %s(): m_numCompleteSessions is out of bounds! (%d >= %d)\n\n`
+- `AppleAVD: ERROR: %s(): [ERROR] m_pAVDMCStream nil\n`
+- `AppleAVD: INFO: %s(): m_hwDeviceType not supported (H11a) for hwType %d\n`
+- `AppleAVD: INFO: %s(): Failed to boot\n`
+- `AppleAVD: WARNING: %s(): pUC=nil for nCid = %d, activeClients = %d\n`
+- `AppleAVD: INFO: %s(): First AppleAVD::start() call, status: core0 = %u, core1 = %u\n`
+- `AppleAVD: ERROR: %s(): Failed to power down AVD! power stage = %u, expected = %u\n`
+- `AppleAVD: INFO: %s(): active_mcc_bit_vector_val is NULL or length != 4 bytes. Assume tunablesIdx is 1.\n`
+- `AppleAVD: INFO: %s(): Resetting AVD HW core %u!\n\n`
+- `AppleAVD: INFO: %s(): Single core AVD device, registering service!\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeInputBuffer - map failed for memory Descriptor failed. %d \n\n`
+- `AppleAVD: INFO: %s(): New frame done is not implemented\n\n`
+- `AppleAVD: INFO: %s(): in->size == 0\n`
+- `AppleAVD: ERROR: %s(): state (%d) is not ready\n`
+- `AppleAVD: ERROR: %s(): memInfo is NULL!\n`
+- `AppleAVD: WARNING: %s(): [Core %u] Interrupt source %d is NULL\n`
+- `AppleAVD: WARNING: %s(): PowerStateOffRetention is not a valid state for non-PSD systems!\n`
+- `AppleAVD: ERROR: %s(): DMA error happens on cid %d frame %d codec type %d\n\n`
+- `AppleAVD: ERROR: %s(): <ERROR> %p m_regIO == NULL\n`
+- `AppleAVD: INFO: %s(): Invoking destroyDecoder for client %4d.%d\n`
+- `AppleAVD: ERROR: %s(): AppleAVDUserClient::destroyDecoder error deallocating decrypt buffer \n`
+- `AppleAVD: INFO: %s(): mapping still referenced, deferring unmap (map_ref_count=%u), IOSID=%u\n\n`
+- `AppleAVD: INFO: %s(): numRequests=%u overflow\n`
+- `AppleAVD: ERROR: %s(): Failed to allocate AppleAVDCoreFlightControl!\n`
+- `AppleAVD: WARNING: %s(): triggered for FOXTROT_CLIENT_ID %d\n`
+- `AppleAVD: INFO: %s(): Receive clientID %2d.%d unknown cmd 0x%08x ack %d codec 0x%08x\n`
+- `AppleAVD: ERROR: %s(): status: %d\n`
+- `AppleAVD: ERROR: %s(): Translation/check of decode buffer (%llu) failed, error=%d\n`
+- `AppleAVD: ERROR: %s(): Trying to call CAvdMxMcpu::ready() for HWs without scratch registers!\n`
+- `AppleAVD: INFO: %s(): encryptionScheme %d, but m_pFairPlayRef is NULL or m_KDDecryptRef[%d] is NULL or invalid!\n`
+- `AppleAVD: INFO: %s(): #######################################################\n\n`
+- `AppleAVD: ERROR: %s(): userclient allocation failed \n\n`
+- `AppleAVD: INFO: %s(): setMemoryDescriptor failed with status=0x%x. Flushing mapper cache, then retry.\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: DVA not safe to truncate! RAW-DVA: 0x%llx - numDvaBits: %d - dvaValidBitMask: 0x%llx \n\n`
+- `AppleAVD: WARNING: %s(): found non-zero avdsmID %d! Skipping unmapping!\n`
+- `AppleAVD: WARNING: %s(): ads ID %d has clientID %d and not clientID %d\n`
+- `AppleAVD: ERROR: %s(): Failed to get matching dictionary for kCoreAnalyticsMatchingClassName\n\n`
+- `AppleAVD: WARNING: %s(): sampled invalid AVD Core ID: %d, number of registered AVD cores: %d\n\n`
+- `AppleAVD: INFO: %s(): Skip calling setPowerStateOn for die %u - it contains uninitialized addresses\n`
+- `AppleAVD: ERROR: %s(): Timed out waiting for M1 AXI traffic to complete (AW: %d AR: %d)\n\n`
+- `AppleAVD: ERROR: %s(): Failed to init m_framesInFlight\n`
+- `AppleAVD: ERROR: %s(): Invalid inputBufSize = %llu\n`
+- `AppleAVD: INFO: %s(): m_nodeCount: %d\n`
+- `AppleAVD: INFO: %s(): resetFrameQslot client %2d.%d frame %d frameQbufIdx %d\n`
+- `AppleAVD: WARNING: %s(): attempting kAvdDriverInactiveRGPending from %d\n`
+- `AppleAVD: ERROR: %s(): setCryptRef failed\n\n`
+- `AppleAVD: ERROR: %s(): Invalid m_TunableIdx value = %d\n`
+- `AppleAVD: ERROR: %s(): failed error: %d \n\n`
+- `AppleAVD: ERROR: %s(): Invalid workOffset[0]=%u + numWorks[0]=%u, workOffset[1]=%u\n`
+- `AppleAVD: ERROR: %s(): Unrecognized deviceType %x!\n\n`
+- `AppleAVD: ERROR: %s(): Unexpected value: ADS time valid flag is 0 in an encrypted session!\n\n`
+- `AppleAVD: WARNING: %s(): %s is NULL. Using default value %d\n`
+- `AppleAVD: ERROR: %s(): incorrect m_decodeSessionCount = %d\n\n`
+- `AppleAVD: INFO: %s(): resources busy\n`
+- `AppleAVD: WARNING: %s(): sampled invalid chroma format type (%d)\n\n`
+- `AppleAVD: ERROR: %s(): [ERROR] AVDStreamInfoObj = %p req size = %d\n`
+- `AppleAVD: WARNING: %s(): Invalid perf state index (%u >= %u)\n`
+- `AppleAVD: WARNING: %s(): Failed to initialize Foxtrot\n`
+- `AppleAVD: WARNING: %s(): peekFromQueue failed client %d frame %d\n`
+- `AppleAVD: INFO: %s(): fpsHistoryBuffer is NULL!\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: gOffset == NULL\n\n`
+- `AppleAVD: ERROR: %s(): Userspace address=0x%llx, or iosid=%d not found\n`
+- `AppleAVD: INFO: %s(): [Core %u] resetPsdService(0, %u) returned %d\n`
+- `AppleAVD: ERROR: %s(): [Core %u] function-set_perf_state_floor (floor %u, req comp %u) failed with %d\n`
+- `AppleAVD: ERROR: %s(): m_commandPatcher alloc Failed!\n`
+- `AppleAVD: INFO: %s(): ------------------------- Mappings END -------------------------\n\n`
+- `AppleAVD: INFO: %s(): limitSpeed %d ttype %s len %zu histogramEnabled %d\n`
+- `AppleAVD: WARNING: %s(): Allocation failed for m_analytics\n\n`
+- `AppleAVD: INFO: %s(): FRM DONE (%2d.%d, %8d) ACK = %d\n`
+- `AppleAVD: ERROR: %s(): Cannot find this entry clientID %d cmdID %d frameNumber %d\n\n`
+- `AppleAVD: ERROR: %s(): createSharedBuffer failed for analytics buffer! status: 0x%x\n`
+- `AppleAVD: ERROR: %s(): Use SRAM FIFO property command is not submitted to FW, failed with %d\n\n`
+- `AppleAVD: ERROR: %s(): unsupported encryption scheme %d\n\n`
+- `AppleAVD: ERROR: %s(): RESTART %dms\n`
+- `AppleAVD: ERROR: %s(): m_avp_above_info allocation failed\n`
+- `AppleAVD: ERROR: %s(): Invalid clientID (%u >= %u)!\n\n`
+- `AppleAVD: INFO: %s(): ---- ## %d %d %d %d ##\n`
+- `AppleAVD: ERROR: %s(): <ERROR> kMCDisableDataStream return %d\n`
+- `AppleAVD: ERROR: %s(): Message Box Gen 1.0 does not have power dashboard.\n`
+- `AppleAVD: ERROR: %s(): Bad ivSize %d MAX_IV_SIZE %d\n`
+- `AppleAVD: INFO: %s(): Core%d: m_pTimerEventSource - %p\n`
+- `AppleAVD: ERROR: %s(): Unable to resubmit command: %d!\n\n`
+- `AppleAVD: ERROR: %s(): Dart Error AXIId = 0x%x\n`
+- `AppleAVD: ERROR: %s(): bad arg! count: %d - size: %llu - provider: %p - avdsmID: %d\n`
+- `AppleAVD: INFO: %s(): AppleAVDUserClient[%p]::SetCallback() sAppleAVDKernelCallbackOut NULL\n`
+- `AppleAVD: ERROR: %s(): nonZero LK Key Settings %llx\n`
+- `AppleAVD: ERROR: %s(): Bad decrypt byteOffset=%u, buffer size=%u\n`
+- `AppleAVD: ERROR: %s(): Input buffer write will overflow\n`
+- `AppleAVD: ERROR: %s(): allocation for m_sessionStatsList failed!!\n\n`
+- `AppleAVD: ERROR: %s(): [l:%u] DKey mapping failed\n`
+- `AppleAVD: INFO: %s(): reset not needed!!\n\n`
+- `AppleAVD: ERROR: %s(): failed to allocate memInfoArray!\n`
+- `AppleAVD: INFO: %s(): AppleAVDUserClient[%p]::SetCallback() sAppleAVDKernelCallbackIn NULL\n`
+- `AppleAVD: ERROR: %s(): %s() : Disable VP done property command is not submitted to FW, failed with %d\n\n`
+- `AppleAVD: WARNING: %s(): CoreAnalyticsHub was not set - cannot send analytics!\n\n`
+- `AppleAVD: ERROR: %s(): Frame Param Q state %d was not set to resubmitted!\n`
+- `AppleAVD: ERROR: %s(): underflow! Advancing empty queue! apCmdQueueRdPos %d apCmdQueueWrPos %d\n\n`
+- `AppleAVD: ERROR: %s(): ADS error bit %d has %s error \n`
+- `AppleAVD: INFO: %s(): WARNING! Something went wrong! core load score is not 0! activeLoadRate: %llu - totalClientLoadRate: %llu\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: SetActive with fMapper == NULL\n\n`
+- `AppleAVD: ERROR: %s(): Invalid input buffer, not found or not mapped\n`
+- `AppleAVD: INFO: %s(): Foxtrot applied\n`
+- `AppleAVD: INFO: %s(): new chunk\n`
+- `AppleAVD: WARNING: %s(): Leaking DVAs! pDesc: %p - pDestDMACommand: %p - sid: %d\n`
+- `AppleAVD: ERROR: %s(): Timed out waiting for Bulk AXI traffic to complete (AW: %d AR: %d)\n\n`
+- `AppleAVD: ERROR: %s(): index %d does not exist! m_memInfoCount: %d\n`
+- `AppleAVD: ERROR: %s(): m_v_fifo allocation failed\n`
+- `AppleAVD: INFO: %s(): AVD_DART_ERR_CONFIG = %08x\n`
+- `AppleAVD: INFO: %s(): AVD ADS status valid bits set! status=0x%x rtc(%08x-%08x), took %u ms\n`
+- `AppleAVD: INFO: %s(): cmdGate %p created already\n`
+- `AppleAVD: INFO: %s(): [Core %u] Successful boot\n`
+- `AppleAVD: INFO: %s(): fatalPQEntry frameQbufIdx %d client %d frame %d\n`
+- `AppleAVD: ERROR: %s(): coreID: %d - SID: %d failed to allocate & map!\n`
+- `AppleAVD: INFO: %s(): [%d]: clientID %4d cmdID %d frameNumber %6d decodeBufferSize 0x%08x\n`
+- `AppleAVD: ERROR: %s(): failed to send STOP command to PQ for client %d (status: %d)\n\n`
+- `AppleAVD: ERROR: %s(): allocateKernelMemory failed with error=%d\n`
+- `AppleAVD: WARNING: %s(): Failed to allocate a session_analytics_s for client %d\n\n`
+- `AppleAVD: ERROR: %s(): Invalid workOffset=%u + numWorks=%u\n`
+- `AppleAVD: ERROR: %s(): AppleAVD::decryptFrame_SliceData KDDecryptSliceData returned error %x %d for contextID %d\n\n`
+- `AppleAVD: INFO: %s(): send avdCmd counts %4d inbox full m3Cq(Rd:%2d, Wr:%2d) m3HwR:%2d, apCq.Wr = %2d (cid: %d cmdT: %d)\n\n`
+- `AppleAVD: ERROR: %s(): status %d\n`
+- `AppleAVD: INFO: %s(): registering mapper (nSID 0) for IOSurface Deallocation Purge!\n`
+- `AppleAVD: WARNING: %s(): (WARNING) kernel mem not deallocated mapType %d\n`
+- `AppleAVD: ERROR: %s(): No decrypt data buffer associated with given input buffer\n`
+- `AppleAVD: INFO: %s(): AppleAVD::decryptFrame_SliceData -- invalid encryptedSliceCount\n\n`
+- `AppleAVD: INFO: %s(): AppleAVD::decryptFrame_CTRSliceData -- invalid m_KDDecryptRef\n\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeAllocMapKernelOnly - IOMemoryDescriptor::withOptions API failed. %d \n\n`
+- `AppleAVD: ERROR: %s(): removeFromQ failed -- CmdID=%d, cid = %d.%d\n`
+- `AppleAVD: INFO: %s(): ################ACK HISTORY##########################\n\n`
+- `AppleAVD: ERROR: %s(): Failed to allocate m_framesInFlight\n`
+- `AppleAVD: INFO: %s(): This func should not be called!\n`
+- `AppleAVD: INFO: %s(): waking pendingDecode coreID %d\n`
+- `AppleAVD: WARNING: %s(): m_testAppOutstandingFrameCount is already 0!\n`
+- `AppleAVD: ERROR: %s(): Invalid memType=%d or mapType=%d\n`
+- `AppleAVD: ERROR: %s(): mapping->ref_count out-of-range!!!\n`
+- `AppleAVD: ERROR: %s(): pNode is NULL\n`
+- `AppleAVD: WARNING: %s(): sampled invalid codec type (%d)\n\n`
+- `AppleAVD: ERROR: %s(): TIMEOUT %dms\n\n`
+- `AppleAVD: INFO: %s(): mapperIndex >= MAX_DART_SIDS\n\n`
+- `AppleAVD: ERROR: %s(): failed to init vp instr fifo!\n`
+- `AppleAVD: ERROR: %s(): [Line %u]: Failed to create timer\n\n`
+- `AppleAVD: ERROR: %s(): VP error bit %d has %s error \n`
+- `AppleAVD: ERROR: %s(): [Error] unsupported user client type %d\n\n`
+- `AppleAVD: INFO: %s(): invalid cid %d - Core%d\n`
+- `AppleAVD: ERROR: %s(): setMemoryDescriptor failed, even after flushing cache. status=0x%x\n`
+- `AppleAVD: ERROR: %s(): m_numCVPixelBuffersToRelease[%u] (%u) < 32\n`
+- `AppleAVD: INFO: %s(): wait for too long count %d, client %4d.%d, status 0x%x\n`
+- `AppleAVD: INFO: %s(): allocMem() status %d\n`
+- `AppleAVD: INFO: %s(): Invalid contextID %d\n`
+- `AppleAVD: INFO: %s(): limitSpeed %d len %zu m_histogramEnabled %d\n`
+- `AppleAVD: INFO: %s(): powerStateOrdinal = %lu; m_PowerStage = %d; m_driverState = %d; m_bIsInternalPwrUpdate: %d\n`
+- `AppleAVD: INFO: %s(): \t Index %d: cid %d codec %d cmd type %d, %s:%d, ACK %d, TS: %llu\n\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: m_numDvaBits >= %d\n\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: FlushInactiveDARTMappings with fMapper == NULL\n\n`
+- `AppleAVD: INFO: %s(): ADS_AVD_STATUS=%08x: (%08x, %08x, %08x, %08x)\n`
+- `AppleAVD: ERROR: %s(): Failed to enable m3's inbox empty interrupt - mcpu NULL!\n`
+- `AppleAVD: ERROR: %s(): reference hdr %d has error %s .\n`
+- `AppleAVD: ERROR: %s(): NULL pAVDDart or invalid SID\n`
+- `AppleAVD: INFO: %s(): xfer NULL NULL\n`
+- `AppleAVD: ERROR: %s(): fatal_error = %d, dart_error = %d\n\n`
+- `AppleAVD: ERROR: %s(): Width or height out of range %u x %u\n`
+- `AppleAVD: ERROR: %s(): Patch into kernel decode buffer (from userspace decode buffer) failed\n`
+- `AppleAVD: ERROR: %s(): IOLockAllock m_patcherLock failed!\n`
+- `AppleAVD: WARNING: %s(): [Core %u] Invalid perf state index %u\n`
+- `AppleAVD: ERROR: %s(): %d memory length > 32 bits!\n\n`
+- `AppleAVD: INFO: %s(): cid %d, ibox_Intr = %d\n`
+- `AppleAVD: WARNING: %s(): invalid m_testAppForceSpeed (%d)! forcing to VMIN!\n`
+- `AppleAVD: ERROR: %s(): allocateMemory failed: %d, remap count = %d\n\n`
+- `AppleAVD: INFO: %s(): rvrascalerbuffsize alloc overflow %d\n`
+- `AppleAVD: INFO: %s(): Bad decryption parameters\n`
+- `AppleAVD: INFO: %s(): Mapping (this=%p) - iosid=%d, userspace addr=0x%llx, kernel addr=0x%llx, device addr=0x%llx, ref_count=%d\n\n`
+- `AppleAVD: INFO: %s(): AppleAVD::decryptFrame -- invalid m_cryptRef\n\n`
+- `AppleAVD: INFO: %s(): exit returning FALSE...\n`
+- `AppleAVD: ERROR: %s(): peekFromQueue failed client %d frame %d\n`
+- `AppleAVD: INFO: %s(): ################ACK HISTORY(core %u)##########################\n\n`
+- `AppleAVD: ERROR: %s(): Line %d: Failed to allocate %s\n`
+- `AppleAVD: ERROR: %s(): Failed to get IOSurface protection options status (0x%x)\n`
+- `AppleAVD: ERROR: %s(): pNode is NULL!\n`
+- `AppleAVD: WARNING: %s(): clientID %d assigned to INVALID_ADS_ID!\n`
+- `AppleAVD: INFO: %s(): Starting FSD reset sequence\n\n`
+- `AppleAVD: WARNING: %s(): Method not supported for M9 SoC\n\n`
+- `AppleAVD: ERROR: %s(): Decrypt buffer or input buffer is NULL\n`
+- `AppleAVD: ERROR: %s(): Failed to submit STOP command to PQ for client %d, status = %d\n\n`
+- `AppleAVD: INFO: %s(): Userspace parsing enabled\n`
+- `AppleAVD: ERROR: %s(): failed with error %d\n\n`
+- `AppleAVD: INFO: %s(): Received multiple DART panic for a single pair!\n`
+- `AppleAVD: INFO: %s(): Function name: %s\n\n`
+- `AppleAVD: INFO: %s(): \t\tframe_ref_list[%d] = %d\n\n`
+- `AppleAVD: ERROR: %s(): Error checking if frame param slot available, status=%u\n`
+- `AppleAVD: ERROR: %s(): no error not found\n`
+- `AppleAVD: ERROR: %s(): Dart Error AXIId = null\n`
+- `AppleAVD: WARNING: %s(): status: %d - clientID: %d - cmdID: %d - frameNumber: %d\n`
+- `AppleAVD: INFO: %s(): [AVD-DRM] m_decryptMethod %d scheme %d devtype %d keytype %d\n`
+- `AppleAVD: ERROR: %s(): %s(): ERROR! AOCP is not allowed (0x%x)\n`
+- `AppleAVD: ERROR: %s(): Unsupported numSlices = %u\n`
+- `AppleAVD: INFO: %s(): [Hv1Cfg] %08x %08x %08x %08x\n`
+- `AppleAVD: ERROR: %s(): [Core %u] AVD Reset Function handle is NULL! Check the EDT\n`
+- `AppleAVD: ERROR: %s(): Failed to get aperture0 for message box connection\n\n`
+- `AppleAVD: WARNING: %s(): avd%d HWTimeoutSource is NULL\n`
+- `AppleAVD: WARNING: %s(): ref_count is already zero! onDemandDVAMap %u\n`
+- `AppleAVD: WARNING: %s(): Sampled invalid error type %d\n\n`
+- `AppleAVD: INFO: %s(): AppleAVD::decryptFrame -- invalid m_pFairPlayRef\n\n`
+- `AppleAVD: ERROR: %s(): invalid m_KDDecryptRef entry for contextID %d - 0x%p\n`
+- `AppleAVD: INFO: %s(): conn_address = %llx\n\n`
+- `AppleAVD: INFO: %s(): ClientPID is zero\n`
+- `AppleAVD: WARNING: %s(): attempting kAvdDriverIdlePending from %d\n`
+- `AppleAVD: ERROR: %s(): failed memType %d mapType %d\n`
+- `AppleAVD: INFO: %s(): tunableIdx = %d\n`
+- `AppleAVD: INFO: %s(): Couldn't find surface with index %d\n\n`
+- `AppleAVD: WARNING: %s(): Failed to apply Foxtrot. m_foxtrotRetryCount %u\n`
+- `AppleAVD: ERROR: %s(): Invalid patch request - addend=%d, mask=0x%llx, truncate=%d, bitfieldMask=0x%x\n`
+- `AppleAVD: ERROR: %s(): NULL IOSurfaceRoot\n`
+- `AppleAVD: WARNING: %s(): AVD had %d unread messages during teardown.\n\n`
+- `AppleAVD: ERROR: %s(): INTERRUPT %dms\n`
+- `AppleAVD: ERROR: %s(): disableMCDataStrm return failure\n`
+- `AppleAVD: INFO: %s(): Setting Critical State as TRUE - size: 0x%llx/0x%x\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeInputBuffer - IOMemoryDescriptor::prepare failed with err=%d\n`
+- `AppleAVD: WARNING: %s(): sampled invalid crypt scheme type (%d)\n\n`
+- `AppleAVD: INFO: %s(): kEncryptionScheme_Fairplay, but m_pFairPlayRef is NULL or m_cryptRef[%d] is NULL or invalid!\n`
+- `AppleAVD: INFO: %s(): enter soft reset total_wait_time=(%d ms x %d)\n\n`
+- `AppleAVD: INFO: %s(): Closing final user client, requesting power change to inactive\n`
+- `AppleAVD: ERROR: %s(): NULL AVD IORegistry entry\n`
+- `AppleAVD: ERROR: %s(): Failed to initialize AppleAVDDiagnostic\n`
+- `AppleAVD: WARNING: %s(): numPerfStates %u, DIAG_STAT_NUM_PERF_STATES %u\n`
+- `AppleAVD: INFO: %s(): popped non-decode command! clientID: %d - cmdID: %d\n`
+- `AppleAVD: INFO: %s(): Second AppleAVD::start() call\n`
+- `AppleAVD: WARNING: %s(): FATAL error for Foxtrot\n`
+- `AppleAVD: WARNING: %s(): Foxtrot CRC mismatch\n`
+- `AppleAVD: INFO: %s(): num work units OOB!\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: desc == NULL\n\n`
+- `AppleAVD: ERROR: %s(): Bad encryptedSliceCount %d MAX_SLICES %d\n`
+- `AppleAVD: ERROR: %s(): KDDecryptOneSample returned error %d for contextID %d\n\n`
+- `AppleAVD: ERROR: %s(): Illegal value for initialClearBytes (%d) or naluLengthSize (%d)\n\n`
+- `AppleAVD: ERROR: %s(): unexpected start logic!! rev = %d !! m_hwDeviceType = %d -> %d\n`
+- `AppleAVD: ERROR: %s(): clientID %d, frameNumber %d sendAsyncResult64 failed\n\n`
+- `AppleAVD: ERROR: %s(): createSharedBuffer failed for decryption buffer! status: 0x%x\n`
+- `AppleAVD: ERROR: %s(): deallocateMemory failed, error: %d\n\n`
+- `AppleAVD: WARNING: %s(): there are already %d frames referencing this mapping, could not add frame %d to ref list!\n\n`
+- `AppleAVD: ERROR: %s(): Unsupported numWorks, numWorks[0]=%u, numWorks[1]=%u\n`
+- `AppleAVD: ERROR: %s(): Unsupported numWorks = %u > %u\n\n`
+- `AppleAVD: INFO: %s(): Process PID %d will have %d sessions\n`
+- `AppleAVD: WARNING: %s(): %s in EDT is %d, but default value is %d\n`
+- `AppleAVD: WARNING: %s(): failed to set the object for %s into the event payload dictionary\n`
+- `AppleAVD: INFO: %s(): HR Source: %s. Send START cmd Client %d m_decodeSessionCount %d\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeAllocMapKernelOnlyCached - IOMemoryDescriptor::prepare failed with err=%d\n`
+- `AppleAVD: WARNING: %s(): Something went wrong! m_decodeSessionCount is already 0! clientID: %d\n`
+- `AppleAVD: ERROR: %s(): Failed to allocate AppleAVDDiagnostic\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: command == NULL\n\n`
+- `AppleAVD: INFO: %s(): ADS_RTC (%08x-%08x)\n`
+- `AppleAVD: INFO: %s(): Not supported AVD2 Revision %x for hwType %d\n`
+- `AppleAVD: INFO: %s(): [Core %u] AVD is ON - powering off\n`
+- `AppleAVD: ERROR: %s(): AVD_ERROR_DEVICE_NOT_POWERED_UP\n`
+- `AppleAVD: ERROR: %s(): failed to patch firmware command\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeAllocMapUserOnly - IOMemoryDescriptor::withOptions API failed. %d \n\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeUserDevice - IOMemoryDescriptor::withAddressRange API failed. %d \n\n`
+- `AppleAVD: ERROR: %s(): PriorityQueue overflow!\n\n`
+- `AppleAVD: INFO: %s(): out %p, inputSizeinWords %llu\n`
+- `AppleAVD: ERROR: %s(): m_vpInstrFifoSharedMem is NULL! %d x %d - codecType: %d - coreID: %d\n`
+- `AppleAVD: ERROR: %s(): AppleAVDUserClient::createDecoderHelper failed contextID %d with status:%d \n\n`
+- `AppleAVD: ERROR: %s(): IOLockAlloc failed!\n\n`
+- `AppleAVD: WARNING: %s(): clientID %d not matching with reset client %d\n`
+- `AppleAVD: ERROR: %s(): unsupported format %d for contextID %d\n\n`
+- `AppleAVD: INFO: %s(): AppleAVD::decryptFrame_SliceData -- invalid m_pFairPlayRef\n\n`
+- `AppleAVD: ERROR: %s(): code %d sub error %d is not valid error combination, please check\n`
+- `AppleAVD: WARNING: %s(): attempting kAvdDriverIdle from %d\n`
+- `AppleAVD: WARNING: %s(): timeout status: %d\n`
+- `AppleAVD: WARNING: %s(): invalid state transition! %d transition to %d\n`
+- `AppleAVD: ERROR: %s(): AVD not supported!\n`
+- `AppleAVD: INFO: %s(): diff from table rd = %08x (shall be: %08x addr: %08llx mask: %08x tune: %08x - %s)\n`
+- `AppleAVD: ERROR: %s(): dispatchExternalMethod error! %d\n`
+- `AppleAVD: INFO: %s(): FRM DONE (cid: %2d.%d, fno: %8d, codecT: %d) ACK = %d (FATAL)\n`
+- `AppleAVD: INFO: %s(): This func should not be called...\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: m_pUnmapDeferralList malloc failed\n\n`
+- `AppleAVD: INFO: %s(): AVDDart: SetActive %s\n`
+- `AppleAVD: ERROR: %s(): state (= %d) is not ready or destroyed\n`
+- `AppleAVD: ERROR: %s(): DART VAddr Mapping Failed! ClientID: %d - status: 0x%x - FrameNum: %d\n`
+- `AppleAVD: WARNING: %s(): %s %d 64->32 conversion problem!\n`
+- `AppleAVD: INFO: %s(): Total: Core%d: m_pTimerEventSource - %p\n`
+- `AppleAVD: WARNING: %s(): invalid state change request! prevState: %d - reqState: %d\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: mapToDART failed\n\n`
+- `AppleAVD: ERROR: %s(): work units out of bounds, VP=%d, numWorks=%u, workUnitSize=%u, workOffset=%u\n`
+- `AppleAVD: ERROR: %s(): ioMapRegisters mapping device memory failed (0)\n`
+- `AppleAVD: ERROR: %s(): allocate command gate failed\n`
+- `AppleAVD: ERROR: %s(): [Core %u] DART initialization failed!\n\n`
+- `AppleAVD: INFO: %s(): ## start [%2d] end [%2d] \n\n`
+- `AppleAVD: WARNING: %s(): attempting kAvdDriverActive from %d\n`
+- `AppleAVD: INFO: %s(): Invalid offset\n`
+- `AppleAVD: ERROR: %s(): workOffset is expected to be specified from low to high\n`
+- `AppleAVD: INFO: %s(): [DmaVpTop] %08x %08x %08x %08x %08x %08x\n`
+- `AppleAVD: INFO: %s(): [Core %u] WAKE!\n`
+- `AppleAVD: ERROR: %s(): invalid assignedCore (%d)! coreCount is %d\n`
+- `AppleAVD: ERROR: %s(): :%u: too many reference frames [%u, %u]\n\n`
+- `AppleAVD: WARNING: %s(): sampled invalid film grain mode (%d)\n\n`
+- `AppleAVD: ERROR: %s(): Got NULL m_pFairPlayRef\n\n`
+- `AppleAVD: INFO: %s(): KDGetRequiredHDCPType returned %d\n`
+- `AppleAVD: INFO: %s(): t-out Handler: Decode lagging %p - CoreID: %d (cnt = %d)\n\n`
+- `AppleAVD: ERROR: %s(): Timed out waiting for DART to become enabled! loopCount: %u\n\n`
+- `AppleAVD: ERROR: %s(): failed \n\n`
+- `AppleAVD: ERROR: %s(): Can't find a free ads ID for clientID %d!\n`
+- `AppleAVD: ERROR: %s(): AVD ERROR: Cannot register AppleAVD with M$ driver\n\n`
+- `AppleAVD: ERROR: %s(): Failed to initialize AppleAVDPower object\n`
+- `AppleAVD: INFO: %s(): m_AVDCoreControlRef exists! deleting and allocating a new m_AVDCoreControlRef!\n`
+- `AppleAVD: INFO: %s(): count %d for core %d not yet %d\n`
+- `AppleAVD: INFO: %s(): Skipping CAVDCMD_START!\n`
+- `AppleAVD: INFO: %s(): maxUserClientCountProcess: %d\n`
+- `AppleAVD: INFO: %s(): coreID: %d - SID: %d - is not 0! 0x%llx - deallocating!\n`
+- `AppleAVD: INFO: %s(): set LK/KEYB\n\n`
+- `AppleAVD: WARNING: %s(): invalid client ID (%d >= %d)\n\n`
+- `AppleAVD: INFO: %s(): core %u, Vmin/nom/max: %3llu%% %3llu%% %3llu%%, clientCount %llu %llu %llu %llu %llu\n`
+- `AppleAVD: INFO: %s(): [Core %u] m_avdResetFunctionHandle = %p\n`
+- `AppleAVD: ERROR: %s(): codecType=%u is invalid\n\n`
+- `AppleAVD: ERROR: %s(): IOSurface length > 32 bits!\n\n`
+- `AppleAVD: INFO: %s(): allocDecodeCmd() status %d\n`
+- `AppleAVD: ERROR: %s(): m_commandPatcher == NULL\n`
+- `AppleAVD: ERROR: %s(): Invalid memType=%d for userspace parsing\n`
+- `AppleAVD: WARNING: %s(): Something went wrong! m_WaitersCount overflow! - m_WaitersCount: %d\n`
+- `AppleAVD: ERROR: %s(): Error null decode connection\n\n`
+- `AppleAVD: INFO: %s(): clientObject == NULL\n\n`
+- `AppleAVD: INFO: %s(): ## client[%2d.%d] @ frm %8d, errStatus: 0x%x\n`
+- `AppleAVD: WARNING: %s(): timeout waitStatus: %d\n`
+- `AppleAVD: ERROR: %s(): status: 0x%x - ioSurfID: %d - userspacePtr: 0x%llx\n`
+- `AppleAVD: INFO: %s(): resetting adsInfo!\n`
+- `AppleAVD: INFO: %s(): allocating extra AVDSharedMemory!\n`
+- `AppleAVD: ERROR: %s(): mcpu is null!\n`
+- `AppleAVD: WARNING: %s(): attempting kAvdDriverInactive from %d\n`
+- `AppleAVD: WARNING: %s(): Could not find a matching entry in the PQ for client %u\n\n`
+- `AppleAVD: ERROR: %s(): failed to init fpsHistoryBuffer!\n`
+- `AppleAVD: INFO: %s(): AvdDart ERROR: m_clientInfo == NULL\n\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: cannot get the dma command\n\n`
+- `AppleAVD: ERROR: %s(): state (= %d) is not callbackSet\n`
+- `AppleAVD: ERROR: %s(): Failed to initialize m_avdsmManager[%d]!\n`
+- `AppleAVD: WARNING: %s():  [VPDone] peekFromQueue failed client %d frame %d\n`
+- `AppleAVD: ERROR: %s(): setupUserClient failed error %d.\n`
+- `AppleAVD: ERROR: %s(): Unknown codec (%d)!\n`
+- `AppleAVD: ERROR: %s(): ADS Bypass property command is not submitted to FW, failed with %d\n\n`
+- `AppleAVD: INFO: %s(): clientID %d assigned to ads ID %d\n`
+- `AppleAVD: INFO: %s(): aid = %d\n`
+- `AppleAVD: ERROR: %s(): frameParQbufSize(%u) != m_decodeCmdSize(%u)\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: mapperIndex >= MAX_DART_SIDS\n\n`
+- `AppleAVD: ERROR: %s(): Got a cryptor but scheme is none!\n\n`
+- `AppleAVD: WARNING: %s(): invalid adsID %d for clientID %d\n`
+- `AppleAVD: INFO: %s(): #####################CmdQueue##########################\n\n`
+- `AppleAVD: WARNING: %s(): not able to submit command due to no power! status: 0x%x - waitCnt: %4d x %4d (NoPower - cid %2d fn %8d cmd %d)\n`
+- `AppleAVD: INFO: %s(): [Core %u] Waiting for %u pending decodes\n`
+- `AppleAVD: WARNING: %s(): clientID %d wait for queue empty timed out (%d)\n`
+- `AppleAVD: WARNING: %s(): Couldn't find surface with index %d\n\n`
+- `AppleAVD: ERROR: %s(): FATAL error happens, cannot find status.\n\n`
+- `AppleAVD: ERROR: %s(): Timed out waiting for Self TLimit0 AXI traffic to complete (AW: %d AR: %d)\n\n`
+- `AppleAVD: ERROR: %s(): clientID %d frameNumber %llu - error %llu, offset idx %llu (showE)\n`
+- `AppleAVD: INFO: %s(): [DmaIRQ] %08x\n`
+- `AppleAVD: INFO: %s(): [Core %u] PSD device - cannot set perf state as m_setPerfStateFunctionHandle is NULL\n`
+- `AppleAVD: INFO: %s(): Unused function.\n\n`
+- `AppleAVD: ERROR: %s(): req M$ mode %d failed, set back to %d\n`
+- `AppleAVD: ERROR: %s(): LEAKING DVA 0 - memType: %d\n`
+- `AppleAVD: WARNING: %s(): Something went wrong! maxSpeedRequestCount != 0 - %d\n`
+- `AppleAVD: INFO: %s(): AVDDart ERROR: m_pUnmapDeferralList init failed\n\n`
+- `AppleAVD: ERROR: %s(): Invalid boundary condition, allocation of size %llu will exceed a boundary of size %d\n\n`
+- `AppleAVD: ERROR: %s(): [Core %u] Timed out waiting for pending decodes to complete (status = %d)\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeAllocMapUserKernel - IOMemoryDescriptor::withOptions API failed. %d \n\n`
+- `AppleAVD: INFO: %s(): (resent!) clientID: %d Decode frame (size = %8d)\n`
+- `AppleAVD: ERROR: %s(): SOMETHING WENT WRONG PROVIDER IS NULL!!\n`
+- `AppleAVD: INFO: %s(): illegal LK usage: %llx\n`
+- `AppleAVD: INFO: %s(): static allocM pKA=0x%llx, DVA=0x%llx\n`
+- `AppleAVD: ERROR: %s(): deallocateKernelMemory failed %d, index = %d\n\n`
+- `AppleAVD: ERROR: %s(): indexCount was not RESET! resetting to 0! ClientID: %d - frameNum: %d\n`
+- `AppleAVD: INFO: %s(): 0x%llx Bytes! %d x %d - codecType: %d\n`
+- `AppleAVD: ERROR: %s(): NULL provider!\n`
+- `AppleAVD: ERROR: %s(): [Core %u] Unrecognized IOPM state %u\n`
+- `AppleAVD: INFO: %s(): \t Index %d: cid %d codec %d cmd type %d, %s:%d \n\n`
+- `AppleAVD: INFO: %s(): obj NULL \n`
+- `AppleAVD: ERROR: %s(): getADSCryptInfo failed %d\n\n`
+- `AppleAVD: ERROR: %s(): Cannot find mapped memory! ioSurfID: %d - userspacePtr: 0x%llx\n`
+- `AppleAVD: ERROR: %s(): Illegal frame number %d cannot be added to ref list\n\n`
+- `AppleAVD: INFO: %s(): AppleAVD::isKDIsAVDDecryptionAllowed returned %x for contextID %d, contentType %d encSchem %d codec %d\n`
+- `AppleAVD: WARNING: %s(): m_foxtrotRetryCount %u >= MAX_FOXTROT_RETRIES %u\n`
+- `AppleAVD: ERROR: %s(): deviceUnlockSurface returned %d\n\n`
+- `AppleAVD: ERROR: %s(): addMemoryDescToGart failed.\n`
+- `AppleAVD: ERROR: %s(): complete failed\n`
+- `AppleAVD: INFO: %s(): [VPDone] received parsing signal for foxtrot client\n\n`
+- `AppleAVD: WARNING: %s(): status: %d, CAVDCMD.Stop cid = %d\n`
+- `AppleAVD: ERROR: %s(): map request (mapType=%d, memType=%d) does not match existing mapping (mapType=%d, memType=%d) for IOSID %d\n\n`
+- `AppleAVD: ERROR: %s(): invalid state %d\n`
+- `AppleAVD: INFO: %s(): AVD3 unsupported avd minor ver = %2d\n`
+- `AppleAVD: ERROR: %s(): [Core %u] PQ creation failed!\n\n`
+- `AppleAVD: WARNING: %s(): m_PowerStage: %d - reqPowerState: %d\n`
+- `AppleAVD: ERROR: %s(): Timed out waiting for M0 AXI traffic to complete (AW: %d AR: %d)\n\n`
+- `AppleAVD: ERROR: %s(): clientID %d, decryptFrame returned status %x\n`
+- `AppleAVD: ERROR: %s(): Waiting for timer failed with %d (client %u, fr %u)\n\n`
+- `AppleAVD: INFO: %s(): unable to send command to gate, client %4d.%d, frame %d, status 0x%x\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeIOSurface - lookupSurface failed. %d \n\n`
+- `AppleAVD: ERROR: %s(): error %d\n`
+- `AppleAVD: INFO: %s(): DMA Status 0x%x\n\n`
+- `AppleAVD: INFO: %s(): swapping clientID %d (disable) with clientID %d (enable) for frame %d\n`
+- `AppleAVD: WARNING: %s(): m_pAnalyticsSharedBuffer is NULL, skipping session type analytics sampling\n\n`
+- `AppleAVD: WARNING: %s(): Unmapping memory with a ref count of %d\n\n`
+- `AppleAVD: ERROR: %s(): clientID %d is assigned to an invalid ads ID %d!\n`
+- `AppleAVD: ERROR: %s(): Failed to retrieve Power Provider\n`
+- `AppleAVD: INFO: %s(): %s Invalid contextID %d\n`
+- `AppleAVD: INFO: %s(): m_decodeMsgBoxConn. Aperture %d \n\n`
+- `AppleAVD: INFO: %s(): overflow! m3CmdQueueWrPos %d m3CmdQueueRdPos %d\n\n`
+- `AppleAVD: ERROR: %s(): Invalid interrupt source index %d\n`
+- `AppleAVD: ERROR: %s(): Unrecognized power state %lu\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeUserDevice - IOMemoryDescriptor::prepare failed with err=%d\n`
+- `AppleAVD: ERROR: %s(): deallocateKernelMemoryInternal failed\n`
+- `AppleAVD: ERROR: %s(): Failed to match the analytics hub notifier\n\n`
+- `AppleAVD: WARNING: %s(): [WARNING] Could not read the DSID for AVD stream\n`
+- `AppleAVD: ERROR: %s(): AppleAVD::decryptFrame_CTRSliceData KDDecryptSliceDataWithCTRForMSE returned error %x %d for contextID %d\n\n`
+- `AppleAVD: INFO: %s(): Unexpected active-mcc-bit-vector value. Assume tunablesIdx is 1.\n`
+- `AppleAVD: WARNING: %s(): Something went wrong! m_M3CmdQPendingSubCount is already 0! clientID: %d\n`
+- `AppleAVD: ERROR: %s(): unknown alloc type failed\n`
+- `AppleAVD: INFO: %s(): clientID: %d - rollingAvgFPS: %d last frameNumber %u\n`
+- `AppleAVD: INFO: %s(): smmuStatus 0x%x smmuAddr 0x%x dartStatus 0x%x dartAddr 0x%x pfdartStatus 0x%x pfdartAddr 0x%x\n\n`
+- `AppleAVD: ERROR: %s(): Unsupported numWorks = %u\n`
+- `AppleAVD: ERROR: %s(): Unsupported numTiles = num_tile_columns (=%u) * num_tile_rows (=%u)\n`
+- `AppleAVD: INFO: %s(): mctl status=%08x, ctulast=%08x, mbx_status=%08x, obx0_ctrl=%08x; onei=%d oise=%d\n\n`
+- `AppleAVD: ERROR: %s(): Invalid index=%u into frameParam array\n`
+- `AppleAVD: INFO: %s(): This function shall not be called\n`
+- `AppleAVD: WARNING: %s(): passed avdID (%d) does not match client's Core Assignment (%d)!\n`
+- `AppleAVD: INFO: %s(): ## [%2d] [%2d]\n`
+- `AppleAVD: INFO: %s(): platform_chip_id is NULL. For now, assume it is 1\n`
+- `AppleAVD: ERROR: %s(): legacy func, should not use\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeAllocatedUserMapKernel - map failed for memory Descriptor failed. %d \n\n`
+- `AppleAVD: ERROR: %s(): invalid arguments! status 0x%x\n`
+- `AppleAVD: INFO: %s(): clientID %d clientFPS too slow! Forcing VMAX! rollingAvgFPS: %d < streamFPS: %d c[0].activeLoadRate %llu c[0].clientCount %u minSpeed %d\n`
+- `AppleAVD: ERROR: %s(): Failed to create timer event source\n\n`
+- `AppleAVD: ERROR: %s(): DART Mapping failed! status: 0x%x - AVDVAddr: %llu\n`
+- `AppleAVD: INFO: %s(): PCM Overwrite (cid: %2d.%d, fno: %8d, codecT: %d, pcmOverwrite: %d) happened!\n`
+- `AppleAVD: INFO: %s(): existing mapping (IOSID %d) found, reusing it (map_ref_count=%u)\n\n`
+- `AppleAVD: ERROR: %s(): IOLockAlloc for m_sessionStatsListLock failed!\n\n`
+- `AppleAVD: INFO: %s(): Bumped priority of client %d from %d to %d\n`
+- `AppleAVD: INFO: %s(): AppleAVD::decryptFrame_SliceData -- invalid m_KDDecryptRef\n`
+- `AppleAVD: INFO: %s(): Skip calling setPowerStateOff for die %d - it contains uninitialized addresses\n`
+- `AppleAVD: ERROR: %s(): Invalid frameNumber. Expecting %u, got %u\n`
+- `AppleAVD: ERROR: %s(): Couldn't get memInfo (NULL)! refSlot: %d\n`
+- `AppleAVD: ERROR: %s(): cannot find mapping! avdsmID: %d\n`
+- `AppleAVD: INFO: %s(): AVDM3 not ready after %d loops\n`
+- `AppleAVD: ERROR: %s(): cannot increment core count as the maximum number have already been registered (%d)\n\n`
+- `AppleAVD: INFO: %s(): AppleAVD::decryptFrame_KeyDelivery -- invalid m_pFairPlayRef\n\n`
+- `AppleAVD: ERROR: %s(): Encounter unexpected messagebox queue full in active mode.\n\n`
+- `AppleAVD: ERROR: %s(): unknown %dms - status: 0x%x\n`
+- `AppleAVD: ERROR: %s(): removeFromQueue failed client %2d.%d frame %d\n`
+- `AppleAVD: ERROR: %s(): m_sMemInfo allocation failed\n`
+- `AppleAVD: ERROR: %s(): Bad decrypt dataLength=%u, buffer size=%u\n`
+- `AppleAVD: WARNING: %s(): wait for too long count %d, client %4d.%d, status 0x%x\n`
+- `AppleAVD: INFO: %s(): AVD4 unsupported avd minor ver = %2d\n`
+- `AppleAVD: ERROR: %s(): Attempt to deallocate NULL kern_mem_info\n`
+- `AppleAVD: ERROR: %s(): MCC Handle = NULL, avdIdx = %d\n`
+- `AppleAVD: ERROR: %s(): Timed out waiting for LLT AXI traffic to complete (AW: %d AR: %d)\n\n`
+- `AppleAVD: ERROR: %s(): Unable to set state to resubmit: %d!\n\n`
+- `AppleAVD: INFO: %s(): owner == NULL\n\n`
+- `AppleAVD: ERROR: %s(): Failed to submit command due to no power! status: 0x%x - waitCnt >= %4d x %4d\n`
+- `AppleAVD: ERROR: %s(): Unmap attempt failed! gpuAddr: %llu - m_pAvdDt[%u]: %p\n\n`
+- `AppleAVD: INFO: %s(): bits %llx deviceType %d\n`
+- `AppleAVD: ERROR: %s(): Timer is NULL!\n\n`
+- `AppleAVD: ERROR: %s(): Invalid AVD Tier (%d)! status 0x%x\n`
+- `AppleAVD: INFO: %s(): map frameParams.... as kAvdMemType_DATA1\n`
+- `AppleAVD: INFO: %s(): m_hwDeviceType not supported : %4d\n`
+- `AppleAVD: ERROR: %s(): createSharedBuffer failed for response buffer! status: 0x%x\n`
+- `AppleAVD: ERROR: %s(): sAVDVAddr: 0x%llx\n`
+- `AppleAVD: WARNING: %s(): mapping->ref_count is already zero!\n`
+- `AppleAVD: ERROR: %s(): ADS_RTC (%08x-%08x)\n`
+- `AppleAVD: ERROR: %s(): Timed out waiting for ADS RTC set, timeoutCount=%u, status=0x%x, ADS_RTC (%08x-%08x)\n`
+- `AppleAVD: ERROR: %s(): [Core %u] enablePsdService(%u, 0, %u, %u) returned %d\n`
+- `AppleAVD: INFO: %s(): FRM DONE (%2d.%d, %8d) ACK = %d (DISCARDED)\n`
+- `AppleAVD: WARNING: %s(): something went wrong! AVD-core's estimated load (%llu) < client's estimated load (%llu)\n`
+- `AppleAVD: ERROR: %s(): failed to send START command to PQ for client %d (status: %d)\n\n`
+- `AppleAVD: INFO: %s(): adding to deferral list! pDesc: %p - pDestDMACommand: %p - sid: %d\n`
+- `AppleAVD: ERROR: %s(): invalid state transition! %d transition to %d\n`
+- `AppleAVD: WARNING: %s(): Something went wrong! m_M3CmdQPendingSubCount overflow! clientID: %d - m_M3CmdQPendingSubCount: %d\n`
+- `AppleAVD: ERROR: %s(): Failed to retrieve AppleAVD object\n\n`
+- `AppleAVD: INFO: %s(): pSrc poitners OOB!\n`
+- `AppleAVD: INFO: %s(): gtb_h = %x, gtb_l = %x\n\n`
+- `AppleAVD: ERROR: %s(): [Core %u] NULL AVDDart obj!\n\n`
+- `AppleAVD: ERROR: %s(): Timed out waiting for Self TLimit1 AXI traffic to complete (AW: %d AR: %d)\n\n`
+- `AppleAVD: ERROR: %s(): Failed to allocate shared buffer! status: 0x%x\n`
+- `AppleAVD: WARNING: %s(): sampled invalid ichat usage type (%d)\n\n`
+- `AppleAVD: ERROR: %s(): Got unsupported encryption scheme %d at context ID %d\n\n`
+- `AppleAVD: INFO: %s(): active_mcc_bit_vector_val is 0x%x\n\n`
+- `AppleAVD: INFO: %s(): DeallocKernelMem: devId = %d\n`
+- `AppleAVD: ERROR: %s(): Failed to disable m3's inbox empty interrupt - mcpu NULL!\n`
+- `AppleAVD: ERROR: %s(): Failed to clear m3's inbox empty interrupt - mcpu NULL!\n`
+- `AppleAVD: INFO: %s(): PQ[%u] is not initialized yet, skipping\n`
+- `AppleAVD: WARNING: %s(): status: %d - clientID: %d\n`
+- `AppleAVD: INFO: %s(): rtc_h = %x, rtc_l = %x\n\n`
+- `AppleAVD: INFO: %s(): resubmitQueue[%d].clientID=%d resubmitQueue[%d].cmdID=%d resubmitQueue[%d].frameNumber=%d\n\n`
+- `AppleAVD: INFO: %s(): Dropping frame - client %d frame %d\n\n`
+- `AppleAVD: ERROR: %s(): Failed to map memory that does not violate the boundary condition after %d tries\n\n`
+- `AppleAVD: ERROR: %s(): Invalid refListCount=%u\n`
+- `AppleAVD: ERROR: %s(): Userspace pointer (0x%llx) or iosid (%d) not mapped\n`
+- `AppleAVD: ERROR: %s(): OOB (length=%u) for returned mapping\n`
+- `AppleAVD: ERROR: %s(): status: 0x%x\n`
+- `AppleAVD: ERROR: %s(): No numWorks specified! initVPIdx = %d, mult_vp_cnt = %u\n\n`
+- `AppleAVD: ERROR: %s(): super::start failed\n`
+- `AppleAVD: ERROR: %s(): Failed to initialize m_adsInfo[%d]!\n`
+- `AppleAVD: ERROR: %s(): Frame params not yet allocated\n`
+- `AppleAVD: ERROR: %s(): newClientCoreAssignment error \n\n`
+- `AppleAVD: ERROR: %s(): Invalid AVD core index %u\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeAllocMapUserOnly - map failed for memory Descriptor failed. %d \n\n`
+- `AppleAVD: INFO: %s(): Saving M3 Context before forcing panic\n\n`
+- `AppleAVD: INFO: %s(): dartStatus 0x%x dartAddrMsb 0x%x dartAddrLsb 0x%x isWrPanic=%d\n`
+- `AppleAVD: ERROR: %s(): kAllocMapTypeIOSurface - getMemoryDescriptor API failed. %d \n\n`
+- `AppleAVD: INFO: %s(): Forcing panic due to DART error\n\n`
+- `AppleAVD: ERROR: %s(): Failed to validateFields! clientID: %d - frameNum: %d - decodeBuffer: %p\n`
+- `AppleAVD: WARNING: %s(): chunkSize %llu exceeds UINT32_MAX. Data will be corrupted.\n`
+- `AppleAVD: ERROR: %s(): WARNING - loadBalanceMode: %d is invalid! Defaulting to weightedLoadScore mode!\n`
+- `AppleAVD: INFO: %s(): unable to send command to gate, client %4d.%d, status 0x%x\n`
+- `AppleAVD: INFO: %s(): m_TunableIdx = %d\n`
+- `AppleAVD: INFO: %s(): cryptScheme %d - Required HDCP Type is %llx %d %p\n`
+- `AppleAVD: INFO: %s(): commandWakeup() called during hard reset with m_M3CmdQPendingSubCount: %d\n`
+- `AppleAVD: ERROR: %s(): errorInfo == NULL\n\n`
+- `AppleAVD: ERROR: %s(): Failed to allocate IOLock m_coreLock - status: 0x%x\n`
+- `AppleAVD: INFO: %s(): read back _nub_dkey_DKEY_CFG = %08x\n`
+- `AppleAVD: ERROR: %s(): getBoundaryCompliantAllocation failed (error = %d)\n\n`
+- `AppleAVD: ERROR: %s(): Illegal frame number %d cannot be removed from ref lists\n\n`
+- `AppleAVD: WARNING: %s(): adsID %d is already free for clientID %d\n`
+- `AppleAVD: INFO: %s(): getDecodeBufInFrameParamQGated status %d\n`
+- `AppleAVD: ERROR: %s(): vpInstrFifo is NULL!\n`
+- `AppleAVD: ERROR: %s(): KDDecryptOneSampleWithCTR returned error %d for contextID %d\n\n`
+- `AppleAVD: ERROR: %s(): NULL interrupt source %d\n`
+- `AppleAVD: INFO: %s(): ## client[%2d.%d] @ frm %8d, adsStatus: 0x%x\n`
+- `AppleAVD: INFO: %s(): \t Index %d: EMPTY \n\n`
+- `AppleAVD: WARNING: %s(): Something went wrong! clientCount is 0 - %d\n`
+- `AppleAVD: ERROR: %s(): Failed to allocate m_showExistingFrames\n`
+- `AppleAVD: ERROR: %s(): Error calling this func!\n`
+- `AppleAVD: INFO: %s(): Device is not on m_PowerStage %d m_bIsClocked %d\n\n`
+- `AppleAVD: WARNING: %s(): removeFromQueue failed client %2d.%d frame %d\n`
+- `AppleAVD: ERROR: %s(): Line %d: Addition overflow sAVDVAddr %llu addend %u\n`
+- `AppleAVD: WARNING: %s(): Failed to add mapping to deferral list! (status = %d)\n\n`
+- `AppleAVD: INFO: %s(): Glbtime_Idle status = %08x, %x\n`
+
+**[__TEXT.__cstring]**
+
+- `CheckDartStatus`
+- `msgbox-mailbox-connection`
+- `RdDMAZipHdrLuma[8]`
+- `getFrameParamAddr`
+- `popFromQueue`
+- `insertStartCommand`
+- `removeFrameWorkLoad`
+- `receiveMessage`
+- `dvaOnDemandMapOverride`
+- `getBoundaryCompliantAllocation`
+- `WrDMAOvpColo[0]`
+- `VTSupportedProfileArray`
+- `SessionDim_MultiCore`
+- `SessionDim_FrameHeightOdd`
+- `CAvdMcpuClover`
+- `IOCoreSurfaceRoot`
+- `WrDMAOvpSeg[3]`
+- `WrDMASwPix`
+- `FATAL Error`
+- `FrameHeight`
+- `com.apple.AppleVideoDecoder.SessionStatistics`
+- `SessionMeas_DecodeRate_fps`
+- `IOAVDH264DecodeCapabilities`
+- `RdDMAHvpBits[1]`
+- `&m_sMemInfo->m_avp_above_info[i]`
+- `SessionMeas_NumFramesDARTErr`
+- `WrDMAOvpAboveInfo[3]`
+- `RdDMAOvpAboveInfo[2]`
+- `RdDMAZipCmpChroma[7]`
+- `%8d`
+- `STOP`
+- `addToDeferralList`
+- `IOAVDAV1DecodeCapabilities`
+- `SessionMeas_FramePixelCount`
+- `RdDMAOvpColo1[0]`
+- `RdDMAOvpProbs[1]`
+- `setupCoreForPowerManagement`
+- `requestAVDCoreSpeed`
+- `12221222222222222222222222222222222222212222222222222222222222`
+- `MARKERBIT`
+- `&m_sMemInfo->m_mv_colo`
+- `setClientToADS`
+- `ConfigurePioHdrAvx`
+- `CAvdMcpuRadish`
+- `SessionDim_VP9NonParallelDecode`
+- `RdDMAZipCmpChroma[14]`
+- `WriteRegister32`
+- `&m_sMemInfo->m_lf_above_pix`
+- `site.AppleAVDCommandPatcher`
+- `HEVCSupported`
+- `MORESDATA`
+- `SYMBOL`
+- `unmapDeferralList`
+- `site.CAvdMcpuClary`
+- `clientClose`
+- `getRequiredIOSurfaceProtectionOptions`
+- `setReleaseBufferIndexToResponseBuffer`
+- `1121`
+- `site.CAvdApCommCatnip`
+- `221`
+- `RdDMAAvpAboveInfo[2]`
+- `WrDMAOvpProbs[0]`
+- `RdDMAZipCmpChroma[15]`
+- `MVECTOR`
+- `ABORT`
+- `powerChangeDone`
+- `site.uint32_t`
+- `RdDMAAvpBits[1]`
+- `WrDMALfAbovePix`
+- `lghFatalErrorIdentify`
+- `site.PriorityQueue`
+- `SessionDim_CodecType`
+- `AppleAVD: %s(): I am Nerine\n`
+- `RdDMAOvpSeg[1]`
+- `RdDMAZipHdrChroma[7]`
+- `RdDMAZipCmpLuma[13]`
+- `CABACZWORD1`
+- `CAvdApCommClary`
+- `CAvdApCommHibiscus`
+- `ConfigurePioHdrHevc`
+- `site.CPriorityQueueRose`
+- `RdDMAOvpSeg[2]`
+- `RdDMALfLeftPix`
+- `RdDMAZipHdrChroma[6]`
+- `bounded_ptr<T>::operator*: Dereferencing this pointer would access memory outside of the bounds set originally`
+- `releaseFrameParamQSlotGated`
+- `site.CPriorityQueueRadish`
+- `MBTYPE`
+- `function-avd_reset`
+- `RdDMALvpSeg`
+- `createWorkLoop`
+- `AppleAVD: %s(): I am Dandelion A\n`
+- `CSK_INVALID`
+- `sleepM3CmdQSubmissionThreadGated`
+- `SessionDim_FilmGrainMode`
+- `SessionDim_FoxtrotApplied`
+- `/arm-io/avd`
+- `RdDMAOvpColo2[1]`
+- `RdDMAZipCmpLuma[2]`
+- `site.userspaceMappedMemory`
+- `die-id`
+- `WrDMALfLeftPix`
+- `RdDMAZipCmpLuma[12]`
+- `addDecodeSession`
+- `hw.targettype`
+- `WrDMAOvpAboveInfo[2]`
+- `WrDMAOvpColo[1]`
+- `RdDMAOvpAboveInfo[3]`
+- `site.kern_mem_info`
+- `decodeFrameFigHelper_ReleaseFrameParamQSlot`
+- `enableTXInterrupt`
+- `RdDMAZipHdrLuma[3]`
+- `createSharedBuffer`
+- `reset`
+- `site.MsgBoxDoorbell`
+- `AppleAVD: %s(): I am Kopsia\n`
+- `AppleAVDUserClient`
+- `IOUserClientEntitlements`
+- `site.RegisterIO`
+- `peek`
+- `WaitForMCpuBoot`
+- `SessionMeas_NumFramesParsingErr`
+- `SessionMeas_NumFramesHWErrNonFatal`
+- `waitForPowerChangeDone`
+- `removeFrameFromRefLists`
+- `RdDMAZipCmpLuma[8]`
+- `removeMemoryDescFromGart`
+- `CAvdWrapCtrlIxora`
+- `configureDecodeMessageBox`
+- `CAvdApCommViola`
+- `21221222222222222222222222222122122222222222222222211`
+- `setEventEntryBoolean`
+- `site.AppleAVDADSInfo`
+- `decodeFrameFigHelper_CheckDecryptionParameters_UserParser`
+- `CAvdWrapCtrlKopsia`
+- `removeWaiter`
+- `callHardResetAPI`
+- `RdDMAZipHdrLuma[9]`
+- `startCommandSequence`
+- `This bounded_ptr is pointing to memory outside of what can be represented by a native pointer.`
+- `cacheFlushInactive`
+- `RdDMASwLeft`
+- `SUBMBTYPE`
+- `SendCommandsToMCPU`
+- `getMaxUserClientCountProcess`
+- `processFatalError`
+- `TRUE`
+- `translateToKVA`
+- `site.CPriorityQueueClover`
+- `WrDMAZipCmp[0]`
+- `setPowerStateOn`
+- `SessionDim_AV1FrameOverrideSize`
+- `RdDMAZipHdrChroma[13]`
+- `ENDPIC`
+- `ALIGNBIT10`
+- `mapDART`
+- `setActive`
+- `CAvdMcpuTansy`
+- `WrDMAOvpInsn[2]`
+- `RdDMAOvpColo1[2]`
+- `setResolutionInfo`
+- `CAvdWrapCtrlTansy`
+- `RdDMAZipCmpChroma[0]`
+- `waitForFParamQSubmissionGated`
+- `setCallback`
+- `site.CAvdApCommBorage`
+- `dropDecodeCommand`
+- `&m_sMemInfo->m_mv_above_info`
+- `FrameWidth`
+- `122222222222222222222222222222222222212222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222221211122221122222222222222222222222222222222222222222222222222222222222222222222222222`
+- `site.CPriorityQueueHibiscus`
+- `CAvdApCommClover`
+- `site.CAvdMcpuClover`
+- `WrDMAOvpAboveInfo[1]`
+- `sendCoreAnalyticsEvent`
+- `site.MsgBoxMailbox`
+- `sampleSessionType`
+- `sampleErrorEvent`
+- `Read`
+- `WrDMAAvpAboveInfo[1]`
+- `RdDMAOvpColo0[0]`
+- `CAvdApCommThyme`
+- `site.session_analytics_s`
+- `QPDELTA`
+- `powerUpDeviceGated`
+- `newClientCoreAssignment`
+- `site.CAvdMcpuTansy`
+- `12122112112`
+- `RdDMAAvpBits[3]`
+- `WrDMAIpAbovePix`
+- `&m_sMemInfo->m_dec_hdr_y`
+- `clearDeferralList`
+- `SessionMeas_DataLengthMax`
+- `initAvdWrap`
+- `validateLghFields`
+- `site.CAvdApCommClover`
+- `site.schedulerClientInfo`
+- `RdDMAMvColo`
+- `ClearM3InboxEmptyInterrupt`
+- `12221222222222222222222222222222222222212222222222222`
+- `CAvdWrapCtrlViola`
+- `RdDMARfAboveInfo`
+- `insertDecodeFrameCommand`
+- `START`
+- `ThreadId`
+- `init`
+- `SessionMeas_StreamFPS`
+- `SessionMeas_NumSlicesMax`
+- `%s\n`
+- `decodeFrameFigHelper_GetDecodeBufInFrameParamQ`
+- `isFilmGrainModeValid`
+- `setResubmitFrameQstate`
+- `site.CAvdWrapCtrlKopsia`
+- `WrDMAMvColo`
+- `VTPerProfileDetails`
+- `getSupportBits`
+- `allocDecryptDataBuffer`
+- `HEVCCanDecodeTileToCanvas`
+- `RdDMAZipCmpLuma[11]`
+- `disableFastClockGated`
+- `addFrameRefToMemory`
+- `Storage`
+- `SessionDim_FTCDEnabled`
+- `WrDMAAzLeftPix`
+- `WrDMARfLeftPix`
+- `getAdsDeviceIds`
+- `RdDMAAvpAboveInfo[0]`
+- `site.sFoxtrotClientMemInfo`
+- `CAvdWrapCtrlThyme`
+- `processVPDone`
+- `pushFront`
+- `Send`
+- `12121121122`
+- `WrDMAOvpProbs[2]`
+- `RdDMAPipeInsn[3]`
+- `121221121121`
+- `FirmwareSize`
+- `getAVDVersion`
+- `printQueue`
+- `site.CAvdApCommThyme`
+- `communicationTeardown_all_dashboards`
+- `RdDMAZipHdrChroma[0]`
+- `COMMAND_FIFO_LOW`
+- `setDriverState`
+- `BurstMap`
+- `assignClientAVDADS`
+- `site.CAvdApCommTansy`
+- `AppleAVD: %s(): I am Thyme\n`
+- `writeRegister32`
+- `site.CAvdApCommHibiscus`
+- `updatePerfThresholds`
+- `CAvdMcpuLotus`
+- `WrDMAAvpAboveInfo[3]`
+- `RdDMAOvpProbs[2]`
+- `RdDMAZipCmpChroma[8]`
+- `changePerfStateToRailGatingGated`
+- `bounded_ptr<T>::discard_bounds: Discarding the bounds on this pointer would lose the fact that it is outside of the bounds set originally`
+- `~CAvdApComm`
+- `\"%s %d 64->32 conversion problem!\" @%s:%d`
+- `releaseADS`
+- `destroyDecoder`
+- `site.CAvdMcpuHibiscus`
+- `site.MsgBoxDashboardConnection`
+- `RdDMALfAbovePix`
+- `RdDMAZipHdrLuma[12]`
+- `0x%x (%u base 10)\n`
+- `(object of class %s)\n`
+- `enqueueEntry`
+- `SessionDim_ColorDepth`
+- `runCommand`
+- `deflate`
+- `CreationTime`
+- `site.CAvdWrapCtrlViola`
+- `ENDWPPROWMS`
+- `com.apple.videotoolbox.hardwarevideodecoder`
+- `1`
+- `AppleAVD: %s(): bActiveMode = %d, msgbox_mailbox_connection_val = %d\n`
+- `CAvdMcpuIxora`
+- `RdDMAZipCmpChroma[13]`
+- `ICPMODE`
+- `removeSharedMemFromMappingList`
+- `removeClient`
+- `setEventEntryNumber`
+- `SessionDim_MultiViewClient`
+- `AVCSupported`
+- `waitForPendingDecodesOnCore`
+- `railGatingTimeoutHandler`
+- `PrepareM3DecodeCommandHevc`
+- `CAvdApCommDahlia`
+- `avdInbox0ISR`
+- `CMAC_TAG_MISMATCH`
+- `peekFromQueue`
+- `start`
+- `GetAperture1Address`
+- `reqMemCacheMode`
+- `\"%s\" @%s:%d`
+- `RdDMAOvpColo2[2]`
+- `RdDMAZipCmpLuma[15]`
+- `validateFields`
+- `isAVDDecryptionAllowed`
+- `RdDMAOvpAboveInfo[0]`
+- `ENDTILEMS`
+- `decodeFrameFigHelper_CheckSoftwareDecryptionParameters_UserParser`
+- `sendEndOfSessionAnalytics`
+- `addFrameToRefLists`
+- `allocateAPCommFrameParams`
+- `SEP_KEY_NOT_VALID`
+- `SessionMeas_NumSlicesAvg`
+- `site.CAvdMcpuDaisy`
+- `WrDMAOvpAboveInfo[0]`
+- `RdDMAOvpSeg[0]`
+- `sleepCommandGate`
+- `setCryptRef`
+- `enableFastClockGated`
+- `updateAVDCoreTotalClientLoadRate`
+- `externalMethod`
+- `site.AppleAVDPower`
+- `WrDMAOvpSeg[0]`
+- `RdDMAOvpColo1[3]`
+- `CABACZWORD`
+- `Unknown`
+- `sTl3nGu4`
+- `112`
+- `powerDownDeviceGated`
+- `processFrameDone`
+- `site.FoxtrotClary`
+- `SessionMeas_NumFramesInSession`
+- `recordPerfStateChange`
+- `RdDMALvpInsn`
+- `RdDMAZipCmpLuma[1]`
+- `RdDMAZipCmpChroma[3]`
+- `readRegisterToBuffer`
+- `deallocateKernelMemoryInternal`
+- `LumaBitDepth`
+- `/arm-io/avd0`
+- `WrDMALvpState`
+- `RdDMAZipHdrLuma[4]`
+- `clearResolutionInfo`
+- `CAvdMcpuDaisy`
+- `&m_sMemInfo->m_disp_pb`
+- `allocDecryptDataBufferForInputBuffers`
+- `communicationTeardown`
+- `AXI_READ_RESPONSE_NOT_OKAY`
+- `waitForClientsPendingCommandsGated`
+- `6030`
+- `site.CAvdWrapCtrlRadish`
+- `122222222222222222222222222222222222212222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222221211122222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `CAvdWrapCtrlBorage`
+- `WrDMAHvpInsn[1]`
+- `site.CPriorityQueueDaisy`
+- `WrDMAOvpInsn[0]`
+- `RdDMARfLeftPix`
+- `EnableM3InboxEmptyInterrupt`
+- `allocMem`
+- `getDecodeBufInFrameParamQGated`
+- `RdDMAZipHdrLuma[5]`
+- `handleStartFailure`
+- `SessionMeas_DataLengthAvg`
+- `SessionMeas_TotalTime_ms`
+- `1112`
+- `/arm-io/avd1`
+- `PSDResetSequence`
+- `sleepClientWaitingForFrameParam`
+- `getIODMACommand`
+- `recordPowerOff`
+- `site.CAvdWrapCtrlClover`
+- `HardReset`
+- `applyFoxtrotGated`
+- `patchIntoDecodeBuffer`
+- `SessionMeas_NumFramesHWErrFatal`
+- `site.AppleAVDFrameParamManager`
+- `getAvailableSlotInFrameParamQ`
+- `RdDMAAvpBits[0]`
+- `RdDMAZipHdrLuma[6]`
+- `ID_NOT_VALID`
+- `1111122211`
+- `&m_sMemInfo->m_avp_above_info`
+- `decryptFrame_SliceData`
+- `site.CAvdApCommViola`
+- `RdDMAOvpBits[1]`
+- `WrDMAPipeStats`
+- `SetRemoteConnection`
+- `StatusLogging`
+- `TDATAEND`
+- `SoftReset`
+- `sendCommandToCommandGate`
+- `CAvdApCommDaisy`
+- `site.CAvdMcpuRadish`
+- `WrDMAZipCmp[1]`
+- `PrepareM3DecodeCommandAvc`
+- `avcFatalErrorIdentify`
+- `DART Error`
+- `CAvdMcpuCatnip`
+- `SessionDim_LosslessEnabled`
+- `WrDMAOvpProbs[3]`
+- `DESCRAMBLER_SELF_TEST_DONE`
+- `CAvdMcpuDahlia`
+- `isAVDCoreIDValid`
+- `1212222`
+- `WrDMAAvpInsn[1]`
+- `validateHevcFields`
+- `waitForClientsPendingCommands_Sleep`
+- `batchEncryptDecodeFrame`
+- `122`
+- `printFwVersionFromImem`
+- `RBSPALIGN`
+- `hw.memsize`
+- `registerAdditionalCore`
+- `isColorDepthValid`
+- `WrDMAOvpInsn[3]`
+- `populateRegisters`
+- `unmapFromDART`
+- `getPmuGTB`
+- `CAvdApCommMsgBox`
+- `EP3B0`
+- `OSBoundedPtr.h`
+- `RdDMAOvpBits[2]`
+- `ILLEGALVLC`
+- `ConfigurePioHdrAvc`
+- `site.DartUmapNode`
+- `waitValidADSStatusWithMask`
+- `RdDMAAvpBits[2]`
+- `RdDMAAzLeftPix`
+- `KEY_DISABLED`
+- `1112112221212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121221122`
+- `AppleAVD: %s(): I am DandelionCD die 0\n`
+- `&m_sMemInfo->m_dec_pb`
+- `PrepareM3DecodeCommandAvx`
+- `MORETDATA`
+- `allocRVRAMemory`
+- `site.CAvdWrapCtrlBorage`
+- `site.CAvdWrapCtrlLotus`
+- `CAvdMcpuThyme`
+- `site.CAvdWrapCtrlHibiscus`
+- `logConnectionStatus`
+- `RdDMAPipeInsn[2]`
+- `initializeDeviceGated`
+- `SessionDim_ParsingMode`
+- `validateAvcFields`
+- `mapToDART`
+- `CAvdWrapCtrlLotus`
+- `RdDMAOvpAboveInfo[1]`
+- `WrDMALfAboveInfo`
+- `EP3B1`
+- `clearClientFromADS`
+- `CAvdWrapCtrlDaisy`
+- `site.CAvdWrapCtrlClary`
+- `RdDMAPipeInsn[0]`
+- `sampleBusyFrameParamQ`
+- `site.CAvdWrapCtrlTansy`
+- `incrementRefCount`
+- `CAvdApCommTansy`
+- `site.CPriorityQueueViola`
+- `RdDMAHvpBits[3]`
+- `SessionDim_IChatUsage`
+- `CAvdMcpuSalvia`
+- `startSession`
+- `AVDKextType`
+- `RdDMAZipCmpLuma[3]`
+- `RdDMAZipCmpLuma[5]`
+- `setPowerStateGated`
+- `RdDMAOvpBits[0]`
+- `WriteBufferToRegister`
+- `terminateDeviceGated`
+- `avdOutbox0ISR`
+- `false`
+- `iomd-cache-size`
+- `bumpPriority`
+- `WrDMALfLeftInfo`
+- `RdDMASrLeftPix`
+- `unmapAll`
+- `site.CAvdWrapCtrlDahlia`
+- `GOLOMBLEN`
+- `popFront`
+- `decryptFrame_KeyDelivery`
+- `\"%s\"\n`
+- `hwTimeoutRestartTimer`
+- `IOUserClientDefaultLockingSetProperties`
+- `SessionDim_EnableRVRA`
+- `getFrameParamQClient`
+- `wakeM3CmdQSubmissionThreadGated`
+- `read_uint32_t_attribute_from_edt`
+- `site.CAvdApCommRose`
+- `&m_sMemInfo->m_v_fifo[i]`
+- `resetFrameQslot`
+- `site.FoxtrotLotus`
+- `confirmProtectionOptions`
+- `12111112`
+- `site.CPriorityQueueDahlia`
+- `WrDMARfLeftInfo`
+- `DPA_RANDOM_UNSEEDED`
+- `DECODE FRAME`
+- `&m_sMemInfo->m_data_addr`
+- `RdDMAOvpColo0[3]`
+- `H264DecoderCanDo422`
+- `WrDMALvpColo`
+- `RdDMAOvpProbs[3]`
+- `adsFailIdentify`
+- `setPerfState`
+- `2221111`
+- `SET_PROPERTY`
+- `{\n`
+- `decryptFrame_CTRSliceData`
+- `writeBufferToRegister`
+- `zda0hcI2`
+- `CAvdApCommIxora`
+- `SessionDim_Resolution`
+- `RdDMAZipHdrChroma[4]`
+- `ENDTILE`
+- `CAvdApCommLotus`
+- `H264DecoderSupportsTileDecode`
+- `mapMemory`
+- `site.CAvdMcpuSalvia`
+- `WrDMAZipHdr[1]`
+- `RdDMAAzAbovePix`
+- `unmapDART`
+- `attachCoreAnalyticsService`
+- `21221222222222222222222122122222222222222222212212222222222222222212122122222222222222222212212222222222222222221221222222222222222222122122222222222222222212212222222222222222221221222222222222222222122122222222222222222212212222222222222222221221222222222222222222122122222222222222222`
+- `CAvdMcpuViola`
+- `RdDMAZipCmpChroma[6]`
+- `12122222112112`
+- `site.CAvdApCommRadish`
+- `BurstUnmap`
+- `isCryptSchemeValid`
+- `RdDMAZipCmpChroma[4]`
+- `RdDMAZipCmpLuma[6]`
+- `RdDMAZipCmpLuma[9]`
+- `HW Timeout`
+- `submitCmdToM3CmdQGated`
+- `setFrameParamQState`
+- `site.AVDSharedMemory`
+- `WrDMALvpInsn`
+- `WrDMAOvpColo[3]`
+- `WrDMAMvAboveInfo`
+- `CBP`
+- `ReadRegisterToBuffer`
+- `CheckAVDHwStatus`
+- `powerCoreOn`
+- `AppleAVD.cpp`
+- `l9P8A1sP`
+- `site.CPriorityQueueTansy`
+- `RdDMAOvpColo0[1]`
+- `(binary data)\n`
+- `TileDecodeMode`
+- `fatalErrorAddressIdentify`
+- `setupUserClient`
+- `getPmuRTC`
+- `powerChangeDoneGated`
+- `DeallocKernelMem`
+- `allocateSharedMemory`
+- `returnIODMACommand`
+- `site.AppleAVDScheduler`
+- `receiveCmd`
+- `RdDMAIpAbovePix`
+- `RBSPSTOP`
+- `getNextUserClientIndex`
+- `VTMaxDecodeLevel`
+- `SessionMeas_FGNotAppliedPercentage`
+- `initVPInstrFifo`
+- `RdDMAZipHdrChroma[14]`
+- `DARTErrorHandler`
+- `ReadRegister32`
+- `timeoutHandler`
+- `site.CAvdWrapCtrlSalvia`
+- `RdDMAHvpBits[2]`
+- `RdDMAZipCmpLuma[0]`
+- `RdDMAZipCmpChroma[5]`
+- `registerWithIOSurface`
+- `getClientToSwap`
+- `site.MsgBoxMailboxConnection`
+- `isAOCPAllowed`
+- `RdDMAZipHdrChroma[3]`
+- `PrintCmdQueue`
+- `inflate`
+- `site.CPriorityQueueThyme`
+- `WrDMAAvpAboveInfo[0]`
+- `RdDMAOvpBits[3]`
+- `DECODE FRAME DONE`
+- `site.CAvdWrapCtrlCatnip`
+- `platform_chip_id`
+- `memCacheInit`
+- `2221112`
+- `DVAMapControl`
+- `callSetPerfStateFloorAPI`
+- `enableRXInterrupt`
+- `REFIDX`
+- ` `
+- `WaitForM3Boot`
+- `12`
+- `SDATAEND`
+- `%d`
+- `11121`
+- `registerErrorHandler`
+- `getAVDADSID`
+- `RdDMAAvpAboveInfo[1]`
+- `RdDMAOvpColo2[3]`
+- `setReleaseCVPixelBufferIndex`
+- `decryptFrame`
+- `RdDMAZipCmpChroma[10]`
+- `hevcFatalErrorIdentify`
+- `printAllMappings`
+- `popBack`
+- `function-set_perf_state_floor`
+- `AppleAVD: %s(): I am Narcissus\n`
+- `communicationTeardown_all_doorbells`
+- `RdDMAZipHdrChroma[5]`
+- `checkFlowCtrlResouceGroupTunables`
+- `1212112112`
+- `RdDMAHvpBits[0]`
+- `site.CAvdMcpuLotus`
+- `121221121122`
+- `WrDMAOvpProbs[1]`
+- `enableInterrupt`
+- `createDecoderHelper_UserParser`
+- `true`
+- `addSharedMemToMappingList`
+- `CAvdWrapCtrlClary`
+- `WrDMAAvpInsn[3]`
+- `saveM3ContextAndPanic`
+- `retainADS`
+- `newUserClient`
+- `site.CAvdMcpuKopsia`
+- `SessionDim_DummyFramePresent`
+- `site.CAvdWrapCtrlIxora`
+- `WrDMAHvpInsn[2]`
+- `RdDMAZipHdrChroma[11]`
+- `21221222222222222222222122122222222222222222212212222222222222222212122122222222222222222212212222222222222222212122122222222222222222212212222222222222222221221222222222222222222122122222222222222222212212222222222222222221221222222222222222222122122222222222222222`
+- `11222222222`
+- `RdDMAZipHdrChroma[8]`
+- `writeNCheckTunables`
+- `selectAVDCoreTier`
+- `patchCommand`
+- `powerAllCoresOffWrapper`
+- `setKeyParams`
+- `121111121222121211111111111111111111111112212212222222222222222222222222222222222222222222222222222222222222222222211111111112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `SEGID`
+- `getAvdFwSizeFromMxWrap`
+- `site.CAvdApCommLotus`
+- `RdDMAAvpAboveInfo[3]`
+- `EP3B2`
+- `push`
+- `AVDDecodeOneFrame`
+- `removeM3CmdQPendingSub`
+- `allocateKernelMemoryInternal`
+- `1112222222212`
+- `waitForOutstandingAXITransaction`
+- `RdDMALvpState`
+- `DISABLED`
+- `printAckHistory`
+- `&m_sMemInfo->m_ip_above_pix`
+- `CoreAnalyticsHub`
+- `site.CAvdMcpuBorage`
+- `WrDMAOvpColo[2]`
+- `av1FatalErrorIdentify`
+- `addM3CmdQPendingSub`
+- `CAvdWrapCtrlSalvia`
+- `IOAVDHEVCDecodeCapabilities`
+- `WrDMALvpSeg`
+- `hwTimeoutSetTimer`
+- `decodeFailIdentify`
+- `getSpecifiedFrameParamQ`
+- `submitCmdToFParamQGated`
+- `insertSetPropertiesCommand`
+- `addWaiter`
+- `/arm-io`
+- `INVALID_COMMAND`
+- `AdvanceHwRd`
+- `site.CAvdApCommClary`
+- `decodeFrameFigHelper_CreateAndSubmitProperty`
+- `122222222222222222222222222222222222212222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222221211122222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `site.MsgBoxDoorbellConnection`
+- `disableTXInterrupt`
+- `site.CPriorityQueueBorage`
+- `isVPAvailableForDecodeCmd`
+- `RdDMALvpColo`
+- `RdDMAOvpColo2[0]`
+- `ConfigurePioHdr`
+- `stop`
+- `function-mcc_dataset`
+- `RdDMAZipCmpChroma[11]`
+- `IOUserClientDefaultLockingSingleThreadExternalMethod`
+- `SessionDim_CryptScheme`
+- `SessionDim_IPCMEnabled`
+- `SessionMeas_PixelRate_Mpps`
+- `site.CPriorityQueueClary`
+- `RdDMAOvpColo1[1]`
+- `WrDMAAzAbovePix`
+- `FirmwareVersion`
+- `IBCMVECTOR`
+- `site.AppleAVD`
+- `RdDMAOvpSeg[3]`
+- `callPlatformFunction`
+- `readRegister32`
+- `CAvdWrapCtrlRadish`
+- `SetInterfaceType`
+- `TryEveryFrame`
+- `site.CAvdMcpuRose`
+- `site.CAvdWrapCtrlThyme`
+- `WrDMAAvpAboveInfo[2]`
+- `RdDMAZipCmpChroma[12]`
+- `loadTunables`
+- `site.FoxtrotSalvia`
+- `allocDecodeCmd`
+- `AppleAVD: %s(): active_mcc_bit_vector_val is 0x%x\n`
+- `RdDMAZipHdrLuma[15]`
+- `site.SimpleCircularBuffer`
+- `setParameter`
+- `CodecType`
+- `EncryptionScheme`
+- `WrDMAAvpInsn[0]`
+- `RdDMAZipHdrChroma[12]`
+- `CAvdWrapCtrlDahlia`
+- `site.CAvdWrapCtrlDaisy`
+- `site.CAvdMcpuIxora`
+- `consumeDVA0`
+- `getVPInstrFifo`
+- `decryptFrame_CTRMode`
+- `RdDMAZipHdrLuma[11]`
+- `RdDMAPipeInsn[1]`
+- `QueueAVDCommand`
+- `site.CAvdApCommDahlia`
+- `AdvanceApCmdQueueRdPos`
+- `LICENSE_KEY_NOT_VALID`
+- `requestPowerChange`
+- `createDecoder`
+- `SessionMeas_FrameDimWidth`
+- `site.AppleAVDAnalytics`
+- `WrDMAHvpInsn[3]`
+- `RdDMAZipCmpChroma[9]`
+- `removeNalTrailingZerosAndEPB`
+- `isChromaFormatValid`
+- `CheckMctlStatus`
+- `RdDMALfLeftInfo`
+- `forceUpdateAVDCoreActiveLoadRate`
+- `updateCoreClientCount`
+- `CAvdApCommRadish`
+- `RdDMARfLeftInfo`
+- `ALIGNBIT01`
+- `ready`
+- `SessionDim_ParavirtualizedSession`
+- `communicationTeardown_all_mailboxes`
+- `RdDMAZipCmpLuma[7]`
+- `}\n`
+- `mcpuRestoreContext`
+- `error! null plist\n`
+- `ChromaFormat`
+- `communicationSetup`
+- `WrDMALvpAboveInfo`
+- `FLAG_COMMAND`
+- `updateCoreHighSpeedCount`
+- `DeallocateUserClientKernelMemory`
+- `CAvdApCommSalvia`
+- `getCoreLoadScore`
+- `flushInactiveDARTMappings`
+- `mapDartVAddrUserSpace`
+- `mcpuSaveContext`
+- `logPerfAndUserClientStats`
+- `IVLOFFSET`
+- `registerWithIOPM`
+- `122222222222222222222222222222222222212222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222221211122222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `site.AvdDartClientInfo_t`
+- `CAvdMcpuHibiscus`
+- `RdDMALvpAboveInfo`
+- `xSnd2sF0`
+- `site.CAvdApCommKopsia`
+- `The offset of the pointer inside its valid memory range can't be represented using int32_t`
+- `releaseFrameQslot`
+- `decode-samples-per-second`
+- `site.AppleAVDUserClient*`
+- `allocateMemory`
+- `sendStopToPQ`
+- `popFromDeferralList`
+- `SessionMeas_NumTimeoutEncountered`
+- `RdDMAZipHdrLuma[0]`
+- `CAvdApCommCatnip`
+- `8120`
+- `WrDMAOvpInsn[1]`
+- `WrDMAOvpSeg[2]`
+- `AppleAVD: %s(): mxwrap_ctrr_itcm_start_addr_val = 0x%x\n`
+- `sendAvdCmd`
+- `site.CPriorityQueueCatnip`
+- `111112111111112111221`
+- `%s = `
+- `frontOfQueue`
+- `validateAvxFields`
+- `evaluateMaxInFlight`
+- `WrDMAHvpInsn[0]`
+- `waitForM3CmdQSubmissionGated`
+- `ILLEGALBLOCK`
+- `CAvdApCommRose`
+- `site.FoxtrotViola`
+- `SessionDim_TileDecodeMode`
+- `com_apple_driver_FairPlayIOKit`
+- `112212222221222122222222222122222222222122222222222122222222222122222222222122222222222122222222222122222222222122222222222122222222222122222222222122222222222122222222222122222222222122222222222122222222222122222222222122222222222122222222222122222222222122222222222122222222222122222222222122222222`
+- `WrDMARfAboveInfo`
+- `unmapMemory`
+- `122222222222222222222222222222222222212222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222221211122222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `createAndSubmitDecodeCMD`
+- `SessionDim_CompressedBuffersEnabled`
+- `site.CAvdWrapCtrlRose`
+- `site.AppleAVDUserClient`
+- `CAvdApCommKopsia`
+- `disableRXInterrupt`
+- `ENABLED`
+- `SessionMeas_DVARemapCount`
+- `avd-version`
+- `waitForClientsPendingCommands_Delay`
+- `destroySharedBuffer`
+- `callProviderPowerAPI`
+- `8122`
+- `RdDMAZipHdrChroma[2]`
+- `PrepareM3DecodeCommand`
+- `clientClosed`
+- `\"Forced AVD Panic: %s\\n\" @%s:%d`
+- `isDeviceExclusiveCacheMode`
+- `site.session_analytics_s*`
+- `SessionDim_AVDCoreIndex`
+- `compatible`
+- `site.CPriorityQueueSalvia`
+- `RdDMAZipHdrChroma[15]`
+- `MVD`
+- `recordEncFrameFailureGated`
+- `site.CAvdMcpuCatnip`
+- `RdDMAZipHdrLuma[14]`
+- `site.CPriorityQueueKopsia`
+- `RdDMAZipCmpChroma[2]`
+- `SLICEALIGN`
+- `COMMAND_FIFO_OVERFLOW`
+- `AppleAVD`
+- `disableMCDataStrm`
+- `com.apple.videotoolbox.vdectestapp`
+- `ClientPID`
+- `12121121121`
+- `getAdsStatus`
+- `setClientID`
+- `site.AppleAVDCoreControl`
+- `MBSKIPRUN`
+- `&m_sMemInfo->m_lf_above_info`
+- `2222222222222222222222221`
+- `CAvdWrapCtrlCatnip`
+- `soc-generation`
+- `H264DecoderCanDo444`
+- `getMemInfo`
+- `AppleAVD: %s(): I am Borage\n`
+- `KEY_INVALID_AT_USE_TIME`
+- `hwTimeoutCancelTimer`
+- `The range of valid memory is too large to be represented by this type, or [begin, end) is not a well-formed range`
+- `addMemoryDescToGart`
+- `RdDMAZipHdrChroma[10]`
+- `site.CAvdMcpuThyme`
+- `isCodecValid`
+- `enableMCDataStrm`
+- `WrDMAOvpSeg[1]`
+- `PCMALIGN`
+- `ENDWPPROW`
+- `site.ack_history_entry_t`
+- `site.AppleAVDDiagnostic`
+- `site.MsgBoxDashboard`
+- `site.AVDSharedMemoryManager`
+- `RdDMAOvpProbs[0]`
+- `RdDMAZipHdrLuma[1]`
+- `DisableM3InboxEmptyInterrupt`
+- `CAvdWrapCtrlClover`
+- `site.CAvdApCommDaisy`
+- `RdDMAZipHdrLuma[13]`
+- `DISABLE`
+- `updateCoreMidSpeedCount`
+- `waitForDARTMapperActive`
+- `setDecryption2Params`
+- `decodeFrameFigHelper_DecryptFrame`
+- `resetUpdateIV`
+- `FALSE`
+- `SessionDim_ChromaFormat`
+- `WrDMASwLeft`
+- `RdDMAZipHdrChroma[9]`
+- `RdDMAZipCmpChroma[1]`
+- `bounded_ptr<T>::operator+=(n): Adding the specified number of bytes to the offset representing the current position would overflow.`
+- `isUsageModeValid`
+- `finishSession`
+- `1122222222`
+- `msgbox-using-postoffice`
+- `RdDMALfAboveInfo`
+- `CAvdApCommBorage`
+- `AppleAVD: %s(): I am DandelionD die 1\n`
+- `sendCmd`
+- `1212221212`
+- `updateAVDCoreActiveLoadRate`
+- `clientDied`
+- `site.avd_client_mem_info`
+- `setCryptSession`
+- `getRefCount`
+- `setKDCryptRef`
+- `RdDMAZipCmpLuma[4]`
+- `RdDMAZipCmpLuma[14]`
+- `sampleFrameStats`
+- `isParsingModeValid`
+- `RdDMAZipHdrLuma[2]`
+- `AppleAVD: %s(): mxwrap_ctrr_itcm_end_addr_val = 0x%x\n`
+- `SessionMeas_IdleSleepActivePercentage`
+- `site.CAvdMcpuDahlia`
+- `site.AVDDart`
+- `ReleaseAVDSharedMemory`
+- `removeFromQueue`
+- `addFrameWorkLoad`
+- `waitValidADSStatus`
+- `COEFF`
+- `removeDecodeSession`
+- `sendStartToPQ`
+- `active-mcc-bit-vector`
+- `0x%08x`
+- `RdDMAOvpColo0[2]`
+- `patchSliceDataSize`
+- `setClientInfo`
+- `EP3B3`
+- `FAULT_DETECTED`
+- `insertIntoQueue`
+- `site.AVDDartDeferralList`
+- `CAvdMcpuClary`
+- `decrementRefCount`
+- `site.CAvdApCommIxora`
+- `SessionMeas_FrameParamQBusyPercentage`
+- `RdDMAZipHdrLuma[10]`
+- `setPowerStateOffRetention`
+- `RdDMAMvAboveInfo`
+- `KEY_POLICY_MISMATCH`
+- `handleInterruptsInternal`
+- `memCacheTerminate`
+- `getPhysMemSize`
+- `GetConnectionMode`
+- `111`
+- `WrDMAZipHdr[0]]`
+- `RdDMAZipHdrLuma[7]`
+- `121111121222121211111211111111121111122111111111111111111211122222222222222122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222111111111111111111111111111111111111111111111111`
+- `SessionMeas_FrameDimHeight`
+- `site.CPriorityQueueLotus`
+- `site.CAvdMcpuViola`
+- `PriorityQueue`
+- `initialize`
+- `WrDMASrLeftPix`
+- `site.sPQEntry`
+- `site.CPriorityQueueIxora`
+- `WrDMAAvpInsn[2]`
+- `restoreM3context`
+- `site.CAvdApCommSalvia`
+- `21111`
+- `RdDMAZipCmpLuma[10]`
+- `INVALID_DATA_LENGTH`
+- `insertStopCommand`
+- `copyUserspaceToKernel`
+- `translateToDVA`
+- `2122122222222222222222`
+- `&m_sMemInfo->m_dec_hdr_c`
+- `UsageMode`
+- `SessionDim_FrameWidthOdd`
+- `RdDMAZipHdrChroma[1]`
+- `IOUserClientDefaultLocking`
+- `ENABLE`
+- `verifyCRC`
+- `CAvdWrapCtrlHibiscus`
+- `getLTRThreshold`
+- `AppleAVD: %s(): [AVD] AVD FW version in IMEM = v%x.%x.%x\n`

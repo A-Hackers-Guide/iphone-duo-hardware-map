@@ -1,0 +1,1192 @@
+# `com.apple.driver.AppleThunderboltNHI`
+
+- Name: AppleThunderboltNHI
+- Version: `7.2.81`
+- UUID: `C5EE24D5-3085-33E1-A2A8-3DADF2774400`
+- Source version: `831.40.3.0.0`
+- Depends on: [`com.apple.driver.AppleGPIOICController`](com.apple.driver.AppleGPIOICController.md) 1.0.0, [`com.apple.driver.AppleT8103TypeCPhy`](com.apple.driver.AppleT8103TypeCPhy.md) 1.0, [`com.apple.driver.IODARTFamily`](com.apple.driver.IODARTFamily.md) 1.0.0, [`com.apple.driver.RTBuddy`](com.apple.driver.RTBuddy.md) 1.0.0, [`com.apple.iokit.IOAccessoryManager`](com.apple.iokit.IOAccessoryManager.md) 1.0.0, [`com.apple.iokit.IOPCIFamily`](com.apple.iokit.IOPCIFamily.md) 1.0.0b1, [`com.apple.iokit.IOPortFamily`](com.apple.iokit.IOPortFamily.md) 1.0, [`com.apple.iokit.IOThunderboltFamily`](com.apple.iokit.IOThunderboltFamily.md) 1.0.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 9.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 9.0.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 9.0.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 9.0.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 16.5.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (2) [KC]
+
+### AppleThunderboltNHI
+- `CFBundleIdentifier`: `com.apple.driver.AppleThunderboltNHI`
+- `IOClass`: `AppleThunderboltHALType5`
+- `IONameMatch`: `acio`
+- `IOPCITunnelCompatible`: `True`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleThunderboltNHI`
+- `IOProbeScore`: `4096`
+- `IOProviderClass`: `AppleARMIODevice`
+
+### AppleThunderboltNHI_v2
+- `CFBundleIdentifier`: `com.apple.driver.AppleThunderboltNHI`
+- `IOClass`: `AppleThunderboltHALType7`
+- `IONameMatch`: `acio,v2`
+- `IOPCITunnelCompatible`: `True`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleThunderboltNHI`
+- `IOProbeScore`: `8192`
+- `IOProviderClass`: `AppleARMIODevice`
+
+
+## C++ classes (28) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `AppleThunderboltGenericHAL` | 0x180 | IOService → IORegistryEntry |
+| `AppleThunderboltHALGenericACIO` | 0x468 | AppleThunderboltGenericHAL → IOService → IORegistryEntry |
+| `AppleThunderboltHALType5` | 0x468 | AppleThunderboltHALGenericACIO → AppleThunderboltGenericHAL → IOService → IORegistryEntry |
+| `AppleThunderboltHALType7` | 0x470 | AppleThunderboltHALGenericACIO → AppleThunderboltGenericHAL → IOService → IORegistryEntry |
+| `AppleThunderboltNHI` | 0xe8 | IOThunderboltNHI → IOService → IORegistryEntry |
+| `AppleThunderboltNHIBufferMemoryBlock` | 0x58 | AppleThunderboltNHIMemoryBlock |
+| `AppleThunderboltNHIDARTVMAllocator` | 0x78 | IODARTVMAllocatorGeneric → IODARTVMAllocator |
+| `AppleThunderboltNHIGenericACIO` | 0x1a0 | AppleThunderboltNHI → IOThunderboltNHI → IOService → IORegistryEntry |
+| `AppleThunderboltNHIMemoryBlock` | 0x10 |  |
+| `AppleThunderboltNHIReceiveRing` | 0xe8 | IOThunderboltNHIReceiveRing |
+| `AppleThunderboltNHIReceiveRingGenericACIO` | 0xf8 | AppleThunderboltNHIReceiveRing → IOThunderboltNHIReceiveRing |
+| `AppleThunderboltNHIReceiveRingManager` | 0x38 |  |
+| `AppleThunderboltNHIReceiveRingManagerGenericACIO` | 0x38 | AppleThunderboltNHIReceiveRingManager |
+| `AppleThunderboltNHIReceiveRingManagerType5` | 0x38 | AppleThunderboltNHIReceiveRingManagerGenericACIO → AppleThunderboltNHIReceiveRingManager |
+| `AppleThunderboltNHIReceiveRingManagerType7` | 0x38 | AppleThunderboltNHIReceiveRingManagerGenericACIO → AppleThunderboltNHIReceiveRingManager |
+| `AppleThunderboltNHIReceiveRingType5` | 0xf8 | AppleThunderboltNHIReceiveRingGenericACIO → AppleThunderboltNHIReceiveRing → IOThunderboltNHIReceiveRing |
+| `AppleThunderboltNHIReceiveRingType7` | 0xf8 | AppleThunderboltNHIReceiveRingGenericACIO → AppleThunderboltNHIReceiveRing → IOThunderboltNHIReceiveRing |
+| `AppleThunderboltNHISubMemoryBlock` | 0x38 | AppleThunderboltNHIMemoryBlock |
+| `AppleThunderboltNHITransmitRing` | 0xd8 | IOThunderboltNHITransmitRing |
+| `AppleThunderboltNHITransmitRingGenericACIO` | 0xe8 | AppleThunderboltNHITransmitRing → IOThunderboltNHITransmitRing |
+| `AppleThunderboltNHITransmitRingManager` | 0x38 |  |
+| `AppleThunderboltNHITransmitRingManagerGenericACIO` | 0x40 | AppleThunderboltNHITransmitRingManager |
+| `AppleThunderboltNHITransmitRingManagerType5` | 0x40 | AppleThunderboltNHITransmitRingManagerGenericACIO → AppleThunderboltNHITransmitRingManager |
+| `AppleThunderboltNHITransmitRingManagerType7` | 0x40 | AppleThunderboltNHITransmitRingManagerGenericACIO → AppleThunderboltNHITransmitRingManager |
+| `AppleThunderboltNHITransmitRingType5` | 0xe8 | AppleThunderboltNHITransmitRingGenericACIO → AppleThunderboltNHITransmitRing → IOThunderboltNHITransmitRing |
+| `AppleThunderboltNHITransmitRingType7` | 0xe8 | AppleThunderboltNHITransmitRingGenericACIO → AppleThunderboltNHITransmitRing → IOThunderboltNHITransmitRing |
+| `AppleThunderboltNHIType5` | 0x1a0 | AppleThunderboltNHIGenericACIO → AppleThunderboltNHI → IOThunderboltNHI → IOService → IORegistryEntry |
+| `AppleThunderboltNHIType7` | 0x1a0 | AppleThunderboltNHIGenericACIO → AppleThunderboltNHI → IOThunderboltNHI → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1640)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x0003d412 off=0x00849c50-0x00887062 addr=0xfffffe000784dc50-0xfffffe000788b062 r--/r--   __TEXT            
+	sz=0x0000c865 off=0x0084a318-0x00856b7d addr=0xfffffe000784e318-0xfffffe000785ab7d               __TEXT.__cstring          (CstringLiterals)
+	sz=0x00028a20 off=0x00856b80-0x0087f5a0 addr=0xfffffe000785ab80-0xfffffe00078835a0               __TEXT.__const            
+	sz=0x00007ac2 off=0x0087f5a0-0x00887062 addr=0xfffffe00078835a0-0xfffffe000788b062               __TEXT.__os_log           
+001: LC_SEGMENT_64 sz=0x0003ae2c off=0x0299b080-0x029d5eac addr=0xfffffe000999f080-0xfffffe00099d9eac r-x/r-x   __TEXT_EXEC       
+	sz=0x0003a50c off=0x0299b080-0x029d558c addr=0xfffffe000999f080-0xfffffe00099d958c          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000920 off=0x029d558c-0x029d5eac addr=0xfffffe00099d958c-0xfffffe00099d9eac          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x000006f8 off=0x049ce380-0x049cea78 addr=0xfffffe000b9d2380-0xfffffe000b9d2a78 rw-/rw-   __DATA            
+	sz=0x00000280 off=0x049ce380-0x049ce600 addr=0xfffffe000b9d2380-0xfffffe000b9d2600               __DATA.__data             
+	sz=0x00000478 off=0x00000000-0x00000478 addr=0xfffffe000b9d2600-0xfffffe000b9d2a78               __DATA.__common           (Zerofill)
+003: LC_SEGMENT_64 sz=0x00007d60 off=0x012834a0-0x0128b200 addr=0xfffffe00082874a0-0xfffffe000828f200 rw-/rw-   __DATA_CONST      
+	sz=0x000000e0 off=0x012834a0-0x01283580 addr=0xfffffe00082874a0-0xfffffe0008287580         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x000000e0 off=0x01283580-0x01283660 addr=0xfffffe0008287580-0xfffffe0008287660         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00006a28 off=0x01283660-0x0128a088 addr=0xfffffe0008287660-0xfffffe000828e088         __DATA_CONST.__const            
+	sz=0x00000740 off=0x0128a088-0x0128a7c8 addr=0xfffffe000828e088-0xfffffe000828e7c8         __DATA_CONST.__kalloc_type      
+	sz=0x00000460 off=0x0128a7c8-0x0128ac28 addr=0xfffffe000828e7c8-0xfffffe000828ec28         __DATA_CONST.__kalloc_var       
+	sz=0x00000490 off=0x0128ac28-0x0128b0b8 addr=0xfffffe000828ec28-0xfffffe000828f0b8         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00000148 off=0x0128b0b8-0x0128b200 addr=0xfffffe000828f0b8-0xfffffe000828f200         __DATA_CONST.__got              (NonLazySymbolPointers)
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 333 at 0x04ae9e08
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     C5EE24D5-3085-33E1-A2A8-3DADF2774400
+008: LC_SOURCE_VERSION           831.40.3.0.0
+009: LC_FUNCTION_STARTS          offset=0x004ab5e48 size=0x4d8
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleThunderboltNHI`
+- `CFBundleGetInfoString`: `AppleThunderboltNHI version 7.2.81, Copyright © 2009-2020 Apple Inc. All rights reserved.`
+- `CFBundleIdentifier`: `com.apple.driver.AppleThunderboltNHI`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleThunderboltNHI`
+- `CFBundleNumericVersion`: `0`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `7.2.81`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `7.2.81`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `OSBundleCompatibleVersion`: `1.0.0`
+- `OSBundleRequired`: `Local-Root`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleThunderboltNHI.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198897107888`
+- `_PrelinkExecutableRelativePath`: `AppleThunderboltNHI`
+- `_PrelinkExecutableSize`: `525974`
+- `_PrelinkExecutableSourceAddr`: `-2198897107888`
+- `_PrelinkKmodInfo`: `-2198828407936`
+
+## Strings (1034) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createPowerDomainClientArray - byte_length = %d status = 0x%08x\n`
+- `hi_up_tx_desc_fabric_tunables`
+- `hi_up_merge_fabric_tunables`
+- `AppleThunderboltGenericHAL::poweredStart() failed`
+- `function-exit_mode`
+- `setAllocator`
+- `%lldus AppleThunderboltGenericHAL::lateSleep - state = 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL::prePCIWake - fPMCallback = %p fPMCallbackOwner = %p\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::handleInterrupt\n`
+- `site.RxElement`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::processInterrupt\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::resolvePHandle - phandle_object = %p\n`
+- `hbw_fabric_tunables`
+- `%lldus AppleThunderboltNHITransmitRingManager::handleDedicatedInterrupt - interrupt for non-allocated TX ring %d\n`
+- `Terminate Reason`
+- `AppleThunderboltNHIReceiveRingManagerGenericACIO`
+- `site.AppleThunderboltNHIType7`
+- `site.AppleThunderboltNHITransmitRingManagerType7`
+- `AppleThunderboltHALType7`
+- `1211122222211211112222221121212`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - fw_state = 0x%x\n`
+- `12111112122212121211111122222`
+- `%lldus AppleThunderboltNHI::earlyWakeInternal - fStarted = %d fPMState = %d\n`
+- `AppleThunderboltNHITransmitRing(%d)::writeNextdescriptor - ERROR - current frame (o=0x%x,l=0x%x) greater than descriptor length 0x%x\n`
+- `%lldus AppleThunderboltNHI::message - unknown message type = 0x%08x\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMLateSleepState\n`
+- `%lldus AppleThunderboltNHIReceiveRingGenericACIO(%d)<%d>::createDoubleBuffers - failed to create parent block\n`
+- `1211111212221212121111112222221111221121212222122222`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::wake - waking after lateSleep, cable disconnected/powered off, run earlyWake\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::exitPDMode - mode = 0x%08x status = 0x%08x\n`
+- `Data Status Reg`
+- `%lldus IOThunderboltTransmitQueue(%d)::submit packet[%03d] = 0x%02x%02x\n`
+- `%lldus AppleThunderboltNHIGenericACIO::start - status = 0x%08x\n`
+- `n && !(n & (n - 1))`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules No Frame List Mid PDF - setting SOF to SOF - 0x%x\n`
+- `%lldus AppleThunderboltNHIReceiveRing<%p>::checkForCompletedDescriptors packet[%03d] = 0x%02x%02x\n`
+- `%lldus AppleThunderboltGenericHAL::probe\n`
+- `121111121222121211221111111111222122112222222211`
+- `tbpollinterval`
+- `AppleThunderboltNHITransmitRing`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::applyTunables - ERROR: \"%s\" - length %d not a multiple of entry size %lu\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::checkForCableStateChange - enumerator busy - nothing to do\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::publishTunables\n`
+- `IOPlatformSleepAction`
+- `%lldus AppleThunderboltGenericHAL::destroyPowerManagement\n`
+- `%lldus AppleThunderboltNHIReceiveRingManagerGenericACIO(%d)::enableInterrupt - write kRegisterInterruptStatusMask0 mask = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO::free\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - global dispatch queue not found!\n`
+- `site.PowerDomainClient`
+- `debug`
+- `Hardware Owner`
+- `%lldus AppleThunderboltGenericHAL::enableDeepSleep - disable deep sleep - kIOPMDriverAssertionLevelOn\n`
+- `%lldus AppleThunderboltNHI::doze\n`
+- `%lldus AppleThunderboltNHIReceiveRingManager::deallocateReceiveRing - deallocating Rx ring %p\n`
+- `AppleThunderboltNHIGenericACIO`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::destroyPowerDomainClientArray\n`
+- `%lldus AppleThunderboltHALGenericACIO::poweredStart - fInterruptEventSource[%d] = %p\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::getCableState - equal = %d\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::initWithNHI - hop id = %d\n`
+- `AppleThunderboltNHITransmitRing.cpp`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor - frame (o=0x%llx,l=0x%llx) total command (o=0x%llx,l=0x%llx)\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor - FrameList cache STORE: cmd=%p listIdx=%u frameIdx=%u addr=0x%llx details=0x%x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - sleep lstx_level = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::doze\n`
+- `%lldus AppleThunderboltGenericHAL::earlyWake - state = 0x%08x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::configure - dedicated workloop\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::checkForCompletedDescriptors - unbounce - offset = %lld, length = %lld, double_buffer = %p\n`
+- `AppleThunderboltNHITransmitRingManagerType7`
+- `%lldus AppleThunderboltNHIGenericACIO::setupPowerSavings - status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::powerDomainShouldBeEnabled - disable domain = %d\n`
+- `%lldus AppleThunderboltNHIReceiveRing<%p>::checkForCompletedDescriptors packet[%03d] = 0x%02x\n`
+- `power-gates`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createPowerDomainClientArray - clock-gate length = %d.\n`
+- `tbtest`
+- `<NONE>`
+- `AppleThunderboltNHI::poweredStart() failed`
+- `\"AppleThunderboltNHITransmitRing(%d)<%d>::shouldDoubleBuffer - \" \"double buffering detected (o=0x%x, l=0x%x, seg=0x%llx)\\n\" @%s:%d`
+- `%lldus AppleThunderboltNHIReceiveRingGenericACIO(%d)<%d>::createDoubleBuffers - failed to create sub block\n`
+- `12111222222112111122222211221`
+- `??`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - PHY is suspended\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - CPU already disabled.\n`
+- `12`
+- `AppleThunderboltGenericHAL`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::enableDART - enable = %d fDARTEnabled = %d\n`
+- `tb_hb_sb`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::resolvePHandle - ERROR: failed to find service for \"%s\" phandle.\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::processWake\n`
+- `%lldus AppleThunderboltHALGenericACIO::registerWrite32 - offset = 0x%08x data = 0x%08x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::checkForCompletedDescriptors - desc[%d] 0x%08x 0x%08x 0x%08x 0x%08x, command = %p\n`
+- `AppleGPIOICController`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createPowerDomainClientArray - power-gate length = %d.\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::sleep\n`
+- `IOPCITunnelControllerID`
+- `%lldus AppleThunderboltHALGenericACIO::destroyRegisterRanges - staring iteration\n`
+- `%lldus AppleThunderboltHALGenericACIO::handleInterrupt - src %p index = %d\n`
+- `bounded_ptr<T>::operator*: Dereferencing this pointer would access memory outside of the bounds set originally`
+- `AppleThunderboltNHIReceiveRing(%d)<%d>::shouldDoubleBuffer - WARNING - current frame (o=0x%x,l=0x%x) crosses a page boundary, buffer end offset 0x%x > page size 0x%x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - ERROR: error suspending the PHY, status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - cable connected, set LSTX GPIO to output high\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::applyTunables - \"%s\" - tunable_data_length %d, entry size = %lu, tunable_entry_count %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO::forcePowerState %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::evaluatePowerDomains - return should_be_enabled = %d\n`
+- `pathcrumbsv2`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMWakeState\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - %s\n`
+- `%lldus AppleThunderboltGenericHAL(%d)::setupPowerManagement - status = 0x%x\n`
+- `pathcrumbs`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMRestartState\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::start - always double buffer mode enabled.\n`
+- `%lldus AppleThunderboltNHITransmitRingManager::allocateTransmitRing EDT property %s not found, no streaming trace ring allocated\n`
+- `site.AppleThunderboltHALType5`
+- `%lldus AppleThunderboltNHIDARTVMAllocator::init\n`
+- `0: %s 1: %s`
+- `%lldus AppleThunderboltNHIGenericACIO::lateSleep\n`
+- `%lldus AppleThunderboltGenericHAL::poweredStart - status = 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL::lateSleep - fPMCallback = %p fPMCallbackOwner = %p\n`
+- `%lldus AppleThunderboltNHITransmitRingManager::enableInterrupt - hopID = %d enable = %d\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)<%d>::start - not ready.\n`
+- `site.AppleThunderboltNHIReceiveRingType5`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - armio_device->enableDeviceClock(on,4) status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO::shutdown - skipped fStarted = %d fPoweredOff = %d\n`
+- `%lldus AppleThunderboltHALGenericACIO::setupDARTAllocator - ERROR: failed to create DARTVMAllocator\n`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::portChangeNotification - message = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::start - status = 0x%x\n`
+- `AppleTypeCPhyLane`
+- `v8@?0`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - set LSTX GPIO to default\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - no cable connected, set LSTX GPIO to output low\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::checkForCableStateChange - cable connected, bur power down requested (%d, %d), turn off and revaluate\n`
+- `%lldus AppleThunderboltNHI::unpause\n`
+- `%lldus AppleThunderboltHALGenericACIO::initializeMappers - ERROR: failed to create RX mapper for hopID %d, index %d!\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - state = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - PHY is already on\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::powerStateChangeDone - B, D - fCableStateChangeInProgress = false\n`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::portChangeNotification - ERROR - couldn't schedule port change event on queue! tmp_status = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::setWorkLoopForInterrupt - switching int %d to main workloop.\n`
+- `OSBoundedPtr.h`
+- `%lldus IOThunderboltTransmitQueue(%d)::submit packet[%03d] = 0x%02x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::unconfigure - fOwner = %p, fSoftInterruptEventSource = %p\n`
+- `%lldus AppleThunderboltNHI::setPMState - state = 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL(%d)<%p>::processSetPMState -  dispatchAsync( processSetPMState)\n`
+- `%lldus AppleThunderboltNHITransmitRingManager::allocateTransmitRing new ring (index from EDT: %u) allocated at 0x%p\n`
+- `%lldus AppleThunderboltHALType5(%d)::setupRegisterRanges - ERROR: register range %d not found.\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::writeNextDescriptor - frame (o=0x%llx,l=0x%llx) total command (o=0x%llx,l=0x%llx)\n`
+- `AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::shouldDoubleBuffer - current frame (o=0x%x,l=0x%x) not length aligned, offset = 0x%x\n`
+- `%lldus AppleThunderboltHALType7(%d)::setupRegisterRanges - ERROR: EDT found %d register spaces but only %d allocated\n`
+- `AppleThunderboltNHIReceiveRingType5`
+- `tblogmode`
+- `%lldus AppleThunderboltGenericHAL::earlySleep - fPMCallback = %p fPMCallbackOwner = %p\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMEarlyWakeState\n`
+- `%lldus AppleThunderboltNHI::earlyWake\n`
+- `%lldus AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::createDoubleBuffers - failed to create parent block\n`
+- `AppleThunderboltNHIReceiveRingGenericACIO(%d)<%d>::shouldDoubleBuffer - current frame (o=0x%x,l=0x%x) crosses a page boundary, buffer end offset 0x%x > page size 0x%x\n`
+- `\"AppleThunderboltNHIReceiveRingGenericACIO(%d)<%d>::shouldDoubleBuffer - \" \"double buffering detected (o=0x%x, l=0x%x, seg=0x%llx)\\n\" @%s:%d`
+- `AppleThunderboltHALType7.cpp`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::doze - sleeping with the cable is connected, run lateSleep\n`
+- `%lldus AppleThunderboltNHI::deallocateTransmitRing\n`
+- `%lldus AppleThunderboltNHIReceiveRingManager::allocateReceiveRing EDT property %s not found, no streaming trace ring allocated\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::destroyPHY\n`
+- `%lldus AppleThunderboltGenericHAL::enablePowerManagement - status = 0x%x\n`
+- `%lldus AppleThunderboltNHITransmitRingManagerGenericACIO(%d)::allocateSharedBuffer - Tx 0: %d Tx 1-%d: %d\n`
+- `%lldus AppleThunderboltNHIDARTVMAllocator::init - DART reported minDVA %p and maxDVA %p and page size %p and thus fSupportsFixedAllocations = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setARMIODevicePowerState - armio_device->setDevicePowerState( %d, %d )\n`
+- `hi_up_rx_desc_fabric_tunables`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::configure - dedicated workloop\n`
+- `site.AppleThunderboltNHIType5`
+- `AppleThunderboltNHIReceiveRing(%d)<%d>::shouldDoubleBuffer - WARNING - current frame (o=0x%x,l=0x%x) not DWORD aligned, offset = 0x%x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::writeNextDescriptor - doubleBuffered = %d buffer_address = %llx segment_length = %lld frame_length = %lld\n`
+- `AppleThunderboltNHIReceiveRingGenericACIO(%d)<%d>::shouldDoubleBuffer - current frame (o=0x%x,l=0x%x) not length aligned, offset = 0x%x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::powerDomainShouldBeEnabled - enable domain = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO::earlyWakeInternal\n`
+- `AppleThunderboltNHI load failed - Tunnelled Thunderbolt controllers are not supported.\n`
+- `%lldus AppleThunderboltNHI(%d)::start - status = 0x%08x\n`
+- `%lldus AppleThunderboltNHI::resetNHI\n`
+- `%lldus AppleThunderboltNHIReceiveRing<%p>::checkForCompletedDescriptors packet[%03d] = 0x%02x%02x%02x\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMPauseState\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::configure - set dedicated interrupt status = 0x%08x\n`
+- `1211211`
+- `%lldus AppleThunderboltNHIGenericACIO::start\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::destroyCableStateTracking\n`
+- `%lldus AppleThunderboltGenericHAL::enableDeepSleep - enable deep sleep - kIOPMDriverAssertionLevelOff\n`
+- `tb_phy_wait_ms`
+- `%lldus AppleThunderboltNHIReceiveRingManager::enableInterrupt - read mask = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - Current LSTX State = 0x%x set LSTX GPIO to output high\n`
+- `gpio-lstx`
+- `%lldus AppleThunderboltGenericHAL::start - provider = %p, not of type IOService, status = 0x%x\n`
+- `%lldus AppleThunderboltNHIReceiveRingManager::allocateReceiveRing no service to query EDT properties, no streaming trace ring allocated\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setupPHY - fPHYService = %p\n`
+- `This bounded_ptr is pointing to memory outside of what can be represented by a native pointer.`
+- `AppleThunderboltNHITransmitRingType7`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - PHY is off\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createPowerDomainClientArray - clock-gates property found.\n`
+- `hi_up_wr_fabric_tunables`
+- `%lldus AppleThunderboltGenericHAL::forcePowerState - powerOverrideOnPriv\n`
+- `%lldus AppleThunderboltGenericHAL::systemWillShutdown - kIOMessageSystemWillRestart\n`
+- `AppleThunderboltNHI::poweredStart - ERROR - unsupported path count %d\n`
+- `%lldus AppleThunderboltNHI::finalize\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::getCableState - connected = %d connect_count = 0x%x cable_speed = 0x%x legacy_adapters = %d link_training_mode = %d\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules No Frame List EOF PDF - setting EOF to Mid EOF - 0x%x\n`
+- `AppleThunderboltNHITransmitRingGenericACIO`
+- `%lldus AppleThunderboltNHIReceiveRingGenericACIO(%d)<%d>::initWithNHI\n`
+- `%lldus AppleThunderboltNHIDARTVMAllocator::vmAlloc - ERROR: IOMemoryDescriptor asked for a fixed DART offset, but fixed DART offsets are not supported on this device\n`
+- `%lldus AppleThunderboltHALType7(%d)::setupRegisterRanges - ERROR: register range %d not found.\n`
+- `device-id`
+- `%lldus AppleThunderboltNHI::lateSleepInternal - fStarted = %d fPoweredOff = %d fPMState = %d\n`
+- `site.AppleThunderboltNHITransmitRing`
+- `%lldus AppleThunderboltGenericHAL::free\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules EOF PDF - setting EOF to EOF index = 0x%llx - 0x%x\n`
+- `site.AppleThunderboltNHITransmitRingManagerType5`
+- `IOPCITunnelID`
+- `site.AppleThunderboltNHIDARTVMAllocator`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - enable = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - opening FW_READY took %lld milliseconds\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - ERROR: error suspending the PHY, status = 0x%08x, turn off\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::checkForCableStateChange - we're on, but the cable has been unplugged, turn off\n`
+- `%lldus AppleThunderboltHALGenericACIO::registerRead32 - offset = 0x%08x result = 0x%08x\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::submitCommandToNHI\n`
+- `site.AppleThunderboltNHITransmitRingType7`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - fEmbeddedCPUEnabled = %d\n`
+- `%lldus AppleThunderboltHALGenericACIO::free\n`
+- `AppleThunderboltNHIBufferMemoryBlock`
+- `%lldus AppleThunderboltNHITransmitRingManagerGenericACIO(%d)::allocateSharedBuffer - total_allocated = %d out of %d\n`
+- `%lldus AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::waitForRingDisableDone - took %lld microseconds - status = 0x%08x\n`
+- `22222223312322`
+- `%lldus AppleThunderboltGenericHAL::releaseHardware - messageClients kIOThunderboltMessageHardwareIsAvailable\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)<%d>::stop\n`
+- `site.AppleThunderboltNHITransmitRingManagerGenericACIO`
+- `AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::shouldDoubleBuffer - current frame (o=0x%x,l=0x%x) crosses a page boundary, buffer end offset 0x%x > page size 0x%x\n`
+- `AppleThunderboltNHIReceiveRingGenericACIO(%d)<%d>::shouldDoubleBuffer - current frame (o=0x%x,l=0x%x) not address aligned, offset = 0x%x\n`
+- `service-gates`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::ensurePowerDomainClientArrayCapacity - fPowerDomainClientArrayCapacity = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setupCableStateTracking - status = 0x%08x\n`
+- `Lane 1`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - ERROR: Failed to start embedded CPU.\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createPowerDomainClientArray - service-gates property not found.\n`
+- `23:20:01`
+- `%lldus AppleThunderboltGenericHAL::stop\n`
+- `%lldus AppleThunderboltNHI::message - kIOThunderboltMessageRequestingHardware\n`
+- `%lldus AppleThunderboltNHI::shutdown - skipped fStarted = %d fPoweredOff = %d\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::getCableState - data_status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - PHY is suspended, turn on\n`
+- `clock-gates`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::checkForCableStateChange - cable change in progress\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor - doubleBuffered = %d buffer_address = %llx segment_length = %lld frame_length = %lld\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::checkForCompletedDescriptors - complete command %p\n`
+- `12111222222112111122222211212`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::initWithNHI - hop id = %d\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)<%d>::start - ring table [0] 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO::setHWState - state = %d\n`
+- `IOPlatformWakeAction`
+- `%lldus AppleThunderboltHALGenericACIO::initializeMappers - ERROR: invalid SID partitioning scheme! fDartSIDPartitioning = %d\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::start - ring table [0] 0x%08x\n`
+- `%lldus AppleThunderboltNHITransmitRingManager::deallocateTransmitRing - deallocating Tx ring %p\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::writeNextdescriptor - desc[%d] 0x%08x 0x%08x 0x%08x 0x%08x, command = %p\n`
+- `AppleThunderboltNHITransmitRingManagerGenericACIO`
+- `%lldus AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::waitForRingDisableDone - data = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - fEmbeddedCPU->setPowerState(off) status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::applyTunables - \"%s\" - size %d != %lu, skipping tunable: offset = 0x%08x mask = 0x%08llx value=0x%08llx\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setARMIODevicePowerState - armio_device->enablePsdService( %d, %d, 0x%08x ) status=0x%08x failed\n`
+- `AppleThunderboltNHIGenericACIO::poweredStart() failed`
+- `%lldus AppleThunderboltHALGenericACIO::setupPowerManagement - status = 0x%x\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::stop\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor packet[%03d] = 0x%08x\n`
+- `site.AppleThunderboltNHITransmitRingManager`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::applyTunables - \"%s\" - data = %p\n`
+- `%lldus AppleThunderboltHALGenericACIO::finalize\n`
+- `site.AppleThunderboltNHITransmitRingGenericACIO`
+- `%lldus AppleThunderboltNHIDARTVMAllocator::vmAlloc - ERROR: failed to get VM space for allocation at page 0x%08x and DVA %p\n`
+- `%lldus AppleThunderboltNHI(%d)::poweredStart - status = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO::initializeMappers - ERROR: failed to set DART allocator for TX hop ID %d\n`
+- `AsymmetricModeSupportedBit`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor - frame (currentFrameListIndex=0x%x,fCurrentFrameListFrameIndex=0x%llx) frame_length=0x%x total command (o=0x%x,l=0x%x)\n`
+- `AppleThunderboltNHITransmitRingManagerType5`
+- `site.AppleThunderboltNHIGenericACIO`
+- `%lldus AppleThunderboltHALType5(%d)::setupRegisterRanges - found %d register spaces, staring iteration\n`
+- `site.AppleThunderboltNHIReceiveRingManager`
+- `AppleThunderboltNHIDARTVMAllocator.cpp`
+- `tbivc`
+- `%lldus AppleThunderboltGenericHAL::acquireHardware - no competition\n`
+- `%lldus AppleThunderboltGenericHAL::powerStateWillChangeTo - whatDevice = %p state = %d\n`
+- `site.AppleThunderboltNHITransmitRingType5`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::unpoweredStart - status = 0x%x\n`
+- `Gave up opening phy, owners [%s]`
+- `%lldus AppleThunderboltGenericHAL(%d)::start - status = 0x%x\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::free - hop id = %d\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::start - ring desc 0x%08x 0x%08x 0x%08x 0x%08x\n`
+- `%lldus AppleThunderboltHALType7(%d)::setupSRAMParityInterrupt\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - armio_device->enableDeviceClock(off,4) status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createPowerDomainClientArray - fClockGateCount = %d status = 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL::finalize\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::disableAllPowerDomains\n`
+- `%lldus AppleThunderboltHALGenericACIO::unpoweredStart - fDock = %p status = 0x%08x\n`
+- `site.TxElement`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules No Frame List EOF PDF - setting EOF to EOF - 0x%x\n`
+- `site.AppleThunderboltNHIMemoryBlock`
+- `%lldus AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::setSharedBufferAllocation - allocation = %d\n`
+- `Status`
+- `%lldus AppleThunderboltGenericHAL::acquireHardware - the hardware is ours.\n`
+- `%lldus AppleThunderboltGenericHAL::earlyWake - complete - took %d milliseconds\n`
+- `%lldus AppleThunderboltNHI::free\n`
+- `%lldus AppleThunderboltNHITransmitRingManager::allocateTransmitRing Flags: 0x%x\n`
+- `site.AppleThunderboltNHIReceiveRingManagerType7`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::writeNextDescriptor\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::ensurePowerDomainClientArrayCapacity - new_capacity = %d fPowerDomainClientArrayCapacity = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::writeToRange - address = 0x%llx, buffer = %p length = 0x%llx\n`
+- `%lldus AppleThunderboltGenericHAL::poweredStart\n`
+- `AppleThunderboltNHITransmitRing(%d)<%d>::shouldDoubleBuffer - WARNING - current frame (o=0x%x,l=0x%x) not physically contiguous, segment len 0x%x < physical segment 0x%x\n`
+- `%lldus AppleThunderboltNHIReceiveRingManager::handleInterrupt - interrupt for non-allocated RX ring %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::createPowerDomainClientArray\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::evaluatePowerDomains - return status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::loadFirmware - status = 0x%08x\n`
+- `site.AppleThunderboltNHIMemoryBlock *`
+- `interrupts`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::unpoweredStart - gpio-lstx property missing\n`
+- `IOHibernateState`
+- `%lldus AppleThunderboltNHI::wake\n`
+- `121111121222121211221111111111222122112222222211121111111111111111111111111111121211211121112111211121112111212111111111111111111111111212121`
+- `sat-dtf-trace-ring-index`
+- `%lldus AppleThunderboltNHITransmitRingManagerGenericACIO(%d)::allocateSharedBuffer - Tx 0: %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - PHY is already off\n`
+- `%lldus AppleThunderboltNHI::controllerIsQuiesced\n`
+- `%lldus AppleThunderboltHALGenericACIO::poweredStart - fDartSIDPartitioning = 0x%08x\n`
+- `tb_poll_interrupts`
+- `%lldus AppleThunderboltHALType5(%d)::setupRegisterRanges - ERROR: EDT found %d register spaces but only %d allocated\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::configure - set dedicated interrupt status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::start - ring table [0] 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setARMIODevicePowerState - armio_device->enablePsdService( %d, %d, 0x%08x ) status=0x%08x\n`
+- `vendor-id`
+- `tb`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::start\n`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::enableDART - enable DART\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::checkForCompletedDescriptors - desc[%d] 0x%08x 0x%08x 0x%08x 0x%08x, command = %p\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::writeNextDescriptor (1)\n`
+- `AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::shouldDoubleBuffer - current frame (o=0x%x,l=0x%x) not address aligned, offset = 0x%x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - (3) IOMappedWrite32( 0x%08llx, 0x%08x ) before = 0x%08x after 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO::earlySleep\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::hostDeviceConnect - connected = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::checkForCableStateChange - process unplug event\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMEarlySleepState\n`
+- `%lldus IOThunderboltTransmitQueue(%d)::submit packet[%03d] = 0x%02x%02x%02x\n`
+- `%lldus AppleThunderboltNHIDARTVMAllocator::init - IODARTVMAllocatorGeneric failed to initialize\n`
+- `1211111212221212112211111111112221221122222222111211111111111111111111111111111212112111211121112111211121112121111111111111111111111112121211`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - timed out opening phy, error 0x%08x checking cable connection, aborting\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - fEmbeddedCPU->setPowerState(on) status = 0x%08x\n`
+- `%s\n`
+- `function-dock_parent`
+- `%lldus AppleThunderboltNHIReceiveRingManagerGenericACIO(%d)::enableInterrupt - hopID = %d interrupt throttling rate = 0x%04x\n`
+- `site.AppleThunderboltNHIReceiveRingManagerType5`
+- `AppleThunderboltNHIMemoryBlock`
+- `%lldus AppleThunderboltNHITransmitRingManagerGenericACIO(%d)::enableInterrupt - hopID = %d interrupt throttling rate = 0x%04x\n`
+- `Lane 0`
+- `%lldus AppleThunderboltGenericHAL::releaseHardware - wakeup pending client\n`
+- `%lldus AppleThunderboltNHI::poweredStart - fTotalPaths = %d\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMPrePCIWakeState\n`
+- `%lldus %s function-exit_mode found.\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::getCableState - status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::evaluatePowerDomains\n`
+- `%lldus AppleThunderboltHALGenericACIO::enablePowerManagement - status = 0x%x\n`
+- `AppleThunderboltNHITransmitRing(%d)::writeNextdescriptor - ERROR - current frame (o=0x%x,l=0x%x) greater than command length (o=0x%x,l=0x%x)\n`
+- `%lldus AppleThunderboltNHIReceiveRingManager::enableInterrupt - mask quad = %d mask_bit = %d for hopID = %d\n`
+- `uint32_t log2i(uint32_t)`
+- `/Library/Caches/com.apple.xbs/AB76979E-E216-4029-9F29-4667DBC65AB9/TemporaryDirectory.yEhsoY/Sources/AppleThunderboltNHI/AppleThunderboltNHIDARTVMAllocator.cpp`
+- `%lldus AppleThunderboltNHI::shutdown\n`
+- `\"AppleThunderboltHALGenericACIO::determineSIDPartitioning() failed - Invalid ACIO IOMapper count %zu. Expected either a single mapper or %zu mappers for %zu NHI rings.\" @%s:%d`
+- `%lldus AppleThunderboltNHITransmitRingManagerGenericACIO(%d)::allocateSharedBuffer - WARNING: rings = %d min allocation = %d total allocation = %d\n`
+- `site.AppleThunderboltNHIReceiveRingGenericACIO`
+- `AppleThunderboltNHIType7`
+- `acioPortDisable`
+- `AppleT%dTypeCPhy`
+- `%lldus AppleThunderboltNHIGenericACIO::finalize\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::powerStateChangeDone - fAsleep = %d fPowerDownRequested = %d fExitPDModeRequested = %d fCurrentCableState->isConnected() = %d\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::start - not ready.\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor\n`
+- `%lldus AppleThunderboltNHITransmitRingManager(%d)::stopAll - ring %d stopped.\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setARMIODevicePowerState - ERROR: no armio_device. status=0x%08x\n`
+- `\"AppleThunderboltNHIGenericACIO(%d)::setARMIODevicePowerState - armio_device->enablePsdService( %d, %d, 0x%08x ) status=0x%08x failed\\n\" @%s:%d`
+- `%lldus AppleThunderboltNHI::sleep\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules Mid PDF - setting SOF to SOF index = 0x%llx - 0x%x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)<%d>::start - ring desc 0x%08x 0x%08x 0x%08x 0x%08x\n`
+- `AppleThunderboltNHITransmitRingGenericACIO.cpp`
+- `%lldus AppleThunderboltNHIDARTVMAllocator::vmAlloc - ERROR: IOMemoryDescriptor asked for a fixed DART offset but did not supply one via setContext\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - IOMappedWrite32( 0x%08llx, 0x1 ) before = 0x%08x after 0x%08x\n`
+- `%lldus AppleThunderboltNHI::pause\n`
+- `virtual IOReturn AppleThunderboltHALGenericACIO::unpoweredStart()`
+- `Force Unplug`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextdescriptor - desc[%d] 0x%08x 0x%08x 0x%08x 0x%08x, command = %p\n`
+- `site.AppleThunderboltNHISubMemoryBlock`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setARMIODevicePowerState - IOMappedWrite32( 0x%llx, 0x%08x ) before = 0x%08x after 0x%08x\n`
+- `hi_up_tx_data_fabric_tunables`
+- `Oct 13 2026`
+- `AppleThunderboltNHI`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::portChangeEvent - fPortEventCallback = %p fPortEventCallbackOwner = %p fEnabled = %d message=0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::waitForAppleHPMWake - fAppleHPMIsAsleep = %d\n`
+- `%lldus AppleThunderboltHALGenericACIO::registerRead32 - offset = 0x%08x\n`
+- `AppleThunderboltNHIReceiveRingGenericACIO.cpp`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - Current LSTX State = 0x%x set LSTX GPIO to output low\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::wake - waking after lateSleep, cable connected/powered on, run earlyWake\n`
+- `%lldus AppleThunderboltNHI::setupPowerManagement - status = 0x%08x\n`
+- `iommu-parent`
+- `12221212111`
+- `site.const IODART::capability_t`
+- `%lldus AppleThunderboltHALType7(%d)::setupRegisterRanges - ERROR: EDT found %d registers but only %d were mapped.\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::resolvePHandle - phandle_dictionary = %p status = 0x%08x\n`
+- `AppleTypeCPhy`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - ERROR: error turning off the PHY, status = 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL(%d)::start (build %s %s)\n`
+- `%lldus AppleThunderboltNHI::message - kThunderboltHALPMWakeState\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextdescriptor - command = %p, status = 0x%x\n`
+- `%lldus AppleThunderboltNHITransmitRingManager::allocateTransmitRing no service to query EDT properties, no streaming trace ring allocated\n`
+- `AppleThunderboltNHIReceiveRingManager`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setupEmbeddedCPU\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::powerStateChangeDone - A, C, E - fCableStateChangeInProgress = false\n`
+- `%lldus AppleThunderboltGenericHAL::acquireHardware - IOLockSleep\n`
+- `%lldus AppleThunderboltHALGenericACIO::poweredStart - status = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::registerRead32ForRange - range = %d offset = 0x%08x (0x%lx)\n`
+- `\"AppleThunderboltNHIGenericACIO::determineSIDPartitioning() failed: caller passed null provider.\" @%s:%d`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::start - hop id = %d\n`
+- `%lldus AppleThunderboltNHIReceiveRing<%p>::checkForCompletedDescriptors packet[%03d] = 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL::lateSleep - complete - took %d milliseconds\n`
+- `%lldus AppleThunderboltHALGenericACIO::registerWrite16 - offset = 0x%08x data = 0x%04x\n`
+- `%lldus AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::initWithNHI\n`
+- `AppleThunderboltNHIDARTVMAllocator`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - timed out waiting for FW READY after %lld milliseconds\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::powerDomainShouldBeEnabled - domain = %d enable = %d\n`
+- `%lldus AppleThunderboltGenericHAL::releaseHardware + client = %p\n`
+- `message`
+- `%lldus writeConsumerIndex(%d)::writeConsumerIndex - updated consumer index to %d on rx hop id %d\n`
+- `Client`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::applyTunables - \"%s\" - applying tunable: offset = 0x%08x mask = 0x%08llx value=0x%08llx - 0x%08x -> 0x%08x\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor - FrameList cache lookup: listIdx=%u frameIdx=%u cache_hit=%d\n`
+- `%lldus AppleThunderboltNHITransmitRingManagerGenericACIO(%d)::allocateSharedBuffer - Tx 0: %d Tx 1-%d: %d Tx %d-%d: %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - (1) IOMappedWrite32( 0x%08llx, 0x%08x ) before = 0x%08x after 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - setARMIODevicePowerState(off, ATC_CIO) status = 0x%08x\n`
+- `tblog`
+- `%lldus AppleThunderboltNHI::prePCIWake\n`
+- `1`
+- `%lldus AppleThunderboltNHIReceiveRingGenericACIO(%d)<%d>::waitForRingDisableDone - took %lld microseconds - status = 0x%08x\n`
+- `tb_hi_ring_mask`
+- `hi_dn_merge_fabric_tunables`
+- `%lldus AppleThunderboltGenericHAL::setPowerState - fPMCallback = %p fPMCallbackOwner = %p\n`
+- `%lldus AppleThunderboltNHI(%d)::processWake - poweredStart returned 0x%08x\n`
+- `function-dart_force_active`
+- `site.AppleThunderboltNHIReceiveRing`
+- `site.AppleThunderboltNHIReceiveRingType7`
+- `AppleThunderboltNHITransmitRingType5`
+- `lbw_fabric_tunables`
+- `%lldus AppleThunderboltGenericHAL::earlyWake - fPMCallback = %p fPMCallbackOwner = %p\n`
+- `%lldus AppleThunderboltNHI::deallocateReceiveRing\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createPowerDomainClientArray - fServiceGateCount = %d status = 0x%08x\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - state = 0x%08x\n`
+- `AppleThunderboltNHIGenericACIO.cpp`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)<%d>::shutdown\n`
+- `acio`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::resolvePHandle - found_service = %p status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::processWake - poweredStart returned 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL::forcePowerState - powerOverrideOffPriv status = 0x%08x\n`
+- `AppleThunderboltNHIType5`
+- `AppleThunderboltNHIReceiveRingManagerType5`
+- `AAPL,phandle`
+- `%lldus AppleThunderboltGenericHAL::start\n`
+- `%lldus AppleThunderboltGenericHAL::releaseHardware -\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMDozeState\n`
+- `%lldus %s: function-exit_mode is missing.\n`
+- `%lldus AppleThunderboltNHIReceiveRingType5(%d)<%d>::setPDFBitmasks - HI Port PDF Bitmask 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO::shutdown\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setDevicesConnectedState - in_use = %d, found_devices = %d\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::registerWrite32ForRange - range = %d offset = 0x%08x (0x%lx) data = 0x%08x\n`
+- `%lldus ApppleThunderboltNHIReceiveRing(%d)::writeNextDescriptor - command = %p, status = 0x%x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::checkForCompletedDescriptors - details = 0x%08x sof = 0x%x eof = 0x%x complete command %p\n`
+- `tbdebug`
+- `AppleThunderboltNHIReceiveRing(%d)::writeNextdescriptor - ERROR - current frame (o=0x%x,l=0x%llx) greater than descriptor length 0x%x\n`
+- `%lldus AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::free\n`
+- `%lldus AppleThunderboltNHIReceiveRingManagerGenericACIO(%d)::enableInterrupt - hopID = %d enable = %d\n`
+- `AppleThunderboltNHIReceiveRingGenericACIO(%d)<%d>::shouldDoubleBuffer - current frame (o=0x%x,l=0x%x) smaller than receive frame, segment len 0x%x < frame len 0x%x\n`
+- `%lldus AppleThunderboltHALType7(%d)::setupRegisterRanges - found %d register spaces, staring iteration\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - PHY is on\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - (2) IOMappedWrite32( 0x%08llx, 0x%08x ) before = 0x%08x after 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL::prePCIWake - state = 0x%08x\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::checkForCompletedDescriptors - prod = %d comp = %d\n`
+- `%lldus AppleThunderboltNHIReceiveRingGenericACIO(%d)<%d>::waitForRingDisableDone - data = 0x%08x\n`
+- `121111111122222`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setupEmbeddedCPU - fEmbeddedCPU not found!\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::poweredStart() failed - status = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO::handleDedicatedInterrupt - src %p index = %d fDedicatedInterruptCallback = %p fDedicatedInterruptCallbackOwner = %p\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules No Frame List  Mid PDF - setting SOF to MidSOF - 0x%x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)<%d>::start - always double buffer mode enabled.\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::evaluatePowerDomains - fAllPowerDomainsDisabled = %d domain = %d enable = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::requestExitPDMode - fExitPDModeRequested = %d fExitPDModeFlags = 0x%08x\n`
+- `\"%s\" @%s:%d`
+- `%lldus AppleThunderboltHALGenericACIO::registerRead8 - offset = 0x%08x result = 0x%02x\n`
+- `enabled-ring-mask`
+- `%lldus AppleThunderboltHALGenericACIO::start - return status = 0x%x\n`
+- `ForceUpdateMode`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::configure - create soft interrupt for requesting more work status = 0x%08x\n`
+- `None`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - fPHYInterface not found!\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - PHY is on, turn off\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::destroyEmbeddedCPU\n`
+- `fw_int_ctl_management_tunables`
+- `Statistics`
+- `%lldus AppleThunderboltHALGenericACIO::stopInterruptPollTimer\n`
+- `AppleThunderboltNHITransmitRing(%d)<%d>::shouldDoubleBuffer - WARNING - current frame (o=0x%x,l=0x%x) crosses a page boundary, buffer end offset 0x%x > page size 0x%x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - ERROR: error turning on the PHY, status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::removePowerDomainClient - owner = %p domain = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setARMIODevicePowerState - armio_device->setDevicePowerState( %d, %d ) status=0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::unpoweredStart - status = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO::setupDARTAllocator - ERROR: failed to set DARTVMAllocator\n`
+- `\"AppleThunderboltNHIGenericACIO::determineSIDPartitioning() failed: HAL provider (%s) Missing iommu-parent in device tree\" @%s:%d`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::writeNextDescriptor (2)\n`
+- `%lldus AppleThunderboltNHIDARTVMAllocator::vmAlloc - ERROR: requested DVA %p not between minDVA %p and maxDVA %p\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::resolvePHandle - phandle_key = %p\n`
+- `%lldus AppleThunderboltGenericHAL::forcePowerState - powerOverrideOnPriv status = 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL<%p>::callPlatformFunction - early wake done\n`
+- `%lldus AppleThunderboltGenericHAL::systemWillShutdown - kIOMessageSystemWillPowerOff\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMSleepState\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::setupRegisterRanges - register range %d not found.\n`
+- `%lldus AppleThunderboltHALGenericACIO::destroyPowerManagement\n`
+- `%lldus AppleThunderboltNHITransmitRingManager::enableInterrupt - write mask = 0x%08x\n`
+- `tbips`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::resolvePHandle - matching_dictionary = %p\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::createPowerDomainClientArray - return status = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO::initializeMappers - done, status = 0x%08x, alignment = 0x%x\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules EOF PDF - setting EOF to Mid EOF index = 0x%llx - 0x%x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::unpoweredStart - fChipType = %d\n`
+- `AppleThunderboltHALGenericACIO`
+- `%lldus AppleThunderboltNHITransmitRingManagerGenericACIO(%d)::enableInterrupt - hopID = %d enable = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setupPHY\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setupEmbeddedCPU - fEmbeddedCPU = %p name = %s\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createPowerDomainClientArray - service-gates length = %d.\n`
+- `%lldus AppleThunderboltGenericHAL::forcePowerState - changePowerStateToPriv(%d) status = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::setWorkLoopForInterrupt - switching int %d to dedicated workloop.\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)<%d>::start - 20%% random double buffer mode enabled.\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules setMidPDFRules details - 0x%x\n`
+- `%lldus AppleThunderboltNHIReceiveRingManager::enableInterrupt - hopID = %d enable = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::addPowerDomainClient - owner = %p domain = %d\n`
+- `AppleThunderboltGenericHAL::lateSleep - complete - took %d milliseconds\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::registerRead32ForRange - range = %d offset = 0x%08x (0x%lx) result = 0x%08x\n`
+- `%lldus AppleThunderboltNHIReceiveRing<%p>::checkForCompletedDescriptors packet[%03d] (swapped) = 0x%08x\n`
+- `12112112`
+- `%lldus AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::configureSharedBuffer - value = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::resolvePHandle - target = %p key = %s\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::checkForCableStateChange - enumerator idle - nothing to do\n`
+- `%lldus AppleThunderboltNHITransmitRingManager::handleInterrupt - interrupt for non-allocated TX ring %d\n`
+- `AppleThunderboltNHIReceiveRingType7`
+- `%lldus AppleThunderboltGenericHAL::earlySleep - state = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO::createDeviceMemoryForRange - memory = %p, status = 0x%08x\n`
+- `AppleThunderboltHALGenericACIO.cpp`
+- `AppleThunderboltHALType5`
+- `1222`
+- `AppleThunderboltNHIReceiveRing(%d)<%d>::shouldDoubleBuffer - WARNING - current frame (o=0x%x,l=0x%x) not physically contiguous, segment len 0x%x < physical segment 0x%x\n`
+- `\"REQUIRE fail: %s @ %s:%u:%s: \" @%s:%d`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::poweredStart\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setARMIODevicePowerState - state = %d index = %d\n`
+- `top_tunables`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::getCableState - ERROR: could not resolve cable state\n`
+- `\"AppleThunderboltNHIDARTVMAllocator::init - slide cannot be non-zero (found %d)\" @%s:%d`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - timed out opening phy, cable not connected, aborting\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - USB4+ connection, skipping FW Ready delay\n`
+- `%lldus AppleThunderboltNHI::allocateTransmitRing\n`
+- `%lldus %s: function-dart_force_active is missing.\n`
+- `%lldus AppleThunderboltNHITransmitRingManager::enableInterrupt - read mask = 0x%08x\n`
+- `site.AppleThunderboltNHIReceiveRingManagerGenericACIO`
+- `%lldus AppleThunderboltGenericHAL::acquireHardware - status = 0x%x\n`
+- `%lldus AppleThunderboltNHITransmitRingManager::enableInterrupt - mask quad = %d mask_bit = %d for hopID = %d\n`
+- `AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::shouldDoubleBuffer - current frame (o=0x%x,l=0x%x) not physically contiguous, segment len 0x%x < frame_length 0x%x\n`
+- `%lldus AppleThunderboltNHIDARTVMAllocator::forMapper\n`
+- `chip-type`
+- `site.AppleThunderboltGenericHAL`
+- `%lldus AppleThunderboltNHI::message - kIOThunderboltMessageHardwareAvailable\n`
+- `%lldus AppleThunderboltHALGenericACIO::unpoweredStart - fPortChangeNotifier = %p status = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO::destroyRegisterRanges - finished iteration\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::powerDomainShouldBeEnabled\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::sleep - sleeping with the cable is connected, run lateSleep\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::checkForCableStateChange - we're off, but cable is connected, turn on\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::getCableState - resolve cable state took - timeTaken = %llu ns start = %llu ns deadline = %llu ns now = %llu ns status = 0x%08x\n`
+- `rid`
+- `%lldus AppleThunderboltHALGenericACIO::unpoweredStart - bootargs: acio = 0x%08x, tb_poll_interrupts = %d\n`
+- `%lldus AppleThunderboltNHITransmitRingManagerGenericACIO(%d)::enableInterrupt - write kRegisterInterruptStatusMask0 mask = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::poweredStart - status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createPowerDomainClientArray - power-gates property found.\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setARMIODevicePowerState - return status=0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::loadFirmware\n`
+- `%lldus AppleThunderboltNHI::allocateReceiveRing\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMShutdownState\n`
+- `%lldus AppleThunderboltNHIReceiveRingManager::allocateReceiveRing Flags: 0x%x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - timed out opening phy, cable connected, retrying\n`
+- `\"AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::shouldDoubleBuffer - \" \"double buffering detected (o=0x%x, l=0x%x, seg=0x%llx)\\n\" @%s:%d`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules Mid PDF - setting SOF to MidSOF index = 0x%llx - 0x%x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setupPHY - fPHYInterface = %p\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::wake\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::checkForCableStateChange\n`
+- `%lldus AppleThunderboltNHIDARTVMAllocator::vmAlloc - ERROR: cannot make requested allocation at 0x%08x/%d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - opening phy took %d milliseconds\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::checkForCableStateChange - cable change deferred due to sleep\n`
+- `%lldus AppleThunderboltGenericHAL::start - enablePowerManagement\n`
+- `%lldus AppleThunderboltHALGenericACIO::unpoweredStart - dock_parent_function = %p status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::unpoweredStart - fLSTXGPIODevice = %p status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - PHY is already suspended\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - setARMIODevicePowerState(on, ATC_CIO) status = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::unpoweredStart - couldn't resolve dock_parent.\n`
+- `%lldus AppleThunderboltHALGenericACIO::setupDARTAllocator - ERROR null mapper passed\n`
+- `%lldus AppleThunderboltHALGenericACIO::initializeMappers - ERROR: failed to create TX mapper for hopID %d, index %d!\n`
+- `%lldus AppleThunderboltNHIReceiveRingManager::enableInterrupt - write mask = 0x%08x\n`
+- `AppleThunderboltNHIReceiveRing(%d)::writeNextDescriptor - ERROR - current frame (o=0x%x,l=0x%llx) greater than command length (o=0x%x,l=0x%x)\n`
+- `acio-cpu`
+- `%lldus AppleThunderboltNHI::setDevicesConnectedState - in_use = %d, found_devices = %d\n`
+- `Plug Event Count`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::getCableState - is_active = %d cable_gen = 0x%x cio_gen = 0x%x dpod = %d orientation = %d\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor packet[%03d] (swapped) = 0x%08x\n`
+- `%lldus ApppleThunderboltNHITransmitRing(%d)::writeProducerIndexInternal - updated producer index to %d on tx hop id %d\n`
+- `%lldus AppleThunderboltNHIDARTVMAllocator::init - IODARTVMAllocatorGeneric could not fetch DART capability\n`
+- `site.AppleThunderboltHALType7`
+- `%lldus AppleThunderboltNHIGenericACIO::lateShutdownInternal - fStarted = %d fPoweredOff = %d fPMState = %d\n`
+- `%lldus AppleThunderboltNHI::start\n`
+- `site.AppleThunderboltHALGenericACIO`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::enableDART - disable DART\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::configure - create soft interrupt status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)<%d>::start\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createPowerDomainClientArray - fPowerGateCount = %d status = 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL::forcePowerState - powerOverrideOffPriv\n`
+- `%lldus AppleThunderboltNHIReceiveRingManager::handleDedicatedInterrupt - interrupt for non-allocated RX ring %d\n`
+- `atc-phy-parent`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::enableDART - bypass DART\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::shutdown\n`
+- `AppleThunderboltNHIReceiveRingManagerType7`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::setPDFBitmasks - ring table [1] 0x%08x\n`
+- `AppleThunderboltNHIReceiveRingGenericACIO`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::processWake - ignoring unsolicited power up request\n`
+- `%lldus AppleThunderboltNHIType5(%d)::wake - PHY is waking from hibernate, turn off\n`
+- `AppleThunderboltGenericHAL::earlyWake - complete - took %d milliseconds\n`
+- `%lldus AppleThunderboltHALGenericACIO::registerRead16 - offset = 0x%08x result = 0x%04x\n`
+- `AppleThunderboltNHISubMemoryBlock`
+- `IOSlaveProcessor`
+- `%lldus AppleThunderboltNHI::lateSleep\n`
+- `AppleThunderboltNHITransmitRingManager`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::free\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::unpoweredStart - %s: %p\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setupEmbeddedCPU - fEmbeddedCPU = %p\n`
+- `ForceCIOTeardown`
+- `The range of valid memory is too large to be represented by this type, or [begin, end) is not a well-formed range`
+- `site.AppleThunderboltNHIBufferMemoryBlock`
+- `%lldus AppleThunderboltNHIDARTVMAllocator::vmAlloc - ERROR: tailPadding %d not supported when allocating at a specific offset\n`
+- `%lldus AppleThunderboltGenericHAL::acquireHardware + client = %p\n`
+- `AppleThunderboltNHITransmitRing(%d)<%d>::shouldDoubleBuffer - WARNING - current frame (o=0x%x,l=0x%x) not DWORD aligned, offset = 0x%x\n`
+- `%lldus ApppleThunderboltNHIReceiveRing(%d)::checkForCompletedDescriptors - cons = %d comp = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO::earlyWake\n`
+- `AppleThunderboltGenericHAL.cpp`
+- `%lldus AppleThunderboltHALGenericACIO::createDeviceMemoryForRange - range = %d offset = 0x%llx length = 0x%llx\n`
+- `%lldus AppleThunderboltHALGenericACIO::registerWrite8 - offset = 0x%08x data = 0x%02x\n`
+- `%lldus AppleThunderboltNHIReceiveRingManager::allocateReceiveRing new ring (index from EDT: %u) allocated at 0x%p\n`
+- `%lldus AppleThunderboltNHIReceiveRing<%p>::checkForCompletedDescriptors - queue type = %d, hop id = %d pdf = %d length = %lld\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - PHY is off, can't suspend\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - PHY is suspended, turn off\n`
+- `%s - status = 0x%08x`
+- `%lldus %s function-dart_force_active found.\n`
+- `%lldus AppleThunderboltGenericHAL::forcePowerState - state = %lu\n`
+- `%lldus AppleThunderboltGenericHAL::setPowerState - state = %ld\n`
+- `121112222221121111222222112`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor - queue type = %d, hop id = %d pdf = %d length = %lld\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::submitCommandToNHI\n`
+- `acio_bringup`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - PHY is off, turn on\n`
+- `site.AppleThunderboltNHI`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::portChangeEvent\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::configure - create soft interrupt status = 0x%08x\n`
+- `\"AppleThunderboltHALType7(%d)::handleSRAMParityInterrupt - SRAM parity error detected\\n\" @%s:%d`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - CPU already enabled.\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - ERROR: Failed to stop embedded CPU.\n`
+- `state`
+- `%lldus AppleThunderboltHALGenericACIO::initializeMappers\n`
+- `%lldus AppleThunderboltHALGenericACIO::initializeMappers - ERROR: failed to set DART allocator for RX hop ID %d\n`
+- `%lldus AppleThunderboltHALGenericACIO::startInterruptPollTimer\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - PHY is on, suspend\n`
+- `%lldus AppleThunderboltHALGenericACIO::poweredStart\n`
+- `\"AppleThunderboltNHIGenericACIO::determineSIDPartitioning() failed: Invalid ACIO mapper in device tree. iommu-parent '%s' was of type '%s', not IOMapper or OSData.\" @%s:%d`
+- `AppleThunderboltNHIReceiveRing`
+- `%lldus AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::createDoubleBuffers - failed to create sub block\n`
+- `%lldus AppleThunderboltNHIReceiveRingGenericACIO(%d)<%d>::free\n`
+
+**[__TEXT.__os_log]**
+
+- `%lldus AppleThunderboltNHIDARTVMAllocator::init - IODARTVMAllocatorGeneric failed to initialize\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::destroyEmbeddedCPU\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - setARMIODevicePowerState(on, ATC_CIO) status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createPowerDomainClientArray - fPowerGateCount = %d status = 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL::releaseHardware + client = %p\n`
+- `%lldus AppleThunderboltNHI::deallocateTransmitRing\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMShutdownState\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules No Frame List Mid PDF - setting SOF to SOF - 0x%x\n`
+- `%lldus AppleThunderboltNHITransmitRingManagerGenericACIO(%d)::enableInterrupt - hopID = %d interrupt throttling rate = 0x%04x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - opening FW_READY took %lld milliseconds\n`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::enableDART - enable DART\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor packet[%03d] = 0x%08x\n`
+- `%lldus AppleThunderboltNHITransmitRingManager::handleInterrupt - interrupt for non-allocated TX ring %d\n`
+- `%lldus AppleThunderboltNHIReceiveRingManagerGenericACIO(%d)::enableInterrupt - write kRegisterInterruptStatusMask0 mask = 0x%08x\n`
+- `%lldus AppleThunderboltNHI::resetNHI\n`
+- `%lldus AppleThunderboltHALGenericACIO::free\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::loadFirmware\n`
+- `%lldus AppleThunderboltNHI::start\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor packet[%03d] (swapped) = 0x%08x\n`
+- `%lldus AppleThunderboltNHITransmitRingManager::enableInterrupt - write mask = 0x%08x\n`
+- `%lldus AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::waitForRingDisableDone - data = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::unpoweredStart - fLSTXGPIODevice = %p status = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createPowerDomainClientArray - fClockGateCount = %d status = 0x%08x\n`
+- `%lldus AppleThunderboltNHI::poweredStart - fTotalPaths = %d\n`
+- `%lldus AppleThunderboltHALGenericACIO::enablePowerManagement - status = 0x%x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::publishTunables\n`
+- `%lldus AppleThunderboltHALGenericACIO::poweredStart - fInterruptEventSource[%d] = %p\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::applyTunables - \"%s\" - tunable_data_length %d, entry size = %lu, tunable_entry_count %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO::shutdown\n`
+- `%lldus AppleThunderboltHALGenericACIO::initializeMappers - done, status = 0x%08x, alignment = 0x%x\n`
+- `%lldus AppleThunderboltHALGenericACIO::registerRead16 - offset = 0x%08x result = 0x%04x\n`
+- `%lldus AppleThunderboltHALGenericACIO::registerRead8 - offset = 0x%08x result = 0x%02x\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::checkForCompletedDescriptors - prod = %d comp = %d\n`
+- `%lldus AppleThunderboltNHITransmitRingManagerGenericACIO(%d)::enableInterrupt - write kRegisterInterruptStatusMask0 mask = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - enable = %d\n`
+- `%lldus AppleThunderboltGenericHAL(%d)::setupPowerManagement - status = 0x%x\n`
+- `%lldus AppleThunderboltNHI::allocateReceiveRing\n`
+- `%lldus AppleThunderboltNHI::deallocateReceiveRing\n`
+- `%lldus AppleThunderboltNHI::earlyWake\n`
+- `%lldus AppleThunderboltHALGenericACIO::destroyPowerManagement\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)<%d>::start\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::checkForCompletedDescriptors - details = 0x%08x sof = 0x%x eof = 0x%x complete command %p\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::powerDomainShouldBeEnabled - domain = %d enable = %d\n`
+- `%lldus AppleThunderboltGenericHAL::enablePowerManagement - status = 0x%x\n`
+- `%lldus AppleThunderboltGenericHAL::lateSleep - state = 0x%08x\n`
+- `%lldus AppleThunderboltNHI::free\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::submitCommandToNHI\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor - FrameList cache lookup: listIdx=%u frameIdx=%u cache_hit=%d\n`
+- `%lldus AppleThunderboltNHIReceiveRingGenericACIO(%d)<%d>::waitForRingDisableDone - took %lld microseconds - status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::evaluatePowerDomains - fAllPowerDomainsDisabled = %d domain = %d enable = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::doze - sleeping with the cable is connected, run lateSleep\n`
+- `%lldus AppleThunderboltNHIGenericACIO::lateShutdownInternal - fStarted = %d fPoweredOff = %d fPMState = %d\n`
+- `%lldus AppleThunderboltGenericHAL::acquireHardware - IOLockSleep\n`
+- `%lldus AppleThunderboltNHI::shutdown\n`
+- `%lldus AppleThunderboltNHITransmitRingManager::deallocateTransmitRing - deallocating Tx ring %p\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setARMIODevicePowerState - state = %d index = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::powerDomainShouldBeEnabled - disable domain = %d\n`
+- `%lldus AppleThunderboltGenericHAL::forcePowerState - powerOverrideOnPriv\n`
+- `%lldus AppleThunderboltNHI::message - kThunderboltHALPMWakeState\n`
+- `%lldus AppleThunderboltNHI::setDevicesConnectedState - in_use = %d, found_devices = %d\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::writeNextDescriptor\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::checkForCompletedDescriptors - desc[%d] 0x%08x 0x%08x 0x%08x 0x%08x, command = %p\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setARMIODevicePowerState - return status=0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL::free\n`
+- `%lldus AppleThunderboltGenericHAL::forcePowerState - changePowerStateToPriv(%d) status = 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL::prePCIWake - fPMCallback = %p fPMCallbackOwner = %p\n`
+- `%lldus AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::setSharedBufferAllocation - allocation = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setupEmbeddedCPU\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor - frame (o=0x%llx,l=0x%llx) total command (o=0x%llx,l=0x%llx)\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::applyTunables - ERROR: \"%s\" - length %d not a multiple of entry size %lu\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::loadFirmware - status = 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL::stop\n`
+- `%lldus AppleThunderboltGenericHAL(%d)<%p>::processSetPMState -  dispatchAsync( processSetPMState)\n`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::portChangeNotification - message = 0x%08x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::writeNextDescriptor (1)\n`
+- `%lldus AppleThunderboltNHIReceiveRingManagerGenericACIO(%d)::enableInterrupt - hopID = %d enable = %d\n`
+- `%lldus AppleThunderboltGenericHAL::enableDeepSleep - enable deep sleep - kIOPMDriverAssertionLevelOff\n`
+- `%lldus %s: function-dart_force_active is missing.\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::powerStateChangeDone - fAsleep = %d fPowerDownRequested = %d fExitPDModeRequested = %d fCurrentCableState->isConnected() = %d\n`
+- `%lldus AppleThunderboltGenericHAL::forcePowerState - powerOverrideOnPriv status = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO::registerRead32 - offset = 0x%08x result = 0x%08x\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::initWithNHI - hop id = %d\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextdescriptor - command = %p, status = 0x%x\n`
+- `%lldus AppleThunderboltNHIGenericACIO::lateSleep\n`
+- `%lldus AppleThunderboltNHI::earlyWakeInternal - fStarted = %d fPMState = %d\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules Mid PDF - setting SOF to MidSOF index = 0x%llx - 0x%x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::free\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)<%d>::start - ring desc 0x%08x 0x%08x 0x%08x 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO::setHWState - state = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::removePowerDomainClient - owner = %p domain = %d\n`
+- `%lldus AppleThunderboltGenericHAL::poweredStart\n`
+- `%lldus AppleThunderboltGenericHAL<%p>::callPlatformFunction - early wake done\n`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::portChangeEvent - fPortEventCallback = %p fPortEventCallbackOwner = %p fEnabled = %d message=0x%08x\n`
+- `%lldus AppleThunderboltNHIReceiveRingManager::handleDedicatedInterrupt - interrupt for non-allocated RX ring %d\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMSleepState\n`
+- `%lldus AppleThunderboltHALGenericACIO::start - return status = 0x%x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::setPDFBitmasks - ring table [1] 0x%08x\n`
+- `%lldus AppleThunderboltNHITransmitRingManagerGenericACIO(%d)::allocateSharedBuffer - Tx 0: %d Tx 1-%d: %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO::earlyWakeInternal\n`
+- `%lldus AppleThunderboltHALGenericACIO::registerWrite16 - offset = 0x%08x data = 0x%04x\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::registerWrite32ForRange - range = %d offset = 0x%08x (0x%lx) data = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO::finalize\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createPowerDomainClientArray - byte_length = %d status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::checkForCableStateChange - cable change deferred due to sleep\n`
+- `%lldus AppleThunderboltNHI::allocateTransmitRing\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMLateSleepState\n`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::portChangeNotification - ERROR - couldn't schedule port change event on queue! tmp_status = 0x%08x\n`
+- `%lldus ApppleThunderboltNHITransmitRing(%d)::writeProducerIndexInternal - updated producer index to %d on tx hop id %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setupEmbeddedCPU - fEmbeddedCPU = %p\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::processWake - poweredStart returned 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::destroyCableStateTracking\n`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::enableDART - enable = %d fDARTEnabled = %d\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules No Frame List  Mid PDF - setting SOF to MidSOF - 0x%x\n`
+- `%lldus AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::configureSharedBuffer - value = 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL::poweredStart - status = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::start\n`
+- `%lldus AppleThunderboltHALGenericACIO::unpoweredStart - fDock = %p status = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::setupRegisterRanges - register range %d not found.\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules Mid PDF - setting SOF to SOF index = 0x%llx - 0x%x\n`
+- `%lldus IOThunderboltTransmitQueue(%d)::submit packet[%03d] = 0x%02x%02x%02x\n`
+- `%lldus ApppleThunderboltNHIReceiveRing(%d)::checkForCompletedDescriptors - cons = %d comp = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - armio_device->enableDeviceClock(on,4) status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::applyTunables - \"%s\" - size %d != %lu, skipping tunable: offset = 0x%08x mask = 0x%08llx value=0x%08llx\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::createPowerDomainClientArray - return status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::evaluatePowerDomains\n`
+- `%lldus AppleThunderboltGenericHAL::start - enablePowerManagement\n`
+- `%lldus AppleThunderboltGenericHAL::setPowerState - fPMCallback = %p fPMCallbackOwner = %p\n`
+- `%lldus AppleThunderboltHALGenericACIO::unpoweredStart - dock_parent_function = %p status = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::registerRead32ForRange - range = %d offset = 0x%08x (0x%lx) result = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO::poweredStart\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::start - ring table [0] 0x%08x\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::shutdown\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::start - ring table [0] 0x%08x\n`
+- `%lldus writeConsumerIndex(%d)::writeConsumerIndex - updated consumer index to %d on rx hop id %d\n`
+- `%lldus AppleThunderboltNHITransmitRingManagerGenericACIO(%d)::allocateSharedBuffer - Tx 0: %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setARMIODevicePowerState - armio_device->setDevicePowerState( %d, %d )\n`
+- `%lldus AppleThunderboltNHI::finalize\n`
+- `%lldus AppleThunderboltNHI::lateSleep\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::stop\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::submitCommandToNHI\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - armio_device->enableDeviceClock(off,4) status = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO::unpoweredStart - bootargs: acio = 0x%08x, tb_poll_interrupts = %d\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextdescriptor - desc[%d] 0x%08x 0x%08x 0x%08x 0x%08x, command = %p\n`
+- `%lldus AppleThunderboltNHIReceiveRingGenericACIO(%d)<%d>::free\n`
+- `%lldus AppleThunderboltNHIDARTVMAllocator::init\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createPowerDomainClientArray - clock-gates property found.\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::powerDomainShouldBeEnabled - enable domain = %d\n`
+- `%lldus AppleThunderboltGenericHAL::systemWillShutdown - kIOMessageSystemWillRestart\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::getCableState - is_active = %d cable_gen = 0x%x cio_gen = 0x%x dpod = %d orientation = %d\n`
+- `%lldus AppleThunderboltNHITransmitRingManager::enableInterrupt - read mask = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::resolvePHandle - found_service = %p status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setARMIODevicePowerState - armio_device->setDevicePowerState( %d, %d ) status=0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::wake\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::writeToRange - address = 0x%llx, buffer = %p length = 0x%llx\n`
+- `%lldus AppleThunderboltGenericHAL::releaseHardware -\n`
+- `%lldus AppleThunderboltGenericHAL::enableDeepSleep - disable deep sleep - kIOPMDriverAssertionLevelOn\n`
+- `%lldus AppleThunderboltGenericHAL::earlySleep - state = 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL::lateSleep - fPMCallback = %p fPMCallbackOwner = %p\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::unpoweredStart - fChipType = %d\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createPowerDomainClientArray - service-gates property not found.\n`
+- `%lldus AppleThunderboltHALGenericACIO::destroyRegisterRanges - finished iteration\n`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::enableDART - disable DART\n`
+- `%lldus AppleThunderboltNHI::pause\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::registerRead32ForRange - range = %d offset = 0x%08x (0x%lx)\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules EOF PDF - setting EOF to Mid EOF index = 0x%llx - 0x%x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)<%d>::start - ring table [0] 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::resolvePHandle - phandle_object = %p\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::hostDeviceConnect - connected = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::checkForCableStateChange - enumerator busy - nothing to do\n`
+- `%lldus AppleThunderboltGenericHAL::finalize\n`
+- `%lldus AppleThunderboltGenericHAL::earlyWake - fPMCallback = %p fPMCallbackOwner = %p\n`
+- `%lldus AppleThunderboltNHI::message - kIOThunderboltMessageHardwareAvailable\n`
+- `%lldus ApppleThunderboltNHIReceiveRing(%d)::writeNextDescriptor - command = %p, status = 0x%x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::checkForCompletedDescriptors - unbounce - offset = %lld, length = %lld, double_buffer = %p\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMWakeState\n`
+- `%lldus AppleThunderboltNHI::shutdown - skipped fStarted = %d fPoweredOff = %d\n`
+- `%lldus AppleThunderboltNHIReceiveRingManager::handleInterrupt - interrupt for non-allocated RX ring %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::applyTunables - \"%s\" - data = %p\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::ensurePowerDomainClientArrayCapacity - new_capacity = %d fPowerDomainClientArrayCapacity = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::checkForCableStateChange - enumerator idle - nothing to do\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor\n`
+- `%lldus AppleThunderboltNHIReceiveRing<%p>::checkForCompletedDescriptors packet[%03d] = 0x%08x\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createPowerDomainClientArray - power-gates property found.\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::requestExitPDMode - fExitPDModeRequested = %d fExitPDModeFlags = 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL::powerStateWillChangeTo - whatDevice = %p state = %d\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::start - hop id = %d\n`
+- `%lldus AppleThunderboltNHITransmitRingManager::handleDedicatedInterrupt - interrupt for non-allocated TX ring %d\n`
+- `%lldus AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::initWithNHI\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::ensurePowerDomainClientArrayCapacity - fPowerDomainClientArrayCapacity = %d\n`
+- `%lldus AppleThunderboltGenericHAL::releaseHardware - messageClients kIOThunderboltMessageHardwareIsAvailable\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMDozeState\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::getCableState - data_status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIDARTVMAllocator::init - IODARTVMAllocatorGeneric could not fetch DART capability\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setPhyState - state = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::applyTunables - \"%s\" - applying tunable: offset = 0x%08x mask = 0x%08llx value=0x%08llx - 0x%08x -> 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::addPowerDomainClient - owner = %p domain = %d\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::unconfigure - fOwner = %p, fSoftInterruptEventSource = %p\n`
+- `%lldus AppleThunderboltNHIReceiveRingManagerGenericACIO(%d)::enableInterrupt - hopID = %d interrupt throttling rate = 0x%04x\n`
+- `%lldus AppleThunderboltNHIGenericACIO::start - status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::evaluatePowerDomains - return status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setARMIODevicePowerState - armio_device->enablePsdService( %d, %d, 0x%08x ) status=0x%08x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)<%d>::shutdown\n`
+- `%lldus AppleThunderboltGenericHAL::start - provider = %p, not of type IOService, status = 0x%x\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - no cable connected, set LSTX GPIO to output low\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::exitPDMode - mode = 0x%08x status = 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL::forcePowerState - state = %lu\n`
+- `%lldus AppleThunderboltHALGenericACIO::unpoweredStart - fPortChangeNotifier = %p status = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO::initializeMappers\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)<%d>::stop\n`
+- `%lldus AppleThunderboltNHIReceiveRingGenericACIO(%d)<%d>::initWithNHI\n`
+- `%lldus AppleThunderboltGenericHAL::start\n`
+- `%lldus AppleThunderboltGenericHAL::destroyPowerManagement\n`
+- `%lldus AppleThunderboltGenericHAL::forcePowerState - powerOverrideOffPriv status = 0x%08x\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMRestartState\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor - queue type = %d, hop id = %d pdf = %d length = %lld\n`
+- `%lldus AppleThunderboltNHIReceiveRingManager::enableInterrupt - write mask = 0x%08x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::writeNextDescriptor - frame (o=0x%llx,l=0x%llx) total command (o=0x%llx,l=0x%llx)\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::resolvePHandle - phandle_dictionary = %p status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::resolvePHandle - matching_dictionary = %p\n`
+- `%lldus AppleThunderboltHALType5(%d)::setupRegisterRanges - found %d register spaces, staring iteration\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::writeNextDescriptor (2)\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setupPHY - fPHYInterface = %p\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - fEmbeddedCPU->setPowerState(on) status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - fEmbeddedCPU->setPowerState(off) status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO::forcePowerState %d\n`
+- `%lldus AppleThunderboltNHI::unpause\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::writeNextdescriptor - desc[%d] 0x%08x 0x%08x 0x%08x 0x%08x, command = %p\n`
+- `%lldus AppleThunderboltNHITransmitRingManagerGenericACIO(%d)::allocateSharedBuffer - total_allocated = %d out of %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::enableEmbeddedCPU - fw_state = 0x%x\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - cable connected, set LSTX GPIO to output high\n`
+- `%lldus AppleThunderboltNHIGenericACIO::earlyWake\n`
+- `%lldus AppleThunderboltGenericHAL::forcePowerState - powerOverrideOffPriv\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor - FrameList cache STORE: cmd=%p listIdx=%u frameIdx=%u addr=0x%llx details=0x%x\n`
+- `%lldus AppleThunderboltNHIReceiveRingManager::enableInterrupt - hopID = %d enable = %d\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMEarlySleepState\n`
+- `%lldus IOThunderboltTransmitQueue(%d)::submit packet[%03d] = 0x%02x%02x\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::checkForCompletedDescriptors - complete command %p\n`
+- `%lldus AppleThunderboltNHIReceiveRing<%p>::checkForCompletedDescriptors - queue type = %d, hop id = %d pdf = %d length = %lld\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::handleInterrupt\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules EOF PDF - setting EOF to EOF index = 0x%llx - 0x%x\n`
+- `%lldus AppleThunderboltNHITransmitRingManager::enableInterrupt - hopID = %d enable = %d\n`
+- `%lldus AppleThunderboltHALType7(%d)::setupRegisterRanges - found %d register spaces, staring iteration\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules No Frame List EOF PDF - setting EOF to Mid EOF - 0x%x\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - fEmbeddedCPUEnabled = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::checkForCableStateChange - cable change in progress\n`
+- `%lldus AppleThunderboltGenericHAL::lateSleep - complete - took %d milliseconds\n`
+- `%lldus AppleThunderboltNHI::wake\n`
+- `%lldus AppleThunderboltHALGenericACIO::createDeviceMemoryForRange - memory = %p, status = 0x%08x\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::free - hop id = %d\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor - frame (currentFrameListIndex=0x%x,fCurrentFrameListFrameIndex=0x%llx) frame_length=0x%x total command (o=0x%x,l=0x%x)\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::checkForCompletedDescriptors - desc[%d] 0x%08x 0x%08x 0x%08x 0x%08x, command = %p\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::powerDomainShouldBeEnabled\n`
+- `%lldus AppleThunderboltGenericHAL::releaseHardware - wakeup pending client\n`
+- `%lldus AppleThunderboltNHI::setupPowerManagement - status = 0x%08x\n`
+- `%lldus AppleThunderboltNHI::sleep\n`
+- `%lldus %s: function-exit_mode is missing.\n`
+- `%lldus AppleThunderboltNHIReceiveRing<%p>::checkForCompletedDescriptors packet[%03d] = 0x%02x%02x\n`
+- `%lldus AppleThunderboltNHI::doze\n`
+- `%lldus AppleThunderboltHALGenericACIO::startInterruptPollTimer\n`
+- `%lldus AppleThunderboltHALGenericACIO::registerRead32 - offset = 0x%08x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::writeNextDescriptor - doubleBuffered = %d buffer_address = %llx segment_length = %lld frame_length = %lld\n`
+- `%lldus IOTBTTunnelClientInterfaceManager(%d)::createPowerDomainClientArray - fServiceGateCount = %d status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::evaluatePowerDomains - return should_be_enabled = %d\n`
+- `%lldus AppleThunderboltGenericHAL::systemWillShutdown - kIOMessageSystemWillPowerOff\n`
+- `%lldus AppleThunderboltNHI(%d)::poweredStart - status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::initWithNHI - hop id = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::resolvePHandle - phandle_key = %p\n`
+- `%lldus AppleThunderboltNHIGenericACIO::earlySleep\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setDevicesConnectedState - in_use = %d, found_devices = %d\n`
+- `%lldus AppleThunderboltHALGenericACIO::poweredStart - status = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::portChangeEvent\n`
+- `%lldus AppleThunderboltHALGenericACIO::handleInterrupt - src %p index = %d\n`
+- `%lldus AppleThunderboltNHIReceiveRingType5(%d)<%d>::setPDFBitmasks - HI Port PDF Bitmask 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::poweredStart - status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO::free\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setupPHY\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - USB4+ connection, skipping FW Ready delay\n`
+- `%lldus AppleThunderboltGenericHAL::earlySleep - fPMCallback = %p fPMCallbackOwner = %p\n`
+- `%lldus AppleThunderboltNHI::prePCIWake\n`
+- `%lldus %s function-exit_mode found.\n`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::waitForAppleHPMWake - fAppleHPMIsAsleep = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::destroyPHY\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::sleep - sleeping with the cable is connected, run lateSleep\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::checkForCableStateChange\n`
+- `%lldus AppleThunderboltHALGenericACIO::finalize\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::getCableState - equal = %d\n`
+- `%lldus AppleThunderboltNHITransmitRingManager::enableInterrupt - mask quad = %d mask_bit = %d for hopID = %d\n`
+- `%lldus AppleThunderboltNHIReceiveRingManager::enableInterrupt - read mask = 0x%08x\n`
+- `%lldus AppleThunderboltNHIDARTVMAllocator::forMapper\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setupCableStateTracking - status = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::getCableState - status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIReceiveRingGenericACIO(%d)<%d>::waitForRingDisableDone - data = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - Current LSTX State = 0x%x set LSTX GPIO to output high\n`
+- `%lldus AppleThunderboltGenericHAL::earlyWake - state = 0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL::earlyWake - complete - took %d milliseconds\n`
+- `%lldus AppleThunderboltNHI::controllerIsQuiesced\n`
+- `%lldus AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::waitForRingDisableDone - took %lld microseconds - status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - Current LSTX State = 0x%x set LSTX GPIO to output low\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::destroyPowerDomainClientArray\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::wake - waking after lateSleep, cable disconnected/powered off, run earlyWake\n`
+- `%lldus AppleThunderboltNHIGenericACIO::shutdown - skipped fStarted = %d fPoweredOff = %d\n`
+- `%lldus AppleThunderboltGenericHAL::acquireHardware - status = 0x%x\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - set LSTX GPIO to default\n`
+- `%lldus AppleThunderboltNHIGenericACIO<%p>::enableEmbeddedCPU - setARMIODevicePowerState(off, ATC_CIO) status = 0x%08x\n`
+- `%lldus AppleThunderboltNHI::message - kIOThunderboltMessageRequestingHardware\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - state = 0x%08x\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules No Frame List EOF PDF - setting EOF to EOF - 0x%x\n`
+- `%lldus AppleThunderboltNHITransmitRingGenericACIO(%d)<%d>::free\n`
+- `%lldus AppleThunderboltHALType7(%d)::setupSRAMParityInterrupt\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::resolvePHandle - target = %p key = %s\n`
+- `%lldus AppleThunderboltHALGenericACIO::handleDedicatedInterrupt - src %p index = %d fDedicatedInterruptCallback = %p fDedicatedInterruptCallbackOwner = %p\n`
+- `%lldus AppleThunderboltNHI::lateSleepInternal - fStarted = %d fPoweredOff = %d fPMState = %d\n`
+- `%lldus AppleThunderboltHALGenericACIO::registerWrite8 - offset = 0x%08x data = 0x%02x\n`
+- `%lldus AppleThunderboltNHIDARTVMAllocator::init - DART reported minDVA %p and maxDVA %p and page size %p and thus fSupportsFixedAllocations = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO::start\n`
+- `%lldus AppleThunderboltNHI::message - unknown message type = 0x%08x\n`
+- `%lldus AppleThunderboltHALGenericACIO::setupPowerManagement - status = 0x%x\n`
+- `%lldus AppleThunderboltHALGenericACIO(%d)::getCableState - connected = %d connect_count = 0x%x cable_speed = 0x%x legacy_adapters = %d link_training_mode = %d\n`
+- `%lldus AppleThunderboltHALGenericACIO::stopInterruptPollTimer\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::setMidPDFRules setMidPDFRules details - 0x%x\n`
+- `%lldus AppleThunderboltHALGenericACIO<%p>::enableDART - bypass DART\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setupPHY - fPHYService = %p\n`
+- `%lldus AppleThunderboltNHIGenericACIO::setupPowerSavings - status = 0x%08x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setARMIODevicePowerState - ERROR: no armio_device. status=0x%08x\n`
+- `%lldus AppleThunderboltGenericHAL::prePCIWake - state = 0x%08x\n`
+- `%lldus AppleThunderboltNHI(%d)::start - status = 0x%08x\n`
+- `%lldus AppleThunderboltNHI::setPMState - state = 0x%08x\n`
+- `%lldus AppleThunderboltNHIReceiveRing(%d)::processInterrupt\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setupEmbeddedCPU - fEmbeddedCPU = %p name = %s\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setARMIODevicePowerState - armio_device->enablePsdService( %d, %d, 0x%08x ) status=0x%08x failed\n`
+- `%lldus AppleThunderboltGenericHAL::acquireHardware + client = %p\n`
+- `%lldus AppleThunderboltGenericHAL::acquireHardware - the hardware is ours.\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)<%d>::start - ring desc 0x%08x 0x%08x 0x%08x 0x%08x\n`
+- `%lldus AppleThunderboltNHITransmitRing(%d)::writeNextDescriptor - doubleBuffered = %d buffer_address = %llx segment_length = %lld frame_length = %lld\n`
+- `%lldus AppleThunderboltNHITransmitRingManagerGenericACIO(%d)::allocateSharedBuffer - Tx 0: %d Tx 1-%d: %d Tx %d-%d: %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::setARMIODevicePowerState - IOMappedWrite32( 0x%llx, 0x%08x ) before = 0x%08x after 0x%08x\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMPauseState\n`
+- `%lldus AppleThunderboltHALGenericACIO::createDeviceMemoryForRange - range = %d offset = 0x%llx length = 0x%llx\n`
+- `%lldus AppleThunderboltNHIReceiveRingManager::enableInterrupt - mask quad = %d mask_bit = %d for hopID = %d\n`
+- `%lldus AppleThunderboltNHIReceiveRing<%p>::checkForCompletedDescriptors packet[%03d] = 0x%02x%02x%02x\n`
+- `%lldus AppleThunderboltNHIReceiveRing<%p>::checkForCompletedDescriptors packet[%03d] = 0x%02x\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::wake - waking after lateSleep, cable connected/powered on, run earlyWake\n`
+- `%lldus AppleThunderboltGenericHAL::acquireHardware - no competition\n`
+- `%lldus AppleThunderboltGenericHAL::setPowerState - state = %ld\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMEarlyWakeState\n`
+- `%lldus AppleThunderboltHALGenericACIO::destroyRegisterRanges - staring iteration\n`
+- `%lldus AppleThunderboltHALGenericACIO::registerWrite32 - offset = 0x%08x data = 0x%08x\n`
+- `%lldus AppleThunderboltNHIReceiveRing<%p>::checkForCompletedDescriptors packet[%03d] (swapped) = 0x%08x\n`
+- `%lldus AppleThunderboltNHITransmitRingManagerGenericACIO(%d)::enableInterrupt - hopID = %d enable = %d\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::createPowerDomainClientArray\n`
+- `%lldus AppleThunderboltNHIGenericACIO(%d)::disableAllPowerDomains\n`
+- `%lldus AppleThunderboltNHI::processSetPMState - kThunderboltHALPMPrePCIWakeState\n`
+- `%lldus AppleThunderboltNHI(%d)::processWake - poweredStart returned 0x%08x\n`
+- `%lldus %s function-dart_force_active found.\n`
+- `%lldus IOThunderboltTransmitQueue(%d)::submit packet[%03d] = 0x%02x\n`

@@ -1,0 +1,72 @@
+# `AppleUSBCController`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.driver.AppleHPM`](../kexts/com.apple.driver.AppleHPM.md)
+- Object size: `0xf10` (3,856 bytes)
+- Metaclass: `0xfffffe000b94f228`; metaclass vtable `0xfffffe0008107ac8`; class vtable `0xfffffe00081072c8`
+- Registration (init): `0xfffffe0008fbff60`
+- Superclasses: [`IOAccessoryManager`](IOAccessoryManager.md) → [`IOPort`](IOPort.md) → [`IOPortFamily`](IOPortFamily.md) → [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## Strings in its kext that name it (60)
+
+- `%lldus **** AppleUSBCController<%p : %p>::updateUSB = %s\n`
+- `**** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     ** requesting reprobe ** (REPROBE!)\n`
+- `AppleUSBCController reporting a disagreement between data role bits: status: %s vs. dataStatus: %s\n`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: requesting reprobe\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - outToken: %s\n`
+- `AppleUSBCController reporting a USB%s connection\n`
+- `%lldus AppleUSBCController<%p>::updateCachedRegisters - BOOT mode.  Got 0x %02X %02X %02X %02X %02X %02X %02X %02X\n`
+- `AppleUSBCController::remoteWakeSafetyTimeoutGated: lock grabbed\n`
+- `%lldus AppleUSBCController<%p> - USB Mode: Ace is a USB Device\n`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: _powerStateACKRequested = 0x%X\n`
+- `AppleUSBCController<%p>::usbDataDetect - attempting to set orientation: 0x%X\n`
+- `AppleUSBCController<%p>::SleepThreadEntry -  ACK'ing power state change.\n`
+- `AppleUSBCController reporting realAccessoryID = %u\n`
+- `AppleUSBCController<%p>::challengeCrypto - wrote kIECSRegisterCommand: %s\n`
+- `%lldus !!!!! AppleUSBCController<%p>::hpmIECSCommand - had to retry as status = 0x%X (remaing retries: %u)\n`
+- `%lldus AppleUSBCController<%p>::SleepWakeThreadEntry - got lock!\n`
+- `%lldus AppleUSBCController<%p : %p>::setDPConfiguration - Starting setDPConfiguration.  enabled = %s.  laneMappingIndex = %u.  laneCount = %u\n`
+- `AppleUSBCController::configureUSBRemoteWakeup: Configuring for low speed device\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - buffer (length byte trimmed): %s\n`
+- `AppleUSBCController::challengeCrypto: function found\n`
+- `** AppleUSBCController<%p> - mode = '%c%c%c%c' (looking for 'DFUf' to enable overrides)\n`
+- `%lldus ** AppleUSBCController<%p> - mode = '%c%c%c%c' (looking for 'DFUf' to enable overrides)\n`
+- `AppleUSBCController<%p : %p>::handleAccessoryDetect - overrideDetect: %s, overrideID: %s\n`
+- `%lldus AppleUSBCController<%p> - Ace detect failure - no response\n`
+- `AppleUSBCController<%p>::PowerStateThreadEntry - done\n`
+- `**** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     status = 0x%X, updatedUSB = %s, updatedDP = %s\n`
+- `AppleUSBCController::configureUSBRemoteWakeup: enabling\n`
+- `AppleUSBCController<%p>::setPowerState -  signaling SleepWake Thread (AppleAceSystemIsSleeping) - WillAckLater\n`
+- `AppleUSBCController<%p>::challengeCrypto - wrote kAceRegisterData1: %s\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - outRspLen: %llu bytes\n`
+- `%lldus AppleUSBCController::challengeCrypto: CRYm took approx %u msecs to complete\n`
+- `AppleUSBCController<%p>::usbDataDetect - error writing kAceRegisterData1 (status: 0x%X)\n`
+- `%lldus AppleUSBCController<%p> - DFUf does not claim UFP dataRole in dataStatus\n`
+- `AppleUSBCController<%p : %p>::setDPConfiguration - Starting setDPConfiguration.  enabled = %s.  laneMappingIndex = %u.  laneCount = %u\n`
+- `AppleUSBCController::configureUSBRemoteWakeup: requesting reprobe\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - got lock!\n`
+- `%lldus ** AppleUSBCController<%p> - _isRestoreOS: %s\n`
+- `%lldus AppleUSBCController<%p : %p>::setDPConfiguration - setPower got error abort: 0x%X\n`
+- `AppleUSBCController<%p> - USB Mode: Forced Disconnected (SPS != AppleAceHWMaxPowerState)\n`
+- `AppleUSBCController<%p> - pollTimeoutGated: cancelling timeout (if it was armed)\n`
+- `AppleUSBCController<%p>::challengeCrypto - outToken: %s\n`
+- `%lldus **** AppleUSBCController<%p : %p>::interruptAction(%p, %d) -     PP_HVswitch is %s\n`
+- `%lldus AppleUSBCController::configureUSBRemoteWakeup: ACK'ing power state change\n`
+- `%lldus AppleUSBCController<%p>::setPowerState -  signaling SleepWake Thread (AppleAceSystemIsSleeping) - WillAckLater\n`
+- `AppleUSBCController<%p> - DFUf does not claim DPConnection\n`
+- `%lldus **** AppleUSBCController<%p : %p>::statusReg.bits.dataRole           %s\n`
+- `%lldus AppleUSBCController<%p>::configureUSBRemoteWakeup - (2) got lock!\n`
+- `AppleUSBCController<%p>::SleepThreadEntry - delaying power state change to allow USB wake to enable (or firmware update to complete)\n`
+- `%lldus AppleUSBCController<%p>::hpmEnterExitFirmwareUpdateMode - BOOT mode.  Got 0x %02X %02X %02X %02X %02X %02X %02X %02X\n`
+- `**** AppleUSBCController<%p : %p>::handleAccessoryUSBMode: !psItem\n`
+- `AppleUSBCController::challengeCrypto: function not found\n`
+- `AppleUSBCController<%p> - DFUf does not claim UFP dataRole in status\n`
+- `%lldus AppleUSBCController reporting a USB host\n`
+- `%lldus **** AppleUSBCController<%p : %p>::dataStatusReg.bits.DPConnection    %s\n`
+- `%lldus AppleUSBCController<%p>::challengeCrypto - error executing 'CRYm': 0x%X\n`
+- `**** AppleUSBCController<%p>::start - parsed hpmusbcdisable boot arg: 0x%X\n`
+- `AppleUSBCController<%p : %p>::hpmEnterExitFirmwareUpdateMode - delaying to clear any other logging\n`
+- `AppleUSBCController<%p : %p>::setSystemPowerState - AppleAceHWShutdownPowerState delay (after transition)\n`
+- `%lldus **** AppleUSBCController<%p : %p>::handleAccessoryUSBMode: !powerSource\n`
+- `%lldus AppleUSBCController::challengeCrypto: CRYm failed to complete - unsupported?\n`

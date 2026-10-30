@@ -1,0 +1,72 @@
+# `IOThunderboltXDomainLink`
+
+Kernel C++ class, from its OSMetaClass registration in `kernelcache.release.v6x-pandia`. **[KC]**
+
+- Owner: [`com.apple.iokit.IOThunderboltFamily`](../kexts/com.apple.iokit.IOThunderboltFamily.md)
+- Object size: `0x1a8` (424 bytes)
+- Metaclass: `0xfffffe000ba1cd90`; metaclass vtable `0xfffffe0008413210`; class vtable `0xfffffe0008412b48`
+- Registration (init): `0xfffffe000a532fd4`
+- Superclasses: [`IOService`](IOService.md) → [`IORegistryEntry`](IORegistryEntry.md)
+
+## Strings in its kext that name it (60)
+
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - found a service key \n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::finalize - done\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::lateSleep - fRestored = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processROMRead - fROMIndex = %d, quad_length = %d, fROMSize = %d\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - max_link_width = %d current_link_width = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - could not create service iterator\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - link_status_command error_code = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::getMatchingXDomainServiceClient - remote_service_uuid_string = %s\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathSetupRequest - done, status = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processUUIDReadResponse - command = %p, status = 0x%x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathSetupRequest, rx_command = %p, response_ack_command = %p\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - done\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::rescanROM\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - Setting properties to Link in IORegistry\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainLinkStateStatusRequest = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processUUIDReadResponse - terminate\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::finalize - waiting on fState = %d fROMChangedRequestInProgress = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::startScan - route = 0x%llx\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - link status (2) read retry = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::romChangedCommandCallback - incoming status = 0x%x, command = %p\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::enterIdleState\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathTeardownComplete - incoming status = 0x%x, xdomain_path = %p, fFinalizeWaiting = %u\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - error adding object to Services dictionary\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::beginROMChangedNotification\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::readNextROMChunk\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::completeXDomainPathRequestCommand - in-flight command is complete, free up the in-flight request slot\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processUUIDReadResponse - prune duplicate xdomain found_link = %p\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::setPowerState - unknown power state %d\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - read link status\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processControlRequest - src service uuid = %s, dst service uuid = %s\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::setPowerState - kThunderboltPMWakeState\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - send kIOThunderboltXDomainLinkStateStatusResponse max_link_width = 0x%x supported_link_speeds = 0x%x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::wake - setting XDomain Service Client to Ready, xd_client = %p, %s\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processROMRead - more to read\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processControlRequest - found XDomain Service Client %s\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathCapabilitiesRequest - found XDomain Service Client %s\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathRequestFinalizePacket - swapped quad_packet[%d] = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>::processPathRequestPreparePacket - local node uuid = %s, xdomain link uuid = %s\n`
+- `%lldus IOThunderboltXDomainLink(%x@%llx)::finalize - done with deactivations, clear fXDomainPaths\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::beginROMChangedNotification to %llx\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processROMRead - Device revision was: 0x%08X\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::submitXDomainPathRequestCommandsToControlPath\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processControlRequest\n`
+- `%lldus IOThunderboltSwitch<%p>(0x%llx)::processXDomainChild - port = %d IOThunderboltXDomainLink::withController\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::wake - waiting on fState = %d\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - context = %p\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathTeardownRequest - found XDomain Service Client %s\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - link_status_command (2) error_code = 0x%08x\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathSetupCompleteRequest - done, status = 0x%08x\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainLinkStateStatusRequest not ready\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - fRestored = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - cacheBytes retruned error (0x%x)\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathSetupComplete - incoming status = 0x%x, xdomain_path = %p\n`
+- `%lldus IOThunderboltXDomainLink<%x>(0x%llx)::linkStateNegotiation - primary_switch = %p secondary_switch = %p\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathCapabilitiesRequest - src service uuid = %s, dst service uuid = %s\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::decodeProperties - fServices has %u items\n`
+- `%lldus IOThunderboltLocalNode<%p>::listenerCallback - kIOThunderboltXDomainLinkStateChangeRequest = %d\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathTeardownRequest\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::attach\n`
+- `%lldus IOThunderboltXDomainLink<%p>(0x%llx)::processPathSetupCompleteRequest - src service uuid = %s, dst service uuid = %s\n`

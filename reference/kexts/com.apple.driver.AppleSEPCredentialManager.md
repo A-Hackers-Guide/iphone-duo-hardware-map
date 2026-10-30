@@ -1,0 +1,2144 @@
+# `com.apple.driver.AppleSEPCredentialManager`
+
+- Name: AppleSEPCredentialManager
+- Version: `1.0`
+- UUID: `7876670F-2F12-353A-9EFE-BDCCE8DD6974`
+- Source version: `949.40.7.0.0`
+- Depends on: [`com.apple.driver.AppleARMPlatform`](com.apple.driver.AppleARMPlatform.md) 1.0.0, [`com.apple.driver.AppleSEPManager`](com.apple.driver.AppleSEPManager.md) 1.0.0, [`com.apple.driver.IOSlaveProcessor`](com.apple.driver.IOSlaveProcessor.md) 1.0.0, [`com.apple.iokit.CoreAnalyticsFamily`](com.apple.iokit.CoreAnalyticsFamily.md) 1.0, [`com.apple.kec.corecrypto`](com.apple.kec.corecrypto.md) 1.0, [`com.apple.kpi.bsd`](com.apple.kpi.bsd.md) 8.0, [`com.apple.kpi.iokit`](com.apple.kpi.iokit.md) 8.0, [`com.apple.kpi.libkern`](com.apple.kpi.libkern.md) 8.0, [`com.apple.kpi.mach`](com.apple.kpi.mach.md) 8.0, [`com.apple.kpi.private`](com.apple.kpi.private.md) 8.0, [`com.apple.kpi.unsupported`](com.apple.kpi.unsupported.md) 8.0
+
+## Device-tree nodes it binds (0) [DT][KC]
+
+None by name match. It matches on a provider class, a property, or is a library.
+
+## IOKit personalities (1) [KC]
+
+### AppleCredentialManager
+- `CFBundleIdentifier`: `com.apple.driver.AppleSEPCredentialManager`
+- `IOClass`: `AppleCredentialManager`
+- `IOMatchCategory`: `AppleCredentialManager`
+- `IOPersonalityPublisher`: `com.apple.driver.AppleSEPCredentialManager`
+- `IOProviderClass`: `IOResources`
+- `IOUserClientClass`: `AppleCredentialManagerUserClient`
+
+
+## C++ classes (12) [KC]
+
+Object size and full superclass chain, from the OSMetaClass registrations (`ipsw kernel cpp`).
+
+| Class | Size | Superclasses |
+|---|---|---|
+| `ACMAccessoryCacheKernelService` | 0x1560 | ACMKernelService |
+| `ACMAnalyticsKernelService` | 0x78 | ACMKernelService |
+| `ACMBridgeKernelService` | 0x28 | ACMKernelService |
+| `ACMFirstResponderKernelService` | 0x30 | ACMKernelService |
+| `ACMKernelService` | 0x28 |  |
+| `ACMKeybagKernelService` | 0x128 | ACMKernelService |
+| `ACMLockdownModeKernelService` | 0x28 | ACMKernelService |
+| `ACMPersistentStoreKernelService` | 0x3910 | ACMKernelService |
+| `ACMRestrictedModeAnalyticsKernelService` | 0x480 | ACMKernelService |
+| `ACMRestrictedModeKernelService` | 0x12b8 | ACMKernelService |
+| `AppleCredentialManager` | 0x198 | IOService → IORegistryEntry |
+| `AppleCredentialManagerUserClient` | 0xf0 | IOUserClient → IOService → IORegistryEntry |
+
+## Mach-O layout [KC]
+
+```
+Magic         = 64-bit MachO
+Type          = KEXT_BUNDLE
+CPU           = AARCH64, 0xc caps: KER00
+Commands      = 10 (Size: 1720)
+Flags         = NoUndefs, DyldLink, TwoLevel, DylibInCache
+000: LC_SEGMENT_64 sz=0x000143f8 off=0x0071e2c0-0x007326b8 addr=0xfffffe00077222c0-0xfffffe00077366b8 r--/r--   __TEXT            
+	sz=0x000138b5 off=0x0071e9d8-0x0073228d addr=0xfffffe00077229d8-0xfffffe000773628d               __TEXT.__cstring          (CstringLiterals)
+	sz=0x00000428 off=0x00732290-0x007326b8 addr=0xfffffe0007736290-0xfffffe00077366b8               __TEXT.__const            
+001: LC_SEGMENT_64 sz=0x0004fce8 off=0x02580fe0-0x025d0cc8 addr=0xfffffe0009584fe0-0xfffffe00095d4cc8 r-x/r-x   __TEXT_EXEC       
+	sz=0x0004f678 off=0x02580fe0-0x025d0658 addr=0xfffffe0009584fe0-0xfffffe00095d4658          __TEXT_EXEC.__text            PureInstructions|SomeInstructions 
+	sz=0x00000670 off=0x025d0658-0x025d0cc8 addr=0xfffffe00095d4658-0xfffffe00095d4cc8          __TEXT_EXEC.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+002: LC_SEGMENT_64 sz=0x00003cf1 off=0x04991868-0x04995559 addr=0xfffffe000b995868-0xfffffe000b999559 rw-/rw-   __DATA            
+	sz=0x00003229 off=0x04991868-0x04994a91 addr=0xfffffe000b995868-0xfffffe000b998a91               __DATA.__data             
+	sz=0x000009c8 off=0x00000000-0x000009c8 addr=0xfffffe000b998a98-0xfffffe000b999460               __DATA.__common           (Zerofill)
+	sz=0x000000f9 off=0x00000000-0x000000f9 addr=0xfffffe000b999460-0xfffffe000b999559               __DATA.__bss              (Zerofill)
+003: LC_SEGMENT_64 sz=0x00003d00 off=0x011e0798-0x011e4498 addr=0xfffffe00081e4798-0xfffffe00081e8498 rw-/rw-   __DATA_CONST      
+	sz=0x00000060 off=0x011e0798-0x011e07f8 addr=0xfffffe00081e4798-0xfffffe00081e47f8         __DATA_CONST.__mod_init_func    (ModInitFuncPointers)
+	sz=0x00000060 off=0x011e07f8-0x011e0858 addr=0xfffffe00081e47f8-0xfffffe00081e4858         __DATA_CONST.__mod_term_func    (ModTermFuncPointers)
+	sz=0x00001dd0 off=0x011e0858-0x011e2628 addr=0xfffffe00081e4858-0xfffffe00081e6628         __DATA_CONST.__const            
+	sz=0x000005c0 off=0x011e2628-0x011e2be8 addr=0xfffffe00081e6628-0xfffffe00081e6be8         __DATA_CONST.__kalloc_type      
+	sz=0x000014a0 off=0x011e2be8-0x011e4088 addr=0xfffffe00081e6be8-0xfffffe00081e8088         __DATA_CONST.__kalloc_var       
+	sz=0x00000338 off=0x011e4088-0x011e43c0 addr=0xfffffe00081e8088-0xfffffe00081e83c0         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000000c8 off=0x011e43c0-0x011e4488 addr=0xfffffe00081e83c0-0xfffffe00081e8488         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000010 off=0x011e4488-0x011e4498 addr=0xfffffe00081e8488-0xfffffe00081e8498         __DATA_CONST.__auth_ptr         
+004: LC_SEGMENT_64 sz=0x00074e21 off=0x04a8c000-0x04b00e21 addr=0xfffffe000ba90000-0xfffffe000bb04e21 r--/r--   __LINKEDIT        
+005: LC_SYMTAB                   Symbol offset=0x04A8C000, Num Syms: 0, String offset=0x04B00E20-0x04B00E21
+006: LC_DYSYMTAB                 
+	             Local Syms: 0 at 0
+	          External Syms: 0 at 0
+	         Undefined Syms: 0 at 0
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 231 at 0x04ae3d78
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+007: LC_UUID                     7876670F-2F12-353A-9EFE-BDCCE8DD6974
+008: LC_SOURCE_VERSION           949.40.7.0.0
+009: LC_FUNCTION_STARTS          offset=0x004aaf980 size=0x648
+```
+
+## Info.plist keys [KC]
+
+- `BuildMachineOSBuild`: `23A344017`
+- `CFBundleDevelopmentRegion`: `English`
+- `CFBundleExecutable`: `AppleSEPCredentialManager`
+- `CFBundleIdentifier`: `com.apple.driver.AppleSEPCredentialManager`
+- `CFBundleInfoDictionaryVersion`: `6.0`
+- `CFBundleName`: `AppleSEPCredentialManager`
+- `CFBundleNumericVersion`: `16809984`
+- `CFBundlePackageType`: `KEXT`
+- `CFBundleShortVersionString`: `1.0`
+- `CFBundleSignature`: `????`
+- `CFBundleSupportedPlatforms`:
+  - `iPhoneOS`
+- `CFBundleVersion`: `1.0`
+- `DTCompiler`: `com.apple.compilers.llvm.clang.1_0`
+- `DTPlatformBuild`: `24B91012`
+- `DTPlatformName`: `iphoneos`
+- `DTPlatformVersion`: `27.2`
+- `DTSDKBuild`: `24B91012`
+- `DTSDKName`: `iphoneos27.2.internal`
+- `DTXcode`: `2700`
+- `DTXcodeBuild`: `27A225b`
+- `MinimumOSVersion`: `27.2`
+- `NSHumanReadableCopyright`: `Copyright © 2013 Apple Inc. All rights reserved.`
+- `OSBundleCompatibleVersion`: `1.0.0`
+- `OSBundleUUID`: `<data 32 chars>`
+- `UIDeviceFamily`:
+  - `1`
+  - `2`
+- `_InfoPlistDigest`: `<data 52 chars>`
+- `_PrelinkBundlePath`: `/System/Library/Extensions/AppleSEPCredentialManager.kext`
+- `_PrelinkExecutableLoadAddr`: `-2198898335040`
+- `_PrelinkExecutableRelativePath`: `AppleSEPCredentialManager`
+- `_PrelinkExecutableSize`: `441041`
+- `_PrelinkExecutableSourceAddr`: `-2198898335040`
+- `_PrelinkKmodInfo`: `-2198828656536`
+
+## Strings (2014) [KC]
+
+C strings and os_log formats from the kext, in section order. They name registers, states, errors and the protocol the kext speaks to its hardware.
+
+**[__TEXT.__cstring]**
+
+- `%s: %s: disable_lockdown_mode() called.\n`
+- `isSegmentActive`
+- `segGracePeriodReason_AccessoryDetached_Bucket`
+- `callPlatformFunction`
+- `numRecords <= kACMTRMLegacyAccessoryCache_CacheSize`
+- `DataValidation_BiometryPresent`
+- `Util_ReadFromBuffer`
+- `_sendTRMAnalyticsThroughKext(finalizedAnalytics) == 0 `
+- `hidrm-enabled`
+- `_restorePolicyTimers`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/common/CoreDER.c`
+- `TRM_ConfigProfile`
+- `Env_GetVariableByte`
+- `site.ACMCredential.ACMCredentialDataBiometryMatchAttempted`
+- `service.setProperty(name, dictClone.get())`
+- `SEPControl_SetCallback`
+- `getLengthOfParameters`
+- `param->parameterDataLength == 0`
+- `cntDeviceLost`
+- `%s: %s: KE[%u] STARTED.\n`
+- `LibCall_ACMSecContextCopyCredentialsArrayEx`
+- `allowedToChange_BY_STATE`
+- `segDeviceLockState_Unknown`
+- `dataLength == UUID_LEN`
+- `%s: %s: acl = %p, aclLength = %zu.\n`
+- `inSize == sizeof(ACMControlRequestTRMAccessoryAuthorizedInDomain)`
+- `_loadConfig`
+- `unset`
+- `findControlSlot`
+- `Stats_IncrementCommandStatValue(kACMCommandStat_LockerWriteDurationMs, writeTookMs, false ) == 0 `
+- `initU32FromEDTProp`
+- `LibCall_ACMSEPControl`
+- `%s: %s: timePolicyViolated=%s (saveTime=%llu bootCalTime=%llu (delta=%lld) bootUpTime=%llu nowUp=%llu).\n`
+- `ptr`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/AppleCredentialManager/AppleCredentialManagerShared.cpp`
+- `segConfigProfile_AlwaysAllow`
+- `AA`
+- `%s: %s: KE[%u] INITED.\n`
+- `credential->type == kACMCredentialTypeSecureIntent`
+- `%s: %s: enrollmentNeeded=%s (loadedVersion=%u).\n`
+- `Env_GetVariableUint32`
+- `_onActionTimerHandlerGated`
+- `CoreAnalytics service not loaded!`
+- `Off`
+- `SOS`
+- `%s: %s: failed to register for AKS notification.\n`
+- `readPersistentVarsFromLocker`
+- `_service && _genericDomain && _inductiveDomain`
+- `AskForNewAccessories`
+- `/Library/Caches/com.apple.xbs/4776FB82-4876-4747-BD9A-F14E510003B9/TemporaryDirectory.gzqdtN/Sources/AppleCredentialManager_KernelLibs/common/LibCall.c`
+- `LibCall_ACMContextContainsCredentialTypeEx`
+- `com.apple.private.applecredentialmanager.apcredential.allow`
+- `response->version >= kCmdCurrentVersion_ContextGetInfo`
+- `_loadPolicy`
+- `callbackContext.foundConstraint && callbackContext.foundConstraintSize`
+- `buff`
+- `_setupGracePeriodTimerForTrigger`
+- `!config || policySlot->objSize == sizeof(ACMTRMPersistentPolicy)`
+- `pos + sizeof(ItemTag) <= curSize`
+- `%s: %s: [%s] (reason=%u).\n`
+- `slot.loadPropertyName`
+- `opcode == kCmdPing || opcode == kCmdPingOnDoubleClick`
+- `extDoubleClick`
+- `ACMAccessoryCacheKernelService.cpp`
+- `_env().save(outBuffer, *outSize)`
+- `site.ACMCredential.ACMCredentialDataKextDenyList`
+- `dataLength == sizeof(int32_t)`
+- `com.apple.private.applecredentialmanager.securestore.ratchet.lbdoa.allow`
+- `ACMCredential - ACMCredentialDataSecureIntent`
+- `err = _removeProperty(service, kACMTRMProperty_GracePeriodReason) == 0 `
+- `change == 0 || change == kACMBiometryTypeFlagFaceID`
+- `outBuffer`
+- `%s: %s: disable_lockdown_mode() failed, kernel_thread_start() err = %d.\n`
+- `*outSize >= slot->dataSize`
+- `os_add_overflow(sizeof(acm_command_t), dataSize, &cmdSize) == 0 `
+- `site.ACMRequirement.ACMRequirementDataPushButton`
+- `configSlot && configSlot->objSize == sizeof(ACMTRMPersistentConfig)`
+- `u32Null`
+- `_genericDomain`
+- `(policyLength <= MAX_POLICY_LENGTH)`
+- `ACMRestrictedModeKernelService`
+- `acc-cache-remove: removing record`
+- `%s: %s: unexpected PolicyMode configuration [TRM Profile: %s(%u), HIDRM GlobalSwitch: %s(%u)].\n`
+- `boTRMLockerSupported`
+- `%s: %s: returning, KE[%u].\n`
+- `%s: %s: AppleSEPManager matched.\n`
+- `LibCall_ACMSecContextVerifyAclConstraintAndCopyRequirement`
+- `%s: %s: called, deviceLockState=%u (previousDeviceLockState=%u postStartup=%s).\n`
+- `ANY2(_persistentConfig.globalSwitch, kACMTRMConfig_GlobalSwitch_On, kACMTRMConfig_GlobalSwitch_Off )`
+- `status == 0 `
+- `HIDRM_PolicyEnabled`
+- `%s: %s: returning, -> ctx = %p.\n`
+- `root_pivot_occurred`
+- `param->parameterDataLength == sizeof(uint8_t)`
+- `rc`
+- `ACMCredential - ACMCredentialDataPassphraseEntered`
+- `_registerConsoleUsersNotifier`
+- `Env_SetVariableWithParams`
+- `dataLength == sizeof(ACMCredentialDataUserOutputDisplayed)`
+- `top3Latency`
+- `DEVICE LOST`
+- `(size - offset) >= opLength`
+- `outOpcode`
+- `%s: %s: *acc-cache* failed to load (err=%d).\n`
+- `%s: %s: acknowledgeSetPowerState() *FAILED* with: 0x%x.\n`
+- `inSize == sizeof(ACMControlRequestTRMStopTimerACMTool)`
+- `*outSize >= sizeof(ACMTRMStatus)`
+- `record->timestamp == timestamp`
+- `rsec`
+- `rsip`
+- `err = prop___set(name, dict.getCount(), nullptr , nullptr ) == 0 `
+- `ACMRequirement - ACMRequirementDataOr`
+- `IOPlatformSerialNumber`
+- `err = _setPropertyU32(inductiveDomain, kACMTRMProperty_DomainProperty_CacheMissCount, pendState.itrmCacheMissCount, inductiveDomainPrefix) == 0 `
+- `_onStopTimerACMTool`
+- `aclLength`
+- `performCommandV3`
+- `_registerNotifiers`
+- `%s: %s: Inconsistent device lock state!.\n`
+- `ANY3(_persistentConfig.gracePeriod, kACMTRMConfig_GracePeriod_Infinite, kACMTRMConfig_GracePeriod_Bounded, kACMTRMConfig_GracePeriod_Strict )`
+- `u32TRMGracePeriodTimeoutBootArg`
+- `(inData && inSize) || (!inData && !inSize)`
+- `%s: %s: called, [COM] ACK RECEIVED %s.\n`
+- `_onDaemonStarted`
+- `_sepContext.responseDataBuffer`
+- `pmuDblClickAckActionGated`
+- `%s: %s: [saved] outSize=%u policySaved=%s configSaved=%s accCacheSaved=%s.\n`
+- `%s: %s: code=%u.\n`
+- `LibCall_ACMPing`
+- `_isPolicyStarted()`
+- `_currentDeviceStateFromConsoleUsers`
+- `enableSepEndpointAction`
+- `SAVE-PolicyMode`
+- `kACMHIDRMMessage_PropertyChanged`
+- `analytics`
+- `%s: %s: operation = %p, operationLength = %zu.\n`
+- `%s: %s: rejecting cache miss (trigger not allowed).\n`
+- `Env_GetRequiredClientEntitlementForSet`
+- `ACMTRMStore_AccCacheSave`
+- `%s: %s: returning, success = %s.\n`
+- `inData`
+- `_getIOService()`
+- `I/`
+- `clientClose`
+- `trm_all_policy_modes`
+- `msg.call.length <= ref->responseDataBufferSize`
+- `_blockAIDReset`
+- `site.ACMKernelService`
+- `_onServiceTimerHandlerGated`
+- `outSize && *outSize >= sizeof(ACMControlResponseTRMAccessoryCache_Iterate)`
+- `_registerBioNotifier`
+- `LibCall_ACMContextSetData`
+- `acc-cache-check: record not found`
+- `trm_acc_cache_size`
+- `%s: %s: PMU-ACK: function-ack_dbl_click() not available - ACK not needed.\n`
+- `defDblClickAckActionGated`
+- `acmService`
+- `handleWithPayload`
+- `%s: %s: failed to load *config* (err=%d).\n`
+- `com.apple.private.applecredentialmanager.contextcopydata.passphrase.allow`
+- `%s: %s: called, KE[%u].\n`
+- `_sepContext.responseDataLength >= responsePayloadHead.payloadSize`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/AppleCredentialManager/Services/ACMRestrictedModeKernelService.cpp`
+- `com.apple.private.applecredentialmanager.internaltool.allow`
+- `site.ACMRequirement.ACMRequirementDataAnd`
+- `segPolicyReason_Restricted_Bucket`
+- `err = prop___set(name, value, nullptr , valueNameLookup) == 0 `
+- `%s: %s: starting TRM policy engine.\n`
+- `_currentDeviceStateFromKeybag`
+- `segPolicyEnabled_Yes`
+- `ACMTRM-C`
+- `isSEPAvailable`
+- `policySlot && policySlot->objSize == sizeof(ACMTRMPersistentPolicy)`
+- `HIDRM_BuddyPeriod`
+- `_hasACMEntitlement`
+- `%s: %s: aks_get_extended_state(), keybagHandle: %d, lock_state: %u, device_state: 0x%X, returned: %d.\n`
+- `%s: %s: Biometric driver not detected.\n`
+- `_lockerInterface`
+- `com.apple.private.applecredentialmanager.securestore.dsl.allow`
+- `(size - newOffset) >= sizeof(ACMParameterType) + sizeof(uint32_t)`
+- `boPostStartupDeviceLockPerformed`
+- `%s: %s: keybag=%d kbLockState=%s(%u) | useUserKeybag=%s unlocked=%u locked=%u => deviceLockState=%s(%u) was=%s(%u).\n`
+- `consoleUsersPropertyObject`
+- `outBufInOutSize`
+- `next = acm_der_skip_any(der, der_end)`
+- `slot->savePropertyName`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/common/CoreStats.c`
+- `%s: %s (len=%u): acl:`
+- `%s: %s: kACMEnvironmentVariableDFRPresent=%u successfully set.\n`
+- `segDeviceLockState_Disabled`
+- `segConfigProfile_AskEveryTime_Bucket`
+- `inSize >= sizeof(acm_command_t)`
+- `%*.*s%d ARRAY(%zu)\n`
+- `site.ACMRequirement.ACMRequirementDataPasscodeValidated`
+- `Util_CreateRequirement`
+- `copied == srcLen`
+- `ForceRestricted`
+- `DeviceLocked`
+- `inSize >= sizeof(ACMCmdRequest_SetEnvironmentVariableExtended)`
+- `ACMRequirement - ACMRequirementDataAP`
+- `ACMPersistentStoreKernelService`
+- `err = _setPropertyU32(genericDomain, kACMTRMProperty_DomainProperty_EffectiveConfigProfile, pendState.effectiveConfigProfile, genericDomainPrefix, ACMRMUtil::cstrFromTRMProfile) == 0 `
+- `22`
+- `inSize == 0`
+- `%s: %s: enrollmentReason: eraseInstall=%s updatingFromPreTRMSystem=%s.\n`
+- `%s: %s: GPR: reason=%u (restoredReason=%u->%u allowIfBlocked=%s unblocked=%s allowed=%s active=%s).\n`
+- `pearlServiceDict`
+- `dataLength == sizeof(ACMCredentialDataBiometryMatched)`
+- `%s: %s: stopping KE[%u] (ready=%s).\n`
+- `_onUserAuthenticatedInBaseSystem`
+- `record->dataLen == dataLen`
+- `(size - offset) >= sizeof(ACMHandle)`
+- `!_policyStarted`
+- `u32TRMDefaultBootArg`
+- `LibCall_ACMSecSetBiometryAvailability`
+- `parametersLength + param->parameterDataLength >= parametersLength`
+- `boEnd`
+- `probe`
+- `ACMCredential`
+- `%s: %s: failed to increment %s(%u), ready=%s.\n`
+- `hidrm_default`
+- `operation && operationLength`
+- `com.apple.private.applecredentialmanager.thumbandpay.allow`
+- `%s: %s: %s(%u)=%llu.\n`
+- `u64Null`
+- `readFromSEP == msg.call.length`
+- `dataLength == 0`
+- `unlockItem`
+- `%s: %s: called, .\n`
+- `update`
+- `%s: %s: returning, err = %ld, code=%u.\n`
+- `updateAnalytics(commandLatency) == 0 `
+- `catacombUuid && catacombUuidLength == sizeof(uuid_t)`
+- `%s: %s: called.\n`
+- `_resumeUnlockedPeriodTimer`
+- `com.apple.AppleCredentialManager.TRM.PolicyMode`
+- `AutomaticallyAllowWhenUnlocked`
+- `inSize >= sizeof(ACMEnvironmentVariable)`
+- `%s: %s: saving *%s* (dataLen=%u) in %u seconds (fullSync: %s -> %s).\n`
+- `ACMKernContextRemoveCredentialsByTypeAndScope`
+- `AKSKernelServices`
+- `err = _setPropertyBool(service, kACMTRMProperty_UnlockedPeriod, (bool)pendState.unlockedPeriod) == 0 `
+- `HIDRM_EnrollmentPeriod`
+- `commandSize`
+- `ACMKernContextAddCredentialWithScope`
+- `_determineDeviceLockState`
+- `%s: %s: called, '%s' expired.\n`
+- `_disableBy`
+- `%s: %s: *legacy policy* loaded (ver=%u size=%u->%u).\n`
+- `*bufInOutSize <= bufCapacity`
+- `TRM_CacheMissThreshold`
+- `service.setProperty(name, value, 32)`
+- `expired`
+- `LibSer_ACMDeserializeEnvironmentVariableType`
+- `enabled`
+- `coreAnalyticsHubWeak`
+- `sendSEPCommand`
+- `ACMKeybagKernelService`
+- `u32StressRackEDTProp`
+- `%s: %s: *config* saved (ver=%u size=%u).\n`
+- `propBlockAIDResetBootArg`
+- `Stats_ResourceUsageInfoDataProvider`
+- `!dataLen || (dataOpt && dataLen <= kACMTRMAccessoryCache_MaxDataSize)`
+- `TRM_PolicyReason`
+- `resolvePolicyMode`
+- `%s: %s: command = %u.\n`
+- `u64DeviceLockedTime`
+- `GracePeriodReason`
+- `%s: %s: probed KE[%u] (ready=%s) -> %s (score=%d).\n`
+- `%s: %s: started KE[%u] (ready=%s) -> %s.\n`
+- `reqBuffer`
+- `err == 0 `
+- `_reloadFromDaemon`
+- `%s: %s: returning, KE[%u] -> %s.\n`
+- `freeImpl`
+- `ACMKernGlobalContextAddCredential`
+- `_isHIDRMEnrollmentNeeded`
+- `buffer`
+- `u32End`
+- `AET`
+- `???`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/AppleCredentialManager/Services/ACMKeybagKernelService.cpp`
+- `ACMCredential - ACMCredentialDataBiometryMatched`
+- `%s: %s: %s/%s = 0x%x.\n`
+- `size >= sizeof(ACMUnlockSecretType)`
+- `sourceContextExternalForm && sourceContextExternalFormLength == sizeof(ACMHandle)`
+- `_persistentStore`
+- `LOAD`
+- `_setPropertyDict`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/AppleCredentialManager/AppleCredentialManagerUserClient.cpp`
+- `externalMethod`
+- `lockSEPForPowerOff`
+- `inSize == sizeof(ACMControlTRMSetDeviceLockState)`
+- `_bioThreadCallHandlerGatedSelf`
+- `cmdContextV3`
+- `inSize <= kACMContextDataMaxSize`
+- `ACMKernContextCreate`
+- `%s: %s: no callback set for ACM SEP control: %u.\n`
+- `LBDeviceOwnerAuthentication`
+- `DeserializeVerifyPolicy`
+- `buffer && type`
+- `ACMRequirement - ACMRequirementDataBiometryMatchAttempted`
+- `inSize == sizeof(ACMControlTRMEnableRestrictedMode)`
+- `service.setProperty(name, value)`
+- `validateCommand`
+- `dataLength == sizeof(credData->accPubKey)`
+- `%s: %s: %s(%u) *FAILED* with: 0x%x.\n`
+- `scope`
+- `_startPolicy`
+- `)`
+- `sepManagerService`
+- `CACHE MISS`
+- `logRecord`
+- `ACMTRM-U`
+- `%s: %s: sent kACMTRMMessage_AccCache_Refreshed(%u) 0x%x -> 0x%x.\n`
+- `%s: %s: stopped KE[%u] (ready=%s).\n`
+- `sepDeviceService`
+- `externalForm`
+- `LibCall_ACMContextRemoveCredentialsByValueAndScope`
+- `_aksThreadCallHandlerGatedSelf`
+- `accCacheRecordItem.hashLen <= kACMTRMAccessoryCache_MaxHashSize`
+- `com.apple.private.applecredentialmanager.preboard.config.allow`
+- `inSize >= sizeof(ACMCmdRequest_SetEnvironmentVariableExtended) + request->dataLen`
+- `%s: %s: failed to fetch persistent state (err=%d).\n`
+- `TRMAccCache_Remove`
+- `_onConsoleUsersMessage`
+- `site.ACMCredential.ACMCredentialDataUserOutputDisplayed`
+- `passed`
+- `Util_DeallocCredential`
+- `u32HIDRMEnabledBootArg`
+- `response->resVersion > 0`
+- `%s: %s: %s %s(%u) enabled=%s reason=%u/%u pro=%u/%u pth=%s kb=%x con=%x exp=%s blk=%s miss=%s | seen=%llu now=%llu(%lld) | UET=%llus/%llu PMT=%llus/%llu GPT=%llus/%llu/(%u) RPT=%llus/%llu UPT=%llus/%llu.\n`
+- `_onClear`
+- `sepDevice`
+- `ACMKernContextVerifyPolicyAndCopyRequirementEx`
+- `deviceLockState == kACMKeybagLockStateUnlocked || deviceLockState == kACMKeybagLockStateLocked || deviceLockState == kACMKeybagLockStateDisabled`
+- `DeserializeProcessAcl`
+- `UNKNOWN`
+- `multiStateVersion || guardedStateVersion`
+- `credential1`
+- `segPolicyReason_GracePeriod`
+- `121112111222222222222222222222222221112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `(validFlags & flags) == flags`
+- `TRMAccCache_GetActiveCount`
+- `Env_Init`
+- `ACMTRMStore_ConfigLoad`
+- `processAclCommandInternal`
+- `_startupThreadCall`
+- `%s: %s: ACM control provider *%s* for control code[%u].\n`
+- `site.ACMRequirement.ACMRequirementDataKeyRef`
+- `LibCall_ACMContextGetInfo`
+- `ANY3(value, kACMTRMConfig_GracePeriod_Infinite, kACMTRMConfig_GracePeriod_Bounded, kACMTRMConfig_GracePeriod_Strict )`
+- `policyId`
+- `site.ACMFirstResponderKernelService`
+- `ACMHandleWithPayload`
+- `inSize == sizeof(ACMControlRequestTRMBaseSystemBootedWithBootMode)`
+- `%s: %s: Buddy entered (now=%llu | prev-entered=%llu prev-exited=%llu).\n`
+- `deviceLockState`
+- `SIM REMOVED`
+- `%s: %s: *%s* replaced (size=%u->%u).\n`
+- `%*.*s%d Key: %*.*s\n`
+- `outDataLength`
+- `_onEnterRestrictedMode`
+- `dataLen == slot->objSize`
+- `ctxImageOutBuffer && ctxImageInOutSize`
+- `<data>`
+- `boTRMEnabledByDefault`
+- `segDeviceLockState_Locked_Bucket`
+- `_onAdd`
+- `_onAuthorizedAccessoryDetached`
+- `%s: %s: clockIsTrusted=%s lck=%llu unl=%llu iDt=%llu iTd=%llu iTdcm=%llu.\n`
+- `cache`
+- `Env_GetRequiredClientEntitlementForGet`
+- `notifyClients`
+- `segDeviceLockState_Unlocked`
+- `%s: %s: command = %d, inLength = %lu, outLength = %d, sessionUID = 0x%x (%ld).\n`
+- `rkref`
+- `u32TRMAnalyticsPeriodBootArg`
+- `sepManager`
+- `(state && stateSize && stateSize <= kACMTRMMultiState_MaxSize) || (!state && !stateSize)`
+- `com.apple.private.applecredentialmanager.securestore.ratchet.config.allow`
+- `ACMRequirement - ACMRequirementDataPushButtonWithAttributes`
+- `serviceIterator`
+- `AppleCredentialManager.cpp`
+- `BiometricRatchetAuthentication`
+- `onPolicyStarted`
+- `%s: %s: failed to resume %s(%u), ready=%s.\n`
+- `com.apple.private.applecredentialmanager.securestore.allow`
+- `record->groupLen <= sizeof(row.group)`
+- `resType > kACMCredentialTypeNull && resType < kACMCredentialTypeEnd`
+- `%s: %s: %s = 0x%x <--- not found.\n`
+- `now`
+- `trm_unification`
+- `CGSSessionScreenIsLocked`
+- `%s: %s: returning control[%u] <sensitive>.\n`
+- `param`
+- `accAnalyticsSlot`
+- `%s: %s: event=%u (thread=%p).\n`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/common/CoreEnv.c`
+- `inSize == sizeof(ACMControlRequestTRMAccessoryCache_CheckWithGroup)`
+- `%s: %s: [loaded] inSize=%u -> policyRead=%s configRead=%s accCacheRead=%s isMultiState=%s isGuardedState=%s.\n`
+- `%s: %s: clearing readOnce var[%u].\n`
+- `slot->data`
+- `size >= sizeof(ACMHandle) + sizeof(ACMContextDataType)`
+- `err = _setPropertyU32(service, kACMTRMProperty_PolicyReason, pendState.policyReason, ACMRMUtil::cstrFromTRMPolicyReason) == 0 `
+- `\"Failed endpoint->setSendOOLBuffer() for SEP: err = 0x%x\" @%s:%d`
+- `ACMKernCredentialCreate`
+- `%s: %s: called, [PASSCODE THRESHOLD REACHED] (keybagState=%x).\n`
+- `Env_EraseDataOverMaxAge`
+- `offset + *dataSize <= size`
+- `rupn`
+- `ACMFirstResponderKernelService`
+- `resCategory`
+- `%s: %s: RPT: start=%llu end=%llu (resumed=%s now=%llu).\n`
+- `ACMRequirement - ACMRequirementDataBiometryMatchedWithAttributes`
+- `cntBioLockout`
+- `_milestoneReachedThreadCallHandler`
+- `(parametersCount == 0 && !parameters) || (parametersCount > 0 && parameters)`
+- `acc-cache-add: skipping group`
+- `pos == curSize`
+- `DefaultValueProvider_ThumbAndPayEnabled`
+- `ACMCredential - ACMCredentialDataKextDenyList`
+- `matchDict`
+- `INIT`
+- `TRM_RelaxedPeriod`
+- `%s: %s: called, mdin=0x%p, mdout=0x%p, cmdContext=0x%p.\n`
+- `requirement->type == kACMRequirementTypeSecureIntent`
+- `%s: %s: called, AKS loaded.\n`
+- `propPolicyDisabledByBits`
+- `trm_default`
+- `SAVE-TRMGracePeriod`
+- `pe`
+- `_createServiceTimer`
+- `acc-cache-add: removing oldest group`
+- `boPolicyModesConfigurable`
+- `minUsedAgeBkt`
+- `markSystemIsShuttingDownGated`
+- `_onAccessoryAuthorized(InductiveDom/???)`
+- `handle && dataType && data && dataSize`
+- `request->version > 0`
+- `%s: %s: %s/%s = 0x%x <--- not found.\n`
+- `sepBuffer`
+- `_stopRelaxedPeriodTimer`
+- `ACMTRMStore_PolicySave`
+- `extGetLoggingLevel`
+- `transportContext`
+- `%s: %s: *CORRUPTED TRM STATE DETECTED* (unknown format / tag / version).\n`
+- `context && outSize && outBuffer`
+- `deserializeParameters`
+- `_logConfig`
+- `property`
+- `size >= requiredSize`
+- `dataLen == sizeof(TRMAccCache)`
+- `%s: %s: starting KE[%u] (ready=%s) -> %s.\n`
+- `credential->type == kACMCredentialTypePassphraseEntered`
+- `%s: %s: entering startup thread on retry #%u (startupFlags=0x%x).\n`
+- `loadTRMStateFromMultiState`
+- `Env_SetDataProvider`
+- `AFNA`
+- `_performCommand`
+- `unlockSecret && unlockSecretSize > 0`
+- `params.userModeCaller.allowed`
+- `err = _setPropertyBool(service, kACMTRMProperty_EnrollmentPeriod, (bool)pendState.trmEnrollmentPeriod) == 0 `
+- `%s: %s: called, owning task = %p, securityToken = %p, type = %u, properties = %p.\n`
+- `initAppleCredentialService`
+- `cred->numCredSets <= kACMContextPoolTotalCount`
+- `Util_AllocRequirement`
+- `u32TRMPolicyModeTimeout`
+- `_stopUnlockedPeriodTimer`
+- `DataProvider_SEPTimeSinceBootInMs`
+- `%s: %s: %s(%u)=%s.\n`
+- `u32ITRMGracePeriodTimeout`
+- `LibCall_ACMContextVerifyPolicyEx`
+- `responseBufferSize >= sizeof(Response)`
+- `Policy Mode Timer (PMT)`
+- `%s: %s: returning, err = %ld, timeout=%u.\n`
+- `exclusive flags expected`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/common/CoreTRMAccCache.c`
+- `(size - offset) >= tmpAclLength`
+- `paramsCount <= MAX_PARAMETERS_COUNT`
+- `%s: %s: returning, err = %ld, PERMISSION DENIED (callerPermissions=0x%016llX requiredPermissions=0x%016llX).\n`
+- `ACMRequirement - ACMRequirementDataKofN`
+- `%s: %s: analytics collected (generation=%u, finalize=%s), requested by tool.\n`
+- `_milestoneReachedThreadCall`
+- `u32TRMAnalyticsPeriod`
+- `TRMDomain_Inductive`
+- `%s: %s: isSEPAvailable = %s.\n`
+- `responseSize == sizeof(response.body)`
+- `reqBufferSize >= sizeof(uint32_t)`
+- `ACMKernGetEnvironmentVariable`
+- `%s: %s: unexpected grace period trigger: %u.\n`
+- `consoleSecurityInterest`
+- `lockerDataSize - lockerDataOffset >= sizeof(SerializedEnvSlot)`
+- `ACMCredential - ACMCredentialDataPassphraseExtractable`
+- `TRM_GracePeriodTimeout`
+- `initWithTask`
+- `ACMRequirement - ACMRequirementDataPasscodeValidated`
+- `err = _setPropertyU32(inductiveDomain, kACMTRMProperty_DomainProperty_CacheMissThreshold, pendState.itrmCacheMissThreshold, inductiveDomainPrefix) == 0 `
+- `com.apple.private.applecredentialmanager.allow`
+- `strncmp(propertyName, kACMTRMDaemonNotificationProperty_ScheduleWakeup, maxPropertyNameLength) == 0 || strncmp(propertyName, kACMTRMDaemonNotificationProperty_SaveData, maxPropertyNameLength) == 0 || strncmp(propertyName, kACMTRMDaemonNotificationProperty_CheckAppleSetup, maxPropertyNameLength) == 0`
+- `copyDeviceSerialNumber`
+- `\"ACM: BoolKey(%u) out of range!\" @%s:%d`
+- `ioService`
+- `systemWillShutdown`
+- `%s: %s: *** GOING OFFLINE *** ---> aborting SEP command=%u (isPoweringOff=%s, isSystemShuttingDown=%s).\n`
+- `responsePayload.v1.payloadVersion > 0`
+- `LibCall_BuildCommand`
+- `ACMKernCredentialDelete`
+- `_startupThreadCallHandlerGatedSelf`
+- `user`
+- `outSize && *outSize >= sizeof(ACMControlResponseGetCapabilitiesLegacyACMLib)`
+- `dictClone`
+- `%s: %s: unsupported AP: unexpected itemsDataSize=%u.\n`
+- `credential->type == kACMCredentialTypeBiometryMatched`
+- `DEBUG`
+- `_dispatchEvents`
+- `%s: %s: forbidden to override var[%u]: data differs from existing data.\n`
+- `credentialList[i]`
+- `*outSize >= dataSize`
+- `HIDRM_EnrollmentPending`
+- `SUCCEEDED`
+- `com.apple.private.applecredentialmanager.securestore.macbuddy.allow`
+- `array of ACMParameter`
+- `%s: %s: PMU-ACK: function-ack_dbl_click() *FAILED* with: 0x%x.\n`
+- `operationLength`
+- `ACMBridgeKernelService`
+- `%s: %s: returning, result = %s.\n`
+- `%s: %s: *analytics* successfully loaded.\n`
+- `err = _setPropertyU32(service, kACMTRMProperty_UnlockedPeriodTimeout, pendState.unlockedPeriodTimeout) == 0 `
+- `%s: %s: disabled in SEP: nothing to send.\n`
+- `%s: %s: sending message to SEP, request = %d, info = %d, length = %d.\n`
+- `Env_SetDataValidationFunction`
+- `record->dataLen <= sizeof(row.data)`
+- `_sendTRMAnalyticsThroughKext`
+- `%s: %s: DEVICE OFFLINE (err=%x) retrying (%u/%u) after %u ms (total: %u ms).\n`
+- `pmu`
+- `%s: %s: [replaced] bufSize=%u policyReplaced=%s configReplaced=%s.\n`
+- `TRM_DeviceLocked`
+- `ACMRequirement - ACMRequirementDataAccessGroups`
+- `timer`
+- `u64ITRMTokenDroppedTime`
+- `segPolicyEnabled_No_Bucket`
+- `site.ACMCredential.ACMCredentialDataSignature`
+- `u64BuddyExitedTime`
+- `_scheduleUpcomingEvent`
+- `%s: %s: %s-%s: ver=%u flg=%x gSw=%u GP=%u prePro=%u(d=%u) hSw=%u Pro=%u(d=%u).\n`
+- `%s: %s: calling control[%u] <sensitive>.\n`
+- `_collectionTimer`
+- `epReadyBkt`
+- `inMap->getLength() >= sizeof(acm_command_t)`
+- `%s: %s: waiting (cmd=%u).\n`
+- `dataLength == sizeof(ACMCredentialDataPasscodeValidated2)`
+- `%*.*s%d BOOLEAN(%zu) %i\n`
+- `%s: %s: fetching *%s* <- locker (gen=%u msLen=%u dataLen=%u ver=%u).\n`
+- `boHIDRMEnrollmentSession`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/AppleCredentialManager/Services/ACMRestrictedModeIOState.cpp`
+- `err = _setPropertyU32(genericDomain, kACMTRMProperty_DomainProperty_GracePeriodReason, pendState.gracePeriodReason, genericDomainPrefix, ACMRMUtil::cstrFromTRMGracePeriodReason) == 0 `
+- `!dataSize || data`
+- `TRMMultiState_WriteToBuffer`
+- `dataLength == sizeof(ACMCredentialDataPassphraseEntered)`
+- `handle || scope == kACMScopeGlobal`
+- `ACMRequirement - ACMRequirementDataSecureStateWithAttributes`
+- `u32TRMProfileEDTProp`
+- `_sepManagerMatchedNotifier`
+- `TRMAccCache_SetupEmpty`
+- `%s: %s: giving up waiting for SEP endpoint after %llums (cmd=%u).\n`
+- `responseDataOrigin`
+- `_policy`
+- `_onEnvGet`
+- `selectedMultiStateVersion`
+- `buf`
+- `parametersCount`
+- `(size - offset) >= constraintLength`
+- `size >= credSize`
+- `kACMTRMMessage_PropertyChanged`
+- `length <= buf->getBuffer()->getLength()`
+- `_resumeRelaxedPeriodTimer`
+- `Pearl`
+- `_detectEDUMode`
+- `segPolicyReason_ForceRestricted_Bucket`
+- `err = _setPropertyBool(service, kACMTRMProperty_EnrollmentPending, (bool)pendState.trmEnrollmentPending) == 0 `
+- `*unlockSecretLength >= dataSize`
+- `_onCollectionEnded`
+- `err = _setPropertyBool(service, kACMTRMProperty_CacheMiss, (bool)pendState.cacheMissFlag) == 0 `
+- `requirement`
+- `credential2`
+- `true`
+- `'disable-transport-rm' property not found`
+- `_aksThreadCallHandler`
+- `deviceLockState && consoleState`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/common/CoreSEPControl.c`
+- `%s: %s: using saved async deviceLockState=%u (instead of initial deviceLockState=%u).\n`
+- `%s: %s: %s keybag=%d cannot be added, no space!.\n`
+- `(enrollmentState && enrollmentStateLength && enrollmentStateLength <= ENROLLMENT_STATE_MAX_SIZE) || (!enrollmentState && !enrollmentStateLength)`
+- `remainingInterval > 0`
+- `cred->domain == kACMDomainUnknown || cred->domain == kACMDomainUserMode || cred->domain == kACMDomainKernelMode || cred->domain == kACMDomainSecureEnclave`
+- `site.ACMCredential.ACMCredentialDataPassphraseExtractable`
+- `%s: %s: mem: type=%s ptr=%p size=%u (total=%u raw=%u data=%u types=%u) %s:%d (%s).\n`
+- `params.kernelCaller.allowed`
+- `LibCall_ACMContextGetData`
+- `responseSize == sizeof(uint32_t)`
+- `_onBuddyEntered`
+- `_resumeStandardModeTimer`
+- `payloadPos + srcRec->dataLen <= bufLen`
+- `variable == slotAtIndex->variable`
+- `%*.*s%d TIME(%zu)\n`
+- `%s: %s: called, deviceLockState=%u (previousDeviceLockState=%u).\n`
+- `hash && hashLen && hashLen <= kACMTRMAccessoryCache_MaxHashSize`
+- `dtData`
+- `/Library/Caches/com.apple.xbs/4776FB82-4876-4747-BD9A-F14E510003B9/TemporaryDirectory.gzqdtN/Sources/AppleCredentialManager_KernelLibs/ACMKernelLib/ACMKernelTransport.cpp`
+- `com.apple.private.applecredentialmanager.oti.entropy.allow`
+- `0123456789abcdef`
+- `u32TRMProfileBootArg`
+- `segPolicyEnabled_No`
+- `%s: %s: DEF-ACK: timer scheduled.\n`
+- `acm`
+- `_restartRelaxedPeriodTimer`
+- `%s: %s: get var[%u] len=%u <%s>.\n`
+- `u64DeviceUnlockedTime`
+- `%s: %s: returning, err = %ld.\n`
+- `%s: %s: %s(%u) <--- cleared.\n`
+- `ACMRestrictedModeAnalyticsKernelService`
+- `(data && dataLength && dataLength <= kACMEnvironmentVariableMaxDataLength) || (!data && !dataLength)`
+- `reqLen <= *bufferSize`
+- `segDeviceLockState_Disabled_Bucket`
+- `121112222222221`
+- `site.ACMCredential.ACMCredentialDataSecureIntent`
+- `ep`
+- `_onEnvGetPolicyMode`
+- `key == slotAtIndex->key`
+- `TRM_GracePeriodReason`
+- `%s: %s: sending %s (name='%s', numFields=%u, event=[%u %u %u %u %u %u %u %u]) -> err=%u.\n`
+- `Invalid ClientID!`
+- `U`
+- `_bioService`
+- `size >= sizeof(uint32_t)`
+- `site.ACMCredential.ACMCredentialDataContinuityUnlock`
+- `resumeAnalytics`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/AppleCredentialManager/Services/ACMAccessoryCacheKernelService.cpp`
+- `err = _removeProperty(service, kACMHIDRMProperty_BuddyPeriod) == 0 `
+- `%s: %s: called, messageType=%x, argSize=%u.\n`
+- `%s: %s: invalid event type: %u.\n`
+- `param->parameterDataLength == sizeof(uint32_t)`
+- `site.ACMRequirement.ACMRequirementDataAP`
+- `_saveAll`
+- `resumeSegment`
+- `site.ACMRequirement.ACMRequirementDataAccessGroups`
+- `segPolicyReason_Unknown`
+- `segConfigProfile_AlwaysAllow_Bucket`
+- `initU32FromBootArg`
+- `aclRequiresPasscodeInternal`
+- `responseBufferSize >= 2 * sizeof(uint32_t)`
+- `inSize == sizeof(ACMControlRequestTRMAuthorizedAccessoryDetachedInDomain)`
+- `%s: %s: [BIO DROPPED] forcedBioRestrictionReason=%u, unlockTokenDroppedReason=%u.\n`
+- `sigSize > 0 && sigSize <= kACMCredentialDataSignatureMaxSize`
+- `rbio`
+- `inSize == sizeof(ACMControlTRMDaemonStarted)`
+- `%s: %s: multiuser config not yet populated in _COMM_PAGE_MULTIUSER_CONFIG.\n`
+- `u32TRMUnlockedPeriodTimeout`
+- `LibCall_ACMKernDoubleClickNotify`
+- `_onAuthorizedAccessoryDetached(GenericDom/GenericAcc)`
+- `com.apple.AppleCredentialManager.TransportRestrictedMode`
+- `_acmService`
+- `%s: %s: Entitlement '%s' not found..\n`
+- `lockSEP`
+- `_onBuddyExited`
+- `gAKS`
+- `%*.*s%d DICTIONARY(%zu)\n`
+- `snProperty`
+- `LibCall_ACMContextVerifyPolicyAndCopyRequirementEx`
+- `...`
+- `reason`
+- `LibCall_ACMTRMSaveState`
+- `%s: %s: failed to load *acc-cache* (err=%d).\n`
+- `%s: %s: disabled by ExternalBoot: %s.\n`
+- `_onAKSLoaded`
+- `u32TRMAccCacheExpiration`
+- `AAWU`
+- `responseSize == sizeof(response)`
+- `%s: %s: called, starting TRM service [BUILT: %s, %s].\n`
+- `ANY3(deviceLockState, kACMDeviceLockStateUnlocked, kACMDeviceLockStateLocked, kACMDeviceLockStateDisabled)`
+- `%s: %s: saving async deviceLockState=%u (prev=%u) received during policy startup.\n`
+- `sourceVersion`
+- `ACMKernPrivContextVerifyAclConstraint`
+- `TRM_Recovery`
+- `inSize == sizeof(ACMControlTRMEnterRestrictedMode)`
+- `%s: %s: ignoring cache miss (threshold not reached, count=%u).\n`
+- `bufferOffset == bufferSize`
+- `cred`
+- `_onServiceTimerHandler`
+- `u32HIDRMEnabledEDTProp`
+- `inSize == sizeof(ACMControlRequestTRMAccessoryCache_Iterate)`
+- `_onRemove`
+- `LibCall_ACMContexRemoveCredentialsByTypeAndScope`
+- `_checkAppleSetup`
+- `Env_GetVariableTimestamp`
+- `N`
+- `Y`
+- `size >= sizeof(ACMHandle) + sizeof(ACMCredentialType) + sizeof(ACMScope)`
+- `err = _setPropertyBool(service, kACMTRMProperty_BaseSystem, (bool)pendState.baseSystem) == 0 `
+- `inSize == sizeof(ACMControlRequestTRMAccessoryCache_Remove)`
+- `%s: %s: notification ignored, reason: restricted or force-restricted.\n`
+- `_onAuthorizedAccessoryDetached(InductiveDom/UnidentifiableAcc)`
+- `%s: %s: EDT profile has changed - updating *default* profile: %s -> %s.\n`
+- `_onResourceUsageInfoHandler`
+- `block_aid_reset`
+- `Env_isSIPEnabledAndNoCustomOS`
+- `credential`
+- `err = _setPropertyBool(service, kACMTRMProperty_RelaxedPeriod, (bool)pendState.relaxedPeriod) == 0 `
+- `err = _setPropertyDict(service, kACMTRMProperty_Domain_Generic, genericDomain) == 0 `
+- `err = prop___del(name, prefix) == 0 `
+- `data.size <= kACMTRMAccessoryCache_MaxDataSize`
+- `requirePasscode`
+- `dataLength == sizeof(ACMCredentialDataPassphraseExtractable)`
+- `dataLength == sizeof(ACMCredentialDataPasscodeValidated)`
+- `cntSIMRemoved`
+- `SAVING`
+- `%s: %s: called, forced=%s inGenericDomain=%s inInductiveDomain=%s.\n`
+- `%s: %s: ignoring *%s* (dataLen=%u).\n`
+- `boTRMEnabledByDeviceTreeOrBootArgOverride`
+- `err = _setPropertyBool(service, kACMTRMProperty_Recovery, (bool)pendState.recovery) == 0 `
+- `_sendBuf`
+- `dataLength == sizeof(credData->originator)`
+- `%s: %s: set var[%u] <sensitive>.\n`
+- `Yes`
+- `site.ACMLockdownModeKernelService`
+- `(inData && inSize && inSize <= kACMEnvironmentVariableMaxDataLength) || (!inData && !inSize)`
+- `tmpAcl`
+- `ACMRequirement - ACMRequirementDataPassphraseEntered`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/AppleCredentialManager/Services/ACMTRMInductivePolicy.cpp`
+- `notificationSent`
+- `AttestationFromRequirement`
+- `size >= sizeof(acm_command_t) + sizeof(ACMControlCode)`
+- `nonAutoDisposable requires tracking support`
+- `consumedBytes`
+- `key = ccder_decode_constructed_tl(CCDER_CONSTRUCTED_SEQUENCE, &next, der, der_end)`
+- `avgUsedAgeBkt`
+- `%s: %s: enrollmentReason: eraseInstall=%s updatingFromPreHIDRMSystem=%s.\n`
+- `_stopGracePeriodTimer`
+- `copy`
+- `ACMTRMStore_ConfigSave`
+- `segPolicyReason_Restricted`
+- `err = _setPropertyBool(inductiveDomain, kACMTRMProperty_DomainProperty_CacheMiss, (bool)pendState.itrmCacheMissFlag, inductiveDomainPrefix) == 0 `
+- `_startTRMEnrollment`
+- `%s: %s: called, keybagState=%x (previousKeybagState=%x).\n`
+- `newValue && newValueSize == 1`
+- `policyLength <= MAX_POLICY_LENGTH`
+- `parameters`
+- `checkEntitlement`
+- `segGracePeriodReason_Unknown`
+- `CacheMissCount`
+- `_onServiceTimer`
+- `%s: %s: failed to acquire initial device state, will retry in %u second(s).\n`
+- `cntSOS`
+- `site.AppleCredentialManagerUserClient`
+- `%s: %s: %s = 0x%x.\n`
+- `L`
+- `ACMKernelService`
+- `_resetServiceTimer`
+- `ACMTRMStore_AnalyticsLoad`
+- `cmdGatedBkt`
+- `%s: %s: entering startup thread (startupFlags=0x%x).\n`
+- `%s: %s: failed to load *policy* (err=%d).\n`
+- `dataLength == DATABASE_HASH_SIZE`
+- `com.apple.private.applecredentialmanager.daemon.allow`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/common/CoreUtil.c`
+- `%s: %s: returning, err = %ld, notification=%u.\n`
+- `dtChosen`
+- `PreboardVoiceAssistant`
+- `credCount <= MAX_CREDENTIAL_LIST_LEN`
+- `rkofn`
+- `%s: %s: *acc-cache* successfully loaded.\n`
+- `credential->type == kACMCredentialTypeUserOutputDisplayed`
+- `SAVE-TRMGlobalSwitch`
+- `processAclInternal`
+- `_onEnvSetPolicyMode`
+- `bufferSize`
+- `com.apple.AppleCredentialManager.CommandLatency`
+- `%s: %s: skipping *%s* <- daemon (gen=%u osLen=%u).\n`
+- `setPowerState`
+- `_onAccessoryAuthorized(GenericDom/StandardAcc)`
+- `err = _setPropertyBool(service, kACMHIDRMProperty_EnrollmentPeriod, (bool)pendState.hidrmEnrollmentPeriod) == 0 `
+- `dataLength == sizeof(credData->confirmationHash)`
+- `%s: %s: returning, err = %ld, req=%u info=%u inLen=%u outLen=%u took=%s/%ums resBuf=%u).\n`
+- `req`
+- `credentialProperty`
+- `CoreAnalyticsHub`
+- `trm_grace_period_timeout`
+- `LibCall_ACMContextCreate`
+- `SAVE-TRMProfile`
+- `builtinBiometry == kACMBuiltinBiometryTypeNone || builtinBiometry == kACMBuiltinBiometryTypeTouchID || builtinBiometry == kACMBuiltinBiometryTypeFaceID || builtinBiometry == kACMBuiltinBiometryTypeSoys`
+- `_setPropertyU32`
+- `_onIterate`
+- `%s: %s: DENIED: Entitlement '%s' not found!.\n`
+- `_powerOffTimer`
+- `stateOutBuffer && stateInOutSize`
+- `_unlockedPeriodTimer`
+- `policy`
+- `slot->controlCB`
+- `credentialList || (count == 0)`
+- `222221111111111`
+- `_aksNotifier`
+- `params->credentialsInterface->verifyPolicy`
+- `site.AppleCredentialManager`
+- `LibSer_ACMDeserializeSEPControlCode`
+- `err = prop___set(name, value, prefix, ACMRMUtil::cstrFromOSBoolean) == 0 `
+- `AskEveryTime`
+- `%s: %s: called, keybagState=%x newKeybagState=%x (previousKeybagState=%x).\n`
+- `_isDeviceUnlocked() || entitledToConfigureWhileLocked`
+- `reloadAnalyticsFromDaemon`
+- `performSCRDInitialization`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/common/CoreTRMMultiState.c`
+- `DeserializeVerifyAclConstraint`
+- `size >= sizeof(ACMHandle) + sizeof(ACMContextDataType) + sizeof(uint32_t)`
+- `now > 0`
+- `disable-transport-rm`
+- `'external-boot' property not found`
+- `u32TRMBaseSystemBootArg`
+- `size >= sizeof(acm_command_t)`
+- `sepManagerDict`
+- `value_size == 1`
+- `u32USBStandardModeTimeoutBootArg`
+- `path && property`
+- `%s: %s: called, consoleState=%x (previousConsoleState=%x).\n`
+- `lockerDataSize - lockerDataOffset >= rawSlot.dataSize`
+- `der`
+- `err = _removeProperty(service, kACMTRMProperty_EnrollmentPeriod) == 0 `
+- `EXIT`
+- `ACMTRMEvent_ScheduleWakeup`
+- `params[i].parameterData`
+- `%s: %s: pushing *%s* -> daemon (gen=%u dataLen=%u ver=%u).\n`
+- `_logPolicy`
+- `_startupThreadCallHandlerGated`
+- `TRMAccCache_Expect`
+- `%s: %s: Erasing environment variable[%u] because of the age %u ms, maxAge: %u ms.\n`
+- `err = _removeProperty(service, kACMTRMProperty_EnrollmentPending) == 0 `
+- `name`
+- `inSize <= kACMControlMaxDataLength`
+- `os_add_overflow((uintptr_t)outBufferOpt, pos, (uintptr_t *)&writePtr) == 0 `
+- `propertySet`
+- `TRM_BuddyPeriod`
+- `propertyDict`
+- `srcRec->dataLen <= kACMTRMLegacyAccessoryCache_MaxDataSize`
+- `ACMCredential - ACMCredentialDataPasscodeValidated2`
+- `%s: %s: ---> HIDRM state changed (%u) while %s(%u), enabled=%u E=%u/%u.\n`
+- `_onBioMessage`
+- `handle`
+- `com.apple.private.applecredentialmanager.nonautodisposablecontext.allow`
+- `dataLength == sizeof(ACMCredentialDataSecureIntent)`
+- `dataLen == sizeof(ACMTRMPersistentAnalytics)`
+- `%s: %s: called, in_md = %p, out_md = %p, out_md_size = %u.\n`
+- `ANY3(dtValue, kEOSDeviceTypeNoCoprocessor, kEOSDeviceTypeT208, kEOSDeviceTypeT290)`
+- `performCommandFunc`
+- `record->hashLen <= sizeof(row.hash)`
+- `%s: %s: registering notifications.\n`
+- `_savePolicy`
+- `%s: %s: %s keybag=%d added.\n`
+- `set`
+- `DataValidation_BuiltinBiometry`
+- `target && cmdContext && args`
+- `Stats_ExportTopLatencyCauses`
+- `AppleSEPManager`
+- `_consoleUsersThreadCall`
+- `serializeParameters`
+- `%s: %s: pushing *%s* -> locker (gen=%u msLen=%u dataLen=%u ver=%u).\n`
+- `serialNumber`
+- `%s: %s: UInt64Key(%u) not set!.\n`
+- `u32TRMUnlockedPeriodTimeoutBootArg`
+- `_aksThreadCall`
+- `_events.topIndex + 1 < UTIL_ARR_SIZE(_events.list)`
+- `preflight`
+- `\n`
+- `ACMRequirement - ACMRequirementDataKeyRef`
+- `%s: %s: UInt64Key(%u) out of range!.\n`
+- `u32BootMode`
+- `TRMAccCache_GetAge`
+- `err = _removeProperty(service, kACMHIDRMProperty_EnrollmentPending) == 0 `
+- `memOut`
+- `_commandGate`
+- `bootMode`
+- `localErr == 0 `
+- `_mbsetupuser`
+- `site.ACMPersistentStoreKernelService`
+- `%s: %s: called, isLockerAvailable=%s.\n`
+- `stress-rack`
+- `_waitForSEPEndpoint.selfLock`
+- `%s: %s: requirePasscode = %p.\n`
+- `ACMTRM-S`
+- `acc-cache-add: updating group`
+- `inBuffer`
+- `unexpectedShutdownDetected`
+- `command && commandSize >= sizeof(ACMSEPControlCode)`
+- `site.ACMRequirement.ACMRequirementDataPasscodeValidatedWithAttributes`
+- `maxUsedAgeBkt`
+- `extPerformCommand`
+- `%s: %s: Deferring power off (ACK deadline: %u seconds).\n`
+- `%s: %s: DEF-ACK: timer %s.\n`
+- `ACMLockdownModeKernelService`
+- `%s: %s: kIOMessageSystemHasPoweredOn.\n`
+- `_startupThreadCallHandler`
+- `_onAuthorizedAccessoryDetached(InductiveDom/StandardAcc)`
+- `slot->dataSize <= UINT16_MAX`
+- `ACMRequirement - ACMRequirementDataUserOutputDisplayed`
+- `serviceMatchingDict`
+- `%*.*s%d INTEGER(%zu) %lli\n`
+- `kACMHIDRMMessage_EnrollmentPending`
+- `res`
+- `trm-enabled`
+- `ACMRestrictedModeKernelService.cpp`
+- `LibCall_ACMTRMLoadState`
+- `performKernelControlGated`
+- `getData`
+- `%s: %s: failed to load *analytics* (err=%d).\n`
+- `%s: %s: disabled by OSEnvironment: %s.\n`
+- `boUnificationSupported`
+- `TRM_UnlockedPeriod`
+- `size >= sizeof(ACMHandle) + sizeof(ACMContextDataType) + sizeof(uint8_t)`
+- `121111121222121211111111111112`
+- `/options`
+- `%s: %s: PMU-ACK: function-ack_dbl_click() succeeded.\n`
+- `_loadAll`
+- `_validateCommand`
+- `data && dataLen`
+- `controlSlot`
+- `Util_GenerateRandom`
+- `sepManagerMatchedGated`
+- `!hashLen || (hashOpt && hashLen <= kACMTRMAccessoryCache_MaxHashSize)`
+- `%s: %s: returning control[%u] len=%u <%s>.\n`
+- `cmd->opcode == kCmdKernelControl`
+- `_bioNotifier`
+- `%s: %s: *config* loaded (ver=%u size=%u->%u).\n`
+- `clearVariablesWithMask`
+- `err = _removeProperty(service, kACMHIDRMProperty_EnrollmentPeriod) == 0 `
+- `_enqueueEventAndDispatchQueue`
+- `segPolicyReason_GracePeriod_Bucket`
+- `credential->type == kACMCredentialTypeAP`
+- `skipping - already started`
+- `_onEnvSetTRMGracePeriod`
+- `der_end`
+- `_allocatedMem.total >= size`
+- `acc-cache: dropping record`
+- `%s: %s: SIP disabled, access denied.\n`
+- `change == 0`
+- `lockerReadBkt`
+- `ACMKernDoubleClickNotify`
+- `transport`
+- `LibCall_ACMSecSetBuiltinBiometry`
+- `Util_GetBitCount(flags) == 1`
+- `u64End`
+- `requirement->type == kACMRequirementTypePushButtonPressed`
+- `_sleepWakeNotifier`
+- `inSize == sizeof(ACMControlRequest_TRMEnv_Get)`
+- `/defaults`
+- `trm_policy_timeout`
+- `%s: %s: inited KE[%u] (ready=%s AVP=%s SIM=%s SIMT=%s USESEP=%s) -> true.\n`
+- `_registerNotifiers() == 0 `
+- `AppleKeyStore`
+- `size >= reqSize`
+- `dataLength == sizeof(ACMCredentialDataContinuityUnlock)`
+- `SPI call`
+- `_kernelServices[i]`
+- `LibCall_ACMPublishTrustedAccessories`
+- `_onAccessoryAuthorized(GenericDom/UnidentifiableAcc)`
+- `_resumePolicy`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/common/LibSerialization.c`
+- `param->parameterDataLength && (param->parameterDataLength <= MAX_ACCESS_GROUPS_LEN)`
+- `ACMRequirement - ACMRequirementDataAnd`
+- `121111121221112212221112212221112212221112212221112212222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `_inductiveDomain`
+- `IOPlatformExpertDevice`
+- `err = _setPropertyBool(service, kACMTRMProperty_DeviceLocked, (bool)pendState.deviceLocked) == 0 `
+- `aksServicesFunc`
+- `getOrPanic`
+- `segConfigProfile_AskEveryTime`
+- `checkInitialLockStateOnce`
+- `param->parameterDataLength == sizeof(uint64_t)`
+- `length`
+- `_onNotificationAcknowledged`
+- `%s: %s: customOS booted, access denied.\n`
+- `DeveloperModeSigning`
+- `dataLength == sizeof(uint32_t)`
+- `_onAKSMessage`
+- `ACMRestrictedModeEnvironment.cpp`
+- `cntPolicyModeTimerExpired`
+- `UNLOCKED`
+- `DeviceUnlocked`
+- `param.parameterData && param.parameterDataLength == sizeof(uint8_t)`
+- `%s: %s: wake-up alarm triggered.\n`
+- `acc-cache-check: unexpired record found`
+- `CacheMiss`
+- `%s: %s: %s%s = %s%s%u%s.\n`
+- `%s: %s: sending synchronous command to SEP, request = %d, info = %d, length = %lu.\n`
+- `sep-endpoint,scrd`
+- `%s: %s: called, messageType = %u.\n`
+- `%s: %s: ignoring unknown var[%u], device downgraded?.\n`
+- `credLen <= *outSize`
+- `site.ACMAnalyticsKernelService`
+- `ACMAnalyticsKernelService`
+- `transport && context && value`
+- `_onAccessoryAuthorized(InductiveDom/UnidentifiableAcc)`
+- `ioResources`
+- `(size - offset) >= sizeof(uint8_t)`
+- `incrementCounter`
+- `requirement->dataLength >= sizeof(ACMRequirementDataRatchet)`
+- `_aksService`
+- `%s: %s: returning, err = %ld, set Env(%u)=%u failed.\n`
+- `%s: %s: fetching *%s* <- daemon (gen=%u osLen=%u dataLen=%u ver=%u).\n`
+- `err = _setPropertyU32(genericDomain, kACMTRMProperty_DomainProperty_PolicyReason, pendState.policyReason, genericDomainPrefix, ACMRMUtil::cstrFromTRMPolicyReason) == 0 `
+- `waitForSEPEndpointOutsideACMCommandGate`
+- `outBuffer && outSize`
+- `DataValidation_RatchetConfig`
+- `%*.*s%d DATA(%zu) `
+- `%s: %s: UInt32Key(%u) not set!.\n`
+- `boNull`
+- `!length2 || data2`
+- `_consoleUsersThreadCallHandlerGated`
+- `record->dataLen <= kACMTRMAccessoryCache_MaxDataSize`
+- `remaining >= cmdSize`
+- `(keybagUuid && keybagUuidLength == UUID_LEN) || (!keybagUuid && !keybagUuidLength)`
+- `count`
+- `%s: %s: ---> TRM state changed (%u/%u/%u) while %s(%u), TRM: %u/%c(%u) %u/%c(%u) M=%u/%u/%u %s(%u)/%s(%u) L=%u BS=%u R=%u RP=%u/%u UP=%u/%u, RAW: %c(%u) %c(%u).\n`
+- `%s: %s: ignoring - not allowed.\n`
+- `writeToSEPBuffer`
+- `_onDeveloperModeStatusChanged`
+- `com.apple.private.applecredentialmanager.oti.config.allow`
+- `(size - offset) >= opLen`
+- `_onAccessoryCacheMissOccurred`
+- `%s: %s: GPT: adjusted based on seenUnlockedTime=%llu.\n`
+- `site.ACMRequirement.ACMRequirementDataSecureStateWithAttributes`
+- `newValue && newValueSize == sizeof(ACMRatchetConfig)`
+- `heap underflow / memory tracking issue?`
+- `TRM_UnlockedPeriodTimeout`
+- `%s: %s: SEP cmd(%u)~%u on CS[%u] (perm=0x%016llX SUID=%d) took %u(%u) ms -> ioErr=0x%x acmErr=%d.\n`
+- `dataLength == sizeof(uuid_t)`
+- `targetContextExternalForm && targetContextExternalFormLength == sizeof(ACMHandle)`
+- `size >= sizeof(ACMCredential)`
+- `%s: %s: UInt32Key(%u) out of range!.\n`
+- `segConfigProfile_AskForNewAccessories`
+- `_sepContext.responseDataLength >= sizeof(SCRDResponsePayloadHead)`
+- `%s: %s: Initializing SEP endpoint.\n`
+- `os_add_overflow((uintptr_t)inBuffer, pos, (uintptr_t *)&readPtr) == 0 `
+- `_pmuDblClickAckTimer`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/AppleCredentialManager/Services/ACMBridgeKernelService.cpp`
+- `%s: %s: timed out waiting for %s (timeoutMs=%llu).\n`
+- `(data && dataLength && dataLength <= kACMControlMaxDataLength) || (!data && !dataLength)`
+- `requirement->type == kACMRequirementTypeUserOutputDisplayed`
+- `(ctxImage && ctxImageSize && ctxImageSize <= kACMContextImageMaxSize)`
+- `%s: %s: marked system shutting down, stateFlags=0x%x.\n`
+- `kCGSessionLoginDoneKey`
+- `validateInputDataFormat`
+- `*outSize >= 1`
+- `outSize`
+- `ACMCredential - ACMCredentialDataBiometryMatchAttempted`
+- `segGracePeriodReason_DeviceLocked`
+- `segDeviceLockState_Unlocked_Bucket`
+- `inSize == sizeof(ACMControlRequestTRMAccessoryAuthorizedWithFlags)`
+- `!groupLen || (groupOpt && groupLen <= kACMTRMAccessoryCache_MaxGroupSize)`
+- `site.ACMRequirement.ACMRequirementDataSecureIntent`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/common/CommonMem.c`
+- `ACMKernPrivTRMSaveState`
+- `%s: %s: called, starting AccessoryCache service.\n`
+- `cmdContextV2`
+- `_onAccessoryAuthorized(GenericDom/GenericAcc)`
+- `acc-cache-add: replacing existing record`
+- `propActualCollectionPeriod`
+- `lock`
+- `dataType != kACMContextDataTypeUnknown`
+- `site.ACMRestrictedModeAnalyticsKernelService`
+- `_sendPolicyModeAnalyticsThroughKext(finalizedAnalytics) == 0 `
+- `lockerWriteBkt`
+- `_publishHIDRM`
+- `IOConsoleUsers`
+- `cntAIDResetBlocked`
+- `credential->type == kACMCredentialTypePasscodeValidated2`
+- `FACTORY`
+- `payloadPos + srcRec->hashLen <= bufLen`
+- `err = _setPropertyBool(service, kACMHIDRMProperty_EnrollmentPending, (bool)pendState.hidrmEnrollmentPending) == 0 `
+- `%s: %s: skipping unknown item (itemType=0x%x payloadSize=%u).\n`
+- `aclConstraintLength`
+- `DeserializeCredentialList`
+- `cmdContext`
+- `outputBufferLength && (*outputBufferLength >= _sepContext.responseDataLength)`
+- `DoublePressAndBio`
+- `*dataSize <= maxDataSize`
+- `outSize && *outSize >= sizeof(ACMControlResponseTRMAccessoryCache_CheckWithGroup)`
+- `!context`
+- `ACMRequirement - ACMRequirementDataRatchet`
+- `subreqCount > 0 && subreqCount <= kACMRequirementSubRequirementMaxCount`
+- `!accCache || accCacheSlot->objSize == sizeof(TRMAccCache)`
+- `stopSegment`
+- `ACMKernelLib`
+- `%s: %s: called, selector = %d, arguments = %p, dispatch = %p, targer = %p, reference = %p.\n`
+- `pmuDblClickAckAction`
+- `%s: %s: called, starting keybag service.\n`
+- `(parameters && parametersCount) || (!parameters && !parametersCount)`
+- `err = _setPropertyU32(service, kACMTRMProperty_CacheMissThreshold, pendState.cacheMissThreshold) == 0 `
+- `u32ITRMGracePeriodTimeoutBootArg`
+- `segPolicyEnabled_Yes_Bucket`
+- `err = _removeProperty(service, kACMTRMProperty_BuddyPeriod) == 0 `
+- `responseBufferSize >= 3 * sizeof(uint32_t) + authMethodInstLength`
+- `data`
+- `_onEnvSetTRMGlobalSwitch`
+- `site.ACMRequirement.ACMRequirementDataKofNWithAttributes`
+- `u32TRMAccCacheSize`
+- `trm_acc_cache_expiration`
+- `/efi/platform`
+- `---`
+- `_onEnablePolicy`
+- `bufLen >= sizeof(ACMTRMCompactState)`
+- `slot`
+- `powerOffAction`
+- `_onAccessoryAuthorized(GenericDom/???)`
+- `%s: %s: set var[%u] len=%u <%s>.\n`
+- `1`
+- `Restricted`
+- `commandProcessedGated`
+- `!hashLen || !memcmp(record->hash, hashOpt, hashLen)`
+- `%s: %s: data validator *%s* for var[%u].\n`
+- `rag`
+- `%s: %s: %s: count=%u totalDuration=%u startTime=%llu.\n`
+- `unlockSEP`
+- `%s: %s: [COM] CALLING %s.\n`
+- `label`
+- `%s: %s: isFastSim = %s.\n`
+- `!preflightFound || allowPreflightParameter`
+- `!_policyStartedInBaseSystem`
+- `_saveConfig`
+- `%s: %s: called, timeout = %u (now = %llu, end = %llu).\n`
+- `segGracePeriodReason_DeviceUnlocked_Bucket`
+- `%s: %s: PMT: start=%llu end=%llu (resumed=%s now=%llu).\n`
+- `_resumeGracePeriodTimerWithReason`
+- `boHIDRMEnabledByDeviceTreeOrBootArgOverride`
+- `setProperty`
+- `err = _setPropertyBool(genericDomain, kACMTRMProperty_DomainProperty_CacheMiss, (bool)pendState.cacheMissFlag, genericDomainPrefix) == 0 `
+- `acc-cache-remove: record not found`
+- `ACMTRM-E`
+- `DISABLED`
+- `LibCall_ACMContexAddCredentialWithScope`
+- `ACMKernGlobalContextRemoveCredentialsByType`
+- `size >= sizeof(ACMRequirement)`
+- `_onDoubleClickNotification`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/AppleCredentialManager/ACMKernelUtils.cpp`
+- `%s: %s: called, provider = %p.\n`
+- `LOCKED`
+- `outSize && *outSize >= sizeof(ACMControlResponseTRMAccessoryCache_Remove)`
+- `%s: %s: called, 'Unlocked Period Timer (UPT)' expired.\n`
+- `%s: %s: TRM profile changed: %s(%u) -> %s(%u), clearCache=%s.\n`
+- `size > 0`
+- `u64BuddyEnteredTime`
+- `requirement->type == kACMRequirementTypeAP`
+- `false`
+- `(size - newOffset) >= params[i].parameterDataLength`
+- `GracePeriod`
+- `resType > kACMContextDataTypeNull && resType < kACMContextDataTypeEnd`
+- `transport && context`
+- `constraintSatisfied`
+- `ACMKernContextCreateWithExternalForm`
+- `unexpected flag(s) passed`
+- `params->credentialsInterface`
+- `Util_WriteToBuffer`
+- `_loadDisabledByOSEnvironment`
+- `der = acm_der_skip_any(key, next)`
+- `u32TRMPolicyModeTimeoutBootArg`
+- `AccessoryDetached`
+- `requirement->type == kACMRequirementTypeRatchet`
+- `_onDaemonStartedInBaseSystem`
+- `aclConstraint`
+- `%s: %s: eosDeviceType = %u.\n`
+- `param->parameterDataLength <= kACMParameterTypeACLMaxDataLength`
+- `dataLength == sizeof(credData->accUUID)`
+- `constraintState`
+- `result`
+- `_bioThreadCallHandler`
+- `kACMTRMMessage_DomainPropertyChanged_Generic`
+- `segGracePeriodReason_DeviceLocked_Bucket`
+- `trm_analytics_period`
+- `%s: %s: prepared for system shutdown.\n`
+- `powerOffActionGated`
+- `%s: %s: PMU-ACK: pending acknowledgment detected (ack=%u, lastAck=%u).\n`
+- `kCGSSessionOnConsoleKey`
+- `%s: %s: returning, _sepEndpoint = %p, initialized = %s.\n`
+- `LibCall_ACMGetEnvironmentVariable`
+- `LibCall_ACMSetEnvironmentVariable`
+- `locErr == 0 `
+- `buffer && unlockSecret && unlockSecretSize && unlockSecretType`
+- `os_add_overflow(pos, outDataSize, &end) == 0 `
+- `%s: %s: %s=%u.\n`
+- `err = _setPropertyU32(service, kACMTRMProperty_GracePeriodTimeout, pendState.gracePeriodTimeout) == 0 `
+- `_onCheck`
+- `trm_relaxed_period_timeout`
+- `resetOOLBuffers`
+- `dataLength <= kACMPassphraseMaxLength`
+- `%s: %s: policyViolated=%s (timePolicyViolated=%s passcodeThreshold=%s corruptedStateDetected=%s unexpectedShutdownDetected=%s).\n`
+- `recordIdx < cache->cacheSize`
+- `the caller has not provided required params for policy verification`
+- `config->coolOffTimeMs > 0 && config->waitingFor2ndAuthTimeMs > 0 && config->armedTimeMs > 0 && config->fallbackTimeMs > 0 && config->lostModeTimeMs > 0`
+- `ACMRestrictedModeAnalyticsKernelService.cpp`
+- `inSize == sizeof(ACMControlRequestTRMAuthorizedAccessoryDetachedWithFlags)`
+- `\"ACM: ACMRMEnvironment is NULL!\" @%s:%d`
+- `err = prop___set(name, value, nullptr , ACMRMUtil::cstrFromOSBoolean) == 0 `
+- `TRMAccCache_SetupEmpty(&_cache, _accCacheSize, _accCacheExpiration) == 0 `
+- `startImpl`
+- `(data && dataLength) || (!data && !dataLength)`
+- `%s: %s (len=%u): operation:`
+- `%s: %s: GPT: start=%llu end=%llu (resumed=%s now=%llu).\n`
+- `SAVE-HIDRMGlobalSwitch`
+- `inBuffer && readPos`
+- `cntCacheMiss`
+- `ACMKernContextDelete`
+- `IOPMUDisableResetIn2`
+- `saveTRMStateToMultiState`
+- `ACMKernControl`
+- `The kernel is root pivoting.`
+- `%s: %s: *UNEXPECTED SHUTDOWN DETECTED* (transitioning to RM).\n`
+- `aks`
+- `%s: %s: clear var[%u].\n`
+- `\"ACM: UInt64Key(%u) not set!\" @%s:%d`
+- `err = _setPropertyU32(service, kACMTRMProperty_PolicyTimeout, pendState.policyTimeout) == 0 `
+- `TRM_RelaxedPeriodTimeout`
+- `%s: %s: %s %s(%u) enabled=%s.\n`
+- `*outSize >= requiredSize`
+- `canceled`
+- `!accUUIDsSize || accUUIDs`
+- `site.ACMCredential.ACMCredentialDataPassphraseEntered`
+- `com.apple.private.applecredentialmanager.transportrestrictedmode.configurewhilelocked.allow`
+- `%s: %s: notification ignored, reason: force-restricted.\n`
+- `deviceLockState && keybagState`
+- `%s: %s: calling control[%u] len=%u <%s>.\n`
+- `%s: %s: sent %s(0x%x) -> 0x%x.\n`
+- `%s: %s: DFR present: %s.\n`
+- `ACMKernPrivSetEnvironmentVariable`
+- `TRM_EffectiveConfigProfile`
+- `outMap`
+- `!_isPolicyStarted()`
+- `%s: %s: %s: ver=%u smTm=%llu poRsn=%u gpTm=%llu smExp=%s gpBlk=%s suTm=%llu svTm=%llu gpRsn=%u cMs=%s upTm=%llu disBy=%x rpTm=%llu crTm=%llu pFlg=%x maxVer=%u dLk=%llu dUk=%llu iDt=%llu iTd=%llu iTdcm=%llu.\n`
+- `context`
+- `group.size <= kACMTRMAccessoryCache_MaxGroupSize`
+- `bootArg`
+- `os_add_overflow(pos, inDataSize, &end) == 0 `
+- `_inited`
+- `site.ACMKeybagKernelService`
+- `%s: %s: *policy* loaded (ver=%u msVer=%u gsVer=%u maxVer=%u->%u size=%u->%u).\n`
+- `_detectDFRPresence`
+- `ACMKernContextGetDataProperty`
+- `clearData`
+- `segPolicyEnabled_Unknown`
+- `context || scope == kACMScopeGlobal`
+- `%s: %s: no event.\n`
+- `Grace Period Timer (GPT)`
+- `%s: %s: security.mac.acm.root_pivot_occurred sysctl received (value=%d).\n`
+- `TRMAccCache_Emplace`
+- `DataValidation_DeviceInfo`
+- `cntPolicyResumed`
+- `md->getLength() >= totalLength`
+- `trackingSupported || !nonAutoDisposableRequested`
+- `ACMTRMEvent_SaveData`
+- `_onKeybagStateChanged`
+- `corrupted version / protocol`
+- `updateAnalytics`
+- `inRangeOrPanic`
+- `%s: %s: preparing for system shutdown.\n`
+- `_restartUnlockedPeriodTimer`
+- `%s: %s: get var[%u] <sensitive>.\n`
+- `outBuffer && offset`
+- `cntDaemonStarted`
+- `Env_SetVariableTimestamp`
+- `_createActionTimer`
+- `*resultLength >= respDataSize`
+- `development-cert`
+- `ACMKernPrivPingOnDoubleClick`
+- `start`
+- `acc-cache-add: adding record`
+- `change == 0 || change == kACMBiometryTypeFlagTouchID`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/AppleCredentialManager/Services/ACMAnalyticsKernelService.cpp`
+- `\"SEP cmd(%u) timed out after waiting for %u ms for SEP response\" @%s:%d`
+- `%s: %s: *acc-cache* saved (records=%u skipped=%u).\n`
+- `dataLength == sizeof(ACMCredentialDataBiometryMatchAttempted)`
+- `/buttons`
+- `boTRMLockerAvailabilityChecked`
+- `acl`
+- `boPolicySupportedInBaseSystem`
+- `PASSCODE LOCKOUT`
+- `requirementSize <= reqSize`
+- `ACMCredential - ACMCredentialDataContinuityUnlock`
+- `propGracePeriodBoundedTimeout`
+- `_mapAndPublishIOState`
+- `%s: %s: %s(%u)=%u.\n`
+- `usb_standard_mode_lock_timeout`
+- `command`
+- `policySatisfied`
+- `dataLength == sizeof(uid_t)`
+- `commandSize == sizeof(commandBuffer)`
+- `outBuffer && outSize && *outSize >= sizeof(ACMControlResponse_TRMEnv_Get)`
+- `%s: %s: called, 'Relaxed Period Timer (RPT)' expired.\n`
+- `external-boot`
+- `(size - offset) >= sizeof(uint32_t)`
+- `Util_AllocCredential`
+- `segPolicyReason_ForceRestricted`
+- `12111`
+- `AssertMacros: %s (value: 0x%lx), %s, file: %s:%d\n`
+- `%s: %s: called, 'Upcoming Event Timer (UET)' expired.\n`
+- `record->hashLen <= kACMTRMAccessoryCache_MaxHashSize`
+- `u32ITRMHystPeriodTimeout`
+- `com.apple.private.applecredentialmanager.contextcopydata.securepassphrase.allow`
+- `%s: %s: bytes written = %d.\n`
+- `lockerData`
+- `acl && aclSize && operation && operationSize && outConstraint && outConstraintSize`
+- `u32HIDRMDefaultBootArg`
+- `ACMKernPrivPing`
+- `trm_keep_enabled_during_apple_setup`
+- `%s: %s: multiuser_flags: %u.\n`
+- `boHIDRMEnabledByDefault`
+- `cmd`
+- `key`
+- `cntPasscodeLockout`
+- `prop___del`
+- `sepEndpointDict`
+- `dataOutBuffer && dataInOutLength`
+- `trm_profile`
+- `verifyAclConstraintInternal`
+- `%s: %s: parameters = %p, parameterCount = %u.\n`
+- `_onAuthorizedAccessoryDetached(InductiveDom/GenericAcc)`
+- `acl && aclLength`
+- `dict.setObject(name, prop)`
+- `sizeof(accCacheRecordItem) + accCacheRecordItem.hashLen + accCacheRecordItem.dataLen + accCacheRecordItem.groupLen <= itemTag.payloadSize`
+- `%s: %s: ignoring empty persistent var[%u].\n`
+- `ACMCredential - ACMCredentialDataPasscodeValidated`
+- `LibCall_ACMGlobalContextCredentialGetProperty`
+- `%s: %s: called, event=%u (thread=%p).\n`
+- `config`
+- `dataLength == sizeof(ACMCredentialDataSignature)`
+- `cntUnexpectedShutdown`
+- `_workLoop`
+- `_onEnvSetDoPolicyRefreshUsingTRMGlobalSwitch`
+- `!groupLen || !memcmp(record->group, groupOpt, groupLen)`
+- `ACMKernContextGetData`
+- `\"ACM: UInt32Key(%u) not set!\" @%s:%d`
+- `cmdOutBkt`
+- `%s: %s: timed out waiting for AppleSEPManager (timeoutMs=%llu).\n`
+- `kCGSSessionUserNameKey`
+- `_ioState.published().gracePeriodReason != _ioState.null().gracePeriodReason`
+- `NONE`
+- `site.ACMRequirement.ACMRequirementDataBiometryMatched`
+- `*YES* -> RM`
+- `%s: %s: event in %u at %llu.\n`
+- `req->dataLength == sizeof(ACMRequirementDataKofN)`
+- `Util_DeallocRequirement`
+- `accCacheSlot && accCacheSlot->objSize == sizeof(TRMAccCache)`
+- `trm_change_policy_mode`
+- `!length1 || data1`
+- `I`
+- `(size - offset) >= (policyLength + 1)`
+- `constraint`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/common/CommonUtil.c`
+- `payloadOffset + oldPayloadSize <= curSize`
+- `%s: %s: data read callback *%s* for var[%u].\n`
+- `TRM_CacheMissCount`
+- `LibCall_ACMRequirementDelete`
+- `_aksLoadedNotifier`
+- `record->hashLen == hashLen`
+- `size >= sizeof(ACMHandle) + sizeof(uint32_t) + sizeof(uint32_t)`
+- `%s: %s: failed to set %s(%u), ready=%s.\n`
+- `cmdInBkt`
+- `%s: %s: called, cacheSize=%u expiration=%u.\n`
+- `_eventsLock`
+- `_setPropertyBool`
+- `ioErr == 0 `
+- `restoreData`
+- `%s: %s: deviceLockState=%s(%u) isMacBuddyRunning=%s.\n`
+- `%s: %s: *policy* saved (ver=%u size=%u).\n`
+- `_allocatedMem.data >= size`
+- `prop___set`
+- `*outSize >= ACMRMEnvironment::STATE_SIZE`
+- `!_daemonStarted`
+- `(size - offset) >= sizeof(ACMContextProperty)`
+- `propPolicyModeTimeout`
+- `instanceCountBkt`
+- `%s: %s: DEF-ACK: trigger *FAILED* with: 0x%x.\n`
+- `requirement->dataLength >= sizeof(ACMRequirementDataBiometryMatched)`
+- `mesaServiceDict`
+- `dataLength == sizeof(ACMCredentialDataAP)`
+- `%02x`
+- `/Library/Caches/com.apple.xbs/4776FB82-4876-4747-BD9A-F14E510003B9/TemporaryDirectory.gzqdtN/Sources/AppleCredentialManager_KernelLibs/ACMKernelLib/ACMKernelLib.cpp`
+- `cmd && size >= sizeof(acm_command_t) && inSize >= 0`
+- `_upcomingEventTimer`
+- `site.ACMCredential.ACMCredentialDataPasscodeValidated2`
+- `performCommandV2`
+- `%s: %s: Buddy exited (now=%llu | entered=%llu prev-exited=%llu).\n`
+- `Stats_NotifyResourceCreated`
+- `dataLength == sizeof(ACMPassphrasePurpose)`
+- `writePos`
+- `site.ACMRequirement.ACMRequirementDataUserOutputDisplayed`
+- `ACMTRMStore_AnalyticsSave`
+- `boBaseSystemBooted`
+- `%s: %s: SEPEndpoint enabled.\n`
+- `_publish`
+- `TRM_EnrollmentPending`
+- `%s: %s: Scheduling immediate power off timer.\n`
+- `%s: %s: DEF-ACK: trigger succeeded.\n`
+- `_aksThreadCallHandlerGated`
+- `_enqueueEvent`
+- `%s: %s: *acc-cache* loaded (records=%u dropped=%u).\n`
+- `31111111111`
+- `%s: %s: freeing KE[%u] (ready=%s).\n`
+- `msg.call.endpoint == SCRD_ENDPOINT`
+- `dataLength == sizeof(ACMHandle)`
+- `_onAccessoryAuthorized`
+- `_onEnvSet`
+- `rbtn2`
+- `ACMTRMStore_AccCacheLoad`
+- `u64ITRMAuthorizedAccessoryDetachedTime`
+- `lockItem`
+- `LibCall_ACMContextCreateWithExternalForm`
+- `acc-cache: emplacing record`
+- `%s: %s: *acc-cache* not found.\n`
+- `trm_enabled`
+- `value`
+- `credential->type == kACMCredentialTypePassphraseExtractable`
+- `dataLength == USER_OUTPUT_HASH_SIZE`
+- `responseBufferSize >= 3 * sizeof(uint32_t)`
+- `NO`
+- `%s: %s: Buddy not running (now=%llu | prev-entered=%llu prev-exited=%llu).\n`
+- `site.ACMRequirement.ACMRequirementDataPassphraseEntered`
+- `_onActionTimerHandler`
+- `%s: %s: _currentDeviceStateFromKeybag(device_keybag_handle) -> 0x%x.\n`
+- `inMap`
+- `_startupRetryActionTimer`
+- `end <= inBufferSize`
+- `u32USBStandardModeLockTimeoutBootArg`
+- `context not found`
+- `site.ACMCredential.ACMCredentialDataBiometryMatched`
+- `policyMode`
+- `AlwaysAllow`
+- `trm_unlocked_period_timeout`
+- `getEOSDeviceType`
+- `cmdContextV1`
+- `record->groupLen <= kACMTRMAccessoryCache_MaxGroupSize`
+- `_findSlot`
+- `u32ResolvedPolicyMode`
+- `_defDblClickAckTimer`
+- `PolicyReason`
+- `_sendEventToCoreAnalytics`
+- `stop`
+- `req->dataLength == sizeof(ACMRequirementDataAnd)`
+- `reloadAnalytics`
+- `%s: %s: %s keybag=%d removed.\n`
+- `TRM profile changed`
+- `change == 0 || change == kACMBiometryTypeFlagSoys`
+- `ruc`
+- `TRM_BaseSystem`
+- `TRMDomain_Generic`
+- `sumUsedCountBkt`
+- `inSize == sizeof(ACMControlRequestTRMAccessoryCache_Check)`
+- `NULL`
+- `slot->dataProviderCB`
+- `Env_SetDataSetCallback`
+- `writePersistentVarsToLocker`
+- `err = _setPropertyU32(service, kACMTRMProperty_ConfigProfile, pendState.configProfile, ACMRMUtil::cstrFromTRMProfile) == 0 `
+- `Stats_NotifyResourceUsed`
+- `%s: %s: returning, err = %ld, cmd=%u inLen=%u outLen=%u.\n`
+- `dataLength <= sizeof(credData->signature)`
+- `%s: %s: UPT: adjusted based on seenUnlockedTime=%llu.\n`
+- `%s: %s: called, reason=%u, remainingInterval=%u (now = %llu, end = %llu).\n`
+- `Mesa`
+- `srcRec->hashLen <= kACMTRMLegacyAccessoryCache_MaxHashSize`
+- `DoublePressBypass`
+- `u32TRMRelaxedPeriodTimeout`
+- `TRM_CacheMiss`
+- `evReason`
+- `%s: %s: data provider *%s* for var[%u].\n`
+- `err = _removeProperty(genericDomain, kACMTRMProperty_DomainProperty_GracePeriodReason, genericDomainPrefix) == 0 `
+- `ACMKernPingOnDoubleClick`
+- `pmuMatchingDict`
+- `rap`
+- `accCacheData || policyData || analyticsData || configData`
+- `responseBuffer`
+- `Env_GetVariable`
+- `_loadFromPersistentStore`
+- `\"Failed endpoint->setReceiveOOLBuffer() for SEP: err = 0x%x\" @%s:%d`
+- `err = _setPropertyU32(genericDomain, kACMTRMProperty_DomainProperty_CacheMissThreshold, pendState.cacheMissThreshold, genericDomainPrefix) == 0 `
+- `_defDblClickAckTimer->setTimeoutMS(2000) == 0 `
+- `Env_SetDataReadCallback`
+- `TRMAccCache_SetupEmpty(&_preallocatedSlotObjects.accCache, _accessoryCache->getAccCacheSize(), _accessoryCache->getAccCacheExpiration()) == 0 `
+- `_enqueueEventAndDispatchQueue({ .wakeUp = { .type = evWakeUp, }}) == 0 `
+- `loadTRMStateFromLegacyCompactState`
+- `updateKeybagTracker`
+- `boBaseSystemExited`
+- `u32TRMEnabledEDTProp`
+- `%s: %s: analytics collected (generation=%u) -> finalizing, sending out and restarting.\n`
+- `err = prop___set(name, value, prefix, valueNameLookup) == 0 `
+- `_analytics`
+- `site.ACMRequirement.ACMRequirementDataBiometryMatchedWithAttributes`
+- `_checkRequiredCommandEntitlements`
+- `err = prop___del(name, nullptr ) == 0 `
+- `%*.*s%d NULL(%zu)\n`
+- `%s: %s: newState=%u (prev=%u), stateFlags=0x%x.\n`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/AppleCredentialManager/Services/ACMKernelService.cpp`
+- `boTRMKeepEnabledDuringAppleSetup`
+- `u32TRMUnificationBootArg`
+- `Stats_IncrementCommandStatValue`
+- `_performKernelControl`
+- `%s: %s: [TRM ENABLED=%s] (mask=%x, DISABLED BY: Def=%s%s Arg=%s%s HW=%s%s DT=%s%s Env=%s%s Ext=%s%s Dev=%s%s SEP=%s%s SR=%s%s | MC=%s%s DW=%s%s CB=%s%s GS=%s%s CP=%s%s BS=%s%s MB=%s%s SC=%s%s AS=%s%s IB=%s%s DM=%s%s).\n`
+- `com.apple.private.applecredentialmanager.devicerestrictedmode.allow`
+- `%s: %s: %s biometric driver detected.\n`
+- `boAllPolicyModesSupported`
+- `acm_panic_on_sep_response_timeout`
+- `%s: %s: constraintState = %p.\n`
+- `_gracePeriodTimer`
+- `TRMAccCache_Add`
+- `%s: %s: unsupported AP: kACMEnvironmentVariableResourceUsageInfo -> err=%d.\n`
+- `memIn`
+- `md`
+- `newTotalSize <= bufCapacity`
+- `remaining >= respSize`
+- `121111122222222222222222222222222222222222222222222222222222222111111111111111111111111111111111111111111111111111111111111111111111111111111111`
+- `consoleUsersProperty`
+- `CacheMissThreshold`
+- `sepfw-load-at-boot`
+- `enableSepEndpointActionGated`
+- `ACMKernelTransport`
+- `ANY4(value, kACMTRMConfig_Profile_AskEveryTime, kACMTRMConfig_Profile_AskForNewAccessories, kACMTRMConfig_Profile_AutomaticallyAllowWhenUnlocked, kACMTRMConfig_Profile_AlwaysAllow )`
+- `_onEnvGetPolicyModePresentation`
+- `segPolicyReason_Unrestricted`
+- `ACMKernContextSetData`
+- `rcon`
+- `free`
+- `_stopStandardModeTimer`
+- `currentStateSize <= 1`
+- `authMethodInst`
+- `cacheSize <= kACMTRMAccessoryCache_CacheSize`
+- `site.ACMRequirement.ACMRequirementDataBiometryMatchAttempted`
+- `_enableSepEndpointTimer`
+- `dataLength == sizeof(ACMKextDenyListFormat)`
+- `ACMRequirement - ACMRequirementDataKofNWithAttributes`
+- `performCommandGated`
+- `sendSEPMessage`
+- `_registerAKSNotifier`
+- `TRMMultiState_ReadFromBuffer`
+- `insecure_hpr`
+- `requirement->type == kACMRequirementTypeBiometryMatched`
+- `%s: %s: %s keybag=%d not found.\n`
+- `u32TRMChangePolicyModeBootArg`
+- `readPos + itemTag.payloadSize <= inBufferSize`
+- `err = _setPropertyU32(inductiveDomain, kACMTRMProperty_DomainProperty_GracePeriodReason, pendState.itrmGracePeriodReason, inductiveDomainPrefix, ACMRMUtil::cstrFromTRMGracePeriodReason) == 0 `
+- `%s: %s: failed to get current persona, setting SUID to UNKNOWN_SESSION_UID(-1).\n`
+- `acm_fastsim`
+- `size`
+- `%s: %s: %s=%u (prev=%u).\n`
+- `activeCount <= kACMTRMAccessoryCache_CacheSize`
+- `%s: %s: %s: count=%u totalDuration=%u (origStartTime=%llu lastDuration=%u).\n`
+- `segConfigProfile_AutomaticallyAllowWhenUnlocked`
+- `_onMilestoneReached`
+- `%s: %s: set Env(%u)=%u succeeded (valueChanged=%s).\n`
+- `AppleMesaSEPDriver`
+- `err = _setPropertyBool(service, kACMHIDRMProperty_PolicyEnabled, (bool)pendState.hidrmPolicyEnabled) == 0 `
+- `site.ACMHandleWithPayload`
+- `\"ACM: UInt64Key(%u) out of range!\" @%s:%d`
+- `%s: %s: persona=%s, SUID=%d.\n`
+- `_standardModeTimer`
+- `ANY2(req->domain, kACMTRMDomain_Generic, kACMTRMDomain_Inductive)`
+- `payloadPos <= bufLen`
+- `credentialList`
+- `site.ACMCredential.ACMCredentialDataAP`
+- `ACMRequirement - ACMRequirementDataBiometryMatched`
+- `*lock != 0`
+- `SEPControl_GetRequiredClientEntitlement`
+- `%s: %s: returning, err = %ld, var[%u]: DATA FORMAT VALIDATION FAILED.\n`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/AppleCredentialManager/Services/ACMPersistentStoreKernelService.cpp`
+- `Unrestricted`
+- `getActiveCount`
+- `_onBaseSystemExited`
+- `ACMKeybag`
+- `!dataLen || !memcmp(record->data, dataOpt, dataLen)`
+- `list`
+- `data && dataLength`
+- `%s: %s: startingInBaseSystem=%s startingInNormalOS=%s pivotingToNormalOS=%s | startupFlags=0x%x | initial deviceLockState=%s(%u) keybagState=0x%x consoleState=0x%x.\n`
+- `_consoleUsersThreadCallHandlerGatedSelf`
+- `u32TRMGracePeriodTimeout`
+- `err = _removeProperty(inductiveDomain, kACMTRMProperty_DomainProperty_GracePeriodReason, inductiveDomainPrefix) == 0 `
+- `cmdDoneBkt`
+- `_recvBuf`
+- `LibCall_ACMGlobalContextVerifyPolicyEx`
+- `Stats_IncrementCommandStatValue(kACMCommandStat_LockerReadDurationMs , getSizeTookMs, false ) == 0 `
+- `requirement->type == kACMRequirementTypeKeyRef`
+- `outSIPEnabledNoCustomOS`
+- `RuntimePersmissions_PSSO_Entropy_ReadWrite`
+- `ACMCredential - ACMCredentialDataAP`
+- `outSize && *outSize >= sizeof(ACMControlResponseTRMAccessoryCache_Check)`
+- `_onAuthorizedAccessoryDetached(GenericDom/UnidentifiableAcc)`
+- `(inData && inSize >= sizeof(ACMSEPControlCode) && inSize <= kACMSEPControlMaxDataLength)`
+- `controlCode == slotAtIndex->code`
+- `%s: %s: returning, err = %ld, var[%u]: DATA VALIDATION FAILED.\n`
+- `outSkipPolicyValidation`
+- `%s: %s: maxGlobalCredentialAge = %u.\n`
+- `BIO LOCKOUT`
+- `backupData`
+- `u32ITRMHystPeriodTimeoutBootArg`
+- `%s: %s: returning, err = %ld, var=%u.\n`
+- `%s: %s: returning, .\n`
+- `acc-cache-check: ignoring expired record`
+- `context && outSize`
+- `Permissions_VerifyCaller`
+- `!dataLen || data`
+- `u32TRMAccCacheExpirationBootArg`
+- `G/`
+- `err = _setPropertyU32(service, kACMTRMProperty_CacheMissCount, pendState.cacheMissCount) == 0 `
+- `%s: %s: security.mac.acm.root_pivot_occurred sysctl registered.\n`
+- `%s: %s: registering TRM notifiers.\n`
+- `size - offset >= sizeof(ACMScope)`
+- `%*.*s%d UNKNOWN TAG %lx(%zu) `
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/AppleCredentialManager/AppleCredentialManager.cpp`
+- `targetItem`
+- `validateInputData`
+- `DeviceOwnerAuthenticationOrNoPasscodeSet`
+- `(size - newOffset) >= sizeof(uint32_t)`
+- `site.ACMRequirement`
+- `os_add_overflow(length1, length2, &totalLength) == 0 `
+- `23:30:24`
+- `%s: %s: devModeEnabled=%s (policyStarted=%s).\n`
+- `_onEnvSetTRMProfile`
+- `!memcmp(state->policy.header.tag, (uint8_t[3])ACM_TRM_COMPACT_POLICY_TAG, sizeof(state->policy.header.tag))`
+- `DeallocCredentialList`
+- `ACMCredential - ACMCredentialDataUserOutputDisplayed`
+- `u32TRMKeepEnabledDuringAppleSetupBootArg`
+- `_onAccessoryAuthorized(InductiveDom/GenericAcc)`
+- `%s: %s: EDT profile has changed - updating *current* profile: %s -> %s.\n`
+- `data && dataSize && der && der_end`
+- `121111112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222`
+- `LibCall_ACMSecContextGetUnlockSecret`
+- `ApplePearlSEPDriver`
+- `segConfigProfile_AskForNewAccessories_Bucket`
+- `ACMKernPrivGetEnvironmentVariable`
+- `UTIL_OPTIONAL_BUFFER(outBuffer,outSize)`
+- `accUUIDsSize % sizeof(uuid_t) == 0`
+- `_configureGracePeriod`
+- `handleAKSLoadedNotificationGated`
+- `ACMTRMStore_PolicyLoad`
+- `com.apple.private.applecredentialmanager.capturecredential.allow`
+- `%s: %s: enable_lockdown_mode() called.\n`
+- `inSize == sizeof(ACMControlRequest_TRMEnv_Set)`
+- `LibCall_ACMContextDelete`
+- `_loadDisabledByExternalBoot`
+- `accCacheRecordItem.groupLen <= kACMTRMAccessoryCache_MaxGroupSize`
+- `value_size > 0 && value_size <= sizeof(int64_t)`
+- `_deferredSaveTimer`
+- `_consoleUsersNotifier`
+- `\"ACM: %s keybag=%d cannot be added, no space!\" @%s:%d`
+- `replaceInMultiStateBuffer`
+- `%s: %s: newState=%u.\n`
+- `keybagUuid && keybagUuidLength == sizeof(uuid_t)`
+- `%s: %s: PolicyMode change requested via boot-arg (value=%u).\n`
+- `_scheduleAndPublish`
+- `TRMAccCache_Check`
+- `u32TRMAllPolicyModesBootArg`
+- `%s: %s: _currentDeviceStateFromKeybag(system_keychain_handle) -> 0x%x.\n`
+- `%s: %s: The UPP/SecureChannel is not supported. Epoch is unavailable.\n`
+- `err = _setPropertyU32(service, kACMTRMProperty_EffectiveConfigProfile, pendState.effectiveConfigProfile, ACMRMUtil::cstrFromTRMProfile) == 0 `
+- `TRMMultiState_ReplaceInBuffer`
+- `err = _setPropertyBool(service, kACMTRMProperty_BuddyPeriod, (bool)pendState.trmBuddyPeriod) == 0 `
+- `prop`
+- `processSCRDResponsePayload`
+- `data->getLength() == sizeof(uint32_t)`
+- `addAKSLoadedNotificationHandler`
+- `ACMKernPrivTRMLoadState`
+- `eventID && eventPayload`
+- `ACMKernRequirementDelete`
+- `resType`
+- `checkCallerPermissions`
+- `cancelDblClickDeferredAck`
+- `LibCall_ACMSecCredentialProviderEnrollmentStateChangedForUser`
+- `u32TRMAccCacheSizeBootArg`
+- `%s: %s: intercepting.\n`
+- `function-ack_dbl_click`
+- `%s: %s: Buddy already running (now=%llu | entered=%llu prev-exited=%llu).\n`
+- `_onConsoleStateChanged`
+- `propGracePeriodTimeout`
+- `avgUsedCountBkt`
+- `dataLength <= sizeof(credData->unlockSecret)`
+- `_onEnvGetPolicyModePresentationFlags`
+- `%s: %s: setting lock state: %d.\n`
+- `%s: %s: %s: tm=%llu hash(%u)=<%s%s> data(%u)=<%s%s> group(%u)=<%s%s>.\n`
+- `segPolicyReason_Unrestricted_Bucket`
+- `itrm_grace_period_timeout`
+- `_onTokenDropped`
+- `ANY2(value, kACMTRMConfig_GlobalSwitch_On, kACMTRMConfig_GlobalSwitch_Off )`
+- `!outBufferOpt || end <= outBufferSize`
+- `site.ACMBridgeKernelService`
+- `_onCollect`
+- `mapAndPublish`
+- `%s: %s: acc-cache iterated (iterFlags=0x%x, records=%u -> rows=%u).\n`
+- `unlockSecret && unlockSecretLength && unlockSecretType`
+- `controlCode < UTIL_ARR_SIZE(_sepControlTable)`
+- `equal`
+- `%s: %s: called, starting PersistentStore service.\n`
+- `_removeProperty`
+- `_onAuthorizedAccessoryDetached(GenericDom/???)`
+- `_restartGracePeriodTimerWithReason`
+- `boTRMEnrollmentSession`
+- `FAILED`
+- `initImpl`
+- `dataLength == sizeof(credData->identityUuid)`
+- `%s: %s: %s keybag=%d already added.\n`
+- `ACMRequirement - ACMRequirementDataPushButton`
+- `!policy || policySlot->objSize == sizeof(ACMTRMPersistentPolicy)`
+- `%s: %s: BoolKey(%u) out of range!.\n`
+- `waitForSEPEndpoint`
+- `!!! DAEMON/KERNEL NOT UPDATED PROPERLY - FULL DEVICE RESTORE IS NEEDED !!!`
+- `acc-cache-add: replacing oldest record`
+- `params`
+- `slot->variable <= UINT16_MAX`
+- `u32TRMEnabledBootArg`
+- `_provider`
+- `%s: %s: DENIED: Kernel call not allowed!.\n`
+- `getSEPEndpoint`
+- `inSize == sizeof(ACMControlTRMNotificationAcknowledged)`
+- `site.ACMRequirement.ACMRequirementDataOr`
+- `_mapAndPublish`
+- `TRM_PolicyTimeout`
+- `LibCall_ACMContextUnloadToImage`
+- `Env_GetVariableUint64`
+- `kIOMessageServicePropertyChange`
+- `AppleCredentialManagerShared`
+- `stat > kACMCommandStat_Null && stat < kACMCommandStat_End`
+- `dataLength`
+- `_sendPolicyModeAnalyticsThroughKext`
+- `_onSleepWake`
+- `accCacheRecordItem.dataLen <= kACMTRMAccessoryCache_MaxDataSize`
+- `LibCall_ACMSecContextVerifyPolicyAndCopyRequirementEx`
+- `u64ITRMTokenDroppedCacheMissTime`
+- `segConfigProfile_Unknown`
+- `init`
+- `%s: %s: scheduling startup retry (attempt #%u).\n`
+- `ACMTRMCompactState_readFromBuffer(inBuffer, inBufferSize, &legacyPolicy, &policyRead, &legacyAccCache, &accCacheRead)`
+- `forbidden to clear existing data`
+- `clear`
+- `site.ACMRestrictedModeKernelService`
+- `Util_SafeDeallocParameters`
+- `/arm-io/disp0`
+- `%s: %s: failed to query %s(%u), ready=%s.\n`
+- `itrm_hyst_period_timeout`
+- `ACMRequirement - ACMRequirementDataPasscodeValidatedWithAttributes`
+- `%s: %s: *analytics* not found.\n`
+- `ACMAccessoryCacheKernelService`
+- `bufInOutSize`
+- `On`
+- `%s: %s: enable_lockdown_mode() failed, kernel_thread_start() err = %d.\n`
+- `_relaxedPeriodTimer`
+- `%s: %s: SEP returned error, request = %d, info = %d, length = %d.\n`
+- `_onDeviceLockStateChanged`
+- `aksServiceDict`
+- `\"ACM: UInt32Key(%u) out of range!\" @%s:%d`
+- `%s: %s: called, remainingInterval = %u (now = %llu, end = %llu).\n`
+- `hidrm_enabled`
+- `usb_standard_mode_timeout`
+- `%s: %s: will join SEPManager's PM tree in getSEPEndpoint().\n`
+- `_sepContext.messageCode == request`
+- `responsePayloadHead.payloadVersion > 0`
+- `21111111111`
+- `%s: %s: called, got message from SEP, request = %d, info = %d, length = %d.\n`
+- `ACMKernGlobalContextVerifyPolicyAndCopyRequirementEx`
+- `ANY2(_persistentConfig.hidrmGlobalSwitch, kACMHIDRMConfig_GlobalSwitch_On, kACMHIDRMConfig_GlobalSwitch_Off )`
+- `%s: %s: %s%s.\n`
+- `isEntitled`
+- `apple-coprocessor-version`
+- `req->key > kACMTRMEnvKey_NULL && req->key < kACMTRMEnvKey_COUNT`
+- `*`
+- `isFastSimTarget`
+- `originalSize == sizeof(acm_command_t)`
+- `ACMKernSetEnvironmentVariable`
+- `%*.*s%d STRING(%zu) %*.*s\n`
+- `acm_mem_free_info`
+- `121111121222121212111111111111112121122211122212211`
+- `fallback`
+- `acc-cache-add: ignoring record (cacheSize=0)`
+- `ACMTRMTaggedHeader_getVersionForTag(buf, bufLen, (uint8_t[3])ACM_TRM_TAG_COMPACT_STATE) == 1`
+- `Stats_IncrementCommandStatValue(kACMCommandStat_LockerReadDurationMs, readTookMs, false ) == 0 `
+- `TRM_EnrollmentPeriod`
+- `handle && parameters && parametersCount && command && commandSize`
+- `!param->parameterDataLength`
+- `param->parameterDataLength == UUID_LEN`
+- `boTRMLockerAvailable`
+- `propCollectionPeriod`
+- `trm-profile`
+- `credential->type == kACMCredentialTypeKextDenyListApplePay || credential->type == kACMCredentialTypeKextDenyListFairPlay`
+- `_bioThreadCallHandlerGated`
+- `1211112222222222222222222222222111112`
+- `processNotificationGated`
+- `err = _setPropertyU32(service, kACMTRMProperty_GracePeriodReason, pendState.gracePeriodReason, ACMRMUtil::cstrFromTRMGracePeriodReason) == 0 `
+- `%s: %s: acknowledgeSetPowerState() succeeded.\n`
+- `_onWakeUpFromDaemon`
+- `%s: %s: set Env(%u)=%u failed: read-only.\n`
+- `%s: %s: %s(%u) succeeded.\n`
+- `%s: %s: called, mask=%x.\n`
+- `kACMTRMMessage_DomainPropertyChanged_Inductive`
+- `inSize == sizeof(ACMControlRequestTRMAccessoryCache_AddWithGroup)`
+- `handleAKSLoadedNotification`
+- `newValue && newValueSize == sizeof(ACMDeviceInfo)`
+- `responseData && responseDataSize`
+- `rpp`
+- `u32TRMRelaxedPeriodTimeoutBootArg`
+- `ACMKernContextCredentialGetProperty`
+- `ACMRequirement - ACMRequirementDataSecureIntent`
+- `service`
+- `rup`
+- `inSize == sizeof(ACMControlRequestTRMAccessoryCache_Add)`
+- `%s: %s: SEPEndpoint disabled (lock took: %u ms, SEP EP disable took: %u ms).\n`
+- `_onAuthorizedAccessoryDetached(GenericDom/StandardAcc)`
+- `%s: %s: get Env(%u) failed: unknown key.\n`
+- `site.ACMCredential.ACMCredentialDataPasscodeValidated`
+- `isPolicyStarted()`
+- `%s: %s: initializing power management.\n`
+- `%s: %s: Unexpected device!.\n`
+- `LibCall_ACMKernelControl`
+- `_finishTRMEnrollment`
+- `TARGET_OS_OSX`
+- `!memcmp(state->cache.header.tag, (uint8_t[3])ACM_TRM_COMPACT_CACHE_TAG, sizeof(state->cache.header.tag))`
+- `0`
+- `%s: %s: returning.\n`
+- `_restartStandardModeTimer`
+- `IOConsoleSecurityInterest`
+- `existingConfigUpdated`
+- `sourceGeneration`
+- `LibCall_ACMContextCopyData`
+- `accUUIDsSize <= kACMTrustedAccessoriesUUIDsDataMaxSize`
+- `_onGetCapabilitiesLegacyACMLib`
+- `boRecoveryEntered`
+- `ks`
+- `dataLength == USER_OUTPUT_SEID_SIZE`
+- `ANY4(_persistentConfig.profile, kACMTRMConfig_Profile_AskEveryTime, kACMTRMConfig_Profile_AskForNewAccessories, kACMTRMConfig_Profile_AutomaticallyAllowWhenUnlocked, kACMTRMConfig_Profile_AlwaysAllow )`
+- `%s: %s: failed to get initial lock state from AKS.\n`
+- `PreboardSoundEnrollment`
+- `%s: %s: returning, err = %ld, get Env(%u) failed.\n`
+- `logHash`
+- `Env_GetVariableBool`
+- `op`
+- `dataLength == sizeof(ACMCredentialDataKextDenyList)`
+- `err = _setPropertyBool(service, kACMHIDRMProperty_BuddyPeriod, (bool)pendState.hidrmBuddyPeriod) == 0 `
+- `req && res`
+- `%s: %s: wait canceled, system is shutting down (cmd=%u).\n`
+- `ANY2(value, kACMHIDRMConfig_GlobalSwitch_On, kACMHIDRMConfig_GlobalSwitch_Off )`
+- `inSize == sizeof(ACMControlRequestTRMAccessoryCacheMissOccurredInDomain)`
+- `_startHIDRMEnrollment`
+- `ridv`
+- `srcLen > 0`
+- `RELEASE`
+- `detectEDUModeChange`
+- `%s: %s: kACMEnvironmentVariableEDUModeEnabled=%u successfully set.\n`
+- `size >= sizeof(acm_command_t) + sizeof(Request)`
+- `eventName && eventPayload`
+- `ACMPersistentStoreKernelService.cpp`
+- `%s: %s: !!! AppleCredentialManager ENTITLEMENT NOT FOUND !!! (internal check: %s).\n`
+- `LibCall_ACMContextCredentialGetProperty`
+- `%s: %s: [loaded] inSize=%u -> policyRead=%s configRead=NO accCacheRead=%s.\n`
+- `err == kACMErrorSuccess`
+- `outSize && *outSize >= sizeof(ACMTRMSessionAnalytics)`
+- `success`
+- `/chosen`
+- `dataLen == sizeof(ACMTRMPersistentPolicy)`
+- `buffer && offset && parameters && parametersCount`
+- `%s: %s: PolicyMode change (to AlwaysAllow) requested via kStatupFlagSwitchToAlwaysAllow.\n`
+- `_onActionTimer`
+- `ANY4(_ioState.published().policyReason, kACMTRMPolicyReason_Unrestricted, kACMTRMPolicyReason_GracePeriod, kACMTRMPolicyReason_Restricted, kACMTRMPolicyReason_ForceRestricted )`
+- `stopImpl`
+- `remaining >= sizeof(uint32_t)`
+- `acc-cache`
+- `_triggerActionTimer`
+- `inputBuffer`
+- `dataLength == SCRED_UUID_SIZE`
+- `AppleCredentialManager`
+- `_onAuthorizedAccessoryDetached(InductiveDom/???)`
+- `%s: %s: get Env(%u) succeeded -> %u.\n`
+- `%s: %s: PMU resource for '%s' not available!.\n`
+- `slot->dataType != kEnvVariableDataTypeBool || dataSize == 1`
+- `param->parameterDataLength == sizeof(uid_t)`
+- `%s: %s: pushing *%s* -> locker (gen=%u msLen=%u dataLen=%u* ver=0).\n`
+- `%s: %s: called, starting TRM Analytics service.\n`
+- `!entitlement || ACMKernelUtils::isEntitled(params.owningTask, entitlement)`
+- `Failed to detect EDU mode`
+- `newState`
+- `info->reason <= UINT16_MAX`
+- `SEPControl_Call`
+- `forbidden to override existing data`
+- `size >= sizeof(ACMHandle)`
+- `handle && dataType && getSizeOnly`
+- `handleSEPMessage`
+- `%02x `
+- `segConfigProfile_AutomaticallyAllowWhenUnlocked_Bucket`
+- `err = _setPropertyU32(inductiveDomain, kACMTRMProperty_DomainProperty_EffectiveConfigProfile, pendState.itrmEffectiveConfigProfile, inductiveDomainPrefix, ACMRMUtil::cstrFromTRMProfile) == 0 `
+- `_eventDispatchActionTimer`
+- `%s: %s: failed to stop %s(%u), ready=%s.\n`
+- `performCommand`
+- `buf && buf->getBuffer() && buf->getBuffer()->getBytesNoCopy()`
+- `site.ACMCredentialRef`
+- `%s: %s: failed to set initial lockstate: %d.\n`
+- `findSlot`
+- `site.ACMParameter`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/AppleCredentialManager/Services/ACMFirstResponderKernelService.cpp`
+- `EffectiveConfigProfile`
+- `requirement->type == kACMRequirementTypePassphraseEntered`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/common/CommonTRMLegacy.h`
+- `SkipWritePolicyValidation_LBDOA`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/AppleCredentialManager/Services/ACMLockdownModeKernelService.cpp`
+- `%s: %s: UPT: start=%llu end=%llu (resumed=%s now=%llu).\n`
+- `failed to send event to CoreAnalytics`
+- `%s: %s: %s: hash(%u)=<%s%s>.\n`
+- `operation`
+- `site.ACMRequirement.ACMRequirementDataRatchet`
+- `aclConstraint && aclConstraintLength`
+- `ACM`
+- `com.apple.private.applecredentialmanager.securestore.dsl.enable.allow`
+- `size >= sizeof(ACMHandle) + sizeof(ACMCredentialType) + sizeof(ACMCredentialProperty)`
+- `entitlement`
+- `err = _setPropertyU32(inductiveDomain, kACMTRMProperty_DomainProperty_PolicyReason, pendState.itrmPolicyReason, inductiveDomainPrefix, ACMRMUtil::cstrFromTRMPolicyReason) == 0 `
+- `AppleCredentialManager?`
+- `ACMTRM`
+- `!_policyStartedInNormalOS`
+- `DataProvider_Epoch`
+- `ACMRequirement`
+- `UTIL_OPTIONAL_ARRAY(parameters, parametersCount)`
+- `_accessoryCache`
+- `maxGlobalCredentialAge`
+- `segDeviceLockState_Locked`
+- `trm_base_system`
+- `setPowerStateGated`
+- `clearBackupData`
+- `_finishHIDRMEnrollment`
+- `parametersCount <= MAX_PARAMETERS_COUNT`
+- `handle && parameters && parametersCount`
+- `site.ACMRequirement.ACMRequirementDataPushButtonWithAttributes`
+- `121112`
+- `%s: %s: sending %s (name='%s', numFields=%u, event=[%u %u %u %u %u %u %u %u %u]) -> err=%u.\n`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/AppleCredentialManager/Services/ACMRestrictedModeUtil.cpp`
+- `Oct 13 2026`
+- `com.apple.private.applecredentialmanager.securestore.upp.config.allow`
+- `kACMTRMMessage_AccCache_Refreshed`
+- `err = _setPropertyU32(service, kACMTRMProperty_RelaxedPeriodTimeout, pendState.relaxedPeriodTimeout) == 0 `
+- `_bioThreadCall`
+- `/Library/Caches/com.apple.xbs/8F573539-1F8A-4DBC-879B-D0E44CE1D856/TemporaryDirectory.tCqtNx/Sources/AppleCredentialManager/AppleCredentialManager/Services/ACMRestrictedModeAnalyticsKernelService.cpp`
+- `(`
+- `_sepEndpoint`
+- `%s: %s: ignoring non-persistent var[%u].\n`
+- `com.apple.AppleCredentialManager.ResourceUsage`
+- `credential->type == kACMCredentialTypeSignature`
+- `requirement->type == kACMRequirementTypeKofN`
+- `_onBioDropReceived`
+- `_ioState.published().policyReason != _ioState.null().policyReason`
+- `cntPolicyViolatedAtBoot`
+- `err != kACMErrorBadParameter`
+- `%s: %s: *legacy* acc-cache loaded (records=%u dropped=%u).\n`
+- `_onEnvSetHIDRMGlobalSwitch`
+- `%s: %s: data set callback *%s* for var[%u].\n`
+- `credentialType`
+- `212`
+- `%s: %s: successfully sent event to CoreAnalytics (numFields=%u).\n`
+- `_sepManagerMatchedThreadCall`
+- `%s: %s: *analytics* failed to load (err=%d).\n`
+- `_saveToPersistentStore`
+- `key < UTIL_ARR_SIZE(_slots.array)`
+- `segGracePeriodReason_AccessoryDetached`
+- `_saveToPersistentStore() == 0 `
+- `ACMTRMEvent_CheckAppleSetup`
+- `ageIfExistsOrNil`
+- `site.ACMRequirement.ACMRequirementDataKofN`
+- `com.apple.private.applecredentialmanager.securestore.PSSO.allow`
+- `array of ACMCredentialRef`
+- `acm_mem_alloc_info`
+- `%s: %s: cmd(%u) requestId(%u) != responseId(%u).\n`
+- `cmd = (acm_command_t *)acm_malloc_data(cmdSize)`
+- `YES`
+- `variable < UTIL_ARR_SIZE(_envTable)`
+- `platform`
+- `ACMTRM-A`
+- `%s: %s: context = %p.\n`
+- `_consoleUsersThreadCallHandler`
+- `ANY3(_ioState.published().gracePeriodReason, kACMTRMGracePeriodReason_DeviceLocked, kACMTRMGracePeriodReason_AccessoryDetached, kACMTRMGracePeriodReason_DeviceUnlocked )`
+- `segGracePeriodReason_DeviceUnlocked`
+- `No`
+- `%s: %s: Unable to detect EDU mode, will retry on next call.\n`
+- `acmSysctlRootPivotOccurred`
+- `PreboardVoiceAssistantFaceDown`
+- `_inited && now > 0`
+- `matching`
+- `dataLen == sizeof(ACMTRMPersistentConfig)`
+- `%s: %s: aks_get_extended_state(), lock_state: %d, err=0x%x.\n`
+- `response.body.found`
+- `inData && inSize`
+- `LOADED`
+- `site.ACMCredential`
+- `requestPayload`
+- `scheduleDblClickDeferredAck`
+- `SAVE-UPDATE`
+- `err = _setPropertyDict(service, kACMTRMProperty_Domain_Inductive, inductiveDomain) == 0 `
+- `dataLength == sizeof(ACMKextDenyListRevision)`
+- `_onGetStatus`
+- `_isTRMEnrollmentNeeded`
+- `_onRecoveryEntered`
+- `record->groupLen == groupLen`
+- `site.ACMAccessoryCacheKernelService`
+- `notifyClients_AccCache_Refreshed`
+- `_onAccessoryAuthorized(InductiveDom/StandardAcc)`
+- `err = _setPropertyU32(genericDomain, kACMTRMProperty_DomainProperty_CacheMissCount, pendState.cacheMissCount, genericDomainPrefix) == 0 `
+- `AppleCredentialManagerUserClient`
+- `%s: %s: acc-cache cleared (reason: %s).\n`
+- `_onBaseSystemBooted`
+- `setData`
+- `param->parameterDataLength == sizeof(int32_t)`
+- `commandBuffer`
+- `%s: %s: callPMU=%s (alreadyCalled=%s resetBlocked=%s | forced=%s pass=%s fused=%s fw=%s).\n`
+- `u64UpcomingEventTime`
+- `LibCall_ACMContextLoadFromImage`
+- `%s: %s: set Env(%u)=%u failed: unknown key.\n`
+- `timestamp`
+- `size >= sizeof(ACMHandle) + sizeof(ACMCredential) + sizeof(ACMScope)`
+- `ACMCredential - ACMCredentialDataSignature`

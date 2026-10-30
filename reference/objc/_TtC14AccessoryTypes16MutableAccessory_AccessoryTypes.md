@@ -1,0 +1,102 @@
+# `_TtC14AccessoryTypes16MutableAccessory`
+
+- Image: [`/System/Library/PrivateFrameworks/AccessoryTypes.framework/AccessoryTypes`](../userland/System__Library__PrivateFrameworks__AccessoryTypes.framework__AccessoryTypes.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `_TtCs12_SwiftObject`
+- 92 instance variables, 0 properties, 0 instance methods, 0 class methods
+
+## Instance variables
+
+```
+_$sSSSg _identifier;
+AccessoryTypes.AccessoryKind ? _kind;
+_$sSSSg _name;
+Swift.Bool _paired;
+Swift.Bool _connected;
+AccessoryTypes.AccessoryFeatureCapability _adaptiveVolumeCapability;
+AccessoryTypes.AccessoryAdaptiveVolumeConfig _adaptiveVolumeConfig;
+AccessoryTypes.AccessoryAudioStreamState _audioStreamState;
+AccessoryTypes.AccessoryAutoANCCapability _autoANCCapability;
+AccessoryTypes.AccessoryAutoANCStrength _autoANCStrength;
+AccessoryTypes.AccessoryBatteryInfo ? _batteryInfo;
+_$sSSSg _bluetoothAddress;
+Foundation.Data ? _bluetoothAddressData;
+AccessoryTypes.AccessoryFeatureCapability _bobbleCapability;
+AccessoryTypes.AccessoryFeatureCapability _cameraControlCapability;
+AccessoryTypes.AccessoryFeatureCapability _caseSoundCapability;
+AccessoryTypes.AccessoryUIGestureMode _clickHoldModeLeft;
+AccessoryTypes.AccessoryUIGestureMode _clickHoldModeRight;
+Swift.UInt8 _color;
+AccessoryTypes.AccessoryFeatureCapability _conversationDetectCapability;
+AccessoryTypes.AccessoryConversationDetectConfig _conversationDetectConfig;
+AccessoryTypes.AccessoryCrownRotationDirection _crownRotationDirection;
+Swift.UInt64 _deviceFlags;
+Swift.UInt64 _discoveryFlags;
+AccessoryTypes.AccessoryDoubleTapAction _doubleTapActionLeft;
+AccessoryTypes.AccessoryDoubleTapAction _doubleTapActionRight;
+AccessoryTypes.AccessoryDoubleTapCapability _doubleTapCapability;
+AccessoryTypes.AccessoryFeatureCapability _dynamicEndOfChargeCapability;
+Swift.Int8 _dynamicEndOfChargeEnabled;
+AccessoryTypes.AccessoryFeatureCapability _earTipFitTestCapability;
+AccessoryTypes.AccessoryFeatureCapability _endCallCapability;
+AccessoryTypes.AccessoryCallConfig _endCallConfig;
+AccessoryTypes.AccessoryEnhancedTransparencyVersion _enhancedTransparencyVersion;
+AccessoryTypes.AccessoryFeatureCapability _farFieldUplinkCapability;
+_$sSSSg _firmwareVersion;
+AccessoryTypes.AccessoryFrequencyBand _frequencyBand;
+AccessoryTypes.AccessoryGAPAFlags _gapaFlags;
+AccessoryTypes.AccessoryMultiState _guestPaired;
+AccessoryTypes.AccessoryHearingAidCapability _hearingAidCapability;
+AccessoryTypes.AccessoryMultiState _hearingAidEnabled;
+AccessoryTypes.AccessoryMultiState _hearingAidEnrolled;
+AccessoryTypes.AccessoryMultiState _hearingAidGainSwipeEnabled;
+AccessoryTypes.AccessoryFeatureCapability _hearingAidV2Capability;
+AccessoryTypes.AccessoryMultiState _hearingAssistEnabled;
+AccessoryTypes.AccessoryFeatureCapability _hearingProtectionCapability;
+AccessoryTypes.AccessoryFeatureCapability _hearingProtectionPPECapability;
+Swift.UInt32 _hearingProtectionPPECapabilityLevel;
+AccessoryTypes.AccessoryMultiState _hearingProtectionPPEEnabled;
+AccessoryTypes.AccessoryHearingTestCapability _hearingTestCapability;
+AccessoryTypes.AccessoryFeatureCapability _heartRateMonitorCapability;
+AccessoryTypes.AccessoryMultiState _heartRateMonitorEnabled;
+AccessoryTypes.AccessoryFeatureCapability _hideEarDetectionCapability;
+AccessoryTypes.AccessoryFeatureCapability _hideOffListeningModeCapability;
+Foundation.Date ? _lastSeenConnectedOnHeadTime;
+Swift.Int32 _lastSeenTime;
+AccessoryTypes.AccessoryMultiState _listeningModeOffAllowed;
+AccessoryTypes.AccessoryListeningMode _listeningMode;
+AccessoryTypes.AccessoryListeningModeConfigs _listeningModeConfigs;
+AccessoryTypes.AccessoryMicrophoneMode _microphoneMode;
+_$sSSSg _modelName;
+_$sSSSg _modelNumber;
+AccessoryTypes.AccessoryFeatureCapability _muteControlCapability;
+AccessoryTypes.AccessoryCallConfig _muteControlConfig;
+AccessoryTypes.AccessoryFeatureCapability _ovadStreamingCapability;
+AccessoryTypes.AccessoryFeatureCapability _peerAutoANCCapability;
+AccessoryTypes.AccessoryPlacementMode _placementMode;
+AccessoryTypes.AccessoryFeatureCapability _pmeEverywhereCapability;
+AccessoryTypes.AccessoryFeatureCapability _preferenceEQCapability;
+AccessoryTypes.AccessoryPlacement _primaryPlacement;
+Swift.UInt32 _productID;
+_$sSSSg _productName;
+Swift.UInt16 _rawGesturesConfigFlags;
+AccessoryTypes.AccessoryPlacement _secondaryPlacement;
+AccessoryTypes.AccessoryFeatureCapability _selectiveSpeechListeningCapability;
+AccessoryTypes.AccessorySelectiveSpeechListeningConfig _selectiveSpeechListeningConfig;
+AccessoryTypes.AccessoryFeatureCapability _sensorDataCapability;
+_$sSSSg _serialNumber;
+_$sSSSg _serialNumberLeft;
+_$sSSSg _serialNumberRight;
+AccessoryTypes.AccessoryFeatureCapability _siriMultitoneCapability;
+AccessoryTypes.AccessoryMultiState _siriMultitoneEnabled;
+AccessoryTypes.AccessoryFeatureCapability _sleepDetectionCapability;
+AccessoryTypes.AccessoryMultiState _sleepDetectionEnabled;
+AccessoryTypes.AccessoryFeatureCapability _smartRoutingCapability;
+AccessoryTypes.AccessorySmartRoutingMode _smartRoutingMode;
+AccessoryTypes.AccessorySmartRoutingVersion _smartRoutingVersion;
+AccessoryTypes.AccessoryMultiState _spatialAudioAllowed;
+AccessoryTypes.AccessoryStreamStateAoS _streamStateAoS;
+AccessoryTypes.AccessoryMultiState _temporaryManagedPairedStatus;
+Swift.UInt16 _vendorID;
+AccessoryTypes.AccessoryFeatureCapability _wiredLosslessAudioCapability;
+_$sSh -> AccessoryTypes.PropertyKey _changes;
+```

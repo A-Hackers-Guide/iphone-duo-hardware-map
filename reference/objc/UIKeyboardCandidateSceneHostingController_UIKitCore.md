@@ -1,0 +1,24 @@
+# `UIKeyboardCandidateSceneHostingController`
+
+- Image: [`/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore`](../userland/System__Library__PrivateFrameworks__UIKitCore.framework__UIKitCore.md) (iOS 27.2 dyld shared cache) **[DSC]**
+- Superclass: `NSObject`
+- Protocols: `_UISceneHostingControllerDelegate`
+- 3 instance variables, 0 properties, 5 instance methods, 0 class methods
+
+## Instance variables
+
+```
+sceneHostingController;
+delegate;
+sceneConfigurationObservables;
+```
+
+## Instance methods
+
+```
+-[UIKeyboardCandidateSceneHostingController initWithDelegate:];
+-[UIKeyboardCandidateSceneHostingController isExpanded];
+-[UIKeyboardCandidateSceneHostingController init];
+-[UIKeyboardCandidateSceneHostingController setupSceneHosting];
+-[UIKeyboardCandidateSceneHostingController setHostIsTextVertical:];
+```

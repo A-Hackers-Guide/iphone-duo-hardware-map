@@ -1,0 +1,119 @@
+# strings from /usr/libexec/locationd (iOS 27.2, pulled from the vphone-duo guest)
+-[CMAngleInterpolator _disarmTimer]
+-[CMAngleInterpolator _timerDidFire]
+-[CMAngleInterpolator initWithQueue:delegate:mechanicalAngle:]
+-[CMAngleInterpolator interpolateToAngle:duration:]
+-[CMAngleInterpolator interpolateToAngle:duration:]_block_invoke
+-[CMAngleInterpolator setCurrentMechanicalAngleDegrees:]_block_invoke
+-[CMAngleInterpolator stop]
+/Library/Caches/com.apple.xbs/47EB6D44-F32D-4323-9716-BF67CCD05C22/TemporaryDirectory.rJHJ1D/Sources/Pop_CoreLocation/Daemon/Motion/Utilities/CLSPUAngleServiceControl.mm
+/Library/Caches/com.apple.xbs/47EB6D44-F32D-4323-9716-BF67CCD05C22/TemporaryDirectory.rJHJ1D/Sources/Pop_CoreLocation/Shared/Motion/DeviceState/CMAngleInterpolator.mm
+/Library/Caches/com.apple.xbs/47EB6D44-F32D-4323-9716-BF67CCD05C22/TemporaryDirectory.rJHJ1D/Sources/Pop_CoreLocation/Shared/Motion/Notifiers/Angle/CLAngleNotifier.mm
+15CLAngleNotifier
+24CLSPUAngleServiceControl
+@"<CMAngleInterpolatorDelegate>"
+@"CMAngleInterpolator"
+AngleRepairState.plist
+BootAfterRepair
+CL: CLMotionLogger::onHESData
+CL: CLSPUAngleServiceControl::onAngleServiceReport
+CLAngleNotifier
+CLAngleNotifier.mm
+CLMotionLogger::onHESData
+CLMotionTypeAngleEventPhase motionTypeAngleEventPhaseFromReportEventPhase(CMAngleReportEventPhase)
+CLSPUAngleServiceControl.mm
+CLSPUAngleServiceControl::RepairStateCheckResult CLSPUAngleServiceControl::checkForRepairStateChange()
+CLSPUAngleServiceControl::onAngleServiceReport
+CMAngleAPArrivalToNotified
+CMAngleGestureBeganToWakeEvent
+CMAngleInterpolator
+CMAngleInterpolator.mm
+CMAngleInterpolatorDelegate
+CMAngleStateChangeAPArrivalToNotified
+CMAngleStateChangeEventSentToAPArrival
+CMAngleStateChangeEventToEventSent
+CMAngleStateChangeGestureBeganToEvent
+CMAngleWakeEventSentToAPArrival
+CMAngleWakeEventToWakeEventSent
+Crane virtual service connect failed: %{public}@
+HESData
+MotionLoggerLogHES
+N15CLAngleNotifier9AngleDataE
+N16CLMotionNotifier14SiloDispatcherIN15CLAngleNotifier9AngleDataEEE
+N20CMAngleServiceReport7VisitorE
+N5CMMsl8AngleHESE
+NSDictionary<NSString *,NSDictionary *> *repairStateForComponentsAffectingIMUExtrinsics()
+Registering for HES notifications
+RepairDate
+T@"<CMAngleInterpolatorDelegate>",W,N,VfDelegate
+T@"CMAngleInterpolator",&,V_interpolator
+Unregistering for HES notifications
+[CLAngleNotifier] %{public}s : phase=%{public}s, state=%{public}s, angle=%{public}f, mechanicalAngle=%{public}f, velocity=%{public}f, timestamp=%{public}lf (%{public}llu), continuousTimestamp=%{public}lf (%{public}llu), gestureBeganContinuousTimestamp=%{public}f (%{public}llu), messageSentContinuousTimestamp=%{public}f (%{public}llu), isWakeEvent=%{public}d
+[CLAngleNotifier] Event ref invalid
+[CLAngleNotifier] Skipping open for physical HID device on VM/Simulator
+[CLAngleNotifier] Unrecognized phase 0x%{public}x
+[CLAngleNotifier] Unrecognized update interval notification %{public}d
+[CLAngleNotifier] copied event is invalid
+[CLAngleNotifier] copyEvent returned invalid event ref
+[CLAngleNotifier] copyEvent: no HID device available
+[CLAngleNotifier] sendCommand skipped, no physical HID driver (VM/Simulator)
+[CLSPUAngleServiceControl] AccelBias array contains a non-number element
+[CLSPUAngleServiceControl] AccelBias array should have 4 entries, but has %{public}lu
+[CLSPUAngleServiceControl] Cached calibration is too old; ignoring
+[CLSPUAngleServiceControl] Checking for repair state change
+[CLSPUAngleServiceControl] Couldn't create PPS telemetry identifier
+[CLSPUAngleServiceControl] Couldn't delete calibration cache %{public}@: %{public}@
+[CLSPUAngleServiceControl] Couldn't get component state for %{public}@: %{public}@
+[CLSPUAngleServiceControl] Couldn't get repair date for %{public}@: %lld
+[CLSPUAngleServiceControl] Couldn't read %{public}@ key
+[CLSPUAngleServiceControl] Couldn't write %{public}@: %{public}@
+[CLSPUAngleServiceControl] Failed to create backup excluded cache directory: %{public}@
+[CLSPUAngleServiceControl] Failed to exclude %{public}@ from backup: %{public}@
+[CLSPUAngleServiceControl] Failed to find Application Support directory: %{public}@
+[CLSPUAngleServiceControl] Failed to read calibration cache: %{public}@
+[CLSPUAngleServiceControl] Giving up creating %{public}@ after %{public}u retries; the calibration estimate and repair state won't be saved
+[CLSPUAngleServiceControl] Not sending power log metrics for simulated transition
+[CLSPUAngleServiceControl] Read cached calibration estimate: rotation={%{public}.6f, %{public}.6f, %{public}.6f, %{public}.6f}, relativeGyroBias=%{public}.6f, offsetAngle=%{public}.6f, temperature=%{public}.6f, accelBias={%{public}.6f, %{public}.6f, %{public}.6f, %{public}.6f}
+[CLSPUAngleServiceControl] Reading preferences and configuring device; isUserTriggered=%{public}d
+[CLSPUAngleServiceControl] Received estimator state report: calibrationIndex=%{public}u, filterResetCount=%{public}u, isFirstCalibrationAfterBoot=%{public}d, hasBeenRepaired=%{public}d, timeToAngleConvergence=%{public}u s, timeToRotationConvergence=%{public}u s, timeToAccelBiasConvergence=%{public}u s, rotation0=[%{public}.3f, %{public}.3f] rad, rotation1=[%{public}.3f, %{public}.3f] rad, relGyroBias=%{public}.4f rad/s, yAngleOffset=%{public}.4f rad, temperature=%{public}.1f C, accelBias0=[%{public}.4f, %{public}.4f] g, accelBias1=[%{public}.4f, %{public}.4f] g
+[CLSPUAngleServiceControl] Received power log metrics: hingeIdentifier=%{public}llu, timeSinceLastGesture=%{public}llu (%{public}llu s), gestureDuration=%{public}llu, previousGravity={%{public}f, %{public}f, %{public}f}, currentGravity={%{public}f, %{public}f, %{public}f}, previousAngle=%{public}f, currentAngle=%{public}f, maxAngleRotationRate=%{public}f, meanAngleRotationRate=%{public}f, wasPreviousAngleAmbiguous=%{public}d, isAPAwake=%{public}d, isSimulated=%{public}d, now=%{public}@
+[CLSPUAngleServiceControl] Removing calibration cache
+[CLSPUAngleServiceControl] Repair API is not available
+[CLSPUAngleServiceControl] Repair state changed from %{public}@ to %{public}@
+[CLSPUAngleServiceControl] Repair state didn't change
+[CLSPUAngleServiceControl] Retrying creation of the backup excluded directory in %{public}.0f s (retry %{public}u of %{public}u)
+[CLSPUAngleServiceControl] Rotation array contains a non-number element
+[CLSPUAngleServiceControl] Rotation array should have 4 entries, but has %{public}lu
+[CLSPUAngleServiceControl] Saving calibration estimate: rotation={%{public}.6f, %{public}.6f, %{public}.6f, %{public}.6f}, relativeGyroBias=%{public}.6f, offsetAngle=%{public}.6f, temperature=%{public}.6f, accelBias={%{public}.6f, %{public}.6f, %{public}.6f, %{public}.6f}
+[CLSPUAngleServiceControl] Sending Core Analytics estimator state metrics
+[CLSPUAngleServiceControl] Sending Core Analytics metrics
+[CLSPUAngleServiceControl] Sending calibration estimate with reason %s, hasValidCalibration=%{public}d, wasEverRepaired=%{public}d
+[CLSPUAngleServiceControl] Sending power log metrics
+angleHES
+bool CLAngleNotifier::sendCommand(std::span<const std::byte>, uint8_t *, size_t *)
+cmRepairState
+const char *toString(CMAngleReportEventPhase)
+hasBeenRepaired
+payload && payloadSize == sizeof(CMAnglePrivateData)
+std::optional<AngleData> CLAngleNotifier::copyEvent(CLIoHidInterface::Device::NeedsEventUpdate)
+std::optional<AngleData> CLAngleNotifier::copyEvent(CLIoHidInterface::Device::NeedsEventUpdate)_block_invoke
+std::optional<CLAngleNotifier::AngleCalibrationEstimate> readCachedCalibrationEstimate()
+usage == kHIDUsage_AppleVendorMotion_CranePrivateData
+v60@0:8@"CMAngleInterpolator"16{?=iiffffBB}24Q52
+virtual CFTimeInterval CLAngleNotifier::minimumUpdateIntervalChanged(int, const CFTimeInterval &)
+virtual void CLDeviceStateRelay::visitAngleGestureEnded(const CMAngleServiceReport::AngleGestureEnded &)
+virtual void CLMotionNotifier::SiloDispatcher<CLAngleNotifier::AngleData>::dispatchData(int, const void *, size_t) [T = CLAngleNotifier::AngleData]
+virtual void CLSPUAngleServiceControl::visitCalibrationEstimate(const CMAngleServiceReport::CalibrationEstimate &)
+virtual void CLSPUAngleServiceControl::visitEstimatorStateAnalytics(const CMAngleServiceReport::EstimatorStateAnalytics &)
+virtual void CLSPUAngleServiceControl::visitPowerLogEvent(const CMAngleServiceReport::PowerLogEvent &)
+void CLAngleNotifier::onIoHidEvent(IOHIDEventRef, bool)
+void CLAngleNotifier::openHIDDriverInterfaceIfNeeded()
+void CLGnssFailureMonitor::onOrientationExtensionState(CMAngleReportState)
+void CLSPUAngleServiceControl::deleteCalibrationCache()
+void CLSPUAngleServiceControl::readPreferencesAndConfigureInternal(IsUserTriggered)
+void CLSPUAngleServiceControl::scheduleBackupExcludedDirectoryRetry()
+void CLSPUAngleServiceControl::sendAngleEstimatorStateAnalytics(const CMAngleServiceReport::EstimatorStateAnalytics &)
+void CLSPUAngleServiceControl::sendAngleSettledAnalytics(const CMAngleServiceReport::PowerLogEvent &)
+{"msg%{public}.0s":"CLMotionLogger::onHESData", "event":%{public, location:escape_only}s, "this":"%{public}p"}
+{"msg%{public}.0s":"CLSPUAngleServiceControl::onAngleServiceReport", "event":%{public, location:escape_only}s, "this":"%{public}p"}
+{CMAngleSimulator="fStartAngleDegrees"f"fEndAngleDegrees"f"fDurationMicroseconds"Q"fDelayMicroseconds"Q"fOptions"{OptionSet<CMAngleSimulatorOptions>="fStorage"S}"fStartTime"Q"fEndTime"Q"fCurrentAngle"f"fHasCurrentAngle"B"fStatus"C"fPerceptionFilter"{CMAnglePerceptionFilter="fFilteredRotationRate"{FirstOrderFilter<float>="fNumSamples"i"fAlpha"f"fFiltered"f"fDoWarmStart"B}"fFilteredAngle"{FirstOrderFilter<float>="fNumSamples"i"fAlpha"f"fFiltered"f"fDoWarmStart"B}"fLatchAngleFilter"{FirstOrderFilter<float>="fNumSamples"i"fAlpha"f"fFiltered"f"fDoWarmStart"B}"fStableAngle"f"fNormalizedAngle"f"fEventPhase"S"fIsAngleValid"B"fIsAngleStablePrevious"B"fProgressState"C"fProgress"f"fClosedBoundary"f"fOpenBoundary"f"fHESClosedConfirmed"B"fExceededClosedMax"B}}
